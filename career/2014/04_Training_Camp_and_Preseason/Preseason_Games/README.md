@@ -1,12 +1,12 @@
 # Jacksonville 2014 preseason
 
-**IN_PROGRESS: 0-1 after game 1.** Game 1 is closed below; three future game slots follow. The matchups became public on April 9, 2014, and the dates with the April 23 schedule release ([2014 dated record](../../Record.md)): Tampa Bay at home August 8, at Chicago August 14, at Detroit August 22 and Atlanta at home August 28. They are schedule facts, not branch results.
+**IN_PROGRESS: 0-2 after game 2.** Games 1 and 2 are closed below; two future game slots follow. The matchups became public on April 9, 2014, and the dates with the April 23 schedule release ([2014 dated record](../../Record.md)): Tampa Bay at home August 8, at Chicago August 14, at Detroit August 22 and Atlanta at home August 28. They are schedule facts, not branch results.
 
 | Game | Date and kickoff (ET) | Venue direction | Status |
 |---:|---|---|---|
 | [Game 1](Game_01/README.md) | August 8, 7:30 p.m. ET: Tampa Bay at Jacksonville | Home | **Played: Tampa Bay 30, Jacksonville 21.** [Output](Game_01/output.md) and [receipt](statistics/records/game_receipts/preseason_01_tampa_bay_buccaneers_at_jacksonville_jaguars.json); inputs frozen August 7 and preserved |
-| [Game 2](Game_02/README.md) | August 14, 8 p.m. ET: Jacksonville at Chicago | Away | Next; Stone's plan applied August 9 to 13 and frozen as the Jacksonville inputs (call sheet, depth chart, rotation); the opponent roster is owed from the gated Chicago library; no result |
-| [Game 3](Game_03/README.md) | August 22, 7:30 p.m. ET: Jacksonville at Detroit | Away | Not scheduled into executable inputs; no result |
+| [Game 2](Game_02/README.md) | August 14, 8 p.m. ET: Jacksonville at Chicago | Away | **Played: Chicago 23, Jacksonville 17 (OT).** [Output](Game_02/output.md) and [receipt](statistics/records/game_receipts/preseason_02_jacksonville_jaguars_at_chicago_bears.json); inputs frozen August 13 and preserved |
+| [Game 3](Game_03/README.md) | August 22, 7:30 p.m. ET: Jacksonville at Detroit | Away | Next; needs its own frozen inputs (call sheet, depth chart, rotation, opponent roster); no result |
 | [Game 4](Game_04/README.md) | August 28, kickoff pending dated notice: Atlanta at Jacksonville | Home | Not scheduled into executable inputs; no result |
 
 [Calendar verification](../../../../library/2014_full_calendar_verification.md) owns the date sources. Do not substitute the 2013 preseason dates or home/away sequence. The game folders are reading placeholders. Executable inputs and receipts are created only when the verified game is prepared and played; no real score is imported.

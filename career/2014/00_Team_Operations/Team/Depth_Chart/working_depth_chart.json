@@ -1,443 +1,454 @@
 {
- "team": "Jacksonville Jaguars",
- "season": 2014,
- "status": "WORKING VIEW, NOT A GAME INPUT. Carried from the closed 2013 chart minus players no longer controlled, with Stone's May 12, 2014 rep starting points for WR1, WR3, left guard, right guard and Edge 1 applied (Entry 111). Those are starting points with named competition, not awards; no other 2014 depth decision has been made.",
- "as_of": "May 23, 2014 (ledger Entry 111)",
- "effective": "Carried from the closed 2013 chart (January 6, 2014, AFC Divisional preparation)",
- "sources": "career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/finances/player_contracts/contract_status.md; career/2014/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened); Entry 95 (March 2014 free-agency replay); Entry 108 (2014 draft and undrafted signings); Entry 110 (Rackley traded); Entry 111 (Stone's May 12 starting roles; rookie minicamp and Phase Two closed)",
- "rule": "Order within each kernel position group is the closed 2013 order exactly as carried, minus players no longer controlled, plus the placements Stone has decided (Entry 111). Stone owns the 2014 order and changes it only by decision; each change is logged in career/2014/depth_chart.md.",
- "note": "Kept under career/2014/early_offseason on purpose. runtime/seasons.py treats career/2014/team/depth_chart/game_depth_chart.json as the 2014 game input, and runtime/week_inputs.py reads that file as Stone's order. A chart that still carries pending free agents and players whose contracts start March 11 must not satisfy that input. Promote a reviewed chart to career/2014/team/depth_chart/game_depth_chart.json only when 2014 control, medical clearance and Stone's depth decisions are established.",
- "depth": {
-  "QB": [
-   "Kirk Cousins",
-   "Chad Henne",
-   "John Parker Wilson"
-  ],
-  "RB": [
-   "Maurice Jones-Drew",
-   "Jonathan Grimes",
-   "C.J. Anderson"
-  ],
-  "FB": [
-   "Montell Owens"
-  ],
-  "WR": [
-   "Hakeem Nicks",
-   "Adam Thielen",
-   "Davante Adams",
-   "Toney Clemons",
-   "Mike Brown"
-  ],
-  "TE": [
-   "Marcedes Lewis",
-   "Travis Kelce"
-  ],
-  "OL": [
-   "Eugene Monroe",
-   "Joel Bitonio",
-   "Mike Brewster",
-   "Trai Turner",
-   "Lane Johnson",
-   "Cameron Bradfield",
-   "Austin Pasztor",
-   "Mark Asper"
-  ],
-  "DL": [
-   "Sen'Derrick Marks",
-   "Roy Miller",
-   "C.J. Mosley",
-   "Jeremy Mincey",
-   "Andre Branch",
-   "Ryan Davis",
-   "Jeris Pendleton",
-   "C.J. Wilson",
-   "Lavar Edwards"
-  ],
-  "LB": [
-   "Daryl Smith",
-   "Julian Stanford",
-   "Sio Moore",
-   "Paul Posluszny"
-  ],
-  "DB": [
-   "Dwight Lowery",
-   "Mike Harris",
-   "Bacarri Rambo",
-   "Jordan Poyer",
-   "A.J. Bouye",
-   "Chris Prosinski",
-   "Brynden Trawick"
-  ],
-  "K": [
-   "Josh Scobee"
-  ],
-  "P": [
-   "Bryan Anger"
-  ],
-  "LS": [
-   "Jeremy Cain"
-  ]
- },
- "positions": {
-  "Kirk Cousins": "QB",
-  "John Parker Wilson": "QB",
-  "Jonathan Grimes": "RB",
-  "C.J. Anderson": "RB",
-  "Montell Owens": "FB",
-  "Adam Thielen": "WR",
-  "Toney Clemons": "WR",
-  "Mike Brown": "WR",
-  "Marcedes Lewis": "TE",
-  "Travis Kelce": "TE",
-  "Eugene Monroe": "OT",
-  "Lane Johnson": "OT",
-  "Cameron Bradfield": "OT",
-  "Austin Pasztor": "OG",
-  "Mark Asper": "OG",
-  "Mike Brewster": "C",
-  "Roy Miller": "DT",
-  "C.J. Mosley": "DT",
-  "Jeremy Mincey": "DE",
-  "Andre Branch": "DE",
-  "Jeris Pendleton": "DT",
-  "Lavar Edwards": "DE",
-  "Ryan Davis": "DE",
-  "Paul Posluszny": "LB",
-  "Daryl Smith": "LB",
-  "Julian Stanford": "LB",
-  "Sio Moore": "LB",
-  "Dwight Lowery": "S",
-  "Bacarri Rambo": "S",
-  "Jordan Poyer": "CB",
-  "Mike Harris": "CB",
-  "Chris Prosinski": "S",
-  "A.J. Bouye": "CB",
-  "Brynden Trawick": "S",
-  "Josh Scobee": "K",
-  "Bryan Anger": "P",
-  "Jeremy Cain": "LS",
-  "Sen'Derrick Marks": "DT",
-  "Maurice Jones-Drew": "RB",
-  "C.J. Wilson": "DE",
-  "Chad Henne": "QB",
-  "Hakeem Nicks": "WR",
-  "Davante Adams": "WR",
-  "Joel Bitonio": "OT",
-  "Trai Turner": "OG"
- },
- "roles": {
-  "Kirk Cousins": [
-   "passer"
-  ],
-  "Josh Scobee": [
-   "placekicker"
-  ],
-  "Bryan Anger": [
-   "punt"
-  ]
- },
- "contract_flags": {
-  "Eugene Monroe": "Under contract through 2018 (re-signed March 11, Entry 95)",
-  "Cameron Bradfield": "Tendered RFA (lowest), unsigned",
-  "Toney Clemons": "Tendered ERFA, unsigned",
-  "Mike Brown": "Tendered ERFA, unsigned",
-  "Austin Pasztor": "Tendered ERFA, unsigned",
-  "John Parker Wilson": "Under contract through 2014 (Entry 91)",
-  "Jonathan Grimes": "Under contract through 2014 (Entry 91)",
-  "Sen'Derrick Marks": "Under contract through 2017 (re-signed March 11, Entry 95)",
-  "Alterraun Verner": "Under contract through 2017 (signed March 11, Entry 95)",
-  "Aqib Talib": "Under contract through 2018 (signed March 11, Entry 96)",
-  "Hakeem Nicks": "Under contract through 2014 (signed March 14, Entry 97)",
-  "Andrew Hawkins": "Under contract through 2017 (signed March 18, Entry 97)",
-  "Daniel Te'o-Nesheim": "Under contract through 2016 (signed March 18, Entry 98)",
-  "Jeremy Cain": "Under contract through 2014 (re-signed March 19, Entry 99)",
-  "Maurice Jones-Drew": "Under contract through 2015 (re-signed March 28, Entry 103)",
-  "C.J. Wilson": "Under contract through 2014 (re-signed March 28, Entry 103)",
-  "Chad Henne": "Under contract through 2015 (re-signed April 4, Entry 106)",
-  "Aaron Donald": "Rookie contract through 2017 (No. 13, signed May 11, Entry 108)",
-  "Joel Bitonio": "Rookie contract through 2017 (No. 26, signed May 11, Entry 108)",
-  "Davante Adams": "Rookie contract through 2017 (No. 38, signed May 11, Entry 108)",
-  "Trai Turner": "Rookie contract through 2017 (No. 90, signed May 11, Entry 108)",
-  "Telvin Smith": "Rookie contract through 2017 (No. 129, signed May 11, Entry 108)",
-  "Corey Linsley": "Rookie contract through 2017 (No. 153, signed May 11, Entry 108)",
-  "Charles Leno Jr.": "Rookie contract through 2017 (No. 168, signed May 11, Entry 108)",
-  "Jemea Thomas": "Rookie contract through 2017 (No. 205, signed May 11, Entry 108)",
-  "Malcolm Butler": "Rookie contract through 2017 (No. 241, signed May 11, Entry 108)",
-  "Andrew Norwell": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-  "Christian Jones": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-  "Allen Hurns": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-  "Cornelius Lucas": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-  "Adrian Phillips": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-  "Matt Feiler": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-  "Cameron Brate": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-  "Todd Davis": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-  "Tyler Shatley": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-  "Tyler Larsen": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-  "Connor Shaw": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-  "Kasim Edebali": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-  "Marcel Jensen": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-  "Gator Hoskins": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-  "Jackson Jeffcoat": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-  "Taylor Gabriel": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-  "Casey Kreiter": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)"
- },
- "availability_notes": {},
- "removed_from_2013_chart": {
-  "Brad Meester": "Retired; contract expired March 11, 2014 (Entries 79 and 94)",
-  "Alan Ball": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
-  "Allen Reisner": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
-  "Brent Grimes": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
-  "Kevin Rutland": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
-  "Uche Nwaneri": "Traded to Arizona, March 20, 2014 (Entry 99)",
-  "Jason Babin": "Traded to Miami, March 24, 2014 (package D, Entry 102)",
-  "Tyson Alualu": "Traded to Houston, March 24, 2014 (package E, Entry 102)",
-  "Cecil Shorts": "Traded to Indianapolis, March 31, 2014 (Entry 104)",
-  "Justin Blackmon": "Traded to Indianapolis, March 31, 2014 (Entry 104)",
-  "Russell Allen": "Traded to Arizona, April 7, 2014 (Entry 106)",
-  "Will Rackley": "Traded to Seattle, May 12, 2014 (Entry 110)"
- },
- "game_day_inactives": null,
- "update_log": [
-  {
-   "date": "February 17, 2014",
-   "event": "Working chart created from the closed 2013 chart",
-   "ledger_entry": "None (derived view; Entries 79, 85, 86 are its inputs)",
-   "change": "Meester removed; pending UFA/RFA/ERFA and unresolved-contract flags added; six reserve/future players listed as joining March 11 without a role"
-  },
-  {
-   "date": "February 18, 2014",
-   "event": "Eugene Monroe designated non-exclusive franchise player",
-   "ledger_entry": "Entry 87",
-   "change": "Monroe's flag changes from pending UFA to franchise-tagged; order unchanged"
-  },
-  {
-   "date": "February 28, 2014 checkpoint review",
-   "event": "Administrative reconciliation against the merged roster and contracts",
-   "ledger_entry": "None (review through Entry 89)",
-   "change": "Refreshed source pointers; verified 52 active players, Meester retired and six March 11 futures; order, roles and availability unchanged"
-  },
-  {
-   "date": "February 28, 2014",
-   "event": "Complete contract terms",
-   "ledger_entry": "Entry 91",
-   "change": "Wilson and Jonathan Grimes signed through 2014; futures through 2015; no depth-order or role change"
-  },
-  {
-   "date": "March 11, 2014",
-   "event": "League year opened",
-   "ledger_entry": "Entry 94",
-   "change": "Removed Henne (QB2), Jones-Drew (RB1), Reisner (TE3), Marks and C.J. Wilson (DL), Brent Grimes, Ball and Rutland (DB): the players below each moved up only by the removal, no reordering. Added, not placed: the six futures and Te'o-Nesheim. Tender and franchise flags updated; Cain re-signed"
-  },
-  {
-   "date": "March 11, 2014 correction",
-   "event": "March 2014 free-agency replay",
-   "ledger_entry": "Entry 95",
-   "change": "Marks re-signed and restored to his carried 2013 place (DL 1); Verner added, not placed; Te'o-Nesheim's first-pass signing withdrawn; Cain's first-pass re-signing withdrawn, so the LS slot is open; Monroe signed through 2018. No other order change"
-  },
-  {
-   "date": "March 12, 2014",
-   "event": "Replay: Talib signed",
-   "ledger_entry": "Entry 96",
-   "change": "Talib added, not placed; no order change"
-  },
-  {
-   "date": "March 18, 2014",
-   "event": "Replay: Nicks and Hawkins signed",
-   "ledger_entry": "Entry 97",
-   "change": "Nicks and Hawkins added, not placed; no order change"
-  },
-  {
-   "date": "March 18, 2014",
-   "event": "Replay: Te'o-Nesheim signed",
-   "ledger_entry": "Entry 98",
-   "change": "Te'o-Nesheim added, not placed; no order change"
-  },
-  {
-   "date": "March 20, 2014",
-   "event": "Cain re-signed; Nwaneri traded",
-   "ledger_entry": "Entry 99",
-   "change": "Cain restored to the LS slot; Nwaneri (OL 2, starting LG) removed, OL players below him move up one without a reorder; the starting left guard job is open for Stone"
-  },
-  {
-   "date": "March 24, 2014",
-   "event": "Babin and Alualu traded",
-   "ledger_entry": "Entry 102",
-   "change": "Babin (DL 2) and Alualu (DL 4) removed; the linemen below each move up without a reorder. Edge 1 in the carried roles is open for Stone"
-  },
-  {
-   "date": "March 28, 2014",
-   "event": "Jones-Drew and C.J. Wilson re-signed",
-   "ledger_entry": "Entry 103",
-   "change": "Jones-Drew restored at RB 1 (lead back) and Wilson after Pendleton, their carried 2013 places; the players below them move down one; no other order change"
-  },
-  {
-   "date": "March 31, 2014",
-   "event": "Shorts and Blackmon traded to Indianapolis",
-   "ledger_entry": "Entry 104",
-   "change": "Shorts (WR 1) and Blackmon (WR 3) removed; Thielen, Clemons and Brown move up without a reorder. The carried WR1 and WR3 roles are open for Stone"
-  },
-  {
-   "date": "April 4 to 7, 2014",
-   "event": "Henne re-signed; Posluszny cleared; Allen traded to Arizona",
-   "ledger_entry": "Entry 106",
-   "change": "Henne restored at QB 2, his carried 2013 place; John Parker Wilson moves down one. Posluszny's head/neck hold cleared April 5 (availability note removed). Allen (LB 2) removed; Stanford, Moore and Posluszny move up without a reorder. No Stone role decision"
-  },
-  {
-   "date": "May 8 to 11, 2014",
-   "event": "2014 draft, undrafted signings and rookie contracts",
-   "ledger_entry": "Entry 108",
-   "change": "Added, not placed: Donald (DL), Bitonio, Turner, Linsley, Leno (OL), Adams (WR), Telvin Smith (LB), Thomas and Butler (DB) from the draft; Norwell, Lucas, Feiler, Shatley, Larsen (OL), Shaw (QB), Hurns, Gabriel (WR), Brate, Jensen, Hoskins (TE), Edebali, Jeffcoat (DL), Christian Jones, Todd Davis (LB), Phillips (DB) and Kreiter (LS) undrafted. No order change; no Stone role decision"
-  },
-  {
-   "date": "May 2, 2014",
-   "event": "Unsigned tenders: user instruction on program participation",
-   "ledger_entry": "Entry 109",
-   "change": "No chart change. Bradfield, Clemons, Brown and Pasztor keep their carried places and tender flags; they do not take part in the program until they sign"
-  },
-  {
-   "date": "May 12, 2014",
-   "event": "Rackley traded to Seattle",
-   "ledger_entry": "Entry 110",
-   "change": "Rackley (OL 3, starting right guard) removed; Johnson, Bradfield, Pasztor and Asper move up without a reorder. The starting right guard role is open for Stone; no Stone role decision"
-  },
-  {
-   "date": "May 12, 2014 (recorded May 23)",
-   "event": "Stone's starting roles entering OTAs; rookie minicamp and Phase Two closed",
-   "ledger_entry": "Entry 111",
-   "change": "Rep starting points, not awards: Nicks placed WR 1 (Adams the competition) and Adams WR 3 (Hawkins the competition), so Thielen is WR 2 and Clemons and Brown move to WR 4 and 5 without a reorder; Bitonio placed OL 2 at left guard (Norwell the competition) and Turner OL 4 at right guard (Bitonio or Norwell if Turner struggles), the line reading Monroe, Bitonio, Brewster, Turner, Johnson, then Bradfield, Pasztor, Asper; Mincey holds Edge 1 (Branch the competition) with no DL reorder. Hawkins, Norwell and every other added player stay unplaced. The May 16 and 17 rookie minicamp and Phase Two through May 23 changed no order and no availability"
-  }
- ],
- "added_not_placed": {
-  "note": "Players under contract from March 11, 2014 whom Stone has not placed in the order: the six reserve/future contracts (Entry 85) and the replay signings Alterraun Verner, Aqib Talib, Hakeem Nicks, Andrew Hawkins and Daniel Te'o-Nesheim (Entries 95 to 98). Listed below their groups with no depth position or role. Entry 108 adds the nine 2014 draft selections and the 17 undrafted signings, listed below their groups with no depth position or role; rookies are added, not placed, as in 2013. Entry 111 (Stone's May 12 instruction) places Nicks (WR 1), Adams (WR 3), Bitonio (OL 2, left guard) and Turner (OL 4, right guard) as rep starting points, with named competition; the other added players stay unplaced.",
-  "QB": [
-   "Tyler Bray",
-   "Connor Shaw"
-  ],
-  "RB": [
-   "Richard Murphy"
-  ],
-  "WR": [
-   "Andrew Hawkins",
-   "Jerrell Jackson",
-   "Allen Hurns",
-   "Taylor Gabriel"
-  ],
-  "DL": [
-   "Daniel Te'o-Nesheim",
-   "Jerome Long",
-   "D'Anthony Smith",
-   "Aaron Donald",
-   "Kasim Edebali",
-   "Jackson Jeffcoat"
-  ],
-  "DB": [
-   "Alterraun Verner",
-   "Aqib Talib",
-   "Antwon Blake",
-   "Jemea Thomas",
-   "Malcolm Butler",
-   "Adrian Phillips"
-  ],
-  "OL": [
-   "Corey Linsley",
-   "Charles Leno Jr.",
-   "Andrew Norwell",
-   "Cornelius Lucas",
-   "Matt Feiler",
-   "Tyler Shatley",
-   "Tyler Larsen"
-  ],
-  "LB": [
-   "Telvin Smith",
-   "Christian Jones",
-   "Todd Davis"
-  ],
-  "TE": [
-   "Cameron Brate",
-   "Marcel Jensen",
-   "Gator Hoskins"
-  ],
-  "LS": [
-   "Casey Kreiter"
-  ]
- },
- "added_positions": {
-  "Tyler Bray": "QB",
-  "Richard Murphy": "RB",
-  "Jerrell Jackson": "WR",
-  "Jerome Long": "DT",
-  "D'Anthony Smith": "DT",
-  "Antwon Blake": "S",
-  "Alterraun Verner": "CB",
-  "Aqib Talib": "CB",
-  "Andrew Hawkins": "WR",
-  "Daniel Te'o-Nesheim": "DE",
-  "Aaron Donald": "DT",
-  "Telvin Smith": "LB",
-  "Corey Linsley": "C",
-  "Charles Leno Jr.": "OT",
-  "Jemea Thomas": "DB",
-  "Malcolm Butler": "CB",
-  "Andrew Norwell": "OG",
-  "Christian Jones": "LB",
-  "Allen Hurns": "WR",
-  "Cornelius Lucas": "OT",
-  "Adrian Phillips": "S",
-  "Matt Feiler": "OG",
-  "Cameron Brate": "TE",
-  "Todd Davis": "LB",
-  "Tyler Shatley": "C",
-  "Tyler Larsen": "C",
-  "Connor Shaw": "QB",
-  "Kasim Edebali": "DE",
-  "Marcel Jensen": "TE",
-  "Gator Hoskins": "TE",
-  "Jackson Jeffcoat": "DE",
-  "Taylor Gabriel": "WR",
-  "Casey Kreiter": "LS"
- },
- "stone_role_decisions": {
-  "date": "May 12, 2014",
-  "ledger_entry": "Entry 111",
-  "rule": "Rep starting points entering OTAs, not awards; each is an open competition on the field. Source: Stone's memo amendment, starting roles entering OTAs.",
-  "decisions": [
-   {
-    "role": "WR1",
-    "starting_player": "Hakeem Nicks",
-    "competition": [
-     "Davante Adams"
-    ]
-   },
-   {
-    "role": "WR3",
-    "starting_player": "Davante Adams",
-    "competition": [
-     "Andrew Hawkins"
-    ]
-   },
-   {
-    "role": "Left guard",
-    "starting_player": "Joel Bitonio",
-    "competition": [
-     "Andrew Norwell"
-    ]
-   },
-   {
-    "role": "Right guard",
-    "starting_player": "Trai Turner",
-    "competition": [
-     "Joel Bitonio",
-     "Andrew Norwell"
+  "team": "Jacksonville Jaguars",
+  "season": 2014,
+  "status": "WORKING VIEW, NOT A GAME INPUT. Carried from the closed 2013 chart minus players no longer controlled, with Stone's May 12, 2014 rep starting points for WR1, WR3, left guard, right guard and Edge 1 applied (Entry 111). Those are starting points with named competition, not awards; no other 2014 depth decision has been made.",
+  "as_of": "May 23, 2014 (ledger Entry 111)",
+  "effective": "Carried from the closed 2013 chart (January 6, 2014, AFC Divisional preparation)",
+  "sources": "career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/finances/player_contracts/contract_status.md; career/2014/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened); Entry 95 (March 2014 free-agency replay); Entry 108 (2014 draft and undrafted signings); Entry 110 (Rackley traded); Entry 111 (Stone's May 12 starting roles; rookie minicamp and Phase Two closed)",
+  "rule": "Order within each kernel position group is the closed 2013 order exactly as carried, minus players no longer controlled, plus the placements Stone has decided (Entry 111). Stone owns the 2014 order and changes it only by decision; each change is logged in career/2014/depth_chart.md.",
+  "note": "Kept under career/2014/early_offseason on purpose. runtime/seasons.py treats career/2014/team/depth_chart/game_depth_chart.json as the 2014 game input, and runtime/week_inputs.py reads that file as Stone's order. A chart that still carries pending free agents and players whose contracts start March 11 must not satisfy that input. Promote a reviewed chart to career/2014/team/depth_chart/game_depth_chart.json only when 2014 control, medical clearance and Stone's depth decisions are established.",
+  "depth": {
+    "QB": [
+      "Kirk Cousins",
+      "Chad Henne",
+      "John Parker Wilson"
     ],
-    "condition": "Bitonio or Norwell if Turner struggles"
-   },
-   {
-    "role": "Edge 1",
-    "starting_player": "Jeremy Mincey",
-    "competition": [
-     "Andre Branch"
+    "RB": [
+      "Maurice Jones-Drew",
+      "Jonathan Grimes",
+      "C.J. Anderson"
+    ],
+    "FB": [
+      "Montell Owens"
+    ],
+    "WR": [
+      "Hakeem Nicks",
+      "Adam Thielen",
+      "Davante Adams",
+      "Toney Clemons",
+      "Mike Brown"
+    ],
+    "TE": [
+      "Marcedes Lewis",
+      "Travis Kelce"
+    ],
+    "OL": [
+      "Eugene Monroe",
+      "Joel Bitonio",
+      "Mike Brewster",
+      "Trai Turner",
+      "Lane Johnson",
+      "Cameron Bradfield",
+      "Austin Pasztor",
+      "Mark Asper"
+    ],
+    "DL": [
+      "Sen'Derrick Marks",
+      "Roy Miller",
+      "C.J. Mosley",
+      "Jeremy Mincey",
+      "Andre Branch",
+      "Ryan Davis",
+      "Jeris Pendleton",
+      "C.J. Wilson",
+      "Lavar Edwards"
+    ],
+    "LB": [
+      "Daryl Smith",
+      "Julian Stanford",
+      "Sio Moore",
+      "Paul Posluszny"
+    ],
+    "DB": [
+      "Dwight Lowery",
+      "Mike Harris",
+      "Bacarri Rambo",
+      "Jordan Poyer",
+      "A.J. Bouye",
+      "Chris Prosinski",
+      "Brynden Trawick"
+    ],
+    "K": [
+      "Josh Scobee"
+    ],
+    "P": [
+      "Bryan Anger"
+    ],
+    "LS": [
+      "Jeremy Cain"
     ]
-   }
-  ]
- }
+  },
+  "positions": {
+    "Kirk Cousins": "QB",
+    "John Parker Wilson": "QB",
+    "Jonathan Grimes": "RB",
+    "C.J. Anderson": "RB",
+    "Montell Owens": "FB",
+    "Adam Thielen": "WR",
+    "Toney Clemons": "WR",
+    "Mike Brown": "WR",
+    "Marcedes Lewis": "TE",
+    "Travis Kelce": "TE",
+    "Eugene Monroe": "OT",
+    "Lane Johnson": "OT",
+    "Cameron Bradfield": "OT",
+    "Austin Pasztor": "OG",
+    "Mark Asper": "OG",
+    "Mike Brewster": "C",
+    "Roy Miller": "DT",
+    "C.J. Mosley": "DT",
+    "Jeremy Mincey": "DE",
+    "Andre Branch": "DE",
+    "Jeris Pendleton": "DT",
+    "Lavar Edwards": "DE",
+    "Ryan Davis": "DE",
+    "Paul Posluszny": "LB",
+    "Daryl Smith": "LB",
+    "Julian Stanford": "LB",
+    "Sio Moore": "LB",
+    "Dwight Lowery": "S",
+    "Bacarri Rambo": "S",
+    "Jordan Poyer": "CB",
+    "Mike Harris": "CB",
+    "Chris Prosinski": "S",
+    "A.J. Bouye": "CB",
+    "Brynden Trawick": "S",
+    "Josh Scobee": "K",
+    "Bryan Anger": "P",
+    "Jeremy Cain": "LS",
+    "Sen'Derrick Marks": "DT",
+    "Maurice Jones-Drew": "RB",
+    "C.J. Wilson": "DE",
+    "Chad Henne": "QB",
+    "Hakeem Nicks": "WR",
+    "Davante Adams": "WR",
+    "Joel Bitonio": "OT",
+    "Trai Turner": "OG"
+  },
+  "roles": {
+    "Kirk Cousins": [
+      "passer"
+    ],
+    "Josh Scobee": [
+      "placekicker"
+    ],
+    "Bryan Anger": [
+      "punt"
+    ]
+  },
+  "contract_flags": {
+    "Eugene Monroe": "Under contract through 2018 (re-signed March 11, Entry 95)",
+    "Cameron Bradfield": "Tendered RFA (lowest), unsigned",
+    "Toney Clemons": "Tendered ERFA, unsigned",
+    "Mike Brown": "Tendered ERFA, unsigned",
+    "Austin Pasztor": "Tendered ERFA, unsigned",
+    "John Parker Wilson": "Under contract through 2014 (Entry 91)",
+    "Jonathan Grimes": "Under contract through 2014 (Entry 91)",
+    "Sen'Derrick Marks": "Under contract through 2017 (re-signed March 11, Entry 95)",
+    "Alterraun Verner": "Under contract through 2017 (signed March 11, Entry 95)",
+    "Aqib Talib": "Under contract through 2018 (signed March 11, Entry 96)",
+    "Hakeem Nicks": "Under contract through 2014 (signed March 14, Entry 97)",
+    "Andrew Hawkins": "Under contract through 2017 (signed March 18, Entry 97)",
+    "Daniel Te'o-Nesheim": "Under contract through 2016 (signed March 18, Entry 98)",
+    "Jeremy Cain": "Under contract through 2014 (re-signed March 19, Entry 99)",
+    "Maurice Jones-Drew": "Under contract through 2015 (re-signed March 28, Entry 103)",
+    "C.J. Wilson": "Under contract through 2014 (re-signed March 28, Entry 103)",
+    "Chad Henne": "Under contract through 2015 (re-signed April 4, Entry 106)",
+    "Aaron Donald": "Rookie contract through 2017 (No. 13, signed May 11, Entry 108)",
+    "Joel Bitonio": "Rookie contract through 2017 (No. 26, signed May 11, Entry 108)",
+    "Davante Adams": "Rookie contract through 2017 (No. 38, signed May 11, Entry 108)",
+    "Trai Turner": "Rookie contract through 2017 (No. 90, signed May 11, Entry 108)",
+    "Telvin Smith": "Rookie contract through 2017 (No. 129, signed May 11, Entry 108)",
+    "Corey Linsley": "Rookie contract through 2017 (No. 153, signed May 11, Entry 108)",
+    "Charles Leno Jr.": "Rookie contract through 2017 (No. 168, signed May 11, Entry 108)",
+    "Jemea Thomas": "Rookie contract through 2017 (No. 205, signed May 11, Entry 108)",
+    "Malcolm Butler": "Rookie contract through 2017 (No. 241, signed May 11, Entry 108)",
+    "Andrew Norwell": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Christian Jones": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Allen Hurns": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Cornelius Lucas": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Adrian Phillips": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Matt Feiler": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Cameron Brate": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Todd Davis": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Tyler Shatley": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Tyler Larsen": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Connor Shaw": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Kasim Edebali": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Marcel Jensen": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Gator Hoskins": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Jackson Jeffcoat": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Taylor Gabriel": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Casey Kreiter": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)"
+  },
+  "availability_notes": {
+    "Lane Johnson": "Trunk injury August 8 (out, projected return August 14); cleared August 14 on his projected date; inactive at Chicago by Stone's one-game decision; no communicated restriction",
+    "Cameron Brate": "Out, long term, from the August 8 preseason game (lower extremity; projected return January 15, 2015, reassessment August 15); roster disposition pending",
+    "Jerrell Jackson": "Out, multi-week, from the August 14 preseason game (lower extremity; projected return October 9, reassessment August 21); roster disposition pending",
+    "Richard Murphy": "Independent medical hold from the August 14 preseason game (head/neck, minor; projected return August 18, reassessment August 15)"
+  },
+  "removed_from_2013_chart": {
+    "Brad Meester": "Retired; contract expired March 11, 2014 (Entries 79 and 94)",
+    "Alan Ball": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
+    "Allen Reisner": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
+    "Brent Grimes": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
+    "Kevin Rutland": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
+    "Uche Nwaneri": "Traded to Arizona, March 20, 2014 (Entry 99)",
+    "Jason Babin": "Traded to Miami, March 24, 2014 (package D, Entry 102)",
+    "Tyson Alualu": "Traded to Houston, March 24, 2014 (package E, Entry 102)",
+    "Cecil Shorts": "Traded to Indianapolis, March 31, 2014 (Entry 104)",
+    "Justin Blackmon": "Traded to Indianapolis, March 31, 2014 (Entry 104)",
+    "Russell Allen": "Traded to Arizona, April 7, 2014 (Entry 106)",
+    "Will Rackley": "Traded to Seattle, May 12, 2014 (Entry 110)"
+  },
+  "game_day_inactives": null,
+  "update_log": [
+    {
+      "date": "February 17, 2014",
+      "event": "Working chart created from the closed 2013 chart",
+      "ledger_entry": "None (derived view; Entries 79, 85, 86 are its inputs)",
+      "change": "Meester removed; pending UFA/RFA/ERFA and unresolved-contract flags added; six reserve/future players listed as joining March 11 without a role"
+    },
+    {
+      "date": "February 18, 2014",
+      "event": "Eugene Monroe designated non-exclusive franchise player",
+      "ledger_entry": "Entry 87",
+      "change": "Monroe's flag changes from pending UFA to franchise-tagged; order unchanged"
+    },
+    {
+      "date": "February 28, 2014 checkpoint review",
+      "event": "Administrative reconciliation against the merged roster and contracts",
+      "ledger_entry": "None (review through Entry 89)",
+      "change": "Refreshed source pointers; verified 52 active players, Meester retired and six March 11 futures; order, roles and availability unchanged"
+    },
+    {
+      "date": "February 28, 2014",
+      "event": "Complete contract terms",
+      "ledger_entry": "Entry 91",
+      "change": "Wilson and Jonathan Grimes signed through 2014; futures through 2015; no depth-order or role change"
+    },
+    {
+      "date": "March 11, 2014",
+      "event": "League year opened",
+      "ledger_entry": "Entry 94",
+      "change": "Removed Henne (QB2), Jones-Drew (RB1), Reisner (TE3), Marks and C.J. Wilson (DL), Brent Grimes, Ball and Rutland (DB): the players below each moved up only by the removal, no reordering. Added, not placed: the six futures and Te'o-Nesheim. Tender and franchise flags updated; Cain re-signed"
+    },
+    {
+      "date": "March 11, 2014 correction",
+      "event": "March 2014 free-agency replay",
+      "ledger_entry": "Entry 95",
+      "change": "Marks re-signed and restored to his carried 2013 place (DL 1); Verner added, not placed; Te'o-Nesheim's first-pass signing withdrawn; Cain's first-pass re-signing withdrawn, so the LS slot is open; Monroe signed through 2018. No other order change"
+    },
+    {
+      "date": "March 12, 2014",
+      "event": "Replay: Talib signed",
+      "ledger_entry": "Entry 96",
+      "change": "Talib added, not placed; no order change"
+    },
+    {
+      "date": "March 18, 2014",
+      "event": "Replay: Nicks and Hawkins signed",
+      "ledger_entry": "Entry 97",
+      "change": "Nicks and Hawkins added, not placed; no order change"
+    },
+    {
+      "date": "March 18, 2014",
+      "event": "Replay: Te'o-Nesheim signed",
+      "ledger_entry": "Entry 98",
+      "change": "Te'o-Nesheim added, not placed; no order change"
+    },
+    {
+      "date": "March 20, 2014",
+      "event": "Cain re-signed; Nwaneri traded",
+      "ledger_entry": "Entry 99",
+      "change": "Cain restored to the LS slot; Nwaneri (OL 2, starting LG) removed, OL players below him move up one without a reorder; the starting left guard job is open for Stone"
+    },
+    {
+      "date": "March 24, 2014",
+      "event": "Babin and Alualu traded",
+      "ledger_entry": "Entry 102",
+      "change": "Babin (DL 2) and Alualu (DL 4) removed; the linemen below each move up without a reorder. Edge 1 in the carried roles is open for Stone"
+    },
+    {
+      "date": "March 28, 2014",
+      "event": "Jones-Drew and C.J. Wilson re-signed",
+      "ledger_entry": "Entry 103",
+      "change": "Jones-Drew restored at RB 1 (lead back) and Wilson after Pendleton, their carried 2013 places; the players below them move down one; no other order change"
+    },
+    {
+      "date": "March 31, 2014",
+      "event": "Shorts and Blackmon traded to Indianapolis",
+      "ledger_entry": "Entry 104",
+      "change": "Shorts (WR 1) and Blackmon (WR 3) removed; Thielen, Clemons and Brown move up without a reorder. The carried WR1 and WR3 roles are open for Stone"
+    },
+    {
+      "date": "April 4 to 7, 2014",
+      "event": "Henne re-signed; Posluszny cleared; Allen traded to Arizona",
+      "ledger_entry": "Entry 106",
+      "change": "Henne restored at QB 2, his carried 2013 place; John Parker Wilson moves down one. Posluszny's head/neck hold cleared April 5 (availability note removed). Allen (LB 2) removed; Stanford, Moore and Posluszny move up without a reorder. No Stone role decision"
+    },
+    {
+      "date": "May 8 to 11, 2014",
+      "event": "2014 draft, undrafted signings and rookie contracts",
+      "ledger_entry": "Entry 108",
+      "change": "Added, not placed: Donald (DL), Bitonio, Turner, Linsley, Leno (OL), Adams (WR), Telvin Smith (LB), Thomas and Butler (DB) from the draft; Norwell, Lucas, Feiler, Shatley, Larsen (OL), Shaw (QB), Hurns, Gabriel (WR), Brate, Jensen, Hoskins (TE), Edebali, Jeffcoat (DL), Christian Jones, Todd Davis (LB), Phillips (DB) and Kreiter (LS) undrafted. No order change; no Stone role decision"
+    },
+    {
+      "date": "May 2, 2014",
+      "event": "Unsigned tenders: user instruction on program participation",
+      "ledger_entry": "Entry 109",
+      "change": "No chart change. Bradfield, Clemons, Brown and Pasztor keep their carried places and tender flags; they do not take part in the program until they sign"
+    },
+    {
+      "date": "May 12, 2014",
+      "event": "Rackley traded to Seattle",
+      "ledger_entry": "Entry 110",
+      "change": "Rackley (OL 3, starting right guard) removed; Johnson, Bradfield, Pasztor and Asper move up without a reorder. The starting right guard role is open for Stone; no Stone role decision"
+    },
+    {
+      "date": "May 12, 2014 (recorded May 23)",
+      "event": "Stone's starting roles entering OTAs; rookie minicamp and Phase Two closed",
+      "ledger_entry": "Entry 111",
+      "change": "Rep starting points, not awards: Nicks placed WR 1 (Adams the competition) and Adams WR 3 (Hawkins the competition), so Thielen is WR 2 and Clemons and Brown move to WR 4 and 5 without a reorder; Bitonio placed OL 2 at left guard (Norwell the competition) and Turner OL 4 at right guard (Bitonio or Norwell if Turner struggles), the line reading Monroe, Bitonio, Brewster, Turner, Johnson, then Bradfield, Pasztor, Asper; Mincey holds Edge 1 (Branch the competition) with no DL reorder. Hawkins, Norwell and every other added player stay unplaced. The May 16 and 17 rookie minicamp and Phase Two through May 23 changed no order and no availability"
+    },
+    {
+      "date": "August 8 to 14, 2014 (recorded August 14)",
+      "event": "Preseason games 1 and 2: availability notes",
+      "ledger_entry": "2014-08-08-preseason-game-1-tampa-bay-at-jacksonville; 2014-08-14-preseason-game-2-jacksonville-at-chicago",
+      "change": "No order change and no Stone depth decision. Availability notes only: Brate out long term (August 8); Johnson out August 8 to 14 and cleared on his projected date, inactive at Chicago by Stone's one-game decision with Lucas the one-game right tackle (not a chart change); Jackson out multi-week and Murphy on an independent medical hold (August 14). Anderson's August 8 injury cleared August 11."
+    }
+  ],
+  "added_not_placed": {
+    "note": "Players under contract from March 11, 2014 whom Stone has not placed in the order: the six reserve/future contracts (Entry 85) and the replay signings Alterraun Verner, Aqib Talib, Hakeem Nicks, Andrew Hawkins and Daniel Te'o-Nesheim (Entries 95 to 98). Listed below their groups with no depth position or role. Entry 108 adds the nine 2014 draft selections and the 17 undrafted signings, listed below their groups with no depth position or role; rookies are added, not placed, as in 2013. Entry 111 (Stone's May 12 instruction) places Nicks (WR 1), Adams (WR 3), Bitonio (OL 2, left guard) and Turner (OL 4, right guard) as rep starting points, with named competition; the other added players stay unplaced.",
+    "QB": [
+      "Tyler Bray",
+      "Connor Shaw"
+    ],
+    "RB": [
+      "Richard Murphy"
+    ],
+    "WR": [
+      "Andrew Hawkins",
+      "Jerrell Jackson",
+      "Allen Hurns",
+      "Taylor Gabriel"
+    ],
+    "DL": [
+      "Daniel Te'o-Nesheim",
+      "Jerome Long",
+      "D'Anthony Smith",
+      "Aaron Donald",
+      "Kasim Edebali",
+      "Jackson Jeffcoat"
+    ],
+    "DB": [
+      "Alterraun Verner",
+      "Aqib Talib",
+      "Antwon Blake",
+      "Jemea Thomas",
+      "Malcolm Butler",
+      "Adrian Phillips"
+    ],
+    "OL": [
+      "Corey Linsley",
+      "Charles Leno Jr.",
+      "Andrew Norwell",
+      "Cornelius Lucas",
+      "Matt Feiler",
+      "Tyler Shatley",
+      "Tyler Larsen"
+    ],
+    "LB": [
+      "Telvin Smith",
+      "Christian Jones",
+      "Todd Davis"
+    ],
+    "TE": [
+      "Cameron Brate",
+      "Marcel Jensen",
+      "Gator Hoskins"
+    ],
+    "LS": [
+      "Casey Kreiter"
+    ]
+  },
+  "added_positions": {
+    "Tyler Bray": "QB",
+    "Richard Murphy": "RB",
+    "Jerrell Jackson": "WR",
+    "Jerome Long": "DT",
+    "D'Anthony Smith": "DT",
+    "Antwon Blake": "S",
+    "Alterraun Verner": "CB",
+    "Aqib Talib": "CB",
+    "Andrew Hawkins": "WR",
+    "Daniel Te'o-Nesheim": "DE",
+    "Aaron Donald": "DT",
+    "Telvin Smith": "LB",
+    "Corey Linsley": "C",
+    "Charles Leno Jr.": "OT",
+    "Jemea Thomas": "DB",
+    "Malcolm Butler": "CB",
+    "Andrew Norwell": "OG",
+    "Christian Jones": "LB",
+    "Allen Hurns": "WR",
+    "Cornelius Lucas": "OT",
+    "Adrian Phillips": "S",
+    "Matt Feiler": "OG",
+    "Cameron Brate": "TE",
+    "Todd Davis": "LB",
+    "Tyler Shatley": "C",
+    "Tyler Larsen": "C",
+    "Connor Shaw": "QB",
+    "Kasim Edebali": "DE",
+    "Marcel Jensen": "TE",
+    "Gator Hoskins": "TE",
+    "Jackson Jeffcoat": "DE",
+    "Taylor Gabriel": "WR",
+    "Casey Kreiter": "LS"
+  },
+  "stone_role_decisions": {
+    "date": "May 12, 2014",
+    "ledger_entry": "Entry 111",
+    "rule": "Rep starting points entering OTAs, not awards; each is an open competition on the field. Source: Stone's memo amendment, starting roles entering OTAs.",
+    "decisions": [
+      {
+        "role": "WR1",
+        "starting_player": "Hakeem Nicks",
+        "competition": [
+          "Davante Adams"
+        ]
+      },
+      {
+        "role": "WR3",
+        "starting_player": "Davante Adams",
+        "competition": [
+          "Andrew Hawkins"
+        ]
+      },
+      {
+        "role": "Left guard",
+        "starting_player": "Joel Bitonio",
+        "competition": [
+          "Andrew Norwell"
+        ]
+      },
+      {
+        "role": "Right guard",
+        "starting_player": "Trai Turner",
+        "competition": [
+          "Joel Bitonio",
+          "Andrew Norwell"
+        ],
+        "condition": "Bitonio or Norwell if Turner struggles"
+      },
+      {
+        "role": "Edge 1",
+        "starting_player": "Jeremy Mincey",
+        "competition": [
+          "Andre Branch"
+        ]
+      }
+    ]
+  }
 }

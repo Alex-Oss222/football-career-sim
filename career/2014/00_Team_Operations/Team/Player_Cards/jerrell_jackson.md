@@ -117,6 +117,14 @@ No statistical row was recorded for this player in 2013.
 
 Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
 
+## Dated coaching updates
+
+### August 14, 2014 | Preseason game 2, Jacksonville at Chicago
+
+Fifteen offensive snaps with Wilson's and Bray's groups; both targets caught, the 2-yard Drive throw on Bray's two-minute drive and the 7-yard Snag catch on third-and-17, 9 yards in all. A multi-week lower-extremity injury was logged at the end of Bray's second possession and he was removed: out, projected return in 56 days (October 9), reassessment August 21 ([medical record](../../Medical/incidents/jerrell_jackson_2014-08-14.md)). Roster disposition is Caldwell's decision with the user and is pending. He leaves the reserve receiver comparison for the length of his absence; his game-1 conversion and this game's two catches stand as recorded.
+
+Source: [preseason game 2 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_02/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
