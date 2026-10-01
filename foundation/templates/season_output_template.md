@@ -4,6 +4,8 @@
 
 **Preseason version, user instruction September 30, 2026:** use the [camp and preseason formats](training_camp_and_preseason/README.md) for individual preseason game reports and the consolidated review. They retain this template's generated-result, full-stats, narrative and media rules while centering the camp questions, player combinations, scheme execution and subsequent coaching work. A practice report uses the camp template and has no invented game result or stats.
 
+**Preseason follow-up, October 1, 2026:** the game report must combine the story with an assessment of offense, defense, special teams, communication and named player performance. Explain what starters, reserves and mixed groups actually did well or poorly, the effect on shared execution and the next coaching work. Use the [expanded game template](training_camp_and_preseason/preseason_game_report.md); the [bulk review](training_camp_and_preseason/preseason_review.md) retains those substantive findings when games are reported together.
+
 Every weekly game turn follows this layout. Bracketed text is a field to fill. Italic text is an instruction to whoever writes the turn: it is carried out, then left out of the output.
 
 ## Rules for every turn

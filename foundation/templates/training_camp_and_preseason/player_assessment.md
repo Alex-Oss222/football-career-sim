@@ -24,6 +24,16 @@ Start with the assigned job. Read the active playbook entry and the phase's taug
 
 The [2014 camp plan](../../../career/2014/training_camp_and_preseason/training_camp/staff_plan.md#what-the-active-playbooks-ask-of-the-players) applies these questions to the actual staff and Iteration I jobs. Later seasons must use their own staff and active books.
 
+## In a preseason game review
+
+Give a direct assessment of the job, supported by the actual work. Include both a strength and a failure when the record contains both; do not manufacture either to balance the paragraph. A correct read with a poorly placed throw, a sound protection identification with a lost block, or an effective rush that abandons contain are different evaluations. Use only the combination that occurred.
+
+Connect the player to the unit. What did his route spacing, block, coverage leverage, fit or communication allow the next player to do? What had to change around him when he struggled? A quiet assignment can matter without producing a statistic. Credit it from observed work, not from assuming the player must have helped because the team succeeded.
+
+Compare the actual opportunities: teammates, opponent, menu, help, situation and workload. Distinguish a starter's short appearance, a reserve beside regulars, a mixed unit and a later group when participation is established. A narrow menu can establish a usable role without proving broader readiness. No targets, few snaps or an untested situation leave a question open; they do not establish poor play.
+
+Explain whether the game confirms, changes or leaves the camp judgment unresolved. An immediate observation may need later review before assigning a technical cause. State the useful next check and the responsible coach; a retest succeeds only when subsequent evidence says it did. Keep the [game report](preseason_game_report.md) focused on consequential players rather than forcing an identical entry for the entire roster.
+
 ## Evidence appropriate to the phase
 
 | Phase | What the work can establish |

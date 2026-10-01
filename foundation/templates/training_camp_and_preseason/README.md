@@ -5,7 +5,7 @@ Use these templates for the report in chat and the readable part of the season's
 | Report | Template | What the reader should learn |
 |---|---|---|
 | Camp practice or a block of practices | [Training camp](training_camp_report.md) | How the taught football held up at the actual pace and contact level, with the players and combinations used. |
-| A played preseason game | [Preseason game](preseason_game_report.md) | What happened against another team and what it established about the jobs being evaluated. |
+| A played preseason game | [Preseason game](preseason_game_report.md) | How the team played, how its actual personnel groups executed and communicated, which players helped or struggled, and the next coaching work. |
 | Consolidated preseason review | [Preseason review](preseason_review.md) | Which practice findings carried into games, which changed, and what remains unsettled. |
 | A player or position-room assessment, in any phase | [Player assessment](player_assessment.md) | What the player can presently do in the assigned scheme, the support he needs and the next useful test. |
 
@@ -14,6 +14,8 @@ Use these templates for the report in chat and the readable part of the season's
 Read the requested season's calendar, roster and medical instructions, Stone's [current approach](../../../career/coaching_profiles/alex_stone.md#how-he-wants-training-camp-run), the phase plan, recorded work and relevant active playbook sections. Read that season's actual staff assignments. A later season keeps the format and established philosophy, but selects its own dates, coaches, roster, active books, taught menu and open questions. Never carry the 2014 names, competitions, drills or findings forward just because they appear in an example.
 
 The templates govern presentation. They do not run a practice or game, generate a grade, decide a role, authorize contact or advance the clock. Resolve newly authorized work through the repository's existing process first. A review of an old report stops at that report's evidence date. The [research and implementation note](../../../docs/camp_and_preseason_reports.md) explains the 2014 practice rules and the difference between practice, scrimmage and game evidence; verify the applicable rules when the season changes.
+
+For preseason games, the user's October 1 follow-up requires both a readable game story and a substantive coaching review. Read the [preseason research](../../../docs/preseason_game_reports.md) and [worked historical extract](../../../docs/examples/preseason_game_review_2013_miami.md). Assess offense, defense, special teams and communication, including the actual work of starters, reserves and mixed groups. Explain a player's strengths and failures where supported, their effect on the unit, and what the coaches should revisit. A score table, a few star statistics or generic “execution improved” prose does not satisfy this format.
 
 ## Write the football, then the judgment
 
