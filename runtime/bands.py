@@ -211,11 +211,16 @@ from . import drive_model
 from .statbook import DRIVE_MODEL_FROM_KERNEL, FIELD_POSITION_FROM_KERNEL, kernel_at_least
 
 LEGACY_LABEL = (
-    "legacy kernel, known ledger defects (Entries 35/38), detection only; "
+    "legacy kernel, known snap-record defects (see the "
+    "[September 8, 2013 Kansas City game report]"
+    "(../../2013/regular_season/week_01_kansas_city_at_jacksonville/output.md) and "
+    "[September 22, 2013 Seattle game report]"
+    "(../../2013/regular_season/week_03_jacksonville_at_seattle/output.md)), detection only; "
     "never grounds to rerun"
 )
 KERNEL_2013_6_LABEL = (
-    "known field-position, label and late-game defects (Entries 40-45 and the 2013.7 adoption entry); "
+    "known field-position, label and late-game defects (see the "
+    "[documented 2013.6 limitations and 2013.7 adoption](../../../runtime/README.md)); "
     "detection only; never grounds to rerun"
 )
 MIN_BIN_ATTEMPTS = 30

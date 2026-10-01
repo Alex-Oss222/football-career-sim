@@ -1,10 +1,12 @@
 # Assessing a player in the scheme
 
-Use this method inside any spring, camp or preseason report and in the phase's player assessments. It supplies the substance of an assessment, not a new rating system or a compulsory table for every player.
+Use this method for player findings inside any spring, camp or game report and for dated updates to the existing annual card. It does not create another phase assessment, new rating system or compulsory table for every player.
+
+Each player has exactly two full assessments per season: an opening baseline maintained with dated updates through the year, and a separate final assessment after season close. Preserve the opening judgment and explain any material change from observed work. Routine corrections stay in the phase report. A position competition stays in its battle card and can change without regrading both whole players.
 
 Start with the assigned job. Read the active playbook entry and the phase's taught version of it. What must this player do, who depends on him, and what support does the call give him? Then use the recorded work to explain how he did it. Knowing a call, recognizing the changed picture, executing the technique and winning the matchup are different findings.
 
-## Assessment to render
+## Player finding within the report
 
 ### [Player or competing players] | [Actual role being assessed]
 
@@ -22,7 +24,7 @@ Start with the assigned job. Read the active playbook entry and the phase's taug
 | Performance staff | Does documented conditioning and repeated work support the assigned workload? Distinguish fatigue from unfamiliarity or technique. |
 | Medical staff | What participation is currently permitted? Their instruction limits the evaluation; an injury is not an effort judgment. |
 
-The [2014 camp plan](../../../career/2014/training_camp_and_preseason/training_camp/staff_plan.md#what-the-active-playbooks-ask-of-the-players) applies these questions to the actual staff and Iteration I jobs. Later seasons must use their own staff and active books.
+The [2014 camp plan](../../../career/2014/04_Training_Camp_and_Preseason/Training_Camp/staff_plan.md#what-the-active-playbooks-ask-of-the-players) applies these questions to the actual staff and Iteration I jobs. Later seasons must use their own staff and active books.
 
 ## In a preseason game review
 
@@ -45,4 +47,4 @@ Explain whether the game confirms, changes or leaves the camp judgment unresolve
 | Training camp | The above plus the blocking, rush, release, fit and tackling evidence actually permitted and observed in each period. Non-contact opening days remain non-contact evidence. |
 | Preseason | Game execution against the actual opponent, considered with the earlier work, support and opportunities. The game may never present the planned evaluation situation. |
 
-Avoid “great scheme fit,” “high football IQ,” “physical presence,” “versatile” or “struggled with the playbook” without the job that makes the claim meaningful. A coach can form a provisional judgment from limited work; state its basis and what would change it. No hidden score, fixed rep share or automatic upgrade follows from this assessment.
+Avoid “great scheme fit,” “high football IQ,” “physical presence,” “versatile” or “struggled with the playbook” without the job that makes the claim meaningful. A coach can form a provisional judgment from limited work; state its basis and what would change it. No hidden score, fixed rep share or automatic upgrade follows from this finding. Do not prescribe a universal number of weeks for a stance change or months for hand placement. Distinguish understanding, controlled execution, execution against opposition and retention under the demands actually tested. Use date-appropriate evidence and the actual player response, never later real-life success or failure as a private answer key.

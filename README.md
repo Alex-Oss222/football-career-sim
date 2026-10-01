@@ -6,10 +6,10 @@ An evidence-based NFL head-coaching career simulation centered on Alex-Lamar Sto
 
 **[Open the 2014 season](career/2014/README.md)** — the season in calendar order, from early offseason to the handoff into 2015.
 
-[Team and roster](career/2014/team/README.md) · [Depth chart](career/2014/team/depth_chart/README.md) · [Finances](career/2014/finances/README.md) · [Calendar](career/2014/calendar.md) · [Trades](career/2014/trades/README.md)
+[Team and roster](career/2014/00_Team_Operations/Team/README.md) · [Depth chart](career/2014/00_Team_Operations/Team/Depth_Chart/README.md) · [Finances](career/2014/00_Team_Operations/Finances/README.md) · [Calendar](career/2014/Calendar.md) · [Trades](career/2014/00_Team_Operations/Trades/README.md)
 
 - [Current state](state/05_Current_Season_State.md): live date, latest closed event and next decisions.
-- [Player cards](career/2014/team/player_cards/README.md): current personnel assessments and each player’s annual statistics.
+- [Player cards](career/2014/00_Team_Operations/Team/Player_Cards/README.md): current personnel assessments and each player’s annual statistics.
 - [2013 season](career/2013/README.md): completed season, player sheets, statistics and history.
 - [Career](career/README.md): seasons, coaching profiles and playbooks.
 - [How the folders work](docs/season_structure.md): what lives in a season and what carries to the next.

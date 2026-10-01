@@ -1,6 +1,6 @@
 # 2013 Week 8 league results
 
-**Events:** `2013-week08-<away>-at-<home>`, kernel 2013.6 (ledger Entry 39), closed once each through the private production runner.
+**Events:** `2013-week08-<away>-at-<home>`, kernel 2013.6 ([kernel 2013.6 correction](../../../runtime/README.md)), closed once each through the private production runner.
 **Inputs:** background clubs carried forward from the [Week 1 depth-chart library](../../../library/2013_week1_depth_charts.md) with branch injuries applied, each dressing up to 46 players chosen by depth order; every club at the Average low-confidence unit anchor.
 **Receipts:** `../stats/game_receipts/week_08_*.json`. **Standings:** [../standings.md](../standings.md), generated from the receipts.
 **Byes:** Baltimore Ravens, Chicago Bears, Houston Texans, Indianapolis Colts, San Diego Chargers, Tennessee Titans.

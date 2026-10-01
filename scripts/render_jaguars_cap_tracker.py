@@ -11,6 +11,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+from runtime.season_layout import repository_relative
 INPUT = Path('career/finances/supporting_records/financial_inputs.json')
 OUTPUT = Path('career/finances/salary_cap/cap_tracker.md')
 DETAILS = Path('career/finances/player_contracts/contract_details.md')
@@ -24,6 +25,36 @@ def dollars(v):
 
 def display_date(value):
     return date.fromisoformat(value).strftime('%B %d, %Y').replace(' 0', ' ')
+
+def source_path(path, root=ROOT):
+    """Read frozen financial references through the current folder layout."""
+    return root / repository_relative(path.split('#')[0])
+
+def departure_source(player, data):
+    source = player.get('departure_source', '')
+    if Path(source).name != 'ledger.md':
+        return source
+    if player['control'] == 'traded':
+        return f"career/{player['departure_date'][:4]}/trades/trades.md"
+    return next((path for path in player['sources'] if path.endswith('/contract_status.md')),
+                data['current_contract_table'])
+
+def presentation_note(text, contract_table):
+    """Keep the frozen accounting basis, but present named records to readers."""
+    contract = source_link(contract_table, 'adopted contract reconstruction')
+    text = text.replace('Branch record (Entry 85); minimum Confirmed Entry 91',
+                        'The minimum salary is confirmed in the signing record. The ' + contract)
+    text = text.replace('adopted in Entry 91', 'adopted in the ' + contract)
+    text = text.replace('Entry 91', 'The ' + contract)
+    reference = r'Entr(?:y|ies) \d+(?:(?:, | and | to |[-–])\d+)*'
+    text = re.sub(r' \(' + reference + r'\)', '', text)
+    text = re.sub(r'\(' + reference + r'; ', '(', text)
+    text = re.sub(r', ' + reference, '', text)
+    text = re.sub(r'negotiation record (career/[^\s)]+\.md)',
+                  lambda match: source_link(match[1], 'negotiation record'), text)
+    text = text.replace('March 2014 replay log', source_link(
+        'career/2014/free_agency/march_2014_replay_log.md', 'March 2014 signing record'))
+    return text
 
 def slug(name):
     return re.sub(r'[^\w -]', '', name.lower()).replace(' ', '-')
@@ -62,7 +93,7 @@ def validate(data, root=ROOT):
     for y,book in data['team_years'].items():
         if 'opening_workout_charge' in book:
             value = book['opening_workout_charge']
-            if type(value) is not int or value < 0 or not (root/book.get('opening_workout_source','')).is_file():
+            if type(value) is not int or value < 0 or not source_path(book.get('opening_workout_source',''),root).is_file():
                 raise ValueError('Opening workout charge requires a nonnegative amount and source')
         for key in ['carryover','net_adjustments','counted_team_salary','actual_cash_paid','operating_reserve','rookie_incremental_reserve','cash_budget']:
             value=book[key]
@@ -74,7 +105,7 @@ def validate(data, root=ROOT):
             est = book['carryover_working_estimate']
             if (type(est.get('low')) is not int or type(est.get('high')) is not int
                     or not 0 <= est['low'] <= est['high']
-                    or not (root/est.get('source', '').split('#')[0]).is_file()):
+                    or not source_path(est.get('source', ''),root).is_file()):
                 raise ValueError('Carryover working estimate requires a low-high range and a source')
         if book['accounting_reconciled']:
             if any(book[k] is None for k in ['carryover','net_adjustments','counted_team_salary']) or y not in data['league_caps']:
@@ -84,13 +115,13 @@ def validate(data, root=ROOT):
     if len(names)!=len(set(names)): raise ValueError('Duplicate player would double-count obligations')
     for p in players:
         if p.get('former_player'):
-            if not p.get('departure_source') or not (root/p['departure_source']).is_file():
+            if not p.get('departure_source') or not source_path(departure_source(p,data),root).is_file():
                 raise ValueError('Former player requires a departure source')
             if date.fromisoformat(p['departure_date']) > date.fromisoformat(data['as_of']):
                 raise ValueError('A future departure cannot archive a current player')
         if p['position'] not in POSITIONS: raise ValueError('Unknown position: '+p['name'])
         if set(p['years'])!=set(years): raise ValueError('Missing annual status: '+p['name'])
-        if not p['sources'] or any(not (root/s).is_file() for s in p['sources']): raise ValueError('Missing source: '+p['name'])
+        if not p['sources'] or any(not source_path(s,root).is_file() for s in p['sources']): raise ValueError('Missing source: '+p['name'])
         for year,row in p['years'].items():
             if row['status'] not in STATUSES: raise ValueError('Unknown annual status')
             for k in ['cap','base','proration','cash','other_cap','approximate_cap','planning_allowance','deferred_bonus_cash','guaranteed_base']:
@@ -119,11 +150,11 @@ def validate(data, root=ROOT):
                     raise ValueError('Missing annual contract component: '+p['name'])
             if p['remaining_guarantees'] != sum(r.get('guaranteed_base',0) for r in p['years'].values()):
                 raise ValueError('Remaining guarantees disagree: '+p['name'])
-    roster=md_rows((root/data['current_roster']).read_text())
+    roster=md_rows(source_path(data['current_roster'],root).read_text())
     expected={x[0] for x in roster if len(x) in (6,7) and re.fullmatch(r'\d{4}-\d{2}-\d{2}',x[2])}
     current_names={p['name'] for p in players if not p.get('former_player')}
     if current_names!=expected: raise ValueError('Tracker coverage differs from current active, retired and future roster')
-    source=(root/data['current_contract_table']).read_text()
+    source=source_path(data['current_contract_table'],root).read_text()
     asof=display_date(data['as_of'])
     if f'**As of:** {asof}' not in source: raise ValueError('Contract table checkpoint changed; reconcile the tracker')
     contracts={x[0]:x for x in md_rows(source) if x[0] in expected and len(x) in (9,15)}
@@ -154,7 +185,8 @@ def totals(players, years, field='cap', status='known'):
     return [sum(p['years'][y].get(field) or 0 for p in players if p['years'][y]['status']==status) for y in years]
 
 
-def source_link(path):return '['+Path(path).stem.replace('_',' ')+'](../../'+path+')'
+def source_link(path, label=None):
+    return '['+(label or Path(path).stem.replace('_',' '))+'](../../'+repository_relative(path)+')'
 
 def contract_total(p):
     values=[working_charge(r) for r in p['years'].values()]
@@ -187,7 +219,7 @@ def release_exposure(p, year):
 def render_main(d,years):
     ps=d['players'];current=years[0]
     roster=Counter(p['control'] for p in ps if not p.get('former_player'))
-    out=[f"# Jacksonville Jaguars cap tracker, {years[0]} to {years[-1]}\n\nAs of {display_date(d['as_of'])}, {d['checkpoint']}. Whole US dollars.\n\n",
+    out=[f"# Jacksonville Jaguars cap tracker, {years[0]} to {years[-1]}\n\nAs of {display_date(d['as_of'])}. Whole US dollars.\n\n",
     '[Player cap table](#cap-by-player) | [Individual contract details](jaguars_contract_details.md) | [Expirations](#expiring-contracts-and-free-agent-classes) | [Updating this tracker](README.md)\n\n',
     f"The inventory covers {sum(roster.values())} current players: {roster['signed']} under signed contracts (the six reserve/future contracts included from March 11) and {roster['tender']} on unsigned tenders (RFA or ERFA). {len(ps)-sum(roster.values())} former players are retained for financial history only.\n\n",
     '## Reading the table\n\n',
@@ -285,7 +317,7 @@ def render_main(d,years):
     out.append('### Futures contracts\n\nAll six run through 2015 under the adopted two-year terms. They have no signing bonus or salary guarantee. Their dollars already appear in the position tables above.\n\n')
     out.append(table(['Player','2014 salary / cap','2015 salary / cap','Total'],[[p['name'],cap_cell(p['years']['2014']),cap_cell(p['years']['2015']),contract_total(p)] for p in ps if p['contract_type'].startswith('Reserve/future') and not p.get('former_player')]))
     out.append(f'## Individual contract detail sheets\n\n[Open all {len(ps)} player sheets](jaguars_contract_details.md) for annual salary, bonus, cap, cash, guarantees and sources.\n\n## Dead money and void years\n\n')
-    out.append(table(['Player','Year','Charge','Basis'],[[x['player'],x['year'],dollars(x['amount']),x['basis']] for x in d['dead_money']]))
+    out.append(table(['Player','Year','Charge','Basis'],[[x['player'],x['year'],dollars(x['amount']),presentation_note(x['basis'],d['current_contract_table'])] for x in d['dead_money']]))
     out.append('The $51,675 old Bray bonus is counted separately from his new $420,000 salary. No recorded deal has void years. The completion research explains the inherited bonus reconciliation.\n\n## Draft class and rookie pool\n\n')
     picks=d['draft_picks']
     if all(x.get('selection') for x in picks):
@@ -306,19 +338,19 @@ def render_main(d,years):
     out.append('“Through” describes the final league year of the recorded contract or tender. The 2013 contracts not retained expired at the March 11, 2014 league-year opening; those players are retained only as former-player history. Traded players leave these classes. A player’s class at a later expiry follows his actual accrued service; it does not extend the deal.\n\n## Scheduled cash\n\n')
     out.append(table(['Item']+years,[['Signed contracts and futures']+[dollars(working_total(ps,y,'cash',('known','approximate'))) for y in years],['Unsigned tender, conditional on signing']+[dollars(working_total(ps,y,'cash',('tender',))) for y in years],['Total scheduled player cash']+[dollars(working_total(ps,y,'cash')) for y in years]]))
     out.append('Cash counts salary and bonuses scheduled in that contract year. Bonus proration is not another cash payment. Actual paid cash remains unverified; the 2013–2016 and 2017–2020 cash-floor windows require complete cash ledgers.\n\n## Cap scenarios\n\nNo scenario is active. If requested, show only a clearly labeled cap calculation here, separate from recorded totals. Trade packages, player recommendations and hypothetical replacement contracts belong in their existing decision records and never feed these totals.\n\n')
-    out.append('## Maintenance\n\nUpdate the event ledger, current contract owner and all remaining annual inputs together. A new contract replaces affected existing years; a release retains surviving bonus and guarantee charges. Preserve completed-year history. Run the generator and its check mode after every financial change. [Maintenance instructions](README.md) give the editable input path and commands.\n')
+    out.append('## Maintenance\n\nUpdate the dated transaction record, current contract owner and all remaining annual inputs together, then regenerate the annual Record.md index. A new contract replaces affected existing years; a release retains surviving bonus and guarantee charges. Preserve completed-year history. Run the generator and its check mode after every financial change. [Maintenance instructions](README.md) give the editable input path and commands.\n')
     return ''.join(out)
 
 def render_details(d,years):
-    out=[f"# Jacksonville Jaguars individual contract details\n\n[Return to the twelve-year table](jaguars_cap.md). As of {display_date(d['as_of'])}, {d['checkpoint']}. Whole US dollars.\n\n",
+    out=[f"# Jacksonville Jaguars individual contract details\n\n[Return to the twelve-year table](jaguars_cap.md). As of {display_date(d['as_of'])}. Whole US dollars.\n\n",
     'Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.\n\n']
     for p in d['players']:
         out.append(f"## {p['name']}\n\n")
-        if p.get('former_player'):out.append(f"Former player; departure {display_date(p['departure_date'])}. {source_link(p['departure_source'])}.\n\n")
+        if p.get('former_player'):out.append(f"Former player; departure {display_date(p['departure_date'])}. {source_link(departure_source(p,d), 'Departure record')}.\n\n")
         rows=[['Position / status',p['position']+' / '+p['status']],['Original contract',p['contract_type']],['Signed',p['signed']],['Term',p['term']],['Contract value',p['value'] if p['value'] not in {'Unresolved','Unknown'} else '']]
         if p['control'] in {'signed','future','tender'}:
             rows += [['Bonus terms',p['bonus_terms']],['Remaining unpaid salary guarantee',dollars(p['remaining_guarantees']) if p['remaining_guarantees'] is not None else 'Conditional on signing'],['Guarantee basis',p['guarantees']],['Schedule basis',p['schedule_basis']]]
-        out.append(table(['Field','Detail'],rows))
+        out.append(table(['Field','Detail'],[[label,presentation_note(value,d['current_contract_table'])] for label,value in rows]))
         rows=[]
         for y in years:
             r=p['years'][y];charge=working_charge(r)
@@ -334,17 +366,17 @@ def render_details(d,years):
         if p['name']=='Lane Johnson':out.append('The 2017 fifth-year option is unexercised and is excluded from committed years. Review the exercise decision in the 2016 option window.\n\n')
         elif p['name']=='Justin Blackmon':out.append('The contract, its deferred bonus cash and the 2016 fifth-year option left with the March 31, 2014 trade to Indianapolis. Only the accelerated bonus allocation stays with Jacksonville, once, in the dead-money ledger.\n\n')
         elif p.get('draft_pick'):out.append('Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.\n\n')
-        out.append('### Contract notes\n\n'+p['source_note'].rstrip('.')+'.\n\n')
+        out.append('### Contract notes\n\n'+presentation_note(p['source_note'],d['current_contract_table']).rstrip('.')+'.\n\n')
 
         assumptions=list(dict.fromkeys(r['estimate_note'] for r in p['years'].values() if r.get('estimate_note')))
         for note in assumptions:
-            if not note.startswith(p['source_note']):out.append(note.rstrip('.')+'.\n\n')
+            if not note.startswith(p['source_note']):out.append(presentation_note(note,d['current_contract_table']).rstrip('.')+'.\n\n')
         out.append('Sources: '+', '.join(source_link(x) for x in dict.fromkeys(p['sources']))+'.\n\n')
     return ''.join(out).rstrip()+'\n'
 
 
 def render_organization(data, years, root):
-    staff = root / 'career/2014/team/coaching_staff/coaching_staff.md'
+    staff = root / 'career/2014/00_Team_Operations/Staff/coaching_staff.md'
     rows = []
     totals_by_year = {y: 0 for y in years}
     for cells in md_rows(staff.read_text()):

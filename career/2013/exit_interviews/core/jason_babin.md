@@ -104,7 +104,7 @@ Voluntary throughout. Nothing is required before April 21 or in any voluntary ph
 - `career/2013/regular_season/week_08_san_francisco_at_jacksonville/output.md` (lines 8, 46, 93, 223, 355)
 - `career/2013/regular_season/week_09_bye/output.md` (lines 37, 58)
 - `career/2013/regular_season/week_10_jacksonville_at_tennessee/output.md` (lines 43, 350)
-- `career/2013/regular_season/week_14_houston_at_jacksonville/output.md` (lines 60, 62, 69, 185); `career/2013/ledger.md` (line 1434)
+- `career/2013/regular_season/week_14_houston_at_jacksonville/output.md` (lines 60, 62, 69, 185); [2013 Houston home game report](../../regular_season/week_14_houston_at_jacksonville/output.md)
 - `career/2013/regular_season/week_15_buffalo_at_jacksonville/output.md` (lines 41, 77, 205); `week_16_tennessee_at_jacksonville/output.md` (lines 40, 190); `week_17_jacksonville_at_indianapolis/output.md` (lines 38, 189)
 - `career/2013/postseason/week_18_jacksonville_at_kansas_city/output.md` (lines 38, 345); `week_19_jacksonville_at_tennessee/output.md` (lines 43, 73, 85, 206, 299)
 - `career/2013/stats/team_player_stats.md` (line 63); `career/2013/stats/team_stats.md` (line 55, defense: 23 sacks)

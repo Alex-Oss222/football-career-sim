@@ -126,9 +126,10 @@ def validate(root=ROOT):
         from runtime.seasons import current_record
         state = (root/'state/05_Current_Season_State.md').read_text()
         register = (root/'state/04_Roster_and_Staff_Register.md').read_text()
-        ledger = '\n'.join((root/p).read_text() for p in mapping.get('ledger_history', [])) + '\n' + current_record('ledger', root).read_text()
+        from runtime.events import closures, event_refs, load_events, record_errors, resolve_path
+        events = load_events(root, mapping)
         roster = current_record('roster', root).read_text()
-    except (OSError, ValueError) as exc:
+    except (OSError, ValueError, KeyError, TypeError) as exc:
         return [f'Cannot read required continuity input: {exc}']
     for path in mapping['required_files']:
         require((root/path).is_file(), f'Missing required file: {path}')
@@ -148,7 +149,7 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append('Invalid annual handoff: ' + str(exc))
 
-    entries = {int(n) for n in re.findall(r'^## Entry (\d+)\b', ledger, re.M)}
+    errors.extend(record_errors(root, mapping, events))
     master = re.search(r'\| Master date/time \| (.*?) \|', state)
     from datetime import datetime, date
     try:
@@ -157,43 +158,69 @@ def validate(root=ROOT):
         errors.append('Cannot parse master date/time in Document 5')
         current_date = date.min
 
+    for event in events.values():
+        if event.data.get('kind', 'football') == 'football':
+            require(date.fromisoformat(event.through) <= current_date,
+                    'Closed event exceeds master clock: ' + event.id)
+
     for name, paths in mapping['phases'].items():
         try:
             output_bytes = (root/paths['output']).read_bytes()
             output = metadata(output_bytes.decode())
-            summary = metadata((root/paths['standouts']).read_text())
-            for record, label in [(output, 'output'), (summary, 'summary')]:
-                require({'kind', 'status', 'through', 'event_entry'} <= record.keys(),
-                        f'{name}: {label} lacks required metadata fields')
+            require({'kind', 'status', 'through'} <= output.keys()
+                    and ('event_ref' in output or 'event_entry' in output),
+                    f'{name}: output lacks required metadata fields')
             require(output.get('kind') == 'phase_output', f'{name}: incorrect output kind')
-            require(summary.get('kind') == 'evidence_summary', f'{name}: incorrect summary kind')
             require(output.get('status') in STATUSES, f'{name}: invalid phase status')
-            for field in ('status', 'through', 'event_entry'):
-                require(summary.get(field) == output.get(field), f'{name}: stale summary {field}')
-            require(summary.get('source') == paths['output'], f'{name}: summary points at wrong source')
-            require(summary.get('source_sha256') == hashlib.sha256(output_bytes).hexdigest(),
-                    f'{name}: output changed; review standouts and refresh receipt')
+            # Historical separate summaries retain their reviewed-source digest.
+            # New reports contain the assessment themselves, so no second view
+            # or self-authenticating hash is manufactured for those reports.
+            if 'standouts' in paths:
+                summary = metadata((root/paths['standouts']).read_text())
+                require({'kind', 'status', 'through'} <= summary.keys()
+                        and ('event_ref' in summary or 'event_entry' in summary),
+                        f'{name}: summary lacks required metadata fields')
+                require(summary.get('kind') == 'evidence_summary', f'{name}: incorrect summary kind')
+                for field in ('status', 'through'):
+                    require(summary.get(field) == output.get(field), f'{name}: stale summary {field}')
+                require(event_refs(summary, mapping) == event_refs(output, mapping),
+                        f'{name}: stale summary event reference')
+                require(resolve_path(root, summary.get('source', ''), mapping) == (root/paths['output']).resolve(),
+                        f'{name}: summary points at wrong source')
+                require(summary.get('source_sha256') == hashlib.sha256(output_bytes).hexdigest(),
+                        f'{name}: output changed; review standouts and refresh receipt')
             if output.get('status') == 'NOT_STARTED':
-                require(output.get('through') is None and output.get('event_entry') is None,
+                require(output.get('through') is None and output.get('event_ref') is None
+                        and output.get('event_entry') is None,
                         f'{name}: future phase has completed evidence metadata')
             else:
                 through = date.fromisoformat(output['through'])
                 require(through <= current_date, f'{name}: evidence exceeds master clock')
-                require(output.get('event_entry') in entries, f'{name}: unknown ledger entry')
+                refs = event_refs(output, mapping)
+                require(bool(refs) and all(ref in events for ref in refs), f'{name}: unknown event owner')
+                owned = [events[ref] for ref in refs if ref in events and events[ref].owner == paths['output']]
+                require(bool(owned), f'{name}: completed phase must own its event evidence')
+                require(any(event.through == output['through'] for event in owned),
+                        f'{name}: phase date differs from its event evidence')
             plan = (root/paths['plan']).read_text()
-            require(f']({Path(paths["output"]).name})' in plan and f']({Path(paths["standouts"]).name})' in plan,
+            destinations = [paths['output']] + ([paths['standouts']] if 'standouts' in paths else [])
+            require(all(f']({Path(target).name})' in plan for target in destinations),
                     f'{name}: plan must point to execution records')
         except (OSError, ValueError, KeyError, TypeError) as exc:
             errors.append(f'{name}: invalid/missing phase evidence: {exc}')
 
     try:
         checkpoint = re.search(r'^\*\*Global package checkpoint:\*\* `([^`]+)`', state, re.M)[1]
-        closed = re.findall(r'^\*\*Commit closed [—-] (.*?) [—-] canonical through ', ledger, re.M)
-        require(bool(closed) and closed[-1] == checkpoint, 'State checkpoint differs from latest closed ledger entry')
+        closed_records = closures(events)
+        closed = [item['checkpoint'] for _, _, item in closed_records]
+        require(bool(closed) and closed[-1] == checkpoint, 'State checkpoint differs from latest closed event owner')
+        if closed_records:
+            require(date.fromisoformat(closed_records[-1][2]['through']) == current_date,
+                    'State master date differs from latest closed event owner')
         version = re.search(r'\| Document 4 register version \| `([^`]+)`', register)[1]
         require(f'| Document 4 | `{version}`' in state, 'Document 5 names a stale Document 4 version')
         register_checkpoint = re.search(r'\| Last content-changing checkpoint \| `([^`]+)`', register)[1]
-        require(register_checkpoint in closed, 'Document 4 checkpoint is not a closed ledger event')
+        require(register_checkpoint in closed, 'Document 4 checkpoint is not a closed event owner')
         for n, path in mapping['foundation_sources'].items():
             require(f'| Document {n} | `{git_blob((root/path).read_bytes())}`' in state,
                     f'Document {n}: stale source-version hash in Document 5')
@@ -326,7 +353,7 @@ def validate(root=ROOT):
         errors.append(f'Standings cannot be rebuilt from receipts: {exc}')
     # The 2014 draft order is generated from the same receipts once the
     # Super Bowl has closed.
-    draft_order = root/'career/2014/draft/draft_order.md'
+    draft_order = SeasonPaths(2014, root).record('draft/draft_order.md')
     if draft_order.exists():
         try:
             from scripts.render_draft_order import render as render_draft_order
@@ -336,7 +363,7 @@ def validate(root=ROOT):
             errors.append(f'Draft order cannot be rebuilt from receipts: {exc}')
     # The opponent inventory is deliberately undated; validate it without
     # importing results or opening the schedule gate.
-    if (root/'career/2014/regular_season/schedule/rotation_2014.json').exists():
+    if SeasonPaths(2014, root).record('schedule/rotation_2014.json').exists():
         try:
             from runtime.schedule_2014 import check as check_2014_opponents
             errors.extend(check_2014_opponents(root))
@@ -415,6 +442,7 @@ def validate(root=ROOT):
     try:
         from scripts.render_trade_pages import check as check_trade_pages
         from scripts.render_award_pages import render_pages as award_pages
+        from runtime.events import preserve_event_comments
         from runtime.seasons import SeasonPaths
         year = mapping['active_season']
         if year >= 2014:
@@ -428,7 +456,9 @@ def validate(root=ROOT):
                 method = json.loads((folder/'methodology.json').read_text()) if results else None
                 for relative, text in award_pages(year, results, method).items():
                     path = folder/relative
-                    require(path.is_file() and path.read_text() == text, 'Award page missing or stale: '+relative)
+                    previous = path.read_text() if path.is_file() else ''
+                    require(path.is_file() and previous == preserve_event_comments(text, previous),
+                            'Award page missing or stale: '+relative)
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append('Season reading pages invalid: '+str(exc))
 

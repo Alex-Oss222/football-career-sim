@@ -1,6 +1,6 @@
 {
-  "schema_version": 1,
-  "scope": "2014 active records; prior season evidence remains archived",
+  "schema_version": 2,
+  "scope": "Dated records owned by their football or technical documents; annual records are generated indexes.",
   "required_files": [
     "README.md",
     "AGENTS.md",
@@ -8,7 +8,6 @@
     "career/2013/README.md",
     "career/2013/calendar.md",
     "career/2013/roster.md",
-    "career/2013/ledger.md",
     "career/2013/standings.md",
     "career/2013/coaching_staff.md",
     "career/2013/offseason/head_coach_contract.md",
@@ -223,110 +222,110 @@
     "runtime/draft_order.py",
     "scripts/render_draft_order.py",
     "career/2014/README.md",
-    "career/2014/calendar.md",
-    "career/2014/draft/draft_order.md",
-    "career/2014/draft/pick_ownership.json",
+    "career/2014/Calendar.md",
+    "career/2014/03_Draft/draft_order.md",
+    "career/2014/03_Draft/pick_ownership.json",
     "library/2014_draft_order_verification.md",
-    "career/2014/regular_season/schedule/opponents.md",
-    "career/2014/finances/player_contracts/contract_status.md",
-    "career/2014/offseason_training/README.md",
-    "career/2014/offseason_training/coaching_methods/session_template.md",
-    "career/2014/offseason_training/coaching_methods/unit_plans.md",
-    "career/2014/offseason_training/coaching_methods/weekly_workflow.md",
-    "career/2014/team/player_development/README.md",
-    "career/2014/team/player_development/kirk_cousins.md",
-    "career/2014/team/player_development/player_plan_template.md",
-    "career/2014/team/film/README.md",
-    "career/2014/team/film/delivery_log.md",
-    "career/2014/team/film/kirk_cousins_2013_review.md",
-    "career/2014/team/film/packet_template.md",
-    "career/2014/team/film/player_queue.md",
-    "career/2014/team/player_development/roster_profiles.md",
+    "career/2014/05_Regular_Season/Schedule/opponents.md",
+    "career/2014/00_Team_Operations/Finances/player_contracts/contract_status.md",
+    "career/2014/02_Offseason_Training/README.md",
+    "career/2014/02_Offseason_Training/Coaching_Methods/session_template.md",
+    "career/2014/02_Offseason_Training/Coaching_Methods/unit_plans.md",
+    "career/2014/02_Offseason_Training/Coaching_Methods/weekly_workflow.md",
+    "career/2014/00_Team_Operations/Player_Development/README.md",
+    "career/2014/00_Team_Operations/Player_Development/kirk_cousins.md",
+    "career/2014/00_Team_Operations/Player_Development/player_plan_template.md",
+    "career/2014/00_Team_Operations/Film/README.md",
+    "career/2014/00_Team_Operations/Film/delivery_log.md",
+    "career/2014/00_Team_Operations/Film/kirk_cousins_2013_review.md",
+    "career/2014/00_Team_Operations/Film/packet_template.md",
+    "career/2014/00_Team_Operations/Film/player_queue.md",
+    "career/2014/00_Team_Operations/Player_Development/roster_profiles.md",
     "library/2014_full_calendar_verification.md",
     "runtime/2014_engine_decisions.md",
     "docs/pr_132_followup_review.md",
-    "career/2015/calendar.md",
+    "career/2015/Calendar.md",
     "library/2015_historical_calendar.md",
     "career/coaching_profiles/README.md",
     "career/coaching_profiles/alex_stone.md",
     "career/coaching_profiles/alex_stone_coach_sheet.md",
     "career/coaching_profiles/staff_profiles.md",
     "career/coaching_profiles/profile_template.md",
-    "career/2014/draft/coin_flip.json",
-    "career/2014/draft/coin_flip_2026-09-29.jpg",
-    "career/2014/draft/ownership_audit.md",
-    "career/2014/draft/README.md",
-    "career/2014/draft/draftees.md",
-    "career/2014/draft/udfa_signings.md",
-    "career/2014/free_agency/signings.md",
-    "career/2014/offseason_training/mandatory_minicamp/training_report.md",
-    "career/2014/offseason_training/mandatory_minicamp/player_assessments.md",
-    "career/2014/offseason_training/phases_one_and_two/training_report.md",
-    "career/2014/offseason_training/phases_one_and_two/player_assessments.md",
-    "career/2014/offseason_training/otas/training_report.md",
-    "career/2014/offseason_training/otas/player_assessments.md",
-    "career/2014/offseason_training/rookie_minicamp/training_report.md",
-    "career/2014/offseason_training/rookie_minicamp/player_assessments.md",
-    "career/2014/training_camp_and_preseason/training_camp/training_report.md",
-    "career/2014/training_camp_and_preseason/assessments/position_battles.md",
-    "career/2014/training_camp_and_preseason/roster_cuts/roster_decisions.md",
-    "career/2014/training_camp_and_preseason/training_camp/player_assessments.md",
-    "career/2014/early_offseason/turns/README.md",
-    "career/2014/early_offseason/turns/2014-02-03_to_2014-02-17.md",
-    "career/2014/early_offseason/turns/2014-02-18_to_2014-02-25.md",
-    "career/2014/early_offseason/turns/2014-02-26_to_2014-02-28.md",
-    "career/2014/early_offseason/turns/2014-03-01_to_2014-03-03.md",
+    "career/2014/03_Draft/coin_flip.json",
+    "career/2014/03_Draft/coin_flip_2026-09-29.jpg",
+    "career/2014/03_Draft/ownership_audit.md",
+    "career/2014/03_Draft/README.md",
+    "career/2014/03_Draft/draftees.md",
+    "career/2014/03_Draft/udfa_signings.md",
+    "career/2014/00_Team_Operations/Free_Agency/signings.md",
+    "career/2014/02_Offseason_Training/Mandatory_Minicamp/training_report.md",
+    "career/2014/02_Offseason_Training/OTAs/training_report.md",
+    "career/2014/02_Offseason_Training/Rookie_Minicamp/training_report.md",
+    "career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/roster_decisions.md",
+    "career/2014/01_Early_Offseason/turns/README.md",
+    "career/2014/01_Early_Offseason/turns/2014-02-03_to_2014-02-17.md",
+    "career/2014/01_Early_Offseason/turns/2014-02-18_to_2014-02-25.md",
+    "career/2014/01_Early_Offseason/turns/2014-02-26_to_2014-02-28.md",
+    "career/2014/01_Early_Offseason/turns/2014-03-01_to_2014-03-03.md",
     "library/2014_combine_results.md",
-    "career/2014/supporting_records/operating_baseline.md",
-    "career/2014/training_camp_and_preseason/preseason_games/README.md",
-    "career/2014/training_camp_and_preseason/roster_cuts/final_roster_cuts.md",
-    "career/2014/regular_season/games/README.md",
-    "career/2014/regular_season/schedule/README.md",
-    "career/2014/regular_season/schedule/league_opponents.json",
-    "career/2014/regular_season/schedule/league_opponents.md",
-    "career/2014/regular_season/schedule/release_plan.md",
-    "career/2014/regular_season/schedule/rotation_2014.json",
-    "career/2014/regular_season/schedule/sources.md",
-    "career/2014/regular_season/schedule/fixtures.json",
-    "career/2014/regular_season/schedule/fixtures.md",
-    "career/2014/trades/README.md",
-    "career/2014/trades/targets_and_offers/trade_offers.md",
-    "career/2014/trades/completed_trades/trades.md",
+    "career/2014/Supporting_Records/operating_baseline.md",
+    "career/2014/04_Training_Camp_and_Preseason/Preseason_Games/README.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/05_Regular_Season/Games/README.md",
+    "career/2014/05_Regular_Season/Schedule/README.md",
+    "career/2014/05_Regular_Season/Schedule/league_opponents.json",
+    "career/2014/05_Regular_Season/Schedule/league_opponents.md",
+    "career/2014/05_Regular_Season/Schedule/release_plan.md",
+    "career/2014/05_Regular_Season/Schedule/rotation_2014.json",
+    "career/2014/05_Regular_Season/Schedule/sources.md",
+    "career/2014/05_Regular_Season/Schedule/fixtures.json",
+    "career/2014/05_Regular_Season/Schedule/fixtures.md",
+    "career/2014/00_Team_Operations/Trades/README.md",
+    "career/2014/00_Team_Operations/Trades/targets_and_offers/trade_offers.md",
+    "career/2014/00_Team_Operations/Trades/completed_trades/trades.md",
     "runtime/schedule_2014.py",
     "scripts/render_2014_opponents.py",
     "tests/test_schedule_2014.py",
     "tests/test_2014_fixtures.py",
     "runtime/seasons.py",
     "runtime/season_readiness.json",
-    "career/2014/supporting_records/readiness.md",
-    "career/2014/offseason_training/staff_decisions.md",
+    "career/2014/Supporting_Records/readiness.md",
+    "career/2014/02_Offseason_Training/staff_decisions.md",
     "library/2014_offseason_phase_rules_verification.md",
-    "career/2014/finances/salary_cap/cap_worksheet.md",
-    "career/2014/team/depth_chart/depth_chart.md",
-    "career/2014/team/depth_chart/working_depth_chart.json",
-    "career/2014/finances/player_contracts/contracts.md",
-    "career/2014/early_offseason/scouting/README.md",
-    "career/2014/regular_season/statistics/README.md",
-    "career/2014/regular_season/statistics/records/README.md",
-    "career/2014/regular_season/statistics/records/game_receipts/README.md",
-    "career/2014/regular_season/statistics/records/postseason_receipts/README.md",
-    "career/2014/regular_season/league_results/README.md",
-    "career/2014/regular_season/awards/README.md",
-    "career/2014/postseason/README.md",
-    "career/2014/season_review/README.md",
+    "career/2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md",
+    "career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md",
+    "career/2014/00_Team_Operations/Team/Depth_Chart/working_depth_chart.json",
+    "career/2014/00_Team_Operations/Finances/player_contracts/contracts.md",
+    "career/2014/01_Early_Offseason/scouting/README.md",
+    "career/2014/05_Regular_Season/Statistics/README.md",
+    "career/2014/05_Regular_Season/Statistics/records/README.md",
+    "career/2014/05_Regular_Season/Statistics/records/game_receipts/README.md",
+    "career/2014/05_Regular_Season/Statistics/records/postseason_receipts/README.md",
+    "career/2014/05_Regular_Season/League_Results/README.md",
+    "career/2014/05_Regular_Season/Awards/README.md",
+    "career/2014/06_Postseason/README.md",
+    "career/2014/07_Season_Review/README.md",
     "tests/test_season_isolation.py",
     "career/finances/README.md",
     "career/finances/supporting_records/financial_inputs.json",
     "career/finances/salary_cap/cap_tracker.md",
     "career/finances/player_contracts/contract_details.md",
     "scripts/render_jaguars_cap_tracker.py",
-    "career/2014/ledger.md",
-    "career/2014/team/roster/roster.md",
-    "career/2014/team/coaching_staff/coaching_staff.md",
-    "career/2014/team/roster/player_ages.md",
+    "career/2014/00_Team_Operations/Team/Roster/roster.md",
+    "career/2014/00_Team_Operations/Staff/coaching_staff.md",
+    "career/2014/00_Team_Operations/Team/Roster/player_ages.md",
     "career/finances/coaching_and_organization/coaching_payroll.md",
-    "career/2014/season_review/season_handoff.json",
-    "scripts/season_handoff.py"
+    "career/2014/07_Season_Review/season_handoff.json",
+    "scripts/season_handoff.py",
+    "runtime/events.py",
+    "scripts/render_annual_record.py",
+    "career/2013/record.md",
+    "career/2014/Record.md",
+    "career/2014/02_Offseason_Training/Phase_One/staff_plan.md",
+    "career/2014/02_Offseason_Training/Phase_One/training_report.md",
+    "career/2014/02_Offseason_Training/Phase_Two/staff_plan.md",
+    "career/2014/02_Offseason_Training/Phase_Two/training_report.md"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",
@@ -358,45 +357,446 @@
       "output": "career/2013/offseason/training_camp/output.md",
       "standouts": "career/2013/offseason/training_camp/standouts.md"
     },
-    "2014_offseason_program": {
-      "plan": "career/2014/offseason_training/phases_one_and_two/staff_plan.md",
-      "output": "career/2014/offseason_training/phases_one_and_two/training_report.md",
-      "standouts": "career/2014/offseason_training/phases_one_and_two/player_assessments.md"
-    },
     "2014_rookie_minicamp": {
-      "plan": "career/2014/offseason_training/rookie_minicamp/staff_plan.md",
-      "output": "career/2014/offseason_training/rookie_minicamp/training_report.md",
-      "standouts": "career/2014/offseason_training/rookie_minicamp/player_assessments.md"
+      "plan": "career/2014/02_Offseason_Training/Rookie_Minicamp/staff_plan.md",
+      "output": "career/2014/02_Offseason_Training/Rookie_Minicamp/training_report.md"
     },
     "2014_otas": {
-      "plan": "career/2014/offseason_training/otas/staff_plan.md",
-      "output": "career/2014/offseason_training/otas/training_report.md",
-      "standouts": "career/2014/offseason_training/otas/player_assessments.md"
+      "plan": "career/2014/02_Offseason_Training/OTAs/staff_plan.md",
+      "output": "career/2014/02_Offseason_Training/OTAs/training_report.md"
     },
     "2014_mandatory_minicamp": {
-      "plan": "career/2014/offseason_training/mandatory_minicamp/staff_plan.md",
-      "output": "career/2014/offseason_training/mandatory_minicamp/training_report.md",
-      "standouts": "career/2014/offseason_training/mandatory_minicamp/player_assessments.md"
+      "plan": "career/2014/02_Offseason_Training/Mandatory_Minicamp/staff_plan.md",
+      "output": "career/2014/02_Offseason_Training/Mandatory_Minicamp/training_report.md"
     },
     "2014_training_camp": {
-      "plan": "career/2014/training_camp_and_preseason/training_camp/staff_plan.md",
-      "output": "career/2014/training_camp_and_preseason/training_camp/training_report.md",
-      "standouts": "career/2014/training_camp_and_preseason/training_camp/player_assessments.md"
+      "plan": "career/2014/04_Training_Camp_and_Preseason/Training_Camp/staff_plan.md",
+      "output": "career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md"
+    },
+    "2014_phase_one": {
+      "plan": "career/2014/02_Offseason_Training/Phase_One/staff_plan.md",
+      "output": "career/2014/02_Offseason_Training/Phase_One/training_report.md"
+    },
+    "2014_phase_two": {
+      "plan": "career/2014/02_Offseason_Training/Phase_Two/staff_plan.md",
+      "output": "career/2014/02_Offseason_Training/Phase_Two/training_report.md"
     }
   },
   "active_season": 2014,
   "current_records": {
-    "ledger": "career/2014/ledger.md",
-    "roster": "career/2014/team/roster/roster.md",
-    "staff": "career/2014/team/coaching_staff/coaching_staff.md",
-    "depth_chart": "career/2014/team/depth_chart/working_depth_chart.json",
-    "cap": "career/2014/finances/salary_cap/cap_worksheet.md",
-    "calendar": "career/2014/calendar.md",
-    "player_ages": "career/2014/team/roster/player_ages.md",
-    "background_depth": "library/data/2013_week1_depth_charts.json"
+    "roster": "career/2014/00_Team_Operations/Team/Roster/roster.md",
+    "staff": "career/2014/00_Team_Operations/Staff/coaching_staff.md",
+    "depth_chart": "career/2014/00_Team_Operations/Team/Depth_Chart/working_depth_chart.json",
+    "cap": "career/2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md",
+    "calendar": "career/2014/Calendar.md",
+    "player_ages": "career/2014/00_Team_Operations/Team/Roster/player_ages.md",
+    "background_depth": "library/data/2013_week1_depth_charts.json",
+    "record": "career/2014/Record.md"
   },
-  "ledger_history": [
-    "career/2013/ledger.md"
+  "background_depth_status": "Legacy biography source only; not legal 2014 game input. The 2014 background library (library/data/2014_week1_depth_charts.json) is prepared research, gated until the master clock reaches Week 1, September 7, 2014",
+  "event_record_sources": [
+    "career/[0-9][0-9][0-9][0-9]/**/*.md",
+    "runtime/**/*.md",
+    "docs/**/*.md"
   ],
-  "background_depth_status": "Legacy biography source only; not legal 2014 game input. The 2014 background library (library/data/2014_week1_depth_charts.json) is prepared research, gated until the master clock reaches Week 1, September 7, 2014"
+  "legacy_event_aliases": {
+    "1": [
+      "2013-01-15-pre-hire-search-closure"
+    ],
+    "2": [
+      "2013-01-staff-hired"
+    ],
+    "3": [
+      "2013-03-12-completed-free-agency-batch-reconciled"
+    ],
+    "4": [
+      "2013-04-24-pre-draft-transaction-and-selection-packet-closed-ex-ante"
+    ],
+    "5": [
+      "2013-03-12-pre-draft-quarterback-front-transactions-completed"
+    ],
+    "6": [
+      "2013-04-25-2013-nfl-draft-completed"
+    ],
+    "7": [
+      "2013-04-28-post-draft-undrafted-rookie-signings"
+    ],
+    "8": [
+      "2013-05-03-rookie-contracts-and-rookie-minicamp-completed"
+    ],
+    "9": [
+      "2013-05-05-may-5-roster-contract-cap-and-calendar-correction"
+    ],
+    "10": [
+      "2013-05-13-may-13-15-ota-block-1"
+    ],
+    "11": [
+      "2013-05-20-may-20-21-ota-block-2"
+    ],
+    "12": [
+      "2013-05-23-may-23-ota-day"
+    ],
+    "13": [
+      "2013-05-23-repository-continuity-and-readiness-reconciliation"
+    ],
+    "14": [
+      "2013-06-04-june-4-7-ota-block-3-and-ota-phase-closed"
+    ],
+    "15": [
+      "2013-06-11-june-11-13-mandatory-veteran-minicamp-closed"
+    ],
+    "16": [
+      "2013-06-14-june-14-july-21-protected-pre-camp-interval-closed"
+    ],
+    "17": [
+      "2013-07-22-july-22-25-camp-reporting-and-acclimation-closed"
+    ],
+    "18": [
+      "2013-07-26-july-26-august-3-opening-camp-and-stadium-scrimmage-closed"
+    ],
+    "19": [
+      "2013-08-05-august-5-8-miami-preparation-and-final-walkthrough-closed"
+    ],
+    "20": [
+      "2013-08-09-august-9-preseason-opener-closed"
+    ],
+    "21": [
+      "2013-08-12-august-12-15-training-camp-closed"
+    ],
+    "22": [
+      "2013-08-17-preseason-game-2-closed"
+    ],
+    "23": [
+      "2013-08-24-preseason-game-3-and-qb-decision-closed"
+    ],
+    "24": [
+      "2013-08-27-75-player-deadline-compliance"
+    ],
+    "25": [
+      "2013-08-29-preseason-game-4-closed"
+    ],
+    "26": [
+      "2013-08-31-final-53-closed"
+    ],
+    "27": [
+      "2013-09-01-waivers-and-practice-squad-closed"
+    ],
+    "28": [
+      "2013-09-04-medical-transition-reconciled"
+    ],
+    "29": [
+      "2013-09-04-camp-and-preseason-report-closed",
+      "2013-09-04-regular-season-cap-compliance-closed"
+    ],
+    "30": [
+      "2013-09-09-regular-season-week-1-closed"
+    ],
+    "31": [
+      "2013-09-09-regular-season-week-1-full-fidelity-reset-closed"
+    ],
+    "32": [
+      "2013-09-09-week-1-attribution-and-week-2-handoff-correction-closed"
+    ],
+    "33": [
+      "2013-09-09-week-1-attribution-audit-completion-and-week-2-readiness-correction-closed"
+    ],
+    "34": [
+      "2013-09-04-week-1-voided-for-kernel-2013-4-restart"
+    ],
+    "35": [
+      "2013-09-08-week-1-closed-generation-3"
+    ],
+    "36": [
+      "2013-09-09-blackmon-suspension-ruling"
+    ],
+    "37": [
+      "2013-09-15-week-2-closed"
+    ],
+    "38": [
+      "2013-09-22-week-3-closed"
+    ],
+    "39": [
+      "2013-09-22-engine-correction-kernel-2013-6"
+    ],
+    "40": [
+      "2013-09-29-week-4-closed"
+    ],
+    "41": [
+      "2013-10-06-week-5-closed"
+    ],
+    "42": [
+      "2013-10-07-blackmon-reinstated-and-activated"
+    ],
+    "43": [
+      "2013-10-13-week-6-closed"
+    ],
+    "44": [
+      "2013-10-20-week-7-closed"
+    ],
+    "45": [
+      "2013-10-27-week-8-closed"
+    ],
+    "46": [
+      "2013-10-27-pasztor-and-mosley-injury-projections-recovered"
+    ],
+    "47": [
+      "2013-10-27-league-awards-record-created-weeks-1-8-and-september-backfilled"
+    ],
+    "48": [
+      "2013-10-27-kernel-2013-7-adopted"
+    ],
+    "49": [
+      "2013-10-28-week-9-bye-closed"
+    ],
+    "50": [
+      "2013-11-10-week-10-at-tennessee-closed"
+    ],
+    "51": [
+      "2013-11-10-kernel-2013-8-adopted-2013-overtime-rules"
+    ],
+    "52": [
+      "2013-11-17-week-11-vs-arizona-closed"
+    ],
+    "53": [
+      "2013-11-24-week-12-at-houston-closed"
+    ],
+    "54": [
+      "2013-11-24-kernel-2013-9-adopted-spike-seating"
+    ],
+    "55": [
+      "2013-12-01-week-13-at-cleveland-closed"
+    ],
+    "56": [
+      "2013-12-01-kernel-2013-10-adopted-personnel-true-labels"
+    ],
+    "57": [
+      "2013-12-05-week-14-vs-houston-closed-generation-2-after-a-technical-void"
+    ],
+    "58": [
+      "2013-12-15-week-15-vs-buffalo-closed"
+    ],
+    "59": [
+      "2013-12-22-week-16-vs-tennessee-closed"
+    ],
+    "60": [
+      "2013-12-29-week-17-at-indianapolis-closed-regular-season-complete"
+    ],
+    "61": [
+      "2013-12-29-postseason-bracket-built-wild-card-slate-set"
+    ],
+    "62": [
+      "2014-01-04-afc-wild-card-at-kansas-city-closed"
+    ],
+    "63": [
+      "2014-01-05-player-birth-dates-calendar-ages-and-historical-retirement-audit"
+    ],
+    "64": [
+      "2014-01-11-afc-divisional-at-tennessee-closed-jacksonville-eliminated"
+    ],
+    "65": [
+      "2014-01-19-conference-championships-closed-background"
+    ],
+    "66": [
+      "2014-01-19-kernel-2013-11-adopted-no-home-term-at-a-neutral-site"
+    ],
+    "67": [
+      "2014-02-02-super-bowl-xlviii-closed-2013-season-archived"
+    ],
+    "68": [
+      "2014-02-02-2014-season-set-up"
+    ],
+    "69": [
+      "2014-02-02-kernel-2014-1-adopted-timeouts"
+    ],
+    "70": [
+      "2014-02-02-kernel-2014-2-adopted-late-game-recalibration"
+    ],
+    "71": [
+      "2014-02-02-2013-season-honours-completed"
+    ],
+    "72": [
+      "2014-02-02-kernel-2014-3-adopted-credit-rules-pro-bowl-game-type"
+    ],
+    "73": [
+      "2014-01-21-pro-bowl-draft",
+      "2014-01-26-pro-bowl-game",
+      "2014-02-02-super-bowl-mvp"
+    ],
+    "74": [
+      "2014-01-15-stone-retained"
+    ],
+    "75": [
+      "2014-01-06-lowry-atlanta-interview",
+      "2014-01-12-bush-atlanta-request-refused",
+      "2014-01-12-lowry-atlanta-hire",
+      "2014-01-14-bush-indianapolis-interview"
+    ],
+    "76": [
+      "2014-01-13-player-exit-interviews"
+    ],
+    "77": [
+      "2014-02-02-special-teams-authority-and-staff-planning-reconciled"
+    ],
+    "78": [
+      "2014-02-02-historical-league-rails-adopted-2014-onward"
+    ],
+    "79": [
+      "2014-02-02-meester-retirement-applied"
+    ],
+    "80": [
+      "2014-02-02-cousins-trade-and-draft-capital-reconciled"
+    ],
+    "81": [
+      "2014-02-02-draft-coin-flip-and-league-pick-ownership-reconciled"
+    ],
+    "82": [
+      "2014-02-02-2014-operating-handoff-and-readiness-reconciled"
+    ],
+    "83": [
+      "2014-02-06-bush-chicago-interview",
+      "2014-02-09-bush-chicago-outcome",
+      "2014-02-17-minnesota-staff-requests-refused"
+    ],
+    "84": [
+      "2014-02-03-april-permission-request",
+      "2014-02-05-westhoff-search",
+      "2014-02-11-westhoff-hired"
+    ],
+    "85": [
+      "2014-02-03-five-futures-signed",
+      "2014-02-05-danthony-smith-futures-signed"
+    ],
+    "86": [
+      "2014-02-17-clock-advanced-to-february-17-franchise-and-transition-window-open"
+    ],
+    "87": [
+      "2014-02-18-monroe-franchise-tag"
+    ],
+    "88": [
+      "2014-02-25-clock-advanced-to-february-25-combine-closed"
+    ],
+    "89": [
+      "2014-02-28-clock-advanced-to-february-28-2014-cap-and-tag-figures-published"
+    ],
+    "90": [
+      "2014-02-28-head-coach-role-and-original-contracts-reconciled"
+    ],
+    "91": [
+      "2014-02-28-complete-contract-schedules-adopted"
+    ],
+    "92": [
+      "2014-03-03-clock-advanced-to-march-3-designation-deadline-passed"
+    ],
+    "93": [
+      "2014-03-03-march-1-to-3-rails-verification-closed"
+    ],
+    "94": [
+      "2014-03-11-tenders-and-contract-transition"
+    ],
+    "95": [
+      "2014-03-11-monroe-marks-verner-signed"
+    ],
+    "96": [
+      "2014-03-11-talib-signed",
+      "2014-03-12-tate-declined"
+    ],
+    "97": [
+      "2014-03-13-hawkins-offer-sheet",
+      "2014-03-14-nicks-signed",
+      "2014-03-15-edelman-declined",
+      "2014-03-18-hawkins-binding-contract"
+    ],
+    "98": [
+      "2014-03-18-teo-nesheim-signed"
+    ],
+    "99": [
+      "2014-03-19-cain-resigned",
+      "2014-03-20-nwaneri-arizona-trade"
+    ],
+    "100": [
+      "2014-03-24-compensatory-picks-announced"
+    ],
+    "101": [
+      "2014-03-24-historical-schedule-and-annual-handoff"
+    ],
+    "102": [
+      "2014-03-24-allen-arizona-agreement",
+      "2014-03-24-alualu-houston-trade",
+      "2014-03-24-babin-miami-trade"
+    ],
+    "103": [
+      "2014-03-28-jones-drew-wilson-resigned",
+      "2014-03-28-offseason-schedule-filed"
+    ],
+    "104": [
+      "2014-03-31-shorts-blackmon-colts-trade"
+    ],
+    "105": [
+      "2014-03-31-colts-picks-washington-trade"
+    ],
+    "106": [
+      "2014-04-04-henne-signing",
+      "2014-04-05-posluszny-cleared",
+      "2014-04-07-allen-arizona-trade",
+      "2014-04-11-staff-allocation-review"
+    ],
+    "107": [
+      "2014-04-18-offseason-operating-decisions",
+      "2014-04-22-allen-retired-arizona",
+      "2014-05-01-phase-one-progress"
+    ],
+    "108": [
+      "2014-05-08-first-round-selections",
+      "2014-05-09-second-third-round-selections",
+      "2014-05-10-final-draft-selections",
+      "2014-05-10-undrafted-rookies-signed",
+      "2014-05-11-drafted-rookies-signed"
+    ],
+    "109": [
+      "2014-05-02-bradfield-offer-sheet-deadline",
+      "2014-05-11-phase-two-first-week"
+    ],
+    "110": [
+      "2014-05-12-ball-not-resigned",
+      "2014-05-12-rackley-seattle-trade"
+    ],
+    "111": [
+      "2014-05-17-rookie-minicamp-complete",
+      "2014-05-23-phase-two-complete"
+    ],
+    "112": [
+      "2014-06-02-no-june-one-tenders",
+      "2014-06-13-otas-complete"
+    ],
+    "113": [
+      "2014-06-16-bradfield-tender-retained",
+      "2014-06-28-spring-program-complete"
+    ],
+    "114": [
+      "2014-07-29-training-camp-opened"
+    ],
+    "115": [
+      "2014-07-29-kernel-2014-4-live-verification"
+    ],
+    "116": [
+      "2014-08-01-first-padded-camp-block"
+    ]
+  },
+  "record_years": [
+    2013,
+    2014
+  ],
+  "path_aliases": {
+    "career/2014/offseason_training/phases_one_and_two/staff_plan.md": "career/2014/02_Offseason_Training/Phase_One/staff_plan.md",
+    "career/2014/offseason_training/phases_one_and_two/training_report.md": "career/2014/02_Offseason_Training/Phase_Two/training_report.md",
+    "career/2014/offseason_training/phases_one_and_two/player_assessments.md": "career/2014/02_Offseason_Training/Phase_Two/training_report.md",
+    "career/2014/offseason_training/phases_one_and_two/README.md": "career/2014/02_Offseason_Training/Phase_One/README.md",
+    "career/2014/offseason_training/rookie_minicamp/player_assessments.md": "career/2014/02_Offseason_Training/Rookie_Minicamp/training_report.md",
+    "career/2014/offseason_training/otas/player_assessments.md": "career/2014/02_Offseason_Training/OTAs/training_report.md",
+    "career/2014/offseason_training/mandatory_minicamp/player_assessments.md": "career/2014/02_Offseason_Training/Mandatory_Minicamp/training_report.md",
+    "career/2014/training_camp_and_preseason/training_camp/player_assessments.md": "career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md",
+    "career/2014/04_Training_Camp_and_Preseason/Training_Camp/position_review.md": "career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md",
+    "career/2014/training_camp_and_preseason/assessments/position_battles.md": "career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md",
+    "career/2014/04_Training_Camp_and_Preseason/Training_Camp/player_assessments.md": "career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md"
+  }
 }

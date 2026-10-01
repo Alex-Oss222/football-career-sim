@@ -2,7 +2,7 @@
 
 This note supports the football taxonomy in
 [`runtime/player_progression.py`](../runtime/player_progression.py) and the 2014
-[progression model](../career/2014/team/player_development/progression_model.md).
+[progression model](../career/2014/00_Team_Operations/Player_Development/progression_model.md).
 It is research about football development mechanisms, not an import of later
 real-world player outcomes into the branch.
 

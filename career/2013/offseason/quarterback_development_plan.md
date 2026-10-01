@@ -2,7 +2,7 @@
 
 This file defines Jacksonville's quarterback teaching, evaluation, and competition framework for the 2013 offseason and preseason.
 
-It is a football plan, not a transaction ledger or current-roster snapshot. Player acquisitions, departures, draft results, contract status, and the current quarterback room belong in `career/2013/roster.md`, the transaction files, the season ledger, and Documents 4-5.
+It is a football plan, not a transaction ledger or current-roster snapshot. Player acquisitions, departures, draft results, contract status, and the current quarterback room belong in `career/2013/roster.md`, the transaction files, the dated season record, and Documents 4-5.
 
 The [Prowl identity](the_prowl_program_identity.md), [player readiness standard](the_prowl_player_readiness_standard.md), and [coaching staff register](../coaching_staff.md) govern implementation.
 

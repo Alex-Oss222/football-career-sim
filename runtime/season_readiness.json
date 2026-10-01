@@ -35,8 +35,8 @@
           "status": "VERIFIED",
           "remaining": "Frozen April 23 release (2014 ledger Entry 107): 256 games verified in sources.md and tests. Apply the listed dated amendments on their historical dates; two non-Jacksonville release-slot kickoff questions stay open in sources.md.",
           "evidence": [
-            "career/2014/regular_season/schedule/fixtures.json",
-            "career/2014/regular_season/schedule/sources.md",
+            "career/2014/05_Regular_Season/Schedule/fixtures.json",
+            "career/2014/05_Regular_Season/Schedule/sources.md",
             "tests/test_2014_fixtures.py"
           ]
         },
@@ -45,7 +45,7 @@
           "status": "BLOCKED",
           "remaining": "Establish current 2014 control, medical clearance and Jacksonville's game depth chart at the August 30 cutdown. The 31 background clubs' Week 1 depth-chart library (library/data/2014_week1_depth_charts.json) is prepared research, gated until the master clock reaches Week 1 (September 7, 2014); it is not yet legal game input and the gate stays BLOCKED.",
           "evidence": [
-            "career/2014/supporting_records/operating_baseline.md",
+            "career/2014/Supporting_Records/operating_baseline.md",
             "library/2014_week1_depth_charts.md"
           ]
         },
@@ -54,7 +54,7 @@
           "status": "BLOCKED",
           "remaining": "Reconcile 2014 obligations and practice-squad/futures control before transactions or participation.",
           "evidence": [
-            "career/2014/finances/salary_cap/cap_worksheet.md"
+            "career/2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md"
           ]
         }
       ]

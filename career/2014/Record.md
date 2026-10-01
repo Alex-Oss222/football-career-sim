@@ -1,0 +1,64 @@
+# 2014 record
+
+Dated events and their full records.
+
+- January 6, 2014: Atlanta received permission to interview Alan Lowry for its head-coach opening and completed the interview. [Full record](01_Early_Offseason/staff_changes/timeline.md).
+- January 12, 2014: Jacksonville refused Atlanta’s request to interview Frank Bush for its linebackers job. [Full record](01_Early_Offseason/staff_changes/timeline.md).
+- January 12, 2014: Alan Lowry accepted Atlanta’s head-coach job; Stone covered Jacksonville’s special teams vacancy. [Full record](01_Early_Offseason/staff_changes/timeline.md).
+- January 13, 2014 to January 14, 2014: The staff held exit interviews for all 53 active-roster and eight practice-squad players. [Full record](../2013/exit_interviews/README.md).
+- January 14, 2014: Frank Bush interviewed for Indianapolis’s defensive coordinator job; no offer was recorded by February 2. [Full record](01_Early_Offseason/staff_changes/timeline.md).
+- January 15, 2014: Khan and Caldwell reviewed the 2013 season and retained Stone on his existing contract. [Full record](../2013/season_review/owner_and_gm_review.md).
+- February 2, 2014: Brad Meester’s announced retirement was applied after the 2013 season; his contract ran to March 11. [Full record](League/personnel/retirements.md).
+- February 3, 2014: Tyler Bray, Richard Murphy, Antwon Blake, Jerome Long and Jerrell Jackson signed reserve/future contracts. [Full record](00_Team_Operations/Free_Agency/signings.md).
+- February 3, 2014 to February 4, 2014: Jacksonville requested permission to approach Bobby April; Oakland refused on February 4. [Full record](01_Early_Offseason/staff_changes/hires.md).
+- February 5, 2014: D’Anthony Smith signed a reserve/future contract after choosing Jacksonville over Seattle. [Full record](00_Team_Operations/Free_Agency/signings.md).
+- February 5, 2014 to February 10, 2014: Jacksonville approached Mike Westhoff, who agreed to interview February 7 and interviewed February 10. [Full record](01_Early_Offseason/staff_changes/hires.md).
+- February 6, 2014: Jacksonville permitted Frank Bush’s Chicago defensive coordinator interview. [Full record](01_Early_Offseason/staff_changes/timeline.md).
+- February 9, 2014: Chicago selected another defensive coordinator; Frank Bush stayed with Jacksonville. [Full record](01_Early_Offseason/staff_changes/timeline.md).
+- February 11, 2014: Mike Westhoff became special teams coordinator on a two-year contract at $750,000 a year. [Full record](01_Early_Offseason/staff_changes/hires.md).
+- February 17, 2014: Jacksonville refused Minnesota’s same-job requests for Jeremy Bates and Mike Tice; both stayed. [Full record](01_Early_Offseason/staff_changes/timeline.md).
+- February 18, 2014: Jacksonville designated Eugene Monroe as its non-exclusive franchise player. [Full record](00_Team_Operations/Free_Agency/signings.md).
+- March 11, 2014: Aqib Talib signed a five-year contract with Jacksonville after 4 p.m. [Full record](00_Team_Operations/Free_Agency/march_2014_replay_log.md).
+- March 11, 2014: Bradfield, Clemons, Brown and Pasztor received unsigned tenders; six futures took effect and untendered players reached free agency. [Full record](00_Team_Operations/Free_Agency/signings.md).
+- March 11, 2014: Monroe and Marks re-signed, and Alterraun Verner joined Jacksonville; Monroe’s new contract replaced his franchise tender. [Full record](00_Team_Operations/Free_Agency/march_2014_replay_log.md).
+- March 12, 2014: Golden Tate declined Jacksonville’s offer and signed with Detroit. [Full record](00_Team_Operations/Free_Agency/march_2014_replay_log.md).
+- March 13, 2014: Andrew Hawkins signed Jacksonville’s offer sheet, opening Cincinnati’s matching period. [Full record](00_Team_Operations/Free_Agency/march_2014_replay_log.md).
+- March 14, 2014: Hakeem Nicks signed a one-year contract with Jacksonville. [Full record](00_Team_Operations/Free_Agency/march_2014_replay_log.md).
+- March 15, 2014: Julian Edelman declined Jacksonville’s offer and returned to New England. [Full record](00_Team_Operations/Free_Agency/march_2014_replay_log.md).
+- March 18, 2014: Cincinnati declined to match Hawkins’s offer sheet; his Jacksonville contract became binding without pick compensation. [Full record](00_Team_Operations/Free_Agency/march_2014_replay_log.md).
+- March 18, 2014: Daniel Te’o-Nesheim signed a three-year agreement with Jacksonville. [Full record](00_Team_Operations/Free_Agency/teo_nesheim_negotiation_2014-03-18.md).
+- March 19, 2014: Jeremy Cain re-signed for one year at $855,000 without a bonus or guarantee. [Full record](00_Team_Operations/Free_Agency/cain_negotiation_2014-03-19.md).
+- March 20, 2014: Jacksonville acquired Arizona’s No. 38 pick for Nwaneri and its 2015 first, 2015 fourth and 2016 fifth. [Full record](00_Team_Operations/Trades/completed_trades/nwaneri_to_arizona_2014-03-20.md).
+- March 24, 2014: Jacksonville traded Tyson Alualu to Houston for Houston’s unconditional 2015 fourth. [Full record](00_Team_Operations/Trades/completed_trades/alualu_to_houston_2014-03-24.md).
+- March 24, 2014: Jacksonville sent Jason Babin and its 2017 seventh to Miami for Miami’s unconditional 2015 third. [Full record](00_Team_Operations/Trades/completed_trades/babin_to_miami_2014-03-24.md).
+- March 24, 2014: The league announced 32 compensatory picks; Jacksonville received none. [Full record](03_Draft/compensatory/README.md).
+- March 24, 2014: Jacksonville and Arizona agreed an Allen trade subject to Posluszny’s clearance, Allen’s physical and league processing. [Full record](00_Team_Operations/Trades/supporting_records/march_24_2014_trade_resolution.md).
+- March 28, 2014: Maurice Jones-Drew re-signed for two years and C.J. Wilson re-signed for one year. [Full record](00_Team_Operations/Free_Agency/jones_drew_and_wilson_negotiation_2014-03-28.md).
+- March 28, 2014: Caldwell’s office filed Jacksonville’s selected offseason-program schedule before the March 31 deadline. [Full record](02_Offseason_Training/staff_decisions.md).
+- March 31, 2014: Jacksonville traded Cecil Shorts and Justin Blackmon to Indianapolis for Nos. 82 and 194. [Full record](00_Team_Operations/Trades/completed_trades/shorts_blackmon_to_indianapolis_2014-03-31.md).
+- March 31, 2014: Jacksonville sent Nos. 82 and 194 to Washington to recover its original 2015 second-round pick. [Full record](00_Team_Operations/Trades/completed_trades/colts_picks_to_washington_2014-03-31.md).
+- April 4, 2014: Chad Henne re-signed for two years as Jacksonville’s returning QB2. [Full record](00_Team_Operations/Free_Agency/henne_negotiation_2014-04-04.md).
+- April 5, 2014: Paul Posluszny’s existing head/neck hold was cleared with no new restriction communicated. [Full record](00_Team_Operations/Medical/medical_history.md).
+- April 7, 2014: Russell Allen’s trade to Arizona closed for its unconditional 2015 fourth after the agreed conditions were met. [Full record](00_Team_Operations/Trades/completed_trades/allen_to_arizona_2014-04-07.md).
+- April 11, 2014: The staff completed its allocation review for returning work, newcomer teaching, individual development and second-year material. [Full record](02_Offseason_Training/staff_decisions.md).
+- April 18, 2014: Stone adopted staff coverage, teaching, defensive communication, punt and family-event policies. [Full record](02_Offseason_Training/stone_april_18_2014_decisions.md).
+- April 21, 2014 to May 1, 2014: Jacksonville completed eight Phase One classroom and physical-work days. [Full record](02_Offseason_Training/Phase_One/training_report.md).
+- April 22, 2014: Russell Allen retired at Arizona after the completed April 7 trade; Jacksonville’s cap did not change. [Full record](League/personnel/retirements.md).
+- May 2, 2014: Bradfield received no offer sheet by the deadline; nothing required matching on May 7. [Full record](00_Team_Operations/Free_Agency/signings.md).
+- May 2, 2014: The staff closed Phase One and issued individual teaching notes. [Full record](02_Offseason_Training/Phase_One/training_report.md).
+- May 5, 2014 to May 9, 2014: Jacksonville completed its first week of unopposed Phase Two instruction and the staff review. [Full record](02_Offseason_Training/Phase_Two/training_report.md).
+- May 8, 2014: Jacksonville selected Aaron Donald at No. 13 and Joel Bitonio at No. 26. [Full record](03_Draft/draftees.md).
+- May 9, 2014: Jacksonville selected Davante Adams at No. 38 and Trai Turner at No. 90. [Full record](03_Draft/draftees.md).
+- May 10, 2014: Jacksonville selected Telvin Smith, Corey Linsley, Charles Leno Jr., Jemea Thomas and Malcolm Butler. [Full record](03_Draft/draftees.md).
+- May 10, 2014: Jacksonville signed 17 undrafted rookies; six declined and James Hurst remained on a medical hold. [Full record](03_Draft/udfa_signings.md).
+- May 11, 2014: All nine drafted rookies signed four-year contracts before rookie minicamp. [Full record](03_Draft/draftees.md).
+- May 12, 2014: Jacksonville traded Will Rackley to Seattle for its unconditional 2015 seventh and retained Mike Brewster. [Full record](00_Team_Operations/Trades/completed_trades/rackley_to_seattle_2014-05-12.md).
+- May 12, 2014: Stone told Alan Ball he would not be re-signed now; Caldwell contacted three clubs and kept Ball first on the veteran-corner call list. [Full record](00_Team_Operations/Free_Agency/alan_ball_2014-05-12.md).
+- May 12, 2014 to May 23, 2014: Jacksonville completed Phase Two and integrated its signed rookies. [Full record](02_Offseason_Training/Phase_Two/training_report.md).
+- May 16, 2014 to May 17, 2014: Jacksonville completed its two-day rookie minicamp. [Full record](02_Offseason_Training/Rookie_Minicamp/training_report.md).
+- May 27, 2014 to June 13, 2014: Jacksonville completed ten OTA practices. [Full record](02_Offseason_Training/OTAs/training_report.md).
+- June 2, 2014: Jacksonville filed no June 1 tender for Ball, Brent Grimes, Reisner or Rutland and retained no rights to them. [Full record](00_Team_Operations/Free_Agency/signings.md).
+- June 16, 2014: Caldwell retained Bradfield’s original $1,431,000 qualifying offer without a reduced substitute. [Full record](00_Team_Operations/Free_Agency/signings.md).
+- June 16, 2014 to June 28, 2014: Mandatory minicamp ran June 17 to 19 after June 16 physicals; the June 20 staff review led into summer break. [Full record](02_Offseason_Training/Mandatory_Minicamp/training_report.md).
+- July 21, 2014 to July 29, 2014: Rookies reported July 21 and veterans July 24; Jacksonville completed five practices from July 25 to 29. [Full record](04_Training_Camp_and_Preseason/Training_Camp/training_report.md).
+- July 30, 2014 to August 1, 2014: Jacksonville completed its first two controlled-contact padded practices. [Full record](04_Training_Camp_and_Preseason/Training_Camp/training_report.md).

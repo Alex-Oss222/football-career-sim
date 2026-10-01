@@ -1,4 +1,4 @@
-<!-- sim-meta: {"event_entry": 14, "kind": "phase_output", "status": "COMPLETE", "through": "2013-06-07"} -->
+<!-- sim-meta: {"event_ref": "2013-06-04-june-4-7-ota-block-3-and-ota-phase-closed", "kind": "phase_output", "status": "COMPLETE", "through": "2013-06-07"} -->
 
 # Jacksonville Jaguars — 2013 OTAs Output
 
@@ -215,3 +215,11 @@ The defense finished with base front, fit and coverage exchange dependable enoug
 OTAs closed with 64 controlled players, no transaction, no permanent depth decision and no cap change. The May 5 Top-51 planning range remains approximately $7.0M-$7.4M.
 
 **Next scheduled football event:** June 11-13 mandatory veteran minicamp.
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - May 15, 2013 - OTA block 1 closed", "original_close": "Commit closed \u2014 Canonical update - May 15, 2013 - OTA block 1 closed \u2014 canonical through May 15, before May 20 OTAs", "sequence": 10, "through": "2013-05-15"}, "date": "2013-05-13", "date_end": "2013-05-15", "id": "2013-05-13-may-13-15-ota-block-1", "status": "closed", "summary": "Jacksonville completed the first three OTA practices."} -->
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - May 21, 2013 - OTA block 2 closed", "original_close": "Commit closed \u2014 Canonical update - May 21, 2013 - OTA block 2 closed \u2014 canonical through May 21, before May 23 OTA work", "sequence": 11, "through": "2013-05-21"}, "date": "2013-05-20", "date_end": "2013-05-21", "id": "2013-05-20-may-20-21-ota-block-2", "status": "closed", "summary": "Jacksonville completed the second OTA block."} -->
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - May 23, 2013 - OTA Day 6 closed", "original_close": "Commit closed \u2014 Canonical update - May 23, 2013 - OTA Day 6 closed \u2014 canonical through May 23, before June 4 OTA work", "sequence": 12, "through": "2013-05-23"}, "date": "2013-05-23", "id": "2013-05-23-may-23-ota-day", "status": "closed", "summary": "Jacksonville completed the sixth OTA practice."} -->
+
+<!-- event-record: {"date": "2013-06-04", "date_end": "2013-06-07", "id": "2013-06-04-june-4-7-ota-block-3-and-ota-phase-closed", "status": "closed", "summary": "Jacksonville completed the final OTA block."} -->

@@ -1,6 +1,6 @@
 # 2013 Week 17 league results
 
-**Events:** `2013-week17-<away>-at-<home>`, kernel 2013.10 (ledger Entry 56), closed once each through the private production runner.
+**Events:** `2013-week17-<away>-at-<home>`, kernel 2013.10 ([kernel 2013.10 attribution correction](../../../runtime/README.md)), closed once each through the private production runner.
 **Inputs:** background clubs carried forward from the [Week 1 depth-chart library](../../../library/2013_week1_depth_charts.md) with branch injuries applied, each dressing up to 46 players chosen by depth order; every club at the Average low-confidence unit anchor.
 **Receipts:** `../stats/game_receipts/week_17_*.json`. **Standings:** [../standings.md](../standings.md), generated from the receipts.
 **Byes:** none.

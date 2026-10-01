@@ -41,7 +41,7 @@ Stone's framing to the team was "6-2" and "0-0": the six wins cannot beat Tennes
 
 - **Monday:** medical evaluation and treatment on return from London; the team meeting; position film; no practice.
 - **Tuesday:** the one practice. Periods were ball security, protection (the largest block), third down at fixed distances, the core runs and 6OL, Crennel's run fit, rush finish, back and tight-end coverage, and third down. Special teams were kept short.
-- **Pasztor and Mosley:** both worked in their first practice since their availability was restored (Entry 46). Pasztor had interior technique, communication and conditioning work; Mosley competed for rotational tackle snaps. Neither was moved on the depth chart. Their Week 10 roles are Stone's and Crennel's decisions from that evidence and Week 10 practice.
+- **Pasztor and Mosley:** both worked in their first practice since their availability was restored ([Pasztor and Mosley medical-record correction](../../medical_history.md)). Pasztor had interior technique, communication and conditioning work; Mosley competed for rotational tackle snaps. Neither was moved on the depth chart. Their Week 10 roles are Stone's and Crennel's decisions from that evidence and Week 10 practice.
 - **Leadership council:** Cousins, Jones-Drew, Monroe, Lewis, Posluszny, Daryl Smith, Lowery and Scobee were asked what wastes practice time, what is unclear and what should not change.
 - **Wednesday to Sunday:** players off. Each left with a first-half summary, two things to keep, two to correct and recovery instructions.
 - **Staff:** Wednesday self-scout and separate meetings with Tice, Crennel and Lowry; Thursday morning second-half planning, including a Houston short-week skeleton for the Week 14 Thursday game; Stone away Thursday afternoon to Saturday.
@@ -69,4 +69,6 @@ No injury (no game). Rackley remains limited (minor); C.J. Wilson out (projected
 
 ## 8. Week closure
 
-**Record:** 6-2-0. **Ledger entry:** Entry 49. **Next event:** Week 10 at Tennessee, Sunday, November 10, 1 p.m. ET. **Not simulated.**
+**Record:** 6-2-0. **Next event:** Week 10 at Tennessee, Sunday, November 10, 1 p.m. ET. **Not simulated.**
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - November 3, 2013 - Week 9 bye closed", "original_close": "Commit closed - Canonical update - November 3, 2013 - Week 9 bye closed - canonical through November 3, after Week 9", "sequence": 49, "through": "2013-11-03"}, "date": "2013-10-28", "date_end": "2013-11-03", "id": "2013-10-28-week-9-bye-closed", "status": "closed", "summary": "Jacksonville completed its bye-week work; the trade deadline passed without a move."} -->

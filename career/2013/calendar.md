@@ -2,22 +2,22 @@
 
 **Function:** Branch-facing schedule and phase control.
 **Historical source:** `../../library/2013_jacksonville_master_calendar.md`.
-**Current branch checkpoint:** December 29, 2013, Week 17 closed; regular season complete (Entry 60).
+**Current branch checkpoint:** December 29, 2013, Week 17 closed; regular season complete ([2013 Indianapolis away game report](regular_season/week_17_jacksonville_at_indianapolis/output.md)).
 **Rule:** Dates/opponents/deadlines are historical rails. Attendance, transactions, performance and game results are branch events.
 
 ## Current checkpoint
 
-- Completed through: **February 2, 2014, Super Bowl XLVIII (Buffalo 31, Minnesota 20)**; the 2013 season is complete and archived (Entry 67). Jacksonville's season ended in the Divisional round (lost 20-13 at Tennessee, January 11).
+- Completed through: **February 2, 2014, Super Bowl XLVIII (Buffalo 31, Minnesota 20)**; the 2013 season is complete and archived ([Super Bowl XLVIII report](league_results/week_21.md)). Jacksonville's season ended in the Divisional round (lost 20-13 at Tennessee, January 11).
 - Controlled 53 (53 active); practice squad 8; preseason record 2-2; regular-season record 10-6 (final); postseason 1-1 (eliminated).
 - Next competitive event: **none in 2013**. The 2014 league calendar is in `library/2014_league_calendar_and_financial_rules.md`; Jacksonville's 2014 calendar is set up under `career/2014/`.
-- Alan Ball cleared (Week 10; January 22, 2014); A.J. Bouye cleared (Week 11 injury; November 26); Paul Posluszny out (Week 13; independent medical hold; projected return April 5, 2014); Travis Kelce cleared (Week 13 minor injury; December 3); Montell Owens and Adam Thielen cleared (Wild Card minor injuries); Ryan Davis cleared (Divisional minor injury; January 14); Rackley limited (minor); C.J. Wilson cleared (January 30, 2014). Pasztor and Mosley available from their recovered projections (Entry 46). Games ran under kernel 2013.6 in Weeks 4-8 (Entry 39); kernel 2013.7 in Weeks 9-10 (Entry 48); kernel 2013.8 in Weeks 11-12 (Entry 51); kernel 2013.9 in Week 13 (Entry 54); kernel 2013.10 from Week 14 through the conference championships (Entry 56); kernel 2013.11 for the Super Bowl (Entry 66). League awards: `awards/` (Entry 47).
+- Alan Ball cleared (Week 10; January 22, 2014); A.J. Bouye cleared (Week 11 injury; November 26); Paul Posluszny out (Week 13; independent medical hold; projected return April 5, 2014); Travis Kelce cleared (Week 13 minor injury; December 3); Montell Owens and Adam Thielen cleared (Wild Card minor injuries); Ryan Davis cleared (Divisional minor injury; January 14); Rackley limited (minor); C.J. Wilson cleared (January 30, 2014). Pasztor and Mosley available from their recovered projections ([Pasztor and Mosley medical-record correction](medical_history.md)). Games ran under kernel 2013.6 in Weeks 4-8 ([kernel 2013.6 correction](../../runtime/README.md)); kernel 2013.7 in Weeks 9-10 ([kernel 2013.7 adoption](../../runtime/README.md)); kernel 2013.8 in Weeks 11-12 ([kernel 2013.8 overtime correction](../../runtime/README.md)); kernel 2013.9 in Week 13 ([kernel 2013.9 correction](../../runtime/README.md)); kernel 2013.10 from Week 14 through the conference championships ([kernel 2013.10 attribution correction](../../runtime/README.md)); kernel 2013.11 for the Super Bowl ([kernel 2013.11 neutral-site correction](../../runtime/README.md)). League awards: `awards/` ([2013 awards reconstruction](awards/README.md)).
 
 ## 2013 branch schedule
 
 | Date/window | Branch event | Controlling plan/output | Current status |
 |---|---|---|---|
-| Jan. 15 | Stone accepts Jacksonville job | hiring-search ledger | Complete |
-| Late Jan. | Staff build | staff-building ledger | Complete |
+| Jan. 15 | Stone accepts Jacksonville job | hiring-search record | Complete |
+| Late Jan. | Staff build | staff appointments | Complete |
 | Mar. 12 | Free-agency opening batch | `offseason/free_agency/signings.md` | Complete |
 | Apr. 2 | Official offseason program begins | `offseason/otas/plan.md` | Historical date verified; not separately simulated |
 | Apr. 16-18 | New-HC voluntary veteran minicamp | `offseason/otas/plan.md` | **Missed branch phase; preserve as gap** |
@@ -65,14 +65,14 @@
 | **Nov. 17** | W11 vs Arizona, 1 p.m. | [Week 11 output](regular_season/week_11_arizona_at_jacksonville/output.md) | Complete: won 29-7 |
 | **Nov. 24** | W12 at Houston, 1 p.m. | [Week 12 output](regular_season/week_12_jacksonville_at_houston/output.md) | Complete: lost 38-6 |
 | **Dec. 1** | W13 at Cleveland, 1 p.m. | [Week 13 output](regular_season/week_13_jacksonville_at_cleveland/output.md) | Complete: won 22-19 (OT) |
-| **Dec. 5** | W14 vs Houston, 8:25 p.m. | [Week 14 output](regular_season/week_14_houston_at_jacksonville/output.md) | Complete: won 21-20 (generation 2; Entry 57) |
+| **Dec. 5** | W14 vs Houston, 8:25 p.m. | [Week 14 output](regular_season/week_14_houston_at_jacksonville/output.md) | Complete: won 21-20 (generation 2; [2013 Houston home game report](regular_season/week_14_houston_at_jacksonville/output.md)) |
 | **Dec. 15** | W15 vs Buffalo, 1 p.m. | [Week 15 output](regular_season/week_15_buffalo_at_jacksonville/output.md) | Complete: lost 45-16 |
 | **Dec. 22** | W16 vs Tennessee, 1 p.m. | [Week 16 output](regular_season/week_16_tennessee_at_jacksonville/output.md) | Complete: won 38-27 |
 | **Dec. 29** | W17 at Indianapolis, 1 p.m. | [Week 17 output](regular_season/week_17_jacksonville_at_indianapolis/output.md) | Complete: lost 23-22 |
 | **Jan. 4, 2014** | Wild Card at Kansas City (AFC 5 at 4), 4:35 p.m., NBC | [Wild Card output](postseason/week_18_jacksonville_at_kansas_city/output.md) | Complete: won 38-14 |
 | **Jan. 11, 2014** | Divisional at Tennessee (AFC 5 at 2), 8:15 p.m., CBS | [Divisional output](postseason/week_19_jacksonville_at_tennessee/output.md) | Complete: lost 20-13; eliminated |
 | Jan. 19 | AFC/NFC Championships: Buffalo 34, Tennessee 3; Minnesota 20, Philadelphia 7 | [week 20 roundup](league_results/week_20.md) | Complete (background) |
-| Feb. 2 | Super Bowl XLVIII: Buffalo 31, Minnesota 20, MetLife Stadium | [week 21 roundup](league_results/week_21.md) | Complete (background); 2013 season archived (Entry 67) |
+| Feb. 2 | Super Bowl XLVIII: Buffalo 31, Minnesota 20, MetLife Stadium | [week 21 roundup](league_results/week_21.md) | Complete (background); 2013 season archived ([Super Bowl XLVIII report](league_results/week_21.md)) |
 
 ## Training-camp opening schedule
 
@@ -112,5 +112,5 @@ No unverified August 4 or August 10-11 practice is inserted. After August 15, us
 1. A phase cannot run before its historical date.
 2. A missed voluntary phase is not retroactively simulated merely to repair chronology.
 3. No actual historical Jacksonville game score or outcome enters this branch.
-4. Every state-advancing event closes atomically across ledger, roster, cap, Document 4 and Document 5 when those records are affected.
+4. Every state-advancing event closes atomically across the event owner, dated record, roster, cap, Document 4 and Document 5 when those records are affected.
 5. Roster cutdowns and the September 4 accounting transition require a fresh legal roster/cap reconciliation.

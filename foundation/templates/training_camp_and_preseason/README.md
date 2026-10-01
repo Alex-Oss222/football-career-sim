@@ -7,7 +7,7 @@ Use these templates for the report in chat and the readable part of the season's
 | Camp practice or a block of practices | [Training camp](training_camp_report.md) | How the taught football held up at the actual pace and contact level, with the players and combinations used. |
 | A played preseason game | [Preseason game](../preseason_output_template.md) | How the team played, how its actual personnel groups executed and communicated, which players helped or struggled, and the next coaching work. |
 | Consolidated preseason turn | [Full preseason output](../preseason_output_template.md), with the [review guide](preseason_review.md) inside section 6 | The complete game-output package, which practice findings carried into games, which changed, and what remains unsettled. |
-| A player or position-room assessment, in any phase | [Player assessment](player_assessment.md) | What the player can presently do in the assigned scheme, the support he needs and the next useful test. |
+| Player findings within a report or an existing annual card update | [Assessment method](player_assessment.md) | What the player demonstrated in the assigned job, the support he needs and the next useful test. |
 
 ## Before writing
 
@@ -35,6 +35,10 @@ Render the filled template as ordinary Markdown, with connected prose under the 
 
 In chat, show the readable report and answer follow-ups from its supporting evidence. Keep hashes, engine badges, closure instructions and audit tables in the supporting record. Mention an administrative issue when it changes participation or prevents the next requested action. End with the next football work and only a consequential decision Stone actually needs to make.
 
-Keep the established output owners and metadata. Camp observations remain in `training_report.md`; their reviewed summary remains in `player_assessments.md`. Each played preseason game keeps its own output and generated box score in its game folder. The consolidated review links those game reports and the existing position/roster decision records. It does not replace receipts or combine preseason statistics with regular-season totals. Follow the existing bulk preseason workflow and its material-decision pauses.
+Keep the established output owners and metadata. Camp observations and their coaching interpretation remain together in `training_report.md`. Do not create a separate phase `player_assessments.md`. Each played preseason game keeps its own output and generated box score in its game folder. The consolidated review links those game reports and the existing position/roster decision records. It does not replace receipts or combine preseason statistics with regular-season totals. Follow the existing bulk preseason workflow and its material-decision pauses.
 
-The July 29, 2014 rewrite preserves its original session and assessment records inside expandable sections. Those remain available for chronology and existing anchors. New reports need only the supporting detail required to preserve evidence, not a second copy of every narrative paragraph.
+The existing 2014 camp report preserves its dated non-contact and July 30/August 1 padded observations. Later summaries cannot turn a one-repeat correction into a settled result. Keep supporting detail only where it preserves evidence that the opening account does not already contain.
+
+A player has two full annual assessments: the opening card, maintained with dated updates through the year, and a separate final assessment after season close. Camp findings and battle cards feed that record; they are not additional full assessments. Show the filled camp report directly in chat. Its header must identify the team, location, dates, actual practice count and teaching focus; no file-only response when the user requests the report.
+
+Record maintenance uses the shared [phase record instructions](../phase_record_template.md): descriptive event references, one event owner and integrated coaching findings. Those comments do not appear in the chat report.

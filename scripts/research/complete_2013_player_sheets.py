@@ -6,6 +6,7 @@ only for disclosed peer context and a separate same-player comparison.
 """
 import argparse
 import json
+import os
 import re
 from pathlib import Path
 import sys
@@ -16,6 +17,7 @@ from scripts.build_annual_player_sheets import POSITION_SHEET_TRAITS, load_seaso
 from scripts.research.build_2013_player_sheet_benchmarks import name_key, rating
 from runtime.statbook import aggregate_receipts
 from runtime.stat_tables import position_sections
+from runtime.season_layout import repository_relative
 from scripts.update_player_cards import clean_labels
 
 DATA = ROOT / 'library/data/2013_player_sheet_benchmarks.json'
@@ -259,7 +261,13 @@ def render(player, finding, historical, tables, postseason):
                    '- **Judgment basis:** The user explicitly requested exact theoretical grades even when the source cannot support a measured rating. These are staff hypotheses about the frozen 2013 player. Thin evidence lowers confidence rather than leaving the number blank.',
                    '- **What would change my judgment:** Individually classified branch reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.',
                    '', '**One-line description:**  ', player.identity]
-    return clean_labels(section_replace(text, 'Evidence and uncertainty', '\n'.join(uncertainty)))
+    rendered = clean_labels(section_replace(text, 'Evidence and uncertainty', '\n'.join(uncertainty)))
+    # Preserve the frozen review inputs; resolve their retired navigation labels
+    # only in the displayed sheet, just as moved source paths are resolved.
+    retirement = ROOT / repository_relative('career/2014/offseason/league_rails/retirements.md')
+    retirement_link = Path(os.path.relpath(retirement, path.parent)).as_posix()
+    return rendered.replace('Entry 79 retirement ends training eligibility.',
+                            f'His [recorded retirement]({retirement_link}) ends training eligibility.')
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)

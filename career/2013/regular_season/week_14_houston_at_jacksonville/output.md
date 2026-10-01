@@ -4,7 +4,7 @@
 
 # Week 14 - Houston Texans at Jacksonville Jaguars
 
-**Status:** COMPLETE. Event `2013-week14-houston-texans-at-jacksonville-jaguars-g2`, kernel 2013.10, closed once through the private production runner. Generation 1 of the Week 14 slate was voided before any result was viewed (a Jacksonville input defect; see [the void record](../../migrations/week_14_generation_void.md) and ledger Entry 57).
+**Status:** COMPLETE. Event `2013-week14-houston-texans-at-jacksonville-jaguars-g2`, kernel 2013.10, closed once through the private production runner. Generation 1 of the Week 14 slate was voided before any result was viewed (a Jacksonville input defect; see [the void record](../../migrations/week_14_generation_void.md) and [2013 Houston home game report](output.md)).
 **Venue:** EverBank Field, Jacksonville. Thursday night. **Schedule source:** `library/2013_jacksonville_master_calendar.md` section 5 (date and opponent only).
 **Plan:** Stone's Week 14 game plan; structured sheet in [call_sheet.json](call_sheet.json). Rematch notes: [Week 12 notes](../week_12_jacksonville_at_houston/houston_rematch_notes.md).
 
@@ -340,7 +340,9 @@ Start and end are field positions for the offense; a punt, field-goal or downs r
 **League awards:** Week 14 drawn; no Jacksonville player was shortlisted.
 **Engine notes:**
 - **Kernel:** first game under kernel 2013.10 (personnel-true labels). One Blackmon run with no fitting run call carries the generic label, as designed.
-- **Void:** the generation-1 void is recorded in Entry 57.
-- **Audit:** the 2013.10 cohort's net yards row reads OUTSIDE (394.2) on one week of 32 team-games. It is investigated in Entry 57; this is not a defect of this kernel.
+- **Void:** the generation-1 void is recorded in [2013 Houston home game report](output.md).
+- **Audit:** the 2013.10 cohort's net yards row reads OUTSIDE (394.2) on one week of 32 team-games. It is investigated in [2013 Houston home game report](output.md); this is not a defect of this kernel.
 
-**Ledger entry:** Entry 57. **Next event:** Week 15 vs Buffalo, Sunday, December 15, 1 p.m. ET. **Not simulated.**
+**Next event:** Week 15 vs Buffalo, Sunday, December 15, 1 p.m. ET. **Not simulated.**
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - December 5, 2013 - Week 14 vs Houston closed", "original_close": "Commit closed - Canonical update - December 5, 2013 - Week 14 vs Houston closed - canonical through December 5, after Week 14", "sequence": 57, "through": "2013-12-05"}, "date": "2013-12-05", "id": "2013-12-05-week-14-vs-houston-closed-generation-2-after-a-technical-void", "status": "closed", "summary": "Jacksonville 21, Houston 20."} -->

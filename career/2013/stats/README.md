@@ -11,7 +11,7 @@ Every file in this directory except `README.md` and `game_receipts/README.md` is
 | `all_player_stats.md` | Club by club, then position, then player |
 | `league_leaders.md` | Leaders within each position, qualified passer-rate leaders, then leaders across all positions |
 | `team_stats.md` | Per-game team offense, defense (opponent production) and special teams |
-| `play_call_stats.md` | Named-call labels on Jacksonville snaps: use, completions, yards, explosive and negative plays. Weeks 1-8 labels are drawn per run/pass type, not carrier-true, so they show label assignment, not Stone's call frequencies (Entry 41) |
+| `play_call_stats.md` | Named-call labels on Jacksonville snaps: use, completions, yards, explosive and negative plays. Weeks 1-8 labels are drawn per run/pass type, not carrier-true, so they show label assignment, not Stone's call frequencies ([2013 St. Louis game report](../regular_season/week_05_jacksonville_at_st_louis/output.md)) |
 | `calibration_audit.md` | League receipts against the sourced 2012 position and volume shapes |
 | `season_totals.json` | Machine cache of the aggregated season |
 

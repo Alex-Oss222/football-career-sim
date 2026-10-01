@@ -1,6 +1,6 @@
 # Game readiness
 
-**Status: BLOCKED for 2014.** The season-specific release gate in `runtime/season_readiness.json` remains open independently of private-service availability. Kernel 2014.4 carries E1/E2 and the other Tier 1 fixes, released and verified on the live private runtime September 30, 2026 (ledger Entry 115; `tier1_engine` VERIFIED); applicable 2014 rules, legal inputs, financial/control reconciliation and a full isolated closure still need acceptance. The dated fixtures were frozen from the April 23 release. See [the 2014 checklist](../career/2014/supporting_records/readiness.md).
+**Status: BLOCKED for 2014.** The season-specific release gate in `runtime/season_readiness.json` remains open independently of private-service availability. Kernel 2014.4 carries E1/E2 and the other Tier 1 fixes, released and verified on the live private runtime September 30, 2026 (ledger Entry 115; `tier1_engine` VERIFIED); applicable 2014 rules, legal inputs, financial/control reconciliation and a full isolated closure still need acceptance. The dated fixtures were frozen from the April 23 release. See [the 2014 checklist](../career/2014/Supporting_Records/readiness.md).
 
 `python scripts/check_game_readiness.py --season 2014` checks those public requirements before any authenticated canary. A successful service response cannot override them. The older table below records legacy implementation evidence, not a 2014 release.
 

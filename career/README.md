@@ -1,156 +1,35 @@
-# Career instance data
+# Career records
 
-This directory holds dated simulation history and explicitly identified current views. Start with the [active 2014 career index](2014/README.md) and [current state](../state/05_Current_Season_State.md). The lifecycle below describes transitions; it does not declare the present phase.
+Start with [Jacksonville's 2014 season](2014/README.md) and the [current season state](../state/05_Current_Season_State.md). Each year's folders hold the actual football records and explicitly identified current views. The [season structure guide](../docs/season_structure.md) defines the full layout and ownership rules.
 
-Cross-season working assessments live in [coaching profiles](coaching_profiles/README.md), with [Stone's current synthesis and evolution](coaching_profiles/alex_stone.md). Annual player identity and year-over-year progression live in [player profiles](player_profiles/README.md). Future scheduling references include the [historical 2015 calendar](2015/calendar.md); their presence does not open a season or advance the clock.
+## Following the year
 
-## Lifecycle
+From 2014 onward, the route is `01_Early_Offseason`, `02_Offseason_Training`, `03_Draft`, `04_Training_Camp_and_Preseason`, `05_Regular_Season`, `06_Postseason` and finally `07_Season_Review`. Draft and training work overlap on their actual dates. `00_Team_Operations` contains the roster, depth chart, staff, working player assessments, film, development, transactions and finances used throughout those phases.
 
-1. **PRE-HIRE SEARCH** — career is not initialized. Only `career/<year>/offseason/hiring_search.md` and its user-authored brief may contain dated simulated search activity.
-2. **HIRED / INITIALIZATION BUILD** — an offer has been accepted by the user or by an exact pre-authorized standing instruction. The accepted search result is reconciled into Documents 2–6, the roster/staff baseline is built, and the engine is made ready.
-3. **READY** — all initialization gates reconcile, but season play has not begun.
-4. **ACTIVE CAREER** — the user explicitly initializes the career. Normal roster, staff, transaction, media, practice, and game events may begin.
+Open `Calendar.md` for the month-by-month schedule and `Record.md` for the one-line dated account of completed events. Follow each record link to its owner. Trades stay in Trades, signings in Free_Agency, practice in the appropriate training report and games in their game outputs. There is no narrative ledger to maintain alongside those records.
 
-The pre-hire search ledger exists because team, contract, and start date are outputs of the search and therefore cannot be prerequisites to it. This does not authorize other season or career events before initialization.
+The 2013 season retains its established domain paths. Its January and February 2014 playoff outputs still belong to the 2013 NFL season. Historical results, receipts and source evidence are preserved when paths change; the runtime resolves earlier references through the repository map.
 
-## Pre-hire files
+## Plans, reports and player records
 
-```
-career/
-  2013/
-    offseason/
-      hiring_search.md
-      hiring_search_brief/
-        README.md
-        [user-authored team/strategy files]
-```
+Each training phase has `staff_plan.md` and `training_report.md`. The plan says what the staff intends to teach and evaluate. The report describes the actual work, player and unit performance, corrections, retests and next coaching work. The matching [spring template](../foundation/templates/offseason_training/README.md) or [camp template](../foundation/templates/training_camp_and_preseason/README.md) controls its presentation. Preparation never establishes attendance, improvement, a role or medical clearance.
 
-During PRE-HIRE SEARCH, `hiring_search.md` is the authorized ex-ante decision ledger for the search. It records frozen organization criteria, the user's relevant standing instructions, organization-side developments, offers, unresolved user decisions, and the final search status. Document 6 remains free of simulated events until the initialization build.
+Games use the complete [regular-season output template](../foundation/templates/regular_season_output_template.md) or [preseason output template](../foundation/templates/preseason_output_template.md). Preseason keeps its authorized bulk workflow and separate statistics. A bye output records the week's work without a game. Only played playoff rounds acquire results.
 
-## Layout after initialization
+A player's opening assessment and dated updates remain together through the whole year. A separate final assessment is written with the season review. Earlier statistical rows remain intact, and a departed player's evidence remains history. The [career player index](player_profiles/README.md) connects seasons. Individual development plans and film records supply proposed work and actual distribution receipts without becoming duplicate assessment collections.
 
-Adopted 2026-09-18, replacing an earlier, flatter version of this layout. The change is structural only — every existing rule in this file and in Document 7 still applies unchanged; this just gives each phase its own plan-file/result-file pair and its own dated record, the same separation `hiring_search_brief/` already established for the search itself.
+[Coaching profiles](coaching_profiles/README.md) retain Stone's and the assistants' development from their actual work. [Shared finances](finances/README.md) retain contract obligations and accounting across seasons. Neither set is rewritten into a second chronological account.
 
-```
-career/
-  <year>/
-    ledger.md
-    calendar.md                 <- historical full-season calendar: camps, preseason, games, roster/cap deadlines and conditional postseason gates
-    coaching_staff.md          <- clean current staff list, no process narrative; the hiring process itself lives in offseason/staff_building/hires.md
-    roster.md                   <- current roster view: controlled players, status, availability and decided roles
-    player_profiles/            <- frozen end-of-season NFL player sheets; create only after that season is complete
-    depth_chart.json            <- Stone's depth order, roles and game-day inactives, read by the week-input builder
-    migrations/                 <- audited canonical migrations and their manifests
-    league_results/
-      week_01.md
-      ...
-      week_17.md              <- the rest of the league; real season length per Document 2 (Document 7 SS5.3)
-    trades/
-      trade_targets.md        <- Stone's own dated plan: what he'd move, what he wants, acceptable cost -- not rewritten after the outcome is known
-      trade_offers.md         <- inbound: real proposals from other clubs under discussion, dated, before any is accepted or declined
-      trades.md               <- history: only trades that actually closed, both sides, date, draft-capital/cap effect -- completing one here updates state/04's roster/staff register and Document 4's cap reconciliation in the same turn, per Document 7 SS6.3's immediate-update rule
-    offseason/
-      hiring_search.md
-      hiring_search_brief/
-      initial_roster.md          <- built once, right after a hire closes: the real inherited roster, sourced -- players/positions/experience only, no contract figures
-      initial_cap_sheet.md       <- historical starting financial baseline for that inherited roster
-      current_cap_worksheet.md   <- current branch accounting after transactions; Top-51/full-roster effects and current planning room
-      roster_evaluation.md       <- Stone's own dated evaluation of the inherited roster and his approach across the offseason calendar -- his recommendation; actual roster cuts/outcomes are not assumed from it
-      the_prowl_program_identity.md            <- Stone's user-established coaching identity ("The Prowl"), full text; Document 3 SS2.1 carries only the summary and points here
-      the_prowl_player_readiness_standard.md   <- companion file: the physical/psychological/financial/family player-readiness system
-      staff_building/
-        staff_plan.md          <- who Stone is pursuing/considering, and why
-        hires.md               <- who actually signed on, in what role, when
-      free_agency/
-        player_board.md        <- dated plan: needs, targets, own free agents, acceptable terms, priorities
-        signings.md            <- history: who signed, terms, date, competing-market result, cap effect
-      draft/
-        player_draft_board.md  <- evolves as scouting information becomes legally available (date-gated, per library/2013_draft_information_gates.md's pattern)
-        draftees.md            <- the simulation's own actual selections; never a real 2013 destination (Document 2 SS12)
-      rookie_minicamp/
-        plan.md
-        output.md
-        standouts.md
-      otas/
-        plan.md
-        output.md
-        standouts.md           <- who stood out and why, with evidence -- practice performance is evidence, never a hidden true-ability reveal (Document 1 SS6.3)
-      mandatory_minicamp/
-        plan.md
-        output.md
-        standouts.md
-      training_camp/
-        plan.md
-        output.md
-        standouts.md
-        position_battles.md    <- evidence-based open competitions
-        roster_decisions.md   <- dated decisions; state/04 holds the current result
-    standings.md                <- league / conference / division standings, seeding and tiebreakers for all 32 clubs, generated from game receipts by scripts/render_standings.py (past weeks: --through-week N)
-    statbook.md                 <- obvious front door for standings + every current season stat view
-    stats/
-      README.md                  <- statbook ownership, coverage and rebuild rules
-      game_receipts/             <- one public stat receipt per closed game: full (snap play_ledger and named-call stats) for Jacksonville, compact_stats for background games
-      season_totals.json         <- generated cumulative arithmetic when receipt coverage exists
-      team_player_stats.md       <- readable protagonist-team season-to-date player stats
-      all_player_stats.md        <- comprehensive all-player supported-field ledger
-      league_player_stats.md     <- readable all-club season-to-date category stats
-      play_call_stats.md         <- protagonist offense named-call label usage/results; Weeks 1-8 labels are drawn per run/pass type, not carrier-true (Entry 41)
-      team_stats.md              <- generated per-club team statistics
-      calibration_audit.md       <- generated band audit of the receipts against sourced 2012 shapes; an OUTSIDE row is investigated, never grounds to rerun
-      league_leaders.md          <- derived league leaders; withheld when coverage is incomplete
-    preseason/
-      README.md                 <- game index (date, kickoff, matchup, home/away)
-      game_1_miami_at_jacksonville/output.md      <- one folder per game, named game_N_<away>_at_<home>; resolved as one bulk turn per Document 7 SS5.1
-      game_2_jacksonville_at_ny_jets/output.md
-      game_3_philadelphia_at_jacksonville/output.md
-      game_4_jacksonville_at_atlanta/output.md
-      final_roster_cuts.md
-    regular_season/
-      README.md                 <- week index (date, kickoff, matchup, home/away)
-      week_01_kansas_city_at_jacksonville/
-        output.md               <- regular_season_output_template.md; a bye week uses the same slot with no game, per SS below
-        call_sheet.json         <- Stone's frozen structured call sheet for the week; scripts/build_week_inputs.py requires it before the draw
-      ...                       <- folders are named week_NN_<away>_at_<home>; Week 9 is week_09_bye
-      week_17_jacksonville_at_indianapolis/
-        output.md
-    postseason/
-      wild_card/
-        output.md
-      divisional/
-        output.md
-      conference_championship/
-        output.md
-      super_bowl/
-        output.md
-    closeouts/
-      player_closeout.md       <- one concise entry per rostered player: role, availability, evaluation, contract/2014 status
-      team_closeout.md         <- final record, unit-by-unit assessment, transactions, unresolved issues
-      coach_closeout.md        <- Stone's own record/decisions/relationships -- only what was actually established, never his feelings invented for him
-      season_closeout.md       <- short administrative bridge: final ledger checkpoint, roster/contract/cap snapshot, next phase
-```
+## Starting and handing off a career
 
-Only phases and rounds actually reached in play get created — never pre-built ahead of when the career actually gets there, and never for a season with no career events yet. **Exception, at the user's request (2026-09-19):** the 2013 `standings.md`, `preseason/` game folders and `regular_season/` week folders were pre-built as `NOT STARTED` stubs from the verified master calendar so the schedule and standings are easy to find; the approved repository repair also creates training-camp record stubs, explicitly `NOT STARTED`. The conditional `postseason/` folders and `league_results/` files are still created only when reached. Detailed field-by-field formats for a new file type (e.g. `draftees.md`, `standouts.md`, a closeout file) get written as a dedicated template in `foundation/templates/` the same way the three current templates were, when that phase is actually about to be reached — not invented in advance of need.
+The pre-hire search is a limited exception to full initialization: [the 2013 search record](2013/offseason/hiring_search.md) owns frozen criteria, authorized instructions, applications, offers and the accepted job. Its [supporting brief](2013/offseason/hiring_search_brief/README.md) owns the user's prepared material. No player transaction, team practice or game is authorized merely because the search has begun.
 
-**A year folder is the NFL season being built and played, not a calendar year.** `career/2013/postseason/` holds the playoffs that conclude the 2013 season even though they're played in January/February 2014; `career/2013/closeouts/` closes out the 2013 season before `career/2014/early_offseason` opens. This resolves what would otherwise be a real ambiguity once the league year and the calendar year diverge.
+After acceptance, reconcile the governing documents, roster, staff, contract, rules, calendar and readiness. The user then initializes the active career. A prepared future season or historical calendar never performs that transition on its own.
 
-**Bye week:** still gets its own `regular_season/week_NN_bye/output.md`, so the week numbering stays one continuous sequence — it just carries no game, and covers practice, recovery, self-scout, and anything material that happened instead.
+At the end of a season, player and coach exit reviews come last in the year’s football route. The season-review handoff carries the reviewed roster, medical instructions, contracts, staff, draft assets and unfinished development into the next year; fresh season statistics and awards start empty. `scripts/season_handoff.py` stages that transfer after the required reviews. A new folder is preparation, not proof that its events have happened.
 
-**Trades aren't confined to one phase** — they can happen at the draft, in free agency, or around the real in-season trade deadline — so `trades/` sits at the year level rather than nested under `offseason/`, and gets a dated entry in `trades.md` whenever one actually closes, whatever the calendar says. The procedure is Document 7 SS6.2's free-agency pattern (coach's plan, autonomous market pressure from other clubs, one consolidated outcome report, immediate cap/roster accounting), applied to trades — see Document 7 SS6.2a.
+## Maintaining the records
 
-**A new head coach's voluntary veteran minicamp** (a real, separate 2013 offseason-program allowance beyond the standard OTA/mandatory-minicamp structure) is covered inside `otas/output.md` unless something in it is material enough to earn its own record — it doesn't need a dedicated folder.
+The [update workflow](../docs/update_workflow.md) and [repository map](../docs/repository_map.json) determine which owners and current views change together. Write the actual result first, update only affected views, regenerate the annual record and other derived pages, and validate the complete change. Do not create a new document for every practice, conversation, transaction summary or accounting scenario.
 
-`state/04_Roster_and_Staff_Register.md` and `state/05_Current_Season_State.md` hold the current snapshot. `career/` holds dated history — the plan file for a phase is never rewritten to match its own outcome after the fact. `foundation/` holds stable rules and canon structure, not accumulating season history.
-
-## Dependency checks
-
-[Update workflow](../docs/update_workflow.md) and [file map](../docs/repository_map.json) define the closure requirements. Run `python scripts/validate_repository.py` before committing. Calendar links, source hashes, summaries and current-state checkpoints are checked; an unchanged financial record may retain its last financial-event date.
-
-
-## Season statbook
-
-Season statistics are current derived views, parallel to standings. Every closed game preserves a public stat receipt; the season views, the standings and each week's box score are generated from those receipts, never hand-added week to week. Statistical totals do not alter roster evaluation tiers, standings tiebreaks, or game resolution. A legacy coverage gap must remain labeled until canonically backfilled.
-
-
-## Annual operating route
-
-Use the active year index in date order: current team and finances; offseason preparation; veteran program with draft and rookie camp interleaved; OTAs; mandatory minicamp; camp/preseason; weekly season; closeout. [Player cap and organization finances](finances/README.md) are shared financial views. [The closeout manifest](2014/season_review/README.md) carries reviewed obligations and roles into the next year after exit interviews, while prior stats/awards remain archived. New years use this same structure; no duplicate scenario or session folders.
+Public game receipts own statistics. Box scores, standings and season totals are rendered from those receipts rather than hand-added. Missing evidence remains a gap. The [game-readiness checks](../state/game_readiness.md) still control whether either game path may run; a populated calendar or green document check supplies no game authorization.

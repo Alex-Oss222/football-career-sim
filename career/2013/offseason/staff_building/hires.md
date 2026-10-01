@@ -165,3 +165,4 @@ The contracts buy coaching labor and defined responsibility, not predetermined s
 
 Any extension, raise, release, resignation, outside-interview permission, title change, play-calling change or settlement must be recorded as a new dated staff transaction. The original hiring outcome is not rewritten after the fact.
 
+<!-- event-record: {"date": "2013-01-15", "date_end": "2013-01-31", "date_label": "Late January 2013 (exact appointment dates unrecorded)", "id": "2013-01-staff-hired", "status": "closed", "summary": "Jacksonville completed its initial coaching staff hires."} -->

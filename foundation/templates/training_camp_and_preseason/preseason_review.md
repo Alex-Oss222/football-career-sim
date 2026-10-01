@@ -34,6 +34,8 @@ Use the complete [preseason output template](../preseason_output_template.md) an
 
 ## Position decisions and remaining work
 
+[Update the existing battle cards and, where the evidence materially changes the staff view, append a dated update to the opening annual player card. This is a preseason team review, not a third full player assessment. The separate final assessment waits for the completed season.]
+
 [Give named assessments of the players whose work established something useful, exposed a limitation or changed an open comparison. Include meaningful strengths and failures in the same assessment where supported. Starters receive scrutiny as well as players competing for places; a roster bubble is not the only reason to review a performance. Compare the combined practice and game evidence, including contrary evidence and unequal opportunities.]
 
 [State Stone's decisions only when made. Keep the actual general manager's transactions and roster deadlines in their proper records; a staff recommendation is not a roster place. Carry each material correction and its responsible coach into the next phase instead of closing every issue at cutdown. A quiet game or narrow opportunity cannot settle a question the player was never asked to answer.]

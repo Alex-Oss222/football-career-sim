@@ -84,4 +84,4 @@ All voluntary. Jacksonville's 2014 offseason program may begin no earlier than A
 - `career/2013/exit_interviews/main_core/brent_grimes.md` line 207; `career/2013/exit_interviews/core/mike_harris.md`
 - `career/2013/offseason/player_onboarding_and_development_framework.md` section 2 (Good, Better, Best); `career/2013/offseason/the_prowl_program_identity.md` ("Good. Better. Best.", "Speed Comes From Recognition", "Earn Responsibility"); `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 3, 7 and 10
 - `career/2014/calendar.md` line 31
-- `career/2013/ledger.md` Entry 75; `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
+- [January coaching decisions](../../../2014/01_Early_Offseason/staff_changes/timeline.md); `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)

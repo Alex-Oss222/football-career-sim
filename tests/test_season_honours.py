@@ -1,7 +1,9 @@
 import json
 from pathlib import Path
 import sys
+import tempfile
 import unittest
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
@@ -57,6 +59,24 @@ class SeasonHonoursTests(unittest.TestCase):
     def test_evidence_uses_no_real_2013_outcome(self):
         text = json.dumps(self.evidence["sources"])
         self.assertNotIn("award", text.lower())
+
+    def test_render_preserves_frozen_awards_and_uses_named_records(self):
+        before = honours.RESULTS.read_bytes()
+        results = json.loads(before)
+        with tempfile.TemporaryDirectory() as folder:
+            page = Path(folder) / 'season_honours.md'
+            with patch.object(honours, 'PAGE', page):
+                honours.render()
+            text = page.read_text()
+        self.assertEqual(honours.RESULTS.read_bytes(), before)
+        self.assertIn('February 2, 2014', text)
+        self.assertIn('[Pro Bowl record](../pro_bowl/README.md)', text)
+        self.assertNotRegex(text, r'\bEntr(?:y|ies) \d+')
+        for award, result in results['ap_awards'].items():
+            winner = result['shortlist'][result['winner_index']]
+            self.assertIn('| %s | %s | %s | %s |' % (
+                self.m['ap_awards']['names'][award], honours.name_of(winner),
+                winner['team'], winner['score']), text)
 
 
 if __name__ == "__main__":

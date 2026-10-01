@@ -60,7 +60,7 @@ The head-coach salary, total organization payroll, ownership budget, Caldwell co
 
 ## Contract terms and history
 
-[Stone’s accepted agreement](../../2013/offseason/head_coach_contract.md) retains the four-year full guarantee; this view does not supply missing salary, offsets or buyout clauses. [The staff register](../../2014/team/coaching_staff/coaching_staff.md) owns assistant terms, offsets, termination treatment and authority. Lowry’s $625,000 scheduled 2014 salary ceased on his January 12 departure; it is not counted. Westhoff replaced him February 11 at $750,000 in each of 2014 and 2015; only 2014 is guaranteed. The other executed assistant salaries retain their recorded guarantee and offset terms. Scheduled pay is distinct from cash already disbursed and remaining unpaid liability.
+[Stone’s accepted agreement](../../2013/offseason/head_coach_contract.md) retains the four-year full guarantee; this view does not supply missing salary, offsets or buyout clauses. [The staff register](../../2014/00_Team_Operations/Staff/coaching_staff.md) owns assistant terms, offsets, termination treatment and authority. Lowry’s $625,000 scheduled 2014 salary ceased on his January 12 departure; it is not counted. Westhoff replaced him February 11 at $750,000 in each of 2014 and 2015; only 2014 is guaranteed. The other executed assistant salaries retain their recorded guarantee and offset terms. Scheduled pay is distinct from cash already disbursed and remaining unpaid liability.
 
 ## Renewal and handoff
 

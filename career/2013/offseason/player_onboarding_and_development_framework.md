@@ -1,6 +1,6 @@
 # Player Onboarding and Offseason Development Framework — Jacksonville Jaguars
 
-**Status:** Permanent organizational framework, established 2026-09-19. Separate from the event ledger — this file owns durable philosophy, process, and standards; it does not record what actually happened on any given day. Actual events (rookie minicamp, OTAs, mandatory minicamp, training camp, and any later phase) are recorded in their own dated output files and in `career/2013/ledger.md`, never by rewriting this document.
+**Status:** Permanent organizational framework, established 2026-09-19. Separate from the dated event records — this file owns durable philosophy, process, and standards; it does not record what actually happened on any given day. Actual events (rookie minicamp, OTAs, mandatory minicamp, training camp, and any later phase) are recorded in their own dated output files and in [2013 dated record](../record.md), never by rewriting this document.
 
 **Authority and scope:** Governs how Jacksonville onboards and develops every player it controls, from first contact through training camp. Connects two existing documents without rewriting either: `the_prowl_player_readiness_standard.md` remains the medical, physical, support, and CBA authority; `career/playbook/alex_stone_2013_offensive_playbook_iteration_i.md` remains the scheme authority. This file supplies the process and teaching philosophy that sits between them.
 
@@ -204,7 +204,7 @@ The phase-specific plans own the practical execution:
 - `mandatory_minicamp/plan.md` — Veteran Minicamp Family Dinner.
 - `training_camp/plan.md` — Camp Opening Family Dinner plus a Mid-Camp Family Night/Dinner when logistics permit.
 
-When any dinner actually occurs, record it in that phase's output file and, if materially relevant to the season chronology, the season ledger. Do not rewrite this durable framework to record attendance or anecdotes.
+When any dinner actually occurs, record it in that phase's output file and, if materially relevant to the season chronology, regenerate the dated season record. Do not rewrite this durable framework to record attendance or anecdotes.
 
 ---
 
@@ -212,13 +212,13 @@ When any dinner actually occurs, record it in that phase's output file and, if m
 
 This document owns the durable philosophy, welcome process, Day 2/position-coach call protocol, teaching method, physical standards, and phase progression. It is not rewritten when a player performs well or badly, when the roster changes, or when an event resolves — per `AGENTS.md`'s durable-planning-record rule, a plan like this changes only when the user changes the plan, teaching method, standard, or responsibility.
 
-Each actual event stays separate, in its own dated output file, and gets its closing entry in `career/2013/ledger.md`:
+Each actual event stays separate, in its own dated output file, and gets its closing entry in [2013 dated record](../record.md):
 
 - `career/2013/offseason/rookie_minicamp/output.md` — what actually happened at rookie minicamp.
 - `career/2013/offseason/otas/output.md` — what actually happened during OTAs.
 - `career/2013/offseason/mandatory_minicamp/output.md` — what actually happened there.
 - `career/2013/offseason/training_camp/output.md` — what actually happened at training camp and in the preseason block.
 
-When the onboarding process itself actually executes, its ledger entry records that every player received the standards package and active 2013 playbook, that Stone and each position coach completed their individual outreach calls, that recurring player feedback was routed to the appropriate staff, and that no football role was awarded through the onboarding process itself.
+When the onboarding process actually takes place, its phase report records what was completed: delivery of the standards package and active 2013 playbook, Stone's and the position coaches' individual outreach calls, and routing of player feedback to the appropriate staff. Record an unfinished delivery or call as unfinished. Onboarding itself awards no football role.
 
 **Calendar prerequisite (satisfied):** the real 2013 Jacksonville offseason-program, rookie minicamp, OTA, minicamp and camp dates were verified with the two-pass discipline in `library/2013_jacksonville_master_calendar.md`, and `career/2013/calendar.md` is the branch-facing schedule authority. Any later phase still reads the calendar before it is executed.

@@ -464,3 +464,5 @@ San Diego remains outside Stone's pursued search as previously recorded. No even
 | Entry | Date/sequence | Type | Status |
 |---|---|---|---|
 | 7 | After Jacksonville counter instruction received | Offer resolution | Jacksonville declined the authority-for-guarantees exchange; Stone accepted the unchanged original offer under the pre-authorized fallback; search closed as `HIRED — INITIALIZATION BUILD REQUIRED` |
+
+<!-- event-record: {"date": "2013-01-15", "id": "2013-01-15-pre-hire-search-closure", "status": "closed", "summary": "Alex Stone accepted Jacksonville\u2019s original four-year head-coaching offer."} -->

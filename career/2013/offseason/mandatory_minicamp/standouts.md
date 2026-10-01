@@ -1,4 +1,4 @@
-<!-- sim-meta: {"event_entry": 15, "kind": "evidence_summary", "source": "career/2013/offseason/mandatory_minicamp/output.md", "source_sha256": "130050201e7f4cb685642e6838f2753f0b65f18a222f02ce15887d119ea37552", "status": "COMPLETE", "through": "2013-06-13"} -->
+<!-- sim-meta: {"event_ref": "2013-06-11-june-11-13-mandatory-veteran-minicamp-closed", "kind": "evidence_summary", "source": "career/2013/offseason/mandatory_minicamp/output.md", "source_sha256": "919c198686a407795e0e2e66655ac818652624d3282912efbf1fc512c23499c2", "status": "COMPLETE", "through": "2013-06-13"} -->
 
 # Mandatory veteran minicamp standouts
 

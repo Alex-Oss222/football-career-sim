@@ -347,6 +347,8 @@ The team numbers read like the plan. Jacksonville converted 7 of 10 third downs 
 **Record after game:** 3-1-0
 **Division / conference position:** First in the AFC South (Tennessee, Houston and Indianapolis 2-2); second in the AFC, the second seed if the season ended today (Baltimore first on conference record). See [standings](../../standings.md).
 **Statbook:** Through Week 4; 63 of 63 game receipts; coverage complete; leaders published. The Week 4 slate is the first kernel 2013.6 cohort, and its band audit and ledger coherence rows are WITHIN.
-**Engine note:** Indianapolis's opening possession is a one-snap, seven-yard touchdown drive after a touchback. Kernel 2013.6 resamples real 2012 drives and publishes no field position, so it does not tie a drive's length to where the previous kick or drive ended (Entry 39, deliberately not fixed). The score and statistics stand; the result is not rerun.
-**Ledger entry:** Entry 40 (Week 4).
+**Engine note:** Indianapolis's opening possession is a one-snap, seven-yard touchdown drive after a touchback. Kernel 2013.6 resamples real 2012 drives and publishes no field position, so it does not tie a drive's length to where the previous kick or drive ended ([kernel 2013.6 correction](../../../../runtime/README.md), deliberately not fixed). The score and statistics stand; the result is not rerun.
+**Game record:** [2013 Indianapolis home game report](output.md) (Week 4).
 **Next event:** Week 5 at St. Louis Rams, Sunday, October 6, 1 p.m. ET.
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - September 29, 2013 - Week 4 vs Indianapolis closed", "original_close": "Commit closed - Canonical update - September 29, 2013 - Week 4 vs Indianapolis closed - canonical through September 29, after Week 4", "sequence": 40, "through": "2013-09-29"}, "date": "2013-09-29", "id": "2013-09-29-week-4-closed", "status": "closed", "summary": "Jacksonville 31, Indianapolis 10."} -->

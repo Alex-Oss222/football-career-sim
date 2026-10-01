@@ -5,7 +5,7 @@
 
 ## The season in the record
 
-Blackmon dressed for 10 regular-season games (Week 1, Week 8 and Weeks 10-17; Week 9 was the bye) and both postseason games. He served the league's four-game suspension on Reserve/Suspended in Weeks 2-5 (ledger Entry 36), was reinstated and activated to the 53 on October 7 (Entry 42), and was Stone's game-day inactive in Weeks 6 and 7 while he practiced on the active roster, a decision recorded in September as "Stone's availability decision, not a second suspension." Regular season: 53 targets, 32 catches, 271 yards, 8.5 a catch, no touchdown, longest catch 29; 1 run for 2 yards; 2 kickoff returns for 59 and 1 punt return for 4; no fumble. Postseason: 5 targets, 4 catches, 28 yards; 1 punt return for 20. No receipt injury. No weekly-award shortlist. Before this staff: 2012, 16 games and 14 starts.
+Blackmon dressed for 10 regular-season games (Week 1, Week 8 and Weeks 10-17; Week 9 was the bye) and both postseason games. He served the league's four-game suspension on Reserve/Suspended in Weeks 2-5 ([Blackmon suspension ruling](../../regular_season/week_02_jacksonville_at_oakland/output.md)), was reinstated and activated to the 53 on October 7 ([Blackmon reinstatement](../../regular_season/week_06_jacksonville_at_denver/output.md)), and was Stone's game-day inactive in Weeks 6 and 7 while he practiced on the active roster, a decision recorded in September as "Stone's availability decision, not a second suspension." Regular season: 53 targets, 32 catches, 271 yards, 8.5 a catch, no touchdown, longest catch 29; 1 run for 2 yards; 2 kickoff returns for 59 and 1 punt return for 4; no fumble. Postseason: 5 targets, 4 catches, 28 yards; 1 punt return for 20. No receipt injury. No weekly-award shortlist. Before this staff: 2012, 16 games and 14 starts.
 
 | Week | Opponent | Result | Targets | Catches-yards | Long | Other |
 |---|---|---|--:|---|--:|---|
@@ -229,7 +229,7 @@ All of it is voluntary. Blackmon is under contract through 2015; Jacksonville's 
 - `career/2013/stats/team_player_stats.md` lines 33, 134, 155 (season long 29, 8.5 a catch, returns); `career/2013/stats/game_receipts/` (Weeks 8, 10-17) and `career/2013/stats/postseason_receipts/` (Weeks 18-19) for drive order and clock (Week 11 first snap of the third-quarter drive; Week 13 catches in the final two minutes of the fourth quarter; Wild Card next snap)
 - `career/2013/offseason/mandatory_minicamp/output.md` lines 25, 29, 47, 53
 - `career/2013/offseason/training_camp/output.md` lines 31, 57, 75; `training_camp/position_battles.md` line 11
-- `career/2013/ledger.md` Entry 36 (line 748), Entry 42 (line 913), Entry 45 (line 1001)
+- [Blackmon suspension ruling](../../regular_season/week_02_jacksonville_at_oakland/output.md), [Blackmon reinstatement](../../regular_season/week_06_jacksonville_at_denver/output.md), and [2013 San Francisco game report](../../regular_season/week_08_san_francisco_at_jacksonville/output.md)
 - `career/2013/regular_season/week_01_kansas_city_at_jacksonville/output.md` lines 119-123, 167, 303, 329
 - `career/2013/regular_season/week_02_jacksonville_at_oakland/output.md` lines 31, 39-41
 - `career/2013/regular_season/week_06_jacksonville_at_denver/output.md` lines 29, 39, 53-55, 286-288
@@ -246,7 +246,7 @@ All of it is voluntary. Blackmon is under contract through 2015; Jacksonville's 
 - `career/2013/postseason/week_18_jacksonville_at_kansas_city/output.md` lines 69, 131
 - `career/2013/postseason/week_19_jacksonville_at_tennessee/output.md` lines 136, 187, 343
 - `career/2013/coaching_staff.md` lines 239-255 (Drake's responsibilities; reports to Tice)
-- `career/2013/ledger.md` Entry 75; `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
+- [January coaching decisions](../../../2014/01_Early_Offseason/staff_changes/timeline.md); `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
 - `career/2013/offseason/the_prowl_program_identity.md` ("Good. Better. Best.", "What The Prowl Expects" including "Earn Responsibility" lines 198-214, "Discipline Approach" including "Stars and Veterans" and "Public Discipline", "Confidential Support Is Not Personnel Scouting")
 - `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 7 and 10
 - `career/2013/offseason/player_onboarding_and_development_framework.md` sections 1-2 (Day 2 call; Good/Better/Best scale; evidence-driven usage)
