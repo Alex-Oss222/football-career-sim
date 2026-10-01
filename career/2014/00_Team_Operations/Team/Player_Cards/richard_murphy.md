@@ -117,6 +117,14 @@ No statistical row was recorded for this player in 2013.
 
 Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
 
+## Dated coaching updates
+
+### August 14, 2014 | Preseason game 2, Jacksonville at Chicago
+
+Twenty-five offensive snaps with Wilson, Bray and Shaw: three carries for 18, the 14-yard Outside Zone cut on second-and-10 and the 5-yard Inside Zone run on Shaw's 65-yard drive, and a 1-yard loss on the Inside Zone and Bubble call with Bray. The plan's complete-assignment question was tested only as the record shows it, runs on three concepts and no recorded protection or screen outcome. A minor head/neck injury was logged at the end of Shaw's first possession and he was removed: independent medical hold, projected return in four days (August 18), reassessment August 15 ([medical record](../../Medical/incidents/richard_murphy_2014-08-14.md)). The hold is the medical staff's and no football finding attaches to it.
+
+Source: [preseason game 2 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_02/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

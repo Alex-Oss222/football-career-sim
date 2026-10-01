@@ -30,6 +30,21 @@ Projected returns are the engine's generated fields under the branch's standard 
 
 Cameron Brate's instruction is unchanged (out, long term; reassessment August 15; roster disposition pending). The August 9 to 13 sessions produced no injury and no new restriction; the program has no injury draw for practices.
 
+<!-- event-record: {"date": "2014-08-14", "id": "2014-08-14-preseason-game-2-injuries", "status": "closed", "summary": "Jerrell Jackson (lower extremity, multi-week, removed) and Richard Murphy (head/neck, minor, removed, independent medical hold) were injured in the August 14 preseason game at Chicago; Lane Johnson's hold cleared on its projected date after he was held out of the game by Stone's decision."} -->
+
+## August 14: preseason game 2 injuries
+
+Two Jacksonville injuries were generated in the [preseason game 2 output](../../04_Training_Camp_and_Preseason/Preseason_Games/Game_02/output.md) at Chicago and are recorded as the receipt states them, each with its own dated incident record:
+
+- [Jerrell Jackson](incidents/jerrell_jackson_2014-08-14.md), WR: lower extremity, multi-week; logged at 10:29 of the third quarter and removed from the game; out, projected return in 56 days (October 9), reassessment in seven (August 21). Roster disposition pending: Caldwell's decision with the user.
+- [Richard Murphy](incidents/richard_murphy_2014-08-14.md), RB: head/neck, minor; logged at 0:34 of the third quarter and removed from the game; independent medical hold, projected return in four days (August 18), reassessment in one (August 15).
+
+Projected returns are the engine's generated fields under the branch's standard return rule, not clearances; no clinical diagnosis is recorded. Chicago's four generated injuries (Tillman, Hayden, Fiammetta, Collins) stay with the receipt and are not Jacksonville records. Cameron Brate's instruction is unchanged (out, long term; reassessment August 15; roster disposition pending).
+
+## August 14: Johnson's projected date
+
+Lane Johnson's projected return date from the August 8 trunk injury was August 14, and no further reassessment date or instruction was communicated after his August 10 reassessment. His hold cleared on that date under the method the record has applied to every injury in both seasons: a projected return clears on that date unless the staff communicates otherwise, and nothing else was communicated. He was inactive for the August 14 game by Stone's football decision in the [Chicago plan](../../04_Training_Camp_and_Preseason/Preseason_Games/Game_02/Preseason%20Game%202_%20HC.md), made before the reassessment and independent of the clearance. He is available for the August 15 to 21 practices with no communicated limitation. A clearance restores no role by itself: the right-tackle arrangement for August 22 is Stone's decision and is not made here.
+
 ## Other examination records
 
 The March 26 examination of C.J. Wilson is in [his signing record](../Free_Agency/jones_drew_and_wilson_negotiation_2014-03-28.md). The 26 rookies' May 13 to 15 physicals, including the specific check of Cornelius Lucas's foot, are in the [rookie minicamp report](../../02_Offseason_Training/Rookie_Minicamp/training_report.md). The [mandatory minicamp report](../../02_Offseason_Training/Mandatory_Minicamp/training_report.md) owns the June 16 physicals, and the [camp report](../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md) owns July 21 and 24 reporting physicals and subsequent communicated instructions. Those examinations communicated no restriction; Lucas's foot remained a performance-staff review item. James Hurst remained outside Jacksonville's signed roster on the undrafted board's medical hold, with no clearance recorded.
