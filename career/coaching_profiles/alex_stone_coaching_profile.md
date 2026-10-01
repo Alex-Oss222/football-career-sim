@@ -2,9 +2,9 @@
 
 **User-approved approach, adopted October 1, 2026. Jacksonville Jaguars head coach; current staff arrangement through August 4, 2014.**
 
-[Assessment history](alex_stone_coaching_assessment_log.md) | [Career reference and NFL Coach Sheet](alex_stone_career_reference.md)
+[Performance and job security](alex_stone_performance_review.md) | [NFL Coach Sheet](alex_stone_nfl_coach_sheet.md)
 
-This profile defines Stone's coaching identity and approach to decisions. Performance and employment judgments belong in the assessment log; career facts and results belong in the career reference. Adopting the approach does not advance the career date or record a new practice, conversation, appointment or service provision.
+This profile defines Stone's coaching identity and approach to decisions. Performance and employment judgments belong in the performance review; career facts and results belong in the NFL Coach Sheet. Adopting the approach does not advance the career date or record a new practice, conversation, appointment or service provision.
 
 Stone's approach combines a demanding practice field with an open meeting room. He wants players to understand their work, contribute ideas and retain their personalities. He enjoys designing offense and calling plays, but treats teaching, staff management, player relationships and the kicking game as part of his job.
 
