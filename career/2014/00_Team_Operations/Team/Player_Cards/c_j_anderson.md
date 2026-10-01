@@ -151,6 +151,12 @@ Anderson bounced an Inside Zone rep before pressing the interior. Spencer correc
 
 Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
 
+### August 8, 2014 | Preseason game 1, Tampa Bay at Jacksonville
+
+Eight carries for 45 and the 17-yard touchdown on Inside Zone with the access bubble attached from Trips in the Henne-Linsley series, runs of 5, 6 and 8 on the zone tracks from the Trips and Wing pictures with Wilson, and two catches for 28 including the 19-yard Stick catch that opened Shaw's touchdown drive. The August 1 track correction held on the recorded runs; no pass-protection outcome was recorded, so that camp finding was not tested. A minor lower-extremity injury was logged at the end of his last series; not removed; out three days, reassessment August 9 ([medical record](../../Medical/incidents/c_j_anderson_2014-08-08.md)).
+
+Source: [preseason game 1 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_01/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

@@ -118,6 +118,14 @@ An athletic starting right tackle who can move on reach and second-level work an
 
 Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
 
+## Dated coaching updates
+
+### August 8, 2014 | Preseason game 1, Tampa Bay at Jacksonville
+
+Both sacks of Cousins in his two series were charged to Johnson's right-tackle slot by the receipt: Clayborn on the Boot Flood on third-and-5 and Melvin on the RB Slow Screen on third-and-7. The receipt records the slot, not the cause (set, point, the back's release on the screen or the throw's timing); Yarno and Bates review it together before the call is judged. A minor trunk injury was logged at the end of that first series; he was not removed and finished his assigned block through the Henne-Linsley series with no further loss recorded. Out six days, reassessment August 10 ([medical record](../../Medical/incidents/lane_johnson_2014-08-08.md)).
+
+Source: [preseason game 1 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_01/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
