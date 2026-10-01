@@ -303,5 +303,372 @@
   },
   "head_coach_decisions": "Fourth down, field goal versus go, fake, onside kick, timeout, challenge and unusual end-of-half situations remain Stone's. No preseason fake just to put it on film."
  },
- "schema_note": "Written to the block schema the kernel agent is implementing (claude/preseason-rotation). Fields with null possessions encode 'left to the game' with the plan's rule text; the kernel must not read a number the plan did not give."
+ "schema_note": "Written to the block schema the kernel agent is implementing (claude/preseason-rotation). Fields with null possessions encode 'left to the game' with the plan's rule text; the kernel must not read a number the plan did not give.",
+ "rotation_plan": [
+  {
+   "side": "offense",
+   "unit": "first offense, series 1 (Cousins; Nicks X, Adams WR3; Bitonio LG)",
+   "until": {
+    "possessions": 1,
+    "snaps": 12
+   },
+   "players": {
+    "RB": [
+     "Maurice Jones-Drew"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "TE": [
+     "Marcedes Lewis",
+     "Travis Kelce"
+    ],
+    "QB": [
+     "Kirk Cousins"
+    ],
+    "WR": [
+     "Hakeem Nicks",
+     "Adam Thielen",
+     "Davante Adams"
+    ],
+    "OL": [
+     "Eugene Monroe",
+     "Joel Bitonio",
+     "Mike Brewster",
+     "Trai Turner",
+     "Lane Johnson"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "first offense, series 2 (Cousins; Adams X, Hawkins WR3; Norwell LG)",
+   "until": {
+    "possessions": 1,
+    "snaps": 12
+   },
+   "players": {
+    "RB": [
+     "Maurice Jones-Drew"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "TE": [
+     "Marcedes Lewis",
+     "Travis Kelce"
+    ],
+    "QB": [
+     "Kirk Cousins"
+    ],
+    "WR": [
+     "Davante Adams",
+     "Adam Thielen",
+     "Andrew Hawkins"
+    ],
+    "OL": [
+     "Eugene Monroe",
+     "Andrew Norwell",
+     "Mike Brewster",
+     "Trai Turner",
+     "Lane Johnson"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "second offense, Henne-Linsley series behind the first tackles",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "QB": [
+     "Chad Henne"
+    ],
+    "RB": [
+     "Jonathan Grimes",
+     "C.J. Anderson"
+    ],
+    "WR": [
+     "Andrew Hawkins",
+     "Allen Hurns",
+     "Taylor Gabriel"
+    ],
+    "TE": [
+     "Travis Kelce",
+     "Cameron Brate",
+     "Marcel Jensen"
+    ],
+    "OL": [
+     "Eugene Monroe",
+     "Andrew Norwell",
+     "Corey Linsley",
+     "Joel Bitonio",
+     "Lane Johnson"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "second offense (Henne)",
+   "until": {
+    "quarter": 2
+   },
+   "players": {
+    "QB": [
+     "Chad Henne"
+    ],
+    "RB": [
+     "Jonathan Grimes",
+     "C.J. Anderson"
+    ],
+    "WR": [
+     "Andrew Hawkins",
+     "Allen Hurns",
+     "Taylor Gabriel"
+    ],
+    "TE": [
+     "Cameron Brate",
+     "Marcel Jensen"
+    ],
+    "OL": [
+     "Charles Leno Jr.",
+     "Andrew Norwell",
+     "Corey Linsley",
+     "Mark Asper",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "reserve offense (Wilson)",
+   "until": {
+    "quarter": 3
+   },
+   "players": {
+    "QB": [
+     "John Parker Wilson"
+    ],
+    "RB": [
+     "C.J. Anderson",
+     "Richard Murphy"
+    ],
+    "WR": [
+     "Allen Hurns",
+     "Taylor Gabriel",
+     "Jerrell Jackson"
+    ],
+    "TE": [
+     "Cameron Brate",
+     "Marcel Jensen",
+     "Gator Hoskins"
+    ],
+    "OL": [
+     "Charles Leno Jr.",
+     "Matt Feiler",
+     "Tyler Shatley",
+     "Mark Asper",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "late offense (Bray, reduced menu)",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "QB": [
+     "Tyler Bray"
+    ],
+    "RB": [
+     "Richard Murphy",
+     "C.J. Anderson"
+    ],
+    "WR": [
+     "Jerrell Jackson",
+     "Taylor Gabriel",
+     "Allen Hurns"
+    ],
+    "TE": [
+     "Gator Hoskins",
+     "Marcel Jensen"
+    ],
+    "OL": [
+     "Charles Leno Jr.",
+     "Matt Feiler",
+     "Tyler Larsen",
+     "Mark Asper",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "late offense (Shaw, reduced menu)",
+   "players": {
+    "QB": [
+     "Connor Shaw"
+    ],
+    "RB": [
+     "Richard Murphy",
+     "C.J. Anderson"
+    ],
+    "WR": [
+     "Jerrell Jackson",
+     "Taylor Gabriel",
+     "Allen Hurns"
+    ],
+    "TE": [
+     "Gator Hoskins",
+     "Marcel Jensen"
+    ],
+    "OL": [
+     "Charles Leno Jr.",
+     "Matt Feiler",
+     "Tyler Larsen",
+     "Mark Asper",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "defense",
+   "unit": "first defense (Mincey at Edge 1; Daryl Smith relaying)",
+   "until": {
+    "possessions": 2
+   },
+   "players": {
+    "DL": [
+     "Jeremy Mincey",
+     "Sen'Derrick Marks",
+     "Roy Miller",
+     "Ryan Davis"
+    ],
+    "LB": [
+     "Daryl Smith",
+     "Paul Posluszny",
+     "Julian Stanford"
+    ],
+    "DB": [
+     "Aqib Talib",
+     "Mike Harris",
+     "Dwight Lowery",
+     "Bacarri Rambo",
+     "Jordan Poyer"
+    ]
+   }
+  },
+  {
+   "side": "defense",
+   "unit": "first defense (Branch at Edge 1; Posluszny relaying, Daryl Smith off)",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "DL": [
+     "Andre Branch",
+     "Sen'Derrick Marks",
+     "Roy Miller",
+     "Ryan Davis"
+    ],
+    "LB": [
+     "Paul Posluszny",
+     "Julian Stanford",
+     "Sio Moore"
+    ],
+    "DB": [
+     "Aqib Talib",
+     "Mike Harris",
+     "Dwight Lowery",
+     "Bacarri Rambo",
+     "Jordan Poyer"
+    ]
+   }
+  },
+  {
+   "side": "defense",
+   "unit": "first defense (Mincey and Branch; Daryl Smith relaying)",
+   "until": {
+    "quarter": 2
+   },
+   "players": {
+    "DL": [
+     "Jeremy Mincey",
+     "Sen'Derrick Marks",
+     "Roy Miller",
+     "Andre Branch"
+    ],
+    "LB": [
+     "Daryl Smith",
+     "Paul Posluszny",
+     "Julian Stanford"
+    ],
+    "DB": [
+     "Aqib Talib",
+     "Mike Harris",
+     "Dwight Lowery",
+     "Bacarri Rambo",
+     "Jordan Poyer"
+    ]
+   }
+  },
+  {
+   "side": "defense",
+   "unit": "reserve defense",
+   "players": {
+    "DL": [
+     "Daniel Te'o-Nesheim",
+     "Aaron Donald",
+     "C.J. Wilson",
+     "Kasim Edebali",
+     "Jackson Jeffcoat",
+     "Jeris Pendleton",
+     "Lavar Edwards",
+     "Jerome Long",
+     "D'Anthony Smith"
+    ],
+    "LB": [
+     "Sio Moore",
+     "Telvin Smith",
+     "Christian Jones",
+     "Todd Davis"
+    ],
+    "DB": [
+     "Alterraun Verner",
+     "A.J. Bouye",
+     "Chris Prosinski",
+     "Brynden Trawick",
+     "Malcolm Butler",
+     "Jemea Thomas",
+     "Adrian Phillips",
+     "Antwon Blake"
+    ]
+   }
+  },
+  {
+   "side": "special_teams",
+   "unit": "Cain snapping",
+   "until": {
+    "quarter": 2
+   },
+   "players": {
+    "LS": [
+     "Jeremy Cain"
+    ]
+   }
+  },
+  {
+   "side": "special_teams",
+   "unit": "Kreiter snapping",
+   "players": {
+    "LS": [
+     "Casey Kreiter"
+    ]
+   }
+  }
+ ],
+ "rotation_plan_note": "Kernel schema (runtime/rotation.py) of the plan above, frozen before any draw. Where the plan leaves a count to the game, the block ends at a quarter boundary by the kernel's default division (second unit through the second quarter, reserves through the third, the late quarterbacks after). The first group's two series are two blocks so the receiver and guard swap applies to series 2; a 12-play first series still yields the second series, because the kernel ends blocks only at possession boundaries. Branch's comparable first-group work is one series with Posluszny relaying and Daryl Smith off the field, then Branch beside Mincey. Owens enters only on the 21-personnel call, which the kernel does not condition on, so he is named in the first group's FB slot."
 }
