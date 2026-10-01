@@ -1,0 +1,167 @@
+{
+ "procedure": "league-awards-v1",
+ "procedure_tag": "v1-2014",
+ "season": 2014,
+ "frozen": {
+  "date": "2014-08-28",
+  "clock": "August 28, 2014, after preseason game 4 closed; before any 2014 award draw",
+  "basis": "User instruction of October 1, 2026: freeze the 2014 methodology from the 2013 method (same award names, formulas, shortlist size and panel weights) with the months computed from the real 2014 fixtures.",
+  "mirrors": "career/2013/awards/methodology.json"
+ },
+ "authority": "User decisions of September 27, 2026 (league awards by a formula shortlist plus an audited panel draw), carried into 2014 by the user's October 1, 2026 instruction to freeze this season's method before the first draw. No 2014 winner is drawn by this file.",
+ "categories": [
+  "offense",
+  "defense",
+  "special_teams"
+ ],
+ "award_names": {
+  "AFC-offense": "AFC Offensive Player",
+  "AFC-defense": "AFC Defensive Player",
+  "AFC-special_teams": "AFC Special Teams Player",
+  "NFC-offense": "NFC Offensive Player",
+  "NFC-defense": "NFC Defensive Player",
+  "NFC-special_teams": "NFC Special Teams Player"
+ },
+ "shortlist_size": 3,
+ "panel_weights": [
+  6,
+  3,
+  1
+ ],
+ "panel_rule": "The top three by formula score in each conference form the shortlist, ordered by score, then player name, then team. The private service commits the award packet (period, shortlist, weights, this file's digest) and supplies the entropy; the panel picks rank 1, 2 or 3 with weights 6:3:1. A shortlist shorter than three uses the leading weights.",
+ "formulas": {
+  "offense": {
+   "positions": [
+    "QB",
+    "RB",
+    "HB",
+    "FB",
+    "WR",
+    "TE"
+   ],
+   "parts": [
+    {
+     "weights": {
+      "passing_yards": 0.04,
+      "passing_touchdowns": 4,
+      "interceptions_thrown": -2,
+      "rushing_yards": 0.1,
+      "rushing_touchdowns": 6,
+      "receiving_yards": 0.1,
+      "receiving_touchdowns": 6,
+      "fumbles_lost": -2
+     }
+    }
+   ]
+  },
+  "defense": {
+   "positions": [
+    "DE",
+    "DT",
+    "NT",
+    "OLB",
+    "ILB",
+    "MLB",
+    "LB",
+    "CB",
+    "S",
+    "SS",
+    "FS"
+   ],
+   "parts": [
+    {
+     "weights": {
+      "solo_tackles": 1,
+      "assisted_tackles": 0.5,
+      "tackles_for_loss": 1,
+      "sacks": 4,
+      "defensive_interceptions": 5,
+      "interception_return_yards": 0.1,
+      "forced_fumbles": 3,
+      "fumble_recoveries": 2,
+      "passes_defended": 1.5
+     }
+    }
+   ]
+  },
+  "special_teams": {
+   "parts": [
+    {
+     "positions": [
+      "K"
+     ],
+     "weights": {
+      "field_goals_made": 3,
+      "fg_missed": -1,
+      "extra_points_made": 1,
+      "xp_missed": -1
+     }
+    },
+    {
+     "positions": [
+      "P"
+     ],
+     "weights": {
+      "punts_inside_20": 1,
+      "punt_yards_over_45": 0.25
+     }
+    },
+    {
+     "weights": {
+      "kick_return_yards": 0.1,
+      "punt_return_yards": 0.1
+     }
+    }
+   ]
+  }
+ },
+ "formula_notes": "The 2013 formulas unchanged. Every counter they read is present in the kernel 2014.4 receipts (the four closed 2014 preseason receipts carry each one), so every week is scored alike. Non-offensive touchdowns are not modelled by the kernel, so none can score. Kick distance is not used.",
+ "months": {
+  "September": {
+   "label": "September (Weeks 1-4)",
+   "order": 1,
+   "weeks": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "fixture_dates": "2014-09-04 to 2014-09-29"
+  },
+  "October": {
+   "label": "October (Weeks 5-8)",
+   "order": 2,
+   "weeks": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "fixture_dates": "2014-10-02 to 2014-10-27"
+  },
+  "November": {
+   "label": "November (Weeks 9-12)",
+   "order": 3,
+   "weeks": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "fixture_dates": "2014-10-30 to 2014-11-24"
+  },
+  "December": {
+   "label": "December (Weeks 13-17)",
+   "order": 4,
+   "weeks": [
+    13,
+    14,
+    15,
+    16,
+    17
+   ],
+   "fixture_dates": "2014-11-27 to 2014-12-28"
+  }
+ },
+ "month_rule": "Months are assigned by NFL week from the real 2014 fixtures (career/2014/05_Regular_Season/Schedule/fixtures.json): September Weeks 1-4 (September 4 to 29), October Weeks 5-8 (October 2 to 27), November Weeks 9-12 (October 30 to November 24), December Weeks 13-17 (November 27 to December 28). The repository holds no sourced 2014 monthly announcement dates (library/2014_playing_and_roster_rules.md and the 2014 calendar record none), so the 2013 rule is carried: the Week 9 Thursday game (October 30) belongs to November and the Week 13 Thanksgiving games (November 27) to December, by week, not by calendar date. That assignment is an inference, as it was in 2013 (library/2013_nfl_awards_structure.md); it is fixed here before the first draw."
+}

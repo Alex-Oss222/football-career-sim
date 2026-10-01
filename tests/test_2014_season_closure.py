@@ -160,10 +160,20 @@ class SeasonClosure2014Tests(unittest.TestCase):
         self.assertEqual(render_box_score.stale_blocks(output, paths.receipts, season=SEASON), [])
         self.assertIn("Scoring", output.read_text(encoding="utf-8"))
 
-        with patch.object(league_awards, "ROOT", root):
-            league_awards.render(SEASON)
+        # The week's awards, drawn through the same local service from the
+        # frozen 2014 methodology (the root's own copy), then rendered.
+        with patch.object(league_awards, "ROOT", root), \
+                patch("runtime.private_client.Client", return_value=client), \
+                patch.object(sys, "argv", ["league_awards", "week", str(WEEK), "--season", str(SEASON), "--close"]), \
+                contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(league_awards.main(), 0)
+        drawn = json.loads((paths.awards / "results.json").read_text(encoding="utf-8"))
+        self.assertEqual(set(drawn), {"week-1"})
+        self.assertEqual(len(drawn["week-1"]["awards"]), 6)
+        self.assertTrue(all(a["event_id"].startswith("2014-award-week01-") for a in drawn["week-1"]["awards"].values()))
         self.assertEqual(paths.awards, root / "career/2014/05_Regular_Season/Awards")
         self.assertTrue((paths.awards / "week_01/README.md").is_file())
+        self.assertFalse((self.real.awards / "results.json").exists())
 
         tracker = render_team_tracker.tracker_dir(root, SEASON)
         for rel, text in render_team_tracker.render(root, SEASON, JAX).items():

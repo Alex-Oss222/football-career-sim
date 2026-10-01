@@ -37,8 +37,17 @@ METHOD = AWARDS / "methodology.json"
 RESULTS = AWARDS / "results.json"
 
 
+def method_path(season=2013):
+    return SeasonPaths(season, ROOT).awards / 'methodology.json'
+
+
 def method(season=2013):
-    return json.loads((SeasonPaths(season, ROOT).awards / 'methodology.json').read_text(encoding="utf-8"))
+    path = method_path(season)
+    if not path.is_file():
+        raise FileNotFoundError(
+            "No %d awards methodology: freeze %s from the %d schedule before any award is drawn "
+            "(see career/2013/awards/methodology.json for the form)" % (season, path.relative_to(ROOT), season))
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def score(category, player, m):
@@ -132,7 +141,7 @@ def render(season=2013):
         from scripts.render_award_pages import render_pages
         from runtime.events import preserve_event_comments
         results = load_results(season)
-        pages = render_pages(season, results, method(season) if results else None)
+        pages = render_pages(season, results, method(season) if results or method_path(season).is_file() else None)
         for relative, text in pages.items():
             path = SeasonPaths(season, ROOT).awards / relative
             path.parent.mkdir(parents=True, exist_ok=True)
@@ -173,8 +182,25 @@ def main():
         render(args.season)
         return 0
     if args.season != 2013:
-        require_game_release(args.season, ROOT)
-    m = method(args.season)
+        try:
+            require_game_release(args.season, ROOT)
+        except ValueError as exc:
+            print("AWARDS: BLOCKED\n- " + str(exc))
+            return 1
+    try:
+        m = method(args.season)
+    except FileNotFoundError as exc:
+        print("AWARDS: BLOCKED\n- " + str(exc))
+        return 1
+    if args.kind == "month" and args.key not in m.get("months", {}):
+        print("AWARDS: no month %r in the %d methodology" % (args.key, args.season))
+        return 1
+    weeks = set(period_weeks(args.kind, args.key, m))
+    closed = {int(r["week"]) for r in load_receipts(paths.receipts)}
+    if not weeks & closed:
+        print("AWARDS: BLOCKED\n- no closed %d receipt for %s %s; the award needs the period's closed games "
+              "(scripts/close_week.py) before a shortlist exists" % (args.season, args.kind, args.key))
+        return 1
     lists = shortlists(args.kind, args.key, m, args.season)
     for award, rows in lists.items():
         print(award, "; ".join("%s (%s) %.2f" % (r["player"], r["team"], r["score"]) for r in rows))
