@@ -351,6 +351,16 @@ def validate(root=ROOT):
             for event_id in stale_blocks(output, receipt_dir):
                 require(False, f'{output.relative_to(root)}: box score for {event_id} '
                                'differs from its receipt; run render_box_score.py --write')
+        # From 2014 the filled block is the gamebook layout of the weekly game
+        # turn template (runtime/gamebook.py), checked against the same receipts.
+        from runtime.seasons import SeasonPaths
+        for year in sorted({2014, mapping.get('active_season', 2014)}):
+            paths = SeasonPaths(year, root)
+            outputs = sorted(paths.regular_season.glob('*/output.md')) + sorted(paths.postseason.glob('*/output.md'))
+            for output in outputs:
+                for event_id in stale_blocks(output, paths.receipts, season=year):
+                    require(False, f'{output.relative_to(root)}: box score for {event_id} '
+                                   f'differs from its receipt; run render_box_score.py --season {year} --write')
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append(f'Box score cannot be rebuilt from its receipt: {exc}')
 

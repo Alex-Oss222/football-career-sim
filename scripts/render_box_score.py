@@ -8,6 +8,14 @@ A weekly output.md marks where the box score belongs:
 
 `--write OUTPUT_MD` fills every marked block in that file from the named
 receipts; validation fails if a block no longer matches its receipt.
+
+Two layouts, chosen by `--season`: the 2013 box score below (team comparison,
+category tables, drive chart), kept byte-identical for the closed 2013
+outputs, and from 2014 the gamebook layout of the weekly game turn template
+(scoring summary, team stats, eleven individual tables per club, drive chart,
+snap counts) in runtime/gamebook.py, whose docstring lists the rows and
+columns each receipt field supports and the ones left out. `--line-score`
+prints the template's Section 3 line score for a 2014-onward receipt.
 """
 from __future__ import annotations
 
@@ -203,7 +211,14 @@ def drive_chart(receipt):
     return lines + [""]
 
 
-def render(receipt, lead_team):
+GAMEBOOK_FROM_SEASON = 2014
+
+
+def render(receipt, lead_team, season=2013):
+    """The box score for one club's output: 2013 layout, or the gamebook from 2014."""
+    if season >= GAMEBOOK_FROM_SEASON:
+        from runtime.gamebook import render as render_gamebook
+        return render_gamebook(receipt, lead_team)
     clubs = team_order(receipt, lead_team)
     lines = comparison(receipt, clubs)
     for club in clubs:
@@ -212,20 +227,20 @@ def render(receipt, lead_team):
     return "\n".join(lines)
 
 
-def fill(text, directory=RECEIPTS):
+def fill(text, directory=RECEIPTS, season=2013):
     """Return text with every marked box-score block regenerated."""
     def replace(match):
-        body = render(load_receipt(match.group("event"), directory), match.group("team"))
+        body = render(load_receipt(match.group("event"), directory), match.group("team"), season)
         return match.group(1) + body + "\n" + match.group(5)
     return BLOCK.sub(replace, text)
 
 
-def stale_blocks(path, directory=RECEIPTS):
+def stale_blocks(path, directory=RECEIPTS, season=2013):
     """Event ids whose marked box score no longer matches its receipt."""
     text = Path(path).read_text(encoding="utf-8")
     stale = []
     for match in BLOCK.finditer(text):
-        expected = render(load_receipt(match.group("event"), directory), match.group("team")) + "\n"
+        expected = render(load_receipt(match.group("event"), directory), match.group("team"), season) + "\n"
         if match.group("body") != expected:
             stale.append(match.group("event"))
     return stale
@@ -237,6 +252,8 @@ def main():
     parser.add_argument("--team", help="Club listed first (defaults to the home club)")
     parser.add_argument("--write", metavar="OUTPUT_MD", help="Fill the marked box-score blocks in this file")
     parser.add_argument("--season", type=int, required=True)
+    parser.add_argument("--line-score", action="store_true",
+                        help="Print the line score (2014 onward) instead of the box score")
     args = parser.parse_args()
     from runtime.seasons import SeasonPaths, require_receipt_season
     paths = SeasonPaths(args.season, ROOT)
@@ -247,14 +264,20 @@ def main():
         text = path.read_text(encoding="utf-8")
         for match in BLOCK.finditer(text):
             require_receipt_season([load_receipt(match.group('event'), paths.receipts)], args.season)
-        path.write_text(fill(text, paths.receipts), encoding="utf-8")
+        path.write_text(fill(text, paths.receipts, args.season), encoding="utf-8")
         print("filled box scores in %s" % path)
         return
     if not args.event_id:
         parser.error("give an event id or --write OUTPUT_MD")
     receipt = load_receipt(args.event_id, paths.receipts)
     require_receipt_season([receipt], args.season)
-    print(render(receipt, args.team or receipt["home"]))
+    if args.line_score:
+        if args.season < GAMEBOOK_FROM_SEASON:
+            parser.error("--line-score needs a 2014-or-later season")
+        from runtime.gamebook import line_score_table
+        print(line_score_table(receipt))
+        return
+    print(render(receipt, args.team or receipt["home"], args.season))
 
 
 if __name__ == "__main__":
