@@ -33,7 +33,7 @@ class WorkingPlayerCardTests(unittest.TestCase):
         receipt = json.loads(source.read_text(encoding='utf-8'))
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)
-            path = root/'career/2014/regular_season/statistics/records/game_receipts/game.json'
+            path = SeasonPaths(2014, root).record('stats/game_receipts/game.json')
             path.parent.mkdir(parents=True)
             path.write_text(json.dumps(receipt), encoding='utf-8')
             with self.assertRaises(ValueError):
@@ -61,8 +61,8 @@ class WorkingPlayerCardTests(unittest.TestCase):
 
     def test_current_roster_cards_and_stats_are_consistent(self):
         self.assertEqual(profile_errors(2014), [])
-        cards = list((ROOT/'career/2014/team/player_cards').glob('*.md'))
-        self.assertEqual(len(cards), 84)  # 78 current players (Entry 110), 4 former players, index and template
+        cards = list(SeasonPaths(2014, ROOT).record('player_profiles').glob('*.md'))
+        self.assertEqual(len(cards), 84)  # 78 current players, 4 former players, index and template
 
     def test_player_facing_year_labels_preserve_proper_name(self):
         self.assertEqual(clean_labels('Andre Branch; Branch evidence; Branch regular season'),
@@ -88,10 +88,12 @@ class WorkingPlayerCardTests(unittest.TestCase):
             root = Path(folder)
             old = stats_block(2014, 'Kirk Cousins', 'QB', {False: period(250), True: period(80, 19)}, root=root)
             old = old.replace('| 2014 |', '| 2013 |')
-            text = '| Overall | 6.0 /10 | Staff judgment |\n'+old+'\n'
+            opening = '| Overall | 6.0 /10 | Staff judgment |\n'
+            update = '\n## Dated coaching updates\n\n### August 1, 2014\n\nProtection check held; game rush remains untested.\n\n'
+            text = opening+update+old+'\n'
             updated = refresh_text(text, 2014, 'Kirk Cousins', 'QB',
                                    {False: period(300), True: period(100, 19)}, root)
-            self.assertTrue(updated.startswith('| Overall | 6.0 /10 | Staff judgment |\n'))
+            self.assertTrue(updated.startswith(opening+update))
             self.assertEqual(updated.count('| 2013 |'), 2)
             self.assertEqual(updated.count('| 2014 |'), 2)
             regular, playoffs = updated.split('## Playoff statistics by year')

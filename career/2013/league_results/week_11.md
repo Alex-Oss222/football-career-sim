@@ -1,6 +1,6 @@
 # 2013 Week 11 league results
 
-**Events:** `2013-week11-<away>-at-<home>`, kernel 2013.8 (ledger Entry 51), closed once each through the private production runner.
+**Events:** `2013-week11-<away>-at-<home>`, kernel 2013.8 ([kernel 2013.8 overtime correction](../../../runtime/README.md)), closed once each through the private production runner.
 **Inputs:** background clubs carried forward from the [Week 1 depth-chart library](../../../library/2013_week1_depth_charts.md) with branch injuries applied, each dressing up to 46 players chosen by depth order; every club at the Average low-confidence unit anchor.
 **Receipts:** `../stats/game_receipts/week_11_*.json`. **Standings:** [../standings.md](../standings.md), generated from the receipts.
 **Byes:** Dallas Cowboys, St. Louis Rams.

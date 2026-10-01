@@ -29,7 +29,7 @@ from runtime.week_inputs import schedule
 from scripts.render_season_stats import load_receipts
 from scripts.research.build_2013_week1_depth_charts import CLUBS
 
-DIR = ROOT / "career/2014/early_offseason/staff_changes"
+DIR = ROOT / 'career/2014/01_Early_Offseason/staff_changes'
 METHOD = DIR / "carousel_method.json"
 RESULTS = DIR / "carousel_results.json"
 PAGE = DIR / "requests_and_outcomes.md"

@@ -129,7 +129,7 @@ class SeasonClosure2014Tests(unittest.TestCase):
         # Receipts: full for Jacksonville, compact for the other fifteen games.
         receipts_dir = close_week.write_receipts(package, paths, results, SEASON)
         self.assertEqual(receipts_dir, paths.receipts)
-        self.assertEqual(receipts_dir, root / "career/2014/regular_season/statistics/records/game_receipts")
+        self.assertEqual(receipts_dir, root / "career/2014/05_Regular_Season/Statistics/records/game_receipts")
         written = sorted(p.name for p in receipts_dir.glob("*.json"))
         self.assertEqual(written, sorted(g["receipt"] for g in package["games"]))
         own = json.loads((receipts_dir / "week_01_jacksonville_jaguars_at_philadelphia_eagles.json").read_text())
@@ -145,14 +145,14 @@ class SeasonClosure2014Tests(unittest.TestCase):
         paths.stats.mkdir(parents=True, exist_ok=True)
         for name, text in views.items():
             (paths.stats / name).write_text(text, encoding="utf-8")
-        self.assertTrue((root / "career/2014/regular_season/statistics/records/season_totals.json").is_file())
+        self.assertTrue((root / "career/2014/05_Regular_Season/Statistics/records/season_totals.json").is_file())
         standings = paths.record("standings.md")
         standings.write_text(render_standings.render(SEASON, regular), encoding="utf-8")
-        self.assertEqual(standings, root / "career/2014/regular_season/standings.md")
+        self.assertEqual(standings, root / "career/2014/05_Regular_Season/standings.md")
         self.assertIn("**Through:** Week 1.", standings.read_text(encoding="utf-8"))
 
         week_dir = paths.week_folder(WEEK)
-        self.assertEqual(week_dir, root / "career/2014/regular_season/games/week_01")
+        self.assertEqual(week_dir, root / "career/2014/05_Regular_Season/Games/Week_01")
         output = week_dir / "output.md"
         shell = ("# Week 1 synthetic closure output\n\nFull stats for the game.\n\n"
                  "<!-- box-score event=%s team=%s -->\n<!-- /box-score -->\n" % (own["event_id"], JAX))
@@ -162,7 +162,7 @@ class SeasonClosure2014Tests(unittest.TestCase):
 
         with patch.object(league_awards, "ROOT", root):
             league_awards.render(SEASON)
-        self.assertEqual(paths.awards, root / "career/2014/regular_season/awards")
+        self.assertEqual(paths.awards, root / "career/2014/05_Regular_Season/Awards")
         self.assertTrue((paths.awards / "week_01/README.md").is_file())
 
         tracker = render_team_tracker.tracker_dir(root, SEASON)

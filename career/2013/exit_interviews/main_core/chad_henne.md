@@ -160,7 +160,7 @@ All of it is voluntary. Jacksonville's 2014 offseason program may begin no earli
 - `career/2013/offseason/initial_roster.md` line 35
 - `career/2013/stats/game_receipts/` (Jacksonville full receipts, Weeks 1-17) and `career/2013/stats/postseason_receipts/` (Weeks 18-19); `career/2013/stats/team_player_stats.md` line 14
 - `career/2013/offseason/otas/output.md` lines 34, 92, 94, 110, 149, 163, 192, 202, 208-213 (line 211: individual supplements); `otas/standouts.md` line 11 ("Closed the changed-picture gap")
-- `career/2013/ledger.md` line 395 (Tice simplified the combination and protection vocabulary)
+- [May 13–15 OTA report](../../offseason/otas/output.md) (Tice simplified the combination and protection vocabulary)
 - `career/2013/offseason/mandatory_minicamp/output.md` lines 19, 27, 37, 51; `mandatory_minicamp/standouts.md` line 11
 - `career/2013/offseason/training_camp/output.md` lines 13, 27, 45, 55, 73, 102; `training_camp/position_battles.md` line 7; `training_camp/roster_decisions.md` line 7; `training_camp/standouts.md` line 10
 - `career/2013/preseason/game_1_miami_at_jacksonville/output.md` line 11; `game_2_jacksonville_at_ny_jets/output.md` line 11; `game_3_philadelphia_at_jacksonville/output.md` lines 11, 15

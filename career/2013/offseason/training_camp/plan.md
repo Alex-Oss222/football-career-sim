@@ -726,6 +726,6 @@ When training camp actually begins:
 
 - create/use `training_camp/output.md` for actual events;
 - record individual and team results there, not here;
-- use the season ledger for material phase checkpoints;
+- keep material phase checkpoints in this phase’s output and regenerate the season’s dated record;
 - update roster, role, availability, financial, Document 4, and Document 5 state atomically whenever an actual decision/event changes them;
 - preserve this plan unless the user changes the plan itself.

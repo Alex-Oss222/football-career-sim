@@ -9,7 +9,7 @@
 
 At Preseason Game 2 at the Jets (August 17) he entered an independent medical hold (head/neck) and was removed from football work. The right-guard battle closed as "Rackley held the first-unit operation; Pasztor was medically interrupted." He was kept on the 53 while held; "availability was not treated as effort."
 
-On October 27 the club's record was corrected (ledger Entry 46). Only the injury's class and restriction had been kept, not its projected return, so the hold "could never clear on a date." The recovered projection was minor, two days: August 19, 2013. He was "held out of Weeks 1-8 by the recording defect."
+On October 27 the club's record was corrected ([Pasztor and Mosley medical-record correction](../../medical_history.md)). Only the injury's class and restriction had been kept, not its projected return, so the hold "could never clear on a date." The recovered projection was minor, two days: August 19, 2013. He was "held out of Weeks 1-8 by the recording defect."
 
 He practised at the bye ("interior technique, communication and conditioning work") and was not moved on the depth chart; Stone told Caldwell there would be "no move before the staff had evaluated Pasztor and Mosley." The second-half plan locked the starting five, together since Week 3. From Week 10 he dressed as the primary interior reserve in place of Asper, through both playoff games; Rackley stayed the starting right guard.
 
@@ -60,7 +60,7 @@ Voluntary. The offseason program may begin no earlier than April 21; nothing bef
 - Stone with the medical staff: every hold on the club's injury record carries its projected return, and Stone is told when a date passes. Diagnosis and clearance remain the medical staff's.
 - Stone: give Caldwell his football evaluation of Pasztor; its content is not recorded here.
 - Medical staff: exit physical, January 14; no finding recorded.
-- Teaching note: a hold kept without a clearance date cost a player eight games. That is an organizational failure (Entry 46), not a medical, effort or character finding.
+- Teaching note: a hold kept without a clearance date cost a player eight games. That is an organizational failure ([Pasztor and Mosley medical-record correction](../../medical_history.md)), not a medical, effort or character finding.
 - Teaching note: a competitor back from a long hold had one practice before the line was locked; decide explicitly whether he gets a look, and tell him.
 - Teaching note: a dressed interior reserve went eight regular-season and two playoff games with no individual evaluation recorded; define the reserve's weekly job and record his work.
 - User decision: Stone's football evaluation of Pasztor (pending ERFA) for Caldwell before tenders are due (before 4 p.m., March 11). The tender decision is Caldwell's.
@@ -73,7 +73,7 @@ Voluntary. The offseason program may begin no earlier than April 21; nothing bef
 - `career/2013/offseason/initial_roster.md` line 58
 - `career/2013/offseason/mandatory_minicamp/output.md` lines 29, 52; `offseason/training_camp/output.md` lines 29, 47, 57, 75, 104; `training_camp/position_battles.md` line 9; `training_camp/standouts.md` line 18
 - `career/2013/preseason/game_1_miami_at_jacksonville/output.md` lines 4-5, 15; `game_2_jacksonville_at_ny_jets/output.md` lines 4, 15; `game_3_philadelphia_at_jacksonville/output.md` line 15; `preseason/final_roster_cuts.md` line 13
-- `career/2013/ledger.md` lines 1031, 1048-1078 (Entry 46), 1141, 1146, 1171
+- [2013 San Francisco game report](../../regular_season/week_08_san_francisco_at_jacksonville/output.md), [Pasztor and Mosley medical-record correction](../../medical_history.md), [2013 bye-week report](../../regular_season/week_09_bye/output.md), and [2013 Tennessee away game report](../../regular_season/week_10_jacksonville_at_tennessee/output.md) (recorded medical projections and availability)
 - `career/2013/regular_season/week_01_kansas_city_at_jacksonville/output.md` lines 35, 47-49
 - `career/2013/regular_season/week_03_jacksonville_at_seattle/output.md` line 295 and the OL rows in Weeks 4 to 8 (the same starting five)
 - `career/2013/regular_season/week_09_bye/output.md` lines 44, 51, 55, 68

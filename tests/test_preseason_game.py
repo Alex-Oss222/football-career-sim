@@ -35,7 +35,7 @@ from support_rosters import game_day_roster
 JAX = close_week.PROTAGONIST
 TB = "Tampa Bay Buccaneers"
 EVENT = "2014-preseason-01-tampa-bay-buccaneers-at-jacksonville-jaguars"
-FIXTURES = ROOT / "career/2014/training_camp_and_preseason/preseason_games/fixtures.json"
+FIXTURES = ROOT / "career/2014/04_Training_Camp_and_Preseason/Preseason_Games/fixtures.json"
 CALLS = ({"name": "12 Ace Right, Power R", "family": "Power", "type": "run", "personnel": "12", "formation": "12 Ace Right"},
          {"name": "11 Doubles, Zip, Smoke", "family": "Smoke/Now", "type": "pass", "personnel": "11", "formation": "11 Doubles"})
 
@@ -56,11 +56,11 @@ class SeasonPathTests(unittest.TestCase):
         self.assertEqual(games[0]["date"], "2014-08-08")
         self.assertIsNone(games[3]["kickoff_et"])  # game 4 kickoff pending a dated notice
         self.assertEqual(paths.preseason_game(2)["home"], "Chicago Bears")
-        base = paths.career / "training_camp_and_preseason/preseason_games"
-        self.assertEqual(paths.preseason_folder(1), base / "game_01")
+        base = paths.career / "04_Training_Camp_and_Preseason/Preseason_Games"
+        self.assertEqual(paths.preseason_folder(1), base / "Game_01")
         self.assertEqual(paths.preseason_receipts, base / "statistics/records/game_receipts")
-        self.assertEqual(paths.paused_game(1, preseason=True), base / "game_01/paused_game.json")
-        self.assertEqual(paths.paused_game(1), paths.regular_season / "week_01" / "paused_game.json")
+        self.assertEqual(paths.paused_game(1, preseason=True), base / "Game_01/paused_game.json")
+        self.assertEqual(paths.paused_game(1), paths.regular_season / "Week_01" / "paused_game.json")
         self.assertEqual(paths.preseason_cache(1, "inputs"), ROOT / ".sim_cache/2014/preseason_01_inputs.json")
         with self.assertRaises(ValueError):
             paths.preseason_folder(0)
@@ -200,7 +200,7 @@ class PreseasonClosureTests(unittest.TestCase):
         self.assertEqual(receipt["extra_point_rule"]["snap_yard_line"], 15)
         self.assertIn("play_ledger", receipt)
         self.assertEqual(receipt["final_score"], result["final_score"])
-        # The box score is the 2014 gamebook, inside the marked block of game_01/output.md.
+        # The box score is the 2014 gamebook, inside the marked block of Game_01/output.md.
         body = output.read_text()
         self.assertIn("<!-- box-score event=%s team=%s -->" % (EVENT, JAX), body)
         self.assertIn("Scoring summary", body)

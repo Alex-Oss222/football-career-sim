@@ -1,5 +1,6 @@
 import copy
 import json
+import re
 import unittest
 
 from scripts.render_jaguars_cap_tracker import (
@@ -110,6 +111,26 @@ class CapTrackerTests(unittest.TestCase):
         self.assertIn('$3,650,000',organization)
         self.assertIn('Alex Stone | Head coach | Unspecified',organization)
         self.assertNotIn('Alex Stone',main)
+
+    def test_render_uses_current_sources_without_changing_frozen_financial_inputs(self):
+        original = copy.deepcopy(self.data)
+        outputs = render(self.data)
+        self.assertEqual(self.data, original)
+        for path, text in outputs.items():
+            self.assertNotRegex(text, r'\bEntr(?:y|ies) \d+')
+            self.assertNotIn('ledger.md', text)
+            self.assertNotIn('Update the event ledger', text)
+            for target in re.findall(r'\]\(([^)]+)\)', text):
+                if target.startswith(('https:', 'http:', '#')):
+                    continue
+                self.assertTrue((ROOT / path.parent / target.split('#')[0]).is_file(),
+                                (path, target))
+        details = outputs[next(path for path in outputs if path.name == 'contract_details.md')]
+        self.assertIn('departure March 31, 2014', details)
+        self.assertIn('Trades/completed_trades/trades.md', details)
+        self.assertIn('[adopted contract reconstruction]', details)
+        self.assertIn('$2,072,910', details)
+        self.assertIn('without an additional bonus-recovery credit', details)
 
     def test_signed_draft_class_and_traded_players_are_not_shown_as_pending(self):
         outputs=render(self.data)

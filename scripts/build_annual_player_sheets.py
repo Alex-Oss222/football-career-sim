@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 from runtime.seasons import SeasonPaths
-EXIT_INDEX = ROOT / "career/2014/team/player_development/2013_exit_player_index.json"
+EXIT_INDEX = SeasonPaths(2014, ROOT).record('offseason/player_development/2013_exit_player_index.json')
 BIRTH_DATES = ROOT / "library/data/player_birth_dates.json"
 
 POSITION_SHEET_TRAITS = {
@@ -154,7 +154,23 @@ Unassessed beyond the supported identity above.
 """
 
 def target_path(season: int,player_name: str, root: Path = ROOT) -> Path:
-    return SeasonPaths(season, root).record('player_profiles') / (slugify(player_name)+'.md')
+    # The live opening card and the final review must never share a destination.
+    directory = ('player_profiles' if season == 2013
+                 else 'closeouts/player_assessments')
+    return SeasonPaths(season, root).record(directory) / (slugify(player_name)+'.md')
+
+def final_assessment_errors(season: int, root: Path = ROOT) -> list[str]:
+    """A separate final assessment exists only after the season closes."""
+    if season < 2014:
+        return []
+    directory = target_path(season, 'example', root).parent
+    finals = [p for p in directory.glob('*.md')
+              if p.name not in {'README.md', 'TEMPLATE.md'}]
+    if finals and not season_is_complete(season, root):
+        return [f'{season} final player assessments exist before season close']
+    return [f'{p.relative_to(root)}: missing final annual assessment identity'
+            for p in finals
+            if '**Assessment stage:** Final annual assessment' not in p.read_text(encoding='utf-8')]
 
 def _table_rows(text: str, section: str) -> list[list[str]]:
     body=text.split(f"## {section}\n",1)[-1].split("\n## ",1)[0]
@@ -190,7 +206,7 @@ def check_profiles(season: int,players: list[SheetPlayer], root: Path = ROOT) ->
         if not (root/player.evidence).is_file():
             errors.append(f"{path.relative_to(root)}: missing frozen branch evidence")
     expected={target_path(season,p.player,root) for p in players}
-    for path in SeasonPaths(season, root).record('player_profiles').glob("*.md"):
+    for path in target_path(season, 'example', root).parent.glob("*.md"):
         if path.name != "README.md" and path not in expected:
             errors.append(f"unexpected annual profile: {path.relative_to(root)}")
     return errors
@@ -209,6 +225,7 @@ def repository_profile_errors(root: Path = ROOT) -> list[str]:
         if season >= 2014:
             from scripts.update_player_cards import profile_errors
             errors += profile_errors(season,root)
+            errors += final_assessment_errors(season,root)
     return errors
 
 def main() -> int:

@@ -1,6 +1,6 @@
 # 2014 Week 1 depth charts for the 31 background clubs
 
-**Research date:** September 30, 2026 (branch clock July 29, 2014). **Football information window:** the real Week 1 depth charts and the Week 1 injury reports, dated September 3 to 6, 2014, before any Week 1 game. **Status: PREPARED, GATED.** This library is prepared research under [rails method section 7](../career/2014/league/personnel/method.md#7-week-1-depth-charts). It is usable as background TeamInput only when the master clock reaches Week 1 (September 7, 2014); the real charts were public the week of September 2 to 5, 2014, and under the information gate (method section 2) no rail informs any evaluation, board or decision before its date. No Week 1 score, statistic, game participation or later roster move is an input.
+**Research date:** September 30, 2026 (branch clock July 29, 2014). **Football information window:** the real Week 1 depth charts and the Week 1 injury reports, dated September 3 to 6, 2014, before any Week 1 game. **Status: PREPARED, GATED.** This library is prepared research under [rails method section 7](../career/2014/League/personnel/method.md#7-week-1-depth-charts). It is usable as background TeamInput only when the master clock reaches Week 1 (September 7, 2014); the real charts were public the week of September 2 to 5, 2014, and under the information gate (method section 2) no rail informs any evaluation, board or decision before its date. No Week 1 score, statistic, game participation or later roster move is an input.
 
 **Machine artifact:** [data/2014_week1_depth_charts.json](data/2014_week1_depth_charts.json). **Builder:** `scripts/research/build_2014_week1_depth_charts.py` (reads downloaded sources from a transient workspace; the runtime never downloads anything). **Loader:** `runtime/depth_library.py` with `season=2014` turns one club into a kernel TeamInput; the caller supplies the unit anchors (Document 7 section 2.2). **Tests:** `tests/test_2014_week1_depth_library.py`.
 
@@ -15,10 +15,10 @@ Jacksonville is not in this library. Its TeamInput always comes from the branch 
 | Membership cross-check | nflverse [roster_weekly_2014.csv](https://github.com/nflverse/nflverse-data/releases/download/weekly_rosters/roster_weekly_2014.csv) | Week 1 club membership and jersey only; status ignored |
 | Player bio fields | the user's `user_nfl_2014_week1.json` (transient workspace) | Same 32 clubs and 1,659 gsis ids as the nflverse chart (verified); supplies `birth_date`, `page_url` and an open-licensed Wikimedia Commons headshot per player (`headshot_url`, `headshot_license`, `headshot_license_url`, `headshot_credit`, `headshot_page`), carried as data only; 1,541 of 1,659 players have a photo; its jersey number equals the weekly-roster jersey for every player |
 | Branch control | `career/2014/team/roster/roster.md`, July 29, 2014 | The 78 controlled players (74 signed, four unsigned tenders), matched by gsis id through `library/data/player_birth_dates.json` and `career/2014/league/personnel/league_players.json`; all 78 matched, none by name fallback |
-| Draft pairing | [draft_pairing.md](../career/2014/league/personnel/draft_pairing.md) | The seven placements and the one unplaced selection |
-| Branch trades | [trades.md](../career/2014/trades/completed_trades/trades.md) | Nwaneri, Babin, Alualu, Shorts, Blackmon, Rackley (Allen retired) |
-| Free-agent draws and the replay | [fa_draws.md](../career/2014/league/personnel/fa_draws.md), [replay log](../career/2014/free_agency/march_2014_replay_log.md) | Players Jacksonville won leave their real clubs; players it lost stay on their real charts |
-| Retirements | [retirements.md](../career/2014/league/personnel/retirements.md) | Russell Allen (April 22, 2014) |
+| Draft pairing | [draft_pairing.md](../career/2014/League/personnel/draft_pairing.md) | The seven placements and the one unplaced selection |
+| Branch trades | [trades.md](../career/2014/00_Team_Operations/Trades/completed_trades/trades.md) | Nwaneri, Babin, Alualu, Shorts, Blackmon, Rackley (Allen retired) |
+| Free-agent draws and the replay | [fa_draws.md](../career/2014/League/personnel/fa_draws.md), [replay log](../career/2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md) | Players Jacksonville won leave their real clubs; players it lost stay on their real charts |
+| Retirements | [retirements.md](../career/2014/League/personnel/retirements.md) | Russell Allen (April 22, 2014) |
 | 2013 branch placements | `league_players.json` (`existing_branch_placement`), [2013 library](2013_week1_depth_charts.md) | The 2013 draft swaps carried into 2014 |
 
 ## Verification
@@ -77,7 +77,7 @@ The other 40 controlled players were on the real Jaguars' chart (16) or on no We
 
 ### Draft pairing
 
-Method section 6 and [draft_pairing.md](../career/2014/league/personnel/draft_pairing.md): the real Jaguars' k-th selection goes to the club that really drafted Jacksonville's k-th branch selection and takes the depth slot he held on the real Jaguars' Week 1 chart, keeping his real Week 1 injury status (the 2013 convention). **Convention for the slot:** the arriving player keeps his real depth string; when an incumbent holds the same string, the two are ordered by the ordinary tie-break (slot, jersey, name), exactly as the 2013 builder ordered Luke Joeckel beside Jason Peters. No listed player is displaced by fiat.
+Method section 6 and [draft_pairing.md](../career/2014/League/personnel/draft_pairing.md): the real Jaguars' k-th selection goes to the club that really drafted Jacksonville's k-th branch selection and takes the depth slot he held on the real Jaguars' Week 1 chart, keeping his real Week 1 injury status (the 2013 convention). **Convention for the slot:** the arriving player keeps his real depth string; when an incumbent holds the same string, the two are ordered by the ordinary tie-break (slot, jersey, name), exactly as the 2013 builder ordered Luke Joeckel beside Jason Peters. No listed player is displaced by fiat.
 
 | k | Jacksonville's branch pick | Real Jaguars' selection | Goes to | Real slot | Resulting depth |
 |---:|---|---|---|---|---|

@@ -6,7 +6,7 @@
 **Age at exit-review close:** 36  
 **Position:** C  
 **NFL standing:** Staff view: Rotation / complementary player  
-**Player identity:** Communication and point/echo/confirm work provide a recorded veteran contribution. His two starts and reserve period deserve the promised review. Entry 79 retirement ends training eligibility.  
+**Player identity:** Communication and point/echo/confirm work provide a recorded veteran contribution. His two starts and reserve period deserve the promised review. His [recorded retirement](../../2014/League/personnel/retirements.md) ends training eligibility.\
 
 **Review status:** Completed, including exact user-authorized theoretical staff grades.  
 
@@ -73,7 +73,7 @@ Game-count definitions can differ: G counts game-day active listings; the histor
 
 ## What made him this player in 2013
 
-- Communication and point/echo/confirm work provide a recorded veteran contribution. His two starts and reserve period deserve the promised review. Entry 79 retirement ends training eligibility.
+- Communication and point/echo/confirm work provide a recorded veteran contribution. His two starts and reserve period deserve the promised review. His [recorded retirement](../../2014/League/personnel/retirements.md) ends training eligibility.
 
 ## Play style
 
@@ -105,10 +105,10 @@ A veteran center whose protection calls and communication remain his defining va
 
 - **recorded evidence used:** [2013 exit review](../../../career/2013/exit_interviews/core/brad_meester.md) and its linked practice/game records.
 - **Historical benchmark sources:** [2013 position pools and archived workouts](../../../library/2013_player_sheet_research.md); source URLs, raw file hashes and qualified peer rows are preserved.
-- **What is established:** Communication and point/echo/confirm work provide a recorded veteran contribution. His two starts and reserve period deserve the promised review. Entry 79 retirement ends training eligibility.
+- **What is established:** Communication and point/echo/confirm work provide a recorded veteran contribution. His two starts and reserve period deserve the promised review. His [recorded retirement](../../2014/League/personnel/retirements.md) ends training eligibility.
 - **My evaluation:** A veteran center whose protection calls and communication remain his defining value. I see a player who can organize a line, with movement and sustained physical blocking below his mental operation.
 - **Judgment basis:** The user explicitly requested exact theoretical grades even when the source cannot support a measured rating. These are staff hypotheses about the frozen 2013 player. Thin evidence lowers confidence rather than leaving the number blank.
 - **What would change my judgment:** Individually classified reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.
 
 **One-line description:**  
-Communication and point/echo/confirm work provide a recorded veteran contribution. His two starts and reserve period deserve the promised review. Entry 79 retirement ends training eligibility.
+Communication and point/echo/confirm work provide a recorded veteran contribution. His two starts and reserve period deserve the promised review. His [recorded retirement](../../2014/League/personnel/retirements.md) ends training eligibility.

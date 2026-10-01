@@ -4,7 +4,12 @@ Use with the [report instructions](README.md). This is team practice with vetera
 
 ## Report to render
 
-# [Team] | OTAs | [Dates or block]
+# OTAs | [Team] | [Season]
+
+**Location:** [Recorded facility or field; do not invent one]  
+**Dates:** [Dates covered by this report]  
+**Days completed:** [Actual OTA days completed in this block; season total if useful]  
+**Work addressed:** [Installation, formations, communication and situations addressed]
 
 [Give the staff's read of how the team ran its assigned offense, defense and kicking game. State the non-contact setting once. Explain what this block emphasized and what changed from the earlier work.]
 

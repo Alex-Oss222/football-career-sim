@@ -1,6 +1,6 @@
 # Jacksonville Jaguars cap tracker, 2014 to 2025
 
-As of May 12, 2014, Entry 110. Whole US dollars.
+As of May 12, 2014. Whole US dollars.
 
 [Player cap table](#cap-by-player) | [Individual contract details](../player_contracts/contract_details.md) | [Expirations](#expiring-contracts-and-free-agent-classes) | [Updating this tracker](../README.md)
 
@@ -15,7 +15,7 @@ As of May 12, 2014, Entry 110. Whole US dollars.
 | Certified cap space | Unresolved | Withheld until club accounting is reconciled |
 | Space after rookie reserve | Unresolved | Requires verified net rookie cost and certified space |
 
-The [current worksheet](../../2014/finances/salary_cap/cap_worksheet.md) records the Top-51 calculation and workout charge. A league-cap difference is not certified available room. [Organization finances](../coaching_and_organization/coaching_payroll.md) contains coaching commitments.
+The [current worksheet](../../2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md) records the Top-51 calculation and workout charge. A league-cap difference is not certified available room. [Organization finances](../coaching_and_organization/coaching_payroll.md) contains coaching commitments.
 
 | Working offseason reconciliation | 2014 |
 |---|---|
@@ -32,7 +32,7 @@ The [current worksheet](../../2014/finances/salary_cap/cap_worksheet.md) records
 | Unused prior-year room carried in | $5,330,000 to $6,000,000 |
 | Difference including the rollover estimate | $13,376,314 to $14,046,314 |
 
-The rollover is calculated step by step in the [cap worksheet](../../2014/finances/salary_cap/cap_worksheet.md#2013-rollover). It becomes certified room only when club accounting is reconciled.
+The rollover is calculated step by step in the [cap worksheet](../../2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md#2013-rollover). It becomes certified room only when club accounting is reconciled.
 
 ## Current player cap breakdown
 
@@ -138,7 +138,7 @@ The twelve-year horizon stays visible for future tracking. Pending free agents a
 | Future league caps | Add each year’s published cap when that year is reached |
 | Club accounting | Carryover, adjustments and actual cash receipts remain in the current cap worksheet |
 
-The [2011 agreement](https://nflps.org/wp-content/uploads/2012/05/collective-bargaining-agreement-2011-2020.pdf) controls the era’s minimums, bonus allocation, Top-51 treatment, options and cash-floor windows. [The original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md) supplies the historical salaries and bonus schedules. The [club worksheet](../../2014/finances/salary_cap/cap_worksheet.md) separates scheduled player commitments from adjusted club cap room.
+The [2011 agreement](https://nflps.org/wp-content/uploads/2012/05/collective-bargaining-agreement-2011-2020.pdf) controls the era’s minimums, bonus allocation, Top-51 treatment, options and cash-floor windows. [The original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md) supplies the historical salaries and bonus schedules. The [club worksheet](../../2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md) separates scheduled player commitments from adjusted club cap room.
 
 ## Team cap summary, twelve years
 
@@ -656,13 +656,13 @@ All six run through 2015 under the adopted two-year terms. They have no signing 
 | Brandon Marshall | 2014 | $0 | The original 2012 rookie contract ended on a 2012 waiver, before divergence. Future bonus accelerated into 2013, not 2014. Replacement active-roster deal modeled without a new bonus. |
 | Austen Lane | 2014 | $0 | Original four-year 2010 contract ends in 2013. The branch August 2013 waiver leaves no 2014 bonus year. |
 | Isaiah Stanback | 2014 | $0 | December 2012 practice-squad promotion modeled as a short minimum contract with no new bonus. August 2013 waiver leaves no future bonus charge. |
-| Uche Nwaneri | 2014 | $2,189,000 | Pre-June 1 trade to Arizona, March 20, 2014 (Entry 99): the 2014 and 2015 bonus allocations of $1,094,500 each accelerate into 2014. His $1,000,000 March 25 roster bonus passes to Arizona. |
-| Tyson Alualu | 2014 | $1,542,500 | Pre-June 1 trade to Houston, March 24, 2014 (Entry 102): the final $1,542,500 original bonus allocation stays with Jacksonville in 2014. Houston takes his $2,571,500 base and $150,000 other components. |
-| Jason Babin | 2014 | $0 | Trade to Miami, March 24, 2014 (Entry 102): no Jacksonville bonus proration on the claimed Philadelphia contract, so no dead money. Miami takes the 2014 and 2015 schedules. |
-| Cecil Shorts | 2014 | $110,845 | Pre-June 1 trade to Indianapolis, March 31, 2014 (Entry 104): his final $110,845 original bonus allocation stays with Jacksonville in 2014. Indianapolis takes his $1,431,000 base. |
-| Justin Blackmon | 2014 | $5,951,636 | Pre-June 1 trade to Indianapolis, March 31, 2014 (Entry 104): the remaining bonus allocations of $2,975,818 for 2014 and $2,975,818 for 2015 accelerate into 2014. Indianapolis takes his 2014 and 2015 base salaries and deferred roster cash; his 2015 charge leaves Jacksonville. |
-| Russell Allen | 2014 | $416,668 | Pre-June 1 trade to Arizona, April 7, 2014 (Entry 106): his final $416,668 original bonus allocation stays with Jacksonville in 2014. Arizona takes his $1,975,000 base and $25,000 workout bonus. |
-| Will Rackley | 2014 | $154,868 | Pre-June 1 trade to Seattle, May 12, 2014 (Entry 110): his final $154,868 original bonus allocation stays with Jacksonville in 2014. Seattle takes his $1,431,000 base. No 2015 year. |
+| Uche Nwaneri | 2014 | $2,189,000 | Pre-June 1 trade to Arizona, March 20, 2014: the 2014 and 2015 bonus allocations of $1,094,500 each accelerate into 2014. His $1,000,000 March 25 roster bonus passes to Arizona. |
+| Tyson Alualu | 2014 | $1,542,500 | Pre-June 1 trade to Houston, March 24, 2014: the final $1,542,500 original bonus allocation stays with Jacksonville in 2014. Houston takes his $2,571,500 base and $150,000 other components. |
+| Jason Babin | 2014 | $0 | Trade to Miami, March 24, 2014: no Jacksonville bonus proration on the claimed Philadelphia contract, so no dead money. Miami takes the 2014 and 2015 schedules. |
+| Cecil Shorts | 2014 | $110,845 | Pre-June 1 trade to Indianapolis, March 31, 2014: his final $110,845 original bonus allocation stays with Jacksonville in 2014. Indianapolis takes his $1,431,000 base. |
+| Justin Blackmon | 2014 | $5,951,636 | Pre-June 1 trade to Indianapolis, March 31, 2014: the remaining bonus allocations of $2,975,818 for 2014 and $2,975,818 for 2015 accelerate into 2014. Indianapolis takes his 2014 and 2015 base salaries and deferred roster cash; his 2015 charge leaves Jacksonville. |
+| Russell Allen | 2014 | $416,668 | Pre-June 1 trade to Arizona, April 7, 2014: his final $416,668 original bonus allocation stays with Jacksonville in 2014. Arizona takes his $1,975,000 base and $25,000 workout bonus. |
+| Will Rackley | 2014 | $154,868 | Pre-June 1 trade to Seattle, May 12, 2014: his final $154,868 original bonus allocation stays with Jacksonville in 2014. Seattle takes his $1,431,000 base. No 2015 year. |
 
 The $51,675 old Bray bonus is counted separately from his new $420,000 salary. No recorded deal has void years. The completion research explains the inherited bonus reconciliation.
 
@@ -680,7 +680,7 @@ The $51,675 old Bray bonus is counted separately from his new $420,000 salary. N
 | 2014 | 6 | Jacksonville Jaguars | 205 | Jemea Thomas, DB, Georgia Tech | May 10, 2014 | Signed May 11, 2014 |
 | 2014 | 7 | Jacksonville Jaguars | 241 | Malcolm Butler, CB, West Alabama | May 10, 2014 | Signed May 11, 2014 |
 
-All nine selections were exercised May 8 to 10 and signed May 11, 2014; no 2014 selection right remains. Each rookie contract is in the position tables above and in its individual sheet, and the gross and net Top-51 effect of the class is in the [cap worksheet](../../2014/finances/salary_cap/cap_worksheet.md). [The draft record](../../2014/draft/draftees.md) owns the selections and [the draft ownership record](../../2014/draft/draft_order.md) the picks. Overall numbers include the 32 compensatory picks announced March 24, 2014; Jacksonville received none.
+All nine selections were exercised May 8 to 10 and signed May 11, 2014; no 2014 selection right remains. Each rookie contract is in the position tables above and in its individual sheet, and the gross and net Top-51 effect of the class is in the [cap worksheet](../../2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md). [The draft record](../../2014/03_Draft/draftees.md) owns the selections and [the draft ownership record](../../2014/03_Draft/draft_order.md) the picks. Overall numbers include the 32 compensatory picks announced March 24, 2014; Jacksonville received none.
 
 ## Decision calendar
 
@@ -732,4 +732,4 @@ No scenario is active. If requested, show only a clearly labeled cap calculation
 
 ## Maintenance
 
-Update the event ledger, current contract owner and all remaining annual inputs together. A new contract replaces affected existing years; a release retains surviving bonus and guarantee charges. Preserve completed-year history. Run the generator and its check mode after every financial change. [Maintenance instructions](../README.md) give the editable input path and commands.
+Update the dated transaction record, current contract owner and all remaining annual inputs together, then regenerate the annual Record.md index. A new contract replaces affected existing years; a release retains surviving bonus and guarantee charges. Preserve completed-year history. Run the generator and its check mode after every financial change. [Maintenance instructions](../README.md) give the editable input path and commands.

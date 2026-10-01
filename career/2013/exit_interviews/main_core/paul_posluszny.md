@@ -238,7 +238,7 @@ Evidence caveats: after camp, the weekly records evaluate the linebackers as a u
 - `career/2013/regular_season/week_14_houston_at_jacksonville/output.md` lines 29, 42-44, 69, 333
 - `career/2013/regular_season/week_15_buffalo_at_jacksonville/output.md` line 325; `week_16_tennessee_at_jacksonville/output.md` line 337; `week_17_jacksonville_at_indianapolis/output.md` line 334
 - `career/2013/postseason/week_18_jacksonville_at_kansas_city/output.md` line 346; `career/2013/postseason/week_19_jacksonville_at_tennessee/output.md` line 347
-- `career/2013/ledger.md` lines 886, 1346, 1425, 1840
+- [2013 St. Louis game report](../../regular_season/week_05_jacksonville_at_st_louis/output.md), [2013 Cleveland game report](../../regular_season/week_13_jacksonville_at_cleveland/output.md), [2013 Houston home game report](../../regular_season/week_14_houston_at_jacksonville/output.md), and [Super Bowl XLVIII report](../../league_results/week_21.md)
 - `career/2013/awards/season_honours.md` line 3 (honours drawn February 2, 2014; not used)
 - `career/2013/coaching_staff.md` lines 300-341 (Crennel), 363-390 (Bush)
 - `career/2013/offseason/the_prowl_program_identity.md` "Good. Better. Best.", "Know Your Job", "Earn Responsibility", "The Standard Goes Upward", "Medical Authority Is Not Coaching Authority", "Discipline Approach", "Stars and Veterans", "Asked About a Young Player Taking a Veteran's Job"

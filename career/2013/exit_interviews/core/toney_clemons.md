@@ -99,5 +99,5 @@ Voluntary; nothing is required before April 21 or in any voluntary phase, and de
 - `career/2013/offseason/the_prowl_program_identity.md` ("Earn Responsibility", "Football Mistake", "The Standard Goes Upward")
 - `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 7 and 10
 - `career/2013/coaching_staff.md` line 26 (Lowry directed the kicking game in 2013; use decisions within Stone's authority)
-- `career/2013/ledger.md` line 2148 (Entry 75: Lowry left on January 12, 2014 to become Atlanta's head coach; the special teams coordinator job is vacant and direction of the kicking game returns to Stone until it is filled)
-- `career/2013/ledger.md` line 755 (Blackmon's suspension took effect after Week 1)
+- [January coaching decisions](../../../2014/01_Early_Offseason/staff_changes/timeline.md) ([January coaching decisions](../../../2014/01_Early_Offseason/staff_changes/timeline.md): Lowry left on January 12, 2014 to become Atlanta's head coach; the special teams coordinator job is vacant and direction of the kicking game returns to Stone until it is filled)
+- [Blackmon suspension ruling](../../regular_season/week_02_jacksonville_at_oakland/output.md) (Blackmon's suspension took effect after Week 1)

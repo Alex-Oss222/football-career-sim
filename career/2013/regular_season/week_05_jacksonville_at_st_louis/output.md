@@ -272,7 +272,7 @@ Jacksonville pulled within two with 8:52 left: after a St. Louis punt, Shorts ca
 - Paul Posluszny: 12 tackles and a tackle for loss in his return.
 - Sen'Derrick Marks: 11 tackles.
 
-**Material game-management decisions:** None was entered by Stone. The game ran in autonomous management mode, as in Weeks 1 to 4, and that includes the punt with 1:56 left while trailing by two. Kernel 2013.6 makes no score-dependent fourth-down choice, a gap first recorded in Entry 41. Stone owns the decision publicly.
+**Material game-management decisions:** None was entered by Stone. The game ran in autonomous management mode, as in Weeks 1 to 4, and that includes the punt with 1:56 left while trailing by two. Kernel 2013.6 makes no score-dependent fourth-down choice, a gap first recorded in [2013 St. Louis game report](output.md). Stone owns the decision publicly.
 
 **Injuries / availability from the game:**
 - Adam Thielen: upper extremity, out, projected return 3 days (October 9), before the Denver game.
@@ -374,10 +374,12 @@ St. Louis generated no injury.
 **Division / conference position:** First in the AFC South on a three-way 3-2 tie with Tennessee and Indianapolis (Jacksonville over Tennessee on conference record); second in the AFC, the second seed if the season ended today. See [standings](../../standings.md).
 **Statbook:** Through Week 5; 77 of 77 game receipts; coverage complete; leaders published.
 **Engine findings (the result stands; not grounds to rerun):**
-- **The safety.** Jacksonville's possession after St. Louis's fourth-quarter touchdown began with a touchback, lost 13 yards on two runs and is recorded as a safety. From the 20 that cannot reach the end zone. Kernel 2013.6 resamples real 2012 drives and publishes no field position, so it does not tie a drive to where the kick left the ball (Entry 39, deliberately not fixed). The safety's two points are the final margin.
+- **The safety.** Jacksonville's possession after St. Louis's fourth-quarter touchdown began with a touchback, lost 13 yards on two runs and is recorded as a safety. From the 20 that cannot reach the end zone. Kernel 2013.6 resamples real 2012 drives and publishes no field position, so it does not tie a drive to where the kick left the ball ([kernel 2013.6 correction](../../../../runtime/README.md), deliberately not fixed). The safety's two points are the final margin.
 - **The one-yard touchdown.** Jacksonville's fourth-quarter possession gained one net yard and scored, after a 34-yard St. Louis punt with no return. The engine records nothing that places the ball there.
 - **Play-call labels.** The kernel assigns a call label to each snap uniformly from the sheet's calls of that type, regardless of the ball carrier. The ledger therefore shows five snaps labelled 11 Trey Right, Jet L, two of them Cousins runs. That is not Stone's single planned Jet handoff, and the play-call page should be read that way.
 - **Band audit.** The 2013.6 cohort flags field-goal accuracy under 30 yards as OUTSIDE: 26 of 30 against the 2012 rate of 231 of 239. It was investigated. The code applies the sourced rate correctly, and a result this low has about a 1.7% probability at that sample size, among some forty graded rows. No defect was found. Every other graded row is WITHIN and every ledger-coherence count is zero.
 
-**Ledger entry:** Entry 41 (Week 5).
+**Game record:** [2013 St. Louis game report](output.md) (Week 5).
 **Next event:** Week 6 at Denver Broncos, Sunday, October 13, 4:05 p.m. ET.
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - October 6, 2013 - Week 5 at St. Louis closed", "original_close": "Commit closed - Canonical update - October 6, 2013 - Week 5 at St. Louis closed - canonical through October 6, after Week 5", "sequence": 41, "through": "2013-10-06"}, "date": "2013-10-06", "id": "2013-10-06-week-5-closed", "status": "closed", "summary": "Jacksonville lost 24-26 at St. Louis."} -->

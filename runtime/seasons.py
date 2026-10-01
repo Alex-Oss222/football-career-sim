@@ -45,6 +45,10 @@ class SeasonPaths:
         return self.career / season_relative(self.year, relative)
 
     @property
+    def calendar(self): return self.record('calendar.md')
+    @property
+    def annual_record(self): return self.record('record.md')
+    @property
     def stats(self): return self.record('stats')
     @property
     def receipts(self): return self.stats / 'game_receipts'
@@ -83,8 +87,12 @@ class SeasonPaths:
         if type(week) is not int or not 1 <= week <= (21 if self.year < 2021 else 22):
             raise ValueError('Invalid week')
         parent = self.postseason if postseason else self.regular_season
-        matches = sorted(p for p in parent.glob('week_%02d*' % week) if p.is_dir())
-        return matches[0] if matches else parent / ('week_%02d' % week)
+        prefixes = ('week_%02d' % week, 'Week_%02d' % week)
+        matches = sorted(p for prefix in prefixes for p in parent.glob(prefix+'*') if p.is_dir())
+        if len(matches) > 1:
+            raise ValueError('Multiple output folders for week %d' % week)
+        prefix = prefixes[0] if self.year < 2014 or postseason else prefixes[1]
+        return matches[0] if matches else parent / prefix
 
     def paused_game(self, week, postseason=False, preseason=False):
         """Kernel 2014.4 E2: the protagonist game's paused partial record.
@@ -114,7 +122,7 @@ class SeasonPaths:
     def preseason_folder(self, game):
         if type(game) is not int or not 1 <= game <= 5:
             raise ValueError('Invalid preseason game number')
-        return self.preseason_games_dir / ('game_%02d' % game)
+        return self.record('preseason/game_%02d' % game)
 
     def preseason_cache(self, game, kind):
         if type(game) is not int or not 1 <= game <= 5 or kind not in ('inputs', 'results'):

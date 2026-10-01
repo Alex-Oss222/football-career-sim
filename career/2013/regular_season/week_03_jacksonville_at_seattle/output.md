@@ -332,5 +332,7 @@ Seattle did not sack Cousins. Jacksonville faced 11 third downs and converted fi
 **Record after game:** 2-1-0
 **Division / conference position:** Third in the AFC South (Tennessee, Indianapolis and Jacksonville 2-1, Houston 1-2; Tennessee first on division record, Indianapolis over Jacksonville on record in common games); ninth in the AFC, out of the field. See [standings](../../standings.md).
 **Statbook:** Through Week 3; 48 of 48 game receipts; coverage complete; leaders published.
-**Ledger entry:** Entry 38 (Week 3).
+**Game record:** [2013 Seattle game report](output.md) (Week 3).
 **Next event:** Week 4 vs Indianapolis Colts, Sunday, September 29, 1 p.m. ET.
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - September 22, 2013 - Week 3 at Seattle closed", "original_close": "Commit closed - Canonical update - September 22, 2013 - Week 3 at Seattle closed - canonical through September 22, after Week 3", "sequence": 38, "through": "2013-09-22"}, "date": "2013-09-22", "id": "2013-09-22-week-3-closed", "status": "closed", "summary": "Jacksonville 16, Seattle 13."} -->

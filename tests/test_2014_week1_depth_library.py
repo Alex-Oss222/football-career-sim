@@ -17,7 +17,7 @@ from scripts.check_week_input_exclusivity import controlled_players_from_roster,
 
 ROOT = Path(__file__).resolve().parents[1]
 LIBRARY = ROOT / "library/data/2014_week1_depth_charts.json"
-ROSTER = ROOT / "career/2014/team/roster/roster.md"
+ROSTER = ROOT / 'career/2014/00_Team_Operations/Team/Roster/roster.md'
 GROUPS = {"QB", "RB", "FB", "WR", "TE", "OL", "DL", "LB", "DB", "K", "P", "LS"}
 DEPTH_REQUIRED = ("QB", "RB", "WR", "TE")
 

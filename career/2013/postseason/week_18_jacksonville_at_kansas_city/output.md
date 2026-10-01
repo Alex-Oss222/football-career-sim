@@ -293,7 +293,7 @@ Start and end are field positions for the offense; a punt, field-goal or downs r
 - Russell Allen: interception and 9 tackles. Bacarri Rambo: goal-line interception.
 - Daryl Smith: 14 tackles and a sack.
 
-**Material game-management decisions:** None was entered by Stone (autonomous mode). The one fourth-down decision was Scobee's 22-yard field goal from the 4 at 38-7 late in the third quarter. The end-game check ran at 3:41 with a 24-point lead. The possession ended in three kneel-downs, drawn from the real 2012 drive for that score-and-time cell, so the check changed nothing mechanically. The engine still does not model timeouts or kneel-downs snap by snap (Entry 60).
+**Material game-management decisions:** None was entered by Stone (autonomous mode). The one fourth-down decision was Scobee's 22-yard field goal from the 4 at 38-7 late in the third quarter. The end-game check ran at 3:41 with a 24-point lead. The possession ended in three kneel-downs, drawn from the real 2012 drive for that score-and-time cell, so the check changed nothing mechanically. The engine still does not model timeouts or kneel-downs snap by snap ([2013 Indianapolis away game report](../../regular_season/week_17_jacksonville_at_indianapolis/output.md)).
 
 **Injuries / availability from the game:**
 - **Montell Owens:** out, lower extremity, minor; projected return January 5, 2014.
@@ -354,7 +354,9 @@ Start and end are field positions for the offense; a punt, field-goal or downs r
 **Record:** 10-6-0 regular season; 1-0 postseason.
 **Position:** Advances to the AFC Divisional round at Tennessee. See the [bracket](../README.md).
 **Receipts:** Four Wild Card receipts in `career/2013/stats/postseason_receipts/` (Jacksonville full, others compact_stats). Standings, the regular-season statbook and the calibration audit are regular-season views and unchanged.
-**League awards:** none drawn; there are no postseason weekly awards (Entry 61).
+**League awards:** none drawn; there are no postseason weekly awards ([2013 playoff bracket](../README.md)).
 **Engine notes:** none new. The known limits (fourth-down display, timeouts and kneel-downs, neutral-site home term) are unchanged and did not bear on the result.
 
-**Ledger entry:** Entry 62. **Next event:** AFC Divisional at Tennessee, January 11, 2014. **Not simulated.**
+**Next event:** AFC Divisional at Tennessee, January 11, 2014. **Not simulated.**
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - January 5, 2014 - AFC Wild Card at Kansas City closed", "original_close": "Commit closed - Canonical update - January 5, 2014 - AFC Wild Card at Kansas City closed - canonical through January 5, 2014, after the Wild Card round", "sequence": 62, "through": "2014-01-05"}, "date": "2014-01-04", "id": "2014-01-04-afc-wild-card-at-kansas-city-closed", "season": 2013, "status": "closed", "summary": "Jacksonville won 38-14 at Kansas City in the Wild Card round."} -->

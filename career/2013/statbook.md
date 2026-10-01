@@ -12,7 +12,7 @@ The front door for season statistics and standings. Every page below is generate
 | [All players by club](stats/all_player_stats.md) | Club, then position, then player |
 | [League leaders](stats/league_leaders.md) | Leaders within each position, qualified passer-rate leaders and leaders across positions |
 | [Team stats](stats/team_stats.md) | Per-game offense, defense and special teams for every club |
-| [Stone play-call stats](stats/play_call_stats.md) | Named-call labels on Jacksonville snaps (Weeks 1-8 labels are drawn per run/pass type, not carrier-true; Entry 41) |
+| [Stone play-call stats](stats/play_call_stats.md) | Named-call labels on Jacksonville snaps (Weeks 1-8 labels are drawn per run/pass type, not carrier-true; [2013 St. Louis game report](regular_season/week_05_jacksonville_at_st_louis/output.md)) |
 | [Band audit](stats/calibration_audit.md) | League receipts against the sourced 2012 position and volume shapes |
 | [Statbook rules](stats/README.md) | Columns, qualifiers, receipt rules and rebuild commands |
 
@@ -31,7 +31,7 @@ python scripts/render_standings.py 2013
 
 ## Snap ledger
 
-Every Jacksonville receipt stores the complete public `play_ledger`: each scrimmage snap with its named call, and each scoring or special-teams terminal play. The play-call page, including its explosive (20+ yard) and negative-play counts, is derived from those snap records. The ledger records play type, gain, participants and clock; it does not record down, distance or field position, so red-zone and down-and-distance splits are not generated. Through Week 8 (kernels 2013.4-2013.6) each snap's call label is drawn from the sheet's calls of that run/pass type, independent of the ball carrier (Entry 41), so the play-call page shows label assignment, not Stone's call frequencies.
+Every Jacksonville receipt stores the complete public `play_ledger`: each scrimmage snap with its named call, and each scoring or special-teams terminal play. The play-call page, including its explosive (20+ yard) and negative-play counts, is derived from those snap records. The ledger records play type, gain, participants and clock; it does not record down, distance or field position, so red-zone and down-and-distance splits are not generated. Through Week 8 (kernels 2013.4-2013.6) each snap's call label is drawn from the sheet's calls of that run/pass type, independent of the ball carrier ([2013 St. Louis game report](regular_season/week_05_jacksonville_at_st_louis/output.md)), so the play-call page shows label assignment, not Stone's call frequencies.
 
 ## Player attribution (kernel 2013.4 onward)
 

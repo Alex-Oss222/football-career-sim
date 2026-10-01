@@ -1,9 +1,9 @@
-<!-- sim-meta: {"event_entry": 14, "kind": "evidence_summary", "source": "career/2013/offseason/otas/output.md", "source_sha256": "27c0f0095a9fa81abcc478563e26fb5d10af0da6dd2410e6ae35c30cd428b8cb", "status": "COMPLETE", "through": "2013-06-07"} -->
+<!-- sim-meta: {"event_ref": "2013-06-04-june-4-7-ota-block-3-and-ota-phase-closed", "kind": "evidence_summary", "source": "career/2013/offseason/otas/output.md", "source_sha256": "9f0e61397bafc72794a11dd0a55169d81970ebca5ca76e080fabb95751019231", "status": "COMPLETE", "through": "2013-06-07"} -->
 
 # OTA standouts and open teaching points
 
 **Status:** COMPLETE, evidence through June 7, 2013.
-**Source:** [OTA output](output.md). This is an evidence summary, not a second event ledger or permanent depth chart.
+**Source:** [OTA output](output.md). This is an evidence summary, not a second event history or permanent depth chart.
 
 | Player/unit | Closed OTA evidence | Carry-forward |
 |---|---|---|

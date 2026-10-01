@@ -82,7 +82,7 @@ Voluntary. Jacksonville's offseason program may begin no earlier than April 21; 
 - `career/2014/finances/player_contracts/contract_status.md` line 88; `state/04_Roster_and_Staff_Register.md` line 210; `career/2013/roster.md` line 84; `career/2013/depth_chart.json` (OL order)
 - `career/2013/offseason/initial_roster.md` line 64
 - `career/2013/preseason/game_2_jacksonville_at_ny_jets/output.md` lines 4-5, 15; `preseason/game_3_philadelphia_at_jacksonville/output.md` line 15 (automated attribution); `career/2013/offseason/training_camp/standouts.md` line 16
-- `career/2013/ledger.md` lines 631, 774 (Weeks 1 and 2 inactives)
+- [superseded Week 1 record](../../migrations/week_01_full_fidelity_reset.md) and [2013 Oakland game report](../../regular_season/week_02_jacksonville_at_oakland/output.md) (Weeks 1 and 2 inactives)
 - `career/2013/regular_season/week_03_jacksonville_at_seattle/output.md` lines 31, 33, 39, 265-267, 279
 - `career/2013/regular_season/week_04_indianapolis_at_jacksonville/output.md` lines 31, 33, 39, 310
 - `career/2013/regular_season/week_05_jacksonville_at_st_louis/output.md` lines 35, 52, 330

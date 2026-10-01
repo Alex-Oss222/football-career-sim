@@ -4,7 +4,12 @@ Use the [report instructions](README.md) and [assessment method](player_assessme
 
 ## Report to render
 
-# [Team] | Training camp | [Dates or practice block]
+# Training camp | [Team] | [Season]
+
+**Location:** [Recorded facility or field]  
+**Dates:** [Reporting dates and practice block covered]  
+**Practices completed:** [Actual days in this block, distinguishing padded and non-contact work]  
+**Work addressed:** [Installed jobs, combinations and situations being checked]
 
 [Lead with the most useful football finding and the main unfinished question. State the stage of camp and contact level. Mention reporting, physical readiness and material participation changes briefly when they matter. Separate medical clearance from conditioning readiness. Report a coach's fitness result only if it was actually recorded.]
 
@@ -22,7 +27,7 @@ Use the [report instructions](README.md) and [assessment method](player_assessme
 
 ## Players and combinations
 
-[Compare the open jobs from meaningful opportunities, including reserves and newcomers. Who played beside and against whom? What did changing a guard, communicator, receiver alignment or defensive package reveal? Explain scheme fit as a job the player can perform, not a generic versatility label. Include an established player's continuing work. Use a compact table only when it makes several comparisons clearer. Keep staff recommendations separate from Stone's actual role decisions.]
+[Compare the open jobs from meaningful opportunities, including reserves and newcomers. Who played beside and against whom? What did changing a guard, communicator, receiver alignment or defensive package reveal? Explain scheme fit as a job the player can perform, not a generic versatility label. Include an established player's continuing work. Use a compact table only when it makes several comparisons clearer. Keep staff recommendations separate from Stone's actual role decisions. Link the existing battle card when this block changes its evidence or next test; do not create a new full player assessment.]
 
 ## What the staff takes into the next practice
 

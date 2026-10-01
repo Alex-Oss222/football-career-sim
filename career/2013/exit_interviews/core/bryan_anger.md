@@ -1,6 +1,6 @@
 # Bryan Anger, P: exit interview
 
-**Date:** Tuesday January 14, 2014. **Present:** Alex Stone. Alan Lowry, the special teams coordinator who directed the kicking game in 2013, left on January 12 to become Atlanta's head coach and was not present (ledger Entry 75); the coordinator job is vacant, and Stone directs the kicking game until it is filled.
+**Date:** Tuesday January 14, 2014. **Present:** Alex Stone. Alan Lowry, the special teams coordinator who directed the kicking game in 2013, left on January 12 to become Atlanta's head coach and was not present ([January coaching decisions](../../../2014/01_Early_Offseason/staff_changes/timeline.md)); the coordinator job is vacant, and Stone directs the kicking game until it is filled.
 **Status going in:** Punter all season; the specialists are Scobee, Anger and Cain. Dressed for all 16 regular-season games and both playoff games. Active 53; available, no communicated restriction; his exit physical is with the medical staff today, and no finding from it is recorded here. Contract: 2012 third-round four-year rookie contract, final year 2015; under contract; 1 accrued season, with 2013 accruing in the branch (contract status register: Confirmed). Age 25 (born October 6, 1988).
 
 ## The season in the record
@@ -95,7 +95,7 @@ All voluntary. Jacksonville's 2014 offseason program may begin no earlier than A
 - `career/2014/finances/player_contracts/contract_status.md` lines 15, 103; `career/2013/roster.md` line 143; `state/04_Roster_and_Staff_Register.md` line 239; `state/05_Current_Season_State.md` line 59; `career/2013/depth_chart.json` lines 17, 75
 - `career/2013/offseason/initial_roster.md` line 95; `career/2013/offseason/otas/output.md` line 198; `career/2013/offseason/training_camp/output.md` lines 35, 79
 - `career/2013/regular_season/week_01_kansas_city_at_jacksonville/output.md` lines 327, 328; LS / operation rows, Weeks 2 to 8 (`week_02` line 332 through `week_08` line 369); `week_02_jacksonville_at_oakland/output.md` lines 293, 331; `week_05_jacksonville_at_st_louis/output.md` lines 275, 313, 352, 356; `week_06_jacksonville_at_denver/output.md` lines 341, 345; `week_08_san_francisco_at_jacksonville/output.md` line 368
-- `career/2013/regular_season/week_10_jacksonville_at_tennessee/output.md` line 370; `week_12_jacksonville_at_houston/output.md` lines 63, 65, 302, 321; `week_12_jacksonville_at_houston/houston_rematch_notes.md` lines 20-25; `career/2013/ledger.md` line 1297
+- `career/2013/regular_season/week_10_jacksonville_at_tennessee/output.md` line 370; `week_12_jacksonville_at_houston/output.md` lines 63, 65, 302, 321; `week_12_jacksonville_at_houston/houston_rematch_notes.md` lines 20-25; [2013 Houston away game report](../../regular_season/week_12_jacksonville_at_houston/output.md)
 - `career/2013/regular_season/week_13_jacksonville_at_cleveland/output.md` line 347; `week_14_houston_at_jacksonville/output.md` lines 33, 62, 310, 331
 - `career/2013/regular_season/week_17_jacksonville_at_indianapolis/output.md` lines 68, 291, 318, 336, 346
 - `career/2013/postseason/week_18_jacksonville_at_kansas_city/output.md` lines 71, 348; `career/2013/postseason/week_19_jacksonville_at_tennessee/output.md` lines 69, 71, 73, 75, 302, 314, 349
@@ -104,4 +104,4 @@ All voluntary. Jacksonville's 2014 offseason program may begin no earlier than A
 - `career/2013/exit_interviews/core/josh_scobee.md` lines 54, 78, 84
 - `career/2013/offseason/the_prowl_program_identity.md` ("Good. Better. Best.", "Tell the Truth Quickly", "Confidential Support Is Not Personnel Scouting"); `career/2013/offseason/player_onboarding_and_development_framework.md` section 2; `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 7 and 10
 - `career/2014/calendar.md` line 31
-- `career/2013/ledger.md` Entry 75; `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
+- [January coaching decisions](../../../2014/01_Early_Offseason/staff_changes/timeline.md); `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)

@@ -16,7 +16,7 @@
 
 ## 0. Why this document exists, and why it is not a rebuild
 
-Documents 1 through 6 were modeled on a separate legal-simulation project's document architecture: stable rules, a world/era sourcebook, a protagonist canon, a live-state register, a current snapshot, and an append-only event ledger, all governed by an evidence-labeling system and an atomic staged-commit protocol. That shape is not wrong for this project. Re-reading all six documents in full turned up a large amount of already-built, directly reusable machinery for a live, turn-by-turn simulation:
+Documents 1 through 6 were modeled on a separate legal-simulation project's document architecture: stable rules, a world/era sourcebook, a protagonist canon, a live-state register, a current snapshot, and dated domain event records, all governed by an evidence-labeling system and an atomic staged-commit protocol. That shape is not wrong for this project. Re-reading all six documents in full turned up a large amount of already-built, directly reusable machinery for a live, turn-by-turn simulation:
 
 - Document 1 §3 already separates user-controlled decisions from routine implementation the simulator may carry out on its own.
 - Document 1 §7 already defines a layered fog-of-war so the coach only ever learns what a plausible in-world channel would tell him.
@@ -44,7 +44,7 @@ To compare a pass offense to a pass defense, weight a fourth-and-two, or decide 
 1. The protagonist's own games, and marquee/rivalry/postseason games leaguewide, resolve at full per-drive granularity (§3-§5), narrated in full.
 2. Every other background game resolves through the *same* mechanism, sampled at a coarser granularity (whole-game or a small number of aggregated segments rather than per-drive) to control cost, then narrated in 2-4 sentences of highlights rather than a full account. The final score, box-score topline, and standout performers still come from an actual sampled run of the real mechanism — never from a beat-writer's free-form judgment call about who should plausibly win.
 
-Both paths write to the same schedule/results register in Document 6; a background game's coarser narration is never mentioned to the user as lower-fidelity, and — per §9.1 below — it is never lower-*integrity*: the same causal facts (unit quality, matchup, health, prior form) produce the same distribution regardless of whether the two teams on the field are being fully narrated or compressed to a highlight line.
+Both paths write canonical game receipts and their appropriate game/result owners under Document 6; a background game's coarser narration is never mentioned to the user as lower-fidelity, and — per §9.1 below — it is never lower-*integrity*: the same causal facts (unit quality, matchup, health, prior form) produce the same distribution regardless of whether the two teams on the field are being fully narrated or compressed to a highlight line.
 
 **Delegated to Codex once runtime-ready.** Per the repo's `AGENTS.md`, background-league weeks may be run as a separate batch task only after this document is runtime-ready, §8 is calibrated for the active season, and the private Engine State store has been instantiated. Until then, the background-league task must stop without generating scores. Once enabled, Codex's task must actually execute the coarse-granularity version of the real mechanism (§2's anchors, §3.2's deltas, §3.4's seeded draw) and narrate only the result — never substitute its own narrative judgment for the sampling step, however plausible-sounding the shortcut seems. Highlights only in the writeup (final score, 2-4 sentences, standout performers, never play-by-play), written to `career/[year]/league_results/week_[NN].md`. Reactive events (a trade demand, a coaching hot seat) are allowed but must fire from an already-logged mechanical trigger, never manufactured to fill a quiet week, per §7's Locker Room/Media agent rule below — this is a hard bound on frequency, not a ban on the events themselves; the user has explicitly said unpredictable, consequential events are welcome as long as they're not happening to someone every single week.
 
@@ -130,7 +130,7 @@ The repository's [playbook index](../career/playbook/README.md) controls the act
 
 For a named in-game call, look up the relevant entry in the active book. Use its concrete concept, assignments, personnel and intended stresses as matchup inputs. Design annotations, expected yards, preset usage percentages and persuasive wording never determine an outcome or override the shared kernel. Practice installation and player study access follow AGENTS.md and the phase plans. The DC calls the defense; author credit in the defensive book does not change operational authority.
 
-Record an actual iteration transition in the season ledger on its effective date. A replay uses the iteration and installed menu effective at that event, not a later book. The governing no-hindsight, no-quota and user-control rules override incompatible embedded design notes.
+Record an actual iteration transition in the annual event record on its effective date. A replay uses the iteration and installed menu effective at that event, not a later book. The governing no-hindsight, no-quota and user-control rules override incompatible embedded design notes.
 
 ### 3.8 Canonical snap ledger, full player stats, and named-call accounting
 
@@ -146,7 +146,7 @@ Kernel 2013.3 added, and kernel 2013.4 keeps, a public post-resolution detail la
 
 ### 3.9 Depth-chart attribution, drive volume and statistical bands (kernel 2013.4)
 
-Added September 27, 2026 after an audit of the Week 1 receipts found backups sharing quarterback snaps, receivers taking about a third of carries, linebackers nearly absent from tackles, no assisted tackles and about 30 percent too many plays. Week 1 was voided and replays under this kernel (Document 6, 2013 ledger Entry 34).
+Added September 27, 2026 after an audit of the Week 1 receipts found backups sharing quarterback snaps, receivers taking about a third of carries, linebackers nearly absent from tackles, no assisted tackles and about 30 percent too many plays. Week 1 was voided and replays under this kernel (Document 6, 2013 [Week 1 kernel restart](../career/2013/migrations/week_01_kernel_2013_4_restart.md)).
 
 1. **Who gets the ball follows the club's depth chart.** Each TeamInput carries explicit `depth` order. The kernel gives one passer the whole game, then distributes carries, targets, tackles, sacks, interceptions and passes defended by position-group share and by usage rank within the group, using the two-source 2012 play-by-play baseline in [library/2012_position_usage_calibration.md](../library/2012_position_usage_calibration.md). Depth order, roles and availability are coach and medical inputs; the shapes never create a Jacksonville touch quota, rate a player or decide a depth-chart battle (AGENTS.md no-percentage rule).
 2. **Tackles are solo or assisted, and runs can lose yardage,** at the sourced 2012 rates, and every drive total still reconciles exactly.
@@ -270,7 +270,7 @@ Only these pointers are added; no existing rule in Documents 1-6 is changed:
 
 - Document 1 §2 (Initialization gate), item 6, "Game granularity and career/off-field detail level," now also requires this document's §11 decisions to be resolved.
 - Document 3 §12 (Initialization gate) gains a line: "Document 7 (Game Simulation and Resolution Engine) reconciled and locked."
-- Document 6 §6 (game ledger format) is the ledger this engine's outputs are written into; no change to its schema was needed.
+- Document 6 Section 6 governs game event records; outputs remain in their actual game and receipt owners. The annual record contains only a dated result link.
 
 ## 10. What this document deliberately does not change
 
@@ -292,7 +292,7 @@ Resolved 2026-09-17, mirroring the SCOTUS project's proven layout at the user's 
 
 - **`foundation/`** — the stable rulebook: Documents 01, 02, 03, 06, 07, and `foundation/templates/` (three output templates: pre-hire search, in-season, offseason). Never holds a dated instance record.
 - **`state/`** — the always-current, in-place-updated snapshot: Documents 04 (Roster and Staff Register) and 05 (Current Season State). Rewritten as events happen, per §6.3; never append-only.
-- **`career/`** — the actual played history, one folder per season, created only once a season is reached in play. See `career/README.md` for the exact per-season layout (preseason, regular-season weeks, postseason rounds, offseason draft/free-agency records, and that season's slice of the Document 6 ledger).
+- **`career/`** — the actual played history, one folder per season, created only once a season is reached in play. See `career/README.md` for the exact per-season layout (preseason, regular-season weeks, postseason rounds, offseason draft/free-agency records, and that season's domain event records and one-line annual index).
 - **`archive/`** — superseded, quarantined, and historical audit material kept for reference only, never active canon. The rebuild audit lives here rather than in the runtime rulebook. See `archive/README.md`.
 - **`library/`** — supporting reference material that is not itself canonical authority: sourced era research, clean runtime views, quarantined actual-future comparators, and non-authoritative character reference. Runtime tasks must read only the files explicitly permitted for their phase. For the 2013 hiring search, use `library/2013_coaching_market_pre_hire.md`. The hindsight comparator is stored in `archive/2013_coaching_market_historical_comparator.md` and is not a runtime source. Load-bearing rules still belong in Document 2.
 

@@ -170,8 +170,10 @@ class CoachRecordTests(unittest.TestCase):
             self.assertIn("| Against Chiefs | 0-0-1 | 0-0-1 |", text)
 
     def test_career_start_is_the_recorded_hire_date(self):
-        ledger = (ROOT / "career/2013/ledger.md").read_text(encoding="utf-8")
-        self.assertIn("January 15, 2013 (accepted hire)", ledger)
+        from runtime.events import load_events
+        hire = load_events(ROOT)["2013-01-15-pre-hire-search-closure"]
+        self.assertEqual(hire.owner, "career/2013/offseason/hiring_search.md")
+        self.assertEqual(dt.date.fromisoformat(hire.data["date"]), render_coach_record.CAREER_START)
         self.assertEqual(render_coach_record.CAREER_START, dt.date(2013, 1, 15))
         self.assertEqual(render_coach_record.days_since_start(dt.date(2013, 1, 15)), 0)
         self.assertEqual(render_coach_record.days_since_start(dt.date(2014, 9, 7)), 600)

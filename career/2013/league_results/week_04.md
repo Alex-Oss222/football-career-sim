@@ -1,6 +1,6 @@
 # 2013 Week 4 league results
 
-**Events:** `2013-week04-<away>-at-<home>`, kernel 2013.6 (ledger Entry 39), closed once each through the private production runner.
+**Events:** `2013-week04-<away>-at-<home>`, kernel 2013.6 ([kernel 2013.6 correction](../../../runtime/README.md)), closed once each through the private production runner.
 **Inputs:** background clubs carried forward from the [Week 1 depth-chart library](../../../library/2013_week1_depth_charts.md) with branch injuries applied, each dressing up to 46 players chosen by depth order (fewer when too few are available: the Jets dressed 43 or 44 in Weeks 3-5); every club at the Average low-confidence unit anchor.
 **Receipts:** `../stats/game_receipts/week_04_*.json`. **Standings:** [../standings.md](../standings.md), generated from the receipts.
 **Byes:** Carolina Panthers, Green Bay Packers.

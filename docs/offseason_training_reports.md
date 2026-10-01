@@ -2,11 +2,11 @@
 
 The same work now extends through [training camp and preseason](camp_and_preseason_reports.md), including Stone's camp philosophy, the active playbooks' assessment questions and reusable camp, game and consolidated-review formats.
 
-Prepared September 30, 2026 for the user's request to rewrite the 2014 spring reports and establish reusable examples. This is report-design research, not a simulated event. The career remains at its existing July 29, 2014 checkpoint.
+Prepared September 30, 2026 for the user's request to rewrite the 2014 spring reports and establish reusable examples. This is report-design research, not a simulated event. This document does not advance the career or supply practice outcomes.
 
 ## What the old reports got right and what needed changing
 
-The four reports already contained useful football: formation changes, protection calls, route spacing, coverage exchanges, coaching corrections and later checks. Their weakness was presentation. Repeated control, legal, meeting-duration, badge and receipt language competed with the account of training. Repeated tables made distinct practices sound like the same evaluation form. The generic offseason turn template also led with job status, finances and acquisition boards, which are the wrong opening for a practice review.
+The original reports already contained useful football: formation changes, protection calls, route spacing, coverage exchanges, coaching corrections and later checks. Their weakness was presentation. Repeated control, legal, meeting-duration, badge and receipt language competed with the account of training. Repeated tables made distinct practices sound like the same evaluation form. The generic offseason turn template also led with job status, finances and acquisition boards, which are the wrong opening for a practice review.
 
 The change makes the football account the opening report in each existing `training_report.md`. It explains the assignment, the observed performance, the coach's response and the remaining work. The existing detailed record stays expandable beneath it, with its original headings, metadata, individual observations and decisions preserved. This retains the evidence behind player profiles and links without making the reader work through the administrative record first. No past practice was rerun and no outcome was supplied to make a better story.
 
@@ -34,7 +34,7 @@ The episode account is dated after the career's current checkpoint. It is author
 
 ## How the chat uses the templates
 
-The [template index](../foundation/templates/offseason_training/README.md) routes five distinct templates. It is linked from AGENTS.md, the general offseason template, the training workflow and all four spring folders. The general offseason template's existing season-closeout, finance, draft and free-agency sections remain available for those tasks; spring training uses the phase report instead.
+The [template index](../foundation/templates/offseason_training/README.md) routes five distinct templates. It is linked from AGENTS.md, the general offseason template, the training workflow and all five spring folders. The general offseason template's existing season-closeout, finance, draft and free-agency sections remain available for those tasks; spring training uses the phase report instead.
 
 For an existing report request, the LLM reads the phase's closed evidence and presents the opening football account. It uses the expandable record for player-specific follow-ups. For a request to run new work, it first follows the existing calendar, practice-resolution and decision rules, then writes the result using the matching template. Neither path gets to turn a plan into completed work. There is no application UI or new model endpoint to deploy in this repository; the chat behavior is controlled by the checked-in instructions and records.
 
@@ -58,9 +58,22 @@ The verification pass separately retrieved the original agreement and the Packer
 
 ## Examples now in the repository
 
-- [Phases One and Two](../career/2014/offseason_training/phases_one_and_two/training_report.md): inconsistent Boot Flood and protection cues are resolved in the room, then checked in movement; the bunch assignment is taught before facing receivers.
-- [Rookie minicamp](../career/2014/offseason_training/rookie_minicamp/training_report.md): split teaching, Shaw's launch point, Linsley's snap-to-set timing, shared fit instruction and the next work for the newcomers.
-- [OTAs](../career/2014/offseason_training/otas/training_report.md): the Poyer-Moore exchange, the late overload, Y-Cross spacing and later checks against the other unit.
-- [Mandatory minicamp](../career/2014/offseason_training/mandatory_minicamp/training_report.md): independent protection calls, the relief pairing, the linebacker/back matchup and the actual summer instructions.
+- [Phase One](../career/2014/02_Offseason_Training/Phase_One/training_report.md): inconsistent Boot Flood and protection cues are resolved in the room.
+- [Phase Two](../career/2014/02_Offseason_Training/Phase_Two/training_report.md): those answers are checked in movement; the bunch assignment is taught before facing receivers.
+- [Rookie minicamp](../career/2014/02_Offseason_Training/Rookie_Minicamp/training_report.md): split teaching, Shaw's launch point, Linsley's snap-to-set timing, shared fit instruction and the next work for the newcomers.
+- [OTAs](../career/2014/02_Offseason_Training/OTAs/training_report.md): the Poyer-Moore exchange, the late overload, Y-Cross spacing and later checks against the other unit.
+- [Mandatory minicamp](../career/2014/02_Offseason_Training/Mandatory_Minicamp/training_report.md): independent protection calls, the relief pairing, the linebacker/back matchup and the actual summer instructions.
 
-The existing summary receipts still cover the entire report, including the retained detail. Review each player assessment before refreshing that receipt. Repository validation checks links and continuity; a manual football review is still needed to judge whether the prose says only what the evidence supports.
+The report now owns its coaching findings and dated event reference together. Separate phase assessment summaries have been removed after checking their unique findings against the report. Repository validation checks links and continuity; football review still checks that the narrative does not claim more than the recorded work.
+
+## October 1 revision: one report per phase and two annual assessments
+
+Each output now starts with the phase, team, location, dates, actual completed days and teaching focus. Phase One and Phase Two have separate folders and reports; rookie minicamp remains its own overlapping May event. Unknown field detail stays unknown, rather than being supplied from a plausible facility name. The output is rendered directly in the LLM chatbox, not delivered as a link alone.
+
+The supplied development outline informs the coaching questions, but its repeated lists are not another form to complete for every player. Whole-player assessment occurs twice each year: an opening baseline, maintained with dated updates, and a separate final assessment after the season. Phase reports own the specific work; existing battle cards own the current comparisons. No phase produces another full roster of assessment files.
+
+Several football corrections matter. Spring physical one-on-one matchup conclusions belong in lawful padded work. The closed rookie report's old description of a physical press result is not supportable in its recorded unopposed setting; the release-plan correction remains, without a contact-win claim. Preseason games and practice answer different questions, so there is no universal rule that every game observation outweighs every practice. Development expectations depend on the player, the correction and the later response; the outline's illustrative weeks/months must not become fixed timers. The active-book job and actual taught menu control scheme evaluation; an archetype is a description, not a locked player identity.
+
+The outline's permission to use later real-life outcomes as private evidence is not adopted. Date-appropriate research and the actual career's evidence remain the basis for development. The outline guides reporting and coaching interpretation; it does not replace the existing resolution process or authorize the LLM to manufacture performance.
+
+Two contemporary coaching sources sharpen these instructions. [Sean Payton's June 10, 2014 minicamp transcript](https://www.neworleanssaints.com/news/sean-payton-talks-about-the-first-day-of-2014-minicamp-presented-by-ver-13119236) distinguishes spring learning and technique from padded evaluation, including young backs learning whom to protect before testing the block. [Bill Belichick's August 8, 2014 review](https://www.patriots.com/news/bill-belichick-transcript-i-m-looking-forward-to-this-week-200276) explains why a controlled practice can provide situations and combinations the game never presents. Both were read as written club transcripts, not watched film; neither source supplies Jacksonville player outcomes.

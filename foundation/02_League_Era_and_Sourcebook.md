@@ -6,12 +6,12 @@
 **Document version:** `1.0-JAX-2013-active`
 **Supersedes:** `0.6-authoring`, preserved outside runtime in the archive.
 **Last verified:** `2026-09-19`
-**Last Document 2 content-changing update:** Season-ledger Entry 13, administrative reconciliation without advancing simulation time.
+**Last Document 2 content-changing update:** Season-[May 23 continuity reconciliation](../docs/update_workflow.md), administrative reconciliation without advancing simulation time.
 **Applies from:** The established January 15, 2013 Jacksonville divergence; no new premise is adopted here.
 
 ## 1. Purpose and authority
 
-This file owns selected league, era, rules and source boundaries. Document 3 owns Stone's identity and authority; Document 4 owns current people; Document 5 owns the resume snapshot; season ledgers implement Document 6's append-only history. This file carries neither live roster/cap totals nor hidden engine state.
+This file owns selected league, era, rules and source boundaries. Document 3 owns Stone's identity and authority; Document 4 owns current people; Document 5 owns the resume snapshot; domain event records implement Document 6's append-only history. This file carries neither live roster/cap totals nor hidden engine state.
 
 The former authoring master contained unused league templates and an incompatible Detroit candidate. It is preserved in `archive/02_League_Era_and_Sourcebook_authoring_0.6.md` for paused audits only. Normal play must not load it. Unknown rules below stay unknown; the existence of an active edition is not a claim that the game engine is ready.
 
@@ -44,8 +44,8 @@ A source can verify that a real event happened. It cannot convert a post-diverge
 | Home venue | EverBank Field; the scheduled London game is a separate venue | Jacksonville master calendar |
 | Head coach | Alex-Lamar Stone, ordinarily Alex Stone | Document 3 and accepted contract |
 | Career premise | Counterfactual Stone career among real NFL organizations and players | User canon and closed hiring search |
-| Jacksonville divergence | January 15, 2013, Stone's accepted head-coach offer | Current register and hiring-search ledger |
-| Hiring prelude | January 2013 pre-hire search, retained as history | Hiring-search ledger |
+| Jacksonville divergence | January 15, 2013, Stone's accepted head-coach offer | Current register and hiring-search record |
+| Hiring prelude | January 2013 pre-hire search, retained as history | Hiring-search record |
 | Default game detail | Executive head-coach mode, subject to mandatory decision pauses | Document 7 §11, existing adopted default |
 | Off-field detail | Follow existing user instructions and decision scope; no new default invented | Documents 1 and 3 |
 | Current clock | Read Document 5; this sourcebook does not maintain a second clock | Current-season state |
@@ -56,11 +56,11 @@ An exact acceptance time and unrecorded preferences remain undetermined. Reconci
 
 ### 4.1 Binding baseline
 
-Use documented pre-divergence facts and user-approved Stone biography. After the divergence, the closed simulation ledgers control appointments, control rights, contracts, participation, health, performance and outcomes. Later real-world Jacksonville events do not overwrite them.
+Use documented pre-divergence facts and user-approved Stone biography. After the divergence, the closed domain records control appointments, control rights, contracts, participation, health, performance and outcomes. Later real-world Jacksonville events do not overwrite them.
 
 ### 4.2 Divergence register
 
-The accepted January 15 offer and its authority division are recorded in the hiring-search ledger and head-coach contract. Subsequent branch events and corrections live in the season ledger. This sourcebook does not maintain a competing event log.
+The accepted January 15 offer and its authority division are recorded in the hiring-search record and head-coach contract. Subsequent branch events and corrections live in their actual domain records; the annual record links to them. This sourcebook does not maintain a competing event log.
 
 ### 4.3 No hindsight
 
@@ -166,7 +166,7 @@ Never present a fictional management budget as a league salary cap. Never calcul
 
 ## 12. Draft, allocation and information timing
 
-The closed 2013 draft is history in [draftees](../career/2013/offseason/draft/draftees.md) and the season ledger. Preserve its recorded picks and transactions; this administrative correction does not rerun the draft. Future pick ownership follows branch trades, not real future transactions. Verify exact order, compensatory rules and tiebreaks before resolving another draft.
+The closed 2013 draft is history in [draftees](../career/2013/offseason/draft/draftees.md) and the annual event record. Preserve its recorded picks and transactions; this administrative correction does not rerun the draft. Future pick ownership follows branch trades, not real future transactions. Verify exact order, compensatory rules and tiebreaks before resolving another draft.
 
 ### Historical class sourcing, simulated order, and post-selection continuation
 
@@ -227,7 +227,7 @@ Use documented period conditions only when material. Do not infer a real person'
 | [Draft information gates](../library/2013_draft_information_gates.md) | Date eligibility for each class of prospect information |
 | [Draft pool registry](../library/2013_draft_pool_registry.md) | Contemporaneous eligibility coverage, not eventual draft destinations |
 | [2012 aggregate calibration research](../library/2012_game_calibration.md) | Preseason baseline research, explicit denominators and verification limitations |
-| [Season ledger](../career/2013/ledger.md) | Fictional branch events and corrections, not claims about real outcomes |
+| [2013 dated record](../career/2013/record.md) | Fictional branch events and corrections, not claims about real outcomes |
 
 Every new material research claim needs publisher/title, URL, publication or effective date, access date, applicability, supported proposition and limitation. Perform research and a separate skeptical verification pass. If independent confirmation fails, label that fact instead of silently treating it as confirmed.
 
@@ -237,4 +237,4 @@ Research when an unknown rule, date, contract term, legal mechanism or factual c
 
 ## 19. Contradictions and corrections
 
-Stop the affected action, identify incompatible claims, apply Document 1's authority order, append a correction in the season ledger, version affected owners and synchronize current views. The latest controlling sourcebook reconciliation is season-ledger Entry 13. Preserve dated earlier entries; do not silently rewrite historical facts or their original uncertainty.
+Stop the affected action, identify incompatible claims, apply Document 1's authority order, append a correction in the annual event record, version affected owners and synchronize current views. The latest controlling sourcebook reconciliation is source-event [May 23 continuity reconciliation](../docs/update_workflow.md). Preserve dated earlier entries; do not silently rewrite historical facts or their original uncertainty.

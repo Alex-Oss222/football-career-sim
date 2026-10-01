@@ -130,12 +130,14 @@ def load_results(season=2013):
 def render(season=2013):
     if season >= 2014:
         from scripts.render_award_pages import render_pages
+        from runtime.events import preserve_event_comments
         results = load_results(season)
         pages = render_pages(season, results, method(season) if results else None)
         for relative, text in pages.items():
             path = SeasonPaths(season, ROOT).awards / relative
             path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(text, encoding='utf-8')
+            previous = path.read_text(encoding='utf-8') if path.exists() else ''
+            path.write_text(preserve_event_comments(text, previous), encoding='utf-8')
         return
     m, results = method(season), load_results(season)
     lines = ["# %d league awards: weekly and monthly" % season, "",

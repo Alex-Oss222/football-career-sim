@@ -173,11 +173,11 @@ Evidence treatment:
 
 ## 8. Pre-draft market check (March 12-April 24 window) — resolved
 
-**Decision record:** The terms and uncertainty were frozen before the calls in career/2013/ledger.md, Entry 4. Sections 1–7 remain the ex-ante board. The Washington compensation below is corrected by the explicit user clarification in Entry 80; it must not be attributed to a negotiation or authorization that the old record never contained. These are branch outcomes, not claims about conversations that occurred in real life.
+**Decision record:** The terms and uncertainty were frozen before the calls in [April 24 draft decision record](../offseason/draft/player_draft_board.md). Sections 1–7 remain the ex-ante board. The Washington compensation below is corrected by the explicit user clarification in [Cousins trade correction](trades.md); it must not be attributed to a negotiation or authorization that the old record never contained. These are branch outcomes, not claims about conversations that occurred in real life.
 
 ### Washington — Kirk Cousins
 
-**Corrected completed deal (Entry 80):** Jacksonville receives Kirk Cousins **and Washington's original 2014 first** (branch No. 13); Washington receives Jacksonville's original **2014 and 2015 seconds**, unconditional. Jacksonville keeps its own 2014 first (No. 26) and all seven 2013 selections. The narrow user-directed ownership exception displaces the historical Rams claim to Washington's 2014 first; see trades.md and the verification source. No extra Rams trade is invented.
+**Corrected completed deal ([Cousins trade correction](trades.md)):** Jacksonville receives Kirk Cousins **and Washington's original 2014 first** (branch No. 13); Washington receives Jacksonville's original **2014 and 2015 seconds**, unconditional. Jacksonville keeps its own 2014 first (No. 26) and all seven 2013 selections. The narrow user-directed ownership exception displaces the historical Rams claim to Washington's 2014 first; see trades.md and the verification source. No extra Rams trade is invented.
 
 The original record's franchise-quarterback consultation and player-control outcome remain historical facts. No revised consultation or market response is fabricated to fit the compensation correction. **Current result: Cousins and Washington's 2014 first are Jacksonville property; both Jacksonville seconds (2014 and 2015) are Washington property.**
 

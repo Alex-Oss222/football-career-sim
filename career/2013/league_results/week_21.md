@@ -1,6 +1,6 @@
 # Super Bowl XLVIII league result (postseason week 21)
 
-**Event:** `2013-week21-minnesota-vikings-at-buffalo-bills`, kernel 2013.11 (ledger Entry 66: no home term at a neutral site), closed once through the private production runner as a `postseason` game at a neutral venue.
+**Event:** `2013-week21-minnesota-vikings-at-buffalo-bills`, kernel 2013.11 ([kernel 2013.11 neutral-site correction](../../../runtime/README.md): no home term at a neutral site), closed once through the private production runner as a `postseason` game at a neutral venue.
 **Inputs:** the same background TeamInput construction as the regular season (Week 1 depth-chart library with branch injuries applied; 46 dressed by depth order; Average low-confidence unit anchor). No Jacksonville-controlled player appeared (exclusivity gate READY). Pairing and slot from the [bracket](../postseason/README.md): the AFC champion is the designated home team.
 **Receipt:** `../stats/postseason_receipts/week_21_minnesota_vikings_at_buffalo_bills.json`.
 
@@ -18,7 +18,7 @@ Jeff Tuel, in his second postseason start in place of the injured E.J. Manuel, c
 
 **Standouts:** Aaron Williams and Leodis McKelvin (an interception each; McKelvin also returned four punts for 70 yards); Nigel Bradham (11 tackles, sack); Jeff Tuel (22-34, 225 yards, TD).
 
-**Engine note (ledger Entry 67).** With 51 seconds left in the half and the ball at the Minnesota 1, the engine drew a real 2012 end-of-half drive that ended in two kneel-downs. A real team would have tried to score. This is the known limit on timeouts and end-of-half clock management (Entry 60), recorded for the 2014 kernel fix and not rerun.
+**Engine note ([Super Bowl XLVIII report](week_21.md)).** With 51 seconds left in the half and the ball at the Minnesota 1, the engine drew a real 2012 end-of-half drive that ended in two kneel-downs. A real team would have tried to score. This is the known limit on timeouts and end-of-half clock management ([2013 Indianapolis away game report](../regular_season/week_17_jacksonville_at_indianapolis/output.md)), recorded for the 2014 kernel fix and not rerun.
 
 ## Injuries
 
@@ -26,4 +26,6 @@ Jeff Tuel, in his second postseason start in place of the injured E.J. Manuel, c
 |---|---|---|---|---|
 | Minnesota Vikings | Phil Loadholt | Lower extremity | Out | 2 days |
 
-No reactive league event followed from the logged result. The Super Bowl MVP and the season's AP awards are not drawn in the branch (see the season closure in ledger Entry 67).
+No reactive league event followed from the logged result. The Super Bowl MVP and the season's AP awards are not drawn in the branch (see the season closure in [Super Bowl XLVIII report](week_21.md)).
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - February 2, 2014 - Super Bowl XLVIII closed; 2013 season archived", "original_close": "Commit closed - Canonical update - February 2, 2014 - Super Bowl XLVIII closed; 2013 season archived - canonical through February 2, 2014, after Super Bowl XLVIII", "sequence": 67, "through": "2014-02-02"}, "date": "2014-02-02", "id": "2014-02-02-super-bowl-xlviii-closed-2013-season-archived", "season": 2013, "status": "closed", "summary": "Buffalo beat Minnesota 31-20 in Super Bowl XLVIII."} -->

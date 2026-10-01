@@ -357,7 +357,9 @@ Start and end are field positions for the offense; a punt, field-goal or downs r
 **Scouting:** Phase III verification entries are dated November 30 in each prospect file, using only information public by that date. Turner is not in the 2014 pool yet (underclassman), and Harris's status is unresolved. Every football first-entry question is OPEN: no dated tape evidence is recorded.
 **Engine notes:**
 - First Jacksonville game under kernel 2013.9. The game had no spike.
-- Three completions carry 22-personnel labels although the receiver (Clemons, Blackmon twice) is not in Stone's 22 package. Labels are chosen after the snap by family and position group; personnel is not checked. This affects labels only, not results. It is recorded in Entry 55.
-- The audit's yards row compared gross passing yards with a net 2012 centre. It is corrected in Entry 55.
+- Three completions carry 22-personnel labels although the receiver (Clemons, Blackmon twice) is not in Stone's 22 package. Labels are chosen after the snap by family and position group; personnel is not checked. This affects labels only, not results. It is recorded in [2013 Cleveland game report](output.md).
+- The audit's yards row compared gross passing yards with a net 2012 centre. It is corrected in [2013 Cleveland game report](output.md).
 
-**Ledger entry:** Entry 55. **Next event:** Week 14 vs Houston, Thursday, December 5, 8:25 p.m. ET. **Not simulated.**
+**Next event:** Week 14 vs Houston, Thursday, December 5, 8:25 p.m. ET. **Not simulated.**
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - December 1, 2013 - Week 13 at Cleveland closed", "original_close": "Commit closed - Canonical update - December 1, 2013 - Week 13 at Cleveland closed - canonical through December 1, after Week 13", "sequence": 55, "through": "2013-12-01"}, "date": "2013-12-01", "id": "2013-12-01-week-13-at-cleveland-closed", "status": "closed", "summary": "Jacksonville 22, Cleveland 19 in overtime."} -->

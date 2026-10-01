@@ -1,8 +1,8 @@
-<!-- sim-meta: {"event_entry": 29, "kind": "phase_output", "status": "COMPLETE", "through": "2013-09-04"} -->
+<!-- sim-meta: {"event_ref": "2013-09-04-camp-and-preseason-report-closed", "kind": "phase_output", "status": "COMPLETE", "through": "2013-09-04"} -->
 
 # Jacksonville Jaguars — 2013 training camp output
 
-**Status:** COMPLETE through September 4, 2013 (camp closed Entry 21; preseason/roster block closed Entry 29).
+**Status:** COMPLETE through September 4, 2013 (camp closed [August 12–15 camp report](output.md); preseason/roster block closed [2013 cap compliance](../../record.md)).
 **Evidence summary:** [Standouts](standouts.md).
 **Current boundary:** Training camp and the complete four-game preseason evaluation block are closed through September 4.
 
@@ -106,3 +106,15 @@ Johnson earned right tackle and Rackley right guard, with Bradfield the swing ta
 Crennel retained Miller/Marks inside, Babin on the edge, Posluszny/Smith at linebacker, Grimes/Ball outside, Poyer at nickel and Lowery/Rambo at safety. Ryan Davis earned rotational rush work. Mosley remained on the active roster but medically unavailable after the Atlanta injury; Smith cleared his short restriction before September 4. Lowry retained Trawick, Rambo, Thielen, Anderson, Poyer, Prosinski, Allen and Bouye in defined core/backup coverage responsibilities.
 
 No Aug. 27 cut was required because Jacksonville controlled 64 players. Caldwell accepted Stone's football recommendations and reduced the roster to 53 on Aug. 31. Waivers and an eight-player practice squad closed Sept. 1; regular-season accounting closed Sept. 4.
+
+<!-- event-record: {"date": "2013-07-22", "date_end": "2013-07-25", "id": "2013-07-22-july-22-25-camp-reporting-and-acclimation-closed", "status": "closed", "summary": "Players reported and completed camp entry work; Grimes was cleared for full participation."} -->
+
+<!-- event-record: {"date": "2013-07-26", "date_end": "2013-08-03", "id": "2013-07-26-july-26-august-3-opening-camp-and-stadium-scrimmage-closed", "status": "closed", "summary": "Jacksonville completed opening camp practices and its stadium scrimmage."} -->
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - August 8, 2013 - final Miami walkthrough closed", "original_close": "Commit closed \u2014 Canonical update - August 8, 2013 - final Miami walkthrough closed \u2014 canonical through August 8, after the final walkthrough and before Preseason Game 1", "sequence": 19, "through": "2013-08-08"}, "date": "2013-08-05", "date_end": "2013-08-08", "id": "2013-08-05-august-5-8-miami-preparation-and-final-walkthrough-closed", "status": "closed", "summary": "Jacksonville completed Miami preparation and its final walkthrough."} -->
+
+<!-- event-record: {"date": "2013-08-12", "date_end": "2013-08-15", "id": "2013-08-12-august-12-15-training-camp-closed", "status": "closed", "summary": "Jacksonville completed the remaining camp practices and walkthrough."} -->
+
+<!-- event-record: {"date": "2013-09-04", "id": "2013-09-04-medical-transition-reconciled", "status": "closed", "summary": "Daryl Smith cleared his short restriction; Pasztor and Mosley remained unavailable."} -->
+
+<!-- event-record: {"date": "2013-07-22", "date_end": "2013-09-04", "id": "2013-09-04-camp-and-preseason-report-closed", "kind": "technical", "status": "closed", "summary": "The camp and preseason report was closed through September 4."} -->

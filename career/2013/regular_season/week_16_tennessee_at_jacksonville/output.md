@@ -346,6 +346,8 @@ Start and end are field positions for the offense; a punt, field-goal or downs r
 **Position:** First in the AFC South, a game ahead of 9-6 Tennessee (the season series is 1-1); the AFC's second seed behind the 11-4 Jets. A Week 17 win clinches the division. See [standings](../../standings.md).
 **Statbook:** Through Week 16; 240 of 240 receipts; coverage complete.
 **League awards:** Week 16 drawn; no Jacksonville player was shortlisted.
-**Engine notes:** Tennessee's last drive shows "4th & 7 at opp 1" in the drive chart, which is impossible: from the 1 it can only be fourth and goal from the 1. This is the third such record in the receipts, also in Weeks 11 and 13. The drive result is unaffected; see Entry 59.
+**Engine notes:** Tennessee's last drive shows "4th & 7 at opp 1" in the drive chart, which is impossible: from the 1 it can only be fourth and goal from the 1. This is the third such record in the receipts, also in Weeks 11 and 13. The drive result is unaffected; see [2013 Tennessee home game report](output.md).
 
-**Ledger entry:** Entry 59. **Next event:** Week 17 at Indianapolis, Sunday, December 29, 1 p.m. ET. **Not simulated.**
+**Next event:** Week 17 at Indianapolis, Sunday, December 29, 1 p.m. ET. **Not simulated.**
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - December 22, 2013 - Week 16 vs Tennessee closed", "original_close": "Commit closed - Canonical update - December 22, 2013 - Week 16 vs Tennessee closed - canonical through December 22, after Week 16", "sequence": 59, "through": "2013-12-22"}, "date": "2013-12-22", "id": "2013-12-22-week-16-vs-tennessee-closed", "status": "closed", "summary": "Jacksonville 38, Tennessee 27."} -->

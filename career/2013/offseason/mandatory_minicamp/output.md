@@ -1,4 +1,4 @@
-<!-- sim-meta: {"event_entry": 15, "kind": "phase_output", "status": "COMPLETE", "through": "2013-06-13"} -->
+<!-- sim-meta: {"event_ref": "2013-06-11-june-11-13-mandatory-veteran-minicamp-closed", "kind": "phase_output", "status": "COMPLETE", "through": "2013-06-13"} -->
 
 # Mandatory veteran minicamp output
 
@@ -58,3 +58,7 @@ The staff used the break to prepare camp scripts, teaching sheets, competition s
 Mandatory minicamp closed with 64 controlled players, no new injury, no transaction, no cap change and no final roster decision. The May 5 Top-51 authority remains approximately $7.0M-$7.4M.
 
 **Next scheduled event:** July 22 rookie and quarterback reporting after the protected pre-camp break.
+
+<!-- event-record: {"date": "2013-06-11", "date_end": "2013-06-13", "id": "2013-06-11-june-11-13-mandatory-veteran-minicamp-closed", "status": "closed", "summary": "Jacksonville completed mandatory veteran minicamp."} -->
+
+<!-- event-record: {"date": "2013-06-14", "date_end": "2013-07-21", "id": "2013-06-14-june-14-july-21-protected-pre-camp-interval-closed", "status": "closed", "summary": "Jacksonville completed the protected pre-camp interval without club practice."} -->

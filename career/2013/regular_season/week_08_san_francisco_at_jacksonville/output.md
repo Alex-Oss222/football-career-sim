@@ -384,7 +384,7 @@ It was 14-3 at halftime.
 **Division / conference position:** First in the AFC South, half a game ahead of 5-2 Tennessee, which had a bye; first in the AFC, the top seed if the season ended today (ahead of the 6-2 Jets on conference record). See [standings](../../standings.md).
 **Statbook:** Through Week 8; 120 of 120 game receipts; coverage complete; leaders published.
 **Engine findings (the result stands; not grounds to rerun):**
-- **Field position.** Thielen's touchdown came two snaps after an unreturned San Francisco punt. That punt ended a three-play, 3-yard drive that began at a touchback, so it could not have left Jacksonville 20 yards from the end zone. This is the known lack of field position in kernel 2013.6 (Entries 39-44).
+- **Field position.** Thielen's touchdown came two snaps after an unreturned San Francisco punt. That punt ended a three-play, 3-yard drive that began at a touchback, so it could not have left Jacksonville 20 yards from the end zone. This is the known lack of field position in kernel 2013.6 ([kernel 2013.6 correction](../../../../runtime/README.md), [2013 Indianapolis home game report](../week_04_indianapolis_at_jacksonville/output.md), [2013 St. Louis game report](../week_05_jacksonville_at_st_louis/output.md), [Blackmon reinstatement](../week_06_jacksonville_at_denver/output.md), [2013 Denver game report](../week_06_jacksonville_at_denver/output.md), and [2013 San Diego game report](../week_07_san_diego_at_jacksonville/output.md)).
 - **Downs.** Jacksonville's 14-play drive spanning the third and fourth quarters is recorded as a turnover on downs, but its last snap was an 18-yard completion to Thielen. Kernel 2013.6 does not track downs against snap yardage.
 - **Call labels.** Labels are not tied to the ball carrier in 2013.6, so they say nothing about who got the ball:
   - "Access Blackmon Smoke" was attached to nine running-back and fullback carries, and Blackmon never touched the ball on it.
@@ -394,5 +394,7 @@ It was 14-3 at halftime.
 - **Neutral site.** The packet recorded the neutral venue, but kernel 2013.6 applies its small home term to the designated home team regardless of venue. So Jacksonville received it at Wembley, as Minnesota did in the Week 4 Wembley game. The public receipt does not record the venue.
 - **Band audit.** Every graded row is WITHIN, including field-goal accuracy under 30 yards (now 0.917 against 0.967), and all fifteen ledger-coherence counts are zero.
 
-**Ledger entries:** Entry 45 (Week 8); Entry 46 (after the game: Pasztor's and Mosley's lost preseason injury projections recovered; both available from Week 10).
+**Game and personnel records:** [2013 San Francisco game report](output.md) (Week 8); [Pasztor and Mosley medical-record correction](../../medical_history.md) (after the game: Pasztor's and Mosley's lost preseason injury projections recovered; both available from Week 10).
 **Next event:** Trade deadline, Tuesday, October 29, 4 p.m. ET; then the Week 9 bye and Week 10 at Tennessee, Sunday, November 10, 1 p.m. ET.
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - October 27, 2013 - Week 8 vs San Francisco closed", "original_close": "Commit closed - Canonical update - October 27, 2013 - Week 8 vs San Francisco closed - canonical through October 27, after Week 8", "sequence": 45, "through": "2013-10-27"}, "date": "2013-10-27", "id": "2013-10-27-week-8-closed", "status": "closed", "summary": "Jacksonville 20, San Francisco 13."} -->

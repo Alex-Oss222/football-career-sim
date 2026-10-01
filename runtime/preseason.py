@@ -7,12 +7,12 @@ regular-season game does (runtime.game_runner.run_game, kernel
 - Fixture: `SeasonPaths.preseason_games()` (schedule facts only).
 - Jacksonville: the current branch roster (every player the club controls
   on its offseason/active roster), the game's frozen depth chart
-  (`game_0N/depth_chart.json`, the released season chart's schema; the
+  (`Game_0N/depth_chart.json`, the released season chart's schema; the
   released `depth_chart.json` when no game chart is frozen) and the game's
-  frozen call sheet `game_0N/call_sheet.json` ({"offensive_call_sheet": [...]},
+  frozen call sheet `Game_0N/call_sheet.json` ({"offensive_call_sheet": [...]},
   the regular-season schema). A preseason game may dress the whole roster
   (runtime.rules.active_limit); `game_day_inactives` names who does not.
-- Opponent: `game_0N/opponent_roster.json`, one club entry in the schema of
+- Opponent: `Game_0N/opponent_roster.json`, one club entry in the schema of
   `library/data/YEAR_week1_depth_charts.json` (`players` with player_id,
   position, depth, roles, available/return_week), read by the same
   depth-library code as every background club.

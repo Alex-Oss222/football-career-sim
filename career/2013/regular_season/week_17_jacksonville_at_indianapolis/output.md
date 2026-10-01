@@ -288,7 +288,7 @@ Start and end are field positions for the offense; a punt, field-goal or downs r
 - Cecil Shorts: 5 catches for 65.
 - Maurice Jones-Drew: 21 carries for 83, 2 catches for 35.
 
-**Material game-management decisions:** None was entered by Stone (autonomous mode). The final possession was not a Stone decision. The engine does not model timeouts or kneel-downs snap by snap, so it drew a real 2012 drive from the same score-and-time cell (leading by 1-8 in the last two minutes). That drive ended in a punt, as real drives did when the trailing team still held timeouts. See Entry 60.
+**Material game-management decisions:** None was entered by Stone (autonomous mode). The final possession was not a Stone decision. The engine does not model timeouts or kneel-downs snap by snap, so it drew a real 2012 drive from the same score-and-time cell (leading by 1-8 in the last two minutes). That drive ended in a punt, as real drives did when the trailing team still held timeouts. See [2013 Indianapolis away game report](output.md).
 
 **Injuries / availability from the game:** None. Neither team generated an injury.
 
@@ -343,6 +343,8 @@ Start and end are field positions for the offense; a punt, field-goal or downs r
 **Position:** Second in the AFC South behind Tennessee on the division-record tiebreaker. The AFC's fifth seed, a wild card: at Kansas City in the Wild Card round. See [standings](../../standings.md).
 **Statbook:** Through Week 17; 256 of 256 receipts; regular-season coverage complete.
 **League awards:** Week 17 and December drawn. Scobee (AFC special teams) was shortlisted for Week 17 but not drawn.
-**Engine notes:** the final Jacksonville possession shows the known timeout and kneel-down limitation (Entry 60). The result stands as closed.
+**Engine notes:** the final Jacksonville possession shows the known timeout and kneel-down limitation ([2013 Indianapolis away game report](output.md)). The result stands as closed.
 
-**Ledger entry:** Entry 60. **Next event:** AFC Wild Card at Kansas City, January 4-5, 2014. **Not simulated.**
+**Next event:** AFC Wild Card at Kansas City, January 4-5, 2014. **Not simulated.**
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - December 29, 2013 - Week 17 at Indianapolis closed", "original_close": "Commit closed - Canonical update - December 29, 2013 - Week 17 at Indianapolis closed - canonical through December 29, after Week 17", "sequence": 60, "through": "2013-12-29"}, "date": "2013-12-29", "id": "2013-12-29-week-17-at-indianapolis-closed-regular-season-complete", "status": "closed", "summary": "Jacksonville lost 22-23 at Indianapolis."} -->

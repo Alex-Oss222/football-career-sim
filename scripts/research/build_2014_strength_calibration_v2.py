@@ -43,7 +43,7 @@ from runtime.player_evidence import PlayerInput  # noqa: E402
 HONOURS = ROOT / "library/data/2010_2012_honours_evidence.json"
 PRODUCTION = ROOT / "library/data/2010_2012_production_evidence.json"
 BIRTHS = ROOT / "library/data/player_birth_dates.json"
-LEAGUE = ROOT / "career/2014/league/personnel/league_players.json"
+LEAGUE = ROOT / 'career/2014/League/personnel/league_players.json'
 V1_JSON = ROOT / "library/data/2014_strength_calibration.json"
 OUT = ROOT / "library/data/2014_strength_calibration_v2.json"
 

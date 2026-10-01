@@ -28,7 +28,7 @@ Plan: voluntary. Drake offers a route cutup.
 
 Follow-ups: Stone and Drake to walk him through the Week 11 change; special teams (Stone until the coordinator job is filled) to review his return film on request.
 
-Evidence: career/2013/roster.md:50; career/2014/finances/player_contracts/contract_status.md:36, 75; career/2013/stats/team_player_stats.md:34, 124; career/2013/offseason/training_camp/position_battles.md:11; career/2013/regular_season/week_03_jacksonville_at_seattle/output.md:65; career/2013/regular_season/week_07_san_diego_at_jacksonville/output.md:82, 155; career/2013/regular_season/week_10_jacksonville_at_tennessee/output.md:203; career/2013/regular_season/week_11_arizona_at_jacksonville/output.md:38, 319; state/04_Roster_and_Staff_Register.md:115; career/2013/ledger.md:2148 (Entry 75, special teams coordinator vacant from January 12, 2014).
+Evidence: career/2013/roster.md:50; career/2014/finances/player_contracts/contract_status.md:36, 75; career/2013/stats/team_player_stats.md:34, 124; career/2013/offseason/training_camp/position_battles.md:11; career/2013/regular_season/week_03_jacksonville_at_seattle/output.md:65; career/2013/regular_season/week_07_san_diego_at_jacksonville/output.md:82, 155; career/2013/regular_season/week_10_jacksonville_at_tennessee/output.md:203; career/2013/regular_season/week_11_arizona_at_jacksonville/output.md:38, 319; state/04_Roster_and_Staff_Register.md:115; [January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md) ([January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md), special teams coordinator vacant from January 12, 2014).
 
 ### Mark Asper, G
 

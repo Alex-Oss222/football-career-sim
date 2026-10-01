@@ -1,6 +1,6 @@
 # Career finances
 
-[2014 finances](../2014/finances/README.md) · [Current team](../2014/team/README.md)
+[2014 finances](../2014/00_Team_Operations/Finances/README.md) · [Current team](../2014/00_Team_Operations/Team/README.md)
 
 One set of long-term obligations follows the career from season to season.
 

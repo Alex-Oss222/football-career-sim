@@ -4,7 +4,12 @@ Use with the [report instructions](README.md). This phase's football teaching is
 
 ## Report to render
 
-# [Team] | Phase One | [Dates]
+# Phase One | [Team] | [Season]
+
+**Location:** [Recorded facility or field; do not invent one]  
+**Dates:** [Classroom and physical-work dates]  
+**Days completed:** [Actual classroom/workout days; exclude staff-only reviews]  
+**Work addressed:** [Classroom responsibilities and physical preparation addressed]
 
 [Open with the actual staff finding from this phase. Identify classroom evidence as classroom evidence. Say briefly what physical work occurred and any communicated restriction that affected it.]
 

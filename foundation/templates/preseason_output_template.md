@@ -6,7 +6,7 @@
 
 ## Storage and bulk-report rule
 
-Each played preseason game's complete output remains in its existing game folder. For 2014 onward, use `career/[year]/training_camp_and_preseason/preseason_games/game_NN/output.md`; preserve the existing named game folders for 2013. The game output owns preparation, recorded media, the game narrative, the coaching report, full generated box score, consequential decisions and subsequent work. Keep receipt/provenance, medical changes and personnel decisions in their existing supporting owners.
+Each played preseason game's complete output remains in its existing game folder. For 2014 onward, use `career/[year]/04_Training_Camp_and_Preseason/Preseason_Games/Game_NN/output.md`; preserve the existing named game folders for 2013. The game output owns preparation, recorded media, the game narrative, the coaching report, full generated box score, consequential decisions and subsequent work. Keep receipt/provenance, medical changes and personnel decisions in their existing supporting owners.
 
 Use all eight sections below for the consolidated preseason turn. Show period-level coach status and preparation once, and repeat the complete section 4 game block for each played game, with the correct opponent/date and its own report and box score. Keep each game's recorded media clearly dated in sections 3 and 5. Section 6 draws together the findings across games and camp; section 7 shows the current personnel at the report's cutoff; section 8 closes the period actually reached. The [consolidated review guide](training_camp_and_preseason/preseason_review.md) supplies section 6's football substance, not a replacement layout.
 
@@ -14,7 +14,7 @@ Follow the existing bulk preseason workflow. Stop at an uncovered consequential 
 
 ## Preseason-stat persistence rule
 
-Preserve every played game's own public result, receipt and full generated box score. For 2014 onward, preseason statistics belong under `career/[year]/training_camp_and_preseason/preseason_games/statistics/`, with the game output in its own game folder. Use the season's supported preseason receipt/rendering path. Do not write preseason results into regular-season or postseason receipts, standings, player totals or career win-loss totals.
+Preserve every played game's own public result, receipt and full generated box score. For 2014 onward, preseason statistics belong under `career/[year]/04_Training_Camp_and_Preseason/Preseason_Games/statistics/`, with the game output in its own game folder. Use the season's supported preseason receipt/rendering path. Do not write preseason results into regular-season or postseason receipts, standings, player totals or career win-loss totals.
 
 All displayed counts come from the resolved game. Keep a row for every player the generated box score requires, and preserve any unattributed totals honestly. A missing statistic remains missing. Do not import the real historical game's numbers or type plausible values to complete a table. If the supported preseason path cannot produce the required record, identify the specific blocker; this template does not authorize using a regular-season statbook as a workaround.
 

@@ -230,3 +230,5 @@ Do not use actual 2013 selections, later destinations or later NFL performance t
 [norris-te]: https://www.nfl.com/news/2013-nfl-draft-tyler-eifert-travis-kelce-top-tight-end-rankings-0ap1000000159180
 [allen-workout]: https://www.nfl.com/news/keenan-allen-clocks-4-71-in-40-mayock-doesn-t-care-0ap1000000158580
 [edwards]: https://www.andthevalleyshook.com/2013/4/17/4229008/lsu-football-2013-nfl-draft-profiles-lavar-edwards
+
+<!-- event-record: {"date": "2013-04-24", "id": "2013-04-24-pre-draft-transaction-and-selection-packet-closed-ex-ante", "kind": "technical", "status": "closed", "summary": "Pre-draft decision inputs were frozen with an April 24 information ceiling."} -->

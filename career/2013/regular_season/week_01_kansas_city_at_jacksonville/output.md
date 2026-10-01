@@ -6,7 +6,7 @@
 
 **Status:** COMPLETE. Event `2013-week01-reset-v3-16`, generation 3, kernel 2013.4, closed through the private production runner.
 **Venue:** EverBank Field, Jacksonville. **Schedule source:** `library/2013_jacksonville_master_calendar.md` section 5 (date and opponent only).
-**Restart record:** the legacy slate and generations 1 and 2 are void ([ledger Entry 34](../../ledger.md#entry-34-week-1-voided-for-kernel-20134-restart)); this is the only canonical Week 1.
+**Restart record:** the legacy slate and generations 1 and 2 are void ([Week 1 kernel restart](../../migrations/week_01_kernel_2013_4_restart.md)); this is the only canonical Week 1.
 
 ## 1. Coach status
 
@@ -342,5 +342,7 @@ Protection remained the offense's recurring cost. Kansas City sacked Cousins thr
 **Record after game:** 1-0-0
 **Division / conference position:** Second in the AFC South (all four clubs 1-0, order by combined ranking); No. 5 seed if the season ended today. See [standings](../../standings.md).
 **Statbook:** Through Week 1; 16 of 16 game receipts; coverage complete; leaders published.
-**Ledger entry:** Entry 35
+**Game record:** [2013 Kansas City game report](output.md)
 **Next event:** Week 2 at Oakland Raiders, Sunday, September 15, 4:25 p.m. ET.
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - September 8, 2013 - Week 1 vs Kansas City closed", "original_close": "Commit closed - Canonical update - September 8, 2013 - Week 1 vs Kansas City closed - canonical through September 8, after Week 1", "sequence": 35, "through": "2013-09-08"}, "date": "2013-09-08", "id": "2013-09-08-week-1-closed-generation-3", "status": "closed", "summary": "Jacksonville 31, Kansas City 13."} -->
