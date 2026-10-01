@@ -2,6 +2,8 @@
 
 Prepared September 30, 2026 at the user's request. This extends the [spring report work](offseason_training_reports.md). The career remains at July 29, 2014: camp has completed five practices without full pads, and no preseason game has been played.
 
+The [October 1 preseason-game follow-up](preseason_game_reports.md) adds research on actual coaches' reviews, a deeper game/team/player format and a [worked extract from the archived 2013 Miami game](examples/preseason_game_review_2013_miami.md). It explains how the report covers starters, reserves, communication, strengths, failures and the next coaching work.
+
 ## What changes in the report
 
 The report should tell Stone how his team practiced: the formation and call, the job a player had, how he performed it, what the coach corrected and whether the next opportunity answered the question. Camp adds the physical tests that spring could not provide. Preseason adds an outside opponent, game operation and situations the staff cannot reset on demand.
