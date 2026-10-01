@@ -44,7 +44,7 @@
 
 | Order | Player | Contract flag | 2013 recorded role | Availability |
 |---:|---|---|---|---|
-| 1 | Hakeem Nicks | Signed March 14, 2014 (one year) | None in 2013; WR1 rep starting point from May 12, 2014 (Adams the competition) | No communicated restriction |
+| 1 | Hakeem Nicks | Signed March 14, 2014 (one year) | None in 2013; WR1 rep starting point from May 12, 2014 (Adams the competition) | Out, multi-week, from the August 28 preseason game (lower extremity, removed; projected return September 20, reassessment September 4); any roster disposition Caldwell's with the user; the Week 1 arrangement is Stone's open decision |
 | 2 | Adam Thielen | Under contract | WR2 / H (movable receiver); coverage units | No communicated restriction |
 | 3 | Davante Adams | Rookie contract through 2017 (No. 38, signed May 11) | None (2014 rookie); WR3 rep starting point from May 12, 2014 (Hawkins the competition) | No communicated restriction |
 | 4 | Toney Clemons | Tendered ERFA (unsigned) | WR4 | No communicated restriction |
@@ -61,8 +61,8 @@
 | 1 | Marcedes Lewis | Under contract | Lead TE | No communicated restriction |
 | 2 | Travis Kelce | Under contract | TE2 | No communicated restriction |
 | Added, not placed | Cameron Brate | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | Out, long term, from the August 8 preseason game (lower extremity; projected return January 15, 2015; reassessed August 15 with no change); roster disposition pending |
-| Added, not placed | Marcel Jensen | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | Independent medical hold from the August 22 preseason game (head/neck, minor; projected return August 28, game day; reassessed August 24 with no change); out of the frozen Atlanta plan |
-| Added, not placed | Gator Hoskins | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Marcel Jensen | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction (independent medical hold from the August 22 preseason game, head/neck, minor, released August 28 on its projected date; reassessed August 24 with no change; inactive August 28 under the frozen plan) |
+| Added, not placed | Gator Hoskins | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | Out, short, from the August 28 preseason game (lower extremity; not removed, finished the game; projected return September 16, reassessment September 3) |
 
 ### Offensive line (OL)
 
@@ -98,7 +98,7 @@ The kernel group is one OL list. Brad Meester (C) is removed: he retired, and hi
 | 4 | Jeremy Mincey | DE | Under contract | Edge 2 in 2013; Edge 1 rep starting point from May 12, 2014 (Branch the competition) | No communicated restriction |
 | 5 | Andre Branch | DE | Under contract | Edge 3 in 2013; next edge in the carried order and the named competition for Edge 1 | No communicated restriction |
 | 6 | Ryan Davis | DE | Under contract | Edge 4 | No communicated restriction |
-| 7 | Jeris Pendleton | DT | Under contract | None recorded | No communicated restriction |
+| 7 | Jeris Pendleton | DT | Under contract | None recorded | Out from the August 28 preseason game (lower extremity, minor; not removed, finished the game; projected return September 1, reassessment August 29) |
 | 8 | C.J. Wilson | DE | Under contract through 2014 (re-signed March 28) | Front depth; roster competition | No communicated restriction |
 | 9 | Lavar Edwards | DE | Under contract | Edge/front depth and teams (dressed Weeks 12 and 14-17; inactive Week 13) | No communicated restriction |
 | Added, not placed | Daniel Te'o-Nesheim | DE | Signed March 18, 2014 (three years) | None assigned (signed as the veteran edge rusher) | No communicated restriction |
@@ -128,7 +128,7 @@ The kernel group is one OL list. Brad Meester (C) is removed: he retired, and hi
 | 2 | Mike Harris | CB | Under contract | Starting CB (from Week 11) | No communicated restriction |
 | 3 | Bacarri Rambo | S | Under contract | Starting S; coverage units | No communicated restriction |
 | 4 | Jordan Poyer | CB | Under contract | Nickel; coverage units | No communicated restriction (out from the August 22 preseason game, upper extremity, minor, not removed; cleared August 26 on his projected date; reassessed August 23 with no change) |
-| 5 | A.J. Bouye | CB | Under contract | First outside reserve CB (from Week 13); coverage units | No communicated restriction (Week 11 injury cleared November 26) |
+| 5 | A.J. Bouye | CB | Under contract | First outside reserve CB (from Week 13); coverage units | Out from the August 28 preseason game (lower extremity, minor; not removed, played on; projected return August 31, reassessment August 29) |
 | 6 | Chris Prosinski | S | Under contract | Coverage units | No communicated restriction |
 | 7 | Brynden Trawick | S | Under contract | Coverage units | No communicated restriction |
 | Added, not placed | Alterraun Verner | CB | Signed March 11, 2014 (four years) | None assigned | No communicated restriction |
@@ -195,6 +195,7 @@ Add a row for every signing, tag, tender, trade, release, retirement, draft pick
 | August 15 to 21, 2014 (recorded August 21) | Detroit preparation: availability notes | [Camp record](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md#august-15-to-21-the-chicago-review-and-the-detroit-preparation); [medical history](../../Medical/medical_history.md#august-15-to-21-reassessments-and-murphys-release) | No order change and no Stone depth decision. Availability notes only: Murphy released August 18 on his projected date and available; Jackson's August 21 and Brate's August 15 reassessments unchanged; Johnson's return to the first-group right tackle for August 22 is a game-plan freeze in the [Game_03 inputs](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_03/README.md), not a chart change |
 | August 22, 2014 | Preseason game 3: availability notes | [Preseason game 3](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_03/output.md) output; [medical history](../../Medical/medical_history.md#august-22-preseason-game-3-injuries) | No order change and no Stone depth decision. Availability notes only: Jensen on an independent medical hold (August 22; projected return August 28, reassessment August 24); Poyer out (August 22; not removed; projected return August 26, reassessment August 23). Johnson's one-game right-tackle workload plan for Detroit ran as frozen and has ended; the August 28 arrangement is Stone's open decision, not a chart change |
 | August 23 to 27, 2014 (recorded August 27) | Atlanta preparation: availability notes | [Camp record](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md#august-23-to-27-the-detroit-review-and-the-atlanta-preparation); [medical history](../../Medical/medical_history.md#august-23-to-27-reassessments-and-poyers-clearance) | No order change and no Stone depth decision. Availability notes only: Poyer cleared August 26 on his projected date and available; Jensen's August 24 reassessment unchanged, the hold running to its August 28 projected date (game day) and keeping him out of the frozen Atlanta plan; Jackson and Brate unchanged. The August 26 reduction to 75 required no transaction (74 under contract). Johnson's first-quarter right tackle for August 28 is the current chart's starting point in a game lineup frozen in the [Game_04 inputs](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_04/README.md), not a chart change |
+| August 28, 2014 | Preseason game 4: availability notes | [Preseason game 4](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md) output; [medical history](../../Medical/medical_history.md#august-28-preseason-game-4-injuries) | No order change and no Stone depth decision. Availability notes only: Nicks out multi-week (August 28; removed; projected return September 20, reassessment September 4); Hoskins out, short (August 28; not removed; projected return September 16, reassessment September 3); Pendleton out (August 28; not removed; projected return September 1, reassessment August 29); Bouye out (August 28; not removed; projected return August 31, reassessment August 29); Jensen's hold cleared August 28 on its projected date with him inactive under the frozen plan; Jackson and Brate unchanged. The preseason is complete at 1-3; the season game depth chart is owed at the August 30 reduction to 53 (Stone), and the Week 1 receiver arrangement without Nicks is Stone's open decision, not a chart change |
 
 ## Maintaining the game-input copy
 

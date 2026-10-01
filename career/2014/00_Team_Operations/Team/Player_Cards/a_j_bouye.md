@@ -142,6 +142,14 @@ A developmental outside corner with enough movement and catch-point size to purs
 
 Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
 
+## Dated coaching updates
+
+### August 28, 2014 | Preseason game 4, Atlanta at Jacksonville
+
+Forty-six defensive snaps across the second-quarter substitution beside the veteran safeties, the two-minute possession and every second-half possession with the reserves, and 18 on the kicking game: five tackles, the third-and-6 stop with Daryl Smith, the tackle on Hester's third-and-10 conversion and the kickoff tackle on Hester's 32-yard return. No throw over him is recorded in the possession the plan built for his leverage and help rules. A minor lower-extremity injury was logged at 6:50 of the first quarter at the end of Jacksonville's second possession, before his first defensive snap; he was not removed and played on, and the instruction afterward is out, projected return in three days (August 31), reassessment August 29 ([medical record](../../Medical/incidents/a_j_bouye_2014-08-28.md)). The reserve corner place remains unfilled and no role change follows.
+
+Source: [preseason game 4 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

@@ -127,6 +127,14 @@ A power-oriented interior reserve. I see a narrow run-defense role, with first-s
 
 Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
 
+## Dated coaching updates
+
+### August 28, 2014 | Preseason game 4, Atlanta at Jacksonville
+
+Thirty-eight defensive snaps with the backups and rookies after the half, four tackles, the stop of Antone Smith for minus 3 on Atlanta's first second-half possession, the assist on Hagens and the tackles on Boldewijn in the fourth quarter. A minor lower-extremity injury was logged at the end of Atlanta's third-quarter touchdown drive (5:52); he was not removed and played the fourth quarter as the record holds it, and the instruction afterward is out, projected return in four days (September 1), reassessment August 29 ([medical record](../../Medical/incidents/jeris_pendleton_2014-08-28.md)). No place is set and none is decided by the instruction.
+
+Source: [preseason game 4 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

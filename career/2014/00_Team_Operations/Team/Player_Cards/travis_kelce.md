@@ -143,6 +143,12 @@ Kelce's assignment and first step held on Power and TREY, but his pad level rose
 
 Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
 
+### August 28, 2014 | Preseason game 4, Atlanta at Jacksonville
+
+The plan ended the attached evaluation and put him in the progression as a receiver through the first half: 25 offensive snaps, 2 catches on 3 targets for 26 (the 20-yard Snag from Bunch on the first snap of the second quarter, the 6-yard catch on the MAX-protected Power Pass, the Stick incompletion on third-and-7 from the 7), 17 kicking-game snaps and a coverage tackle on Hester's 23-yard return. No throw went to him in the first quarter: the 12 Trey Y-Cross through his matchup was not called with the starters and his two tagged first-quarter calls were Boot Floods. The record names Bartu and Ricardo Allen as the tacklers on his catches and no defender on the incompletion, so the matchup Atlanta chose, his separation from linebackers and the leverage he beat are the film's; the cross and the mesh were thrown to other receivers. He caught what came to him in a three-target half; the attached question is closed as untested by the plan's own instruction, and TE2 stands.
+
+Source: [preseason game 4 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
