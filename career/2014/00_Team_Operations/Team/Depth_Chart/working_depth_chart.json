@@ -186,8 +186,8 @@
     "Cameron Brate": "Out, long term, from the August 8 preseason game (lower extremity; projected return January 15, 2015, reassessed August 15 with no change); roster disposition pending",
     "Jerrell Jackson": "Out, multi-week, from the August 14 preseason game (lower extremity; projected return October 9, reassessed August 21 with no change); roster disposition pending",
     "Richard Murphy": "No communicated restriction (independent medical hold from the August 14 preseason game, head/neck, minor, released August 18 on his projected date; reassessed August 15 with no change)",
-    "Marcel Jensen": "Independent medical hold from the August 22 preseason game (head/neck, minor, removed; projected return August 28, reassessment August 24)",
-    "Jordan Poyer": "Out from the August 22 preseason game (upper extremity, minor, not removed, finished the game; projected return August 26, reassessment August 23)"
+    "Marcel Jensen": "Independent medical hold from the August 22 preseason game (head/neck, minor, removed; projected return August 28, game day; reassessed August 24 with no change); out of the frozen Atlanta plan",
+    "Jordan Poyer": "No communicated restriction (out from the August 22 preseason game, upper extremity, minor, not removed, finished the game; cleared August 26 on his projected date; reassessed August 23 with no change)"
   },
   "removed_from_2013_chart": {
     "Brad Meester": "Retired; contract expired March 11, 2014 (Entries 79 and 94)",
@@ -330,6 +330,12 @@
       "event": "Preseason game 3: availability notes",
       "ledger_entry": "2014-08-22-preseason-game-3-jacksonville-at-detroit; 2014-08-22-preseason-game-3-injuries",
       "change": "No order change and no Stone depth decision. Availability notes only: Jensen on an independent medical hold (August 22; projected return August 28, reassessment August 24); Poyer out (August 22; not removed; projected return August 26, reassessment August 23). Johnson's one-game right-tackle workload plan for Detroit ran as frozen and has ended; the August 28 arrangement is Stone's open decision, not a chart change."
+    },
+    {
+      "date": "August 23 to 27, 2014 (recorded August 27)",
+      "event": "Atlanta preparation: availability notes",
+      "ledger_entry": "2014-08-27-atlanta-preparation-closed; 2014-08-26-poyer-cleared",
+      "change": "No order change and no Stone depth decision. Availability notes only: Poyer cleared August 26 on his projected date and available; Jensen's August 24 reassessment unchanged, the hold running to its August 28 projected date (game day) and keeping him out of the frozen Atlanta plan; Jackson and Brate unchanged. The August 26 reduction to 75 required no transaction (74 under contract). Johnson's first-quarter right tackle for August 28 is the current chart's starting point in a game lineup frozen in the Game_04 inputs, not a chart change."
     }
   ],
   "added_not_placed": {

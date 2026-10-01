@@ -155,11 +155,12 @@ class PreseasonReleaseScopeTest(unittest.TestCase):
     def test_preseason_scope_swaps_only_the_depth_chart_input(self):
         season_chart = 'Missing 2014 input: ' + SeasonPaths(2014).depth_chart.relative_to(ROOT).as_posix()
         self.assertIn(season_chart, game_release_errors(2014))
-        scoped = game_release_errors(2014, preseason=1)
-        self.assertNotIn(season_chart, scoped)
-        self.assertFalse([e for e in scoped if 'depth_chart.json' in e], scoped)
-        missing = game_release_errors(2014, preseason=4)
-        self.assertTrue(any('preseason game 4' in e and 'Game_04/depth_chart.json' in e for e in missing), missing)
+        # All four 2014 preseason charts are frozen (game 4's on August 27,
+        # 2014); each scoped check swaps the season chart for the game's own.
+        for game in (1, 2, 3, 4):
+            scoped = game_release_errors(2014, preseason=game)
+            self.assertNotIn(season_chart, scoped)
+            self.assertFalse([e for e in scoped if 'depth_chart.json' in e], scoped)
         for invalid in (0, 6, '1'):
             with self.assertRaises(ValueError):
                 game_release_errors(2014, preseason=invalid)
