@@ -1,6 +1,6 @@
 # Jacksonville 2014 position battles
 
-**Evidence through August 8, 2014, preseason game 1.** Stone decided no competition at the August 2 block review, in the August 5 to 7 game-week preparation or after the August 8 game against Tampa Bay; each card carries its scrimmage, August 4 and game-week rehearsal evidence and a dated game-1 row from the [game output](../Preseason_Games/Game_01/output.md). No winner is declared. Open the unit, then the position, then the contested spot. Only established competitions appear here.
+**Evidence through August 13, 2014, the Chicago preparation.** Stone decided no competition at the August 2 block review, in the August 5 to 7 game-week preparation, after the August 8 game against Tampa Bay or at the August 13 freeze; each card carries its scrimmage, August 4 and game-week rehearsal evidence, a dated game-1 row from the [game output](../Preseason_Games/Game_01/output.md) and a dated August 9 to 13 row from the [camp record](../Training_Camp/training_report.md#august-9-to-13-the-tampa-bay-review-and-the-chicago-preparation). No winner is declared. Lucas's right tackle for Chicago is a one-game assignment in Johnson's absence, not a competition. Open the unit, then the position, then the contested spot. Only established competitions appear here.
 
 - [Offense](Offense/README.md): WR1, WR3, left guard and the conditional right-guard alternative.
 - [Defense](Defense/README.md): Edge 1.
