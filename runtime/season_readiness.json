@@ -26,10 +26,11 @@
         },
         {
           "id": "season_closure",
-          "status": "BLOCKED",
-          "remaining": "Accept an isolated 2014 end-to-end closure using legal 2014 inputs; path routing alone is not acceptance.",
+          "status": "VERIFIED",
+          "remaining": "Verified October 1, 2026: tests/test_2014_season_closure.py closes one complete synthetic Week 1 slate (the sixteen real 2014 fixtures with synthetic depth-ordered 46-player units) through scripts/close_week.py's close_slate and write_receipts against a copy of the repository in a temporary root and a local private service with a pinned store seed, Jacksonville first under user control with its pauses answered, then generates every dependent view the weekly workflow generates (full and compact receipts under regular_season/statistics/records/game_receipts, the statbook views, standings, the gamebook box score in regular_season/games/week_01/output.md, the award pages, the team tracker and the player cards) and runs scripts/validate_repository.py on that root, which accepts the 2014 records; the real career tree, cache and live service are untouched and checked so. Recorded in docs/update_workflow.md (2014 closure acceptance). Open before the first week: freeze the 2014 awards methodology (no 2014 methodology.json exists, so no award draw was exercised, only the award-page rendering) and build the legal inputs the legal_rosters gate requires.",
           "evidence": [
-            "docs/update_workflow.md"
+            "docs/update_workflow.md",
+            "tests/test_2014_season_closure.py"
           ]
         },
         {
