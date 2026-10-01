@@ -53,10 +53,12 @@
         },
         {
           "id": "financial_control",
-          "status": "BLOCKED",
-          "remaining": "Reconcile 2014 obligations and practice-squad/futures control before transactions or participation.",
+          "status": "VERIFIED",
+          "remaining": "Verified October 1, 2026 at the August 1 clock; reconciliation dated August 1, 2014 in career/2014/finances/salary_cap/cap_worksheet.md, no figure changed. All 78 controlled players carry a 2014 figure on an existing basis: 74 under contract (50 branch, 18 inherited, 6 reserve/future effective March 11) in the contract table, and the four unsigned tenders (Bradfield $1,431,000 RFA; Clemons and Pasztor $570,000 and Brown $495,000 ERFA) counted at their tender amounts under the Top-51 rule while outstanding; those four are not under contract, have not reported and cannot participate until they sign. The 26 rookie contracts are signed (nine slot reconstructions, 17 three-year minimums) and dead money of $10,417,192 is itemized. Top-51 applies through the first regular-season game, so the camp count stays the offseason count; the working difference against the $133,000,000 cap is $8,046,314 before any carryover, and every unresolved item (uncertified 2013 carryover of about $5.33M to $6.00M, the uncertified rookie-pool allocation, the Blackmon forfeiture credit, 2013 incentive settlement, Bradfield's 2013 salary and the single-source expiry of Brown and Pasztor) is either a credit or bounded well inside that margin, so none blocks a transaction gate or participation. python scripts/render_jaguars_cap_tracker.py --check passes. No certified cap room exists; the open items stay named in the worksheet and close only through ledger events.",
           "evidence": [
-            "career/2014/finances/salary_cap/cap_worksheet.md"
+            "career/2014/finances/salary_cap/cap_worksheet.md",
+            "career/2014/finances/player_contracts/contract_status.md",
+            "career/2014/finances/player_contracts/contracts.md"
           ]
         }
       ]
