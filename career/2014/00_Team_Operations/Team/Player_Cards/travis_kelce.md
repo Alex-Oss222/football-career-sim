@@ -15,7 +15,7 @@
 **Age:** 24  
 **Position:** TE  
 **NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** A receiving tight end who can move between attached, wing and flex alignments. I see movement and route potential in his current tools, with blocking leverage and hands still behind his receiving work.  
+**Player identity:** Alignment-flexible receiving tight end with above-starter speed, change of direction, route ability, hands and coverage recognition. He can work attached, from a wing or flexed into space; his receiving game is ahead of his inline blocking and pass-protection work.  
 **Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/travis_kelce.md)  
 
 > This is a dated personnel snapshot, not a game-engine rating card. Established
@@ -29,20 +29,20 @@
 | --- | ---: | --- |
 | Overall | 5.5 /10 | Staff judgment |
 | Athleticism | 6.5 /10 | Staff judgment |
-| Speed | 6.5 /10 | Staff judgment |
-| Strength / Power | 5.5 /10 | Staff judgment |
-| Agility / Change of direction | 6.0 /10 | Staff judgment |
-| Technique | 5.0 /10 | Staff judgment |
-| Football IQ | 5.0 /10 | Staff judgment |
-| Route running / separation | 6.0 /10 | Staff judgment |
-| Hands / catch radius | 6.0 /10 | Staff judgment |
-| Contested catch / ball tracking | 5.5 /10 | Staff judgment |
-| YAC | 6.0 /10 | Staff judgment |
-| Run blocking | 4.0 /10 | Staff judgment |
-| Pass protection / chip | 4.5 /10 | Staff judgment |
-| Alignment versatility | 6.5 /10 | Staff judgment |
-| Speed / athleticism | 6.5 /10 | Staff judgment |
-| Coverage recognition | 5.0 /10 | Staff judgment |
+| Speed | 7.0 /10 | Staff judgment |
+| Strength / Power | 6.5 /10 | Staff judgment |
+| Agility / Change of direction | 7.0 /10 | Staff judgment |
+| Technique | 7.0 /10 | Staff judgment |
+| Football IQ | 7.0 /10 | Staff judgment |
+| Route running / separation | 7.0 /10 | Staff judgment |
+| Hands / catch radius | 7.5 /10 | Staff judgment |
+| Contested catch / ball tracking | 6.5 /10 | Staff judgment |
+| YAC | 7.0 /10 | Staff judgment |
+| Run blocking | 5.0 /10 | Staff judgment |
+| Pass protection / chip | 5.5 /10 | Staff judgment |
+| Alignment versatility | 7.5 /10 | Staff judgment |
+| Speed / athleticism | 7.0 /10 | Staff judgment |
+| Coverage recognition | 7.5 /10 | Staff judgment |
 
 Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
 
@@ -50,27 +50,26 @@ Exact theoretical personnel judgments. Retained position grades carry the 2013 e
 
 | Trait | vs. Average | vs. Best | vs. Worst |
 | --- | --- | --- | --- |
-| Athleticism | Above NFL starter standard | Below elite standard | Above low-end standard |
+| Athleticism | At NFL starter standard | Below elite standard | Above low-end standard |
 | Speed | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | At NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Route running / separation | At NFL starter standard | Below elite standard | Above low-end standard |
-| Hands / catch radius | At NFL starter standard | Below elite standard | Above low-end standard |
-| Contested catch / ball tracking | Below NFL starter standard | Below elite standard | Above low-end standard |
-| YAC | At NFL starter standard | Below elite standard | Above low-end standard |
+| Strength / Power | At NFL starter standard | Below elite standard | Above low-end standard |
+| Agility / Change of direction | Above NFL starter standard | Below elite standard | Above low-end standard |
+| Technique | Above NFL starter standard | Below elite standard | Above low-end standard |
+| Football IQ | Above NFL starter standard | Below elite standard | Above low-end standard |
+| Route running / separation | Above NFL starter standard | Below elite standard | Above low-end standard |
+| Hands / catch radius | Above NFL starter standard | Below elite standard | Above low-end standard |
+| Contested catch / ball tracking | At NFL starter standard | Below elite standard | Above low-end standard |
+| YAC | Above NFL starter standard | Below elite standard | Above low-end standard |
 | Run blocking | Below NFL starter standard | Below elite standard | Above low-end standard |
 | Pass protection / chip | Below NFL starter standard | Below elite standard | Above low-end standard |
 | Alignment versatility | Above NFL starter standard | Below elite standard | Above low-end standard |
 | Speed / athleticism | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Coverage recognition | Below NFL starter standard | Below elite standard | Above low-end standard |
+| Coverage recognition | Above NFL starter standard | Below elite standard | Above low-end standard |
 
-These are staff comparisons against personnel standards, not measured 2014 league ranks.
 
 ## Established player state
 
-A receiving tight end who can move between attached, wing and flex alignments. I see movement and route potential in his current tools, with blocking leverage and hands still behind his receiving work.
+Alignment-flexible move tight end with a receiving-first profile. Kelce can function as the Y, align off the ball as a wing, or flex into the slot without changing what the offense can ask him to do in the passing game. He gets into his release cleanly, builds enough speed to threaten the seam and works intermediate routes with controlled stems and efficient breaks. Against zone, he recognizes space and presents a defined target; against linebackers, his change of direction and route tempo give him a separation advantage. His hands are dependable outside his frame, his catch radius expands the quarterback's margin for error, and he transitions quickly from catch to runner. He has enough size and play strength to finish through contact, although contested catches are not yet a defining part of his game. As a blocker, positioning and effort are ahead of his ability to consistently displace NFL edge defenders. His pad level, hand placement and ability to sustain leverage still need work, and he is better suited to chip-and-release assignments than extended one-on-one pass protection. His best role is as a movable receiving piece who can create matchup problems from multiple alignments without being treated as a sixth offensive lineman.
 
 Source: [2013 profile](../../../../2013/player_profiles/travis_kelce.md) and its recorded practice/game sources.
 
@@ -82,7 +81,9 @@ Source: [2013 profile](../../../../2013/player_profiles/travis_kelce.md) and its
 
 ## What supports this assessment
 
-A receiving tight end who can move between attached, wing and flex alignments. I see movement and route potential in his current tools, with blocking leverage and hands still behind his receiving work.
+The 2013 SIM gave Kelce only 20 total targets across the regular season and playoffs, so the evidence is not broad enough to call him a proven high-volume NFL tight end. It is still meaningful that he produced 165 receiving yards on 10 catches, with gains of 36 and 53 yards, because that is directionally consistent with the movement, route and catch grades in the current card. His 2012 Cincinnati season also showed a receiving profile capable of producing downfield efficiency before he entered the league.
+
+The staff should therefore separate trait projection from established production: the receiving tools grade above starter standard, while his actual NFL role remains developmental and the blocking/protection grades remain below starter standard.
 
 [2013 profile](../../../../2013/player_profiles/travis_kelce.md) and its recorded practice/game sources.
 
@@ -92,19 +93,19 @@ The 2013 record below supplies prior-season context. The 2014 evaluation uses on
 
 ## Play style
 
-A receiving tight end who can move between attached, wing and flex alignments. I see movement and route potential in his current tools, with blocking leverage and hands still behind his receiving work.
+Movement receiving tight end who can shift between attached, wing and flex alignments. He is most valuable when released into routes rather than left to win repeated inline blocks. His speed and change of direction let him threaten seams, crossers and intermediate space, while his hands and coverage recognition give him a chance to finish throws away from a perfectly clean target picture. He can create yards after the catch and has enough size and strength to function in traffic, but his blocking technique and protection anchor remain behind the receiving side of his game.
 
 ## Best traits
 
-- Alignment versatility: 6.5 /10.
-- Speed / athleticism: 6.5 /10.
-- Route running / separation: 6.0 /10.
+- Hands / catch radius: 7.5 /10.
+- Alignment versatility: 7.5 /10.
+- Coverage recognition: 7.5 /10.
 
 ## Main weaknesses
 
-- Run blocking: 4.0 /10.
-- Pass protection / chip: 4.5 /10.
-- Coverage recognition: 5.0 /10.
+- Run blocking: 5.0 /10.
+- Pass protection / chip: 5.5 /10.
+- Contested catch / ball tracking: 6.5 /10.
 
 ## Evidence and uncertainty
 
@@ -113,7 +114,7 @@ A receiving tight end who can move between attached, wing and flex alignments. I
 - **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
 - **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
 
-**One-line description:** A receiving tight end who can move between attached, wing and flex alignments. I see movement and route potential in his current tools, with blocking leverage and hands still behind his receiving work.
+**One-line description:** Alignment-flexible receiving tight end with above-starter movement, route, hands and coverage-processing traits, but a limited 2013 SIM workload and below-starter blocking/protection at this checkpoint.
 
 ## 2013 season production
 
