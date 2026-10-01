@@ -56,6 +56,17 @@ Lane Johnson's projected return date from the August 8 trunk injury was August 1
 
 Lane Johnson worked every August 15 to 21 session in full with no communicated limitation. The August 15 to 21 sessions produced no injury and no new restriction; the program has no injury draw for practices.
 
+<!-- event-record: {"date": "2014-08-22", "id": "2014-08-22-preseason-game-3-injuries", "status": "closed", "summary": "Marcel Jensen (head/neck, minor, removed, independent medical hold) and Jordan Poyer (upper extremity, minor, not removed, out) were injured in the August 22 preseason game at Detroit."} -->
+
+## August 22: preseason game 3 injuries
+
+Two Jacksonville injuries were generated in the [preseason game 3 output](../../04_Training_Camp_and_Preseason/Preseason_Games/Game_03/output.md) at Detroit and are recorded as the receipt states them, each with its own dated incident record:
+
+- [Marcel Jensen](incidents/marcel_jensen_2014-08-22.md), TE: head/neck, minor; logged at 6:10 of the second quarter at the end of Henne's second possession and removed from the game; independent medical hold, projected return in six days (August 28), reassessment in two (August 24). The coaching staff does not shorten the hold; a projected return clears on its date only if the medical staff communicates nothing else.
+- [Jordan Poyer](incidents/jordan_poyer_2014-08-22.md), CB: upper extremity, minor; logged at 4:39 of the second quarter at the end of Detroit's fifth possession; not removed, and he played the rest of the game as the record holds it; out, projected return in four days (August 26), reassessment in one (August 23).
+
+Projected returns are the engine's generated fields under the branch's standard return rule, not clearances; no clinical diagnosis is recorded. Detroit's one generated injury (Ebron, lower extremity, minor, not removed) stays with the receipt and is not a Jacksonville record. Jerrell Jackson's and Cameron Brate's instructions are unchanged (out; no further reassessment date communicated; roster dispositions pending). Richard Murphy (released August 18) played 32 offensive snaps and Lane Johnson 18 with no communicated limitation.
+
 ## Other examination records
 
 The March 26 examination of C.J. Wilson is in [his signing record](../Free_Agency/jones_drew_and_wilson_negotiation_2014-03-28.md). The 26 rookies' May 13 to 15 physicals, including the specific check of Cornelius Lucas's foot, are in the [rookie minicamp report](../../02_Offseason_Training/Rookie_Minicamp/training_report.md). The [mandatory minicamp report](../../02_Offseason_Training/Mandatory_Minicamp/training_report.md) owns the June 16 physicals, and the [camp report](../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md) owns July 21 and 24 reporting physicals and subsequent communicated instructions. Those examinations communicated no restriction; Lucas's foot remained a performance-staff review item. James Hurst remained outside Jacksonville's signed roster on the undrafted board's medical hold, with no clearance recorded.

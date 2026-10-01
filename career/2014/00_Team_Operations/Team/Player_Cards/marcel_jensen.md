@@ -109,6 +109,12 @@ Jensen was assignment-correct in the attached work, with mixed finish and no cor
 
 Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
 
+### August 22, 2014 | Preseason game 3, Jacksonville at Detroit
+
+Three offensive snaps and one kicking-game snap in Henne's mixed group, no target, before a minor head/neck injury was logged at the end of that possession (6:10 of the second quarter) and he was removed: independent medical hold, projected return in six days (August 28), reassessment August 24 ([medical record](../../Medical/incidents/marcel_jensen_2014-08-22.md)). Marcedes Lewis took his groups for the rest of the game. The hold is the medical staff's and no football finding attaches to it; the TE3 comparison with Hoskins, who caught eight balls, received nothing from his side in this game and is not decided by it.
+
+Source: [preseason game 3 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_03/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

@@ -150,6 +150,12 @@ Poyer's rat vision held under the five-man rush; his slot jam also disrupted Haw
 
 Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
 
+### August 22, 2014 | Preseason game 3, Jacksonville at Detroit
+
+Forty-seven defensive snaps at the nickel across all four defensive blocks and 19 on the kicking game: the third-quarter interception of Orlovsky's throw to Ebron, returned 27 yards to the Detroit 35 and converted into a touchdown, a pass defended, the third-and-6 tackle on Fuller and two kickoff-coverage tackles. The play-by-play records no substitution fault across Detroit's personnel changes, the same negative answer to the communication question as Chicago; the substitution stress the plan wanted was not produced in a recorded form. A minor upper-extremity injury was logged at the end of Detroit's possession at 4:39 of the second quarter; he was not removed and finished the game, and the instruction afterward is out, projected return in four days (August 26), reassessment August 23 ([medical record](../../Medical/incidents/jordan_poyer_2014-08-22.md)). No role change follows.
+
+Source: [preseason game 3 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_03/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

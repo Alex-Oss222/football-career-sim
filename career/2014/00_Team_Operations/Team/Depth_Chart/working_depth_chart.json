@@ -182,10 +182,12 @@
     "Casey Kreiter": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)"
   },
   "availability_notes": {
-    "Lane Johnson": "Trunk injury August 8 (out, projected return August 14); cleared August 14 on his projected date; inactive at Chicago by Stone's one-game decision; no communicated restriction; worked August 15 to 21 in full and returns to the first group for August 22 by Stone's Detroit plan",
+    "Lane Johnson": "Trunk injury August 8 (out, projected return August 14); cleared August 14 on his projected date; inactive at Chicago by Stone's one-game decision; no communicated restriction; worked August 15 to 21 in full and played 18 snaps at the first-group right tackle on August 22 under Stone's one-game Detroit workload plan, which has ended",
     "Cameron Brate": "Out, long term, from the August 8 preseason game (lower extremity; projected return January 15, 2015, reassessed August 15 with no change); roster disposition pending",
     "Jerrell Jackson": "Out, multi-week, from the August 14 preseason game (lower extremity; projected return October 9, reassessed August 21 with no change); roster disposition pending",
-    "Richard Murphy": "No communicated restriction (independent medical hold from the August 14 preseason game, head/neck, minor, released August 18 on his projected date; reassessed August 15 with no change)"
+    "Richard Murphy": "No communicated restriction (independent medical hold from the August 14 preseason game, head/neck, minor, released August 18 on his projected date; reassessed August 15 with no change)",
+    "Marcel Jensen": "Independent medical hold from the August 22 preseason game (head/neck, minor, removed; projected return August 28, reassessment August 24)",
+    "Jordan Poyer": "Out from the August 22 preseason game (upper extremity, minor, not removed, finished the game; projected return August 26, reassessment August 23)"
   },
   "removed_from_2013_chart": {
     "Brad Meester": "Retired; contract expired March 11, 2014 (Entries 79 and 94)",
@@ -322,6 +324,12 @@
       "event": "Detroit preparation: availability notes",
       "ledger_entry": "2014-08-21-detroit-preparation-closed; 2014-08-18-murphy-released",
       "change": "No order change and no Stone depth decision. Availability notes only: Murphy released August 18 on his projected date and available; Jackson's August 21 and Brate's August 15 reassessments unchanged; Johnson's return to the first-group right tackle for August 22 is a game-plan freeze in the Game_03 inputs, not a chart change."
+    },
+    {
+      "date": "August 22, 2014",
+      "event": "Preseason game 3: availability notes",
+      "ledger_entry": "2014-08-22-preseason-game-3-jacksonville-at-detroit; 2014-08-22-preseason-game-3-injuries",
+      "change": "No order change and no Stone depth decision. Availability notes only: Jensen on an independent medical hold (August 22; projected return August 28, reassessment August 24); Poyer out (August 22; not removed; projected return August 26, reassessment August 23). Johnson's one-game right-tackle workload plan for Detroit ran as frozen and has ended; the August 28 arrangement is Stone's open decision, not a chart change."
     }
   ],
   "added_not_placed": {
