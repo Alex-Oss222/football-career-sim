@@ -86,9 +86,63 @@ class SeasonPaths:
         matches = sorted(p for p in parent.glob('week_%02d*' % week) if p.is_dir())
         return matches[0] if matches else parent / ('week_%02d' % week)
 
-    def paused_game(self, week, postseason=False):
-        """Kernel 2014.4 E2: the protagonist game's paused partial record."""
+    def paused_game(self, week, postseason=False, preseason=False):
+        """Kernel 2014.4 E2: the protagonist game's paused partial record.
+
+        With ``preseason`` the week number is the preseason game number and
+        the record sits in that game's folder; nothing under regular_season
+        or postseason is touched.
+        """
+        if preseason:
+            if postseason:
+                raise ValueError('A game is preseason or postseason, not both')
+            return self.preseason_folder(week) / 'paused_game.json'
         return self.week_folder(week, postseason) / 'paused_game.json'
+
+    # ---- preseason (dated fixtures, separate receipts, no standings) ---------
+    @property
+    def preseason_games_dir(self): return self.record('preseason')
+    @property
+    def preseason_fixtures(self): return self.preseason_games_dir / 'fixtures.json'
+    @property
+    def preseason_receipts(self):
+        """Preseason receipts live apart from `receipts` and
+        `postseason_receipts`, so standings, the regular-season statbook,
+        awards and the draft order never read them."""
+        return self.preseason_games_dir / 'statistics' / 'records' / 'game_receipts'
+
+    def preseason_folder(self, game):
+        if type(game) is not int or not 1 <= game <= 5:
+            raise ValueError('Invalid preseason game number')
+        return self.preseason_games_dir / ('game_%02d' % game)
+
+    def preseason_cache(self, game, kind):
+        if type(game) is not int or not 1 <= game <= 5 or kind not in ('inputs', 'results'):
+            raise ValueError('Invalid preseason cache identity')
+        return self.root / '.sim_cache' / str(self.year) / ('preseason_%02d_%s.json' % (game, kind))
+
+    def preseason_games(self):
+        """The season's dated preseason fixtures (schedule facts only)."""
+        data = json.loads(self.preseason_fixtures.read_text())
+        if (data.get('season') != self.year or data.get('status') != 'RELEASED'
+                or data.get('game_type') != 'preseason'):
+            raise ValueError('Preseason fixtures must have the requested season, RELEASED status and preseason game_type')
+        games = data['games']
+        numbers = [g.get('game') for g in games]
+        if numbers != list(range(1, len(games) + 1)):
+            raise ValueError('Preseason fixtures must be numbered 1..N in order')
+        if any(not g['date'].startswith(str(self.year) + '-') for g in games):
+            raise ValueError('Preseason fixture dates do not belong to the requested season')
+        if any(g.get('game_id') != '%d-preseason-%02d-%s-at-%s' % (
+                self.year, g['game'], _slug(g['away']), _slug(g['home'])) for g in games):
+            raise ValueError('Preseason fixture game_id must follow YEAR-preseason-NN-away-at-home')
+        return games
+
+    def preseason_game(self, game):
+        rows = [g for g in self.preseason_games() if g['game'] == game]
+        if not rows:
+            raise ValueError('No preseason game %s in the %d fixtures' % (game, self.year))
+        return rows[0]
 
     def regular_games(self):
         data = json.loads(self.schedule.read_text())
@@ -99,6 +153,10 @@ class SeasonPaths:
                     g['date'].startswith(str(self.year + 1) + '-01-')) for g in games):
             raise ValueError('Fixture dates do not belong to requested regular season')
         return games
+
+
+def _slug(team):
+    return re.sub(r'[^a-z0-9]+', '-', team.lower()).strip('-')
 
 
 def require_receipt_season(receipts, season):
