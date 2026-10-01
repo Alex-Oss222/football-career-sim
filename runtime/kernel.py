@@ -6,7 +6,8 @@ from . import KERNEL_VERSION
 from .calibration import load, validate
 from . import injury_model
 from . import participation
-from .rules import GAME_TYPES, RULES, extra_point_rule, ot_status
+from . import rotation
+from .rules import GAME_TYPES, PRESEASON, RULES, extra_point_rule, ot_status
 from . import chains as chain_walk
 from . import drive_model
 from . import field_position
@@ -397,9 +398,27 @@ def _resolve_game(
     teams = {home.team_id: home, away.team_id: away}
     rosters = {home.team_id: home_players, away.team_id: away_players}
     stats = {t.team_id: _blank_team_stats(rosters[t.team_id]) for t in (home, away)}
+    # Preseason unit rotation (runtime/rotation.py): a tracker per club, from
+    # its plan or the documented default. Any other game type has none, and a
+    # rotation block in such a game fails closed before any draw.
+    trackers = None
+    if game_type == PRESEASON:
+        trackers = {}
+        for team_id, team in teams.items():
+            blocks, plan_errors = rotation.parse(team, rosters[team_id])
+            if plan_errors:
+                raise ValueError("rotation plan: " + "; ".join(plan_errors))
+            trackers[team_id] = rotation.Tracker(team_id, blocks, rosters[team_id])
+    else:
+        plan_errors = [e for team in (home, away) for e in rotation.plan_errors(team, None, game_type)]
+        if plan_errors:
+            raise ValueError("rotation plan: " + "; ".join(plan_errors))
     # Kernel 2014.3: the five linemen on the field start the game (credit only).
     for team_id, players in rosters.items():
-        for lineman in usage.protection_front(players).values():
+        opening = players
+        if trackers and trackers[team_id].blocks["offense"]:
+            opening = rotation.apply(trackers[team_id].blocks["offense"][0], players)[0]
+        for lineman in usage.protection_front(opening).values():
             stats[team_id]["players"][lineman.player_id]["line_starts"] += 1
     play_call_stats = {home.team_id: {}, away.team_id: {}}
     evidence = []
@@ -449,11 +468,15 @@ def _resolve_game(
     # 2026): he keeps the job while available (participation.emergency_view).
     fills = {tid: {"offense": {}, "defense": {}} for tid in rosters}
 
-    def lineup(team_id, side):
+    def lineup(team_id, side, quarter=None, number=None):
         view, notes = participation.emergency_view(current[team_id], baseline[team_id], side,
                                                    prefer=fills[team_id][side])
         fills[team_id][side] = {n["group"]: n["filled_by"] for n in notes if n.get("filled_by")}
-        return view, notes
+        block = None
+        if trackers is not None:
+            # Preseason: the active rotation block's unit leads the depth order.
+            view, block = trackers[team_id].view(side, view, quarter, number)
+        return view, notes, block
 
     def live_rosters():
         return {tid: tuple(players) for tid, players in current.items()}
@@ -655,6 +678,11 @@ def _resolve_game(
         kick_no = len(kickoffs) + 1
         drawn = field_position.free_kick(rng) if free_kick else field_position.kickoff(rng)
         live = live_rosters()
+        if trackers is not None:
+            # Preseason: each club's special-teams block (or depth order).
+            kick_quarter = rotation.quarter_of_remaining(remaining, half == "OT")
+            live = {tid: trackers[tid].view("special_teams", live[tid], kick_quarter, kick_no)[0]
+                    for tid in (kicking, receiving)}
         if teams[receiving].strength and not drawn["touchback"]:
             # Kernel 2014.4 phase 2: the returner's term (slope 0 in this
             # candidate); no draw is consumed.
@@ -692,6 +720,9 @@ def _resolve_game(
             for team_id, ids in units.items():
                 add_exposure(team_id, participation.credit(stats, team_id, dict.fromkeys(ids, 1),
                                                            "special_teams"))
+        if trackers is not None:
+            for tid in (kicking, receiving):
+                trackers[tid].kicked(kick_quarter)
         return record
 
     def possess(offense, window, half, spot, start_kind, ot_history=None, ot_label="OT", quarter=None):
@@ -706,8 +737,9 @@ def _resolve_game(
         # Kernel 2014.4: this drive's lineups from the live rosters (after
         # every removal so far; no draw is used), and E1: the matchup edge
         # from those lineups' composites (runtime/strength.py).
-        off_view, off_notes = lineup(offense, "offense")
-        def_view, def_notes = lineup(defense.team_id, "defense")
+        period = rotation.quarter_of(half, window, quarter)
+        off_view, off_notes, off_block = lineup(offense, "offense", period, drive_no)
+        def_view, def_notes, def_block = lineup(defense.team_id, "defense", period, drive_no)
         passer = usage.game_passer(off_view) or off_view[0]
         edge, strength_receipt = unit_strength.drive_edge(
             team, defense, off_view, def_view, passer, team is home and venue != "neutral")
@@ -1146,6 +1178,14 @@ def _resolve_game(
                 for team_id, ids in units.items():
                     add_exposure(team_id, participation.credit(stats, team_id, dict.fromkeys(ids, 1),
                                                                "special_teams"))
+                if trackers is not None:
+                    for team_id in (offense, defense.team_id):
+                        trackers[team_id].kicked(period)
+        if trackers is not None:
+            # Preseason: the blocks that played this drive advance their counts.
+            scrimmage_snaps = sum(1 for r in drive_ledger if r.get("play_type") in participation.SCRIMMAGE_TYPES)
+            trackers[offense].played("offense", off_block, period, scrimmage_snaps)
+            trackers[defense.team_id].played("defense", def_block, period, scrimmage_snaps)
         overtime_label = ot_label if half == "OT" else False
         end_of_drive(drive_no, _period_clock(end_clock, closing=True, overtime=overtime_label), half)
         return record, score_kind, next_kind
@@ -1279,6 +1319,9 @@ def _resolve_game(
     if xp_rule is not None:
         result["game_date"] = game_date
         result["extra_point_rule"] = xp_rule
+    if trackers is not None:
+        # Preseason only: the rotation as applied, by possession and kick.
+        result["rotation"] = {tid: trackers[tid].receipt() for tid in rosters}
     return result
 
 
@@ -1329,9 +1372,15 @@ def validate_result(result):
                 errors.append("pass attempt credited to a player who was not a drive passer")
             removed_at = {i["player"]: i["drive"] for i in result.get("injuries", ())
                           if i.get("removed") and i.get("team") == team}
+            # Preseason: a rotation block may bring on its own quarterback.
+            rotated = {e["possession"]: (e["lineup"].get("QB") or [None])[0]
+                       for e in ((result.get("rotation") or {}).get(team) or {}).get("applied", {}).get("offense", ())}
             previous = None
             for poss in (p for p in result["possessions"] if p["team"] == team):
                 if previous is not None and poss["passer"] != previous:
+                    if rotated.get(poss["number"]) == poss["passer"]:
+                        previous = poss["passer"]
+                        continue
                     if not removed_at.get(previous, poss["number"]) < poss["number"]:
                         errors.append("passer change without a removal")
                         break
