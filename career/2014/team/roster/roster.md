@@ -1,12 +1,12 @@
 # Jacksonville Jaguars roster
 
-**As of:** August 1, 2014
+**As of:** August 4, 2014
 **Canonical controlled-player count:** **78** (offseason roster of 90: 74 under signed contracts, including the nine 2014 draft selections and 17 undrafted rookies signed May 8 to 11, and four unsigned tenders).
 **Practice squad:** 0. No 2014 practice squad exists before the regular season.
-**Camp report status, August 1:** all 74 signed players reported and were examined with no communicated restriction: the 26 rookies and the three reserve/future players with no credited season (Bray, Jerrell Jackson, Long) on July 21 under the rookie and first-year rule; the other 45 on July 24. Bradfield, Clemons, Brown and Pasztor have not signed their tenders, are not under contract, have not reported and may not practice until they sign. Practices July 25 to 29 ran without full pads; the first full-pad practices, July 30 and August 1 (July 31 the protected day off), ran at controlled contact with no injury or restriction communicated; Lucas worked both in full.
+**Camp report status, August 4:** all 74 signed players reported and were examined with no communicated restriction: the 26 rookies and the three reserve/future players with no credited season (Bray, Jerrell Jackson, Long) on July 21 under the rookie and first-year rule; the other 45 on July 24. Bradfield, Clemons, Brown and Pasztor have not signed their tenders, are not under contract, have not reported and may not practice until they sign. Practices July 25 to 29 ran without full pads; the full-pad practices of July 30, August 1 and August 4 (July 31 and August 3 the days off) and the August 2 scrimmage (in series, no score kept) ran at controlled contact with no injury or restriction communicated; Lucas worked every one in full.
 **2013 season:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
-<!-- player-ages-as-of: 2014-08-01 -->
+<!-- player-ages-as-of: 2014-08-04 -->
 
 Birth dates are sourced in the [identity registry](../../../../library/data/player_birth_dates.json). Age is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer. Transaction history is in the [2014 ledger](../../ledger.md).
 

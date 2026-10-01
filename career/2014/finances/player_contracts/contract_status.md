@@ -1,6 +1,6 @@
 # Jacksonville Jaguars: 2014 contract and free-agency status register
 
-**As of:** August 1, 2014 (no change since June 28; the four tendered players remain unsigned and, not being under contract, have not reported to camp).
+**As of:** August 4, 2014 (no change since June 28; the four tendered players remain unsigned and, not being under contract, have not reported to camp).
 **Scope:** every player in the March 11, 2014 league-year baseline: the 52 active players and Brad Meester (Reserve/Retired) on the [2013 closing roster](../../../2013/roster.md), plus the eight-player 2013 practice squad, six of whom signed reserve/future contracts effective March 11. Players signed from outside after the baseline are summarized in section 2; their contracts are in the [contract table](contracts.md), the [signings record](../../free_agency/signings.md), [the draftees record](../../draft/draftees.md) and [the undrafted signings record](../../draft/udfa_signings.md).
 **Role:** this register owns each player's contract status, final league year, accrued seasons and free-agency class, with the evidence for each. It executes no signing, tender, release, extension, option or trade; Caldwell retains contract authority under Document 3. Figures follow the adopted contract reconstruction in the [original-contract research](../../../../library/2014_jaguars_original_contract_reconstruction.md) and the [completion research](../../../../library/2014_jaguars_contract_completion.md), which fix every covered contract year with explicit simulation assumptions where the public original instrument is incomplete. Transaction history is in the [2014 ledger](../../ledger.md).
 
@@ -16,7 +16,7 @@
 
 ## 2. Current status summary
 
-| Status at August 1, 2014 | Count |
+| Status at August 4, 2014 | Count |
 |---|---:|
 | Under contract, continuing from before 2014 | 31 |
 | Under contract, reserve/future (effective March 11) | 6 |

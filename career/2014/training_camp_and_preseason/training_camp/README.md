@@ -2,7 +2,7 @@
 
 [Camp and preseason](../README.md)
 
-In progress through August 1, 2014: reports July 21 and 24, practices July 25–29 without full pads, first full pads July 30, the protected day off July 31 and the second padded practice August 1; the scrimmage is August 2. Use the calendar and staff plan for reporting, acclimation and permitted contact.
+In progress through August 4, 2014: reports July 21 and 24, practices July 25–29 without full pads, first full pads July 30, the protected day off July 31, the second padded practice August 1, the August 2 scrimmage, block review and family night, the August 3 day off and the August 4 padded practice that closed camp block 1; game-week preparation for Tampa Bay is next. Use the calendar and staff plan for reporting, acclimation and permitted contact.
 
 Write the account using the [camp report template](../../../../foundation/templates/training_camp_and_preseason/training_camp_report.md) and [player-assessment method](../../../../foundation/templates/training_camp_and_preseason/player_assessment.md). In chat, show the report's readable opening; use its expandable original record for detailed follow-ups. [Stone's camp standard](staff_plan.md#stones-camp-standard) covers reporting, player and coach fitness, participation, contact, mixed groups and situations.
 
