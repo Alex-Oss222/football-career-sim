@@ -4,10 +4,10 @@ One folder per Jacksonville preseason game, named `game_N_<away>_at_<home>`. Eac
 
 | Game | Date | Kickoff | Matchup | Jacksonville | Result | Output |
 |---:|---|---|---|---|---|---|
-| 1 | Fri. Aug. 9 | 7:30 p.m. ET | Miami Dolphins at Jacksonville | Home | W 33-17 (Entry 20) | [game_1_miami_at_jacksonville/output.md](game_1_miami_at_jacksonville/output.md) |
-| 2 | Sat. Aug. 17 | 7:30 p.m. ET | Jacksonville at New York Jets | Away | L 17-24 (Entry 22) | [game_2_jacksonville_at_ny_jets/output.md](game_2_jacksonville_at_ny_jets/output.md) |
-| 3 | Sat. Aug. 24 | 7:30 p.m. ET | Philadelphia Eagles at Jacksonville | Home | L 20-31 (Entry 23) | [game_3_philadelphia_at_jacksonville/output.md](game_3_philadelphia_at_jacksonville/output.md) |
-| 4 | Thu. Aug. 29 | 7:30 p.m. ET | Jacksonville at Atlanta Falcons | Away | W 33-27 (Entry 25) | [game_4_jacksonville_at_atlanta/output.md](game_4_jacksonville_at_atlanta/output.md) |
+| 1 | Fri. Aug. 9 | 7:30 p.m. ET | Miami Dolphins at Jacksonville | Home | W 33-17 ([Miami preseason report](game_1_miami_at_jacksonville/output.md)) | [game_1_miami_at_jacksonville/output.md](game_1_miami_at_jacksonville/output.md) |
+| 2 | Sat. Aug. 17 | 7:30 p.m. ET | Jacksonville at New York Jets | Away | L 17-24 ([Jets preseason report](game_2_jacksonville_at_ny_jets/output.md)) | [game_2_jacksonville_at_ny_jets/output.md](game_2_jacksonville_at_ny_jets/output.md) |
+| 3 | Sat. Aug. 24 | 7:30 p.m. ET | Philadelphia Eagles at Jacksonville | Home | L 20-31 ([Philadelphia preseason report and quarterback decision](game_3_philadelphia_at_jacksonville/output.md)) | [game_3_philadelphia_at_jacksonville/output.md](game_3_philadelphia_at_jacksonville/output.md) |
+| 4 | Thu. Aug. 29 | 7:30 p.m. ET | Jacksonville at Atlanta Falcons | Away | W 33-27 ([Atlanta preseason report](game_4_jacksonville_at_atlanta/output.md)) | [game_4_jacksonville_at_atlanta/output.md](game_4_jacksonville_at_atlanta/output.md) |
 
 ## Resolution and roster cuts
 

@@ -10,6 +10,7 @@ sys.path.insert(0, str(ROOT/'scripts'))
 from validate_repository import receipt_coverage_errors, validate
 from check_game_readiness import assess, check
 from runtime.seasons import current_record
+from runtime.events import EVENT_META, closures, load_events
 
 
 class ContinuityTests(unittest.TestCase):
@@ -57,6 +58,35 @@ class ContinuityTests(unittest.TestCase):
         self.change('state/05_Current_Season_State.md', '**Global package checkpoint:** `Canonical',
                     '**Global package checkpoint:** `Unclosed Canonical')
         self.assertTrue(any('checkpoint differs' in error for error in validate(self.root)))
+
+    def test_latest_closure_cannot_be_removed_from_its_owner(self):
+        latest = closures(load_events(self.root))[-1][1]
+        file = self.root/latest.owner
+        def remove_closure(match):
+            data = json.loads(match[1])
+            if data['id'] == latest.id:
+                data.pop('closure')
+            return '<!-- event-record: ' + json.dumps(data) + ' -->'
+        file.write_text(EVENT_META.sub(remove_closure, file.read_text()))
+        self.assertTrue(any('checkpoint differs' in error for error in validate(self.root)))
+
+    def test_completed_phase_cannot_point_to_an_unrelated_event(self):
+        mapping = json.loads((self.root/'docs/repository_map.json').read_text())
+        phase = mapping['phases']['2014_otas']
+        file = self.root/phase['output']
+        from validate_repository import META
+        def change_ref(match):
+            data = json.loads(match[1])
+            data['event_ref'] = 'unrelated-event'
+            data.pop('event_entry', None)
+            return '<!-- sim-meta: ' + json.dumps(data) + ' -->'
+        file.write_text(META.sub(change_ref, file.read_text()))
+        self.assertTrue(any('unknown event owner' in error for error in validate(self.root)))
+
+    def test_annual_record_cannot_replace_its_owner(self):
+        record = current_record('record', self.root)
+        record.write_text(record.read_text()+'\n- Synthetic event without an owner.\n')
+        self.assertTrue(any('record is missing or stale' in error for error in validate(self.root)))
 
     def test_foundation_change_requires_new_source_version(self):
         file = self.root/'foundation/03_Head_Coach_Organization_and_Authority_Canon.md'

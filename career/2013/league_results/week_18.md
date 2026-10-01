@@ -1,7 +1,7 @@
 # 2013 Wild Card round league results (postseason week 18)
 
 **Events:** `2013-week18-<away>-at-<home>`, kernel 2013.10, closed once each through the private production runner as `postseason` games (overtime until a winner).
-**Inputs:** the same background TeamInput construction as the regular season (Week 1 depth-chart library with branch injuries applied; up to 46 dressed by depth order; Average low-confidence unit anchor). Pairings and slots from the [bracket](../postseason/README.md) (ledger Entry 61).
+**Inputs:** the same background TeamInput construction as the regular season (Week 1 depth-chart library with branch injuries applied; up to 46 dressed by depth order; Average low-confidence unit anchor). Pairings and slots from the [bracket](../postseason/README.md) ([2013 playoff bracket](../postseason/README.md)).
 **Receipts:** `../stats/postseason_receipts/week_18_*.json`. Postseason results do not enter the regular-season standings or statbook.
 **Byes:** New York Jets and Tennessee Titans (AFC 1-2); Minnesota Vikings and St. Louis Rams (NFC 1-2).
 

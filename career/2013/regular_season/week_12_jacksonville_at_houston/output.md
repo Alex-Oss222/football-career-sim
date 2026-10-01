@@ -329,6 +329,8 @@ Start and end are field positions for the offense; a punt, field-goal or downs r
 **Statbook:** Through Week 12; 176 of 176 receipts; coverage complete.
 **League awards:** Week 12 and November drawn; no Jacksonville player was shortlisted.
 **Scouting:** the Phase II interim cards were not written. Tape-based card fields need a dated, sourced record of what was knowable by November 22, 2013, which the repository does not yet hold; no card content was invented.
-**Engine notes:** Houston's first snap after a fair catch at 2:01 of the second quarter was a spike, with the clock already stopped. The play-order layout places a drive's 2012 spikes in any slot; this changes order only, not the drive's totals or the result. Recorded in Entry 53 for a forward fix. Anger's 0-yard punt is a real 2012 record drawn as-is.
+**Engine notes:** Houston's first snap after a fair catch at 2:01 of the second quarter was a spike, with the clock already stopped. The play-order layout places a drive's 2012 spikes in any slot; this changes order only, not the drive's totals or the result. Recorded in [2013 Houston away game report](output.md) for a forward fix. Anger's 0-yard punt is a real 2012 record drawn as-is.
 
-**Ledger entry:** Entry 53. **Next event:** Week 13 at Cleveland, Sunday, December 1, 1 p.m. ET. **Not simulated.**
+**Next event:** Week 13 at Cleveland, Sunday, December 1, 1 p.m. ET. **Not simulated.**
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - November 24, 2013 - Week 12 at Houston closed", "original_close": "Commit closed - Canonical update - November 24, 2013 - Week 12 at Houston closed - canonical through November 24, after Week 12", "sequence": 53, "through": "2013-11-24"}, "date": "2013-11-24", "id": "2013-11-24-week-12-at-houston-closed", "status": "closed", "summary": "Jacksonville lost 6-38 at Houston."} -->

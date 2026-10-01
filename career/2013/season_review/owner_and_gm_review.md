@@ -6,6 +6,8 @@
 **Date of the meeting:** Wednesday January 15, 2014, at the stadium, four days after the Divisional loss at Tennessee.
 **User's instructions (September 28, 2026):** Stone presents an honest season review and his 2014 direction and asks for nothing new: no extension, raise, authority change or staff budget. The meeting is held January 15.
 
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - February 2, 2014 - Season review with Khan and Caldwell (Stone retained)", "sequence": 74, "through": "2014-02-02"}, "date": "2014-01-15", "id": "2014-01-15-stone-retained", "status": "closed", "summary": "Khan and Caldwell reviewed the 2013 season and retained Stone on his existing contract."} -->
+
 ## Entry 1: Criteria freeze
 
 **Recorded:** September 28, 2026, before the meeting was written. **Freeze state:** CLOSED.
@@ -29,8 +31,8 @@
 - **Quarterback:** Caldwell traded Jacksonville's 2014 second-round pick to Washington for Kirk Cousins, and Blaine Gabbert to Green Bay for C.J. Wilson (`career/2013/trades/trades.md`). Cousins won the open competition and started as QB1 all season: 3,981 passing yards, 23 touchdowns, 18 interceptions and 38 sacks (regular season, receipts).
 - **Draft class:** Lane Johnson (#2) started at right tackle; Travis Kelce, Jordan Poyer, Sio Moore and Bacarri Rambo held roles; Adam Thielen, an undrafted signing, became WR2 (`career/2013/roster.md`).
 - **Staff:** the staff Stone built under the budget in his contract (`career/2013/coaching_staff.md`) completed the season; no departure is recorded.
-- **Conduct and availability:** Justin Blackmon's four-game league suspension and October reinstatement were handled under the club's standards (ledger Entries 36 and 42). Paul Posluszny is on an independent medical hold from Week 13.
-- **Honours:** Stone was a Coach of the Year finalist on the branch shortlist (Entry 71; Rex Ryan won the draw). Maurice Jones-Drew was Comeback Player of the Year.
+- **Conduct and availability:** Justin Blackmon's four-game league suspension and October reinstatement were handled under the club's standards ([Blackmon suspension ruling](../regular_season/week_02_jacksonville_at_oakland/output.md) and [Blackmon reinstatement](../regular_season/week_06_jacksonville_at_denver/output.md)). Paul Posluszny is on an independent medical hold from Week 13.
+- **Honours:** Stone was a Coach of the Year finalist on the branch shortlist ([2013 season honours](../awards/README.md); Rex Ryan won the draw). Maurice Jones-Drew was Comeback Player of the Year.
 
 **Labelled inferences.**
 - The club measures the year against its own hire criteria and against the standard Stone set for himself, not against a playoff promise that was never made.
@@ -103,13 +105,12 @@ Stone's own standard asked for a functioning program and a candid quarterback ev
 - **Caldwell's deadline:** Stone's written recommendations before the February 17 tag window. They were delivered as `career/2014/early_offseason/stone_to_caldwell_2014_offseason_decisions.md`, dated February 2, 2014.
 - **Caldwell's first 2014 measures:** the scoring margin, and the quarterback's ball security and protection.
 - **Khan's request:** prepare the London week for Dallas (November 9, 2014, Wembley) on the 2013 Wembley plan.
-- **Closed gap:** the league's post-2013 head-coaching changes were resolved retroactively by ledger Entry 75 (see Entry 4 below).
+- **Closed gap:** the league's post-2013 head-coaching changes were resolved retroactively by [January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md) (see Entry 4 below).
 
 ## Entry 4: Retroactive correction from the coaching carousel
 
-**Recorded:** September 28, 2026 (ledger Entry 75).
+**Recorded:** September 28, 2026 ([January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md)).
 
-Entry 75 resolved the January 2014 coaching carousel after this meeting was first written. Two of its events fall before January 15: Alan Lowry left on January 12 to become Atlanta's head coach, and Frank Bush interviewed with Indianapolis on January 14 (the Colts' coordinator search could not close before January 16 under the carousel method, so his candidacy was open at the meeting; he was not hired). Stone's staff answer to Khan in Entry 2 is corrected to those facts. Nothing else in the meeting changes.
+[January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md) resolved the January 2014 coaching carousel after this meeting was first written. Two of its events fall before January 15: Alan Lowry left on January 12 to become Atlanta's head coach, and Frank Bush interviewed with Indianapolis on January 14 (the Colts' coordinator search could not close before January 16 under the carousel method, so his candidacy was open at the meeting; he was not hired). Stone's staff answer to Khan in Entry 2 is corrected to those facts. Nothing else in the meeting changes.
 
 **The decision is re-checked, not re-made.** The Entry 1 freeze records that the staff completed the 2013 season, which remains true: Lowry left the day after Jacksonville's elimination. Losing a coordinator to another club's head-coach job is not a ground against retaining the head coach under any of the five frozen criteria, for this club or any other (label-swap check). Entry 3 stands: Stone is retained on his existing contract, with no change to his authority. The vacancy is Stone's to fill within Caldwell's staff budget (Document 3, rows 2 and 6).
-

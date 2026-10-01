@@ -20,3 +20,5 @@ Cousins' turnover was a processing/ball-security error, not an effort judgment. 
 - Romeo Crennel called the defense; the result supplied alignment, rush-lane, fit, coverage and tackling evidence without transferring defensive calling to Stone.
 - Alan Lowry controlled special teams. Coverage credit required an observed lane, substitution/communication and pursuit responsibility rather than mere participation.
 - No regular-season record or standings changed.
+
+<!-- event-record: {"date": "2013-08-09", "id": "2013-08-09-august-9-preseason-opener-closed", "status": "closed", "summary": "Jacksonville beat Miami 33-17 in the preseason opener."} -->

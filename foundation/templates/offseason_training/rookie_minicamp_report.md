@@ -4,7 +4,12 @@ Use with the [report instructions](README.md). Verify the actual dates, eligible
 
 ## Report to render
 
-# [Team] | Rookie minicamp | [Dates]
+# Rookie minicamp | [Team] | [Season]
+
+**Location:** [Recorded facility or field; do not invent one]  
+**Dates:** [Actual practice dates]  
+**Days completed:** [Actual practice days]  
+**Work addressed:** [Introductory assignments and teaching priorities addressed]
 
 [Identify the actual group and the staff's first supported impression of its work. Explain how much was introductory and what the limited setting can show. No draft-rank summary or future-career comparison.]
 
@@ -22,4 +27,4 @@ Use with the [report instructions](README.md). Verify the actual dates, eligible
 
 ## What each newcomer takes into the next practice
 
-[Use a compact table if helpful: player, observed work, next coaching point. The full individual baseline belongs in the supporting record. Recognize correct work without manufacturing a setback. Finish with the next lawful integration opportunity and any unresolved roster decision, without awarding jobs from a short introductory camp.]
+[Use a compact table if helpful: player, observed work, next coaching point. The opening annual assessment stays on the player's existing card; this report owns these coaching observations, not a new full assessment. Recognize correct work without manufacturing a setback. Finish with the next lawful integration opportunity and any unresolved roster decision, without awarding jobs from a short introductory camp.]

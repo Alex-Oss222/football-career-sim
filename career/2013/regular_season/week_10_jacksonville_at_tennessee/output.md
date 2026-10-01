@@ -319,7 +319,7 @@ Start and end are field positions for the offense; a punt, field-goal or downs r
 - Paul Posluszny: an interception, a sack, a tackle for loss and a pass defended.
 - Roy Miller: the sack for the safety.
 
-**Material game-management decisions:** None was entered by Stone. The game ran in autonomous management mode; under kernel 2013.7 the league-wide late-game model decides fourth downs for every club (Entry 48).
+**Material game-management decisions:** None was entered by Stone. The game ran in autonomous management mode; under kernel 2013.7 the league-wide late-game model decides fourth downs for every club ([kernel 2013.7 adoption](../../../../runtime/README.md)).
 
 **Injuries / availability from the game:** Cornerback Alan Ball was hurt (trunk, long-term; out, projected 73 days, to January 22, 2014). That is beyond the regular season. Tennessee generated no injury.
 
@@ -383,4 +383,6 @@ Start and end are field positions for the offense; a punt, field-goal or downs r
 - **Field position.** Every possession's start follows from the previous one; for example, McCourty's interception set Tennessee up at the Jacksonville 8.
 - **Pasztor's sacks.** Pasztor, the dressed reserve, is charged with two of the four sacks allowed; the receipt does not record when he entered.
 
-**Ledger entry:** Entry 50. **Next event:** Week 11 vs Arizona, Sunday, November 17, 1 p.m. ET. **Not simulated.**
+**Next event:** Week 11 vs Arizona, Sunday, November 17, 1 p.m. ET. **Not simulated.**
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - November 10, 2013 - Week 10 at Tennessee closed", "original_close": "Commit closed - Canonical update - November 10, 2013 - Week 10 at Tennessee closed - canonical through November 10, after Week 10", "sequence": 50, "through": "2013-11-10"}, "date": "2013-11-10", "id": "2013-11-10-week-10-at-tennessee-closed", "status": "closed", "summary": "Jacksonville lost at Tennessee in Week 10."} -->

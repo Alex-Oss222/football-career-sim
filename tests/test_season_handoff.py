@@ -24,7 +24,7 @@ class HandoffTests(unittest.TestCase):
             sources[key]=path.relative_to(root).as_posix()
         target=root/'career'/str(year+1)
         target.mkdir(parents=True,exist_ok=True)
-        (target/'calendar.md').write_text('Synthetic historical-calendar test fixture')
+        SeasonPaths(year+1, root).calendar.write_text('Synthetic historical-calendar test fixture')
         return {'season':year,'next_season':year+1,'calendar_policy':'historical','status':'TEAM_CLOSED',
                 'carry_forward':sources, 'source_sha256':{k:digest(root/v) for k,v in sources.items()},
                 'gates':{k:{'status':'COMPLETE','evidence':[{'path':evidence.relative_to(root).as_posix(),'sha256':digest(evidence)}]}
@@ -68,14 +68,14 @@ class HandoffTests(unittest.TestCase):
     def test_missing_calendar_unreviewed_evidence_and_path_escape_fail(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);data=self.baseline(root,2014)
-            (root/'career/2015/calendar.md').unlink()
+            SeasonPaths(2015, root).calendar.unlink()
             with self.assertRaisesRegex(ValueError,'historical successor calendar'):stage(root,data)
             data['gates']['exit_interviews']['evidence']=[]
             self.assertIn('Completed gate lacks evidence: exit_interviews',check(root,data))
             data['carry_forward']['roster']='../../outside.md'
             with self.assertRaisesRegex(ValueError,'leaves repository'):check(root,data)
 
-    def test_player_career_rows_survive_and_changed_cards_block_rollover(self):
+    def test_final_assessment_sources_carry_without_relabelling_opening_grades(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);data=self.baseline(root,2014)
             cards=SeasonPaths(2014,root).record('player_profiles')
@@ -88,21 +88,58 @@ class HandoffTests(unittest.TestCase):
             block=stats_block(2014,'Sample','QB',{False:empty,True:empty},old=block,root=root)
             rows=[line for line in block.splitlines() if line.startswith(('| 2013 |','| 2014 |'))]
             card.write_text('# Sample — 2014 Player Profile\n\n**Season:** 2014\n**Position:** QB\n\n'+block)
+            (cards/'departed.md').write_text('# Departed player\n\nEarlier Jacksonville history stays in 2014.\n')
+            roster=root/data['carry_forward']['roster']
+            roster.write_text('**As of:** December 28, 2014\n\n**Canonical controlled-player count:** **1**\n\n## Current controlled players\n\n| Player | Pos | Status |\n|---|---|---|\n| Sample | QB | Signed |\n')
+            data['source_sha256']['roster']=digest(roster)
             data['carry_forward']['player_cards']=cards.relative_to(root).as_posix()
             data['source_sha256']['player_cards']=digest(cards)
+            finals=SeasonPaths(2014,root).record('closeouts/player_assessments')
+            finals.mkdir(parents=True)
+            final=finals/'sample.md'
+            final.write_text('# Sample final review\n\n**Assessment stage:** Final annual assessment\n\nSeason-end judgment differs from the opening.\n')
+            data['carry_forward']['final_assessments']=finals.relative_to(root).as_posix()
+            data['source_sha256']['final_assessments']=digest(finals)
             before=card.read_bytes()
             stage(root,data)
-            carried=SeasonPaths(2015,root).record('player_profiles/sample.md').read_text()
-            for row in rows:self.assertIn(row,carried)
-            self.assertIn('**Season:** 2015',carried)
-            self.assertEqual(carried.count('| 2015 |'),2)
-            self.assertEqual(refresh_cards(2015,root,check=True),[])
+            self.assertFalse(SeasonPaths(2015,root).record('player_profiles/sample.md').exists())
+            staged=json.loads((root/'career/2015/opening_handoff.json').read_text())
+            planned=staged['opening_assessments'][0]
+            self.assertEqual(len(staged['opening_assessments']),1)
+            self.assertEqual(planned['final_assessment'],final.relative_to(root).as_posix())
+            self.assertEqual(planned['previous_opening'],card.relative_to(root).as_posix())
+            self.assertEqual(planned['status'],'REVIEW_REQUIRED')
+            for row in rows:self.assertIn(row,card.read_text())
             self.assertEqual(card.read_bytes(),before)
             self.assertFalse(list(SeasonPaths(2015,root).receipts.glob('*.json')))
-            self.assertTrue((root/'career/2015/finances/README.md').exists())
+            self.assertFalse(SeasonPaths(2015, root).record('finances/README.md').exists())
+            self.assertFalse(SeasonPaths(2015, root).awards.exists())
             card.write_text(card.read_text()+'Changed assessment\n')
             with self.assertRaisesRegex(ValueError,'not frozen/reviewed: player_cards'):
                 stage(root,data)
+
+    def test_old_event_markers_stay_with_their_original_owner(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);data=self.baseline(root,2014)
+            roster=root/data['carry_forward']['roster']
+            event='<!-- event-record: {"id":"2014-example","date":"2014-12-28","status":"closed","summary":"A recorded event"} -->'
+            roster.write_text(roster.read_text()+event+'\n')
+            data['source_sha256']['roster']=digest(roster)
+            stage(root,data)
+            self.assertIn(event,roster.read_text())
+            self.assertNotIn('event-record:',SeasonPaths(2015,root).roster.read_text())
+
+    def test_opening_cards_without_finals_block_all_staging_writes(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);data=self.baseline(root,2014)
+            cards=SeasonPaths(2014,root).record('player_profiles')
+            cards.mkdir(parents=True)
+            (cards/'sample.md').write_text('Prior opening assessment')
+            data['carry_forward']['player_cards']=cards.relative_to(root).as_posix()
+            data['source_sha256']['player_cards']=digest(cards)
+            with self.assertRaisesRegex(ValueError,'Season-end player assessments'):
+                stage(root,data)
+            self.assertFalse(SeasonPaths(2015,root).roster.exists())
 
 
 if __name__=='__main__':unittest.main()

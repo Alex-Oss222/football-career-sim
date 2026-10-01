@@ -7,13 +7,17 @@ from pathlib import Path
 from scripts.build_annual_player_sheets import (
     POSITION_SHEET_TRAITS,
     ROOT,
+    EXIT_INDEX,
+    BIRTH_DATES,
     load_season_players,
     render_player_sheet,
     slugify,
     target_path,
     check_profiles,
     repository_profile_errors,
+    final_assessment_errors,
 )
+from runtime.seasons import SeasonPaths
 
 class AnnualPlayerSheetTests(unittest.TestCase):
     def test_slugify_handles_initials_and_apostrophes(self):
@@ -29,6 +33,21 @@ class AnnualPlayerSheetTests(unittest.TestCase):
     def test_2014_sheet_is_blocked_before_2014_season_close(self):
         with self.assertRaisesRegex(ValueError,"final-season records"):
             load_season_players(2014)
+
+    def test_final_review_has_a_separate_destination_and_requires_season_close(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            opening = SeasonPaths(2014, root).record('player_profiles/kirk_cousins.md')
+            final = target_path(2014, 'Kirk Cousins', root)
+            self.assertNotEqual(final, opening)
+            final.parent.mkdir(parents=True)
+            final.write_text('**Assessment stage:** Final annual assessment\n')
+            self.assertEqual(final_assessment_errors(2014, root),
+                             ['2014 final player assessments exist before season close'])
+            closeout = SeasonPaths(2014, root).record('closeouts/season_closeout.md')
+            closeout.parent.mkdir(parents=True, exist_ok=True)
+            closeout.write_text('Season closed\n')
+            self.assertEqual(final_assessment_errors(2014, root), [])
 
     def test_qb_sheet_is_position_specific(self):
         checkpoint,players=load_season_players(2013)
@@ -54,11 +73,10 @@ class AnnualPlayerSheetTests(unittest.TestCase):
         temp=tempfile.TemporaryDirectory()
         self.addCleanup(temp.cleanup)
         root=Path(temp.name)
-        for name in ('career/2014/team/player_development/2013_exit_player_index.json',
-                     'library/data/player_birth_dates.json'):
-            destination=root/name
+        for source in (EXIT_INDEX, BIRTH_DATES):
+            destination=root/source.relative_to(ROOT)
             destination.parent.mkdir(parents=True,exist_ok=True)
-            shutil.copyfile(ROOT/name,destination)
+            shutil.copyfile(source,destination)
         checkpoint,players=load_season_players(2013,root)
         for player in players:
             path=target_path(2013,player.player,root)
@@ -98,12 +116,12 @@ class AnnualPlayerSheetTests(unittest.TestCase):
         path.write_text('# Premature final sheet',encoding='utf-8')
         target_path(2013,'Unexpected Player',root).write_text('# Extra',encoding='utf-8')
         errors=repository_profile_errors(root)
-        self.assertTrue(any('2014 annual Player Sheets exist before season close' in error for error in errors))
+        self.assertTrue(any('2014 final player assessments exist before season close' in error for error in errors))
         self.assertTrue(any('unexpected annual profile' in error for error in errors))
 
     def test_frozen_syntheses_do_not_read_living_offseason_profiles(self):
         root,players=self.fixture()
-        living=root/'career/2014/team/player_development/roster_profiles.md'
+        living=SeasonPaths(2014,root).record('offseason/player_development/roster_profiles.md')
         living.write_text('| **Kirk Cousins (QB)** | Later-season observation |',encoding='utf-8')
         checkpoint,reloaded=load_season_players(2013,root)
         self.assertEqual(players,reloaded)
@@ -111,7 +129,7 @@ class AnnualPlayerSheetTests(unittest.TestCase):
 
     def test_duplicate_exit_index_paths_are_rejected(self):
         root,_=self.fixture()
-        path=root/'career/2014/team/player_development/2013_exit_player_index.json'
+        path=root/EXIT_INDEX.relative_to(ROOT)
         data=json.loads(path.read_text(encoding='utf-8'))
         data['players'][1]=data['players'][0]
         path.write_text(json.dumps(data),encoding='utf-8')

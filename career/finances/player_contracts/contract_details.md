@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the twelve-year table](../salary_cap/cap_tracker.md). As of May 12, 2014, Entry 110. Whole US dollars.
+[Return to the twelve-year table](../salary_cap/cap_tracker.md). As of May 12, 2014. Whole US dollars.
 
 Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.
 
@@ -29,7 +29,7 @@ Annual cells contain the working original or reconstructed contract schedule. Bl
 
 Original rookie salaries continue after the branch trade. Washington retains the original $472,688 bonus; Jacksonville carries salary only. No later Washington contract is imported.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Roy Miller
 
@@ -55,7 +55,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Branch record (signings sections 2 and 5).
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [signings](../../2013/offseason/free_agency/signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2013/offseason/free_agency/signings.md).
 
 ## Daryl Smith
 
@@ -81,7 +81,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Branch record (signings sections 2 and 5).
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [signings](../../2013/offseason/free_agency/signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2013/offseason/free_agency/signings.md).
 
 ## Lane Johnson
 
@@ -111,7 +111,7 @@ The 2017 fifth-year option is unexercised and is excluded from committed years. 
 
 Branch record (draftees); 2014 base derived as cap charge minus proration.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [draftees](../../2013/offseason/draft/draftees.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2013/offseason/draft/draftees.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Travis Kelce
 
@@ -141,7 +141,7 @@ Any future proven-performance escalator requires the branch’s actual qualifyin
 
 Branch record (draftees); base derived.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [draftees](../../2013/offseason/draft/draftees.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2013/offseason/draft/draftees.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Jordan Poyer
 
@@ -171,7 +171,7 @@ Any future proven-performance escalator requires the branch’s actual qualifyin
 
 Branch record (draftees); base derived.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [draftees](../../2013/offseason/draft/draftees.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2013/offseason/draft/draftees.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Sio Moore
 
@@ -201,7 +201,7 @@ Any future proven-performance escalator requires the branch’s actual qualifyin
 
 Branch record (draftees); base derived.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [draftees](../../2013/offseason/draft/draftees.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2013/offseason/draft/draftees.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Lavar Edwards
 
@@ -231,7 +231,7 @@ Any future proven-performance escalator requires the branch’s actual qualifyin
 
 Branch record (draftees); base derived.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [draftees](../../2013/offseason/draft/draftees.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2013/offseason/draft/draftees.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Bacarri Rambo
 
@@ -261,7 +261,7 @@ Any future proven-performance escalator requires the branch’s actual qualifyin
 
 Branch record (draftees); base derived.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [draftees](../../2013/offseason/draft/draftees.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2013/offseason/draft/draftees.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Brynden Trawick
 
@@ -288,7 +288,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Branch record (UDFA signings).
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2013/offseason/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2013/offseason/draft/udfa_signings.md).
 
 ## A.J. Bouye
 
@@ -315,7 +315,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Branch record (UDFA signings).
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2013/offseason/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2013/offseason/draft/udfa_signings.md).
 
 ## Adam Thielen
 
@@ -342,7 +342,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Branch record (UDFA signings).
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2013/offseason/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2013/offseason/draft/udfa_signings.md).
 
 ## C.J. Anderson
 
@@ -369,15 +369,15 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Branch record (UDFA signings).
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2013/offseason/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2013/offseason/draft/udfa_signings.md).
 
 ## Justin Blackmon
 
-Former player; departure March 31, 2014. [ledger](../../2014/ledger.md).
+Former player; departure March 31, 2014. [Departure record](../../2014/00_Team_Operations/Trades/completed_trades/trades.md).
 
 | Field | Detail |
 |---|---|
-| Position / status | WR / Traded to Indianapolis, March 31, 2014 (Entry 104) |
+| Position / status | WR / Traded to Indianapolis, March 31, 2014 |
 | Original contract | Rookie scale, 2012 pick #5 |
 | Signed | 2012 |
 | Term | 4 / 2015 |
@@ -389,17 +389,17 @@ The contract, its deferred bonus cash and the 2016 fifth-year option left with t
 
 ### Contract notes
 
-Original gross schedule: 2014 base $2,072,910 and $1.7M deferred roster cash; 2015 base $2,914,365 and about $1.39M deferred cash. These guaranteed-at-signing bonuses were already treated as signing bonus for cap purposes; do not add them to cap twice. Later actual suspension/tolling does not apply. Entry 91 applies the original suspension clause to remove future guarantees and adopts the gross schedule without an additional bonus-recovery credit.
+Original gross schedule: 2014 base $2,072,910 and $1.7M deferred roster cash; 2015 base $2,914,365 and about $1.39M deferred cash. These guaranteed-at-signing bonuses were already treated as signing bonus for cap purposes; do not add them to cap twice. Later actual suspension/tolling does not apply. The [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md) applies the original suspension clause to remove future guarantees and adopts the gross schedule without an additional bonus-recovery credit.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Cecil Shorts
 
-Former player; departure March 31, 2014. [ledger](../../2014/ledger.md).
+Former player; departure March 31, 2014. [Departure record](../../2014/00_Team_Operations/Trades/completed_trades/trades.md).
 
 | Field | Detail |
 |---|---|
-| Position / status | WR / Traded to Indianapolis, March 31, 2014 (Entry 104) |
+| Position / status | WR / Traded to Indianapolis, March 31, 2014 |
 | Original contract | Rookie, 2011 fourth round |
 | Signed | 2011 |
 | Term | 4 / 2014 |
@@ -411,7 +411,7 @@ No scheduled player-contract charge in this horizon. Any surviving liability app
 
 Planning estimate includes the projected $1.431M proven-performance base. Original un-escalated base is $739,383 (contract-total reconstruction), cap $850,228. Confirm branch offensive snap eligibility and the published 2014 tender before booking the increase; 104 receptions do not certify snap percentage.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Marcedes Lewis
 
@@ -438,7 +438,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Original 2011 contract carried through 2015. The 2015 salary reduction in real history is excluded; the original $6.65M base remains. Workout bonus continues at $150,000.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Mark Asper
 
@@ -465,15 +465,15 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Original 2012 four-year rookie deal continued through waiver claims. Buffalo keeps the $113,452 bonus; Jacksonville carries the remaining scheduled salaries. Conditional escalators require branch evidence.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Uche Nwaneri
 
-Former player; departure March 20, 2014. [ledger](../../2013/ledger.md).
+Former player; departure March 20, 2014. [Departure record](../../2014/00_Team_Operations/Trades/completed_trades/trades.md).
 
 | Field | Detail |
 |---|---|
-| Position / status | OG / Traded to Arizona, March 20, 2014 (package I, Entry 99) |
+| Position / status | OG / Traded to Arizona, March 20, 2014 (package I) |
 | Original contract | Veteran extension, 2010 |
 | Signed | 2010 |
 | Term | 5 / 2015 |
@@ -485,15 +485,15 @@ No scheduled player-contract charge in this horizon. Any surviving liability app
 
 2014 estimate: verified $3.775M base and $1M roster bonus plus carried $25,000 workout and $1,094,500 allocation. Original 2015 cash schedule remains missing; budget the same $4.8M cash and $5,894,500 charge as 2014 until replaced. That flat 2015 allowance is an estimate, not a recovered salary.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Will Rackley
 
-Former player; departure May 12, 2014. [ledger](../../2014/ledger.md).
+Former player; departure May 12, 2014. [Departure record](../../2014/00_Team_Operations/Trades/completed_trades/trades.md).
 
 | Field | Detail |
 |---|---|
-| Position / status | OG / Traded to Seattle, May 12, 2014 (Entry 110) |
+| Position / status | OG / Traded to Seattle, May 12, 2014 |
 | Original contract | Rookie, 2011 third round |
 | Signed | 2011 |
 | Term | 4 / 2014 |
@@ -505,7 +505,7 @@ No scheduled player-contract charge in this horizon. Any surviving liability app
 
 Planning estimate reserves the projected $1.431M proven-performance base. Original base is $772,401 (contract-total reconstruction), cap $927,269. His 2011 participation qualifies for one season; verify 2013 branch snaps and publication before booking the escalator.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Mike Brewster
 
@@ -531,15 +531,15 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Three-year $1,450,000 deal reconstructed as $390,000/$480,000/$570,000 bases plus $10,000 bonus. Final bonus year carries the $1 rounding remainder.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Jason Babin
 
-Former player; departure March 24, 2014. [ledger](../../2014/ledger.md).
+Former player; departure March 24, 2014. [Departure record](../../2014/00_Team_Operations/Trades/completed_trades/trades.md).
 
 | Field | Detail |
 |---|---|
-| Position / status | EDGE / Traded to Miami, March 24, 2014 (package D, Entry 102) |
+| Position / status | EDGE / Traded to Miami, March 24, 2014 (package D) |
 | Original contract | Veteran (Philadelphia, 2011), carried by December 2012 waiver claim |
 | Signed | 2011 |
 | Term | 5 / 2015 |
@@ -551,7 +551,7 @@ No scheduled player-contract charge in this horizon. Any surviving liability app
 
 Planning estimate follows the reported $6.175M annual compensation on the original deal. $6M salary is corroborated; the remaining $175,000 component mix needs confirmation. Philadelphia retains old bonus allocation. An original opt-out clause is reported, but no branch exercise has occurred.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Andre Branch
 
@@ -578,7 +578,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Original 2012 rookie schedule, including $25,000 annual workout bonus.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Ryan Davis
 
@@ -604,7 +604,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 December 2012 futures deal totals $900,000 across $405,000 in 2013 and $495,000 in 2014, with no bonus. Later real contracts do not extend it.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Jeremy Mincey
 
@@ -631,15 +631,15 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 2014 planning estimate uses the existing $4.475M salary lead and carried $25,000 workout bonus. 2015 base $4.9M is the residual of $20M less $8M bonus, 2012 $1M, 2013 $1.525M, 2014 $4.475M and four $25,000 workouts. This allocation assumes no additional component in the headline value; incentive and annual schedule verification remain open.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Tyson Alualu
 
-Former player; departure March 24, 2014. [ledger](../../2014/ledger.md).
+Former player; departure March 24, 2014. [Departure record](../../2014/00_Team_Operations/Trades/completed_trades/trades.md).
 
 | Field | Detail |
 |---|---|
-| Position / status | IDL / Traded to Houston, March 24, 2014 (package E, Entry 102) |
+| Position / status | IDL / Traded to Houston, March 24, 2014 (package E) |
 | Original contract | Rookie, 2010 first round |
 | Signed | 2010 |
 | Term | 5 / 2014 |
@@ -651,7 +651,7 @@ No scheduled player-contract charge in this horizon. Any surviving liability app
 
 Recovered 2014 salary and bonus allocations plus the $150,000 workout bonus. The original deal ends after 2014; no real 2015 replacement deal is imported.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## C.J. Mosley
 
@@ -677,7 +677,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Working allocation only: $7.5M base deal, $1M bonus and $1M 2012 salary/workout cash leave $5.5M across 2013 and 2014; allocate $2.75M cash per year pending the original schedule. $25,000 is reserved for the carried workout component. The reported $10M ceiling includes potential incentives; it is not a second base value.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Jeris Pendleton
 
@@ -704,15 +704,15 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Four-year rookie deal reconstructed from $2,151,392 total: $51,392 bonus plus $390,000/$480,000/$570,000/$660,000 bases. A conditional 2015 escalator is not pre-earned.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Russell Allen
 
-Former player; departure April 7, 2014. [ledger](../../2014/ledger.md).
+Former player; departure April 7, 2014. [Departure record](../../2014/00_Team_Operations/Trades/completed_trades/trades.md).
 
 | Field | Detail |
 |---|---|
-| Position / status | LB / Traded to Arizona, April 7, 2014 (Entry 106); his real retirement dated April 22, 2014 now applies at Arizona |
+| Position / status | LB / Traded to Arizona, April 7, 2014; his real retirement dated April 22, 2014 now applies at Arizona |
 | Original contract | Veteran, 2012 |
 | Signed | 2012 |
 | Term | 3 / 2014 |
@@ -724,7 +724,7 @@ No scheduled player-contract charge in this horizon. Any surviving liability app
 
 Planning base $1.975M matches the earlier memo and recovered contract notes. Add $25,000 workout and final $416,668 bonus allocation. Any incentive charge is separate: the prior $1M other-bonus entry cannot be copied without the branch earning test. No later retirement or real release is executed here.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Paul Posluszny
 
@@ -752,7 +752,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Original six-year contract retained. The $10M signing bonus is allocated over five years, 2011 to 2015: no 2016 proration. Original salary remains $7.45M with $50,000 workout bonus; the later real extension is excluded.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Julian Stanford
 
@@ -778,7 +778,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Three-year $1,445,000 deal reconstructed as rookie minimum bases plus $5,000 bonus. The final $1,668 allocation matches the original-contract residue reported by OTC; the actual later departure is not applied.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Mike Harris
 
@@ -805,7 +805,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Original four-year rookie minimum schedule and $115,788 bonus. Any 2015 proven-performance increase depends on branch participation; none is assumed earned.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Dwight Lowery
 
@@ -832,7 +832,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Original salaries recovered from October 2013 reporting; $3M bonus and $25,000 annual workout amount carry from the 2013 baseline. Schedule reconciles to $13.6M including 2012 and 2013. No real release is imported.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Chris Prosinski
 
@@ -858,7 +858,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Original 2014 base reconstructed from the four-year total less bonus and earlier salaries. Planning charge excludes an unverified proven-performance increase; if branch participation qualifies, the projected base rises to $1.431M and cap to $1,536,027.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Josh Scobee
 
@@ -885,7 +885,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Original 2012 deal retained through 2015, including $25,000 annual workout bonus. The $3.425M original 2015 salary is used before any actual later trade adjustment.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Bryan Anger
 
@@ -912,7 +912,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Original 2012 rookie schedule, including $20,000 annual workout bonus.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Montell Owens
 
@@ -939,15 +939,15 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Planning allocation: $9.275M extension value less $1.5M bonus leaves $7.775M, averaged over the three new years (about $2,591,667 cash each). This is a budgeting assumption, not the missing annual base schedule. $300,000 annual bonus allocation is consistent with the original 2013 residue. Existing guarantees and payment timing still require reconciliation.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Brad Meester
 
-Former player; departure March 11, 2014. [ledger](../../2013/ledger.md).
+Former player; departure March 11, 2014. [Departure record](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md).
 
 | Field | Detail |
 |---|---|
-| Position / status | C / Retired; contract expired at 4 p.m. March 11, 2014 (Entries 79 and 94) |
+| Position / status | C / Retired; contract expired at 4 p.m. March 11, 2014 |
 | Original contract | Veteran (branch re-signing) |
 | Signed | March 12, 2013 |
 | Term | 1 / 2013 |
@@ -961,7 +961,7 @@ No new playing contract is recorded for 2014 or later.
 
 Branch record (signings section 2).
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md).
 
 ## Tyler Bray
 
@@ -986,11 +986,11 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 85); minimum Confirmed Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
+The minimum salary is confirmed in the signing record. The [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md) completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
 
-Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.
+Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in the [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md); revise only through a recorded correction or contract event.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [signings](../../2014/free_agency/signings.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Richard Murphy
 
@@ -1015,11 +1015,11 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-2011 injured reserve does not count under Article 26; five active games in December 2012 do. Branch 2013 practice squad adds none. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
+2011 injured reserve does not count under Article 26; five active games in December 2012 do. Branch 2013 practice squad adds none. The [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md) completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
 
-Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.
+Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in the [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md); revise only through a recorded correction or contract event.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [signings](../../2014/free_agency/signings.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Jerrell Jackson
 
@@ -1044,11 +1044,11 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Promoted December 24, 2012 for the finale only; 2013 branch practice squad adds no credited season. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
+Promoted December 24, 2012 for the finale only; 2013 branch practice squad adds no credited season. The [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md) completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
 
-Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.
+Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in the [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md); revise only through a recorded correction or contract event.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [signings](../../2014/free_agency/signings.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Jerome Long
 
@@ -1073,11 +1073,11 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Kansas City practice squad for the first 15 games of 2012; Jacksonville signed him December 28 for the finale. Branch 2013 practice squad adds none. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
+Kansas City practice squad for the first 15 games of 2012; Jacksonville signed him December 28 for the finale. Branch 2013 practice squad adds none. The [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md) completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
 
-Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.
+Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in the [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md); revise only through a recorded correction or contract event.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [signings](../../2014/free_agency/signings.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## D'Anthony Smith
 
@@ -1102,11 +1102,11 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-2010 and 2011 injured reserve do not count for Article 26; eight games in 2012 supply one credited season. Branch 2013 practice squad adds none. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
+2010 and 2011 injured reserve do not count for Article 26; eight games in 2012 supply one credited season. Branch 2013 practice squad adds none. The [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md) completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
 
-Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.
+Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in the [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md); revise only through a recorded correction or contract event.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [signings](../../2014/free_agency/signings.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Antwon Blake
 
@@ -1131,11 +1131,11 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-2012 Jacksonville active-roster service supplies one credited season; branch 2013 practice squad adds none. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
+2012 Jacksonville active-roster service supplies one credited season; branch 2013 practice squad adds none. The [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md) completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
 
-Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.
+Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in the [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md); revise only through a recorded correction or contract event.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [signings](../../2014/free_agency/signings.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Chad Henne
 
@@ -1149,7 +1149,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 | Bonus terms | $1,200,000 signing bonus; $600,000; 2 |
 | Remaining unpaid salary guarantee | $800,000 |
 | Guarantee basis | $2,000,000 (signing bonus and 2014 base) |
-| Schedule basis | Branch re-signing, Entry 106 (negotiation record career/2014/free_agency/henne_negotiation_2014-04-04.md) |
+| Schedule basis | Branch re-signing ([negotiation record](../../2014/00_Team_Operations/Free_Agency/henne_negotiation_2014-04-04.md)) |
 
 ### Annual schedule
 
@@ -1160,9 +1160,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 106; negotiation record career/2014/free_agency/henne_negotiation_2014-04-04.md). Two years, $4.0M, $2.0M guaranteed, inside Stone's $2.5M-a-year ceiling. QB2 behind Cousins; no starting promise.
+Branch record ([negotiation record](../../2014/00_Team_Operations/Free_Agency/henne_negotiation_2014-04-04.md)). Two years, $4.0M, $2.0M guaranteed, inside Stone's $2.5M-a-year ceiling. QB2 behind Cousins; no starting promise.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md).
 
 ## Maurice Jones-Drew
 
@@ -1176,7 +1176,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 | Bonus terms | $1,500,000 signing bonus; $750,000; 2 |
 | Remaining unpaid salary guarantee | $1,750,000 |
 | Guarantee basis | $3,250,000 (signing bonus and 2014 base) |
-| Schedule basis | Branch re-signing, Entry 103 (negotiation record career/2014/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md) |
+| Schedule basis | Branch re-signing ([negotiation record](../../2014/00_Team_Operations/Free_Agency/jones_drew_and_wilson_negotiation_2014-03-28.md)) |
 
 ### Annual schedule
 
@@ -1187,9 +1187,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 103; negotiation record career/2014/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md). Two years, $7.0M, $3.25M guaranteed, inside Stone's two-year, $8.5M, $3.5M ceiling.
+Branch record ([negotiation record](../../2014/00_Team_Operations/Free_Agency/jones_drew_and_wilson_negotiation_2014-03-28.md)). Two years, $7.0M, $3.25M guaranteed, inside Stone's two-year, $8.5M, $3.5M ceiling.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md).
 
 ## Eugene Monroe
 
@@ -1203,7 +1203,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 | Bonus terms | $8,000,000; $1,600,000; 5 |
 | Remaining unpaid salary guarantee | $12,000,000 |
 | Guarantee basis | $20,000,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base) |
-| Schedule basis | Executed branch terms (Entry 95) |
+| Schedule basis | Executed branch terms |
 
 ### Annual schedule
 
@@ -1217,9 +1217,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 95; March 2014 replay log). Replaces the $11,654,000 tender once; 2016-2018 cap budgets include the full $500,000 active-game bonuses.
+Branch record ([March 2014 signing record](../../2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md)). Replaces the $11,654,000 tender once; 2016-2018 cap budgets include the full $500,000 active-game bonuses.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signings](../../2014/free_agency/signings.md), [march 2014 replay log](../../2014/free_agency/march_2014_replay_log.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [march 2014 replay log](../../2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md).
 
 ## Sen'Derrick Marks
 
@@ -1233,7 +1233,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signin
 | Bonus terms | $3,000,000; $750,000; 4 |
 | Remaining unpaid salary guarantee | $9,500,000 |
 | Guarantee basis | $12,500,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base) |
-| Schedule basis | Executed branch terms (Entry 95) |
+| Schedule basis | Executed branch terms |
 
 ### Annual schedule
 
@@ -1246,9 +1246,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signin
 
 ### Contract notes
 
-Branch record (Entry 95; March 2014 replay log). The 2016 active-game bonus was converted to base salary.
+Branch record ([March 2014 signing record](../../2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md)). The 2016 active-game bonus was converted to base salary.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signings](../../2014/free_agency/signings.md), [march 2014 replay log](../../2014/free_agency/march_2014_replay_log.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [march 2014 replay log](../../2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md).
 
 ## C.J. Wilson
 
@@ -1262,7 +1262,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signin
 | Bonus terms | $65,000 signing bonus; $65,000; 1 |
 | Remaining unpaid salary guarantee | $0 |
 | Guarantee basis | $65,000 (signing bonus) |
-| Schedule basis | Branch minimum re-signing, Entry 103 (negotiation record career/2014/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md) |
+| Schedule basis | Branch minimum re-signing ([negotiation record](../../2014/00_Team_Operations/Free_Agency/jones_drew_and_wilson_negotiation_2014-03-28.md)) |
 
 ### Annual schedule
 
@@ -1272,17 +1272,17 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signin
 
 ### Contract notes
 
-Branch record (Entry 103; negotiation record career/2014/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md). $730,000 minimum for four credited seasons plus a $65,000 signing bonus. Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified.
+Branch record ([negotiation record](../../2014/00_Team_Operations/Free_Agency/jones_drew_and_wilson_negotiation_2014-03-28.md)). $730,000 minimum for four credited seasons plus a $65,000 signing bonus. Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md).
 
 ## Alan Ball
 
-Former player; departure March 11, 2014. [ledger](../../2013/ledger.md).
+Former player; departure March 11, 2014. [Departure record](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md).
 
 | Field | Detail |
 |---|---|
-| Position / status | CB / Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's one-year offer stands, resolution rule open (Entry 94) |
+| Position / status | CB / Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's one-year offer stands, resolution rule open |
 | Original contract | Veteran (branch signing), March 12, 2013 |
 | Signed | See expiring-contract description |
 | Term | 2013 |
@@ -1296,15 +1296,15 @@ No new playing contract is recorded for 2014 or later.
 
 Branch record.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md).
 
 ## Brent Grimes
 
-Former player; departure March 11, 2014. [ledger](../../2013/ledger.md).
+Former player; departure March 11, 2014. [Departure record](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md).
 
 | Field | Detail |
 |---|---|
-| Position / status | CB / Unrestricted free agent at 4 p.m. March 11, 2014; the corner contingency makes him Jacksonville's fallback, resolution rule open (Entry 94) |
+| Position / status | CB / Unrestricted free agent at 4 p.m. March 11, 2014; the corner contingency makes him Jacksonville's fallback, resolution rule open |
 | Original contract | Veteran (branch signing), March 12, 2013, fully guaranteed |
 | Signed | See expiring-contract description |
 | Term | 2013 |
@@ -1318,7 +1318,7 @@ No new playing contract is recorded for 2014 or later.
 
 Branch record.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md).
 
 ## Jeremy Cain
 
@@ -1332,7 +1332,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 | Bonus terms | $0; $0; 0 |
 | Remaining unpaid salary guarantee | $0 |
 | Guarantee basis | $0 |
-| Schedule basis | Executed branch terms (Entry 99) |
+| Schedule basis | Executed branch terms |
 
 ### Annual schedule
 
@@ -1342,15 +1342,15 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 99; negotiation record career/2014/free_agency/cain_negotiation_2014-03-19.md). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from his real September 2014 Chicago figure (single source). Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified.
+Branch record ([negotiation record](../../2014/00_Team_Operations/Free_Agency/cain_negotiation_2014-03-19.md)). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from his real September 2014 Chicago figure (single source). Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signings](../../2014/free_agency/signings.md), [cain negotiation 2014-03-19](../../2014/free_agency/cain_negotiation_2014-03-19.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [cain negotiation 2014-03-19](../../2014/00_Team_Operations/Free_Agency/cain_negotiation_2014-03-19.md).
 
 ## Cameron Bradfield
 
 | Field | Detail |
 |---|---|
-| Position / status | OT / Lowest (right of first refusal) RFA tender, made by 4 p.m. March 11, 2014 (Entry 94); unsigned. No draft-pick compensation; Jacksonville may match any offer sheet |
+| Position / status | OT / Lowest (right of first refusal) RFA tender, made by 4 p.m. March 11, 2014; unsigned. No draft-pick compensation; Jacksonville may match any offer sheet |
 | Original contract | UDFA, 2011 (3 years) |
 | Signed | See expiring-contract description |
 | Term | 1 / 2014 (unsigned tender) |
@@ -1358,7 +1358,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signin
 | Bonus terms | Not established for a new contract |
 | Remaining unpaid salary guarantee | Conditional on signing |
 | Guarantee basis | Unsigned tender; $0 guaranteed before signing |
-| Schedule basis | Unsigned tender (Entry 94) |
+| Schedule basis | Unsigned tender |
 
 ### Annual schedule
 
@@ -1372,15 +1372,15 @@ The tender is unsigned. Its annual cash is conditional; the full salary guarante
 
 2014 RFA tender amounts Confirmed (published by March 6).
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [signings](../../2014/free_agency/signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md).
 
 ## Allen Reisner
 
-Former player; departure March 11, 2014. [ledger](../../2013/ledger.md).
+Former player; departure March 11, 2014. [Departure record](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md).
 
 | Field | Detail |
 |---|---|
-| Position / status | TE / Not tendered; unrestricted free agent at 4 p.m. March 11, 2014 (Entry 94) |
+| Position / status | TE / Not tendered; unrestricted free agent at 4 p.m. March 11, 2014 |
 | Original contract | UDFA (Minnesota, 2011), carried by waiver claim |
 | Signed | See expiring-contract description |
 | Term | 2013 |
@@ -1394,15 +1394,15 @@ No new playing contract is recorded for 2014 or later.
 
 Final year Supported (register).
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md).
 
 ## Kevin Rutland
 
-Former player; departure March 11, 2014. [ledger](../../2013/ledger.md).
+Former player; departure March 11, 2014. [Departure record](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md).
 
 | Field | Detail |
 |---|---|
-| Position / status | CB / Not tendered; unrestricted free agent at 4 p.m. March 11, 2014 (Entry 94) |
+| Position / status | CB / Not tendered; unrestricted free agent at 4 p.m. March 11, 2014 |
 | Original contract | UDFA, 2011 (3 years) |
 | Signed | See expiring-contract description |
 | Term | 2013 |
@@ -1416,13 +1416,13 @@ No new playing contract is recorded for 2014 or later.
 
 Supported (register).
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md).
 
 ## Toney Clemons
 
 | Field | Detail |
 |---|---|
-| Position / status | WR / Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014 (Entry 94); unsigned |
+| Position / status | WR / Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014; unsigned |
 | Original contract | Veteran minimum, late November 2012 (2 years) |
 | Signed | See expiring-contract description |
 | Term | 1 / 2014 (unsigned tender) |
@@ -1430,7 +1430,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 | Bonus terms | Not established for a new contract |
 | Remaining unpaid salary guarantee | Conditional on signing |
 | Guarantee basis | Unsigned tender; $0 guaranteed before signing |
-| Schedule basis | Unsigned tender (Entry 94) |
+| Schedule basis | Unsigned tender |
 
 ### Annual schedule
 
@@ -1444,13 +1444,13 @@ The tender is unsigned. Its annual cash is conditional; the full salary guarante
 
 Two credited seasons (2012: four games on the 53; 2013) is a branch inference from the register.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [signings](../../2014/free_agency/signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md).
 
 ## Mike Brown
 
 | Field | Detail |
 |---|---|
-| Position / status | WR / Exclusive-rights tender at the 2014 minimum for one credited season, made by 4 p.m. March 11, 2014 (Entry 94); unsigned |
+| Position / status | WR / Exclusive-rights tender at the 2014 minimum for one credited season, made by 4 p.m. March 11, 2014; unsigned |
 | Original contract | UDFA, 2012 |
 | Signed | See expiring-contract description |
 | Term | 1 / 2014 (unsigned tender) |
@@ -1458,7 +1458,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 | Bonus terms | Not established for a new contract |
 | Remaining unpaid salary guarantee | Conditional on signing |
 | Guarantee basis | Unsigned tender; $0 guaranteed before signing |
-| Schedule basis | Unsigned tender (Entry 94) |
+| Schedule basis | Unsigned tender |
 
 ### Annual schedule
 
@@ -1472,13 +1472,13 @@ The tender is unsigned. Its annual cash is conditional; the full salary guarante
 
 One credited season (two 2012 weeks on the 53 do not make a credited season; 2013) is a branch inference from the register.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [signings](../../2014/free_agency/signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md).
 
 ## Austin Pasztor
 
 | Field | Detail |
 |---|---|
-| Position / status | OG / Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014 (Entry 94); unsigned |
+| Position / status | OG / Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014; unsigned |
 | Original contract | Practice squad September 17, 2012; promoted December 14, 2012 |
 | Signed | See expiring-contract description |
 | Term | 1 / 2014 (unsigned tender) |
@@ -1486,7 +1486,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 | Bonus terms | Not established for a new contract |
 | Remaining unpaid salary guarantee | Conditional on signing |
 | Guarantee basis | Unsigned tender; $0 guaranteed before signing |
-| Schedule basis | Unsigned tender (Entry 94) |
+| Schedule basis | Unsigned tender |
 
 ### Annual schedule
 
@@ -1500,7 +1500,7 @@ The tender is unsigned. Its annual cash is conditional; the full salary guarante
 
 Two credited seasons (2012: three games on the 53 from December 14; 2013) is a branch inference from the register.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [signings](../../2014/free_agency/signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md).
 
 ## John Parker Wilson
 
@@ -1526,7 +1526,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 Official Jaguars transactions confirm the December 30, 2012 futures signing. The two-year length and no-bonus structure are adopted simulation terms, using the recovered $630,000 2013 minimum and $730,000 2014 four-season minimum.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Jonathan Grimes
 
@@ -1552,7 +1552,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 The 2012 Jets active-roster agreement, carried through Houston to Jacksonville, is modeled as a three-year minimum deal ending in 2014. Its final $570,000 salary uses two credited seasons in this branch. The original waived Houston UDFA bonus is not transferred. The later real Houston contract is a different deal and is excluded.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Alterraun Verner
 
@@ -1566,7 +1566,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 | Bonus terms | $4,000,000; $1,000,000; 4 |
 | Remaining unpaid salary guarantee | $11,000,000 |
 | Guarantee basis | $15,000,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base) |
-| Schedule basis | Executed branch terms (Entry 95) |
+| Schedule basis | Executed branch terms |
 
 ### Annual schedule
 
@@ -1579,9 +1579,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 95; March 2014 replay log). The historical Tampa Bay signing does not occur.
+Branch record ([March 2014 signing record](../../2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md)). The historical Tampa Bay signing does not occur.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signings](../../2014/free_agency/signings.md), [march 2014 replay log](../../2014/free_agency/march_2014_replay_log.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [march 2014 replay log](../../2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md).
 
 ## Aqib Talib
 
@@ -1595,7 +1595,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signin
 | Bonus terms | $6,500,000; $1,300,000; 5 |
 | Remaining unpaid salary guarantee | $15,000,000 |
 | Guarantee basis | $21,500,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base) |
-| Schedule basis | Executed branch terms (Entry 95) |
+| Schedule basis | Executed branch terms |
 
 ### Annual schedule
 
@@ -1609,9 +1609,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signin
 
 ### Contract notes
 
-Branch record (Entry 96; March 2014 replay log). The historical Denver signing does not occur.
+Branch record ([March 2014 signing record](../../2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md)). The historical Denver signing does not occur.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signings](../../2014/free_agency/signings.md), [march 2014 replay log](../../2014/free_agency/march_2014_replay_log.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [march 2014 replay log](../../2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md).
 
 ## Hakeem Nicks
 
@@ -1625,7 +1625,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signin
 | Bonus terms | $2,000,000; $2,000,000; 1 |
 | Remaining unpaid salary guarantee | $2,500,000 |
 | Guarantee basis | $4,500,000 fully guaranteed at signing (signing bonus plus 2014 base) |
-| Schedule basis | Executed branch terms (Entry 95) |
+| Schedule basis | Executed branch terms |
 
 ### Annual schedule
 
@@ -1635,9 +1635,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signin
 
 ### Contract notes
 
-Branch record (Entry 97; March 2014 replay log). Cap budget reserves the full $500,000 active-game bonuses; the historical Indianapolis signing does not occur.
+Branch record ([March 2014 signing record](../../2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md)). Cap budget reserves the full $500,000 active-game bonuses; the historical Indianapolis signing does not occur.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signings](../../2014/free_agency/signings.md), [march 2014 replay log](../../2014/free_agency/march_2014_replay_log.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [march 2014 replay log](../../2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md).
 
 ## Andrew Hawkins
 
@@ -1651,7 +1651,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signin
 | Bonus terms | $4,000,000; $1,000,000; 4 |
 | Remaining unpaid salary guarantee | $4,000,000 |
 | Guarantee basis | $8,000,000 fully guaranteed (signing bonus, 2014 base and $2,200,000 of the 2015 base) |
-| Schedule basis | Executed branch terms (Entry 95) |
+| Schedule basis | Executed branch terms |
 
 ### Annual schedule
 
@@ -1664,9 +1664,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signin
 
 ### Contract notes
 
-Branch record (Entry 97; March 2014 replay log). No draft-pick compensation to Cincinnati (original-round tender, undrafted); the historical Cleveland offer sheet does not occur.
+Branch record ([March 2014 signing record](../../2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md)). No draft-pick compensation to Cincinnati (original-round tender, undrafted); the historical Cleveland offer sheet does not occur.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signings](../../2014/free_agency/signings.md), [march 2014 replay log](../../2014/free_agency/march_2014_replay_log.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [march 2014 replay log](../../2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md).
 
 ## Daniel Te'o-Nesheim
 
@@ -1680,7 +1680,7 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signin
 | Bonus terms | $3,000,000; $1,000,000; 3 |
 | Remaining unpaid salary guarantee | $3,000,000 |
 | Guarantee basis | $6,000,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base) |
-| Schedule basis | Executed branch terms (Entry 95) |
+| Schedule basis | Executed branch terms |
 
 ### Annual schedule
 
@@ -1692,9 +1692,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signin
 
 ### Contract notes
 
-Branch record (Entry 98; negotiation record career/2014/free_agency/teo_nesheim_negotiation_2014-03-18.md). Active-game bonuses reserved in full.
+Branch record ([negotiation record](../../2014/00_Team_Operations/Free_Agency/teo_nesheim_negotiation_2014-03-18.md)). Active-game bonuses reserved in full.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [signings](../../2014/free_agency/signings.md), [teo nesheim negotiation 2014-03-18](../../2014/free_agency/teo_nesheim_negotiation_2014-03-18.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [teo nesheim negotiation 2014-03-18](../../2014/00_Team_Operations/Free_Agency/teo_nesheim_negotiation_2014-03-18.md).
 
 ## Aaron Donald
 
@@ -1723,9 +1723,9 @@ Any future proven-performance escalator requires the branch’s actual qualifyin
 
 ### Contract notes
 
-Branch record (Entry 108): selected May 8, 2014 at No. 13; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 13 (Aaron Donald, St. Louis) in the nflverse/OTC historical contracts file, $10,136,500 total and $10,136,500 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. The first-round fifth-year option for 2018 is unexercised and not booked. Not the player's real contract.
+Branch record: selected May 8, 2014 at No. 13; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 13 (Aaron Donald, St. Louis) in the nflverse/OTC historical contracts file, $10,136,500 total and $10,136,500 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. The first-round fifth-year option for 2018 is unexercised and not booked. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [draftees](../../2014/draft/draftees.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/03_Draft/draftees.md).
 
 ## Joel Bitonio
 
@@ -1754,9 +1754,9 @@ Any future proven-performance escalator requires the branch’s actual qualifyin
 
 ### Contract notes
 
-Branch record (Entry 108): selected May 8, 2014 at No. 26; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 26 (Marcus Smith, Philadelphia) in the nflverse/OTC historical contracts file, $7,799,102 total and $6,315,587 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years, odd dollars in 2017. The first-round fifth-year option for 2018 is unexercised and not booked. Not the player's real contract.
+Branch record: selected May 8, 2014 at No. 26; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 26 (Marcus Smith, Philadelphia) in the nflverse/OTC historical contracts file, $7,799,102 total and $6,315,587 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years, odd dollars in 2017. The first-round fifth-year option for 2018 is unexercised and not booked. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [draftees](../../2014/draft/draftees.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/03_Draft/draftees.md).
 
 ## Davante Adams
 
@@ -1785,9 +1785,9 @@ Any future proven-performance escalator requires the branch’s actual qualifyin
 
 ### Contract notes
 
-Branch record (Entry 108): selected May 9, 2014 at No. 38; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 38 (Austin Seferian-Jenkins, Tampa Bay) in the nflverse/OTC historical contracts file, $5,254,932 total and $3,220,629 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+Branch record: selected May 9, 2014 at No. 38; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 38 (Austin Seferian-Jenkins, Tampa Bay) in the nflverse/OTC historical contracts file, $5,254,932 total and $3,220,629 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [draftees](../../2014/draft/draftees.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/03_Draft/draftees.md).
 
 ## Trai Turner
 
@@ -1816,9 +1816,9 @@ Any future proven-performance escalator requires the branch’s actual qualifyin
 
 ### Contract notes
 
-Branch record (Entry 108): selected May 9, 2014 at No. 90; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 90 (Donte Moncrief, Indianapolis) in the nflverse/OTC historical contracts file, $2,808,520 total and $543,520 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000, the 2017 base carrying the slot contract's $45,000 above the minimum); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+Branch record: selected May 9, 2014 at No. 90; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 90 (Donte Moncrief, Indianapolis) in the nflverse/OTC historical contracts file, $2,808,520 total and $543,520 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000, the 2017 base carrying the slot contract's $45,000 above the minimum); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [draftees](../../2014/draft/draftees.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/03_Draft/draftees.md).
 
 ## Telvin Smith
 
@@ -1847,9 +1847,9 @@ Any future proven-performance escalator requires the branch’s actual qualifyin
 
 ### Contract notes
 
-Branch record (Entry 108): selected May 10, 2014 at No. 129; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 129 (Dontae Johnson, San Francisco) in the nflverse/OTC historical contracts file, $2,620,544 total and $400,544 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+Branch record: selected May 10, 2014 at No. 129; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 129 (Dontae Johnson, San Francisco) in the nflverse/OTC historical contracts file, $2,620,544 total and $400,544 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [draftees](../../2014/draft/draftees.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/03_Draft/draftees.md).
 
 ## Corey Linsley
 
@@ -1878,9 +1878,9 @@ Any future proven-performance escalator requires the branch’s actual qualifyin
 
 ### Contract notes
 
-Branch record (Entry 108): selected May 10, 2014 at No. 153; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 153 (Cyril Richardson, Buffalo) in the nflverse/OTC historical contracts file, $2,412,000 total and $192,000 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+Branch record: selected May 10, 2014 at No. 153; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 153 (Cyril Richardson, Buffalo) in the nflverse/OTC historical contracts file, $2,412,000 total and $192,000 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [draftees](../../2014/draft/draftees.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/03_Draft/draftees.md).
 
 ## Charles Leno Jr.
 
@@ -1909,9 +1909,9 @@ Any future proven-performance escalator requires the branch’s actual qualifyin
 
 ### Contract notes
 
-Branch record (Entry 108): selected May 10, 2014 at No. 168; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 168 (Marquis Spruill, Atlanta) in the nflverse/OTC historical contracts file, $2,391,480 total and $171,480 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+Branch record: selected May 10, 2014 at No. 168; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 168 (Marquis Spruill, Atlanta) in the nflverse/OTC historical contracts file, $2,391,480 total and $171,480 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [draftees](../../2014/draft/draftees.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/03_Draft/draftees.md).
 
 ## Jemea Thomas
 
@@ -1940,9 +1940,9 @@ Any future proven-performance escalator requires the branch’s actual qualifyin
 
 ### Contract notes
 
-Branch record (Entry 108): selected May 10, 2014 at No. 205; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 205 (Luke Bowanko, Jacksonville (real)) in the nflverse/OTC historical contracts file, $2,314,052 total and $94,052 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+Branch record: selected May 10, 2014 at No. 205; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 205 (Luke Bowanko, Jacksonville (real)) in the nflverse/OTC historical contracts file, $2,314,052 total and $94,052 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [draftees](../../2014/draft/draftees.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/03_Draft/draftees.md).
 
 ## Malcolm Butler
 
@@ -1971,9 +1971,9 @@ Any future proven-performance escalator requires the branch’s actual qualifyin
 
 ### Contract notes
 
-Branch record (Entry 108): selected May 10, 2014 at No. 241; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 241 (Christian Bryant, St. Louis) in the nflverse/OTC historical contracts file, $2,269,000 total and $49,000 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+Branch record: selected May 10, 2014 at No. 241; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 241 (Christian Bryant, St. Louis) in the nflverse/OTC historical contracts file, $2,269,000 total and $49,000 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [draftees](../../2014/draft/draftees.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/03_Draft/draftees.md).
 
 ## Andrew Norwell
 
@@ -1999,9 +1999,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
 
 ## Christian Jones
 
@@ -2027,9 +2027,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
 
 ## Allen Hurns
 
@@ -2055,9 +2055,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
 
 ## Cornelius Lucas
 
@@ -2083,9 +2083,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
 
 ## Adrian Phillips
 
@@ -2111,9 +2111,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
 
 ## Matt Feiler
 
@@ -2139,9 +2139,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
 
 ## Cameron Brate
 
@@ -2167,9 +2167,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
 
 ## Todd Davis
 
@@ -2195,9 +2195,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
 
 ## Tyler Shatley
 
@@ -2223,9 +2223,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
 
 ## Tyler Larsen
 
@@ -2251,9 +2251,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
 
 ## Connor Shaw
 
@@ -2279,9 +2279,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
 
 ## Kasim Edebali
 
@@ -2307,9 +2307,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
 
 ## Marcel Jensen
 
@@ -2335,9 +2335,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
 
 ## Gator Hoskins
 
@@ -2363,9 +2363,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
 
 ## Jackson Jeffcoat
 
@@ -2391,9 +2391,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
 
 ## Taylor Gabriel
 
@@ -2419,9 +2419,9 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
 
 ## Casey Kreiter
 
@@ -2447,6 +2447,6 @@ Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contra
 
 ### Contract notes
 
-Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
 
-Sources: [contracts](../../2014/finances/player_contracts/contracts.md), [contract status](../../2014/finances/player_contracts/contract_status.md), [udfa signings](../../2014/draft/udfa_signings.md).
+Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).

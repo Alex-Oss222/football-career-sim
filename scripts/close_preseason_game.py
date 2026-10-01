@@ -6,20 +6,20 @@
   python scripts/close_preseason_game.py N --season YEAR --close --continue ANSWER.json
 
 Mirrors scripts/close_week.py for one dated preseason fixture
-(career/YEAR/.../preseason_games/fixtures.json). Jacksonville's TeamInput is
+(career/YEAR/04_Training_Camp_and_Preseason/Preseason_Games/fixtures.json). Jacksonville's TeamInput is
 built from the current roster, the game's frozen depth chart and
-game_0N/call_sheet.json; the opponent's from game_0N/opponent_roster.json
+Game_0N/call_sheet.json; the opponent's from Game_0N/opponent_roster.json
 (runtime/preseason.py documents both files). The two-club package is frozen
 to .sim_cache/YEAR/preseason_0N_inputs.json, gated by the TeamInput
 exclusivity check, and closed exactly once through the private Engine State
 service with the fixture's own event id, Jacksonville user controlled (kernel
 2014.4 E2). A consequential Jacksonville removal writes
-game_0N/paused_game.json and exits 2; Stone answers {"choices": {...}} and
+Game_0N/paused_game.json and exits 2; Stone answers {"choices": {...}} and
 reruns with --continue ANSWER.json, which reuses the frozen package so the
 same packet closes through the same event reference.
 
 After closure the full receipt is preserved under the preseason receipt
-directory, the box-score block in game_0N/output.md is filled (season
+directory, the box-score block in Game_0N/output.md is filled (season
 gamebook) and the preseason stat views are rendered. It never writes under
 regular_season/ or the standings, never advances the private snapshot, and
 refuses to close an event whose receipt already exists.
@@ -151,7 +151,7 @@ def write_receipt(package, paths, result):
 
 
 def fill_output(package, paths):
-    """Place the box-score block in game_0N/output.md when that file exists, and render it."""
+    """Place the box-score block in Game_0N/output.md when that file exists, and render it."""
     from scripts.render_box_score import fill
     game = the_game(package)
     output = paths.preseason_folder(package["preseason_game"]) / "output.md"

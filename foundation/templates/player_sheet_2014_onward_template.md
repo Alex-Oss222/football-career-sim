@@ -3,7 +3,8 @@
 **Team:**  
 **Season:**  
 **Profile status:** Working player card  
-**Evaluation policy:** Retain starting personnel judgment during the season; review at season close. Update bottom statistics after each closed game.  
+**Assessment stage:** Opening annual assessment  
+**Evaluation policy:** Exactly two full assessments: this opening baseline, maintained with dated updates through the year, and a separate final assessment after season close. Update statistics after each closed game.  
 **Checkpoint:**  
 **Age:**  
 **Position:**  
@@ -15,6 +16,20 @@
 > abilities carry forward from the prior profile unless new causal evidence
 > supports a change. A grade summarizes the staff view at this checkpoint; it
 > does not directly set play probabilities, potential, or future development.
+
+## How this card is maintained
+
+Record the opening assessment once, using the previous final assessment and evidence available when this player joins. Retain that original judgment. Spring, camp, preseason and season reports supply specific coaching findings; add a dated update below when they materially change or qualify the staff view. Do not produce another whole-player assessment at each phase or automatically change a grade after a practice.
+
+### Opening and final modes
+
+Use this same 2014-onward format for both annual assessments. The opening card lives at `career/[year]/00_Team_Operations/Team/Player_Cards/[player].md`. Keep its initial grades and interpretation intact, append dated coaching updates, and refresh only its statistics after closed games.
+
+Write the separate final assessment only after the completed season and actual player and coach exit reviews, at `career/[year]/07_Season_Review/Player_Assessments/[player].md`. Set **Profile status** to `Final annual assessment`, **Assessment stage** to `Final annual assessment`, and **Checkpoint** to the season-close date. Link the same-year opening card and its dated updates beneath the header. Set **Evaluation policy** to `Frozen final assessment; preserve the opening baseline and dated evidence separately.`
+
+In final mode retain every personnel section below: Overall and position traits, vs. Average / vs. Best / vs. Worst, established player state, year-over-year change, play style, strengths, weaknesses and evidence limits. Write the completed-season staff judgment from the actual work; explain meaningful changes from the opening view in the final-only section below. The year-over-year table compares with the previous year's final assessment. Keep both full yearly statistics tables at the bottom with previous years preserved and the completed season's receipt-derived rows frozen. Link the year's dated updates instead of copying them into another running journal. Do not use the 2013-only position-baseline template for a 2014-onward final assessment.
+
+A departure closes the player's Jacksonville work at its actual date. Retain that evidence and any actual exit review; do not invent the rest of his season or create a third full assessment.
 
 ## Player grades
 
@@ -172,8 +187,17 @@ Best and worst still mean trait-specific, opportunity-qualified references in
 the checkpoint's NFL season, not one universal best or a one-snap worst player.
 Current grades require current recorded evidence. Reuse the prior established
 player, including the completed 2013 baseline, without manufacturing change.
-Create working cards now for the current controlled roster. Finalize the personnel
-review when the season closes; do not populate future statistics ahead of play.
+Create the opening card when the player joins the controlled roster. Keep dated coaching updates here and write the separate final assessment only after season close; do not populate future statistics ahead of play.
+
+## Change from the opening assessment
+
+[Final mode only. Compare the opening view with the completed season: what the player could do reliably, what changed in his technique or decisions, how he fit the jobs actually assigned, and what remained untested. Explain any revised grade with dated football evidence and contrary observations. Include actual player and coach exit-review findings without inventing their statements. Link the preserved opening card and relevant reports. Omit this section from the opening card.]
+
+## Dated coaching updates
+
+### [Actual date] | [Work that changed or qualified the view]
+
+[State the job, what the linked phase/game record demonstrated, the staff's interpretation and the next useful check. Preserve contrary evidence and the limits of the opportunity. A new role is recorded only when actually decided. This is an update to the opening assessment, not a fresh overall assessment or another grade table. Opening mode only; omit until there is a material update. In final mode link these notes from the opening card rather than duplicate them.]
 
 ## Previous-season production
 

@@ -1,4 +1,4 @@
-<!-- sim-meta: {"event_entry": 8, "kind": "phase_output", "status": "COMPLETE", "through": "2013-05-05"} -->
+<!-- sim-meta: {"event_ref": "2013-05-03-rookie-contracts-and-rookie-minicamp-completed", "kind": "phase_output", "status": "COMPLETE", "through": "2013-05-05"} -->
 
 # Jacksonville Jaguars — 2013 Rookie Minicamp Output
 
@@ -16,7 +16,7 @@ Jacksonville's real 2013 schedule gave a new-head-coach club an April 2 official
 
 ## Control, contracts, medical and onboarding gate
 
-Caldwell executed all seven slot-based drafted-rookie contracts on May 2. Current contract and Top-51 accounting is controlled by `draft/draftees.md`, `draft/udfa_signings.md`, `current_cap_worksheet.md`, and ledger Entry 9; those later accounting corrections do not change this camp's football result. All eleven therefore entered camp under established Jacksonville control.
+Caldwell executed all seven slot-based drafted-rookie contracts on May 2. Current contract and Top-51 accounting is controlled by `draft/draftees.md`, `draft/udfa_signings.md`, `current_cap_worksheet.md`, and [May 5 roster and financial correction](../initial_cap_sheet.md); those later accounting corrections do not change this camp's football result. All eleven therefore entered camp under established Jacksonville control.
 
 The normal onboarding sequence was compressed honestly into the short post-draft window:
 
@@ -62,3 +62,5 @@ Jacksonville held the planned Rookie Welcome Family Dinner during the minicamp w
 ## Phase close
 
 Rookie minicamp closed May 5. All eleven participants leave with a specific next correction; no depth chart, final roster place, package share, touch allocation, or permanent role was decided. The next scheduled football phase is the verified offseason program/OTA sequence beginning with the May 13 OTA date. **OTAs have not been run.**
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - May 5, 2013 - rookie minicamp closed", "original_close": "Commit closed \u2014 Canonical update - May 5, 2013 - rookie minicamp closed \u2014 canonical through rookie minicamp, before OTAs", "sequence": 8, "through": "2013-05-05"}, "date": "2013-05-03", "date_end": "2013-05-05", "id": "2013-05-03-rookie-contracts-and-rookie-minicamp-completed", "status": "closed", "summary": "Jacksonville completed rookie minicamp."} -->

@@ -39,7 +39,7 @@ No Jacksonville draft-day trade closed. The Cousins and Gabbert/Wilson transacti
 
 The seven selections initially created exclusive negotiating rights. Caldwell converted all seven into signed rookie contracts on **May 2, 2013**, before rookie minicamp. Signing does not guarantee a starting job, workload, medical clearance beyond the event-specific record, or final roster place.
 
-**Contemporaneous evidence:** `library/2013_draft_class.md` (April 24 pre-selection snapshot), `library/2013_draft_pool_registry.md` (eligibility), `library/2013_draft_information_gates.md` (release-date controls), and the 2013 rookie-pool sources in the May 5 cap worksheet (Git `d25c8cf`, the last version of `../current_cap_worksheet.md` before its September rewrite in `4cf2ad7`) and the May 5 section of `../initial_cap_sheet.md`. **Jacksonville recommendation:** `player_draft_board.md`. **Ex-ante packet:** `career/2013/ledger.md`, Entry 4.
+**Contemporaneous evidence:** `library/2013_draft_class.md` (April 24 pre-selection snapshot), `library/2013_draft_pool_registry.md` (eligibility), `library/2013_draft_information_gates.md` (release-date controls), and the 2013 rookie-pool sources in the May 5 cap worksheet (Git `d25c8cf`, the last version of `../current_cap_worksheet.md` before its September rewrite in `4cf2ad7`) and the May 5 section of `../initial_cap_sheet.md`. **Jacksonville recommendation:** `player_draft_board.md`. **Ex-ante packet:** [April 24 draft decision record](player_draft_board.md).
 
 ## Post-draft rookie free agents
 
@@ -60,8 +60,10 @@ Caldwell completed all seven four-year rookie contracts before the verified May 
 | #208 | Tyler Bray | 4 years | $68,900 | $422,225 | $512,225 | $602,225 | $692,225 | $2,228,900 |
 | **Total** | | | **$17,736,408** | **$7,269,102** | **$8,980,407** | **$10,666,712** | **$12,403,517** | **$39,319,738** |
 
-**Bray supersession (administrative note, Entry 87):** Bray's rookie contract ended when he was waived on August 31, 2013 (`../../preseason/final_roster_cuts.md`), so his 2014 to 2016 rookie charges above no longer apply. His 2014 contract is the reserve/future deal signed February 3, 2014 at a $420,000 base (ledger Entry 85; `../../../2014/offseason/free_agency/signings.md`). The table is kept as the May 2 execution record.
+**Bray supersession (administrative note, [Monroe franchise designation](../../../2014/00_Team_Operations/Free_Agency/signings.md)):** Bray's rookie contract ended when he was waived on August 31, 2013 (`../../preseason/final_roster_cuts.md`), so his 2014 to 2016 rookie charges above no longer apply. His 2014 contract is the reserve/future deal signed February 3, 2014 at a $420,000 base ([2014 reserve/future signings](../../../2014/00_Team_Operations/Free_Agency/signings.md); `../../../2014/offseason/free_agency/signings.md`). The table is kept as the May 2 execution record.
 
 The prior branch total of **$7,326,170** for 2013 was incorrect and is superseded. Gross rookie charges are also not the same as net Top-51 effect. The May 5 worksheet (Git `d25c8cf`) calculated the drafted-rookie Top-51 effect at **$4,134,102** as of May 5; that figure is historical, because Top-51 accounting ended September 4. Current regular-season accounting is in `../current_cap_worksheet.md`.
 
 **Slot source:** OverTheCap's contemporaneous February 2013 Jacksonville rookie-pool estimate, cross-checked to the 2011 CBA Article 7 structure. The project uses the pick-slot economics because Jacksonville selected these players at those branch draft positions.
+
+<!-- event-record: {"date": "2013-04-25", "date_end": "2013-04-27", "id": "2013-04-25-2013-nfl-draft-completed", "status": "closed", "summary": "Jacksonville selected seven players in the NFL Draft."} -->

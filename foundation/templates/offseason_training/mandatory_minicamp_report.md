@@ -4,7 +4,12 @@ Use with the [report instructions](README.md). This camp uses the same non-conta
 
 ## Report to render
 
-# [Team] | Mandatory minicamp | [Practice dates; handoff date if different]
+# Mandatory minicamp | [Team] | [Season]
+
+**Location:** [Recorded facility or field; do not invent one]  
+**Dates:** [Actual practice dates; physicals and staff handoff identified separately]  
+**Days completed:** [Actual practice days]  
+**Work addressed:** [Retained work, corrections and camp questions addressed]
 
 [Lead with what the group could run at the end of spring and the most important remaining football question. Briefly establish the participants and non-contact setting. Physicals and staff-review days are not extra practices.]
 

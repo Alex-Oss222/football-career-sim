@@ -24,7 +24,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 CACHE = ROOT / ".sim_cache" / "compensatory_2014"
-OUT = ROOT / "career" / "2014" / "draft" / "compensatory" / "inputs.json"
+OUT = ROOT / 'career/2014/03_Draft/compensatory/inputs.json'
 ROSTER_URL = "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2012.csv"
 CONTRACTS_URL = "https://github.com/nflverse/nflverse-data/releases/download/contracts/historical_contracts.csv.gz"
 NICK = {"49ers": "SF", "Bears": "CHI", "Bengals": "CIN", "Bills": "BUF", "Broncos": "DEN", "Browns": "CLE",

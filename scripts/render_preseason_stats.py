@@ -3,9 +3,9 @@
 
   python scripts/render_preseason_stats.py --season YEAR
 
-Reads career/YEAR/.../preseason_games/statistics/records/game_receipts/ and
+Reads career/YEAR/04_Training_Camp_and_Preseason/Preseason_Games/statistics/records/game_receipts/ and
 writes `preseason_totals.json` and `preseason_stats.md` beside it under
-preseason_games/statistics/. Preseason statistics are aggregated with the
+04_Training_Camp_and_Preseason/Preseason_Games/statistics/. Preseason statistics are aggregated with the
 same runtime.statbook code as the regular season but never join the
 regular-season statbook, standings, awards or draft order, and no league
 ranking is drawn from them. Nothing is typed by hand: every number comes

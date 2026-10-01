@@ -36,3 +36,5 @@ Return estimates are medical projections. No reactive league event followed from
 | Slot (ET) | Game |
 |---|---|
 | Sun. Feb. 2, 2014, 6:30 p.m., FOX, MetLife Stadium (neutral site) | Minnesota Vikings (NFC 1) vs. Buffalo Bills (AFC 6; designated home team) |
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - January 19, 2014 - Conference championships closed", "original_close": "Commit closed - Canonical update - January 19, 2014 - Conference championships closed - canonical through January 19, 2014", "sequence": 65, "through": "2014-01-19"}, "date": "2014-01-19", "id": "2014-01-19-conference-championships-closed-background", "season": 2013, "status": "closed", "summary": "Buffalo and Minnesota won the conference championships."} -->

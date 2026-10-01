@@ -20,3 +20,5 @@ Johnson and Monroe identified their protection work but each lost leverage once 
 - Romeo Crennel called the defense; the result supplied alignment, rush-lane, fit, coverage and tackling evidence without transferring defensive calling to Stone.
 - Alan Lowry controlled special teams. Coverage credit required an observed lane, substitution/communication and pursuit responsibility rather than mere participation.
 - No regular-season record or standings changed.
+
+<!-- event-record: {"date": "2013-08-29", "id": "2013-08-29-preseason-game-4-closed", "status": "closed", "summary": "Jacksonville beat Atlanta 33-27 and finished preseason 2-2."} -->

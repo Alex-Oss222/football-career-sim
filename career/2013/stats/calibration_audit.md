@@ -7,7 +7,7 @@ League-wide receipts compared with the sourced 2012 shapes in `library/data/2012
 
 ## Legacy cohort: kernels 2013.4/2013.5
 
-**Status:** legacy kernel, known ledger defects (Entries 35/38), detection only; never grounds to rerun.
+**Status:** legacy kernel, known snap-record defects (see the [September 8, 2013 Kansas City game report](../../2013/regular_season/week_01_kansas_city_at_jacksonville/output.md) and [September 22, 2013 Seattle game report](../../2013/regular_season/week_03_jacksonville_at_seattle/output.md)), detection only; never grounds to rerun.
 **Team-games audited:** 96.
 
 | Metric | Observed | 2012 band centre | Tolerance | Status |
@@ -39,7 +39,7 @@ Drive-model rows and ledger coherence: not measurable for this cohort (legacy re
 
 ## Kernel 2013.6 cohort (Weeks 4-8, detection only)
 
-**Status:** known field-position, label and late-game defects (Entries 40-45 and the 2013.7 adoption entry); detection only; never grounds to rerun.
+**Status:** known field-position, label and late-game defects (see the [documented 2013.6 limitations and 2013.7 adoption](../../../runtime/README.md)); detection only; never grounds to rerun.
 **Team-games audited:** 144.
 
 | Metric | Observed | 2012 band centre | Tolerance | Status |
@@ -67,7 +67,7 @@ Drive-model rows and ledger coherence: not measurable for this cohort (legacy re
 | third down attempts per team game | 13.4 | 13.3 | ±2.5 | WITHIN |
 | third down rate | 0.384 | 0.383 | ±0.060 | WITHIN |
 
-Points: non-offensive touchdowns, their tries and two-point tries are not modelled by design (about 1.7-2.0 points per team game below the 2012 centre); the ±5.0 tolerance is deliberately not tightened. Yards per team game are net of sack yards, as the 2012 centre is (corrected in Entry 55; earlier audits compared gross passing yards and read about 14 yards high).
+Points: non-offensive touchdowns, their tries and two-point tries are not modelled by design (about 1.7-2.0 points per team game below the 2012 centre); the ±5.0 tolerance is deliberately not tightened. Yards per team game are net of sack yards, as the 2012 centre is (see the correction in the [December 1, 2013 Cleveland game report](../../2013/regular_season/week_13_jacksonville_at_cleveland/output.md); earlier audits compared gross passing yards and read about 14 yards high).
 
 ### Drive model rows
 
@@ -180,7 +180,7 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` over every receipt
 | third down attempts per team game | 13.4 | 13.3 | ±2.5 | WITHIN |
 | third down rate | 0.362 | 0.383 | ±0.060 | WITHIN |
 
-Points: non-offensive touchdowns, their tries and two-point tries are not modelled by design (about 1.7-2.0 points per team game below the 2012 centre); the ±5.0 tolerance is deliberately not tightened. Yards per team game are net of sack yards, as the 2012 centre is (corrected in Entry 55; earlier audits compared gross passing yards and read about 14 yards high).
+Points: non-offensive touchdowns, their tries and two-point tries are not modelled by design (about 1.7-2.0 points per team game below the 2012 centre); the ±5.0 tolerance is deliberately not tightened. Yards per team game are net of sack yards, as the 2012 centre is (see the correction in the [December 1, 2013 Cleveland game report](../../2013/regular_season/week_13_jacksonville_at_cleveland/output.md); earlier audits compared gross passing yards and read about 14 yards high).
 
 ### Drive model rows
 
@@ -353,7 +353,7 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | third down attempts per team game | 13.5 | 13.3 | ±2.5 | WITHIN |
 | third down rate | 0.421 | 0.383 | ±0.060 | WITHIN |
 
-Points: non-offensive touchdowns, their tries and two-point tries are not modelled by design (about 1.7-2.0 points per team game below the 2012 centre); the ±5.0 tolerance is deliberately not tightened. Yards per team game are net of sack yards, as the 2012 centre is (corrected in Entry 55; earlier audits compared gross passing yards and read about 14 yards high).
+Points: non-offensive touchdowns, their tries and two-point tries are not modelled by design (about 1.7-2.0 points per team game below the 2012 centre); the ±5.0 tolerance is deliberately not tightened. Yards per team game are net of sack yards, as the 2012 centre is (see the correction in the [December 1, 2013 Cleveland game report](../../2013/regular_season/week_13_jacksonville_at_cleveland/output.md); earlier audits compared gross passing yards and read about 14 yards high).
 
 ### Drive model rows
 
@@ -526,7 +526,7 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | third down attempts per team game | 15.1 | 13.3 | ±2.5 | WITHIN |
 | third down rate | 0.362 | 0.383 | ±0.060 | WITHIN |
 
-Points: non-offensive touchdowns, their tries and two-point tries are not modelled by design (about 1.7-2.0 points per team game below the 2012 centre); the ±5.0 tolerance is deliberately not tightened. Yards per team game are net of sack yards, as the 2012 centre is (corrected in Entry 55; earlier audits compared gross passing yards and read about 14 yards high).
+Points: non-offensive touchdowns, their tries and two-point tries are not modelled by design (about 1.7-2.0 points per team game below the 2012 centre); the ±5.0 tolerance is deliberately not tightened. Yards per team game are net of sack yards, as the 2012 centre is (see the correction in the [December 1, 2013 Cleveland game report](../../2013/regular_season/week_13_jacksonville_at_cleveland/output.md); earlier audits compared gross passing yards and read about 14 yards high).
 
 ### Drive model rows
 
@@ -699,7 +699,7 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | third down attempts per team game | 13.4 | 13.3 | ±2.5 | WITHIN |
 | third down rate | 0.396 | 0.383 | ±0.060 | WITHIN |
 
-Points: non-offensive touchdowns, their tries and two-point tries are not modelled by design (about 1.7-2.0 points per team game below the 2012 centre); the ±5.0 tolerance is deliberately not tightened. Yards per team game are net of sack yards, as the 2012 centre is (corrected in Entry 55; earlier audits compared gross passing yards and read about 14 yards high).
+Points: non-offensive touchdowns, their tries and two-point tries are not modelled by design (about 1.7-2.0 points per team game below the 2012 centre); the ±5.0 tolerance is deliberately not tightened. Yards per team game are net of sack yards, as the 2012 centre is (see the correction in the [December 1, 2013 Cleveland game report](../../2013/regular_season/week_13_jacksonville_at_cleveland/output.md); earlier audits compared gross passing yards and read about 14 yards high).
 
 ### Drive model rows
 

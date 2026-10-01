@@ -17,3 +17,9 @@ Execution and observable effort were evaluated separately. Special-teams credit 
 Autonomous clubs claimed **Austen Lane, Brandon Marshall and Isaiah Stanback**. The remaining eight preferred, eligible and available players cleared and signed to Jacksonville's practice squad: Tyler Bray, Richard Murphy, Will Ta'ufo'ou, Jerrell Jackson, Jerome Long, D'Anthony Smith, Brandon King, Antwon Blake.
 
 The practice squad is separate from the active 53. No waived player was presumed available before the claim period closed.
+
+<!-- event-record: {"date": "2013-08-27", "id": "2013-08-27-75-player-deadline-compliance", "status": "closed", "summary": "Jacksonville met the 75-player deadline without a release."} -->
+
+<!-- event-record: {"date": "2013-08-31", "id": "2013-08-31-final-53-closed", "status": "closed", "summary": "Jacksonville reduced its roster from 64 to 53."} -->
+
+<!-- event-record: {"date": "2013-09-01", "id": "2013-09-01-waivers-and-practice-squad-closed", "status": "closed", "summary": "Waivers cleared and Jacksonville formed an eight-player practice squad."} -->

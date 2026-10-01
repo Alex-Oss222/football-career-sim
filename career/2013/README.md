@@ -1,6 +1,6 @@
 # Jacksonville 2013 career index
 
-Start with [current state](../../state/05_Current_Season_State.md). The [season ledger](ledger.md) supplies the closed history; the [calendar](calendar.md) supplies dates and phase boundaries. This page is navigation, not another current-state snapshot.
+Start with [current state](../../state/05_Current_Season_State.md). The [2013 dated record](record.md) supplies the closed history; the [calendar](calendar.md) supplies dates and phase boundaries. This page is navigation, not another current-state snapshot.
 
 ## Current views
 
@@ -37,19 +37,19 @@ Start with [current state](../../state/05_Current_Season_State.md). The [season 
 | Preseason | [Game index](preseason/README.md) | Per-game output linked in the index | [Roster cuts](preseason/final_roster_cuts.md) |
 | Regular season | [Week index](regular_season/README.md) | Per-week output linked in the index | [Standings](standings.md) / [statbook](statbook.md) |
 
-Every regular-season week is closed. The postseason bracket and round index is `postseason/README.md`; Jacksonville won the Wild Card (38-14 at Kansas City) and was eliminated in the Divisional round (20-13 at Tennessee); Buffalo won Super Bowl XLVIII. The season is archived in ledger Entry 67. A future folder is never evidence that an event happened.
+Every regular-season week is closed. The postseason bracket and round index is `postseason/README.md`; Jacksonville won the Wild Card (38-14 at Kansas City) and was eliminated in the Divisional round (20-13 at Tennessee); Buffalo won Super Bowl XLVIII. The season is archived in [Super Bowl XLVIII report](league_results/week_21.md). A future folder is never evidence that an event happened.
 
 ## Season review
 
 - [Owner and GM review](season_review/owner_and_gm_review.md): frozen evaluation criteria and resolved retention decision.
 - [Expanded ownership review](season_review/stone_2013_review_and_exit_interview.md#ownership-and-gm-review): researched narrative, separate assessment of the February 2 offseason proposal, and source notes; an interpretive companion to the controlling record.
 - [Alex Stone's press exit interview](season_review/stone_2013_review_and_exit_interview.md#alex-stone-press-exit-interview): January 15 season-ending press availability.
-- [Player exit interviews with Stone](exit_interviews/README.md): January 13-14 meetings covering all 61 players, recorded in Entry 76.
+- [Player exit interviews with Stone](exit_interviews/README.md): January 13-14 meetings covering all 61 players, recorded in [2013 player exit interviews](exit_interviews/README.md).
 
 ## Canonical migrations
 
-- [Week 1 restart under kernel 2013.4](migrations/week_01_kernel_2013_4_restart.md): closed. Week 1 was replayed as event generation 3 (Entry 35).
-- [Week 1 full-fidelity reset](migrations/week_01_full_fidelity_reset.md): superseded audit history of generations 1 and 2; its JSON manifest records the closed generation 3 (Entry 35).
+- [Week 1 restart under kernel 2013.4](migrations/week_01_kernel_2013_4_restart.md): closed. Week 1 was replayed as event generation 3 ([2013 Kansas City game report](regular_season/week_01_kansas_city_at_jacksonville/output.md)).
+- [Week 1 full-fidelity reset](migrations/week_01_full_fidelity_reset.md): superseded audit history of generations 1 and 2; its JSON manifest records the closed generation 3 ([2013 Kansas City game report](regular_season/week_01_kansas_city_at_jacksonville/output.md)).
 
 ## Durable football inputs
 

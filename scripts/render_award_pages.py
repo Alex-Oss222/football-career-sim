@@ -45,21 +45,24 @@ def render_pages(season, results, method=None):
     for week in range(1, 19 if season >= 2021 else 18):
         rel = f'week_{week:02d}/README.md'
         entry = entries.get(('week', str(week)))
-        index.append(f'| [Week {week}]({rel}) | {"Recorded" if entry else "Awaiting closed games and awards"} |')
-        out.update(period_page(f'Week {week}', rel, entry, method, photos=photos))
+        label = f'[Week {week}]({rel})' if entry else f'Week {week}'
+        index.append(f'| {label} | {"Recorded" if entry else "Awaiting closed games and awards"} |')
+        if entry:
+            out.update(period_page(f'Week {week}', rel, entry, method, photos=photos))
     index += ['', '## Monthly awards', '', '| Month | Awards |', '|---|---|']
     months = (list(method['months']) if method and method.get('months') else
               ['September', 'October', 'November', 'December'])
     for month in months:
         rel = f'monthly/{month.lower()}/README.md'
         entry = next((v for (kind, key), v in entries.items() if kind == 'month' and key.lower() == month.lower()), None)
-        index.append(f'| [{month}]({rel}) | {"Recorded" if entry else "Awaiting the season’s dated coverage and closed awards"} |')
-        out.update(period_page(month, rel, entry, method, back='../../README.md', photos=photos))
+        label = f'[{month}]({rel})' if entry else month
+        index.append(f'| {label} | {"Recorded" if entry else "Awaiting the season’s dated coverage and closed awards"} |')
+        if entry:
+            out.update(period_page(month, rel, entry, method, back='../../README.md', photos=photos))
     index += ['', '## Season honours', '',
-              'Season awards and the Pro Bowl use their own dates and selection processes. Follow [postseason and Pro Bowl](../../postseason/README.md).', '',
+              'Season awards and the Pro Bowl use their own dates and selection processes. Follow [postseason and Pro Bowl]('+('../../06_Postseason/README.md' if season >= 2014 else '../../postseason/README.md')+').', '',
               'Before the first draw, freeze this season’s methodology and monthly coverage from the actual schedule. Prior-year winners and monthly windows do not carry forward.', '']
     out['README.md'] = '\n'.join(index)
-    out['monthly/README.md'] = '# Monthly awards\n\n'+ '\n'.join(f'- [{m}]({m.lower()}/README.md)' for m in months)+'\n'
     return out
 
 

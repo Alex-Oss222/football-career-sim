@@ -21,7 +21,7 @@ if str(ROOT) not in sys.path:
 
 from runtime.packets import canonical
 
-DIR = ROOT / "career/2014/early_offseason/staff_changes"
+DIR = ROOT / 'career/2014/01_Early_Offseason/staff_changes'
 METHOD = DIR / "st_search_method.json"
 RESULTS = DIR / "st_search_results.json"
 P_APRIL_RESIGNED = 13 / 16

@@ -66,9 +66,9 @@ CLUBS = {
 ROSTER_CODE = {"ARI": "ARZ", "BAL": "BLT", "CLE": "CLV", "HOU": "HST", "STL": "SL"}
 PROTAGONIST_CODE = "JAX"
 
-ROSTER_MD = ROOT / "career/2014/team/roster/roster.md"
+ROSTER_MD = ROOT / 'career/2014/00_Team_Operations/Team/Roster/roster.md'
 BIRTH_DATES = ROOT / "library/data/player_birth_dates.json"
-LEAGUE_PLAYERS = ROOT / "career/2014/league/personnel/league_players.json"
+LEAGUE_PLAYERS = ROOT / 'career/2014/League/personnel/league_players.json'
 
 # Draft pairing (career/2014/league/personnel/draft_pairing.md, method
 # section 6): the real Jaguars' k-th selection goes to the club that really

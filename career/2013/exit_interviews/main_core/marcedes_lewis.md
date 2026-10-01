@@ -49,7 +49,7 @@ Recorded moments:
 - Divisional at Tennessee: 4 of 6 for 17. The eight drives after the second-quarter touchdown gained 62 yards; Jacksonville was 1 of 9 on third down. Zach Brown's 9-yard fourth-quarter sack came on TE Delay.
 - Weekly-award shortlists: none. In-season honours: none. Receipt injuries: none; available every week.
 
-Evidence caveats: Weeks 1 to 8 closed under kernels 2013.4 to 2013.6, whose call labels were not tied to the receiver; under 2013.6 targets followed position-group usage and depth order (Week 7 record; ledger Entry 44). Concept names on his catches before Week 10 are therefore not used below as evidence about him, and no evaluation here rests on his target count. The weekly records contain no individual evaluation of his blocking or protection. The sack labels above name the call, not a blocker. The branch's season honours (AP awards, All-Pro, Pro Bowl) were drawn on the branch date of February 2, 2014, after this interview, and are not used.
+Evidence caveats: Weeks 1 to 8 closed under kernels 2013.4 to 2013.6, whose call labels were not tied to the receiver; under 2013.6 targets followed position-group usage and depth order (Week 7 record; [2013 San Diego game report](../../regular_season/week_07_san_diego_at_jacksonville/output.md)). Concept names on his catches before Week 10 are therefore not used below as evidence about him, and no evaluation here rests on his target count. The weekly records contain no individual evaluation of his blocking or protection. The sack labels above name the call, not a blocker. The branch's season honours (AP awards, All-Pro, Pro Bowl) were drawn on the branch date of February 2, 2014, after this interview, and are not used.
 
 ## Conversation
 
@@ -199,7 +199,7 @@ Evidence caveats: Weeks 1 to 8 closed under kernels 2013.4 to 2013.6, whose call
 - `career/2013/roster.md` line 60; `career/2013/depth_chart.json` line 11
 - `career/2014/finances/player_contracts/contract_status.md` line 84
 - `career/2013/stats/team_player_stats.md` line 40 (average, longest reception, fumbles); `career/2013/stats/league_leaders.md` lines 167-172 (tight-end receiving yards, through Week 17)
-- `career/2013/ledger.md` line 988 (Entry 44, 2013.6 labels and targets) and lines 1106-1116 (Entry 48, 2013.7 carrier-true labels)
+- [2013 San Diego game report](../../regular_season/week_07_san_diego_at_jacksonville/output.md) (2013.6 labels and targets); [kernel 2013.7 adoption](../../../../runtime/README.md) (2013.7 carrier-true labels)
 - `career/2013/offseason/draft/player_draft_board.md` lines 19, 97, 103; `career/2013/offseason/draft/draftees.md` line 13
 - `career/2013/offseason/otas/output.md` lines 38, 98, 212 (Kelce individual work; Lewis not named)
 - `career/2013/offseason/mandatory_minicamp/output.md` lines 21, 47

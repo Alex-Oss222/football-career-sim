@@ -299,7 +299,7 @@ Start and end are field positions for the offense; a punt, field-goal or downs r
 - Jason Babin: 9 tackles, tackle for loss.
 - Jordan Poyer: sack and pass defended.
 
-**Material game-management decisions:** None was entered by Stone (autonomous mode). Stone's spoken end-game check had no mechanical effect. The fourth-and-10 punt at the Jacksonville 30 with 2:22 left, down 7, came from the real 2012 late-game cell (trailing 4-8, 121-300 seconds). Real teams punted in that position when they held timeouts. The engine does not model timeouts or the two-minute warning (Entry 60), so Tennessee's next possession ran from 2:00 to 0:07 without a Jacksonville timeout. Whether Jacksonville should have gone for it, or what clock it would have had left, is not something the engine can show. The result stands as closed.
+**Material game-management decisions:** None was entered by Stone (autonomous mode). Stone's spoken end-game check had no mechanical effect. The fourth-and-10 punt at the Jacksonville 30 with 2:22 left, down 7, came from the real 2012 late-game cell (trailing 4-8, 121-300 seconds). Real teams punted in that position when they held timeouts. The engine does not model timeouts or the two-minute warning ([2013 Indianapolis away game report](../../regular_season/week_17_jacksonville_at_indianapolis/output.md)), so Tennessee's next possession ran from 2:00 to 0:07 without a Jacksonville timeout. Whether Jacksonville should have gone for it, or what clock it would have had left, is not something the engine can show. The result stands as closed.
 
 **Injuries / availability from the game:** Ryan Davis (trunk, minor; out, projected return January 14, 2014). No other injury on either side.
 
@@ -354,7 +354,9 @@ Start and end are field positions for the offense; a punt, field-goal or downs r
 
 **Record:** 10-6-0 regular season; 1-1 postseason. Eliminated in the AFC Divisional round.
 **Receipts:** Four Divisional receipts in `career/2013/stats/postseason_receipts/` (Jacksonville full, others compact_stats). The regular-season views are unchanged.
-**League awards:** none drawn; there are no postseason weekly awards (Entry 61).
-**Engine notes:** the finish shows the known timeout, two-minute-warning and kneel-down limitation (Entry 60). The result stands as closed.
+**League awards:** none drawn; there are no postseason weekly awards ([2013 playoff bracket](../README.md)).
+**Engine notes:** the finish shows the known timeout, two-minute-warning and kneel-down limitation ([2013 Indianapolis away game report](../../regular_season/week_17_jacksonville_at_indianapolis/output.md)). The result stands as closed.
 
-**Ledger entry:** Entry 64. **Next event:** conference championships, January 19, 2014 (background slate; Jacksonville eliminated). **Not simulated.**
+**Next event:** conference championships, January 19, 2014 (background slate; Jacksonville eliminated). **Not simulated.**
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - January 12, 2014 - AFC Divisional at Tennessee closed", "original_close": "Commit closed - Canonical update - January 12, 2014 - AFC Divisional at Tennessee closed - canonical through January 12, 2014, after the Divisional round", "sequence": 64, "through": "2014-01-12"}, "date": "2014-01-11", "id": "2014-01-11-afc-divisional-at-tennessee-closed-jacksonville-eliminated", "season": 2013, "status": "closed", "summary": "Jacksonville lost 20-13 at Tennessee and was eliminated."} -->

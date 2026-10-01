@@ -1,6 +1,6 @@
 # Week 14 generation-1 void (technical)
 
-**Status:** CLOSED. Week 14 was replayed as event generation 2 (`2013-week14-...-g2`) and closed by ledger Entry 57.
+**Status:** CLOSED. Week 14 was replayed as event generation 2 (`2013-week14-...-g2`) and closed by [2013 Houston home game report](../regular_season/week_14_houston_at_jacksonville/output.md).
 **User authorization:** September 28, 2026. Offered "void and replay" or "keep the closed result" before any Week 14 result had been viewed; the user chose void and replay.
 **Manifest:** [event_generations.json](event_generations.json).
 

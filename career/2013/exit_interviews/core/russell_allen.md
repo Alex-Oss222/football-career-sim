@@ -1,6 +1,6 @@
 # Russell Allen, LB: exit interview
 
-**Date:** Tuesday January 14, 2014. **Present:** Alex Stone. Frank Bush (linebackers) was at his Indianapolis interview that day (ledger Entry 75).
+**Date:** Tuesday January 14, 2014. **Present:** Alex Stone. Frank Bush (linebackers) was at his Indianapolis interview that day ([January coaching decisions](../../../2014/01_Early_Offseason/staff_changes/timeline.md)).
 **Status going in:** Base linebacker beside Daryl Smith since Week 14, in place of the injured Paul Posluszny; first linebacker off the bench before that; a defined coverage-unit job all season (roster role "Base LB (from Week 14, for Posluszny); coverage units"). Active 53; available, no communicated restriction; exit physical with the medical staff today, and no finding from it is recorded here. Contract: 2012 three-year contract, final year 2014; under contract; 4 accrued seasons (2009-2012), with 2013 accruing in the branch (contract status register: Supported). Age 27 (born May 5, 1986).
 
 ## The season in the record
@@ -95,9 +95,9 @@ All voluntary. Jacksonville's 2014 offseason program may begin no earlier than A
 - `career/2013/regular_season/week_05_jacksonville_at_st_louis/output.md` lines 36, 345; `week_11_arizona_at_jacksonville/output.md` lines 67, 74
 - `career/2013/regular_season/week_13_jacksonville_at_cleveland/output.md` lines 65, 331; `week_14_houston_at_jacksonville/output.md` lines 29, 44, 69, 302-304
 - `career/2013/regular_season/week_15_buffalo_at_jacksonville/output.md` lines 35, 325; `week_16_tennessee_at_jacksonville/output.md` line 310; `week_17_jacksonville_at_indianapolis/output.md` line 309
-- `career/2013/postseason/week_18_jacksonville_at_kansas_city/output.md` lines 35, 65, 322; `career/2013/postseason/week_19_jacksonville_at_tennessee/output.md` lines 85, 333; `career/2013/ledger.md` line 1641
+- `career/2013/postseason/week_18_jacksonville_at_kansas_city/output.md` lines 35, 65, 322; `career/2013/postseason/week_19_jacksonville_at_tennessee/output.md` lines 85, 333; [Kansas City Wild Card report](../../postseason/week_18_jacksonville_at_kansas_city/output.md)
 - `career/2013/exit_interviews/main_core/daryl_smith.md` lines 136, 206; `career/2013/exit_interviews/main_core/paul_posluszny.md` lines 145, 186, 197-198, 211
 - `runtime/defect_register.md` line 49 (item 19)
-- `career/2013/ledger.md` Entry 75; `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta; Bush's January 14 Indianapolis interview)
+- [January coaching decisions](../../../2014/01_Early_Offseason/staff_changes/timeline.md); `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta; Bush's January 14 Indianapolis interview)
 - `career/2013/offseason/the_prowl_program_identity.md` ("Good. Better. Best.", "Earn Responsibility", "Stars and Veterans"); `career/2013/offseason/player_onboarding_and_development_framework.md` section 2
 - `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 7 and 10; `career/2014/calendar.md` line 31

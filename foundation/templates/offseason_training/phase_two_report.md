@@ -4,7 +4,12 @@ Use with the [report instructions](README.md). Report coached individual work an
 
 ## Report to render
 
-# [Team] | Phase Two | [Dates]
+# Phase Two | [Team] | [Season]
+
+**Location:** [Recorded facility or field; do not invent one]  
+**Dates:** [Field-work dates]  
+**Days completed:** [Actual unopposed field days; exclude rookie-camp days and staff-only reviews]  
+**Work addressed:** [Individual technique, formations and separate-unit rehearsal addressed]
 
 [Lead with how the classroom teaching translated to movement. State that the work was unopposed. Identify the formations, calls or fundamentals that actually occupied the period, rather than promising a generic full installation.]
 

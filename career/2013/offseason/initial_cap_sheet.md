@@ -1,6 +1,6 @@
 # Jacksonville Jaguars — Initial 2013 Cap and Contract Sheet
 
-> Historical starting research. For current Jacksonville planning room and post-hire transaction accounting, use [current_cap_worksheet.md](current_cap_worksheet.md). Later corrections are recorded in the [season ledger](../ledger.md).
+> Historical starting research. For current Jacksonville planning room and post-hire transaction accounting, use [current_cap_worksheet.md](current_cap_worksheet.md). Later corrections are recorded in the [2013 dated record](../record.md).
 
 
 > **Historical starting finances:** The tables below remain the January initialization baseline. They are **not** the current club cap balance. For current regular-season accounting (Top-51 expired September 4), use [current_cap_worksheet.md](current_cap_worksheet.md). The May 5 branch reconciliation that superseded the stale ~$8.35M shortcut is summarized below and preserved in that worksheet's May 5 version (Git `d25c8cf`).
@@ -297,7 +297,7 @@ Use the identity **change in room = change in adjusted cap minus change in total
 - A signing's incremental charge is its effect on counted team salary, not its total contract value or average annual value. Show any displaced amount separately.
 - A release's table delta is only a gross starting point. Identify the replacement counted amount and any guarantee or timing difference before estimating net relief.
 - Track future-year cap charges and current cash commitments separately; a restructure can improve present room while increasing future charges.
-- Record the date, source, transaction terms, before/after treatment and unresolved inputs in the transaction's existing ledger. Recompute after each move; do not stack multiple moves against the same displaced contract.
+- Record the date, source, transaction terms, before/after treatment and unresolved inputs in the transaction's existing record. Recompute after each move; do not stack multiple moves against the same displaced contract.
 - Retain full precision in supported individual rows. Display club room as approximate, normally to the nearest $0.1M, while the starting balance remains a rounded estimate. Keep any draft, roster-completion or operating reserve visibly separate from booked liabilities.
 
 ### Operating rule for the simulation
@@ -355,3 +355,5 @@ Brynden Trawick, A.J. Bouye, Adam Thielen and C.J. Anderson are each on a three-
 ### Recalculation rule
 
 Do not carry the May 5 range past a new transaction or major roster-accounting checkpoint. Recalculate after signings/releases/trades, at the 75/53 cutdowns, and again at the September 4 transition from offseason Top-51 to regular-season accounting.
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical correction - May 5, 2013 - roster/cap/calendar reconciled", "original_close": "Commit closed \u2014 Canonical correction - May 5, 2013 - roster/cap/calendar reconciled \u2014 canonical through May 5, before May 13 OTAs", "sequence": 9, "through": "2013-05-05"}, "date": "2013-05-05", "id": "2013-05-05-may-5-roster-contract-cap-and-calendar-correction", "kind": "technical", "status": "closed", "summary": "Historical roster, cap and calendar assumptions were corrected."} -->

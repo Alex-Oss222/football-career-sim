@@ -466,6 +466,6 @@ When the offseason/OTA phase actually runs:
 - record events in `otas/output.md`;
 - use `standouts.md` only for observed work, not predictions;
 - update player/register/current-state files only for facts actually changed;
-- record material phase completion in the season ledger;
+- record material phase completion in this phase’s output and regenerate the season’s dated record;
 - preserve voluntariness;
 - preserve this plan unless the user changes the plan itself.

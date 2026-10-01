@@ -8,7 +8,7 @@ The branch's own playoff field, built from the final regular-season standings (`
 - **Wild Card.** Seeds 1 and 2 have byes. Seed 3 hosts seed 6, and seed 4 hosts seed 5.
 - **Divisional.** Reseeded: the 1 seed hosts the lowest surviving seed, and the 2 seed hosts the other survivor.
 - **Conference championships.** The higher remaining seed hosts.
-- **Super Bowl XLVIII.** A neutral site (MetLife Stadium). The AFC champion is the designated home team; from kernel 2013.11 (Entry 66) the designated home team receives no home edge at a neutral site.
+- **Super Bowl XLVIII.** A neutral site (MetLife Stadium). The AFC champion is the designated home team; from kernel 2013.11 ([kernel 2013.11 neutral-site correction](../../../runtime/README.md)) the designated home team receives no home edge at a neutral site.
 - **Rules.** Postseason games cannot end tied: overtime runs in 15-minute periods, with modified sudden death, until someone wins (kernel 2013.8 onward). Game-day actives stay at 46.
 - **No postseason weekly awards.** The league gave AFC/NFC Players of the Week for the regular season only, so none are drawn for the postseason.
 
@@ -39,16 +39,18 @@ Each branch game takes the real 2013-14 date, kickoff and network of the slot wi
 
 | Week | Round | Date / kickoff (ET) | Game | Status | Output |
 |---:|---|---|---|---|---|
-| 18 | AFC Wild Card (5 at 4) | Sat. Jan. 4, 4:35 p.m., NBC | Jacksonville at Kansas City | **Jacksonville 38**, Kansas City 14 (Entry 62) | [week_18_jacksonville_at_kansas_city/output.md](week_18_jacksonville_at_kansas_city/output.md) |
+| 18 | AFC Wild Card (5 at 4) | Sat. Jan. 4, 4:35 p.m., NBC | Jacksonville at Kansas City | **Jacksonville 38**, Kansas City 14 ([Kansas City Wild Card report](week_18_jacksonville_at_kansas_city/output.md)) | [week_18_jacksonville_at_kansas_city/output.md](week_18_jacksonville_at_kansas_city/output.md) |
 | 18 | NFC Wild Card (6 at 3) | Sat. Jan. 4, 8:10 p.m., NBC | Dallas at New Orleans | **Dallas 40**, New Orleans 10 | [roundup](../league_results/week_18.md) |
 | 18 | AFC Wild Card (6 at 3) | Sun. Jan. 5, 1:05 p.m., CBS | Buffalo at Pittsburgh | **Buffalo 33**, Pittsburgh 30 (OT) | [roundup](../league_results/week_18.md) |
 | 18 | NFC Wild Card (5 at 4) | Sun. Jan. 5, 4:40 p.m., FOX | Tampa Bay at Philadelphia | **Philadelphia 30**, Tampa Bay 20 | [roundup](../league_results/week_18.md) |
 | 19 | NFC Divisional (6 at 1) | Sat. Jan. 11, 4:35 p.m., FOX | Dallas at Minnesota | **Minnesota 38**, Dallas 10 | [roundup](../league_results/week_19.md) |
-| 19 | AFC Divisional (5 at 2) | Sat. Jan. 11, 8:15 p.m., CBS | Jacksonville at Tennessee | **Tennessee 20**, Jacksonville 13 (Entry 64); Jacksonville eliminated | [week_19_jacksonville_at_tennessee/output.md](week_19_jacksonville_at_tennessee/output.md) |
+| 19 | AFC Divisional (5 at 2) | Sat. Jan. 11, 8:15 p.m., CBS | Jacksonville at Tennessee | **Tennessee 20**, Jacksonville 13 ([Tennessee Divisional report](week_19_jacksonville_at_tennessee/output.md)); Jacksonville eliminated | [week_19_jacksonville_at_tennessee/output.md](week_19_jacksonville_at_tennessee/output.md) |
 | 19 | NFC Divisional (4 at 2) | Sun. Jan. 12, 1:05 p.m., FOX | Philadelphia at St. Louis | **Philadelphia 30**, St. Louis 20 | [roundup](../league_results/week_19.md) |
 | 19 | AFC Divisional (6 at 1) | Sun. Jan. 12, 4:40 p.m., CBS | Buffalo at New York Jets | **Buffalo 26**, New York Jets 24 | [roundup](../league_results/week_19.md) |
 | 20 | AFC Championship (6 at 2) | Sun. Jan. 19, 3:00 p.m., CBS | Buffalo at Tennessee | **Buffalo 34**, Tennessee 3 | [roundup](../league_results/week_20.md) |
 | 20 | NFC Championship (4 at 1) | Sun. Jan. 19, 6:30 p.m., FOX | Philadelphia at Minnesota | **Minnesota 20**, Philadelphia 7 | [roundup](../league_results/week_20.md) |
-| 21 | Super Bowl XLVIII | Sun. Feb. 2, 2014, 6:30 p.m., FOX, MetLife Stadium (neutral) | Minnesota (NFC 1) vs. Buffalo (AFC 6, designated home) | **Buffalo 31**, Minnesota 20; Buffalo champion (Entry 67) | [roundup](../league_results/week_21.md) |
+| 21 | Super Bowl XLVIII | Sun. Feb. 2, 2014, 6:30 p.m., FOX, MetLife Stadium (neutral) | Minnesota (NFC 1) vs. Buffalo (AFC 6, designated home) | **Buffalo 31**, Minnesota 20; Buffalo champion ([Super Bowl XLVIII report](../league_results/week_21.md)) | [roundup](../league_results/week_21.md) |
 
-The Pro Bowl (Sun. Jan. 26, Aloha Stadium) falls in the off week between the conference round and the Super Bowl. It was drawn retroactively as an exhibition (Entry 73; [../pro_bowl/README.md](../pro_bowl/README.md)) and counts toward no standing or statistic. The Super Bowl MVP is in [../awards/super_bowl_mvp.json](../awards/super_bowl_mvp.json).
+The Pro Bowl (Sun. Jan. 26, Aloha Stadium) falls in the off week between the conference round and the Super Bowl. It was drawn retroactively as an exhibition ([2013 Pro Bowl and Super Bowl MVP records](../record.md); [../pro_bowl/README.md](../pro_bowl/README.md)) and counts toward no standing or statistic. The Super Bowl MVP is in [../awards/super_bowl_mvp.json](../awards/super_bowl_mvp.json).
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - December 29, 2013 - Postseason bracket built (Wild Card slate set)", "original_close": "Commit closed - Canonical update - December 29, 2013 - Postseason bracket built (Wild Card slate set) - canonical through December 29, after Week 17", "sequence": 61, "through": "2013-12-29"}, "date": "2013-12-29", "id": "2013-12-29-postseason-bracket-built-wild-card-slate-set", "status": "closed", "summary": "The branch postseason bracket and Wild Card slate were set."} -->

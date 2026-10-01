@@ -1,0 +1,58 @@
+# 2013 record
+
+Dated events and their full records.
+
+- January 15, 2013: Alex Stone accepted Jacksonville’s original four-year head-coaching offer. [Full record](offseason/hiring_search.md).
+- Late January 2013 (exact appointment dates unrecorded): Jacksonville completed its initial coaching staff hires. [Full record](offseason/staff_building/hires.md).
+- March 12, 2013: Jacksonville completed six free-agent agreements and four releases. [Full record](offseason/free_agency/signings.md).
+- March 12 to April 24, 2013 (execution dates unrecorded): Jacksonville acquired Kirk Cousins and Washington’s original 2014 first, then exchanged Blaine Gabbert for C.J. Wilson. [Full record](trades/trades.md).
+- April 25, 2013 to April 27, 2013: Jacksonville selected seven players in the NFL Draft. [Full record](offseason/draft/draftees.md).
+- After the April 2013 draft, before May 3 rookie minicamp: Jacksonville signed Brynden Trawick, A.J. Bouye, Adam Thielen and C.J. Anderson. [Full record](offseason/draft/udfa_signings.md).
+- May 3, 2013 to May 5, 2013: Jacksonville completed rookie minicamp. [Full record](offseason/rookie_minicamp/output.md).
+- May 13, 2013 to May 15, 2013: Jacksonville completed the first three OTA practices. [Full record](offseason/otas/output.md).
+- May 20, 2013 to May 21, 2013: Jacksonville completed the second OTA block. [Full record](offseason/otas/output.md).
+- May 23, 2013: Jacksonville completed the sixth OTA practice. [Full record](offseason/otas/output.md).
+- June 4, 2013 to June 7, 2013: Jacksonville completed the final OTA block. [Full record](offseason/otas/output.md).
+- June 11, 2013 to June 13, 2013: Jacksonville completed mandatory veteran minicamp. [Full record](offseason/mandatory_minicamp/output.md).
+- June 14, 2013 to July 21, 2013: Jacksonville completed the protected pre-camp interval without club practice. [Full record](offseason/mandatory_minicamp/output.md).
+- July 22, 2013 to July 25, 2013: Players reported and completed camp entry work; Grimes was cleared for full participation. [Full record](offseason/training_camp/output.md).
+- July 26, 2013 to August 3, 2013: Jacksonville completed opening camp practices and its stadium scrimmage. [Full record](offseason/training_camp/output.md).
+- August 5, 2013 to August 8, 2013: Jacksonville completed Miami preparation and its final walkthrough. [Full record](offseason/training_camp/output.md).
+- August 9, 2013: Jacksonville beat Miami 33-17 in the preseason opener. [Full record](preseason/game_1_miami_at_jacksonville/output.md).
+- August 12, 2013 to August 15, 2013: Jacksonville completed the remaining camp practices and walkthrough. [Full record](offseason/training_camp/output.md).
+- August 17, 2013: Jacksonville lost 24-17 to the Jets; Pasztor entered a medical hold. [Full record](preseason/game_2_jacksonville_at_ny_jets/output.md).
+- August 24, 2013: Jacksonville lost 31-20 to Philadelphia; Stone named Cousins QB1 and Henne QB2. [Full record](preseason/game_3_philadelphia_at_jacksonville/output.md).
+- August 27, 2013: Jacksonville met the 75-player deadline without a release. [Full record](preseason/final_roster_cuts.md).
+- August 29, 2013: Jacksonville beat Atlanta 33-27 and finished preseason 2-2. [Full record](preseason/game_4_jacksonville_at_atlanta/output.md).
+- August 31, 2013: Jacksonville reduced its roster from 64 to 53. [Full record](preseason/final_roster_cuts.md).
+- September 1, 2013: Waivers cleared and Jacksonville formed an eight-player practice squad. [Full record](preseason/final_roster_cuts.md).
+- September 4, 2013: Daryl Smith cleared his short restriction; Pasztor and Mosley remained unavailable. [Full record](offseason/training_camp/output.md).
+- September 4, 2013: Jacksonville completed regular-season cap accounting. [Full record](offseason/current_cap_worksheet.md).
+- September 8, 2013: Jacksonville 31, Kansas City 13. [Full record](regular_season/week_01_kansas_city_at_jacksonville/output.md).
+- September 9, 2013: Justin Blackmon moved to Reserve/Suspended for Weeks 2-5. [Full record](regular_season/week_02_jacksonville_at_oakland/output.md).
+- September 15, 2013: Jacksonville lost 13-17 at Oakland. [Full record](regular_season/week_02_jacksonville_at_oakland/output.md).
+- September 22, 2013: Jacksonville 16, Seattle 13. [Full record](regular_season/week_03_jacksonville_at_seattle/output.md).
+- September 29, 2013: Jacksonville 31, Indianapolis 10. [Full record](regular_season/week_04_indianapolis_at_jacksonville/output.md).
+- October 6, 2013: Jacksonville lost 24-26 at St. Louis. [Full record](regular_season/week_05_jacksonville_at_st_louis/output.md).
+- October 7, 2013: Justin Blackmon was reinstated and activated; Stone’s Weeks 6-7 inactives remained. [Full record](regular_season/week_06_jacksonville_at_denver/output.md).
+- October 13, 2013: Jacksonville 26, Denver 10. [Full record](regular_season/week_06_jacksonville_at_denver/output.md).
+- October 20, 2013: Jacksonville 30, San Diego 24. [Full record](regular_season/week_07_san_diego_at_jacksonville/output.md).
+- October 27, 2013: Jacksonville 20, San Francisco 13. [Full record](regular_season/week_08_san_francisco_at_jacksonville/output.md).
+- October 28, 2013 to November 3, 2013: Jacksonville completed its bye-week work; the trade deadline passed without a move. [Full record](regular_season/week_09_bye/output.md).
+- November 10, 2013: Jacksonville lost at Tennessee in Week 10. [Full record](regular_season/week_10_jacksonville_at_tennessee/output.md).
+- November 17, 2013: Jacksonville 29, Arizona 7. [Full record](regular_season/week_11_arizona_at_jacksonville/output.md).
+- November 24, 2013: Jacksonville lost 6-38 at Houston. [Full record](regular_season/week_12_jacksonville_at_houston/output.md).
+- December 1, 2013: Jacksonville 22, Cleveland 19 in overtime. [Full record](regular_season/week_13_jacksonville_at_cleveland/output.md).
+- December 5, 2013: Jacksonville 21, Houston 20. [Full record](regular_season/week_14_houston_at_jacksonville/output.md).
+- December 15, 2013: Jacksonville lost 16-45 to Buffalo. [Full record](regular_season/week_15_buffalo_at_jacksonville/output.md).
+- December 22, 2013: Jacksonville 38, Tennessee 27. [Full record](regular_season/week_16_tennessee_at_jacksonville/output.md).
+- December 29, 2013: Jacksonville lost 22-23 at Indianapolis. [Full record](regular_season/week_17_jacksonville_at_indianapolis/output.md).
+- December 29, 2013: The branch postseason bracket and Wild Card slate were set. [Full record](postseason/README.md).
+- January 4, 2014: Jacksonville won 38-14 at Kansas City in the Wild Card round. [Full record](postseason/week_18_jacksonville_at_kansas_city/output.md).
+- January 11, 2014: Jacksonville lost 20-13 at Tennessee and was eliminated. [Full record](postseason/week_19_jacksonville_at_tennessee/output.md).
+- January 19, 2014: Buffalo and Minnesota won the conference championships. [Full record](league_results/week_20.md).
+- January 21, 2014 to January 22, 2014: The Pro Bowl squads were drafted, with Marcedes Lewis assigned to Team One. [Full record](pro_bowl/README.md).
+- January 26, 2014: Team One defeated Team Two 9–6 in overtime in the Pro Bowl exhibition. [Full record](pro_bowl/README.md).
+- February 2, 2014: Buffalo beat Minnesota 31-20 in Super Bowl XLVIII. [Full record](league_results/week_21.md).
+- February 2, 2014: The 2013 season honours were completed retroactively; Maurice Jones-Drew won Comeback Player of the Year. [Full record](awards/README.md).
+- February 2, 2014: Buffalo’s C.J. Spiller was selected Super Bowl XLVIII MVP from the closed game receipt. [Full record](awards/README.md).

@@ -27,7 +27,7 @@
         {
           "id": "season_closure",
           "status": "VERIFIED",
-          "remaining": "Verified October 1, 2026: tests/test_2014_season_closure.py closes one complete synthetic Week 1 slate (the sixteen real 2014 fixtures with synthetic depth-ordered 46-player units) through scripts/close_week.py's close_slate and write_receipts against a copy of the repository in a temporary root and a local private service with a pinned store seed, Jacksonville first under user control with its pauses answered, then generates every dependent view the weekly workflow generates (full and compact receipts under regular_season/statistics/records/game_receipts, the statbook views, standings, the gamebook box score in regular_season/games/week_01/output.md, the award pages, the team tracker and the player cards) and runs scripts/validate_repository.py on that root, which accepts the 2014 records; the real career tree, cache and live service are untouched and checked so. Recorded in docs/update_workflow.md (2014 closure acceptance). Open before the first week: freeze the 2014 awards methodology (no 2014 methodology.json exists, so no award draw was exercised, only the award-page rendering) and build the legal inputs the legal_rosters gate requires.",
+          "remaining": "Verified October 1, 2026: tests/test_2014_season_closure.py closes one complete synthetic Week 1 slate (the sixteen real 2014 fixtures with synthetic depth-ordered 46-player units) through scripts/close_week.py's close_slate and write_receipts against a copy of the repository in a temporary root and a local private service with a pinned store seed, Jacksonville first under user control with its pauses answered, then generates every dependent view the weekly workflow generates (full and compact receipts under 05_Regular_Season/Statistics/records/game_receipts, the statbook views, standings, the gamebook box score in 05_Regular_Season/Games/Week_01/output.md, the award pages, the team tracker and the player cards) and runs scripts/validate_repository.py on that root, which accepts the 2014 records; the real career tree, cache and live service are untouched and checked so. Recorded in docs/update_workflow.md (2014 closure acceptance). Open before the first week: freeze the 2014 awards methodology (no 2014 methodology.json exists, so no award draw was exercised, only the award-page rendering) and build the legal inputs the legal_rosters gate requires.",
           "evidence": [
             "docs/update_workflow.md",
             "tests/test_2014_season_closure.py"
@@ -38,8 +38,8 @@
           "status": "VERIFIED",
           "remaining": "Frozen April 23 release (2014 ledger Entry 107): 256 games verified in sources.md and tests. Apply the listed dated amendments on their historical dates; two non-Jacksonville release-slot kickoff questions stay open in sources.md.",
           "evidence": [
-            "career/2014/regular_season/schedule/fixtures.json",
-            "career/2014/regular_season/schedule/sources.md",
+            "career/2014/05_Regular_Season/Schedule/fixtures.json",
+            "career/2014/05_Regular_Season/Schedule/sources.md",
             "tests/test_2014_fixtures.py"
           ]
         },
@@ -48,18 +48,18 @@
           "status": "BLOCKED",
           "remaining": "Establish current 2014 control, medical clearance and Jacksonville's game depth chart at the August 30 cutdown. The 31 background clubs' Week 1 depth-chart library (library/data/2014_week1_depth_charts.json) is prepared research, gated until the master clock reaches Week 1 (September 7, 2014); it is not yet legal game input and the gate stays BLOCKED.",
           "evidence": [
-            "career/2014/supporting_records/operating_baseline.md",
+            "career/2014/Supporting_Records/operating_baseline.md",
             "library/2014_week1_depth_charts.md"
           ]
         },
         {
           "id": "financial_control",
           "status": "VERIFIED",
-          "remaining": "Verified October 1, 2026 at the August 1 clock; reconciliation dated August 1, 2014 in career/2014/finances/salary_cap/cap_worksheet.md, no figure changed. All 78 controlled players carry a 2014 figure on an existing basis: 74 under contract (50 branch, 18 inherited, 6 reserve/future effective March 11) in the contract table, and the four unsigned tenders (Bradfield $1,431,000 RFA; Clemons and Pasztor $570,000 and Brown $495,000 ERFA) counted at their tender amounts under the Top-51 rule while outstanding; those four are not under contract, have not reported and cannot participate until they sign. The 26 rookie contracts are signed (nine slot reconstructions, 17 three-year minimums) and dead money of $10,417,192 is itemized. Top-51 applies through the first regular-season game, so the camp count stays the offseason count; the working difference against the $133,000,000 cap is $8,046,314 before any carryover, and every unresolved item (uncertified 2013 carryover of about $5.33M to $6.00M, the uncertified rookie-pool allocation, the Blackmon forfeiture credit, 2013 incentive settlement, Bradfield's 2013 salary and the single-source expiry of Brown and Pasztor) is either a credit or bounded well inside that margin, so none blocks a transaction gate or participation. python scripts/render_jaguars_cap_tracker.py --check passes. No certified cap room exists; the open items stay named in the worksheet and close only through ledger events.",
+          "remaining": "Verified October 1, 2026 at the August 1 clock; reconciliation dated August 1, 2014 in career/2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md, no figure changed. All 78 controlled players carry a 2014 figure on an existing basis: 74 under contract (50 branch, 18 inherited, 6 reserve/future effective March 11) in the contract table, and the four unsigned tenders (Bradfield $1,431,000 RFA; Clemons and Pasztor $570,000 and Brown $495,000 ERFA) counted at their tender amounts under the Top-51 rule while outstanding; those four are not under contract, have not reported and cannot participate until they sign. The 26 rookie contracts are signed (nine slot reconstructions, 17 three-year minimums) and dead money of $10,417,192 is itemized. Top-51 applies through the first regular-season game, so the camp count stays the offseason count; the working difference against the $133,000,000 cap is $8,046,314 before any carryover, and every unresolved item (uncertified 2013 carryover of about $5.33M to $6.00M, the uncertified rookie-pool allocation, the Blackmon forfeiture credit, 2013 incentive settlement, Bradfield's 2013 salary and the single-source expiry of Brown and Pasztor) is either a credit or bounded well inside that margin, so none blocks a transaction gate or participation. python scripts/render_jaguars_cap_tracker.py --check passes. No certified cap room exists; the open items stay named in the worksheet and close only through ledger events.",
           "evidence": [
-            "career/2014/finances/salary_cap/cap_worksheet.md",
-            "career/2014/finances/player_contracts/contract_status.md",
-            "career/2014/finances/player_contracts/contracts.md"
+            "career/2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md",
+            "career/2014/00_Team_Operations/Finances/player_contracts/contract_status.md",
+            "career/2014/00_Team_Operations/Finances/player_contracts/contracts.md"
           ]
         }
       ]

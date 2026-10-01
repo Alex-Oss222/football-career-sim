@@ -105,7 +105,7 @@ class CloseWeekPauseTests(unittest.TestCase):
         self.assertFalse(self.results_path.exists())
         self.assertFalse(self.paths.receipts.exists())
         record_path = self.paths.paused_game(1)
-        self.assertEqual(record_path, self.paths.regular_season / "week_01" / "paused_game.json")
+        self.assertEqual(record_path, self.paths.regular_season / "Week_01" / "paused_game.json")
         record = json.loads(record_path.read_text())
         self.assertEqual(record["status"], "paused")
         self.assertEqual(record["event_id"], EVENT)

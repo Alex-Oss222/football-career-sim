@@ -346,5 +346,9 @@ The Week 1 corrections held in part. Jacksonville faced 13 third downs instead o
 **Record after game:** 1-1-0
 **Division / conference position:** Fourth in the AFC South (Tennessee 2-0; Indianapolis, Houston and Jacksonville 1-1, with Jacksonville third of the three on strength of victory); eleventh in the AFC, out of the field. See [standings](../../standings.md).
 **Statbook:** Through Week 2; 32 of 32 game receipts; coverage complete; leaders published.
-**Ledger entries:** Entry 36 (Blackmon ruling); Entry 37 (Week 2).
+**Game and personnel records:** [Blackmon suspension ruling](output.md) (Blackmon ruling); [2013 Oakland game report](output.md) (Week 2).
 **Next event:** Week 3 at Seattle Seahawks, Sunday, September 22, 4:25 p.m. ET.
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - September 9, 2013 - Blackmon to Reserve/Suspended", "original_close": "Commit closed - Canonical update - September 9, 2013 - Blackmon to Reserve/Suspended - canonical through September 9, Week 2 preparation", "sequence": 36, "through": "2013-09-09"}, "date": "2013-09-09", "id": "2013-09-09-blackmon-suspension-ruling", "status": "closed", "summary": "Justin Blackmon moved to Reserve/Suspended for Weeks 2-5."} -->
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - September 15, 2013 - Week 2 at Oakland closed", "original_close": "Commit closed - Canonical update - September 15, 2013 - Week 2 at Oakland closed - canonical through September 15, after Week 2", "sequence": 37, "through": "2013-09-15"}, "date": "2013-09-15", "id": "2013-09-15-week-2-closed", "status": "closed", "summary": "Jacksonville lost 13-17 at Oakland."} -->

@@ -1,37 +1,52 @@
-# Season folders and continuity
+# Season folders and record ownership
 
-The [2014 season](../career/2014/README.md) is the model from 2014 onward. Folder names carry no numeric prefix, so a directory listing is alphabetical; the table below gives the chronological order in which each area opens during the year. Overlapping work follows the calendar; a folder’s position does not move an event. 2013 retains its historical structure.
+The [2014 season](../career/2014/README.md) supplies the layout for 2014 onward. Numbered folders put the football year in its usual order. The actual [Jacksonville calendar](../career/2014/Calendar.md) controls overlapping work: the draft falls during the spring program, and trades and signings can occur in several phases. The 2013 domain folders retain their historical paths.
 
-| Order | Home | Owns |
-|---|---|---|
-| 1 | `team` | Current roster, working depth, coaching staff, player cards, development and film |
-| 2 | `early_offseason` | Review, scouting, staffing and pre-league-year preparation |
-| 3 | `free_agency` | Targets, offers, negotiations and completed signings/tenders |
-| 4 | `offseason_training` | Spring phases, staff plans, actual reports and player assessments |
-| 5 | `draft` | Board, order, owned picks, selections and undrafted class |
-| 6 | `training_camp_and_preseason` | Camp, preseason games, assessments, cuts and the preseason trade route |
-| 7 | `regular_season` | Games, schedule, standings, statistics, league results and weekly/monthly awards |
-| 8 | `postseason` | Playoff work, separate playoff statistics, honours and Pro Bowl |
-| 9 | `season_review` | Exit reviews and the annual handoff |
-| 10 | `finances` | Current-year cap/contracts and links to shared multi-year finances |
-| 11 | `trades` | Targets/offers before completed trades, with dated exchanges and accounting |
-| — | `calendar.md` / `ledger.md` | What is scheduled / what actually happened |
+## The season route
 
-Each training phase uses `staff_plan.md` for intended work, `training_report.md` for actual events and `player_assessments.md` for conclusions supported by those events. Dates appear in the folder guides and navigation. A file guide explains the supporting records in each folder.
+| Folder | Work kept here |
+|---|---|
+| `00_Team_Operations` | Current roster and depth chart, working player assessments, staff, individual development, film, medical history, trades, free agency and finances |
+| `01_Early_Offseason` | Staff changes, scouting and preparation before the new league year |
+| `02_Offseason_Training` | Phase One, Phase Two, rookie minicamp, OTAs and mandatory minicamp |
+| `03_Draft` | Scouting board, pick ownership, selections and undrafted signings |
+| `04_Training_Camp_and_Preseason` | Camp, preseason games, actual position battles and roster decisions |
+| `05_Regular_Season` | Weekly games, schedule, standings, statistics, league results and awards |
+| `06_Postseason` | Playoff games, separate postseason statistics, honours and Pro Bowl |
+| `07_Season_Review` | Player and coach exit reviews, final player assessments and the handoff to the next season |
 
-## One career across seasons
+`League` holds the other clubs' permitted personnel records. `Supporting_Records` holds operational support. These are reference areas, not extra phases in the football year. Shared career finances remain in [career/finances](../career/finances/README.md); a season's finance pages link to those owners rather than copying balances.
 
-Complete the team review after its actual final game, reconcile contracts, roster, staff, medical status, future picks and open decisions, then stage the next year through `scripts/season_handoff.py`. The opening roster and working depth preserve their source checkpoint until reviewed. Player cards retain earlier yearly stat rows. New season game receipts, statistics, standings and awards start empty. Shared financial inputs preserve remaining obligations and history; actual cap rules, carryover and renewals require their own reconciliation.
+## Calendar, annual record and event owners
 
-A staged season is not the active season until the normal administrative event updates the current-record map and both state documents. Missing new-season inputs never fall back to another season. Review/closure requirements and game-release checks remain in force.
+`Calendar.md` is the team's schedule by month: league deadlines, filing and interview windows, program dates, reporting, camps, roster limits, games, byes and conditional postseason dates. The [2014 NFL calendar](../library/2014_nfl_calendar.md) owns the sourced league schedule and each club's dated program information. Jacksonville's calendar selects its applicable dates. A published date does not establish attendance or completion. Calendars contain no practice assessment, transaction narrative, cap snapshot, engine release or checkpoint bookkeeping.
 
-## Maintaining paths and reading pages
+`Record.md` is generated from the actual event owners. Each line gives the date, a plain description and a link to the full record. Several events on one date receive separate lines when they have different owners. A date window is used only when the record actually covers a block of work. Software changes do not become football events.
 
-`runtime.seasons.SeasonPaths` resolves the season’s records. Use its properties or `record(logical_path)` rather than building old flat paths. `runtime.season_layout` maps logical record names to the readable layout from 2014 onward and preserves 2013 paths. Historical frozen JSON references resolve through that mapping; the original evidence is not rewritten.
+A trade is written in Trades, a signing in Free_Agency, a medical decision in the medical record, a practice in its phase report and a game in its game output. There is no central narrative ledger and no second editable account of the same event. Descriptive event metadata stays with the owner; the repository map carries compatibility aliases for old references without recreating their narratives. The current roster, depth chart and contract views summarize current facts and link their dated sources.
 
-- Cap and contract reading pages: `python scripts/render_jaguars_cap_tracker.py`.
-- Trade exchange pages: `python scripts/render_trade_pages.py 2014`.
-- Award cards: `python scripts/league_awards.py render --season 2014`. Rendering never draws or changes a winner.
-- Repository checks: `python scripts/validate_repository.py` and `python -m unittest discover -s tests`.
+## Training reports and assessments
 
-Generated trade and financial pages are views of their linked source records. Change an actual transaction in its owner first, then regenerate the reading pages. Keep descriptions in plain football language; do not invent labels, outcomes or another editable balance.
+Each training phase has two substantive files: `staff_plan.md` for intended work and `training_report.md` for what happened. The report begins with the phase, location, dates, days completed and the football the staff addressed. Its assessment follows in the same report. Do not create another phase assessment document or one file per drill, meeting or practice correction.
+
+Across the year, each player has two assessment records. The opening assessment in `00_Team_Operations/Team/Player_Cards` retains its starting baseline and adds dated updates from rookie camp through the postseason. The separate final assessment belongs in `07_Season_Review/Player_Assessments` after the season closes. Preserve former players' history and earlier yearly statistics. Individual development plans own proposed work; they are not a third set of player evaluations.
+
+Open competitions live under `04_Training_Camp_and_Preseason/Position_Battles`, grouped by unit, then position, then the actual contested spot. The existing 2014 cards are WR1, WR3, left guard, the conditional right-guard alternative, Edge 1 and long snapper. A vacancy or a cross-training exercise does not create a battle. Compare the actual candidates and their relevant work, link the source reports, and retain the dated decision when a competition closes. The depth chart remains the owner of current assignments.
+
+## Season continuity
+
+A season folder identifies the NFL season being prepared and played. Its playoff outputs and statistical receipts stay with that season when games fall in the following January or February. The annual record likewise keeps postseason events with their NFL season; every displayed date remains the date on which the event occurred. A bye has a weekly output for practice, recovery and self-scout, but no invented game.
+
+After Jacksonville's actual last game, finish player and coach exit reviews and reconcile roster control, medical instructions, staff, contracts, cap obligations, future picks and unfinished work. Use `scripts/season_handoff.py` to review and stage the next year. Team closeout and league-wide statistical or award closure are checked separately. A staged folder does not activate a season, renew a contract, clear an injury or authorize a game.
+
+The next season carries the reviewed people, obligations, role decisions and evidence. Its new game receipts, statistics, standings and awards begin empty. Player records preserve earlier yearly rows. Actual historical calendar research may be prepared in advance without importing future results or advancing the career clock.
+
+## Path and rendering rules
+
+Use `runtime.seasons.SeasonPaths` and its `record()` method for season paths. `runtime.season_layout` translates old physical and logical names to the current layout; frozen receipt and source bytes retain their original evidence. Do not recreate old folders because an older reference names one.
+
+The annual record, trade index, cap views, standings, statistics and award pages are generated views. Change the actual owner or input first, then run the relevant renderer. `python scripts/render_annual_record.py 2014 --check` verifies that the dated index agrees with its owners. The [update workflow](update_workflow.md) gives the complete closure and validation procedure.
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - February 2, 2014 - 2014 season set up", "sequence": 68, "through": "2014-02-02"}, "date": "2014-02-02", "id": "2014-02-02-2014-season-set-up", "kind": "technical", "status": "closed", "summary": "2014 season set up."} -->
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - March 24, 2014 - Historical schedule and annual handoff", "sequence": 101, "through": "2014-03-24"}, "date": "2014-03-24", "id": "2014-03-24-historical-schedule-and-annual-handoff", "kind": "technical", "status": "closed", "summary": "Historical schedule and annual handoff."} -->

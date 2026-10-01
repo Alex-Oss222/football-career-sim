@@ -372,7 +372,9 @@ def play_calls_markdown(year, team_id, book):
         "effectiveness. Generic, kneel, spike and scramble labels are separate rows; a "
         "quarterback scramble is counted under the pass label it carries. Kernels "
         "2013.4-2013.6 drew each snap's label at random from the sheet's calls of that "
-        "run or pass type, independent of the ball carrier (ledger Entry 41), so Weeks "
+        "run or pass type, independent of the ball carrier (see the "
+        "[October 6, 2013 St. Louis game report]"
+        "(../../2013/regular_season/week_05_jacksonville_at_st_louis/output.md)), so Weeks "
         "1-8 rows show label assignment only. Y/P is yards per snap; 20+ counts gains "
         "of 20 yards or more; NEG counts snaps that lost yardage.",
     ) + no_games(book)
@@ -397,7 +399,9 @@ POINTS_NOTE = (
     "Points: non-offensive touchdowns, their tries and two-point tries are not "
     "modelled by design (about 1.7-2.0 points per team game below the 2012 centre); "
     "the ±5.0 tolerance is deliberately not tightened. Yards per team game are net "
-    "of sack yards, as the 2012 centre is (corrected in Entry 55; earlier audits "
+    "of sack yards, as the 2012 centre is (see the correction in the "
+    "[December 1, 2013 Cleveland game report]"
+    "(../../2013/regular_season/week_13_jacksonville_at_cleveland/output.md); earlier audits "
     "compared gross passing yards and read about 14 yards high)."
 )
 

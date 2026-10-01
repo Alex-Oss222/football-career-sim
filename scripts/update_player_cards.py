@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Refresh working player cards from closed regular-season/playoff receipts."""
+"""Refresh statistics without rewriting opening assessments or coaching updates.
+
+Each year's opening card remains intact through the season. Its dated coaching
+updates are authored from event evidence, never generated from statistical totals.
+The separate final assessment belongs to the season review after season close.
+"""
 import argparse
 import json
 import re
@@ -16,6 +21,7 @@ from scripts.player_photos import Photos, place_block
 START = '<!-- yearly-statistics:start -->'
 END = '<!-- yearly-statistics:end -->'
 WORKING = '**Profile status:** Working player card'
+OPENING = '**Assessment stage:** Opening annual assessment'
 
 def section(text, heading):
     m = re.search(r'^## ' + re.escape(heading) + r'\n(.*?)(?=\n## |\Z)', text, re.M | re.S)
@@ -180,8 +186,8 @@ def profile_errors(year,root=ROOT):
         text = path.read_text(encoding='utf-8')
         if f'**Position:** {player.pos}' not in text:
             errors.append(f'{path.relative_to(root)}: wrong current position')
-        if WORKING not in text and not season_is_complete(year,root):
-            errors.append(f'{path.relative_to(root)}: premature final evaluation')
+        if WORKING not in text or OPENING not in text:
+            errors.append(f'{path.relative_to(root)}: opening assessment must remain separate from the final review')
         if '| Trait | vs. Average | vs. Best | vs. Worst |' not in text:
             errors.append(f'{path.relative_to(root)}: missing overall comparison format')
     return errors if errors else refresh_cards(year,root,True)
