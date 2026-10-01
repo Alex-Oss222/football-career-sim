@@ -2,7 +2,7 @@
 
 [Alex Stone's profile](alex_stone_coaching_profile.md) | [Performance and job security](alex_stone_performance_review.md) | [NFL Coach Sheet](alex_stone_nfl_coach_sheet.md) | [Assistant assessments](staff_profiles.md) | [Writing template](profile_template.md)
 
-This folder separates Stone's user-defined coaching identity, the assessment of his performance, and his career record. His expanded approach was approved October 1, 2026; the evidence and current assignments remain bounded by **August 4, 2014**, the latest completed camp block. The editing date is not the career date. Assistant assessments retain their own dated baselines and updates. The master date in [current season state](../../state/05_Current_Season_State.md) bounds the available evidence.
+This folder separates Stone's user-defined coaching identity, the assessment of his performance, and his career record. The profile was revised October 1, 2026 to adopt the user's edited draft, tone guidance and separate offensive and defensive approaches, each with passing and running sections. Each performance assessment and career record retains its own dated coverage. The [current season state](../../state/05_Current_Season_State.md) supplies the career date, and the [staff record](../2014/00_Team_Operations/Staff/coaching_staff.md) owns current assignments. Revising the profile does not complete a practice, install a concept or change an appointment.
 
 ## Each document's job
 
