@@ -11,11 +11,11 @@ Use these templates for the report in chat and the readable part of the saved ou
 
 ## Before writing
 
-Read the requested season's calendar, actual roster and participation instructions, Stone's [camp approach](../../../career/coaching_profiles/alex_stone.md#how-he-wants-training-camp-run), the phase plan, completed work and relevant active-book passages. Check that year's staff responsibilities. Keep the format across seasons while rebuilding its content from the actual people, dates, taught menu and observations.
+Read the requested season's calendar, actual roster and participation instructions, Stone's [camp approach](../../../career/coaching_profiles/alex_stone_coaching_profile.md#how-he-wants-training-camp-run), the phase plan, completed work and relevant active-book passages. Check that year's staff responsibilities. Keep the format across seasons while rebuilding its content from the actual people, dates, taught menu and observations.
 
 For camp, establish which work was on air, non-contact, controlled contact or live to the ground. Pads alone do not settle the last distinction. Report blocking, block defeat, protection, releases, fits, ball security and tackling only to the finish actually permitted and observed. Respect the quarterback's protection in the drill; a whistle is not a recorded sack, tackle or gain.
 
-Stone expects eligible players to report and participate on their applicable dates, and players and coaches to meet appropriate physical standards. The [profile and plan](../../../career/coaching_profiles/alex_stone.md#how-he-wants-training-camp-run) supply those expectations. Medical clearance, conditioning readiness and football execution remain separate findings; a reporting requirement supplies no test result. Mixing starters and reserves should answer a football question, not impose equal snap totals.
+Stone expects eligible players to report and participate on their applicable dates, and players and coaches to meet appropriate physical standards. The [profile and plan](../../../career/coaching_profiles/alex_stone_coaching_profile.md#how-he-wants-training-camp-run) supply those expectations. Medical clearance, conditioning readiness and football execution remain separate findings; a reporting requirement supplies no test result. Mixing starters and reserves should answer a football question, not impose equal snap totals.
 
 ## Write the football, then the judgment
 
