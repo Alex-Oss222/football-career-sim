@@ -1,6 +1,6 @@
 # Individual player development
 
-[Offseason index](../../02_Offseason_Training/README.md) · [Progression model](progression_model.md) · [Annual player sheets](../../../player_profiles/README.md) · [Live progression cohort](progression_roster.json) · [All 61 exit-review profiles](roster_profiles.md) · [Cousins in detail](kirk_cousins.md) · [Cousins progression context](kirk_cousins_progression_context.json) · [Film queue](../Film/player_queue.md) · [Player template](player_plan_template.md)
+[Offseason index](../../02_Offseason_Training/README.md) · [Progression model](progression_model.md) · [2013 final player sheets](../../../2013/player_profiles/README.md) · [Live progression cohort](progression_roster.json) · [All 61 exit-review profiles](roster_profiles.md) · [Cousins in detail](kirk_cousins.md) · [Cousins progression context](kirk_cousins_progression_context.json) · [Film queue](../Film/player_queue.md) · [Player template](../../../../foundation/templates/coaching_methods/player_development_plan.md)
 
 
 The live progression cohort is derived from the current roster with `python scripts/build_player_progression_roster.py`. The frozen 61-player exit index identifies 2013 Jacksonville continuity only; it never overrides current control. At the March 28 checkpoint, 55 players are controlled, 50 have Jacksonville 2013 continuity, and Kirk Cousins is one of those returners. Regenerate the cohort after every roster/control change before resolving progression.
@@ -19,7 +19,7 @@ The [roster profiles](roster_profiles.md) preserve the 61-player 2013 exit-revie
 | Player perspective | His actual explanation, preference or disagreement if expressed during permitted contact; otherwise an invitation, not invented speech |
 | Open possibilities | A relevant new answer, responsibility or technique worth exploring; more than one plausible direction may remain |
 | Next opportunity | A taught, lawful task that could reveal something useful, with fair supporting conditions; no role promise |
-| New evidence | Actual observed behavior, date/source, context, confidence and alternative explanation; separate from outcome |
+| Evidence for a change in teaching | Link the phase/game report that owns the observed work and interpretation; keep the task status and justified next instruction here |
 | Next step | Retain, adjust or close the specific teaching task; send material personnel findings to the annual card as a dated update |
 
 A correction is one part of development. Include ordinary good work, independent adaptations and opportunities for new strengths to emerge. Coaching can be revised too. Let the player's explanation influence the next assignment when supported, without making film submission or conversation compulsory during voluntary periods. Promised take-home packets remain available without a mandatory quiz or reply.
@@ -42,7 +42,6 @@ Before work, verify actual control and current physical/cognitive restrictions. 
 | [2013_exit_player_index.json](2013_exit_player_index.json) | Structured 2013 exit player index used by the simulation. |
 | [kirk_cousins.md](kirk_cousins.md) | Kirk Cousins: the quarterback emerging from his first full starting season. |
 | [kirk_cousins_progression_context.json](kirk_cousins_progression_context.json) | Structured kirk cousins progression context used by the simulation. |
-| [player_plan_template.md](player_plan_template.md) | Living player plan template. |
 | [progression_model.md](progression_model.md) | 2014 offseason player-progression model. |
 | [progression_roster.json](progression_roster.json) | Structured current roster for development preparation. |
 | [roster_profiles.md](roster_profiles.md) | Frozen 2013 exit-review baseline and dated teaching handoffs. |

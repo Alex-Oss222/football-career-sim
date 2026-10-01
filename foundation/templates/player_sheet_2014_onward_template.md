@@ -201,7 +201,7 @@ Create the opening card when the player joins the controlled roster. Keep dated 
 
 ## Previous-season production
 
-| Statistic | 2013 regular season | 2013 playoffs |
+| Statistic | [Previous season] regular season | [Previous season] playoffs |
 | --- | --- | --- |
 | [Position-specific statistic] | [Recorded value or Unrecorded] | [Recorded value or Unrecorded] |
 

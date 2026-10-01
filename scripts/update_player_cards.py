@@ -13,7 +13,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from scripts.build_player_progression_roster import parse_current_roster
-from scripts.build_annual_player_sheets import slugify, season_is_complete
+from scripts.build_annual_player_sheets import (slugify, season_is_complete,
+    assessment_paths, assessment_card_errors, card_field)
 from runtime.statbook import aggregate_receipts
 from runtime.stat_tables import POSITION_GROUPS, GAMES, RETURNS, col, derived, avg, pct
 from runtime.seasons import SeasonPaths, require_receipt_season
@@ -161,10 +162,18 @@ def refresh_cards(year,root=ROOT,check=False):
             continue
         if START not in text:
             continue
-        name = re.search(r'^# (.+?) — ',text)[1]
-        pos = re.search(r'^\*\*Position:\*\* (\S+)',text,re.M)[1]
-        updated = refresh_text(text,year,name,pos,periods,root)
-        updated = place_block(updated, photos.lookup(name), name)
+        title = re.search(r'^# (.+?) — ',text,re.M)
+        pos = card_field(text, 'Position')
+        if not title or not any(pos in group[1] for group in POSITION_GROUPS):
+            errors.append(f'{path.relative_to(root)}: missing player identity or unsupported position')
+            continue
+        name = title[1]
+        try:
+            updated = refresh_text(text,year,name,pos,periods,root)
+            updated = place_block(updated, photos.lookup(name), name)
+        except (ValueError, KeyError) as error:
+            errors.append(f'{path.relative_to(root)}: {error}')
+            continue
         if updated!=text:
             if check:
                 errors.append(f'{path.relative_to(root)}: stale yearly statistics')
@@ -172,25 +181,47 @@ def refresh_cards(year,root=ROOT,check=False):
                 path.write_text(updated,encoding='utf-8',newline='\n')
     return errors
 
-def profile_errors(year,root=ROOT):
+def profile_errors(year,root=ROOT,*,require_complete=True):
+    """Strict for readiness; allow only wholly unstarted future sets when asked.
+
+    Existing departed-player cards remain part of the annual evidence and are
+    checked too. They are not silently dropped with a changed current roster.
+    """
+    if year < 2014:
+        return []  # Frozen 2013 sheets use their own position-baseline validator.
     directory = SeasonPaths(year, root).record('player_profiles')
-    if not any(START in p.read_text(encoding='utf-8') for p in directory.glob('*.md')):
+    cards = assessment_paths(directory)
+    if not cards and not require_complete:
         return []
-    _,_,roster = parse_current_roster(SeasonPaths(year, root).roster)
+    try:
+        _,_,roster = parse_current_roster(SeasonPaths(year, root).roster)
+    except (OSError, ValueError) as error:
+        return [f'{year}: cannot validate opening-card cohort: {error}']
     errors = []
+    if not cards:
+        errors.append(f'{year}: no opening annual assessments; roster coverage is incomplete')
+    if not roster:
+        errors.append(f'{year}: no controlled players to validate opening assessments')
+    controlled = {slugify(player.player): player for player in roster}
+    if len(controlled) != len(roster):
+        errors.append(f'{year}: duplicate opening-card paths in controlled roster')
     for player in roster:
         path = directory/(slugify(player.player)+'.md')
         if not path.exists():
             errors.append(f'{year}: missing working player card for {player.player}')
-            continue
+    for path in cards:
         text = path.read_text(encoding='utf-8')
-        if f'**Position:** {player.pos}' not in text:
-            errors.append(f'{path.relative_to(root)}: wrong current position')
-        if WORKING not in text or OPENING not in text:
-            errors.append(f'{path.relative_to(root)}: opening assessment must remain separate from the final review')
-        if '| Trait | vs. Average | vs. Best | vs. Worst |' not in text:
-            errors.append(f'{path.relative_to(root)}: missing overall comparison format')
-    return errors if errors else refresh_cards(year,root,True)
+        player = controlled.get(path.stem)
+        title = re.search(r'^# (.+?) — ',text,re.M)
+        name = player.player if player else title[1] if title else path.stem
+        pos = player.pos if player else card_field(text,'Position')
+        errors.extend(assessment_card_errors(path,year,name,pos,root=root))
+    if errors:
+        return errors
+    try:
+        return refresh_cards(year,root,True)
+    except (OSError, ValueError, KeyError) as error:
+        return [f'{year}: cannot validate opening-card statistics: {error}']
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)

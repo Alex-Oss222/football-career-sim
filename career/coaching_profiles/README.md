@@ -1,133 +1,35 @@
-# Coaching profiles — 2013 reference
+# Coaching profiles
 
 [Alex Stone](alex_stone.md) | [2013 assessment record](alex_stone_2013_assessment_record.md) | [Complete coach sheet](alex_stone_coach_sheet.md) | [Assistant staff](staff_profiles.md) | [Profile template](profile_template.md)
 
-This directory is a reference layer for coaching information established by the 2013 career record.
-
-It is not a forecast file. It does not describe what Stone, his staff, or Jacksonville will become in 2014 or later. Do not use this directory to manufacture future development, future tendencies, future staff behavior, future scheme changes, or future coaching results.
-
-## Time boundary
-
-Use 2013-season evidence only.
-
-For this directory, "2013 season" includes material filed under `career/2013/`, including that season's postseason and season-closing review records. It does not include `career/2014/` offseason work, 2014 training plans, 2014 engine decisions, later season outputs, or later playbook evolutions.
-
-Do not write "entering 2014," "in 2014 Stone will," "next season," or equivalent forward-looking language into these profiles unless the repository has actually advanced and this README is deliberately revised.
-
-Future playbook iterations are off limits. Use only the playbook iteration active for the 2013 season.
+These profiles describe coaching work established in the career. The original 2013 portraits and assessment record remain their historical baseline. Later completed work may support a dated change or retained assessment, with links to its actual practice, game, interview or decision record. The master date in [current season state](../../state/05_Current_Season_State.md) bounds the available evidence.
 
 ## File roles
 
-| File | Mechanical role |
+| File | What it owns |
 |---|---|
-| `alex_stone.md` | Readable 2013 coaching profile. Summarizes established coaching identity, strengths, weaknesses, methods and observed tendencies from the 2013 record. |
-| `alex_stone_2013_assessment_record.md` | Dated evidence map for the 2013 season. Use it to trace claims back to specific coaching work. |
-| `alex_stone_coach_sheet.md` | Expanded reference sheet. It may contain more fields than the readable profile, but it remains bounded by the same 2013 evidence rule. |
-| `staff_profiles.md` | 2013 assistant-coach reference. Staff authority and responsibilities must match the 2013 staff records. |
-| `profile_template.md` | Structure for a coaching profile. The template does not create facts. |
+| `alex_stone.md` | Readable coaching assessment, preserved 2013 baseline, dated later observations and the separately labeled user-defined camp method |
+| `alex_stone_2013_assessment_record.md` | The frozen 2013 evidence map; correct a source error explicitly rather than adding later-season performance |
+| `alex_stone_coach_sheet.md` | Expanded reference at its stated checkpoint; no automatic year or grade update |
+| `staff_profiles.md` | Assistant-coach baseline with dated later findings; the season's staff register controls actual appointments and responsibilities |
+| `profile_template.md` | Structure for a supported coach profile; its fields create no facts |
 
-## Source precedence
+## Historical evidence, current judgment and intended methods
 
-When files disagree, use the repository source that owns the fact.
+Keep these three things distinguishable. A dated event can establish that a coach taught, called, changed, delegated or corrected something. Repeated work can support a broader judgment. A written plan establishes intention until actual execution is recorded.
 
-1. `career/2013/` event outputs, ledgers, staff records, roster records and dated football records.
-2. Active 2013 playbook files for scheme content.
-3. 2013 program and development documents for established coaching methods.
-4. Historical/prehire records for background that predates the 2013 season.
-5. Coaching profiles in this directory as summaries of those sources.
+Stone's [camp method](alex_stone.md#how-he-wants-training-camp-run) records the user's reporting, fitness, participation, contact, mixed-group and situational-work instructions. It carries forward until changed. It does not establish that a fitness test occurred, that a player passed it, or that an assistant followed through on a promised correction.
 
-A coaching profile never overrides the source file that owns a roster move, staff assignment, medical status, game event, playbook rule, contract fact or authority split.
+Later evidence enters through a dated assessment linked to the source report. Preserve the earlier interpretation, explain what changed or remained uncertain, and identify the next useful observation. Update the current synthesis only when that body of work supports it. A season boundary does not reset strengths or settle an unresolved question. A coach's current-season exit interview and team review belong under that season's `07_Season_Review/`; the living profile links the relevant finding.
 
-## Allowed profile claims
+## Authority and scheme
 
-A profile may state a coaching trait when the 2013 record supports it.
+The actual event record owns what happened. The current staff and authority records own appointments and delegation. The active playbook owns scheme content; only the iteration effective at the event may explain its assignments. In 2014 the 2013 Iteration I books remain active. Do not read later iterations to supply future coaching knowledge.
 
-Examples:
+A profile never overrides roster control, medical instructions, a role decision, a contract, the user's retained authority or a recorded game result. Do not infer that Stone performed every coordinator's task because he is head coach. A coaching comparison is an attributed personnel judgment within the governing presentation rules, never an engine input or a promise of results.
 
-- Stone is a strong offensive designer.
-- Stone is a very good teacher.
-- Stone uses multiple personnel groups and movable tight ends/H-backs.
-- Stone likes Power, Counter, Inside Zone, Outside Zone and two-back structures.
-- Stone sequences calls and uses formation/personnel to create defensive conflict.
-- Stone delegates defensive play-calling to the defensive coordinator.
-- Stone can be too attracted to a passing answer and can let individual-development work get crowded out.
+## Evidence limits
 
-These are coaching-profile conclusions. They should be grounded in the 2013 record, but the profile does not need to reproduce an evidence audit after every sentence.
+Use the work completed by the stated checkpoint. Do not supply private dialogue, unexpressed motives, unheld meetings, future hires, unplayed games or later real-world outcomes. A win or loss alone does not establish an individual coaching trait. A completed correction, delivered packet and retained player learning are separate findings.
 
-## Prohibited inference
-
-Do not use:
-
-- 2014 or later events;
-- future playbook iterations;
-- real-world post-divergence outcomes;
-- hindsight from a player's later NFL career;
-- a future coaching hire or firing;
-- an unplayed game;
-- an unrun practice;
-- an unheld meeting;
-- an invented private conversation;
-- a future improvement merely because a weakness was identified;
-- a future decline merely because a weakness existed;
-- a team win or loss as automatic proof of an individual coaching trait.
-
-Do not convert an intended correction into a completed correction.
-
-Do not convert an authored playbook page into proof that the concept was installed or used.
-
-Do not convert formal head-coach authority into proof that Stone personally performed every coordinator or position-coach task.
-
-## Scheme boundary
-
-The 2013 offensive and defensive playbook iterations are the only scheme books available to this directory.
-
-The offense may be described from the active 2013 book, including its concept structure, personnel groupings, run families, pass concepts, protections, motion, formation use and situational football.
-
-The defense may be described from the active 2013 book and 2013 staff record. The defensive coordinator remains the ordinary defensive caller where the staff record says so.
-
-Do not borrow terminology, structures, tags, pressures, personnel rules or coaching ideas from later playbook iterations.
-
-## Evidence rule
-
-Use evidence for what happened.
-
-Use the profile for what the 2013 evidence says about the coach.
-
-Keep those two jobs separate.
-
-A dated event can establish that Stone called, taught, changed, delegated, corrected, retained or removed something in that event.
-
-Several events can support a broader coaching trait.
-
-One event does not automatically establish a permanent universal trait, but the profile is allowed to synthesize repeated 2013 evidence into a normal football judgment.
-
-The point of this directory is to produce a usable coach profile, not an HR competency matrix and not a probability engine.
-
-## Ratings and comparisons
-
-If a rating, tier or league comparison is used, it is a profile judgment based on the established 2013 coach, not a simulation input.
-
-Ratings do not modify game probabilities.
-
-Ratings do not award XP.
-
-Ratings do not force future development.
-
-Ratings do not guarantee future wins.
-
-A statement such as "top-10 NFL head coach" is a descriptive profile judgment for the established coach at this checkpoint. It is not a prediction of where he will rank in a later season.
-
-## Update rule
-
-Do not advance this directory into 2014 automatically.
-
-Only revise these files for one of two reasons:
-
-1. a 2013 source is corrected, added or clarified; or
-2. the repository intentionally changes the time boundary and updates this README at the same time.
-
-Until then, stop at the 2013 season record.
-
-**Dated 2014 handoffs (added September 30, 2026).** Under AGENTS.md's living-coaching-assessment rule, a material evidence handoff in 2014 appends a dated change or retained assessment to `alex_stone.md` and a row to the dated-changes table in `staff_profiles.md`, each linked to the phase output that owns the evidence. The 2013 portrait above those entries is preserved unchanged; a dated entry is the only way 2014 evidence enters this directory. The first is the May 23, 2014 Phase Two handoff ([May 12–23 spring record](../2014/Record.md)).
-
-**User-defined methods (September 30, 2026 clarification).** The user explicitly requested that Stone's profile include his approach to camp. Keep that direction in a labeled intended-method section, linked to the operative season plan, separate from the historical portrait and dated performance assessments. [How he wants training camp run](alex_stone.md#how-he-wants-training-camp-run) establishes reporting, player and coach fitness, participation, physical practice, mixed groups and situational work. It is not evidence that a test or practice occurred, and does not rewrite the frozen prehire dossier or earlier results.
+At handoff, preserve unresolved teaching and staff follow-through with their source, owner and next observation in the existing season handoff. The profile remains a readable assessment of the coach; the source report retains the detailed work.

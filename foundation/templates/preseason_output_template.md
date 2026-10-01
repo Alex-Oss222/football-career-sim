@@ -10,6 +10,8 @@ Each played preseason game's complete output remains in its existing game folder
 
 Use all eight sections below for the consolidated preseason turn. Show period-level coach status and preparation once, and repeat the complete section 4 game block for each played game, with the correct opponent/date and its own report and box score. Keep each game's recorded media clearly dated in sections 3 and 5. Section 6 draws together the findings across games and camp; section 7 shows the current personnel at the report's cutoff; section 8 closes the period actually reached. The [consolidated review guide](training_camp_and_preseason/preseason_review.md) supplies section 6's football substance, not a replacement layout.
 
+Save the new cross-game assessment as a dated **Preseason review through [cutoff]** subsection of section 6 in the latest completed game's `output.md` at that cutoff. That section is its single saved owner; link earlier game reports and preserve earlier dated reviews rather than replacing their judgments. Render it in section 6 of the consolidated chat output. If the period stops before any game, keep the camp assessment in `Training_Camp/training_report.md`; an unplayed game does not receive a review to provide a storage location.
+
 Follow the existing bulk preseason workflow. Stop at an uncovered consequential Stone decision when required; report only the completed work. Do not run a game to fill a template, award a role from a heading, or turn a planned opportunity into recorded participation. Routine practice reports do not acquire these game-output tables.
 
 ## Preseason-stat persistence rule
@@ -48,6 +50,8 @@ Section 4 keeps the established game header and selected narrative. Immediately 
 Read the prepared menu, actual participation/substitutions, public receipt/play record, medical instructions and dated coaching observations before filling the report. Use the relevant active playbook entries and the [player-assessment method](training_camp_and_preseason/player_assessment.md). A concept's presence in the book does not establish that it was taught or called. Distinguish an immediate impression from a completed staff review. Do not invent film viewing, a spoken check, effort, a missed assignment or a technical cause from a statistic alone.
 
 Assess the actual starters, reserves and mixed groups with their supporting players, opposition, assignment and opportunity. A quarterback change does not establish that the entire unit changed. Keep recognition, technique, physical execution and decisions distinct. Give supported strengths and failures their proper weight without requiring equal praise and criticism or a note on every player. The [preseason research](../../docs/preseason_game_reports.md) supplies coaching examples; outside player results do not become branch evidence.
+
+A game is valuable evidence when its actual task and opposition test the question. Compare it with the player's practice work rather than automatically putting every exhibition snap above every camp rep. Identify different menus, surrounding personnel, workload or contact limits that affect a comparison. Use recorded snap/series counts when they help; do not manufacture equal opportunities or turn missing participation detail into zero work. Repetition supports a conclusion only when the later opportunity tested the relevant responsibility again.
 
 Use connected prose in the filled report. The game narrative tells what happened; the report develops the football judgments. Sections 5 through 8 retain their original purposes. Mention a fact again only when it answers a different question, and keep section 6 focused on the resulting work. The full template below is an authoring scaffold: render its filled Markdown normally in chat, without the outer fence or bracketed instructions.
 
@@ -239,7 +243,7 @@ A routine pregame session normally uses **2-3 substantive questions**. A routine
 
 [Briefly identify the camp questions the game was meant to test, the prepared menu, personnel opportunities and material workload limits. Explain why a player or combination received that work when the reason is recorded. Distinguish the plan from who actually played. Do not assume every starter plays the same number of series or that game three always has a fixed rehearsal role. The recorded pregame exchange belongs in section 3; do not repeat it here.]
 
-#### How the game unfolded
+#### What the game established
 
 [Use the game summary directly above as the account of what happened. Explain what those sequences establish about the team's play as a whole and what changed with the actual personnel. Connect offense, defense and special teams through possession, field position and the situations they left each other. Include the opponent's contribution. Develop the coaching assessment here without retelling the chronology.]
 
@@ -271,11 +275,13 @@ A routine pregame session normally uses **2-3 substantive questions**. A routine
 
 [Give the reader the distinction that matters: dependable work, a useful performance earning another look, a recurring limitation, or an unresolved comparison. Those are judgments to express in normal prose, not mandatory labels or grades. A receiver can help through spacing or blocking without a catch; a defensive back can execute his coverage without a target. Credit those jobs only with actual evidence. A productive reserve with a narrower menu has established something useful within that menu, not mastery of the entire offense. Playing little, being medically limited or never encountering the planned test is not failure.]
 
+[For an existing position battle, state what this game adds to the particular job comparison and link its card. Do not create a battle from a vacancy, cross-training rep or good highlight. Evaluate what moving a candidate changes for the surrounding unit and other duties, including special teams. A recorded role decision belongs in roster decisions and the depth chart; this report supplies its football evidence.]
+
 #### Stone's decisions and the next practice
 
 [Record consequential choices Stone actually made, why the recorded football problem prompted them and what happened afterward. Separate the choice from its execution. Consider the staff's teaching, call, personnel support and sideline operation alongside the players. Do not rewrite Stone's intentions from the final score or invent a private reaction.]
 
-[Give each material correction its responsible coach and next useful opportunity: film/meeting clarification, a technique period, a combination rep, a situation or a later game exposure as appropriate. Explain what would count as improvement in that job. Use that season's actual staff; a proposed correction is not a delivered lesson, and a planned retest is not a successful rep. Distinguish a recommendation for different work from Stone's actual role decision. Link any actual role or availability change to its owner. Keep recorded postgame media in section 5, in Stone's established voice; do not manufacture quotes in a retrospective rewrite. Identify the next work or consequential choice that pauses the bulk turn; section 6 carries those priorities forward without repeating the assessment.]
+[Give each material correction its responsible coach and next useful opportunity: film/meeting clarification, a technique period, a combination rep, a situation or a later game exposure as appropriate. Explain what would count as improvement in that job. Use that season's actual staff. The position coach addresses technique and recognition, the coordinator connects the unit's assignments, and the head coach evaluates the team consequence within his actual responsibilities; do not invent a second coach when duties overlap. A proposed correction is not a delivered lesson, and a planned retest is not a successful rep. Distinguish a recommendation for different work from Stone's actual role decision. Link any actual role or availability change to its owner. Keep recorded postgame media in section 5, in Stone's established voice; do not manufacture quotes in a retrospective rewrite. Identify the next work or consequential choice that pauses the bulk turn; section 6 carries those priorities forward without repeating the assessment.]
 
 #### Box score
 
@@ -285,6 +291,7 @@ A routine pregame session normally uses **2-3 substantive questions**. A routine
 - [Player]: [Specific football evidence and relevant statistics.]
 - [Player]: [Specific football evidence and relevant statistics.]
 [Use 2-4 only when earned by the generated game.]
+[These are concise references to the developed player findings above, not another assessment or a second account of the same plays.]
 
 **Material game-management decisions:** [Only consequential fourth-down, clock, challenge, timeout, personnel, tempo, or other head-coach decisions actually made. Separate the quality of the decision from whether the result worked. Omit if none.]
 
@@ -373,7 +380,7 @@ Do not repeat the entire roster or every unchanged backup. `career/[year]/roster
 **Preseason record:** [W-L-T from completed preseason receipts only]
 **Roster decisions:** [Decisions actually made; identify unresolved choices and link the proper roster-decision owner]
 **Preseason statistics:** [Completed-game coverage and the separate preseason statistics record; any specific missing receipt/box-score support]
-**Ledger entry:** [Actual closing entry, or the existing checkpoint if this is only a report rewrite]
+**Dated record:** [Descriptive link to the actual game/period event owner and its annual Record.md index; retain the existing event for a presentation-only rewrite]
 **Next event:** [Exact next football/calendar event]
 ~~~
 

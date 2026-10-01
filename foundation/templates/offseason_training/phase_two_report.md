@@ -1,30 +1,33 @@
 # Phase Two report template
 
-Use with the [report instructions](README.md). Report coached individual work and offense-only, defense-only or special-teams-only rehearsal. No helmets, contact, opposed pass rush or receiver/defender contest under the 2014 rules. Check the applicable season before reusing those rules.
+Use the [shared report guidance](README.md). Under the 2014 rules, coaches may teach individual work and separate offense, defense and kicking-unit rehearsal, without helmets, contact or offense-versus-defense drills. Verify the applicable season before reusing those limits.
 
 ## Report to render
 
 # Phase Two | [Team] | [Season]
 
-**Location:** [Recorded facility or field; do not invent one]  
-**Dates:** [Field-work dates]  
-**Days completed:** [Actual unopposed field days; exclude rookie-camp days and staff-only reviews]  
-**Work addressed:** [Individual technique, formations and separate-unit rehearsal addressed]
+**Location:** [Recorded facility or field]
 
-[Lead with how the classroom teaching translated to movement. State that the work was unopposed. Identify the formations, calls or fundamentals that actually occupied the period, rather than promising a generic full installation.]
+**Dates:** [Field-work dates covered]
+
+**Days completed:** [Actual unopposed field days; exclude rookie-camp days and staff-only reviews]
+
+**Work addressed:** [Individual technique, formations and separate-unit rehearsal actually taught]
+
+[Lead with how the classroom work translated to movement. State the unopposed setting and identify the meaningful individual and unit periods, their purpose and material differences in participation. Explain what this block added to earlier teaching.]
 
 ## Running the offense on air
 
-[Describe alignment, splits, motion, huddle/cadence and the taught play's timing where observed. Connect the quarterback's footwork and progression to receiver landmarks, the line's steps and the back's assignment. State what happened when a formation or carded front changed. A coach's card is not a live defense. Explain the correction and whether it held later.]
+[Follow an actual taught call through alignment, splits or motion, cadence and execution. Connect the quarterback's feet and progression with receiver landmarks, the line's steps and the back's assignment. Explain what a changed formation or carded front asked them to adjust. Compare the important early and later work, including a coaching response when needed. A coach's card is not a live defense.]
 
 ## Getting the defense lined up
 
-[Describe the actual front and coverage work, who passed the call, who had the gap or help responsibility, and how a carded motion changed it. Report pursuit angles, coverage drops or rush landmarks as drills. Do not claim tackles, tight coverage, a stuffed run or pressure on a quarterback.]
+[Show how the call moved through the front, linebackers and secondary, and whether their assignments fitted together. Describe the movement, pursuit path, rush landmark or coverage drop actually rehearsed. Explain a changed carded presentation and the response. Keep footwork or alignment findings separate from pressure, tackling or coverage wins that this work cannot establish.]
 
 ## Special teams
 
-[Explain the operation, release, lane, return-path or substitution work that was actually done. Identify who worked together and what needed correction. Keep protection/coverage units separate from their opponents. Do not invent kick measurements.]
+[Describe the separate operation, release, lane, return-path or substitution rehearsal. Who worked together, what was the intended relationship, and what did the drill show? Explain actual technique teaching and any later check. Missing partners or omitted periods limit the findings; do not supply a complete operation from isolated work.]
 
 ## Players to follow into OTAs
 
-[Name the useful individual findings, including a reserve or newcomer when evidence warrants it. Say exactly what must next be tested against an opposing unit. A clean rep on air does not settle a competition. Include only consequential participation limits or pending choices.]
+[Draw out consequential individual or combination findings without repeating the unit account. Explain what remains to be tested against opposition, including a reserve or newcomer when warranted. Carry each important question with its dated source, responsible coach and next useful opportunity. A clean rehearsal informs the next practice; it does not settle a physical competition.]

@@ -1,6 +1,6 @@
 # Individual film and tape workflow
 
-[Offseason index](../../02_Offseason_Training/README.md) | [Player queue](player_queue.md) | [Delivery log](delivery_log.md) | [Packet template](packet_template.md) | [Cousins index](kirk_cousins_2013_review.md)
+[Offseason index](../../02_Offseason_Training/README.md) | [Player queue](player_queue.md) | [Delivery log](delivery_log.md) | [Packet template](../../../../foundation/templates/coaching_methods/film_packet.md) | [Cousins index](kirk_cousins_2013_review.md)
 
 **Purpose:** give each player his own explanation, source examples and next teaching step, then close the loop on delivery and retention. The written indexes here are assembly and review records. No video assets were supplied for this build; a receipt's game clock is not a video timestamp, and a play ledger does not reveal unseen leverage, footwork or coverage.
 
@@ -47,5 +47,4 @@ At the next permitted teaching block, the coach checks the actual football job. 
 |---|---|
 | [delivery_log.md](delivery_log.md) | Player film distribution and follow-up log. |
 | [kirk_cousins_2013_review.md](kirk_cousins_2013_review.md) | Kirk Cousins: 2013 season review index. |
-| [packet_template.md](packet_template.md) | Individual teaching packet template. |
 | [player_queue.md](player_queue.md) | Player film and written-feedback queue. |

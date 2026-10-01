@@ -1,6 +1,6 @@
 # Team training workflow
 
-[Training index](../README.md) | [Room plans](unit_plans.md) | [Session template](session_template.md) | [Film queue](../../00_Team_Operations/Film/player_queue.md)
+[Training index](../README.md) | [Room plans](unit_plans.md) | [Session template](../../../../foundation/templates/coaching_methods/session_plan.md) | [Film queue](../../00_Team_Operations/Film/player_queue.md)
 
 **Use:** every permitted teaching block, then continue the individual review through the regular season, including after the bye. This is an operating method, not a claim that a 2014 session has happened.
 
@@ -41,7 +41,7 @@ No invented defect is required on a correct rep. Several players missing the sam
 
 - Report writer: use the matching [phase report template](../../../../foundation/templates/offseason_training/README.md) for chat and the readable phase output. Explain the work and the player's response in football prose. Keep the detailed evidence behind it; do not render this workflow's teaching-state labels or administrative checks as the report itself. Reviewing a closed phase changes presentation only and creates no new practice evidence.
 
-- Position coach: create the player's short written note using the [player template](../../00_Team_Operations/Player_Development/player_plan_template.md), update the packet question and identify the next legal retest. Give the player a specific answer about an open or parked evaluation, not only the unit's statistics.
+- Position coach: create the player's short written note using the [player template](../../../../foundation/templates/coaching_methods/player_development_plan.md), update the packet question and identify the next legal retest. Give the player a specific answer about an open or parked evaluation, not only the unit's statistics.
 - Coordinator: reconcile shared responsibility and call/design issues before the packet is approved. Check comparable evaluation opportunities for reserves; document differences in opponent, support, protection, menu, situation or exposure. Equal percentages are not required and do not substitute for fair comparison.
 - Stone: review his own call/menu/clock contributions separately from player technique; approve material menu and role changes through their proper records. Players can identify calls or assignments they do not trust before the final game sheet is frozen.
 - Film owner: update preparation and distribution independently. A coach's draft, a sent packet, a player acknowledgment and a completed retest are different events.

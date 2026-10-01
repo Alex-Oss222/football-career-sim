@@ -13,7 +13,7 @@ This document states what is true now and what comes next. The [2014 record](../
 
 | Canonical document | Effective version | Current pointer |
 |---|---|---|
-| Document 1 | `d8bcc5697c5a4bf273122352f9d5230044b76da5` | Active foundation source |
+| Document 1 | `0e1b7b95d65d0a76b83ee192cb961e2c520308d1` | Active foundation source |
 | Document 2 | `c4bb8d569467f085882da407c8660cbc4001452d` | Active foundation source |
 | Document 3 | `299b5711721ac3c0caaee695c77f8aec406ba6eb` | Active foundation source |
 | Document 4 | `JAX-2014-JUL29-REGISTER-67`; owned facts unchanged through August 4 | Roster, staff, medical and role register |
