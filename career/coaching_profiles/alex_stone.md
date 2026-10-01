@@ -1,5 +1,11 @@
 # Alex Stone: coaching profile
 
+<!-- photo -->
+<img src="photos/alex_stone.webp" alt="Alex Stone" width="220">
+
+*Photo: supplied by the user, October 1, 2026.*
+<!-- /photo -->
+
 Jacksonville Jaguars head coach. Age 50. This portrait looks back from February 2, 2014, after his first Jacksonville season. Descriptions of temperament and comfort are interpretations of his recorded work and conversations; the linked records supply the events.
 
 The [complete NFL Coach Sheet](alex_stone_coach_sheet.md) expands the early-2014 portrait. Dated updates below preserve subsequent evidence. His [training-camp approach](#how-he-wants-training-camp-run) records the user's explicit direction separately from demonstrated coaching results.

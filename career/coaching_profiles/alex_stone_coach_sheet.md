@@ -1,5 +1,11 @@
 # NFL Coach Sheet
 
+<!-- photo -->
+<img src="photos/alex_stone.webp" alt="Alex Stone" width="220">
+
+*Photo: supplied by the user, October 1, 2026.*
+<!-- /photo -->
+
 ## Alex Stone
 
 **Career assessed through February 28, 2014. Prepared September 29, 2026.** Companion to the [human coaching portrait](alex_stone.md), using the supplied NFL Coach Sheet format. This is a dated assessment of existing history. It does not advance the season, appoint staff, change roles or make new football decisions.
