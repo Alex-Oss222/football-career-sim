@@ -5,8 +5,8 @@ Use these templates for the report in chat and the readable part of the season's
 | Report | Template | What the reader should learn |
 |---|---|---|
 | Camp practice or a block of practices | [Training camp](training_camp_report.md) | How the taught football held up at the actual pace and contact level, with the players and combinations used. |
-| A played preseason game | [Preseason game](preseason_game_report.md) | How the team played, how its actual personnel groups executed and communicated, which players helped or struggled, and the next coaching work. |
-| Consolidated preseason review | [Preseason review](preseason_review.md) | Which practice findings carried into games, which changed, and what remains unsettled. |
+| A played preseason game | [Preseason game](../preseason_output_template.md) | How the team played, how its actual personnel groups executed and communicated, which players helped or struggled, and the next coaching work. |
+| Consolidated preseason turn | [Full preseason output](../preseason_output_template.md), with the [review guide](preseason_review.md) inside section 6 | The complete game-output package, which practice findings carried into games, which changed, and what remains unsettled. |
 | A player or position-room assessment, in any phase | [Player assessment](player_assessment.md) | What the player can presently do in the assigned scheme, the support he needs and the next useful test. |
 
 ## Before writing
@@ -16,6 +16,8 @@ Read the requested season's calendar, roster and medical instructions, Stone's [
 The templates govern presentation. They do not run a practice or game, generate a grade, decide a role, authorize contact or advance the clock. Resolve newly authorized work through the repository's existing process first. A review of an old report stops at that report's evidence date. The [research and implementation note](../../../docs/camp_and_preseason_reports.md) explains the 2014 practice rules and the difference between practice, scrimmage and game evidence; verify the applicable rules when the season changes.
 
 For preseason games, the user's October 1 follow-up requires both a readable game story and a substantive coaching review. Read the [preseason research](../../../docs/preseason_game_reports.md) and [worked historical extract](../../../docs/examples/preseason_game_review_2013_miami.md). Assess offense, defense, special teams and communication, including the actual work of starters, reserves and mixed groups. Explain a player's strengths and failures where supported, their effect on the unit, and what the coaches should revisit. A score table, a few star statistics or generic “execution improved” prose does not satisfy this format.
+
+The user's subsequent correction keeps the original full game-output layout. Use the complete [preseason template](../preseason_output_template.md), with the Report to render directly beneath the game narrative in section 4. It retains coach status, preparation, both media sessions, the full generated box score, coaching takeaways, personnel and closure. The former short `preseason_game_report.md` has been removed; these research/assessment guides support the complete output rather than competing with it. Regular-season and postseason turns use [their own complete version](../regular_season_output_template.md).
 
 ## Write the football, then the judgment
 
@@ -29,7 +31,7 @@ Physical camp has specific work: blocking against resistance, block defeat, pres
 
 ## Use in chat and in the repository
 
-Render the filled template as ordinary Markdown, with connected prose under the football headings. Never show the bracketed author instructions. Keep the main section order stable across seasons; optional sections can be omitted when nothing occurred. A camp block usually needs 600 to 1,000 words; a short practice update needs less. Length follows the actual work, not a quota of anecdotes. Leave routine cap, coach-contract, job-security and draft tables out of training reports.
+Render the filled template as ordinary Markdown, with connected prose under the football headings. Never show the bracketed author instructions. Keep the main section order stable across seasons; optional details can be omitted when nothing occurred. A camp block usually needs 600 to 1,000 words; a short practice update needs less. Length follows the actual work, not a quota of anecdotes. Leave routine cap, coach-contract, job-security and draft tables out of practice reports. A preseason game or bulk turn retains all eight sections of its complete output template, including its coach-status fields.
 
 In chat, show the readable report and answer follow-ups from its supporting evidence. Keep hashes, engine badges, closure instructions and audit tables in the supporting record. Mention an administrative issue when it changes participation or prevents the next requested action. End with the next football work and only a consequential decision Stone actually needs to make.
 

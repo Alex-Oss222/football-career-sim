@@ -4,6 +4,8 @@ Prepared September 30, 2026 at the user's request. This extends the [spring repo
 
 The [October 1 preseason-game follow-up](preseason_game_reports.md) adds research on actual coaches' reviews, a deeper game/team/player format and a [worked extract from the archived 2013 Miami game](examples/preseason_game_review_2013_miami.md). It explains how the report covers starters, reserves, communication, strengths, failures and the next coaching work.
 
+The user's later layout correction places that report inside the complete original game-output format, directly below the game narrative in section 4. The renamed [regular-season template](../foundation/templates/regular_season_output_template.md) and new [preseason template](../foundation/templates/preseason_output_template.md) each retain all eight major sections. The consolidated preseason review is supporting guidance for section 6, not an alternative output layout.
+
 ## What changes in the report
 
 The report should tell Stone how his team practiced: the formation and call, the job a player had, how he performed it, what the coach corrected and whether the next opportunity answered the question. Camp adds the physical tests that spring could not provide. Preseason adds an outside opponent, game operation and situations the staff cannot reset on demand.
@@ -74,14 +76,14 @@ Position coaches identify the technique and correction; coordinators judge share
 | OTAs | Offense, defense and kicking assignments against non-contact opposition | [OTAs](../foundation/templates/offseason_training/otas_report.md) |
 | Mandatory minicamp | What the spring group can run and the work carried into summer | [Mandatory minicamp](../foundation/templates/offseason_training/mandatory_minicamp_report.md) |
 | Training camp | Retention, actual contact work, mixed personnel and situations | [Camp](../foundation/templates/training_camp_and_preseason/training_camp_report.md) |
-| Preseason game | Game story, generated box score, player execution and the next correction | [Game](../foundation/templates/training_camp_and_preseason/preseason_game_report.md) |
-| Camp/preseason close | Combined evidence, usable units, actual role decisions and unfinished work | [Review](../foundation/templates/training_camp_and_preseason/preseason_review.md) |
+| Preseason game | Game story, generated box score, player execution and the next correction | [Game](../foundation/templates/preseason_output_template.md) |
+| Camp/preseason close | Combined evidence, usable units, actual role decisions and unfinished work | [Full preseason output](../foundation/templates/preseason_output_template.md), with the [review guide](../foundation/templates/training_camp_and_preseason/preseason_review.md) in section 6 |
 
 The shared [player-assessment template](../foundation/templates/training_camp_and_preseason/player_assessment.md) applies across those stages with different evidence limits. Keep the core section order; rebuild the content from that year's people, books, assigned work and results.
 
 ## How this works in the LLM chatbox
 
-AGENTS.md, both general output templates and the season's camp/preseason indexes route the assistant to these files. The assistant reads the event's completed evidence and relevant taught playbook entries, then renders the filled report as normal Markdown. The headings organize prose; the user is not asked to fill a form. Narrow follow-ups use the saved detail rather than replaying the whole report. There is no new application endpoint or frontend to deploy.
+AGENTS.md, the full output templates and the season's camp/preseason indexes route the assistant to these files. The assistant reads the event's completed evidence and relevant taught playbook entries, then renders the filled report as normal Markdown. Game reports preserve the full output layout, with the assessment immediately below the narrative. The headings organize prose; the user is not asked to fill a form. Narrow follow-ups use the saved detail rather than replaying the whole report. There is no new application endpoint or frontend to deploy.
 
 The [Tampa Bay folder](../career/2014/training_camp_and_preseason/preseason_games/game_01/README.md#questions-coming-out-of-the-camp-opening) now contains a preparation preview based on the July 29 questions. After that game is legitimately played, its report will state the result, explain the material game sequences, include the generated box score, assess the work against those questions and assign the next corrections. The future game cannot be illustrated with invented player results today.
 

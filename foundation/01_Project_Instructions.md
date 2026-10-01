@@ -226,7 +226,7 @@ After the final play, verify the final score against the scoring chronology, pos
 
 ### 12.1 Normal response
 
-Superseded for actual in-world output by the three templates in `foundation/templates/`: `hiring_search_output_template.md` during PRE-HIRE SEARCH, `season_output_template.md` in-season, and `offseason_output_template.md` in the offseason. The field-by-field layout below is underlying communication guidance, not a competing fourth format.
+Superseded for actual in-world output by the templates in `foundation/templates/`: `hiring_search_output_template.md` during PRE-HIRE SEARCH, `regular_season_output_template.md` for regular-season and postseason turns, `preseason_output_template.md` for preseason, and `offseason_output_template.md` in the offseason. At the user's request, the original game-output layout is retained in separate regular-season and preseason versions, with the full Report to render beneath the game narrative in section 4. The field-by-field layout below is underlying communication guidance, not a competing output format.
 
 Use a concise header with exact date or range, team, competition and season, phase and week, record, next opponent or event, and current focus.
 
