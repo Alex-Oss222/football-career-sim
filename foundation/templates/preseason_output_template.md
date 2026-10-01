@@ -181,6 +181,13 @@ Do not invent direct quotes from a named real reporter or media member unless th
 
 A routine pregame session normally uses **2-3 substantive questions**. A routine postgame session normally uses **3-5 substantive questions**. High-stakes sessions may run longer where the result genuinely creates more to address.
 
+**Answer method.** Both sessions follow the [head-coach media method](../../docs/head_coach_media_method.md): how real sessions run, the catalogue of real answers, the anti-slop rules, Stone's voice sheet and a worked postgame example. Its key rules, carried here:
+
+- Questions are taken from real transcripts in the reporter's wording and length (clipped, two-in-one, statement-questions and the reporter's own count included); only the branch's names and details change. Run them in a real session's order: the largest thing first, plays and players in the middle, the wide questions last. End each media section with a **Question sources** line per question: the coach asked, the club, the date and the transcript link.
+- Stone's answers open on the substance, never by restating the question. No lists of three built for rhythm, no "at the end of the day", no sermon, no explaining the plan's rationale unprompted, no coach-speak the real transcripts do not show. The tape deferral and "I'll have to look at it" each appear at most once per session and carry a specific observation.
+- Give a one-sentence answer where a real coach would give one; a third of a postgame session after a loss runs that short. Numbers only as the coach would hold them at the podium.
+- Injury answers give what the medical record holds and stop; the roster is Caldwell's; a competition is not decided from the podium after one game; blame is Stone's first and in one sentence; credit is named and specific.
+
 ---
 
 ~~~

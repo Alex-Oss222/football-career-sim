@@ -134,6 +134,7 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 - **Answers.** Answer as Stone. His voice from earlier turns governs. The transcripts supply how a head coach handles each kind of question: what he answers straight, what he declines, how he talks about injuries, rookies and the opponent, and how long he talks.
 - **Facts.** Stone's answers contain only what Section 1 and the branch support. The podium answer may hold back what Section 1 shows. It never contradicts the branch.
 - **Order.** Run the questions in the order a real session runs, not grouped by topic.
+- **Method.** Apply the [head-coach media method](../../docs/head_coach_media_method.md): its catalogue of real answers, its anti-slop rules (no answer restates the question; no lists of three built for rhythm; no "at the end of the day"; no sermon; no unprompted plan rationale; the tape deferral and "I'll have to look at it" at most once each per session, with a specific observation; one-sentence answers where a real coach gives one; numbers only as held at the podium) and Stone's voice sheet (straight on his own decisions, blame first and short after a loss, named credit, the injury answer stops at the medical record, the roster is Caldwell's, no job decided from the podium).
 
 ### Section layout
 
@@ -414,7 +415,7 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 2. For each item, find a real head coach's postgame press conference after a real game where the same thing happened. A win with two interceptions. A rookie tackle charged with sacks. A defense with takeaways and no sack. A loss decided on a late drive.
 3. Read the whole transcript and at least two more from other head coaches, including one after a win and one after a loss.
 
-**What to do with it.** As in Section 2: real questions in their real wording with only the branch's names and details changed, Stone's answers in his own voice, facts only from the branch, real session order. After a loss, or a game with a disputed decision, the real sessions run longer and press harder. Match that.
+**What to do with it.** As in Section 2: real questions in their real wording with only the branch's names and details changed, Stone's answers in his own voice, facts only from the branch, real session order. After a loss, or a game with a disputed decision, the real sessions run longer and press harder. Match that. The [head-coach media method](../../docs/head_coach_media_method.md) governs the answers as in Section 2; its section 6 is a worked postgame example after an overtime loss.
 
 ### Section layout
 
