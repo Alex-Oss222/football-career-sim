@@ -446,7 +446,9 @@ def validate(root=ROOT):
         require_preseason(preseason, 2014)
         require(len({r['event_id'] for r in preseason}) == len(preseason), '2014 preseason receipts contain duplicate event identities')
         if preseason:
-            require(not game_release_errors(2014, root), '2014 preseason receipts exist before season release acceptance')
+            for receipt in preseason:
+                require(not game_release_errors(2014, root, preseason=int(receipt.get('preseason_game') or 0) or None),
+                        '2014 preseason receipts exist before season release acceptance')
             fixtures = {g['game_id'] for g in paths.preseason_games()}
             for receipt in preseason:
                 require(receipt['event_id'] in fixtures, '2014 preseason receipt is not a dated fixture: ' + receipt['event_id'])

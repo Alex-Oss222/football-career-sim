@@ -104,8 +104,8 @@ def run_game(home: TeamInput, away: TeamInput, *, event_id, snapshot,
     """
     match = re.match(r'^(\d{4})-', event_id)
     if match:
-        from .seasons import require_game_release
-        require_game_release(int(match[1]))
+        from .seasons import preseason_scope, require_game_release
+        require_game_release(int(match[1]), preseason=preseason_scope(event_id))
     client = client or Client(snapshot=snapshot)
     if client.snapshot != snapshot:
         raise ValueError("client and game snapshot differ")

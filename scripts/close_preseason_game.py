@@ -188,7 +188,7 @@ def main():
     args = parser.parse_args()
     paths = SeasonPaths(args.season, ROOT)
     try:
-        require_game_release(args.season, ROOT)
+        require_game_release(args.season, ROOT, preseason=args.game)
     except ValueError as exc:
         print("PRESEASON_INPUTS: BLOCKED\n- " + str(exc))
         return 1
@@ -234,7 +234,8 @@ def main():
               % (args.game, game["away"], game["home"], game["date"], digest))
         return 0
     answer = load_answer(args.answer) if args.answer else None
-    readiness = subprocess.run([sys.executable, str(ROOT / "scripts/check_game_readiness.py"), "--season", str(args.season)],
+    readiness = subprocess.run([sys.executable, str(ROOT / "scripts/check_game_readiness.py"), "--season", str(args.season),
+                                "--preseason", str(args.game)],
                                capture_output=True, text=True)
     if "GAME READINESS: READY" not in readiness.stdout:
         print(readiness.stdout + readiness.stderr)

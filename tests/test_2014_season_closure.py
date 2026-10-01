@@ -116,7 +116,7 @@ class SeasonClosure2014Tests(unittest.TestCase):
         # The production runner checks the season release of the root it runs
         # in: here the temporary root's accepted record, never the real one.
         original = seasons.require_game_release
-        with patch.object(seasons, "require_game_release", lambda season, r=root: original(season, r)):
+        with patch.object(seasons, "require_game_release", lambda season, r=root, **kw: original(season, r, **kw)):
             results = self.close_slate(package, snapshot, client)
 
         self.assertEqual(set(results), {g["event_id"] for g in package["games"]})

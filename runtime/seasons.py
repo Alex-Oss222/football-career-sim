@@ -179,9 +179,18 @@ def require_receipt_season(receipts, season):
             raise ValueError('Receipt lacks a season-qualified event id: ' + event)
 
 
-def game_release_errors(season, root=ROOT):
-    """Public release gate, independent of credentials or legacy VERIFIED flags."""
+def game_release_errors(season, root=ROOT, preseason=None):
+    """Public release gate, independent of credentials or legacy VERIFIED flags.
+
+    ``preseason=N`` scopes the required-input check to preseason game N: the
+    Jacksonville depth chart it needs is the game's frozen chart
+    (``Game_0N/depth_chart.json``, Stone's plan), not the season input
+    ``game_depth_chart.json``, which stays required for every regular-season
+    or postseason closure. The release gates themselves are the same.
+    """
     paths = SeasonPaths(season, root)
+    if preseason is not None and (type(preseason) is not int or not 1 <= preseason <= 5):
+        raise ValueError('Invalid preseason game number: %r' % (preseason,))
     if season == 2013:
         return []
     from . import KERNEL_VERSION
@@ -205,9 +214,13 @@ def game_release_errors(season, root=ROOT):
             errors.append(gate['id'] + ': ' + gate['remaining'])
         elif not gate.get('evidence') or any(not (Path(root) / p).is_file() for p in gate['evidence']):
             errors.append(gate['id'] + ': verified gate lacks acceptance evidence')
-    for name in ('roster', 'depth_chart', 'schedule', 'background_depth'):
-        if not getattr(paths, name).is_file():
-            errors.append('Missing %d input: %s' % (season, getattr(paths, name).relative_to(paths.root)))
+    inputs = {name: getattr(paths, name) for name in ('roster', 'depth_chart', 'schedule', 'background_depth')}
+    if preseason is not None:
+        inputs['depth_chart'] = paths.preseason_folder(preseason) / 'depth_chart.json'
+    for name, path in inputs.items():
+        if not path.is_file():
+            errors.append('Missing %d %sinput: %s' % (season, 'preseason game %d ' % preseason if preseason else '',
+                                                    path.relative_to(paths.root)))
     if paths.schedule.is_file():
         try:
             expected = 256 if season < 2021 else 272
@@ -218,7 +231,13 @@ def game_release_errors(season, root=ROOT):
     return errors
 
 
-def require_game_release(season, root=ROOT):
-    errors = game_release_errors(season, root)
+def preseason_scope(event_id):
+    """The preseason game number an event id names (YEAR-preseason-NN-...), else None."""
+    match = re.match(r'^\d{4}-preseason-(\d{2})-', str(event_id))
+    return int(match[1]) if match else None
+
+
+def require_game_release(season, root=ROOT, preseason=None):
+    errors = game_release_errors(season, root, preseason)
     if errors:
         raise ValueError('Season %d game execution blocked: %s' % (season, '; '.join(errors)))

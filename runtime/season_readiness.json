@@ -45,9 +45,12 @@
         },
         {
           "id": "legal_rosters",
-          "status": "BLOCKED",
-          "remaining": "Establish current 2014 control, medical clearance and Jacksonville's game depth chart at the August 30 cutdown. The 31 background clubs' Week 1 depth-chart library (library/data/2014_week1_depth_charts.json) is prepared research, gated until the master clock reaches Week 1 (September 7, 2014); it is not yet legal game input and the gate stays BLOCKED.",
+          "status": "VERIFIED",
+          "remaining": "Verified October 1, 2026 at the August 7, 2014 clock for preseason games. Established on August 7, 2014: 78 controlled players (career/2014/00_Team_Operations/Team/Roster/roster.md; 74 under contract and the four unsigned tenders, Bradfield, Clemons, Brown and Pasztor, inactive by contract status, not by a medical instruction); James Hurst held on the undrafted board pending a medical clearance and not a controlled player; no communicated medical restriction in the camp record through August 7; Jacksonville's game depth chart frozen per preseason game from the head coach's plan (Game_0N/depth_chart.json in the released-chart schema, the August 8 chart frozen August 7 before any draw); the opponent's dated camp roster reconciled to branch control from library/2014_preseason_opponent_rosters.md (Tampa Bay's 87 on August 8 after the three branch removals, Jenkins and Goldson unavailable per the pregame report). Each later preseason game needs its own frozen chart and opponent roster on the same method before it closes (check_game_readiness.py --season 2014 --preseason N). Still gating the regular season: Jacksonville's 53 and game depth chart at the August 30 cutdown (career/2014/00_Team_Operations/Team/Depth_Chart/game_depth_chart.json, the required season input, missing until then) and the Week 1 library's September 7, 2014 gate (library/data/2014_week1_depth_charts.json, prepared research until the master clock reaches Week 1). The required-input check keeps every regular-season and postseason closure blocked on the missing season depth chart; a VERIFIED gate is not game authorization.",
           "evidence": [
+            "career/2014/00_Team_Operations/Team/Roster/roster.md",
+            "career/2014/04_Training_Camp_and_Preseason/Preseason_Games/Game_01/README.md",
+            "library/2014_preseason_opponent_rosters.md",
             "career/2014/Supporting_Records/operating_baseline.md",
             "library/2014_week1_depth_charts.md"
           ]
