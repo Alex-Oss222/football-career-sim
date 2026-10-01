@@ -1,12 +1,12 @@
 # Jacksonville Jaguars roster
 
-**As of:** August 8, 2014, after preseason game 1
+**As of:** August 13, 2014, after the Chicago preparation closed
 **Canonical controlled-player count:** **78** (offseason roster of 90: 74 under signed contracts, including the nine 2014 draft selections and 17 undrafted rookies signed May 8 to 11, and four unsigned tenders).
 **Practice squad:** 0. No 2014 practice squad exists before the regular season.
-**Camp and preseason status, August 8:** all 74 signed players reported and were examined with no communicated restriction: the 26 rookies and the three reserve/future players with no credited season (Bray, Jerrell Jackson, Long) on July 21 under the rookie and first-year rule; the other 45 on July 24. Bradfield, Clemons, Brown and Pasztor have not signed their tenders, are not under contract, have not reported and may not practice until they sign. Practices July 25 to 29 ran without full pads; the full-pad practices of July 30, August 1 and August 4 (July 31 and August 3 the days off) and the August 2 scrimmage (in series, no score kept) ran at controlled contact with no injury or restriction communicated; the August 5 and 6 game-week practices ran under the same script and August 7 was a walkthrough, again with no injury or restriction communicated; Lucas worked every one in full. Preseason game 1 (August 8, Tampa Bay 30, Jacksonville 21) generated three injuries, Johnson, Brate and Anderson, recorded in the availability column and the [medical history](../../Medical/medical_history.md#august-8-preseason-game-1-injuries); every other player has no communicated restriction.
+**Camp and preseason status, August 8:** all 74 signed players reported and were examined with no communicated restriction: the 26 rookies and the three reserve/future players with no credited season (Bray, Jerrell Jackson, Long) on July 21 under the rookie and first-year rule; the other 45 on July 24. Bradfield, Clemons, Brown and Pasztor have not signed their tenders, are not under contract, have not reported and may not practice until they sign. Practices July 25 to 29 ran without full pads; the full-pad practices of July 30, August 1 and August 4 (July 31 and August 3 the days off) and the August 2 scrimmage (in series, no score kept) ran at controlled contact with no injury or restriction communicated; the August 5 and 6 game-week practices ran under the same script and August 7 was a walkthrough, again with no injury or restriction communicated; Lucas worked every one in full. Preseason game 1 (August 8, Tampa Bay 30, Jacksonville 21) generated three injuries, Johnson, Brate and Anderson, recorded in the availability column and the [medical history](../../Medical/medical_history.md#august-8-preseason-game-1-injuries); every other player has no communicated restriction. August 9 to 13 (the film review, the August 10 walkthrough, the padded practices of August 11 and 12 and the August 13 walkthrough) produced no injury and no new restriction; Anderson's August 9 and Johnson's August 10 reassessments changed neither instruction, and Anderson cleared on August 11, his projected date, under the record's method ([medical history](../../Medical/medical_history.md#august-9-to-11-reassessments-and-andersons-clearance)). Johnson does not play at Chicago by Stone's decision in his plan, a football decision and not a medical fact.
 **2013 season:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
-<!-- player-ages-as-of: 2014-08-08 -->
+<!-- player-ages-as-of: 2014-08-13 -->
 
 Birth dates are sourced in the [identity registry](../../../../../library/data/player_birth_dates.json). Age is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer. Transaction history is in the [2014 dated record](../../../Record.md).
 
@@ -30,7 +30,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
-| C.J. Anderson | RB | 1991-02-10 | 23 | Offseason roster | Out: lower extremity, minor, August 8 preseason game; projected return August 11, reassessment August 9 ([medical history](../../Medical/medical_history.md#august-8-preseason-game-1-injuries)) | RB3; coverage units |
+| C.J. Anderson | RB | 1991-02-10 | 23 | Offseason roster | No communicated restriction (cleared August 11, 2014, his projected date, from the August 8 lower-extremity injury; reassessed August 9 with no change; [medical history](../../Medical/medical_history.md#august-9-to-11-reassessments-and-andersons-clearance)) | RB3; coverage units |
 | Jonathan Grimes | RB | 1989-12-21 | 24 | Offseason roster | No communicated restriction | RB2 |
 | Maurice Jones-Drew | RB | 1985-03-23 | 29 | Offseason roster (re-signed March 28, 2014) | No communicated restriction | Lead back |
 | Richard Murphy | RB | 1986-09-18 | 27 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
@@ -70,7 +70,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | Cameron Bradfield | OT | 1987-09-14 | 26 | Offseason roster (RFA tender, $1,431,000, unsigned; Caldwell left the qualifying offer in place June 16, no June 15 substitution) | No communicated restriction | Swing tackle; sixth OL in 6OL (carried; outside the program until he signs) |
-| Lane Johnson | OT | 1990-05-08 | 24 | Offseason roster | Out: trunk, minor, August 8 preseason game; projected return August 14, reassessment August 10 ([medical history](../../Medical/medical_history.md#august-8-preseason-game-1-injuries)) | Starting right tackle |
+| Lane Johnson | OT | 1990-05-08 | 24 | Offseason roster | Out: trunk, minor, August 8 preseason game; projected return August 14, 2014; reassessed August 10 with no change ([medical history](../../Medical/medical_history.md#august-9-to-11-reassessments-and-andersons-clearance)); held out of the August 14 game by Stone's plan | Starting right tackle (Lucas the one-game right tackle at Chicago) |
 | Eugene Monroe | OT | 1987-04-18 | 27 | Offseason roster (re-signed March 11, 2014) | No communicated restriction | Starting LT |
 | Joel Bitonio | OT | 1991-10-11 | 22 | Offseason roster (Rookie, drafted No. 26, May 8, 2014; rookie contract signed May 11, 2014) | No communicated restriction | Left guard rep starting point, guard first (Stone, May 12, 2014; Norwell the competition; not an award); a right guard alternative if Turner struggles |
 | Charles Leno Jr. | OT | 1991-10-09 | 22 | Offseason roster (Rookie, drafted No. 168, May 10, 2014; rookie contract signed May 11, 2014) | No communicated restriction | Role not set (reserve tackle) |
@@ -151,7 +151,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | Chris Prosinski | S | 1987-04-28 | 27 | Offseason roster | No communicated restriction | Coverage units |
 | Bacarri Rambo | S | 1990-06-27 | 24 | Offseason roster | No communicated restriction | Starting S; coverage units |
 | Brynden Trawick | S | 1989-10-23 | 24 | Offseason roster | No communicated restriction | Coverage units |
-| Antwon Blake | S | 1990-08-09 | 23 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
+| Antwon Blake | S | 1990-08-09 | 24 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
 | Jemea Thomas | DB | 1990-04-07 | 24 | Offseason roster (Rookie, drafted No. 205, May 10, 2014; rookie contract signed May 11, 2014) | No communicated restriction | Role not set (safety and slot corner) |
 | Adrian Phillips | S | 1992-03-28 | 22 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
 
@@ -162,7 +162,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | Josh Scobee | K | 1982-06-23 | 32 | Offseason roster | No communicated restriction | K |
 | Bryan Anger | P | 1988-10-06 | 25 | Offseason roster | No communicated restriction | P |
 | Jeremy Cain | LS | 1980-03-24 | 34 | Offseason roster (re-signed March 19, 2014) | No communicated restriction | LS (2013 incumbent; camp competition planned) |
-| Casey Kreiter | LS | 1990-08-13 | 23 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
+| Casey Kreiter | LS | 1990-08-13 | 24 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
 
 ## 2014 rookies
 
@@ -179,7 +179,7 @@ Jacksonville's 2013 practice squad, formed September 1, 2013, had eight players.
 | Jerrell Jackson | WR | 1990-02-06 | 24 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
 | Jerome Long | DT | 1990-04-09 | 24 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
 | D'Anthony Smith | DT | 1988-06-09 | 26 | Effective March 11, 2014 (current controlled players) | February 5, 2014 (market draw against a real Seattle reserve/future contract of the same date) |
-| Antwon Blake | S | 1990-08-09 | 23 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
+| Antwon Blake | S | 1990-08-09 | 24 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
 
 Brandon King (DB) and Will Ta'ufo'ou (FB) were not offered contracts. They left as free agents when their practice-squad contracts ended; no later destination is recorded for either.
 

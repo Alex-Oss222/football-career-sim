@@ -20,6 +20,16 @@ Three Jacksonville injuries were generated in the [preseason game 1 output](../.
 
 Projected returns are the engine's generated fields under the branch's standard return rule, not clearances; no clinical diagnosis is recorded. Tampa Bay's five generated injuries stay with the receipt and are not Jacksonville records.
 
+<!-- event-record: {"date": "2014-08-09", "date_end": "2014-08-11", "id": "2014-08-11-anderson-cleared", "status": "closed", "summary": "C.J. Anderson's and Lane Johnson's reassessments changed neither instruction; Anderson cleared on August 11, his projected date, and Johnson stayed out."} -->
+
+## August 9 to 11: reassessments and Anderson's clearance
+
+- **August 9, C.J. Anderson reassessed.** The medical staff reassessed him on the day the August 8 instruction named and communicated no change: out, projected return August 11.
+- **August 10, Lane Johnson reassessed.** Reassessed on the day the instruction named; no change: out, projected return August 14. No further reassessment date was communicated before the projected date. His absence from the August 14 game is Stone's football decision in the [Chicago plan](../../04_Training_Camp_and_Preseason/Preseason_Games/Game_02/Preseason%20Game%202_%20HC.md), not a medical instruction.
+- **August 11, C.J. Anderson cleared.** His hold cleared on his projected date under the method the record has applied to every injury in both seasons: a projected return clears on that date unless the staff communicates otherwise, and nothing else was communicated. He took part normally in the August 11 and 12 practices and the August 13 walkthrough with no communicated limitation ([camp record](../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md#august-9-to-13-the-tampa-bay-review-and-the-chicago-preparation)). A clearance restores no role by itself.
+
+Cameron Brate's instruction is unchanged (out, long term; reassessment August 15; roster disposition pending). The August 9 to 13 sessions produced no injury and no new restriction; the program has no injury draw for practices.
+
 ## Other examination records
 
 The March 26 examination of C.J. Wilson is in [his signing record](../Free_Agency/jones_drew_and_wilson_negotiation_2014-03-28.md). The 26 rookies' May 13 to 15 physicals, including the specific check of Cornelius Lucas's foot, are in the [rookie minicamp report](../../02_Offseason_Training/Rookie_Minicamp/training_report.md). The [mandatory minicamp report](../../02_Offseason_Training/Mandatory_Minicamp/training_report.md) owns the June 16 physicals, and the [camp report](../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md) owns July 21 and 24 reporting physicals and subsequent communicated instructions. Those examinations communicated no restriction; Lucas's foot remained a performance-staff review item. James Hurst remained outside Jacksonville's signed roster on the undrafted board's medical hold, with no clearance recorded.

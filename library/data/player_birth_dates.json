@@ -46,6 +46,9 @@
   },
   "public_reference_2026-10-01": {
    "note": "Web search results of October 1, 2026 (Wikipedia article summaries) used only to review the two Tampa Bay birth-date conflicts between nflverse and the contract history; the pages were not directly reachable from the session. ESPN, Pro Football Reference, NFL.com and Wikipedia were blocked for direct reads, so the ESPN athlete check of the 2013 method could not be repeated."
+  },
+  "nflverse_chicago_camp_2026-10-01": {
+   "note": "October 1, 2026: the Chicago August 14, 2014 camp roster (library/2014_preseason_opponent_rosters.md) added 34 players from the same nflverse players (sha256 5b6f22c2...), roster_2014 (sha256 f3c3e9cc...) and contract-history (sha256 00091602...) files, with the same evidence classes; the namesakes Chris Williams (CHI), Zach Miller (CHI) and Jeremiah Ratliff / Rob Turner (chart spellings of Jay Ratliff and Robert Turner) are keyed by the library player id. Team, status and later seasons ignored."
   }
  },
  "players": {
@@ -19010,6 +19013,360 @@
    "sources": [
     "nflverse_players_2026-09-30",
     "nflverse_roster_2014_2026-10-01"
+   ]
+  },
+  "Jordan Palmer": {
+   "gsis_id": "00-0025592",
+   "birth_date": "1984-05-30",
+   "espn_id": "10648",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Jimmy Clausen": {
+   "gsis_id": "00-0027659",
+   "birth_date": "1987-09-21",
+   "espn_id": "13198",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "David Fales": {
+   "gsis_id": "00-0031076",
+   "birth_date": "1990-10-04",
+   "espn_id": "16821",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Shaun Draughn": {
+   "gsis_id": "00-0028202",
+   "birth_date": "1987-12-07",
+   "espn_id": "14518",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Ka'Deem Carey": {
+   "gsis_id": "00-0031057",
+   "birth_date": "1992-10-30",
+   "espn_id": "16942",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Senorise Perry": {
+   "gsis_id": "00-0031209",
+   "birth_date": "1991-09-19",
+   "espn_id": "17421",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Josh Bellamy": {
+   "gsis_id": "00-0029319",
+   "birth_date": "1989-05-18",
+   "espn_id": "15555",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Chris Williams (CHI)": {
+   "gsis_id": "00-0026691",
+   "birth_date": "1987-09-16",
+   "espn_id": "12934",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Dale Moss": {
+   "gsis_id": "00-0028992",
+   "birth_date": "1988-09-24",
+   "espn_id": "15255",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30"
+   ]
+  },
+  "Zach Miller (CHI)": {
+   "gsis_id": "00-0027125",
+   "birth_date": "1984-10-04",
+   "espn_id": "12699",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Matthew Mulligan": {
+   "gsis_id": "00-0026008",
+   "birth_date": "1985-01-18",
+   "espn_id": "11708",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Ryan Groy": {
+   "gsis_id": "00-0031128",
+   "birth_date": "1990-09-30",
+   "espn_id": "17063",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Brian de la Puente": {
+   "gsis_id": "00-0025980",
+   "birth_date": "1985-05-13",
+   "espn_id": "11692",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Michael Ola": {
+   "gsis_id": "00-0030621",
+   "birth_date": "1988-04-19",
+   "espn_id": "16680",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Joe Long": {
+   "gsis_id": "00-0029135",
+   "birth_date": "1989-07-27",
+   "espn_id": "15400",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Austen Lane": {
+   "gsis_id": "00-0027752",
+   "birth_date": "1987-11-09",
+   "espn_id": "13402",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Jeremiah Ratliff": {
+   "gsis_id": "00-0023656",
+   "birth_date": "1981-08-29",
+   "espn_id": "8638",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Will Sutton": {
+   "gsis_id": "00-0031048",
+   "birth_date": "1991-10-03",
+   "espn_id": "16738",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Brandon Dunn": {
+   "gsis_id": "00-0031127",
+   "birth_date": "1992-09-05",
+   "espn_id": "17061",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Ego Ferguson": {
+   "gsis_id": "00-0031043",
+   "birth_date": "1991-09-22",
+   "espn_id": "16778",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Tracy Robertson": {
+   "gsis_id": "00-0029521",
+   "birth_date": "1989-09-26",
+   "espn_id": "15615",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "DeDe Lattimore": {
+   "gsis_id": "00-0031134",
+   "birth_date": "1991-01-30",
+   "espn_id": "17072",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01"
+   ]
+  },
+  "Jerry Franklin": {
+   "gsis_id": "00-0028941",
+   "birth_date": "1988-01-10",
+   "espn_id": "15194",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Kyle Fuller": {
+   "gsis_id": "00-0031041",
+   "birth_date": "1992-02-16",
+   "espn_id": "16715",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Demontre Hurst": {
+   "gsis_id": "00-0030275",
+   "birth_date": "1991-03-24",
+   "espn_id": "16144",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Kelvin Hayden": {
+   "gsis_id": "00-0023495",
+   "birth_date": "1983-07-23",
+   "espn_id": "8474",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01"
+   ]
+  },
+  "Al Louis-Jean": {
+   "gsis_id": "00-0031352",
+   "birth_date": "1993-10-13",
+   "espn_id": "17470",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01"
+   ]
+  },
+  "Adrian Wilson": {
+   "gsis_id": "00-0020505",
+   "birth_date": "1979-10-12",
+   "espn_id": "2612",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30"
+   ]
+  },
+  "Brock Vereen": {
+   "gsis_id": "00-0031063",
+   "birth_date": "1992-08-17",
+   "espn_id": "16906",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Pat O'Donnell": {
+   "gsis_id": "00-0031079",
+   "birth_date": "1991-02-22",
+   "espn_id": "16863",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01"
+   ]
+  },
+  "Tress Way": {
+   "gsis_id": "00-0030140",
+   "birth_date": "1990-04-18",
+   "espn_id": "16166",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30"
+   ]
+  },
+  "Greg Herd": {
+   "gsis_id": "00-0030204",
+   "birth_date": "1991-02-15",
+   "espn_id": "16474",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30"
+   ]
+  },
+  "Rob Turner": {
+   "gsis_id": "00-0025761",
+   "birth_date": "1984-08-20",
+   "espn_id": "11091",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30"
+   ]
+  },
+  "Chris Smith": {
+   "gsis_id": "00-0031264",
+   "birth_date": "1992-02-11",
+   "espn_id": "16917",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_contracts_2026-10-01"
    ]
   }
  }

@@ -1,12 +1,21 @@
-# 2014 preseason opponent rosters: Tampa Bay Buccaneers, August 8, 2014
+# 2014 preseason opponent rosters
 
-**Research date:** October 1, 2026 (branch clock August 1, 2014). **Football information window:** Tampa Bay's first 2014 unofficial depth chart, released Tuesday, August 5, 2014; the club's transaction log through August 8; and the club's pregame report of Friday, August 8, 2014, all published before kickoff of the preseason opener at Jacksonville. **Status: PREPARED, gated: usable for the August 8, 2014 preseason game and after.** This library is prepared research under [rails method section 7](../career/2014/League/personnel/method.md#7-week-1-depth-charts), applied to a preseason opponent. It is the 90-man camp roster Tampa Bay carried into the game, reconciled to branch control, not a 53. No preseason score, statistic, game participation or later transaction is an input.
+Prepared research under [rails method section 7](../career/2014/League/personnel/method.md#7-week-1-depth-charts), applied to each preseason opponent: the 90-man camp roster the club carried into its game against Jacksonville, ordered by its first published 2014 depth chart with the cuts and signings through game day applied, reconciled to branch control. One section per club, each with its own information window and gate.
 
-**Machine artifact:** [data/2014_preseason_opponent_rosters.json](data/2014_preseason_opponent_rosters.json) (top-level `season`, `game` = `preseason-01`, `as_of` = `2014-08-08`, `gate`, `sources`, one club under `clubs`; the same per-player fields as the [Week 1 library](2014_week1_depth_charts.md), plus `availability_note` for a held-out player). **Builder:** `scripts/research/build_2014_preseason_opponent_rosters.py` (reuses the Week 1 builder's control, identity, tie-break and compaction functions; takes an optional transient workspace for the nflverse identity files). **Tests:** `tests/test_2014_preseason_opponent_rosters.py`. The game folder's `opponent_roster.json` is copied from this artifact when the game is prepared; this file is the source, not the game input.
+**Machine artifact:** [data/2014_preseason_opponent_rosters.json](data/2014_preseason_opponent_rosters.json) (`schema_version` 2: top-level `season`, `games` (game id to club), `branch_basis`, `branch_controlled_count`, `removed_by_club`, and every club under `clubs` keyed by name, each with its own `code`, `game`, `as_of`, `gate`, dated transaction list, `sources`, `cross_check`, `branch_changes`, `notes` and `players`; the same per-player fields as the [Week 1 library](2014_week1_depth_charts.md), plus `availability_note` for a held-out player). Schema 1 held one club with `game`, `as_of`, `gate`, the transactions, `sources` and `cross_check` at the top level; the Tampa Bay content is unchanged by the move. **Builder:** `scripts/research/build_2014_preseason_opponent_rosters.py` (one specification table per club; reuses the Week 1 builder's control, identity, tie-break and compaction functions; takes an optional transient workspace for the nflverse identity files). **Tests:** `tests/test_2014_preseason_opponent_rosters.py`. The game folder's `opponent_roster.json` is copied from this artifact when the game is prepared; this file is the source, not the game input.
 
 Jacksonville is not in this library. Its input always comes from the branch roster, its medical state and Stone's staff.
 
-## Sources
+| Game | Club | Roster as of | Gate | Players after branch reconciliation |
+|---|---|---|---|---|
+| preseason-01, August 8, 2014, at Jacksonville | Tampa Bay Buccaneers | August 8, 2014 | usable for the August 8, 2014 game and after | 87 |
+| preseason-02, August 14, 2014, Jacksonville at Chicago | Chicago Bears | August 14, 2014 | usable for the August 14, 2014 game and after | 89 |
+
+## Tampa Bay Buccaneers, August 8, 2014 (preseason game 1, at Jacksonville)
+
+**Research date:** October 1, 2026 (branch clock August 1, 2014). **Football information window:** Tampa Bay's first 2014 unofficial depth chart, released Tuesday, August 5, 2014; the club's transaction log through August 8; and the club's pregame report of Friday, August 8, 2014, all published before kickoff of the preseason opener at Jacksonville. **Status: PREPARED, gated: usable for the August 8, 2014 preseason game and after.** This library is prepared research under [rails method section 7](../career/2014/League/personnel/method.md#7-week-1-depth-charts), applied to a preseason opponent. It is the 90-man camp roster Tampa Bay carried into the game, reconciled to branch control, not a 53. No preseason score, statistic, game participation or later transaction is an input.
+
+### Sources
 
 | Use | Source | Scope read |
 |---|---|---|
@@ -19,7 +28,7 @@ Jacksonville is not in this library. Its input always comes from the branch rost
 | Branch control | `career/2014/team/roster/roster.md`, August 1, 2014 | The 78 controlled players (74 signed, four unsigned tenders), matched by gsis id as in the Week 1 build |
 | Branch pairing, trades, free agency, retirements | [draft_pairing.md](../career/2014/League/personnel/draft_pairing.md), [udfa_signings.md](../career/2014/03_Draft/udfa_signings.md), [trades.md](../career/2014/00_Team_Operations/Trades/completed_trades/trades.md), [signings.md](../career/2014/00_Team_Operations/Free_Agency/signings.md), [fa_draws.md](../career/2014/League/personnel/fa_draws.md), [retirements.md](../career/2014/League/personnel/retirements.md) | Every branch event touching a Tampa Bay player |
 
-## Verification
+### Verification
 
 The two-pass discipline was applied under a real constraint: from this session the club's, ESPN's, Pro Football Reference's, Wikipedia's and the Internet Archive's pages could not be fetched (egress denied), and nflverse carries no preseason depth charts, weekly rosters or injury reports for 2014. Every chart and transaction fact below was therefore read from dated search-engine extracts of the named pages, and the second pass re-queried each fact with different wording and from a second outlet. What that pass established:
 
@@ -37,7 +46,7 @@ The two-pass discipline was applied under a real constraint: from this session t
 
 **Not independently verified:** the WR column assignments, the offensive-line third strings and the specialists' order are single-transcription; the three unlocated defensive-back cells; jersey numbers of the 33 camp-only players (stored only for the 54 who reached a 2014 regular-season roster, from nflverse). No page was read directly.
 
-## How the unit is built
+### How the unit is built
 
 1. **Players:** everyone under contract to Tampa Bay on August 8, 2014, once each: the chart's listed players as of its August 5 release, less the two waived/injured August 4, plus the five under contract on August 8 whose cells were not located (two signed after the chart was prepared).
 2. **Position:** the roster position of the player's column (T, G, C for the line; DE, DT; OLB, MLB; CB, SS, FS; S for Joyce). Every position maps to one of the twelve kernel groups.
@@ -47,11 +56,11 @@ The two-pass discipline was applied under a real constraint: from this session t
 6. **Ids:** the player's name. No name collides with a Jacksonville-controlled player or another Tampa Bay player, so no id carries a club code.
 7. **Bio fields:** birth date from the registry or nflverse; the Week 1 library's open-licensed headshot and page fields by gsis id, the photo file where the Week 1 library has none, and a Pro Football Reference page from the nflverse pfr id. Identity data only.
 
-## The starting lineup as the chart listed it
+### The starting lineup as the chart listed it
 
 Offense: QB Josh McCown; RB Doug Martin; FB Jorvorskie Lane; WR Vincent Jackson and Chris Owusu; TE Brandon Myers; LT Anthony Collins, LG Oniel Cousins, C Evan Dietrich-Smith, RG Jamon Meredith, RT Demar Dotson. Defense: LDE Adrian Clayborn, DT Gerald McCoy, DT Clinton McDonald, RDE Michael Johnson; SLB Jonathan Casillas, MLB Mason Foster, WLB Lavonte David; LCB Alterraun Verner (removed; Rashaan Melvin next), RCB Mike Jenkins (held out), NB Leonard Johnson; SS Mark Barron, FS Dashon Goldson (held out). Specialists: K Connor Barth, P Michael Koenen, LS Andrew DePaola, KR and PR Eric Page.
 
-## Branch reconciliation
+### Branch reconciliation
 
 | Change | Player | Basis | Effect |
 |---|---|---|---|
@@ -66,7 +75,7 @@ Offense: QB Josh McCown; RB Doug Martin; FB Jorvorskie Lane; WR Vincent Jackson 
 
 A real Tampa Bay move the branch's Jacksonville overrides (Verner, Brate, Cain) is applied by removal with the next man up, exactly as the Week 1 build applied it. Nothing else about Tampa Bay changes: its coaching staff in the branch (Greg Schiano retained; [replay log](../career/2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md)) does not alter which players ride the rails (rails rule 2).
 
-## Transactions July 21 to August 9, 2014
+### Transactions July 21 to August 9, 2014
 
 | Date | Move |
 |---|---|
@@ -79,7 +88,7 @@ A real Tampa Bay move the branch's Jacksonville overrides (Verner, Brate, Cain) 
 | August 4 | Signed DE Ryne Giddins and DE James Ruffin; waived/injured LB Jeremy Grable and S Mycal Swaim |
 | August 9 | Waived S Mark Joyce (ESPN lists August 12): after the game, not applied |
 
-## Limitations
+### Limitations
 
 - **Transcription, not the document:** the chart itself was not read; its contents are reconstructed from four dated transcriptions that agree wherever they overlap. The artifact's `sources` and this record name every page so that the chart can be re-read when a page is reachable, and the builder's `CHART` table can then be corrected in place.
 - **Jersey numbers:** 54 players carry their 2014 Tampa Bay regular-season number (nflverse); the 33 camp-only players carry none. A camp number from a game-program listing was not used because the extracts available disagreed with each other.
@@ -88,11 +97,105 @@ A real Tampa Bay move the branch's Jacksonville overrides (Verner, Brate, Cain) 
 - **Unverified ages:** the five players with no public identity record (Euclid Cummings, Jibreel Black, Ryne Giddins, Damaso Munoz, Mark Joyce) have no verified birth date and none is invented. They enter the game package with `age: null` and `age_unverified: true` in the `player_ages` sidecar (`runtime.player_bios.biographies`, background players only; a Jacksonville player without a verified date still fails preparation), and the game receipt lists their names under `age_unverified`. The age sidecar sits outside TeamInput and the packet, so the gap changes no draw.
 - **No later information:** nothing from the game or after it is read. Danny Gorrer's August 25 injured-reserve placement and Mark Joyce's waiver are recorded only as the dates that bound their membership.
 
-## Gate and later use
+### Gate and later use
 
-- **Information gate:** gated: usable for the August 8, 2014 preseason game and after. Until the master clock reaches that game, no rail in this file informs any evaluation, board or decision.
-- **Later preseason games** (Chicago August 14, Detroit August 22, Atlanta August 28) need their own records on the same method, built when the clock reaches each game.
+- **Information gate:** gated: usable for the August 8, 2014 preseason game and after. Until the master clock reaches that game, no rail in this section informs any evaluation, board or decision.
+- **Later preseason games:** Chicago (August 14) is the next section of this record; Detroit (August 22) and Atlanta (August 28) need their own sections on the same method, built when the clock reaches each game.
 - **Game input:** the parent game preparation copies this club into the game folder's `opponent_roster.json`; the loader supplies the unit anchors (Document 7 section 2.2). Preseason statistics never enter the regular-season statbook, standings, awards or the draft order.
+
+## Chicago Bears, August 14, 2014 (preseason game 2, Jacksonville at Chicago)
+
+**Research date:** October 1, 2026 (branch clock August 7, 2014). **Football information window:** Chicago's first 2014 unofficial depth chart, released Sunday, August 3, 2014; the club's transaction log through August 14; the dated practice reports of August 10 to 12; and the club's game-day list of players not suiting up, published Thursday, August 14, 2014, before the 8 p.m. ET kickoff at Soldier Field. **Status: PREPARED, gated: usable for the August 14, 2014 preseason game and after.** It is the 90-man camp roster Chicago carried into the game, reconciled to branch control, not a 53. No preseason score, statistic, game participation or later transaction is an input; the August 8 Philadelphia game is read only for the injuries its pre-game and practice reports name.
+
+### Sources
+
+| Use | Source | Read how | Scope read |
+|---|---|---|---|
+| Depth chart (transcriptions) | Windy City Gridiron, [Chicago Bears First 2014 Training Camp Depth Chart Released](https://www.windycitygridiron.com/2014/8/3/5965071/chicago-bears-2014-depth-chart-nfl-first-release), August 3, 2014; Sports Illustrated, [Chicago Bears release depth chart: Jordan Palmer backup to Jay Cutler](https://www.si.com/nfl/2014/08/05/chicago-bears-depth-chart-2014), August 5, 2014; CBS Chicago, [View: Bears' Initial Depth Chart](https://www.cbsnews.com/chicago/news/view-bears-initial-depth-chart/) | Search-engine extracts; the pages refused the session | Every column: QB, RB, FB, both WR columns, TE, LT-LG-C-RG-RT with third and fourth strings, LDE-DT-NT-RDE with third and fourth strings, SLB-MLB-WLB, LCB-RCB, SS-FS, K, P, LS, KR, PR |
+| Transactions (primary) | Chicago Bears, [2014 transactions](https://www.chicagobears.com/team/transactions/2014); ESPN, [Chicago Bears 2014 Roster Transactions](https://www.espn.com/nfl/team/transactions/_/name/chi/season/2014) | Read directly (the full pages, July 24 to September 2) | Every move from camp through the game, and the dated later arrivals that exclude players |
+| Transactions (dated articles) | Chicago Bears, [Bears sign wide receiver Greg Herd](https://www.chicagobears.com/news/bears-sign-wide-receiver-greg-herd-13403460), August 5, 2014, and [Bears place Miller on injured reserve](https://www.chicagobears.com/news/bears-place-miller-on-injured-reserve-13478588), August 15, 2014; ESPN, [Bears reinstate Martellus Bennett](https://www.espn.com/chicago/nfl/story/_/id/11334684/chicago-bears-reinstate-martellus-bennett-suspension), August 10, 2014; ProFootballTalk, [Bears add receiver Greg Herd after injury to Marquess Wilson](https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bears-add-receiver-greg-herd-after-injury-to-marquess-wilson), August 5, 2014 | Read directly | The Herd signing and O'Neill waiver dates, Bennett's suspension and return, the Miller placement that bounds his membership |
+| Availability | CBS Sports, [Bears list inactives for Week 2 of preseason](https://www.cbssports.com/nfl/news/bears-list-inactives-for-week-2-of-preseason), August 14, 2014 (the club's list of ten); ESPN Chicago Bears blog, [Bears hold out six from practice](https://www.espn.com/blog/chicago/bears/post/_/id/4693736/bears-hold-out-six-from-practice), August 12, 2014; Bleacher Report, [Chicago vs. Jacksonville: Bears Preseason Week 2 Game Preview](https://bleacherreport.com/articles/2156775-chicago-vs-jacksonville-bears-preseason-week-2-game-preview); Chicago Bears, [Special teams a top priority for Bears](https://www.chicagobears.com/news/special-teams-a-top-priority-for-bears-13447462), August 11, 2014 | The club article read directly; the others as search-engine extracts (the ESPN blog archive answers 503) | The ten players not suiting up; the August 12 hold-outs and their injuries; Williams's August 8 hamstring; Conte and Steltz's return from the active/PUP list |
+| Camp account (tertiary cross-check) | Wikipedia, [2014 Chicago Bears season](https://en.wikipedia.org/wiki/2014_Chicago_Bears_season), training-camp and preseason-transactions sections | Read directly | Dated practice absences July 25 to August 12, the active/PUP placements, the Wilson, Britton and Mills injuries, the transaction dates; used only where a dated primary source agrees |
+| Membership cross-check | nflverse [roster_2014.csv](https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2014.csv) (season rosters); NFL.com, [2014 Chicago Bears roster](https://www.nfl.com/sitemap/html/rosters/2014/chicago-bears) | Local file; page read directly | The 75 players who reached a Chicago regular-season roster or reserve list; jersey numbers; neither carries a camp-only player |
+| Identity | `library/data/player_birth_dates.json`; nflverse [players.csv](https://github.com/nflverse/nflverse-data/releases/download/players/players.csv); `library/data/2014_week1_depth_charts.json` (bio fields); `library/data/player_photos.json`; the nflverse copy of the Over The Cap contract history (date-of-birth field only) | Local files | gsis id and birth date for 83 of 89 players; photographs and reference pages where the Week 1 library or photo file has them |
+| Branch control | `career/2014/00_Team_Operations/Team/Roster/roster.md`, August 1, 2014 | Local file | The 78 controlled players (74 signed, four unsigned tenders), matched by gsis id as in the Week 1 build |
+| Branch pairing, trades, free agency, retirements | [draft_pairing.md](../career/2014/League/personnel/draft_pairing.md) (k=7), [udfa_signings.md](../career/2014/03_Draft/udfa_signings.md) (row 4), [CHI.md](../career/2014/League/personnel/clubs/CHI.md), [trades.md](../career/2014/00_Team_Operations/Trades/completed_trades/trades.md), [signings.md](../career/2014/00_Team_Operations/Free_Agency/signings.md), [fa_draws.md](../career/2014/League/personnel/fa_draws.md), [retirements.md](../career/2014/League/personnel/retirements.md) | Local files | Every branch event touching a Chicago player |
+
+### Verification
+
+The network allowlist changed during this build: the club's site, ESPN's story and transaction pages, NFL.com, Wikipedia and NBC Sports answered through the proxy, so the two transaction logs, the three dated club and ESPN articles, the NFL.com roster and the Wikipedia camp account were read in full. Windy City Gridiron, Sports Illustrated, CBS Chicago, CBS Sports, Bleacher Report, the ESPN blog archive (503), Pro Football Reference (403), footballdb and the Internet Archive still refused the session, so the chart and the game-day list were read as dated search-engine extracts, and the second pass re-queried each cell with different wording and from a second outlet. What the passes established:
+
+- **Quarterbacks** (Cutler, Palmer, Clausen, Fales): the SI and Windy City Gridiron transcriptions agree. Confirmed.
+- **Running backs and fullback** (Forte, Draughn, Ford, Carey, Perry, Lynch; Fiammetta): SI and Windy City Gridiron agree. Confirmed.
+- **Receivers**: first column Marshall, Wilson, Bellamy, Williams, Edwards; second column Jeffery, Weems, Morgan, Spurlock, Moss. Two extracts of the same SI table; Windy City Gridiron confirms Weems behind Jeffery and Wilson behind Marshall. The column assignment is the SI transcription alone. Marquess Wilson appears in parentheses in one transcription, read as a notation of his August 4 injury, not a different rank.
+- **Tight ends** (Bennett, Rosario, Miller, Mulligan, Mastrud): SI table; the ESPN reinstatement story independently names Miller, Rosario and Mastrud as the reserves who played August 8. Confirmed for membership; the order is the SI transcription.
+- **Offensive line**: LT Bushrod, Leno, Roland; LG Slauson, Brown, Groy; C Garza, de la Puente, Boggs; RG K. Long, Ola, Gandy, Pocic; RT Mills, Britton, J. Long. SI table, with Windy City Gridiron confirming the five starters. A later (regular-season) chart with Ola at LT2 and Leno at RT2 was seen in the 247Sports and Bleacher Report extracts and is not used.
+- **Defensive line**: starters Houston, Ratliff, Paea, Allen agree everywhere. The SI table gives LDE Houston, Young, Lane, Bass; DT Ratliff, Sutton, Collins, Dunn; NT Paea, Ferguson, Robertson, Pegues; RDE Allen, Scott, Washington. The Windy City Gridiron extract places Washington third at LDE and Bass third at RDE. The SI table is used because it is the only complete transcription; the difference reorders two reserves within the DL group and is recorded in the artifact's notes.
+- **Linebackers**: SLB McClellin, C. Jones, Senn; MLB Williams/Bostic, Lattimore; WLB Briggs, Greene, Franklin, O'Neill. Windy City Gridiron and SI agree. Confirmed.
+- **Secondary**: LCB Jennings, Fuller, McManis, C.J. Wilson, Hurst; RCB Tillman, Hayden, Frey, Louis-Jean, Purdy; SS Mundy, McCray, A. Wilson, Trice; FS Vereen, M.D. Jennings, Conte, Steltz. SI table, with Windy City Gridiron confirming Fuller second at LCB and Hayden second at RCB and a second SI extract confirming the safety order. An older spring chart (Derrick Martin and Sean Cattouse at FS) surfaced in a 247Sports extract and is not used; both were gone by June.
+- **Specialists**: K Gould; P O'Donnell/Way; LS Hartson/Rempel; KR Weems, Ford, Williams, Spurlock/Edwards; PR Weems, Williams, Spurlock, Edwards. Windy City Gridiron, with the club's August 11 article naming the same punter and long-snapper competitions and Weems as the leading returner. The order within the co-listed cells is a single transcription.
+- **Not suiting up August 14**: the club's list of ten (CBS Sports, August 14): Marquess Wilson, Craig Steltz, Isaiah Frey, Chris Conte, Eben Britton, Brian de la Puente, Jordan Mills, Chris Williams, Dante Rosario, Willie Young. Second pass: the Bleacher Report preview (pre-game) lists Wilson, Britton, Williams and de la Puente as Out; the ESPN August 12 report names Williams (hamstring), Britton (hamstring), Mills (foot), Wilson (collarbone), Frey (hamstring, carted off) and Rosario (calf) held out, with Tillman and Ratliff rested; the club's August 11 article dates Williams's hamstring to the opener; the Wikipedia camp account has Mills hurt August 5 and de la Puente out August 10 to 12. Conte and Steltz, who returned from the active/PUP list on August 10, and Young's bruised knee rest on the game-day list alone. Jared Allen (family), Kyle Long (ankle) and Tim Jennings (quadriceps), who sat out the opener, are not on the August 14 list and are available.
+- **Membership**: every listed player's presence on August 14 was checked against both transaction logs. The club's log double-dates most moves one day earlier than ESPN's; ESPN's date is used and the club's noted. Players excluded by their dates: Jamil Merrell (July 25), James Dunbar (July 27), Terrence Toliver and Cody Booth (July 31), Conor O'Neill (August 4), Graham Pocic (August 10), Kofi Hughes (August 15), Santonio Holmes (August 16), Darius Reynaud and Peyton Thompson (August 18), Jeremy Cain (September 1). Terrance Mitchell (Dallas's seventh-round pick), Roy Philon (Pittsburgh's undrafted signing) and Rashad Ross joined only on September 1 and 16; Domenik Hixon (contract terminated June 3), Israel Idonije (June 18) and Patrick Mannelly (retired June 20) were gone before camp. Zach Miller's injured-reserve placement is dated August 15 by ESPN and the club's article; the club's log also lists August 14, a double date, and he is a roster member at kickoff.
+- **Count**: 90 players under contract on August 14, 2014 (the chart's listed players less O'Neill and Pocic, plus Herd and Turner), the limit the club was at when the August 15 Miller placement made room for Hughes. After the two branch removals and the one pairing addition, 89.
+- **Identity**: 83 of 89 players carry a gsis id and birth date. Six camp-only players have no nflverse record (Jordan Lynch, Lee Pegues, Derricus Purdy, Marcus Trice, Brandon Hartson, Chad Rempel) and carry name only. Four names needed a reviewed identity because the registry or nflverse holds a namesake: Chris Williams is the 2009 receiver (00-0026691), not the 2008 guard the registry already holds; C.J. Wilson is the 2013 cornerback (00-0030141, already keyed `C.J. Wilson (CHI)`); Zach Miller is the 2009 tight end (00-0027125), not Seattle's; Rob Turner is the 2007 center (00-0025761), whose nflverse namesake has no gsis id. Jeremiah Ratliff is nflverse's Jay Ratliff. On October 1, 2026 the 34 players absent from the birth-date registry were added to it under their library ids (`library/data/player_birth_dates.json`): 25 corroborated by the Over The Cap contract history's date-of-birth field (nflverse contracts, matched by otc id), nine single-provider (nflverse players, with the 2014 roster file where it has them; the contract history has no date for Greg Herd, Dale Moss, DeDe Lattimore, Al Louis-Jean, Kelvin Hayden, Adrian Wilson, Rob Turner, Pat O'Donnell and Tress Way), and no source conflict. The ESPN athlete check of the 2013 method was not repeated.
+
+**Not independently verified:** the WR column assignment, the tight-end order, the offensive-line third and fourth strings and the order within the three co-listed cells are single-transcription; the third and fourth defensive-end strings differ between transcriptions; Conte, Steltz and Young's game-day status rests on the club's list as CBS Sports carried it; jersey numbers of the 29 camp-only players. The chart document itself, the game-day list and the ESPN August 12 report were not read directly.
+
+### How the unit is built
+
+1. **Players:** everyone under contract to Chicago on August 14, 2014, once each: the chart's listed players as of its August 3 release, less O'Neill (waived August 4) and Pocic (waived August 10), plus Herd (signed August 5) and Turner (signed August 10), who have no chart cell, plus Chris Smith under the branch pairing.
+2. **Position:** the roster position of the player's column (T, G, C for the line; DE, DT, with the NT column stored as DT; OLB, MLB; CB, SS, FS). Every position maps to one of the twelve kernel groups.
+3. **Depth:** the Tampa Bay rule unchanged: within each kernel group by chart string, then line slot LT-LG-C-RG-RT, then chart column order, then jersey number, then name; co-listed cells rank in listed order; unlisted players rank below every listed player of their group.
+4. **Roles:** Eric Weems carries `kick_return` and `punt_return` (first string at both); Gould `placekicker`; O'Donnell and Way `punt`.
+5. **Availability:** a player on the club's game-day list is unavailable (`available: false`, `injury_report: "Out"`, with the reason in `availability_note`). Practice absences alone (Tillman and Ratliff rested August 12; the August 8 hold-outs who returned) do not make a player unavailable.
+6. **Ids:** the player's name, except the three namesakes, whose ids carry the club code (`Chris Williams (CHI)`, `C.J. Wilson (CHI)`, `Zach Miller (CHI)`) so that the runtime's exact-name age lookup reaches the right registry row. No name collides with a Jacksonville-controlled player.
+7. **Bio fields:** as for Tampa Bay. Chris Smith carries no jersey: his Week 1 library number is the real Jaguars', not a Chicago camp number.
+
+### The starting lineup as the chart listed it
+
+Offense: QB Jay Cutler; RB Matt Forte; FB Tony Fiammetta; WR Brandon Marshall and Alshon Jeffery; TE Martellus Bennett; LT Jermon Bushrod, LG Matt Slauson, C Roberto Garza, RG Kyle Long, RT Jordan Mills (not suiting up; Eben Britton, next at the column, is also out, so Joe Long is the next available right tackle). Defense: LDE Lamarr Houston, DT Jeremiah Ratliff, NT Stephen Paea, RDE Jared Allen; SLB Shea McClellin, MLB D.J. Williams (co-listed with Jon Bostic), WLB Lance Briggs; LCB Tim Jennings, RCB Charles Tillman; SS Ryan Mundy, FS Brock Vereen. Specialists: K Robbie Gould, P Pat O'Donnell (co-listed with Tress Way), LS Brandon Hartson (co-listed with Chad Rempel), KR and PR Eric Weems.
+
+### Branch reconciliation
+
+| Change | Player | Basis | Effect |
+|---|---|---|---|
+| Removed | Charles Leno Jr., T (LT2) | Drafted by Jacksonville at branch pick 168, May 10, 2014 ([draft_pairing.md](../career/2014/League/personnel/draft_pairing.md), k=7; [CHI.md](../career/2014/League/personnel/clubs/CHI.md)). His real Chicago selection (pick 246) does not occur | Dennis Roland is the next man up at left tackle; the line counts 15 |
+| Removed | Christian Jones, OLB (SLB2) | Undrafted signing by Jacksonville May 10, 2014 ([udfa_signings.md](../career/2014/03_Draft/udfa_signings.md), row 4); he leaves Chicago under the pairing rule | Jordan Senn moves up behind McClellin; the linebackers count 8 |
+| Added below listed DL | Chris Smith, DE | Branch draft pairing, k=7: the real Jaguars' seventh selection (pick 159) goes to Chicago, the club that really drafted Jacksonville's Leno. The pairing record assigns him his real Week 1 slot when the Week 1 rails are built; for the preseason he held no cell on Chicago's real chart and enters below every listed defensive lineman | DL 16; sixteenth of sixteen |
+| Added below listed WR | Greg Herd, WR | Signed August 5, 2014, after the chart was released | WR 11 |
+| Added below listed OL | Rob Turner, C | Signed August 10, 2014, after the chart was released | OL 15 |
+| Not suiting up | Marquess Wilson, WR; Chris Williams, WR; Dante Rosario, TE; Jordan Mills, T; Eben Britton, T; Brian de la Puente, C; Willie Young, DE; Isaiah Frey, CB; Chris Conte, FS; Craig Steltz, FS | The club's game-day list, August 14 | Unavailable; 79 available |
+| No effect | Jeremy Cain, LS | His real September 1 Chicago signing does not occur ([fa_draws.md](../career/2014/League/personnel/fa_draws.md)); he is not a camp member on August 14 in any case | None |
+| No effect | Patrick Mannelly, LS | Retired June 20, 2014 (real; before camp); on no 2014 roster. [retirements.md](../career/2014/League/personnel/retirements.md) carries no row because no Jacksonville or branch-placed player is involved | None |
+| No effect | Branch trades, free-agent draws, 2013 placements | No branch trade or free-agent draw touches a Chicago player; no 2013 branch placement sits on this roster | None |
+
+Chicago's coaching staff in the branch does not alter which players ride the rails (rails rule 2).
+
+### Transactions July 25 to August 18, 2014
+
+| Date (ESPN; club log) | Move |
+|---|---|
+| July 25 (24) | Signed G/C Dylan Gandy; waived DE Jamil Merrell |
+| July 27 (26) | Waived G James Dunbar |
+| July 29 (28) | Signed WR Dale Moss |
+| July 31 (30) | Signed OL Graham Pocic and T Dennis Roland; released WR Terrence Toliver with an injury settlement; waived T Cody Booth |
+| August 4 | Waived LB Conor O'Neill (club log and the club's August 5 article; ESPN omits the move) |
+| August 5 | Signed WR Greg Herd (the club's article, Tuesday; its log lists August 4). Suspended TE Martellus Bennett indefinitely for the August 4 practice altercation |
+| August 10 | Reinstated Bennett (rejoined the club Sunday; one summary dates it August 11). Signed C/G Rob Turner; waived G Graham Pocic (club log August 9 and 10). S Chris Conte and S Craig Steltz, on the active/PUP list from the start of camp, practiced |
+| August 15 (14 and 15) | Placed TE Zach Miller on injured reserve; signed WR Kofi Hughes: after the game, not applied |
+| August 16 | Terminated WR Eric Weems; signed WR Santonio Holmes: after the game, not applied |
+| August 18 | Signed KR/PR Darius Reynaud and CB Peyton Thompson; waived LS Chad Rempel and P Tress Way: after the game, not applied |
+
+### Limitations
+
+- **Transcription, not the document:** the chart itself was not read; its contents are reconstructed from dated transcriptions that agree wherever they overlap except at the reserve defensive ends. The artifact's `sources` and this record name every page so that the chart can be re-read when a page is reachable, and the builder's `CHICAGO["chart"]` table can then be corrected in place.
+- **Game-day list:** read as a search extract of the CBS Sports item; the club's own release of the list was not located. Seven of the ten names are corroborated by pre-game practice and preview reports; Conte, Steltz and Young are not.
+- **Jersey numbers:** 60 players carry their 2014 Chicago regular-season number (nflverse); the 29 camp-only players and Chris Smith carry none.
+- **Capture timing:** the chart was released August 3, before O'Neill's waiver and Wilson's injury; the roster is as of August 14.
+- **Inactives and snap plans:** a preseason game has no inactive list; `runtime.week_inputs.game_day_actives` trims mechanically by depth when the game is built. Clausen was to follow Cutler in the planned rotation (CBS Chicago notes, pre-game); that is narration context, not an input.
+- **Unverified ages:** the six players with no public identity record (Jordan Lynch, Lee Pegues, Derricus Purdy, Marcus Trice, Brandon Hartson, Chad Rempel) have no verified birth date and none is invented. They enter the game package with `age: null` and `age_unverified: true` in the `player_ages` sidecar, exactly as the Tampa Bay five did.
+- **No later information:** nothing from the game or after it is read. Zach Miller's injured-reserve placement, Weems's release and the August 18 moves are recorded only as the dates that bound membership.
+- **Gate:** gated: usable for the August 14, 2014 preseason game and after. Until the master clock reaches that game, no rail in this section informs any evaluation, board or decision. Detroit (August 22) and Atlanta (August 28) need their own records on the same method, built when the clock reaches each game.
 
 ## Updating
 
@@ -101,4 +204,4 @@ python scripts/research/build_2014_preseason_opponent_rosters.py SOURCE_DIR > li
 python -m unittest tests.test_2014_preseason_opponent_rosters
 ```
 
-`SOURCE_DIR` is a transient workspace holding nflverse `players.csv` and `roster_2014.csv`; it is never committed. Without it the build still runs from the checked-in identity files, with fewer gsis ids and jersey numbers.
+`SOURCE_DIR` is a transient workspace holding nflverse `players.csv` and `roster_2014.csv`; it is never committed. The builder writes every club; the Tampa Bay section's `cross_check` is frozen at the counts of its research date (the registry additions made that day would now count every identified player from the registry), so a rebuild reproduces the published file. Without it the build still runs from the checked-in identity files, with fewer gsis ids and jersey numbers.
