@@ -1,6 +1,6 @@
 # Jacksonville Jaguars roster
 
-**As of:** August 31, 2014, after the waiver checkpoint and the practice-squad signings
+**As of:** September 6, 2014, after the Philadelphia preparation (no transaction since the August 31 practice-squad signings; Jeremy Cain's September 1 Chicago signing under the rails is in the departures below)
 **Canonical controlled-player count:** **55** (the active 53 and two players on reserve/injured). The eight practice-squad players are under contract and listed separately below; they are not on the 53.
 **Active roster:** **53**, set by Caldwell on August 30, 2014 before the 4 p.m. ET reduction deadline ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)).
 **Reserve/injured:** **2**: Cameron Brate and Jerrell Jackson, waived with the injured designation on August 30 and reverted to the reserve/injured list on August 31 after the noon claiming period under the period procedure.
@@ -9,7 +9,7 @@
 **Season depth chart:** Stone's season game depth chart was issued August 30 ([depth chart](../Depth_Chart/depth_chart.md); [game input](../Depth_Chart/game_depth_chart.json)); six captains were named August 31 ([roster decisions](../../../04_Training_Camp_and_Preseason/Roster_Decisions/roster_decisions.md)).
 **2013 season:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 20); Wild Card: Jacksonville 38, Kansas City 14; Divisional: Tennessee 20, Jacksonville 13. **2014 preseason:** 1-3, complete (August 8, Tampa Bay 30, Jacksonville 21; August 14, Chicago 23, Jacksonville 17, overtime; August 22, Jacksonville 41, Detroit 14; August 28, Atlanta 31, Jacksonville 13). **2014 regular season:** not started; Week 1 is September 7 at Philadelphia.
 
-<!-- player-ages-as-of: 2014-08-31 -->
+<!-- player-ages-as-of: 2014-09-06 -->
 
 Birth dates are sourced in the [identity registry](../../../../../library/data/player_birth_dates.json). Age is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer. Transaction history is in the [2014 dated record](../../../Record.md).
 
@@ -50,7 +50,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | Andrew Hawkins | WR | 1986-03-10 | 28 | Active 53 (signed March 18, 2014, offer sheet not matched) | No communicated restriction | Z (season depth chart, August 30, 2014; the WR3 competition closed); first kick returner and first punt returner (Westhoff's recommendation, Stone's decision, August 30, 2014) |
 | Allen Hurns | WR | 1991-11-12 | 22 | Active 53 (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Fourth receiver on the season chart; second punt returner; rehearsed relief job (August 30, 2014) |
 | Taylor Gabriel | WR | 1991-02-17 | 23 | Active 53 (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Fifth receiver on the season chart; rehearsed relief job (August 30, 2014); Week 1 inactive by Stone's standing rule |
-| Hakeem Nicks | WR | 1988-01-14 | 26 | Active 53 (signed March 14, 2014) | Out, multi-week: lower extremity, removed from the August 28 preseason game; projected return September 20, 2014; reassessment September 4; carried on the 53 by Caldwell's August 30 decision ([medical history](../../Medical/medical_history.md#august-28-preseason-game-4-injuries)) | Out; listed last among the receivers while out. Returns to X, with Adams to Z, only after medical clearance and a full practice week (Stone's condition, August 30, 2014). Week 1 inactive |
+| Hakeem Nicks | WR | 1988-01-14 | 26 | Active 53 (signed March 14, 2014) | Out, multi-week: lower extremity, removed from the August 28 preseason game; projected return September 20, 2014; reassessed September 4 with no change, no further date communicated; carried on the 53 by Caldwell's August 30 decision ([medical history](../../Medical/medical_history.md#september-3-and-4-hoskins-and-nicks-reassessed)) | Out; listed last among the receivers while out. Returns to X, with Adams to Z, only after medical clearance and a full practice week (Stone's condition, August 30, 2014). Week 1 inactive |
 
 ### Tight ends (4)
 
@@ -59,7 +59,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | Marcedes Lewis | TE | 1984-05-19 | 30 | Active 53 | No communicated restriction | Lead TE |
 | Travis Kelce | TE | 1989-10-05 | 24 | Active 53 | No communicated restriction | TE2 |
 | Marcel Jensen | TE | 1990-02-12 | 24 | Active 53 (Rookie, undrafted; signed May 10, 2014) | No communicated restriction (released August 28, 2014, his projected date, from the August 22 head/neck hold; reassessed August 24 with no change; inactive August 28 under the frozen plan; [medical history](../../Medical/medical_history.md#august-28-preseason-game-4-injuries)) | TE3 (season depth chart, August 30, 2014) |
-| Gator Hoskins | TE | 1991-12-19 | 22 | Active 53 (Rookie, undrafted; signed May 10, 2014) | Out, short: lower extremity, August 28 preseason game (not removed; finished the game); projected return September 16, 2014; reassessment September 3; carried on the 53 by Caldwell's August 30 decision ([medical history](../../Medical/medical_history.md#august-28-preseason-game-4-injuries)) | Out; fourth tight end on the season chart while out; Week 1 inactive |
+| Gator Hoskins | TE | 1991-12-19 | 22 | Active 53 (Rookie, undrafted; signed May 10, 2014) | Out, short: lower extremity, August 28 preseason game (not removed; finished the game); projected return September 16, 2014; reassessed September 3 with no change, no further date communicated; carried on the 53 by Caldwell's August 30 decision ([medical history](../../Medical/medical_history.md#september-3-and-4-hoskins-and-nicks-reassessed)) | Out; fourth tight end on the season chart while out; Week 1 inactive |
 
 ### Offensive line (9)
 
@@ -94,7 +94,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | --- | --- | --- | ---: | --- | --- | --- |
 | Daryl Smith | LB | 1982-03-14 | 32 | Active 53 | No communicated restriction | Base LB; defensive communication lead; defensive captain (linebackers), named August 31, 2014 |
 | Paul Posluszny | LB | 1984-10-10 | 29 | Active 53 | No communicated restriction (head/neck hold from Week 13 cleared April 5, 2014) | Base LB |
-| Julian Stanford | LB | 1990-09-02 | 23 | Active 53 | No communicated restriction | LB depth |
+| Julian Stanford | LB | 1990-09-02 | 24 | Active 53 | No communicated restriction | LB depth |
 | Sio Moore | LB | 1990-05-02 | 24 | Active 53 | No communicated restriction | Package LB (Crennel's packages) |
 | Telvin Smith | LB | 1991-04-11 | 23 | Active 53 (Rookie, drafted No. 129, May 10, 2014; rookie contract signed May 11, 2014) | No communicated restriction | Fifth linebacker on the season chart (August 30, 2014) |
 | Christian Jones | LB | 1991-02-18 | 23 | Active 53 (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Sixth linebacker on the season chart (August 30, 2014) |
@@ -186,7 +186,7 @@ Nineteen players left the roster on August 30: Jeremy Cain and C.J. Wilson, vest
 | Jeris Pendleton | DT | Waived August 30 while under the August 28 instruction (out, projected return September 1; reassessed August 29 with no change); cleared August 31. The packet directed an ordinary waiver; the library records no rule on waiving a player under a short instruction, and the waived/injured designation was not applied (open item) | Unplaced free agent |
 | D'Anthony Smith | DT | Waived August 30; cleared August 31 | Unplaced free agent |
 | Antwon Blake | S | Waived August 30; cleared August 31; practice-squad alternate (G1 place), not signed | Unplaced free agent: the Week 1 rails library lists him on Pittsburgh's real chart; the real move behind it is not dated in the branch's records and is not a cutdown-window claim or signing on the record, so he is unplaced |
-| Jeremy Cain | LS | Released August 30 (vested veteran: at least five accrued seasons) | Follows the rails: his real next move was a September 1, 2014 Chicago signing ([club record](../../../League/personnel/clubs/CHI.md)), a free-agent signing after the cutdown, the same kind of move in the same window; it applies on its real date, September 1, when the clock reaches it |
+| Jeremy Cain | LS | Released August 30 (vested veteran: at least five accrued seasons) | Signed by Chicago on September 1, 2014 under the rails ([club record](../../../League/personnel/clubs/CHI.md)): his real next move, a free-agent signing after the cutdown, the same kind of move in the same window, applied on its real date when the clock reached it ([Week 1 record](../../../05_Regular_Season/Games/Week_01/output.md)); the Week 1 build places him on Chicago's chart |
 | Cameron Bradfield | OT | Qualifying offer ($1,431,000) withdrawn August 30; rights renounced; free agent | Unplaced free agent (his real next move, a real Jaguars roster continuation, is a real Jaguars move the branch never made) |
 | Toney Clemons | WR | Exclusive-rights tender ($570,000) withdrawn August 30; rights renounced; free agent | Unplaced free agent |
 | Mike Brown | WR | Exclusive-rights tender ($495,000) withdrawn August 30; rights renounced; free agent | Unplaced free agent (his real next move, a real Jaguars roster continuation, is a real Jaguars move the branch never made) |
