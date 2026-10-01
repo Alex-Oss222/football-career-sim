@@ -1,715 +1,676 @@
 # August 23 to 28, 2014
 
-## Atlanta Week: Head Coach Planning Outline
+## Atlanta Week: Revised Head Coach Planning Outline
 
 ### What I want from this game
 
-This is our closest preseason approximation of a regular-season game.
+Game 4 is now structured by quarters.
 
-The first half belongs to Kirk Cousins.
+**First quarter:** Cousins with the starters.
 
-The first quarter is the starting group.
+**Second quarter:** Cousins stays in, but the starters come out and he operates with rookies and second-string personnel.
 
-The second quarter keeps Kirk on the field while I begin changing pieces around him.
+**Third and fourth quarters:** backup quarterbacks with the backups and rookies, with the game situation determining which players and concepts I want exposed.
 
-The second half belongs to Chad Henne with the rookies, backups and remaining roster candidates.
+And Travis Kelce is catching the football.
 
-The structure is simple:
+I have enough attached-blocking evaluation.
 
-**First quarter: operate the starting team.**
+I am not spending another preseason game treating him like a sixth offensive lineman.
 
-**Second quarter: keep the starting quarterback and test the next men around him.**
+His first-half evaluation is:
 
-**Second half: turn the team over to the backup quarterback and the players fighting for roles and roster spots.**
+- receiving against linebackers;
+- receiving against safeties;
+- detached alignment;
+- wing release;
+- motion;
+- Y-Cross;
+- Stick/Choice;
+- Mesh;
+- Sail;
+- Texas/Angle where active;
+- TE Delay;
+- red-zone matchup work.
 
-I do not want experimentation for experimentation's sake anymore.
+If Kelce is on the field for a run, I prefer him flexed, motioned or detached when the formation permits it.
 
-Games 1 through 3 gave us that.
+Lewis or another available tight end can handle the primary attached surface.
 
-This week I want to leave the stadium knowing:
-
-1. what our starting operation looks like;
-2. whether Cousins can function when one or two starters leave;
-3. whether Henne can take control of the reserve team;
-4. who our real first replacements are;
-5. which young players can survive regular-season situations;
-6. which special-teamers belong on the 53.
+Kelce is a receiving weapon in this game.
 
 ---
 
-# First-half structure
+# FIRST QUARTER
 
-## First quarter: starting operation
+## Cousins + starters
 
-This is the closest thing we have had to a regular-season half.
+This is the regular-season operation quarter.
 
-Cousins starts.
+Starting offensive structure:
 
-The first offensive line starts.
+- QB Kirk Cousins
+- RB Maurice Jones-Drew
+- WR Hakeem Nicks
+- WR Adam Thielen
+- WR current WR3
+- TE Marcedes Lewis
+- TE Travis Kelce in the 12-personnel packages
+- starting offensive line determined after Detroit
 
-The primary skill group starts.
+The exact LG, RG, WR3 and other unresolved jobs remain dependent on Game 3.
 
-The objective is not evaluation by snap count.
+I am not awarding those positions in advance.
 
-It is operation.
+### Objective
 
-I want to see:
+Run the offense.
 
-- personnel sent cleanly;
-- huddle formed quickly;
-- formation communication;
-- motion timing;
-- protection identification;
-- quarterback-center communication;
-- play clock control;
+Not an evaluation script disguised as offense.
+
+I want:
+
+- huddle;
+- personnel;
+- formation;
+- motion;
+- protection;
+- cadence;
+- quarterback control;
 - substitutions;
-- adjustments between series.
+- normal third down;
+- normal red zone;
+- normal tempo changes.
 
-I am calling the game more naturally than the earlier preseason games.
-
-We have already spent three games manufacturing questions.
-
-Now I want to see whether I can call the offense the way I intend to call it in September.
+Cousins is expected to control the operation.
 
 ---
 
-# First-quarter offensive personnel
+# Kelce package
 
-Starting point:
+Kelce plays through the first half with Cousins.
 
-- QB: Cousins
-- RB: Jones-Drew
-- WR: Nicks
-- WR: Thielen
-- WR: current WR3 based on the first three games
-- TE: Lewis
-- TE2 when called: Kelce
-- LT: Monroe
-- LG: current leader
-- C: Brewster
-- RG: current leader
-- RT: Johnson
+He becomes one of the main reasons I call 12 personnel.
 
-Any competition still genuinely unresolved stays unresolved.
+### Alignment
 
-I am not using this plan to pre-decide a battle whose first three games have not occurred yet.
+Move him:
 
----
+- attached only when necessary;
+- wing;
+- slot;
+- reduced;
+- flexed;
+- motion;
+- Y-Iso;
+- shift from 12 personnel toward Empty.
 
-# First-quarter offensive menu
+I want Atlanta deciding whether a linebacker, safety or nickel defender owns him.
 
-I want almost the whole **regular core**, not the whole playbook.
-
-## Run
-
-- Power
-- Counter
-- Inside Zone
-- Outside Zone
-- Split Zone
-- Duo
-
-## Quick/access
-
-- Stick
-- Spacing
-- Slant-Flat
-- Inside + Bubble
-- Inside + Stick
-- Power + Smoke
-
-## Dropback
-
-- Mesh
-- Drive
-- Y-Cross
-- Dagger
-- Sail
-- Texas
-- Four Verticals
-
-## Play action
-
-- Power Pass
-- Outside Boot
-- Counter Boot
-- Post-Cross
-
-## Screens
-
-- RB Slow
-- RB Slip
-- Bubble/Smoke
-- one receiver screen if it is in that week's clean menu
-
-That is enough football to run a real half.
+Then I want Cousins to see that matchup.
 
 ---
 
-# First-quarter formations
+# Kelce receiving menu
 
-I want the defense to see the offense we intend to be.
+## Y-Cross
 
-Use:
+This is one of the primary Kelce calls.
 
-- Doubles
-- Trey
-- Trips
-- Bunch
-- Ace
-- Wing
-- Pro
-- Empty
-- selected 13/heavy if the current roster has earned it
+Kelce owns the cross.
 
-This is not a formation exhibition.
+We want him working behind the linebackers at intermediate depth.
 
-Every picture has to carry real football.
+Call it from:
+
+- Trey;
+- Wing;
+- Ace;
+- play-action presentation.
+
+## Stick / Stick Choice
+
+Kelce can own the stick route.
+
+If we get favorable man leverage, use the Choice tag.
+
+The playbook specifically allows a trusted tight end to work a defined leverage option.
+
+Cousins reads the matchup.
+
+## Empty Y-Iso Choice
+
+12 personnel enters.
+
+Atlanta matches the heavier personnel.
+
+Then we flex Kelce and make them declare who is covering him.
+
+If I get a linebacker isolated outside or inside leverage from a safety that Kelce can attack, that is the matchup.
+
+## Mesh
+
+Kelce can:
+
+- carry a crosser;
+- settle against zone;
+- work the traffic against man.
+
+He is not clearing space for everybody else all night.
+
+There are Mesh calls where the ball can find him.
+
+## Sail
+
+Kelce works the intermediate/deep part of the three-level stretch where the formation assigns it.
+
+Useful if Atlanta plays Cover 3 or split-field zone.
+
+## Texas / Angle
+
+If this package survives Detroit preparation, Kelce can be the movable matchup piece instead of the back.
+
+Get him on a linebacker.
+
+## TE Delay
+
+Yes.
+
+Actually call it.
+
+Kelce shows enough protection posture to invite the rush, releases, and gets the football behind it.
+
+This is a designed Kelce touch.
+
+## Red zone
+
+Kelce rises in value.
+
+High red zone:
+
+- Cross;
+- Sail;
+- Choice;
+- Snag matchup.
+
+Low red zone:
+
+- Y-Iso;
+- Mesh;
+- quick pivot/Choice;
+- TE Delay/leak where prepared.
+
+I am specifically looking for him when the field compresses.
 
 ---
 
-# Opening 15
+# First-quarter opening sequence
 
-This one is closer to a regular-season opener.
+Situational football still overrides it.
 
-I am using it to establish information and then call the game.
+| # | Call | Intent |
+|---:|---|---|
+| 1 | 12 Trey, Y-Cross, HALF | First pass goes through Kelce's matchup. He is the primary cross. |
+| 2 | 11 Doubles, Inside Zone | Establish run structure without using Kelce as the blocking centerpiece. |
+| 3 | 12 Ace-to-Empty, Y-Iso Choice | Force the defense to declare Kelce's matchup. |
+| 4 | 11 Bunch, Mesh | Man/zone answer. |
+| 5 | 12 Wing, Outside Zone | Establish movement-pass picture. Kelce can align off the surface. |
+| 6 | 12 Wing, Boot Flood | Kelce active in the route distribution. |
+| 7 | 11 Trey, Dagger | Core intermediate offense. |
+| 8 | 12 Trey, Stick Choice | Kelce leverage read. |
+| 9 | 11 Doubles, Power | Downhill complement. |
+| 10 | 12 Bunch, Sail | Stress the sideline with Kelce involved in the progression. |
+| 11 | 12 Wing, TE Delay | Designed Kelce touch. |
+| 12 | 11 Trips, Inside Zone + Access | Normal leverage football. |
+| 13 | 12 Trey, Y-Cross Alert Post | Return to Kelce after showing the same family. |
+| 14 | 11 Doubles, Drive | Intermediate control call. |
+| 15 | 12 Empty/Y-Iso Choice | Matchup call. Kelce primary if leverage is there. |
 
-Situational football still overrides the script.
+I am not forcing the football into double coverage simply because I want Kelce involved.
 
-|  # | Call                           | Purpose                                                   |
-| -: | ------------------------------ | --------------------------------------------------------- |
-|  1 | 12 Ace, Power Right            | Start with our identity. Get the defense's front and fit. |
-|  2 | 11 Trey, Stick, ZIP H          | Immediate leverage and motion information.                |
-|  3 | 11 Trips, Inside Zone + Bubble | Box versus perimeter declaration.                         |
-|  4 | 12 Wing, Outside Zone Left     | Stretch the front and establish the boot picture.         |
-|  5 | 12 Wing, Boot Flood Right      | Immediate complement to the previous picture.             |
-|  6 | 11 Bunch, Mesh, HALF           | Man/zone declaration and traffic communication.           |
-|  7 | 11 Doubles, Power + Smoke      | Force the corner/box decision.                            |
-|  8 | 12 Trey, Drive, HALF           | Same heavier personnel, spread passing structure.         |
-|  9 | 21 Pro, Counter Right          | Make the defense fit a second gap family.                 |
-| 10 | 21 Pro, Power Pass             | Same presentation, punish overreaction if earned.         |
-| 11 | 11 Doubles, Dagger, HALF       | Intermediate timing and protection.                       |
-| 12 | 12 Ace, Duo                    | Interior downhill change-up.                              |
-| 13 | 12 SHIFT Empty, Stick          | Same personnel, force a complete defensive reset.         |
-| 14 | 11 Trey, RB Slow Screen        | Rush-control call.                                        |
-| 15 | 12 Ace, Post-Cross MAX         | Shot only if the preceding run/pass behavior earns it.    |
+I am **designing the progression so the defense has to take him away**.
 
-I am not obligated to call number 15.
-
-If Atlanta never gives me the trigger, it stays on the sheet.
-
-That is regular-season discipline.
+That is different.
 
 ---
 
-# Calling the first quarter
+# Kelce first-half target philosophy
 
-I am not chasing a run-pass balance number.
+I want multiple designed opportunities.
 
-I am watching:
+The first half should contain approximately:
 
+- two Y-Cross opportunities;
+- two Stick/Choice or Y-Iso opportunities;
+- one Mesh/Sail opportunity;
+- one TE Delay;
+- one situational red-zone call if the field gives it.
+
+That does not mean seven forced targets.
+
+If Atlanta doubles him or rotates directly over him, throw the answer created by that attention.
+
+If they cover him with a linebacker and give us leverage, feed him.
+
+---
+
+# SECOND QUARTER
+
+## Cousins + rookies and second string
+
+The quarterback stays.
+
+Most of the established starters leave.
+
+This is the test I want.
+
+Can QB1 keep the offense functioning when Sunday replacements surround him?
+
+### Skill group
+
+The exact group depends on Detroit, but it comes primarily from:
+
+- Davante Adams;
+- Andrew Hawkins;
+- Allen Hurns;
+- Taylor Gabriel;
+- C.J. Anderson;
+- Jonathan Grimes;
+- Travis Kelce;
+- Marcel Jensen;
+- Gator Hoskins.
+
+Jerrell Jackson's medical status controls his participation.
+
+I do not build around an unavailable player.
+
+### Offensive line
+
+The intention is a developmental line.
+
+Potential structure based on the current roster:
+
+- Leno;
+- Norwell;
+- Linsley;
+- Feiler/other qualified young guard;
+- Lucas.
+
+If Detroit demonstrates that a complete young five cannot safely protect Cousins, I keep one veteran anchor.
+
+I am testing the backups.
+
+I am not needlessly exposing QB1.
+
+---
+
+# Cousins's second-quarter responsibility
+
+I want him coaching the offense from inside the huddle.
+
+He owns:
+
+- personnel count;
+- point;
 - box;
-- front;
-- safety structure;
-- motion response;
+- shell;
 - pressure;
-- corner leverage;
-- backer flow.
+- leverage;
+- protection communication.
 
-Then I call what answers it.
+If a rookie receiver is wrong, fix it.
 
-If Atlanta is sitting light in the box, we can run.
+If Linsley changes the point, confirm it.
 
-If they load it, take the space.
+If Anderson misses the pressure picture, communicate it before the snap.
 
-If they start flowing hard to zone, Counter enters.
+The offense does not get simplified simply because the starters left.
 
-If the pressure starts getting home, quick game and screens rise.
+The presentation may narrow.
 
-I want Cousins and the offense leaving the first quarter having played **our football**, not having completed a checklist.
-
----
-
-# Second quarter: Cousins stays, pieces change
-
-This is the important difference.
-
-Kirk remains the quarterback.
-
-Now I start replacing starters around him.
-
-Not all at once.
-
-I want one or two variables at a time.
+The rules stay.
 
 ---
 
-# Second-quarter Group A
+# Second-quarter Kelce work
 
-Keep:
+Kelce remains on the field.
 
-- Cousins
-- starting tackles
-- Brewster
-- one established receiver
-- Lewis or Kelce
+Now his test becomes portability.
 
-Rotate in:
+Can he produce when:
 
-- alternate guard;
-- reserve back;
-- receiver fighting for WR3/4;
-- second tight end.
+- Lewis is gone;
+- the receivers are younger;
+- the line changes;
+- the back changes?
 
-Run a normal possession.
+I want Kelce functioning as the stabilizing skill player with Cousins.
 
-Do not change the playbook.
+### Priority calls
 
-If the offense suddenly shrinks because one receiver and one guard changed, I need to know that.
+- Trey Y-Cross
+- Empty Y-Iso Choice
+- Bunch Mesh
+- Stick Choice
+- Sail
+- TE Delay
+- high-red-zone Cross
+- low-red-zone Mesh/Choice
 
----
+Then Kelce's night is over at halftime.
 
-# Second-quarter Group B
-
-Keep Cousins.
-
-Now change another layer.
-
-Potential structure:
-
-- one starting tackle;
-- one reserve tackle;
-- Linsley at center;
-- current guard rotation;
-- Adams/Hawkins/Hurns/Gabriel combination based on the first three games;
-- Kelce or current TE3 candidate;
-- Grimes or Anderson.
-
-This is the **regular-season injury test**.
-
-Not five reserves thrown together.
-
-A realistic damaged starting offense.
-
----
-
-# What Cousins is responsible for in the second quarter
-
-The same five pre-snap responsibilities:
-
-1. Point.
-2. Box.
-3. Shell.
-4. Pressure.
-5. Leverage.
-
-I want him communicating more, not simplifying everything for the young group.
-
-If the reserve guard needs help with the protection point, Kirk gives it.
-
-If the receiver is lined up wrong, correct him.
-
-If the motion is late, fix it.
-
-That is part of being QB1.
+I have seen enough.
 
 ---
 
 # Cousins workload
 
-The plan is the **first half**, but the clock is not sacred.
+Cousins owns the first half.
 
-I am not leaving Kirk exposed for 40 offensive snaps because Atlanta cannot get off the field.
+That is the plan.
 
-Nor am I pulling him automatically because the first quarter ended.
+But I still retain common sense.
 
-Normal objective:
+If the offense runs an abnormal number of snaps, or protection becomes unsafe, I can finish his night before exactly 0:00.
 
-- meaningful first-quarter operation;
-- multiple second-quarter mixed-group possessions;
-- one legitimate situational sequence if the game presents it.
+The objective is:
 
-If the first half becomes excessive because of unusual possession volume, I can end his night earlier.
+### Quarter 1
+Regular starting offense.
 
-The objective outranks the clock.
+### Quarter 2
+Regular quarterback controlling an irregular lineup.
 
----
-
-# First-half tempo
-
-I want all four operational tempos available.
-
-## NORMAL
-
-Base operation.
-
-## HOLD
-
-Important.
-
-Keep the same personnel and change:
-
-- Ace to Trey;
-- Wing to Empty;
-- Doubles to Trips;
-- Pro to spread.
-
-## PRESS
-
-At least one real sequence with Cousins.
-
-Not a two-play demonstration.
-
-If the personnel is functioning, give him a short drive segment.
-
-## FREEZE
-
-Use once if Atlanta is giving us a useful front/pressure declaration.
-
-I want to see the whole offense handle it without jumping ourselves.
+That is the rehearsal.
 
 ---
 
-# First-half situational football
+# SECOND HALF
 
-If it appears, we play it normally.
+The starters are finished.
 
-## Third-and-short
+Kelce is finished.
 
-Call the actual short-yardage menu.
+Cousins is finished.
 
-## Third-and-medium
-
-Use the calls we trust.
-
-## Third-and-long
-
-Protect the quarterback, but do not hide the offense.
-
-## Red zone
-
-Call the real red-zone concepts.
-
-## Backed up
-
-Play disciplined offense.
-
-## Two minute
-
-If it occurs near halftime, Cousins runs it.
-
-This is the one preseason game where I specifically want the starting quarterback operating a legitimate end-of-half sequence if the game presents it.
-
-I will use timeouts the way I expect to use them during the season.
-
-No teaching timeout just because somebody is confused.
-
-By Game 4, confusion is evidence.
+Now the backups and rookies own the game.
 
 ---
 
-# Halftime
+# THIRD QUARTER
 
-Cousins is done.
+## Chad Henne
 
-The established offensive veterans are done unless there is an unusual unresolved need.
+Henne owns the third quarter unless Game 3 changes the quarterback structure materially.
 
-The game now changes.
+This is his team.
 
-Henne owns the offense.
+I do not want him babysitting rookies.
 
----
+I want him quarterbacking them.
 
-# Second half: Chad Henne's team
+Give him:
 
-I do not want Henne entering the second half as a babysitter.
+- reserve offensive line;
+- reserve backs;
+- Hurns/Gabriel/Hawkins/other available receivers;
+- Jensen/Hoskins;
+- remaining roster candidates.
 
-He is the quarterback.
+### Menu
 
-He gets control of:
-
-- rookies;
-- backups;
-- first-replacement candidates;
-- final roster candidates.
-
-The question is whether the backup quarterback can organize the team when the starters are gone.
-
-That is a real NFL job.
-
----
-
-# Henne's second-half menu
-
-He gets a full functional offense.
-
-Not the entire playbook, but much more than a rookie survival menu.
-
-## Runs
+Full functional reserve offense:
 
 - Power
 - Counter
 - Inside Zone
 - Outside Zone
-- Split Zone
-- Duo/Draw where personnel permits
-
-## Pass
-
 - Stick
 - Spacing
 - Mesh
 - Drive
 - Y-Cross
 - Dagger
-- Sail
-- Texas
-
-## Play action
-
 - Boot Flood
-- Counter Boot
-- Power Pass
+- RB Slow Screen
 
-## Screens/access
-
-- RB Slow
-- RB Slip
-- Bubble
-- Smoke
-
-## Vertical
-
-- Four Verticals
-- one Post-Cross shot if protection and setup permit
-
-Henne has to run the offense.
+No useless gadgetry.
 
 ---
 
-# Second-half personnel
+# Fourth quarter quarterback structure
 
-The second half belongs primarily to:
+Game 3 determines this.
 
-- reserve offensive linemen;
-- young receivers;
-- young backs;
-- reserve tight ends;
-- players on the roster bubble.
+If QB3 is settled:
 
-The exact names depend on Games 1 through 3 and the August 26 reduction to 75.
+The established QB3 gets the majority of the fourth quarter.
 
-I am not pretending on August 4 that I know which fringe players will still be here on August 28.
+If the QB3 competition remains unresolved:
 
-The **structure** is fixed.
+Wilson, Bray and/or Shaw receive only the specific blocks still needed to answer it.
 
-The names are earned.
+I am not dividing the quarter equally for appearances.
+
+The reps have a purpose.
 
 ---
 
-# Second-half offensive line
+# Second-half situational philosophy
 
-By this game the hierarchy should be getting clear.
+This is where I want rookies and backups exposed to real football situations.
 
-I want the likely game-day backup combinations together.
+If the game provides them, keep the current developmental group on the field.
 
-That matters more now than giving everybody an identical number of snaps.
-
-Questions:
-
-- Who is the swing tackle?
-- Who is first interior off the bench?
-- Can Linsley handle the operation if Brewster leaves?
-- Which guard can play on both sides?
-- Which tackle can enter without changing the protection menu?
-
-The second half helps close those questions.
+Do not reinsert veterans.
 
 ---
 
-# Second-half receiver and tight-end test
+## Backed up
 
-At this point I care about **roster utility**.
+Use the backup quarterback and reserve group.
 
-For the remaining receivers:
+I want to see:
 
-Can you play outside?
-
-Can you play inside?
-
-Can you motion?
-
-Can you block?
-
-Can you cover kicks?
-
-Can you return if required?
-
-Can you enter without the quarterback changing the call?
-
-For the tight ends:
-
-Can you attach?
-
-Can you move?
-
-Can you protect?
-
-Can you run enough of the route tree?
-
-Can you contribute on special teams?
-
-The fourth receiver who only catches passes has to clearly justify why that is enough.
-
----
-
-# Second-half running backs
-
-Same standard.
-
-I want backs who can stay on the field.
-
-They need:
-
-- run-game assignment;
-- protection;
-- route;
-- screen;
+- communication under noise;
+- clean exchange;
 - ball security;
-- special-teams usefulness where applicable.
+- protection;
+- no panic.
 
-A back who runs well but gets the quarterback hit is not giving me a complete roster answer.
+Calls:
 
----
-
-# No planned third quarterback
-
-My planned second half belongs to Henne.
-
-I am not scheduling a quarter for Wilson, Bray or Shaw simply because they are quarterbacks.
-
-By Game 4, the first three games and practices should have produced evidence.
-
-If there is still a legitimate roster question at QB3 after Game 3, that can alter the second-half allocation.
-
-Otherwise Henne runs it.
-
-I want the backup quarterback preparing like a backup quarterback, not receiving another ten-snap cameo.
+- Inside Zone
+- Power
+- Stick
+- safe play action if edge control is sound
 
 ---
 
-# Defense: first half
+## Third-and-short
 
-Same structure as the offense.
+Do not always substitute into the perfect veteran package.
+
+Make the young group convert it.
+
+- Power
+- Counter
+- quick Mesh/man answer
+- leverage throw against an overloaded box
+
+---
+
+## Third-and-medium
+
+This is an excellent reserve evaluation.
+
+- Mesh
+- Stick
+- Drive
+- Snag if carried
+
+Who understands the sticks?
+
+Who communicates pressure?
+
+Who separates?
+
+---
+
+## Third-and-long
+
+Do not hide the young offensive line.
+
+Give them a real pass-protection rep.
+
+- Dagger with protection
+- Drive
+- Y-Cross
+- screen if pressure warrants
+
+A young tackle cannot earn a backup job if I refuse to let him pass protect.
+
+---
+
+# Red zone
+
+If Henne or the later quarterback gets us there, that group stays.
+
+Do not insert Cousins.
+
+Do not insert Jones-Drew.
+
+The rookies finish the drive.
+
+High red zone:
+
+- Cross
+- Sail
+- Snag
+- normal run
+
+Low red zone:
+
+- Bunch Mesh
+- quick Choice/pivot
+- Boot
+- Power/Counter
+
+---
+
+# Two minute
+
+The quarterback currently playing runs it.
+
+No veteran rescue.
+
+PRESS menu:
+
+- Spacing
+- Stick
+- Drive
+- Mesh
+- RB screen
+- sideline access
+
+I want the sideline operating fast and the young receivers knowing where to line up without a coach walking onto the field.
+
+---
+
+# Four minute
+
+Same thing.
+
+Backups have to close games too.
+
+Use:
+
+- Power
+- Counter
+- Inside/Outside Zone
+- safe Cross or Boot when the defense sells out.
+
+I am not running three times just because the clock exists.
+
+I want first downs.
+
+---
+
+# Sudden change
+
+Whoever is scheduled goes.
+
+Turnover gives us a short field?
+
+Good.
+
+Young offense gets it.
+
+Our offense turns it over?
+
+Young defense gets it.
+
+No changing the developmental plan because the score suddenly becomes interesting.
+
+---
+
+# DEFENSE
+
+The defense follows the same quarter structure.
 
 ## First quarter
 
 Starting defense.
 
-Crennel gets to call it like a regular game within the installed preseason menu.
+Normal operation.
+
+Crennel calls the installed menu.
 
 I want:
 
-- Under;
-- Over;
-- Nickel Even;
-- Bear when situation requires it;
+- run fits;
+- Nickel transition;
 - Cover 1;
+- Robber;
 - Cover 3;
 - Quarters;
-- Robber;
-- normal four-man games;
-- selected five-man pressure.
+- four-man rush;
+- prepared pressure.
 
-Do not empty the defensive playbook.
-
-But do not protect the starting defense from football either.
+This is the regular-season reference group.
 
 ---
 
-# Defensive first-quarter objective
+# Second quarter
 
-I want to see:
-
-- front declaration;
-- run fit;
-- tackling;
-- motion communication;
-- nickel substitution;
-- third-down operation;
-- pressure contain;
-- coverage leverage.
-
-If Atlanta gives us a long drive, good.
-
-I want to see whether the starting defense can survive six, eight, ten snaps without communication degrading.
-
----
-
-# Second-quarter defensive mixing
-
-Now begin removing individual starters.
-
-Again, not everybody at once.
+Begin substituting rookies and second-string players around established communicators.
 
 Example:
 
-### Group A
+- young DL with veteran linebacker;
+- young linebacker with veteran front;
+- young corner with veteran safety;
+- alternate safety beside veteran corner;
+- Poyer with different outside corner combinations.
 
-Starting front, alternate linebacker and DB.
+One controlled variable at a time.
 
-### Group B
-
-Mixed front, starting communication linebacker.
-
-### Group C
-
-Starting corners with alternate safety/nickel.
-
-### Group D
-
-One starting edge with reserve interior.
-
-The idea is the same as offense.
-
-Can the unit absorb one regular-season injury without requiring Crennel to build a new defense?
+Same philosophy as Cousins's second quarter.
 
 ---
 
-# Defensive communication
+# Second half defense
 
-By now I want the succession functioning naturally.
+Backups and rookies.
 
-If the normal communicator leaves, the next man takes it.
-
-No timeout.
-
-No staff panic.
-
-No veteran sprinting back onto the field to save the alignment.
-
-The next player owns it.
-
-That is exactly why we installed a succession.
-
----
-
-# Second-half defense
-
-The second half belongs to the remaining backups and roster candidates.
-
-But I am narrowing the call sheet.
-
-Not because they cannot handle football.
-
-Because I want clean evaluation.
+The call sheet narrows.
 
 ## Fronts
 
 - Under
-- Over
 - Nickel Even
-- Bear situationally
+- normal practiced adjustment
 
 ## Coverage
 
@@ -717,347 +678,236 @@ Because I want clean evaluation.
 - Cover 3
 - Quarters
 - Robber
-- Fire 3
 
 ## Pressure
 
-- base four;
-- line game;
-- one edge pressure;
-- A-gap pressure;
-- one Fire Zone family.
+- base four
+- line game
+- one installed five-man family
 
-Enough to evaluate everybody without turning the last preseason half into a defensive-install exam.
+I am evaluating football players, not how many calls Crennel can fit onto a wristband.
 
 ---
 
-# What I want from the reserve defense
+# Defensive situational work
 
-### Defensive line
+If the game produces:
 
-Can he:
+### Backed up offense
+Attack without reckless zero pressure.
 
-- hold his gap;
-- rush with lane integrity;
-- play adjacent to multiple linemen;
-- recognize screen;
-- finish.
+### Third-and-short
+Fit the run and tackle.
 
-### Linebacker
+### Third-and-medium
+Nickel communication.
 
-Can he:
+### Third-and-long
+Rush lane plus coverage.
 
-- hear and communicate the front;
-- fit correctly;
-- carry/match the back;
-- pressure without losing his replacement rule;
-- play special teams.
+### Red zone
+Reduce disguise if it makes the young group slow.
 
-### Defensive back
+### Two minute
+Communication first.
 
-Can he:
-
-- play man;
-- play zone;
-- communicate motion;
-- tackle;
-- replace crack;
-- contribute in the kicking game.
-
-A fourth corner who cannot cover kicks needs to be clearly superior as a corner.
+### Four minute
+Stop the run without surrendering the play-action explosive.
 
 ---
 
-# Special teams
+# SPECIAL TEAMS
 
-Game 4 is no longer broad experimentation.
+Game 4 special teams should increasingly resemble the roster we expect to carry.
 
-This is close to the final roster operation.
+But rookies fighting for the final positions still need real work.
 
-Westhoff should be working combinations that could realistically exist on the 46-man game-day roster.
+Westhoff sets the technical units.
 
-I want the likely:
+I want to know which reserve can play:
 
-- kickoff unit;
-- kickoff return unit;
-- punt unit;
-- punt return unit;
-- field-goal unit;
-- field-goal block unit.
+- kickoff coverage;
+- punt coverage;
+- kick return;
+- punt return;
+- protection.
 
-There can still be individual competitions.
-
-But I want the units beginning to look like units.
+That may decide the bottom of the roster.
 
 ---
 
-# Long snapper
+# Field goals
 
-If Cain/Kreiter remains unresolved, both get the specific operations required to finish the decision.
+The Chicago misses remain part of the preseason evaluation until later evidence changes them.
 
-Do not manufacture extra competition simply because this is the last preseason game.
+Before Atlanta, I want the staff grading:
 
-Use the entire camp and preseason record.
+- snap;
+- hold;
+- protection;
+- kick.
 
-One bad snap does not erase four good weeks.
+If the operation is clean, we say it is clean.
 
-One clean snap does not erase repeated protection issues.
+Then the kicker owns the kick.
 
-Evaluate the body of work.
-
----
-
-# Returner
-
-Same standard.
-
-By Game 4 I want the candidates narrowed.
-
-Return opportunities are game-dependent, so Westhoff cannot promise equal chances.
-
-Grade:
-
-- decision-making;
-- ball security;
-- fielding;
-- vertical entry;
-- return value;
-- communication.
-
-If Atlanta kicks every ball through the end zone, practice tape still matters.
+No vague "special teams problem" if the film gives us a specific answer.
 
 ---
 
-# Head-coach game management
+# Head-coach operation
 
-The first half is a rehearsal for me too.
+The first half is my rehearsal too.
 
-I want normal operation on:
+I use:
 
-- fourth down;
-- timeout use;
-- clock;
-- challenge communication;
-- end-of-half;
-- field goal versus offense;
-- substitution review.
+- normal fourth-down decisions;
+- normal timeout process;
+- challenge process;
+- halftime clock;
+- substitution communication.
 
-I am not taking reckless fourth downs simply because it is preseason.
+The second half is more evaluation-oriented.
 
-I am rehearsing my regular-season process.
+On a manageable fourth down with the developmental offense, I am more willing to leave them on the field.
 
-The second half is different.
-
-If a fourth down can expose a roster candidate to a useful real football situation, I am more willing to go for it.
-
-But the decision still has to make football sense.
+I have already punted away enough useful preseason fourth-down reps.
 
 ---
 
 # Atlanta week preparation
 
-The week is short.
+## After Detroit
 
-Detroit was August 22.
+The first meeting answers:
 
-We cut to 75 by August 26.
+- who belongs in the first-quarter starting group?
+- who belongs in Cousins's second-quarter young group?
+- who are the actual first replacements?
+- which QB3 questions remain?
+- which bottom-roster players need a final live situation?
+- what is Kelce's receiving menu?
 
-Atlanta is August 28.
+Kelce's receiving menu is written deliberately.
 
-That changes preparation.
+It is not "maybe he gets open."
 
-There is no giant install.
-
----
-
-## August 23 to 24: Detroit review and roster triage
-
-The staff review has two purposes.
-
-### One
-
-What does Detroit tell us about the likely regular-season two-deep?
-
-### Two
-
-Which players still require Game 4 evidence before the August 30 cut?
-
-Every position coach has to separate:
-
-- starter;
-- likely first replacement;
-- special-teams roster value;
-- still competing;
-- insufficient evidence.
-
-Do not keep a competition open because making a decision is uncomfortable.
-
-If the tape has answered it, answer it.
+We are calling concepts designed to put him into the progression.
 
 ---
 
-# August 25 to 26: starting operation plus bubble work
+# August 25 to 26
 
-Practice is divided.
+## First-quarter group
 
-## Starting offense/defense
+Practice:
 
-Prepare the first half.
-
-Focus:
-
-- openers;
-- third down;
+- opening calls;
+- normal third down;
 - red zone;
-- backed up;
-- two minute;
-- substitutions;
-- PRESS;
 - protection;
-- defensive communication.
+- substitution;
+- PRESS.
 
-## Reserve groups
+## Cousins second-quarter group
 
-Prepare the second half.
+Practice together.
 
-Focus:
+Do not wait until the game to introduce Cousins to the young line and receivers as one unit.
 
-- simple complete menu;
-- roster-role assignments;
-- special teams;
-- emergency substitutions.
+Rehearse:
+
+- protection;
+- Empty shift where carried;
+- Kelce Y-Iso;
+- Y-Cross;
+- Mesh;
+- backed up;
+- third down.
+
+## Backup groups
+
+Practice:
+
+- Henne operation;
+- reserve OL;
+- situational football;
+- fourth-down communication;
+- special teams.
 
 ---
 
-# August 26: cut to 75
+# August 26 cut to 75
 
-Once the roster is reduced, the plan is rewritten around the players who are actually still here.
+The plan immediately updates to the players who remain.
 
-Nobody who is cut remains in an imaginary Game 4 rotation.
+No cut player stays in an imaginary Atlanta rotation.
 
-The final Game 4 personnel chart is frozen after the reduction and medical review.
+Exact second-half names are frozen only after:
+
+- cutdown;
+- medical review;
+- Detroit review.
 
 ---
 
-# August 27: polish
+# Final walkthrough
 
-No hunting for new plays.
+No new offense.
 
-First-half group rehearses:
+First quarter:
+starter operation.
 
-- opener;
-- situations;
-- emergency substitution;
-- halftime transition.
+Second quarter:
+Cousins + young group.
 
-Second-half group rehearses:
+Second half:
+backup-quarterback groups.
 
-- Henne's menu;
-- reserve OL communication;
-- substitutions;
-- special-teams transitions;
-- end-game operation.
+Kelce:
 
-The important question for everybody:
+- Y-Cross;
+- Choice;
+- Stick;
+- Mesh;
+- Sail;
+- TE Delay;
+- red-zone matchup.
 
-**If the man ahead of you disappears, do you know exactly where you go?**
+Everybody knows why those calls are on the sheet.
 
 ---
 
 # What I am grading in Game 4
 
-Game 1:
+## First quarter
 
-**Can our installed football survive another team?**
+**Are the starters ready to play regular-season football?**
 
-Game 2:
+## Second quarter
 
-**Which rookies and backups can function?**
+**Can Cousins keep the offense functional when starters disappear?**
 
-Game 3:
+## Second half
 
-**Can the roster survive mixed combinations?**
+**Which backups and rookies can handle real NFL situations without veteran rescue?**
 
-Game 4:
+## Kelce
 
-**Are we ready to become a regular-season football team?**
+The question is no longer whether Travis Kelce can spend another night attached to the line.
 
-For the starters:
+I want to know:
 
-### Operation
+- Can he separate from linebackers?
+- Can he beat safety leverage?
+- Can Cousins find him on Cross?
+- Can he make the Choice route correct?
+- Can he work in traffic on Mesh?
+- Can he become the intermediate player on Sail?
+- Can he punish an aggressive rush on TE Delay?
+- Can he become a real red-zone matchup?
+- Does the defense change its personnel or coverage because he is on the field?
 
-Does the team look organized?
+That is the evaluation.
 
-### Rhythm
-
-Can we move between personnel, formation and tempo without confusion?
-
-### Protection
-
-Can Cousins and the line solve normal NFL pressure?
-
-### Situational execution
-
-Can we handle third down, red zone, backed up and two minute?
-
-### Continuity
-
-Does one backup entering force the entire unit to change?
-
-For the reserves:
-
-### Roster value
-
-What legitimate Sunday job does the player provide?
-
-### Reliability
-
-Can we trust him when he enters cold?
-
-### Special teams
-
-Can he help us dress the right 46?
-
-### Flexibility
-
-Can he cover more than one trained role?
-
-### Mistake profile
-
-When he loses, is it physical, technical, mental or communication?
-
-### Correction
-
-Have the same errors from July and early August actually disappeared?
-
----
-
-# The standard leaving Game 4
-
-I do not need to know everything about every player.
-
-I need enough to make the roster functional.
-
-By Friday morning after Atlanta, I want to be able to draw the team without guessing:
-
-- starting offense;
-- starting defense;
-- nickel;
-- first offensive-line replacements;
-- backup quarterback operation;
-- backup back order;
-- receiver roles;
-- tight-end roles;
-- defensive-line rotation;
-- linebacker succession;
-- secondary replacements;
-- all four major special-teams units;
-- emergency positions.
-
-Then the last cut is not:
-
-**Who had the best fourth-quarter preseason stats?**
-
-It is:
-
-**Which 53 players give us the strongest functioning football team when something goes wrong on Sunday?**
+**If Atlanta wants to cover Kelce with a linebacker, I want the football going there until they give me a reason to stop.**
