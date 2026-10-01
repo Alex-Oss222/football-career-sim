@@ -13,7 +13,7 @@ This document states what is true now and what comes next. Event history lives i
 
 | Canonical document | Effective version | Current pointer |
 |---|---|---|
-| Document 1 | `a85650c6ba2557fbec8102dc7533aaf085bf188f` | Active foundation source |
+| Document 1 | `f14b419af771c58249c6394629683ca470b7cbee` | Active foundation source |
 | Document 2 | `d745051bbd258f5134e43d0ea686f86a700bd5b7` | Active foundation source |
 | Document 3 | `30ff2bd2eb39f64e31565d5eaf76bdd2de7e54b5` | Active foundation source |
 | Document 4 | `JAX-2014-JUL29-REGISTER-67`; reconciled by Entry 114, unchanged by Entry 115 | Roster, staff, medical and role register |

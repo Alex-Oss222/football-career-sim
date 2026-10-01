@@ -4,7 +4,7 @@ For training camp and integrated preseason work, continue with the [camp and pre
 
 **Status:** User-authored draft (`off seaosnr Output.txt`), refined 2026-09-17. This is the confirmed format for every offseason turn per Document 7 §5.2 — Document 7 does not invent this shape, it only points here.
 
-**When this template is used:** from the moment the coach's season ends (elimination, or the offseason clock starting after a Super Bowl loss/win) through the day before the next league year's preseason bulk report. In-season turns use `season_output_template.md` instead.
+**When this template is used:** from the moment the coach's season ends (elimination, or the offseason clock starting after a Super Bowl loss/win) through the day before the next league year's preseason bulk report. Preseason uses the complete [preseason output template](preseason_output_template.md); regular-season and postseason turns use the [regular-season output template](regular_season_output_template.md).
 
 **Training-phase reports, user revision September 30, 2026:** for Phase One, Phase Two, rookie minicamp, OTAs and mandatory minicamp, use the matching [offseason training report](offseason_training/README.md) in chat and in the phase's `training_report.md`. Those are phase-specific versions of this offseason format. They lead with the work, offense, defense, special teams, individual learning and next practice. The sections below remain the format for the other offseason business they describe; do not repeat a closeout meeting, financial snapshot or acquisition board simply because a practice phase ended. Surface a new consequential business decision when it actually affects the work.
 

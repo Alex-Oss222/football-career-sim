@@ -6,7 +6,7 @@ One folder per week, named `week_NN_<away>_at_<home>`, with continuous numbering
 
 The complete Jacksonville head-coach weekly package is written **only** to that week's existing `output.md`, using:
 
-`foundation/templates/season_output_template.md`
+`foundation/templates/regular_season_output_template.md`
 
 For a played game week, that one file contains the full coach-facing turn: week/opponent setup, Stone's game preparation, pregame media Q&A, chronological generated game highlights, final score/box score, standouts, postgame media Q&A, coaching corrections and material roster/availability changes.
 

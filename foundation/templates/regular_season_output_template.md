@@ -1,12 +1,8 @@
-# Season (in-season) output template
+# Regular-season output template
 
-**Status:** Confirmed in-season format, refined 2026-09-19 from the user's original `Season Output.txt` structure and hardened for narrative quality on 2026-09-19.
-**Authority:** This is the required coach-facing format for every in-season turn per Document 7 §5.2. Document 7 governs simulation; this template governs presentation.
-**When used:** From the preseason bulk report through the last postseason game. The offseason uses `offseason_output_template.md`.
-
-**Preseason version, user instruction September 30, 2026:** use the [camp and preseason formats](training_camp_and_preseason/README.md) for individual preseason game reports and the consolidated review. They retain this template's generated-result, full-box-score, narrative and media rules while centering the camp questions, player combinations, scheme execution and subsequent coaching work. The regular-season and postseason format below is unchanged. A practice report uses the camp template and has no invented game result or box score.
-
-**Preseason follow-up, October 1, 2026:** the game report must combine the story with an assessment of offense, defense, special teams, communication and named player performance. Explain what starters, reserves and mixed groups actually did well or poorly, the effect on shared execution and the next coaching work. Use the [expanded game template](training_camp_and_preseason/preseason_game_report.md); the [bulk review](training_camp_and_preseason/preseason_review.md) retains those substantive findings when games are reported together.
+**Status:** The user's original `Season Output.txt` layout, refined September 19, 2026 and renamed at the user's request. The complete coaching report now sits beneath the game narrative in section 4.
+**Authority:** Required coach-facing regular-season and postseason format under Document 7 §5.2. Document 7 governs simulation; this template governs presentation.
+**When used:** Regular-season game weeks, byes and postseason turns. Use the complete [preseason output template](preseason_output_template.md) for preseason and the [offseason output template](offseason_output_template.md) for offseason turns.
 
 ## Storage rule
 
@@ -68,7 +64,7 @@ Do not invent structure that was not actually prepared. If only the family is es
 
 ## Depth and word-count rule
 
-Word counts are planning bands, not quotas. Do not pad a quiet game and do not compress a genuinely major one. High stakes should increase useful evidence and decision context, not adjective density.
+Word counts are planning bands for the existing weekly prose, not quotas. Allow additional space for the substantive coaching report beneath the game narrative; avoid repeating its findings in later sections. Do not pad a quiet game and do not compress a genuinely major one. High stakes should increase useful evidence and decision context, not adjective density.
 
 ### Routine regular-season game week
 
@@ -96,6 +92,16 @@ Typical bands:
 ### Bye / no-game week
 
 Use a compressed format. Preparation, roster/medical developments, self-scout, and next-opponent work should normally fit in **150-300 words total**, unless something material actually happens.
+
+## Coaching report beneath the game summary
+
+Section 4 keeps the established game header and selected narrative. Immediately below the narrative, render **Report to render** and every subsection through the full box score. This incorporates the former separate game-report material into the original output layout. The date and final score remain in the game header; do not add a second game title or result. Preserve sections 1 through 8, including both media sessions, coach status, the personnel snapshot and closure.
+
+Read the prepared menu, actual participation/substitutions, public receipt/play record, medical instructions and dated coaching observations before filling the report. Use the relevant active playbook entries and the [player-assessment method](training_camp_and_preseason/player_assessment.md). A concept's presence in the book does not establish that it was taught or called. Distinguish an immediate impression from a completed staff review. Do not invent film viewing, a spoken check, effort, a missed assignment or a technical cause from a statistic alone.
+
+Assess the actual starters, reserves and mixed groups with their supporting players, opposition, assignment and opportunity. A quarterback change does not establish that the entire unit changed. Keep recognition, technique, physical execution and decisions distinct. Give supported strengths and failures their proper weight without requiring equal praise and criticism or a note on every player. The [preseason research](../../docs/preseason_game_reports.md) supplies coaching examples; outside player results do not become branch evidence.
+
+Use connected prose in the filled report. The game narrative tells what happened; the report develops the football judgments. Sections 5 through 8 retain their original purposes. Mention a fact again only when it answers a different question, and keep section 6 focused on the resulting work. The full template below is an authoring scaffold: render its filled Markdown normally in chat, without the outer fence or bracketed instructions.
 
 ## Game-narrative rule
 
@@ -201,7 +207,7 @@ Place this block where the box score belongs, then fill it:
 <!-- /box-score -->
 ```
 
-`python scripts/render_box_score.py --write career/[year]/regular_season/week_NN_<away>_at_<home>/output.md`
+`python scripts/render_box_score.py --season YEAR --write career/[year]/regular_season/week_NN_<away>_at_<home>/output.md`
 
 The generated box score follows the standard NFL layout: a team comparison, then each club in turn (your team first) with Passing, Rushing, Receiving, Fumbles, Defense, Kicking, Punting and Returns. Every player with a generated statistic in a category appears in it; Passing, Rushing, Receiving and Defense end with a **Team total** row. A line whose player attribution could not be preserved appears as **Team / unattributed**.
 
@@ -286,12 +292,58 @@ A routine pregame session normally uses **2-3 substantive questions**. A routine
 
 [Routine target: 300-450 words. High-stakes target: 500-750 words. Follow a selected chronology, not a possession log. Use only meaningful generated sequences. Paragraphs do not need to map one-to-one to drives. Explain concrete football cause and consequence. Include Stone's in-game management only where he actually made or approved a recorded decision. Do not invent interiority, fake technical precision, atmosphere, or a moral at the end.]
 
-### Box score
+### Report to render
+
+**Review:** [Immediate postgame assessment, or completed staff review with its actual evidence-through date.]
+
+#### What the staff wanted to see
+
+[Briefly identify the questions from preparation the game was meant to test, the prepared menu, personnel opportunities and material workload limits. Explain why a player or combination received that work when the reason is recorded. Distinguish the plan from who actually played. The recorded pregame exchange belongs in section 3; do not repeat it here.]
+
+#### How the game unfolded
+
+[Use the game summary directly above as the account of what happened. Explain what those sequences establish about the team's play as a whole and what changed with the actual personnel. Connect offense, defense and special teams through possession, field position and the situations they left each other. Include the opponent's contribution. Develop the coaching assessment here without retelling the chronology.]
+
+#### How the units played
+
+##### Offense
+
+[Explain which parts of the prepared offense functioned and which broke down, with named players and representative evidence. Assess the actual opening, relief and mixed combinations. Could they line up, handle a changed defensive picture and run the intended call? Did the run blocks and back's track fit together? Did the quarterback, protection and routes provide the same answer at the same time? Describe drive sustainability and the relevant third-down, red-zone or clock situations, including failures that did not become turnovers. Use game statistics to explain the finding, not to replace it.]
+
+[Separate recognition, technique, matchup and decision errors. A sack can involve the protection call, a lost block, the back, the route answer or the quarterback's timing. Attribute the cause only where the evidence supports it. A designed unblocked edge is not automatically a bust. A completion does not clear a late read or wrong route; an incompletion can include a correct decision. Explain what support made a combination work and what that support cost the rest of the call.]
+
+##### Defense
+
+[Explain the defense's collective play and the changes with its actual personnel. Connect front and gap control to linebacker fits and the force/support defender; connect rush lanes and pressure to coverage and help. Assess block defeat, tackling and pursuit where observed, along with motion/bunch exchanges, leverage and the response to changed formations. Explain whether an explosive play was an isolated loss or part of a repeated problem only when the wider record supports that distinction. A tackle total, sack or interception cannot stand in for the whole assignment. Credit the defender whose sound job allowed someone else to make the play.]
+
+##### Special teams
+
+[Assess the kicking units as football units: snap/hold/protection, kick instruction and placement, releases, coverage lanes, blocks, return decisions and the resulting field position. Distinguish specialist execution from the protection or coverage around him. Name reserves whose work mattered. Include actual substitution or emergency-operation findings. A made kick does not prove protection was sound; participation alone does not earn coverage credit.]
+
+#### Communication and game operation
+
+[Explain whether the team could get the call from the sideline into the huddle, make its shared declarations and get the correct people aligned before the snap. Use specific recorded examples of protection agreement, coverage exchanges, substitutions, tempo, clock handling or a replacement taking over communication. Describe what held together and what needed rescue, including timeout or play-menu costs when established. Account for coach-to-player communication as well as player-to-player communication.]
+
+[Do not label every bust a communication problem. Distinguish a call not received, conflicting instructions, a correctly understood job executed poorly and a cause that is still unclear. A clean penalty line or a win does not establish clean communication. If only one unit has usable evidence, state that limit once and assess that unit without awarding the whole team a communication verdict.]
+
+#### Players who stood out and questions still open
+
+[Use named paragraphs with the [player-assessment method](training_camp_and_preseason/player_assessment.md). State what the player did well, what he did poorly where supported, and what that means for his particular job. Include meaningful contrary evidence in the same assessment. Connect the game to the question from preparation or earlier games: was it answered, partly answered, contradicted or never tested? Show how an error or successful technique held up on another opportunity when recorded. Do not merely repeat the scoring plays or the unit section.]
+
+[Give the reader the distinction that matters: dependable work, a useful performance earning another look, a recurring limitation, or an unresolved comparison. Those are judgments to express in normal prose, not mandatory labels or grades. A receiver can help through spacing or blocking without a catch; a defensive back can execute his coverage without a target. Credit those jobs only with actual evidence. A productive reserve with a narrower menu has established something useful within that menu, not mastery of the entire offense. Playing little, being medically limited or never encountering the planned test is not failure.]
+
+#### Stone's decisions and the next practice
+
+[Record consequential choices Stone actually made, why the recorded football problem prompted them and what happened afterward. Separate the choice from its execution. Consider the staff's teaching, call, personnel support and sideline operation alongside the players. Do not rewrite Stone's intentions from the final score or invent a private reaction.]
+
+[Give each material correction its responsible coach and next useful opportunity: film/meeting clarification, a technique period, a combination rep, a situation or a later game exposure as appropriate. Explain what would count as improvement in that job. Use that season's actual staff; a proposed correction is not a delivered lesson, and a planned retest is not a successful rep. Distinguish a recommendation for different work from Stone's actual role decision. Link any actual role or availability change to its owner. Keep recorded postgame media in section 5, in Stone's established voice; do not manufacture quotes in a retrospective rewrite. Identify the next work or consequential choice; section 6 carries those priorities forward without repeating the assessment.]
+
+#### Box score
 
 <!-- box-score event=[EVENT_ID] team=[Your team] -->
 <!-- /box-score -->
 
-[Filled by `scripts/render_box_score.py --write`; see the box-score presentation rule.]
+[Filled by `scripts/render_box_score.py --season YEAR --write`; see the box-score presentation rule.]
 
 **Standout performances**
 - [Player]: [Specific football evidence and relevant statistics.]

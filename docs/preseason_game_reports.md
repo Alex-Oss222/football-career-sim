@@ -1,6 +1,8 @@
 # Preseason games: the story and the coaching review
 
-Prepared October 1, 2026 from the user's follow-up about player performance, team execution and communication. The [game template](../foundation/templates/training_camp_and_preseason/preseason_game_report.md) now gives those subjects their own space. The [worked extract](examples/preseason_game_review_2013_miami.md) shows the voice using an already played branch game. This is report design; the 2014 career remains at July 29 with no preseason result.
+Prepared October 1, 2026 from the user's follow-up about player performance, team execution and communication. The [game template](../foundation/templates/preseason_output_template.md) now gives those subjects their own space. The [worked extract](examples/preseason_game_review_2013_miami.md) shows the voice using an already played branch game. This is report design; the 2014 career remains at July 29 with no preseason result.
+
+The user's subsequent layout correction is implemented in two full templates: [regular season and postseason](../foundation/templates/regular_season_output_template.md), renamed from the original game-output template, and [preseason](../foundation/templates/preseason_output_template.md). Both preserve all eight original major sections and put the complete Report to render directly beneath the game narrative in section 4. The earlier short preseason-game template has been removed.
 
 ## What the research actually shows
 
@@ -38,7 +40,7 @@ Stone's physical standard means he wants the assigned block sustained, the defen
 
 ## What the user will read in chat
 
-The reusable headings are: what the staff wanted to see; how the game unfolded; how the offense, defense and special teams played; communication and game operation; players who stood out and questions still open; Stone's decisions and the next practice; the full generated box score.
+The complete output retains coach status, preparation, pregame media, game, postgame media, coaching takeaways, personnel/availability and closure. Inside the game section, the narrative is followed immediately by Report to render: what the staff wanted to see; how the game unfolded; how the offense, defense and special teams played; communication and game operation; players who stood out and questions still open; Stone's decisions and the next practice; the full generated box score. The game header supplies the date and score once. The report develops the assessment from the narrative without telling the same game twice.
 
 Write connected prose under those headings. The story names the action that mattered. The unit review explains the relationships. Individual paragraphs deepen a consequential assessment instead of repeating every catch, sack and touchdown. A player's useful work and his limitation can appear together. An established starter receives the same scrutiny as a player trying to make the team. A reserve is neither dismissed for playing late nor promoted because of one highlight.
 
@@ -50,4 +52,4 @@ The assistant reads the game's prepared menu, dated camp questions, actual parti
 
 If the receipt records a sack but no cause, report the sack and the supported consequence. Review the protection, quarterback timing and route answer as open coaching questions; do not invent a missed slide. If the record documents a correct identification and lost leverage, make that distinction plainly. If an archived summary has no defensive detail, it cannot support a claim that the entire secondary communicated cleanly. The worked extract demonstrates that limit without filling it with generic praise.
 
-Store the complete report in the game's existing output owner, with its generated box score and supporting records linked. In the bulk preseason turn, give the [consolidated review](../foundation/templates/training_camp_and_preseason/preseason_review.md) enough team, communication and named-player substance to stand on its own, then link the individual game reports. A table of scores is not the review. Follow-up questions use the saved evidence without changing the game or inventing a new observation.
+Store the complete report in the game's existing output owner, with its generated box score and supporting records linked. A bulk preseason turn uses the same full preseason output template, repeating the game block for each completed game. Use the [consolidated review guide](../foundation/templates/training_camp_and_preseason/preseason_review.md) within section 6 for the assessment across games, keeping team execution, communication and named-player substance. A table of scores is not the review. Follow-up questions use the saved evidence without changing the game or inventing a new observation.

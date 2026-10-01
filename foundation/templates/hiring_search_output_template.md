@@ -1,6 +1,6 @@
 # Hiring-search (candidacy) output template
 
-**Status:** New 2026-09-17, filling a gap the user identified before starting play: Document 3 §10.2 describes what a hiring-search turn must contain, but never had a formal output shape the way the season/offseason turns do. This template is that shape, used only while Stone is a candidate (not yet hired). Once he's hired, `season_output_template.md` and `offseason_output_template.md` take over.
+**Status:** New 2026-09-17, filling a gap the user identified before starting play: Document 3 §10.2 describes what a hiring-search turn must contain, but never had a formal output shape the way the season/offseason turns do. This template is that shape, used only while Stone is a candidate (not yet hired). Once he's hired, `regular_season_output_template.md`, `preseason_output_template.md` and `offseason_output_template.md` take over in their respective phases.
 
 **Input contract (applies to every turn in this project, not just hiring):** there is no form to fill out. Document 1 §6.3/§16 bans closed-choice menus. At each decision point below, the output asks one specific, answerable question — you respond in your own words, and that answer is the input. Nothing is parsed against a rigid schema.
 
