@@ -13,14 +13,15 @@ An evidence-based NFL head-coaching career simulation centered on Alex-Lamar Sto
 - [2013 season](career/2013/README.md): completed season, player sheets, statistics and history.
 - [Career](career/README.md): seasons, coaching profiles and playbooks.
 - [How the folders work](docs/season_structure.md): what lives in a season and what carries to the next.
+- [Report templates](foundation/templates/README.md): training, games, assessments, interviews and the file that owns each completed report.
 
 ## Repository ownership
 
 | Folder | Purpose |
 |---|---|
-| [foundation](foundation/01_Project_Instructions.md) | Stable operating rules, active sourcebook, authority, ledger protocol, engine specification and templates |
+| [foundation](foundation/01_Project_Instructions.md) | Stable operating rules, active sourcebook, authority, event-record protocol, engine specification and templates |
 | [state](state/05_Current_Season_State.md) | Current coach-known register and compact resume snapshot |
-| [career](career/README.md) | Season-specific plans, dated results, ledger and readable current views |
+| [career](career/README.md) | Season-specific plans, dated results, annual event indexes and readable current views |
 | [library](library/2013_jacksonville_master_calendar.md) | Sourced research; each file states its permitted information date |
 | [archive](archive/README.md) | Superseded or quarantined material, excluded from ordinary runtime reads |
 | [docs](docs/update_workflow.md) | File ownership, dependencies and maintenance procedure |

@@ -141,11 +141,12 @@ def validate(root=ROOT):
         errors.append('Invalid annual Player Sheets: ' + str(exc))
 
     try:
-        from scripts.season_handoff import check as check_handoff
+        from scripts.season_handoff import check as check_handoff, repository_opening_errors
         from runtime.seasons import SeasonPaths
         handoff = SeasonPaths(mapping['active_season'], root).record('closeouts/season_handoff.json')
         if handoff.exists():
             errors.extend(check_handoff(root, json.loads(handoff.read_text())))
+        errors.extend(repository_opening_errors(root, mapping['active_season']))
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append('Invalid annual handoff: ' + str(exc))
 

@@ -1,30 +1,33 @@
 # Mandatory minicamp report template
 
-Use with the [report instructions](README.md). This camp uses the same non-contact football limits as Phase Three; mandatory attendance does not make it padded training camp. Check contracts, participation agreements, excused absences and medical instructions. Jacksonville's four unsigned tenders remain outside the 2014 camp under the recorded instruction. Do not infer a holdout or disobedience from absence alone.
+Use the [shared report guidance](README.md). Mandatory attendance does not change the 2014 Phase Three contact limits. Check contracts, participation agreements, excused absences and medical instructions. An absent player is not automatically a holdout or unwilling participant. The adopted agenda may include further installation as well as review.
 
 ## Report to render
 
 # Mandatory minicamp | [Team] | [Season]
 
-**Location:** [Recorded facility or field; do not invent one]  
-**Dates:** [Actual practice dates; physicals and staff handoff identified separately]  
-**Days completed:** [Actual practice days]  
-**Work addressed:** [Retained work, corrections and camp questions addressed]
+**Location:** [Recorded facility or field]
 
-[Lead with what the group could run at the end of spring and the most important remaining football question. Briefly establish the participants and non-contact setting. Physicals and staff-review days are not extra practices.]
+**Dates:** [Practice dates; identify physicals and staff handoff separately]
+
+**Days completed:** [Actual practice days; distinguish practice and walkthrough sessions when recorded]
+
+**Work addressed:** [Retained work, further teaching, corrections and camp questions]
+
+[Lead with the football the group could run at the end of this work and its largest unresolved question. Establish who participated and which non-contact periods supplied the evidence. Explain whether the staff emphasized recall, further installation or a particular situation.]
 
 ## Offense: what held without reminders
 
-[Report recall of formations, substitutions, protection and the actual retained menu. Use the changed personnel, formation or situational work that was run. Explain which OTA corrections survived and which still need coaching; a clean immediate repeat is not a season-long conclusion. Do not impose a no-new-install rule on every club, but respect this camp's authorized agenda.]
+[Describe how the group handled the actual formations, substitutions, protection and taught menu. Connect the quarterback, line, backs and receivers through the work. Explain what earlier OTA observations were confirmed, qualified or still untested. If a reserve replaced a usual partner, show what that changed in the operation. Distinguish getting the answer independently from getting it after a sideline correction.]
 
 ## Defense: assignments and matchups
 
-[Report the actual checks, motion exchanges, help, fit and pressure work. Explain what happened when a usual communicator was absent from the drill. Describe a matchup that needed help if one occurred and the answer the staff actually tried. A legal non-contact rep can reveal a learning issue without proving a physical ceiling.]
+[Explain how the front and coverage stayed connected through the actual checks, motion exchanges, fits and pressure work. Describe a changed communicator, partner or presentation only if it occurred. Show any help the coordinator supplied and the effect observed. State what the unit could execute together, while leaving the physical questions this setting could not answer for camp.]
 
 ## Situations and special teams
 
-[Explain the clock, field-position, red-zone, substitution or kicking situation actually practiced, who handled it and any correction. Do not add a two-minute success, kick distance or clean operation merely because the heading exists.]
+[Explain the objective of the clock, field-position, red-zone, substitution or kicking situation actually run. Could the group receive the call, organize itself and carry it out? Include the staff's operation and the opposing unit's response where recorded. Follow a consequential correction or reliable piece of work across the sessions without creating a result to fill the heading.]
 
 ## Individual summer work and camp questions
 
-[Give the player's observed issue, the summer instruction actually issued and the camp opportunity needed to assess it. Identify untested blocking, rush, tackling or contact-release questions only where relevant. Compare open jobs on the available work; preserve Stone's actual decisions. Distinguish take-home sheets from film delivery, and voluntary summer study from a club-directed session. Finish at the phase's own date, without importing later camp results or unpublished dates.]
+[Separate the summer instruction actually issued from the camp evidence still needed. Carry each consequential question with its source observation, responsible coach and next useful test. Identify an untested physical responsibility, uncertain combination or unfinished correction specifically. Preserve actual role decisions and open comparisons. Distinguish a take-home sheet from delivered film and voluntary player preparation from club-directed work. End at this camp's evidence date without importing later results.]

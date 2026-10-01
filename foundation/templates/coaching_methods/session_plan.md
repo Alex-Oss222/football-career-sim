@@ -1,12 +1,12 @@
 # Session script template
 
-Copy into the applicable phase's planning material only when a session is being prepared. Replace placeholders; none below records a completed event. Follow the [workflow](weekly_workflow.md).
+Copy into the applicable phase's planning material only when a session is being prepared. Replace placeholders; none below records a completed event. Use the current season's coaching workflow and [report owner map](../README.md). Save the prepared session inside the applicable `staff_plan.md`, not as another phase report.
 
 | Field | Fill before teaching |
 |---|---|
 | Session / phase / proposed date | Pending calendar verification |
 | Coach and coordinating room | Named owner; resolve shared assignments |
-| Current coach assessment and question | Link [Stone/staff profile](../../../coaching_profiles/README.md); identify what instruction or choice this session can actually illuminate |
+| Current coach assessment and question | Link [Stone/staff profile](../../../career/coaching_profiles/README.md); identify what instruction or choice this session can actually illuminate |
 | Participants | Actual control/eligibility checked; current medical instructions apply |
 | Legal work allowance | Link calendar/readiness rule; permissible speed, contact and coach involvement |
 | Assigned active-book material | Concept/job and source; distinguish assigned from available-to-read |
@@ -29,3 +29,7 @@ After execution, the **output** records date, participants, taught job, actual e
 At handoff, state what this session contributes to the current working profile, including new strengths, no change or unresolved evidence. A correct result, delivered packet or completed session is not an automatic ability upgrade.
 
 Apply the same evidence handoff to the coach: actual contribution, prior interpretation, what changed or stayed uncertain and the next observation. Append to the coach's dated evolution record before revising the current synthesis. Do not infer a teaching breakthrough from the planned drill.
+
+## Carry forward
+
+At a phase or season boundary, identify any unfinished teaching, review, delivery or retest, the coach responsible, the latest source and the next lawful opportunity. Link the continuing task from the season handoff. Preserve its history and recorded status; moving into a new season does not complete it or establish improvement.

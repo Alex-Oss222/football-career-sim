@@ -321,7 +321,7 @@ The existing phase restrictions determine the daily ceiling; coordinators must f
 
 The proposed calendar deliberately leaves review space. A coordinator who asks for an addition must say what it replaces. This is how the staff protects individual work without inventing extra sessions. Weather, medical changes, missing evidence or a newcomer can reduce the scope. They do not create permission for a fifth veteran workout or a hidden weekend practice.
 
-Use the existing [session template](Coaching_Methods/session_template.md) before work, the relevant phase output for actual instruction and observations, the [packet template](../00_Team_Operations/Film/packet_template.md) for a cause review, and the [delivery log](../00_Team_Operations/Film/delivery_log.md) for actual distribution. A script is not a result; a prepared packet is not a receipt; a coach's hypothesis is not a player's statement.
+Use the existing [session template](../../../foundation/templates/coaching_methods/session_plan.md) before work, the relevant phase output for actual instruction and observations, the [packet template](../../../foundation/templates/coaching_methods/film_packet.md) for a cause review, and the [delivery log](../00_Team_Operations/Film/delivery_log.md) for actual distribution. A script is not a result; a prepared packet is not a receipt; a coach's hypothesis is not a player's statement.
 
 At each block handoff, the coordinator should provide Stone:
 

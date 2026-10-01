@@ -47,7 +47,7 @@ class AnnualPlayerSheetTests(unittest.TestCase):
             closeout = SeasonPaths(2014, root).record('closeouts/season_closeout.md')
             closeout.parent.mkdir(parents=True, exist_ok=True)
             closeout.write_text('Season closed\n')
-            self.assertEqual(final_assessment_errors(2014, root), [])
+            self.assertTrue(any('season handoff' in error for error in final_assessment_errors(2014, root)))
 
     def test_qb_sheet_is_position_specific(self):
         checkpoint,players=load_season_players(2013)
@@ -126,6 +126,16 @@ class AnnualPlayerSheetTests(unittest.TestCase):
         checkpoint,reloaded=load_season_players(2013,root)
         self.assertEqual(players,reloaded)
         self.assertIn('January 14, 2014',checkpoint)
+
+    def test_active_season_cannot_hide_an_empty_opening_set(self):
+        root, _ = self.fixture()
+        mapping = root/'docs/repository_map.json'
+        mapping.parent.mkdir(parents=True)
+        mapping.write_text(json.dumps({'active_season': 2014}))
+        errors = repository_profile_errors(root)
+        self.assertTrue(any('opening-card cohort' in error for error in errors))
+        mapping.write_text(json.dumps({'active_season': 2013}))
+        self.assertEqual(repository_profile_errors(root), [])
 
     def test_duplicate_exit_index_paths_are_rejected(self):
         root,_=self.fixture()

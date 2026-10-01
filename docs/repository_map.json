@@ -229,16 +229,16 @@
     "career/2014/05_Regular_Season/Schedule/opponents.md",
     "career/2014/00_Team_Operations/Finances/player_contracts/contract_status.md",
     "career/2014/02_Offseason_Training/README.md",
-    "career/2014/02_Offseason_Training/Coaching_Methods/session_template.md",
+    "foundation/templates/coaching_methods/session_plan.md",
     "career/2014/02_Offseason_Training/Coaching_Methods/unit_plans.md",
     "career/2014/02_Offseason_Training/Coaching_Methods/weekly_workflow.md",
     "career/2014/00_Team_Operations/Player_Development/README.md",
     "career/2014/00_Team_Operations/Player_Development/kirk_cousins.md",
-    "career/2014/00_Team_Operations/Player_Development/player_plan_template.md",
+    "foundation/templates/coaching_methods/player_development_plan.md",
     "career/2014/00_Team_Operations/Film/README.md",
     "career/2014/00_Team_Operations/Film/delivery_log.md",
     "career/2014/00_Team_Operations/Film/kirk_cousins_2013_review.md",
-    "career/2014/00_Team_Operations/Film/packet_template.md",
+    "foundation/templates/coaching_methods/film_packet.md",
     "career/2014/00_Team_Operations/Film/player_queue.md",
     "career/2014/00_Team_Operations/Player_Development/roster_profiles.md",
     "library/2014_full_calendar_verification.md",
@@ -325,7 +325,11 @@
     "career/2014/02_Offseason_Training/Phase_One/staff_plan.md",
     "career/2014/02_Offseason_Training/Phase_One/training_report.md",
     "career/2014/02_Offseason_Training/Phase_Two/staff_plan.md",
-    "career/2014/02_Offseason_Training/Phase_Two/training_report.md"
+    "career/2014/02_Offseason_Training/Phase_Two/training_report.md",
+    "foundation/templates/README.md",
+    "foundation/templates/season_review/README.md",
+    "foundation/templates/season_review/exit_interview.md",
+    "foundation/templates/season_review/season_review.md"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",
@@ -800,6 +804,12 @@
     "career/2014/training_camp_and_preseason/training_camp/player_assessments.md": "career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md",
     "career/2014/04_Training_Camp_and_Preseason/Training_Camp/position_review.md": "career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md",
     "career/2014/training_camp_and_preseason/assessments/position_battles.md": "career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md",
-    "career/2014/04_Training_Camp_and_Preseason/Training_Camp/player_assessments.md": "career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md"
+    "career/2014/04_Training_Camp_and_Preseason/Training_Camp/player_assessments.md": "career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md",
+    "career/2014/02_Offseason_Training/Coaching_Methods/session_template.md": "foundation/templates/coaching_methods/session_plan.md",
+    "career/2014/00_Team_Operations/Player_Development/player_plan_template.md": "foundation/templates/coaching_methods/player_development_plan.md",
+    "career/2014/00_Team_Operations/Film/packet_template.md": "foundation/templates/coaching_methods/film_packet.md",
+    "career/2014/offseason_training/coaching_methods/session_template.md": "foundation/templates/coaching_methods/session_plan.md",
+    "career/2014/team/player_development/player_plan_template.md": "foundation/templates/coaching_methods/player_development_plan.md",
+    "career/2014/team/film/packet_template.md": "foundation/templates/coaching_methods/film_packet.md"
   }
 }

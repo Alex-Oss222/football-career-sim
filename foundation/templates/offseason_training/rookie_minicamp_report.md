@@ -1,30 +1,33 @@
 # Rookie minicamp report template
 
-Use with the [report instructions](README.md). Verify the actual dates, eligible/invited group and medical instructions. Do not borrow veterans to complete a drill or assume every first-year player attended. In 2014 minicamps have no live contact or pads; the actual phase plan and recorded practice determine whether any permitted team work occurred. Jacksonville's closed May 16 and 17 camp used unopposed teaching, not a veteran-versus-rookie contest.
+Use the [shared report guidance](README.md). Verify the actual invited and eligible group, practice format and participation instructions. The 2014 minicamp rules prohibit pads and live contact; the club's actual plan determines the work within those limits. An unopposed camp is a club choice, not the definition of every rookie minicamp.
 
 ## Report to render
 
 # Rookie minicamp | [Team] | [Season]
 
-**Location:** [Recorded facility or field; do not invent one]  
-**Dates:** [Actual practice dates]  
-**Days completed:** [Actual practice days]  
-**Work addressed:** [Introductory assignments and teaching priorities addressed]
+**Location:** [Recorded facility or field]
 
-[Identify the actual group and the staff's first supported impression of its work. Explain how much was introductory and what the limited setting can show. No draft-rank summary or future-career comparison.]
+**Dates:** [Actual practice dates]
+
+**Days completed:** [Actual practice days; distinguish multiple sessions when recorded]
+
+**Work addressed:** [Initial positions, assignments and teaching priorities]
+
+[Identify the participants: drafted players, signed free agents, eligible first-year players or tryouts only as actually present. Describe the practice work and the staff's first supported impression. Explain the initial positions and scope of teaching rather than assuming every player was asked to learn every role.]
 
 ## First offensive install
 
-[Show the newcomers learning the huddle, cadence, position labels, formation/split rules and small assigned play menu. Describe an actual alignment, route landmark, exchange, protection call or footwork sequence. Who could repeat it after a correction or changed presentation? Keep the entire playbook's availability separate from the assigned work.]
+[Show how the newcomers handled the huddle, cadence, position labels, formations and assigned menu. Connect the quarterback's operation to the snap, protection call, back's responsibility and receiver landmark where the recorded work permits. Identify useful movement or technique observations and the actual instruction that followed. Describe a later response without turning quick recall into full offensive readiness.]
 
 ## First defensive install
 
-[Show the taught front, fit, leverage, help and communication jobs. Explain a player's execution or a shared teaching problem in plain language. State whether the later rep answered it. A bag drill or a walkthrough cannot prove tackling, pass rush or coverage against veterans.]
+[Explain the front, fit, leverage, help and communication jobs actually taught, and how the available players carried them together. Describe an individual technique or shared teaching problem through the work. State whether a later opportunity clarified it. Bags, cards or walkthroughs do not prove tackling, pass rush or coverage against veterans.]
 
 ## Special teams and individual work
 
-[Explain the actual snap, ball-handling, lane, alignment or substitution work and why it matters for these players. Name available partners; missing specialists limit what can be practiced. Include position technique work and communicated restrictions that changed the session.]
+[Explain the snap, ball-handling, lane, alignment or substitution work and why it matters for these newcomers. Name available partners and describe the actual operation. Include consequential individual technique or conditioning observations; keep restrictions separate from football conclusions. A limited group may not be able to practice every specialist or unit task.]
 
-## What each newcomer takes into the next practice
+## What the newcomers take into the next practice
 
-[Use a compact table if helpful: player, observed work, next coaching point. The opening annual assessment stays on the player's existing card; this report owns these coaching observations, not a new full assessment. Recognize correct work without manufacturing a setback. Finish with the next lawful integration opportunity and any unresolved roster decision, without awarding jobs from a short introductory camp.]
+[Identify what the short camp established, what remains uncertain and the next lawful integration with the larger group. Name the responsible coach and link the observation behind each consequential follow-up. Use a compact player table when it clarifies several different tasks; preserve the other recorded individual observations in the same report's dated detail without repeating the entire roster in the opening account. Separate a tryout recommendation from an actual contract decision, and introductory progress from an awarded job.]
