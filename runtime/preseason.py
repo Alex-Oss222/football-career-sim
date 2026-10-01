@@ -19,6 +19,14 @@ regular-season game does (runtime.game_runner.run_game, kernel
 - Availability: a player injured in an earlier closed preseason receipt
   stays out until his projected return, by the rule every club gets; a
   Jacksonville roster hold clears by its own note (runtime.week_inputs).
+- Rotation (runtime/rotation.py): Jacksonville's unit rotation comes from
+  `Game_0N/rotation.json` ({"rotation_plan": [blocks...]}) when Stone froze
+  one; the opponent's from a `rotation` key in `opponent_roster.json`. A
+  club without a plan gets the kernel's documented default (starters through
+  the first quarter and the first possession of the second, the second unit
+  through the third quarter, reserves after) from its depth order. A plan
+  naming a player off the game-day unit or an unknown group fails closed
+  here, before the package is frozen.
 - Receipts go to `SeasonPaths.preseason_receipts`, never the regular-season
   receipt set, so standings, the statbook, awards and the draft order never
   read them.
@@ -26,7 +34,8 @@ regular-season game does (runtime.game_runner.run_game, kernel
 import json
 from datetime import date, timedelta
 
-from . import call_families, depth_library, player_bios, strength
+from . import call_families, depth_library, player_bios, rotation, strength
+from .player_evidence import normalize_players
 from .rules import PRESEASON
 from .seasons import SeasonPaths, require_receipt_season
 from .usage import group
@@ -93,6 +102,23 @@ def injured_out(receipts, game_day, paths):
     return out
 
 
+def rotation_blocks(plan, data, source):
+    """Validate a rotation plan against the game-day unit; returns the
+    entries to freeze on the TeamInput (every block must name dressed players
+    of the named group; an unknown group or side fails closed)."""
+    if not isinstance(plan, list) or not all(isinstance(e, dict) for e in plan):
+        raise ValueError("%s: rotation_plan must be a list of blocks" % source)
+    from .kernel import TeamInput
+    team = TeamInput(data["team_id"], tuple(data["active_players"]), roster=tuple(data["roster"]),
+                     rotation_plan=tuple(plan))
+    errors = rotation.plan_errors(team, normalize_players(team), PRESEASON)
+    if errors:
+        raise ValueError("%s: " % source + "; ".join(errors))
+    if not any(rotation.is_block(e) for e in plan):
+        raise ValueError("%s: no rotation block found" % source)
+    return list(plan)
+
+
 def depth_chart_path(paths, game):
     frozen = paths.preseason_folder(game) / "depth_chart.json"
     if frozen.exists():
@@ -132,8 +158,15 @@ def jacksonville_input(paths, game, call_sheet, receipts, anchors=AVERAGE_ANCHOR
     if unknown:
         raise ValueError("game_day_inactives names players not on the roster: " + ", ".join(unknown))
     active = [p["player_id"] for p in roster if p["available"] and p["player_id"] not in inactives]
-    return {"team_id": PROTAGONIST, "active_players": active, **anchors,
+    data = {"team_id": PROTAGONIST, "active_players": active, **anchors,
             "roster": roster, "offensive_call_sheet": list(call_sheet)}
+    plan_path = paths.preseason_folder(game["game"]) / "rotation.json"
+    if plan_path.exists():
+        plan = json.loads(plan_path.read_text(encoding="utf-8"))
+        if not isinstance(plan, dict) or "rotation_plan" not in plan:
+            raise ValueError("%s must hold {\"rotation_plan\": [...]}" % plan_path.relative_to(paths.root))
+        data["rotation_plan"] = rotation_blocks(plan["rotation_plan"], data, plan_path.relative_to(paths.root))
+    return data
 
 
 def opponent_input(paths, game, receipts, anchors=AVERAGE_ANCHORS):
@@ -150,6 +183,8 @@ def opponent_input(paths, game, receipts, anchors=AVERAGE_ANCHORS):
         if player["player_id"] in out:
             player["available"] = False
     data["active_players"] = [p["player_id"] for p in data["roster"] if p["available"]]
+    if "rotation" in club:
+        data["rotation_plan"] = rotation_blocks(club["rotation"], data, "%s rotation" % path.relative_to(paths.root))
     return data
 
 
@@ -176,11 +211,14 @@ def build_package(paths, number, receipts, anchors=AVERAGE_ANCHORS, *, with_ages
 
     row = {
         "event_id": event_id(game, paths.year), "receipt": receipt_name(game), "week": number,
+        "rotation_basis": {},
         "preseason_game": number, "date": game["date"], "kickoff_et": game.get("kickoff_et"),
         "away": game["away"], "home": game["home"],
         "venue": "neutral" if game.get("site") == "neutral" else "home", "game_type": PRESEASON,
         "away_input": unit(game["away"]), "home_input": unit(game["home"]),
     }
+    for side in ("away_input", "home_input"):
+        row["rotation_basis"][row[side]["team_id"]] = "plan" if row[side].get("rotation_plan") else "default"
     if with_ages:
         row["player_ages"] = player_bios.biographies(
             [p["player_id"] for side in ("away_input", "home_input") for p in row[side]["roster"]], game_day)

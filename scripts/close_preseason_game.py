@@ -7,9 +7,12 @@
 
 Mirrors scripts/close_week.py for one dated preseason fixture
 (career/YEAR/04_Training_Camp_and_Preseason/Preseason_Games/fixtures.json). Jacksonville's TeamInput is
-built from the current roster, the game's frozen depth chart and
-Game_0N/call_sheet.json; the opponent's from Game_0N/opponent_roster.json
-(runtime/preseason.py documents both files). The two-club package is frozen
+built from the current roster, the game's frozen depth chart,
+Game_0N/call_sheet.json and, when Stone froze one, Game_0N/rotation.json
+(the unit rotation, runtime/rotation.py); the opponent's from
+Game_0N/opponent_roster.json, with its optional "rotation" key. A club
+without a plan rotates by the kernel's documented preseason default
+(runtime/preseason.py documents the files). The two-club package is frozen
 to .sim_cache/YEAR/preseason_0N_inputs.json, gated by the TeamInput
 exclusivity check, and closed exactly once through the private Engine State
 service with the fixture's own event id, Jacksonville user controlled (kernel
@@ -230,8 +233,10 @@ def main():
     digest = hashlib.sha256(package_path.read_bytes()).hexdigest()
     game = the_game(package)
     if not args.close:
-        print("PRESEASON_INPUTS: READY  game %d, %s at %s, %s; sha256 %s\nDry run: add --close to close it."
-              % (args.game, game["away"], game["home"], game["date"], digest))
+        basis = game.get("rotation_basis") or {}
+        print("PRESEASON_INPUTS: READY  game %d, %s at %s, %s; sha256 %s\nRotation: %s\nDry run: add --close to close it."
+              % (args.game, game["away"], game["home"], game["date"], digest,
+                 "; ".join("%s %s" % (team, basis[team]) for team in sorted(basis)) or "default for both clubs"))
         return 0
     answer = load_answer(args.answer) if args.answer else None
     readiness = subprocess.run([sys.executable, str(ROOT / "scripts/check_game_readiness.py"), "--season", str(args.season)],
