@@ -125,6 +125,10 @@ Twenty-five offensive snaps with Wilson, Bray and Shaw: three carries for 18, th
 
 Source: [preseason game 2 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_02/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### August 18, 2014 | Released from the independent medical hold
+
+Reassessed August 15 with no change, released by the independent medical process August 18, his projected date, under the record's method, and back in the work from that day: the complete assignment in the developmental backfields with Wilson's, Bray's and Shaw's groups in the August 18 and 19 padded practices, the August 20 session and the August 21 walkthrough, assignment-correct on the recorded reps with no communicated limitation. By the condition in Stone's Detroit plan (cleared early enough to practice normally) he reenters the developmental rotation for August 22; no role attaches and no football finding attaches to the hold. Source: [medical record](../../Medical/incidents/richard_murphy_2014-08-14.md); [camp record](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md#august-15-to-21-the-chicago-review-and-the-detroit-preparation). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

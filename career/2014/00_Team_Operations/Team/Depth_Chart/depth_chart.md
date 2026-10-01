@@ -32,7 +32,7 @@
 | 1 | Maurice Jones-Drew | Under contract through 2015 (re-signed March 28) | Lead back | No communicated restriction |
 | 2 | Jonathan Grimes | Under contract through 2014 | RB2 | No communicated restriction |
 | 3 | C.J. Anderson | Under contract | RB3; coverage units | No communicated restriction |
-| Added, not placed | Richard Murphy | Reserve/future (effective March 11) | None assigned | Independent medical hold from the August 14 preseason game (head/neck, minor; projected return August 18, reassessment August 15) |
+| Added, not placed | Richard Murphy | Reserve/future (effective March 11) | None assigned | No communicated restriction (independent medical hold from the August 14 preseason game, head/neck, minor, released August 18 on his projected date; reassessed August 15 with no change) |
 
 ### Fullback (FB)
 
@@ -50,7 +50,7 @@
 | 4 | Toney Clemons | Tendered ERFA (unsigned) | WR4 | No communicated restriction |
 | 5 | Mike Brown | Tendered ERFA (unsigned) | WR5 | No communicated restriction |
 | Added, not placed | Andrew Hawkins | Signed March 18, 2014 (four years) | None assigned; the named competition for WR3 | No communicated restriction |
-| Added, not placed | Jerrell Jackson | Reserve/future (effective March 11) | None assigned | Out, multi-week, from the August 14 preseason game (lower extremity; projected return October 9, reassessment August 21); roster disposition pending |
+| Added, not placed | Jerrell Jackson | Reserve/future (effective March 11) | None assigned | Out, multi-week, from the August 14 preseason game (lower extremity; projected return October 9; reassessed August 21 with no change); roster disposition pending |
 | Added, not placed | Allen Hurns | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
 | Added, not placed | Taylor Gabriel | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
 
@@ -60,7 +60,7 @@
 |---:|---|---|---|---|
 | 1 | Marcedes Lewis | Under contract | Lead TE | No communicated restriction |
 | 2 | Travis Kelce | Under contract | TE2 | No communicated restriction |
-| Added, not placed | Cameron Brate | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | Out, long term, from the August 8 preseason game (lower extremity; projected return January 15, 2015, reassessment August 15); roster disposition pending |
+| Added, not placed | Cameron Brate | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | Out, long term, from the August 8 preseason game (lower extremity; projected return January 15, 2015; reassessed August 15 with no change); roster disposition pending |
 | Added, not placed | Marcel Jensen | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
 | Added, not placed | Gator Hoskins | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
 
@@ -74,7 +74,7 @@ The kernel group is one OL list. Brad Meester (C) is removed: he retired, and hi
 | 2 | Joel Bitonio | OT | Rookie contract through 2017 (No. 26, signed May 11) | None (2014 rookie); left guard rep starting point from May 12, 2014 (guard first; Norwell the competition) | No communicated restriction |
 | 3 | Mike Brewster | C | Under contract | Starting center (confirmed Week 6) | No communicated restriction |
 | 4 | Trai Turner | G | Rookie contract through 2017 (No. 90, signed May 11) | None (2014 rookie); right guard rep starting point from May 12, 2014 (Bitonio or Norwell if he struggles) | No communicated restriction |
-| 5 | Lane Johnson | OT | Under contract | Starting right tackle | Trunk injury August 8 (out, projected return August 14); cleared August 14 on his projected date; inactive at Chicago by Stone's one-game decision (Lucas the one-game right tackle); no communicated restriction |
+| 5 | Lane Johnson | OT | Under contract | Starting right tackle | Trunk injury August 8 (out, projected return August 14); cleared August 14 on his projected date; inactive at Chicago by Stone's one-game decision (Lucas the one-game right tackle); no communicated restriction; worked August 15 to 21 in full and returns to the first group for August 22 by Stone's Detroit plan |
 | 6 | Cameron Bradfield | OT | Tendered RFA (unsigned) | Swing tackle; sixth OL in 6OL | No communicated restriction |
 | 7 | Austin Pasztor | G | Tendered ERFA (unsigned) | Game-day interior OL reserve (from Week 10) | No communicated restriction |
 | 8 | Mark Asper | G | Under contract | Interior OL depth (game-day inactive Weeks 10-17) | No communicated restriction |
@@ -192,6 +192,7 @@ Add a row for every signing, tag, tender, trade, release, retirement, draft pick
 | May 12, 2014 | Rackley traded to Seattle | [May 11–12 Rackley and Ball decisions](../../../Record.md) | Rackley (OL 3, starting right guard) removed; Johnson, Bradfield, Pasztor and Asper move up without a reorder. The starting right guard role is open for Stone; no Stone role decision |
 | May 12, 2014 (recorded May 23) | Stone's starting roles entering OTAs; rookie minicamp and Phase Two closed | [May 12–23 spring record](../../../Record.md) | Rep starting points, not awards: Nicks placed WR 1 (Adams the competition) and Adams WR 3 (Hawkins the competition), so Thielen is WR 2 and Clemons and Brown move to WR 4 and 5 without a reorder; Bitonio placed OL 2 at left guard (Norwell the competition) and Turner OL 4 at right guard (Bitonio or Norwell if Turner struggles), the line reading Monroe, Bitonio, Brewster, Turner, Johnson, then Bradfield, Pasztor, Asper; Mincey holds Edge 1 (Branch the competition) with no DL reorder. Hawkins, Norwell and every other added player stay unplaced. The May 16 and 17 rookie minicamp and Phase Two through May 23 changed no order and no availability |
 | August 8 to 14, 2014 (recorded August 14) | Preseason games 1 and 2: availability notes | [Preseason game 1](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_01/output.md) and [game 2](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_02/output.md) outputs; [medical history](../../Medical/medical_history.md) | No order change and no Stone depth decision. Availability notes only: Brate out long term (August 8); Johnson out August 8 to 14 and cleared on his projected date, inactive at Chicago by Stone's one-game decision with Lucas the one-game right tackle (not a chart change); Jackson out multi-week and Murphy on an independent medical hold (August 14). Anderson's August 8 injury cleared August 11. Jackson's and Brate's roster dispositions are pending with Caldwell |
+| August 15 to 21, 2014 (recorded August 21) | Detroit preparation: availability notes | [Camp record](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md#august-15-to-21-the-chicago-review-and-the-detroit-preparation); [medical history](../../Medical/medical_history.md#august-15-to-21-reassessments-and-murphys-release) | No order change and no Stone depth decision. Availability notes only: Murphy released August 18 on his projected date and available; Jackson's August 21 and Brate's August 15 reassessments unchanged; Johnson's return to the first-group right tackle for August 22 is a game-plan freeze in the [Game_03 inputs](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_03/README.md), not a chart change |
 
 ## Maintaining the game-input copy
 

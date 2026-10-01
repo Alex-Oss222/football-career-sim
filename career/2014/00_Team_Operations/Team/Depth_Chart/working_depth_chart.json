@@ -182,10 +182,10 @@
     "Casey Kreiter": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)"
   },
   "availability_notes": {
-    "Lane Johnson": "Trunk injury August 8 (out, projected return August 14); cleared August 14 on his projected date; inactive at Chicago by Stone's one-game decision; no communicated restriction",
-    "Cameron Brate": "Out, long term, from the August 8 preseason game (lower extremity; projected return January 15, 2015, reassessment August 15); roster disposition pending",
-    "Jerrell Jackson": "Out, multi-week, from the August 14 preseason game (lower extremity; projected return October 9, reassessment August 21); roster disposition pending",
-    "Richard Murphy": "Independent medical hold from the August 14 preseason game (head/neck, minor; projected return August 18, reassessment August 15)"
+    "Lane Johnson": "Trunk injury August 8 (out, projected return August 14); cleared August 14 on his projected date; inactive at Chicago by Stone's one-game decision; no communicated restriction; worked August 15 to 21 in full and returns to the first group for August 22 by Stone's Detroit plan",
+    "Cameron Brate": "Out, long term, from the August 8 preseason game (lower extremity; projected return January 15, 2015, reassessed August 15 with no change); roster disposition pending",
+    "Jerrell Jackson": "Out, multi-week, from the August 14 preseason game (lower extremity; projected return October 9, reassessed August 21 with no change); roster disposition pending",
+    "Richard Murphy": "No communicated restriction (independent medical hold from the August 14 preseason game, head/neck, minor, released August 18 on his projected date; reassessed August 15 with no change)"
   },
   "removed_from_2013_chart": {
     "Brad Meester": "Retired; contract expired March 11, 2014 (Entries 79 and 94)",
@@ -316,6 +316,12 @@
       "event": "Preseason games 1 and 2: availability notes",
       "ledger_entry": "2014-08-08-preseason-game-1-tampa-bay-at-jacksonville; 2014-08-14-preseason-game-2-jacksonville-at-chicago",
       "change": "No order change and no Stone depth decision. Availability notes only: Brate out long term (August 8); Johnson out August 8 to 14 and cleared on his projected date, inactive at Chicago by Stone's one-game decision with Lucas the one-game right tackle (not a chart change); Jackson out multi-week and Murphy on an independent medical hold (August 14). Anderson's August 8 injury cleared August 11."
+    },
+    {
+      "date": "August 15 to 21, 2014 (recorded August 21)",
+      "event": "Detroit preparation: availability notes",
+      "ledger_entry": "2014-08-21-detroit-preparation-closed; 2014-08-18-murphy-released",
+      "change": "No order change and no Stone depth decision. Availability notes only: Murphy released August 18 on his projected date and available; Jackson's August 21 and Brate's August 15 reassessments unchanged; Johnson's return to the first-group right tackle for August 22 is a game-plan freeze in the Game_03 inputs, not a chart change."
     }
   ],
   "added_not_placed": {
