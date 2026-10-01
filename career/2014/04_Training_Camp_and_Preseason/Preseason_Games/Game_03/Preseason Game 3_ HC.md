@@ -1,1077 +1,1353 @@
 # August 15 to 22, 2014
 
-## Detroit Week: Head Coach Planning Outline
+## Detroit Week: Revised Head Coach Planning Outline
 
-### What I want from this game
+### What changed after Chicago
 
-Game 2 tested individual reserves and rookies.
+Game 2 gave me enough evidence to sharpen what Detroit needs to be.
 
-Game 3 tests **combinations**.
+The original purpose remains:
 
-I want to break up the comfortable practice groups.
+**Game 3 is the combinations game.**
 
-Quarterbacks play with different receivers.
+But I am no longer mixing players simply to see different groups.
 
-Centers work with different guards.
+Every combination now has a reason.
 
-Starting tackles protect for different quarterbacks.
+Chicago established several things:
 
-Tight ends work with different backs.
+- Cousins's offense operated: 14 snaps, 9 of 12, 99 yards, one touchdown, one interception, no sack.
+- Lucas's right-tackle correction held for an entire game. No sack was charged to his slot in 74 offensive snaps.
+- Lane Johnson is now medically available.
+- Bitonio and Norwell both played without a recorded loss in their first-group work.
+- Nicks was the intended receiver on both Jacksonville interceptions, from two different quarterbacks. The record does **not** establish that either interception was his fault.
+- Adams caught all three of his targets and handled both WR1 and WR3 work.
+- Gabriel produced again, including another third-down conversion and the touchdown.
+- Hoskins caught four balls for 65 yards across three quarterbacks.
+- Kelce's repeated attached-blocking question still was not meaningfully tested.
+- Henne's two possessions started at his own 9 and 4, so Chicago gave me almost no useful normal-field evaluation of the backup quarterback.
+- Bray produced the best two-minute developmental possession.
+- Shaw produced another scoring drive but also threw an interception.
+- Leno, Larsen and Feiler were each charged with one sack at three different positions.
+- the reserve defense produced seven sacks for a second consecutive game.
+- the starting defense's only possession allowed 80 yards, mostly on the ground.
+- the final reserve group allowed a 76-yard touchdown on the second overtime snap.
+- Scobee went 1 of 4, including two misses from 43, with no operation fault recorded by the game book.
+- both long snappers remained clean.
+- Hawkins again handled every recorded return without a ball-security fault.
+- Jerrell Jackson is out.
+- Richard Murphy is under independent medical control.
 
-On defense, veteran communication players work with young fronts, young linebackers work with veteran defensive linemen, and defensive backs have to communicate with different safeties and nickel personnel.
+So Detroit is not a random chemistry exercise.
 
-The question is no longer:
-
-**Can this player execute his assignment?**
-
-It is:
-
-**Can he execute his assignment when the ten people around him change?**
-
-That matters because the regular season will not preserve our preferred eleven.
-
-Someone gets hurt.
-
-Someone comes out for a package.
-
-A receiver needs a breather.
-
-A guard goes down.
-
-We go nickel.
-
-We move a safety.
-
-The next man cannot require a different offense or defense.
+It is an **interoperability and isolation test**.
 
 ---
 
 # Game 3 operating rule
 
-I want a **stable spine with controlled variables**.
+I want a stable spine and one controlled problem at a time.
 
-I do not want eleven new players every possession. That produces noise instead of evaluation.
+Do not replace five players and then ask me why the play failed.
 
-Each group keeps several constants while we change two or three pieces.
+Change:
 
-Example:
+- one tackle;
+- or one center;
+- or two receivers;
+- or the back;
+- or the communicator.
 
-- same quarterback;
-- same center;
-- same tackles;
-- different receiver trio;
-- different second tight end;
-- different back.
+Then run the offense or defense normally.
 
-Then change another variable on the next possession.
-
-That lets me know what actually changed.
+If we know what changed, we can actually learn from the result.
 
 ---
 
-# Quarterback plan
+# Right tackle decision
 
-## Kirk Cousins
+Lane Johnson returns to the starting right-tackle position for Detroit.
 
-Cousins starts.
+He has been medically cleared.
 
-I want roughly three possessions, subject to drive length.
+That is not a judgment against Lucas.
 
-Unlike Game 1, he does not get the same skill group every series.
+Lucas did exactly what I asked in Chicago.
 
-### Cousins Group A: normal reference group
+Now I want both pieces of information:
 
-- Nicks
-- Thielen
-- Adams
-- Lewis
-- Jones-Drew
+1. Can Johnson return and operate normally?
+2. Does Lucas's correction survive when he is no longer playing every snap?
 
-This is my control group.
+## Johnson workload
 
-One possession.
+Johnson starts with Cousins.
 
-I need a reference before I start moving pieces.
+He plays the opening reference possession.
 
-### Cousins Group B: receiver variation
+If his operation is clean and there is no medical restriction, he can remain through Cousins's second possession.
 
-Keep the offensive-line spine.
+I do not need him playing deep into the game.
 
-Change the skill group:
+## Lucas workload
 
+Lucas gets a mixed-unit possession with Cousins or Henne beside a stable right guard.
+
+I specifically want normal HALF protection, not nothing but quick throws and boots.
+
+Chicago told me he could play the position for a full night.
+
+Detroit asks whether he can enter as a replacement and immediately function.
+
+That is a different job.
+
+---
+
+# Quarterback structure
+
+## Kirk Cousins: three combinations
+
+Cousins gets roughly three possessions, subject to drive length.
+
+His evaluation is no longer whether he can operate the starting offense.
+
+Chicago answered that.
+
+Now I want to know whether he can keep the offense intact while the pieces change.
+
+---
+
+# Cousins Group A: reference group
+
+Start as close to the current first offense as possible.
+
+- QB Cousins
+- RB Jones-Drew
+- X Nicks
+- H Thielen
+- Z Adams
+- TE Lewis
+- Kelce by package
+- LT Monroe
+- LG Bitonio
+- C Brewster
+- RG Turner
+- RT Johnson
+
+This is my reference.
+
+One normal possession.
+
+No forced target.
+
+No manufactured competition rep.
+
+Run the offense.
+
+---
+
+# Cousins Group B: young skill group
+
+Keep enough protection structure to make the receiver test meaningful.
+
+- Cousins
+- Anderson
 - Adams at X
 - Hawkins inside
-- Hurns or Gabriel opposite
-- Kelce at Y
-- Grimes at back
-
-Now I want to know whether Kirk's operation changes.
-
-I am looking at:
-
-- formation communication;
-- receiver split;
-- route timing;
-- trust on option/leverage decisions;
-- protection communication with a different back;
-- whether the younger receivers play at Kirk's tempo.
-
-### Cousins Group C: formation-changing personnel
-
-Use 12 personnel.
-
-- Lewis
+- Gabriel opposite
 - Kelce
-- two receivers from the active rotation
-- different back from Group B
+- Hoskins in 12 personnel where called
+- Monroe
+- Norwell
+- Brewster
+- Turner
+- Lucas at RT
 
-We HOLD the personnel and change the formation.
+This is one of the most important groups in the game.
 
-Ace.
+I am putting together several players who have produced individually.
 
-Trey.
+Now I want to see if they can operate together at Cousins's pace.
 
-Wing.
+### What I am testing
 
-Shift toward Empty.
+Adams:
+- outside release;
+- timing as X;
+- adjustment with a different WR group.
 
-I want Kirk running the same system when the people around him are moving jobs.
+Hawkins:
+- slot communication;
+- motion;
+- spacing relative to Gabriel and Adams.
 
-Then he is done.
+Gabriel:
+- can the third-down production survive against better defensive personnel and with QB1?
 
-I do not need Cousins winning the third preseason game for me.
+Anderson:
+- protection first.
+- receiving responsibility.
+- not another night built around proving he can run zone.
 
-I need information.
+Kelce/Hoskins:
+- can the tight-end structure survive when Lewis leaves?
+
+Lucas:
+- can he enter beside Turner and protect without the whole offense changing?
+
+---
+
+# Cousins Group C: contingency offense
+
+Now change the interior.
+
+- Cousins
+- Grimes
+- Nicks
+- Hawkins
+- Hurns
+- Lewis or Kelce
+- Monroe
+- Norwell or Bitonio
+- Linsley
+- Turner
+- Johnson/Lucas according to workload
+
+This is the "Wednesday injury" offense.
+
+I want Cousins operating with:
+
+- a different center;
+- a different back;
+- a different receiver combination.
+
+The playbook does not shrink.
+
+The communication gets more important.
+
+Then Cousins is done.
+
+---
+
+# Nicks and the interceptions
+
+I am not demoting Nicks because two passes intended for him were intercepted.
+
+The game book does not establish whether either interception was:
+
+- the route;
+- the quarterback's read;
+- leverage;
+- timing;
+- or simply a defender making a play.
+
+The film review must answer each one separately.
+
+Then we retest the exact responsibility.
+
+### Detroit rule
+
+Nicks works with Cousins in the reference group.
+
+He also gets one Henne possession.
+
+That matters.
+
+If the route timing is the issue, I want to know whether the problem follows the receiver or changes with the quarterback.
+
+If the quarterback decision was wrong, I want that corrected too.
+
+No scripted target.
+
+The concept creates the throw.
 
 ---
 
 # Chad Henne
 
-Henne gets his own mixed block.
+Chicago did not give me a fair normal-field test.
 
-The most important part is that he gets meaningful work with players who normally work with Cousins.
+His possessions began at the 9 and the 4.
 
-If Cousins misses a regular-season series, I cannot discover then that Henne and the first receivers have barely operated together.
+That is backed-up football, not normal QB2 operation.
 
-### Henne Group A: starter-skill contingency
+So Henne gets more useful Detroit work.
 
-Give Henne:
+## Henne Group A: starter contingency
 
-- Nicks;
-- Thielen;
-- Adams;
-- Lewis/Kelce rotation;
-- Jones-Drew or Grimes;
-- mostly first-line protection.
+Give him:
 
-This is an injury-contingency unit.
+- Nicks
+- Thielen
+- Adams
+- Lewis/Kelce
+- Grimes or Anderson
+- mostly first-line protection
 
-I want Henne operating the real offense, not a backup-only package.
+I want to know whether Henne can enter with the regular skill group and call the actual offense.
 
-### Henne Group B: mixed young group
+If Cousins misses six snaps in September, this is the group Henne may inherit.
 
-Then change it.
+That cannot be theoretical.
 
-- Adams/Hawkins;
-- Hurns or Gabriel;
-- Kelce;
-- reserve back;
-- at least one younger interior lineman.
+## Henne Group B: mixed group
 
-Now I see whether Henne can stabilize a younger group.
+Then:
 
-Two to three possessions total depending on drive length.
+- Adams/Hawkins
+- Hurns or Gabriel
+- Hoskins
+- reserve back
+- Linsley
+- one reserve guard
+- Lucas at tackle for part of the block
+
+Now Henne becomes the stabilizer.
+
+Two possessions is the normal target.
+
+A third is available if field position in the first two again makes the evaluation useless.
 
 ---
 
 # John Parker Wilson
 
-Wilson gets the next substantial block.
+Wilson remains QB3 entering the week.
 
-His test changes from Game 2.
+Chicago gave him only nine offensive snaps.
 
-I already want to know whether he can run the reserve offense.
+Detroit gives him a cleaner mixed-unit test.
 
-Now I want to know whether he can operate when part of the group around him is better than the rest.
-
-Give him:
+I want:
 
 - one established receiver;
-- two younger receivers;
-- one of Lewis/Kelce only if workload permits;
-- young backs;
-- mixed OL.
+- two young receivers;
+- a functional five-man line;
+- one experienced back or tight end in the protection structure.
 
-Do not give him five backups on the line and five backups at skill and then compare his operation directly to Cousins.
+He gets approximately two possessions.
 
-Give him enough structure that the quarterback can actually be evaluated.
-
----
-
-# Bray and Shaw
-
-Their playing time depends on where the competition stands after Chicago.
-
-There is no obligation to manufacture equal snaps.
-
-If both still require evaluation:
-
-- each gets a fourth-quarter block;
-- each gets a functional five-man line;
-- each gets at least one receiver he has practiced substantially with;
-- both use the same reduced core menu.
-
-If one has clearly moved ahead through actual evidence, the rep distribution can reflect that.
-
-I will not keep an unresolved roster decision unresolved merely to make the snap count look fair.
+I am not giving him an all-reserve offense and pretending that is directly comparable to Henne.
 
 ---
 
-# Offensive line combinations
+# Tyler Bray
 
-This week I care about **adjacency**.
+Bray earned a better test.
 
-An offensive line is not five independent players.
+Chicago gave him:
 
-I need to know which combinations communicate.
+- 7 of 10;
+- 70 yards;
+- a two-minute field-goal drive;
+- one sack.
 
-## First-line spine
+His next question is whether that operation survives with better surrounding players and a different situation.
 
-Monroe and Johnson can anchor portions of the early work.
+He gets at least one possession with a mixed second-unit group containing:
 
-Inside, rotate combinations around Brewster:
+- one established receiver;
+- one of the better reserve tight ends;
+- a functional line combination.
 
-### Combination 1
+Then one developmental possession.
 
-- Bitonio
-- Brewster
-- Turner
+I am not promoting him.
 
-### Combination 2
-
-- Norwell
-- Brewster
-- Turner
-
-### Combination 3
-
-- Bitonio
-- Linsley
-- Turner
-
-### Combination 4
-
-- Norwell
-- Linsley
-- Bitonio/Turner depending on the current competition evidence
-
-I am looking at:
-
-- point declaration;
-- combo communication;
-- twist passing;
-- Power pull communication;
-- zone combination;
-- late pressure adjustment.
-
-A guard looking good individually means less to me if he and the center cannot pass a game.
+I am increasing the difficulty of the test.
 
 ---
 
-# Tackle test
+# Connor Shaw
 
-I also want one younger tackle playing beside otherwise stronger protection.
+Shaw already has more live preseason work than Bray.
 
-That isolates him.
+He has also produced two touchdown drives in two games.
 
-Do not put:
+He closes the planned quarterback rotation.
 
-- young LT;
-- young LG;
-- young C
+I want less emphasis on improvisational yardage and more on the offense.
 
-next to each other and then try to identify who caused the protection failure.
+His Detroit grade begins with:
 
-Give Leno, Lucas or the current top reserve tackle a series beside experienced interior help.
+- protection identification;
+- progression;
+- timing;
+- ball security.
 
-Later he can play in the young group.
+If he scrambles when the pocket breaks, fine.
 
-I want both tests.
+I do not call the game trying to manufacture his legs.
 
 ---
 
 # Running backs
 
-This is where the committee concept gets tested.
+## Jones-Drew
 
-Use:
+Reference-group work only.
 
-- Jones-Drew;
-- Grimes;
-- Anderson;
-- remaining qualified backs.
+He does not need a high-volume preseason game.
 
-Jones-Drew does not need volume.
+## C.J. Anderson
 
-He needs enough work with changing personnel to keep the first offense coherent.
+Chicago confirmed the running production again.
 
-Grimes and Anderson get legitimate work with Cousins and Henne.
+Now stop over-testing what we already know.
 
-That matters.
+His Detroit emphasis:
 
-I do not want every backup back's pass-protection evaluation happening behind the backup quarterback.
-
-### Back responsibilities I want on tape
-
-Each active candidate needs some combination of:
-
-- Inside Zone;
-- Outside Zone;
-- Power/Counter track;
-- HALF protection scan;
+- HALF protection;
+- scan;
 - check release;
-- Texas/angle responsibility where qualified;
-- screen.
+- screen;
+- route;
+- communication with Cousins and Henne.
 
-A back cannot become predictable by role.
+I specifically want him with Cousins for one mixed possession.
+
+## Jonathan Grimes
+
+Chicago gave him three carries for minus one.
+
+That is not enough to make any conclusion.
+
+Give him a functioning line and Henne or Cousins.
+
+Test:
+
+- Power/Counter track;
+- Inside Zone;
+- protection;
+- receiving.
+
+## Richard Murphy
+
+No plan is built around him until the independent medical process clears him.
+
+If he clears early enough to practice normally, he can reenter the developmental rotation.
+
+If not, he is out.
+
+Doctors decide.
+
+## Owens
+
+His Game 1 ball-security correction did not recur in Chicago.
+
+Continue his normal H/FB and special-teams responsibilities.
 
 ---
 
 # Receiver combinations
 
-This is the centerpiece of the offensive plan.
+Jerrell Jackson is out.
 
-I want the receiver room scrambled intelligently.
+That increases the useful work for:
 
-## Group 1
+- Adams;
+- Hawkins;
+- Hurns;
+- Gabriel.
 
-- Nicks: X
-- Thielen: H/movable receiver
-- Adams: Z
+It does not mean I run Nicks and Thielen into the ground.
 
-Reference group.
+## Receiver Group 1
 
-## Group 2
+- Nicks
+- Thielen
+- Adams
 
-- Adams: X
-- Hawkins: H
-- Hurns: Z
+Reference.
 
-Young/mixed group with Cousins.
+## Receiver Group 2
 
-## Group 3
+- Adams
+- Hawkins
+- Gabriel
 
-- Nicks: X
-- Hawkins: H
-- Gabriel: Z
+Fast/movable mixed group.
 
-Different speed and spacing profile.
+## Receiver Group 3
 
-## Group 4
+- Nicks
+- Hawkins
+- Hurns
 
-- Adams: X
-- Thielen: H
-- Hurns/Gabriel: Z
+Henne contingency combination.
 
-Henne or Wilson group.
+## Receiver Group 4
 
-These are not permanent depth-chart changes.
+- Adams
+- Thielen
+- Hurns/Gabriel
 
-They are tests.
-
----
-
-# What I am testing at receiver
-
-### With the quarterback
-
-Does route timing survive a different quarterback?
-
-### With another receiver
-
-Can the player adjust his split and landmark when the adjacent receiver changes?
-
-### In motion
-
-Does the communication survive when the H or Z moves?
-
-### In compressed sets
-
-Can they sort Bunch and reduced splits correctly?
-
-### In the run game
-
-Does the combination understand crack, stalk and support responsibilities?
-
-### During a correction
-
-If Cousins tells a young receiver between series that he needs another half-yard of depth on Drive, does the correction show up when that receiver later plays with Henne?
-
-That matters to me.
-
-It means the offense is learning a system rather than memorizing individual quarterback relationships.
+Wilson/Bray combination.
 
 ---
 
-# Tight-end combinations
+# Gabriel
 
-Lewis does not need a huge workload.
+Game 1 gave us a third-down conversion.
 
-Kelce needs meaningful work with both Cousins and Henne.
+Game 2 gave us another third-down conversion and a touchdown.
 
-Then I want Brate, Jensen and Hoskins mixed with better personnel rather than always appearing together at the end.
+Now I want him against better defensive personnel with Cousins or Henne.
 
-Example:
+I am testing whether the production survives:
 
-Do not evaluate Brate only with:
+- better corner play;
+- more complex communication;
+- different receiver neighbors.
 
-- reserve quarterback;
-- reserve line;
-- reserve receivers.
+That is how a reserve earns a larger role.
 
-Give him a series with Henne and established receivers.
+Not by counting preseason touchdowns.
 
-Then put him back with the young group.
+---
 
-The question becomes whether his execution travels.
+# Hurns
+
+He played 48 snaps in Chicago.
+
+Detroit reduces the raw workload but improves the quality of some reps.
+
+Give him:
+
+- one Cousins or Henne mixed series;
+- one developmental quarterback block;
+- special-teams responsibility.
+
+I want to know whether he can enter next to established players without changing the offense.
+
+---
+
+# Tight ends
+
+Brate remains out.
+
+The room is:
+
+- Lewis;
+- Kelce;
+- Jensen;
+- Hoskins.
+
+## Lewis
+
+Reference work.
+
+Limited volume.
+
+## Kelce
+
+His repeated attached-blocking question has survived two games without being properly tested.
+
+That changes in Detroit.
+
+I want:
+
+1. an attached Power/Outside Zone assignment early;
+2. movement/route work;
+3. another attached assignment late in his playing block.
+
+The late rep is deliberate.
+
+I want to know if his base and pad level hold after real work.
+
+## Hoskins
+
+Four catches for 65 across three quarterbacks earns a more difficult environment.
+
+Give him work with Henne and possibly Cousins in 12 personnel.
+
+Do not script the ball.
+
+Test whether he can function beside better players without becoming a pass-only tell.
+
+## Jensen
+
+His 29-yard third-and-1 conversion matters.
+
+So does his special-teams work.
+
+Give him one mixed-unit offensive block and significant kicking-game work.
+
+TE3 remains open.
+
+---
+
+# Offensive line: Detroit is an isolation game
+
+Chicago gave us three sacks at three different reserve positions:
+
+- Leno at LT;
+- Larsen at center;
+- Feiler at LG.
+
+That is exactly what Game 3 should isolate.
+
+Do not put all three together for the retest.
+
+---
+
+# Offensive-line Combination A: starting reference
+
+- Monroe
+- Bitonio
+- Brewster
+- Turner
+- Johnson
+
+Run normal football.
+
+---
+
+# Combination B: Lucas isolation
+
+- Monroe
+- Bitonio/Norwell
+- Brewster
+- Turner
+- Lucas
+
+Same stable interior.
+
+Different RT.
+
+Now Lucas's work can actually be compared.
+
+---
+
+# Combination C: Leno isolation
+
+- Leno
+- Bitonio
+- Brewster
+- Turner
+- Johnson or Lucas
+
+Leno gets a normal HALF protection rep with experienced help beside him.
+
+Do not hide him behind SCAT.
+
+Do not surround him with four reserves.
+
+I need to know whether his Chicago sack was an isolated loss or a repeatable problem.
+
+---
+
+# Combination D: Larsen isolation
+
+- stable tackles;
+- Norwell
+- Larsen
+- Turner or Asper according to the prepared combination.
+
+Larsen's Chicago sack was charged at center on the slow screen.
+
+The film determines whether the issue was:
+
+- point;
+- set;
+- release timing;
+- or physical loss.
+
+Then the same responsibility returns in Detroit.
+
+---
+
+# Combination E: Feiler isolation
+
+Give Feiler left-guard work beside:
+
+- a functional center;
+- an established tackle.
+
+His Chicago sack came on Boot.
+
+Again, isolate the correction.
+
+Do not bury it inside a five-rookie line.
+
+---
+
+# Bitonio and Norwell
+
+Neither lost a recorded rep in Chicago.
+
+The LG competition remains open.
+
+Detroit should make the comparison harder, not simply repeat the same arrangement.
+
+Each gets:
+
+- work beside Brewster;
+- work beside Linsley;
+- one mixed tackle combination.
+
+I am looking for which guard keeps the same communication and technique as the surrounding pieces change.
+
+That is a starting-guard question.
 
 ---
 
 # Offensive menu
 
-Game 3 uses more of the playbook's **portability**.
+I am **not** expanding the playbook simply because this is Game 3.
 
-Not more concepts.
+Chicago already told us that several pages of the master book have not been part of the current 2014 game installation.
 
-More presentations of the concepts.
+So the combinations change.
 
-## Core runs
+The vocabulary does not.
+
+## Runs
 
 - Power
 - Counter
 - Inside Zone
 - Outside Zone
 - Split Zone
-- Duo
 
-## Pass
+## Quick/control
 
 - Stick
+- Spacing
+
+## Dropback
+
 - Mesh
 - Drive
 - Y-Cross
 - Dagger
-- Sail
-- Texas
-- Four Verticals
 
 ## Play action
 
 - Power Pass
 - Boot Flood
-- Counter Boot
-- Post-Cross
+- Counter Boot where practiced
 
-## Screens/access
+## Screen
 
 - RB Slow
-- RB Slip
-- Bubble
-- Smoke
-- Inside + Stick access
+
+## Situational
+
+- Snag only in its actual prepared field zone
+- existing backed-up/red-zone/two-minute menu
+
+I am not adding 20 personnel, Texas, Duo, Four Verticals or other inactive weekly pages simply to create variety.
+
+Different people provide enough variation.
 
 ---
 
-# The offensive emphasis
+# Empty correction
 
-I want the same concept called with different people.
+Chicago showed Empty with reserve groups even though the frozen sheet did not give it to them.
 
-### Drive
+That is a sideline-operation problem.
 
-Call it from:
+Detroit rule:
 
-- 11;
-- 12;
-- 20 if the active combination has practiced it.
+**Empty is available only to the quarterback/personnel groups that rehearse it during this week.**
 
-Same concept.
+If Wilson, Bray or Shaw earns it in practice, it goes onto that group's sheet.
 
-Different people own the pieces.
+If not, it does not get called.
 
-### Mesh
-
-Use:
-
-- Bunch;
-- Trey;
-- 12 personnel with a tight end carrying one crosser.
-
-### Power
-
-Run it from:
-
-- 11;
-- 12;
--
-
-  21.
-
-### Inside Zone
-
-Run it from:
-
-- Doubles;
-- Trips with access;
-- 20 personnel.
-
-### Boot
-
-Show Outside Zone first.
-
-Then come back to Boot.
-
-I am testing whether our system is actually portable or whether that is just something that looks good on the install board.
+The formation cannot appear because somebody sees it on another quarterback's wristband.
 
 ---
 
 # Opening 15
 
-The script follows concepts more than individual players.
+This opener follows the interoperability theme while remaining inside the practiced menu.
 
-Situational calls override it.
+Situational football overrides it.
 
-The script continues with whichever scheduled group is on the field.
+| # | Call | Test |
+|---:|---|---|
+| 1 | 12 Ace, Power Right | Starting reference, Johnson back at RT, Kelce attached. |
+| 2 | 11 Trey, Stick | Normal timing and leverage. |
+| 3 | 11 Doubles, Drive, HALF | Conventional protection reference. |
+| 4 | 12 Wing, Outside Zone Left | Edge and TE surface. |
+| 5 | 12 Wing, Boot Flood Right | Same picture, movement complement. |
+| 6 | 11 Bunch, Mesh, HALF | Receiver combination communication. |
+| 7 | 11 Trips, Inside Zone + Bubble access if carried | QB/leverage decision. |
+| 8 | 12 Trey, Y-Cross | Concept portability through TE/receiver changes. |
+| 9 | 11 Doubles, Power Left | Gap football with changed skill group. |
+| 10 | 11 Trey, Dagger, HALF | Protection and route timing with the current combination. |
+| 11 | 12 Wing, Split Zone | Backside edge and TE assignment. |
+| 12 | 11 Doubles, RB Slow Screen | Explicit Chicago protection/screen retest. |
+| 13 | 12 Ace, Counter Right | Puller and interior communication. |
+| 14 | 11 Bunch, Spacing | Change quarterback/receiver picture, same rules. |
+| 15 | 12 Ace, Power Pass MAX | Conditional shot only if the run picture earns it. |
 
-|  # | Call                               | Purpose                                                           |
-| -: | ---------------------------------- | ----------------------------------------------------------------- |
-|  1 | 11 Doubles, Inside Zone Right      | Establish reference communication and box picture.                |
-|  2 | 11 Trey, Stick, ZIP H              | Receiver/QB timing and movement.                                  |
-|  3 | 12 Ace, Power Right                | Heavy picture, normal downhill rules.                             |
-|  4 | 12 Trey, Drive, HALF               | Same personnel, change picture completely.                        |
-|  5 | 12 Wing, Outside Zone Left         | Stretch the same group horizontally.                              |
-|  6 | 12 Wing, Boot Flood Right          | Same look, complement.                                            |
-|  7 | 11 Bunch, Mesh                     | Communication through condensed release traffic.                  |
-|  8 | 20 Doubles, Inside Zone            | New personnel, same core concept.                                 |
-|  9 | 20 Flex F, Texas                   | Same personnel, change the matchup problem.                       |
-| 10 | 21 Pro, Counter Right              | Two-back gap football.                                            |
-| 11 | 21 SHIFT F to Wing, Y-Cross        | Same bodies, new picture.                                         |
-| 12 | 11 Trey, Dagger, HALF              | Full dropback timing with the current receiver combination.       |
-| 13 | 12 Ace, Duo                        | Interior combination and TE surface.                              |
-| 14 | 12 SHIFT Empty, Stick              | Same bodies, completely different presentation.                   |
-| 15 | 11 Doubles, Four Verticals ALERT X | Conditional vertical test. Only take it if the leverage earns it. |
-
-The purpose of this script is not play variety.
-
-It is to make the same football survive personnel variety.
+No call exists merely because it is number 15.
 
 ---
 
 # Tempo
 
-Game 2 was ROTATE heavy.
-
-Game 3 uses all three operating states deliberately.
-
 ## ROTATE
 
-Use between series to construct the combinations.
+Use between possessions to create the planned combinations.
 
 ## HOLD
 
-This is the most important state this week.
+This is the primary Game 3 tempo concept.
 
-Once I get a mixed eleven I want, keep them together for several plays.
+Once a mixed eleven is on the field, keep it.
 
-Move them.
+Change the formation.
 
-Make the defense deal with:
-
-- Ace to Trey;
-- Wing to Empty;
-- Pro to split;
-- Doubles to Trips.
-
-Do not substitute just because the formation changes.
+Make the players prove that the concept travels.
 
 ## PRESS
 
-One meaningful sequence with Cousins.
+Cousins gets one meaningful PRESS opportunity if the group reaches it.
 
-One with Henne.
+Henne gets one.
 
-Potentially one with Wilson if his group earns it during the week.
+A developmental quarterback gets PRESS only if that group earns it during the week.
 
-PRESS menu stays narrow:
+Chicago did not give us a recorded PRESS sequence.
 
-- Inside Zone;
-- Power;
-- Stick;
-- Mesh;
-- Drive;
-- Spacing;
-- Smoke;
-- screen.
-
-I want to know whether mixed personnel can communicate fast.
+Detroit should, if game flow allows.
 
 ---
 
-# Protection test
+# Defense: start with a reference
 
-The protection question gets harder in Game 3.
+The first defense only played six snaps in Chicago.
 
-I want different quarterback-center-back combinations.
+Forte ran four times for 67 yards and a touchdown.
 
-Examples:
+The receipt does not tell me the fit or force error.
 
-- Cousins / Brewster / Grimes
-- Cousins / Linsley / Anderson
-- Henne / Brewster / Jones-Drew or Grimes
-- Henne / Linsley / Anderson
-- Wilson / Linsley or next qualified center / reserve back
-
-Use HALF enough to get real communication evidence.
-
-Do not hide every young combination behind SCAT and boots.
-
-I want them sorting:
-
-- normal four-man rush;
-- five-man pressure;
-- mugged interior presentation if Detroit gives it;
-- twist/game;
-- late safety movement.
+So before I start scrambling the unit, Crennel needs one normal reference possession.
 
 ---
 
-# Defensive philosophy
+# Defensive reference group
 
-Defense follows the same principle.
+Start:
 
-**Change the people without changing the entire defense.**
+- Mincey at Edge 1
+- Marks
+- Miller
+- Ryan Davis/closed edge according to the normal call
+- Daryl Smith
+- Posluszny
+- Stanford/base structure
+- normal starting secondary package
 
-Crennel still calls it.
+One possession.
 
-I do not want a chemistry experiment becoming a scheme experiment.
+I want the normal fit on tape.
 
----
+Mincey did not play defense in Chicago.
 
-# Defensive Group A: veteran front, mixed back end
-
-Keep several established front players.
-
-Change:
-
-- one linebacker;
-- one corner;
-- one safety/nickel component.
-
-Purpose:
-
-Can the younger coverage player communicate when the front is functioning normally?
+He returns to the starting-point role.
 
 ---
 
-# Defensive Group B: young front, veteran communication
+# Edge comparison
 
-Put younger/reserve defensive linemen into the rotation.
+The second comparable possession puts Branch at Edge 1.
 
-Keep an experienced linebacker communicator behind them.
+Keep as much of the surrounding front and linebacker structure constant as practical.
 
-Purpose:
+That is the comparison I actually want.
 
-Can the younger front execute:
+Mincey:
+- edge;
+- rush;
+- contain.
 
-- front declaration;
-- stunt;
-- edge tag;
-- run fit
+Branch:
+- edge;
+- rush;
+- contain.
 
-when the communication should be clean?
+A sack without an owned escape lane still grades badly.
 
-This isolates the front.
+The Game 2 receipt could not tell us Branch's lane.
 
----
-
-# Defensive Group C: mixed linebackers
-
-Now move the communication problem.
-
-Use a functional front.
-
-Change the second level.
-
-I want:
-
-- Daryl Smith with younger players;
-- Posluszny handling his succession responsibilities where appropriate;
-- Stanford getting a legitimate communication block;
-- Moore handling his packages;
-- young linebackers working around them.
-
-I need to know whether one veteran linebacker is covering for everybody or whether the system actually travels.
+Detroit needs the coaches charting it live and on film.
 
 ---
 
-# Defensive Group D: secondary combinations
+# Young front with veteran communication
 
-Mix:
+This is where Chicago's reserve production moves upward.
+
+I want a front containing players such as:
+
+- Donald;
+- Te'o-Nesheim;
+- Edebali;
+- Jeffcoat;
+
+mixed with established structure rather than all grouped together against late reserves.
+
+Example:
+
+- veteran edge;
+- Donald inside;
+- veteran interior anchor;
+- young opposite edge;
+- Daryl Smith or Posluszny behind them.
+
+Now I learn whether Donald's pressure and the young edges' sacks survive against better blocking while the fit is communicated properly.
+
+Seven sacks in each of two games is meaningful.
+
+It is not yet permission to abandon run responsibility.
+
+---
+
+# Young linebackers with veteran front
+
+Chicago gave me:
+
+- Todd Davis interception;
+- productive Moore work;
+- Telvin Smith playing 53 snaps;
+- Christian Jones meaningful defensive and special-teams work.
+
+Now reverse the experiment.
+
+Use a functional veteran/mixed front and change the linebackers.
+
+I want combinations containing:
+
+- Telvin Smith;
+- Todd Davis;
+- Christian Jones;
+- Moore;
+
+with one established communicator where appropriate.
+
+Then remove that help in a later block.
+
+Question:
+
+Can they play the defense, or are veterans solving the call for them?
+
+---
+
+# Secondary combinations
+
+Chicago gave us useful production from:
 
 - Verner;
-- Talib;
-- Mike Harris;
-- Poyer;
+- Butler;
 - Bouye;
-- Lowery;
-- Rambo;
-- qualified reserve corners/safeties.
+- Trawick.
 
-Do not change every defensive back simultaneously.
+The overtime 76-yarder must be classified before I assign the correction.
 
-I want pairings.
+Do not assume the same problem as Tampa Bay.
 
-Examples:
+The film has to identify:
 
-- veteran corner + young safety;
-- young corner + veteran safety;
-- Poyer nickel with different outside corners;
-- alternate safety pairing behind an otherwise functional front.
+- call;
+- leverage;
+- help;
+- communication;
+- technique.
+
+Then I want controlled pairings.
+
+### Pairing A
+
+Veteran corner + younger safety.
+
+### Pairing B
+
+Younger corner + veteran safety.
+
+### Pairing C
+
+Poyer at nickel with alternate outside corners.
+
+### Pairing D
+
+Butler with a veteran safety structure after his three passes defended in Chicago.
+
+Again, production earns a harder test.
+
+It does not automatically earn the job.
 
 ---
 
-# Defensive calls
+# Poyer and nickel communication
 
-Keep the language familiar.
+Poyer played 53 defensive snaps in Chicago.
+
+The game book still did not give us a clean recorded substitution-stress test.
+
+So Detroit keeps this on the sheet.
+
+I specifically want a mixed nickel group handling:
+
+- 11 personnel;
+- Bunch;
+- motion;
+- shift;
+- tempo.
+
+If Detroit prevents substitution:
+
+HOLD the current personnel.
+
+Simplify the call.
+
+Do not sacrifice alignment to disguise.
+
+---
+
+# Defensive menu
+
+Do not expand just to be multiple.
+
+Use what the program has practiced.
 
 ## Front
 
 - Under
-- Over
 - Nickel Even
-- Bear situationally
-- limited Odd if the personnel group has earned it in practice
+- related normal front adjustments already installed
 
 ## Coverage
 
 - Cover 1
-- 1 Robber
+- 1 Robber/Rat
 - Cover 3
 - Quarters
-- Tampa/2 change-up
-- Fire 3
 
 ## Pressure
 
-- four-man rush games;
-- SAM edge;
-- WILL edge;
-- A-gap Dog;
-- Nickel pressure;
-- selected Fire Zone.
+- base four
+- installed five-man pressure
+- practiced rush games where carried
 
-No need to create an exotic call just because it is Game 3.
+The point is changing **who executes it**, not changing the entire defense.
 
 ---
 
-# Defensive portability test
+# Special teams: first issue of the week
 
-I specifically want the same call with different people.
+Before Detroit planning starts, Westhoff reviews all four Chicago field-goal attempts.
 
-Example:
+For each attempt:
 
-**Under Quarters**
+1. snap;
+2. location;
+3. hold;
+4. protection;
+5. timing;
+6. kick.
 
-Run it once with the more established unit.
+The record showed no operation fault.
 
-Later call Under Quarters with a mixed group.
+Film decides whether that remains true.
 
-The assignment does not change.
+If snap, hold and protection are clean, then the correction belongs to Scobee.
 
-Now I can compare:
-
-- declaration;
-- fit;
-- leverage;
-- communication;
-- tackling.
-
-Same with Nickel Even Cover 1.
-
-Same with one five-man pressure.
-
-That gives Crennel real comparative tape.
+We do not protect him from that conclusion if the tape says it.
 
 ---
 
-# Edge evaluation
+# Field-goal plan for Detroit
 
-Mincey and Branch should both appear with different interior combinations.
+I am not manufacturing 50-yard attempts.
 
-I do not want Branch always rushing beside the same tackle.
+But if the game presents a normal preseason field-goal situation inside the range we expect to use during the regular season, I am kicking.
 
-His question remains:
+I want another live operation.
 
-Can he produce pressure **and** maintain the lane?
-
-So pair him with different inside rushers and see whether the integrity of the rush still holds.
-
-The same goes for Mincey.
-
-I want the defensive line functioning as a four-man unit, not four individual pass-rush drills.
+A 43-yard attempt is more valuable to me this week than trying to create a spectacular long kick.
 
 ---
 
-# Defensive communication stress
+# Long snapper
 
-Game 3 is where I deliberately take away familiar voices.
+Cain and Kreiter are both clean through two games.
 
-Not irresponsibly.
+The competition remains open.
 
-In controlled blocks.
+They have already started in opposite orders.
 
-One series with the normal lead communicator.
+Detroit changes the evaluation slightly.
 
-Another with the succession active.
+I want each man handling a mixed block of:
 
-Another where the nickel group must make the adjustment without waiting for the sideline.
+- punts;
+- field goals/PATs;
+- coverage responsibility.
 
-If Detroit shifts or motions:
+Do not judge them by raw snap count.
 
-- communicate;
-- apply TRAVEL/BUMP/ROLL/HOLD;
-- get set.
-
-I do not want all eleven defenders staring at Crennel after every movement.
+Judge the entire operation.
 
 ---
 
-# Special teams
+# Returner
 
-By Game 3 the special-teams picture needs to begin narrowing.
+Hawkins has now handled every recorded Jacksonville return in two games without a ball-security fault.
 
-Westhoff still gets evaluation work, but this is no longer simply broad exposure.
+He remains the first returner entering Detroit.
 
-Now I want **cross-unit value**.
+That is still not a permanent award.
 
-Which reserve can handle:
+However, the secondary return evaluation can no longer remain anonymous.
 
-- kickoff coverage;
-- punt coverage;
-- punt return/block;
-- kick return/block
+Westhoff must put the actual second return candidate's name on the frozen Detroit rotation from the players who have genuinely taken that camp work.
 
-without his offensive or defensive performance falling apart?
+No unnamed returner on the next game book if the club controls the assignment.
 
-A roster candidate who plays four special-teams units has a different value than one who can only enter at his scrimmage position.
-
-Snapper competition continues only if still unresolved after Games 1 and 2.
-
-Returner work continues only among legitimate candidates still in the competition.
-
-We are narrowing, not inventing new competitions.
+I am not inventing a candidate the camp record does not identify.
 
 ---
 
-# Timeout philosophy
+# Fourth-down philosophy
 
-Game 2 was the teaching game.
+Twice now I have punted away developmental fourth-down opportunities that I later wanted back.
 
-I was willing to spend a timeout to preserve a valuable developmental situation.
+Detroit changes that.
 
-Game 3 changes that.
+In the developmental portion of the game, fourth-and-manageable across midfield becomes an evaluation opportunity.
 
-I want the mixed groups solving more of their own problems.
+I am more willing to keep the offense on the field.
 
-I will still use a timeout for:
+That does not mean automatic fourth-down attempts.
 
-- safety;
-- a major personnel malfunction;
-- a rare situational opportunity worth preserving;
-- an actual head-coach game-management reason.
+Field position, quarterback, protection and situation still matter.
 
-But I am less interested in rescuing confusion.
-
-If a mixed group cannot get aligned in time, sometimes I need the delay-of-game threat to exist.
-
-That is part of the evaluation now.
+But I am not protecting a preseason result at the expense of the test I said I wanted.
 
 ---
 
-# Game-management situations
+# Detroit week preparation
 
-I want the quarterback currently in the game handling whatever appears.
+## August 15: Chicago film review
 
-### Two minute
+This is the most important meeting of the week.
 
-If it comes during Cousins's block, Cousins runs it.
+### Offense
 
-If it comes during Henne's block, Henne runs it.
+Resolve individually:
 
-If it comes during Wilson's block, Wilson runs it.
+- Cousins-to-Nicks interception;
+- Shaw-to-Nicks interception;
+- Leno sack;
+- Larsen sack;
+- Feiler sack;
+- why the opening script sequence departed from the frozen order;
+- why Empty reached groups whose sheet did not carry it.
 
-Do not rearrange the quarterback rotation to make the drill prettier.
+No vague answer.
 
-### Backed up
+I want the call, assignment and failure named.
 
-Use the normal offense.
+### Defense
 
-### Red zone
+Resolve:
 
-Keep the current personnel when practical.
+- Forte's four carries for 67 against the correction group;
+- Perry's 76-yard overtime touchdown;
+- Branch's lane where film permits;
+- reserve front rush-lane integrity.
 
-I want to know whether that particular group can finish the drive.
+### Special teams
 
-### Third down
+Grade all four field-goal operations.
 
-Do not automatically substitute the ideal specialists.
+### Medical
 
-Occasionally HOLD the current group and make them solve third down.
+Murphy and Brate follow medical staff instructions.
 
-That is the whole point of the game.
-
-### Sudden change
-
-Next scheduled group goes.
-
-No scrambling to reinstall the starters because field position suddenly looks important.
+Jackson remains out.
 
 ---
 
-# Detroit week practice structure
+# August 16 to 18: combination construction
 
-## First full work period after Chicago: combination correction
-
-Start with Game 2 corrections.
-
-Then stop practicing only depth-chart groups.
+Build the exact Detroit combinations.
 
 Offense:
 
-- QB/WR timing combinations;
-- QB/center/back protection combinations;
-- OL adjacency;
-- TE movement with different quarterbacks;
-- same concept from different personnel.
+- Johnson back with the first line;
+- Lucas as replacement RT;
+- Leno isolated with veteran help;
+- Larsen isolated with stable guards/tackles;
+- Feiler isolated with stable center/tackle;
+- Cousins with young receivers;
+- Henne with first receivers;
+- Anderson in protection;
+- Hoskins with an established quarterback;
+- Kelce attached early and late.
 
 Defense:
 
-- front plus alternate linebacker;
-- linebacker plus alternate secondary;
-- communication succession;
-- Nickel combinations;
-- same pressure with different rush personnel.
+- Mincey reference;
+- Branch comparable reference;
+- Donald/young edge with veteran communication;
+- young linebacker group with stable front;
+- mixed secondary pairings.
+
+Do not correct three players at once in the same unit.
+
+---
+
+# August 19 to 20: mixed-unit situation work
+
+Now make the combinations play football.
+
+Offense:
+
+- third-and-medium;
+- third-and-long;
+- backed up;
+- red zone;
+- two minute;
+- one PRESS sequence;
+- HOLD across multiple formations.
+
+Defense:
+
+- third down;
+- red zone;
+- offensive motion;
+- Bunch;
+- Empty;
+- tempo;
+- communicator substitution.
 
 Special teams:
 
-- roster-value combinations across units.
+- field-goal operation;
+- return rotation by name;
+- mixed coverage units.
 
 ---
 
-## Middle of week: mixed-unit day
+# August 21: reduction and medical checkpoint
 
-This is the important practice.
+Jerrell Jackson's reassessment belongs to the medical staff.
 
-Build the exact mixed groups.
+His projected October return means I am not building the Detroit plan around him.
 
-Do not let coaches fix everything before the snap.
+Reduce the call sheet.
 
-Send the call.
+No late additions because somebody looked good Wednesday.
 
-Make the unit solve:
+Freeze:
 
-- substitution;
-- huddle;
-- formation;
-- motion;
-- protection;
-- defensive check;
-- cadence.
-
-Run situational football with those groups.
-
-I want mistakes here.
-
-This is where they should happen.
-
----
-
-## Final rehearsal
-
-Reduce.
-
-No new plays.
-
-Confirm:
-
+- Johnson/Lucas workload;
 - quarterback blocks;
 - receiver combinations;
-- OL combinations;
-- defensive communication groups;
-- special-teams rotations;
-- emergency substitutions.
-
-Every position coach should know not only who starts the game, but:
-
-**who goes in if one specific player leaves during a series.**
-
-That is part of this week's test.
+- OL isolation groups;
+- defensive comparison groups;
+- field-goal operation;
+- named return rotation.
 
 ---
 
 # What I am grading in Game 3
 
-Game 1:
+Game 1 asked:
 
-**Does our football work against another team?**
+**Can our installed football survive another team?**
 
-Game 2:
+Game 2 asked:
 
-**Which rookies and reserves can play NFL football?**
+**Can the young roster function, and can the Game 1 corrections hold?**
 
-Game 3:
+Game 3 asks:
 
-**Can our roster function when the depth chart gets scrambled?**
+**Can the pieces function when they are removed from the exact group that made them comfortable?**
 
-I am grading:
+## Offense
 
-### Chemistry
+### Cousins
+Can he maintain the offense as personnel changes?
 
-Do players communicate with people outside their normal unit?
+### Henne
+Can he operate the actual first-team offense if called upon?
 
-### Portability
+### Young quarterbacks
+Does their execution survive better teammates, different teammates and different situations?
 
-Does the concept survive different personnel?
+### Receivers
+Does production travel to another quarterback and another alignment?
 
-### Adaptability
+### Offensive line
+Does the correction survive when neighboring linemen change?
 
-Can a player perform more than one trained role without the unit rebuilding around him?
+### Backs
+Can the productive runners protect well enough to stay in the game?
 
-### Contingency value
+### Tight ends
+Can the receiving production coexist with the blocking responsibility?
 
-Can this player enter next to the starters without breaking the operation?
+---
 
-### Communication independence
+# Defense
 
-Does the player understand the system, or is the veteran beside him telling him what to do?
+### Edge
+Can Mincey and Branch produce while preserving contain?
 
-### Quarterback compatibility
+### Young rushers
+Do the sacks survive better offensive lines?
 
-Can our receivers, backs and tight ends function with more than one quarterback?
+### Linebackers
+Can the communication survive without a veteran solving it?
 
-### Protection compatibility
+### Secondary
+Can the leverage and help rules survive new pairings?
 
-Can our centers, guards, backs and quarterbacks communicate across combinations?
+### Nickel
+Can the unit substitute and communicate without sideline dependence?
 
-### Defensive fit integrity
+---
 
-Do gaps, force, leverage and contain remain intact when defenders change?
+# Special teams
 
-### Correction carryover
+### Kicking
+Was Chicago an operation problem or a kicking problem, and does the correction hold?
 
-Does a correction made with one group remain corrected when the player's teammates change?
+### Long snapper
+Does the operation remain clean under changing situations?
 
-That is the tape I want from Detroit.
+### Returner
+Can Hawkins continue the security and decision-making, and can a second named candidate establish actual evidence?
 
-By the end of Game 3, I should be much closer to answering a regular-season question that eventually comes for every football team:
+---
 
-**If one starter disappears on Wednesday, does one player replace him, or does the whole unit have to change?**
+# The standard leaving Detroit
+
+I do not need Game 3 to give me final starters everywhere.
+
+I need it to tell me who can be trusted next to the starters.
+
+By the end of Detroit I want clearer answers to:
+
+- If Johnson leaves, can Lucas enter without changing the offense?
+- If Brewster leaves, can Linsley run the whole operation?
+- If one guard leaves, which young guard preserves the communication?
+- If Nicks, Adams or Thielen leaves, which receiver enters without shrinking the menu?
+- Can Hoskins or Jensen function beside Lewis/Kelce rather than only with reserves?
+- Can Anderson protect for Cousins?
+- Can Henne run the starting offense?
+- Can Donald and the young rushers produce against better protection?
+- Which young linebacker can communicate without being carried?
+- Which reserve defensive back can enter beside a veteran and keep the coverage intact?
+
+That is the Game 3 tape I want.
+
+**Chicago showed which young players can produce. Detroit has to tell me which of them can be trusted inside the actual football team.**
