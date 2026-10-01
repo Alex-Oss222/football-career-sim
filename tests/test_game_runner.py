@@ -3,10 +3,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import inspect
 import tempfile
-import threading
 import unittest
-from pathlib import Path
-from http.server import ThreadingHTTPServer
 from unittest.mock import patch
 
 from runtime.game_runner import (architecture_errors, build_game_packet,
@@ -15,32 +12,36 @@ from runtime.game_runner import (architecture_errors, build_game_packet,
 from runtime.kernel import TeamInput, _append_evidence
 from runtime.player_evidence import PlayerInput
 from runtime.private_client import Client, PrivateRuntimeUnavailable
-from runtime.private_service import Store, handler
-from support_rosters import game_day_roster
+from runtime.private_service import Store
+from local_private_service import TOKEN, local_service
+from support_rosters import single_quarterback_teams
 
 
 class ProductionGameRunnerTests(unittest.TestCase):
+    """The local private store's seed is pinned (local_private_service) so
+    every game here reproduces; before October 1, 2026 the store drew a
+    fresh seed per run and this module's ordinary autonomous games were
+    refused by the kernel invariants under some seeds (the seed sweep in
+    tests/test_chains.py, SeedSweepRegressionTests)."""
+
+    STORE_SEED = "runner"
+    SWEEP_SEEDS = ("runner-0", "runner-1", "runner-2")
+    # Store seeds under which an ordinary autonomous game of this fixture
+    # was refused before the October 1, 2026 fixes (found by a 600-seed,
+    # four-game search through the production runner): "44", fourth game, a
+    # six-snap one-sack fumble admitted from inside the 20 (chains.chain_feasible,
+    # "snap after a failed fourth down"); "67", second game, an emergency
+    # passer replaced without a removal (participation.emergency_view).
+    REGRESSION_SEEDS = (("44", 3), ("67", 1))
+
     def setUp(self):
         self.tmp=tempfile.TemporaryDirectory(); self.addCleanup(self.tmp.cleanup)
         self.db=Path(self.tmp.name)/"state.sqlite3"
-        self.store=Store(self.db); self.store.initialize("snapshot")
-        self.token="test-only-token"
-        self.server=ThreadingHTTPServer(("127.0.0.1",0),handler(self.store,self.token,"snapshot"))
-        threading.Thread(target=self.server.serve_forever,daemon=True).start()
-        self.addCleanup(self.server.server_close); self.addCleanup(self.server.shutdown)
-        self.client=Client(f"http://127.0.0.1:{self.server.server_port}",token=self.token,snapshot="snapshot")
-        roster=(PlayerInput("qb","QB",roles=("passer",),rotation_status="competition"),
-                PlayerInput("rb","RB",roles=("rusher",),rotation_status="bubble"),
-                PlayerInput("wr","WR",roles=("receiver",)),
-                PlayerInput("ot","OT",roles=("pass_protection",)),
-                PlayerInput("lb","LB",unit="defense",roles=("punt_coverage",)),
-                PlayerInput("out","WR",available=False))
-        # Complete the legal game-day unit the production runner requires.
-        # 2013: at most 46 game-day actives (the deepest fill spares are left off).
-        spares={"fill-WR5","fill-CB5","fill-S4","fill-RB3"}
-        roster+=tuple(p for p in game_day_roster("fill") if p.position not in {"QB"} and p.player_id not in spares)
-        self.home=TeamInput("A",tuple(p.player_id for p in roster if p.available),roster=roster)
-        self.away=TeamInput("B",tuple(p.player_id for p in roster if p.available),roster=roster)
+        self.token=TOKEN
+        self.store,self.client=local_service(self,self.tmp.name,self.STORE_SEED)
+        # One quarterback, one unavailable receiver and a complete legal
+        # 46-man game-day unit on both clubs (support_rosters).
+        self.home,self.away=single_quarterback_teams()
 
     def test_more_than_46_actives_fails_closed(self):
         roster=tuple(self.home.roster)
@@ -115,6 +116,36 @@ class ProductionGameRunnerTests(unittest.TestCase):
         if set(throwers)!={"qb"}:
             self.assertTrue(any(i["player"]=="qb" and i["removed"] for i in result["injuries"]))
         self.assertTrue(all(v["tackles"]==v["solo_tackles"]+v["assisted_tackles"] for v in players.values()))
+
+    def test_regression_store_seeds_validate(self):
+        for label,index in self.REGRESSION_SEEDS:
+            with self.subTest(seed=label):
+                root=Path(self.tmp.name)/("regression-"+label); root.mkdir()
+                client=local_service(self,root,label)[1]
+                for k in range(index+1):
+                    result=run_game(self.home,self.away,event_id="labels-%d"%k,snapshot="snapshot",client=client)
+                self.assertTrue(result["terminated"])
+                self.assertEqual(result["diagnostics"].get("chain_layout_failed",0),0)
+                for team in ("A","B"):
+                    removed={i["player"]:i["drive"] for i in result["injuries"] if i["removed"] and i["team"]==team}
+                    previous=None
+                    for p in (p for p in result["possessions"] if p["team"]==team):
+                        if previous is not None and p["passer"]!=previous:
+                            self.assertLess(removed.get(previous,p["number"]),p["number"])
+                        previous=p["passer"]
+
+    def test_store_seed_sweep_keeps_the_invariants(self):
+        # A small fixed set of store seeds, several ordinary autonomous
+        # games each, through the production runner: the kernel invariants
+        # (validated inside run_game) hold for every one.
+        for label in self.SWEEP_SEEDS:
+            root=Path(self.tmp.name)/label; root.mkdir()
+            client=local_service(self,root,label)[1]
+            for k in range(3):
+                with self.subTest(seed=label,game=k):
+                    result=run_game(self.home,self.away,event_id="sweep-%d"%k,snapshot="snapshot",client=client)
+                    self.assertTrue(result["terminated"])
+                    self.assertEqual(result["diagnostics"].get("chain_layout_failed",0),0)
 
     def test_labels_paths_participation_and_evidence(self):
         self.assertIs(resolve_background_game,run_game)

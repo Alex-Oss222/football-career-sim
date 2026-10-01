@@ -230,10 +230,15 @@ def chain_feasible(category, *, plays, net, spot, kneel_yards=(), sacks=0, runs=
     if category == "touchdown":
         pre = None
     elif category == "fumble_lost":
-        # The yards before the fumbled snap: at most the net plus a loss of
-        # up to ten on a fumbled run or sack (a completion's share of a
-        # positive passing total is never negative).
-        pre = net + (10 if runs or sacks else 0)
+        # The fumbled snap is one of the drive's own snaps: a fumbled sack
+        # is one of its `sacks` and may lose up to ten like any other, a
+        # fumbled run may lose up to ten, a fumbled completion's share of a
+        # positive passing total is never negative. Its loss is bounded
+        # with the last series below (October 1, 2026: a separate allowance
+        # here counted a lone fumbled sack twice, so a 6-snap, 1-sack
+        # fumble netting -5 from the 18 passed although no snap order can
+        # reach the first down its six snaps need).
+        pre = net
     elif category == "safety":
         pre = net - terminal_value
     else:
@@ -252,6 +257,11 @@ def chain_feasible(category, *, plays, net, spot, kneel_yards=(), sacks=0, runs=
         if pre is not None:
             in_last = max(0, length - kneels - (0 if category in ("punt", "downs", "field_goal_attempt", "clock") else 1))
             lowest_last = kneel_sum - 10 * min(sacks, in_last)
+            if category == "fumble_lost":
+                # The terminal snap joins the series' losses: a fumbled sack
+                # is one of `sacks` (min(sacks, in_last + 1)); a fumbled run
+                # adds its own ten to the non-terminal sacks.
+                lowest_last = kneel_sum - 10 * max(min(sacks, in_last + 1), (1 if runs else 0) + min(sacks, in_last))
             if pre - min(0, lowest_last) < 10 * f:
                 continue
         return True
@@ -480,6 +490,43 @@ def _alt_plans(rng, pass_yards, rush_free, losses, *, usable, free_runs, td_type
     return plans
 
 
+def _concentrate(kinds, completed, values, n_mov, category, terminal, movable_only=False):
+    """Repair 3 as a sequence: one yard at a time from the smallest positive
+    value to the largest within the completions and within the free runs (a
+    scoring or fumbled snap joins its kind; a scoring snap keeps a yard),
+    yielding the values after each step until no yard can move
+    (REPAIR_STEPS at most). The kind totals never change. With
+    `movable_only` the yards gather on the largest movable snap (a fumbled
+    terminal snap credits no first down, so the ground a first down needs
+    must sit before it)."""
+    last = len(kinds) - 1
+    with_terminal = terminal in ("catch", "run") and category in ("touchdown", "fumble_lost")
+    movable = range(n_mov)
+    groups = [[i for i in movable if completed[i] and kinds[i] in ("att", "catch")]
+              + ([last] if with_terminal and terminal == "catch" else []),
+              [i for i in movable if kinds[i] == "run"] + ([last] if with_terminal and terminal == "run" else [])]
+    for _ in range(REPAIR_STEPS):
+        moved = False
+        for group in groups:
+            if len(group) < 2:
+                continue
+            targets = [i for i in group if i < n_mov] if movable_only else group
+            if not targets:
+                continue
+            big = max(targets, key=lambda i: (values[i], -i))
+            donors = [i for i in group if i != big and values[i] > 0
+                      and not (i == last and category == "touchdown" and values[i] <= 1)]
+            if not donors:
+                continue
+            donor = min(donors, key=lambda i: (values[i], i))
+            values[donor] -= 1
+            values[big] += 1
+            moved = True
+        if not moved:
+            return
+        yield list(values)
+
+
 def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, attempts, sacks,
                  kneel_yards, spikes, pass_yards, rush_free, losses, safety_terminal, net, spot,
                  completion_rate, targets=None, term_down=None, diagnostics=None):
@@ -503,11 +550,14 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
     * each draw keeps the order closest to the real drive's chain counts over
       RESTARTS randomized searches.
     Then the kernel split's values are equalized within kind one yard at a
-    time (Repair 2 of runtime.play_detail._layout), and last the plan is
+    time (Repair 2 of runtime.play_detail._layout), then the plan is
     enumerated: sack losses over their range crossed with one- and two-yard
-    passing shifts (LOSS_RUNG_LIMIT, chain_plan_enumerated). If nothing is legal the drive keeps an
-    unconstrained order and chain_layout_failed is counted; the coherence
-    classes report the resulting break."""
+    passing shifts (LOSS_RUNG_LIMIT, chain_plan_enumerated), and last the
+    plan is concentrated: the kernel's, the extreme and the alternative
+    splits with their yards gathered onto one snap of each kind, movable
+    snaps first (chain_plan_concentrated). If nothing is legal the drive
+    keeps an unconstrained order and chain_layout_failed is counted; the
+    coherence classes report the resulting break."""
     from . import play_detail as pd
 
     diagnostics = diagnostics if diagnostics is not None else {}
@@ -693,6 +743,42 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
             terminal = options[0]
             return finish(*drawn[:3], best, plan, ["chain_layout_inexact", "chain_layout_relaxed",
                                                    "chain_split_repaired", "chain_plan_enumerated"])
+    # Final rung (October 1, 2026, defect register item 3): the plan
+    # concentrated. A relocated drive whose net far exceeds what its snap
+    # count spreads (a real 4-snap punt netting 19 behind a penalty first
+    # down, replayed from the 99 with its end kept: net 53) is legal only
+    # when one snap carries most of the ground (a 44-yard snap, then three
+    # short ones and the punt on fourth down). A random allocation and the
+    # bounded shifts above never produce that, so the kernel's plan, each
+    # extreme split (all free yards passing, all rushing) and each
+    # alternative plan is drawn once and its values moved one yard at a time
+    # onto the largest value of each kind (Repair 3), first onto a movable
+    # snap (a five-run fumble netting 10 needs its first down before the
+    # fumbled snap, which Repair 3 fed instead), then onto any; the search
+    # runs after every step. Nothing before this rung changes: it runs only
+    # after every plan above failed.
+    free_total = pass_yards + rush_free
+    concentrated = [kernel_plan]
+    if usable and free_runs:
+        concentrated += [(free_total, 0, losses), (0, free_total, losses)]
+    concentrated += _alt_plans(rng, pass_yards, rush_free, losses, usable=usable, free_runs=free_runs,
+                               td_type=td_type, losses_random=losses_random)
+    for plan in concentrated:
+        if (td_type == "pass" and plan[0] < 1) or (td_type == "rush" and plan[1] < 1):
+            continue
+        drawn = _draw(rng, pd, category, options[0], runs, attempts, sacks, kneel_yards, spikes,
+                      plan[0], plan[1], plan[2], safety_terminal, completion_rate)
+        kinds, completed, values, n_mov = drawn
+        for movable_only in (True, False):
+            for values in _concentrate(kinds, completed, list(drawn[2]), n_mov, category, options[0],
+                                       movable_only=movable_only):
+                best = attempt(kinds, completed, values, n_mov, tiers[3])
+                if best is not None:
+                    terminal = options[0]
+                    how = ["chain_layout_inexact", "chain_layout_relaxed", "chain_plan_concentrated"]
+                    if plan is not kernel_plan:
+                        how.append("chain_split_repaired")
+                    return finish(kinds, completed, values, best, plan, how)
     bump("chain_layout_failed")
     bump("prefix_order_failed")
     kinds, completed, values, n_mov = last_draw
