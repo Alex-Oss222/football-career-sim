@@ -87,7 +87,7 @@ The roster generates the development cohort. `build_player_progression_roster.py
 
 Film preparation, distribution, acknowledgment, comprehension and delayed retention are separate facts. The film delivery record owns the actual packet revision, recipient, delivery date, lawful basis and source. A prepared queue is not a delivered packet. Check control, medical instructions and the pre-program contact rules before any distribution or teaching. Update the queue after a real receipt, not to manufacture completion.
 
-[Living coaching profiles](../career/coaching_profiles/README.md) use the same evidence discipline. At a material handoff, write the actual contribution in its source report, then update the coach's interpretation and current synthesis. Preserve prior experience, strengths, contrary evidence and uncertainty. A profile edit alone cannot hire a coach, change authority, claim a new practice or supply an engine effect.
+[Living coaching profiles](../career/coaching_profiles/README.md) use the same evidence discipline. At a material handoff, write the actual contribution in its source report, append Stone's interpretation to his [assessment log](../career/coaching_profiles/alex_stone_coaching_assessment_log.md), and refresh his [current profile](../career/coaching_profiles/alex_stone_coaching_profile.md) where the interpretation changes. Assistant assessments keep their existing dated record. Preserve prior experience, strengths, contrary evidence and uncertainty. A profile edit alone cannot hire a coach, change authority, claim a new practice or supply an engine effect.
 
 ## Handoff and checks
 

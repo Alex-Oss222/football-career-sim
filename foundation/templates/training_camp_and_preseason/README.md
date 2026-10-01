@@ -11,7 +11,7 @@ Use these templates for the report in chat and the readable part of the season's
 
 ## Before writing
 
-Read the requested season's calendar, roster and medical instructions, Stone's [current approach](../../../career/coaching_profiles/alex_stone.md#how-he-wants-training-camp-run), the phase plan, recorded work and relevant active playbook sections. Read that season's actual staff assignments. A later season keeps the format and established philosophy, but selects its own dates, coaches, roster, active books, taught menu and open questions. Never carry the 2014 names, competitions, drills or findings forward just because they appear in an example.
+Read the requested season's calendar, roster and medical instructions, Stone's [current approach](../../../career/coaching_profiles/alex_stone_coaching_profile.md#how-he-wants-training-camp-run), the phase plan, recorded work and relevant active playbook sections. Read that season's actual staff assignments. A later season keeps the format and established philosophy, but selects its own dates, coaches, roster, active books, taught menu and open questions. Never carry the 2014 names, competitions, drills or findings forward just because they appear in an example.
 
 The templates govern presentation. They do not run a practice or game, generate a grade, decide a role, authorize contact or advance the clock. Resolve newly authorized work through the repository's existing process first. A review of an old report stops at that report's evidence date. The [research and implementation note](../../../docs/camp_and_preseason_reports.md) explains the 2014 practice rules and the difference between practice, scrimmage and game evidence; verify the applicable rules when the season changes.
 

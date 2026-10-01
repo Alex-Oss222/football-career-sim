@@ -1,31 +1,27 @@
-# Coach: current assessment and evolution
+# Writing a coaching assessment
 
-Template only. Replace placeholders after checking the [profile method](README.md). Do not turn these prompts into invented answers.
+Use the [folder method](README.md). These prompts describe three separate functions; they are not a form that needs an answer in every field.
 
-**Evidence through:** date. **Prepared/revised:** actual editing date. **Current role and authority source:** link. **Evidence owner/reviewer:** actual authorized responsibility. **Employment:** authoritative record, not inferred from this profile.
+## Current coaching profile
 
-## Current synthesis
+Start with the coach's name, job and evidence cutoff. Link to the career reference and assessment history.
 
-Describe the coach now: relevant experience added since hiring, demonstrated approaches, uneven or unobserved work, and plausible open directions. Label staff interpretation explicitly. Give a representative strength and a counterexample or limitation where supported. No permanent archetype, numeric grade, automatic progress or result-based talent inference.
+Open with a short account of how the coach works now. Develop the responsibilities that distinguish his actual work: preparation, calling, teaching, player roles, staff management or other established duties. Use a representative incident, explain its consequence and include counterevidence when it changes the judgment. A head coach's profile should cover more than his preferred unit.
 
-## What changed from the previous baseline
+Keep biography brief. Separate the user's intended method from observed performance. End with the few questions the evidence leaves open. Omit empty categories, speculative personality and a second copy of the event history.
 
-| Earlier interpretation | New dated evidence | Current interpretation | Confidence, scope and counterevidence |
-|---|---|---|---|
-| To be filled from an actual prior record | Source event, conditions and responsibility | Changed, retained, narrowed or unresolved | Explain the limit |
+## Dated assessment entry
 
-## Coaching questions and intended work
+Use a date or period as the heading. In a short entry, answer:
 
-| Responsibility | What is already supported | What remains open | Next lawful observation | Linked player/shared job |
-|---|---|---|---|---|
-| Actual assigned responsibility | Evidence locator | Competing explanations | Intended work, not a result | Relevant current record |
+- What new work occurred, under what conditions, and who did it? Link the primary record.
+- Which earlier interpretation does it change, narrow or support?
+- What remains unresolved, and what observation would help distinguish the possibilities?
 
-Record the coach's and players' perspectives only when actually expressed. Keep disagreements visible. A user edit to intended approach is a plan change; a claim that something happened needs its event source. Prehire biography and prior assessments remain historical records.
+Record expressed player and coach perspectives accurately. If the event is a retrospective summary, say so. Preserve the earlier entry, append the new assessment and then update the current profile. Do not upgrade the coach merely because time passed or the team won.
 
-## Dated evolution entries
+## Career reference
 
-| Observation date | Previous interpretation | Primary source and observed act | Revised or unchanged interpretation | Limits and next opportunity |
-|---|---|---|---|---|
-| No new event entered | | | | |
+Use compact tables for confirmed identity, education, appointments, head-coaching records and current authority. Distinguish a title from actual calling responsibility and regular-season results from playoffs. Include relevant personal facts without constructing a private life. Link to the records that own employment and responsibilities.
 
-When new evidence supports an update, append first, then refresh the current synthesis. A teaching change may affect one shared assignment without changing every player in the room. Attribute coaching contributions accurately and count the supported effect once. Changes in title, employer, calling authority, contract, roster, medicine or time require the normal atomic dependency closure.
+Update facts when their source changes. Leave detailed rosters, medical status, staff salaries, weekly plans and game statistics in their existing records. An unfilled fact needs mention only if the omission would otherwise mislead the reader.

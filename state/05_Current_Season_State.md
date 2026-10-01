@@ -15,7 +15,7 @@ This document states what is true now and what comes next. The [2014 record](../
 |---|---|---|
 | Document 1 | `d8bcc5697c5a4bf273122352f9d5230044b76da5` | Active foundation source |
 | Document 2 | `c4bb8d569467f085882da407c8660cbc4001452d` | Active foundation source |
-| Document 3 | `299b5711721ac3c0caaee695c77f8aec406ba6eb` | Active foundation source |
+| Document 3 | `d8e1bd2f2c1495f4fbb7c1496eeaaf2be1fb2e5f` | Active foundation source |
 | Document 4 | `JAX-2014-JUL29-REGISTER-67`; owned facts unchanged through August 4 | Roster, staff, medical and role register |
 | Document 6 | [Event records and handoff protocol](../foundation/06_Event_Records_and_Handoff.md) | Latest closed football event: [scrimmage and camp block 1 closed](../career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md), through August 4, 2014 |
 
