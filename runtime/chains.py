@@ -219,9 +219,13 @@ def chain_feasible(category, *, plays, net, spot, kneel_yards=(), sacks=0, runs=
       starting outside the 10 (a goal-to-go series cannot convert without a
       touchdown) and at least ten yards;
     * a drive with no first down gains less than its opening distance before
-      any terminal snap.
+      any terminal snap; its kneels are fixed losses taken after that
+      ground was gained, so the free snaps before them carry the net less
+      the kneel yards (a 3-snap punt netting 8 after kneels of -3 ran for
+      11, which is a first down and a punt on third down).
     """
     spot, net, kneels = int(spot), int(net), len(kneel_yards)
+    kneel_sum = sum(int(y) for y in kneel_yards)
     dist0 = spot - line_to_gain(spot)
     if category == "touchdown":
         pre = None
@@ -239,7 +243,7 @@ def chain_feasible(category, *, plays, net, spot, kneel_yards=(), sacks=0, runs=
             continue
         m = plays - length
         if m == 0:
-            if pre is None or category == "fumble_lost" or pre < dist0:
+            if pre is None or category == "fumble_lost" or pre - kneel_sum < dist0:
                 return True
             continue
         f = math.ceil(m / 4)
@@ -247,7 +251,7 @@ def chain_feasible(category, *, plays, net, spot, kneel_yards=(), sacks=0, runs=
             continue
         if pre is not None:
             in_last = max(0, length - kneels - (0 if category in ("punt", "downs", "field_goal_attempt", "clock") else 1))
-            lowest_last = sum(int(y) for y in kneel_yards) - 10 * min(sacks, in_last)
+            lowest_last = kneel_sum - 10 * min(sacks, in_last)
             if pre - min(0, lowest_last) < 10 * f:
                 continue
         return True

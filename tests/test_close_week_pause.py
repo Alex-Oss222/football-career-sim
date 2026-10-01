@@ -15,10 +15,8 @@ import io
 import json
 import sys
 import tempfile
-import threading
 import unittest
 from dataclasses import replace
-from http.server import ThreadingHTTPServer
 from pathlib import Path
 from unittest.mock import patch
 
@@ -28,10 +26,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from runtime import game_runner, kernel
 from runtime.kernel import TeamInput, validate_result
-from runtime.private_client import Client
-from runtime.private_service import Store, handler
 from runtime.seasons import SeasonPaths
 from scripts import close_week
+from local_private_service import local_service
 from support_rosters import game_day_roster
 
 JAX = close_week.PROTAGONIST
@@ -60,16 +57,17 @@ def game(event_id, receipt, away, home):
 
 
 class CloseWeekPauseTests(unittest.TestCase):
+    """The local private store's seed is pinned per test (the test's own
+    name; local_private_service), so every run draws the same games."""
+
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory(); self.addCleanup(self.tmp.cleanup)
-        root = Path(self.tmp.name)
+        self.fixture(Path(self.tmp.name), self._testMethodName)
+
+    def fixture(self, root, seed_label):
         (root / "career/2014").mkdir(parents=True)
         self.paths = SeasonPaths(2014, root)
-        store = Store(root / "private/state.sqlite3"); store.initialize("snapshot")
-        server = ThreadingHTTPServer(("127.0.0.1", 0), handler(store, "test-only-token", "snapshot"))
-        threading.Thread(target=server.serve_forever, daemon=True).start()
-        self.addCleanup(server.server_close); self.addCleanup(server.shutdown)
-        self.client = Client(f"http://127.0.0.1:{server.server_port}", token="test-only-token", snapshot="snapshot")
+        self.client = local_service(self, root / "private", seed_label)[1]
         self.home = club(JAX, "A", featured=("A-QB1", "A-WR1"), third_quarterback=True)
         self.away = club("B", "B")
         # Background game listed first: the closure must still draw Jacksonville first.
@@ -165,7 +163,11 @@ class CloseWeekPauseTests(unittest.TestCase):
         own = json.loads((receipts_dir / "week_01_b_at_jacksonville.json").read_text())
         self.assertEqual(own["season"], 2014)
         # Same game run autonomously: identical up to the pause (same event
-        # reference, same frozen injury), then the depth default instead of Stone's choice.
+        # reference, same frozen injury), then the depth default instead of
+        # Stone's choice. Only the pause drive's replacement is compared:
+        # after it either run may lose its passer to a natural onset and
+        # promote the other quarterback, so the first post-pause passer, not
+        # the whole remainder, tells the continued run from the autonomous one.
         auto = kernel.resolve_game(self.home, self.away, seed=self.entropy, event_id=EVENT,
                                    _test_onsets=dict(self.onsets))
         self.assertEqual(settled(auto["possessions"], self.drive), settled(paused["partial"]["possessions"], self.drive))
@@ -174,11 +176,40 @@ class CloseWeekPauseTests(unittest.TestCase):
         self.assertEqual([i for i in auto["injuries"] if i["drive"] <= self.drive],
                          [i for i in final["injuries"] if i["drive"] <= self.drive])
         auto_sub = next(s for s in auto["substitutions"] if s["removed"] == "A-QB1")
-        self.assertEqual(auto_sub["basis"], "depth_order")
+        self.assertEqual((auto_sub["basis"], auto_sub["replacement"]), ("depth_order", quarterback["default"]))
         self.assertNotEqual(auto_sub["replacement"], choice)
-        after = lambda r: [row.get("passer") for row in r["play_ledger"] if row["drive"] > self.drive and row.get("offense") == JAX]
-        self.assertIn(choice, after(final))
-        self.assertNotIn(choice, after(auto))
+        first_passer = lambda r: next(p["passer"] for p in r["possessions"] if p["team"] == JAX and p["number"] > self.drive)
+        self.assertEqual(first_passer(final), choice)
+        self.assertEqual(first_passer(auto), quarterback["default"])
+        self.assertTrue(all(p["passer"] == "A-QB1" for p in final["possessions"]
+                            if p["team"] == JAX and p["number"] <= self.drive))
+
+    def test_seed_sweep_pauses_continues_and_closes_without_invariant_failures(self):
+        # A small set of pinned store seeds through the whole pause/continue
+        # closure: every closed result validates (no chain, participation or
+        # removal invariant fires on the resumed path).
+        for label in ("sweep-0", "sweep-1", "sweep-2"):
+            with self.subTest(seed=label):
+                self.fixture(Path(self.tmp.name) / label, label)
+                _, paused = self.close()
+                self.assertIsNotNone(paused)
+                pause = paused["pause"]
+                quarterback = next(d for d in pause["decisions"] if d["slot"] == "A-QB1")
+                choices = {d["slot"]: d["default"] for d in pause["decisions"]}
+                choices["A-QB1"] = next(p for p in reversed(quarterback["eligible"]) if p != quarterback["default"])
+                results, still_paused = self.close({"choices": choices})
+                while still_paused is not None:
+                    defaults = {d["slot"]: d["default"] for d in still_paused["pause"]["decisions"]}
+                    results, still_paused = self.close({"choices": defaults})
+                self.assertEqual(set(results), {EVENT, BACKGROUND})
+                for event_id, result in results.items():
+                    self.assertTrue(result["terminated"], event_id)
+                    self.assertEqual(validate_result(result), [], event_id)
+                    self.assertEqual(result["diagnostics"].get("chain_layout_failed", 0), 0, event_id)
+                final = results[EVENT]
+                self.assertEqual(final["pauses"][0]["choices"], choices)
+                self.assertEqual(next(p["passer"] for p in final["possessions"]
+                                      if p["team"] == JAX and p["number"] > self.drive), choices["A-QB1"])
 
     def test_answers_are_validated_against_the_pending_pause(self):
         _, paused = self.close()

@@ -1,6 +1,6 @@
 # 2014 setup and execution checklist
 
-Checkpoint: July 29, 2014. Training camp is open (Block 1 complete through July 29, without full pads); games remain blocked. The [operating baseline](operating_baseline.md) owns the workflow, the [calendar](../calendar.md) the dates, and [Document 5](../../../state/05_Current_Season_State.md) the current snapshot. Current record owners are mapped in [repository_map.json](../../../docs/repository_map.json).
+Checkpoint: August 1, 2014. Training camp is open (Block 1 complete through July 29, without full pads; the first padded block of Block 2 complete through August 1, controlled contact); games remain blocked. The [operating baseline](operating_baseline.md) owns the workflow, the [calendar](../calendar.md) the dates, and [Document 5](../../../state/05_Current_Season_State.md) the current snapshot. Current record owners are mapped in [repository_map.json](../../../docs/repository_map.json).
 
 | Area | Prepared now | Remaining work and gate |
 |---|---|---|

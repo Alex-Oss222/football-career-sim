@@ -12,10 +12,8 @@ import json
 import random
 import sys
 import tempfile
-import threading
 import unittest
 from dataclasses import replace
-from http.server import ThreadingHTTPServer
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -23,8 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from runtime import injury_model, participation, usage
 from runtime.game_runner import run_game
 from runtime.kernel import TeamInput, resolve_game, validate_result
-from runtime.private_client import Client
-from runtime.private_service import Store, handler
+from local_private_service import local_service
 from support_rosters import game_day_roster
 from synthetic_games import SEED, sample, sample_teams
 
@@ -389,29 +386,46 @@ class ModelTests(unittest.TestCase):
 
 
 class ProductionRunnerPauseTests(unittest.TestCase):
-    """A natural pause and resume through run_game and the private closure."""
+    """A natural pause and resume through run_game and the private closure.
+
+    The local private store's seed is pinned per test (local_private_service)
+    so each run reproduces; "398" is the store seed under which the search
+    game ``pause-search-1`` once failed validation (a real 2012 kneel-then-punt
+    tuple admitted at a start spot where its free snap had to gain a first
+    down: chains.chain_feasible, October 2026)."""
+
+    REGRESSION_SEED = "398"
+    SWEEP_SEEDS = ("0", "8", "17")
 
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory(); self.addCleanup(self.tmp.cleanup)
-        store = Store(Path(self.tmp.name) / "state.sqlite3"); store.initialize("snapshot")
-        server = ThreadingHTTPServer(("127.0.0.1", 0), handler(store, "test-only-token", "snapshot"))
-        threading.Thread(target=server.serve_forever, daemon=True).start()
-        self.addCleanup(server.server_close); self.addCleanup(server.shutdown)
-        self.client = Client(f"http://127.0.0.1:{server.server_port}", token="test-only-token", snapshot="snapshot")
-
-    def test_run_game_pauses_and_resumes(self):
         roster = tuple(p for p in game_day_roster("A") if p.player_id != "A-WR5")
         featured = ("A-QB1", "A-RB1", "A-WR1", "A-WR2", "A-TE1", "A-CB1", "A-S1", "A-OLB1", "A-DE1")
-        home = TeamInput("A", tuple(p.player_id for p in roster), roster=roster,
-                         rotation_plan=tuple({"player_id": pid, "featured": True} for pid in featured))
+        self.home = TeamInput("A", tuple(p.player_id for p in roster), roster=roster,
+                              rotation_plan=tuple({"player_id": pid, "featured": True} for pid in featured))
         b_roster = tuple(p for p in game_day_roster("B") if p.player_id != "B-WR5")
-        away = TeamInput("B", tuple(p.player_id for p in b_roster), roster=b_roster)
+        self.away = TeamInput("B", tuple(p.player_id for p in b_roster), roster=b_roster)
+
+    def client(self, label):
+        root = Path(self.tmp.name) / label
+        root.mkdir()
+        return local_service(self, root, label)[1]
+
+    def run_game(self, client, event, **kwargs):
+        return run_game(self.home, self.away, event_id=event, snapshot="snapshot", client=client,
+                        management_mode="user_controlled", controlled_team="A", **kwargs)
+
+    def pause_and_resume(self, label):
+        """The first naturally paused game under the store seed `label`,
+        resumed with the last eligible choice at every slot and the depth
+        default at any later pause; (partial, resumed, decisions)."""
+        client = self.client(label)
         for i in range(60):
             event = "pause-search-%d" % i
-            partial = run_game(home, away, event_id=event, snapshot="snapshot", client=self.client,
-                               management_mode="user_controlled", controlled_team="A")
+            partial = self.run_game(client, event)
             if not partial["terminated"]:
                 break
+            self.assertEqual(validate_result(partial), [], event)
         else:
             self.fail("no consequential removal in 60 synthetic games")
         self.assertNotIn("final_score", partial)
@@ -424,21 +438,48 @@ class ProductionRunnerPauseTests(unittest.TestCase):
             choices[d["slot"]] = pick
             taken.add(pick)
         decisions = [{"token": pause["continuation_token"], "choices": choices}]
-        resumed = None
         while True:
-            resumed = run_game(home, away, event_id=event, snapshot="snapshot", client=self.client,
-                               management_mode="user_controlled", controlled_team="A",
-                               continuation={"decisions": decisions})
+            resumed = self.run_game(client, event, continuation={"decisions": decisions})
             if resumed["terminated"]:
                 break
             pause = resumed["pauses"][-1]
             decisions.append({"token": pause["continuation_token"],
                               "choices": {d["slot"]: d["default"] for d in pause["decisions"]}})
+        return partial, resumed, decisions
+
+    def check(self, partial, resumed, decisions):
         self.assertEqual(validate_result(resumed), [])
         drive = partial["pauses"][-1]["drive"]
         self.assertEqual(settled(resumed["possessions"], drive), settled(partial["possessions"], drive))
         self.assertEqual([r for r in resumed["play_ledger"] if r["drive"] <= drive], partial["play_ledger"])
         self.assertEqual(len(resumed["pauses"]), len(decisions))
+
+    def test_run_game_pauses_and_resumes(self):
+        self.check(*self.pause_and_resume(self.REGRESSION_SEED))
+
+    def test_regression_seed_search_game_validates(self):
+        # Under store seed 398 the second search game (an ordinary terminated
+        # user-controlled game, no pause) raised ``down_distance_chain_break:
+        # drive 23 punts before fourth down``: a 3-snap punt tuple (run,
+        # kneel -2, kneel -1, punt) replayed from the 94 with net 8 forced an
+        # 11-yard run, a first down and a third-down punt. The feasibility
+        # gate now counts the kneel yards, so the tuple is never selected.
+        client = self.client(self.REGRESSION_SEED)
+        self.run_game(client, "pause-search-0")
+        result = self.run_game(client, "pause-search-1")
+        self.assertTrue(result["terminated"])
+        self.assertEqual(validate_result(result), [])
+        self.assertEqual(result["diagnostics"].get("chain_layout_failed", 0), 0)
+        self.assertEqual(result["diagnostics"].get("chain_layout_resample_exhausted", 0), 0)
+        for p in result["possessions"]:
+            if p["category"] == "punt" and any(r["drive"] == p["number"] and r.get("play_type") in ("pass", "run")
+                                               for r in result["play_ledger"]):
+                self.assertEqual(p["fourth_down"]["down"], 4, p["number"])
+
+    def test_seed_sweep_keeps_the_invariants_through_pause_and_continue(self):
+        for label in self.SWEEP_SEEDS:
+            with self.subTest(seed=label):
+                self.check(*self.pause_and_resume(label))
 
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@
 
 [Team](team/README.md) · [Calendar](calendar.md) · [Finances](finances/README.md) · [Trades](trades/README.md)
 
-**Where we are:** training camp is open. Rookies and first-year players reported July 21 and veterans July 24; the first five practices ran July 25–29 without full pads; the clock is July 29, 2014. Next are the first full-pad practice July 30, the August 2 scrimmage and the August 8 preseason opener against Tampa Bay, which remains blocked by the 2014 release gates. [Current state](../../state/05_Current_Season_State.md) holds the live checkpoint and outstanding decisions. No 2014 game has been played.
+**Where we are:** training camp is open. Rookies and first-year players reported July 21 and veterans July 24; the first five practices ran July 25–29 without full pads and the first padded block closed August 1 (full pads July 30 and August 1, controlled contact, July 31 off); the clock is August 1, 2014. Next are the August 2 scrimmage and the August 8 preseason opener against Tampa Bay, which remains blocked by the 2014 release gates. [Current state](../../state/05_Current_Season_State.md) holds the live checkpoint and outstanding decisions. No 2014 game has been played.
 
 ## Follow the season
 

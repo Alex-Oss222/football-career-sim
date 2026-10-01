@@ -156,6 +156,21 @@ class FeasibilityTests(unittest.TestCase):
         self.assertFalse(chain_feasible("punt", plays=8, net=12, spot=80))  # two first downs need 20
         self.assertFalse(chain_feasible("punt", plays=4, net=6, spot=8))  # goal to go cannot convert
 
+    def test_kneels_are_fixed_losses_after_the_free_snaps(self):
+        # A real 2012 drive (run, kneel -2, kneel -1, punt on 4th) replayed
+        # from the 94 with net 8: its one free snap must gain 11, a first
+        # down, so the punt would come on third down. Store seed 398 of
+        # tests/test_injuries_in_game.py drew it before this gate counted the
+        # kneel yards (October 2026). Net 6 (a 9-yard run) stays feasible.
+        self.assertFalse(chain_feasible("punt", plays=3, net=8, spot=94, kneel_yards=[-2, -1]))
+        self.assertFalse(chain_feasible("punt", plays=3, net=9, spot=69, kneel_yards=[-2]))
+        self.assertTrue(chain_feasible("punt", plays=3, net=6, spot=94, kneel_yards=[-2, -1]))
+        self.assertTrue(chain_feasible("punt", plays=3, net=8, spot=94))
+        # Kneels after a first down: the free snaps before them still need
+        # the ten (6 snaps, two kneels, net 7: the four free snaps gain 10).
+        self.assertTrue(chain_feasible("punt", plays=7, net=7, spot=50, kneel_yards=[-2, -1]))
+        self.assertFalse(chain_feasible("punt", plays=7, net=6, spot=50, kneel_yards=[-2, -1]))
+
     def test_downs_needs_four_snaps(self):
         self.assertFalse(chain_feasible("downs", plays=3, net=2, spot=50))
         self.assertTrue(chain_feasible("downs", plays=4, net=2, spot=50))
