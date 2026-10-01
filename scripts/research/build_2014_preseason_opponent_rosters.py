@@ -2,7 +2,8 @@
 """Build the 2014 preseason opponent library: each opponent's 90-man camp
 roster as it stood for its preseason game against Jacksonville, reconciled to
 branch control. Game 1: Tampa Bay, August 8, 2014 (at Jacksonville). Game 2:
-Chicago, August 14, 2014 (Jacksonville at Chicago).
+Chicago, August 14, 2014 (Jacksonville at Chicago). Game 3: Detroit, August 22,
+2014 (Jacksonville at Detroit).
 
 Research tool only; the runtime never downloads anything. The real charts and
 rosters are not available as a machine feed (nflverse carries no preseason
@@ -302,7 +303,141 @@ CHICAGO = {
     "cross_check_frozen": None,
 }
 
-CLUBS = [TAMPA_BAY, CHICAGO]
+# ---------------------------------------------------------------------------
+# Game 3: Detroit Lions, August 22, 2014, Jacksonville at Detroit (Ford Field).
+#
+# The club's first 2014 unofficial depth chart, released Tuesday, August 5,
+# 2014 (Pride of Detroit "Lions depth chart released for preseason opener",
+# August 5; SI.com "Detroit Lions release depth chart: Rookie Nate Freese No.
+# 1 kicker", August 6; CBS Detroit "Lions Release First Depth Chart", August
+# 5; the ESPN Detroit Lions blog "Lions release depth chart for Browns").
+# Co-listed cells (the fourth-string running backs, the fourth-string
+# receivers of each column, the second-string returners) are ranked in listed
+# order. Quintin Payton (WR4), Cory Greenwood (SLB3) and Justin Jackson (SLB4)
+# were on the chart but released August 10, 7 and 15, so none is a roster
+# member on August 22; Nate Ness (signed August 7), Conner Vernon (claimed
+# August 11) and Shamari Benton (signed August 15) are `unlisted`. The chart
+# spells Dwight Bentley "Bill Bentley", Ezekiel Ansah "Ziggy Ansah" and Greg
+# Hickman "Gregory Hickman"; the registry and league-database names are used.
+# ---------------------------------------------------------------------------
+DETROIT = {
+    "team": "Detroit Lions",
+    "code": "DET",
+    "game": "preseason-03",
+    "as_of": "2014-08-22",
+    "gate": "gated: usable for the August 22, 2014 preseason game and after. The chart was public August 5, 2014 and the club's game-day list of players not playing was published August 22, 2014; no preseason score, statistic, participation or later transaction is an input.",
+    "chart": [
+        ("Offense", "QB", "QB", ["Matthew Stafford", "Dan Orlovsky", "Kellen Moore", "James Franklin"]),
+        ("Offense", "RB", "RB", ["Reggie Bush", "Joique Bell", "Mikel Leshoure", "Theo Riddick", "Steven Miller", "George Winn"]),
+        ("Offense", "FB", "FB", ["Montell Owens", "Jed Collins", "Chad Abram"]),
+        ("Offense", "WR", "WR", ["Calvin Johnson", "Kris Durham", "Jeremy Ross", "Corey Fuller", "Quintin Payton"]),
+        ("Offense", "WR", "WR", ["Golden Tate", "Kevin Ogletree", "Ryan Broyles", "Patrick Edwards", "Andrew Peacock", "T.J. Jones"]),
+        ("Offense", "TE", "TE", ["Brandon Pettigrew", "Joseph Fauria", "Eric Ebron", "Jordan Thompson", "Jacob Maxwell"]),
+        ("Offense", "LT", "T", ["Riley Reiff", "Cornelius Lucas", "Michael Williams"]),
+        ("Offense", "LG", "G", ["Rob Sims", "Rodney Austin", "Alex Bullard"]),
+        ("Offense", "C", "C", ["Dominic Raiola", "Travis Swanson", "Darren Keyton"]),
+        ("Offense", "RG", "G", ["Larry Warford", "Garrett Reynolds", "Bryce Quigley"]),
+        ("Offense", "RT", "T", ["LaAdrian Waddle", "Corey Hilliard", "A.J. Dalton"]),
+        ("Defense", "LDE", "DE", ["Ezekiel Ansah", "Darryl Tapp", "George Johnson"]),
+        ("Defense", "DT", "DT", ["Nick Fairley", "Andre Fluellen", "Caraun Reid", "Greg Hickman"]),
+        ("Defense", "DT", "DT", ["Ndamukong Suh", "C.J. Mosley", "Jimmy Saddler-McQueen", "Xavier Proctor"]),
+        ("Defense", "RDE", "DE", ["Jason Jones", "Devin Taylor", "Larry Webster", "Kris Redding"]),
+        ("Defense", "SLB", "OLB", ["Ashlee Palmer", "Kyle Van Noy", "Cory Greenwood", "Justin Jackson"]),
+        ("Defense", "MLB", "MLB", ["Stephen Tulloch", "Travis Lewis", "Brandon Hepburn"]),
+        ("Defense", "WLB", "OLB", ["DeAndre Levy", "Tahir Whitehead", "Julian Stanford"]),
+        ("Defense", "LCB", "CB", ["Rashean Mathis", "Dwight Bentley", "Nevin Lawson", "Aaron Hester", "Mohammed Seisay"]),
+        ("Defense", "RCB", "CB", ["Darius Slay", "Cassius Vaughn", "Jonte Green", "Chris Greenwood"]),
+        ("Defense", "SS", "SS", ["James Ihedigbo", "DeJon Gomes", "Jerome Couplin"]),
+        ("Defense", "FS", "FS", ["Glover Quin", "Don Carey", "Isa Abdul-Quddus"]),
+        ("Special Teams", "K", "K", ["Nate Freese", "Giorgio Tavecchio"]),
+        ("Special Teams", "P", "P", ["Sam Martin", "Drew Butler"]),
+        ("Special Teams", "LS", "LS", ["Don Muhlbach"]),
+        ("Special Teams", "KR", None, ["Jeremy Ross", "Theo Riddick", "Steven Miller"]),
+        ("Special Teams", "PR", None, ["Jeremy Ross", "Golden Tate", "Steven Miller"]),
+    ],
+    # On the chart but not under contract on August 22, 2014: name -> reason.
+    "departed": {
+        "Quintin Payton": "released August 10, 2014 (club transaction log; the ESPN Detroit Lions blog on the Vernon claim)",
+        "Cory Greenwood": "released August 7, 2014 (club transaction log; the ESPN Detroit Lions blog)",
+        "Justin Jackson": "released August 15, 2014 (club transaction log; Pride of Detroit, August 16)",
+    },
+    # Under contract on August 22, 2014 but on no available transcription of
+    # the August 5 chart: name -> (position, basis).
+    "unlisted": {
+        "Nate Ness": ("CB", "signed August 7, 2014, after the chart was released (club transaction log: 'sign CB Nate Ness, release LB Cory Greenwood')"),
+        "Conner Vernon": ("WR", "claimed off waivers from Cincinnati August 11, 2014, after the chart was released (club transaction log; the ESPN Detroit Lions blog)"),
+        "Shamari Benton": ("OLB", "signed August 15, 2014, after the chart was released (club transaction log; Pride of Detroit, August 16)"),
+    },
+    "other_from": {},
+    # Not playing in the August 22 game under reports dated by August 22 (CBS
+    # Detroit, 'Van Noy, Ihedigbo, Jones Inactive For Lions Preseason Game',
+    # August 22, 2014, the club's announcement; SI.com, 'Lions linebacker Kyle
+    # Van Noy worried he has sports hernia', August 25, for the Thursday
+    # timing; the ESPN Detroit Lions blog practice report of August 18 and the
+    # Detroit Jock City injury report of August 21 for Gomes).
+    "held_out": {
+        "James Ihedigbo": "resting; announced not playing (club announcement, August 22)",
+        "Kyle Van Noy": "abdominal injury noticed Thursday, August 21; announced not playing (club announcement, August 22)",
+        "T.J. Jones": "shoulder; on the active/physically-unable-to-perform list since the start of camp; announced not playing (club announcement, August 22)",
+        "DeJon Gomes": "neck injury in the August 15 Oakland game; did not practice August 18 and was still out on the August 21 injury report; not on the club's August 22 list, held out on the dated injury reports (placed on injured reserve after the game)",
+    },
+    # Transactions July 24 to August 25, 2014 (the club's own transaction page,
+    # read directly; Wikipedia's 2014 season account, read directly; dated
+    # Pride of Detroit, ProFootballTalk, NFL.com and ESPN notices as search
+    # extracts). Recorded for the reconciliation list; the roster above
+    # already reflects them.
+    "transactions_key": "transactions_july_24_to_august_25",
+    "transactions": [
+        ("2014-07-24", "Signed P Drew Butler; released S Gabe Lynn (club log; Wikipedia lists the Butler signing July 25)"),
+        ("2014-07-27", "Released DE Kalonji Kashama"),
+        ("2014-07-29", "Claimed WR Quintin Payton off waivers from Tampa Bay"),
+        ("2014-07-30", "Signed DE Kris Redding; released WR Cody Wilson (waived/injured; Pride of Detroit, July 31; Wikipedia lists the Redding signing July 31)"),
+        ("2014-08-03", "Released WR Reese Wiggins"),
+        ("2014-08-04", "Claimed WR Jon Baldwin off waivers from San Francisco (NFL.com; ProFootballTalk); waived August 6 with the failed-physical designation (knee), so never a camp practice member (Pride of Detroit, August 6; the club's log does not carry the claim)"),
+        ("2014-08-06", "Signed CB Drayton Florence (club log; the club announced it Thursday, August 7, before practice)"),
+        ("2014-08-07", "Signed CB Nate Ness; released LB Cory Greenwood"),
+        ("2014-08-10", "Released WR Quintin Payton"),
+        ("2014-08-11", "Claimed WR Conner Vernon off waivers from Cincinnati"),
+        ("2014-08-12", "Activated DE Ezekiel Ansah from the active/physically-unable-to-perform list (NFL.com, August 12; not a roster count move)"),
+        ("2014-08-15", "Signed LB Shamari Benton; released LB Justin Jackson (club log; Pride of Detroit, August 16)"),
+        ("2014-08-18", "Released CB Drayton Florence (club log; ProFootballTalk and SI report the announcement Tuesday, August 19)"),
+        ("2014-08-22", "The club's log dates the release of G Alex Bullard, T A.J. Dalton, DT Greg Hickman, RB Steven Miller, DE Kris Redding and WR Conner Vernon, and WR T.J. Jones's move to reserve/physically-unable-to-perform, August 22; the moves were announced Saturday, August 23 at 3:51 p.m. ET (Pro Football Rumors; Wikipedia dates Jones's placement August 23). After the game: not applied; all seven are roster members at kickoff"),
+        ("2014-08-24", "Released FB Chad Abram, P Drew Butler, QB James Franklin, CB Jonte Green, CB Aaron Hester and K Giorgio Tavecchio; placed S DeJon Gomes on injured reserve (club log; Wikipedia dates the Gomes placement August 26). After the game: not applied"),
+        ("2014-08-25", "Released TE Jacob Maxwell and G Bryce Quigley; claimed TE Michael Egnew and TE Emil Igwenagu. After the game: not applied"),
+    ],
+    # Names the registry or nflverse spell differently from the chart.
+    "aliases": {},
+    # Reviewed identities for names nflverse shares with a namesake or filters
+    # out: the 2013 Alabama tight end Detroit moved to tackle, not the 1983
+    # running back; the 2014 Bloomsburg end, not the 1992 tackle; the 2013
+    # Virginia Tech receiver, not the 1995 cornerback; the kicker whose first
+    # regular-season game came in 2017 (nflverse rookie_season), in his third
+    # NFL camp in 2014.
+    "identities": {"Michael Williams": "00-0030110", "Larry Webster": "00-0031065", "Corey Fuller": "00-0030095",
+                   "Giorgio Tavecchio": "00-0028907"},
+    "ids": {},
+    "no_jersey": set(),
+    "notes": [
+        "Next man up after the removals: Jed Collins at FB1 (Owens), Michael Williams at LT2 (Lucas), Jimmy Saddler-McQueen at DT2 behind Suh (Mosley)",
+        "The chart spells Dwight Bentley 'Bill Bentley', Ezekiel Ansah 'Ziggy Ansah' and Greg Hickman 'Gregory Hickman'; the registry and league-database names are used. Co-listed cells (the fourth-string running backs Riddick, Miller, Winn; the fourth-string receivers Fuller, Payton and Edwards, Peacock, Jones; the second-string returners) are ranked in listed order. Jersey numbers are stored only for players who reached a 2014 regular-season roster (Week 1 library or nflverse roster_2014); the camp-only players carry none, so their ties break by name.",
+        "The two defensive-tackle columns (Fairley's listed before Suh's) and the assignment of receivers to the two columns are single-transcription details; the difference only reorders reserves within the DL and WR groups",
+        "Gomes is held out on dated injury reports (neck, August 15; no practice August 18; still out August 21), not on the club's August 22 list, which named only Ihedigbo, Van Noy and Jones. Calvin Johnson, held out of the first two preseason games after offseason knee and finger surgery, was announced for this game (Caldwell, August 18) and is available; Ansah, off the active/PUP list August 12, is available",
+    ],
+    "sources": {
+        "depth_chart": "Detroit's first 2014 unofficial depth chart, released Tuesday, August 5, 2014: prideofdetroit.com 'Lions depth chart released for preseason opener' (August 5), si.com 'Detroit Lions release depth chart: Rookie Nate Freese No. 1 kicker' (August 6), cbsnews.com/detroit 'Lions Release First Depth Chart' (August 5), espn.com Detroit Lions blog 'Lions release depth chart for Browns', bleacherreport.com 'Detroit Lions 2014 Virtual Program'; transcribed from search-engine extracts because those pages were not reachable from this session (see the record's limits). The club's own release article was not located",
+        "roster_membership": "the chart's listed players plus the dated transaction log, read directly from detroitlions.com/team/transactions/2014 and the Wikipedia 2014 season account, with dated Pride of Detroit, ProFootballTalk, NFL.com, SI and Pro Football Rumors notices as search extracts; later arrivals (Michael Egnew and Emil Igwenagu August 25, Alex Henery, Kellen Davis, Josh Thomas and Josh Bynes in September, Matt Prater October 7) excluded by their dates. Count check: 89 under contract on August 22 (90 before the August 18 Florence release), consistent with the 75-man deadline: six released and Jones to reserve/PUP August 23, six released and Gomes to injured reserve August 24 leave 75",
+        "availability": "CBS Detroit 'Van Noy, Ihedigbo, Jones Inactive For Lions Preseason Game' (August 22, 2014; the club's announcement, read as a search extract); SI.com 'Lions linebacker Kyle Van Noy worried he has sports hernia' (August 25, 2014, for the Thursday timing only); ESPN Detroit Lions blog 'Practice report: Gomes not participating' (August 18, 2014) and Detroit Jock City 'Detroit Lions Injury Report: Preseason Week 3' (August 21, 2014) for Gomes; NFL.com 'Jags' Toby Gerhart returns; Lions' Ziggy Ansah off PUP' (August 12, 2014, read directly). Only the three announced players and Gomes are unavailable",
+        "co_listed_order": "chart string, then line slot LT-LG-C-RG-RT, then chart column, then jersey number, then name (the Week 1 rule); unlisted players rank below every listed player of their group",
+        "identity": "library/data/player_birth_dates.json, then nflverse players.csv (single 2014-active match by name; four reviewed identities by gsis id); jersey from the Week 1 library or nflverse roster_2014.csv; photographs from library/data/player_photos.json; page_url from the Week 1 library or the nflverse pfr id",
+        "branch_control": "career/2014/team/roster/roster.md matched by gsis id through the identity registry and the league database, as in the Week 1 build",
+        "draft_and_undrafted_pairing": "career/2014/league/personnel/draft_pairing.md (no Jacksonville selection pairs with a Detroit selection) and career/2014/draft/udfa_signings.md (Cornelius Lucas signed with Jacksonville; leaves Detroit)",
+        "trades_and_free_agency": "career/2014/trades/completed_trades/trades.md, career/2014/free_agency/signings.md, career/2014/league/personnel/fa_draws.md (Golden Tate chose Detroit on his real terms March 12, 2014, so his real signing stands; no branch trade touches Detroit)",
+        "retirements": "career/2014/league/personnel/retirements.md (none affecting Detroit by August 22, 2014)",
+    },
+    "cross_check_frozen": None,
+}
+
+CLUBS = [TAMPA_BAY, CHICAGO, DETROIT]
 
 
 def load_week1_bio():

@@ -1,5 +1,5 @@
 """The prepared 2014 preseason opponent library (Tampa Bay, August 8, 2014;
-Chicago, August 14, 2014).
+Chicago, August 14, 2014; Detroit, August 22, 2014).
 
 Prepared research, gated per club for its preseason game and after. These
 checks cover the file's shape, each club's branch reconciliation and the
@@ -25,6 +25,7 @@ ROSTER = ROOT / "career/2014/00_Team_Operations/Team/Roster/roster.md"
 REGISTRY = ROOT / "library/data/player_birth_dates.json"
 TAMPA = "Tampa Bay Buccaneers"
 CHICAGO = "Chicago Bears"
+DETROIT = "Detroit Lions"
 JACKSONVILLE = "Jacksonville Jaguars"
 UNIT = {"QB": "offense", "RB": "offense", "FB": "offense", "WR": "offense", "TE": "offense",
         "OL": "offense", "DL": "defense", "LB": "defense", "DB": "defense",
@@ -67,6 +68,7 @@ class PreseasonOpponentLibrary2014Tests(unittest.TestCase):
     library = json.loads(LIBRARY.read_text(encoding="utf-8"))
     tampa = library["clubs"][TAMPA]
     chicago = library["clubs"][CHICAGO]
+    detroit = library["clubs"][DETROIT]
     registry = json.loads(REGISTRY.read_text(encoding="utf-8"))["players"]
 
     # Shape ----------------------------------------------------------------
@@ -76,15 +78,18 @@ class PreseasonOpponentLibrary2014Tests(unittest.TestCase):
         self.assertEqual((lib["schema_version"], lib["season"]), (2, 2014))
         for key in ("games", "branch_basis", "branch_controlled_count", "clubs", "removed_by_club"):
             self.assertIn(key, lib)
-        self.assertEqual(list(lib["clubs"]), [TAMPA, CHICAGO])
-        self.assertEqual(lib["games"], {"preseason-01": TAMPA, "preseason-02": CHICAGO})
+        self.assertEqual(list(lib["clubs"]), [TAMPA, CHICAGO, DETROIT])
+        self.assertEqual(lib["games"], {"preseason-01": TAMPA, "preseason-02": CHICAGO, "preseason-03": DETROIT})
         self.assertEqual((self.tampa["code"], self.tampa["game"], self.tampa["as_of"]), ("TB", "preseason-01", "2014-08-08"))
         self.assertEqual((self.chicago["code"], self.chicago["game"], self.chicago["as_of"]), ("CHI", "preseason-02", "2014-08-14"))
         self.assertTrue(self.tampa["gate"].startswith("gated: usable for the August 8, 2014 preseason game and after"))
         self.assertTrue(self.chicago["gate"].startswith("gated: usable for the August 14, 2014 preseason game and after"))
+        self.assertEqual((self.detroit["code"], self.detroit["game"], self.detroit["as_of"]), ("DET", "preseason-03", "2014-08-22"))
+        self.assertTrue(self.detroit["gate"].startswith("gated: usable for the August 22, 2014 preseason game and after"))
+        self.assertIn("transactions_july_24_to_august_25", self.detroit)
         self.assertIn("transactions_july_21_to_august_9", self.tampa)
         self.assertIn("transactions_july_25_to_august_18", self.chicago)
-        for club in (self.tampa, self.chicago):
+        for club in (self.tampa, self.chicago, self.detroit):
             self.assertTrue(CLUB_FIELDS <= set(club))
             for player in club["players"]:
                 self.assertEqual(set(player) - OPTIONAL_FIELDS, PLAYER_FIELDS)
@@ -93,9 +98,10 @@ class PreseasonOpponentLibrary2014Tests(unittest.TestCase):
     def test_camp_roster_sizes(self):
         self.assertEqual(len(self.tampa["players"]), 87)
         self.assertEqual(len(self.chicago["players"]), 89)
+        self.assertEqual(len(self.detroit["players"]), 85)
 
     def test_depth_is_a_clean_sequence_in_every_group(self):
-        for team, club in ((TAMPA, self.tampa), (CHICAGO, self.chicago)):
+        for team, club in ((TAMPA, self.tampa), (CHICAGO, self.chicago), (DETROIT, self.detroit)):
             by_group = {}
             for player in club["players"]:
                 by_group.setdefault(group(player["position"]), []).append(player)
@@ -105,8 +111,9 @@ class PreseasonOpponentLibrary2014Tests(unittest.TestCase):
 
     def test_every_player_id_resolves_in_the_birth_date_registry_or_is_named_unverified(self):
         unverified = {TAMPA: {"Euclid Cummings", "Jibreel Black", "Ryne Giddins", "Damaso Munoz", "Mark Joyce"},
-                      CHICAGO: {"Jordan Lynch", "Lee Pegues", "Derricus Purdy", "Marcus Trice", "Brandon Hartson", "Chad Rempel"}}
-        for team, club in ((TAMPA, self.tampa), (CHICAGO, self.chicago)):
+                      CHICAGO: {"Jordan Lynch", "Lee Pegues", "Derricus Purdy", "Marcus Trice", "Brandon Hartson", "Chad Rempel"},
+                      DETROIT: {"James Franklin", "Chad Abram", "Alex Bullard", "A.J. Dalton", "Greg Hickman", "Kris Redding", "Shamari Benton"}}
+        for team, club in ((TAMPA, self.tampa), (CHICAGO, self.chicago), (DETROIT, self.detroit)):
             for player in club["players"]:
                 with self.subTest(club=team, player=player["player_id"]):
                     row = self.registry.get(player["player_id"])
@@ -242,13 +249,94 @@ class PreseasonOpponentLibrary2014Tests(unittest.TestCase):
         self.assertEqual([p["player_id"] for p in self.chicago["players"] if "placekicker" in p.get("roles", ())], ["Robbie Gould"])
         self.assertEqual({p["player_id"] for p in self.chicago["players"] if "punt" in p.get("roles", ())}, {"Pat O'Donnell", "Tress Way"})
 
+    # Detroit, August 22 -------------------------------------------------------
+
+    def test_detroit_quarterbacks_as_the_chart_listed_them(self):
+        quarterbacks = sorted((p for p in self.detroit["players"] if p["position"] == "QB"), key=lambda p: p["depth"])
+        self.assertEqual([p["player_id"] for p in quarterbacks],
+                         ["Matthew Stafford", "Dan Orlovsky", "Kellen Moore", "James Franklin"])
+
+    def test_detroit_offensive_line_slots_with_lucas_removed(self):
+        line = sorted((p for p in self.detroit["players"] if group(p["position"]) == "OL"), key=lambda p: p["depth"])
+        self.assertEqual([p["slots"].split(",")[0] for p in line[:5]], ["LT1", "LG1", "C1", "RG1", "RT1"])
+        self.assertEqual([p["player_id"] for p in line[:5]],
+                         ["Riley Reiff", "Rob Sims", "Dominic Raiola", "Larry Warford", "LaAdrian Waddle"])
+        # Lucas (LT2) is Jacksonville's; the second string is the four remaining
+        # cells and Michael Williams is the next man up at left tackle.
+        self.assertEqual([p["slots"].split(",")[0] for p in line[5:9]], ["LG2", "C2", "RG2", "RT2"])
+        self.assertEqual((line[9]["player_id"], line[9]["slots"], line[9]["gsis_id"]), ("Michael Williams", "LT3", "00-0030110"))
+        self.assertEqual(len(line), 14)
+
+    def test_detroit_starters_as_the_chart_listed_them(self):
+        first = first_string(self.detroit)
+        for name in ("Matthew Stafford", "Reggie Bush", "Calvin Johnson", "Golden Tate", "Brandon Pettigrew",
+                     "Ezekiel Ansah", "Nick Fairley", "Ndamukong Suh", "Jason Jones", "Ashlee Palmer",
+                     "Stephen Tulloch", "DeAndre Levy", "Rashean Mathis", "Darius Slay", "James Ihedigbo",
+                     "Glover Quin", "Nate Freese", "Sam Martin", "Don Muhlbach", "Jeremy Ross"):
+            self.assertIn(name, first)
+        self.assertNotIn("Montell Owens", first)       # FB1 is Jacksonville's
+        fullbacks = sorted((p for p in self.detroit["players"] if p["position"] == "FB"), key=lambda p: p["depth"])
+        self.assertEqual([(p["player_id"], p["slots"]) for p in fullbacks], [("Jed Collins", "FB2"), ("Chad Abram", "FB3")])
+
+    def test_detroit_branch_reconciliation(self):
+        ids = {p["player_id"]: p for p in self.detroit["players"]}
+        self.assertEqual(set(self.library["removed_by_club"][DETROIT]),
+                         {"Cornelius Lucas", "Montell Owens", "C.J. Mosley", "Julian Stanford"})
+        self.assertTrue(any(c.startswith("Removed Cornelius Lucas (T): undrafted signing by Jacksonville") for c in self.detroit["branch_changes"]))
+        for name in ("Montell Owens (FB)", "C.J. Mosley (DT)", "Julian Stanford (OLB)"):
+            self.assertTrue(any(c.startswith("Removed %s: under Jacksonville control in the branch" % name) for c in self.detroit["branch_changes"]))
+        tackles = [p for p in sorted(self.detroit["players"], key=lambda p: p["depth"]) if p["position"] == "DT"]
+        self.assertEqual([(p["player_id"], p["slots"]) for p in tackles][:4],
+                         [("Nick Fairley", "DT1"), ("Ndamukong Suh", "DT1"), ("Andre Fluellen", "DT2"), ("Caraun Reid", "DT3")])
+        self.assertEqual(ids["Jimmy Saddler-McQueen"]["slots"], "DT3")
+        for name in ("Golden Tate", "Nate Ness", "Conner Vernon", "Shamari Benton", "Steven Miller", "Kris Redding",
+                     "T.J. Jones", "Drew Butler", "Giorgio Tavecchio", "DeJon Gomes", "Jimmy Saddler-McQueen"):
+            self.assertIn(name, ids)
+        for name in ("Quintin Payton", "Cory Greenwood", "Justin Jackson", "Drayton Florence", "Jon Baldwin",
+                     "Reese Wiggins", "Kalonji Kashama", "Josh Bynes", "Michael Egnew", "Emil Igwenagu",
+                     "Alex Henery", "Matt Prater", "John Wendling", "Shaun Hill"):
+            self.assertNotIn(name, ids)
+        for name in ("Nate Ness", "Conner Vernon", "Shamari Benton"):
+            self.assertNotIn("slots", ids[name])
+        linebackers = [p for p in self.detroit["players"] if group(p["position"]) == "LB"]
+        self.assertEqual(ids["Shamari Benton"]["depth"], len(linebackers))
+
+    def test_detroit_namesakes_carry_reviewed_identities(self):
+        ids = {p["player_id"]: p for p in self.detroit["players"]}
+        self.assertEqual(ids["Larry Webster"]["gsis_id"], "00-0031065")
+        self.assertEqual(ids["Corey Fuller"]["gsis_id"], "00-0030095")
+        self.assertEqual(ids["Giorgio Tavecchio"]["gsis_id"], "00-0028907")
+        self.assertEqual(ids["Dwight Bentley"]["gsis_id"], "00-0029265")
+        self.assertEqual(ids["Ezekiel Ansah"]["gsis_id"], "00-0030059")
+        self.assertEqual(ids["Jason Jones"]["gsis_id"], "00-0026194")
+        self.assertNotIn("Bill Bentley", ids)
+        self.assertNotIn("Ziggy Ansah", ids)
+
+    def test_detroit_held_out_players_from_the_game_day_list_and_dated_reports(self):
+        out = {p["player_id"]: p for p in self.detroit["players"] if p.get("available") is False}
+        self.assertEqual(set(out), {"James Ihedigbo", "Kyle Van Noy", "T.J. Jones", "DeJon Gomes"})
+        for player in out.values():
+            self.assertEqual(player["injury_report"], "Out")
+        for name in ("James Ihedigbo", "Kyle Van Noy", "T.J. Jones"):
+            self.assertIn("August 22", out[name]["availability_note"])
+        self.assertIn("August 21", out["DeJon Gomes"]["availability_note"])
+        available = {p["player_id"] for p in self.detroit["players"] if p.get("available", True)}
+        for name in ("Calvin Johnson", "Ezekiel Ansah", "Matthew Stafford", "Reggie Bush", "Ndamukong Suh"):
+            self.assertIn(name, available)
+
+    def test_detroit_returner_roles(self):
+        ross = next(p for p in self.detroit["players"] if p["player_id"] == "Jeremy Ross")
+        self.assertEqual(ross["roles"], ["kick_return", "punt_return"])
+        self.assertEqual({p["player_id"] for p in self.detroit["players"] if "placekicker" in p.get("roles", ())}, {"Nate Freese", "Giorgio Tavecchio"})
+        self.assertEqual({p["player_id"] for p in self.detroit["players"] if "punt" in p.get("roles", ())}, {"Sam Martin", "Drew Butler"})
+
     # Gates --------------------------------------------------------------------
 
     def test_no_jacksonville_controlled_player_and_no_duplicate(self):
         controlled = controlled_players_from_roster(ROSTER)
         self.assertEqual(len(controlled), self.library["branch_controlled_count"])
         controlled_gsis = {self.registry[n]["gsis_id"] for n in controlled if n in self.registry and self.registry[n].get("gsis_id")}
-        for team, club in ((TAMPA, self.tampa), (CHICAGO, self.chicago)):
+        for team, club in ((TAMPA, self.tampa), (CHICAGO, self.chicago), (DETROIT, self.detroit)):
             ids, gsis = Counter(), Counter()
             for player in club["players"]:
                 ids[player["player_id"]] += 1
@@ -263,7 +351,7 @@ class PreseasonOpponentLibrary2014Tests(unittest.TestCase):
         controlled = controlled_players_from_roster(ROSTER)
         jacksonville = team_input(JACKSONVILLE, jacksonville_players())
         jacksonville["active_players"] = game_day_actives(jacksonville["roster"])
-        for team, club, home in ((TAMPA, self.tampa, False), (CHICAGO, self.chicago, True)):
+        for team, club, home in ((TAMPA, self.tampa, False), (CHICAGO, self.chicago, True), (DETROIT, self.detroit, True)):
             with self.subTest(club=team):
                 opponent = team_input(team, club["players"])
                 self.assertEqual(game_day_errors(team, opponent), [])
@@ -286,9 +374,13 @@ class PreseasonOpponentLibrary2014Tests(unittest.TestCase):
         text = RECORD.read_text(encoding="utf-8")
         self.assertIn("gated: usable for the August 8, 2014 preseason game and after", text)
         self.assertIn("gated: usable for the August 14, 2014 preseason game and after", text)
+        self.assertIn("gated: usable for the August 22, 2014 preseason game and after", text)
         for name in ("Alterraun Verner", "Cameron Brate", "Jeremy Cain", "Mike Jenkins", "Dashon Goldson",
                      "Charles Leno Jr.", "Christian Jones", "Chris Smith", "Willie Young", "Marquess Wilson",
-                     "Jordan Lynch", "Lee Pegues", "Derricus Purdy", "Marcus Trice", "Brandon Hartson", "Chad Rempel"):
+                     "Jordan Lynch", "Lee Pegues", "Derricus Purdy", "Marcus Trice", "Brandon Hartson", "Chad Rempel",
+                     "Cornelius Lucas", "Montell Owens", "C.J. Mosley", "Julian Stanford", "James Ihedigbo", "Kyle Van Noy",
+                     "T.J. Jones", "DeJon Gomes", "James Franklin", "Chad Abram", "Alex Bullard", "A.J. Dalton",
+                     "Greg Hickman", "Kris Redding", "Shamari Benton"):
             self.assertIn(name, text)
 
 

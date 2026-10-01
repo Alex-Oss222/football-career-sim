@@ -19368,6 +19368,327 @@
     "nflverse_players_2026-09-30",
     "nflverse_contracts_2026-10-01"
    ]
+  },
+  "Dan Orlovsky": {
+   "gsis_id": "00-0023578",
+   "birth_date": "1983-08-18",
+   "espn_id": "8559",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Steven Miller": {
+   "gsis_id": "00-0029885",
+   "birth_date": "1991-03-23",
+   "espn_id": "16094",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30"
+   ]
+  },
+  "George Winn": {
+   "gsis_id": "00-0030247",
+   "birth_date": "1990-11-10",
+   "espn_id": "16488",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Corey Fuller": {
+   "gsis_id": "00-0030095",
+   "birth_date": "1990-06-23",
+   "espn_id": "16014",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Andrew Peacock": {
+   "gsis_id": "00-0030729",
+   "birth_date": "1991-01-14",
+   "espn_id": "17025",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30"
+   ]
+  },
+  "T.J. Jones": {
+   "gsis_id": "00-0031189",
+   "birth_date": "1992-07-19",
+   "espn_id": "16880",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Conner Vernon": {
+   "gsis_id": "00-0029761",
+   "birth_date": "1990-08-18",
+   "espn_id": "16248",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30"
+   ]
+  },
+  "Eric Ebron": {
+   "gsis_id": "00-0031387",
+   "birth_date": "1993-04-10",
+   "espn_id": "16732",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Jordan Thompson": {
+   "gsis_id": "00-0030647",
+   "birth_date": "1989-07-12",
+   "espn_id": "16705",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01"
+   ]
+  },
+  "Jacob Maxwell": {
+   "gsis_id": "00-0030727",
+   "birth_date": "1991-01-04",
+   "espn_id": "17207",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30"
+   ]
+  },
+  "Rodney Austin": {
+   "gsis_id": "00-0029221",
+   "birth_date": "1988-12-04",
+   "espn_id": "15464",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Travis Swanson": {
+   "gsis_id": "00-0031284",
+   "birth_date": "1991-01-30",
+   "espn_id": "16752",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Michael Williams": {
+   "gsis_id": "00-0030110",
+   "birth_date": "1990-09-08",
+   "espn_id": "15910",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Darren Keyton": {
+   "gsis_id": "00-0030344",
+   "birth_date": "1990-06-15",
+   "espn_id": "16523",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Bryce Quigley": {
+   "gsis_id": "00-0031400",
+   "birth_date": "1992-06-26",
+   "espn_id": "17485",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30"
+   ]
+  },
+  "Andre Fluellen": {
+   "gsis_id": "00-0026227",
+   "birth_date": "1985-03-07",
+   "espn_id": "11321",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Caraun Reid": {
+   "gsis_id": "00-0031071",
+   "birth_date": "1991-11-23",
+   "espn_id": "16853",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Jimmy Saddler-McQueen": {
+   "gsis_id": "00-0027369",
+   "birth_date": "1987-08-04",
+   "espn_id": "13519",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Larry Webster": {
+   "gsis_id": "00-0031065",
+   "birth_date": "1990-02-14",
+   "espn_id": "16869",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Xavier Proctor": {
+   "gsis_id": "00-0030600",
+   "birth_date": "1990-11-01",
+   "espn_id": "16649",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Kyle Van Noy": {
+   "gsis_id": "00-0031360",
+   "birth_date": "1991-03-26",
+   "espn_id": "16772",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01"
+   ]
+  },
+  "Brandon Hepburn": {
+   "gsis_id": "00-0030124",
+   "birth_date": "1989-12-06",
+   "espn_id": "16009",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Nevin Lawson": {
+   "gsis_id": "00-0031176",
+   "birth_date": "1991-04-23",
+   "espn_id": "16929",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Jerome Couplin": {
+   "gsis_id": "00-0030722",
+   "birth_date": "1991-08-31",
+   "espn_id": "16982",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Aaron Hester": {
+   "gsis_id": "00-0029804",
+   "birth_date": "1990-03-01",
+   "espn_id": "16073",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Chris Greenwood": {
+   "gsis_id": "00-0029213",
+   "birth_date": "1989-07-10",
+   "espn_id": "15100",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Mohammed Seisay": {
+   "gsis_id": "00-0030730",
+   "birth_date": "1990-05-22",
+   "espn_id": "17245",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Nate Ness": {
+   "gsis_id": "00-0026738",
+   "birth_date": "1986-09-05",
+   "espn_id": "13005",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Nate Freese": {
+   "gsis_id": "00-0031093",
+   "birth_date": "1990-08-18",
+   "espn_id": "16823",
+   "evidence": "single_provider",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01"
+   ]
+  },
+  "Giorgio Tavecchio": {
+   "gsis_id": "00-0028907",
+   "birth_date": "1990-07-16",
+   "espn_id": "15245",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Drew Butler": {
+   "gsis_id": "00-0028952",
+   "birth_date": "1989-05-10",
+   "espn_id": "15209",
+   "evidence": "corroborated",
+   "sources": [
+    "nflverse_players_2026-09-30",
+    "nflverse_roster_2014_2026-10-01",
+    "nflverse_contracts_2026-10-01"
+   ]
   }
  }
 }

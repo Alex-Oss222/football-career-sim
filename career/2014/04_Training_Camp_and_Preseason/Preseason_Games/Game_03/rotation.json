@@ -1,0 +1,602 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "game": "2014 Preseason Game 3, Jacksonville at Detroit, August 22, 2014",
+ "status": "FROZEN EX-ANTE ROTATION from Stone's August 15 to 22 plan as applied August 15 to 21 and reduced August 21; written before any draw. Where the plan leaves a count to the game, the ceiling and the plan's rule are encoded and no number is invented.",
+ "source": "career/2014/04_Training_Camp_and_Preseason/Preseason_Games/Game_03/Preseason Game 3_ HC.md (the operating rule, the right-tackle decision and workloads, the quarterback structure and the three Cousins groups, Henne's two groups, Wilson, Bray and Shaw, the backs, receiver groups, tight ends, the five line combinations, the defensive reference and comparison groups, the young front and young linebackers, the secondary pairings, the nickel, special teams, the fourth-down philosophy); the reduction in the camp report, August 21.",
+ "plan_summary": {
+  "principle": "The combinations game as an interoperability and isolation test: a stable spine and one controlled problem at a time (one tackle, or one center, or two receivers, or the back, or the communicator), then the offense or defense run normally, so the staff knows what changed when a play fails.",
+  "offense": [
+   {
+    "block": "Cousins A, reference group",
+    "rule": "One normal possession as close to the current first offense as possible, Johnson back at right tackle: no forced target, no manufactured competition rep, run the offense. Jones-Drew's only work. Kelce by package, attached early."
+   },
+   {
+    "block": "Cousins B, young skill group",
+    "rule": "One possession: Adams at X, Hawkins inside, Gabriel opposite, Anderson in protection first, Kelce and Hoskins in 12 personnel where called, Lucas entering at right tackle beside the stable interior with Norwell at left guard; normal HALF protection, not only quick throws and boots. One PRESS sequence if the group reaches it."
+   },
+   {
+    "block": "Cousins C, contingency offense",
+    "rule": "One possession, the Wednesday-injury offense: Linsley at center, Grimes the back, Nicks, Hawkins and Hurns, Lewis or Kelce, Bitonio beside Linsley; Johnson's second possession if his operation is clean and no restriction is communicated (sideline guidance the kernel does not carry; Lucas enters if not). Then Cousins is done; three possessions subject to drive length."
+   },
+   {
+    "block": "Henne A, starter contingency",
+    "rule": "The regular skill group (Nicks, Thielen, Adams; Lewis and Kelce; Grimes or Anderson) with mostly first-line protection, the Leno isolation in front of him: Leno at left tackle beside Bitonio, Brewster, Turner and Lucas, a normal HALF-protection rep with experienced help, not hidden behind SCAT. Nicks's one Henne possession, no scripted target. One PRESS sequence."
+   },
+   {
+    "block": "Henne B, mixed group",
+    "rule": "Henne as the stabilizer: Adams and Hawkins, Gabriel, Hoskins, Anderson and Murphy, Linsley with Norwell the reserve guard, Lucas at tackle. Two possessions is Henne's normal target and is what is encoded; the plan's conditional third possession if field position again makes the evaluation useless is Stone's sideline call, which the schema does not carry."
+   },
+   {
+    "block": "Wilson, two possessions",
+    "rule": "A cleaner mixed-unit test, not an all-reserve offense: Thielen the established receiver with Hurns and Gabriel, Owens the experienced man in the protection structure, Murphy and Grimes, Jensen and Hoskins; the first possession behind the Feiler isolation (Feiler at left guard beside Linsley and Monroe), the second behind Leno, Norwell, Shatley, Asper and Lucas. No PRESS; the shift to Empty earned August 19 and 20."
+   },
+   {
+    "block": "Bray, two possessions",
+    "rule": "A harder test, not a promotion: one possession with a mixed second unit (Adams the established receiver, Hurns and Gabriel, Jensen one of the better reserve tight ends, the Larsen isolation with Monroe and Lucas the stable tackles, Norwell and Turner beside Larsen, the slow screen the retest), then one developmental possession on the reserve core. Operation graded before production. No PRESS; the shift to Empty earned."
+   },
+   {
+    "block": "Shaw",
+    "rule": "Closes the planned rotation on the reserve core for the remaining possessions, Hawkins the third receiver with Hurns and Gabriel; the grade begins with protection identification, progression, timing and ball security; if he scrambles when the pocket breaks, fine, and the game is not called to manufacture his legs. No PRESS; the shift to Empty earned."
+   }
+  ],
+  "line_combinations": "A, reference: Monroe, Bitonio, Brewster, Turner, Johnson. B, Lucas isolation: Monroe, Norwell, Brewster, Turner, Lucas. C, Leno isolation: Leno, Bitonio, Brewster, Turner, Lucas. D, Larsen isolation: Monroe, Norwell, Larsen, Turner, Lucas. E, Feiler isolation: Monroe, Feiler, Linsley, Asper, Lucas. Leno, Larsen and Feiler never together. Each guard works beside Brewster, beside Linsley and in one mixed tackle combination (Bitonio: A, Cousins C, Henne A; Norwell: B, Henne B, Bray 1 and Wilson 2).",
+  "defense": [
+   {
+    "block": "reference possession",
+    "rule": "Mincey at Edge 1, Marks, Miller, Ryan Davis the closed edge; Daryl Smith, Posluszny, Stanford; the normal starting secondary with Poyer at the nickel. One possession; the normal fit on tape before anything is scrambled."
+   },
+   {
+    "block": "edge comparison",
+    "rule": "The second comparable possession with Branch at Edge 1 and the surrounding front, linebackers and secondary constant; the grade for both men is edge, rush and contain, the lane charted live and on film; a sack without an owned escape lane still grades badly."
+   },
+   {
+    "block": "young front with veteran communication; pairing A",
+    "rule": "Mincey the veteran edge, Donald inside, Marks the veteran anchor, Edebali the young opposite edge, with Te'o-Nesheim and Mosley behind; Daryl Smith the communicator with Telvin Smith and Moore; pairing A, veteran corners (Verner, Harris) with younger safeties (Trawick, Phillips), Poyer the nickel. Through the second quarter. Whether Donald's pressure and the young edges' sacks survive better blocking with the fit communicated."
+   },
+   {
+    "block": "young linebackers with the veteran front; pairings B and D",
+    "rule": "Te'o-Nesheim, Miller, Mosley and Ryan Davis in front of Posluszny as the one established communicator with Todd Davis and Christian Jones; pairing B and D, the younger corners (Bouye, Butler after his three passes defended) with the veteran safety structure (Lowery, Rambo), Poyer the nickel. Through the third quarter."
+   },
+   {
+    "block": "the help removed; pairing C",
+    "rule": "Jeffcoat, Donald, Pendleton and Edebali with the reserve interior behind them; Telvin Smith, Todd Davis, Christian Jones and Moore with no established communicator: can they play the defense, or were veterans solving the call. Pairing C, Poyer at the nickel with alternate outside corners (Thomas, Bouye), Prosinski and Blake. The rest of the game."
+   },
+   {
+    "nickel": "Poyer's mixed nickel group handles 11 personnel, Bunch, motion, the shift and tempo; if Detroit prevents substitution, HOLD the current personnel, simplify the call, do not sacrifice alignment to disguise."
+   },
+   {
+    "menu": "Under and Nickel Even fronts with their installed adjustments; Cover 1, 1 Robber/Rat, Cover 3, Quarters; base four and the installed five-man pressure; no rush games carried (none practiced in the 2014 program on the record). The point is who executes it, not the menu. Sideline guidance, not a kernel input."
+   }
+  ],
+  "special_teams": {
+   "coordinator": "Mike Westhoff",
+   "field_goal_rule": "Westhoff's August 15 review found the four Chicago operations clean on the record and placed the correction with Scobee. No manufactured long attempt; a normal preseason field-goal situation inside the regular-season range is kicked for another live operation, the operation graded before the kicker.",
+   "long_snapper_rule": "Each man handles a mixed block of punts, field goals and tries with coverage responsibility: Cain opens (the order back to Tampa Bay's, a third cold-entry comparison) and Kreiter takes the later block from the third quarter. Neither has won the job; the grade is the entire operation, not the raw snap count.",
+   "returners": {
+    "first_named": "Andrew Hawkins",
+    "rule": "Hawkins is the first returner (every recorded Jacksonville return in two games without a ball-security fault), still not a permanent award. The plan asks Westhoff to name the second return candidate from the players who have genuinely taken that camp work; the record identifies none, and under the plan's own last rule no candidate the record does not identify is invented, so Hawkins alone is named and the game record names whoever else fields a kick."
+   },
+   "specialists": {
+    "K": "Josh Scobee",
+    "P": "Bryan Anger",
+    "holder": "Bryan Anger"
+   },
+   "head_coach_decisions": "Timeouts protect the evaluation from operational chaos, not the player from football. Sudden change: the next scheduled unit goes. Two minute: the quarterback already on the field runs it. Fourth down: in the developmental portion, fourth-and-manageable across midfield is an evaluation opportunity, weighed on field position, quarterback, protection and situation, not an automatic attempt. Field goal versus go, fake, onside kick, challenge and unusual end-of-half situations remain Stone's."
+  },
+  "medical": "Johnson cleared August 14 and worked August 15 to 21 in full; he starts at right tackle by Stone's decision. Murphy released by the independent medical process August 18 on his projected date, practiced normally and reenters the developmental rotation. Jackson out (reassessed August 21, no change). Brate out, long term, out of the plan."
+ },
+ "rotation_plan": [
+  {
+   "side": "offense",
+   "unit": "Cousins A, reference group (Johnson at RT; Nicks X, Thielen H, Adams Z; Bitonio LG)",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "QB": [
+     "Kirk Cousins"
+    ],
+    "RB": [
+     "Maurice Jones-Drew"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Hakeem Nicks",
+     "Adam Thielen",
+     "Davante Adams"
+    ],
+    "TE": [
+     "Marcedes Lewis",
+     "Travis Kelce"
+    ],
+    "OL": [
+     "Eugene Monroe",
+     "Joel Bitonio",
+     "Mike Brewster",
+     "Trai Turner",
+     "Lane Johnson"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "Cousins B, young skill group (Lucas enters at RT beside Turner; Adams X, Hawkins inside, Gabriel; Anderson; Kelce, Hoskins in 12; Norwell LG)",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "QB": [
+     "Kirk Cousins"
+    ],
+    "RB": [
+     "C.J. Anderson"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Davante Adams",
+     "Andrew Hawkins",
+     "Taylor Gabriel"
+    ],
+    "TE": [
+     "Travis Kelce",
+     "Gator Hoskins"
+    ],
+    "OL": [
+     "Eugene Monroe",
+     "Andrew Norwell",
+     "Mike Brewster",
+     "Trai Turner",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "Cousins C, contingency offense (Linsley at C; Grimes; Nicks, Hawkins, Hurns; Lewis or Kelce; Johnson's second possession if his operation is clean, Bitonio LG)",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "QB": [
+     "Kirk Cousins"
+    ],
+    "RB": [
+     "Jonathan Grimes"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Hakeem Nicks",
+     "Andrew Hawkins",
+     "Allen Hurns"
+    ],
+    "TE": [
+     "Marcedes Lewis",
+     "Travis Kelce"
+    ],
+    "OL": [
+     "Eugene Monroe",
+     "Joel Bitonio",
+     "Corey Linsley",
+     "Trai Turner",
+     "Lane Johnson"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "Henne A, starter contingency (regular skill group; the Leno isolation: Leno LT with Bitonio, Brewster, Turner, Lucas; Nicks's one Henne possession)",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "QB": [
+     "Chad Henne"
+    ],
+    "RB": [
+     "Jonathan Grimes",
+     "C.J. Anderson"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Hakeem Nicks",
+     "Adam Thielen",
+     "Davante Adams"
+    ],
+    "TE": [
+     "Marcedes Lewis",
+     "Travis Kelce"
+    ],
+    "OL": [
+     "Charles Leno Jr.",
+     "Joel Bitonio",
+     "Mike Brewster",
+     "Trai Turner",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "Henne B, mixed group (Linsley with Norwell and Asper; Lucas at tackle; Adams, Hawkins, Gabriel; Hoskins, Jensen; Anderson, Murphy)",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "QB": [
+     "Chad Henne"
+    ],
+    "RB": [
+     "C.J. Anderson",
+     "Richard Murphy"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Davante Adams",
+     "Andrew Hawkins",
+     "Taylor Gabriel"
+    ],
+    "TE": [
+     "Gator Hoskins",
+     "Marcel Jensen"
+    ],
+    "OL": [
+     "Charles Leno Jr.",
+     "Andrew Norwell",
+     "Corey Linsley",
+     "Mark Asper",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "Wilson 1, mixed unit (the Feiler isolation: Monroe, Feiler, Linsley, Asper, Lucas; Thielen the established receiver with Hurns and Gabriel; Owens in the protection; Murphy, Grimes; Jensen, Hoskins)",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "QB": [
+     "John Parker Wilson"
+    ],
+    "RB": [
+     "Richard Murphy",
+     "Jonathan Grimes"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Adam Thielen",
+     "Allen Hurns",
+     "Taylor Gabriel"
+    ],
+    "TE": [
+     "Marcel Jensen",
+     "Gator Hoskins"
+    ],
+    "OL": [
+     "Eugene Monroe",
+     "Matt Feiler",
+     "Corey Linsley",
+     "Mark Asper",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "Wilson 2, mixed unit (Leno, Norwell, Shatley, Asper, Lucas; the same skill group)",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "QB": [
+     "John Parker Wilson"
+    ],
+    "RB": [
+     "Richard Murphy",
+     "Jonathan Grimes"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Adam Thielen",
+     "Allen Hurns",
+     "Taylor Gabriel"
+    ],
+    "TE": [
+     "Marcel Jensen",
+     "Gator Hoskins"
+    ],
+    "OL": [
+     "Charles Leno Jr.",
+     "Andrew Norwell",
+     "Tyler Shatley",
+     "Mark Asper",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "Bray 1, mixed second unit (the Larsen isolation: Monroe and Lucas the tackles, Norwell, Larsen, Turner; Adams the established receiver with Hurns and Gabriel; Jensen, Hoskins; Grimes, Murphy)",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "QB": [
+     "Tyler Bray"
+    ],
+    "RB": [
+     "Jonathan Grimes",
+     "Richard Murphy"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Davante Adams",
+     "Allen Hurns",
+     "Taylor Gabriel"
+    ],
+    "TE": [
+     "Marcel Jensen",
+     "Gator Hoskins"
+    ],
+    "OL": [
+     "Eugene Monroe",
+     "Andrew Norwell",
+     "Tyler Larsen",
+     "Trai Turner",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "Bray 2, developmental possession (Leno, Feiler, Shatley, Asper, Lucas; Hurns, Gabriel, Adams; Hoskins, Jensen; Murphy, Anderson)",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "QB": [
+     "Tyler Bray"
+    ],
+    "RB": [
+     "Richard Murphy",
+     "C.J. Anderson"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Allen Hurns",
+     "Taylor Gabriel",
+     "Davante Adams"
+    ],
+    "TE": [
+     "Gator Hoskins",
+     "Marcel Jensen"
+    ],
+    "OL": [
+     "Charles Leno Jr.",
+     "Matt Feiler",
+     "Tyler Shatley",
+     "Mark Asper",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "Shaw, closes the rotation on the reserve core (Leno, Feiler, Shatley, Asper, Lucas; Hurns, Gabriel, Hawkins; Jensen, Hoskins; Murphy, Anderson)",
+   "players": {
+    "QB": [
+     "Connor Shaw"
+    ],
+    "RB": [
+     "Richard Murphy",
+     "C.J. Anderson"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Allen Hurns",
+     "Taylor Gabriel",
+     "Andrew Hawkins"
+    ],
+    "TE": [
+     "Marcel Jensen",
+     "Gator Hoskins"
+    ],
+    "OL": [
+     "Charles Leno Jr.",
+     "Matt Feiler",
+     "Tyler Shatley",
+     "Mark Asper",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "defense",
+   "unit": "Defensive reference possession (Mincey at Edge 1, Ryan Davis the closed edge; Daryl Smith relaying; the normal starting secondary, Poyer nickel)",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "DL": [
+     "Jeremy Mincey",
+     "Sen'Derrick Marks",
+     "Roy Miller",
+     "Ryan Davis"
+    ],
+    "LB": [
+     "Daryl Smith",
+     "Paul Posluszny",
+     "Julian Stanford"
+    ],
+    "DB": [
+     "Aqib Talib",
+     "Mike Harris",
+     "Dwight Lowery",
+     "Bacarri Rambo",
+     "Jordan Poyer"
+    ]
+   }
+  },
+  {
+   "side": "defense",
+   "unit": "Edge comparison possession (Branch at Edge 1; the rest constant; the lane charted live)",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "DL": [
+     "Andre Branch",
+     "Sen'Derrick Marks",
+     "Roy Miller",
+     "Ryan Davis"
+    ],
+    "LB": [
+     "Daryl Smith",
+     "Paul Posluszny",
+     "Julian Stanford"
+    ],
+    "DB": [
+     "Aqib Talib",
+     "Mike Harris",
+     "Dwight Lowery",
+     "Bacarri Rambo",
+     "Jordan Poyer"
+    ]
+   }
+  },
+  {
+   "side": "defense",
+   "unit": "Young front with veteran communication (Mincey the veteran edge, Donald inside, Marks the anchor, Edebali the young edge; Daryl Smith behind Telvin Smith and Moore); pairing A, veteran corners with younger safeties (Verner, Harris; Trawick, Phillips; Poyer nickel)",
+   "until": {
+    "quarter": 2
+   },
+   "players": {
+    "DL": [
+     "Jeremy Mincey",
+     "Aaron Donald",
+     "Sen'Derrick Marks",
+     "Kasim Edebali",
+     "Daniel Te'o-Nesheim",
+     "C.J. Mosley"
+    ],
+    "LB": [
+     "Daryl Smith",
+     "Telvin Smith",
+     "Sio Moore",
+     "Christian Jones"
+    ],
+    "DB": [
+     "Alterraun Verner",
+     "Mike Harris",
+     "Brynden Trawick",
+     "Adrian Phillips",
+     "Jordan Poyer",
+     "A.J. Bouye"
+    ]
+   }
+  },
+  {
+   "side": "defense",
+   "unit": "Young linebackers with the veteran front (Te'o-Nesheim, Miller, Mosley, Ryan Davis; Posluszny the one established communicator with Todd Davis and Christian Jones); pairings B and D, younger corners with the veteran safety structure (Bouye, Butler; Lowery, Rambo; Poyer nickel)",
+   "until": {
+    "quarter": 3
+   },
+   "players": {
+    "DL": [
+     "Daniel Te'o-Nesheim",
+     "Roy Miller",
+     "C.J. Mosley",
+     "Ryan Davis",
+     "C.J. Wilson",
+     "Jackson Jeffcoat"
+    ],
+    "LB": [
+     "Paul Posluszny",
+     "Todd Davis",
+     "Christian Jones",
+     "Telvin Smith"
+    ],
+    "DB": [
+     "A.J. Bouye",
+     "Malcolm Butler",
+     "Dwight Lowery",
+     "Bacarri Rambo",
+     "Jordan Poyer",
+     "Jemea Thomas"
+    ]
+   }
+  },
+  {
+   "side": "defense",
+   "unit": "The help removed (Jeffcoat, Donald, Pendleton, Edebali; Telvin Smith, Todd Davis, Christian Jones, Moore, no established communicator); pairing C, Poyer at the nickel with alternate outside corners (Thomas, Bouye; Prosinski, Blake)",
+   "players": {
+    "DL": [
+     "Jackson Jeffcoat",
+     "Aaron Donald",
+     "Jeris Pendleton",
+     "Kasim Edebali",
+     "Lavar Edwards",
+     "Jerome Long",
+     "D'Anthony Smith",
+     "C.J. Wilson"
+    ],
+    "LB": [
+     "Telvin Smith",
+     "Todd Davis",
+     "Christian Jones",
+     "Sio Moore"
+    ],
+    "DB": [
+     "Jemea Thomas",
+     "A.J. Bouye",
+     "Chris Prosinski",
+     "Antwon Blake",
+     "Jordan Poyer",
+     "Adrian Phillips"
+    ]
+   }
+  },
+  {
+   "side": "special_teams",
+   "unit": "Cain snapping (opens the operation: punts, field goals and tries with coverage responsibility)",
+   "until": {
+    "quarter": 2
+   },
+   "players": {
+    "LS": [
+     "Jeremy Cain"
+    ]
+   }
+  },
+  {
+   "side": "special_teams",
+   "unit": "Kreiter snapping (the later mixed block)",
+   "players": {
+    "LS": [
+     "Casey Kreiter"
+    ]
+   }
+  }
+ ]
+}
