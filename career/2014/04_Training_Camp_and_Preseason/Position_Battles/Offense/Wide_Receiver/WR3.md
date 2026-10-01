@@ -2,7 +2,7 @@
 
 **Position:** Wide receiver, offense  
 **Work covered:** Spring teaching, camp, preseason game 1 (August 8, 2014), the August 9 to 13 Chicago preparation, preseason game 2 (August 14, 2014, at Chicago, full contact) the August 15 to 21 Detroit preparation (the August 15 review, the padded practices of August 16, 18 and 19 at controlled contact in series with the calls from the sideline, the August 20 session in helmets and the August 21 walkthrough) preseason game 3 (August 22, 2014, at Detroit, full contact), the August 23 to 27 Atlanta preparation (the August 23 review and install in helmets, the padded practices of August 25 and 26 at controlled contact, August 26 in series with the calls from the sideline, and the August 27 walkthrough) and preseason game 4 (August 28, 2014, Atlanta at Jacksonville, full contact, the preseason complete) (the August 10 and 13 walkthroughs, the August 11 and 12 padded practices at controlled contact in series with the calls from the sideline); the July 30, August 1, August 4, August 5 and August 6 padded sessions and the August 2 scrimmage used controlled contact, the scrimmage and the August 6 game rehearsal in series with the calls from the sideline and the play clock, no score kept; August 7 was a walkthrough; August 8 was the game against Tampa Bay, full contact, the first opponent.  
-**Competition:** Open  
+**Competition:** Decided August 30, 2014
 **Starting arrangement:** Adams begins WR3 reps; Hawkins is the named competition.
 
 The coordinator and position-coach rows are staff-analysis reconstructions from the cited practice record and their established responsibilities, not invented quotations or new meetings. Stone's row preserves his recorded position.
@@ -25,6 +25,8 @@ The coordinator and position-coach rows are staff-analysis reconstructions from 
 
 ## What separates the candidates
 
+**Decision, August 30, 2014 ([roster decisions](../../../Roster_Decisions/roster_decisions.md)):** Andrew Hawkins is the Z on Stone's season game depth chart, with Adams at X and Thielen at H; Hawkins is also the first kick and punt returner, Hurns the second punt returner. The competition closed with the chart, not on a play-by-play finding: no game separated the two in the WR3 role, and Nicks's injury changed the combinations the staff had to set rather than this comparison. The rows above are preserved as dated history; this card is resolved and off the open list.
+
 **After game 4:** No target to either candidate in the WR3 role with the starters; Adams's three catches came at X with the young group and Hawkins's two targets, inside and with Henne, were incomplete. Nothing in it separates them in the role, and Nicks's injury changes the combinations the staff must judge, not this comparison. Open.
 
 **After August 27:** Rehearsed inside the quarter structure, Adams in both Cousins quarters and Hawkins in the second and the second half; nothing on the record separates them. Open.
@@ -42,6 +44,8 @@ The coordinator and position-coach rows are staff-analysis reconstructions from 
 Both have retained a specific correction in pads and in series. The record does not establish a WR3 winner. Adams is also competing for WR1, so the staff must judge the combinations it actually uses.
 
 ## Next work and decision
+
+**Resolved August 30, 2014.** The decision above is recorded in [roster decisions](../../../Roster_Decisions/roster_decisions.md) and on the [depth chart](../../../../00_Team_Operations/Team/Depth_Chart/depth_chart.md); the text below is the card's history before the decision and names no further test.
 
 The preseason is complete; the August 28 game is recorded above. The next decisions are the August 30 reduction to 53 (Caldwell with the user) and the Week 1 receiver arrangement without Nicks and the season game depth chart (Stone), neither made here and neither awarded by this card. The August 28 game ran under Stone's frozen [inputs](../../../Preseason_Games/Game_04/README.md), which gave Adams the Z in the first quarter and the X in the second with Cousins, and Hawkins the inside receiver in Cousins's second-quarter group and then with Henne and Wilson, Hawkins the only named returner. Before it: the August 22 game, which ran the Detroit combinations as frozen; the August 15 to 21 rehearsal with the surrounding receivers changed and the Detroit rotation under Stone's frozen [inputs](../../../Preseason_Games/Game_03/README.md), which gave Adams the Z in the reference group and the X in the young skill group and Hawkins the inside receiver with Cousins's young skill and contingency groups; the August 8 game and the August 9 to 13 rehearsal, then the August 14 game at Chicago under Stone's frozen [inputs](../../../Preseason_Games/Game_02/README.md). Chicago gives Adams the WR3 work in the first Cousins possession and Hawkins in the second, with Thielen the constant; both then work with Henne. Compare the same WR3 responsibilities against Tampa Bay on August 8 under Stone's frozen rotation (Adams at WR3 in the first first-unit possession, Hawkins in the second, Thielen the constant), including disruption at the line and operation with different surrounding receivers. No new role has been awarded. [Roster decisions](../../../Roster_Decisions/roster_decisions.md) owns any eventual change.
 

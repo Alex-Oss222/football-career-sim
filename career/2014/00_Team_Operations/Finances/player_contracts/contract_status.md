@@ -1,6 +1,6 @@
 # Jacksonville Jaguars: 2014 contract and free-agency status register
 
-**As of:** August 7, 2014 (no change since June 28; the four tendered players remain unsigned and, not being under contract, have not reported to camp).
+**As of:** August 31, 2014 (after the August 30 reduction to 53, the withdrawal of the four qualifying offers, the August 31 waiver checkpoint, the reserve/injured placements and the eight practice-squad signings; [final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)).
 **Scope:** every player in the March 11, 2014 league-year baseline: the 52 active players and Brad Meester (Reserve/Retired) on the [2013 closing roster](../../../../2013/roster.md), plus the eight-player 2013 practice squad, six of whom signed reserve/future contracts effective March 11. Players signed from outside after the baseline are summarized in section 2; their contracts are in the [contract table](contracts.md), the [signings record](../../Free_Agency/signings.md), [the draftees record](../../../03_Draft/draftees.md) and [the undrafted signings record](../../../03_Draft/udfa_signings.md).
 **Role:** this register owns each player's contract status, final league year, accrued seasons and free-agency class, with the evidence for each. It executes no signing, tender, release, extension, option or trade; Caldwell retains contract authority under Document 3. Figures follow the adopted contract reconstruction in the [original-contract research](../../../../../library/2014_jaguars_original_contract_reconstruction.md) and the [completion research](../../../../../library/2014_jaguars_contract_completion.md), which fix every covered contract year with explicit simulation assumptions where the public original instrument is incomplete. Transaction history is in the [2014 dated record](../../../Record.md).
 
@@ -16,20 +16,22 @@
 
 ## 2. Current status summary
 
-| Status at August 7, 2014 | Count |
+| Status at August 31, 2014 | Count |
 |---|---:|
-| Under contract, continuing from before 2014 | 31 |
-| Under contract, reserve/future (effective March 11) | 6 |
-| Under contract, signed or re-signed in March and April 2014 | 11 |
-| Under contract, 2014 draft selections (four-year rookie contracts signed May 11) | 9 |
-| Under contract, 2014 undrafted rookies (three-year minimum contracts signed May 10) | 17 |
-| Restricted free agent, lowest tender (unsigned) | 1 |
-| Exclusive-rights free agent, tendered (unsigned) | 3 |
-| Controlled players | 78 |
-| Control ended since the baseline (expired, not tendered, retired or traded) | 12 |
+| Active 53 | 53 |
+| Reserve/injured (Brate, Jerrell Jackson; contracts continuing) | 2 |
+| Controlled players (the 53 and the two on reserve/injured) | 55 |
+| of which continuing from before 2014 | 26 |
+| of which reserve/future (effective March 11): Jackson | 1 |
+| of which signed or re-signed in March and April 2014 (Monroe, Marks, Verner, Talib, Nicks, Hawkins, Te'o-Nesheim, Jones-Drew, Henne) | 9 |
+| of which 2014 draft selections (four-year rookie contracts signed May 11) | 8 |
+| of which 2014 undrafted rookies (three-year minimum contracts signed May 10) | 11 |
+| Practice squad (weekly contracts signed August 31, 2014; under contract, listed separately from the 55) | 8 |
+| Tendered, unsigned | 0 (the four qualifying offers were withdrawn August 30, 2014) |
+| Control ended since the baseline (expired, not tendered, retired, traded, released or waived without re-signing, tender withdrawn) | 35 |
 | 2013 practice-squad players not offered a contract | 2 |
 
-The 78 controlled players match the [roster](../../Team/Roster/roster.md) and the [contract table](contracts.md).
+The 55 controlled players and the eight practice-squad players match the [roster](../../Team/Roster/roster.md) and the [contract table](contracts.md).
 
 ### Changes since the March 11 baseline
 
@@ -43,10 +45,10 @@ The 78 controlled players match the [roster](../../Team/Roster/roster.md) and th
 | Chad Henne | UFA | Re-signed April 4: two years, $4.0M, $2.0M guaranteed |
 | Alan Ball | UFA | Not re-signed May 12; unplaced free agent, first veteran corner to call if the room is hit. No June 1 tender filed (June 2); no rights retained |
 | Brent Grimes | UFA | Unsigned; not pursued under Stone's March 31 plan. No June 1 tender filed (June 2); no rights retained |
-| Cameron Bradfield | RFA | Lowest tender, $1,431,000; unsigned. On June 16, the adjusted June 15 tender date, Caldwell left the qualifying offer in place and substituted no June 15 tender (the rule rests on one unverified library source; his 2013 salary is unresolved, so no 110 percent figure could be computed); no cap change |
+| Cameron Bradfield | RFA | Lowest tender, $1,431,000; unsigned. On June 16, the adjusted June 15 tender date, Caldwell left the qualifying offer in place and substituted no June 15 tender (the rule rests on one unverified library source; his 2013 salary is unresolved, so no 110 percent figure could be computed). Qualifying offer withdrawn August 30, 2014 and his rights renounced; free agent, unplaced under the rails |
 | Allen Reisner, Kevin Rutland | RFA | Not tendered; unrestricted free agents from March 11. No June 1 tender filed (June 2); no rights retained |
-| Toney Clemons, Austin Pasztor | ERFA | Tendered at $570,000; unsigned |
-| Mike Brown | ERFA | Tendered at $495,000; unsigned |
+| Toney Clemons, Austin Pasztor | ERFA | Tendered at $570,000; unsigned. Tenders withdrawn August 30, 2014 and their rights renounced; free agents |
+| Mike Brown | ERFA | Tendered at $495,000; unsigned. Tender withdrawn August 30, 2014 and his rights renounced; free agent |
 | Brad Meester | Retired | Contract expired March 11 |
 | Uche Nwaneri | Under contract | Traded to Arizona March 20 with Jacksonville's 2015 first, 2015 fourth and 2016 fifth for No. 38 |
 | Jason Babin | Under contract | Traded to Miami March 24 with Jacksonville's 2017 seventh for Miami's 2015 third |
@@ -54,10 +56,11 @@ The 78 controlled players match the [roster](../../Team/Roster/roster.md) and th
 | Cecil Shorts, Justin Blackmon | Under contract | Traded to Indianapolis March 31 for the Colts' 2014 third (No. 82) and sixth (No. 194) |
 | Russell Allen | Under contract | Traded to Arizona April 7 for Arizona's 2015 fourth |
 | Will Rackley | Under contract | Traded to Seattle May 12 for Seattle's own unconditional 2015 seventh |
-| Six reserve/future players | Futures | Contracts in force from March 11 |
+| Six reserve/future players | Futures | Contracts in force from March 11. August 30, 2014: Bray, Murphy, Long, D'Anthony Smith and Blake waived (contracts ended; Bray, Murphy and Long signed practice-squad contracts August 31); Jerrell Jackson waived with the injured designation and on reserve/injured from August 31, his contract continuing |
 | Alterraun Verner, Aqib Talib, Hakeem Nicks, Andrew Hawkins, Daniel Te'o-Nesheim | Not Jacksonville players | Signed March 11 to 18 (terms in the [signings record](../../Free_Agency/signings.md)) |
-| Aaron Donald, Joel Bitonio, Davante Adams, Trai Turner, Telvin Smith, Corey Linsley, Charles Leno Jr., Jemea Thomas, Malcolm Butler | 2014 draft selections (May 8 to 10) | Four-year rookie contracts signed May 11, 2014, priced by slot reconstruction from the same-slot 2014 contracts; the two first-rounders carry an unexercised 2018 option ([draftees](../../../03_Draft/draftees.md)). Accrued seasons 0; free-agency class set by the 2011 CBA rookie rules at expiry |
-| Norwell, Christian Jones, Hurns, Lucas, Phillips, Feiler, Brate, Todd Davis, Shatley, Larsen, Shaw, Edebali, Jensen, Hoskins, Jeffcoat, Gabriel, Kreiter | 2014 undrafted rookies | Three-year minimum contracts signed May 10, 2014 ($15,000 bonuses for the five linemen; no guarantee otherwise) ([undrafted signings](../../../03_Draft/udfa_signings.md)). Accrued seasons 0; exclusive-rights or restricted status at expiry follows actual accrual |
+| Aaron Donald, Joel Bitonio, Davante Adams, Trai Turner, Telvin Smith, Corey Linsley, Charles Leno Jr., Jemea Thomas, Malcolm Butler | 2014 draft selections (May 8 to 10) | Four-year rookie contracts signed May 11, 2014, priced by slot reconstruction from the same-slot 2014 contracts; the two first-rounders carry an unexercised 2018 option ([draftees](../../../03_Draft/draftees.md)). Accrued seasons 0; free-agency class set by the 2011 CBA rookie rules at expiry. August 30, 2014: Thomas waived (contract ended; practice squad from August 31); the other eight on the 53 |
+| Norwell, Christian Jones, Hurns, Lucas, Phillips, Feiler, Brate, Todd Davis, Shatley, Larsen, Shaw, Edebali, Jensen, Hoskins, Jeffcoat, Gabriel, Kreiter | 2014 undrafted rookies | Three-year minimum contracts signed May 10, 2014 ($15,000 bonuses for the five linemen; no guarantee otherwise) ([undrafted signings](../../../03_Draft/udfa_signings.md)). Accrued seasons 0; exclusive-rights or restricted status at expiry follows actual accrual. August 30, 2014: Phillips, Feiler, Shatley, Larsen, Shaw and Jeffcoat waived (contracts ended; all but Larsen and Shaw signed practice-squad contracts August 31); Brate waived with the injured designation and on reserve/injured from August 31, his contract continuing; the other ten on the 53 |
+| John Parker Wilson, Mark Asper, Ryan Davis, Lavar Edwards, Jeris Pendleton (inherited); C.J. Wilson, Jeremy Cain (2014 re-signings) | Under contract | Released or waived August 30, 2014 at the reduction to 53 ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). Cain (at least five accrued seasons) and C.J. Wilson (four) were vested veterans and were released; the others were waived and cleared August 31. John Parker Wilson's accrual is at least three in this register; had it been four he would have been released rather than waived, with the same disposition. Dead money from the adopted bonus schedules is itemized in the [contract table](contracts.md#5c-dead-money-carried-into-2014) |
 
 ## 3. Baseline players: contracts and accrual
 
@@ -138,24 +141,24 @@ See the [completion research](../../../../../library/2014_jaguars_contract_compl
 
 ## 4. 2013 practice squad (8): six reserve/future contracts, two not offered
 
-All eight were waived at the August 31 cutdown, cleared waivers and signed branch practice-squad contracts on September 1, 2013 (`preseason/final_roster_cuts.md`). A waiver ends the player's earlier contract, so Tyler Bray's May 2 rookie contract and the December 30, 2012 reserve/future contracts of Will Ta'ufo'ou and Brandon King no longer apply. Practice-squad seasons do not accrue.
+All eight were waived at the August 31 cutdown, cleared waivers and signed branch practice-squad contracts on September 1, 2013 (`preseason/final_roster_cuts.md`). A waiver ends the player's earlier contract, so Tyler Bray's May 2 rookie contract and the December 30, 2012 reserve/future contracts of Will Ta'ufo'ou and Brandon King no longer apply. Practice-squad seasons do not accrue. The same rule applied at the August 30, 2014 reduction: the five waived reserve/future contracts ended, and the 2014 practice-squad contracts signed August 31 ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)) are new weekly agreements at the $6,300 minimum.
 
 A practice-squad contract runs only through the club's season. Under Stone's February 2 memo (section 1), Caldwell offered six of the eight reserve/future contracts on February 3, 2014 and all six signed (method `futures_method.json`, result `futures_results.json`). Terms: two years through 2015 under the adopted completion, the yearly minimum for credited seasons, no guarantee, no signing bonus, effective at the March 11, 2014 league year and counting toward the 90-player limit from then. They are camp places, not practice-squad places. Brandon King and Will Ta'ufo'ou were not offered and left as free agents. Clubs may sign reserve/future contracts once their own season is over (2014 financial rules library, reserve/future calendar row; the exact CBA wording of the practice-squad expiry moment is Unverified there and here). Unless Jacksonville signs one of these players to a reserve/future contract, he is not under Jacksonville contract on March 11, 2014 and is free to sign with any club; he is not a Jacksonville RFA or ERFA.
 
 | Player | Pos. | Contract | Current status | Source and label |
 |---|---|---|---|---|
-| Tyler Bray | QB | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Under reserve/future contract from March 11; 2014 base $420,000 (0 credited seasons; minimum Confirmed) | Practice squad: `preseason/final_roster_cuts.md`; futures: [2014 reserve/future signings](../../Free_Agency/signings.md). Confirmed |
-| Richard Murphy | RB | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Under reserve/future contract from March 11; 2014 base $495,000 (1 credited season) | [2014 reserve/future signings](../../Free_Agency/signings.md). Article 26 service recovered in the contract research |
+| Tyler Bray | QB | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Reserve/future contract ended by the August 30, 2014 waiver; practice-squad contract from August 31, 2014 ($6,300 a week) | Practice squad: `preseason/final_roster_cuts.md`; futures: [2014 reserve/future signings](../../Free_Agency/signings.md). Confirmed |
+| Richard Murphy | RB | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Reserve/future contract ended by the August 30, 2014 waiver; practice-squad contract from August 31, 2014 (one of the two G1 places for a player with up to two accrued seasons; his accrued count is not established) | [2014 reserve/future signings](../../Free_Agency/signings.md). Article 26 service recovered in the contract research |
 | Will Ta'ufo'ou | FB | 2013 practice-squad contract ended; not offered | Free agent; not under Jacksonville contract | [2014 reserve/future signings](../../Free_Agency/signings.md). Confirmed |
-| Jerrell Jackson | WR | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Under reserve/future contract from March 11; 2014 base $420,000 (0 credited seasons) | [2014 reserve/future signings](../../Free_Agency/signings.md). His real 2014 Kansas City contract is undated and cannot enter the branch (rails method section 2) |
-| Jerome Long | DT | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Under reserve/future contract from March 11; 2014 base $420,000 (0 credited seasons) | [2014 reserve/future signings](../../Free_Agency/signings.md). Article 26 service recovered in the contract research |
-| D'Anthony Smith | DT | 2013 practice-squad contract ended; reserve/future contract signed February 5, 2014 after a market draw against his real Seattle reserve/future contract of that date | Under reserve/future contract from March 11; 2014 base $495,000 (1 credited season) | [2014 reserve/future signings](../../Free_Agency/signings.md); [market draw record](../../../League/personnel/fa_draws.md). Article 26 service recovered in the contract research |
+| Jerrell Jackson | WR | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Under reserve/future contract from March 11; 2014 base $420,000 (0 credited seasons); on reserve/injured from August 31, 2014, the contract continuing | [2014 reserve/future signings](../../Free_Agency/signings.md). His real 2014 Kansas City contract is undated and cannot enter the branch (rails method section 2) |
+| Jerome Long | DT | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Reserve/future contract ended by the August 30, 2014 waiver; practice-squad contract from August 31, 2014 | [2014 reserve/future signings](../../Free_Agency/signings.md). Article 26 service recovered in the contract research |
+| D'Anthony Smith | DT | 2013 practice-squad contract ended; reserve/future contract signed February 5, 2014 after a market draw against his real Seattle reserve/future contract of that date | Reserve/future contract ended by the August 30, 2014 waiver; free agent, unplaced under the rails | [2014 reserve/future signings](../../Free_Agency/signings.md); [market draw record](../../../League/personnel/fa_draws.md). Article 26 service recovered in the contract research |
 | Brandon King | DB | 2013 practice-squad contract ended; not offered | Free agent; not under Jacksonville contract | [2014 reserve/future signings](../../Free_Agency/signings.md). Confirmed |
-| Antwon Blake | S | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Under reserve/future contract from March 11; 2014 base $495,000 (1 credited season) | [2014 reserve/future signings](../../Free_Agency/signings.md). Article 26 service recovered in the contract research |
+| Antwon Blake | S | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Reserve/future contract ended by the August 30, 2014 waiver; free agent, unplaced under the rails | [2014 reserve/future signings](../../Free_Agency/signings.md). Article 26 service recovered in the contract research |
 
 2014 minimum base salary by credited seasons (`caldwell_pre_tag_verifications.md` section 3): 0, $420,000 (Confirmed); 1, $495,000 (Inference); 2, $570,000 (Confirmed by derivation and one direct source); 3, $645,000 (Inference); 4 to 6, $730,000 (Inference); 7 to 9, $855,000 (Confirmed by derivation and one direct source). The contract research checks the 2011 agreement and resolves the six signed futures amounts above; the one-season minimum is $495,000.
 
-The second-year 2015 salaries are $510,000 for Bray, Jerrell Jackson and Long, and $585,000 for Murphy, D’Anthony Smith and Blake. These fixed schedules assume retention for another credited active season; a waiver terminates the deal.
+The second-year 2015 salaries were $510,000 for Bray, Jerrell Jackson and Long, and $585,000 for Murphy, D’Anthony Smith and Blake. A waiver terminates the deal, and the August 30, 2014 waivers ended five of the six; only Jackson's 2015 salary ($510,000) remains scheduled.
 
 ## 5. Two-pass verification record
 

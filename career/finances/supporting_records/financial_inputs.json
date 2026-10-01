@@ -1,8 +1,8 @@
 {
  "team": "Jacksonville Jaguars",
- "as_of": "2014-05-12",
- "checkpoint": "Entry 110",
- "prepared": "2026-09-30",
+ "as_of": "2014-08-31",
+ "checkpoint": "2014-08-31-waivers-and-practice-squad",
+ "prepared": "2026-10-01",
  "start_year": 2014,
  "end_year": 2025,
  "current_contract_table": "career/2014/finances/player_contracts/contracts.md",
@@ -865,55 +865,50 @@
    "roster_position": "DE",
    "date_of_birth": "1990-04-29",
    "age_at_checkpoint": 23,
-   "control": "signed",
-   "status": "Under contract",
+   "control": "waived",
+   "status": "Waived August 30, 2014 at the reduction to 53; cleared waivers August 31",
    "contract_type": "Rookie scale, pick #135",
    "signed": "May 2, 2013",
    "term": "4 / 2016",
-   "contract_ends": 2016,
+   "contract_ends": null,
    "value": "$2,373,612",
    "bonus_terms": "$213,612; $53,403; 3",
    "guarantees": "Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap.",
    "dead_money_2014": "$160,209 gross exposure under adopted terms, before any later earned payment or recorded credit",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "Branch record (draftees); base derived",
+   "plan": "Former player; departure recorded",
+   "source_note": "Branch record (draftees); base derived Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Rookie scale, pick #135 ended. Dead money: the 2014 bonus allocation of $53,403 stays in 2014 and the later allocations of $106,806 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the library does not record the rule).",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
-    "career/2014/finances/player_contracts/contract_status.md",
     "career/2013/offseason/draft/draftees.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
     "library/2014_jaguars_contract_completion.md"
    ],
    "credited_seasons": "1 (2013 active season)",
    "accrued_seasons": "Through 2012: 0. 2013: Accrues in branch (on 53 for 16 games)",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 548403,
-     "base": 495000,
-     "proration": 53403,
-     "cash": 495000,
-     "basis": "Executed rookie schedule; base derived as scheduled cap less signing-bonus proration; excludes any untriggered escalator",
-     "guaranteed_base": 0
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2015": {
-     "status": "known",
-     "cap": 638403,
-     "base": 585000,
-     "proration": 53403,
-     "cash": 585000,
-     "basis": "Executed rookie schedule; base derived as scheduled cap less signing-bonus proration; excludes any untriggered escalator",
-     "guaranteed_base": 0
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2016": {
-     "status": "known",
-     "cap": 728403,
-     "base": 675000,
-     "proration": 53403,
-     "cash": 675000,
-     "basis": "Executed rookie schedule; base derived as scheduled cap less signing-bonus proration; excludes any untriggered escalator",
-     "guaranteed_base": 0
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2017": {
      "status": "not_committed",
@@ -981,7 +976,16 @@
    },
    "draft_pick": "#135",
    "guarantee_basis": "simulation reconstruction",
-   "schedule_basis": "Executed branch terms / researched original schedule"
+   "schedule_basis": "Executed branch terms / researched original schedule",
+   "prior_contract": {
+    "type": "Rookie scale, pick #135",
+    "term": "4 / 2016",
+    "contract_ends": 2016,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   },
+   "former_player": true,
+   "departure_date": "2014-08-30",
+   "departure_source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
   },
   {
    "name": "Bacarri Rambo",
@@ -1950,45 +1954,42 @@
    "roster_position": "G",
    "date_of_birth": "1985-11-08",
    "age_at_checkpoint": 28,
-   "control": "signed",
-   "status": "Under contract",
+   "control": "waived",
+   "status": "Waived August 30, 2014 at the reduction to 53; cleared waivers August 31",
    "contract_type": "Rookie (Buffalo, 2012 sixth round), carried by waiver claims",
    "signed": "2012",
    "term": "4 / 2015",
-   "contract_ends": 2015,
+   "contract_ends": null,
    "value": "$2,213,452 original four-year deal",
    "bonus_terms": "$113,452 original Buffalo bonus; Jacksonville proration $0",
    "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
    "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "Original 2012 four-year rookie deal continued through waiver claims. Buffalo keeps the $113,452 bonus; Jacksonville carries the remaining scheduled salaries. Conditional escalators require branch evidence.",
+   "plan": "Former player; departure recorded",
+   "source_note": "Original 2012 four-year rookie deal continued through waiver claims. Buffalo keeps the $113,452 bonus; Jacksonville carries the remaining scheduled salaries. Conditional escalators require branch evidence. Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Rookie (Buffalo, 2012 sixth round), carried by waiver claims ended.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
     "library/2014_jaguars_original_contract_reconstruction.md"
    ],
    "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
    "accrued_seasons": "Through 2012: Unresolved (not status-determining). 2013: Accrues in branch (on 53 for 16 games)",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 570000,
-     "base": 570000,
-     "proration": 0,
-     "other_cap": 0,
-     "cash": 570000,
-     "guaranteed_base": 0
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2015": {
-     "status": "known",
-     "cap": 660000,
-     "base": 660000,
-     "proration": 0,
-     "other_cap": 0,
-     "cash": 660000,
-     "guaranteed_base": 0
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2016": {
      "status": "not_committed",
@@ -2061,7 +2062,16 @@
      "cash": null
     }
    },
-   "schedule_basis": "Executed branch terms / researched original schedule"
+   "schedule_basis": "Executed branch terms / researched original schedule",
+   "prior_contract": {
+    "type": "Rookie (Buffalo, 2012 sixth round), carried by waiver claims",
+    "term": "4 / 2015",
+    "contract_ends": 2015,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   },
+   "former_player": true,
+   "departure_date": "2014-08-30",
+   "departure_source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
   },
   {
    "name": "Uche Nwaneri",
@@ -2665,36 +2675,35 @@
    "roster_position": "DE",
    "date_of_birth": "1989-02-24",
    "age_at_checkpoint": 25,
-   "control": "signed",
-   "status": "Under contract",
+   "control": "waived",
+   "status": "Waived August 30, 2014 at the reduction to 53; cleared waivers August 31",
    "contract_type": "Reserve/future, December 30, 2012",
    "signed": "December 30, 2012",
    "term": "2 / 2014",
-   "contract_ends": 2014,
+   "contract_ends": null,
    "value": "$900,000",
    "bonus_terms": "$0 signing bonus or proration",
    "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
    "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "December 2012 futures deal totals $900,000 across $405,000 in 2013 and $495,000 in 2014, with no bonus. Later real contracts do not extend it.",
+   "plan": "Former player; departure recorded",
+   "source_note": "December 2012 futures deal totals $900,000 across $405,000 in 2013 and $495,000 in 2014, with no bonus. Later real contracts do not extend it. Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Reserve/future, December 30, 2012 ended.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
     "library/2014_jaguars_original_contract_reconstruction.md"
    ],
    "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
    "accrued_seasons": "Through 2012: 0 (2012 mostly practice squad; active roughly October 5-23). 2013: Accrues in branch (on 53 for 16 games)",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 495000,
-     "base": 495000,
-     "proration": 0,
-     "other_cap": 0,
-     "cash": 495000,
-     "guaranteed_base": 0
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2015": {
      "status": "not_committed",
@@ -2774,7 +2783,16 @@
      "cash": null
     }
    },
-   "schedule_basis": "Executed branch terms / researched original schedule"
+   "schedule_basis": "Executed branch terms / researched original schedule",
+   "prior_contract": {
+    "type": "Reserve/future, December 30, 2012",
+    "term": "2 / 2014",
+    "contract_ends": 2014,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   },
+   "former_player": true,
+   "departure_date": "2014-08-30",
+   "departure_source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
   },
   {
    "name": "Jeremy Mincey",
@@ -3148,45 +3166,42 @@
    "roster_position": "DT",
    "date_of_birth": "1983-11-07",
    "age_at_checkpoint": 30,
-   "control": "signed",
-   "status": "Under contract",
+   "control": "waived",
+   "status": "Waived August 30, 2014 at the reduction to 53; cleared waivers August 31",
    "contract_type": "Rookie, 2012 seventh round",
    "signed": "2012",
    "term": "4 / 2015",
-   "contract_ends": 2015,
+   "contract_ends": null,
    "value": "$2,151,392 ($51,392 guaranteed at signing)",
    "bonus_terms": "$51,392 signing bonus; $12,848 annually through 2015",
    "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
    "dead_money_2014": "$25,696 gross exposure under adopted terms, before any later earned payment or recorded credit",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "Four-year rookie deal reconstructed from $2,151,392 total: $51,392 bonus plus $390,000/$480,000/$570,000/$660,000 bases. A conditional 2015 escalator is not pre-earned.",
+   "plan": "Former player; departure recorded",
+   "source_note": "Four-year rookie deal reconstructed from $2,151,392 total: $51,392 bonus plus $390,000/$480,000/$570,000/$660,000 bases. A conditional 2015 escalator is not pre-earned. Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Rookie, 2012 seventh round ended. Dead money: the 2014 bonus allocation of $12,848 stays in 2014 and the later allocations of $12,848 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the library does not record the rule).",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
     "library/2014_jaguars_original_contract_reconstruction.md"
    ],
    "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
    "accrued_seasons": "Through 2012: Unresolved (not status-determining; 4 games in 2012). 2013: Accrues in branch (on 53 for 16 games)",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 582848,
-     "base": 570000,
-     "proration": 12848,
-     "other_cap": 0,
-     "cash": 570000,
-     "guaranteed_base": 0
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2015": {
-     "status": "known",
-     "cap": 672848,
-     "base": 660000,
-     "proration": 12848,
-     "other_cap": 0,
-     "cash": 660000,
-     "guaranteed_base": 0
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2016": {
      "status": "not_committed",
@@ -3259,7 +3274,16 @@
      "cash": null
     }
    },
-   "schedule_basis": "Executed branch terms / researched original schedule"
+   "schedule_basis": "Executed branch terms / researched original schedule",
+   "prior_contract": {
+    "type": "Rookie, 2012 seventh round",
+    "term": "4 / 2015",
+    "contract_ends": 2015,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   },
+   "former_player": true,
+   "departure_date": "2014-08-30",
+   "departure_source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
   },
   {
    "name": "Russell Allen",
@@ -4470,46 +4494,47 @@
    "date_of_birth": "1991-12-27",
    "age_at_checkpoint": 22,
    "control": "signed",
-   "status": "Under contract (reserve/future contract effective March 11, 2014)",
-   "contract_type": "Reserve/future",
-   "signed": "February 3, 2014",
-   "term": "2 / 2015 (simulation reconstruction)",
-   "contract_ends": 2015,
-   "value": "$930,000",
+   "status": "Practice squad (signed August 31, 2014, after the August 30 waiver ended the earlier contract)",
+   "contract_type": "Practice squad (weekly)",
+   "signed": "August 31, 2014",
+   "term": "Weekly, through the 2014 season (simulation reconstruction of the standard practice-squad agreement)",
+   "contract_ends": 2014,
+   "value": "$6,300 a week, the 2014 practice-squad minimum (library F6, Confirmed); $107,100 if retained for all 17 weeks",
    "bonus_terms": "$0; $0; 0",
-   "guarantees": "$0",
-   "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "guarantees": "$0; a practice-squad contract pays only for weeks on the squad",
+   "dead_money_2014": "$0 gross exposure",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "Branch record (Entry 85); minimum Confirmed Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.",
+   "plan": "Practice squad; may be promoted, released or signed away by another club under the practice-squad rules",
+   "source_note": "Practice-squad contract signed August 31, 2014 after clearing waivers (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier reserve/future ended with the August 30 waiver; Bray's $51,675 2013 bonus acceleration stays in the dead-money ledger.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
     "career/2014/free_agency/signings.md",
-    "library/2014_jaguars_contract_completion.md"
+    "library/2014_jaguars_contract_completion.md",
+    "library/2014_league_calendar_and_financial_rules.md"
    ],
    "credited_seasons": "0",
    "accrued_seasons": "No 2013 accrual from practice-squad service",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 420000,
-     "base": 420000,
-     "proration": 0,
-     "cash": 420000,
-     "guaranteed_base": 0
-    },
-    "2015": {
      "status": "approximate",
      "cap": null,
-     "base": 510000,
+     "base": 107100,
      "proration": 0,
      "other_cap": 0,
-     "cash": 510000,
-     "approximate_cap": 510000,
-     "estimate_note": "Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
-     "guaranteed_base": 0
+     "cash": 107100,
+     "approximate_cap": 107100,
+     "guaranteed_base": 0,
+     "estimate_note": "Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount"
+    },
+    "2015": {
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2016": {
      "status": "not_committed",
@@ -4582,7 +4607,13 @@
      "cash": null
     }
    },
-   "schedule_basis": "Includes adopted simulation amounts; see contract notes"
+   "schedule_basis": "Includes adopted simulation amounts; see contract notes",
+   "prior_contract": {
+    "type": "Reserve/future",
+    "term": "2 / 2015 (simulation reconstruction)",
+    "contract_ends": 2015,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   }
   },
   {
    "name": "Richard Murphy",
@@ -4591,48 +4622,48 @@
    "date_of_birth": "1986-09-18",
    "age_at_checkpoint": 27,
    "control": "signed",
-   "status": "Under contract (reserve/future contract effective March 11, 2014)",
-   "contract_type": "Reserve/future",
-   "signed": "February 3, 2014",
-   "term": "2 / 2015 (simulation reconstruction)",
-   "contract_ends": 2015,
-   "value": "$1,080,000",
+   "status": "Practice squad (signed August 31, 2014, after the August 30 waiver ended the earlier contract)",
+   "contract_type": "Practice squad (weekly)",
+   "signed": "August 31, 2014",
+   "term": "Weekly, through the 2014 season (simulation reconstruction of the standard practice-squad agreement)",
+   "contract_ends": 2014,
+   "value": "$6,300 a week, the 2014 practice-squad minimum (library F6, Confirmed); $107,100 if retained for all 17 weeks",
    "bonus_terms": "$0; $0; 0",
-   "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
-   "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "guarantees": "$0; a practice-squad contract pays only for weeks on the squad",
+   "dead_money_2014": "$0 gross exposure",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "2011 injured reserve does not count under Article 26; five active games in December 2012 do. Branch 2013 practice squad adds none. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.",
+   "plan": "Practice squad; may be promoted, released or signed away by another club under the practice-squad rules",
+   "source_note": "Practice-squad contract signed August 31, 2014 after clearing waivers (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier reserve/future ended with the August 30 waiver; no bonus allocation survived it.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
     "career/2014/free_agency/signings.md",
+    "library/2014_jaguars_contract_completion.md",
     "library/2014_jaguars_original_contract_reconstruction.md",
-    "library/2014_jaguars_contract_completion.md"
+    "library/2014_league_calendar_and_financial_rules.md"
    ],
    "credited_seasons": "1 through 2013, Article 26 reconstruction; see original-contract research",
    "accrued_seasons": "No 2013 accrual from practice-squad service",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 495000,
-     "base": 495000,
-     "proration": 0,
-     "other_cap": 0,
-     "cash": 495000,
-     "guaranteed_base": 0
-    },
-    "2015": {
      "status": "approximate",
      "cap": null,
-     "base": 585000,
+     "base": 107100,
      "proration": 0,
      "other_cap": 0,
-     "cash": 585000,
-     "approximate_cap": 585000,
-     "estimate_note": "Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
-     "guaranteed_base": 0
+     "cash": 107100,
+     "approximate_cap": 107100,
+     "guaranteed_base": 0,
+     "estimate_note": "Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount"
+    },
+    "2015": {
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2016": {
      "status": "not_committed",
@@ -4705,7 +4736,13 @@
      "cash": null
     }
    },
-   "schedule_basis": "Includes adopted simulation amounts; see contract notes"
+   "schedule_basis": "Includes adopted simulation amounts; see contract notes",
+   "prior_contract": {
+    "type": "Reserve/future",
+    "term": "2 / 2015 (simulation reconstruction)",
+    "contract_ends": 2015,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   }
   },
   {
    "name": "Jerrell Jackson",
@@ -4714,7 +4751,7 @@
    "date_of_birth": "1990-02-06",
    "age_at_checkpoint": 24,
    "control": "signed",
-   "status": "Under contract (reserve/future contract effective March 11, 2014)",
+   "status": "Under contract (reserve/future contract effective March 11, 2014); reserve/injured from August 31, 2014 (waived with the injured designation August 30, unclaimed); the contract continues",
    "contract_type": "Reserve/future",
    "signed": "February 3, 2014",
    "term": "2 / 2015 (simulation reconstruction)",
@@ -4728,11 +4765,12 @@
    "plan": "No new transaction decision in this tracker",
    "source_note": "Promoted December 24, 2012 for the finale only; 2013 branch practice squad adds no credited season. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
     "career/2014/free_agency/signings.md",
-    "library/2014_jaguars_original_contract_reconstruction.md",
-    "library/2014_jaguars_contract_completion.md"
+    "library/2014_jaguars_contract_completion.md",
+    "library/2014_jaguars_original_contract_reconstruction.md"
    ],
    "credited_seasons": "0 through 2013, Article 26 reconstruction; see original-contract research",
    "accrued_seasons": "No 2013 accrual from practice-squad service",
@@ -4837,48 +4875,48 @@
    "date_of_birth": "1990-04-09",
    "age_at_checkpoint": 23,
    "control": "signed",
-   "status": "Under contract (reserve/future contract effective March 11, 2014)",
-   "contract_type": "Reserve/future",
-   "signed": "February 3, 2014",
-   "term": "2 / 2015 (simulation reconstruction)",
-   "contract_ends": 2015,
-   "value": "$930,000",
+   "status": "Practice squad (signed August 31, 2014, after the August 30 waiver ended the earlier contract)",
+   "contract_type": "Practice squad (weekly)",
+   "signed": "August 31, 2014",
+   "term": "Weekly, through the 2014 season (simulation reconstruction of the standard practice-squad agreement)",
+   "contract_ends": 2014,
+   "value": "$6,300 a week, the 2014 practice-squad minimum (library F6, Confirmed); $107,100 if retained for all 17 weeks",
    "bonus_terms": "$0; $0; 0",
-   "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
-   "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "guarantees": "$0; a practice-squad contract pays only for weeks on the squad",
+   "dead_money_2014": "$0 gross exposure",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "Kansas City practice squad for the first 15 games of 2012; Jacksonville signed him December 28 for the finale. Branch 2013 practice squad adds none. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.",
+   "plan": "Practice squad; may be promoted, released or signed away by another club under the practice-squad rules",
+   "source_note": "Practice-squad contract signed August 31, 2014 after clearing waivers (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier reserve/future ended with the August 30 waiver; no bonus allocation survived it.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
     "career/2014/free_agency/signings.md",
+    "library/2014_jaguars_contract_completion.md",
     "library/2014_jaguars_original_contract_reconstruction.md",
-    "library/2014_jaguars_contract_completion.md"
+    "library/2014_league_calendar_and_financial_rules.md"
    ],
    "credited_seasons": "0 through 2013, Article 26 reconstruction; see original-contract research",
    "accrued_seasons": "No 2013 accrual from practice-squad service",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 420000,
-     "base": 420000,
-     "proration": 0,
-     "other_cap": 0,
-     "cash": 420000,
-     "guaranteed_base": 0
-    },
-    "2015": {
      "status": "approximate",
      "cap": null,
-     "base": 510000,
+     "base": 107100,
      "proration": 0,
      "other_cap": 0,
-     "cash": 510000,
-     "approximate_cap": 510000,
-     "estimate_note": "Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
-     "guaranteed_base": 0
+     "cash": 107100,
+     "approximate_cap": 107100,
+     "guaranteed_base": 0,
+     "estimate_note": "Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount"
+    },
+    "2015": {
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2016": {
      "status": "not_committed",
@@ -4951,7 +4989,13 @@
      "cash": null
     }
    },
-   "schedule_basis": "Includes adopted simulation amounts; see contract notes"
+   "schedule_basis": "Includes adopted simulation amounts; see contract notes",
+   "prior_contract": {
+    "type": "Reserve/future",
+    "term": "2 / 2015 (simulation reconstruction)",
+    "contract_ends": 2015,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   }
   },
   {
    "name": "D'Anthony Smith",
@@ -4959,49 +5003,44 @@
    "roster_position": "DT",
    "date_of_birth": "1988-06-09",
    "age_at_checkpoint": 25,
-   "control": "signed",
-   "status": "Under contract (reserve/future contract effective March 11, 2014)",
+   "control": "waived",
+   "status": "Waived August 30, 2014 at the reduction to 53; cleared waivers August 31",
    "contract_type": "Reserve/future (market draw won)",
    "signed": "February 5, 2014",
    "term": "2 / 2015 (simulation reconstruction)",
-   "contract_ends": 2015,
+   "contract_ends": null,
    "value": "$1,080,000",
    "bonus_terms": "$0; $0; 0",
    "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
    "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "2010 and 2011 injured reserve do not count for Article 26; eight games in 2012 supply one credited season. Branch 2013 practice squad adds none. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.",
+   "plan": "Former player; departure recorded",
+   "source_note": "2010 and 2011 injured reserve do not count for Article 26; eight games in 2012 supply one credited season. Branch 2013 practice squad adds none. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season. Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Reserve/future (market draw won) ended.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
     "career/2014/free_agency/signings.md",
-    "library/2014_jaguars_original_contract_reconstruction.md",
-    "library/2014_jaguars_contract_completion.md"
+    "library/2014_jaguars_contract_completion.md",
+    "library/2014_jaguars_original_contract_reconstruction.md"
    ],
    "credited_seasons": "1 through 2013, Article 26 reconstruction; see original-contract research",
    "accrued_seasons": "No 2013 accrual from practice-squad service",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 495000,
-     "base": 495000,
-     "proration": 0,
-     "other_cap": 0,
-     "cash": 495000,
-     "guaranteed_base": 0
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2015": {
-     "status": "approximate",
+     "status": "not_committed",
      "cap": null,
-     "base": 585000,
-     "proration": 0,
-     "other_cap": 0,
-     "cash": 585000,
-     "approximate_cap": 585000,
-     "estimate_note": "Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
-     "guaranteed_base": 0
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2016": {
      "status": "not_committed",
@@ -5074,7 +5113,16 @@
      "cash": null
     }
    },
-   "schedule_basis": "Includes adopted simulation amounts; see contract notes"
+   "schedule_basis": "Includes adopted simulation amounts; see contract notes",
+   "prior_contract": {
+    "type": "Reserve/future (market draw won)",
+    "term": "2 / 2015 (simulation reconstruction)",
+    "contract_ends": 2015,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   },
+   "former_player": true,
+   "departure_date": "2014-08-30",
+   "departure_source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
   },
   {
    "name": "Antwon Blake",
@@ -5082,49 +5130,44 @@
    "roster_position": "S",
    "date_of_birth": "1990-08-09",
    "age_at_checkpoint": 23,
-   "control": "signed",
-   "status": "Under contract (reserve/future contract effective March 11, 2014)",
+   "control": "waived",
+   "status": "Waived August 30, 2014 at the reduction to 53; cleared waivers August 31",
    "contract_type": "Reserve/future",
    "signed": "February 3, 2014",
    "term": "2 / 2015 (simulation reconstruction)",
-   "contract_ends": 2015,
+   "contract_ends": null,
    "value": "$1,080,000",
    "bonus_terms": "$0; $0; 0",
    "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
    "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "2012 Jacksonville active-roster service supplies one credited season; branch 2013 practice squad adds none. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.",
+   "plan": "Former player; departure recorded",
+   "source_note": "2012 Jacksonville active-roster service supplies one credited season; branch 2013 practice squad adds none. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season. Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Reserve/future ended.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
     "career/2014/free_agency/signings.md",
-    "library/2014_jaguars_original_contract_reconstruction.md",
-    "library/2014_jaguars_contract_completion.md"
+    "library/2014_jaguars_contract_completion.md",
+    "library/2014_jaguars_original_contract_reconstruction.md"
    ],
    "credited_seasons": "1 through 2013, Article 26 reconstruction; see original-contract research",
    "accrued_seasons": "No 2013 accrual from practice-squad service",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 495000,
-     "base": 495000,
-     "proration": 0,
-     "other_cap": 0,
-     "cash": 495000,
-     "guaranteed_base": 0
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2015": {
-     "status": "approximate",
+     "status": "not_committed",
      "cap": null,
-     "base": 585000,
-     "proration": 0,
-     "other_cap": 0,
-     "cash": 585000,
-     "approximate_cap": 585000,
-     "estimate_note": "Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
-     "guaranteed_base": 0
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2016": {
      "status": "not_committed",
@@ -5197,7 +5240,16 @@
      "cash": null
     }
    },
-   "schedule_basis": "Includes adopted simulation amounts; see contract notes"
+   "schedule_basis": "Includes adopted simulation amounts; see contract notes",
+   "prior_contract": {
+    "type": "Reserve/future",
+    "term": "2 / 2015 (simulation reconstruction)",
+    "contract_ends": 2015,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   },
+   "former_player": true,
+   "departure_date": "2014-08-30",
+   "departure_source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
   },
   {
    "name": "Chad Henne",
@@ -5703,36 +5755,34 @@
    "roster_position": "DE",
    "date_of_birth": "1987-03-30",
    "age_at_checkpoint": 26,
-   "control": "signed",
-   "status": "Under contract",
+   "control": "released",
+   "status": "Released August 30, 2014 at the reduction to 53 (vested veteran, not subject to waivers)",
    "contract_type": "Veteran minimum (branch re-signing)",
    "signed": "March 28, 2014",
    "term": "1 / 2014",
-   "contract_ends": 2014,
+   "contract_ends": null,
    "value": "$795,000",
    "bonus_terms": "$65,000 signing bonus; $65,000; 1",
    "guarantees": "$65,000 (signing bonus)",
    "dead_money_2014": "$65,000 if released",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "Branch record (Entry 103; negotiation record career/2014/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md). $730,000 minimum for four credited seasons plus a $65,000 signing bonus. Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified.",
+   "plan": "Former player; departure recorded",
+   "source_note": "Branch record (Entry 103; negotiation record career/2014/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md). $730,000 minimum for four credited seasons plus a $65,000 signing bonus. Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified. Released August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Veteran minimum (branch re-signing) ended. Dead money: the 2014 bonus allocation of $65,000 stays in 2014 and the later allocations of $0 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the library does not record the rule).",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
-    "career/2014/finances/player_contracts/contract_status.md"
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md"
    ],
    "credited_seasons": "Four to six (inferred from his real 2014 $730,000 minimum base, Over The Cap data; unverified)",
    "accrued_seasons": "Through 2012: 3 (2010-2012 with Green Bay). 2013: Accrues in branch (on 53 for 16 games; injured Week 2, never moved to a reserve list)",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 795000,
-     "base": 730000,
-     "proration": 65000,
-     "other_cap": 0,
-     "cash": 795000,
-     "guaranteed_base": 0,
-     "basis": "Branch one-year minimum plus $65,000 signing bonus, Entry 103"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2015": {
      "status": "not_committed",
@@ -5812,7 +5862,16 @@
      "cash": null
     }
    },
-   "schedule_basis": "Branch minimum re-signing, Entry 103 (negotiation record career/2014/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md)"
+   "schedule_basis": "Branch minimum re-signing, Entry 103 (negotiation record career/2014/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md)",
+   "prior_contract": {
+    "type": "Veteran minimum (branch re-signing)",
+    "term": "1 / 2014",
+    "contract_ends": 2014,
+    "ended": "Released August 30, 2014 at the reduction to 53"
+   },
+   "former_player": true,
+   "departure_date": "2014-08-30",
+   "departure_source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
   },
   {
    "name": "Alan Ball",
@@ -6052,37 +6111,35 @@
    "roster_position": "LS",
    "date_of_birth": "1980-03-24",
    "age_at_checkpoint": 33,
-   "control": "signed",
-   "status": "Under contract",
+   "control": "released",
+   "status": "Released August 30, 2014 at the reduction to 53 (vested veteran, not subject to waivers)",
    "contract_type": "Veteran minimum (branch re-signing)",
    "signed": "March 19, 2014",
    "term": "1 / 2014",
-   "contract_ends": 2014,
+   "contract_ends": null,
    "value": "$855,000",
    "bonus_terms": "$0; $0; 0",
    "guarantees": "$0",
    "dead_money_2014": "$0 gross exposure under adopted terms",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "Branch record (Entry 99; negotiation record career/2014/free_agency/cain_negotiation_2014-03-19.md). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from his real September 2014 Chicago figure (single source). Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified",
+   "plan": "Former player; departure recorded",
+   "source_note": "Branch record (Entry 99; negotiation record career/2014/free_agency/cain_negotiation_2014-03-19.md). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from his real September 2014 Chicago figure (single source). Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified Released August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Veteran minimum (branch re-signing) ended.",
    "sources": [
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "career/2014/finances/player_contracts/contracts.md",
-    "career/2014/free_agency/signings.md",
-    "career/2014/free_agency/cain_negotiation_2014-03-19.md"
+    "career/2014/free_agency/cain_negotiation_2014-03-19.md",
+    "career/2014/free_agency/signings.md"
    ],
    "credited_seasons": "Seven to nine (inferred; unverified)",
    "accrued_seasons": "Through 2012: 4+ (entered 2004; Jacksonville long snapper through 2012). 2013: Accrues in branch (on 53 for 16 games); at least 5 accrued",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 855000,
-     "base": 855000,
-     "proration": 0,
-     "other_cap": 0,
-     "cash": 855000,
-     "guaranteed_base": 0,
-     "basis": "Branch one-year minimum, Entry 99"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2015": {
      "status": "not_committed",
@@ -6162,7 +6219,16 @@
      "cash": null
     }
    },
-   "schedule_basis": "Executed branch terms (Entry 99)"
+   "schedule_basis": "Executed branch terms (Entry 99)",
+   "prior_contract": {
+    "type": "Veteran minimum (branch re-signing)",
+    "term": "1 / 2014",
+    "contract_ends": 2014,
+    "ended": "Released August 30, 2014 at the reduction to 53"
+   },
+   "former_player": true,
+   "departure_date": "2014-08-30",
+   "departure_source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
   },
   {
    "name": "Cameron Bradfield",
@@ -6170,36 +6236,35 @@
    "roster_position": "OT",
    "date_of_birth": "1987-09-14",
    "age_at_checkpoint": 26,
-   "control": "tender",
-   "status": "Lowest (right of first refusal) RFA tender, made by 4 p.m. March 11, 2014 (Entry 94); unsigned. No draft-pick compensation; Jacksonville may match any offer sheet",
+   "control": "pending",
+   "status": "Qualifying offer withdrawn August 30, 2014 and rights renounced; free agent",
    "contract_type": "UDFA, 2011 (3 years)",
    "signed": "See expiring-contract description",
    "term": "1 / 2014 (unsigned tender)",
-   "contract_ends": 2014,
+   "contract_ends": null,
    "value": "$1,431,000 tender",
    "bonus_terms": "Not established for a new contract",
    "guarantees": "Unsigned tender; $0 guaranteed before signing",
    "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
    "remaining_guarantees": null,
    "availability": "No communicated restriction",
-   "plan": "2014 tender: $1,431,000. Lowest (right of first refusal) RFA tender, made by 4 p.m. March 11, 2014 (Entry 94); unsigned. No draft-pick compensation; Jacksonville may match any offer sheet",
-   "source_note": "2014 RFA tender amounts Confirmed (published by March 6)",
+   "plan": "Former player; tender withdrawn",
+   "source_note": "2014 RFA tender amounts Confirmed (published by March 6) Tender withdrawn August 30, 2014 and rights renounced (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the $1,431,000 tender charge leaves.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
     "career/2014/free_agency/signings.md"
    ],
    "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
    "accrued_seasons": "Through 2012: 2 (2011: one of three undrafted rookies on Jacksonville's opening 53; 2012: 14 games). 2013: Accrues in branch (on 53 for 16 games)",
    "years": {
     "2014": {
-     "status": "tender",
-     "cap": 1431000,
-     "base": 1431000,
-     "proration": 0,
-     "cash": 1431000,
-     "guaranteed_base": 0,
-     "other_cap": 0
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2015": {
      "status": "not_committed",
@@ -6279,7 +6344,10 @@
      "cash": null
     }
    },
-   "schedule_basis": "Unsigned tender (Entry 94)"
+   "schedule_basis": "Unsigned tender (Entry 94)",
+   "former_player": true,
+   "departure_date": "2014-08-30",
+   "departure_source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
   },
   {
    "name": "Allen Reisner",
@@ -6519,36 +6587,35 @@
    "roster_position": "WR",
    "date_of_birth": "1988-10-11",
    "age_at_checkpoint": 25,
-   "control": "tender",
-   "status": "Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014 (Entry 94); unsigned",
+   "control": "pending",
+   "status": "Qualifying offer withdrawn August 30, 2014 and rights renounced; free agent",
    "contract_type": "Veteran minimum, late November 2012 (2 years)",
    "signed": "See expiring-contract description",
    "term": "1 / 2014 (unsigned tender)",
-   "contract_ends": 2014,
+   "contract_ends": null,
    "value": "$570,000 tender",
    "bonus_terms": "Not established for a new contract",
    "guarantees": "Unsigned tender; $0 guaranteed before signing",
    "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
    "remaining_guarantees": null,
    "availability": "No communicated restriction",
-   "plan": "2014 tender: $570,000. Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014 (Entry 94); unsigned",
-   "source_note": "Two credited seasons (2012: four games on the 53; 2013) is a branch inference from the register",
+   "plan": "Former player; tender withdrawn",
+   "source_note": "Two credited seasons (2012: four games on the 53; 2013) is a branch inference from the register Tender withdrawn August 30, 2014 and rights renounced (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the $570,000 tender charge leaves.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
     "career/2014/free_agency/signings.md"
    ],
    "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
    "accrued_seasons": "Through 2012: 0 (joined Jacksonville's 53 in late November 2012; 4 games). 2013: Accrues in branch (on 53 for 16 games); 1 total",
    "years": {
     "2014": {
-     "status": "tender",
-     "cap": 570000,
-     "base": 570000,
-     "proration": 0,
-     "cash": 570000,
-     "guaranteed_base": 0,
-     "other_cap": 0
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2015": {
      "status": "not_committed",
@@ -6628,7 +6695,10 @@
      "cash": null
     }
    },
-   "schedule_basis": "Unsigned tender (Entry 94)"
+   "schedule_basis": "Unsigned tender (Entry 94)",
+   "former_player": true,
+   "departure_date": "2014-08-30",
+   "departure_source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
   },
   {
    "name": "Mike Brown",
@@ -6636,36 +6706,35 @@
    "roster_position": "WR",
    "date_of_birth": "1989-02-09",
    "age_at_checkpoint": 25,
-   "control": "tender",
-   "status": "Exclusive-rights tender at the 2014 minimum for one credited season, made by 4 p.m. March 11, 2014 (Entry 94); unsigned",
+   "control": "pending",
+   "status": "Qualifying offer withdrawn August 30, 2014 and rights renounced; free agent",
    "contract_type": "UDFA, 2012",
    "signed": "See expiring-contract description",
    "term": "1 / 2014 (unsigned tender)",
-   "contract_ends": 2014,
+   "contract_ends": null,
    "value": "$495,000 tender",
    "bonus_terms": "Not established for a new contract",
    "guarantees": "Unsigned tender; $0 guaranteed before signing",
    "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
    "remaining_guarantees": null,
    "availability": "No communicated restriction",
-   "plan": "2014 tender: $495,000. Exclusive-rights tender at the 2014 minimum for one credited season, made by 4 p.m. March 11, 2014 (Entry 94); unsigned",
-   "source_note": "One credited season (two 2012 weeks on the 53 do not make a credited season; 2013) is a branch inference from the register",
+   "plan": "Former player; tender withdrawn",
+   "source_note": "One credited season (two 2012 weeks on the 53 do not make a credited season; 2013) is a branch inference from the register Tender withdrawn August 30, 2014 and rights renounced (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the $495,000 tender charge leaves.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
     "career/2014/free_agency/signings.md"
    ],
    "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
    "accrued_seasons": "Through 2012: 0 (practice squad for all but two weeks of 2012). 2013: Accrues in branch (on 53 for 16 games); 1 total",
    "years": {
     "2014": {
-     "status": "tender",
-     "cap": 495000,
-     "base": 495000,
-     "proration": 0,
-     "cash": 495000,
-     "guaranteed_base": 0,
-     "other_cap": 0
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2015": {
      "status": "not_committed",
@@ -6745,7 +6814,10 @@
      "cash": null
     }
    },
-   "schedule_basis": "Unsigned tender (Entry 94)"
+   "schedule_basis": "Unsigned tender (Entry 94)",
+   "former_player": true,
+   "departure_date": "2014-08-30",
+   "departure_source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
   },
   {
    "name": "Austin Pasztor",
@@ -6753,36 +6825,35 @@
    "roster_position": "G",
    "date_of_birth": "1990-11-26",
    "age_at_checkpoint": 23,
-   "control": "tender",
-   "status": "Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014 (Entry 94); unsigned",
+   "control": "pending",
+   "status": "Qualifying offer withdrawn August 30, 2014 and rights renounced; free agent",
    "contract_type": "Practice squad September 17, 2012; promoted December 14, 2012",
    "signed": "See expiring-contract description",
    "term": "1 / 2014 (unsigned tender)",
-   "contract_ends": 2014,
+   "contract_ends": null,
    "value": "$570,000 tender",
    "bonus_terms": "Not established for a new contract",
    "guarantees": "Unsigned tender; $0 guaranteed before signing",
    "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
    "remaining_guarantees": null,
    "availability": "No communicated restriction",
-   "plan": "2014 tender: $570,000. Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014 (Entry 94); unsigned",
-   "source_note": "Two credited seasons (2012: three games on the 53 from December 14; 2013) is a branch inference from the register",
+   "plan": "Former player; tender withdrawn",
+   "source_note": "Two credited seasons (2012: three games on the 53 from December 14; 2013) is a branch inference from the register Tender withdrawn August 30, 2014 and rights renounced (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the $570,000 tender charge leaves.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
     "career/2014/free_agency/signings.md"
    ],
    "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
    "accrued_seasons": "Through 2012: 0 (active only from December 14, 2012). 2013: Accrues in branch (on 53 for 16 games; Week 1 inactive on medical hold, still full pay); 1 total",
    "years": {
     "2014": {
-     "status": "tender",
-     "cap": 570000,
-     "base": 570000,
-     "proration": 0,
-     "cash": 570000,
-     "guaranteed_base": 0,
-     "other_cap": 0
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2015": {
      "status": "not_committed",
@@ -6862,7 +6933,10 @@
      "cash": null
     }
    },
-   "schedule_basis": "Unsigned tender (Entry 94)"
+   "schedule_basis": "Unsigned tender (Entry 94)",
+   "former_player": true,
+   "departure_date": "2014-08-30",
+   "departure_source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
   },
   {
    "name": "John Parker Wilson",
@@ -6870,39 +6944,36 @@
    "roster_position": "QB",
    "date_of_birth": "1985-10-17",
    "age_at_checkpoint": 28,
-   "control": "signed",
-   "status": "Under contract through 2014",
+   "control": "waived",
+   "status": "Waived August 30, 2014 at the reduction to 53; cleared waivers August 31",
    "contract_type": "Inherited reserve/future contract",
    "signed": "December 30, 2012",
    "term": "2 / 2014 (simulation reconstruction)",
-   "contract_ends": 2014,
+   "contract_ends": null,
    "value": "$1,360,000 (2013-2014 simulation terms)",
    "bonus_terms": "$0 Jacksonville signing bonus; $0 proration",
    "guarantees": "No guaranteed salary or bonus in the adopted simulation terms",
    "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "Under contract for 2014; the earlier release-if-expired recommendation requires a separate release decision",
-   "source_note": "Official Jaguars transactions confirm the December 30, 2012 futures signing. The two-year length and no-bonus structure are adopted simulation terms, using the recovered $630,000 2013 minimum and $730,000 2014 four-season minimum.",
+   "plan": "Former player; departure recorded",
+   "source_note": "Official Jaguars transactions confirm the December 30, 2012 futures signing. The two-year length and no-bonus structure are adopted simulation terms, using the recovered $630,000 2013 minimum and $730,000 2014 four-season minimum. Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Inherited reserve/future contract ended.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "career/2014/finances/player_contracts/contract_status.md",
-    "library/2014_jaguars_original_contract_reconstruction.md",
-    "library/2014_jaguars_contract_completion.md"
+    "career/2014/finances/player_contracts/contracts.md",
+    "library/2014_jaguars_contract_completion.md",
+    "library/2014_jaguars_original_contract_reconstruction.md"
    ],
    "credited_seasons": "4: Atlanta 2009, 2010 and late 2011; Jacksonville branch 2013",
    "accrued_seasons": "At least 3 through 2013; free-agent class to be determined at expiration",
    "years": {
     "2014": {
-     "status": "approximate",
+     "status": "not_committed",
      "cap": null,
-     "base": 730000,
-     "proration": 0,
-     "other_cap": 0,
-     "cash": 730000,
-     "approximate_cap": 730000,
-     "estimate_note": "Official Jaguars transactions confirm the December 30, 2012 futures signing. The two-year length and no-bonus structure are adopted simulation terms, using the recovered $630,000 2013 minimum and $730,000 2014 four-season minimum. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
-     "guaranteed_base": 0
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2015": {
      "status": "not_committed",
@@ -6982,7 +7053,16 @@
      "cash": null
     }
    },
-   "schedule_basis": "Includes adopted simulation amounts; see contract notes"
+   "schedule_basis": "Includes adopted simulation amounts; see contract notes",
+   "prior_contract": {
+    "type": "Inherited reserve/future contract",
+    "term": "2 / 2014 (simulation reconstruction)",
+    "contract_ends": 2014,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   },
+   "former_player": true,
+   "departure_date": "2014-08-30",
+   "departure_source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
   },
   {
    "name": "Jonathan Grimes",
@@ -8640,66 +8720,60 @@
    "date_of_birth": "1990-04-07",
    "age_at_checkpoint": 24,
    "control": "signed",
-   "status": "Under contract",
-   "contract_type": "Rookie scale, pick #205",
-   "signed": "May 11, 2014",
-   "term": "4 / 2017",
-   "contract_ends": 2017,
-   "value": "$2,314,052",
-   "bonus_terms": "$94,052; $23,513; 4",
-   "guarantees": "Signing bonus only; no base salary guaranteed",
-   "dead_money_2014": "$94,052 gross exposure under the slot reconstruction, before any later earned payment or recorded credit",
+   "status": "Practice squad (signed August 31, 2014, after the August 30 waiver ended the earlier contract)",
+   "contract_type": "Practice squad (weekly)",
+   "signed": "August 31, 2014",
+   "term": "Weekly, through the 2014 season (simulation reconstruction of the standard practice-squad agreement)",
+   "contract_ends": 2014,
+   "value": "$6,300 a week, the 2014 practice-squad minimum (library F6, Confirmed); $107,100 if retained for all 17 weeks",
+   "bonus_terms": "$0; $0; 0",
+   "guarantees": "$0; a practice-squad contract pays only for weeks on the squad",
+   "dead_money_2014": "$0 gross exposure",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "Branch record (Entry 108): selected May 10, 2014 at No. 205; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 205 (Luke Bowanko, Jacksonville (real)) in the nflverse/OTC historical contracts file, $2,314,052 total and $94,052 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract",
+   "plan": "Practice squad; may be promoted, released or signed away by another club under the practice-squad rules",
+   "source_note": "Practice-squad contract signed August 31, 2014 after clearing waivers (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier Rookie scale, pick #205 ended with the August 30 waiver; no bonus allocation survived it.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/draft/draftees.md",
     "career/2014/finances/player_contracts/contract_status.md",
-    "career/2014/draft/draftees.md"
+    "career/2014/finances/player_contracts/contracts.md",
+    "library/2014_league_calendar_and_financial_rules.md"
    ],
    "credited_seasons": "0",
    "accrued_seasons": "0 (2014 rookie)",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 443513,
-     "base": 420000,
-     "proration": 23513,
-     "cash": 514052,
+     "status": "approximate",
+     "cap": null,
+     "base": 107100,
+     "proration": 0,
      "other_cap": 0,
+     "cash": 107100,
+     "approximate_cap": 107100,
      "guaranteed_base": 0,
-     "basis": "Slot reconstruction from the same-slot 2014 contract (pick 205: Luke Bowanko, 2,314,052 total, 94,052 guaranteed); minimum-scale base, signing bonus allocated over four years"
+     "estimate_note": "Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount"
     },
     "2015": {
-     "status": "known",
-     "cap": 533513,
-     "base": 510000,
-     "proration": 23513,
-     "cash": 510000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Slot reconstruction from the same-slot 2014 contract (pick 205: Luke Bowanko, 2,314,052 total, 94,052 guaranteed); minimum-scale base, signing bonus allocated over four years"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2016": {
-     "status": "known",
-     "cap": 623513,
-     "base": 600000,
-     "proration": 23513,
-     "cash": 600000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Slot reconstruction from the same-slot 2014 contract (pick 205: Luke Bowanko, 2,314,052 total, 94,052 guaranteed); minimum-scale base, signing bonus allocated over four years"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2017": {
-     "status": "known",
-     "cap": 713513,
-     "base": 690000,
-     "proration": 23513,
-     "cash": 690000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Slot reconstruction from the same-slot 2014 contract (pick 205: Luke Bowanko, 2,314,052 total, 94,052 guaranteed); minimum-scale base, signing bonus allocated over four years"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2018": {
      "status": "not_committed",
@@ -8760,7 +8834,13 @@
    },
    "draft_pick": "#205",
    "guarantee_basis": "Slot reconstruction from the same-slot 2014 contract",
-   "schedule_basis": "Slot reconstruction from the same-slot 2014 contract"
+   "schedule_basis": "Slot reconstruction from the same-slot 2014 contract",
+   "prior_contract": {
+    "type": "Rookie scale, pick #205",
+    "term": "4 / 2017",
+    "contract_ends": 2017,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   }
   },
   {
    "name": "Malcolm Butler",
@@ -9398,56 +9478,53 @@
    "date_of_birth": "1992-03-28",
    "age_at_checkpoint": 22,
    "control": "signed",
-   "status": "Under contract",
-   "contract_type": "UDFA minimum",
-   "signed": "May 10, 2014",
-   "term": "3 / 2016",
-   "contract_ends": 2016,
-   "value": "$1,530,000",
+   "status": "Practice squad (signed August 31, 2014, after the August 30 waiver ended the earlier contract)",
+   "contract_type": "Practice squad (weekly)",
+   "signed": "August 31, 2014",
+   "term": "Weekly, through the 2014 season (simulation reconstruction of the standard practice-squad agreement)",
+   "contract_ends": 2014,
+   "value": "$6,300 a week, the 2014 practice-squad minimum (library F6, Confirmed); $107,100 if retained for all 17 weeks",
    "bonus_terms": "$0; $0; 0",
-   "guarantees": "$0",
-   "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "guarantees": "$0; a practice-squad contract pays only for weeks on the squad",
+   "dead_money_2014": "$0 gross exposure",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract",
+   "plan": "Practice squad; may be promoted, released or signed away by another club under the practice-squad rules",
+   "source_note": "Practice-squad contract signed August 31, 2014 after clearing waivers (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier udfa minimum ended with the August 30 waiver; no bonus allocation survived it.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/draft/udfa_signings.md",
     "career/2014/finances/player_contracts/contract_status.md",
-    "career/2014/draft/udfa_signings.md"
+    "career/2014/finances/player_contracts/contracts.md",
+    "library/2014_league_calendar_and_financial_rules.md"
    ],
    "credited_seasons": "0",
    "accrued_seasons": "0 (2014 rookie)",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 420000,
-     "base": 420000,
+     "status": "approximate",
+     "cap": null,
+     "base": 107100,
      "proration": 0,
-     "cash": 420000,
      "other_cap": 0,
+     "cash": 107100,
+     "approximate_cap": 107100,
      "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule"
+     "estimate_note": "Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount"
     },
     "2015": {
-     "status": "known",
-     "cap": 510000,
-     "base": 510000,
-     "proration": 0,
-     "cash": 510000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2016": {
-     "status": "known",
-     "cap": 600000,
-     "base": 600000,
-     "proration": 0,
-     "cash": 600000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2017": {
      "status": "not_committed",
@@ -9514,7 +9591,13 @@
     }
    },
    "guarantee_basis": "Branch contract",
-   "schedule_basis": "Executed branch terms"
+   "schedule_basis": "Executed branch terms",
+   "prior_contract": {
+    "type": "UDFA minimum",
+    "term": "3 / 2016",
+    "contract_ends": 2016,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   }
   },
   {
    "name": "Matt Feiler",
@@ -9523,56 +9606,53 @@
    "date_of_birth": "1992-07-07",
    "age_at_checkpoint": 21,
    "control": "signed",
-   "status": "Under contract",
-   "contract_type": "UDFA minimum",
-   "signed": "May 10, 2014",
-   "term": "3 / 2016",
-   "contract_ends": 2016,
-   "value": "$1,545,000",
-   "bonus_terms": "$15,000; $5,000; 3",
-   "guarantees": "Signing bonus only ($15,000); no base salary guaranteed",
-   "dead_money_2014": "$15,000 gross exposure (remaining bonus allocation), before any later earned payment or recorded credit",
+   "status": "Practice squad (signed August 31, 2014, after the August 30 waiver ended the earlier contract)",
+   "contract_type": "Practice squad (weekly)",
+   "signed": "August 31, 2014",
+   "term": "Weekly, through the 2014 season (simulation reconstruction of the standard practice-squad agreement)",
+   "contract_ends": 2014,
+   "value": "$6,300 a week, the 2014 practice-squad minimum (library F6, Confirmed); $107,100 if retained for all 17 weeks",
+   "bonus_terms": "$0; $0; 0",
+   "guarantees": "$0; a practice-squad contract pays only for weeks on the squad",
+   "dead_money_2014": "$0 gross exposure",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract",
+   "plan": "Practice squad; may be promoted, released or signed away by another club under the practice-squad rules",
+   "source_note": "Practice-squad contract signed August 31, 2014 after clearing waivers (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier udfa minimum ended with the August 30 waiver; no bonus allocation survived it.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/draft/udfa_signings.md",
     "career/2014/finances/player_contracts/contract_status.md",
-    "career/2014/draft/udfa_signings.md"
+    "career/2014/finances/player_contracts/contracts.md",
+    "library/2014_league_calendar_and_financial_rules.md"
    ],
    "credited_seasons": "0",
    "accrued_seasons": "0 (2014 rookie)",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 425000,
-     "base": 420000,
-     "proration": 5000,
-     "cash": 435000,
+     "status": "approximate",
+     "cap": null,
+     "base": 107100,
+     "proration": 0,
      "other_cap": 0,
+     "cash": 107100,
+     "approximate_cap": 107100,
      "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule; $15,000 lineman signing bonus prorated"
+     "estimate_note": "Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount"
     },
     "2015": {
-     "status": "known",
-     "cap": 515000,
-     "base": 510000,
-     "proration": 5000,
-     "cash": 510000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule; $15,000 lineman signing bonus prorated"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2016": {
-     "status": "known",
-     "cap": 605000,
-     "base": 600000,
-     "proration": 5000,
-     "cash": 600000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule; $15,000 lineman signing bonus prorated"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2017": {
      "status": "not_committed",
@@ -9639,7 +9719,13 @@
     }
    },
    "guarantee_basis": "Branch contract",
-   "schedule_basis": "Executed branch terms"
+   "schedule_basis": "Executed branch terms",
+   "prior_contract": {
+    "type": "UDFA minimum",
+    "term": "3 / 2016",
+    "contract_ends": 2016,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   }
   },
   {
    "name": "Cameron Brate",
@@ -9648,7 +9734,7 @@
    "date_of_birth": "1991-07-03",
    "age_at_checkpoint": 22,
    "control": "signed",
-   "status": "Under contract",
+   "status": "Under contract; reserve/injured from August 31, 2014 (waived with the injured designation August 30, unclaimed); the contract continues",
    "contract_type": "UDFA minimum",
    "signed": "May 10, 2014",
    "term": "3 / 2016",
@@ -9662,9 +9748,10 @@
    "plan": "No new transaction decision in this tracker",
    "source_note": "Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/draft/udfa_signings.md",
     "career/2014/finances/player_contracts/contract_status.md",
-    "career/2014/draft/udfa_signings.md"
+    "career/2014/finances/player_contracts/contracts.md"
    ],
    "credited_seasons": "0",
    "accrued_seasons": "0 (2014 rookie)",
@@ -9898,56 +9985,53 @@
    "date_of_birth": "1991-05-05",
    "age_at_checkpoint": 23,
    "control": "signed",
-   "status": "Under contract",
-   "contract_type": "UDFA minimum",
-   "signed": "May 10, 2014",
-   "term": "3 / 2016",
-   "contract_ends": 2016,
-   "value": "$1,545,000",
-   "bonus_terms": "$15,000; $5,000; 3",
-   "guarantees": "Signing bonus only ($15,000); no base salary guaranteed",
-   "dead_money_2014": "$15,000 gross exposure (remaining bonus allocation), before any later earned payment or recorded credit",
+   "status": "Practice squad (signed August 31, 2014, after the August 30 waiver ended the earlier contract)",
+   "contract_type": "Practice squad (weekly)",
+   "signed": "August 31, 2014",
+   "term": "Weekly, through the 2014 season (simulation reconstruction of the standard practice-squad agreement)",
+   "contract_ends": 2014,
+   "value": "$6,300 a week, the 2014 practice-squad minimum (library F6, Confirmed); $107,100 if retained for all 17 weeks",
+   "bonus_terms": "$0; $0; 0",
+   "guarantees": "$0; a practice-squad contract pays only for weeks on the squad",
+   "dead_money_2014": "$0 gross exposure",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract",
+   "plan": "Practice squad; may be promoted, released or signed away by another club under the practice-squad rules",
+   "source_note": "Practice-squad contract signed August 31, 2014 after clearing waivers (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier udfa minimum ended with the August 30 waiver; no bonus allocation survived it.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/draft/udfa_signings.md",
     "career/2014/finances/player_contracts/contract_status.md",
-    "career/2014/draft/udfa_signings.md"
+    "career/2014/finances/player_contracts/contracts.md",
+    "library/2014_league_calendar_and_financial_rules.md"
    ],
    "credited_seasons": "0",
    "accrued_seasons": "0 (2014 rookie)",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 425000,
-     "base": 420000,
-     "proration": 5000,
-     "cash": 435000,
+     "status": "approximate",
+     "cap": null,
+     "base": 107100,
+     "proration": 0,
      "other_cap": 0,
+     "cash": 107100,
+     "approximate_cap": 107100,
      "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule; $15,000 lineman signing bonus prorated"
+     "estimate_note": "Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount"
     },
     "2015": {
-     "status": "known",
-     "cap": 515000,
-     "base": 510000,
-     "proration": 5000,
-     "cash": 510000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule; $15,000 lineman signing bonus prorated"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2016": {
-     "status": "known",
-     "cap": 605000,
-     "base": 600000,
-     "proration": 5000,
-     "cash": 600000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule; $15,000 lineman signing bonus prorated"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2017": {
      "status": "not_committed",
@@ -10014,7 +10098,13 @@
     }
    },
    "guarantee_basis": "Branch contract",
-   "schedule_basis": "Executed branch terms"
+   "schedule_basis": "Executed branch terms",
+   "prior_contract": {
+    "type": "UDFA minimum",
+    "term": "3 / 2016",
+    "contract_ends": 2016,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   }
   },
   {
    "name": "Tyler Larsen",
@@ -10022,57 +10112,49 @@
    "roster_position": "C",
    "date_of_birth": "1991-07-08",
    "age_at_checkpoint": 22,
-   "control": "signed",
-   "status": "Under contract",
+   "control": "waived",
+   "status": "Waived August 30, 2014 at the reduction to 53; cleared waivers August 31",
    "contract_type": "UDFA minimum",
    "signed": "May 10, 2014",
    "term": "3 / 2016",
-   "contract_ends": 2016,
+   "contract_ends": null,
    "value": "$1,545,000",
    "bonus_terms": "$15,000; $5,000; 3",
    "guarantees": "Signing bonus only ($15,000); no base salary guaranteed",
    "dead_money_2014": "$15,000 gross exposure (remaining bonus allocation), before any later earned payment or recorded credit",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract",
+   "plan": "Former player; departure recorded",
+   "source_note": "Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the UDFA minimum ended. Dead money: the 2014 bonus allocation of $5,000 stays in 2014 and the later allocations of $10,000 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the library does not record the rule).",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/draft/udfa_signings.md",
     "career/2014/finances/player_contracts/contract_status.md",
-    "career/2014/draft/udfa_signings.md"
+    "career/2014/finances/player_contracts/contracts.md"
    ],
    "credited_seasons": "0",
    "accrued_seasons": "0 (2014 rookie)",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 425000,
-     "base": 420000,
-     "proration": 5000,
-     "cash": 435000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule; $15,000 lineman signing bonus prorated"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2015": {
-     "status": "known",
-     "cap": 515000,
-     "base": 510000,
-     "proration": 5000,
-     "cash": 510000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule; $15,000 lineman signing bonus prorated"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2016": {
-     "status": "known",
-     "cap": 605000,
-     "base": 600000,
-     "proration": 5000,
-     "cash": 600000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule; $15,000 lineman signing bonus prorated"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2017": {
      "status": "not_committed",
@@ -10139,7 +10221,16 @@
     }
    },
    "guarantee_basis": "Branch contract",
-   "schedule_basis": "Executed branch terms"
+   "schedule_basis": "Executed branch terms",
+   "prior_contract": {
+    "type": "UDFA minimum",
+    "term": "3 / 2016",
+    "contract_ends": 2016,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   },
+   "former_player": true,
+   "departure_date": "2014-08-30",
+   "departure_source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
   },
   {
    "name": "Connor Shaw",
@@ -10147,57 +10238,49 @@
    "roster_position": "QB",
    "date_of_birth": "1991-09-19",
    "age_at_checkpoint": 22,
-   "control": "signed",
-   "status": "Under contract",
+   "control": "waived",
+   "status": "Waived August 30, 2014 at the reduction to 53; cleared waivers August 31",
    "contract_type": "UDFA minimum",
    "signed": "May 10, 2014",
    "term": "3 / 2016",
-   "contract_ends": 2016,
+   "contract_ends": null,
    "value": "$1,530,000",
    "bonus_terms": "$0; $0; 0",
    "guarantees": "$0",
    "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract",
+   "plan": "Former player; departure recorded",
+   "source_note": "Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the UDFA minimum ended.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/draft/udfa_signings.md",
     "career/2014/finances/player_contracts/contract_status.md",
-    "career/2014/draft/udfa_signings.md"
+    "career/2014/finances/player_contracts/contracts.md"
    ],
    "credited_seasons": "0",
    "accrued_seasons": "0 (2014 rookie)",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 420000,
-     "base": 420000,
-     "proration": 0,
-     "cash": 420000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2015": {
-     "status": "known",
-     "cap": 510000,
-     "base": 510000,
-     "proration": 0,
-     "cash": 510000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2016": {
-     "status": "known",
-     "cap": 600000,
-     "base": 600000,
-     "proration": 0,
-     "cash": 600000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2017": {
      "status": "not_committed",
@@ -10264,7 +10347,16 @@
     }
    },
    "guarantee_basis": "Branch contract",
-   "schedule_basis": "Executed branch terms"
+   "schedule_basis": "Executed branch terms",
+   "prior_contract": {
+    "type": "UDFA minimum",
+    "term": "3 / 2016",
+    "contract_ends": 2016,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   },
+   "former_player": true,
+   "departure_date": "2014-08-30",
+   "departure_source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
   },
   {
    "name": "Kasim Edebali",
@@ -10648,56 +10740,53 @@
    "date_of_birth": "1990-12-26",
    "age_at_checkpoint": 23,
    "control": "signed",
-   "status": "Under contract",
-   "contract_type": "UDFA minimum",
-   "signed": "May 10, 2014",
-   "term": "3 / 2016",
-   "contract_ends": 2016,
-   "value": "$1,530,000",
+   "status": "Practice squad (signed August 31, 2014, after the August 30 waiver ended the earlier contract)",
+   "contract_type": "Practice squad (weekly)",
+   "signed": "August 31, 2014",
+   "term": "Weekly, through the 2014 season (simulation reconstruction of the standard practice-squad agreement)",
+   "contract_ends": 2014,
+   "value": "$6,300 a week, the 2014 practice-squad minimum (library F6, Confirmed); $107,100 if retained for all 17 weeks",
    "bonus_terms": "$0; $0; 0",
-   "guarantees": "$0",
-   "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "guarantees": "$0; a practice-squad contract pays only for weeks on the squad",
+   "dead_money_2014": "$0 gross exposure",
    "remaining_guarantees": 0,
    "availability": "No communicated restriction",
-   "plan": "No new transaction decision in this tracker",
-   "source_note": "Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract",
+   "plan": "Practice squad; may be promoted, released or signed away by another club under the practice-squad rules",
+   "source_note": "Practice-squad contract signed August 31, 2014 after clearing waivers (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier udfa minimum ended with the August 30 waiver; no bonus allocation survived it.",
    "sources": [
-    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/draft/udfa_signings.md",
     "career/2014/finances/player_contracts/contract_status.md",
-    "career/2014/draft/udfa_signings.md"
+    "career/2014/finances/player_contracts/contracts.md",
+    "library/2014_league_calendar_and_financial_rules.md"
    ],
    "credited_seasons": "0",
    "accrued_seasons": "0 (2014 rookie)",
    "years": {
     "2014": {
-     "status": "known",
-     "cap": 420000,
-     "base": 420000,
+     "status": "approximate",
+     "cap": null,
+     "base": 107100,
      "proration": 0,
-     "cash": 420000,
      "other_cap": 0,
+     "cash": 107100,
+     "approximate_cap": 107100,
      "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule"
+     "estimate_note": "Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount"
     },
     "2015": {
-     "status": "known",
-     "cap": 510000,
-     "base": 510000,
-     "proration": 0,
-     "cash": 510000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2016": {
-     "status": "known",
-     "cap": 600000,
-     "base": 600000,
-     "proration": 0,
-     "cash": 600000,
-     "other_cap": 0,
-     "guaranteed_base": 0,
-     "basis": "Executed three-year undrafted minimum schedule"
+     "status": "not_committed",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2017": {
      "status": "not_committed",
@@ -10764,7 +10853,13 @@
     }
    },
    "guarantee_basis": "Branch contract",
-   "schedule_basis": "Executed branch terms"
+   "schedule_basis": "Executed branch terms",
+   "prior_contract": {
+    "type": "UDFA minimum",
+    "term": "3 / 2016",
+    "contract_ends": 2016,
+    "ended": "Waived August 30, 2014 at the reduction to 53"
+   }
   },
   {
    "name": "Taylor Gabriel",
@@ -11186,6 +11281,97 @@
    "amount": 154868,
    "status": "reconstructed",
    "basis": "Pre-June 1 trade to Seattle, May 12, 2014 (Entry 110): his final $154,868 original bonus allocation stays with Jacksonville in 2014. Seattle takes his $1,431,000 base. No 2015 year."
+  },
+  {
+   "player": "Matt Feiler",
+   "year": 2014,
+   "amount": 5000,
+   "status": "reconstructed",
+   "basis": "Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction"
+  },
+  {
+   "player": "Tyler Shatley",
+   "year": 2014,
+   "amount": 5000,
+   "status": "reconstructed",
+   "basis": "Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction"
+  },
+  {
+   "player": "Tyler Larsen",
+   "year": 2014,
+   "amount": 5000,
+   "status": "reconstructed",
+   "basis": "Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction"
+  },
+  {
+   "player": "C.J. Wilson",
+   "year": 2014,
+   "amount": 65000,
+   "status": "reconstructed",
+   "basis": "Released August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction"
+  },
+  {
+   "player": "Lavar Edwards",
+   "year": 2014,
+   "amount": 53403,
+   "status": "reconstructed",
+   "basis": "Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction"
+  },
+  {
+   "player": "Jeris Pendleton",
+   "year": 2014,
+   "amount": 12848,
+   "status": "reconstructed",
+   "basis": "Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction"
+  },
+  {
+   "player": "Jemea Thomas",
+   "year": 2014,
+   "amount": 23513,
+   "status": "reconstructed",
+   "basis": "Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction"
+  },
+  {
+   "player": "Matt Feiler",
+   "year": 2015,
+   "amount": 10000,
+   "status": "reconstructed",
+   "basis": "Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction"
+  },
+  {
+   "player": "Tyler Shatley",
+   "year": 2015,
+   "amount": 10000,
+   "status": "reconstructed",
+   "basis": "Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction"
+  },
+  {
+   "player": "Tyler Larsen",
+   "year": 2015,
+   "amount": 10000,
+   "status": "reconstructed",
+   "basis": "Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction"
+  },
+  {
+   "player": "Lavar Edwards",
+   "year": 2015,
+   "amount": 106806,
+   "status": "reconstructed",
+   "basis": "Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction"
+  },
+  {
+   "player": "Jeris Pendleton",
+   "year": 2015,
+   "amount": 12848,
+   "status": "reconstructed",
+   "basis": "Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction"
+  },
+  {
+   "player": "Jemea Thomas",
+   "year": 2015,
+   "amount": 70539,
+   "status": "reconstructed",
+   "basis": "Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction"
   }
  ],
  "amendments": [
@@ -11253,6 +11439,16 @@
    "date": "2014-05-12",
    "source": "career/2014/ledger.md",
    "description": "Entry 110: Rackley traded to Seattle for Seattle's own unconditional 2015 seventh-round pick after the May 11 calls; physical passed and processed May 12. Pre-June 1 trade: his $154,868 bonus allocation stays as 2014 dead money and his $1,431,000 base leaves. Clock May 12."
+  },
+  {
+   "date": "2014-08-30",
+   "source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+   "description": "Reduction to 53: 17 players waived and two vested veterans (Cain, C.J. Wilson) released; Brate and Jackson waived with the injured designation; the four qualifying offers (Bradfield, Clemons, Brown, Pasztor) withdrawn and the $3,066,000 tender charge removed; dead money of $169,764 added for 2014 and $220,193 for 2015 from the adopted bonus schedules (post-June 1 treatment, labelled reconstructions)."
+  },
+  {
+   "date": "2014-08-31",
+   "source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+   "description": "Waivers cleared; Brate and Jackson to reserve/injured (contracts continue); eight practice-squad contracts signed at the $6,300 weekly minimum (library F6), carried as a $107,100 working estimate each for 17 weeks; two practice-squad places open."
   }
  ],
  "scenarios": [],

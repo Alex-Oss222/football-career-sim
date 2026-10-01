@@ -8,6 +8,7 @@
 **Checkpoint:** May 11, 2014 starting evaluation, on acquisition (signed as an undrafted rookie on May 10, 2014)  
 **Age:** 21  
 **Position:** G  
+**Roster status (August 31, 2014):** Practice squad from August 31, 2014: waived at the August 30 reduction to 53, cleared waivers and signed a practice-squad contract at the $6,300 weekly minimum ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). Not on the 53; this card stays current and its statistics refresh after closed games only if he is elevated.  
 **NFL standing:** Rookie; no NFL standing. Staff view: camp lineman, practice-squad candidate  
 **Player identity:** A small-school lineman with size and weight-room strength (36 bench reps at the combine, tied for second among linemen) and no experience against major-conference rushers.  
 **Previous annual profile:** None; 2014 rookie. The starting view rests on pre-draft public evidence only  

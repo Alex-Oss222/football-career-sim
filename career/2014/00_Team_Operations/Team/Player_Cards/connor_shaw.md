@@ -8,6 +8,7 @@
 **Checkpoint:** May 11, 2014 starting evaluation, on acquisition (signed as an undrafted rookie on May 10, 2014)  
 **Age:** 22  
 **Position:** QB  
+**Roster status (August 31, 2014):** Former player: Waived August 30, 2014 at the reduction to 53 ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); cleared waivers August 31 and left Jacksonville's control. This card is kept as history through that date; no later work is added.  
 **NFL standing:** Rookie; no NFL standing. Staff view: camp quarterback behind Cousins, Henne and Wilson  
 **Player identity:** A four-year college starting quarterback with mobility, ball security and a record of winning; arm strength and size are ordinary.  
 **Previous annual profile:** None; 2014 rookie. The starting view rests on pre-draft public evidence only  

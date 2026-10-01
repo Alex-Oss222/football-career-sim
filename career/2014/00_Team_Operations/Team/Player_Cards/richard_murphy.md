@@ -8,6 +8,7 @@
 **Checkpoint:** March 31, 2014 starting evaluation  
 **Age:** 27  
 **Position:** RB  
+**Roster status (August 31, 2014):** Practice squad from August 31, 2014: waived at the August 30 reduction to 53, cleared waivers and signed a practice-squad contract at the $6,300 weekly minimum ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). Not on the 53; this card stays current and its statistics refresh after closed games only if he is elevated.  
 **NFL standing:** Starting staff view; exact theoretical personnel grades  
 **Player identity:** A reserve runner with usable movement and receiving assignments. I see a player who needs a specific complementary job, with protection and inside power limiting a broader role.  
 **Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/richard_murphy.md)  

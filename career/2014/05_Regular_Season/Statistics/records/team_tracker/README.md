@@ -16,22 +16,22 @@
 
 ## Depth chart
 
-From [00_Team_Operations/Team/Depth_Chart/working_depth_chart.json](../../../../00_Team_Operations/Team/Depth_Chart/working_depth_chart.json), Carried from the closed 2013 chart (January 6, 2014, AFC Divisional preparation). Order is first listed first; Stone owns it.
+From [00_Team_Operations/Team/Depth_Chart/game_depth_chart.json](../../../../00_Team_Operations/Team/Depth_Chart/game_depth_chart.json), August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); game_day_inactives set for Week 1 on August 31, 2014 with the captains. Order is first listed first; Stone owns it.
 
 | Group | Order |
 |---|---|
-| QB | Kirk Cousins / Chad Henne / John Parker Wilson |
-| RB | Maurice Jones-Drew / Jonathan Grimes / C.J. Anderson |
+| QB | Kirk Cousins / Chad Henne |
+| RB | Maurice Jones-Drew / C.J. Anderson / Jonathan Grimes |
 | FB | Montell Owens |
-| WR | Hakeem Nicks / Adam Thielen / Davante Adams / Toney Clemons / Mike Brown |
-| TE | Marcedes Lewis / Travis Kelce |
-| OL | Eugene Monroe / Joel Bitonio / Mike Brewster / Trai Turner / Lane Johnson / Cameron Bradfield / Austin Pasztor / Mark Asper |
-| DL | Sen'Derrick Marks / Roy Miller / C.J. Mosley / Jeremy Mincey / Andre Branch / Ryan Davis / Jeris Pendleton / C.J. Wilson / Lavar Edwards |
-| LB | Daryl Smith / Julian Stanford / Sio Moore / Paul Posluszny |
-| DB | Dwight Lowery / Mike Harris / Bacarri Rambo / Jordan Poyer / A.J. Bouye / Chris Prosinski / Brynden Trawick |
+| WR | Davante Adams / Adam Thielen / Andrew Hawkins / Allen Hurns / Taylor Gabriel / Hakeem Nicks |
+| TE | Marcedes Lewis / Travis Kelce / Marcel Jensen / Gator Hoskins |
+| OL | Eugene Monroe / Joel Bitonio / Mike Brewster / Trai Turner / Lane Johnson / Cornelius Lucas / Charles Leno Jr. / Andrew Norwell / Corey Linsley |
+| DL | Jeremy Mincey / Sen'Derrick Marks / Roy Miller / Andre Branch / C.J. Mosley / Daniel Te'o-Nesheim / Aaron Donald / Kasim Edebali |
+| LB | Daryl Smith / Paul Posluszny / Julian Stanford / Sio Moore / Telvin Smith / Christian Jones / Todd Davis |
+| DB | Aqib Talib / Mike Harris / Dwight Lowery / Bacarri Rambo / Jordan Poyer / Alterraun Verner / A.J. Bouye / Brynden Trawick / Chris Prosinski / Malcolm Butler |
 | K | Josh Scobee |
 | P | Bryan Anger |
-| LS | Jeremy Cain |
+| LS | Casey Kreiter |
 
 ## Games
 

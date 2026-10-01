@@ -81,8 +81,15 @@ class Week1DepthLibrary2014Tests(unittest.TestCase):
 
     def test_no_branch_controlled_player_and_no_shared_player(self):
         controlled = controlled_players_from_roster(ROSTER)
-        self.assertEqual(len(controlled), 78)
-        self.assertEqual(set(self.library["branch_controlled_players"]), controlled)
+        # The library was reconciled to the July 29, 2014 roster (78 controlled);
+        # the August 30 reduction to 53 left 63 under control (the 53, two on
+        # reserve/injured and eight on the practice squad), every one of them
+        # in the library's control list. The 23 who left stay removed from their
+        # real clubs until the Week 1 rebuild applies their rails dispositions
+        # (Cain to Chicago on September 1; Edwards and Blake unplaced).
+        self.assertEqual(len(self.library["branch_controlled_players"]), 78)
+        self.assertEqual(len(controlled), 63)
+        self.assertTrue(controlled <= set(self.library["branch_controlled_players"]))
         ids, gsis, club_of = Counter(), Counter(), {}
         for team, club in self.library["clubs"].items():
             for player in club["players"]:

@@ -8,6 +8,7 @@
 **Checkpoint:** March 31, 2014 starting evaluation  
 **Age:** 23  
 **Position:** G  
+**Roster status (August 31, 2014):** Former player: qualifying offer withdrawn August 30, 2014 at the reduction to 53 and rights renounced ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); he never signed, never reported and left Jacksonville's control as a free agent. This card is kept as history; no later work is added.  
 **NFL standing:** Starting staff view; exact theoretical personnel grades  
 **Player identity:** A physical interior reserve with useful recovery but uneven combinations and leverage. I see a backup who can cover a job, with less consistent coordination than the starting pair.  
 **Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/austin_pasztor.md)  

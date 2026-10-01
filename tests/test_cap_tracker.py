@@ -18,25 +18,29 @@ class CapTrackerTests(unittest.TestCase):
 
     def test_future_charges_follow_executed_contracts_not_waived_bray_deal(self):
         draft = md_rows((ROOT / 'career/2013/offseason/draft/draftees.md').read_text())
-        surviving = [row for row in draft if len(row) == 9 and row[0].startswith('#') and row[1] != 'Tyler Bray']
+        surviving = [row for row in draft if len(row) == 9 and row[0].startswith('#') and row[1] not in ('Tyler Bray', 'Lavar Edwards')]  # both waived at the August 30, 2014 reduction
         expected_2015 = sum(exact_amount(row[6]) for row in surviving) + 4 * 585000
         expected_2016 = sum(exact_amount(row[7]) for row in surviving)
         names={row[1] for row in surviving} | {'A.J. Bouye','Adam Thielen','Brynden Trawick','C.J. Anderson'}
         rookies=[p for p in self.data['players'] if p['name'] in names]
         self.assertEqual(totals(rookies, ['2015', '2016']), [expected_2015, expected_2016])
-        self.assertEqual(working_charge(self.player('Tyler Bray')['years']['2015']), 510000)
-        self.assertEqual(self.player('Tyler Bray')['contract_ends'], 2015)
+        # Bray's reserve/future deal ended with the August 30, 2014 waiver; his
+        # practice-squad contract (August 31) is weekly and ends with 2014.
+        self.assertEqual(working_charge(self.player('Tyler Bray')['years']['2014']), 107100)
+        self.assertEqual(self.player('Tyler Bray')['contract_ends'], 2014)
+        self.assertIsNone(working_charge(self.player('Tyler Bray')['years']['2015']))
         self.assertIsNone(working_charge(self.player('Tyler Bray')['years']['2016']))
 
     def test_tender_and_options_are_not_double_counted_as_signed_contracts(self):
-        before=totals(self.data['players'], ['2014'])
-        self.player('Cameron Bradfield')['years']['2014']['cap']+=1
-        self.assertEqual(totals(self.data['players'], ['2014']), before)
-        self.player('Cameron Bradfield')['years']['2014']['cap']-=1
-        self.assertEqual(totals(self.data['players'], ['2014'], status='tender'), [3066000])
+        # The four qualifying offers were withdrawn August 30, 2014; a withdrawn
+        # tender is a former-player row with no charge, counted nowhere.
+        self.assertEqual(totals(self.data['players'], ['2014'], status='tender'), [0])
+        bradfield = self.player('Cameron Bradfield')
+        self.assertTrue(bradfield.get('former_player'))
+        self.assertTrue(all(r['status'] == 'not_committed' for r in bradfield['years'].values()))
         self.assertEqual(self.player('Justin Blackmon')['years']['2016']['status'], 'option_unexercised')
         self.assertEqual(self.player('Lane Johnson')['years']['2017']['status'], 'option_unexercised')
-        self.assertEqual(totals(self.data['players'], ['2017']), [48550284])  # replay contracts (Entries 95-97) plus the 2014 rookie contracts (Entry 108)
+        self.assertEqual(totals(self.data['players'], ['2017']), [47836771])  # replay contracts plus the 2014 rookie contracts, less Jemea Thomas (waived August 30, 2014)
 
     def test_model_cannot_be_silently_reclassified_as_historical(self):
         self.player('John Parker Wilson')['years']['2014']['cap'] = 0
@@ -59,7 +63,7 @@ class CapTrackerTests(unittest.TestCase):
         validate(self.data)
         self.assertEqual(totals(self.data['players'], ['2014'])[0],
                          before + former['years']['2014']['cap'])
-        former['departure_date'] = '2014-05-13'
+        former['departure_date'] = '2014-09-01'
         with self.assertRaisesRegex(ValueError, 'future departure'):
             validate(self.data)
 
@@ -86,7 +90,7 @@ class CapTrackerTests(unittest.TestCase):
         outputs = render(self.data)
         main = next(value for path, value in outputs.items() if path.name == 'cap_tracker.md')
         self.assertIn('Unused prior-year room carried in | $5,330,000 to $6,000,000', main)
-        self.assertIn('Difference including the rollover estimate | $13,376,314 to $14,046,314', main)
+        self.assertIn('Difference including the rollover estimate | $16,267,314 to $16,937,314', main)
         self.assertIn('Adjusted team cap | Unresolved', main)
         estimate = self.data['team_years']['2014']['carryover_working_estimate']
         estimate['low'], estimate['high'] = estimate['high'], estimate['low']
@@ -102,8 +106,8 @@ class CapTrackerTests(unittest.TestCase):
         organization=next(value for path,value in outputs.items() if path.name=='coaching_payroll.md')
         self.assertIn('**Nine-year view**',main)
         self.assertIn('**Additional three years**',main)
-        self.assertIn('$124,953,686',main)
-        self.assertIn('$8,046,314',main)
+        self.assertIn('$122,062,686',main)
+        self.assertIn('$10,937,314',main)
         self.assertIn('Certified cap space | Unresolved',main)
         self.assertNotRegex(main,r'^##+ \d+\.',)
         self.assertNotIn('Release comparisons',main)
@@ -162,7 +166,7 @@ class CapTrackerTests(unittest.TestCase):
 
     def test_every_signed_2014_deal_is_priced_and_estimates_stay_separate(self):
         current=[p for p in self.data['players'] if p['control'] in {'signed','future'}]
-        self.assertEqual(len(current),74)  # 49 after the trades (Entry 104) plus 26 rookie contracts (Entry 108), less Rackley (Entry 110)
+        self.assertEqual(len(current),63)  # the active 53 and the two on reserve/injured after the August 30, 2014 reduction, plus the eight practice-squad contracts of August 31
         self.assertTrue(all(p['years']['2014']['status'] in {'known','approximate'} for p in current))
         before=totals(current,['2014'])
         row=self.player('Montell Owens')['years']['2014']
@@ -172,11 +176,17 @@ class CapTrackerTests(unittest.TestCase):
             validate(self.data)
 
     def test_credited_service_uses_branch_practice_squad_history(self):
-        expected={'Richard Murphy':495000, 'Jerrell Jackson':420000, 'Jerome Long':420000,
-                  "D'Anthony Smith":495000, 'Antwon Blake':495000}
+        # Jackson's reserve/future minimum continues on reserve/injured; the
+        # other five futures ended with the August 30, 2014 waivers (Murphy and
+        # Long returned on weekly practice-squad contracts, a 17-week estimate).
+        expected={'Jerrell Jackson':420000}
         for name,salary in expected.items():
             self.assertEqual(self.player(name)['years']['2014']['cap'],salary)
-        self.assertEqual(working_charge(self.player('John Parker Wilson')['years']['2014']),730000)
+        for name in ('Richard Murphy','Jerome Long'):
+            self.assertEqual(working_charge(self.player(name)['years']['2014']),107100)
+        for name in ("D'Anthony Smith",'Antwon Blake','John Parker Wilson'):
+            self.assertTrue(self.player(name).get('former_player'))
+            self.assertIsNone(working_charge(self.player(name)['years']['2014']))
         self.assertEqual(working_charge(self.player('Jonathan Grimes')['years']['2014']),570000)
         self.assertTrue(all(r['status']!='term_unknown' for p in self.data['players'] for r in p['years'].values()))
 
@@ -195,7 +205,7 @@ class CapTrackerTests(unittest.TestCase):
             validate(self.data)
 
     def test_charges_cannot_extend_a_deal_without_changing_its_term(self):
-        p=self.player('John Parker Wilson')
+        p=self.player('Jonathan Grimes')
         p['years']['2015']=copy.deepcopy(p['years']['2014'])
         with self.assertRaisesRegex(ValueError,'Charge exceeds recorded term'):
             validate(self.data)
@@ -210,8 +220,8 @@ class CapTrackerTests(unittest.TestCase):
         self.assertEqual(cap_cell(self.player('Lane Johnson')['years']['2017']), '')
         self.assertEqual(cap_cell(self.player('Alan Ball')['years']['2014']), '')
         self.assertEqual([working_total(self.data['players'],str(y)) for y in [2014,2015,2016,2017]],
-                         [125597494,123275736,84131574,48550284])  # Entry 108 adds the 26 rookie contracts; Entry 110 removes Rackley
-        self.assertIn('$136,014,686',main)  # Old Bray bonus is included once.
+                         [113508530,114920972,79164658,47836771])  # after the August 30, 2014 reduction and the August 31 practice-squad contracts
+        self.assertIn('$124,095,486',main)  # Old Bray bonus and the August 30 dead money are included once.
 
     def test_slot_guarantees_and_release_exposure_reconcile(self):
         lane=self.player('Lane Johnson');kelce=self.player('Travis Kelce')

@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the twelve-year table](../salary_cap/cap_tracker.md). As of May 12, 2014. Whole US dollars.
+[Return to the twelve-year table](../salary_cap/cap_tracker.md). As of August 31, 2014. Whole US dollars.
 
 Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.
 
@@ -205,33 +205,25 @@ Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/con
 
 ## Lavar Edwards
 
+Former player; departure August 30, 2014. [Departure record](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | EDGE / Under contract |
+| Position / status | EDGE / Waived August 30, 2014 at the reduction to 53; cleared waivers August 31 |
 | Original contract | Rookie scale, pick #135 |
 | Signed | May 2, 2013 |
 | Term | 4 / 2016 |
 | Contract value | $2,373,612 |
-| Bonus terms | $213,612; $53,403; 3 |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. |
-| Schedule basis | Executed branch terms / researched original schedule |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $495,000 | $53,403 | $0 | $548,403 | $495,000 | $0 |
-| 2015 | $585,000 | $53,403 | $0 | $638,403 | $585,000 | $0 |
-| 2016 | $675,000 | $53,403 | $0 | $728,403 | $675,000 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.
 
 ### Contract notes
 
-Branch record (draftees); base derived.
+Branch record (draftees); base derived Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Rookie scale, pick #135 ended. Dead money: the 2014 bonus allocation of $53,403 stays in 2014 and the later allocations of $106,806 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the library does not record the rule).
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2013/offseason/draft/draftees.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [draftees](../../2013/offseason/draft/draftees.md), [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
 ## Bacarri Rambo
 
@@ -442,30 +434,23 @@ Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/con
 
 ## Mark Asper
 
+Former player; departure August 30, 2014. [Departure record](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | OG / Under contract |
+| Position / status | OG / Waived August 30, 2014 at the reduction to 53; cleared waivers August 31 |
 | Original contract | Rookie (Buffalo, 2012 sixth round), carried by waiver claims |
 | Signed | 2012 |
 | Term | 4 / 2015 |
 | Contract value | $2,213,452 original four-year deal |
-| Bonus terms | $113,452 original Buffalo bonus; Jacksonville proration $0 |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | No remaining guaranteed base salary established in the recovered schedule |
-| Schedule basis | Executed branch terms / researched original schedule |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $570,000 | $0 | $0 | $570,000 | $570,000 | $0 |
-| 2015 | $660,000 | $0 | $0 | $660,000 | $660,000 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 ### Contract notes
 
-Original 2012 four-year rookie deal continued through waiver claims. Buffalo keeps the $113,452 bonus; Jacksonville carries the remaining scheduled salaries. Conditional escalators require branch evidence.
+Original 2012 four-year rookie deal continued through waiver claims. Buffalo keeps the $113,452 bonus; Jacksonville carries the remaining scheduled salaries. Conditional escalators require branch evidence. Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Rookie (Buffalo, 2012 sixth round), carried by waiver claims ended.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Uche Nwaneri
 
@@ -582,29 +567,23 @@ Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/con
 
 ## Ryan Davis
 
+Former player; departure August 30, 2014. [Departure record](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | EDGE / Under contract |
+| Position / status | EDGE / Waived August 30, 2014 at the reduction to 53; cleared waivers August 31 |
 | Original contract | Reserve/future, December 30, 2012 |
 | Signed | December 30, 2012 |
 | Term | 2 / 2014 |
 | Contract value | $900,000 |
-| Bonus terms | $0 signing bonus or proration |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | No remaining guaranteed base salary established in the recovered schedule |
-| Schedule basis | Executed branch terms / researched original schedule |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $495,000 | $0 | $0 | $495,000 | $495,000 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 ### Contract notes
 
-December 2012 futures deal totals $900,000 across $405,000 in 2013 and $495,000 in 2014, with no bonus. Later real contracts do not extend it.
+December 2012 futures deal totals $900,000 across $405,000 in 2013 and $495,000 in 2014, with no bonus. Later real contracts do not extend it. Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Reserve/future, December 30, 2012 ended.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Jeremy Mincey
 
@@ -681,30 +660,23 @@ Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/con
 
 ## Jeris Pendleton
 
+Former player; departure August 30, 2014. [Departure record](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | IDL / Under contract |
+| Position / status | IDL / Waived August 30, 2014 at the reduction to 53; cleared waivers August 31 |
 | Original contract | Rookie, 2012 seventh round |
 | Signed | 2012 |
 | Term | 4 / 2015 |
 | Contract value | $2,151,392 ($51,392 guaranteed at signing) |
-| Bonus terms | $51,392 signing bonus; $12,848 annually through 2015 |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | No remaining guaranteed base salary established in the recovered schedule |
-| Schedule basis | Executed branch terms / researched original schedule |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $570,000 | $12,848 | $0 | $582,848 | $570,000 | $0 |
-| 2015 | $660,000 | $12,848 | $0 | $672,848 | $660,000 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 ### Contract notes
 
-Four-year rookie deal reconstructed from $2,151,392 total: $51,392 bonus plus $390,000/$480,000/$570,000/$660,000 bases. A conditional 2015 escalator is not pre-earned.
+Four-year rookie deal reconstructed from $2,151,392 total: $51,392 bonus plus $390,000/$480,000/$570,000/$660,000 bases. A conditional 2015 escalator is not pre-earned. Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Rookie, 2012 seventh round ended. Dead money: the 2014 bonus allocation of $12,848 stays in 2014 and the later allocations of $12,848 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the library does not record the rule).
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Russell Allen
 
@@ -967,65 +939,63 @@ Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/con
 
 | Field | Detail |
 |---|---|
-| Position / status | QB / Under contract (reserve/future contract effective March 11, 2014) |
-| Original contract | Reserve/future |
-| Signed | February 3, 2014 |
-| Term | 2 / 2015 (simulation reconstruction) |
-| Contract value | $930,000 |
+| Position / status | QB / Practice squad (signed August 31, 2014, after the August 30 waiver ended the earlier contract) |
+| Original contract | Practice squad (weekly) |
+| Signed | August 31, 2014 |
+| Term | Weekly, through the 2014 season (simulation reconstruction of the standard practice-squad agreement) |
+| Contract value | $6,300 a week, the 2014 practice-squad minimum (library F6, Confirmed); $107,100 if retained for all 17 weeks |
 | Bonus terms | $0; $0; 0 |
 | Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | $0 |
+| Guarantee basis | $0; a practice-squad contract pays only for weeks on the squad |
 | Schedule basis | Includes adopted simulation amounts; see contract notes |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
-| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
+| 2014 | $107,100 | $0 | $0 | $107,100 | $107,100 | $0 |
 
 ### Contract notes
 
-The minimum salary is confirmed in the signing record. The [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md) completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
+Practice-squad contract signed August 31, 2014 after clearing waivers (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier reserve/future ended with the August 30 waiver; Bray's $51,675 2013 bonus acceleration stays in the dead-money ledger.
 
-Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in the [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md); revise only through a recorded correction or contract event.
+Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md), [2014 league calendar and financial rules](../../../library/2014_league_calendar_and_financial_rules.md).
 
 ## Richard Murphy
 
 | Field | Detail |
 |---|---|
-| Position / status | RB / Under contract (reserve/future contract effective March 11, 2014) |
-| Original contract | Reserve/future |
-| Signed | February 3, 2014 |
-| Term | 2 / 2015 (simulation reconstruction) |
-| Contract value | $1,080,000 |
+| Position / status | RB / Practice squad (signed August 31, 2014, after the August 30 waiver ended the earlier contract) |
+| Original contract | Practice squad (weekly) |
+| Signed | August 31, 2014 |
+| Term | Weekly, through the 2014 season (simulation reconstruction of the standard practice-squad agreement) |
+| Contract value | $6,300 a week, the 2014 practice-squad minimum (library F6, Confirmed); $107,100 if retained for all 17 weeks |
 | Bonus terms | $0; $0; 0 |
 | Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | No remaining guaranteed base salary established in the recovered schedule |
+| Guarantee basis | $0; a practice-squad contract pays only for weeks on the squad |
 | Schedule basis | Includes adopted simulation amounts; see contract notes |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 | $495,000 | $0 | $0 | $495,000 | $495,000 | $0 |
-| 2015 | $585,000 | $0 | $0 | $585,000 | $585,000 | $0 |
+| 2014 | $107,100 | $0 | $0 | $107,100 | $107,100 | $0 |
 
 ### Contract notes
 
-2011 injured reserve does not count under Article 26; five active games in December 2012 do. Branch 2013 practice squad adds none. The [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md) completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
+Practice-squad contract signed August 31, 2014 after clearing waivers (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier reserve/future ended with the August 30 waiver; no bonus allocation survived it.
 
-Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in the [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md); revise only through a recorded correction or contract event.
+Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 league calendar and financial rules](../../../library/2014_league_calendar_and_financial_rules.md).
 
 ## Jerrell Jackson
 
 | Field | Detail |
 |---|---|
-| Position / status | WR / Under contract (reserve/future contract effective March 11, 2014) |
+| Position / status | WR / Under contract (reserve/future contract effective March 11, 2014); reserve/injured from August 31, 2014 (waived with the injured designation August 30, unclaimed); the contract continues |
 | Original contract | Reserve/future |
 | Signed | February 3, 2014 |
 | Term | 2 / 2015 (simulation reconstruction) |
@@ -1048,94 +1018,75 @@ Promoted December 24, 2012 for the finale only; 2013 branch practice squad adds 
 
 Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in the [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md); revise only through a recorded correction or contract event.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Jerome Long
 
 | Field | Detail |
 |---|---|
-| Position / status | IDL / Under contract (reserve/future contract effective March 11, 2014) |
-| Original contract | Reserve/future |
-| Signed | February 3, 2014 |
-| Term | 2 / 2015 (simulation reconstruction) |
-| Contract value | $930,000 |
+| Position / status | IDL / Practice squad (signed August 31, 2014, after the August 30 waiver ended the earlier contract) |
+| Original contract | Practice squad (weekly) |
+| Signed | August 31, 2014 |
+| Term | Weekly, through the 2014 season (simulation reconstruction of the standard practice-squad agreement) |
+| Contract value | $6,300 a week, the 2014 practice-squad minimum (library F6, Confirmed); $107,100 if retained for all 17 weeks |
 | Bonus terms | $0; $0; 0 |
 | Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | No remaining guaranteed base salary established in the recovered schedule |
+| Guarantee basis | $0; a practice-squad contract pays only for weeks on the squad |
 | Schedule basis | Includes adopted simulation amounts; see contract notes |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
-| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
+| 2014 | $107,100 | $0 | $0 | $107,100 | $107,100 | $0 |
 
 ### Contract notes
 
-Kansas City practice squad for the first 15 games of 2012; Jacksonville signed him December 28 for the finale. Branch 2013 practice squad adds none. The [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md) completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
+Practice-squad contract signed August 31, 2014 after clearing waivers (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier reserve/future ended with the August 30 waiver; no bonus allocation survived it.
 
-Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in the [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md); revise only through a recorded correction or contract event.
+Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 league calendar and financial rules](../../../library/2014_league_calendar_and_financial_rules.md).
 
 ## D'Anthony Smith
 
+Former player; departure August 30, 2014. [Departure record](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | IDL / Under contract (reserve/future contract effective March 11, 2014) |
+| Position / status | IDL / Waived August 30, 2014 at the reduction to 53; cleared waivers August 31 |
 | Original contract | Reserve/future (market draw won) |
 | Signed | February 5, 2014 |
 | Term | 2 / 2015 (simulation reconstruction) |
 | Contract value | $1,080,000 |
-| Bonus terms | $0; $0; 0 |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | No remaining guaranteed base salary established in the recovered schedule |
-| Schedule basis | Includes adopted simulation amounts; see contract notes |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $495,000 | $0 | $0 | $495,000 | $495,000 | $0 |
-| 2015 | $585,000 | $0 | $0 | $585,000 | $585,000 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 ### Contract notes
 
-2010 and 2011 injured reserve do not count for Article 26; eight games in 2012 supply one credited season. Branch 2013 practice squad adds none. The [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md) completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
+2010 and 2011 injured reserve do not count for Article 26; eight games in 2012 supply one credited season. Branch 2013 practice squad adds none. The [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md) completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season. Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Reserve/future (market draw won) ended.
 
-Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in the [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md); revise only through a recorded correction or contract event.
-
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Antwon Blake
 
+Former player; departure August 30, 2014. [Departure record](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | S / Under contract (reserve/future contract effective March 11, 2014) |
+| Position / status | S / Waived August 30, 2014 at the reduction to 53; cleared waivers August 31 |
 | Original contract | Reserve/future |
 | Signed | February 3, 2014 |
 | Term | 2 / 2015 (simulation reconstruction) |
 | Contract value | $1,080,000 |
-| Bonus terms | $0; $0; 0 |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | No remaining guaranteed base salary established in the recovered schedule |
-| Schedule basis | Includes adopted simulation amounts; see contract notes |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $495,000 | $0 | $0 | $495,000 | $495,000 | $0 |
-| 2015 | $585,000 | $0 | $0 | $585,000 | $585,000 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 ### Contract notes
 
-2012 Jacksonville active-roster service supplies one credited season; branch 2013 practice squad adds none. The [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md) completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.
+2012 Jacksonville active-roster service supplies one credited season; branch 2013 practice squad adds none. The [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md) completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season. Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Reserve/future ended.
 
-Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in the [adopted contract reconstruction](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md); revise only through a recorded correction or contract event.
-
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Chad Henne
 
@@ -1252,29 +1203,23 @@ Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/con
 
 ## C.J. Wilson
 
+Former player; departure August 30, 2014. [Departure record](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | EDGE / Under contract |
+| Position / status | EDGE / Released August 30, 2014 at the reduction to 53 (vested veteran, not subject to waivers) |
 | Original contract | Veteran minimum (branch re-signing) |
 | Signed | March 28, 2014 |
 | Term | 1 / 2014 |
 | Contract value | $795,000 |
-| Bonus terms | $65,000 signing bonus; $65,000; 1 |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | $65,000 (signing bonus) |
-| Schedule basis | Branch minimum re-signing ([negotiation record](../../2014/00_Team_Operations/Free_Agency/jones_drew_and_wilson_negotiation_2014-03-28.md)) |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $730,000 | $65,000 | $0 | $795,000 | $795,000 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 ### Contract notes
 
-Branch record ([negotiation record](../../2014/00_Team_Operations/Free_Agency/jones_drew_and_wilson_negotiation_2014-03-28.md)). $730,000 minimum for four credited seasons plus a $65,000 signing bonus. Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified.
+Branch record ([negotiation record](../../2014/00_Team_Operations/Free_Agency/jones_drew_and_wilson_negotiation_2014-03-28.md)). $730,000 minimum for four credited seasons plus a $65,000 signing bonus. Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified. Released August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Veteran minimum (branch re-signing) ended. Dead money: the 2014 bonus allocation of $65,000 stays in 2014 and the later allocations of $0 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the library does not record the rule).
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md).
 
 ## Alan Ball
 
@@ -1322,57 +1267,45 @@ Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/con
 
 ## Jeremy Cain
 
+Former player; departure August 30, 2014. [Departure record](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | LS / Under contract |
+| Position / status | LS / Released August 30, 2014 at the reduction to 53 (vested veteran, not subject to waivers) |
 | Original contract | Veteran minimum (branch re-signing) |
 | Signed | March 19, 2014 |
 | Term | 1 / 2014 |
 | Contract value | $855,000 |
-| Bonus terms | $0; $0; 0 |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | $0 |
-| Schedule basis | Executed branch terms |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $855,000 | $0 | $0 | $855,000 | $855,000 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 ### Contract notes
 
-Branch record ([negotiation record](../../2014/00_Team_Operations/Free_Agency/cain_negotiation_2014-03-19.md)). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from his real September 2014 Chicago figure (single source). Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified.
+Branch record ([negotiation record](../../2014/00_Team_Operations/Free_Agency/cain_negotiation_2014-03-19.md)). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from his real September 2014 Chicago figure (single source). Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified Released August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Veteran minimum (branch re-signing) ended.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md), [cain negotiation 2014-03-19](../../2014/00_Team_Operations/Free_Agency/cain_negotiation_2014-03-19.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [cain negotiation 2014-03-19](../../2014/00_Team_Operations/Free_Agency/cain_negotiation_2014-03-19.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md).
 
 ## Cameron Bradfield
 
+Former player; departure August 30, 2014. [Departure record](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | OT / Lowest (right of first refusal) RFA tender, made by 4 p.m. March 11, 2014; unsigned. No draft-pick compensation; Jacksonville may match any offer sheet |
+| Position / status | OT / Qualifying offer withdrawn August 30, 2014 and rights renounced; free agent |
 | Original contract | UDFA, 2011 (3 years) |
 | Signed | See expiring-contract description |
 | Term | 1 / 2014 (unsigned tender) |
 | Contract value | $1,431,000 tender |
-| Bonus terms | Not established for a new contract |
-| Remaining unpaid salary guarantee | Conditional on signing |
-| Guarantee basis | Unsigned tender; $0 guaranteed before signing |
-| Schedule basis | Unsigned tender |
 
-### Annual schedule
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $1,431,000 | $0 | $0 | $1,431,000 | $1,431,000 | $0 |
-
-The tender is unsigned. Its annual cash is conditional; the full salary guarantee begins if signed.
+No new playing contract is recorded for 2014 or later.
 
 ### Contract notes
 
-2014 RFA tender amounts Confirmed (published by March 6).
+2014 RFA tender amounts Confirmed (published by March 6) Tender withdrawn August 30, 2014 and rights renounced (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the $1,431,000 tender charge leaves.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md).
 
 ## Allen Reisner
 
@@ -1420,113 +1353,89 @@ Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/con
 
 ## Toney Clemons
 
+Former player; departure August 30, 2014. [Departure record](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | WR / Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014; unsigned |
+| Position / status | WR / Qualifying offer withdrawn August 30, 2014 and rights renounced; free agent |
 | Original contract | Veteran minimum, late November 2012 (2 years) |
 | Signed | See expiring-contract description |
 | Term | 1 / 2014 (unsigned tender) |
 | Contract value | $570,000 tender |
-| Bonus terms | Not established for a new contract |
-| Remaining unpaid salary guarantee | Conditional on signing |
-| Guarantee basis | Unsigned tender; $0 guaranteed before signing |
-| Schedule basis | Unsigned tender |
 
-### Annual schedule
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $570,000 | $0 | $0 | $570,000 | $570,000 | $0 |
-
-The tender is unsigned. Its annual cash is conditional; the full salary guarantee begins if signed.
+No new playing contract is recorded for 2014 or later.
 
 ### Contract notes
 
-Two credited seasons (2012: four games on the 53; 2013) is a branch inference from the register.
+Two credited seasons (2012: four games on the 53; 2013) is a branch inference from the register Tender withdrawn August 30, 2014 and rights renounced (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the $570,000 tender charge leaves.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md).
 
 ## Mike Brown
 
+Former player; departure August 30, 2014. [Departure record](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | WR / Exclusive-rights tender at the 2014 minimum for one credited season, made by 4 p.m. March 11, 2014; unsigned |
+| Position / status | WR / Qualifying offer withdrawn August 30, 2014 and rights renounced; free agent |
 | Original contract | UDFA, 2012 |
 | Signed | See expiring-contract description |
 | Term | 1 / 2014 (unsigned tender) |
 | Contract value | $495,000 tender |
-| Bonus terms | Not established for a new contract |
-| Remaining unpaid salary guarantee | Conditional on signing |
-| Guarantee basis | Unsigned tender; $0 guaranteed before signing |
-| Schedule basis | Unsigned tender |
 
-### Annual schedule
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $495,000 | $0 | $0 | $495,000 | $495,000 | $0 |
-
-The tender is unsigned. Its annual cash is conditional; the full salary guarantee begins if signed.
+No new playing contract is recorded for 2014 or later.
 
 ### Contract notes
 
-One credited season (two 2012 weeks on the 53 do not make a credited season; 2013) is a branch inference from the register.
+One credited season (two 2012 weeks on the 53 do not make a credited season; 2013) is a branch inference from the register Tender withdrawn August 30, 2014 and rights renounced (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the $495,000 tender charge leaves.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md).
 
 ## Austin Pasztor
 
+Former player; departure August 30, 2014. [Departure record](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | OG / Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014; unsigned |
+| Position / status | OG / Qualifying offer withdrawn August 30, 2014 and rights renounced; free agent |
 | Original contract | Practice squad September 17, 2012; promoted December 14, 2012 |
 | Signed | See expiring-contract description |
 | Term | 1 / 2014 (unsigned tender) |
 | Contract value | $570,000 tender |
-| Bonus terms | Not established for a new contract |
-| Remaining unpaid salary guarantee | Conditional on signing |
-| Guarantee basis | Unsigned tender; $0 guaranteed before signing |
-| Schedule basis | Unsigned tender |
 
-### Annual schedule
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $570,000 | $0 | $0 | $570,000 | $570,000 | $0 |
-
-The tender is unsigned. Its annual cash is conditional; the full salary guarantee begins if signed.
+No new playing contract is recorded for 2014 or later.
 
 ### Contract notes
 
-Two credited seasons (2012: three games on the 53 from December 14; 2013) is a branch inference from the register.
+Two credited seasons (2012: three games on the 53 from December 14; 2013) is a branch inference from the register Tender withdrawn August 30, 2014 and rights renounced (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the $570,000 tender charge leaves.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [signings](../../2014/00_Team_Operations/Free_Agency/signings.md).
 
 ## John Parker Wilson
 
+Former player; departure August 30, 2014. [Departure record](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | QB / Under contract through 2014 |
+| Position / status | QB / Waived August 30, 2014 at the reduction to 53; cleared waivers August 31 |
 | Original contract | Inherited reserve/future contract |
 | Signed | December 30, 2012 |
 | Term | 2 / 2014 (simulation reconstruction) |
 | Contract value | $1,360,000 (2013-2014 simulation terms) |
-| Bonus terms | $0 Jacksonville signing bonus; $0 proration |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | No guaranteed salary or bonus in the adopted simulation terms |
-| Schedule basis | Includes adopted simulation amounts; see contract notes |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $730,000 | $0 | $0 | $730,000 | $730,000 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 ### Contract notes
 
-Official Jaguars transactions confirm the December 30, 2012 futures signing. The two-year length and no-bonus structure are adopted simulation terms, using the recovered $630,000 2013 minimum and $730,000 2014 four-season minimum.
+Official Jaguars transactions confirm the December 30, 2012 futures signing. The two-year length and no-bonus structure are adopted simulation terms, using the recovered $630,000 2013 minimum and $730,000 2014 four-season minimum. Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Inherited reserve/future contract ended.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Jonathan Grimes
 
@@ -1917,32 +1826,31 @@ Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/con
 
 | Field | Detail |
 |---|---|
-| Position / status | S / Under contract |
-| Original contract | Rookie scale, pick #205 |
-| Signed | May 11, 2014 |
-| Term | 4 / 2017 |
-| Contract value | $2,314,052 |
-| Bonus terms | $94,052; $23,513; 4 |
+| Position / status | S / Practice squad (signed August 31, 2014, after the August 30 waiver ended the earlier contract) |
+| Original contract | Practice squad (weekly) |
+| Signed | August 31, 2014 |
+| Term | Weekly, through the 2014 season (simulation reconstruction of the standard practice-squad agreement) |
+| Contract value | $6,300 a week, the 2014 practice-squad minimum (library F6, Confirmed); $107,100 if retained for all 17 weeks |
+| Bonus terms | $0; $0; 0 |
 | Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | Signing bonus only; no base salary guaranteed |
+| Guarantee basis | $0; a practice-squad contract pays only for weeks on the squad |
 | Schedule basis | Slot reconstruction from the same-slot 2014 contract |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 | $420,000 | $23,513 | $0 | $443,513 | $514,052 | $0 |
-| 2015 | $510,000 | $23,513 | $0 | $533,513 | $510,000 | $0 |
-| 2016 | $600,000 | $23,513 | $0 | $623,513 | $600,000 | $0 |
-| 2017 | $690,000 | $23,513 | $0 | $713,513 | $690,000 | $0 |
+| 2014 | $107,100 | $0 | $0 | $107,100 | $107,100 | $0 |
 
 Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.
 
 ### Contract notes
 
-Branch record: selected May 10, 2014 at No. 205; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 205 (Luke Bowanko, Jacksonville (real)) in the nflverse/OTC historical contracts file, $2,314,052 total and $94,052 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+Practice-squad contract signed August 31, 2014 after clearing waivers (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier Rookie scale, pick #205 ended with the August 30 waiver; no bonus allocation survived it.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/03_Draft/draftees.md).
+Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount.
+
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [draftees](../../2014/03_Draft/draftees.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [2014 league calendar and financial rules](../../../library/2014_league_calendar_and_financial_rules.md).
 
 ## Malcolm Butler
 
@@ -2091,63 +1999,63 @@ Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/con
 
 | Field | Detail |
 |---|---|
-| Position / status | S / Under contract |
-| Original contract | UDFA minimum |
-| Signed | May 10, 2014 |
-| Term | 3 / 2016 |
-| Contract value | $1,530,000 |
+| Position / status | S / Practice squad (signed August 31, 2014, after the August 30 waiver ended the earlier contract) |
+| Original contract | Practice squad (weekly) |
+| Signed | August 31, 2014 |
+| Term | Weekly, through the 2014 season (simulation reconstruction of the standard practice-squad agreement) |
+| Contract value | $6,300 a week, the 2014 practice-squad minimum (library F6, Confirmed); $107,100 if retained for all 17 weeks |
 | Bonus terms | $0; $0; 0 |
 | Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | $0 |
+| Guarantee basis | $0; a practice-squad contract pays only for weeks on the squad |
 | Schedule basis | Executed branch terms |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
-| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
-| 2016 | $600,000 | $0 | $0 | $600,000 | $600,000 | $0 |
+| 2014 | $107,100 | $0 | $0 | $107,100 | $107,100 | $0 |
 
 ### Contract notes
 
-Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Practice-squad contract signed August 31, 2014 after clearing waivers (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier udfa minimum ended with the August 30 waiver; no bonus allocation survived it.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
+Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount.
+
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [udfa signings](../../2014/03_Draft/udfa_signings.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [2014 league calendar and financial rules](../../../library/2014_league_calendar_and_financial_rules.md).
 
 ## Matt Feiler
 
 | Field | Detail |
 |---|---|
-| Position / status | OG / Under contract |
-| Original contract | UDFA minimum |
-| Signed | May 10, 2014 |
-| Term | 3 / 2016 |
-| Contract value | $1,545,000 |
-| Bonus terms | $15,000; $5,000; 3 |
+| Position / status | OG / Practice squad (signed August 31, 2014, after the August 30 waiver ended the earlier contract) |
+| Original contract | Practice squad (weekly) |
+| Signed | August 31, 2014 |
+| Term | Weekly, through the 2014 season (simulation reconstruction of the standard practice-squad agreement) |
+| Contract value | $6,300 a week, the 2014 practice-squad minimum (library F6, Confirmed); $107,100 if retained for all 17 weeks |
+| Bonus terms | $0; $0; 0 |
 | Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | Signing bonus only ($15,000); no base salary guaranteed |
+| Guarantee basis | $0; a practice-squad contract pays only for weeks on the squad |
 | Schedule basis | Executed branch terms |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 | $420,000 | $5,000 | $0 | $425,000 | $435,000 | $0 |
-| 2015 | $510,000 | $5,000 | $0 | $515,000 | $510,000 | $0 |
-| 2016 | $600,000 | $5,000 | $0 | $605,000 | $600,000 | $0 |
+| 2014 | $107,100 | $0 | $0 | $107,100 | $107,100 | $0 |
 
 ### Contract notes
 
-Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
+Practice-squad contract signed August 31, 2014 after clearing waivers (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier udfa minimum ended with the August 30 waiver; no bonus allocation survived it.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
+Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount.
+
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [udfa signings](../../2014/03_Draft/udfa_signings.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [2014 league calendar and financial rules](../../../library/2014_league_calendar_and_financial_rules.md).
 
 ## Cameron Brate
 
 | Field | Detail |
 |---|---|
-| Position / status | TE / Under contract |
+| Position / status | TE / Under contract; reserve/injured from August 31, 2014 (waived with the injured designation August 30, unclaimed); the contract continues |
 | Original contract | UDFA minimum |
 | Signed | May 10, 2014 |
 | Term | 3 / 2016 |
@@ -2169,7 +2077,7 @@ Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/con
 
 Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [udfa signings](../../2014/03_Draft/udfa_signings.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md).
 
 ## Todd Davis
 
@@ -2203,85 +2111,69 @@ Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/con
 
 | Field | Detail |
 |---|---|
-| Position / status | C / Under contract |
-| Original contract | UDFA minimum |
-| Signed | May 10, 2014 |
-| Term | 3 / 2016 |
-| Contract value | $1,545,000 |
-| Bonus terms | $15,000; $5,000; 3 |
+| Position / status | C / Practice squad (signed August 31, 2014, after the August 30 waiver ended the earlier contract) |
+| Original contract | Practice squad (weekly) |
+| Signed | August 31, 2014 |
+| Term | Weekly, through the 2014 season (simulation reconstruction of the standard practice-squad agreement) |
+| Contract value | $6,300 a week, the 2014 practice-squad minimum (library F6, Confirmed); $107,100 if retained for all 17 weeks |
+| Bonus terms | $0; $0; 0 |
 | Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | Signing bonus only ($15,000); no base salary guaranteed |
+| Guarantee basis | $0; a practice-squad contract pays only for weeks on the squad |
 | Schedule basis | Executed branch terms |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 | $420,000 | $5,000 | $0 | $425,000 | $435,000 | $0 |
-| 2015 | $510,000 | $5,000 | $0 | $515,000 | $510,000 | $0 |
-| 2016 | $600,000 | $5,000 | $0 | $605,000 | $600,000 | $0 |
+| 2014 | $107,100 | $0 | $0 | $107,100 | $107,100 | $0 |
 
 ### Contract notes
 
-Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
+Practice-squad contract signed August 31, 2014 after clearing waivers (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier udfa minimum ended with the August 30 waiver; no bonus allocation survived it.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
+Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount.
+
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [udfa signings](../../2014/03_Draft/udfa_signings.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [2014 league calendar and financial rules](../../../library/2014_league_calendar_and_financial_rules.md).
 
 ## Tyler Larsen
 
+Former player; departure August 30, 2014. [Departure record](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | C / Under contract |
+| Position / status | C / Waived August 30, 2014 at the reduction to 53; cleared waivers August 31 |
 | Original contract | UDFA minimum |
 | Signed | May 10, 2014 |
 | Term | 3 / 2016 |
 | Contract value | $1,545,000 |
-| Bonus terms | $15,000; $5,000; 3 |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | Signing bonus only ($15,000); no base salary guaranteed |
-| Schedule basis | Executed branch terms |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $420,000 | $5,000 | $0 | $425,000 | $435,000 | $0 |
-| 2015 | $510,000 | $5,000 | $0 | $515,000 | $510,000 | $0 |
-| 2016 | $600,000 | $5,000 | $0 | $605,000 | $600,000 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 ### Contract notes
 
-Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the UDFA minimum ended. Dead money: the 2014 bonus allocation of $5,000 stays in 2014 and the later allocations of $10,000 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the library does not record the rule).
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [udfa signings](../../2014/03_Draft/udfa_signings.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md).
 
 ## Connor Shaw
 
+Former player; departure August 30, 2014. [Departure record](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | QB / Under contract |
+| Position / status | QB / Waived August 30, 2014 at the reduction to 53; cleared waivers August 31 |
 | Original contract | UDFA minimum |
 | Signed | May 10, 2014 |
 | Term | 3 / 2016 |
 | Contract value | $1,530,000 |
-| Bonus terms | $0; $0; 0 |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | $0 |
-| Schedule basis | Executed branch terms |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
-| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
-| 2016 | $600,000 | $0 | $0 | $600,000 | $600,000 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 ### Contract notes
 
-Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the UDFA minimum ended.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [udfa signings](../../2014/03_Draft/udfa_signings.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md).
 
 ## Kasim Edebali
 
@@ -2371,29 +2263,29 @@ Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/con
 
 | Field | Detail |
 |---|---|
-| Position / status | EDGE / Under contract |
-| Original contract | UDFA minimum |
-| Signed | May 10, 2014 |
-| Term | 3 / 2016 |
-| Contract value | $1,530,000 |
+| Position / status | EDGE / Practice squad (signed August 31, 2014, after the August 30 waiver ended the earlier contract) |
+| Original contract | Practice squad (weekly) |
+| Signed | August 31, 2014 |
+| Term | Weekly, through the 2014 season (simulation reconstruction of the standard practice-squad agreement) |
+| Contract value | $6,300 a week, the 2014 practice-squad minimum (library F6, Confirmed); $107,100 if retained for all 17 weeks |
 | Bonus terms | $0; $0; 0 |
 | Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | $0 |
+| Guarantee basis | $0; a practice-squad contract pays only for weeks on the squad |
 | Schedule basis | Executed branch terms |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
-| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
-| 2016 | $600,000 | $0 | $0 | $600,000 | $600,000 | $0 |
+| 2014 | $107,100 | $0 | $0 | $107,100 | $107,100 | $0 |
 
 ### Contract notes
 
-Branch record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Practice-squad contract signed August 31, 2014 after clearing waivers (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier udfa minimum ended with the August 30 waiver; no bonus allocation survived it.
 
-Sources: [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/03_Draft/udfa_signings.md).
+Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount.
+
+Sources: [final roster cuts](../../2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [udfa signings](../../2014/03_Draft/udfa_signings.md), [contract status](../../2014/00_Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/00_Team_Operations/Finances/player_contracts/contracts.md), [2014 league calendar and financial rules](../../../library/2014_league_calendar_and_financial_rules.md).
 
 ## Taylor Gabriel
 

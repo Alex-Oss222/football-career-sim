@@ -48,11 +48,11 @@ class PlayerBiographyTests(unittest.TestCase):
         self.assertEqual(render_player_ages.check(), [])
         roster = current_record('roster').read_text()
         names = [n for n, _, _ in render_player_ages.controlled_rows(roster)]
-        # 78 controlled at May 12, 2014 (Entry 108: 53 plus nine draftees and
-        # 17 undrafted rookies; Entry 110: Rackley traded); the six
-        # reserve/future players also appear in the section 4 history table.
-        self.assertEqual(len(set(names)), 78)
-        self.assertIn("| Tyler Bray | QB | 1991-12-27 | 22 | Offseason roster (reserve/future contract effective March 11) |", roster)
+        # 63 under club control at August 31, 2014: the active 53, the two on
+        # reserve/injured and the eight practice-squad players (the roster's
+        # canonical count of 55 excludes the practice squad, listed separately).
+        self.assertEqual(len(set(names)), 63)
+        self.assertIn("| Tyler Bray | QB | 1991-12-27 | 22 | Practice squad (signed August 31, 2014) |", roster)
 
     def test_regeneration_replaces_stale_age_and_is_idempotent(self):
         text = "<!-- player-ages-as-of: 2013-12-29 -->\n\n| Player | Pos | DOB | Age | Status |\n|---|---|---|---:|---|\n| Mike Harris | CB | 1900-01-01 | 99 | Active 53 |\n"
