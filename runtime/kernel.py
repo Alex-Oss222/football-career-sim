@@ -6,7 +6,7 @@ from . import KERNEL_VERSION
 from .calibration import load, validate
 from . import injury_model
 from . import participation
-from .rules import RULES, ot_status
+from .rules import GAME_TYPES, RULES, extra_point_rule, ot_status
 from . import chains as chain_walk
 from . import drive_model
 from . import field_position
@@ -300,7 +300,8 @@ def _partial_result(event_id, game_type, opening_receiver, stats, possessions, k
 
 
 def resolve_game(home, away, *, seed, event_id, venue="home", weather="normal", game_type="regular",
-                 management_mode="autonomous", controlled_team=None, continuation=None, _test_onsets=None):
+                 management_mode="autonomous", controlled_team=None, continuation=None, game_date=None,
+                 _test_onsets=None):
     """Resolve one game, or return a genuine partial result at an E2 pause.
 
     Kernel 2014.4 (E2): ``management_mode="user_controlled"`` with a
@@ -311,12 +312,17 @@ def resolve_game(home, away, *, seed, event_id, venue="home", weather="normal", 
     reproduce exactly, and each decision is checked against the digest of the
     partial state it answers. ``_test_onsets`` forces onsets for tests only;
     the production runner (runtime/game_runner.run_game) cannot pass it.
+
+    ``game_date`` (ISO date) is read only for ``game_type="preseason"``,
+    where runtime.rules.extra_point_rule decides the try (the 2014 preseason
+    Weeks 1-2 experiment). It is omitted from the outcome packet when None,
+    so every regular-season and postseason packet and draw is unchanged.
     """
     try:
         return _resolve_game(home, away, seed=seed, event_id=event_id, venue=venue, weather=weather,
                              game_type=game_type, management_mode=management_mode,
                              controlled_team=controlled_team, continuation=continuation,
-                             _test_onsets=_test_onsets)
+                             game_date=game_date, _test_onsets=_test_onsets)
     except _Paused as paused:
         return paused.partial
 
@@ -333,10 +339,15 @@ def _resolve_game(
     management_mode="autonomous",
     controlled_team=None,
     continuation=None,
+    game_date=None,
     _test_onsets=None,
 ):
     if not isinstance(seed, bytes) or len(seed) < 32:
         raise ValueError("private seed required")
+    if game_type not in GAME_TYPES:
+        raise ValueError("unknown game type")
+    # The try rule is fixed before the first draw; None keeps the fixed rate.
+    xp_rule = extra_point_rule(game_type, game_date)
     if management_mode not in ("autonomous", "user_controlled"):
         raise ValueError("unknown management mode")
     if management_mode == "user_controlled" and controlled_team not in (home.team_id, away.team_id):
@@ -364,6 +375,8 @@ def _resolve_game(
         "weather": weather,
         "game_type": game_type,
     }
+    if game_date is not None:
+        packet["game_date"] = game_date
     rng = _rng(seed, packet)
     packet_digest = hashlib.sha256(
         json.dumps(packet, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
@@ -890,7 +903,18 @@ def _resolve_game(
                 ot_history + [{"team": offense, "score": "touchdown"}], game_type) == "end"
             if not walk_off:
                 s["extra_point_attempts"] += 1
-                xp_made = rng.random() < xp_rate
+                xp_prob = xp_rate
+                if xp_rule is not None and xp_rule.get("distance"):
+                    # 2014 preseason Weeks 1-2: the try is a 33-yard kick on
+                    # the field-goal distance model, with the kicker's own
+                    # term as for any field goal. Same single draw.
+                    xp_prob = drive_model.fg_make_prob_at(xp_rule["distance"])
+                    if team.strength:
+                        kicker = usage.kicking_specialist(off_view, "K", "placekicker")
+                        kick_shift, _ = unit_strength.kicker_adjustment(team.strength, kicker)
+                        xp_prob = min(unit_strength.FG_PROB_CEILING,
+                                      max(unit_strength.FG_PROB_FLOOR, xp_prob + kick_shift))
+                xp_made = rng.random() < xp_prob
                 if xp_made:
                     points += 1
                     s["extra_points_made"] += 1
@@ -1227,7 +1251,7 @@ def _resolve_game(
     if len(pause_state["history"]) < len(decisions):
         raise ValueError("continuation names a decision for a pause the game never reached")
 
-    return {
+    result = {
         "kernel_version": KERNEL_VERSION,
         "event_id": event_id,
         "game_type": game_type,
@@ -1245,6 +1269,10 @@ def _resolve_game(
         "diagnostics": diagnostics,
         "terminated": True,
     }
+    if xp_rule is not None:
+        result["game_date"] = game_date
+        result["extra_point_rule"] = xp_rule
+    return result
 
 
 # Ledger fields naming a participant, and which club (row key) he plays for.
