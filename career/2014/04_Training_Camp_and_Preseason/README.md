@@ -13,4 +13,4 @@ The [camp report](Training_Camp/training_report.md) owns the practiced football,
 
 Use the year-round [trade records](../00_Team_Operations/Trades/README.md) and [medical records](../00_Team_Operations/Medical/README.md) for those subjects. The current [depth chart](../00_Team_Operations/Team/Depth_Chart/depth_chart.md) owns roles and order.
 
-[Stone's camp approach](../../coaching_profiles/alex_stone.md#how-he-wants-training-camp-run) · [Camp report templates](../../../foundation/templates/training_camp_and_preseason/README.md) · [Preseason game template](../../../foundation/templates/preseason_output_template.md)
+[Stone's camp approach](../../coaching_profiles/alex_stone_coaching_profile.md#how-he-wants-training-camp-run) · [Camp report templates](../../../foundation/templates/training_camp_and_preseason/README.md) · [Preseason game template](../../../foundation/templates/preseason_output_template.md)

@@ -1,6 +1,6 @@
 # Assistant coaches: current work and developing approach
 
-[Method](README.md) | [Stone](alex_stone.md) | [2013 staff and responsibilities](../2013/coaching_staff.md) | [2014 room plans](../2014/02_Offseason_Training/Coaching_Methods/unit_plans.md)
+[Method](README.md) | [Stone](alex_stone_coaching_profile.md) | [2013 staff and responsibilities](../2013/coaching_staff.md) | [2014 room plans](../2014/02_Offseason_Training/Coaching_Methods/unit_plans.md)
 
 **Evidence through February 2, 2014; compiled September 29, 2026.** These are editable working assessments of the eleven remaining assistants, with Lowry's departure preserved. They synthesize the staff record, dated 2013 work and player exits, not new interviews or annual coach ratings. Each coach has a full Jacksonville season of additional experience; no actual post-divergence real-world career is used to supply his future development.
 

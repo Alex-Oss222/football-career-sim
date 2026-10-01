@@ -21,7 +21,7 @@ Invite player-selected film and interpretation during permitted contact without 
 
 ## Living coaching assessment
 
-Read [Stone’s current profile](../../../coaching_profiles/alex_stone.md) and the relevant [assistant assessment](../../../coaching_profiles/staff_profiles.md) with the player evidence. Use the phase to examine actual teaching, adaptation and follow-through as well as player execution. In the real phase output, separate the coach’s instruction/decision from the player response and result. At a material handoff, append a dated change or retained interpretation to the coach profile and refresh its current synthesis. Preserve the previous evidence; no automatic improvement, fixed coaching type or new dialogue is implied.
+Read [Stone’s current profile](../../../coaching_profiles/alex_stone_coaching_profile.md) and the relevant [assistant assessment](../../../coaching_profiles/staff_profiles.md) with the player evidence. Use the phase to examine actual teaching, adaptation and follow-through as well as player execution. In the real phase output, separate the coach’s instruction/decision from the player response and result. At a material handoff, append Stone's dated change or retained interpretation to the [performance review](../../../coaching_profiles/alex_stone_performance_review.md), then refresh his current profile where the interpretation changes. Assistant updates remain in the staff assessment record. Preserve the previous evidence; no automatic improvement, fixed coaching type or new dialogue is implied.
 
 ## authority and execution conditions
 
@@ -69,7 +69,7 @@ Camp is not designed to make players miserable. It is designed to make the roste
 
 ## Stone's camp standard
 
-**Adopted from the user's September 30, 2026 clarification.** This is a change to intended approach, with a matching section in [Stone's profile](../../../coaching_profiles/alex_stone.md#how-he-wants-training-camp-run). It applies to work still to be run and carries into later season plans. It does not claim that coaches have already taken or passed a test, or add contact to the closed July 25 to 29 practices.
+**Adopted from the user's September 30, 2026 clarification.** This is a change to intended approach, with a matching section in [Stone's profile](../../../coaching_profiles/alex_stone_coaching_profile.md#how-he-wants-training-camp-run). It applies to work still to be run and carries into later season plans. It does not claim that coaches have already taken or passed a test, or add contact to the closed July 25 to 29 practices.
 
 Every contracted, eligible player reports on his applicable camp date, including established veterans. Every coach reports for his assigned camp duties. There is no blanket veteran exemption from camp or conditioning. Contract status, excused absence and medical restrictions remain separate from a refusal to participate; the existing instruction on unsigned tenders still applies.
 

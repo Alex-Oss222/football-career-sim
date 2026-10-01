@@ -18,7 +18,7 @@ Invite player-selected film and interpretation during permitted contact without 
 
 ## Coaching follow-through
 
-Read [Stone’s current profile](../../../coaching_profiles/alex_stone.md) and the relevant [assistant assessment](../../../coaching_profiles/staff_profiles.md) with the player evidence. Use the phase to examine actual teaching, adaptation and follow-through as well as player execution. In the real phase output, separate the coach’s instruction/decision from the player response and result. At a material handoff, append a dated change or retained interpretation to the coach profile and refresh its current synthesis. Preserve the previous evidence; no automatic improvement, fixed coaching type or new dialogue is implied.
+Read [Stone’s current profile](../../../coaching_profiles/alex_stone_coaching_profile.md) and the relevant [assistant assessment](../../../coaching_profiles/staff_profiles.md) with the player evidence. Use the phase to examine actual teaching, adaptation and follow-through as well as player execution. In the real phase output, separate the coach’s instruction/decision from the player response and result. At a material handoff, append Stone's dated change or retained interpretation to the [performance review](../../../coaching_profiles/alex_stone_performance_review.md), then refresh his current profile where the interpretation changes. Assistant updates remain in the staff assessment record. Preserve the previous evidence; no automatic improvement, fixed coaching type or new dialogue is implied.
 
 ## Authority and participation
 
