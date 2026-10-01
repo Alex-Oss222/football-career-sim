@@ -267,7 +267,7 @@ def position_sections(players, *, with_team, level="##"):
             extra = fields - shown - covered(POSITION_GROUPS[index][2]) - optional
         if extra:
             order = list(LABELS)
-            extra_rows.append((player_id, line, sorted(extra, key=lambda f: order.index(f) if f in order else len(order))))
+            extra_rows.append((player_id, line, sorted(extra, key=lambda f: (order.index(f) if f in order else len(order), f))))
 
     lines = []
     for index, (title, _, columns, sort_field) in enumerate(POSITION_GROUPS):

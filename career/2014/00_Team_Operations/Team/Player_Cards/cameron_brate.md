@@ -109,6 +109,12 @@ Brate sustained his assigned block against the reserve ends on both padded days.
 
 Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
 
+### August 8, 2014 | Preseason game 1, Tampa Bay at Jacksonville
+
+Eleven offensive snaps with Henne's group; his one target, the third-and-8 Stick throw with the H in RETURN, was intercepted by Fletcher, with the route, read or exchange not established by the receipt. A long-term lower-extremity injury was logged at the end of that possession and he was removed: out, projected return in 160 days (January 15, 2015), reassessment August 15 ([medical record](../../Medical/incidents/cameron_brate_2014-08-08.md)). Roster disposition is Caldwell's decision with the user and is pending. The TE3 comparison loses him for the length of his absence; his camp blocking evidence stands.
+
+Source: [preseason game 1 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_01/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

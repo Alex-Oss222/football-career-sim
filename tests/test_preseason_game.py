@@ -87,7 +87,11 @@ class SeasonPathTests(unittest.TestCase):
             paths.preseason_folder(0)
         with self.assertRaises(ValueError):
             paths.paused_game(1, postseason=True, preseason=True)
-        self.assertFalse(paths.preseason_receipts.exists())  # no 2014 preseason game has closed
+        # Preseason game 1 closed August 8, 2014: its receipt is the only one in the directory,
+        # and it stays apart from the regular-season and postseason receipt sets.
+        receipts = sorted(p.name for p in paths.preseason_receipts.glob('*.json'))
+        self.assertEqual(receipts, ['preseason_01_tampa_bay_buccaneers_at_jacksonville_jaguars.json'])
+        self.assertNotEqual(paths.preseason_receipts, paths.receipts)
 
 
 class ExtraPointRuleTests(unittest.TestCase):

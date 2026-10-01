@@ -2,7 +2,7 @@
 
 [Preseason games](../README.md)
 
-No preseason game has been played. Completed preseason box scores and any preseason totals belong here, drawn from the preseason records only. They never add to regular-season or playoff totals.
+One preseason game is closed (game 1, August 8, 2014: Tampa Bay 30, Jacksonville 21). Completed preseason box scores and preseason totals belong here, drawn from the preseason records only. They never add to regular-season or playoff totals.
 
 ## How the records are kept
 

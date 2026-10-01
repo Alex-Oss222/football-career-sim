@@ -4,6 +4,6 @@
 
 ## Actual decisions
 
-No entries yet. Each dated decision must name the player/job, evidence in [camp output](../Training_Camp/training_report.md) or a preseason receipt, actual alternatives and limitations, decision authority, effective timing, role versus transaction, and next review if provisional. Keep player feedback and confirmed delivery linked. Do not let a target list or a staff recommendation masquerade as Caldwell's transaction.
+No entries yet. **Pending (not a decision):** Cameron Brate's roster disposition after his long-term injury in [preseason game 1](../Preseason_Games/Game_01/output.md) (reserve/injured or otherwise) is Caldwell's decision with the user; the August 14 right-tackle arrangement with Lane Johnson out is Stone's. Neither is made here. Each dated decision must name the player/job, evidence in [camp output](../Training_Camp/training_report.md) or a preseason receipt, actual alternatives and limitations, decision authority, effective timing, role versus transaction, and next review if provisional. Keep player feedback and confirmed delivery linked. Do not let a target list or a staff recommendation masquerade as Caldwell's transaction.
 
 Use [final roster cuts](final_roster_cuts.md) for the dated 75/53/waiver/practice-squad processing record. Reference that owner here rather than copy a separate set of cuts. Current roster/depth/cap and state updates accompany real decisions under the atomic workflow. Medical staff alone supply clearance or restrictions.
