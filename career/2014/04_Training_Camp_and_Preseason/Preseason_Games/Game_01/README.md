@@ -2,7 +2,9 @@
 
 [All preseason games](../README.md) · [Preseason assessments](../../Position_Battles/README.md)
 
-Not played. Keep this game’s prepared plan, actual report, box score and player assessment here when it is reached. The [calendar](../../../Calendar.md) supplies kickoff notices and the permitted timeline. Game-readiness requirements still apply.
+Not played. Keep this game’s prepared plan, actual report, box score and player assessment here when it is reached.
+
+**Inputs frozen August 7, 2014, before any result.** Stone's authored plan ([Preseason Game 1_ HC.md](Preseason%20Game%201_%20HC.md), dated August 4) was applied August 5 to 7 ([game-week record](../../Training_Camp/training_report.md#august-5-to-7-game-week-preparation-for-tampa-bay)) and frozen as the game inputs: [call_sheet.json](call_sheet.json) (the opening 15 and the situational, HOLD and PRESS menus after the August 7 reduction, every call a retained 2013 call; `runtime.call_families.sheet_errors` returns no error), [depth_chart.json](depth_chart.json) (the game depth chart in the released-chart schema with Stone's opening lineup, the four unsigned tenders inactive by contract status and no medical inactive), [rotation.json](rotation.json) (the plan's unit blocks, possession ceilings and rules, with no number the plan did not give) and [opponent_roster.json](opponent_roster.json) (Tampa Bay's August 8 roster from the gated library file, Jenkins and Goldson unavailable). The package builds and passes the TeamInput exclusivity gate; `scripts/close_preseason_game.py 1 --season 2014` stays BLOCKED on the `legal_rosters` release gate, and the kernel's age requirement still needs verified birth dates for 47 Tampa Bay camp players (five with no public identity record) before a closure can run. No result exists. The [calendar](../../../Calendar.md) supplies kickoff notices and the permitted timeline. Game-readiness requirements still apply.
 
 The actual performance feeds the camp assessment and roster decisions. Preseason statistics stay separate from regular-season statistics; any recorded preseason honours stay with this phase.
 

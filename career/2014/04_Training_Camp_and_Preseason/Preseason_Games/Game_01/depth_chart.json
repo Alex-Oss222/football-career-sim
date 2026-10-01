@@ -1,0 +1,214 @@
+{
+ "team": "Jacksonville Jaguars",
+ "season": 2014,
+ "game": "2014 Preseason Game 1, Tampa Bay at Jacksonville, August 8, 2014",
+ "status": "FROZEN GAME DEPTH CHART for preseason game 1 only; frozen August 7, 2014 before any draw. Not the working chart and not a role award.",
+ "effective": "August 7, 2014, after the final walkthrough",
+ "sources": "Stone's August 4 plan (Preseason Game 1_ HC.md): the opening lineup (Monroe, Bitonio, Brewster, Turner, Johnson; Lewis TE1, Kelce TE2; Nicks, Thielen, Adams; Cousins; Mincey at Edge 1; Daryl Smith the communicator; Cain snapping first) and the quarterback order (Cousins, Henne, Wilson, Bray, Shaw); the working depth chart (career/2014/00_Team_Operations/Team/Depth_Chart/working_depth_chart.json, Stone's May 12 starting points and the carried 2013 order) for the rest; the camp record through August 7 for the players added but not placed (rookies and March signings), in the order of their recorded use; the current roster for control.",
+ "rule": "Order within each kernel position group, first = starter, as the kernel reads it. Stone's plan sets the opening lineup; the rest is a game-depth order for this preseason game, where the whole roster dresses and the rotation in rotation.json governs who plays when. Verner's and Talib's positions follow the camp record's first-group pairings (Talib and Harris against Nicks and Adams at WR1; Verner, Harris and Poyer against the WR3 reps); their places remain unset on the working chart and nothing here awards one. The tight-end and reserve orders list the players in the order the camp record uses them and award no place; TE3 and the reserve corner remain open.",
+ "depth": {
+  "QB": [
+   "Kirk Cousins",
+   "Chad Henne",
+   "John Parker Wilson",
+   "Tyler Bray",
+   "Connor Shaw"
+  ],
+  "RB": [
+   "Maurice Jones-Drew",
+   "Jonathan Grimes",
+   "C.J. Anderson",
+   "Richard Murphy"
+  ],
+  "FB": [
+   "Montell Owens"
+  ],
+  "WR": [
+   "Hakeem Nicks",
+   "Adam Thielen",
+   "Davante Adams",
+   "Andrew Hawkins",
+   "Allen Hurns",
+   "Taylor Gabriel",
+   "Jerrell Jackson",
+   "Toney Clemons",
+   "Mike Brown"
+  ],
+  "TE": [
+   "Marcedes Lewis",
+   "Travis Kelce",
+   "Cameron Brate",
+   "Marcel Jensen",
+   "Gator Hoskins"
+  ],
+  "OL": [
+   "Eugene Monroe",
+   "Joel Bitonio",
+   "Mike Brewster",
+   "Trai Turner",
+   "Lane Johnson",
+   "Andrew Norwell",
+   "Corey Linsley",
+   "Mark Asper",
+   "Charles Leno Jr.",
+   "Cornelius Lucas",
+   "Matt Feiler",
+   "Tyler Shatley",
+   "Tyler Larsen",
+   "Cameron Bradfield",
+   "Austin Pasztor"
+  ],
+  "DL": [
+   "Jeremy Mincey",
+   "Sen'Derrick Marks",
+   "Roy Miller",
+   "Andre Branch",
+   "C.J. Mosley",
+   "Ryan Davis",
+   "C.J. Wilson",
+   "Daniel Te'o-Nesheim",
+   "Aaron Donald",
+   "Jeris Pendleton",
+   "Lavar Edwards",
+   "Kasim Edebali",
+   "Jackson Jeffcoat",
+   "Jerome Long",
+   "D'Anthony Smith"
+  ],
+  "LB": [
+   "Daryl Smith",
+   "Paul Posluszny",
+   "Julian Stanford",
+   "Sio Moore",
+   "Telvin Smith",
+   "Christian Jones",
+   "Todd Davis"
+  ],
+  "DB": [
+   "Aqib Talib",
+   "Mike Harris",
+   "Dwight Lowery",
+   "Bacarri Rambo",
+   "Jordan Poyer",
+   "Alterraun Verner",
+   "A.J. Bouye",
+   "Chris Prosinski",
+   "Brynden Trawick",
+   "Malcolm Butler",
+   "Jemea Thomas",
+   "Adrian Phillips",
+   "Antwon Blake"
+  ],
+  "K": [
+   "Josh Scobee"
+  ],
+  "P": [
+   "Bryan Anger"
+  ],
+  "LS": [
+   "Jeremy Cain",
+   "Casey Kreiter"
+  ]
+ },
+ "positions": {
+  "Kirk Cousins": "QB",
+  "Chad Henne": "QB",
+  "John Parker Wilson": "QB",
+  "Tyler Bray": "QB",
+  "Connor Shaw": "QB",
+  "C.J. Anderson": "RB",
+  "Jonathan Grimes": "RB",
+  "Maurice Jones-Drew": "RB",
+  "Richard Murphy": "RB",
+  "Montell Owens": "FB",
+  "Mike Brown": "WR",
+  "Toney Clemons": "WR",
+  "Adam Thielen": "WR",
+  "Jerrell Jackson": "WR",
+  "Hakeem Nicks": "WR",
+  "Andrew Hawkins": "WR",
+  "Davante Adams": "WR",
+  "Allen Hurns": "WR",
+  "Taylor Gabriel": "WR",
+  "Marcedes Lewis": "TE",
+  "Travis Kelce": "TE",
+  "Cameron Brate": "TE",
+  "Marcel Jensen": "TE",
+  "Gator Hoskins": "TE",
+  "Cameron Bradfield": "OT",
+  "Lane Johnson": "OT",
+  "Eugene Monroe": "OT",
+  "Joel Bitonio": "OT",
+  "Charles Leno Jr.": "OT",
+  "Cornelius Lucas": "OT",
+  "Mark Asper": "G",
+  "Austin Pasztor": "G",
+  "Trai Turner": "G",
+  "Andrew Norwell": "G",
+  "Matt Feiler": "G",
+  "Mike Brewster": "C",
+  "Corey Linsley": "C",
+  "Tyler Shatley": "C",
+  "Tyler Larsen": "C",
+  "Andre Branch": "DE",
+  "Ryan Davis": "DE",
+  "Lavar Edwards": "DE",
+  "C.J. Wilson": "DE",
+  "Jeremy Mincey": "DE",
+  "Daniel Te'o-Nesheim": "DE",
+  "Kasim Edebali": "DE",
+  "Jackson Jeffcoat": "DE",
+  "Sen'Derrick Marks": "DT",
+  "Roy Miller": "DT",
+  "C.J. Mosley": "DT",
+  "Jeris Pendleton": "DT",
+  "D'Anthony Smith": "DT",
+  "Jerome Long": "DT",
+  "Aaron Donald": "DT",
+  "Sio Moore": "LB",
+  "Paul Posluszny": "LB",
+  "Daryl Smith": "LB",
+  "Julian Stanford": "LB",
+  "Telvin Smith": "LB",
+  "Christian Jones": "LB",
+  "Todd Davis": "LB",
+  "A.J. Bouye": "CB",
+  "Mike Harris": "CB",
+  "Alterraun Verner": "CB",
+  "Aqib Talib": "CB",
+  "Jordan Poyer": "CB",
+  "Malcolm Butler": "CB",
+  "Dwight Lowery": "S",
+  "Chris Prosinski": "S",
+  "Bacarri Rambo": "S",
+  "Brynden Trawick": "S",
+  "Antwon Blake": "S",
+  "Jemea Thomas": "DB",
+  "Adrian Phillips": "S",
+  "Josh Scobee": "K",
+  "Bryan Anger": "P",
+  "Jeremy Cain": "LS",
+  "Casey Kreiter": "LS"
+ },
+ "roles": {
+  "Kirk Cousins": [
+   "passer"
+  ],
+  "Josh Scobee": [
+   "placekicker"
+  ],
+  "Bryan Anger": [
+   "punt"
+  ]
+ },
+ "game_day_inactives": {
+  "game": 1,
+  "players": [
+   "Cameron Bradfield",
+   "Toney Clemons",
+   "Mike Brown",
+   "Austin Pasztor"
+  ],
+  "note": "Preseason dresses the whole roster. The four players on unsigned tenders are carried on the 78-player controlled roster (runtime.preseason.controlled_roster counts every 'Offseason roster' status, so the chart must place them) but are not under contract, have not reported and may not practice or play until they sign; they are inactive by contract status, not by a medical instruction. No other player is under a communicated medical instruction: the camp report through August 7 communicates no injury or restriction. James Hurst is held on the undrafted board pending a medical clearance and is not a controlled player, so he cannot appear here."
+ }
+}

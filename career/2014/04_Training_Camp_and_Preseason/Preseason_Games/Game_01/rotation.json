@@ -1,0 +1,307 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "game": "2014 Preseason Game 1, Tampa Bay at Jacksonville, August 8, 2014",
+ "status": "FROZEN EX-ANTE ROTATION from Stone's August 4 plan as reduced August 7; written before any draw. Where the plan leaves a count to the game, the ceiling and the plan's rule are encoded and no number is invented.",
+ "source": "career/2014/04_Training_Camp_and_Preseason/Preseason_Games/Game_01/Preseason Game 1_ HC.md (personnel plan, defense, special teams); reduction in the camp report, August 7.",
+ "offense": [
+  {
+   "unit": "first",
+   "quarterback": "Kirk Cousins",
+   "possessions": 2,
+   "snap_ceiling": 12,
+   "rule": "Two possessions with roughly 10 to 12 offensive snaps as the normal ceiling; if the first drive goes twelve plays the second full series is not needed; a three-and-out gets the second possession. Established starters do not stay on merely because the quarter has not ended.",
+   "groups": {
+    "QB": [
+     "Kirk Cousins"
+    ],
+    "RB": [
+     "Maurice Jones-Drew"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Hakeem Nicks",
+     "Adam Thielen",
+     "Davante Adams"
+    ],
+    "TE": [
+     "Marcedes Lewis",
+     "Travis Kelce"
+    ],
+    "OL": [
+     "Eugene Monroe",
+     "Joel Bitonio",
+     "Mike Brewster",
+     "Trai Turner",
+     "Lane Johnson"
+    ]
+   },
+   "possession_overrides": {
+    "2": {
+     "WR": [
+      "Davante Adams",
+      "Adam Thielen",
+      "Andrew Hawkins"
+     ],
+     "OL": [
+      "Eugene Monroe",
+      "Andrew Norwell",
+      "Mike Brewster",
+      "Trai Turner",
+      "Lane Johnson"
+     ],
+     "note": "Second first-unit possession: Adams takes the WR1/X work, Hawkins the WR3 work, Thielen the constant where the call allows; Norwell at left guard beside Brewster; Turner stays at right guard, his conditional move not triggered."
+    }
+   },
+   "notes": [
+    "Kelce attached on an early run and attached again toward the end of his playing block.",
+    "Owens enters for the one 21-personnel Counter call only; the substitution is sent before the spoken call.",
+    "The shift-to-Empty Spacing call is this group's only."
+   ]
+  },
+  {
+   "unit": "second",
+   "quarterback": "Chad Henne",
+   "possessions": null,
+   "rule": "The next unit after the first group's ceiling; possession count left to the game. Includes the planned Henne-Linsley series behind the first tackles (Monroe and Johnson) for one series if the game gives the opportunity, continuing the camp test rather than a fourth-quarter comparison with a different unit.",
+   "groups": {
+    "QB": [
+     "Chad Henne"
+    ],
+    "RB": [
+     "Jonathan Grimes",
+     "C.J. Anderson"
+    ],
+    "WR": [
+     "Andrew Hawkins",
+     "Allen Hurns",
+     "Taylor Gabriel",
+     "Adam Thielen"
+    ],
+    "TE": [
+     "Travis Kelce",
+     "Cameron Brate",
+     "Marcel Jensen"
+    ],
+    "OL": [
+     "Eugene Monroe",
+     "Andrew Norwell",
+     "Corey Linsley",
+     "Joel Bitonio",
+     "Lane Johnson"
+    ]
+   },
+   "series_overrides": {
+    "henne_linsley": {
+     "OL": [
+      "Eugene Monroe",
+      "Andrew Norwell",
+      "Corey Linsley",
+      "Joel Bitonio",
+      "Lane Johnson"
+     ],
+     "note": "Linsley at center behind the first tackles for one series; the guards beside him are the plan's first-unit alternatives, the plan naming only the tackles."
+    }
+   },
+   "notes": [
+    "Brate, Jensen and Hoskins get reserve work with actual attached and route assignments; TE3 remains open.",
+    "PRESS and the RB Slow Screen are available to this group."
+   ]
+  },
+  {
+   "unit": "reserve",
+   "quarterback": "John Parker Wilson",
+   "possessions": null,
+   "rule": "Reserve core menu; possession count left to the game. PRESS cut for this group August 7.",
+   "groups": {
+    "QB": [
+     "John Parker Wilson"
+    ],
+    "RB": [
+     "C.J. Anderson",
+     "Richard Murphy"
+    ],
+    "WR": [
+     "Allen Hurns",
+     "Taylor Gabriel",
+     "Jerrell Jackson"
+    ],
+    "TE": [
+     "Cameron Brate",
+     "Marcel Jensen",
+     "Gator Hoskins"
+    ],
+    "OL": [
+     "Charles Leno Jr.",
+     "Matt Feiler",
+     "Tyler Shatley",
+     "Mark Asper",
+     "Cornelius Lucas"
+    ]
+   },
+   "notes": [
+    "Shatley and Larsen are Wilson's recorded relief centers; Larsen rotates in at center or guard."
+   ]
+  },
+  {
+   "unit": "late",
+   "quarterbacks": [
+    "Tyler Bray",
+    "Connor Shaw"
+   ],
+   "possessions": null,
+   "rule": "Each gets a reduced-menu opportunity if possession count allows (Power, Inside Zone, Stick, Drive, Mesh, Boot Flood). Operation first: huddle, formation, point, cadence, decision, ball security; no reckless vertical throw to win a job. PRESS cut for this group August 7.",
+   "groups": {
+    "QB": [
+     "Tyler Bray",
+     "Connor Shaw"
+    ],
+    "RB": [
+     "Richard Murphy",
+     "C.J. Anderson"
+    ],
+    "WR": [
+     "Jerrell Jackson",
+     "Taylor Gabriel",
+     "Allen Hurns"
+    ],
+    "TE": [
+     "Gator Hoskins",
+     "Marcel Jensen"
+    ],
+    "OL": [
+     "Charles Leno Jr.",
+     "Matt Feiler",
+     "Tyler Larsen",
+     "Mark Asper",
+     "Cornelius Lucas"
+    ]
+   }
+  }
+ ],
+ "defense": [
+  {
+   "unit": "first",
+   "possessions": null,
+   "caller": "Romeo Crennel",
+   "menu": [
+    "base front football",
+    "Nickel Even",
+    "Cover 1",
+    "1 Robber/Rat",
+    "Cover 3",
+    "Quarters",
+    "selected five-man pressure already installed"
+   ],
+   "rule": "Crennel calls it; no giant pressure menu. Possession count left to the game.",
+   "groups": {
+    "EDGE": [
+     "Jeremy Mincey",
+     "Ryan Davis"
+    ],
+    "DL": [
+     "Sen'Derrick Marks",
+     "Roy Miller",
+     "C.J. Mosley"
+    ],
+    "LB": [
+     "Daryl Smith",
+     "Paul Posluszny",
+     "Julian Stanford"
+    ],
+    "DB": [
+     "Aqib Talib",
+     "Mike Harris",
+     "Dwight Lowery",
+     "Bacarri Rambo",
+     "Jordan Poyer"
+    ]
+   },
+   "comparable": {
+    "Andre Branch": "first group, comparable Edge 1 work; graded on keeping the rush lane while producing pressure, a quarterback stepping through the lane after a won block is a bad rep"
+   },
+   "relay": [
+    "Daryl Smith",
+    "Paul Posluszny",
+    "Julian Stanford"
+   ],
+   "packages_relay": {
+    "Sio Moore": "relays his own packages"
+   },
+   "one_series_without_normal_communicator": true,
+   "notes": [
+    "Verner's and Talib's places are unset on the working chart; the DB listing follows the camp record's first-group pairings and awards nothing.",
+    "The test is whether the defense receives the call, identifies the personnel, handles motion and gets aligned before the snap."
+   ]
+  },
+  {
+   "unit": "reserve",
+   "possessions": null,
+   "rule": "When Tampa Bay changes personnel the reserve sideline group is ready; the situation is not manufactured. A late substitution is an operation problem even if the defense survives the play.",
+   "groups": {
+    "EDGE": [
+     "Andre Branch",
+     "Daniel Te'o-Nesheim",
+     "Kasim Edebali",
+     "Jackson Jeffcoat",
+     "Lavar Edwards"
+    ],
+    "DL": [
+     "Aaron Donald",
+     "C.J. Wilson",
+     "Jeris Pendleton",
+     "Jerome Long",
+     "D'Anthony Smith"
+    ],
+    "LB": [
+     "Sio Moore",
+     "Telvin Smith",
+     "Christian Jones",
+     "Todd Davis"
+    ],
+    "DB": [
+     "Alterraun Verner",
+     "A.J. Bouye",
+     "Chris Prosinski",
+     "Brynden Trawick",
+     "Malcolm Butler",
+     "Jemea Thomas",
+     "Adrian Phillips",
+     "Antwon Blake"
+    ]
+   },
+   "notes": [
+    "Verner is listed with the reserve group only because his place is unset; the camp record has him in first-group work against the WR3 reps, and the game chart ranks him sixth among the defensive backs."
+   ]
+  }
+ ],
+ "special_teams": {
+  "coordinator": "Mike Westhoff",
+  "long_snapper": [
+   "Jeremy Cain",
+   "Casey Kreiter"
+  ],
+  "long_snapper_rule": "Cain retains the starting point and snaps first; Kreiter gets real game operation. Graded on snap, protection exchange, hold operation, coverage responsibility, communication and the response to a bad look; if only one of them gets a meaningful punt opportunity, practice evidence remains part of the evaluation.",
+  "returners": {
+   "players": null,
+   "rule": "No returner is named before the game. Westhoff establishes the game rotation from the players who actually took return work in camp. The camp record states that several players fielded punts in the catch work, at the scrimmage's changes of possession and in the August 5 return-decision period without naming them; the only named return work on the 2014 record is Taylor Gabriel's return-path and communication work at the May 16 and 17 rookie minicamp. No name is invented here; the game receipt names who fields each kick.",
+   "grade": [
+    "fielding decision",
+    "ball security",
+    "communication",
+    "first vertical decision",
+    "use of blocks"
+   ],
+   "note": "One long return does not automatically decide the job."
+  },
+  "specialists": {
+   "K": "Josh Scobee",
+   "P": "Bryan Anger",
+   "holder": "Bryan Anger (the recorded field-goal operation)"
+  },
+  "head_coach_decisions": "Fourth down, field goal versus go, fake, onside kick, timeout, challenge and unusual end-of-half situations remain Stone's. No preseason fake just to put it on film."
+ },
+ "schema_note": "Written to the block schema the kernel agent is implementing (claude/preseason-rotation). Fields with null possessions encode 'left to the game' with the plan's rule text; the kernel must not read a number the plan did not give."
+}
