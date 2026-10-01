@@ -22,6 +22,10 @@ regular-season game does (runtime.game_runner.run_game, kernel
 - Receipts go to `SeasonPaths.preseason_receipts`, never the regular-season
   receipt set, so standings, the statbook, awards and the draft order never
   read them.
+- Ages: the `player_ages` sidecar (outside TeamInput and the packet) needs a
+  verified birth date for every Jacksonville player; an opponent camp player
+  with no public identity record enters with `age: null` and
+  `age_unverified: true`, and the receipt lists those names.
 """
 import json
 from datetime import date, timedelta
@@ -182,8 +186,13 @@ def build_package(paths, number, receipts, anchors=AVERAGE_ANCHORS, *, with_ages
         "away_input": unit(game["away"]), "home_input": unit(game["home"]),
     }
     if with_ages:
+        # A background camp player with no public identity record may enter
+        # with age None and the age_unverified flag (carried into the receipt);
+        # every Jacksonville player must still carry a verified birth date.
+        opponent = "home_input" if game["away"] == PROTAGONIST else "away_input"
         row["player_ages"] = player_bios.biographies(
-            [p["player_id"] for side in ("away_input", "home_input") for p in row[side]["roster"]], game_day)
+            [p["player_id"] for side in ("away_input", "home_input") for p in row[side]["roster"]], game_day,
+            allow_unverified=[p["player_id"] for p in row[opponent]["roster"]])
     package = {"season": paths.year, "preseason_game": number, "week": number, "game_type": PRESEASON,
                "games": [row]}
     if coverage:

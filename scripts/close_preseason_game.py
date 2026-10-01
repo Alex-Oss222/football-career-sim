@@ -142,6 +142,11 @@ def write_receipt(package, paths, result):
     receipt["preseason_game"] = package["preseason_game"]
     receipt["date"] = game["date"]
     receipt["game_type"] = PRESEASON
+    # Background players who entered with no verified birth date (runtime.player_bios).
+    from runtime.player_bios import unverified_ages
+    unverified = unverified_ages(game.get("player_ages"))
+    if unverified:
+        receipt["age_unverified"] = unverified
     path = paths.preseason_receipts / game["receipt"]
     if path.exists():
         raise ValueError("receipt already exists: %s" % path.relative_to(paths.root))
