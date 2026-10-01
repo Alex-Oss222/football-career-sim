@@ -75,7 +75,7 @@ class SeasonPathTests(unittest.TestCase):
         self.assertEqual([g["game"] for g in games], [1, 2, 3, 4])
         self.assertEqual(games[0]["game_id"], EVENT)
         self.assertEqual(games[0]["date"], "2014-08-08")
-        self.assertIsNone(games[3]["kickoff_et"])  # game 4 kickoff pending a dated notice
+        self.assertEqual(games[3]["kickoff_et"], "18:00")  # game 4 kickoff from the club's August 25, 2014 notice, reached on the clock
         self.assertEqual(paths.preseason_game(2)["home"], "Chicago Bears")
         base = paths.career / "04_Training_Camp_and_Preseason/Preseason_Games"
         self.assertEqual(paths.preseason_folder(1), base / "Game_01")

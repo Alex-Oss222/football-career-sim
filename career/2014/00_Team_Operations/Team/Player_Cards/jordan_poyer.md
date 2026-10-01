@@ -156,6 +156,10 @@ Forty-seven defensive snaps at the nickel across all four defensive blocks and 1
 
 Source: [preseason game 3 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_03/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### August 26, 2014 | Cleared on his projected date
+
+Reassessed August 23 with no change, cleared August 26, his projected date, under the record's method, and back in the work from that day: the nickel in the starting defense in the August 26 series practice and the August 27 walkthrough, the substitution on time on the recorded personnel changes, and the kickoff-coverage unit rebuilt by name after the Detroit review, no communicated limitation. He is at the nickel in the starting defense in Stone's frozen Atlanta plan, the plan's structure and not a new role; no football finding attaches to the instruction. Source: [medical record](../../Medical/incidents/jordan_poyer_2014-08-22.md); [camp record](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md#august-23-to-27-the-detroit-review-and-the-atlanta-preparation). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

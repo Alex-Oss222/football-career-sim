@@ -1,0 +1,407 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "event": "2014 Preseason Game 4, Atlanta at Jacksonville, August 28, 2014",
+ "status": "EX_ANTE_CALL_SHEET_FROZEN",
+ "frozen": "2014-08-27, after the final walkthrough and Stone's reduction; before any draw",
+ "provenance": "Stone's written plan of August 23 to 28, 2014 (career/2014/04_Training_Camp_and_Preseason/Preseason_Games/Game_04/Preseason Game 4_ HC.md), applied August 23 to 27 and reduced under its own rules (career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md#august-27-the-reduction-call-by-call). The game is structured by quarters and Kelce is evaluated as a receiver; every call is a retained call from the active 2013 offensive book (Iteration I) that the 2014 program has taught, and nothing was installed new for this game. The plan's opening sequence is carried in 'opener' in the plan's numbering; calls 3 and 15 are carried as one practiced picture, call 8 and call 9 from their practiced pictures, call 13 is the return to call 1, and calls 10 and 11 are off the sheet, so the opener runs twelve calls in the plan's order. The kernel labels snaps uniformly from the sheet and does not condition on script order, exit rules, conditions or alerts, which remain in-game coaching guidance.",
+ "menus": {
+  "opening_sequence": "Stone's order, opener 1 to 14 with the gaps noted: 12 Trey Y-Cross HALF (1); 11 Doubles Inside Zone (2); 12 SHIFT Empty Stick (3, carried from 12 Ace-to-Empty Y-Iso Choice); 11 Bunch Mesh HALF (4); 12 Wing Outside Zone Left (5); 12 Wing Boot Flood Right (6); 11 Trey Dagger HALF (7); 11 Trey Stick (8, carried from 12 Trey Stick Choice); 12 Ace Power Right (9, carried from 11 Doubles); 10, 12 Bunch Sail, off; 11, 12 Wing TE Delay, off; 11 Trips Inside Zone + Bubble (12); 12 Trey Y-Cross, the return to call 1 (13, the Alert Post tag off); 11 Doubles Drive HALF (14); 15, 12 Empty Y-Iso Choice, off (its picture is call 3). Situational football overrides it; no call exists merely because it has a number",
+  "kelce_receiving_menu": "The plan's designed opportunities as the program has taught them: the Y-Cross from 12 Trey (two opportunities in the first half), Stick from the shifted twelve-personnel picture and from Trey (the plan's Stick/Choice and Y-Iso opportunities, the leverage read the quarterback's within the taught progression), Mesh from Bunch, the Wing Boot Flood (the plan's Sail), the high-red-zone Cross and the low-red-zone Mesh. Not forced into double coverage: if the defense doubles or rotates over him, the answer the attention creates is thrown. Texas/Angle, Sail, TE Delay, the Choice tag and the quick pivot are off (not taught). Target counts are the game's, not a quota",
+  "third_down": "third-and-short: Power, Counter, the quick Mesh/man answer, the leverage throw (Inside Zone + Bubble) against an overloaded box; third-and-medium: Mesh, Stick, Drive (Snag not carried outside the low red zone); third-and-long: Dagger with protection, Drive, Y-Cross, the slow screen if pressure warrants",
+  "backed_up": "Inside Zone, Power, Stick and the Power Pass as the safe play action if edge control is sound; the group on the field stays in: communication under noise, clean exchange, ball security, protection, no panic",
+  "red_zone": "high red zone: the Cross and the normal runs (Power, Counter, Inside Zone); low red zone: Mesh from Bunch, the boot, Power and Counter, and Snag (low red zone only). The group that gets there stays: no Cousins, no Jones-Drew for the reserves' red zone",
+  "two_minute": "the quarterback already on the field runs it: Spacing (with and without the shift for the groups that carry it), Stick, Drive, Mesh, the RB Slow Screen and the sideline access",
+  "PRESS_sequence": "one sequence of mastered calls by signal and word: 11 Doubles Stick SCAT, 11 Doubles Spacing SCAT, 11 Bunch Mesh HALF, 11 Doubles Drive HALF, the slow screen and the access; Cousins's two groups (the first-quarter group rehearsed PRESS August 25 and 26 as the plan lists; the second-quarter group carries it from the Detroit week) and Henne's group; not Wilson or Shaw, whose groups did not run it and have not earned it",
+  "four_minute": "Power, Counter, Inside Zone and Outside Zone, with the Y-Cross or the Boot Flood when the defense sells out; first downs, not three runs because the clock exists",
+  "sudden_change": "whoever is scheduled goes: a short field goes to the young offense and a turnover brings the young defense; the Outside Zone / Boot Flood pair from Wing, then the normal-down sheet",
+  "empty_rule": "the shift toward Empty from twelve personnel for Cousins's groups, which rehearsed it this week; the shift to Empty from 11 personnel for Cousins's and Henne's groups; the static Empty is off (not taught). The formation cannot appear because somebody sees it on another quarterback's wristband",
+  "reserve_menu": "Henne's full functional reserve offense and the fourth-quarter groups' menu: Power, Counter, Inside Zone, Outside Zone, Stick, Spacing, Mesh, Drive, Y-Cross, Dagger, Boot Flood, RB Slow Screen, from the huddle; no gadgetry",
+  "fourth_down": "the first half uses Stone's normal fourth-down process; in the second half he is more willing to leave the developmental offense on the field on a manageable fourth down, weighed on field position, quarterback, protection and situation, no automatic attempt (coaching guidance the kernel does not carry)"
+ },
+ "units_rule": "A call with no 'units' field is available to every group that takes a possession; a 'units' field restricts it ('first' Cousins's two groups, 'second' Henne's, 'third' Wilson's, 'fifth' Shaw's; Bray has no block). Protection defaults follow the book (quick game SCAT, five-man dropback HALF, heavy intermediate SOLID, boot NAKED, shot MAX) and are named only where Stone's plan names them or the default is recorded for audit.",
+ "notes": [
+  "Off the sheet on August 27, each with its reason in the reduction table: the Choice tag (calls 3, 8 and 15, and the red-zone quick Choice), the Y-Iso alignment, Sail from 12 Bunch (call 10), TE Delay from 12 Wing (call 11, and the low-red-zone TE Delay/leak), the Alert Post tag (call 13), Texas/Angle, the quick pivot and Split Leak. None has been taught in the 2014 program on the record; the active book holds every one of them. Stick from 12 Trey and Power from 11 Doubles are carried from their practiced pictures. Split Zone and Counter Boot are not on the plan and are not carried.",
+  "Kelce's alignment (attached only when necessary; wing, slot, reduced, flexed, motion; the shift from twelve personnel toward Empty) is the plan's and is coaching guidance: the kernel places him in the tight-end group and models no alignment or motion response. The first-half target philosophy (approximately two cross, two stick, one mesh or boot, one red-zone opportunity) is the plan's design of the progression, not a quota, and the kernel does not condition on it.",
+  "Script order, the return to call 1 at call 13, the Power Pass edge-control condition, the fourth-down philosophy and the plan's grading questions are coaching guidance the kernel does not condition on; they are recorded here and in rotation.json.",
+  "Formation modifiers, direction and motion are descriptive fields; the kernel freezes them in the canonical sheet for audit. Distinct directions of the same family from the same picture (Power Right and Left from Ace; Boot Flood Right and Left from Wing) are distinct calls on the plan and are frozen as such.",
+  "The plan's 'no useless gadgetry' and the standing Trap, Wham, Jet, Scissors, flea flicker and 6OL exclusions are honoured by omission; the 6OL package has not been run in camp (Bradfield unsigned).",
+  "The defensive menu Crennel calls (Under and Nickel Even with their installed adjustments; Cover 1, 1 Robber/Rat, Cover 3, Quarters; base four and the installed five-man pressure; the second-half sheet narrowed to the same families; no line game carried, none having been practiced in the 2014 program on the record) is sideline guidance recorded in rotation.json, not a kernel input."
+ ],
+ "offensive_call_sheet": [
+  {
+   "name": "12 Trey, Y-Cross, HALF",
+   "family": "Y-Cross",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey",
+   "protection": "HALF",
+   "tags": [
+    "opener",
+    "Kelce"
+   ],
+   "opener": 1,
+   "menus": [
+    "normal down",
+    "third-and-long",
+    "red zone",
+    "four minute"
+   ],
+   "what_stone_is_looking_at": "Opener 1 and the plan's call 13 (the return to the same call after showing the family): the first pass goes through Kelce's matchup, Kelce the primary cross behind the linebackers at intermediate depth; HALF as the plan names it; the Alert Post tag is off (not taught)"
+  },
+  {
+   "name": "11 Doubles, Inside Zone Right",
+   "family": "Inside Zone",
+   "type": "run",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "tags": [
+    "opener"
+   ],
+   "opener": 2,
+   "menus": [
+    "normal down",
+    "third-and-short",
+    "backed up",
+    "four minute"
+   ],
+   "what_stone_is_looking_at": "Opener 2: establish the run structure without Kelce as the blocking centerpiece; ordinary assignment football from the spread picture"
+  },
+  {
+   "name": "12 SHIFT Empty, Stick",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Empty (after shift)",
+   "motion": "SHIFT toward Empty",
+   "tags": [
+    "opener",
+    "shift",
+    "Kelce"
+   ],
+   "opener": 3,
+   "menus": [
+    "normal down",
+    "third-and-medium"
+   ],
+   "units": [
+    "first"
+   ],
+   "what_stone_is_looking_at": "Opener 3, carried from the plan's 12 Ace-to-Empty Y-Iso Choice (the Choice tag and the Y-Iso alignment are not taught): twelve personnel enters, the shift toward Empty makes the defense declare who owns Kelce, and Cousins reads the matchup within the taught Stick progression; the practiced picture from the HOLD sequence. Cousins's groups only: the plan rehearsed the twelve-personnel shift with his two groups this week"
+  },
+  {
+   "name": "11 Bunch, Mesh, HALF",
+   "family": "Mesh",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right",
+   "protection": "HALF",
+   "tags": [
+    "opener",
+    "Kelce"
+   ],
+   "opener": 4,
+   "menus": [
+    "normal down",
+    "third-and-short",
+    "third-and-medium",
+    "third-and-long",
+    "red zone",
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "Opener 4: the man/zone answer; Kelce carries a crosser, settles against zone and works the traffic against man, the ball allowed to find him; the quick Mesh is the plan's third-and-short man answer and the Bunch Mesh its low-red-zone call"
+  },
+  {
+   "name": "12 Wing, Outside Zone Left",
+   "family": "Outside Zone",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Left",
+   "tags": [
+    "opener"
+   ],
+   "opener": 5,
+   "menus": [
+    "normal down",
+    "four minute",
+    "sudden change"
+   ],
+   "what_stone_is_looking_at": "Opener 5: establish the movement-pass picture; Kelce off the surface where the formation permits, Lewis the attached surface"
+  },
+  {
+   "name": "12 Wing, Boot Flood Right",
+   "family": "Boot Flood",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Wing Left",
+   "tags": [
+    "opener",
+    "movement pass",
+    "Kelce"
+   ],
+   "opener": 6,
+   "menus": [
+    "normal down",
+    "red zone",
+    "four minute",
+    "sudden change"
+   ],
+   "what_stone_is_looking_at": "Opener 6: the same picture, movement complement, Kelce active in the route distribution; carries the plan's three-level sideline stretch (the dropback Sail from Bunch is not taught) and its 'Boot' in the low red zone and four minute"
+  },
+  {
+   "name": "11 Trey, Dagger, HALF",
+   "family": "Dagger",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Trey Right",
+   "protection": "HALF",
+   "tags": [
+    "opener"
+   ],
+   "opener": 7,
+   "menus": [
+    "normal down",
+    "third-and-long"
+   ],
+   "what_stone_is_looking_at": "Opener 7: core intermediate offense with protection; the young tackles' real pass-protection rep on third-and-long in the second half"
+  },
+  {
+   "name": "11 Trey, Stick",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Trey",
+   "tags": [
+    "opener",
+    "Kelce"
+   ],
+   "opener": 8,
+   "menus": [
+    "normal down",
+    "third-and-medium",
+    "backed up",
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "Opener 8, carried from the plan's 12 Trey Stick Choice (Stick has not been run from 12 Trey in the 2014 program; the Choice tag is not taught): Kelce can own the stick route from the practiced Trey picture, the leverage read the quarterback's within the taught progression (SCAT the book's default)"
+  },
+  {
+   "name": "12 Ace, Power Right",
+   "family": "Power",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "tags": [
+    "opener"
+   ],
+   "opener": 9,
+   "menus": [
+    "normal down",
+    "third-and-short",
+    "backed up",
+    "red zone",
+    "four minute"
+   ],
+   "what_stone_is_looking_at": "Opener 9, carried from the plan's 11 Doubles picture (the 2014 program has run Power from Ace only): the downhill complement; Lewis the attached surface"
+  },
+  {
+   "name": "11 Trips, Inside Zone + Bubble",
+   "family": "Inside + Bubble",
+   "type": "mixed",
+   "personnel": "11",
+   "formation": "11 Trips Right",
+   "tags": [
+    "opener",
+    "access package"
+   ],
+   "opener": 12,
+   "menus": [
+    "normal down",
+    "third-and-short",
+    "two-minute"
+   ],
+   "what_stone_is_looking_at": "Opener 12, the plan's 'Inside Zone + Access': normal leverage football, the leverage throw against an overloaded box on third-and-short and the sideline access in the PRESS menu; the line runs the called run regardless of the decision"
+  },
+  {
+   "name": "11 Doubles, Drive, HALF",
+   "family": "Drive",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "protection": "HALF",
+   "tags": [
+    "opener"
+   ],
+   "opener": 14,
+   "menus": [
+    "normal down",
+    "third-and-medium",
+    "third-and-long",
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "Opener 14: the intermediate control call; Drive with protection on third-and-long"
+  },
+  {
+   "name": "12 Ace, Power Left",
+   "family": "Power",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "menus": [
+    "normal down",
+    "third-and-short",
+    "backed up",
+    "red zone",
+    "four minute"
+   ],
+   "what_stone_is_looking_at": "The left-handed Power from the practiced picture; the plan's Power in the backed-up, third-and-short and four-minute menus"
+  },
+  {
+   "name": "12 Ace, Counter Right",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "menus": [
+    "normal down",
+    "third-and-short",
+    "red zone",
+    "four minute"
+   ],
+   "what_stone_is_looking_at": "The plan's Counter on the reserve menu, third-and-short, the low red zone and four minute; puller and interior communication"
+  },
+  {
+   "name": "11 Doubles, Stick, SCAT",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "protection": "SCAT",
+   "menus": [
+    "normal down",
+    "third-and-medium",
+    "backed up",
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "Quick-game operation and receiver leverage; the plan's Stick when backed up, on third-and-medium and at PRESS pace with the hot answer known"
+  },
+  {
+   "name": "11 Doubles, Spacing, SCAT",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "protection": "SCAT",
+   "menus": [
+    "normal down",
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "The two-minute and PRESS core on the reserve menu; who understands the sticks"
+  },
+  {
+   "name": "11 SHIFT Empty, Spacing, SCAT",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Empty (after shift)",
+   "protection": "SCAT",
+   "motion": "SHIFT to Empty (back-to-empty)",
+   "tags": [
+    "shift"
+   ],
+   "menus": [
+    "normal down",
+    "two-minute"
+   ],
+   "units": [
+    "first",
+    "second"
+   ],
+   "what_stone_is_looking_at": "The shift to Empty from 11 personnel, the practiced picture: Empty communication and the immediate pressure answer; Cousins's and Henne's groups, which carried it in three games and rehearsed it this week; Wilson's and Shaw's groups rehearsed the Henne operation and the situations this week, not the shift"
+  },
+  {
+   "name": "12 Wing, Boot Flood Left",
+   "family": "Boot Flood",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Wing Right",
+   "tags": [
+    "movement pass",
+    "Kelce"
+   ],
+   "menus": [
+    "normal down",
+    "red zone",
+    "four minute",
+    "sudden change"
+   ],
+   "what_stone_is_looking_at": "Movement pass from the right-handed Wing picture; the safe boot when the defense sells out in four minute"
+  },
+  {
+   "name": "11 Trey, Y-Cross, SOLID",
+   "family": "Y-Cross",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Trey",
+   "protection": "SOLID",
+   "menus": [
+    "normal down",
+    "third-and-long",
+    "red zone",
+    "four minute"
+   ],
+   "what_stone_is_looking_at": "The eleven-personnel Y-Cross on the reserve menu; the high-red-zone Cross and the safe Cross in four minute (SOLID the book's default)"
+  },
+  {
+   "name": "11 Doubles, RB Slow Screen",
+   "family": "RB Slow Screen",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "tags": [
+    "screen"
+   ],
+   "menus": [
+    "normal down",
+    "third-and-long",
+    "two-minute"
+   ],
+   "what_stone_is_looking_at": "The plan's screen on third-and-long if pressure warrants and the RB screen in the PRESS menu; Larsen's retest at center in the fourth-quarter line, never presented at Detroit"
+  },
+  {
+   "name": "11 Bunch, Snag",
+   "family": "Snag",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right",
+   "tags": [
+    "red zone"
+   ],
+   "menus": [
+    "red zone"
+   ],
+   "what_stone_is_looking_at": "Low red zone only, from the compressed Bunch spacing taught in the OTA red-zone work; the plan lists it for the high red zone and third-and-medium 'if carried', and after the calls from the 33 and the 20 it is carried on this menu alone; the sheet discipline is Stone's and Tice confirms the field zone before the call leaves the sideline"
+  },
+  {
+   "name": "12 Ace, Power Pass / Post-Cross, MAX",
+   "family": "Power Pass",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "protection": "MAX",
+   "tags": [
+    "conditional",
+    "shot"
+   ],
+   "menus": [
+    "normal down",
+    "backed up"
+   ],
+   "what_stone_is_looking_at": "The plan's 'safe play action if edge control is sound' when backed up, conditional on the edge (coaching guidance the kernel does not carry); otherwise an ordinary normal-down call"
+  }
+ ]
+}
