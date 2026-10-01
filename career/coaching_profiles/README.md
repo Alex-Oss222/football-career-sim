@@ -2,7 +2,7 @@
 
 [Alex Stone's profile](alex_stone_coaching_profile.md) | [Assessment history](alex_stone_coaching_assessment_log.md) | [Career reference](alex_stone_career_reference.md) | [Assistant assessments](staff_profiles.md) | [Writing template](profile_template.md)
 
-This folder describes the coaches and preserves the evidence behind those descriptions. Stone's three documents are current through **August 4, 2014**, the latest completed camp block. The editing date is not the career date. Assistant assessments retain their own dated baselines and updates.
+This folder describes the coaches and preserves the evidence behind those descriptions. Stone's three documents are current through **August 4, 2014**, the latest completed camp block. The editing date is not the career date. Assistant assessments retain their own dated baselines and updates. The master date in [current season state](../../state/05_Current_Season_State.md) bounds the available evidence.
 
 ## Each document's job
 
@@ -32,6 +32,8 @@ Only the user establishes Stone's intended beliefs, motives and philosophy. Reco
 2. At a material handoff, append one concise dated entry to the assessment log. Say what changed, what remained supported and what the evidence still cannot settle. A retained finding needs only the new evidence and its significance.
 3. Refresh the profile where the current interpretation or a relevant fact changed. Keep the history in the log; do not accumulate phase reports below an obsolete portrait.
 4. Update the career reference only for changed career facts, employment, responsibility, completed-season records or its as-of date. The source owner changes first; an assessment cannot appoint a coach, award a role or advance the clock.
+
+Keep current-season exit interviews and team reviews in that season's `07_Season_Review/`. Carry unresolved teaching and staff follow-through, with the source, responsible coach and next observation, in the existing season handoff. A season boundary does not reset the assessment.
 
 The user-defined [camp approach](alex_stone_coaching_profile.md#how-he-wants-training-camp-run) is maintained in the profile and operational season plan. A change to that approach is not evidence that a practice or fitness test occurred.
 

@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "season": 2014,
   "next_season": 2015,
   "status": "NOT_STARTED",
@@ -68,5 +68,54 @@
     "postseason": "career/2014/06_Postseason/Games"
   },
   "source_sha256": {},
-  "pending_decisions": []
+  "pending_decisions": [],
+  "reference_inventory": {
+    "individual_development": {
+      "status": "OPEN",
+      "sources": [
+        "career/2014/00_Team_Operations/Player_Development/2013_exit_player_index.json",
+        "career/2014/00_Team_Operations/Player_Development/kirk_cousins.md",
+        "career/2014/00_Team_Operations/Player_Development/kirk_cousins_progression_context.json",
+        "career/2014/00_Team_Operations/Player_Development/progression_model.md",
+        "career/2014/00_Team_Operations/Player_Development/progression_roster.json",
+        "career/2014/00_Team_Operations/Player_Development/roster_profiles.md"
+      ],
+      "evidence": []
+    },
+    "film_delivery": {
+      "status": "OPEN",
+      "sources": [
+        "career/2014/00_Team_Operations/Film/delivery_log.md",
+        "career/2014/00_Team_Operations/Film/kirk_cousins_2013_review.md",
+        "career/2014/00_Team_Operations/Film/player_queue.md"
+      ],
+      "evidence": []
+    },
+    "medical": {
+      "status": "OPEN",
+      "sources": [
+        "career/2014/00_Team_Operations/Medical/current_injury_report.md",
+        "career/2014/00_Team_Operations/Medical/medical_history.md"
+      ],
+      "evidence": []
+    },
+    "coach_development": {
+      "status": "OPEN",
+      "sources": [
+        "career/coaching_profiles/alex_stone_career_reference.md",
+        "career/coaching_profiles/alex_stone_coaching_assessment_log.md",
+        "career/coaching_profiles/alex_stone_coaching_profile.md",
+        "career/coaching_profiles/staff_profiles.md"
+      ],
+      "evidence": []
+    },
+    "draft_ownership": {
+      "status": "OPEN",
+      "sources": [
+        "career/2014/03_Draft/pick_ownership.json",
+        "career/2014/03_Draft/ownership_audit.md"
+      ],
+      "evidence": []
+    }
+  }
 }

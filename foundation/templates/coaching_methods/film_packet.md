@@ -1,6 +1,8 @@
 # Individual teaching packet template
 
-**Player / owner / packet ID / revision:** fill when prepared. **Evidence cutoff:** actual reviewed checkpoint. **Preparation / media / contact gate / distribution:** separate statuses per [workflow](README.md).
+Save a prepared packet under `career/<year>/00_Team_Operations/Film/`, with a descriptive player/topic filename. Keep later revisions with that packet; the delivery log owns when it actually reached the player.
+
+**Player / owner / packet ID / revision:** fill when prepared. **Evidence cutoff:** actual reviewed checkpoint. **Preparation / media / contact gate / distribution:** separate statuses under the current season's film workflow.
 
 ## Player-facing explanation
 
@@ -24,8 +26,12 @@ Include representative ordinary good work and adaptations as well as difficult r
 
 ## Review and release
 
-Position-coach review, shared-room reconciliation and staff contribution: pending until actually completed. Record reviewer, date and changes when they occur. Before release, check control/eligibility, the permitted activity/date and medical instructions. Log actual distribution in [delivery_log.md](delivery_log.md); a drafted packet is not a sent tape.
+Position-coach review, shared-room reconciliation and staff contribution: pending until actually completed. Record reviewer, date and changes when they occur. Before release, check control/eligibility, the permitted activity/date and medical instructions. Log actual distribution in that season's `00_Team_Operations/Film/delivery_log.md`; a drafted packet is not a sent tape.
 
 ## Retest reference
 
 Link actual output evidence after teaching. State what was tested, at what lawful speed, with what support and whether the response was prompted, immediate or retained later. Do not prefill the result.
+
+## Carry forward
+
+At a phase or season boundary, identify any unfinished teaching, review, delivery or retest, the coach responsible, the latest source and the next lawful opportunity. Link the continuing task from the season handoff. Preserve its history and recorded status; moving into a new season does not complete it or establish improvement.

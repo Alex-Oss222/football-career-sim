@@ -1,34 +1,37 @@
 # OTA report template
 
-Use with the [report instructions](README.md). This is team practice with veterans and eligible rookies together. The 2014 team periods can include 7-on-7, 9-on-7 and 11-on-11 without live contact; opposed one-on-one drills and shells remain prohibited. Do not turn a non-contact team release into a press-contact win or a whistled sack into a hit. Report only the periods actually held.
+Use the [shared report guidance](README.md). In 2014, eligible players can work together in non-contact team periods, including 7-on-7, 9-on-7 and 11-on-11. Opposed one-on-one drills and shells remain prohibited. Report the periods actually held; a non-contact release or whistle at the quarterback is not a physical win or game statistic.
 
 ## Report to render
 
 # OTAs | [Team] | [Season]
 
-**Location:** [Recorded facility or field; do not invent one]  
-**Dates:** [Dates covered by this report]  
-**Days completed:** [Actual OTA days completed in this block; season total if useful]  
-**Work addressed:** [Installation, formations, communication and situations addressed]
+**Location:** [Recorded facility or field]
 
-[Give the staff's read of how the team ran its assigned offense, defense and kicking game. State the non-contact setting once. Explain what this block emphasized and what changed from the earlier work.]
+**Dates:** [Dates covered by this report]
+
+**Days completed:** [Actual OTA days in this block; completed season total if useful]
+
+**Work addressed:** [Installation, formations, shared assignments and situations practiced]
+
+[Give the staff's assessment of the group's operation and its main unfinished question. Establish the non-contact setting and meaningful practice periods. Explain what the staff wanted to learn from them, including any changed combinations or material participation limits.]
 
 ## Offense against a defense
 
-[Connect a named formation/personnel group and call to what happened. Could the players line up, identify the front, adjust protection, keep route spacing and reach the right answer when the defense moved? Describe the quarterback, receivers, line and backs through the actual shared assignment. Identify the useful play and the unresolved work rather than listing concepts. Follow a correction into a later block only if the record supports that follow-up.]
+[Follow a taught formation and call through the shared work. Could the group line up, identify a changing front, communicate the protection and keep the quarterback's timing connected to the routes? Describe the backs' and line's responsibilities alongside the passing outcome. Explain whether the breakdown was recognition, a late declaration, spacing, execution or an unresolved cause. Trace important work across the block, including the coach's response and later evidence.]
 
 ## Defense against an offense
 
-[Explain alignment and fits, coverage ownership, motion/bunch exchanges, help and pressure responsibility through actual reps. Distinguish a matchup loss, a communication failure, a late signal and a deliberate concession. If the same shell carried different coverages, say how the players handled the change. Include line and linebacker work, not only interceptions or corners.]
+[Explain how the front, linebackers and secondary handled the actual formations, motion, distributions and help rules. Follow a call or check from the communicator to the players whose jobs changed. Distinguish a sound concession from a lost assignment or matchup, and describe what the coordinator actually adjusted. Include fit and pressure responsibilities without claiming non-contact work settled block defeat or tackling.]
 
 ## Special teams
 
-[Describe the actual operation, substitution, coverage spacing and situational instruction. Identify what the specialist was asked to do and what the record shows. A clean snap in this setting does not decide protection against a live rush or the summer snapper competition.]
+[Describe the operation, substitutions, coverage spacing and situations actually practiced. Explain how the specialist's instruction connected to the protection, coverage or return work available in that period. Note what a changed partner or reserve group revealed. Separate a completed operation from the live rush, block or finish still untested.]
 
-## Players and corrections to watch
+## Players and combinations to watch
 
-[Give the specific player comparisons or reserve observations that matter. Keep each competition's existing starting point separate from the staff's practice read. No automatic promotion, hidden grade or invented failure for an unnamed player.]
+[Explain the meaningful individual findings or comparisons emerging from the unit work. Identify the jobs, partners, opposing group and amount of opportunity as far as recorded. Show why a reserve, established player or newcomer merits another look without requiring a standout. A good rep against one group does not settle a comparison with someone facing different demands. Link the existing battle card when its evidence changed.]
 
 ## Next practice
 
-[Name what carries into the next OTA block or minicamp: the unfinished correction, the retained work to recall, and any new material already authorized. Include relevant health/participation limits and a real Stone decision if there is one. Do not tack on a cap sheet or demand approval of ordinary coaching.]
+[Carry forward the few questions shaping the next OTA block or minicamp. Link each source observation, name the responsible coach and describe the next test: a retained correction, a different presentation, another combination or authorized new material. Identify actual decisions separately. Leave routine coaching within the adopted plan with the staff.]

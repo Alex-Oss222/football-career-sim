@@ -127,6 +127,6 @@ The following are source candidates or actual written teaching evidence, not cer
 
 ## Record a completed finding
 
-Create the packet with [packet_template.md](packet_template.md). Reference these stable review IDs; do not replace the receipt. For each finding enter the expected job and its source, observed fact, cause with confidence, shared/staff contribution, confirmed comparison or missing evidence, correction cue and next legal retest. Undetermined findings remain open rather than becoming fabricated coverage or mechanics. Preserve the original source index when adding later review findings.
+Create the packet with [packet_template.md](../../../../foundation/templates/coaching_methods/film_packet.md). Reference these stable review IDs; do not replace the receipt. For each finding enter the expected job and its source, observed fact, cause with confidence, shared/staff contribution, confirmed comparison or missing evidence, correction cue and next legal retest. Undetermined findings remain open rather than becoming fabricated coverage or mechanics. Preserve the original source index when adding later review findings.
 
 Reconciliation was performed against all existing 2013 regular-season receipt ledgers containing Jacksonville plays, with exactly one row per included play. No stats, receipts or 2013 performance records were changed.

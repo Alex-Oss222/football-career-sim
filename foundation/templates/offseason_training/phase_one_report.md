@@ -1,30 +1,33 @@
 # Phase One report template
 
-Use with the [report instructions](README.md). This phase's football teaching is in meetings. The field period is strength, conditioning and rehabilitation under the applicable rules. A player-led throw is not evidence of a coach-run practice. Do not report team formations being run against a defense.
+Use the [shared report guidance](README.md). In 2014 the coached field work is strength, conditioning and rehabilitation, with only strength and conditioning coaches permitted there. Football teaching occurs in meetings. Player-led throwing does not establish a coach-run practice or field evaluation.
 
 ## Report to render
 
 # Phase One | [Team] | [Season]
 
-**Location:** [Recorded facility or field; do not invent one]  
-**Dates:** [Classroom and physical-work dates]  
-**Days completed:** [Actual classroom/workout days; exclude staff-only reviews]  
-**Work addressed:** [Classroom responsibilities and physical preparation addressed]
+**Location:** [Recorded facility; leave unrecorded detail unspecified]
 
-[Open with the actual staff finding from this phase. Identify classroom evidence as classroom evidence. Say briefly what physical work occurred and any communicated restriction that affected it.]
+**Dates:** [Classroom and physical-work dates]
+
+**Days completed:** [Actual classroom/workout days; identify staff-only reviews separately]
+
+**Work addressed:** [Language, responsibilities and physical preparation actually addressed]
+
+[Open with what the staff learned about the group's preparation. Briefly describe the meetings and physical work that supplied the evidence, including material participation limits. Distinguish returning players' recall from a newcomer learning this staff's language.]
 
 ## Learning the offense
 
-[Explain the taught formation/personnel language, protection responsibility or concept that mattered. Could players explain where they belong and what changes their job? Use an actual teach-back or film/board discussion, if recorded. Include returning players and newcomers where their learning differed. Name any inconsistent coaching cue, its correction and the response. Do not invent field timing or claim the whole book is learned.]
+[Explain the formation/personnel language, protection responsibility or concept that occupied the room. Connect the quarterback's answer with the line, backs and receivers: could they explain their own jobs and what changes a teammate's job? Use recorded film or board discussion. Follow an important misunderstanding across the phase, including the coach's clarification and any later explanation that tested it. Knowing the words does not establish field timing.]
 
 ## Learning the defense
 
-[Explain how the front, linebackers and secondary understood the same call: alignment, strength, gap, leverage, help and motion responsibility as relevant to the work actually taught. Who could explain it? Where did explanations disagree? Describe the staff response and what still needs to be seen outside the room.]
+[Describe the front and coverage responsibilities actually taught: strength, gap, leverage, help and motion checks as relevant. Show whether the front, linebackers and secondary described the same answer. Explain a staff clarification or player question when recorded, and what the later meeting established. Do not infer that an understood fit has been executed against a block.]
 
 ## Special teams and physical work
 
-[Report operation responsibilities taught in meetings and the performance staff's documented strength, movement, conditioning or rehab work. If there are no measured findings, state that plainly; do not invent a lift, weight change, test result or fitness improvement. Position coaches do not observe or coach the Phase One field work.]
+[Explain the kicking-unit roles and shared operation taught in meetings. Separately report the performance staff's documented strength, movement, conditioning or rehabilitation work. Describe what the observed work supports and how a communicated limitation affected participation. If there are no measured findings, say so without inventing a test result, gain or fitness failure.]
 
-## First work on the field
+## Handoff to Phase Two
 
-[Identify the actual unresolved teaching points and the Phase Two activity that will check them. Include a player question only if it was offered. Note a decision only if the next work genuinely needs one. Keep this future tense.]
+[Carry forward the consequential classroom or physical-preparation questions. Link the dated observation, name the responsible coach and describe the lawful field opportunity that will test the teaching. State what needs to become clearer; keep the proposed or scheduled work in future tense.]

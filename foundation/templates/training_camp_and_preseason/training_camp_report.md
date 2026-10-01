@@ -1,34 +1,45 @@
 # Training camp report template
 
-Use the [report instructions](README.md) and [assessment method](player_assessment.md). Keep the core section order in later seasons. Fill it from actual work; a heading does not require a result.
+Use the [camp instructions](README.md), [shared writing guidance](../offseason_training/README.md#write-the-football) and [assessment method](player_assessment.md). Keep the core section order across seasons and fill it from the actual block of work.
 
 ## Report to render
 
 # Training camp | [Team] | [Season]
 
-**Location:** [Recorded facility or field]  
-**Dates:** [Reporting dates and practice block covered]  
-**Practices completed:** [Actual days in this block, distinguishing padded and non-contact work]  
-**Work addressed:** [Installed jobs, combinations and situations being checked]
+**Location:** [Recorded facility or field]
 
-[Lead with the most useful football finding and the main unfinished question. State the stage of camp and contact level. Mention reporting, physical readiness and material participation changes briefly when they matter. Separate medical clearance from conditioning readiness. Report a coach's fitness result only if it was actually recorded.]
+**Dates:** [Reporting dates and practice block covered]
+
+**Practices completed:** [Actual practice sessions and days; distinguish padded, non-contact and walkthrough work]
+
+**Work addressed:** [Taught jobs, combinations and situations being checked]
+
+[Lead with the most useful football finding and the main unfinished question. Briefly establish the stage of camp and the meaningful periods, their purpose, opposition and contact instruction. Mention reporting, conditioning or participation only as they affect the work. Explain what changed in the opportunity from the preceding block.]
 
 ## Offense: putting the playbook on the field
 
-[Describe the work that mattered across quarterback, line, backs and receivers. Connect the formation/personnel and taught call to the jobs: combination and pull path, protection point and back scan, release and route spacing, progression and answer to pressure. Include physical execution only at the recorded contact level. What worked, where did it break, what did the responsible coach correct, and what happened at the later opportunity? Avoid a catalogue of concepts.]
+[Describe the unit through the work that mattered. Connect the actual formation and call to the blocking combination or pull path, protection declaration and back scan, release and route spacing, quarterback progression and pressure answer. Show how one player's work affected his teammates. Include physical execution to the recorded contact level and distinguish an isolated matchup from a team period.]
+
+[Follow the important question across the block: what the group brought in, what the later work revealed and what the coach changed or continued teaching. Explain where a different partner, front, situation or workload exposed a strength or limit. Give reliable execution its due without requiring every player to make a mistake.]
 
 ## Defense: playing the call together
 
-[Explain the front and fit, block defeat, rush lanes, coverage leverage, help and exchanges through the actual work. Follow a shift or motion into the changed responsibilities where useful. Separate a physical loss, a missed assignment, a slow relay and an accepted concession. Show whether the available players can carry the called defense and what the coordinator actually changed.]
+[Explain front and fit, block defeat, rush lanes, coverage leverage, help and exchanges through the actual periods. Trace a shift, motion or personnel change into the affected responsibilities. Describe whether the unit communicated and executed one answer. Separate a physical loss, missed assignment, delayed relay and accepted concession.]
+
+[Explain what the coordinator or position coach did with that evidence and what subsequent work established. Include the costs of help or a changed combination where observed. A successful rush and sound contain are separate findings; a tackle outcome alone does not establish the fit.]
 
 ## Situations and special teams
 
-[Describe the scenario actually practiced: score/time, field position, down/distance or available timeouts only to the precision recorded. What was the objective? Could the group substitute, receive the call and execute without a sideline rescue? Include the other unit's response. For special teams, distinguish snap/hold/protection, kick instruction, coverage and return decision. Do not claim a full live operation from isolated specialist work.]
+[Describe the scenario actually practiced and its objective. Use score, time, field position, down, distance or timeouts only to the recorded precision. Explain whether the sideline and players could call, substitute and execute the operation, including any coaching assistance still needed. A scrimmage with coaches off the field tests something different from a coached repeat.]
+
+[Assess the kicking work actually held: the specialist's instruction, snap/hold/protection, coverage spacing, return decision or emergency job. Connect the pieces that were practiced together and distinguish them from isolated work. Follow consequential findings across the block without equating pads with a complete live operation.]
 
 ## Players and combinations
 
-[Compare the open jobs from meaningful opportunities, including reserves and newcomers. Who played beside and against whom? What did changing a guard, communicator, receiver alignment or defensive package reveal? Explain scheme fit as a job the player can perform, not a generic versatility label. Include an established player's continuing work. Use a compact table only when it makes several comparisons clearer. Keep staff recommendations separate from Stone's actual role decisions. Link the existing battle card when this block changes its evidence or next test; do not create a new full player assessment.]
+[Explain why the staff mixed a particular group or tried a player in a different job, when the purpose is recorded; otherwise identify that limit. Compare actual teammates, opponents, support, situations and opportunity. Include reserves, newcomers and established players when their work matters. Describe what the combination can presently do and what it asks from the rest of the unit.]
+
+[Summarize the important comparisons without repeating all the unit evidence. Link an existing battle card when this block changes its findings or next test. Keep staff interpretation, Stone's recorded instruction and an actual role decision distinct.]
 
 ## What the staff takes into the next practice
 
-[State the correction or unanswered question, its responsible coach and the next useful opportunity under the adopted plan. Include what Stone learned about his own teaching, menu or use of personnel when the evidence supports it. Record actual decisions and material health limits. If a physical question has not yet been tested, say what test is needed; do not supply its outcome.]
+[Carry each consequential finding with its dated source, responsible coach and specific next opportunity. Explain the question that work should answer and any participation limit that changes the plan. Include a needed change in teaching or use of personnel when supported. State actual decisions separately, and leave unperformed tests without outcomes.]
