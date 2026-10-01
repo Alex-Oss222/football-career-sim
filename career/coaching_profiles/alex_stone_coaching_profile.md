@@ -1,67 +1,121 @@
 # Alex Stone: coaching profile
 
-**Jacksonville Jaguars head coach. Evidence through August 4, 2014.**
+**User-approved approach, adopted October 1, 2026. Jacksonville Jaguars head coach; current staff arrangement through August 4, 2014.**
 
-[Career reference](alex_stone_career_reference.md) | [Assessment history](alex_stone_coaching_assessment_log.md)
+[Assessment history](alex_stone_coaching_assessment_log.md) | [Career reference and NFL Coach Sheet](alex_stone_career_reference.md)
 
-Stone builds offense around familiar assignments presented in different ways. He wants a physical running game, useful work for backs and tight ends, and a quarterback who understands why an answer is available. He remains the offensive caller. Mike Tice runs the weekday offensive process, Romeo Crennel coordinates and calls the defense, and Mike Westhoff runs special teams.
+This profile defines Stone's coaching identity and approach to decisions. Performance and employment judgments belong in the assessment log; career facts and results belong in the career reference. Adopting the approach does not advance the career date or record a new practice, conversation, appointment or service provision.
 
-His clearest strengths are offensive preparation, teaching through repeatable jobs and adjusting the support around a player. His first Jacksonville season also exposed two recurring problems: he can keep pursuing a passing answer after he has neglected a useful running game, and individual teaching can lose its place as the next opponent takes over the week. The 2014 spring and opening camp block show better follow-through on specific player requests. They have not yet tested whether he sustains it through a season.
+Stone's approach combines a demanding practice field with an open meeting room. He wants players to understand their work, contribute ideas and retain their personalities. He enjoys designing offense and calling plays, but treats teaching, staff management, player relationships and the kicking game as part of his job.
 
-## The offense he prepares
+## Preparation and game planning
 
-Stone uses formations and personnel changes to create different defensive reactions without replacing the core offense. Against St. Louis in 2013, he carried a small six-lineman package, shifted two-tight-end personnel to Empty, and added a Jet Sweep and tight-end screen. Against San Diego, Kelce's split-flow blocking set up a leak off the same action. Thielen moved among slot, stack and motion assignments while Blackmon returned to a narrower outside job.
+Stone welcomes ideas from assistants, quarterbacks, defensive players, equipment staff and even fans. Nobody needs seniority to suggest something. The staff then draws it against the opponent's likely fronts and coverages, checks the protection and decides whether the team has time to prepare it.
 
-The run game gives those changes a purpose. Power, Counter and the zone families make the defense account for the blocking surface and the back. Quick throws punish available space; protected shots attack a defender who has committed elsewhere. Moving a tight end can change the picture while leaving the quarterback with a recognizable combination. Stone's background in tight-end play, quarterback preparation and the New England secondary is relevant to that work, but the weekly plans show what he actually uses.
+His weekly plan starts with matchups, down and distance, field position and opponent tendencies. He pairs calls that initially look alike: a run and its play-action pass, a screen off familiar backfield action, or a shot from a formation already shown. The opening script helps him establish those looks and learn how the defense responds. Situational calls remain available when the game moves outside the script.
 
-Preparation includes a practical test of the call sheet. Stone has rehearsed calling a mock game, paired runs with their complements and removed calls that were not clean by Friday. Cousins can tell him which calls he trusts on Thursday before the final selection. Stone listens and keeps the final decision. Protection must be attached to the pass, including when a formation changes.
+## The team room
 
-See the [active offense](../playbook/alex_stone_2013_offensive_playbook_iteration_i.md), [St. Louis week](../2013/regular_season/week_05_jacksonville_at_st_louis/output.md), [San Diego week](../2013/regular_season/week_07_san_diego_at_jacksonville/output.md) and [Cousins's exit interview](../2013/exit_interviews/main_core/kirk_cousins.md).
+Meetings are efficient and lively. Stone encourages players to be themselves, asks questions and leaves room for humor. He recognizes birthdays and important family milestones. His expectation is that players take care of themselves and their families so they can arrive ready to work.
 
-## Where his calling needs work
-
-The first Houston game in 2013 is the clearest failure to follow his own reasoning. He intended to make Houston stop the run. Jacksonville finished with seventeen runs and forty-five dropbacks. In the following week's preparation, he acknowledged that Houston had not stopped the running game; he had stopped calling it. The departure began before the late deficit made passing more necessary.
-
-He added a question after three consecutive called passes: why keep throwing? It was a check on the reason for the next call, not an automatic run. The Houston rematch kept the run involved. Cousins still brought a six-pass Cleveland sequence to the January review. Stone had identified a real tendency and attempted a correction; its reliability remained unsettled.
-
-Boot Flood exposed a different problem. It left the primary sheet after the early interception and sacks and stayed out for the rest of 2013. The staff had not adequately separated protection, read and call responsibility. In January, Cousins challenged whether its continued absence still had a football reason. The concept returned to teaching in 2014, and the spring records show the coaches resolving conflicting cues and testing the answer again. That addresses the neglected review. It does not yet establish a dependable game call against an opponent.
-
-The [Houston record](../2013/regular_season/week_12_jacksonville_at_houston/output.md), [Cleveland preparation](../2013/regular_season/week_13_jacksonville_at_cleveland/output.md), [Houston rematch](../2013/regular_season/week_14_houston_at_jacksonville/output.md) and [Phase Two report](../2014/02_Offseason_Training/Phase_Two/training_report.md) preserve the sequence.
-
-## Teaching and follow-through
-
-Stone's best teaching gives the player a clear assignment, shows the correction and returns to it with something changed. The player has to find the answer without the coach supplying it. His motor-learning education helps explain the interest; the practice record establishes where the method worked. Position coaches and players share that work and its credit.
-
-The January exits identified what was missing during the season. Thielen's individual development period disappeared after the bye without anyone telling him whether the work was complete or postponed. Shorts wanted role changes explained during installation instead of discovering them through his targets. Kelce kept receiving an attached-blocking correction without a clear account of what would close it. Cousins wanted paired examples of correct and incorrect decisions, with responsibility assigned to the actual error rather than every interception becoming a quarterback mistake.
-
-Stone heard those objections and gave specific responses. He clarified who should correct Thielen, told Drake to explain the changed emphasis to Shorts and accepted further review with Cousins. The 2014 record now contains some delivery: Phase Two notes, the requested sideline drawings and end-zone angle, written summer sheets for every signed participant, and individual camp reviews. Shared instruction was corrected before players were retested. This narrows the earlier finding of incomplete follow-through.
-
-The remaining distinctions matter. No player film packet had been issued by August 4. Kelce's blocking assessment has begun, but his base still rose late in repeated work. It held in a shorter August 4 period; Zernhelt kept the repeated-effort question open. Useful feedback has reached players, while some promised material and harder demonstrations remain outstanding.
-
-See the [player exits](../2013/exit_interviews/README.md), [spring handoff](../2014/02_Offseason_Training/Mandatory_Minicamp/training_report.md) and [camp report](../2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md).
-
-## Roles and responsibility
-
-Stone has been willing to keep a player responsible for a job while changing his support. Johnson stayed at right tackle with help. Brewster kept the center job after Meester returned. Thielen retained meaningful work when Blackmon became available. These are concrete role decisions; the team record alone cannot establish that every selection was right.
-
-Delegation is substantial. Tice, Crennel and Westhoff own distinct parts of preparation and instruction. Westhoff's February 11 appointment ended Stone's temporary special-teams coverage. Stone remains responsible for reconciling their work and making the head-coach decisions. His defensive background supports informed oversight; it does not make Crennel's teaching or calls his personal accomplishment.
-
-Caldwell retains final personnel, contract, cap and draft authority. Stone supplies football evaluations and controls coaching assignments, the depth chart and game-day decisions. Medical clearance remains with clinicians. The [contract](../2013/offseason/head_coach_contract.md) and [current staff record](../2014/00_Team_Operations/Staff/coaching_staff.md) define those responsibilities.
+Film review is blunt. He identifies missed assignments, poor technique and bad decisions regardless of a player's status. Good work receives equally specific praise. Coaches answer for unclear instruction and poor calls. Individual discipline stays inside the building.
 
 ## How he wants training camp run
 
-**User-defined approach, recorded September 30, 2026.** This is intended practice. The [camp plan](../2014/04_Training_Camp_and_Preseason/Training_Camp/staff_plan.md#stones-camp-standard) governs its execution; reports establish what occurred.
+Camp is physically demanding, with a brisk pace, repeated work and conditioning built into football periods. Stone uses individual drills, group work and eleven-on-eleven periods to connect technique to the full assignment. Sustained-drive periods test whether players can communicate and execute while tired; backed-up, red-zone and two-minute periods give that work a game situation.
 
-Everybody reports on the applicable date and arrives prepared, veterans included. Stone includes himself and his assistants in the fitness requirement. The performance staff sets written tests and passing standards beforehand, suited to players' positions and coaches' duties, age and health. A failed test requires a plan and retest. Clinicians retain control of clearance and limitations. The approach does not establish that a coach has taken or passed a test.
+Players can question a coaching point and ask for another explanation. Coaches state the correction, demonstrate it and give the player another rep. Stars and reserves complete their assigned work. Medical restrictions govern participation, and contact and workload remain within the applicable CBA limits.
 
-Maximum participation means completing the work assigned that day. Healthy players take part in the relevant individual, group, team, situational and special-teams periods. Players receiving treatment follow their permitted work and remain involved where medically appropriate. Recovery days need an individual football or medical reason; seniority alone does not supply one. Coaches must plan workloads that keep players available for useful work across camp.
+The established [camp standard](../2014/04_Training_Camp_and_Preseason/Training_Camp/staff_plan.md#stones-camp-standard) retains the reporting, fitness, contact, mixed-group and situational-work requirements. Players and coaches, including Stone, meet written physical standards appropriate to their duties and health. A failed test requires an individual plan and retest. These expectations do not establish that a test has occurred or been passed.
 
-Physical practice tests technique against resistance and repeated effort. The staff specifies contact and finish for each drill, protects quarterbacks and ends the rep at the whistle. A physical standard does not make every period a live tackling period.
+## Staff management
 
-Mixed groups must answer a football question: a reserve guard beside the regular center, a young receiver against an established corner, or a defense operating without its usual communicator. Everyone needs meaningful work in a taught, suitable role; likely starting combinations also need time together. A first-group rep does not itself award a job.
+Stone hires assistants for their knowledge and teaching ability. He expects them to bring observations, proposed answers and their own judgment. Disagreement belongs in preparation, where it can improve the plan.
 
-Situations include backed-up possessions, protecting a lead, needing a score, substitutions under the clock and changes in who relays the call. Stone wants independent decisions from players and compatible instructions from coaches. Assessment starts with the assigned job, technique and support required. The staff must return to unresolved work and explain what the next observation needs to show.
+Once a decision is made, players receive consistent terminology and assignments. Assistants retain room to change drills and teaching methods. Stone settles conflicts between units and takes responsibility for the final plan. Tice coordinates the weekday offensive process, Crennel ordinarily calls defense, and Westhoff directs special teams.
 
-## What the next games can establish
+## Calling the offense
 
-The opening camp block adds controlled contact, a scrimmage with coaches on the sideline and documented follow-up. It leaves open how Stone calls against an opponent, responds when protection fails and manages a competitive finish. The 2013 engine's documented clock and chain problems also limit conclusions drawn from its late-game results. His [assessment log](alex_stone_coaching_assessment_log.md) preserves those limits and the observations needed to revise them.
+Stone follows the matchup rather than a prescribed run-pass ratio. He uses motion and shifts to change the strength of a formation, move a blocker, test coverage adjustments and create favorable releases. He alternates huddle and no-huddle operation according to personnel, communication and the defense's ability to substitute.
+
+He is comfortable showing the same formation on three consecutive snaps, then returning to it with a shot or trick play. The setup matters because of the defender's reaction. The opportunity may arrive earlier, later or fail to appear.
+
+His preferred passing concepts include Dagger, Mesh, posts and intermediate crossers. Dagger puts a vertical route over a dig, giving the quarterback an intermediate answer beneath the deeper coverage. Mesh uses closely spaced crossing routes to create traffic against man coverage, with the receivers taught their spacing and responses to zone. These concepts require coordinated route depths and quarterback timing.
+
+He also favors high-low combinations and a varied screen game involving backs, tight ends and receivers. Screens need practiced blocking, release timing and a convincing initial presentation. Crossing combinations create natural rubs through route spacing, with receivers coached to avoid illegal contact.
+
+The running game includes inside and outside zone, Power, Counter, traps and jet-sweep handoffs. Stone expects the line to learn both zone and gap schemes. He likes 12 personnel, one back and two tight ends, and 13 personnel, one back and three tight ends, for additional blocking surfaces and play-action opportunities. Changing personnel and formation can preserve the underlying blocking rules.
+
+He prefers a committee of backs with different strengths and overlapping responsibilities. On outside zone, the back presses his aiming point and reads the blocks before committing outside or cutting upfield. Stone wants to exploit overpursuit, but teaches the actual read that produces the cutback.
+
+## Defensive preferences
+
+Stone wants pressure from the front four and selective pressure calls that exploit protection weaknesses. He studies the protection's slide, the back's responsibility and the quarterback's quick answer before sending an additional linebacker, safety or nickel defender. Attacking away from the slide is one way to seek a free rusher; the back or another protection adjustment may still account for him.
+
+If he takes over defensive calling, he favors showing more potential rushers than he sends. That can include presenting seven at the line, bringing heavy pressure, or dropping four of those players and rushing three. Each version needs its own coverage and contain assignments. Dropping a lineman into a passing lane changes who handles that area and who supplies the rush.
+
+Against the run, he likes crowded fronts, slants, stunts and disciplined support from the secondary. Ends squeeze down blocks and follow the called edge technique. A box assignment turns the runner inside; a spill assignment sends him toward the outside support. Safeties, corners and nickel defenders must know their force, alley or replacement responsibility. Those jobs must fit together.
+
+## Adjustments
+
+A stalled opening fifteen does not cause Stone to panic. He asks what the opponent changed and whether the problem lies in the call, protection, read or execution. He listens to the quarterback and position coaches before choosing the next answer.
+
+He will move from deeper throws to quick game, screens or intermediate combinations, or put the game on the running attack. Route adjustments use understood tags and coordinated timing. A change in break depth must reach both the receiver and quarterback. Between-series conversation helps the caller understand what the quarterback is seeing and which answers he trusts.
+
+## Roster fit and player development
+
+Stone builds around the players available. He will strip back a playbook and rebuild its emphasis when the roster requires it. A player's useful skills determine his first job; development expands that job over time.
+
+He simplifies complex concepts so players can play fast. They learn why an assignment exists, which defender it affects and how it connects to a teammate's work. Shared terminology and familiar concepts reduce the amount of new material attached to each formation.
+
+During teaching, he stops the film before the snap, marks the relevant defender, runs the clip and resets it. The player explains the assignment, walks through the correction and repeats it at speed.
+
+Players are partners in that process. Stone asks receivers which routes feel most comfortable and quarterbacks which calls they trust. Their answers influence preparation. He builds development on trust and family, often inviting players to dinner and getting to know their families closely. Those relationships continue through poor performances, injuries and changes in playing time.
+
+## Clock and game flow
+
+Stone's offensive instinct is to keep scoring until the opponent's remaining possessions make the lead secure. He then moves into four-minute offense: protect the ball, keep the clock running and obtain the first downs needed to finish.
+
+With a fourth-quarter lead, his defensive inclination is to soften coverage, keep completions in front and make tackles inbounds. In a tie, he is more inclined to pressure the quarterback and seek a turnover. The score, remaining time, timeouts and opponent's field-goal position still inform the actual call.
+
+He discusses fourth-down choices, timeout responsibilities and challenge communication before kickoff. Throughout the game, he watches the quarterback's confidence and workload and adjusts the next series accordingly.
+
+## Special teams
+
+Stone gives the kicking game regular meeting and practice time. Coverage, return, protection and specialist responsibilities influence the active roster. Westhoff supplies the technical plan; Stone retains the head-coach decisions on fourth downs, fakes and other situations that affect the whole game.
+
+## Player and family welfare
+
+Stone expects treatment plans and medical restrictions to be followed. His standard includes round-the-clock access to medical support and access to multiple qualified psychologists. Mental-health support is encouraged without making treatment a test of commitment.
+
+Families are part of that responsibility. He wants family liaisons whom spouses and partners can approach about problems at home, including abuse by a player. Reports receive appropriate professional attention and action through the club's reporting procedures. A player's importance to the roster does not excuse mistreatment of his family.
+
+## Front-office relationships
+
+Stone has no ego invested in personnel control. He accepts Caldwell's final authority over acquisitions, contracts and the cap. He gives clear evaluations and explains disagreements directly.
+
+He does not demand expensive free agents. He supplies detailed shopping lists of traits for specific roles: what the player must already do, what the coaches can teach and which limitations the scheme can accommodate. A request for a tight end identifies blocking and receiving responsibilities. A request for a back specifies running, receiving and pass-protection needs. The front office can search across names, prices and acquisition routes.
+
+## Public accountability
+
+Stone is articulate, calm, funny, honest and compassionate. He does not sugarcoat a poor team performance or speak badly about his players publicly. He never shows public panic. Even after allowing thirty points, he identifies what held up and the specific corrections needed, giving the team a steady message.
+
+Praise comes readily and names the work that earned it. He credits players and assistants for preparation and execution, including after losses.
+
+He absorbs criticism directed at the team. When a player makes a boneheaded mistake, Stone publicly blames his own play-call and the situation he created. In the private film review, he identifies the player's missed assignment, states the correction and handles any discipline.
+
+## Supporting records and football references
+
+The user's approved profile supplies Stone's preferences and character. [The Prowl](../2013/offseason/the_prowl_program_identity.md) and its [player-readiness standard](../2013/offseason/the_prowl_player_readiness_standard.md) retain the detailed program standards. The active [offensive](../playbook/alex_stone_2013_offensive_playbook_iteration_i.md) and [defensive](../playbook/alex_stone_2013_defensive_playbook_iteration_i.md) books own assignments and terminology; weekly plans establish what is prepared for use. The [staff record](../2014/00_Team_Operations/Staff/coaching_staff.md) owns appointments and responsibilities.
+
+These real coaching sources support the football language and methods. Later publications are editing references, not events or knowledge imported into Stone's 2014 career. Accessed October 1, 2026.
+
+- Bill Walsh, [A Method for Planning a Game](https://coachfore.org/wp-content/uploads/2020/07/billwalshgameplanning.pdf): opening sequences and decisions prepared before the game; the hosted scan does not state its original publication date.
+- Kansas City Chiefs, [Andy Reid's August 10, 2016 media availability](https://www.chiefs.com/news/what-we-learned-from-wednesday-s-media-availability-17459990): sustained-drive, backed-up, two-minute and mock-game preparation.
+- NFL and NFLPA, [2011 Collective Bargaining Agreement](https://nflps.org/wp-content/uploads/2012/05/collective-bargaining-agreement-2011-2020.pdf), Articles 23 and 24: the camp and in-season practice limits applicable in 2014.
+- Charlie Coiner, FirstDown PlayBook, [94 or Dagger Concept](https://firstdown.playbooktech.com/coaches-community/94-or-dagger-concept-cuts-the-d-either-way), January 9, 2022, and [Coaching the Mesh Concept Correctly](https://firstdown.playbooktech.com/coaches-community/coaching-the-mesh-concept-correctly), May 18, 2025: route relationships, reads and spacing.
+- Keith Grabowski, USA Football, [Making a concept multiple through personnel, formations and motions](https://blogs.usafootball.com/blog/956/3%20specific%20ways%20to%20believe%20in%20your%20athlete), July 30, 2014: varying the presentation while retaining blocking rules.
+- Keith Grabowski, USA Football, [Teaching outside-zone vision](https://blogs.usafootball.com/blog/1618/here-s-a-strategy-to-help-running-backs-improve-vision-on-the-outside-zone-play), September 17, 2015: the back's reads and responses to actual blocks.
+- Bill Belichick, Patriots, [September 2, 2016 conference call](https://www.patriots.com/news/bill-belichick-conference-call-transcript-9-2-269416) and [October 25, 2002 press conference](https://www.patriots.com/news/bill-belichick-press-conf-transcript-10-25-2002-123551): protection responses, run fits and inside/outside support.
+- Kansas City Chiefs, [Reid's in-game conversations with his quarterback](https://www.chiefs.com/news/chiefs-notebook-andy-reid-s-in-game-conversations-with-patrick-mahomes-have-paid), October 3, 2018: listening to the quarterback and agreeing on the next answers.
+- Keith Grabowski, USA Football, [Player-friendly offensive terminology](https://blogs.usafootball.com/blog/959/make-your-offensive-system-player-friendly-through-terminology), July 8, 2015: connected assignments, teaching cues and consistent concept language.
