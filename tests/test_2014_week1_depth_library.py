@@ -33,7 +33,7 @@ class Week1DepthLibrary2014Tests(unittest.TestCase):
     def test_schema_and_gate(self):
         lib = self.library
         self.assertEqual((lib["schema_version"], lib["season"], lib["week"]), (1, 2014, 1))
-        for key in ("branch_basis", "branch_controlled_players", "unplaced_branch_players",
+        for key in ("branch_basis", "branch_controlled_players", "branch_departures", "unplaced_branch_players",
                     "draft_swaps_without_week1_chart", "sources", "cross_check", "clubs", "gate"):
             self.assertIn(key, lib)
         self.assertIn("September 7, 2014", lib["gate"])
@@ -81,15 +81,12 @@ class Week1DepthLibrary2014Tests(unittest.TestCase):
 
     def test_no_branch_controlled_player_and_no_shared_player(self):
         controlled = controlled_players_from_roster(ROSTER)
-        # The library was reconciled to the July 29, 2014 roster (78 controlled);
-        # the August 30 reduction to 53 left 63 under control (the 53, two on
-        # reserve/injured and eight on the practice squad), every one of them
-        # in the library's control list. The 23 who left stay removed from their
-        # real clubs until the Week 1 rebuild applies their rails dispositions
-        # (Cain to Chicago on September 1; Edwards and Blake unplaced).
-        self.assertEqual(len(self.library["branch_controlled_players"]), 78)
+        # Rebuilt on the September 6, 2014 roster: 63 under control (the
+        # active 53, two on reserve/injured and eight on the practice squad),
+        # exactly the gate's own reading of the roster.
         self.assertEqual(len(controlled), 63)
-        self.assertTrue(controlled <= set(self.library["branch_controlled_players"]))
+        self.assertEqual(set(self.library["branch_controlled_players"]), controlled)
+        self.assertIn("September 6, 2014", self.library["branch_basis"])
         ids, gsis, club_of = Counter(), Counter(), {}
         for team, club in self.library["clubs"].items():
             for player in club["players"]:
@@ -105,6 +102,33 @@ class Week1DepthLibrary2014Tests(unittest.TestCase):
         self.assertEqual([i for i, n in ids.items() if n > 1], [])
         self.assertEqual([i for i, n in gsis.items() if n > 1], [])
         self.assertFalse(set(ids) & controlled)
+        practice_squad = {"Tyler Bray", "Richard Murphy", "Matt Feiler", "Tyler Shatley",
+                          "Jackson Jeffcoat", "Jerome Long", "Jemea Thomas", "Adrian Phillips"}
+        self.assertTrue(practice_squad <= controlled)
+        self.assertFalse(practice_squad & set(ids))
+
+    def test_august_30_departures_follow_their_rails_dispositions(self):
+        def ids(team):
+            return {p.get("name", p["player_id"]) for p in self.library["clubs"][team]["players"]}
+        everyone = set().union(*(ids(t) for t in self.library["clubs"]))
+        # Cain, released August 30, rides the rails to his real September 1
+        # Chicago signing (same kind of move, same window) at his real slot.
+        cain = next(p for p in self.library["clubs"]["Chicago Bears"]["players"] if p["player_id"] == "Jeremy Cain")
+        self.assertEqual((cain["position"], cain["depth"], cain["slots"]), ("LS", 1, "LS1"))
+        self.assertTrue(any(s.startswith("Jeremy Cain") and "Chicago" in s for s in self.library["branch_departures"]))
+        # Edwards and Blake, waived August 30 with no same-window real move,
+        # are unplaced and stay off Dallas's and Pittsburgh's real charts;
+        # every other August 30 departure is on no club.
+        for name in ("Lavar Edwards", "Antwon Blake", "C.J. Wilson", "Cameron Bradfield", "Toney Clemons",
+                     "Mike Brown", "Austin Pasztor", "John Parker Wilson", "Connor Shaw", "Mark Asper",
+                     "Tyler Larsen", "Ryan Davis", "Jeris Pendleton", "D'Anthony Smith",
+                     "Cameron Brate", "Jerrell Jackson"):
+            self.assertNotIn(name, everyone, name)
+        self.assertTrue(any(s.startswith("Lavar Edwards") for s in self.library["unplaced_branch_players"]))
+        self.assertTrue(any(s.startswith("Antwon Blake") for s in self.library["unplaced_branch_players"]))
+        self.assertIn("Lavar Edwards", self.library["removed_by_club"]["Dallas Cowboys"])
+        self.assertIn("Antwon Blake", self.library["removed_by_club"]["Pittsburgh Steelers"])
+        self.assertNotIn("Jeremy Cain", self.library["removed_by_club"]["Chicago Bears"])
 
     def test_branch_transactions_pairings_and_placements_are_applied(self):
         def ids(team):
@@ -156,7 +180,7 @@ class Week1DepthLibrary2014Tests(unittest.TestCase):
 
     def test_counts_and_availability(self):
         total = sum(len(c["players"]) for c in self.library["clubs"].values())
-        self.assertEqual(total, 1588)
+        self.assertEqual(total, 1589)
         for team, club in self.library["clubs"].items():
             self.assertGreaterEqual(len(club["players"]), 45, team)
         team_input = unit("New England Patriots")
