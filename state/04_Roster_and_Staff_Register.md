@@ -3,9 +3,9 @@
 ## Document status
 
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap and draft-capital reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH AUGUST 4, 2014; owned roster, role and medical facts unchanged since July 29.**
-- Effective through: **August 4, 2014 (78 controlled players; rookies and first-year players reported July 21 and veterans July 24 with camp physicals communicating no restriction; the first five camp practices July 25 to 29 without full pads, the padded practices of July 30, August 1 and August 4 and the August 2 scrimmage with no injury or restriction communicated; the five open competitions standing as Stone set them May 12 after the August 2 block review; the four unsigned tenders not under contract and not reported).**
-- Current authority: [camp report through August 4](../career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md), supported by the [roster](../career/2014/00_Team_Operations/Team/Roster/roster.md), [depth chart](../career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md) and [medical report](../career/2014/00_Team_Operations/Medical/current_injury_report.md).
+- Current status: **RECONCILED THROUGH AUGUST 7, 2014; owned roster, role and medical facts unchanged since July 29.**
+- Effective through: **August 7, 2014 (78 controlled players; rookies and first-year players reported July 21 and veterans July 24 with camp physicals communicating no restriction; the first five camp practices July 25 to 29 without full pads, the padded practices of July 30, August 1 and August 4 and the August 2 scrimmage with no injury or restriction communicated; the August 5 to 7 game-week preparation for Tampa Bay with no injury or restriction communicated and Stone's plan frozen as the August 8 game inputs; the five open competitions standing as Stone set them May 12 after the August 2 block review and the game-week rehearsal; the four unsigned tenders not under contract and not reported).**
+- Current authority: [camp report through August 7](../career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md), supported by the [roster](../career/2014/00_Team_Operations/Team/Roster/roster.md), [depth chart](../career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md) and [medical report](../career/2014/00_Team_Operations/Medical/current_injury_report.md).
 - Prior events: the [2014 record](../career/2014/Record.md) and [2013 record](../career/2013/record.md) link to the actual event owners.
 - Detailed readable roster: `career/2014/00_Team_Operations/Team/Roster/roster.md`.
 - Current cap worksheet: `career/2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md`.
@@ -24,12 +24,12 @@ This register states each current fact once, in the section that owns it. Dated 
 | Competition | NFL |
 | Season | 2014 |
 | Divergence point | January 15, 2013: Alex Stone accepts Jacksonville head-coach offer |
-| Season phase | 2014 training camp, camp block 1 closed August 4 after the scrimmage and block review, game-week preparation for the August 8 preseason opener next; league year open from March 11, 2014 (2013 season complete, eliminated in the AFC Divisional round) |
-| Owned content effective | July 29, 2014 (register pointers current through August 4, 2014; no owned fact changed) |
+| Season phase | 2014 training camp, game week: camp block 1 closed August 4, the Tampa Bay preparation closed August 7 with the plan frozen as the game inputs, the August 8 preseason opener next behind the legal-rosters gate; league year open from March 11, 2014 (2013 season complete, eliminated in the AFC Divisional round) |
+| Owned content effective | July 29, 2014 (register pointers current through August 7, 2014; no owned fact changed) |
 | Document 4 register version | `JAX-2014-JUL29-REGISTER-67` |
 | Supersedes | `JAX-2014-JUN28-REGISTER-66` |
 | Last content-changing checkpoint | `Canonical update - July 29, 2014 - Training camp opened` |
-| Latest closed event | [Scrimmage and camp block 1 closed](../career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md), August 2 to 4, 2014: the August 2 scrimmage in series with no score kept, the block review (no competition decided; Plan execution first assessed Average for each unit's named lineup, Communication retained at Average), the August 3 day off and the August 4 padded practice. No transaction, injury, new restriction or role change; 78 controlled players |
+| Latest closed event | [Tampa Bay preparation closed](../career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md#august-5-to-7-game-week-preparation-for-tampa-bay), August 5 to 7, 2014: the game operation installed August 5, rehearsed with the play clock August 6 and reduced at walkthrough pace August 7, Stone's plan frozen as the game inputs after his meeting with Cousins and Tice, no competition, place, role or transaction decided and no injury or restriction communicated. Before it, [scrimmage and camp block 1 closed](../career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md), August 2 to 4, 2014: the August 2 scrimmage in series with no score kept, the block review (no competition decided; Plan execution first assessed Average for each unit's named lineup, Communication retained at Average), the August 3 day off and the August 4 padded practice. No transaction, injury, new restriction or role change; 78 controlled players |
 | Current controlled players | **78** |
 | Current practice squad | **0** (no 2014 practice squad before the regular season) |
 | Next scheduled football event | August 5 to 7 game-week preparation for Tampa Bay; August 8 preseason game 1 (blocked by the 2014 release gates); dated events are in Document 5 section 9 |
@@ -41,7 +41,7 @@ This register states each current fact once, in the section that owns it. Dated 
 
 | Exact primary status | Current count | Governing limit | Reconciled |
 |---|---:|---:|---|
-| Offseason roster | **78** | 90-player offseason limit from the league year | August 4, 2014; no transaction since the May 12 Rackley trade |
+| Offseason roster | **78** | 90-player offseason limit from the league year | August 7, 2014; no transaction since the May 12 Rackley trade |
 
 | Primary-status total | Current value | Derivation |
 |---|---:|---|
@@ -54,7 +54,7 @@ The offseason roster is 78 of 90. Only recorded contracts and the adopted contra
 
 ### Current player index
 
-<!-- player-ages-as-of: 2014-08-04 -->
+<!-- player-ages-as-of: 2014-08-07 -->
 
 DOB is a verified pre-divergence identity fact, supported by the [birth-date evidence registry](../library/data/player_birth_dates.json) and [verification notes](../library/2013_player_birth_dates.md). Age is derived at Document 5's master date, refreshed with `python scripts/render_player_ages.py`. An age does not determine a rating, medical clearance or retirement.
 
@@ -111,7 +111,7 @@ The availability column records the club's latest medical communication. Every p
 | Jackson Jeffcoat | JAX-JACKSONJEFFCOAT | DE | 1990-12-26 | 23 | Offseason roster (rookie, undrafted) | Undrafted rookie contract signed May 10, 2014: three years through 2016, $1,530,000, no signing bonus | No communicated restriction | [May 8–11 draft and signings](../career/2014/Record.md) |
 | Sen'Derrick Marks | JAX-SENDERRICKMARKS | DT | 1987-02-23 | 27 | Offseason roster | Re-signed March 11, 2014: four years through 2017, $26M, $12.5M guaranteed | No communicated restriction | [Monroe, Marks and Verner agreements](../career/2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md) |
 | Roy Miller | JAX-ROYMILLER | DT | 1987-07-09 | 27 | Offseason roster | Branch signing; two years, $5.00M | No communicated restriction | [2013 St. Louis game report](../career/2013/regular_season/week_05_jacksonville_at_st_louis/output.md) |
-| C.J. Mosley | JAX-CJMOSLEY | DT | 1983-08-06 | 30 | Offseason roster | Existing contract/control | No communicated restriction | [Pasztor and Mosley medical-record correction](../career/2013/medical_history.md) |
+| C.J. Mosley | JAX-CJMOSLEY | DT | 1983-08-06 | 31 | Offseason roster | Existing contract/control | No communicated restriction | [Pasztor and Mosley medical-record correction](../career/2013/medical_history.md) |
 | Jeris Pendleton | JAX-JERISPENDLETON | DT | 1983-11-07 | 30 | Offseason roster | Existing rookie contract | No communicated restriction | [2013 St. Louis game report](../career/2013/regular_season/week_05_jacksonville_at_st_louis/output.md) |
 | D'Anthony Smith | JAX-DANTHONYSMITH | DT | 1988-06-09 | 26 | Offseason roster (reserve/future, effective March 11) | Reserve/future contract, February 5, 2014 (market draw); two years through 2015 | No communicated restriction | [March 11 league-year transactions](../career/2014/00_Team_Operations/Free_Agency/signings.md) |
 | Jerome Long | JAX-JEROMELONG | DT | 1990-04-09 | 24 | Offseason roster (reserve/future, effective March 11) | Reserve/future contract, February 3, 2014; two years through 2015 | No communicated restriction | [March 11 league-year transactions](../career/2014/00_Team_Operations/Free_Agency/signings.md) |
