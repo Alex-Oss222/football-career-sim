@@ -1,0 +1,414 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "game": "2014 Preseason Game 2, Jacksonville at Chicago, August 14, 2014",
+ "status": "FROZEN EX-ANTE ROTATION from Stone's August 9 to 14 plan as applied August 9 to 13 and reduced August 13; written before any draw. Where the plan leaves a count to the game, the ceiling and the plan's rule are encoded and no number is invented.",
+ "source": "career/2014/04_Training_Camp_and_Preseason/Preseason_Games/Game_02/Preseason Game 2_ HC.md (medical and availability decisions, the correction blocks, the quarterback plan, backs, receivers, tight ends, offensive line, the first-defense correction block, the reserve defense, special teams); the reduction in the camp report, August 13.",
+ "plan_summary": {
+  "principle": "Two short correction blocks for the first offense and the first defense, then the rookies-and-backups game: play them, cycle them, change the problem, put them back in.",
+  "offense": [
+   {
+    "block": "Cousins correction block",
+    "rule": "Cousins comes out when the offense earns its second first down and completes the immediate sequence after it, when he reaches roughly 8 to 10 snaps, or when two possessions are completed, whichever first; a three-and-out gets the second possession. Jones-Drew, Nicks, Thielen, Lewis, Monroe and Brewster are finished when Cousins is finished. Series 1: Nicks X, Adams WR3, Bitonio at left guard; series 2: Adams X, Hawkins WR3, Norwell at left guard; Thielen the constant, Turner at right guard and Lucas at right tackle throughout (a one-game assignment). Kelce attached early and again later in his block; Lewis by package. The correction mini-script in order; the slow screen on the sheet but not an automatic early call; one short PRESS sequence if the block lasts long enough. Owens is named at FB for the heavier pictures; no 21-personnel call is scripted."
+   },
+   {
+    "block": "Henne",
+    "rule": "Two possessions, subject to drive length, behind Linsley for at least one, with the harder surrounding personnel: Bitonio and Turner beside Linsley first, then Norwell and Feiler, Leno and Lucas the tackles. Kelce plays into the first developmental block, attached again late. Adams with a backup quarterback; Hawkins, Hurns and Gabriel cycled. One PRESS sequence. Grimes the primary developmental back (Power/Counter track, both zones, HALF protection, check release, screen); Anderson, cleared August 11, on protection, receiving, the screen and later-series execution, not another zone night."
+   },
+   {
+    "block": "Wilson",
+    "rule": "QB3; two possessions is the starting point, behind Shatley's interior group that produced the clean Tampa drive (Leno, Feiler, Shatley, Asper, Lucas). The Stick family revisited where the leverage makes sense; the correction is not giving the opponent the ball at our 21. No PRESS. Anderson and Murphy the backs; Hurns, Gabriel and Jackson."
+   },
+   {
+    "block": "Bray",
+    "rule": "An extended block before Shaw, ideally two or three possessions depending on game flow (ceiling three encoded); the reduced menu less the Four Verticals alert; operation graded before production (point, protection, cadence, progression, ball security). Larsen at center where trained, Norwell and Asper beside him. No PRESS. Snaps are not taken from Bray to equalize the quarterbacks."
+   },
+   {
+    "block": "Shaw",
+    "rule": "Closes the planned rotation on the same core, his movement an answer when the play breaks down; the remaining possessions. No PRESS."
+   }
+  ],
+  "defense": [
+   {
+    "block": "first defense, one correction possession",
+    "rule": "Branch opens at Edge 1 so the lane can be evaluated with veteran structure around him (not a promotion); Mincey's workload reduced after 41 snaps in game 1; Daryl Smith the communicator with Posluszny and Stanford; Talib, Harris, Lowery, Rambo and Poyer. After the correction possession the veterans largely leave. The correction practiced is the help and communication of the coverages the defense already owns; no new family."
+   },
+   {
+    "block": "reserve defense, two groups",
+    "rule": "Crennel's developmental evaluation with the young defenders the plan names exposed and cycled: group A through the third quarter (Te'o-Nesheim, Donald, Mosley, Edebali with C.J. Wilson and Mincey behind; Moore, Telvin Smith, Christian Jones; Verner, Bouye, Prosinski, Trawick, Poyer at the nickel), group B after (Jeffcoat, Pendleton, Edwards, Long, D'Anthony Smith; Todd Davis, Christian Jones, Telvin Smith; Butler, Thomas, Phillips, Blake, Poyer). Poyer gets substantial nickel work. A sack counts as good defensive football only if the lane stays owned, the coverage knows the hot answer and the run fit is not destroyed."
+   },
+   {
+    "menu": "Under and Nickel Even fronts; Cover 1, 1 Robber/Rat, Cover 3, Quarters; base four and the installed five-man pressure. The plan's Over, Bear, Odd, Fire 3, Fire Zone, A-gap Dog, line games and SAM/WILL edge pressures are in the active book but not practiced in the 2014 program and are off the Chicago menu. If Chicago goes fast, simplify: base fit and communication before disguise. Sideline guidance, not a kernel input."
+   }
+  ],
+  "special_teams": {
+   "coordinator": "Mike Westhoff",
+   "long_snapper_rule": "The order flipped from game 1: Kreiter opens the game operation and Cain takes the later block, for another cold-entry comparison. Neither has won the job; the grade is snap, protection exchange, hold operation, coverage responsibility, communication and the response to a bad look.",
+   "returners": {
+    "first_named": "Andrew Hawkins",
+    "rule": "Hawkins opens as the first named returner (four kickoff returns and three named punt returns in game 1 with no recorded ball-security failure), a starting point and not an award. The plan asks for the additional candidates from Westhoff's camp catch-work group, which the record does not name; no other returner is named here and the game record names who fields each kick. The two muffed punts in game 1 carry no name on the record and the review identified none."
+   },
+   "specialists": {
+    "K": "Josh Scobee",
+    "P": "Bryan Anger",
+    "holder": "Bryan Anger"
+   },
+   "head_coach_decisions": "Timeouts stay liberal and protect the evaluation from operational chaos (a collapsed substitution, quarterback and center on different protections, a young group unable to receive the call, a red-zone opportunity lost to an operation failure, one two-minute sideline cycle), never the player from football. Sudden change: the next scheduled unit goes. Two minute: the quarterback already on the field runs it. Fourth down, field goal versus go, fake, onside kick, challenge and unusual end-of-half situations remain Stone's."
+  },
+  "medical": "Johnson does not play (Stone's decision; projected return the game date, held out even if cleared late). Brate out, removed from the plan. Anderson cleared August 11 and plays."
+ },
+ "rotation_plan": [
+  {
+   "side": "offense",
+   "unit": "first offense, correction series 1 (Cousins; Nicks X, Adams WR3; Bitonio LG; Lucas RT)",
+   "until": {
+    "possessions": 1,
+    "snaps": 10
+   },
+   "players": {
+    "QB": [
+     "Kirk Cousins"
+    ],
+    "RB": [
+     "Maurice Jones-Drew"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Hakeem Nicks",
+     "Adam Thielen",
+     "Davante Adams"
+    ],
+    "TE": [
+     "Marcedes Lewis",
+     "Travis Kelce"
+    ],
+    "OL": [
+     "Eugene Monroe",
+     "Joel Bitonio",
+     "Mike Brewster",
+     "Trai Turner",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "first offense, correction series 2 (Cousins; Adams X, Hawkins WR3; Norwell LG; Lucas RT)",
+   "until": {
+    "possessions": 1,
+    "snaps": 10
+   },
+   "players": {
+    "QB": [
+     "Kirk Cousins"
+    ],
+    "RB": [
+     "Maurice Jones-Drew"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Davante Adams",
+     "Adam Thielen",
+     "Andrew Hawkins"
+    ],
+    "TE": [
+     "Marcedes Lewis",
+     "Travis Kelce"
+    ],
+    "OL": [
+     "Eugene Monroe",
+     "Andrew Norwell",
+     "Mike Brewster",
+     "Trai Turner",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "Henne, developmental series 1 (Linsley with Bitonio and Turner; Kelce attached)",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "QB": [
+     "Chad Henne"
+    ],
+    "RB": [
+     "Jonathan Grimes",
+     "C.J. Anderson"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Davante Adams",
+     "Andrew Hawkins",
+     "Allen Hurns"
+    ],
+    "TE": [
+     "Travis Kelce",
+     "Marcel Jensen"
+    ],
+    "OL": [
+     "Charles Leno Jr.",
+     "Joel Bitonio",
+     "Corey Linsley",
+     "Trai Turner",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "Henne, developmental series 2 (Linsley with Norwell and Feiler)",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "QB": [
+     "Chad Henne"
+    ],
+    "RB": [
+     "Jonathan Grimes",
+     "C.J. Anderson"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Davante Adams",
+     "Taylor Gabriel",
+     "Andrew Hawkins"
+    ],
+    "TE": [
+     "Marcel Jensen",
+     "Gator Hoskins"
+    ],
+    "OL": [
+     "Charles Leno Jr.",
+     "Andrew Norwell",
+     "Corey Linsley",
+     "Matt Feiler",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "Wilson, reserve core (Shatley's interior group)",
+   "until": {
+    "possessions": 2
+   },
+   "players": {
+    "QB": [
+     "John Parker Wilson"
+    ],
+    "RB": [
+     "C.J. Anderson",
+     "Richard Murphy"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Allen Hurns",
+     "Taylor Gabriel",
+     "Jerrell Jackson"
+    ],
+    "TE": [
+     "Marcel Jensen",
+     "Gator Hoskins"
+    ],
+    "OL": [
+     "Charles Leno Jr.",
+     "Matt Feiler",
+     "Tyler Shatley",
+     "Mark Asper",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "Bray, extended block on the reduced menu (Larsen at center)",
+   "until": {
+    "possessions": 3
+   },
+   "players": {
+    "QB": [
+     "Tyler Bray"
+    ],
+    "RB": [
+     "Richard Murphy",
+     "Jonathan Grimes"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Taylor Gabriel",
+     "Jerrell Jackson",
+     "Allen Hurns"
+    ],
+    "TE": [
+     "Gator Hoskins",
+     "Marcel Jensen"
+    ],
+    "OL": [
+     "Charles Leno Jr.",
+     "Andrew Norwell",
+     "Tyler Larsen",
+     "Mark Asper",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "offense",
+   "unit": "Shaw, the same core",
+   "players": {
+    "QB": [
+     "Connor Shaw"
+    ],
+    "RB": [
+     "Richard Murphy",
+     "C.J. Anderson"
+    ],
+    "FB": [
+     "Montell Owens"
+    ],
+    "WR": [
+     "Jerrell Jackson",
+     "Allen Hurns",
+     "Taylor Gabriel"
+    ],
+    "TE": [
+     "Marcel Jensen",
+     "Gator Hoskins"
+    ],
+    "OL": [
+     "Charles Leno Jr.",
+     "Matt Feiler",
+     "Tyler Larsen",
+     "Mark Asper",
+     "Cornelius Lucas"
+    ]
+   }
+  },
+  {
+   "side": "defense",
+   "unit": "first defense, correction possession (Branch at Edge 1; Daryl Smith relaying)",
+   "until": {
+    "possessions": 1
+   },
+   "players": {
+    "DL": [
+     "Andre Branch",
+     "Sen'Derrick Marks",
+     "Roy Miller",
+     "Ryan Davis"
+    ],
+    "LB": [
+     "Daryl Smith",
+     "Paul Posluszny",
+     "Julian Stanford"
+    ],
+    "DB": [
+     "Aqib Talib",
+     "Mike Harris",
+     "Dwight Lowery",
+     "Bacarri Rambo",
+     "Jordan Poyer"
+    ]
+   }
+  },
+  {
+   "side": "defense",
+   "unit": "reserve defense A (Te'o-Nesheim, Donald, Mosley, Edebali; Moore, Telvin Smith, Christian Jones; Verner, Bouye, Prosinski, Trawick, Poyer nickel)",
+   "until": {
+    "quarter": 3
+   },
+   "players": {
+    "DL": [
+     "Daniel Te'o-Nesheim",
+     "Aaron Donald",
+     "C.J. Mosley",
+     "Kasim Edebali",
+     "C.J. Wilson",
+     "Jeremy Mincey"
+    ],
+    "LB": [
+     "Sio Moore",
+     "Telvin Smith",
+     "Christian Jones",
+     "Todd Davis"
+    ],
+    "DB": [
+     "Alterraun Verner",
+     "A.J. Bouye",
+     "Chris Prosinski",
+     "Brynden Trawick",
+     "Jordan Poyer",
+     "Malcolm Butler"
+    ]
+   }
+  },
+  {
+   "side": "defense",
+   "unit": "reserve defense B (Jeffcoat, Pendleton, Edwards, Long; Todd Davis, Christian Jones, Telvin Smith; Butler, Thomas, Phillips, Blake, Poyer nickel)",
+   "players": {
+    "DL": [
+     "Jackson Jeffcoat",
+     "Jeris Pendleton",
+     "Lavar Edwards",
+     "Jerome Long",
+     "D'Anthony Smith",
+     "C.J. Wilson",
+     "Aaron Donald",
+     "Kasim Edebali"
+    ],
+    "LB": [
+     "Todd Davis",
+     "Christian Jones",
+     "Telvin Smith",
+     "Sio Moore"
+    ],
+    "DB": [
+     "Malcolm Butler",
+     "Jemea Thomas",
+     "Adrian Phillips",
+     "Antwon Blake",
+     "Jordan Poyer",
+     "A.J. Bouye"
+    ]
+   }
+  },
+  {
+   "side": "special_teams",
+   "unit": "Kreiter snapping (opens the operation)",
+   "until": {
+    "quarter": 2
+   },
+   "players": {
+    "LS": [
+     "Casey Kreiter"
+    ]
+   }
+  },
+  {
+   "side": "special_teams",
+   "unit": "Cain snapping (the later block)",
+   "players": {
+    "LS": [
+     "Jeremy Cain"
+    ]
+   }
+  }
+ ],
+ "rotation_plan_note": "Kernel schema (runtime/rotation.py) of the plan above, frozen before any draw. Cousins's exit rule is two one-possession blocks with a 10-snap ceiling each, so the receiver and guard swap applies to series 2; the second-first-down rule is coaching guidance the schema does not carry, and a block ends only at a possession boundary, so a long first series still yields the second. Henne's two possessions are two blocks so the guards beside Linsley change; Wilson's starting point of two possessions and Bray's ceiling of three are the plan's numbers; Shaw's block has no 'until' and plays out the game. The first defense plays exactly one possession with Branch at Edge 1; the reserve defense is two blocks so the named young defenders are cycled, the kernel's default division ending group A with the third quarter; Mincey and C.J. Wilson are named behind the group A front so the slot promotes by depth if a reserve is removed. Kreiter's block ends with the second quarter by the kernel's default division; the plan gives no kick count. Owens is named at FB in every block because the kernel does not condition on the personnel call; Hawkins's return duties follow Westhoff's rotation, which the special-teams schema (K, P, LS) does not carry."
+}
