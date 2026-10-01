@@ -3,7 +3,9 @@
 roster as it stood for its preseason game against Jacksonville, reconciled to
 branch control. Game 1: Tampa Bay, August 8, 2014 (at Jacksonville). Game 2:
 Chicago, August 14, 2014 (Jacksonville at Chicago). Game 3: Detroit, August 22,
-2014 (Jacksonville at Detroit).
+2014 (Jacksonville at Detroit). Game 4: Atlanta, August 28, 2014 (at
+Jacksonville), the one game after the 75-man reduction, so its roster is the
+75 under contract on game day.
 
 Research tool only; the runtime never downloads anything. The real charts and
 rosters are not available as a machine feed (nflverse carries no preseason
@@ -437,7 +439,139 @@ DETROIT = {
     "cross_check_frozen": None,
 }
 
-CLUBS = [TAMPA_BAY, CHICAGO, DETROIT]
+# ---------------------------------------------------------------------------
+# Game 4: Atlanta Falcons, August 28, 2014, Atlanta at Jacksonville (EverBank
+# Field, 6 p.m. ET). The game after the first roster reduction: Atlanta's
+# roster is the 75 players under contract on August 28, after the 15 moves the
+# club announced Sunday, August 24 (its log dates them August 23; the league
+# deadline was Tuesday, August 26), not a 90.
+#
+# The club's third 2014 unofficial depth chart, released Monday, August 18,
+# 2014 (atlantafalcons.com "Falcons Release Third Preseason Depth Chart"),
+# as the club's chart page carried it on August 23 and 25 (The Falcoholic
+# "Falcons Depth Chart for Preseason Game 3 vs Titans", August 23, and
+# "Atlanta Falcons 75 Player Depth Chart", August 25, both read as search
+# extracts). No fourth chart was released before the Jacksonville game. The
+# chart lists the nickel defense as the base (club article, August 5): two
+# defensive-end columns, two tackle columns, two linebacker columns, two
+# cornerback columns and a nickel column. "Others" follow the third string.
+# Players on the chart but moved off the roster August 20 to 24 are
+# `departed`; the returner cells are the August 5 chart's (SI.com, August 6),
+# the only transcription that carries them.
+# ---------------------------------------------------------------------------
+ATLANTA = {
+    "team": "Atlanta Falcons",
+    "code": "ATL",
+    "game": "preseason-04",
+    "as_of": "2014-08-28",
+    "gate": "gated: usable for the August 28, 2014 preseason game and after. The chart was public August 18, 2014, the 75-man moves August 24, 2014 and the last practice report used August 25, 2014; no preseason score, statistic, participation or later transaction is an input.",
+    "chart": [
+        ("Offense", "QB", "QB", ["Matt Ryan", "T.J. Yates", "Sean Renfree", "Jeff Mathews"]),
+        ("Offense", "RB", "RB", ["Steven Jackson", "Jacquizz Rodgers", "Antone Smith", "Devonta Freeman", "Josh Vaughan", "Jerome Smith"]),
+        ("Offense", "FB", "FB", ["Patrick DiMarco", "Maurice Hagens"]),
+        ("Offense", "WR", "WR", ["Roddy White", "Harry Douglas", "Drew Davis", "Bernard Reedy", "Tramaine Thompson", "Julian Jones", "Jabin Sambrano", "Eric Weems"]),
+        ("Offense", "WR", "WR", ["Julio Jones", "Devin Hester", "Courtney Roby", "Geraldo Boldewijn", "Freddie Martino", "Jeremy Ebert"]),
+        ("Offense", "TE", "TE", ["Levine Toilolo", "Bear Pascoe", "Mickey Shuler", "Jacob Pedersen", "Brian Wozniak"]),
+        ("Offense", "LT", "T", ["Jake Matthews", "Terren Jones", "Pat McQuistan"]),
+        ("Offense", "LG", "G", ["Justin Blalock", "Mike Johnson", "Adam Replogle"]),
+        ("Offense", "C", "C", ["Joe Hawley", "Peter Konz", "James Stone"]),
+        ("Offense", "RG", "G", ["Jon Asamoah", "Harland Gunn", "Gabe Carimi"]),
+        ("Offense", "RT", "T", ["Lamar Holmes", "Gabe Carimi", "Ryan Schraeder"]),
+        ("Defense", "DE", "DE", ["Kroy Biermann", "Osi Umenyiora", "Stansly Maponga", "Jacques Smith", "Theo Agnew"]),
+        ("Defense", "DT", "DT", ["Tyson Jackson", "Ra'Shede Hageman", "Cliff Matthews", "Donte Rumph"]),
+        ("Defense", "DT", "DT", ["Paul Soliai", "Corey Peters", "Travian Robertson", "Nosa Eguae"]),
+        ("Defense", "DE", "DE", ["Jonathan Babineaux", "Jonathan Massaquoi", "Malliciah Goodman", "Tyler Starr", "Walker May"]),
+        ("Defense", "LB", "MLB", ["Paul Worrilow", "Tim Dobbins", "Pat Angerer", "Yawin Smallwood"]),
+        ("Defense", "LB", "OLB", ["Joplo Bartu", "Prince Shembo"]),
+        ("Defense", "CB", "CB", ["Desmond Trufant", "Ricardo Allen"]),
+        ("Defense", "CB", "CB", ["Robert Alford", "Javier Arenas", "Jordan Mabin"]),
+        ("Defense", "NB", "CB", ["Josh Wilson", "Robert McClain", "Javier Arenas", "Ricardo Allen"]),
+        ("Defense", "SS", "SS", ["William Moore", "Kemal Ishmael", "Kimario McFadden"]),
+        ("Defense", "FS", "FS", ["Dwight Lowery", "Dezmen Southward", "Sean Baker", "Tyrell Johnson"]),
+        ("Special Teams", "K", "K", ["Matt Bryant"]),
+        ("Special Teams", "P", "P", ["Matt Bosher"]),
+        ("Special Teams", "LS", "LS", ["Josh Harris"]),
+        ("Special Teams", "KR", None, ["Devin Hester", "Jacquizz Rodgers"]),
+        ("Special Teams", "PR", None, ["Devin Hester", "Robert McClain"]),
+    ],
+    # On the chart but not under contract to Atlanta on August 28, 2014:
+    # name -> reason. Davis and Motta count as reserve/physically-unable-to-
+    # perform placements of the 75-man reduction; Johnson and Spruill went to
+    # injured reserve the same day.
+    "departed": {
+        "Jabin Sambrano": "waived August 20, 2014 (club transaction log; ESPN lists August 21)",
+        "Jeff Mathews": "waived August 24, 2014 in the 75-man reduction (club announcement; the club's log dates the moves August 23)",
+        "Jerome Smith": "waived August 24, 2014 in the 75-man reduction",
+        "Drew Davis": "placed on reserve/physically-unable-to-perform August 24, 2014 in the 75-man reduction (on the training-camp PUP list since July 5)",
+        "Tramaine Thompson": "waived August 24, 2014 in the 75-man reduction",
+        "Julian Jones": "waived August 24, 2014 in the 75-man reduction",
+        "Brian Wozniak": "waived August 24, 2014 in the 75-man reduction",
+        "Mike Johnson": "placed on injured reserve August 24, 2014 (foot, August 23 game) in the 75-man reduction",
+        "Theo Agnew": "waived August 24, 2014 in the 75-man reduction",
+        "Walker May": "waived August 24, 2014 in the 75-man reduction",
+        "Tyrell Johnson": "released August 24, 2014 in the 75-man reduction (signed August 3)",
+    },
+    # Under contract on August 28, 2014 but on no available transcription of
+    # the chart: none. Every player under contract has a chart cell.
+    "unlisted": {},
+    # "Others" start after the third string in the columns that carry them.
+    "other_from": {"RB": 4, "WR": 4, "TE": 4, "FS": 4},
+    # Not playing in the August 28 game under reports dated by August 28. The
+    # club named no player before kickoff: Mike Smith said Monday, August 25
+    # that "a handful of guys that we know are not going to play" without
+    # naming them (atlantafalcons.com "Fast Takes From Falcons Practice: Aug.
+    # 25"). Southward is held out on the dated reports named in his note.
+    "held_out": {
+        "Dezmen Southward": "head injury making a special-teams tackle in the August 23 Tennessee game, treated in the locker room and replaced by Sean Baker (The Falcoholic injury report, August 24); on the sidelines at the Monday, August 25 practice (club practice report, August 25); no dated clearance before the game located; held out on those dated reports, not on a club statement",
+    },
+    # Transactions July 21 to August 29, 2014 (the club's own transaction page
+    # and ESPN's Atlanta transaction log, both read directly; the club's dated
+    # announcements of August 3, 18, 24 and 29, read directly; ProFootballTalk
+    # and the Atlanta Journal-Constitution of August 29, read directly).
+    # Recorded for the reconciliation list; the roster above already reflects
+    # them.
+    "transactions_key": "transactions_july_21_to_august_29",
+    "transactions": [
+        ("2014-07-21", "Signed LB Pat Angerer and WR Jeremy Ebert (club log; ESPN lists July 22)"),
+        ("2014-07-24", "Waived WR Darius Johnson (club log; ESPN lists July 25). ESPN also records WR Roddy White's four-year contract extension July 24"),
+        ("2014-07-25", "Signed WR Jabin Sambrano (club log; ESPN lists July 26)"),
+        ("2014-07-30", "DT Peria Jerry retired (club log; ESPN lists July 31); re-signed March 18, he was on no chart"),
+        ("2014-08-03", "Signed S Tyrell Johnson; waived FB Roosevelt Nix-Jones (club announcement, August 3; ESPN; the club's log does not carry the moves)"),
+        ("2014-08-08", "Signed LB Darin Drakeford; waived K Sergio Castillo (club log; ESPN lists August 9)"),
+        ("2014-08-18", "Placed T Sam Baker on injured reserve (right knee, August 16 Houston game); signed T Pat McQuistan (club announcement, August 18; on neither transaction log). The third unofficial depth chart was released the same day"),
+        ("2014-08-20", "Signed WR Eric Weems; waived WR Jabin Sambrano (club log; ESPN lists August 21)"),
+        ("2014-08-24", "Waived DE Theo Agnew, LB Brendan Daley, LB Darin Drakeford, S Devonta Glover-Wright, WR Julian Jones, QB Jeff Mathews, LB Walker May, RB Jerome Smith, WR Tramaine Thompson and TE Brian Wozniak; placed OL Mike Johnson and LB Marquis Spruill on injured reserve; placed WR Drew Davis and S Zeke Motta on reserve/physically-unable-to-perform; released S Tyrell Johnson. Announced Sunday, August 24 (club announcement; ESPN); the club's log dates the moves August 23. Roster at 75"),
+        ("2014-08-28", "The club's log dates the waiver of DE Nosa Eguae, FB Maurice Hagens, CB Jordan Mabin, WR Freddie Martino, S Kimario McFadden, TE Jacob Pedersen, OL Adam Replogle, DT Donte Rumph and LB Yawin Smallwood and the release of LB Pat Angerer, T Pat McQuistan and RB Josh Vaughan August 28; the club announced them Friday, August 29 (club announcement 'today announced'; ESPN, ProFootballTalk and the Atlanta Journal-Constitution, August 29, which records the club at 75 players after the game). After the game: not applied; all twelve are roster members at kickoff"),
+        ("2014-08-29", "Waived CB Ricardo Allen, S Sean Baker, WR Jeremy Ebert, G Harland Gunn, T Terren Jones, WR Bernard Reedy, DT Travian Robertson, TE Mickey Shuler and LB Jacques Smith; injury settlement with WR Geraldo Boldewijn (club log; ESPN lists August 30). After the game: not applied"),
+    ],
+    # Names the registry or nflverse spell differently from the chart.
+    "aliases": {},
+    # Reviewed identities for names nflverse shares with a namesake: the 2010
+    # Penn State tight end, not the 1978 Jets tight end.
+    "identities": {"Mickey Shuler": "00-0027809"},
+    "ids": {},
+    "no_jersey": set(),
+    "notes": [
+        "Next man up after the removal: Dezmen Southward at FS1 (Lowery), who is himself held out, so Sean Baker is the next available free safety",
+        "The chart lists the nickel defense as the base (club article, August 5, 2014): two defensive-end columns (Biermann's and Babineaux's), two tackle columns (Jackson's and Soliai's), two linebacker columns (Worrilow's, which carries the reserve inside linebackers, and Bartu's), two cornerback columns and a nickel column. Arenas and Allen hold a cornerback cell and a nickel cell each; their best cell ranks them. 'Others' (the fourth-string backs, receivers, tight ends and free safeties) are ranked in listed order",
+        "The returner cells are the August 5 chart's (Hester first at both, Rodgers and McClain second); no transcription of the August 18 chart carries the specialists beyond K, P and LS. Jersey numbers are stored only for players who reached a 2014 regular-season roster (Week 1 library or nflverse roster_2014); the camp-only players carry none, so their ties break by name",
+        "Nobody was announced out before kickoff: Mike Smith said August 25 that a handful of players would not play, without names. Southward is held out on the dated reports in his note, the one departure from the club-statement rule. Steven Jackson (hamstring, first week of camp) returned to practice August 25 and Jon Asamoah missed that practice as a precaution with no issue expected; both are available. Devonta Freeman (hamstring, August 6) has no dated report before the game saying he would not play and is available",
+    ],
+    "sources": {
+        "depth_chart": "Atlanta's third 2014 unofficial depth chart, released Monday, August 18, 2014 (atlantafalcons.com 'Falcons Release Third Preseason Depth Chart', read directly: Matthews LT1, Holmes RT1, McQuistan LT3), as the club's chart page carried it on August 23 and 25: thefalcoholic.com 'Falcons Depth Chart for Preseason Game 3 vs Titans' (August 23, 2014) and 'Atlanta Falcons 75 Player Depth Chart' (August 25, 2014), read as search-engine extracts because the site refused the session; the August 5 first chart (atlantafalcons.com 'Falcons Release First 2014 Depth Chart', read directly, and si.com 'Atlanta Falcons release depth chart: Devonta Freeman No. 4 RB', August 6, search extract) for the returner cells and the nickel-base labels; the August 12 second chart article (read directly) for the Spruill and Castillo removals. The chart document itself was not read (the club's chart page is gone and the Internet Archive did not answer)",
+        "roster_membership": "the chart's listed players plus the dated transaction log, read directly from atlantafalcons.com/team/transactions/2014 and espn.com's Atlanta 2014 transactions, with the club's dated announcements of August 3 (Johnson, Nix-Jones), August 18 (Baker, McQuistan), August 24 (the 75-man moves) and August 29 (the first wave of final cuts) read directly. Count check: 90 after the August 20 Weems-for-Sambrano exchange (89 under contract plus Spruill before his August 24 reserve placement counted toward the 90), 75 after the fifteen August 24 moves, 63 after the twelve August 29 moves (club announcement) and 53 on August 30. Membership cross-check against the NFL.com 2014 Atlanta roster page (read directly) and nflverse roster_2014",
+        "availability": "atlantafalcons.com 'Fast Takes From Falcons Practice: Aug. 25' (August 25, 2014, read directly: Jackson back at practice, Southward and Asamoah sidelined, Smith's unnamed handful); thefalcoholic.com 'NFL Preseason 2014: Falcons-Titans injury report' (August 24, 2014, search extract: Southward's head injury, Johnson's foot). No club list of players not playing was published before kickoff; only Southward is unavailable",
+        "co_listed_order": "chart string, then line slot LT-LG-C-RG-RT, then chart column, then jersey number, then name (the Week 1 rule); unlisted players rank below every listed player of their group",
+        "identity": "library/data/player_birth_dates.json, then nflverse players.csv (single 2014-active match by name; one reviewed identity by gsis id); jersey from the Week 1 library or nflverse roster_2014.csv; photographs from library/data/player_photos.json; page_url from the Week 1 library or the nflverse pfr id",
+        "branch_control": "career/2014/team/roster/roster.md matched by gsis id through the identity registry and the league database, as in the Week 1 build",
+        "draft_and_undrafted_pairing": "career/2014/league/personnel/draft_pairing.md (no Jacksonville selection pairs with an Atlanta selection) and career/2014/draft/udfa_signings.md (no undrafted signing or decline touches Atlanta)",
+        "trades_and_free_agency": "career/2014/trades/completed_trades/trades.md, career/2014/free_agency/signings.md, career/2014/free_agency/march_2014_replay_log.md, career/2014/league/personnel/fa_draws.md (no branch trade, signing or free-agent draw places a player with or takes one from Atlanta; Dwight Lowery's real March 2014 Atlanta contract does not occur because he is Jacksonville-controlled, as the Week 1 library already applied)",
+        "retirements": "career/2014/league/personnel/retirements.md (no Atlanta entry); Peria Jerry's real July 30, 2014 retirement precedes the chart and he is on no 2014 roster. Sean Weatherspoon (Achilles, June 10; injured reserve June 16) is on no chart",
+    },
+    "cross_check_frozen": None,
+}
+
+CLUBS = [TAMPA_BAY, CHICAGO, DETROIT, ATLANTA]
 
 
 def load_week1_bio():
