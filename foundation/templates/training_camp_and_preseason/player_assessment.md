@@ -32,7 +32,7 @@ Connect the player to the unit. What did his route spacing, block, coverage leve
 
 Compare the actual opportunities: teammates, opponent, menu, help, situation and workload. Distinguish a starter's short appearance, a reserve beside regulars, a mixed unit and a later group when participation is established. A narrow menu can establish a usable role without proving broader readiness. No targets, few snaps or an untested situation leave a question open; they do not establish poor play.
 
-Explain whether the game confirms, changes or leaves the camp judgment unresolved. An immediate observation may need later review before assigning a technical cause. State the useful next check and the responsible coach; a retest succeeds only when subsequent evidence says it did. Keep the [game report](preseason_game_report.md) focused on consequential players rather than forcing an identical entry for the entire roster.
+Explain whether the game confirms, changes or leaves the camp judgment unresolved. An immediate observation may need later review before assigning a technical cause. State the useful next check and the responsible coach; a retest succeeds only when subsequent evidence says it did. Keep the [game report](../preseason_output_template.md) focused on consequential players rather than forcing an identical entry for the entire roster.
 
 ## Evidence appropriate to the phase
 

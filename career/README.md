@@ -108,7 +108,7 @@ career/
     regular_season/
       README.md                 <- week index (date, kickoff, matchup, home/away)
       week_01_kansas_city_at_jacksonville/
-        output.md               <- season_output_template.md; a bye week uses the same slot with no game, per SS below
+        output.md               <- regular_season_output_template.md; a bye week uses the same slot with no game, per SS below
         call_sheet.json         <- Stone's frozen structured call sheet for the week; scripts/build_week_inputs.py requires it before the draw
       ...                       <- folders are named week_NN_<away>_at_<home>; Week 9 is week_09_bye
       week_17_jacksonville_at_indianapolis/

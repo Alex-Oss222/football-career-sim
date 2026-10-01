@@ -1,10 +1,10 @@
-# Consolidated preseason review template
+# Consolidated preseason review guide
 
-Use the [report instructions](README.md), the individual [game format](preseason_game_report.md) and the [assessment method](player_assessment.md). This is the reader-facing bulk preseason report, not a replacement for each game's output. Report only the games and practices reached before a required pause. An unfinished preseason remains unfinished.
+Use the complete [preseason output template](../preseason_output_template.md) and the [assessment method](player_assessment.md). This guide supplies the football substance for section 6 of the full bulk report. It does not replace the eight-section output, the game summaries and Reports to render in section 4, the box scores, media, coach status, personnel snapshot or closure. Report only the games and practices reached before a required pause. An unfinished preseason remains unfinished.
 
-## Report to render
+## Material for section 6
 
-# [Team] | Camp and preseason review | [Evidence-through date]
+[Use the full template's existing period header and evidence cutoff. Do not start a separate output package. Adapt the subheadings below beneath section 6 while retaining its What held up, What must be corrected and Next-period carry-forward fields.]
 
 [Lead with what the staff can now trust and the largest remaining football problem. Establish whether this is an interim review or the completed preseason.]
 

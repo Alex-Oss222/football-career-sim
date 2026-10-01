@@ -1,7 +1,7 @@
 """Gamebook layout for 2014-onward box scores, rendered from a closed-game receipt.
 
 This is the "Full stats for the game" block of the weekly game turn template
-(foundation/templates/season_output_template.md): scoring summary, team stats,
+(foundation/templates/regular_season_output_template.md): scoring summary, team stats,
 eleven individual tables per club, drive chart and snap counts. The 2013 box
 score keeps its own layout in scripts/render_box_score.py; nothing here changes
 a 2013 output.
