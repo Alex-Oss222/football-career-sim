@@ -35,4 +35,6 @@ Signing creates roster control and an evaluation opportunity only. It does not e
 
 The corrected controlled roster was **60** after the pre-draft trades and seven Jacksonville draft additions. These four contracts move the May 5 controlled roster to **64**. The old 75-person working count incorrectly carried expired 2012 contracts and omitted four pre-divergence reserve/future contracts.
 
-**Canonical references:** career/2013/ledger.md, Entry 7; career/2013/roster.md; state/04_Roster_and_Staff_Register.md.
+**Canonical references:** [2013 undrafted signings](udfa_signings.md); career/2013/roster.md; state/04_Roster_and_Staff_Register.md.
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - post-draft 2013 roster build", "original_close": "Commit closed \u2014 Canonical update - post-draft 2013 roster build \u2014 canonical through the post-draft signing wave before rookie minicamp", "sequence": 7, "through": "2013-05-02"}, "date": "2013-04-28", "date_end": "2013-05-02", "date_label": "After the April 2013 draft, before May 3 rookie minicamp", "id": "2013-04-28-post-draft-undrafted-rookie-signings", "status": "closed", "summary": "Jacksonville signed Brynden Trawick, A.J. Bouye, Adam Thielen and C.J. Anderson."} -->

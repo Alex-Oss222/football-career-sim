@@ -10,7 +10,7 @@ Stone is most comfortable when he has a football problem to work on: how to give
 
 His best teaching gives a player a clear job, a useful correction and another opportunity to perform it. His less effective teaching leaves the player with a short instruction while the week moves on. The interesting change entering 2014 is that players can now tell him exactly where that happened. He listens and can admit it. The follow-through still needs to become as dependable as the explanation. Those are interpretations of the recorded work, not invented private thoughts.
 
-**Latest closure:** the current fields follow [Entry 89 and current state](../../state/05_Current_Season_State.md) through February 28: Westhoff is hired, six futures contracts are signed, Monroe was franchise-tagged on February 18, the Combine has closed and the league cap and franchise values are public. The underlying human portrait and most demonstrated coaching evidence remain rooted in the completed 2013 season.
+**Assessment cutoff:** these fields reflect the [February 28 cap publication](../2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md) and the personnel decisions recorded by that date: Westhoff is hired, six futures contracts are signed, Monroe was franchise-tagged on February 18, the Combine has closed and the league cap and franchise values are public. The underlying human portrait and most demonstrated coaching evidence remain rooted in the completed 2013 season. Later events belong in [current state](../../state/05_Current_Season_State.md).
 
 **Reading the sheet:** biography and completed events come from branch records; statements about comfort or temperament are evidence-based interpretations; historical research supplies real context only. Unknown means the record does not establish the answer. Inactive game-week fields are marked accordingly because the club is in its offseason. Named links and the source section at the end identify the supporting records.
 
@@ -1040,29 +1040,29 @@ The interpretive January review and the earlier profile are secondary synthesis.
 | [Executed head-coach contract](../2013/offseason/head_coach_contract.md) | Jacksonville terms and negotiated role |
 | [Coaching staff and executed contracts](../2013/coaching_staff.md) | Current assistants, responsibilities and departures |
 | [Current roster](../2013/roster.md) | Controlled players, availability and decided roles |
-| [Current Season State](../../state/05_Current_Season_State.md) | February 28 checkpoint through Entry 89, open gates and current status |
+| [Current Season State](../../state/05_Current_Season_State.md) | February 28 checkpoint through [February 28 cap publication](../2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md), open gates and current status |
 | [Owner and GM review](../2013/season_review/owner_and_gm_review.md) | January 15 retention and existing program direction; later state supersedes dated/stale summary items |
 | [Kirk Cousins exit](../2013/exit_interviews/main_core/kirk_cousins.md) | Call confidence, film comparison and disputed interpretation |
 | [Adam Thielen exit](../2013/exit_interviews/main_core/adam_thielen.md) | Movable-role learning and lost developmental continuity |
 | [Cecil Shorts exit](../2013/exit_interviews/main_core/cecil_shorts.md) | Explanation, changed emphasis and receiver/QB work |
 | [Travis Kelce exit](../2013/exit_interviews/core/travis_kelce.md) | Attached-blocking issue, role and incomplete feedback |
 | [2013 OTA output](../2013/offseason/otas/output.md) | Actual spring teaching and limited defensive installation |
-| [2014 staff plan](../2014/early_offseason/staff_changes/staff_plan.md) | Search instructions and history; executed outcome belongs to the [assistant hiring record](../2014/early_offseason/staff_changes/hires.md) |
+| [2014 staff plan](../2014/01_Early_Offseason/staff_changes/staff_plan.md) | Search instructions and history; executed outcome belongs to the [assistant hiring record](../2014/01_Early_Offseason/staff_changes/hires.md) |
 | [Active offensive Iteration I](../playbook/alex_stone_2013_offensive_playbook_iteration_i.md) | Authored 2013-2015 offense; dated game usage remains separate |
 | [Active defensive Iteration I](../playbook/alex_stone_2013_defensive_playbook_iteration_i.md) | Authored 2013-2015 defense; current staff assignments are recorded separately |
 | [Initial coaching assessment and dated evidence map](alex_stone_2013_assessment_record.md) | Index to role/weekly evidence and interpretation limits |
-| [2014 calendar](../2014/calendar.md) | Information and activity gates; no invented current opponent |
-| [2014 player-development roster profiles](../2014/team/player_development/roster_profiles.md) | Existing individual needs and open follow-up |
-| [Film delivery log](../2014/team/film/delivery_log.md) | Distinction between prepared work and actual delivery |
-| [Stone's 2014 recommendations to Caldwell](../2014/early_offseason/stone_to_caldwell_2014_offseason_decisions.md) | Attributed advice only; not execution or reconciled accounting |
+| [2014 calendar](../2014/Calendar.md) | Information and activity gates; no invented current opponent |
+| [2014 player-development roster profiles](../2014/00_Team_Operations/Player_Development/roster_profiles.md) | Existing individual needs and open follow-up |
+| [Film delivery log](../2014/00_Team_Operations/Film/delivery_log.md) | Distinction between prepared work and actual delivery |
+| [Stone's 2014 recommendations to Caldwell](../2014/01_Early_Offseason/stone_to_caldwell_2014_offseason_decisions.md) | Attributed advice only; not execution or reconciled accounting |
 | [2013 statistical archive](../2013/stats), including [regular-season receipts](../2013/stats/game_receipts) and [postseason receipts](../2013/stats/postseason_receipts) | Generated regular/postseason results and record arithmetic |
-| [2014 cap worksheet](../2014/finances/salary_cap/cap_worksheet.md) | Unreconciled financial status; no certified room inferred |
+| [2014 cap worksheet](../2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md) | Unreconciled financial status; no certified room inferred |
 | [Onboarding and development framework](../2013/offseason/player_onboarding_and_development_framework.md) | Durable teaching method and family/support boundaries; read with the [readiness standard](../2013/offseason/the_prowl_player_readiness_standard.md) and [program identity](../2013/offseason/the_prowl_program_identity.md) |
 | [2013 calendar](../2013/calendar.md) | Dates and links to completed game outputs |
-| [Executed 2014 assistant hires](../2014/early_offseason/staff_changes/hires.md) | Westhoff appointment, terms, authority and completed interim handoff |
-| [2014 contract outcomes](../2014/free_agency/signings.md) | Six futures contracts and the two departures |
-| [Outside assistant requests and outcomes](../2014/early_offseason/staff_changes/requests_and_outcomes.md) | February exposure, Chicago interview and Minnesota lateral refusals |
-| [Pre-tag verifications](../2014/early_offseason/caldwell_pre_tag_verifications.md) | Current contract findings and unresolved accounting, with their stated source limits |
+| [Executed 2014 assistant hires](../2014/01_Early_Offseason/staff_changes/hires.md) | Westhoff appointment, terms, authority and completed interim handoff |
+| [2014 contract outcomes](../2014/00_Team_Operations/Free_Agency/signings.md) | Six futures contracts and the two departures |
+| [Outside assistant requests and outcomes](../2014/01_Early_Offseason/staff_changes/requests_and_outcomes.md) | February exposure, Chicago interview and Minnesota lateral refusals |
+| [Pre-tag verifications](../2014/01_Early_Offseason/caldwell_pre_tag_verifications.md) | Current contract findings and unresolved accounting, with their stated source limits |
 
 ### Historical verification
 

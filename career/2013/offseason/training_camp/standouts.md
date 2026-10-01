@@ -1,8 +1,8 @@
-<!-- sim-meta: {"event_entry": 29, "kind": "evidence_summary", "source": "career/2013/offseason/training_camp/output.md", "source_sha256": "cab0a6106cabdb76ff109133396f3b88f12fc503523511ffe5de138601eee994", "status": "COMPLETE", "through": "2013-09-04"} -->
+<!-- sim-meta: {"event_ref": "2013-09-04-camp-and-preseason-report-closed", "kind": "evidence_summary", "source": "career/2013/offseason/training_camp/output.md", "source_sha256": "de28d862c4e2c5d70e7d75fce749ef499f98591a3a848aa7084e717cfa1bab3d", "status": "COMPLETE", "through": "2013-09-04"} -->
 
 # Training-camp and preseason evidence summary
 
-**Status:** COMPLETE. **Evidence through:** September 4, 2013. **Source ledger entry:** 29.
+**Status:** COMPLETE. **Evidence through:** September 4, 2013. **Closing record:** [regular-season cap compliance](../current_cap_worksheet.md).
 
 | Player/unit | Evidence | Result |
 |---|---|---|

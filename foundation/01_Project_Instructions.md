@@ -3,7 +3,7 @@
 **Document status:** Stable governing instructions  
 **Version:** Rebuild draft 1.9
 **Supersedes:** Rebuild draft 1.8
-**Last Document 1 content-changing revision:** 2026-09-30: user clarifies that an annual NFL Player Sheet is a frozen end-of-season player evaluation, graded on position-specific traits against that season's historical NFL peer benchmarks; a real-world same-player season may appear only as a disclosed comparator after the simulation grade is fixed. Previous revision: 2026-09-30: user explicitly authorizes annual NFL Player Sheets with dated /10 personnel-summary grades and NFL standing, while keeping engine probabilities and hidden matchup conversion private. Previous revision: 2026-09-29, Entry 90: user clarifies that calling or delegating plays is part of the head-coach role; full in-game control needs no separate appointment. Previous history: 2026-09-19 - Entry 13 reconciles readiness pointers to the established career without advancing time. Previous revision: 2026-09-18 - defined the explicit PRE-HIRE SEARCH lifecycle, authorized `career/<year>/offseason/hiring_search.md` as the ex-ante decision ledger before full career initialization, reconciled that exception with Document 6, and updated response-format language for the three active templates.
+**Last Document 1 content-changing revision:** 2026-09-30: user clarifies that an annual NFL Player Sheet is a frozen end-of-season player evaluation, graded on position-specific traits against that season's historical NFL peer benchmarks; a real-world same-player season may appear only as a disclosed comparator after the simulation grade is fixed. Previous revision: 2026-09-30: user explicitly authorizes annual NFL Player Sheets with dated /10 personnel-summary grades and NFL standing, while keeping engine probabilities and hidden matchup conversion private. Previous revision: 2026-09-29, [original-contract reconciliation](../career/2014/00_Team_Operations/Finances/player_contracts/contracts.md): user clarifies that calling or delegating plays is part of the head-coach role; full in-game control needs no separate appointment. Previous history: 2026-09-19 - [May 23 continuity reconciliation](../docs/update_workflow.md) reconciles readiness pointers to the established career without advancing time. Previous revision: 2026-09-18 - defined the explicit PRE-HIRE SEARCH lifecycle, authorized `career/<year>/offseason/hiring_search.md` as the ex-ante decision ledger before full career initialization, reconciled that exception with Document 6, and updated response-format language for the three active templates.
 **Change rule:** Amend only by an explicit user instruction or a documented canon correction. Do not use this file for changing season state.
 
 ## 1. Purpose and honest limits
@@ -29,7 +29,7 @@ Do not generate a game, roster move, player decision, press conference, or other
 7. A reconciled starting roster, staff, schedule, availability report, and record when real people or teams are used.
 8. All blocking contradictions marked resolved or deliberately preserved as explicit fictional alterations.
 9. Document 4 marked `RECONCILED` or `RECONCILED WITH NOTED UNCERTAINTY`, with any uncertainty explicitly nonblocking and legal roster buckets, staff appointments, medical authority, and source dates complete.
-10. Document 6 containing an audited starting baseline and the latest closed canonical-update pointer. Pre-initialization entries may establish verified history, accepted migration canon, and corrections; they may not create a simulated event.
+10. Domain-owned event records governed by Document 6 containing an audited starting baseline and the latest closed canonical-update pointer. Pre-initialization entries may establish verified history, accepted migration canon, and corrections; they may not create a simulated event.
 
 Missing information remains a labeled placeholder. A placeholder is not permission to choose for the user.
 
@@ -177,7 +177,7 @@ Resolve football and career outcomes from established conditions and independent
 
 ### 9.4 Ex-ante recording
 
-Before resolving every consequential head-coach decision, record the situation, information, advice, uncertainty, user choice, plausible alternatives, and ex-ante assessment in Document 6. This is mandatory even when decision and result will appear in one response. Retrospective assessment is allowed only for explicitly migrated past events and must be labeled as reconstruction. Per Document 7 §3.2's resolution-packet procedure, this ex-ante record must be closed before the result is generated, not narrated first and reconciled afterward — an assessment written in the same pass as its own result is not actually ex-ante, regardless of word order on the page.
+Before resolving every consequential head-coach decision, record the situation, information, advice, uncertainty, user choice, plausible alternatives and ex-ante assessment at the actual decision owner under Document 6. This is mandatory even when decision and result will appear in one response. Retrospective assessment is allowed only for explicitly migrated past events and must be labeled as reconstruction. Per Document 7 §3.2's resolution-packet procedure, this ex-ante record must be closed before the result is generated, not narrated first and reconciled afterward — an assessment written in the same pass as its own result is not actually ex-ante, regardless of word order on the page.
 
 **PRE-HIRE SEARCH exception.** Before full career initialization, Document 6 may not contain simulated events. Therefore the hiring search uses `career/<year>/offseason/hiring_search.md` as its authorized ex-ante decision ledger. Criteria freezes, user instructions relied on, organization-side developments, offers, and unresolved user decisions are closed there before resolution. When a hire is accepted, the initialization build imports a concise, audited search closure into the first Document 6 baseline; it does not retroactively rewrite the pre-hire ledger.
 
@@ -269,33 +269,24 @@ Each field has one controlling home. Summaries elsewhere are derived and never o
 | Document 2 | Mode, divergence boundary, game and career/off-field detail settings, applicable rules, calendar, competition structure, era, and source provenance |
 | Document 3 | Head-coach canon and contract, durable organizational structure, audience-specific career reputation, and the sole final-authority map |
 | Document 4 | Latest coach-known player and non-protagonist staff status; roster membership; roles; packages; availability; workload; person-specific staff relationships; current evaluations; player/non-protagonist-staff commitments; and current detailed financial, eligibility, or aid reconciliation |
-| Document 6 | Dated events, corrections, game events, results, and cumulative statistics |
+| Domain event owners under Document 6 | Dated events and corrections in their actual transaction, training, medical, staff and game files; statistics in canonical receipts and generated views |
 | Document 5 | A derived current snapshot, exact source-version manifest, global package-checkpoint pointer, and current non-person logistics where no detailed register exists; it owns no competing player, staff, authority, rule, event, or statistical field |
 
 The audit and migration report is not canonical and must never be loaded as a runtime instruction or handoff source. Once mode is locked, unchosen candidates and actual-future comparators are excluded from the active runtime edition of Document 2.
 
 ### 13.2 Closed canonical updates
 
-Stage a complete candidate bundle outside the active canonical copies. Give the update a plain-language label consisting of its exact effective date/time (or live-game period/clock) and event description. Draft granular events only in the candidate Document 6 copy until rules, authority, chronology, roster legality, information boundaries, and game invariants have been validated.
+Follow Document 6 Section 8's atomic update procedure at the actual event owners. A completed result is written once. Stage the source event and all affected current views, validate them together, then promote the complete bundle. Close a consequential user decision before resolving its outcome. Document 5 must name the exact effective versions of Documents 1-4 and the latest closed source checkpoint; an unchanged Document 4 legitimately keeps its older content-changing pointer.
 
-After a response that advances state, close one update—or two ordered updates when a consequential decision requires a decision-only checkpoint before its outcome—using this order for each:
+The annual Record.md is generated one-line navigation. It is not an event source or a second place to narrate transactions, practices or games. Calendars hold scheduled dates and deadlines. Technical releases remain technical records and do not become football events on an unchanged simulation date.
 
-1. In the candidate Document 6 copy, record the user's decision exactly, any mandatory ex-ante decision entry, event results, and necessary correction/supersession.
-2. If the user changes a stable project instruction, prepare a candidate Document 1 revision. If the event changes mode, league, team, rules, calendar, head-coach contract, reporting, authority, or senior structure, prepare and reconcile a candidate Document 2 and/or Document 3 version.
-3. If owned content changes, prepare the affected person, roster, medical-communication, financial-reconciliation, package, and staff changes in a candidate Document 4 version; otherwise retain its current content version.
-4. Recompute a full candidate Document 5 snapshot from those source records.
-5. Run the applicable invariants and audit triggers against the whole candidate bundle. Document 5 must name the exact effective versions of Documents 1–4. Append the close line and register row to candidate Document 6, then promote Document 6, the replacement Document 5, and every changed Document 1–4 version as one logical commit. The new label becomes the global package checkpoint in Documents 5 and 6. A changed Document 1–4 records it as that file's content-changing update; an unchanged file legitimately retains its older content-changing pointer.
-6. Present a compact continuity update containing only time advanced, user decisions, important events, roster/availability changes, staff/organizational changes, record/standings changes, current focus, pending decisions, next event, and any canon correction.
+An interrupted or inconsistent candidate has no canonical result. Resume from the preceding closed bundle, preserving the user's exact choice without inventing implementation. Private state remains outside the public repository; changing a snapshot does not authorize advancing private state before the changed public snapshot is merged.
 
-Staged material is never treated as part of the active user-facing canonical set. If work is interrupted before promotion of the closed candidate bundle, the preceding global package checkpoint recorded by Documents 5 and 6 remains authoritative together with the exact Document 1–4 versions named there. A mismatch between Document 5's checkpoint/version manifest and Document 6's latest closed register row invalidates the candidate close, pauses play, and requires an explicit Document 6 correction.
-
-End every simulation response with that compact update. If no state changed, say so briefly rather than manufacturing an event or rewriting the registers.
-
-Do not append an indefinitely growing summary to Document 5.
+After actual simulation progression, present the compact football continuity update: time advanced, consequential decisions, material personnel/results, current focus and next event. A research or presentation-only turn does not manufacture an event.
 
 ## 14. Contradictions and corrections
 
-Never silently repair or blend a conflict. Stop before the conflict affects play, identify the incompatible records, apply the following authority order, record the correction and superseded text in Document 6 before changing derived fields, update all affected documents, and then continue. Document 6 is the sole historical correction ledger; correction tables in Documents 2–4 are generated indexes pointing to it.
+Never silently repair or blend a conflict. Stop before the conflict affects play, identify the incompatible records, apply the following authority order, record the correction and superseded text in Document 6 before changing derived fields, update all affected documents, and then continue. Each affected event owner retains its dated correction and superseded evidence; correction tables in Documents 2-4 are generated indexes pointing to that source.
 
 1. Explicit mode and divergence point.
 2. User's explicit canon choices and corrections.
@@ -326,6 +317,10 @@ The priority order is: user control; applicable rules; canon; physical, temporal
 
 ## 17. Readiness status
 
-This document is the governing operating specification. The established career and its latest closed checkpoint are owned by [Document 5](../state/05_Current_Season_State.md) and [the season ledger](../career/2013/ledger.md), not by an archived rebuild checklist. Existing closed events remain canon. [Game readiness](../state/game_readiness.md) separately tracks Document 7 requirements; an administrative reconciliation does not authorize game resolution or create missing historical events.
+This document is the governing operating specification. The established career and its latest closed checkpoint are owned by [Document 5](../state/05_Current_Season_State.md) and [2013 dated record](../career/2013/record.md), not by an archived rebuild checklist. Existing closed events remain canon. [Game readiness](../state/game_readiness.md) separately tracks Document 7 requirements; an administrative reconciliation does not authorize game resolution or create missing historical events.
 
 Latest user clarification (September 30, 2026): create working player cards from 2014 onward immediately for the current controlled roster. Retain the starting personnel assessment during the season; review it at season close. Update separate regular-season and playoff statistics after each closed game, preserve previous years and append each new year. Use exact theoretical staff judgments for grades, identifying judgment and evidence limits separately. Display year-based labels such as 2013 regular season and 2013 playoffs; omit the redundant simulation-context label from player-facing prose. Preserve proper names and technical identifiers.
+
+### Assessment cadence clarified October 1, 2026
+
+There are two full player assessment checkpoints: the opening assessment and a separate final assessment after the season. Preserve the opening judgment as the baseline, append dated evidence during spring, camp and the playing season, and update actual statistics after games. The final assessment compares the completed work with the opening view; it does not overwrite it. Reports still assess the actual work at every phase without generating another full annual card. Position-battle cards compare actual candidates for a specific preseason job under the existing role authority, and exist only when a documented competition exists.

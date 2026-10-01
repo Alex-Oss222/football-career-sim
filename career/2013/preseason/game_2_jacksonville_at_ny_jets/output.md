@@ -20,3 +20,5 @@ Brewster identified the protection assignment but lost leverage on the one sack;
 - Romeo Crennel called the defense; the result supplied alignment, rush-lane, fit, coverage and tackling evidence without transferring defensive calling to Stone.
 - Alan Lowry controlled special teams. Coverage credit required an observed lane, substitution/communication and pursuit responsibility rather than mere participation.
 - No regular-season record or standings changed.
+
+<!-- event-record: {"date": "2013-08-17", "id": "2013-08-17-preseason-game-2-closed", "status": "closed", "summary": "Jacksonville lost 24-17 to the Jets; Pasztor entered a medical hold."} -->

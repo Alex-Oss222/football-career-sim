@@ -468,6 +468,6 @@ When mandatory minicamp is actually run:
 - write the actual event to `output.md`;
 - use `standouts.md` for evidence-based standouts only;
 - update roster/register/current-state fields only when facts actually change;
-- append the phase closure to the season ledger;
+- record the phase closure in this phase’s output and regenerate the season’s dated record;
 - keep current-state updates atomic;
 - preserve this plan unless the user changes the plan itself.

@@ -1,19 +1,21 @@
 # 2013 exit interviews
 
 **Function:** the record of Stone's end-of-season exit interviews with every Jacksonville player: 53 on the active roster and 8 on the practice squad.
-**Dates:** Monday January 13 and Tuesday January 14, 2014, at the stadium facility. Jacksonville's season ended on January 11 (ledger Entry 64); the season review with Khan and Caldwell followed on January 15 (Entry 74).
-**Recorded:** September 28, 2026 (ledger Entry 76), retroactively at the branch date of February 2, 2014.
+**Dates:** Monday January 13 and Tuesday January 14, 2014, at the stadium facility. Jacksonville's season ended on January 11 ([Tennessee Divisional report](../postseason/week_19_jacksonville_at_tennessee/output.md)); the season review with Khan and Caldwell followed on January 15 ([January 15 ownership review](../season_review/owner_and_gm_review.md)).
+**Recorded:** September 28, 2026 ([2013 player exit interviews](README.md)), retroactively at the branch date of February 2, 2014.
 **User's instructions:** each interview is an honest review with no promises. The main core get a full interview with conversation. The core get a structured, in-depth, detailed report. Everyone else gets a summary.
 
 **Looking for Alex Stone's own exit interview with the press?** Read the [January 15 press exit interview](../season_review/stone_2013_review_and_exit_interview.md#alex-stone-press-exit-interview). This folder records his meetings with the players.
 
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - February 2, 2014 - 2013 exit interviews recorded (January 13-14)", "sequence": 76, "through": "2014-02-02"}, "date": "2014-01-13", "date_end": "2014-01-14", "id": "2014-01-13-player-exit-interviews", "status": "closed", "summary": "The staff held exit interviews for all 53 active-roster and eight practice-squad players."} -->
+
 ## How the interviews were run
 
-- **Evidence.** Each file cites only the branch record: phase outputs, weekly outputs and call sheets, game receipts, the roster and ledger, and pre-2013 public facts. No real 2013 or later outcome is used. No numeric rating appears. Where the 2013 engine made a statistic unreliable, the file says so and does not use it. In 2013 a sack allowed was charged to a random dressed lineman, returners were drawn kick by kick, and no coverage tackles were kept (`runtime/defect_register.md`; kernel 2014.3 fixes the credit rules from 2014).
+- **Evidence.** Each file cites only the branch record: phase outputs, weekly outputs and call sheets, game receipts, the roster and dated event records, and pre-2013 public facts. No real 2013 or later outcome is used. No numeric rating appears. Where the 2013 engine made a statistic unreliable, the file says so and does not use it. In 2013 a sack allowed was charged to a random dressed lineman, returners were drawn kick by kick, and no coverage tackles were kept (`runtime/defect_register.md`; kernel 2014.3 fixes the credit rules from 2014).
 - **No promises.** Stone promised no job, role, contract or roster spot. Contract, tag, tender and roster decisions are Caldwell's (Document 3), and Stone said so where a player asked. The Good, Better, Best labels are teaching states, not ratings.
 - **Offseason rules.** Anything set for the spring is voluntary until the program allows it. The earliest start is April 21, 2014 for a returning head coach, with Phase One and Two limits (`career/2013/offseason/the_prowl_player_readiness_standard.md`). Private matters raised by players are not personnel evidence.
 - **Verification.** Every file was checked by a separate skeptical pass against the record. The passes removed manufactured flaws, unsupported motives and hints about the draft or contracts, and corrected misdated quotations.
-- **The coaching carousel.** Alan Lowry, the special teams coordinator, left on January 12 to become Atlanta's head coach, and Frank Bush interviewed with Indianapolis on January 14 (ledger Entry 75). The records reflect both:
+- **The coaching carousel.** Alan Lowry, the special teams coordinator, left on January 12 to become Atlanta's head coach, and Frank Bush interviewed with Indianapolis on January 14 ([January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md)). The records reflect both:
   - Lowry attends no meeting, and his follow-ups belong to the special teams coordinator, with Stone covering until the job is filled;
   - Bush attends the Monday linebacker meetings, but not Tuesday's.
 
@@ -23,7 +25,7 @@
 
 | Player | Coaches with Stone | Record |
 |---|---|---|
-| Adam Thielen, WR | Darryl Drake (wide receivers) (Lowry had left, Entry 75) | [adam_thielen.md](main_core/adam_thielen.md) |
+| Adam Thielen, WR | Darryl Drake (wide receivers) (Lowry had left, [January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md)) | [adam_thielen.md](main_core/adam_thielen.md) |
 | Brent Grimes, CB | Tony Oden (defensive backs); Romeo Crennel (defensive coordinator) | [brent_grimes.md](main_core/brent_grimes.md) |
 | Cecil Shorts, WR | Darryl Drake (wide receivers); Mike Tice (offensive coordinator) | [cecil_shorts.md](main_core/cecil_shorts.md) |
 | Chad Henne, QB | Jeremy Bates (quarterbacks); Mike Tice (offensive coordinator) | [chad_henne.md](main_core/chad_henne.md) |
@@ -47,7 +49,7 @@
 | Austin Pasztor, G | George Yarno (offensive line) | [austin_pasztor.md](core/austin_pasztor.md) |
 | Bacarri Rambo, S | Tony Oden (defensive backs) | [bacarri_rambo.md](core/bacarri_rambo.md) |
 | Brad Meester, C | George Yarno (offensive line) | [brad_meester.md](core/brad_meester.md) |
-| Bryan Anger, P | Stone only (Lowry had left, Entry 75) | [bryan_anger.md](core/bryan_anger.md) |
+| Bryan Anger, P | Stone only (Lowry had left, [January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md)) | [bryan_anger.md](core/bryan_anger.md) |
 | C.J. Anderson, RB | Tim Spencer (running backs) | [c_j_anderson.md](core/c_j_anderson.md) |
 | C.J. Wilson, DE | Anthony Pleasant (defensive line) | [c_j_wilson.md](core/c_j_wilson.md) |
 | Cameron Bradfield, OT | George Yarno (offensive line) | [cameron_bradfield.md](core/cameron_bradfield.md) |
@@ -56,7 +58,7 @@
 | Jeremy Mincey, DE | Anthony Pleasant (defensive line) | [jeremy_mincey.md](core/jeremy_mincey.md) |
 | Jonathan Grimes, RB | Tim Spencer (running backs) | [jonathan_grimes.md](core/jonathan_grimes.md) |
 | Jordan Poyer, CB | Tony Oden (defensive backs) | [jordan_poyer.md](core/jordan_poyer.md) |
-| Josh Scobee, K | Stone only (Lowry had left, Entry 75) | [josh_scobee.md](core/josh_scobee.md) |
+| Josh Scobee, K | Stone only (Lowry had left, [January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md)) | [josh_scobee.md](core/josh_scobee.md) |
 | Mike Brewster, C | George Yarno (offensive line) | [mike_brewster.md](core/mike_brewster.md) |
 | Mike Harris, CB | Tony Oden (defensive backs) | [mike_harris.md](core/mike_harris.md) |
 | Montell Owens, FB | Tim Spencer (running backs) | [montell_owens.md](core/montell_owens.md) |

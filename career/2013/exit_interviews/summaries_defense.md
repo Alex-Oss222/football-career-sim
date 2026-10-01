@@ -42,7 +42,7 @@ Plan: voluntary strength work; Pleasant's teaching waits for the offseason progr
 
 Follow-ups: Stone and Crennel to explain Week 10; Pasztor's injury-record follow-up covers him. User decision: Stone's football evaluation of Mosley for Caldwell.
 
-Evidence: career/2013/roster.md:105; career/2014/finances/player_contracts/contract_status.md:94; career/2013/stats/team_player_stats.md:67; career/2013/preseason/game_4_jacksonville_at_atlanta/output.md:15; career/2013/offseason/training_camp/standouts.md:18; career/2013/ledger.md:1048, 1069, 1071; career/2013/regular_season/week_09_bye/output.md:44; career/2013/regular_season/week_10_jacksonville_at_tennessee/output.md:41; career/2013/regular_season/week_11_arizona_at_jacksonville/output.md:37; career/2013/regular_season/week_16_tennessee_at_jacksonville/output.md:66, 336; career/2013/postseason/week_19_jacksonville_at_tennessee/output.md:163; career/2013/exit_interviews/core/austin_pasztor.md:60.
+Evidence: career/2013/roster.md:105; career/2014/finances/player_contracts/contract_status.md:94; career/2013/stats/team_player_stats.md:67; career/2013/preseason/game_4_jacksonville_at_atlanta/output.md:15; career/2013/offseason/training_camp/standouts.md:18; [Pasztor and Mosley medical-record correction](../medical_history.md); career/2013/regular_season/week_09_bye/output.md:44; career/2013/regular_season/week_10_jacksonville_at_tennessee/output.md:41; career/2013/regular_season/week_11_arizona_at_jacksonville/output.md:37; career/2013/regular_season/week_16_tennessee_at_jacksonville/output.md:66, 336; career/2013/postseason/week_19_jacksonville_at_tennessee/output.md:163; career/2013/exit_interviews/core/austin_pasztor.md:60.
 
 ### Jeris Pendleton, DT
 
@@ -60,7 +60,7 @@ Evidence: career/2013/roster.md:106; career/2014/finances/player_contracts/contr
 
 ### Julian Stanford, LB
 
-Present: Stone. Frank Bush was at his Indianapolis interview that day (ledger Entry 75). Linebacker depth; age 23; under contract, final year 2014; available, no communicated restriction. He dressed all 16 games and both playoff games: 24 tackles (15 solo, 9 assisted) and 3 passes defended in the regular season; 9 tackles (7 solo, 2 assisted) in the postseason, including 6 solo in the Divisional. With Posluszny out he was next behind Smith and Allen in Week 4 and "the first base reserve" from Week 14; he had 4 tackles against Buffalo and 5 against Tennessee in Week 16.
+Present: Stone. Frank Bush was at his Indianapolis interview that day ([January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md)). Linebacker depth; age 23; under contract, final year 2014; available, no communicated restriction. He dressed all 16 games and both playoff games: 24 tackles (15 solo, 9 assisted) and 3 passes defended in the regular season; 9 tackles (7 solo, 2 assisted) in the postseason, including 6 solo in the Divisional. With Posluszny out he was next behind Smith and Allen in Week 4 and "the first base reserve" from Week 14; he had 4 tackles against Buffalo and 5 against Tennessee in Week 16.
 
 Stone's message: Week 14 asked the linebackers to play their own jobs ("Don't replace Paul. Play your job."). Tackle totals show where the ball went, not whether each fit was right, and no fit-by-fit review exists yet; Bush builds one before anything is called a strength or a flaw.
 
@@ -70,7 +70,7 @@ Plan: voluntary. Stone offers a cutup of his Weeks 14 to 19 snaps, to be prepare
 
 Follow-ups: Bush to review his fits and communication from Week 14 on and give him the result. User decision: whether his spring evaluation includes base linebacker work.
 
-Evidence: career/2013/roster.md:116; career/2014/finances/player_contracts/contract_status.md:98; career/2013/stats/team_player_stats.md:81; career/2013/regular_season/week_04_indianapolis_at_jacksonville/output.md:31; career/2013/regular_season/week_14_houston_at_jacksonville/output.md:29; career/2013/regular_season/week_15_buffalo_at_jacksonville/output.md:35, 345; career/2013/regular_season/week_16_tennessee_at_jacksonville/output.md:337; career/2013/postseason/week_19_jacksonville_at_tennessee/output.md:155; state/04_Roster_and_Staff_Register.md:227; career/2013/ledger.md:2148 (Entry 75); career/2014/early_offseason/staff_changes/requests_and_outcomes.md:58.
+Evidence: career/2013/roster.md:116; career/2014/finances/player_contracts/contract_status.md:98; career/2013/stats/team_player_stats.md:81; career/2013/regular_season/week_04_indianapolis_at_jacksonville/output.md:31; career/2013/regular_season/week_14_houston_at_jacksonville/output.md:29; career/2013/regular_season/week_15_buffalo_at_jacksonville/output.md:35, 345; career/2013/regular_season/week_16_tennessee_at_jacksonville/output.md:337; career/2013/postseason/week_19_jacksonville_at_tennessee/output.md:155; state/04_Roster_and_Staff_Register.md:227; [January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md); career/2014/early_offseason/staff_changes/requests_and_outcomes.md:58.
 
 ### A.J. Bouye, CB
 
@@ -112,7 +112,7 @@ Plan: voluntary. Oden offers his camp safety cutups.
 
 Follow-ups: Oden to give him a written safety evaluation; special teams (Stone until the coordinator job is filled) to give him a coverage-unit evaluation. User decision: whether his spring evaluation includes safety rotation work.
 
-Evidence: career/2013/roster.md:134; career/2014/finances/player_contracts/contract_status.md:101; career/2013/stats/team_player_stats.md:96, 127; career/2013/offseason/training_camp/output.md:33, 77; career/2013/offseason/training_camp/standouts.md:15; career/2013/preseason/game_1_miami_at_jacksonville/output.md:11; career/2013/regular_season/week_17_jacksonville_at_indianapolis/output.md:64; runtime/defect_register.md:12; career/2013/ledger.md:2148 (Entry 75, special teams coordinator vacant from January 12, 2014).
+Evidence: career/2013/roster.md:134; career/2014/finances/player_contracts/contract_status.md:101; career/2013/stats/team_player_stats.md:96, 127; career/2013/offseason/training_camp/output.md:33, 77; career/2013/offseason/training_camp/standouts.md:15; career/2013/preseason/game_1_miami_at_jacksonville/output.md:11; career/2013/regular_season/week_17_jacksonville_at_indianapolis/output.md:64; runtime/defect_register.md:12; [January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md) ([January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md), special teams coordinator vacant from January 12, 2014).
 
 ### Brynden Trawick, S
 
@@ -126,7 +126,7 @@ Plan: voluntary. Oden's transition work begins when football instruction is perm
 
 Follow-ups: Special teams (Stone until the coordinator job is filled) to review his 2013 coverage film with him; Oden to put transition technique in his individual plan. Teaching note: the 2013 regular-season record kept no individual coverage-unit evidence.
 
-Evidence: career/2013/roster.md:136; career/2014/finances/player_contracts/contract_status.md:59; career/2013/stats/team_player_stats.md:95, 131; career/2013/offseason/rookie_minicamp/output.md:47; career/2013/offseason/otas/output.md:141; career/2013/offseason/mandatory_minicamp/standouts.md:18; career/2013/offseason/training_camp/output.md:35; career/2013/regular_season/week_08_san_francisco_at_jacksonville/output.md:181; runtime/defect_register.md:12; career/2013/ledger.md:2148 (Entry 75, special teams coordinator vacant from January 12, 2014).
+Evidence: career/2013/roster.md:136; career/2014/finances/player_contracts/contract_status.md:59; career/2013/stats/team_player_stats.md:95, 131; career/2013/offseason/rookie_minicamp/output.md:47; career/2013/offseason/otas/output.md:141; career/2013/offseason/mandatory_minicamp/standouts.md:18; career/2013/offseason/training_camp/output.md:35; career/2013/regular_season/week_08_san_francisco_at_jacksonville/output.md:181; runtime/defect_register.md:12; [January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md) ([January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md), special teams coordinator vacant from January 12, 2014).
 
 ### Jeremy Cain, LS
 
@@ -140,4 +140,4 @@ Plan: voluntary. Timing work with Scobee and Anger, subject to his contract stat
 
 Follow-ups: Caldwell's office to confirm his contract status; special teams (Stone until the coordinator job is filled) to include the snap in the kick-by-kick review and go through it with him. User decision: Stone's football evaluation of Cain for Caldwell.
 
-Evidence: career/2013/roster.md:144; career/2014/finances/player_contracts/contract_status.md:37, 112; career/2013/stats/team_player_stats.md:115; career/2013/regular_season/week_01_kansas_city_at_jacksonville/output.md:328; career/2013/regular_season/week_08_san_francisco_at_jacksonville/output.md:369; career/2013/offseason/otas/output.md:198; career/2013/offseason/training_camp/output.md:35; career/2013/exit_interviews/core/josh_scobee.md:37, 70, 78; runtime/defect_register.md:13; career/2013/ledger.md:2148 (Entry 75); career/2014/early_offseason/staff_changes/requests_and_outcomes.md:53, 62.
+Evidence: career/2013/roster.md:144; career/2014/finances/player_contracts/contract_status.md:37, 112; career/2013/stats/team_player_stats.md:115; career/2013/regular_season/week_01_kansas_city_at_jacksonville/output.md:328; career/2013/regular_season/week_08_san_francisco_at_jacksonville/output.md:369; career/2013/offseason/otas/output.md:198; career/2013/offseason/training_camp/output.md:35; career/2013/exit_interviews/core/josh_scobee.md:37, 70, 78; runtime/defect_register.md:13; [January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md); career/2014/early_offseason/staff_changes/requests_and_outcomes.md:53, 62.

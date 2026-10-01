@@ -1,101 +1,100 @@
 # Keeping the career records current
 
-The current checkpoint is owned by [Document 5](../state/05_Current_Season_State.md) and the latest closed [season-ledger entry](../career/2014/ledger.md). The [repository map](repository_map.json) records paths and dependencies, not a second set of football facts.
+The actual event owns its dated facts. [Document 5](../state/05_Current_Season_State.md) owns the current checkpoint, and the [repository map](repository_map.json) names current paths and dependencies. [Document 6](../foundation/06_Event_Records_and_Handoff.md) governs event records and handoffs. `Record.md` is a generated one-line index of those owners, not another narrative or a place to resolve an event.
 
-Write current views in ordinary football language. Use descriptive links and a named source section instead of repeating citation codes after each paragraph. Keep ledger, receipt and machine identifiers where they connect actual records; a reader should not need to decode them to understand a player, coach or decision.
+Write names, dates and football findings in ordinary language. Descriptive event metadata and compatibility aliases connect evidence internally; readers should not have to decode entry numbers. Software releases and migrations belong in their technical owners and do not appear as football events.
 
-## Which files change together
+## Write once, update the affected views
 
-From 2014 onward, closed-game statbook rendering also refreshes the [working player cards](../career/2014/team/player_cards/README.md). Only the bottom yearly statistics change; starting grades and earlier-year rows remain intact. Keep regular-season and playoff totals separate. Add a dated card from the [template](../career/2014/team/player_cards/TEMPLATE.md) when a player joins the controlled roster; retain departing players' cards as history. Review personnel assessments at season close.
-
-| Event | First record | Dependent views to inspect and update when affected |
+| Completed event | Authoritative record | Views to update when their facts change |
 |---|---|---|
-| Practice or camp work | Phase `output.md`, then ledger | Phase `standouts.md`; roster/register availability and role evidence; working depth chart and its JSON copy when availability or a role changes; current state; calendar status; camp battles/decisions if a decision occurred |
-| Signing, release, trade or drafted contract | Applicable signing/trade/draftee result, then ledger | Roster; contract status register, contract table and cap worksheet; [twelve-year financial tracker](../career/finances/README.md) and all affected future years; working depth chart and its JSON copy; pick ownership; 2014 progression cohort when the active offseason is 2014; Documents 4 and 5 |
-| Outside staff interview request, permission, interview, offer or refusal | Applicable dated request/outcome record and ledger; preserve frozen carousel artifacts | Current season's staff timeline and overview; calendar and Document 5 when their pending decisions change; staff employment and payroll change only if an actual event changes them |
-| Staff appointment, departure or delegation | Staff hiring/departure record and ledger | Current coaching staff and contract totals; Document 4; Document 3 if authority/delegation or current-incumbent pointers change; Document 5; current season's staff timeline, overview, hiring record and calendar |
-| Final regular-season game | Game output and ledger | Full public game receipt for Jacksonville (player stats + snap ledger + named-call stats) and a `compact_stats` receipt for each background game; background roundup `career/YEAR/league_results/week_NN.md`; the week's league awards (`scripts/league_awards.py week N --season YEAR --close`, plus the month's when due) in `career/YEAR/awards/`; generated box score in the week's output; regenerated statbook and standings; read `stats/calibration_audit.md` (investigate OUTSIDE rows, never rerun); the week's frozen `call_sheet.json`, committed as frozen; `career/YEAR/depth_chart.json` (order and inactives) when Stone changes either; medical/availability; Documents 4 and 5; calendar |
-| Preseason game | Preseason output and ledger | Same affected personnel/statistical views; regular-season standings stay unchanged |
-| Bye or administrative correction | Applicable note and ledger | Only facts actually changed; no phantom game, practice, injury or roster move |
-| Foundation correction | Ledger correction staged first | Named foundation document; source-version manifest; affected current views and readiness |
+| Practice or camp work | The phase's `training_report.md`, including its assessment | Dated player updates, an actual position-battle card, availability, current state and any changed role or medical instruction |
+| Signing, release, tender or trade | The actual contract or transaction record | Roster, contract register, cap and future obligations, depth chart, pick ownership, player development cohort and Documents 4 and 5 |
+| Draft selection or rookie contract | Drafted or undrafted result record | Player control, contracts, finances, pick ownership, working player record, development cohort and current state |
+| Outside staff request, permission, interview or outcome | Dated staff request/outcome record; preserve frozen method and result artifacts | Staff timeline and current pending decisions; employment and payroll only if a departure or appointment occurred |
+| Staff hire, departure or delegated responsibility | Staff hiring/departure/decision record | Current staff, contracts, authority where affected and Documents 4 and 5 |
+| Medical decision | Dated medical record or the phase/game record that received the instruction | Current availability and permitted work; role or roster changes only if separately decided |
+| Game | Game output and public result receipt | Box score, relevant season statistics and standings, awards when due, actual injuries/roles, player updates and current state |
+| Bye | That week's output | Actual practice, recovery, self-scout and decisions; no game receipt |
+| Technical or foundation correction | The affected technical or rule owner | Source hashes, references and readiness when affected; no fabricated football event |
 
-Plans own teaching intent. Outputs own what happened. Standouts are evidence summaries of outputs, never a second event source or a permanent depth chart. Initial roster/cap sheets preserve the starting baseline; the current roster and cap worksheet own later changes. An older financial effective date remains correct when no financial event occurred.
+Plans retain intended teaching, priorities and authorized limits. A report owns observed work. The calendar retains dates, opponents, windows and deadlines, with sources and dated corrections. Do not append completed-event narratives, cap snapshots, role assessments or engine status to the calendar. A historical financial as-of date remains correct until a financial event changes it.
 
-For 2014, the staff front door is [the staff-change folder](../career/2014/early_offseason/staff_changes/README.md). Its [timeline](../career/2014/early_offseason/staff_changes/timeline.md) summarizes dated outside requests and Jacksonville's [hiring outcomes](../career/2014/early_offseason/staff_changes/hires.md). Update these views in the same commit as a relevant closed event. The [plan](../career/2014/early_offseason/staff_changes/staff_plan.md) retains Stone's targets and proposed terms; do not rewrite it into a result log.
+Trades and free agency are year-round areas under `00_Team_Operations`; their position in the file tree does not limit when transactions can occur. Staff records in `01_Early_Offseason` likewise keep their dated sources when an event falls later. Update an existing owner instead of creating a duplicate phase-specific transaction history.
 
 ## Close an event
 
-1. Read the current state, calendar, applicable plan and source records. Respect the active playbook lock. For a weekly football slate, `python scripts/build_week_inputs.py N --season YEAR` freezes the full transient TeamInput package and runs the exclusivity and game-day gate with the week's scheduled game count, so a partial slate fails, before any event closes; branch player control overrides historical roster rails. Run `scripts/check_week_input_exclusivity.py <weekly-input-package.json> --expected-games <scheduled-game-count>` directly only for an ad-hoc package.
-2. Write the event/result and stage its ledger entry. Preserve earlier dated entries verbatim; append a correction when needed.
-3. Review each dependency above. Update affected owners and summaries in the same commit. For a closed Jacksonville/protagonist regular-season or postseason game, preserve the full public receipt including player dictionaries, snap ledger and named-call usage. For ordinary background games, preserve the compact_stats receipt with every nonzero generated player/team statistic and every game-day active player, without background snap rows or zero-valued counters. Generate the box score, standings and season stat views from the receipt set; do not hand-add totals or reconstruct missing plays from prior Markdown. From 2014 the week's `output.md` follows the weekly game turn template (`foundation/templates/regular_season_output_template.md`), and its "Full stats for the game" block is the gamebook layout `render_box_score.py --season YEAR --write` fills between the box-score markers (scoring summary, team stats, individual tables, drive chart, snap counts; `runtime/gamebook.py` lists what the receipt supports). Do not touch unrelated financial or historical records to manufacture freshness.
-4. Update Documents 4 and 5 checkpoints/versions consistently. Document 4 may retain its older content version if none of its owned facts changed; Document 5 must name that exact version. Refresh foundation Git-blob hashes in Document 5 after a foundation change, using `git hash-object` on each changed foundation source.
-5. Update phase metadata and review the actual summary text. Only then run the receipt command below. It acknowledges review of the current source; it does not generate observations or prove prose is correct.
-6. Refresh DOB/age columns and the league age view with `python scripts/render_player_ages.py` after any master-date or roster change, including birthdays within a season and January postseason dates. Verify a new player's identity and birth date before preparing his first game; never substitute an experience count or current real-world age. Then close the ledger entry, run validation and review the diff. Commit the entire dependency set together through a pull request.
+1. Read current state, the team's calendar, the applicable plan and the relevant sources. Respect the active playbook iteration and dated information gates. The [2014 NFL calendar](../library/2014_nfl_calendar.md) provides league research; [Jacksonville's calendar](../career/2014/Calendar.md) supplies the team route. Actual historical opponents, dates, venues, byes and published amendments control every year. Branch standings determine draft order and playoff qualification.
+2. Write the completed event in its domain owner. Keep its actual date, authority, conditions, uncertainty and consequences. A mixed date window may contain several separately dated events. Preserve prior facts and identify a correction where needed; do not silently alter a result or present a proposal as completed.
+3. Attach the descriptive event metadata to that owner and its closure metadata to the record that closes the bounded progression. New phase metadata names the source event through `event_ref`. Legacy identifiers are resolved by the single compatibility map, not displayed as a second history. Generate the year's `Record.md` from the owners.
+4. Update each genuinely affected current view in the same commit. Reconcile control, contracts, known financial effects, medical instructions and roles even when an unrelated amount remains unknown. Never use an unknown figure as zero. Preserve unexecuted plans and frozen pre-result choices.
+5. Reconcile Documents 4 and 5 checkpoints and source pointers. Document 4 may retain its older content version if none of its facts changed; Document 5 must name that exact version. After a foundation edit, refresh its Git-blob hash in Document 5 using `git hash-object`.
+6. Refresh player ages after a master-date or roster change, and refresh the development cohort after any signing, departure, trade, draft addition or tender resolution. Verify a new player's identity and birth date before a game. Review updated reports and assessments against their evidence, run validation and the appropriate tests, and commit the complete dependency set through a pull request.
+
+Phase metadata uses `NOT_STARTED`, `IN_PROGRESS` or `COMPLETE`, its actual evidence-through date and the descriptive source event. Future reports keep null evidence dates and event references. From 2014, assessment is inside `training_report.md`; no separate phase assessment or summary receipt is created. Legacy 2013 phases that still have separate summaries retain their SHA-256 source receipts. For those only, review the actual summary first and then use `refresh_summary_receipt.py PHASE --reviewed`. That command acknowledges review; it does not generate observations or prove the prose correct.
+
+Useful maintenance commands, with the actual season supplied:
 
 ```sh
-python scripts/refresh_summary_receipt.py otas --reviewed
-# A regular-season week: freeze inputs, close the games, then generate every view
-# python scripts/build_week_inputs.py WEEK --season YEAR
-# python scripts/close_week.py WEEK --season YEAR --close
-# After a game, once the complete receipt set for the current coverage window exists:
-# python scripts/render_box_score.py --season YEAR --write career/YEAR/regular_season/games/week_NN/output.md   # 2014 onward: the gamebook block of the weekly game turn template
-# python scripts/render_coach_record.py YEAR --opponent "Opponent name" --date YYYY-MM-DD   # the turn's Coach info record table
-# python scripts/render_standings.py YEAR
-# python scripts/render_season_stats.py YEAR --team TEAM_ID
-# python scripts/render_team_tracker.py YEAR   # user's Jacksonville tracker; also after a depth-chart change
+python scripts/render_annual_record.py YEAR
 python scripts/render_player_ages.py
+python scripts/build_player_progression_roster.py
+python scripts/render_jaguars_cap_tracker.py --check
 python scripts/validate_repository.py
 python -m unittest discover -s tests -v
 ```
 
-The receipt command supports the phase names in `repository_map.json`. Metadata uses `NOT_STARTED`, `IN_PROGRESS`, or `COMPLETE`, an ISO evidence-through date, and the source event's ledger entry number. Future phases use null date/entry. A summary holds the SHA-256 of its source output, so editing that output makes an unreviewed summary fail validation. Update metadata when appending actual work; never stamp a future phase complete just to pass a check.
+Regenerate cap views before their check when financial inputs changed. Generated trade and award pages likewise come from their source owners. Resolve paths with `SeasonPaths`, never by recreating an old flat folder named in a frozen reference.
 
-## Validation scope
+## Games and their statistical evidence
 
-Checks cover required files, local Markdown targets/anchors, current-state source hashes, closed checkpoint continuity, controlled-player membership/counts, phase evidence receipts, that every regular-season week with any game receipt has exactly one receipt per scheduled game (`library/data/2013_schedule.json`), and that the statbook, standings and every filled box score match a fresh rebuild from the game receipts. Archived material and future playbook contents are excluded from reads. Templates and code examples are not live records.
+`Run Week N` remains the complete one-command regular-season workflow defined in `AGENTS.md`. Read the week's actual plan, current roster and medical instructions, calendar, active books and existing output. Internal readiness preparation, an already-authorized migration, input construction, closure, statistics, PR bookkeeping and snapshot handling belong to the task. The user does not have to operate helper scripts. A genuinely new consequential Stone decision still returns to the user.
 
-These checks cannot judge football truth, medical evidence, a cap calculation, or whether a summary faithfully captures every observation. Human/agent review against the source remains required. CI does not automatically simulate events or rewrite state.
+Before a draw, `build_week_inputs.py N --season YEAR` freezes the full TeamInput package and checks player exclusivity, legal game-day roles and the scheduled game count. An ad-hoc package must pass `check_week_input_exclusivity.py PACKAGE --expected-games COUNT`. Jacksonville's actual control overrides conflicting historical personnel rails. Preserve the frozen `call_sheet.json`; a permitted technical rerun reuses its pre-result decisions.
 
-## One-command regular-season weeks
+Run `check_game_readiness.py --season YEAR` before either game path. A green repository check, populated schedule, accepted kernel or prepared future roster does not waive a missing game gate. Keep private engine state outside Git and public reports.
 
-For regular-season play, `Run Week N` is the top-level workflow defined in `AGENTS.md`. Internal readiness, authorized migration/reset preparation, background-team input construction, receipt/statbook rebuild, standings, snapshot advancement and PR bookkeeping belong to that task; do not hand those implementation steps back to the user. A genuinely new Stone decision may still require user input when no supplied or already-closed plan covers it.
+For a closed regular-season or postseason Jacksonville game, retain `runtime.statbook.make_receipt(..., detail="full")`, including complete public player dictionaries, snap play ledger and named-call statistics. Ordinary background games use `detail="compact_stats"`: every nonzero generated statistic and a row for every game-day active player remain, while background snap details and zero counters are omitted. Compression changes no result or total. Every scheduled game must have its one canonical receipt before a weekly statistical closure is complete.
 
-See `docs/run_week.md` for the minimal runner handoff prompt.
+Render the box score into the game's output, and render standings, cumulative statistics, team tracker and relevant awards from those receipts. The full gamebook block of the [regular-season template](../foundation/templates/regular_season_output_template.md) contains the scoring summary, team and individual statistics, drive chart and supported snap counts; `runtime/gamebook.py` defines what the receipt can supply. Coach-record tables use `render_coach_record.py`. Do not invent missing plays, hand-add cumulative numbers or import historical results to fill gaps. Incomplete coverage withholds formal rankings. Read the calibration audit; an `OUTSIDE` result prompts investigation of inputs or implementation, never a new draw selected for a better outcome.
 
-## Postseason rounds
+```sh
+python scripts/build_week_inputs.py WEEK --season YEAR
+python scripts/close_week.py WEEK --season YEAR --close
+python scripts/render_standings.py YEAR
+python scripts/render_season_stats.py YEAR --team TEAM_ID
+python scripts/render_team_tracker.py YEAR
+python scripts/league_awards.py week WEEK --season YEAR --close
+```
 
-The postseason uses the same one-command workflow, with weeks numbered 18 (Wild Card), 19 (Divisional), 20 (Conference) and 21 (Super Bowl); a request such as "Run the Wild Card" means `Run Week 18`. The round's games come from `runtime/postseason.py` (seeds from the final standings, the real 2013-14 slot by seed matchup, a round built only after the previous one closed). The differences from a regular-season week:
+`render_box_score.py --season YEAR --write OUTPUT_PATH` fills the resolved game's actual output path. Preserve regular-season and postseason totals separately. From 2014, working player records retain prior yearly rows and receive only supported statistical updates; game rendering does not silently re-grade a player.
 
-- Jacksonville's folder is `career/2013/postseason/week_NN_<away>_at_<home>/` (`output.md` and the frozen `call_sheet.json`); `career/2013/postseason/README.md` is the bracket page and round index.
-- Receipts go to `career/2013/stats/postseason_receipts/`. Standings, the regular-season statbook, the calibration audit and awards stay regular-season views; no postseason weekly awards are drawn (the league gave none).
-- The league roundup is `career/2013/league_results/week_NN.md` for the round's other games.
-- A club eliminated from the postseason, Jacksonville included, plays no further game; if Jacksonville is eliminated, later rounds still close as background slates.
+Jacksonville's game uses user-controlled management. A consequential injury/removal pause writes the completed prefix and waits for Stone's replacement decision through the same private event; do not close the remaining slate first or invent an answer. The private snapshot advances only from the merged canonical branch under the normal workflow, never from an unmerged PR.
 
-## Before a game
+Preseason uses the [complete preseason template](../foundation/templates/preseason_output_template.md), its authorized bulk presentation and ordinary material-decision stops. Preserve each game's actual output and supported statistics without adding preseason totals to regular-season standings or statbooks.
 
-Read [game readiness](../state/game_readiness.md) and run `python scripts/check_game_readiness.py`. That command fails while any game prerequisite remains unverified. Repository validation, populated schedule folders and deterministic packet tests do not authorize a game. Keep private engine state outside Git, public logs and coach-facing files.
+Postseason uses the same one-command workflow and the actual era's bracket. For the current 2013/2014 era, weeks 18 through 21 identify Wild Card, Divisional, Conference and Super Bowl. Build each round only after its predecessor closes, using branch qualifiers and historically correct slots. An eliminated Jacksonville plays no further game; other clubs' rounds still close. Postseason receipts, totals and honours remain distinct, with no invented weekly playoff awards.
 
-## Individual training and film records
+## Player, coaching and film records
 
-For 2014, start at [the training index](../career/2014/offseason_training/README.md). The live development cohort is generated from the canonical roster: run `python scripts/build_player_progression_roster.py` in the same atomic change after any signing, release, trade, tender resolution or draft addition, and use `--check` before resolving progression. Do not create the season's annual Player Sheets during the offseason; those are frozen end-of-season evaluations. Offseason identity lives in the progression/development records. The frozen 2013 exit index is continuity evidence only and never restores a departed player. A planning-only change may refine the session, packet and player progression without advancing state. When actual teaching occurs, write the phase output first and link its evidence from the individual record. When a packet is distributed, record the actual packet revision, recipient, date, lawful basis and source in [the delivery log](../career/2014/team/film/delivery_log.md), then update the queue pointer. Preparation, distribution, acknowledgment, comprehension and delayed retention are separate facts. Keep historical promises and unknown receipts honest. Any accompanying role, roster, staff, medical or time change also requires the normal atomic canon updates above.
+Create the opening player assessment for the controlled roster at the start of the year, and add a record when a player joins. Retain its baseline and append dated evidence updates through rookie camp, the spring program, camp, preseason, regular season and postseason. Preserve departed players' history. Write the separate final player assessment with the season review after the season closes. These are the two assessment records; do not create another set under every phase.
 
-## Living player assessments and the annual calendar
+The phase report comes first. A player update or position-battle card points to the relevant work and explains what it changes: assignment recognition, communication, technique, physical execution, decision-making, support and opportunity remain distinct. An unresolved question remains unresolved. Comparable reserve work matters, but a calendar advance or a single corrected rep supplies no automatic upgrade. Preserve players' actual perspectives only where recorded. Numeric personnel judgments follow the user-authorized player-sheet rule and never become invented measurements or engine inputs.
 
-The [2014 calendar](../career/2014/calendar.md) owns annual checkpoints and information gates; exact branch fixtures require the league-wide schedule check at release. Do not replace the branch's Buffalo pairing with real-history Miami or silently put Buffalo in an occupied date slot.
+Open battle cards are grouped by unit, position and contested spot. Add one only when a real competition and its candidates are established. A cross-training lane, an empty roster place or a coaching question is not by itself a competition. Record the decision in the roster-decision owner and update the actual depth chart when Stone resolves a role.
 
-At actual phase/week handoff, update the relevant [living profile](../career/2014/team/player_development/roster_profiles.md). The prior completed-season [annual sheet](../career/player_profiles/README.md) is frozen history and must not be rewritten by offseason evidence. Update from the source output: observed strengths and adaptations, what changed or stayed the same, actual player perspective if offered, uncertainty and next opportunity. Preserve the previous evidence. Film preparation, distribution and learning remain separate records. A player's full season matters as experience without converting defective engine outcomes into talent.
+The roster generates the development cohort. `build_player_progression_roster.py --check` must agree before resolving development. Frozen exit interviews from a prior season are evidence, not a mechanism to restore departed players. Development plans describe intended work and remain separate from the player's observed assessment.
 
-The [E1/E2 decision](../runtime/2014_engine_decisions.md) adopts policy only. Implementation, calibration, evidence coverage and a new release must precede 2014 games. A documentation validation pass does not close an engine defect.
+Film preparation, distribution, acknowledgment, comprehension and delayed retention are separate facts. The film delivery record owns the actual packet revision, recipient, delivery date, lawful basis and source. A prepared queue is not a delivered packet. Check control, medical instructions and the pre-program contact rules before any distribution or teaching. Update the queue after a real receipt, not to manufacture completion.
 
-## Living coaching assessments and historical 2015 dates
+[Living coaching profiles](../career/coaching_profiles/README.md) use the same evidence discipline. At a material handoff, write the actual contribution in its source report, then update the coach's interpretation and current synthesis. Preserve prior experience, strengths, contrary evidence and uncertainty. A profile edit alone cannot hire a coach, change authority, claim a new practice or supply an engine effect.
 
-[Coaching profiles](../career/coaching_profiles/README.md) apply the same open-ended assessment method to Stone and the assistants. The frozen prehire dossier owns its original baseline. Current profiles synthesize later branch experience, actual teaching/decisions, player perspectives and uncertainty. At a material phase/week handoff, write the primary output first, append a dated interpretation change or retained finding, then refresh the current synthesis. Preserve prior entries and distinguish instruction, player response and outcome. A user edit to intended approach belongs in the plan until observed; a profile alone cannot create a hire, authority change or engine effect.
+## Handoff and checks
 
-The [2015 calendar](../career/2015/calendar.md) contains the actual historical Jacksonville dates and fixtures, backed by [two-pass research](../library/2015_historical_calendar.md), including superseded announcements. It is an advance reference, not a claim that 2014 has finished. Historical dates and opponents control every season under Entry 101. Branch standings determine playoff participants and draft order. Verify the actual league fixture input before games. Announced practice slots, completed practices and staff evaluation conclusions remain distinct.
+After the team's final game, finish player and coach exit reviews in `07_Season_Review`. Reconcile medical status, roster rights, player and staff contracts, cap obligations, picks, development and open decisions before `scripts/season_handoff.py` stages the next year. Team closeout and league statistics/awards have separate gates. Future calendars can be researched before the next season opens; actual historical dates remain binding without importing future outcomes.
 
-**Season routing:** use the requested NFL season for YEAR, including January/February postseason games. Weekly input, closure, box-score and league-award commands require `--season YEAR`; readiness defaults to `docs/repository_map.json` active_season and can be checked explicitly with `--season YEAR`. Current record ownership follows that map separately. The 2014 release requirements remain blocking even when legacy readiness flags are VERIFIED.
+Validation checks paths and anchors, source hashes, owned event identities, checkpoint continuity, annual record freshness, phase evidence, controlled-player membership/counts, receipt coverage and generated statistics. It cannot decide whether football analysis is true, a medical claim is supported or a financial assumption is justified. Review the evidence and diff as well as passing the checks. CI does not simulate missing events to repair a document.
 
+<!-- event-record: {"closure": {"checkpoint": "Canonical correction - May 23, 2013 - repository continuity and readiness reconciled", "sequence": 13, "through": "2013-05-23"}, "date": "2013-05-23", "id": "2013-05-23-repository-continuity-and-readiness-reconciliation", "kind": "technical", "status": "closed", "summary": "Repository continuity and readiness records were reconciled."} -->
 
-## Annual handoff and document discipline
-
-The active year README is the entry point; `docs/repository_map.json` owns current paths. Entry 101 establishes the 2014 owners and retains prior ledger history. Follow [the closeout route](../career/2014/season_review/README.md) after exit interviews. Use existing outputs and player/staff records; create no document for each drill, meeting or cap scenario. The historical calendar controls every year. The player cap and organization finance views share the existing contract owners and never share totals.
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - January 5, 2014 - Player age register reconciled", "sequence": 63, "through": "2014-01-05"}, "date": "2014-01-05", "id": "2014-01-05-player-birth-dates-calendar-ages-and-historical-retirement-audit", "kind": "technical", "season": 2013, "status": "closed", "summary": "Player age metadata and historical retirement research were reconciled."} -->

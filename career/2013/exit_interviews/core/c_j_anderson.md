@@ -110,7 +110,7 @@ Voluntary. The program may begin no earlier than April 21; until then nothing is
 - `career/2013/postseason/week_18_jacksonville_at_kansas_city/output.md` lines 67, 118
 - `career/2013/postseason/week_19_jacksonville_at_tennessee/output.md` lines 69, 71, 122, 185
 - `career/2013/coaching_staff.md` lines 219-234 (Spencer), 420-443 (Lowry: returner evaluation, coverage-lane discipline)
-- `career/2013/ledger.md` Entry 75; `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
+- [January coaching decisions](../../../2014/01_Early_Offseason/staff_changes/timeline.md); `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
 - `career/2013/offseason/player_onboarding_and_development_framework.md` section 2 (Good, Better, Best) and section 3
 - `career/2013/offseason/the_prowl_program_identity.md` ("Good. Better. Best.", "Earn Responsibility", "Discipline Approach")
 - `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 7 and 10

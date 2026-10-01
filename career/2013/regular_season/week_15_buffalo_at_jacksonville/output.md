@@ -354,7 +354,9 @@ Start and end are field positions for the offense; a punt, field-goal or downs r
 **Position:** Second in the AFC South: Tennessee is also 9-5 and holds the head-to-head tiebreaker. Jacksonville is the AFC's fifth seed, a wild card. See [standings](../../standings.md).
 **Statbook:** Through Week 15; 224 of 224 receipts; coverage complete.
 **League awards:** Week 15 drawn; no Jacksonville player was shortlisted.
-**Scouting:** Phase IV coaching reads were not entered as conclusions. No dated football evidence is recorded for any focus prospect, so each first-read question stays OPEN (Harris: no conclusion by directive; Turner: not in the pool). See Entry 58.
+**Scouting:** Phase IV coaching reads were not entered as conclusions. No dated football evidence is recorded for any focus prospect, so each first-read question stays OPEN (Harris: no conclusion by directive; Turner: not in the pool). See [2013 Buffalo game report](output.md).
 **Engine notes:** none new. Every graded audit row is WITHIN.
 
-**Ledger entry:** Entry 58. **Next event:** Week 16 vs Tennessee, Sunday, December 22, 1 p.m. ET. **Not simulated.**
+**Next event:** Week 16 vs Tennessee, Sunday, December 22, 1 p.m. ET. **Not simulated.**
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - December 15, 2013 - Week 15 vs Buffalo closed", "original_close": "Commit closed - Canonical update - December 15, 2013 - Week 15 vs Buffalo closed - canonical through December 15, after Week 15", "sequence": 58, "through": "2013-12-15"}, "date": "2013-12-15", "id": "2013-12-15-week-15-vs-buffalo-closed", "status": "closed", "summary": "Jacksonville lost 16-45 to Buffalo."} -->

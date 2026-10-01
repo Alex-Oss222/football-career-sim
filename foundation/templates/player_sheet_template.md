@@ -2,6 +2,8 @@
 
 **Team:**  
 **Season:**  
+**Assessment stage:** Final annual assessment  
+**Opening assessment and dated updates:** [Link to this season's opening card]  
 **Season-close checkpoint:**  
 **Age at exit-review close:**  
 **Position:**  
@@ -10,6 +12,8 @@
 
 > This is the final evaluation of the player in this NFL season. It is not an
 > offseason plan, a next-season projection, potential, or a game-engine rating.
+
+This position-baseline format is for the completed 2013 season. For both opening and final assessments from 2014 onward, use [the 2014-onward template](player_sheet_2014_onward_template.md), including inherited state, yearly changes and the separate yearly statistics tables.
 
 ## Position grades
 
@@ -39,6 +43,10 @@ season. The best and low-end references are trait-specific.
 
 Use qualified samples. Do not call a one-snap emergency player the league's
 worst player at his position.
+
+## What changed from the opening assessment
+
+[Compare the opening view with the completed season, including the dated coaching updates and actual player and coach exit-review findings. Explain what improved, remained limited or changed role, with the football evidence and contrary observations. Do not make a player repeat his whole baseline or infer development from age and elapsed time.]
 
 ## Season production in context
 

@@ -1,8 +1,10 @@
 # 2014 strength, development and in-game availability
 
-[Defect register](defect_register.md) · [Player development](../career/2014/team/player_development/README.md)
+[Defect register](defect_register.md) · [Player development](../career/2014/00_Team_Operations/Player_Development/README.md)
 
 **Decision record:** Stone approved E1 and E2 in the September 28–29, 2026 follow-up to PR #132, with the branch still at February 2, 2014. This adopts their policy, including team construction and coaching, without releasing a kernel. Kernel 2014.3 remains installed; Tier 1 remains open. No 2013 receipt, rating input or outcome is rewritten.
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical correction - February 2, 2014 - 2014 operating handoff and readiness reconciled", "sequence": 82, "through": "2014-02-02"}, "date": "2014-02-02", "id": "2014-02-02-2014-operating-handoff-and-readiness-reconciled", "kind": "technical", "status": "closed", "summary": "2014 operating handoff and readiness reconciled."} -->
 
 ## Implementation status checked September 30, 2026 (phase 3: release wired)
 

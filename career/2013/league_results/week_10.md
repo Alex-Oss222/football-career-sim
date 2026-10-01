@@ -1,6 +1,6 @@
 # 2013 Week 10 league results
 
-**Events:** `2013-week10-<away>-at-<home>`, kernel 2013.7 (ledger Entry 48), closed once each through the private production runner.
+**Events:** `2013-week10-<away>-at-<home>`, kernel 2013.7 ([kernel 2013.7 adoption](../../../runtime/README.md)), closed once each through the private production runner.
 **Inputs:** background clubs carried forward from the [Week 1 depth-chart library](../../../library/2013_week1_depth_charts.md) with branch injuries applied, each dressing up to 46 players chosen by depth order; every club at the Average low-confidence unit anchor.
 **Receipts:** `../stats/game_receipts/week_10_*.json`. **Standings:** [../standings.md](../standings.md), generated from the receipts.
 **Byes:** Cleveland Browns, Kansas City Chiefs, New England Patriots, New York Jets.

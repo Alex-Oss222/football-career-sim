@@ -18,7 +18,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-DIR = ROOT / "career" / "2014" / "draft" / "compensatory"
+from runtime.seasons import SeasonPaths
+DIR = SeasonPaths(2014, ROOT).record('draft/compensatory')
 METHOD, INPUTS, OUT = DIR / "method.json", DIR / "inputs.json", DIR / "awards.json"
 PAGE = DIR / "announcement.md"
 RECEIPTS = [ROOT / "career/2013/stats/game_receipts", ROOT / "career/2013/stats/postseason_receipts"]
@@ -148,7 +149,7 @@ def announcement(result):
                       f'{fa[n]["value_points"]:.1f} points, Round {fa[n]["value_round"]})')
     thresholds = ", ".join(f'Round {t["round"]} at {t["min_points"]}' for t in val["round_thresholds"])
     lines = ["# 2014 compensatory picks: branch announcement", "",
-             "**Announced:** Monday, March 24, 2014 (ledger Entry 100). **Generated** by `python scripts/resolve_compensatory_picks.py` from [awards.json](awards.json); do not edit by hand.", "",
+             "**Announced:** Monday, March 24, 2014. **Generated** by `python scripts/resolve_compensatory_picks.py` from [awards.json](awards.json); do not edit by hand.", "",
              "The league awarded 32 compensatory picks for the 2014 draft, placed after rounds 3 to 7. They rest on each club's qualifying unrestricted free agents lost and signed in the **2013** league year of this branch. The NFL formula's weights are unpublished, so the branch used its own [method](method.json), version 2, on [recorded inputs](inputs.json). No real 2014 award list was read. The picks cannot be traded in 2014.", "",
              "## How a free agent is valued", "",
              f'- **Salary (primary):** his new contract\'s average per year as a percentile of the 2013 league market ({inputs["salary_market"]["contracts"]} contracts in force; median {money(inputs["salary_market"]["median_apy"])}). A $12.0M deal scores about 98; a $1.0M deal about 55.',

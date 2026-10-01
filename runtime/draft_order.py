@@ -28,8 +28,8 @@ from . import postseason
 ROOT = Path(__file__).resolve().parents[1]
 GROUPS = (("non-playoff", 1), ("wild_card", 21), ("divisional", 25),
           ("conference", 29), ("super_bowl_loser", 31), ("champion", 32))
-OWNERSHIP = ROOT / "career/2014/draft/pick_ownership.json"
-COIN_FLIP = ROOT / "career/2014/draft/coin_flip.json"
+OWNERSHIP = ROOT / 'career/2014/03_Draft/pick_ownership.json'
+COIN_FLIP = ROOT / 'career/2014/03_Draft/coin_flip.json'
 _RECORDED_DRAW = object()
 
 
@@ -114,7 +114,7 @@ def apply_coin_flip(rows, result):
     pair.sort(key=lambda row: row["club"] != result["winner"])
     for slot, row in enumerate(pair, 14):
         row["slot"] = slot
-        row["tie"] = f"Recorded website coin flip: {result['result']}; {result['winner']} first (Entry 81)"
+        row["tie"] = f"Recorded website coin flip: {result['result']}; {result['winner']} first"
     rows[13:15] = pair
     return rows
 
@@ -211,7 +211,7 @@ def ownership_for(year, rnd, club, register):
                 and rnd in claim["round_options"]):
             return club, "encumbered", claim["id"] + ": " + claim["basis"]
     if year == register["audited_year"] and club in register["audited_clubs"]:
-        return club, "retained", "Audited retained original pick; ledger Entry 81"
+        return club, "retained", "Original pick retained after the ownership audit"
     return club, "provisional", "Outside the completed 2014 ownership audit"
 
 

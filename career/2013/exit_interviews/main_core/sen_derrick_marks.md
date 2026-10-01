@@ -231,7 +231,7 @@ Evidence caveats. The engine defect register records that 2013 individual produc
 - `career/2013/postseason/week_19_jacksonville_at_tennessee/output.md` (lines 43, 75, 78, 81-82, 333)
 - `career/2013/stats/team_stats.md` (line 55, defense table: 23 sacks)
 - `career/2013/awards/weekly_and_monthly.md` (no Marks entry)
-- `career/2013/ledger.md` (Entry 41, line 886: Smith the communication lead); `career/2013/regular_season/week_04_indianapolis_at_jacksonville/output.md` (line 325)
+- [2013 St. Louis game report](../../regular_season/week_05_jacksonville_at_st_louis/output.md) (Smith the communication lead); `career/2013/regular_season/week_04_indianapolis_at_jacksonville/output.md` (line 325)
 - `runtime/defect_register.md` (Tier 2 item 12; Tier 3 item 19)
 - `career/2013/offseason/the_prowl_program_identity.md` ("Good. Better. Best.", "What The Prowl Expects", "Discipline Approach", "Stars and Veterans", "Confidential Support Is Not Personnel Scouting"); `career/2013/offseason/the_prowl_player_readiness_standard.md` (sections 7, 8, 10); `career/2013/offseason/player_onboarding_and_development_framework.md` (Day 2 call and aggregate rule, section 2 Good/Better/Best)
 - `career/2013/coaching_staff.md` (defensive staff roles)

@@ -2,13 +2,13 @@
 
 Status: MARCH 12 OPENING BATCH COMPLETE
 
-> **Current-state supersession:** This file preserves the March batch and its original gross running arithmetic. Its `~$8.35M` figures are **historical unreconciled planning shortcuts, not current cap room**. Season-ledger Entry 9 and `../current_cap_worksheet.md` supersede them for current state. Current regular-season working room (Top-51 expired September 4) is in `../current_cap_worksheet.md`.
+> **Current-state supersession:** This file preserves the March batch and its original gross running arithmetic. Its `~$8.35M` figures are **historical unreconciled planning shortcuts, not current cap room**. The [May 5 correction](../initial_cap_sheet.md) and [current cap worksheet](../current_cap_worksheet.md) supersede them for current state. Current regular-season working room (Top-51 expired September 4) is in that worksheet.
 
 Operative date: March 12, 2013, 4:00 p.m. ET, as recorded for the batch. Separate execution times are not supplied.
 
 These are completed simulation outcomes. The contracts, accepted/declined offers, contingency sequence and four releases are unchanged. Amounts below are calculated from those branch agreements, not from the players' real later contracts.
 
-Current roster now: [current roster](../../roster.md). Historical event source: [season ledger, Entry 3](../../ledger.md). Historical starting finances: [January cap sheet](../initial_cap_sheet.md). Current cap accounting: [current cap worksheet](../current_cap_worksheet.md).
+Current roster now: [current roster](../../roster.md). Historical event source: [March 2013 signings and releases](signings.md). Historical starting finances: [January cap sheet](../initial_cap_sheet.md). Current cap accounting: [current cap worksheet](../current_cap_worksheet.md).
 
 ## 1. Completed outcomes
 
@@ -159,3 +159,23 @@ The pursuit explanations above preserve the original simulation record. No actua
 Contract numbers are branch canon; annual splits and totals are derived arithmetic. Accounting rules follow the [2013 sourcebook](../../../../foundation/02_League_Era_and_Sourcebook.md) and [financial-rules library](../../../../library/2013_league_calendar_and_financial_rules.md), with the [cap sheet's verification limits](../initial_cap_sheet.md). The Jaguars' [March 8 league Q&A](https://www.jaguars.com/news/2013-nfl-free-agency-questions-answers-9665810) supports the 2013 league-year context; it is not a source for these fictional contract terms.
 
 This update reconciles the already-completed batch into the roster and state records. It executes no additional signing, release, trade, draft pick, medical clearance or depth-chart decision. The remaining unprioritized free agents and inherited contract-control gaps remain unresolved.
+
+## March 12 contract expirations and the May 5 control reconciliation
+
+Seventeen players in the inherited inventory reached free agency at the March 12 league-year opening. Jacksonville re-signed Brad Meester and Daryl Smith in the batch above. No tender or new Jacksonville contract was recorded for Kyle Bosworth, Eben Britton, John Chick, Derek Cox, Greg Jones, Terrance Knighton, Rashean Mathis, Antwaun Molden, Jordan Palmer, Jalen Parmele, Zach Potter, George Selvie, Jordan Shipley, Keith Toston or Steve Vallos. Those fifteen players therefore left Jacksonville control through contract expiration. They were not additional releases, and this record establishes no subsequent destination.
+
+The May 5 reconciliation also recovered four reserve/future contracts signed on December 30, 2012: John Parker Wilson, Ryan Davis, Brandon King and Will Ta'ufo'ou. Those contracts belong to the [inherited January 15 roster](../initial_roster.md), bringing its corrected count to 67. They were not new acquisitions by Stone's staff.
+
+| Completed control change | Controlled players afterward |
+|---|---:|
+| Corrected January 15 inherited roster | 67 |
+| Fifteen March 12 contract expirations | 52 |
+| Four releases in the opening free-agency batch | 48 |
+| Four outside free-agent signings; Meester and Smith retained without duplicate rows | 52 |
+| Cousins acquired; Gabbert exchanged for C.J. Wilson, with no net change from that exchange | 53 |
+| Seven drafted players added | 60 |
+| Four undrafted rookies signed | 64 |
+
+The former 75-player working count included expired contracts and omitted the inherited reserve/future signings. The corrected May 5 count is 64. The [completed trades](../../trades/trades.md), [draft selections and contracts](../draft/draftees.md), [undrafted signings](../draft/udfa_signings.md) and [historical May 5 cap reconciliation](../initial_cap_sheet.md#may-5-2013-branch-reconciliation-historical) own those events and their terms. This correction changed the control inventory and accounting, without rerunning rookie minicamp or awarding a playing role.
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency", "original_close": "Commit closed \u2014 Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency \u2014 canonical through March 12, 2013, 4:00 p.m. ET", "sequence": 3, "through": "2013-03-12"}, "date": "2013-03-12", "id": "2013-03-12-completed-free-agency-batch-reconciled", "status": "closed", "summary": "Jacksonville completed six free-agent agreements and four releases."} -->

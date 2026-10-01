@@ -1,6 +1,6 @@
 # Historical 2015 calendar: sources and verification
 
-Researched September 29, 2026 for the user's instruction to use the real 2015 calendar. The [operating calendar](../career/2015/calendar.md) extracts dates and scheduling facts only. Researching these future dates does not advance the branch from February 2, 2014 or import future personnel, performance, standings or coaching appointments.
+Researched September 29, 2026 for the user's instruction to use the real 2015 calendar. The [operating calendar](../career/2015/Calendar.md) extracts dates and scheduling facts only. Researching these future dates does not advance the branch from February 2, 2014 or import future personnel, performance, standings or coaching appointments.
 
 ## Source register
 

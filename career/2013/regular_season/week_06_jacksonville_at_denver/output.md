@@ -26,7 +26,7 @@
 
 ## 2. Week setup and game preparation
 
-**Roster move:** Justin Blackmon's league suspension ended with Week 5. He was reinstated on Monday, October 7, the day after Jacksonville's fourth suspended game, as the sourced 2013 rule sets it (`library/2013_suspension_reinstatement_rules.md`). Jacksonville activated him to the roster spot Caldwell had held open since the suspension, so no league roster exemption was needed. The active roster is back to 53. Blackmon practiced this week and was one of Stone's seven game-day inactives, under the Week 6-7 decision recorded in Entry 36.
+**Roster move:** Justin Blackmon's league suspension ended with Week 5. He was reinstated on Monday, October 7, the day after Jacksonville's fourth suspended game, as the sourced 2013 rule sets it (`library/2013_suspension_reinstatement_rules.md`). Jacksonville activated him to the roster spot Caldwell had held open since the suspension, so no league roster exemption was needed. The active roster is back to 53. Blackmon practiced this week and was one of Stone's seven game-day inactives, under the Week 6-7 decision recorded in [Blackmon suspension ruling](../week_02_jacksonville_at_oakland/output.md).
 
 **Opponent context:**
 - **Denver defense** came in 2-3. It had allowed 25.4 points, 427.2 yards (305.2 passing, 122.0 rushing) and a 43.1% third-down rate a game. It still had 11 sacks, spread over eight players, and 7 takeaways.
@@ -347,7 +347,7 @@
 ### Material personnel changes this week
 
 - **Injuries / limitations:** None new. Rackley limited (minor); C.J. Wilson out; Pasztor hold; Mosley unavailable.
-- **Activations / elevations / transactions:** Blackmon reinstated from Reserve/Suspended and activated to the 53 on October 7 (Entry 42).
+- **Activations / elevations / transactions:** Blackmon reinstated from Reserve/Suspended and activated to the 53 on October 7 ([Blackmon reinstatement](output.md)).
 - **Depth-chart / rotation changes:** Brewster confirmed as the starting center; seven game-day inactives including Blackmon.
 - **Role consequences for next week:** Blackmon remains a Stone game-day inactive for Week 7.
 
@@ -357,9 +357,13 @@
 **Division / conference position:** First in the AFC South (Tennessee also 4-2; Jacksonville ahead on conference record); first in the AFC, the top seed if the season ended today. See [standings](../../standings.md).
 **Statbook:** Through Week 6; 92 of 92 game receipts; coverage complete; leaders published.
 **Engine findings (the result stands; not grounds to rerun):**
-- **The safety.** Denver's third-quarter possession began after a 28-yard kickoff return, lost 13 yards on two plays and is recorded as a safety. That cannot reach the end zone. This is kernel 2013.6's known lack of field position (Entries 39-41), the same defect that produced the Week 5 safety against Jacksonville. It is being fixed in kernel 2013.7.
+- **The safety.** Denver's third-quarter possession began after a 28-yard kickoff return, lost 13 yards on two plays and is recorded as a safety. That cannot reach the end zone. This is kernel 2013.6's known lack of field position ([kernel 2013.6 correction](../../../../runtime/README.md), [2013 Indianapolis home game report](../week_04_indianapolis_at_jacksonville/output.md), and [2013 St. Louis game report](../week_05_jacksonville_at_st_louis/output.md)), the same defect that produced the Week 5 safety against Jacksonville. It is being fixed in kernel 2013.7.
 - **Call labels.** The TE Delay label landed on throws to Clemons and Brown because 2013.6 labels are not tied to the ball carrier.
 - **Band audit.** Every graded row reads WITHIN.
 
-**Ledger entries:** Entry 42 (Blackmon reinstated and activated); Entry 43 (Week 6).
+**Game and personnel records:** [Blackmon reinstatement](output.md) (Blackmon reinstated and activated); [2013 Denver game report](output.md) (Week 6).
 **Next event:** Week 7 vs San Diego Chargers, Sunday, October 20, 1 p.m. ET.
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - October 7, 2013 - Blackmon reinstated and activated", "original_close": "Commit closed - Canonical update - October 7, 2013 - Blackmon reinstated and activated - canonical through October 7", "sequence": 42, "through": "2013-10-07"}, "date": "2013-10-07", "id": "2013-10-07-blackmon-reinstated-and-activated", "status": "closed", "summary": "Justin Blackmon was reinstated and activated; Stone\u2019s Weeks 6-7 inactives remained."} -->
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - October 13, 2013 - Week 6 at Denver closed", "original_close": "Commit closed - Canonical update - October 13, 2013 - Week 6 at Denver closed - canonical through October 13, after Week 6", "sequence": 43, "through": "2013-10-13"}, "date": "2013-10-13", "id": "2013-10-13-week-6-closed", "status": "closed", "summary": "Jacksonville 26, Denver 10."} -->

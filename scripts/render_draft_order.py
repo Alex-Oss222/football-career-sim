@@ -5,12 +5,15 @@
 """
 import argparse
 import json
+import os
+import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-OUT = ROOT / "career" / "2014" / "draft" / "draft_order.md"
+from runtime.seasons import SeasonPaths
+OUT = SeasonPaths(2014, ROOT).record('draft/draft_order.md')
 GROUP_LABEL = {"non-playoff": "Non-playoff", "wild_card": "Lost Wild Card", "divisional": "Lost Divisional",
                "conference": "Lost conference championship", "super_bowl_loser": "Lost Super Bowl",
                "champion": "Won Super Bowl"}
@@ -47,17 +50,17 @@ def render_source():
     ov = lambda row: overall(row, counts)
     lines = [
         "# 2014 NFL Draft: all seven rounds (branch)", "",
-        ("**As of:** May 11, 2014; ledger Entry 108 (Jacksonville's nine selections recorded). **Draft:** May 8–10, 2014." if register.get("selections_2014") else
-         "**As of:** March 24, 2014; ledger Entry 100 (compensatory awards announced). **Draft:** May 8–10, 2014." if awards else
-         "**As of:** February 2, 2014; ledger Entry 81. **Draft:** May 8–10, 2014."),
+        ("**As of:** May 11, 2014; Jacksonville's nine selections recorded. **Draft:** May 8 to 10, 2014." if register.get("selections_2014") else
+         "**As of:** March 24, 2014; compensatory awards announced. **Draft:** May 8 to 10, 2014." if awards else
+         "**As of:** February 2, 2014. **Draft:** May 8 to 10, 2014."),
         "**Generated** by `python scripts/render_draft_order.py` from closed branch receipts and [pick_ownership.json](pick_ownership.json). Edit the underlying dated records, then regenerate; do not edit these tables by hand.",
         ("**Coverage:** all **256 selections**: 224 ordinary picks, with original club and recorded owner shown separately, and the 32 branch compensatory picks announced March 24. Overall numbers are exact." if awards else
          "**Coverage:** all **224 ordinary selections**, with original club and recorded owner shown separately. Compensatory selections are still pending; this is not a final 256-pick execution list."),
         "**Rules and sources:** [verification](../../../library/2014_draft_order_verification.md), [league rules §4](../../../library/2014_league_calendar_and_financial_rules.md#4-2014-draft-order-rules-applied-to-the-branchs-2013-season). Clubs tied on winning percentage rotate within their elimination group: first goes to last, the others move up. No real 2014 order or selection is imported.", "",
         "## Jacksonville's current draft capital", "",
-        "**Corrected Cousins deal:** Jacksonville received Kirk Cousins **and Washington's original 2014 first**; Washington received Jacksonville's original **2014 and 2015 seconds**. Jacksonville retains its own first. [Completed trade](../../2013/trades/trades.md); [controlling correction, Entry 80](../../2013/ledger.md#entry-80-cousins-trade-and-draft-capital-reconciled).",
+        "**Corrected Cousins deal:** Jacksonville received Kirk Cousins **and Washington's original 2014 first**; Washington received Jacksonville's original **2014 and 2015 seconds**. Jacksonville retains its own first. [Corrected trade record](../../2013/trades/trades.md).",
         "**Historical exception:** real Washington had previously conveyed its 2014 first to St. Louis. The user expressly corrected this branch asset to Jacksonville after that conflict was disclosed. St. Louis does not also own No. 13; no compensating Rams deal is invented.", "",
-        "**Inherited asset restored (Entry 81):** Detroit's original fifth belongs to Jacksonville from the 2012 Mike Thomas trade. [League ownership audit](ownership_audit.md).", "",
+        "**Inherited asset restored:** Detroit's original fifth belongs to Jacksonville from the 2012 Mike Thomas trade. [League ownership audit](ownership_audit.md).", "",
         "| Round | Original club | Slot in round | Overall pick | Current owner |",
         "|---:|---|---|---|---|",
     ]
@@ -140,7 +143,29 @@ def render_source():
 
 def render():
     from runtime.season_layout import rebase_markdown
-    return rebase_markdown(render_source(), 'career/2014/draft/draft_order.md', OUT.relative_to(ROOT))
+    text = rebase_markdown(render_source(), 'career/2014/draft/draft_order.md', OUT.relative_to(ROOT))
+    trade = 'career/2014/00_Team_Operations/Trades/completed_trades/'
+    sources = {
+        80: ('Corrected Cousins trade', 'career/2013/trades/trades.md'),
+        81: ('Ownership audit', 'career/2014/03_Draft/ownership_audit.md'),
+        99: ('March 20 Arizona trade', trade+'nwaneri_to_arizona_2014-03-20.md'),
+        105: ('March 31 Washington pick trade', trade+'colts_picks_to_washington_2014-03-31.md'),
+        106: ('April 7 Allen trade', trade+'allen_to_arizona_2014-04-07.md'),
+        110: ('May 12 Rackley trade', trade+'rackley_to_seattle_2014-05-12.md'),
+    }
+    lines = []
+    for line in text.splitlines(keepends=True):
+        def replace(match):
+            number = int(match[1])
+            if number == 102:
+                title, filename = (('March 24 Babin trade', 'babin_to_miami_2014-03-24.md')
+                                   if 'Package D' in line else ('March 24 Alualu trade', 'alualu_to_houston_2014-03-24.md'))
+                owner = trade+filename
+            else:
+                title, owner = sources[number]
+            return f'[{title}]({Path(os.path.relpath(ROOT/owner, OUT.parent)).as_posix()})'
+        lines.append(re.sub(r'(?:2014\s+)?(?:ledger\s+)?Entry\s+(80|81|99|102|105|106|110)\b', replace, line))
+    return ''.join(lines)
 
 def main():
     parser = argparse.ArgumentParser()

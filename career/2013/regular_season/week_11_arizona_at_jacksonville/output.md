@@ -326,4 +326,6 @@ Start and end are field positions for the offense; a punt, field-goal or downs r
 **League awards:** Week 11 drawn. Jones-Drew (AFC offense) and Scobee (AFC special teams) were shortlisted; neither was drawn.
 **Engine notes:** None new. First Jacksonville game under kernel 2013.8.
 
-**Ledger entry:** Entry 52. **Next event:** Week 12 at Houston, Sunday, November 24, 1 p.m. ET. **Not simulated.**
+**Next event:** Week 12 at Houston, Sunday, November 24, 1 p.m. ET. **Not simulated.**
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - November 17, 2013 - Week 11 vs Arizona closed", "original_close": "Commit closed - Canonical update - November 17, 2013 - Week 11 vs Arizona closed - canonical through November 17, after Week 11", "sequence": 52, "through": "2013-11-17"}, "date": "2013-11-17", "id": "2013-11-17-week-11-vs-arizona-closed", "status": "closed", "summary": "Jacksonville 29, Arizona 7."} -->

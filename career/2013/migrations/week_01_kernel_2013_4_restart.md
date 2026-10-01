@@ -1,8 +1,8 @@
 # Week 1 restart under kernel 2013.4
 
-**Status:** CLOSED. Week 1 was replayed as generation 3 and closed by ledger Entry 35: Jacksonville 31, Kansas City 13, with all sixteen games replaced.
+**Status:** CLOSED. Week 1 was replayed as generation 3 and closed by [2013 Kansas City game report](../regular_season/week_01_kansas_city_at_jacksonville/output.md): Jacksonville 31, Kansas City 13, with all sixteen games replaced.
 **User authorization:** On September 27, 2026 the user directed a full Week 1 restart after the statistical audit, asked that everything from Week 1 be deleted, and asked that the engine fixes and the stat-sheet rebuild be made.
-**Restored checkpoint:** `Canonical correction - September 4, 2013 - Week 1 voided for kernel 2013.4 restart` (roster content equals the September 4 Entry 29 state).
+**Restored checkpoint:** `Canonical correction - September 4, 2013 - Week 1 voided for kernel 2013.4 restart` (roster content equals the September 4 [2013 cap compliance](../record.md) state).
 **Control manifest:** [week_01_full_fidelity_reset.json](week_01_full_fidelity_reset.json), now at event generation 3 (`2013-week01-reset-v3-01` through `-16`) and kernel 2013.4.
 
 ## What was deleted
@@ -12,7 +12,7 @@
 - the Week 2 generation-readiness report, which only audited those receipts;
 - the Week 1 result, statistics, injuries, standings and post-game role statements in the roster, register, calendar, standings, week files and current state.
 
-Ledger Entries 30 through 33 remain in the append-only ledger as superseded history. The private journal keeps its append-only event rows; generations 1 and 2 are marked there, never deleted.
+The [superseded Week 1 generations and attribution corrections](week_01_full_fidelity_reset.md) remain preserved as technical history. The private journal keeps its append-only event rows; generations 1 and 2 are marked there, never deleted.
 
 ## Why the restart is allowed
 
@@ -27,5 +27,7 @@ The trigger was a measured engine defect, not a result. The audit compared every
 5. Run `python scripts/check_week1_reset_ready.py` (manifest, 32 inputs, branch exclusivity, game-day units and depth) until it passes.
 6. Close all sixteen generation-3 events once each through `runtime.game_runner.run_game`. Preserve a full Jacksonville receipt and compact receipts for the other fifteen.
 7. Rebuild every stat view with `python scripts/render_season_stats.py 2013 --team "Jacksonville Jaguars"`, including `team_stats.md` and `calibration_audit.md`. An OUTSIDE audit row is investigated as a possible input or engine defect; it is never a reason to rerun a closed game.
-8. Rebuild standings, write the Week 1 output and league roundup, reconcile injuries and state, append the ledger entry and validate.
+8. Rebuild standings, write the Week 1 output and league roundup, reconcile injuries and state, record the closure with the game output, regenerate the annual record and validate.
 9. Merge before advancing the private snapshot. Stop before Week 2.
+
+<!-- event-record: {"closure": {"checkpoint": "Canonical correction - September 4, 2013 - Week 1 voided for kernel 2013.4 restart", "original_close": "Commit closed - Canonical correction - September 4, 2013 - Week 1 voided for kernel 2013.4 restart - canonical through September 4, after regular-season cap compliance and before Week 1", "sequence": 34, "through": "2013-09-04"}, "date": "2013-09-04", "id": "2013-09-04-week-1-voided-for-kernel-2013-4-restart", "kind": "technical", "status": "closed", "summary": "Defective Week 1 generations were voided before a full replacement slate."} -->

@@ -1,4 +1,4 @@
-<!-- sim-meta: {"event_entry": 8, "kind": "evidence_summary", "source": "career/2013/offseason/rookie_minicamp/output.md", "source_sha256": "f5804128f7932cd2006f9af31606a463d7854ee1aa6be9c167969b5a512d1e93", "status": "COMPLETE", "through": "2013-05-05"} -->
+<!-- sim-meta: {"event_ref": "2013-05-03-rookie-contracts-and-rookie-minicamp-completed", "kind": "evidence_summary", "source": "career/2013/offseason/rookie_minicamp/output.md", "source_sha256": "c2da3d2bb7585a22a5db81fa30b236410a03b22eddfa36c2b0b8dcba69a9e8c2", "status": "COMPLETE", "through": "2013-05-05"} -->
 
 # Rookie-minicamp standouts
 

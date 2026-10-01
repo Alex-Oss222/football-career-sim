@@ -5,9 +5,9 @@
 
 ## The season in the record
 
-Shorts dressed for all 16 regular-season games and both playoff games. In Week 1 he and Blackmon were the starting pair carried from camp ("Shorts/Blackmon lead"); ledger Entry 36 made him WR1 from Week 2, and he stayed first in the receiver order through the Divisional game. Blackmon was on Reserve/Suspended for Weeks 2 to 5 and inactive by Stone's choice in Weeks 6 and 7; from Week 8 the order was Shorts, Thielen (WR2/H), Blackmon (outside Z), Clemons, Brown.
+Shorts dressed for all 16 regular-season games and both playoff games. In Week 1 he and Blackmon were the starting pair carried from camp ("Shorts/Blackmon lead"); [Blackmon suspension ruling](../../regular_season/week_02_jacksonville_at_oakland/output.md) made him WR1 from Week 2, and he stayed first in the receiver order through the Divisional game. Blackmon was on Reserve/Suspended for Weeks 2 to 5 and inactive by Stone's choice in Weeks 6 and 7; from Week 8 the order was Shorts, Thielen (WR2/H), Blackmon (outside Z), Clemons, Brown.
 
-Regular season (game receipts): 157 targets, 104 receptions, 1,158 yards, 6 touchdowns; 11.1 yards a catch and a longest reception of 55 (team statistics view); 4 rushes for 15 yards (long 8); 2 punt returns for 13 yards and 1 kick return for 24; no fumble. Through eight games (bye review): 55 receptions. The ledger's season summary lists his 1,158 receiving yards among the verified statistics.
+Regular season (game receipts): 157 targets, 104 receptions, 1,158 yards, 6 touchdowns; 11.1 yards a catch and a longest reception of 55 (team statistics view); 4 rushes for 15 yards (long 8); 2 punt returns for 13 yards and 1 kick return for 24; no fumble. Through eight games (bye review): 55 receptions. The season summary lists his 1,158 receiving yards among the verified statistics.
 
 Postseason: 16 targets, 9 receptions, 148 yards, 2 touchdowns; 2 rushes for 5 yards and a touchdown; 1 punt return for 16 yards.
 
@@ -48,7 +48,7 @@ Recorded moments:
 - Divisional: 40-yard touchdown on Mesh at the end of a nine-pass, 80-yard drive for a 10-7 lead. Jacksonville's eight drives after that touchdown gained 62 yards; 1 of 9 on third down.
 - Weekly-award shortlists: none. In-season honours: none. Receipt injuries: none; available every week.
 
-Evidence caveat: the Week 7 and Week 8 records state that kernel 2013.6 (Weeks 4 to 8) did not tie call labels to the receiver, and ledger Entry 44 records that its targets followed position-group usage and depth order. Concept names on his catches before Week 10 are therefore not used below as evidence about him, and no evaluation here rests on his target count.
+Evidence caveat: the Week 7 and Week 8 records state that kernel 2013.6 (Weeks 4 to 8) did not tie call labels to the receiver, and [2013 San Diego game report](../../regular_season/week_07_san_diego_at_jacksonville/output.md) records that its targets followed position-group usage and depth order. Concept names on his catches before Week 10 are therefore not used below as evidence about him, and no evaluation here rests on his target count.
 
 ## Conversation
 
@@ -213,10 +213,10 @@ Evidence caveat: the Week 7 and Week 8 records state that kernel 2013.6 (Weeks 4
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/cecil_shorts.json` (register, contract, season and postseason totals and game lines, no receipt injuries, no shortlists)
-- `career/2013/roster.md` line 52; `career/2013/depth_chart.json` line 10; `career/2013/ledger.md` line 759 (Entry 36, WR1 from Week 2)
+- `career/2013/roster.md` line 52; `career/2013/depth_chart.json` line 10; [Blackmon suspension ruling](../../regular_season/week_02_jacksonville_at_oakland/output.md) (WR1 from Week 2)
 - `career/2014/finances/player_contracts/contract_status.md` line 83
 - `career/2013/stats/team_player_stats.md` lines 30, 136, 154 (average, longest reception, fumbles, returns, rushing long)
-- `career/2013/ledger.md` line 988 (Entry 44, 2013.6 labels and targets) and line 1850 (season summary)
+- [2013 San Diego game report](../../regular_season/week_07_san_diego_at_jacksonville/output.md) (2013.6 labels and targets); [Super Bowl XLVIII report](../../league_results/week_21.md) (season summary)
 - `career/2013/offseason/otas/output.md` lines 38, 55, 98, 164, 194, 204; `otas/standouts.md` line 14
 - `career/2013/offseason/mandatory_minicamp/output.md` lines 21, 29, 53; `mandatory_minicamp/standouts.md` line 14
 - `career/2013/offseason/training_camp/output.md` lines 31, 57; `training_camp/position_battles.md` line 11

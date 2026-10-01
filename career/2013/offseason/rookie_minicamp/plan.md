@@ -353,5 +353,5 @@ This file is the plan. When rookie minicamp is actually run:
 - write the event to `output.md`;
 - write standouts only where observed evidence supports them;
 - update player/register/current-state records only for facts actually changed by the event;
-- record the event in the season ledger;
+- record the event in this phase’s output and regenerate the season’s dated record;
 - preserve this plan unless the user changes the plan itself.
