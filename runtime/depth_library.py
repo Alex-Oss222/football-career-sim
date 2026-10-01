@@ -40,6 +40,15 @@ def available(player, week):
 def team_input(team, *, offense_anchor, defense_anchor, special_teams_anchor, week=1, season=2013):
     """A kernel TeamInput dict for one background club's game-day unit in `week`."""
     club = load(SeasonPaths(season).background_depth)["clubs"][team]
+    return club_input(team, club, offense_anchor=offense_anchor, defense_anchor=defense_anchor,
+                      special_teams_anchor=special_teams_anchor, week=week)
+
+
+def club_input(team, club, *, offense_anchor, defense_anchor, special_teams_anchor, week=1):
+    """The same TeamInput from one club entry (the library's schema), wherever
+    it is stored: the Week 1 library or a preseason opponent roster file."""
+    if not isinstance(club, dict) or not isinstance(club.get("players"), list) or not club["players"]:
+        raise ValueError("club entry for %s requires a nonempty players list" % team)
     roster = []
     for player in club["players"]:
         roster.append({

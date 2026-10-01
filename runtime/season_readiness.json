@@ -16,18 +16,21 @@
         },
         {
           "id": "season_rules",
-          "status": "BLOCKED",
-          "remaining": "Verify and adopt the 2014 playing/roster rules at their information gates.",
+          "status": "VERIFIED",
+          "remaining": "Verified October 1, 2026 at the August 1 to 4, 2014 clock; sourcing and two-pass verification in library/2014_playing_and_roster_rules.md, adoption in Document 2 section 7. Adopted at their public dates: the six March 26, 2014 playing-rule changes (uprights five feet taller, roll-up blocks to the side of the legs, running clock after a sack outside two minutes, previous-spot enforcement of defensive fouls behind the line, replay consultation with the officiating department, loose-ball recovery reviewable), the March 25 crossbar-dunk interpretation, the points of emphasis (illegal contact, defensive holding, offensive pass interference, hands to the face, abusive language), the May 20, 2014 preseason try experiment (15-yard line, a 33-yard kick, Hall of Fame Game and preseason Weeks 1 and 2 only, so Jacksonville's August 8 and 14 games; two-point try at the 2; the 2-yard-line try everywhere else), unchanged overtime, 12-club playoffs and 46-player game-day list, and the roster process (90 to 75 on August 26 and 53 on August 30, both 4 p.m. ET; practice squad eight at the clock and ten only from the August 19 gate; one designated-return player taken from the 53 after the cut, practice after six weeks and play after eight; trade deadline October 28; Top-51 through the first regular-season game). Engine: kernel 2014.4 now carries the preseason game type and a dated try rule (runtime/rules.py extra_point_rule): a preseason game dated August 7 to 17, 2014 resolves the try as a 33-yard kick on the field-goal distance model with the kicker's term; every other game keeps the 2-yard-line try, and regular and postseason packets are byte-identical (tests/test_preseason_game.py). runtime/defect_register.md item 22 is closed by that acceptance; items 23 and 24 (sack clock and points of emphasis against the 2012 calibration) stay open as calibration notes.",
           "evidence": [
-            "foundation/02_League_Era_and_Sourcebook.md"
+            "library/2014_playing_and_roster_rules.md",
+            "foundation/02_League_Era_and_Sourcebook.md",
+            "runtime/defect_register.md"
           ]
         },
         {
           "id": "season_closure",
-          "status": "BLOCKED",
-          "remaining": "Accept an isolated 2014 end-to-end closure using legal 2014 inputs; path routing alone is not acceptance.",
+          "status": "VERIFIED",
+          "remaining": "Verified October 1, 2026: tests/test_2014_season_closure.py closes one complete synthetic Week 1 slate (the sixteen real 2014 fixtures with synthetic depth-ordered 46-player units) through scripts/close_week.py's close_slate and write_receipts against a copy of the repository in a temporary root and a local private service with a pinned store seed, Jacksonville first under user control with its pauses answered, then generates every dependent view the weekly workflow generates (full and compact receipts under 05_Regular_Season/Statistics/records/game_receipts, the statbook views, standings, the gamebook box score in 05_Regular_Season/Games/Week_01/output.md, the award pages, the team tracker and the player cards) and runs scripts/validate_repository.py on that root, which accepts the 2014 records; the real career tree, cache and live service are untouched and checked so. Recorded in docs/update_workflow.md (2014 closure acceptance). Open before the first week: freeze the 2014 awards methodology (no 2014 methodology.json exists, so no award draw was exercised, only the award-page rendering) and build the legal inputs the legal_rosters gate requires.",
           "evidence": [
-            "docs/update_workflow.md"
+            "docs/update_workflow.md",
+            "tests/test_2014_season_closure.py"
           ]
         },
         {
@@ -51,10 +54,12 @@
         },
         {
           "id": "financial_control",
-          "status": "BLOCKED",
-          "remaining": "Reconcile 2014 obligations and practice-squad/futures control before transactions or participation.",
+          "status": "VERIFIED",
+          "remaining": "Verified October 1, 2026 at the August 1 clock; reconciliation dated August 1, 2014 in career/2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md, no figure changed. All 78 controlled players carry a 2014 figure on an existing basis: 74 under contract (50 branch, 18 inherited, 6 reserve/future effective March 11) in the contract table, and the four unsigned tenders (Bradfield $1,431,000 RFA; Clemons and Pasztor $570,000 and Brown $495,000 ERFA) counted at their tender amounts under the Top-51 rule while outstanding; those four are not under contract, have not reported and cannot participate until they sign. The 26 rookie contracts are signed (nine slot reconstructions, 17 three-year minimums) and dead money of $10,417,192 is itemized. Top-51 applies through the first regular-season game, so the camp count stays the offseason count; the working difference against the $133,000,000 cap is $8,046,314 before any carryover, and every unresolved item (uncertified 2013 carryover of about $5.33M to $6.00M, the uncertified rookie-pool allocation, the Blackmon forfeiture credit, 2013 incentive settlement, Bradfield's 2013 salary and the single-source expiry of Brown and Pasztor) is either a credit or bounded well inside that margin, so none blocks a transaction gate or participation. python scripts/render_jaguars_cap_tracker.py --check passes. No certified cap room exists; the open items stay named in the worksheet and close only through ledger events.",
           "evidence": [
-            "career/2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md"
+            "career/2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md",
+            "career/2014/00_Team_Operations/Finances/player_contracts/contract_status.md",
+            "career/2014/00_Team_Operations/Finances/player_contracts/contracts.md"
           ]
         }
       ]

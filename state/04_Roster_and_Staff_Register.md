@@ -3,12 +3,12 @@
 ## Document status
 
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap and draft-capital reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH AUGUST 1, 2014; owned roster, role and medical facts unchanged since July 29.**
-- Effective through: **August 1, 2014 (78 controlled players; rookies and first-year players reported July 21 and veterans July 24 with camp physicals communicating no restriction; the first five camp practices July 25 to 29 without full pads and the padded practices of July 30 and August 1 with no injury or restriction communicated; the five open competitions standing as Stone set them May 12 with their first contact evidence recorded; the four unsigned tenders not under contract and not reported)**.
-- Current authority: [camp report through August 1](../career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md), supported by the [roster](../career/2014/00_Team_Operations/Team/Roster/roster.md), [depth chart](../career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md) and [medical report](../career/2014/00_Team_Operations/Medical/current_injury_report.md).
+- Current status: **RECONCILED THROUGH AUGUST 4, 2014; owned roster, role and medical facts unchanged since July 29.**
+- Effective through: **August 4, 2014 (78 controlled players; rookies and first-year players reported July 21 and veterans July 24 with camp physicals communicating no restriction; the first five camp practices July 25 to 29 without full pads, the padded practices of July 30, August 1 and August 4 and the August 2 scrimmage with no injury or restriction communicated; the five open competitions standing as Stone set them May 12 after the August 2 block review; the four unsigned tenders not under contract and not reported).**
+- Current authority: [camp report through August 4](../career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md), supported by the [roster](../career/2014/00_Team_Operations/Team/Roster/roster.md), [depth chart](../career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md) and [medical report](../career/2014/00_Team_Operations/Medical/current_injury_report.md).
 - Prior events: the [2014 record](../career/2014/Record.md) and [2013 record](../career/2013/record.md) link to the actual event owners.
-- Detailed readable roster: `career/2014/team/roster/roster.md`.
-- Current cap worksheet: `career/2014/finances/salary_cap/cap_worksheet.md`.
+- Detailed readable roster: `career/2014/00_Team_Operations/Team/Roster/roster.md`.
+- Current cap worksheet: `career/2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md`.
 - Current calendar: `career/2014/calendar.md`.
 - Statistical authority: public game receipts and the season statistics generated from them.
 - Authority source: Document 3 remains the sole source of final organizational authority.
@@ -24,16 +24,16 @@ This register states each current fact once, in the section that owns it. Dated 
 | Competition | NFL |
 | Season | 2014 |
 | Divergence point | January 15, 2013: Alex Stone accepts Jacksonville head-coach offer |
-| Season phase | 2014 training camp, Block 2 (pads, physical execution and competition) from July 30, after Block 1 from the July 21 and 24 reports; league year open from March 11, 2014 (2013 season complete, eliminated in the AFC Divisional round) |
-| Owned content effective | July 29, 2014 (register pointers current through August 1, 2014; no owned fact changed) |
+| Season phase | 2014 training camp, camp block 1 closed August 4 after the scrimmage and block review, game-week preparation for the August 8 preseason opener next; league year open from March 11, 2014 (2013 season complete, eliminated in the AFC Divisional round) |
+| Owned content effective | July 29, 2014 (register pointers current through August 4, 2014; no owned fact changed) |
 | Document 4 register version | `JAX-2014-JUL29-REGISTER-67` |
 | Supersedes | `JAX-2014-JUN28-REGISTER-66` |
 | Last content-changing checkpoint | `Canonical update - July 29, 2014 - Training camp opened` |
-| Latest closed event | [First padded camp block](../career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md), through August 1, 2014. No transaction, injury, new restriction or role change; 78 controlled players |
+| Latest closed event | [Scrimmage and camp block 1 closed](../career/2014/04_Training_Camp_and_Preseason/Training_Camp/training_report.md), August 2 to 4, 2014: the August 2 scrimmage in series with no score kept, the block review (no competition decided; Plan execution first assessed Average for each unit's named lineup, Communication retained at Average), the August 3 day off and the August 4 padded practice. No transaction, injury, new restriction or role change; 78 controlled players |
 | Current controlled players | **78** |
 | Current practice squad | **0** (no 2014 practice squad before the regular season) |
-| Next scheduled football event | August 2 scrimmage and block review; August 5 to 7 game-week preparation; August 8 preseason game 1 (blocked by the 2014 release gates); dated events are in Document 5 section 9 |
-| Unresolved matter before participation | Bradfield, Clemons, Brown and Pasztor (unsigned tenders) are outside the program and the social calendar until they sign (user instruction, May 1); they are not under contract, have not reported to camp and may not practice until they sign. Bradfield's $1,431,000 qualifying offer stands after Caldwell's June 16 action (no substitution). Cornelius Lucas's foot is a carried performance-staff review item after the July 21 physical; he worked both padded practices in full with no communicated restriction. Padded work continues under the medical instructions refreshed at report; none has been communicated as a restriction |
+| Next scheduled football event | August 5 to 7 game-week preparation for Tampa Bay; August 8 preseason game 1 (blocked by the 2014 release gates); dated events are in Document 5 section 9 |
+| Unresolved matter before participation | Bradfield, Clemons, Brown and Pasztor (unsigned tenders) are outside the program and the social calendar until they sign (user instruction, May 1); they are not under contract, have not reported to camp and may not practice until they sign. Bradfield's $1,431,000 qualifying offer stands after Caldwell's June 16 action (no substitution). Cornelius Lucas's foot is a carried performance-staff review item after the July 21 physical; he worked every padded practice and the scrimmage in full with no communicated restriction. Padded work continues under the medical instructions refreshed at report; none has been communicated as a restriction |
 
 ## Roster control and legality
 
@@ -41,7 +41,7 @@ This register states each current fact once, in the section that owns it. Dated 
 
 | Exact primary status | Current count | Governing limit | Reconciled |
 |---|---:|---:|---|
-| Offseason roster | **78** | 90-player offseason limit from the league year | August 1, 2014; no transaction since the May 12 Rackley trade |
+| Offseason roster | **78** | 90-player offseason limit from the league year | August 4, 2014; no transaction since the May 12 Rackley trade |
 
 | Primary-status total | Current value | Derivation |
 |---|---:|---|
@@ -54,7 +54,7 @@ The offseason roster is 78 of 90. Only recorded contracts and the adopted contra
 
 ### Current player index
 
-<!-- player-ages-as-of: 2014-08-01 -->
+<!-- player-ages-as-of: 2014-08-04 -->
 
 DOB is a verified pre-divergence identity fact, supported by the [birth-date evidence registry](../library/data/player_birth_dates.json) and [verification notes](../library/2013_player_birth_dates.md). Age is derived at Document 5's master date, refreshed with `python scripts/render_player_ages.py`. An age does not determine a rating, medical clearance or retirement.
 
@@ -238,7 +238,7 @@ The player index owns each player's availability boundary. In summary:
 
 ## Football roles, depth and packages
 
-2013 roles carry until Stone changes them. The Role column of `career/2014/team/roster/roster.md` records each decided role. Current depth order is `career/2013/depth_chart.json` (effective January 6, AFC Divisional preparation; read by `runtime/week_inputs.py`). The [2014 working depth chart](../career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md) carries that order into 2014 with contract flags and Stone's May 12 rep starting points ([May 12–23 spring record](../career/2014/Record.md)); it is not a game input.
+2013 roles carry until Stone changes them. The Role column of `career/2014/00_Team_Operations/Team/Roster/roster.md` records each decided role. Current depth order is `career/2013/depth_chart.json` (effective January 6, AFC Divisional preparation; read by `runtime/week_inputs.py`). The [2014 working depth chart](../career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md) carries that order into 2014 with contract flags and Stone's May 12 rep starting points ([May 12–23 spring record](../career/2014/Record.md)); it is not a game input.
 
 - Stone's May 12, 2014 starting roles entering OTAs, each a rep starting point with named competition and not an award: WR1 Nicks (Adams the competition); WR3 Adams (Hawkins); left guard Bitonio, guard first (Norwell); right guard Turner (Bitonio or Norwell if Turner struggles); Edge 1 Mincey (Branch). All five stand unchanged after the ten OTA days, the mandatory minicamp and the first five camp practices ([May 24–June 13 record](../career/2014/Record.md) to 114): the named competition took real reps, the non-contact evidence decides none of the jobs, and Turner's conditional swap was not triggered; padded evidence begins July 30. No other rookie has a place.
 

@@ -1,7 +1,7 @@
 # Left guard | Jacksonville Jaguars | 2014
 
 **Position:** Offensive guard, offense  
-**Work covered:** Spring teaching and camp through August 1, 2014; the July 30 and August 1 padded sessions used controlled contact.  
+**Work covered:** Spring teaching and camp through August 4, 2014; the July 30, August 1 and August 4 padded sessions and the August 2 scrimmage used controlled contact, the scrimmage in series with the calls from the sideline and no score kept.  
 **Competition:** Open  
 **Starting arrangement:** Bitonio begins left-guard reps beside Brewster; Norwell is the named competition.
 
@@ -10,20 +10,20 @@ The coordinator and position-coach rows are staff-analysis reconstructions from 
 | Assessment | [Joel Bitonio](../../../../00_Team_Operations/Team/Player_Cards/joel_bitonio.md) | [Andrew Norwell](../../../../00_Team_Operations/Team/Player_Cards/andrew_norwell.md) |
 |---|---|---|
 | Fit for this spot | His assignment includes securing the interior run surface and executing the shared HALF protection. His set must protect the inside counter as well as the initial rush. | The recorded ACE combination with Brewster fits the offense's downhill Power work. Protection also requires maintaining leverage when the defender attacks first. |
-| Work that supports him | July 30: anchored against Marks, then over-set once and exposed the inside lane. August 1: corrected set angle held against Marks and in his right-guard trial. | July 30: carried the combination with Brewster to the linebacker; recovered a leverage loss to Miller without pocket collapse. August 1: combination held again, no leverage loss recorded. |
+| Work that supports him | July 30: anchored against Marks, then over-set once and exposed the inside lane. August 1: corrected set angle held against Marks and in his right-guard trial. August 2, in series: the set angle correct through the early and late series against Marks, the delayed retest held. August 4: as in the scrimmage, nothing new recorded. | July 30: carried the combination with Brewster to the linebacker; recovered a leverage loss to Miller without pocket collapse. August 1: combination held again, no leverage loss recorded. August 2, a mixed series at left guard beside Brewster with the first group: the combination through to the linebacker; walked back once by Marks in protection late in the series, recovered before the whistle. August 4: nothing new recorded. |
 | Work still needed | Retain set angle and inside hand against repeated counters and sustain the combination through changing fronts. | Repeat the combination and protection recovery under longer work and game conditions; two padded sessions provide a limited sample. |
-| Head coach's assessment: Alex Stone | Stone's May 12 left-guard starting point remains Bitonio. | Stone named Norwell as the left-guard competition. First-group reps beside Brewster were an authorized comparison, not an awarded job. |
+| Head coach's assessment: Alex Stone | Stone's May 12 left-guard starting point remains Bitonio; the August 2 block review left it in place, the scrimmage having added evidence of the same mixed shape for each competitor. | Stone named Norwell as the left-guard competition. First-group reps beside Brewster, in the padded days and in a scrimmage series, were an authorized comparison, not an awarded job. |
 | Coordinator's assessment: Mike Tice | The HALF identification held at contact speed. Compare how his technique supports the five-man unit, including the effect of any move to right guard. | The combination supplies useful evidence for Power. A Norwell-at-left arrangement also changes the comparison available at right guard, so both sides must be considered together. |
-| Position coach's assessment: George Yarno | Yarno corrected the set angle and inside hand after Marks's counter. The August 1 retest held. | The combination reached the second level and the recorded protection loss was recovered. No specific new Norwell correction was recorded in this block. |
+| Position coach's assessment: George Yarno | Yarno corrected the set angle and inside hand after Marks's counter. The August 1 retest held, and the angle held early and late in series on August 2. | The combination reached the second level in series; the late protection loss to Marks was recovered. No specific new Norwell correction was recorded in the block. |
 
 ## What separates the candidates
 
-Bitonio's inside counter and Norwell's initial leverage loss are different technical questions. Both have useful contact evidence, and the shared protection held. Neither has won the left-guard job from this block.
+Bitonio's inside counter and Norwell's initial leverage loss are different technical questions. Both have useful contact evidence, now in series, and the shared protection held with the call from the sideline. Each has a secured block and an occasional lost rep; neither has won the left-guard job from this block.
 
 ## Next work and decision
 
-Retest the combinations beside Brewster in the scrimmage, then assess the same jobs under preseason pressure. No new role has been awarded. [Roster decisions](../../../Roster_Decisions/roster_decisions.md) owns any eventual change.
+Test the combinations beside Brewster against Tampa Bay on August 8, after the August 5 to 7 game-week preparation, against a pocket that collapses. No new role has been awarded. [Roster decisions](../../../Roster_Decisions/roster_decisions.md) owns any eventual change.
 
 ## Evidence
 
-[Camp observations and retests](../../../Training_Camp/training_report.md#july-30-first-full-pads-the-padded-sequence-in-order) · [August 1 position review](../../../Training_Camp/training_report.md#camp-questions-position-at-august-1) · [Current depth chart and May 12 instruction](../../../../00_Team_Operations/Team/Depth_Chart/depth_chart.md) · [Staff responsibilities](../../../../00_Team_Operations/Staff/coaching_staff.md) · [Active offensive book](../../../../../playbook/alex_stone_2013_offensive_playbook_iteration_i.md)
+[Camp observations and retests](../../../Training_Camp/training_report.md#july-30-first-full-pads-the-padded-sequence-in-order) · [August 1 position review](../../../Training_Camp/training_report.md#camp-questions-position-at-august-1) · [August 2 scrimmage](../../../Training_Camp/training_report.md#august-2-scrimmage-in-series-the-coaches-off-the-field) · [August 4 retests and position review](../../../Training_Camp/training_report.md#camp-questions-position-at-august-4) · [Current depth chart and May 12 instruction](../../../../00_Team_Operations/Team/Depth_Chart/depth_chart.md) · [Staff responsibilities](../../../../00_Team_Operations/Staff/coaching_staff.md) · [Active offensive book](../../../../../playbook/alex_stone_2013_offensive_playbook_iteration_i.md)

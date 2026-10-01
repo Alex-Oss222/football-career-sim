@@ -88,7 +88,10 @@ def game_day_errors(team, team_input):
     return errors
 
 
-def check_inputs(data, controlled_players, protagonist="Jacksonville Jaguars", expected_games=None):
+def check_inputs(data, controlled_players, protagonist="Jacksonville Jaguars", expected_games=None,
+                 active_limit=GAME_DAY_ACTIVE_LIMIT):
+    """``active_limit`` is 46 for a regular-season or postseason slate; a
+    preseason game passes runtime.rules.active_limit("preseason")."""
     errors = []
     ownership: dict[str, set[str]] = {}
     team_games: dict[str, int] = {}
@@ -129,8 +132,8 @@ def check_inputs(data, controlled_players, protagonist="Jacksonville Jaguars", e
                 continue
             errors.extend(game_day_errors(team, team_input))
             dressed = len(team_input.get("active_players", ()) or ())
-            if dressed > GAME_DAY_ACTIVE_LIMIT:
-                errors.append(f"{team}: {dressed} game-day actives, limit {GAME_DAY_ACTIVE_LIMIT}")
+            if dressed > active_limit:
+                errors.append(f"{team}: {dressed} game-day actives, limit {active_limit}")
             for player in _player_ids(team_input):
                 ownership.setdefault(player, set()).add(team)
                 if team != protagonist and player in controlled_players:

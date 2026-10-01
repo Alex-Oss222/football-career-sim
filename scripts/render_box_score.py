@@ -254,22 +254,25 @@ def main():
     parser.add_argument("--season", type=int, required=True)
     parser.add_argument("--line-score", action="store_true",
                         help="Print the line score (2014 onward) instead of the box score")
+    parser.add_argument("--preseason", action="store_true",
+                        help="Read the season's preseason receipts (preseason_games/statistics) instead")
     args = parser.parse_args()
     from runtime.seasons import SeasonPaths, require_receipt_season
     paths = SeasonPaths(args.season, ROOT)
+    receipts = paths.preseason_receipts if args.preseason else paths.receipts
     if args.write:
         path = Path(args.write).resolve()
         if not path.is_relative_to(paths.career):
             parser.error('--write must belong to the requested career season')
         text = path.read_text(encoding="utf-8")
         for match in BLOCK.finditer(text):
-            require_receipt_season([load_receipt(match.group('event'), paths.receipts)], args.season)
-        path.write_text(fill(text, paths.receipts, args.season), encoding="utf-8")
+            require_receipt_season([load_receipt(match.group('event'), receipts)], args.season)
+        path.write_text(fill(text, receipts, args.season), encoding="utf-8")
         print("filled box scores in %s" % path)
         return
     if not args.event_id:
         parser.error("give an event id or --write OUTPUT_MD")
-    receipt = load_receipt(args.event_id, paths.receipts)
+    receipt = load_receipt(args.event_id, receipts)
     require_receipt_season([receipt], args.season)
     if args.line_score:
         if args.season < GAMEBOOK_FROM_SEASON:

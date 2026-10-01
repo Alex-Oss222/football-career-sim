@@ -1,6 +1,6 @@
 # Jacksonville 2014 camp and preseason roster decisions
 
-**NOT_STARTED.** Camp opened July 21 to 25, but no 2014 camp role, cut, signing, waiver claim or medical designation has been decided here; the July 27 review and the July 30/August 1 work changed no starting point. [Position questions](../Training_Camp/training_report.md#personnel-questions-after-august-1) contains observations through August 1; [the camp plan](../Training_Camp/staff_plan.md) holds intended work.
+**NOT_STARTED.** Camp opened July 21 to 25, but no 2014 camp role, cut, signing, waiver claim or medical designation has been decided here; the July 27 review and the July 30/August 1 work changed no starting point. [Position questions](../Training_Camp/training_report.md#personnel-questions-after-august-4) contains observations through August 1; [the camp plan](../Training_Camp/staff_plan.md) holds intended work.
 
 ## Actual decisions
 

@@ -35,8 +35,50 @@ class Rules2013:
     # periods on one continuous timeline of this many periods and fails
     # closed if it is ever exhausted.
     postseason_ot_period_bound: int = 10
+    # Preseason game-day unit: the 46-player active list applies to regular
+    # season and postseason games; in a preseason game every player on the
+    # club's roster may dress (2013-2014 offseason roster limit 90, cut to 75
+    # then 53 at the dated deadlines, which the roster file itself carries).
+    preseason_roster_limit: int = 90
+    # 2014 preseason extra-point experiment (approved by the clubs May 20,
+    # 2014; NFL communications, "NFL to experiment with longer extra points
+    # in preseason"): in preseason Weeks 1 and 2 the try was snapped from
+    # the 15-yard line, which the league described as a 33-yard kick; from
+    # preseason Week 3 and in the regular season the 2-yard line applied.
+    # The experiment belongs to 2014 only; two-point tries were unchanged.
+    preseason_2014_pat_snap_yard_line: int = 15
+    preseason_2014_pat_distance: int = 33
+    preseason_2014_pat_window: tuple = ("2014-08-07", "2014-08-17")
 
 RULES = Rules2013()
+PRESEASON = "preseason"
+GAME_TYPES = ("regular", "postseason", "pro_bowl", PRESEASON)
+
+
+def active_limit(game_type="regular"):
+    """Game-day actives a club may dress: 46, or the whole roster in preseason."""
+    return RULES.preseason_roster_limit if game_type == PRESEASON else RULES.active_limit
+
+
+def extra_point_rule(game_type="regular", game_date=None):
+    """The try rule for a game, or None when the ordinary extra point applies.
+
+    Only a 2014 preseason game dated inside the experiment window gets the
+    15-yard-line try, resolved on the field-goal distance model at 33 yards.
+    Every other game, every regular-season and postseason game included,
+    returns None and keeps the kernel's extra-point rate unchanged.
+    """
+    if game_type != PRESEASON or not game_date:
+        return None
+    if not isinstance(game_date, str) or len(game_date) != 10:
+        raise ValueError("game_date must be an ISO date string YYYY-MM-DD")
+    first, last = RULES.preseason_2014_pat_window
+    if first <= game_date <= last:
+        return {"snap_yard_line": RULES.preseason_2014_pat_snap_yard_line,
+                "distance": RULES.preseason_2014_pat_distance, "model": "field_goal_distance",
+                "basis": "2014 preseason Weeks 1-2 experiment"}
+    return {"snap_yard_line": RULES.pat_snap_yard_line, "distance": None,
+            "model": "extra_point_rate", "basis": "ordinary try"}
 
 DIVISION_TIEBREAKERS=("head_to_head","division_record","common_games","conference_record",
     "strength_of_victory","strength_of_schedule","conference_combined_rank",

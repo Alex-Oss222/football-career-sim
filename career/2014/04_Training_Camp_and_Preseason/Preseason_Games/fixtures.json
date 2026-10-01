@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "season": 2014,
+  "status": "RELEASED",
+  "game_type": "preseason",
+  "released": "2014-04-23T20:00:00-04:00",
+  "usable_from": "2014-04-23T20:00:00-04:00",
+  "source": "Jaguars, '2014 Jaguars schedule released', April 23, 2014 (preseason dates and kickoffs); matchups public April 9, 2014. Verified in library/2014_full_calendar_verification.md (source D) and career/2014/training_camp_and_preseason/preseason_games/README.md.",
+  "policy": "Schedule facts only: dates, kickoffs, opponents and venue direction. No scores, results, players, injuries or attendance. Preseason games never enter standings, the regular-season statbook, awards or the draft order.",
+  "games": [
+    {"game_id": "2014-preseason-01-tampa-bay-buccaneers-at-jacksonville-jaguars", "game": 1, "date": "2014-08-08", "weekday": "Friday", "kickoff_et": "19:30", "away": "Tampa Bay Buccaneers", "home": "Jacksonville Jaguars", "site": "home", "stadium": "EverBank Field"},
+    {"game_id": "2014-preseason-02-jacksonville-jaguars-at-chicago-bears", "game": 2, "date": "2014-08-14", "weekday": "Thursday", "kickoff_et": "20:00", "away": "Jacksonville Jaguars", "home": "Chicago Bears", "site": "home", "stadium": "Soldier Field"},
+    {"game_id": "2014-preseason-03-jacksonville-jaguars-at-detroit-lions", "game": 3, "date": "2014-08-22", "weekday": "Friday", "kickoff_et": "19:30", "away": "Jacksonville Jaguars", "home": "Detroit Lions", "site": "home", "stadium": "Ford Field"},
+    {"game_id": "2014-preseason-04-atlanta-falcons-at-jacksonville-jaguars", "game": 4, "date": "2014-08-28", "weekday": "Thursday", "kickoff_et": null, "away": "Atlanta Falcons", "home": "Jacksonville Jaguars", "site": "home", "stadium": "EverBank Field", "note": "Kickoff undetermined in the April 23 release; a later dated notice must supply it. Do not insert a time from a later announcement until that notice is reached."}
+  ]
+}

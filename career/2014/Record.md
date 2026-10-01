@@ -62,3 +62,4 @@ Dated events and their full records.
 - June 16, 2014 to June 28, 2014: Mandatory minicamp ran June 17 to 19 after June 16 physicals; the June 20 staff review led into summer break. [Full record](02_Offseason_Training/Mandatory_Minicamp/training_report.md).
 - July 21, 2014 to July 29, 2014: Rookies reported July 21 and veterans July 24; Jacksonville completed five practices from July 25 to 29. [Full record](04_Training_Camp_and_Preseason/Training_Camp/training_report.md).
 - July 30, 2014 to August 1, 2014: Jacksonville completed its first two controlled-contact padded practices. [Full record](04_Training_Camp_and_Preseason/Training_Camp/training_report.md).
+- August 2, 2014 to August 4, 2014: Jacksonville ran its August 2 scrimmage in series with no score kept, held the block review with no job decided, took August 3 off and closed camp block 1 with the August 4 padded practice. [Full record](04_Training_Camp_and_Preseason/Training_Camp/training_report.md).

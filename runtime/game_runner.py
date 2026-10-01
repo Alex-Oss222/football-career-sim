@@ -12,7 +12,7 @@ from .player_evidence import normalize_players, serialize_roster
 from .play_detail import canonical_call_sheet
 from .usage import lineup_errors
 from .call_families import sheet_errors
-from .rules import RULES
+from .rules import GAME_TYPES, active_limit
 
 ENTROPY_DOMAIN = b"football-career-sim/event-entropy/v1\0"
 
@@ -28,9 +28,13 @@ def _team_packet(team):
 
 
 def build_game_packet(event_id, snapshot, home, away, *, venue="home", weather="normal",
-                      game_type="regular", management_mode="autonomous"):
+                      game_type="regular", management_mode="autonomous", game_date=None):
     if not isinstance(event_id, str) or not event_id.strip():
         raise ValueError("canonical event_id required")
+    if game_type not in GAME_TYPES:
+        raise ValueError("unknown game type")
+    if game_date is not None and (not isinstance(game_date, str) or len(game_date) != 10):
+        raise ValueError("game_date must be an ISO date string")
     if not isinstance(snapshot, str) or len(snapshot) < 8:
         raise ValueError("current snapshot digest required")
     if home.team_id == away.team_id:
@@ -39,13 +43,15 @@ def build_game_packet(event_id, snapshot, home, away, *, venue="home", weather="
         raise ValueError("each club requires an available, roster-bound participant")
     for team in (home, away):
         # 2013 game-day rule: at most 46 active players (the other seven of
-        # the 53 are declared inactive). Fail closed before the private event
-        # is journaled; which players are inactive is a football decision
-        # made upstream (Stone for Jacksonville, depth order for others).
+        # the 53 are declared inactive); a preseason game may dress the whole
+        # roster (runtime.rules.active_limit). Fail closed before the private
+        # event is journaled; which players are inactive is a football
+        # decision made upstream (Stone for Jacksonville, depth order for others).
         actives = len(normalize_players(team))
-        if actives > RULES.active_limit:
+        limit = active_limit(game_type)
+        if actives > limit:
             raise ValueError(
-                f"{team.team_id} TeamInput has {actives} game-day actives; the 2013 limit is {RULES.active_limit}"
+                f"{team.team_id} TeamInput has {actives} game-day actives; the {game_type} limit is {limit}"
             )
         missing = lineup_errors(normalize_players(team))
         if missing:
@@ -58,12 +64,16 @@ def build_game_packet(event_id, snapshot, home, away, *, venue="home", weather="
         undeclared = sheet_errors(getattr(team, "offensive_call_sheet", ()) or ())
         if undeclared:
             raise ValueError(f"{team.team_id} call sheet cannot be labelled: " + "; ".join(undeclared))
-    return {
+    packet = {
         "procedure": KERNEL_VERSION, "event_id": event_id, "snapshot": snapshot,
         "home": _team_packet(home), "away": _team_packet(away), "venue": venue,
         "weather": weather, "game_type": game_type,
         "management_mode": management_mode,
     }
+    if game_date is not None:
+        # Preseason only (the try rule is dated); absent from every other packet.
+        packet["game_date"] = game_date
+    return packet
 
 
 def _entropy_from_ref(result_ref):
@@ -77,7 +87,7 @@ def _entropy_from_ref(result_ref):
 def run_game(home: TeamInput, away: TeamInput, *, event_id, snapshot,
              venue="home", weather="normal", game_type="regular",
              management_mode="autonomous", controlled_team=None, continuation=None,
-             client=None):
+             client=None, game_date=None):
     """Freeze canonical inputs privately, then and only then invoke the kernel.
 
     There is deliberately no seed parameter.  The authenticated service returns
@@ -101,13 +111,13 @@ def run_game(home: TeamInput, away: TeamInput, *, event_id, snapshot,
         raise ValueError("client and game snapshot differ")
     packet = build_game_packet(event_id, snapshot, home, away, venue=venue,
                                weather=weather, game_type=game_type,
-                               management_mode=management_mode)
+                               management_mode=management_mode, game_date=game_date)
     result_ref = client.close_event(packet)  # durable closure precedes draw
     entropy = _entropy_from_ref(result_ref)
     result = resolve_game(home, away, seed=entropy, event_id=event_id, venue=venue,
                           weather=weather, game_type=game_type,
                           management_mode=management_mode, controlled_team=controlled_team,
-                          continuation=continuation)
+                          continuation=continuation, game_date=game_date)
     if not result.get("terminated"):
         # A genuine partial result: completed events only, no final score.
         if "final_score" in result or "team_stats" in result:

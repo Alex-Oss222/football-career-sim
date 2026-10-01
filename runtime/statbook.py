@@ -152,6 +152,10 @@ def make_receipt(result, *, week, matchup, coverage="complete", detail="full",
         from .play_detail import drive_summary
         receipt["game_type"] = result.get("game_type", "regular")
         receipt["drives"] = drive_summary(result["possessions"])
+    if result.get("extra_point_rule") is not None:
+        # Preseason only: the dated try rule the kernel applied (runtime.rules).
+        receipt["game_date"] = result.get("game_date")
+        receipt["extra_point_rule"] = deepcopy(result["extra_point_rule"])
     if detail == "full":
         receipt["play_ledger"] = deepcopy(result.get("play_ledger", []))
         receipt["play_call_stats"] = deepcopy(result.get("play_call_stats", {}))
