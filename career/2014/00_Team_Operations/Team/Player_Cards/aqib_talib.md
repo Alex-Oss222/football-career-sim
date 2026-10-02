@@ -140,6 +140,12 @@ Fifty-eight defensive snaps outside with the interception of Luck's third-and-lo
 
 Source: [Week 3 game record](../../../05_Regular_Season/Games/Week_03/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 22 to 27, 2014 | Released; back outside
+
+His independent medical hold was reassessed Monday with no change and released Thursday, September 25, his projected date; Ball took the outside work in the packet's Talib-out picture Monday and Wednesday. Full Thursday and Friday and in the Saturday walkthrough, outside opposite Verner in the Dime and Nickel periods with Bouye at nickel, the packet's Talib-in secondary. Nothing charged to him on the recorded reps. Starts at San Diego by Stone's decision on the clearance; no designation on the Friday report.
+
+Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md) and the [medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

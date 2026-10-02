@@ -1,10 +1,10 @@
 {
  "team": "Jacksonville Jaguars",
  "season": 2014,
- "status": "SEASON GAME DEPTH CHART, the released 2014 game input. Issued by Stone on August 30, 2014 at the reduction to 53 (Document 3 row 9) from the August 28 personnel packet's baseline, over the 53 only; the secondary re-set September 13, 2014 for Week 2 after the September 8 transactions (Harris and Lowery to reserve/injured, Ball signed, Phillips promoted); the order unchanged and the inactives re-set September 20, 2014 for Week 3. Stone changes it only by decision; each change is logged in career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md and copied here in the same commit.",
- "effective": "August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); the defensive-back order set for Week 2 on September 13, 2014 and game_day_inactives re-set for Week 3 on September 20, 2014",
+ "status": "SEASON GAME DEPTH CHART, the released 2014 game input. Issued by Stone on August 30, 2014 at the reduction to 53 (Document 3 row 9) from the August 28 personnel packet's baseline, over the 53 only; the secondary re-set September 13, 2014 for Week 2 after the September 8 transactions (Harris and Lowery to reserve/injured, Ball signed, Phillips promoted); the order unchanged and the inactives re-set September 20, 2014 for Week 3; the defensive-back order and the inactives re-set September 27, 2014 for Week 4 after the San Diego preparation (Bouye the nickel and Prosinski the sixth defensive back with Poyer and Butler on their holds and listed last). Stone changes it only by decision; each change is logged in career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md and copied here in the same commit.",
+ "effective": "August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); the defensive-back order set for Week 2 on September 13, 2014 and re-set for Week 4 on September 27, 2014 with game_day_inactives re-set for Week 4 the same day",
  "sources": "The August 28 personnel packet's season depth chart baseline (Regular-season Week 1.md: Adams X, Thielen H, Hawkins Z; Lewis, Kelce, Jensen; Monroe, Bitonio, Brewster, Turner, Johnson; Kreiter snapping; Hawkins returning kicks and punts with Hurns the second punt returner; Nicks back to X and Adams to Z only after medical clearance and a full practice week); the frozen August 27 Atlanta chart (Preseason_Games/Game_04/depth_chart.json) for every other order; the current roster for control and availability; the August 30 reduction (Roster_Decisions/final_roster_cuts.md) for the 53.",
- "rule": "Order within each kernel position group, first = starter, as the kernel reads it. The packet's baseline sets the starting eleven on offense, the snapper and the returners; the Atlanta chart's order is carried for everyone else, minus the players who left on August 30. A player out under a medical instruction is listed last in his group while out and is on the inactive list (Nicks stays listed last after his September 20 clearance until a full practice week, Stone's condition; Hoskins, cleared September 16, keeps the fourth tight-end place); a player on reserve/injured is off the chart; his return to the order is Stone's decision on clearance under the packet's condition. The roles field carries the kernel roles (passer, placekicker, punt, kick_return, punt_return); Hurns is the second punt returner by Stone's instruction and is not given the kernel role, which the kernel reads as the first returner.",
+ "rule": "Order within each kernel position group, first = starter, as the kernel reads it. The packet's baseline sets the starting eleven on offense, the snapper and the returners; the Atlanta chart's order is carried for everyone else, minus the players who left on August 30. A player out under a medical instruction is listed last in his group while out and is on the inactive list (Poyer and Butler, on their holds, are last among the defensive backs for Week 4; Nicks completed the full practice week of Stone's condition on September 27 and keeps his sixth place until Stone decides his return to X; Hoskins keeps the fourth tight-end place); a player on reserve/injured is off the chart; his return to the order is Stone's decision on clearance under the packet's condition. The roles field carries the kernel roles (passer, placekicker, punt, kick_return, punt_return); Hurns is the second punt returner by Stone's instruction and is not given the kernel role, which the kernel reads as the first returner.",
  "depth": {
   "QB": [
    "Kirk Cousins",
@@ -67,12 +67,12 @@
    "Alterraun Verner",
    "Bacarri Rambo",
    "Brynden Trawick",
-   "Jordan Poyer",
    "A.J. Bouye",
-   "Malcolm Butler",
    "Chris Prosinski",
    "Adrian Phillips",
-   "Alan Ball"
+   "Alan Ball",
+   "Jordan Poyer",
+   "Malcolm Butler"
   ],
   "K": [
    "Josh Scobee"
@@ -169,16 +169,16 @@
   ]
  },
  "game_day_inactives": {
-  "week": 3,
+  "week": 4,
   "players": [
-   "Hakeem Nicks",
-   "Alan Ball",
+   "Jordan Poyer",
+   "Malcolm Butler",
+   "Jonathan Grimes",
    "Corey Linsley",
    "Kasim Edebali",
    "Todd Davis",
-   "Gator Hoskins",
    "Taylor Gabriel"
   ],
-  "note": "Seven of the 53 are inactive for Week 3 against Indianapolis (46 dress; rules library R4), set by Stone on September 20, 2014 after the Indianapolis preparation. No player on the 53 is out by medical instruction: Stanford and Johnson cleared September 19 and 17, Hoskins September 16 and Nicks September 20, each on his projected date. Five are set by Stone's standing rule for the healthy inactives, the deepest healthy reserve on the chart in each of the five largest healthy position groups, never below a legal game-day unit, re-set each week; at September 20 those groups are the defensive backs (10: Alan Ball, listed last), the offensive line (9: Corey Linsley), the defensive line (8: Kasim Edebali), the linebackers (7: Todd Davis) and the receivers (6: Hakeem Nicks, listed last under Stone's full-practice-week condition after a Saturday clearance with no practice week). Gator Hoskins and Taylor Gabriel are carried from the Week 2 list under the roster-decision rule that a week without a new inactive list reuses the last one, the standing rule naming only five when no player is out by instruction; whether Hoskins's practice week should displace a carried place is a Stone decision the packet did not cover, recorded as open in the Week 3 record. Stanford, cleared September 19, is active with his chart place unchanged; Johnson starts at right tackle after the September 18 retest. Mike Harris and Dwight Lowery are on reserve/injured from September 8 and are not on the chart. The four reserve/injured players and the seven practice-squad players are not on the 53 and cannot appear here."
+  "note": "Seven of the 53 are inactive for Week 4 at San Diego (46 dress; rules library R4), set by Stone on September 27, 2014 after the San Diego preparation under his Week 4 packet. Two by medical instruction, listed last in the defensive-back group while out: Jordan Poyer (independent medical hold, reassessed September 27 with no change, projected return October 9) and Malcolm Butler (independent medical hold, reassessed September 24 with no change, projected return October 2). Five by the packet's provisional list as the week's evidence resolved it: Hakeem Nicks completed the full practice week September 22 to 27, so the packet's alternative for that case applied and Jonathan Grimes, the third back in Stone's explicit hierarchy, is the next healthy inactive, Westhoff's unit check finding no defined coverage job on him (one kicking-game snap in Week 3) and the Friday availability check (Adams cleared Friday without a practice, questionable) favouring the extra receiver; Corey Linsley (ninth lineman), Kasim Edebali (eighth defensive lineman), Todd Davis (seventh linebacker) and Taylor Gabriel (fifth receiver) are the packet's healthy-depth candidates. This dresses Nicks, Alan Ball and Gator Hoskins compared with Week 3: Ball is the eighth healthy defensive back and the outside reserve behind Talib and Verner; Hoskins entered the preparation as the packet recommended and its conditions for returning him to the list (Kelce cleared, a failed job and another position needing the place) were not all met. Kelce and Talib, cleared and released September 25, and Adams, cleared September 26 (questionable), are active; Talib starts outside with Verner, Bouye is the nickel and Prosinski the sixth defensive back (the packet's Talib-in secondary). Nicks's return to X with Adams to Z is Stone's decision, open; his chart place is unchanged. Mike Harris and Dwight Lowery are on reserve/injured from September 8 and are not on the chart. The four reserve/injured players and the seven practice-squad players are not on the 53 and cannot appear here."
  }
 }

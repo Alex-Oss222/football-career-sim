@@ -121,6 +121,12 @@ All 59 offensive snaps at X with four catches on nine targets for 54 and two tou
 
 Source: [Week 3 game record](../../../05_Regular_Season/Games/Week_03/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 22 to 27, 2014 | Cleared Friday; the San Diego week
+
+Reassessed Monday with no change; did not practice Wednesday or Thursday, Hurns carrying the receiver work by the chart's order; cleared Friday, September 26, his projected date, and not inserted into the Friday practice, the arrangement carried from Jones-Drew's and Stanford's Friday clearances; questionable on the Friday report; full in the Saturday walkthrough. Active for San Diego at X with his chart place unchanged. No football finding attaches to the week.
+
+Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md) and the [medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

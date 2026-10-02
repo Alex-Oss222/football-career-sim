@@ -127,6 +127,12 @@ Cleared Tuesday, September 16, his projected date, and full Wednesday through Fr
 
 Source: [Week 3 record](../../../05_Regular_Season/Games/Week_03/output.md) and the [medical history](../../Medical/medical_history.md#september-15-to-20-stanford-johnson-hoskins-and-nicks-cleared-harris-and-lowery-reassessed). This coaching update preserves the opening grades above.
 
+### September 22 to 27, 2014 | Into the preparation
+
+Activated into the Week 4 preparation as the packet recommended rather than carried on the inactive list: the tight-end work with Lewis and Jensen Monday and Wednesday while Kelce was out, then the fourth tight end's work Thursday and Friday after Kelce's clearance, the full week with no communicated restriction. Nothing charged to him on the recorded reps. Active for San Diego as the fourth tight end; the packet's conditions for returning him to the inactive list (a failed job and another position needing the place) were not met.
+
+Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

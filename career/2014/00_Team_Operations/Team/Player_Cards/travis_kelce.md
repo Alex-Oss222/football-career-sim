@@ -155,6 +155,12 @@ Eighteen offensive snaps as the second tight end with one catch on three targets
 
 Source: [Week 3 game record](../../../05_Regular_Season/Games/Week_03/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 22 to 27, 2014 | Cleared; the San Diego week
+
+Reassessed Monday with no change and out of the Monday walkthrough and the Wednesday practice, Lewis, Jensen and Hoskins taking the tight-end work; cleared Thursday, September 25, his projected date, and full Thursday, Friday and in the Saturday walkthrough in the second tight end's work, including the twelve-personnel pictures and the four-minute period. He took no TE Delay rep; Lewis was the delay tight end. Nothing charged to him on the recorded reps. Active for San Diego at TE2, no designation on the Friday report.
+
+Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md) and the [medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

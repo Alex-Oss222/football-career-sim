@@ -6,7 +6,7 @@
 *Photo: supplied by the user, October 1, 2026.*
 <!-- /photo -->
 
-**Jacksonville Jaguars head coach. Current through August 4, 2014.**
+**Jacksonville Jaguars head coach. Current through August 4, 2014; calling responsibility through September 28, 2014.**
 
 [Coaching profile](alex_stone_coaching_profile.md) | [Performance and job security](alex_stone_performance_review.md)
 
@@ -39,7 +39,7 @@ His doctoral work concerned motor-learning acquisition and retention. After resi
 | 2009-2010 | New Orleans, offensive coordinator | Weekly offensive plan; Sean Payton called games. Pete Carmichael Jr. and Aaron Kromer shared offensive responsibilities. |
 | 2011 | New Orleans, offensive coordinator | Primary caller from Payton's Week 6 injury through the playoffs; Payton continued contributing. |
 | 2012 | New Orleans, interim head coach / offensive coordinator | Full team responsibility and offensive calling from April 16 through the playing season ending January 13, 2013. Administrative end date not separately established. |
-| 2013-present | Jacksonville, head coach | Appointed January 15, 2013; program, staff and offensive calling |
+| 2013-present | Jacksonville, head coach | Appointed January 15, 2013; program, staff and offensive calling; defensive calling from Week 4 of 2014 (September 28), Crennel having called the defense before it |
 
 Through 2013: **17 completed coaching seasons, 13 NFL seasons, two NFL head-coaching seasons.** Assistant Super Bowl championships: New England in 2003 and 2004; New Orleans in 2009. Stone was a [2013 Coach of the Year finalist](../2013/awards/season_honours.md); Rex Ryan won.
 
@@ -100,6 +100,6 @@ The established 2012 defensive baseline is approximately 350 points and 5,900 ya
 
 Stone accepted a four-year, fully guaranteed contract on January 15, 2013. He was retained on January 15, 2014 without an extension, raise or authority change. Compensation is unspecified.
 
-Stone selects his staff and controls coaching assignments, the depth chart, game-day decisions and the offensive plan. Tice coordinates the offensive week, Crennel runs the defense and Westhoff has run special teams since February 11, 2014. Stone may delegate or resume calling any phase. Caldwell has final authority over scouting, acquisitions, the draft, contracts and the cap; major quarterback commitments require Stone's written projection and consultation. Clinicians control medical clearance and restrictions.
+Stone selects his staff and controls coaching assignments, the depth chart, game-day decisions and the offensive plan. Tice coordinates the offensive week, Crennel coordinates the defense and Westhoff has run special teams since February 11, 2014; Stone calls the defense himself from Week 4 of 2014 (his September 21 instruction), Crennel transmitting the call ([Week 4 record](../2014/05_Regular_Season/Games/Week_04/output.md)). Stone may delegate or resume calling any phase. Caldwell has final authority over scouting, acquisitions, the draft, contracts and the cap; major quarterback commitments require Stone's written projection and consultation. Clinicians control medical clearance and restrictions.
 
 Sources: [identity and authority](../../foundation/03_Head_Coach_Organization_and_Authority_Canon.md), [prehire dossier](../../library/alex_stone_character_dossier_pre_hire.md), [accepted contract](../2013/offseason/head_coach_contract.md), [owner review](../2013/season_review/owner_and_gm_review.md), [standings](../2013/standings.md), [current staff](../2014/00_Team_Operations/Staff/coaching_staff.md) and [Westhoff appointment](../2014/01_Early_Offseason/staff_changes/hires.md).

@@ -22,7 +22,7 @@ This file is the current operating staff register. The [2013 staff register](../
 | Phase | Day-to-day lead | Game-day caller / operational controller | Stone's retained role |
 |---|---|---|---|
 | Offense | Mike Tice coordinates the unit and weekly offensive process | Alex Stone calls offensive plays | Final offensive menu, game-plan approval, situational direction, game management |
-| Defense | Romeo Crennel | Romeo Crennel calls the defense | Final team principles, coordinator supervision, major situational/game-management decisions |
+| Defense | Romeo Crennel | Alex Stone calls the defense from Week 4, September 28, 2014 ([Week 4 record](../../05_Regular_Season/Games/Week_04/output.md)); Crennel transmits the call and the between-snap information and called the defense through Week 3 | Final team principles, coordinator supervision, major situational/game-management decisions; the defensive calls |
 | Special teams | Mike Westhoff (from February 11, 2014) | Westhoff directs the kicking game | Final team-level priorities, roster/use decisions within Stone's authority, consequential game management |
 
 The table records the current working arrangement. Stone can call, delegate or take back any phase at any time; no title, contract change or separate permission is needed. Continue the arrangement until he changes it, without making it a recurring planning question. Lowry directed the kicking game in 2013, and Stone directed it on an interim basis from January 12 to February 11, 2014.
@@ -296,7 +296,7 @@ Stone's own playing background at tight end does not make Zernhelt a ceremonial 
 
 **Contract:** 3 seasons, $4.95M total; $1.60M in 2013.
 **Reports to:** Stone.
-**Play-calling:** Crennel controls the defensive call sheet and calls the defense.
+**Play-calling:** Crennel called the defense in 2013 and through Week 3 of 2014. From Week 4 (September 28, 2014) Stone calls the defense by his September 21 instruction, with no end date stated; Crennel prepares the defensive call sheet and the situation and protection information, transmits Stone's call to the field and keeps the between-snap information ([Week 4 record](../../05_Regular_Season/Games/Week_04/output.md)).
 
 #### Why the contract is at the top of the assistant market
 
@@ -323,7 +323,7 @@ Crennel owns:
 - defensive personnel packages;
 - defensive meeting structure;
 - defensive practice priorities inside Stone's overall schedule;
-- game-day defensive play-calling;
+- game-day defensive play-calling (through Week 3 of 2014; from Week 4 Stone calls and Crennel transmits the call and the between-snap information);
 - in-game defensive adjustments;
 - recommendations on defensive roster roles.
 
