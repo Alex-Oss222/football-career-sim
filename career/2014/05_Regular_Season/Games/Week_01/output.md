@@ -4,6 +4,8 @@ Week 1 · Sunday, September 7, 2014 · 1 p.m. ET · Lincoln Financial Field, Phi
 
 <!-- event-record: {"closure": {"checkpoint": "Canonical update - September 6, 2014 - Philadelphia preparation closed", "sequence": 127, "through": "2014-09-06"}, "date": "2014-09-01", "date_end": "2014-09-06", "id": "2014-09-06-philadelphia-preparation-closed", "status": "closed", "summary": "Jacksonville prepared for Philadelphia under Stone's Week 1 packet: the Monday walkthrough, the Wednesday installation with the rush present, the Thursday third-down, pressure and tempo work, the Friday situations and the Saturday opener walkthrough and travel; Jeremy Cain's release followed the rails to Chicago on September 1, the September 3 cap-compliance filing fell inside the August 31 working margin as the Top-51 count ended, Gator Hoskins's September 3 and Hakeem Nicks's September 4 reassessments changed neither instruction, the seven inactives were confirmed, and Stone froze the Week 1 call sheet with no call removed by the Friday rule and nothing installed new."} -->
 
+<!-- event-record: {"closure": {"checkpoint": "Canonical update - September 7, 2014 - Week 1 game day", "sequence": 128, "through": "2014-09-07"}, "date": "2014-09-07", "id": "2014-09-07-week-1-game-day", "kind": "technical", "status": "closed", "summary": "Game day at Philadelphia: the clock reached September 7 and the Week 1 inputs opened; the 46 dressed from the frozen chart, the frozen call sheet and the 31 other clubs' Week 1 units were built and passed the exclusivity gate before kickoff."} -->
+
 ## Coach info
 
 **Alex Stone** · Age 50 · Head Coach, Jacksonville Jaguars (0-0) · Season 2 with the team · Contract year 2 of 4 · Day 600 since career start

@@ -56,7 +56,7 @@ The active roster is 53 of 53. Only recorded contracts and the adopted contract 
 
 ### Current player index
 
-<!-- player-ages-as-of: 2014-09-06 -->
+<!-- player-ages-as-of: 2014-09-07 -->
 
 DOB is a verified pre-divergence identity fact, supported by the [birth-date evidence registry](../library/data/player_birth_dates.json) and [verification notes](../library/2013_player_birth_dates.md). Age is derived at Document 5's master date, refreshed with `python scripts/render_player_ages.py`. An age does not determine a rating, medical clearance or retirement.
 
