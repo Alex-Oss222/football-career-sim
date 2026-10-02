@@ -129,7 +129,7 @@ Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) an
 
 | Season | Team(s) | Coverage | G | FGM | FGA | FG% | XPM | XPA | PTS | LONG | FGM 0-19 | FGA 0-19 | FGM 20-29 | FGA 20-29 | FGM 30-39 | FGA 30-39 | FGM 40-49 | FGA 40-49 | FGM 50+ | FGA 50+ | KO | KO YDS | KO TB | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 1 | 1 | 3 | 3 | 100.0 | 2 | 2 | 11 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | 0 |
+| 2014 | Jacksonville | Through Week 2 | 2 | 4 | 4 | 100.0 | 5 | 5 | 17 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | 0 |
 
 ## Playoff statistics by year
 

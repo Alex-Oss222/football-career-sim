@@ -92,11 +92,20 @@ class SeasonClosure2014Tests(unittest.TestCase):
         shutil.copytree(ROOT, self.root, ignore=shutil.ignore_patterns(*IGNORED), symlinks=True)
         accept_release(self.root)
         self.paths = SeasonPaths(SEASON, self.root)
-        # The copied root carries whatever the real season has already drawn;
-        # the synthetic slate draws its own Week 1 awards from scratch.
-        if (self.paths.awards / "results.json").exists():
-            (self.paths.awards / "results.json").unlink()
-        shutil.rmtree(self.paths.awards / "week_01", ignore_errors=True)
+        # The copied root carries whatever the real season has already closed
+        # and drawn. The synthetic slate is a Week 1 of its own: it overwrites
+        # the real Week 1 receipts and redraws the Week 1 awards from scratch,
+        # while every later real week (receipts, outputs and awards) stays in
+        # the copy exactly as the real season closed it.
+        results = self.paths.awards / "results.json"
+        if results.exists():
+            drawn = json.loads(results.read_text(encoding="utf-8"))
+            drawn.pop("week-%d" % WEEK, None)
+            if drawn:
+                results.write_text(json.dumps(drawn, indent=2) + "\n", encoding="utf-8")
+            else:
+                results.unlink()
+        shutil.rmtree(self.paths.awards / ("week_%02d" % WEEK), ignore_errors=True)
         self.real = SeasonPaths(SEASON, ROOT)
         self.real_files = sorted(p for p in (ROOT / "career" / str(SEASON)).rglob("*.json"))
         real_cache = self.real.cache(WEEK, "results")
@@ -138,7 +147,7 @@ class SeasonClosure2014Tests(unittest.TestCase):
         receipts_dir = close_week.write_receipts(package, paths, results, SEASON)
         self.assertEqual(receipts_dir, paths.receipts)
         self.assertEqual(receipts_dir, root / "career/2014/05_Regular_Season/Statistics/records/game_receipts")
-        written = sorted(p.name for p in receipts_dir.glob("*.json"))
+        written = sorted(p.name for p in receipts_dir.glob("week_%02d_*.json" % WEEK))
         self.assertEqual(written, sorted(g["receipt"] for g in package["games"]))
         own = json.loads((receipts_dir / "week_01_jacksonville_jaguars_at_philadelphia_eagles.json").read_text())
         self.assertEqual((own["season"], own["week"]), (SEASON, WEEK))
@@ -157,7 +166,7 @@ class SeasonClosure2014Tests(unittest.TestCase):
         standings = paths.record("standings.md")
         standings.write_text(render_standings.render(SEASON, regular), encoding="utf-8")
         self.assertEqual(standings, root / "career/2014/05_Regular_Season/standings.md")
-        self.assertIn("**Through:** Week 1.", standings.read_text(encoding="utf-8"))
+        self.assertRegex(standings.read_text(encoding="utf-8"), r"\*\*Through:\*\* Week \d+\.")
 
         week_dir = paths.week_folder(WEEK)
         self.assertEqual(week_dir, root / "career/2014/05_Regular_Season/Games/Week_01")
@@ -190,7 +199,7 @@ class SeasonClosure2014Tests(unittest.TestCase):
                 contextlib.redirect_stdout(io.StringIO()):
             self.assertEqual(league_awards.main(), 0)
         drawn = json.loads((paths.awards / "results.json").read_text(encoding="utf-8"))
-        self.assertEqual(set(drawn), {"week-1"})
+        self.assertIn("week-1", drawn)  # later real weeks' draws stay in the copy
         self.assertEqual(len(drawn["week-1"]["awards"]), 6)
         self.assertTrue(all(a["event_id"].startswith("2014-award-week01-") for a in drawn["week-1"]["awards"].values()))
         self.assertEqual(paths.awards, root / "career/2014/05_Regular_Season/Awards")

@@ -131,7 +131,7 @@ Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) an
 
 | Season | Team(s) | Coverage | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST | REC AVG | REC LNG | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 1 | 1 | 2 | 1 | 0.5 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | — | 0 |
+| 2014 | Jacksonville | Through Week 2 | 2 | 2 | 1 | 0.5 | 0 | 1 | 2 | 1 | 10 | 0 | 0 | 0 | 10.0 | 10 | 50.0 | 0 | 0 | — | 0 | 0 | — | 1 |
 
 ## Playoff statistics by year
 

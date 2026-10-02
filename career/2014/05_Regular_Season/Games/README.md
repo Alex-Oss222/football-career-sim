@@ -1,12 +1,12 @@
 # Jacksonville 2014 regular season
 
-**IN PROGRESS: 1-0 through Week 1.** The schedule was released April 23, 2014, 8 p.m. ET ([2014 dated record](../../Record.md)). The full 256-game release is frozen in [fixtures.json](../Schedule/fixtures.json) ([readable view](../Schedule/fixtures.md), [sources](../Schedule/sources.md)); no game result or participant is imported. Kickoffs below use Eastern Time as released. Dated historical amendments apply on their own dates.
+**IN PROGRESS: 2-0 through Week 2.** The schedule was released April 23, 2014, 8 p.m. ET ([2014 dated record](../../Record.md)). The full 256-game release is frozen in [fixtures.json](../Schedule/fixtures.json) ([readable view](../Schedule/fixtures.md), [sources](../Schedule/sources.md)); no game result or participant is imported. Kickoffs below use Eastern Time as released. Dated historical amendments apply on their own dates.
 
 | Week | Date | Jacksonville game | Kickoff | Status |
 |---|---|---|---|---|
 | [Week 1](Week_01/README.md) | September 7 | at Philadelphia | 1 p.m. | **Played: Jacksonville 23, Philadelphia 20 (OT)** |
-| [Week 2](Week_02/README.md) | September 14 | at Washington | 1 p.m. | Next; preparation closed September 13, call sheet frozen; game day |
-| [Week 3](Week_03/README.md) | September 21 | Indianapolis | 1 p.m. | Not started |
+| [Week 2](Week_02/README.md) | September 14 | at Washington | 1 p.m. | **Played: Jacksonville 24, Washington 7** |
+| [Week 3](Week_03/README.md) | September 21 | Indianapolis | 1 p.m. | Next; preparation opens September 15 |
 | [Week 4](Week_04/README.md) | September 28 | at San Diego | 4:05 p.m. | Not started |
 | [Week 5](Week_05/README.md) | October 5 | Pittsburgh | 1 p.m. | Not started |
 | [Week 6](Week_06/README.md) | October 12 | at Tennessee | 1 p.m. | Not started |

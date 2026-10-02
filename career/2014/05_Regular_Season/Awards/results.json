@@ -145,5 +145,152 @@
     "winner_index": 1
    }
   }
+ },
+ "week-2": {
+  "kind": "week",
+  "key": "2",
+  "label": "Week 2",
+  "order": 2,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2014-award-week02-afc-offense-v1-2014",
+    "packet_sha256": "a66a12a8ef11aad04b781e10ec9e843da88e041d4b83d337653fab2095506788",
+    "result_ref": "ca23a9ddd778ae3ae25df9ac44f51af5dc0858c5c2ce3c448e131f87ccca5df7",
+    "shortlist": [
+     {
+      "player": "Le'Veon Bell",
+      "team": "Pittsburgh Steelers",
+      "score": 49.7
+     },
+     {
+      "player": "Derek Carr",
+      "team": "Oakland Raiders",
+      "score": 27.12
+     },
+     {
+      "player": "Bernard Pierce",
+      "team": "Baltimore Ravens",
+      "score": 26.8
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2014-award-week02-afc-defense-v1-2014",
+    "packet_sha256": "4d40e5fa8d6a9f62bc2f7b0793c8e5bd158bc6b0b167b72158ee93db16739c1c",
+    "result_ref": "543548bbbe8e5fb090cf1fb715135cb5b760b41616113f317bae1aea31f3f67e",
+    "shortlist": [
+     {
+      "player": "Vontae Davis",
+      "team": "Indianapolis Colts",
+      "score": 21.7
+     },
+     {
+      "player": "Joe Vellano",
+      "team": "New England Patriots",
+      "score": 21.0
+     },
+     {
+      "player": "Michael Mitchell",
+      "team": "Pittsburgh Steelers",
+      "score": 20.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2014-award-week02-afc-special_teams-v1-2014",
+    "packet_sha256": "141601f4ea91f5ec3df91f9c1c0902504cc659f146cbbdf8a46a69fbb0665a24",
+    "result_ref": "725ba8e043e06bb4a1394b0b8cafc9a99f7a156eac304582505fa85240c5c6f3",
+    "shortlist": [
+     {
+      "player": "Sebastian Janikowski",
+      "team": "Oakland Raiders",
+      "score": 17.0
+     },
+     {
+      "player": "Dan Carpenter",
+      "team": "Buffalo Bills",
+      "score": 15.0
+     },
+     {
+      "player": "Saalim Hakim",
+      "team": "New York Jets",
+      "score": 13.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2014-award-week02-nfc-offense-v1-2014",
+    "packet_sha256": "40f26fe0849aaf4ec8010ea1c5c1f6773995b6f2f1c6cb992e0c7c4c77cfeafc",
+    "result_ref": "575f54d2854fda230717870ee72d8323d75e241d8fd2f2fa9712a871df556423",
+    "shortlist": [
+     {
+      "player": "Matthew Stafford",
+      "team": "Detroit Lions",
+      "score": 48.16
+     },
+     {
+      "player": "Doug Martin",
+      "team": "Tampa Bay Buccaneers",
+      "score": 32.1
+     },
+     {
+      "player": "Aaron Rodgers",
+      "team": "Green Bay Packers",
+      "score": 32.04
+     }
+    ],
+    "winner_index": 2
+   },
+   "NFC-defense": {
+    "event_id": "2014-award-week02-nfc-defense-v1-2014",
+    "packet_sha256": "f65ecc8e9055cb707e14e5c1df3f36a6633f7fce6478022dc3986835b0076963",
+    "result_ref": "44a01399c85bc319c1388f3fb9aa4cacd4133e29ba514aee35a1cf19e3f4566d",
+    "shortlist": [
+     {
+      "player": "Jared Allen",
+      "team": "Chicago Bears",
+      "score": 37.5
+     },
+     {
+      "player": "Patrick Robinson",
+      "team": "New Orleans Saints",
+      "score": 27.0
+     },
+     {
+      "player": "Paul Worrilow",
+      "team": "Atlanta Falcons",
+      "score": 22.2
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-special_teams": {
+    "event_id": "2014-award-week02-nfc-special_teams-v1-2014",
+    "packet_sha256": "3b17e1bad43b928aaddf1bcabf963d7442125c1546d4a56594108a6aa7ced493",
+    "result_ref": "047ed8334e767693b3ad26dd5a7adcbe701749c77909932543cbcf3025a07552",
+    "shortlist": [
+     {
+      "player": "Mason Crosby",
+      "team": "Green Bay Packers",
+      "score": 17.0
+     },
+     {
+      "player": "Bruce Ellington",
+      "team": "San Francisco 49ers",
+      "score": 12.8
+     },
+     {
+      "player": "Andre Roberts",
+      "team": "Washington Redskins",
+      "score": 12.7
+     }
+    ],
+    "winner_index": 0
+   }
+  }
  }
 }

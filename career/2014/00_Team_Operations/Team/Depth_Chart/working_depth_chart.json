@@ -2,7 +2,7 @@
   "team": "Jacksonville Jaguars",
   "season": 2014,
   "status": "WORKING COPY OF THE SEASON GAME DEPTH CHART. Stone's season chart issued August 30, 2014 at the reduction to 53, over the 53 only; game_depth_chart.json in this folder is the released game input and the two files are changed together. Every player on the 53 holds a chart place; the two reserve/injured players and the eight practice-squad players are not on the chart.",
-  "as_of": "September 13, 2014 (after the Washington preparation: the September 8 transactions applied, the Week 2 defensive-back order and inactives set by Stone)",
+  "as_of": "September 14, 2014 (after the Week 2 game at Washington; availability notes for Stanford and Johnson; no order change since September 13)",
   "effective": "August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); the defensive-back order and game_day_inactives set for Week 2 on September 13, 2014",
   "sources": "The August 28 personnel packet's season depth chart baseline (Regular-season Week 1.md: Adams X, Thielen H, Hawkins Z; Lewis, Kelce, Jensen; Monroe, Bitonio, Brewster, Turner, Johnson; Kreiter snapping; Hawkins returning kicks and punts with Hurns the second punt returner; Nicks back to X and Adams to Z only after medical clearance and a full practice week); the frozen August 27 Atlanta chart (Preseason_Games/Game_04/depth_chart.json) for every other order; the current roster for control and availability; the August 30 reduction (Roster_Decisions/final_roster_cuts.md) for the 53. Earlier: career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/finances/player_contracts/contract_status.md; career/2014/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened); Entry 95 (March 2014 free-agency replay); Entry 108 (2014 draft and undrafted signings); Entry 110 (Rackley traded); Entry 111 (Stone's May 12 starting roles; rookie minicamp and Phase Two closed)",
   "rule": "Order within each kernel position group, first = starter, as the kernel reads it. The packet's baseline sets the starting eleven on offense, the snapper and the returners; the Atlanta chart's order is carried for everyone else, minus the players who left on August 30. A player out under a medical instruction is listed last in his group while out (Nicks, Hoskins) and is on the inactive list; a player on reserve/injured is off the chart; his return to the order is Stone's decision on clearance under the packet's condition. The roles field carries the kernel roles (passer, placekicker, punt, kick_return, punt_return); Hurns is the second punt returner by Stone's instruction and is not given the kernel role, which the kernel reads as the first returner. Each change is logged in career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md.",
@@ -218,11 +218,12 @@
     "A.J. Bouye": "No communicated restriction (cleared August 31, 2014, his projected date, from the August 28 lower-extremity injury; reassessed August 29 with no change)",
     "Marcel Jensen": "No communicated restriction (independent medical hold from the August 22 preseason game released August 28, its projected date)",
     "Jordan Poyer": "No communicated restriction (cleared August 26, 2014, his projected date, from the August 22 injury)",
-    "Lane Johnson": "No communicated restriction (cleared August 14, 2014, his projected date, from the August 8 trunk injury)",
+    "Lane Johnson": "Out, minor, from the September 14 Week 2 game (lower extremity, not removed; projected return September 17, 2014; reassessment September 15); earlier cleared August 14, 2014 from the August 8 trunk injury",
     "Cornelius Lucas": "No communicated restriction; the foot is a performance-staff review item",
     "Maurice Jones-Drew": "No communicated restriction (cleared September 12, 2014, his projected date, from the September 7 injury; reassessed September 8 with no change; did not practice September 10 to 12; full in the September 13 walkthrough)",
     "Alan Ball": "No communicated restriction (club physical September 8, 2014, no finding)",
-    "Adrian Phillips": "No communicated restriction"
+    "Adrian Phillips": "No communicated restriction",
+    "Julian Stanford": "Out, minor, from the September 14 Week 2 game (upper extremity, not removed; projected return September 19, 2014; reassessment September 15)"
   },
   "removed_from_2013_chart": {
     "Brad Meester": "Retired; contract expired March 11, 2014 (Entries 79 and 94)",
@@ -430,6 +431,12 @@
       "event": "Harris and Lowery to reserve/injured; Ball signed; Phillips promoted; Stone's Week 2 secondary and inactives",
       "ledger_entry": "2014-09-08-harris-lowery-reserve-injured-phillips-promoted; 2014-09-13-washington-preparation-closed",
       "change": "Harris (DB 2) and Lowery (DB 3) removed to reserve/injured; Ball and Phillips added. Stone's Week 2 order (September 13): Talib, Verner, Rambo, Trawick, Poyer, Bouye, Butler, Prosinski, Phillips, Ball. Week 2 inactives: Nicks, Hoskins; Ball, Linsley, Edebali, Todd Davis, Gabriel by the standing rule. Jones-Drew cleared September 12 and active"
+    },
+    {
+      "date": "September 14, 2014",
+      "event": "Week 2 at Washington: availability notes",
+      "ledger_entry": "2014-09-14-week-2-at-washington",
+      "change": "No order change and no Stone depth decision. Availability notes only: Julian Stanford out, minor (not removed; projected return September 19, reassessment September 15); Lane Johnson out, minor (not removed; projected return September 17, reassessment September 15). Neither requires a roster decision; the Week 3 inactives are Stone's decision after the September 15 exams. The released game input is unchanged until that decision."
     }
   ],
   "added_not_placed": {

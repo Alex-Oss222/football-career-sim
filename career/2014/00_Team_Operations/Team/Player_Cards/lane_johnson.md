@@ -126,13 +126,19 @@ Both sacks of Cousins in his two series were charged to Johnson's right-tackle s
 
 Source: [preseason game 1 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_01/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 14, 2014 | Week 2, Jacksonville at Washington
+
+All 70 offensive snaps at right tackle in a game the offense ran 37 times for 171. The one sack of the day, Kerrigan's on the Y-Cross with HALF on third-and-4 at 13:07 of the fourth quarter, is charged to his slot by the receipt, the first charged there since the Boot Flood Left at Philadelphia; the receipt records the slot and not the cause (the set, the point, the help or the throw's timing), and Yarno reviews it with the four Philadelphia slots before the call is judged. A minor lower-extremity injury was logged at the end of that possession; he was not removed and finished the game: out, projected return September 17, reassessment September 15 ([medical record](../../Medical/incidents/lane_johnson_2014-09-14.md)). Lucas is the chart's first reserve tackle; no role change follows.
+
+Source: [Week 2 game record](../../../05_Regular_Season/Games/Week_02/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | SCK ALLOWED | STARTS | OFF SNAPS | PEN | PEN YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 1 | 1 | 1 | 1 | 76 | Unrecorded | Unrecorded | 0 | 0 | — | 0 | 0 | — | 0 |
+| 2014 | Jacksonville | Through Week 2 | 2 | 2 | 2 | 146 | Unrecorded | Unrecorded | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 

@@ -11,7 +11,7 @@ These pages display recorded results without repeating the draw.
 | Week | Awards |
 |---|---|
 | [Week 1](week_01/README.md) | Recorded |
-| Week 2 | Awaiting closed games and awards |
+| [Week 2](week_02/README.md) | Recorded |
 | Week 3 | Awaiting closed games and awards |
 | Week 4 | Awaiting closed games and awards |
 | Week 5 | Awaiting closed games and awards |
