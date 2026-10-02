@@ -2,7 +2,7 @@
 
 [2014 season](../README.md) · [Calendar](../Calendar.md)
 
-No regular-season game has been played. Jacksonville opens September 7 at Philadelphia; Week 11 is the bye.
+Jacksonville is 1-0 after Week 1 ([Jacksonville 23, Philadelphia 20, overtime](Games/Week_01/output.md), September 7); next, Week 2 at Washington, September 14. Week 11 is the bye.
 
 | Open | What you will find |
 |---|---|

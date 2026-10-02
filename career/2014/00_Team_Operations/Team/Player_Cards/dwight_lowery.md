@@ -142,13 +142,21 @@ A stabilizing safety whose communication, positioning and combination recognitio
 
 Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
 
+## Dated coaching updates
+
+### September 7, 2014 | Week 1, Jacksonville at Philadelphia
+
+All 80 defensive snaps at safety with seven solo tackles, including the tackles on Foles's 10-yard runs in the first and fourth quarters, Sproles's 9-yard run before the half and Celek's 11-yard catch to the 4 on Philadelphia's first touchdown drive; the play-by-play records no coverage on the long completions. A long-term lower-extremity injury was logged at the end of Philadelphia's third overtime possession at 2:27 and he was removed: out, projected return in 95 days (December 11), reassessment September 14 ([medical record](../../Medical/incidents/dwight_lowery_2014-09-07.md)). His roster disposition is Caldwell's with the user and the Week 2 place is Stone's after the September 8 review; the secondary captaincy is unchanged.
+
+Source: [Week 1 game record](../../../05_Regular_Season/Games/Week_01/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR | DEF SNAPS | QB HITS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
+| 2014 | Jacksonville | Through Week 1 | 1 | 7 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 80 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 

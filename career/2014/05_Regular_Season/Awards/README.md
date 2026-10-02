@@ -4,13 +4,13 @@
 
 Open a week to see each award’s three finalists. The recorded winner appears in the middle with a gold border. Shortlist scores are selection inputs; they are not vote totals or finishing positions.
 
-Awards appear after games and the applicable award process close. No 2014 award has been drawn.
+These pages display recorded results without repeating the draw.
 
 ## Weekly awards
 
 | Week | Awards |
 |---|---|
-| Week 1 | Awaiting closed games and awards |
+| [Week 1](week_01/README.md) | Recorded |
 | Week 2 | Awaiting closed games and awards |
 | Week 3 | Awaiting closed games and awards |
 | Week 4 | Awaiting closed games and awards |

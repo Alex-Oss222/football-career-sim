@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "season": 2014,
-  "as_of": "September 6, 2014, after the Philadelphia preparation",
+  "as_of": "September 7, 2014, after the Week 1 game at Philadelphia",
   "roster_source": "career/2014/00_Team_Operations/Team/Roster/roster.md",
   "continuity_source": "career/2014/00_Team_Operations/Player_Development/2013_exit_player_index.json",
   "policy": "Roster controls eligibility. The exit index identifies Jacksonville 2013 continuity only. Regenerate after any transaction or draft addition before progression is resolved.",

@@ -849,8 +849,8 @@ Jacksonville includes every controlled player, including the practice squad. Oth
 | Christian Jones | LB | 1991-02-18 | 23 | Active 53 (Rookie, undrafted; signed May 10, 2014) |
 | Todd Davis | LB | 1992-05-17 | 22 | Active 53 (Rookie, undrafted; signed May 10, 2014) |
 | Aqib Talib | CB | 1986-02-13 | 28 | Active 53 (signed March 11, 2014) |
-| Mike Harris | CB | 1989-01-05 | 25 | Active 53 |
-| Dwight Lowery | S | 1986-01-23 | 28 | Active 53 |
+| Mike Harris | CB | 1989-01-05 | 25 | Active 53 (roster disposition pending, Caldwell with the user) |
+| Dwight Lowery | S | 1986-01-23 | 28 | Active 53 (roster disposition pending, Caldwell with the user) |
 | Bacarri Rambo | S | 1990-06-27 | 24 | Active 53 |
 | Jordan Poyer | CB | 1991-04-25 | 23 | Active 53 |
 | Alterraun Verner | CB | 1988-12-13 | 25 | Active 53 (signed March 11, 2014) |
