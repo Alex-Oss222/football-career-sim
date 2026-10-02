@@ -23,7 +23,7 @@ This document states what is true now and what comes next. The [2014 record](../
 
 | Field | Current canonical value |
 |---|---|
-| Master date/time | September 6, 2014, after the Saturday opener walkthrough, the call-sheet freeze and travel to Philadelphia |
+| Master date/time | September 7, 2014, game day at Philadelphia, pregame; the Week 1 inputs may now be read |
 | League/season | NFL, 2014; prior 2013 results archived |
 | Team / head coach | Jacksonville Jaguars / Alex Stone, retained for 2014 on his existing contract at the January 15, 2014 season review |
 | Game-day staff | Stone leads the team and chooses which calls to make or delegate. Romeo Crennel normally directs defense; Mike Westhoff runs special teams |
