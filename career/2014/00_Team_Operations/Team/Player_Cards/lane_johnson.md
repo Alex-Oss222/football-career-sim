@@ -132,6 +132,12 @@ All 70 offensive snaps at right tackle in a game the offense ran 37 times for 17
 
 Source: [Week 2 game record](../../../05_Regular_Season/Games/Week_02/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 15 to 20, 2014 | Reassessed, cleared and retested
+
+Reassessed Monday with no change and cleared Wednesday, September 17, his projected date. Under Stone's right-tackle contingency the Wednesday script ran with Lucas in the first group as built and Johnson took the individual and reserve-group work after the clearance; the Thursday live protection retest at his slot, the Stick with SCAT and the Y-Cross with SOLID against the interior and edge pictures with the rush present, charged nothing to his slot on the recorded reps, and Stone restored him to the first group that day rather than on the medical notice alone. He starts at right tackle against Indianapolis; the Kerrigan sack at his slot stays classified as unresolved for cause by Yarno. No other finding attaches to the week.
+
+Source: [Week 3 record](../../../05_Regular_Season/Games/Week_03/output.md) and the [medical history](../../Medical/medical_history.md#september-15-to-20-stanford-johnson-hoskins-and-nicks-cleared-harris-and-lowery-reassessed). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

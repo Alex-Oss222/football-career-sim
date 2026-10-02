@@ -16,7 +16,7 @@
 
 ## Depth chart
 
-From [00_Team_Operations/Team/Depth_Chart/game_depth_chart.json](../../../../00_Team_Operations/Team/Depth_Chart/game_depth_chart.json), August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); the defensive-back order and game_day_inactives set for Week 2 on September 13, 2014. Order is first listed first; Stone owns it.
+From [00_Team_Operations/Team/Depth_Chart/game_depth_chart.json](../../../../00_Team_Operations/Team/Depth_Chart/game_depth_chart.json), August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); the defensive-back order set for Week 2 on September 13, 2014 and game_day_inactives re-set for Week 3 on September 20, 2014. Order is first listed first; Stone owns it.
 
 | Group | Order |
 |---|---|

@@ -2,10 +2,10 @@
   "team": "Jacksonville Jaguars",
   "season": 2014,
   "status": "WORKING COPY OF THE SEASON GAME DEPTH CHART. Stone's season chart issued August 30, 2014 at the reduction to 53, over the 53 only; game_depth_chart.json in this folder is the released game input and the two files are changed together. Every player on the 53 holds a chart place; the two reserve/injured players and the eight practice-squad players are not on the chart.",
-  "as_of": "September 14, 2014 (after the Week 2 game at Washington; availability notes for Stanford and Johnson; no order change since September 13)",
-  "effective": "August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); the defensive-back order and game_day_inactives set for Week 2 on September 13, 2014",
+  "as_of": "September 21, 2014, game day before kickoff (the Week 3 inactives set September 20; no order change since September 13; no player under a medical instruction)",
+  "effective": "August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); the defensive-back order set for Week 2 on September 13, 2014 and game_day_inactives re-set for Week 3 on September 20, 2014",
   "sources": "The August 28 personnel packet's season depth chart baseline (Regular-season Week 1.md: Adams X, Thielen H, Hawkins Z; Lewis, Kelce, Jensen; Monroe, Bitonio, Brewster, Turner, Johnson; Kreiter snapping; Hawkins returning kicks and punts with Hurns the second punt returner; Nicks back to X and Adams to Z only after medical clearance and a full practice week); the frozen August 27 Atlanta chart (Preseason_Games/Game_04/depth_chart.json) for every other order; the current roster for control and availability; the August 30 reduction (Roster_Decisions/final_roster_cuts.md) for the 53. Earlier: career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/finances/player_contracts/contract_status.md; career/2014/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened); Entry 95 (March 2014 free-agency replay); Entry 108 (2014 draft and undrafted signings); Entry 110 (Rackley traded); Entry 111 (Stone's May 12 starting roles; rookie minicamp and Phase Two closed)",
-  "rule": "Order within each kernel position group, first = starter, as the kernel reads it. The packet's baseline sets the starting eleven on offense, the snapper and the returners; the Atlanta chart's order is carried for everyone else, minus the players who left on August 30. A player out under a medical instruction is listed last in his group while out (Nicks, Hoskins) and is on the inactive list; a player on reserve/injured is off the chart; his return to the order is Stone's decision on clearance under the packet's condition. The roles field carries the kernel roles (passer, placekicker, punt, kick_return, punt_return); Hurns is the second punt returner by Stone's instruction and is not given the kernel role, which the kernel reads as the first returner. Each change is logged in career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md.",
+  "rule": "Order within each kernel position group, first = starter, as the kernel reads it. The packet's baseline sets the starting eleven on offense, the snapper and the returners; the Atlanta chart's order is carried for everyone else, minus the players who left on August 30. A player out under a medical instruction is listed last in his group while out and is on the inactive list (Nicks stays listed last after his September 20 clearance until a full practice week, Stone's condition; Hoskins, cleared September 16, keeps the fourth tight-end place); a player on reserve/injured is off the chart; his return to the order is Stone's decision on clearance under the packet's condition. The roles field carries the kernel roles (passer, placekicker, punt, kick_return, punt_return); Hurns is the second punt returner by Stone's instruction and is not given the kernel role, which the kernel reads as the first returner. Each change is logged in career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md.",
   "note": "The released game input is career/2014/00_Team_Operations/Team/Depth_Chart/game_depth_chart.json (runtime/seasons.py names it as the required 2014 input; runtime/week_inputs.py reads it as Stone's order). This working copy mirrors it with the contract flags, availability notes, the removed-player history and the update log.",
   "depth": {
     "QB": [
@@ -213,17 +213,17 @@
     "Adrian Phillips": "Under contract through 2016 (promoted from the practice squad September 8 on a three-year minimum contract)"
   },
   "availability_notes": {
-    "Hakeem Nicks": "Out, multi-week, from the August 28 preseason game (lower extremity, removed; projected return September 20, 2014; reassessment September 4); carried on the 53; listed last among the receivers while out; Week 1 inactive",
-    "Gator Hoskins": "Out, short, from the August 28 preseason game (lower extremity, not removed; projected return September 16, 2014; reassessment September 3); carried on the 53; listed last among the tight ends while out; Week 1 inactive",
+    "Hakeem Nicks": "No communicated restriction (cleared September 20, 2014, his projected date, from the August 28 injury; did not practice September 17 to 19; full in the September 20 walkthrough); listed last among the receivers until a full practice week (Stone's condition); Week 1, 2 and 3 inactive",
+    "Gator Hoskins": "No communicated restriction (cleared September 16, 2014, his projected date, from the August 28 injury; full September 17 to 20); fourth tight end; Week 1, 2 and 3 inactive",
     "A.J. Bouye": "No communicated restriction (cleared August 31, 2014, his projected date, from the August 28 lower-extremity injury; reassessed August 29 with no change)",
     "Marcel Jensen": "No communicated restriction (independent medical hold from the August 22 preseason game released August 28, its projected date)",
     "Jordan Poyer": "No communicated restriction (cleared August 26, 2014, his projected date, from the August 22 injury)",
-    "Lane Johnson": "Out, minor, from the September 14 Week 2 game (lower extremity, not removed; projected return September 17, 2014; reassessment September 15); earlier cleared August 14, 2014 from the August 8 trunk injury",
+    "Lane Johnson": "No communicated restriction (cleared September 17, 2014, his projected date, from the September 14 injury; reassessed September 15 with no change; restored to the first group September 18 after the live protection retest); earlier cleared August 14, 2014 from the August 8 trunk injury",
     "Cornelius Lucas": "No communicated restriction; the foot is a performance-staff review item",
     "Maurice Jones-Drew": "No communicated restriction (cleared September 12, 2014, his projected date, from the September 7 injury; reassessed September 8 with no change; did not practice September 10 to 12; full in the September 13 walkthrough)",
     "Alan Ball": "No communicated restriction (club physical September 8, 2014, no finding)",
     "Adrian Phillips": "No communicated restriction",
-    "Julian Stanford": "Out, minor, from the September 14 Week 2 game (upper extremity, not removed; projected return September 19, 2014; reassessment September 15)"
+    "Julian Stanford": "No communicated restriction (cleared September 19, 2014, his projected date, from the September 14 injury; reassessed September 15 with no change; did not practice September 17 and 18; not inserted into the Friday practice; full in the September 20 walkthrough)"
   },
   "removed_from_2013_chart": {
     "Brad Meester": "Retired; contract expired March 11, 2014 (Entries 79 and 94)",
@@ -251,17 +251,17 @@
     "Austin Pasztor": "Tender withdrawn August 30, 2014; rights renounced"
   },
   "game_day_inactives": {
-    "week": 2,
+    "week": 3,
     "players": [
       "Hakeem Nicks",
-      "Gator Hoskins",
       "Alan Ball",
       "Corey Linsley",
       "Kasim Edebali",
       "Todd Davis",
+      "Gator Hoskins",
       "Taylor Gabriel"
     ],
-    "note": "Seven of the 53 are inactive for Week 2 at Washington (46 dress; rules library R4), set by Stone on September 13, 2014 after the Washington preparation. Hakeem Nicks (out, multi-week, projected return September 20, 2014) and Gator Hoskins (out, short, projected return September 16, 2014) are inactive by medical instruction. The other five are set by Stone's standing rule for the healthy inactives: the deepest healthy reserve on the chart in each of the five largest healthy position groups, never below a legal game-day unit, re-set each week; at September 13 those groups are the defensive backs (10: Alan Ball, listed last in the group in his first week after signing September 8), the offensive line (9: Corey Linsley), the defensive line (8: Kasim Edebali), the linebackers (7: Todd Davis) and the receivers (5 healthy: Taylor Gabriel). Maurice Jones-Drew cleared September 12, his projected date, and is active by Stone's decision. Mike Harris and Dwight Lowery are on reserve/injured from September 8 and are not on the chart. The four reserve/injured players and the seven practice-squad players are not on the 53 and cannot appear here."
+    "note": "Seven of the 53 are inactive for Week 3 against Indianapolis (46 dress; rules library R4), set by Stone on September 20, 2014 after the Indianapolis preparation. No player on the 53 is out by medical instruction: Stanford and Johnson cleared September 19 and 17, Hoskins September 16 and Nicks September 20, each on his projected date. Five are set by Stone's standing rule for the healthy inactives, the deepest healthy reserve on the chart in each of the five largest healthy position groups, never below a legal game-day unit, re-set each week; at September 20 those groups are the defensive backs (10: Alan Ball, listed last), the offensive line (9: Corey Linsley), the defensive line (8: Kasim Edebali), the linebackers (7: Todd Davis) and the receivers (6: Hakeem Nicks, listed last under Stone's full-practice-week condition after a Saturday clearance with no practice week). Gator Hoskins and Taylor Gabriel are carried from the Week 2 list under the roster-decision rule that a week without a new inactive list reuses the last one, the standing rule naming only five when no player is out by instruction; whether Hoskins's practice week should displace a carried place is a Stone decision the packet did not cover, recorded as open in the Week 3 record. Stanford, cleared September 19, is active with his chart place unchanged; Johnson starts at right tackle after the September 18 retest. Mike Harris and Dwight Lowery are on reserve/injured from September 8 and are not on the chart. The four reserve/injured players and the seven practice-squad players are not on the 53 and cannot appear here."
   },
   "update_log": [
     {
@@ -437,6 +437,12 @@
       "event": "Week 2 at Washington: availability notes",
       "ledger_entry": "2014-09-14-week-2-at-washington",
       "change": "No order change and no Stone depth decision. Availability notes only: Julian Stanford out, minor (not removed; projected return September 19, reassessment September 15); Lane Johnson out, minor (not removed; projected return September 17, reassessment September 15). Neither requires a roster decision; the Week 3 inactives are Stone's decision after the September 15 exams. The released game input is unchanged until that decision."
+    },
+    {
+      "date": "September 15 to 20, 2014",
+      "event": "Indianapolis preparation: Stanford, Johnson, Hoskins and Nicks cleared; Stone's Week 3 inactives (September 20)",
+      "ledger_entry": "2014-09-20-indianapolis-preparation-closed",
+      "change": "No order change. Availability: Stanford and Johnson reassessed September 15 with no change and cleared September 19 and 17; Hoskins cleared September 16; Nicks cleared September 20 and stays listed last until a full practice week. Lucas took the first-group right-tackle work September 15 and 17 under the packet's contingency and Johnson was restored September 18 after one live protection retest (a game-plan arrangement, not a chart change). Week 3 inactives: Nicks, Ball, Linsley, Edebali and Todd Davis by the standing rule; Hoskins and Gabriel carried from the Week 2 list. Both JSON copies changed with this row"
     }
   ],
   "added_not_placed": {

@@ -121,6 +121,12 @@ Thirty-six offensive snaps across Cousins's, Henne's, Wilson's and Shaw's groups
 
 Source: [preseason game 4 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 15 to 20, 2014 | Cleared; first practice week back
+
+Cleared Tuesday, September 16, his projected date, and full Wednesday through Friday in the fourth tight end's work behind Lewis, Kelce and Jensen and on the kicking-game fits, with the Saturday walkthrough in full; nothing charged to him on the recorded reps and nothing that separated him from Jensen in three days. Inactive for Indianapolis, carried from the Week 2 list under the rule that a week without a new list reuses the last one; whether his practice week should displace a carried place is a Stone decision the packet did not cover, recorded as open. No finding attaches to the week.
+
+Source: [Week 3 record](../../../05_Regular_Season/Games/Week_03/output.md) and the [medical history](../../Medical/medical_history.md#september-15-to-20-stanford-johnson-hoskins-and-nicks-cleared-harris-and-lowery-reassessed). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

@@ -143,6 +143,12 @@ Thirty-three defensive snaps as the third linebacker with two sacks of Griffin, 
 
 Source: [Week 2 game record](../../../05_Regular_Season/Games/Week_02/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 15 to 20, 2014 | Reassessed and cleared
+
+Reassessed Monday with no change and cleared Friday, September 19, his projected date, without being inserted into the Friday practice; he did not practice Wednesday or Thursday and took the Saturday walkthrough in full. Moore carried his package work in the week's practices and Telvin Smith the next linebacker work, nothing charged to either on the recorded reps. He dresses for Indianapolis with his chart place unchanged; whether he takes his package back on Sunday or Moore keeps the rehearsed work is Stone's game-day decision, recorded as open. No finding attaches to the week.
+
+Source: [Week 3 record](../../../05_Regular_Season/Games/Week_03/output.md) and the [medical history](../../Medical/medical_history.md#september-15-to-20-stanford-johnson-hoskins-and-nicks-cleared-harris-and-lowery-reassessed). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
