@@ -32,6 +32,8 @@ Teams need different capabilities, vulnerabilities and ways to play. A single cl
 | 2013 individual statistics and generated explanations | Locate the underlying play and identify questions | Do not infer processing from an interception, blocking from a randomly charged sack, or ability from production by depth |
 | Current roster and dated transaction rails | Identity, control and available lineup | No ability, future injury or future award inferred from them |
 
+*Dated scope note (October 2, 2026):* Stone's adoption of draft-slot starting estimates for kernel 2014.6 supersedes the draft-slot row only for the engine's hidden-state prior of a player with no pre-2013 record. The row still governs scouting, staff assessments and every reader-facing judgment ([Kernel 2014.6 decisions](#kernel-20146-decisions-dated)).
+
 Each evidence receipt needs stable player ID, source locator, source/public date, observation date, allowed branch cutoff, dimension/job, direct observation versus inference, applicable conditions, confidence and known contamination. Reject future-dated evidence before composing an input. Keep disputed and contradictory observations visible. A low-confidence Average fallback means insufficient knowledge, not verified league-average ability.
 
 Use position-specific evidence and keep the private matchup conversion separate from user-facing summaries. The annual player sheet may show the user a dated /10 personnel grade and plain-language NFL standing. Those fields are descriptive snapshots only: they are not potential grades, permanent archetypes, personality scores, probability inputs or a substitute for the underlying traits. Separate what a player can physically do, what he understands, what he has executed reliably and what has not been observed. Established capabilities carry forward by default; skill changes only with a stated football reason.
@@ -85,6 +87,8 @@ When reporting a play, describe only causes represented by its event record or i
 The full season belongs to the player even when the old engine cannot support a talent inference. Preserve experience and established practice strengths. Revisit the player's own interpretation, preferences and questions when actually expressed. Compare multiple plausible explanations and give him a suitable opportunity to demonstrate more, rather than funneling him toward a preselected type.
 
 Review at phase handoffs, a material assignment change, return from a restriction, or a coherent new body of evidence. The previous proposal for automatic four-game review blocks is superseded. There is no calendar-triggered upgrade, compulsory one-tier step, fixed age curve, XP, guaranteed breakthrough or growth penalty for voluntary absence. An assessment may stay the same, gain confidence, narrow its scope, broaden, or be revised downward. Any material change must explain the evidence and uncertainty.
+
+*Dated scope note (October 2, 2026):* the fitted aging and experience curves adopted for kernel 2014.6 are population priors on the hidden engine value, not a development rule, and staff assessments never read them; this section still governs staff assessment and the development program ([Kernel 2014.6 decisions](#kernel-20146-decisions-dated)).
 
 Separate **lineup change** from **development**. Replace an unavailable player immediately in the next applicable input; do not wait for a review block. A player learning a new job does not lose his established capability in a familiar job. Medical recovery is not a lesson that attendance or effort can accelerate.
 
@@ -153,6 +157,115 @@ Stone adopted three recommendations on October 2, 2026, with the branch at Septe
 ### The 2012 calibration base stays through the 2014 season (recorded, no engine change)
 
 **Decision.** The 2012 calibration base (`library/2012_*` and the calibration tables the kernel reads) stays through the whole 2014 season: no mid-season base change, whatever the band audit reads, and an OUTSIDE row remains an investigation item, never grounds to rerun, select or edit a closed result. Any roll-forward of the base is a season-end policy decision for 2015, taken with the post-divergence caveat: real league base rates for a later season may be considered as a league population, but no real player's post-divergence outcomes ever set his own value, and the 2013 and 2014 branch results are never calibration evidence of talent. The rulebook's era note is not edited by this record (foundation/ is not in scope); this file and `runtime/README.md` carry the decision.
+
+*Superseded October 2, 2026* for league rates and fits from Week 5 by Stone's decision U1(b): the 2010-2014 league base, frozen at Week 5's first event for the rest of the 2014 season, arrives with kernel 2014.6; Weeks 1-4 stand as played on the 2012 base ([Kernel 2014.6 decisions](#kernel-20146-decisions-dated)).
+
+## Kernel 2014.6 decisions (dated)
+
+**Record.** Stone made these decisions on October 2, 2026, with the branch at Sunday, September 28, 2014, after Week 4 (Document 5) and before any Week 5 event. His words are quoted verbatim from the session, with the time (UTC). A **default** is a call Claude stated to him on October 2 that he did not object to; it is recorded as his decision on that basis and he may override it. Nothing here reruns a closed game, edits a receipt or changes a 2013 or 2014 Weeks 1-4 result. Kernel 2014.5 and the 2012 base stay installed until kernel 2014.6 is released (plan batch B18). Until then every 2014.6 mechanism is built behind a frozen profile that production cannot select. The rules every batch must follow are frozen in the [pre-build specification](../library/2014_6_pre_build_specification.md) (sha256 `2ce1018dee17052aa9e59bff8e80b2639f085376dd91310210417cb9aa53d70d`).
+
+### Scope: the full plan before Week 5
+
+- Stone's list of fixes (12:33): "make fixes for A first half can end in field-goal range with no kick tried." It goes on through two-point tries, onside kicks, late field goals, penalties, fumbles, overtime, return touchdowns, rushing yards, first-half finals, season leaders, weather and venue, background promotions, the 2014 downfield-foul emphasis, defensive calls, the Week 3 field goal and substitution record, the Week 4 muff and timeouts, and ends "Timeouts are tracked per possession, not per snap. before week 5".
+- Then (15:10): "make the fixes and and let me know when we can start again".
+- Given the full release, a split release or playing Week 5 on the current engine, he chose the full release (18:59): "we can wait until done to fully so 5". Week 5 waits for the release.
+
+### U1 (b): the 2010-2014 league base replaces the 2012 base from Week 5
+
+- Stone's words (12:35): "earlier you recomend dont add information for 2010-2012 i say expand now from 2010-2014". And (12:38): "remember to model player states we used 2012 averages , lets update and expand realistically".
+- Scope: the league base from Week 5. That covers drive pools, game rates, band centres and every league effect fit (strength terms, weather terms, penalties, scoring charts). Claude confirmed at 12:36 that the wider window replaces the October 2 decision to keep the 2012 base, and the full release he chose at 18:59 carries it.
+- This **supersedes** "The 2012 calibration base stays through the 2014 season" (above) for league rates and fits from Week 5. Weeks 1-4 of 2014 stand as played on the 2012 base, and the 2014 views show two cohorts.
+- Data: the 2010-2013 regular seasons and 2014 Weeks 1-4, the 61 games through Monday, September 29, 2014. The base is usable from September 30 and frozen at Week 5's first event (Thursday, October 2, 2014, Minnesota at Green Bay) for the rest of the 2014 season. No later base change follows whatever the band audit reads. An OUTSIDE row remains an investigation item, never grounds to rerun, select or edit a result.
+- Post-divergence caveat: the pooled fits contain every club's and player's own 2013-2014 rows as anonymous league data. Those rows never set that same club's or player's value, and no per-club or per-player 2013-2014 outcome row is committed.
+- No branch receipt, branch audit reading or branch result entered any fit, centre or weighting choice. The design read branch receipts only to measure the installed kernel's behaviour (defect evidence). Seasons are weighted equally per event: the fitted recency half-life failed its test and is not adopted (specification, section 2).
+- The rulebook's era note (foundation section 8) is not edited by this record. Authorization to name the new base there is needed later.
+
+### The player-state policy (A to D)
+
+- Stone's words (12:59), adopting word for word the four points Claude had recommended at 12:48: "with A player's real career up to 2012, carried forward on aging and experience curves pooled across every player from 2010 to 2014. Draft-slot starting estimates for players without that record. Your recorded once-per-season swing, with its size and carryover fitted from the data rather than chosen, drawn by Railway for every player. Your capped feedback idea, applied to what the branch can honestly observe: snaps played, role held and availability. The weight would come from a fit, not set at 20%."
+- Scope: hidden-state statistical priors for the engine only. They are never scouting evidence and never a staff-facing grade. A real player's own 2013-2014 statistics never set his own value. Branch production (yards, sacks, interceptions) is not feedback; only snaps, role and availability are, as his words state. The private service draws and records each player's season swing. No one sees the drawn values: not Stone, the staff, the reports or Claude. Only the public expectations and a commitment hash are visible.
+- **Staff assessments, grades and E2 advice never read player-state values or tiers.** The AGENTS.md line for this awaits approval; until then the rule lives here and in `runtime/README.md`.
+- The evidence table's draft-slot row ("Draft slot, reputation and contract cost are not ability measurements", E1 above) still governs scouting, staff assessments and every reader-facing judgment. Stone's adoption of draft-slot starting estimates supersedes it only for the hidden-state prior of a player with no pre-2013 record.
+- "Development stays open" ("no calendar-triggered upgrade, compulsory one-tier step, fixed age curve", above) still governs staff assessment and the development program. The fitted aging and experience curves are population priors on the hidden engine value, the same for every player of a family. They never trigger a staff upgrade or downgrade, and a family that fails its test has no curve.
+- A dated pointer note is added to the [progression model](../career/2014/00_Team_Operations/Player_Development/progression_model.md).
+
+### U2 to U8
+
+- **U2 (default):** the 2014 Weeks 1-4 emphasis-foul level persists through Week 17, as a season-long officiating directive. There is no separate completion tilt; completion follows the pooled base.
+- **U3 (default):** the strength keep rule applies symmetrically. A live term that fails on the 2010-2014 refit goes to slope 0 (protection-to-sack may turn off), and a newly passing term becomes live (for example the unit passing-to-interception term). The individual passer interception term stays not adopted (decided once on October 2, above); a unit composite term is a different term and follows the keep rule.
+- **U4 (default):** draft-slot estimates use each player's real selection slot, or undrafted status, for every club, Jacksonville-controlled players included, so Jacksonville's own draft choices cannot raise anyone's estimate. This is the one use of a real selection fact for a Jacksonville player, and it is limited to the hidden-state prior.
+- **U5 (default):** the player-model amendments made after early results were seen are accepted and disclosed as not blind (the 2014.4 study precedent). Amendment 2 replaces the delta method with forecast residuals. Amendment 3 covers the two-pass conjunction for aging, the negative-sign rule for draft slopes, the 30-event minimum cell, and the tier population defined on the committed production-evidence qualifier floors. If overridden, every family gets zero aging and flat rookie estimates.
+- **U6 is not answered.** It covers Stone's two-point and onside-kick rule for Jacksonville, or a dated delegation such as "otherwise follow the league default". The mechanism accepts either a live pause or a call-sheet block (`decisions.two_point`, `decisions.kickoff`), and Jacksonville's user-controlled inputs fail closed without one. No agent writes this decision; Stone's answer arrives with the Week 5 call sheet.
+- **U7 (default):** a background club that cannot dress a legal 46 from its real roster records a dated, 2014-legal background transaction. That is a practice-squad signing to the 53, paired with a reserve/injured placement of that club's longest-held unavailable player, under one rule for all 31 clubs. Claude stated it to Stone as "If a background club can't dress 46, it makes a dated, legal practice-squad signing."
+- **U8** (a graded row still OUTSIDE after acceptance) has not arisen. It is never auto-registered.
+- **Plan defaults 1B.1 to 1B.14 stand as written in the plan.** They cover:
+  - equal weight per event;
+  - altitude terms at slope 0;
+  - static venue facts plus 2010-2013 climatology, with no 2014 file read at runtime;
+  - the participation slot convention unchanged;
+  - defensive records labelled deterministically from Stone's sheet;
+  - an on-field player still choosable as an explicit reassignment;
+  - the DB slot-family base four;
+  - the opening overtime onside cell;
+  - a trailing overtime punt weight moved to downs;
+  - family-free player draws with the z-transfer;
+  - the usage swing at sigma 0;
+  - no second returners;
+  - role feedback at slope 0 for the 2015 transition, availability from 2015 and snaps at 0;
+  - no Week 1 PUP, NFI or reserve additions, with suspended players added as available.
+
+### Fourth downs: Stone's live call (batch B9F, added to the plan)
+
+- Stone's words (18:55): "Fourth downs remain my call. I want the decision prepared before third down whenever possible. Skalaski gives me distance, field position, score, timeouts, clock and the kicking information; Tice gives me the best prepared conversion call."
+- Through kernel 2014.5 the engine decides every club's fourth downs inside the drawn drive, Jacksonville's included, so this standing instruction has had no effect.
+- What Claude told him (18:55), with no objection:
+  - a Jacksonville game pauses at each fourth down, as it does for a key injury, with Skalaski's information and Tice's prepared conversion call;
+  - Stone answers go, field goal or punt, and gives the call if he goes;
+  - the result comes from conversion, field-goal and punt rates measured on 2010-2014 data, with the same matchup terms used for every club and no bonus for the user's team;
+  - the other 31 clubs decide by the 2010-2014 league decision chart.
+- The decision source is an input, never a probability shift. A pause shows only what the staff would supply; the engine's hidden make probability is never shown. B9F freezes its own rules in its design record before its code.
+
+### Other inputs in force
+
+- The 2014 points of emphasis are modelled before Week 5, from Stone's list.
+- The other 31 clubs' in-season roster rails, with the over-53 rule "hold, never invent", are built separately (branch `rails-2014-6`) and reach this build before batch B15.
+
+### The uploaded snap estimates and evidence builder: not used in 2014.6
+
+- The snap estimates uploaded under `docs/football_snap_estimates (1)/` were fitted with full-season 2014 data; most of the 2014 rows are from Weeks 5-17, beyond the information gate. Their positions came from the current player database, and they were partly built from the same production statistics the fits use. They are not used in kernel 2014.6, and never for availability.
+- Any later use needs a guarded rebuild:
+  - trained only on real 2013 snaps and 2014 weeks public at the time;
+  - each player estimated by a model fitted without his own rows;
+  - positions from that week's roster;
+  - a `measurement` label kept apart from observed snaps;
+  - never a reader-facing statistic;
+  - never a denominator for per-snap rates of the statistics it was built from;
+  - fitted weights corrected for measurement error by position group;
+  - special-teams share and fullbacks kept out of fitted weights;
+  - CC BY 4.0 attribution.
+- The `free_nfl_evidence` package is not adopted. Its fixable ideas (status-aware availability, club-code mapping, a divergence gate) may inform a committed builder.
+
+### Design scratch hygiene
+
+- The design phase's scratch trees held full-season 2014 and post-2014 files. In B0 they were moved out of those trees, with a manifest (sha256, size, original path), and are never read again:
+  - 39 full-season 2014 files, plus 6 links to them removed;
+  - 10 post-2014 files, plus 1 link;
+  - the 2013 season-aggregate player statistics;
+  - 67 products derived from full-season 2014 (the snap-estimate reproductions, the audit's training sets and the scratch tilt refit).
+- The scratch file holding real Jacksonville club rows (`context/p1_plan.csv`) was deleted.
+- The scratch strength tilt refit (`tilt_refit.py`) read full-season 2014 season statistics; nothing from it is adopted.
+- The full-season 2014 weekly player-statistics sums printed once by mistake in the design phase entered no value.
+- No scratch output is promoted into `library/data`. Only committed builders produce artifacts, and they cut 2014 at fetch.
+
+### Needed later (not decided here)
+
+- Authorization to name the new base in the rulebook's era note (foundation section 8).
+- Two AGENTS.md workflow lines, which await Stone's approval: Run Week N step 4 builds the week's `conditions.json` inside `build_week_inputs.py` once kernel 2014.6 ships, and staff assessments, grades and E2 advice never read player-state values or tiers. Until approved, both live here and in `runtime/README.md`.
+- Week 1 PUP, NFI and reserve treatment and the library rule 6 use of real later recovery dates; role feedback before the 2015 transition; observed weather as a rail; per-snap defensive calls.
+
+### Release preconditions
+
+`python scripts/research/release_preconditions_2014_6.py` reports, read-only, that there is no pending `paused_game.json`, no journaled-but-unreceipted 2014 event in the local caches, and that the Week 5 inputs are not frozen. It never calls the private service; the service's own journal is checked at release.
 
 ## Release boundary
 

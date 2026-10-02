@@ -527,7 +527,12 @@ Kernel 2014.5 changes one thing: which descriptive call label a resolved snap ca
 
 **Versions and the live store.** `KERNEL_VERSION` (`runtime/__init__.py`) and the service `KERNEL` (`runtime/private_service.py`) read `2014.5`; `runtime/season_readiness.json` accepts `2014.5` on the release pattern above (kernel change on a live store). The private service deploys from merged `main`; until that deploy completes, `check_game_readiness.py` fails closed on the kernel mismatch (`private runtime health identity mismatch`) by design. After merge: verify `GET /health` and the authenticated `GET /ready` report kernel and procedure `2014.5` with the snapshot unchanged, then `python scripts/check_game_readiness.py --season 2014`. No snapshot advance is part of this release.
 
-**Calibration base (recorded, no change).** The 2012 calibration base stays through the 2014 season; see `runtime/2014_engine_decisions.md` (October 2, 2026).
+**Calibration base.** The 2012 calibration base is installed, and 2014 Weeks 1-4 closed on it and stand as played. On October 2, 2026 Stone widened the league base to 2010-2014 from Week 5 (decision U1(b)). That covers the 2010-2013 regular seasons and the 61 games of 2014 through September 29, frozen at Week 5's first event for the rest of the 2014 season. It supersedes the earlier record that the 2012 base would stay through 2014. The new base arrives only with kernel 2014.6, which is in build: this kernel and the 2012 base stay live until that release. See `runtime/2014_engine_decisions.md` (Kernel 2014.6 decisions, dated) and the frozen rules in `library/2014_6_pre_build_specification.md`.
+
+**Kernel 2014.6 rules awaiting an AGENTS.md line (recorded October 2, 2026).** Until Stone approves the workflow lines, two rules are recorded here and in the decisions record:
+
+1. once kernel 2014.6 ships, Run Week N step 4 builds the week's `conditions.json` inside `scripts/build_week_inputs.py`;
+2. staff assessments, grades and E2 advice never read player-state values or tiers.
 
 <!-- event-record: {"closure": {"checkpoint": "Canonical update - September 22, 2013 - Kernel 2013.6 engine correction", "original_close": "Commit closed - Canonical update - September 22, 2013 - Kernel 2013.6 engine correction - canonical through September 22, after Week 3", "sequence": 39, "through": "2013-09-22"}, "date": "2013-09-22", "id": "2013-09-22-engine-correction-kernel-2013-6", "kind": "technical", "status": "closed", "summary": "Kernel 2013.6 was adopted."} -->
 
