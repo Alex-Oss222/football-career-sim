@@ -6,7 +6,9 @@
 Reads the week's Jacksonville call sheet from
 career/YEAR/regular_season/week_NN_*/call_sheet.json and every closed receipt
 for availability, builds the package and runs the weekly exclusivity and
-game-day gate with the scheduled game count. The package is written to
+game-day gate with the scheduled game count. From the in-season rails'
+effective week (2014: Week 5) the committed moves must reach the slate's
+last cutoff first (library/2014_inseason_rails.md). The package is written to
 .sim_cache/YEAR/week_NN_inputs.json only when the gate passes; any other exit
 leaves no package at that path. Nothing is drawn and no event is closed.
 """
@@ -23,6 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from runtime import rails
 from runtime.player_bios import master_date
 from runtime.week_inputs import PROTAGONIST, build_package, schedule
 from runtime.seasons import SeasonPaths, require_game_release
@@ -63,6 +66,16 @@ def information_gate_error(week, season, root=ROOT):
     return None
 
 
+def rails_coverage_error(week, season, root=ROOT):
+    """The week-scoped in-season rails gate (engineering review S3): from
+    the rails' effective week the committed moves must reach the slate's
+    last cutoff (runtime.rails.slate_cutoffs) before any input is built."""
+    data = rails.load(season, root)
+    if data is None or week < data.effective_from_week:
+        return None
+    return rails.week_cutoff_coverage_error(data, max(rails.slate_cutoffs(schedule(week, season)).values()), week)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("week", type=int)
@@ -78,7 +91,7 @@ def main():
     out = paths.cache(args.week, "inputs")
     # Only a package that passed the gate may sit at the frozen path.
     out.unlink(missing_ok=True)
-    gate = information_gate_error(args.week, args.season)
+    gate = information_gate_error(args.week, args.season) or rails_coverage_error(args.week, args.season)
     if gate:
         print("WEEK_INPUTS: BLOCKED\n- " + gate)
         return 1

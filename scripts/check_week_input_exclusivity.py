@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import re
 import sys
 from pathlib import Path
 from types import SimpleNamespace
@@ -16,18 +15,13 @@ if str(ROOT) not in sys.path:
 from runtime.seasons import SeasonPaths
 from runtime.usage import group, lineup_errors
 from runtime.week_inputs import GAME_DAY_ACTIVE_LIMIT
+# A Status cell is the status alone or the status followed by one dated
+# parenthetical, e.g. "Active 53 (signed August 31, 2014)". One definition,
+# shared with the in-season rails' Jacksonville control.
+from runtime.rails import CONTROLLED_STATUS
 
 # Groups whose usage kernel 2013.4 orders by depth; each needs an explicit order.
 DEPTH_REQUIRED = ("QB", "RB", "WR", "TE")
-
-
-# A Status cell is the status alone or the status followed by one dated
-# parenthetical, e.g. "Active 53 (signed August 31, 2014)".
-CONTROLLED_STATUS = re.compile(
-    r"^(?:Active 53|Offseason roster|Practice squad|Injured reserve|IR|Reserve(?:/[^|(]+?)?|"
-    r"PUP|NFI|Suspended|Commissioner(?:/[^|(]+?)?)\s*(?:\([^|]*\))?$",
-    re.IGNORECASE,
-)
 
 
 def controlled_players_from_roster(path: Path) -> set[str]:

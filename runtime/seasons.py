@@ -75,6 +75,11 @@ class SeasonPaths:
     def background_depth(self):
         return self.root / ('library/data/%d_week1_depth_charts.json' % self.year)
     @property
+    def inseason_rails(self):
+        """The in-season roster rails data folder (manifest, base, weekly
+        shards); runtime.rails reads it. A season without one has no rails."""
+        return self.root / ('library/data/%d_inseason_rails' % self.year)
+    @property
     def generations(self): return self.career / 'migrations/event_generations.json'
 
     def cache(self, week, kind):
