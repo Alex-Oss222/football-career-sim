@@ -8,6 +8,7 @@
 **Checkpoint:** May 11, 2014 starting evaluation, on acquisition (selected No. 205 on May 10, 2014; rookie contract signed May 11)  
 **Age:** 24  
 **Position:** DB  
+**Roster status (August 31, 2014):** Practice squad from August 31, 2014: waived at the August 30 reduction to 53, cleared waivers and signed a practice-squad contract at the $6,300 weekly minimum ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). Not on the 53; this card stays current and its statistics refresh after closed games only if he is elevated.  
 **NFL standing:** Rookie; no NFL standing. Staff view: coverage-unit and slot-safety competition  
 **Player identity:** A compact, versatile senior defensive back who played both safety spots and slot corner and led Georgia Tech in tackles in 2013, with return and coverage-unit experience. Height and length limit him outside.  
 **Previous annual profile:** None; 2014 rookie. The starting view rests on pre-draft public evidence only  

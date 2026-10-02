@@ -8,6 +8,7 @@
 **Checkpoint:** March 31, 2014 starting evaluation  
 **Age:** 30  
 **Position:** DT  
+**Roster status (August 31, 2014):** Former player: Waived August 30, 2014 at the reduction to 53 ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); cleared waivers August 31 and left Jacksonville's control. This card is kept as history through that date; no later work is added.  
 **NFL standing:** Starting staff view; exact theoretical personnel grades  
 **Player identity:** A power-oriented interior reserve. I see a narrow run-defense role, with first-step disruption, hand technique and pass-rush development below his raw strength.  
 **Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/jeris_pendleton.md)  

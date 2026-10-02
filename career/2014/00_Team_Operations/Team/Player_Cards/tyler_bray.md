@@ -8,6 +8,7 @@
 **Checkpoint:** March 31, 2014 starting evaluation  
 **Age:** 22  
 **Position:** QB  
+**Roster status (August 31, 2014):** Practice squad from August 31, 2014: waived at the August 30 reduction to 53, cleared waivers and signed a practice-squad contract at the $6,300 weekly minimum ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). Not on the 53; this card stays current and its statistics refresh after closed games only if he is elevated.  
 **NFL standing:** Starting staff view; exact theoretical personnel grades  
 **Player identity:** A developmental vertical passer with a stronger throwing tool than his command of the offense. I see a quarterback who needs timing and protection answers to catch up to the arm.  
 **Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/tyler_bray.md)  

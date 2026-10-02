@@ -8,6 +8,7 @@
 **Checkpoint:** March 31, 2014 starting evaluation  
 **Age:** 25  
 **Position:** WR  
+**Roster status (August 31, 2014):** Former player: qualifying offer withdrawn August 30, 2014 at the reduction to 53 and rights renounced ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); he never signed, never reported and left Jacksonville's control as a free agent. This card is kept as history; no later work is added.  
 **NFL standing:** Starting staff view; exact theoretical personnel grades  
 **Player identity:** A reserve outside receiver with more vertical utility than polished route detail. I see situational depth who needs cleaner adjustments and dependable catch execution to claim a larger job.  
 **Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/toney_clemons.md)  

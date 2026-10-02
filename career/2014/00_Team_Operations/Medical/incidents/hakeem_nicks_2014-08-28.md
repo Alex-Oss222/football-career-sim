@@ -1,4 +1,5 @@
 # Hakeem Nicks | August 28, 2014 | Medical report
+| September 4, 2014 | Reassessed on the day the instruction named; no change: out, projected return September 20. No further reassessment date communicated | None | [Medical history](../medical_history.md#september-3-and-4-hoskins-and-nicks-reassessed) |
 
 **Team and position:** Jacksonville Jaguars, WR (X)  
 **Updated through:** August 28, 2014  

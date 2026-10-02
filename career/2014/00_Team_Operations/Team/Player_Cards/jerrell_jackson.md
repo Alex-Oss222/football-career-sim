@@ -8,6 +8,7 @@
 **Checkpoint:** March 31, 2014 starting evaluation  
 **Age:** 24  
 **Position:** WR  
+**Roster status (August 31, 2014):** Reserve/injured from August 31, 2014: waived with the injured designation at the August 30 reduction, unclaimed, and reverted to the reserve/injured list, not designated for return ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); out, multi-week, projected return October 9. Under contract; not on the 53.  
 **NFL standing:** Starting staff view; exact theoretical personnel grades  
 **Player identity:** A developmental receiver with useful movement but an unfinished NFL route and adjustment profile. I see a practice-squad receiver competing for a narrow depth role.  
 **Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/jerrell_jackson.md)  

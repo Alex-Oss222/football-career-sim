@@ -1,36 +1,38 @@
 {
   "team": "Jacksonville Jaguars",
   "season": 2014,
-  "status": "WORKING VIEW, NOT A GAME INPUT. Carried from the closed 2013 chart minus players no longer controlled, with Stone's May 12, 2014 rep starting points for WR1, WR3, left guard, right guard and Edge 1 applied (Entry 111). Those are starting points with named competition, not awards; no other 2014 depth decision has been made.",
-  "as_of": "May 23, 2014 (ledger Entry 111)",
-  "effective": "Carried from the closed 2013 chart (January 6, 2014, AFC Divisional preparation)",
-  "sources": "career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/finances/player_contracts/contract_status.md; career/2014/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened); Entry 95 (March 2014 free-agency replay); Entry 108 (2014 draft and undrafted signings); Entry 110 (Rackley traded); Entry 111 (Stone's May 12 starting roles; rookie minicamp and Phase Two closed)",
-  "rule": "Order within each kernel position group is the closed 2013 order exactly as carried, minus players no longer controlled, plus the placements Stone has decided (Entry 111). Stone owns the 2014 order and changes it only by decision; each change is logged in career/2014/depth_chart.md.",
-  "note": "Kept under career/2014/early_offseason on purpose. runtime/seasons.py treats career/2014/team/depth_chart/game_depth_chart.json as the 2014 game input, and runtime/week_inputs.py reads that file as Stone's order. A chart that still carries pending free agents and players whose contracts start March 11 must not satisfy that input. Promote a reviewed chart to career/2014/team/depth_chart/game_depth_chart.json only when 2014 control, medical clearance and Stone's depth decisions are established.",
+  "status": "WORKING COPY OF THE SEASON GAME DEPTH CHART. Stone's season chart issued August 30, 2014 at the reduction to 53, over the 53 only; game_depth_chart.json in this folder is the released game input and the two files are changed together. Every player on the 53 holds a chart place; the two reserve/injured players and the eight practice-squad players are not on the chart.",
+  "as_of": "August 31, 2014 (after the waiver checkpoint, the practice-squad signings, the Week 1 inactives and the captains)",
+  "effective": "August 30, 2014 (Stone's season game depth chart at the reduction to 53)",
+  "sources": "The August 28 personnel packet's season depth chart baseline (Regular-season Week 1.md: Adams X, Thielen H, Hawkins Z; Lewis, Kelce, Jensen; Monroe, Bitonio, Brewster, Turner, Johnson; Kreiter snapping; Hawkins returning kicks and punts with Hurns the second punt returner; Nicks back to X and Adams to Z only after medical clearance and a full practice week); the frozen August 27 Atlanta chart (Preseason_Games/Game_04/depth_chart.json) for every other order; the current roster for control and availability; the August 30 reduction (Roster_Decisions/final_roster_cuts.md) for the 53. Earlier: career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/finances/player_contracts/contract_status.md; career/2014/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened); Entry 95 (March 2014 free-agency replay); Entry 108 (2014 draft and undrafted signings); Entry 110 (Rackley traded); Entry 111 (Stone's May 12 starting roles; rookie minicamp and Phase Two closed)",
+  "rule": "Order within each kernel position group, first = starter, as the kernel reads it. The packet's baseline sets the starting eleven on offense, the snapper and the returners; the Atlanta chart's order is carried for everyone else, minus the players who left on August 30. A player out under a medical instruction is listed last in his group while out (Nicks, Hoskins) and is on the inactive list; his return to the order is Stone's decision on clearance under the packet's condition. The roles field carries the kernel roles (passer, placekicker, punt, kick_return, punt_return); Hurns is the second punt returner by Stone's instruction and is not given the kernel role, which the kernel reads as the first returner. Each change is logged in career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md.",
+  "note": "The released game input is career/2014/00_Team_Operations/Team/Depth_Chart/game_depth_chart.json (runtime/seasons.py names it as the required 2014 input; runtime/week_inputs.py reads it as Stone's order). This working copy mirrors it with the contract flags, availability notes, the removed-player history and the update log.",
   "depth": {
     "QB": [
       "Kirk Cousins",
-      "Chad Henne",
-      "John Parker Wilson"
+      "Chad Henne"
     ],
     "RB": [
       "Maurice Jones-Drew",
-      "Jonathan Grimes",
-      "C.J. Anderson"
+      "C.J. Anderson",
+      "Jonathan Grimes"
     ],
     "FB": [
       "Montell Owens"
     ],
     "WR": [
-      "Hakeem Nicks",
-      "Adam Thielen",
       "Davante Adams",
-      "Toney Clemons",
-      "Mike Brown"
+      "Adam Thielen",
+      "Andrew Hawkins",
+      "Allen Hurns",
+      "Taylor Gabriel",
+      "Hakeem Nicks"
     ],
     "TE": [
       "Marcedes Lewis",
-      "Travis Kelce"
+      "Travis Kelce",
+      "Marcel Jensen",
+      "Gator Hoskins"
     ],
     "OL": [
       "Eugene Monroe",
@@ -38,35 +40,41 @@
       "Mike Brewster",
       "Trai Turner",
       "Lane Johnson",
-      "Cameron Bradfield",
-      "Austin Pasztor",
-      "Mark Asper"
+      "Cornelius Lucas",
+      "Charles Leno Jr.",
+      "Andrew Norwell",
+      "Corey Linsley"
     ],
     "DL": [
+      "Jeremy Mincey",
       "Sen'Derrick Marks",
       "Roy Miller",
-      "C.J. Mosley",
-      "Jeremy Mincey",
       "Andre Branch",
-      "Ryan Davis",
-      "Jeris Pendleton",
-      "C.J. Wilson",
-      "Lavar Edwards"
+      "C.J. Mosley",
+      "Daniel Te'o-Nesheim",
+      "Aaron Donald",
+      "Kasim Edebali"
     ],
     "LB": [
       "Daryl Smith",
+      "Paul Posluszny",
       "Julian Stanford",
       "Sio Moore",
-      "Paul Posluszny"
+      "Telvin Smith",
+      "Christian Jones",
+      "Todd Davis"
     ],
     "DB": [
-      "Dwight Lowery",
+      "Aqib Talib",
       "Mike Harris",
+      "Dwight Lowery",
       "Bacarri Rambo",
       "Jordan Poyer",
+      "Alterraun Verner",
       "A.J. Bouye",
+      "Brynden Trawick",
       "Chris Prosinski",
-      "Brynden Trawick"
+      "Malcolm Butler"
     ],
     "K": [
       "Josh Scobee"
@@ -75,55 +83,63 @@
       "Bryan Anger"
     ],
     "LS": [
-      "Jeremy Cain"
+      "Casey Kreiter"
     ]
   },
   "positions": {
     "Kirk Cousins": "QB",
-    "John Parker Wilson": "QB",
-    "Jonathan Grimes": "RB",
+    "Chad Henne": "QB",
+    "Maurice Jones-Drew": "RB",
     "C.J. Anderson": "RB",
+    "Jonathan Grimes": "RB",
     "Montell Owens": "FB",
+    "Davante Adams": "WR",
     "Adam Thielen": "WR",
-    "Toney Clemons": "WR",
-    "Mike Brown": "WR",
+    "Andrew Hawkins": "WR",
+    "Allen Hurns": "WR",
+    "Taylor Gabriel": "WR",
+    "Hakeem Nicks": "WR",
     "Marcedes Lewis": "TE",
     "Travis Kelce": "TE",
+    "Marcel Jensen": "TE",
+    "Gator Hoskins": "TE",
     "Eugene Monroe": "OT",
-    "Lane Johnson": "OT",
-    "Cameron Bradfield": "OT",
-    "Austin Pasztor": "OG",
-    "Mark Asper": "OG",
+    "Joel Bitonio": "OT",
     "Mike Brewster": "C",
-    "Roy Miller": "DT",
-    "C.J. Mosley": "DT",
+    "Trai Turner": "G",
+    "Lane Johnson": "OT",
+    "Cornelius Lucas": "OT",
+    "Charles Leno Jr.": "OT",
+    "Andrew Norwell": "G",
+    "Corey Linsley": "C",
     "Jeremy Mincey": "DE",
+    "Sen'Derrick Marks": "DT",
+    "Roy Miller": "DT",
     "Andre Branch": "DE",
-    "Jeris Pendleton": "DT",
-    "Lavar Edwards": "DE",
-    "Ryan Davis": "DE",
-    "Paul Posluszny": "LB",
+    "C.J. Mosley": "DT",
+    "Daniel Te'o-Nesheim": "DE",
+    "Aaron Donald": "DT",
+    "Kasim Edebali": "DE",
     "Daryl Smith": "LB",
+    "Paul Posluszny": "LB",
     "Julian Stanford": "LB",
     "Sio Moore": "LB",
+    "Telvin Smith": "LB",
+    "Christian Jones": "LB",
+    "Todd Davis": "LB",
+    "Aqib Talib": "CB",
+    "Mike Harris": "CB",
     "Dwight Lowery": "S",
     "Bacarri Rambo": "S",
     "Jordan Poyer": "CB",
-    "Mike Harris": "CB",
-    "Chris Prosinski": "S",
+    "Alterraun Verner": "CB",
     "A.J. Bouye": "CB",
     "Brynden Trawick": "S",
+    "Chris Prosinski": "S",
+    "Malcolm Butler": "CB",
     "Josh Scobee": "K",
     "Bryan Anger": "P",
-    "Jeremy Cain": "LS",
-    "Sen'Derrick Marks": "DT",
-    "Maurice Jones-Drew": "RB",
-    "C.J. Wilson": "DE",
-    "Chad Henne": "QB",
-    "Hakeem Nicks": "WR",
-    "Davante Adams": "WR",
-    "Joel Bitonio": "OT",
-    "Trai Turner": "OG"
+    "Casey Kreiter": "LS"
   },
   "roles": {
     "Kirk Cousins": [
@@ -134,15 +150,14 @@
     ],
     "Bryan Anger": [
       "punt"
+    ],
+    "Andrew Hawkins": [
+      "kick_return",
+      "punt_return"
     ]
   },
   "contract_flags": {
     "Eugene Monroe": "Under contract through 2018 (re-signed March 11, Entry 95)",
-    "Cameron Bradfield": "Tendered RFA (lowest), unsigned",
-    "Toney Clemons": "Tendered ERFA, unsigned",
-    "Mike Brown": "Tendered ERFA, unsigned",
-    "Austin Pasztor": "Tendered ERFA, unsigned",
-    "John Parker Wilson": "Under contract through 2014 (Entry 91)",
     "Jonathan Grimes": "Under contract through 2014 (Entry 91)",
     "Sen'Derrick Marks": "Under contract through 2017 (re-signed March 11, Entry 95)",
     "Alterraun Verner": "Under contract through 2017 (signed March 11, Entry 95)",
@@ -150,9 +165,7 @@
     "Hakeem Nicks": "Under contract through 2014 (signed March 14, Entry 97)",
     "Andrew Hawkins": "Under contract through 2017 (signed March 18, Entry 97)",
     "Daniel Te'o-Nesheim": "Under contract through 2016 (signed March 18, Entry 98)",
-    "Jeremy Cain": "Under contract through 2014 (re-signed March 19, Entry 99)",
     "Maurice Jones-Drew": "Under contract through 2015 (re-signed March 28, Entry 103)",
-    "C.J. Wilson": "Under contract through 2014 (re-signed March 28, Entry 103)",
     "Chad Henne": "Under contract through 2015 (re-signed April 4, Entry 106)",
     "Aaron Donald": "Rookie contract through 2017 (No. 13, signed May 11, Entry 108)",
     "Joel Bitonio": "Rookie contract through 2017 (No. 26, signed May 11, Entry 108)",
@@ -161,37 +174,52 @@
     "Telvin Smith": "Rookie contract through 2017 (No. 129, signed May 11, Entry 108)",
     "Corey Linsley": "Rookie contract through 2017 (No. 153, signed May 11, Entry 108)",
     "Charles Leno Jr.": "Rookie contract through 2017 (No. 168, signed May 11, Entry 108)",
-    "Jemea Thomas": "Rookie contract through 2017 (No. 205, signed May 11, Entry 108)",
     "Malcolm Butler": "Rookie contract through 2017 (No. 241, signed May 11, Entry 108)",
     "Andrew Norwell": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
     "Christian Jones": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
     "Allen Hurns": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
     "Cornelius Lucas": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-    "Adrian Phillips": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-    "Matt Feiler": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
     "Cameron Brate": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
     "Todd Davis": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-    "Tyler Shatley": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-    "Tyler Larsen": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-    "Connor Shaw": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
     "Kasim Edebali": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
     "Marcel Jensen": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
     "Gator Hoskins": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-    "Jackson Jeffcoat": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
     "Taylor Gabriel": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
-    "Casey Kreiter": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)"
+    "Casey Kreiter": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
+    "Kirk Cousins": "Under contract",
+    "C.J. Anderson": "Under contract",
+    "Montell Owens": "Under contract (through 2015, Supported)",
+    "Adam Thielen": "Under contract",
+    "Marcedes Lewis": "Under contract",
+    "Travis Kelce": "Under contract",
+    "Mike Brewster": "Under contract",
+    "Lane Johnson": "Under contract",
+    "Jeremy Mincey": "Under contract",
+    "Roy Miller": "Under contract",
+    "Andre Branch": "Under contract",
+    "C.J. Mosley": "Under contract",
+    "Daryl Smith": "Under contract",
+    "Paul Posluszny": "Under contract",
+    "Julian Stanford": "Under contract",
+    "Sio Moore": "Under contract",
+    "Mike Harris": "Under contract",
+    "Dwight Lowery": "Under contract",
+    "Bacarri Rambo": "Under contract",
+    "Jordan Poyer": "Under contract",
+    "A.J. Bouye": "Under contract",
+    "Brynden Trawick": "Under contract",
+    "Chris Prosinski": "Under contract",
+    "Josh Scobee": "Under contract",
+    "Bryan Anger": "Under contract"
   },
   "availability_notes": {
-    "Lane Johnson": "Trunk injury August 8 (out, projected return August 14); cleared August 14 on his projected date; inactive at Chicago by Stone's one-game decision; no communicated restriction; worked August 15 to 21 in full and played 18 snaps at the first-group right tackle on August 22 under Stone's one-game Detroit workload plan, which has ended",
-    "Cameron Brate": "Out, long term, from the August 8 preseason game (lower extremity; projected return January 15, 2015, reassessed August 15 with no change); roster disposition pending",
-    "Jerrell Jackson": "Out, multi-week, from the August 14 preseason game (lower extremity; projected return October 9, reassessed August 21 with no change); roster disposition pending",
-    "Richard Murphy": "No communicated restriction (independent medical hold from the August 14 preseason game, head/neck, minor, released August 18 on his projected date; reassessed August 15 with no change)",
-    "Marcel Jensen": "No communicated restriction (independent medical hold from the August 22 preseason game, head/neck, minor, removed; released August 28 on its projected date; reassessed August 24 with no change; inactive August 28 under the frozen plan)",
-    "Jordan Poyer": "No communicated restriction (out from the August 22 preseason game, upper extremity, minor, not removed, finished the game; cleared August 26 on his projected date; reassessed August 23 with no change)",
-    "Hakeem Nicks": "Out, multi-week, from the August 28 preseason game (lower extremity, removed; projected return September 20, reassessment September 4); any roster disposition Caldwell's with the user; the Week 1 arrangement is Stone's open decision",
-    "Gator Hoskins": "Out, short, from the August 28 preseason game (lower extremity, not removed, finished the game; projected return September 16, reassessment September 3)",
-    "Jeris Pendleton": "Out from the August 28 preseason game (lower extremity, minor, not removed, finished the game; projected return September 1, reassessment August 29)",
-    "A.J. Bouye": "Out from the August 28 preseason game (lower extremity, minor, not removed, played on; projected return August 31, reassessment August 29)"
+    "Hakeem Nicks": "Out, multi-week, from the August 28 preseason game (lower extremity, removed; projected return September 20, 2014; reassessment September 4); carried on the 53; listed last among the receivers while out; Week 1 inactive",
+    "Gator Hoskins": "Out, short, from the August 28 preseason game (lower extremity, not removed; projected return September 16, 2014; reassessment September 3); carried on the 53; listed last among the tight ends while out; Week 1 inactive",
+    "A.J. Bouye": "No communicated restriction (cleared August 31, 2014, his projected date, from the August 28 lower-extremity injury; reassessed August 29 with no change)",
+    "Marcel Jensen": "No communicated restriction (independent medical hold from the August 22 preseason game released August 28, its projected date)",
+    "Jordan Poyer": "No communicated restriction (cleared August 26, 2014, his projected date, from the August 22 injury)",
+    "Lane Johnson": "No communicated restriction (cleared August 14, 2014, his projected date, from the August 8 trunk injury)",
+    "Cornelius Lucas": "No communicated restriction; the foot is a performance-staff review item"
   },
   "removed_from_2013_chart": {
     "Brad Meester": "Retired; contract expired March 11, 2014 (Entries 79 and 94)",
@@ -205,9 +233,32 @@
     "Cecil Shorts": "Traded to Indianapolis, March 31, 2014 (Entry 104)",
     "Justin Blackmon": "Traded to Indianapolis, March 31, 2014 (Entry 104)",
     "Russell Allen": "Traded to Arizona, April 7, 2014 (Entry 106)",
-    "Will Rackley": "Traded to Seattle, May 12, 2014 (Entry 110)"
+    "Will Rackley": "Traded to Seattle, May 12, 2014 (Entry 110)",
+    "John Parker Wilson": "Waived at the reduction to 53, August 30, 2014",
+    "Mark Asper": "Waived at the reduction to 53, August 30, 2014",
+    "Ryan Davis": "Waived at the reduction to 53, August 30, 2014",
+    "C.J. Wilson": "Released at the reduction to 53, August 30, 2014 (vested veteran)",
+    "Lavar Edwards": "Waived at the reduction to 53, August 30, 2014",
+    "Jeris Pendleton": "Waived at the reduction to 53, August 30, 2014",
+    "Jeremy Cain": "Released at the reduction to 53, August 30, 2014 (vested veteran); follows the rails to Chicago on September 1, 2014",
+    "Cameron Bradfield": "Qualifying offer withdrawn August 30, 2014; rights renounced",
+    "Toney Clemons": "Tender withdrawn August 30, 2014; rights renounced",
+    "Mike Brown": "Tender withdrawn August 30, 2014; rights renounced",
+    "Austin Pasztor": "Tender withdrawn August 30, 2014; rights renounced"
   },
-  "game_day_inactives": null,
+  "game_day_inactives": {
+    "week": 1,
+    "players": [
+      "Hakeem Nicks",
+      "Gator Hoskins",
+      "Malcolm Butler",
+      "Corey Linsley",
+      "Kasim Edebali",
+      "Todd Davis",
+      "Taylor Gabriel"
+    ],
+    "note": "Seven of the 53 are inactive for Week 1 at Philadelphia (46 dress; rules library R4). Hakeem Nicks (out, multi-week, projected return September 20, 2014) and Gator Hoskins (out, short, projected return September 16, 2014) are inactive by medical instruction. The other five are set by Stone's standing rule for the healthy inactives: the deepest healthy reserve on the chart in each of the five largest healthy position groups, never below a legal game-day unit, re-set each week; at August 31 those groups are the defensive backs (10: Malcolm Butler), the offensive line (9: Corey Linsley), the defensive line (8: Kasim Edebali), the linebackers (7: Todd Davis) and the receivers (5 healthy: Taylor Gabriel). A.J. Bouye cleared August 31, his projected date, and is active. Stone may replace any of the five in the Week 1 preparation; a week without a new list reuses the last one, minus players no longer controlled. The two reserve/injured players (Brate, Jackson) and the eight practice-squad players are not on the 53 and cannot appear here."
+  },
   "update_log": [
     {
       "date": "February 17, 2014",
@@ -346,139 +397,122 @@
       "event": "Preseason game 4: availability notes",
       "ledger_entry": "2014-08-28-preseason-game-4-atlanta-at-jacksonville; 2014-08-28-preseason-game-4-injuries",
       "change": "No order change and no Stone depth decision. Availability notes only: Nicks out multi-week (August 28; removed; projected return September 20, reassessment September 4); Hoskins out, short (August 28; not removed; projected return September 16, reassessment September 3); Pendleton out (August 28; not removed; projected return September 1, reassessment August 29); Bouye out (August 28; not removed; projected return August 31, reassessment August 29); Jensen's hold cleared August 28 on its projected date with him inactive under the frozen plan; Jackson and Brate unchanged. The preseason is complete at 1-3; the season game depth chart is owed at the August 30 reduction to 53 (Stone), and the Week 1 receiver arrangement without Nicks is Stone's open decision, not a chart change."
+    },
+    {
+      "date": "August 29, 2014",
+      "event": "Atlanta review and cutdown meeting; Bouye and Pendleton reassessed",
+      "ledger_entry": "2014-08-29-atlanta-review-and-cutdown-meeting; 2014-08-31-bouye-cleared",
+      "change": "No order change. Availability notes only: Bouye and Pendleton reassessed August 29 with no change. The staff meeting carried the packet's 53 recommendation and depth baseline to Caldwell unchanged; no decision until August 30."
+    },
+    {
+      "date": "August 30, 2014",
+      "event": "Reduction to 53 and Stone's season game depth chart",
+      "ledger_entry": "2014-08-30-reduction-to-53; 2014-08-30-season-depth-chart-and-battle-closures",
+      "change": "Removed by Caldwell's reduction: John Parker Wilson, Bray, Shaw (QB); Murphy (RB); Asper, Feiler, Shatley, Larsen (OL); Ryan Davis, C.J. Wilson, Edwards, Jeffcoat, Pendleton, Long, D'Anthony Smith (DL); Blake, Thomas, Phillips (DB); Cain (LS); Bradfield, Clemons, Brown, Pasztor (tenders withdrawn); Brate and Jackson waived with the injured designation (off the chart). Stone's season chart over the 53 from the August 28 packet's baseline: WR Adams (X), Thielen (H), Hawkins (Z), Hurns, Gabriel, Nicks last while out; TE Lewis, Kelce, Jensen, Hoskins last while out; OL Monroe, Bitonio, Brewster, Turner, Johnson, then Lucas, Leno, Norwell, Linsley; LS Kreiter; kick and punt returner Hawkins, Hurns the second punt returner; every other group in the frozen Atlanta order minus the departures (RB Jones-Drew, Anderson, Grimes; DL Mincey, Marks, Miller, Branch, Mosley, Te'o-Nesheim, Donald, Edebali; LB Daryl Smith, Posluszny, Stanford, Moore, Telvin Smith, Christian Jones, Todd Davis; DB Talib, Harris, Lowery, Rambo, Poyer, Verner, Bouye, Trawick, Prosinski, Butler). The WR1, WR3, left-guard, right-guard, Edge 1 and long-snapper competitions closed. Added, not placed: none; every player on the 53 holds a chart place. Promoted to game_depth_chart.json, the released 2014 game input."
+    },
+    {
+      "date": "August 31, 2014",
+      "event": "Waivers cleared, reserve/injured placements, practice squad signed, Week 1 inactives and captains",
+      "ledger_entry": "2014-08-31-waivers-and-practice-squad; 2014-08-30-season-depth-chart-and-battle-closures",
+      "change": "No order change. Brate and Jackson to reserve/injured (not on the chart); eight practice-squad players signed (not on the chart). Bouye cleared August 31, his projected date, and is active. Week 1 inactives set: Nicks and Hoskins by medical instruction; Butler, Linsley, Edebali, Todd Davis and Gabriel by Stone's standing rule (the deepest healthy reserve in each of the five largest healthy groups). Captains named: Cousins, Monroe, Jones-Drew; Marks, Daryl Smith, Lowery."
     }
   ],
   "added_not_placed": {
-    "note": "Players under contract from March 11, 2014 whom Stone has not placed in the order: the six reserve/future contracts (Entry 85) and the replay signings Alterraun Verner, Aqib Talib, Hakeem Nicks, Andrew Hawkins and Daniel Te'o-Nesheim (Entries 95 to 98). Listed below their groups with no depth position or role. Entry 108 adds the nine 2014 draft selections and the 17 undrafted signings, listed below their groups with no depth position or role; rookies are added, not placed, as in 2013. Entry 111 (Stone's May 12 instruction) places Nicks (WR 1), Adams (WR 3), Bitonio (OL 2, left guard) and Turner (OL 4, right guard) as rep starting points, with named competition; the other added players stay unplaced.",
-    "QB": [
-      "Tyler Bray",
-      "Connor Shaw"
-    ],
-    "RB": [
-      "Richard Murphy"
-    ],
-    "WR": [
-      "Andrew Hawkins",
-      "Jerrell Jackson",
-      "Allen Hurns",
-      "Taylor Gabriel"
-    ],
-    "DL": [
-      "Daniel Te'o-Nesheim",
-      "Jerome Long",
-      "D'Anthony Smith",
-      "Aaron Donald",
-      "Kasim Edebali",
-      "Jackson Jeffcoat"
-    ],
-    "DB": [
-      "Alterraun Verner",
-      "Aqib Talib",
-      "Antwon Blake",
-      "Jemea Thomas",
-      "Malcolm Butler",
-      "Adrian Phillips"
-    ],
-    "OL": [
-      "Corey Linsley",
-      "Charles Leno Jr.",
-      "Andrew Norwell",
-      "Cornelius Lucas",
-      "Matt Feiler",
-      "Tyler Shatley",
-      "Tyler Larsen"
-    ],
-    "LB": [
-      "Telvin Smith",
-      "Christian Jones",
-      "Todd Davis"
-    ],
-    "TE": [
-      "Cameron Brate",
-      "Marcel Jensen",
-      "Gator Hoskins"
-    ],
-    "LS": [
-      "Casey Kreiter"
-    ]
+    "note": "None. Every player on the 53 holds a place on Stone's August 30 season chart; the players added but not placed before the cut were placed by that chart or left the roster on August 30 (see removed_added_players)."
   },
-  "added_positions": {
-    "Tyler Bray": "QB",
-    "Richard Murphy": "RB",
-    "Jerrell Jackson": "WR",
-    "Jerome Long": "DT",
-    "D'Anthony Smith": "DT",
-    "Antwon Blake": "S",
-    "Alterraun Verner": "CB",
-    "Aqib Talib": "CB",
-    "Andrew Hawkins": "WR",
-    "Daniel Te'o-Nesheim": "DE",
-    "Aaron Donald": "DT",
-    "Telvin Smith": "LB",
-    "Corey Linsley": "C",
-    "Charles Leno Jr.": "OT",
-    "Jemea Thomas": "DB",
-    "Malcolm Butler": "CB",
-    "Andrew Norwell": "OG",
-    "Christian Jones": "LB",
-    "Allen Hurns": "WR",
-    "Cornelius Lucas": "OT",
-    "Adrian Phillips": "S",
-    "Matt Feiler": "OG",
-    "Cameron Brate": "TE",
-    "Todd Davis": "LB",
-    "Tyler Shatley": "C",
-    "Tyler Larsen": "C",
-    "Connor Shaw": "QB",
-    "Kasim Edebali": "DE",
-    "Marcel Jensen": "TE",
-    "Gator Hoskins": "TE",
-    "Jackson Jeffcoat": "DE",
-    "Taylor Gabriel": "WR",
-    "Casey Kreiter": "LS"
-  },
+  "added_positions": {},
   "stone_role_decisions": {
-    "date": "May 12, 2014",
-    "ledger_entry": "Entry 111",
-    "rule": "Rep starting points entering OTAs, not awards; each is an open competition on the field. Source: Stone's memo amendment, starting roles entering OTAs.",
+    "date": "August 30, 2014",
+    "ledger_entry": "2014-08-30-season-depth-chart-and-battle-closures",
+    "rule": "Stone's season game depth chart at the reduction to 53 closed the five May 12 competitions and the long-snapper competition. Source: the August 28 personnel packet's baseline, issued as Stone's chart; roster decisions own the dated closures.",
     "decisions": [
       {
-        "role": "WR1",
-        "starting_player": "Hakeem Nicks",
-        "competition": [
-          "Davante Adams"
-        ]
+        "role": "X (WR1)",
+        "player": "Davante Adams",
+        "note": "WR1 competition closed; Nicks returns to X with Adams to Z only after medical clearance and a full practice week"
       },
       {
-        "role": "WR3",
-        "starting_player": "Davante Adams",
-        "competition": [
-          "Andrew Hawkins"
-        ]
+        "role": "H",
+        "player": "Adam Thielen"
+      },
+      {
+        "role": "Z (WR3)",
+        "player": "Andrew Hawkins",
+        "note": "WR3 competition closed"
       },
       {
         "role": "Left guard",
-        "starting_player": "Joel Bitonio",
-        "competition": [
-          "Andrew Norwell"
-        ]
+        "player": "Joel Bitonio",
+        "note": "competition closed; Norwell the reserve guard"
       },
       {
         "role": "Right guard",
-        "starting_player": "Trai Turner",
-        "competition": [
-          "Joel Bitonio",
-          "Andrew Norwell"
-        ],
-        "condition": "Bitonio or Norwell if Turner struggles"
+        "player": "Trai Turner",
+        "note": "the conditional alternative closed, not triggered"
       },
       {
         "role": "Edge 1",
-        "starting_player": "Jeremy Mincey",
-        "competition": [
-          "Andre Branch"
-        ]
+        "player": "Jeremy Mincey",
+        "note": "competition closed; Branch Edge 2"
+      },
+      {
+        "role": "Long snapper",
+        "player": "Casey Kreiter",
+        "note": "competition closed; Cain released"
+      },
+      {
+        "role": "Kick returner and punt returner",
+        "player": "Andrew Hawkins",
+        "note": "Hurns the second punt returner"
       }
     ]
+  },
+  "captains": {
+    "date": "August 31, 2014",
+    "structure": "Six captains, three on offense (quarterback, offensive line, skill group) and three on defense (defensive line, linebackers, secondary), named by Stone with no player vote",
+    "offense": [
+      "Kirk Cousins",
+      "Eugene Monroe",
+      "Maurice Jones-Drew"
+    ],
+    "defense": [
+      "Sen'Derrick Marks",
+      "Daryl Smith",
+      "Dwight Lowery"
+    ]
+  },
+  "reserve_injured": {
+    "Cameron Brate": "Waived with the injured designation August 30, 2014; reserve/injured from August 31 (out, long term; projected return January 15, 2015)",
+    "Jerrell Jackson": "Waived with the injured designation August 30, 2014; reserve/injured from August 31 (out, multi-week; projected return October 9, 2014); not designated for return"
+  },
+  "practice_squad": {
+    "signed": "August 31, 2014",
+    "players": [
+      "Tyler Bray",
+      "Richard Murphy",
+      "Matt Feiler",
+      "Tyler Shatley",
+      "Jackson Jeffcoat",
+      "Jerome Long",
+      "Jemea Thomas",
+      "Adrian Phillips"
+    ],
+    "open_places": "two (outside receiver, tight end)"
+  },
+  "removed_added_players": {
+    "Tyler Bray": "Waived August 30, 2014; practice squad from August 31",
+    "Connor Shaw": "Waived August 30, 2014",
+    "Richard Murphy": "Waived August 30, 2014; practice squad from August 31",
+    "Matt Feiler": "Waived August 30, 2014; practice squad from August 31",
+    "Tyler Shatley": "Waived August 30, 2014; practice squad from August 31",
+    "Tyler Larsen": "Waived August 30, 2014",
+    "Jackson Jeffcoat": "Waived August 30, 2014; practice squad from August 31",
+    "Jerome Long": "Waived August 30, 2014; practice squad from August 31",
+    "D'Anthony Smith": "Waived August 30, 2014",
+    "Antwon Blake": "Waived August 30, 2014",
+    "Jemea Thomas": "Waived August 30, 2014; practice squad from August 31",
+    "Adrian Phillips": "Waived August 30, 2014; practice squad from August 31",
+    "Cameron Brate": "Waived with the injured designation August 30, 2014; reserve/injured from August 31",
+    "Jerrell Jackson": "Waived with the injured designation August 30, 2014; reserve/injured from August 31"
   }
 }

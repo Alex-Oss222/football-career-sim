@@ -1,6 +1,6 @@
 # 2014 Week 1 depth charts for the 31 background clubs
 
-**Research date:** September 30, 2026 (branch clock July 29, 2014). **Football information window:** the real Week 1 depth charts and the Week 1 injury reports, dated September 3 to 6, 2014, before any Week 1 game. **Status: PREPARED, GATED.** This library is prepared research under [rails method section 7](../career/2014/League/personnel/method.md#7-week-1-depth-charts). It is usable as background TeamInput only when the master clock reaches Week 1 (September 7, 2014); the real charts were public the week of September 2 to 5, 2014, and under the information gate (method section 2) no rail informs any evaluation, board or decision before its date. No Week 1 score, statistic, game participation or later roster move is an input.
+**Research date:** September 30, 2026 (branch clock July 29, 2014); **rebuilt October 1, 2026 on the September 6, 2014 roster** after the August 30 reduction to 53 and the rails dispositions of the departed players (below). **Football information window:** the real Week 1 depth charts and the Week 1 injury reports, dated September 3 to 6, 2014, before any Week 1 game. **Status: PREPARED, GATED.** This library is prepared research under [rails method section 7](../career/2014/League/personnel/method.md#7-week-1-depth-charts). It is usable as background TeamInput only when the master clock reaches Week 1 (September 7, 2014); the real charts were public the week of September 2 to 5, 2014, and under the information gate (method section 2) no rail informs any evaluation, board or decision before its date. No Week 1 score, statistic, game participation or later roster move is an input.
 
 **Machine artifact:** [data/2014_week1_depth_charts.json](data/2014_week1_depth_charts.json). **Builder:** `scripts/research/build_2014_week1_depth_charts.py` (reads downloaded sources from a transient workspace; the runtime never downloads anything). **Loader:** `runtime/depth_library.py` with `season=2014` turns one club into a kernel TeamInput; the caller supplies the unit anchors (Document 7 section 2.2). **Tests:** `tests/test_2014_week1_depth_library.py`.
 
@@ -14,7 +14,8 @@ Jacksonville is not in this library. Its TeamInput always comes from the branch 
 | Availability | nflverse [injuries_2014.csv](https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2014.csv) | Week 1 report (219 rows dated September 3 to 6, 2014) |
 | Membership cross-check | nflverse [roster_weekly_2014.csv](https://github.com/nflverse/nflverse-data/releases/download/weekly_rosters/roster_weekly_2014.csv) | Week 1 club membership and jersey only; status ignored |
 | Player bio fields | the user's `user_nfl_2014_week1.json` (transient workspace) | Same 32 clubs and 1,659 gsis ids as the nflverse chart (verified); supplies `birth_date`, `page_url` and an open-licensed Wikimedia Commons headshot per player (`headshot_url`, `headshot_license`, `headshot_license_url`, `headshot_credit`, `headshot_page`), carried as data only; 1,541 of 1,659 players have a photo; its jersey number equals the weekly-roster jersey for every player |
-| Branch control | `career/2014/team/roster/roster.md`, July 29, 2014 | The 78 controlled players (74 signed, four unsigned tenders), matched by gsis id through `library/data/player_birth_dates.json` and `career/2014/league/personnel/league_players.json`; all 78 matched, none by name fallback |
+| Branch control | [roster.md](../career/2014/00_Team_Operations/Team/Roster/roster.md), September 6, 2014 | The 63 Jacksonville identifiers (the active 53, Brate and Jackson on reserve/injured, the eight practice-squad players: every row whose Status is `Active 53`, `Reserve/Injured` or `Practice squad`), matched by gsis id through `library/data/player_birth_dates.json` and `career/2014/league/personnel/league_players.json`; all 63 matched, none by name fallback |
+| Departures | the roster's Departures tables (Rails disposition column); [final roster cuts](../career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); [method](../career/2014/League/personnel/method.md) section 3 | The 23 players who left control August 30, 2014: a departed player with a recorded real same-kind, same-window move is placed with that club at his real slot (Jeremy Cain, Chicago, September 1); every other departed player is excluded from every club as an unplaced free agent |
 | Draft pairing | [draft_pairing.md](../career/2014/League/personnel/draft_pairing.md) | The seven placements and the one unplaced selection |
 | Branch trades | [trades.md](../career/2014/00_Team_Operations/Trades/completed_trades/trades.md) | Nwaneri, Babin, Alualu, Shorts, Blackmon, Rackley (Allen retired) |
 | Free-agent draws and the replay | [fa_draws.md](../career/2014/League/personnel/fa_draws.md), [replay log](../career/2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md) | Players Jacksonville won leave their real clubs; players it lost stay on their real charts |
@@ -25,8 +26,8 @@ Jacksonville is not in this library. Its TeamInput always comes from the branch 
 
 - **Club membership:** all 1,584 retained depth-chart players are listed with the same club in the Week 1 weekly-roster feed (`cross_check.listed`); none is missing.
 - **User file agreement:** slot strings agree for 1,577 of 1,584 players; the seven differences are duplicate slot rows in the nflverse feed (for example Javier Arenas, listed CB2 twice), which the user's file de-duplicated. The user's jersey number equals the weekly-roster Week 1 jersey for all 1,584 players, while the depth-chart feed's jersey differs from it for 833, so the user's number is stored. Bio fields are present for 1,583 of 1,584 retained chart players (Seattle's Phil Bates is absent from the user's file).
-- **Branch control:** a gsis-id sweep of all 78 controlled players found 38 on other clubs' charts (removed below), 16 on the real Jaguars' chart and 24 on no chart. No controlled player remains on any club and no gsis id or player id appears on two clubs; the builder fails if either happens.
-- **Exclusivity gate:** `scripts/check_week_input_exclusivity.py` returned READY on a synthetic 16-game package built from this library plus a scratch Jacksonville input from the branch roster (`--roster career/2014/team/roster/roster.md --expected-games 16`). That package was a gate check only, not game input.
+- **Branch control:** a gsis-id sweep of all 63 Jacksonville identifiers found 34 on other clubs' charts (removed below), 12 on the real Jaguars' chart and 17 on no chart. Of the 23 August 30 departures, three were on other clubs' real charts (Edwards, Dallas; Blake, Pittsburgh; C.J. Wilson, Oakland) and are excluded, four are on the real Jaguars' chart and unplaced, Cain stays on Chicago's chart under the rails, and 15 are on no chart. No controlled or unplaced departed player remains on any club and no gsis id or player id appears on two clubs; the builder fails if either happens.
+- **Exclusivity gate:** in a scratch copy of the repository with Document 5's master date set to September 7, 2014, `python scripts/build_week_inputs.py 1 --season 2014` froze the 16-game Week 1 package from this library, Jacksonville's season game depth chart and Stone's frozen call sheet (READY, 57 players unavailable), and `python scripts/check_week_input_exclusivity.py .sim_cache/2014/week_01_inputs.json --season 2014 --expected-games 16` returned READY. That package was a gate check only, not game input; the real tree's clock did not move.
 - **Game-day units:** every club clears the kernel's game-day minimum (1 QB, 1 RB, 3 WR, 1 TE, 5 OL, 3 DL, 2 LB, 4 DB, K, P) after injuries and branch changes; `runtime.week_inputs.game_day_actives` trims each unit to 46 when a week is built. Every group's depth runs 1..n without gaps; QB, RB, WR and TE carry explicit order.
 - **Starting quarterbacks:** every club's depth-1 passer is the passer its real chart listed first.
 
@@ -47,16 +48,16 @@ Jacksonville is not in this library. Its TeamInput always comes from the branch 
 
 ### Jacksonville-controlled players removed
 
-Every player under Jacksonville control on July 29, 2014 is removed from his historical club with the reason from the roster, and the next player in his group moves up.
+Every player under Jacksonville control on September 6, 2014 (the active 53, reserve/injured and the practice squad) is removed from his historical club with the reason from the roster, and the next player in his group moves up. The three August 30 departures who were on other clubs' real charts without a same-window real move (marked *departed*) are removed the same way.
 
 | Club | Removed (reason) |
 |---|---|
 | Atlanta Falcons | Dwight Lowery (2013 roster carried) |
 | Baltimore Ravens | Daryl Smith, Brynden Trawick (2013 roster carried); Eugene Monroe (re-signed by Jacksonville March 11). Baltimore's own C.J. Mosley (LB, a 2014 rookie) is a namesake of Jacksonville's defensive tackle and stays, as `C.J. Mosley (BAL)` |
 | Carolina Panthers | Trai Turner (drafted No. 90); Andrew Norwell (undrafted signing May 10) |
-| Chicago Bears | Charles Leno Jr. (drafted No. 168); Christian Jones (undrafted signing May 10); Jeremy Cain (re-signed March 19) |
+| Chicago Bears | Charles Leno Jr. (drafted No. 168); Christian Jones (undrafted signing May 10). Jeremy Cain, released August 30, is no longer removed: he rides the rails to Chicago (below) |
 | Cleveland Browns | Joel Bitonio (drafted No. 26); Andrew Hawkins (signed March 18); Taylor Gabriel (undrafted signing May 10); Jordan Poyer (2013 roster carried) |
-| Dallas Cowboys | Jeremy Mincey, Lavar Edwards (2013 roster carried) |
+| Dallas Cowboys | Jeremy Mincey (2013 roster carried); Lavar Edwards (*departed*: waived August 30, no same-window real move, unplaced) |
 | Denver Broncos | Aqib Talib (signed March 11); C.J. Anderson (2013 roster carried) |
 | Detroit Lions | Cornelius Lucas (undrafted signing May 10); Montell Owens, C.J. Mosley (2013 roster carried) |
 | Green Bay Packers | Davante Adams (drafted No. 38); Corey Linsley (drafted No. 153) |
@@ -67,13 +68,26 @@ Every player under Jacksonville control on July 29, 2014 is removed from his his
 | Minnesota Vikings | Adam Thielen (2013 roster carried) |
 | New England Patriots | Malcolm Butler (drafted No. 241) |
 | New Orleans Saints | Kasim Edebali (undrafted signing May 10) |
-| Oakland Raiders | Maurice Jones-Drew, C.J. Wilson (re-signed March 28); Sio Moore (2013 roster carried) |
-| Pittsburgh Steelers | Antwon Blake (reserve/future contract effective March 11) |
+| Oakland Raiders | Maurice Jones-Drew (re-signed March 28); Sio Moore (2013 roster carried); C.J. Wilson (*departed*: released August 30; his real Oakland signing was March 28, a different window, so he is unplaced) |
+| Pittsburgh Steelers | Antwon Blake (*departed*: waived August 30, no same-window real move, unplaced) |
 | St. Louis Rams | Aaron Donald (drafted No. 13) |
 | Tampa Bay Buccaneers | Alterraun Verner (signed March 11) |
 | Washington Redskins | Kirk Cousins, Bacarri Rambo (2013 roster carried) |
 
-The other 40 controlled players were on the real Jaguars' chart (16) or on no Week 1 chart (24: John Parker Wilson, Tyler Bray, Connor Shaw, Richard Murphy, Toney Clemons, Jerrell Jackson, Cameron Brate, Marcel Jensen, Lane Johnson, Mark Asper, Matt Feiler, Mike Brewster, Tyler Larsen, Daniel Te'o-Nesheim, Jackson Jeffcoat, Jeris Pendleton, D'Anthony Smith, Jerome Long, Julian Stanford, Todd Davis, Mike Harris, Jemea Thomas, Adrian Phillips, Casey Kreiter). Removing them changes no other club.
+The other 29 controlled players were on the real Jaguars' chart (12: Hurns, Posluszny, Branch, Telvin Smith, Lewis, Miller, Marks, Prosinski, Anger, Scobee, Shatley, Henne) or on no Week 1 chart (17: Tyler Bray, Richard Murphy, Jerrell Jackson, Cameron Brate, Marcel Jensen, Lane Johnson, Matt Feiler, Mike Brewster, Daniel Te'o-Nesheim, Jackson Jeffcoat, Jerome Long, Julian Stanford, Todd Davis, Mike Harris, Jemea Thomas, Adrian Phillips, Casey Kreiter). Removing them changes no other club.
+
+### August 30 departures
+
+The 23 players who left Jacksonville's control at the reduction to 53 ([final roster cuts](../career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the roster's departures section is the authority for each disposition) are applied under method section 3: a departed player follows his real next move only when it was the same kind of move in the same window; otherwise he is an unplaced free agent on no club.
+
+| Disposition | Players |
+|---|---|
+| Rides the rails | **Jeremy Cain, LS**: released August 30 as a vested veteran; his real next move, a September 1, 2014 Chicago free-agent signing after the real cutdown, is the same kind of move in the same window, applied on its real date when the clock reached it ([Chicago](../career/2014/League/personnel/clubs/CHI.md)). He is kept on Chicago's real chart at his real slot, LS1 |
+| Excluded from their real clubs' charts | **Lavar Edwards, DE** (Dallas, RDE2) and **Antwon Blake, CB** (Pittsburgh, LCB3): waived August 30, cleared August 31; no dated real move in the window is on the record, so neither has a same-kind, same-window move and both are unplaced. **C.J. Wilson, DE** (Oakland): released August 30; his real Oakland signing was March 28, 2014, a different window |
+| On the real Jaguars' chart, unplaced | Cameron Bradfield (RT1), Mike Brown (WR3, PR1), Austin Pasztor (RT3, Out): tenders withdrawn, their real next moves are real Jaguars continuations the branch never made; Ryan Davis (LEO3): waived |
+| On no chart, unplaced | John Parker Wilson, Connor Shaw, Mark Asper, Tyler Larsen, Jeris Pendleton, D'Anthony Smith, Toney Clemons; Cameron Brate and Jerrell Jackson remain Jacksonville's on reserve/injured |
+
+The artifact lists every disposition in `branch_departures`; the excluded players also appear in `unplaced_branch_players` and `removed_by_club`.
 
 ### Draft pairing
 
@@ -133,7 +147,7 @@ The 2013 draft swaps gave nine real 2013 Jaguars draftees to other clubs, and th
 
 ### Players with no branch club
 
-The real Jaguars' chart lists 53 players: 16 Jacksonville-controlled, 16 moved by the pairing, the trades and the carried 2013 placements, and 21 with no branch club (rule 4: a real Jaguars move the branch never made does not happen, and a player the real Jaguars signed stays a free agent Jacksonville may still sign).
+The real Jaguars' chart lists 53 players: 12 Jacksonville-controlled, 16 moved by the pairing, the trades and the carried 2013 placements, four August 30 departures with no branch club (Bradfield, Brown, Pasztor, Ryan Davis, above) and 21 others with no branch club (rule 4: a real Jaguars move the branch never made does not happen, and a player the real Jaguars signed stays a free agent Jacksonville may still sign).
 
 | Reason | Players |
 |---|---|
@@ -143,7 +157,7 @@ The real Jaguars' chart lists 53 players: 16 Jacksonville-controlled, 16 moved b
 | Former branch players whose real next move was a real Jaguars re-signing | Alan Ball (CB), Will Ta'ufo'ou (FB) |
 | Real Jaguars' draft selection with no partner | Aaron Colvin (CB, on no chart) |
 
-Also unplaced, on no chart: Russell Allen (retired), Stephen Morris, Austen Lane, Isaiah Stanback, Kevin Rutland, Allen Reisner, Brandon King. The full list with reasons is `unplaced_branch_players` in the artifact.
+Also unplaced, on no chart: Russell Allen (retired), Stephen Morris, Austen Lane, Isaiah Stanback, Kevin Rutland, Allen Reisner, Brandon King, and the August 30 departures above. The full list with reasons is `unplaced_branch_players` in the artifact.
 
 ## Limitations
 
@@ -157,8 +171,8 @@ Also unplaced, on no chart: Russell Allen (retired), Stephen Morris, Austen Lane
 ## Gate and later use
 
 - **Information gate:** this file is prepared research. It becomes usable background TeamInput only when the master clock in `state/05_Current_Season_State.md` reaches Week 1 (September 7, 2014). Until then no rail in it may inform Stone's, Caldwell's or any club's evaluation, and `docs/repository_map.json` keeps the 2013 library as the current `background_depth` record.
-- **Jacksonville's own game depth chart** (`career/2014/team/depth_chart/game_depth_chart.json`) and 2014 control at the August 30 cutdown are still owed; `runtime/season_readiness.json` keeps `legal_rosters` BLOCKED.
-- **Later weeks:** `runtime/week_inputs.py` carries these units forward; availability each week comes from the branch's own closed games plus `return_week` above. A branch transaction that moves a player onto or off one of these clubs after July 29, 2014 (a cutdown claim, a September signing) is applied by rebuilding this library before Week 1 inputs are frozen.
+- **Jacksonville's own game depth chart** is Stone's season game depth chart of August 30, 2014 ([game input](../career/2014/00_Team_Operations/Team/Depth_Chart/game_depth_chart.json)); the Week 1 build takes Jacksonville's unit from it and the branch roster, never from this library.
+- **Later weeks:** `runtime/week_inputs.py` carries these units forward; availability each week comes from the branch's own closed games plus `return_week` above. A branch transaction that moves a player onto or off one of these clubs after September 6, 2014 is applied by rebuilding this library before that week's inputs are frozen; the August 30 dispositions and Cain's September 1 signing are applied in this build.
 
 ## Updating
 

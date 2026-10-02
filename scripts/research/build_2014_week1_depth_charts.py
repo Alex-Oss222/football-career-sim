@@ -18,8 +18,8 @@ Usage:
   python scripts/research/build_2014_week1_depth_charts.py SOURCE_DIR > library/data/2014_week1_depth_charts.json
 
 Read only: the Week 1 depth chart, the Week 1 injury report (dated
-September 3 to 6, 2014), branch control from the 2014 roster, the branch
-draft pairing, the branch trades and the 2013 branch placements carried in
+September 3 to 6, 2014), branch control and the rails dispositions of
+departed players from the 2014 roster view, the branch draft pairing, the branch trades and the 2013 branch placements carried in
 the league database. No score, statistic, game participation, later
 transaction or later roster status is read. Later weeks' injury reports and
 depth charts are consulted only to project the return of a player already
@@ -155,6 +155,12 @@ def jersey_key(jersey):
 
 def control_reason(status):
     """Why a player belongs to Jacksonville, from the roster Status cell."""
+    m = re.match(r"Practice squad \(signed ([A-Z][a-z]+ \d+, \d{4})\)", status)
+    if m:
+        return "Jacksonville practice squad, signed %s" % m.group(1)
+    m = re.match(r"Reserve/Injured \(placed ([A-Z][a-z]+ \d+, \d{4})\)", status)
+    if m:
+        return "Jacksonville reserve/injured, placed %s" % m.group(1)
     m = re.search(r"\(Rookie, drafted (No\. \d+), ([A-Z][a-z]+ \d+, \d{4})", status)
     if m:
         return "drafted by Jacksonville, %s, %s" % (m.group(1), m.group(2))
@@ -164,24 +170,67 @@ def control_reason(status):
     m = re.search(r"\((re-)?signed ([A-Z][a-z]+ \d+, \d{4})", status)
     if m:
         return "%ssigned by Jacksonville %s" % ("re-" if m.group(1) else "", m.group(2))
-    if "reserve/future" in status:
-        return "Jacksonville reserve/future contract effective March 11, 2014"
-    if "tender" in status:
-        return "Jacksonville tender; under Jacksonville control"
-    return "under Jacksonville control in the branch (2013 roster carried)"
+    return "under Jacksonville control in the branch (2013 roster carried); on the active 53"
+
+
+# Roster Status cells that mean club control (the current roster view lists
+# the active 53, the reserve/injured players and the practice squad).
+CONTROLLED_STATUS = re.compile(r"^(Active 53|Reserve/Injured|Practice squad)\b")
+LINK = re.compile(r"\[([^\]]+)\]\([^)]*\)")  # Markdown links read as their text
+ROW = re.compile(r"^\| ([^|]+?) \| ([A-Z]+) \| \d{4}-\d{2}-\d{2} \| \d+ \| ([^|]+?) \|")
 
 
 def branch_control(roster_md):
-    """Jacksonville-controlled players: name -> (position, reason)."""
+    """Jacksonville-controlled players: name -> (position, reason).
+
+    Every roster-table row before the Departures section whose Status cell
+    is Active 53, Reserve/Injured or Practice squad.
+    """
     text = roster_md.read_text(encoding="utf-8")
-    body = text.split("## Current controlled players", 1)[1]
-    body = re.split(r"^## ", body, maxsplit=1, flags=re.M)[0]
+    body = text.split("## Current controlled players", 1)[1].split("\n## Departures", 1)[0]
     control = {}
     for line in body.splitlines():
-        m = re.match(r"^\| ([^|]+?) \| ([A-Z]+) \| \d{4}-\d{2}-\d{2} \| \d+ \| ([^|]+?) \|", line)
-        if m:
-            control[m.group(1).strip()] = (m.group(2), control_reason(m.group(3)))
+        m = ROW.match(line)
+        if m and CONTROLLED_STATUS.match(m.group(3).strip()):
+            control[m.group(1).strip()] = (m.group(2), control_reason(m.group(3).strip()))
     return control
+
+
+def departures(roster_md):
+    """Players who left Jacksonville's control, from the roster's Departures
+    tables (the rows that carry a Rails disposition column).
+
+    name -> (position, how control ended, club code or None, disposition).
+    A club code is set only when the disposition records a real move the
+    player follows under the rails (method section 3), "Signed by CLUB on
+    DATE under the rails"; every other departed player is excluded from
+    every club as an unplaced free agent.
+    """
+    text = roster_md.read_text(encoding="utf-8")
+    body = text.split("\n## Departures", 1)[1]
+    body = re.split(r"^## ", body, maxsplit=1, flags=re.M)[0]
+    out, columns = {}, None
+    for line in body.splitlines():
+        if not line.startswith("|"):
+            columns = None
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if "Player" in cells and any(c.lower() == "rails disposition" for c in cells):
+            columns = cells
+            continue
+        if columns is None or set(cells[0]) <= {"-", ":"} or len(cells) != len(columns):
+            continue
+        row = {k: LINK.sub(r"\1", v) for k, v in zip(columns, cells)}
+        disposition = row["Rails disposition"]
+        code = None
+        m = re.match(r"Signed by ([A-Z][A-Za-z. ]+?) on ([A-Z][a-z]+ \d+, \d{4}) under the rails", disposition)
+        if m:
+            matches = [c for c, team in CLUBS.items() if team == m.group(1) or team.startswith(m.group(1) + " ")]
+            if len(matches) != 1:
+                raise SystemExit("rails club %r for %s is not one background club" % (m.group(1), row["Player"]))
+            code = matches[0]
+        out[row["Player"]] = (row["Pos"], row["How control ended"], code, disposition)
+    return out
 
 
 def identity():
@@ -278,6 +327,7 @@ def build(source):
     league_db = {row["player_id"]: row for row in json.load(open(LEAGUE_PLAYERS, encoding="utf-8"))["players"]}
 
     control = branch_control(ROSTER_MD)
+    departed = departures(ROSTER_MD)
     ids = identity()
     control_by_gsis, control_by_norm, unmatched = {}, {}, []
     for name, (position, reason) in control.items():
@@ -287,6 +337,25 @@ def build(source):
         else:
             unmatched.append(name)
         control_by_norm[norm(name)] = (name, position, reason)
+    # Departed players: excluded from every club unless the roster records a
+    # real same-kind, same-window move (then placed with that club at the
+    # slot his real chart holds, or below every listed player of his group
+    # when he is on no chart).
+    excluded_by_gsis, excluded_by_norm, placed_departures = {}, {}, {}
+    departures_applied = []
+    for name, (position, ended, code, disposition) in departed.items():
+        gsis = ids.get(name)
+        if code:
+            placed_departures[name] = (code, position, gsis, "%s; %s" % (ended, disposition))
+            departures_applied.append("%s (%s): %s; placed with %s" % (name, position, ended, CLUBS[code]))
+            continue
+        reason = "%s; %s" % (ended, disposition)
+        if gsis:
+            excluded_by_gsis[gsis] = (name, position, reason)
+        else:
+            unmatched.append(name)
+        excluded_by_norm[norm(name)] = (name, position, reason)
+        departures_applied.append("%s (%s): %s; on no club" % (name, position, reason))
 
     name_to_rows = collections.defaultdict(list)
     for row in depth:
@@ -317,6 +386,12 @@ def build(source):
             moves[row["gsis_id"]] = (row["club_code"], to_code, basis, "bottom")
         else:
             synthetic[to_code].append((name, position, ids.get(name), basis + "; on no 2014 Week 1 chart"))
+    for name, (to_code, position, gsis, basis) in placed_departures.items():
+        row = real_row(name)
+        if row is not None and row["club_code"] != to_code:
+            moves[row["gsis_id"]] = (row["club_code"], to_code, basis, "slot")
+        elif row is None:
+            synthetic[to_code].append((name, position, gsis, basis + "; on no 2014 Week 1 chart"))
 
     # Every listed player once per club, keeping every depth slot. A move
     # re-files the player under his branch club.
@@ -368,8 +443,19 @@ def build(source):
                 changes.append("Removed %s (%s): %s" % (name, position, controlled[2]))
                 removed[team].append((name, controlled[2]))
                 continue
+            excluded = excluded_by_gsis.get(gsis)
+            if excluded is None:
+                candidate = excluded_by_norm.get(norm(name))
+                if candidate and candidate[0] in unmatched and SIDE.get(group(candidate[1])) == SIDE.get(grp):
+                    excluded = candidate
+            if excluded:
+                changes.append("Removed %s (%s): left Jacksonville control; %s" % (name, position, excluded[2]))
+                removed[team].append((name, excluded[2]))
+                continue
+            if name in placed_departures and (entry["move"] or row["club_code"] == code):
+                changes.append("Kept %s (%s) at his real slot: %s" % (name, position, placed_departures[name][3]))
             player_id = name
-            if len(name_clubs[norm(name)]) > 1 or norm(name) in control_by_norm:
+            if len(name_clubs[norm(name)]) > 1 or norm(name) in control_by_norm or norm(name) in excluded_by_norm:
                 player_id = "%s (%s)" % (name, code)
             real_code = row["club_code"]
             if entry["move"]:
@@ -467,6 +553,8 @@ def build(source):
         slots = ",".join("%s%d" % (r["depth_position"].strip() or r["formation"][:3].upper(), int(r["depth_team"])) for r in rows)
         if gsis in control_by_gsis:
             disposition = "Jacksonville-controlled in the branch"
+        elif gsis in excluded_by_gsis:
+            disposition = "unplaced: left Jacksonville control; " + excluded_by_gsis[gsis][2]
         elif gsis in moves:
             disposition = "moved to %s: %s" % (CLUBS[moves[gsis][1]], moves[gsis][2])
         elif name in PAIRINGS_UNPLACED:
@@ -484,6 +572,9 @@ def build(source):
                              "gsis_id": gsis, "disposition": disposition})
     for name, reason in sorted(UNPLACED_NO_CHART.items()):
         unplaced.append("%s (%s): %s" % (name, reason.split(";")[0], reason.split("; ", 1)[1]))
+    for gsis, (name, position, reason) in excluded_by_gsis.items():
+        if gsis not in jaguars_rows:
+            unplaced.append("%s (%s): left Jacksonville control; %s" % (name, position, reason))
 
     # Exclusivity gate, replicated: no controlled player on any club and no
     # player on two clubs.
@@ -492,6 +583,8 @@ def build(source):
         for player in club["players"]:
             if player.get("gsis_id") in control_by_gsis or norm(player["player_id"].split(" (")[0]) in control_by_norm and player.get("gsis_id") is None:
                 raise SystemExit("controlled player %s left on %s" % (player["player_id"], team))
+            if player.get("gsis_id") in excluded_by_gsis or norm(player["player_id"].split(" (")[0]) in excluded_by_norm and player.get("gsis_id") is None:
+                raise SystemExit("unplaced departed player %s left on %s" % (player["player_id"], team))
             for key in (player.get("gsis_id"), player["player_id"]):
                 if key and key in seen and seen[key] != team:
                     raise SystemExit("%s appears on %s and %s" % (key, seen[key], team))
@@ -503,9 +596,10 @@ def build(source):
         "season": SEASON,
         "week": WEEK,
         "gate": "Prepared research. Usable as background TeamInput only when the master clock reaches Week 1 (September 7, 2014); the real charts were public September 2 to 5, 2014.",
-        "branch_basis": "career/2014/team/roster/roster.md, July 29, 2014 (78 Jacksonville-controlled players: 74 under contract and four unsigned tenders)",
+        "branch_basis": "career/2014/00_Team_Operations/Team/Roster/roster.md, September 6, 2014 (63 Jacksonville identifiers excluded: the active 53, two on reserve/injured and eight on the practice squad; the August 30 departures applied by their rails dispositions)",
         "branch_controlled_players": sorted(control),
         "branch_control_unmatched": unmatched,
+        "branch_departures": departures_applied,
         "unplaced_branch_players": unplaced,
         "draft_swaps_without_week1_chart": ["%s: %s" % (n, b) for n, b in sorted(PAIRINGS_UNPLACED.items())],
         "real_jaguars_week1_chart": real_jaguars,
@@ -516,7 +610,8 @@ def build(source):
             "co_listed_order": "depth string, then line slot LT-LG-C-RG-RT, then jersey number, then name; no prior-season usage is read because the branch's 2013 is not the real 2013",
             "membership_cross_check": "nflverse roster_weekly_2014.csv, week 1 club membership only; status ignored",
             "bio_fields": "user_nfl_2014_week1.json (same club membership as the nflverse chart): birth_date, page_url and the open-licensed headshot fields (url, license, license url, credit, source page) per gsis id, carried as data only",
-            "branch_control": "career/2014/team/roster/roster.md matched by gsis id through library/data/player_birth_dates.json and career/2014/league/personnel/league_players.json",
+            "branch_control": "career/2014/00_Team_Operations/Team/Roster/roster.md (Active 53, Reserve/Injured and Practice squad rows) matched by gsis id through library/data/player_birth_dates.json and career/2014/league/personnel/league_players.json",
+            "branch_departures": "the roster's Departures tables (Rails disposition column): a departed player with a recorded real same-window move is placed with that club; every other departed player is excluded from every club",
             "draft_pairing": "career/2014/league/personnel/draft_pairing.md",
             "trades": "career/2014/trades/completed_trades/trades.md",
             "retirements": "career/2014/league/personnel/retirements.md",

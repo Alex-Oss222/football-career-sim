@@ -14,6 +14,7 @@
 **Checkpoint:** March 31, 2014 starting evaluation  
 **Age:** 34  
 **Position:** LS  
+**Roster status (August 31, 2014):** Former player: Released August 30, 2014 at the reduction to 53 ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)) as a vested veteran; cleared waivers August 31 and left Jacksonville's control. His real next move, a September 1, 2014 Chicago signing, applies on the rails when the clock reaches it. This card is kept as history through that date; no later work is added.  
 **NFL standing:** Starting staff view; exact theoretical personnel grades  
 **Player identity:** A specialist long snapper whose primary value is repeatable delivery and routine operation. I see snap utility as stronger than protection transition or coverage athleticism.  
 **Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/jeremy_cain.md)  

@@ -8,6 +8,7 @@
 **Checkpoint:** March 31, 2014 starting evaluation  
 **Age:** 23  
 **Position:** DE  
+**Roster status (August 31, 2014):** Former player: Waived August 30, 2014 at the reduction to 53 ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); cleared waivers August 31 and left Jacksonville's control. This card is kept as history through that date; no later work is added.  
 **NFL standing:** Starting staff view; exact theoretical personnel grades  
 **Player identity:** A developmental edge player with enough power and assignment understanding for a narrow package. I see his lane discipline and hand work as the steps between rookie depth and a stable rotation job.  
 **Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/lavar_edwards.md)  

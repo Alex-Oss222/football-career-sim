@@ -8,6 +8,7 @@
 **Checkpoint:** May 11, 2014 starting evaluation, on acquisition (signed as an undrafted rookie on May 10, 2014)  
 **Age:** 22  
 **Position:** TE  
+**Roster status (August 31, 2014):** Reserve/injured from August 31, 2014: waived with the injured designation at the August 30 reduction, unclaimed, and reverted to the reserve/injured list ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); out, long term, projected return January 15, 2015. Under contract; not on the 53.  
 **NFL standing:** Rookie; no NFL standing. Staff view: third tight end competition  
 **Player identity:** A receiving tight end from Harvard with reliable hands and route feel; blocking strength and level of competition are the limits.  
 **Previous annual profile:** None; 2014 rookie. The starting view rests on pre-draft public evidence only  

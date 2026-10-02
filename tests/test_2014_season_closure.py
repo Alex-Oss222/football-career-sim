@@ -154,8 +154,17 @@ class SeasonClosure2014Tests(unittest.TestCase):
         week_dir = paths.week_folder(WEEK)
         self.assertEqual(week_dir, root / "career/2014/05_Regular_Season/Games/Week_01")
         output = week_dir / "output.md"
-        shell = ("# Week 1 synthetic closure output\n\nFull stats for the game.\n\n"
-                 "<!-- box-score event=%s team=%s -->\n<!-- /box-score -->\n" % (own["event_id"], JAX))
+        markers = "<!-- box-score event=%s team=%s -->\n<!-- /box-score -->\n" % (own["event_id"], JAX)
+        if output.is_file():
+            # The real week file (preparation closed, its event record kept)
+            # carries the template's placeholder markers; the box score fills
+            # them and the file's own history stays intact.
+            placeholder = "<!-- box-score event=[event id] team=%s -->\n\n<!-- /box-score -->\n" % JAX
+            shell = output.read_text(encoding="utf-8")
+            self.assertIn(placeholder, shell)
+            shell = shell.replace(placeholder, markers)
+        else:
+            shell = "# Week 1 synthetic closure output\n\nFull stats for the game.\n\n" + markers
         output.write_text(render_box_score.fill(shell, paths.receipts, SEASON), encoding="utf-8")
         self.assertEqual(render_box_score.stale_blocks(output, paths.receipts, season=SEASON), [])
         self.assertIn("Scoring", output.read_text(encoding="utf-8"))

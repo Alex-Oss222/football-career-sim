@@ -2,7 +2,7 @@
 
 **Position:** Edge defender, defense  
 **Work covered:** Spring teaching, camp, preseason game 1 (August 8, 2014), the August 9 to 13 Chicago preparation, preseason game 2 (August 14, 2014, at Chicago, full contact) the August 15 to 21 Detroit preparation (the August 15 review, the padded practices of August 16, 18 and 19 at controlled contact in series with the calls from the sideline, the August 20 session in helmets and the August 21 walkthrough) preseason game 3 (August 22, 2014, at Detroit, full contact), the August 23 to 27 Atlanta preparation (the August 23 review and install in helmets, the padded practices of August 25 and 26 at controlled contact, August 26 in series with the calls from the sideline, and the August 27 walkthrough) and preseason game 4 (August 28, 2014, Atlanta at Jacksonville, full contact, the preseason complete) (the August 10 and 13 walkthroughs, the August 11 and 12 padded practices at controlled contact in series with the calls from the sideline); the July 30, August 1, August 4, August 5 and August 6 padded sessions and the August 2 scrimmage used controlled contact, the scrimmage and the August 6 game rehearsal in series with the calls from the sideline and the play clock, no score kept; August 7 was a walkthrough; August 8 was the game against Tampa Bay, full contact, the first opponent.  
-**Competition:** Open  
+**Competition:** Decided August 30, 2014
 **Starting arrangement:** Mincey begins Edge 1 reps; Branch is the named competition.
 
 The coordinator and position-coach rows are staff-analysis reconstructions from the cited practice record and their established responsibilities, not invented quotations or new meetings. Stone's row preserves his recorded position.
@@ -25,6 +25,8 @@ The coordinator and position-coach rows are staff-analysis reconstructions from 
 
 ## What separates the candidates
 
+**Decision, August 30, 2014 ([roster decisions](../../../Roster_Decisions/roster_decisions.md)):** Jeremy Mincey is Edge 1 on Stone's season game depth chart and Andre Branch Edge 2, the next edge in the order (Mincey, Marks, Miller, Branch, Mosley, Te'o-Nesheim, Donald, Edebali). The lane the plan asked the coaches to chart live is on the film, not the play-by-play, in all four games; the chart closes the comparison as Stone's judgment, with Branch's reserve work and his isolated wins both preserved on this card. The rows above are preserved as dated history; this card is resolved and off the open list.
+
 **After game 4:** Mincey's quarter with the starters was 20 snaps with a tackle for loss and 14 points allowed; Branch's half with the reserves was 38 snaps with three tackles and 14 allowed, against different Atlanta lines. Neither recorded a pressure and the lane that was to be charted live is not held by the play-by-play in any of the four games; the film holds it. Open.
 
 **After August 27:** The plan's quarter structure gives Mincey the starting defense's first quarter and Branch the substitution and second-half work; the lane rule stands and the Detroit comparison was one snap; nothing on the record separates them. Open.
@@ -42,6 +44,8 @@ The coordinator and position-coach rows are staff-analysis reconstructions from 
 Mincey has been steadier in the lane, in pads and in series; Branch has the better isolated wins and a lane error that recurred in series and held once behind its second correction. Those are distinct findings. The defense needs pressure that leaves the rest of the call intact.
 
 ## Next work and decision
+
+**Resolved August 30, 2014.** The decision above is recorded in [roster decisions](../../../Roster_Decisions/roster_decisions.md) and on the [depth chart](../../../../00_Team_Operations/Team/Depth_Chart/depth_chart.md); the text below is the card's history before the decision and names no further test.
 
 The preseason is complete; the August 28 game is recorded above. The next decisions are the August 30 reduction to 53 (Caldwell with the user) and the season game depth chart (Stone), neither made here and neither awarded by this card. The August 28 game ran under Stone's frozen [inputs](../../../Preseason_Games/Game_04/README.md), which gave Mincey Edge 1 in the starting defense through the first quarter and Branch the second-half edge with the backups and rookies, the grade for each edge, rush and contain with the lane charted live and on film. Before it: the August 22 game, which gave Mincey a seven-play reference possession and Branch one snap; the August 15 to 21 rehearsal and the Detroit rotation under Stone's frozen [inputs](../../../Preseason_Games/Game_03/README.md), which gave Mincey the reference possession and Branch the second comparable possession with the surrounding front and linebackers constant; the August 8 game and the August 9 to 13 rehearsal, then the August 14 game at Chicago under Stone's frozen [inputs](../../../Preseason_Games/Game_02/README.md). The grade at Chicago is pressure with the lane kept, on one correction possession. Retest rush and contain against Tampa Bay on August 8 under Stone's frozen rotation (Mincey opens; Branch gets comparable work with the first group), where Branch's lane is a targeted item and the grade is pressure with the lane kept. No new role has been awarded. [Roster decisions](../../../Roster_Decisions/roster_decisions.md) owns any eventual change.
 

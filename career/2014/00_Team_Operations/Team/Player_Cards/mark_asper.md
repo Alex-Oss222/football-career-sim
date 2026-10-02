@@ -8,6 +8,7 @@
 **Checkpoint:** March 31, 2014 starting evaluation  
 **Age:** 28  
 **Position:** G  
+**Roster status (August 31, 2014):** Former player: Waived August 30, 2014 at the reduction to 53 ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); cleared waivers August 31 and left Jacksonville's control. This card is kept as history through that date; no later work is added.  
 **NFL standing:** Starting staff view; exact theoretical personnel grades  
 **Player identity:** An interior depth lineman whose clearest route to a role is size and basic power work. My view is that protection coordination, movement and recovery need a defined backup assignment.  
 **Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/mark_asper.md)  

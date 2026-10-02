@@ -221,7 +221,7 @@ def render_main(d,years):
     roster=Counter(p['control'] for p in ps if not p.get('former_player'))
     out=[f"# Jacksonville Jaguars cap tracker, {years[0]} to {years[-1]}\n\nAs of {display_date(d['as_of'])}. Whole US dollars.\n\n",
     '[Player cap table](#cap-by-player) | [Individual contract details](jaguars_contract_details.md) | [Expirations](#expiring-contracts-and-free-agent-classes) | [Updating this tracker](README.md)\n\n',
-    f"The inventory covers {sum(roster.values())} current players: {roster['signed']} under signed contracts (the six reserve/future contracts included from March 11) and {roster['tender']} on unsigned tenders (RFA or ERFA). {len(ps)-sum(roster.values())} former players are retained for financial history only.\n\n",
+    f"The inventory covers {sum(roster.values())} current players: {roster['signed']} under signed contracts (reserve/future contracts from March 11 and practice-squad contracts from August 31, 2014 included while in force) and {roster['tender']} on unsigned tenders (RFA or ERFA). {len(ps)-sum(roster.values())} former players are retained for financial history only.\n\n",
     '## Reading the table\n\n',
     '**Each amount is the working cap charge for that contract year. A blank means the recorded deal does not cover that year.** Existing sourced schedules and adopted simulation amounts are both included. The individual notes identify their basis; the [completion research](../../library/2014_jaguars_contract_completion.md) explains the assumptions. These terms persist until a recorded amendment or correction changes them.\n\n',
     'The twelve-year horizon stays visible for future tracking. Pending free agents and unexercised options create no new salary commitment. Each unsigned tender is included once. Scheduled cash means money payable if the player remains under the stated terms, not evidence that it has already been paid.\n\n',
@@ -305,7 +305,7 @@ def render_main(d,years):
     rows.append(['All player contracts']+list(map(dollars,player)))
     out.append(table(['Position']+years,rows))
     out.append('Unsigned tenders are included in their positions. Each player is counted once. Futures are grouped by position for accounting; this does not assign a depth-chart role.\n\n## Cap by player\n\n')
-    labels={'signed':'Signed','future':'Futures','pending':'Pending free agent','tender':'Unsigned tender','retired':'Retired'}
+    labels={'signed':'Signed','future':'Futures','pending':'Pending free agent','tender':'Unsigned tender','retired':'Retired','released':'Released','waived':'Waived','traded':'Traded'}
     for i,pos in enumerate(POSITIONS,1):
         out.append(f'### {pos}\n\n')
         group=sorted([p for p in ps if p['position']==pos],key=lambda p:(-(working_charge(p['years'][current]) or 0),p['name']))
@@ -314,8 +314,9 @@ def render_main(d,years):
             rows.append([f"[{p['name']}](jaguars_contract_details.md#{slug(p['name'])})",p['contract_ends'] or '',labels.get(p['control'],p['control'])]+[cap_cell(p['years'][y]) for y in years]+[contract_total(p)])
         rows.append([pos+' total','','']+[dollars(working_total(group,y)) for y in years]+[dollars(sum(working_total(group,y) or 0 for y in years)) if any(working_total(group,y) is not None for y in years) else ''])
         out.append(table(['Player','Through','Status']+years+['Remaining cap total'],rows))
-    out.append('### Futures contracts\n\nAll six run through 2015 under the adopted two-year terms. They have no signing bonus or salary guarantee. Their dollars already appear in the position tables above.\n\n')
-    out.append(table(['Player','2014 salary / cap','2015 salary / cap','Total'],[[p['name'],cap_cell(p['years']['2014']),cap_cell(p['years']['2015']),contract_total(p)] for p in ps if p['contract_type'].startswith('Reserve/future') and not p.get('former_player')]))
+    futures=[p for p in ps if p['contract_type'].startswith('Reserve/future') and not p.get('former_player')]
+    out.append(f"### Futures contracts\n\n{len(futures)} of the six reserve/future contracts signed in February 2014 remain in force under the adopted two-year terms through 2015 (the others ended with the August 30, 2014 waivers; see the dead-money ledger and the former-player sheets). They have no signing bonus or salary guarantee. Their dollars already appear in the position tables above.\n\n")
+    out.append(table(['Player','2014 salary / cap','2015 salary / cap','Total'],[[p['name'],cap_cell(p['years']['2014']),cap_cell(p['years']['2015']),contract_total(p)] for p in futures]))
     out.append(f'## Individual contract detail sheets\n\n[Open all {len(ps)} player sheets](jaguars_contract_details.md) for annual salary, bonus, cap, cash, guarantees and sources.\n\n## Dead money and void years\n\n')
     out.append(table(['Player','Year','Charge','Basis'],[[x['player'],x['year'],dollars(x['amount']),presentation_note(x['basis'],d['current_contract_table'])] for x in d['dead_money']]))
     out.append('The $51,675 old Bray bonus is counted separately from his new $420,000 salary. No recorded deal has void years. The completion research explains the inherited bonus reconciliation.\n\n## Draft class and rookie pool\n\n')
@@ -327,7 +328,8 @@ def render_main(d,years):
         out.append(table(['Draft','Round','Original club','Slot in round','Overall'],[[x['year'],x['round'],x['original_club'],x['slot_in_round'],draft_slot(x['overall'])] for x in picks]))
         out.append('These are selection rights. Add each rookie’s full contract schedule after the actual selection and signing. No future contract dollars are booked against an unselected player. [The draft ownership record](../2014/draft/draft_order.md) controls the picks.\n\n## Decision calendar\n\n')
     out.append(table(['Date / review','Player or group','Financial treatment'],[
-        ['Open (June 16, 2014 is the adjusted June 15 RFA tender date in the career calendar)','Cameron Bradfield (RFA); Toney Clemons, Austin Pasztor and Mike Brown (ERFA)','The four unsigned tenders count once, $3,066,000 in all, until signed or withdrawn; no offer sheet was received by the May 2 deadline'],
+        ['Closed August 30, 2014','Cameron Bradfield (RFA); Toney Clemons, Austin Pasztor and Mike Brown (ERFA)','The four qualifying offers were withdrawn at the reduction to 53 and the players\' rights renounced; the $3,066,000 tender charge leaves. No offer sheet had been received by the May 2 deadline'],
+        ['Closed August 30 and 31, 2014','Reduction to 53, waivers and the practice squad','Seventeen players waived and two vested veterans (Cain, C.J. Wilson) released; their surviving bonus allocations are in the dead-money ledger (2014 and 2015). Brate and Jackson on reserve/injured, contracts continuing. Eight practice-squad contracts at the $6,300 weekly minimum, carried as a $107,100 working estimate each for 17 weeks and charged only for weeks on the squad; two places open'],
         ['Closed May 12, 2014','Will Rackley','Traded to Seattle for its unconditional 2015 seventh; his $154,868 final bonus allocation stays as 2014 dead money and his $1,431,000 base leaves. Brewster is kept'],
         ['After the offseason program','Offseason workout charge','The $504,000 opening charge is reconciled to actual workout payments, not charged again'],
         ['2014 season','Hakeem Nicks and Daniel Te’o-Nesheim','Active-game bonuses of $31,250 a game, up to $500,000 each, are counted in the 2014 charges'],

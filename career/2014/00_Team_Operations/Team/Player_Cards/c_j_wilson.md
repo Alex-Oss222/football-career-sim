@@ -14,6 +14,7 @@
 **Checkpoint:** March 31, 2014 starting evaluation  
 **Age:** 27  
 **Position:** DE  
+**Roster status (August 31, 2014):** Former player: Released August 30, 2014 at the reduction to 53 ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)) as a vested veteran; cleared waivers August 31 and left Jacksonville's control. This card is kept as history through that date; no later work is added.  
 **NFL standing:** Starting staff view; exact theoretical personnel grades  
 **Player identity:** A strong-side edge defender whose power and run setting offer more than bend or speed. I see a rotational run defender with limited reason to feature him as a wide speed rusher.  
 **Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/c_j_wilson.md)  
