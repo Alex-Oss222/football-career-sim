@@ -26,7 +26,7 @@ Devonta Freeman ran 19 times for 136 and a touchdown, Julio Jones caught five fo
 
 ## Houston 37, Buffalo 31
 
-Ryan Fitzpatrick threw four touchdown passes, three of them to DeAndre Hopkins, who caught eleven of 17 targets for 106, and Houston held the ball 35 minutes with Arian Foster running 26 times for 106 and catching a 38-yard touchdown. C.J. Spiller ran for 102 and two touchdowns, caught a 41-yard touchdown and returned five kickoffs for 117, but each side turned it over three times and Randy Bullock made three field goals; Mike Mohamed made thirteen tackles with a sack and an interception, and Kareem Jackson intercepted Kyle Orton too. Standouts: Spiller, Hopkins, Mohamed. Buffalo is 0-4.
+Ryan Fitzpatrick threw four touchdown passes, three of them to DeAndre Hopkins, who caught eleven of 17 targets for 106, and Houston held the ball 35 minutes with Arian Foster running 26 times for 106 and catching two passes for 58 and a touchdown. C.J. Spiller ran for 102 and two touchdowns, caught a 41-yard touchdown and returned five kickoffs for 117, but each side turned it over three times and Randy Bullock made three field goals; Mike Mohamed made thirteen tackles with a sack and an interception, and Kareem Jackson intercepted Kyle Orton too. Standouts: Spiller, Hopkins, Mohamed. Buffalo is 0-4.
 
 ## Baltimore 33, Carolina 6
 
@@ -66,7 +66,7 @@ Le'Veon Bell ran 16 times for 137 and two touchdowns, Pittsburgh rushed for 257 
 
 ## Indianapolis 23, Tennessee 22
 
-Ryan Succop made all five field goals for Tennessee, Charlie Whitehurst completed 25 of 31 and Kendall Wright caught eleven for 107, but Josh Gordy's interception was the game's only turnover. Andrew Luck threw for 314 and two touchdowns, Reggie Wayne catching eleven for 135 and a touchdown, and Adam Vinatieri made three field goals; Indianapolis failed on two fourth downs and Zach Brown made fourteen tackles for Tennessee. Standouts: Wayne, Succop, Zach Brown. Six Indianapolis players left the game injured: Arthur Jones (projected at seven weeks) and Trent Richardson (thirty days), Coby Fleener (ten days), Darius Butler (six days), and Dwayne Allen and Cory Redding on head holds.
+Ryan Succop made all five field goals for Tennessee, Charlie Whitehurst completed 25 of 31 and Kendall Wright caught eleven for 107, but Josh Gordy's interception was the game's only turnover. Andrew Luck threw for 314 and two touchdowns, Reggie Wayne catching eleven for 135 and a touchdown, and Adam Vinatieri made three field goals; Indianapolis failed on two fourth downs and Zach Brown made fourteen tackles for Tennessee. Standouts: Wayne, Succop, Zach Brown. Six Indianapolis players left the game injured: Arthur Jones (projected at fifty-one days) and Trent Richardson (thirty days), Coby Fleener (ten days), Darius Butler (six days), and Dwayne Allen and Cory Redding on head holds.
 
 ## Reactive events
 
