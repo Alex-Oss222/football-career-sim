@@ -21,7 +21,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 SPEC = ROOT / "library/2014_6_pre_build_specification.md"
-FROZEN_SHA256 = "2ce1018dee17052aa9e59bff8e80b2639f085376dd91310210417cb9aa53d70d"
+FROZEN_SHA256 = "ca028ba38009d1b84e5c887ea86ce8d697edf1705bcd9b755f60aede9d6f8446"
 TITLE = "# Kernel 2014.6 pre-build specification, written after the results it cites were seen"
 BLOCK = re.compile(r"<!-- frozen-rules:begin -->\s*```json\n(.*?)\n```\s*<!-- frozen-rules:end -->", re.S)
 REQUIRED = ("specification", "written", "blind", "data_window", "weighting", "structural_filters", "thresholds",
@@ -80,6 +80,25 @@ def rule_errors(rules):
         errors.append("the emphasis set is five type-sides, each with a dropback or snap exposure")
     if emphasis["completion_tilt"] is not False:
         errors.append("U2 as decided: no completion tilt")
+    if "postseason" in emphasis["game_types_on"] and emphasis["persist_through_week"] <= 17:
+        errors.append("U2 covers Weeks 5-17: the emphasis cannot be on in the postseason (weeks 18-21)")
+    kinds = [set(emphasis[k]) for k in ("game_types_on", "game_types_undecided", "game_types_off")]
+    if any(a & b for i, a in enumerate(kinds) for b in kinds[i + 1:]):
+        errors.append("emphasis game types must be on, undecided or off, never two of them")
+    scoring = rules["scoring"]
+    if not {"live", "league"} <= set(scoring["basis_values"]):
+        errors.append("decision basis must include a live-pause answer and the league chart (U6)")
+    controlled = set(scoring["controlled_club_basis"])
+    if not controlled <= set(scoring["basis_values"]) or "league" in controlled or "live" not in controlled:
+        errors.append("the controlled club's basis is Stone's rule, delegation or live answer, never the bare chart")
+    pins = window["nflscrapr_reg_pbp_fetch_sha256"]
+    if sorted(int(k) for k in pins) != window["seasons"]:
+        errors.append("one nflscrapR fetch pin per season of the window")
+    state = rules["player_state"]
+    if state["u5"] != "accepted":
+        fallback = state.get("u5_fallback") or {}
+        if not (state.get("u5_conditional") and fallback.get("aging") and fallback.get("draft_slope") == 0):
+            errors.append("U5 unanswered: the conditional rules and their fallback must be named")
     for kind, edges in rules["credit_concentration"]["role_bins"].items():
         if edges != sorted(edges) or not all(0 < e < 1 for e in edges):
             errors.append("role bins for %s must be increasing shares" % kind)
@@ -87,6 +106,8 @@ def rule_errors(rules):
     sweep = seeds["sweep"]
     if sweep["per_fixture"] * sweep["fixtures"] != sweep["games"]:
         errors.append("sweep labels do not add to the sweep size")
+    if len(sweep.get("fixture_tokens") or {}) != sweep["fixtures"]:
+        errors.append("each sweep fixture must be named")
     prefixes = [seeds[k]["prefix"] for k in ("acceptance", "extended", "latent_references")]
     if len(set(prefixes)) != len(prefixes):
         errors.append("seed blocks must not share a prefix")

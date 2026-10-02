@@ -6,9 +6,10 @@
 
 **How it binds.**
 - This file is never edited. `scripts/research/pre_build_specification.py` pins its sha256 and `tests/test_pre_build_specification.py` fails on any change. A rule change needs a new dated file and a recorded decision.
+- Reissued once inside batch B0 (the round 1 review fixes, October 2, 2026), before any artifact recorded a digest. The first issue's digest (`2ce1018dee17052aa9e59bff8e80b2639f085376dd91310210417cb9aa53d70d`) is void: among the defects the review found, it recorded U5 as a default Stone never received. No artifact carries it.
 - Every 2014.6 artifact header records this file's sha256 (`python scripts/research/pre_build_specification.py` prints it).
 - Rules here are definitions, edges, thresholds and procedures. Every fitted value, band centre and table entry is produced by a committed builder with a `--check` mode, never typed. A figure marked *indicative* is a design-phase reading, shown for disclosure only; the builder's value binds.
-- The authority for the scope is the dated decision record ([Kernel 2014.6 decisions](../runtime/2014_engine_decisions.md#kernel-20146-decisions-dated)): U1(b), the player-state policy, the defaults U2 to U5 and U7, and the added live fourth-down decision (B9F). U6 is unanswered.
+- The authority for the scope is the dated decision record ([Kernel 2014.6 decisions](../runtime/2014_engine_decisions.md#kernel-20146-decisions-dated)): U1(b), the player-state policy, the defaults U2 to U4 and U7, and the added live fourth-down decision (B9F). U5 and U6 are unanswered: every rule here that rests on U5 is marked conditional, with its fallback (section 4, Player states), and the U6 decision source accepts either path (section 4, Scoring decisions).
 - The machine-readable block at the end repeats the constants and lists below. Where prose and block disagree, the block is the defect: the check script tests the block against itself, and a reviewer tests it against the prose.
 
 ## 1. Data window and the 2014 cut
@@ -19,7 +20,8 @@
 - **Refused at fetch and at load:** any season after 2014; any 2014 row after the cut; every `stats_player_reg_*` file (season aggregates: strength targets are recomputed from play-by-play, player-state lines come from weekly statistics and play-by-play); any path under `career/`; the Week 5 injury reports of October 1-3, 2014 (outside the games-through-September-29 window; the October 2-3 reports also postdate the first Week 5 kickoff; design item D5 dropped).
 - **Column allowlists:** `players.csv` gsis_id, birth_date, draft fields, pff_id, pfr_id, and never rookie_season, last_season, status or years_of_experience; `draft_picks` season, round, pick, team, gsis_id, position, and never the career columns (to, allpro, probowls, seasons_started, av, statistics).
 - **Positions** come from that season's own roster or weekly roster, never from the current player database.
-- **Source pins:** nflverse play-by-play 2010-2012 equal the pins in `library/data/2010_2012_production_evidence.json`, 2013-2014 the pins in `library/data/passer_interception_persistence.json`; nflscrapR `reg_pbp_2012` equals the pin in `library/data/2012_nfl_field_position_model.json`. The other nflscrapR seasons carry the design-phase digests listed in the block; B2 verifies them and fails closed on a mismatch.
+- **Source pins:** nflverse play-by-play 2010-2012 equal the pins in `library/data/2010_2012_production_evidence.json`, 2013-2014 the pins in `library/data/passer_interception_persistence.json`; nflscrapR `reg_pbp_2012` equals the pin in `library/data/2012_nfl_field_position_model.json`. The other nflscrapR seasons carry the design-phase digests listed in the block (`nflscrapr_reg_pbp_fetch_sha256`); B2 verifies them and fails closed on a mismatch.
+- **What a pin covers:** every pin is the digest of the fetched full-season asset. The 2014 pins (nflverse `4ab286d2873a7eab28e11120f1fe1bd1f0a6bbb6be452f86a76092bd49b2ee4a`, nflscrapR `f8d02fa4134bbe1ddd2a3cb789be4f6436d04fe2155aa197bc5b128dce52cdcb`) are therefore verified against the fetched bytes in memory, before the cut, and never against a written cut file. The written cut files' digests are B2's builder output, recorded in its artifact header, not frozen here.
 - **Post-divergence caveat:** 2013 and 2014 Weeks 1-4 are an anonymous post-divergence league population. They enter pooled fits only. No club's or player's own 2013-2014 rows ever set that same club's or player's value, and no per-club or per-player 2013-2014 outcome row is committed. Self-influence is reported as a distribution for every club and player alike, computed in `--check` and not stored.
 - **Branch records:** no branch receipt, branch audit reading or branch result enters any fit, centre or weighting choice. Branch receipts were read in the design phase only to measure the installed kernel's own behaviour (defect evidence).
 
@@ -45,7 +47,7 @@ Every threshold is applied to raw counts, never to weighted counts.
 | `MIN_TIMEOUT_POOL` | 30 | a timeout level is used only when the pool holds this many matching tuples |
 | `k_transition` | 20 | transition pools (kickoffs, free kicks, punts, interceptions, fumbles) |
 | two-point chart minimum | 20 | tries per (time, diff) cell |
-| player-state minimum cell | 30 | events per fitted cell (amendment 3) |
+| player-state minimum cell | 30 | events per fitted cell (amendment 3; conditional on U5) |
 | climatology minimum | 5 | games per venue-month cell; fewer uses the venue's all-season mean plus the league month offset (a labelled convention) |
 
 Collapse rules:
@@ -75,14 +77,14 @@ Collapse rules:
 - **Two-point success:** one pooled rate over every two-point attempt from scrimmage not nullified. A split (season, pass or run, spot, offensive or non-offensive touchdown, the last 5:00, home, the team red-zone proxy) is adopted only if a likelihood-ratio test gives p < 0.01 pooled and the effect has the same sign in each pre-divergence season with at least 10 attempts per arm. The extra point is the drive model's single pair, referenced, not duplicated.
 - **Onside unit:** every valid kickoff from the kicking team's own 35 (2011-2014) or own 30 (2010) whose description contains "onside"; safety free kicks reported apart and given no onside branch. State = kicking team margin after the try and game seconds left, half openers flagged. Time buckets Q1-Q3, Q4 900-301, 300-121, 120-0; diff buckets lead 1 or more, tied, trail 1-3, trail 4-8, trail 9-16, trail 17 or more. **Expected** = the kicking team trails in the fourth quarter with 300 s or less left; **surprise** = every other onside kick. Recovery = the kicking team has the next offensive snap, or `own_kickoff_recovery`, or scores on the kick; a re-kick after a nullifying penalty is the attempt. In overtime, library rule R4 applies to every kickoff before the receiving club's first possession, and the opening onside kick uses the "opening" chart cell (default 1B.8).
 - **Non-offensive touchdowns (R15):** units are valid interceptions on scrimmage downs, lost scrimmage fumbles without an interception, punts, missed field goals (blocked included), non-onside kickoffs from the 35 (2011-2014) and safety free kicks. Line-of-scrimmage bins 1-20, 21-40, 41-60, 61-80, 81-99 are adopted for a rate only if a likelihood-ratio test across bins gives p < 0.01; otherwise one pooled rate. Records are feasibility-filtered: gross or air yards at most LOS + 9 and the side-aware spot identity; a fumble's spot is the fumbled snap's LOS minus that snap's ledger yards. Kick-return touchdown chains have an engineering cap of 8, failing closed.
-- **Decision source:** Jacksonville's two-point and onside decisions come from Stone (U6, unanswered): a call-sheet block (`decisions.two_point`, `decisions.kickoff`), a live pause, or a dated delegation, with basis `policy:i`, `delegated:league` or a live answer; every other club and every autonomous run uses the league chart (basis `league`). Without a block or a pause path the controlled club's user-controlled inputs fail closed. Success odds are the same for every club.
+- **Decision source:** Jacksonville's two-point and onside decisions come from Stone (U6, unanswered): a call-sheet block (`decisions.two_point`, `decisions.kickoff`), a live pause, or a dated delegation, with basis `policy:i` (a sheet rule), `delegated:league` (a dated delegation) or `live` (his answer at a live pause); every other club and every autonomous run uses the league chart (basis `league`). Without a block or a pause path the controlled club's user-controlled inputs fail closed. Success odds are the same for every club.
 - **Extraction amendments (disclosed):** A2, pass 1 treats a play as nullified only when its description says No Play; A3, pass 2 reads the text after REVERSED. as the play that counted.
 
 ### Ball security and penalties (B3b, B10, B11, B12)
 
 - **Fumbles:** the per-drive fumble list (snap order, kind, outcome, forced, forcer and recoverer groups) is the single source of the lost-fumble terminal kind (R12 layer B). Kept fumbles are seated nearest the stored snap order, never on a terminal snap, a kneel or a spike. A muffer follows `muffer_role`: the club returner by a deterministic depth fallback, or a group draw from the return unit for "other". Retained kicks apply at their real frequency (kickoffs from 2011); overtime punts exclude retained records, counted, until a two-source rule amendment on muffs against return fumbles lands. Forcers, recoverers, muffers and foulers are group draws with an `attribution` field and are never player evidence.
 - **Penalties (R11):** records are replayed with `decision_source: "replayed"`; accept or decline is the real record's, never a decision. Half-distance records are placed only where floor(spot / 2) equals their yards; kick-play events are classified by their position in the drive; foulers come from `slot_lineup` with `fouler_basis: "group_draw"`; team counters go to the fouling club; the penalty term enters every layout rung; a static relocation gate masks infeasible tuples on the possession stream. 2014 season tables are split by definition (Weeks 1-4 offense-charged counters; Week 5 on, each accepted foul charged to the fouling club) and combined penalty ranks are withheld. If R11 is held, the counter keeps the Bernoulli at the base's per-play factor with `randint(5, 10)` labelled unsourced, and B12 is held with it.
-- **2014 emphasis (R24, U2 persists through Week 17):** the emphasis set is five type-sides, each with its exposure: defensive holding (dropbacks), illegal contact (dropbacks), offensive pass interference (dropbacks), illegal use of hands by the defense (snaps) and illegal use of hands by the offense (dropbacks). Dropbacks include no-play dropbacks. Accepted fouls only drive the weights; declined emphasis fouls ride with their drives. The target is each type-side's 2014 Weeks 1-4 rate per exposure. Each tuple's weight is the Poisson likelihood ratio, the product over types of rho^n x exp(-(rho - 1) x lambda x exposure), with rho fitted by fixed point (rho <- rho x target / weighted rate) until the largest relative error is at most 1e-6, on the adopted pool with equal weight per drive. The weights are precomputed per tuple in the artifact; the runtime recomputation must agree within 1e-12 relative. On for regular season and postseason, off for preseason and the Pro Bowl. **No completion tilt** (U2 as decided): completion follows the pooled base.
+- **2014 emphasis (R24, U2: it persists through Week 17):** the emphasis set is five type-sides, each with its exposure: defensive holding (dropbacks), illegal contact (dropbacks), offensive pass interference (dropbacks), illegal use of hands by the defense (snaps) and illegal use of hands by the offense (dropbacks). Dropbacks include no-play dropbacks. Accepted fouls only drive the weights; declined emphasis fouls ride with their drives. The target is each type-side's 2014 Weeks 1-4 rate per exposure. Each tuple's weight is the Poisson likelihood ratio, the product over types of rho^n x exp(-(rho - 1) x lambda x exposure), with rho fitted by fixed point (rho <- rho x target / weighted rate) until the largest relative error is at most 1e-6, on the adopted pool with equal weight per drive. The weights are precomputed per tuple in the artifact; the runtime recomputation must agree within 1e-12 relative. On for regular-season games, off for preseason and the Pro Bowl. **The postseason is not covered by U2:** Stone was told the level "holds through Week 17". It is put to him before the first 2014 postseason event; until a dated decision records his answer, B12 refuses a postseason game on the 2014.6 profile (fail closed), and the answer is frozen in a new dated specification. **No completion tilt** (U2 as decided): completion follows the pooled base.
 
 ### Yardage (B3b, B13)
 
@@ -111,12 +113,13 @@ Collapse rules:
 
 ### Player states (B4b, B7)
 
+- **U5 is unanswered, so the amendment rules are conditional.** Amendments 2 and 3 were made after early results were seen, and they were not put to Stone. Conditional on U5: the forecast-residual basis for aging (amendment 2); the two-pass conjunction for aging, the negative-sign rule for draft slopes, the 30-event minimum cell and the tier population on the committed production-evidence qualifier floors (amendment 3); and the DL and LB swing carry, which the design took from pass 1 under amendment 3. If Stone accepts U5, these apply as written in this section, with the DL and LB swing carry taken from pass 1's sets. Until he answers, B4b and B7 either hold or use the plan's fallback: zero aging for every family (candidate Z) and flat rookie estimates for every family (no draft-slot slope, c1 = 0). A conditional rule the fallback does not name is held, never replaced by an agent's choice.
 - **Families and metrics:** QB EPA per dropback; RB, WR and TE EPA per opportunity; DL, LB and DB disruption per game (sacks + 0.5 QB hits + tackles for loss + interceptions + 0.5 passes defended, tackles for loss from the play-by-play in every season); K field goals made over expected per attempt; P net yards per punt; KR and PR yards per return. Offensive linemen have no public performance rate: no state (honours plus starts).
-- **Fit floors:** QB 50 dropbacks; RB 30, WR 20, TE 15 opportunities; DL, LB and DB 4 games; K 10 attempts; P 20 punts; KR and PR 8 returns. The tier population is defined on the committed production-evidence qualifier floors.
+- **Fit floors:** QB 50 dropbacks; RB 30, WR 20, TE 15 opportunities; DL, LB and DB 4 games; K 10 attempts; P 20 punts; KR and PR 8 returns. The tier population is defined on the committed production-evidence qualifier floors (amendment 3; conditional on U5).
 - **Centring and noise:** each rate centred on its season's opportunity-weighted league mean over floor qualifiers; per-family-season noise variance from the within-season split-half moment.
-- **Aging (amendments 2 and 3, U5):** fitted on one-step forecast residuals from the persistent-plus-AR(1) Kalman filter, not raw deltas. Candidates Z (no drift), C (constant), M1 (constant and a quadratic in age - 27), M2 (M1 and experience 0 and 1 indicators). A candidate is eligible only if it beats Z in both passes (pass 1 leave-one-season-pair-out SSE, pass 2 BIC); among eligible candidates the lowest pass 1 SSE is adopted; none eligible means Z.
+- **Aging (amendments 2 and 3; conditional on U5, fallback candidate Z for every family):** fitted on one-step forecast residuals from the persistent-plus-AR(1) Kalman filter, not raw deltas. Candidates Z (no drift), C (constant), M1 (constant and a quadratic in age - 27), M2 (M1 and experience 0 and 1 indicators). A candidate is eligible only if it beats Z in both passes (pass 1 leave-one-season-pair-out SSE, pass 2 BIC); among eligible candidates the lowest pass 1 SSE is adopted; none eligible means Z.
 - **Swing (C):** C_k = sb2 + rho^k su2 over lags 0-4, rho on a 0.01 grid, 200 bootstrap resamples of players. Kept only if su2's 95% interval excludes 0 in both passes. Size: pass 1 when pass 2's point estimate lies inside pass 1's interval (Confirmed two-pass), otherwise the smaller point estimate (Reconciled down, flagged). Innovation SD tau = sqrt(su2 (1 - rho^2)).
-- **Draft-slot priors (B, U4):** first and second seasons above floor; drafted x = c0 + c1 log(overall pick), undrafted a separate intercept; each player's real selection slot or undrafted status for every club, Jacksonville-controlled players included; priors fitted leaving out the player's own draft class. The slope is kept only if kept in both passes and negative (an earlier pick predicts a higher rate; the sign rule was added after pass 1's tight-end result was seen).
+- **Draft-slot priors (B, U4):** first and second seasons above floor; drafted x = c0 + c1 log(overall pick), undrafted a separate intercept; each player's real selection slot or undrafted status for every club, Jacksonville-controlled players included; priors fitted leaving out the player's own draft class. The slope is kept only if kept in both passes and negative (an earlier pick predicts a higher rate; the sign rule was added after pass 1's tight-end result was seen, amendment 3, conditional on U5; the fallback is slope 0 for every family).
 - **Feedback (D):** role change and seasons missed, standardised and pooled over families; a term is kept only if its leave-one-club-out skill is positive with the declared sign (positive for role, negative for availability) in both passes; weight = pass 1's slope when pass 2's slope is within 2 pass-1 standard errors, otherwise the smaller magnitude, flagged; the predictor cap q is chosen from 0.5, 0.75, 0.9 and 1.0 by the same skill. Snaps carry weight 0 (no public outcome season). Role is at slope 0 for the 2015 transition until Stone decides (default 1B.13); availability applies from 2015; the feedback F is 0 in 2014.
 - **Honours and record family:** honours enter as a pseudo-observation split by the Kalman gain, with `EVIDENCE_WEIGHT` 1.0 for Confirmed two-pass and 0.5 for Single-pass. The record family is the family holding most of the player's 2010-2012 opportunities (the latest season breaks ties), frozen at first entry, with the z-transfer applied at league-year transitions (default 1B.10).
 - **Tolerances and checks:** 2 SE from their own n; the 2013-to-2014 Weeks 1-4 pair is held out of the fit; a 2014 row asserts week <= 4 and game date <= 2014-09-29; the punter curve takes pass 1's coefficients when pass 2 is within 2 SE, otherwise the smaller, labelled.
@@ -153,15 +156,17 @@ Fresh labels, never used before this file. Kernel entropy is derived from each l
 |---|---|---|
 | A1 acceptance | `acc-2014.6-0` to `acc-2014.6-999` | the 1,000-game block, strength records absent and present |
 | A2 extended | `acc-2014.6-x0` to `acc-2014.6-x1999` | the 2,000-game block for the end-of-half rows |
-| A6 sweep | `sweep-2014.6-<fixture>-0` to `-3999` for each of the three fixtures of `scripts/research/seed_sweep.py` | 12,000 autonomous games; 0 refused games |
+| A6 sweep | `sweep-2014.6-<fixture>-0` to `-3999` for each of the three fixtures of the October 1 sweep (`tests/test_chains.py`, `SeedSweepRegressionTests`): `single` (`single_quarterback_teams`, `tests/support_rosters.py`), `pause` (`pause_teams`, `tests/test_chains.py`) and `sample` (`sample_teams`, `tests/synthetic_games.py`). B1's `scripts/research/seed_sweep.py` reproduces exactly these three | 12,000 autonomous games; 0 refused games |
 | Latent references | `latref-0` to `latref-19` | 20 synthetic season references for the player-state draws (B7, A3) |
 
 The standard 250-game sample is reported alongside, never as the gate for a new row.
 
 ## 7. Outside this file
 
-- **B9F** (the live Jacksonville fourth-down decision) was added after these rules were drafted. Its rules are frozen in its own design record (runtime README and the decision record) before its code; they are not part of this file, so its digest does not change.
-- **U6** (Stone's two-point and onside rule, or a dated delegation) is unanswered. The mechanism accepts either a live pause or a call-sheet decision block and fails closed for Jacksonville without one.
+- **B9F** (the live Jacksonville fourth-down decision) was added after these rules were drafted. Its rules are frozen in its own design record (runtime README and the decision record) before its code; they are not part of this file. One rule is fixed already: one resolution applies to all 32 clubs (the go, field-goal or punt decision, then the sourced 2010-2014 conversion, field-goal or punt outcome with the same matchup terms), and only the decision source differs (Stone live in user-controlled Jacksonville games, the league chart otherwise).
+- **U5** (the player-model amendments 2 and 3) is unanswered; the rules resting on it are conditional (section 4, Player states).
+- **U6** (Stone's two-point and onside rule, or a dated delegation) is unanswered. The mechanism accepts either a live pause (basis `live`) or a call-sheet decision block and fails closed for Jacksonville without one.
+- **The 2014 emphasis in the postseason** is not covered by U2 and is put to Stone before the first 2014 postseason event (section 4).
 - **U8** (a graded row still OUTSIDE after acceptance) is the user's.
 - Needed later, not decided here: authorization to update the rulebook's section 8 era note; the two AGENTS.md workflow lines (conditions built inside `build_week_inputs`; staff assessments never read player-state values or tiers); Week 1 PUP, NFI and reserve treatment; role feedback before 2015; observed weather; per-snap defensive calls.
 
@@ -185,7 +190,8 @@ The standard 250-game sample is reported alongside, never as the gate for a new 
                 "2014 Week 5 injury reports (October 1-3, 2014)"],
     "players_columns": ["gsis_id", "birth_date", "draft fields", "pff_id", "pfr_id"],
     "draft_picks_columns": ["season", "round", "pick", "team", "gsis_id", "position"],
-    "nflscrapr_reg_pbp_sha256": {
+    "pins_cover": "the fetched full-season asset; 2014 verified in memory before the cut; cut-file digests are B2 builder output",
+    "nflscrapr_reg_pbp_fetch_sha256": {
       "2010": "64224b82b8efc7b5c6d8c0c4e0054346bb1ac5df4c073c84d2ab8fb3e730f9da",
       "2011": "ba412141e8033103807810605ecdbdb5bf19d9dd683e1ff3173af1303fced12c",
       "2012": "9129396fc41597f9f44ab14d4d0fca890a3c56fea686b0b7dc92885aaedd0f98",
@@ -232,7 +238,9 @@ The standard 250-game sample is reported alongside, never as the gate for a new 
     "return_td_los_bins": [[1, 20], [21, 40], [41, 60], [61, 80], [81, 99]],
     "return_td_bins_keep_p_below": 0.01,
     "kick_return_chain_cap": 8,
-    "basis_values": ["policy:i", "delegated:league", "league"]
+    "basis_values": ["policy:i", "delegated:league", "live", "league"],
+    "controlled_club_basis": ["policy:i", "delegated:league", "live"],
+    "u6": "unanswered; Jacksonville fails closed without a block or a live pause"
   },
   "emphasis_2014": {
     "persist_through_week": 17,
@@ -245,8 +253,10 @@ The standard 250-game sample is reported alongside, never as the gate for a new 
     "accepted_only": true,
     "fixed_point_max_relative_error": 1e-6,
     "runtime_recompute_relative_tolerance": 1e-12,
-    "game_types_on": ["regular", "postseason"],
-    "game_types_off": ["preseason", "pro_bowl"]
+    "game_types_on": ["regular"],
+    "game_types_undecided": ["postseason"],
+    "game_types_off": ["preseason", "pro_bowl"],
+    "undecided_game_type": "fail closed until a dated decision"
   },
   "yardage": {
     "relocation_rule": "gains-proportional",
@@ -288,7 +298,11 @@ The standard 250-game sample is reported alongside, never as the gate for a new 
     "snap_feedback_weight": 0,
     "role_feedback_2015": 0,
     "feedback_in_2014": 0,
-    "draft_slot": "real selection slot or undrafted, every club, own draft class left out"
+    "draft_slot": "real selection slot or undrafted, every club, own draft class left out",
+    "u5": "unanswered",
+    "u5_conditional": ["forecast_residual_aging_basis", "aging_two_pass_conjunction", "draft_slope_negative_sign",
+                       "min_cell_30", "tier_population_on_qualifier_floors", "dl_lb_swing_carry_from_pass_1"],
+    "u5_fallback": {"aging": "Z for every family", "draft_slope": 0, "other_conditional_rules": "held"}
   },
   "strength_v4": {
     "targets": [{"outcomes": 2012, "evidence": [2010, 2011]}, {"outcomes": 2013, "evidence": [2011, 2012]}],
@@ -301,7 +315,10 @@ The standard 250-game sample is reported alongside, never as the gate for a new 
     "entropy": "sha256(ENTROPY_DOMAIN + sha256(label))",
     "acceptance": {"prefix": "acc-2014.6-", "count": 1000},
     "extended": {"prefix": "acc-2014.6-x", "count": 2000},
-    "sweep": {"pattern": "sweep-2014.6-<fixture>-<i>", "per_fixture": 4000, "fixtures": 3, "games": 12000},
+    "sweep": {"pattern": "sweep-2014.6-<fixture>-<i>", "per_fixture": 4000, "fixtures": 3, "games": 12000,
+              "fixture_tokens": {"single": "tests/support_rosters.py single_quarterback_teams",
+                                 "pause": "tests/test_chains.py pause_teams",
+                                 "sample": "tests/synthetic_games.py sample_teams"}},
     "latent_references": {"prefix": "latref-", "count": 20}
   }
 }
