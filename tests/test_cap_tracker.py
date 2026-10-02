@@ -63,7 +63,7 @@ class CapTrackerTests(unittest.TestCase):
         validate(self.data)
         self.assertEqual(totals(self.data['players'], ['2014'])[0],
                          before + former['years']['2014']['cap'])
-        former['departure_date'] = '2014-09-01'
+        former['departure_date'] = '2014-09-10'
         with self.assertRaisesRegex(ValueError, 'future departure'):
             validate(self.data)
 
@@ -90,7 +90,7 @@ class CapTrackerTests(unittest.TestCase):
         outputs = render(self.data)
         main = next(value for path, value in outputs.items() if path.name == 'cap_tracker.md')
         self.assertIn('Unused prior-year room carried in | $5,330,000 to $6,000,000', main)
-        self.assertIn('Difference including the rollover estimate | $16,267,314 to $16,937,314', main)
+        self.assertIn('Difference including the rollover estimate | $15,876,308 to $16,546,308', main)  # the generator's standing Top-51 dashboard; the full count applies from September 3 (cap worksheet)
         self.assertIn('Adjusted team cap | Unresolved', main)
         estimate = self.data['team_years']['2014']['carryover_working_estimate']
         estimate['low'], estimate['high'] = estimate['high'], estimate['low']
@@ -106,8 +106,8 @@ class CapTrackerTests(unittest.TestCase):
         organization=next(value for path,value in outputs.items() if path.name=='coaching_payroll.md')
         self.assertIn('**Nine-year view**',main)
         self.assertIn('**Additional three years**',main)
-        self.assertIn('$122,062,686',main)
-        self.assertIn('$10,937,314',main)
+        self.assertIn('$122,453,692',main)  # the generator's Top-51 dashboard after the September 8 transactions
+        self.assertIn('$10,546,308',main)
         self.assertIn('Certified cap space | Unresolved',main)
         self.assertNotRegex(main,r'^##+ \d+\.',)
         self.assertNotIn('Release comparisons',main)
@@ -166,7 +166,7 @@ class CapTrackerTests(unittest.TestCase):
 
     def test_every_signed_2014_deal_is_priced_and_estimates_stay_separate(self):
         current=[p for p in self.data['players'] if p['control'] in {'signed','future'}]
-        self.assertEqual(len(current),63)  # the active 53 and the two on reserve/injured after the August 30, 2014 reduction, plus the eight practice-squad contracts of August 31
+        self.assertEqual(len(current),64)  # the active 53 and the four on reserve/injured after the September 8, 2014 transactions, plus the seven practice-squad contracts remaining from August 31
         self.assertTrue(all(p['years']['2014']['status'] in {'known','approximate'} for p in current))
         before=totals(current,['2014'])
         row=self.player('Montell Owens')['years']['2014']
@@ -218,10 +218,11 @@ class CapTrackerTests(unittest.TestCase):
         self.assertNotIn('Not committed',main)
         self.assertIn('$570,000 | $660,000 |  |  |',main)
         self.assertEqual(cap_cell(self.player('Lane Johnson')['years']['2017']), '')
-        self.assertEqual(cap_cell(self.player('Alan Ball')['years']['2014']), '')
+        self.assertEqual(cap_cell(self.player('Brent Grimes')['years']['2014']), '')
+        self.assertEqual(working_charge(self.player('Alan Ball')['years']['2014']), 804706)  # signed September 8, 2014: the $855,000 rate for sixteen of seventeen pay weeks
         self.assertEqual([working_total(self.data['players'],str(y)) for y in [2014,2015,2016,2017]],
-                         [113508530,114920972,79164658,47836771])  # after the August 30, 2014 reduction and the August 31 practice-squad contracts
-        self.assertIn('$124,095,486',main)  # Old Bray bonus and the August 30 dead money are included once.
+                         [114607730,115430972,79764658,47836771])  # after the September 8, 2014 transactions (Ball signed, Phillips promoted on a three-year contract)
+        self.assertIn('$125,194,686',main)  # Old Bray bonus and the August 30 dead money are included once.
 
     def test_slot_guarantees_and_release_exposure_reconcile(self):
         lane=self.player('Lane Johnson');kelce=self.player('Travis Kelce')

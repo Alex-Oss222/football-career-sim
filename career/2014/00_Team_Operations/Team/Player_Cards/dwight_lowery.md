@@ -150,6 +150,12 @@ All 80 defensive snaps at safety with seven solo tackles, including the tackles 
 
 Source: [Week 1 game record](../../../05_Regular_Season/Games/Week_01/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 8, 2014 | Reserve/injured, designated for return
+
+Examined Monday with the September 7 instruction unchanged (out, long term; projected return December 11); placed on reserve/injured with the club's one 2014 return designation by Caldwell on Stone's recommendation: no practice before October 20, no return to the active list before November 3, medical clearance controlling after that. He remains the secondary's captain while under contract; Trawick starts next to Rambo for Week 2 and the secondary echo was built around Daryl Smith's relay this week. No football finding attaches to the injury.
+
+Source: [September 8 transactions](../Roster/transactions_2014-09-08.md) and the [medical history](../../Medical/medical_history.md#september-8-to-12-jones-drew-reassessed-and-cleared-harris-and-lowery-to-reserveinjured). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

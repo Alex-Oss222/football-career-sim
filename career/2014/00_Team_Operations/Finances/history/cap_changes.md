@@ -18,6 +18,7 @@ These are the working balances recorded when each transaction closed. They prese
 | May 11: all nine drafted and 17 undrafted rookie contracts signed | $127,183,362 | $10,262,324 | $125,385,686 | $504,000 | $125,889,686 | $7,110,314 | $123,275,736 |
 | May 12: Rackley traded to Seattle | $125,597,494 | $10,417,192 | $124,449,686 | $504,000 | $124,953,686 | $8,046,314 | $123,275,736 |
 | August 30 and 31: the reduction to 53 (19 players released or waived, four tenders withdrawn, Brate and Jackson to reserve/injured) and the eight practice-squad contracts | $113,508,530 | $10,586,956 | $121,558,686 | $504,000 | $122,062,686 | $10,937,314 | $115,141,165 |
+| September 8: Harris and Lowery to reserve/injured (charges unchanged); Alan Ball signed ($804,706 for sixteen pay weeks); Adrian Phillips promoted from the practice squad ($401,594 with his one squad week; his $107,100 estimate leaves); seven practice-squad estimates remain. From the September 3 compliance deadline the full count applies, so the Top-51 column carries the full-count obligations | $114,607,730 | $10,586,956 | $125,194,686 (full count) | $504,000 | $125,698,686 | $7,301,314 | $115,651,165 |
 
 The March 12 balance includes Talib's March 11 agreement and was closed with Tate's March 12 decision. The March 18 receiver balance includes Nicks's March 14 signing and Hawkins's March 18 binding contract. These are accounting checkpoints, not changed signing dates. The Washington pick exchange later on March 31 moved no player contract and left that day's cap balances unchanged.
 

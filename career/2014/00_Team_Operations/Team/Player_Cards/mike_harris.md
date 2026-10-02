@@ -150,6 +150,12 @@ Seventy defensive snaps at the starting cornerback opposite Talib with six tackl
 
 Source: [Week 1 game record](../../../05_Regular_Season/Games/Week_01/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 8, 2014 | Reserve/injured
+
+Examined Monday with the September 7 instruction unchanged (out, long term; projected return December 8); placed on ordinary reserve/injured by Caldwell on Stone's recommendation, the club's one return designation going to Lowery. His 2014 season with the club is over and his contract continues. No football finding attaches to the injury; the Week 1 question on the four long completions stays with the film.
+
+Source: [September 8 transactions](../Roster/transactions_2014-09-08.md) and the [medical history](../../Medical/medical_history.md#september-8-to-12-jones-drew-reassessed-and-cleared-harris-and-lowery-to-reserveinjured). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

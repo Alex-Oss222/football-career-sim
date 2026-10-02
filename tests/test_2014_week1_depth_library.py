@@ -83,9 +83,12 @@ class Week1DepthLibrary2014Tests(unittest.TestCase):
         controlled = controlled_players_from_roster(ROSTER)
         # Rebuilt on the September 6, 2014 roster: 63 under control (the
         # active 53, two on reserve/injured and eight on the practice squad),
-        # exactly the gate's own reading of the roster.
-        self.assertEqual(len(controlled), 63)
-        self.assertEqual(set(self.library["branch_controlled_players"]), controlled)
+        # exactly the gate's own reading of the roster on that date. The
+        # September 8, 2014 transactions (Harris and Lowery to reserve/injured,
+        # Phillips promoted, Alan Ball signed) keep every one of the 63 under
+        # control and add Ball, who is on no club's Week 1 chart.
+        self.assertEqual(len(controlled), 64)
+        self.assertEqual(set(self.library["branch_controlled_players"]), controlled - {"Alan Ball"})
         self.assertIn("September 6, 2014", self.library["branch_basis"])
         ids, gsis, club_of = Counter(), Counter(), {}
         for team, club in self.library["clubs"].items():

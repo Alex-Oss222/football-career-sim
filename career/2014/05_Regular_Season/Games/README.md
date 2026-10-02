@@ -5,7 +5,7 @@
 | Week | Date | Jacksonville game | Kickoff | Status |
 |---|---|---|---|---|
 | [Week 1](Week_01/README.md) | September 7 | at Philadelphia | 1 p.m. | **Played: Jacksonville 23, Philadelphia 20 (OT)** |
-| [Week 2](Week_02/README.md) | September 14 | at Washington | 1 p.m. | Next; preparation opens September 8 |
+| [Week 2](Week_02/README.md) | September 14 | at Washington | 1 p.m. | Next; preparation closed September 13, call sheet frozen; game day |
 | [Week 3](Week_03/README.md) | September 21 | Indianapolis | 1 p.m. | Not started |
 | [Week 4](Week_04/README.md) | September 28 | at San Diego | 4:05 p.m. | Not started |
 | [Week 5](Week_05/README.md) | October 5 | Pittsburgh | 1 p.m. | Not started |

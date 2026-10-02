@@ -1,6 +1,6 @@
 # Jacksonville 2014 free-agency and contract outcomes
 
-**As of:** August 30, 2014 (the four qualifying offers were withdrawn at the reduction to 53 and the players' rights renounced; [final roster cuts](../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). This page records every 2014 Jacksonville veteran offer, tender and signing: the March and April 2014 signings and re-signings, the six reserve/future contracts and the tags and tenders. The nine rookie contracts of May 11 and the 17 undrafted contracts of May 10 are in [the draftees record](../../03_Draft/draftees.md) and [the undrafted signings record](../../03_Draft/udfa_signings.md). Stone's priorities are on the [free-agency board](player_board.md); prior contracts are in the [2013 signing history](../../../2013/offseason/free_agency/signings.md) and each player's current status is in the [contract status register](../Finances/player_contracts/contract_status.md).
+**As of:** September 8, 2014 (Alan Ball signed for one year after a current physical and Adrian Phillips re-signed on promotion from the practice squad, filling the two places opened by the reserve/injured placements of Harris and Lowery; [September 8 transactions](../Team/Roster/transactions_2014-09-08.md)). Before it, August 30, 2014 (the four qualifying offers were withdrawn at the reduction to 53 and the players' rights renounced; [final roster cuts](../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). This page records every 2014 Jacksonville veteran offer, tender and signing: the March and April 2014 signings and re-signings, the six reserve/future contracts and the tags and tenders. The nine rookie contracts of May 11 and the 17 undrafted contracts of May 10 are in [the draftees record](../../03_Draft/draftees.md) and [the undrafted signings record](../../03_Draft/udfa_signings.md). Stone's priorities are on the [free-agency board](player_board.md); prior contracts are in the [2013 signing history](../../../2013/offseason/free_agency/signings.md) and each player's current status is in the [contract status register](../Finances/player_contracts/contract_status.md).
 
 <!-- event-record: {"date": "2014-02-03", "id": "2014-02-03-five-futures-signed", "status": "closed", "summary": "Tyler Bray, Richard Murphy, Antwon Blake, Jerome Long and Jerrell Jackson signed reserve/future contracts."} -->
 <!-- event-record: {"closure": {"checkpoint": "Canonical update - February 2, 2014 - 2014 reserve/future contracts signed (six of eight)", "sequence": 85, "through": "2014-02-02"}, "date": "2014-02-05", "id": "2014-02-05-danthony-smith-futures-signed", "status": "closed", "summary": "D\u2019Anthony Smith signed a reserve/future contract after choosing Jacksonville over Seattle."} -->
@@ -40,14 +40,21 @@ At Stone's instruction the March 8 to 11 negotiations were replayed as a judgmen
 
 Caldwell has ended paid veteran receiver bidding.
 
+## Signed September 8, 2014
+
+| Player | Result | Term | Total | Fully guaranteed | 2014 cap |
+|---|---|---|---:|---:|---:|
+| Alan Ball, CB | Signed September 8 as an unrestricted free agent after a current physical ([signing record](alan_ball_signing_2014-09-08.md)); no competing club and no market draw (unplaced under the rails); no role promise | 1 year, 2014 | $804,706 ($855,000 rate, sixteen of seventeen pay weeks, a labelled reconstruction) | $0 | $804,706 |
+| Adrian Phillips, S | Promoted from the practice squad September 8; his weekly contract ended after one paid week and a new contract on his May 10 undrafted structure was signed (an adopted simulation term; [September 8 transactions](../Team/Roster/transactions_2014-09-08.md)) | 3 years, 2014-2016 | $1,511,594 ($395,294 for sixteen pay weeks plus the $6,300 squad week; $510,000; $600,000) | $0 | $401,594 |
+
 ## Still open
 
 Under [Stone's March 31 plan](../../01_Early_Offseason/stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-henne-ball-and-brent-grimes):
 
-- Alan Ball (CB): not re-signed May 12; first veteran corner to call if the room is hit, subject to a current physical ([Stone's conversation](alan_ball_2014-05-12.md)).
+- Alan Ball (CB): not re-signed May 12; first veteran corner to call if the room is hit, subject to a current physical ([Stone's conversation](alan_ball_2014-05-12.md)). The room was hit September 7 (Harris) and he was signed September 8 (above).
 - Brent Grimes (CB): the fallback offer is withdrawn and he is not pursued. With both primary corners signed, Tarell Brown is not pursued automatically either.
 
-Both are unplaced free agents under the rails: Grimes's real 2014 move (a re-signing with Miami) does not apply in the branch, and Ball has no real 2014 move. The draft closed May 10; on May 12 Stone told Ball Jacksonville had no clean role to offer, and Caldwell called the three clubs his agent named with an honest evaluation. No club's real history signs him, so he stays available. Chad Henne re-signed April 4 (above).
+Grimes is an unplaced free agent under the rails: his real 2014 move (a re-signing with Miami) does not apply here. Ball had no real 2014 move and stayed available until Jacksonville signed him September 8; the three clubs his agent named in May produced nothing on the record. Chad Henne re-signed April 4 (above).
 
 ## Reserve/future contracts
 

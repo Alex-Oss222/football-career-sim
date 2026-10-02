@@ -62,7 +62,7 @@ class WorkingPlayerCardTests(unittest.TestCase):
     def test_current_roster_cards_and_stats_are_consistent(self):
         self.assertEqual(profile_errors(2014), [])
         cards = list(SeasonPaths(2014, ROOT).record('player_profiles').glob('*.md'))
-        self.assertEqual(len(cards), 84)  # 78 current players, 4 former players, index and template
+        self.assertEqual(len(cards), 85)  # 78 current players and Alan Ball's September 8 entry card, 4 former players, index and template
 
     def test_player_facing_year_labels_preserve_proper_name(self):
         self.assertEqual(clean_labels('Andre Branch; Branch evidence; Branch regular season'),

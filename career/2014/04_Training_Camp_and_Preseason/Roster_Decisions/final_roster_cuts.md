@@ -87,6 +87,8 @@ Held as the packet proposed, with the Atlanta film review: the staff carried the
 | 10 | Tight end | TE | The package names no candidate | Place open |
 | Alternates | Shaw, Larsen, Blake, Edwards | | Not needed; all cleared waivers. Blake (one credited season; accrued not established) would have needed the second G1 place | Not signed; free agents |
 
+**Later change (September 8, 2014):** Adrian Phillips was promoted to the active roster after Harris and Lowery went to reserve/injured, leaving seven on the squad and three places open ([September 8 transactions](../../00_Team_Operations/Team/Roster/transactions_2014-09-08.md)); this record keeps the August 31 squad as signed.
+
 **Contracts:** each pays the 2014 practice-squad minimum of $6,300 a week (library [F6](../../../../library/2014_league_calendar_and_financial_rules.md), Confirmed) while the player is on the squad; no amount is guaranteed for the season, and the $107,100 carried in the cap views is a 17-week working estimate. A practice-squad week does not accrue a season.
 
 **Rails note for the departures:** Cain to Chicago on September 1 (applied on that date in the Week 1 preparation); Edwards and Blake flagged for the Week 1 rails rebuild (their real Week 1 clubs, Dallas and Pittsburgh, are listed without a dated move); everyone else unplaced. The [league personnel method](../../League/personnel/method.md) carries the dated note.

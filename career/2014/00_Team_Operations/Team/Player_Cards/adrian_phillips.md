@@ -8,7 +8,7 @@
 **Checkpoint:** May 11, 2014 starting evaluation, on acquisition (signed as an undrafted rookie on May 10, 2014)  
 **Age:** 22  
 **Position:** S  
-**Roster status (August 31, 2014):** Practice squad from August 31, 2014: waived at the August 30 reduction to 53, cleared waivers and signed a practice-squad contract at the $6,300 weekly minimum ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). Not on the 53; this card stays current and its statistics refresh after closed games only if he is elevated.  
+**Roster status (September 8, 2014):** Active 53 from September 8, 2014, promoted from the practice squad on a new three-year minimum contract after one week on the squad ([September 8 transactions](../Roster/transactions_2014-09-08.md)); waived at the August 30 reduction, cleared and signed to the squad August 31 ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)).  
 **NFL standing:** Rookie; no NFL standing. Staff view: coverage-unit competition, then dime  
 **Player identity:** A safety with a physical tackling profile and coverage-unit experience; range on the back end is the question.  
 **Previous annual profile:** None; 2014 rookie. The starting view rests on pre-draft public evidence only  
@@ -101,6 +101,14 @@ A safety with a physical tackling profile and coverage-unit experience; range on
 ## 2013 season production
 
 No NFL season. The college record is described qualitatively above; no college statistic is entered as an NFL figure.
+
+## Dated coaching updates
+
+### September 8 to 13, 2014 | Promotion and the Washington week
+
+Promoted from the practice squad on September 8 for safety and coverage-unit depth after Lowery went to reserve/injured, the packet's proposed promotion, on a new three-year minimum contract. He practiced in full Wednesday through Friday in the safety reserve work behind Rambo, Trawick and Prosinski and on the two full-speed coverage fits Wednesday and the changed-picture retest Friday, with nothing charged to him on the recorded reps. Active for Week 2 by Stone's chart; a coverage-unit job is Westhoff's assignment on the day, not a promise.
+
+Source: [September 8 transactions](../Roster/transactions_2014-09-08.md) and the [Week 2 record](../../../05_Regular_Season/Games/Week_02/output.md). This coaching update preserves the opening grades above.
 
 <!-- yearly-statistics:start -->
 

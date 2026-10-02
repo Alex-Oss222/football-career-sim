@@ -1,6 +1,6 @@
 # Jacksonville Jaguars cap tracker, 2014 to 2025
 
-As of August 31, 2014. Whole US dollars.
+As of September 8, 2014. Whole US dollars.
 
 [Player cap table](#cap-by-player) | [Individual contract details](../player_contracts/contract_details.md) | [Expirations](#expiring-contracts-and-free-agent-classes) | [Updating this tracker](../README.md)
 
@@ -10,7 +10,7 @@ As of August 31, 2014. Whole US dollars.
 |---|---|---|
 | League cap | $133,000,000 | Published league limit |
 | Adjusted team cap | Unresolved | League cap plus verified carryover and adjustments |
-| Recorded player obligations | $113,508,530 | All scheduled contracts, including unsigned tenders once |
+| Recorded player obligations | $114,607,730 | All scheduled contracts, including unsigned tenders once |
 | Dead money | $10,586,956 | Separate departed-contract charges |
 | Certified cap space | Unresolved | Withheld until club accounting is reconciled |
 | Space after rookie reserve | Unresolved | Requires verified net rookie cost and certified space |
@@ -19,18 +19,18 @@ The [current worksheet](../../2014/00_Team_Operations/Finances/salary_cap/cap_wo
 
 | Working offseason reconciliation | 2014 |
 |---|---|
-| Recorded player obligations | $113,508,530 |
-| P5 salary displaced below Top 51 | -$2,536,800 |
+| Recorded player obligations | $114,607,730 |
+| P5 salary displaced below Top 51 | -$3,244,994 |
 | Separate dead money | $10,586,956 |
-| Top-51 obligations before workout charge | $121,558,686 |
+| Top-51 obligations before workout charge | $121,949,692 |
 | Opening workout charge (recorded worksheet) | $504,000 |
-| Working counted total | $122,062,686 |
-| Difference below league cap, before club adjustments and reserves | $10,937,314 |
+| Working counted total | $122,453,692 |
+| Difference below league cap, before club adjustments and reserves | $10,546,308 |
 
 | Rollover from the prior year (working estimate, not certified) | 2014 |
 |---|---|
 | Unused prior-year room carried in | $5,330,000 to $6,000,000 |
-| Difference including the rollover estimate | $16,267,314 to $16,937,314 |
+| Difference including the rollover estimate | $15,876,308 to $16,546,308 |
 
 The rollover is calculated step by step in the [cap worksheet](../../2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md#2013-rollover). It becomes certified room only when club accounting is reconciled.
 
@@ -63,6 +63,7 @@ The rollover is calculated step by step in the [cap worksheet](../../2014/00_Tea
 | [Travis Kelce](../player_contracts/contract_details.md#travis-kelce) | TE | 24 | Signed | $1,242,978 | 0.93% | $653,596 | $589,382 | $0 | $1,153,596 |
 | [Davante Adams](../player_contracts/contract_details.md#davante-adams) | WR | 21 | Signed | $1,178,733 | 0.89% | $420,000 | $758,733 | $0 | $185,697 |
 | [Chris Prosinski](../player_contracts/contract_details.md#chris-prosinski) | S | 26 | Signed | $840,045 | 0.63% | $735,018 | $105,027 | $0 | $0 |
+| [Alan Ball](../player_contracts/contract_details.md#alan-ball) | CB | 29 | Signed | $804,706 | 0.61% | $804,706 | $0 | $0 | $0 |
 | [Bryan Anger](../player_contracts/contract_details.md#bryan-anger) | P | 25 | Signed | $770,523 | 0.58% | $584,898 | $165,625 | $20,000 | $0 |
 | [Jordan Poyer](../player_contracts/contract_details.md#jordan-poyer) | CB | 22 | Signed | $711,794 | 0.54% | $544,000 | $167,794 | $0 | $0 |
 | [Sio Moore](../player_contracts/contract_details.md#sio-moore) | LB | 23 | Signed | $619,257 | 0.47% | $495,000 | $124,257 | $0 | $0 |
@@ -93,18 +94,18 @@ The rollover is calculated step by step in the [cap worksheet](../../2014/00_Tea
 | [Gator Hoskins](../player_contracts/contract_details.md#gator-hoskins) | TE | 22 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
 | [Taylor Gabriel](../player_contracts/contract_details.md#taylor-gabriel) | WR | 23 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
 | [Casey Kreiter](../player_contracts/contract_details.md#casey-kreiter) | LS | 23 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
+| [Adrian Phillips](../player_contracts/contract_details.md#adrian-phillips) | S | 22 | Signed | $401,594 | 0.30% | $395,294 | $0 | $6,300 | $0 |
 | [Tyler Bray](../player_contracts/contract_details.md#tyler-bray) | QB | 22 | Signed | $107,100 | 0.08% | $107,100 | $0 | $0 | $0 |
 | [Richard Murphy](../player_contracts/contract_details.md#richard-murphy) | RB | 27 | Signed | $107,100 | 0.08% | $107,100 | $0 | $0 | $0 |
 | [Jerome Long](../player_contracts/contract_details.md#jerome-long) | IDL | 23 | Signed | $107,100 | 0.08% | $107,100 | $0 | $0 | $0 |
 | [Jemea Thomas](../player_contracts/contract_details.md#jemea-thomas) | S | 24 | Signed | $107,100 | 0.08% | $107,100 | $0 | $0 | $0 |
-| [Adrian Phillips](../player_contracts/contract_details.md#adrian-phillips) | S | 22 | Signed | $107,100 | 0.08% | $107,100 | $0 | $0 | $0 |
 | [Matt Feiler](../player_contracts/contract_details.md#matt-feiler) | OG | 21 | Signed | $107,100 | 0.08% | $107,100 | $0 | $0 | $0 |
 | [Tyler Shatley](../player_contracts/contract_details.md#tyler-shatley) | C | 23 | Signed | $107,100 | 0.08% | $107,100 | $0 | $0 | $0 |
 | [Jackson Jeffcoat](../player_contracts/contract_details.md#jackson-jeffcoat) | EDGE | 23 | Signed | $107,100 | 0.08% | $107,100 | $0 | $0 | $0 |
 
 Percentages use the published league cap because adjusted club cap is unresolved. Other cap preserves the recorded aggregate; unverified roster, option, workout and incentive components are not invented. Unpaid guarantees exclude bonuses already paid.
 
-The inventory covers 63 current players: 63 under signed contracts (reserve/future contracts from March 11 and practice-squad contracts from August 31, 2014 included while in force) and 0 on unsigned tenders (RFA or ERFA). 27 former players are retained for financial history only.
+The inventory covers 64 current players: 64 under signed contracts (reserve/future contracts from March 11 and practice-squad contracts from August 31, 2014 included while in force) and 0 on unsigned tenders (RFA or ERFA). 26 former players are retained for financial history only.
 
 ## Reading the table
 
@@ -131,14 +132,14 @@ The [2011 agreement](https://nflps.org/wp-content/uploads/2012/05/collective-bar
 
 | Item | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 |
 |---|---|---|---|---|---|---|---|---|---|
-| Signed contracts and futures | $113,508,530 | $114,920,972 | $79,164,658 | $47,836,771 | $18,900,000 |  |  |  |  |
+| Signed contracts and futures | $114,607,730 | $115,430,972 | $79,764,658 | $47,836,771 | $18,900,000 |  |  |  |  |
 | Unsigned tenders |  |  |  |  |  |  |  |  |  |
-| Player contracts including tender | $113,508,530 | $114,920,972 | $79,164,658 | $47,836,771 | $18,900,000 |  |  |  |  |
+| Player contracts including tender | $114,607,730 | $115,430,972 | $79,764,658 | $47,836,771 | $18,900,000 |  |  |  |  |
 | Separate carry-forward dead money | $10,586,956 | $220,193 | $0 | $0 | $0 |  |  |  |  |
-| Recorded cap obligations | $124,095,486 | $115,141,165 | $79,164,658 | $47,836,771 | $18,900,000 |  |  |  |  |
-| Scheduled player cash including tender | $135,969,488 | $89,958,215 | $63,669,415 | $37,715,000 | $16,000,000 |  |  |  |  |
+| Recorded cap obligations | $125,194,686 | $115,651,165 | $79,764,658 | $47,836,771 | $18,900,000 |  |  |  |  |
+| Scheduled player cash including tender | $137,068,688 | $90,468,215 | $64,269,415 | $37,715,000 | $16,000,000 |  |  |  |  |
 | Salary guaranteed in that year | $30,898,002 | $35,358,903 | $3,896,127 | $690,000 | $0 |  |  |  |  |
-| Players with scheduled charges | 63 | 47 | 31 | 13 | 2 |  |  |  |  |
+| Players with scheduled charges | 64 | 48 | 32 | 13 | 2 |  |  |  |  |
 
 **Additional three years**
 
@@ -172,15 +173,15 @@ These are the working obligations for the recorded deals, before club adjustment
 | EDGE | $11,415,264 | $12,054,525 | $8,100,000 |  |  |  |  |  |  |
 | IDL | $13,589,559 | $8,739,125 | $10,079,125 | $10,169,125 |  |  |  |  |  |
 | LB | $15,551,061 | $11,839,393 | $10,199,393 | $790,136 |  |  |  |  |  |
-| CB | $16,037,991 | $19,421,991 | $18,902,544 | $18,502,250 | $9,800,000 |  |  |  |  |
-| S | $5,951,450 | $5,277,205 | $707,205 |  |  |  |  |  |  |
+| CB | $16,842,697 | $19,421,991 | $18,902,544 | $18,502,250 | $9,800,000 |  |  |  |  |
+| S | $6,245,944 | $5,787,205 | $1,307,205 |  |  |  |  |  |  |
 | K | $4,187,500 | $4,387,500 |  |  |  |  |  |  |  |
 | P | $770,523 | $875,480 |  |  |  |  |  |  |  |
 | LS | $420,000 | $510,000 | $600,000 |  |  |  |  |  |  |
 | Offense | $45,585,182 | $51,815,753 | $30,576,391 | $18,375,260 | $9,100,000 |  |  |  |  |
-| Defense | $62,545,325 | $57,332,239 | $47,988,267 | $29,461,511 | $9,800,000 |  |  |  |  |
+| Defense | $63,644,525 | $57,842,239 | $48,588,267 | $29,461,511 | $9,800,000 |  |  |  |  |
 | Special teams | $5,378,023 | $5,772,980 | $600,000 |  |  |  |  |  |  |
-| All player contracts | $113,508,530 | $114,920,972 | $79,164,658 | $47,836,771 | $18,900,000 |  |  |  |  |
+| All player contracts | $114,607,730 | $115,430,972 | $79,764,658 | $47,836,771 | $18,900,000 |  |  |  |  |
 
 **Additional three years**
 
@@ -513,14 +514,14 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [Aqib Talib](../player_contracts/contract_details.md#aqib-talib) | 2018 | Signed | $7,800,000 | $9,800,000 | $9,300,000 | $9,800,000 | $9,800,000 |  |  |  |  | $46,500,000 |
 | [Alterraun Verner](../player_contracts/contract_details.md#alterraun-verner) | 2017 | Signed | $6,000,000 | $7,000,000 | $8,000,000 | $8,000,000 |  |  |  |  |  | $29,000,000 |
+| [Alan Ball](../player_contracts/contract_details.md#alan-ball) | 2014 | Signed | $804,706 |  |  |  |  |  |  |  |  | $804,706 |
 | [Jordan Poyer](../player_contracts/contract_details.md#jordan-poyer) | 2016 | Signed | $711,794 | $825,794 | $990,294 |  |  |  |  |  |  | $2,527,882 |
 | [Mike Harris](../player_contracts/contract_details.md#mike-harris) | 2015 | Signed | $598,947 | $688,947 |  |  |  |  |  |  |  | $1,287,894 |
 | [A.J. Bouye](../player_contracts/contract_details.md#aj-bouye) | 2015 | Signed | $495,000 | $585,000 |  |  |  |  |  |  |  | $1,080,000 |
 | [Malcolm Butler](../player_contracts/contract_details.md#malcolm-butler) | 2017 | Signed | $432,250 | $522,250 | $612,250 | $702,250 |  |  |  |  |  | $2,269,000 |
-| [Alan Ball](../player_contracts/contract_details.md#alan-ball) | 2013 | Pending free agent |  |  |  |  |  |  |  |  |  |  |
 | [Brent Grimes](../player_contracts/contract_details.md#brent-grimes) | 2013 | Pending free agent |  |  |  |  |  |  |  |  |  |  |
 | [Kevin Rutland](../player_contracts/contract_details.md#kevin-rutland) | 2013 | Pending free agent |  |  |  |  |  |  |  |  |  |  |
-| CB total |  |  | $16,037,991 | $19,421,991 | $18,902,544 | $18,502,250 | $9,800,000 |  |  |  |  | $82,664,776 |
+| CB total |  |  | $16,842,697 | $19,421,991 | $18,902,544 | $18,502,250 | $9,800,000 |  |  |  |  | $83,469,482 |
 
 **Additional three years**
 
@@ -528,14 +529,14 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 |---|---|---|---|---|---|---|
 | [Aqib Talib](../player_contracts/contract_details.md#aqib-talib) | 2018 | Signed |  |  |  | $46,500,000 |
 | [Alterraun Verner](../player_contracts/contract_details.md#alterraun-verner) | 2017 | Signed |  |  |  | $29,000,000 |
+| [Alan Ball](../player_contracts/contract_details.md#alan-ball) | 2014 | Signed |  |  |  | $804,706 |
 | [Jordan Poyer](../player_contracts/contract_details.md#jordan-poyer) | 2016 | Signed |  |  |  | $2,527,882 |
 | [Mike Harris](../player_contracts/contract_details.md#mike-harris) | 2015 | Signed |  |  |  | $1,287,894 |
 | [A.J. Bouye](../player_contracts/contract_details.md#aj-bouye) | 2015 | Signed |  |  |  | $1,080,000 |
 | [Malcolm Butler](../player_contracts/contract_details.md#malcolm-butler) | 2017 | Signed |  |  |  | $2,269,000 |
-| [Alan Ball](../player_contracts/contract_details.md#alan-ball) | 2013 | Pending free agent |  |  |  |  |
 | [Brent Grimes](../player_contracts/contract_details.md#brent-grimes) | 2013 | Pending free agent |  |  |  |  |
 | [Kevin Rutland](../player_contracts/contract_details.md#kevin-rutland) | 2013 | Pending free agent |  |  |  |  |
-| CB total |  |  |  |  |  | $82,664,776 |
+| CB total |  |  |  |  |  | $83,469,482 |
 
 ### S
 
@@ -547,10 +548,10 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | [Chris Prosinski](../player_contracts/contract_details.md#chris-prosinski) | 2014 | Signed | $840,045 |  |  |  |  |  |  |  |  | $840,045 |
 | [Bacarri Rambo](../player_contracts/contract_details.md#bacarri-rambo) | 2016 | Signed | $527,205 | $617,205 | $707,205 |  |  |  |  |  |  | $1,851,615 |
 | [Brynden Trawick](../player_contracts/contract_details.md#brynden-trawick) | 2015 | Signed | $495,000 | $585,000 |  |  |  |  |  |  |  | $1,080,000 |
-| [Adrian Phillips](../player_contracts/contract_details.md#adrian-phillips) | 2014 | Signed | $107,100 |  |  |  |  |  |  |  |  | $107,100 |
+| [Adrian Phillips](../player_contracts/contract_details.md#adrian-phillips) | 2016 | Signed | $401,594 | $510,000 | $600,000 |  |  |  |  |  |  | $1,511,594 |
 | [Jemea Thomas](../player_contracts/contract_details.md#jemea-thomas) | 2014 | Signed | $107,100 |  |  |  |  |  |  |  |  | $107,100 |
 | [Antwon Blake](../player_contracts/contract_details.md#antwon-blake) |  | Waived |  |  |  |  |  |  |  |  |  |  |
-| S total |  |  | $5,951,450 | $5,277,205 | $707,205 |  |  |  |  |  |  | $11,935,860 |
+| S total |  |  | $6,245,944 | $5,787,205 | $1,307,205 |  |  |  |  |  |  | $13,340,354 |
 
 **Additional three years**
 
@@ -560,10 +561,10 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | [Chris Prosinski](../player_contracts/contract_details.md#chris-prosinski) | 2014 | Signed |  |  |  | $840,045 |
 | [Bacarri Rambo](../player_contracts/contract_details.md#bacarri-rambo) | 2016 | Signed |  |  |  | $1,851,615 |
 | [Brynden Trawick](../player_contracts/contract_details.md#brynden-trawick) | 2015 | Signed |  |  |  | $1,080,000 |
-| [Adrian Phillips](../player_contracts/contract_details.md#adrian-phillips) | 2014 | Signed |  |  |  | $107,100 |
+| [Adrian Phillips](../player_contracts/contract_details.md#adrian-phillips) | 2016 | Signed |  |  |  | $1,511,594 |
 | [Jemea Thomas](../player_contracts/contract_details.md#jemea-thomas) | 2014 | Signed |  |  |  | $107,100 |
 | [Antwon Blake](../player_contracts/contract_details.md#antwon-blake) |  | Waived |  |  |  |  |
-| S total |  |  |  |  |  | $11,935,860 |
+| S total |  |  |  |  |  | $13,340,354 |
 
 ### K
 
@@ -690,10 +691,10 @@ All nine selections were exercised May 8 to 10 and signed May 11, 2014; no 2014 
 
 | Last contract year | Players |
 |---|---|
-| 2013 | Brad Meester, Alan Ball, Brent Grimes, Allen Reisner, Kevin Rutland |
-| 2014 | Roy Miller, Daryl Smith, Mike Brewster, C.J. Mosley, Julian Stanford, Chris Prosinski, Tyler Bray, Richard Murphy, Jerome Long, Jonathan Grimes, Hakeem Nicks, Jemea Thomas, Adrian Phillips, Matt Feiler, Tyler Shatley, Jackson Jeffcoat |
+| 2013 | Brad Meester, Brent Grimes, Allen Reisner, Kevin Rutland |
+| 2014 | Roy Miller, Daryl Smith, Mike Brewster, C.J. Mosley, Julian Stanford, Chris Prosinski, Tyler Bray, Richard Murphy, Jerome Long, Alan Ball, Jonathan Grimes, Hakeem Nicks, Jemea Thomas, Matt Feiler, Tyler Shatley, Jackson Jeffcoat |
 | 2015 | Kirk Cousins, Brynden Trawick, A.J. Bouye, Adam Thielen, C.J. Anderson, Marcedes Lewis, Andre Branch, Jeremy Mincey, Mike Harris, Dwight Lowery, Josh Scobee, Bryan Anger, Montell Owens, Jerrell Jackson, Chad Henne, Maurice Jones-Drew |
-| 2016 | Lane Johnson, Travis Kelce, Jordan Poyer, Sio Moore, Bacarri Rambo, Paul Posluszny, Daniel Te'o-Nesheim, Andrew Norwell, Christian Jones, Allen Hurns, Cornelius Lucas, Cameron Brate, Todd Davis, Kasim Edebali, Marcel Jensen, Gator Hoskins, Taylor Gabriel, Casey Kreiter |
+| 2016 | Lane Johnson, Travis Kelce, Jordan Poyer, Sio Moore, Bacarri Rambo, Paul Posluszny, Daniel Te'o-Nesheim, Andrew Norwell, Christian Jones, Allen Hurns, Cornelius Lucas, Adrian Phillips, Cameron Brate, Todd Davis, Kasim Edebali, Marcel Jensen, Gator Hoskins, Taylor Gabriel, Casey Kreiter |
 | 2017 | Sen'Derrick Marks, Alterraun Verner, Andrew Hawkins, Aaron Donald, Joel Bitonio, Davante Adams, Trai Turner, Telvin Smith, Corey Linsley, Charles Leno Jr., Malcolm Butler |
 | 2018 | Eugene Monroe, Aqib Talib |
 
@@ -705,9 +706,9 @@ All nine selections were exercised May 8 to 10 and signed May 11, 2014; no 2014 
 
 | Item | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 |
 |---|---|---|---|---|---|---|---|---|---|
-| Signed contracts and futures | $135,969,488 | $89,958,215 | $63,669,415 | $37,715,000 | $16,000,000 |  |  |  |  |
+| Signed contracts and futures | $137,068,688 | $90,468,215 | $64,269,415 | $37,715,000 | $16,000,000 |  |  |  |  |
 | Unsigned tender, conditional on signing |  |  |  |  |  |  |  |  |  |
-| Total scheduled player cash | $135,969,488 | $89,958,215 | $63,669,415 | $37,715,000 | $16,000,000 |  |  |  |  |
+| Total scheduled player cash | $137,068,688 | $90,468,215 | $64,269,415 | $37,715,000 | $16,000,000 |  |  |  |  |
 
 **Additional three years**
 

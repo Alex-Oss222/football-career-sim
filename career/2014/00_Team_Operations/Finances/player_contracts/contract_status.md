@@ -16,22 +16,23 @@
 
 ## 2. Current status summary
 
-| Status at August 31, 2014 | Count |
+| Status at September 8, 2014 | Count |
 |---|---:|
 | Active 53 | 53 |
-| Reserve/injured (Brate, Jerrell Jackson; contracts continuing) | 2 |
-| Controlled players (the 53 and the two on reserve/injured) | 55 |
+| Reserve/injured (Brate, Jerrell Jackson from August 31; Mike Harris, ordinary, and Dwight Lowery, designated for return, from September 8; contracts continuing) | 4 |
+| Controlled players (the 53 and the four on reserve/injured) | 57 |
 | of which continuing from before 2014 | 26 |
 | of which reserve/future (effective March 11): Jackson | 1 |
 | of which signed or re-signed in March and April 2014 (Monroe, Marks, Verner, Talib, Nicks, Hawkins, Te'o-Nesheim, Jones-Drew, Henne) | 9 |
 | of which 2014 draft selections (four-year rookie contracts signed May 11) | 8 |
 | of which 2014 undrafted rookies (three-year minimum contracts signed May 10) | 11 |
-| Practice squad (weekly contracts signed August 31, 2014; under contract, listed separately from the 55) | 8 |
+| of which signed September 8, 2014 (Alan Ball, one year at the minimum rate; Adrian Phillips, re-signed on promotion from the practice squad for three years) | 2 |
+| Practice squad (weekly contracts signed August 31, 2014; seven after Phillips's September 8 promotion; under contract, listed separately from the 57) | 7 |
 | Tendered, unsigned | 0 (the four qualifying offers were withdrawn August 30, 2014) |
 | Control ended since the baseline (expired, not tendered, retired, traded, released or waived without re-signing, tender withdrawn) | 35 |
 | 2013 practice-squad players not offered a contract | 2 |
 
-The 55 controlled players and the eight practice-squad players match the [roster](../../Team/Roster/roster.md) and the [contract table](contracts.md).
+The 57 controlled players and the seven practice-squad players match the [roster](../../Team/Roster/roster.md) and the [contract table](contracts.md). The September 8 transactions are in [their record](../../Team/Roster/transactions_2014-09-08.md).
 
 ### Changes since the March 11 baseline
 
@@ -43,7 +44,7 @@ The 55 controlled players and the eight practice-squad players match the [roster
 | Maurice Jones-Drew | UFA | Re-signed March 28: two years, $7.0M, $3.25M guaranteed |
 | C.J. Wilson | UFA | Re-signed March 28: one year, $795,000 |
 | Chad Henne | UFA | Re-signed April 4: two years, $4.0M, $2.0M guaranteed |
-| Alan Ball | UFA | Not re-signed May 12; unplaced free agent, first veteran corner to call if the room is hit. No June 1 tender filed (June 2); no rights retained |
+| Alan Ball | UFA | Not re-signed May 12; unplaced free agent, first veteran corner to call if the room is hit. No June 1 tender filed (June 2); no rights retained. Re-signed September 8, 2014 after Harris's injury: one year at the $855,000 rate, $804,706 for sixteen pay weeks, no bonus, no guarantee ([signing record](../../Free_Agency/alan_ball_signing_2014-09-08.md)) |
 | Brent Grimes | UFA | Unsigned; not pursued under Stone's March 31 plan. No June 1 tender filed (June 2); no rights retained |
 | Cameron Bradfield | RFA | Lowest tender, $1,431,000; unsigned. On June 16, the adjusted June 15 tender date, Caldwell left the qualifying offer in place and substituted no June 15 tender (the rule rests on one unverified library source; his 2013 salary is unresolved, so no 110 percent figure could be computed). Qualifying offer withdrawn August 30, 2014 and his rights renounced; free agent, unplaced under the rails |
 | Allen Reisner, Kevin Rutland | RFA | Not tendered; unrestricted free agents from March 11. No June 1 tender filed (June 2); no rights retained |
@@ -73,7 +74,7 @@ The 55 controlled players and the eight practice-squad players match the [roster
 | Sen'Derrick Marks | DT | Branch signing, one year ($1.50M); final year 2013 | UFA at the league year; re-signed March 11, 2014 (four years through 2017) | 4+ (entered 2009; his 2009 Tennessee four-year rookie contract expired after 2012 and he signed with Jacksonville from outside as a free agent) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`; [OverTheCap](https://overthecap.com/player/senderrick-marks/2083/) for the 2009 rookie term. Confirmed |
 | Roy Miller | DT | Branch signing, two years ($5.00M); final year 2014. 2014 base not guaranteed | Under contract | Not status-determining (entered 2009) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`. Confirmed |
 | Daryl Smith | LB | Branch re-signing, two years ($6.00M); final year 2014. 2014 base not guaranteed | Under contract | Not status-determining (entered 2004) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`. Confirmed |
-| Alan Ball | CB | Branch signing, one year ($1.00M); final year 2013 | UFA; unsigned | 4+ (entered 2007; signed from outside as a free agent in March 2013) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`. Confirmed |
+| Alan Ball | CB | Branch signing, one year ($1.00M); final year 2013 | Re-signed September 8, 2014 (one year, $855,000 rate; [record](../../Free_Agency/alan_ball_signing_2014-09-08.md)) | 4+ (entered 2007; signed from outside as a free agent in March 2013) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`. Confirmed |
 | Brent Grimes | CB | Branch signing, one year ($5.50M, fully guaranteed); final year 2013 | UFA; unsigned, not pursued | 4+ (entered 2006; played 2012 under an Atlanta franchise-tag contract and signed from outside as a free agent in March 2013) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`; [OverTheCap](https://overthecap.com/player/brent-grimes/205/) for the 2012 one-year tag contract. Confirmed |
 | C.J. Wilson | DE | Inherited 2010 Green Bay seventh-round four-year rookie contract, acquired by branch trade; final year 2013. Branch record: $630,000 2013 base; Green Bay keeps its bonus proration | UFA at the league year; re-signed March 28, 2014 (one year) | 3 (2010-2012 with Green Bay) | Accrues in branch (on 53 for 16 games; injured Week 2, never moved to a reserve list) | Trade: `trades/trades.md`; May 5 worksheet (Git `d25c8cf`). Term: [OverTheCap](https://overthecap.com/player/c-j-wilson/1095/) (2010, four years); [ECU, April 24, 2010](https://ecupirates.com/news/2010/4/24/Wilson_Drafted_In_Seventh_Round_By_Packers.aspx) (seventh round). Accrual through 2012: Supported. Final year: Corrected (section 5) |
 | Lane Johnson | OT | Branch #2 rookie contract signed May 2, 2013; four years, final year 2016, plus the CBA first-round fifth-year club option | Under contract | 0 | Accrues in branch (on 53 for 16 games) | `draft/draftees.md`. Confirmed |

@@ -2,7 +2,7 @@
 
 [Finances](../README.md) · [Full cap table](../salary_cap/cap_tracker.md)
 
-As of August 31, 2014. Generated from the same financial inputs as the full cap table.
+As of September 8, 2014. Generated from the same financial inputs as the full cap table.
 
 ## Team cap summary, twelve years
 
@@ -10,14 +10,14 @@ As of August 31, 2014. Generated from the same financial inputs as the full cap 
 
 | Item | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 |
 |---|---|---|---|---|---|---|---|---|---|
-| Signed contracts and futures | $113,508,530 | $114,920,972 | $79,164,658 | $47,836,771 | $18,900,000 |  |  |  |  |
+| Signed contracts and futures | $114,607,730 | $115,430,972 | $79,764,658 | $47,836,771 | $18,900,000 |  |  |  |  |
 | Unsigned tenders |  |  |  |  |  |  |  |  |  |
-| Player contracts including tender | $113,508,530 | $114,920,972 | $79,164,658 | $47,836,771 | $18,900,000 |  |  |  |  |
+| Player contracts including tender | $114,607,730 | $115,430,972 | $79,764,658 | $47,836,771 | $18,900,000 |  |  |  |  |
 | Separate carry-forward dead money | $10,586,956 | $220,193 | $0 | $0 | $0 |  |  |  |  |
-| Recorded cap obligations | $124,095,486 | $115,141,165 | $79,164,658 | $47,836,771 | $18,900,000 |  |  |  |  |
-| Scheduled player cash including tender | $135,969,488 | $89,958,215 | $63,669,415 | $37,715,000 | $16,000,000 |  |  |  |  |
+| Recorded cap obligations | $125,194,686 | $115,651,165 | $79,764,658 | $47,836,771 | $18,900,000 |  |  |  |  |
+| Scheduled player cash including tender | $137,068,688 | $90,468,215 | $64,269,415 | $37,715,000 | $16,000,000 |  |  |  |  |
 | Salary guaranteed in that year | $30,898,002 | $35,358,903 | $3,896,127 | $690,000 | $0 |  |  |  |  |
-| Players with scheduled charges | 63 | 47 | 31 | 13 | 2 |  |  |  |  |
+| Players with scheduled charges | 64 | 48 | 32 | 13 | 2 |  |  |  |  |
 
 **Additional three years**
 
@@ -51,15 +51,15 @@ These are the working obligations for the recorded deals, before club adjustment
 | EDGE | $11,415,264 | $12,054,525 | $8,100,000 |  |  |  |  |  |  |
 | IDL | $13,589,559 | $8,739,125 | $10,079,125 | $10,169,125 |  |  |  |  |  |
 | LB | $15,551,061 | $11,839,393 | $10,199,393 | $790,136 |  |  |  |  |  |
-| CB | $16,037,991 | $19,421,991 | $18,902,544 | $18,502,250 | $9,800,000 |  |  |  |  |
-| S | $5,951,450 | $5,277,205 | $707,205 |  |  |  |  |  |  |
+| CB | $16,842,697 | $19,421,991 | $18,902,544 | $18,502,250 | $9,800,000 |  |  |  |  |
+| S | $6,245,944 | $5,787,205 | $1,307,205 |  |  |  |  |  |  |
 | K | $4,187,500 | $4,387,500 |  |  |  |  |  |  |  |
 | P | $770,523 | $875,480 |  |  |  |  |  |  |  |
 | LS | $420,000 | $510,000 | $600,000 |  |  |  |  |  |  |
 | Offense | $45,585,182 | $51,815,753 | $30,576,391 | $18,375,260 | $9,100,000 |  |  |  |  |
-| Defense | $62,545,325 | $57,332,239 | $47,988,267 | $29,461,511 | $9,800,000 |  |  |  |  |
+| Defense | $63,644,525 | $57,842,239 | $48,588,267 | $29,461,511 | $9,800,000 |  |  |  |  |
 | Special teams | $5,378,023 | $5,772,980 | $600,000 |  |  |  |  |  |  |
-| All player contracts | $113,508,530 | $114,920,972 | $79,164,658 | $47,836,771 | $18,900,000 |  |  |  |  |
+| All player contracts | $114,607,730 | $115,430,972 | $79,764,658 | $47,836,771 | $18,900,000 |  |  |  |  |
 
 **Additional three years**
 
@@ -94,9 +94,9 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 
 | Item | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 |
 |---|---|---|---|---|---|---|---|---|---|
-| Signed contracts and futures | $135,969,488 | $89,958,215 | $63,669,415 | $37,715,000 | $16,000,000 |  |  |  |  |
+| Signed contracts and futures | $137,068,688 | $90,468,215 | $64,269,415 | $37,715,000 | $16,000,000 |  |  |  |  |
 | Unsigned tender, conditional on signing |  |  |  |  |  |  |  |  |  |
-| Total scheduled player cash | $135,969,488 | $89,958,215 | $63,669,415 | $37,715,000 | $16,000,000 |  |  |  |  |
+| Total scheduled player cash | $137,068,688 | $90,468,215 | $64,269,415 | $37,715,000 | $16,000,000 |  |  |  |  |
 
 **Additional three years**
 

@@ -16,7 +16,7 @@
 
 ## Depth chart
 
-From [00_Team_Operations/Team/Depth_Chart/game_depth_chart.json](../../../../00_Team_Operations/Team/Depth_Chart/game_depth_chart.json), August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); game_day_inactives set for Week 1 on August 31, 2014 with the captains. Order is first listed first; Stone owns it.
+From [00_Team_Operations/Team/Depth_Chart/game_depth_chart.json](../../../../00_Team_Operations/Team/Depth_Chart/game_depth_chart.json), August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); the defensive-back order and game_day_inactives set for Week 2 on September 13, 2014. Order is first listed first; Stone owns it.
 
 | Group | Order |
 |---|---|
@@ -28,7 +28,7 @@ From [00_Team_Operations/Team/Depth_Chart/game_depth_chart.json](../../../../00_
 | OL | Eugene Monroe / Joel Bitonio / Mike Brewster / Trai Turner / Lane Johnson / Cornelius Lucas / Charles Leno Jr. / Andrew Norwell / Corey Linsley |
 | DL | Jeremy Mincey / Sen'Derrick Marks / Roy Miller / Andre Branch / C.J. Mosley / Daniel Te'o-Nesheim / Aaron Donald / Kasim Edebali |
 | LB | Daryl Smith / Paul Posluszny / Julian Stanford / Sio Moore / Telvin Smith / Christian Jones / Todd Davis |
-| DB | Aqib Talib / Mike Harris / Dwight Lowery / Bacarri Rambo / Jordan Poyer / Alterraun Verner / A.J. Bouye / Brynden Trawick / Chris Prosinski / Malcolm Butler |
+| DB | Aqib Talib / Alterraun Verner / Bacarri Rambo / Brynden Trawick / Jordan Poyer / A.J. Bouye / Malcolm Butler / Chris Prosinski / Adrian Phillips / Alan Ball |
 | K | Josh Scobee |
 | P | Bryan Anger |
 | LS | Casey Kreiter |
