@@ -15,6 +15,8 @@ import json
 import random
 
 from . import call_families
+from . import call_situations
+from . import chains as chain_walk
 from . import usage
 from .calibration import load as load_calibration
 from .player_evidence import choose
@@ -24,6 +26,9 @@ OFFENSIVE_LINE = {"OT", "OG", "C", "T", "G", "OL"}
 # snapper (credit only; the possession stream is untouched).
 SNAP_DETAIL_TAG = "public-snap-detail-v5"
 KICKOFF_DETAIL_TAG = "public-kickoff-detail-v3"
+# Kernel 2014.5: the label stream reads the sheet's situational menus and
+# opening sequence (runtime.call_situations); the tag is unchanged because
+# the stream still never touches the possession draw.
 LABEL_TAG = "public-call-label-v1"
 KNEEL_LABEL = "Victory (kneel)"
 SPIKE_LABEL = "Clock (spike)"
@@ -157,6 +162,9 @@ def _normalize_call(raw, default_type):
             "tags": (),
             "carrier": carrier,
             "target": target,
+            "menus": (),
+            "opener": None,
+            "opener_returns": (),
         }
     if isinstance(raw, dict):
         name = str(raw.get("name") or raw.get("concept") or raw.get("family") or default_type.title())
@@ -174,8 +182,19 @@ def _normalize_call(raw, default_type):
             "tags": tuple(raw.get("tags") or ()),
             "carrier": carrier,
             "target": target,
+            # Kernel 2014.5 (label stream only; excluded from the outcome packet).
+            "menus": call_situations.menu_keys(raw.get("menus")),
+            "opener": _opener(raw.get("opener")),
+            "opener_returns": tuple(r for r in (_opener(x) for x in (raw.get("opener_returns") or ())) if r),
         }
     return _normalize_call(default_type.title(), default_type)
+
+
+def _opener(value):
+    try:
+        return int(value) if value is not None else None
+    except (TypeError, ValueError):
+        return None
 
 
 def canonical_call_sheet(team):
@@ -228,7 +247,8 @@ def _candidates(team, play_type, fits):
 
 def _engine_label(name, kind):
     return {"name": name, "family": name, "type": kind, "personnel": None, "formation": None,
-            "motion": None, "protection": None, "tags": (), "carrier": None, "target": None}
+            "motion": None, "protection": None, "tags": (), "carrier": None, "target": None,
+            "menus": (), "opener": None, "opener_returns": ()}
 
 
 def _groups(value):
@@ -278,38 +298,74 @@ def _group_rank(players, player):
     return None
 
 
-def _choose_label(lrng, team, record, runner_group, target_group, runner_rank=None, target_rank=None):
-    """(call, label_source, label_groups, scramble) for one resolved snap."""
+def _menu_select(lrng, team, play_type, fits, situation, script):
+    """(call, label_source, script_position) for a snap on the sheet.
+
+    Kernel 2014.5, label stream only. In order: the opening sequence on a
+    normal down (the lowest unsent opener position whose call can describe
+    the snap, ``sheet:opening-sequence``); the snap's applicable menus from
+    the most specific to ``normal down`` (``sheet:<menu>``, uniform within
+    the menu); the uniform rule over the sheet's unrestricted calls
+    (``sheet:fallback``; a call declaring menus without ``normal down`` can
+    never fall through); then None for a generic label. A sheet declaring no
+    menus at all takes the uniform rule under its 2014.4 name ``sheet``.
+    """
+    pool_all = _candidates(team, play_type, fits)
+    if not pool_all:
+        return None, None, None
+    menus = situation["menus"] if situation else [call_situations.NORMAL]
+    if script is not None and menus[0] == call_situations.NORMAL:
+        keys = {_canonical(call): call for call in pool_all}
+        slot, call = call_situations.next_script_call(
+            script["positions"], script["sent"], lambda c: _canonical(c) in keys)
+        if call is not None:
+            return keys[_canonical(call)], "sheet:" + call_situations.OPENING, slot
+    declared = any(call["menus"] for call in _call_sheet(team, play_type)) or (
+        script is not None and script["positions"])
+    if not declared:
+        return pool_all[lrng.randrange(len(pool_all))], "sheet", None
+    for menu in menus:
+        pool = [call for call in pool_all if menu in call["menus"]]
+        if pool:
+            return pool[lrng.randrange(len(pool))], "sheet:" + menu, None
+    pool = [call for call in pool_all if not call_situations.restricted(call)]
+    if pool:
+        return pool[lrng.randrange(len(pool))], "sheet:fallback", None
+    return None, None, None
+
+
+def _choose_label(lrng, team, record, runner_group, target_group, runner_rank=None, target_rank=None,
+                  situation=None, script=None):
+    """(call, label_source, label_groups, scramble, script_position) for one resolved snap."""
     if record.get("kneel"):
-        return _engine_label(KNEEL_LABEL, "run"), "kneel", None, False
+        return _engine_label(KNEEL_LABEL, "run"), "kneel", None, False, None
     if record.get("spike"):
-        return _engine_label(SPIKE_LABEL, "pass"), "spike", None, False
+        return _engine_label(SPIKE_LABEL, "pass"), "spike", None, False, None
     if record["play_type"] == "run":
         if runner_group == "QB":
             scramble = lrng.random() < _scramble_rate()
             if scramble:
-                pool = _candidates(team, "pass", lambda call: True)
-                if not pool:
-                    return _engine_label(SCRAMBLE_LABEL, "pass"), "generic", None, True
-                call = pool[lrng.randrange(len(pool))]
-                return call, "sheet", _groups(call["target"]), True
-        pool = _candidates(team, "run", lambda call: isinstance(call["carrier"], tuple)
-                           and runner_group in call["carrier"]
-                           and _personnel_fits(call, runner_group, runner_rank))
-        if not pool:
-            return _engine_label(GENERIC_RUN, "run"), "generic", None, False
-        call = pool[lrng.randrange(len(pool))]
-        return call, "sheet", _groups(call["carrier"]), False
+                call, source, slot = _menu_select(lrng, team, "pass", lambda call: True, situation, script)
+                if call is None:
+                    return _engine_label(SCRAMBLE_LABEL, "pass"), "generic", None, True, None
+                return call, source, _groups(call["target"]), True, slot
+        call, source, slot = _menu_select(
+            lrng, team, "run", lambda call: isinstance(call["carrier"], tuple)
+            and runner_group in call["carrier"]
+            and _personnel_fits(call, runner_group, runner_rank), situation, script)
+        if call is None:
+            return _engine_label(GENERIC_RUN, "run"), "generic", None, False, None
+        return call, source, _groups(call["carrier"]), False, slot
     if record.get("sack"):
-        pool = _candidates(team, "pass", lambda call: True)
+        fits = lambda call: True
     else:
-        pool = _candidates(team, "pass", lambda call: (call["target"] == call_families.ANY or (
-            isinstance(call["target"], tuple) and target_group in call["target"]))
-            and _personnel_fits(call, target_group, target_rank))
-    if not pool:
-        return _engine_label(GENERIC_PASS, "pass"), "generic", None, False
-    call = pool[lrng.randrange(len(pool))]
-    return call, "sheet", _groups(call["target"]), False
+        fits = lambda call: (call["target"] == call_families.ANY or (
+            isinstance(call["target"], tuple) and target_group in call["target"]))\
+            and _personnel_fits(call, target_group, target_rank)
+    call, source, slot = _menu_select(lrng, team, "pass", fits, situation, script)
+    if call is None:
+        return _engine_label(GENERIC_PASS, "pass"), "generic", None, False, None
+    return call, source, _groups(call["target"]), False, slot
 
 
 def _scramble_rate():
@@ -662,6 +718,9 @@ def apply_drive_detail(
     diagnostics=None,
     own_seconds=None,
     layout=None,
+    score_diff=0,
+    start_kind=None,
+    game_ledger=(),
 ):
     """Allocate one resolved drive into reconciled player/snap public detail.
 
@@ -680,6 +739,12 @@ def apply_drive_detail(
     yards and order because the chain walk over them feeds team counters.
     This stream then only names the players. Without a layout (direct
     callers and tests) the legacy layout below runs on this stream.
+
+    Kernel 2014.5: `score_diff` (offense minus defense at the drive's start),
+    `start_kind` and `game_ledger` (the game's rows so far) feed only the
+    label stream: each snap's call label is chosen from the sheet's menu for
+    its down, distance, zone and clock, or from the opening sequence in
+    script order (runtime.call_situations). None of them reaches a draw.
     """
     rng = _rng(seed, event_id=event_id, drive_no=drive_no, offense=team.team_id)
     shares = usage.load()["values"]
@@ -738,6 +803,7 @@ def apply_drive_detail(
     own_end = int(start_clock) - own
     ledger = []
     groups_for = {}
+    remaining_at = []
 
     def clock_at(remaining):
         return _period_clock(remaining, closing=remaining <= int(end_clock), overtime=overtime)
@@ -759,6 +825,7 @@ def apply_drive_detail(
     for index in range(plays):
         snap_no = index + 1
         remaining = int(start_clock) - round(own * snap_no / plays)
+        remaining_at.append(remaining)
         period, game_clock = clock_at(remaining)
         kind = kinds[index]
         is_terminal = terminal is not None and index == last
@@ -997,16 +1064,44 @@ def apply_drive_detail(
     # Descriptive call labels on their own stream, after every player is named.
     lrng = _label_rng(seed, event_id=event_id, drive_no=drive_no, offense=team.team_id)
     call_stats = {}
+    # Kernel 2014.5: the situation of each snap (its walked down and distance,
+    # zone, half clock and score) and the offense's opening sequence so far.
+    walk = layout.get("walk") if isinstance(layout, dict) else None
+    if walk is None:
+        walk = chain_walk.walk(spot, values, category in chain_walk.TURNOVER_TERMINALS)
+    states = walk["rows"]
+    sheet = [_normalize_call(item, "any") for item in (getattr(team, "offensive_call_sheet", ()) or ())]
+    positions = call_situations.script_positions(sheet)
+    snaps_before, sent = call_situations.script_state(game_ledger, team.team_id)
+    script_snaps = snaps_before
     for index, record in enumerate(ledger[:plays]):
         runner_group, target_group, runner_rank, target_rank = groups_for.get(index, (None, None, None, None))
-        call, source, label_groups, scramble = _choose_label(lrng, team, record, runner_group, target_group,
-                                                             runner_rank, target_rank)
+        state = states[index] if index < len(states) else None
+        half, left = call_situations.half_clock(start_clock, remaining_at[index], overtime)
+        menus = call_situations.classify(
+            down=state["down"] if state else 1,
+            ydstogo=state["ydstogo"] if state else None,
+            yardline=state["los"] if state else record["yardline"],
+            goal_to_go=state["goal_to_go"] if state else False,
+            half=half, half_remaining=left, score_diff=int(score_diff or 0),
+            start_kind=start_kind, snap_index=index)
+        situation = {"menus": menus}
+        script = None
+        scrimmage = not (record.get("kneel") or record.get("spike"))
+        if positions and scrimmage and script_snaps < len(positions):
+            script = {"positions": positions, "sent": sent}
+        call, source, label_groups, scramble, slot = _choose_label(
+            lrng, team, record, runner_group, target_group, runner_rank, target_rank, situation, script)
+        if scrimmage:
+            script_snaps += 1
+        if slot is not None:
+            sent.add(slot)
         record.update({
             "concept": call["name"], "family": call["family"], "personnel": call["personnel"],
             "formation": call["formation"], "motion": call["motion"], "protection": call["protection"],
             "tags": list(call["tags"]), "scramble": scramble, "carrier_group": runner_group,
             "target_group": target_group, "label_groups": label_groups, "label_source": source,
-            "label_type": call["type"],
+            "label_type": call["type"], "situation": menus[0], "script_position": slot,
         })
         counter = _call_counter(call_stats, call)
         counter["snaps"] += 1
@@ -1546,13 +1641,13 @@ def _check_spot_ledger(result, possessions, rows_by_drive, kicks, err):
                 err("kneel_spike_mislabelled", where)
                 continue
             if r.get("scramble"):
-                if label_type == "run" or source not in ("sheet", "generic"):
+                if label_type == "run" or not (source == "generic" or str(source).startswith("sheet")):
                     err("scramble_with_designed_label", where)
                 continue
             if label_type not in (r["play_type"], "any", "mixed"):
                 err("label_type_mismatch", where)
                 continue
-            if source != "sheet":
+            if not str(source).startswith("sheet"):
                 continue
             if r["play_type"] == "run":
                 if not isinstance(groups, list) or r.get("carrier_group") not in groups:
