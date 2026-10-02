@@ -137,13 +137,19 @@ Stanford carried the relay with the senior communicators removed. He held a back
 
 Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
 
+### September 14, 2014 | Week 2, Jacksonville at Washington
+
+Thirty-three defensive snaps as the third linebacker with two sacks of Griffin, for 4 on third-and-6 in the second quarter and for 10 on second-and-3 in the third, both over Trent Williams's slot and both ending a possession in a punt from inside the Washington 20; seven tackles, including the shared third-and-1 stop of Helu in the fourth quarter, a pass defended on the first throw of Washington's two-minute drive and two pressures. The play-by-play records the slot and not the rush path, so the lane and the fit behind each sack are Crennel's film items. A minor upper-extremity injury was logged at the end of Washington's opening drive at 5:47 of the first quarter; he was not removed and every statistic above came after it: out, projected return September 19, reassessment September 15 ([medical record](../../Medical/incidents/julian_stanford_2014-09-14.md)). No role change follows.
+
+Source: [Week 2 game record](../../../05_Regular_Season/Games/Week_02/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 1 | 1 | 7 | 6 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 40 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
+| 2014 | Jacksonville | Through Week 2 | 2 | 14 | 11 | 3 | 0 | 2 | 3 | 1 | 0 | 0 | 0 | 73 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 

@@ -2,7 +2,7 @@
 
 [2014 season](../README.md) · [Calendar](../Calendar.md)
 
-Jacksonville is 1-0 after Week 1 ([Jacksonville 23, Philadelphia 20, overtime](Games/Week_01/output.md), September 7); next, Week 2 at Washington, September 14. Week 11 is the bye.
+Jacksonville is 2-0 after Week 2 ([Jacksonville 23, Philadelphia 20, overtime](Games/Week_01/output.md), September 7; [Jacksonville 24, Washington 7](Games/Week_02/output.md), September 14); next, Week 3 against Indianapolis, September 21. Week 11 is the bye.
 
 | Open | What you will find |
 |---|---|

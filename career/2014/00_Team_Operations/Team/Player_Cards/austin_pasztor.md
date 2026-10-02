@@ -125,7 +125,7 @@ Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) an
 
 | Season | Team(s) | Coverage | G | SCK ALLOWED | STARTS | OFF SNAPS | PEN | PEN YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 1 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded |
+| 2014 | Jacksonville | Through Week 2 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded |
 
 ## Playoff statistics by year
 

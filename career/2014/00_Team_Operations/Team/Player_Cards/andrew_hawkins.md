@@ -141,7 +141,7 @@ Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Traini
 
 | Season | Team(s) | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 1 | 1 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — | 2 | 52 | 26.0 | 4 | 62 | 15.5 | 0 |
+| 2014 | Jacksonville | Through Week 2 | 2 | 3 | 3 | 49 | 16.3 | 0 | 20 | 0 | 0 | 0 | 0 | 0 | 100.0 | 3 | 65 | 21.7 | 8 | 82 | 10.2 | 0 |
 
 ## Playoff statistics by year
 

@@ -11,7 +11,7 @@
 | Team | Jacksonville Jaguars |
 | Season | 2014 |
 | Head coach | Alex Stone |
-| Regular-season record | 1-0 |
+| Regular-season record | 2-0 |
 | Postseason | None |
 
 ## Depth chart
@@ -38,73 +38,76 @@ From [00_Team_Operations/Team/Depth_Chart/game_depth_chart.json](../../../../00_
 | Game | Opponent | Result | Page |
 |---|---|---|---|
 | Week 1 | at Philadelphia Eagles | W 23-20 | [week_01.md](games/week_01.md) |
+| Week 2 | at Washington Redskins | W 24-7 | [week_02.md](games/week_02.md) |
 
 ## Regular-season totals
 
-Through Week 1, 1-0. Rate stats are recalculated from the totals.
+Through Week 2, 2-0. Rate stats are recalculated from the totals.
 
 #### Quarterbacks
 
 | Player | G | Cmp | Att | Cmp% | Yds | Y/A | TD | Int | Sck | Rate | Rush Att | Rush Yds | Rush TD | Fum |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Kirk Cousins | 1 | 24 | 37 | 64.9 | 225 | 6.1 | 2 | 0 | 4 | 99.5 | 2 | 3 | 0 | 0 |
+| Kirk Cousins | 2 | 42 | 69 | 60.9 | 424 | 6.1 | 3 | 3 | 5 | 74.8 | 5 | 7 | 0 | 0 |
 
 #### Running backs and other rushers
 
 | Player | Pos | G | Att | Yds | Y/A | TD | Lng | Tgt | Rec | Rec Yds | Rec TD | Fum |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Maurice Jones-Drew | RB | 1 | 22 | 93 | 4.2 | 0 | 10 | 6 | 3 | 1 | 0 | 0 |
-| C.J. Anderson | RB | 1 | 8 | 28 | 3.5 | 0 | 12 | 2 | 1 | 26 | 0 | 0 |
-| Montell Owens | FB | 1 | 2 | 1 | 0.5 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
-| Jonathan Grimes | RB | 1 | 1 | 5 | 5.0 | 0 | 5 | 0 | 0 | 0 | 0 | 0 |
+| Maurice Jones-Drew | RB | 2 | 46 | 205 | 4.5 | 1 | 12 | 11 | 5 | 22 | 0 | 0 |
+| C.J. Anderson | RB | 2 | 15 | 78 | 5.2 | 1 | 24 | 3 | 2 | 45 | 0 | 0 |
+| Jonathan Grimes | RB | 2 | 3 | 9 | 3.0 | 0 | 5 | 0 | 0 | 0 | 0 | 0 |
+| Montell Owens | FB | 2 | 2 | 1 | 0.5 | 0 | 1 | 2 | 1 | 10 | 0 | 0 |
+| Adam Thielen | WR | 2 | 1 | 1 | 1.0 | 0 | 1 | 12 | 7 | 43 | 0 | 1 |
 
 #### Wide receivers and tight ends
 
 | Player | Pos | G | Tgt | Rec | Yds | Y/R | TD | Lng | Fum |
 |---|---|---|---|---|---|---|---|---|---|
-| Davante Adams | WR | 1 | 12 | 8 | 57 | 7.1 | 0 | 19 | 0 |
-| Adam Thielen | WR | 1 | 7 | 4 | 35 | 8.8 | 0 | 22 | 1 |
-| Marcedes Lewis | TE | 1 | 5 | 4 | 26 | 6.5 | 1 | 14 | 0 |
-| Allen Hurns | WR | 1 | 2 | 2 | 46 | 23.0 | 0 | 32 | 0 |
-| Travis Kelce | TE | 1 | 2 | 2 | 34 | 17.0 | 1 | 23 | 0 |
+| Davante Adams | WR | 2 | 25 | 14 | 148 | 10.6 | 0 | 51 | 0 |
+| Marcedes Lewis | TE | 2 | 7 | 6 | 27 | 4.5 | 2 | 14 | 0 |
+| Andrew Hawkins | WR | 2 | 3 | 3 | 49 | 16.3 | 0 | 20 | 0 |
+| Travis Kelce | TE | 2 | 3 | 2 | 34 | 17.0 | 1 | 23 | 0 |
+| Allen Hurns | WR | 2 | 2 | 2 | 46 | 23.0 | 0 | 32 | 0 |
 
 #### Defense
 
 | Player | Pos | G | Tkl | Solo | TFL | Sck | Press | Int | PD | FF | FR |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Daryl Smith | LB | 1 | 12 | 7 | 1 | 1 | 1 | 0 | 1 | 0 | 0 |
-| Aqib Talib | CB | 1 | 10 | 6 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| Aqib Talib | CB | 2 | 20 | 14 | 0 | 0 | 0 | 0 | 2 | 0 | 0 |
+| Daryl Smith | LB | 2 | 20 | 11 | 1 | 1 | 1 | 0 | 1 | 0 | 0 |
+| Jeremy Mincey | DE | 2 | 16 | 11 | 0 | 1 | 3 | 0 | 0 | 1 | 1 |
+| Paul Posluszny | LB | 2 | 15 | 9 | 0 | 1 | 1 | 1 | 1 | 0 | 0 |
+| Julian Stanford | LB | 2 | 14 | 11 | 0 | 2 | 3 | 0 | 1 | 0 | 0 |
+| Bacarri Rambo | S | 2 | 11 | 6 | 1 | 0 | 0 | 0 | 2 | 0 | 0 |
 | Dwight Lowery | S | 1 | 7 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Jeremy Mincey | DE | 1 | 7 | 6 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Julian Stanford | LB | 1 | 7 | 6 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Sen'Derrick Marks | DT | 2 | 7 | 3 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 | Mike Harris | CB | 1 | 6 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Paul Posluszny | LB | 1 | 6 | 2 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Bacarri Rambo | S | 1 | 5 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Sen'Derrick Marks | DT | 1 | 5 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Andre Branch | DE | 1 | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Sio Moore | LB | 1 | 3 | 2 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
-| C.J. Mosley | DT | 1 | 2 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Roy Miller | DT | 1 | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Alterraun Verner | CB | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Jordan Poyer | CB | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| Andre Branch | DE | 2 | 5 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Sio Moore | LB | 2 | 5 | 2 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Roy Miller | DT | 2 | 4 | 3 | 1 | 1 | 1 | 0 | 0 | 1 | 1 |
+| Alterraun Verner | CB | 2 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Brynden Trawick | S | 2 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| C.J. Mosley | DT | 2 | 2 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jordan Poyer | CB | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 2 | 0 | 0 |
 
 #### Kicking
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | Pts |
 |---|---|---|---|---|---|---|---|
-| Josh Scobee | 1 | 3 | 3 | 100.0 | 2 | 2 | 11 |
+| Josh Scobee | 2 | 4 | 4 | 100.0 | 5 | 5 | 17 |
 
 #### Punting
 
 | Player | G | Punts | Yds | Avg | In20 | TB | Lng |
 |---|---|---|---|---|---|---|---|
-| Bryan Anger | 1 | 8 | 398 | 49.8 | 2 | 1 | 62 |
+| Bryan Anger | 2 | 14 | 651 | 46.5 | 6 | 1 | 62 |
 
 #### Returns
 
 | Player | G | KR | KR Yds | KR Avg | PR | PR Yds | PR Avg |
 |---|---|---|---|---|---|---|---|
-| Andrew Hawkins | 1 | 2 | 52 | 26.0 | 4 | 62 | 15.5 |
+| Andrew Hawkins | 2 | 3 | 65 | 21.7 | 8 | 82 | 10.2 |
 
 #### Advanced
 
@@ -112,25 +115,27 @@ Through Week 1, 1-0. Rate stats are recalculated from the totals.
 
 | Player | NY/A | ANY/A | Sack% | TD% | Int% |
 |---|---|---|---|---|---|
-| Kirk Cousins | 4.8 | 5.76 | 9.8 | 5.4 | 0.0 |
+| Kirk Cousins | 5.2 | 4.19 | 6.8 | 4.3 | 4.3 |
 
 **Receiving.**
 
 | Player | Pos | Tgt | Catch% | Y/Tgt |
 |---|---|---|---|---|
-| Davante Adams | WR | 12 | 66.7 | 4.8 |
-| Adam Thielen | WR | 7 | 57.1 | 5.0 |
-| Maurice Jones-Drew | RB | 6 | 50.0 | 0.2 |
-| Marcedes Lewis | TE | 5 | 80.0 | 5.2 |
+| Davante Adams | WR | 25 | 56.0 | 5.9 |
+| Adam Thielen | WR | 12 | 58.3 | 3.6 |
+| Maurice Jones-Drew | RB | 11 | 45.5 | 2.0 |
+| Marcedes Lewis | TE | 7 | 85.7 | 3.9 |
+| Andrew Hawkins | WR | 3 | 100.0 | 16.3 |
+| C.J. Anderson | RB | 3 | 66.7 | 15.0 |
+| Travis Kelce | TE | 3 | 66.7 | 11.3 |
 | Allen Hurns | WR | 2 | 100.0 | 23.0 |
-| C.J. Anderson | RB | 2 | 50.0 | 13.0 |
-| Travis Kelce | TE | 2 | 100.0 | 17.0 |
+| Montell Owens | FB | 2 | 50.0 | 5.0 |
 
 **Team.**
 
 | Points | First downs | 3rd down | 3rd % | Turnovers | Sacks allowed | Penalties | Time of possession |
 |---|---|---|---|---|---|---|---|
-| 23 | 22 | 6/17 | 35.3 | 1 | 4 | 7-48 | 34:25 |
+| 47 | 43 | 13/34 | 38.2 | 4 | 5 | 11-80 | 66:51 |
 
 ## Postseason totals
 
