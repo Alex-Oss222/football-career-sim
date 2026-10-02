@@ -52,7 +52,8 @@ ACTION_TEXT = {"added_active": "Applied: on the 53", "added_practice_squad": "Ap
                "removed_reserve": "Applied: off the reserve list", "filled_active": "Applied from hold: on the 53",
                "filled_practice_squad": "Applied from hold: practice squad", "held_active": "Held: no place on the 53",
                "held_practice_squad": "Held: no practice-squad place", "hold_lapsed": "Hold lapsed",
-               "retired": "Applied: retired", "already_there": "Already in the base", "in_base": "Reflected in the base",
+               "retired": "Applied: retired", "retired_jacksonville": "Applied: retired (Jacksonville's retirement record)",
+               "already_there": "Already in the base", "in_base": "Reflected in the base",
                "noop": "No-op", "not_applied": "Not applied", "implied_ps_release": "Applied: released from another squad"}
 
 
@@ -82,19 +83,33 @@ def week_record(season, week, root=ROOT, receipts=None):
     return slate, start, end
 
 
+def _in_window(item, lasts, start, end, first_week):
+    """Whether a row or branch event replays inside the week's window: on or
+    before its last cutoff and, after the first week, after the previous
+    week's (a later shard's row can never enter a closed week's page)."""
+    when = rails.replay_date(item, lasts)
+    return when <= end and (first_week or when >= start)
+
+
 def render(season, week, root=ROOT, receipts=None, event=None):
+    """The week's page from the data effective for that week only: the base
+    and the shards of weeks up to `week`, and rows and branch events that
+    replay inside the week's window. Later shards never change it."""
     from runtime.week_inputs import event_id, schedule
     slate, start, end = week_record(season, week, root, receipts)
     data = slate["data"]
+    lasts = slate["last_cutoffs"]
     last = slate["states"][max(slate["states"])]
     first_week = week == data.effective_from_week
     rows = {r["id"]: r for r in data.rows}
+    shards = [s for s in data.manifest["shards"] if int(s["week"]) <= week]
+    as_of = max(date.fromisoformat(s["through"]) for s in shards)
     in_week = [e for e in last.log if (first_week or (start and date.fromisoformat(e["date"]) >= start))
                and e["ref"] in rows]
     games = schedule(week, season)
     lines = [BEGIN, "# In-season rails: Week %d, %d" % (week, season), ""]
-    meta = {"season": season, "week": week, "as_of": data.as_of.isoformat(),
-            "files": {s["path"]: s["sha256"] for s in data.manifest["shards"]} | {
+    meta = {"season": season, "week": week, "as_of": as_of.isoformat(),
+            "files": {s["path"]: s["sha256"] for s in shards} | {
                 data.manifest["base"]["path"]: data.manifest["base"]["sha256"]},
             "state_digests": {c.isoformat(): s.digest() for c, s in sorted(slate["states"].items())}}
     lines += ["<!-- rails-week: %s -->" % json.dumps(meta, sort_keys=True), ""]
@@ -102,7 +117,7 @@ def render(season, week, root=ROOT, receipts=None, event=None):
               "batch, each move in its real order)" % _fmt(end)) if first_week else \
         "moves gated %s to %s" % (_fmt(start), _fmt(end))
     lines += ["**Window:** %s. **Committed through:** %s. **Method and sources:** [in-season rails record]"
-              "(../../../../../library/%d_inseason_rails.md)." % (window, _fmt(data.as_of), season), ""]
+              "(../../../../../library/%d_inseason_rails.md)." % (window, _fmt(as_of), season), ""]
     lines += ["| Game | Date | Cutoff |", "|---|---|---|"]
     for g in sorted(games, key=lambda g: (g["date"], g.get("kickoff_et") or "", event_id(g, season=season))):
         lines.append("| %s at %s | %s | %s |" % (g["away"], g["home"], _fmt(g["date"]),
@@ -114,7 +129,7 @@ def render(season, week, root=ROOT, receipts=None, event=None):
         counts[e["club"]][e["action"]] += 1
     stripped = collections.defaultdict(collections.Counter)
     for r in data.rows:
-        if r["outcome"] in rails.STRIPPED_OUTCOMES and (first_week or rails.replay_date(r, slate["last_cutoffs"]) >= start):
+        if r["outcome"] in rails.STRIPPED_OUTCOMES and _in_window(r, lasts, start, end, first_week):
             stripped[r["club"]][r["outcome"]] += 1
     lines += ["## By club", "", "| Club | Additions applied | Departures applied | Held at the last cutoff | "
               "Filled from hold | Not applied |", "|---|---|---|---|---|---|"]
@@ -133,7 +148,7 @@ def render(season, week, root=ROOT, receipts=None, event=None):
     for e in in_week:
         if e["action"] not in ("added_active", "added_practice_squad", "removed_active", "removed_practice_squad",
                                "removed_reserve", "filled_active", "filled_practice_squad", "retired",
-                               "implied_ps_release"):
+                               "retired_jacksonville", "implied_ps_release"):
             continue
         r = rows[e["ref"]]
         src = "; ".join("%s %s" % ({"nfl_wire": "NFL.com wire", "espn": "ESPN team log"}.get(k, k), v["date"])
@@ -171,7 +186,7 @@ def render(season, week, root=ROOT, receipts=None, event=None):
                                                    reason))
     for r in data.rows:
         if r["outcome"] not in ("APPLY",) and r["outcome"] not in rails.STRIPPED_OUTCOMES and \
-                (first_week or rails.replay_date(r, slate["last_cutoffs"]) >= start):
+                _in_window(r, lasts, start, end, first_week):
             lines.append("| %s | %s | %s | %s |" % (r["club"], r.get("player_id") or r.get("player", ""),
                                                    KIND_TEXT.get(r["kind"], r["kind"]), r["reason"]))
     lines.append("")
@@ -186,10 +201,11 @@ def render(season, week, root=ROOT, receipts=None, event=None):
                       corr["fill"], corr["restoration"], corr["window"],
                       sum(1 for c in data.base["clubs"].values() if c["ps_base_verified"]), len(data.base["clubs"]),
                       season), ""]
-    if slate["c6"] or slate["emergencies"]:
+    c6 = sum(1 for e in slate["c6"] if _in_window(e, lasts, start, end, first_week))
+    emergencies = sum(1 for e in slate["emergencies"] if int(e["effective_from_week"]) == week)
+    if c6 or emergencies:
         lines += ["Branch events: %d branch reserve placement(s) (C6) and %d emergency promotion(s)." % (
-            sum(1 for e in slate["c6"] if rails.replay_date(e, slate["last_cutoffs"]) <= end),
-            len(slate["emergencies"])), ""]
+            c6, emergencies), ""]
     lines.append(END)
     text = "\n".join(lines) + "\n"
     if event:

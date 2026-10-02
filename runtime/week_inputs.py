@@ -132,10 +132,17 @@ def last_regular_date(season):
     return max(date.fromisoformat(g["date"]) for g in SeasonPaths(season, ROOT).regular_games())
 
 
-def last_cutoffs(week, season):
-    """{week: its last cutoff} for every week before `week` (runtime.rails.slate_cutoffs)."""
+def season_last_cutoffs(season):
+    """{week: its last cutoff} for every scheduled week of the season: the
+    regular season and every postseason round whose games can be built
+    (runtime.rails.slate_cutoffs). Cutoffs come only from the schedule, so
+    this reads nothing a closed week could not have known; a row found late
+    or a branch event from a later week can never replay inside an earlier
+    week's state (engineering review B5)."""
+    from . import postseason
     out = {}
-    for w in range(1, int(week)):
+    regular = sorted({g["week"] for g in SeasonPaths(season, ROOT).regular_games()})
+    for w in regular + sorted(postseason.ROUNDS):
         try:
             out[w] = max(rails.slate_cutoffs(schedule(w, season)).values())
         except (ValueError, FileNotFoundError, KeyError):
@@ -143,54 +150,84 @@ def last_cutoffs(week, season):
     return out
 
 
-def rails_slate(week, season, receipts, games=None, root=ROOT):
+def _kickoff_order(games, season):
+    return sorted(games, key=lambda g: (g["date"], g.get("kickoff_et") or "", event_id(g, season=season)))
+
+
+def rails_slate(week, season, receipts, games=None, root=ROOT, data=None, control=None, strict=True):
     """The in-season rails for one weekly slate, or None before the rails'
     effective week (closed Weeks 1 to 4 keep the Week 1 library entries).
 
     One league state per distinct cutoff in the slate, replaying the
     committed moves, the branch reserve placements from closed receipts (C6)
     and any emergency promotion (engineering review S5) recomputed week by
-    week from the receipts that existed then. Raises on any replay error."""
-    data = rails.load(season, root)
+    week from the receipts that existed then. Cutoffs are taken in order and
+    each cutoff's games in kickoff order: a player already in an earlier
+    game's TeamInput that week is left out of every later game's TeamInput
+    (engineering review B1), and the emergency check sees each club without
+    those players. Raises on any replay error unless `strict` is False
+    (the builder's no-op labelling reads the errors instead)."""
+    data = data if data is not None else rails.load(season, root)
     if data is None or int(week) < data.effective_from_week:
         return None
     games = games if games is not None else schedule(week, season)
-    lasts = last_cutoffs(week, season)
-    control = rails.jacksonville_control(season, root)
+    lasts = season_last_cutoffs(season)
+    control = control if control is not None else rails.jacksonville_control(season, root)
     c6 = rails.c6_events(projected_returns(receipts, season), last_regular_date(season), lasts,
                          lambda r: r["week"], data.effective_from_week)
-    emergencies, states = [], {}
+    emergencies, states, computed = [], {}, []
+    entries, deferred = {}, []
     for w in range(data.effective_from_week, int(week) + 1):
         wgames = games if w == int(week) else schedule(w, season)
         wcut = rails.slate_cutoffs(wgames)
         prior = [r for r in receipts if int(r["week"]) < w]
-        wlasts = {k: v for k, v in lasts.items() if k < w}
+        used = {}  # player id -> the earlier game's event id this week
         for cutoff in sorted(set(wcut.values())):
+            at = [g for g in _kickoff_order(wgames, season) if wcut[rails.game_key(g)] == cutoff]
             while True:
                 branch = rails.Branch(control, tuple(c6 + emergencies))
-                state = rails.league_state(data, cutoff, branch, wlasts)
+                state = rails.league_state(data, cutoff, branch, lasts)
                 known = {e["id"] for e in emergencies}
                 new = []
-                for g in wgames:
-                    if wcut[rails.game_key(g)] != cutoff:
-                        continue
+                for g in at:
                     out = _out_until(prior, date.fromisoformat(g["date"]), season)
                     for side in ("away", "home"):
                         if g[side] == PROTAGONIST:
                             continue
                         new += [e for e in rails.emergency_events(state, data.codes[g[side]], w, out, cutoff,
-                                                                  depth_library.available)
+                                                                  depth_library.available, excluded=used)
                                 if e["id"] not in known]
                 if not new:
                     break
                 emergencies += new
+            computed.append(state)
+            for g in at:
+                for side in ("away", "home"):
+                    team = g[side]
+                    if team == PROTAGONIST:
+                        continue
+                    club = state.club_entry(data.codes[team])
+                    keep = []
+                    for p in club["players"]:
+                        if p["player_id"] in used:
+                            if w == int(week):
+                                deferred.append({"player_id": p["player_id"], "club": team,
+                                                 "event_id": event_id(g, season=season),
+                                                 "earlier_event_id": used[p["player_id"]]})
+                            continue
+                        keep.append(p)
+                    if w == int(week):
+                        entries[(rails.game_key(g), team)] = dict(club, players=keep)
+                    for p in keep:
+                        used[p["player_id"]] = event_id(g, season=season)
             if w == int(week):
                 states[cutoff] = state
-    errors = sorted({e for s in states.values() for e in s.errors})
-    if errors:
+    errors = sorted({e for s in computed for e in s.errors})
+    if errors and strict:
         raise ValueError("in-season rails: " + "; ".join(errors[:10]))
     return {"data": data, "states": states, "cutoffs": rails.slate_cutoffs(games), "c6": c6,
-            "emergencies": emergencies, "last_cutoffs": lasts}
+            "emergencies": emergencies, "last_cutoffs": lasts, "entries": entries, "deferred": deferred,
+            "errors": errors, "branch": rails.Branch(control, tuple(c6 + emergencies))}
 
 
 def background_input(team, week, receipts, game_day, anchors, season=2013, club=None):
@@ -337,33 +374,12 @@ def jacksonville_input(receipts, game_day, anchors, call_sheet, season=2013):
 
 
 def _rails_clubs(slate, games, season):
-    """{(event key, team): club entry} from the slate's states, assigned in
-    kickoff order (date, kickoff time, event id). A player already in an
-    earlier game's TeamInput this week is left out of any later game's
-    TeamInput (engineering review B1); he stays on his club's list and counts
-    toward its 53. Returns the entries and the deferral log."""
-    used, out, deferred = {}, {}, []
-    order = sorted(games, key=lambda g: (g["date"], g.get("kickoff_et") or "", event_id(g, season=season)))
-    for g in order:
-        key = rails.game_key(g)
-        state = slate["states"][slate["cutoffs"][key]]
-        for side in ("away", "home"):
-            team = g[side]
-            if team == PROTAGONIST:
-                continue
-            club = state.club_entry(slate["data"].codes[team])
-            keep = []
-            for p in club["players"]:
-                if p["player_id"] in used:
-                    deferred.append({"player_id": p["player_id"], "club": team, "event_id": event_id(g, season=season),
-                                     "earlier_event_id": used[p["player_id"]]})
-                    continue
-                keep.append(p)
-            club = dict(club, players=keep)
-            out[(key, team)] = club
-            for p in keep:
-                used[p["player_id"]] = event_id(g, season=season)
-    return out, deferred
+    """{(event key, team): club entry} and the deferral log, as the slate
+    assigned them in kickoff order (date, kickoff time, event id): a player
+    already in an earlier game's TeamInput this week is left out of any later
+    game's TeamInput (engineering review B1); he stays on his club's list and
+    counts toward its 53."""
+    return dict(slate["entries"]), list(slate["deferred"])
 
 
 def _rails_metadata(slate, games, season, deferred):

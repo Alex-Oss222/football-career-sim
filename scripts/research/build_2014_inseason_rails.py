@@ -32,7 +32,12 @@ Gate and append-only rules (library/2014_inseason_rails.md):
   is written once, by the first build.
 - Real injuries, suspensions and availability, and every Jacksonville or
   real-Jaguars row, are committed without player identity or entry text
-  (rules review C6).
+  (rules review C6). A retirement is the exception: it applies league-wide,
+  Jacksonville included, whoever filed it (rails rule 5), so its row keeps
+  its identity.
+- Every committed row carries at least one source-page hash; the builder
+  stops on the position guard (`position_problems`) and on any error of the
+  replay the weekly build runs (`replay_states`).
 """
 from __future__ import annotations
 
@@ -79,8 +84,12 @@ ALIASES = {"cameronhenderson": "camhenderson", "daxtonswanson": "daxswanson",
            "jonathanabraham": "johnabraham", "trevorgraham": "tjgraham",
            "daveddrewbutler": "drewbutler", "cbkdannygorrer": "dannygorrer", "joshuabellamy": "joshbellamy",
            "dionlewi": "dionlewis"}
-# Identity fixes by research id (rules B4): the research field held two candidates.
-IDENTITY = {"R14-0008": "00-0030113"}
+# Identity fixes by research id (rules B4): the research field held two
+# candidates, or a namesake of another position group that the position
+# guard (`position_problems`) stops on. A fix for a row gated after the
+# committed window names no player here (rules C5); it takes effect only
+# when the window reaches the row.
+IDENTITY = {"R14-0008": "00-0030113", "R14-0579": "JON157260"}
 # Rows logged twice under two spellings of one name: merged into the first id (rules B4).
 MERGE = {"R14-0184": "R14-0183", "R14-0350": "R14-0349"}
 # Outcome and kind corrections by research id.
@@ -280,8 +289,10 @@ class Identity:
                 first, last = int(r["rookie_season"] or 0), int(r["last_season"] or 0)
             except ValueError:
                 first = last = 0
-            if (first and first > SEASON) and r["gsis_id"].startswith("00-"):
-                pass  # a later rookie season does not rule out a 2014 camp body
+            # A rookie season of 2015 does not rule out a 2014 camp body; a
+            # later one does (a 2024 entrant is never a 2014 player).
+            if first and first > SEASON + 1:
+                continue
             if last and last < SEASON - 1:
                 continue
             self.by_name[anorm(r["display_name"])].append(r)
@@ -342,9 +353,22 @@ class Identity:
         return pid
 
     def position(self, uid, fallback=""):
+        """The library position; else the 2014 weekly roster's; else the
+        position the 2014 source states (`fallback`: the research list or
+        ESPN's token); only then nflverse players.csv, which can carry a
+        later-career position."""
         if uid in self.library:
             return self.library[uid]["position"]
-        for pos in (self.weekly_pos.get(uid), (self.players.get(uid) or {}).get("position"), fallback):
+        weekly, later = self.weekly_pos.get(uid), (self.players.get(uid) or {}).get("position")
+        if weekly and group(weekly):
+            return weekly
+        if fallback and group(fallback):
+            # The 2014 source wins when it names another group or a more
+            # specific label; a generic label of the same group ("OL", "DB")
+            # keeps players.csv's specific one.
+            if not (later and group(later)) or group(later) != group(fallback) or fallback != group(fallback):
+                return fallback
+        for pos in (later,):
             if pos and group(pos):
                 return pos
         pg = (self.players.get(uid) or {}).get("position_group")
@@ -373,9 +397,16 @@ def gate(row):
     return row["move_date"], row["move_date"], "second_pass_single"
 
 
-def classify(row, kind):
-    """(kind, outcome, reason) from both sources' text (rules C1)."""
+def classify(row, kind, pre_reserve=False):
+    """(kind, outcome, reason) from both sources' text (rules C1). An
+    activation of a player on a real reserve list before Week 1 is a return
+    (decision D6): he was on no Week 1 chart, so his activation adds him,
+    as the Week 1 library's starting-availability convention does; an
+    in-season injury activation stays inert."""
     text = " ".join(row[k] for k in ("nfl_wire_entry", "espn_entry", "other_source"))
+    if kind == "injury_activation" and pre_reserve:
+        return "activation_return", "APPLY", ("an activation from a reserve list he was on before Week 1: a return "
+                                              "to his club (decision D6)")
     if kind in ("ps_release", "waived", "released", "released_unspecified") and INJURY_TEXT.search(text):
         return "injury_release", "NOT_APPLIED_INJURY", "an injury-driven release (rules C1)"
     if kind in INERT_OUTCOME:
@@ -387,6 +418,9 @@ def classify(row, kind):
 
 
 def page_hashes(src, row):
+    """The wire and ESPN page hashes behind a row; a row found only by the
+    second-pass web search carries the pinned research list's hash, so every
+    committed row has provenance (rules review C6)."""
     out = []
     if row["nfl_wire_entry"]:
         name = norm(re.sub(r"\s*\(NFL wire: (.*?)\)", "", row["player"]))
@@ -397,12 +431,32 @@ def page_hashes(src, row):
                 out.append(src.wire_pages[w["page_url"]])
     if row["espn_entry"] and row["club"] in src.espn_pages:
         out.append(src.espn_pages[row["club"]])
-    return sorted(set(out))
+    return sorted(set(out)) or [src.hashes["research/inseason_moves.csv"]]
 
 
 # ---- rows ----------------------------------------------------------------------------
 
-def research_rows(src, ident, control, unplaced_names):
+def pre_week1_reserve(src, library):
+    """{(name, club)}: real reserve-list placements (injured, physically
+    unable to perform, non-football, retired; never a suspension, whose
+    players the base restores) dated on or before the club's base date, from
+    the wire's reserve-list pages: the players the Week 1 library left off
+    every chart for a real reserve list."""
+    dates = base_dates(library)
+    out = set()
+    for w in src.wire:
+        code = NICK.get(w["from"]) or NICK.get(w["to"])
+        if w["category"] != "reserve-list" or "Suspended" in w["transaction"] or code not in dates:
+            continue
+        if w["iso"] <= dates[code]["active"]:
+            out.add((anorm(w["name"]), code))
+    return out
+
+
+ADDITION_KINDS = {k for k, (action, _) in rails.KINDS.items() if action == "add"}
+
+
+def research_rows(src, ident, control, pre_reserve):
     rows, problems = [], []
     by_id = {r["move_id"]: dict(r) for r in src.research}
     for dup, keep in MERGE.items():
@@ -417,25 +471,38 @@ def research_rows(src, ident, control, unplaced_names):
         club = CLUB.get(rid, r["club"])
         player = re.sub(r"\s*\(NFL wire: .*?\)", "", r["player"]).strip()
         kind = KIND_MAP[raw]
-        if (club, norm(player)) in ADMIN:
+        admin = (club, norm(player)) in ADMIN
+        if admin:
             kind = "administrative"
-        kind, outcome, reason = classify(r, kind)
+        kind, outcome, reason = classify(r, kind, (anorm(player), club) in pre_reserve)
         if rid in OUTCOME:
             new_kind, outcome, reason = OUTCOME[rid]
             kind = new_kind or kind
         if r["rails_outcome"] in ("EXCLUDED_SOURCE_ERROR", "EXCLUDED_SOURCE_CONFLICT", "REVIEW_SOURCE_CONFLICT") \
                 and rid not in OUTCOME:
             outcome, reason = r["rails_outcome"], r["outcome_reason"]
-        if r["rails_outcome"] == "REVIEW_UNPLACED" and outcome == "APPLY":
+        retirement = kind == "retirement" and outcome == "APPLY"
+        if r["rails_outcome"] == "REVIEW_UNPLACED" and outcome == "APPLY" and not retirement:
             outcome, reason = "REVIEW_UNPLACED", "an unplaced former Jaguar; the rule for his later moves is the user's (rules C4)"
         real, gate_date, basis = gate(r)
         if rid == "R14-0107":
             basis = "espn_only_plus_one"  # the Steelers release confirms the fact, not the day (rules C9)
             real, gate_date = r["espn_date"], (d(r["espn_date"]) + timedelta(days=1)).isoformat()
         clubs = [c for c in (club, r["counterparty_club"]) if c and c != "FA"]
-        uid, basis_id = (IDENTITY[rid], "review_fix") if rid in IDENTITY else ident.resolve(player, r["gsis_id"], clubs)
-        # Precedence (rules C1): real Jaguars, then Jacksonville control.
-        if club == "JAX" or r["counterparty_club"] == "JAX":
+        if admin:
+            # A wire entry for a long-retired player (no roster effect): no
+            # identity is resolved, so no namesake can be frozen into a row.
+            uid, basis_id = None, "administrative"
+        elif rid in IDENTITY:
+            uid, basis_id = IDENTITY[rid], "review_fix"
+        else:
+            uid, basis_id = ident.resolve(player, r["gsis_id"], clubs)
+        # Precedence (rules C1): a retirement first (the player's own choice,
+        # league-wide, Jacksonville included: rails rule 5); then real
+        # Jaguars, then Jacksonville control.
+        if retirement:
+            reason = "a real retirement: the player's own choice, applied league-wide, Jacksonville included (rails rule 5)"
+        elif club == "JAX" or r["counterparty_club"] == "JAX":
             outcome, reason = "NOT_APPLIED_REAL_JAGUARS", "a real Jaguars move the branch never made (rails rule 4)"
         elif uid and control.controlled(uid, gate_date):
             outcome, reason = "NOT_APPLIED_JAX_CONTROL", "Jacksonville-controlled on its date (rails rule 4)"
@@ -444,7 +511,7 @@ def research_rows(src, ident, control, unplaced_names):
             problems.append("%s: research said Jacksonville control, gsis %s is not controlled on %s"
                             % (rid, uid, gate_date))
         if outcome == "APPLY" and kind in ("fa_signing", "re_signing", "ps_promotion", "ps_poach", "waiver_claim",
-                                           "ps_signing", "waived", "released", "ps_release",
+                                           "ps_signing", "waived", "released", "ps_release", "activation_return",
                                            "released_unspecified", "retirement") and not uid:
             outcome, reason = "REVIEW_IDENTITY", "no resolvable player identity (engineering B4)"
         row = {"research_ref": rid, "real_date": real, "gate_date": gate_date, "date_basis": basis,
@@ -460,7 +527,10 @@ def research_rows(src, ident, control, unplaced_names):
                    ("espn", {"date": r["espn_date"], "entry": r["espn_entry"], "page": r["espn_url"]}
                     if r["espn_entry"] else None),
                    ("other", OTHER_SOURCE.get(rid, r["other_source"]) or None)) if v},
-               "source_pages": page_hashes(src, r)}
+               "source_pages": page_hashes(src, r),
+               # Working fields, never committed: the 2014 position the
+               # sources state, and how the research list matched the name.
+               "src_pos": source_position(r), "gsis_match": r["gsis_match"]}
         rows.append(row)
     for add in ADDED:
         mmdd, nick, tx = add["match"]
@@ -476,8 +546,40 @@ def research_rows(src, ident, control, unplaced_names):
                      "outcome": "APPLY", "reason": add["reason"], "verification": "nfl_wire_only",
                      "sources": {"nfl_wire": {"date": add["date"], "entry": "%s (%s -> %s)" % (tx, w["from"], w["to"]),
                                               "page": w["page_url"]}},
-                     "source_pages": [src.wire_pages[w["page_url"]]] if w["page_url"] in src.wire_pages else []})
+                     "source_pages": [src.wire_pages[w["page_url"]]] if w["page_url"] in src.wire_pages
+                     else [src.hashes["research/inseason_moves.csv"]],
+                     "src_pos": "", "gsis_match": "added"})
     return rows, problems
+
+
+def source_position(r):
+    """The 2014 position a source states for the row's player: the research
+    list's, else ESPN's token in front of his name."""
+    if r["pos"] and group(r["pos"].split("/")[0].split("-")[0]):
+        return r["pos"].split("/")[0].split("-")[0]
+    name = re.sub(r"\s*\(NFL wire: .*?\)", "", r["player"]).strip()
+    m = re.search(r"\b([A-Z]{1,4})\s+" + re.escape(name), r["espn_entry"] or "")
+    return m.group(1) if m and group(m.group(1)) else ""
+
+
+def mark_after_real_jaguars(rows):
+    """Mark the row after a real Jaguars acquisition of the same player
+    (`after_real_jaguars`): in reality he left his previous squad only
+    through that move, which the branch never made, so a later real
+    practice-squad signing implies no release by his branch club (rails
+    rule 4). Rows are in gate-date order; the Jaguars row itself stays
+    stripped."""
+    last = {}
+    for r in rows:
+        uid = r["uid"]
+        if not uid:
+            continue
+        prev = last.get(uid)
+        if prev is not None and prev["outcome"] == "NOT_APPLIED_REAL_JAGUARS" and prev["club"] == "JAX" \
+                and prev["kind"] in ADDITION_KINDS and r["outcome"] not in rails.STRIPPED_OUTCOMES:
+            r["after_real_jaguars"] = True
+        last[uid] = r
+    return rows
 
 
 def finish(row, ident):
@@ -489,12 +591,13 @@ def finish(row, ident):
     if uid:
         out["player_id"] = ident.player_id(uid, out["player"], out["club"])
         out["gsis_id"] = uid if re.match(r"^\d{2}-\d{7}$", uid) else None
-        out["position"] = ident.position(uid, "")
+        out["position"] = ident.position(uid, row.get("src_pos", ""))
         out["kernel_group"] = group(out["position"]) if out["position"] else None
         out["birth_date"] = ident.birth_date(uid)
     order = ("id", "effective_from_week", "gate_date", "real_date", "date_basis", "club", "kind", "kind_basis",
              "counterparty", "player", "player_id", "uid", "gsis_id", "position", "kernel_group", "birth_date",
-             "identity_basis", "outcome", "reason", "verification", "sources", "source_pages", "research_ref")
+             "identity_basis", "outcome", "reason", "verification", "sources", "source_pages", "research_ref",
+             "after_real_jaguars")
     return {k: out[k] for k in order if k in out}
 
 
@@ -609,11 +712,48 @@ def week1_availability(src):
     return status
 
 
-def build_fill(library, w1, control, ident, unplaced, availability=None):
+def _first_after_base(rows, dates):
+    """{(uid, club): earliest applied row with that club after the club's
+    base date}: by real date, so a game-day move the weekly roster already
+    shows is still a move after the base."""
+    out = {}
+    for r in sorted((r for r in rows if r.get("outcome") == "APPLY" and r.get("uid")),
+                    key=lambda r: (r["real_date"], r["id"])):
+        code = r["club"]
+        if code in dates and r["real_date"] > dates[code]["active"]:
+            out.setdefault((r["uid"], code), r)
+    return out
+
+
+def joined_after_base(fill, restorations, rows, dates):
+    """A fill or restoration player whose first move with his club after its
+    base date is an addition was not on that club at the base: a build
+    problem (the fill leaves such players out; a restoration must not
+    contradict a dated row)."""
+    first = _first_after_base(rows, dates)
+    out = []
+    for code, players in fill.items():
+        for p in players:
+            r = first.get((p["uid"], code))
+            if r and r["kind"] in ADDITION_KINDS:
+                out.append("fill %s %s joined after the base (%s, %s)" % (code, p["player_id"], r["id"], r["real_date"]))
+    for p in restorations:
+        r = first.get((p["uid"], p["club"]))
+        if r and r["kind"] in ADDITION_KINDS:
+            out.append("restoration %s %s joined after the base (%s, %s)" % (p["club"], p["player_id"], r["id"],
+                                                                             r["real_date"]))
+    return out
+
+
+def build_fill(library, w1, control, ident, unplaced, availability=None, rows=(), dates=None):
     """The real Week 1 53 (nflverse weekly roster, membership only) minus the
     Week 1 library and every excluded player: the real-53 fill (R21 base).
-    Fill players join the bottom of their group by jersey, then name, with
-    the Week 1 library's availability convention."""
+    A player whose first applied move with the club after its base date is
+    an addition joined after the base (a game-day signing the weekly roster
+    already shows): he is left out, and that row adds him. Fill players join
+    the bottom of their group by jersey, then name, with the Week 1 library's
+    availability convention."""
+    first = _first_after_base(rows, dates or {})
     lib = {}
     for club in library["clubs"].values():
         for p in club["players"]:
@@ -635,6 +775,10 @@ def build_fill(library, w1, control, ident, unplaced, availability=None):
                 reason = "the branch has him at %s" % lib[g]
             elif norm(r["full_name"]) in named:
                 reason = named[norm(r["full_name"])]
+            elif (g, code) in first and first[(g, code)]["kind"] in ADDITION_KINDS:
+                later = first[(g, code)]
+                reason = "joined after the base date %s (%s, %s)" % (dates[code]["active"], later["id"],
+                                                                     later["real_date"])
             if reason:
                 excluded[code].append({"uid": g, "reason": reason})
                 continue
@@ -661,20 +805,25 @@ def espn_sentences(desc):
     return [p.strip(" .") for p in parts if p and p.strip(" .")]
 
 
-def espn_names(chunk):
+def espn_names(chunk, positions=False):
+    """The player names in an ESPN sentence fragment; with `positions`,
+    (position token, name) pairs (the token ESPN puts in front of a name,
+    or "")."""
     out = []
     for item in re.split(r",\s*(?:and\s+)?|\s+and\s+", chunk.strip()):
         item = re.sub(r"^(?:rookie|veteran|free agent)\s+", "", item.strip().strip("."), flags=re.I)
         m = re.match(r"^((?:[A-Z]{1,4}(?:[/-][A-Z]{1,4})*|CBk)\s+)?(.+)$", item)
         name = re.sub(r"\s+(?:to|from|off|on|with)\b.*$", "", m.group(2).strip()) if m else ""
         if len(name.split()) >= 2:
-            out.append(name)
+            token = (m.group(1) or "").strip().split("/")[0].split("-")[0] if m else ""
+            out.append((token, name) if positions else name)
     return out
 
 
-def espn_ps(src, lo, hi):
+def espn_ps(src, lo, hi, positions=None):
     """{code: {norm name: (name, date)}} ESPN practice-squad signings minus
-    releases, lo..hi."""
+    releases, lo..hi; `positions`, when a dict, collects each signing's
+    position token by (code, norm name)."""
     out = collections.defaultdict(dict)
     for r in sorted(src.espn, key=lambda r: r["date"]):
         if not lo <= r["date"] <= hi:
@@ -683,8 +832,10 @@ def espn_ps(src, lo, hi):
         for s in espn_sentences(r["description"]):
             m = re.match(r"^(?:signed|re-signed|agreed to terms with)\s+(.*?)\s+to (?:the |their |a )?practice squad", s, re.I)
             if m:
-                for n in espn_names(m.group(1)):
+                for token, n in espn_names(m.group(1), positions=True):
                     out[code][anorm(n)] = (n, r["date"])
+                    if positions is not None and token:
+                        positions[(code, anorm(n))] = token
                 continue
             m = re.match(r"^(?:waived|released|terminated)\s+(.*?)\s+from (?:the |their )?practice squad", s, re.I)
             if m:
@@ -709,6 +860,8 @@ def build_ps_base(src, ident, control, unplaced, lib_codes):
     for w in src.wire:
         if w["category"] == "signings" and w["transaction"] == "Practice Squad" and "2014-08-30" <= w["iso"] <= "2014-09-04":
             wire_all[NICK.get(w["to"])].append((w["name"], w["iso"]))
+    tokens = {}
+    espn = espn_ps(src, "2014-08-30", "2014-09-04", tokens)  # position tokens only, from the wider window
     espn = espn_ps(src, "2014-08-30", "2014-09-01")
     base, verified, notes = {}, {}, {}
     for code in sorted(set(lib_codes)):
@@ -719,11 +872,12 @@ def build_ps_base(src, ident, control, unplaced, lib_codes):
             espn_entry = espn_left.pop(match) if match else None
             if when > "2014-09-01":
                 continue  # a dated row from September 2
-            entries.append((name, when, ["nfl_wire"] + (["espn"] if espn_entry else [])))
+            entries.append((name, when, ["nfl_wire"] + (["espn"] if espn_entry else []),
+                            tokens.get((code, match)) if match else tokens.get((code, anorm(name)))))
         for key, (name, when) in sorted(espn_left.items()):
-            entries.append((name, when, ["espn"]))
+            entries.append((name, when, ["espn"], tokens.get((code, key))))
         rows = []
-        for name, when, sources in entries:
+        for name, when, sources, stated in entries:
             uid, how = ident.resolve(name, "", [code])
             if not uid:
                 note["unresolved"].append(name)
@@ -734,7 +888,7 @@ def build_ps_base(src, ident, control, unplaced, lib_codes):
             if len(sources) < 2:
                 note[sources[0] + "_only"].append(name)
                 ok = False
-            pos = ident.position(uid, "")
+            pos = ident.position(uid, stated or "")
             if not pos:
                 note["no_position"].append(name)
                 ok = False
@@ -880,14 +1034,61 @@ def context(source_dir):
     control = rails.jacksonville_control(SEASON, ROOT)
     w1 = week1_membership(src)
     unplaced = unplaced_uids(library, ident, control, w1)
+    src.pre_reserve = pre_week1_reserve(src, library)
     return src, library, ident, control, w1, unplaced
 
 
-def candidates(src, ident, control, unplaced, through):
-    rows, problems = research_rows(src, ident, control, unplaced)
-    rows = [r for r in rows if r["gate_date"] <= through]
+def candidates(src, ident, control, pre_reserve, through):
+    rows, problems = research_rows(src, ident, control, pre_reserve)
     rows.sort(key=lambda r: (r["gate_date"], r["uid"] or "", r["research_ref"]))
+    mark_after_real_jaguars(rows)
+    rows = [r for r in rows if r["gate_date"] <= through]
     return rows, problems
+
+
+# Position groups one player is listed under by different sources for scheme
+# reasons (an edge rusher as end or linebacker, a fullback as back or end):
+# not evidence of a namesake.
+ADJACENT_GROUPS = {frozenset({"DL", "LB"}), frozenset({"RB", "FB"}), frozenset({"TE", "FB"})}
+
+
+def _same_role(a, b):
+    return a == b or frozenset({a, b}) in ADJACENT_GROUPS
+
+
+def position_problems(row, committed, ident):
+    """The identity guard (rules review B4): an applied row whose source
+    states a 2014 position group (a) that differs from the base player's
+    when the gsis is on a Week 1 chart, or (b) for a name-only match, that a
+    namesake in nflverse players.csv fits while the chosen identity does
+    not. Either stops the build until an IDENTITY fix names the player."""
+    if committed.get("outcome") != "APPLY" or not committed.get("uid"):
+        return []
+    stated = group(row.get("src_pos") or "")
+    if not stated:
+        return []
+    uid = committed["uid"]
+    if uid in ident.library:
+        base = group(ident.library[uid]["position"])
+        if not _same_role(base, stated):
+            return ["%s: gsis %s is a base %s, the source says %s (%s)" % (
+                committed["id"], uid, base, row["src_pos"], row["research_ref"])]
+        return []
+    if row.get("identity_basis") == "review_fix":
+        return []
+    name_only = row.get("identity_basis", "").startswith("players_csv_name") or "name" in row.get("gsis_match", "")
+    if not name_only:
+        return []
+    chosen = group(ident.weekly_pos.get(uid) or (ident.players.get(uid) or {}).get("position") or "")
+    if _same_role(chosen, stated):
+        return []
+    namesakes = [g for g, p in ident.players.items() if g != uid and anorm(p["display_name"]) == anorm(row["player"])
+                 and _same_role(group(p.get("position") or ""), stated)]
+    if namesakes:
+        return ["%s: %s matched by name to %s (%s), the source says %s; namesake %s fits (%s)" % (
+            committed["id"], row["player"], uid, chosen, row["src_pos"], ", ".join(sorted(namesakes)),
+            row["research_ref"])]
+    return []
 
 
 def number(rows, first, efw, ident, problems):
@@ -896,26 +1097,24 @@ def number(rows, first, efw, ident, problems):
         r["id"] = "R14-%04d" % i
         r["effective_from_week"] = efw
     committed = [finish(r, ident) for r in rows]
-    for r in committed:
-        if r.get("outcome") == "APPLY" and r.get("uid") and not r.get("position"):
-            problems.append("%s: no kernel position for %s" % (r["id"], r["player"]))
-        if r.get("outcome") == "APPLY" and r.get("uid") in ident.library:
-            lib_pos = group(ident.library[r["uid"]]["position"])
-            if r.get("kernel_group") and lib_pos != r["kernel_group"]:
-                problems.append("%s: gsis %s is a base %s" % (r["id"], r["uid"], lib_pos))
+    for r, c in zip(rows, committed):
+        if c.get("outcome") == "APPLY" and c.get("uid") and not c.get("position"):
+            problems.append("%s: no kernel position for %s" % (c["id"], c["player"]))
+        problems.extend(position_problems(r, c, ident))
     return committed
 
 
 def build(source_dir, through):
     src, library, ident, control, w1, unplaced = context(source_dir)
     codes = sorted(c["code"] for c in library["clubs"].values())
-    rows, problems = candidates(src, ident, control, unplaced, through)
+    rows, problems = candidates(src, ident, control, src.pre_reserve, through)
     efw = last_closed_week() + 1
     committed = number(rows, 1, efw, ident, problems)
     dates = base_dates(library)
-    fill, excluded = build_fill(library, w1, control, ident, unplaced, week1_availability(src))
+    fill, excluded = build_fill(library, w1, control, ident, unplaced, week1_availability(src), committed, dates)
     ps_base, ps_verified, ps_notes = build_ps_base(src, ident, control, unplaced, codes)
     restorations, restoration_skips = build_restorations(src, ident, control, w1, codes, fill, through)
+    problems += joined_after_base(fill, restorations, committed, dates)
     base_clubs = {code: {"base_as_of": dates[code]} for code in codes}
     corrections = window_corrections(library, base_clubs, fill, restorations, ps_base, committed, control, codes)
     # Fill, restorations and window corrections are one ordered list.
@@ -954,22 +1153,43 @@ def build(source_dir, through):
     return src, library, base, committed, problems
 
 
+def replay_states(manifest, base, rows, library, labels, control):
+    """The states the weekly build will compute for the open week, through
+    the same path (runtime.week_inputs.rails_slate: every scheduled week's
+    last cutoff, the C6 placements from the closed receipts, emergency
+    promotions and the slate deferral), plus one at the as-of date when it
+    is later than the week's last cutoff. Returns (states, errors)."""
+    from runtime import week_inputs
+    from scripts.render_season_stats import load_receipts
+    data = rails.from_parts(manifest, base, rows, library, ROOT, labels)
+    week = int(manifest["shards"][-1]["week"])
+    receipts = [r for r in load_receipts(SeasonPaths(SEASON, ROOT).receipts) if int(r["week"]) < week]
+    slate = week_inputs.rails_slate(week, SEASON, receipts, data=data, control=control, strict=False)
+    states, errors = list(slate["states"].values()), list(slate["errors"])
+    as_of = d(manifest["as_of"])
+    if as_of > max(slate["states"]):
+        st = rails.league_state(data, as_of, slate["branch"], slate["last_cutoffs"])
+        states.append(st)
+        errors += st.errors
+    return states, sorted(set(errors))
+
+
 def label_noops(src, library, manifest, base, rows, control, labels):
-    """Run the replay at the as-of date and label each no-op departure of a
-    player the base never carried (closed-list reason never_in_branch), with
-    its evidence: on the real reserve list before Week 1 (a pre-Week 1
-    injury stays real), or no signing with that club in either source.
-    Labels go into the shard that adds them; any other unexplained no-op
-    stops the build. Returns (state, new labels by club)."""
+    """Run the replay the weekly build will run (`replay_states`) and label
+    each no-op departure of a player the base never carried (closed-list
+    reason never_in_branch), with its evidence: on the real reserve list
+    before Week 1 (a pre-Week 1 injury stays real), or no signing with that
+    club in either source. Labels go into the shard that adds them; any
+    other replay error stops the build. Returns (errors, new labels by
+    club)."""
     def run(extra):
         merged = {code: list(labels.get(code, [])) + extra.get(code, []) for code in set(labels) | set(extra)}
-        data = rails.from_parts(manifest, base, rows, library, ROOT, merged)
-        return rails.league_state(data, d(manifest["as_of"]), rails.Branch(control), {4: date(2014, 9, 27)})
+        return replay_states(manifest, base, rows, library, merged, control)
     new = {}
-    state = run(new)
-    pending = [e for e in state.errors if e.startswith("unexplained no-op")]
+    _, errors = run(new)
+    pending = [e for e in errors if e.startswith("unexplained no-op")]
     if not pending:
-        return state, new
+        return errors, new
     by_id = {r["id"]: r for r in rows}
     reserve = {(norm(w["name"]), NICK.get(w["from"])) for w in src.wire
                if w["category"] == "reserve-list" and w["iso"] <= "2014-09-06"}
@@ -980,7 +1200,8 @@ def label_noops(src, library, manifest, base, rows, control, labels):
                     "no signing with this club in either source before the departure")
         new.setdefault(r["club"], []).append({"uid": r["uid"], "player_id": r["player_id"], "row": r["id"],
                                               "evidence": evidence})
-    return run(new), new
+    _, errors = run(new)
+    return errors, new
 
 
 def last_closed_week():
@@ -1043,9 +1264,9 @@ def first_build(args):
         "sources": "sources.json", "amendments": [],
         "decisions": "library/2014_inseason_rails.md#decisions",
     }
-    state, labels = label_noops(src, library, manifest, base, rows, rails.jacksonville_control(SEASON, ROOT), {})
-    if state.errors:
-        print("STOPPED:\n- " + "\n- ".join(state.errors))
+    errors, labels = label_noops(src, library, manifest, base, rows, rails.jacksonville_control(SEASON, ROOT), {})
+    if errors:
+        print("STOPPED:\n- " + "\n- ".join(errors))
         return 1
     shard = {"schema_version": 1, "season": SEASON, "effective_from_week": efw, "rows": rows,
              "noop_labels": {code: labels[code] for code in sorted(labels)}}
@@ -1087,7 +1308,7 @@ def extend(args, manifest):
     for r in existing:  # the identity assignments already committed stay frozen
         if r.get("uid") and r.get("player_id"):
             ident.assigned[r["uid"]] = r["player_id"]
-    rows, problems = candidates(src, ident, control, unplaced, args.through)
+    rows, problems = candidates(src, ident, control, src.pre_reserve, args.through)
     left = collections.Counter(_key(r) for r in existing)
     new = []
     for r in rows:
@@ -1120,9 +1341,9 @@ def extend(args, manifest):
     manifest["builds"].append({"through": args.through, "rows": [added[0]["id"], added[-1]["id"]],
                                "late_found": late, "inputs": src.hashes})
     all_rows = existing + added
-    state, new_labels = label_noops(src, library, manifest, base, all_rows, control, labels)
-    if state.errors:
-        print("STOPPED:\n- " + "\n- ".join(state.errors))
+    errors, new_labels = label_noops(src, library, manifest, base, all_rows, control, labels)
+    if errors:
+        print("STOPPED:\n- " + "\n- ".join(errors))
         return 1
     for code, entries in new_labels.items():
         shards[shard_name]["noop_labels"].setdefault(code, []).extend(entries)

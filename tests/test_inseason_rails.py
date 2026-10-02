@@ -14,7 +14,7 @@ from pathlib import Path
 from types import SimpleNamespace
 from unittest import mock
 
-from runtime import depth_library, rails, week_inputs
+from runtime import depth_library, player_bios, rails, week_inputs
 from runtime.usage import protection_front
 from scripts import build_week_inputs, close_week, render_inseason_rails
 from scripts.check_week_input_exclusivity import check_inputs
@@ -268,6 +268,55 @@ class InjuryRuleTests(unittest.TestCase):
         before = state(rows, cutoff="2014-10-04", events=events, lasts=lasts)
         self.assertNotIn("Waiting", actives(before, "AAA"))  # effective from the next week only
 
+    def test_a_final_week_or_postseason_injury_is_never_a_reserve_placement(self):
+        returns = [{"player": "Week 17", "team": "AAA Club", "played": date(2014, 12, 28), "back": date(2014, 12, 31),
+                    "week": 17},
+                   {"player": "Wild Card", "team": "AAA Club", "played": date(2015, 1, 4), "back": date(2015, 1, 4),
+                    "week": 18},
+                   {"player": "Week 16", "team": "AAA Club", "played": date(2014, 12, 21), "back": date(2015, 1, 20),
+                    "week": 16}]
+        events = rails.c6_events(returns, date(2014, 12, 28), {}, lambda r: r["week"], 5)
+        self.assertEqual([e["player_id"] for e in events], ["Week 16"])
+
+    def test_an_emergency_promotion_at_a_carry_over_club_swaps_one_for_one(self):
+        library, base, manifest = league(sizes={"AAA": 55, "BBB": 53, "CCC": 52},
+                                         ps={"AAA": [ps_entry("80-0000007", "Squad QB", "QB")]})
+        st = state([], library, base, manifest)
+        out = {p["player_id"]: date(2014, 11, 1) for p in st.clubs["AAA"]["active"] if p["group"] == "QB"}
+        events = rails.emergency_events(st, "AAA", 5, out, date(2014, 10, 4), depth_library.available)
+        self.assertEqual([e["player_id"] for e in events], ["Squad QB"])
+        after = state([], library, base, manifest, events=events)
+        self.assertEqual(after.errors, [])
+        self.assertIn("Squad QB", actives(after, "AAA"))
+        self.assertEqual(len(after.clubs["AAA"]["active"]), 55)
+
+    def test_a_deferred_player_is_neither_available_nor_promoted(self):
+        library, base, manifest = league(ps={"CCC": [ps_entry("80-0000007", "Squad QB", "QB")]})
+        st = state([], library, base, manifest)  # CCC at 52
+        qbs = [p["player_id"] for p in st.clubs["CCC"]["active"] if p["group"] == "QB"]
+        self.assertEqual(rails.emergency_events(st, "CCC", 5, {}, date(2014, 10, 4), depth_library.available), [])
+        events = rails.emergency_events(st, "CCC", 5, {}, date(2014, 10, 4), depth_library.available, excluded=qbs)
+        self.assertEqual([e["player_id"] for e in events], ["Squad QB"])
+        self.assertNotIn("reserve_uid", events[0])  # a deferred player is not injured
+        self.assertEqual(rails.emergency_events(st, "CCC", 5, {}, date(2014, 10, 4), depth_library.available,
+                                                excluded=qbs + ["Squad QB"]), [])
+        # At its limit a club gets room only from an injured player, never by
+        # moving a healthy deferred one: no event, and the slate gate fails closed.
+        library, base, manifest = league(ps={"AAA": [ps_entry("80-0000007", "Squad QB", "QB")]})
+        st = state([], library, base, manifest)
+        qbs = [p["player_id"] for p in st.clubs["AAA"]["active"] if p["group"] == "QB"]
+        self.assertEqual(rails.emergency_events(st, "AAA", 5, {}, date(2014, 10, 4), depth_library.available,
+                                                excluded=qbs), [])
+
+    def test_no_release_is_implied_after_a_real_jaguars_acquisition(self):
+        library, base, manifest = league(ps={"AAA": [ps_entry("80-0000003", "Squad Man")]})
+        signing = row("R1", "2014-09-20", "BBB", "ps_signing", "80-0000003", "Squad Man")
+        st = state([dict(signing, after_real_jaguars=True)], library, base, manifest)
+        self.assertEqual(st.where["80-0000003"], ("AAA", "practice_squad"))
+        self.assertFalse(any(e["action"] == "implied_ps_release" for e in st.log))
+        st = state([signing], library, base, manifest)
+        self.assertEqual(st.where["80-0000003"], ("BBB", "practice_squad"))
+
     def test_an_emergency_promotion_gives_a_legal_unit(self):
         library, base, manifest = league(ps={"AAA": [ps_entry("80-0000007", "Squad QB", "QB")]})
         st = state([], library, base, manifest)
@@ -338,18 +387,154 @@ class ControlTests(unittest.TestCase):
 
     def test_a_jacksonville_retirement_without_its_record_fails_the_build(self):
         control = rails.Control({"80-0000005": ((None, None),)}, names={"80-0000005": "Our Man"})
-        # A real retirement applies to Jacksonville too (method section 5):
-        # without its retirements.md entry the build fails closed.
-        rows = [dict(row("R1", "2014-09-10", "FA", "retirement", "80-0000005", "Our Man"))]
-        library, base, manifest = league()
-        data = rails.from_parts(manifest, base, rows, library)
-        with mock.patch.object(rails, "_effective_outcome", return_value="APPLY"):
-            st = rails.league_state(data, date(2014, 10, 4), rails.Branch(control), LAST)
-        self.assertTrue(any("retirements.md" in e for e in st.errors))
         ok = rails.Control(control.intervals, frozenset({"Our Man"}), control.names)
-        with mock.patch.object(rails, "_effective_outcome", return_value="APPLY"):
-            st = rails.league_state(data, date(2014, 10, 4), rails.Branch(ok), LAST)
-        self.assertFalse(st.errors)
+        # A real retirement applies to Jacksonville too (method section 5),
+        # whoever filed it: without its retirements.md entry the build fails
+        # closed; with it the retirement stands and nothing else moves.
+        for club in ("FA", "JAX"):
+            rows = [row("R1", "2014-09-10", club, "retirement", "80-0000005", "Our Man")]
+            st = state(rows, control=control)
+            self.assertTrue(any("retirements.md" in e for e in st.errors), club)
+            st = state(rows, control=ok)
+            self.assertEqual(st.errors, [])
+            self.assertIn("80-0000005", st.retired)
+            self.assertEqual([e["action"] for e in st.log if e["uid"] == "80-0000005"], ["retired_jacksonville"])
+
+    def test_a_retirement_applies_whoever_filed_it(self):
+        library, base, manifest = league()
+        base["unplaced_former_jaguars"] = ["80-0000006"]
+        mover = uid("AAA", "WR", 6)
+        rows = [row("R1", "2014-09-10", "AAA", "fa_signing", "80-0000002", "Held Man"),  # AAA at 53: held
+                row("R2", "2014-09-12", "JAX", "retirement", mover, pid("AAA", "WR", 6)),
+                row("R3", "2014-09-12", "JAX", "retirement", "80-0000009", "Free Agent Jag"),
+                row("R4", "2014-09-14", "FA", "retirement", "80-0000006", "Former Jag")]
+        st = state(rows, library, base, manifest)
+        self.assertEqual(st.errors, [])
+        # Filed by the real Jaguars for a player on a background club: he retires.
+        self.assertNotIn(pid("AAA", "WR", 6), actives(st, "AAA"))
+        self.assertTrue({mover, "80-0000009", "80-0000006"} <= st.retired)
+        # His place goes to the held addition (C4).
+        self.assertIn("Held Man", actives(st, "AAA"))
+        self.assertFalse([e for e in st.log if e["action"] == "not_applied"])
+
+    def test_a_returning_retiree_keeps_his_held_signing(self):
+        rows = [row("R1", "2014-09-05", "FA", "retirement", "80-0000002", "Old Pro", "OLB"),
+                row("R2", "2014-09-23", "AAA", "fa_signing", "80-0000002", "Old Pro", "OLB"),  # AAA at 53: held
+                row("R3", "2014-09-25", "AAA", "waived", uid("AAA", "WR", 6), pid("AAA", "WR", 6))]
+        st = state(rows)
+        self.assertIn("Old Pro", actives(st, "AAA"))
+        self.assertNotIn("80-0000002", st.retired)
+        self.assertFalse(any(e["action"] == "hold_lapsed" for e in st.log))
+
+    def test_a_former_jaguar_follows_only_the_recorded_same_window_move(self):
+        U, P = "80-0000077", "Former Jaguar"
+        library, base, manifest = league({"AAA": 52, "BBB": 53, "CCC": 52})
+        rows = [row("R1", "2014-09-24", "AAA", "re_signing", U, P)]
+
+        def control(disposition):
+            return rails.Control({U: ((None, date(2014, 9, 20)),)}, names={U: P},
+                                 departures={U: ((date(2014, 9, 20), disposition),)})
+        st = state(rows, library, base, manifest, control=control(("unplaced", ())))
+        self.assertNotIn(P, actives(st, "AAA"))
+        self.assertEqual([e["reason"] for e in st.log if e["uid"] == U], ["REVIEW_UNPLACED"])
+        self.assertEqual(st.errors, [])
+        st = state(rows, library, base, manifest, control=control(("follows", ("R1",))))
+        self.assertIn(P, actives(st, "AAA"))
+        # Once he has followed his recorded move he is back on the rails.
+        later = rows + [row("R2", "2014-09-26", "AAA", "released", U, P),
+                        row("R3", "2014-09-27", "CCC", "fa_signing", U, P)]
+        st = state(later, library, base, manifest, control=control(("follows", ("R1",))))
+        self.assertIn(P, actives(st, "CCC"))
+        # A different later move than the recorded one stays inert.
+        st = state([row("R5", "2014-09-24", "CCC", "fa_signing", U, P)], library, base, manifest,
+                   control=control(("follows", ("R1",))))
+        self.assertNotIn(P, actives(st, "CCC"))
+        # A later real move with no disposition recorded fails the build.
+        st = state(rows, library, base, manifest, control=control(None))
+        self.assertTrue(any("no rails disposition" in e for e in st.errors))
+
+
+# ---- Jacksonville control from the roster's dated history ------------------------------
+
+ROSTER = SeasonPaths(2014).roster
+THOMPSON = "00-0029388"  # Deonte Thompson: real Baltimore moves on September 20 to 26
+
+
+def roster_variant(status=None, departed=None, columns="| Player | Pos | Control began | How control ended | Rails disposition |"):
+    text = ROSTER.read_text(encoding="utf-8")
+    if status:
+        anchor = text.index("| Hakeem Nicks | WR |")
+        end = text.index("\n", anchor)
+        text = text[:end + 1] + ("| Deonte Thompson | WR | 1989-02-14 | 25 | %s | No communicated restriction | "
+                                 "test |\n" % status) + text[end + 1:]
+    if departed:
+        at = text.index("### August 30 and 31, 2014")
+        dashes = "|" + " --- |" * (columns.count("|") - 1)
+        text = text[:at] + "### October 20, 2014\n\n%s\n%s\n%s\n\n" % (columns, dashes, departed) + text[at:]
+    return text
+
+
+def control_from(text):
+    with tempfile.TemporaryDirectory() as tmp:
+        target = Path(tmp) / ROSTER.relative_to(ROOT)
+        target.parent.mkdir(parents=True)
+        target.write_text(text, encoding="utf-8")
+        return rails.jacksonville_control(2014, Path(tmp), player_bios.load())
+
+
+class ControlHistoryTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.receipts = [r for r in load_receipts(SeasonPaths(2014).receipts) if int(r["week"]) < 5]
+        cls.digests = cls.week5(rails.jacksonville_control(2014))
+
+    @classmethod
+    def week5(cls, control):
+        slate = week_inputs.rails_slate(5, 2014, cls.receipts, control=control)
+        return {c: s.digest() for c, s in slate["states"].items()}
+
+    def test_an_in_season_acquisition_starts_on_its_date(self):
+        for status in ("Active 53 (signed October 8, 2014)", "Active 53 (claimed off waivers October 8, 2014)",
+                       "Active 53 (acquired in a trade from Baltimore October 8, 2014)"):
+            control = control_from(roster_variant(status=status))
+            self.assertEqual(control.intervals[THOMPSON], ((date(2014, 10, 8), None),), status)
+            self.assertIn((date(2014, 10, 8), THOMPSON), control.acquisitions())
+            self.assertEqual(self.week5(control), self.digests, status)
+
+    def test_a_departed_in_season_acquisition_keeps_his_start(self):
+        control = control_from(roster_variant(departed="| Deonte Thompson | WR | Signed October 8, 2014 | "
+                                                        "Waived October 20, 2014; cleared October 21 | Unplaced free agent |"))
+        self.assertEqual(control.intervals[THOMPSON], ((date(2014, 10, 8), date(2014, 10, 20)),))
+        self.assertEqual(control.departures[THOMPSON], ((date(2014, 10, 20), ("unplaced", ())),))
+        self.assertEqual(self.week5(control), self.digests)
+
+    def test_a_player_released_and_re_signed_keeps_both_spells(self):
+        control = control_from(roster_variant(
+            status="Active 53 (re-signed November 1, 2014)",
+            departed="| Deonte Thompson | WR | Signed October 8, 2014 | Waived October 20, 2014 | Unplaced free agent |"))
+        self.assertTrue(control.controlled(THOMPSON, date(2014, 10, 10)))
+        self.assertFalse(control.controlled(THOMPSON, date(2014, 10, 25)))
+        self.assertTrue(control.controlled(THOMPSON, date(2014, 11, 2)))
+        self.assertEqual(self.week5(control), self.digests)
+
+    def test_undated_or_unrecognised_control_fails_closed(self):
+        bad = [roster_variant(status="Active 53 (claimed off waivers)"),
+               roster_variant(status="Waived (October 8, 2014)"),
+               roster_variant(departed="| Deonte Thompson | WR | Waived October 20, 2014 | Unplaced |",
+                              columns="| Player | Pos | How control ended | Rails disposition |"),
+               roster_variant(departed="| Deonte Thompson | WR | Before the season | Waived October 20, 2014 | Unplaced |"),
+               roster_variant(status="Active 53",
+                              departed="| Deonte Thompson | WR | Signed October 8, 2014 | Waived October 20, 2014 | Unplaced |")]
+        for text in bad:
+            with self.assertRaises(ValueError):
+                control_from(text)
+
+    def test_the_exclusivity_gate_and_the_rails_share_one_status_rule(self):
+        from scripts import check_week_input_exclusivity
+        self.assertIs(check_week_input_exclusivity.CONTROLLED_STATUS, rails.CONTROLLED_STATUS)
+        for status in ("PUP", "Suspended (October 8, 2014)", "Reserve/Non-football illness (placed October 8, 2014)"):
+            control = control_from(roster_variant(status=status))
+            self.assertTrue(control.controlled(THOMPSON, date(2014, 10, 4)), status)
 
 
 # ---- cutoffs, the information gate and the Week 5 build -------------------------------
@@ -420,6 +605,34 @@ class CutoffTests(unittest.TestCase):
         thursday = next(g for g in games if g["home"] == "Green Bay Packers")
         self.assertLess(rails.slate_cutoffs(games)[rails.game_key(thursday)], date.fromisoformat(thursday["date"]))
 
+    def test_a_late_found_row_never_changes_a_closed_week_on_the_real_path(self):
+        # A row the Week 6 extension finds late (gated September 20) and a
+        # Week 6 move after the Week 5 cutoff, through the production path.
+        receipts = [r for r in load_receipts(SeasonPaths(2014).receipts) if int(r["week"]) < 5]
+        late = row("X9", "2014-09-20", "CLE", "fa_signing", "99-0000009", "Late Found", efw=6)
+        stripped = {"id": "X10", "gate_date": "2014-10-08", "club": "CLE", "outcome": "NOT_APPLIED_INJURY",
+                    "effective_from_week": 6, "source_pages": ["x"]}
+        self.assertEqual(rails.replay_date(late, week_inputs.season_last_cutoffs(2014)), date(2014, 10, 5))
+        with self.assertRaises(ValueError):
+            rails.replay_date(late, {4: date(2014, 9, 27)})  # a truncated map fails closed
+        now = extended([])
+        data = rails.load(2014)
+        later = rails.from_parts(
+            dict(data.manifest, as_of="2014-10-11",
+                 shards=data.manifest["shards"] + [{"week": 6, "path": "week_06.json", "through": "2014-10-11",
+                                                    "sha256": "x", "rows": 2}]),
+            data.base, data.rows + [late, stripped], data.library, labels=data.labels)
+        with mock.patch.object(rails, "load", return_value=now):
+            before = week_inputs.rails_slate(5, 2014, receipts)
+            page = render_inseason_rails.render(2014, 5)
+        with mock.patch.object(rails, "load", return_value=later):
+            after = week_inputs.rails_slate(5, 2014, receipts)
+            self.assertEqual(render_inseason_rails.render(2014, 5), page)
+        self.assertEqual({c: s.digest() for c, s in before["states"].items()},
+                         {c: s.digest() for c, s in after["states"].items()})
+        self.assertNotIn("Late Found", [p["player_id"] for s in after["states"].values()
+                                        for p in s.clubs["CLE"]["active"]])
+
     def test_a_late_found_row_never_changes_a_closed_weeks_state(self):
         lasts = {**LAST, 5: date(2014, 10, 4)}
         base_rows = [row("R1", "2014-09-10", "CCC", "fa_signing", "80-0000001", "On Time")]
@@ -452,12 +665,36 @@ class CutoffTests(unittest.TestCase):
         with mock.patch.object(rails, "load", return_value=extended([])):
             self.assertIsNone(build_week_inputs.rails_coverage_error(5, 2014))
 
-    def test_depth_library_requires_a_cutoff_from_the_effective_week(self):
+    def test_depth_library_refuses_a_rails_week(self):
+        # One source of a background unit from the effective week: the slate.
         anchors = {"offense_anchor": 2.0, "defense_anchor": 2.0, "special_teams_anchor": 2.0}
-        with self.assertRaisesRegex(ValueError, "cutoff date is required"):
+        with self.assertRaisesRegex(ValueError, "weekly slate"):
             depth_library.team_input("Pittsburgh Steelers", week=5, season=2014, **anchors)
-        unit = depth_library.team_input("Pittsburgh Steelers", week=5, season=2014, cutoff=date(2014, 10, 4), **anchors)
-        self.assertTrue(unit["roster"])
+        self.assertTrue(depth_library.team_input("Pittsburgh Steelers", week=4, season=2014, **anchors)["roster"])
+
+    def test_the_slate_deferral_comes_before_the_emergency_check(self):
+        # Baltimore claims a quarterback Green Bay used on Thursday and loses
+        # both of its own before Sunday: he is deferred from Baltimore's
+        # TeamInput, so the emergency path promotes Baltimore's own
+        # practice-squad quarterback (synthetic rows, never a real move).
+        data = rails.load(2014)
+        st = rails.league_state(data, date(2014, 10, 4), rails.Branch(rails.jacksonville_control(2014)),
+                                week_inputs.season_last_cutoffs(2014))
+        qbs = [p for p in st.clubs["BAL"]["active"] if p["group"] == "QB"]
+        extra = [row("X1", "2014-09-30", "GB", "fa_signing", "99-0000011", "Synthetic Passer", "QB"),
+                 row("X2", "2014-10-02", "GB", "waived", "99-0000011", "Synthetic Passer", "QB"),
+                 row("X3", "2014-10-03", "BAL", "waiver_claim", "99-0000011", "Synthetic Passer", "QB",
+                     counterparty="GB")]
+        extra += [row("X%d" % (4 + i), "2014-10-03", "BAL", "waived", p["uid"], p["player_id"], "QB")
+                  for i, p in enumerate(qbs)]
+        receipts = [r for r in load_receipts(SeasonPaths(2014).receipts) if int(r["week"]) < 5]
+        with mock.patch.object(rails, "load", return_value=extended(extra)):
+            slate = week_inputs.rails_slate(5, 2014, receipts)
+        bal = next(c for (key, team), c in slate["entries"].items() if team == "Baltimore Ravens")
+        self.assertIn({"player_id": "Synthetic Passer", "club": "Baltimore Ravens"},
+                      [{k: d[k] for k in ("player_id", "club")} for d in slate["deferred"]])
+        self.assertEqual([e["club"] for e in slate["emergencies"]], ["BAL"])
+        self.assertEqual([p["position"] for p in bal["players"] if p["position"] == "QB"], ["QB"])
 
 
 # ---- closed weeks and determinism ----------------------------------------------------------
@@ -591,7 +828,14 @@ class CommittedDataTests(unittest.TestCase):
             (target / "manifest.json").write_text(json.dumps(manifest))
             with mock.patch.object(rails, "data_dir", return_value=target):
                 errors = rails.data_errors(2014, date(2014, 9, 28), root)
-        self.assertTrue(any("after the clock" in e for e in errors))
+            self.assertTrue(any("after the clock" in e for e in errors))
+            shard["rows"][0]["source_pages"] = []
+            (target / "week_05.json").write_text(json.dumps(shard))
+            manifest["shards"][0]["sha256"] = rails.sha256_file(target / "week_05.json")
+            (target / "manifest.json").write_text(json.dumps(manifest))
+            with mock.patch.object(rails, "data_dir", return_value=target):
+                errors = rails.data_errors(2014, date(2014, 9, 28), root)
+        self.assertTrue(any("no source-page hash" in e for e in errors))
 
     def test_stripped_rows_carry_no_identity_and_every_row_its_dates(self):
         data = rails.load(2014)
@@ -683,6 +927,54 @@ class BuilderTests(unittest.TestCase):
                 contextlib.redirect_stdout(out):
             self.assertEqual(builder.main(), 1)
         self.assertIn("never edited", out.getvalue())
+
+    def test_an_activation_from_a_pre_week_1_reserve_list_is_a_return(self):
+        from scripts.research import build_2014_inseason_rails as builder
+        r = {"nfl_wire_entry": "", "espn_entry": "Activated LB Example Player from the PUP list", "other_source": ""}
+        self.assertEqual(builder.classify(r, "injury_activation", pre_reserve=True)[:2], ("activation_return", "APPLY"))
+        self.assertEqual(builder.classify(r, "injury_activation")[:2], ("injury_activation", "NOT_APPLIED_INJURY"))
+        # Replayed, a return adds him like any other addition.
+        st = state([row("R1", "2014-10-01", "CCC", "activation_return", "80-0000031", "Back From PUP", "OLB")])
+        self.assertIn("Back From PUP", actives(st, "CCC"))
+
+    def test_the_position_guard_stops_a_namesake(self):
+        from scripts.research import build_2014_inseason_rails as builder
+        ident = SimpleNamespace(
+            library={"00-0000001": {"position": "DE", "player_id": "Base End"}}, weekly_pos={},
+            players={"00-0000002": {"display_name": "Same Name", "position": "DE"},
+                     "00-0000003": {"display_name": "Same Name", "position": "WR"}})
+
+        def problems(uid, src_pos, basis="research", match="name+club"):
+            raw = {"src_pos": src_pos, "identity_basis": basis, "gsis_match": match, "player": "Same Name",
+                   "research_ref": "R14-9999"}
+            return builder.position_problems(raw, {"id": "R14-9999", "outcome": "APPLY", "uid": uid}, ident)
+        self.assertTrue(problems("00-0000001", "WR"))       # a base end, the source says receiver: STOPPED
+        self.assertFalse(problems("00-0000001", "OLB"))     # an edge rusher listed as a linebacker
+        self.assertTrue(problems("00-0000002", "WR", "players_csv_name", "name_unique"))  # a fitting namesake
+        self.assertFalse(problems("00-0000002", "WR", "review_fix"))
+        self.assertFalse(problems("00-0000002", "", "players_csv_name"))
+
+    def test_the_row_after_a_real_jaguars_acquisition_is_marked(self):
+        from scripts.research import build_2014_inseason_rails as builder
+        rows = [{"uid": "U1", "club": "JAX", "kind": "ps_poach", "outcome": "NOT_APPLIED_REAL_JAGUARS"},
+                {"uid": "U1", "club": "BBB", "kind": "ps_signing", "outcome": "APPLY"},
+                {"uid": "U1", "club": "CCC", "kind": "ps_signing", "outcome": "APPLY"}]
+        builder.mark_after_real_jaguars(rows)
+        self.assertEqual([r.get("after_real_jaguars") for r in rows], [None, True, None])
+
+    def test_a_player_who_joined_after_the_base_is_not_in_the_fill(self):
+        from scripts.research import build_2014_inseason_rails as builder
+        dates = {"ARI": {"active": "2014-09-07"}}
+        rows = [{"id": "R1", "uid": "U1", "club": "ARI", "kind": "fa_signing", "outcome": "APPLY",
+                 "real_date": "2014-09-08"},
+                {"id": "R2", "uid": "U2", "club": "ARI", "kind": "waived", "outcome": "APPLY",
+                 "real_date": "2014-09-09"}]
+        fill = {"ARI": [{"uid": "U1", "player_id": "Joined Late"}, {"uid": "U2", "player_id": "Was There"}]}
+        self.assertEqual(len(builder.joined_after_base(fill, [], rows, dates)), 1)
+        self.assertEqual(builder.joined_after_base({"ARI": fill["ARI"][1:]}, [], rows, dates), [])
+        data = rails.load(2014)
+        butler = next(c for c in data.base["clubs"]["ARI"]["fill_excluded"] if c["uid"] == "00-0028952")
+        self.assertIn("joined after the base date", butler["reason"])
 
     def test_name_spellings_match_across_sources(self):
         from scripts.research.build_2014_inseason_rails import similar_names

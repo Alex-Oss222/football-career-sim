@@ -30,9 +30,10 @@ Rules (user-approved "hold, never invent", library/2014_inseason_rails.md):
 - C5 a real injury, suspension or exempt placement never touches membership:
   the player stays at his branch slot, available unless a branch injury says
   otherwise; injury-driven releases are not applied.
-- C6 a background player whose branch injury projects a return after the
-  season's last regular-season date goes on his club's branch reserve list
-  the day after the game; Jacksonville's reserve moves stay its own.
+- C6 a background player whose branch injury, in a game before the season's
+  last regular-season date, projects a return after that date goes on his
+  club's branch reserve list the day after the game; Jacksonville's reserve
+  moves stay its own.
 - C7 a club above 53 at the base keeps its players and holds additions until
   real departures bring it below 53. Nobody is released to correct it.
 
@@ -229,9 +230,14 @@ def replay_date(row, last_cutoffs):
     changes a closed week's state (engineering review B5)."""
     gate = _d(row["gate_date"])
     efw = int(row["effective_from_week"])
+    if efw <= 1:
+        return gate
     prior = last_cutoffs.get(efw - 1)
     if prior is None:
-        return gate
+        # A truncated map would replay a later week's row inside an earlier
+        # week (engineering review, late-found rows): fail closed.
+        raise ValueError("replay date of %s: no last cutoff for Week %d (pass every scheduled week's, "
+                         "runtime.week_inputs.season_last_cutoffs)" % (row.get("id"), efw - 1))
     return max(gate, prior + timedelta(days=1))
 
 
@@ -247,13 +253,28 @@ def norm(name):
 
 # ---- Jacksonville control ----------------------------------------------------
 
+# One definition of a roster Status that shows club control, shared with the
+# weekly exclusivity gate (scripts/check_week_input_exclusivity.py): the
+# status alone or followed by one dated parenthetical, e.g.
+# "Active 53 (signed August 31, 2014)".
+CONTROLLED_STATUS = re.compile(
+    r"^(?:Active 53|Offseason roster|Practice squad|Injured reserve|IR|Reserve(?:/[^|(]+?)?|"
+    r"PUP|NFI|Suspended|Commissioner(?:/[^|(]+?)?)\s*(?:\([^|]*\))?$",
+    re.IGNORECASE,
+)
+
+
 @dataclass(frozen=True)
 class Control:
     """Jacksonville control by gsis id: uid -> ((start, end), ...), each a
-    half-open interval with None for an open end."""
+    half-open interval with None for an open end. `departures` holds every
+    in-season departure: uid -> ((end, disposition), ...), where the
+    disposition is ("unplaced", ()), ("follows", (row id, ...)) or None when
+    the roster records none yet (method section 3)."""
     intervals: dict
     retirement_names: frozenset = frozenset()
     names: dict = field(default_factory=dict)  # uid -> roster name
+    departures: dict = field(default_factory=dict)
 
     def controlled(self, uid, on):
         on = _d(on)
@@ -270,13 +291,22 @@ class Control:
         return sorted((start, uid) for uid, spans in self.intervals.items()
                       for start, _ in spans if start is not None)
 
+    def departure_before(self, uid, on):
+        """(end, disposition) of the player's latest in-season departure on
+        or before `on`, or None."""
+        on = _d(on)
+        found = [d for d in self.departures.get(uid, ()) if d[0] <= on]
+        return max(found, key=lambda d: d[0]) if found else None
 
-# The first dated signing in a Status parenthetical; a promotion or a
-# reserve placement happens inside Jacksonville control and starts nothing.
-_STATUS_DATE = re.compile(r"\((?:[^)]*?)\b(?:signed|re-signed)\s+([A-Z][a-z]+ \d{1,2}, \d{4})")
-_CONTROL = re.compile(r"^(Active 53|Reserve/Injured|Practice squad|Injured reserve|Reserve)", re.IGNORECASE)
+
+# A control start is the first acquisition in a Status parenthetical with the
+# full date in the same clause; a promotion or a reserve placement happens
+# inside Jacksonville control and starts nothing.
+_ACQUIRED = re.compile(r"\b(?:signed|re-signed|claimed|acquired|traded)\b", re.IGNORECASE)
+_LONG_DATE = re.compile(r"[A-Z][a-z]+ \d{1,2}, \d{4}")
 _DEPARTED = re.compile(r"\b(?:Waived|Released|Traded|withdrawn|Contract expired|Not tendered|Retired)\b[^;]*?"
                        r"([A-Z][a-z]+ \d{1,2}(?:, \d{4})?)")
+_ROW_ID = re.compile(r"\bR\d{2}-\d{4}\b")
 
 
 def _parse_long_date(text, year):
@@ -284,61 +314,42 @@ def _parse_long_date(text, year):
     return datetime.strptime(text, "%B %d, %Y").date()
 
 
-def jacksonville_control(season, root=ROOT, registry=None):
-    """Dated Jacksonville control intervals by gsis id (engineering review S4).
+def _status_start(status, season_start):
+    """(start, error): the in-season start of control a Status shows (None
+    when undated or before the season), or an error when it names an
+    acquisition without a full date."""
+    paren = status[status.find("("):] if "(" in status else ""
+    m = _ACQUIRED.search(paren)
+    if not m:
+        return None, None
+    clause = re.split(r"[;)]", paren[m.end():], maxsplit=1)[0]
+    when = _LONG_DATE.search(clause)
+    if not when:
+        return None, "an acquisition with no full date"
+    start = datetime.strptime(when.group(0), "%B %d, %Y").date()
+    return (start if start >= season_start else None), None
 
-    Read from the season roster: every current row whose Status shows club
-    control is controlled from its dated signing in the season (or from
-    before the season when undated) with no end; every Departures row ends
-    control on the first dated action in its "How control ended" cell. gsis
-    ids come from `library/data/player_birth_dates.json`; an unresolved or
-    duplicated id fails closed.
-    """
-    from .seasons import SeasonPaths
-    from . import player_bios
-    registry = player_bios.load(root) if registry is None else registry
-    text = SeasonPaths(int(season), root).roster.read_text(encoding="utf-8")
-    current, departed = text.split("\n## Departures", 1) if "\n## Departures" in text else (text, "")
-    departed = re.split(r"^## ", departed, maxsplit=1, flags=re.M)[0]
-    season_start = date(int(season), 9, 1)
-    intervals, names, errors = {}, {}, []
 
-    def uid_for(name):
-        row = registry.get(name)
-        if not row or not row.get("gsis_id"):
-            errors.append("Jacksonville control: no gsis id for %s" % name)
-            return None
-        return row["gsis_id"]
+def _disposition(text):
+    """A Departures "Rails disposition" cell as data: ("follows", row ids)
+    when it names the real rows the player follows (the same kind of move in
+    the same window), ("unplaced", ()) when it starts "Unplaced", otherwise
+    None (pending or missing)."""
+    if not text:
+        return None
+    ids = tuple(_ROW_ID.findall(text))
+    if ids:
+        return ("follows", ids)
+    if text.strip().lower().startswith("unplaced"):
+        return ("unplaced", ())
+    return None
 
-    columns = None
-    for line in current.splitlines():
-        if not line.startswith("|"):
-            columns = None
-            continue
-        cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        if "Player" in cells:
-            columns = cells
-            continue
-        if columns is None or set(cells[0]) <= {"-", ":"} or len(cells) != len(columns):
-            continue
-        row = dict(zip(columns, cells))
-        status = row.get("Status", "")
-        if not _CONTROL.match(status):
-            continue
-        uid = uid_for(row["Player"])
-        if uid is None:
-            continue
-        start = None
-        m = _STATUS_DATE.search(status)
-        if m:
-            signed = _parse_long_date(m.group(1), int(season))
-            start = signed if signed >= season_start else None
-        if uid in names and names[uid] != row["Player"]:
-            errors.append("Jacksonville control: gsis %s is two roster names" % uid)
-        names[uid] = row["Player"]
-        intervals.setdefault(uid, []).append((start, None))
-    columns, year = None, int(season)
-    for line in departed.splitlines():
+
+def _tables(text):
+    """Yield (row dict, heading year or None) for every table row with a
+    Player column."""
+    columns, year = None, None
+    for line in text.splitlines():
         heading = re.match(r"^###\s+.*?(\d{4})", line)
         if heading:
             year = int(heading.group(1))
@@ -351,7 +362,65 @@ def jacksonville_control(season, root=ROOT, registry=None):
             continue
         if columns is None or set(cells[0]) <= {"-", ":"} or len(cells) != len(columns):
             continue
-        row = dict(zip(columns, cells))
+        yield dict(zip(columns, cells)), year
+
+
+def jacksonville_control(season, root=ROOT, registry=None):
+    """Dated Jacksonville control intervals by gsis id (engineering review S4).
+
+    Read from the season roster's dated history, which survives departures:
+    - every current row with a Status column must show club control
+      (CONTROLLED_STATUS, the exclusivity gate's definition), else the build
+      fails; it is controlled from its dated acquisition in the season
+      (signed, re-signed, claimed, acquired or traded, with a full date), or
+      from before the season when undated, with no end;
+    - every Departures row ends control on the first dated action in its
+      "How control ended" cell. An in-season departure (ended on or after
+      September 1) must carry a dated "Control began" cell, and its "Rails
+      disposition" cell is kept for the same-kind, same-window rule;
+    - a player with several rows keeps every interval (released and later
+      re-signed); overlapping intervals, or a current row with no dated start
+      after an in-season departure, fail closed.
+    gsis ids come from `library/data/player_birth_dates.json`; an unresolved
+    or duplicated id fails closed.
+    """
+    from .seasons import SeasonPaths
+    from . import player_bios
+    registry = player_bios.load(root) if registry is None else registry
+    text = SeasonPaths(int(season), root).roster.read_text(encoding="utf-8")
+    current, departed = text.split("\n## Departures", 1) if "\n## Departures" in text else (text, "")
+    departed = re.split(r"^## ", departed, maxsplit=1, flags=re.M)[0]
+    season_start = date(int(season), 9, 1)
+    intervals, names, departures, errors = {}, {}, {}, []
+    dated_current = {}
+
+    def uid_for(name):
+        row = registry.get(name)
+        if not row or not row.get("gsis_id"):
+            errors.append("Jacksonville control: no gsis id for %s" % name)
+            return None
+        return row["gsis_id"]
+
+    for row, _ in _tables(current):
+        if "Status" not in row:
+            continue
+        status = row["Status"]
+        if not CONTROLLED_STATUS.match(status):
+            errors.append("Jacksonville control: %s's Status %r shows no club control" % (row["Player"], status))
+            continue
+        uid = uid_for(row["Player"])
+        if uid is None:
+            continue
+        start, problem = _status_start(status, season_start)
+        if problem:
+            errors.append("Jacksonville control: %s's Status names %s" % (row["Player"], problem))
+            continue
+        if uid in names and names[uid] != row["Player"]:
+            errors.append("Jacksonville control: gsis %s is two roster names" % uid)
+        names[uid] = row["Player"]
+        dated_current[uid] = start
+        intervals.setdefault(uid, []).append((start, None))
+    for row, year in _tables(departed):
         how = row.get("How control ended", "")
         m = _DEPARTED.search(how)
         if not m:
@@ -359,11 +428,33 @@ def jacksonville_control(season, root=ROOT, registry=None):
         uid = uid_for(row["Player"])
         if uid is None:
             continue
-        end = _parse_long_date(m.group(1), year)
-        if uid in names:
-            continue  # re-signed later: the current row's interval governs
-        names[uid] = row["Player"]
-        intervals.setdefault(uid, []).append((None, end))
+        end = _parse_long_date(m.group(1), year or int(season))
+        start = None
+        began = row.get("Control began")
+        if began is not None:
+            when = _LONG_DATE.search(began)
+            if when:
+                start = datetime.strptime(when.group(0), "%B %d, %Y").date()
+                start = start if start >= season_start else None
+            elif end >= season_start:
+                errors.append("Jacksonville control: %s's in-season departure has no dated 'Control began'"
+                              % row["Player"])
+        elif end >= season_start:
+            errors.append("Jacksonville control: %s's in-season departure has no 'Control began' column"
+                          % row["Player"])
+        if end >= season_start:
+            departures.setdefault(uid, []).append((end, _disposition(row.get("Rails disposition"))))
+            if uid in dated_current and dated_current[uid] is None:
+                errors.append("Jacksonville control: %s is back on the roster after an in-season departure "
+                              "with no dated acquisition" % row["Player"])
+        names.setdefault(uid, row["Player"])
+        intervals.setdefault(uid, []).append((start, end))
+    for uid, spans in intervals.items():
+        ordered = sorted(spans, key=lambda s: (s[0] or date.min))
+        for (s1, e1), (s2, e2) in zip(ordered, ordered[1:]):
+            if e1 is None or (s2 or date.min) < e1:
+                errors.append("Jacksonville control: %s has overlapping control intervals" % names.get(uid, uid))
+                break
     if errors:
         raise ValueError("; ".join(sorted(set(errors))))
     retired = set()
@@ -373,7 +464,8 @@ def jacksonville_control(season, root=ROOT, registry=None):
             cells = [c.strip() for c in line.strip().strip("|").split("|")]
             if len(cells) >= 4 and cells[3].lower().startswith("yes"):
                 retired.add(re.sub(r",\s*[A-Z]+$", "", cells[1]).strip())
-    return Control({k: tuple(v) for k, v in intervals.items()}, frozenset(retired), names)
+    return Control({k: tuple(v) for k, v in intervals.items()}, frozenset(retired), names,
+                   {k: tuple(sorted(v, key=lambda d: d[0])) for k, v in departures.items()})
 
 
 # ---- branch inputs ------------------------------------------------------------
@@ -393,15 +485,18 @@ def c6_events(returns, last_regular_date, last_cutoffs, week_of_game, first_week
     regular-season date goes on his club's branch reserve list the day after
     the game, effective from the week after the game (and never before the
     rails' first week, so a placement from a closed week joins the first
-    batch in its date order). Reads only branch injuries; Jacksonville is
-    never touched.
+    batch in its date order). An injury in a game on or after the last
+    regular-season date (the final Sunday or any postseason game) never
+    places anyone: a return days later is not season-ending, and the
+    projection already holds him out. Reads only branch injuries;
+    Jacksonville is never touched.
     """
     out = []
     last = _d(last_regular_date)
     for r in returns:
-        if r["team"] == protagonist or _d(r["back"]) <= last:
-            continue
         played = _d(r["played"])
+        if r["team"] == protagonist or _d(r["back"]) <= last or played >= last:
+            continue
         efw = max(int(week_of_game(r)) + 1, int(first_week))
         ev = {"id": "C6|%s|%s" % (played.isoformat(), r["player"]), "kind": "branch_reserve",
               "team": r["team"], "player_id": r["player"], "gate_date": (played + timedelta(days=1)).isoformat(),
@@ -693,6 +788,7 @@ def _join(state, code, layer, uid, info, when, ref):
     available, return_week = _carry_availability(state, uid)
     _cancel_hold(state, uid)
     _remove(state, uid)
+    state.retired.discard(uid)  # un-retirement is the player's choice: his later real signing applies
     players = state.clubs[code][layer]
     grp = group(info["position"])
     depth = _next_depth(players, grp) if layer == "active" else None
@@ -709,6 +805,7 @@ def _join(state, code, layer, uid, info, when, ref):
 
 def _hold(state, code, layer, uid, info, when, ref):
     _cancel_hold(state, uid)
+    state.retired.discard(uid)  # a returning retiree's held signing stands until it fills
     hold = {"uid": uid, "info": info, "since": _d(when).isoformat(), "ref": ref, "layer": layer}
     state.held[code][layer].append(hold)
     state.held_by[uid] = (code, layer, hold)
@@ -724,15 +821,43 @@ def _info(row):
 
 
 def _effective_outcome(state, rails, branch, row, when):
-    """Recompute the outcome at replay (engineering review S4): a real
-    Jaguars move never happens, and a move involving a player Jacksonville
-    controls on the row's date or on its replay date does not apply."""
+    """Recompute the outcome at replay (engineering review S4).
+
+    - A retirement applies league-wide, Jacksonville included, whoever filed
+      it (rails rule 5, method section 5): it is checked first.
+    - A real Jaguars move never happens (rails rule 4).
+    - A move involving a player Jacksonville controls on the row's date or on
+      its replay date does not apply.
+    - A former Jaguar follows a later real move only when it is the same
+      kind of move in the same window (rails rule 6, method section 3): the
+      branch's pre-season departures are the base's frozen unplaced list; an
+      in-season departure's roster disposition either names the real rows he
+      follows or makes him unplaced. A later row with no recorded disposition
+      fails the build."""
     uid = row["uid"]
+    if row["kind"] == "retirement":
+        return "APPLY"
     if row["club"] == PROTAGONIST_CODE or row.get("counterparty") == PROTAGONIST_CODE:
         return "NOT_APPLIED_REAL_JAGUARS"
     if branch.control.controlled(uid, row["gate_date"]) or branch.control.controlled(uid, when):
         return "NOT_APPLIED_JAX_CONTROL"
     if uid in state.unplaced:
+        return "REVIEW_UNPLACED"
+    departure = branch.control.departure_before(uid, row["gate_date"])
+    if departure is not None:
+        end, disposition = departure
+        if disposition is None:
+            state.errors.append("%s: %s left Jacksonville control on %s and the roster records no rails "
+                                "disposition for his later real moves (method section 3)"
+                                % (row["id"], row.get("player_id") or uid, end.isoformat()))
+            return "REVIEW_UNPLACED"
+        if disposition[0] == "unplaced":
+            return "REVIEW_UNPLACED"
+        named = disposition[1]
+        if row["id"] in named:
+            return "APPLY"
+        if any(e["uid"] == uid and e["ref"] in named for e in state.log):
+            return "APPLY"  # back on the rails once he has followed his real move
         return "REVIEW_UNPLACED"
     return "APPLY"
 
@@ -751,11 +876,17 @@ def _apply_row(state, rails, branch, row, when, window):
     # the other layers (rules B1: no stored per-row membership flag).
     in_window = code in window and _d(row["gate_date"]) <= window[code]
     if action == "retire":
-        if branch.control.controlled(uid, when):
+        if branch.control.controlled(uid, row["gate_date"]) or branch.control.controlled(uid, when):
+            # Jacksonville's player: the retirement record owns its date and
+            # its contract effects; without it the build fails closed.
             name = branch.control.names.get(uid, row["player_id"])
             if name not in branch.control.retirement_names:
                 state.errors.append("retirement %s: Jacksonville-controlled %s has no retirements.md row"
                                     % (row["id"], name))
+                return
+            _cancel_hold(state, uid)
+            state.retired.add(uid)
+            state.note(when, row["id"], code, "retired_jacksonville", uid, "recorded in retirements.md")
             return
         loc = state.where.get(uid)
         _cancel_hold(state, uid)
@@ -780,6 +911,14 @@ def _apply_row(state, rails, branch, row, when, window):
         # move the branch's divergence makes impossible.
         state.note(when, row["id"], code, "not_applied", uid,
                    "NOT_APPLIED_PRECONDITION: on %s %s" % cur)
+        return
+    if cur and cur[1] == "practice_squad" and row.get("after_real_jaguars") and \
+            (layer == "practice_squad" or kind == "ps_poach"):
+        # In reality he left that squad only through a real Jaguars move the
+        # branch never made (rails rule 4): no release by his branch club
+        # happened, so none is implied.
+        state.note(when, row["id"], code, "not_applied", uid,
+                   "NOT_APPLIED_PRECONDITION: on %s %s; he left it in reality only through a real Jaguars move" % cur)
         return
     if cur and cur[1] == "practice_squad" and layer == "practice_squad":
         # A real practice-squad signing of a player the branch has on another
@@ -886,7 +1025,11 @@ def _apply_branch(state, rails, branch, ev, when):
                 state.clubs[code]["reserve"].append(rec)
                 state.where[ev["reserve_uid"]] = (code, "reserve")
                 state.note(when, ev["id"], code, "branch_reserve", ev["reserve_uid"], "emergency room")
-        if not state.has_room(code, "active"):
+        swap = bool(ev.get("reserve_uid")) and state.where.get(ev["reserve_uid"]) == (code, "reserve")
+        ceiling = LIMITS["active"] + state.carry.get(code, 0)
+        if not state.has_room(code, "active") and not (swap and state.count(code, "active") < ceiling):
+            # A carry-over club (C7) swaps one for one, staying at or below
+            # its own base count; nobody is released to make room.
             state.errors.append("emergency promotion %s: %s has no open place" % (ev["id"], code))
             return
         info = {"player_id": ev["player_id"], "position": ev["position"]}
@@ -960,16 +1103,21 @@ def check_rails_state(state, branch):
 
 # ---- emergency path (engineering review S5) -----------------------------------
 
-def emergency_events(state, code, week, out_ids, cutoff, available_fn):
+def emergency_events(state, code, week, out_ids, cutoff, available_fn, excluded=()):
     """Branch events that give `code` a legal game-day unit, or [] when it
     already has one. Fires only when the available players fail
     `lineup_errors`. Source order: the club's own practice squad at the short
     group (earliest signing, then id), then its held additions at that group;
-    with the club at its limit, room comes only from putting its
-    longest-projected injured player at that group on branch reserve."""
+    with the club at its limit (or above it under C7), room comes only from
+    putting its longest-projected injured player at that group on branch
+    reserve. `excluded` names players already in an earlier game's TeamInput
+    this week (the slate deferral): they cannot play for this club this week
+    and cannot be promoted, but are not injured."""
     from types import SimpleNamespace
+    excluded = set(excluded)
     active = state.clubs[code]["active"]
-    avail = [p for p in active if available_fn(p, week) and p["player_id"] not in out_ids]
+    avail = [p for p in active if available_fn(p, week) and p["player_id"] not in out_ids
+             and p["player_id"] not in excluded]
     if not lineup_errors([SimpleNamespace(position=p["position"]) for p in avail]):
         return []
     counts = {}
@@ -985,6 +1133,7 @@ def emergency_events(state, code, week, out_ids, cutoff, available_fn):
         pool = [{"uid": p["uid"], "player_id": p["player_id"], "position": p["position"]} for p in pool]
         pool += [{"uid": h["uid"], **h["info"]} for h in state.held[code]["active"]
                  if group(h["info"]["position"]) == grp]
+        pool = [c for c in pool if c["player_id"] not in excluded]
         injured = sorted((p for p in active if p["group"] == grp and p["player_id"] in out_ids),
                          key=lambda p: (-out_ids[p["player_id"]].toordinal()
                                         if isinstance(out_ids[p["player_id"]], date) else 0, p["uid"]))
@@ -1037,7 +1186,7 @@ def week_cutoff_coverage_error(rails, last_cutoff, week):
 ROW_FIELDS = {"id", "research_ref", "real_date", "gate_date", "date_basis", "club", "kind", "kind_basis",
               "counterparty", "player", "uid", "identity_basis", "outcome", "reason", "verification", "sources",
               "source_pages", "effective_from_week", "player_id", "gsis_id", "position", "kernel_group",
-              "birth_date"}
+              "birth_date", "after_real_jaguars"}
 
 
 def data_errors(season, master, root=ROOT):
@@ -1075,6 +1224,8 @@ def data_errors(season, master, root=ROOT):
                 errors.append("in-season rails row %s is gated %s, after the clock" % (row["id"], row["gate_date"]))
             if row["outcome"] not in OUTCOMES:
                 errors.append("in-season rails row %s: unknown outcome %s" % (row["id"], row["outcome"]))
+            if not row.get("source_pages"):
+                errors.append("in-season rails row %s has no source-page hash" % row["id"])
             if row["outcome"] in STRIPPED_OUTCOMES:
                 if set(row) != set(STRIPPED_FIELDS):
                     errors.append("in-season rails row %s must carry only %s" % (row["id"], ", ".join(STRIPPED_FIELDS)))
@@ -1093,7 +1244,7 @@ def data_errors(season, master, root=ROOT):
 
 
 DEPARTURE_ACTIONS = {"removed_active", "removed_practice_squad", "removed_reserve", "retired", "to_jacksonville",
-                     "implied_ps_release"}
+                     "implied_ps_release", "retired_jacksonville"}
 
 
 def receipt_departure_errors(state, receipts, game_dates, codes, effective_from_week, protagonist=PROTAGONIST):
