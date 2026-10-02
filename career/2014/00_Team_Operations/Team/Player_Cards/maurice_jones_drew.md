@@ -157,6 +157,12 @@ Twenty-two carries for 93 yards at 4.2 in 76 snaps: the 10-yard Outside Zone run
 
 Source: [Week 1 game record](../../../05_Regular_Season/Games/Week_01/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 8 to 13, 2014 | Reassessed and cleared
+
+Reassessed Monday with no change and cleared Friday, September 12, his projected date, without being inserted into the Friday practice; he did not practice Wednesday through Friday and took the Saturday walkthrough in full. Anderson and Grimes took the week's backfield work in the chart's order. Stone dressed him for Washington with no touch quota and the carried order behind him rehearsed; no finding attaches to the week.
+
+Source: [Week 2 record](../../../05_Regular_Season/Games/Week_02/output.md) and the [medical history](../../Medical/medical_history.md#september-8-to-12-jones-drew-reassessed-and-cleared-harris-and-lowery-to-reserveinjured). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

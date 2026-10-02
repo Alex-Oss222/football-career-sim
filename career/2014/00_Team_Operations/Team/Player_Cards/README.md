@@ -1,6 +1,6 @@
 # 2014 player profiles
 
-Working player cards for the current roster: the active 53, the two players on reserve/injured and the eight practice-squad players (63 under contract after the August 30, 2014 reduction to 53), with the 23 players who left control on August 30 kept as former players below. Each player has exactly two full annual assessments: this opening baseline, maintained with dated updates through spring, camp and the season, and a separate final assessment after season close. The original grades and narrative remain identifiable; material changes are explained in dated coaching notes rather than another assessment at each phase. The bottom regular-season and playoff tables refresh after every closed game. A card opens with the player's open-licensed photograph and its credit when the [photo registry](../../../../../library/data/player_photos.json) has one; the photograph is identity imagery only.
+Working player cards for the current roster: the active 53, the four players on reserve/injured and the seven practice-squad players (64 under contract after the September 8, 2014 transactions; Alan Ball's card is a dated entry assessment on signing), with the 23 players who left control on August 30 kept as former players below. Each player has exactly two full annual assessments: this opening baseline, maintained with dated updates through spring, camp and the season, and a separate final assessment after season close. The original grades and narrative remain identifiable; material changes are explained in dated coaching notes rather than another assessment at each phase. The bottom regular-season and playoff tables refresh after every closed game. A card opens with the player's open-licensed photograph and its credit when the [photo registry](../../../../../library/data/player_photos.json) has one; the photograph is identity imagery only.
 
 [2014 player template](TEMPLATE.md) · [2013 final profiles](../../../../2013/player_profiles/README.md) · [Current roster](../Roster/roster.md)
 
@@ -54,6 +54,7 @@ Working player cards for the current roster: the active 53, the two players on r
 | [Telvin Smith](telvin_smith.md) | LB |
 | [Christian Jones](christian_jones.md) | LB |
 | [Todd Davis](todd_davis.md) | LB |
+| [Alan Ball](alan_ball.md) | CB |
 | [A.J. Bouye](a_j_bouye.md) | CB |
 | [Mike Harris](mike_harris.md) | CB |
 | [Alterraun Verner](alterraun_verner.md) | CB |
@@ -70,7 +71,7 @@ Working player cards for the current roster: the active 53, the two players on r
 | [Bryan Anger](bryan_anger.md) | P |
 | [Casey Kreiter](casey_kreiter.md) | LS |
 
-The eight practice-squad players (Bray, Murphy, Feiler, Shatley, Jeffcoat, Long, Thomas, Phillips) and the two on reserve/injured (Brate, Jerrell Jackson) keep their cards in the table above with a dated roster-status line. Refresh the stats with `python scripts/update_player_cards.py 2014`; use `--check` to verify. The regular season and playoffs are separate. Unplayed periods say Not played; missing recorded fields say Unrecorded. New arrivals need a starting assessment and card; preserve departing players’ cards as history. Add a row per year from 2014 onward.
+The seven practice-squad players (Bray, Murphy, Feiler, Shatley, Jeffcoat, Long, Thomas) and the four on reserve/injured (Brate, Jerrell Jackson, Harris, Lowery) keep their cards in the table above with a dated roster-status line; Phillips was promoted and Alan Ball signed September 8 ([record](../Roster/transactions_2014-09-08.md)). Refresh the stats with `python scripts/update_player_cards.py 2014`; use `--check` to verify. The regular season and playoffs are separate. Unplayed periods say Not played; missing recorded fields say Unrecorded. New arrivals need a starting assessment and card; preserve departing players’ cards as history. Add a row per year from 2014 onward.
 
 ## Former players
 

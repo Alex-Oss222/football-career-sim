@@ -15,3 +15,4 @@
 |---|---|
 | [player_ages.md](player_ages.md) | Sourced birth dates and ages at the simulation date. |
 | [roster.md](roster.md) | Current controlled roster, contract status and departures. |
+| [transactions_2014-09-08.md](transactions_2014-09-08.md) | September 8, 2014: Harris and Lowery to reserve/injured, Phillips promoted, Ball signed. |

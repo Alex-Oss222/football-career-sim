@@ -2,7 +2,7 @@
 
 [Finances](../README.md) · [Full cap table](../salary_cap/cap_tracker.md)
 
-As of August 31, 2014. Generated from the same financial inputs as the full cap table.
+As of September 8, 2014. Generated from the same financial inputs as the full cap table.
 
 ## Decision calendar
 
@@ -20,10 +20,10 @@ As of August 31, 2014. Generated from the same financial inputs as the full cap 
 
 | Last contract year | Players |
 |---|---|
-| 2013 | Brad Meester, Alan Ball, Brent Grimes, Allen Reisner, Kevin Rutland |
-| 2014 | Roy Miller, Daryl Smith, Mike Brewster, C.J. Mosley, Julian Stanford, Chris Prosinski, Tyler Bray, Richard Murphy, Jerome Long, Jonathan Grimes, Hakeem Nicks, Jemea Thomas, Adrian Phillips, Matt Feiler, Tyler Shatley, Jackson Jeffcoat |
+| 2013 | Brad Meester, Brent Grimes, Allen Reisner, Kevin Rutland |
+| 2014 | Roy Miller, Daryl Smith, Mike Brewster, C.J. Mosley, Julian Stanford, Chris Prosinski, Tyler Bray, Richard Murphy, Jerome Long, Alan Ball, Jonathan Grimes, Hakeem Nicks, Jemea Thomas, Matt Feiler, Tyler Shatley, Jackson Jeffcoat |
 | 2015 | Kirk Cousins, Brynden Trawick, A.J. Bouye, Adam Thielen, C.J. Anderson, Marcedes Lewis, Andre Branch, Jeremy Mincey, Mike Harris, Dwight Lowery, Josh Scobee, Bryan Anger, Montell Owens, Jerrell Jackson, Chad Henne, Maurice Jones-Drew |
-| 2016 | Lane Johnson, Travis Kelce, Jordan Poyer, Sio Moore, Bacarri Rambo, Paul Posluszny, Daniel Te'o-Nesheim, Andrew Norwell, Christian Jones, Allen Hurns, Cornelius Lucas, Cameron Brate, Todd Davis, Kasim Edebali, Marcel Jensen, Gator Hoskins, Taylor Gabriel, Casey Kreiter |
+| 2016 | Lane Johnson, Travis Kelce, Jordan Poyer, Sio Moore, Bacarri Rambo, Paul Posluszny, Daniel Te'o-Nesheim, Andrew Norwell, Christian Jones, Allen Hurns, Cornelius Lucas, Adrian Phillips, Cameron Brate, Todd Davis, Kasim Edebali, Marcel Jensen, Gator Hoskins, Taylor Gabriel, Casey Kreiter |
 | 2017 | Sen'Derrick Marks, Alterraun Verner, Andrew Hawkins, Aaron Donald, Joel Bitonio, Davante Adams, Trai Turner, Telvin Smith, Corey Linsley, Charles Leno Jr., Malcolm Butler |
 | 2018 | Eugene Monroe, Aqib Talib |
 

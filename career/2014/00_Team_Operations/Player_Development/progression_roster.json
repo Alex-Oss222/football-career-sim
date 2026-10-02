@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
   "season": 2014,
-  "as_of": "September 7, 2014, after the Week 1 game at Philadelphia",
+  "as_of": "September 14, 2014, game day at Washington, after the September 8 transactions",
   "roster_source": "career/2014/00_Team_Operations/Team/Roster/roster.md",
   "continuity_source": "career/2014/00_Team_Operations/Player_Development/2013_exit_player_index.json",
   "policy": "Roster controls eligibility. The exit index identifies Jacksonville 2013 continuity only. Regenerate after any transaction or draft addition before progression is resolved.",
   "counts": {
-    "controlled_players": 55,
-    "jacksonville_2013_continuity": 31,
-    "returning_2013_jaguar": 31,
+    "controlled_players": 57,
+    "jacksonville_2013_continuity": 32,
+    "returning_2013_jaguar": 32,
     "practice_squad_to_reserve_future": 0,
-    "new_2014_acquisition": 24
+    "new_2014_acquisition": 25
   },
   "players": [
     {
@@ -219,17 +219,12 @@
       "continuity": "new_2014_acquisition"
     },
     {
-      "player": "Mike Harris",
-      "pos": "CB",
-      "continuity": "returning_2013_jaguar"
-    },
-    {
-      "player": "Dwight Lowery",
+      "player": "Bacarri Rambo",
       "pos": "S",
       "continuity": "returning_2013_jaguar"
     },
     {
-      "player": "Bacarri Rambo",
+      "player": "Brynden Trawick",
       "pos": "S",
       "continuity": "returning_2013_jaguar"
     },
@@ -249,9 +244,9 @@
       "continuity": "returning_2013_jaguar"
     },
     {
-      "player": "Brynden Trawick",
-      "pos": "S",
-      "continuity": "returning_2013_jaguar"
+      "player": "Malcolm Butler",
+      "pos": "CB",
+      "continuity": "new_2014_acquisition"
     },
     {
       "player": "Chris Prosinski",
@@ -259,9 +254,14 @@
       "continuity": "returning_2013_jaguar"
     },
     {
-      "player": "Malcolm Butler",
-      "pos": "CB",
+      "player": "Adrian Phillips",
+      "pos": "S",
       "continuity": "new_2014_acquisition"
+    },
+    {
+      "player": "Alan Ball",
+      "pos": "CB",
+      "continuity": "returning_2013_jaguar"
     },
     {
       "player": "Josh Scobee",
@@ -286,6 +286,16 @@
     {
       "player": "Jerrell Jackson",
       "pos": "WR",
+      "continuity": "returning_2013_jaguar"
+    },
+    {
+      "player": "Mike Harris",
+      "pos": "CB",
+      "continuity": "returning_2013_jaguar"
+    },
+    {
+      "player": "Dwight Lowery",
+      "pos": "S",
       "continuity": "returning_2013_jaguar"
     }
   ]

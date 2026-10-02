@@ -10,4 +10,4 @@
 
 Scheduled kickoff (Eastern Time): 1 p.m. The [calendar](../../../Calendar.md) controls dated amendments and the permitted preparation. Review the [current roster](../../../00_Team_Operations/Team/Roster/roster.md), [depth chart](../../../00_Team_Operations/Team/Depth_Chart/depth_chart.md), medical instructions and game-readiness requirements before execution.
 
-The season statistics, player cards and standings were refreshed from the receipt set at closure. Next: [Week 2 at Washington](../Week_02/README.md), September 14.
+The season statistics, player cards and standings were refreshed from the receipt set at closure. Next: [Week 2 at Washington](../Week_02/README.md), September 14, prepared September 8 to 13; the roster dispositions on Harris and Lowery were made September 8 ([record](../../../00_Team_Operations/Team/Roster/transactions_2014-09-08.md)).

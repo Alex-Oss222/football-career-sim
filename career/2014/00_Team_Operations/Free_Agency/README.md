@@ -19,6 +19,7 @@ The remaining files below are the dated negotiations and replay history. Their r
 | File | What it contains |
 |---|---|
 | [alan_ball_2014-05-12.md](alan_ball_2014-05-12.md) | Alan Ball: Stone's conversation, May 12, 2014. |
+| [alan_ball_signing_2014-09-08.md](alan_ball_signing_2014-09-08.md) | Alan Ball: signed September 8, 2014 after Harris's injury. |
 | [cain_negotiation_2014-03-19.md](cain_negotiation_2014-03-19.md) | Jeremy Cain: March 2014 replay negotiation. |
 | [henne_negotiation_2014-04-04.md](henne_negotiation_2014-04-04.md) | Chad Henne: April 2014 negotiation. |
 | [jones_drew_and_wilson_negotiation_2014-03-28.md](jones_drew_and_wilson_negotiation_2014-03-28.md) | Maurice Jones-Drew and C.J. Wilson: March 2014 negotiations. |

@@ -1,6 +1,6 @@
 # Jacksonville Jaguars 2014 contract table
 
-**As of:** August 31, 2014 (after the August 30 reduction to 53, the tender withdrawals, the August 31 waiver checkpoint, the reserve/injured placements and the practice-squad signings)
+**As of:** September 8, 2014 (after the September 8 transactions: Harris to ordinary reserve/injured, Lowery to reserve/injured designated for return, Adrian Phillips promoted from the practice squad on a new three-year contract, Alan Ball signed for one year; [record](../../Team/Roster/transactions_2014-09-08.md))
 **Nature:** derived view. It executes no signing, tag, tender, release, trade or extension, certifies no cap room and reflects the adopted contract reconstruction. The [contract status register](contract_status.md) owns each player's status; the [2014 preparation worksheet](../salary_cap/cap_worksheet.md) owns reconciliation; Caldwell owns contract decisions (Document 3).
 **Baseline:** [2013 initial cap sheet](../../../../2013/offseason/initial_cap_sheet.md) (per-player 2013 rows, Git `e04dd82`); [2013 regular-season worksheet](../../../../2013/offseason/current_cap_worksheet.md) and its May 5 version (Git `d25c8cf`); [2013 free-agency signings](../../../../2013/offseason/free_agency/signings.md); [2013 draftees](../../../../2013/offseason/draft/draftees.md); [2013 undrafted signings](../../../../2013/offseason/draft/udfa_signings.md); [2014 draftees](../../../03_Draft/draftees.md); [2014 undrafted signings](../../../03_Draft/udfa_signings.md); [2013 trades](../../../../2013/trades/trades.md); [current contract status register](contract_status.md); [Caldwell's pre-tag-window verifications](../../../01_Early_Offseason/caldwell_pre_tag_verifications.md) (Git `9ca804c`); [2014 free-agency outcomes](../../Free_Agency/signings.md); the [2014 dated record](../../../Record.md). Historical Git references identify the original financial baselines; current status follows the latest register and executed outcomes.
 
@@ -55,11 +55,11 @@ Add a row, and change the affected player rows and summaries, for every signing,
 
 <a id="2-controlled-players-under-contract-for-2014-51"></a>
 
-## Controlled players under contract for 2014 (55: the active 53 and the two on reserve/injured; the eight practice-squad contracts follow)
+## Controlled players under contract for 2014 (57: the active 53 and the four on reserve/injured; the seven practice-squad contracts follow)
 
 <a id="2a-branch-contracts-21"></a>
 
-### Branch contracts (41)
+### Branch contracts (43)
 
 | Player | Pos | Contract type | Signed | Years / final league year | Total value | Signing bonus; annual proration; years left | 2014 base | 2014 roster / workout / other bonuses | 2014 guarantees | 2014 cap charge | Dead money if released before June 1 | 2014 status | 2013 cap charge (baseline) | Source and status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -105,6 +105,9 @@ Add a row, and change the affected player rows and summaries, for every signing,
 | Taylor Gabriel | WR | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,530,000 | $0; $0; 0 | $420,000 | None | $0 | $420,000 | $0 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); no bonus, as in the 2013 precedent |
 | Casey Kreiter | LS | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,530,000 | $0; $0; 0 | $420,000 | None | $0 | $420,000 | $0 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); no bonus, as in the 2013 precedent |
 
+| Alan Ball | CB | Veteran minimum (branch signing) | September 8, 2014 | 1 / 2014 | $804,706 ($855,000 rate) | $0; $0; 0 | $804,706 ($855,000 rate, sixteen of seventeen pay weeks) | None | $0 | $804,706 | $0 gross exposure (no bonus; unpaid weekly installments leave) | Under contract | None (2013 branch contract $1.00M ended March 11) | Branch record ([signing record](../../Free_Agency/alan_ball_signing_2014-09-08.md)); $855,000 is the Confirmed 2014 minimum for seven to nine credited seasons (his count of seven inferred, unverified); the 16/17 proration is a labelled reconstruction, the library recording no rule; counted in full, the minimum-salary benefit not applied while eligibility is unverified |
+| Adrian Phillips | S | UDFA minimum (re-signed on promotion from the practice squad) | September 8, 2014 | 3 / 2016 | $1,511,594 | $0; $0; 0 | $395,294 ($420,000 rate, sixteen of seventeen pay weeks) | $6,300 practice-squad pay for the one week on the squad (library F6) | $0 | $401,594 | $0 gross exposure | Under contract | None (2014 rookie) | Branch record ([September 8 transactions](../../Team/Roster/transactions_2014-09-08.md)); the structure of his May 10 undrafted contract re-signed on promotion, an adopted simulation term ($510,000 in 2015, $600,000 in 2016, no bonus); the 16/17 proration is a labelled reconstruction |
+
 The 2013 UDFA total value is the sum of the three recorded bases ($405,000, $495,000 and $585,000); the 2013 charges for those four are their recorded bases, with no bonus. The 2014 rookie rows follow [the draftees record](../../../03_Draft/draftees.md) (slot reconstruction from the same-slot 2014 contract, minimum-scale bases, signing bonus prorated over four years) and [the undrafted signings record](../../../03_Draft/udfa_signings.md) (three-year minimum, $15,000 bonus for the five linemen only).
 
 <a id="2b-inherited-contracts-running-through-2014-or-later-22"></a>
@@ -120,8 +123,8 @@ The 2013 UDFA total value is the sum of the three recorded bases ($405,000, $495
 | C.J. Mosley | DT | Veteran, 2012 | 2012 | 3 / 2014 | $7,500,000 base deal; up to $10,000,000 with incentives | $1,000,000 signing bonus; final-year allocation estimated at $333,334 | About $2,725,000 | $25,000 scheduled other cap components | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. | $3,083,334 | $333,334 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | Unresolved (no 2013 row) | Planning estimate; [original-contract research](../../../../../library/2014_jaguars_original_contract_reconstruction.md#cj-mosley); adopted remaining terms: [completion research](../../../../../library/2014_jaguars_contract_completion.md) |
 | Paul Posluszny | LB | Veteran, 2011 | 2011 | 6 / 2016 | $45,000,000 | $10,000,000 signing bonus; $2,000,000 annually through 2015; $0 in 2016 | $7,450,000 | $50,000 scheduled other cap components | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. | $9,500,000 | $4,000,000 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract; head/neck hold cleared April 5, 2014 | $8,500,000 | Sourced schedule / stated reconstruction; [original-contract research](../../../../../library/2014_jaguars_original_contract_reconstruction.md#paul-posluszny); adopted remaining terms: [completion research](../../../../../library/2014_jaguars_contract_completion.md) |
 | Julian Stanford | LB | UDFA, 2012 (Jacksonville) | 2012 | 3 / 2014 | $1,445,000 | $5,000 signing bonus; final 2014 allocation $1,668 | $570,000 | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $571,668 | $1,668 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | Unresolved (no 2013 row) | Sourced schedule / stated reconstruction; [original-contract research](../../../../../library/2014_jaguars_original_contract_reconstruction.md#julian-stanford) |
-| Mike Harris | CB | Rookie, 2012 sixth round | 2012 | 4 / 2015 | $2,215,788 | $115,788 signing bonus; $28,947 annually through 2015 | $570,000 | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $598,947 | $57,894 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $508,947 | Sourced schedule / stated reconstruction; [original-contract research](../../../../../library/2014_jaguars_original_contract_reconstruction.md#mike-harris) |
-| Dwight Lowery | S | Veteran, March 2012 | March 2012 | 4 / 2015 | $13,600,000 ($4,000,000 guaranteed at signing, 2013 sheet) | $3,000,000 signing bonus; $750,000 annually through 2015 | $3,100,000 | $25,000 scheduled other cap components | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. | $3,875,000 | $1,500,000 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $3,875,000 | Sourced schedule / stated reconstruction; [original-contract research](../../../../../library/2014_jaguars_original_contract_reconstruction.md#dwight-lowery); adopted remaining terms: [completion research](../../../../../library/2014_jaguars_contract_completion.md) |
+| Mike Harris | CB | Rookie, 2012 sixth round | 2012 | 4 / 2015 | $2,215,788 | $115,788 signing bonus; $28,947 annually through 2015 | $570,000 | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $598,947 | $57,894 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract; ordinary reserve/injured from September 8, 2014 (charge unchanged) | $508,947 | Sourced schedule / stated reconstruction; [original-contract research](../../../../../library/2014_jaguars_original_contract_reconstruction.md#mike-harris) |
+| Dwight Lowery | S | Veteran, March 2012 | March 2012 | 4 / 2015 | $13,600,000 ($4,000,000 guaranteed at signing, 2013 sheet) | $3,000,000 signing bonus; $750,000 annually through 2015 | $3,100,000 | $25,000 scheduled other cap components | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. | $3,875,000 | $1,500,000 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract; reserve/injured designated for return from September 8, 2014 (charge unchanged) | $3,875,000 | Sourced schedule / stated reconstruction; [original-contract research](../../../../../library/2014_jaguars_original_contract_reconstruction.md#dwight-lowery); adopted remaining terms: [completion research](../../../../../library/2014_jaguars_contract_completion.md) |
 | Chris Prosinski | S | Rookie, 2011 fourth round | 2011 | 4 / 2014 | $2,640,144 | $420,108 signing bonus; final 2014 allocation $105,027 | About $735,018 | None in recovered schedule | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. | $840,045 | $105,027 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $720,039 | Planning estimate; [original-contract research](../../../../../library/2014_jaguars_original_contract_reconstruction.md#chris-prosinski); adopted remaining terms: [completion research](../../../../../library/2014_jaguars_contract_completion.md) |
 | Josh Scobee | K | Veteran, agreed July 16, 2012 after the franchise tag | July 16, 2012 | 4 / 2015 | $13.8M to $14.2M reported range ($4,750,000 reported guarantee) | $3,750,000 signing bonus; $937,500 annually through 2015 | $3,225,000 | $25,000 scheduled other cap components | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. | $4,187,500 | $1,875,000 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $3,287,500 | Sourced schedule / stated reconstruction; [original-contract research](../../../../../library/2014_jaguars_original_contract_reconstruction.md#josh-scobee); adopted remaining terms: [completion research](../../../../../library/2014_jaguars_contract_completion.md) |
 | Bryan Anger | P | Rookie, 2012 third round | 2012 | 4 / 2015 | $2,877,166 | $662,500 signing bonus; $165,625 annually through 2015 | $584,898 | $20,000 scheduled other cap components | No remaining guaranteed base salary established in the recovered schedule | $770,523 | $331,250 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $675,538 | Sourced schedule / stated reconstruction; [original-contract research](../../../../../library/2014_jaguars_original_contract_reconstruction.md#bryan-anger) |
@@ -142,7 +145,7 @@ The futures minimums were priced using Article 26 credited service, reconstructe
 
 <a id="2d-practice-squad-contracts-8"></a>
 
-### Practice-squad contracts, signed August 31, 2014 (8 of 10 places)
+### Practice-squad contracts, signed August 31, 2014 (7 of 10 places after Adrian Phillips's September 8 promotion)
 
 Each pays the 2014 practice-squad minimum of $6,300 a week while the player is on the squad (library F6, Confirmed), with no signing bonus and no guarantee; the 2014 charge below is a working estimate for the 17 regular-season weeks ($107,100), counted only for weeks actually on the squad. Each earlier contract ended with the August 30 waiver (Bray's $51,675 bonus acceleration from his 2013 waiver stays in the dead-money ledger). Two places, an outside receiver and a tight end, are open.
 
@@ -155,7 +158,6 @@ Each pays the 2014 practice-squad minimum of $6,300 a week while the player is o
 | Jackson Jeffcoat | DE | Practice squad (weekly) | August 31, 2014 | Weekly / 2014 | $6,300 a week | $0; $0; 0 | $6,300 a week ($107,100 for 17 weeks) | None | $0 | $107,100 | $0 gross exposure | Practice squad | None (2014 rookie) | Branch record ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); weekly minimum Confirmed (library F6); the season total is a working estimate for 17 weeks |
 | Jerome Long | DT | Practice squad (weekly) | August 31, 2014 | Weekly / 2014 | $6,300 a week | $0; $0; 0 | $6,300 a week ($107,100 for 17 weeks) | None | $0 | $107,100 | $0 gross exposure | Practice squad | Practice squad | Branch record ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); weekly minimum Confirmed (library F6); the season total is a working estimate for 17 weeks |
 | Jemea Thomas | DB | Practice squad (weekly) | August 31, 2014 | Weekly / 2014 | $6,300 a week | $0; $0; 0 | $6,300 a week ($107,100 for 17 weeks) | None | $0 | $107,100 | $0 gross exposure | Practice squad | None (2014 rookie) | Branch record ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); weekly minimum Confirmed (library F6); the season total is a working estimate for 17 weeks |
-| Adrian Phillips | S | Practice squad (weekly) | August 31, 2014 | Weekly / 2014 | $6,300 a week | $0; $0; 0 | $6,300 a week ($107,100 for 17 weeks) | None | $0 | $107,100 | $0 gross exposure | Practice squad | None (2014 rookie) | Branch record ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); weekly minimum Confirmed (library F6); the season total is a working estimate for 17 weeks |
 
 <a id="3-contracts-and-rights-that-ended-9"></a>
 
@@ -165,7 +167,7 @@ These players are no longer under Jacksonville control. Their 2013 rows remain i
 
 | Player | Pos | Status at 4 p.m. March 11 |
 |---|---|---|
-| Alan Ball | CB | Unrestricted; not re-signed May 12 after Stone's conversation with him; he has no real 2014 move and stays an unplaced free agent, first veteran corner to call if the room is hit |
+| Alan Ball | CB | Unrestricted; not re-signed May 12 after Stone's conversation with him; unplaced free agent until re-signed September 8, 2014 for one year (section 2a) |
 | Brent Grimes | CB | Unrestricted; not pursued under Stone's March 31 plan (the 2 years, $9.25M, $4.0M guaranteed fallback offer is withdrawn); unplaced under rails method section 3 |
 | Allen Reisner | TE | Not tendered; unrestricted |
 | Kevin Rutland | CB | Not tendered; unrestricted |
@@ -194,7 +196,7 @@ These players are no longer under Jacksonville control. Their 2013 rows remain i
 | D'Anthony Smith | DT | Waived August 30, 2014; cleared waivers August 31; no surviving bonus allocation |
 | Antwon Blake | S | Waived August 30, 2014; cleared waivers August 31; no surviving bonus allocation |
 | Jemea Thomas | DB | Waived August 30, 2014; cleared waivers August 31 and signed a practice-squad contract the same day (section 2d); the earlier contract ended with no surviving bonus allocation |
-| Adrian Phillips | S | Waived August 30, 2014; cleared waivers August 31 and signed a practice-squad contract the same day (section 2d); the earlier contract ended with no surviving bonus allocation |
+| Adrian Phillips | S | Waived August 30, 2014; cleared waivers August 31 and signed a practice-squad contract the same day; the earlier contract ended with no surviving bonus allocation. Promoted to the active roster September 8, 2014 on a new three-year contract (section 2a) |
 | Jeremy Cain | LS | Released August 30, 2014 (vested veteran); no surviving bonus allocation; no bonus; follows the rails to Chicago on September 1, 2014 |
 | Cameron Bradfield | OT | Qualifying offer withdrawn August 30, 2014 and rights renounced; the $1,431,000 tender charge leaves; free agent |
 | Toney Clemons | WR | Qualifying offer withdrawn August 30, 2014 and rights renounced; the $570,000 tender charge leaves; free agent |
@@ -214,22 +216,23 @@ Each tender was made before 4 p.m. ET March 11 and stayed unsigned; an unsigned 
 
 <a id="5a-counts-by-2014-status-march-20-2014-entry-99"></a>
 
-### Counts by 2014 status (August 31, 2014)
+### Counts by 2014 status (September 8, 2014)
 
 | Status | Count |
 |---|---:|
-| Under contract, continuing (the active 53 and the two on reserve/injured) | 55 |
+| Under contract, continuing (the active 53 and the four on reserve/injured) | 57 |
 | of which continuing from before 2014 | 26 |
 | of which reserve/future (effective March 11): Jerrell Jackson, on reserve/injured | 1 |
 | of which signed in the replay (Monroe, Marks, Verner, Talib, Nicks, Hawkins, Te'o-Nesheim, Jones-Drew, Henne) | 9 |
 | of which 2014 draft selections (rookie contracts signed May 11) | 8 |
 | of which 2014 undrafted rookies (signed May 10) | 11 |
-| Practice-squad contracts (signed August 31) | 8 |
+| of which signed September 8 (Alan Ball; Adrian Phillips re-signed on promotion) | 2 |
+| Practice-squad contracts (signed August 31; seven after Phillips's promotion) | 7 |
 | Tendered (unsigned) | 0 |
-| Current rows | 63 |
+| Current rows | 64 |
 | Contracts and rights ended (section 3) | 35 |
 
-The 63 current rows (55 contracts and eight practice-squad contracts) match the register and the roster; the roster's canonical controlled count is 55, the practice squad listed separately.
+The 64 current rows (57 contracts and seven practice-squad contracts) match the register and the roster; the roster's canonical controlled count is 57, the practice squad listed separately.
 
 <a id="5b-working-2014-cap-charges"></a>
 
@@ -237,18 +240,16 @@ The 63 current rows (55 contracts and eight practice-squad contracts) match the 
 
 | Component | Players | 2014 amount |
 |---|---:|---:|
-| Signed contracts: the active 53 and the two on reserve/injured | 55 | $112,651,730 |
-| Practice-squad contracts (working estimate: eight at $6,300 a week for 17 weeks, charged only for weeks on the squad) | 8 | $856,800 |
-| Player contracts | 63 | $113,508,530 |
+| Signed contracts: the active 53 and the four on reserve/injured (Ball $804,706 and Phillips $401,594 added September 8) | 57 | $113,858,030 |
+| Practice-squad contracts (working estimate: seven at $6,300 a week for 17 weeks, charged only for weeks on the squad; Phillips's one paid week is in his contract row) | 7 | $749,700 |
+| Player contracts | 64 | $114,607,730 |
 | Unsigned tenders (withdrawn August 30) | 0 | $0 |
 | Dead money (Bray $51,675; Nwaneri $2,189,000; Alualu $1,542,500; Shorts $110,845; Blackmon $5,951,636; Allen $416,668; Rackley $154,868; the August 30 releases $169,764: Feiler, Shatley and Larsen $5,000 each, C.J. Wilson $65,000, Edwards $53,403, Pendleton $12,848, Thomas $23,513) | | $10,586,956 |
-| Recorded obligations, all 63 current players | | $124,095,486 |
-| Less the base salaries of the 12 lowest-paid players outside the offseason Top 51 (bonus proration stays): four $420,000 bases and the eight practice-squad estimates | | -$2,536,800 |
-| Offseason Top-51 obligations plus dead money | | $121,558,686 |
+| Recorded obligations, all 64 current players | | $125,194,686 |
 | League-year opening offseason-workout charge (2,880 x $175, CBA Article 13 section 5(g)) | | $504,000 |
-| Working total under the Top-51 count | | $122,062,686 |
+| Working total under the full count (every contract counts from the September 3 compliance deadline, library F3; the Top-51 count has expired) | | $125,698,686 |
 
-Against the $133,000,000 league cap the working difference under the Top-51 count is $10,937,314, before the unresolved carryover, further signings and reserves; with the estimated 2013 rollover it is about $16,267,314 to $16,937,314. It is not certified room. The August 30 reduction removed $9,879,764 of 2014 charges (the 19 players who left) and the $3,066,000 of unsigned tenders, and added $169,764 of 2014 dead money; the eight practice-squad contracts add the $856,800 working estimate. The library records the end of the Top-51 count two ways: R8 says through the club's first regular-season game, and the calendar row F3 (its corrected row) says the full accounting is due at the league-wide compliance deadline of September 3, 2014 at 4 p.m. ET, when the 53, injured reserve, PUP and the practice squad all count. From that count every contract counts: $112,651,730 for the 55 contracts, $10,586,956 of dead money and the $504,000 workout charge, $123,742,686, plus the practice squad at $50,400 a week ($856,800 if all eight stay 17 weeks), a full-season working total of $124,599,486 and a working difference of $8,400,514 before carryover. The [cap tracker](../../../../finances/salary_cap/cap_tracker.md) shows the ranking.
+Against the $133,000,000 league cap the working difference under the full count is $7,301,314, before the unresolved carryover and reserves; with the estimated 2013 rollover it is about $12,631,314 to $13,301,314. It is not certified room. The September 8 transactions added $1,206,300 of signed charges (Ball $804,706; Phillips $401,594) and removed Phillips's $107,100 practice-squad estimate, a net $1,099,200; the reserve placements changed nothing. Before them, at August 31 under the offseason Top-51 count, the working total was $122,062,686 and the difference $10,937,314. The August 30 reduction removed $9,879,764 of 2014 charges (the 19 players who left) and the $3,066,000 of unsigned tenders, and added $169,764 of 2014 dead money; the eight practice-squad contracts add the $856,800 working estimate. The library records the end of the Top-51 count two ways: R8 says through the club's first regular-season game, and the calendar row F3 (its corrected row) says the full accounting is due at the league-wide compliance deadline of September 3, 2014 at 4 p.m. ET, when the 53, injured reserve, PUP and the practice squad all count. From that count every contract counts: $112,651,730 for the 55 contracts, $10,586,956 of dead money and the $504,000 workout charge, $123,742,686, plus the practice squad at $50,400 a week ($856,800 if all eight stay 17 weeks), a full-season working total of $124,599,486 and a working difference of $8,400,514 before carryover. The [cap tracker](../../../../finances/salary_cap/cap_tracker.md) shows the ranking.
 
 <a id="5c-dead-money-carried-into-2014"></a>
 

@@ -1,10 +1,10 @@
 {
  "team": "Jacksonville Jaguars",
  "season": 2014,
- "status": "SEASON GAME DEPTH CHART, the released 2014 game input. Issued by Stone on August 30, 2014 at the reduction to 53 (Document 3 row 9) from the August 28 personnel packet's baseline, over the 53 only. Stone changes it only by decision; each change is logged in career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md and copied here in the same commit.",
- "effective": "August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); game_day_inactives set for Week 1 on August 31, 2014 with the captains",
+ "status": "SEASON GAME DEPTH CHART, the released 2014 game input. Issued by Stone on August 30, 2014 at the reduction to 53 (Document 3 row 9) from the August 28 personnel packet's baseline, over the 53 only; the secondary re-set September 13, 2014 for Week 2 after the September 8 transactions (Harris and Lowery to reserve/injured, Ball signed, Phillips promoted). Stone changes it only by decision; each change is logged in career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md and copied here in the same commit.",
+ "effective": "August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); the defensive-back order and game_day_inactives set for Week 2 on September 13, 2014",
  "sources": "The August 28 personnel packet's season depth chart baseline (Regular-season Week 1.md: Adams X, Thielen H, Hawkins Z; Lewis, Kelce, Jensen; Monroe, Bitonio, Brewster, Turner, Johnson; Kreiter snapping; Hawkins returning kicks and punts with Hurns the second punt returner; Nicks back to X and Adams to Z only after medical clearance and a full practice week); the frozen August 27 Atlanta chart (Preseason_Games/Game_04/depth_chart.json) for every other order; the current roster for control and availability; the August 30 reduction (Roster_Decisions/final_roster_cuts.md) for the 53.",
- "rule": "Order within each kernel position group, first = starter, as the kernel reads it. The packet's baseline sets the starting eleven on offense, the snapper and the returners; the Atlanta chart's order is carried for everyone else, minus the players who left on August 30. A player out under a medical instruction is listed last in his group while out (Nicks, Hoskins) and is on the inactive list; his return to the order is Stone's decision on clearance under the packet's condition. The roles field carries the kernel roles (passer, placekicker, punt, kick_return, punt_return); Hurns is the second punt returner by Stone's instruction and is not given the kernel role, which the kernel reads as the first returner.",
+ "rule": "Order within each kernel position group, first = starter, as the kernel reads it. The packet's baseline sets the starting eleven on offense, the snapper and the returners; the Atlanta chart's order is carried for everyone else, minus the players who left on August 30. A player out under a medical instruction is listed last in his group while out (Nicks, Hoskins) and is on the inactive list; a player on reserve/injured is off the chart; his return to the order is Stone's decision on clearance under the packet's condition. The roles field carries the kernel roles (passer, placekicker, punt, kick_return, punt_return); Hurns is the second punt returner by Stone's instruction and is not given the kernel role, which the kernel reads as the first returner.",
  "depth": {
   "QB": [
    "Kirk Cousins",
@@ -64,15 +64,15 @@
   ],
   "DB": [
    "Aqib Talib",
-   "Mike Harris",
-   "Dwight Lowery",
-   "Bacarri Rambo",
-   "Jordan Poyer",
    "Alterraun Verner",
-   "A.J. Bouye",
+   "Bacarri Rambo",
    "Brynden Trawick",
+   "Jordan Poyer",
+   "A.J. Bouye",
+   "Malcolm Butler",
    "Chris Prosinski",
-   "Malcolm Butler"
+   "Adrian Phillips",
+   "Alan Ball"
   ],
   "K": [
    "Josh Scobee"
@@ -126,8 +126,6 @@
   "Christian Jones": "LB",
   "Todd Davis": "LB",
   "Aqib Talib": "CB",
-  "Mike Harris": "CB",
-  "Dwight Lowery": "S",
   "Bacarri Rambo": "S",
   "Jordan Poyer": "CB",
   "Alterraun Verner": "CB",
@@ -135,6 +133,8 @@
   "Brynden Trawick": "S",
   "Chris Prosinski": "S",
   "Malcolm Butler": "CB",
+  "Adrian Phillips": "S",
+  "Alan Ball": "CB",
   "Josh Scobee": "K",
   "Bryan Anger": "P",
   "Casey Kreiter": "LS"
@@ -169,16 +169,16 @@
   ]
  },
  "game_day_inactives": {
-  "week": 1,
+  "week": 2,
   "players": [
    "Hakeem Nicks",
    "Gator Hoskins",
-   "Malcolm Butler",
+   "Alan Ball",
    "Corey Linsley",
    "Kasim Edebali",
    "Todd Davis",
    "Taylor Gabriel"
   ],
-  "note": "Seven of the 53 are inactive for Week 1 at Philadelphia (46 dress; rules library R4). Hakeem Nicks (out, multi-week, projected return September 20, 2014) and Gator Hoskins (out, short, projected return September 16, 2014) are inactive by medical instruction. The other five are set by Stone's standing rule for the healthy inactives: the deepest healthy reserve on the chart in each of the five largest healthy position groups, never below a legal game-day unit, re-set each week; at August 31 those groups are the defensive backs (10: Malcolm Butler), the offensive line (9: Corey Linsley), the defensive line (8: Kasim Edebali), the linebackers (7: Todd Davis) and the receivers (5 healthy: Taylor Gabriel). A.J. Bouye cleared August 31, his projected date, and is active. Stone may replace any of the five in the Week 1 preparation; a week without a new list reuses the last one, minus players no longer controlled. The two reserve/injured players (Brate, Jackson) and the eight practice-squad players are not on the 53 and cannot appear here."
+  "note": "Seven of the 53 are inactive for Week 2 at Washington (46 dress; rules library R4), set by Stone on September 13, 2014 after the Washington preparation. Hakeem Nicks (out, multi-week, projected return September 20, 2014) and Gator Hoskins (out, short, projected return September 16, 2014) are inactive by medical instruction. The other five are set by Stone's standing rule for the healthy inactives: the deepest healthy reserve on the chart in each of the five largest healthy position groups, never below a legal game-day unit, re-set each week; at September 13 those groups are the defensive backs (10: Alan Ball, listed last in the group in his first week after signing September 8), the offensive line (9: Corey Linsley), the defensive line (8: Kasim Edebali), the linebackers (7: Todd Davis) and the receivers (5 healthy: Taylor Gabriel). Maurice Jones-Drew cleared September 12, his projected date, and is active by Stone's decision. Mike Harris and Dwight Lowery are on reserve/injured from September 8 and are not on the chart. The four reserve/injured players and the seven practice-squad players are not on the 53 and cannot appear here."
  }
 }

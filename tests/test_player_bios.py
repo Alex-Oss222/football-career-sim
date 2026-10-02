@@ -48,10 +48,11 @@ class PlayerBiographyTests(unittest.TestCase):
         self.assertEqual(render_player_ages.check(), [])
         roster = current_record('roster').read_text()
         names = [n for n, _, _ in render_player_ages.controlled_rows(roster)]
-        # 63 under club control at August 31, 2014: the active 53, the two on
-        # reserve/injured and the eight practice-squad players (the roster's
-        # canonical count of 55 excludes the practice squad, listed separately).
-        self.assertEqual(len(set(names)), 63)
+        # 64 under club control from September 8, 2014: the active 53, the four
+        # on reserve/injured and the seven practice-squad players (the roster's
+        # canonical count of 57 excludes the practice squad, listed separately;
+        # Alan Ball signed and Adrian Phillips promoted September 8).
+        self.assertEqual(len(set(names)), 64)
         self.assertIn("| Tyler Bray | QB | 1991-12-27 | 22 | Practice squad (signed August 31, 2014) |", roster)
 
     def test_regeneration_replaces_stale_age_and_is_idempotent(self):
