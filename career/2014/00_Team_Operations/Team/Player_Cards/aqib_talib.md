@@ -134,13 +134,19 @@ Talib re-routed Nicks on recorded press reps and lost others to Nicks's hands. B
 
 Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
 
+### September 21, 2014 | Week 3, Indianapolis at Jacksonville
+
+Fifty-eight defensive snaps outside with the interception of Luck's third-and-long throw for Allen at the Jacksonville 23 at 9:14 of the third quarter, returned 1, two snaps after the breakup of the first-down throw for Allen on the same drive; four tackles and three passes defended, the third the breakup of the throw for Moncrief at the end of the third quarter. The play-by-play names him as the tackler on Hilton's 12-yard catch on the opening drive and on three Richardson runs and does not record the coverage on any Indianapolis completion, so the leverage and help rules on Hilton and Wayne have one game's result and no cause attached. A head/neck injury, minor, was logged at the end of Indianapolis's touchdown drive at 8:02 of the fourth quarter; he was removed, the receipt recording Verner as the replacement in his slot by the chart's order with no pause recorded, and he is on an independent medical hold: projected return September 25, reassessment September 22 ([medical record](../../Medical/incidents/aqib_talib_2014-09-21.md)). Indianapolis scored twice more after he left, 66 yards in eight plays and 85 in nine; the play-by-play does not say who covered Hilton on the 10-yard touchdown or Wayne on the fourth-and-10 40-yarder. No football finding attaches to the hold.
+
+Source: [Week 3 game record](../../../05_Regular_Season/Games/Week_03/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR | DEF SNAPS | QB HITS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 2 | 2 | 20 | 14 | 6 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 147 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 0 |
+| 2014 | Jacksonville | Through Week 3 | 3 | 24 | 18 | 6 | 0 | 1 | 1 | 5 | 0 | 0 | 0 | 0 | 205 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 

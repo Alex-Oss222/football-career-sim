@@ -160,13 +160,19 @@ Source: [preseason game 3 output](../../../04_Training_Camp_and_Preseason/Presea
 
 Reassessed August 23 with no change, cleared August 26, his projected date, under the record's method, and back in the work from that day: the nickel in the starting defense in the August 26 series practice and the August 27 walkthrough, the substitution on time on the recorded personnel changes, and the kickoff-coverage unit rebuilt by name after the Detroit review, no communicated limitation. He is at the nickel in the starting defense in Stone's frozen Atlanta plan, the plan's structure and not a new role; no football finding attaches to the instruction. Source: [medical record](../../Medical/incidents/jordan_poyer_2014-08-22.md); [camp record](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md#august-23-to-27-the-detroit-review-and-the-atlanta-preparation). This coaching update preserves the opening grades above.
 
+### September 21, 2014 | Week 3, Indianapolis at Jacksonville
+
+Thirty-six defensive snaps at the nickel and 13 on the kicking game with no tackle, pass defended or target recorded against him; the play-by-play names no defender on the Hilton and Moncrief completions, so whether any throw beat his coverage is the film's. A head/neck injury, short, was logged at the end of Indianapolis's three-and-out at 5:19 of the third quarter; he was removed, A.J. Bouye taking his place by the chart's order with no pause recorded, and he is on an independent medical hold: projected return October 9, reassessment September 27 ([medical record](../../Medical/incidents/jordan_poyer_2014-09-21.md)). On the projection he misses the San Diego and Pittsburgh games; the Week 4 nickel is Stone's decision after the Monday exams. No football finding attaches to the hold.
+
+Source: [Week 3 game record](../../../05_Regular_Season/Games/Week_03/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR | DEF SNAPS | QB HITS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 2 | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 119 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 2 |
+| 2014 | Jacksonville | Through Week 3 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 155 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 2 |
 
 ## Playoff statistics by year
 

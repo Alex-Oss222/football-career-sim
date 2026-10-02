@@ -115,13 +115,19 @@ Adams won a contact release while losing quick-concept timing through an extra s
 
 Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
 
+### September 21, 2014 | Week 3, Indianapolis at Jacksonville
+
+All 59 offensive snaps at X with four catches on nine targets for 54 and two touchdowns: the 42-yard Bunch Mesh with HALF on second-and-long from the Indianapolis 42 at 12:37 of the second quarter, with no tackler recorded, and the 3-yard Boot Flood Right from the 3 on second-and-goal at 2:40 of the third; the 2 on the Trey Stick and the 7 on the Y-Cross with SOLID on the first field-goal drive. Five throws his way fell incomplete, the Y-Cross with SOLID twice (the opener's seventh call and the first-and-10 from the Indianapolis 17), the Drive with HALF in the two-minute drive, the Trey Stick and the first Boot Flood Right from the 7; the play-by-play names no defender on any of them, so the separation and the throw are the film's. A minor lower-extremity injury was logged at the end of the third-quarter drive that ended with Cousins's touchdown run at 6:20; he was not removed and the second touchdown came after it: out, projected return September 26, reassessment September 22 ([medical record](../../Medical/incidents/davante_adams_2014-09-21.md)). No role change follows; Nicks's return to X still waits on a full practice week.
+
+Source: [Week 3 game record](../../../05_Regular_Season/Games/Week_03/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 2 | 2 | 25 | 14 | 148 | 10.6 | 0 | 51 | 0 | 0 | 0 | 0 | 0 | 56.0 | 0 | 0 | — | 0 | 0 | — | 0 |
+| 2014 | Jacksonville | Through Week 3 | 3 | 34 | 18 | 202 | 11.2 | 2 | 51 | 0 | 0 | 0 | 0 | 0 | 52.9 | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 

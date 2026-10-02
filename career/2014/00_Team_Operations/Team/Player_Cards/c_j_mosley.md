@@ -139,7 +139,7 @@ Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) an
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 2 | 2 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
+| 2014 | Jacksonville | Through Week 3 | 3 | 4 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 
