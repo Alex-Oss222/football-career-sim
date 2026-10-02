@@ -144,13 +144,19 @@ Posluszny delivered the call with Smith removed and fitted his assigned Under re
 
 Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
 
+### September 28, 2014 | Week 4, Jacksonville at San Diego
+
+All 64 defensive snaps with seven tackles, five solo, and a pressure: the sack of Rivers for 4 on third-and-1 in the third quarter over Rinehart's slot, which forced a punt, the tackle on Brown's 14-yard run to the Jacksonville 13 and on Woodhead's 11 on San Diego's last possession, and the shared tackle on Allen's 38-yard catch. The play-by-play records the tackle and the slot and not the fit or the rush path; the runs on the touchdown drives are Bush's and Crennel's film items with Stone. A minor trunk injury was logged at the end of the first half, at the end of San Diego's two-minute possession; he was not removed and the sack came after it: out, projected return October 3, reassessment September 29 ([medical record](../../Medical/incidents/paul_posluszny_2014-09-28.md)). No role change follows.
+
+Source: [Week 4 game record](../../../05_Regular_Season/Games/Week_04/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 3 | 3 | 20 | 13 | 7 | 2 | 1 | 1 | 1 | 1 | 0 | 0 | 221 | Unrecorded | 21 | 0 | 0 | — | 0 | 0 | — | 0 |
+| 2014 | Jacksonville | Through Week 4 | 4 | 27 | 18 | 9 | 2 | 2 | 2 | 1 | 1 | 0 | 0 | 285 | Unrecorded | 21 | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 

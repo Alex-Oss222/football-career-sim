@@ -113,7 +113,7 @@ No NFL season. The college record is described qualitatively above; no college s
 
 | Season | Team(s) | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 3 | 3 | 3 | 2 | 46 | 23.0 | 0 | 32 | 0 | 0 | 0 | 0 | 0 | 66.7 | 0 | 0 | — | 0 | 0 | — | 2 |
+| 2014 | Jacksonville | Through Week 4 | 4 | 4 | 2 | 46 | 23.0 | 0 | 32 | 0 | 0 | 0 | 0 | 0 | 50.0 | 0 | 0 | — | 0 | 0 | — | 3 |
 
 ## Playoff statistics by year
 

@@ -149,13 +149,19 @@ Reassessed Monday with no change and cleared Friday, September 19, his projected
 
 Source: [Week 3 record](../../../05_Regular_Season/Games/Week_03/output.md) and the [medical history](../../Medical/medical_history.md#september-15-to-20-stanford-johnson-hoskins-and-nicks-cleared-harris-and-lowery-reassessed). This coaching update preserves the opening grades above.
 
+### September 28, 2014 | Week 4, Jacksonville at San Diego
+
+Thirty-two defensive snaps as the third linebacker with four tackles: the 6-yard stop of Woodhead at the Jacksonville 13 on San Diego's first touchdown drive, one snap before Woodhead's 19-yard touchdown run, then Woodhead's 8-yard run and Floyd's 8-yard catch on third-and-4 before the half, and a shared tackle on Rivers's 3-yard scramble; a pressure. The play-by-play records the tackle and not the fit, so the run fits on the touchdown drives are Bush's film items. A minor lower-extremity injury was logged at the end of that first touchdown drive at 13:04 of the second quarter; he was not removed and three of the four tackles came after it: limited, with no time lost projected, reassessment September 29 ([medical record](../../Medical/incidents/julian_stanford_2014-09-28.md)). No role change follows.
+
+Source: [Week 4 game record](../../../05_Regular_Season/Games/Week_04/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 3 | 3 | 20 | 14 | 6 | 0 | 2 | 3 | 1 | 0 | 0 | 0 | 110 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
+| 2014 | Jacksonville | Through Week 4 | 4 | 24 | 17 | 7 | 1 | 2 | 4 | 1 | 0 | 0 | 0 | 142 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 

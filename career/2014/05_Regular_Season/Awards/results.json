@@ -439,5 +439,152 @@
     "winner_index": 1
    }
   }
+ },
+ "week-4": {
+  "kind": "week",
+  "key": "4",
+  "label": "Week 4",
+  "order": 4,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2014-award-week04-afc-offense-v1-2014",
+    "packet_sha256": "96e3190e58be5ffb3875bc89bdd2b80671b8a959ebfc97a9a5150dcab47367c6",
+    "result_ref": "959f5c644defda8c2f92ebcb9ddef7df418c3a91d3858cbdc59ad985286af4f3",
+    "shortlist": [
+     {
+      "player": "C.J. Spiller",
+      "team": "Buffalo Bills",
+      "score": 34.2
+     },
+     {
+      "player": "DeAndre Hopkins",
+      "team": "Houston Texans",
+      "score": 28.6
+     },
+     {
+      "player": "Le'Veon Bell",
+      "team": "Pittsburgh Steelers",
+      "score": 27.9
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2014-award-week04-afc-defense-v1-2014",
+    "packet_sha256": "0018628f2d1c3efa392f6ec811e32b40c7642d06309aa016574354981bd88e42",
+    "result_ref": "4f6fd3511547e8eb05a552f54981426328ec8398cefcc3469dda91baee1eeda5",
+    "shortlist": [
+     {
+      "player": "Mike Mohamed",
+      "team": "Houston Texans",
+      "score": 26.5
+     },
+     {
+      "player": "Brandon Spikes",
+      "team": "Buffalo Bills",
+      "score": 22.5
+     },
+     {
+      "player": "Jimmy Smith",
+      "team": "Baltimore Ravens",
+      "score": 17.3
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2014-award-week04-afc-special_teams-v1-2014",
+    "packet_sha256": "ce8e5eb6dce571188b23021f2b782aec7b8f93e913a2ac80afebe33824ba3262",
+    "result_ref": "a1995b9185448e1a7eae06cde8f6b2540756f6d2d0e00ec665d8170a98b0abc1",
+    "shortlist": [
+     {
+      "player": "Ryan Succop",
+      "team": "Tennessee Titans",
+      "score": 16.0
+     },
+     {
+      "player": "Justin Tucker",
+      "team": "Baltimore Ravens",
+      "score": 14.0
+     },
+     {
+      "player": "Shaun Suisham",
+      "team": "Pittsburgh Steelers",
+      "score": 14.0
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-offense": {
+    "event_id": "2014-award-week04-nfc-offense-v1-2014",
+    "packet_sha256": "363223165674b31ab1c76161305b3f42b63ba79d352cd848dbd4d6882806c96d",
+    "result_ref": "26dc61ce6567238cc4a6028e896b57510967eb0e906c1a3aba421de402845e51",
+    "shortlist": [
+     {
+      "player": "Alfred Morris",
+      "team": "Washington Redskins",
+      "score": 38.7
+     },
+     {
+      "player": "Tony Romo",
+      "team": "Dallas Cowboys",
+      "score": 30.32
+     },
+     {
+      "player": "Mark Ingram",
+      "team": "New Orleans Saints",
+      "score": 28.3
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2014-award-week04-nfc-defense-v1-2014",
+    "packet_sha256": "d221a595e853a00168b88abc4ff657ca6bce4d319209d6790542a02344141ea0",
+    "result_ref": "8dee5fa3211d6e877345fc33227889189ae99f3d408a82ac1016c93bb2d7f7d9",
+    "shortlist": [
+     {
+      "player": "Thomas Davis",
+      "team": "Carolina Panthers",
+      "score": 27.5
+     },
+     {
+      "player": "Paul Worrilow",
+      "team": "Atlanta Falcons",
+      "score": 26.5
+     },
+     {
+      "player": "Ryan Kerrigan",
+      "team": "Washington Redskins",
+      "score": 25.0
+     }
+    ],
+    "winner_index": 2
+   },
+   "NFC-special_teams": {
+    "event_id": "2014-award-week04-nfc-special_teams-v1-2014",
+    "packet_sha256": "317ee41afef9deaf46913fd7594813615c6532e253ea6f19eb2cd33df6b48eda",
+    "result_ref": "fd754c4a77293cde1f5ff9dcd303a82f7940f35277ed782c933ad253078dd4f5",
+    "shortlist": [
+     {
+      "player": "Jeremy Ross",
+      "team": "Detroit Lions",
+      "score": 17.4
+     },
+     {
+      "player": "Josh Brown",
+      "team": "New York Giants",
+      "score": 12.0
+     },
+     {
+      "player": "Shayne Graham",
+      "team": "New Orleans Saints",
+      "score": 12.0
+     }
+    ],
+    "winner_index": 1
+   }
+  }
  }
 }

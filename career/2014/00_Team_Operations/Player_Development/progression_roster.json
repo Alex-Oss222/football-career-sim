@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "season": 2014,
-  "as_of": "September 28, 2014, game day at San Diego before kickoff; no transaction since September 8; Kelce and Talib cleared September 25 and Adams September 26, Butler and Poyer out for Week 4 on their holds",
+  "as_of": "September 28, 2014, after the Week 4 game at San Diego",
   "roster_source": "career/2014/00_Team_Operations/Team/Roster/roster.md",
   "continuity_source": "career/2014/00_Team_Operations/Player_Development/2013_exit_player_index.json",
   "policy": "Roster controls eligibility. The exit index identifies Jacksonville 2013 continuity only. Regenerate after any transaction or draft addition before progression is resolved.",
