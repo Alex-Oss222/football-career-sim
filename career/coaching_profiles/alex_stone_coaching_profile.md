@@ -94,7 +94,7 @@ He uses tight ends and motion to add a blocking surface or change the point of a
 
 ## 6. Defense
 
-Stone delegates defensive calling to Crennel and stays involved in the plan. He wants the front and coverage working together, with enough disguise to make the quarterback confirm what he saw before the snap. His offensive background makes him especially interested in protection rules and the throws an opponent trusts under pressure.
+Stone delegated defensive calling to Crennel through Week 3 of 2014 and, by his September 21, 2014 instruction, calls the defense himself from Week 4, with Crennel coordinating the unit and its preparation; he stays involved in the plan. He wants the front and coverage working together, with enough disguise to make the quarterback confirm what he saw before the snap. His offensive background makes him especially interested in protection rules and the throws an opponent trusts under pressure.
 
 ### Pass Defense
 
@@ -130,7 +130,7 @@ His larger adjustments come from practiced football: quick game, screens, a diff
 
 Stone starts a player with a job he can perform now. A receiving tight end can work from the slot or wing while his attached blocking develops. A powerful runner can contribute on early downs while learning protection. He changes the help and the assignment before giving up on the player.
 
-He prefers a backfield committee with overlapping skills. He can feature the outside-zone runner, use another behind pullers and lean on his best protector in passing situations without making every substitution an announcement of the play.
+He prefers a backfield committee with overlapping skills; for Jacksonville from Week 4 of 2014 his instruction is a hierarchy instead, Jones-Drew first, Anderson second and Grimes third. He can feature the outside-zone runner, use another behind pullers and lean on his best protector in passing situations without making every substitution an announcement of the play.
 
 An overmatched tackle can get a chip or protection help. An H-back can take a pulling job. A reserve entering the lineup gets calls he has practiced. Stone will remove a favored package when the available players cannot carry it, while retaining familiar terminology and useful parts of the offense.
 

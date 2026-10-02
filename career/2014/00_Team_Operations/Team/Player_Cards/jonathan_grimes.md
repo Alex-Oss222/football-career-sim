@@ -145,6 +145,12 @@ Grimes kept the taught run track, with no correction recorded. The team protecti
 
 Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
 
+### September 22 to 27, 2014 | Third back; inactive for San Diego
+
+Third back in Stone's explicit hierarchy (Jones-Drew, Anderson, Grimes; no committee). Inactive for San Diego as the packet's next healthy inactive once Nicks completed his full practice week, after Westhoff's unit check found no defined coverage job on him (one kicking-game snap in Week 3). Not a finding on his work; nothing charged to him on the recorded reps.
+
+Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

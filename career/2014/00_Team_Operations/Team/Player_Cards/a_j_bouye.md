@@ -150,6 +150,12 @@ Forty-six defensive snaps across the second-quarter substitution beside the vete
 
 Source: [preseason game 4 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 22 to 27, 2014 | The nickel
+
+The nickel for San Diego with Poyer on his hold, the packet's job kept whether or not Talib cleared: the Nickel Even and Dime work all week, the motion exchange and the split-declaration walkthrough Monday, the Quarters and 6 snaps Wednesday, and the slot rusher's job in the Replace calls and the interior-mug presentation Thursday, naming his contain and replacement without prompting in the Saturday walkthrough. Nothing charged to him on the recorded reps. Fifth in the defensive-back order for Week 4 (Stone's decision, September 27).
+
+Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

@@ -166,6 +166,12 @@ Thirty-six defensive snaps at the nickel and 13 on the kicking game with no tack
 
 Source: [Week 3 game record](../../../05_Regular_Season/Games/Week_03/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 22 to 27, 2014 | Hold continues
+
+His independent medical hold was reassessed Saturday, September 27, with no change, projected return October 9; no football work in the San Diego week; out on the Friday report and inactive by medical instruction for Week 4, listed last among the defensive backs while out, with Bouye at nickel. On the projection he also misses the Pittsburgh game. The staff's no-transaction recommendation went to Caldwell; no transaction was made. No football finding attaches to the hold.
+
+Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md) and the [medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

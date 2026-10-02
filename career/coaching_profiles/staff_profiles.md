@@ -14,9 +14,9 @@ The linked exits and [player assessments](../2014/00_Team_Operations/Player_Deve
 
 **Next observation:** reconcile one shared protection rule across QB/center/back, document a disagreement before the call sheet freezes, and review a real change of game direction with Stone. Identify what Tice recommended and what was actually called. Sources: [January review](../2013/season_review/stone_2013_review_and_exit_interview.md), [Cousins](../2013/exit_interviews/main_core/kirk_cousins.md), [Kelce](../2013/exit_interviews/core/travis_kelce.md).
 
-## Romeo Crennel: defensive coordinator and caller
+## Romeo Crennel: defensive coordinator
 
-**Current responsibility:** defensive plan, installation, calls and staff coordination. Stone's authored defensive system does not remove that calling authority.
+**Current responsibility:** defensive plan, installation, preparation, call transmission and staff coordination. He called the defense through Week 3 of 2014; from Week 4 Stone calls it by his September 21, 2014 instruction, and Crennel transmits the call and the between-snap information. Stone's authored defensive system did not remove that calling authority; the change is Stone's choice of caller.
 
 **Working synthesis:** a full year with this front and secondary adds concrete experience beyond his extensive entry résumé. The records describe useful front/fit operation and communication during teammate absences. They also leave questions about when the front call arrived and how help was communicated. Those are specific shared-job issues, not a verdict from points allowed or sack totals. Smith's relay work is distinct from Crennel's sideline call.
 

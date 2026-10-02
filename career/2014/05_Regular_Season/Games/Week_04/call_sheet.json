@@ -1,0 +1,497 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "event": "2014 regular season Week 4, Jacksonville at San Diego, September 28, 2014",
+ "status": "EX_ANTE_CALL_SHEET_FROZEN",
+ "frozen": "2014-09-27, after the Saturday hotel and stadium review, the opener, substitution and defensive-signal walkthrough, the final medical and 46 check and the quarterback and staff review; before any draw",
+ "provenance": "Stone's Week 4 packet of September 21, 2014 (career/2014/05_Regular_Season/Games/Week_04/Week 4 Packet_ at San Diego.md: the Indianapolis self-scout, the San Diego evidence, the HC direction table, the practice scripts, the proposed opening menu of 30 calls, the situational offense, the defensive sheet, the special-teams sheet, the provisional inactives and the Saturday freeze checklist), issued by Stone and applied September 22 to 27, its Decision status adopted. The packet installs a special-play folder and TE Delay for retention on practice evidence, lifting the standing game-week exclusion for those items only; every call below is from the active 2013 offensive book (Iteration I). Retained from the program: the Week 3 menu minus 11 Trey Stick, which the packet does not name. Installed this week and retained on the Thursday evidence: TE Delay from Wing and Trey and the Flea Flicker from 12 Ace with MAX. Installed and cut Friday: the Throwback Screen, its receiver, side and releasing blockers named nowhere on the record, so its retention requirement could not be shown met (career/2014/05_Regular_Season/Games/Week_04/output.md, section 1, the reduction call by call). The packet's opening menu numbers 30 calls with ten planned returns (R) to a picture already shown; each return is the same call, so the opener carries 19 distinct calls with the packet's numbering in 'opener' and the returns in 'opener_returns', position 26 vacant. The Trey TE Delay, Spacing from Doubles (two-minute and PRESS only) and Snag (low red zone and two-point only) complete 22 distinct calls. Boot Flood Right joins the four-minute and high-red-zone folders by Stone's instruction. The label stream reads each call's menus, opener position and returns (kernel 2014.5); the returns, conditions, triggers, gates and alerts remain in-game coaching guidance the kernel does not condition on, and none of these fields enters the outcome packet.",
+ "menus": {
+  "opening_sequence": "Stone's order as the packet numbers it: 12 Ace Power Right (1); 12 SHIFT Empty Stick (2); 11 Bunch Mesh HALF (3); 12 Trey Y-Cross SOLID (4); 12 Wing Outside Zone Left (5, the edge recorded for 8 and 24); 11 Trips Inside Zone + Bubble (6, the taught count only); 12 Ace Counter Right (7); 12 Wing Boot Flood Right (8, only after a confirmed backside chase); the return to 2 (9); 11 Doubles Drive HALF (10); the return to 1 (11); 12 Trey Y-Cross HALF (12, only against a clean count, SOLID otherwise); 11 Doubles RB Slow Screen (13, only with a pressure reason); 12 Ace Power Left (14); the return to 3 (15); 12 Wing TE Delay (16, Week 4 install, only with a pressure reason); 11 Doubles Stick SCAT (17); 12 Ace Power Pass / Post-Cross MAX (18, conditional on the setup and protection); 11 Doubles Inside Zone Right (19, favorable structure only); the return to 5 (20); 12 Ace Flea Flicker MAX (21, Week 4 install, only after San Diego's safety has been seen fitting the Power action aggressively); 11 SHIFT Empty Spacing SCAT (22); the returns to 7, 8 and 4 (23 to 25); 26 vacant, the Throwback Screen cut at the Friday reduction and no replacement named, so Tice skips the number; 11 Trey Dagger HALF (27, eligible downs and clean protection only); the returns to 1, 3 and 2 (28 to 30). The script repeats calls deliberately to test San Diego's rules against twelve personnel, the tight ends and the shift, not to show thirty plays. Situational football overrides it; an unused opening call remains available; no call exists merely because it has a number. Call control, unchanged from Week 3 and now with Stone calling both sides: Tice tracks the next eligible opener number and the situation folder beside Stone and is the one voice that tells him when the situation has overridden the opener; Bates supplies quarterback and protection information only; Crennel prepares the defensive situation and protection information and transmits Stone's defensive call; Skalaski relays clock, timeouts, the next fourth-down decision point and booth replay or challenge information; Stone makes every call and every decision",
+  "normal_down": "first-and-10: Power, Counter, Outside Zone, Stick, Y-Cross, Drive; second-and-1-to-3: Power and Counter, the conditional Power Pass; second-and-4-to-6: Mesh, Y-Cross, the access, Boot Flood Right; Jones-Drew is the back unless Stone deliberately sends Anderson; tight-end leverage emphasized without a target quota; the Flea Flicker is not a normal-down call on this sheet",
+  "second_and_long": "Y-Cross SOLID, Mesh HALF, Drive HALF, the RB Slow Screen, TE Delay from Wing or Trey; protection settled first; the screen and the delay only against a credible rush",
+  "third_down": "third-and-1-2: Power, Counter, Mesh, Inside Zone + Bubble (no Dagger on this card); third-and-3-5: Stick SCAT, Mesh HALF, Drive HALF, hot against the extra rusher; third-and-6-9: Y-Cross SOLID, Drive HALF, Dagger HALF gated on protection, the Slow Screen with a rush reason; third-and-10-or-more: Y-Cross SOLID, the protected Dagger only if clean, Drive for the yards after the catch, the screen against pressure; protection before route count; Reyes does not dictate a long-set game",
+  "backed_up": "Power, Inside Zone, Outside Zone, Stick SCAT; no special play and no Power Pass",
+  "fourth_down": "the required-yardage folder from the corresponding situational menu; Stone retains the go, kick or punt decision on the score, the field position, the distance and the clock, with Skalaski's relay of the decision point",
+  "red_zone": "high red zone (20-11): Power, Y-Cross SOLID, Mesh, Boot Flood Right, TE Delay (retained); low red zone (10-5): Bunch Mesh, Snag (here only), Power, Counter, Boot Flood Right where the edge rule allows; no new gadget because the field is short; goal line (4-in): Power Right, Power Left, Counter Right, Jones-Drew the back",
+  "two_point": "the six-call folder carried from Week 3, the Week 4 packet not changing it and no Week 4 two-point period being scripted: 12 Ace Power Right; 12 Ace Counter Right; 11 Bunch Mesh HALF; 11 Bunch Snag; 12 Wing Boot Flood Right; 12 SHIFT Empty Stick; leverage decides; no special play",
+  "two_minute": "Spacing SCAT (from Doubles or the shift to Empty), Stick SCAT, Drive HALF, Mesh HALF, the RB Slow Screen; mastered calls only; the clock and the timeouts decide middle against sideline",
+  "PRESS_sequence": "one sequence of mastered calls by signal and word: 11 Doubles Stick SCAT, 11 Doubles Spacing SCAT, 11 Bunch Mesh HALF, 11 Doubles Drive HALF, the slow screen",
+  "four_minute": "Power, Counter, Outside Zone, the Y-Cross SOLID and the Boot Flood Right when San Diego sells out against the run; first downs end games, run count does not; the prepared pass stays on Stone's card",
+  "sudden_change": "Power or Counter, or the Wing Outside Zone to Boot Flood Right pair, first; the Flea Flicker only with its actual setup in this game",
+  "final_play_of_half": "the Power Pass / Post-Cross with MAX from legitimate scoring range only; otherwise the clock situation is executed",
+  "empty_rule": "the shift toward Empty from twelve personnel and the shift to Empty from eleven personnel, both practiced; the static Empty is off (not taught)",
+  "receiver_arrangement": "Adams the X, Thielen the H, Hawkins the Z, from the season game depth chart; Adams cleared Friday and did not take the Friday practice, so Hurns, the fourth receiver with the rehearsed relief job, carried the first-group receiver work Wednesday and Thursday; Nicks, after a full practice week, dresses as the fifth receiver and remains listed sixth, his return to X with Adams to Z an open Stone decision; Gabriel inactive. Lewis, Kelce, Jensen and Hoskins the tight ends: Lewis the delay tight end; Kelce cleared Thursday and back in the second tight end's work; Hoskins dressed as the fourth tight end. Jones-Drew the lead back (RB1) with no touch quota; Anderson relieves by series or a defined package and is not alternated to equalize work; Grimes inactive"
+ },
+ "notes": [
+  "Stone's Week 4 packet lifts the standing game-week exclusion for the items it names and only those: TE Delay, the Flea Flicker and the Throwback Screen on offense; Dime personnel, Cover 6 with the Under Passing declaration, the book's Replace change-up declared to the field or the boundary edge, interior mugs from Dime and Nickel Fire 3 on defense. Each is a page of the active 2013 books (Iteration I) installed this week and retained or cut on its own practice evidence. The Throwback Screen was cut at the Friday reduction: the book, the packet and the week's install name no receiver, side or releasing blockers for it, so its retention requirement (sell and timing clean, no illegal release or block timing) cannot be shown met; position 26 is vacant. Every other untaught page stays off: the Choice tag, the Y-Iso alignment, the dropback Sail, the Alert Post tag, Texas/Angle, Split Leak, the static Empty, the 6OL package, Trap, Wham and the Halfback Pass (the book's carry rule requires a back who has demonstrated the throw, and none has); 11 Trey Stick is not on the Week 4 packet and is not carried; Boot Flood Left is not on the packet and stays off, nothing having earned it back.",
+  "TE Delay is frozen twice, from 12 Wing (opener 16) and from 12 Trey, because Thursday's three reps came from both protection pictures and the formation is a frozen field. Lewis was the delay tight end on Wednesday's three candidate reps and Thursday's three reps, the job he ran in 2013; the label stream credits a tight end by group, not by name. The cause of the two 2013 TE Delay sacks that Lewis asked about in his exit interview is still open: the 2013 game books record the rusher and the call and not the cause.",
+  "The Flea Flicker is not in the 2013 call-family map, so it carries an explicit target, the receivers and tight end in MAX's two- or three-man route in twelve personnel (book section 8); it is typed pass, the handoff and pitch back being a fake. Its game trigger, San Diego's safety seen fitting the 12 Ace Power action aggressively in this game, is coaching guidance the kernel does not condition on, as are the Power Pass setup, the Boot Flood Right edge rule, the Y-Cross HALF count, the Dagger gate, the screen's and the delay's rush reasons and the planned returns. The menus and opener positions are read by the label stream only (kernel 2014.5) and never enter the outcome packet; the kernel draws no two-point try, so the two-point folder is carried for the record.",
+  "Formation modifiers, direction, motion and protection are descriptive fields the kernel freezes in the canonical sheet for audit. Distinct directions of the same family from the same picture (Power Right and Left from Ace) are distinct calls on the packet and are frozen as such. Protection defaults follow the book (quick game SCAT, five-man dropback HALF, heavy intermediate SOLID, shot MAX) and are named where the packet names them.",
+  "Defensive sheet (Stone calls the defense from this game, his September 21 instruction; Crennel, the defensive coordinator, ran the defensive preparation and transmits the call and the between-snap information; Daryl Smith receives it and owns the first declaration; sideline guidance the kernel does not read): the practiced menu only. Fronts and personnel: Under, Nickel Even and Dime (six defensive backs, Bouye at nickel and Prosinski the sixth, Daryl Smith the one linebacker). Coverage: Quarters and 6 by the book's match rules, Quarters against balanced distributions and 6 with quarters toward passing strength against 3x1, 1 Robber the man change-up, Cover 3 kept as Stone's emergency simplification and not the normal answer. Pressure: the base four-man rush; the book's Replace change-up declared to the field or the boundary edge (the named edge drops to the hot and curl, Bouye from the slot or Prosinski from depth replaces the rush and owns the contain on that side, four rush); interior mugs from Dime showing up to seven and rushing four; Nickel Fire 3 the true fifth rusher, a counter only after a protection declaration. The rush-source rules: every simulated pressure rushes four unless Stone calls the five-man counter; each Replace call names its dropper, rusher, contain and hot replacement; San Diego's left-side sack record (six of Rivers's twelve sacks at Dunlap's slot) is a diagnostic target and not proof of a weak player; a disguise that opens an escape lane or leaves a receiver uncovered is a defensive error. By picture: 11 2x2, Nickel Even Quarters; 11 3x1, Nickel Even 6; second-and-long, Dime Quarters with Replace Field and Replace Boundary from the same picture; third-and-6-or-more, Dime Quarters or 6 with the Replace calls, Fire 3 only after the protection declaration; Empty, Dime 6 or Quarters with the interior mug and the opposite Replace source, rush four; 12 personnel, Under Y Quarters with the base four first; Gates and Green detached, the split coverage by passing strength with collision and distribution explicit and no bracket by reputation; Woodhead's motion, bumped or matched by the split rule without revealing the rush; third-and-3-5, Nickel Quarters or 1 Robber with a selective fifth rusher; red zone, Quarters and 1 Robber with reduced disguise; two-minute, current personnel, Quarters or 6, four rush, limited stem; late lead, Dime with Quarters or 6 and the four-man Replace calls. The tempo escape is Nickel Even Quarters (Under Quarters against base personnel): align and play, no disguise contest. Not installed: the eight-up presentation, which is in neither active book (the book's drop-eight is a different call), and any line game, Over, Bear or Odd front, SAM or WILL edge pressure, Cover 2 or Tampa. 'Split-match' is the packet's shorthand for Quarters and 6 played by the book's match rules, not a call; the book's Cover 1 and Cover 3 identity is unchanged and this week's emphasis is Stone's instruction for San Diego.",
+  "Special-teams sheet (Westhoff; sideline guidance the kernel does not read): Hawkins returns kicks and punts with Hurns the second punt returner; the Kreiter, Anger and Scobee operation unchanged; Friday's periods covered kickoff lane and placement, punt vice and the backed-up punt, and the hands and onside groups; the coverage units reconciled against the 46 on Friday with Poyer's and Butler's kicking-game places filled from the dressed players under Westhoff's technical control; Donald Brown (six kickoff returns for 119 in three games) and Eddie Royal (four punt returns for 30) the San Diego returners; no special-teams fake because the offense carries special plays; field-goal decisions on Scobee's game-day information and conditions, not a fixed range. The kernel reads the roles field of the game depth chart (Scobee, Anger, Hawkins) and places Kreiter as the snapper.",
+  "The seven inactives (Poyer and Butler on their independent medical holds; Grimes as the packet's next healthy inactive once Nicks completed the full practice week; Linsley, Edebali, Todd Davis and Gabriel, the packet's healthy-depth list) were set September 27; they are carried in game_depth_chart.json, not here. Talib, released Thursday, is back outside with Verner; Bouye is the nickel and Prosinski the sixth defensive back; Kelce, cleared Thursday, is back at the second tight end; Adams, cleared Friday, is the X. The Week 4 secondary order, the RB hierarchy and the open Stone decision on Nicks's return to X are recorded in the week's record."
+ ],
+ "offensive_call_sheet": [
+  {
+   "name": "12 Ace, Power Right",
+   "family": "Power",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "tags": [
+    "opener",
+    "two-point folder"
+   ],
+   "opener": 1,
+   "opener_returns": [
+    11,
+    28
+   ],
+   "menus": [
+    "normal down",
+    "third-and-short",
+    "backed up",
+    "high red zone",
+    "low red zone",
+    "goal line",
+    "two-point",
+    "four minute",
+    "sudden change"
+   ],
+   "what_stone_is_looking_at": "Opener 1 and the returns at 11 and 28: San Diego's front and safety fit against Jones-Drew's lead track; the return at 11 verifies whether the first fit was a rule or one call, the return at 28 goes back to the lead-back run"
+  },
+  {
+   "name": "12 SHIFT Empty, Stick",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Empty (after shift)",
+   "motion": "SHIFT toward Empty",
+   "tags": [
+    "opener",
+    "shift",
+    "tight ends",
+    "two-point folder"
+   ],
+   "opener": 2,
+   "opener_returns": [
+    9,
+    30
+   ],
+   "menus": [
+    "normal down",
+    "two-point"
+   ],
+   "what_stone_is_looking_at": "Opener 2 and the returns at 9 and 30: who handles Lewis and Kelce when twelve personnel spreads without a substitution; the returns repeat the tight-end match declaration and recheck it late"
+  },
+  {
+   "name": "11 Bunch, Mesh, HALF",
+   "family": "Mesh",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right",
+   "protection": "HALF",
+   "tags": [
+    "opener",
+    "two-point folder"
+   ],
+   "opener": 3,
+   "opener_returns": [
+    15,
+    29
+   ],
+   "menus": [
+    "normal down",
+    "2nd-and-long",
+    "third-and-short",
+    "third-and-medium",
+    "high red zone",
+    "low red zone",
+    "two-point",
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "Opener 3 and the returns at 15 and 29: the man or match exchange on Bunch and legal crossing spacing; skipped on bad spacing"
+  },
+  {
+   "name": "12 Trey, Y-Cross, SOLID",
+   "family": "Y-Cross",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey",
+   "protection": "SOLID",
+   "tags": [
+    "opener",
+    "tight ends"
+   ],
+   "opener": 4,
+   "opener_returns": [
+    25
+   ],
+   "menus": [
+    "normal down",
+    "2nd-and-long",
+    "third-and-long",
+    "high red zone",
+    "four minute"
+   ],
+   "what_stone_is_looking_at": "Opener 4 and the return at 25: the tight end against linebacker and safety depth behind the six-man protection, protection first; in the four-minute folder the prepared answer when San Diego sells out against Jones-Drew"
+  },
+  {
+   "name": "12 Wing, Outside Zone Left",
+   "family": "Outside Zone",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Left",
+   "tags": [
+    "opener"
+   ],
+   "opener": 5,
+   "opener_returns": [
+    20
+   ],
+   "menus": [
+    "normal down",
+    "backed up",
+    "four minute",
+    "sudden change"
+   ],
+   "what_stone_is_looking_at": "Opener 5 and the return at 20: edge fit and pursuit from Wing, recorded for the boot at 8 and 24; the return reconfirms the pursuit"
+  },
+  {
+   "name": "11 Trips, Inside Zone + Bubble",
+   "family": "Inside + Bubble",
+   "type": "mixed",
+   "personnel": "11",
+   "formation": "11 Trips Right",
+   "tags": [
+    "opener",
+    "access package"
+   ],
+   "opener": 6,
+   "menus": [
+    "normal down",
+    "third-and-short"
+   ],
+   "what_stone_is_looking_at": "Opener 6: the box and overhang count against Trips; the access only by the taught count"
+  },
+  {
+   "name": "12 Ace, Counter Right",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "tags": [
+    "opener",
+    "two-point folder"
+   ],
+   "opener": 7,
+   "opener_returns": [
+    23
+   ],
+   "menus": [
+    "normal down",
+    "third-and-short",
+    "low red zone",
+    "goal line",
+    "two-point",
+    "four minute",
+    "sudden change"
+   ],
+   "what_stone_is_looking_at": "Opener 7 and the return at 23: the reaction after Power, the kick or log rule; the return attacks the flow response"
+  },
+  {
+   "name": "12 Wing, Boot Flood Right",
+   "family": "Boot Flood",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Wing Left",
+   "tags": [
+    "opener",
+    "movement pass",
+    "tight ends",
+    "two-point folder"
+   ],
+   "opener": 8,
+   "opener_returns": [
+    24
+   ],
+   "menus": [
+    "normal down",
+    "high red zone",
+    "low red zone",
+    "two-point",
+    "four minute",
+    "sudden change"
+   ],
+   "what_stone_is_looking_at": "Opener 8 and the return at 24, the existing edge rule: sent only after the backside edge is confirmed chasing on the Outside Zone; skipped if the edge stays home; in the four-minute and high-red-zone folders by Stone's Week 4 instruction"
+  },
+  {
+   "name": "11 Doubles, Drive, HALF",
+   "family": "Drive",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "protection": "HALF",
+   "tags": [
+    "opener"
+   ],
+   "opener": 10,
+   "menus": [
+    "normal down",
+    "2nd-and-long",
+    "third-and-medium",
+    "third-and-long",
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "Opener 10: underneath and hook leverage; protection first"
+  },
+  {
+   "name": "12 Trey, Y-Cross, HALF",
+   "family": "Y-Cross",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey",
+   "protection": "HALF",
+   "tags": [
+    "opener",
+    "protection gate",
+    "tight ends"
+   ],
+   "opener": 12,
+   "menus": [
+    "normal down"
+   ],
+   "what_stone_is_looking_at": "Opener 12, conditional: the same tight-end concept with lighter protection, sent only against a clean count; SOLID if the count is dirty (the protection gate)"
+  },
+  {
+   "name": "11 Doubles, RB Slow Screen",
+   "family": "RB Slow Screen",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "tags": [
+    "opener",
+    "screen",
+    "pressure answer"
+   ],
+   "opener": 13,
+   "menus": [
+    "normal down",
+    "2nd-and-long",
+    "third-and-long",
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "Opener 13: the rush response; sent only with a pressure reason"
+  },
+  {
+   "name": "12 Ace, Power Left",
+   "family": "Power",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "tags": [
+    "opener"
+   ],
+   "opener": 14,
+   "menus": [
+    "normal down",
+    "third-and-short",
+    "backed up",
+    "high red zone",
+    "low red zone",
+    "goal line",
+    "four minute",
+    "sudden change"
+   ],
+   "what_stone_is_looking_at": "Opener 14: whether San Diego's front travels with the declared strength"
+  },
+  {
+   "name": "12 Wing, TE Delay",
+   "family": "TE Delay",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Wing",
+   "tags": [
+    "opener",
+    "screen",
+    "tight ends",
+    "Week 4 install"
+   ],
+   "opener": 16,
+   "menus": [
+    "2nd-and-long",
+    "high red zone"
+   ],
+   "what_stone_is_looking_at": "Opener 16, a pressure call: the tight end's block-to-release against an aggressive rush, Lewis's job as installed this week; second-and-7-or-more and the high red zone only; skipped without a pressure reason; never backed up"
+  },
+  {
+   "name": "12 Trey, TE Delay",
+   "family": "TE Delay",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey",
+   "tags": [
+    "screen",
+    "tight ends",
+    "Week 4 install"
+   ],
+   "menus": [
+    "2nd-and-long",
+    "high red zone"
+   ],
+   "what_stone_is_looking_at": "The same delay from the Trey protection picture, as installed Thursday; second-and-7-or-more and the high red zone only, with a pressure reason"
+  },
+  {
+   "name": "11 Doubles, Stick, SCAT",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "protection": "SCAT",
+   "tags": [
+    "opener",
+    "pressure answer"
+   ],
+   "opener": 17,
+   "menus": [
+    "normal down",
+    "third-and-medium",
+    "backed up",
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "Opener 17: the immediate pressure answer with the hot declared"
+  },
+  {
+   "name": "12 Ace, Power Pass / Post-Cross, MAX",
+   "family": "Power Pass",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "protection": "MAX",
+   "tags": [
+    "opener",
+    "conditional",
+    "shot"
+   ],
+   "opener": 18,
+   "menus": [
+    "normal down",
+    "final play of half"
+   ],
+   "what_stone_is_looking_at": "Opener 18, conditional: the safety's response after Power, on a clean protection and setup picture; no second shot because the first misses; not on the backed-up menu"
+  },
+  {
+   "name": "11 Doubles, Inside Zone Right",
+   "family": "Inside Zone",
+   "type": "run",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "tags": [
+    "opener"
+   ],
+   "opener": 19,
+   "menus": [
+    "normal down",
+    "backed up"
+   ],
+   "what_stone_is_looking_at": "Opener 19: the light-box test; favorable structure only"
+  },
+  {
+   "name": "12 Ace, Flea Flicker, MAX",
+   "family": "Flea Flicker",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "protection": "MAX",
+   "target": [
+    "WR",
+    "TE"
+   ],
+   "tags": [
+    "opener",
+    "special play",
+    "shot",
+    "Week 4 install"
+   ],
+   "opener": 21,
+   "menus": [
+    "sudden change"
+   ],
+   "what_stone_is_looking_at": "Opener 21 and the sudden-change folder, a shot with setup: the 12 Ace Power action, Jones-Drew's handoff and pitch back to Cousins, MAX protection and the vertical throw; called only after San Diego's safety has been seen fitting the Power action aggressively in this game; Jones-Drew's exchange only, never on Anderson's relief series; never backed up, never the low red zone"
+  },
+  {
+   "name": "11 SHIFT Empty, Spacing, SCAT",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Empty (after shift)",
+   "motion": "SHIFT to Empty (back-to-empty)",
+   "protection": "SCAT",
+   "tags": [
+    "opener",
+    "shift"
+   ],
+   "opener": 22,
+   "menus": [
+    "normal down",
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "Opener 22: the back-to-empty communication; skipped if the formation is not clean"
+  },
+  {
+   "name": "11 Trey, Dagger, HALF",
+   "family": "Dagger",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Trey Right",
+   "protection": "HALF",
+   "tags": [
+    "opener",
+    "protection gate"
+   ],
+   "opener": 27,
+   "menus": [
+    "normal down",
+    "third-and-long"
+   ],
+   "what_stone_is_looking_at": "Opener 27, conditional: the intermediate middle on eligible downs only (first-and-10, second-and-4-to-6, third-and-6-or-more) behind clean protection; off the third-and-short card"
+  },
+  {
+   "name": "11 Doubles, Spacing, SCAT",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "protection": "SCAT",
+   "tags": [
+    "two-minute"
+   ],
+   "menus": [
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "Two-minute and the PRESS sequence only: the underneath zone distribution by signal and word, rehearsed Friday"
+  },
+  {
+   "name": "11 Bunch, Snag",
+   "family": "Snag",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right",
+   "tags": [
+    "red zone",
+    "two-point folder"
+   ],
+   "menus": [
+    "low red zone",
+    "two-point"
+   ],
+   "what_stone_is_looking_at": "Low red zone and the two-point folder only: Tice confirms the field zone before the call leaves the sideline"
+  }
+ ]
+}

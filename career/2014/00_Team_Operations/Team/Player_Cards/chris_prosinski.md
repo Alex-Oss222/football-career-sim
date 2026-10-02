@@ -136,6 +136,12 @@ A coverage-unit safety with useful straight-line range and a reserve defensive r
 
 Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
 
+### September 22 to 27, 2014 | The sixth defensive back
+
+The sixth defensive back in Dime, the first team work of the dime lane he cross-trained in the spring: the Dime Quarters, 6 and Replace snaps Thursday as the added defender from depth, the Friday closeout and third-down periods, and the communication walked Saturday. Nothing charged to him on the recorded reps. Sixth in the defensive-back order for Week 4 (Stone's decision, September 27); coverage units.
+
+Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

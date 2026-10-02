@@ -142,6 +142,12 @@ Lewis sustained the recorded attached blocks against Davis. The observation supp
 
 Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
 
+### September 22 to 27, 2014 | TE Delay
+
+The delay tight end on the three Wednesday candidate reps and the three Thursday reps from the Wing and Trey pictures, the job he ran in 2013: the block sell, the delayed release and the line's escort clean on the recorded reps with no free contact on Cousins, and the call retained for San Diego. The cause of the two 2013 TE Delay sacks he asked about in his exit interview is still open; nothing this week answered it. He also led the tight-end work Monday through Wednesday with Kelce out. Nothing charged to him on the recorded reps.
+
+Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

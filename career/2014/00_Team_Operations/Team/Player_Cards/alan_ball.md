@@ -147,6 +147,12 @@ Signed September 8 after a physical with no finding; the complete active books i
 
 Source: [Week 2 record](../../../05_Regular_Season/Games/Week_02/output.md). This coaching update preserves the opening grades above.
 
+### September 22 to 27, 2014 | Active for San Diego
+
+The outside work in the packet's Talib-out picture Monday and Wednesday before Talib's release, then the reserve outside cornerback behind Talib and Verner. Active for San Diego for the first time since his signing, with Poyer and Butler on their holds and the eighth healthy defensive back; eighth in the Week 4 order. Nothing charged to him on the recorded reps.
+
+Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

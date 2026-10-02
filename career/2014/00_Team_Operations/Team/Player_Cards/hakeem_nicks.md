@@ -147,6 +147,12 @@ Cleared Saturday, September 20, his projected date, after not practicing Wednesd
 
 Source: [Week 3 record](../../../05_Regular_Season/Games/Week_03/output.md) and the [medical history](../../Medical/medical_history.md#september-15-to-20-stanford-johnson-hoskins-and-nicks-cleared-harris-and-lowery-reassessed). This coaching update preserves the opening grades above.
 
+### September 22 to 27, 2014 | The full practice week
+
+Full in every session of the San Diego week, the Monday walkthrough, the Wednesday, Thursday and Friday practices and the Saturday walkthrough, with no communicated restriction, Hurns carrying the first-group receiver work while Adams was out. The full practice week Stone's condition requires for his return to X is complete as a fact of the record; the condition is necessary and not sufficient, and his return to X with Adams to Z is Stone's decision, open at the freeze. Active for San Diego as the fifth dressed receiver under the packet's inactive alternative, Grimes inactive in his place; his chart place is unchanged. Nothing charged to him on the recorded reps.
+
+Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
