@@ -115,6 +115,7 @@ from __future__ import annotations
 
 import json
 import re
+from dataclasses import dataclass
 from datetime import date
 from functools import lru_cache
 from pathlib import Path
@@ -194,6 +195,56 @@ EDGE_CLAMP = 0.12
 # Legacy anchor path (TeamInputs without a strength record).
 LEGACY_ANCHOR_SCALE = 0.025
 LEGACY_ANCHOR_CENTRE = 2.0
+
+
+
+@dataclass(frozen=True)
+class StrengthParameters:
+    """Every resolution constant of one strength model version (kernel 2014.6
+    plumbing, batch B1). The kernel reads its profile's entry of PARAMETERS
+    (runtime.profiles.Profile.strength); the module constants above are the
+    honours-production-v3 entry, checked against their files by the tests."""
+    model: str
+    offense_slope: float
+    defense_slope: float
+    offense_centre: float
+    defense_centre: float
+    terms: tuple
+    sack_shift_clamp: float
+    int_edge_clamp: float
+    punter_slope: float
+    kicker_slope: float
+    kick_returner_slope: float
+    punt_returner_slope: float
+    fg_prob_floor: float
+    fg_prob_ceiling: float
+    home_edge: float
+    edge_clamp: float
+    legacy_anchor_scale: float
+    legacy_anchor_centre: float
+
+
+# Per-version table. Kernels 2014.4 and 2014.5 resolve with
+# honours-production-v3; a later model is a new entry, never an edit.
+PARAMETERS = {
+    MODEL: StrengthParameters(
+        model=MODEL, offense_slope=OFFENSE_SLOPE, defense_slope=DEFENSE_SLOPE,
+        offense_centre=OFFENSE_CENTRE, defense_centre=DEFENSE_CENTRE, terms=TERMS,
+        sack_shift_clamp=SACK_SHIFT_CLAMP, int_edge_clamp=INT_EDGE_CLAMP, punter_slope=PUNTER_SLOPE,
+        kicker_slope=KICKER_SLOPE, kick_returner_slope=KICK_RETURNER_SLOPE,
+        punt_returner_slope=PUNT_RETURNER_SLOPE, fg_prob_floor=FG_PROB_FLOOR, fg_prob_ceiling=FG_PROB_CEILING,
+        home_edge=HOME_EDGE, edge_clamp=EDGE_CLAMP, legacy_anchor_scale=LEGACY_ANCHOR_SCALE,
+        legacy_anchor_centre=LEGACY_ANCHOR_CENTRE),
+}
+
+
+def parameters(model=MODEL):
+    """The parameter-table entry of a strength model version; unknown raises."""
+    try:
+        return PARAMETERS[model]
+    except KeyError:
+        raise ValueError("no strength parameters are registered for model %r" % (model,)) from None
+
 
 DIVERGENCE = "2013-01-15"
 LAST_PRE_DIVERGENCE_SEASON = 2012
@@ -710,11 +761,12 @@ def unit_composites(strength, view, side, passer=None):
     return out
 
 
-def term_parts(units_by_side):
+def term_parts(units_by_side, params=None):
     """{term name: part} for every phase-2 term from the two sides' unit
     composites (a side without a record contributes no term)."""
+    params = params or parameters()
     parts = {}
-    for term in TERMS:
+    for term in params.terms:
         units = units_by_side.get(term["side"])
         if units is None:
             continue
@@ -722,11 +774,13 @@ def term_parts(units_by_side):
     return parts
 
 
-def drive_edge(offense_team, defense_team, off_view, def_view, passer, home_offense):
+def drive_edge(offense_team, defense_team, off_view, def_view, passer, home_offense, params=None):
     """(touchdown-share edge, receipt) for one drive. `home_offense` is True
     only for the designated home club's offense at a home venue. The receipt
     also carries `int_edge` (interception-share shift) and `sack_shift`
-    (per-dropback sack-probability shift) for the drive draw."""
+    (per-dropback sack-probability shift) for the drive draw. `params` is the
+    profile's StrengthParameters (honours-production-v3 when None)."""
+    params = params or parameters()
     receipt = {"units": {}, "terms": {}}
     units_by_side = {}
     if getattr(offense_team, "strength", None):
@@ -734,29 +788,30 @@ def drive_edge(offense_team, defense_team, off_view, def_view, passer, home_offe
         receipt["units"]["offense"] = units_by_side["offense"]
         off_part = None
     else:
-        off_part = (offense_team.offense_anchor - LEGACY_ANCHOR_CENTRE) * LEGACY_ANCHOR_SCALE
+        off_part = (offense_team.offense_anchor - params.legacy_anchor_centre) * params.legacy_anchor_scale
     if getattr(defense_team, "strength", None):
         units_by_side["defense"] = unit_composites(defense_team.strength, def_view, "defense")
         receipt["units"]["defense"] = units_by_side["defense"]
         def_part = None
     else:
-        def_part = (defense_team.defense_anchor - LEGACY_ANCHOR_CENTRE) * LEGACY_ANCHOR_SCALE
-    parts = term_parts(units_by_side)
+        def_part = (defense_team.defense_anchor - params.legacy_anchor_centre) * params.legacy_anchor_scale
+    parts = term_parts(units_by_side, params)
     receipt["terms"] = parts
 
     def total(outcome, side):
-        return sum(v for t, v in ((t, parts.get(t["name"])) for t in TERMS)
+        return sum(v for t, v in ((t, parts.get(t["name"])) for t in params.terms)
                    if v is not None and t["outcome"] == outcome and t["side"] == side)
 
     if off_part is None:
         off_part = total("td_share", "offense")
     if def_part is None:
         def_part = total("td_share", "defense")
-    home = HOME_EDGE if home_offense else 0.0
-    edge = max(-EDGE_CLAMP, min(EDGE_CLAMP, off_part - def_part + home))
-    int_edge = max(-INT_EDGE_CLAMP, min(INT_EDGE_CLAMP, total("int_share", "defense") - total("int_share", "offense")))
-    sack_shift = max(-SACK_SHIFT_CLAMP, min(SACK_SHIFT_CLAMP,
-                                            total("sack_rate", "defense") - total("sack_rate", "offense")))
+    home = params.home_edge if home_offense else 0.0
+    edge = max(-params.edge_clamp, min(params.edge_clamp, off_part - def_part + home))
+    int_edge = max(-params.int_edge_clamp, min(params.int_edge_clamp,
+                                               total("int_share", "defense") - total("int_share", "offense")))
+    sack_shift = max(-params.sack_shift_clamp, min(params.sack_shift_clamp,
+                                                   total("sack_rate", "defense") - total("sack_rate", "offense")))
     receipt.update({"offense_part": off_part, "defense_part": def_part, "home": home, "edge": edge,
                     "int_edge": int_edge, "sack_shift": sack_shift})
     return edge, receipt
@@ -780,24 +835,27 @@ def _special_value(strength, player, kind):
     return part.get("value", 0.0), part.get("deviation")
 
 
-def kicker_adjustment(strength, kicker):
+def kicker_adjustment(strength, kicker, params=None):
     """(make-probability shift, receipt): KICKER_SLOPE x the kicker's tier value."""
+    params = params or parameters()
     value, _ = _special_value(strength, kicker, "K")
-    shift = KICKER_SLOPE * value
+    shift = params.kicker_slope * value
     return shift, {"player_id": getattr(kicker, "player_id", None), "value": value, "shift": shift}
 
 
-def punter_adjustment(strength, punter):
+def punter_adjustment(strength, punter, params=None):
     """(gross-yards shift, receipt): PUNTER_SLOPE x the punter's shrunk net
     above his season's league mean (the continuous predictor), rounded."""
+    params = params or parameters()
     _, deviation = _special_value(strength, punter, "P")
-    shift = int(round(PUNTER_SLOPE * deviation)) if deviation is not None else 0
+    shift = int(round(params.punter_slope * deviation)) if deviation is not None else 0
     return shift, {"player_id": getattr(punter, "player_id", None), "deviation": deviation, "shift": shift}
 
 
-def returner_adjustment(strength, returner, kind):
+def returner_adjustment(strength, returner, kind, params=None):
     """(return-yards shift, receipt): the returner slope x his tier value, rounded."""
+    params = params or parameters()
     value, _ = _special_value(strength, returner, kind)
-    slope = KICK_RETURNER_SLOPE if kind == "KR" else PUNT_RETURNER_SLOPE
+    slope = params.kick_returner_slope if kind == "KR" else params.punt_returner_slope
     shift = int(round(slope * value))
     return shift, {"player_id": getattr(returner, "player_id", None), "value": value, "shift": shift}

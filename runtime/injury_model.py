@@ -35,8 +35,6 @@ many players participated.
 """
 from __future__ import annotations
 
-from functools import lru_cache
-import json
 from pathlib import Path
 
 from . import usage
@@ -58,9 +56,15 @@ def risk_group(position):
     return GROUP_KEY.get(usage.group(position) or "")
 
 
-@lru_cache(maxsize=1)
 def load():
-    return json.loads(DATA.read_text())
+    """The 2012 base's injury calibration (sha256 verified); treat as read-only.
+
+    Kernel 2014.6 plumbing (batch B1): each calibration base owns its injury
+    calibration (role "injury") and its derived parameters
+    (CalibrationBase.injury_parameters); the kernel passes its base's
+    parameters to draw and disposition. DATA is the 2012 base's file."""
+    from .calibration_base import BASE_2012
+    return BASE_2012.raw("injury")
 
 
 def _pair(value):
@@ -126,10 +130,14 @@ def validate(data=None):
     return errors
 
 
-@lru_cache(maxsize=1)
 def parameters():
-    """The kernel's derived, validated parameter set."""
-    data = load()
+    """The 2012 base's derived, validated parameter set."""
+    from .calibration_base import BASE_2012
+    return BASE_2012.injury_parameters()
+
+
+def parameters_from(data):
+    """The derived, validated parameter set of one injury calibration."""
     errors = validate(data)
     if errors:
         raise ValueError("injury calibration invalid: " + "; ".join(errors))
@@ -171,16 +179,17 @@ def _weighted(rng, pairs):
     return pairs[-1][0]
 
 
-def onset_probability(position, snaps):
+def onset_probability(position, snaps, params=None):
     group = risk_group(position)
     if snaps <= 0 or group is None:
         return 0.0
-    return 1 - (1 - parameters()["hazard"][group]) ** snaps
+    return 1 - (1 - (params or parameters())["hazard"][group]) ** snaps
 
 
-def disposition(rng, injury_class=None, severity=None):
-    """Class, severity, days, restriction and removal for one onset."""
-    p = parameters()
+def disposition(rng, injury_class=None, severity=None, params=None):
+    """Class, severity, days, restriction and removal for one onset
+    (`params`: the base's parameters; the 2012 base's when None)."""
+    p = params or parameters()
     klass = injury_class or _weighted(rng, p["classes"])
     band = severity or _weighted(rng, p["severity"][klass])
     low, high = p["days"][band]
@@ -196,9 +205,9 @@ def disposition(rng, injury_class=None, severity=None):
             "removed": removed}
 
 
-def draw(rng, position, snaps):
+def draw(rng, position, snaps, params=None):
     """One interval's onset for one player, or None. Zero exposure: None."""
-    probability = onset_probability(position, snaps)
+    probability = onset_probability(position, snaps, params)
     if probability <= 0 or rng.random() >= probability:
         return None
-    return disposition(rng)
+    return disposition(rng, params=params)

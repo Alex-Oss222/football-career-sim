@@ -3,7 +3,7 @@ from dataclasses import dataclass, asdict, replace
 import hashlib, json, math, random
 
 from . import KERNEL_VERSION
-from .calibration import load, validate
+from . import calibration_base
 from . import injury_model
 from . import participation
 from . import rotation
@@ -14,6 +14,7 @@ from . import field_position
 from . import strength as unit_strength
 from . import usage
 from .player_evidence import empty_player_stats, normalize_players, observation
+from .profiles import Profile, profile_for
 from .play_detail import (
     apply_drive_detail, apply_kickoff_detail, canonical_call_sheet, check_ledger,
     has_chain_ledger, _period_clock, _stream,
@@ -276,7 +277,7 @@ class _Paused(Exception):
 
 
 def _partial_result(event_id, game_type, opening_receiver, stats, possessions, kickoffs,
-                    play_ledger, injuries, substitutions, history, pause):
+                    play_ledger, injuries, substitutions, history, pause, kernel_version=KERNEL_VERSION):
     """E2 step 4: completed events only. No final score, no team or player
     totals, no later draw; the continuation token binds a decision to it."""
     snapshot = json.loads(json.dumps({
@@ -284,7 +285,7 @@ def _partial_result(event_id, game_type, opening_receiver, stats, possessions, k
         "injuries": injuries, "substitutions": substitutions, "history": history, "pause": pause,
     }, default=str))
     return {
-        "kernel_version": KERNEL_VERSION,
+        "kernel_version": kernel_version,
         "event_id": event_id,
         "game_type": game_type,
         "opening_receiver": opening_receiver,
@@ -302,7 +303,7 @@ def _partial_result(event_id, game_type, opening_receiver, stats, possessions, k
 
 def resolve_game(home, away, *, seed, event_id, venue="home", weather="normal", game_type="regular",
                  management_mode="autonomous", controlled_team=None, continuation=None, game_date=None,
-                 _test_onsets=None):
+                 _test_onsets=None, _test_profile=None):
     """Resolve one game, or return a genuine partial result at an E2 pause.
 
     Kernel 2014.4 (E2): ``management_mode="user_controlled"`` with a
@@ -318,12 +319,21 @@ def resolve_game(home, away, *, seed, event_id, venue="home", weather="normal", 
     where runtime.rules.extra_point_rule decides the try (the 2014 preseason
     Weeks 1-2 experiment). It is omitted from the outcome packet when None,
     so every regular-season and postseason packet and draw is unchanged.
+
+    Kernel 2014.6 plumbing (batch B1): the game resolves with the frozen
+    Profile of runtime.KERNEL_VERSION (runtime.profiles), whose calibration
+    base is bound once here. ``_test_profile`` resolves with another Profile
+    (tests and acceptance scripts only); the production runner cannot pass
+    it (runtime.game_runner.architecture_errors).
     """
+    if _test_profile is not None and not isinstance(_test_profile, Profile):
+        raise TypeError("_test_profile must be a runtime.profiles.Profile")
+    profile = _test_profile if _test_profile is not None else profile_for(KERNEL_VERSION)
     try:
         return _resolve_game(home, away, seed=seed, event_id=event_id, venue=venue, weather=weather,
                              game_type=game_type, management_mode=management_mode,
                              controlled_team=controlled_team, continuation=continuation,
-                             game_date=game_date, _test_onsets=_test_onsets)
+                             game_date=game_date, _test_onsets=_test_onsets, profile=profile)
     except _Paused as paused:
         return paused.partial
 
@@ -342,6 +352,7 @@ def _resolve_game(
     continuation=None,
     game_date=None,
     _test_onsets=None,
+    profile,
 ):
     if not isinstance(seed, bytes) or len(seed) < 32:
         raise ValueError("private seed required")
@@ -381,19 +392,27 @@ def _resolve_game(
     rng = _rng(seed, packet)
     packet_digest = hashlib.sha256(
         json.dumps(packet, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
-    cal = load()
-    assert not validate(cal)
-    assert not usage.validate()
-    drive_model.load()
-    field_position.load()
+    # Kernel 2014.6 plumbing (batch B1): the profile's calibration base is
+    # bound once per game. Its sha256 pins and partition counts are verified
+    # (once per base object) before any of its data is used, and an invalid
+    # aggregate or usage baseline raises CalibrationBaseError (formerly an
+    # assert, which python -O would skip).
+    cbase = profile.calibration_base()
+    cbase.require()
+    cal = cbase.aggregate()
+    usage_values = cbase.usage()["values"]
+    dm = cbase.drive_model()
+    fpm = cbase.field_position()
+    injury_params = cbase.injury_parameters()
+    strength_params = unit_strength.parameters(profile.strength)
     model = cal["model"]
     gross_per_attempt = cal["derived"]["gross_yards_per_pass_attempt"]
     yards_per_attempt = gross_per_attempt["numerator"] / gross_per_attempt["denominator"]
     carry = cal["derived"]["yards_per_carry"]
     yards_per_carry = carry["numerator"] / carry["denominator"]
     completion_rate = cal["derived"]["completion_rate"]["value"]
-    xp_rate = drive_model.rate("extra_point")
-    T = field_position.T
+    xp_rate = dm.rate("extra_point")
+    T = fpm.T
 
     teams = {home.team_id: home, away.team_id: away}
     rosters = {home.team_id: home_players, away.team_id: away_players}
@@ -450,7 +469,6 @@ def _resolve_game(
     # specialists) is re-derived from the players still available. The
     # passer is chosen per drive; legacy inputs without a QB keep the first
     # available player.
-    injury_model.parameters()
     baseline = {tid: participation.group_counts(players) for tid, players in rosters.items()}
     current = {tid: list(players) for tid, players in rosters.items()}
     original_index = {tid: {p.player_id: i for i, p in enumerate(players)} for tid, players in rosters.items()}
@@ -538,11 +556,12 @@ def _resolve_game(
                     if count <= 0:
                         raise ValueError("forced onset for a player with no exposure in that interval")
                     spec = dict(forced.pop(key))
-                    injury = injury_model.disposition(stream, spec.get("injury_class"), spec.get("severity"))
+                    injury = injury_model.disposition(stream, spec.get("injury_class"), spec.get("severity"),
+                                                      params=injury_params)
                     if "removed" in spec:
                         injury["removed"] = bool(spec["removed"]) or injury["injury_class"] == "head_neck"
                 else:
-                    injury = injury_model.draw(stream, player.position, count)
+                    injury = injury_model.draw(stream, player.position, count, params=injury_params)
                 if injury is None:
                     continue
                 onset_players.add(pid)
@@ -648,7 +667,8 @@ def _resolve_game(
             pause_state["pending"] = None
             return
         raise _Paused(_partial_result(event_id, game_type, opening_receiver, stats, possessions, kickoffs,
-                                      play_ledger, injuries, substitutions, pause_state["history"], pause))
+                                      play_ledger, injuries, substitutions, pause_state["history"], pause,
+                                      kernel_version=profile.kernel_version))
 
     def other(team_id):
         return away.team_id if team_id == home.team_id else home.team_id
@@ -676,7 +696,7 @@ def _resolve_game(
         """One real 2012 kickoff (or safety free kick) record: one randrange."""
         checkpoint()
         kick_no = len(kickoffs) + 1
-        drawn = field_position.free_kick(rng) if free_kick else field_position.kickoff(rng)
+        drawn = fpm.free_kick(rng) if free_kick else fpm.kickoff(rng)
         live = live_rosters()
         if trackers is not None:
             # Preseason: each club's special-teams block (or depth order).
@@ -687,8 +707,9 @@ def _resolve_game(
             # Kernel 2014.4 phase 2: the returner's term (slope 0 in this
             # candidate); no draw is consumed.
             returner = usage.club_returner(live[receiving], "kick_return")
-            ret_shift, ret_receipt = unit_strength.returner_adjustment(teams[receiving].strength, returner, "KR")
-            drawn = field_position.adjust_return(drawn, ret_shift)
+            ret_shift, ret_receipt = unit_strength.returner_adjustment(teams[receiving].strength, returner, "KR",
+                                                                       params=strength_params)
+            drawn = fpm.adjust_return(drawn, ret_shift)
             drawn["returner"] = ret_receipt
         returned = not drawn["touchback"]
         stats[kicking]["kickoffs"] += 1
@@ -742,7 +763,7 @@ def _resolve_game(
         def_view, def_notes, def_block = lineup(defense.team_id, "defense", period, drive_no)
         passer = usage.game_passer(off_view) or off_view[0]
         edge, strength_receipt = unit_strength.drive_edge(
-            team, defense, off_view, def_view, passer, team is home and venue != "neutral")
+            team, defense, off_view, def_view, passer, team is home and venue != "neutral", params=strength_params)
         # Kernel 2014.4 phase 2: the interception-share and sack-probability
         # shifts of the matchup ride with the draw (zero on the legacy path).
         draw_extra = {"int": strength_receipt.get("int_edge", 0.0), "sack": strength_receipt.get("sack_shift", 0.0)}
@@ -753,7 +774,7 @@ def _resolve_game(
         if half == "OT" and game_type == "postseason":
             _reset_postseason_ot_timeouts(window)
         timeouts_before = (timeouts[offense], timeouts[other(offense)])
-        drawn = field_position.draw_drive(rng, spot, draw_half, window, score_diff, edge, diagnostics,
+        drawn = fpm.draw_drive(rng, spot, draw_half, window, score_diff, edge, diagnostics,
                                           timeouts_before, extra=draw_extra)
 
         def lay_out(drawn, draw_rng, scratch):
@@ -761,7 +782,7 @@ def _resolve_game(
             losses and yard split (on `draw_rng`) and the chain layout (its
             diagnostics in `scratch`, merged only for the adopted drive)."""
             category, row = drawn.category, drawn.tuple
-            net, end_spot = field_position.adapt(category, row, spot)
+            net, end_spot = fpm.adapt(category, row, spot)
             plays = int(row[T["plays"]])
             runs, attempts, sacks = int(row[T["runs"]]), int(row[T["attempts"]]), int(row[T["sacks"]])
             kneel_yards = list(row[T["kneel_yards"]])
@@ -772,7 +793,7 @@ def _resolve_game(
             # decides a pass or a sack, so no sack is converted to an attempt.
             td_type = row[T["td_kind"]] if category == "touchdown" else None
             turnover_type = category if category in drive_model.TURNOVER_CATEGORIES else None
-            free, kneel_sum, terminal_value, open_sacks = field_position.fixed_yardage(category, row)
+            free, kneel_sum, terminal_value, open_sacks = fpm.fixed_yardage(category, row)
             safety_terminal = None
             if category == "safety":
                 safety_terminal = (row[T["safety_term_kind"]], terminal_value)
@@ -847,7 +868,8 @@ def _resolve_game(
                 td_type=td_type, runs=runs, attempts=attempts, sacks=sacks, kneel_yards=kneel_yards,
                 spikes=spikes, pass_yards=pass_yards, rush_free=rush_free, losses=sack_losses,
                 safety_terminal=safety_terminal, net=net, spot=spot, completion_rate=completion_rate,
-                targets=list(row[T["chains"]]), term_down=row[T["term_down"]], diagnostics=scratch)
+                targets=list(row[T["chains"]]), term_down=row[T["term_down"]], diagnostics=scratch,
+                usage_values=usage_values)
             return dict(net=net, end_spot=end_spot, plays=plays, runs=runs, attempts=attempts, sacks=sacks,
                         kneel_yards=kneel_yards, spikes=spikes, td_type=td_type, turnover_type=turnover_type,
                         kneel_sum=kneel_sum, terminal_value=terminal_value, safety_terminal=safety_terminal,
@@ -868,7 +890,7 @@ def _resolve_game(
             original = drawn
             tried = [drawn.tuple]
             for attempt in range(1, LAYOUT_RESAMPLE_LIMIT + 1):
-                alt = field_position.resample_drive(resample_rng, original, spot, window, exclude=tried)
+                alt = fpm.resample_drive(resample_rng, original, spot, window, exclude=tried)
                 if alt is None:
                     break
                 tried.append(alt.tuple)
@@ -879,9 +901,9 @@ def _resolve_game(
                     layout_resample = {
                         "resamples": attempt,
                         "pool": list(original.pool_id) if original.pool_id else None,
-                        "original": {"locator": field_position.tuple_locator(original.category, original.tuple),
+                        "original": {"locator": fpm.tuple_locator(original.category, original.tuple),
                                      "tuple": list(original.tuple[:5])},
-                        "final": {"locator": field_position.tuple_locator(alt.category, alt.tuple),
+                        "final": {"locator": fpm.tuple_locator(alt.category, alt.tuple),
                                   "tuple": list(alt.tuple[:5])},
                     }
                     diagnostics["chain_layout_resampled"] += 1
@@ -947,12 +969,12 @@ def _resolve_game(
                     # 2014 preseason Weeks 1-2: the try is a 33-yard kick on
                     # the field-goal distance model, with the kicker's own
                     # term as for any field goal. Same single draw.
-                    xp_prob = drive_model.fg_make_prob_at(xp_rule["distance"])
+                    xp_prob = dm.fg_make_prob_at(xp_rule["distance"])
                     if team.strength:
                         kicker = usage.kicking_specialist(off_view, "K", "placekicker")
-                        kick_shift, _ = unit_strength.kicker_adjustment(team.strength, kicker)
-                        xp_prob = min(unit_strength.FG_PROB_CEILING,
-                                      max(unit_strength.FG_PROB_FLOOR, xp_prob + kick_shift))
+                        kick_shift, _ = unit_strength.kicker_adjustment(team.strength, kicker, params=strength_params)
+                        xp_prob = min(strength_params.fg_prob_ceiling,
+                                      max(strength_params.fg_prob_floor, xp_prob + kick_shift))
                 xp_made = rng.random() < xp_prob
                 if xp_made:
                     points += 1
@@ -963,43 +985,44 @@ def _resolve_game(
             # Kernel 2014.4 phase 2: the distance model (register item 18)
             # and the kicker's own term (special teams; slope 0 in this
             # candidate) on the same single draw.
-            fg_prob = drive_model.fg_make_prob_at(fg_distance)
+            fg_prob = dm.fg_make_prob_at(fg_distance)
             if team.strength:
                 kicker = usage.kicking_specialist(off_view, "K", "placekicker")
-                kick_shift, kick_receipt = unit_strength.kicker_adjustment(team.strength, kicker)
-                fg_prob = min(unit_strength.FG_PROB_CEILING, max(unit_strength.FG_PROB_FLOOR, fg_prob + kick_shift))
+                kick_shift, kick_receipt = unit_strength.kicker_adjustment(team.strength, kicker, params=strength_params)
+                fg_prob = min(strength_params.fg_prob_ceiling, max(strength_params.fg_prob_floor, fg_prob + kick_shift))
             fg_made = rng.random() < fg_prob
             if fg_made:
                 points = 3
                 s["field_goals"] += 1
                 score_kind = "field_goal"
             else:
-                next_start, next_kind = field_position.missed_fg_start(fg_distance), "missed_fg"
+                next_start, next_kind = fpm.missed_fg_start(fg_distance), "missed_fg"
         elif category == "punt":
             s["punts"] += 1
-            punt_record = field_position.punt(rng, end_spot)
+            punt_record = fpm.punt(rng, end_spot)
             # Kernel 2014.4 phase 2: the punter's net term on the kicking
             # club's record and the returner's term on the receiving club's
             # (returner slope 0 in this candidate); no draw is consumed.
             if team.strength:
                 punter = usage.kicking_specialist(off_view, "P", "punt")
-                punt_shift, punt_receipt = unit_strength.punter_adjustment(team.strength, punter)
-                punt_record = field_position.adjust_punt(punt_record, punt_shift)
+                punt_shift, punt_receipt = unit_strength.punter_adjustment(team.strength, punter, params=strength_params)
+                punt_record = fpm.adjust_punt(punt_record, punt_shift)
                 punt_record["punter"] = punt_receipt
             if defense.strength and punt_record["outcome"] == "returned":
                 returner = usage.club_returner(def_view, "punt_return")
-                ret_shift, ret_receipt = unit_strength.returner_adjustment(defense.strength, returner, "PR")
-                punt_record = field_position.adjust_return(punt_record, ret_shift)
+                ret_shift, ret_receipt = unit_strength.returner_adjustment(defense.strength, returner, "PR",
+                                                                           params=strength_params)
+                punt_record = fpm.adjust_return(punt_record, ret_shift)
                 punt_record["returner"] = ret_receipt
             d["punt_returns"] += int(punt_record["outcome"] == "returned")
             next_start, next_kind = punt_record["next_start"], "punt"
         elif category in drive_model.TURNOVER_CATEGORIES:
             s["turnovers"] += 1
-            turnover_record = field_position.turnover(rng, category, end_spot)
+            turnover_record = fpm.turnover(rng, category, end_spot)
             next_start, next_kind = turnover_record["next_start"], category
         elif category == "downs":
             s["turnovers_on_downs"] += 1
-            next_start, next_kind = field_position.downs_start(end_spot), "downs"
+            next_start, next_kind = fpm.downs_start(end_spot), "downs"
         elif category == "safety":
             d["points"] += 2
             d["safeties"] += 1
@@ -1031,14 +1054,15 @@ def _resolve_game(
                 "ydstogo": state["ydstogo"],
                 "goal_to_go": state["goal_to_go"],
                 "los": state["los"],
-                "clock_s": clock_s, "clock_bucket": field_position.terminal_bucket(clock_s) if draw_half == 2 else None,
-                "half": draw_half, "score_diff": score_diff, "need": field_position.need(score_diff),
-                "decision_zone": field_position.decision_zone(end_spot), "cell": drawn.cell,
+                "clock_s": clock_s, "clock_bucket": fpm.terminal_bucket(clock_s) if draw_half == 2 else None,
+                "half": draw_half, "score_diff": score_diff, "need": fpm.need(score_diff),
+                "decision_zone": fpm.decision_zone(end_spot), "cell": drawn.cell,
                 "tuple_terminal_bucket": row[T["term_bucket"]],
                 "action": {"punt": "punt", "field_goal_attempt": "field_goal", "downs": "go"}[category],
             }
 
         drive_ledger, drive_calls = apply_drive_detail(
+            calibration_base=cbase,
             seed=seed,
             event_id=event_id,
             drive_no=drive_no,
@@ -1304,7 +1328,7 @@ def _resolve_game(
         raise ValueError("continuation names a decision for a pause the game never reached")
 
     result = {
-        "kernel_version": KERNEL_VERSION,
+        "kernel_version": profile.kernel_version,
         "event_id": event_id,
         "game_type": game_type,
         "opening_receiver": opening_receiver,
@@ -1327,6 +1351,11 @@ def _resolve_game(
     if trackers is not None:
         # Preseason only: the rotation as applied, by possession and kick.
         result["rotation"] = {tid: trackers[tid].receipt() for tid in rosters}
+    if profile.record_base:
+        # Kernel 2014.6 onward (append-only): the base, its manifest digest
+        # and its cell rules, so every later audit can confirm it reads the
+        # same base (runtime.calibration_base.base_for_result).
+        result["calibration_base"] = calibration_base.record(cbase)
     return result
 
 
@@ -1337,7 +1366,10 @@ REMOVAL_FIELDS = (("passer", "offense"), ("runner", "offense"), ("target", "offe
                   ("tackler", "defense"), ("assist_tackler", "defense"), ("returner", "defense"))
 
 
-def validate_result(result):
+def validate_result(result, base=None):
+    """Invariant errors of a closed result; its ledger coherence is checked
+    with the calibration base of the result's own kernel_version
+    (play_detail.check_ledger), or `base` for a synthetic test base."""
     errors = []
     first_team = next(iter(result["team_stats"].values()), {})
     current = "extra_points_made" in first_team
@@ -1575,5 +1607,5 @@ def validate_result(result):
             errors.append(f"{kind} {number} continues after its half-final possession")
     if any(p.get("half_final") and p["end_clock"] != 0 for p in overtime):
         errors.append("half-final possession does not end its window")
-    errors.extend(check_ledger(result))
+    errors.extend(check_ledger(result, base))
     return errors

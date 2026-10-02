@@ -404,9 +404,11 @@ class _Search:
 
 
 def _draw(rng, pd, category, terminal, runs, attempts, sacks, kneel_yards, spikes, pass_yards, rush_free,
-          losses, safety_terminal, completion_rate):
+          losses, safety_terminal, completion_rate, usage_values=None):
     """Kinds, completions and per-snap values, as runtime.play_detail._layout
-    draws them (the movable snaps first, then kneels and the terminal snap)."""
+    draws them (the movable snaps first, then kneels and the terminal snap).
+    `usage_values` is the calibration base's usage table (the negative-run
+    rate and loss distribution; the 2012 base's when None)."""
     counts = {"run": runs, "att": attempts, "sack": sacks}
     if terminal:
         counts[pd.BASE_KIND[terminal]] -= 1
@@ -427,7 +429,7 @@ def _draw(rng, pd, category, terminal, runs, attempts, sacks, kneel_yards, spike
     values = [0] * plays
     for index, value in zip(completion_slots, pd._allocate(pass_yards, len(completion_slots), rng)):
         values[index] = value
-    for index, value in zip(run_slots, pd._allocate_runs(rush_free, len(run_slots), rng)):
+    for index, value in zip(run_slots, pd._allocate_runs(rush_free, len(run_slots), rng, usage_values)):
         values[index] = value
     for index, loss in zip(sack_slots, losses):
         values[index] = -loss
@@ -529,7 +531,7 @@ def _concentrate(kinds, completed, values, n_mov, category, terminal, movable_on
 
 def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, attempts, sacks,
                  kneel_yards, spikes, pass_yards, rush_free, losses, safety_terminal, net, spot,
-                 completion_rate, targets=None, term_down=None, diagnostics=None):
+                 completion_rate, targets=None, term_down=None, diagnostics=None, usage_values=None):
     """The ordered snaps of one resolved drive with a legal chain walk.
 
     `category` is the kernel category (punt, field_goal_attempt, downs,
@@ -639,7 +641,7 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
                 plan = plans[plan_no]
                 for draw_no in range(DRAWS if plan_no == 0 else ALT_DRAWS):
                     drawn = _draw(rng, pd, category, terminal, runs, attempts, sacks, kneel_yards, spikes,
-                                  plan[0], plan[1], plan[2], safety_terminal, completion_rate)
+                                  plan[0], plan[1], plan[2], safety_terminal, completion_rate, usage_values)
                     if plan_no == 0:
                         last_draw = drawn
                     best = attempt(*drawn, tier)
@@ -737,7 +739,7 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
             continue
         plan = (p, r, list(new_losses))
         drawn = _draw(rng, pd, category, options[0], runs, attempts, sacks, kneel_yards, spikes,
-                      plan[0], plan[1], plan[2], safety_terminal, completion_rate)
+                      plan[0], plan[1], plan[2], safety_terminal, completion_rate, usage_values)
         best = attempt(*drawn, tiers[3])
         if best is not None:
             terminal = options[0]
@@ -767,7 +769,7 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
         if (td_type == "pass" and plan[0] < 1) or (td_type == "rush" and plan[1] < 1):
             continue
         drawn = _draw(rng, pd, category, options[0], runs, attempts, sacks, kneel_yards, spikes,
-                      plan[0], plan[1], plan[2], safety_terminal, completion_rate)
+                      plan[0], plan[1], plan[2], safety_terminal, completion_rate, usage_values)
         kinds, completed, values, n_mov = drawn
         for movable_only in (True, False):
             for values in _concentrate(kinds, completed, list(drawn[2]), n_mov, category, options[0],

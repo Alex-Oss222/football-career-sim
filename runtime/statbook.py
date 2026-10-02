@@ -38,6 +38,26 @@ DRIVE_MODEL_FROM_KERNEL = (2013, 6)
 # the next start, the real drive chains and the fourth-down state (see
 # runtime.play_detail.DRIVE_SUMMARY_FIELDS); no team stat field is added.
 FIELD_POSITION_FROM_KERNEL = (2013, 7)
+# Kernel 2014.6 field group (batch B1 scaffold). The team and player
+# counters that only kernel 2014.6-or-later receipts carry are appended here,
+# in a fixed order, by the batch that adds each one. Older receipts aggregate
+# them as absent, never as zero, and a book counts its kernel 2014.6 games
+# per club (kernel_2014_6_games) only when such a receipt exists, so every
+# closed 2013 and 2014 Weeks 1-4 view is unchanged.
+KERNEL_2014_6_FROM = (2014, 6)
+KERNEL_2014_6_TEAM_STAT_FIELDS = ()
+KERNEL_2014_6_PLAYER_FIELDS = ()
+# Every key the 2014.6 group adds, by where it lives in a result or receipt
+# (tests/test_profiles.py strip_2014_6_fields removes exactly these).
+# DRIVE_SUMMARY_FIELDS additions are possession keys; snap-ledger row keys
+# are "ledger".
+KERNEL_2014_6_FIELD_GROUP = {
+    "result": ("calibration_base",),
+    "possession": (),
+    "ledger": (),
+    "team": KERNEL_2014_6_TEAM_STAT_FIELDS,
+    "player": KERNEL_2014_6_PLAYER_FIELDS,
+}
 
 
 def kernel_at_least(version, minimum=DRIVE_MODEL_FROM_KERNEL):
@@ -159,6 +179,11 @@ def make_receipt(result, *, week, matchup, coverage="complete", detail="full",
     if result.get("rotation") is not None:
         # Preseason only: the unit rotation as applied (runtime/rotation.py).
         receipt["rotation"] = deepcopy(result["rotation"])
+    if result.get("calibration_base") is not None:
+        # Kernel 2014.6 onward (append-only): the calibration base, its
+        # manifest digest and cell rules the game was resolved with
+        # (runtime.calibration_base.base_for_result checks them on audit).
+        receipt["calibration_base"] = deepcopy(result["calibration_base"])
     if detail == "full":
         receipt["play_ledger"] = deepcopy(result.get("play_ledger", []))
         receipt["play_call_stats"] = deepcopy(result.get("play_call_stats", {}))
@@ -269,13 +294,15 @@ def aggregate_receipts(receipts):
             opponent = next((g for t, g in clubs.items() if t != team_id), {})
             team["plays"] += _scrimmage_plays(game)
             team["opponent_plays"] += _scrimmage_plays(opponent)
-            for field in TEAM_STAT_FIELDS:
+            for field in TEAM_STAT_FIELDS + KERNEL_2014_6_TEAM_STAT_FIELDS:
                 if _numeric(game.get(field)):
                     team["team_stats"][field] = team["team_stats"].get(field, 0) + game[field]
                 if _numeric(opponent.get(field)):
                     team["opponent_stats"][field] = team["opponent_stats"].get(field, 0) + opponent[field]
             if _numeric(game.get("drives")):
                 team["drive_model_games"] = team.get("drive_model_games", 0) + 1
+            if kernel_at_least(receipt.get("kernel_version"), KERNEL_2014_6_FROM):
+                team["kernel_2014_6_games"] = team.get("kernel_2014_6_games", 0) + 1
 
             for player_id, line in game.get("players", {}).items():
                 position = line.get("position", "")

@@ -449,11 +449,12 @@ def _coherence_lines(checked, counts):
 
 
 def _current_cohort_lines(version, members, empty):
-    """One field-position-era cohort (kernel 2013.7, 2013.8, ...) of the audit."""
-    team_games, rows = audit(members)
-    drive_games, drive_rows = audit_drive_model(members)
-    fp_games, fp_rows = audit_field_position(members)
-    checked, counts = coherence(members)
+    """One field-position-era cohort (kernel 2013.7, 2013.8, ...) of the audit,
+    graded against that kernel version's own calibration base."""
+    team_games, rows = audit(members, cohort=version)
+    drive_games, drive_rows = audit_drive_model(members, cohort=version)
+    fp_games, fp_rows = audit_field_position(members, cohort=version)
+    checked, counts = coherence(members, cohort=version)
     lines = [
         "## Kernel %s cohort (%s)" % (version, _week_span(members, empty)), "",
         "**Team-games audited:** %d. Carry shares exclude kneels, as in the 2012 "
@@ -503,9 +504,9 @@ def calibration_audit_markdown(year, receipts, book):
         "Drive-model rows and ledger coherence: not measurable for this cohort "
         "(legacy receipts carry no drives summary or kicking-attempt counters).", "",
     ]
-    team_games, rows = audit(kernel_2013_6)
-    drive_games, drive_rows = audit_drive_model(kernel_2013_6)
-    checked, counts = coherence(kernel_2013_6)
+    team_games, rows = audit(kernel_2013_6, cohort="2013.6")
+    drive_games, drive_rows = audit_drive_model(kernel_2013_6, cohort="2013.6")
+    checked, counts = coherence(kernel_2013_6, cohort="2013.6")
     lines += [
         "## Kernel 2013.6 cohort (%s, detection only)" % _week_span(kernel_2013_6, "Week 4 onward"), "",
         "**Status:** %s." % KERNEL_2013_6_LABEL,
@@ -544,6 +545,9 @@ def compact_book_for_storage(book):
     compact["teams"] = {}
     for team_id, team in book.get("teams", {}).items():
         row = {key: team[key] for key in ("games", "plays", "opponent_plays", "team_stats", "opponent_stats")}
+        if "kernel_2014_6_games" in team:
+            # Kernel 2014.6 onward only (runtime.statbook field group).
+            row["kernel_2014_6_games"] = team["kernel_2014_6_games"]
         row["players"] = {}
         for player_id, line in team.get("players", {}).items():
             kept = _nonzero(line, ("position",))

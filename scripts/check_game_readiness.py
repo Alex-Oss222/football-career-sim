@@ -4,7 +4,9 @@ import argparse, json, os, sys
 from pathlib import Path
 from validate_repository import ROOT, validate
 sys.path.insert(0,str(ROOT))
+from runtime import KERNEL_VERSION
 from runtime.calibration import load, validate as validate_calibration
+from runtime.calibration_base import CalibrationBaseError, base_for_kernel, get_base
 from runtime.game_runner import (architecture_errors, resolve_background_game,
                                  resolve_protagonist_game, run_game)
 from runtime.private_client import Client, PrivateRuntimeUnavailable
@@ -12,6 +14,17 @@ from runtime.rules import RULES
 from runtime.seasons import active_season, game_release_errors
 
 REQUIRED={'calibration','playing_rules','injury_model','football_kernel','private_runtime'}
+
+def calibration_base_blockers(root=ROOT, version=None):
+    """Kernel 2014.6 plumbing (batch B1): the live kernel's calibration base
+    must hold every sha256 pin and partition count in this checkout."""
+    version = KERNEL_VERSION if version is None else version
+    try:
+        active=get_base(base_for_kernel(version)).at(root)
+        errors=active.verify()
+    except CalibrationBaseError as e:
+        return [dict(id='calibration_base',label='Calibration base pins',detail=str(e))]
+    return [dict(id='calibration_base',label=f'Calibration base {active.name} pins',detail='; '.join(errors))] if errors else []
 
 def assess(root=ROOT, season=None, preseason=None):
     """``preseason=N`` evaluates the gates for that preseason game (its frozen
@@ -36,6 +49,7 @@ def assess(root=ROOT, season=None, preseason=None):
         errors=validate_calibration(json.loads((root/'library/data/2012_nfl_aggregate_baseline.json').read_text()))
         if errors: blockers.append(dict(id='calibration_probe',label='Calibration probe',detail='; '.join(errors)))
     except Exception as e: blockers.append(dict(id='calibration_probe',label='Calibration probe',detail=str(e)))
+    blockers += calibration_base_blockers(root)
     rule_doc=(root/'foundation/02_League_Era_and_Sourcebook.md').read_text()
     if RULES.active_limit!=46 or '2013 playing rules, verified' not in rule_doc: blockers.append(dict(id='rules_probe',label='Rules probe',detail='2013 executable/source rules mismatch'))
     runner_errors=architecture_errors()

@@ -21,18 +21,17 @@ class ProductionGameRunnerTests(unittest.TestCase):
     """The local private store's seed is pinned (local_private_service) so
     every game here reproduces; before October 1, 2026 the store drew a
     fresh seed per run and this module's ordinary autonomous games were
-    refused by the kernel invariants under some seeds (the seed sweep in
-    tests/test_chains.py, SeedSweepRegressionTests)."""
+    refused by the kernel invariants under some seeds (the October 1 seed
+    sweep, scripts/research/seed_sweep.py).
+
+    The store seeds 44 (a real five-run fumble whose first down must come
+    before the fumbled snap) and 67 (an emergency passer replaced without a
+    removal) were pinned here until kernel 2014.6 batch B1 (October 2,
+    2026); they are now forced fixtures that no later kernel can make
+    hollow: tests/test_chains.py SeedSweepRegressionTests."""
 
     STORE_SEED = "runner"
     SWEEP_SEEDS = ("runner-0", "runner-1", "runner-2")
-    # Store seeds under which an ordinary autonomous game of this fixture
-    # was refused before the October 1, 2026 fixes (found by a 600-seed,
-    # four-game search through the production runner): "44", fourth game, a
-    # six-snap one-sack fumble admitted from inside the 20 (chains.chain_feasible,
-    # "snap after a failed fourth down"); "67", second game, an emergency
-    # passer replaced without a removal (participation.emergency_view).
-    REGRESSION_SEEDS = (("44", 3), ("67", 1))
 
     def setUp(self):
         self.tmp=tempfile.TemporaryDirectory(); self.addCleanup(self.tmp.cleanup)
@@ -66,6 +65,28 @@ class ProductionGameRunnerTests(unittest.TestCase):
             self.assertIs(run_game(self.home,self.away,event_id="order",snapshot="snapshot",client=JournalClient()),fake)
         self.assertEqual(order,["closed","kernel"])
 
+
+    def test_production_runner_refuses_test_hooks(self):
+        # Kernel 2014.6 plumbing (B1): production resolves only with the
+        # profile of KERNEL_VERSION; the kernel's _test_* hooks stay private.
+        import runtime.game_runner as runner
+        from runtime.kernel import resolve_game
+        self.assertFalse([n for n in inspect.signature(run_game).parameters if n.startswith("_test")])
+        self.assertIn("_test_profile", inspect.signature(resolve_game).parameters)
+        self.assertIn("_test_onsets", inspect.signature(resolve_game).parameters)
+
+        def hooked(home, away, *, event_id, snapshot, client=None, _test_profile=None):
+            client.close_event(None)
+            return runner.resolve_game(home, away, seed=b"", event_id=event_id)
+
+        def forwarding(home, away, *, event_id, snapshot, client=None):
+            client.close_event(None)
+            return runner.resolve_game(home, away, seed=b"", event_id=event_id, _test_profile=None)
+        with patch.object(runner, "run_game", hooked):
+            self.assertIn("production runner accepts a test hook (_test_profile)", runner.architecture_errors())
+        with patch.object(runner, "run_game", forwarding):
+            self.assertIn("production runner passes a test hook to the kernel", runner.architecture_errors())
+        self.assertEqual(runner.architecture_errors(), [])
 
     def test_call_sheet_packet_uses_football_substance_not_display_alias(self):
         calls=({'name':'Mesh Base','family':'Mesh','type':'pass','personnel':'11','formation':'Bunch'},)
@@ -116,23 +137,6 @@ class ProductionGameRunnerTests(unittest.TestCase):
         if set(throwers)!={"qb"}:
             self.assertTrue(any(i["player"]=="qb" and i["removed"] for i in result["injuries"]))
         self.assertTrue(all(v["tackles"]==v["solo_tackles"]+v["assisted_tackles"] for v in players.values()))
-
-    def test_regression_store_seeds_validate(self):
-        for label,index in self.REGRESSION_SEEDS:
-            with self.subTest(seed=label):
-                root=Path(self.tmp.name)/("regression-"+label); root.mkdir()
-                client=local_service(self,root,label)[1]
-                for k in range(index+1):
-                    result=run_game(self.home,self.away,event_id="labels-%d"%k,snapshot="snapshot",client=client)
-                self.assertTrue(result["terminated"])
-                self.assertEqual(result["diagnostics"].get("chain_layout_failed",0),0)
-                for team in ("A","B"):
-                    removed={i["player"]:i["drive"] for i in result["injuries"] if i["removed"] and i["team"]==team}
-                    previous=None
-                    for p in (p for p in result["possessions"] if p["team"]==team):
-                        if previous is not None and p["passer"]!=previous:
-                            self.assertLess(removed.get(previous,p["number"]),p["number"])
-                        previous=p["passer"]
 
     def test_store_seed_sweep_keeps_the_invariants(self):
         # A small fixed set of store seeds, several ordinary autonomous

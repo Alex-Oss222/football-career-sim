@@ -25,7 +25,11 @@ from runtime.play_detail import check_ledger
 from runtime.rules import RULES, ot_status
 from synthetic_games import SEED, sample, sample_teams
 
-REAL_DRAW = fp.draw_drive
+# Kernel 2014.6 plumbing (batch B1): the kernel draws through its bound
+# calibration base's model, so the script patches the 2012 base's model
+# instance (the live base of kernel 2014.5); REAL_DRAW is its own method.
+MODEL = fp.model()
+REAL_DRAW = MODEL.draw_drive
 
 
 class Infeasible(Exception):
@@ -105,7 +109,7 @@ class OvertimeRuleTests(unittest.TestCase):
     def replay(self, script, game_type="regular", which=0):
         seed, event_id, _ = (self.regular if game_type == "regular" else self.postseason)[which]
         a, b = sample_teams()
-        with mock.patch.object(fp, "draw_drive", _scripted(script)):
+        with mock.patch.object(MODEL, "draw_drive", _scripted(script)):
             result = resolve_game(a, b, seed=seed, event_id=event_id, game_type=game_type)
         self.assertEqual(validate_result(result), [])
         self.assertEqual(check_ledger(result), [])

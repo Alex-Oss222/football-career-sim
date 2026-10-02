@@ -222,6 +222,27 @@ class CloseWeekPauseTests(unittest.TestCase):
         self.assertEqual(json.loads(self.paths.paused_game(1).read_text())["status"], "paused")
         self.assertEqual(paused["decisions"], [])
 
+    def test_a_pause_from_another_kernel_is_refused(self):
+        # Kernel 2014.6 plumbing (B1): a pause is continued only by the
+        # kernel that made it; resuming under another would replay its
+        # prefix with different draws. A closed record stays readable.
+        _, paused = self.close()
+        self.assertEqual(paused["kernel_version"], kernel.KERNEL_VERSION)
+        path = self.paths.paused_game(1)
+        record = json.loads(path.read_text())
+        self.assertEqual(close_week.read_paused(path, EVENT)["status"], "paused")
+        path.write_text(json.dumps(dict(record, kernel_version="2014.4")))
+        with self.assertRaisesRegex(ValueError, "made by kernel 2014.4"):
+            close_week.read_paused(path, EVENT)
+        with self.assertRaisesRegex(ValueError, "made by kernel 2014.4"):
+            self.close({"choices": {"A-QB1": "A-QB2"}, "token": record["pause"]["continuation_token"]})
+        with self.assertRaisesRegex(ValueError, "made by kernel 2014.4"):
+            self.close()
+        with self.assertRaisesRegex(ValueError, "the live kernel is 2014.6"):
+            close_week.read_paused(path, EVENT, kernel_version="2014.6")
+        path.write_text(json.dumps(dict(record, kernel_version="2014.4", status="closed")))
+        self.assertEqual(close_week.read_paused(path, EVENT)["status"], "closed")
+
     def test_command_line_takes_the_answer_file(self):
         with patch.object(sys, "argv", ["close_week", "1", "--season", "2014", "--close", "--continue", "x.json"]), \
                 patch.object(close_week, "require_game_release", side_effect=ValueError("blocked")), \

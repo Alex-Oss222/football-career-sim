@@ -1,0 +1,370 @@
+"""Versioned calibration bases (kernel 2014.6 plumbing, batch B1).
+
+A calibration base is the frozen set of league artifacts one kernel draws
+from and audits against: the aggregate baseline, the drive and
+field-position models, the position-usage baseline, the injury calibration,
+the attribution tilt and the field-goal distance logistic. Every artifact is
+pinned by its sha256 and every base pins the partition counts it must hold
+(counted from the pools and count tables themselves, never read from an
+artifact's own reconciliation block). A base verifies both before its data
+is used and fails closed on any difference.
+
+`base_for_kernel` is an explicit table from kernel version to base: every
+kernel up to 2014.5 draws from (and its closed receipts are audited against)
+the 2012 base; kernel 2014.6 maps to the 2010-2014 league base the user chose
+on October 2, 2026 (U1 = (b), runtime/2014_engine_decisions.md). That base is
+built by batch B3; until its artifacts and pins are committed it fails
+closed. An unknown version raises.
+
+A CalibrationBase owns its loaded data and every memoised helper built on
+it (runtime.field_position.FieldPositionModel, runtime.drive_model.DriveModel,
+the injury parameters, the usage and tilt tables, the band centres), so two
+bases can be used in one process in either order without one's caches
+reaching the other. Nothing here reads a club identity or which side is the
+protagonist.
+"""
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+import hashlib
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+class CalibrationBaseError(ValueError):
+    """A base that cannot be used: unknown, not built, mixed, or failing a pin."""
+
+
+@dataclass(frozen=True)
+class Pin:
+    path: str
+    sha256: str
+
+
+# Every kernel version this repository has released or is building, and the
+# base its games draw from. Closed receipts are audited against the base of
+# their own kernel_version, never a later one.
+KERNEL_BASES = {
+    "2013.4": "2012", "2013.5": "2012", "2013.6": "2012", "2013.7": "2012",
+    "2013.8": "2012", "2013.9": "2012", "2013.10": "2012", "2013.11": "2012",
+    "2014.1": "2012", "2014.2": "2012", "2014.3": "2012", "2014.4": "2012",
+    "2014.5": "2012",
+    "2014.6": "2010_2014w4",
+}
+
+# Bases named by KERNEL_BASES whose artifacts are not committed yet.
+PENDING_BASES = {
+    "2010_2014w4": ("the 2010-2014 (2014 Weeks 1-4) league base is built by batch B3 "
+                    "(scripts/research/build_2010_2014_league_base.py); its artifacts and "
+                    "pins are not committed yet"),
+}
+
+
+def _field_position_v2_partitions(data):
+    counts = {
+        "neutral": sum(sum(row) for row in data["neutral_counts"]),
+        "h1_final": sum(sum(cells.values()) for cells in data["h1_final_counts"].values()),
+        "late": sum(sum(cells.values()) for cells in data["late_counts"].values()),
+        "ot": sum(data["ot_counts"].values()),
+    }
+    out = {"field_position." + k: v for k, v in counts.items()}
+    out["field_position.drives"] = sum(counts.values())
+    for pool in ("kickoff_pool", "free_kick_pool", "punt_pool", "interception_pool", "fumble_pool"):
+        out["field_position." + pool] = len(data[pool])
+    return out
+
+
+def _drive_model_v1_partitions(data):
+    interior = data["pools"]["interior"]
+    return {
+        "drive_model.drives": sum(data["category_counts"].values()),
+        "drive_model.interior": sum(len(interior.get(c, [])) for c in data["categories"]),
+        "drive_model.half_final": sum(sum(cells.values()) for cells in data["half_final_counts"].values()),
+    }
+
+
+# Partition counters by artifact schema. A schema without a counter cannot
+# be pinned, so a base naming one fails closed.
+PARTITION_COUNTERS = {
+    ("field_position", "2012-nfl-field-position-model-v2"): _field_position_v2_partitions,
+    ("drive_model", "2012-nfl-drive-model-v1"): _drive_model_v1_partitions,
+}
+
+
+@dataclass(frozen=True, eq=False)
+class CalibrationBase:
+    """One frozen calibration base. Identity-hashed: its memo is its own."""
+
+    name: str
+    cell_rules: str
+    files: tuple
+    partitions: tuple
+    root: Path = ROOT
+    # The one season-weight table ((season index, weight), ...): empty is
+    # equal weight per event, the adopted default (decisions 1B.1); a
+    # recency weighting would be switched on here and would also need
+    # weighted draws (B5). Part of the manifest when not empty.
+    season_weights: tuple = ()
+    _memo: dict = field(default_factory=dict, init=False, repr=False, compare=False)
+
+    # ---- pins ----------------------------------------------------------------
+
+    def pin(self, role):
+        for name, pin in self.files:
+            if name == role:
+                return pin
+        raise CalibrationBaseError("calibration base %s has no %s artifact" % (self.name, role))
+
+    def roles(self):
+        return tuple(name for name, _ in self.files)
+
+    def at(self, root):
+        """The same base read from another checkout (a fresh memo)."""
+        from dataclasses import replace
+        return replace(self, root=Path(root))
+
+    def path(self, role):
+        return Path(self.root) / self.pin(role).path
+
+    def manifest(self):
+        """(role, path, sha256) for every pinned artifact, sorted by role."""
+        return tuple(sorted((role, pin.path, pin.sha256) for role, pin in self.files))
+
+    def manifest_sha256(self):
+        text = "".join("%s %s %s\n" % row for row in self.manifest())
+        if self.season_weights:
+            text += "season_weights %s\n" % json.dumps(list(self.season_weights))
+        return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+    def _read(self, role):
+        path = self.path(role)
+        try:
+            data = path.read_bytes()
+        except OSError as exc:
+            raise CalibrationBaseError("calibration base %s: %s is unreadable (%s)"
+                                       % (self.name, self.pin(role).path, exc)) from exc
+        digest = hashlib.sha256(data).hexdigest()
+        if digest != self.pin(role).sha256:
+            raise CalibrationBaseError("calibration base %s: %s sha256 %s differs from its pin %s"
+                                       % (self.name, self.pin(role).path, digest, self.pin(role).sha256))
+        return data
+
+    # ---- memoised data ---------------------------------------------------------
+
+    def memo(self, key, factory):
+        """factory() once per base and key; the value is this base's alone."""
+        try:
+            return self._memo[key]
+        except KeyError:
+            value = self._memo[key] = factory()
+            return value
+
+    def raw(self, role):
+        """The parsed artifact, verified against its sha256 pin; shared by
+        every helper of this base, so treat it as read-only."""
+        return self.memo(("raw", role), lambda: json.loads(self._read(role)))
+
+    def fresh(self, role):
+        """A new parsed copy of the artifact, verified against its pin (for
+        callers that may modify what they read)."""
+        return json.loads(self._read(role))
+
+    def partition_counts(self):
+        """Counted from the loaded pools and count tables (never from an
+        artifact's own reconciliation block)."""
+        out = {}
+        for role, _ in self.files:
+            data = self.raw(role)
+            counter = PARTITION_COUNTERS.get((role, data.get("schema"))) if isinstance(data, dict) else None
+            if counter is not None:
+                out.update(counter(data))
+        return out
+
+    def verify(self):
+        """Errors (fresh read of every file): sha256 pins and partition counts."""
+        errors = []
+        for role, pin in self.files:
+            try:
+                data = self._read(role)
+            except CalibrationBaseError as exc:
+                errors.append(str(exc))
+                continue
+            if role in ("field_position", "drive_model"):
+                schema = json.loads(data).get("schema")
+                if (role, schema) not in PARTITION_COUNTERS:
+                    errors.append("calibration base %s: %s schema %s has no partition counter"
+                                  % (self.name, role, schema))
+        if errors:
+            return errors
+        counted = self.partition_counts()
+        expected = dict(self.partitions)
+        for key in sorted(set(expected) | set(counted)):
+            if counted.get(key) != expected.get(key):
+                errors.append("calibration base %s: partition %s counts %s, pinned %s"
+                              % (self.name, key, counted.get(key), expected.get(key)))
+        return errors
+
+    def require(self):
+        """Verify once per base object; raise on any failed pin."""
+        def check():
+            errors = self.verify()
+            if errors:
+                raise CalibrationBaseError("; ".join(errors))
+            return True
+        return self.memo(("verified",), check)
+
+    # ---- models ----------------------------------------------------------------
+
+    def drive_model(self):
+        from .drive_model import DriveModel
+        return self.memo(("model", "drive_model"), lambda: DriveModel(self))
+
+    def field_position(self):
+        from .field_position import FieldPositionModel
+        return self.memo(("model", "field_position"), lambda: FieldPositionModel(self))
+
+    def aggregate(self):
+        """The validated aggregate baseline (runtime.calibration)."""
+        def build():
+            from . import calibration
+            data = self.raw("aggregate")
+            errors = calibration.validate(data, base=self)
+            if errors:
+                raise CalibrationBaseError("calibration base %s aggregate baseline invalid: %s"
+                                           % (self.name, "; ".join(errors)))
+            return data
+        return self.memo(("aggregate",), build)
+
+    def usage(self):
+        """The validated position-usage baseline (runtime.usage)."""
+        def build():
+            from . import usage
+            data = self.raw("usage")
+            errors = usage.validate(data)
+            if errors:
+                raise CalibrationBaseError("calibration base %s usage baseline invalid: %s"
+                                           % (self.name, "; ".join(errors)))
+            return data
+        return self.memo(("usage",), build)
+
+    def tilt_factors(self):
+        from .usage import tilt_factors_from
+        return self.memo(("tilt_factors",), lambda: tilt_factors_from(self.raw("usage_tilt")))
+
+    def top_share_centres(self):
+        """The per team-game top-share band centres (runtime.bands, item 19)."""
+        return self.raw("usage_tilt")["team_game_top_shares_2012"]
+
+    def injury_parameters(self):
+        from .injury_model import parameters_from
+        return self.memo(("injury_parameters",), lambda: parameters_from(self.raw("injury")))
+
+
+BASE_2012 = CalibrationBase(
+    name="2012",
+    cell_rules="2013.7",
+    files=(
+        ("aggregate", Pin("library/data/2012_nfl_aggregate_baseline.json",
+                          "e9326388b1fbab473664fdb83d885b488dd9c3017779c7d6b5cf31b79d1964be")),
+        ("drive_model", Pin("library/data/2012_nfl_drive_model.json",
+                            "e0365f2365529154f954223a448e23c0a674671ccfc17ca3ee10f942666f1adc")),
+        ("field_position", Pin("library/data/2012_nfl_field_position_model.json",
+                               "fbfc0f42aa08df23226686beeddb4698403ed8ff436160476913dea08f1118a5")),
+        ("usage", Pin("library/data/2012_nfl_position_usage_baseline.json",
+                      "2bab464eb76f87917d18e23ecc210bd0ffc39e8bb40a50c1169fd13a6bc8e523")),
+        ("injury", Pin("library/data/2012_nfl_injury_calibration.json",
+                       "4ba3c34f77126c62f0bddf8f9d919d4f42ec0e8b874b5f7d58098d56e90efcfe")),
+        # The attribution tilt factors and the top-share band centres
+        # (runtime/usage.py TILT_SOURCE, kernel 2014.4 item 19).
+        ("usage_tilt", Pin("library/data/2014_strength_calibration_v2.json",
+                           "244eb8b9a2ca7a2ee611dc6c342aac9002d5ff8ec9ad7d19727990ad2824c01f")),
+        # The field-goal distance logistic (kernel 2014.4 phase 2, item 18).
+        ("fg_distance", Pin("library/data/2014_strength_calibration_v3.json",
+                            "48ed2b9116b65c5b0a84059036548c24bcd18627cd4a7661d97b56b408d7e38a")),
+    ),
+    # Counted from the committed 2012 artifacts on October 2, 2026 (the
+    # field-position total is the 5,984 regular-season drives of the
+    # artifact's own partition check).
+    partitions=(
+        ("field_position.drives", 5984), ("field_position.neutral", 4632),
+        ("field_position.h1_final", 256), ("field_position.late", 1035), ("field_position.ot", 61),
+        ("field_position.kickoff_pool", 2444), ("field_position.free_kick_pool", 13),
+        ("field_position.punt_pool", 2405), ("field_position.interception_pool", 386),
+        ("field_position.fumble_pool", 251),
+        ("drive_model.drives", 5984), ("drive_model.interior", 5472), ("drive_model.half_final", 512),
+    ),
+)
+
+BASES = {BASE_2012.name: BASE_2012}
+
+
+def get_base(name):
+    """The committed base of that name; a pending or unknown name raises."""
+    if isinstance(name, CalibrationBase):
+        return name
+    if name in BASES:
+        return BASES[name]
+    if name in PENDING_BASES:
+        raise CalibrationBaseError("calibration base %s is not available: %s" % (name, PENDING_BASES[name]))
+    raise CalibrationBaseError("unknown calibration base %r" % (name,))
+
+
+def base_for_kernel(version):
+    """The base name of a kernel version string (explicit table); an
+    unknown version, or one that is not a string, raises."""
+    if not isinstance(version, str) or version not in KERNEL_BASES:
+        raise CalibrationBaseError("no calibration base is defined for kernel version %r" % (version,))
+    return KERNEL_BASES[version]
+
+
+def base_of_kernel(version):
+    return get_base(base_for_kernel(version))
+
+
+def base_for_result(result):
+    """The base a result or receipt is audited against: its own kernel
+    version's. A recorded calibration_base block (kernel 2014.6 onward) must
+    name that same base and manifest, or the audit fails closed."""
+    base = base_of_kernel(result.get("kernel_version"))
+    recorded = result.get("calibration_base")
+    if recorded is not None:
+        if not isinstance(recorded, dict) or recorded.get("name") != base.name \
+                or recorded.get("manifest_sha256") != base.manifest_sha256() \
+                or recorded.get("cell_rules") != base.cell_rules:
+            raise CalibrationBaseError("%s records calibration base %r, not the %s base of kernel %s"
+                                       % (result.get("event_id"), recorded, base.name,
+                                          result.get("kernel_version")))
+    return base
+
+
+def cohort_base_name(receipts):
+    """The one base name every receipt of a cohort maps to; None when empty.
+    A cohort whose receipts map to two bases raises (audits never mix bases)."""
+    names = {base_for_kernel(r.get("kernel_version")) for r in receipts}
+    if len(names) > 1:
+        raise CalibrationBaseError("mixed-base cohort: receipts map to calibration bases %s"
+                                   % ", ".join(sorted(names)))
+    return next(iter(names)) if names else None
+
+
+def cohort_base(receipts, cohort=None):
+    """The base a band cohort is graded against.
+
+    `cohort` (a kernel version) names it explicitly; every receipt must then
+    map to the same base. Without one the receipts decide, and an empty
+    receipt list falls back to the 2012 base (every closed cohort's)."""
+    name = cohort_base_name(receipts)
+    if cohort is not None:
+        expected = base_for_kernel(cohort)
+        if name is not None and name != expected:
+            raise CalibrationBaseError("cohort %s is graded on the %s base; its receipts map to %s"
+                                       % (cohort, expected, name))
+        name = expected
+    return get_base(name if name is not None else BASE_2012.name)
+
+
+def record(base):
+    """The append-only receipt block naming a base (kernel 2014.6 onward)."""
+    return {"name": base.name, "manifest_sha256": base.manifest_sha256(), "cell_rules": base.cell_rules}

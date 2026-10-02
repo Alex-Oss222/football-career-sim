@@ -6,11 +6,15 @@ defensive credit. Group shares and usage-rank shapes come from the sourced
 2012 play-by-play baseline; the order inside a group comes from the club's own
 depth chart, roles and rotation status. Nothing here rates a player, changes a
 depth chart or imposes a Jacksonville touch quota.
+
+Kernel 2014.6 plumbing (batch B1): the baseline and the tilt table belong to
+a calibration base (runtime.calibration_base: roles "usage" and
+"usage_tilt"). The kernel passes its base's tables explicitly (pick's
+rank_shapes, draw_loss's distribution, tilt_map's factors); with none given
+these functions read the 2012 base, whose files are DATA and TILT_SOURCE.
 """
 from __future__ import annotations
 
-from functools import lru_cache
-import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -59,10 +63,10 @@ def group(position):
     return GROUP_OF.get(str(position or "").upper())
 
 
-@lru_cache(maxsize=1)
 def load():
-    """Parsed baseline; treat as read-only."""
-    return json.loads(DATA.read_text())
+    """The 2012 base's parsed baseline (sha256 verified); treat as read-only."""
+    from .calibration_base import BASE_2012
+    return BASE_2012.raw("usage")
 
 
 def validate(data=None):
@@ -156,7 +160,7 @@ def specialist(players, grp, role):
     return ordered[0] if ordered else None
 
 
-def pick(rng, players, shares, kind, *, role="", exclude=(), only=None, tilt=None):
+def pick(rng, players, shares, kind, *, role="", exclude=(), only=None, tilt=None, rank_shapes=None):
     """Pick one player: group by sourced share, then by usage rank on the
     club depth order. Falls back to every candidate only when no sourced
     group is present (legacy synthetic inputs).
@@ -165,8 +169,10 @@ def pick(rng, players, shares, kind, *, role="", exclude=(), only=None, tilt=Non
     multiplier on his rank weight (tilt_map). It changes only which
     available player receives an already-resolved credit; the number of
     random draws is the same with or without it, and it is never read by
-    the possession stream."""
-    rank_shapes = load()["values"]["rank_shares"]
+    the possession stream. `rank_shapes` is the base's usage-rank table
+    (the 2012 base's when None)."""
+    if rank_shapes is None:
+        rank_shapes = load()["values"]["rank_shares"]
     blocked = {getattr(p, "player_id", p) for p in exclude}
     pool = [p for p in players if p.player_id not in blocked]
     if only is not None:
@@ -200,21 +206,27 @@ TILT_KEY = {"target": "top_receiver_target_share", "rush": "top_rusher_carry_sha
             "sack": "top_sacker_sack_share"}
 
 
-@lru_cache(maxsize=1)
-def tilt_factors():
-    """{kind: {tier: factor}} from the committed calibration file."""
-    data = json.loads(TILT_SOURCE.read_text(encoding="utf-8"))["attribution_tilt_2012"]
+def tilt_factors_from(data):
+    """{kind: {tier: factor}} from a parsed tilt calibration file."""
+    data = data["attribution_tilt_2012"]
     return {kind: dict(data[key]["factors"]) for kind, key in TILT_KEY.items()}
 
 
-def tilt_map(strength, players, kind):
+def tilt_factors():
+    """{kind: {tier: factor}} of the 2012 base (TILT_SOURCE)."""
+    from .calibration_base import BASE_2012
+    return BASE_2012.tilt_factors()
+
+
+def tilt_map(strength, players, kind, factors=None):
     """{player id: factor} for one club's available players and one credit
     kind ("target", "rush" or "sack"), from each player's attribution tier in
-    the club's strength record. Empty (no tilt) without a record."""
+    the club's strength record. Empty (no tilt) without a record. `factors`
+    is the base's tilt table (tilt_factors_from); the 2012 base's when None."""
     records = (strength or {}).get("players") or {}
     if not records:
         return {}
-    factors = tilt_factors()[kind]
+    factors = (factors if factors is not None else tilt_factors())[kind]
     out = {}
     for p in players:
         tier = (records.get(p.player_id) or {}).get("attribution_tier")
@@ -223,8 +235,8 @@ def tilt_map(strength, players, kind):
     return out
 
 
-def draw_loss(rng):
-    dist = load()["values"]["negative_run_loss_distribution"]
+def draw_loss(rng, distribution=None):
+    dist = distribution if distribution is not None else load()["values"]["negative_run_loss_distribution"]
     keys = sorted(dist, key=lambda k: int(k.rstrip("+")))
     chosen = rng.choices(keys, weights=[dist[k] for k in keys], k=1)[0]
     # "6+" is recorded at its lower bound; the pooled tail is not expanded.

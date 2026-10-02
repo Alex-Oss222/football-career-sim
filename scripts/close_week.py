@@ -84,13 +84,23 @@ def load_answer(path):
     return data
 
 
-def read_paused(record_path, event_id):
+def read_paused(record_path, event_id, kernel_version=None):
+    """The week's paused record for this event, or None. Kernel 2014.6
+    plumbing (batch B1): a pause is continued only by the kernel that made
+    it. A waiting pause recorded under another kernel version is refused
+    (with or without --continue): resuming would replay its prefix with
+    different draws, so the recorded state could not reproduce."""
     if not record_path.exists():
         return None
     record = json.loads(record_path.read_text(encoding="utf-8"))
     if record.get("event_id") != event_id:
         raise ValueError("paused record %s belongs to event %s, not %s"
                          % (record_path, record.get("event_id"), event_id))
+    if kernel_version is None:
+        from runtime import KERNEL_VERSION as kernel_version
+    if record.get("status") == "paused" and record.get("kernel_version") != kernel_version:
+        raise ValueError("paused record %s was made by kernel %s; the live kernel is %s, so --continue "
+                         "cannot resume it" % (record_path, record.get("kernel_version"), kernel_version))
     return record
 
 

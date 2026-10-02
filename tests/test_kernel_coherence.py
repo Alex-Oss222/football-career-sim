@@ -368,8 +368,10 @@ class HalfFinalClockTests(unittest.TestCase):
     def test_fallbacks_fit_or_expire(self):
         import random
         fp = field_position
-        with mock.patch.object(fp, "_draw_from", return_value=None), \
-                mock.patch.object(fp, "_clock_fallback", return_value=None):
+        # The module functions are the 2012 base's model; patch its instance.
+        model = fp.model()
+        with mock.patch.object(model, "_draw_from", return_value=None), \
+                mock.patch.object(model, "_clock_fallback", return_value=None):
             diagnostics = {}
             short = fp.draw_drive(random.Random(1), 75, 2, 30, -4, 0.0, diagnostics, (1, 1))
             self.assertEqual((short.category, short.fallback, short.own_seconds, short.expiry_seconds),
@@ -385,11 +387,11 @@ class HalfFinalClockTests(unittest.TestCase):
         # Unpatched, a window beyond the allowance with no feasible final gets
         # a real drive that fits inside it and the window continues.
         diagnostics = {}
-        with mock.patch.object(fp, "_clock_fallback", return_value=None):
-            real = fp._draw_from
+        with mock.patch.object(model, "_clock_fallback", return_value=None):
+            real = model._draw_from
             def no_finals(rng, pool_id, regime, *args, **kw):
                 return None if regime in ("h1_final", "late", "ot") else real(rng, pool_id, regime, *args, **kw)
-            with mock.patch.object(fp, "_draw_from", side_effect=no_finals):
+            with mock.patch.object(model, "_draw_from", side_effect=no_finals):
                 fit = fp.draw_drive(random.Random(3), 75, 2, 200, -4, 0.0, diagnostics, (1, 1))
         self.assertFalse(fit.consumes_window)
         self.assertLess(fit.seconds, 200)

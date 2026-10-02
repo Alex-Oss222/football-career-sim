@@ -4,14 +4,19 @@ The audit is a detector for engine or TeamInput defects (a missing position
 group, a backup quarterback taking starter snaps, inflated play volume). It
 never changes, reruns or selects a game result. An OUTSIDE row is a reason to
 inspect inputs and code, not a reason to reroll canon.
+
+Kernel 2014.6 plumbing (batch B1): band centres are keyed by cohort. A
+cohort is graded against the calibration base of its own kernel version
+(runtime.calibration_base.cohort_base; every kernel up to 2014.5 is the 2012
+base), a cohort whose receipts map to two bases raises, and each receipt's
+ledger coherence is checked with its own base's rules.
 """
 from __future__ import annotations
 
 import math
-from functools import lru_cache
 
-from .calibration import load as load_calibration
-from .usage import group, load as load_usage
+from .calibration_base import BASE_2012, cohort_base
+from .usage import group
 
 MIN_TEAM_GAMES = 16
 
@@ -37,10 +42,13 @@ def _shares(counter, groups):
     return {g: (counter.get(g, 0) / total if total else None) for g in groups}
 
 
-def expected():
-    usage = load_usage()["values"]
-    cal = load_calibration()
-    tilt = _tilt_source()
+def expected(base=None):
+    """The volume, share and top-share centres of one calibration base (the
+    2012 base's when None)."""
+    base = base or BASE_2012
+    usage = base.usage()["values"]
+    cal = base.aggregate()
+    tilt = base.top_share_centres()
     rate = usage["assisted_tackle_play_rate"]
     return {
         "qb1_attempt_share": usage["passing"]["qb1_attempt_share"],
@@ -66,12 +74,6 @@ def expected():
         **{key: (tilt[key]["mean"], tilt[key]["sd"])
            for key in ("top_receiver_target_share", "top_rusher_carry_share")},
     }
-
-
-def _tilt_source():
-    from .usage import TILT_SOURCE
-    import json
-    return json.loads(TILT_SOURCE.read_text(encoding="utf-8"))["team_game_top_shares_2012"]
 
 
 def _kneels_by_team(receipt):
@@ -153,10 +155,12 @@ def observe(receipts):
     }
 
 
-def audit(receipts):
-    """Return (team_games, rows); each row is (metric, observed, band, tolerance, status)."""
+def audit(receipts, cohort=None):
+    """Return (team_games, rows); each row is (metric, observed, band, tolerance, status).
+    Centres are the cohort's own base's (runtime.calibration_base.cohort_base)."""
+    base = cohort_base(receipts, cohort)
     obs = observe(receipts)
-    exp = expected()
+    exp = expected(base)
     enough = obs["team_games"] >= MIN_TEAM_GAMES
     rows = []
 
@@ -205,9 +209,6 @@ def audit(receipts):
 # 3*sqrt(p(1-p)/n) for rates, 3*sqrt(lambda/n) for per-team-game counts and
 # 3*sd/sqrt(n) for means, with the 2012 sd from the artifact.
 
-import math
-
-from . import drive_model
 from .statbook import DRIVE_MODEL_FROM_KERNEL, FIELD_POSITION_FROM_KERNEL, kernel_at_least
 
 LEGACY_LABEL = (
@@ -294,10 +295,17 @@ KNOWN_DETECTIONS["2014.4"] = dict(KNOWN_DETECTIONS["2014.3"])
 # Kernel 2014.5 changes call labels only (runtime/README.md, kernel 2014.5):
 # every result is identical to 2014.4, so the registry carries over unchanged.
 KNOWN_DETECTIONS["2014.5"] = dict(KNOWN_DETECTIONS["2014.4"])
+# Kernel 2014.6 (in build; the version flips only at its release): the
+# 2014.5 registry is carried over with its metric strings unchanged. Each row
+# is re-diagnosed against its new 2010-2014 centre at the batch that moves
+# it; a row that is no longer OUTSIDE leaves the registry there, and a new
+# OUTSIDE row is never registered here without the user (U8).
+KNOWN_DETECTIONS["2014.6"] = dict(KNOWN_DETECTIONS["2014.5"])
 
 
 def known_detections(cohort):
-    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2", "2014.3", "2014.4" or "2014.5"); empty otherwise."""
+    """{metric: note} for a kernel cohort ("2013.6" through "2014.5", and the
+    2014.6 cohort being built); empty otherwise."""
     return dict(KNOWN_DETECTIONS.get(cohort, {}))
 
 
@@ -361,9 +369,10 @@ SHARE_GROUPS = (
 )
 
 
-def drive_model_expected():
-    data = drive_model.load()
-    cal = load_calibration()
+def drive_model_expected(base=None):
+    base = base or BASE_2012
+    data = base.drive_model().load()
+    cal = base.aggregate()
     totals = cal["period_totals"]
     counts = data["category_counts"]
     drives = sum(counts.values())
@@ -389,7 +398,7 @@ def drive_model_expected():
     }
 
 
-def drive_model_observe(receipts):
+def drive_model_observe(receipts, base=None):
     team_games = 0
     sums = {k: 0 for k in ("field_goal_attempts", "field_goals", "extra_point_attempts",
                            "extra_points_made", "drives", "punts", "clock_expired_drives",
@@ -397,7 +406,7 @@ def drive_model_observe(receipts):
     categories = {}
     bins = {}
     interceptions = 0
-    edges = drive_model.load()["rates"]["fg_bin_edges"]
+    edges = (base or BASE_2012).drive_model().load()["rates"]["fg_bin_edges"]
     for receipt in receipts:
         for game in receipt.get("team_stats", {}).values():
             team_games += 1
@@ -423,11 +432,13 @@ def drive_model_observe(receipts):
     }
 
 
-def audit_drive_model(receipts):
+def audit_drive_model(receipts, cohort=None):
     """Rows (metric, observed, centre, tolerance, status) for one kernel cohort
-    (2013.6 or 2013.7); never mixed across cohorts."""
-    obs = drive_model_observe(receipts)
-    exp = drive_model_expected()
+    (2013.6 or 2013.7); never mixed across cohorts, and graded against the
+    cohort's own base."""
+    base = cohort_base(receipts, cohort)
+    obs = drive_model_observe(receipts, base)
+    exp = drive_model_expected(base)
     n = obs["team_games"]
     enough = n >= MIN_TEAM_GAMES
     sums = obs["sums"]
@@ -502,14 +513,16 @@ def _rate(made, n, centre):
     return (made / n if n else None), (3 * math.sqrt(centre * (1 - centre) / n) if n else None)
 
 
-def audit_field_position(receipts):
+def audit_field_position(receipts, cohort=None):
     """Rows (metric, observed, centre, tolerance, status) for the kernel 2013.7
     cohort: kick and punt transitions, late-game punts, real chains, sacks per
     dropback, and informational field-position shapes. Centres come from the
-    2012 field-position artifact's band_centres."""
-    from . import field_position as fp
+    cohort base's field-position artifact's band_centres (2012 through
+    kernel 2014.5)."""
     from .usage import group
 
+    base = cohort_base(receipts, cohort)
+    fp = base.field_position()
     centres = fp.load()["band_centres"]
     team_games = sum(len(r.get("team_stats", {})) for r in receipts)
     rows, add = _grader(team_games >= MIN_TEAM_GAMES)
@@ -546,8 +559,8 @@ def audit_field_position(receipts):
                 kr_yards += line.get("kick_return_yards", 0) or 0
                 pr += line.get("punt_returns", 0) or 0
                 pr_yards += line.get("punt_return_yards", 0) or 0
-    for label, c, made, n in (("mean kickoff return yards (non-touchback kickoffs)", return_centres()["kickoff"], kr_yards, kr),
-                              ("mean punt return yards (returned punts)", return_centres()["punt"], pr_yards, pr)):
+    for label, c, made, n in (("mean kickoff return yards (non-touchback kickoffs)", return_centres(base)["kickoff"], kr_yards, kr),
+                              ("mean punt return yards (returned punts)", return_centres(base)["punt"], pr_yards, pr)):
         add(label, made / n if n else None, c["mean"], 3 * c["sd"] / math.sqrt(n) if n else None, events=n)
 
     # Late trailing punts (possessions ending in Q4's last 5:00 / 2:00 or OT).
@@ -581,7 +594,7 @@ def audit_field_position(receipts):
     observed, tolerance = _rate(sacks, dropbacks, made / n)
     add("sacks per dropback", observed, made / n, tolerance, events=dropbacks)
     total_credit = sum(credit.values())
-    for grp, share in sorted((load_usage()["values"]["sack_share"] or {}).items()):
+    for grp, share in sorted((base.usage()["values"]["sack_share"] or {}).items()):
         observed, tolerance = _rate(credit.get(grp, 0), total_credit, share)
         add("%s share of sack credits" % grp, observed, share, tolerance, events=total_credit)
 
@@ -638,38 +651,47 @@ def audit_field_position(receipts):
     return team_games, rows
 
 
-@lru_cache(maxsize=1)
-def return_centres():
-    """Kernel 2014.4 phase 2: the 2012 kickoff pool's non-touchback records
-    and the punt pool's returned records (return yards mean and SD)."""
-    from . import field_position as fp
-    from .field_position import KICK, PUNT
-    data = fp.load()
-    kicks = [r[KICK["return_yards"]] for r in data["kickoff_pool"] if not r[KICK["touchback"]]]
-    punts = [r[PUNT["return_yards"]] for r in data["punt_pool"] if r[PUNT["outcome"]] == "returned"]
+def return_centres(base=None):
+    """Kernel 2014.4 phase 2: the base's kickoff pool's non-touchback records
+    and the punt pool's returned records (return yards mean and SD);
+    memoised per base (the 2012 base when None)."""
+    base = base or BASE_2012
 
-    def moments(xs):
-        m = sum(xs) / len(xs)
-        return {"n": len(xs), "mean": m, "sd": math.sqrt(sum((x - m) ** 2 for x in xs) / (len(xs) - 1))}
-    return {"kickoff": moments(kicks), "punt": moments(punts)}
+    def build():
+        fp = base.field_position()
+        data, KICK, PUNT = fp.load(), fp.KICK, fp.PUNT
+        kicks = [r[KICK["return_yards"]] for r in data["kickoff_pool"] if not r[KICK["touchback"]]]
+        punts = [r[PUNT["return_yards"]] for r in data["punt_pool"] if r[PUNT["outcome"]] == "returned"]
+
+        def moments(xs):
+            m = sum(xs) / len(xs)
+            return {"n": len(xs), "mean": m, "sd": math.sqrt(sum((x - m) ** 2 for x in xs) / (len(xs) - 1))}
+        return {"kickoff": moments(kicks), "punt": moments(punts)}
+    return base.memo(("return_centres",), build)
 
 
-def coherence(receipts):
+def coherence(receipts, cohort=None):
     """Zero-tolerance ledger-coherence counts over the given receipts.
 
-    Returns (receipts checked, [(class, count, measurable receipts)]). A class
-    with no measurable receipt reads 'not measurable' in the renderers."""
-    from .play_detail import COHERENCE_CLASSES, check_ledger, coherence_counts, measurable_classes
+    Returns (receipts checked, [(class, count, measurable receipts)]) for the
+    classes the cohort's table lists (runtime.play_detail.classes_for_cohort).
+    A class with no measurable receipt reads 'not measurable' in the
+    renderers. Each receipt is checked with its own base's rules; a cohort
+    mixing two bases raises."""
+    from .play_detail import check_ledger, classes_for_cohort, coherence_counts, measurable_classes
 
+    cohort_base(receipts, cohort)
+    listed = classes_for_cohort(cohort)
     errors = []
     checked = 0
-    measurable = {cls: 0 for cls in COHERENCE_CLASSES}
+    measurable = {cls: 0 for cls in listed}
     for receipt in receipts:
         if not receipt.get("drives"):
             continue
         checked += 1
         for cls in measurable_classes(receipt):
-            measurable[cls] += 1
+            if cls in measurable:
+                measurable[cls] += 1
         errors += check_ledger(receipt)
     counts = coherence_counts(errors)
-    return checked, [(cls, counts.get(cls, 0), measurable[cls]) for cls in COHERENCE_CLASSES]
+    return checked, [(cls, counts.get(cls, 0), measurable[cls]) for cls in listed]

@@ -247,16 +247,22 @@ class ResultIdentityTests(unittest.TestCase):
     digests recorded in tests/data/result_identity.json reproduce. The file
     was re-recorded for the kernel 2014.4 candidate (synthetic legacy-path
     fixtures; items 2, 4 and 5 and the E1 home term change results by
-    design), as its note says. Closed 2013 receipts are never rerun."""
+    design), as its note says. Closed 2013 receipts are never rerun.
+
+    Kernel 2014.6 build (batch B1): the games resolve explicitly under
+    PROFILE_2014_5, so these digests stay the isolation proof of every 2014.6
+    mechanism until and after the release flips KERNEL_VERSION."""
 
     def test_results_match_the_recorded_digests(self):
+        from runtime.profiles import PROFILE_2014_5
         fixture = json.loads((Path(__file__).parent / "data/result_identity.json").read_text())
         a, b = sample_teams()
         for row in fixture["games"]:
             game_type, i = row["game_type"], row["index"]
             seed = hashlib.sha256(("identity-%s-%d" % (game_type, i)).encode()).digest()
             r = resolve_game(a, b, seed=seed, event_id="identity-%s-%d" % (game_type, i),
-                             venue="neutral" if i % 5 == 0 else "home", game_type=game_type)
+                             venue="neutral" if i % 5 == 0 else "home", game_type=game_type,
+                             _test_profile=PROFILE_2014_5)
             out = {k: r[k] for k in ("final_score", "possessions", "kickoffs", "injuries", "opening_receiver")}
             out["team"] = {t: {k: v for k, v in s.items() if k != "players"} for t, s in r["team_stats"].items()}
             digest = hashlib.sha256(json.dumps(out, sort_keys=True, default=str).encode()).hexdigest()

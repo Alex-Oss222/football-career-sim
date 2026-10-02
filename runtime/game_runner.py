@@ -154,4 +154,13 @@ def architecture_errors():
     source = inspect.getsource(run_game)
     if source.find("close_event(") > source.find("resolve_game("):
         errors.append("kernel can run before private event closure")
+    # Kernel 2014.6 plumbing (batch B1): production resolves only with the
+    # profile of runtime.KERNEL_VERSION. The kernel's private test hooks
+    # (_test_onsets, _test_profile, any later _test_*) are for tests and
+    # acceptance scripts; the production runner may neither accept nor pass one.
+    hooks = sorted(name for name in params if name.startswith("_test"))
+    if hooks:
+        errors.append("production runner accepts a test hook (%s)" % ", ".join(hooks))
+    if "_test_" in source:
+        errors.append("production runner passes a test hook to the kernel")
     return errors

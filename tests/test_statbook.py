@@ -232,6 +232,28 @@ class StatbookTests(unittest.TestCase):
                          sum(1 for p in result["possessions"] if p["team"] == "A"))
         self.assertEqual(book["teams"]["A"]["drive_model_games"], 1)
 
+    def test_kernel_2014_6_field_group_scaffold(self):
+        # Kernel 2014.6 plumbing (B1): the field group and the per-club count
+        # of 2014.6 games appear only once a 2014.6 receipt exists, so every
+        # closed book and view is unchanged; the recorded base is copied.
+        from runtime.statbook import KERNEL_2014_6_FROM, KERNEL_2014_6_TEAM_STAT_FIELDS
+        from scripts.render_season_stats import compact_book_for_storage
+        self.assertEqual(KERNEL_2014_6_FROM, (2014, 6))
+        self.assertEqual(KERNEL_2014_6_TEAM_STAT_FIELDS, ())
+        old = make_receipt(dict(self.result("old"), kernel_version="2014.5"), week=1, matchup="B at A")
+        self.assertNotIn("calibration_base", old)
+        book = aggregate_receipts([old])
+        self.assertNotIn("kernel_2014_6_games", book["teams"]["A"])
+        self.assertNotIn("kernel_2014_6_games", compact_book_for_storage(book)["teams"]["A"])
+        recorded = {"name": "2010_2014w4", "manifest_sha256": "0" * 64, "cell_rules": "2014.6"}
+        new = make_receipt(dict(self.result("new"), kernel_version="2014.6", calibration_base=recorded),
+                           week=2, matchup="B at A")
+        self.assertEqual(new["calibration_base"], recorded)
+        book = aggregate_receipts([old, new])
+        self.assertEqual(book["teams"]["A"]["kernel_2014_6_games"], 1)
+        self.assertEqual(book["teams"]["A"]["games"], 2)
+        self.assertEqual(compact_book_for_storage(book)["teams"]["B"]["kernel_2014_6_games"], 1)
+
     def test_passer_rating_matches_nfl_formula(self):
         line = {"completions": 20, "pass_attempts": 30, "passing_yards": 250,
                 "passing_touchdowns": 2, "interceptions_thrown": 1}

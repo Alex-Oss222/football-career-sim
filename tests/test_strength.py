@@ -613,11 +613,28 @@ class ChannelTests(unittest.TestCase):
         mean = lambda ws: sum(w * s for w, s in zip(ws, sacks)) / sum(ws)
         self.assertGreater(mean(weights), mean([1.0] * len(pool)))
         self.assertLess(mean(fp.tuple_weights(pool, -0.03)), mean([1.0] * len(pool)))
-        # A zero shift is the same single randrange as every earlier kernel.
-        import random
-        one, two = random.Random(7), random.Random(7)
-        self.assertIs(fp.draw_tuple(one, pool, 0.0), pool[two.randrange(len(pool))])
-        self.assertEqual(one.random(), two.random())
+        # A zero shift is the same single randrange as every earlier kernel:
+        # a recording stream (no seed) sees exactly one randrange over the
+        # whole pool, and the tuple at that index is returned.
+        class Recording:
+            def __init__(self, index):
+                self.index, self.calls = index, []
+
+            def randrange(self, n):
+                self.calls.append(("randrange", n))
+                return self.index % n
+
+            def random(self):
+                self.calls.append(("random",))
+                return 0.5
+        for index in (0, 17, len(pool) - 1):
+            stream = Recording(index)
+            self.assertIs(fp.draw_tuple(stream, pool, 0.0), pool[index])
+            self.assertEqual(stream.calls, [("randrange", len(pool))])
+        # A shift draws once with random(), never randrange.
+        stream = Recording(0)
+        fp.draw_tuple(stream, pool, 0.03)
+        self.assertEqual(stream.calls, [("random",)])
         self.assertGreater(p0, 0.05)
 
     def test_sack_channel_direction_in_sampled_games(self):
@@ -651,6 +668,30 @@ class SpecialTeamsTests(unittest.TestCase):
         self.assertGreater(drive_model.fg_make_prob_at(50), 0.6)
         self.assertLess(drive_model.fg_make_prob_at(65), 0.4)
 
+    def test_parameters_are_a_per_version_table(self):
+        # Kernel 2014.6 plumbing (B1): the kernel reads its profile's entry;
+        # the honours-production-v3 entry is the module constants above.
+        params = strength.parameters(strength.MODEL)
+        self.assertIs(params, strength.PARAMETERS[strength.MODEL])
+        self.assertEqual(params.model, strength.MODEL)
+        self.assertEqual((params.offense_slope, params.defense_slope, params.offense_centre, params.defense_centre),
+                         (strength.OFFENSE_SLOPE, strength.DEFENSE_SLOPE, strength.OFFENSE_CENTRE,
+                          strength.DEFENSE_CENTRE))
+        self.assertIs(params.terms, strength.TERMS)
+        self.assertEqual((params.sack_shift_clamp, params.int_edge_clamp, params.punter_slope, params.kicker_slope,
+                          params.kick_returner_slope, params.punt_returner_slope, params.fg_prob_floor,
+                          params.fg_prob_ceiling, params.home_edge, params.edge_clamp,
+                          params.legacy_anchor_scale, params.legacy_anchor_centre),
+                         (strength.SACK_SHIFT_CLAMP, strength.INT_EDGE_CLAMP, strength.PUNTER_SLOPE,
+                          strength.KICKER_SLOPE, strength.KICK_RETURNER_SLOPE, strength.PUNT_RETURNER_SLOPE,
+                          strength.FG_PROB_FLOOR, strength.FG_PROB_CEILING, strength.HOME_EDGE, strength.EDGE_CLAMP,
+                          strength.LEGACY_ANCHOR_SCALE, strength.LEGACY_ANCHOR_CENTRE))
+        from runtime.profiles import PROFILES
+        for profile in PROFILES.values():
+            self.assertIn(profile.strength, strength.PARAMETERS)
+        with self.assertRaises(ValueError):
+            strength.parameters("player-state-v1")
+
     def test_kicker_term_is_wired_and_inactive(self):
         roster = game_day_roster("A")
         kicker = next(p for p in roster if p.player_id == "A-K1")
@@ -659,12 +700,14 @@ class SpecialTeamsTests(unittest.TestCase):
                                               "deviation": 0.05}}})
         shift, receipt = strength.kicker_adjustment(rec, kicker)
         self.assertEqual((shift, receipt["value"]), (0.0, 2.0))
-        with mock.patch.object(strength, "KICKER_SLOPE", 0.02):
+        # Kernel 2014.6 plumbing (B1): constants live in the per-version table.
+        steep = replace(strength.parameters(), kicker_slope=0.02)
+        self.assertAlmostEqual(strength.kicker_adjustment(rec, kicker, params=steep)[0], 0.04)
+        with mock.patch.dict(strength.PARAMETERS, {strength.MODEL: steep}):
             self.assertAlmostEqual(strength.kicker_adjustment(rec, kicker)[0], 0.04)
         # A punter's record never feeds the kicker term.
         rec = record({"A-K1": {"offdef": None, "special": None, "production": {"tier": "Elite", "value": 2.0, "group": "P", "unit": "special"}}})
-        with mock.patch.object(strength, "KICKER_SLOPE", 0.02):
-            self.assertEqual(strength.kicker_adjustment(rec, kicker)[0], 0.0)
+        self.assertEqual(strength.kicker_adjustment(rec, kicker, params=steep)[0], 0.0)
 
     def test_punter_term_and_the_punt_adjustment(self):
         roster = game_day_roster("A")
@@ -713,9 +756,9 @@ class SpecialTeamsTests(unittest.TestCase):
                                                    "deviation": 4.0}}}})
         self.assertEqual(strength.returner_adjustment(rec, returner, "KR")[0], 0)
         self.assertEqual(strength.returner_adjustment(rec, returner, "PR")[0], 0)
-        with mock.patch.object(strength, "KICK_RETURNER_SLOPE", 1.5):
-            self.assertEqual(strength.returner_adjustment(rec, returner, "KR")[0], 3)
-            self.assertEqual(strength.returner_adjustment(rec, returner, "PR")[0], 0)
+        steep = replace(strength.parameters(), kick_returner_slope=1.5)
+        self.assertEqual(strength.returner_adjustment(rec, returner, "KR", params=steep)[0], 3)
+        self.assertEqual(strength.returner_adjustment(rec, returner, "PR", params=steep)[0], 0)
         kick = {"touchback": False, "next_start": 77, "kick_yards": 65, "return_yards": 22, "enforcement": 0,
                 "outcome": "returned"}
         out = fp.adjust_return(kick, 3)

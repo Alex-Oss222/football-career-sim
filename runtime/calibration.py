@@ -1,5 +1,11 @@
-"""Load and validate the reproducible 2012 -> 2013 era calibration."""
-from functools import lru_cache
+"""Load and validate the reproducible 2012 -> 2013 era calibration.
+
+Kernel 2014.6 plumbing (batch B1): the aggregate baseline and the drive model
+it is cross-checked against are read through a calibration base
+(runtime.calibration_base), verified against their sha256 pins. With no base
+named, the 2012 base is used; DATA and DRIVE_MODEL are its paths. load() and
+load_drive_model() return a fresh parsed copy on every call, as before.
+"""
 from pathlib import Path
 import json
 
@@ -8,12 +14,19 @@ DATA = ROOT / "library/data/2012_nfl_aggregate_baseline.json"
 DRIVE_MODEL = ROOT / "library/data/2012_nfl_drive_model.json"
 
 
-def load():
-    return json.loads(DATA.read_text())
+def _base(base):
+    from .calibration_base import BASE_2012
+    return base if base is not None else BASE_2012
 
 
-def load_drive_model():
-    return json.loads(DRIVE_MODEL.read_text())
+def load(base=None):
+    """A fresh copy of the base's aggregate baseline (sha256 verified)."""
+    return _base(base).fresh("aggregate")
+
+
+def load_drive_model(base=None):
+    """A fresh copy of the base's drive model (sha256 verified)."""
+    return _base(base).fresh("drive_model")
 
 
 def _int(value):
@@ -57,8 +70,10 @@ def validate_drive_model(drive, data):
     return errors
 
 
-def validate(data=None, drive=None):
-    data = data or load()
+def validate(data=None, drive=None, base=None):
+    """Errors in an aggregate baseline; with no drive model given it is
+    cross-checked against the base's own (the 2012 base by default)."""
+    data = data or load(base)
     errors = []
     model = data.get("model", {})
     outcomes = model.get("drive_outcomes", {})
@@ -84,14 +99,16 @@ def validate(data=None, drive=None):
     else:
         errors += list(_default_drive_errors(json.dumps(
             {"period_totals": totals, "field_goal_accuracy": model.get("field_goal_accuracy")},
-            sort_keys=True)))
+            sort_keys=True), _base(base)))
     return errors
 
 
-@lru_cache(maxsize=8)
-def _default_drive_errors(key):
-    """The committed drive model checked once per distinct set of totals."""
-    subset = json.loads(key)
-    data = {"period_totals": subset["period_totals"],
-            "model": {"field_goal_accuracy": subset["field_goal_accuracy"]}}
-    return tuple(validate_drive_model(load_drive_model(), data))
+def _default_drive_errors(key, base):
+    """The base's committed drive model checked once per distinct set of
+    totals (memoised on the base)."""
+    def check():
+        subset = json.loads(key)
+        data = {"period_totals": subset["period_totals"],
+                "model": {"field_goal_accuracy": subset["field_goal_accuracy"]}}
+        return tuple(validate_drive_model(base.raw("drive_model"), data))
+    return base.memo(("aggregate_drive_errors", key), check)
