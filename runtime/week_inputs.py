@@ -4,7 +4,11 @@
 - Background clubs: the sourced Week 1 units (`runtime.depth_library`),
   carried forward. Later real depth charts are not read: they reflect real
   games' injuries and results, which the branch never had. A player already
-  out before Week 1 returns at the library's `return_week`.
+  out before Week 1 returns at the library's `return_week`. From the
+  in-season rails' effective week (2014: Week 5) each background unit is
+  the club's active list in the in-season rails replay at the game's cutoff
+  (`runtime.rails`, library/2014_inseason_rails.md): the other clubs' real
+  roster moves, held to 53 and never invented.
 - Availability: every injury in a closed receipt keeps its player out until
   the injury date plus its projected return days; Jacksonville's own medical
   holds come from `career/2013/roster.md`.
@@ -20,7 +24,7 @@ import re
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-from . import call_families, depth_library, player_bios, strength
+from . import call_families, depth_library, player_bios, rails, strength
 from .usage import group, lineup_errors
 from .seasons import SeasonPaths, require_receipt_season
 
@@ -87,26 +91,153 @@ def _game_dates(season=2013):
     return dates
 
 
-def injured_out(receipts, game_day, season=2013):
-    """{player_id: reason} for players still inside their projected return window."""
+def projected_returns(receipts, season=2013):
+    """Every injury in a closed receipt with its projected return date, in
+    receipt order: the one projection `injured_out` and the in-season
+    rails' branch reserve rule (C6) both read (engineering review S6)."""
     require_receipt_season(receipts, season)
     dates = _game_dates(season)
-    out = {}
+    out = []
     for receipt in receipts:
         played = dates[(int(receipt["week"]), receipt["away"], receipt["home"])]
         for injury in receipt.get("injuries", ()):
             days = injury.get("return_days") or 0
             if injury.get("restriction") == "limited" and not days:
                 continue
-            back = played + timedelta(days=days)
-            if game_day < back:
-                out[injury["player"]] = "%s (%s), projected return %s" % (
-                    injury.get("restriction"), injury.get("injury_class"), back.isoformat())
+            out.append({"player": injury["player"], "team": injury.get("team"), "played": played,
+                        "back": played + timedelta(days=days), "restriction": injury.get("restriction"),
+                        "injury_class": injury.get("injury_class"), "week": int(receipt["week"])})
     return out
 
 
-def background_input(team, week, receipts, game_day, anchors, season=2013):
-    team_input = depth_library.team_input(team, week=week, season=season, **anchors)
+def injured_out(receipts, game_day, season=2013):
+    """{player_id: reason} for players still inside their projected return window."""
+    out = {}
+    for r in projected_returns(receipts, season):
+        if game_day < r["back"]:
+            out[r["player"]] = "%s (%s), projected return %s" % (
+                r["restriction"], r["injury_class"], r["back"].isoformat())
+    return out
+
+
+def _out_until(receipts, game_day, season):
+    out = {}
+    for r in projected_returns(receipts, season):
+        if game_day < r["back"]:
+            out[r["player"]] = r["back"]
+    return out
+
+
+def last_regular_date(season):
+    return max(date.fromisoformat(g["date"]) for g in SeasonPaths(season, ROOT).regular_games())
+
+
+def season_last_cutoffs(season):
+    """{week: its last cutoff} for every scheduled week of the season: the
+    regular season and every postseason round whose games can be built
+    (runtime.rails.slate_cutoffs). Cutoffs come only from the schedule, so
+    this reads nothing a closed week could not have known; a row found late
+    or a branch event from a later week can never replay inside an earlier
+    week's state (engineering review B5)."""
+    from . import postseason
+    out = {}
+    regular = sorted({g["week"] for g in SeasonPaths(season, ROOT).regular_games()})
+    for w in regular + sorted(postseason.ROUNDS):
+        try:
+            out[w] = max(rails.slate_cutoffs(schedule(w, season)).values())
+        except (ValueError, FileNotFoundError, KeyError):
+            break
+    return out
+
+
+def _kickoff_order(games, season):
+    return sorted(games, key=lambda g: (g["date"], g.get("kickoff_et") or "", event_id(g, season=season)))
+
+
+def rails_slate(week, season, receipts, games=None, root=ROOT, data=None, control=None, strict=True):
+    """The in-season rails for one weekly slate, or None before the rails'
+    effective week (closed Weeks 1 to 4 keep the Week 1 library entries).
+
+    One league state per distinct cutoff in the slate, replaying the
+    committed moves, the branch reserve placements from closed receipts (C6)
+    and any emergency promotion (engineering review S5) recomputed week by
+    week from the receipts that existed then. Cutoffs are taken in order and
+    each cutoff's games in kickoff order: a player already in an earlier
+    game's TeamInput that week is left out of every later game's TeamInput
+    (engineering review B1), and the emergency check sees each club without
+    those players. Raises on any replay error unless `strict` is False
+    (the builder's no-op labelling reads the errors instead)."""
+    data = data if data is not None else rails.load(season, root)
+    if data is None or int(week) < data.effective_from_week:
+        return None
+    games = games if games is not None else schedule(week, season)
+    lasts = season_last_cutoffs(season)
+    control = control if control is not None else rails.jacksonville_control(season, root)
+    c6 = rails.c6_events(projected_returns(receipts, season), last_regular_date(season), lasts,
+                         lambda r: r["week"], data.effective_from_week)
+    emergencies, states, computed = [], {}, []
+    entries, deferred = {}, []
+    for w in range(data.effective_from_week, int(week) + 1):
+        wgames = games if w == int(week) else schedule(w, season)
+        wcut = rails.slate_cutoffs(wgames)
+        prior = [r for r in receipts if int(r["week"]) < w]
+        used = {}  # player id -> the earlier game's event id this week
+        for cutoff in sorted(set(wcut.values())):
+            at = [g for g in _kickoff_order(wgames, season) if wcut[rails.game_key(g)] == cutoff]
+            while True:
+                branch = rails.Branch(control, tuple(c6 + emergencies))
+                state = rails.league_state(data, cutoff, branch, lasts)
+                known = {e["id"] for e in emergencies}
+                new = []
+                for g in at:
+                    out = _out_until(prior, date.fromisoformat(g["date"]), season)
+                    for side in ("away", "home"):
+                        if g[side] == PROTAGONIST:
+                            continue
+                        new += [e for e in rails.emergency_events(state, data.codes[g[side]], w, out, cutoff,
+                                                                  depth_library.available, excluded=used)
+                                if e["id"] not in known]
+                if not new:
+                    break
+                emergencies += new
+            computed.append(state)
+            for g in at:
+                for side in ("away", "home"):
+                    team = g[side]
+                    if team == PROTAGONIST:
+                        continue
+                    club = state.club_entry(data.codes[team])
+                    keep = []
+                    for p in club["players"]:
+                        if p["player_id"] in used:
+                            if w == int(week):
+                                deferred.append({"player_id": p["player_id"], "club": team,
+                                                 "event_id": event_id(g, season=season),
+                                                 "earlier_event_id": used[p["player_id"]]})
+                            continue
+                        keep.append(p)
+                    if w == int(week):
+                        entries[(rails.game_key(g), team)] = dict(club, players=keep)
+                    for p in keep:
+                        used[p["player_id"]] = event_id(g, season=season)
+            if w == int(week):
+                states[cutoff] = state
+    errors = sorted({e for s in computed for e in s.errors})
+    if errors and strict:
+        raise ValueError("in-season rails: " + "; ".join(errors[:10]))
+    return {"data": data, "states": states, "cutoffs": rails.slate_cutoffs(games), "c6": c6,
+            "emergencies": emergencies, "last_cutoffs": lasts, "entries": entries, "deferred": deferred,
+            "errors": errors, "branch": rails.Branch(control, tuple(c6 + emergencies))}
+
+
+def background_input(team, week, receipts, game_day, anchors, season=2013, club=None):
+    """A background club's TeamInput: its Week 1 library entry, or, from the
+    in-season rails' effective week, `club` (its rails entry at the game's
+    cutoff, required then)."""
+    if club is not None:
+        team_input = depth_library.club_input(team, club, week=week, **anchors)
+    else:
+        team_input = depth_library.team_input(team, week=week, season=season, **anchors)
     out = injured_out(receipts, game_day, season)
     for player in team_input["roster"]:
         if player["player_id"] in out:
@@ -242,25 +373,79 @@ def jacksonville_input(receipts, game_day, anchors, call_sheet, season=2013):
     }
 
 
+def _rails_clubs(slate, games, season):
+    """{(event key, team): club entry} and the deferral log, as the slate
+    assigned them in kickoff order (date, kickoff time, event id): a player
+    already in an earlier game's TeamInput this week is left out of any later
+    game's TeamInput (engineering review B1); he stays on his club's list and
+    counts toward its 53."""
+    return dict(slate["entries"]), list(slate["deferred"])
+
+
+def _rails_metadata(slate, games, season, deferred):
+    data = slate["data"]
+    folder = rails.data_dir(season, ROOT)
+    return {
+        "effective_from_week": data.effective_from_week, "as_of": data.as_of.isoformat(),
+        "manifest_sha256": rails.sha256_file(folder / "manifest.json"),
+        "files": {s["path"]: s["sha256"] for s in data.manifest["shards"]} | {
+            data.manifest["base"]["path"]: data.manifest["base"]["sha256"]},
+        "cutoffs": {event_id(g, season=season): slate["cutoffs"][rails.game_key(g)].isoformat() for g in games},
+        "state_digests": {c.isoformat(): s.digest() for c, s in sorted(slate["states"].items())},
+        "held": {c.isoformat(): sum(len(h["active"]) + len(h["practice_squad"]) for h in s.held.values())
+                 for c, s in sorted(slate["states"].items())},
+        "branch_reserve": [e["id"] for e in slate["c6"]],
+        "emergency": [e["id"] for e in slate["emergencies"]],
+        "slate_deferred": deferred,
+    }
+
+
+def strength_identities(roster, season, club=None, protagonist=False, registry=None):
+    """Roster rows with their gsis id for runtime.strength, never in the
+    TeamInput (PlayerInput has no gsis field). Background players take the
+    rails entry's id; Jacksonville's come from the identity registry and fail
+    closed when missing (engineering review B6)."""
+    ids = {}
+    if club is not None:
+        ids = {p["player_id"]: p.get("gsis_id") for p in club["players"]}
+    elif protagonist:
+        registry = player_bios.load() if registry is None else registry
+        missing = [r["player_id"] for r in roster if not (registry.get(r["player_id"]) or {}).get("gsis_id")]
+        if missing:
+            raise ValueError("strength identity: no gsis id for " + ", ".join(missing))
+        ids = {r["player_id"]: registry[r["player_id"]]["gsis_id"] for r in roster}
+    return [dict(r, gsis_id=ids.get(r["player_id"])) for r in roster]
+
+
 def build_package(week, receipts, call_sheet, anchors, season=2013):
     games = []
     coverage = {}
     birth_dates = player_bios.load()
-    for game in schedule(week, season):
+    slate_games = schedule(week, season)
+    slate = rails_slate(week, season, receipts, slate_games) if season != 2013 else None
+    clubs, deferred = _rails_clubs(slate, slate_games, season) if slate else ({}, [])
+    if slate:
+        # Newcomers' public birth dates (nflverse players, carried in the
+        # rails rows and base) for players the registry does not hold yet.
+        birth_dates = dict(rails.identities(slate["data"]), **birth_dates)
+    for game in slate_games:
         game_day = date.fromisoformat(game["date"])
 
         def unit(team):
+            club = clubs.get((rails.game_key(game), team)) if slate else None
             if team == PROTAGONIST:
                 data = jacksonville_input(receipts, game_day, anchors, call_sheet, season)
             else:
-                data = background_input(team, week, receipts, game_day, anchors, season)
+                data = background_input(team, week, receipts, game_day, anchors, season, club=club)
             if season != 2013:
                 # Kernel 2014.4 E1: every club, Jacksonville included, gets
                 # its dated honours record by the same rule, as of the game
                 # day (runtime/strength.py). The closed 2013 season is never
-                # rebuilt with it.
-                data["strength"], coverage[team] = strength.team_strength(
-                    team, data["roster"], season, game_day)
+                # rebuilt with it. From the rails' effective week every club
+                # joins by gsis id (engineering review B6).
+                rows = (strength_identities(data["roster"], season, club=club, protagonist=team == PROTAGONIST)
+                        if slate else data["roster"])
+                data["strength"], coverage[team] = strength.team_strength(team, rows, season, game_day)
             return data
 
         games.append({
@@ -289,4 +474,8 @@ def build_package(week, receipts, call_sheet, anchors, season=2013):
         # and every Average fallback, per club.
         package["strength_coverage"] = {
             team: {k: v for k, v in c.items()} for team, c in sorted(coverage.items())}
+    if slate:
+        # Public preparation metadata outside TeamInput and the outcome
+        # packet: the rails files, cutoffs and state digests the week used.
+        package["rails"] = _rails_metadata(slate, slate_games, season, deferred)
     return package

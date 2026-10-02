@@ -215,6 +215,33 @@ def write_receipts(package, paths, results, season):
     return receipts_dir
 
 
+def rails_package_errors(package, week, season, root=ROOT):
+    """The frozen package's in-season rails record must match the committed
+    data and the schedule's cutoffs (engineering review S2, S3): a rebuild
+    after a technical abort reproduces the same inputs or nothing closes."""
+    from runtime import rails
+    from runtime.week_inputs import event_id, schedule
+    data = rails.load(season, root)
+    if data is None or week < data.effective_from_week:
+        return ["package carries in-season rails metadata before the rails' effective week"] \
+            if package.get("rails") else []
+    meta = package.get("rails")
+    if not meta:
+        return ["package lacks its in-season rails record (rebuild with build_week_inputs.py)"]
+    errors = []
+    games = schedule(week, season)
+    cutoffs = rails.slate_cutoffs(games)
+    expected = {event_id(g, season=season): cutoffs[rails.game_key(g)].isoformat() for g in games}
+    if meta.get("cutoffs") != expected:
+        errors.append("package rails cutoffs differ from the schedule's")
+    if meta.get("manifest_sha256") != rails.sha256_file(rails.data_dir(season, root) / "manifest.json"):
+        errors.append("in-season rails data changed after the package was frozen")
+    coverage = rails.week_cutoff_coverage_error(data, max(cutoffs.values()), week)
+    if coverage:
+        errors.append(coverage)
+    return errors
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("week", type=int)
@@ -238,6 +265,7 @@ def main():
     from runtime.week_inputs import schedule
     from scripts.check_week_input_exclusivity import check_inputs, controlled_players_from_roster
     errors = [] if package.get("week") == args.week else ["package is for week %s" % package.get("week")]
+    errors += rails_package_errors(package, args.week, args.season)
     errors += check_inputs(package, controlled_players_from_roster(paths.roster),
                            PROTAGONIST, expected_games=len(schedule(args.week, args.season)))
     if errors:

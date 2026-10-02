@@ -38,7 +38,19 @@ def available(player, week):
 
 
 def team_input(team, *, offense_anchor, defense_anchor, special_teams_anchor, week=1, season=2013):
-    """A kernel TeamInput dict for one background club's game-day unit in `week`."""
+    """A kernel TeamInput dict for one background club's game-day unit in `week`.
+
+    Before the season's in-season rails effective week the unit is the
+    club's Week 1 library entry. From that week there is one source of a
+    background unit: the weekly slate replay (`runtime.week_inputs.rails_slate`,
+    with its branch reserve placements, emergency promotions and slate
+    deferral), so this function refuses rather than return a second,
+    inconsistent roster (engineering review S2)."""
+    from . import rails
+    data = rails.load(season)
+    if data is not None and int(week) >= data.effective_from_week:
+        raise ValueError("Week %d of %d uses the in-season rails: build background units from the weekly "
+                         "slate (runtime.week_inputs.rails_slate), not depth_library.team_input" % (week, season))
     club = load(SeasonPaths(season).background_depth)["clubs"][team]
     return club_input(team, club, offense_anchor=offense_anchor, defense_anchor=defense_anchor,
                       special_teams_anchor=special_teams_anchor, week=week)

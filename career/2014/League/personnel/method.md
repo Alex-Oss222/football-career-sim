@@ -82,7 +82,7 @@ Each season, the 31 clubs' TeamInputs start from their real Week 1 depth charts,
 - free agents lost to Jacksonville;
 - rail retirements.
 
-Later weeks carry forward with branch-generated availability.
+Later weeks carry forward with branch-generated availability. From the in-season rails' effective week the other clubs' real in-season moves apply to these units (section 9).
 
 ## 8. Generated database and work split
 
@@ -95,3 +95,15 @@ The [filling guide](FILLING_GUIDE.md) limits human input to unresolved player fa
 At the relevant dates, the branch fills `fa_draws.md`, `draft_pairing.md`, the other clubs' real 2014 Week 1 rosters, and later retirements. Jacksonville and state records change after actual branch events through the existing closure workflow. This database build does not advance the calendar or resolve any of those events.
 
 Generated club inventories preserve existing Jacksonville control and 2013 branch placements. Their historical source statuses never impose real injuries, suspensions or availability on the branch. The later Week 1 build must reconcile current branch control and draft/free-agent changes afresh under §7. The legacy destructive roster exporter is disabled.
+
+## 9. In-season movements
+
+**Adopted for the 2014.6 release** (the in-season rails and the over-53 rule "hold, never invent", approved by the user October 2, 2026). The full record, sources, two-pass result and decisions are in [the in-season rails record](../../../../library/2014_inseason_rails.md); the replay is `runtime/rails.py`.
+
+- **What applies:** the 31 other clubs' real signings, re-signings, promotions, claims, signings off another squad, practice-squad signings and releases, waivers, releases, trades and retirements, each on its gate date (the later of the wire and ESPN dates; an ESPN-only move one day later), replayed league-wide over the Week 1 base from the effective week (2014: Week 5). Weeks 1 to 4 of 2014 stand as played.
+- **What never applies:** real injuries, suspensions and exempt or availability lists (the player stays, available unless a branch injury says otherwise), real Jaguars moves, and any move of a player Jacksonville controls on its date, except a retirement (section 5), which applies league-wide whoever filed it.
+- **Former Jaguars:** a player who leaves Jacksonville in season follows a later real move only when it is the same kind of move in the same window (section 3). The roster's Departures row records the date control began and his rails disposition: unplaced, or the real moves he follows. A later real move meeting no recorded disposition stops the build.
+- **The base:** the Week 1 library, the real Week 1 53 the chart left out, the players on a league suspension at Week 1 restored to their clubs, and the September 1 practice squads.
+- **Limits (C1 to C7):** every club is held to 53 and 10. A real addition with no open place is held, never by inventing a release: the player stays on his squad or is signed by his real club awaiting a place, and the oldest held addition fills the next freed place. A background player whose branch injury projects a return after the season's last game goes on his club's branch reserve list. A club above 53 at the base keeps its players and holds additions.
+- **Placement:** a newcomer joins the bottom of his group; no later real depth chart is read.
+- **Gate:** a move enters only when the clock has passed its date; a week cannot be built before its moves are committed through its last cutoff.
