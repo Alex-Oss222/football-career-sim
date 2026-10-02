@@ -1,8 +1,14 @@
-# Engine defect register (assessed September 28, 2026, kernel 2014.3)
+# Engine defect register (assessed September 28, 2026, kernel 2014.3; kernel 2014.5 installed October 2, 2026)
 
 **Function:** the open list of engine defects and realism gaps, ranked for fixing before 2014 games. It was built from three read-only audits (game logic, player credit, calibration) over the 267 closed 2013 receipts and synthetic games on the current kernel, and every item here was checked in code, receipts or a synthetic sample unless marked inferred. Closed 2013 results stand; nothing here reruns a game.
 
 **Columns.** *Changes results* says whether a fix moves scores, possessions or injuries (a new kernel version and your approval) or only credit and display. *Decision* names what a fix needs from you beyond approval.
+
+## Fixed in kernel 2014.5 (October 2, 2026; labelling only, no result change)
+
+| Defect | Fix |
+|---|---|
+| Call labels ignored the game situation (item 25 below): the label stream drew each snap's call uniformly from the sheet's family-compatible calls, so the play-by-play recorded Snag in the open field, the Dagger on third-and-1, the Power Pass shot backed up, the opener's first call unsent and an unlabelled Jacksonville pass, and the Week 1 and Week 2 reviews charged the sideline and the quarterback with decisions nobody made | The label stream reads the frozen sheet's per-call menus and opener positions: the opening sequence in script order with its returns on normal downs, then the menu matching the snap's walked down and distance, zone, half clock and score, then the nearest menu, the unrestricted sheet calls and a generic label, each path recorded in `label_source` (`runtime/call_situations.py`, `runtime/README.md` kernel 2014.5, `tests/test_call_situations.py`). Outcomes are proven invariant |
 
 ## Fixed in kernel 2014.3
 
@@ -88,6 +94,12 @@ Remove medically unavailable players automatically. Pause for an important Jacks
 - **Library data:** the 2013 Week 1 depth library files the Jets' DT Sheldon Richardson as an offensive tackle (`scripts/research/build_2013_week1_depth_charts.py`), so the engine has counted him as a lineman. 2014 TeamInputs need a rebuilt library in any case.
 - **2014 tooling:** receipt, box-score and statbook paths are hard-wired to `career/2013/` (`scripts/render_box_score.py` RECEIPTS and similar). They must take the season before any 2014 game closes.
 - **Coherence coverage:** nothing checks down and distance per snap, fourth-down distance against net, first downs against yards, seconds per snap, kicks after 0:00, penalties, turnover transitions, late-game decision sanity or injury participation.
+
+## Call labels and the Week 1 and Week 2 reviews (item 25; opened and closed October 2, 2026)
+
+| # | Defect | Evidence | Resolution | Changes results | Status |
+|---|---|---|---|---|---|
+| 25 | **The call-label stream ignored the game situation.** Kernels 2013.7 to 2014.4 drew each snap's descriptive call uniformly from the sheet calls whose family could describe the ball carrier or target, with no regard to down, distance, field zone, clock or the opener's order, although the frozen sheets carried every call's menus and opener position from the packet | 2014 Week 1 ([record](../career/2014/05_Regular_Season/Games/Week_01/output.md)) and Week 2 ([record](../career/2014/05_Regular_Season/Games/Week_02/output.md), sections 3 and 5, the engine and research note in section 7): Snag, confined to the low red zone, labelled from the Jacksonville 43 and the Washington 43; the Dagger kept to third-and-long labelled on third-and-1; the Power Pass shot on backed-up snaps; the opener's first call "unsent"; a throw from the Washington 11 and a completion from the Jacksonville 37 with no sheet label. The reviews carried those records as "the fifth game of the sideline-procedure item" and charged two of the three interceptions to calls "that should not have left the sideline" | **Fixed in kernel 2014.5** (labelling only; `runtime/README.md`, kernel 2014.5; `runtime/2014_engine_decisions.md`, October 2, 2026). This item is the root cause of the sideline-procedure finding in the Week 1 and Week 2 reviews, which is **closed as an engine artifact**: the play-by-play's call labels were the engine's draw, not Stone's or Tice's sideline procedure, and not Cousins's reads. The closed game records and receipts keep their 2014.4 labels and are not edited or regenerated; a dated note on the [Week 2 page](../career/2014/05_Regular_Season/Games/Week_02/README.md) points here. The interceptions, sacks and every other football result of those games stand as recorded; only the attribution of the call choice is withdrawn | No (labels, `label_source`, `situation` and `script_position` only; `tests/test_call_situations.py` OutcomeInvarianceTests) | Closed in kernel 2014.5; live private runtime verification after merge |
 
 ## Open 2014 rules items (October 1, 2026; season_rules adoption, `library/2014_playing_and_roster_rules.md`)
 

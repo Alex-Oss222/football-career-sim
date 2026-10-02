@@ -46,7 +46,7 @@ class PersonnelLabelTests(unittest.TestCase):
             removed_at = {i["player"]: i["drive"] for i in result.get("injuries", ())
                           if i.get("removed") and i["team"] == "A"}
             for row in result.get("play_ledger") or []:
-                if row.get("offense") != "A" or row.get("label_source") != "sheet":
+                if row.get("offense") != "A" or not str(row.get("label_source")).startswith("sheet"):
                     continue
                 player = row.get("target") if row.get("play_type") == "pass" else row.get("runner")
                 if not player or player not in by_id or row.get("scramble"):

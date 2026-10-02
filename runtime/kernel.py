@@ -1075,6 +1075,11 @@ def _resolve_game(
             passer=passer,
             diagnostics=diagnostics,
             layout=layout,
+            # Kernel 2014.5: label-stream inputs only (the situational menus
+            # and the opening sequence); no draw reads them.
+            score_diff=score_diff,
+            start_kind=start_kind,
+            game_ledger=play_ledger,
         )
         chain_walk.annotate(drive_ledger, layout["walk"], fourth_down)
         append_rows(drive_ledger)

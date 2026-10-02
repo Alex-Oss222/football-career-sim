@@ -291,10 +291,13 @@ KNOWN_DETECTIONS["2014.3"] = dict(KNOWN_DETECTIONS["2014.2"])
 # on its 250-game acceptance sample (runtime/README.md, kernel 2014.4
 # candidate acceptance) and none was added or removed.
 KNOWN_DETECTIONS["2014.4"] = dict(KNOWN_DETECTIONS["2014.3"])
+# Kernel 2014.5 changes call labels only (runtime/README.md, kernel 2014.5):
+# every result is identical to 2014.4, so the registry carries over unchanged.
+KNOWN_DETECTIONS["2014.5"] = dict(KNOWN_DETECTIONS["2014.4"])
 
 
 def known_detections(cohort):
-    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2", "2014.3" or "2014.4"); empty otherwise."""
+    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2", "2014.3", "2014.4" or "2014.5"); empty otherwise."""
     return dict(KNOWN_DETECTIONS.get(cohort, {}))
 
 
