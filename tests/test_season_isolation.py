@@ -1,9 +1,11 @@
 """New-season setup must fail closed without touching prior-season canon."""
 import contextlib
+from datetime import date
 import io
 import json
 import os
 from pathlib import Path
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -16,6 +18,22 @@ from runtime import game_runner, week_inputs
 from runtime.seasons import SeasonPaths, current_record, require_receipt_season, game_release_errors
 from scripts import close_week, build_week_inputs, render_box_score
 import check_game_readiness
+
+IGNORED = ('.git', '.sim_cache', '__pycache__', '.pytest_cache')
+
+
+def copied_root(testcase, *, without_depth_chart=False):
+    """A throwaway copy of the checkout (no cache, no Git) so a test can take
+    a release input away without touching the real tree. The 2014 release has
+    been complete since the season depth chart was written after the 53-man
+    reduction, so an open gate now has to be staged on a copy."""
+    tmp = tempfile.TemporaryDirectory(dir=ROOT.parent)
+    testcase.addCleanup(tmp.cleanup)
+    root = Path(tmp.name) / 'repo'
+    shutil.copytree(ROOT, root, ignore=shutil.ignore_patterns(*IGNORED), symlinks=True)
+    if without_depth_chart:
+        SeasonPaths(2014, root).depth_chart.unlink()
+    return root
 
 
 class SeasonIsolationTests(unittest.TestCase):
@@ -77,27 +95,66 @@ class SeasonIsolationTests(unittest.TestCase):
             self.assertEqual(current_record('roster', root).read_text(), '2014')
 
     def test_successful_service_cannot_override_open_2014_release(self):
+        # The real 2014 release is accepted, so an open gate is staged by
+        # patching the gate loader; the real runtime/season_readiness.json is
+        # never edited.
         with patch.object(check_game_readiness, 'validate', return_value=[]), \
                 patch.object(check_game_readiness, 'Client') as client, \
                 patch.dict(os.environ, {'ENGINE_RUNTIME_URL': 'http://audit.invalid', 'ENGINE_API_TOKEN': 'synthetic'}):
             client.return_value.readiness.return_value = {'ready': True}
-            result = check_game_readiness.assess(season=2014)
+            with patch.object(check_game_readiness, 'game_release_errors',
+                              return_value=['synthetic open gate: staged by the test']):
+                result = check_game_readiness.assess(season=2014)
             self.assertFalse(result['ready'])
             self.assertIn('season_release', {b['id'] for b in result['blockers']})
             client.assert_not_called()
+            # Only the released state reaches the service at all.
+            released = check_game_readiness.assess(season=2014)
+            self.assertNotIn('season_release', {b['id'] for b in released['blockers']})
+            client.return_value.readiness.assert_called_once()
 
     def test_direct_2014_game_is_blocked_before_private_closure(self):
+        # Under the accepted 2014 release the refusal moves from the release
+        # gate to the private snapshot identity check: a client that is not
+        # bound to the game's snapshot never closes an event.
         client = Mock()
-        with self.assertRaisesRegex(ValueError, 'game execution blocked'):
+        with self.assertRaisesRegex(ValueError, 'client and game snapshot differ'):
             game_runner.run_game(None, None, event_id='2014-week01-a-at-b',
                                  snapshot='synthetic-snapshot', client=client)
         client.close_event.assert_not_called()
+        # An open release gate still refuses first, even for a bound client.
+        bound = Mock(snapshot='synthetic-snapshot')
+        with patch('runtime.seasons.game_release_errors', return_value=['synthetic open gate']), \
+                self.assertRaisesRegex(ValueError, 'Season 2014 game execution blocked'):
+            game_runner.run_game(None, None, event_id='2014-week01-a-at-b',
+                                 snapshot='synthetic-snapshot', client=bound)
+        bound.close_event.assert_not_called()
 
     def test_week_commands_block_before_reading_or_writing_packages(self):
+        # The information gate: a master clock before the Week 1 fixture
+        # (September 7, 2014) blocks the build whatever the real clock reads.
+        eve = date(2014, 9, 6)
+        with patch.object(build_week_inputs, 'master_date', return_value=eve):
+            self.assertIn('Information gate', build_week_inputs.information_gate_error(1, 2014) or '')
+        released = copied_root(self)
+        with patch.object(build_week_inputs, 'ROOT', released), \
+                patch.object(build_week_inputs, 'master_date', return_value=eve), \
+                patch.object(sys, 'argv', ['test', '1', '--season', '2014']), \
+                contextlib.redirect_stdout(io.StringIO()) as out:
+            self.assertEqual(build_week_inputs.main(), 1)
+        self.assertIn('Information gate', out.getvalue())
+        self.assertFalse((released / '.sim_cache').exists())
+        # With the season depth chart taken away the release gate blocks both
+        # commands before any package is read or written.
+        unreleased = copied_root(self, without_depth_chart=True)
         for module in (build_week_inputs, close_week):
-            with patch.object(sys, 'argv', ['test', '1', '--season', '2014']), \
-                    contextlib.redirect_stdout(io.StringIO()):
+            with patch.object(module, 'ROOT', unreleased), \
+                    patch.object(sys, 'argv', ['test', '1', '--season', '2014']), \
+                    contextlib.redirect_stdout(io.StringIO()) as out:
                 self.assertEqual(module.main(), 1)
+            self.assertIn('game_depth_chart.json', out.getvalue())
+            self.assertFalse((unreleased / '.sim_cache').exists())
+            self.assertFalse(SeasonPaths(2014, unreleased).cache(1, 'inputs').exists())
 
     def test_box_score_cannot_write_another_season(self):
         with patch.object(sys, 'argv', ['test', '--season', '2014', '--write',
@@ -153,12 +210,16 @@ class PreseasonReleaseScopeTest(unittest.TestCase):
     """A preseason closure needs the game's frozen chart, never the season chart."""
 
     def test_preseason_scope_swaps_only_the_depth_chart_input(self):
-        season_chart = 'Missing 2014 input: ' + SeasonPaths(2014).depth_chart.relative_to(ROOT).as_posix()
-        self.assertIn(season_chart, game_release_errors(2014))
+        # The real season chart exists since the August 31 closure; a copy
+        # without it shows the regular-season check still demands it.
+        root = copied_root(self, without_depth_chart=True)
+        season_chart = 'Missing 2014 input: ' + SeasonPaths(2014, root).depth_chart.relative_to(root).as_posix()
+        self.assertIn(season_chart, game_release_errors(2014, root))
+        self.assertNotIn(season_chart, game_release_errors(2014))
         # All four 2014 preseason charts are frozen (game 4's on August 27,
         # 2014); each scoped check swaps the season chart for the game's own.
         for game in (1, 2, 3, 4):
-            scoped = game_release_errors(2014, preseason=game)
+            scoped = game_release_errors(2014, root, preseason=game)
             self.assertNotIn(season_chart, scoped)
             self.assertFalse([e for e in scoped if 'depth_chart.json' in e], scoped)
         for invalid in (0, 6, '1'):
