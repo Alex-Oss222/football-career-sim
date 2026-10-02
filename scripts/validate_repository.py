@@ -464,6 +464,18 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append('2014 season records invalid: ' + str(exc))
 
+    # In-season roster rails (library/2014_inseason_rails.md): the committed
+    # moves stay behind the master clock, keep their recorded hashes and
+    # stripped forms, and every closed week from the effective week has a
+    # current weekly record whose state digests recompute (engineering B5).
+    try:
+        from runtime import rails as inseason_rails
+        from scripts.render_inseason_rails import check as check_inseason_pages
+        errors.extend(inseason_rails.data_errors(2014, current_date, root))
+        errors.extend(check_inseason_pages(2014, root))
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append('2014 in-season rails invalid: ' + str(exc))
+
     try:
         from scripts.render_trade_pages import check as check_trade_pages
         from scripts.render_award_pages import render_pages as award_pages

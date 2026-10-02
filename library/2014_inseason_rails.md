@@ -1,0 +1,173 @@
+# 2014 in-season roster rails for the 31 background clubs
+
+**Research date:** October 2, 2026 (branch clock September 28, 2014, after the Week 4 game). **Football information window:** the other clubs' real roster moves made public September 2 to 28, 2014, and the formation of practice squads on August 31 and September 1. **Status: PREPARED, GATED.** The moves are committed through September 28 and take effect from Week 5 (`effective_from_week: 5`); no move has yet reached a game. Weeks 1 to 4 were played on the Week 1 rosters and stand as played. The Week 5 preparation appends the moves of September 29 to October 4 once the clock has passed them, and applies the whole backlog as one dated batch.
+
+**Machine artifacts:** [manifest](data/2014_inseason_rails/manifest.json), [base](data/2014_inseason_rails/base.json), [Week 5 shard](data/2014_inseason_rails/week_05.json) and [page hashes](data/2014_inseason_rails/sources.json). **Builder:** `scripts/research/build_2014_inseason_rails.py SOURCE_DIR --through DATE` (first build), `--extend` (append) and `--check` (rebuild and compare); it reads downloaded sources from a transient workspace whose every file's sha256 is pinned in the manifest. **Replay:** `runtime/rails.py`. **Weekly inputs:** `runtime/week_inputs.py` (one replay per distinct cutoff in a slate). **Weekly record:** `scripts/render_inseason_rails.py --season 2014 --week N`, written by each week's batch to `career/2014/League/personnel/in_season/week_NN.md`.
+
+The rules are the [rails method](../career/2014/League/personnel/method.md) (AGENTS.md, "Historical league rails"; Document 2 sections 4.5 and 12): real player movement of the 31 other clubs rides the rails; real injuries, suspensions, statistics and results never do; Jacksonville's control overrides the rails; retirements apply league-wide. This record adds the in-season part the user approved for the 2014.6 release, including the over-53 rule "hold, never invent".
+
+## Information gate
+
+A move is used only once the career clock reaches its public date, enforced in three places:
+
+1. **Builder:** refuses a `--through` later than Document 5's master date, writes no row gated after it, never edits a committed row and numbers new rows from the current maximum.
+2. **validate_repository:** fails when any committed row's gate date, or the manifest's `as_of`, is after the master date, when a committed file's sha256 differs from the manifest, or when a closed week from Week 5 lacks a current weekly record.
+3. **Weekly build:** `build_week_inputs.py` and `close_week.py` refuse a week whose last cutoff is after `as_of` ("append the moves through DATE, two passes, before building Week N").
+
+**Gate date.** The later of the NFL.com wire date and the ESPN date; an ESPN-only row one day after its ESPN date (rules review C11: ESPN runs one to four days early on a share of rows); a second-pass row its own date. The real date (the earliest source date) is kept beside it. Committed rows: 142 two-source rows on the same day, 57 with the later of two dates, 126 wire-only and 65 ESPN-only plus one day.
+
+**Cutoffs.** One function, `rails.slate_cutoffs`, used by the gate and the replay: the freeze date is the information gate's game day (Jacksonville's game, or the slate's first date on a bye), and a game's cutoff is the day before the earlier of its own date and the freeze date. A move dated on a club's game day applies from its next game. On a Jacksonville bye or Thursday game every later game's cutoff moves back to the day before the freeze date; the rule is the same for every club. Week 5: the Thursday October 2 game's cutoff is October 1; the Sunday games' and the Monday game's cutoff is October 4.
+
+**Replay date.** A row's replay date is the later of its gate date and the day after the last cutoff of the week before its effective week (engineering review B5). Every row committed now has effective week 5, so the whole backlog replays from September 28 in its real order; a row found late, an amendment or a branch event is effective from the first open week and never changes a closed week's state.
+
+## Sources
+
+| Use | Source | Scope read | sha256 |
+|---|---|---|---|
+| Research list (pass 1 merge, pass 2 reconciliation) | `research/inseason_moves.csv`, the design's research list (transient) | 636 rows September 2 to October 4; only rows gated by September 28 are committed | a9342e5698ca9ec10ca76502dc5a458fe5242deaf844dffe1adfa36ff934d397 |
+| Transaction wire | NFL.com, `https://www.nfl.com/transactions/league/{signings,waivers,reserve-list,terminations,other,trades}/2014/{8,9}` | 145 cursor-checked pages for August and September; per-page hashes in [sources.json](data/2014_inseason_rails/sources.json) | combined ff11127d5da4850b8d544e054d8d281a8d6b8f904c40c7a1fc0f1bc3b65c0396 |
+| Team transaction logs | ESPN, `https://www.espn.com/nfl/team/transactions/_/name/{team}/season/2014` | 32 season logs (entries to September 28 read for rows; August 30 to September 6 for the base) | combined 3e63580f3a0c7e236d33f2e7e8aa673f23d05e300c417a47f86930a170b54869 |
+| Identity | nflverse [players.csv](https://github.com/nflverse/nflverse-data/releases/download/players/players.csv) | gsis id, name, position, birth date | e85b2736908bd6701b038d18d98025e2b31e6e9db7cebf6f21e71fb0c88f9ba1 |
+| Week 1 membership | nflverse [roster_weekly_2014.csv](https://github.com/nflverse/nflverse-data/releases/download/weekly_rosters/roster_weekly_2014.csv) | Week 1 club membership only (exactly 53 per club); the status column is ignored because it stamps later-season statuses | 331022cd3b0c69d99c581f02b6fde6853e87ac431739c4b49841ee6e02893d6c |
+| Week 1 availability of fill players | nflverse [injuries_2014.csv](https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2014.csv) and [depth_charts_2014.csv](https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2014.csv) | the Week 1 library's adopted convention only (Week 1 report; for a player out at Week 1, the first later week reported questionable or probable or charted) | e675fd5d86c3451d76e7c5d530095db1641347eb3f9796c9a30dd7a75e3ba634; 37c5d02473ebec605aaf68747a50ec77f02347f68f16e69cb5d84862f75c6d3a |
+| Club sites (pass 2b) | atlantafalcons.com, chicagobears.com, detroitlions.com transaction pages | entries to September 28 | in the research manifest (`research/sources_manifest.json`, cd5a1a94...) |
+| Suspensions announced before the reduction (pass 2) | [ProFootballTalk, May 30, 2014](https://profootballtalk.nbcsports.com/2014/05/30/report-daryl-washington-will-miss-entire-2014-season); [Arizona Sports](http://arizonasports.com/story/8262/arizona-cardinals-lb-daryl-washington-suspended-for-entire-2014-season/); [Washington Post, August 27, 2014](https://www.washingtonpost.com/news/early-lead/wp/2014/08/27/browns-wide-receiver-josh-gordon-loses-appeal-suspended-one-year-by-nfl/); [SI, August 27, 2014](https://www.si.com/nfl/2014/08/27/josh-gordon-suspension-upheld-cleveland-browns); [NFL.com, Aldon Smith nine games](https://www.nfl.com/news/niners-aldon-smith-suspended-for-nine-games-0ap3000000385995) | announcement dates only | n/a |
+
+Every input file's sha256 is in the manifest's `builds` entry. A fresh fetch of NFL.com or ESPN will not reproduce the page hashes (the pages change); a refetch is a new research pass, reconciled through a dated amendment.
+
+## Two-pass record
+
+- **Pass 1, wire and ESPN merged:** of the 390 committed rows that carry identity, 201 are confirmed by both the wire and ESPN, 125 are wire-only and 64 ESPN-only. The other 134 committed rows are stripped (below).
+- **Pass 2a, weekly rosters:** 191 week-to-week membership changes between the Week 1 and Week 4 rosters of the 31 clubs; 190 are explained by dated moves on or before September 28, and the last by a real injury placement dated after it (not applied).
+- **Pass 2b, club sites:** 59 of 62 Atlanta, Chicago and Detroit entries to September 28 match (club-site dates corrected by one day for a time-zone display); the three left over are two contract extensions and one placement already on the wire.
+- **Base, two sources each:** practice squads (wire against ESPN), suspensions at Week 1 (wire placements against ESPN, the wire's later lift entries and the outside sources above), the real-53 fill (weekly-roster membership against the wire and ESPN showing no release before Week 1).
+- **Unverified days:** 191 rows have a single source and an unverified day.
+
+## Counts
+
+**Rows committed (gated September 2 to 28): 524.**
+
+| Outcome | Rows | Effect |
+|---|---:|---|
+| APPLY | 371 | 187 active-roster moves, 181 practice-squad moves, 2 with the layer unspecified, 1 retirement |
+| NOT_APPLIED_INJURY | 76 | inert, stripped |
+| NOT_APPLIED_REAL_JAGUARS | 25 | inert, stripped |
+| NOT_APPLIED_SUSPENSION | 23 | inert, stripped |
+| NO_ROSTER_EFFECT | 9 | 5 administrative wire entries for long-retired players, 4 contract extensions |
+| NOT_APPLIED_JAX_CONTROL | 8 | inert, stripped |
+| REVIEW_UNPLACED | 5 | inert until the user decides the rule (Decisions, D4) |
+| EXCLUDED_SOURCE_ERROR | 3 | ESPN entries that copy another club's entry or misstate the club |
+| NOT_APPLIED_AVAILABILITY | 2 | inert, stripped |
+| EXCLUDED_SOURCE_CONFLICT | 1 | resolved to the other source's row |
+| REVIEW_IDENTITY | 1 | an addition to a 53 with no resolvable identity (engineering B4); not applied |
+
+APPLY rows by kind: 139 practice-squad signings, 54 waivers, 51 free-agent signings, 42 practice-squad releases, 39 promotions (19 inferred from an earlier practice-squad signing with the club), 21 releases, 11 re-signings, 6 signings off another club's squad, 5 waiver claims, 2 releases with the layer unspecified, 1 retirement. No trade was made in the window (the wire's trades pages are empty; nfldata trades.csv shows none between August 31 and October 18).
+
+**Base (effective from Week 5):** 37 real-53 fill players at 16 clubs, 26 players restored from a league suspension, no window correction, and practice squads of 278 players (198 in both sources, 80 in one), verified for 7 clubs (Cleveland, Dallas, Denver, Detroit, Oakland, Philadelphia, Seattle). Seven no-op departures are labelled `never_in_branch` (six players on a real reserve list before Week 1, one release with no signing in either source).
+
+**Replay at the October 4 cutoff, on the committed rows:** 40 additions and 128 practice-squad signings applied, 46 departures from a 53 and 42 from a practice squad, 10 practice-squad releases implied by a later real signing elsewhere, 56 additions held when they arrived (49 for a 53, 7 for a practice squad), 9 holds lapsed and 5 filled (2 to a 53, 3 to a practice squad), one retirement. 42 additions remain held at 19 clubs. Active lists: 1 club at 51, 6 at 52, 15 at 53 and 9 above 53 under C7 (54 to 56). These figures change when the Week 5 batch appends the rest of the window.
+
+## The base
+
+The replay starts from one artifact chain: the [Week 1 library](2014_week1_depth_charts.md), then the base, then the dated moves. The base, written once by the first build, holds:
+
+- **The real-53 fill (R21 base).** The nflverse weekly roster lists exactly 53 players for every club at Week 1. Players on that list whom the Week 1 chart did not carry join at the bottom of their group (jersey, then name), with the Week 1 library's availability convention. Excluded by gsis id: every Jacksonville-controlled player (37), players the Week 1 build removed or left unplaced, departures, draft swaps and branch trades (2: the branch has them at Miami and Oakland). Fill by club: ARI 1, BUF 2, CIN 1, CLE 1, DET 1, GB 1, HOU 1, MIA 1, NE 2, NO 7, NYG 1, NYJ 7, OAK 6, SF 1, TB 3, TEN 1. It carries over under C7, never as holds.
+- **Restorations (rules review C2).** Players on a league suspension or exempt list at Week 1 were on no Week 1 chart; under rails rule 2 a suspension never rides the rails, so they return to their real clubs at the bottom of their groups, available. The systematic pass is the wire's reserve/suspended and exempt placements dated on or before September 6 (every suspended player had to be placed at the August 30 reduction), with the two earlier full-season suspensions added from outside sources. Restored: ARI Daryl Washington; BAL Ray Rice, Will Hill; BUF Nigel Bradham; CAR Frank Alexander; CIN Chris Lewis-Harris; CLE Josh Gordon, Marlon Moore; DAL Orlando Scandrick, Jakar Hamilton, Josh Brent; DEN Matt Prater, Wes Welker; IND Robert Mathis; KC Dwayne Bowe, Donald Stephenson; MIA Reshad Jones, Dion Jordan; MIN Jerome Simpson; NE Brandon Browner, Brian Tyms; NYG Jayron Hosley, Eric Herman; SF Aldon Smith; STL Stedman Bailey; WAS Brandon Meriweather. Their later reinstatement rows are inert; their clubs' later real releases apply (Rice September 8, Simpson September 19). Not restored: one Jacksonville-controlled player and one real Jaguars placement (not named, rules C6); Alex Boone (on the real Week 1 roster, so in the fill); Cobi Hamilton (waived before Week 1 and on Cincinnati's practice squad, so his real September 10 Philadelphia practice-squad signing applies); D.C. Jefferson (on a real reserve list before Week 1). Each carries over under C7.
+- **Practice squads as of September 1.** Pass 1 is the wire's practice-squad signings dated on or before September 1 (it dates the August 31 formation September 1); pass 2 is ESPN's logs of August 30 to September 1 net of their releases. Entries are matched by club and spelling with any date to September 4; an entry dated September 2 to 4 in the other source is a dated row, not base. A club's 10-player limit is enforced only when every entry has both sources and no name is unresolved (7 clubs); elsewhere the count is recorded but not enforced, because ESPN's logs omit some clubs' formations (Miami, New Orleans) and spellings or names cannot be resolved for others.
+- **Base dates (engineering review B3).** Active list: the day before the club's Week 1 game (September 3 for Green Bay and Seattle, September 7 for Arizona, Detroit, the Giants and San Diego, September 6 for the rest). Practice squad: September 1. A row dated inside a club's active window touches only the other layers; the builder compares each player's last window row with the base and writes any contradiction as an explicit dated correction (none was needed). This replaces the stored `in_base` flag (rules review B1).
+
+## Hold, never invent (C1 to C7)
+
+The user approved this rule for the 2014.6 release before any Week 5 draw; it is not revisited because of a result.
+
+- **C1, limits.** Every background club is held to 53 on the active list and 10 on the practice squad (the squad count only where its base is verified). Reserve lists do not count. Jacksonville obeys the same limits.
+- **C2, order.** League-wide, by (replay date, gate date, phase, kind, move id), never by club. Phase 0: departures, retirements, branch reserve placements and Jacksonville acquisitions. Phase 1: additions (own practice-squad promotion, claim, signing or re-signing, signing off another squad, practice-squad signing). Phase 2: fill held places until nothing changes, active queues before practice-squad queues, oldest first.
+- **C3, hold.** A real addition that would take a club over its limit does not happen yet. The player stays on the practice squad he was on, or, if he was a free agent, he is signed by his real club and awaiting a place: not a free agent, in no TeamInput, counted under that club (rules review B3). Jacksonville's only route to him is a method section 4 draw with an offer dated before his real signing. The replay's held list is the free-agent market's view of him: "signed by [club], held".
+- **C4, freed places.** When a club falls below its limit, its oldest held addition whose precondition still holds goes through on that date. A place frees through a real departure, a retirement, a trade away or a branch reserve placement (C6). A hold lapses when the player's own later applied move overtakes it (that club releases him, another club adds him, he retires); a new addition by another club replaces the hold. Only applied rows cancel a hold.
+- **C5, the real-injured player.** A real injury, suspension or exempt placement never touches membership: the player stays at his branch slot, available unless a branch injury says otherwise; his real activation is inert, and an injury-driven release (injury settlement, waived/injured) is not applied. An ordinary later release is.
+- **C6, branch reserve.** A background player whose branch injury, read from closed receipts by the shared projection `week_inputs.projected_returns`, projects a return after the season's last regular-season date (December 28, 2014) goes on his club's branch reserve list the day after the game, effective from the week after the game and never before Week 5. It reads only branch injuries and applies to all 31 clubs; Jacksonville's reserve moves stay Caldwell's and Stone's.
+- **C7, clubs over 53 at the base.** A club above 53 after the base keeps its players and holds every real addition until real departures bring it below 53. Nobody is released to correct it.
+
+The branch generates exactly two kinds of background roster move: the C6 placement and the emergency promotion below. Every other departure traces to a real row or a retirement.
+
+**Emergency promotion (engineering review S5).** When a club playing at a cutoff has no legal game-day unit, a dated branch event promotes, at the short group, its own practice-squad player (earliest signing, then id), then a held addition; at 53, room comes only from putting its longest-projected injured player at that group on branch reserve. It is recomputed week by week from the receipts that existed then.
+
+**Why holding.** Releasing the lowest-ranked player at the position would invent a move and would need the link from a signing to the real injury behind it (rails rule 2). Carrying more than 53 would hold Jacksonville alone to the limit and fail the label-swap test. Holding is the cause-and-effect counterfactual: the injury did not happen, so the replacement was not needed; when a real absence ends and the real club releases someone, the release applies and the held player gets in. Inputs are the club's base, the real rows and branch injuries; nothing names Jacksonville's schedule, its opponent or a result, and permuting club labels permutes the output.
+
+## Replay rules
+
+- **Newcomers** enter at the bottom of their kernel group (the group's highest depth plus one; same-date newcomers by move id). No later real depth chart is read (rules review B2; the design's relative-rank option D7 is dropped): only the Week 1 chart rides the rails as depth.
+- **Departures** leave gaps; no incumbent is re-ranked (engineering review S1). `usage.protection_front` already fills a vacant line slot by position label.
+- **Roles.** A departing returner's or kicker's role passes to the club's Week 1 second string for it (KR2, PR2) when he is still on the 53, else to nobody (the kernel default). A newcomer kicker or punter takes the kicking role only if no one holds it after that day's departures (rules C1).
+- **Availability.** Newcomers are available; a library player's Week 1 availability (`return_week`) travels with his gsis id when he moves (rules C12). Branch injuries apply as before; no real report after Week 1 is read for anyone except under the Week 1 library's adopted return convention.
+- **Preconditions.** An addition applies only if the player is on no other branch 53 or reserve list and is not Jacksonville-controlled; a player on another club's practice squad leaves it. A real practice-squad signing of a player the branch has on another club's squad applies, with the release that preceded it in reality (the wire omits practice-squad terminations): logged `implied_ps_release`, never an invented move.
+- **No-ops.** A departure that finds nothing is a no-op only with a reason from a closed list: excluded from the base, his earlier addition held or not applied, already departed, placed elsewhere by the branch, the squad base unverified (practice-squad releases only), or `never_in_branch` (labelled by the builder with its evidence). An unexplained no-op stops the build (engineering review B4).
+- **Identity (rules B4, engineering B4).** Everything is matched by gsis id (or nflverse's id where no gsis id exists). The player id is the existing id for that gsis in any registry (the Week 1 library, the birth-date registry, the 2014 receipts, the league database); otherwise the bare name, unless any registry uses that normalized name for another gsis id, when it is "Name (club code at first 2014 entry)". The id is frozen in the row. Corrected: the Cleveland practice-squad receiver Charles D. Johnson (00-0030113, not Carolina's end); two rows logged under two spellings merged (Cam and Cameron Henderson, Dax and Daxton Swanson); the Hughlett, Paulson and T.J. Graham spellings resolved (Graham keeps the library id Trevor Graham). The builder stops on an applied row whose gsis belongs to a base player of another position group.
+- **Jacksonville control (engineering review S4).** Dated intervals by gsis id from the roster's dated statuses and its Departures table, with ids from `player_birth_dates.json`; an unresolved or duplicated id fails closed. The research outcome is stored, but the effective outcome is recomputed at replay: a row involving a player Jacksonville controls on its date or its replay date is not applied, and a Jacksonville acquisition removes the player from every background layer and hold on its date.
+- **Retirements (method section 5).** A real retirement applies on its gate date league-wide; a Jacksonville-controlled player's retirement row without its `retirements.md` entry fails the build. Un-retirement is the player's choice: a later real signing applies. James Harrison retired as a free agent (club FA, ESPN September 5, gated September 6, rules C9) and signed with a club on September 23; both apply in order. When the batch records it, `retirements.md` reads "Applied in the Week 5 build; real date September 5, 2014; not applied before Week 5" (rules C8).
+- **Closed weeks (engineering review B5).** A background player in a closed receipt from Week 5 on who is no longer with that club must have a departure from it dated on or after that game (`rails.receipt_departure_errors`, run by validate_repository with the weekly records); nothing may drop a player who has played.
+- **Weekly slate (engineering review B1).** One state per distinct cutoff. In kickoff order (date, kickoff time, event id), a player already in an earlier game's TeamInput that week is left out of any later game's TeamInput; he stays on his club's list and counts toward its 53. Logged as `slate_deferred` in the package's `rails` record.
+- **Strength identity (engineering review B6).** From Week 5, `build_package` passes every club's roster rows with their gsis id (background from the rails entry, Jacksonville from the identity registry, failing closed when missing) to `strength.team_strength`. The TeamInput schema is unchanged. Weeks 1 to 4 stand.
+- **Ages (engineering review S7).** A newcomer the birth-date registry does not hold yet takes his nflverse birth date from the rails rows for the package's ages; the batch that applies him may import him into the registry under his frozen id.
+
+## Conflicts and how they were resolved
+
+| Conflict | Resolution |
+|---|---|
+| ESPN's San Diego log has a promotion that the wire and ESPN's Arizona log record as Arizona signing the player off San Diego's squad | EXCLUDED_SOURCE_ERROR; the Arizona row carries the move |
+| ESPN's Giants page repeats the Jets' September 26 entry | Both rows EXCLUDED_SOURCE_ERROR |
+| A Jets signing in ESPN (active) and on the wire (practice squad, a day later); the weekly roster agrees with the wire | EXCLUDED_SOURCE_CONFLICT; the wire's row applies |
+| A Carolina promotion on the wire only, inferred from an earlier practice-squad signing | APPLY on the same evidence rule as the other inferred promotions (rules C10) |
+| `in_base`, one stored flag compared row by row with Week 1 membership, skipped re-additions and later departures (rules B1; engineering B3) | Deleted. Every row replays from September 2 in order; inside a club's base window only explicit dated corrections touch the active list; idempotent layer moves |
+| The design placed newcomers by a later real chart (D7); the rules review found it reads real injury absences (B2); engineering found it reseats the line (S1) | Bottom of the group; D7 dropped |
+| The design made a held player a free agent Jacksonville could pursue (C3); method section 4 and the design's own section (d) say a player who really signed is gone (rules B3) | Rules B3: signed by his real club, awaiting a place; a held practice-squad player stays on his squad until the hold fills (design C3, engineering B2), so each player is in one place |
+| Design: base built in the Week 5 batch; rules C12: a hard prerequisite; engineering B3: build it in the release commit | Built in this commit (everything in it was public by September 6), effective from Week 5 (rules C8), so the prerequisite is met |
+| Engineering B5 asks for one immutable file per effective week; the design for one append-only file | One shard per effective week under a manifest; a closed week's shard is never touched and its state digests are recomputed by validate_repository |
+| Rules C4 found the Week 1 library let real 2013 Jaguars' later moves stand | Only the branch's own former Jaguars are held unplaced at replay; a real-Jaguars-only player is a free agent whose other clubs' real moves apply (method section 3) |
+| The wire omits practice-squad terminations, so ten real practice-squad signings found the player still on another club's squad | Applied with the implied release (`implied_ps_release`) |
+| The rules review's corrections to rows after September 28 (rules C1, C10) | Carried by generic rules (injury wording in either source) or keyed by research row in the builder without naming the player, and applied only when the window reaches them; this record names no move after September 28 (rules C5) |
+| Real-Jaguars and Jacksonville rows, real injuries, suspensions and availability carried entry text (rules C6) | Committed as id, gate date, club, outcome, effective week and page hashes only; weekly pages show per-club counts; one second-pass citation whose page title names a real injury is kept without its URL |
+
+## Decisions
+
+| # | Decision | Status |
+|---|---|---|
+| D1 | Over-53 rule: hold and fill freed places (C1 to C7), with the season-ending branch reserve | Adopted by the user for the 2014.6 release |
+| D2 | Players left off the Week 1 library by a league suspension or exemption | Restored under rails rule 2 and the Blackmon and Sanders precedent, from the systematic sweep above (rules C2), effective from Week 5 |
+| D3 | Shaw and Asper dispositions | No change (rules C3): both continued real tenures that began in another window, the C.J. Wilson reasoning; their closed August 31 dispositions stand and Asper's Giants practice-squad release is inert |
+| D4 | Later real moves of the branch's unplaced former Jaguars | The user's decision, put as a rule (rules C4): either "unplaced holds for the league year", or "a later real move applies when it is not a real Jaguars move, its precondition holds and it does not continue a real tenure the branch replaced". The five committed rows (Lavar Edwards's two Dallas rows, Allen Reisner's two New England rows, Mark Asper's Giants release) have the same effect under either rule and stay inert |
+| D5 | Cutoff convention | The day before, from the schedule, with the later of two source dates and ESPN-only rows one day later (rules C11) |
+| D6 | Activations of players on a real reserve list before Week 1 | Supported as `activation_return` (an addition); none in the committed window |
+| D7 | Newcomer slot by a later chart | Dropped (rules B2) |
+
+## The weekly record
+
+`career/2014/League/personnel/in_season/week_NN.md`, generated by `render_inseason_rails.py` and written by the week's batch only once the clock has passed every move it lists:
+
+1. window, cutoff per game, sources, linking this record;
+2. by club: additions applied, departures applied, held at the last cutoff, filled from hold, not applied;
+3. applied moves (Real date | Club | Move | Player | Detail | Source | Applied in the branch);
+4. held additions;
+5. not applied: real injuries, suspensions, availability and Jacksonville rows as per-club counts only; other reasons listed;
+6. corrections and decisions;
+7. the event-record comment the batch supplies.
+
+The generated block carries the files' sha256 and a digest of the league state at each cutoff; `validate_repository` regenerates it for every closed week. Each `clubs/<CODE>.md` "Changes on the rails" table gets one line per batch linking to the page, so rows are not copied 31 times.
+
+**Record.md.** The batch's event is dated at the Week 5 application, with the real window in its text (a September 2 date would sort ahead of the closed Weeks 2 to 4), for example: "The other 31 clubs' real roster moves of September 2 to October 4 entered the branch for Week 5: [n] additions and [m] departures applied, [h] additions held for want of a roster place; real injuries, suspensions and Jaguars moves not applied. Weeks 2 to 4 ran on the Week 1 rosters and stand as played."
+
+## Extending the record (each Run Week N from Week 5)
+
+1. As the clock passes the dates, research the window from the previous as-of date to the week's last cutoff in two passes (NFL.com wire with cursor checks, ESPN logs, weekly rosters, club sites where reachable), into a transient SOURCE_DIR.
+2. `python scripts/research/build_2014_inseason_rails.py SOURCE_DIR --through LAST_CUTOFF --extend`: appends rows from the current maximum, effective from the first open week; late-found rows join that week's batch; nothing committed changes.
+3. `python scripts/build_week_inputs.py N --season 2014`: the coverage gate, the league-wide state check, the slate gate and readiness.
+4. After closure, `python scripts/render_inseason_rails.py --season 2014 --week N --write --event '{...}'`, the club link lines, any retirement row, Record.md.
+
+## Coverage gaps
+
+- ESPN's logs are thin for some clubs and omit some practice-squad formations; the wire omits practice-squad terminations and some designated-for-return placements.
+- Practice-squad completeness cannot be checked against the weekly rosters, which carry few practice-squad rows; only 7 clubs' squad bases are verified.
+- 191 committed rows have a single source and an unverified day.
+- Harrison's is the only retirement found in the window, which does not prove there were no others.
+- The real-53 fill rests on one publisher's membership list, checked only for releases before Week 1.
+- One addition to a 53 has no resolvable identity and is not applied (REVIEW_IDENTITY).

@@ -1,0 +1,23 @@
+{
+ "schema_version": 1,
+ "season": 2014,
+ "as_of": "2014-09-28",
+ "status": "PREPARED, GATED",
+ "effective_from_week": 5,
+ "builder": "scripts/research/build_2014_inseason_rails.py",
+ "base": {
+  "path": "base.json",
+  "library": "library/data/2014_week1_depth_charts.json",
+  "library_clubs_sha256": "35ae4a3a38740cc8e8ea9be32dc062575d5bdad4db1120e10450f826c801efb2",
+  "sha256": "ef097a819f8ae4ced392a1a168e15581e6bd0908d26b2bc70cebc8cc814a6492"
+ },
+ "shards": [
+  {"week":5,"path":"week_05.json","through":"2014-09-28","sha256":"126622dce093cde2e6d22da7f2293f365990cfa8ab060f58242ff615e7ea53df","rows":524}
+ ],
+ "builds": [
+  {"through":"2014-09-28","rows":["R14-0001","R14-0524"],"inputs":{"espn/espn_manifest.json":"b865fadb1311dbea0228e9c5c54a6ccb81b5dda31982b2adca2b6892b4817ba8","espn/espn_rows.json":"dcfd899a80be6c4631b2e18e5fe9c63faf5c5015a107712fa3d24df98c5547df","nflverse/depth_charts_2014.csv":"37c5d02473ebec605aaf68747a50ec77f02347f68f16e69cb5d84862f75c6d3a","nflverse/injuries_2014.csv":"e675fd5d86c3451d76e7c5d530095db1641347eb3f9796c9a30dd7a75e3ba634","nflverse/players.csv":"e85b2736908bd6701b038d18d98025e2b31e6e9db7cebf6f21e71fb0c88f9ba1","nflverse/roster_weekly_2014.csv":"331022cd3b0c69d99c581f02b6fde6853e87ac431739c4b49841ee6e02893d6c","research/inseason_moves.csv":"a9342e5698ca9ec10ca76502dc5a458fe5242deaf844dffe1adfa36ff934d397","research/sources_manifest.json":"cd5a1a946862ed6c7447f7f1fdcb52e50675360d06688a310bc0fd11d0e1d5ee","wire/nfl_manifest_8_signings-waivers-reserve-list-terminations-other.json":"f4f4351248c643cfafb10e483be6e4fd1cbc9632bb5a7b9ff276e607f2ca0176","wire/nfl_manifest_8_trades.json":"bdec313e2b03d3fc128f016d624775e21c2ddc7f6139f986f3ebade134199c83","wire/nfl_manifest_9_waivers-reserve-list-trades-terminations-other.json":"247959995f4f06dea9cece6d1d5a4d6114214b2c6e73111cc81f27f69ff271cb","wire/nfl_manifest_9_waivers-signings.json":"c93308e0f8fa23594f98d238016764a623d38215b4a498ff559543ee125c379c","wire/nfl_rows_8_signings-waivers-reserve-list-terminations-other.json":"5c198f701400700f9c442d12474a072bdeed65089f80028ab49955e1c03f3e47","wire/nfl_rows_8_trades.json":"03a475b392e437d25c6e70125afd64b722a88fea3236c7e1a2a50c4b60b25bb3","wire/nfl_rows_9_waivers-reserve-list-trades-terminations-other.json":"165f06df14747ee4c7378109bcd514e60374ed34b8d712c6e316347226c4d3dc","wire/nfl_rows_9_waivers-signings.json":"e6bb75a9e857aade24d6e2cddf95a3823b92d3ee5a58949e7e54f4c8660bd26e"}}
+ ],
+ "sources": "sources.json",
+ "amendments": [],
+ "decisions": "library/2014_inseason_rails.md#decisions"
+}

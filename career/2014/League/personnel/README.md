@@ -18,6 +18,7 @@
 | [draft_pairing.md](draft_pairing.md) | Jacksonville's selections and swap partners, filled at the May 8-10 draft |
 | [fa_draws.md](fa_draws.md) | Market draws at each pursued player's real signing date |
 | [FILLING_GUIDE.md](FILLING_GUIDE.md) | The small amount of human input needed and where to put it |
+| [In-season rails](../../../../library/2014_inseason_rails.md) | The other clubs' real in-season moves from Week 5 (method section 9): sources, two passes, the hold rule and decisions; each week's batch writes its record to `in_season/week_NN.md` |
 
 **Rebuild:** `python scripts/research/build_league_player_database.py`. This runs offline and preserves the sourced target section and club text outside generated markers. Add `--check` to compare the generated outputs without writing. The old `build_league_rails_rosters.py` exporter now stops with a migration message; it cannot overwrite this research.
 

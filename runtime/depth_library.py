@@ -37,8 +37,25 @@ def available(player, week):
     return bool(player.get("return_week")) and week >= player["return_week"]
 
 
-def team_input(team, *, offense_anchor, defense_anchor, special_teams_anchor, week=1, season=2013):
-    """A kernel TeamInput dict for one background club's game-day unit in `week`."""
+def team_input(team, *, offense_anchor, defense_anchor, special_teams_anchor, week=1, season=2013, cutoff=None):
+    """A kernel TeamInput dict for one background club's game-day unit in `week`.
+
+    From the season's in-season rails effective week the unit is the club's
+    rails entry at `cutoff` (runtime.rails), which is then required: a caller
+    that passes none would silently get the Week 1 roster again (engineering
+    review S2). Weekly packages build every club from one slate replay in
+    runtime.week_inputs instead."""
+    from . import rails
+    data = rails.load(season)
+    if data is not None and int(week) >= data.effective_from_week:
+        if cutoff is None:
+            raise ValueError("Week %d of %d uses the in-season rails: a cutoff date is required" % (week, season))
+        from .week_inputs import last_cutoffs
+        state = rails.league_state(data, cutoff, rails.Branch(rails.jacksonville_control(season)),
+                                   last_cutoffs(week, season))
+        club = state.club_entry(data.codes[team])
+        return club_input(team, club, offense_anchor=offense_anchor, defense_anchor=defense_anchor,
+                          special_teams_anchor=special_teams_anchor, week=week)
     club = load(SeasonPaths(season).background_depth)["clubs"][team]
     return club_input(team, club, offense_anchor=offense_anchor, defense_anchor=defense_anchor,
                       special_teams_anchor=special_teams_anchor, week=week)
