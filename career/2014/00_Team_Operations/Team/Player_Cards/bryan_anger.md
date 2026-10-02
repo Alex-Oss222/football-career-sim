@@ -139,7 +139,7 @@ Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Traini
 
 | Season | Team(s) | Coverage | G | PUNTS | YDS | AVG | LNG | IN20 | TB | NET YDS | NET AVG | RET ALLOWED | RET YDS ALLOWED | BLOCKED | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 3 | 3 | 18 | 855 | 47.5 | 62 | 7 | 2 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | 0 |
+| 2014 | Jacksonville | Through Week 4 | 4 | 21 | 989 | 47.1 | 62 | 8 | 2 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | 0 |
 
 ## Playoff statistics by year
 

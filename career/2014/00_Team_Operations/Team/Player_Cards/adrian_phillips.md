@@ -110,13 +110,19 @@ Promoted from the practice squad on September 8 for safety and coverage-unit dep
 
 Source: [September 8 transactions](../Roster/transactions_2014-09-08.md) and the [Week 2 record](../../../05_Regular_Season/Games/Week_02/output.md). This coaching update preserves the opening grades above.
 
+### September 28, 2014 | Week 4, Jacksonville at San Diego
+
+Sixteen kicking-game snaps and no defensive snap, with the coverage tackle on Royal's 13-yard punt return at 11:07 of the fourth quarter. A minor lower-extremity injury was logged at 9:58 of the fourth quarter at the end of San Diego's next possession; he was not removed: out, projected return September 29, reassessment September 29 ([medical record](../../Medical/incidents/adrian_phillips_2014-09-28.md)). No role change follows.
+
+Source: [Week 4 game record](../../../05_Regular_Season/Games/Week_04/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR | DEF SNAPS | QB HITS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 3 | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 0 |
+| 2014 | Jacksonville | Through Week 4 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 1 |
 
 ## Playoff statistics by year
 

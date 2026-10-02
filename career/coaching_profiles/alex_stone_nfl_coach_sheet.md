@@ -53,7 +53,7 @@ After the 2011 season, Oakland interviewed Stone twice without an offer and Indi
 | 2013 | Jacksonville | 10-6 | 62.5% | 1-1 | Second in AFC South; Divisional round |
 | Career | | **22-10** | **68.8%** | **2-2** | **Two playoff appearances; 24-12 combined** |
 
-Preseason is excluded. No 2014 game has been played. Records throughout this sheet belong to this simulation's career.
+Preseason is excluded. The 2014 regular season is in progress: 3-1 through Week 4 (September 28, 2014), from `python scripts/render_coach_record.py 2014`; its season row is added when the season closes. Records throughout this sheet belong to this simulation's career.
 
 ## 2013 Jacksonville season statistics
 

@@ -169,7 +169,7 @@ Source: [Week 2 record](../../../05_Regular_Season/Games/Week_02/output.md) and 
 
 | Season | Team(s) | Coverage | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST | REC AVG | REC LNG | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 3 | 3 | 62 | 279 | 4.5 | 1 | 17 | 13 | 6 | 29 | 0 | 0 | 0 | 4.8 | 18 | 46.2 | 0 | 0 | — | 0 | 0 | — | 0 |
+| 2014 | Jacksonville | Through Week 4 | 4 | 75 | 351 | 4.7 | 1 | 20 | 18 | 11 | 94 | 1 | 0 | 0 | 8.5 | 32 | 61.1 | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 

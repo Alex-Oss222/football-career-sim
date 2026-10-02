@@ -2,7 +2,7 @@
 
 [2014 season](../README.md) · [Calendar](../Calendar.md)
 
-Jacksonville is 3-0 after Week 3 ([Jacksonville 23, Philadelphia 20, overtime](Games/Week_01/output.md), September 7; [Jacksonville 24, Washington 7](Games/Week_02/output.md), September 14; [Jacksonville 38, Indianapolis 34](Games/Week_03/output.md), September 21); next, Week 4 at San Diego, September 28. Week 11 is the bye.
+Jacksonville is 3-1 after Week 4 ([Jacksonville 23, Philadelphia 20, overtime](Games/Week_01/output.md), September 7; [Jacksonville 24, Washington 7](Games/Week_02/output.md), September 14; [Jacksonville 38, Indianapolis 34](Games/Week_03/output.md), September 21; [San Diego 21, Jacksonville 20](Games/Week_04/output.md), September 28); next, Week 5 against Pittsburgh, October 5. Week 11 is the bye.
 
 | Open | What you will find |
 |---|---|

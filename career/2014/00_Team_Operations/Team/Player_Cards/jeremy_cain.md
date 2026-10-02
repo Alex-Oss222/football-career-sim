@@ -134,7 +134,7 @@ Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Traini
 
 | Season | Team(s) | Coverage | G | LONG SNAPS | FG SNAPS | TRY SNAPS | PUNT SNAPS | BAD SNAPS | PEN | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 3 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded |
+| 2014 | Jacksonville | Through Week 4 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded |
 
 ## Playoff statistics by year
 

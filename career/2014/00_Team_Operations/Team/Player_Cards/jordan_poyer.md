@@ -178,7 +178,7 @@ Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md) and 
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR | DEF SNAPS | QB HITS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 3 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 155 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 2 |
+| 2014 | Jacksonville | Through Week 4 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 155 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 2 |
 
 ## Playoff statistics by year
 

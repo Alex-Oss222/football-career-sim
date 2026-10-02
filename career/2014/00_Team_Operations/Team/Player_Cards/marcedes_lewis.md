@@ -154,7 +154,7 @@ Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md). Thi
 
 | Season | Team(s) | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 3 | 3 | 11 | 10 | 146 | 14.6 | 3 | 60 | 0 | 0 | 0 | 0 | 0 | 90.9 | 0 | 0 | — | 0 | 0 | — | 0 |
+| 2014 | Jacksonville | Through Week 4 | 4 | 19 | 13 | 154 | 11.8 | 3 | 60 | 0 | 0 | 0 | 0 | 0 | 68.4 | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 
