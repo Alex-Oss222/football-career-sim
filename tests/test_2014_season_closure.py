@@ -16,6 +16,7 @@ import dataclasses
 import hashlib
 import io
 import json
+import re
 import shutil
 import sys
 import tempfile
@@ -91,8 +92,15 @@ class SeasonClosure2014Tests(unittest.TestCase):
         shutil.copytree(ROOT, self.root, ignore=shutil.ignore_patterns(*IGNORED), symlinks=True)
         accept_release(self.root)
         self.paths = SeasonPaths(SEASON, self.root)
+        # The copied root carries whatever the real season has already drawn;
+        # the synthetic slate draws its own Week 1 awards from scratch.
+        if (self.paths.awards / "results.json").exists():
+            (self.paths.awards / "results.json").unlink()
+        shutil.rmtree(self.paths.awards / "week_01", ignore_errors=True)
         self.real = SeasonPaths(SEASON, ROOT)
         self.real_files = sorted(p for p in (ROOT / "career" / str(SEASON)).rglob("*.json"))
+        real_cache = self.real.cache(WEEK, "results")
+        self.real_cache_before = real_cache.read_bytes() if real_cache.exists() else None
 
     def close_slate(self, package, snapshot, client):
         results_path = self.paths.cache(WEEK, "results")
@@ -156,13 +164,18 @@ class SeasonClosure2014Tests(unittest.TestCase):
         output = week_dir / "output.md"
         markers = "<!-- box-score event=%s team=%s -->\n<!-- /box-score -->\n" % (own["event_id"], JAX)
         if output.is_file():
-            # The real week file (preparation closed, its event record kept)
-            # carries the template's placeholder markers; the box score fills
-            # them and the file's own history stays intact.
-            placeholder = "<!-- box-score event=[event id] team=%s -->\n\n<!-- /box-score -->\n" % JAX
+            # The real week file carries either the template's placeholder
+            # markers (preparation closed, game unplayed) or, once the real
+            # week has closed, the filled block; either way the box score
+            # fills the markers and the file's own history stays intact.
             shell = output.read_text(encoding="utf-8")
-            self.assertIn(placeholder, shell)
-            shell = shell.replace(placeholder, markers)
+            placeholder = "<!-- box-score event=[event id] team=%s -->\n\n<!-- /box-score -->\n" % JAX
+            filled = re.compile(r"<!-- box-score event=\S+ team=%s -->\n.*?<!-- /box-score -->\n" % re.escape(JAX), re.S)
+            if placeholder in shell:
+                shell = shell.replace(placeholder, markers)
+            else:
+                self.assertRegex(shell, filled)
+                shell = filled.sub(lambda _: markers, shell, count=1)
         else:
             shell = "# Week 1 synthetic closure output\n\nFull stats for the game.\n\n" + markers
         output.write_text(render_box_score.fill(shell, paths.receipts, SEASON), encoding="utf-8")
@@ -182,7 +195,9 @@ class SeasonClosure2014Tests(unittest.TestCase):
         self.assertTrue(all(a["event_id"].startswith("2014-award-week01-") for a in drawn["week-1"]["awards"].values()))
         self.assertEqual(paths.awards, root / "career/2014/05_Regular_Season/Awards")
         self.assertTrue((paths.awards / "week_01/README.md").is_file())
-        self.assertFalse((self.real.awards / "results.json").exists())
+        real_results = self.real.awards / "results.json"
+        if real_results.exists():  # the real season's draws are untouched
+            self.assertNotEqual(json.loads(real_results.read_text(encoding="utf-8")), drawn)
 
         tracker = render_team_tracker.tracker_dir(root, SEASON)
         for rel, text in render_team_tracker.render(root, SEASON, JAX).items():
@@ -200,8 +215,9 @@ class SeasonClosure2014Tests(unittest.TestCase):
 
         # Isolation: nothing reached the real season tree, cache or receipts.
         self.assertEqual(sorted(p for p in (ROOT / "career" / str(SEASON)).rglob("*.json")), self.real_files)
-        self.assertEqual(list(self.real.receipts.glob("*.json")), [])
-        self.assertFalse(self.real.cache(WEEK, "results").exists())
+        self.assertEqual(sorted(self.real.receipts.glob("*.json")), [p for p in self.real_files if p.parent == self.real.receipts])
+        real_cache = self.real.cache(WEEK, "results")  # the real workspace is untouched
+        self.assertEqual(real_cache.read_bytes() if real_cache.exists() else None, self.real_cache_before)
 
 
 if __name__ == "__main__":

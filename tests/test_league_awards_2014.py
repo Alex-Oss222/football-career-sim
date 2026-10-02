@@ -54,17 +54,17 @@ class Methodology2014Tests(unittest.TestCase):
     def test_dry_run_reports_missing_receipts_instead_of_crashing(self):
         out = io.StringIO()
         with mock.patch.object(league_awards, "require_game_release"), \
-                mock.patch.object(sys, "argv", ["x", "week", "1", "--season", "2014"]), \
+                mock.patch.object(sys, "argv", ["x", "week", "17", "--season", "2014"]), \
                 contextlib.redirect_stdout(out):
             code = league_awards.main()
         self.assertEqual(code, 1)
-        self.assertIn("AWARDS: BLOCKED\n- no closed 2014 receipt for week 1", out.getvalue())
+        self.assertIn("AWARDS: BLOCKED\n- no closed 2014 receipt for week 17", out.getvalue())
         out = io.StringIO()
         with mock.patch.object(league_awards, "require_game_release"), \
-                mock.patch.object(sys, "argv", ["x", "month", "September", "--season", "2014"]), \
+                mock.patch.object(sys, "argv", ["x", "month", "December", "--season", "2014"]), \
                 contextlib.redirect_stdout(out):
             self.assertEqual(league_awards.main(), 1)
-        self.assertIn("no closed 2014 receipt for month September", out.getvalue())
+        self.assertIn("no closed 2014 receipt for month December", out.getvalue())
 
 
 if __name__ == "__main__":
