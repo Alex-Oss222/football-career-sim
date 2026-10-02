@@ -1,7 +1,7 @@
 # 2014 statistical band audit
 
-**Version:** `2014-W02-BAND-AUDIT`
-**Through:** Week 2.
+**Version:** `2014-W03-BAND-AUDIT`
+**Through:** Week 3.
 
 League-wide receipts compared with the sourced 2012 shapes in `library/data/2012_nfl_aggregate_baseline.json`, `library/data/2012_nfl_position_usage_baseline.json`, `library/data/2012_nfl_drive_model.json` and `library/data/2012_nfl_field_position_model.json`. This is a defect detector for engine code and TeamInputs. An OUTSIDE row is investigated; it never reruns, selects or edits a closed game. Receipts are split into cohorts by kernel version; grading starts at 16 team-games per cohort.
 
@@ -453,6 +453,181 @@ Centres from the 2012 field-position model's band_centres. Rates use 3*sqrt(p(1-
 ### Ledger coherence
 
 Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 17 kernel 2013.7 spot and label classes). Games checked: 32. The kick-row and label classes need the full snap ledger.
+
+| Class | Count | Status |
+|---|---:|---|
+| snaps after terminal | 0 | WITHIN |
+| drives missing terminal | 0 | WITHIN |
+| duplicate terminal | 0 | WITHIN |
+| drives spanning half | 0 | WITHIN |
+| wrong second half receiver | 0 | WITHIN |
+| missing half kickoff | 0 | WITHIN |
+| kickoff after expired clock | 0 | WITHIN |
+| xp after ot walkoff | 0 | WITHIN |
+| td snap sack or nonpositive | 0 | WITHIN |
+| drive net outside 2012 range | 0 | WITHIN |
+| snap sum ne drive net | 0 | WITHIN |
+| prefix out of bounds | 0 | WITHIN |
+| clock regression | 0 | WITHIN |
+| score identity violations | 0 | WITHIN |
+| ot end inconsistent | 0 | WITHIN |
+| start spot out of field | 0 | WITHIN |
+| td net ne start | 0 | WITHIN |
+| safety not at goal line | 0 | WITHIN |
+| safety start infeasible | 0 | WITHIN |
+| end spot identity | 0 | WITHIN |
+| spot chain break | 0 | WITHIN |
+| kick spot mismatch | 0 | WITHIN |
+| fg distance offset | 0 | WITHIN |
+| category impossible at start | 0 | WITHIN |
+| late terminal state mismatch | 0 | WITHIN |
+| fourth down state missing | 0 | WITHIN |
+| chain counter mismatch | 0 | WITHIN |
+| label type mismatch | 0 | WITHIN |
+| label carrier mismatch | 0 | WITHIN |
+| label target mismatch | 0 | WITHIN |
+| scramble with designed label | 0 | WITHIN |
+| kneel spike mislabelled | 0 | WITHIN |
+| timeout state invalid | 0 | WITHIN |
+| fourth down beyond goal | 0 | WITHIN |
+| seconds per snap outside | 0 | WITHIN |
+| snap after expiry | 0 | WITHIN |
+| expiry leg exceeds allowance | 0 | WITHIN |
+| down distance chain break | 0 | WITHIN |
+| fourth down distance mismatch | 0 | WITHIN |
+| first downs ne ledger | 0 | WITHIN |
+| goal to go mismatch | 0 | WITHIN |
+| layout resample incoherent | 0 | WITHIN |
+
+## Kernel 2014.5 cohort (Week 3)
+
+**Team-games audited:** 32. Carry shares exclude kneels, as in the 2012 baseline.
+
+| Metric | Observed | 2012 band centre | Tolerance | Status |
+|---|---:|---:|---:|---|
+| QB1 share of team pass attempts | 0.986 | 0.978 | ±0.050 | WITHIN |
+| top receiver share of team targets (team-game) | 0.307 | 0.294 | ±0.037 | WITHIN |
+| top rusher share of non-QB carries (team-game) | 0.716 | 0.707 | ±0.084 | WITHIN |
+| FB share of carries | 0.020 | 0.021 | ±0.050 | WITHIN |
+| QB share of carries | 0.081 | 0.090 | ±0.050 | WITHIN |
+| RB share of carries | 0.876 | 0.867 | ±0.050 | WITHIN |
+| TE share of carries | 0.000 | 0.000 | ±0.050 | WITHIN |
+| WR share of carries | 0.022 | 0.019 | ±0.050 | WITHIN |
+| FB share of targets | 0.017 | 0.026 | ±0.050 | WITHIN |
+| RB share of targets | 0.154 | 0.155 | ±0.050 | WITHIN |
+| TE share of targets | 0.209 | 0.215 | ±0.050 | WITHIN |
+| WR share of targets | 0.620 | 0.602 | ±0.050 | WITHIN |
+| DB share of tackle credits | 0.359 | 0.401 | ±0.050 | WITHIN |
+| DL share of tackle credits | 0.272 | 0.226 | ±0.050 | WITHIN |
+| LB share of tackle credits | 0.369 | 0.353 | ±0.050 | WITHIN |
+| Assisted share of tackle credits | 0.332 | 0.339 | ±0.050 | WITHIN |
+| plays per team game | 65.8 | 64.2 | ±6.0 | WITHIN |
+| yards per team game | 384.2 | 347.2 | ±40.0 | WITHIN |
+| points per team game | 24.3 | 22.8 | ±5.0 | WITHIN |
+| first downs per team game | 21.4 | 19.8 | ±3.0 | WITHIN |
+| third down attempts per team game | 13.8 | 13.3 | ±2.5 | WITHIN |
+| third down rate | 0.432 | 0.383 | ±0.060 | WITHIN |
+
+Points: non-offensive touchdowns, their tries and two-point tries are not modelled by design (about 1.7-2.0 points per team game below the 2012 centre); the ±5.0 tolerance is deliberately not tightened. Yards per team game are net of sack yards, as the 2012 centre is (see the correction in the [December 1, 2013 Cleveland game report](../../../../2013/regular_season/week_13_jacksonville_at_cleveland/output.md); earlier audits compared gross passing yards and read about 14 yards high).
+
+### Drive model rows
+
+Centres from the 2012 drive model (nflverse drive definition) and period totals; tolerance is three standard errors at the observed sample.
+
+| Metric | Observed | 2012 band centre | Tolerance | Status |
+|---|---:|---:|---:|---|
+| FG accuracy | 0.861 | 0.839 | ±0.130 | WITHIN |
+| FG accuracy <30 yd | 1.000 | 0.967 | ±0.135 | INSUFFICIENT SAMPLE |
+| FG accuracy 30-39 yd | 1.000 | 0.891 | ±0.204 | INSUFFICIENT SAMPLE |
+| FG accuracy 40-49 yd | 0.750 | 0.802 | ±0.244 | INSUFFICIENT SAMPLE |
+| FG accuracy 50+ yd | 0.636 | 0.609 | ±0.441 | INSUFFICIENT SAMPLE |
+| XP accuracy (informational; partially verified) | 0.976 | 0.994 | ±0.026 | WITHIN |
+| FGA per team game | 2.2 | 1.984 | ±0.747 | WITHIN (known detection) |
+| FGM per team game | 1.938 | 1.664 | ±0.684 | WITHIN (known detection) |
+| drives per team game (nflverse definition; PFR 10.47) | 11.6 | 11.7 | ±1.813 | WITHIN |
+| punts per team game (drive-ending) | 4.5 | 4.8 | ±1.164 | WITHIN (known detection) |
+| drive share: touchdown | 0.228 | 0.195 | ±0.062 | WITHIN |
+| drive share: field goal attempt | 0.194 | 0.170 | ±0.058 | WITHIN |
+| drive share: punt | 0.387 | 0.412 | ±0.077 | WITHIN |
+| drive share: turnover (INT + fumble lost) | 0.099 | 0.125 | ±0.051 | WITHIN |
+| drive share: downs | 0.024 | 0.033 | ±0.028 | WITHIN |
+| drive share: safety | 0.000 | 0.002 | ±0.007 | WITHIN |
+| drive share: clock | 0.067 | 0.063 | ±0.038 | WITHIN (known detection) |
+| clock-expired drives per team game | 0.781 | 0.734 | ±0.454 | WITHIN (known detection) |
+| offensive-drive turnovers per team game | 1.156 | 1.461 | ±0.641 | WITHIN |
+| interception share of turnovers | 0.622 | 0.626 | ±0.239 | WITHIN |
+| kickoffs per team game (informational; centre includes kicks not modelled: after non-offensive TDs, onside, re-kicks, after half-final scores) | 5.4 | 5.2 | ±1.210 | INFORMATIONAL |
+| kick returns per team game | 3.1 | 2.6 | ±0.860 | WITHIN |
+
+Known detections (`runtime/bands.py` `KNOWN_DETECTIONS`): graded rows with a documented design cause, accepted rather than tuned. Each stays graded; OUTSIDE within 2x its tolerance is the documented detection, and beyond that it is investigated. No centre, tolerance, coefficient or pool was changed.
+
+- punts per team game (drive-ending): the half-final redirect skews surviving interior drives short and punt-heavy (runtime/README.md, kernel 2013.6 limitations).
+- FGM per team game: adopted as documented by the user's decision of September 27, 2026: the first-half half-final redirect starts first-half final possessions early, field-goal-heavy and clock-light (library/2012_field_position_model_calibration.md, acceptance).
+- drive share: clock: adopted as documented by the user's decision of September 27, 2026: the first-half half-final redirect starts first-half final possessions early, field-goal-heavy and clock-light (library/2012_field_position_model_calibration.md, acceptance).
+- clock-expired drives per team game: adopted as documented by the user's decision of September 27, 2026: the first-half half-final redirect starts first-half final possessions early, field-goal-heavy and clock-light (library/2012_field_position_model_calibration.md, acceptance).
+- FGA per team game: field-goal attempts rise with FGM from the first-half half-final redirect; kernel 2014.2 also stops masking late field goals, whose expected share by need now tracks 2012 (runtime/README.md, kernel 2014.2 acceptance).
+- punt share of possessions ending in Q4's last 5:00 or OT, offense trailing 1-8: about 70 events per 250 games; the 2014.2 expected late mix by need tracks 2012 (trailing 4-8 punts 0.173 against 0.179), a 750-game fresh sample reads 0.087 inside its tolerance, and the rest is the timing mix of possessions that end in the last 5:00 (runtime/README.md, kernel 2014.2 acceptance).
+
+### Field-position rows
+
+Centres from the 2012 field-position model's band_centres. Rates use 3*sqrt(p(1-p)/n) and means 3*sd/sqrt(n) with the 2012 sd; a row reads INSUFFICIENT SAMPLE below 30 events. INFORMATIONAL rows are shapes, not grades.
+
+| Metric | Observed | 2012 band centre | Tolerance | Status |
+|---|---:|---:|---:|---|
+| kickoff touchback share | 0.422 | 0.462 | ±0.114 | WITHIN |
+| mean start after a non-touchback kickoff (yardline_100) | 77.0 | 77.0 | ±2.9 | WITHIN |
+| mean realized punt net, LOS opp 39-30 | 26.3 | 28.0 | ±11.3 | INSUFFICIENT SAMPLE |
+| mean realized punt net, LOS opp 49-40 | 34.7 | 32.9 | ±4.3 | INSUFFICIENT SAMPLE |
+| mean realized punt net, LOS own 1-10 | 42.2 | 43.7 | ±10.7 | INSUFFICIENT SAMPLE |
+| mean realized punt net, LOS own 11-20 | 43.5 | 43.3 | ±7.9 | INSUFFICIENT SAMPLE |
+| mean realized punt net, LOS own 21-30 | 42.3 | 43.7 | ±6.5 | INSUFFICIENT SAMPLE |
+| mean realized punt net, LOS own 31-40 | 41.6 | 42.3 | ±6.5 | WITHIN |
+| mean realized punt net, LOS own 41-50 | 41.9 | 38.8 | ±5.3 | INSUFFICIENT SAMPLE |
+| mean kickoff return yards (non-touchback kickoffs) | 24.0 | 23.0 | ±3.1 | WITHIN |
+| mean punt return yards (returned punts) | 9.0 | 9.2 | ±3.6 | WITHIN |
+| punt share of possessions ending in Q4's last 5:00 or OT, offense trailing 1-8 | 0.100 | 0.119 | ±0.217 | INSUFFICIENT SAMPLE |
+| punt share of possessions ending in Q4's last 2:00 or OT, offense trailing 1-8 | 0.000 | 0.008 | ±0.074 | INSUFFICIENT SAMPLE |
+| third-down attempts per punt drive | 1.208 | 1.185 | ±0.110 | WITHIN |
+| sacks per dropback | 0.053 | 0.062 | ±0.021 | WITHIN |
+| DB share of sack credits | 0.061 | 0.063 | ±0.090 | WITHIN |
+| DL share of sack credits | 0.697 | 0.599 | ±0.181 | WITHIN |
+| LB share of sack credits | 0.242 | 0.337 | ±0.175 | WITHIN |
+| mean drive start, all drives (2012 all-drive centre) | 72.8 | 72.3 | — | INFORMATIONAL |
+| mean drive start (2012 centre over modelled transitions) | 72.8 | 72.8 | — | INFORMATIONAL |
+| start-bin share 90-99 | 0.105 | 0.096 | — | INFORMATIONAL |
+| start-bin share 81-89 | 0.169 | 0.160 | — | INFORMATIONAL |
+| start-bin share 80-80 | 0.245 | 0.251 | — | INFORMATIONAL |
+| start-bin share 70-79 | 0.194 | 0.191 | — | INFORMATIONAL |
+| start-bin share 60-69 | 0.113 | 0.123 | — | INFORMATIONAL |
+| start-bin share 50-59 | 0.065 | 0.071 | — | INFORMATIONAL |
+| start-bin share 40-49 | 0.043 | 0.043 | — | INFORMATIONAL |
+| start-bin share 30-39 | 0.030 | 0.023 | — | INFORMATIONAL |
+| start-bin share 20-29 | 0.027 | 0.021 | — | INFORMATIONAL |
+| start-bin share 1-19 | 0.011 | 0.022 | — | INFORMATIONAL |
+| touchdown share, start opp 49-1 | 0.390 | 0.349 | — | INFORMATIONAL |
+| punt share, start opp 49-1 | 0.000 | 0.108 | — | INFORMATIONAL |
+| touchdown share, start own 1-20 | 0.187 | 0.158 | — | INFORMATIONAL |
+| punt share, start own 1-20 | 0.482 | 0.486 | — | INFORMATIONAL |
+| touchdown share, start own 21-50 | 0.239 | 0.199 | — | INFORMATIONAL |
+| punt share, start own 21-50 | 0.370 | 0.402 | — | INFORMATIONAL |
+| points per drive, start 1-19 | 6.0 | 4.5 | — | INFORMATIONAL |
+| points per drive, start 20-29 | 3.4 | 4.1 | — | INFORMATIONAL |
+| points per drive, start 30-39 | 3.9 | 3.1 | — | INFORMATIONAL |
+| points per drive, start 40-49 | 3.3 | 2.6 | — | INFORMATIONAL |
+| points per drive, start 50-59 | 3.4 | 2.2 | — | INFORMATIONAL |
+| points per drive, start 60-69 | 2.3 | 1.829 | — | INFORMATIONAL |
+| points per drive, start 70-79 | 1.917 | 1.707 | — | INFORMATIONAL |
+| points per drive, start 80-89 | 1.740 | 1.473 | — | INFORMATIONAL |
+| points per drive, start 90-99 | 1.077 | 1.140 | — | INFORMATIONAL |
+| QB scramble share of QB carries (label stream; nflscrapR 643/1,228) | 0.667 | 0.557 | — | INFORMATIONAL |
+| fourth-down attempts per team game (drive chains) | 0.875 | 0.881 | — | INFORMATIONAL |
+| fourth-down conversions per team game (drive chains) | 0.531 | 0.439 | — | INFORMATIONAL |
+| kneels per team game | 0.562 | 0.717 | — | INFORMATIONAL |
+| overtime punt share | 0.500 | 0.311 | — | INFORMATIONAL |
+
+### Ledger coherence
+
+Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 17 kernel 2013.7 spot and label classes). Games checked: 16. The kick-row and label classes need the full snap ledger.
 
 | Class | Count | Status |
 |---|---:|---|

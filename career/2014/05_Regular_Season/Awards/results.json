@@ -292,5 +292,152 @@
     "winner_index": 0
    }
   }
+ },
+ "week-3": {
+  "kind": "week",
+  "key": "3",
+  "label": "Week 3",
+  "order": 3,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2014-award-week03-afc-offense-v1-2014",
+    "packet_sha256": "b7e7f522c57dd1223dc937aa278a0a43e1b222bcb20865e4a44f00b22961a65d",
+    "result_ref": "4253281f8efcae47e6b839b8ed7197800fa36c226e0dcee53ba0b84c84285eaa",
+    "shortlist": [
+     {
+      "player": "Le'Veon Bell",
+      "team": "Pittsburgh Steelers",
+      "score": 45.8
+     },
+     {
+      "player": "Kirk Cousins",
+      "team": "Jacksonville Jaguars",
+      "score": 32.44
+     },
+     {
+      "player": "Joe Flacco",
+      "team": "Baltimore Ravens",
+      "score": 32.06
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2014-award-week03-afc-defense-v1-2014",
+    "packet_sha256": "838d361efbb7cc9562cfb30856139b9e7e1cad4dee7792c822f94d75fe56c218",
+    "result_ref": "2cbceafa38f4e131956793b8c634d012042bcc7ddc89054ce5c8c955d31abf91",
+    "shortlist": [
+     {
+      "player": "Aaron Williams",
+      "team": "Buffalo Bills",
+      "score": 25.6
+     },
+     {
+      "player": "Ryan Shazier",
+      "team": "Pittsburgh Steelers",
+      "score": 25.3
+     },
+     {
+      "player": "Darrelle Revis",
+      "team": "New England Patriots",
+      "score": 24.8
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2014-award-week03-afc-special_teams-v1-2014",
+    "packet_sha256": "9e7e2bb931bb6d81e303eaab1071b8c51324d415138b815c4720f50aaf3c31ac",
+    "result_ref": "8241b0dbc6e8129a40c59c0a240e5dff2bbf62a21ce22fcc78ab9e0500013b76",
+    "shortlist": [
+     {
+      "player": "Andrew Hawkins",
+      "team": "Jacksonville Jaguars",
+      "score": 18.3
+     },
+     {
+      "player": "Dustin Colquitt",
+      "team": "Kansas City Chiefs",
+      "score": 16.5
+     },
+     {
+      "player": "Ryan Succop",
+      "team": "Tennessee Titans",
+      "score": 14.0
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-offense": {
+    "event_id": "2014-award-week03-nfc-offense-v1-2014",
+    "packet_sha256": "c683941159628063144a681fa80405786df139616a78f5aa863d56963c2646ef",
+    "result_ref": "de8c00b9217f6abd5ba17900481331aa695e4ecc7dc9e9ac5d9f011c10397301",
+    "shortlist": [
+     {
+      "player": "Alfred Morris",
+      "team": "Washington Redskins",
+      "score": 31.8
+     },
+     {
+      "player": "Joique Bell",
+      "team": "Detroit Lions",
+      "score": 27.9
+     },
+     {
+      "player": "Mark Ingram",
+      "team": "New Orleans Saints",
+      "score": 23.9
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2014-award-week03-nfc-defense-v1-2014",
+    "packet_sha256": "e5227488dff7ee0cef7eb44e595580d16f12662f0e12c08134c8c26c4e486470",
+    "result_ref": "1442e1f95c292deac96b8c1ba54655f1c2818d5529ed46b5d0887310d5c75b54",
+    "shortlist": [
+     {
+      "player": "Matt Shaughnessy",
+      "team": "Arizona Cardinals",
+      "score": 23.8
+     },
+     {
+      "player": "Ryan Mundy",
+      "team": "Chicago Bears",
+      "score": 23.0
+     },
+     {
+      "player": "Henry Melton",
+      "team": "Dallas Cowboys",
+      "score": 20.5
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2014-award-week03-nfc-special_teams-v1-2014",
+    "packet_sha256": "23a20902adea113147052ffbae631e6ed9f7510b560f8e75f92f78fcda536872",
+    "result_ref": "3e883e18110f0cb41bd91ad43127ac244c406dc1895ca33bb8c4cb2b7c755921",
+    "shortlist": [
+     {
+      "player": "Cody Parkey",
+      "team": "Philadelphia Eagles",
+      "score": 15.0
+     },
+     {
+      "player": "Shayne Graham",
+      "team": "New Orleans Saints",
+      "score": 15.0
+     },
+     {
+      "player": "Nolan Carroll",
+      "team": "Philadelphia Eagles",
+      "score": 14.7
+     }
+    ],
+    "winner_index": 1
+   }
+  }
  }
 }

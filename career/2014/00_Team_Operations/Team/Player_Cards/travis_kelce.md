@@ -149,13 +149,19 @@ The plan ended the attached evaluation and put him in the progression as a recei
 
 Source: [preseason game 4 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 21, 2014 | Week 3, Indianapolis at Jacksonville
+
+Eighteen offensive snaps as the second tight end with one catch on three targets for 4, the Dagger throw on third-and-4 from the Jacksonville 17 in the fourth quarter that came up short, after the Stick with SCAT in the third quarter and the Y-Cross with HALF from the Indianapolis 27 thrown his way fell incomplete; 27 kicking-game snaps with two coverage tackles on Whalen's punt returns. The play-by-play names no defender on either incompletion, so the route, the leverage and the throw are the film's. A minor lower-extremity injury was logged at the end of the second-quarter touchdown drive at 12:37; he was not removed and every snap above came after it: out, projected return September 25, reassessment September 22 ([medical record](../../Medical/incidents/travis_kelce_2014-09-21.md)). No role change follows.
+
+Source: [Week 3 game record](../../../05_Regular_Season/Games/Week_03/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 2 | 2 | 3 | 2 | 34 | 17.0 | 1 | 23 | 0 | 0 | 0 | 0 | 0 | 66.7 | 0 | 0 | — | 0 | 0 | — | 1 |
+| 2014 | Jacksonville | Through Week 3 | 3 | 6 | 3 | 38 | 12.7 | 1 | 23 | 0 | 0 | 0 | 0 | 0 | 50.0 | 0 | 0 | — | 0 | 0 | — | 3 |
 
 ## Playoff statistics by year
 

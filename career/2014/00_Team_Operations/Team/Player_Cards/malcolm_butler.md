@@ -115,13 +115,19 @@ Butler's press transition was late once against Hurns. Oden corrected it, and th
 
 Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
 
+### September 21, 2014 | Week 3, Indianapolis at Jacksonville
+
+Thirteen defensive snaps after Poyer's and Talib's removals and 20 on the kicking game with no tackle or target recorded against him; the play-by-play records no defender on the completions in Indianapolis's last two drives, so his coverage is the film's. A head/neck injury, short, was logged at the end of Indianapolis's last touchdown drive at 1:01 of the fourth quarter; he was removed, Chris Prosinski taking his place by the chart's order for the two kneel-downs with no pause recorded, and he is on an independent medical hold: projected return October 2, reassessment September 24 ([medical record](../../Medical/incidents/malcolm_butler_2014-09-21.md)). On the projection he misses the San Diego game. No football finding attaches to the hold.
+
+Source: [Week 3 game record](../../../05_Regular_Season/Games/Week_03/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR | DEF SNAPS | QB HITS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 1 |
+| 2014 | Jacksonville | Through Week 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 13 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 1 |
 
 ## Playoff statistics by year
 
