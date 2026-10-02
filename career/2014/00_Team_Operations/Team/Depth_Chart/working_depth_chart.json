@@ -2,7 +2,7 @@
   "team": "Jacksonville Jaguars",
   "season": 2014,
   "status": "WORKING COPY OF THE SEASON GAME DEPTH CHART. Stone's season chart issued August 30, 2014 at the reduction to 53, over the 53 only; game_depth_chart.json in this folder is the released game input and the two files are changed together. Every player on the 53 holds a chart place; the two reserve/injured players and the eight practice-squad players are not on the chart.",
-  "as_of": "August 31, 2014 (after the waiver checkpoint, the practice-squad signings, the Week 1 inactives and the captains)",
+  "as_of": "September 7, 2014 (after the Week 1 game at Philadelphia; availability notes for Jones-Drew, Harris and Lowery; no order change)",
   "effective": "August 30, 2014 (Stone's season game depth chart at the reduction to 53)",
   "sources": "The August 28 personnel packet's season depth chart baseline (Regular-season Week 1.md: Adams X, Thielen H, Hawkins Z; Lewis, Kelce, Jensen; Monroe, Bitonio, Brewster, Turner, Johnson; Kreiter snapping; Hawkins returning kicks and punts with Hurns the second punt returner; Nicks back to X and Adams to Z only after medical clearance and a full practice week); the frozen August 27 Atlanta chart (Preseason_Games/Game_04/depth_chart.json) for every other order; the current roster for control and availability; the August 30 reduction (Roster_Decisions/final_roster_cuts.md) for the 53. Earlier: career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/finances/player_contracts/contract_status.md; career/2014/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened); Entry 95 (March 2014 free-agency replay); Entry 108 (2014 draft and undrafted signings); Entry 110 (Rackley traded); Entry 111 (Stone's May 12 starting roles; rookie minicamp and Phase Two closed)",
   "rule": "Order within each kernel position group, first = starter, as the kernel reads it. The packet's baseline sets the starting eleven on offense, the snapper and the returners; the Atlanta chart's order is carried for everyone else, minus the players who left on August 30. A player out under a medical instruction is listed last in his group while out (Nicks, Hoskins) and is on the inactive list; his return to the order is Stone's decision on clearance under the packet's condition. The roles field carries the kernel roles (passer, placekicker, punt, kick_return, punt_return); Hurns is the second punt returner by Stone's instruction and is not given the kernel role, which the kernel reads as the first returner. Each change is logged in career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md.",
@@ -219,7 +219,10 @@
     "Marcel Jensen": "No communicated restriction (independent medical hold from the August 22 preseason game released August 28, its projected date)",
     "Jordan Poyer": "No communicated restriction (cleared August 26, 2014, his projected date, from the August 22 injury)",
     "Lane Johnson": "No communicated restriction (cleared August 14, 2014, his projected date, from the August 8 trunk injury)",
-    "Cornelius Lucas": "No communicated restriction; the foot is a performance-staff review item"
+    "Cornelius Lucas": "No communicated restriction; the foot is a performance-staff review item",
+    "Maurice Jones-Drew": "Out, minor, from the September 7 Week 1 game (lower extremity, not removed; projected return September 12, 2014; reassessment September 8)",
+    "Mike Harris": "Out, long term, from the September 7 Week 1 game (lower extremity, removed in overtime; projected return December 8, 2014; reassessment September 14); roster disposition pending (Caldwell, with the user); the Week 2 place is Stone's decision after the September 8 review",
+    "Dwight Lowery": "Out, long term, from the September 7 Week 1 game (lower extremity, removed in overtime; projected return December 11, 2014; reassessment September 14); roster disposition pending (Caldwell, with the user); the Week 2 place is Stone's decision after the September 8 review"
   },
   "removed_from_2013_chart": {
     "Brad Meester": "Retired; contract expired March 11, 2014 (Entries 79 and 94)",
@@ -415,6 +418,12 @@
       "event": "Waivers cleared, reserve/injured placements, practice squad signed, Week 1 inactives and captains",
       "ledger_entry": "2014-08-31-waivers-and-practice-squad; 2014-08-30-season-depth-chart-and-battle-closures",
       "change": "No order change. Brate and Jackson to reserve/injured (not on the chart); eight practice-squad players signed (not on the chart). Bouye cleared August 31, his projected date, and is active. Week 1 inactives set: Nicks and Hoskins by medical instruction; Butler, Linsley, Edebali, Todd Davis and Gabriel by Stone's standing rule (the deepest healthy reserve in each of the five largest healthy groups). Captains named: Cousins, Monroe, Jones-Drew; Marks, Daryl Smith, Lowery."
+    },
+    {
+      "date": "September 7, 2014",
+      "event": "Week 1 at Philadelphia: availability notes",
+      "ledger_entry": "2014-09-07-week-1-at-philadelphia",
+      "change": "No order change and no Stone depth decision. Availability notes only: Jones-Drew out, minor (not removed; projected return September 12, reassessment September 8); Mike Harris out, long term (removed in overtime; projected return December 8, reassessment September 14); Dwight Lowery out, long term (removed in overtime; projected return December 11, reassessment September 14). The Week 2 starting cornerback and safety, the listing of Harris and Lowery last in their group while out and the Week 2 inactives are Stone's decisions after the September 8 review; the roster dispositions on Harris and Lowery are Caldwell's with the user. The released game input is unchanged until that decision."
     }
   ],
   "added_not_placed": {

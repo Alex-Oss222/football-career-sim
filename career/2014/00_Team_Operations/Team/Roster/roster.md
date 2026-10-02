@@ -1,12 +1,13 @@
 # Jacksonville Jaguars roster
 
-**As of:** September 6, 2014, after the Philadelphia preparation (no transaction since the August 31 practice-squad signings; Jeremy Cain's September 1 Chicago signing under the rails is in the departures below)
+**As of:** September 7, 2014, after the Week 1 game at Philadelphia (Jacksonville 23, Philadelphia 20, overtime; no transaction since the August 31 practice-squad signings; Jeremy Cain's September 1 Chicago signing under the rails is in the departures below). Three game injuries are in the availability column: Jones-Drew (minor), Mike Harris and Dwight Lowery (long term); the roster dispositions on Harris and Lowery are Caldwell's decision with the user and are pending
 **Canonical controlled-player count:** **55** (the active 53 and two players on reserve/injured). The eight practice-squad players are under contract and listed separately below; they are not on the 53.
 **Active roster:** **53**, set by Caldwell on August 30, 2014 before the 4 p.m. ET reduction deadline ([final roster cuts](../../../04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)).
 **Reserve/injured:** **2**: Cameron Brate and Jerrell Jackson, waived with the injured designation on August 30 and reverted to the reserve/injured list on August 31 after the noon claiming period under the period procedure.
 **Practice squad:** **8** of ten places, signed August 31, 2014 after the waiver checkpoint; two places (an outside receiver and a tight end) are open.
 **Unsigned tenders:** none. The qualifying offers to Bradfield, Clemons, Brown and Pasztor were withdrawn August 30 and their rights renounced; they are free agents.
 **Season depth chart:** Stone's season game depth chart was issued August 30 ([depth chart](../Depth_Chart/depth_chart.md); [game input](../Depth_Chart/game_depth_chart.json)); six captains were named August 31 ([roster decisions](../../../04_Training_Camp_and_Preseason/Roster_Decisions/roster_decisions.md)).
+**2014 season:** regular season 1-0 (Week 1: Jacksonville 23, Philadelphia 20, overtime).
 **2013 season:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 20); Wild Card: Jacksonville 38, Kansas City 14; Divisional: Tennessee 20, Jacksonville 13. **2014 preseason:** 1-3, complete (August 8, Tampa Bay 30, Jacksonville 21; August 14, Chicago 23, Jacksonville 17, overtime; August 22, Jacksonville 41, Detroit 14; August 28, Atlanta 31, Jacksonville 13). **2014 regular season:** not started; Week 1 is September 7 at Philadelphia.
 
 <!-- player-ages-as-of: 2014-09-07 -->
@@ -31,7 +32,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
-| Maurice Jones-Drew | RB | 1985-03-23 | 29 | Active 53 (re-signed March 28, 2014) | No communicated restriction | Lead back; offensive captain (skill group), named August 31, 2014 |
+| Maurice Jones-Drew | RB | 1985-03-23 | 29 | Active 53 (re-signed March 28, 2014) | Out, minor: lower extremity, logged in the Week 1 game September 7, not removed; projected return September 12, 2014; reassessment September 8 ([medical record](../../Medical/incidents/maurice_jones_drew_2014-09-07.md)) | Lead back; offensive captain (skill group), named August 31, 2014 |
 | C.J. Anderson | RB | 1991-02-10 | 23 | Active 53 | No communicated restriction (cleared August 11, 2014, his projected date, from the August 8 lower-extremity injury; reassessed August 9 with no change; [medical history](../../Medical/medical_history.md#august-9-to-11-reassessments-and-andersons-clearance)) | Second back on the season chart (the Atlanta order carried, August 30, 2014); coverage units |
 | Jonathan Grimes | RB | 1989-12-21 | 24 | Active 53 | No communicated restriction | Third back on the season chart (the Atlanta order carried, August 30, 2014) |
 
@@ -105,8 +106,8 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | Aqib Talib | CB | 1986-02-13 | 28 | Active 53 (signed March 11, 2014) | No communicated restriction | Starting CB (season depth chart, August 30, 2014) |
-| Mike Harris | CB | 1989-01-05 | 25 | Active 53 | No communicated restriction | Starting CB (season depth chart, August 30, 2014) |
-| Dwight Lowery | S | 1986-01-23 | 28 | Active 53 | No communicated restriction | Starting S; defensive captain (secondary), named August 31, 2014 |
+| Mike Harris | CB | 1989-01-05 | 25 | Active 53 (roster disposition pending, Caldwell with the user) | Out, long term: lower extremity, removed from the Week 1 game September 7 in overtime; projected return December 8, 2014; reassessment September 14 ([medical record](../../Medical/incidents/mike_harris_2014-09-07.md)) | Starting CB (season depth chart, August 30, 2014) |
+| Dwight Lowery | S | 1986-01-23 | 28 | Active 53 (roster disposition pending, Caldwell with the user) | Out, long term: lower extremity, removed from the Week 1 game September 7 in overtime; projected return December 11, 2014; reassessment September 14 ([medical record](../../Medical/incidents/dwight_lowery_2014-09-07.md)) | Starting S; defensive captain (secondary), named August 31, 2014 |
 | Bacarri Rambo | S | 1990-06-27 | 24 | Active 53 | No communicated restriction | Starting S; coverage units |
 | Jordan Poyer | CB | 1991-04-25 | 23 | Active 53 | No communicated restriction (cleared August 26, 2014, his projected date, from the August 22 upper-extremity injury; reassessed August 23 with no change; [medical history](../../Medical/medical_history.md#august-23-to-27-reassessments-and-poyers-clearance)) | Nickel; coverage units |
 | Alterraun Verner | CB | 1988-12-13 | 25 | Active 53 (signed March 11, 2014) | No communicated restriction | Sixth defensive back on the season chart (August 30, 2014) |

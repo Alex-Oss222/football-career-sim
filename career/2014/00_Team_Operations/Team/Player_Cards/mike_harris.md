@@ -144,13 +144,19 @@ Harris retained the corrected rub path with contact. His timing and help respons
 
 Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
 
+### September 7, 2014 | Week 1, Jacksonville at Philadelphia
+
+Seventy defensive snaps at the starting cornerback opposite Talib with six tackles, the last the third-and-8 stop of Foles's scramble that ended Philadelphia's first overtime possession; the play-by-play records no throw completed over him and no coverage on the four long completions, so the film holds that question. A long-term lower-extremity injury was logged at the end of that possession and he was removed: out, projected return in 92 days (December 8), reassessment September 14 ([medical record](../../Medical/incidents/mike_harris_2014-09-07.md)). His roster disposition is Caldwell's with the user and the Week 2 place is Stone's after the September 8 review; nothing is decided by the injury.
+
+Source: [Week 1 game record](../../../05_Regular_Season/Games/Week_01/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR | DEF SNAPS | QB HITS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
+| 2014 | Jacksonville | Through Week 1 | 1 | 6 | 5 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 70 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 

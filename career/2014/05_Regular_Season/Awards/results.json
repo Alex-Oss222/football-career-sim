@@ -1,0 +1,149 @@
+{
+ "week-1": {
+  "kind": "week",
+  "key": "1",
+  "label": "Week 1",
+  "order": 1,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2014-award-week01-afc-offense-v1-2014",
+    "packet_sha256": "8c9b5aadca34dd80ac8976785992ccfd6d8e4e6c3b9f6c15df6b2f25989abca9",
+    "result_ref": "360ec85dfe7b94121a5764f662549f6f81adee8b53884fa4ec2841d6cdce71e9",
+    "shortlist": [
+     {
+      "player": "Montee Ball",
+      "team": "Denver Broncos",
+      "score": 38.3
+     },
+     {
+      "player": "Darren McFadden",
+      "team": "Oakland Raiders",
+      "score": 25.8
+     },
+     {
+      "player": "Jamaal Charles",
+      "team": "Kansas City Chiefs",
+      "score": 25.6
+     }
+    ],
+    "winner_index": 1
+   },
+   "AFC-defense": {
+    "event_id": "2014-award-week01-afc-defense-v1-2014",
+    "packet_sha256": "553651a9137a0f2cdd0480a35a5d642abe2d0390fa490d8a2737707072726e82",
+    "result_ref": "8f99b489a7f1e311bb8c251420e44d41527bfa3c22032ae590547cb679910864",
+    "shortlist": [
+     {
+      "player": "Buster Skrine",
+      "team": "Cleveland Browns",
+      "score": 23.0
+     },
+     {
+      "player": "Koa Misi",
+      "team": "Miami Dolphins",
+      "score": 21.5
+     },
+     {
+      "player": "Kendrick Lewis",
+      "team": "Houston Texans",
+      "score": 21.0
+     }
+    ],
+    "winner_index": 2
+   },
+   "AFC-special_teams": {
+    "event_id": "2014-award-week01-afc-special_teams-v1-2014",
+    "packet_sha256": "9a51122810ea4d07bd64ac6b935b352f3ae92b8f6c41f1075b162969a352e11b",
+    "result_ref": "b5b542bd2f095a0ac2e3f2294f59d81a03ff717ba7ce3dfe7bebcd6aa3571d6a",
+    "shortlist": [
+     {
+      "player": "Billy Cundiff",
+      "team": "Cleveland Browns",
+      "score": 18.0
+     },
+     {
+      "player": "Dri Archer",
+      "team": "Pittsburgh Steelers",
+      "score": 15.9
+     },
+     {
+      "player": "Travis Benjamin",
+      "team": "Cleveland Browns",
+      "score": 13.1
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-offense": {
+    "event_id": "2014-award-week01-nfc-offense-v1-2014",
+    "packet_sha256": "41d30d232a5aa7425ab59065c201af3049a11a32965875d2fa2906ab75f2880f",
+    "result_ref": "5f1e59b99f3f8f49bd5361291969eb10bf6399f62f99a45b383bbe5f7e502383",
+    "shortlist": [
+     {
+      "player": "Matt Ryan",
+      "team": "Atlanta Falcons",
+      "score": 44.18
+     },
+     {
+      "player": "Rashad Jennings",
+      "team": "New York Giants",
+      "score": 34.0
+     },
+     {
+      "player": "Russell Wilson",
+      "team": "Seattle Seahawks",
+      "score": 27.92
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2014-award-week01-nfc-defense-v1-2014",
+    "packet_sha256": "b077c4a6d5da9b333421932a6fa650db2d0c50bec382f32708154c15355fa266",
+    "result_ref": "e5cacf9e4999e888a0e4348f2ac3918bd4a392e542269b617c08fe6bb50568c6",
+    "shortlist": [
+     {
+      "player": "Jameel McClain",
+      "team": "New York Giants",
+      "score": 32.3
+     },
+     {
+      "player": "Trent Cole",
+      "team": "Philadelphia Eagles",
+      "score": 26.0
+     },
+     {
+      "player": "Cliff Avril",
+      "team": "Seattle Seahawks",
+      "score": 25.0
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-special_teams": {
+    "event_id": "2014-award-week01-nfc-special_teams-v1-2014",
+    "packet_sha256": "c67aa74b383d97578890631c7889e236185f31f19d6c77bcdc808dda5707d2ca",
+    "result_ref": "98db7d875e9688be99b96de6e671a9e7c8a0c3313fa959f2f139ab9b0f194e00",
+    "shortlist": [
+     {
+      "player": "Jeremy Ross",
+      "team": "Detroit Lions",
+      "score": 14.4
+     },
+     {
+      "player": "Andy Lee",
+      "team": "San Francisco 49ers",
+      "score": 14.25
+     },
+     {
+      "player": "Patrick Murray",
+      "team": "Tampa Bay Buccaneers",
+      "score": 14.0
+     }
+    ],
+    "winner_index": 1
+   }
+  }
+ }
+}

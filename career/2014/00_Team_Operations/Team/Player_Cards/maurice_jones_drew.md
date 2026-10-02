@@ -151,13 +151,19 @@ Jones-Drew pressed the Power landmark, read the puller and kept the ball through
 
 Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
 
+### September 7, 2014 | Week 1, Jacksonville at Philadelphia
+
+Twenty-two carries for 93 yards at 4.2 in 76 snaps: the 10-yard Outside Zone run on third-and-10 before the half, 7 and 7 on Power from Ace on the 51-yard field-goal drive, and the 10 on the access run and 7 on Power Left that set the winning kick in overtime; the 5-yard loss on Inside Zone at the Philadelphia 30 and the 3-yard loss on the first access run are the two negative carries. Three catches for 1 on six targets, including the minus 4 on the Y-Cross throw in overtime. A minor lower-extremity injury was logged at the end of the fourth-quarter field-goal drive at 4:15; he was not removed and played the overtime: out, projected return in five days (September 12), reassessment September 8 ([medical record](../../Medical/incidents/maurice_jones_drew_2014-09-07.md)). Anderson and Grimes remain the carried order behind him.
+
+Source: [Week 1 game record](../../../05_Regular_Season/Games/Week_01/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST | REC AVG | REC LNG | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
+| 2014 | Jacksonville | Through Week 1 | 1 | 22 | 93 | 4.2 | 0 | 10 | 6 | 3 | 1 | 0 | 0 | 0 | 0.3 | 3 | 50.0 | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 
