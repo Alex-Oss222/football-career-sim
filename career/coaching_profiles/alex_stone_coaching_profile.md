@@ -90,7 +90,7 @@ Power gives him down blocks, double teams and a pulling guard leading up to a li
 
 Trap is an answer he likes against an interior defender penetrating upfield. Jet sweep gives him a real outside handoff, with the same motion accompanying inside runs and play-action. He watches whether the defense widens, exchanges responsibilities or keeps chasing the first action.
 
-He uses tight ends and motion to add a blocking surface or change the point of attack while retaining familiar blocking rules for each concept. His committee of backs gives him choices within that plan. He will return to a productive run until the defense changes the fit, then look at the complementary call he prepared for that response.
+He uses tight ends and motion to add a blocking surface or change the point of attack while retaining familiar blocking rules for each concept. His backs give him choices within that plan; for Jacksonville from Week 4 of 2014 they work as a hierarchy, Jones-Drew, Anderson and Grimes, not a committee. He will return to a productive run until the defense changes the fit, then look at the complementary call he prepared for that response.
 
 ## 6. Defense
 
