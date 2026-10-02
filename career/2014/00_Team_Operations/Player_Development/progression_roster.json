@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "season": 2014,
-  "as_of": "September 14, 2014, after the Week 2 game at Washington",
+  "as_of": "September 21, 2014, game day before kickoff against Indianapolis; no transaction since September 8. No player on the 53 is under a medical instruction: Julian Stanford and Lane Johnson were reassessed September 15 with no change and cleared September 19 and 17, Gator Hoskins cleared September 16 and Hakeem Nicks September 20, each on his projected date",
   "roster_source": "career/2014/00_Team_Operations/Team/Roster/roster.md",
   "continuity_source": "career/2014/00_Team_Operations/Player_Development/2013_exit_player_index.json",
   "policy": "Roster controls eligibility. The exit index identifies Jacksonville 2013 continuity only. Regenerate after any transaction or draft addition before progression is resolved.",

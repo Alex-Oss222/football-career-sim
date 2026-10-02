@@ -141,6 +141,12 @@ Twelve snaps at X with the starters in the first quarter, one target, the 14-yar
 
 Source: [preseason game 4 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 15 to 20, 2014 | Cleared
+
+Cleared Saturday, September 20, his projected date, after not practicing Wednesday through Friday; out on the Friday report; full in the Saturday walkthrough. The X role requires a full practice week under Stone's condition, which this week could not supply, so Adams remains the X and Nicks is listed last among the receivers and inactive for Indianapolis by the standing rule as the deepest healthy receiver. No football finding attaches to the week; his next practice week is the first evidence.
+
+Source: [Week 3 record](../../../05_Regular_Season/Games/Week_03/output.md) and the [medical history](../../Medical/medical_history.md#september-15-to-20-stanford-johnson-hoskins-and-nicks-cleared-harris-and-lowery-reassessed). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
