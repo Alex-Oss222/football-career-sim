@@ -1,0 +1,7164 @@
+{
+ "built_by": "scripts/research/build_passer_interception_persistence.py",
+ "discrepancies": [],
+ "divergence": "2013-01-15",
+ "excluded_post_divergence": {
+  "00-0029604": "Kirk Cousins"
+ },
+ "fetch_date": "2026-10-02",
+ "pair_tables": {
+  "2010->2011": [
+   {
+    "name": "Matt Hasselbeck",
+    "next_dropbacks": 537,
+    "next_interceptions": 14,
+    "next_rate": 0.0260707635009311,
+    "player_id": "00-0007091",
+    "prior_deviation_raw": 0.009840593818937423,
+    "prior_deviation_shrunk": 0.0038371335627284467,
+    "prior_dropbacks": 473,
+    "prior_interceptions": 17,
+    "prior_rate": 0.035940803382663845,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Tom Brady",
+    "next_dropbacks": 643,
+    "next_interceptions": 12,
+    "next_rate": 0.01866251944012442,
+    "player_id": "00-0019596",
+    "prior_deviation_raw": -0.01836326565656975,
+    "prior_deviation_shrunk": -0.007552504076694035,
+    "prior_dropbacks": 517,
+    "prior_interceptions": 4,
+    "prior_rate": 0.007736943907156673,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Mike Vick",
+    "next_dropbacks": 446,
+    "next_interceptions": 14,
+    "next_rate": 0.03139013452914798,
+    "player_id": "00-0020245",
+    "prior_deviation_raw": -0.01135819482171168,
+    "prior_deviation_shrunk": -0.0040301826376405205,
+    "prior_dropbacks": 407,
+    "prior_interceptions": 6,
+    "prior_rate": 0.014742014742014743,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Drew Brees",
+    "next_dropbacks": 684,
+    "next_interceptions": 14,
+    "next_rate": 0.02046783625730994,
+    "player_id": "00-0020531",
+    "prior_deviation_raw": 0.006063533126332055,
+    "prior_deviation_shrunk": 0.002912455643342877,
+    "prior_dropbacks": 684,
+    "prior_interceptions": 22,
+    "prior_rate": 0.03216374269005848,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Carson Palmer",
+    "next_dropbacks": 345,
+    "next_interceptions": 16,
+    "next_rate": 0.0463768115942029,
+    "player_id": "00-0021429",
+    "prior_deviation_raw": 0.006579528998365083,
+    "prior_deviation_shrunk": 0.002978216878109525,
+    "prior_dropbacks": 612,
+    "prior_interceptions": 20,
+    "prior_rate": 0.032679738562091505,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Tony Romo",
+    "next_dropbacks": 558,
+    "next_interceptions": 10,
+    "next_rate": 0.017921146953405017,
+    "player_id": "00-0021678",
+    "prior_deviation_raw": 0.0057179722544553925,
+    "prior_deviation_shrunk": 0.0013103124874846613,
+    "prior_dropbacks": 220,
+    "prior_interceptions": 7,
+    "prior_rate": 0.031818181818181815,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Matt Schaub",
+    "next_dropbacks": 308,
+    "next_interceptions": 6,
+    "next_rate": 0.01948051948051948,
+    "player_id": "00-0022787",
+    "prior_deviation_raw": -0.00629822936570662,
+    "prior_deviation_shrunk": -0.002835520310957674,
+    "prior_dropbacks": 606,
+    "prior_interceptions": 12,
+    "prior_rate": 0.019801980198019802,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Eli Manning",
+    "next_dropbacks": 617,
+    "next_interceptions": 16,
+    "next_rate": 0.02593192868719611,
+    "player_id": "00-0022803",
+    "prior_deviation_raw": 0.01894483548131862,
+    "prior_deviation_shrunk": 0.008118957272164763,
+    "prior_dropbacks": 555,
+    "prior_interceptions": 25,
+    "prior_rate": 0.04504504504504504,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Ben Roethlisberger",
+    "next_dropbacks": 553,
+    "next_interceptions": 14,
+    "next_rate": 0.02531645569620253,
+    "player_id": "00-0022924",
+    "prior_deviation_raw": -0.014223725003156351,
+    "prior_deviation_shrunk": -0.005157602097961091,
+    "prior_dropbacks": 421,
+    "prior_interceptions": 5,
+    "prior_rate": 0.011876484560570071,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Philip Rivers",
+    "next_dropbacks": 612,
+    "next_interceptions": 20,
+    "next_rate": 0.032679738562091505,
+    "player_id": "00-0022942",
+    "prior_deviation_raw": -0.0036477052459371294,
+    "prior_deviation_shrunk": -0.001601179274266118,
+    "prior_dropbacks": 579,
+    "prior_interceptions": 13,
+    "prior_rate": 0.022452504317789293,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Alex Smith",
+    "next_dropbacks": 489,
+    "next_interceptions": 5,
+    "next_rate": 0.010224948875255624,
+    "player_id": "00-0023436",
+    "prior_deviation_raw": 0.0011477468395433323,
+    "prior_deviation_shrunk": 0.00038049452218855487,
+    "prior_dropbacks": 367,
+    "prior_interceptions": 10,
+    "prior_rate": 0.027247956403269755,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Aaron Rodgers",
+    "next_dropbacks": 537,
+    "next_interceptions": 6,
+    "next_rate": 0.0111731843575419,
+    "player_id": "00-0023459",
+    "prior_deviation_raw": -0.004361079128943814,
+    "prior_deviation_shrunk": -0.0017709736589395057,
+    "prior_dropbacks": 506,
+    "prior_interceptions": 11,
+    "prior_rate": 0.021739130434782608,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Kyle Orton",
+    "next_dropbacks": 262,
+    "next_interceptions": 9,
+    "next_rate": 0.03435114503816794,
+    "player_id": "00-0023541",
+    "prior_deviation_raw": -0.009182916330643717,
+    "prior_deviation_shrunk": -0.00384052946809953,
+    "prior_dropbacks": 532,
+    "prior_interceptions": 9,
+    "prior_rate": 0.016917293233082706,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Matt Cassel",
+    "next_dropbacks": 291,
+    "next_interceptions": 9,
+    "next_rate": 0.030927835051546393,
+    "player_id": "00-0023662",
+    "prior_deviation_raw": -0.011394327210785246,
+    "prior_deviation_shrunk": -0.004460128500598133,
+    "prior_dropbacks": 476,
+    "prior_interceptions": 7,
+    "prior_rate": 0.014705882352941176,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Ryan Fitzpatrick",
+    "next_dropbacks": 591,
+    "next_interceptions": 23,
+    "next_rate": 0.038917089678511,
+    "player_id": "00-0023682",
+    "prior_deviation_raw": 0.006157854952402609,
+    "prior_deviation_shrunk": 0.0023761865505382666,
+    "prior_dropbacks": 465,
+    "prior_interceptions": 15,
+    "prior_rate": 0.03225806451612903,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Jay Cutler",
+    "next_dropbacks": 337,
+    "next_interceptions": 7,
+    "next_rate": 0.020771513353115726,
+    "player_id": "00-0024226",
+    "prior_deviation_raw": 0.006957641675943,
+    "prior_deviation_shrunk": 0.002751131851258557,
+    "prior_dropbacks": 484,
+    "prior_interceptions": 16,
+    "prior_rate": 0.03305785123966942,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Kevin Kolb",
+    "next_dropbacks": 283,
+    "next_interceptions": 8,
+    "next_rate": 0.028268551236749116,
+    "player_id": "00-0025423",
+    "prior_deviation_raw": 0.008382549056963232,
+    "prior_deviation_shrunk": 0.0018044360781211619,
+    "prior_dropbacks": 203,
+    "prior_interceptions": 7,
+    "prior_rate": 0.034482758620689655,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Matt Ryan",
+    "next_dropbacks": 592,
+    "next_interceptions": 12,
+    "next_rate": 0.02027027027027027,
+    "player_id": "00-0026143",
+    "prior_deviation_raw": -0.01094869441221127,
+    "prior_deviation_shrunk": -0.004875055408248379,
+    "prior_dropbacks": 594,
+    "prior_interceptions": 9,
+    "prior_rate": 0.015151515151515152,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Joe Flacco",
+    "next_dropbacks": 573,
+    "next_interceptions": 12,
+    "next_rate": 0.020942408376963352,
+    "player_id": "00-0026158",
+    "prior_deviation_raw": -0.007196617881306763,
+    "prior_deviation_shrunk": -0.0029999112993527484,
+    "prior_dropbacks": 529,
+    "prior_interceptions": 10,
+    "prior_rate": 0.01890359168241966,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Mark Sanchez",
+    "next_dropbacks": 582,
+    "next_interceptions": 18,
+    "next_rate": 0.030927835051546393,
+    "player_id": "00-0026898",
+    "prior_deviation_raw": -0.0017556402753369088,
+    "prior_deviation_shrunk": -0.0007358568547113052,
+    "prior_dropbacks": 534,
+    "prior_interceptions": 13,
+    "prior_rate": 0.024344569288389514,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Josh Freeman",
+    "next_dropbacks": 580,
+    "next_interceptions": 22,
+    "next_rate": 0.03793103448275862,
+    "player_id": "00-0026993",
+    "prior_deviation_raw": -0.014148018328666662,
+    "prior_deviation_shrunk": -0.005718252773334726,
+    "prior_dropbacks": 502,
+    "prior_interceptions": 6,
+    "prior_rate": 0.01195219123505976,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Colt McCoy",
+    "next_dropbacks": 495,
+    "next_interceptions": 11,
+    "next_rate": 0.022222222222222223,
+    "player_id": "00-0027688",
+    "prior_deviation_raw": 0.010634484313824601,
+    "prior_deviation_shrunk": 0.0026450150634077067,
+    "prior_dropbacks": 245,
+    "prior_interceptions": 9,
+    "prior_rate": 0.036734693877551024,
+    "seasons": [
+     2010,
+     2011
+    ]
+   },
+   {
+    "name": "Sam Bradford",
+    "next_dropbacks": 393,
+    "next_interceptions": 6,
+    "next_rate": 0.015267175572519083,
+    "player_id": "00-0027854",
+    "prior_deviation_raw": -0.0020617480252648826,
+    "prior_deviation_shrunk": -0.0009431759268737384,
+    "prior_dropbacks": 624,
+    "prior_interceptions": 15,
+    "prior_rate": 0.02403846153846154,
+    "seasons": [
+     2010,
+     2011
+    ]
+   }
+  ],
+  "2011->2012": [
+   {
+    "name": "Matt Hasselbeck",
+    "next_dropbacks": 235,
+    "next_interceptions": 5,
+    "next_rate": 0.02127659574468085,
+    "player_id": "00-0007091",
+    "prior_deviation_raw": -0.00023050558128335716,
+    "prior_deviation_shrunk": -6.866175810017056e-05,
+    "prior_dropbacks": 537,
+    "prior_interceptions": 14,
+    "prior_rate": 0.0260707635009311,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Tom Brady",
+    "next_dropbacks": 664,
+    "next_interceptions": 8,
+    "next_rate": 0.012048192771084338,
+    "player_id": "00-0019596",
+    "prior_deviation_raw": -0.007638749642090038,
+    "prior_deviation_shrunk": -0.002573233439266947,
+    "prior_dropbacks": 643,
+    "prior_interceptions": 12,
+    "prior_rate": 0.01866251944012442,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Mike Vick",
+    "next_dropbacks": 379,
+    "next_interceptions": 10,
+    "next_rate": 0.026385224274406333,
+    "player_id": "00-0020245",
+    "prior_deviation_raw": 0.005088865446933526,
+    "prior_deviation_shrunk": 0.0013258973434102789,
+    "prior_dropbacks": 446,
+    "prior_interceptions": 14,
+    "prior_rate": 0.03139013452914798,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Drew Brees",
+    "next_dropbacks": 696,
+    "next_interceptions": 19,
+    "next_rate": 0.027298850574712645,
+    "player_id": "00-0020531",
+    "prior_deviation_raw": -0.005833432824904516,
+    "prior_deviation_shrunk": -0.002046427986142973,
+    "prior_dropbacks": 684,
+    "prior_interceptions": 14,
+    "prior_rate": 0.02046783625730994,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Carson Palmer",
+    "next_dropbacks": 591,
+    "next_interceptions": 14,
+    "next_rate": 0.023688663282571912,
+    "player_id": "00-0021429",
+    "prior_deviation_raw": 0.020075542511988443,
+    "prior_deviation_shrunk": 0.00429984009555957,
+    "prior_dropbacks": 345,
+    "prior_interceptions": 16,
+    "prior_rate": 0.0463768115942029,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Tony Romo",
+    "next_dropbacks": 684,
+    "next_interceptions": 19,
+    "next_rate": 0.027777777777777776,
+    "player_id": "00-0021678",
+    "prior_deviation_raw": -0.008380122128809439,
+    "prior_deviation_shrunk": -0.0025639762353197176,
+    "prior_dropbacks": 558,
+    "prior_interceptions": 10,
+    "prior_rate": 0.017921146953405017,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Matt Schaub",
+    "next_dropbacks": 571,
+    "next_interceptions": 12,
+    "next_rate": 0.021015761821366025,
+    "player_id": "00-0022787",
+    "prior_deviation_raw": -0.006820749601694976,
+    "prior_deviation_shrunk": -0.0013348762305018316,
+    "prior_dropbacks": 308,
+    "prior_interceptions": 6,
+    "prior_rate": 0.01948051948051948,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Eli Manning",
+    "next_dropbacks": 555,
+    "next_interceptions": 15,
+    "next_rate": 0.02702702702702703,
+    "player_id": "00-0022803",
+    "prior_deviation_raw": -0.00036934039501834715,
+    "prior_deviation_shrunk": -0.00012103590869821587,
+    "prior_dropbacks": 617,
+    "prior_interceptions": 16,
+    "prior_rate": 0.02593192868719611,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Ben Roethlisberger",
+    "next_dropbacks": 479,
+    "next_interceptions": 8,
+    "next_rate": 0.016701461377870562,
+    "player_id": "00-0022924",
+    "prior_deviation_raw": -0.0009848133860119249,
+    "prior_deviation_shrunk": -0.00029943378992950895,
+    "prior_dropbacks": 553,
+    "prior_interceptions": 14,
+    "prior_rate": 0.02531645569620253,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Philip Rivers",
+    "next_dropbacks": 576,
+    "next_interceptions": 15,
+    "next_rate": 0.026041666666666668,
+    "player_id": "00-0022942",
+    "prior_deviation_raw": 0.006378469479877049,
+    "prior_deviation_shrunk": 0.002078859017932158,
+    "prior_dropbacks": 612,
+    "prior_interceptions": 20,
+    "prior_rate": 0.032679738562091505,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Alex Smith",
+    "next_dropbacks": 242,
+    "next_interceptions": 5,
+    "next_rate": 0.02066115702479339,
+    "player_id": "00-0023436",
+    "prior_deviation_raw": -0.01607632020695883,
+    "prior_deviation_shrunk": -0.00447996687846889,
+    "prior_dropbacks": 489,
+    "prior_interceptions": 5,
+    "prior_rate": 0.010224948875255624,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Aaron Rodgers",
+    "next_dropbacks": 603,
+    "next_interceptions": 8,
+    "next_rate": 0.013266998341625208,
+    "player_id": "00-0023459",
+    "prior_deviation_raw": -0.015128084724672556,
+    "prior_deviation_shrunk": -0.004506272204348346,
+    "prior_dropbacks": 537,
+    "prior_interceptions": 6,
+    "prior_rate": 0.0111731843575419,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Matt Cassel",
+    "next_dropbacks": 296,
+    "next_interceptions": 12,
+    "next_rate": 0.04054054054054054,
+    "player_id": "00-0023662",
+    "prior_deviation_raw": 0.004626565969331937,
+    "prior_deviation_shrunk": 0.0008648219968470233,
+    "prior_dropbacks": 291,
+    "prior_interceptions": 9,
+    "prior_rate": 0.030927835051546393,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Ryan Fitzpatrick",
+    "next_dropbacks": 535,
+    "next_interceptions": 16,
+    "next_rate": 0.029906542056074768,
+    "player_id": "00-0023682",
+    "prior_deviation_raw": 0.012615820596296543,
+    "prior_deviation_shrunk": 0.004015544097599081,
+    "prior_dropbacks": 591,
+    "prior_interceptions": 23,
+    "prior_rate": 0.038917089678511,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Jay Cutler",
+    "next_dropbacks": 472,
+    "next_interceptions": 14,
+    "next_rate": 0.029661016949152543,
+    "player_id": "00-0024226",
+    "prior_deviation_raw": -0.00552975572909873,
+    "prior_deviation_shrunk": -0.0011626904162718651,
+    "prior_dropbacks": 337,
+    "prior_interceptions": 7,
+    "prior_rate": 0.020771513353115726,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Kevin Kolb",
+    "next_dropbacks": 210,
+    "next_interceptions": 3,
+    "next_rate": 0.014285714285714285,
+    "player_id": "00-0025423",
+    "prior_deviation_raw": 0.00196728215453466,
+    "prior_deviation_shrunk": 0.00035947243257508643,
+    "prior_dropbacks": 283,
+    "prior_interceptions": 8,
+    "prior_rate": 0.028268551236749116,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Matt Ryan",
+    "next_dropbacks": 643,
+    "next_interceptions": 14,
+    "next_rate": 0.02177293934681182,
+    "player_id": "00-0026143",
+    "prior_deviation_raw": -0.006030998811944185,
+    "prior_deviation_shrunk": -0.0019218457570581056,
+    "prior_dropbacks": 592,
+    "prior_interceptions": 12,
+    "prior_rate": 0.02027027027027027,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Joe Flacco",
+    "next_dropbacks": 566,
+    "next_interceptions": 10,
+    "next_rate": 0.0176678445229682,
+    "player_id": "00-0026158",
+    "prior_deviation_raw": -0.005358860705251104,
+    "prior_deviation_shrunk": -0.001669933592202067,
+    "prior_dropbacks": 573,
+    "prior_interceptions": 12,
+    "prior_rate": 0.020942408376963352,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Matthew Stafford",
+    "next_dropbacks": 756,
+    "next_interceptions": 17,
+    "next_rate": 0.022486772486772486,
+    "player_id": "00-0026498",
+    "prior_deviation_raw": -0.0037977529078122053,
+    "prior_deviation_shrunk": -0.0013659654599401244,
+    "prior_dropbacks": 711,
+    "prior_interceptions": 16,
+    "prior_rate": 0.02250351617440225,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Mark Sanchez",
+    "next_dropbacks": 487,
+    "next_interceptions": 18,
+    "next_rate": 0.03696098562628337,
+    "player_id": "00-0026898",
+    "prior_deviation_raw": 0.004626565969331937,
+    "prior_deviation_shrunk": 0.0014572476192849446,
+    "prior_dropbacks": 582,
+    "prior_interceptions": 18,
+    "prior_rate": 0.030927835051546393,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Josh Freeman",
+    "next_dropbacks": 584,
+    "next_interceptions": 17,
+    "next_rate": 0.02910958904109589,
+    "player_id": "00-0026993",
+    "prior_deviation_raw": 0.011629765400544164,
+    "prior_deviation_shrunk": 0.00365444042738345,
+    "prior_dropbacks": 580,
+    "prior_interceptions": 22,
+    "prior_rate": 0.03793103448275862,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "John Skelton",
+    "next_dropbacks": 216,
+    "next_interceptions": 9,
+    "next_rate": 0.041666666666666664,
+    "player_id": "00-0027754",
+    "prior_deviation_raw": 0.020678596689597626,
+    "prior_deviation_shrunk": 0.003940613905767644,
+    "prior_dropbacks": 298,
+    "prior_interceptions": 14,
+    "prior_rate": 0.04697986577181208,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Sam Bradford",
+    "next_dropbacks": 586,
+    "next_interceptions": 13,
+    "next_rate": 0.02218430034129693,
+    "player_id": "00-0027854",
+    "prior_deviation_raw": -0.011034093509695373,
+    "prior_deviation_shrunk": -0.0026142222478340547,
+    "prior_dropbacks": 393,
+    "prior_interceptions": 6,
+    "prior_rate": 0.015267175572519083,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Cam Newton",
+    "next_dropbacks": 521,
+    "next_interceptions": 12,
+    "next_rate": 0.023032629558541268,
+    "player_id": "00-0027939",
+    "prior_deviation_raw": 0.004495832367060908,
+    "prior_deviation_shrunk": 0.0013652424084884159,
+    "prior_dropbacks": 552,
+    "prior_interceptions": 17,
+    "prior_rate": 0.030797101449275364,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Blaine Gabbert",
+    "next_dropbacks": 300,
+    "next_interceptions": 6,
+    "next_rate": 0.02,
+    "player_id": "00-0027948",
+    "prior_deviation_raw": -0.002018708375812691,
+    "prior_deviation_shrunk": -0.0005320513002226197,
+    "prior_dropbacks": 453,
+    "prior_interceptions": 11,
+    "prior_rate": 0.024282560706401765,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Christian Ponder",
+    "next_dropbacks": 515,
+    "next_interceptions": 12,
+    "next_rate": 0.02330097087378641,
+    "player_id": "00-0027950",
+    "prior_deviation_raw": 0.014197173285386788,
+    "prior_deviation_shrunk": 0.002872052527782349,
+    "prior_dropbacks": 321,
+    "prior_interceptions": 13,
+    "prior_rate": 0.040498442367601244,
+    "seasons": [
+     2011,
+     2012
+    ]
+   },
+   {
+    "name": "Andy Dalton",
+    "next_dropbacks": 574,
+    "next_interceptions": 16,
+    "next_rate": 0.027874564459930314,
+    "player_id": "00-0027973",
+    "prior_deviation_raw": -0.002227195008140382,
+    "prior_deviation_shrunk": -0.0006660227776786251,
+    "prior_dropbacks": 540,
+    "prior_interceptions": 13,
+    "prior_rate": 0.024074074074074074,
+    "seasons": [
+     2011,
+     2012
+    ]
+   }
+  ],
+  "2012->2013": [
+   {
+    "name": "Peyton Manning",
+    "next_dropbacks": 677,
+    "next_interceptions": 10,
+    "next_rate": 0.014771048744460856,
+    "player_id": "00-0010346",
+    "prior_deviation_raw": -0.005998083330563755,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 604,
+    "prior_interceptions": 11,
+    "prior_rate": 0.018211920529801324,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Tom Brady",
+    "next_dropbacks": 668,
+    "next_interceptions": 11,
+    "next_rate": 0.016467065868263474,
+    "player_id": "00-0019596",
+    "prior_deviation_raw": -0.01216181108928074,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 664,
+    "prior_interceptions": 8,
+    "prior_rate": 0.012048192771084338,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Drew Brees",
+    "next_dropbacks": 687,
+    "next_interceptions": 12,
+    "next_rate": 0.017467248908296942,
+    "player_id": "00-0020531",
+    "prior_deviation_raw": 0.0030888467143475665,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 696,
+    "prior_interceptions": 19,
+    "prior_rate": 0.027298850574712645,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Carson Palmer",
+    "next_dropbacks": 613,
+    "next_interceptions": 22,
+    "next_rate": 0.03588907014681892,
+    "player_id": "00-0021429",
+    "prior_deviation_raw": -0.0005213405777931661,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 591,
+    "prior_interceptions": 14,
+    "prior_rate": 0.023688663282571912,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Tony Romo",
+    "next_dropbacks": 570,
+    "next_interceptions": 10,
+    "next_rate": 0.017543859649122806,
+    "player_id": "00-0021678",
+    "prior_deviation_raw": 0.0035677739174126977,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 684,
+    "prior_interceptions": 19,
+    "prior_rate": 0.027777777777777776,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Matt Schaub",
+    "next_dropbacks": 379,
+    "next_interceptions": 14,
+    "next_rate": 0.036939313984168866,
+    "player_id": "00-0022787",
+    "prior_deviation_raw": -0.003194242038999054,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 571,
+    "prior_interceptions": 12,
+    "prior_rate": 0.021015761821366025,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Eli Manning",
+    "next_dropbacks": 590,
+    "next_interceptions": 27,
+    "next_rate": 0.04576271186440678,
+    "player_id": "00-0022803",
+    "prior_deviation_raw": 0.00281702316666195,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 555,
+    "prior_interceptions": 15,
+    "prior_rate": 0.02702702702702703,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Ben Roethlisberger",
+    "next_dropbacks": 626,
+    "next_interceptions": 14,
+    "next_rate": 0.022364217252396165,
+    "player_id": "00-0022924",
+    "prior_deviation_raw": -0.0075085424824945166,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 479,
+    "prior_interceptions": 8,
+    "prior_rate": 0.016701461377870562,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Philip Rivers",
+    "next_dropbacks": 574,
+    "next_interceptions": 11,
+    "next_rate": 0.01916376306620209,
+    "player_id": "00-0022942",
+    "prior_deviation_raw": 0.0018316628063015893,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 576,
+    "prior_interceptions": 15,
+    "prior_rate": 0.026041666666666668,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Alex Smith",
+    "next_dropbacks": 547,
+    "next_interceptions": 7,
+    "next_rate": 0.012797074954296161,
+    "player_id": "00-0023436",
+    "prior_deviation_raw": -0.0035488468355716896,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 242,
+    "prior_interceptions": 5,
+    "prior_rate": 0.02066115702479339,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Aaron Rodgers",
+    "next_dropbacks": 311,
+    "next_interceptions": 6,
+    "next_rate": 0.01929260450160772,
+    "player_id": "00-0023459",
+    "prior_deviation_raw": -0.010943005518739871,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 603,
+    "prior_interceptions": 8,
+    "prior_rate": 0.013266998341625208,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Matt Cassel",
+    "next_dropbacks": 270,
+    "next_interceptions": 9,
+    "next_rate": 0.03333333333333333,
+    "player_id": "00-0023662",
+    "prior_deviation_raw": 0.016330536680175464,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 296,
+    "prior_interceptions": 12,
+    "prior_rate": 0.04054054054054054,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Ryan Fitzpatrick",
+    "next_dropbacks": 371,
+    "next_interceptions": 12,
+    "next_rate": 0.03234501347708895,
+    "player_id": "00-0023682",
+    "prior_deviation_raw": 0.005696538195709689,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 535,
+    "prior_interceptions": 16,
+    "prior_rate": 0.029906542056074768,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Jay Cutler",
+    "next_dropbacks": 374,
+    "next_interceptions": 12,
+    "next_rate": 0.03208556149732621,
+    "player_id": "00-0024226",
+    "prior_deviation_raw": 0.005451013088787465,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 472,
+    "prior_interceptions": 14,
+    "prior_rate": 0.029661016949152543,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Matt Ryan",
+    "next_dropbacks": 695,
+    "next_interceptions": 17,
+    "next_rate": 0.02446043165467626,
+    "player_id": "00-0026143",
+    "prior_deviation_raw": -0.002437064513553258,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 643,
+    "prior_interceptions": 14,
+    "prior_rate": 0.02177293934681182,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Joe Flacco",
+    "next_dropbacks": 662,
+    "next_interceptions": 22,
+    "next_rate": 0.03323262839879154,
+    "player_id": "00-0026158",
+    "prior_deviation_raw": -0.00654215933739688,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 566,
+    "prior_interceptions": 10,
+    "prior_rate": 0.0176678445229682,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Chad Henne",
+    "next_dropbacks": 541,
+    "next_interceptions": 14,
+    "next_rate": 0.025878003696857672,
+    "player_id": "00-0026197",
+    "prior_deviation_raw": 0.008528091377730161,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 336,
+    "prior_interceptions": 11,
+    "prior_rate": 0.03273809523809524,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Matthew Stafford",
+    "next_dropbacks": 657,
+    "next_interceptions": 19,
+    "next_rate": 0.0289193302891933,
+    "player_id": "00-0026498",
+    "prior_deviation_raw": -0.001723231373592593,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 756,
+    "prior_interceptions": 17,
+    "prior_rate": 0.022486772486772486,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Sam Bradford",
+    "next_dropbacks": 277,
+    "next_interceptions": 4,
+    "next_rate": 0.01444043321299639,
+    "player_id": "00-0027854",
+    "prior_deviation_raw": -0.00202570351906815,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 586,
+    "prior_interceptions": 13,
+    "prior_rate": 0.02218430034129693,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Cam Newton",
+    "next_dropbacks": 516,
+    "next_interceptions": 13,
+    "next_rate": 0.025193798449612403,
+    "player_id": "00-0027939",
+    "prior_deviation_raw": -0.0011773743018238109,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 521,
+    "prior_interceptions": 12,
+    "prior_rate": 0.023032629558541268,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Christian Ponder",
+    "next_dropbacks": 266,
+    "next_interceptions": 9,
+    "next_rate": 0.03383458646616541,
+    "player_id": "00-0027950",
+    "prior_deviation_raw": -0.00090903298657867,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 515,
+    "prior_interceptions": 12,
+    "prior_rate": 0.02330097087378641,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Andy Dalton",
+    "next_dropbacks": 615,
+    "next_interceptions": 20,
+    "next_rate": 0.032520325203252036,
+    "player_id": "00-0027973",
+    "prior_deviation_raw": 0.003664560599565235,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 574,
+    "prior_interceptions": 16,
+    "prior_rate": 0.027874564459930314,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Colin Kaepernick",
+    "next_dropbacks": 455,
+    "next_interceptions": 8,
+    "next_rate": 0.017582417582417582,
+    "player_id": "00-0027974",
+    "prior_deviation_raw": -0.011389491039852258,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 234,
+    "prior_interceptions": 3,
+    "prior_rate": 0.01282051282051282,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Russell Wilson",
+    "next_dropbacks": 451,
+    "next_interceptions": 9,
+    "next_rate": 0.019955654101995565,
+    "player_id": "00-0029263",
+    "prior_deviation_raw": -0.0007358254566092112,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 426,
+    "prior_interceptions": 10,
+    "prior_rate": 0.023474178403755867,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Nick Foles",
+    "next_dropbacks": 345,
+    "next_interceptions": 2,
+    "next_rate": 0.005797101449275362,
+    "player_id": "00-0029567",
+    "prior_deviation_raw": -0.0066661442112422725,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 285,
+    "prior_interceptions": 5,
+    "prior_rate": 0.017543859649122806,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Robert Griffin III",
+    "next_dropbacks": 494,
+    "next_interceptions": 12,
+    "next_rate": 0.024291497975708502,
+    "player_id": "00-0029665",
+    "prior_deviation_raw": -0.01238967289109794,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 423,
+    "prior_interceptions": 5,
+    "prior_rate": 0.01182033096926714,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Andrew Luck",
+    "next_dropbacks": 602,
+    "next_interceptions": 9,
+    "next_rate": 0.014950166112956811,
+    "player_id": "00-0029668",
+    "prior_deviation_raw": 0.00273610392406606,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 668,
+    "prior_interceptions": 18,
+    "prior_rate": 0.02694610778443114,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Brandon Weeden",
+    "next_dropbacks": 294,
+    "next_interceptions": 9,
+    "next_rate": 0.030612244897959183,
+    "player_id": "00-0029677",
+    "prior_deviation_raw": 0.006982656690093639,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 545,
+    "prior_interceptions": 17,
+    "prior_rate": 0.031192660550458717,
+    "seasons": [
+     2012,
+     2013
+    ]
+   },
+   {
+    "name": "Ryan Tannehill",
+    "next_dropbacks": 646,
+    "next_interceptions": 17,
+    "next_rate": 0.02631578947368421,
+    "player_id": "00-0029701",
+    "prior_deviation_raw": 0.0008381656964749976,
+    "prior_deviation_shrunk": 0.0,
+    "prior_dropbacks": 519,
+    "prior_interceptions": 13,
+    "prior_rate": 0.025048169556840076,
+    "seasons": [
+     2012,
+     2013
+    ]
+   }
+  ],
+  "2013->2014": [
+   {
+    "name": "Peyton Manning",
+    "next_dropbacks": 614,
+    "next_interceptions": 15,
+    "next_rate": 0.024429967426710098,
+    "player_id": "00-0010346",
+    "prior_deviation_raw": -0.01015072148352305,
+    "prior_deviation_shrunk": -0.004560250825850983,
+    "prior_dropbacks": 677,
+    "prior_interceptions": 10,
+    "prior_rate": 0.014771048744460856,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Tom Brady",
+    "next_dropbacks": 603,
+    "next_interceptions": 9,
+    "next_rate": 0.014925373134328358,
+    "player_id": "00-0019596",
+    "prior_deviation_raw": -0.008454704359720431,
+    "prior_deviation_shrunk": -0.0037703318448959744,
+    "prior_dropbacks": 668,
+    "prior_interceptions": 11,
+    "prior_rate": 0.016467065868263474,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Drew Brees",
+    "next_dropbacks": 688,
+    "next_interceptions": 17,
+    "next_rate": 0.024709302325581394,
+    "player_id": "00-0020531",
+    "prior_deviation_raw": -0.007454521319686963,
+    "prior_deviation_shrunk": -0.0033760371103462514,
+    "prior_dropbacks": 687,
+    "prior_interceptions": 12,
+    "prior_rate": 0.017467248908296942,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Josh McCown",
+    "next_dropbacks": 363,
+    "next_interceptions": 14,
+    "next_rate": 0.03856749311294766,
+    "player_id": "00-0021206",
+    "prior_deviation_raw": -0.020666451079047736,
+    "prior_deviation_shrunk": -0.0045604465398382706,
+    "prior_dropbacks": 235,
+    "prior_interceptions": 1,
+    "prior_rate": 0.00425531914893617,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Carson Palmer",
+    "next_dropbacks": 233,
+    "next_interceptions": 3,
+    "next_rate": 0.012875536480686695,
+    "player_id": "00-0021429",
+    "prior_deviation_raw": 0.010967299918835015,
+    "prior_deviation_shrunk": 0.004659196141377379,
+    "prior_dropbacks": 613,
+    "prior_interceptions": 22,
+    "prior_rate": 0.03588907014681892,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Tony Romo",
+    "next_dropbacks": 464,
+    "next_interceptions": 9,
+    "next_rate": 0.01939655172413793,
+    "player_id": "00-0021678",
+    "prior_deviation_raw": -0.007377910578861099,
+    "prior_deviation_shrunk": -0.0030039857172339847,
+    "prior_dropbacks": 570,
+    "prior_interceptions": 10,
+    "prior_rate": 0.017543859649122806,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Eli Manning",
+    "next_dropbacks": 629,
+    "next_interceptions": 14,
+    "next_rate": 0.022257551669316374,
+    "player_id": "00-0022803",
+    "prior_deviation_raw": 0.020840941636422874,
+    "prior_deviation_shrunk": 0.008659611573237962,
+    "prior_dropbacks": 590,
+    "prior_interceptions": 27,
+    "prior_rate": 0.04576271186440678,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Ben Roethlisberger",
+    "next_dropbacks": 641,
+    "next_interceptions": 9,
+    "next_rate": 0.014040561622464899,
+    "player_id": "00-0022924",
+    "prior_deviation_raw": -0.00255755297558774,
+    "prior_deviation_shrunk": -0.0010996502404973622,
+    "prior_dropbacks": 626,
+    "prior_interceptions": 14,
+    "prior_rate": 0.022364217252396165,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Philip Rivers",
+    "next_dropbacks": 606,
+    "next_interceptions": 18,
+    "next_rate": 0.0297029702970297,
+    "player_id": "00-0022942",
+    "prior_deviation_raw": -0.005758007161781816,
+    "prior_deviation_shrunk": -0.002354152492362937,
+    "prior_dropbacks": 574,
+    "prior_interceptions": 11,
+    "prior_rate": 0.01916376306620209,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Alex Smith",
+    "next_dropbacks": 509,
+    "next_interceptions": 6,
+    "next_rate": 0.011787819253438114,
+    "player_id": "00-0023436",
+    "prior_deviation_raw": -0.012124695273687744,
+    "prior_deviation_shrunk": -0.004816617615275354,
+    "prior_dropbacks": 547,
+    "prior_interceptions": 7,
+    "prior_rate": 0.012797074954296161,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Aaron Rodgers",
+    "next_dropbacks": 548,
+    "next_interceptions": 5,
+    "next_rate": 0.009124087591240875,
+    "player_id": "00-0023459",
+    "prior_deviation_raw": -0.005629165726376187,
+    "prior_deviation_shrunk": -0.0015344065493792455,
+    "prior_dropbacks": 311,
+    "prior_interceptions": 6,
+    "prior_rate": 0.01929260450160772,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Ryan Fitzpatrick",
+    "next_dropbacks": 333,
+    "next_interceptions": 8,
+    "next_rate": 0.024024024024024024,
+    "player_id": "00-0023682",
+    "prior_deviation_raw": 0.007423243249105045,
+    "prior_deviation_shrunk": 0.0022932171237710353,
+    "prior_dropbacks": 371,
+    "prior_interceptions": 12,
+    "prior_rate": 0.03234501347708895,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Jay Cutler",
+    "next_dropbacks": 599,
+    "next_interceptions": 18,
+    "next_rate": 0.03005008347245409,
+    "player_id": "00-0024226",
+    "prior_deviation_raw": 0.007163791269342301,
+    "prior_deviation_shrunk": 0.00222540248774291,
+    "prior_dropbacks": 374,
+    "prior_interceptions": 12,
+    "prior_rate": 0.03208556149732621,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Matt Ryan",
+    "next_dropbacks": 659,
+    "next_interceptions": 14,
+    "next_rate": 0.021244309559939303,
+    "player_id": "00-0026143",
+    "prior_deviation_raw": -0.0004613385733076465,
+    "prior_deviation_shrunk": -0.00021025722977187009,
+    "prior_dropbacks": 695,
+    "prior_interceptions": 17,
+    "prior_rate": 0.02446043165467626,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Joe Flacco",
+    "next_dropbacks": 573,
+    "next_interceptions": 12,
+    "next_rate": 0.020942408376963352,
+    "player_id": "00-0026158",
+    "prior_deviation_raw": 0.008310858170807636,
+    "prior_deviation_shrunk": 0.0036876662167944045,
+    "prior_dropbacks": 662,
+    "prior_interceptions": 22,
+    "prior_rate": 0.03323262839879154,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Matthew Stafford",
+    "next_dropbacks": 647,
+    "next_interceptions": 12,
+    "next_rate": 0.01854714064914992,
+    "player_id": "00-0026498",
+    "prior_deviation_raw": 0.003997560061209396,
+    "prior_deviation_shrunk": 0.0017663063153384832,
+    "prior_dropbacks": 657,
+    "prior_interceptions": 19,
+    "prior_rate": 0.0289193302891933,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Cam Newton",
+    "next_dropbacks": 486,
+    "next_interceptions": 12,
+    "next_rate": 0.024691358024691357,
+    "player_id": "00-0027939",
+    "prior_deviation_raw": 0.00027202822162849735,
+    "prior_deviation_shrunk": 0.00010428863152202664,
+    "prior_dropbacks": 516,
+    "prior_interceptions": 13,
+    "prior_rate": 0.025193798449612403,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Andy Dalton",
+    "next_dropbacks": 502,
+    "next_interceptions": 17,
+    "next_rate": 0.03386454183266932,
+    "player_id": "00-0027973",
+    "prior_deviation_raw": 0.0075985549752681306,
+    "prior_deviation_shrunk": 0.0032341144511571045,
+    "prior_dropbacks": 615,
+    "prior_interceptions": 20,
+    "prior_rate": 0.032520325203252036,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Colin Kaepernick",
+    "next_dropbacks": 530,
+    "next_interceptions": 10,
+    "next_rate": 0.018867924528301886,
+    "player_id": "00-0027974",
+    "prior_deviation_raw": -0.007339352645566323,
+    "prior_deviation_shrunk": -0.0025988742184235823,
+    "prior_dropbacks": 455,
+    "prior_interceptions": 8,
+    "prior_rate": 0.017582417582417582,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Russell Wilson",
+    "next_dropbacks": 494,
+    "next_interceptions": 7,
+    "next_rate": 0.01417004048582996,
+    "player_id": "00-0029263",
+    "prior_deviation_raw": -0.004966116125988341,
+    "prior_deviation_shrunk": -0.001748491717082603,
+    "prior_dropbacks": 451,
+    "prior_interceptions": 9,
+    "prior_rate": 0.019955654101995565,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Nick Foles",
+    "next_dropbacks": 320,
+    "next_interceptions": 10,
+    "next_rate": 0.03125,
+    "player_id": "00-0029567",
+    "prior_deviation_raw": -0.019124668778708543,
+    "prior_deviation_shrunk": -0.005615600293532065,
+    "prior_dropbacks": 345,
+    "prior_interceptions": 2,
+    "prior_rate": 0.005797101449275362,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Robert Griffin III",
+    "next_dropbacks": 247,
+    "next_interceptions": 6,
+    "next_rate": 0.024291497975708502,
+    "player_id": "00-0029665",
+    "prior_deviation_raw": -0.0006302722522754031,
+    "prior_deviation_shrunk": -0.00023517211301150864,
+    "prior_dropbacks": 494,
+    "prior_interceptions": 12,
+    "prior_rate": 0.024291497975708502,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Andrew Luck",
+    "next_dropbacks": 643,
+    "next_interceptions": 16,
+    "next_rate": 0.024883359253499222,
+    "player_id": "00-0029668",
+    "prior_deviation_raw": -0.009971604115027094,
+    "prior_deviation_shrunk": -0.004192139857637851,
+    "prior_dropbacks": 602,
+    "prior_interceptions": 9,
+    "prior_rate": 0.014950166112956811,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Ryan Tannehill",
+    "next_dropbacks": 636,
+    "next_interceptions": 12,
+    "next_rate": 0.018867924528301886,
+    "player_id": "00-0029701",
+    "prior_deviation_raw": 0.0013940192457003037,
+    "prior_deviation_shrunk": 0.0006101430619837069,
+    "prior_dropbacks": 646,
+    "prior_interceptions": 17,
+    "prior_rate": 0.02631578947368421,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Mike Glennon",
+    "next_dropbacks": 219,
+    "next_interceptions": 6,
+    "next_rate": 0.0273972602739726,
+    "player_id": "00-0030520",
+    "prior_deviation_raw": -0.005184928122720749,
+    "prior_deviation_shrunk": -0.0018385939883074458,
+    "prior_dropbacks": 456,
+    "prior_interceptions": 9,
+    "prior_rate": 0.019736842105263157,
+    "seasons": [
+     2013,
+     2014
+    ]
+   },
+   {
+    "name": "Geno Smith",
+    "next_dropbacks": 395,
+    "next_interceptions": 13,
+    "next_rate": 0.03291139240506329,
+    "player_id": "00-0030565",
+    "prior_deviation_raw": 0.01828810631522597,
+    "prior_deviation_shrunk": 0.006754106447117186,
+    "prior_dropbacks": 486,
+    "prior_interceptions": 21,
+    "prior_rate": 0.043209876543209874,
+    "seasons": [
+     2013,
+     2014
+    ]
+   }
+  ]
+ },
+ "preregistered": {
+  "dropbacks": "pass attempts + sacks suffered; two-point tries excluded; spikes counted as attempts (the production evidence file's definition)",
+  "fit": "weighted least squares with intercept; prior N(0, 1.0^2) on the slope; leave-one-pair-out skill = 1 - (rmse / null rmse)^2, null = the weighted league mean of the other pairs",
+  "interceptions": "passing_interceptions (stats file); play-by-play: interception == 1 on the passer's pass plays, two-point tries excluded",
+  "keep_rule": "a term has skill only when the leave-one-pair-out skill is positive and the slope is positive",
+  "outcome": "season t+1 raw interception rate; weight: t+1 dropbacks",
+  "pairs": {
+   "pooled": "both pre-divergence pairs",
+   "post_divergence_population_only": [
+    "2012->2013",
+    "2013->2014"
+   ],
+   "pre_divergence": [
+    "2010->2011",
+    "2011->2012"
+   ]
+  },
+  "predictors": {
+   "raw": "season-t raw rate minus the season-t league mean (dropback-weighted mean over qualifiers)",
+   "shrunk": "season-t shrunk rate minus the season-t league mean, shrunk = (n x raw + k x mean) / (n + k)"
+  },
+  "qualifier": "200 dropbacks in each season of a pair",
+  "reliability": "k = p(1-p) / signal variance, signal variance = dropback-weighted variance of qualifier rates minus the dropback-weighted mean binomial variance p(1-p)/n, p the league mean; a non-positive signal variance means no measurable spread beyond the binomial draw (k infinite)",
+  "verification": "every count recomputed from the play-by-play file by gsis id; counts must be exact",
+  "written_before_first_run": "2026-10-02"
+ },
+ "reliability_pre_divergence": {
+  "2010": {
+   "k": 740.0411413273002,
+   "league_mean": 0.026100209563726422,
+   "mean_binomial_variance": 5.488319128922993e-05,
+   "mean_dropbacks": 463.1470588235294,
+   "observed_variance": 8.92312662879601e-05,
+   "qualifiers": 34,
+   "reliability_at_mean_dropbacks": 0.38493317900347596,
+   "signal_sd": 0.005860723078147455,
+   "signal_variance": 3.434807499873018e-05
+  },
+  "2010_2012_pooled_deviations": {
+   "k": 1584.8520564899932,
+   "league_mean": 0.025482656253113106,
+   "mean_binomial_variance": 5.2941006987780065e-05,
+   "observed_variance": 6.861016069945055e-05,
+   "qualifier_seasons": 107,
+   "signal_sd": 0.0039584281870043425,
+   "signal_variance": 1.566915371167049e-05
+  },
+  "2011": {
+   "k": 1265.7720316828822,
+   "league_mean": 0.026301269082214456,
+   "mean_binomial_variance": 5.4952665774065264e-05,
+   "mean_dropbacks": 466.0285714285714,
+   "observed_variance": 7.518499172681268e-05,
+   "qualifiers": 35,
+   "reliability_at_mean_dropbacks": 0.26910059425506455,
+   "signal_sd": 0.004498035788291087,
+   "signal_variance": 2.0232325952747417e-05
+  },
+  "2012": {
+   "k": null,
+   "league_mean": 0.02421000386036508,
+   "mean_binomial_variance": 4.95068341582173e-05,
+   "mean_dropbacks": 477.1842105263158,
+   "observed_variance": 4.4788254859845134e-05,
+   "qualifiers": 38,
+   "reliability_at_mean_dropbacks": 0.0,
+   "signal_sd": 0.0,
+   "signal_variance": -4.718579298372169e-06
+  }
+ },
+ "results": {
+  "2010->2011": {
+   "excluded_player_ids": [],
+   "next_rate_by_prior_tercile": {
+    "highest_third": {
+     "next_weighted_mean": 0.029641185647425898,
+     "pairs": 7,
+     "prior_weighted_mean": 0.03589068159367797
+    },
+    "lowest_third": {
+     "next_weighted_mean": 0.027324027324027323,
+     "pairs": 7,
+     "prior_weighted_mean": 0.013337199188170484
+    },
+    "middle_third": {
+     "next_weighted_mean": 0.020481418918918918,
+     "pairs": 9,
+     "prior_weighted_mean": 0.02430630243063024
+    }
+   },
+   "pairs": 23,
+   "population": "pre-divergence",
+   "raw": {
+    "correlation_unweighted": 0.008172343377060368,
+    "intercept": 0.02513903930400167,
+    "keep": false,
+    "loo": {
+     "null_rmse": 0.009217821462888208,
+     "rmse": 0.009490103210654317,
+     "skill": -0.059949775063156574
+    },
+    "prior_sd": 1.0,
+    "r2": 0.0003485567852359317,
+    "se": 0.18876657942581052,
+    "shrunk_sd": 0.1854907269811519,
+    "shrunk_slope": 0.015597012487583939,
+    "slope": 0.016152778049613948
+   },
+   "season_t_reliability": {
+    "k": 740.0411413273002,
+    "league_mean": 0.026100209563726422,
+    "mean_binomial_variance": 5.488319128922993e-05,
+    "mean_dropbacks": 463.1470588235294,
+    "observed_variance": 8.92312662879601e-05,
+    "qualifiers": 34,
+    "reliability_at_mean_dropbacks": 0.38493317900347596,
+    "signal_sd": 0.005860723078147455,
+    "signal_variance": 3.434807499873018e-05
+   },
+   "shrunk": {
+    "correlation_unweighted": 0.03666815342573554,
+    "intercept": 0.02518499925895235,
+    "keep": false,
+    "loo": {
+     "null_rmse": 0.009217821462888208,
+     "rmse": 0.009495023180558062,
+     "skill": -0.061049082977320035
+    },
+    "prior_sd": 1.0,
+    "r2": 0.0019682228384945155,
+    "se": 0.47594996381405846,
+    "shrunk_sd": 0.42975654494637167,
+    "shrunk_slope": 0.07896930155726524,
+    "slope": 0.0968580885654444
+   },
+   "verdict": "no predictor with positive leave-one-pair-out skill and a positive slope"
+  },
+  "2011->2012": {
+   "excluded_player_ids": [],
+   "next_rate_by_prior_tercile": {
+    "highest_third": {
+     "next_weighted_mean": 0.029432878679109833,
+     "pairs": 9,
+     "prior_weighted_mean": 0.036645351696999506
+    },
+    "lowest_third": {
+     "next_weighted_mean": 0.02170122069366402,
+     "pairs": 9,
+     "prior_weighted_mean": 0.017176833296630698
+    },
+    "middle_third": {
+     "next_weighted_mean": 0.0219256434699714,
+     "pairs": 9,
+     "prior_weighted_mean": 0.025108943764266447
+    }
+   },
+   "pairs": 27,
+   "population": "pre-divergence",
+   "raw": {
+    "correlation_unweighted": 0.5141052699624244,
+    "intercept": 0.024258704408371582,
+    "keep": true,
+    "loo": {
+     "null_rmse": 0.00743291187045989,
+     "rmse": 0.006692751126318758,
+     "skill": 0.18924173517144416
+    },
+    "prior_sd": 1.0,
+    "r2": 0.22404358078633768,
+    "se": 0.1246033570857496,
+    "shrunk_sd": 0.12364718132785599,
+    "shrunk_slope": 0.3296524362427492,
+    "slope": 0.3347706188460597
+   },
+   "season_t_reliability": {
+    "k": 1265.7720316828822,
+    "league_mean": 0.026301269082214456,
+    "mean_binomial_variance": 5.4952665774065264e-05,
+    "mean_dropbacks": 466.0285714285714,
+    "observed_variance": 7.518499172681268e-05,
+    "qualifiers": 35,
+    "reliability_at_mean_dropbacks": 0.26910059425506455,
+    "signal_sd": 0.004498035788291087,
+    "signal_variance": 2.0232325952747417e-05
+   },
+   "shrunk": {
+    "correlation_unweighted": 0.5160478925071248,
+    "intercept": 0.024445056477505233,
+    "keep": true,
+    "loo": {
+     "null_rmse": 0.00743291187045989,
+     "rmse": 0.006594120901433433,
+     "skill": 0.21296174192692285
+    },
+    "prior_sd": 1.0,
+    "r2": 0.25183421455163757,
+    "se": 0.4610976175428476,
+    "shrunk_sd": 0.4187281170421796,
+    "shrunk_slope": 1.103061735618207,
+    "slope": 1.3375848085232966
+   },
+   "verdict": "term with skill: shrunk"
+  },
+  "2012->2013": {
+   "excluded_player_ids": [],
+   "next_rate_by_prior_tercile": {
+    "highest_third": {
+     "next_weighted_mean": 0.02898886827458256,
+     "pairs": 9,
+     "prior_weighted_mean": 0.02961858086511826
+    },
+    "lowest_third": {
+     "next_weighted_mean": 0.01922675026123302,
+     "pairs": 9,
+     "prior_weighted_mean": 0.015365853658536585
+    },
+    "middle_third": {
+     "next_weighted_mean": 0.02536997885835095,
+     "pairs": 11,
+     "prior_weighted_mean": 0.023540489642184557
+    }
+   },
+   "pairs": 29,
+   "population": "post-divergence league population, information only",
+   "raw": {
+    "correlation_unweighted": 0.40101863037743185,
+    "intercept": 0.025094743203330033,
+    "keep": true,
+    "loo": {
+     "null_rmse": 0.009189863627480218,
+     "rmse": 0.008597347445727904,
+     "skill": 0.12479291825702532
+    },
+    "prior_sd": 1.0,
+    "r2": 0.11967414427713241,
+    "se": 0.25737015308883243,
+    "shrunk_sd": 0.2492475042850514,
+    "shrunk_slope": 0.4624489254452884,
+    "slope": 0.4930812628093468
+   },
+   "season_t_reliability": {
+    "k": null,
+    "league_mean": 0.02421000386036508,
+    "mean_binomial_variance": 4.95068341582173e-05,
+    "mean_dropbacks": 477.1842105263158,
+    "observed_variance": 4.4788254859845134e-05,
+    "qualifiers": 38,
+    "reliability_at_mean_dropbacks": 0.0,
+    "signal_sd": 0.0,
+    "signal_variance": -4.718579298372169e-06
+   },
+   "shrunk": {
+    "correlation_unweighted": 0.0,
+    "intercept": 0.024436471942056462,
+    "keep": false,
+    "loo": {
+     "null_rmse": 0.009189863627480218,
+     "rmse": 0.009189863627480218,
+     "skill": 0.0
+    },
+    "prior_sd": 1.0,
+    "r2": 0.0,
+    "se": Infinity,
+    "shrunk_sd": NaN,
+    "shrunk_slope": 0.0,
+    "slope": 0.0
+   },
+   "verdict": "term with skill: raw"
+  },
+  "2013->2014": {
+   "excluded_player_ids": [],
+   "next_rate_by_prior_tercile": {
+    "highest_third": {
+     "next_weighted_mean": 0.024801840961390948,
+     "pairs": 8,
+     "prior_weighted_mean": 0.035485347985347984
+    },
+    "lowest_third": {
+     "next_weighted_mean": 0.022835394862036156,
+     "pairs": 8,
+     "prior_weighted_mean": 0.01431540060032325
+    },
+    "middle_third": {
+     "next_weighted_mean": 0.019542045005921833,
+     "pairs": 10,
+     "prior_weighted_mean": 0.0222052067381317
+    }
+   },
+   "pairs": 26,
+   "population": "post-divergence league population, information only",
+   "raw": {
+    "correlation_unweighted": -0.02237143533575199,
+    "intercept": 0.022231820778585563,
+    "keep": false,
+    "loo": {
+     "null_rmse": 0.007537053588006928,
+     "rmse": 0.008024804602990413,
+     "skill": -0.13361537321154415
+    },
+    "prior_sd": 1.0,
+    "r2": 0.004898204508361759,
+    "se": 0.14793816466310553,
+    "shrunk_sd": 0.14634539644527544,
+    "shrunk_slope": 0.04975860855057889,
+    "slope": 0.050847610557792584
+   },
+   "season_t_reliability": {
+    "k": 829.9430842244781,
+    "league_mean": 0.024921770227983905,
+    "mean_binomial_variance": 5.295744011347851e-05,
+    "mean_dropbacks": 458.87179487179486,
+    "observed_variance": 8.223737033832605e-05,
+    "qualifiers": 39,
+    "reliability_at_mean_dropbacks": 0.3560416645667214,
+    "signal_sd": 0.005411093255974021,
+    "signal_variance": 2.9279930224847538e-05
+   },
+   "shrunk": {
+    "correlation_unweighted": 0.051562321984045666,
+    "intercept": 0.022269209030692436,
+    "keep": false,
+    "loo": {
+     "null_rmse": 0.007537053588006928,
+     "rmse": 0.007831373889984327,
+     "skill": -0.07962445014793929
+    },
+    "prior_sd": 1.0,
+    "r2": 0.014687747994537648,
+    "se": 0.3884251074300839,
+    "shrunk_sd": 0.36207070949768105,
+    "shrunk_slope": 0.20187185654310585,
+    "slope": 0.2323290839635573
+   },
+   "verdict": "no predictor with positive leave-one-pair-out skill and a positive slope"
+  },
+  "pooled_2010_2012": {
+   "next_rate_by_prior_tercile": {
+    "highest_third": {
+     "next_weighted_mean": 0.02703047303327808,
+     "pairs": 16,
+     "prior_weighted_mean": 0.03644519203812728
+    },
+    "lowest_third": {
+     "next_weighted_mean": 0.022934109938114306,
+     "pairs": 16,
+     "prior_weighted_mean": 0.015424481737413624
+    },
+    "middle_third": {
+     "next_weighted_mean": 0.023972602739726026,
+     "pairs": 18,
+     "prior_weighted_mean": 0.024777432157030998
+    }
+   },
+   "pairs": 50,
+   "population": "pre-divergence, both pairs pooled",
+   "raw": {
+    "correlation_unweighted": 0.24499384107617345,
+    "intercept": 0.024739227255001477,
+    "keep": true,
+    "loo": {
+     "null_rmse": 0.008156660914784319,
+     "rmse": 0.008042307087016991,
+     "skill": 0.027842821113685856
+    },
+    "prior_sd": 1.0,
+    "r2": 0.04799369187980462,
+    "se": 0.11120055893508368,
+    "shrunk_sd": 0.1105193413633339,
+    "shrunk_slope": 0.17086865117108083,
+    "slope": 0.17298153846526831
+   },
+   "shrunk": {
+    "correlation_unweighted": 0.2104315432646605,
+    "intercept": 0.02480341562182619,
+    "keep": true,
+    "loo": {
+     "null_rmse": 0.008156660914784319,
+     "rmse": 0.008111038246118642,
+     "skill": 0.011155319181865075
+    },
+    "prior_sd": 1.0,
+    "r2": 0.04036903737486042,
+    "se": 0.33118474262864567,
+    "shrunk_sd": 0.31439149531081806,
+    "shrunk_slope": 0.424095776076471,
+    "slope": 0.4706120146258328
+   },
+   "verdict": "term with skill: raw"
+  }
+ },
+ "schema_version": 1,
+ "seasons": {
+  "2010": {
+   "qualifiers": 34,
+   "reliability": {
+    "k": 740.0411413273002,
+    "league_mean": 0.026100209563726422,
+    "mean_binomial_variance": 5.488319128922993e-05,
+    "mean_dropbacks": 463.1470588235294,
+    "observed_variance": 8.92312662879601e-05,
+    "qualifiers": 34,
+    "reliability_at_mean_dropbacks": 0.38493317900347596,
+    "signal_sd": 0.005860723078147455,
+    "signal_variance": 3.434807499873018e-05
+   },
+   "rows": [
+    {
+     "attempts": 475,
+     "club": "GB",
+     "dropbacks": 506,
+     "interceptions": 11,
+     "name": "Aaron Rodgers",
+     "player_id": "00-0023459",
+     "position": "QB",
+     "rate": 0.021739130434782608,
+     "sacks": 31,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       475,
+       475
+      ],
+      "interceptions": [
+       11,
+       11
+      ],
+      "sacks": [
+       31,
+       31
+      ]
+     }
+    },
+    {
+     "attempts": 342,
+     "club": "SF",
+     "dropbacks": 367,
+     "interceptions": 10,
+     "name": "Alex Smith",
+     "player_id": "00-0023436",
+     "position": "QB",
+     "rate": 0.027247956403269755,
+     "sacks": 25,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       342,
+       342
+      ],
+      "interceptions": [
+       10,
+       10
+      ],
+      "sacks": [
+       25,
+       25
+      ]
+     }
+    },
+    {
+     "attempts": 389,
+     "club": "PIT",
+     "dropbacks": 421,
+     "interceptions": 5,
+     "name": "Ben Roethlisberger",
+     "player_id": "00-0022924",
+     "position": "QB",
+     "rate": 0.011876484560570071,
+     "sacks": 32,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       389,
+       389
+      ],
+      "interceptions": [
+       5,
+       5
+      ],
+      "sacks": [
+       32,
+       32
+      ]
+     }
+    },
+    {
+     "attempts": 358,
+     "club": "MIN",
+     "dropbacks": 380,
+     "interceptions": 19,
+     "name": "Brett Favre",
+     "player_id": "00-0005106",
+     "position": "QB",
+     "rate": 0.05,
+     "sacks": 22,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       358,
+       358
+      ],
+      "interceptions": [
+       19,
+       19
+      ],
+      "sacks": [
+       22,
+       22
+      ]
+     }
+    },
+    {
+     "attempts": 586,
+     "club": "CIN",
+     "dropbacks": 612,
+     "interceptions": 20,
+     "name": "Carson Palmer",
+     "player_id": "00-0021429",
+     "position": "QB",
+     "rate": 0.032679738562091505,
+     "sacks": 26,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       586,
+       586
+      ],
+      "interceptions": [
+       20,
+       20
+      ],
+      "sacks": [
+       26,
+       26
+      ]
+     }
+    },
+    {
+     "attempts": 491,
+     "club": "MIA",
+     "dropbacks": 521,
+     "interceptions": 18,
+     "name": "Chad Henne",
+     "player_id": "00-0026197",
+     "position": "QB",
+     "rate": 0.0345489443378119,
+     "sacks": 30,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       491,
+       491
+      ],
+      "interceptions": [
+       18,
+       18
+      ],
+      "sacks": [
+       30,
+       30
+      ]
+     }
+    },
+    {
+     "attempts": 222,
+     "club": "CLE",
+     "dropbacks": 245,
+     "interceptions": 9,
+     "name": "Colt McCoy",
+     "player_id": "00-0027688",
+     "position": "QB",
+     "rate": 0.036734693877551024,
+     "sacks": 23,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       222,
+       222
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       23,
+       23
+      ]
+     }
+    },
+    {
+     "attempts": 366,
+     "club": "JAX",
+     "dropbacks": 398,
+     "interceptions": 15,
+     "name": "David Garrard",
+     "player_id": "00-0021231",
+     "position": "QB",
+     "rate": 0.03768844221105527,
+     "sacks": 32,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       366,
+       366
+      ],
+      "interceptions": [
+       15,
+       15
+      ],
+      "sacks": [
+       32,
+       32
+      ]
+     }
+    },
+    {
+     "attempts": 327,
+     "club": "ARI",
+     "dropbacks": 352,
+     "interceptions": 10,
+     "name": "Derek Anderson",
+     "player_id": "00-0023645",
+     "position": "QB",
+     "rate": 0.028409090909090908,
+     "sacks": 25,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       327,
+       327
+      ],
+      "interceptions": [
+       10,
+       10
+      ],
+      "sacks": [
+       25,
+       25
+      ]
+     }
+    },
+    {
+     "attempts": 472,
+     "club": "WAS",
+     "dropbacks": 509,
+     "interceptions": 15,
+     "name": "Donovan McNabb",
+     "player_id": "00-0011022",
+     "position": "QB",
+     "rate": 0.029469548133595286,
+     "sacks": 37,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       472,
+       472
+      ],
+      "interceptions": [
+       15,
+       15
+      ],
+      "sacks": [
+       37,
+       37
+      ]
+     }
+    },
+    {
+     "attempts": 658,
+     "club": "NO",
+     "dropbacks": 684,
+     "interceptions": 22,
+     "name": "Drew Brees",
+     "player_id": "00-0020531",
+     "position": "QB",
+     "rate": 0.03216374269005848,
+     "sacks": 26,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       658,
+       658
+      ],
+      "interceptions": [
+       22,
+       22
+      ],
+      "sacks": [
+       26,
+       26
+      ]
+     }
+    },
+    {
+     "attempts": 539,
+     "club": "NYG",
+     "dropbacks": 555,
+     "interceptions": 25,
+     "name": "Eli Manning",
+     "player_id": "00-0022803",
+     "position": "QB",
+     "rate": 0.04504504504504504,
+     "sacks": 16,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       539,
+       539
+      ],
+      "interceptions": [
+       25,
+       25
+      ],
+      "sacks": [
+       16,
+       16
+      ]
+     }
+    },
+    {
+     "attempts": 329,
+     "club": "LV",
+     "dropbacks": 362,
+     "interceptions": 8,
+     "name": "Jason Campbell",
+     "player_id": "00-0023460",
+     "position": "QB",
+     "rate": 0.022099447513812154,
+     "sacks": 33,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       329,
+       329
+      ],
+      "interceptions": [
+       8,
+       8
+      ],
+      "sacks": [
+       33,
+       33
+      ]
+     }
+    },
+    {
+     "attempts": 432,
+     "club": "CHI",
+     "dropbacks": 484,
+     "interceptions": 16,
+     "name": "Jay Cutler",
+     "player_id": "00-0024226",
+     "position": "QB",
+     "rate": 0.03305785123966942,
+     "sacks": 52,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       432,
+       432
+      ],
+      "interceptions": [
+       16,
+       16
+      ],
+      "sacks": [
+       52,
+       52
+      ]
+     }
+    },
+    {
+     "attempts": 299,
+     "club": "CAR",
+     "dropbacks": 332,
+     "interceptions": 9,
+     "name": "Jimmy Clausen",
+     "player_id": "00-0027659",
+     "position": "QB",
+     "rate": 0.02710843373493976,
+     "sacks": 33,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       299,
+       299
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       33,
+       33
+      ]
+     }
+    },
+    {
+     "attempts": 489,
+     "club": "BAL",
+     "dropbacks": 529,
+     "interceptions": 10,
+     "name": "Joe Flacco",
+     "player_id": "00-0026158",
+     "position": "QB",
+     "rate": 0.01890359168241966,
+     "sacks": 40,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       489,
+       489
+      ],
+      "interceptions": [
+       10,
+       10
+      ],
+      "sacks": [
+       40,
+       40
+      ]
+     }
+    },
+    {
+     "attempts": 318,
+     "club": "DAL",
+     "dropbacks": 339,
+     "interceptions": 12,
+     "name": "Jon Kitna",
+     "player_id": "00-0009311",
+     "position": "QB",
+     "rate": 0.035398230088495575,
+     "sacks": 21,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       318,
+       318
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       21,
+       21
+      ]
+     }
+    },
+    {
+     "attempts": 474,
+     "club": "TB",
+     "dropbacks": 502,
+     "interceptions": 6,
+     "name": "Josh Freeman",
+     "player_id": "00-0026993",
+     "position": "QB",
+     "rate": 0.01195219123505976,
+     "sacks": 28,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       474,
+       474
+      ],
+      "interceptions": [
+       6,
+       6
+      ],
+      "sacks": [
+       28,
+       28
+      ]
+     }
+    },
+    {
+     "attempts": 278,
+     "club": "TEN",
+     "dropbacks": 291,
+     "interceptions": 8,
+     "name": "Kerry Collins",
+     "player_id": "00-0003292",
+     "position": "QB",
+     "rate": 0.027491408934707903,
+     "sacks": 13,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       278,
+       278
+      ],
+      "interceptions": [
+       8,
+       8
+      ],
+      "sacks": [
+       13,
+       13
+      ]
+     }
+    },
+    {
+     "attempts": 189,
+     "club": "PHI",
+     "dropbacks": 203,
+     "interceptions": 7,
+     "name": "Kevin Kolb",
+     "player_id": "00-0025423",
+     "position": "QB",
+     "rate": 0.034482758620689655,
+     "sacks": 14,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       189,
+       189
+      ],
+      "interceptions": [
+       7,
+       7
+      ],
+      "sacks": [
+       14,
+       14
+      ]
+     }
+    },
+    {
+     "attempts": 498,
+     "club": "DEN",
+     "dropbacks": 532,
+     "interceptions": 9,
+     "name": "Kyle Orton",
+     "player_id": "00-0023541",
+     "position": "QB",
+     "rate": 0.016917293233082706,
+     "sacks": 34,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       498,
+       498
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       34,
+       34
+      ]
+     }
+    },
+    {
+     "attempts": 507,
+     "club": "NYJ",
+     "dropbacks": 534,
+     "interceptions": 13,
+     "name": "Mark Sanchez",
+     "player_id": "00-0026898",
+     "position": "QB",
+     "rate": 0.024344569288389514,
+     "sacks": 27,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       507,
+       507
+      ],
+      "interceptions": [
+       13,
+       13
+      ],
+      "sacks": [
+       27,
+       27
+      ]
+     }
+    },
+    {
+     "attempts": 450,
+     "club": "KC",
+     "dropbacks": 476,
+     "interceptions": 7,
+     "name": "Matt Cassel",
+     "player_id": "00-0023662",
+     "position": "QB",
+     "rate": 0.014705882352941176,
+     "sacks": 26,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       450,
+       450
+      ],
+      "interceptions": [
+       7,
+       7
+      ],
+      "sacks": [
+       26,
+       26
+      ]
+     }
+    },
+    {
+     "attempts": 444,
+     "club": "SEA",
+     "dropbacks": 473,
+     "interceptions": 17,
+     "name": "Matt Hasselbeck",
+     "player_id": "00-0007091",
+     "position": "QB",
+     "rate": 0.035940803382663845,
+     "sacks": 29,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       444,
+       444
+      ],
+      "interceptions": [
+       17,
+       17
+      ],
+      "sacks": [
+       29,
+       29
+      ]
+     }
+    },
+    {
+     "attempts": 571,
+     "club": "ATL",
+     "dropbacks": 594,
+     "interceptions": 9,
+     "name": "Matt Ryan",
+     "player_id": "00-0026143",
+     "position": "QB",
+     "rate": 0.015151515151515152,
+     "sacks": 23,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       571,
+       571
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       23,
+       23
+      ]
+     }
+    },
+    {
+     "attempts": 574,
+     "club": "HOU",
+     "dropbacks": 606,
+     "interceptions": 12,
+     "name": "Matt Schaub",
+     "player_id": "00-0022787",
+     "position": "QB",
+     "rate": 0.019801980198019802,
+     "sacks": 32,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       574,
+       574
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       32,
+       32
+      ]
+     }
+    },
+    {
+     "attempts": 372,
+     "club": "PHI",
+     "dropbacks": 407,
+     "interceptions": 6,
+     "name": "Mike Vick",
+     "player_id": "00-0020245",
+     "position": "QB",
+     "rate": 0.014742014742014743,
+     "sacks": 35,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       372,
+       372
+      ],
+      "interceptions": [
+       6,
+       6
+      ],
+      "sacks": [
+       35,
+       35
+      ]
+     }
+    },
+    {
+     "attempts": 679,
+     "club": "IND",
+     "dropbacks": 695,
+     "interceptions": 17,
+     "name": "Peyton Manning",
+     "player_id": "00-0010346",
+     "position": "QB",
+     "rate": 0.02446043165467626,
+     "sacks": 16,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       679,
+       679
+      ],
+      "interceptions": [
+       17,
+       17
+      ],
+      "sacks": [
+       16,
+       16
+      ]
+     }
+    },
+    {
+     "attempts": 541,
+     "club": "LAC",
+     "dropbacks": 579,
+     "interceptions": 13,
+     "name": "Philip Rivers",
+     "player_id": "00-0022942",
+     "position": "QB",
+     "rate": 0.022452504317789293,
+     "sacks": 38,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       541,
+       541
+      ],
+      "interceptions": [
+       13,
+       13
+      ],
+      "sacks": [
+       38,
+       38
+      ]
+     }
+    },
+    {
+     "attempts": 441,
+     "club": "BUF",
+     "dropbacks": 465,
+     "interceptions": 15,
+     "name": "Ryan Fitzpatrick",
+     "player_id": "00-0023682",
+     "position": "QB",
+     "rate": 0.03225806451612903,
+     "sacks": 24,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       441,
+       441
+      ],
+      "interceptions": [
+       15,
+       15
+      ],
+      "sacks": [
+       24,
+       24
+      ]
+     }
+    },
+    {
+     "attempts": 590,
+     "club": "LA",
+     "dropbacks": 624,
+     "interceptions": 15,
+     "name": "Sam Bradford",
+     "player_id": "00-0027854",
+     "position": "QB",
+     "rate": 0.02403846153846154,
+     "sacks": 34,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       590,
+       590
+      ],
+      "interceptions": [
+       15,
+       15
+      ],
+      "sacks": [
+       34,
+       34
+      ]
+     }
+    },
+    {
+     "attempts": 416,
+     "club": "DET",
+     "dropbacks": 433,
+     "interceptions": 12,
+     "name": "Shaun Hill",
+     "player_id": "00-0020679",
+     "position": "QB",
+     "rate": 0.02771362586605081,
+     "sacks": 17,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       416,
+       416
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       17,
+       17
+      ]
+     }
+    },
+    {
+     "attempts": 492,
+     "club": "NE",
+     "dropbacks": 517,
+     "interceptions": 4,
+     "name": "Tom Brady",
+     "player_id": "00-0019596",
+     "position": "QB",
+     "rate": 0.007736943907156673,
+     "sacks": 25,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       492,
+       492
+      ],
+      "interceptions": [
+       4,
+       4
+      ],
+      "sacks": [
+       25,
+       25
+      ]
+     }
+    },
+    {
+     "attempts": 213,
+     "club": "DAL",
+     "dropbacks": 220,
+     "interceptions": 7,
+     "name": "Tony Romo",
+     "player_id": "00-0021678",
+     "position": "QB",
+     "rate": 0.031818181818181815,
+     "sacks": 7,
+     "season": 2010,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       213,
+       213
+      ],
+      "interceptions": [
+       7,
+       7
+      ],
+      "sacks": [
+       7,
+       7
+      ]
+     }
+    }
+   ],
+   "verification": {
+    "admissible_pre_divergence": true,
+    "confirmed": 34,
+    "corrected": 0,
+    "last_regular_season_game": "2011-01-02",
+    "play_by_play_only_qualifiers": []
+   }
+  },
+  "2011": {
+   "qualifiers": 35,
+   "reliability": {
+    "k": 1265.7720316828822,
+    "league_mean": 0.026301269082214456,
+    "mean_binomial_variance": 5.4952665774065264e-05,
+    "mean_dropbacks": 466.0285714285714,
+    "observed_variance": 7.518499172681268e-05,
+    "qualifiers": 35,
+    "reliability_at_mean_dropbacks": 0.26910059425506455,
+    "signal_sd": 0.004498035788291087,
+    "signal_variance": 2.0232325952747417e-05
+   },
+   "rows": [
+    {
+     "attempts": 501,
+     "club": "GB",
+     "dropbacks": 537,
+     "interceptions": 6,
+     "name": "Aaron Rodgers",
+     "player_id": "00-0023459",
+     "position": "QB",
+     "rate": 0.0111731843575419,
+     "sacks": 36,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       501,
+       501
+      ],
+      "interceptions": [
+       6,
+       6
+      ],
+      "sacks": [
+       36,
+       36
+      ]
+     }
+    },
+    {
+     "attempts": 445,
+     "club": "SF",
+     "dropbacks": 489,
+     "interceptions": 5,
+     "name": "Alex Smith",
+     "player_id": "00-0023436",
+     "position": "QB",
+     "rate": 0.010224948875255624,
+     "sacks": 44,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       445,
+       445
+      ],
+      "interceptions": [
+       5,
+       5
+      ],
+      "sacks": [
+       44,
+       44
+      ]
+     }
+    },
+    {
+     "attempts": 516,
+     "club": "CIN",
+     "dropbacks": 540,
+     "interceptions": 13,
+     "name": "Andy Dalton",
+     "player_id": "00-0027973",
+     "position": "QB",
+     "rate": 0.024074074074074074,
+     "sacks": 24,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       516,
+       516
+      ],
+      "interceptions": [
+       13,
+       13
+      ],
+      "sacks": [
+       24,
+       24
+      ]
+     }
+    },
+    {
+     "attempts": 513,
+     "club": "PIT",
+     "dropbacks": 553,
+     "interceptions": 14,
+     "name": "Ben Roethlisberger",
+     "player_id": "00-0022924",
+     "position": "QB",
+     "rate": 0.02531645569620253,
+     "sacks": 40,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       513,
+       513
+      ],
+      "interceptions": [
+       14,
+       14
+      ],
+      "sacks": [
+       40,
+       40
+      ]
+     }
+    },
+    {
+     "attempts": 413,
+     "club": "JAX",
+     "dropbacks": 453,
+     "interceptions": 11,
+     "name": "Blaine Gabbert",
+     "player_id": "00-0027948",
+     "position": "QB",
+     "rate": 0.024282560706401765,
+     "sacks": 40,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       413,
+       413
+      ],
+      "interceptions": [
+       11,
+       11
+      ],
+      "sacks": [
+       40,
+       40
+      ]
+     }
+    },
+    {
+     "attempts": 517,
+     "club": "CAR",
+     "dropbacks": 552,
+     "interceptions": 17,
+     "name": "Cam Newton",
+     "player_id": "00-0027939",
+     "position": "QB",
+     "rate": 0.030797101449275364,
+     "sacks": 35,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       517,
+       517
+      ],
+      "interceptions": [
+       17,
+       17
+      ],
+      "sacks": [
+       35,
+       35
+      ]
+     }
+    },
+    {
+     "attempts": 328,
+     "club": "LV",
+     "dropbacks": 345,
+     "interceptions": 16,
+     "name": "Carson Palmer",
+     "player_id": "00-0021429",
+     "position": "QB",
+     "rate": 0.0463768115942029,
+     "sacks": 17,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       328,
+       328
+      ],
+      "interceptions": [
+       16,
+       16
+      ],
+      "sacks": [
+       17,
+       17
+      ]
+     }
+    },
+    {
+     "attempts": 291,
+     "club": "MIN",
+     "dropbacks": 321,
+     "interceptions": 13,
+     "name": "Christian Ponder",
+     "player_id": "00-0027950",
+     "position": "QB",
+     "rate": 0.040498442367601244,
+     "sacks": 30,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       291,
+       291
+      ],
+      "interceptions": [
+       13,
+       13
+      ],
+      "sacks": [
+       30,
+       30
+      ]
+     }
+    },
+    {
+     "attempts": 463,
+     "club": "CLE",
+     "dropbacks": 495,
+     "interceptions": 11,
+     "name": "Colt McCoy",
+     "player_id": "00-0027688",
+     "position": "QB",
+     "rate": 0.022222222222222223,
+     "sacks": 32,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       463,
+       463
+      ],
+      "interceptions": [
+       11,
+       11
+      ],
+      "sacks": [
+       32,
+       32
+      ]
+     }
+    },
+    {
+     "attempts": 243,
+     "club": "IND",
+     "dropbacks": 259,
+     "interceptions": 9,
+     "name": "Curtis Painter",
+     "player_id": "00-0027134",
+     "position": "QB",
+     "rate": 0.03474903474903475,
+     "sacks": 16,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       243,
+       243
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       16,
+       16
+      ]
+     }
+    },
+    {
+     "attempts": 193,
+     "club": "IND",
+     "dropbacks": 207,
+     "interceptions": 4,
+     "name": "Dan Orlovsky",
+     "player_id": "00-0023578",
+     "position": "QB",
+     "rate": 0.01932367149758454,
+     "sacks": 14,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       193,
+       193
+      ],
+      "interceptions": [
+       4,
+       4
+      ],
+      "sacks": [
+       14,
+       14
+      ]
+     }
+    },
+    {
+     "attempts": 660,
+     "club": "NO",
+     "dropbacks": 684,
+     "interceptions": 14,
+     "name": "Drew Brees",
+     "player_id": "00-0020531",
+     "position": "QB",
+     "rate": 0.02046783625730994,
+     "sacks": 24,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       660,
+       660
+      ],
+      "interceptions": [
+       14,
+       14
+      ],
+      "sacks": [
+       24,
+       24
+      ]
+     }
+    },
+    {
+     "attempts": 589,
+     "club": "NYG",
+     "dropbacks": 617,
+     "interceptions": 16,
+     "name": "Eli Manning",
+     "player_id": "00-0022803",
+     "position": "QB",
+     "rate": 0.02593192868719611,
+     "sacks": 28,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       589,
+       589
+      ],
+      "interceptions": [
+       16,
+       16
+      ],
+      "sacks": [
+       28,
+       28
+      ]
+     }
+    },
+    {
+     "attempts": 314,
+     "club": "CHI",
+     "dropbacks": 337,
+     "interceptions": 7,
+     "name": "Jay Cutler",
+     "player_id": "00-0024226",
+     "position": "QB",
+     "rate": 0.020771513353115726,
+     "sacks": 23,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       314,
+       314
+      ],
+      "interceptions": [
+       7,
+       7
+      ],
+      "sacks": [
+       23,
+       23
+      ]
+     }
+    },
+    {
+     "attempts": 542,
+     "club": "BAL",
+     "dropbacks": 573,
+     "interceptions": 12,
+     "name": "Joe Flacco",
+     "player_id": "00-0026158",
+     "position": "QB",
+     "rate": 0.020942408376963352,
+     "sacks": 31,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       542,
+       542
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       31,
+       31
+      ]
+     }
+    },
+    {
+     "attempts": 275,
+     "club": "ARI",
+     "dropbacks": 298,
+     "interceptions": 14,
+     "name": "John Skelton",
+     "player_id": "00-0027754",
+     "position": "QB",
+     "rate": 0.04697986577181208,
+     "sacks": 23,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       275,
+       275
+      ],
+      "interceptions": [
+       14,
+       14
+      ],
+      "sacks": [
+       23,
+       23
+      ]
+     }
+    },
+    {
+     "attempts": 551,
+     "club": "TB",
+     "dropbacks": 580,
+     "interceptions": 22,
+     "name": "Josh Freeman",
+     "player_id": "00-0026993",
+     "position": "QB",
+     "rate": 0.03793103448275862,
+     "sacks": 29,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       551,
+       551
+      ],
+      "interceptions": [
+       22,
+       22
+      ],
+      "sacks": [
+       29,
+       29
+      ]
+     }
+    },
+    {
+     "attempts": 253,
+     "club": "ARI",
+     "dropbacks": 283,
+     "interceptions": 8,
+     "name": "Kevin Kolb",
+     "player_id": "00-0025423",
+     "position": "QB",
+     "rate": 0.028268551236749116,
+     "sacks": 30,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       253,
+       253
+      ],
+      "interceptions": [
+       8,
+       8
+      ],
+      "sacks": [
+       30,
+       30
+      ]
+     }
+    },
+    {
+     "attempts": 252,
+     "club": "KC",
+     "dropbacks": 262,
+     "interceptions": 9,
+     "name": "Kyle Orton",
+     "player_id": "00-0023541",
+     "position": "QB",
+     "rate": 0.03435114503816794,
+     "sacks": 10,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       252,
+       252
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       10,
+       10
+      ]
+     }
+    },
+    {
+     "attempts": 543,
+     "club": "NYJ",
+     "dropbacks": 582,
+     "interceptions": 18,
+     "name": "Mark Sanchez",
+     "player_id": "00-0026898",
+     "position": "QB",
+     "rate": 0.030927835051546393,
+     "sacks": 39,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       543,
+       543
+      ],
+      "interceptions": [
+       18,
+       18
+      ],
+      "sacks": [
+       39,
+       39
+      ]
+     }
+    },
+    {
+     "attempts": 269,
+     "club": "KC",
+     "dropbacks": 291,
+     "interceptions": 9,
+     "name": "Matt Cassel",
+     "player_id": "00-0023662",
+     "position": "QB",
+     "rate": 0.030927835051546393,
+     "sacks": 22,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       269,
+       269
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       22,
+       22
+      ]
+     }
+    },
+    {
+     "attempts": 518,
+     "club": "TEN",
+     "dropbacks": 537,
+     "interceptions": 14,
+     "name": "Matt Hasselbeck",
+     "player_id": "00-0007091",
+     "position": "QB",
+     "rate": 0.0260707635009311,
+     "sacks": 19,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       518,
+       518
+      ],
+      "interceptions": [
+       14,
+       14
+      ],
+      "sacks": [
+       19,
+       19
+      ]
+     }
+    },
+    {
+     "attempts": 347,
+     "club": "MIA",
+     "dropbacks": 383,
+     "interceptions": 9,
+     "name": "Matt Moore",
+     "player_id": "00-0025708",
+     "position": "QB",
+     "rate": 0.02349869451697128,
+     "sacks": 36,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       347,
+       347
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       36,
+       36
+      ]
+     }
+    },
+    {
+     "attempts": 566,
+     "club": "ATL",
+     "dropbacks": 592,
+     "interceptions": 12,
+     "name": "Matt Ryan",
+     "player_id": "00-0026143",
+     "position": "QB",
+     "rate": 0.02027027027027027,
+     "sacks": 26,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       566,
+       566
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       26,
+       26
+      ]
+     }
+    },
+    {
+     "attempts": 292,
+     "club": "HOU",
+     "dropbacks": 308,
+     "interceptions": 6,
+     "name": "Matt Schaub",
+     "player_id": "00-0022787",
+     "position": "QB",
+     "rate": 0.01948051948051948,
+     "sacks": 16,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       292,
+       292
+      ],
+      "interceptions": [
+       6,
+       6
+      ],
+      "sacks": [
+       16,
+       16
+      ]
+     }
+    },
+    {
+     "attempts": 673,
+     "club": "DET",
+     "dropbacks": 711,
+     "interceptions": 16,
+     "name": "Matthew Stafford",
+     "player_id": "00-0026498",
+     "position": "QB",
+     "rate": 0.02250351617440225,
+     "sacks": 38,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       673,
+       673
+      ],
+      "interceptions": [
+       16,
+       16
+      ],
+      "sacks": [
+       38,
+       38
+      ]
+     }
+    },
+    {
+     "attempts": 423,
+     "club": "PHI",
+     "dropbacks": 446,
+     "interceptions": 14,
+     "name": "Mike Vick",
+     "player_id": "00-0020245",
+     "position": "QB",
+     "rate": 0.03139013452914798,
+     "sacks": 23,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       423,
+       423
+      ],
+      "interceptions": [
+       14,
+       14
+      ],
+      "sacks": [
+       23,
+       23
+      ]
+     }
+    },
+    {
+     "attempts": 582,
+     "club": "LAC",
+     "dropbacks": 612,
+     "interceptions": 20,
+     "name": "Philip Rivers",
+     "player_id": "00-0022942",
+     "position": "QB",
+     "rate": 0.032679738562091505,
+     "sacks": 30,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       582,
+       582
+      ],
+      "interceptions": [
+       20,
+       20
+      ],
+      "sacks": [
+       30,
+       30
+      ]
+     }
+    },
+    {
+     "attempts": 458,
+     "club": "WAS",
+     "dropbacks": 483,
+     "interceptions": 20,
+     "name": "Rex Grossman",
+     "player_id": "00-0022121",
+     "position": "QB",
+     "rate": 0.041407867494824016,
+     "sacks": 25,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       458,
+       458
+      ],
+      "interceptions": [
+       20,
+       20
+      ],
+      "sacks": [
+       25,
+       25
+      ]
+     }
+    },
+    {
+     "attempts": 569,
+     "club": "BUF",
+     "dropbacks": 591,
+     "interceptions": 23,
+     "name": "Ryan Fitzpatrick",
+     "player_id": "00-0023682",
+     "position": "QB",
+     "rate": 0.038917089678511,
+     "sacks": 22,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       569,
+       569
+      ],
+      "interceptions": [
+       23,
+       23
+      ],
+      "sacks": [
+       22,
+       22
+      ]
+     }
+    },
+    {
+     "attempts": 357,
+     "club": "LA",
+     "dropbacks": 393,
+     "interceptions": 6,
+     "name": "Sam Bradford",
+     "player_id": "00-0027854",
+     "position": "QB",
+     "rate": 0.015267175572519083,
+     "sacks": 36,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       357,
+       357
+      ],
+      "interceptions": [
+       6,
+       6
+      ],
+      "sacks": [
+       36,
+       36
+      ]
+     }
+    },
+    {
+     "attempts": 450,
+     "club": "SEA",
+     "dropbacks": 492,
+     "interceptions": 13,
+     "name": "Tarvaris Jackson",
+     "player_id": "00-0024279",
+     "position": "QB",
+     "rate": 0.026422764227642278,
+     "sacks": 42,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       450,
+       450
+      ],
+      "interceptions": [
+       13,
+       13
+      ],
+      "sacks": [
+       42,
+       42
+      ]
+     }
+    },
+    {
+     "attempts": 271,
+     "club": "DEN",
+     "dropbacks": 304,
+     "interceptions": 6,
+     "name": "Tim Tebow",
+     "player_id": "00-0027876",
+     "position": "QB",
+     "rate": 0.019736842105263157,
+     "sacks": 33,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       271,
+       271
+      ],
+      "interceptions": [
+       6,
+       6
+      ],
+      "sacks": [
+       33,
+       33
+      ]
+     }
+    },
+    {
+     "attempts": 611,
+     "club": "NE",
+     "dropbacks": 643,
+     "interceptions": 12,
+     "name": "Tom Brady",
+     "player_id": "00-0019596",
+     "position": "QB",
+     "rate": 0.01866251944012442,
+     "sacks": 32,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       611,
+       611
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       32,
+       32
+      ]
+     }
+    },
+    {
+     "attempts": 522,
+     "club": "DAL",
+     "dropbacks": 558,
+     "interceptions": 10,
+     "name": "Tony Romo",
+     "player_id": "00-0021678",
+     "position": "QB",
+     "rate": 0.017921146953405017,
+     "sacks": 36,
+     "season": 2011,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       522,
+       522
+      ],
+      "interceptions": [
+       10,
+       10
+      ],
+      "sacks": [
+       36,
+       36
+      ]
+     }
+    }
+   ],
+   "verification": {
+    "admissible_pre_divergence": true,
+    "confirmed": 35,
+    "corrected": 0,
+    "last_regular_season_game": "2012-01-01",
+    "play_by_play_only_qualifiers": []
+   }
+  },
+  "2012": {
+   "qualifiers": 38,
+   "reliability": {
+    "k": null,
+    "league_mean": 0.02421000386036508,
+    "mean_binomial_variance": 4.95068341582173e-05,
+    "mean_dropbacks": 477.1842105263158,
+    "observed_variance": 4.4788254859845134e-05,
+    "qualifiers": 38,
+    "reliability_at_mean_dropbacks": 0.0,
+    "signal_sd": 0.0,
+    "signal_variance": -4.718579298372169e-06
+   },
+   "rows": [
+    {
+     "attempts": 552,
+     "club": "GB",
+     "dropbacks": 603,
+     "interceptions": 8,
+     "name": "Aaron Rodgers",
+     "player_id": "00-0023459",
+     "position": "QB",
+     "rate": 0.013266998341625208,
+     "sacks": 51,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       552,
+       552
+      ],
+      "interceptions": [
+       8,
+       8
+      ],
+      "sacks": [
+       51,
+       51
+      ]
+     }
+    },
+    {
+     "attempts": 218,
+     "club": "SF",
+     "dropbacks": 242,
+     "interceptions": 5,
+     "name": "Alex Smith",
+     "player_id": "00-0023436",
+     "position": "QB",
+     "rate": 0.02066115702479339,
+     "sacks": 24,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       218,
+       218
+      ],
+      "interceptions": [
+       5,
+       5
+      ],
+      "sacks": [
+       24,
+       24
+      ]
+     }
+    },
+    {
+     "attempts": 627,
+     "club": "IND",
+     "dropbacks": 668,
+     "interceptions": 18,
+     "name": "Andrew Luck",
+     "player_id": "00-0029668",
+     "position": "QB",
+     "rate": 0.02694610778443114,
+     "sacks": 41,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       627,
+       627
+      ],
+      "interceptions": [
+       18,
+       18
+      ],
+      "sacks": [
+       41,
+       41
+      ]
+     }
+    },
+    {
+     "attempts": 528,
+     "club": "CIN",
+     "dropbacks": 574,
+     "interceptions": 16,
+     "name": "Andy Dalton",
+     "player_id": "00-0027973",
+     "position": "QB",
+     "rate": 0.027874564459930314,
+     "sacks": 46,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       528,
+       528
+      ],
+      "interceptions": [
+       16,
+       16
+      ],
+      "sacks": [
+       46,
+       46
+      ]
+     }
+    },
+    {
+     "attempts": 449,
+     "club": "PIT",
+     "dropbacks": 479,
+     "interceptions": 8,
+     "name": "Ben Roethlisberger",
+     "player_id": "00-0022924",
+     "position": "QB",
+     "rate": 0.016701461377870562,
+     "sacks": 30,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       449,
+       449
+      ],
+      "interceptions": [
+       8,
+       8
+      ],
+      "sacks": [
+       30,
+       30
+      ]
+     }
+    },
+    {
+     "attempts": 278,
+     "club": "JAX",
+     "dropbacks": 300,
+     "interceptions": 6,
+     "name": "Blaine Gabbert",
+     "player_id": "00-0027948",
+     "position": "QB",
+     "rate": 0.02,
+     "sacks": 22,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       278,
+       278
+      ],
+      "interceptions": [
+       6,
+       6
+      ],
+      "sacks": [
+       22,
+       22
+      ]
+     }
+    },
+    {
+     "attempts": 197,
+     "club": "KC",
+     "dropbacks": 218,
+     "interceptions": 8,
+     "name": "Brady Quinn",
+     "player_id": "00-0025409",
+     "position": "QB",
+     "rate": 0.03669724770642202,
+     "sacks": 21,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       197,
+       197
+      ],
+      "interceptions": [
+       8,
+       8
+      ],
+      "sacks": [
+       21,
+       21
+      ]
+     }
+    },
+    {
+     "attempts": 517,
+     "club": "CLE",
+     "dropbacks": 545,
+     "interceptions": 17,
+     "name": "Brandon Weeden",
+     "player_id": "00-0029677",
+     "position": "QB",
+     "rate": 0.031192660550458717,
+     "sacks": 28,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       517,
+       517
+      ],
+      "interceptions": [
+       17,
+       17
+      ],
+      "sacks": [
+       28,
+       28
+      ]
+     }
+    },
+    {
+     "attempts": 485,
+     "club": "CAR",
+     "dropbacks": 521,
+     "interceptions": 12,
+     "name": "Cam Newton",
+     "player_id": "00-0027939",
+     "position": "QB",
+     "rate": 0.023032629558541268,
+     "sacks": 36,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       485,
+       485
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       36,
+       36
+      ]
+     }
+    },
+    {
+     "attempts": 565,
+     "club": "LV",
+     "dropbacks": 591,
+     "interceptions": 14,
+     "name": "Carson Palmer",
+     "player_id": "00-0021429",
+     "position": "QB",
+     "rate": 0.023688663282571912,
+     "sacks": 26,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       565,
+       565
+      ],
+      "interceptions": [
+       14,
+       14
+      ],
+      "sacks": [
+       26,
+       26
+      ]
+     }
+    },
+    {
+     "attempts": 308,
+     "club": "JAX",
+     "dropbacks": 336,
+     "interceptions": 11,
+     "name": "Chad Henne",
+     "player_id": "00-0026197",
+     "position": "QB",
+     "rate": 0.03273809523809524,
+     "sacks": 28,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       308,
+       308
+      ],
+      "interceptions": [
+       11,
+       11
+      ],
+      "sacks": [
+       28,
+       28
+      ]
+     }
+    },
+    {
+     "attempts": 483,
+     "club": "MIN",
+     "dropbacks": 515,
+     "interceptions": 12,
+     "name": "Christian Ponder",
+     "player_id": "00-0027950",
+     "position": "QB",
+     "rate": 0.02330097087378641,
+     "sacks": 32,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       483,
+       483
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       32,
+       32
+      ]
+     }
+    },
+    {
+     "attempts": 218,
+     "club": "SF",
+     "dropbacks": 234,
+     "interceptions": 3,
+     "name": "Colin Kaepernick",
+     "player_id": "00-0027974",
+     "position": "QB",
+     "rate": 0.01282051282051282,
+     "sacks": 16,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       218,
+       218
+      ],
+      "interceptions": [
+       3,
+       3
+      ],
+      "sacks": [
+       16,
+       16
+      ]
+     }
+    },
+    {
+     "attempts": 670,
+     "club": "NO",
+     "dropbacks": 696,
+     "interceptions": 19,
+     "name": "Drew Brees",
+     "player_id": "00-0020531",
+     "position": "QB",
+     "rate": 0.027298850574712645,
+     "sacks": 26,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       670,
+       670
+      ],
+      "interceptions": [
+       19,
+       19
+      ],
+      "sacks": [
+       26,
+       26
+      ]
+     }
+    },
+    {
+     "attempts": 536,
+     "club": "NYG",
+     "dropbacks": 555,
+     "interceptions": 15,
+     "name": "Eli Manning",
+     "player_id": "00-0022803",
+     "position": "QB",
+     "rate": 0.02702702702702703,
+     "sacks": 19,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       536,
+       536
+      ],
+      "interceptions": [
+       15,
+       15
+      ],
+      "sacks": [
+       19,
+       19
+      ]
+     }
+    },
+    {
+     "attempts": 314,
+     "club": "TEN",
+     "dropbacks": 339,
+     "interceptions": 11,
+     "name": "Jake Locker",
+     "player_id": "00-0027946",
+     "position": "QB",
+     "rate": 0.032448377581120944,
+     "sacks": 25,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       314,
+       314
+      ],
+      "interceptions": [
+       11,
+       11
+      ],
+      "sacks": [
+       25,
+       25
+      ]
+     }
+    },
+    {
+     "attempts": 434,
+     "club": "CHI",
+     "dropbacks": 472,
+     "interceptions": 14,
+     "name": "Jay Cutler",
+     "player_id": "00-0024226",
+     "position": "QB",
+     "rate": 0.029661016949152543,
+     "sacks": 38,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       434,
+       434
+      ],
+      "interceptions": [
+       14,
+       14
+      ],
+      "sacks": [
+       38,
+       38
+      ]
+     }
+    },
+    {
+     "attempts": 531,
+     "club": "BAL",
+     "dropbacks": 566,
+     "interceptions": 10,
+     "name": "Joe Flacco",
+     "player_id": "00-0026158",
+     "position": "QB",
+     "rate": 0.0176678445229682,
+     "sacks": 35,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       531,
+       531
+      ],
+      "interceptions": [
+       10,
+       10
+      ],
+      "sacks": [
+       35,
+       35
+      ]
+     }
+    },
+    {
+     "attempts": 201,
+     "club": "ARI",
+     "dropbacks": 216,
+     "interceptions": 9,
+     "name": "John Skelton",
+     "player_id": "00-0027754",
+     "position": "QB",
+     "rate": 0.041666666666666664,
+     "sacks": 15,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       201,
+       201
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       15,
+       15
+      ]
+     }
+    },
+    {
+     "attempts": 558,
+     "club": "TB",
+     "dropbacks": 584,
+     "interceptions": 17,
+     "name": "Josh Freeman",
+     "player_id": "00-0026993",
+     "position": "QB",
+     "rate": 0.02910958904109589,
+     "sacks": 26,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       558,
+       558
+      ],
+      "interceptions": [
+       17,
+       17
+      ],
+      "sacks": [
+       26,
+       26
+      ]
+     }
+    },
+    {
+     "attempts": 183,
+     "club": "ARI",
+     "dropbacks": 210,
+     "interceptions": 3,
+     "name": "Kevin Kolb",
+     "player_id": "00-0025423",
+     "position": "QB",
+     "rate": 0.014285714285714285,
+     "sacks": 27,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       183,
+       183
+      ],
+      "interceptions": [
+       3,
+       3
+      ],
+      "sacks": [
+       27,
+       27
+      ]
+     }
+    },
+    {
+     "attempts": 453,
+     "club": "NYJ",
+     "dropbacks": 487,
+     "interceptions": 18,
+     "name": "Mark Sanchez",
+     "player_id": "00-0026898",
+     "position": "QB",
+     "rate": 0.03696098562628337,
+     "sacks": 34,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       453,
+       453
+      ],
+      "interceptions": [
+       18,
+       18
+      ],
+      "sacks": [
+       34,
+       34
+      ]
+     }
+    },
+    {
+     "attempts": 277,
+     "club": "KC",
+     "dropbacks": 296,
+     "interceptions": 12,
+     "name": "Matt Cassel",
+     "player_id": "00-0023662",
+     "position": "QB",
+     "rate": 0.04054054054054054,
+     "sacks": 19,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       277,
+       277
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       19,
+       19
+      ]
+     }
+    },
+    {
+     "attempts": 221,
+     "club": "TEN",
+     "dropbacks": 235,
+     "interceptions": 5,
+     "name": "Matt Hasselbeck",
+     "player_id": "00-0007091",
+     "position": "QB",
+     "rate": 0.02127659574468085,
+     "sacks": 14,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       221,
+       221
+      ],
+      "interceptions": [
+       5,
+       5
+      ],
+      "sacks": [
+       14,
+       14
+      ]
+     }
+    },
+    {
+     "attempts": 615,
+     "club": "ATL",
+     "dropbacks": 643,
+     "interceptions": 14,
+     "name": "Matt Ryan",
+     "player_id": "00-0026143",
+     "position": "QB",
+     "rate": 0.02177293934681182,
+     "sacks": 28,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       615,
+       615
+      ],
+      "interceptions": [
+       14,
+       14
+      ],
+      "sacks": [
+       28,
+       28
+      ]
+     }
+    },
+    {
+     "attempts": 544,
+     "club": "HOU",
+     "dropbacks": 571,
+     "interceptions": 12,
+     "name": "Matt Schaub",
+     "player_id": "00-0022787",
+     "position": "QB",
+     "rate": 0.021015761821366025,
+     "sacks": 27,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       544,
+       544
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       27,
+       27
+      ]
+     }
+    },
+    {
+     "attempts": 727,
+     "club": "DET",
+     "dropbacks": 756,
+     "interceptions": 17,
+     "name": "Matthew Stafford",
+     "player_id": "00-0026498",
+     "position": "QB",
+     "rate": 0.022486772486772486,
+     "sacks": 29,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       727,
+       727
+      ],
+      "interceptions": [
+       17,
+       17
+      ],
+      "sacks": [
+       29,
+       29
+      ]
+     }
+    },
+    {
+     "attempts": 351,
+     "club": "PHI",
+     "dropbacks": 379,
+     "interceptions": 10,
+     "name": "Mike Vick",
+     "player_id": "00-0020245",
+     "position": "QB",
+     "rate": 0.026385224274406333,
+     "sacks": 28,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       351,
+       351
+      ],
+      "interceptions": [
+       10,
+       10
+      ],
+      "sacks": [
+       28,
+       28
+      ]
+     }
+    },
+    {
+     "attempts": 265,
+     "club": "PHI",
+     "dropbacks": 285,
+     "interceptions": 5,
+     "name": "Nick Foles",
+     "player_id": "00-0029567",
+     "position": "QB",
+     "rate": 0.017543859649122806,
+     "sacks": 20,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       265,
+       265
+      ],
+      "interceptions": [
+       5,
+       5
+      ],
+      "sacks": [
+       20,
+       20
+      ]
+     }
+    },
+    {
+     "attempts": 583,
+     "club": "DEN",
+     "dropbacks": 604,
+     "interceptions": 11,
+     "name": "Peyton Manning",
+     "player_id": "00-0010346",
+     "position": "QB",
+     "rate": 0.018211920529801324,
+     "sacks": 21,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       583,
+       583
+      ],
+      "interceptions": [
+       11,
+       11
+      ],
+      "sacks": [
+       21,
+       21
+      ]
+     }
+    },
+    {
+     "attempts": 527,
+     "club": "LAC",
+     "dropbacks": 576,
+     "interceptions": 15,
+     "name": "Philip Rivers",
+     "player_id": "00-0022942",
+     "position": "QB",
+     "rate": 0.026041666666666668,
+     "sacks": 49,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       527,
+       527
+      ],
+      "interceptions": [
+       15,
+       15
+      ],
+      "sacks": [
+       49,
+       49
+      ]
+     }
+    },
+    {
+     "attempts": 393,
+     "club": "WAS",
+     "dropbacks": 423,
+     "interceptions": 5,
+     "name": "Robert Griffin III",
+     "player_id": "00-0029665",
+     "position": "QB",
+     "rate": 0.01182033096926714,
+     "sacks": 30,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       393,
+       393
+      ],
+      "interceptions": [
+       5,
+       5
+      ],
+      "sacks": [
+       30,
+       30
+      ]
+     }
+    },
+    {
+     "attempts": 393,
+     "club": "SEA",
+     "dropbacks": 426,
+     "interceptions": 10,
+     "name": "Russell Wilson",
+     "player_id": "00-0029263",
+     "position": "QB",
+     "rate": 0.023474178403755867,
+     "sacks": 33,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       393,
+       393
+      ],
+      "interceptions": [
+       10,
+       10
+      ],
+      "sacks": [
+       33,
+       33
+      ]
+     }
+    },
+    {
+     "attempts": 505,
+     "club": "BUF",
+     "dropbacks": 535,
+     "interceptions": 16,
+     "name": "Ryan Fitzpatrick",
+     "player_id": "00-0023682",
+     "position": "QB",
+     "rate": 0.029906542056074768,
+     "sacks": 30,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       505,
+       505
+      ],
+      "interceptions": [
+       16,
+       16
+      ],
+      "sacks": [
+       30,
+       30
+      ]
+     }
+    },
+    {
+     "attempts": 484,
+     "club": "MIA",
+     "dropbacks": 519,
+     "interceptions": 13,
+     "name": "Ryan Tannehill",
+     "player_id": "00-0029701",
+     "position": "QB",
+     "rate": 0.025048169556840076,
+     "sacks": 35,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       484,
+       484
+      ],
+      "interceptions": [
+       13,
+       13
+      ],
+      "sacks": [
+       35,
+       35
+      ]
+     }
+    },
+    {
+     "attempts": 551,
+     "club": "LA",
+     "dropbacks": 586,
+     "interceptions": 13,
+     "name": "Sam Bradford",
+     "player_id": "00-0027854",
+     "position": "QB",
+     "rate": 0.02218430034129693,
+     "sacks": 35,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       551,
+       551
+      ],
+      "interceptions": [
+       13,
+       13
+      ],
+      "sacks": [
+       35,
+       35
+      ]
+     }
+    },
+    {
+     "attempts": 637,
+     "club": "NE",
+     "dropbacks": 664,
+     "interceptions": 8,
+     "name": "Tom Brady",
+     "player_id": "00-0019596",
+     "position": "QB",
+     "rate": 0.012048192771084338,
+     "sacks": 27,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       637,
+       637
+      ],
+      "interceptions": [
+       8,
+       8
+      ],
+      "sacks": [
+       27,
+       27
+      ]
+     }
+    },
+    {
+     "attempts": 648,
+     "club": "DAL",
+     "dropbacks": 684,
+     "interceptions": 19,
+     "name": "Tony Romo",
+     "player_id": "00-0021678",
+     "position": "QB",
+     "rate": 0.027777777777777776,
+     "sacks": 36,
+     "season": 2012,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       648,
+       648
+      ],
+      "interceptions": [
+       19,
+       19
+      ],
+      "sacks": [
+       36,
+       36
+      ]
+     }
+    }
+   ],
+   "verification": {
+    "admissible_pre_divergence": true,
+    "confirmed": 38,
+    "corrected": 0,
+    "last_regular_season_game": "2012-12-30",
+    "play_by_play_only_qualifiers": []
+   }
+  },
+  "2013": {
+   "qualifiers": 39,
+   "reliability": {
+    "k": 829.9430842244781,
+    "league_mean": 0.024921770227983905,
+    "mean_binomial_variance": 5.295744011347851e-05,
+    "mean_dropbacks": 458.87179487179486,
+    "observed_variance": 8.223737033832605e-05,
+    "qualifiers": 39,
+    "reliability_at_mean_dropbacks": 0.3560416645667214,
+    "signal_sd": 0.005411093255974021,
+    "signal_variance": 2.9279930224847538e-05
+   },
+   "rows": [
+    {
+     "attempts": 290,
+     "club": "GB",
+     "dropbacks": 311,
+     "interceptions": 6,
+     "name": "Aaron Rodgers",
+     "player_id": "00-0023459",
+     "position": "QB",
+     "rate": 0.01929260450160772,
+     "sacks": 21,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       290,
+       290
+      ],
+      "interceptions": [
+       6,
+       6
+      ],
+      "sacks": [
+       21,
+       21
+      ]
+     }
+    },
+    {
+     "attempts": 508,
+     "club": "KC",
+     "dropbacks": 547,
+     "interceptions": 7,
+     "name": "Alex Smith",
+     "player_id": "00-0023436",
+     "position": "QB",
+     "rate": 0.012797074954296161,
+     "sacks": 39,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       508,
+       508
+      ],
+      "interceptions": [
+       7,
+       7
+      ],
+      "sacks": [
+       39,
+       39
+      ]
+     }
+    },
+    {
+     "attempts": 570,
+     "club": "IND",
+     "dropbacks": 602,
+     "interceptions": 9,
+     "name": "Andrew Luck",
+     "player_id": "00-0029668",
+     "position": "QB",
+     "rate": 0.014950166112956811,
+     "sacks": 32,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       570,
+       570
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       32,
+       32
+      ]
+     }
+    },
+    {
+     "attempts": 586,
+     "club": "CIN",
+     "dropbacks": 615,
+     "interceptions": 20,
+     "name": "Andy Dalton",
+     "player_id": "00-0027973",
+     "position": "QB",
+     "rate": 0.032520325203252036,
+     "sacks": 29,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       586,
+       586
+      ],
+      "interceptions": [
+       20,
+       20
+      ],
+      "sacks": [
+       29,
+       29
+      ]
+     }
+    },
+    {
+     "attempts": 584,
+     "club": "PIT",
+     "dropbacks": 626,
+     "interceptions": 14,
+     "name": "Ben Roethlisberger",
+     "player_id": "00-0022924",
+     "position": "QB",
+     "rate": 0.022364217252396165,
+     "sacks": 42,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       584,
+       584
+      ],
+      "interceptions": [
+       14,
+       14
+      ],
+      "sacks": [
+       42,
+       42
+      ]
+     }
+    },
+    {
+     "attempts": 267,
+     "club": "CLE",
+     "dropbacks": 294,
+     "interceptions": 9,
+     "name": "Brandon Weeden",
+     "player_id": "00-0029677",
+     "position": "QB",
+     "rate": 0.030612244897959183,
+     "sacks": 27,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       267,
+       267
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       27,
+       27
+      ]
+     }
+    },
+    {
+     "attempts": 473,
+     "club": "CAR",
+     "dropbacks": 516,
+     "interceptions": 13,
+     "name": "Cam Newton",
+     "player_id": "00-0027939",
+     "position": "QB",
+     "rate": 0.025193798449612403,
+     "sacks": 43,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       473,
+       473
+      ],
+      "interceptions": [
+       13,
+       13
+      ],
+      "sacks": [
+       43,
+       43
+      ]
+     }
+    },
+    {
+     "attempts": 572,
+     "club": "ARI",
+     "dropbacks": 613,
+     "interceptions": 22,
+     "name": "Carson Palmer",
+     "player_id": "00-0021429",
+     "position": "QB",
+     "rate": 0.03588907014681892,
+     "sacks": 41,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       572,
+       572
+      ],
+      "interceptions": [
+       22,
+       22
+      ],
+      "sacks": [
+       41,
+       41
+      ]
+     }
+    },
+    {
+     "attempts": 253,
+     "club": "HOU",
+     "dropbacks": 272,
+     "interceptions": 6,
+     "name": "Case Keenum",
+     "player_id": "00-0028986",
+     "position": "QB",
+     "rate": 0.022058823529411766,
+     "sacks": 19,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       253,
+       253
+      ],
+      "interceptions": [
+       6,
+       6
+      ],
+      "sacks": [
+       19,
+       19
+      ]
+     }
+    },
+    {
+     "attempts": 503,
+     "club": "JAX",
+     "dropbacks": 541,
+     "interceptions": 14,
+     "name": "Chad Henne",
+     "player_id": "00-0026197",
+     "position": "QB",
+     "rate": 0.025878003696857672,
+     "sacks": 38,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       503,
+       503
+      ],
+      "interceptions": [
+       14,
+       14
+      ],
+      "sacks": [
+       38,
+       38
+      ]
+     }
+    },
+    {
+     "attempts": 239,
+     "club": "MIN",
+     "dropbacks": 266,
+     "interceptions": 9,
+     "name": "Christian Ponder",
+     "player_id": "00-0027950",
+     "position": "QB",
+     "rate": 0.03383458646616541,
+     "sacks": 27,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       239,
+       239
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       27,
+       27
+      ]
+     }
+    },
+    {
+     "attempts": 416,
+     "club": "SF",
+     "dropbacks": 455,
+     "interceptions": 8,
+     "name": "Colin Kaepernick",
+     "player_id": "00-0027974",
+     "position": "QB",
+     "rate": 0.017582417582417582,
+     "sacks": 39,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       416,
+       416
+      ],
+      "interceptions": [
+       8,
+       8
+      ],
+      "sacks": [
+       39,
+       39
+      ]
+     }
+    },
+    {
+     "attempts": 650,
+     "club": "NO",
+     "dropbacks": 687,
+     "interceptions": 12,
+     "name": "Drew Brees",
+     "player_id": "00-0020531",
+     "position": "QB",
+     "rate": 0.017467248908296942,
+     "sacks": 37,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       650,
+       650
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       37,
+       37
+      ]
+     }
+    },
+    {
+     "attempts": 306,
+     "club": "BUF",
+     "dropbacks": 334,
+     "interceptions": 9,
+     "name": "EJ Manuel",
+     "player_id": "00-0030526",
+     "position": "QB",
+     "rate": 0.02694610778443114,
+     "sacks": 28,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       306,
+       306
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       28,
+       28
+      ]
+     }
+    },
+    {
+     "attempts": 551,
+     "club": "NYG",
+     "dropbacks": 590,
+     "interceptions": 27,
+     "name": "Eli Manning",
+     "player_id": "00-0022803",
+     "position": "QB",
+     "rate": 0.04576271186440678,
+     "sacks": 39,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       551,
+       551
+      ],
+      "interceptions": [
+       27,
+       27
+      ],
+      "sacks": [
+       39,
+       39
+      ]
+     }
+    },
+    {
+     "attempts": 443,
+     "club": "NYJ",
+     "dropbacks": 486,
+     "interceptions": 21,
+     "name": "Geno Smith",
+     "player_id": "00-0030565",
+     "position": "QB",
+     "rate": 0.043209876543209874,
+     "sacks": 43,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       443,
+       443
+      ],
+      "interceptions": [
+       21,
+       21
+      ],
+      "sacks": [
+       43,
+       43
+      ]
+     }
+    },
+    {
+     "attempts": 317,
+     "club": "CLE",
+     "dropbacks": 333,
+     "interceptions": 8,
+     "name": "Jason Campbell",
+     "player_id": "00-0023460",
+     "position": "QB",
+     "rate": 0.024024024024024024,
+     "sacks": 16,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       317,
+       317
+      ],
+      "interceptions": [
+       8,
+       8
+      ],
+      "sacks": [
+       16,
+       16
+      ]
+     }
+    },
+    {
+     "attempts": 355,
+     "club": "CHI",
+     "dropbacks": 374,
+     "interceptions": 12,
+     "name": "Jay Cutler",
+     "player_id": "00-0024226",
+     "position": "QB",
+     "rate": 0.03208556149732621,
+     "sacks": 19,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       355,
+       355
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       19,
+       19
+      ]
+     }
+    },
+    {
+     "attempts": 614,
+     "club": "BAL",
+     "dropbacks": 662,
+     "interceptions": 22,
+     "name": "Joe Flacco",
+     "player_id": "00-0026158",
+     "position": "QB",
+     "rate": 0.03323262839879154,
+     "sacks": 48,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       614,
+       614
+      ],
+      "interceptions": [
+       22,
+       22
+      ],
+      "sacks": [
+       48,
+       48
+      ]
+     }
+    },
+    {
+     "attempts": 224,
+     "club": "CHI",
+     "dropbacks": 235,
+     "interceptions": 1,
+     "name": "Josh McCown",
+     "player_id": "00-0021206",
+     "position": "QB",
+     "rate": 0.00425531914893617,
+     "sacks": 11,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       224,
+       224
+      ],
+      "interceptions": [
+       1,
+       1
+      ],
+      "sacks": [
+       11,
+       11
+      ]
+     }
+    },
+    {
+     "attempts": 242,
+     "club": "LA",
+     "dropbacks": 263,
+     "interceptions": 7,
+     "name": "Kellen Clemens",
+     "player_id": "00-0024264",
+     "position": "QB",
+     "rate": 0.026615969581749048,
+     "sacks": 21,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       242,
+       242
+      ],
+      "interceptions": [
+       7,
+       7
+      ],
+      "sacks": [
+       21,
+       21
+      ]
+     }
+    },
+    {
+     "attempts": 254,
+     "club": "MIN",
+     "dropbacks": 270,
+     "interceptions": 9,
+     "name": "Matt Cassel",
+     "player_id": "00-0023662",
+     "position": "QB",
+     "rate": 0.03333333333333333,
+     "sacks": 16,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       254,
+       254
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       16,
+       16
+      ]
+     }
+    },
+    {
+     "attempts": 200,
+     "club": "GB",
+     "dropbacks": 224,
+     "interceptions": 5,
+     "name": "Matt Flynn",
+     "player_id": "00-0026349",
+     "position": "QB",
+     "rate": 0.022321428571428572,
+     "sacks": 24,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       200,
+       200
+      ],
+      "interceptions": [
+       5,
+       5
+      ],
+      "sacks": [
+       24,
+       24
+      ]
+     }
+    },
+    {
+     "attempts": 211,
+     "club": "LV",
+     "dropbacks": 217,
+     "interceptions": 8,
+     "name": "Matt McGloin",
+     "player_id": "00-0030419",
+     "position": "QB",
+     "rate": 0.03686635944700461,
+     "sacks": 6,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       211,
+       211
+      ],
+      "interceptions": [
+       8,
+       8
+      ],
+      "sacks": [
+       6,
+       6
+      ]
+     }
+    },
+    {
+     "attempts": 651,
+     "club": "ATL",
+     "dropbacks": 695,
+     "interceptions": 17,
+     "name": "Matt Ryan",
+     "player_id": "00-0026143",
+     "position": "QB",
+     "rate": 0.02446043165467626,
+     "sacks": 44,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       651,
+       651
+      ],
+      "interceptions": [
+       17,
+       17
+      ],
+      "sacks": [
+       44,
+       44
+      ]
+     }
+    },
+    {
+     "attempts": 358,
+     "club": "HOU",
+     "dropbacks": 379,
+     "interceptions": 14,
+     "name": "Matt Schaub",
+     "player_id": "00-0022787",
+     "position": "QB",
+     "rate": 0.036939313984168866,
+     "sacks": 21,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       358,
+       358
+      ],
+      "interceptions": [
+       14,
+       14
+      ],
+      "sacks": [
+       21,
+       21
+      ]
+     }
+    },
+    {
+     "attempts": 634,
+     "club": "DET",
+     "dropbacks": 657,
+     "interceptions": 19,
+     "name": "Matthew Stafford",
+     "player_id": "00-0026498",
+     "position": "QB",
+     "rate": 0.0289193302891933,
+     "sacks": 23,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       634,
+       634
+      ],
+      "interceptions": [
+       19,
+       19
+      ],
+      "sacks": [
+       23,
+       23
+      ]
+     }
+    },
+    {
+     "attempts": 416,
+     "club": "TB",
+     "dropbacks": 456,
+     "interceptions": 9,
+     "name": "Mike Glennon",
+     "player_id": "00-0030520",
+     "position": "QB",
+     "rate": 0.019736842105263157,
+     "sacks": 40,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       416,
+       416
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       40,
+       40
+      ]
+     }
+    },
+    {
+     "attempts": 317,
+     "club": "PHI",
+     "dropbacks": 345,
+     "interceptions": 2,
+     "name": "Nick Foles",
+     "player_id": "00-0029567",
+     "position": "QB",
+     "rate": 0.005797101449275362,
+     "sacks": 28,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       317,
+       317
+      ],
+      "interceptions": [
+       2,
+       2
+      ],
+      "sacks": [
+       28,
+       28
+      ]
+     }
+    },
+    {
+     "attempts": 659,
+     "club": "DEN",
+     "dropbacks": 677,
+     "interceptions": 10,
+     "name": "Peyton Manning",
+     "player_id": "00-0010346",
+     "position": "QB",
+     "rate": 0.014771048744460856,
+     "sacks": 18,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       659,
+       659
+      ],
+      "interceptions": [
+       10,
+       10
+      ],
+      "sacks": [
+       18,
+       18
+      ]
+     }
+    },
+    {
+     "attempts": 544,
+     "club": "LAC",
+     "dropbacks": 574,
+     "interceptions": 11,
+     "name": "Philip Rivers",
+     "player_id": "00-0022942",
+     "position": "QB",
+     "rate": 0.01916376306620209,
+     "sacks": 30,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       544,
+       544
+      ],
+      "interceptions": [
+       11,
+       11
+      ],
+      "sacks": [
+       30,
+       30
+      ]
+     }
+    },
+    {
+     "attempts": 456,
+     "club": "WAS",
+     "dropbacks": 494,
+     "interceptions": 12,
+     "name": "Robert Griffin III",
+     "player_id": "00-0029665",
+     "position": "QB",
+     "rate": 0.024291497975708502,
+     "sacks": 38,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       456,
+       456
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       38,
+       38
+      ]
+     }
+    },
+    {
+     "attempts": 407,
+     "club": "SEA",
+     "dropbacks": 451,
+     "interceptions": 9,
+     "name": "Russell Wilson",
+     "player_id": "00-0029263",
+     "position": "QB",
+     "rate": 0.019955654101995565,
+     "sacks": 44,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       407,
+       407
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       44,
+       44
+      ]
+     }
+    },
+    {
+     "attempts": 350,
+     "club": "TEN",
+     "dropbacks": 371,
+     "interceptions": 12,
+     "name": "Ryan Fitzpatrick",
+     "player_id": "00-0023682",
+     "position": "QB",
+     "rate": 0.03234501347708895,
+     "sacks": 21,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       350,
+       350
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       21,
+       21
+      ]
+     }
+    },
+    {
+     "attempts": 588,
+     "club": "MIA",
+     "dropbacks": 646,
+     "interceptions": 17,
+     "name": "Ryan Tannehill",
+     "player_id": "00-0029701",
+     "position": "QB",
+     "rate": 0.02631578947368421,
+     "sacks": 58,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       588,
+       588
+      ],
+      "interceptions": [
+       17,
+       17
+      ],
+      "sacks": [
+       58,
+       58
+      ]
+     }
+    },
+    {
+     "attempts": 262,
+     "club": "LA",
+     "dropbacks": 277,
+     "interceptions": 4,
+     "name": "Sam Bradford",
+     "player_id": "00-0027854",
+     "position": "QB",
+     "rate": 0.01444043321299639,
+     "sacks": 15,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       262,
+       262
+      ],
+      "interceptions": [
+       4,
+       4
+      ],
+      "sacks": [
+       15,
+       15
+      ]
+     }
+    },
+    {
+     "attempts": 272,
+     "club": "LV",
+     "dropbacks": 303,
+     "interceptions": 11,
+     "name": "Terrelle Pryor",
+     "player_id": "00-0028825",
+     "position": "WR",
+     "rate": 0.036303630363036306,
+     "sacks": 31,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       272,
+       272
+      ],
+      "interceptions": [
+       11,
+       11
+      ],
+      "sacks": [
+       31,
+       31
+      ]
+     }
+    },
+    {
+     "attempts": 628,
+     "club": "NE",
+     "dropbacks": 668,
+     "interceptions": 11,
+     "name": "Tom Brady",
+     "player_id": "00-0019596",
+     "position": "QB",
+     "rate": 0.016467065868263474,
+     "sacks": 40,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       628,
+       628
+      ],
+      "interceptions": [
+       11,
+       11
+      ],
+      "sacks": [
+       40,
+       40
+      ]
+     }
+    },
+    {
+     "attempts": 535,
+     "club": "DAL",
+     "dropbacks": 570,
+     "interceptions": 10,
+     "name": "Tony Romo",
+     "player_id": "00-0021678",
+     "position": "QB",
+     "rate": 0.017543859649122806,
+     "sacks": 35,
+     "season": 2013,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       535,
+       535
+      ],
+      "interceptions": [
+       10,
+       10
+      ],
+      "sacks": [
+       35,
+       35
+      ]
+     }
+    }
+   ],
+   "verification": {
+    "admissible_pre_divergence": false,
+    "confirmed": 39,
+    "corrected": 0,
+    "last_regular_season_game": "2013-12-29",
+    "play_by_play_only_qualifiers": []
+   }
+  },
+  "2014": {
+   "qualifiers": 36,
+   "reliability": {
+    "k": 173488.34575951536,
+    "league_mean": 0.022856473070386216,
+    "mean_binomial_variance": 4.71210203088602e-05,
+    "mean_dropbacks": 473.97222222222223,
+    "observed_variance": 4.7249755496295374e-05,
+    "qualifiers": 36,
+    "reliability_at_mean_dropbacks": 0.002724568330205737,
+    "signal_sd": 0.000358796860960587,
+    "signal_variance": 1.2873518743517078e-07
+   },
+   "rows": [
+    {
+     "attempts": 520,
+     "club": "GB",
+     "dropbacks": 548,
+     "interceptions": 5,
+     "name": "Aaron Rodgers",
+     "player_id": "00-0023459",
+     "position": "QB",
+     "rate": 0.009124087591240875,
+     "sacks": 28,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       520,
+       520
+      ],
+      "interceptions": [
+       5,
+       5
+      ],
+      "sacks": [
+       28,
+       28
+      ]
+     }
+    },
+    {
+     "attempts": 464,
+     "club": "KC",
+     "dropbacks": 509,
+     "interceptions": 6,
+     "name": "Alex Smith",
+     "player_id": "00-0023436",
+     "position": "QB",
+     "rate": 0.011787819253438114,
+     "sacks": 45,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       464,
+       464
+      ],
+      "interceptions": [
+       6,
+       6
+      ],
+      "sacks": [
+       45,
+       45
+      ]
+     }
+    },
+    {
+     "attempts": 616,
+     "club": "IND",
+     "dropbacks": 643,
+     "interceptions": 16,
+     "name": "Andrew Luck",
+     "player_id": "00-0029668",
+     "position": "QB",
+     "rate": 0.024883359253499222,
+     "sacks": 27,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       616,
+       616
+      ],
+      "interceptions": [
+       16,
+       16
+      ],
+      "sacks": [
+       27,
+       27
+      ]
+     }
+    },
+    {
+     "attempts": 481,
+     "club": "CIN",
+     "dropbacks": 502,
+     "interceptions": 17,
+     "name": "Andy Dalton",
+     "player_id": "00-0027973",
+     "position": "QB",
+     "rate": 0.03386454183266932,
+     "sacks": 21,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       481,
+       481
+      ],
+      "interceptions": [
+       17,
+       17
+      ],
+      "sacks": [
+       21,
+       21
+      ]
+     }
+    },
+    {
+     "attempts": 284,
+     "club": "LA",
+     "dropbacks": 313,
+     "interceptions": 9,
+     "name": "Austin Davis",
+     "player_id": "00-0028957",
+     "position": "QB",
+     "rate": 0.02875399361022364,
+     "sacks": 29,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       284,
+       284
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       29,
+       29
+      ]
+     }
+    },
+    {
+     "attempts": 608,
+     "club": "PIT",
+     "dropbacks": 641,
+     "interceptions": 9,
+     "name": "Ben Roethlisberger",
+     "player_id": "00-0022924",
+     "position": "QB",
+     "rate": 0.014040561622464899,
+     "sacks": 33,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       608,
+       608
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       33,
+       33
+      ]
+     }
+    },
+    {
+     "attempts": 475,
+     "club": "JAX",
+     "dropbacks": 530,
+     "interceptions": 17,
+     "name": "Blake Bortles",
+     "player_id": "00-0031407",
+     "position": "QB",
+     "rate": 0.03207547169811321,
+     "sacks": 55,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       475,
+       475
+      ],
+      "interceptions": [
+       17,
+       17
+      ],
+      "sacks": [
+       55,
+       55
+      ]
+     }
+    },
+    {
+     "attempts": 438,
+     "club": "CLE",
+     "dropbacks": 462,
+     "interceptions": 13,
+     "name": "Brian Hoyer",
+     "player_id": "00-0026625",
+     "position": "QB",
+     "rate": 0.02813852813852814,
+     "sacks": 24,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       438,
+       438
+      ],
+      "interceptions": [
+       13,
+       13
+      ],
+      "sacks": [
+       24,
+       24
+      ]
+     }
+    },
+    {
+     "attempts": 448,
+     "club": "CAR",
+     "dropbacks": 486,
+     "interceptions": 12,
+     "name": "Cam Newton",
+     "player_id": "00-0027939",
+     "position": "QB",
+     "rate": 0.024691358024691357,
+     "sacks": 38,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       448,
+       448
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       38,
+       38
+      ]
+     }
+    },
+    {
+     "attempts": 224,
+     "club": "ARI",
+     "dropbacks": 233,
+     "interceptions": 3,
+     "name": "Carson Palmer",
+     "player_id": "00-0021429",
+     "position": "QB",
+     "rate": 0.012875536480686695,
+     "sacks": 9,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       224,
+       224
+      ],
+      "interceptions": [
+       3,
+       3
+      ],
+      "sacks": [
+       9,
+       9
+      ]
+     }
+    },
+    {
+     "attempts": 185,
+     "club": "TEN",
+     "dropbacks": 203,
+     "interceptions": 2,
+     "name": "Charlie Whitehurst",
+     "player_id": "00-0024296",
+     "position": "QB",
+     "rate": 0.009852216748768473,
+     "sacks": 18,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       185,
+       185
+      ],
+      "interceptions": [
+       2,
+       2
+      ],
+      "sacks": [
+       18,
+       18
+      ]
+     }
+    },
+    {
+     "attempts": 478,
+     "club": "SF",
+     "dropbacks": 530,
+     "interceptions": 10,
+     "name": "Colin Kaepernick",
+     "player_id": "00-0027974",
+     "position": "QB",
+     "rate": 0.018867924528301886,
+     "sacks": 52,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       478,
+       478
+      ],
+      "interceptions": [
+       10,
+       10
+      ],
+      "sacks": [
+       52,
+       52
+      ]
+     }
+    },
+    {
+     "attempts": 599,
+     "club": "LV",
+     "dropbacks": 623,
+     "interceptions": 12,
+     "name": "Derek Carr",
+     "player_id": "00-0031280",
+     "position": "QB",
+     "rate": 0.019261637239165328,
+     "sacks": 24,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       599,
+       599
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       24,
+       24
+      ]
+     }
+    },
+    {
+     "attempts": 659,
+     "club": "NO",
+     "dropbacks": 688,
+     "interceptions": 17,
+     "name": "Drew Brees",
+     "player_id": "00-0020531",
+     "position": "QB",
+     "rate": 0.024709302325581394,
+     "sacks": 29,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       659,
+       659
+      ],
+      "interceptions": [
+       17,
+       17
+      ],
+      "sacks": [
+       29,
+       29
+      ]
+     }
+    },
+    {
+     "attempts": 240,
+     "club": "ARI",
+     "dropbacks": 251,
+     "interceptions": 5,
+     "name": "Drew Stanton",
+     "player_id": "00-0025430",
+     "position": "QB",
+     "rate": 0.0199203187250996,
+     "sacks": 11,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       240,
+       240
+      ],
+      "interceptions": [
+       5,
+       5
+      ],
+      "sacks": [
+       11,
+       11
+      ]
+     }
+    },
+    {
+     "attempts": 601,
+     "club": "NYG",
+     "dropbacks": 629,
+     "interceptions": 14,
+     "name": "Eli Manning",
+     "player_id": "00-0022803",
+     "position": "QB",
+     "rate": 0.022257551669316374,
+     "sacks": 28,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       601,
+       601
+      ],
+      "interceptions": [
+       14,
+       14
+      ],
+      "sacks": [
+       28,
+       28
+      ]
+     }
+    },
+    {
+     "attempts": 367,
+     "club": "NYJ",
+     "dropbacks": 395,
+     "interceptions": 13,
+     "name": "Geno Smith",
+     "player_id": "00-0030565",
+     "position": "QB",
+     "rate": 0.03291139240506329,
+     "sacks": 28,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       367,
+       367
+      ],
+      "interceptions": [
+       13,
+       13
+      ],
+      "sacks": [
+       28,
+       28
+      ]
+     }
+    },
+    {
+     "attempts": 561,
+     "club": "CHI",
+     "dropbacks": 599,
+     "interceptions": 18,
+     "name": "Jay Cutler",
+     "player_id": "00-0024226",
+     "position": "QB",
+     "rate": 0.03005008347245409,
+     "sacks": 38,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       561,
+       561
+      ],
+      "interceptions": [
+       18,
+       18
+      ],
+      "sacks": [
+       38,
+       38
+      ]
+     }
+    },
+    {
+     "attempts": 554,
+     "club": "BAL",
+     "dropbacks": 573,
+     "interceptions": 12,
+     "name": "Joe Flacco",
+     "player_id": "00-0026158",
+     "position": "QB",
+     "rate": 0.020942408376963352,
+     "sacks": 19,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       554,
+       554
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       19,
+       19
+      ]
+     }
+    },
+    {
+     "attempts": 327,
+     "club": "TB",
+     "dropbacks": 363,
+     "interceptions": 14,
+     "name": "Josh McCown",
+     "player_id": "00-0021206",
+     "position": "QB",
+     "rate": 0.03856749311294766,
+     "sacks": 36,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       327,
+       327
+      ],
+      "interceptions": [
+       14,
+       14
+      ],
+      "sacks": [
+       36,
+       36
+      ]
+     }
+    },
+    {
+     "attempts": 447,
+     "club": "BUF",
+     "dropbacks": 480,
+     "interceptions": 10,
+     "name": "Kyle Orton",
+     "player_id": "00-0023541",
+     "position": "QB",
+     "rate": 0.020833333333333332,
+     "sacks": 33,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       447,
+       447
+      ],
+      "interceptions": [
+       10,
+       10
+      ],
+      "sacks": [
+       33,
+       33
+      ]
+     }
+    },
+    {
+     "attempts": 309,
+     "club": "PHI",
+     "dropbacks": 332,
+     "interceptions": 11,
+     "name": "Mark Sanchez",
+     "player_id": "00-0026898",
+     "position": "QB",
+     "rate": 0.03313253012048193,
+     "sacks": 23,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       309,
+       309
+      ],
+      "interceptions": [
+       11,
+       11
+      ],
+      "sacks": [
+       23,
+       23
+      ]
+     }
+    },
+    {
+     "attempts": 628,
+     "club": "ATL",
+     "dropbacks": 659,
+     "interceptions": 14,
+     "name": "Matt Ryan",
+     "player_id": "00-0026143",
+     "position": "QB",
+     "rate": 0.021244309559939303,
+     "sacks": 31,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       628,
+       628
+      ],
+      "interceptions": [
+       14,
+       14
+      ],
+      "sacks": [
+       31,
+       31
+      ]
+     }
+    },
+    {
+     "attempts": 602,
+     "club": "DET",
+     "dropbacks": 647,
+     "interceptions": 12,
+     "name": "Matthew Stafford",
+     "player_id": "00-0026498",
+     "position": "QB",
+     "rate": 0.01854714064914992,
+     "sacks": 45,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       602,
+       602
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       45,
+       45
+      ]
+     }
+    },
+    {
+     "attempts": 203,
+     "club": "TB",
+     "dropbacks": 219,
+     "interceptions": 6,
+     "name": "Mike Glennon",
+     "player_id": "00-0030520",
+     "position": "QB",
+     "rate": 0.0273972602739726,
+     "sacks": 16,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       203,
+       203
+      ],
+      "interceptions": [
+       6,
+       6
+      ],
+      "sacks": [
+       16,
+       16
+      ]
+     }
+    },
+    {
+     "attempts": 311,
+     "club": "PHI",
+     "dropbacks": 320,
+     "interceptions": 10,
+     "name": "Nick Foles",
+     "player_id": "00-0029567",
+     "position": "QB",
+     "rate": 0.03125,
+     "sacks": 9,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       311,
+       311
+      ],
+      "interceptions": [
+       10,
+       10
+      ],
+      "sacks": [
+       9,
+       9
+      ]
+     }
+    },
+    {
+     "attempts": 597,
+     "club": "DEN",
+     "dropbacks": 614,
+     "interceptions": 15,
+     "name": "Peyton Manning",
+     "player_id": "00-0010346",
+     "position": "QB",
+     "rate": 0.024429967426710098,
+     "sacks": 17,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       597,
+       597
+      ],
+      "interceptions": [
+       15,
+       15
+      ],
+      "sacks": [
+       17,
+       17
+      ]
+     }
+    },
+    {
+     "attempts": 570,
+     "club": "LAC",
+     "dropbacks": 606,
+     "interceptions": 18,
+     "name": "Philip Rivers",
+     "player_id": "00-0022942",
+     "position": "QB",
+     "rate": 0.0297029702970297,
+     "sacks": 36,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       570,
+       570
+      ],
+      "interceptions": [
+       18,
+       18
+      ],
+      "sacks": [
+       36,
+       36
+      ]
+     }
+    },
+    {
+     "attempts": 214,
+     "club": "WAS",
+     "dropbacks": 247,
+     "interceptions": 6,
+     "name": "Robert Griffin III",
+     "player_id": "00-0029665",
+     "position": "QB",
+     "rate": 0.024291497975708502,
+     "sacks": 33,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       214,
+       214
+      ],
+      "interceptions": [
+       6,
+       6
+      ],
+      "sacks": [
+       33,
+       33
+      ]
+     }
+    },
+    {
+     "attempts": 452,
+     "club": "SEA",
+     "dropbacks": 494,
+     "interceptions": 7,
+     "name": "Russell Wilson",
+     "player_id": "00-0029263",
+     "position": "QB",
+     "rate": 0.01417004048582996,
+     "sacks": 42,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       452,
+       452
+      ],
+      "interceptions": [
+       7,
+       7
+      ],
+      "sacks": [
+       42,
+       42
+      ]
+     }
+    },
+    {
+     "attempts": 312,
+     "club": "HOU",
+     "dropbacks": 333,
+     "interceptions": 8,
+     "name": "Ryan Fitzpatrick",
+     "player_id": "00-0023682",
+     "position": "QB",
+     "rate": 0.024024024024024024,
+     "sacks": 21,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       312,
+       312
+      ],
+      "interceptions": [
+       8,
+       8
+      ],
+      "sacks": [
+       21,
+       21
+      ]
+     }
+    },
+    {
+     "attempts": 590,
+     "club": "MIA",
+     "dropbacks": 636,
+     "interceptions": 12,
+     "name": "Ryan Tannehill",
+     "player_id": "00-0029701",
+     "position": "QB",
+     "rate": 0.018867924528301886,
+     "sacks": 46,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       590,
+       590
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       46,
+       46
+      ]
+     }
+    },
+    {
+     "attempts": 229,
+     "club": "LA",
+     "dropbacks": 247,
+     "interceptions": 7,
+     "name": "Shaun Hill",
+     "player_id": "00-0020679",
+     "position": "QB",
+     "rate": 0.02834008097165992,
+     "sacks": 18,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       229,
+       229
+      ],
+      "interceptions": [
+       7,
+       7
+      ],
+      "sacks": [
+       18,
+       18
+      ]
+     }
+    },
+    {
+     "attempts": 402,
+     "club": "MIN",
+     "dropbacks": 441,
+     "interceptions": 12,
+     "name": "Teddy Bridgewater",
+     "player_id": "00-0031237",
+     "position": "QB",
+     "rate": 0.027210884353741496,
+     "sacks": 39,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       402,
+       402
+      ],
+      "interceptions": [
+       12,
+       12
+      ],
+      "sacks": [
+       39,
+       39
+      ]
+     }
+    },
+    {
+     "attempts": 582,
+     "club": "NE",
+     "dropbacks": 603,
+     "interceptions": 9,
+     "name": "Tom Brady",
+     "player_id": "00-0019596",
+     "position": "QB",
+     "rate": 0.014925373134328358,
+     "sacks": 21,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       582,
+       582
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       21,
+       21
+      ]
+     }
+    },
+    {
+     "attempts": 435,
+     "club": "DAL",
+     "dropbacks": 464,
+     "interceptions": 9,
+     "name": "Tony Romo",
+     "player_id": "00-0021678",
+     "position": "QB",
+     "rate": 0.01939655172413793,
+     "sacks": 29,
+     "season": 2014,
+     "verification": "Confirmed two-pass",
+     "verification_detail": {
+      "attempts": [
+       435,
+       435
+      ],
+      "interceptions": [
+       9,
+       9
+      ],
+      "sacks": [
+       29,
+       29
+      ]
+     }
+    }
+   ],
+   "verification": {
+    "admissible_pre_divergence": false,
+    "confirmed": 36,
+    "corrected": 0,
+    "last_regular_season_game": "2014-12-28",
+    "play_by_play_only_qualifiers": []
+   }
+  }
+ },
+ "sources": {
+  "play_by_play_2010.csv.gz": {
+   "sha256": "6d4f519b4821f06ffe2285faadad8cee718f464eeb9a310a8276753da10bee2e",
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2010.csv.gz"
+  },
+  "play_by_play_2011.csv.gz": {
+   "sha256": "ffa0bfb803f0c30a4b765af5e621b0f601d695efdba7d6d396fb067d6a0c89b2",
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2011.csv.gz"
+  },
+  "play_by_play_2012.csv.gz": {
+   "sha256": "ff1cda2e26610ef8720324e442d1e5ebc24918e08fd1d2933590b7b91a7068cd",
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2012.csv.gz"
+  },
+  "play_by_play_2013.csv.gz": {
+   "sha256": "b4cd0dc48697ec44a2041d57dfc1c7210a792d1b5be497c161ef20a5b7fb9942",
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2013.csv.gz"
+  },
+  "play_by_play_2014.csv.gz": {
+   "sha256": "4ab286d2873a7eab28e11120f1fe1bd1f0a6bbb6be452f86a76092bd49b2ee4a",
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2014.csv.gz"
+  },
+  "stats_player_reg_2010.csv": {
+   "sha256": "a0ea4f139f49cb0542a2f74a4a72a2a72a8eee37f80c81f073d878abc97159b8",
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2010.csv"
+  },
+  "stats_player_reg_2011.csv": {
+   "sha256": "f8a8e44ccf198570e3c1b05b7dd1430c7d05bdd977dd85a42398b3e97013dff4",
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2011.csv"
+  },
+  "stats_player_reg_2012.csv": {
+   "sha256": "6cdfbf3b291cf1349b33fe8e90542d8ae54cca3726769866f94feaf866b329b5",
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2012.csv"
+  },
+  "stats_player_reg_2013.csv": {
+   "sha256": "342fd27eef619a2aec4a74abf8f689e6b14fab526ae1300095b2654a3981882b",
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2013.csv"
+  },
+  "stats_player_reg_2014.csv": {
+   "sha256": "9f7aee274dddd6b27ec66ae493507aebf5779ed81d4735a53b87bbf28030f7a1",
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2014.csv"
+  }
+ },
+ "status": "research only; read by nothing in runtime/"
+}
