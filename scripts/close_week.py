@@ -305,6 +305,11 @@ def main():
         return PAUSED
 
     write_receipts(package, paths, results, args.season)
+    if args.season != 2013:
+        # Kernel 2014.6 (B7): the week's participation observables from the
+        # frozen package (runtime.observables); records only.
+        from runtime import observables
+        observables.write(observables.from_package(package, observables.season_identities(args.season, ROOT)), ROOT)
     subprocess.run([sys.executable, str(ROOT / "scripts/render_season_stats.py"), str(args.season),
                     "--team", PROTAGONIST], check=True)
     subprocess.run([sys.executable, str(ROOT / "scripts/render_standings.py"), str(args.season)], check=True)

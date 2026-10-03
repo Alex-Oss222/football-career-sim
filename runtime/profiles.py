@@ -53,6 +53,14 @@ kernel reads them):
   participation path (runtime.participation.slot_lineup); full receipts
   carry it. Credit and exposure are unchanged.
 
+Batch B7 (player states, identity and strength v4 at runtime) switches
+PROFILE_2014_6's strength entry to ``player-state-v1`` (runtime.strength
+PARAMETERS, read from library/data/2014_strength_calibration_v4.json under
+its pin): each lineup slot reads the player's drawn state
+(runtime.player_state), honours act as floors, the v4 terms, HOME_EDGE and
+PUNTER_SLOPE apply, and the kernel publishes no per-possession strength
+block. PROFILE_2014_5 keeps honours-production-v3.
+
 A base names the flags its readers require (CalibrationBase.requires_flags):
 a profile resolving on it must hold them, and a profile holding base_2014_6
 or regimes_v3 on a base that does not serve them fails closed.
@@ -125,7 +133,7 @@ def _legacy_base():
 
 
 PROFILE_2014_5 = Profile("2014.5", base="2012", cell_rules="2013.7", strength="honours-production-v3")
-PROFILE_2014_6 = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength="honours-production-v3",
+PROFILE_2014_6 = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength="player-state-v1",
                          flags=frozenset({"base_2014_6", "regimes_v3", "injury_2014_6", "usage_2014_6",
                                           "early_fg_v2", "clock_detail_v1", "substitution_record"}),
                          record_base=True)

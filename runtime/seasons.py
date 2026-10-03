@@ -12,7 +12,11 @@ from .season_layout import season_relative
 
 ROOT = Path(__file__).resolve().parents[1]
 RELEASE_GATES = {'tier1_engine', 'season_rules', 'season_closure', 'dated_fixtures',
-                 'legal_rosters', 'financial_control'}
+                 'legal_rosters', 'financial_control', 'player_state'}
+
+
+def kernel_tuple(version):
+    return tuple(int(part) for part in str(version).split('.'))
 
 
 def active_season(root=ROOT):
@@ -211,6 +215,12 @@ def game_release_errors(season, root=ROOT, preseason=None):
     for gate in release['gates']:
         if gate['status'] not in ('BLOCKED', 'PARTIAL', 'VERIFIED') or not gate.get('remaining'):
             raise ValueError('Invalid season release disposition: ' + gate['id'])
+        applies_from = gate.get('applies_from_kernel')
+        if applies_from and kernel_tuple(KERNEL_VERSION) < kernel_tuple(applies_from):
+            # Kernel 2014.6 (B7): a gate of a kernel not yet installed (the
+            # player-state binding) neither blocks nor passes the installed
+            # kernel; it fails closed the moment that kernel is live.
+            continue
         for evidence in gate.get('evidence', []):
             target = (Path(root) / evidence).resolve()
             if not target.is_relative_to(paths.root) or not target.is_file():

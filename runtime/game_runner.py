@@ -9,6 +9,8 @@ from .kernel import TeamInput, resolve_game, validate_result
 from .packets import canonical
 from .private_client import Client
 from .player_evidence import normalize_players, serialize_roster
+from . import player_state
+from .strength import PLAYER_STATE_MODEL
 from .play_detail import canonical_call_sheet
 from .rotation import plan_errors
 from .usage import lineup_errors
@@ -40,6 +42,20 @@ def build_game_packet(event_id, snapshot, home, away, *, venue="home", weather="
         raise ValueError("current snapshot digest required")
     if home.team_id == away.team_id:
         raise ValueError("game teams must differ")
+    for team in (home, away):
+        # Kernel 2014.6 (B7): a player-state record commits its public states
+        # plus the league year's bound manifest digest, commitment and latent
+        # keys; the manifest must be the pinned one and the binding present.
+        record = team.strength
+        if record and record.get("model") == PLAYER_STATE_MODEL:
+            for field in ("league_year", "manifest_sha256", "commitment", "latent_keys"):
+                if field not in record:
+                    raise ValueError(f"{team.team_id} player-state record lacks {field}")
+            bound = player_state.require_binding(record["league_year"])
+            if record["manifest_sha256"] != bound["manifest_sha256"] or record["commitment"] != bound["commitment"]:
+                raise ValueError(f"{team.team_id} player-state record names another binding than the committed one")
+            if any("latent_value" in p for p in record.get("players", {}).values()):
+                raise ValueError(f"{team.team_id} TeamInput carries drawn values before closure")
     if not normalize_players(home) or not normalize_players(away):
         raise ValueError("each club requires an available, roster-bound participant")
     for team in (home, away):
@@ -91,6 +107,24 @@ def _entropy_from_ref(result_ref):
     return hashlib.sha256(ENTROPY_DOMAIN + raw).digest()
 
 
+def fetch_latent(client, event_id, home, away):
+    """(home, away) with their drawn player states applied, fetched from the
+    private service for a journaled event; unchanged, with no service call,
+    when neither club carries a player-state record."""
+    keys = player_state.keys_of_inputs(home, away)
+    if not keys:
+        return home, away
+    records = [t.strength for t in (home, away) if t.strength and t.strength.get("model") == PLAYER_STATE_MODEL]
+    years = {int(r["league_year"]) for r in records}
+    commitments = {r["commitment"] for r in records}
+    if len(years) != 1 or len(commitments) != 1:
+        raise ValueError("the two clubs' player-state records name different bindings")
+    data = client.latent_draws(event_id, next(iter(years)), keys, player_state.roster_sha256(keys))
+    if data.get("commitment") != next(iter(commitments)):
+        raise ValueError("private runtime served draws under another commitment than the packet's")
+    return player_state.apply_latent(home, data["draws"]), player_state.apply_latent(away, data["draws"])
+
+
 def run_game(home: TeamInput, away: TeamInput, *, event_id, snapshot,
              venue="home", weather="normal", game_type="regular",
              management_mode="autonomous", controlled_team=None, continuation=None,
@@ -121,6 +155,10 @@ def run_game(home: TeamInput, away: TeamInput, *, event_id, snapshot,
                                management_mode=management_mode, game_date=game_date)
     result_ref = client.close_event(packet)  # durable closure precedes draw
     entropy = _entropy_from_ref(result_ref)
+    # Kernel 2014.6 (B7): the player-state draws are fetched only after the
+    # event is journaled, applied to deep copies of the inputs, and never
+    # enter the packet. Inputs without a player-state record make no call.
+    home, away = fetch_latent(client, event_id, home, away)
     result = resolve_game(home, away, seed=entropy, event_id=event_id, venue=venue,
                           weather=weather, game_type=game_type,
                           management_mode=management_mode, controlled_team=controlled_team,

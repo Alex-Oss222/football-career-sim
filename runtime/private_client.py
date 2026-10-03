@@ -136,6 +136,35 @@ class Client:
         data=self._request("/admin/snapshot/advance?"+query,method="POST")
         return data["snapshot"]
 
+    # ---- kernel 2014.6 (batch B7): player-state latent draws ----------------------
+    def bind_latent(self,league_year,manifest_sha256):
+        """Bind a league year's player states in the service; returns the
+        binding record (league_year, manifest_sha256, public_table_sha256,
+        commitment, rows). Never returns the season reference."""
+        if not isinstance(manifest_sha256,str) or len(manifest_sha256)!=64:
+            raise ValueError("manifest_sha256 must be a 64-character hex digest")
+        query=urlencode({"league_year":int(league_year),"manifest_sha256":manifest_sha256})
+        data=self._request("/latent/bind?"+query,method="POST")
+        if not (data.get("bound") is True and isinstance(data.get("commitment"),str) and len(data["commitment"])==64):
+            raise PrivateRuntimeUnavailable("private runtime returned an invalid latent binding")
+        return data
+
+    def latent_draws(self,event_id,league_year,keys,roster_sha256):
+        """{key text: z hex} plus the bound commitment for a journaled event's keys."""
+        from .player_state import key_text
+        if not isinstance(event_id,str) or not event_id.strip():
+            raise ValueError("event_id must be a nonempty string")
+        texts=sorted(key_text(k) for k in keys)
+        if not texts:
+            raise ValueError("latent keys required")
+        query=urlencode({"event_id":event_id,"league_year":int(league_year),"roster_sha256":roster_sha256,
+                         "keys":",".join(texts)})
+        data=self._request("/latent/draws?"+query,method="POST")
+        draws=data.get("draws")
+        if not isinstance(draws,dict) or set(draws)!=set(texts) or not isinstance(data.get("commitment"),str):
+            raise PrivateRuntimeUnavailable("private runtime returned invalid latent draws")
+        return data
+
     def record_correction(self,event_id,reason):
         for name,value in (("event_id",event_id),("reason",reason)):
             if not isinstance(value,str) or not value.strip():

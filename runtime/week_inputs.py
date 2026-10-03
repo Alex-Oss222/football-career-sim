@@ -400,11 +400,27 @@ def _rails_metadata(slate, games, season, deferred):
     }
 
 
-def strength_identities(roster, season, club=None, protagonist=False, registry=None):
+def identity_map(season=2014, root=ROOT):
+    """{player_id: gsis_id} of the season's branch identity table (kernel
+    2014.6 batch B4a, career/YEAR/league/personnel/branch_identity.json): the
+    identity map that stays outside every packet. Empty when the season has
+    none."""
+    path = SeasonPaths(int(season), root).record("league/personnel/branch_identity.json")
+    if not path.is_file():
+        return {}
+    return dict(json.loads(path.read_text(encoding="utf-8")).get("by_player_id", {}))
+
+
+def strength_identities(roster, season, club=None, protagonist=False, registry=None, identities=None,
+                        strict=False):
     """Roster rows with their gsis id for runtime.strength, never in the
     TeamInput (PlayerInput has no gsis field). Background players take the
     rails entry's id; Jacksonville's come from the identity registry and fail
-    closed when missing (engineering review B6)."""
+    closed when missing (engineering review B6). Kernel 2014.6 (B7): the
+    branch identity table (`identities`, identity_map by default) fills a
+    row the source left without an id and must agree with the source's id
+    where both exist (a conflict blocks the build); with `strict`, the
+    player-state model's requirement, a row still without an id blocks."""
     ids = {}
     if club is not None:
         ids = {p["player_id"]: p.get("gsis_id") for p in club["players"]}
@@ -414,12 +430,33 @@ def strength_identities(roster, season, club=None, protagonist=False, registry=N
         if missing:
             raise ValueError("strength identity: no gsis id for " + ", ".join(missing))
         ids = {r["player_id"]: registry[r["player_id"]]["gsis_id"] for r in roster}
-    return [dict(r, gsis_id=ids.get(r["player_id"])) for r in roster]
+    identities = identity_map(season) if identities is None else identities
+    out = []
+    for r in roster:
+        source = ids.get(r["player_id"]) or r.get("gsis_id")
+        mapped = identities.get(r["player_id"])
+        if source and mapped and source != mapped:
+            raise ValueError("strength identity: %s is %s in its roster source and %s in the identity table"
+                             % (r["player_id"], source, mapped))
+        gsis = source or mapped
+        if strict and not gsis:
+            raise ValueError("strength identity: %s has no gsis id in its roster source or the identity table "
+                             "(the player-state model needs every identity)" % r["player_id"])
+        out.append(dict(r, gsis_id=gsis))
+    return out
 
 
-def build_package(week, receipts, call_sheet, anchors, season=2013):
+def build_package(week, receipts, call_sheet, anchors, season=2013, strength_model=None):
+    """The weekly package. `strength_model` is the strength record model for
+    every club (the installed kernel's when None; kernel 2014.6 batch B7:
+    under player-state-v1 every roster row needs its gsis id and the league
+    year must be bound, else the build blocks)."""
     games = []
     coverage = {}
+    if season != 2013:
+        strength_model = strength_model or strength.live_model()
+    identities = identity_map(season) if season != 2013 else {}
+    strict = strength_model == strength.PLAYER_STATE_MODEL
     birth_dates = player_bios.load()
     slate_games = schedule(week, season)
     slate = rails_slate(week, season, receipts, slate_games) if season != 2013 else None
@@ -443,9 +480,11 @@ def build_package(week, receipts, call_sheet, anchors, season=2013):
                 # day (runtime/strength.py). The closed 2013 season is never
                 # rebuilt with it. From the rails' effective week every club
                 # joins by gsis id (engineering review B6).
-                rows = (strength_identities(data["roster"], season, club=club, protagonist=team == PROTAGONIST)
-                        if slate else data["roster"])
-                data["strength"], coverage[team] = strength.team_strength(team, rows, season, game_day)
+                rows = (strength_identities(data["roster"], season, club=club, protagonist=team == PROTAGONIST,
+                                            identities=identities, strict=strict)
+                        if slate or strict else data["roster"])
+                data["strength"], coverage[team] = strength.team_strength(team, rows, season, game_day,
+                                                                          model=strength_model)
             return data
 
         games.append({

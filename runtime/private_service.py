@@ -1,7 +1,20 @@
 """Authenticated private Engine State service.
 
 Deployment data and authentication material must be outside the checkout.  The
-HTTP API intentionally exposes only health/readiness and opaque result closure.
+HTTP API intentionally exposes only health/readiness, opaque result closure
+and, from kernel 2014.6 (batch B7), the player-state latent draws.
+
+Latent draws (schema 2 tables, created on every store so a schema 1 store
+migrates in place with every existing row untouched; the change is journaled
+in schema_transitions). The season reference R_Y is an HMAC of the store seed
+by league year and never leaves the service. /latent/bind draws and records z
+for every row of the committed public table (runtime.player_state) and
+commits to the sorted rows; binding a league year a second time with the same
+manifest is idempotent and with another manifest is refused. /latent/draws
+releases z only for the keys of an already-journaled event, binds those keys
+to the event on first request (roster_sha256) and refuses a different roster
+later; a later entrant's key is drawn from the same R_Y and appended. Both are
+locked while a snapshot advance is pending.
 """
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import argparse, hashlib, hmac, json, os, secrets, sqlite3, threading, time
@@ -9,6 +22,7 @@ from pathlib import Path
 from contextlib import closing
 from urllib.parse import urlsplit, parse_qs
 from .packets import canonical
+from . import player_state
 
 SCHEMA="1"; KERNEL="2014.5"
 
@@ -49,6 +63,30 @@ class Store:
                 previous_kernel TEXT NOT NULL,
                 next_kernel TEXT NOT NULL,
                 snapshot TEXT NOT NULL,
+                created INTEGER NOT NULL);
+            CREATE TABLE IF NOT EXISTS schema_transitions(
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                previous_schema TEXT NOT NULL,
+                next_schema TEXT NOT NULL,
+                created INTEGER NOT NULL);
+            CREATE TABLE IF NOT EXISTS latent_seasons(
+                league_year INTEGER PRIMARY KEY,
+                manifest_sha256 TEXT NOT NULL,
+                public_table_sha256 TEXT NOT NULL,
+                commitment TEXT NOT NULL,
+                rows INTEGER NOT NULL,
+                created INTEGER NOT NULL);
+            CREATE TABLE IF NOT EXISTS latent_draws(
+                league_year INTEGER NOT NULL,
+                gsis_id TEXT NOT NULL,
+                slot TEXT NOT NULL,
+                z TEXT NOT NULL,
+                created INTEGER NOT NULL,
+                PRIMARY KEY(league_year,gsis_id,slot));
+            CREATE TABLE IF NOT EXISTS latent_requests(
+                event_id TEXT PRIMARY KEY,
+                league_year INTEGER NOT NULL,
+                roster_sha256 TEXT NOT NULL,
                 created INTEGER NOT NULL);""")
     def initialize(self,snapshot,allow_pending=False):
         """Bind the store to the image's Document 5 digest.
@@ -76,8 +114,17 @@ class Store:
                 c.execute("INSERT INTO kernel_transitions(previous_kernel,next_kernel,snapshot,created) "
                           "VALUES(?,?,?,?)",(stored_kernel[0].decode(),KERNEL,bound,int(time.time())))
             c.execute("INSERT OR REPLACE INTO meta VALUES('kernel',?)",(KERNEL.encode(),))
+            stored_schema=c.execute("SELECT value FROM meta WHERE key='schema'").fetchone()
+            if stored_schema and stored_schema[0].decode()!=SCHEMA:
+                # Kernel 2014.6 (B7): a schema change is journaled append-only; every
+                # existing row (events, snapshots, draws) is untouched.
+                c.execute("INSERT INTO schema_transitions(previous_schema,next_schema,created) VALUES(?,?,?)",
+                          (stored_schema[0].decode(),SCHEMA,int(time.time())))
             c.execute("INSERT OR REPLACE INTO meta VALUES('schema',?)",(SCHEMA.encode(),))
             return pending
+    def schema_history(self):
+        with closing(self.connect()) as c:
+            return c.execute("SELECT previous_schema,next_schema FROM schema_transitions ORDER BY id").fetchall()
     def kernel_history(self):
         """Append-only kernel lineage of this store, oldest first."""
         with closing(self.connect()) as c:
@@ -211,6 +258,89 @@ class Store:
                       (result,int(time.time()),event_id))
             return result
 
+    # ---- kernel 2014.6 (batch B7): player-state latent draws ----------------------
+    def _reference(self,c,league_year):
+        seed=c.execute("SELECT value FROM meta WHERE key='seed'").fetchone()[0]
+        return player_state.season_reference(seed,league_year)
+    def _draw(self,c,key):
+        """z (hex) for one key, recorded on first need; R_Y is the key's own year's."""
+        year,gsis,slot=int(key[1]),key[2],key[3]
+        row=c.execute("SELECT z FROM latent_draws WHERE league_year=? AND gsis_id=? AND slot=?",
+                      (year,gsis,slot)).fetchone()
+        if row: return row[0]
+        z=player_state.z_text(player_state.draw_z(self._reference(c,year),key))
+        c.execute("INSERT INTO latent_draws(league_year,gsis_id,slot,z,created) VALUES(?,?,?,?,?)",
+                  (year,gsis,slot,z,int(time.time())))
+        return z
+    def latent_bound(self):
+        """{league_year: {manifest_sha256, commitment, rows}} of the bound years (never R)."""
+        with closing(self.connect()) as c:
+            return {str(r[0]):{"manifest_sha256":r[1],"commitment":r[2],"rows":r[3]} for r in
+                    c.execute("SELECT league_year,manifest_sha256,commitment,rows FROM latent_seasons ORDER BY league_year")}
+    def bind_latent(self,league_year,manifest_sha256):
+        """Draw and record z for every row of the committed public table of
+        `league_year` (the manifest must be the pinned one), and commit to the
+        sorted rows. Idempotent for the same manifest; a second manifest is
+        refused. Returns the binding record (no R)."""
+        try: league_year=int(league_year)
+        except (TypeError,ValueError): raise ValueError("league_year must be an integer") from None
+        if not isinstance(manifest_sha256,str) or len(manifest_sha256)!=64:
+            raise ValueError("manifest_sha256 must be a 64-character hex digest")
+        if league_year!=player_state.league_year():
+            raise ValueError("no public player-state table is committed for league year %d"%league_year)
+        pinned=player_state.manifest_sha256()
+        if manifest_sha256!=pinned:
+            raise ValueError("manifest %s is not the committed manifest %s"%(manifest_sha256[:12],pinned[:12]))
+        table=player_state.public_table()
+        with self.lock, closing(self.connect()) as c, c:
+            c.execute("BEGIN IMMEDIATE")
+            bound=c.execute("SELECT manifest_sha256,public_table_sha256,commitment,rows FROM latent_seasons "
+                            "WHERE league_year=?",(league_year,)).fetchone()
+            if bound:
+                if bound[0]!=manifest_sha256: raise ValueError("league year %d is bound to another manifest; a second manifest is refused"%league_year)
+                return {"league_year":league_year,"manifest_sha256":bound[0],"public_table_sha256":bound[1],
+                        "commitment":bound[2],"rows":bound[3],"bound":True,"idempotent":True}
+            rows=[]
+            for gsis in sorted(table):
+                for key in player_state.row_keys(gsis,table[gsis],league_year,league_year):
+                    rows.append((player_state.key_text(key),self._draw(c,key)))
+            commitment=player_state.commitment(rows)
+            manifest=player_state.manifest()
+            c.execute("INSERT INTO latent_seasons(league_year,manifest_sha256,public_table_sha256,commitment,rows,created) "
+                      "VALUES(?,?,?,?,?,?)",(league_year,manifest_sha256,manifest["public_table_sha256"],commitment,
+                                             len(rows),int(time.time())))
+            return {"league_year":league_year,"manifest_sha256":manifest_sha256,
+                    "public_table_sha256":manifest["public_table_sha256"],"commitment":commitment,
+                    "rows":len(rows),"bound":True,"idempotent":False}
+    def latent_draws(self,event_id,league_year,keys,roster_sha256):
+        """{key text: z hex} for the keys of a journaled event. The first
+        request binds the event to its roster digest; a later request with
+        another roster is refused, as is a request before the event's closure,
+        for an unbound league year, or with a digest the keys do not match."""
+        if not isinstance(event_id,str) or not event_id.strip():
+            raise ValueError("event_id must be a nonempty string")
+        try: league_year=int(league_year)
+        except (TypeError,ValueError): raise ValueError("league_year must be an integer") from None
+        keys=[player_state.parse_key_text(k) for k in keys]
+        if not keys: raise ValueError("latent keys required")
+        if any(k[3] not in player_state.BASE_SLOTS+(player_state.INNOVATION_SLOT,) for k in keys):
+            raise ValueError("unknown latent slot")
+        if roster_sha256!=player_state.roster_sha256(keys):
+            raise ValueError("roster_sha256 does not match the requested keys")
+        with self.lock, closing(self.connect()) as c, c:
+            c.execute("BEGIN IMMEDIATE")
+            bound=c.execute("SELECT commitment FROM latent_seasons WHERE league_year=?",(league_year,)).fetchone()
+            if not bound: raise ValueError("league year %d is not bound"%league_year)
+            event=c.execute("SELECT result FROM events WHERE event_id=?",(event_id,)).fetchone()
+            if not event or not event[0]: raise ValueError("latent draws are released only for a journaled event")
+            prior=c.execute("SELECT roster_sha256 FROM latent_requests WHERE event_id=?",(event_id,)).fetchone()
+            if prior and prior[0]!=roster_sha256: raise ValueError("roster mismatch: the event's latent keys were bound to another roster")
+            if not prior:
+                c.execute("INSERT INTO latent_requests(event_id,league_year,roster_sha256,created) VALUES(?,?,?,?)",
+                          (event_id,league_year,roster_sha256,int(time.time())))
+            draws={player_state.key_text(k):self._draw(c,k) for k in keys}
+            return {"league_year":league_year,"commitment":bound[0],"draws":draws}
+
     def close(self,event_id,packet):
         """Compatibility wrapper for local tests and legacy body callers."""
         return self.close_digest(event_id,hashlib.sha256(packet).hexdigest())
@@ -248,14 +378,26 @@ def handler(store,token,snapshot=None,locked_until=None):
             if self.path=="/ready":
                 current=store.current_snapshot()
                 waiting=pending()
-                return self.send(200,{"ready":store.ready() and not waiting,"snapshot_advance_pending":waiting,"schema":SCHEMA,"kernel":KERNEL,"procedure":KERNEL,"snapshot":current,"career_initialized":True,"private_seed_exists":True,"journal_persistent":True,"recovery":"verified"})
+                return self.send(200,{"ready":store.ready() and not waiting,"snapshot_advance_pending":waiting,"schema":SCHEMA,"kernel":KERNEL,"procedure":KERNEL,"snapshot":current,"career_initialized":True,"private_seed_exists":True,"journal_persistent":True,"recovery":"verified","latent_bound":store.latent_bound()})
             self.send(404,{"error":"not found"})
         def do_POST(self):
             if not self.auth(): return
             try:
                 parsed=urlsplit(self.path)
-                if parsed.path in {"/events/close","/admin/probe"} and pending():
+                if (parsed.path in {"/events/close","/admin/probe"} or parsed.path.startswith("/latent/")) and pending():
                     return self.send(409,{"error":"snapshot advance pending; event closure locked"})
+                if parsed.path in {"/latent/bind","/latent/draws"}:
+                    # Kernel 2014.6 (B7): bodyless, like every other mutation.
+                    query=parse_qs(parsed.query,keep_blank_values=True)
+                    one=lambda name:(query.get(name) or [None])[0]
+                    if parsed.path=="/latent/bind":
+                        if one("league_year") is None or one("manifest_sha256") is None:
+                            raise ValueError("league_year and manifest_sha256 are both required")
+                        return self.send(200,store.bind_latent(one("league_year"),one("manifest_sha256")))
+                    if any(one(n) is None for n in ("event_id","league_year","roster_sha256","keys")):
+                        raise ValueError("event_id, league_year, roster_sha256 and keys are all required")
+                    keys=[k for k in one("keys").split(",") if k]
+                    return self.send(200,store.latent_draws(one("event_id"),one("league_year"),keys,one("roster_sha256")))
                 if parsed.path=="/events/close":
                     # Canonical production contract: event identity and the
                     # SHA-256 identity of the canonical packet travel in the

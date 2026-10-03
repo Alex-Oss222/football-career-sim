@@ -13,6 +13,7 @@ from . import chains as chain_walk
 from . import drive_model
 from . import field_position
 from . import strength as unit_strength
+from . import player_state
 from . import usage
 from .player_evidence import empty_player_stats, normalize_players, observation
 from .profiles import Profile, profile_for
@@ -304,7 +305,7 @@ def _partial_result(event_id, game_type, opening_receiver, stats, possessions, k
 
 def resolve_game(home, away, *, seed, event_id, venue="home", weather="normal", game_type="regular",
                  management_mode="autonomous", controlled_team=None, continuation=None, game_date=None,
-                 _test_onsets=None, _test_profile=None):
+                 _test_onsets=None, _test_profile=None, _test_strength_receipt=None):
     """Resolve one game, or return a genuine partial result at an E2 pause.
 
     Kernel 2014.4 (E2): ``management_mode="user_controlled"`` with a
@@ -326,15 +327,23 @@ def resolve_game(home, away, *, seed, event_id, venue="home", weather="normal", 
     base is bound once here. ``_test_profile`` resolves with another Profile
     (tests and acceptance scripts only); the production runner cannot pass
     it (runtime.game_runner.architecture_errors).
+
+    Kernel 2014.6 (batch B7): under the player-state strength model the
+    result carries no per-possession strength block (the drawn values are
+    hidden). ``_test_strength_receipt``, a list, receives each drive's
+    receipt for tests and acceptance scripts only.
     """
     if _test_profile is not None and not isinstance(_test_profile, Profile):
         raise TypeError("_test_profile must be a runtime.profiles.Profile")
     profile = _test_profile if _test_profile is not None else profile_for(KERNEL_VERSION)
+    if _test_strength_receipt is not None and not isinstance(_test_strength_receipt, list):
+        raise TypeError("_test_strength_receipt must be a list")
     try:
         return _resolve_game(home, away, seed=seed, event_id=event_id, venue=venue, weather=weather,
                              game_type=game_type, management_mode=management_mode,
                              controlled_team=controlled_team, continuation=continuation,
-                             game_date=game_date, _test_onsets=_test_onsets, profile=profile)
+                             game_date=game_date, _test_onsets=_test_onsets, profile=profile,
+                             _test_strength_receipt=_test_strength_receipt)
     except _Paused as paused:
         return paused.partial
 
@@ -354,6 +363,7 @@ def _resolve_game(
     game_date=None,
     _test_onsets=None,
     profile,
+    _test_strength_receipt=None,
 ):
     if not isinstance(seed, bytes) or len(seed) < 32:
         raise ValueError("private seed required")
@@ -414,6 +424,19 @@ def _resolve_game(
     fpm = cbase.field_position()
     injury_params = profile.injury_base(cbase).injury_parameters()
     strength_params = unit_strength.parameters(profile.strength)
+    # Kernel 2014.6 (B7): a profile on the player-state model resolves only
+    # records of that model, and only with every drawable player's latent
+    # value present (fails closed); a profile on honours-production-v3 never
+    # reads a player-state record.
+    hidden_strength = strength_params.model == unit_strength.PLAYER_STATE_MODEL
+    for team in (home, away):
+        if team.strength and team.strength.get("model") != strength_params.model:
+            raise ValueError("%s strength record is model %s; profile %s resolves %s"
+                             % (team.team_id, team.strength.get("model"), profile.kernel_version,
+                                strength_params.model))
+        missing = player_state.latent_errors(team.strength)
+        if missing:
+            raise ValueError("%s player-state record cannot resolve: %s" % (team.team_id, "; ".join(missing[:5])))
     # The base's yardage numbers (runtime.calibration.kernel_rates; the 2012
     # schema keeps its exact expressions). The per-play penalty counter stays
     # the 2012 base's factor until R11 owns it (batch B11).
@@ -1312,10 +1335,14 @@ def _resolve_game(
         }
         if off_notes or def_notes:
             record["emergency"] = off_notes + def_notes
-        if team.strength or defense.strength:
+        if (team.strength or defense.strength) and not hidden_strength:
             # Kernel 2014.4 E1 (append-only): the drive's composites, their
-            # contributors and the edge they produced.
+            # contributors and the edge they produced. Not under the
+            # player-state model (B7): the contributors would publish the
+            # drawn values.
             record["strength"] = strength_receipt
+        if _test_strength_receipt is not None:
+            _test_strength_receipt.append({"drive": drive_no, "team": offense, **strength_receipt})
         # Kernel 2014.4 phase 2 (append-only): the field-goal probability the
         # make was drawn against, the punt transition as adjusted, and the
         # layout resample when one stood in for the drawn drive.

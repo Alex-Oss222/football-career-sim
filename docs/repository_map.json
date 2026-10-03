@@ -406,7 +406,8 @@
     "player_ages": "career/2014/00_Team_Operations/Team/Roster/player_ages.md",
     "background_depth": "library/data/2013_week1_depth_charts.json",
     "record": "career/2014/Record.md",
-    "inseason_rails": "library/data/2014_inseason_rails/manifest.json"
+    "inseason_rails": "library/data/2014_inseason_rails/manifest.json",
+    "observables": "career/2014/League/personnel/observables"
   },
   "background_depth_status": "Legacy biography source only; not legal 2014 game input. The 2014 background library (library/data/2014_week1_depth_charts.json) is prepared research, gated until the master clock reaches Week 1, September 7, 2014",
   "event_record_sources": [

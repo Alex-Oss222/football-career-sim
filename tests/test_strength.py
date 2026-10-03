@@ -690,7 +690,14 @@ class SpecialTeamsTests(unittest.TestCase):
         for profile in PROFILES.values():
             self.assertIn(profile.strength, strength.PARAMETERS)
         with self.assertRaises(ValueError):
-            strength.parameters("player-state-v1")
+            strength.parameters("honours-production-v9")
+        # Kernel 2014.6 (B7): the player-state entry is read from the v4
+        # artifact under its pin; its channels and clamps are the same.
+        v1 = strength.parameters(strength.PLAYER_STATE_MODEL)
+        self.assertEqual(v1.model, strength.PLAYER_STATE_MODEL)
+        self.assertEqual((v1.sack_shift_clamp, v1.int_edge_clamp, v1.edge_clamp), (params.sack_shift_clamp,
+                         params.int_edge_clamp, params.edge_clamp))
+        self.assertEqual([t["name"] for t in v1.terms], list(strength.V4_TERM_ORDER))
 
     def test_kicker_term_is_wired_and_inactive(self):
         roster = game_day_roster("A")

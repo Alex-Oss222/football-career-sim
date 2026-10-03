@@ -69,6 +69,8 @@ python scripts/render_team_tracker.py YEAR
 python scripts/league_awards.py week WEEK --season YEAR --close
 ```
 
+Kernel 2014.6 (batch B7): the same closure writes the week's participation observables (`career/YEAR/league/personnel/observables/week_NN.json`, `runtime/observables.py`) from the frozen package; a week closed before that record existed is backfilled with `python scripts/render_observables.py --season YEAR --week N` (`--check` compares). Under the player-state strength model the production runner fetches each club's drawn states from the private service only after the event is journaled (`runtime/game_runner.fetch_latent`); the league year must be bound first (`python scripts/bind_latent_season.py YEAR`, from merged main; the binding file is committed) and no receipt, paused record or results file carries a possession strength block (`scripts/validate_repository.py` privacy check).
+
 `render_box_score.py --season YEAR --write OUTPUT_PATH` fills the resolved game's actual output path. Preserve regular-season and postseason totals separately. From 2014, working player records retain prior yearly rows and receive only supported statistical updates; game rendering does not silently re-grade a player.
 
 Jacksonville's game uses user-controlled management. A consequential injury/removal pause writes the completed prefix and waits for Stone's replacement decision through the same private event; do not close the remaining slate first or invent an answer. The private snapshot advances only from the merged canonical branch under the normal workflow, never from an unmerged PR.

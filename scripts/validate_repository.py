@@ -464,6 +464,17 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append('2014 season records invalid: ' + str(exc))
 
+    # Kernel 2014.6 (batch B7) privacy check: under the player-state model
+    # the drawn values are hidden, so no receipt, paused record or results
+    # file of kernel 2014.6 or later may carry a possession strength block,
+    # and no attribution tier appears outside library/data (the model files
+    # themselves are the only legitimate holders).
+    try:
+        from runtime.privacy import privacy_errors
+        errors.extend(privacy_errors(root))
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append('player-state privacy check failed: ' + str(exc))
+
     # In-season roster rails (library/2014_inseason_rails.md): the committed
     # moves stay behind the master clock, keep their recorded hashes and
     # stripped forms, and every closed week from the effective week has a

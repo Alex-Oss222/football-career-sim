@@ -65,6 +65,16 @@
             "career/2014/00_Team_Operations/Finances/player_contracts/contract_status.md",
             "career/2014/00_Team_Operations/Finances/player_contracts/contracts.md"
           ]
+        },
+        {
+          "id": "player_state",
+          "applies_from_kernel": "2014.6",
+          "status": "BLOCKED",
+          "remaining": "Kernel 2014.6 (batch B7, October 3, 2026): the 2014 league year's player states are not bound. After the release merges and the service redeploys, run python scripts/bind_latent_season.py 2014 from merged main, commit library/data/2014_player_state_binding.json (manifest digest and the public commitment over the service's drawn rows), and set this gate VERIFIED with that file as evidence. Until then every game on the player-state model fails closed (runtime/player_state.require_binding). The gate applies from kernel 2014.6; kernel 2014.5 does not read player states and is not blocked by it.",
+          "evidence": [
+            "runtime/README.md",
+            "library/2010_2014_player_state_study.md"
+          ]
         }
       ]
     }
