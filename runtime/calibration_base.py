@@ -13,7 +13,7 @@ is used and fails closed on any difference.
 kernel up to 2014.5 draws from (and its closed receipts are audited against)
 the 2012 base; kernel 2014.6 maps to the 2010-2014 league base the user chose
 on October 2, 2026 (U1 = (b), runtime/2014_engine_decisions.md). That base is
-built by batch B3; until its artifacts and pins are committed it fails
+built by batch B3 (data only); until batch B5 pins it and adds its readers it fails
 closed. An unknown version raises.
 
 A CalibrationBase owns its loaded data and every memoised helper built on
@@ -54,11 +54,11 @@ KERNEL_BASES = {
     "2014.6": "2010_2014w4",
 }
 
-# Bases named by KERNEL_BASES whose artifacts are not committed yet.
+# Bases named by KERNEL_BASES that no runtime reader serves yet.
 PENDING_BASES = {
-    "2010_2014w4": ("the 2010-2014 (2014 Weeks 1-4) league base is built by batch B3 "
-                    "(scripts/research/build_2010_2014_league_base.py); its artifacts and "
-                    "pins are not committed yet"),
+    "2010_2014w4": ("the 2010-2014 (2014 Weeks 1-4) league base artifacts are built by batch B3 "
+                    "(scripts/research/build_2010_2014_league_base.py; data only); its pins and "
+                    "the schema-3 readers land with batch B5"),
 }
 
 

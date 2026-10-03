@@ -1,0 +1,732 @@
+{
+ "builder": "scripts/research/build_2014_conditions_calibration.py",
+ "league": {
+  "Dec-Jan": {
+   "cold_x": 0.8421739130434781,
+   "games": 230,
+   "wind_x": 8.734782608695653
+  },
+  "Nov": {
+   "cold_x": 0.34277108433734943,
+   "games": 166,
+   "wind_x": 9.493975903614459
+  },
+  "Sep-Oct": {
+   "cold_x": 0.017964071856287425,
+   "games": 334,
+   "wind_x": 8.311377245508982
+  }
+ },
+ "min_games_rule": "a venue-month cell with fewer than 5 games uses the venue's all-season mean plus the league month offset (a labelled convention); a venue with no such game uses the league cell",
+ "month_bins": [
+  "Sep-Oct",
+  "Nov",
+  "Dec-Jan"
+ ],
+ "retractable_rule": "a retractable roof applies (1 - closed share) x these open-roof means (2014_venues.json)",
+ "schema": "2010-2013-venue-climatology-v1",
+ "source": "nflverse 2010-2013 regular-season game conditions (roof, temp, wind), outdoor or open-roof non-neutral games with both temp and wind",
+ "specification_sha256": "ca028ba38009d1b84e5c887ea86ce8d697edf1705bcd9b755f60aede9d6f8446",
+ "venues": {
+  "ATL00": {
+   "Dec-Jan": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.8421739130434781,
+    "games": 0,
+    "wind_x": 8.734782608695653
+   },
+   "Nov": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.34277108433734943,
+    "games": 0,
+    "wind_x": 9.493975903614459
+   },
+   "Sep-Oct": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.017964071856287425,
+    "games": 0,
+    "wind_x": 8.311377245508982
+   }
+  },
+  "BAL00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 0.61,
+    "games": 10,
+    "wind_x": 8.6
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.4,
+    "games": 8,
+    "wind_x": 9.625
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.014285714285714287,
+    "games": 14,
+    "wind_x": 7.142857142857143
+   }
+  },
+  "BOS00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 1.209090909090909,
+    "games": 11,
+    "wind_x": 8.272727272727273
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 1.0285714285714285,
+    "games": 7,
+    "wind_x": 10.142857142857142
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.0071428571428571435,
+    "games": 14,
+    "wind_x": 9.714285714285714
+   }
+  },
+  "BUF00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 1.388888888888889,
+    "games": 9,
+    "wind_x": 12.333333333333334
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.7166666666666667,
+    "games": 6,
+    "wind_x": 9.833333333333334
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 13,
+    "wind_x": 10.153846153846153
+   }
+  },
+  "BUF01": {
+   "Dec-Jan": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.8421739130434781,
+    "games": 0,
+    "wind_x": 8.734782608695653
+   },
+   "Nov": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.34277108433734943,
+    "games": 0,
+    "wind_x": 9.493975903614459
+   },
+   "Sep-Oct": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.017964071856287425,
+    "games": 0,
+    "wind_x": 8.311377245508982
+   }
+  },
+  "CAR00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 0.23333333333333328,
+    "games": 9,
+    "wind_x": 8.555555555555555
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 7,
+    "wind_x": 8.428571428571429
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 16,
+    "wind_x": 6.4375
+   }
+  },
+  "CHI98": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 1.5999999999999999,
+    "games": 8,
+    "wind_x": 13.0
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.3875,
+    "games": 8,
+    "wind_x": 13.625
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.00625,
+    "games": 16,
+    "wind_x": 9.875
+   }
+  },
+  "CIN00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 1.3909090909090909,
+    "games": 11,
+    "wind_x": 9.272727272727273
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.21250000000000002,
+    "games": 8,
+    "wind_x": 10.125
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.007692307692307693,
+    "games": 13,
+    "wind_x": 6.538461538461538
+   }
+  },
+  "CLE00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 1.1375,
+    "games": 8,
+    "wind_x": 16.0
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.9222222222222223,
+    "games": 9,
+    "wind_x": 16.444444444444443
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.05333333333333334,
+    "games": 15,
+    "wind_x": 11.466666666666667
+   }
+  },
+  "DAL00": {
+   "Dec-Jan": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.8421739130434781,
+    "games": 0,
+    "wind_x": 8.734782608695653
+   },
+   "Nov": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.34277108433734943,
+    "games": 0,
+    "wind_x": 9.493975903614459
+   },
+   "Sep-Oct": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.017964071856287425,
+    "games": 0,
+    "wind_x": 8.311377245508982
+   }
+  },
+  "DEN00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 0.8300000000000001,
+    "games": 10,
+    "wind_x": 6.3
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.38,
+    "games": 5,
+    "wind_x": 6.0
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 17,
+    "wind_x": 7.705882352941177
+   }
+  },
+  "DET00": {
+   "Dec-Jan": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.8421739130434781,
+    "games": 0,
+    "wind_x": 8.734782608695653
+   },
+   "Nov": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.34277108433734943,
+    "games": 0,
+    "wind_x": 9.493975903614459
+   },
+   "Sep-Oct": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.017964071856287425,
+    "games": 0,
+    "wind_x": 8.311377245508982
+   }
+  },
+  "GNB00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 2.1363636363636362,
+    "games": 11,
+    "wind_x": 11.727272727272727
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 1.0857142857142856,
+    "games": 7,
+    "wind_x": 9.428571428571429
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.07142857142857142,
+    "games": 14,
+    "wind_x": 8.214285714285714
+   }
+  },
+  "HOU00": {
+   "Dec-Jan": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.8421739130434781,
+    "games": 0,
+    "wind_x": 8.734782608695653
+   },
+   "Nov": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.34277108433734943,
+    "games": 0,
+    "wind_x": 9.493975903614459
+   },
+   "Sep-Oct": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.017964071856287425,
+    "games": 0,
+    "wind_x": 8.311377245508982
+   }
+  },
+  "IND00": {
+   "Dec-Jan": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.8421739130434781,
+    "games": 0,
+    "wind_x": 8.734782608695653
+   },
+   "Nov": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.34277108433734943,
+    "games": 0,
+    "wind_x": 9.493975903614459
+   },
+   "Sep-Oct": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.017964071856287425,
+    "games": 0,
+    "wind_x": 8.311377245508982
+   }
+  },
+  "JAX00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 0.12,
+    "games": 10,
+    "wind_x": 11.1
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 7,
+    "wind_x": 6.428571428571429
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 14,
+    "wind_x": 7.642857142857143
+   }
+  },
+  "KAN00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 1.5555555555555556,
+    "games": 9,
+    "wind_x": 7.111111111111111
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.6285714285714287,
+    "games": 7,
+    "wind_x": 10.714285714285714
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.01875,
+    "games": 16,
+    "wind_x": 6.0625
+   }
+  },
+  "LON00": {
+   "Dec-Jan": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.8421739130434781,
+    "games": 0,
+    "wind_x": 8.734782608695653
+   },
+   "Nov": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.34277108433734943,
+    "games": 0,
+    "wind_x": 9.493975903614459
+   },
+   "Sep-Oct": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.017964071856287425,
+    "games": 0,
+    "wind_x": 8.311377245508982
+   }
+  },
+  "MIA00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 11,
+    "wind_x": 14.181818181818182
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 8,
+    "wind_x": 12.75
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 13,
+    "wind_x": 10.0
+   }
+  },
+  "MIN00": {
+   "Dec-Jan": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.8421739130434781,
+    "games": 0,
+    "wind_x": 8.734782608695653
+   },
+   "Nov": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.34277108433734943,
+    "games": 0,
+    "wind_x": 9.493975903614459
+   },
+   "Sep-Oct": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.017964071856287425,
+    "games": 0,
+    "wind_x": 8.311377245508982
+   }
+  },
+  "MIN98": {
+   "Dec-Jan": {
+    "basis": "convention: venue all-season mean plus the league month offset",
+    "cold_x": 3.1906670637284096,
+    "games": 1,
+    "wind_x": 17.021083978558664
+   },
+   "Nov": {
+    "basis": "convention: venue all-season mean plus the league month offset",
+    "cold_x": 2.691264235022281,
+    "games": 0,
+    "wind_x": 17.780277273477473
+   },
+   "Sep-Oct": {
+    "basis": "convention: venue all-season mean plus the league month offset",
+    "cold_x": 2.366457222541219,
+    "games": 0,
+    "wind_x": 16.597678615371997
+   }
+  },
+  "NAS00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 0.8300000000000001,
+    "games": 10,
+    "wind_x": 7.1
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.15,
+    "games": 6,
+    "wind_x": 10.0
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 16,
+    "wind_x": 7.625
+   }
+  },
+  "NOR00": {
+   "Dec-Jan": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.8421739130434781,
+    "games": 0,
+    "wind_x": 8.734782608695653
+   },
+   "Nov": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.34277108433734943,
+    "games": 0,
+    "wind_x": 9.493975903614459
+   },
+   "Sep-Oct": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.017964071856287425,
+    "games": 0,
+    "wind_x": 8.311377245508982
+   }
+  },
+  "NYC01": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 0.9499999999999998,
+    "games": 18,
+    "wind_x": 7.722222222222222
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.5428571428571429,
+    "games": 14,
+    "wind_x": 8.071428571428571
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.028125,
+    "games": 32,
+    "wind_x": 8.21875
+   }
+  },
+  "OAK00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 9,
+    "wind_x": 6.444444444444445
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 8,
+    "wind_x": 6.375
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 15,
+    "wind_x": 8.466666666666667
+   }
+  },
+  "PHI00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 1.08,
+    "games": 10,
+    "wind_x": 7.8
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.2375,
+    "games": 8,
+    "wind_x": 8.75
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.05714285714285715,
+    "games": 14,
+    "wind_x": 9.785714285714286
+   }
+  },
+  "PHO00": {
+   "Dec-Jan": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.8421739130434781,
+    "games": 0,
+    "wind_x": 8.734782608695653
+   },
+   "Nov": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.34277108433734943,
+    "games": 0,
+    "wind_x": 9.493975903614459
+   },
+   "Sep-Oct": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.017964071856287425,
+    "games": 0,
+    "wind_x": 8.311377245508982
+   }
+  },
+  "PIT00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 1.625,
+    "games": 12,
+    "wind_x": 9.833333333333334
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.19999999999999998,
+    "games": 7,
+    "wind_x": 10.428571428571429
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.13076923076923078,
+    "games": 13,
+    "wind_x": 7.615384615384615
+   }
+  },
+  "SDG00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 12,
+    "wind_x": 6.083333333333333
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 7,
+    "wind_x": 5.571428571428571
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 13,
+    "wind_x": 8.846153846153847
+   }
+  },
+  "SEA00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 0.7250000000000001,
+    "games": 12,
+    "wind_x": 4.833333333333333
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.19999999999999998,
+    "games": 8,
+    "wind_x": 8.0
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 12,
+    "wind_x": 9.166666666666666
+   }
+  },
+  "SFO00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 0.08888888888888888,
+    "games": 9,
+    "wind_x": 4.111111111111111
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 7,
+    "wind_x": 11.142857142857142
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 15,
+    "wind_x": 8.6
+   }
+  },
+  "SFO01": {
+   "Dec-Jan": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.8421739130434781,
+    "games": 0,
+    "wind_x": 8.734782608695653
+   },
+   "Nov": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.34277108433734943,
+    "games": 0,
+    "wind_x": 9.493975903614459
+   },
+   "Sep-Oct": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.017964071856287425,
+    "games": 0,
+    "wind_x": 8.311377245508982
+   }
+  },
+  "STL00": {
+   "Dec-Jan": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.8421739130434781,
+    "games": 0,
+    "wind_x": 8.734782608695653
+   },
+   "Nov": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.34277108433734943,
+    "games": 0,
+    "wind_x": 9.493975903614459
+   },
+   "Sep-Oct": {
+    "basis": "convention: no 2010-2013 outdoor game at the venue; the league cell",
+    "cold_x": 0.017964071856287425,
+    "games": 0,
+    "wind_x": 8.311377245508982
+   }
+  },
+  "TAM00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 0.011111111111111112,
+    "games": 9,
+    "wind_x": 8.88888888888889
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 6,
+    "wind_x": 7.333333333333333
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 16,
+    "wind_x": 7.5625
+   }
+  },
+  "WAS00": {
+   "Dec-Jan": {
+    "basis": "venue cell",
+    "cold_x": 0.6818181818181818,
+    "games": 11,
+    "wind_x": 5.2727272727272725
+   },
+   "Nov": {
+    "basis": "venue cell",
+    "cold_x": 0.225,
+    "games": 8,
+    "wind_x": 7.75
+   },
+   "Sep-Oct": {
+    "basis": "venue cell",
+    "cold_x": 0.0,
+    "games": 13,
+    "wind_x": 6.6923076923076925
+   }
+  }
+ }
+}

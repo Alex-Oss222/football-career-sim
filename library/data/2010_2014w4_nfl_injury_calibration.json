@@ -1,0 +1,1942 @@
+{
+ "acceptance_bands_for_kernel_2014_6": {
+  "concussions_per_team_game_if_kernel_labels_concussion": [
+   0.19,
+   0.34
+  ],
+  "game_onsets_per_team_game": [
+   2.3036,
+   3.1675
+  ],
+  "head_neck_game_onsets_per_team_game": [
+   0.3708,
+   0.5377
+  ],
+  "head_neck_share_game_onsets": [
+   0.1352,
+   0.2028
+  ],
+  "long_term_share": [
+   0.0182,
+   0.0728
+  ],
+  "lower_extremity_share_game_onsets": [
+   0.5412,
+   0.6557
+  ],
+  "position_order_checks": [
+   "RB, LB, DB, WR per-snap risk above OL, QB, DL",
+   "K/P/LS lowest per snap"
+  ],
+  "rest_of_game_removals_per_team_game": [
+   0.6078,
+   1.1144
+  ],
+  "rule": "each band is the 2012 band scaled by the 2014.6 value over the 2012 value (the same relative width); the concussion band (literature) and the order checks are carried unchanged",
+  "time_loss_share_(short+)": [
+   0.2139,
+   0.3565
+  ]
+ },
+ "artifact": "2010_2014w4_nfl_injury_calibration",
+ "builder": "scripts/research/build_2010_2014_injury_calibration.py",
+ "carried_from": {
+  "file": "library/data/2012_nfl_injury_calibration.json",
+  "sha256": "4ba3c34f77126c62f0bddf8f9d919d4f42ec0e8b874b5f7d58098d56e90efcfe"
+ },
+ "data": {
+  "by_group": {
+   "DB": {
+    "ingame_share": 0.2902,
+    "ingame_stoppages": 750,
+    "ingame_stoppages_per_team_game": 0.3456,
+    "report_onsets": 1681,
+    "report_onsets_per_team_game": 0.8372,
+    "report_share": 0.214
+   },
+   "DL": {
+    "ingame_share": 0.1548,
+    "ingame_stoppages": 400,
+    "ingame_stoppages_per_team_game": 0.1843,
+    "report_onsets": 1153,
+    "report_onsets_per_team_game": 0.5742,
+    "report_share": 0.1468
+   },
+   "K/P/LS": {
+    "ingame_share": 0.0081,
+    "ingame_stoppages": 21,
+    "ingame_stoppages_per_team_game": 0.0097,
+    "report_onsets": 131,
+    "report_onsets_per_team_game": 0.0652,
+    "report_share": 0.0167
+   },
+   "LB": {
+    "ingame_share": 0.1401,
+    "ingame_stoppages": 362,
+    "ingame_stoppages_per_team_game": 0.1668,
+    "report_onsets": 1174,
+    "report_onsets_per_team_game": 0.5847,
+    "report_share": 0.1495
+   },
+   "OL": {
+    "ingame_share": 0.1401,
+    "ingame_stoppages": 362,
+    "ingame_stoppages_per_team_game": 0.1668,
+    "report_onsets": 1136,
+    "report_onsets_per_team_game": 0.5657,
+    "report_share": 0.1446
+   },
+   "QB": {
+    "ingame_share": 0.0333,
+    "ingame_stoppages": 86,
+    "ingame_stoppages_per_team_game": 0.0396,
+    "report_onsets": 252,
+    "report_onsets_per_team_game": 0.1255,
+    "report_share": 0.0321
+   },
+   "RB": {
+    "ingame_share": 0.0809,
+    "ingame_stoppages": 209,
+    "ingame_stoppages_per_team_game": 0.0963,
+    "report_onsets": 783,
+    "report_onsets_per_team_game": 0.3899,
+    "report_share": 0.0997
+   },
+   "TE": {
+    "ingame_share": 0.0449,
+    "ingame_stoppages": 116,
+    "ingame_stoppages_per_team_game": 0.0535,
+    "report_onsets": 495,
+    "report_onsets_per_team_game": 0.2465,
+    "report_share": 0.063
+   },
+   "WR": {
+    "ingame_share": 0.1076,
+    "ingame_stoppages": 278,
+    "ingame_stoppages_per_team_game": 0.1281,
+    "report_onsets": 1049,
+    "report_onsets_per_team_game": 0.5224,
+    "report_share": 0.1336
+   }
+  },
+  "class_counts_report_onsets": {
+   "head_neck": 834,
+   "lower_extremity": 5041,
+   "trunk_other": 746,
+   "upper_extremity": 1233
+  },
+  "class_shares_report_onsets": {
+   "head_neck": 0.1062,
+   "lower_extremity": 0.6418,
+   "trunk_other": 0.095,
+   "upper_extremity": 0.157
+  },
+  "concussion_report_onsets": 401,
+  "concussion_share_report_onsets": 0.0511,
+  "denominators": {
+   "exposure_plays": 176171,
+   "play_types": {
+    "(none)": 5744,
+    "extra_point": 5228,
+    "field_goal": 4225,
+    "kickoff": 11043,
+    "no_play": 17555,
+    "no_play_snapped": 6047,
+    "pass": 79782,
+    "punt": 10475,
+    "qb_kneel": 1563,
+    "qb_spike": 306,
+    "run": 57502
+   },
+   "player_plays_per_team_game": 1786.1,
+   "report_pairs": 2008,
+   "scrimmage_plays_run_pass": 137284,
+   "team_games": 2170
+  },
+  "ingame_stoppages": {
+   "announced_disposition": {
+    "(none)": 1288,
+    "Doubtful": 62,
+    "Out": 204,
+    "Probable": 415,
+    "Questionable": 615
+   },
+   "by_play_type": {
+    "extra_point": 11,
+    "field_goal": 5,
+    "kickoff": 146,
+    "no_play": 104,
+    "pass": 1222,
+    "punt": 138,
+    "qb_spike": 1,
+    "run": 957
+   },
+   "by_side": {
+    "other": 1454,
+    "possession": 1130
+   },
+   "count": 2584,
+   "footprint_players": 1275,
+   "footprint_return_by_disposition": {
+    "(none)": [
+     310,
+     648
+    ],
+    "Doubtful": [
+     1,
+     24
+    ],
+    "Out": [
+     2,
+     88
+    ],
+    "Probable": [
+     143,
+     214
+    ],
+    "Questionable": [
+     104,
+     301
+    ]
+   },
+   "footprint_returned_same_game": 560,
+   "next_report_class_n": 1263,
+   "next_report_class_shares": {
+    "head_neck": 0.209,
+    "lower_extremity": 0.5788,
+    "trunk_other": 0.0768,
+    "upper_extremity": 0.1354
+   },
+   "on_next_report": 1308,
+   "per_1000_kickoffs": 13.221,
+   "per_1000_punts": 13.174,
+   "per_1000_scrimmage_plays_run_pass": 15.872,
+   "per_team_game": 1.1908,
+   "player_matched": 2584,
+   "player_matched_surname_agrees": 2581,
+   "severity_censored": 225,
+   "severity_n_footprint": 1158,
+   "severity_shares_footprint": {
+    "long_term": 0.0518,
+    "minor": 0.7461,
+    "multi_week": 0.0527,
+    "short": 0.1494
+   }
+  },
+  "report_onsets": {
+   "count": 7854,
+   "first_listed_status": {
+    "Doubtful": 427,
+    "Out": 1180,
+    "Probable": 3978,
+    "Questionable": 2269
+   },
+   "per_team_game": 3.9114,
+   "per_team_game_strict_two_report_rule": 3.7787,
+   "unmatched_position": 0
+  },
+  "season": "2010-2014w4",
+  "season_type": "REG 2010-2013 weeks 1-17 and 2014 weeks 1-4; severity 2010-2013",
+  "severity_report_onsets_footprint": {
+   "by_class": {
+    "head_neck": {
+     "long_term": 0.0285,
+     "minor": 0.6192,
+     "multi_week": 0.0492,
+     "short": 0.3031
+    },
+    "lower_extremity": {
+     "long_term": 0.0153,
+     "minor": 0.7271,
+     "multi_week": 0.0768,
+     "short": 0.1809
+    },
+    "trunk_other": {
+     "long_term": 0.0147,
+     "minor": 0.8006,
+     "multi_week": 0.0381,
+     "short": 0.1466
+    },
+    "upper_extremity": {
+     "long_term": 0.0233,
+     "minor": 0.8065,
+     "multi_week": 0.0502,
+     "short": 0.1201
+    }
+   },
+   "censored": 263,
+   "counts": {
+    "long_term": 62,
+    "minor": 2534,
+    "multi_week": 226,
+    "short": 625
+   },
+   "definition": "minor 0 games missed; short 1-2; multi_week 3-8; long_term 9+ (incl. not seen again with 9+ club games left)",
+   "n": 3447,
+   "shares": {
+    "long_term": 0.018,
+    "minor": 0.7351,
+    "multi_week": 0.0656,
+    "short": 0.1813
+   }
+  },
+  "top_parts_report_onsets": {
+   "ankle": 1041,
+   "back": 384,
+   "calf": 220,
+   "concussion": 401,
+   "elbow": 152,
+   "foot": 341,
+   "groin": 383,
+   "hamstring": 775,
+   "head": 164,
+   "hip": 259,
+   "knee": 1387,
+   "neck": 234,
+   "shoulder": 659,
+   "thigh": 203,
+   "toe": 159
+  },
+  "unreported_vanish_upper_bound": {
+   "by_band": {
+    "long_term": 34,
+    "multi_week_or_longer": 42
+   },
+   "by_group": {
+    "DB": 16,
+    "DL": 15,
+    "K/P/LS": 1,
+    "LB": 11,
+    "OL": 0,
+    "QB": 8,
+    "RB": 8,
+    "TE": 6,
+    "WR": 11
+   },
+   "count": 76,
+   "per_team_game": 0.035
+  }
+ },
+ "data_by_season": {
+  "2010": {
+   "by_group": {
+    "DB": {
+     "ingame_share": 0.2723,
+     "ingame_stoppages": 159,
+     "ingame_stoppages_per_team_game": 0.3105,
+     "report_onsets": 369,
+     "report_onsets_per_team_game": 0.7704,
+     "report_share": 0.2139
+    },
+    "DL": {
+     "ingame_share": 0.1866,
+     "ingame_stoppages": 109,
+     "ingame_stoppages_per_team_game": 0.2129,
+     "report_onsets": 257,
+     "report_onsets_per_team_game": 0.5365,
+     "report_share": 0.149
+    },
+    "K/P/LS": {
+     "ingame_share": 0.0051,
+     "ingame_stoppages": 3,
+     "ingame_stoppages_per_team_game": 0.0059,
+     "report_onsets": 27,
+     "report_onsets_per_team_game": 0.0564,
+     "report_share": 0.0157
+    },
+    "LB": {
+     "ingame_share": 0.1387,
+     "ingame_stoppages": 81,
+     "ingame_stoppages_per_team_game": 0.1582,
+     "report_onsets": 276,
+     "report_onsets_per_team_game": 0.5762,
+     "report_share": 0.16
+    },
+    "OL": {
+     "ingame_share": 0.1147,
+     "ingame_stoppages": 67,
+     "ingame_stoppages_per_team_game": 0.1309,
+     "report_onsets": 240,
+     "report_onsets_per_team_game": 0.501,
+     "report_share": 0.1391
+    },
+    "QB": {
+     "ingame_share": 0.0428,
+     "ingame_stoppages": 25,
+     "ingame_stoppages_per_team_game": 0.0488,
+     "report_onsets": 68,
+     "report_onsets_per_team_game": 0.142,
+     "report_share": 0.0394
+    },
+    "RB": {
+     "ingame_share": 0.0873,
+     "ingame_stoppages": 51,
+     "ingame_stoppages_per_team_game": 0.0996,
+     "report_onsets": 168,
+     "report_onsets_per_team_game": 0.3507,
+     "report_share": 0.0974
+    },
+    "TE": {
+     "ingame_share": 0.0394,
+     "ingame_stoppages": 23,
+     "ingame_stoppages_per_team_game": 0.0449,
+     "report_onsets": 102,
+     "report_onsets_per_team_game": 0.2129,
+     "report_share": 0.0591
+    },
+    "WR": {
+     "ingame_share": 0.113,
+     "ingame_stoppages": 66,
+     "ingame_stoppages_per_team_game": 0.1289,
+     "report_onsets": 218,
+     "report_onsets_per_team_game": 0.4551,
+     "report_share": 0.1264
+    }
+   },
+   "class_counts_report_onsets": {
+    "head_neck": 174,
+    "lower_extremity": 1134,
+    "trunk_other": 172,
+    "upper_extremity": 245
+   },
+   "class_shares_report_onsets": {
+    "head_neck": 0.1009,
+    "lower_extremity": 0.6574,
+    "trunk_other": 0.0997,
+    "upper_extremity": 0.142
+   },
+   "concussion_report_onsets": 67,
+   "concussion_share_report_onsets": 0.0388,
+   "denominators": {
+    "exposure_plays": 40907,
+    "play_types": {
+     "(none)": 1364,
+     "extra_point": 1217,
+     "field_goal": 964,
+     "kickoff": 2539,
+     "no_play": 4072,
+     "no_play_snapped": 1352,
+     "pass": 18366,
+     "punt": 2466,
+     "qb_kneel": 350,
+     "qb_spike": 74,
+     "run": 13579
+    },
+    "player_plays_per_team_game": 1757.7,
+    "report_pairs": 479,
+    "scrimmage_plays_run_pass": 31945,
+    "team_games": 512
+   },
+   "ingame_stoppages": {
+    "announced_disposition": {
+     "(none)": 262,
+     "Doubtful": 11,
+     "Out": 39,
+     "Probable": 129,
+     "Questionable": 143
+    },
+    "by_play_type": {
+     "extra_point": 3,
+     "field_goal": 2,
+     "kickoff": 51,
+     "no_play": 25,
+     "pass": 254,
+     "punt": 32,
+     "run": 217
+    },
+    "by_side": {
+     "other": 333,
+     "possession": 251
+    },
+    "count": 584,
+    "footprint_players": 312,
+    "footprint_return_by_disposition": {
+     "(none)": [
+      63,
+      137
+     ],
+     "Doubtful": [
+      0,
+      5
+     ],
+     "Out": [
+      1,
+      17
+     ],
+     "Probable": [
+      53,
+      80
+     ],
+     "Questionable": [
+      21,
+      73
+     ]
+    },
+    "footprint_returned_same_game": 138,
+    "next_report_class_n": 261,
+    "next_report_class_shares": {
+     "head_neck": 0.2069,
+     "lower_extremity": 0.5939,
+     "trunk_other": 0.0613,
+     "upper_extremity": 0.1379
+    },
+    "on_next_report": 280,
+    "per_1000_kickoffs": 20.087,
+    "per_1000_punts": 12.976,
+    "per_1000_scrimmage_plays_run_pass": 14.744,
+    "per_team_game": 1.1406,
+    "player_matched": 584,
+    "player_matched_surname_agrees": 582,
+    "severity_censored": 52,
+    "severity_n_footprint": 294,
+    "severity_shares_footprint": {
+     "long_term": 0.0578,
+     "minor": 0.7381,
+     "multi_week": 0.0442,
+     "short": 0.1599
+    }
+   },
+   "report_onsets": {
+    "count": 1725,
+    "first_listed_status": {
+     "Doubtful": 104,
+     "Out": 265,
+     "Probable": 766,
+     "Questionable": 590
+    },
+    "per_team_game": 3.6013,
+    "per_team_game_strict_two_report_rule": 3.443,
+    "unmatched_position": 0
+   },
+   "season": "2010",
+   "season_type": "REG weeks 1-17",
+   "severity_report_onsets_footprint": {
+    "by_class": {
+     "head_neck": {
+      "long_term": 0.037,
+      "minor": 0.4938,
+      "multi_week": 0.0,
+      "short": 0.4691
+     },
+     "lower_extremity": {
+      "long_term": 0.0253,
+      "minor": 0.6842,
+      "multi_week": 0.0975,
+      "short": 0.193
+     },
+     "trunk_other": {
+      "long_term": 0.0125,
+      "minor": 0.8,
+      "multi_week": 0.05,
+      "short": 0.1375
+     },
+     "upper_extremity": {
+      "long_term": 0.0463,
+      "minor": 0.7963,
+      "multi_week": 0.0463,
+      "short": 0.1111
+     }
+    },
+    "censored": 78,
+    "counts": {
+     "long_term": 22,
+     "minor": 541,
+     "multi_week": 59,
+     "short": 160
+    },
+    "definition": "minor 0 games missed; short 1-2; multi_week 3-8; long_term 9+ (incl. not seen again with 9+ club games left)",
+    "n": 782,
+    "shares": {
+     "long_term": 0.0281,
+     "minor": 0.6918,
+     "multi_week": 0.0754,
+     "short": 0.2046
+    }
+   },
+   "top_parts_report_onsets": {
+    "ankle": 248,
+    "back": 97,
+    "calf": 51,
+    "concussion": 67,
+    "foot": 74,
+    "groin": 75,
+    "hamstring": 173,
+    "head": 53,
+    "hip": 48,
+    "knee": 326,
+    "neck": 46,
+    "quadricep": 36,
+    "ribs": 28,
+    "shoulder": 140,
+    "thigh": 44
+   },
+   "unreported_vanish_upper_bound": {
+    "by_band": {
+     "long_term": 8,
+     "multi_week_or_longer": 9
+    },
+    "by_group": {
+     "DB": 5,
+     "DL": 4,
+     "K/P/LS": 0,
+     "LB": 1,
+     "OL": 0,
+     "QB": 1,
+     "RB": 2,
+     "TE": 2,
+     "WR": 2
+    },
+    "count": 17,
+    "per_team_game": 0.0332
+   }
+  },
+  "2011": {
+   "by_group": {
+    "DB": {
+     "ingame_share": 0.2811,
+     "ingame_stoppages": 174,
+     "ingame_stoppages_per_team_game": 0.3398,
+     "report_onsets": 412,
+     "report_onsets_per_team_game": 0.8583,
+     "report_share": 0.2194
+    },
+    "DL": {
+     "ingame_share": 0.1405,
+     "ingame_stoppages": 87,
+     "ingame_stoppages_per_team_game": 0.1699,
+     "report_onsets": 277,
+     "report_onsets_per_team_game": 0.5771,
+     "report_share": 0.1475
+    },
+    "K/P/LS": {
+     "ingame_share": 0.0162,
+     "ingame_stoppages": 10,
+     "ingame_stoppages_per_team_game": 0.0195,
+     "report_onsets": 34,
+     "report_onsets_per_team_game": 0.0708,
+     "report_share": 0.0181
+    },
+    "LB": {
+     "ingame_share": 0.1438,
+     "ingame_stoppages": 89,
+     "ingame_stoppages_per_team_game": 0.1738,
+     "report_onsets": 254,
+     "report_onsets_per_team_game": 0.5292,
+     "report_share": 0.1353
+    },
+    "OL": {
+     "ingame_share": 0.1616,
+     "ingame_stoppages": 100,
+     "ingame_stoppages_per_team_game": 0.1953,
+     "report_onsets": 268,
+     "report_onsets_per_team_game": 0.5583,
+     "report_share": 0.1427
+    },
+    "QB": {
+     "ingame_share": 0.0323,
+     "ingame_stoppages": 20,
+     "ingame_stoppages_per_team_game": 0.0391,
+     "report_onsets": 69,
+     "report_onsets_per_team_game": 0.1437,
+     "report_share": 0.0367
+    },
+    "RB": {
+     "ingame_share": 0.084,
+     "ingame_stoppages": 52,
+     "ingame_stoppages_per_team_game": 0.1016,
+     "report_onsets": 192,
+     "report_onsets_per_team_game": 0.4,
+     "report_share": 0.1022
+    },
+    "TE": {
+     "ingame_share": 0.0468,
+     "ingame_stoppages": 29,
+     "ingame_stoppages_per_team_game": 0.0566,
+     "report_onsets": 124,
+     "report_onsets_per_team_game": 0.2583,
+     "report_share": 0.066
+    },
+    "WR": {
+     "ingame_share": 0.0937,
+     "ingame_stoppages": 58,
+     "ingame_stoppages_per_team_game": 0.1133,
+     "report_onsets": 248,
+     "report_onsets_per_team_game": 0.5167,
+     "report_share": 0.1321
+    }
+   },
+   "class_counts_report_onsets": {
+    "head_neck": 215,
+    "lower_extremity": 1220,
+    "trunk_other": 162,
+    "upper_extremity": 281
+   },
+   "class_shares_report_onsets": {
+    "head_neck": 0.1145,
+    "lower_extremity": 0.6496,
+    "trunk_other": 0.0863,
+    "upper_extremity": 0.1496
+   },
+   "concussion_report_onsets": 88,
+   "concussion_share_report_onsets": 0.0469,
+   "denominators": {
+    "exposure_plays": 41331,
+    "play_types": {
+     "(none)": 1347,
+     "extra_point": 1207,
+     "field_goal": 1011,
+     "kickoff": 2569,
+     "no_play": 4194,
+     "no_play_snapped": 1417,
+     "pass": 18563,
+     "punt": 2489,
+     "qb_kneel": 359,
+     "qb_spike": 79,
+     "run": 13637
+    },
+    "player_plays_per_team_game": 1775.9,
+    "report_pairs": 480,
+    "scrimmage_plays_run_pass": 32200,
+    "team_games": 512
+   },
+   "ingame_stoppages": {
+    "announced_disposition": {
+     "(none)": 302,
+     "Doubtful": 14,
+     "Out": 45,
+     "Probable": 114,
+     "Questionable": 144
+    },
+    "by_play_type": {
+     "extra_point": 3,
+     "field_goal": 2,
+     "kickoff": 29,
+     "no_play": 19,
+     "pass": 298,
+     "punt": 37,
+     "run": 231
+    },
+    "by_side": {
+     "other": 337,
+     "possession": 282
+    },
+    "count": 619,
+    "footprint_players": 317,
+    "footprint_return_by_disposition": {
+     "(none)": [
+      74,
+      158
+     ],
+     "Doubtful": [
+      0,
+      5
+     ],
+     "Out": [
+      0,
+      23
+     ],
+     "Probable": [
+      33,
+      54
+     ],
+     "Questionable": [
+      23,
+      77
+     ]
+    },
+    "footprint_returned_same_game": 130,
+    "next_report_class_n": 329,
+    "next_report_class_shares": {
+     "head_neck": 0.2006,
+     "lower_extremity": 0.5653,
+     "trunk_other": 0.076,
+     "upper_extremity": 0.1581
+    },
+    "on_next_report": 332,
+    "per_1000_kickoffs": 11.288,
+    "per_1000_punts": 14.865,
+    "per_1000_scrimmage_plays_run_pass": 16.429,
+    "per_team_game": 1.209,
+    "player_matched": 619,
+    "player_matched_surname_agrees": 619,
+    "severity_censored": 60,
+    "severity_n_footprint": 292,
+    "severity_shares_footprint": {
+     "long_term": 0.0445,
+     "minor": 0.7363,
+     "multi_week": 0.0616,
+     "short": 0.1575
+    }
+   },
+   "report_onsets": {
+    "count": 1878,
+    "first_listed_status": {
+     "Doubtful": 116,
+     "Out": 291,
+     "Probable": 905,
+     "Questionable": 566
+    },
+    "per_team_game": 3.9125,
+    "per_team_game_strict_two_report_rule": 3.7656,
+    "unmatched_position": 0
+   },
+   "season": "2011",
+   "season_type": "REG weeks 1-17",
+   "severity_report_onsets_footprint": {
+    "by_class": {
+     "head_neck": {
+      "long_term": 0.0286,
+      "minor": 0.581,
+      "multi_week": 0.1048,
+      "short": 0.2857
+     },
+     "lower_extremity": {
+      "long_term": 0.0111,
+      "minor": 0.7098,
+      "multi_week": 0.0758,
+      "short": 0.2033
+     },
+     "trunk_other": {
+      "long_term": 0.0127,
+      "minor": 0.7342,
+      "multi_week": 0.0633,
+      "short": 0.1899
+     },
+     "upper_extremity": {
+      "long_term": 0.0388,
+      "minor": 0.7674,
+      "multi_week": 0.031,
+      "short": 0.1628
+     }
+    },
+    "censored": 65,
+    "counts": {
+     "long_term": 15,
+     "minor": 602,
+     "multi_week": 61,
+     "short": 176
+    },
+    "definition": "minor 0 games missed; short 1-2; multi_week 3-8; long_term 9+ (incl. not seen again with 9+ club games left)",
+    "n": 854,
+    "shares": {
+     "long_term": 0.0176,
+     "minor": 0.7049,
+     "multi_week": 0.0714,
+     "short": 0.2061
+    }
+   },
+   "top_parts_report_onsets": {
+    "ankle": 232,
+    "back": 79,
+    "calf": 57,
+    "concussion": 88,
+    "elbow": 37,
+    "foot": 84,
+    "groin": 99,
+    "hamstring": 217,
+    "hand": 39,
+    "head": 53,
+    "hip": 60,
+    "knee": 329,
+    "neck": 68,
+    "shoulder": 141,
+    "toe": 42
+   },
+   "unreported_vanish_upper_bound": {
+    "by_band": {
+     "long_term": 12,
+     "multi_week_or_longer": 7
+    },
+    "by_group": {
+     "DB": 1,
+     "DL": 4,
+     "K/P/LS": 0,
+     "LB": 2,
+     "OL": 0,
+     "QB": 3,
+     "RB": 3,
+     "TE": 1,
+     "WR": 5
+    },
+    "count": 19,
+    "per_team_game": 0.0371
+   }
+  },
+  "2012": {
+   "by_group": {
+    "DB": {
+     "ingame_share": 0.3078,
+     "ingame_stoppages": 173,
+     "ingame_stoppages_per_team_game": 0.3379,
+     "report_onsets": 423,
+     "report_onsets_per_team_game": 0.8812,
+     "report_share": 0.2163
+    },
+    "DL": {
+     "ingame_share": 0.1352,
+     "ingame_stoppages": 76,
+     "ingame_stoppages_per_team_game": 0.1484,
+     "report_onsets": 278,
+     "report_onsets_per_team_game": 0.5792,
+     "report_share": 0.1421
+    },
+    "K/P/LS": {
+     "ingame_share": 0.0036,
+     "ingame_stoppages": 2,
+     "ingame_stoppages_per_team_game": 0.0039,
+     "report_onsets": 31,
+     "report_onsets_per_team_game": 0.0646,
+     "report_share": 0.0158
+    },
+    "LB": {
+     "ingame_share": 0.1406,
+     "ingame_stoppages": 79,
+     "ingame_stoppages_per_team_game": 0.1543,
+     "report_onsets": 289,
+     "report_onsets_per_team_game": 0.6021,
+     "report_share": 0.1478
+    },
+    "OL": {
+     "ingame_share": 0.1441,
+     "ingame_stoppages": 81,
+     "ingame_stoppages_per_team_game": 0.1582,
+     "report_onsets": 284,
+     "report_onsets_per_team_game": 0.5917,
+     "report_share": 0.1452
+    },
+    "QB": {
+     "ingame_share": 0.0338,
+     "ingame_stoppages": 19,
+     "ingame_stoppages_per_team_game": 0.0371,
+     "report_onsets": 52,
+     "report_onsets_per_team_game": 0.1083,
+     "report_share": 0.0266
+    },
+    "RB": {
+     "ingame_share": 0.0801,
+     "ingame_stoppages": 45,
+     "ingame_stoppages_per_team_game": 0.0879,
+     "report_onsets": 189,
+     "report_onsets_per_team_game": 0.3937,
+     "report_share": 0.0966
+    },
+    "TE": {
+     "ingame_share": 0.0356,
+     "ingame_stoppages": 20,
+     "ingame_stoppages_per_team_game": 0.0391,
+     "report_onsets": 122,
+     "report_onsets_per_team_game": 0.2542,
+     "report_share": 0.0624
+    },
+    "WR": {
+     "ingame_share": 0.1192,
+     "ingame_stoppages": 67,
+     "ingame_stoppages_per_team_game": 0.1309,
+     "report_onsets": 288,
+     "report_onsets_per_team_game": 0.6,
+     "report_share": 0.1472
+    }
+   },
+   "class_counts_report_onsets": {
+    "head_neck": 217,
+    "lower_extremity": 1207,
+    "trunk_other": 202,
+    "upper_extremity": 330
+   },
+   "class_shares_report_onsets": {
+    "head_neck": 0.1109,
+    "lower_extremity": 0.6171,
+    "trunk_other": 0.1033,
+    "upper_extremity": 0.1687
+   },
+   "concussion_report_onsets": 102,
+   "concussion_share_report_onsets": 0.0521,
+   "denominators": {
+    "exposure_plays": 41758,
+    "play_types": {
+     "(none)": 1355,
+     "extra_point": 1237,
+     "field_goal": 1016,
+     "kickoff": 2620,
+     "no_play": 4194,
+     "no_play_snapped": 1478,
+     "pass": 18922,
+     "punt": 2469,
+     "qb_kneel": 367,
+     "qb_spike": 78,
+     "run": 13571
+    },
+    "player_plays_per_team_game": 1794.3,
+    "report_pairs": 480,
+    "scrimmage_plays_run_pass": 32493,
+    "team_games": 512
+   },
+   "ingame_stoppages": {
+    "announced_disposition": {
+     "(none)": 281,
+     "Doubtful": 20,
+     "Out": 42,
+     "Probable": 92,
+     "Questionable": 127
+    },
+    "by_play_type": {
+     "kickoff": 31,
+     "no_play": 26,
+     "pass": 263,
+     "punt": 28,
+     "run": 214
+    },
+    "by_side": {
+     "other": 318,
+     "possession": 244
+    },
+    "count": 562,
+    "footprint_players": 293,
+    "footprint_return_by_disposition": {
+     "(none)": [
+      69,
+      148
+     ],
+     "Doubtful": [
+      1,
+      8
+     ],
+     "Out": [
+      1,
+      23
+     ],
+     "Probable": [
+      38,
+      51
+     ],
+     "Questionable": [
+      24,
+      63
+     ]
+    },
+    "footprint_returned_same_game": 133,
+    "next_report_class_n": 284,
+    "next_report_class_shares": {
+     "head_neck": 0.2289,
+     "lower_extremity": 0.5599,
+     "trunk_other": 0.1021,
+     "upper_extremity": 0.1092
+    },
+    "on_next_report": 297,
+    "per_1000_kickoffs": 11.832,
+    "per_1000_punts": 11.341,
+    "per_1000_scrimmage_plays_run_pass": 14.68,
+    "per_team_game": 1.0977,
+    "player_matched": 562,
+    "player_matched_surname_agrees": 562,
+    "severity_censored": 61,
+    "severity_n_footprint": 262,
+    "severity_shares_footprint": {
+     "long_term": 0.042,
+     "minor": 0.7519,
+     "multi_week": 0.0649,
+     "short": 0.1412
+    }
+   },
+   "report_onsets": {
+    "count": 1956,
+    "first_listed_status": {
+     "Doubtful": 96,
+     "Out": 294,
+     "Probable": 1063,
+     "Questionable": 503
+    },
+    "per_team_game": 4.075,
+    "per_team_game_strict_two_report_rule": 3.9531,
+    "unmatched_position": 0
+   },
+   "season": "2012",
+   "season_type": "REG weeks 1-17",
+   "severity_report_onsets_footprint": {
+    "by_class": {
+     "head_neck": {
+      "long_term": 0.0094,
+      "minor": 0.6887,
+      "multi_week": 0.0472,
+      "short": 0.2547
+     },
+     "lower_extremity": {
+      "long_term": 0.0092,
+      "minor": 0.7597,
+      "multi_week": 0.0776,
+      "short": 0.1534
+     },
+     "trunk_other": {
+      "long_term": 0.0102,
+      "minor": 0.8367,
+      "multi_week": 0.0204,
+      "short": 0.1327
+     },
+     "upper_extremity": {
+      "long_term": 0.0116,
+      "minor": 0.8382,
+      "multi_week": 0.0578,
+      "short": 0.0925
+     }
+    },
+    "censored": 63,
+    "counts": {
+     "long_term": 9,
+     "minor": 711,
+     "multi_week": 59,
+     "short": 139
+    },
+    "definition": "minor 0 games missed; short 1-2; multi_week 3-8; long_term 9+ (incl. not seen again with 9+ club games left)",
+    "n": 918,
+    "shares": {
+     "long_term": 0.0098,
+     "minor": 0.7745,
+     "multi_week": 0.0643,
+     "short": 0.1514
+    }
+   },
+   "top_parts_report_onsets": {
+    "ankle": 244,
+    "back": 104,
+    "calf": 64,
+    "concussion": 102,
+    "elbow": 39,
+    "foot": 81,
+    "groin": 82,
+    "hamstring": 185,
+    "head": 55,
+    "hip": 66,
+    "knee": 334,
+    "neck": 53,
+    "ribs": 39,
+    "shoulder": 170,
+    "thigh": 55
+   },
+   "unreported_vanish_upper_bound": {
+    "by_band": {
+     "long_term": 6,
+     "multi_week_or_longer": 14
+    },
+    "by_group": {
+     "DB": 2,
+     "DL": 5,
+     "K/P/LS": 1,
+     "LB": 4,
+     "OL": 0,
+     "QB": 2,
+     "RB": 2,
+     "TE": 0,
+     "WR": 4
+    },
+    "count": 20,
+    "per_team_game": 0.0391
+   }
+  },
+  "2013": {
+   "by_group": {
+    "DB": {
+     "ingame_share": 0.2952,
+     "ingame_stoppages": 196,
+     "ingame_stoppages_per_team_game": 0.3828,
+     "report_onsets": 404,
+     "report_onsets_per_team_game": 0.8434,
+     "report_share": 0.2101
+    },
+    "DL": {
+     "ingame_share": 0.1581,
+     "ingame_stoppages": 105,
+     "ingame_stoppages_per_team_game": 0.2051,
+     "report_onsets": 285,
+     "report_onsets_per_team_game": 0.595,
+     "report_share": 0.1482
+    },
+    "K/P/LS": {
+     "ingame_share": 0.006,
+     "ingame_stoppages": 4,
+     "ingame_stoppages_per_team_game": 0.0078,
+     "report_onsets": 33,
+     "report_onsets_per_team_game": 0.0689,
+     "report_share": 0.0172
+    },
+    "LB": {
+     "ingame_share": 0.1355,
+     "ingame_stoppages": 90,
+     "ingame_stoppages_per_team_game": 0.1758,
+     "report_onsets": 295,
+     "report_onsets_per_team_game": 0.6159,
+     "report_share": 0.1534
+    },
+    "OL": {
+     "ingame_share": 0.134,
+     "ingame_stoppages": 89,
+     "ingame_stoppages_per_team_game": 0.1738,
+     "report_onsets": 289,
+     "report_onsets_per_team_game": 0.6033,
+     "report_share": 0.1503
+    },
+    "QB": {
+     "ingame_share": 0.0316,
+     "ingame_stoppages": 21,
+     "ingame_stoppages_per_team_game": 0.041,
+     "report_onsets": 56,
+     "report_onsets_per_team_game": 0.1169,
+     "report_share": 0.0291
+    },
+    "RB": {
+     "ingame_share": 0.0768,
+     "ingame_stoppages": 51,
+     "ingame_stoppages_per_team_game": 0.0996,
+     "report_onsets": 193,
+     "report_onsets_per_team_game": 0.4029,
+     "report_share": 0.1004
+    },
+    "TE": {
+     "ingame_share": 0.0557,
+     "ingame_stoppages": 37,
+     "ingame_stoppages_per_team_game": 0.0723,
+     "report_onsets": 119,
+     "report_onsets_per_team_game": 0.2484,
+     "report_share": 0.0619
+    },
+    "WR": {
+     "ingame_share": 0.1069,
+     "ingame_stoppages": 71,
+     "ingame_stoppages_per_team_game": 0.1387,
+     "report_onsets": 249,
+     "report_onsets_per_team_game": 0.5198,
+     "report_share": 0.1295
+    }
+   },
+   "class_counts_report_onsets": {
+    "head_neck": 209,
+    "lower_extremity": 1217,
+    "trunk_other": 177,
+    "upper_extremity": 320
+   },
+   "class_shares_report_onsets": {
+    "head_neck": 0.1087,
+    "lower_extremity": 0.6329,
+    "trunk_other": 0.092,
+    "upper_extremity": 0.1664
+   },
+   "concussion_report_onsets": 134,
+   "concussion_share_report_onsets": 0.0697,
+   "denominators": {
+    "exposure_plays": 42231,
+    "play_types": {
+     "(none)": 1356,
+     "extra_point": 1267,
+     "field_goal": 998,
+     "kickoff": 2684,
+     "no_play": 4053,
+     "no_play_snapped": 1385,
+     "pass": 19424,
+     "punt": 2527,
+     "qb_kneel": 393,
+     "qb_spike": 58,
+     "run": 13495
+    },
+    "player_plays_per_team_game": 1814.6,
+    "report_pairs": 479,
+    "scrimmage_plays_run_pass": 32919,
+    "team_games": 512
+   },
+   "ingame_stoppages": {
+    "announced_disposition": {
+     "(none)": 367,
+     "Doubtful": 14,
+     "Out": 61,
+     "Probable": 63,
+     "Questionable": 159
+    },
+    "by_play_type": {
+     "extra_point": 4,
+     "field_goal": 1,
+     "kickoff": 30,
+     "no_play": 22,
+     "pass": 336,
+     "punt": 30,
+     "qb_spike": 1,
+     "run": 240
+    },
+    "by_side": {
+     "other": 378,
+     "possession": 286
+    },
+    "count": 664,
+    "footprint_players": 326,
+    "footprint_return_by_disposition": {
+     "(none)": [
+      98,
+      186
+     ],
+     "Doubtful": [
+      0,
+      6
+     ],
+     "Out": [
+      0,
+      25
+     ],
+     "Probable": [
+      18,
+      28
+     ],
+     "Questionable": [
+      35,
+      81
+     ]
+    },
+    "footprint_returned_same_game": 151,
+    "next_report_class_n": 332,
+    "next_report_class_shares": {
+     "head_neck": 0.2199,
+     "lower_extremity": 0.5873,
+     "trunk_other": 0.0753,
+     "upper_extremity": 0.1175
+    },
+    "on_next_report": 341,
+    "per_1000_kickoffs": 11.177,
+    "per_1000_punts": 11.872,
+    "per_1000_scrimmage_plays_run_pass": 17.497,
+    "per_team_game": 1.2969,
+    "player_matched": 664,
+    "player_matched_surname_agrees": 663,
+    "severity_censored": 52,
+    "severity_n_footprint": 310,
+    "severity_shares_footprint": {
+     "long_term": 0.0613,
+     "minor": 0.7581,
+     "multi_week": 0.0419,
+     "short": 0.1387
+    }
+   },
+   "report_onsets": {
+    "count": 1923,
+    "first_listed_status": {
+     "Doubtful": 94,
+     "Out": 272,
+     "Probable": 1049,
+     "Questionable": 508
+    },
+    "per_team_game": 4.0146,
+    "per_team_game_strict_two_report_rule": 3.8814,
+    "unmatched_position": 0
+   },
+   "season": "2013",
+   "season_type": "REG weeks 1-17",
+   "severity_report_onsets_footprint": {
+    "by_class": {
+     "head_neck": {
+      "long_term": 0.0426,
+      "minor": 0.6915,
+      "multi_week": 0.0319,
+      "short": 0.234
+     },
+     "lower_extremity": {
+      "long_term": 0.0159,
+      "minor": 0.7513,
+      "multi_week": 0.0582,
+      "short": 0.1746
+     },
+     "trunk_other": {
+      "long_term": 0.0238,
+      "minor": 0.8214,
+      "multi_week": 0.0238,
+      "short": 0.131
+     },
+     "upper_extremity": {
+      "long_term": 0.0068,
+      "minor": 0.8108,
+      "multi_week": 0.0608,
+      "short": 0.1216
+     }
+    },
+    "censored": 57,
+    "counts": {
+     "long_term": 16,
+     "minor": 680,
+     "multi_week": 47,
+     "short": 150
+    },
+    "definition": "minor 0 games missed; short 1-2; multi_week 3-8; long_term 9+ (incl. not seen again with 9+ club games left)",
+    "n": 893,
+    "shares": {
+     "long_term": 0.0179,
+     "minor": 0.7615,
+     "multi_week": 0.0526,
+     "short": 0.168
+    }
+   },
+   "top_parts_report_onsets": {
+    "ankle": 253,
+    "back": 87,
+    "calf": 38,
+    "concussion": 134,
+    "elbow": 42,
+    "foot": 80,
+    "groin": 103,
+    "hamstring": 167,
+    "hip": 74,
+    "knee": 331,
+    "neck": 60,
+    "ribs": 38,
+    "shoulder": 174,
+    "thigh": 56,
+    "toe": 50
+   },
+   "unreported_vanish_upper_bound": {
+    "by_band": {
+     "long_term": 8,
+     "multi_week_or_longer": 12
+    },
+    "by_group": {
+     "DB": 8,
+     "DL": 2,
+     "K/P/LS": 0,
+     "LB": 4,
+     "OL": 0,
+     "QB": 2,
+     "RB": 1,
+     "TE": 3,
+     "WR": 0
+    },
+    "count": 20,
+    "per_team_game": 0.0391
+   }
+  },
+  "2014w4": {
+   "by_group": {
+    "DB": {
+     "ingame_share": 0.3097,
+     "ingame_stoppages": 48,
+     "ingame_stoppages_per_team_game": 0.3934,
+     "report_onsets": 73,
+     "report_onsets_per_team_game": 0.8111,
+     "report_share": 0.1962
+    },
+    "DL": {
+     "ingame_share": 0.1484,
+     "ingame_stoppages": 23,
+     "ingame_stoppages_per_team_game": 0.1885,
+     "report_onsets": 56,
+     "report_onsets_per_team_game": 0.6222,
+     "report_share": 0.1505
+    },
+    "K/P/LS": {
+     "ingame_share": 0.0129,
+     "ingame_stoppages": 2,
+     "ingame_stoppages_per_team_game": 0.0164,
+     "report_onsets": 6,
+     "report_onsets_per_team_game": 0.0667,
+     "report_share": 0.0161
+    },
+    "LB": {
+     "ingame_share": 0.1484,
+     "ingame_stoppages": 23,
+     "ingame_stoppages_per_team_game": 0.1885,
+     "report_onsets": 60,
+     "report_onsets_per_team_game": 0.6667,
+     "report_share": 0.1613
+    },
+    "OL": {
+     "ingame_share": 0.1613,
+     "ingame_stoppages": 25,
+     "ingame_stoppages_per_team_game": 0.2049,
+     "report_onsets": 55,
+     "report_onsets_per_team_game": 0.6111,
+     "report_share": 0.1478
+    },
+    "QB": {
+     "ingame_share": 0.0065,
+     "ingame_stoppages": 1,
+     "ingame_stoppages_per_team_game": 0.0082,
+     "report_onsets": 7,
+     "report_onsets_per_team_game": 0.0778,
+     "report_share": 0.0188
+    },
+    "RB": {
+     "ingame_share": 0.0645,
+     "ingame_stoppages": 10,
+     "ingame_stoppages_per_team_game": 0.082,
+     "report_onsets": 41,
+     "report_onsets_per_team_game": 0.4556,
+     "report_share": 0.1102
+    },
+    "TE": {
+     "ingame_share": 0.0452,
+     "ingame_stoppages": 7,
+     "ingame_stoppages_per_team_game": 0.0574,
+     "report_onsets": 28,
+     "report_onsets_per_team_game": 0.3111,
+     "report_share": 0.0753
+    },
+    "WR": {
+     "ingame_share": 0.1032,
+     "ingame_stoppages": 16,
+     "ingame_stoppages_per_team_game": 0.1311,
+     "report_onsets": 46,
+     "report_onsets_per_team_game": 0.5111,
+     "report_share": 0.1237
+    }
+   },
+   "class_counts_report_onsets": {
+    "head_neck": 19,
+    "lower_extremity": 263,
+    "trunk_other": 33,
+    "upper_extremity": 57
+   },
+   "class_shares_report_onsets": {
+    "head_neck": 0.0511,
+    "lower_extremity": 0.707,
+    "trunk_other": 0.0887,
+    "upper_extremity": 0.1532
+   },
+   "concussion_report_onsets": 10,
+   "concussion_share_report_onsets": 0.0269,
+   "denominators": {
+    "exposure_plays": 9944,
+    "play_types": {
+     "(none)": 322,
+     "extra_point": 300,
+     "field_goal": 236,
+     "kickoff": 631,
+     "no_play": 1042,
+     "no_play_snapped": 415,
+     "pass": 4507,
+     "punt": 524,
+     "qb_kneel": 94,
+     "qb_spike": 17,
+     "run": 3220
+    },
+    "player_plays_per_team_game": 1793.2,
+    "report_pairs": 90,
+    "scrimmage_plays_run_pass": 7727,
+    "team_games": 122
+   },
+   "ingame_stoppages": {
+    "announced_disposition": {
+     "(none)": 76,
+     "Doubtful": 3,
+     "Out": 17,
+     "Probable": 17,
+     "Questionable": 42
+    },
+    "by_play_type": {
+     "extra_point": 1,
+     "kickoff": 5,
+     "no_play": 12,
+     "pass": 71,
+     "punt": 11,
+     "run": 55
+    },
+    "by_side": {
+     "other": 88,
+     "possession": 67
+    },
+    "count": 155,
+    "footprint_players": 27,
+    "footprint_return_by_disposition": {
+     "(none)": [
+      6,
+      19
+     ],
+     "Doubtful": [
+      0,
+      0
+     ],
+     "Out": [
+      0,
+      0
+     ],
+     "Probable": [
+      1,
+      1
+     ],
+     "Questionable": [
+      1,
+      7
+     ]
+    },
+    "footprint_returned_same_game": 8,
+    "next_report_class_n": 57,
+    "next_report_class_shares": {
+     "head_neck": 0.1053,
+     "lower_extremity": 0.6316,
+     "trunk_other": 0.0351,
+     "upper_extremity": 0.2281
+    },
+    "on_next_report": 58,
+    "per_1000_kickoffs": 7.924,
+    "per_1000_punts": 20.992,
+    "per_1000_scrimmage_plays_run_pass": 16.306,
+    "per_team_game": 1.2705,
+    "player_matched": 155,
+    "player_matched_surname_agrees": 155,
+    "severity_censored": 45,
+    "severity_n_footprint": 20,
+    "severity_shares_footprint": {
+     "long_term": 0.0,
+     "minor": 1.0,
+     "multi_week": 0.0,
+     "short": 0.0
+    }
+   },
+   "report_onsets": {
+    "count": 372,
+    "first_listed_status": {
+     "Doubtful": 17,
+     "Out": 58,
+     "Probable": 195,
+     "Questionable": 102
+    },
+    "per_team_game": 4.1333,
+    "per_team_game_strict_two_report_rule": 4.3276,
+    "unmatched_position": 0
+   },
+   "season": "2014w4",
+   "season_type": "REG weeks 1-4",
+   "severity_report_onsets_footprint": "not used (games after the cut)",
+   "top_parts_report_onsets": {
+    "abdomen": 6,
+    "ankle": 64,
+    "back": 17,
+    "calf": 10,
+    "concussion": 10,
+    "elbow": 8,
+    "foot": 22,
+    "groin": 24,
+    "hamstring": 33,
+    "hip": 11,
+    "knee": 67,
+    "neck": 7,
+    "quadricep": 9,
+    "shoulder": 34,
+    "thigh": 13
+   },
+   "unreported_vanish_upper_bound": {
+    "by_band": {},
+    "by_group": {
+     "DB": 0,
+     "DL": 0,
+     "K/P/LS": 0,
+     "LB": 0,
+     "OL": 0,
+     "QB": 0,
+     "RB": 0,
+     "TE": 0,
+     "WR": 0
+    },
+    "count": 0,
+    "per_team_game": 0.0
+   }
+  }
+ },
+ "drift": {
+  "head_neck_share_report_onsets": {
+   "df": 4,
+   "p": 0.006197,
+   "stat": 14.3724,
+   "test": "chi-square"
+  },
+  "ingame_stoppages_per_team_game": {
+   "df": 4,
+   "p": 0.033583,
+   "stat": 10.4436,
+   "test": "poisson chi-square"
+  },
+  "report_onsets_per_team_game": {
+   "df": 4,
+   "p": 0.001543,
+   "stat": 17.5027,
+   "test": "poisson chi-square"
+  }
+ },
+ "information_boundary": "NFL regular seasons 2010-2013 and 2014 Weeks 1-4 (games and reports through September 29, 2014; the October 1-3 Week 5 reports are refused), cut at fetch; the committed 2012 calibration's literature-based assumptions carried as ratios; no club, game, player or date field.",
+ "limitations": [
+  "Injury reports under-record minor injuries not affecting practice and over-record Probable carryovers; a new body part on a report is not a diagnosis.",
+  "Report onsets mix game and practice injuries; the game share is estimated, not observed.",
+  "Players placed on reserve before the Wednesday report never appear; the footprint check bounds this at about 0.04 per team-game among regular contributors.",
+  "Games missed is inferred from play-by-play footprints; offensive linemen are excluded and a player who plays without recording a stat looks absent (bias toward longer).",
+  "Week 1 listings (camp carryovers) and the Week 17 game (no following regular-season report) are outside the onset window.",
+  "In-game stoppage notes require an official injury timeout; injuries without a stoppage are missed.",
+  "Weekly-roster ACT/RES status for 2012 is back-filled and unusable for reserve timing.",
+  "Literature full texts were proxy-blocked; literature values come from abstracts/search summaries and are labelled accordingly.",
+  "2014 Weeks 1-4 contribute onsets and stoppages only; severity pools 2010-2013.",
+  "The relative risks rest on the declared slot mix, which no depth-chart x snap join verifies (labelled on Unverified slots)."
+ ],
+ "recommended": {
+  "basis": "The committed 2012 calibration's assumptions (library/data/2012_nfl_injury_calibration.json, recommended) carried as its own ratios onto the 2010-2014 Weeks 1-4 pooled counts; severity pools 2010-2013.",
+  "between_game_onsets_per_club_week": {
+   "basis": "report onsets minus game onsets",
+   "label": "Pattern",
+   "range": [
+    0.7438858895705525,
+    1.6077533742331291
+   ],
+   "value": 1.2238122699386507
+  },
+  "class_mix_between_game_onsets": {
+   "basis": "pooled report class totals minus game onsets at the game mix",
+   "label": "Pattern",
+   "values": {
+    "head_neck": 0.0,
+    "lower_extremity": 0.718091168091168,
+    "trunk_other": 0.10626780626780626,
+    "upper_extremity": 0.17564102564102566
+   }
+  },
+  "class_mix_game_onsets": {
+   "basis": "head/neck as above; the rest split in the pooled report ratio",
+   "label": "Pattern",
+   "values": {
+    "head_neck": 0.17385676637031208,
+    "lower_extremity": 0.5932461596477574,
+    "trunk_other": 0.08779242910081869,
+    "upper_extremity": 0.14510464488111185
+   }
+  },
+  "game_onsets_per_team_game": {
+   "basis": "pooled report onsets per team-game times the 2012 game-attributable share (2012 value and range over 2012 report onsets: 0.6871, 0.5890-0.8098)",
+   "label": "Pattern",
+   "range": [
+    2.303646625766871,
+    3.1675141104294475
+   ],
+   "value": 2.6875877300613493
+  },
+  "head_neck_share": {
+   "basis": "(pooled report head/neck onsets per team-game + the 2012 under-listing adjustment 0.0519) / game onsets; game-origin assumption carried (Unverified)",
+   "game_onsets": 0.17385676637031208,
+   "label": "Pattern"
+  },
+  "in_game_removal": {
+   "implied_rest_of_game_removals_per_team_game": 0.9624238226460623,
+   "label": "Pattern (the 2012 removal probabilities carried; the implied removals recomputed)",
+   "removal_probability_by_severity": {
+    "head_neck_any": 1.0,
+    "label": "Pattern. Implied removals = 2.8 x [0.18 x 1.0 + 0.82 x (0.76 x 0.05 + 0.15 x 0.45 + 0.09 x 1.0)] = 0.95 per team-game, inside the 0.6-1.1 band. head_neck removal follows the independent medical hold already in canon, not a rate estimate.",
+    "long_term": 1.0,
+    "minor": 0.05,
+    "multi_week": 1.0,
+    "short": 0.45
+   }
+  },
+  "label_key": "Confirmed = computed directly from D1-D3 by the builder; Pattern = derived from data plus a stated assumption or literature cross-check; Unverified = assumption without a direct 2012 source",
+  "mean_game_onset_hazard_per_player_snap": {
+   "basis": "game onsets per team-game / player snaps per team-game",
+   "label": "Pattern",
+   "value": 0.0015047532263934493
+  },
+  "player_snaps_per_team_game": {
+   "basis": "11 x pooled exposure plays per game (committed definition)",
+   "label": "Confirmed",
+   "value": 1786.0654377880185
+  },
+  "position_relative_risk_per_snap": {
+   "basis": "group onset share (report onsets and in-game stoppages, pooled) over the declared on-field slot share (runtime/participation.py SCRIMMAGE_SLOT_MIX, unchanged; no depth-chart x snap join exists, decision 1B.4); the value is the unrounded mean of the two; K/P/LS carries the 2012 value (a judgment there, not refit)",
+   "components": {
+    "DB": {
+     "in_game": 1.3301,
+     "report": 0.9808,
+     "value": 1.1555
+    },
+    "DL": {
+     "in_game": 0.9204,
+     "report": 0.8729,
+     "value": 0.8966
+    },
+    "LB": {
+     "in_game": 1.2329,
+     "report": 1.3156,
+     "value": 1.2742
+    },
+    "OL": {
+     "in_game": 0.6164,
+     "report": 0.6362,
+     "value": 0.6263
+    },
+    "QB": {
+     "in_game": 0.7326,
+     "report": 0.7062,
+     "value": 0.7194
+    },
+    "RB": {
+     "in_game": 1.4238,
+     "report": 1.7547,
+     "value": 1.5893
+    },
+    "TE": {
+     "in_game": 0.7598,
+     "report": 1.0662,
+     "value": 0.913
+    },
+    "WR": {
+     "in_game": 0.9662,
+     "report": 1.1997,
+     "value": 1.0829
+    }
+   },
+   "label": "Pattern on Unverified slots",
+   "slot_mix": {
+    "DB": 4.8,
+    "DL": 3.7,
+    "LB": 2.5,
+    "OL": 5.0,
+    "QB": 1.0,
+    "RB": 1.25,
+    "TE": 1.3,
+    "WR": 2.45
+   },
+   "values": {
+    "DB": 1.1555,
+    "DL": 0.8966,
+    "K/P/LS": 0.3,
+    "LB": 1.2742,
+    "OL": 0.6263,
+    "QB": 0.7194,
+    "RB": 1.5893,
+    "TE": 0.913,
+    "WR": 1.0829
+   }
+  },
+  "severity_bands": {
+   "day_ranges": {
+    "long_term": [
+     63,
+     180
+    ],
+    "minor": [
+     0,
+     6
+    ],
+    "multi_week": [
+     21,
+     62
+    ],
+    "short": [
+     7,
+     20
+    ]
+   },
+   "definition": "games missed with weekly games: minor 0 (return within 6 days), short 1-2 (7-20 days), multi_week 3-8 (21-62 days), long_term 9+ or season-ending (63-180 days)",
+   "label": "Pattern (day ranges follow from the weekly game cadence; within-band distribution uniform is Unverified)"
+  },
+  "severity_by_class_confirmed": "data.severity_report_onsets_footprint.by_class",
+  "severity_mix_all_onsets": {
+   "basis": "pooled 2010-2013 footprint report severity shares times the 2012 censoring correction (2012 recommended mix over 2012 footprint shares), renormalised",
+   "label": "Pattern",
+   "values": {
+    "long_term": 0.036403022806432324,
+    "minor": 0.7148248069011641,
+    "multi_week": 0.07077044544349168,
+    "short": 0.17800172484891175
+   }
+  },
+  "structure": "Two onset streams. (1) Game onsets drawn on the possession stream per player-snap of actual participation (scrimmage, special teams and penalty-nullified snaps). (2) Optional between-game (practice/non-game) onsets drawn once per club-week, never removing anyone from a game, with the between-game class mix. Each game onset draws class (game mix), then severity conditional on class, then an in-game removal decision."
+ },
+ "regression_2012": "the season-parameter port on 2012 with the committed vocabulary reproduces the committed data block exactly",
+ "schema": "2010-2014w4-nfl-injury-calibration-v1",
+ "sources": {
+  "injuries_2010.csv": {
+   "sha256": "6e86b7aba42b9adf76c083686b9bc6fbd7943293b411893ffe952f3b71997519"
+  },
+  "injuries_2011.csv": {
+   "sha256": "acf44d2952fec7d0806eed122e36d53f174ab742b25a4c6e9f3f1676da255a10"
+  },
+  "injuries_2012.csv": {
+   "sha256": "8b8ce2ed5bd45bbb709e5402efa4fe930d63fedfce111df9b1fea08ffa51f237"
+  },
+  "injuries_2013.csv": {
+   "sha256": "b84c71cf23be81375bbca62f7d2c51d53fa75330fbcf9f598ec4ac17fea7d8be"
+  },
+  "injuries_2014w4.csv": {
+   "sha256": "07b6ff107c3e2285772654952c53639cc7a2208b6ffd6ec6e1e2fffd1a478bc6"
+  },
+  "play_by_play_2010.csv.gz": {
+   "sha256": "6d4f519b4821f06ffe2285faadad8cee718f464eeb9a310a8276753da10bee2e"
+  },
+  "play_by_play_2011.csv.gz": {
+   "sha256": "ffa0bfb803f0c30a4b765af5e621b0f601d695efdba7d6d396fb067d6a0c89b2"
+  },
+  "play_by_play_2012.csv.gz": {
+   "sha256": "ff1cda2e26610ef8720324e442d1e5ebc24918e08fd1d2933590b7b91a7068cd"
+  },
+  "play_by_play_2013.csv.gz": {
+   "sha256": "b4cd0dc48697ec44a2041d57dfc1c7210a792d1b5be497c161ef20a5b7fb9942"
+  },
+  "play_by_play_2014w4.csv": {
+   "sha256": "fd6f77ac5ddac90f80b7559c7767976892902c380b9380aa85e0de98c406b719"
+  },
+  "roster_weekly_2010.csv": {
+   "sha256": "c415397ed98cbf9b5e038cb9415b9ed0d0b1d2611b09d39a7be521893b7c6533"
+  },
+  "roster_weekly_2011.csv": {
+   "sha256": "80de7a110233fa7569c26e298d6393b48349263f4dd117cf047612239801bc19"
+  },
+  "roster_weekly_2012.csv": {
+   "sha256": "262fd2f9a862c3b97275d91c60951f940a4e82989503b8359ac11b12a76c0e2f"
+  },
+  "roster_weekly_2013.csv": {
+   "sha256": "76c47a629075ffd75f9c4ee49fadb6dad45396be486af897078fee5722969781"
+  },
+  "roster_weekly_2014w4.csv": {
+   "sha256": "fc963d8ddd38aef3541f7db07b8732e1a7c0780ce0fba6bf02775b2c9cf5558c"
+  }
+ },
+ "specification_sha256": "ca028ba38009d1b84e5c887ea86ce8d697edf1705bcd9b755f60aede9d6f8446",
+ "status": "RESEARCH ARTIFACT for kernel 2014.6 (batch B3d); not read by any runtime module until B5",
+ "vocabulary": {
+  "base": "the committed 2012 sets (build_2012_injury_calibration.py), unchanged",
+  "extension": {
+   "excluded": [
+    "infection",
+    "flu",
+    "heat cramps"
+   ],
+   "head_neck": [
+    "nose",
+    "chin",
+    "tooth",
+    "migraines",
+    "(migraines)",
+    "headaches"
+   ],
+   "lower_extremity": [
+    "fibula",
+    "arch",
+    "quad",
+    "quadriceps",
+    "lower leg",
+    "lf. calf",
+    "feet",
+    "hips",
+    "toes",
+    "ankle and foot",
+    "hip and back",
+    "hamstring illness"
+   ],
+   "trunk_other": [
+    "kidney",
+    "lacerated kidney",
+    "lung",
+    "stomach",
+    "hernia",
+    "qblique",
+    "low back",
+    "lower back"
+   ],
+   "upper_extremity": [
+    "tricep",
+    "l. arm",
+    "upper arm",
+    "l. hand",
+    "rt. thumb",
+    "shoulders",
+    "finger and neck"
+   ]
+  },
+  "rule": "anatomical first-named-part",
+  "version": "2014.6"
+ }
+}

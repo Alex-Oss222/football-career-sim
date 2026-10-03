@@ -16,7 +16,7 @@ production runner accepts no ``_test_*`` argument
 PROFILE_2014_5 is the live kernel and must reproduce every committed result
 digest (tests/test_profiles.py, tests/test_attribution.py ResultIdentityTests).
 PROFILE_2014_6 is the kernel being built: its base is the 2010-2014 league
-base (U1 = (b)), which fails closed until batch B3 commits it, and it carries
+base (U1 = (b)), which fails closed until batch B5 registers it, and it carries
 no mechanism flag yet.
 """
 from __future__ import annotations
