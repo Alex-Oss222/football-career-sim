@@ -339,23 +339,131 @@ KNOWN_DETECTIONS["2014.5"] = dict(KNOWN_DETECTIONS["2014.4"])
 # 2014.5 registry is carried over with its metric strings unchanged. Each row
 # is re-diagnosed against its new 2010-2014 centre at the batch that moves
 # it; a row that is no longer OUTSIDE leaves the registry there, and a new
-# OUTSIDE row is never registered here without the user (U8).
+# OUTSIDE row is never registered here permanently without the user (U8).
 KNOWN_DETECTIONS["2014.6"] = dict(KNOWN_DETECTIONS["2014.5"])
 
+# Provisional detections (kernel 2014.6 build, batch B5X, October 3, 2026).
+# Batch B5 read seven graded 2014.6 rows OUTSIDE on its acceptance blocks and
+# stopped on U8. With the user's standing instruction to finish the build, the
+# build's parent decided to carry each as a PROVISIONAL detection instead of
+# holding the batch: the row stays graded, its status is never rewritten, no
+# centre, tolerance, coefficient or pool changes, and no closed result changes.
+# Each entry records the batch's own attribution and the batch expected to
+# resolve it. The provisional status is not the permanent registration U8
+# requires. Batch B17 re-grades every provisional row with the provisional
+# status removed (known_detections(cohort, provisional=False)); a row still
+# OUTSIDE at B17 is reported to the user as U8 with the full picture and is
+# never auto-registered permanently. The bound of KNOWN_DETECTION_BOUND does
+# not gate a provisional row: it is a carried diagnosis, not an accepted one.
+PROVISIONAL_REGRADE_BATCH = "B17"
+_PROVISIONAL_RESIDUAL = "residual note (kernel 2014.6 end-of-half design); no batch is expected to move it"
+_PROVISIONAL_UNEXPLAINED = "unexplained; re-grade at B17"
+PROVISIONAL_DETECTIONS = {
+    "2014.6": {
+        "first-half final possessions starting with 0-30 s left (share)": {
+            "observed": "0.428 against 0.494 +/- 0.034, every block",
+            "attribution": "design-measured residual: kickoff and return time are not modelled, so first-half "
+                           "final windows run slightly long (runtime/README.md, batch B5 acceptance)",
+            "resolves": _PROVISIONAL_RESIDUAL,
+        },
+        "first-half final possessions starting with 31-60 s left (share)": {
+            "observed": "0.317 against 0.257 +/- 0.029, every block",
+            "attribution": "the same design-measured residual as the 0-30 s window: the share the 0-30 s "
+                           "window loses moves here (runtime/README.md, batch B5 acceptance)",
+            "resolves": _PROVISIONAL_RESIDUAL,
+        },
+        "timeouts per team-game": {
+            "observed": "3.38 against 3.70 +/- 0.08, every block; kernel 2014.5 reads 3.29",
+            "attribution": "design-measured residual: a drive replay cannot charge timeouts it does not carry "
+                           "(runtime/README.md, batch B5 acceptance and attribution)",
+            "resolves": _PROVISIONAL_RESIDUAL,
+        },
+        "drive share: touchdown": {
+            "observed": "0.204 against 0.195 on A2; with punt and safety on A1",
+            "attribution": "the home term is not centred (at neutral sites the share reads 0.189); present "
+                           "under kernel 2014.5 on the same fixture",
+            "resolves": "B7 (the HOME_EDGE refit)",
+        },
+        "drive share: punt": {
+            "observed": "OUTSIDE on A1 with touchdown",
+            "attribution": "the uncentred home term, as drive share: touchdown",
+            "resolves": "B7 (the HOME_EDGE refit)",
+        },
+        "drive share: safety": {
+            "observed": "0.0017-0.0020 against 0.0028; also low under kernel 2014.5",
+            "attribution": "the uncentred home term, with touchdown and punt (batch B5 acceptance)",
+            "resolves": "B7 (the HOME_EDGE refit)",
+        },
+        "top receiver share of team targets (team-game)": {
+            "observed": "0.299 against 0.291 +/- 0.003; OUTSIDE under kernel 2014.5 too",
+            "attribution": "the synthetic acceptance fixture and the usage tilt",
+            "resolves": "B13/B16 (yardage credit and credit concentration)",
+        },
+        "punt share of possessions ending in Q4's last 2:00 or OT, offense trailing 1-8": {
+            "observed": "0.010-0.016 against 0.004 (2 of 536 real possessions)",
+            "attribution": "the pooled base, not the regimes: the B5 attribution run moves the row from 0.004 "
+                           "to 0.017 with the base alone",
+            "resolves": _PROVISIONAL_UNEXPLAINED,
+        },
+        "sacks per dropback": {
+            "observed": "0.069 against 0.063 on A1, strength records present",
+            "attribution": "the synthetic strength records' sack term",
+            "resolves": "B7 (strength v4 at runtime)",
+        },
+        "third-down attempts per punt drive": {
+            "observed": "1.200 against 1.189 +/- 0.010 on A2",
+            "attribution": "no cause isolated at B5",
+            "resolves": _PROVISIONAL_UNEXPLAINED,
+        },
+    },
+}
+# "punts per team game (drive-ending)" is already a carried detection; B5 read
+# it 4.66 against 4.82 +/- 0.15 on A1, within twice its tolerance, and its
+# carried note stands. It is re-diagnosed with the rest at B17.
 
-def known_detections(cohort):
+
+def _provisional_note(entry):
+    return ("PROVISIONAL (batch B5X, October 3, 2026; re-graded at %s with the provisional status "
+            "removed, never auto-registered permanently): %s; attribution: %s; expected to resolve: %s"
+            % (PROVISIONAL_REGRADE_BATCH, entry["observed"], entry["attribution"], entry["resolves"]))
+
+
+for _cohort, _rows in PROVISIONAL_DETECTIONS.items():
+    for _metric, _entry in _rows.items():
+        if _metric in KNOWN_DETECTIONS[_cohort]:
+            raise AssertionError("provisional row already a carried detection: %s" % _metric)
+        KNOWN_DETECTIONS[_cohort][_metric] = _provisional_note(_entry)
+del _cohort, _rows, _metric, _entry
+
+
+def provisional_detections(cohort):
+    """{metric: {observed, attribution, resolves}} for the cohort's provisional
+    detections (kernel 2014.6 build only); empty otherwise."""
+    return {m: dict(e) for m, e in PROVISIONAL_DETECTIONS.get(cohort, {}).items()}
+
+
+def known_detections(cohort, provisional=True):
     """{metric: note} for a kernel cohort ("2013.6" through "2014.5", and the
-    2014.6 cohort being built); empty otherwise."""
-    return dict(KNOWN_DETECTIONS.get(cohort, {}))
+    2014.6 cohort being built); empty otherwise. provisional=False is the B17
+    re-grade view: provisional rows are left out and graded as unregistered."""
+    rows = dict(KNOWN_DETECTIONS.get(cohort, {}))
+    if not provisional:
+        for metric in PROVISIONAL_DETECTIONS.get(cohort, {}):
+            rows.pop(metric, None)
+    return rows
 
 
-def known_status(row, cohort):
+def known_status(row, cohort, provisional=True):
     """A row's rendered status: unchanged unless the metric is a known
     detection of that cohort, which is labelled and, when OUTSIDE, checked
-    against KNOWN_DETECTION_BOUND times its tolerance."""
+    against KNOWN_DETECTION_BOUND times its tolerance. A provisional detection
+    is labelled as such and not bounded; with provisional=False (the B17
+    re-grade) it is graded as an unregistered row."""
     metric, observed, centre, tolerance, status = row
-    if metric not in KNOWN_DETECTIONS.get(cohort, {}) or status not in ("WITHIN", "OUTSIDE"):
+    if metric not in known_detections(cohort, provisional) or status not in ("WITHIN", "OUTSIDE"):
         return status
+    if metric in PROVISIONAL_DETECTIONS.get(cohort, {}):
+        return "%s (provisional detection, re-graded at %s)" % (status, PROVISIONAL_REGRADE_BATCH)
     if status == "WITHIN":
         return "WITHIN (known detection)"
     if abs(observed - centre) <= KNOWN_DETECTION_BOUND * tolerance:

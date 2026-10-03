@@ -188,30 +188,41 @@ def run(block, version, count=None, start=0, jobs=1):
     return rows
 
 
-def grade(receipts, version):
+def grade(receipts, version, provisional=True):
+    """Graded tables with each row's registry status. provisional=False is
+    the B17 re-grade: provisional detections (runtime.bands
+    PROVISIONAL_DETECTIONS) are graded as unregistered rows."""
     from runtime import bands
     out = {}
     for name, fn in (("usage", bands.audit), ("drive_model", bands.audit_drive_model),
                      ("field_position", bands.audit_field_position), ("injuries", bands.audit_injuries)):
         team_games, rows = fn(receipts, cohort=version)
         out[name] = {"team_games": team_games,
-                     "rows": [[m, o, c, t, bands.known_status((m, o, c, t, s), version)] for m, o, c, t, s in rows]}
+                     "rows": [[m, o, c, t, bands.known_status((m, o, c, t, s), version, provisional)]
+                              for m, o, c, t, s in rows]}
     checked, counts = bands.coherence(receipts, cohort=version)
     out["coherence"] = {"checked": checked, "violations": {cls: n for cls, n, _ in counts if n}}
     return out
 
 
-def summary(rows, version):
+def summary(rows, version, provisional=True):
     receipts = [r["receipt"] for r in rows if "receipt" in r]
     refused = [r for r in rows if r["refused"]]
     diagnostics = {k: sum(r.get("diagnostics", {}).get(k, 0) for r in rows) for k in DIAGNOSTICS}
     out = {"kernel_profile": version, "games": len(rows), "refused_games": len(refused),
            "refused": [{"label": r["label"], "refused": r["refused"]} for r in refused[:50]],
            "diagnostics": diagnostics, "digests": {r["label"]: r.get("digest") for r in rows}}
-    out["bands"] = grade(receipts, version)
+    out["bands"] = grade(receipts, version, provisional)
     outside = [(table, row[0], row[4]) for table, block in out["bands"].items() if table != "coherence"
                for row in block["rows"] if str(row[4]).startswith("OUTSIDE")]
     out["outside"] = outside
+    out["provisional_regrade"] = not provisional
+    # The gate reads: a row OUTSIDE that is neither a carried known detection
+    # inside its bound nor a provisional detection; provisional rows are listed
+    # apart so the B17 re-grade can see them with their status removed.
+    out["outside_ungated"] = [row for row in outside if "known detection, within" not in row[2]
+                              and "provisional detection" not in row[2]]
+    out["outside_provisional"] = [row for row in outside if "provisional detection" in row[2]]
     return out
 
 
@@ -223,11 +234,13 @@ def main():
     parser.add_argument("--profile", default="2014.6")
     parser.add_argument("--jobs", type=int, default=1)
     parser.add_argument("--out", type=Path)
+    parser.add_argument("--regrade-provisional", action="store_true",
+                        help="the B17 view: grade provisional detections as unregistered rows")
     args = parser.parse_args()
     if args.block == "dev" and args.count is None:
         parser.error("the dev block needs --count")
     rows = run(args.block, args.profile, args.count, args.start, args.jobs)
-    result = summary(rows, args.profile)
+    result = summary(rows, args.profile, provisional=not args.regrade_provisional)
     result["block"] = args.block
     if args.out:
         args.out.write_text(json.dumps(result, indent=1, sort_keys=True, default=str) + "\n", encoding="utf-8")
@@ -242,7 +255,9 @@ def main():
         for metric, observed, centre, tolerance, status in block["rows"]:
             fmt = lambda v: "-" if v is None else ("%.4f" % v)
             print("  %-96s %10s %10s %10s  %s" % (metric[:96], fmt(observed), fmt(centre), fmt(tolerance), status))
-    print("\nOUTSIDE rows: %d" % len(result["outside"]))
+    print("\nOUTSIDE rows: %d (ungated %d, provisional %d%s)" % (
+        len(result["outside"]), len(result["outside_ungated"]), len(result["outside_provisional"]),
+        "; provisional status removed" if result["provisional_regrade"] else ""))
     for row in result["outside"]:
         print("  %s: %s (%s)" % row)
     return 1 if result["refused_games"] else 0

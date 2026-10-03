@@ -13,7 +13,7 @@ if str(ROOT) not in sys.path:
 
 from runtime.bands import (
     KERNEL_2013_6_LABEL, KNOWN_DETECTION_BOUND, LEGACY_LABEL, audit, audit_drive_model, audit_field_position,
-    audit_injuries, coherence, cohorts, current_cohorts, known_detections, known_status,
+    audit_injuries, coherence, cohorts, current_cohorts, known_detections, known_status, provisional_detections,
 )
 from runtime.calibration_base import cohort_base
 from runtime.stat_tables import (
@@ -428,6 +428,10 @@ def _known_detection_lines(cohort):
              "documented design cause, accepted rather than tuned. Each stays graded; OUTSIDE "
              "within %dx its tolerance is the documented detection, and beyond that it is "
              "investigated. No centre, tolerance, coefficient or pool was changed." % KNOWN_DETECTION_BOUND, ""]
+    if provisional_detections(cohort):
+        lines[0] += (" A row marked PROVISIONAL is a carried diagnosis from the kernel 2014.6 build, not an "
+                     "accepted detection: it is not bounded, and batch B17 re-grades it with the provisional "
+                     "status removed; a row still OUTSIDE then goes to the user (U8).")
     lines += ["- %s: %s." % (metric, note) for metric, note in known.items()]
     return lines + [""]
 
