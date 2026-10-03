@@ -73,15 +73,38 @@ def _pair(value):
             and value[0] <= value[1])
 
 
+SCHEMA_2014_6 = "2010-2014w4-nfl-injury-calibration-v1"
+
+
+def acceptance_bands(data):
+    """The calibration's acceptance bands for the kernel it serves: the 2012
+    file's kernel 2014.4 bands, or the 2010-2014 file's kernel 2014.6 bands
+    (the 2012 bands scaled by the new value over the 2012 value)."""
+    if data.get("schema") == SCHEMA_2014_6:
+        return data.get("acceptance_bands_for_kernel_2014_6", {})
+    return data.get("recommended", {}).get("acceptance_bands_for_kernel_2014_4", {})
+
+
 def validate(data=None):
-    """Structural and arithmetic checks on the calibration file."""
+    """Structural and arithmetic checks on the calibration file (the 2012
+    file, or the 2010-2014 file of kernel 2014.6, whose sources are keyed by
+    file name and whose declared slot mix must be the participation model's
+    SCRIMMAGE_SLOT_MIX, decision 1B.4)."""
     data = data or load()
     errors = []
     rec = data.get("recommended", {})
     d = data.get("data", {})
-    for key in ("D1", "D2", "D3"):
-        if not data.get("sources", {}).get(key, {}).get("sha256"):
-            errors.append(f"source {key} has no sha256")
+    if data.get("schema") == SCHEMA_2014_6:
+        sources = data.get("sources", {})
+        if not sources or any(len(str(v.get("sha256", ""))) != 64 for v in sources.values()):
+            errors.append("a source has no sha256")
+        declared = rec.get("position_relative_risk_per_snap", {}).get("slot_mix")
+        if declared != SCRIMMAGE_SLOT_MIX:
+            errors.append("declared slot mix differs from participation.SCRIMMAGE_SLOT_MIX")
+    else:
+        for key in ("D1", "D2", "D3"):
+            if not data.get("sources", {}).get(key, {}).get("sha256"):
+                errors.append(f"source {key} has no sha256")
     mixes = (("class_mix_game_onsets", CLASSES), ("severity_mix_all_onsets", SEVERITIES))
     for name, keys in mixes:
         values = rec.get(name, {}).get("values", {})
@@ -121,7 +144,7 @@ def validate(data=None):
     exposure, nullified = denominators.get("exposure_plays"), denominators.get("play_types", {}).get("no_play_snapped")
     if not (isinstance(exposure, int) and isinstance(nullified, int) and 0 <= nullified < exposure):
         errors.append("exposure denominators invalid")
-    bands = rec.get("acceptance_bands_for_kernel_2014_4", {})
+    bands = acceptance_bands(data)
     for key in ("game_onsets_per_team_game", "rest_of_game_removals_per_team_game",
                 "head_neck_share_game_onsets", "lower_extremity_share_game_onsets",
                 "time_loss_share_(short+)", "long_term_share"):

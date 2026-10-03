@@ -13,8 +13,9 @@ if str(ROOT) not in sys.path:
 
 from runtime.bands import (
     KERNEL_2013_6_LABEL, KNOWN_DETECTION_BOUND, LEGACY_LABEL, audit, audit_drive_model, audit_field_position,
-    coherence, cohorts, current_cohorts, known_detections, known_status,
+    audit_injuries, coherence, cohorts, current_cohorts, known_detections, known_status,
 )
+from runtime.calibration_base import cohort_base
 from runtime.stat_tables import (
     POSITION_GROUPS, avg, combine, g, pct, position_sections, rating_value,
     time_text,
@@ -406,10 +407,10 @@ POINTS_NOTE = (
 )
 
 
-def _band_table(rows, cohort=None):
+def _band_table(rows, cohort=None, centre_label="2012 band centre"):
     """A band table; a cohort's known detections (runtime.bands) are labelled."""
     fmt = lambda v: "—" if v is None else ("%.3f" % v if abs(v) < 2 else "%.1f" % v)
-    lines = ["| Metric | Observed | 2012 band centre | Tolerance | Status |",
+    lines = ["| Metric | Observed | %s | Tolerance | Status |" % centre_label,
              "|---|---:|---:|---:|---|"]
     for row in rows:
         metric, observed, band, tolerance, _ = row
@@ -448,9 +449,50 @@ def _coherence_lines(checked, counts):
     return lines
 
 
+def _base_cohort_lines(version, members, empty):
+    """A cohort graded on a later base (kernel 2014.6 onward, batch B5): the
+    same tables with that base's centres named, plus its injury rows."""
+    base = cohort_base(members, version)
+    label = "%s base centre" % base.name
+    team_games, rows = audit(members, cohort=version)
+    drive_games, drive_rows = audit_drive_model(members, cohort=version)
+    fp_games, fp_rows = audit_field_position(members, cohort=version)
+    injury_games, injury_rows = audit_injuries(members, cohort=version)
+    checked, counts = coherence(members, cohort=version)
+    sources = ", ".join("`%s`" % pin.path for role, pin in base.files if role != "specification")
+    return [
+        "## Kernel %s cohort (%s)" % (version, _week_span(members, empty)), "",
+        "**Calibration base:** %s (%s). **Team-games audited:** %d. Carry shares exclude "
+        "kneels." % (base.name, sources, team_games), "",
+    ] + _band_table(rows, centre_label=label) + ["", POINTS_NOTE, "",
+        "### Drive model rows", "",
+        "Centres from the base's band centres (equal weight per event); tolerance is three "
+        "standard errors at the observed sample.", "",
+    ] + _band_table(drive_rows, version, label) + [""] + _known_detection_lines(version) + [
+        "### Field-position and late-game rows", "",
+        "Centres from the base's band centres and its drawn transition pools. Rates use "
+        "3*sqrt(p(1-p)/n), counts 3*sqrt(c/n) and means 3*sd/sqrt(n); a row reads "
+        "INSUFFICIENT SAMPLE below 30 events. INFORMATIONAL rows are shapes, not grades; the "
+        "zero-tolerance rows read OUTSIDE on any event.", "",
+    ] + _band_table(fp_rows, centre_label=label) + [
+        "",
+        "### Injury rows", "",
+        "The injury calibration's acceptance bands (kernel 2014.4 method): WITHIN when the "
+        "observed value lies inside the band; the centre column is the band midpoint and the "
+        "tolerance its half-width.", "",
+    ] + _band_table(injury_rows, centre_label="band midpoint") + [
+        "",
+        "### Ledger coherence", "",
+        "Zero-tolerance counts from `runtime.play_detail.check_ledger`, checked with this "
+        "base's rules. Games checked: %d." % checked, "",
+    ] + _coherence_lines(checked, counts) + [""]
+
+
 def _current_cohort_lines(version, members, empty):
     """One field-position-era cohort (kernel 2013.7, 2013.8, ...) of the audit,
     graded against that kernel version's own calibration base."""
+    if not cohort_base(members, version).legacy_2012():
+        return _base_cohort_lines(version, members, empty)
     team_games, rows = audit(members, cohort=version)
     drive_games, drive_rows = audit_drive_model(members, cohort=version)
     fp_games, fp_rows = audit_field_position(members, cohort=version)

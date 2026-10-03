@@ -3,6 +3,7 @@ from dataclasses import dataclass, asdict, replace
 import hashlib, json, math, random
 
 from . import KERNEL_VERSION
+from . import calibration
 from . import calibration_base
 from . import injury_model
 from . import participation
@@ -400,18 +401,29 @@ def _resolve_game(
     cbase = profile.calibration_base()
     cbase.require()
     cal = cbase.aggregate()
-    usage_values = cbase.usage()["values"]
+    # Kernel 2014.6 (batch B5): usage shares (credit only) and the injury
+    # block come from the bound base under usage_2014_6 and injury_2014_6,
+    # else from the 2012 base (every kernel up to 2014.5 is bound to it).
+    ubase = profile.usage_base(cbase)
+    # The chain layout's run-value shapes (the negative-run rate and loss
+    # distribution) are a yardage rule, not a credit share: they stay the
+    # 2012 base's until R16 owns the yard split (batch B13), so the usage
+    # block changes credit only. Kernels up to 2014.5 read their own base.
+    usage_values = (cbase if cbase.legacy_2012() else calibration_base.BASE_2012).usage()["values"]
     dm = cbase.drive_model()
     fpm = cbase.field_position()
-    injury_params = cbase.injury_parameters()
+    injury_params = profile.injury_base(cbase).injury_parameters()
     strength_params = unit_strength.parameters(profile.strength)
-    model = cal["model"]
-    gross_per_attempt = cal["derived"]["gross_yards_per_pass_attempt"]
-    yards_per_attempt = gross_per_attempt["numerator"] / gross_per_attempt["denominator"]
-    carry = cal["derived"]["yards_per_carry"]
-    yards_per_carry = carry["numerator"] / carry["denominator"]
-    completion_rate = cal["derived"]["completion_rate"]["value"]
+    # The base's yardage numbers (runtime.calibration.kernel_rates; the 2012
+    # schema keeps its exact expressions). The per-play penalty counter stays
+    # the 2012 base's factor until R11 owns it (batch B11).
+    rates = calibration.kernel_rates(cal, None if cbase.legacy_2012() else calibration_base.BASE_2012.aggregate())
+    yards_per_attempt = rates["yards_per_attempt"]
+    yards_per_carry = rates["yards_per_carry"]
+    completion_rate = rates["completion_rate"]
+    penalty_per_play = rates["penalty_per_play"]
     xp_rate = dm.rate("extra_point")
+    regimes_v3 = profile.has("regimes_v3")
     T = fpm.T
 
     teams = {home.team_id: home, away.team_id: away}
@@ -768,6 +780,13 @@ def _resolve_game(
         # shifts of the matchup ride with the draw (zero on the legacy path).
         draw_extra = {"int": strength_receipt.get("int_edge", 0.0), "sack": strength_receipt.get("sack_shift", 0.0)}
         score_diff = stats[offense]["points"] - stats[other(offense)]["points"]
+        if regimes_v3:
+            # Kernel 2014.6 (B5): per-game context rides with the draw (no
+            # module state): the overtime history (R14 ot_first/ot_sudden)
+            # and whether a made field goal now would end the game.
+            draw_extra["ot_history_empty"] = half == "OT" and not ot_history
+            draw_extra["walk_off_fg"] = bool(half == "OT" and ot_history is not None and ot_status(
+                ot_history + [{"team": offense, "score": "field_goal"}], game_type) == "end")
 
         # 1-3. Game-state cell, category and a real 2012 drive feasible from
         # the start spot (runtime/field_position.py, possession stream).
@@ -890,7 +909,9 @@ def _resolve_game(
             original = drawn
             tried = [drawn.tuple]
             for attempt in range(1, LAYOUT_RESAMPLE_LIMIT + 1):
-                alt = fpm.resample_drive(resample_rng, original, spot, window, exclude=tried)
+                alt = (fpm.resample_drive(resample_rng, original, spot, window, exclude=tried,
+                                          timeouts=timeouts_before) if regimes_v3
+                       else fpm.resample_drive(resample_rng, original, spot, window, exclude=tried))
                 if alt is None:
                     break
                 tried.append(alt.tuple)
@@ -906,6 +927,16 @@ def _resolve_game(
                         "final": {"locator": fpm.tuple_locator(alt.category, alt.tuple),
                                   "tuple": list(alt.tuple[:5])},
                     }
+                    if original.match_width is not None:
+                        # Kernel 2014.6 (append-only): the R17 time-match width.
+                        layout_resample["match_width"] = original.match_width
+                    if regimes_v3 and (alt.pool_id != original.pool_id or alt.match_width != original.match_width):
+                        # Kernel 2014.6 (append-only): the wider pool the
+                        # resample drew from (FieldPositionModelV3._resample_rungs).
+                        layout_resample["final_pool"] = list(alt.pool_id)
+                        layout_resample["final_match_width"] = alt.match_width
+                        diagnostics["chain_layout_resample_widened"] = \
+                            diagnostics.get("chain_layout_resample_widened", 0) + 1
                     diagnostics["chain_layout_resampled"] += 1
                     break
             if layout_resample is None:
@@ -939,7 +970,7 @@ def _resolve_game(
         s["sacks_allowed"] += sacks
 
         # 7. Penalties (counters only) and the drive's chains.
-        pens = sum(rng.random() < model["penalty_per_play"] for _ in range(plays))
+        pens = sum(rng.random() < penalty_per_play for _ in range(plays))
         s["penalties"] += pens
         s["penalty_yards"] += pens * rng.randint(5, 10) if pens else 0
         s["first_downs"] += chains[0] + chains[1]
@@ -1063,6 +1094,7 @@ def _resolve_game(
 
         drive_ledger, drive_calls = apply_drive_detail(
             calibration_base=cbase,
+            usage_base=ubase,
             seed=seed,
             event_id=event_id,
             drive_no=drive_no,
@@ -1184,6 +1216,10 @@ def _resolve_game(
                     record["punt"][key] = punt_record[key]
         if layout_resample is not None:
             record["layout_resample"] = layout_resample
+        if regimes_v3 and spikes:
+            # Kernel 2014.6 (append-only): the window seconds left at the
+            # drive's last spike (the R14 spike rule's quantity).
+            record["last_spike_seconds_left"] = window - drawn.own_seconds + int(fpm.value(row, "last_spike_to_end"))
         if half == "OT":
             record["period"] = _period_clock(start_clock, overtime=ot_label)[0]
         if quarter:

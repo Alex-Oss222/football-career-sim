@@ -727,6 +727,7 @@ def apply_drive_detail(
     start_kind=None,
     game_ledger=(),
     calibration_base=None,
+    usage_base=None,
 ):
     """Allocate one resolved drive into reconciled player/snap public detail.
 
@@ -755,14 +756,21 @@ def apply_drive_detail(
     Kernel 2014.6 plumbing (batch B1): `calibration_base` is the kernel's
     bound base (runtime.calibration_base); its usage table, completion rate,
     tilt factors and scramble rate are used here. None is the 2012 base.
+    Kernel 2014.6 (batch B5): `usage_base` is the base whose usage table
+    credits the drive (runtime.profiles.Profile.usage_base); None is
+    `calibration_base`. The completion rate is the bound base's
+    (runtime.calibration.kernel_rates).
     """
     from .calibration_base import BASE_2012
+    from .calibration import kernel_rates
     cbase = calibration_base if calibration_base is not None else BASE_2012
+    ubase = usage_base if usage_base is not None else cbase
     rng = _rng(seed, event_id=event_id, drive_no=drive_no, offense=team.team_id)
-    shares = cbase.usage()["values"]
+    shares = ubase.usage()["values"]
     rank_shapes = shares["rank_shares"]
-    completion_rate = cbase.aggregate()["derived"]["completion_rate"]["value"]
-    tilt_factors = cbase.tilt_factors()
+    completion_rate = kernel_rates(cbase.aggregate(), None if cbase.legacy_2012() else BASE_2012.aggregate())[
+        "completion_rate"]
+    tilt_factors = ubase.tilt_factors()
     scramble_rate = _scramble_rate(cbase)
     diagnostics = diagnostics if diagnostics is not None else {}
     kneel_yards = list(kneel_yards)

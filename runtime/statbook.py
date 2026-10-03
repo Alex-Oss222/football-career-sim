@@ -53,7 +53,8 @@ KERNEL_2014_6_PLAYER_FIELDS = ()
 # are "ledger".
 KERNEL_2014_6_FIELD_GROUP = {
     "result": ("calibration_base",),
-    "possession": (),
+    # Batch B5: the window seconds left at a drive's last spike (R14).
+    "possession": ("last_spike_seconds_left",),
     "ledger": (),
     "team": KERNEL_2014_6_TEAM_STAT_FIELDS,
     "player": KERNEL_2014_6_PLAYER_FIELDS,

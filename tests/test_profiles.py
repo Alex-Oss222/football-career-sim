@@ -91,12 +91,31 @@ class ProfileTableTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             wrong.calibration_base()
 
-    def test_profile_2014_6_fails_closed_until_its_base_is_built(self):
-        with self.assertRaises(CalibrationBaseError):
-            PROFILE_2014_6.calibration_base()
+    def test_profile_2014_6_binds_the_2010_2014_base(self):
+        # Batch B5 registered the base; its schema flags must be the profile's.
+        from runtime.calibration_base import BASE_2010_2014W4
+        self.assertIs(PROFILE_2014_6.calibration_base(), BASE_2010_2014W4)
+        self.assertEqual(PROFILE_2014_6.flags, frozenset({"base_2014_6", "regimes_v3", "injury_2014_6",
+                                                          "usage_2014_6"}))
         a, b = sample_teams()
-        with self.assertRaises(CalibrationBaseError):
-            resolve_game(a, b, seed=SEED + b"-b1-2014-6", event_id="b1-2014-6", _test_profile=PROFILE_2014_6)
+        r = resolve_game(a, b, seed=SEED + b"-b5-2014-6", event_id="b5-2014-6", _test_profile=PROFILE_2014_6)
+        self.assertEqual(r["kernel_version"], "2014.6")
+        self.assertEqual(r["calibration_base"]["name"], "2010_2014w4")
+        self.assertEqual(validate_result(r), [])
+        # A profile without the base's schema flags, or holding them on the
+        # 2012 base, fails closed before any draw.
+        bare = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength="honours-production-v3")
+        with self.assertRaises(ValueError):
+            bare.calibration_base()
+        with self.assertRaises(ValueError):
+            resolve_game(a, b, seed=SEED + b"-b5-bare", event_id="b5-bare", _test_profile=bare)
+        wrong = Profile("2014.5", base="2012", cell_rules="2013.7", strength="honours-production-v3",
+                        flags=frozenset({"regimes_v3"}))
+        with self.assertRaises(ValueError):
+            wrong.calibration_base()
+        with self.assertRaises(ValueError):
+            Profile("2014.6", base="2012", cell_rules="2013.7", strength="honours-production-v3",
+                    flags=frozenset({"no_such_flag"}))
 
     def test_only_a_profile_is_accepted(self):
         a, b = sample_teams()

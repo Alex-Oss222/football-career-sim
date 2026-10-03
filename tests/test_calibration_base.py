@@ -73,15 +73,19 @@ class MappingTests(unittest.TestCase):
             self.assertIs(base_of_kernel(version), BASE_2012)
         self.assertEqual(set(KERNEL_BASES), set(RELEASED) | {"2014.6"})
 
-    def test_kernel_2014_6_maps_to_the_u1_base_which_fails_closed(self):
-        # U1 = (b): the 2010-2014 (2014 Weeks 1-4) league base; built in B3.
+    def test_kernel_2014_6_maps_to_the_u1_base(self):
+        # U1 = (b): the 2010-2014 (2014 Weeks 1-4) league base; built in B3,
+        # pinned with its schema-3 readers in B5.
+        from runtime.calibration_base import BASE_2010_2014W4
         self.assertEqual(base_for_kernel("2014.6"), "2010_2014w4")
-        self.assertIn("2010_2014w4", PENDING_BASES)
-        self.assertNotIn("2010_2014w4", BASES)
-        with self.assertRaisesRegex(CalibrationBaseError, "not available"):
-            get_base("2010_2014w4")
-        with self.assertRaises(CalibrationBaseError):
-            base_of_kernel("2014.6")
+        self.assertEqual(PENDING_BASES, {})
+        self.assertIs(get_base("2010_2014w4"), BASE_2010_2014W4)
+        self.assertIs(base_of_kernel("2014.6"), BASE_2010_2014W4)
+        self.assertEqual(BASE_2010_2014W4.verify(), [])
+        self.assertEqual(BASE_2010_2014W4.partition_counts(), dict(BASE_2010_2014W4.partitions))
+        self.assertEqual(BASE_2010_2014W4.requires_flags, frozenset({"base_2014_6", "regimes_v3"}))
+        self.assertFalse(BASE_2010_2014W4.legacy_2012())
+        self.assertTrue(BASE_2012.legacy_2012())
 
     def test_unknown_versions_raise(self):
         for version in ("2014.7", "2013.3", "2015.1", None, "", "2014.5.1", "x", 2014.5):
@@ -214,8 +218,21 @@ class ReadinessPinTests(unittest.TestCase):
             blockers = calibration_base_blockers(tmp)
             self.assertEqual([b["id"] for b in blockers], ["calibration_base"])
             self.assertIn("2014_strength_calibration_v3.json", blockers[0]["detail"])
-        # The 2014.6 base is not built yet: readiness for it would block.
-        self.assertEqual([b["id"] for b in calibration_base_blockers(ROOT, version="2014.6")], ["calibration_base"])
+        # Batch B5: the 2014.6 base is pinned, so readiness for it passes on
+        # the committed files and blocks on a changed copy.
+        from runtime.calibration_base import BASE_2010_2014W4
+        self.assertEqual(calibration_base_blockers(ROOT, version="2014.6"), [])
+        with tempfile.TemporaryDirectory() as tmp:
+            for role, pin in BASE_2010_2014W4.files:
+                target = Path(tmp) / pin.path
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes((ROOT / pin.path).read_bytes())
+            self.assertEqual(calibration_base_blockers(tmp, version="2014.6"), [])
+            path = Path(tmp) / BASE_2010_2014W4.pin("specification").path
+            path.write_bytes(path.read_bytes() + b"\n")
+            blockers = calibration_base_blockers(tmp, version="2014.6")
+            self.assertEqual([b["id"] for b in blockers], ["calibration_base"])
+            self.assertIn("2014_6_pre_build_specification.md", blockers[0]["detail"])
 
 
 class TwoBasesTests(unittest.TestCase):
@@ -319,6 +336,8 @@ class DispatchTests(unittest.TestCase):
     def test_receipts_are_audited_with_their_own_base(self):
         self.assertIs(base_for_result(self.receipt), BASE_2012)
         self.assertEqual(check_ledger(self.receipt), [])
+        # A 2014.6 receipt must record its base (batch B5): relabelling a
+        # 2014.5 receipt fails closed.
         for version in ("2099.1", None, "2014.6"):
             doctored = dict(self.receipt, kernel_version=version)
             with self.subTest(version=version), self.assertRaises(CalibrationBaseError):

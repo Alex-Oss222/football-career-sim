@@ -258,6 +258,92 @@ class DriveModel:
         return tuple(self.data["net_range"][category])
 
 
+SCHEMA_V1 = "2012-nfl-drive-model-v1"
+SCHEMA_V2 = "2010-2014w4-nfl-drive-model-v2"
+
+
+def validate_v2(data):
+    """Structural checks on a schema-2 drive model (the 2010-2014 base,
+    kernel 2014.6 batch B5); returns a list of errors. It carries category
+    counts, integer rate pairs, the pooled clock scale and the field-goal
+    distance logistic; the 2013.6 tuple pools are not carried."""
+    errors = []
+    if data.get("schema") != SCHEMA_V2:
+        errors.append("drive model schema differs")
+    if data.get("categories") != list(CATEGORIES):
+        errors.append("drive model categories differ from the kernel categories")
+    counts = data.get("category_counts", {})
+    if set(counts) != set(CATEGORIES) or any(not _is_int(v) or v < 0 for v in counts.values()):
+        errors.append("category counts invalid")
+    rates = data.get("rates", {})
+    for name in ("field_goal", "extra_point", "two_point", "td_type_pass", "turnover_type_interception"):
+        if not _pair_ok(rates.get(name)):
+            errors.append(f"rate {name} is not a valid integer pair")
+    edges = rates.get("fg_bin_edges") or []
+    by_distance = rates.get("fg_by_distance", {})
+    if not edges or set(by_distance) != {label for label, _, _ in edges} or any(
+            not _pair_ok(pair) for pair in by_distance.values()):
+        errors.append("field-goal distance bins invalid")
+    elif [sum(v[i] for v in by_distance.values()) for i in (0, 1)] != list(rates.get("field_goal") or []):
+        errors.append("field-goal distance bins do not sum to the field-goal pair")
+    scale = data.get("clock_scale")
+    if not (isinstance(scale, list) and len(scale) == 2 and all(_is_int(v) and v > 0 for v in scale)):
+        errors.append("clock_scale is not a positive integer pair")
+    fgd = data.get("field_goal_distance", {})
+    bands = fgd.get("bands", {})
+    if not isinstance(fgd.get("slope_per_yard"), (int, float)) or set(bands) != set(by_distance) or any(
+            not isinstance(b.get("intercept"), (int, float)) for b in bands.values()):
+        errors.append("field-goal distance model invalid")
+    elif [fgd.get("made"), fgd.get("attempts")] != list(rates.get("field_goal") or []):
+        errors.append("field-goal distance model counts differ from the field-goal pair")
+    if data.get("reconciliation", {}).get("result") != "pass":
+        errors.append("drive model reconciliation did not pass")
+    if data.get("second_pass", {}).get("result") != "pass":
+        errors.append("drive model second pass did not pass")
+    return errors
+
+
+class DriveModelV2(DriveModel):
+    """The schema-2 drive model of the 2010-2014 base (kernel 2014.6, batch
+    B5). The kernel reads its clock scale, extra-point pair and field-goal
+    distance logistic (which lives in this artifact, plan section 2.11); the
+    2013.6 pool helpers do not exist on it and raise."""
+
+    def __init__(self, base):
+        self.base = base
+        data = base.raw("drive_model")
+        errors = validate_v2(data)
+        if errors:
+            raise ValueError("invalid drive model: " + "; ".join(errors))
+        self.data = data
+        self._fg_distance = None
+
+    def fg_distance_model(self):
+        if self._fg_distance is None:
+            data = self.data["field_goal_distance"]
+            bands = [(label, low, high, data["bands"][label]["intercept"])
+                     for label, low, high in self.data["rates"]["fg_bin_edges"]]
+            self._fg_distance = {"slope": data["slope_per_yard"], "bands": bands}
+        return self._fg_distance
+
+    def _absent(self, *_args, **_kwargs):
+        raise NotImplementedError("the schema-2 drive model carries no 2013.6 tuple pools")
+
+    interior_probs = bucket = half_final_probs = pool = sample_tuple = clock_tuple = _absent
+    safety_free_kick_return_rate = net_range = _absent
+
+
+MODEL_CLASSES = {SCHEMA_V1: DriveModel, SCHEMA_V2: DriveModelV2}
+
+
+def model_class(schema):
+    """The drive-model reader of an artifact schema; an unknown schema raises."""
+    try:
+        return MODEL_CLASSES[schema]
+    except KeyError:
+        raise ValueError("no drive-model reader for schema %r" % (schema,)) from None
+
+
 # ---- the 2012 base's model (module-level API) -------------------------------------
 
 def model():

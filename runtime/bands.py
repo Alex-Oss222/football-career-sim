@@ -46,6 +46,8 @@ def expected(base=None):
     """The volume, share and top-share centres of one calibration base (the
     2012 base's when None)."""
     base = base or BASE_2012
+    if not base.legacy_2012():
+        return _expected_v3(base)
     usage = base.usage()["values"]
     cal = base.aggregate()
     tilt = base.top_share_centres()
@@ -72,6 +74,44 @@ def expected(base=None):
         # SDs (library/data/2014_strength_calibration_v2.json,
         # team_game_top_shares_2012; 512 team-games).
         **{key: (tilt[key]["mean"], tilt[key]["sd"])
+           for key in ("top_receiver_target_share", "top_rusher_carry_share")},
+    }
+
+
+def _pooled(entry):
+    """events / denominator of a schema-3 [events, denominator] centre."""
+    made, n = entry["pooled"]
+    return made / n
+
+
+def _moments(entry):
+    """(n, mean, sd) of a schema-3 [n, sum, sum of squares] centre."""
+    n, total, squares = entry["pooled"]
+    mean = total / n
+    return n, mean, math.sqrt(max(0.0, (squares - n * mean * mean) / (n - 1)))
+
+
+def _expected_v3(base):
+    """The volume, share and top-share centres of a schema-3 base (kernel
+    2014.6, batch B5): the aggregate baseline's pooled volume pairs, the
+    usage baseline's shares and its own per team-game top shares."""
+    usage = base.usage()["values"]
+    volume = base.aggregate()["volume"]
+    tops = base.top_share_centres()
+    rate = usage["assisted_tackle_play_rate"]
+    return {
+        "qb1_attempt_share": usage["passing"]["qb1_attempt_share"],
+        "rush_share": usage["rush_share"],
+        "target_share": usage["target_share"],
+        "tackle_share": usage["tackle_share"],
+        "assisted_credit_share": 2 * rate / (1 + rate),
+        "plays_per_team_game": _pooled(volume["plays_per_team_game"]),
+        "yards_per_team_game": _pooled(volume["net_yards_per_team_game"]),
+        "points_per_team_game": _pooled(volume["points_per_team_game"]),
+        "first_downs_per_team_game": _pooled(volume["first_downs_per_team_game"]),
+        "third_down_attempts_per_team_game": _pooled(volume["third_down_attempts_per_team_game"]),
+        "third_down_rate": _pooled(volume["third_down_rate"]),
+        **{key: (tops[key]["mean"], tops[key]["sd"])
            for key in ("top_receiver_target_share", "top_rusher_carry_share")},
     }
 
@@ -369,8 +409,39 @@ SHARE_GROUPS = (
 )
 
 
+def _drive_model_expected_v3(base):
+    """Schema-3 drive-model centres (kernel 2014.6, batch B5): the
+    field-position artifact's band centres (unweighted, equal weight per
+    event, the 2010-2011 overtime drives excluded as the builder states).
+    The kickoff and kick-return per team-game rows have no schema-3 centre
+    and are not graded for this cohort."""
+    centres = base.field_position().load()["band_centres"]
+    edges = base.drive_model().load()["rates"]["fg_bin_edges"]
+    share = {}
+    for label, cats in SHARE_GROUPS:
+        made = sum(centres["drive_share:" + c]["pooled"][0] for c in cats)
+        share[label] = made / centres["drive_share:" + cats[0]]["pooled"][1]
+    return {
+        "fg_accuracy": _pooled(centres["fg_accuracy"]),
+        "fg_by_distance": {label: _pooled(centres["fg_accuracy:" + label]) for label, _, _ in edges},
+        "xp_accuracy": _pooled(centres["extra_point"]),
+        "fga_per_team_game": _pooled(centres["fga_per_team_game"]),
+        "fgm_per_team_game": _pooled(centres["fgm_per_team_game"]),
+        "drives_per_team_game": _pooled(centres["drives_per_team_game"]),
+        "punts_per_team_game": _pooled(centres["drive_ending_punts_per_team_game"]),
+        "drive_share": share,
+        "clock_expired_drives_per_team_game": _pooled(centres["clock_expired_drives_per_team_game"]),
+        "offensive_drive_turnovers_per_team_game": _pooled(centres["offensive_drive_turnovers_per_team_game"]),
+        "interception_share_of_turnovers": _pooled(centres["interception_share_of_turnovers"]),
+        "kickoffs_per_team_game": None,
+        "kick_returns_per_team_game": None,
+    }
+
+
 def drive_model_expected(base=None):
     base = base or BASE_2012
+    if not base.legacy_2012():
+        return _drive_model_expected_v3(base)
     data = base.drive_model().load()
     cal = base.aggregate()
     totals = cal["period_totals"]
@@ -488,10 +559,12 @@ def audit_drive_model(receipts, cohort=None):
     # 2,620 unresolved) counts kickoffs the kernel does not model by design:
     # after non-offensive touchdowns, onside kicks and re-kicks, and after a
     # half-final score whose return ran out the clock.
-    count_row("kickoffs per team game (informational; centre includes kicks not modelled: "
-              "after non-offensive TDs, onside, re-kicks, after half-final scores)", sums["kickoffs"],
-              exp["kickoffs_per_team_game"], graded=False)
-    count_row("kick returns per team game", sums["kick_returns"], exp["kick_returns_per_team_game"])
+    if exp["kickoffs_per_team_game"] is not None:
+        count_row("kickoffs per team game (informational; centre includes kicks not modelled: "
+                  "after non-offensive TDs, onside, re-kicks, after half-final scores)", sums["kickoffs"],
+                  exp["kickoffs_per_team_game"], graded=False)
+    if exp["kick_returns_per_team_game"] is not None:
+        count_row("kick returns per team game", sums["kick_returns"], exp["kick_returns_per_team_game"])
     return n, rows
 
 
@@ -522,6 +595,8 @@ def audit_field_position(receipts, cohort=None):
     from .usage import group
 
     base = cohort_base(receipts, cohort)
+    if not base.legacy_2012():
+        return _audit_field_position_v3(receipts, base)
     fp = base.field_position()
     centres = fp.load()["band_centres"]
     team_games = sum(len(r.get("team_stats", {})) for r in receipts)
@@ -651,17 +726,282 @@ def audit_field_position(receipts, cohort=None):
     return team_games, rows
 
 
+def _label_bounds(label):
+    """(low, high) yardline_100 of a schema-3 punt-net label ('own 1-10',
+    'opp 49-40') or a plain 'low-high' start-bin label."""
+    side, _, span = label.rpartition(" ")
+    a, b = (int(v) for v in span.split("-"))
+    if side == "own":
+        return 100 - max(a, b), 100 - min(a, b)
+    return min(a, b), max(a, b)
+
+
+def _first_half(d):
+    return d.get("half") == 1
+
+
+def _h1_window(d):
+    """Seconds left in the first half at a first-half possession's start."""
+    return d["start_clock"] - 1800
+
+
+def _kick_clock(d):
+    """The game clock at a drive's terminal snap (its own end): end clock
+    plus the clock-expiry leg."""
+    return d["end_clock"] + (d.get("expiry_seconds") or 0)
+
+
+def _audit_field_position_v3(receipts, base):
+    """Schema-3 field-position rows (kernel 2014.6, batch B5): the graded
+    and informational rows of the pre-build specification (section 5, B5),
+    each centre an artifact value (band_centres, unweighted, equal weight per
+    event; the drawn pools for the return means), tolerances by the
+    module's formulas. New rows exist only for this cohort."""
+    from .usage import group
+
+    fp = base.field_position()
+    centres = fp.load()["band_centres"]
+    team_games = sum(len(r.get("team_stats", {})) for r in receipts)
+    rows, add = _grader(team_games >= MIN_TEAM_GAMES)
+    drives = [d for r in receipts for d in _drives(r)]
+    spotted = [d for d in drives if d.get("start_spot") is not None]
+
+    def rate_row(metric, made, n, centre, *, graded=True):
+        observed, tolerance = _rate(made, n, centre)
+        add(metric, observed, centre, tolerance, events=n, graded=graded)
+
+    def mean_row(metric, values, entry, *, graded=True):
+        _, mean, sd = _moments(entry)
+        add(metric, sum(values) / len(values) if values else None, mean,
+            3 * sd / math.sqrt(len(values)) if values else None, events=len(values), graded=graded)
+
+    def count_row(metric, total, n, centre, *, graded=True, dispersion=1.0):
+        observed = total / n if n else None
+        tolerance = 3 * math.sqrt(dispersion * centre / n) if n and centre else None
+        add(metric, observed, centre, tolerance, graded=graded)
+
+    # Kickoffs: every non-onside kickoff is followed by the receiving club's drive.
+    kick_starts = [d for d in spotted if d.get("start_kind") in ("kickoff", "kickoff_touchback")]
+    rate_row("kickoff touchback share", sum(d["start_kind"] == "kickoff_touchback" for d in kick_starts),
+             len(kick_starts), _pooled(centres["kickoff_touchback_share"]))
+    mean_row("mean start after a non-touchback kickoff (yardline_100)",
+             [d["start_spot"] for d in kick_starts if d["start_kind"] == "kickoff"],
+             centres["kickoff_nontouchback_start"])
+    # Realized punt net by line of scrimmage.
+    punts = [d for d in spotted if d["category"] == "punt" and d.get("next_start") is not None]
+    for key in sorted(k for k in centres if k.startswith("punt_net:")):
+        label = key.split(":", 1)[1]
+        low, high = _label_bounds(label)
+        mean_row("mean realized punt net, LOS %s" % label,
+                 [d["end_spot"] - (100 - d["next_start"]) for d in punts if low <= d["end_spot"] <= high],
+                 centres[key])
+    # Return means from the player lines against the drawn pools' records.
+    kr = pr = kr_yards = pr_yards = 0
+    for receipt in receipts:
+        for game in receipt.get("team_stats", {}).values():
+            for line in game.get("players", {}).values():
+                kr += line.get("kick_returns", 0) or 0
+                kr_yards += line.get("kick_return_yards", 0) or 0
+                pr += line.get("punt_returns", 0) or 0
+                pr_yards += line.get("punt_return_yards", 0) or 0
+    for label, c, made, n in (("mean kickoff return yards (non-touchback kickoffs)", return_centres(base)["kickoff"],
+                               kr_yards, kr),
+                              ("mean punt return yards (returned punts)", return_centres(base)["punt"], pr_yards, pr)):
+        add(label, made / n if n else None, c["mean"], 3 * c["sd"] / math.sqrt(n) if n else None, events=n)
+    # Late trailing punts.
+    for key, seconds, text in (("late_punt_share_last5_trail1_8", 300, "last 5:00"),
+                               ("late_punt_share_le120_trail1_8", 120, "last 2:00")):
+        cell = [d for d in spotted if isinstance(d.get("score_diff"), int) and -8 <= d["score_diff"] <= -1
+                and (d["half"] == "OT" or (d["half"] == 2 and d["end_clock"] <= seconds))]
+        rate_row("punt share of possessions ending in Q4's %s or OT, offense trailing 1-8" % text,
+                 sum(d["category"] == "punt" for d in cell), len(cell), _pooled(centres[key]))
+    mean_row("third-down attempts per punt drive", [d["chains"][2] for d in punts if d.get("chains")],
+             centres["third_down_attempts_per_punt_drive"])
+    # Sacks per dropback and defensive sack credit by group.
+    sacks = dropbacks = 0
+    credit = {}
+    for receipt in receipts:
+        for game in receipt.get("team_stats", {}).values():
+            sacks += game.get("sacks_allowed", 0)
+            for line in game.get("players", {}).values():
+                dropbacks += line.get("dropbacks", 0)
+                if line.get("sacks"):
+                    grp = group(line.get("position"))
+                    credit[grp] = credit.get(grp, 0) + line["sacks"]
+    rate_row("sacks per dropback", sacks, dropbacks, _pooled(centres["sacks_per_dropback"]))
+    total_credit = sum(credit.values())
+    for grp, share in sorted((base.usage()["values"]["sack_share"] or {}).items()):
+        rate_row("%s share of sack credits" % grp, credit.get(grp, 0), total_credit, share)
+
+    # End of half and late game (R17, R7, R10, R14, W5b).
+    h1 = [d for d in spotted if _first_half(d)]
+    finals = [d for d in h1 if d.get("half_final")]
+    rate_row("first-half final possessions: field-goal-attempt share",
+             sum(d["category"] == "field_goal_attempt" for d in finals), len(finals),
+             _pooled(centres["h1_final_fg_share"]))
+    rate_row("first-half final possessions: clock share",
+             sum(str(d["category"]).startswith("end_of_") for d in finals), len(finals),
+             _pooled(centres["h1_final_clock_share"]))
+    for low, high in ((61, 120), (121, 240)):
+        starts = [d for d in h1 if low <= _h1_window(d) <= high]
+        rate_row("P(final | first-half possession starting with %d-%d s left)" % (low, high),
+                 sum(bool(d.get("half_final")) for d in starts), len(starts),
+                 _pooled(centres["h1_p_final:%d-%d" % (low, high)]))
+    for key in sorted((k for k in centres if k.startswith("h1_final_start_window:")),
+                      key=lambda k: int(k.split(":")[1].split("-")[0])):
+        low, high = (int(v) for v in key.split(":")[1].split("-"))
+        rate_row("first-half final possessions starting with %d-%d s left (share)" % (low, high),
+                 sum(low <= _h1_window(d) <= high for d in finals), len(finals), _pooled(centres[key]))
+    expired = [d for d in finals if str(d["category"]).startswith("end_of_")]
+    rate_row("clock-expired first halves ending inside the opponent 30", sum(d["end_spot"] <= 30 for d in expired),
+             len(expired), _pooled(centres["h1_clock_expired_inside_30"]))
+    for tag, low, high, graded in (("trail12p", -999, -12, True), ("trail9_11", -11, -9, False)):
+        late_fg = sum(1 for d in spotted if d["half"] == 2 and d["category"] == "field_goal_attempt"
+                      and _kick_clock(d) <= 120 and isinstance(d.get("score_diff"), int)
+                      and low <= d["score_diff"] <= high)
+        text = "12 or more" if tag == "trail12p" else "9-11"
+        count_row("field-goal attempts inside 2:00 of Q4, offense trailing by %s (per team-game)" % text, late_fg,
+                  team_games, _pooled(centres["q4_inside_2_min_fga_per_team_game:" + tag]), graded=graded)
+    h2_open = [d for d in spotted if d["half"] == 2 and d["start_clock"] > 600 and d.get("timeouts")]
+    count_row("defensive timeouts per second-half possession starting over 10:00",
+              sum(d["timeouts"][3] for d in h2_open), len(h2_open),
+              _pooled(centres["def_timeouts_per_h2_possession_over_600"]))
+    # Timeouts per team-game, with the dispersion of the observed team-game counts.
+    per_team_game = []
+    for receipt in receipts:
+        used = {team: 0 for team in receipt.get("team_stats", {})}
+        for d in _drives(receipt):
+            if d.get("timeouts"):
+                used[d["team"]] = used.get(d["team"], 0) + d["timeouts"][2]
+                other = next((t for t in used if t != d["team"]), None)
+                if other is not None:
+                    used[other] += d["timeouts"][3]
+        per_team_game += list(used.values())
+    mean = sum(per_team_game) / len(per_team_game) if per_team_game else 0
+    dispersion = (sum((x - mean) ** 2 for x in per_team_game) / (len(per_team_game) - 1) / mean
+                  if len(per_team_game) > 1 and mean else 1.0)
+    count_row("timeouts per team-game", sum(per_team_game), len(per_team_game),
+              _pooled(centres["timeouts_per_team_game"]), dispersion=dispersion)
+    # Zero-tolerance rows (R14): overtime spikes outside the spike window and
+    # trailing overtime punts. The spike row reads the possession field the
+    # kernel records (results; a receipt's drives summary does not carry it).
+    window = fp.SPIKE_WINDOW
+    overtime = [d for d in spotted if d["half"] == "OT"]
+    with_field = [d for r in receipts for d in r.get("possessions", ()) if d.get("half") == "OT"
+                  and "category" in d]
+    spikes = sum(1 for d in with_field if (d.get("last_spike_seconds_left") or 0) > window)
+    rows.append(("overtime spikes with more than %d s left (zero tolerance)" % window,
+                 spikes if with_field else None, 0, 0,
+                 ("OUTSIDE" if spikes else "WITHIN") if with_field else "INSUFFICIENT SAMPLE"))
+    trailing = [d for d in overtime if isinstance(d.get("score_diff"), int) and d["score_diff"] < 0]
+    punts_ot = sum(d["category"] == "punt" for d in trailing)
+    rows.append(("trailing overtime punts (zero tolerance)", punts_ot, 0, 0,
+                 "OUTSIDE" if punts_ot else "WITHIN"))
+
+    # Informational shapes.
+    starts = [d["start_spot"] for d in spotted]
+    _, mean_start, _ = _moments(centres["start_all"])
+    add("mean drive start, all drives (all-drive centre)", sum(starts) / len(starts) if starts else None,
+        mean_start, None, graded=False)
+    bins = fp.load()["preregistration"]["start_bins"]
+    counts = [sum(season[i] for season in centres["start_bin_counts"].values()) for i in range(len(bins))]
+    for (low, high), n_bin in zip(bins, counts):
+        mine = sum(low <= s <= high for s in starts)
+        add("start-bin share %d-%d" % (low, high), mine / len(starts) if starts else None, n_bin / sum(counts),
+            None, graded=False)
+    for label, entry in centres["points_per_drive_by_start_bin"].items():
+        low, high = (int(v) for v in label.split("-"))
+        mine = [d.get("points", 0) for d in spotted if low <= d["start_spot"] <= high]
+        add("points per drive, start %s" % label, sum(mine) / len(mine) if mine else None, _pooled(entry), None,
+            graded=False)
+    qb_carries = scrambles = 0
+    for receipt in receipts:
+        for row in receipt.get("play_ledger", ()):
+            if row.get("play_type") == "run" and row.get("carrier_group") == "QB" and not row.get("kneel"):
+                qb_carries += 1
+                scrambles += bool(row.get("scramble"))
+    add("QB scramble share of QB carries (label stream)", scrambles / qb_carries if qb_carries else None,
+        _pooled(centres["scramble_share_of_qb_rushes"]), None, graded=False)
+    fourth = [d["chains"] for d in spotted if d.get("chains")]
+    attempts, games = centres["fourth_down_per_team_game"]["pooled"]
+    conversions = centres["fourth_down_conversion"]["pooled"][0]
+    add("fourth-down attempts per team game (drive chains)",
+        sum(ch[4] for ch in fourth) / team_games if team_games else None, attempts / games, None, graded=False)
+    add("fourth-down conversions per team game (drive chains)",
+        sum(ch[5] for ch in fourth) / team_games if team_games else None, conversions / games, None, graded=False)
+    add("kneels per team game", sum(d.get("kneels") or 0 for d in spotted) / team_games if team_games else None,
+        _pooled(centres["kneels_per_team_game"]), None, graded=False)
+    return team_games, rows
+
+
+INJURY_ROWS = (
+    ("game_onsets_per_team_game", "injury onsets per team-game"),
+    ("rest_of_game_removals_per_team_game", "rest-of-game removals per team-game"),
+    ("head_neck_share_game_onsets", "head/neck share of onsets"),
+    ("head_neck_game_onsets_per_team_game", "head/neck onsets per team-game"),
+    ("lower_extremity_share_game_onsets", "lower-extremity share of onsets"),
+    ("time_loss_share_(short+)", "time-loss share of onsets (short or longer)"),
+    ("long_term_share", "long-term share of onsets"),
+)
+
+
+def audit_injuries(receipts, cohort=None):
+    """Injury rows by the kernel 2014.4 method (the calibration's acceptance
+    bands, WITHIN when low <= observed <= high), for a cohort graded on a
+    schema-3 base (kernel 2014.6 onward; batch B5); a 2012-base cohort has no
+    injury rows (its bands were a candidate acceptance, never an audit)."""
+    from .injury_model import acceptance_bands
+
+    base = cohort_base(receipts, cohort)
+    if base.legacy_2012():
+        return 0, []
+    bands = acceptance_bands(base.raw("injury"))
+    team_games = sum(len(r.get("team_stats", {})) for r in receipts)
+    injuries = [i for r in receipts for i in r.get("injuries", ())]
+    n = len(injuries)
+    enough = team_games >= MIN_TEAM_GAMES
+
+    def share(pred):
+        return sum(1 for i in injuries if pred(i)) / n if n else None
+    observed = {
+        "game_onsets_per_team_game": n / team_games if team_games else None,
+        "rest_of_game_removals_per_team_game":
+            sum(bool(i.get("removed")) for i in injuries) / team_games if team_games else None,
+        "head_neck_share_game_onsets": share(lambda i: i.get("injury_class") == "head_neck"),
+        "head_neck_game_onsets_per_team_game":
+            sum(i.get("injury_class") == "head_neck" for i in injuries) / team_games if team_games else None,
+        "lower_extremity_share_game_onsets": share(lambda i: i.get("injury_class") == "lower_extremity"),
+        "time_loss_share_(short+)": share(lambda i: i.get("severity") != "minor"),
+        "long_term_share": share(lambda i: i.get("severity") == "long_term"),
+    }
+    rows = []
+    for key, label in INJURY_ROWS:
+        low, high = bands[key]
+        value = observed[key]
+        if value is None or not enough:
+            status = "INSUFFICIENT SAMPLE"
+        else:
+            status = "WITHIN" if low <= value <= high else "OUTSIDE"
+        rows.append((label, value, (low + high) / 2, (high - low) / 2, status))
+    return team_games, rows
+
+
 def return_centres(base=None):
     """Kernel 2014.4 phase 2: the base's kickoff pool's non-touchback records
     and the punt pool's returned records (return yards mean and SD);
-    memoised per base (the 2012 base when None)."""
+    memoised per base (the 2012 base when None). Schema 3 (batch B5): the
+    records the kernel draws (receiving-club records; the retained
+    kicking-team recoveries, onside kicks and return touchdowns are not in
+    them), so the centre is the drawn pool's own, as for 2012."""
     base = base or BASE_2012
 
     def build():
         fp = base.field_position()
         data, KICK, PUNT = fp.load(), fp.KICK, fp.PUNT
-        kicks = [r[KICK["return_yards"]] for r in data["kickoff_pool"] if not r[KICK["touchback"]]]
-        punts = [r[PUNT["return_yards"]] for r in data["punt_pool"] if r[PUNT["outcome"]] == "returned"]
+        kick_pool = getattr(fp, "_kick_pools", {}).get("kickoff_pool", data["kickoff_pool"])
+        punt_pool = getattr(fp, "_punt_pool", data["punt_pool"])
+        kicks = [r[KICK["return_yards"]] for r in kick_pool if not r[KICK["touchback"]]]
+        punts = [r[PUNT["return_yards"]] for r in punt_pool if r[PUNT["outcome"]] == "returned"]
 
         def moments(xs):
             m = sum(xs) / len(xs)

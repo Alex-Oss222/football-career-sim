@@ -13,8 +13,8 @@ is used and fails closed on any difference.
 kernel up to 2014.5 draws from (and its closed receipts are audited against)
 the 2012 base; kernel 2014.6 maps to the 2010-2014 league base the user chose
 on October 2, 2026 (U1 = (b), runtime/2014_engine_decisions.md). That base is
-built by batch B3 (data only); until batch B5 pins it and adds its readers it fails
-closed. An unknown version raises.
+built by batch B3 (data only) and pinned with its schema-3 readers by batch
+B5 (BASE_2010_2014W4). An unknown version raises.
 
 A CalibrationBase owns its loaded data and every memoised helper built on
 it (runtime.field_position.FieldPositionModel, runtime.drive_model.DriveModel,
@@ -54,12 +54,9 @@ KERNEL_BASES = {
     "2014.6": "2010_2014w4",
 }
 
-# Bases named by KERNEL_BASES that no runtime reader serves yet.
-PENDING_BASES = {
-    "2010_2014w4": ("the 2010-2014 (2014 Weeks 1-4) league base artifacts are built by batch B3 "
-                    "(scripts/research/build_2010_2014_league_base.py; data only); its pins and "
-                    "the schema-3 readers land with batch B5"),
-}
+# Bases named by KERNEL_BASES that no runtime reader serves yet (none since
+# batch B5 registered the 2010-2014 base).
+PENDING_BASES = {}
 
 
 def _field_position_v2_partitions(data):
@@ -85,12 +82,54 @@ def _drive_model_v1_partitions(data):
     }
 
 
+def _field_position_v3_partitions(data):
+    """Schema 3 (kernel 2014.6, batch B5): the end-of-half partition of the
+    pre-build specification (neutral over 600 s, h1_late, late, ot_first,
+    ot_sudden and the counted, unpooled ot_untied), counted from its count
+    tables; the pools and the transition pools by length. The retained kick
+    records (kicking-team recoveries, B3b) are counted in their own pools."""
+    counts = {
+        "neutral": sum(sum(row) for row in data["neutral_counts"]),
+        "h1_late": sum(sum(cells.values()) for cells in data["h1_late_counts"].values()),
+        "late": sum(sum(cells.values()) for cells in data["late_counts"].values()),
+        "ot_first": sum(data["ot_first_counts"].values()),
+        "ot_sudden": sum(data["ot_sudden_counts"].values()),
+        "ot_untied": sum(data["ot_untied_counts"].values()),
+    }
+    out = {"field_position." + k: v for k, v in counts.items()}
+    out["field_position.drives"] = sum(counts.values())
+    pools = data["pools"]
+    out["field_position.pooled_tuples"] = (
+        sum(len(c) for row in pools["neutral"] for c in row)
+        + sum(len(t) for kind in ("h1_late", "late") for cell in pools[kind].values() for t in cell.values())
+        + sum(len(t) for kind in ("ot_first", "ot_sudden") for t in pools[kind].values()))
+    for pool in ("kickoff_pool", "free_kick_pool", "punt_pool", "interception_pool", "fumble_pool"):
+        out["field_position." + pool] = len(data[pool])
+    for kind, records in sorted(data["retained_kick_pools"].items()):
+        out["field_position.retained_%s_pool" % kind] = len(records)
+    return out
+
+
+def _drive_model_v2_partitions(data):
+    return {
+        "drive_model.drives": sum(data["category_counts"].values()),
+        "drive_model.games": sum(data["games"].values()),
+        "drive_model.team_games": sum(data["team_games"].values()),
+        "drive_model.field_goal_attempts": data["field_goal_distance"]["attempts"],
+    }
+
+
 # Partition counters by artifact schema. A schema without a counter cannot
 # be pinned, so a base naming one fails closed.
 PARTITION_COUNTERS = {
     ("field_position", "2012-nfl-field-position-model-v2"): _field_position_v2_partitions,
     ("drive_model", "2012-nfl-drive-model-v1"): _drive_model_v1_partitions,
+    ("field_position", "2010-2014w4-nfl-field-position-model-v3"): _field_position_v3_partitions,
+    ("drive_model", "2010-2014w4-nfl-drive-model-v2"): _drive_model_v2_partitions,
 }
+
+# Artifact roles that are not JSON (read as text, sha256 pinned like the rest).
+TEXT_ROLES = ("specification",)
 
 
 @dataclass(frozen=True, eq=False)
@@ -107,6 +146,11 @@ class CalibrationBase:
     # recency weighting would be switched on here and would also need
     # weighted draws (B5). Part of the manifest when not empty.
     season_weights: tuple = ()
+    # The profile flags a kernel must hold to resolve on this base (kernel
+    # 2014.6, batch B5): a base whose readers are a later schema names the
+    # flags of the mechanisms built on that schema, and a profile without
+    # them (or holding one this base does not serve) fails closed.
+    requires_flags: frozenset = frozenset()
     _memo: dict = field(default_factory=dict, init=False, repr=False, compare=False)
 
     # ---- pins ----------------------------------------------------------------
@@ -163,8 +207,35 @@ class CalibrationBase:
 
     def raw(self, role):
         """The parsed artifact, verified against its sha256 pin; shared by
-        every helper of this base, so treat it as read-only."""
+        every helper of this base, so treat it as read-only. A text role
+        (TEXT_ROLES) reads as its decoded text."""
+        if role in TEXT_ROLES:
+            return self.memo(("raw", role), lambda: self._read(role).decode("utf-8"))
         return self.memo(("raw", role), lambda: json.loads(self._read(role)))
+
+    def schema(self, role):
+        data = self.raw(role)
+        return data.get("schema") if isinstance(data, dict) else None
+
+    def specification_rules(self):
+        """The frozen machine-readable rules of the pinned pre-build
+        specification (library/2014_6_pre_build_specification.md, section
+        8); a base without a pinned specification raises."""
+        def build():
+            import re
+            text = self.raw("specification")
+            found = re.findall(r"<!-- frozen-rules:begin -->\s*```json\n(.*?)\n```\s*<!-- frozen-rules:end -->",
+                               text, re.S)
+            if len(found) != 1:
+                raise CalibrationBaseError("calibration base %s: the specification has %d frozen-rules blocks"
+                                           % (self.name, len(found)))
+            return json.loads(found[0])
+        return self.memo(("specification_rules",), build)
+
+    def legacy_2012(self):
+        """True for a base read by the 2012-schema readers (the frozen
+        kernel 2013.7 rules)."""
+        return self.schema("field_position") == "2012-nfl-field-position-model-v2"
 
     def fresh(self, role):
         """A new parsed copy of the artifact, verified against its pin (for
@@ -176,6 +247,8 @@ class CalibrationBase:
         artifact's own reconciliation block)."""
         out = {}
         for role, _ in self.files:
+            if role in TEXT_ROLES:
+                continue
             data = self.raw(role)
             counter = PARTITION_COUNTERS.get((role, data.get("schema"))) if isinstance(data, dict) else None
             if counter is not None:
@@ -218,12 +291,12 @@ class CalibrationBase:
     # ---- models ----------------------------------------------------------------
 
     def drive_model(self):
-        from .drive_model import DriveModel
-        return self.memo(("model", "drive_model"), lambda: DriveModel(self))
+        from .drive_model import model_class
+        return self.memo(("model", "drive_model"), lambda: model_class(self.schema("drive_model"))(self))
 
     def field_position(self):
-        from .field_position import FieldPositionModel
-        return self.memo(("model", "field_position"), lambda: FieldPositionModel(self))
+        from .field_position import model_class
+        return self.memo(("model", "field_position"), lambda: model_class(self.schema("field_position"))(self))
 
     def aggregate(self):
         """The validated aggregate baseline (runtime.calibration)."""
@@ -254,7 +327,12 @@ class CalibrationBase:
         return self.memo(("tilt_factors",), lambda: tilt_factors_from(self.raw("usage_tilt")))
 
     def top_share_centres(self):
-        """The per team-game top-share band centres (runtime.bands, item 19)."""
+        """The per team-game top-share band centres (runtime.bands, item 19):
+        the usage baseline's own when it carries them (the 2010-2014 base),
+        else the tilt file's 2012 centres."""
+        usage = self.raw("usage")
+        if "team_game_top_shares" in usage:
+            return usage["team_game_top_shares"]
         return self.raw("usage_tilt")["team_game_top_shares_2012"]
 
     def injury_parameters(self):
@@ -297,7 +375,58 @@ BASE_2012 = CalibrationBase(
     ),
 )
 
-BASES = {BASE_2012.name: BASE_2012}
+# Kernel 2014.6 (batch B5): the 2010-2014 league base the user chose on
+# October 2, 2026 (U1 = (b)): NFL regular seasons 2010-2013 and 2014 Weeks
+# 1-4 (games through September 29, 2014), usable from September 30, 2014 and
+# frozen at the first 2014 Week 5 event for the rest of the 2014 season. Its
+# artifacts are built by the B3 builders (scripts/research/
+# build_2010_2014_league_base.py, build_2010_2014_usage_baseline.py,
+# build_2010_2014_injury_calibration.py), each with a --check mode. The
+# field-goal distance logistic lives in its drive model (no separate pin);
+# the attribution tilt factors stay the v2 file's (plan section 3). The
+# pre-build specification is pinned so its frozen rules (the end-of-half
+# constants) are read, never typed.
+BASE_2010_2014W4 = CalibrationBase(
+    name="2010_2014w4",
+    cell_rules="2014.6",
+    files=(
+        ("aggregate", Pin("library/data/2010_2014w4_nfl_aggregate_baseline.json",
+                          "8b3647cb9a4d6e1e71a732b8b0794da3c35f9b2ceb3ee3933f8789d53d473b1d")),
+        ("drive_model", Pin("library/data/2010_2014w4_nfl_drive_model.json",
+                            "ea586db47de6083556d147ca7ab3612fd20fd8a1a46fce8074835ddefa41675f")),
+        ("field_position", Pin("library/data/2010_2014w4_nfl_field_position_model.json",
+                               "b7af8c0412ef4ee7ecfdc497dbd072a58bf9171a5c3d1cee0bf5afdb0415c126")),
+        ("usage", Pin("library/data/2010_2014w4_nfl_position_usage_baseline.json",
+                      "312aa79ef43fea9a6ef8f14a6d5abbd049c919d6b4879433f21ce3abfe0f8108")),
+        ("injury", Pin("library/data/2010_2014w4_nfl_injury_calibration.json",
+                       "ef32ef3798fe383768f357d949a64c7c23ef066141f18fc0a3c91636ee1c5169")),
+        ("usage_tilt", Pin("library/data/2014_strength_calibration_v2.json",
+                           "244eb8b9a2ca7a2ee611dc6c342aac9002d5ff8ec9ad7d19727990ad2824c01f")),
+        ("specification", Pin("library/2014_6_pre_build_specification.md",
+                              "ca028ba38009d1b84e5c887ea86ce8d697edf1705bcd9b755f60aede9d6f8446")),
+    ),
+    # Counted from the committed 2010-2014 artifacts on October 3, 2026 (the
+    # field-position total is the pooled partition, 25,468 drives: the
+    # drive model's 25,556 less the 88 excluded 2010-2011 overtime drives).
+    partitions=(
+        ("field_position.drives", 25468), ("field_position.neutral", 16287),
+        ("field_position.h1_late", 4577), ("field_position.late", 4493),
+        ("field_position.ot_first", 41), ("field_position.ot_sudden", 64), ("field_position.ot_untied", 6),
+        ("field_position.pooled_tuples", 25431),
+        ("field_position.kickoff_pool", 7944), ("field_position.free_kick_pool", 65),
+        ("field_position.punt_pool", 10348), ("field_position.interception_pool", 1790),
+        ("field_position.fumble_pool", 1044),
+        ("field_position.retained_free_kick_pool", 0), ("field_position.retained_kickoff_pool", 41),
+        ("field_position.retained_punt_pool", 105),
+        ("drive_model.drives", 25556), ("drive_model.games", 1085), ("drive_model.team_games", 2170),
+        ("drive_model.field_goal_attempts", 4225),
+    ),
+    requires_flags=frozenset({"base_2014_6", "regimes_v3"}),
+)
+
+BASES = {BASE_2012.name: BASE_2012, BASE_2010_2014W4.name: BASE_2010_2014W4}
+# Bases whose kernels predate the recorded calibration_base block.
+RECORDLESS_BASES = frozenset({BASE_2012.name})
 
 
 def get_base(name):
@@ -329,6 +458,11 @@ def base_for_result(result):
     name that same base and manifest, or the audit fails closed."""
     base = base_of_kernel(result.get("kernel_version"))
     recorded = result.get("calibration_base")
+    if recorded is None and base_for_kernel(result.get("kernel_version")) not in RECORDLESS_BASES:
+        # Kernel 2014.6 onward always records its base (batch B5): a result
+        # or receipt without the block fails closed.
+        raise CalibrationBaseError("%s (kernel %s) records no calibration base"
+                                   % (result.get("event_id"), result.get("kernel_version")))
     if recorded is not None:
         if not isinstance(recorded, dict) or recorded.get("name") != base.name \
                 or recorded.get("manifest_sha256") != base.manifest_sha256() \

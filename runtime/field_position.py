@@ -312,6 +312,9 @@ class Drive:
     # resampled from the same category and start-spot rung (resample_drive).
     pool_id: tuple | None = None
     clock_regime: str | None = None
+    # Kernel 2014.6 (schema 3, R17): the first-half time match width (40 or
+    # 80 s) of a window-matched h1_late draw; None for every other draw.
+    match_width: int | None = None
 
     def __post_init__(self):
         if self.own_seconds is None:
@@ -1199,6 +1202,860 @@ class FieldPositionModel:
 
     downs_start = staticmethod(downs_start)
     missed_fg_start = staticmethod(missed_fg_start)
+
+
+# ---- kernel 2014.6: the schema-3 model (batch B5) ------------------------------------------
+
+SCHEMA_V3 = "2010-2014w4-nfl-field-position-model-v3"
+V3_POOLS = ("h1_late", "late")
+V3_OT_POOLS = ("ot_first", "ot_sudden")
+
+
+def _v3_tuples(data, category):
+    pools = data.get("pools", {})
+    index = CATEGORIES.index(category)
+    for row in pools.get("neutral", []):
+        yield from row[index] if index < len(row) else []
+    for name in V3_POOLS:
+        for cell in pools.get(name, {}).values():
+            yield from cell.get(category, [])
+    for name in V3_OT_POOLS:
+        yield from pools.get(name, {}).get(category, [])
+
+
+def _receiving(records, index):
+    """Transition records the receiving club takes over at their published
+    start (the retained kicking-team recoveries of B3b wait for R12 layer C,
+    batch B10: drawn here they would hand the ball to the wrong club)."""
+    return [r for r in records if r[index] != "kicking"]
+
+
+def validate_v3(data, drive, expected_drives, specification_sha256, rules):
+    """Structural checks on a schema-3 artifact (the 2010-2014 base);
+    returns a list of errors. `rules` are the pinned specification's frozen
+    end-of-half rules, which the artifact's preregistration must equal."""
+    errors = []
+    if data.get("schema") != SCHEMA_V3:
+        errors.append("field-position schema differs")
+    if data.get("categories") != list(CATEGORIES):
+        errors.append("field-position categories differ from the kernel categories")
+    if data.get("specification_sha256") != specification_sha256:
+        errors.append("field-position artifact names another pre-build specification")
+    try:
+        lists = field_lists(data)
+    except ValueError as exc:
+        errors.append(str(exc))
+        return errors
+    T_ = _index(lists["tuple_fields"])
+    for name in ("season", "last_spike_to_end"):
+        if name not in T_:
+            errors.append("tuple field %s missing" % name)
+    for name in ("possession",):
+        if name not in lists["kick_fields"] or name not in lists["punt_fields"]:
+            errors.append("transition field %s missing" % name)
+    if errors:
+        return errors
+    pre = data.get("preregistration", {})
+    if [tuple(b) for b in pre.get("start_bins", [])] != [(90, 99), (81, 89), (80, 80), (70, 79), (60, 69), (50, 59),
+                                                         (40, 49), (30, 39), (20, 29), (1, 19)]:
+        errors.append("start bins differ from the pre-registered list")
+    if pre.get("min_cell") != 30 or pre.get("k_transition") != 20 or pre.get("fg_offsets") != [17, 18, 19]:
+        errors.append("pre-registered constants differ")
+    for key, rule in (("needs", "NEEDS"), ("late_time_buckets", "LATE_TIME_BUCKETS"),
+                      ("decision_zones", "DECISION_ZONES"), ("h1_late_edges", "H1_LATE_EDGES"),
+                      ("neutral_over_seconds", "NEUTRAL_OVER_SECONDS")):
+        if pre.get(key) != rules.get(rule):
+            errors.append("preregistration %s differs from the specification's %s" % (key, rule))
+    if rules.get("H1_LATE_SECONDS") != rules.get("NEUTRAL_OVER_SECONDS") or \
+            rules.get("FINAL_FEASIBLE_SLACK_SECONDS") != CLOCK_EXPIRY_ALLOWANCE:
+        errors.append("specification end-of-half windows differ from the kernel's clock-expiry allowance")
+    if data.get("constants", {}).get("spike_window", {}).get("specification") != rules.get("SPIKE_WINDOW") or \
+            data["constants"]["spike_window"].get("pre_divergence_max_seconds") != rules.get("SPIKE_WINDOW"):
+        errors.append("spike window differs from the specification")
+    counts = data.get("neutral_counts", [])
+    pools = data.get("pools", {})
+    total = sum(sum(row) for row in counts)
+    for name in ("h1_late", "late"):
+        total += sum(sum(v.values()) for v in data.get(name + "_counts", {}).values())
+    for name in V3_OT_POOLS + ("ot_untied",):
+        total += sum(data.get(name + "_counts", {}).values())
+    if total != expected_drives:
+        errors.append("partition counts sum to %d, not %s" % (total, format(expected_drives, ",")))
+    groups = [(counts[b][c], pools.get("neutral", [])[b][c]) for b in range(len(counts))
+              for c in range(len(CATEGORIES))] if len(pools.get("neutral", [])) == len(counts) else []
+    for name in V3_POOLS:
+        for key, cells in data.get(name + "_counts", {}).items():
+            pool = pools.get(name, {}).get(key, {})
+            groups += [(cells.get(c, 0), pool.get(c, [])) for c in CATEGORIES]
+    for name in V3_OT_POOLS:
+        groups += [(data.get(name + "_counts", {}).get(c, 0), pools.get(name, {}).get(c, [])) for c in CATEGORIES]
+    missing = 0
+    width = len(lists["tuple_fields"])
+    for n, pool in groups:
+        if not _is_int(n) or n < len(pool):
+            errors.append("a pool holds more tuples than its count")
+            break
+        missing += n - len(pool)
+        if any(len(t) != width for t in pool):
+            errors.append("a tuple has the wrong number of fields")
+            break
+    documented = data.get("corrections", {}).get("non_renderable", {})
+    if missing != documented.get("safety", -1) + documented.get("touchdown", -1) + documented.get("zero_play_terminal", -1):
+        errors.append("non-renderable drives differ from the documented corrections")
+    cell_map = data.get("cell_map", {})
+    for label in pre.get("late_time_buckets", {}):
+        for need_label in pre.get("needs", {}):
+            cell = cell_map.get("%s|%s" % (label, need_label))
+            if cell is None or cell not in data.get("late_counts", {}):
+                errors.append("cell map does not cover %s|%s" % (label, need_label))
+    for cell, cells in data.get("late_counts", {}).items():
+        if sum(cells.values()) < pre.get("min_cell", 30):
+            errors.append("late cell %s under MIN_CELL" % cell)
+    keymap = data.get("h1_late_keymap", {})
+    if sorted(keymap) != sorted("%d-%d" % tuple(e) for e in pre.get("h1_late_edges", [])) or any(
+            v not in data.get("h1_late_counts", {}) for v in keymap.values()):
+        errors.append("first-half late keymap incomplete")
+    for t in _v3_tuples(data, "field_goal_attempt"):
+        if t[T_["fg_distance"]] - t[T_["end"]] not in (17, 18, 19):
+            errors.append("a field-goal tuple has a distance offset outside {17, 18, 19}")
+            break
+    for t in _v3_tuples(data, "touchdown"):
+        if t[T_["net0"]] != t[T_["start"]] or t[T_["td_kind"]] not in ("pass", "rush"):
+            errors.append("a touchdown tuple does not net its start or lacks a scoring kind")
+            break
+    for t in _v3_tuples(data, "safety"):
+        if t[T_["safety_term_kind"]] not in ("sack", "run") or not _is_int(t[T_["safety_term_los"]]):
+            errors.append("a safety tuple lacks its render terminal")
+            break
+    for category in CATEGORIES:
+        for t in _v3_tuples(data, category):
+            if t[T_["spikes"]] and not _is_int(t[T_["last_spike_to_end"]]):
+                errors.append("a tuple with a spike lacks its last-spike seconds")
+                break
+    K_, P_, O_ = _index(lists["kick_fields"]), _index(lists["punt_fields"]), _index(lists["turnover_fields"])
+    kick = _receiving(data.get("kickoff_pool", []), K_["possession"])
+    if not kick or len(kick) != data.get("band_centres", {}).get("kickoff_touchback_share", {}).get("pooled", [0, -1])[1]:
+        errors.append("kickoff pool size differs from its band centre")
+    for name in ("kickoff_pool", "free_kick_pool"):
+        for record in data.get(name, []):
+            if len(record) != len(lists["kick_fields"]) or (
+                    record[K_["possession"]] != "kicking" and not record[K_["touchback"]]
+                    and record[K_["next_start"]] != (35 if name == "kickoff_pool" else 20)
+                    + record[K_["kick_yards"]] - record[K_["return_yards"]] + record[K_["enforcement"]]):
+                errors.append("%s record does not satisfy its published identity" % name)
+                break
+    for record in data.get("punt_pool", []):
+        if len(record) != len(lists["punt_fields"]) or (
+                record[P_["possession"]] != "kicking" and not record[P_["touchback"]]
+                and record[P_["next_start"]] != (100 - record[P_["los"]] + record[P_["gross"]]
+                                                 - record[P_["return_yards"]] + record[P_["enforcement"]])):
+            errors.append("punt record does not satisfy its published identity")
+            break
+    for name in ("interception_pool", "fumble_pool"):
+        for record in data.get(name, []):
+            if len(record) != len(lists["turnover_fields"]) or \
+                    record[O_["delta"]] != record[O_["next_start"]] - (100 - record[O_["end"]]):
+                errors.append("%s record does not satisfy its published identity" % name)
+                break
+    if data.get("clock_scale") != drive["clock_scale"]:
+        errors.append("clock scale differs from the drive model's")
+    sacks = data.get("band_centres", {}).get("sacks_per_dropback", {}).get("pooled")
+    if not (isinstance(sacks, list) and len(sacks) == 2 and 0 < sacks[0] < sacks[1]):
+        errors.append("sacks-per-dropback centre invalid")
+    if data.get("reconciliation", {}).get("result") != "pass":
+        errors.append("field-position reconciliation did not pass")
+    if data.get("second_pass", {}).get("result") != "pass":
+        errors.append("field-position second pass did not pass")
+    return errors
+
+
+class FieldPositionModelV3(FieldPositionModel):
+    """The schema-3 field-position draws of the 2010-2014 base (kernel
+    2014.6, batch B5; profile flag regimes_v3). Its keys and constants are
+    the pinned pre-build specification's (section 4, end of half and late
+    game), read from the base, never typed:
+
+    - R17 (first half): every first-half possession with a window at or
+      under H1_LATE_SECONDS draws from h1_late: the tuples whose own start t0
+      lies within TIME_MATCH_SECONDS of the window, else within
+      TIME_MATCH_FALLBACK_SECONDS (an engineering fallback, counted
+      h1_late_match_fallback), then the window's bucket cell, then the
+      union of the h1_late cells, a time-feasible clock final and the fit
+      or expiry rung. A real final must be time feasible (s <= w <= s + 40);
+      a non-final must fit (s < w); fit draws use non-final tuples. Over
+      H1_LATE_SECONDS there is no redirect: the fitting neutral draw (no
+      clock drive, s < w) is the primary path.
+    - R7: a clock tuple is feasible only if its end decision zone equals its
+      real end zone, in every regime and in _clock_fallback (ZERO_TUPLE is
+      exempt).
+    - R10: the late needs are the specification's eight; every late fallback
+      (the need union, the late clock fallback, _fit_or_expire) masks each
+      category whose count is zero in the time cell actually drawn.
+    - R14: ot_first when the overtime history is empty, ot_sudden otherwise;
+      a trailing overtime offense draws the late trail1_3 cell at the
+      overtime clock's own time label, with the punt masked and its weight
+      moved to downs (an inference: 0 punts in 6 real trailing drives), the
+      exclusion passed through _fit_or_expire. Spike rule: a tuple with a
+      spike is feasible only if w - own + (its last spike's seconds to its
+      end) <= SPIKE_WINDOW.
+    - W5b: every timeout-conditioned draw prefers, within the drawn
+      category, the tuples whose real clubs used no more timeouts than the
+      branch clubs hold (inside resample_drive too); no category is masked
+      by timeouts, timeout_unavailable_kept counts a drawn category with no
+      such tuple, and the kernel's cap stays as a backstop.
+
+    Kick and punt draws use the records the receiving club takes over
+    (retained kicking-team recoveries wait for R12 layer C, batch B10)."""
+
+    TIMEOUT_REGIMES = ("h1_late", "late", "ot")
+    FIT_REGIMES = {"h1_neutral": "fit_h1", "h1_late": "fit_h1", "late": "fit_late", "ot": "fit_ot"}
+
+    def __init__(self, base):
+        self.base = base
+        self.dm = base.drive_model()
+        data = base.raw("field_position")
+        rules = base.specification_rules()["end_of_half"]
+        expected = dict(base.partitions).get("field_position.drives")
+        errors = validate_v3(data, self.dm.data, expected, base.pin("specification").sha256, rules)
+        if errors:
+            raise ValueError("invalid field-position model: " + "; ".join(errors))
+        self.data = data
+        self.rules = rules
+        lists = field_lists(data)
+        self.fields = lists
+        self.T = _index(lists["tuple_fields"])
+        self.KICK = _index(lists["kick_fields"])
+        self.PUNT = _index(lists["punt_fields"])
+        self.TURNOVER = _index(lists["turnover_fields"])
+        self.H1_LATE_SECONDS = rules["H1_LATE_SECONDS"]
+        self.H1_LATE_EDGES = tuple(tuple(e) for e in rules["H1_LATE_EDGES"])
+        self.TIME_MATCH = (rules["TIME_MATCH_SECONDS"], rules["TIME_MATCH_FALLBACK_SECONDS"])
+        self.SPIKE_WINDOW = rules["SPIKE_WINDOW"]
+        self._rungs_cache = {}
+        self._any_start_cache = {}
+        self._zone_cache = {}
+        self._snap_range = None
+        self._kick_pools = {name: _receiving(data[name], self.KICK["possession"])
+                            for name in ("kickoff_pool", "free_kick_pool")}
+        self._punt_pool = _receiving(data["punt_pool"], self.PUNT["possession"])
+        # Per category, the h1_late union's starts, sorted, for the time-match counts.
+        T = self.T
+        self._h1_starts = {c: sorted(t[T["t0"]] for t in self._members(("h1_late_union", None), c))
+                           for c in CATEGORIES}
+
+    # ---- keys --------------------------------------------------------------------
+
+    def h1_key(self, window):
+        w = max(0, int(window))
+        for low, high in self.H1_LATE_EDGES:
+            if low <= w <= high:
+                return self.data["h1_late_keymap"]["%d-%d" % (low, high)]
+        raise ValueError("%s seconds is not a first-half late window" % window)
+
+    def cell_for(self, half, window, diff):
+        """'neutral', 'h1_late:<bucket>' (a label that cannot parse as a
+        need), a late cell id, or 'OT'. A trailing overtime offense uses the
+        late trail1_3 cell at the overtime clock's own time label (labelled
+        inference: the trailing team must score)."""
+        pre = self.data["preregistration"]
+        if half == "OT":
+            if diff < 0:
+                return self.data["cell_map"]["%s|trail1_3" % self.time_label(min(window, pre["neutral_over_seconds"]))]
+            return "OT"
+        if half == 1 and window <= self.H1_LATE_SECONDS:
+            return "h1_late:" + self.h1_key(window)
+        if half == 2 and window <= pre["neutral_over_seconds"]:
+            return self.data["cell_map"]["%s|%s" % (self.time_label(window), self.need(diff))]
+        return "neutral"
+
+    # ---- feasibility -------------------------------------------------------------
+
+    # The kernel's sack-loss draw floor for a drive with a free snap
+    # (kernel.lay_out and runtime.chains draw sack losses from 3 to 10 yards).
+    SACK_LOSS_FLOOR = 3
+
+    def sack_order_feasible(self, category, t, spot):
+        """Batch B5 (found by the A6 sweep): a drive with no first down and a
+        free snap takes each sack for at least SACK_LOSS_FLOOR yards, so
+        some k of its s sacks must fit before its gains without leaving the
+        field (spot + 3k <= 99) and the rest after them without the gains
+        reaching the line to gain (net + 3(s - k) < the opening distance).
+        Drives with a first-down series, kneels, no free snap or no sack
+        are left to chains.chain_feasible."""
+        T = self.T
+        sacks, kneels = t[T["sacks"]], t[T["kneel_yards"]]
+        if not sacks or kneels or t is ZERO_TUPLE or category in ("touchdown", "safety"):
+            return True
+        free, _, _, _ = self.fixed_yardage(category, t)
+        if free <= 0:
+            return True
+        lengths = chains.last_series_lengths(category, 0)
+        if t[T["plays"]] > max(lengths):
+            return True
+        net = self.adapt(category, t, spot)[0]
+        dist0 = spot - chains.line_to_gain(spot)
+        floor = self.SACK_LOSS_FLOOR
+        return any(spot + floor * k <= 99 and net + floor * (sacks - k) < dist0 for k in range(sacks + 1))
+
+    def static_feasible(self, category, t, spot):
+        if not FieldPositionModel.static_feasible(self, category, t, spot):
+            return False
+        if not self.sack_order_feasible(category, t, spot):
+            return False
+        if category == "clock" and t is not ZERO_TUPLE:
+            # R7: a clock expiry keeps its real end decision zone.
+            end = self.adapt(category, t, spot)[1]
+            if self.decision_zone(end) != self.decision_zone(t[self.T["end"]]):
+                return False
+        return True
+
+    def spike_ok(self, t, left):
+        """R14 spike rule: `left` is the window time after the tuple's own
+        end (w - own); its last spike came that many seconds plus its own
+        last-spike-to-end seconds before the window's end."""
+        T = self.T
+        if not t[T["spikes"]]:
+            return True
+        return left + t[T["last_spike_to_end"]] <= self.SPIKE_WINDOW
+
+    def ends_window(self, regime, category, t):
+        if str(regime).startswith("fit"):
+            return False
+        return FieldPositionModel.ends_window(self, regime, category, t)
+
+    def _dynamic(self, tuples, category, regime, window):
+        """Clock filters of a schema-3 regime: a window-ending tuple (a real
+        final in h1_late and late; a clock final in overtime) must be time
+        feasible; any other tuple must fit (s < w); a fit regime ("fit_h1",
+        "fit_late", "fit_ot") takes non-final tuples only; the late terminal
+        bucket rule applies in late and fit_late; the spike rule applies in
+        every regime."""
+        T = self.T
+        fit = str(regime).startswith("fit")
+        late = regime in ("late", "fit_late")
+        out = []
+        for t in tuples:
+            if fit:
+                if t[T["final"]]:
+                    continue
+                ends = False
+            else:
+                ends = self.ends_window(regime, category, t)
+            if ends:
+                if not self.time_feasible(t, window):
+                    continue
+                bucket_left, left = 0, window - self.own_seconds(t)
+            else:
+                seconds = self.scaled_seconds(t)
+                if seconds >= window:
+                    continue
+                bucket_left = left = window - seconds
+            if late and category in FOURTH_DOWN_CATEGORIES and terminal_bucket(bucket_left) != t[T["term_bucket"]]:
+                continue
+            if not self.spike_ok(t, left):
+                continue
+            out.append(t)
+        return tuple(out)
+
+    # ---- pools ------------------------------------------------------------------------------
+
+    def _pool(self, pool_id, category):
+        pools = self.data["pools"]
+        kind, key = pool_id
+        if kind == "neutral":
+            return pools["neutral"][key][CATEGORIES.index(category)]
+        if kind in V3_OT_POOLS:
+            return pools[kind][category]
+        return pools[kind][key][category]
+
+    def _counts(self, pool_id):
+        data = self.data
+        kind, key = pool_id
+        if kind == "neutral":
+            return dict(zip(CATEGORIES, data["neutral_counts"][key]))
+        if kind in V3_OT_POOLS:
+            return data[kind + "_counts"]
+        if kind in ("late_union", "h1_late_union"):
+            cells = self._need_cells(key) if kind == "late_union" else sorted(data["h1_late_counts"])
+            table = data["late_counts" if kind == "late_union" else "h1_late_counts"]
+            out = {c: 0 for c in CATEGORIES}
+            for cell in cells:
+                for c, n in table[cell].items():
+                    out[c] += n
+            return out
+        return data[kind + "_counts"][key]
+
+    def _members(self, pool_id, category):
+        kind, key = pool_id
+        if kind == "late_union":
+            return [t for cell in self._need_cells(key) for t in self.data["pools"]["late"][cell][category]]
+        if kind == "h1_late_union":
+            return [t for cell in sorted(self.data["pools"]["h1_late"]) for t in self.data["pools"]["h1_late"][cell][category]]
+        return list(self._pool(pool_id, category))
+
+    def _matched(self, tuples, window, width):
+        T = self.T
+        return tuple(t for t in tuples if abs(t[T["t0"]] - window) <= width)
+
+    def _window_counts(self, window, width):
+        """{category: real h1_late drives whose own start lies within `width`
+        seconds of the window} (P(category | t0 near w) up to a constant)."""
+        out = {}
+        for c in CATEGORIES:
+            starts = self._h1_starts[c]
+            out[c] = bisect.bisect_right(starts, window + width) - bisect.bisect_left(starts, window - width)
+        return out
+
+    def _rungs(self, pool_id, category, spot):
+        """Spot-feasible tuples per rung (same bin, same zone); memoised per
+        (pool, category, spot): bounded, since a time match filters the
+        union's rungs at draw time instead of keying the cache by window."""
+        key = (pool_id, category, spot)
+        try:
+            return self._rungs_cache[key]
+        except KeyError:
+            pass
+        T = self.T
+        data = self.data
+        b, z = self.start_bin(spot), self.zone(spot)
+        kind, pool_key = pool_id
+        if kind == "neutral":
+            index = CATEGORIES.index(category)
+            same = [t for j in data["neutral_ladder"][pool_key][index] for t in data["pools"]["neutral"][j][index]]
+            wider = [t for j in range(len(data["neutral_counts"]))
+                     if self.zone(data["preregistration"]["start_bins"][j][0]) == z
+                     for t in data["pools"]["neutral"][j][index]]
+        else:
+            members = self._members(pool_id, category)
+            same = [t for t in members if self.start_bin(t[T["start"]]) == b]
+            wider = [t for t in members if self.zone(t[T["start"]]) == z]
+        out = tuple(tuple(t for t in rung if self.static_feasible(category, t, spot)) for rung in (same, wider))
+        self._rungs_cache[key] = out
+        return out
+
+    def eligible(self, pool_id, category, spot, regime, window, match=None):
+        """Feasible tuples by the ladder (same bin, then same zone). With a
+        time match the rungs are the h1_late union's, cached per (category,
+        spot) and filtered by |t0 - w| <= match at draw time (bounded
+        cache); the late need-union rungs are unchanged."""
+        if match is not None:
+            for rung in self._rungs(("h1_late_union", None), category, spot):
+                feasible = self._dynamic(self._matched(rung, window, match), category, regime, window)
+                if feasible:
+                    return feasible
+            return ()
+        return FieldPositionModel.eligible(self, pool_id, category, spot, regime, window)
+
+    def draw_options(self, pool_id, regime, spot, window, match=None):
+        if match is not None:
+            counts = self._window_counts(window, match)
+        else:
+            counts = self._counts(pool_id)
+        options = {c: self.eligible(pool_id, c, spot, regime, window, match) for c in CATEGORIES if counts.get(c, 0)}
+        return counts, options
+
+    def _reference(self, pool_id):
+        kind, key = pool_id
+        if kind == "late":
+            return ("late_union", cell_need(key))
+        if kind in ("h1_late", "h1_late_union"):
+            return ("h1_late_union", None)
+        return pool_id
+
+    def zone_likelihood(self, reference, spot_zone):
+        cache_key = (reference, spot_zone)
+        try:
+            return self._zone_cache[cache_key]
+        except KeyError:
+            pass
+        T = self.T
+        by_cat = {c: self._members(reference, c) for c in CATEGORIES}
+        a = ZONE_SMOOTHING
+        total = sum(len(m) for m in by_cat.values())
+        in_zone = sum(1 for m in by_cat.values() for t in m if self.zone(t[T["start"]]) == spot_zone)
+        base = (in_zone + a) / (total + 3 * a)
+        out = {c: ((sum(1 for t in m if self.zone(t[T["start"]]) == spot_zone) + a) / (len(m) + 3 * a)) / base
+               for c, m in by_cat.items()}
+        self._zone_cache[cache_key] = out
+        return out
+
+    def _timeout_members(self, pool_id, counts, match, window):
+        members = {c: self._members(pool_id if match is None else ("h1_late_union", None), c)
+                   for c in counts if counts.get(c, 0)}
+        if match is not None:
+            members = {c: list(self._matched(m, window, match)) for c, m in members.items()}
+        return members
+
+    def _timeout_options(self, pool_id, counts, options, timeouts, key, diagnostics, members=None):
+        """The kernel 2014.1 ladder over `members` (the pool's, or a time
+        match's, tuples by category)."""
+        if members is None:
+            members = {c: self._members(pool_id, c) for c in counts if counts.get(c, 0)}
+        for level in range(3):
+            matching = {c: [t for t in m if self.timeout_match(level, t, timeouts, key)] for c, m in members.items()}
+            if sum(len(m) for m in matching.values()) < MIN_TIMEOUT_POOL:
+                continue
+            weights, narrowed = {}, {}
+            for c, m in matching.items():
+                if not members[c]:
+                    continue
+                weights[c] = counts[c] * len(m) / len(members[c])
+                feasible = options.get(c, ())
+                narrowed[c] = tuple(t for t in feasible if self.timeout_match(level, t, timeouts, key)) or feasible
+                if feasible and narrowed[c] is feasible and diagnostics is not None:
+                    diagnostics["timeout_tuple_widened"] = diagnostics.get("timeout_tuple_widened", 0) + 1
+            if any(weights.get(c) and narrowed.get(c) for c in weights):
+                if diagnostics is not None:
+                    diagnostics["timeout_level_%d" % level] = diagnostics.get("timeout_level_%d" % level, 0) + 1
+                return weights, narrowed, level
+        if diagnostics is not None:
+            diagnostics["timeout_level_3"] = diagnostics.get("timeout_level_3", 0) + 1
+        return counts, options, 3
+
+    def held_preference(self, pool, timeouts):
+        """W5b: the tuples whose real clubs used no more timeouts than the
+        branch clubs hold (offense, defense); None when there are none."""
+        T = self.T
+        held_off, held_def = timeouts
+        ok = tuple(t for t in pool if (t[T["off_timeouts_used"]] or 0) <= held_off
+                   and (t[T["def_timeouts_used"]] or 0) <= held_def)
+        return ok or None
+
+    def sack_rate_base(self):
+        made, n = self.data["band_centres"]["sacks_per_dropback"]["pooled"]
+        return made / n
+
+    def category_mix_v3(self, counts, edge, options, int_edge=0.0, transfer=None):
+        """category_mix with the R14 transfer: `transfer` = (from, to) moves
+        the first category's probability to the second (after the edge,
+        before masking)."""
+        total = sum(counts.values())
+        if not total:
+            return {}
+        probs = drive_model.apply_edge({c: counts.get(c, 0) / total for c in CATEGORIES}, edge)
+        if int_edge:
+            probs = dict(probs)
+            probs["interception"] = max(0.0, probs.get("interception", 0.0) + int_edge)
+            probs["punt"] = max(0.0, probs.get("punt", 0.0) - int_edge)
+            mass = sum(probs.values())
+            probs = {c: v / mass for c, v in probs.items()}
+        if transfer is not None:
+            source, target = transfer
+            probs = dict(probs)
+            probs[target] = probs.get(target, 0.0) + probs.get(source, 0.0)
+            probs[source] = 0.0
+        masked = {c: (p if counts.get(c, 0) > 0 and options.get(c) else 0.0) for c, p in probs.items()}
+        mass = sum(masked.values())
+        return {c: v / mass for c, v in masked.items()} if mass > 0 else {}
+
+    def _draw_from(self, rng, pool_id, regime, spot, window, edge, timeouts=None, key="def", diagnostics=None,
+                   exclude=(), clock_regime=None, extra=None, match=None, transfer=None):
+        counts, options = self.draw_options(pool_id, clock_regime or regime, spot, window, match)
+        options = {c: (() if c in exclude else v) for c, v in options.items()}
+        if ZONE_CONDITIONING and regime in self.TIMEOUT_REGIMES:
+            ratio = self.zone_likelihood(self._reference(pool_id), self.zone(spot))
+            counts = {c: n * ratio[c] for c, n in counts.items()}
+        level = None
+        kept = set()
+        if timeouts is not None and regime in self.TIMEOUT_REGIMES:
+            counts, options, level = self._timeout_options(
+                pool_id, counts, options, timeouts, key, diagnostics,
+                members=self._timeout_members(pool_id, counts, match, window))
+            preferred = {}
+            for c, pool in options.items():
+                held = self.held_preference(pool, timeouts) if pool else None
+                if pool and held is None:
+                    kept.add(c)
+                preferred[c] = held or pool
+            options = preferred
+        extra = extra or {}
+        probs = self.category_mix_v3(counts, edge, options, extra.get("int", 0.0), transfer)
+        if not probs:
+            return None
+        category = drive_model.draw_category(rng, probs)
+        if category in kept and diagnostics is not None:
+            _bump(diagnostics, "timeout_unavailable_kept")
+        return category, self.draw_tuple(rng, options[category], extra.get("sack", 0.0)), level
+
+    def _clock_fallback(self, rng, tuples, spot, window):
+        T = self.T
+        bucket = h1_bucket_index(window)
+        by_distance = {}
+        for t in tuples:
+            if t[T["final"]] and self.static_feasible("clock", t, spot) and self.time_feasible(t, window) \
+                    and self.spike_ok(t, window - self.own_seconds(t)):
+                by_distance.setdefault(abs(h1_bucket_index(t[T["t0"]]) - bucket), []).append(t)
+        if not by_distance:
+            return None
+        pool = by_distance[min(by_distance)]
+        return pool[rng.randrange(len(pool))]
+
+    def _h1_late_clock_tuples(self):
+        return self._members(("h1_late_union", None), "clock")
+
+    def _h1_clock_tuples(self):
+        raise NotImplementedError("schema 3 retires the h1_final pools")
+
+    def zero_cell_categories(self, pool_id):
+        """R10: the categories with no real drive in the time cell drawn."""
+        counts = self._counts(pool_id)
+        return tuple(c for c in CATEGORIES if not counts.get(c, 0))
+
+    def _fit_or_expire(self, rng, spot, window, edge, cell, regime, diagnostics, fit_regime, fit_counter, extra=None,
+                       exclude=()):
+        """A drive that fits inside the window (non-final, not a clock drive,
+        `exclude` masked) under the regime's fit filters, else a zero-play
+        expiry (inside the allowance: clock_expiry_zero; beyond it:
+        fallback_zero_tuple, which the coherence audit flags)."""
+        clock_regime = self.FIT_REGIMES[regime]
+        pool_id = ("neutral", self.start_bin(spot))
+        drawn = self._draw_from(rng, pool_id, "fit", spot, window, edge, exclude=("clock",) + tuple(exclude),
+                                clock_regime=clock_regime, extra=extra)
+        if drawn is not None:
+            _bump(diagnostics, fit_counter)
+            return Drive(drawn[0], drawn[1], self.scaled_seconds(drawn[1]), False, cell, fit_regime,
+                         fallback="h1_fit" if fit_counter == "h1_fit_fallback" else "fit",
+                         pool_id=pool_id, clock_regime=clock_regime)
+        if window <= CLOCK_EXPIRY_ALLOWANCE:
+            _bump(diagnostics, "clock_expiry_zero")
+            return self.ending_drive("clock", ZERO_TUPLE, window, cell, regime, fallback="expiry")
+        _bump(diagnostics, "fallback_zero_tuple")
+        return self.ending_drive("clock", ZERO_TUPLE, window, cell, regime, fallback="zero")
+
+    def _finish(self, drawn, window, cell, regime, pool_id, fallback=None, match=None):
+        category, t, level = drawn
+        if self.ends_window(regime, category, t):
+            return self.ending_drive(category, t, window, cell, regime, fallback=fallback, timeout_level=level,
+                                     pool_id=pool_id, clock_regime=regime, match_width=match)
+        return Drive(category, t, self.scaled_seconds(t), False, cell, regime, fallback=fallback,
+                     timeout_level=level, pool_id=pool_id, clock_regime=regime, match_width=match)
+
+    def draw_drive(self, rng, spot, half, window, diff, edge, diagnostics, timeouts=None, extra=None):
+        """One possession under the schema-3 regimes (class docstring).
+
+        `extra` carries the matchup shifts ("int", "sack") and the per-game
+        context the kernel passes (no module state): "ot_history_empty"
+        (required for a tied overtime draw) and "walk_off_fg" (read by a
+        later batch)."""
+        extra = extra or {}
+        cell = self.cell_for(half, window, diff)
+        key = "off" if diff < 0 else "def"
+        if half == "OT" and diff > 0:
+            _bump(diagnostics, "ot_leading_offense")
+        if half == 1 and window > self.H1_LATE_SECONDS:
+            # R17: no redirect over H1_LATE_SECONDS; the fitting neutral draw.
+            pool_id = ("neutral", self.start_bin(spot))
+            drawn = self._draw_from(rng, pool_id, "fit", spot, window, edge, exclude=("clock",),
+                                    clock_regime="fit_h1", extra=extra)
+            if drawn is not None:
+                return Drive(drawn[0], drawn[1], self.scaled_seconds(drawn[1]), False, cell, "h1_neutral",
+                             pool_id=pool_id, clock_regime="fit_h1")
+            _bump(diagnostics, "h1_neutral_infeasible")
+            t = self._clock_fallback(rng, self._h1_late_clock_tuples(), spot, window)
+            if t is not None:
+                _bump(diagnostics, "fallback_clock_tuple")
+                return self.ending_drive("clock", t, window, cell, "h1_late", fallback="clock_tuple")
+            return self._fit_or_expire(rng, spot, window, edge, cell, "h1_neutral", diagnostics, "h1_neutral",
+                                       "h1_fit_fallback", extra=extra)
+        if half == 1:
+            bucket = ("h1_late", self.h1_key(window))
+            narrow, wide = self.TIME_MATCH
+            for pool_id, match in ((bucket, narrow), (bucket, wide), (bucket, None), (("h1_late_union", None), None)):
+                drawn = self._draw_from(rng, pool_id, "h1_late", spot, window, edge, timeouts, key, diagnostics,
+                                        extra=extra, match=match)
+                if drawn is not None:
+                    if match != narrow:
+                        _bump(diagnostics, "h1_late_match_fallback" if match == wide else
+                              "h1_late_cell_fallback" if pool_id is bucket else "h1_late_union_fallback")
+                    return self._finish(drawn, window, cell, "h1_late", pool_id, match=match)
+            _bump(diagnostics, "h1_late_infeasible")
+            t = self._clock_fallback(rng, self._h1_late_clock_tuples(), spot, window)
+            if t is not None:
+                _bump(diagnostics, "fallback_clock_tuple")
+                return self.ending_drive("clock", t, window, cell, "h1_late", fallback="clock_tuple")
+            return self._fit_or_expire(rng, spot, window, edge, cell, "h1_late", diagnostics, "h1_late",
+                                       "h1_fit_fallback", extra=extra)
+        transfer, primary_exclude = None, ()
+        if cell == "neutral":
+            pool_id = ("neutral", self.start_bin(spot))
+            drawn = self._draw_from(rng, pool_id, "h2_neutral", spot, window, edge, extra=extra)
+            if drawn is not None:
+                seconds = self.scaled_seconds(drawn[1])
+                if window - seconds <= self.data["preregistration"]["neutral_over_seconds"]:
+                    _bump(diagnostics, "h2_neutral_into_late")
+                return Drive(drawn[0], drawn[1], seconds, False, cell, "h2_neutral",
+                             pool_id=pool_id, clock_regime="h2_neutral")
+            need_label = self.need(diff)
+            regime, pool_id, masked = "late", ("late_union", need_label), ()
+        elif half == "OT" and diff < 0:
+            # R14: a trailing overtime offense, the late trail1_3 cell.
+            regime, pool_id, need_label = "ot", ("late", cell), cell_need(cell)
+            transfer, primary_exclude = ("punt", "downs"), ("punt",)
+            masked = self.zero_cell_categories(pool_id)
+        elif cell == "OT":
+            if "ot_history_empty" not in extra:
+                raise ValueError("a tied overtime draw needs the overtime history context")
+            regime, need_label = "ot", "tied"
+            pool_id = ("ot_first" if extra["ot_history_empty"] else "ot_sudden", None)
+            masked = self.zero_cell_categories(pool_id)
+        else:
+            regime, pool_id, need_label = "late", ("late", cell), cell_need(cell)
+            masked = self.zero_cell_categories(pool_id)
+        drawn = self._draw_from(rng, pool_id, regime, spot, window, edge, timeouts, key, diagnostics,
+                                exclude=primary_exclude, extra=extra, transfer=transfer)
+        fallback = None
+        if drawn is None and pool_id[0] != "late_union":
+            fallback = "need_union"
+            _bump(diagnostics, "fallback_need_union")
+            pool_id = ("late_union", need_label)
+            drawn = self._draw_from(rng, pool_id, regime, spot, window, edge, timeouts, key, diagnostics,
+                                    exclude=tuple(masked) + primary_exclude, extra=extra, transfer=transfer)
+        if drawn is None:
+            if "clock" not in masked:
+                t = self._clock_fallback(rng, self._late_clock_tuples(need_label), spot, window)
+                if t is not None:
+                    _bump(diagnostics, "fallback_clock_tuple")
+                    return self.ending_drive("clock", t, window, cell, regime, fallback="clock_tuple")
+            return self._fit_or_expire(rng, spot, window, edge, cell, regime, diagnostics, regime,
+                                       "fallback_fit_drive", extra=extra, exclude=tuple(masked) + primary_exclude)
+        return self._finish(drawn, window, cell, regime, pool_id, fallback=fallback)
+
+    def tuple_locator(self, category, t):
+        data = self.data
+        c = CATEGORIES.index(category)
+        for j, bin_pools in enumerate(data["pools"]["neutral"]):
+            for i, m in enumerate(bin_pools[c]):
+                if m is t:
+                    return ["neutral", j, i]
+        for kind in V3_POOLS:
+            for key, cells in data["pools"][kind].items():
+                for i, m in enumerate(cells[category]):
+                    if m is t:
+                        return [kind, key, i]
+        for kind in V3_OT_POOLS:
+            for i, m in enumerate(data["pools"][kind][category]):
+                if m is t:
+                    return [kind, None, i]
+        return None
+
+    def locate_tuple(self, category, locator):
+        data = self.data
+        try:
+            kind, key, i = locator
+            if kind == "neutral":
+                return data["pools"]["neutral"][key][CATEGORIES.index(category)][i]
+            if kind in V3_OT_POOLS:
+                return data["pools"][kind][category][i]
+            if kind not in V3_POOLS:
+                return None
+            return data["pools"][kind][key][category][i]
+        except (KeyError, IndexError, TypeError, ValueError):
+            return None
+
+    def snap_seconds_range(self):
+        if self._snap_range is None:
+            T = self.T
+            out = {0: (0, 0)}
+            for category in CATEGORIES:
+                for t in _v3_tuples(self.data, category):
+                    n, sec = t[T["plays"]], self.scaled_seconds(t)
+                    low, high = out.get(n, (sec, sec))
+                    out[n] = (min(low, sec), max(high, sec))
+            self._snap_range = out
+        return self._snap_range
+
+    def _resample_rungs(self, drawn, spot, regime, window):
+        """(pool id, match width, feasible tuples) in widening order for a
+        layout resample: the drawn rung (its time match), then, schema 3
+        (batch B5, found by the A6 sweep: a deep start can leave a thin cell
+        rung with no other legal drive), the wider pools of the same
+        category and regime: the first-half bucket cell and union, the late
+        need union and any start of that union, or any start of the drawn
+        pool. Category, regime and clock filters never change."""
+        pool_id, category, match = drawn.pool_id, drawn.category, drawn.match_width
+        yield pool_id, match, self.eligible(pool_id, category, spot, regime, window, match)
+        kind = pool_id[0]
+        if kind == "h1_late":
+            if match is not None:
+                yield pool_id, None, self.eligible(pool_id, category, spot, regime, window)
+            yield ("h1_late_union", None), None, self.eligible(("h1_late_union", None), category, spot, regime, window)
+            union = ("h1_late_union", None)
+        elif kind in ("late", "late_union"):
+            union = ("late_union", cell_need(pool_id[1]) if kind == "late" else pool_id[1])
+            yield union, None, self.eligible(union, category, spot, regime, window)
+        else:
+            union = pool_id
+        yield union, None, self._dynamic(self._any_start(union, category, spot), category, regime, window)
+
+    def resample_drive(self, rng, drawn, spot, window, exclude=(), timeouts=None):
+        """resample_drive on the drawn rung, time match and regime, widening
+        to the same category's wider pools when the rung has no other legal
+        drive (_resample_rungs); with `timeouts`, the W5b preference applies
+        to the candidates."""
+        if drawn.pool_id is None or drawn.tuple is ZERO_TUPLE:
+            return None
+        regime = drawn.clock_regime or drawn.regime
+        skip = [drawn.tuple] + list(exclude)
+        candidates, pool_id, match = [], drawn.pool_id, drawn.match_width
+        for pool_id, match, rung in self._resample_rungs(drawn, spot, regime, window):
+            candidates = [t for t in rung if not any(t is x or t == x for x in skip)]
+            if drawn.consumes_window:
+                candidates = [t for t in candidates if self.ends_window(regime, drawn.category, t)]
+            else:
+                candidates = [t for t in candidates if self.scaled_seconds(t) < window
+                              and not self.ends_window(regime, drawn.category, t)]
+            if candidates:
+                break
+        if timeouts is not None and regime in self.TIMEOUT_REGIMES and candidates:
+            candidates = list(self.held_preference(candidates, timeouts) or candidates)
+        if not candidates:
+            return None
+        t = candidates[rng.randrange(len(candidates))]
+        fields = dict(fallback=drawn.fallback, redirected=drawn.redirected, timeout_level=drawn.timeout_level,
+                      pool_id=pool_id, clock_regime=drawn.clock_regime, match_width=match)
+        if drawn.consumes_window:
+            return self.ending_drive(drawn.category, t, window, drawn.cell, drawn.regime, **fields)
+        return Drive(drawn.category, t, self.scaled_seconds(t), False, drawn.cell, drawn.regime, **fields)
+
+    # ---- transitions -------------------------------------------------------------------------
+
+    def kickoff(self, rng):
+        """A real own-35 kickoff (2011 onward) the receiving club takes over."""
+        return self._kick_record(rng, self._kick_pools["kickoff_pool"], 35)
+
+    def free_kick(self, rng):
+        """A real safety free kick from the 20 the receiving club takes over."""
+        return self._kick_record(rng, self._kick_pools["free_kick_pool"], 20)
+
+    def punt(self, rng, los):
+        P = self.PUNT
+
+        def ok(record):
+            if record[P["touchback"]]:
+                return los <= record[P["los"]]
+            start = 100 - los + record[P["gross"]] - record[P["return_yards"]] + record[P["enforcement"]]
+            return 1 <= start <= 99
+        candidates = self._nearest(self._punt_pool, P["los"], los, ok)
+        record = candidates[rng.randrange(len(candidates))]
+        touchback = bool(record[P["touchback"]])
+        gross = los if touchback else record[P["gross"]]
+        ret = 0 if touchback else record[P["return_yards"]]
+        enforcement = record[P["enforcement"]]
+        start = 80 + enforcement if touchback else 100 - los + gross - ret + enforcement
+        return {"los": los, "outcome": record[P["outcome"]], "gross": gross, "return_yards": ret,
+                "enforcement": enforcement, "next_start": start, "touchback": touchback,
+                "record_los": record[P["los"]]}
+
+
+MODEL_CLASSES = {SCHEMA: FieldPositionModel, SCHEMA_V3: FieldPositionModelV3}
+
+
+def model_class(schema):
+    """The field-position reader of an artifact schema; an unknown schema raises."""
+    try:
+        return MODEL_CLASSES[schema]
+    except KeyError:
+        raise ValueError("no field-position reader for schema %r" % (schema,)) from None
 
 
 # ---- the 2012 base's model (module-level API) ---------------------------------------------

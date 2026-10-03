@@ -234,5 +234,95 @@ class OvertimeRuleTests(unittest.TestCase):
                 self.assertEqual(ot[-1]["end_clock"], 0)
 
 
+class Overtime2014_6Tests(unittest.TestCase):
+    """Kernel 2014.6 batch B5, R14 on the schema-3 model: ot_first when the
+    overtime history is empty, ot_sudden otherwise; a trailing overtime
+    offense draws the late trail1_3 cell at the overtime clock's own time
+    label and never punts, through every fallback; the spike rule."""
+
+    @classmethod
+    def setUpClass(cls):
+        import random
+        from runtime.calibration_base import BASE_2010_2014W4
+        cls.model = BASE_2010_2014W4.field_position()
+        cls.random = random
+
+    def test_first_and_sudden_death_cells(self):
+        m = self.model
+        rng = self.random.Random(41)
+        for empty, kind in ((True, "ot_first"), (False, "ot_sudden")):
+            for _ in range(60):
+                drive = m.draw_drive(rng, rng.randint(20, 85), "OT", rng.randint(200, 600), 0, 0.0, {},
+                                     timeouts=(2, 2), extra={"ot_history_empty": empty})
+                if drive.fallback is None and drive.pool_id is not None:
+                    self.assertEqual(drive.pool_id[0], kind)
+        self.assertEqual(sum(m.data["ot_first_counts"].values()), 41)
+
+    def test_trailing_offense_never_punts(self):
+        m = self.model
+        rng = self.random.Random(43)
+        self.assertEqual(m.cell_for("OT", 600, -3), "301-600|trail1_3")
+        self.assertEqual(m.cell_for("OT", 90, -3), "le120|trail1_3")
+        for _ in range(600):
+            window = rng.randint(1, 600)
+            drive = m.draw_drive(rng, rng.randint(1, 99), "OT", window, -3, rng.uniform(-0.1, 0.1), {},
+                                 timeouts=(rng.randint(0, 2), rng.randint(0, 2)), extra={"ot_history_empty": False})
+            self.assertNotEqual(drive.category, "punt")
+        # Through _fit_or_expire too: with the cell and union draws empty
+        # and no clock fallback, the fit rung still never punts.
+        real = m._draw_from
+        with mock.patch.object(m, "_draw_from", lambda *a, **k: None if k.get("clock_regime") != "fit_ot"
+                               else real(*a, **k)), mock.patch.object(m, "_clock_fallback", lambda *a, **k: None):
+            diagnostics = {}
+            for _ in range(300):
+                drive = m.draw_drive(rng, rng.randint(1, 99), "OT", rng.randint(100, 600), -3, 0.0, diagnostics,
+                                     timeouts=(2, 2), extra={"ot_history_empty": False})
+                self.assertNotEqual(drive.category, "punt")
+            self.assertGreater(diagnostics.get("fallback_fit_drive", 0), 0)
+
+    def test_punt_weight_moves_to_downs(self):
+        m = self.model
+        counts = {c: 10 for c in fp.CATEGORIES}
+        options = {c: (1,) for c in fp.CATEGORIES}
+        plain = m.category_mix_v3(counts, 0.0, options)
+        moved = m.category_mix_v3(counts, 0.0, options, transfer=("punt", "downs"))
+        self.assertEqual(moved["punt"], 0.0)
+        self.assertAlmostEqual(moved["downs"], plain["downs"] + plain["punt"])
+
+    def test_spike_rule(self):
+        m = self.model
+        T = m.T
+        spiked = [t for c in fp.CATEGORIES for t in fp._v3_tuples(m.data, c) if t[T["spikes"]]]
+        self.assertTrue(spiked)
+        self.assertTrue(all(isinstance(t[T["last_spike_to_end"]], int) for t in spiked))
+        for t in spiked[:50]:
+            last = t[T["last_spike_to_end"]]
+            self.assertTrue(m.spike_ok(t, m.SPIKE_WINDOW - last))
+            self.assertFalse(m.spike_ok(t, m.SPIKE_WINDOW - last + 1))
+        # Every pre-divergence real spike is inside the window at its own clock.
+        rows = m.data["constants"]["spike_window"]
+        self.assertEqual(rows["pre_divergence_max_seconds"], m.SPIKE_WINDOW)
+
+    def test_overtime_games_on_the_2014_6_profile(self):
+        from runtime.profiles import PROFILE_2014_6
+        a, b = sample_teams()
+        found = 0
+        for i in range(120):
+            r = resolve_game(a, b, seed=SEED + b"-b5-ot-%03d" % i, event_id="b5-ot-%d" % i,
+                             _test_profile=PROFILE_2014_6)
+            ot = _ot(r)
+            if not ot:
+                continue
+            found += 1
+            self.assertEqual(validate_result(r), [])
+            for p in ot:
+                if p["score_diff"] < 0:
+                    self.assertNotEqual(p["category"], "punt")
+                self.assertLessEqual(p.get("last_spike_seconds_left", 0), self.model.SPIKE_WINDOW)
+            if found == 3:
+                break
+        self.assertGreater(found, 0)
+
+
 if __name__ == "__main__":
     unittest.main()
