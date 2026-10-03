@@ -132,8 +132,10 @@ class InjuryAndUsageSwitchTests(unittest.TestCase):
     def test_usage_is_credit_only(self):
         # The usage shares change who is credited, never the possession record.
         from runtime.profiles import Profile
+        # The same profile without the usage switch (batch B6's flags kept, so
+        # only the usage block differs).
         no_usage = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength="honours-production-v3",
-                           flags=frozenset({"base_2014_6", "regimes_v3", "injury_2014_6"}), record_base=True)
+                           flags=PROFILE_2014_6.flags - {"usage_2014_6"}, record_base=True)
         a, b = sample_teams()
         for i in range(3):
             seed = SEED + b"-b5-usage-%d" % i

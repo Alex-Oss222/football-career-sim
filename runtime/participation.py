@@ -150,13 +150,56 @@ def _credit(accumulator, key, share, snaps):
     return after // 100 - before // 100
 
 
-def _slot_snaps(accumulator, prefix, ordered, shares, snaps, out):
-    for rank, share in enumerate(shares):
-        if rank >= len(ordered):
-            break
-        credited = _credit(accumulator, (prefix, rank), share, snaps)
+def slot_lineup(offense_view, defense_view, passer, front):
+    """Kernel 2014.6 batch B6 (W2a): the single on-field source. {side:
+    [slot]} for one drive's scrimmage snaps, each slot a dict with its
+    label, group, accumulator key (None for a full-share slot that is never
+    accumulated: the passer and the five linemen), rank inside that key and
+    share in hundredths. Order and keys are exactly those scrimmage()
+    credited before this record existed, so crediting is byte for byte the
+    same: passer, the protection front by slot, the back slots (RB1, then
+    the first fullback or RB2), WR1-3, TE1-2; DL1-4, LB1-3, DB1-5."""
+    offense = []
+    if passer is not None:
+        offense.append({"slot": "QB", "group": "QB", "key": None, "rank": None, "player": passer, "share": 100})
+    for label, lineman in front.items():
+        offense.append({"slot": label, "group": "OL", "key": None, "rank": None, "player": lineman, "share": 100})
+    backs = usage.depth_order(offense_view, "RB")
+    fullbacks = usage.depth_order(offense_view, "FB")
+    back_slots = backs[:1] + (fullbacks[:1] or backs[1:2])
+    for rank, (player, share) in enumerate(zip(back_slots, BACK_SLOTS)):
+        label = "FB1" if rank == 1 and fullbacks[:1] and player is fullbacks[0] else "RB%d" % (rank + 1)
+        offense.append({"slot": label, "group": "RB", "key": ("O", "RB"), "rank": rank, "player": player,
+                        "share": share})
+    for grp, shares in OFFENSE_SLOTS:
+        for rank, (player, share) in enumerate(zip(usage.depth_order(offense_view, grp), shares)):
+            offense.append({"slot": "%s%d" % (grp, rank + 1), "group": grp, "key": ("O", grp), "rank": rank,
+                            "player": player, "share": share})
+    defense = []
+    for grp, shares in DEFENSE_SLOTS:
+        for rank, (player, share) in enumerate(zip(usage.depth_order(defense_view, grp), shares)):
+            defense.append({"slot": "%s%d" % (grp, rank + 1), "group": grp, "key": ("D", grp), "rank": rank,
+                            "player": player, "share": share})
+    return {"offense": offense, "defense": defense}
+
+
+def slot_map(lineup, side):
+    """{player_id: slot label} of one side of a slot_lineup (a player in two
+    slots keeps the first)."""
+    out = {}
+    for slot in lineup[side]:
+        out.setdefault(slot["player"].player_id, slot["slot"])
+    return out
+
+
+def _credit_slots(accumulator, team_id, slots, n, out):
+    for slot in slots:
+        pid = slot["player"].player_id
+        if slot["key"] is None:
+            out[pid] = n
+            continue
+        credited = _credit(accumulator, ((team_id,) + slot["key"], slot["rank"]), slot["share"], n)
         if credited:
-            pid = ordered[rank].player_id
             out[pid] = out.get(pid, 0) + credited
 
 
@@ -168,7 +211,8 @@ def scrimmage(accumulator, offense_id, defense_id, offense_view, defense_view, p
     from the slot model alone (before the named-player uplift below): the
     injury exposure. It depends only on the lineups and the drive's snap
     count, so no attribution draw can move an injury hazard (kernel 2014.4,
-    defect register item 19: the attribution tilt changes credit only)."""
+    defect register item 19: the attribution tilt changes credit only).
+    Batch B6 (W2a): the slots are slot_lineup's, the single on-field source."""
     snaps_rows = [r for r in rows if r.get("play_type") in SCRIMMAGE_TYPES]
     n = len(snaps_rows)
     offense, defense = {}, {}
@@ -176,18 +220,9 @@ def scrimmage(accumulator, offense_id, defense_id, offense_view, defense_view, p
         if hazard_out is not None:
             hazard_out.update({offense_id: {}, defense_id: {}})
         return {offense_id: offense, defense_id: defense}
-    if passer is not None:
-        offense[passer.player_id] = n
-    for lineman in front.values():
-        offense[lineman.player_id] = n
-    backs = usage.depth_order(offense_view, "RB")
-    fullbacks = usage.depth_order(offense_view, "FB")
-    back_slots = backs[:1] + (fullbacks[:1] or backs[1:2])
-    _slot_snaps(accumulator, (offense_id, "O", "RB"), back_slots, BACK_SLOTS, n, offense)
-    for grp, shares in OFFENSE_SLOTS:
-        _slot_snaps(accumulator, (offense_id, "O", grp), usage.depth_order(offense_view, grp), shares, n, offense)
-    for grp, shares in DEFENSE_SLOTS:
-        _slot_snaps(accumulator, (defense_id, "D", grp), usage.depth_order(defense_view, grp), shares, n, defense)
+    lineup = slot_lineup(offense_view, defense_view, passer, front)
+    _credit_slots(accumulator, offense_id, lineup["offense"], n, offense)
+    _credit_slots(accumulator, defense_id, lineup["defense"], n, defense)
     if hazard_out is not None:
         hazard_out.update({offense_id: dict(offense), defense_id: dict(defense)})
     for side, fields in ((offense, OFFENSE_FIELDS), (defense, DEFENSE_FIELDS)):

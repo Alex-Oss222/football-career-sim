@@ -424,6 +424,15 @@ def _resolve_game(
     penalty_per_play = rates["penalty_per_play"]
     xp_rate = dm.rate("extra_point")
     regimes_v3 = profile.has("regimes_v3")
+    # Kernel 2014.6 batch B6: the drive-internal record mechanisms, each by
+    # its profile flag (runtime.profiles), each needing a schema-3 base for
+    # its constants (fails closed on the 2012 base).
+    early_fg_v2 = profile.has("early_fg_v2")
+    clock_detail = profile.has("clock_detail_v1")
+    substitution_record = profile.has("substitution_record")
+    if (early_fg_v2 or clock_detail) and not hasattr(fpm, "early_fg_ok"):
+        raise ValueError("profile %s holds a batch B6 flag on a base without the W3/W5a constants"
+                         % profile.kernel_version)
     T = fpm.T
 
     teams = {home.team_id: home, away.team_id: away}
@@ -511,6 +520,79 @@ def _resolve_game(
     def live_rosters():
         return {tid: tuple(players) for tid, players in current.items()}
 
+    def pure_lineup(team_id, players):
+        """Batch B6 (W2a): the club's on-field slots from `players` through
+        the pure path: emergency_view with the kept fillers (never written
+        back), the preseason tracker's current block applied without
+        selecting or recording, then participation.slot_lineup. No draw, no
+        state change; the kernel's lineup() is never called here."""
+        views = {}
+        for side in ("offense", "defense"):
+            view, notes = participation.emergency_view(players, baseline[team_id], side,
+                                                       prefer=fills[team_id][side])
+            if trackers is not None:
+                tracker = trackers[team_id]
+                blocks = tracker.blocks[side]
+                if blocks:
+                    view, _ = rotation.apply(blocks[tracker.index[side]], view)
+                st_blocks = tracker.blocks["special_teams"]
+                if st_blocks:
+                    specialists = {g: ids for g, ids in st_blocks[tracker.index["special_teams"]]["players"].items()
+                                   if g in rotation.SPECIALISTS}
+                    if specialists:
+                        view, _ = rotation.apply({"players": specialists}, view)
+            views[side] = (view, notes)
+        off_view, off_notes = views["offense"]
+        def_view, def_notes = views["defense"]
+        passer = usage.game_passer(off_view) or off_view[0]
+        front = usage.protection_front(off_view)
+        lineup_now = participation.slot_lineup(off_view, def_view, passer, front)
+        kicker = usage.kicking_specialist(players, "K", "placekicker")
+        punter = usage.kicking_specialist(players, "P", "punt")
+        snapper = usage.long_snapper(players, front)
+        return {
+            "slots": {side: participation.slot_map(lineup_now, side) for side in ("offense", "defense")},
+            "emergency": off_notes + def_notes,
+            "specialists": {"K": kicker.player_id if kicker else None, "P": punter.player_id if punter else None,
+                            "LS": snapper.player_id if snapper else None},
+            "returners": {role: (r.player_id if r else None) for role, r in
+                          (("kick_return", usage.club_returner(players, "kick_return")),
+                           ("punt_return", usage.club_returner(players, "punt_return")))},
+        }
+
+    def substitution_detail(before, after, removed_id):
+        """Batch B6 (W2a): the record of one removal from the pure lineups
+        before and after it: the entrant (on the field after, not before, on
+        the removed player's side; else any side), the vacated and entering
+        slots, slot moves (labels only, no shares), the emergency fills after
+        the removal and every specialist or returner change."""
+        vacated = [{"side": side, "slot": before["slots"][side][removed_id]} for side in ("offense", "defense")
+                   if removed_id in before["slots"][side]]
+        sides = [v["side"] for v in vacated] or ["offense", "defense"]
+        entrant, entering = None, []
+        for side in sides:
+            new = [pid for pid in after["slots"][side] if pid not in before["slots"][side]]
+            for pid in new:
+                entering.append({"side": side, "slot": after["slots"][side][pid], "player": pid})
+                if entrant is None:
+                    entrant = pid
+        moves = []
+        for side in ("offense", "defense"):
+            for pid, slot in after["slots"][side].items():
+                was = before["slots"][side].get(pid)
+                if was is not None and was != slot:
+                    moves.append({"side": side, "player": pid, "from": was, "to": slot})
+        specialists = {role: {"from": before["specialists"][role], "to": after["specialists"][role]}
+                       for role in before["specialists"] if before["specialists"][role] != after["specialists"][role]}
+        returners = {role: {"from": before["returners"][role], "to": after["returners"][role]}
+                     for role in before["returners"] if before["returners"][role] != after["returners"][role]}
+        return {"entrant": entrant, "vacated_slots": vacated, "entering_slots": entering, "moves": moves,
+                "emergency": list(after["emergency"]), "specialists": specialists, "returners": returners}
+
+    # W2a: the pure lineup before each removal, kept so a coach's choice
+    # (apply_decision) can recompute the record against the same baseline.
+    lineup_before = {}
+
     def add_exposure(team_id, snaps):
         for pid, count in snaps.items():
             exposure[team_id][pid] = exposure[team_id].get(pid, 0) + count
@@ -593,6 +675,7 @@ def _resolve_game(
             live_player = next(p for p in live if p.player_id == pid)
             before = usage.depth_order(live, grp) if grp else []
             rank = next((i for i, p in enumerate(before) if p.player_id == pid), None)
+            pure_before = pure_lineup(tid, live) if substitution_record else None
             current[tid] = [p for p in live if p.player_id != pid]
             removed[pid] = entry
             vacated[pid] = live_player
@@ -604,8 +687,15 @@ def _resolve_game(
                 entering = [p.player_id for p in usage.protection_front(current[tid]).values()
                             if p.player_id not in seated]
                 successor = entering[0] if entering else None
-            substitutions.append({"drive": drive_no, "team": tid, "removed": pid, "group": grp,
-                                  "basis": "depth_order", "replacement": successor})
+            record = {"drive": drive_no, "team": tid, "removed": pid, "group": grp,
+                      "basis": "depth_order", "replacement": successor}
+            if substitution_record:
+                # Batch B6 (W2a, append-only): several removals at one
+                # boundary are applied in sequence, each against the lineup
+                # the previous one left.
+                lineup_before[(tid, pid)] = pure_before
+                record.update(substitution_detail(pure_before, pure_lineup(tid, current[tid]), pid))
+            substitutions.append(record)
         if management_mode != "user_controlled":
             return
         counts_after = participation.group_counts(current[controlled_team])
@@ -664,6 +754,10 @@ def _resolve_game(
             for sub in substitutions:
                 if sub["removed"] == slot and sub["team"] == tid:
                     sub.update({"basis": "coach_choice", "replacement": choice})
+                    if substitution_record and (tid, slot) in lineup_before:
+                        # W2a: the record recomputed after the coach's choice.
+                        sub.update(substitution_detail(lineup_before[(tid, slot)], pure_lineup(tid, current[tid]),
+                                                       slot))
         pause_state["history"].append({"drive": pause["drive"], "team": tid,
                                        "continuation_token": pause["continuation_token"],
                                        "choices": dict(choices)})
@@ -787,6 +881,11 @@ def _resolve_game(
             draw_extra["ot_history_empty"] = half == "OT" and not ot_history
             draw_extra["walk_off_fg"] = bool(half == "OT" and ot_history is not None and ot_status(
                 ot_history + [{"team": offense, "score": "field_goal"}], game_type) == "end")
+        if early_fg_v2:
+            # Batch B6 (W3): the clock filters admit a field-goal tuple that
+            # kicked before fourth down only when the kick is early or a
+            # fourth-down layout exists at the spot (FieldPositionModelV3).
+            draw_extra["early_fg_v2"] = True
 
         # 1-3. Game-state cell, category and a real 2012 drive feasible from
         # the start spot (runtime/field_position.py, possession stream).
@@ -882,13 +981,19 @@ def _resolve_game(
             # beyond the real scrimmage count (chains.penalty_first_downs). When the split above admits no legal
             # order the layout returns an alternative split or sack-loss draw
             # (same net), which the drive then publishes.
+            fg_down = None
+            if early_fg_v2 and category == "field_goal_attempt" and not fpm.early_fg_ok(
+                    row, window, half == "OT", drawn.consumes_window, draw_extra.get("walk_off_fg", False)):
+                # Batch B6 (W3): the kick comes on fourth down in every tier;
+                # the closable last fallback admits the real down, counted.
+                fg_down = 4
             layout = chain_walk.drive_layout(
                 seed=seed, event_id=event_id, drive_no=drive_no, offense=offense, category=category,
                 td_type=td_type, runs=runs, attempts=attempts, sacks=sacks, kneel_yards=kneel_yards,
                 spikes=spikes, pass_yards=pass_yards, rush_free=rush_free, losses=sack_losses,
                 safety_terminal=safety_terminal, net=net, spot=spot, completion_rate=completion_rate,
                 targets=list(row[T["chains"]]), term_down=row[T["term_down"]], diagnostics=scratch,
-                usage_values=usage_values)
+                usage_values=usage_values, fg_down=fg_down)
             return dict(net=net, end_spot=end_spot, plays=plays, runs=runs, attempts=attempts, sacks=sacks,
                         kneel_yards=kneel_yards, spikes=spikes, td_type=td_type, turnover_type=turnover_type,
                         kneel_sum=kneel_sum, terminal_value=terminal_value, safety_terminal=safety_terminal,
@@ -910,7 +1015,7 @@ def _resolve_game(
             tried = [drawn.tuple]
             for attempt in range(1, LAYOUT_RESAMPLE_LIMIT + 1):
                 alt = (fpm.resample_drive(resample_rng, original, spot, window, exclude=tried,
-                                          timeouts=timeouts_before) if regimes_v3
+                                          timeouts=timeouts_before, extra=draw_extra) if regimes_v3
                        else fpm.resample_drive(resample_rng, original, spot, window, exclude=tried))
                 if alt is None:
                     break
@@ -1091,6 +1196,10 @@ def _resolve_game(
                 "tuple_terminal_bucket": row[T["term_bucket"]],
                 "action": {"punt": "punt", "field_goal_attempt": "field_goal", "downs": "go"}[category],
             }
+            if clock_detail:
+                # Batch B6 (W5a, append-only): the fourth-down action is the
+                # replayed drive's, a league-model decision, never a coach's.
+                fourth_down["decision_source"] = "league_model"
 
         drive_ledger, drive_calls = apply_drive_detail(
             calibration_base=cbase,
@@ -1136,6 +1245,12 @@ def _resolve_game(
             score_diff=score_diff,
             start_kind=start_kind,
             game_ledger=play_ledger,
+            # Kernel 2014.6 batch B6 (W5a): clock stamps, timeout and
+            # two-minute-warning rows (records only).
+            clock_detail=clock_detail,
+            timeouts_used=timeouts_used,
+            game_type=game_type,
+            kernel_version=profile.kernel_version,
         )
         chain_walk.annotate(drive_ledger, layout["walk"], fourth_down)
         append_rows(drive_ledger)

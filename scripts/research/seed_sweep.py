@@ -58,7 +58,9 @@ BLOCKS = {
     "october-1": ({"sweep": "single", "sw2": "single", "pz": "pause", "samp": "sample"}, 3000, None),
 }
 DIAGNOSTICS = ("chain_layout_failed", "chain_layout_resampled", "chain_layout_resample_exhausted",
-               "chain_plan_concentrated", "fallback_zero_tuple")
+               "chain_plan_concentrated", "fallback_zero_tuple",
+               # kernel 2014.6 batch B6: the W3 fourth-down fallback and the W5a stamp exemptions
+               "fg_fourth_down_relaxed", "clock_gap_exempt", "timeout_seat_fallback")
 
 
 def fixture(name):

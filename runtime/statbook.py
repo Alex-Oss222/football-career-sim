@@ -52,13 +52,23 @@ KERNEL_2014_6_PLAYER_FIELDS = ()
 # DRIVE_SUMMARY_FIELDS additions are possession keys; snap-ledger row keys
 # are "ledger".
 KERNEL_2014_6_FIELD_GROUP = {
-    "result": ("calibration_base",),
+    # Batch B6 (W2a): the full receipt's substitution record.
+    "result": ("calibration_base", "substitutions"),
     # Batch B5: the window seconds left at a drive's last spike (R14).
     "possession": ("last_spike_seconds_left",),
-    "ledger": (),
+    # Batch B6 (W5a): a league-model decision marker on new rows and on the
+    # fourth-down state (nested under "fourth_down", see FOURTH_DOWN_FIELDS).
+    "ledger": ("decision_source",),
+    "fourth_down": ("decision_source",),
     "team": KERNEL_2014_6_TEAM_STAT_FIELDS,
     "player": KERNEL_2014_6_PLAYER_FIELDS,
 }
+# Batch B6 (W5a): the snap-ledger row kinds only kernel 2014.6-or-later
+# results carry (timeout and two-minute-warning rows). plays_recorded counts
+# scrimmage rows only for such receipts (_plays_recorded); older receipts
+# keep their row count so closed views regenerate unchanged.
+KERNEL_2014_6_LEDGER_ROWS = ("timeout", "two_minute_warning")
+SCRIMMAGE_ROWS = ("pass", "run")
 
 
 def kernel_at_least(version, minimum=DRIVE_MODEL_FROM_KERNEL):
@@ -188,6 +198,11 @@ def make_receipt(result, *, week, matchup, coverage="complete", detail="full",
     if detail == "full":
         receipt["play_ledger"] = deepcopy(result.get("play_ledger", []))
         receipt["play_call_stats"] = deepcopy(result.get("play_call_stats", {}))
+        if kernel_at_least(result.get("kernel_version"), KERNEL_2014_6_FROM):
+            # Kernel 2014.6 onward (batch B6, W2a): the substitution record
+            # (entrant, slots, moves, fills, specialists, returners) rides
+            # with the full receipt; compact receipts are unchanged.
+            receipt["substitutions"] = deepcopy(result.get("substitutions", []))
     return receipt
 
 
@@ -337,12 +352,23 @@ def aggregate_receipts(receipts):
         "player_attribution_complete": player_attribution_complete,
         "team_player_attribution_complete": team_player_attribution_complete,
         "receipt_count": len(receipts),
-        "plays_recorded": sum(len(receipt.get("play_ledger", [])) for receipt in receipts),
+        "plays_recorded": sum(_plays_recorded(receipt) for receipt in receipts),
         "player_stat_fields": sorted(player_stat_fields),
         "teams": teams,
         "players": league_players,
         "play_calls": play_calls,
     }
+
+
+def _plays_recorded(receipt):
+    """A receipt's recorded plays: for kernel 2014.6-or-later receipts the
+    scrimmage rows only (batch B6, W5a: timeout and two-minute-warning rows
+    are records, not plays); earlier receipts keep their row count, so every
+    closed 2013 and 2014 Weeks 1-4 view regenerates unchanged."""
+    ledger = receipt.get("play_ledger", [])
+    if kernel_at_least(receipt.get("kernel_version"), KERNEL_2014_6_FROM):
+        return sum(1 for play in ledger if play.get("play_type") in SCRIMMAGE_ROWS)
+    return len(ledger)
 
 
 def leaders(book, field, *, limit=10):

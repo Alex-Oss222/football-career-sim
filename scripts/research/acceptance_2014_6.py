@@ -62,7 +62,9 @@ DIAGNOSTICS = ("chain_layout_failed", "chain_layout_resampled", "chain_layout_re
                "fallback_zero_tuple", "fallback_fit_drive", "fallback_need_union", "fallback_clock_tuple",
                "h1_fit_fallback", "h1_late_match_fallback", "h1_late_cell_fallback", "h1_late_union_fallback",
                "h1_late_infeasible", "h1_neutral_infeasible", "clock_expiry_zero", "timeout_unavailable_kept",
-               "ot_leading_offense")
+               "ot_leading_offense",
+               # batch B6: the W3 closable fallback and the W5a stamp exemptions
+               "fg_fourth_down_relaxed", "clock_gap_exempt", "timeout_seat_fallback")
 
 
 def entropy(label):
@@ -202,6 +204,9 @@ def grade(receipts, version, provisional=True):
                               for m, o, c, t, s in rows]}
     checked, counts = bands.coherence(receipts, cohort=version)
     out["coherence"] = {"checked": checked, "violations": {cls: n for cls, n, _ in counts if n}}
+    # Batch B6: audit-only classes are reported, never gated.
+    checked, counts = bands.audit_only_coherence(receipts, cohort=version)
+    out["coherence"]["audit_only"] = {cls: n for cls, n, _ in counts}
     return out
 
 
@@ -244,9 +249,10 @@ def main():
     result["block"] = args.block
     if args.out:
         args.out.write_text(json.dumps(result, indent=1, sort_keys=True, default=str) + "\n", encoding="utf-8")
-    print("acceptance %s, kernel profile %s: %d games, %d refused; coherence violations %s" % (
+    print("acceptance %s, kernel profile %s: %d games, %d refused; coherence violations %s; audit-only %s" % (
         args.block, args.profile, result["games"], result["refused_games"],
-        result["bands"]["coherence"]["violations"] or "none"))
+        result["bands"]["coherence"]["violations"] or "none",
+        result["bands"]["coherence"].get("audit_only") or "none"))
     print("diagnostics: " + ", ".join("%s %d" % kv for kv in sorted(result["diagnostics"].items()) if kv[1]))
     for table, block in result["bands"].items():
         if table == "coherence":

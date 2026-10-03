@@ -29,6 +29,17 @@ KICKOFF_DETAIL_TAG = "public-kickoff-detail-v3"
 # opening sequence (runtime.call_situations); the tag is unchanged because
 # the stream still never touches the possession draw.
 LABEL_TAG = "public-call-label-v1"
+# Kernel 2014.6 batch B6 (W5a): the clock-detail stream seats a drive's
+# charged timeouts (its only draw); the snap stamps themselves are an
+# allocation of the drive's own seconds by the base's gap table. Display and
+# records only: no outcome draw reads this stream or the stamps.
+CLOCK_DETAIL_TAG = "public-clock-detail-v1"
+TIMEOUT_ROW = "timeout"
+TWO_MINUTE_WARNING_ROW = "two_minute_warning"
+LEAGUE_MODEL = "league_model"
+# Gap kinds whose out-of-bounds split the kernel cannot see are pooled.
+GAP_POOL = {"run": ("run", "run_oob"), "complete": ("complete", "complete_oob")}
+SACK_GAP_FROM_KERNEL = (2014, 6)
 KNEEL_LABEL = "Victory (kneel)"
 SPIKE_LABEL = "Clock (spike)"
 SCRAMBLE_LABEL = "QB Scramble"
@@ -47,6 +58,193 @@ def _rng(seed, *, event_id, drive_no, offense):
 
 def _label_rng(seed, *, event_id, drive_no, offense):
     return _stream(LABEL_TAG, seed, event_id, drive_no, offense)
+
+
+def _clock_rng(seed, *, event_id, drive_no, offense):
+    return _stream(CLOCK_DETAIL_TAG, seed, event_id, drive_no, offense)
+
+
+# ---- W5a clock detail (kernel 2014.6, batch B6) ------------------------------
+
+def gap_kind(kind, completed):
+    """The W5a gap kind of a laid-out snap: run, complete, incomplete (an
+    interception stops the clock like an incompletion), sack, spike, kneel."""
+    if kind == "run":
+        return "run"
+    if kind == "sack":
+        return "sack"
+    if kind == "spike":
+        return "spike"
+    if kind == "kneel":
+        return "kneel"
+    if kind in ("att", "catch") and completed:
+        return "complete"
+    return "incomplete"
+
+
+def clock_context(remaining, overtime=False, pro_bowl=False):
+    """The W5a clock context of a snap at `remaining` seconds of the
+    possession countdown: inside_2_min (the last 2:00 of a half, of an
+    overtime period, or of any Pro Bowl quarter), q4_2_to_5_min (the fourth
+    quarter from 5:00 to 2:00), else normal."""
+    period, text = _period_clock(remaining, overtime=overtime)
+    minutes, seconds = (int(v) for v in text.split(":"))
+    left = minutes * 60 + seconds
+    if isinstance(period, str):
+        return "inside_2_min" if left <= 120 else "normal"
+    if left <= 120 and (pro_bowl or period in (2, 4)):
+        return "inside_2_min"
+    if period == 4 and left <= 300:
+        return "q4_2_to_5_min"
+    return "normal"
+
+
+def _table_mean(table, keys, context):
+    """Mean seconds of a W5a cell (sum / snaps), pooling the given keys; a
+    context with no snaps falls back to the keys' pooled mean over every
+    context; None when the table has none."""
+    for contexts in ((context,), None):
+        total = snaps = 0
+        for cell, (sum_s, n) in table.items():
+            kind, ctx = cell.split("|", 1)
+            if kind in keys and (contexts is None or ctx in contexts):
+                total += sum_s
+                snaps += n
+        if snaps:
+            return total / snaps
+    return None
+
+
+def gap_seconds(constants, kind, context, sack_key):
+    """Mean W5a gap after a snap of `kind` in `context` (pooled over the
+    out-of-bounds split the kernel cannot see; the sack gap by `sack_key`,
+    the 2014 running-clock value for kernel 2014.6 and later)."""
+    table = constants["gap_seconds"]
+    keys = (sack_key,) if kind == "sack" else GAP_POOL.get(kind, (kind,))
+    mean = _table_mean(table, keys, context)
+    if mean is None and kind == "sack":
+        mean = _table_mean(table, ("sack_2010_2013", "sack_2014w4"), context)
+    return mean if mean is not None else 1.0
+
+
+def _allocate_gaps(weights, available, diagnostics):
+    """Integer gaps proportional to `weights` summing to `available`, each at
+    least 1 s when `available` allows (the exemption, when the drive's own
+    seconds are fewer than its gaps, is counted clock_gap_exempt)."""
+    n = len(weights)
+    if n == 0:
+        return []
+    available = max(0, int(available))
+    total = sum(weights)
+    exact = [available * w / total if total > 0 else available / n for w in weights]
+    gaps = [int(x) for x in exact]
+    residue = available - sum(gaps)
+    order = sorted(range(n), key=lambda i: (-(exact[i] - gaps[i]), i))
+    for i in order[:residue]:
+        gaps[i] += 1
+    if available >= n:
+        while any(g < 1 for g in gaps):
+            short = next(i for i, g in enumerate(gaps) if g < 1)
+            big = max(range(n), key=lambda i: (gaps[i], -i))
+            gaps[big] -= 1
+            gaps[short] += 1
+    elif diagnostics is not None:
+        diagnostics["clock_gap_exempt"] = diagnostics.get("clock_gap_exempt", 0) + 1
+    return gaps
+
+
+def clock_stamps(constants, kinds, completed, *, start_clock, own, kick_length=0, sack_key="sack_2010_2013",
+                 overtime=False, pro_bowl=False, diagnostics=None):
+    """W5a: (snap stamps, kick stamp) as seconds of the possession countdown.
+
+    The first snap is stamped at the drive's start; each later snap follows
+    the previous one by that snap's gap (the base's mean seconds between
+    consecutive snaps by the previous play's kind and clock context), the
+    gaps scaled to the drive's own seconds less the kick length. A kick is
+    stamped at start - own + kick length (a zero-play kick at its start). The
+    context is read from the stamps themselves (two passes). An allocation
+    of the real drive's own seconds, never a play-by-play clock simulation.
+    """
+    plays = len(kinds)
+    start, own = int(start_clock), max(0, int(own))
+    kick = None
+    kick_len = 0
+    if kick_length:
+        # The kick length is clipped so every snap keeps its 1 s gap when the
+        # drive's own seconds allow (a 1-snap, 11 s field-goal drive kicks 10 s
+        # after its snap, not on the snap's clock).
+        kick_len = min(int(kick_length), own)
+        if plays and own - kick_len < plays:
+            kick_len = max(0, own - plays)
+        kick = start - own + kick_len
+    if plays == 0:
+        return [], (start if kick is not None else None)
+    available = own - kick_len
+    gap_kinds = [gap_kind(k, c) for k, c in zip(kinds, completed)]
+    stamps = [start] * plays
+    for _ in range(2):
+        weights = [gap_seconds(constants, gap_kinds[i], clock_context(stamps[i], overtime, pro_bowl), sack_key)
+                   for i in range(plays)]
+        gaps = _allocate_gaps(weights, available, None)
+        stamps = [start]
+        for g in gaps[:-1]:
+            stamps.append(stamps[-1] - g)
+    _allocate_gaps(weights, available, diagnostics)
+    return stamps, kick
+
+
+def timeout_seats(rng, constants, kinds, completed, terminal, has_kick, count, diagnostics=None):
+    """W5a: the seat (index of the snap it follows; -1 before the first snap)
+    of each of `count` charged timeouts, drawn on the clock-detail stream
+    with the base's seat weights by the preceding snap's kind. A timeout sits
+    after a snap that left the clock running and never after a terminal
+    snap or the last snap of a drive with no kick; without such a snap it
+    sits before the first (counted timeout_seat_fallback)."""
+    seats = constants["timeout_seats"]
+    plays = len(kinds)
+    last = plays - 1
+    eligible, weights = [], []
+    for i in range(plays):
+        gk = gap_kind(kinds[i], completed[i])
+        if gk not in ("run", "complete", "sack"):
+            continue
+        if terminal is not None and i == last:
+            continue
+        if i == last and not has_kick:
+            continue
+        weight = sum(seats.get(k, 0) for k in GAP_POOL.get(gk, (gk,)))
+        if weight <= 0:
+            continue
+        eligible.append(i)
+        weights.append(int(weight))
+    out = []
+    for _ in range(count):
+        if not eligible:
+            out.append(-1)
+            if diagnostics is not None:
+                diagnostics["timeout_seat_fallback"] = diagnostics.get("timeout_seat_fallback", 0) + 1
+            continue
+        total = sum(weights)
+        pick = rng.randrange(total)
+        running = 0
+        for i, w in zip(eligible, weights):
+            running += w
+            if pick < running:
+                out.append(i)
+                break
+    return out
+
+
+def two_minute_marks(overtime=False, pro_bowl=False):
+    """The possession-countdown seconds at which a two-minute warning falls:
+    2:00 of periods 2 and 4 (every quarter in the Pro Bowl), of the overtime
+    period, and of each postseason overtime period on its countdown."""
+    if isinstance(overtime, tuple):
+        _, periods, length = overtime
+        return [(periods - n) * length + 120 for n in range(1, periods + 1)]
+    if overtime:
+        return [120]
+    return [2820, 1920, 1020, 120] if pro_bowl else [1920, 120]
 
 
 def _allocate(total, count, rng):
@@ -728,6 +926,10 @@ def apply_drive_detail(
     game_ledger=(),
     calibration_base=None,
     usage_base=None,
+    clock_detail=False,
+    timeouts_used=(0, 0),
+    game_type="regular",
+    kernel_version=None,
 ):
     """Allocate one resolved drive into reconciled player/snap public detail.
 
@@ -760,6 +962,16 @@ def apply_drive_detail(
     credits the drive (runtime.profiles.Profile.usage_base); None is
     `calibration_base`. The completion rate is the bound base's
     (runtime.calibration.kernel_rates).
+
+    Kernel 2014.6 (batch B6, W5a; profile flag clock_detail_v1): with
+    `clock_detail`, snaps are stamped by clock_stamps from the base's W5a
+    constants, the kick row at start - own + kick length, the drive's
+    charged timeouts (`timeouts_used`, offense then defense) become timeout
+    rows seated on the clock-detail stream, and a two-minute warning row is
+    seated where the drive's stamps cross 2:00 of a period that has one
+    (`game_type` names the Pro Bowl; `game_ledger` says whether the period's
+    warning already exists). The sack gap is the 2014 value for
+    `kernel_version` 2014.6 and later. Records only: no outcome changes.
     """
     from .calibration_base import BASE_2012
     from .calibration import kernel_rates
@@ -827,6 +1039,19 @@ def apply_drive_detail(
     ledger = []
     groups_for = {}
     remaining_at = []
+    pro_bowl = game_type == PRO_BOWL
+    stamps = kick_stamp = None
+    if clock_detail:
+        from .statbook import kernel_at_least
+        fp_model = cbase.field_position()
+        w5a = getattr(fp_model, "clock_detail", None)
+        if not w5a:
+            raise ValueError("clock detail needs a calibration base with the W5a constants")
+        sack_key = ("sack_2014w4" if kernel_at_least(kernel_version, SACK_GAP_FROM_KERNEL) else "sack_2010_2013")
+        stamps, kick_stamp = clock_stamps(
+            w5a, kinds, completed, start_clock=start_clock, own=own,
+            kick_length=fp_model.kick_length(category) if category in ("field_goal_attempt", "punt") else 0,
+            sack_key=sack_key, overtime=overtime, pro_bowl=pro_bowl, diagnostics=diagnostics)
 
     def clock_at(remaining):
         return _period_clock(remaining, closing=remaining <= int(end_clock), overtime=overtime)
@@ -848,7 +1073,7 @@ def apply_drive_detail(
     running = 0
     for index in range(plays):
         snap_no = index + 1
-        remaining = int(start_clock) - round(own * snap_no / plays)
+        remaining = stamps[index] if stamps is not None else int(start_clock) - round(own * snap_no / plays)
         remaining_at.append(remaining)
         period, game_clock = clock_at(remaining)
         kind = kinds[index]
@@ -1014,6 +1239,12 @@ def apply_drive_detail(
         "offense": team.team_id, "defense": defense.team_id,
         "result_yards": 0, "touchdown": False, "turnover": False,
     }
+    if kick_stamp is not None:
+        # W5a: the kick row at start - own + kick length.
+        kick_period, kick_clock = clock_at(kick_stamp)
+        base_kick = {**base, "period": kick_period, "game_clock": kick_clock}
+    else:
+        base_kick = base
     fourth = {}
     if fourth_down is not None:
         fourth = {"down": fourth_down["down"], "ydstogo": fourth_down["ydstogo"], "los": fourth_down["los"]}
@@ -1035,7 +1266,7 @@ def apply_drive_detail(
         _bump(line, "field_goals_attempted")
         if fg_made:
             _bump(line, "field_goals_made")
-        ledger.append({**base, "snap_in_drive": terminal_snap, "play_type": "field_goal",
+        ledger.append({**base_kick, "snap_in_drive": terminal_snap, "play_type": "field_goal",
                        "kicker": kicker.player_id, "made": bool(fg_made), "distance": fg_distance,
                        "long_snapper": snap(), **fourth})
     elif category == "punt":
@@ -1061,7 +1292,7 @@ def apply_drive_detail(
             returner = returner.player_id
             tackler = _coverage_tackle(rng, available, offense_stats["players"], "punt_coverage", (punter,))
             cover = tackler.player_id if tackler else None
-        ledger.append({**base, "snap_in_drive": terminal_snap, "play_type": "punt",
+        ledger.append({**base_kick, "snap_in_drive": terminal_snap, "play_type": "punt",
                        "punter": punter.player_id, "cover_player": cover, "long_snapper": snapper,
                        "punt_yards": gross, "returner": returner, "return_yards": ret,
                        "gross": gross, "enforcement": punt_record["enforcement"],
@@ -1145,7 +1376,78 @@ def apply_drive_detail(
         counter["touchdowns"] += int(record["touchdown"])
         counter["turnovers"] += int(record["turnover"])
 
+    if clock_detail:
+        ledger = _seat_clock_rows(ledger, plays, team.team_id, defense.team_id, drive_no, w5a, kinds, completed,
+                                  terminal, category, remaining_at, kick_stamp, stamps, timeouts_used,
+                                  _clock_rng(seed, event_id=event_id, drive_no=drive_no, offense=team.team_id),
+                                  start_clock, end_clock, overtime, pro_bowl, game_ledger, diagnostics)
     return ledger, call_stats
+
+
+def _row_seconds(row, overtime):
+    """A ledger row's stamp as seconds of the possession countdown."""
+    minutes, seconds = (int(v) for v in row["game_clock"].split(":"))
+    left = minutes * 60 + seconds
+    period = row["period"]
+    if isinstance(overtime, tuple):
+        _, periods, length = overtime
+        number = int(str(period)[2:] or 1) if isinstance(period, str) else 1
+        return (periods - number) * length + left
+    if overtime:
+        return left
+    return (4 - int(period)) * 900 + left
+
+
+def _seat_clock_rows(ledger, plays, offense, defense, drive_no, w5a, kinds, completed, terminal, category,
+                     remaining_at, kick_stamp, stamps, timeouts_used, crng, start_clock, end_clock, overtime,
+                     pro_bowl, game_ledger, diagnostics):
+    """W5a: the drive's rows with its timeout rows and two-minute warning
+    seated. A timeout row is stamped with the clock of the snap that follows
+    its seat (the clock is stopped), the kick's clock after the last snap, or
+    the first snap's clock when seated before it. The warning is stamped
+    2:00 and seated before the first row at or under 2:00 of its period."""
+    has_kick = category in ("field_goal_attempt", "punt")
+    snap_rows = ledger[:plays]
+    after = ledger[plays:]
+    insert = {i: [] for i in range(-1, plays)}
+    off_used, def_used = (int(timeouts_used[0] or 0), int(timeouts_used[1] or 0))
+    callers = [offense] * off_used + [defense] * def_used
+    seats = timeout_seats(crng, w5a, kinds, completed, terminal, has_kick, len(callers), diagnostics)
+    for caller, seat in zip(callers, seats):
+        if seat + 1 < plays:
+            remaining = remaining_at[seat + 1]
+        elif kick_stamp is not None:
+            remaining = kick_stamp
+        else:
+            remaining = remaining_at[0] if remaining_at else int(start_clock)
+        if seat == -1:
+            remaining = remaining_at[0] if remaining_at else int(start_clock)
+        period, game_clock = _period_clock(remaining, closing=remaining <= int(end_clock), overtime=overtime)
+        insert[seat].append({"drive": drive_no, "snap_in_drive": seat + 1, "period": period,
+                             "game_clock": game_clock, "offense": offense, "defense": defense,
+                             "play_type": TIMEOUT_ROW, "team": caller, "result_yards": 0, "touchdown": False,
+                             "turnover": False, "decision_source": LEAGUE_MODEL})
+    rows = list(insert[-1])
+    for index, row in enumerate(snap_rows):
+        rows.append(row)
+        rows += insert[index]
+    rows += after
+    # Two-minute warnings this drive's span crosses, once per period.
+    done = {r.get("period") for r in game_ledger if r.get("play_type") == TWO_MINUTE_WARNING_ROW}
+    for mark in two_minute_marks(overtime, pro_bowl):
+        if not (int(start_clock) > mark >= int(end_clock)):
+            continue
+        period, game_clock = _period_clock(mark, overtime=overtime)
+        if period in done:
+            continue
+        warning = {"drive": drive_no, "snap_in_drive": None, "period": period, "game_clock": game_clock,
+                   "offense": offense, "defense": defense, "play_type": TWO_MINUTE_WARNING_ROW,
+                   "result_yards": 0, "touchdown": False, "turnover": False, "decision_source": LEAGUE_MODEL}
+        at = next((i for i, r in enumerate(rows) if _row_seconds(r, overtime) <= mark), len(rows))
+        warning["snap_in_drive"] = sum(1 for r in rows[:at] if r.get("play_type") in ("pass", "run"))
+        rows.insert(at, warning)
+        done.add(period)
+    return rows
 
 
 POSSESSION_END_REASONS = ("downs", "end_of_half", "end_of_game", "end_of_overtime", "end_of_quarter")
@@ -1205,10 +1507,16 @@ class CoherenceClass:
     gated by the kernel marker in its predicate (from_kernel) and listed only
     from that cohort, so closed cohorts' tables never change."""
 
-    __slots__ = ("name", "group", "measurable", "listed_from")
+    __slots__ = ("name", "group", "measurable", "listed_from", "audit_only")
 
-    def __init__(self, name, group, measurable, listed_from=None):
+    def __init__(self, name, group, measurable, listed_from=None, audit_only=False):
         self.name, self.group, self.measurable, self.listed_from = name, group, measurable, listed_from
+        # Kernel 2014.6 batch B6: an audit-only class is measured and
+        # reported (bands.audit_only_coherence) but is not a violation:
+        # check_ledger leaves it out, so validate_result never refuses a game
+        # on it, until the acceptance sweep reads 0 and it becomes zero
+        # tolerance (plan B6; a later batch flips the attribute).
+        self.audit_only = audit_only
 
     def __repr__(self):
         return "CoherenceClass(%r, %r)" % (self.name, self.group)
@@ -1251,11 +1559,20 @@ _GROUP_PREDICATES = {
     # resample must name a real pool, a real original tuple and a final
     # tuple of the same category feasible at its start spot.
     "resample": lambda r: has_chain_model(r),
+    # Kernel 2014.6 batch B6 (W3, W5a): evaluated on a 2014.6-or-later
+    # result or receipt with the full snap ledger and the timeout state.
+    "b6_ledger": lambda r: from_kernel("2014.6")(r) and has_spots(r) and has_timeouts(r) and _ledger(r),
 }
 
 
 def _registry(rows):
-    return tuple(CoherenceClass(name, group, _GROUP_PREDICATES[group]) for group, names in rows for name in names)
+    out = []
+    for group, names in rows:
+        listed_from = "2014.6" if group == "b6_ledger" else None
+        for name in names:
+            out.append(CoherenceClass(name, group, _GROUP_PREDICATES[group], listed_from=listed_from,
+                                      audit_only=group == "b6_ledger"))
+    return tuple(out)
 
 
 COHERENCE_REGISTRY = _registry((
@@ -1278,6 +1595,11 @@ COHERENCE_REGISTRY = _registry((
     ("chain", ("down_distance_chain_break", "fourth_down_distance_mismatch", "first_downs_ne_ledger",
                "goal_to_go_mismatch")),
     ("resample", ("layout_resample_incoherent",)),
+    # Kernel 2014.6 batch B6 (listed from the 2014.6 cohort; audit-only
+    # until the acceptance sweep reads 0): W3's field goal before fourth down
+    # and W5a's clock-detail records.
+    ("b6_ledger", ("field_goal_before_fourth_down", "kick_clock_shared", "snap_at_zero", "timeout_rows_mismatch",
+                   "two_minute_warning_missing")),
 ))
 
 
@@ -1296,14 +1618,19 @@ CHAIN_CLASSES = _names("chain")
 LEGACY_CLASSES = _names("legacy")
 SPOT_CLASSES = _names("spot", "spot_ledger")
 SPOT_LEDGER_CLASSES = _names("spot_ledger")
+B6_CLASSES = _names("b6_ledger")
+AUDIT_ONLY_CLASSES = tuple(c.name for c in COHERENCE_REGISTRY if c.audit_only)
 
 
-def classes_for_cohort(version=None):
+def classes_for_cohort(version=None, include_audit_only=False):
     """The classes a cohort's audit table lists: every class with no
-    listed_from, plus those listed from that kernel cohort or earlier."""
+    listed_from, plus those listed from that kernel cohort or earlier.
+    Audit-only classes (kernel 2014.6 batch B6) are listed only on request."""
     from .statbook import kernel_at_least
     out = []
     for c in COHERENCE_REGISTRY:
+        if c.audit_only and not include_audit_only:
+            continue
         if c.listed_from is None or (version is not None and kernel_at_least(
                 version, tuple(int(v) for v in c.listed_from.split(".")))):
             out.append(c.name)
@@ -1744,7 +2071,7 @@ def _check_spot_ledger(result, possessions, rows_by_drive, kicks, err):
                 err("label_target_mismatch", where)
 
 
-def check_ledger(result, base=None):
+def check_ledger(result, base=None, audit_only=False):
     """Coherence errors for one closed game, as 'class: detail' strings.
 
     Runs the ledger-free checks on the possession list (or a receipt's compact
@@ -1755,14 +2082,21 @@ def check_ledger(result, base=None):
     Kernel 2014.6 plumbing (batch B1): every audit uses the calibration base
     and cell rules of the result's own kernel_version
     (runtime.calibration_base.base_for_result; an unknown version raises).
-    `base` overrides that only for synthetic tests of a test base."""
+    `base` overrides that only for synthetic tests of a test base.
+
+    Kernel 2014.6 batch B6: the audit-only classes (AUDIT_ONLY_CLASSES) are
+    left out unless `audit_only` is true (audit_only_errors), so no game is
+    refused on them while they are audit-only."""
     from .rules import ot_status
     from .calibration_base import base_for_result
 
     base = base if base is not None else base_for_result(result)
     errors = []
+    skipped = set() if audit_only else set(AUDIT_ONLY_CLASSES)
 
     def err(cls, detail):
+        if cls in skipped:
+            return
         errors.append("%s: %s" % (cls, detail))
 
     possessions = _possessions(result)
@@ -2029,7 +2363,104 @@ def check_ledger(result, base=None):
         _check_layout_resamples(possessions, err, base.field_position())
     if clock_legs:
         _check_clock_legs(result, possessions, rows_by_drive, err, base.field_position())
+    if _GROUP_PREDICATES["b6_ledger"](result) and not skipped >= set(B6_CLASSES):
+        _check_b6_ledger(result, possessions, rows_by_drive, err, base.field_position())
     return errors
+
+
+def audit_only_errors(result, base=None):
+    """The audit-only class findings of one closed game (kernel 2014.6 batch
+    B6), as 'class: detail' strings; empty for a result they do not measure."""
+    return [e for e in check_ledger(result, base, audit_only=True) if e.split(":", 1)[0] in AUDIT_ONLY_CLASSES]
+
+
+def _check_b6_ledger(result, possessions, rows_by_drive, err, fp):
+    """Kernel 2014.6 batch B6 classes (audit-only until the sweep reads 0).
+
+    field_goal_before_fourth_down (W3): a field-goal drive whose kick came on
+    first, second or third down is coherent only when the drive ended its
+    window, or in regulation the kick row's half clock is at most the base's
+    EARLY_FG_SECONDS (a Pro Bowl quarter is its own window), or in overtime
+    the made kick ended the game.
+    kick_clock_shared (W5a): a punt or field-goal row stamped on the clock of
+    the drive's last scrimmage snap.
+    snap_at_zero (W5a): a scrimmage snap stamped 0:00.
+    timeout_rows_mismatch (W5a): a drive's timeout rows per club differ from
+    the possession's charged timeouts.
+    two_minute_warning_missing (W5a): a period whose 2:00 the game's clock
+    crossed has no warning row, or more than one."""
+    from .statbook import kernel_at_least
+    game_type = result.get("game_type", "regular")
+    pro_bowl = game_type == PRO_BOWL
+    overtime_spec = (("OT", _ot_bound(), _ot_length()) if game_type == "postseason" else "OT")
+    early = getattr(fp, "EARLY_FG_SECONDS", None)
+    last = possessions[-1]
+    for p in possessions:
+        number = p["number"]
+        rows = rows_by_drive.get(number, [])
+        scrim = [r for r in rows if r.get("play_type") in ("pass", "run")]
+        kicks = [r for r in rows if r.get("play_type") in ("punt", "field_goal")]
+        half_overtime = p["half"] == "OT"
+        ot = overtime_spec if half_overtime else False
+        if p["category"] == "field_goal_attempt" and early is not None:
+            fd = p.get("fourth_down") or {}
+            if fd.get("down") in (1, 2, 3) and not p.get("half_final"):
+                ok = False
+                if kicks:
+                    period, text = kicks[0]["period"], kicks[0]["game_clock"]
+                    minutes, seconds = (int(v) for v in text.split(":"))
+                    left = minutes * 60 + seconds
+                    if half_overtime:
+                        ok = bool(p.get("fg_made")) and p is last
+                    elif pro_bowl or period in (2, 4):
+                        ok = left <= early
+                if not ok:
+                    err("field_goal_before_fourth_down", "drive %s kicked on down %s" % (number, fd.get("down")))
+        for k in kicks:
+            if scrim and (k["period"], k["game_clock"]) == (scrim[-1]["period"], scrim[-1]["game_clock"]):
+                err("kick_clock_shared", "drive %s %s at %s %s" % (number, k["play_type"], k["period"], k["game_clock"]))
+        for r in scrim:
+            if r.get("game_clock") == "0:00":
+                err("snap_at_zero", "drive %s snap %s" % (number, r.get("snap_in_drive")))
+        timeouts = p.get("timeouts") or [0, 0, 0, 0]
+        rows_to = [r for r in rows if r.get("play_type") == TIMEOUT_ROW]
+        off_rows = sum(1 for r in rows_to if r.get("team") == p["team"])
+        def_rows = len(rows_to) - off_rows
+        if (off_rows, def_rows) != (timeouts[2], timeouts[3]):
+            err("timeout_rows_mismatch", "drive %s rows %s/%s charged %s/%s" % (
+                number, off_rows, def_rows, timeouts[2], timeouts[3]))
+    # Two-minute warnings: one per crossed mark.
+    ledger = result.get("play_ledger") or ()
+    warnings = {}
+    for r in ledger:
+        if r.get("play_type") == TWO_MINUTE_WARNING_ROW:
+            warnings[r.get("period")] = warnings.get(r.get("period"), 0) + 1
+    crossed = set()
+    for half_key, ot in ((1, False), (2, False), ("OT", overtime_spec)):
+        mine = [p for p in possessions if p["half"] == half_key]
+        if not mine:
+            continue
+        marks = two_minute_marks(ot, pro_bowl) if half_key == "OT" else [
+            m for m in two_minute_marks(False, pro_bowl) if (m > 1800) == (half_key == 1)]
+        for mark in marks:
+            if any(p["start_clock"] > mark >= p["end_clock"] for p in mine):
+                crossed.add(_period_clock(mark, overtime=ot)[0])
+    for period in sorted(crossed, key=str):
+        if warnings.get(period, 0) != 1:
+            err("two_minute_warning_missing", "period %s has %d warning rows" % (period, warnings.get(period, 0)))
+    for period in warnings:
+        if period not in crossed:
+            err("two_minute_warning_missing", "period %s warning without a crossing" % period)
+
+
+def _ot_bound():
+    from .rules import RULES
+    return RULES.postseason_ot_period_bound
+
+
+def _ot_length():
+    from .rules import RULES
+    return RULES.postseason_ot_seconds
 
 
 def _check_layout_resamples(possessions, err, fp):

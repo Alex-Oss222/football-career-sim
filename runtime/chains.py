@@ -205,11 +205,14 @@ def last_series_lengths(category, kneels):
     return tuple(n for n in lengths if n >= floor)
 
 
-def chain_feasible(category, *, plays, net, spot, kneel_yards=(), sacks=0, runs=0, terminal_value=0):
+def chain_feasible(category, *, plays, net, spot, kneel_yards=(), sacks=0, runs=0, terminal_value=0,
+                   last_lengths=None):
     """Can a drive of `plays` scrimmage snaps netting `net` from `spot` be
     ordered into a legal chain walk that ends in its category's terminal
     state? A necessary counting and yardage condition, evaluated before the
-    snap values exist:
+    snap values exist. `last_lengths` overrides the category's allowed
+    last-series lengths (kernel 2014.6 W3: a field goal held to fourth down
+    allows exactly three snaps after the last first down, fourth_down_fg_feasible):
 
     * the snaps after the last first down fit the category (punt: 3, so the
       punt comes on 4th down; downs: 4, the last one short; field goal and
@@ -243,7 +246,10 @@ def chain_feasible(category, *, plays, net, spot, kneel_yards=(), sacks=0, runs=
         pre = net - terminal_value
     else:
         pre = net
-    for length in last_series_lengths(category, kneels):
+    lengths = last_series_lengths(category, kneels)
+    if last_lengths is not None:
+        lengths = tuple(n for n in last_lengths if n in lengths)
+    for length in lengths:
         if length > plays:
             continue
         m = plays - length
@@ -266,6 +272,21 @@ def chain_feasible(category, *, plays, net, spot, kneel_yards=(), sacks=0, runs=
                 continue
         return True
     return False
+
+
+# Kernel 2014.6 batch B6 (W3): a field goal kicked on fourth down has exactly
+# three scrimmage snaps after its last first down (downs 1, 2, 3, then the kick).
+FG_FOURTH_DOWN_LAST_SERIES = (3,)
+
+
+def fourth_down_fg_feasible(*, plays, net, spot, kneel_yards=(), sacks=0, runs=0):
+    """Kernel 2014.6 (W3): can a field-goal drive of `plays` snaps netting
+    `net` from `spot` be laid out with the kick on fourth down? The same
+    counting and yardage condition as chain_feasible with the last series
+    held to three snaps (a drive with fewer than three snaps cannot kick on
+    fourth down)."""
+    return chain_feasible("field_goal_attempt", plays=plays, net=net, spot=spot, kneel_yards=kneel_yards,
+                          sacks=sacks, runs=runs, last_lengths=FG_FOURTH_DOWN_LAST_SERIES)
 
 
 # ---- layout ------------------------------------------------------------------
@@ -529,9 +550,13 @@ def _concentrate(kinds, completed, values, n_mov, category, terminal, movable_on
         yield list(values)
 
 
+FG_FOURTH_DOWN_RELAXED = "fg_fourth_down_relaxed"
+
+
 def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, attempts, sacks,
                  kneel_yards, spikes, pass_yards, rush_free, losses, safety_terminal, net, spot,
-                 completion_rate, targets=None, term_down=None, diagnostics=None, usage_values=None):
+                 completion_rate, targets=None, term_down=None, diagnostics=None, usage_values=None,
+                 fg_down=None):
     """The ordered snaps of one resolved drive with a legal chain walk.
 
     `category` is the kernel category (punt, field_goal_attempt, downs,
@@ -559,7 +584,39 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
     splits with their yards gathered onto one snap of each kind, movable
     snaps first (chain_plan_concentrated). If nothing is legal the drive
     keeps an unconstrained order and chain_layout_failed is counted; the
-    coherence classes report the resulting break."""
+    coherence classes report the resulting break.
+
+    Kernel 2014.6 (batch B6, W3): `fg_down` holds a field-goal drive's kick to
+    that down in every tier (the kernel passes 4 when the kick is not early
+    by runtime.field_position.FieldPositionModelV3.early_fg_ok). When no
+    plan admits it, the closable last fallback admits the real down
+    (`term_down`), counted FG_FOURTH_DOWN_RELAXED; the first pass's
+    diagnostics are discarded, so the counters describe the adopted layout.
+    None (every kernel up to 2014.5) is the unchanged search.
+    """
+    args = dict(seed=seed, event_id=event_id, drive_no=drive_no, offense=offense, category=category,
+                td_type=td_type, runs=runs, attempts=attempts, sacks=sacks, kneel_yards=kneel_yards, spikes=spikes,
+                pass_yards=pass_yards, rush_free=rush_free, losses=losses, safety_terminal=safety_terminal, net=net,
+                spot=spot, completion_rate=completion_rate, targets=targets, usage_values=usage_values)
+    if fg_down is not None and category == "field_goal_attempt":
+        scratch = {}
+        held = _drive_layout(term_down=fg_down, diagnostics=scratch, every_tier=True, **args)
+        if held["ok"]:
+            if diagnostics is not None:
+                for name, count in scratch.items():
+                    diagnostics[name] = diagnostics.get(name, 0) + count
+            return held
+        if diagnostics is not None:
+            diagnostics[FG_FOURTH_DOWN_RELAXED] = diagnostics.get(FG_FOURTH_DOWN_RELAXED, 0) + 1
+    return _drive_layout(term_down=term_down, diagnostics=diagnostics, **args)
+
+
+def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, attempts, sacks,
+                  kneel_yards, spikes, pass_yards, rush_free, losses, safety_terminal, net, spot,
+                  completion_rate, targets=None, term_down=None, diagnostics=None, usage_values=None,
+                  every_tier=False):
+    """drive_layout's search (docstring there). `every_tier` keeps the
+    field-goal terminal down in tiers 2 and 3 as well (W3)."""
     from . import play_detail as pd
 
     diagnostics = diagnostics if diagnostics is not None else {}
@@ -586,8 +643,10 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
         {"final": fg_final or base_final,
          "caps": (None, None, None, real[3], None, real[4]) if real else None, "exact": None,
          "spike": True, "alternatives": True},
-        {"final": base_final, "caps": None, "exact": None, "spike": True, "alternatives": True},
-        {"final": base_final, "caps": None, "exact": None, "spike": False, "alternatives": True},
+        {"final": (fg_final or base_final) if every_tier else base_final, "caps": None, "exact": None,
+         "spike": True, "alternatives": True},
+        {"final": (fg_final or base_final) if every_tier else base_final, "caps": None, "exact": None,
+         "spike": False, "alternatives": True},
     )
     usable = attempts - (1 if category == "interception" else 0)
     free_runs = runs - (1 if category == "safety" and safety_terminal and safety_terminal[0] == "run" else 0)

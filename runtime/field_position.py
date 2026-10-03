@@ -1431,6 +1431,24 @@ class FieldPositionModelV3(FieldPositionModel):
         self.H1_LATE_EDGES = tuple(tuple(e) for e in rules["H1_LATE_EDGES"])
         self.TIME_MATCH = (rules["TIME_MATCH_SECONDS"], rules["TIME_MATCH_FALLBACK_SECONDS"])
         self.SPIKE_WINDOW = rules["SPIKE_WINDOW"]
+        # Kernel 2014.6 batch B6 (W3, W5a): the early-field-goal bound and the
+        # clock-detail tables (gap seconds, kick lengths, timeout seats) are
+        # the artifact's constants block (specification section 4; W5a
+        # table cells are [sum of seconds, snaps]); read, never typed.
+        self.EARLY_FG_SECONDS = rules["EARLY_FG_SECONDS"]
+        constants = data.get("constants") or {}
+        if constants.get("early_field_goal", {}).get("specification") != self.EARLY_FG_SECONDS:
+            raise ValueError("early field-goal constant differs between the artifact and the specification")
+        self.clock_detail = constants.get("w5a") or {}
+        self._kick_length = {}
+        for kick in self.clock_detail.get("kicks", ()):
+            seconds = snaps = 0
+            for key, (total, n) in self.clock_detail["kick_length_seconds"].items():
+                if key.split("|", 1)[0] == kick:
+                    seconds += total
+                    snaps += n
+            self._kick_length[kick] = int(round(seconds / snaps)) if snaps else 0
+        self._fg4_cache = {}
         self._rungs_cache = {}
         self._any_start_cache = {}
         self._zone_cache = {}
@@ -1518,21 +1536,89 @@ class FieldPositionModelV3(FieldPositionModel):
             return True
         return left + t[T["last_spike_to_end"]] <= self.SPIKE_WINDOW
 
+    # ---- W3: early field goals (kernel 2014.6, batch B6) ------------------------------------
+
+    KICK_CATEGORY = {"field_goal_attempt": "field_goal", "punt": "punt"}
+
+    def kick_length(self, category):
+        """Mean seconds from a drive's last scrimmage snap to its kick snap,
+        pooled over the last snap's kind, by kick (the artifact's W5a
+        kick-length table); 0 for a category that is not a kick."""
+        return self._kick_length.get(self.KICK_CATEGORY.get(category), 0)
+
+    def kick_snap_clock(self, category, t, window):
+        """The window clock at a kick drive's kick snap: the window less the
+        drive's own seconds, plus the kick length (clipped to the drive's own
+        seconds, so a short drive's kick is never stamped before its start)."""
+        own = self.own_seconds(t)
+        return window - own + min(self.kick_length(category), own)
+
+    def early_fg_ok(self, t, window, overtime, ends_window, walk_off=False):
+        """W3: may this field-goal tuple kick before fourth down? Yes when the
+        drive ends its window; or, in regulation, when its kick-snap clock is
+        at most EARLY_FG_SECONDS (43 s, the pre-divergence maximum,
+        2012_15_SF_NE); or, in overtime, when a made kick ends the game
+        (`walk_off`, the kernel's per-game context)."""
+        if ends_window:
+            return True
+        if overtime:
+            return bool(walk_off)
+        return self.kick_snap_clock("field_goal_attempt", t, window) <= self.EARLY_FG_SECONDS
+
+    def fourth_down_fg_feasible(self, t, spot):
+        """W3: can this field-goal tuple, replayed from `spot`, be laid out
+        with the kick on fourth down (runtime.chains.fourth_down_fg_feasible)?
+        Memoised per tuple and spot under the base."""
+        key = (id(t), spot)
+        try:
+            return self._fg4_cache[key]
+        except KeyError:
+            pass
+        T = self.T
+        net = self.adapt("field_goal_attempt", t, spot)[0]
+        ok = chains.fourth_down_fg_feasible(plays=t[T["plays"]], net=net, spot=spot, kneel_yards=t[T["kneel_yards"]],
+                                            sacks=t[T["sacks"]], runs=t[T["runs"]])
+        self._fg4_cache[key] = ok
+        return ok
+
+    OVERTIME_REGIMES = ("ot", "fit_ot")
+
+    def fg_tuple_admitted(self, t, spot, window, regime, ends_window, extra):
+        """W3 (profile flag early_fg_v2 in `extra`): a field-goal tuple is
+        admitted only when its kick is early by early_fg_ok or a fourth-down
+        layout exists at the spot. The specification names tuples whose real
+        kick came before fourth down; the same test is applied to a tuple
+        that really kicked on fourth down, because relocation keeps its end
+        spot and can hand a three-snap drive more than its opening distance
+        (a first down, so no fourth-down kick): the sweep found every W3
+        fallback in such tuples, and the kernel holds every non-early kick
+        to fourth down whatever the real down."""
+        if not (extra or {}).get("early_fg_v2"):
+            return True
+        if t is ZERO_TUPLE or t[self.T["term_down"]] not in (1, 2, 3, 4):
+            return True
+        if self.early_fg_ok(t, window, regime in self.OVERTIME_REGIMES, ends_window,
+                            (extra or {}).get("walk_off_fg", False)):
+            return True
+        return self.fourth_down_fg_feasible(t, spot)
+
     def ends_window(self, regime, category, t):
         if str(regime).startswith("fit"):
             return False
         return FieldPositionModel.ends_window(self, regime, category, t)
 
-    def _dynamic(self, tuples, category, regime, window):
+    def _dynamic(self, tuples, category, regime, window, spot=None, extra=None):
         """Clock filters of a schema-3 regime: a window-ending tuple (a real
         final in h1_late and late; a clock final in overtime) must be time
         feasible; any other tuple must fit (s < w); a fit regime ("fit_h1",
         "fit_late", "fit_ot") takes non-final tuples only; the late terminal
         bucket rule applies in late and fit_late; the spike rule applies in
-        every regime."""
+        every regime. Batch B6 (W3): with `spot` and `extra` holding
+        early_fg_v2, a field-goal tuple is admitted by fg_tuple_admitted."""
         T = self.T
         fit = str(regime).startswith("fit")
         late = regime in ("late", "fit_late")
+        early_fg = category == "field_goal_attempt" and spot is not None and (extra or {}).get("early_fg_v2")
         out = []
         for t in tuples:
             if fit:
@@ -1553,6 +1639,8 @@ class FieldPositionModelV3(FieldPositionModel):
             if late and category in FOURTH_DOWN_CATEGORIES and terminal_bucket(bucket_left) != t[T["term_bucket"]]:
                 continue
             if not self.spike_ok(t, left):
+                continue
+            if early_fg and not self.fg_tuple_admitted(t, spot, window, regime, ends, extra):
                 continue
             out.append(t)
         return tuple(out)
@@ -1633,25 +1721,41 @@ class FieldPositionModelV3(FieldPositionModel):
         self._rungs_cache[key] = out
         return out
 
-    def eligible(self, pool_id, category, spot, regime, window, match=None):
+    def eligible(self, pool_id, category, spot, regime, window, match=None, extra=None):
         """Feasible tuples by the ladder (same bin, then same zone). With a
         time match the rungs are the h1_late union's, cached per (category,
         spot) and filtered by |t0 - w| <= match at draw time (bounded
-        cache); the late need-union rungs are unchanged."""
+        cache); the late need-union rungs are unchanged. `extra` carries the
+        per-game context the clock filters read (W3)."""
         if match is not None:
             for rung in self._rungs(("h1_late_union", None), category, spot):
-                feasible = self._dynamic(self._matched(rung, window, match), category, regime, window)
+                feasible = self._dynamic(self._matched(rung, window, match), category, regime, window, spot, extra)
                 if feasible:
                     return feasible
             return ()
-        return FieldPositionModel.eligible(self, pool_id, category, spot, regime, window)
+        # The ladder of FieldPositionModel.eligible, with the W3 context.
+        for rung in self._rungs(pool_id, category, spot):
+            feasible = self._dynamic(rung, category, regime, window, spot, extra)
+            if feasible:
+                return feasible
+        if NEED_UNION_RUNGS and regime == "late" and pool_id[0] == "late":
+            union = ("late_union", cell_need(pool_id[1]))
+            for rung in self._rungs(union, category, spot):
+                feasible = self._dynamic(rung, category, regime, window, spot, extra)
+                if feasible:
+                    return feasible
+            feasible = self._dynamic(self._any_start(union, category, spot), category, regime, window, spot, extra)
+            if feasible:
+                return feasible
+        return ()
 
-    def draw_options(self, pool_id, regime, spot, window, match=None):
+    def draw_options(self, pool_id, regime, spot, window, match=None, extra=None):
         if match is not None:
             counts = self._window_counts(window, match)
         else:
             counts = self._counts(pool_id)
-        options = {c: self.eligible(pool_id, c, spot, regime, window, match) for c in CATEGORIES if counts.get(c, 0)}
+        options = {c: self.eligible(pool_id, c, spot, regime, window, match, extra)
+                   for c in CATEGORIES if counts.get(c, 0)}
         return counts, options
 
     def _reference(self, pool_id):
@@ -1750,7 +1854,7 @@ class FieldPositionModelV3(FieldPositionModel):
 
     def _draw_from(self, rng, pool_id, regime, spot, window, edge, timeouts=None, key="def", diagnostics=None,
                    exclude=(), clock_regime=None, extra=None, match=None, transfer=None):
-        counts, options = self.draw_options(pool_id, clock_regime or regime, spot, window, match)
+        counts, options = self.draw_options(pool_id, clock_regime or regime, spot, window, match, extra)
         options = {c: (() if c in exclude else v) for c, v in options.items()}
         if ZONE_CONDITIONING and regime in self.TIMEOUT_REGIMES:
             ratio = self.zone_likelihood(self._reference(pool_id), self.zone(spot))
@@ -1964,7 +2068,7 @@ class FieldPositionModelV3(FieldPositionModel):
             self._snap_range = out
         return self._snap_range
 
-    def _resample_rungs(self, drawn, spot, regime, window):
+    def _resample_rungs(self, drawn, spot, regime, window, extra=None):
         """(pool id, match width, feasible tuples) in widening order for a
         layout resample: the drawn rung (its time match), then, schema 3
         (batch B5, found by the A6 sweep: a deep start can leave a thin cell
@@ -1973,31 +2077,32 @@ class FieldPositionModelV3(FieldPositionModel):
         need union and any start of that union, or any start of the drawn
         pool. Category, regime and clock filters never change."""
         pool_id, category, match = drawn.pool_id, drawn.category, drawn.match_width
-        yield pool_id, match, self.eligible(pool_id, category, spot, regime, window, match)
+        yield pool_id, match, self.eligible(pool_id, category, spot, regime, window, match, extra)
         kind = pool_id[0]
         if kind == "h1_late":
             if match is not None:
-                yield pool_id, None, self.eligible(pool_id, category, spot, regime, window)
-            yield ("h1_late_union", None), None, self.eligible(("h1_late_union", None), category, spot, regime, window)
+                yield pool_id, None, self.eligible(pool_id, category, spot, regime, window, extra=extra)
+            yield (("h1_late_union", None), None,
+                   self.eligible(("h1_late_union", None), category, spot, regime, window, extra=extra))
             union = ("h1_late_union", None)
         elif kind in ("late", "late_union"):
             union = ("late_union", cell_need(pool_id[1]) if kind == "late" else pool_id[1])
-            yield union, None, self.eligible(union, category, spot, regime, window)
+            yield union, None, self.eligible(union, category, spot, regime, window, extra=extra)
         else:
             union = pool_id
-        yield union, None, self._dynamic(self._any_start(union, category, spot), category, regime, window)
+        yield union, None, self._dynamic(self._any_start(union, category, spot), category, regime, window, spot, extra)
 
-    def resample_drive(self, rng, drawn, spot, window, exclude=(), timeouts=None):
+    def resample_drive(self, rng, drawn, spot, window, exclude=(), timeouts=None, extra=None):
         """resample_drive on the drawn rung, time match and regime, widening
         to the same category's wider pools when the rung has no other legal
         drive (_resample_rungs); with `timeouts`, the W5b preference applies
-        to the candidates."""
+        to the candidates. `extra` is the kernel's per-game context (W3)."""
         if drawn.pool_id is None or drawn.tuple is ZERO_TUPLE:
             return None
         regime = drawn.clock_regime or drawn.regime
         skip = [drawn.tuple] + list(exclude)
         candidates, pool_id, match = [], drawn.pool_id, drawn.match_width
-        for pool_id, match, rung in self._resample_rungs(drawn, spot, regime, window):
+        for pool_id, match, rung in self._resample_rungs(drawn, spot, regime, window, extra):
             candidates = [t for t in rung if not any(t is x or t == x for x in skip)]
             if drawn.consumes_window:
                 candidates = [t for t in candidates if self.ends_window(regime, drawn.category, t)]

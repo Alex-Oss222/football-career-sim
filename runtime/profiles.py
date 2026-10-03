@@ -30,6 +30,29 @@ base (U1 = (b)), registered by batch B5 with these flags:
 - usage_2014_6: the usage shares, rank shapes and top-share centres of the
   bound base (credit only); without it the 2012 base's.
 
+Batch B6 (drive-internal records) adds three flags, each guarded by the
+profile alone (the base serves the constants, the flag decides whether the
+kernel reads them):
+
+- early_fg_v2 (W3; changes results on the possession and layout streams): a
+  field-goal drive kicks on fourth down unless the kick is early by the
+  frozen rule (runtime.field_position.FieldPositionModelV3.early_fg_ok): the
+  drive ends its window, or in regulation its kick-snap clock is at most
+  EARLY_FG_SECONDS, or in overtime the kick ends the game. Otherwise a
+  field-goal tuple with term_down < 4 must admit a fourth-down layout before
+  it is drawn, and the layout search is held to fourth down in every tier,
+  with a closable last fallback to the real down (counted
+  fg_fourth_down_relaxed).
+- clock_detail_v1 (W5a; records only): snap stamps on the
+  public-clock-detail-v1 substream from the base's gap and kick-length
+  tables, timeout rows seated after clock-running snaps and two-minute
+  warning rows (runtime.play_detail). No draw reads them.
+- substitution_record (W2a; records only): each in-game removal's record
+  names the entrant, the vacated and entering slots, slot moves, emergency
+  fills, specialist and returner changes, computed through the pure
+  participation path (runtime.participation.slot_lineup); full receipts
+  carry it. Credit and exposure are unchanged.
+
 A base names the flags its readers require (CalibrationBase.requires_flags):
 a profile resolving on it must hold them, and a profile holding base_2014_6
 or regimes_v3 on a base that does not serve them fails closed.
@@ -90,7 +113,10 @@ class Profile:
 # Flags tied to a base's reader schema; injury_2014_6 and usage_2014_6 are
 # switches the profile may hold on any base that carries those blocks.
 BASE_FLAGS = frozenset({"base_2014_6", "regimes_v3"})
-FLAGS = BASE_FLAGS | {"injury_2014_6", "usage_2014_6"}
+# Batch B6 mechanism flags (W3, W5a, W2a); each needs a schema-3 base for
+# its constants, which the kernel checks when the flag is held.
+B6_FLAGS = frozenset({"early_fg_v2", "clock_detail_v1", "substitution_record"})
+FLAGS = BASE_FLAGS | {"injury_2014_6", "usage_2014_6"} | B6_FLAGS
 
 
 def _legacy_base():
@@ -100,7 +126,8 @@ def _legacy_base():
 
 PROFILE_2014_5 = Profile("2014.5", base="2012", cell_rules="2013.7", strength="honours-production-v3")
 PROFILE_2014_6 = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength="honours-production-v3",
-                         flags=frozenset({"base_2014_6", "regimes_v3", "injury_2014_6", "usage_2014_6"}),
+                         flags=frozenset({"base_2014_6", "regimes_v3", "injury_2014_6", "usage_2014_6",
+                                          "early_fg_v2", "clock_detail_v1", "substitution_record"}),
                          record_base=True)
 
 PROFILES = {p.kernel_version: p for p in (PROFILE_2014_5, PROFILE_2014_6)}

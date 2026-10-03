@@ -1030,6 +1030,24 @@ def _audit_field_position_v3(receipts, base):
                 scrambles += bool(row.get("scramble"))
     add("QB scramble share of QB carries (label stream)", scrambles / qb_carries if qb_carries else None,
         _pooled(centres["scramble_share_of_qb_rushes"]), None, graded=False)
+    # Batch B6 (W5a, informational): spikes stamped with more than the spike
+    # window left in their half (regulation) or period (overtime), from the
+    # clock-detail stamps of full receipts.
+    spike_rows = outside = 0
+    for receipt in receipts:
+        postseason = receipt.get("game_type") == "postseason"
+        for row in receipt.get("play_ledger", ()):
+            if row.get("play_type") != "pass" or not row.get("spike"):
+                continue
+            spike_rows += 1
+            minutes, seconds = (int(v) for v in str(row.get("game_clock", "0:00")).split(":"))
+            left = minutes * 60 + seconds
+            period = row.get("period")
+            if not isinstance(period, str):
+                left += 900 if int(period) in (1, 3) else 0
+            outside += left > window
+    add("spikes stamped with more than %d s left in the half (share, informational)" % window,
+        outside / spike_rows if spike_rows else None, 0.0, None, events=spike_rows, graded=False)
     fourth = [d["chains"] for d in spotted if d.get("chains")]
     attempts, games = centres["fourth_down_per_team_game"]["pooled"]
     conversions = centres["fourth_down_conversion"]["pooled"][0]
@@ -1141,5 +1159,30 @@ def coherence(receipts, cohort=None):
             if cls in measurable:
                 measurable[cls] += 1
         errors += check_ledger(receipt)
+    counts = coherence_counts(errors)
+    return checked, [(cls, counts.get(cls, 0), measurable[cls]) for cls in listed]
+
+
+def audit_only_coherence(receipts, cohort=None):
+    """Kernel 2014.6 batch B6: the audit-only classes' counts over the
+    receipts, (receipts checked, [(class, count, measurable receipts)]) for
+    the cohort's audit-only classes (runtime.play_detail.AUDIT_ONLY_CLASSES
+    listed from that cohort). Findings, never violations: they gate nothing
+    until the class leaves audit-only status."""
+    from .play_detail import audit_only_errors, classes_for_cohort, coherence_counts, measurable_classes
+
+    cohort_base(receipts, cohort)
+    listed = [c for c in classes_for_cohort(cohort, include_audit_only=True) if c not in classes_for_cohort(cohort)]
+    errors = []
+    checked = 0
+    measurable = {cls: 0 for cls in listed}
+    for receipt in receipts:
+        if not receipt.get("drives"):
+            continue
+        checked += 1
+        for cls in measurable_classes(receipt):
+            if cls in measurable:
+                measurable[cls] += 1
+        errors += audit_only_errors(receipt)
     counts = coherence_counts(errors)
     return checked, [(cls, counts.get(cls, 0), measurable[cls]) for cls in listed]
