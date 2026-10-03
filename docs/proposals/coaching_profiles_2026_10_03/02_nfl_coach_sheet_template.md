@@ -1,226 +1,205 @@
-# Proposed template: Alex Stone's NFL coaching record
+# Alex Stone
 
-**Purpose:** A career reference answering where he worked, what he actually controlled, what those teams produced, and what changed during his tenure. The coaching profile explains his approach. The performance review judges the work and records employment decisions.
+## Head coach dossier
 
-**Draft for selection, not an adopted replacement.** Filled examples below come from the existing record. Brackets identify reusable fields. A finished version should remove editorial instructions and unused fields.
+Jacksonville Jaguars · September 28, 2014 · Age 51  
+Second season in Jacksonville; third season with NFL head-coaching responsibility, including New Orleans in 2012.
 
-## 1. Identity and coverage
+*Proposed format for a general manager's file. The assessment is editorial, based on the established career. It records no new candidacy, reference check or hiring decision.*
 
-**Alex-Lamar Stone, professionally Alex Stone**  
-**Current position:** Jacksonville Jaguars head coach  
-**Career information through:** [one exact date]  
-**Completed-season statistics through:** 2013  
-**Current-season statistics through:** [latest completed game, date and opponent]
+### The case for an interview
 
-| Field | Populated example and reusable treatment |
-|---|---|
-| Date of birth | September 21, 1963, Miami, Florida |
-| Age | 51 if the information cutoff is September 28, 2014; 50 at the older August 4 cutoff. Calculate from the chosen date. |
-| Jacksonville appointment | Accepted January 15, 2013 |
-| Completed coaching experience | Through 2013: 17 coaching seasons, including 13 NFL seasons and two NFL head-coaching seasons |
-| Current year | 2014 is his second Jacksonville season and third NFL season with head-coach responsibility, including the 2012 interim appointment |
-| Playing background | Miami tight end, 1982-1985; San Diego Chargers tight end, 1986-1995 |
-| Education | BS, Miami, 1986; MBA, San Diego, 1996; PhD in Exercise Physiology, Miami, 2002 |
-| Family and languages | [Brief established facts, when useful. Do not infer changes from the passage of time.] |
+Stone has handled two substantially different head-coaching assignments. In New Orleans he kept an established team functioning through Sean Payton's suspension while retaining the offensive calls. In Jacksonville he selected a staff, worked within a new general manager's authority and took a 2-14 club to the playoffs in his first year. That gives a hiring club more to examine than his offensive reputation or his years around successful coaches.
 
-The information date applies to the whole page. If statistics lag a later appointment or contract event, state the statistical cutoff separately. Do not retain an August age beside September results without explaining the dates.
+The attraction is an offensive head coach with experience organizing the whole team, a detailed interest in teaching and a demonstrated willingness to leave final personnel authority with the GM. His Jacksonville arrangement has room for strong coordinators. He has given younger players jobs without requiring all of them to arrive as complete players.
 
-## 2. Career chronology: title, work, caller
+The most important unfinished part of the case is quarterback development. His New Orleans record includes extensive work with Brees in an offense Payton had already established. Jacksonville offers the more relevant test for a club expecting its next coach to bring along an inexperienced starter. Cousins won the competition and produced a usable first season. Eighteen interceptions and 38 sacks left the question open. The first four games of 2014 add evidence; they do not yet supply a second full year.
 
-| Seasons or effective dates | Organization and title | Actual responsibilities and calling assignment |
-|---|---|---|
-| 1996-1997 | Miami, offensive graduate assistant | Offensive preparation and teaching while undertaking doctoral study |
-| 1998 | No coaching appointment | Doctoral qualifying examinations and proposal work; not a coaching season |
-| 1999 | Miami Dolphins, offensive quality control / assistant quarterbacks | Opponent tendencies, quarterback-room support and passing-game preparation under Jimmy Johnson |
-| 2000 | University of San Diego, offensive coordinator / quarterbacks | Offensive caller under Kevin McGarry |
-| 2001 | University of San Diego, assistant head coach / offensive coordinator / quarterbacks | Offensive caller; broader offensive practice and game-management responsibilities |
-| 2002-2004 | New England, defensive assistant | Secondary work under Eric Mangini within Romeo Crennel's defense |
-| 2005-2006 | New England, tight ends | Position coaching |
-| 2007-2008 | New England, passing-game coordinator / tight ends | Passing preparation and selected preseason calls; Josh McDaniels called regular-season games |
-| 2009 to early 2011 | New Orleans, offensive coordinator | Consolidated the weekly offensive plan; Sean Payton retained offensive authority and called games |
-| 2011, from Week 6 | New Orleans, offensive coordinator | Took over offensive calls during Payton's injury game and remained primary caller through the postseason; Payton continued contributing |
-| April 16, 2012 through the 2012 playing season | New Orleans, interim head coach / offensive coordinator | Full team responsibility and offensive calling; season ended January 13, 2013. Administrative end date remains unspecified. |
-| January 15, 2013 onward | Jacksonville, head coach | Program leadership, staff selection, depth chart, game management and offensive calling; coordinators' responsibilities dated below |
-| [Date range] | [Next appointment or material responsibility change] | [Actual scope, caller, reporting line and source] |
+Stone merits serious consideration for a job built around offensive coaching, player development and a clear GM-coach partnership. The interview needs to establish how his operation would work with the roster and assistants actually available to the hiring club. His current staff cannot be treated as a package that automatically follows him.
 
-Split a row when responsibilities materially change. An offensive-coordinator title does not establish that he called plays. A team championship during an assistant appointment is not a head-coaching championship.
+### Record at a glance
 
-The [prehire dossier](https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/library/alex_stone_character_dossier_pre_hire.md) supplies the earlier chronology, including Stone's fictional appointments. Its January 2013 observations remain a record of what was known then, not a current evaluation of his Jacksonville work.
-
-## 3. Head-coaching results
-
-### Completed seasons
-
-| Season | Club and appointment | Regular season | Pct. | Division finish | Playoffs | Postseason finish |
-|---|---|---:|---:|---|---:|---|
-| 2012 | New Orleans, interim HC / OC | 12-4 | .750 | Second, NFC South | 1-1 | Divisional round |
-| 2013 | Jacksonville, HC | 10-6 | .625 | Second, AFC South | 1-1 | Divisional round |
-| Completed-season total | Two seasons, two clubs | 22-10 | .688 | Two playoff appearances | 2-2 | 24-12 including playoffs |
-| [Next completed year] | [Club; interim or permanent] | [W-L-T] | [Pct.] | [Finish] | [W-L] | [Last round reached] |
-
-### Current season, kept separate
-
-**Example through September 28, 2014:** Jacksonville was 3-1 after its Week 4 game at San Diego. This is an unfinished season, separate from the completed-season résumé.
-
-| Active season | Through | Regular season | Games completed | Postseason |
+| Season | Appointment | Regular season | Playoffs | Finish |
 |---|---|---:|---:|---|
-| 2014 | Week 4, September 28 | 3-1 | 4 | Not yet reached |
+| 2012 | New Orleans, interim HC / OC | 12-4 | 1-1 | Second in NFC South; Divisional round |
+| 2013 | Jacksonville, HC | 10-6 | 1-1 | Second in AFC South; Divisional round |
+| 2014 | Jacksonville, HC | 3-1 through Week 4 | Not reached | Season in progress |
 
-At this cutoff, the all-games-to-date regular-season career record is **25-11, .694**, calculated from 22-10 plus 3-1. Label it separately from the completed-season total. The postseason career record remains 2-2.
+Completed seasons: **22-10**, .688; postseason **2-2**. Including the current four games: **25-11**, .694, in the regular season. The 2013 playoff win was 38-14 at Kansas City; the season ended with a 20-13 loss at Tennessee. Preseason is excluded throughout.
 
-| Current production | Through four games |
-|---|---:|
-| Jacksonville points scored | 105 |
-| Opponent points scored | 82 |
-| Jacksonville giveaways | 5 |
-| Jacksonville takeaways | 6 |
-| Jacksonville sacks allowed | 8 |
-| Jacksonville defensive sacks | 10 |
-| Jacksonville third downs | 25/60, 41.7% |
-| Opponent third downs | 34/68, 50.0% |
+Stone was a 2013 Coach of the Year finalist. Rex Ryan won. His three championships as an assistant came with New England in the 2003 and 2004 seasons and New Orleans in 2009.
 
-Point differential is plus-23; turnover differential is plus-1. These four-game totals are not annual projections. Source: [2014 statistics through Week 4](https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2014/05_Regular_Season/Statistics/records/team_stats.md) and [Week 4 game record](https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2014/05_Regular_Season/Games/Week_04/output.md).
+## What he has actually been responsible for
 
-Winning percentage is `(wins + 0.5 × ties) / games`. Preseason games never enter these totals. A missed postseason is “Did not qualify,” not a playoff loss. An unfinished season has no final division finish, playoff result or full-season rank.
+Stone's offensive-coordinator title in New Orleans covered more years than his time as the primary caller. From 2009 into 2011, he organized the week's offensive work under Payton: the run and pass contributions, situational sections, installation and final menu. Payton called games. Stone took over the calls during Payton's Week 6 injury in 2011 and continued through the postseason, with Payton still contributing and Carmichael and Kromer retaining substantial work.
 
-## 4. The jobs he inherited
+His interim appointment began April 16, 2012. He ran meetings, practice allocation, playing time, ordinary discipline and game management while remaining offensive coordinator and caller. Spagnuolo controlled and called the defense. McMahon ran the technical special-teams operation. Final acquisition, contract and draft authority stayed with the personnel department.
 
-Repeat this account for each head-coaching appointment. Compare the club before his arrival with the same club under his direction. Keep the inherited personnel, staff and operating conditions visible.
+Jacksonville tested staff construction and a permanent program. Stone calls the offense; Tice organizes its weekly preparation. Crennel coordinated and called the defense through Week 3 of 2014. Stone took the defensive calls in Week 4, with Crennel retaining coordination and transmitting the calls. Westhoff has run special teams since February 11, 2014.
 
-### New Orleans, 2012: an interim assignment in an established contender
+Calling both units increases the work reaching Stone during a game. The preparation record describes rehearsing the defensive relay. What remains unresolved is how he divides his attention between possessions, who filters the information reaching him and how much of the next series each coordinator can prepare without his involvement. The Week 4 record cannot establish the quality of his defensive calls.
 
-Stone's preceding job was offensive coordinator for a Saints team that went 13-3 in 2011. That offense recorded 547 points and 7,474 yards. He had already called its offense from the Week 6 injury to Payton through the postseason.
+## The two jobs he inherited
 
-In 2012 he assumed whole-team responsibility during Payton's suspension. He retained a veteran quarterback in Drew Brees, an established offensive system and substantial staff continuity. Pete Carmichael Jr. handled extensive weekday passing-game work; Aaron Kromer remained central to the offensive line and running game. Steve Spagnuolo controlled and called the defense. Greg McMahon controlled the technical special-teams operation. Stone did not hold final acquisition, contract or draft authority.
+### New Orleans: operating a contender through disruption
 
-The team finished 12-4, won a Wild Card game and lost in the Divisional round on January 13, 2013. The record establishes a successful interim season. It does not establish that Stone rebuilt a losing club, assembled that roster, or designed all three phases himself. The supplied history does not identify the Divisional opponent or score; leave them unfilled.
+The Saints entered 2012 after a 13-3 season. Brees, the offensive system and much of the staff were already in place. Stone had been part of that operation since 2009. His 12-4 interim season and playoff win demonstrate that he could lead it through a full playing year in Payton's absence.
 
-### Jacksonville, 2013: first permanent head-coaching appointment
+The established 2012 figures are approximate: 505 points, 6,980 offensive yards and 18 offensive turnovers; Brees threw about 42 touchdowns and 12 interceptions. The defensive baseline is approximately 350 points and 5,900 yards allowed, with 29 takeaways and 38 sacks. Those figures belong to this career. They are not the real Saints' 7-9 season.
 
-Jacksonville's 2012 team, before Stone's appointment, finished 2-14. Those losses are the starting condition of the job he accepted, not part of his head-coaching record. He accepted on January 15, 2013. His first Jaguars team finished 10-6 and reached the Divisional round.
+Stone led a contender through disruption with considerable inherited support. Payton had established the offense; Brees was already an accomplished quarterback. The next question is how Stone used his authority: which parts he changed, which he left alone and how he judged whether the existing work was holding up. The season record alone cannot supply that account.
 
-| Measure | Jacksonville before Stone, 2012 | Jacksonville under Stone, 2013 | Change |
-|---|---:|---:|---:|
-| Regular-season wins | 2 | 10 | +8 |
-| Playoff wins | 0; did not qualify | 1 | +1 |
-| Team points scored | 255 | 356 | +101 |
-| Team points allowed | 444 | 346 | -98 |
-| Point differential | -189 | +10 | +199 |
-| Net offensive yards | 4,788 | 5,777 | +989 |
-| Net passing yards | 3,419 | 3,734 | +315 |
-| Rushing yards | 1,369 | 2,043 | +674 |
-| Net yards allowed | 6,088 | 5,349 | -739 |
-| Net passing yards allowed | 3,832 | 3,506 | -326 |
-| Rushing yards allowed | 2,256 | 1,843 | -413 |
-| Offensive third-down rate | 64/216, 29.6% | 88/222, 39.6% | +10.0 percentage points |
-| Opponent third-down rate | 89/215, 41.4% | 67/199, 33.7% | -7.7 percentage points |
-| Giveaways | 26 | 25 | -1 |
-| Takeaways | 23 | 15 | -8 |
-| Turnover differential | -3 | -10 | -7 |
-| Sacks allowed | 50 | 38 | -12 |
-| Sacks made | 20 | 23 | +3 |
+### Jacksonville: building after 2-14
 
-Both columns cover sixteen regular-season games; playoff wins are the separately labeled exception. Changes are arithmetic, with rate changes calculated before rounding. The 2012 column is verified historical Jacksonville before Stone's appointment, from the club's [2012 statistics](https://www.jaguars.com/team/stats/2012/reg) and [2012 Season Review](https://res.cloudinary.com/nflclubs/image/upload/jaguars/xdgabyhr51vldqffuruv.pdf), PDF pages 4, 5 and 35. The 2013 column comes from this career's completed season, not real-world 2013 Jacksonville. The table establishes how team output changed, not how much of each change Stone personally caused.
+Stone accepted the Jacksonville job January 15, 2013. The quarterback position was unsettled. Gabbert had started ten games in 2012 and Henne six. The line allowed 50 sacks. Injuries had disrupted the backfield and offensive line, and the defense finished with 20 sacks. There were returning pieces to work with, including Shorts, Blackmon, Lewis, Monroe and Jones-Drew. Describing it as an empty roster would overlook those players.
 
-| Comparison | Inherited situation / appointment terms | First season under Stone | What the comparison establishes |
-|---|---|---|---|
-| Postseason | Did not qualify | Beat Kansas City 38-14; lost at Tennessee 20-13 | A playoff berth and one playoff win in his first Jacksonville year |
-| Quarterback situation | No guaranteed job for Gabbert and no mandate to draft a quarterback second overall | Caldwell acquired Cousins for the 2014 second-round pick and traded Gabbert for C.J. Wilson; Cousins won the competition and started throughout 2013 | Acquisition by the GM, competition and deployment by the coaching staff |
-| Offensive personnel | Shorts, Blackmon, Lewis and Monroe were already present; Jones-Drew had played only six games in 2012; protection and line depth needed work | Lane Johnson started at right tackle; Kelce held a role; undrafted Thielen became WR2 | Added personnel contributed alongside inherited players; the roster was not empty of useful players |
-| Defense and special teams | Posluszny and Mincey were returning defenders; Scobee and Anger were returning specialists; the defense had made 20 sacks and 23 takeaways | Crennel called the defense; Poyer, Moore and Rambo held roles; Lowry completed the season before leaving January 12, 2014 | Distinguish inherited resources, new coaching work and subsequent turnover |
-| Program operation | Ownership sought whole-program leadership for a 2-14 club and a staff built from a near-clean reset | The appointed staff completed the season; the January review records a functioning program and a settled quarterback competition | Evidence beyond the final record |
+Caldwell acquired Cousins for Jacksonville's 2014 second-round pick and sent Gabbert to Green Bay for C.J. Wilson. Stone and his staff conducted the quarterback competition and selected Cousins. Lane Johnson started at right tackle. Kelce, Poyer, Sio Moore and Rambo held roles; Thielen became WR2 after arriving undrafted. The personnel department's acquisitions and the coaches' deployment of those players are both part of the improvement.
 
-The [January 15 roster inventory](https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2013/offseason/initial_roster.md) and [January 7 offensive assessment](https://www.jaguars.com/news/roster-breakdown-offense-9301393) establish the inherited personnel and problems. The [owner and GM review](https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2013/season_review/owner_and_gm_review.md) supplies the first-year roster and program examples. Cousins finished with 3,981 passing yards, 23 touchdowns, 18 interceptions and 38 sacks. Jacksonville also lost three games by at least 28 points. Those results explain why a substantially better record still left protection, ball security and competitive consistency under review.
+| Regular-season measure | Jacksonville before Stone, 2012 | Jacksonville under Stone, 2013 |
+|---|---:|---:|
+| Record | 2-14 | 10-6 |
+| Points scored / allowed | 255 / 444 | 356 / 346 |
+| Point differential | -189 | +10 |
+| Net offense / net yards allowed | 4,788 / 6,088 | 5,777 / 5,349 |
+| Net passing yards / allowed | 3,419 / 3,832 | 3,734 / 3,506 |
+| Rushing yards / allowed | 1,369 / 2,256 | 2,043 / 1,843 |
+| Offensive third downs | 64/216, 29.6% | 88/222, 39.6% |
+| Opponent third downs | 89/215, 41.4% | 67/199, 33.7% |
+| Giveaways / takeaways | 26 / 23 | 25 / 15 |
+| Turnover differential | -3 | -10 |
+| Sacks allowed / made | 50 / 20 | 38 / 23 |
 
-For each personnel change, name Caldwell's acquisition authority and Stone's documented recommendation or usage decision. Add only the developments that explain the tenure; link the full roster and transaction history.
+The team scored 101 more points and allowed 98 fewer. The improvement included production, third downs, protection and yards allowed. Giveaways fell by one, but takeaways fell by eight; the turnover deficit grew. The three losses by at least 28 points deserve examination alongside the playoff win.
 
-The accepted first-year mandate concerned program installation, player development, dependable preparation and communication, and an evidence-based quarterback direction. It did not require an immediate playoff berth. Preserve that original standard beside the result rather than inventing a ten-win expectation afterward.
+Stone's first-year assignment was to establish a functioning program, develop players, improve preparation and communication, and give the club an evidence-based quarterback direction. An immediate playoff appearance was not a condition of the hire. The January 2014 owner review accepted that the program and GM-coach arrangement had worked and retained him on existing terms.
 
-Close each appointment account with three short paragraphs: **what he inherited; what changed under his authority; what the resulting team still lacked.** Detailed judgments about whether his decisions worked belong in the performance review.
+## The coaching evidence a hiring club should examine
 
-## 5. Completed-season production
+### Can he develop the quarterback this job requires?
 
-### Jacksonville, 2013 regular season
+Cousins's first season is the relevant case file: 3,981 passing yards, 23 touchdowns, 18 interceptions and 38 sacks. The production is established; the causes of individual mistakes need to be distinguished. The [quarterback's exit interview][cousins] asks for film examples alongside brief coaching phrases and disputes the interpretation of one interception.
 
-These examples reproduce the existing sheet's stated totals and rankings. Its source note identifies all 256 regular-season game records. Reconcile against those records before adopting any changed value.
+The [June 2014 minicamp report][minicamp] records Bates showing Cousins a requested end-zone view of a protection error. Cousins identified the wrong-way slide and the correct answer before being given the coaching point. Whether Cousins consistently makes the same recognition against a live rush remains the more demanding question.
 
-**Responsibilities:** Stone called the offense; Mike Tice coordinated the offensive week. Crennel coordinated and called the defense under Stone's head-coach oversight.
+Through Week 4 of 2014, Cousins is 84 of 140 for 987 yards, nine touchdowns and four interceptions, with eight sacks. It is too early to pronounce the development complete or to use Brees's earlier career as a substitute for the answer.
 
-| Measure | Jacksonville | NFL rank | Opponents | Defensive rank |
-|---|---:|---:|---:|---:|
-| Team points | 356; 22.3 per game | 12 | 346; 21.6 per game | T-15 |
-| Total net yards | 5,777; 361.1 per game | 15 | 5,349; 334.3 per game | 5 |
-| Net passing yards per game | 233.4 | 12 | 219.1 | 10 |
-| Rushing yards per game | 127.7 | 15 | 115.2 | 5 |
-| Net yards per play | 5.52 | 14 | 5.33 | 11 |
-| Third downs | 88/222; 39.6% | 13 | 67/199; 33.7% | 3 |
-| Giveaways / takeaways | 25 giveaways | T-22 | 15 takeaways | 31 |
-| Sacks allowed / made | 38 allowed | T-25 | 23 made | 31 |
+### What does his football require from the roster?
 
-The defense's yardage and third-down rankings belong alongside its 31st-place takeaway and sack totals. The offense's production belongs alongside its protection and giveaway results. Selecting only the strongest categories would give an incomplete account.
+The [approved profile][profile] favors multiple tight ends, movable formations, motion and a passing game built around concepts such as Dagger, Mesh, play-action, Flood and screens. Stone carries zone and gap runs and narrows the weekly work around the line and backs. His preferred adjustments include a detached job for a receiving tight end whose attached blocking is developing, help for an overmatched tackle and a smaller menu for a young quarterback.
 
-**Separate postseason line:** two games, 1-1, 51 points scored and 34 allowed. Keep postseason production out of regular-season totals and rankings.
+A club considering him would need to establish what its present tight ends, line and quarterback can carry before committing resources to that offense. Existing starters with no clear role, immediate protection needs and time required to teach new assignments all affect the appointment. The club also has obligations: agreed personnel authority, a feasible assistant staff and expectations consistent with the roster it will supply. These are matters for both sides to settle, not additional demands Stone has made. His Jacksonville contract requires written football consultation on major quarterback commitments while leaving the final acquisition decision with Caldwell. That arrangement worked through the completed season.
 
-**Special teams:** [Kicker makes/attempts by distance; net punting; returns; coverage; blocks; major penalties, where available.] Identify the coordinator and relevant participation. If no complete season record exists, say so once. A missing special-teams assessment is not evidence that the phase was average.
+His defensive background includes three New England seasons working with the secondary and later whole-team supervision. His profile describes a preference for four-man pressure, coverage help, disguise and connected run fits. The 2013 defense was Crennel's to coordinate and call. Its success is relevant to Stone's ability to hire and oversee a unit; it is not a season of defensive calling that can be placed on Stone's personal technical résumé.
 
-### Earlier offensive production
+### Does the teaching survive the weekly schedule?
 
-| Season and role | Established team production | Attribution and coverage |
+The profile's teaching detail is a reason to investigate him further. The player exits show where the organization had trouble delivering it. [Thielen's individual period][thielen] disappeared after the bye without a clear account of whether the work was finished or displaced. [Kelce][kelce] kept hearing that his attached blocking remained unfinished without a sufficiently clear completion standard.
+
+For Thielen, the missing account is why the period stopped and who decided it could be removed. For Kelce, it is how the position coach and head coach communicated the remaining work. The later training record needs to show what each player received and whether the original confusion persisted.
+
+### Can he build and supervise the staff the new club can actually hire?
+
+Stone assembled Jacksonville's first staff and it completed the 2013 season. Lowry then left for Atlanta's head-coaching job, and Stone appointed Westhoff to run special teams. That supplies both initial hiring evidence and one subsequent coordinator replacement. It does not yet give a long record of replacing unsuccessful hires, developing successors or surviving repeated departures.
+
+No commitment by Crennel, Tice, Westhoff or another current assistant to join Stone elsewhere is established. A future appointment would need its own staff arrangement, including the preparation and teaching work those assistants now carry.
+
+His approved profile gives assistants room to argue and choose their teaching methods. It also records his habit of interrupting an offensive correction before the position coach has finished. Former assistants are the relevant references for whether those interventions clarify the work or make it harder for them to teach. Their answers have not been obtained for this file.
+
+### How does he respond when his own answer fails?
+
+In the 2013 Houston loss, Jones-Drew gained 86 yards on 12 carries; the team finished with 17 runs and 45 dropbacks. Stone later acknowledged abandoning productive work. His acknowledgment settles who owned the choice. The next part of the assessment is whether he kept using a productive answer when a later game began to turn against him.
+
+The same inquiry applies to the full team. Jacksonville's 2013 defense was fifth in net yards allowed and third on third down, but 31st in sacks and takeaways. Those results leave a specific problem for Stone and Crennel to explain: a defense that often ended drives on third down produced few sacks or takeaways. Coaching changes and personnel needs would have to be considered together. Crennel's authority over the unit does not remove that problem from the head coach's assessment.
+
+## Terms, working relationships and reference work
+
+Stone's current agreement is four years, fully guaranteed, accepted January 15, 2013. He was retained January 15, 2014 without an extension, raise or authority change. Salary, additional termination provisions and exact assistant-budget dollars are not established. This file does not establish that he is available for another job or that any club has sought permission to approach him.
+
+He selects coaches, assigns their work and controls the depth chart and game-day decisions. Caldwell holds final authority over acquisitions, the draft, scouting administration, contracts and the cap. Their completed-season review records a functioning relationship, including disagreements settled without reaching ownership. A hiring club should state its own decision rights clearly rather than assume every GM-coach arrangement means the same thing.
+
+No new reference checks have been obtained for this file. Professional overlap with Payton, Belichick, Brees or another former colleague is not an endorsement.
+
+The New Orleans background also requires the due diligence already identified in his prehire dossier. Stone was not disciplined in the Saints investigation. The record leaves his precise prior knowledge unresolved. A future interviewer could ask him directly; this file supplies neither an accusation nor an invented exonerating account.
+
+His previous permanent-head-coach search produced two Oakland interviews and one Indianapolis interview after 2011, with no offer. Tampa Bay and Miami interest went through his agent; no interviews are established. There is no recorded current market assessment to add to those facts.
+
+## Career and statistical reference
+
+### Appointments
+
+| Years | Club and title | Responsibility |
 |---|---|---|
-| 2009 Saints OC | 510 points; 6,461 yards; first in points and yards | Payton called games; Stone coordinated the plan within an established staff |
-| 2010 Saints OC | 384 points; sixth in yards; third in passing; 31 turnovers | Team offense, not independent Stone play-calling production |
-| 2011 Saints OC | 547 points; 7,474 yards | Stone's primary calling began in Week 6; do not assign him all sixteen games as caller |
-| 2012 Saints interim HC / OC | Approximately 505 points, 6,980 yards and 18 offensive turnovers | Established approximate character history; insufficient for exact rates or league ranks |
+| 1996-1997 | Miami, offensive graduate assistant | Offensive preparation and teaching during doctoral study |
+| 1998 | No coaching appointment | Doctoral examinations and proposal work; excluded from coaching-season totals |
+| 1999 | Miami Dolphins, offensive quality control / assistant quarterbacks | Opponent and quarterback preparation under Jimmy Johnson |
+| 2000 | University of San Diego, OC / quarterbacks | Offensive caller under Kevin McGarry |
+| 2001 | University of San Diego, assistant HC / OC / quarterbacks | Calling, broader practice organization and game-management duties |
+| 2002-2004 | New England, defensive assistant | Secondary work under Mangini within Crennel's defense |
+| 2005-2006 | New England, tight ends | Position coaching |
+| 2007-2008 | New England, passing-game coordinator / tight ends | Passing preparation and selected preseason calls; McDaniels called regular-season games |
+| 2009-2010 | New Orleans, OC | Weekly planning; Payton called games |
+| 2011 | New Orleans, OC | Primary caller from Payton's Week 6 injury through the playoffs |
+| 2012 | New Orleans, interim HC / OC | Full team responsibility and offensive calling from April 16; playing season ended January 13, 2013 |
+| 2013-present | Jacksonville, HC | Staff, preparation, depth chart, game management and offensive calling; defensive calling from Week 4 of 2014 |
 
-The 2012 defensive baseline is approximately 350 points and 5,900 yards allowed, with roughly 29 takeaways and 38 sacks. Preserve the approximation. Do not replace these figures with the real 7-9 Saints' results.
+Through 2013: 17 completed coaching seasons, 13 in the NFL and two with NFL head-coaching responsibility. The administrative end date of the Saints interim appointment is not separately established.
 
-### Statistical definitions
+### Production in completed seasons
 
-Use net passing yards: gross passing yards minus yards lost on sacks. For Jacksonville in 2013, 3,981 minus 247 equals 3,734. Add 2,043 rushing yards to obtain 5,777 total net yards. Opponents produced 3,653 minus 147 equals 3,506 net passing yards; adding 1,843 rushing yards produces 5,349 total net yards.
-
-Net yards per play uses rush attempts plus pass attempts plus sacks as its denominator. Third-down percentage uses conversions divided by attempts. First downs per 100 plays, if retained, measures first-down production across all downs; it does not mean efficiency on first down.
-
-Points are **team points**, including any defensive and special-teams scoring. A club's points allowed are not automatically points conceded by its defensive unit. Use phase-specific labels only when scoring attribution supports them.
-
-Ranks use unrounded values, a defined eligible league population and consistent direction. More yards gained rank higher offensively; fewer allowed rank higher defensively. Fewer giveaways and sacks allowed are better; more takeaways and sacks made are better. Show ties. Never mix this career's Jacksonville statistics with actual historical opponents to manufacture a league table.
-
-Add red-zone, fourth-down, penalty, possession or drive measures only with complete documented coverage and definitions. Missing is not zero. Current-season rates carry games played. Exact historical comparison figures can inform an inherited baseline but cannot fill missing later results.
-
-## 6. Achievements and career context
-
-| Accomplishment | Established example | Keep the context |
+| Season | Team scoring and offensive production | Calling context |
 |---|---|---|
-| Head-coaching postseason record | Two appearances and two playoff wins through 2013 | One interim Saints season and one permanent Jaguars season |
-| Individual recognition | 2013 Coach of the Year finalist; Rex Ryan won | Finalist is not winner; identify the award record |
-| Assistant championships | New England, 2003 and 2004; New Orleans, 2009 | State his job in each season; do not call these head-coaching titles |
-| Playing honors | Five Pro Bowls; two first-team All-Pro selections | Playing achievements, kept separate from coaching evidence |
-| Playing production | 150 games, 488 receptions, 5,912 yards, 44 touchdowns | Established character biography, not independently verified real-player statistics |
-| Prior searches | Oakland: two interviews; Indianapolis: one, after 2011 | Agent-level Tampa Bay and Miami interest did not establish interviews or offers |
+| 2009 New Orleans | 510 points; 6,461 yards; first in points and yards | Payton called; Stone coordinated the week with Carmichael and Kromer carrying substantial work |
+| 2010 New Orleans | 384 points; sixth in yards, third in passing; 31 turnovers | Payton called |
+| 2011 New Orleans | 547 points; 7,474 yards; Brees 5,476 passing yards and 46 TD | Stone became primary caller during Week 6; these are full-season team totals |
+| 2012 New Orleans | Approximately 505 points and 6,980 yards; approximately 18 offensive turnovers | Stone interim HC and offensive caller; exact efficiency rates and league ranks unavailable |
 
-Record notable firsts or franchise records only when the comparison has been verified. Avoid a collection of flattering labels built from the same accomplishment.
+| Jacksonville, 2013 regular season | Club output | Rank among the 32 clubs |
+|---|---:|---:|
+| Team scoring | 22.3 points per game | 12 |
+| Net offense | 361.1 yards per game | 15 |
+| Offensive third downs | 39.6% | 13 |
+| Giveaways | 25 | T-22, fewer is better |
+| Sacks allowed | 38 | T-25, fewer is better |
+| Team points allowed | 21.6 per game | T-15 |
+| Net yards allowed | 334.3 per game | 5 |
+| Opponent third downs | 33.7% | 3 |
+| Defensive takeaways | 15 | 31 |
+| Defensive sacks | 23 | 31 |
 
-## 7. Employment, resources and authority
+The separate 2013 postseason totals were 51 points scored and 34 allowed in two games. The defense also finished fifth in rushing yards allowed and tenth in net passing yards allowed. None of the listed offensive measures finished in the top ten.
 
-**Contract:** Four years, fully guaranteed, accepted January 15, 2013. Salary, offsets, termination procedures and exact assistant-budget dollars are unspecified. Retained January 15, 2014 without an established extension, raise or authority change.
+### Current year
 
-**Stone controls:** Staff selection and coaching assignments, depth chart, game-day decisions and the offensive plan. Calling or delegating a phase remains a head-coach decision.
+Through four games in 2014: 105 points scored, 82 allowed, five giveaways, six takeaways, eight sacks allowed and ten made. Jacksonville converted 25 of 60 third downs, 41.7 percent; opponents converted 34 of 68, 50 percent. Crennel called the first three defensive games; Stone called the fourth. These totals do not provide a full-season ranking or an assessment of a year not yet completed.
 
-**Caldwell controls:** Scouting administration, acquisitions, draft selections, contracts and cap. Major quarterback commitments require Stone's written football projection and consultation; Caldwell retains the final decision.
+### Background
 
-**Medical authority:** Clinicians determine clearance and restrictions. Stone determines football deployment within them.
+Born September 21, 1963, in Miami. University of Miami tight end, 1982-1985; San Diego Chargers tight end, 1986-1995. Established playing record: 150 games, 488 receptions, 5,912 yards, 44 touchdowns, five Pro Bowls and two first-team All-Pro selections. Played in the Super Bowl XXIX loss to San Francisco. Retired after 1995.
 
-**Dated calling changes:** [Effective date; phase; caller; coordinator's remaining work; appointment or game source.] The existing sheet records Stone taking over defensive calls in Week 4 of 2014, with Crennel transmitting the call. A coordinator retaining his title does not mean he retained calling responsibility.
+BS, Miami, 1986; MBA, San Diego, 1996; PhD in Exercise Physiology, Miami, 2002, with doctoral work on motor-learning acquisition and retention. Married to Inbar Zsela-Stone; no children. Native English, conversational Spanish and limited Arabic, French and Japanese. His doctorate supplies relevant academic background; the player-development cases above show the coaching work available for examination.
 
-Keep employment facts here. Ownership's reasoning, continuing concerns and any assessment of future dismissal belong in the performance review. A guaranteed contract does not itself establish either immunity from dismissal or a known termination cost.
+## Sources and scope
 
-## 8. Sources and maintenance
+The career facts come from the [prehire dossier][dossier], [original Coach Sheet][sheet], [accepted contract][contract], [owner review][owner], [initial roster][roster], [player exits][exits] and [current season record][current]. The June teaching example is in the [minicamp report][minicamp]. The Houston account is in the [game report][houston]. Current totals come from the [team statistics][teamstats] and [player statistics][playerstats].
 
-Primary career references at the reviewed revision:
+The inherited Jacksonville figures were checked against its [official 2012 statistics](https://www.jaguars.com/team/stats/2012/reg) and [2012 season review](https://res.cloudinary.com/nflclubs/image/upload/jaguars/xdgabyhr51vldqffuruv.pdf), PDF pages 4, 5 and 35. The [January 7 offensive review](https://www.jaguars.com/news/roster-breakdown-offense-9301393) supplies contemporary roster context. Historical 2012 Jacksonville is compared with this career's 2013 team, not real-world Jacksonville after Stone's appointment.
 
-- [Existing NFL Coach Sheet, including statistical source links](https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/coaching_profiles/alex_stone_nfl_coach_sheet.md).
-- [Prehire dossier: biography, New Orleans roles and 2012 results](https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/library/alex_stone_character_dossier_pre_hire.md).
-- [Accepted contract and original mandate](https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2013/offseason/head_coach_contract.md).
-- [January 15, 2014 owner and GM review](https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2013/season_review/owner_and_gm_review.md).
-- [Document ownership and attribution rules](https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/coaching_profiles/README.md).
+Net passing subtracts sack losses. For Jacksonville in 2013, 3,981 minus 247 equals 3,734; adding 2,043 rushing yards produces 5,777 net yards. Opponents: 3,653 minus 147 plus 1,843 equals 5,349. Team points include scoring by every phase. Rates use their stated denominators, and ranks use unrounded values. The 2013 equal-strength simulation restricts causal judgments about individual coaching value. Week 4's record does not store Jacksonville defensive calls. These limitations leave the career results intact while narrowing what can be concluded from them.
 
-Refresh active-season totals after completed games and appointments when their source changes. Freeze completed seasons. Add the next completed row without rewriting the earlier assessment in hindsight. Keep a short correction note for any changed historical figure, including its source and effect on career totals.
+The front-page assessment and proposed interview work are editorial judgments, not references already obtained. The structure draws on [Dick Cass's account of Baltimore's head-coach search](https://www.baltimoreravens.com/news/behind-the-scenes-with-dick-cass-7748197): test how the candidate would run the team and corroborate his account through people who know his work. The accompanying research note explains the broader hiring evidence and how to reuse this format.
+
+[dossier]: https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/library/alex_stone_character_dossier_pre_hire.md
+[sheet]: https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/coaching_profiles/alex_stone_nfl_coach_sheet.md
+[contract]: https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2013/offseason/head_coach_contract.md
+[owner]: https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2013/season_review/owner_and_gm_review.md
+[roster]: https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2013/offseason/initial_roster.md
+[exits]: https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2013/exit_interviews/README.md
+[current]: https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/state/05_Current_Season_State.md
+[minicamp]: https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2014/02_Offseason_Training/Mandatory_Minicamp/training_report.md
+[houston]: https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2013/regular_season/week_12_jacksonville_at_houston/output.md
+[teamstats]: https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2014/05_Regular_Season/Statistics/records/team_stats.md
+[playerstats]: https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2014/05_Regular_Season/Statistics/records/team_player_stats.md
+[profile]: https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/coaching_profiles/alex_stone_coaching_profile.md
+[cousins]: https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2013/exit_interviews/main_core/kirk_cousins.md
+[thielen]: https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2013/exit_interviews/main_core/adam_thielen.md
+[kelce]: https://github.com/Alex-Oss222/football-career-sim/blob/2fe74c9c59e39267bfd63a0fe9e8697f5632f260/career/2013/exit_interviews/core/travis_kelce.md
