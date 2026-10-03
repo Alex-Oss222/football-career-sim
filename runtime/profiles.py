@@ -61,6 +61,22 @@ its pin): each lineup slot reads the player's drawn state
 PUNTER_SLOPE apply, and the kernel publishes no per-possession strength
 block. PROFILE_2014_5 keeps honours-production-v3.
 
+Batch B8 (possession sequencing) adds one flag:
+
+- possession_sequencing: the kernel's five alternation sites (Pro Bowl
+  quarters, regulation, half openers, the overtime opener and the overtime
+  loop) take the next possessor from the event that ended the last one
+  (``possess`` returns it; ``kicked_after`` returns the retained flag), a
+  kickoff is one link of a ``kick_sequence`` (a return touchdown is
+  followed by the scorer's kickoff on the same chain, a kick the kicking
+  club keeps hands it the ball), the overtime history is
+  runtime.rules.ot_history over possessions and kicks, and the result and
+  its receipts carry the append-only kick summary fields and
+  ``scoring_events``. No branch fires until batches B9 and B10 add the
+  sourced mechanisms, so a game without one equals its run before B8
+  apart from those records; a profile without the flag runs the 2014.5
+  sequencing byte for byte.
+
 A base names the flags its readers require (CalibrationBase.requires_flags):
 a profile resolving on it must hold them, and a profile holding base_2014_6
 or regimes_v3 on a base that does not serve them fails closed.
@@ -124,7 +140,11 @@ BASE_FLAGS = frozenset({"base_2014_6", "regimes_v3"})
 # Batch B6 mechanism flags (W3, W5a, W2a); each needs a schema-3 base for
 # its constants, which the kernel checks when the flag is held.
 B6_FLAGS = frozenset({"early_fg_v2", "clock_detail_v1", "substitution_record"})
-FLAGS = BASE_FLAGS | {"injury_2014_6", "usage_2014_6"} | B6_FLAGS
+# Batch B8 mechanism flag: possession sequencing (kick chains, retained
+# kicks, the next possessor returned by every alternation site) with its
+# append-only records (kick summary fields, scoring_events).
+B8_FLAGS = frozenset({"possession_sequencing"})
+FLAGS = BASE_FLAGS | {"injury_2014_6", "usage_2014_6"} | B6_FLAGS | B8_FLAGS
 
 
 def _legacy_base():
@@ -135,7 +155,8 @@ def _legacy_base():
 PROFILE_2014_5 = Profile("2014.5", base="2012", cell_rules="2013.7", strength="honours-production-v3")
 PROFILE_2014_6 = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength="player-state-v1",
                          flags=frozenset({"base_2014_6", "regimes_v3", "injury_2014_6", "usage_2014_6",
-                                          "early_fg_v2", "clock_detail_v1", "substitution_record"}),
+                                          "early_fg_v2", "clock_detail_v1", "substitution_record",
+                                          "possession_sequencing"}),
                          record_base=True)
 
 PROFILES = {p.kernel_version: p for p in (PROFILE_2014_5, PROFILE_2014_6)}

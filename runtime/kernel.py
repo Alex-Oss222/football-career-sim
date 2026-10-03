@@ -8,7 +8,8 @@ from . import calibration_base
 from . import injury_model
 from . import participation
 from . import rotation
-from .rules import GAME_TYPES, PRESEASON, RULES, extra_point_rule, ot_status
+from .rules import (GAME_TYPES, KICK_CHAIN_BOUND, PRESEASON, RULES, extra_point_rule, kicking_club,
+                    ot_history, ot_status)
 from . import chains as chain_walk
 from . import drive_model
 from . import field_position
@@ -19,7 +20,7 @@ from .player_evidence import empty_player_stats, normalize_players, observation
 from .profiles import Profile, profile_for
 from .play_detail import (
     apply_drive_detail, apply_kickoff_detail, canonical_call_sheet, check_ledger,
-    has_chain_ledger, _period_clock, _stream,
+    has_chain_ledger, scoring_events, try_row, _period_clock, _stream,
 )
 
 
@@ -180,10 +181,42 @@ def _split_yards(total, weight_pass, weight_rush):
 
 
 def _start_kind(kick_record):
-    """How a possession began after a kick: free_kick, kickoff or kickoff_touchback."""
+    """How a possession began after a kick: free_kick, kickoff or kickoff_touchback,
+    or (kernel 2014.6 batch B8) free_kick_retained / kickoff_retained when the
+    kicking club kept the ball (outcome "retained")."""
+    retained = kick_record.get("outcome") == "retained"
     if kick_record["free_kick"]:
-        return "free_kick"
+        return "free_kick_retained" if retained else "free_kick"
+    if retained:
+        return "kickoff_retained"
     return "kickoff_touchback" if kick_record["touchback"] else "kickoff"
+
+
+# Kernel 2014.6 batch B8: the test-only scoring hook's shape. ``kicks`` maps a
+# kick number to the branch forced on that kick ("retained": the kicking club
+# keeps the ball on a real retained record; "touchdown": the receiving club
+# returns it for a touchdown), ``drives`` a possession number to
+# "defensive_touchdown" (applied only when the drawn drive is a turnover).
+# The hook exercises the sequencing before batches B9 and B10 add the sourced
+# mechanisms; the production runner cannot pass it (game_runner.architecture_errors).
+_SCORING_KICK_BRANCHES = ("retained", "touchdown")
+_SCORING_DRIVE_BRANCHES = ("defensive_touchdown",)
+
+
+def _scoring_hook(forced, sequencing):
+    if forced is None:
+        return {"kicks": {}, "drives": {}}
+    if not sequencing:
+        raise ValueError("_test_scoring requires a profile holding possession_sequencing")
+    if not isinstance(forced, dict) or set(forced) - {"kicks", "drives"}:
+        raise ValueError("_test_scoring must be {'kicks': {...}, 'drives': {...}}")
+    kicks = dict(forced.get("kicks") or {})
+    drives = dict(forced.get("drives") or {})
+    if any(v not in _SCORING_KICK_BRANCHES for v in kicks.values()):
+        raise ValueError("unknown forced kick branch")
+    if any(v not in _SCORING_DRIVE_BRANCHES for v in drives.values()):
+        raise ValueError("unknown forced drive branch")
+    return {"kicks": kicks, "drives": drives}
 
 
 def _edge(team, defense, home, venue="home", off_view=(), def_view=(), passer=None):
@@ -305,7 +338,7 @@ def _partial_result(event_id, game_type, opening_receiver, stats, possessions, k
 
 def resolve_game(home, away, *, seed, event_id, venue="home", weather="normal", game_type="regular",
                  management_mode="autonomous", controlled_team=None, continuation=None, game_date=None,
-                 _test_onsets=None, _test_profile=None, _test_strength_receipt=None):
+                 _test_onsets=None, _test_profile=None, _test_strength_receipt=None, _test_scoring=None):
     """Resolve one game, or return a genuine partial result at an E2 pause.
 
     Kernel 2014.4 (E2): ``management_mode="user_controlled"`` with a
@@ -332,6 +365,11 @@ def resolve_game(home, away, *, seed, event_id, venue="home", weather="normal", 
     result carries no per-possession strength block (the drawn values are
     hidden). ``_test_strength_receipt``, a list, receives each drive's
     receipt for tests and acceptance scripts only.
+
+    Kernel 2014.6 (batch B8): ``_test_scoring`` forces a sequencing branch
+    (a kick the kicking club keeps, a kick returned for a touchdown, a
+    defensive touchdown) for tests only, under a profile holding
+    possession_sequencing; the production runner cannot pass it.
     """
     if _test_profile is not None and not isinstance(_test_profile, Profile):
         raise TypeError("_test_profile must be a runtime.profiles.Profile")
@@ -343,7 +381,7 @@ def resolve_game(home, away, *, seed, event_id, venue="home", weather="normal", 
                              game_type=game_type, management_mode=management_mode,
                              controlled_team=controlled_team, continuation=continuation,
                              game_date=game_date, _test_onsets=_test_onsets, profile=profile,
-                             _test_strength_receipt=_test_strength_receipt)
+                             _test_strength_receipt=_test_strength_receipt, _test_scoring=_test_scoring)
     except _Paused as paused:
         return paused.partial
 
@@ -364,6 +402,7 @@ def _resolve_game(
     _test_onsets=None,
     profile,
     _test_strength_receipt=None,
+    _test_scoring=None,
 ):
     if not isinstance(seed, bytes) or len(seed) < 32:
         raise ValueError("private seed required")
@@ -456,6 +495,10 @@ def _resolve_game(
     if (early_fg_v2 or clock_detail) and not hasattr(fpm, "early_fg_ok"):
         raise ValueError("profile %s holds a batch B6 flag on a base without the W3/W5a constants"
                          % profile.kernel_version)
+    # Kernel 2014.6 batch B8: possession sequencing and its append-only
+    # records; the test-only hook needs it (fails closed otherwise).
+    sequencing = profile.has("possession_sequencing")
+    forced_scoring = _scoring_hook(_test_scoring, sequencing)
     T = fpm.T
 
     teams = {home.team_id: home, away.team_id: away}
@@ -821,18 +864,67 @@ def _resolve_game(
             row["sequence"] = len(play_ledger) + 1
             play_ledger.append(row)
 
-    def kick(kicking, receiving, *, free_kick, half, remaining, ot_label="OT"):
-        """One real 2012 kickoff (or safety free kick) record: one randrange."""
+    def try_after(scorer_id, line, available, *, walk_off):
+        """The try after a non-offensive touchdown (R8 placeholder: the
+        ordinary extra point on the fixed rate, or the dated 2014 preseason
+        rule; one draw, the same as a drive's try). Returns xp_made (None for
+        a walk-off touchdown, which has no try)."""
+        if walk_off:
+            return None
+        line["extra_point_attempts"] += 1
+        xp_prob = xp_rate
+        if xp_rule is not None and xp_rule.get("distance"):
+            # 2014 preseason Weeks 1-2: the try is a 33-yard kick on
+            # the field-goal distance model, with the kicker's own
+            # term as for any field goal. Same single draw.
+            xp_prob = dm.fg_make_prob_at(xp_rule["distance"])
+            scorer = teams[scorer_id]
+            if scorer.strength:
+                kicker = usage.kicking_specialist(available, "K", "placekicker")
+                kick_shift, _ = unit_strength.kicker_adjustment(scorer.strength, kicker, params=strength_params)
+                xp_prob = min(strength_params.fg_prob_ceiling,
+                              max(strength_params.fg_prob_floor, xp_prob + kick_shift))
+        xp_made = rng.random() < xp_prob
+        if xp_made:
+            line["extra_points_made"] += 1
+        return xp_made
+
+    def kick(kicking, receiving, *, free_kick, half, remaining, ot_label="OT", chain=1, after_drive=None):
+        """One real kickoff (or safety free kick) record: one randrange.
+
+        Kernel 2014.6 batch B8 (under possession_sequencing): the record also
+        carries its chain position, the possession it followed, its basis and
+        the scoring fields; a forced test branch may make it a kick the
+        kicking club keeps or a return touchdown."""
         checkpoint()
         kick_no = len(kickoffs) + 1
         drawn = fpm.free_kick(rng) if free_kick else fpm.kickoff(rng)
+        branch = forced_scoring["kicks"].get(kick_no)
+        if branch == "retained":
+            # The base draw is taken and discarded; a real retained record of
+            # the kick kind stands in (the first in the artifact's list).
+            pool = fpm.data["retained_kick_pools"]["free_kick" if free_kick else "kickoff"]
+            if not pool:
+                raise ValueError("no retained %s record in the base" % ("free kick" if free_kick else "kickoff"))
+            K = fpm.KICK
+            r = pool[0]
+            drawn = {"touchback": False, "next_start": r[K["next_start"]], "kick_yards": r[K["kick_yards"]],
+                     "return_yards": r[K["return_yards"]], "enforcement": r[K["enforcement"]],
+                     "outcome": "retained", "kick_spot": 20 if free_kick else 35}
+        elif branch == "touchdown":
+            # The drawn kick is run back to the goal line (R15 placeholder).
+            spot = 20 if free_kick else 35
+            drawn = dict(drawn, touchback=False, outcome="returned_touchdown",
+                         return_yards=max(0, 100 - spot - int(drawn["kick_yards"] or 0)), next_start=None)
+        retained = drawn["outcome"] == "retained"
+        touchdown = drawn["outcome"] == "returned_touchdown"
         live = live_rosters()
         if trackers is not None:
             # Preseason: each club's special-teams block (or depth order).
             kick_quarter = rotation.quarter_of_remaining(remaining, half == "OT")
             live = {tid: trackers[tid].view("special_teams", live[tid], kick_quarter, kick_no)[0]
                     for tid in (kicking, receiving)}
-        if teams[receiving].strength and not drawn["touchback"]:
+        if teams[receiving].strength and not drawn["touchback"] and not (retained or touchdown):
             # Kernel 2014.4 phase 2: the returner's term (slope 0 in this
             # candidate); no draw is consumed.
             returner = usage.club_returner(live[receiving], "kick_return")
@@ -840,7 +932,7 @@ def _resolve_game(
                                                                        params=strength_params)
             drawn = fpm.adjust_return(drawn, ret_shift)
             drawn["returner"] = ret_receipt
-        returned = not drawn["touchback"]
+        returned = not drawn["touchback"] and not retained
         stats[kicking]["kickoffs"] += 1
         if returned:
             stats[receiving]["kick_returns"] += 1
@@ -855,6 +947,22 @@ def _resolve_game(
         if "return_adjust" in drawn:
             record["return_adjust"] = drawn["return_adjust"]
             record["returner_term"] = drawn.get("returner")
+        xp_made = None
+        if sequencing:
+            # Batch B8 (append-only): the kick's place in its chain, the
+            # possession it followed, the decision basis (a league draw; a
+            # policy basis arrives with R9) and the scoring fields.
+            record.update(remaining=remaining, chain=chain, after_drive=after_drive, basis="league",
+                          touchdown=touchdown, scoring_team=receiving if touchdown else None)
+            if touchdown:
+                line = stats[receiving]
+                line["touchdowns"] += 1
+                walk_off = half == "OT" and ot_status(
+                    ot_history(possessions, kickoffs + [record]), game_type) == "end"
+                xp_made = try_after(receiving, line, live[receiving], walk_off=walk_off)
+                record["xp_made"] = xp_made
+                record["points"] = 6 + (1 if xp_made else 0)
+                line["points"] += record["points"]
         kickoffs.append(record)
         rows = apply_kickoff_detail(
             seed=seed, event_id=event_id, kick_no=kick_no,
@@ -863,6 +971,17 @@ def _resolve_game(
             remaining=remaining, overtime=ot_label if half == "OT" else False, drive=record["drive"],
             record=record,
         )
+        if retained:
+            # The receiving club lost the ball to the kicking club (R12 layer
+            # C / R9 own the credit); the row says so, no returner is credited.
+            rows[0].update(touchback=False, turnover=True, outcome="retained", next_start=drawn["next_start"])
+        if touchdown:
+            rows[0]["touchdown"] = True
+            rows[0]["scoring_team"] = receiving
+            if xp_made is not None:
+                rows.append(try_row(rows[0], scoring=teams[receiving], opponent=kicking, available=live[receiving],
+                                    stats=stats, made=xp_made, seed=seed, event_id=event_id,
+                                    anchor={"kick": kick_no}))
         append_rows(rows)
         # Kernel 2014.4: the kick's units join the next drive's exposure.
         for row in rows:
@@ -1108,17 +1227,20 @@ def _resolve_game(
         # 8. Terminal scoring, then the transition to the next possession.
         points = 0
         score_kind = None
+        scoring_team = None
         xp_made = None
         fg_made = None
         fg_distance = None
         next_start = None
         next_kind = None
+        next_offense = defense.team_id
+        non_offensive_score = None
         punt_record = None
         turnover_record = None
         if category == "touchdown":
             points = 6
             s["touchdowns"] += 1
-            score_kind = "touchdown"
+            score_kind, scoring_team = "touchdown", offense
             walk_off = ot_history is not None and ot_status(
                 ot_history + [{"team": offense, "score": "touchdown"}], game_type) == "end"
             if not walk_off:
@@ -1153,7 +1275,7 @@ def _resolve_game(
             if fg_made:
                 points = 3
                 s["field_goals"] += 1
-                score_kind = "field_goal"
+                score_kind, scoring_team = "field_goal", offense
             else:
                 next_start, next_kind = fpm.missed_fg_start(fg_distance), "missed_fg"
         elif category == "punt":
@@ -1175,17 +1297,32 @@ def _resolve_game(
                 punt_record["returner"] = ret_receipt
             d["punt_returns"] += int(punt_record["outcome"] == "returned")
             next_start, next_kind = punt_record["next_start"], "punt"
+            if punt_record.get("possession") == "kicking":
+                # Batch B8: the kicking club kept the ball (R12 layer C).
+                next_kind, next_offense = "punt_retained", offense
         elif category in drive_model.TURNOVER_CATEGORIES:
             s["turnovers"] += 1
             turnover_record = fpm.turnover(rng, category, end_spot)
             next_start, next_kind = turnover_record["next_start"], category
+            if forced_scoring["drives"].get(drive_no) == "defensive_touchdown":
+                # Batch B8 test branch (R15 placeholder): the defense returns
+                # the turnover for a touchdown and kicks off to this offense.
+                score_kind, scoring_team = "touchdown", defense.team_id
+                d["touchdowns"] += 1
+                walk_off = ot_history is not None and ot_status(
+                    ot_history + [{"team": offense, "score": "touchdown"}], game_type) == "end"
+                d_xp = try_after(defense.team_id, d, def_view, walk_off=walk_off)
+                non_offensive_score = {"kind": "touchdown", "team": defense.team_id,
+                                       "points": 6 + (1 if d_xp else 0), "xp_made": d_xp}
+                d["points"] += non_offensive_score["points"]
+                next_start, next_kind = None, None
         elif category == "downs":
             s["turnovers_on_downs"] += 1
             next_start, next_kind = fpm.downs_start(end_spot), "downs"
         elif category == "safety":
             d["points"] += 2
             d["safeties"] += 1
-            score_kind = "safety"
+            score_kind, scoring_team = "safety", defense.team_id
         elif category == "clock":
             s["clock_expired_drives"] += 1
         s["drives"] += 1
@@ -1276,6 +1413,14 @@ def _resolve_game(
             kernel_version=profile.kernel_version,
         )
         chain_walk.annotate(drive_ledger, layout["walk"], fourth_down)
+        if non_offensive_score is not None and non_offensive_score.get("xp_made") is not None:
+            # Batch B8: the defense's try, anchored to this possession, after
+            # the drive's own rows (the terminal snap is the turnover).
+            period, game_clock = _period_clock(end_clock, closing=True, overtime=ot_label if half == "OT" else False)
+            drive_ledger.append(try_row({"drive": drive_no, "period": period, "game_clock": game_clock,
+                                         "snap_in_drive": plays}, scoring=defense, opponent=offense,
+                                        available=def_view, stats=stats, made=non_offensive_score["xp_made"],
+                                        seed=seed, event_id=event_id, anchor={"drive": drive_no}))
         append_rows(drive_ledger)
         _merge_call_stats(play_call_stats[offense], drive_calls)
         _append_evidence(
@@ -1366,6 +1511,11 @@ def _resolve_game(
             record["period"] = _period_clock(start_clock, overtime=ot_label)[0]
         if quarter:
             record["quarter"] = quarter
+        if non_offensive_score is not None:
+            # Batch B8 (append-only; the kernel writes it only on the forced
+            # test branch until R15, batch B9): the score the defense made
+            # during this possession (runtime.rules.possession_score).
+            record["non_offensive_score"] = non_offensive_score
         possessions.append(record)
         # Kernel 2014.4: record this drive's participants, then draw injury
         # onsets for both clubs at the end of the drive (E2 step 1).
@@ -1395,22 +1545,58 @@ def _resolve_game(
             trackers[defense.team_id].played("defense", def_block, period, scrimmage_snaps)
         overtime_label = ot_label if half == "OT" else False
         end_of_drive(drive_no, _period_clock(end_clock, closing=True, overtime=overtime_label), half)
-        return record, score_kind, next_kind
+        # Batch B8: the possession reports what ended it (the score, with its
+        # scorer) and, when it did not score, who possesses next (the
+        # defense, or this offense after a kick it kept) and how.
+        score = {"kind": score_kind, "team": scoring_team} if score_kind else None
+        return record, score, next_kind, next_offense
 
-    def kicked_after(record, score_kind, window, half, ot_label="OT"):
-        remaining = window + (1800 if half == 1 else 0)
-        kicked = kick(record["team"], other(record["team"]), free_kick=score_kind == "safety",
-                      half=half, remaining=remaining, ot_label=ot_label)
+    def kick_sequence(kicking, receiving, *, free_kick, half, window, ot_label="OT", after_drive=None):
+        """Kernel 2014.6 batch B8: the chain of kicks between two possessions.
+
+        A kick returned for a touchdown is followed by the scorer's kickoff on
+        the same chain (kicks take no game clock), until a kick is taken over:
+        by the receiving club, or by the kicking club when it keeps the ball.
+        In overtime a return touchdown may end the game (rules.ot_history and
+        ot_status), which closes the chain with no possessor. Bounded by
+        KICK_CHAIN_BOUND, failing closed. Returns (spot, start_kind, next
+        possessor or None, the last kick record, whether the game ended)."""
+        chain = 0
+        while True:
+            chain += 1
+            if chain > KICK_CHAIN_BOUND:
+                raise RuntimeError("kick chain exceeded the engine's %d-kick bound" % KICK_CHAIN_BOUND)
+            remaining = window + (1800 if half == 1 else 0)
+            kicked = kick(kicking, receiving, free_kick=free_kick, half=half, remaining=remaining,
+                          ot_label=ot_label, chain=chain, after_drive=after_drive)
+            if kicked.get("touchdown"):
+                if half == "OT" and ot_status(ot_history(possessions, kickoffs), game_type) == "end":
+                    return None, None, None, kicked, True
+                kicking, receiving, free_kick = receiving, kicking, False
+                continue
+            retained = kicked["outcome"] == "retained"
+            return kicked["next_start"], _start_kind(kicked), kicking if retained else receiving, kicked, False
+
+    def kicked_after(record, score, window, half, ot_label="OT"):
+        """The kick(s) after a scoring possession: the scorer kicks off (the
+        club scored upon free-kicks after a safety). Returns (spot,
+        start_kind, next possessor, retained flag, game ended)."""
+        kicker = kicking_club(score["kind"], score["team"], other(score["team"]))
+        spot, start_kind, offense, kicked, ended = kick_sequence(
+            kicker, other(kicker), free_kick=score["kind"] == "safety", half=half, window=window,
+            ot_label=ot_label, after_drive=record["number"])
         record["kickoff_after"] = {"returned": kicked["returned"], "free_kick": kicked["free_kick"],
                                    "next_start": kicked["next_start"], "touchback": kicked["touchback"],
                                    "enforcement": kicked["enforcement"]}
         record["next_start"] = kicked["next_start"]
-        return kicked["next_start"], _start_kind(kicked)
+        return spot, start_kind, offense, kicked["outcome"] == "retained", ended
 
-    def placed(record):
-        """Pro Bowl: the next possession starts at the 25 (no kickoff)."""
+    def placed(record, score):
+        """Pro Bowl: the next possession starts at the 25 (no kickoff), taken
+        by the club that would have received the kick (the club scored upon
+        after a touchdown or field goal, the scorer after a safety)."""
         record["next_start"] = PRO_BOWL_SPOT
-        return PRO_BOWL_SPOT, "placement"
+        return PRO_BOWL_SPOT, "placement", other(kicking_club(score["kind"], score["team"], other(score["team"])))
 
     # Regulation: two clock-bounded halves; a possession never crosses one.
     opening_receiver = away.team_id if rng.random() < 0.5 else home.team_id
@@ -1426,29 +1612,26 @@ def _resolve_game(
                 timeouts[team_id] = RULES.timeouts_per_half
         spot, start_kind = PRO_BOWL_SPOT, "placement"
         while window > 0:
-            record, score_kind, next_kind = possess(offense, window, half, spot, start_kind, quarter=quarter)
+            record, score, next_kind, next_offense = possess(offense, window, half, spot, start_kind, quarter=quarter)
             window -= record["seconds"]
-            if score_kind and window > 0:
-                spot, start_kind = placed(record)
+            if score and window > 0:
+                spot, start_kind, offense = placed(record, score)
             else:
-                spot, start_kind = record["next_start"], next_kind
-            offense = other(offense)
+                spot, start_kind, offense = record["next_start"], next_kind, next_offense
     for half in (() if pro_bowl else (1, 2)):
-        offense = opening_receiver if half == 1 else other(opening_receiver)
+        receiver = opening_receiver if half == 1 else other(opening_receiver)
         window = RULES.quarter_seconds * 2
         for team_id in timeouts:
             timeouts[team_id] = RULES.timeouts_per_half
-        opened = kick(other(offense), offense, free_kick=False, half=half,
-                      remaining=window + (1800 if half == 1 else 0))
-        spot, start_kind = opened["next_start"], _start_kind(opened)
+        spot, start_kind, offense, _opened, _ended = kick_sequence(other(receiver), receiver, free_kick=False,
+                                                                  half=half, window=window)
         while window > 0:
-            record, score_kind, next_kind = possess(offense, window, half, spot, start_kind)
+            record, score, next_kind, next_offense = possess(offense, window, half, spot, start_kind)
             window -= record["seconds"]
-            if score_kind and window > 0:
-                spot, start_kind = kicked_after(record, score_kind, window, half)
+            if score and window > 0:
+                spot, start_kind, offense, _retained, _ended = kicked_after(record, score, window, half)
             else:
-                spot, start_kind = record["next_start"], next_kind
-            offense = other(offense)
+                spot, start_kind, offense = record["next_start"], next_kind, next_offense
 
     total = RULES.quarter_seconds * 4
     overtime_seconds = 0
@@ -1470,21 +1653,31 @@ def _resolve_game(
         else:
             ot_label = "OT"
             window = RULES.regular_ot_seconds
-        history = []
         for team_id in timeouts:
             timeouts[team_id] = (RULES.postseason_ot_timeouts_per_half if postseason
                                  else RULES.regular_ot_timeouts)
         ot_half[0] = 0
+        # Batch B8: the overtime history is rebuilt from the possessions and
+        # kicks after every event (rules.ot_history), so a kick the kicking
+        # club keeps or returns for a touchdown enters it as the rule says.
+        ot_start = len(possessions)
+        ot_kicks_from = len(kickoffs)
+
+        def history_now():
+            return ot_history(possessions[ot_start:], kickoffs[ot_kicks_from:])
+
+        ended = False
         if pro_bowl:
             spot, start_kind = PRO_BOWL_SPOT, "placement"
         else:
-            opened = kick(other(offense), offense, free_kick=False, half="OT", remaining=window, ot_label=ot_label)
-            spot, start_kind = opened["next_start"], _start_kind(opened)
-        while True:
-            record, score_kind, next_kind = possess(offense, window, "OT", spot, start_kind, history, ot_label)
+            spot, start_kind, offense, _opened, ended = kick_sequence(other(offense), offense, free_kick=False,
+                                                                     half="OT", window=window, ot_label=ot_label)
+        while not ended:
+            record, score, next_kind, next_offense = possess(offense, window, "OT", spot, start_kind, history_now(),
+                                                             ot_label)
             window -= record["seconds"]
             overtime_seconds += record["seconds"]
-            history.append({"team": offense, "score": score_kind})
+            history = history_now()
             if ot_status(history, game_type) == "end":
                 break
             if window <= 0:
@@ -1492,12 +1685,13 @@ def _resolve_game(
                     break
                 raise RuntimeError("postseason overtime exceeded the engine's %d-period bound"
                                    % RULES.postseason_ot_period_bound)
-            if score_kind:
-                spot, start_kind = (placed(record) if pro_bowl
-                                    else kicked_after(record, score_kind, window, "OT", ot_label))
+            if score:
+                if pro_bowl:
+                    spot, start_kind, offense = placed(record, score)
+                else:
+                    spot, start_kind, offense, _retained, ended = kicked_after(record, score, window, "OT", ot_label)
             else:
-                spot, start_kind = record["next_start"], next_kind
-            offense = other(offense)
+                spot, start_kind, offense = record["next_start"], next_kind, next_offense
         total += overtime_seconds
 
     # The game is over: a removal at its last boundary affects no later play.
@@ -1534,6 +1728,11 @@ def _resolve_game(
         # and its cell rules, so every later audit can confirm it reads the
         # same base (runtime.calibration_base.base_for_result).
         result["calibration_base"] = calibration_base.record(cbase)
+    if sequencing:
+        # Batch B8 (append-only): every score in game order, rebuilt from the
+        # possessions and kicks (runtime.play_detail.scoring_events); the
+        # audit rebuilds it again and compares, never trusting the stored list.
+        result["scoring_events"] = scoring_events(result)
     return result
 
 
@@ -1658,8 +1857,15 @@ def validate_result(result, base=None):
             != s["turnovers"]
         ):
             errors.append("turnover attribution mismatch")
+        # Kernel 2014.6 batch B8: a touchdown scored on a kick return or by
+        # the defense (non_offensive_score) is the club's, not a passer's or
+        # rusher's (its player credit arrives with R15, batch B9).
+        non_offensive = (sum(1 for k in result.get("kickoffs", ()) if k.get("touchdown") and k.get("scoring_team") == team)
+                         + sum(1 for p in result["possessions"]
+                               if (p.get("non_offensive_score") or {}).get("team") == team
+                               and p["non_offensive_score"].get("kind") == "touchdown"))
         if (
-            sum(p["passing_touchdowns"] + p["rushing_touchdowns"] for p in players.values())
+            sum(p["passing_touchdowns"] + p["rushing_touchdowns"] for p in players.values()) + non_offensive
             != s["touchdowns"]
         ):
             errors.append("touchdown attribution mismatch")
@@ -1738,10 +1944,36 @@ def validate_result(result, base=None):
             errors.append("pro bowl quarter possession mismatch")
         if any(p["start_clock"] > b > p["end_clock"] for p in regulation for b in (2700, 900)):
             errors.append("possession spans a quarter")
+    kicks = result.get("kickoffs", [])
+    sequencing = bool(kicks) and all("chain" in k for k in kicks)
+    if pro_bowl:
+        pass
+    elif sequencing:
+        # Kernel 2014.6 batch B8: the second-half kicker is the opening
+        # receiver, read from the kicks (a return touchdown on an opener
+        # changes who possesses first, not who kicked).
+        openers = {h: next((k for k in kicks if k["half"] == h and k["after_drive"] is None and k["chain"] == 1), None)
+                   for h in (1, 2)}
+        if None in openers.values() or openers[2]["kicking"] != openers[1]["receiving"]:
+            errors.append("second half opened by the opening receiver")
     elif second is None or second["team"] == opening:
         errors.append("second half opened by the opening receiver")
-    kicks = result.get("kickoffs", [])
-    expected_kicks = 0 if pro_bowl else 2 + (1 if overtime else 0) + sum(1 for p in possessions if p.get("kickoff_after"))
+    if sequencing:
+        # Batch B8: the kick count derives from the scoring events: one
+        # opener per half played, one chain after every score followed by a
+        # kick (kickoff_after), and one further link after every return
+        # touchdown that did not end the game.
+        kick_touchdowns = [e for e in scoring_events(result) if e["source"] == "kick"]
+        ot_played = bool(overtime) or any(k["half"] == "OT" for k in kicks)
+        links = sum(1 for k in kicks if k["chain"] > 1)
+        expected_kicks = (0 if pro_bowl else 2 + (1 if ot_played else 0)
+                          + sum(1 for p in possessions if p.get("kickoff_after")) + links)
+        ended_on_kick = bool(kicks) and kicks[-1].get("touchdown") and (
+            not possessions or kicks[-1]["drive"] > possessions[-1]["number"])
+        if links != len(kick_touchdowns) - (1 if ended_on_kick else 0):
+            errors.append("kick chain count differs from the return touchdowns")
+    else:
+        expected_kicks = 0 if pro_bowl else 2 + (1 if overtime else 0) + sum(1 for p in possessions if p.get("kickoff_after"))
     if len(kicks) != expected_kicks:
         errors.append("kickoff count mismatch")
     for team, s in result["team_stats"].items():

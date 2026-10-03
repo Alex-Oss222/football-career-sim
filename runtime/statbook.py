@@ -52,10 +52,14 @@ KERNEL_2014_6_PLAYER_FIELDS = ()
 # DRIVE_SUMMARY_FIELDS additions are possession keys; snap-ledger row keys
 # are "ledger".
 KERNEL_2014_6_FIELD_GROUP = {
-    # Batch B6 (W2a): the full receipt's substitution record.
-    "result": ("calibration_base", "substitutions"),
-    # Batch B5: the window seconds left at a drive's last spike (R14).
-    "possession": ("last_spike_seconds_left",),
+    # Batch B6 (W2a): the full receipt's substitution record. Batch B8: the
+    # compact kicks summary and the game's scoring events.
+    "result": ("calibration_base", "substitutions", "kicks", "scoring_events"),
+    # Batch B5: the window seconds left at a drive's last spike (R14). Batch
+    # B8: a non-offensive score made during the possession (R15, B9).
+    "possession": ("last_spike_seconds_left", "non_offensive_score"),
+    # Batch B8: the kick record's chain and scoring fields.
+    "kickoff": ("remaining", "chain", "after_drive", "basis", "touchdown", "scoring_team", "xp_made", "points"),
     # Batch B6 (W5a): a league-model decision marker on new rows and on the
     # fourth-down state (nested under "fourth_down", see FOURTH_DOWN_FIELDS).
     "ledger": ("decision_source",),
@@ -195,6 +199,13 @@ def make_receipt(result, *, week, matchup, coverage="complete", detail="full",
         # manifest digest and cell rules the game was resolved with
         # (runtime.calibration_base.base_for_result checks them on audit).
         receipt["calibration_base"] = deepcopy(result["calibration_base"])
+    if kernel_at_least(result.get("kernel_version"), KERNEL_2014_6_FROM) and result.get("scoring_events") is not None:
+        # Kernel 2014.6 onward (batch B8, append-only): the compact kicks
+        # summary and the scoring events, on both details; check_ledger
+        # rebuilds the events from the drives and kicks and compares.
+        from .play_detail import kick_summary
+        receipt["kicks"] = kick_summary(result.get("kickoffs", ()))
+        receipt["scoring_events"] = deepcopy(result["scoring_events"])
     if detail == "full":
         receipt["play_ledger"] = deepcopy(result.get("play_ledger", []))
         receipt["play_call_stats"] = deepcopy(result.get("play_call_stats", {}))

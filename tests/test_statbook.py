@@ -1,5 +1,6 @@
 import unittest
 
+from runtime.play_detail import DRIVE_SUMMARY_FIELDS
 from runtime.statbook import aggregate_receipts, leaders, make_receipt
 from runtime.stat_tables import passer_rating
 from scripts.render_season_stats import (
@@ -223,8 +224,10 @@ class StatbookTests(unittest.TestCase):
             # fields; kernel 2014.1 appends the timeout state and ladder level,
             # kernel 2014.4 the drive's own seconds, clock-expiry leg, passer and
             # the chain model; its phase 2 the adjusted punt transition, the
-            # layout resample record and the field-goal probability.
-            self.assertTrue(all(len(row) == 34 for row in receipt["drives"]))
+            # layout resample record and the field-goal probability; kernel
+            # 2014.6 batch B8 the non_offensive_score slot (R15 fills it).
+            self.assertTrue(all(len(row) == 35 for row in receipt["drives"]))
+            self.assertEqual(len(DRIVE_SUMMARY_FIELDS), 35)
         with self.assertRaises(ValueError):
             aggregate_receipts([{**make_receipt(result, week=4, matchup="B at A"), "schema_version": 4}])
         book = aggregate_receipts([make_receipt(result, week=4, matchup="B at A", detail="compact_stats")])

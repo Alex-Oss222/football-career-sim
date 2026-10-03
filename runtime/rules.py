@@ -130,3 +130,127 @@ def ot_status(history, game_type="regular", expired=False):
     if expired and game_type != "postseason":
         return "end"
     return "continue"
+
+
+# ---- possession sequencing (kernel 2014.6, batch B8) -----------------------------------------------------
+
+# Engine bound, not a football rule: a sequence of kickoffs in which every
+# kick is returned for a touchdown (each scorer kicking off again) is laid
+# out on one chain of at most this many kicks; the kernel fails closed if
+# it is ever exhausted (never observed; plan B9).
+KICK_CHAIN_BOUND = 8
+# How a possession began after a kick the kicking club kept (a recovery of
+# the receiving club's fumble or muff, R12 layer C; an onside recovery, R9).
+RETAINED_START_KINDS = ("kickoff_retained", "free_kick_retained", "punt_retained")
+SCORE_POINTS = {"touchdown": 6, "field_goal": 3, "safety": 2}
+
+
+def possession_score(p, opponent=None):
+    """The score a possession produced, as (kind, scoring club, points), or
+    None.
+
+    Read from the possession record or a receipt's drive row: a touchdown
+    (6 plus the try), a made field goal (3), a safety (2 to the opponent,
+    ``opponent`` when known). A non-offensive score recorded on the drive
+    (``non_offensive_score``: {"kind", "team", "points"}, written by the
+    kernel for a defensive touchdown, batch B9) takes precedence: the scorer
+    is the club it names, never the offense.
+    """
+    non_offensive = p.get("non_offensive_score")
+    if isinstance(non_offensive, dict) and non_offensive.get("kind"):
+        return (non_offensive["kind"], non_offensive.get("team"),
+                int(non_offensive.get("points", SCORE_POINTS[non_offensive["kind"]])))
+    category = p.get("category")
+    if category == "touchdown":
+        return ("touchdown", p.get("team"), 6 + (1 if p.get("xp_made") else 0))
+    if category == "field_goal_attempt" and p.get("fg_made"):
+        return ("field_goal", p.get("team"), 3)
+    if category == "safety":
+        return ("safety", opponent, 2)
+    return None
+
+
+def kick_score(kick):
+    """The score a kick record or kicks-summary row produced, as (kind,
+    scoring club, points), or None: a kick returned for a touchdown (the
+    receiving club, 6 plus the try; batch B9 R15)."""
+    if kick.get("touchdown") or kick.get("outcome") == "returned_touchdown":
+        team = kick.get("scoring_team") or kick.get("receiving")
+        points = kick.get("points")
+        if points is None:
+            points = 6 + (1 if kick.get("xp_made") else 0)
+        return ("touchdown", team, int(points))
+    return None
+
+
+def kick_try_made(kick):
+    """Whether the try after a kick's touchdown was made: the record's
+    ``xp_made`` (None when there was no try), or on a summary row read from
+    its points (7 made; 6 missed or no try, which the row cannot tell apart,
+    so None)."""
+    if "xp_made" in kick:
+        return kick.get("xp_made")
+    points = kick.get("points")
+    if points is None:
+        return None
+    return True if points == 7 else None
+
+
+def kicking_club(kind, scoring_team, opponent):
+    """The club that kicks off after a score: the scorer after a touchdown
+    or field goal; after a safety the club scored upon free-kicks."""
+    return opponent if kind == "safety" else scoring_team
+
+
+def ot_history(possessions, kicks=()):
+    """The overtime possession history ``ot_status`` reads, built from the
+    overtime possessions and the overtime kicks (kick records or a
+    receipt's kicks summary), in game order.
+
+    One entry per overtime possession: {"team", "score"} with the kind of
+    score the possession produced (None when it did not score). A
+    defensive touchdown during a possession is that possession's score
+    ("touchdown", the entry also naming ``scoring_team``), which ends the
+    game under the rule exactly as the offense's touchdown would. A kick
+    returned for a touchdown is the returning club's entry (it scored on
+    its opportunity to possess), so an overtime whose opening kickoff is
+    returned for a touchdown has a complete history with zero possessions.
+    A kickoff the kicking club keeps before the receiving club's first
+    possession gives the receiving club a scoreless entry: it is considered
+    to have had its opportunity to possess (library rule R4), so the
+    kicking club's possession that follows is a sudden-death possession.
+    Kicks are ordered before the possession whose number they carry
+    (``drive``), by kick number.
+    """
+    history = []
+    by_drive = {}
+    for kick in kicks:
+        if kick.get("half") != "OT":
+            continue
+        by_drive.setdefault(kick.get("drive"), []).append(kick)
+    for group in by_drive.values():
+        group.sort(key=lambda k: k.get("kick_no", 0))
+
+    def possessed(team):
+        return any(entry["team"] == team for entry in history)
+
+    def kick_entries(group):
+        for kick in group:
+            score = kick_score(kick)
+            if score is not None:
+                history.append({"team": score[1], "score": "touchdown", "kick": kick.get("kick_no")})
+            elif kick.get("outcome") == "retained" and not possessed(kick.get("receiving")):
+                history.append({"team": kick.get("receiving"), "score": None, "kick": kick.get("kick_no"),
+                                "opportunity": "kicking-club recovery (R4)"})
+
+    overtime = [p for p in possessions if p.get("half") == "OT"]
+    for p in overtime:
+        kick_entries(by_drive.pop(p.get("number"), ()))
+        score = possession_score(p)
+        entry = {"team": p.get("team"), "score": score[0] if score else None}
+        if score and score[1] is not None and score[1] != p.get("team"):
+            entry["scoring_team"] = score[1]
+        history.append(entry)
+    for number in sorted(k for k in by_drive if k is not None):
+        kick_entries(by_drive[number])
+    return history

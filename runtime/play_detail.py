@@ -1494,6 +1494,121 @@ def apply_kickoff_detail(*, seed, event_id, kick_no, kicking, receiving, rosters
     return [row]
 
 
+def try_row(at, *, scoring, opponent, available, stats, made, seed, event_id, anchor):
+    """Kernel 2014.6 batch B8: the try row after a non-offensive touchdown (a
+    kick return's or the defense's; R15, the try itself R8's). ``at`` gives
+    the row's drive, period and game_clock. It is anchored to its score
+    (``anchor`` = {"kick": kick_no} or {"drive": number}) and names
+    ``scoring_team``, so the audit reads it against that kick or that
+    possession's non_offensive_score, never as a possession's own try. The
+    kicker and long snapper are named on a keyed detail stream; the kicker's
+    try counters are credited here (the club's by the kernel)."""
+    key = "kick-%s" % anchor["kick"] if "kick" in anchor else "drive-%s" % anchor["drive"]
+    rng = _stream(KICKOFF_DETAIL_TAG, seed, event_id, key, "try")
+    kicker = usage.kicking_specialist(available, "K", "placekicker") or choose(rng, available, {"K"}, "placekicker")
+    line = stats[scoring.team_id]["players"][kicker.player_id]
+    _bump(line, "extra_points_attempted")
+    if made:
+        _bump(line, "extra_points_made")
+    snapper = usage.long_snapper(available, usage.protection_front(available))
+    if snapper is not None:
+        _bump(stats[scoring.team_id]["players"][snapper.player_id], "long_snaps")
+    return {"drive": at["drive"], "snap_in_drive": at.get("snap_in_drive", 0), "period": at["period"],
+            "game_clock": at["game_clock"], "offense": scoring.team_id, "defense": opponent,
+            "play_type": "extra_point", "kicker": kicker.player_id, "made": bool(made),
+            "long_snapper": snapper.player_id if snapper is not None else None,
+            "result_yards": 0, "touchdown": False, "turnover": False,
+            "anchor": dict(anchor), "scoring_team": scoring.team_id}
+
+
+# ---- possession sequencing (kernel 2014.6, batch B8) -----------------------
+
+# The compact kicks summary a receipt carries (one row per kick, in kick
+# order): the kick's number, kicking and receiving club, half, the game
+# seconds remaining when it was kicked, its position on its chain, the
+# possession it followed (None for a half's opener) and the possession it
+# precedes, whether it was a safety free kick, its outcome, its decision
+# basis, the start it gave and the points it scored (a return touchdown with
+# its try; None otherwise). Append-only, like DRIVE_SUMMARY_FIELDS.
+KICK_SUMMARY_FIELDS = ("kick_no", "kicking", "receiving", "half", "remaining", "chain", "after_drive",
+                       "drive", "free_kick", "outcome", "basis", "next_start", "points")
+RETAINED_OUTCOME = "retained"
+RETURN_TOUCHDOWN_OUTCOME = "returned_touchdown"
+
+
+def has_kick_sequence(result):
+    """True when every kick record carries the batch B8 chain fields."""
+    kicks = result.get("kickoffs")
+    if kicks is None:
+        return "kicks" in result
+    return all("chain" in k for k in kicks)
+
+
+def kick_summary(kickoffs):
+    """Compact per-kick rows for receipts (KICK_SUMMARY_FIELDS)."""
+    return [[k.get(field) for field in KICK_SUMMARY_FIELDS] for k in kickoffs]
+
+
+def kicks_of(result):
+    """The kicks of a result (its kick records) or a receipt (its kicks
+    summary rows as mappings), in kick order; [] when neither is present."""
+    if result.get("kickoffs") is not None:
+        kicks = list(result["kickoffs"])
+    else:
+        kicks = [dict(zip(KICK_SUMMARY_FIELDS, row)) for row in result.get("kicks", ())]
+    return sorted(kicks, key=lambda k: k.get("kick_no", 0))
+
+
+def is_touchback(kick):
+    """A kick record's touchback flag, or on a summary row its outcome (the
+    flag and the outcome agree on every record of both bases)."""
+    return bool(kick["touchback"]) if "touchback" in kick else kick.get("outcome") == "touchback"
+
+
+def expected_start_kind(kick):
+    """The start kind of the possession a kick hands over (kernel._start_kind)."""
+    retained = kick.get("outcome") == RETAINED_OUTCOME
+    if kick.get("free_kick"):
+        return "free_kick_retained" if retained else "free_kick"
+    if retained:
+        return "kickoff_retained"
+    return "kickoff_touchback" if is_touchback(kick) else "kickoff"
+
+
+def scoring_events(result):
+    """Every score of a game in game order, rebuilt from the possessions (or
+    a receipt's drives) and the kicks: {"kind", "team", "points", "half",
+    "source": "drive" | "kick", and "drive" or "kick_no"}. A kick's event
+    precedes the possession whose number it carries. Never read from the
+    stored list: the audit compares the rebuild to it."""
+    from .rules import kick_score, possession_score
+    teams = list(result.get("final_score") or result.get("score") or {})
+    other = {t: next((u for u in teams if u != t), None) for t in teams}
+    possessions = _possessions(result)
+    kicks = kicks_of(result)
+    by_drive = {}
+    for kick in kicks:
+        by_drive.setdefault(kick.get("drive"), []).append(kick)
+    events = []
+
+    def kick_events(group):
+        for kick in group:
+            score = kick_score(kick)
+            if score is not None:
+                events.append({"kind": score[0], "team": score[1], "points": score[2], "half": kick.get("half"),
+                               "source": "kick", "kick_no": kick.get("kick_no")})
+
+    for p in possessions:
+        kick_events(by_drive.pop(p["number"], ()))
+        score = possession_score(p, other.get(p.get("team")))
+        if score is not None:
+            events.append({"kind": score[0], "team": score[1], "points": score[2], "half": p.get("half"),
+                           "source": "drive", "drive": p["number"]})
+    for number in sorted(k for k in by_drive if k is not None):
+        kick_events(by_drive[number])
+    return events
+
+
 # ---- ledger coherence ------------------------------------------------------
 
 class CoherenceClass:
@@ -1562,15 +1677,20 @@ _GROUP_PREDICATES = {
     # Kernel 2014.6 batch B6 (W3, W5a): evaluated on a 2014.6-or-later
     # result or receipt with the full snap ledger and the timeout state.
     "b6_ledger": lambda r: from_kernel("2014.6")(r) and has_spots(r) and has_timeouts(r) and _ledger(r),
+    # Kernel 2014.6 batch B8 (possession sequencing): evaluated on a
+    # 2014.6-or-later result or receipt whose kicks carry the chain fields
+    # (has_kick_sequence); zero tolerance from the start, since no branch
+    # fires until B9 and B10 and every game must already sequence cleanly.
+    "b8_sequence": lambda r: from_kernel("2014.6")(r) and has_spots(r) and has_kick_sequence(r),
 }
+_LISTED_FROM = {"b6_ledger": "2014.6", "b8_sequence": "2014.6"}
 
 
 def _registry(rows):
     out = []
     for group, names in rows:
-        listed_from = "2014.6" if group == "b6_ledger" else None
         for name in names:
-            out.append(CoherenceClass(name, group, _GROUP_PREDICATES[group], listed_from=listed_from,
+            out.append(CoherenceClass(name, group, _GROUP_PREDICATES[group], listed_from=_LISTED_FROM.get(group),
                                       audit_only=group == "b6_ledger"))
     return tuple(out)
 
@@ -1600,6 +1720,11 @@ COHERENCE_REGISTRY = _registry((
     # and W5a's clock-detail records.
     ("b6_ledger", ("field_goal_before_fourth_down", "kick_clock_shared", "snap_at_zero", "timeout_rows_mismatch",
                    "two_minute_warning_missing")),
+    # Kernel 2014.6 batch B8 (listed from the 2014.6 cohort): the next
+    # possessor follows from the event that ended the last possession, and
+    # every kick sits coherently on its chain (side-aware, touchdown rows
+    # exempt from the hand-over checks).
+    ("b8_sequence", ("possession_sequence_break", "kick_chain_incoherent")),
 ))
 
 
@@ -1619,6 +1744,7 @@ LEGACY_CLASSES = _names("legacy")
 SPOT_CLASSES = _names("spot", "spot_ledger")
 SPOT_LEDGER_CLASSES = _names("spot_ledger")
 B6_CLASSES = _names("b6_ledger")
+B8_CLASSES = _names("b8_sequence")
 AUDIT_ONLY_CLASSES = tuple(c.name for c in COHERENCE_REGISTRY if c.audit_only)
 
 
@@ -1658,6 +1784,10 @@ DRIVE_SUMMARY_FIELDS = (
     # Kernel 2014.4 phase 2 (append-only): the punt transition as adjusted,
     # the layout resample record, the field-goal probability drawn against.
     "punt", "layout_resample", "fg_prob",
+    # Kernel 2014.6 batch B8 (append-only; the slot R15, batch B9, fills):
+    # a non-offensive score made during the possession
+    # (runtime.rules.possession_score reads it first).
+    "non_offensive_score",
 )
 LABEL_TYPES = {KNEEL_LABEL: "run", GENERIC_RUN: "run", SPIKE_LABEL: "pass",
                GENERIC_PASS: "pass", SCRAMBLE_LABEL: "pass"}
@@ -1848,14 +1978,10 @@ def _check_timeouts(possessions, game_type, other, err):
 
 
 def _score_kind(p):
-    category = p["category"]
-    if category == "touchdown":
-        return "touchdown"
-    if category == "field_goal_attempt" and p.get("fg_made"):
-        return "field_goal"
-    if category == "safety":
-        return "safety"
-    return None
+    """The kind of score a possession produced (runtime.rules.possession_score)."""
+    from .rules import possession_score
+    score = possession_score(p)
+    return score[0] if score else None
 
 
 def _elapsed(row):
@@ -1988,10 +2114,15 @@ def _check_spots(result, possessions, err, fp):
             err("chain_counter_mismatch", "%s counters differ from the drive chains" % team)
 
 
-def _check_spot_ledger(result, possessions, rows_by_drive, kicks, err):
-    """Kick-row and label classes (full snap ledger, kernel 2013.7 onward)."""
+def _check_spot_ledger(result, possessions, rows_by_drive, kicks, err, sequencing=False):
+    """Kick-row and label classes (full snap ledger, kernel 2013.7 onward).
+
+    Kernel 2014.6 batch B8: for the sequencing cohort the kick rows' spot
+    identity is side-aware and lives in kick_chain_incoherent (a kick the
+    kicking club keeps lands in its own frame; a return touchdown has no
+    hand-over), so the receiving-frame identity below is not applied."""
     by_number = {p["number"]: p for p in possessions}
-    for k in kicks:
+    for k in ([] if sequencing else kicks):
         p = by_number.get(k["drive"])
         nxt = k.get("next_start")
         if p is None or nxt != p["start_spot"]:
@@ -2087,7 +2218,7 @@ def check_ledger(result, base=None, audit_only=False):
     Kernel 2014.6 batch B6: the audit-only classes (AUDIT_ONLY_CLASSES) are
     left out unless `audit_only` is true (audit_only_errors), so no game is
     refused on them while they are audit-only."""
-    from .rules import ot_status
+    from .rules import kick_score, kick_try_made, ot_history, ot_status, possession_score
     from .calibration_base import base_for_result
 
     base = base if base is not None else base_for_result(result)
@@ -2100,7 +2231,7 @@ def check_ledger(result, base=None, audit_only=False):
         errors.append("%s: %s" % (cls, detail))
 
     possessions = _possessions(result)
-    if not possessions:
+    if not possessions and not (_GROUP_PREDICATES["b8_sequence"](result) and kicks_of(result)):
         return errors
     spots = has_spots(result)
     game_type = result.get("game_type", "regular")
@@ -2108,9 +2239,20 @@ def check_ledger(result, base=None, audit_only=False):
     other = {t: next((u for u in teams if u != t), None) for t in teams}
     regulation = [p for p in possessions if p["half"] in (1, 2)]
     overtime = [p for p in possessions if p["half"] == "OT"]
-    last = possessions[-1]
+    last = possessions[-1] if possessions else None
+    # Kernel 2014.6 batch B8: the sequencing cohort reads its kicks (records
+    # or the receipt's summary) and audits the hand-over between possessions
+    # side-aware; earlier cohorts keep their frozen checks byte for byte.
+    sequencing = _GROUP_PREDICATES["b8_sequence"](result)
+    kick_list = kicks_of(result) if sequencing else []
+    kicks_after = {}
+    for k in kick_list:
+        kicks_after.setdefault(k.get("after_drive"), []).append(k)
+    events = scoring_events(result)
     if spots and has_timeouts(result):
         _check_timeouts(possessions, game_type, other, err)
+    if sequencing:
+        _check_sequence(possessions, kick_list, kicks_after, game_type, other, err)
 
     for p in regulation:
         if p["start_clock"] > 1800 > p["end_clock"]:
@@ -2130,6 +2272,17 @@ def check_ledger(result, base=None, audit_only=False):
         for p in regulation:
             if any(p["start_clock"] > b > p["end_clock"] for b in (2700, 900)):
                 err("drives_spanning_half", "drive %s spans a quarter" % p["number"])
+    elif sequencing:
+        # Batch B8: the second-half kicker is the opening receiver, read from
+        # the kicks themselves (a return touchdown on an opener changes who
+        # possesses first, not who kicked).
+        openers_by_half = {h: next((k for k in kick_list if k.get("half") == h and k.get("after_drive") is None
+                                    and k.get("chain") == 1), None) for h in (1, 2)}
+        if None in openers_by_half.values():
+            err("missing_half_kickoff", "a half has no opening kick on the chain")
+        elif openers_by_half[2]["kicking"] != openers_by_half[1]["receiving"]:
+            err("wrong_second_half_receiver", "second half kicked off by %s, the opening kicker"
+                % openers_by_half[2]["kicking"])
     elif regulation and (first_h2 is None or first_h2["team"] == regulation[0]["team"]):
         err("wrong_second_half_receiver", "second half opened by the opening receiver")
     for half, top, bottom in ((1, 3600, 1800), (2, 1800, 0)):
@@ -2145,6 +2298,8 @@ def check_ledger(result, base=None, audit_only=False):
     for a, b in zip(possessions, possessions[1:]):
         if pro_bowl and b["half"] in (1, 2) and b["start_clock"] in QUARTER_STARTS:
             continue  # a Pro Bowl quarter's opener is set by the alternation
+        if sequencing:
+            continue  # batch B8: possession_sequence_break owns the alternation
         if a["half"] == b["half"] and a["team"] == b["team"]:
             err("clock_regression", "drive %s repeats the offense" % b["number"])
 
@@ -2165,7 +2320,12 @@ def check_ledger(result, base=None, audit_only=False):
                 err("drive_net_outside_2012_range", "drive %s net %s" % (p["number"], p["net_yards"]))
         if p.get("kickoff_after"):
             expired = p["end_clock"] in ((1800, 0) if p["half"] in (1, 2) else (0,))
-            if expired or p is last:
+            # Batch B8: the last possession may be followed by a kick only
+            # when that kick chain ended the game, a return touchdown in
+            # overtime (rules.ot_history).
+            chain_ended = (sequencing and p["half"] == "OT" and kicks_after.get(p["number"])
+                           and kick_score(kicks_after[p["number"]][-1]) is not None)
+            if expired or (p is last and not chain_ended):
                 err("kickoff_after_expired_clock", "drive %s" % p["number"])
         if p.get("half_final"):
             boundary = 1800 if p["half"] == 1 else 0
@@ -2181,17 +2341,16 @@ def check_ledger(result, base=None, audit_only=False):
         if p["half"] == "OT" and category == "touchdown" and p.get("xp_made") is not None:
             err("xp_after_ot_walkoff", "drive %s" % p["number"])
 
+    # Every score, drive and kick, in game order (scoring_events): the
+    # identity holds against it, and a stored list is compared, never trusted.
     points = {t: 0 for t in teams}
-    for p in possessions:
-        kind = _score_kind(p)
-        if kind == "touchdown":
-            points[p["team"]] += 6 + (1 if p.get("xp_made") else 0)
-        elif kind == "field_goal":
-            points[p["team"]] += 3
-        elif kind == "safety" and other.get(p["team"]):
-            points[other[p["team"]]] += 2
+    for event in events:
+        if event["team"] in points:
+            points[event["team"]] += event["points"]
     if teams and points != dict(result["final_score"]):
-        err("score_identity_violations", "drive points %s vs final %s" % (points, result["final_score"]))
+        err("score_identity_violations", "scored points %s vs final %s" % (points, result["final_score"]))
+    if result.get("scoring_events") is not None and result["scoring_events"] != events:
+        err("score_identity_violations", "stored scoring_events differ from the rebuild")
     for team, s in result.get("team_stats", {}).items():
         if "extra_points_made" in s:
             identity = 6 * s["touchdowns"] + s["extra_points_made"] + 3 * s["field_goals"] + 2 * s["safeties"]
@@ -2199,29 +2358,29 @@ def check_ledger(result, base=None, audit_only=False):
                 err("score_identity_violations", "%s team counters" % team)
 
     regulation_points = {t: 0 for t in teams}
-    for p in regulation:
-        kind = _score_kind(p)
-        if kind == "touchdown":
-            regulation_points[p["team"]] += 6 + (1 if p.get("xp_made") else 0)
-        elif kind == "field_goal":
-            regulation_points[p["team"]] += 3
-        elif kind == "safety" and other.get(p["team"]):
-            regulation_points[other[p["team"]]] += 2
+    for event in events:
+        if event["half"] in (1, 2) and event["team"] in regulation_points:
+            regulation_points[event["team"]] += event["points"]
     tied = len(set(regulation_points.values())) == 1
-    if overtime and not tied:
+    ot_kicks = [k for k in kick_list if k.get("half") == "OT"]
+    overtime_played = bool(overtime or ot_kicks)
+    if overtime_played and not tied:
         err("ot_end_inconsistent", "overtime played after a decided regulation")
-    if tied and teams and not overtime:
+    if tied and teams and not overtime_played:
         err("ot_end_inconsistent", "tied regulation without overtime")
-    history = []
-    for index, p in enumerate(overtime):
-        history.append({"team": p["team"], "score": _score_kind(p)})
-        status = ot_status(history, game_type)
-        final = index == len(overtime) - 1
+    # The overtime history (rules.ot_history: possessions and, for the
+    # sequencing cohort, kicks) must end exactly where the rule ends it.
+    history = ot_history(overtime, ot_kicks)
+    ot_expired = bool(overtime) and overtime[-1]["end_clock"] == 0
+    for index, entry in enumerate(history):
+        status = ot_status(history[:index + 1], game_type)
+        final = index == len(history) - 1
+        where = ("kick %s" % entry["kick"]) if entry.get("kick") is not None else (
+            "drive %s" % overtime[sum(1 for e in history[:index + 1] if e.get("kick") is None) - 1]["number"])
         if status == "end" and not final:
-            err("ot_end_inconsistent", "play continued after drive %s ended overtime" % p["number"])
-        if final and status != "end" and not (
-                p["end_clock"] == 0 and ot_status(history, game_type, expired=True) == "end"):
-            err("ot_end_inconsistent", "overtime stopped before it ended at drive %s" % p["number"])
+            err("ot_end_inconsistent", "play continued after %s ended overtime" % where)
+        if final and status != "end" and not (ot_expired and ot_status(history, game_type, expired=True) == "end"):
+            err("ot_end_inconsistent", "overtime stopped before it ended at %s" % where)
 
     if spots:
         _check_spots(result, possessions, err, fpm)
@@ -2255,12 +2414,30 @@ def check_ledger(result, base=None, audit_only=False):
         openers.add(first_h2["number"])
         second = [k for k in kicks if k["drive"] == first_h2["number"]
                   and (k["period"], k["game_clock"]) == (3, "15:00")]
-        if not second or second[0]["defense"] != first_h2["team"]:
+        if sequencing:
+            # Batch B8: the second-half opener is kicked by the opening receiver.
+            opening_receiver = kicks[0]["defense"] if kicks else None
+            if not second or second[0]["offense"] != opening_receiver:
+                err("missing_half_kickoff", "no second-half kickoff at Q3 15:00 by %s" % opening_receiver)
+        elif not second or second[0]["defense"] != first_h2["team"]:
             err("missing_half_kickoff", "no second-half kickoff at Q3 15:00 to %s" % first_h2["team"])
     if overtime and not pro_bowl:
         openers.add(overtime[0]["number"])
     kicked_drives = set()
-    for k in kicks:
+    if sequencing:
+        # Batch B8: the kick rows are the kick records' rows, one each, in
+        # order and agreeing on the hand-over (kick_chain_incoherent owns the
+        # chain itself); a chain may put several kicks before one possession.
+        if len(kicks) != len(kick_list):
+            err("kick_chain_incoherent", "%d kick rows for %d kicks" % (len(kicks), len(kick_list)))
+        for row, k in zip(kicks, kick_list):
+            if (row["drive"], row["offense"], row["defense"]) != (k["drive"], k["kicking"], k["receiving"]) or (
+                    row.get("next_start") != k.get("next_start")):
+                err("kick_chain_incoherent", "kick %s row disagrees with its record" % k.get("kick_no"))
+            if row.get("play_type") != ("free_kick" if k.get("free_kick") else "kickoff"):
+                err("kick_chain_incoherent", "kick %s row kind" % k.get("kick_no"))
+        kicked_drives = {k["drive"] for k in kicks}
+    for k in ([] if sequencing else kicks):
         drive = k["drive"]
         if drive in kicked_drives:
             err("kickoff_after_expired_clock", "second kick before drive %s" % drive)
@@ -2307,7 +2484,7 @@ def check_ledger(result, base=None, audit_only=False):
             err("drives_missing_terminal", "drive %s reason mismatch" % p["number"])
         if any(r.get("play_type") in ("pass", "run") for r in rows[index + 1:]):
             err("snaps_after_terminal", "drive %s" % p["number"])
-        tries = [r for r in rows if r.get("play_type") == "extra_point"]
+        tries = [r for r in rows if r.get("play_type") == "extra_point" and not r.get("anchor")]
         if category == "touchdown":
             if p.get("xp_made") is None and tries:
                 err("xp_after_ot_walkoff" if p["half"] == "OT" else "duplicate_terminal",
@@ -2355,8 +2532,39 @@ def check_ledger(result, base=None, audit_only=False):
             if category == "touchdown" and position < len(yards) - 1 and running >= p["net_yards"]:
                 err("prefix_out_of_bounds", "drive %s reached the end zone before the touchdown" % p["number"])
                 break
+    if sequencing:
+        # Batch B8: a try anchored to a kick (a return touchdown's) reads
+        # against that kick's record, never as a possession's try.
+        by_kick = {k.get("kick_no"): k for k in kick_list}
+        anchored = {}
+        for rows in rows_by_drive.values():
+            for r in rows:
+                if r.get("play_type") == "extra_point" and r.get("anchor"):
+                    a = r["anchor"] or {}
+                    anchored.setdefault(("kick", a["kick"]) if "kick" in a else ("drive", a.get("drive")), []).append(r)
+        for (kind, key), rows in anchored.items():
+            if kind == "kick":
+                k = by_kick.get(key)
+                score, made = (kick_score(k), kick_try_made(k)) if k is not None else (None, None)
+                if k is not None and "xp_made" not in k and made is None and len(rows) == 1 and not rows[0].get("made"):
+                    made = False  # a summary row reads 6 for a missed try as for no try
+            else:
+                p = by_number.get(key)
+                non_offensive = (p or {}).get("non_offensive_score") or {}
+                score = (non_offensive["kind"], non_offensive.get("team")) if non_offensive.get("kind") else None
+                made = non_offensive.get("xp_made")
+            if score is None or len(rows) != 1 or rows[0].get("made") != made or rows[0].get("offense") != score[1]:
+                err("score_identity_violations", "try anchored to %s %s" % (kind, key))
+        for k in kick_list:
+            if kick_score(k) is not None and kick_try_made(k) is not None and len(anchored.get(("kick", k.get("kick_no")), ())) != 1:
+                err("score_identity_violations", "kick %s touchdown without its try row" % k.get("kick_no"))
+        for p in possessions:
+            non_offensive = p.get("non_offensive_score") or {}
+            if non_offensive.get("kind") == "touchdown" and non_offensive.get("xp_made") is not None \
+                    and len(anchored.get(("drive", p["number"]), ())) != 1:
+                err("score_identity_violations", "drive %s defensive touchdown without its try row" % p["number"])
     if spots:
-        _check_spot_ledger(result, possessions, rows_by_drive, kicks, err)
+        _check_spot_ledger(result, possessions, rows_by_drive, kicks, err, sequencing)
     if has_chain_ledger(result):
         _check_chain_ledger(possessions, rows_by_drive, err)
     if has_chain_model(result):
@@ -2366,6 +2574,145 @@ def check_ledger(result, base=None, audit_only=False):
     if _GROUP_PREDICATES["b6_ledger"](result) and not skipped >= set(B6_CLASSES):
         _check_b6_ledger(result, possessions, rows_by_drive, err, base.field_position())
     return errors
+
+
+def _check_sequence(possessions, kicks, kicks_after, game_type, other, err):
+    """Kernel 2014.6 batch B8 classes (zero tolerance).
+
+    possession_sequence_break: inside a half, the next possessor follows from
+    the event that ended the last possession: after a score, the club the
+    kick chain handed the ball to (the receiving club, or the kicking club
+    when it kept the ball; with no kick, in the Pro Bowl, the club that
+    would have received: the club scored upon, or the scorer after a
+    safety); after a kick-less transition, the defense, or the same offense
+    after a punt it kept. A half's first possessor is the club its opening
+    chain handed the ball to.
+
+    kick_chain_incoherent: every kick sits on its chain: an opener (the
+    first kick of its half, following no possession) or the kick after a
+    scoring possession, kicked by the scorer (the club scored upon after a
+    safety, as a free kick) in the same half and before the next possession;
+    a later link follows a kick returned for a touchdown and is kicked by
+    that scorer. A kick returned for a touchdown hands over nothing (exempt
+    from the hand-over checks); every other kick is the last of its chain
+    and hands the ball to the next possession: the receiving club (the
+    kicking club when it kept the ball) at the kick's own start, with the
+    matching start kind, and when the record carries its yards, by the
+    identity of its frame (receiving: spot + kick - return + enforcement;
+    touchback: 80 + enforcement; retained: 100 - (spot + kick - return) +
+    enforcement)."""
+    from .rules import kick_score, kicking_club, possession_score, RETAINED_START_KINDS
+    by_number = {p["number"]: p for p in possessions}
+    by_kick = {k.get("kick_no"): k for k in kicks}
+    pro_bowl = game_type == PRO_BOWL
+
+    def handed_to(kick):
+        return kick["kicking"] if kick.get("outcome") == RETAINED_OUTCOME else kick["receiving"]
+
+    # -- the alternation --------------------------------------------------------------------------
+    for index, b in enumerate(possessions):
+        a = possessions[index - 1] if index else None
+        if pro_bowl and b["half"] in (1, 2) and b["start_clock"] in QUARTER_STARTS:
+            continue  # the Pro Bowl alternation at each quarter is checked above
+        if a is None or a["half"] != b["half"]:
+            opener = [k for k in kicks if k.get("half") == b["half"] and k.get("after_drive") is None]
+            if opener:
+                last_kick = max(opener, key=lambda k: k.get("kick_no", 0))
+                if kick_score(last_kick) is not None or b["team"] != handed_to(last_kick):
+                    err("possession_sequence_break", "drive %s does not follow its half's opening chain"
+                        % b["number"])
+            continue
+        score = possession_score(a, other.get(a["team"]))
+        if score is not None:
+            chain = kicks_after.get(a["number"], [])
+            if chain:
+                last_kick = chain[-1]
+                if kick_score(last_kick) is not None:
+                    err("possession_sequence_break", "drive %s follows a chain that ended on a touchdown" % b["number"])
+                    continue
+                expected = handed_to(last_kick)
+            else:
+                kicker = kicking_club(score[0], score[1], other.get(score[1]))
+                expected = other.get(kicker)
+            if b["team"] != expected:
+                err("possession_sequence_break", "drive %s possessed by %s after %s's %s" % (
+                    b["number"], b["team"], score[1], score[0]))
+        else:
+            if kicks_after.get(a["number"]):
+                err("kick_chain_incoherent", "kick after non-scoring drive %s" % a["number"])
+            expected = a["team"] if b.get("start_kind") == "punt_retained" else other.get(a["team"])
+            if b["team"] != expected:
+                err("possession_sequence_break", "drive %s possessed by %s after drive %s (%s)" % (
+                    b["number"], b["team"], a["number"], a["category"]))
+            if b.get("start_kind") in ("kickoff", "kickoff_touchback", "free_kick", "kickoff_retained",
+                                        "free_kick_retained") and not pro_bowl:
+                err("possession_sequence_break", "drive %s starts from a kick after a non-scoring drive"
+                    % b["number"])
+
+    # -- the kick chains --------------------------------------------------------------------------
+    for k in kicks:
+        no, chain, n = k.get("kick_no"), k.get("chain"), k.get("drive")
+        where = "kick %s" % no
+        if chain == 1:
+            if k.get("after_drive") is None:
+                earlier = [j for j in kicks if j.get("half") == k.get("half") and j.get("kick_no", 0) < no]
+                if earlier or k.get("free_kick"):
+                    err("kick_chain_incoherent", "%s opens a half that already had a kick" % where)
+                if n != (min((p["number"] for p in possessions if p["half"] == k.get("half")), default=n)):
+                    err("kick_chain_incoherent", "%s opener precedes drive %s" % (where, n))
+            else:
+                p = by_number.get(k["after_drive"])
+                score = possession_score(p, other.get(p["team"])) if p is not None else None
+                if p is None or score is None or not p.get("kickoff_after"):
+                    err("kick_chain_incoherent", "%s follows drive %s without a score" % (where, k.get("after_drive")))
+                else:
+                    kicker = kicking_club(score[0], score[1], other.get(score[1]))
+                    if (k["kicking"], k["receiving"]) != (kicker, other.get(kicker)):
+                        err("kick_chain_incoherent", "%s kicked by %s after %s's %s" % (
+                            where, k["kicking"], score[1], score[0]))
+                    if bool(k.get("free_kick")) != (score[0] == "safety"):
+                        err("kick_chain_incoherent", "%s kind after a %s" % (where, score[0]))
+                    if n != p["number"] + 1 or k.get("half") != p["half"]:
+                        err("kick_chain_incoherent", "%s placed before drive %s, after drive %s" % (
+                            where, n, p["number"]))
+        else:
+            prev = by_kick.get((no or 0) - 1)
+            prev_score = kick_score(prev) if prev is not None else None
+            if prev is None or prev_score is None or prev.get("drive") != n or prev.get("chain") != (chain or 0) - 1 \
+                    or k["kicking"] != prev_score[1] or k.get("free_kick") or k.get("after_drive") != prev.get("after_drive"):
+                err("kick_chain_incoherent", "%s is not the next link after kick %s" % (where, (no or 0) - 1))
+        if kick_score(k) is not None:
+            if k.get("next_start") is not None:
+                err("kick_chain_incoherent", "%s returned for a touchdown publishes a next start" % where)
+            continue
+        following = by_kick.get((no or 0) + 1)
+        if following is not None and following.get("drive") == n:
+            err("kick_chain_incoherent", "%s is followed by another kick before drive %s" % (where, n))
+        nxt = by_number.get(n)
+        if nxt is None:
+            err("kick_chain_incoherent", "%s hands the ball to no possession" % where)
+            continue
+        if nxt["team"] != handed_to(k):
+            err("kick_chain_incoherent", "%s handed the ball to %s, possessed by %s" % (where, handed_to(k), nxt["team"]))
+        if nxt.get("start_spot") != k.get("next_start"):
+            err("kick_chain_incoherent", "%s next start %s, drive %s starts at %s" % (
+                where, k.get("next_start"), n, nxt.get("start_spot")))
+        if nxt.get("start_kind") != expected_start_kind(k):
+            err("kick_chain_incoherent", "%s start kind %s for %s" % (where, nxt.get("start_kind"), k.get("outcome")))
+        if nxt.get("half") != k.get("half"):
+            err("kick_chain_incoherent", "%s kicked in half %s before drive %s" % (where, k.get("half"), n))
+        if "kick_yards" in k:
+            spot = 20 if k.get("free_kick") else 35
+            e = k.get("enforcement") or 0
+            kick_yards, ret = k.get("kick_yards") or 0, k.get("return_yards") or 0
+            if is_touchback(k):
+                expected = 80 + e
+            elif k.get("outcome") == RETAINED_OUTCOME:
+                expected = 100 - (spot + kick_yards - ret) + e
+            else:
+                expected = spot + kick_yards - ret + e
+            if k.get("next_start") != expected:
+                err("kick_chain_incoherent", "%s identity: next %s, expected %s" % (where, k.get("next_start"), expected))
 
 
 def audit_only_errors(result, base=None):

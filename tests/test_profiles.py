@@ -60,6 +60,9 @@ def strip_2014_6_fields(result):
     for row in out["play_ledger"]:
         for key in group["ledger"]:
             row.pop(key, None)
+    for kick in out.get("kickoffs", ()):
+        for key in group.get("kickoff", ()):
+            kick.pop(key, None)
     for team in (out.get("team_stats") or {}).values():
         for key in group["team"]:
             team.pop(key, None)
@@ -104,7 +107,9 @@ class ProfileTableTests(unittest.TestCase):
         self.assertEqual(PROFILE_2014_6.flags, frozenset({"base_2014_6", "regimes_v3", "injury_2014_6",
                                                           "usage_2014_6",
                                                           # batch B6 (W3, W5a, W2a)
-                                                          "early_fg_v2", "clock_detail_v1", "substitution_record"}))
+                                                          "early_fg_v2", "clock_detail_v1", "substitution_record",
+                                                          # batch B8 (possession sequencing)
+                                                          "possession_sequencing"}))
         a, b = sample_teams()
         r = resolve_game(a, b, seed=SEED + b"-b5-2014-6", event_id="b5-2014-6", _test_profile=PROFILE_2014_6)
         self.assertEqual(r["kernel_version"], "2014.6")
@@ -176,10 +181,16 @@ class Profile2014_5IdentityTests(unittest.TestCase):
 
 class StripFieldGroupTests(unittest.TestCase):
     def test_field_group_is_registered_and_empty_before_its_batches(self):
-        # Batch B6 appended the fourth-down marker group and the W2a and W5a fields.
+        # Batch B6 appended the fourth-down marker group and the W2a and W5a
+        # fields; batch B8 the kick-record group, the kicks summary, the
+        # scoring events and the possession's non-offensive score.
         self.assertEqual(set(KERNEL_2014_6_FIELD_GROUP),
-                         {"result", "possession", "ledger", "team", "player", "fourth_down"})
-        self.assertEqual(KERNEL_2014_6_FIELD_GROUP["result"], ("calibration_base", "substitutions"))
+                         {"result", "possession", "ledger", "team", "player", "fourth_down", "kickoff"})
+        self.assertEqual(KERNEL_2014_6_FIELD_GROUP["result"],
+                         ("calibration_base", "substitutions", "kicks", "scoring_events"))
+        self.assertEqual(KERNEL_2014_6_FIELD_GROUP["possession"], ("last_spike_seconds_left", "non_offensive_score"))
+        self.assertEqual(KERNEL_2014_6_FIELD_GROUP["kickoff"],
+                         ("remaining", "chain", "after_drive", "basis", "touchdown", "scoring_team", "xp_made", "points"))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["ledger"], ("decision_source",))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["fourth_down"], ("decision_source",))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["team"], KERNEL_2014_6_TEAM_STAT_FIELDS)

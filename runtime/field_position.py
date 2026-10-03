@@ -348,7 +348,10 @@ def adjust_punt(record, shift):
     (gross = LOS, start 80 + enforcement). No draw. Zero returns the record
     with adjust 0."""
     out = dict(record, adjust=int(shift))
-    if not shift or record["touchback"]:
+    if not shift or record["touchback"] or record.get("outcome") == "retained":
+        # Kernel 2014.6 batch B8: a punt the kicking club kept (a muff or
+        # fumble it recovered, outcome "retained") is a recovery record in
+        # the kicking frame; the punter's net term does not move it.
         return out
     los, ret, enforcement = record["los"], record["return_yards"], record["enforcement"]
     gross = max(0, record["gross"] + int(shift))
@@ -2132,24 +2135,46 @@ class FieldPositionModelV3(FieldPositionModel):
         """A real safety free kick from the 20 the receiving club takes over."""
         return self._kick_record(rng, self._kick_pools["free_kick_pool"], 20)
 
+    def punt_start(self, record, los):
+        """The next start a real punt record gives from this line of
+        scrimmage, in the frame of the club that takes over: the receiving
+        club's (100 - LOS + gross - return + enforcement; a touchback is
+        80 + enforcement) or, for a record the kicking club kept (outcome
+        "retained", possession "kicking"; kernel 2014.6 batch B8), the
+        kicking club's own (LOS - gross + return + enforcement)."""
+        P = self.PUNT
+        if record[P["touchback"]]:
+            return 80 + record[P["enforcement"]]
+        if record[P["possession"]] == "kicking":
+            return los - record[P["gross"]] + record[P["return_yards"]] + record[P["enforcement"]]
+        return 100 - los + record[P["gross"]] - record[P["return_yards"]] + record[P["enforcement"]]
+
+    def punt_feasible(self, record, los):
+        """A punt record is feasible from a line of scrimmage when the start
+        it gives, in the right frame (punt_start), lies inside the field; a
+        touchback record only from a line at or inside its own."""
+        P = self.PUNT
+        if record[P["touchback"]]:
+            return los <= record[P["los"]]
+        return 1 <= self.punt_start(record, los) <= 99
+
     def punt(self, rng, los):
         P = self.PUNT
-
-        def ok(record):
-            if record[P["touchback"]]:
-                return los <= record[P["los"]]
-            start = 100 - los + record[P["gross"]] - record[P["return_yards"]] + record[P["enforcement"]]
-            return 1 <= start <= 99
-        candidates = self._nearest(self._punt_pool, P["los"], los, ok)
+        candidates = self._nearest(self._punt_pool, P["los"], los, lambda record: self.punt_feasible(record, los))
         record = candidates[rng.randrange(len(candidates))]
         touchback = bool(record[P["touchback"]])
         gross = los if touchback else record[P["gross"]]
         ret = 0 if touchback else record[P["return_yards"]]
         enforcement = record[P["enforcement"]]
-        start = 80 + enforcement if touchback else 100 - los + gross - ret + enforcement
-        return {"los": los, "outcome": record[P["outcome"]], "gross": gross, "return_yards": ret,
-                "enforcement": enforcement, "next_start": start, "touchback": touchback,
-                "record_los": record[P["los"]]}
+        start = self.punt_start(record, los)
+        out = {"los": los, "outcome": record[P["outcome"]], "gross": gross, "return_yards": ret,
+               "enforcement": enforcement, "next_start": start, "touchback": touchback,
+               "record_los": record[P["los"]]}
+        if record[P["possession"]] == "kicking":
+            # Batch B8: the kicking club keeps the ball (its start is in its
+            # own frame); drawn only once R12 layer C admits these records.
+            out["possession"] = "kicking"
+        return out
 
 
 MODEL_CLASSES = {SCHEMA: FieldPositionModel, SCHEMA_V3: FieldPositionModelV3}

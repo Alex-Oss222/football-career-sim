@@ -29,11 +29,12 @@ class KernelCoherenceTests(unittest.TestCase):
     def test_check_ledger_zero_violations(self):
         # Kernel 2014.1 adds two timeout-state classes, kernel 2014.4 three
         # clock-leg classes and four chain classes.
-        # Kernel 2014.6 batch B6 adds five audit-only classes measured only
-        # on 2014.6 results; a 2014.5 result measures the 42.
+        # Kernel 2014.6 batch B6 adds five audit-only classes and batch B8
+        # two sequencing classes, measured only on 2014.6 results; a 2014.5
+        # result measures the 42.
         through_2014_5 = set(play_detail.classes_for_cohort("2014.5"))
         self.assertEqual(len(through_2014_5), 42)
-        self.assertEqual(len(COHERENCE_CLASSES), 42 + len(play_detail.B6_CLASSES))
+        self.assertEqual(len(COHERENCE_CLASSES), 42 + len(play_detail.B6_CLASSES) + len(play_detail.B8_CLASSES))
         errors = [e for r in self.games for e in check_ledger(r)]
         self.assertEqual(errors, [])
         self.assertTrue(all(validate_result(r) == [] for r in self.games))
