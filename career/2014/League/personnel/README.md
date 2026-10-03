@@ -18,6 +18,7 @@
 | [draft_pairing.md](draft_pairing.md) | Jacksonville's selections and swap partners, filled at the May 8-10 draft |
 | [fa_draws.md](fa_draws.md) | Market draws at each pursued player's real signing date |
 | [FILLING_GUIDE.md](FILLING_GUIDE.md) | The small amount of human input needed and where to put it |
+| [branch_identity.json](branch_identity.json) | Kernel 2014.6 identity table (batch B4a): every TeamInput player of a dry Week 5 build joined to an nflverse gsis id by a stated rule, with sourced manual rows; built by `scripts/research/build_2014_branch_identity.py` (`--check`). An identity join, not an evaluation |
 | [In-season rails](../../../../library/2014_inseason_rails.md) | The other clubs' real in-season moves from Week 5 (method section 9): sources, two passes, the hold rule and decisions; each week's batch writes its record to `in_season/week_NN.md` |
 
 **Rebuild:** `python scripts/research/build_league_player_database.py`. This runs offline and preserves the sourced target section and club text outside generated markers. Add `--check` to compare the generated outputs without writing. The old `build_league_rails_rosters.py` exporter now stops with a migration message; it cannot overwrite this research.
@@ -34,6 +35,7 @@
 | File | What it contains |
 |---|---|
 | [FILLING_GUIDE.md](FILLING_GUIDE.md) | League rails: what needs human input. |
+| [branch_identity.json](branch_identity.json) | Generated identity join from every 2014 TeamInput player to a gsis id (kernel 2014.6 data; no statistic or grade). |
 | [draft_pairing.md](draft_pairing.md) | 2014 draft pairing. |
 | [fa_draws.md](fa_draws.md) | Free-agent market draws. |
 | [free_agent_pool.md](free_agent_pool.md) | 2014 free-agent pool. |

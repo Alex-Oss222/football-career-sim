@@ -1,0 +1,5913 @@
+{
+ "boundary": "hidden-state statistical priors for the engine only; never scouting evidence or a staff-facing grade; no staff assessment, grade or E2 advice reads them or their tiers",
+ "builder": "scripts/research/build_2010_2014_player_state_model.py",
+ "data_cutoff": "2014-09-29",
+ "derivation": "player-state-v1",
+ "evidence_weight": {
+  "Confirmed two-pass": 1.0,
+  "Single-pass": 0.5
+ },
+ "families": {
+  "DB": {
+   "adopted": {
+    "from": "pass 1",
+    "held": false,
+    "rho": 0.83,
+    "sb2": 0.0,
+    "status": "Confirmed two-pass",
+    "su2": 0.05972147673924901,
+    "swing_kept": true,
+    "tau": 0.1363060945577283
+   },
+   "aging": {
+    "adopted": "Z",
+    "basis": "U5 fallback (zero aging for every family)",
+    "candidates_fitted": "held (amendments 2 and 3 rest on U5)",
+    "punter_curve": "held (the punter curve is an aging candidate; Z under the fallback)"
+   },
+   "below_min_cell": [],
+   "centres": {
+    "2010": {
+     "centre": 0.5571977534732486,
+     "opportunities": 3383.0,
+     "qualifiers": 291
+    },
+    "2011": {
+     "centre": 0.5321428571428571,
+     "opportunities": 3360.0,
+     "qualifiers": 301
+    },
+    "2012": {
+     "centre": 0.5024897480960749,
+     "opportunities": 3414.0,
+     "qualifiers": 303
+    },
+    "2013": {
+     "centre": 0.5206307102858827,
+     "opportunities": 3393.0,
+     "qualifiers": 295
+    },
+    "2014w4": {
+     "centre": 0.5512820512820513,
+     "opportunities": 468.0,
+     "qualifiers": 117
+    }
+   },
+   "draft_priors": {
+    "drafted": {
+     "all": {
+      "lines": 255,
+      "mean": -0.14055028070209102,
+      "se": 0.0197435459771567,
+      "true_var": 0.026897091567830683
+     },
+     "leave_class_out": {
+      "2010": {
+       "lines": 189,
+       "mean": -0.15970888897645139,
+       "se": 0.022533685941144722,
+       "true_var": 0.0204307084312004
+      },
+      "2011": {
+       "lines": 190,
+       "mean": -0.11791779985195873,
+       "se": 0.023463440435526534,
+       "true_var": 0.030707778938110233
+      },
+      "2012": {
+       "lines": 194,
+       "mean": -0.13884016795233456,
+       "se": 0.023201096767206192,
+       "true_var": 0.028530219818390767
+      },
+      "2013": {
+       "lines": 198,
+       "mean": -0.13979445693746237,
+       "se": 0.022145013981343678,
+       "true_var": 0.029839358522215476
+      },
+      "2014": {
+       "lines": 249,
+       "mean": -0.14521136253550562,
+       "se": 0.019600416222430535,
+       "true_var": 0.02499382584295949
+      }
+     },
+     "lines_by_class": {
+      "2010": 66,
+      "2011": 65,
+      "2012": 61,
+      "2013": 57,
+      "2014": 6
+     }
+    },
+    "log_pick_slope": {
+     "applied": 0.0,
+     "lines": 255,
+     "se": 0.018792231165710174,
+     "slope": -0.15794323605126365,
+     "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+    },
+    "undrafted": {
+     "all": {
+      "lines": 71,
+      "mean": -0.23397969176057423,
+      "se": 0.036146724514667786,
+      "true_var": 0.012817036499839299
+     },
+     "leave_class_out": {
+      "2011": {
+       "lines": 41,
+       "mean": -0.24742462951756625,
+       "se": 0.04469320471547583,
+       "true_var": 0.002539524758555428
+      },
+      "2012": {
+       "lines": 45,
+       "mean": -0.21239702989690362,
+       "se": 0.04950284190037205,
+       "true_var": 0.027066271947455076
+      },
+      "2013": {
+       "lines": 56,
+       "mean": -0.24147928704322608,
+       "se": 0.03959214034544001,
+       "true_var": 0.010014490588956718
+      }
+     },
+     "lines_by_class": {
+      "2011": 30,
+      "2012": 26,
+      "2013": 15
+     }
+    }
+   },
+   "drift": {
+    "heterogeneity": {
+     "cochran_q": 0.5698740952246286,
+     "df": 2,
+     "note": "reported; the pooled fit is used whatever it reads (specification section 2)",
+     "p": 0.7520615969024145
+    },
+    "lag1_pairs": {
+     "2010-2011": {
+      "covariance": 0.057704254700905,
+      "players": 225,
+      "se": 0.00829410438368753
+     },
+     "2011-2012": {
+      "covariance": 0.059739983117004576,
+      "players": 223,
+      "se": 0.008041949067351874
+     },
+     "2012-2013": {
+      "covariance": 0.05202089023896051,
+      "players": 217,
+      "se": 0.007126742676359394
+     }
+    },
+    "level_heterogeneity": {
+     "cochran_q": 4.332120202751539,
+     "df": 4,
+     "p": 0.36292025330442124
+    },
+    "levels": {
+     "2010": {
+      "centre": 0.5571977534732486,
+      "qualifiers": 291,
+      "se": 0.02108892683452072
+     },
+     "2011": {
+      "centre": 0.5321428571428571,
+      "qualifiers": 301,
+      "se": 0.01988057174203093
+     },
+     "2012": {
+      "centre": 0.5024897480960749,
+      "qualifiers": 303,
+      "se": 0.018876482139241722
+     },
+     "2013": {
+      "centre": 0.5206307102858827,
+      "qualifiers": 295,
+      "se": 0.02031035945432298
+     },
+     "2014": {
+      "centre": 0.5512820512820513,
+      "qualifiers": 117,
+      "se": 0.03610902000955821
+     }
+    }
+   },
+   "floor": 4,
+   "forecast_calibration_2013_to_2014w4": {
+    "mean_z": 0.020628433569564935,
+    "players": 111,
+    "se_mean": 0.08375108965762723,
+    "se_var": 0.13483997249264842,
+    "status": "within 2 SE",
+    "var_z": 0.7785811970912305
+   },
+   "honour_cell": {
+    "mean": 0.3692676767224743,
+    "seasons": 46,
+    "true_var": 0.07893502560567962
+   },
+   "metric": "disruption per game, as DL",
+   "noise": {
+    "2010": {
+     "sigma2": 0.5941813317457646,
+     "split_half_players": 291
+    },
+    "2011": {
+     "sigma2": 0.5431685827553766,
+     "split_half_players": 301
+    },
+    "2012": {
+     "sigma2": 0.5879689914962191,
+     "split_half_players": 303
+    },
+    "2013": {
+     "sigma2": 0.5559156450893734,
+     "split_half_players": 295
+    },
+    "2014w4": {
+     "sigma2": 0.5950854700854701,
+     "split_half_players": 117
+    }
+   },
+   "pass1": {
+    "bootstrap": {
+     "resamples": 200,
+     "rho_sd": 0.07550826113744111,
+     "sb2_sd": 0.009756176623107302,
+     "su2_interval": [
+      0.02751046612511739,
+      0.06814467501771723
+     ]
+    },
+    "lag_moments": [
+     {
+      "fitted": 0.05972147673924901,
+      "lag": 0,
+      "moment": 0.05814681970485025,
+      "terms": 1307
+     },
+     {
+      "fitted": 0.04956882569357668,
+      "lag": 1,
+      "moment": 0.056532340939323425,
+      "terms": 665
+     },
+     {
+      "fitted": 0.04114212532566864,
+      "lag": 2,
+      "moment": 0.03782882656048308,
+      "terms": 441
+     },
+     {
+      "fitted": 0.03414796402030497,
+      "lag": 3,
+      "moment": 0.026661595238634487,
+      "terms": 216
+     },
+     {
+      "fitted": 0.028342810136853126,
+      "lag": 4,
+      "moment": 0.03329698085267739,
+      "terms": 62
+     }
+    ],
+    "players": 508,
+    "rho": 0.83,
+    "sb2": 0.0,
+    "sb2_no_swing": 0.051318368627452045,
+    "sse": 0.053955843597816175,
+    "su2": 0.05972147673924901
+   },
+   "self_influence": {
+    "max": 0.06322355593074518,
+    "median": 0.00012404442856188237,
+    "p90": 0.010277212334974488,
+    "p99": 0.04000104757570227,
+    "players": 243,
+    "unit": "true-state SD of the family"
+   },
+   "two_pass_agreement": {
+    "outside": 0,
+    "rows": [
+     {
+      "pass1": 0.5571977534732486,
+      "pass2": 0.5292494481236203,
+      "quantity": "centre 2010",
+      "tolerance": 0.04217785366904144,
+      "within": true
+     },
+     {
+      "pass1": 0.5321428571428571,
+      "pass2": 0.5042016806722689,
+      "quantity": "centre 2011",
+      "tolerance": 0.03976114348406186,
+      "within": true
+     },
+     {
+      "pass1": 0.5024897480960749,
+      "pass2": 0.4805356156819437,
+      "quantity": "centre 2012",
+      "tolerance": 0.037752964278483445,
+      "within": true
+     },
+     {
+      "pass1": 0.5206307102858827,
+      "pass2": 0.5037479178234314,
+      "quantity": "centre 2013",
+      "tolerance": 0.04062071890864596,
+      "within": true
+     },
+     {
+      "pass1": -0.14055028070209102,
+      "pass2": -0.13332725792416245,
+      "quantity": "drafted rookie prior mean",
+      "tolerance": 0.0394870919543134,
+      "within": true
+     },
+     {
+      "pass1": -0.23397969176057423,
+      "pass2": -0.22695511429107298,
+      "quantity": "undrafted rookie prior mean",
+      "tolerance": 0.07229344902933557,
+      "within": true
+     }
+    ],
+    "rule": "reported; a quantity outside its tolerance is flagged, and the pass-1 value is the one used"
+   }
+  },
+  "DL": {
+   "adopted": {
+    "amendment_3_would_adopt": {
+     "rho": 0.0,
+     "sb2": 0.30950859600158637,
+     "su2": 0.0,
+     "swing_kept": false
+    },
+    "from": "pass 1, swing fixed at 0",
+    "held": false,
+    "rho": 0.0,
+    "sb2": 0.30950859600158637,
+    "status": "not kept (su2 interval reaches 0 in both passes)",
+    "su2": 0.0,
+    "swing_kept": false,
+    "tau": 0.0
+   },
+   "aging": {
+    "adopted": "Z",
+    "basis": "U5 fallback (zero aging for every family)",
+    "candidates_fitted": "held (amendments 2 and 3 rest on U5)",
+    "punter_curve": "held (the punter curve is an aging candidate; Z under the fallback)"
+   },
+   "below_min_cell": [],
+   "centres": {
+    "2010": {
+     "centre": 0.9024436090225564,
+     "opportunities": 2660.0,
+     "qualifiers": 231
+    },
+    "2011": {
+     "centre": 0.9389256806475349,
+     "opportunities": 2718.0,
+     "qualifiers": 236
+    },
+    "2012": {
+     "centre": 0.988929889298893,
+     "opportunities": 2710.0,
+     "qualifiers": 240
+    },
+    "2013": {
+     "centre": 1.050828313253012,
+     "opportunities": 2656.0,
+     "qualifiers": 232
+    },
+    "2014w4": {
+     "centre": 1.0454545454545454,
+     "opportunities": 308.0,
+     "qualifiers": 77
+    }
+   },
+   "draft_priors": {
+    "drafted": {
+     "all": {
+      "lines": 208,
+      "mean": -0.16777209652964323,
+      "se": 0.04675124480589004,
+      "true_var": 0.27299265228493164
+     },
+     "leave_class_out": {
+      "2010": {
+       "lines": 149,
+       "mean": -0.1811706031771918,
+       "se": 0.05589587971935185,
+       "true_var": 0.27382571933774813
+      },
+      "2011": {
+       "lines": 155,
+       "mean": -0.2054418468334033,
+       "se": 0.04692950880063727,
+       "true_var": 0.1606018725349557
+      },
+      "2012": {
+       "lines": 151,
+       "mean": -0.16403815297048896,
+       "se": 0.05794079086857131,
+       "true_var": 0.31872105002578854
+      },
+      "2013": {
+       "lines": 170,
+       "mean": -0.12869162087546468,
+       "se": 0.05429588215740799,
+       "true_var": 0.3321491155588305
+      },
+      "2014": {
+       "lines": 207,
+       "mean": -0.16473981416768718,
+       "se": 0.04687872725127832,
+       "true_var": 0.2743256385464309
+      }
+     },
+     "lines_by_class": {
+      "2010": 59,
+      "2011": 53,
+      "2012": 57,
+      "2013": 38,
+      "2014": 1
+     }
+    },
+    "log_pick_slope": {
+     "applied": 0.0,
+     "lines": 208,
+     "se": 0.038276884821761996,
+     "slope": -0.26234395366039187,
+     "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+    },
+    "undrafted": {
+     "all": {
+      "lines": 36,
+      "mean": -0.4872456417455878,
+      "se": 0.07133517334858339,
+      "true_var": 0.0
+     },
+     "leave_class_out": {
+      "2011": {
+       "lines": 21,
+       "mean": -0.4775399507847222,
+       "se": 0.10882024584960903,
+       "true_var": 0.0007371315317579452
+      },
+      "2012": {
+       "lines": 23,
+       "mean": -0.5076252453211345,
+       "se": 0.08105787451891518,
+       "true_var": 0.0
+      },
+      "2013": {
+       "lines": 28,
+       "mean": -0.4777845213148952,
+       "se": 0.07724863098686299,
+       "true_var": 0.0
+      }
+     },
+     "lines_by_class": {
+      "2011": 15,
+      "2012": 13,
+      "2013": 8
+     }
+    }
+   },
+   "drift": {
+    "heterogeneity": {
+     "cochran_q": 1.0133923679869627,
+     "df": 2,
+     "note": "reported; the pooled fit is used whatever it reads (specification section 2)",
+     "p": 0.6024827865942649
+    },
+    "lag1_pairs": {
+     "2010-2011": {
+      "covariance": 0.32272393405262706,
+      "players": 171,
+      "se": 0.050877188973923265
+     },
+     "2011-2012": {
+      "covariance": 0.3166210131997186,
+      "players": 171,
+      "se": 0.047669074251052594
+     },
+     "2012-2013": {
+      "covariance": 0.4103922305699082,
+      "players": 161,
+      "se": 0.08371954342359361
+     }
+    },
+    "level_heterogeneity": {
+     "cochran_q": 7.2233569929250425,
+     "df": 4,
+     "p": 0.12454519626985278
+    },
+    "levels": {
+     "2010": {
+      "centre": 0.9024436090225564,
+      "qualifiers": 231,
+      "se": 0.041409386379541835
+     },
+     "2011": {
+      "centre": 0.9389256806475349,
+      "qualifiers": 236,
+      "se": 0.04418820086665532
+     },
+     "2012": {
+      "centre": 0.988929889298893,
+      "qualifiers": 240,
+      "se": 0.046450179528533184
+     },
+     "2013": {
+      "centre": 1.050828313253012,
+      "qualifiers": 232,
+      "se": 0.04549612920490401
+     },
+     "2014": {
+      "centre": 1.0454545454545454,
+      "qualifiers": 77,
+      "se": 0.08726790444592858
+     }
+    }
+   },
+   "floor": 4,
+   "forecast_calibration_2013_to_2014w4": {
+    "mean_z": 0.0027236726233869795,
+    "players": 75,
+    "se_mean": 0.11439812528151644,
+    "se_var": 0.1643989873053573,
+    "status": "within 2 SE",
+    "var_z": 0.9815198300944148
+   },
+   "honour_cell": {
+    "mean": 1.1258307292235687,
+    "seasons": 40,
+    "true_var": 0.7849005626834781
+   },
+   "metric": "disruption per game: sacks + 0.5 QB hits + tackles for loss + interceptions + 0.5 passes defended (tackles for loss from the play-by-play every season); games with a recorded statistic",
+   "noise": {
+    "2010": {
+     "sigma2": 1.2924746264437836,
+     "split_half_players": 231
+    },
+    "2011": {
+     "sigma2": 1.4141980092059538,
+     "split_half_players": 236
+    },
+    "2012": {
+     "sigma2": 1.751424336658712,
+     "split_half_players": 240
+    },
+    "2013": {
+     "sigma2": 1.4505714068618156,
+     "split_half_players": 232
+    },
+    "2014w4": {
+     "sigma2": 1.594155844155844,
+     "split_half_players": 77
+    }
+   },
+   "pass1": {
+    "bootstrap": {
+     "resamples": 200,
+     "rho_sd": 0.1762671551934733,
+     "sb2_sd": 0.07161509623997935,
+     "su2_interval": [
+      0.0,
+      0.4219416439818974
+     ]
+    },
+    "lag_moments": [
+     {
+      "fitted": 0.3255244950703371,
+      "lag": 0,
+      "moment": 0.3120879792430412,
+      "terms": 1016
+     },
+     {
+      "fitted": 0.30599302536611683,
+      "lag": 1,
+      "moment": 0.348710010142955,
+      "terms": 503
+     },
+     {
+      "fitted": 0.28763344384414985,
+      "lag": 2,
+      "moment": 0.2831095167719943,
+      "terms": 326
+     },
+     {
+      "fitted": 0.2703754372135008,
+      "lag": 3,
+      "moment": 0.24012076712348632,
+      "terms": 144
+     },
+     {
+      "fitted": 0.25415291098069076,
+      "lag": 4,
+      "moment": 0.18480801269714248,
+      "terms": 30
+     }
+    ],
+    "players": 415,
+    "rho": 0.94,
+    "sb2": 0.0,
+    "sb2_no_swing": 0.30950859600158637,
+    "sse": 1.384016238645735,
+    "su2": 0.3255244950703371
+   },
+   "self_influence": {
+    "max": 0.005664188842639901,
+    "median": 6.722520125509553e-06,
+    "p90": 0.000358687942502231,
+    "p99": 0.0032054384058204637,
+    "players": 190,
+    "unit": "true-state SD of the family"
+   },
+   "two_pass_agreement": {
+    "outside": 0,
+    "rows": [
+     {
+      "pass1": 0.9024436090225564,
+      "pass2": 0.8933258342707162,
+      "quantity": "centre 2010",
+      "tolerance": 0.08281877275908367,
+      "within": true
+     },
+     {
+      "pass1": 0.9389256806475349,
+      "pass2": 0.9221567905778432,
+      "quantity": "centre 2011",
+      "tolerance": 0.08837640173331064,
+      "within": true
+     },
+     {
+      "pass1": 0.988929889298893,
+      "pass2": 0.9642988590357011,
+      "quantity": "centre 2012",
+      "tolerance": 0.09290035905706637,
+      "within": true
+     },
+     {
+      "pass1": 1.050828313253012,
+      "pass2": 1.034625517500941,
+      "quantity": "centre 2013",
+      "tolerance": 0.09099225840980801,
+      "within": true
+     },
+     {
+      "pass1": -0.16777209652964323,
+      "pass2": -0.15914648489524483,
+      "quantity": "drafted rookie prior mean",
+      "tolerance": 0.09350248961178008,
+      "within": true
+     },
+     {
+      "pass1": -0.4872456417455878,
+      "pass2": -0.4759163003755959,
+      "quantity": "undrafted rookie prior mean",
+      "tolerance": 0.14267034669716677,
+      "within": true
+     }
+    ],
+    "rule": "reported; a quantity outside its tolerance is flagged, and the pass-1 value is the one used"
+   }
+  },
+  "K": {
+   "adopted": {
+    "from": "pass 1, swing fixed at 0",
+    "held": false,
+    "rho": 0.0,
+    "sb2": 0.00022168804211454443,
+    "status": "not kept (su2 interval reaches 0 in both passes)",
+    "su2": 0.0,
+    "swing_kept": false,
+    "tau": 0.0
+   },
+   "aging": {
+    "adopted": "Z",
+    "basis": "U5 fallback (zero aging for every family)",
+    "candidates_fitted": "held (amendments 2 and 3 rest on U5)",
+    "punter_curve": "held (the punter curve is an aging candidate; Z under the fallback)"
+   },
+   "below_min_cell": [
+    "drafted rookie prior: 8 lines",
+    "undrafted rookie prior: 8 lines"
+   ],
+   "centres": {
+    "2010": {
+     "centre": 0.003625849840802427,
+     "opportunities": 913.0,
+     "qualifiers": 35
+    },
+    "2011": {
+     "centre": 0.001037484428091527,
+     "opportunities": 972.0,
+     "qualifiers": 33
+    },
+    "2012": {
+     "centre": 0.0013928383978559983,
+     "opportunities": 970.0,
+     "qualifiers": 34
+    },
+    "2013": {
+     "centre": 0.0003479811778992349,
+     "opportunities": 976.0,
+     "qualifiers": 32
+    },
+    "2014w4": {
+     "centre": -0.021169354838709676,
+     "opportunities": 62.0,
+     "qualifiers": 6
+    }
+   },
+   "draft_priors": {
+    "drafted": {
+     "all": {
+      "lines": 8,
+      "mean": -0.010206491623424926,
+      "se": 0.02312403314328701,
+      "true_var": 0.001078663399649776
+     },
+     "leave_class_out": {
+      "2011": {
+       "lines": 6,
+       "mean": -0.012724486456031256,
+       "se": 0.03126480681487861,
+       "true_var": 0.002777597757951617
+      },
+      "2012": {
+       "lines": 3,
+       "mean": -0.025728566803496552,
+       "se": 0.024706903786894153,
+       "true_var": 0.0
+      },
+      "2013": {
+       "lines": 7,
+       "mean": -0.0013958924040173748,
+       "se": 0.024687223421757012,
+       "true_var": 0.0010360042083408737
+      }
+     },
+     "lines_by_class": {
+      "2011": 2,
+      "2012": 5,
+      "2013": 1
+     }
+    },
+    "log_pick_slope": {
+     "applied": 0.0,
+     "lines": 8,
+     "se": 0.16357482884697758,
+     "slope": 0.025633120318501377,
+     "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+    },
+    "undrafted": {
+     "all": {
+      "lines": 8,
+      "mean": 0.037258861599935834,
+      "se": 0.015196623562754046,
+      "true_var": 0.0
+     },
+     "leave_class_out": {
+      "2011": {
+       "lines": 4,
+       "mean": 0.05118846542505687,
+       "se": 0.01801855919194835,
+       "true_var": 0.0
+      },
+      "2012": {
+       "lines": 4,
+       "mean": 0.0233292577748148,
+       "se": 0.024973652759136836,
+       "true_var": 0.0
+      }
+     },
+     "lines_by_class": {
+      "2011": 4,
+      "2012": 4
+     }
+    }
+   },
+   "drift": {
+    "heterogeneity": {
+     "cochran_q": 2.656362246730005,
+     "df": 2,
+     "note": "reported; the pooled fit is used whatever it reads (specification section 2)",
+     "p": 0.2649587505629325
+    },
+    "lag1_pairs": {
+     "2010-2011": {
+      "covariance": -0.00042186498090070516,
+      "players": 29,
+      "se": 0.0006588786848627797
+     },
+     "2011-2012": {
+      "covariance": 0.0013515145618837323,
+      "players": 28,
+      "se": 0.0009477013128289404
+     },
+     "2012-2013": {
+      "covariance": 0.0006485702047334323,
+      "players": 30,
+      "se": 0.0007263425237233637
+     }
+    },
+    "level_heterogeneity": {
+     "cochran_q": 0.40649766631459094,
+     "df": 4,
+     "p": 0.9819414715279963
+    },
+    "levels": {
+     "2010": {
+      "centre": 0.003625849840802427,
+      "qualifiers": 35,
+      "se": 0.009992365142018773
+     },
+     "2011": {
+      "centre": 0.001037484428091527,
+      "qualifiers": 33,
+      "se": 0.011588904245174786
+     },
+     "2012": {
+      "centre": 0.0013928383978559983,
+      "qualifiers": 34,
+      "se": 0.012787192975322272
+     },
+     "2013": {
+      "centre": 0.0003479811778992349,
+      "qualifiers": 32,
+      "se": 0.011458487887148214
+     },
+     "2014": {
+      "centre": -0.021169354838709676,
+      "qualifiers": 6,
+      "se": 0.03826183472811287
+     }
+    }
+   },
+   "floor": 10,
+   "forecast_calibration_2013_to_2014w4": {
+    "mean_z": -0.08133654812783762,
+    "players": 6,
+    "se_mean": 0.2701196768472335,
+    "se_var": 0.6324555320336759,
+    "status": "within 2 SE",
+    "var_z": 0.43778783892032314
+   },
+   "honour_cell": null,
+   "metric": "field goals made over expected per attempt (expected: that season's league make rate by distance band)",
+   "noise": {
+    "2010": {
+     "sigma2": 0.0887683892833726,
+     "split_half_players": 35
+    },
+    "2011": {
+     "sigma2": 0.10483208461551682,
+     "split_half_players": 33
+    },
+    "2012": {
+     "sigma2": 0.09877140911912863,
+     "split_half_players": 34
+    },
+    "2013": {
+     "sigma2": 0.09838519058391396,
+     "split_half_players": 32
+    },
+    "2014w4": {
+     "sigma2": 0.226251162947345,
+     "split_half_players": 6
+    }
+   },
+   "pass1": {
+    "bootstrap": {
+     "resamples": 200,
+     "rho_sd": 0.3338041941018716,
+     "sb2_sd": 0.0001419267911282344,
+     "su2_interval": [
+      0.0,
+      0.0014226625466854637
+     ]
+    },
+    "lag_moments": [
+     {
+      "fitted": 0.0002345709318142742,
+      "lag": 0,
+      "moment": 0.00013957526854098504,
+      "terms": 140
+     },
+     {
+      "fitted": 0.00022049667590541775,
+      "lag": 1,
+      "moment": 0.0005179934417083566,
+      "terms": 87
+     },
+     {
+      "fitted": 0.00020726687535109267,
+      "lag": 2,
+      "moment": 8.743000837097001e-05,
+      "terms": 57
+     },
+     {
+      "fitted": 0.0001948308628300271,
+      "lag": 3,
+      "moment": -0.00015504274967033456,
+      "terms": 26
+     },
+     {
+      "fitted": 0.00018314101106022546,
+      "lag": 4,
+      "moment": 0.0012766637239236224,
+      "terms": 3
+     }
+    ],
+    "players": 45,
+    "rho": 0.94,
+    "sb2": 0.0,
+    "sb2_no_swing": 0.00022168804211454443,
+    "sse": 1.655190676906527e-05,
+    "su2": 0.0002345709318142742
+   },
+   "self_influence": {
+    "max": 0.16990631324281438,
+    "median": 0.009164942483734572,
+    "p90": 0.08504657646379667,
+    "p99": 0.16990631324281438,
+    "players": 30,
+    "unit": "true-state SD of the family"
+   },
+   "two_pass_agreement": {
+    "outside": 0,
+    "rows": [
+     {
+      "pass1": 0.003625849840802427,
+      "pass2": 0.004123160548561042,
+      "quantity": "centre 2010",
+      "tolerance": 0.019984730284037546,
+      "within": true
+     },
+     {
+      "pass1": 0.001037484428091527,
+      "pass2": 0.0007908880863846189,
+      "quantity": "centre 2011",
+      "tolerance": 0.02317780849034957,
+      "within": true
+     },
+     {
+      "pass1": 0.0013928383978559983,
+      "pass2": 0.0011700739070523857,
+      "quantity": "centre 2012",
+      "tolerance": 0.025574385950644544,
+      "within": true
+     },
+     {
+      "pass1": 0.0003479811778992349,
+      "pass2": 0.000276787789878901,
+      "quantity": "centre 2013",
+      "tolerance": 0.022916975774296428,
+      "within": true
+     },
+     {
+      "pass1": -0.010206491623424926,
+      "pass2": -0.003398061744917306,
+      "quantity": "drafted rookie prior mean",
+      "tolerance": 0.04624806628657402,
+      "within": true
+     },
+     {
+      "pass1": 0.037258861599935834,
+      "pass2": 0.04380747709916339,
+      "quantity": "undrafted rookie prior mean",
+      "tolerance": 0.030393247125508092,
+      "within": true
+     }
+    ],
+    "rule": "reported; a quantity outside its tolerance is flagged, and the pass-1 value is the one used"
+   }
+  },
+  "KR": {
+   "adopted": {
+    "from": "pass 1, swing fixed at 0",
+    "held": false,
+    "rho": 0.0,
+    "sb2": 2.1425826759596265,
+    "status": "not kept (su2 interval reaches 0 in both passes)",
+    "su2": 0.0,
+    "swing_kept": false,
+    "tau": 0.0
+   },
+   "aging": {
+    "adopted": "Z",
+    "basis": "U5 fallback (zero aging for every family)",
+    "candidates_fitted": "held (amendments 2 and 3 rest on U5)",
+    "punter_curve": "held (the punter curve is an aging candidate; Z under the fallback)"
+   },
+   "below_min_cell": [
+    "undrafted rookie prior: 20 lines",
+    "honour cell: 8 seasons"
+   ],
+   "centres": {
+    "2010": {
+     "centre": 23.552570093457945,
+     "opportunities": 1712.0,
+     "qualifiers": 60
+    },
+    "2011": {
+     "centre": 24.837954939341422,
+     "opportunities": 1154.0,
+     "qualifiers": 51
+    },
+    "2012": {
+     "centre": 25.189094107299912,
+     "opportunities": 1137.0,
+     "qualifiers": 54
+    },
+    "2013": {
+     "centre": 25.105532786885245,
+     "opportunities": 976.0,
+     "qualifiers": 50
+    },
+    "2014w4": {
+     "centre": 25.353658536585368,
+     "opportunities": 82.0,
+     "qualifiers": 8
+    }
+   },
+   "draft_priors": {
+    "drafted": {
+     "all": {
+      "lines": 70,
+      "mean": -0.32084976268252746,
+      "se": 0.3956673836523345,
+      "true_var": 1.542759810256534
+     },
+     "leave_class_out": {
+      "2010": {
+       "lines": 41,
+       "mean": -0.6119140664360179,
+       "se": 0.5364515496485948,
+       "true_var": 0.7214675634980132
+      },
+      "2011": {
+       "lines": 56,
+       "mean": -0.257910135782805,
+       "se": 0.4551334005429241,
+       "true_var": 2.072340198310963
+      },
+      "2012": {
+       "lines": 54,
+       "mean": -0.008965813698355795,
+       "se": 0.46039422122929263,
+       "true_var": 2.9811698214444995
+      },
+      "2013": {
+       "lines": 60,
+       "mean": -0.3907297193293973,
+       "se": 0.3979382024366152,
+       "true_var": 0.48427270729752614
+      },
+      "2014": {
+       "lines": 69,
+       "mean": -0.38229785686838885,
+       "se": 0.3965731279367512,
+       "true_var": 1.422664846501812
+      }
+     },
+     "lines_by_class": {
+      "2010": 29,
+      "2011": 14,
+      "2012": 16,
+      "2013": 10,
+      "2014": 1
+     }
+    },
+    "log_pick_slope": {
+     "applied": 0.0,
+     "lines": 70,
+     "se": 0.5426916516903352,
+     "slope": -0.526801971196795,
+     "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+    },
+    "undrafted": {
+     "all": {
+      "lines": 20,
+      "mean": -1.6929946840912677,
+      "se": 0.4912749268548307,
+      "true_var": 0.0
+     },
+     "leave_class_out": {
+      "2011": {
+       "lines": 16,
+       "mean": -1.2693701333612672,
+       "se": 0.5255585119269652,
+       "true_var": 0.0
+      },
+      "2012": {
+       "lines": 10,
+       "mean": -2.9169677857440504,
+       "se": 0.49158608011839816,
+       "true_var": 0.0
+      },
+      "2013": {
+       "lines": 15,
+       "mean": -1.4153473030252617,
+       "se": 0.6096853048437384,
+       "true_var": 0.0
+      },
+      "2014": {
+       "lines": 19,
+       "mean": -1.6247300794145445,
+       "se": 0.5128255036825663,
+       "true_var": 0.0
+      }
+     },
+     "lines_by_class": {
+      "2011": 4,
+      "2012": 10,
+      "2013": 5,
+      "2014": 1
+     }
+    }
+   },
+   "drift": {
+    "heterogeneity": {
+     "cochran_q": 2.1367768996133862,
+     "df": 2,
+     "note": "reported; the pooled fit is used whatever it reads (specification section 2)",
+     "p": 0.3435617385133093
+    },
+    "lag1_pairs": {
+     "2010-2011": {
+      "covariance": -1.0310846661137327,
+      "players": 25,
+      "se": 2.336722908486695
+     },
+     "2011-2012": {
+      "covariance": 4.6393794721251185,
+      "players": 21,
+      "se": 4.164290702180201
+     },
+     "2012-2013": {
+      "covariance": 2.986462404292339,
+      "players": 21,
+      "se": 2.3627520223533107
+     }
+    },
+    "level_heterogeneity": {
+     "cochran_q": 9.706003722041668,
+     "df": 4,
+     "p": 0.045682170805502645
+    },
+    "levels": {
+     "2010": {
+      "centre": 23.552570093457945,
+      "qualifiers": 60,
+      "se": 0.4184129655576581
+     },
+     "2011": {
+      "centre": 24.837954939341422,
+      "qualifiers": 51,
+      "se": 0.4369903906821474
+     },
+     "2012": {
+      "centre": 25.189094107299912,
+      "qualifiers": 54,
+      "se": 0.4924763621070634
+     },
+     "2013": {
+      "centre": 25.105532786885245,
+      "qualifiers": 50,
+      "se": 0.4410266254928485
+     },
+     "2014": {
+      "centre": 25.353658536585368,
+      "qualifiers": 8,
+      "se": 1.144263459883825
+     }
+    }
+   },
+   "floor": 8,
+   "forecast_calibration_2013_to_2014w4": {
+    "mean_z": 0.03870231904920228,
+    "players": 4,
+    "se_mean": 0.6187007424293206,
+    "se_var": 0.816496580927726,
+    "status": "within 2 SE",
+    "var_z": 1.5311624347303703
+   },
+   "honour_cell": {
+    "mean": 3.3327121500080406,
+    "seasons": 8,
+    "true_var": 13.458545079615142
+   },
+   "metric": "kickoff return yards per return",
+   "noise": {
+    "2010": {
+     "sigma2": 143.53741856899654,
+     "split_half_players": 60
+    },
+    "2011": {
+     "sigma2": 102.32454364476813,
+     "split_half_players": 51
+    },
+    "2012": {
+     "sigma2": 166.9862696669295,
+     "split_half_players": 54
+    },
+    "2013": {
+     "sigma2": 174.3497509969322,
+     "split_half_players": 50
+    },
+    "2014w4": {
+     "sigma2": 93.66689213564212,
+     "split_half_players": 8
+    }
+   },
+   "pass1": {
+    "bootstrap": {
+     "resamples": 200,
+     "rho_sd": 0.3343006281776928,
+     "sb2_sd": 0.9515291203519297,
+     "su2_interval": [
+      0.0,
+      4.469991450102382
+     ]
+    },
+    "lag_moments": [
+     {
+      "fitted": 2.4625498878738976,
+      "lag": 0,
+      "moment": 2.446517338203787,
+      "terms": 223
+     },
+     {
+      "fitted": 1.6754845881349925,
+      "lag": 1,
+      "moment": 2.005456160476468,
+      "terms": 67
+     },
+     {
+      "fitted": 1.3763997742342087,
+      "lag": 2,
+      "moment": 0.1739862450136524,
+      "terms": 35
+     },
+     {
+      "fitted": 1.2627475449519108,
+      "lag": 3,
+      "moment": 2.858620488954309,
+      "terms": 14
+     },
+     {
+      "fitted": 1.2195596978246375,
+      "lag": 4,
+      "moment": 2.428975234066982,
+      "terms": 1
+     }
+    ],
+    "players": 140,
+    "rho": 0.38,
+    "sb2": 1.1930897270046958,
+    "sb2_no_swing": 2.1425826759596265,
+    "sse": 95.07333611452593,
+    "su2": 1.2694601608692018
+   },
+   "self_influence": {
+    "max": 0.011820413324481338,
+    "median": 0.0,
+    "p90": 0.008511162809220959,
+    "p99": 0.011820413324481338,
+    "players": 33,
+    "unit": "true-state SD of the family"
+   },
+   "two_pass_agreement": {
+    "outside": 0,
+    "rows": [
+     {
+      "pass1": 23.552570093457945,
+      "pass2": 23.543869843114468,
+      "quantity": "centre 2010",
+      "tolerance": 0.8368259311153162,
+      "within": true
+     },
+     {
+      "pass1": 24.837954939341422,
+      "pass2": 24.820779220779222,
+      "quantity": "centre 2011",
+      "tolerance": 0.8739807813642948,
+      "within": true
+     },
+     {
+      "pass1": 25.189094107299912,
+      "pass2": 25.167106420404572,
+      "quantity": "centre 2012",
+      "tolerance": 0.9849527242141268,
+      "within": true
+     },
+     {
+      "pass1": 25.105532786885245,
+      "pass2": 24.84442169907881,
+      "quantity": "centre 2013",
+      "tolerance": 0.882053250985697,
+      "within": true
+     },
+     {
+      "pass1": -0.32084976268252746,
+      "pass2": -0.24605180037046287,
+      "quantity": "drafted rookie prior mean",
+      "tolerance": 0.791334767304669,
+      "within": true
+     },
+     {
+      "pass1": -1.6929946840912677,
+      "pass2": -1.7738570815293824,
+      "quantity": "undrafted rookie prior mean",
+      "tolerance": 0.9825498537096614,
+      "within": true
+     }
+    ],
+    "rule": "reported; a quantity outside its tolerance is flagged, and the pass-1 value is the one used"
+   }
+  },
+  "LB": {
+   "adopted": {
+    "amendment_3_would_adopt": {
+     "rho": 0.9,
+     "sb2": 0.001664747917091625,
+     "su2": 0.3455324354669859,
+     "swing_kept": true
+    },
+    "from": "pass 1, swing fixed at 0",
+    "held": true,
+    "held_reason": "U5 unanswered: the passes disagree on the LB swing and the design's resolution (amendment 3, pass 1's set) is conditional on U5, so the family's state is held",
+    "rho": 0.0,
+    "sb2": 0.31965300915740036,
+    "status": "not kept (su2 interval reaches 0 in pass 2)",
+    "su2": 0.0,
+    "swing_kept": false,
+    "tau": 0.0
+   },
+   "aging": {
+    "adopted": "Z",
+    "basis": "U5 fallback (zero aging for every family)",
+    "candidates_fitted": "held (amendments 2 and 3 rest on U5)",
+    "punter_curve": "held (the punter curve is an aging candidate; Z under the fallback)"
+   },
+   "below_min_cell": [],
+   "centres": {
+    "2010": {
+     "centre": 0.7380245079836614,
+     "opportunities": 2693.0,
+     "qualifiers": 236
+    },
+    "2011": {
+     "centre": 0.8331365604092876,
+     "opportunities": 2541.0,
+     "qualifiers": 222
+    },
+    "2012": {
+     "centre": 0.7970016207455429,
+     "opportunities": 2468.0,
+     "qualifiers": 220
+    },
+    "2013": {
+     "centre": 0.854425310372447,
+     "opportunities": 2497.0,
+     "qualifiers": 229
+    },
+    "2014w4": {
+     "centre": 0.805379746835443,
+     "opportunities": 316.0,
+     "qualifiers": 79
+    }
+   },
+   "draft_priors": {
+    "drafted": {
+     "all": {
+      "lines": 169,
+      "mean": -0.13175043427245497,
+      "se": 0.05323816584936217,
+      "true_var": 0.34706500906767773
+     },
+     "leave_class_out": {
+      "2010": {
+       "lines": 122,
+       "mean": -0.08896375520445617,
+       "se": 0.06829158826006168,
+       "true_var": 0.4295251270248511
+      },
+      "2011": {
+       "lines": 122,
+       "mean": -0.203540884875677,
+       "se": 0.050052836351287815,
+       "true_var": 0.16730047945858623
+      },
+      "2012": {
+       "lines": 129,
+       "mean": -0.14216472132552668,
+       "se": 0.06174493124559561,
+       "true_var": 0.3552862761835516
+      },
+      "2013": {
+       "lines": 139,
+       "mean": -0.08309031488879634,
+       "se": 0.06179969498094571,
+       "true_var": 0.40898957334352093
+      },
+      "2014": {
+       "lines": 164,
+       "mean": -0.14322515035285166,
+       "se": 0.05423455040353695,
+       "true_var": 0.3559061481713059
+      }
+     },
+     "lines_by_class": {
+      "2010": 47,
+      "2011": 47,
+      "2012": 40,
+      "2013": 30,
+      "2014": 5
+     }
+    },
+    "log_pick_slope": {
+     "applied": 0.0,
+     "lines": 169,
+     "se": 0.03978498139024342,
+     "slope": -0.4813991677966032,
+     "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+    },
+    "undrafted": {
+     "all": {
+      "lines": 80,
+      "mean": -0.5938902478862355,
+      "se": 0.04300103620636321,
+      "true_var": 0.0
+     },
+     "leave_class_out": {
+      "2011": {
+       "lines": 47,
+       "mean": -0.582726905548418,
+       "se": 0.05359575479093865,
+       "true_var": 0.0
+      },
+      "2012": {
+       "lines": 57,
+       "mean": -0.6415537131648261,
+       "se": 0.048498519303010974,
+       "true_var": 0.0
+      },
+      "2013": {
+       "lines": 56,
+       "mean": -0.5547448830469096,
+       "se": 0.055341457702092665,
+       "true_var": 0.016923701165610122
+      }
+     },
+     "lines_by_class": {
+      "2011": 33,
+      "2012": 23,
+      "2013": 24
+     }
+    }
+   },
+   "drift": {
+    "heterogeneity": {
+     "cochran_q": 0.38137794165064687,
+     "df": 2,
+     "note": "reported; the pooled fit is used whatever it reads (specification section 2)",
+     "p": 0.8263895794520844
+    },
+    "lag1_pairs": {
+     "2010-2011": {
+      "covariance": 0.2990331745577386,
+      "players": 161,
+      "se": 0.0633925155886068
+     },
+     "2011-2012": {
+      "covariance": 0.3422953427185771,
+      "players": 162,
+      "se": 0.07386344998675208
+     },
+     "2012-2013": {
+      "covariance": 0.348576083408543,
+      "players": 153,
+      "se": 0.05457810762160485
+     }
+    },
+    "level_heterogeneity": {
+     "cochran_q": 4.433438402720821,
+     "df": 4,
+     "p": 0.3505130843130537
+    },
+    "levels": {
+     "2010": {
+      "centre": 0.7380245079836614,
+      "qualifiers": 236,
+      "se": 0.038943160709042135
+     },
+     "2011": {
+      "centre": 0.8331365604092876,
+      "qualifiers": 222,
+      "se": 0.04716998843967253
+     },
+     "2012": {
+      "centre": 0.7970016207455429,
+      "qualifiers": 220,
+      "se": 0.04527984952568466
+     },
+     "2013": {
+      "centre": 0.854425310372447,
+      "qualifiers": 229,
+      "se": 0.04601389474963091
+     },
+     "2014": {
+      "centre": 0.805379746835443,
+      "qualifiers": 79,
+      "se": 0.0823316173187315
+     }
+    }
+   },
+   "floor": 4,
+   "forecast_calibration_2013_to_2014w4": {
+    "status": "held"
+   },
+   "honour_cell": {
+    "mean": 1.1089850010714364,
+    "seasons": 37,
+    "true_var": 0.8666368705281529
+   },
+   "metric": "disruption per game, as DL",
+   "noise": {
+    "2010": {
+     "sigma2": 0.8984076657805471,
+     "split_half_players": 236
+    },
+    "2011": {
+     "sigma2": 1.2141891657516668,
+     "split_half_players": 222
+    },
+    "2012": {
+     "sigma2": 1.0214968033860081,
+     "split_half_players": 220
+    },
+    "2013": {
+     "sigma2": 1.0699141030609374,
+     "split_half_players": 229
+    },
+    "2014w4": {
+     "sigma2": 1.2428797468354431,
+     "split_half_players": 79
+    }
+   },
+   "pass1": {
+    "bootstrap": {
+     "resamples": 200,
+     "rho_sd": 0.19542501758986744,
+     "sb2_sd": 0.08397057374206275,
+     "su2_interval": [
+      0.014959317261688842,
+      0.404846022196995
+     ]
+    },
+    "lag_moments": [
+     {
+      "fitted": 0.34719718338407757,
+      "lag": 0,
+      "moment": 0.34044473471305126,
+      "terms": 986
+     },
+     {
+      "fitted": 0.312643939837379,
+      "lag": 1,
+      "moment": 0.3296813600540178,
+      "terms": 476
+     },
+     {
+      "fitted": 0.2815460206453503,
+      "lag": 2,
+      "moment": 0.290172990678445,
+      "terms": 305
+     },
+     {
+      "fitted": 0.25355789337252443,
+      "lag": 3,
+      "moment": 0.24435320243766154,
+      "terms": 139
+     },
+     {
+      "fitted": 0.22836857882698108,
+      "lag": 4,
+      "moment": 0.14340883780780336,
+      "terms": 33
+     }
+    ],
+    "players": 421,
+    "rho": 0.9,
+    "sb2": 0.001664747917091625,
+    "sb2_no_swing": 0.31965300915740036,
+    "sse": 0.45580316833044987,
+    "su2": 0.3455324354669859
+   },
+   "self_influence": {
+    "status": "held"
+   },
+   "two_pass_agreement": {
+    "outside": 0,
+    "rows": [
+     {
+      "pass1": 0.7380245079836614,
+      "pass2": 0.704210886682643,
+      "quantity": "centre 2010",
+      "tolerance": 0.07788632141808427,
+      "within": true
+     },
+     {
+      "pass1": 0.8331365604092876,
+      "pass2": 0.7809902421395013,
+      "quantity": "centre 2011",
+      "tolerance": 0.09433997687934506,
+      "within": true
+     },
+     {
+      "pass1": 0.7970016207455429,
+      "pass2": 0.7604244229337305,
+      "quantity": "centre 2012",
+      "tolerance": 0.09055969905136932,
+      "within": true
+     },
+     {
+      "pass1": 0.854425310372447,
+      "pass2": 0.8042757095466273,
+      "quantity": "centre 2013",
+      "tolerance": 0.09202778949926183,
+      "within": true
+     },
+     {
+      "pass1": -0.13175043427245497,
+      "pass2": -0.11838385016884517,
+      "quantity": "drafted rookie prior mean",
+      "tolerance": 0.10647633169872434,
+      "within": true
+     },
+     {
+      "pass1": -0.5938902478862355,
+      "pass2": -0.542045218900922,
+      "quantity": "undrafted rookie prior mean",
+      "tolerance": 0.08600207241272642,
+      "within": true
+     }
+    ],
+    "rule": "reported; a quantity outside its tolerance is flagged, and the pass-1 value is the one used"
+   }
+  },
+  "P": {
+   "adopted": {
+    "from": "pass 1",
+    "held": false,
+    "rho": 0.62,
+    "sb2": 0.0,
+    "status": "Confirmed two-pass",
+    "su2": 1.6000856786531,
+    "swing_kept": true,
+    "tau": 0.9924780822662272
+   },
+   "aging": {
+    "adopted": "Z",
+    "basis": "U5 fallback (zero aging for every family)",
+    "candidates_fitted": "held (amendments 2 and 3 rest on U5)",
+    "punter_curve": "held (the punter curve is an aging candidate; Z under the fallback)"
+   },
+   "below_min_cell": [
+    "drafted rookie prior: 11 lines",
+    "undrafted rookie prior: 16 lines",
+    "honour cell: 7 seasons"
+   ],
+   "centres": {
+    "2010": {
+     "centre": 37.62986198243413,
+     "opportunities": 2391.0,
+     "qualifiers": 33
+    },
+    "2011": {
+     "centre": 38.93604887983707,
+     "opportunities": 2455.0,
+     "qualifiers": 35
+    },
+    "2012": {
+     "centre": 39.9406146179402,
+     "opportunities": 2408.0,
+     "qualifiers": 32
+    },
+    "2013": {
+     "centre": 39.70084439083233,
+     "opportunities": 2487.0,
+     "qualifiers": 34
+    },
+    "2014w4": {
+     "centre": 39.98675496688742,
+     "opportunities": 151.0,
+     "qualifiers": 7
+    }
+   },
+   "draft_priors": {
+    "drafted": {
+     "all": {
+      "lines": 11,
+      "mean": 0.44887884015392904,
+      "se": 0.5622939586267816,
+      "true_var": 1.159457507091059
+     },
+     "leave_class_out": {
+      "2010": {
+       "lines": 8,
+       "mean": 0.5523254282226855,
+       "se": 0.5845847023801299,
+       "true_var": 0.7225823077386773
+      },
+      "2011": {
+       "lines": 9,
+       "mean": 0.2539732567665614,
+       "se": 0.661538227130714,
+       "true_var": 1.6904846019776887
+      },
+      "2012": {
+       "lines": 7,
+       "mean": 0.5572785188154157,
+       "se": 0.6902183422582917,
+       "true_var": 0.7143307660902232
+      },
+      "2013": {
+       "lines": 9,
+       "mean": 0.46752103963235686,
+       "se": 0.6787332894979037,
+       "true_var": 1.7192943012660877
+      }
+     },
+     "lines_by_class": {
+      "2010": 3,
+      "2011": 2,
+      "2012": 4,
+      "2013": 2
+     }
+    },
+    "log_pick_slope": {
+     "applied": 0.0,
+     "lines": 11,
+     "se": 1.4509535549580863,
+     "slope": -1.4602487324613267,
+     "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+    },
+    "undrafted": {
+     "all": {
+      "lines": 16,
+      "mean": -0.35027089043980064,
+      "se": 0.5583849895974349,
+      "true_var": 2.2771589859427617
+     },
+     "leave_class_out": {
+      "2011": {
+       "lines": 12,
+       "mean": 0.04791362719826905,
+       "se": 0.6848932343800204,
+       "true_var": 2.990752976418024
+      },
+      "2012": {
+       "lines": 10,
+       "mean": -0.17458280030534326,
+       "se": 0.566590318109,
+       "true_var": 0.19345126735916773
+      },
+      "2013": {
+       "lines": 11,
+       "mean": -0.9429440973857598,
+       "se": 0.6926596354058914,
+       "true_var": 2.61440514426067
+      },
+      "2014": {
+       "lines": 15,
+       "mean": -0.3513168795461913,
+       "se": 0.5969376158020601,
+       "true_var": 2.7428077682887353
+      }
+     },
+     "lines_by_class": {
+      "2011": 4,
+      "2012": 6,
+      "2013": 5,
+      "2014": 1
+     }
+    }
+   },
+   "drift": {
+    "heterogeneity": {
+     "cochran_q": 4.947263012614988,
+     "df": 2,
+     "note": "reported; the pooled fit is used whatever it reads (specification section 2)",
+     "p": 0.08427824562375368
+    },
+    "lag1_pairs": {
+     "2010-2011": {
+      "covariance": 0.4906018350697275,
+      "players": 28,
+      "se": 0.6370920596218868
+     },
+     "2011-2012": {
+      "covariance": 1.854183782934661,
+      "players": 25,
+      "se": 1.04155513970946
+     },
+     "2012-2013": {
+      "covariance": 2.616160462173777,
+      "players": 27,
+      "se": 0.7323910020743721
+     }
+    },
+    "level_heterogeneity": {
+     "cochran_q": 28.485451435817467,
+     "df": 4,
+     "p": 9.943183362591886e-06
+    },
+    "levels": {
+     "2010": {
+      "centre": 37.62986198243413,
+      "qualifiers": 33,
+      "se": 0.3560098302400566
+     },
+     "2011": {
+      "centre": 38.93604887983707,
+      "qualifiers": 35,
+      "se": 0.3561914974104088
+     },
+     "2012": {
+      "centre": 39.9406146179402,
+      "qualifiers": 32,
+      "se": 0.3256154204210701
+     },
+     "2013": {
+      "centre": 39.70084439083233,
+      "qualifiers": 34,
+      "se": 0.36001256991930536
+     },
+     "2014": {
+      "centre": 39.98675496688742,
+      "qualifiers": 7,
+      "se": 0.650284911279911
+     }
+    }
+   },
+   "floor": 20,
+   "forecast_calibration_2013_to_2014w4": {
+    "mean_z": -0.10125027714752684,
+    "players": 6,
+    "se_mean": 0.37519411702365674,
+    "se_var": 0.6324555320336759,
+    "status": "within 2 SE",
+    "var_z": 0.8446237526949686
+   },
+   "honour_cell": {
+    "mean": 2.9384259774706263,
+    "seasons": 7,
+    "true_var": 1.861770949342763
+   },
+   "metric": "net yards per punt (pt_net_yards over pt_att, weekly statistics)",
+   "noise": {
+    "2010": {
+     "sigma2": 198.5634478462019,
+     "split_half_players": 33
+    },
+    "2011": {
+     "sigma2": 184.1722981694345,
+     "split_half_players": 35
+    },
+    "2012": {
+     "sigma2": 158.28906667919472,
+     "split_half_players": 32
+    },
+    "2013": {
+     "sigma2": 134.5129346276912,
+     "split_half_players": 34
+    },
+    "2014w4": {
+     "sigma2": 100.0849213588345,
+     "split_half_players": 7
+    }
+   },
+   "pass1": {
+    "bootstrap": {
+     "resamples": 200,
+     "rho_sd": 0.1493778765413406,
+     "sb2_sd": 0.07996870963445471,
+     "su2_interval": [
+      0.640257976516535,
+      2.8595956481826175
+     ]
+    },
+    "lag_moments": [
+     {
+      "fitted": 1.6000856786531,
+      "lag": 0,
+      "moment": 1.4623963947903302,
+      "terms": 141
+     },
+     {
+      "fitted": 0.9920531207649219,
+      "lag": 1,
+      "moment": 1.634097230425136,
+      "terms": 80
+     },
+     {
+      "fitted": 0.6150729348742516,
+      "lag": 2,
+      "moment": 0.3079224394738106,
+      "terms": 52
+     },
+     {
+      "fitted": 0.381345219622036,
+      "lag": 3,
+      "moment": -0.5511724711998187,
+      "terms": 23
+     },
+     {
+      "fitted": 0.2364340361656623,
+      "lag": 4,
+      "moment": -3.7564104653987656,
+      "terms": 2
+     }
+    ],
+    "players": 53,
+    "rho": 0.62,
+    "sb2": 0.0,
+    "sb2_no_swing": 1.1166035207506448,
+    "sse": 92.44269811076525,
+    "su2": 1.6000856786531
+   },
+   "self_influence": {
+    "max": 0.10920438036936057,
+    "median": 0.0023847064855401223,
+    "p90": 0.030728386132938205,
+    "p99": 0.10920438036936057,
+    "players": 28,
+    "unit": "true-state SD of the family"
+   },
+   "two_pass_agreement": {
+    "outside": 0,
+    "rows": [
+     {
+      "pass1": 37.62986198243413,
+      "pass2": 37.703813559322036,
+      "quantity": "centre 2010",
+      "tolerance": 0.7120196604801132,
+      "within": true
+     },
+     {
+      "pass1": 38.93604887983707,
+      "pass2": 39.016970198675494,
+      "quantity": "centre 2011",
+      "tolerance": 0.7123829948208176,
+      "within": true
+     },
+     {
+      "pass1": 39.9406146179402,
+      "pass2": 40.01099365750529,
+      "quantity": "centre 2012",
+      "tolerance": 0.6512308408421402,
+      "within": true
+     },
+     {
+      "pass1": 39.70084439083233,
+      "pass2": 39.800840336134456,
+      "quantity": "centre 2013",
+      "tolerance": 0.7200251398386107,
+      "within": true
+     },
+     {
+      "pass1": 0.44887884015392904,
+      "pass2": 0.43176834725447255,
+      "quantity": "drafted rookie prior mean",
+      "tolerance": 1.124587917253563,
+      "within": true
+     },
+     {
+      "pass1": -0.35027089043980064,
+      "pass2": -0.41473742672094893,
+      "quantity": "undrafted rookie prior mean",
+      "tolerance": 1.1167699791948698,
+      "within": true
+     }
+    ],
+    "rule": "reported; a quantity outside its tolerance is flagged, and the pass-1 value is the one used"
+   }
+  },
+  "PR": {
+   "adopted": {
+    "from": "pass 1, swing fixed at 0",
+    "held": false,
+    "rho": 0.0,
+    "sb2": 0.5545121728037014,
+    "status": "not kept (su2 interval reaches 0 in both passes)",
+    "su2": 0.0,
+    "swing_kept": false,
+    "tau": 0.0
+   },
+   "aging": {
+    "adopted": "Z",
+    "basis": "U5 fallback (zero aging for every family)",
+    "candidates_fitted": "held (amendments 2 and 3 rest on U5)",
+    "punter_curve": "held (the punter curve is an aging candidate; Z under the fallback)"
+   },
+   "below_min_cell": [
+    "undrafted rookie prior: 13 lines"
+   ],
+   "centres": {
+    "2010": {
+     "centre": 10.019607843137255,
+     "opportunities": 1020.0,
+     "qualifiers": 46
+    },
+    "2011": {
+     "centre": 10.19326923076923,
+     "opportunities": 1040.0,
+     "qualifiers": 41
+    },
+    "2012": {
+     "centre": 9.723136495643756,
+     "opportunities": 1033.0,
+     "qualifiers": 44
+    },
+    "2013": {
+     "centre": 9.801217038539553,
+     "opportunities": 986.0,
+     "qualifiers": 45
+    },
+    "2014w4": {
+     "centre": 9.5,
+     "opportunities": 118.0,
+     "qualifiers": 12
+    }
+   },
+   "draft_priors": {
+    "drafted": {
+     "all": {
+      "lines": 47,
+      "mean": -0.03050915785534731,
+      "se": 0.5067664033168024,
+      "true_var": 2.1235888660465125
+     },
+     "leave_class_out": {
+      "2010": {
+       "lines": 31,
+       "mean": -0.17191261281852255,
+       "se": 0.6533524793540427,
+       "true_var": 3.57535734187708
+      },
+      "2011": {
+       "lines": 34,
+       "mean": 0.2153360428060443,
+       "se": 0.571710302775921,
+       "true_var": 0.5763077796282907
+      },
+      "2012": {
+       "lines": 36,
+       "mean": -0.27092928406959604,
+       "se": 0.5671150337525105,
+       "true_var": 1.4165826057758526
+      },
+      "2013": {
+       "lines": 42,
+       "mean": -0.03403238995282642,
+       "se": 0.542867401448454,
+       "true_var": 2.6065006343373938
+      },
+      "2014": {
+       "lines": 45,
+       "mean": 0.07677685488194588,
+       "se": 0.521844918055364,
+       "true_var": 2.5630149971917398
+      }
+     },
+     "lines_by_class": {
+      "2010": 16,
+      "2011": 13,
+      "2012": 11,
+      "2013": 5,
+      "2014": 2
+     }
+    },
+    "log_pick_slope": {
+     "applied": 0.0,
+     "lines": 47,
+     "se": 0.5172016624067003,
+     "slope": -0.1368724733107585,
+     "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+    },
+    "undrafted": {
+     "all": {
+      "lines": 13,
+      "mean": -0.11312478784627061,
+      "se": 0.9415341916521112,
+      "true_var": 0.0
+     },
+     "leave_class_out": {
+      "2011": {
+       "lines": 11,
+       "mean": 0.7840226866245704,
+       "se": 0.8543165890189524,
+       "true_var": 0.0
+      },
+      "2012": {
+       "lines": 7,
+       "mean": -0.6477517705271474,
+       "se": 1.3801591959548063,
+       "true_var": 0.0
+      },
+      "2013": {
+       "lines": 10,
+       "mean": -0.25889239508755885,
+       "se": 1.1359226653529324,
+       "true_var": 0.0
+      },
+      "2014": {
+       "lines": 11,
+       "mean": -0.5375390849372009,
+       "se": 1.0677552272151896,
+       "true_var": 0.0
+      }
+     },
+     "lines_by_class": {
+      "2011": 2,
+      "2012": 6,
+      "2013": 3,
+      "2014": 2
+     }
+    }
+   },
+   "drift": {
+    "heterogeneity": {
+     "cochran_q": 0.9759453778928504,
+     "df": 2,
+     "note": "reported; the pooled fit is used whatever it reads (specification section 2)",
+     "p": 0.6138696382404563
+    },
+    "lag1_pairs": {
+     "2010-2011": {
+      "covariance": 0.6520924012410897,
+      "players": 23,
+      "se": 2.221768798763666
+     },
+     "2011-2012": {
+      "covariance": 2.641396899514443,
+      "players": 25,
+      "se": 3.7067445821255287
+     },
+     "2012-2013": {
+      "covariance": -1.2327351728122593,
+      "players": 24,
+      "se": 1.9934898043992737
+     }
+    },
+    "level_heterogeneity": {
+     "cochran_q": 0.7503432193442592,
+     "df": 4,
+     "p": 0.9449785224554224
+    },
+    "levels": {
+     "2010": {
+      "centre": 10.019607843137255,
+      "qualifiers": 46,
+      "se": 0.5086766977526667
+     },
+     "2011": {
+      "centre": 10.19326923076923,
+      "qualifiers": 41,
+      "se": 0.5417130763284367
+     },
+     "2012": {
+      "centre": 9.723136495643756,
+      "qualifiers": 44,
+      "se": 0.5272696428044356
+     },
+     "2013": {
+      "centre": 9.801217038539553,
+      "qualifiers": 45,
+      "se": 0.43494272293307124
+     },
+     "2014": {
+      "centre": 9.5,
+      "qualifiers": 12,
+      "se": 0.8112433970392354
+     }
+    }
+   },
+   "floor": 8,
+   "forecast_calibration_2013_to_2014w4": {
+    "mean_z": -0.008214817368847556,
+    "players": 8,
+    "se_mean": 0.3238144793771663,
+    "se_var": 0.5345224838248488,
+    "status": "within 2 SE",
+    "var_z": 0.838846536434442
+   },
+   "honour_cell": null,
+   "metric": "punt return yards per return",
+   "noise": {
+    "2010": {
+     "sigma2": 206.49766347874404,
+     "split_half_players": 46
+    },
+    "2011": {
+     "sigma2": 179.17071525960617,
+     "split_half_players": 41
+    },
+    "2012": {
+     "sigma2": 131.01467923968733,
+     "split_half_players": 44
+    },
+    "2013": {
+     "sigma2": 188.06319529584573,
+     "split_half_players": 45
+    },
+    "2014w4": {
+     "sigma2": 141.17773707773705,
+     "split_half_players": 12
+    }
+   },
+   "pass1": {
+    "bootstrap": {
+     "resamples": 200,
+     "rho_sd": 0.18094550975362722,
+     "sb2_sd": 0.4091426563791126,
+     "su2_interval": [
+      0.0,
+      3.092180250412351
+     ]
+    },
+    "lag_moments": [
+     {
+      "fitted": 0.8444396530307553,
+      "lag": 0,
+      "moment": 0.82122776990765,
+      "terms": 188
+     },
+     {
+      "fitted": 0.26177629243953415,
+      "lag": 1,
+      "moment": 0.714547271790443,
+      "terms": 72
+     },
+     {
+      "fitted": 0.08115065065625558,
+      "lag": 2,
+      "moment": -1.8571259781006462,
+      "terms": 39
+     },
+     {
+      "fitted": 0.02515670170343923,
+      "lag": 3,
+      "moment": 3.460833232629812,
+      "terms": 16
+     },
+     {
+      "fitted": 0.00779857752806616,
+      "lag": 4,
+      "moment": -4.149590645374958,
+      "terms": 3
+     }
+    ],
+    "players": 100,
+    "rho": 0.31,
+    "sb2": 0.0,
+    "sb2_no_swing": 0.5545121728037014,
+    "sse": 402.09476745534477,
+    "su2": 0.8444396530307553
+   },
+   "self_influence": {
+    "max": 0.38204097500997597,
+    "median": 0.0,
+    "p90": 0.029765969639368766,
+    "p99": 0.38204097500997597,
+    "players": 34,
+    "unit": "true-state SD of the family"
+   },
+   "two_pass_agreement": {
+    "outside": 0,
+    "rows": [
+     {
+      "pass1": 10.019607843137255,
+      "pass2": 10.062683643486778,
+      "quantity": "centre 2010",
+      "tolerance": 1.0173533955053333,
+      "within": true
+     },
+     {
+      "pass1": 10.19326923076923,
+      "pass2": 10.21826923076923,
+      "quantity": "centre 2011",
+      "tolerance": 1.0834261526568734,
+      "within": true
+     },
+     {
+      "pass1": 9.723136495643756,
+      "pass2": 9.642787996127783,
+      "quantity": "centre 2012",
+      "tolerance": 1.0545392856088711,
+      "within": true
+     },
+     {
+      "pass1": 9.801217038539553,
+      "pass2": 9.745197168857432,
+      "quantity": "centre 2013",
+      "tolerance": 0.8698854458661425,
+      "within": true
+     },
+     {
+      "pass1": -0.03050915785534731,
+      "pass2": -0.19442532225293274,
+      "quantity": "drafted rookie prior mean",
+      "tolerance": 1.013532806633605,
+      "within": true
+     },
+     {
+      "pass1": -0.11312478784627061,
+      "pass2": -0.040596814926677584,
+      "quantity": "undrafted rookie prior mean",
+      "tolerance": 1.8830683833042223,
+      "within": true
+     }
+    ],
+    "rule": "reported; a quantity outside its tolerance is flagged, and the pass-1 value is the one used"
+   }
+  },
+  "QB": {
+   "adopted": {
+    "from": "pass 1",
+    "held": false,
+    "rho": 0.56,
+    "sb2": 0.004796848470044637,
+    "status": "Confirmed two-pass",
+    "su2": 0.013197682698515435,
+    "swing_kept": true,
+    "tau": 0.09517819815620063
+   },
+   "aging": {
+    "adopted": "Z",
+    "basis": "U5 fallback (zero aging for every family)",
+    "candidates_fitted": "held (amendments 2 and 3 rest on U5)",
+    "punter_curve": "held (the punter curve is an aging candidate; Z under the fallback)"
+   },
+   "below_min_cell": [
+    "undrafted rookie prior: 3 lines",
+    "honour cell: 18 seasons"
+   ],
+   "centres": {
+    "2010": {
+     "centre": 0.044116436638509074,
+     "opportunities": 17920.0,
+     "qualifiers": 53
+    },
+    "2011": {
+     "centre": 0.036334663747014995,
+     "opportunities": 18261.0,
+     "qualifiers": 53
+    },
+    "2012": {
+     "centre": 0.04520363248687889,
+     "opportunities": 18610.0,
+     "qualifiers": 44
+    },
+    "2013": {
+     "centre": 0.04210546355373774,
+     "opportunities": 19198.0,
+     "qualifiers": 50
+    },
+    "2014w4": {
+     "centre": 0.09896269944019798,
+     "opportunities": 4334.0,
+     "qualifiers": 36
+    }
+   },
+   "draft_priors": {
+    "drafted": {
+     "all": {
+      "lines": 48,
+      "mean": -0.08718732508041381,
+      "se": 0.023494416977643314,
+      "true_var": 0.011328480348866802
+     },
+     "leave_class_out": {
+      "2010": {
+       "lines": 37,
+       "mean": -0.0636724545664261,
+       "se": 0.0271286919436707,
+       "true_var": 0.011642968227154347
+      },
+      "2011": {
+       "lines": 36,
+       "mean": -0.10012129302284661,
+       "se": 0.02865324554537614,
+       "true_var": 0.012673903240812308
+      },
+      "2012": {
+       "lines": 33,
+       "mean": -0.11223303983533267,
+       "se": 0.024368111558592948,
+       "true_var": 0.0022834643205726715
+      },
+      "2013": {
+       "lines": 41,
+       "mean": -0.07255631464778445,
+       "se": 0.026266236160075982,
+       "true_var": 0.014419025262237288
+      },
+      "2014": {
+       "lines": 45,
+       "mean": -0.091138218500757,
+       "se": 0.024112312379671215,
+       "true_var": 0.013103845983206412
+      }
+     },
+     "lines_by_class": {
+      "2010": 11,
+      "2011": 12,
+      "2012": 15,
+      "2013": 7,
+      "2014": 3
+     }
+    },
+    "log_pick_slope": {
+     "applied": 0.0,
+     "lines": 48,
+     "se": 0.01430989479096159,
+     "slope": -0.01901607368335839,
+     "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+    },
+    "undrafted": {
+     "all": {
+      "lines": 3,
+      "mean": -0.23448186295530907,
+      "se": 0.14974491435407486,
+      "true_var": 0.04758749993612951
+     },
+     "leave_class_out": {
+      "2013": null
+     },
+     "lines_by_class": {
+      "2013": 3
+     }
+    }
+   },
+   "drift": {
+    "heterogeneity": {
+     "cochran_q": 0.5582798010143268,
+     "df": 2,
+     "note": "reported; the pooled fit is used whatever it reads (specification section 2)",
+     "p": 0.75643407030211
+    },
+    "lag1_pairs": {
+     "2010-2011": {
+      "covariance": 0.011581285323162415,
+      "players": 38,
+      "se": 0.004381630123870499
+     },
+     "2011-2012": {
+      "covariance": 0.012692371739212139,
+      "players": 30,
+      "se": 0.0040887851544835875
+     },
+     "2012-2013": {
+      "covariance": 0.00860308722276582,
+      "players": 36,
+      "se": 0.003926696354575418
+     }
+    },
+    "level_heterogeneity": {
+     "cochran_q": 3.488029568057153,
+     "df": 4,
+     "p": 0.4797008078443502
+    },
+    "levels": {
+     "2010": {
+      "centre": 0.044116436638509074,
+      "qualifiers": 53,
+      "se": 0.023309569569776943
+     },
+     "2011": {
+      "centre": 0.036334663747014995,
+      "qualifiers": 53,
+      "se": 0.025177129958502457
+     },
+     "2012": {
+      "centre": 0.04520363248687889,
+      "qualifiers": 44,
+      "se": 0.02489277376033555
+     },
+     "2013": {
+      "centre": 0.04210546355373774,
+      "qualifiers": 50,
+      "se": 0.025804464454969218
+     },
+     "2014": {
+      "centre": 0.09896269944019798,
+      "qualifiers": 36,
+      "se": 0.028218837631785332
+     }
+    }
+   },
+   "floor": 50,
+   "forecast_calibration_2013_to_2014w4": {
+    "mean_z": -0.008735900939009576,
+    "players": 32,
+    "se_mean": 0.14462028265941845,
+    "se_var": 0.254000254000381,
+    "status": "within 2 SE",
+    "var_z": 0.6692808370076829
+   },
+   "honour_cell": {
+    "mean": 0.18315326303336554,
+    "seasons": 18,
+    "true_var": 0.0022875261185074875
+   },
+   "metric": "EPA per dropback (passing_epa over attempts plus sacks), weekly statistics",
+   "noise": {
+    "2010": {
+     "sigma2": 2.25588827700586,
+     "split_half_players": 53
+    },
+    "2011": {
+     "sigma2": 2.5053728063595218,
+     "split_half_players": 53
+    },
+    "2012": {
+     "sigma2": 2.8236798986041065,
+     "split_half_players": 44
+    },
+    "2013": {
+     "sigma2": 2.392773179716818,
+     "split_half_players": 50
+    },
+    "2014w4": {
+     "sigma2": 3.344026728364146,
+     "split_half_players": 36
+    }
+   },
+   "pass1": {
+    "bootstrap": {
+     "resamples": 200,
+     "rho_sd": 0.3105003663443894,
+     "sb2_sd": 0.00433389294451558,
+     "su2_interval": [
+      0.003786215860520964,
+      0.023119652515752476
+     ]
+    },
+    "lag_moments": [
+     {
+      "fitted": 0.017994531168560073,
+      "lag": 0,
+      "moment": 0.0181364933845155,
+      "terms": 236
+     },
+     {
+      "fitted": 0.012187550781213282,
+      "lag": 1,
+      "moment": 0.01087087629303948,
+      "terms": 104
+     },
+     {
+      "fitted": 0.008935641764299078,
+      "lag": 2,
+      "moment": 0.010782220458946919,
+      "terms": 83
+     },
+     {
+      "fitted": 0.007114572714827124,
+      "lag": 3,
+      "moment": 0.007119637826869657,
+      "terms": 43
+     },
+     {
+      "fitted": 0.006094774047122831,
+      "lag": 4,
+      "moment": 0.003314064732177992,
+      "terms": 18
+     }
+    ],
+    "players": 94,
+    "rho": 0.56,
+    "sb2": 0.004796848470044637,
+    "sb2_no_swing": 0.013784102196382141,
+    "sse": 0.0006072549586563492,
+    "su2": 0.013197682698515435
+   },
+   "self_influence": {
+    "max": 0.2608279923799514,
+    "median": 0.004507647583245077,
+    "p90": 0.0767519360734245,
+    "p99": 0.2608279923799514,
+    "players": 44,
+    "unit": "true-state SD of the family"
+   },
+   "two_pass_agreement": {
+    "outside": 0,
+    "rows": [
+     {
+      "pass1": 0.044116436638509074,
+      "pass2": 0.017201131222481417,
+      "quantity": "centre 2010",
+      "tolerance": 0.046619139139553886,
+      "within": true
+     },
+     {
+      "pass1": 0.036334663747014995,
+      "pass2": 0.021274529676316087,
+      "quantity": "centre 2011",
+      "tolerance": 0.050354259917004915,
+      "within": true
+     },
+     {
+      "pass1": 0.04520363248687889,
+      "pass2": 0.03223652022113492,
+      "quantity": "centre 2012",
+      "tolerance": 0.0497855475206711,
+      "within": true
+     },
+     {
+      "pass1": 0.04210546355373774,
+      "pass2": 0.02535116550913994,
+      "quantity": "centre 2013",
+      "tolerance": 0.051608928909938435,
+      "within": true
+     },
+     {
+      "pass1": -0.08718732508041381,
+      "pass2": -0.08906832473297138,
+      "quantity": "drafted rookie prior mean",
+      "tolerance": 0.04698883395528663,
+      "within": true
+     },
+     {
+      "pass1": -0.23448186295530907,
+      "pass2": -0.24775742373705203,
+      "quantity": "undrafted rookie prior mean",
+      "tolerance": 0.2994898287081497,
+      "within": true
+     }
+    ],
+    "rule": "reported; a quantity outside its tolerance is flagged, and the pass-1 value is the one used"
+   }
+  },
+  "RB": {
+   "adopted": {
+    "from": "pass 1, swing fixed at 0",
+    "held": false,
+    "rho": 0.0,
+    "sb2": 0.002554201154681651,
+    "status": "not kept (su2 interval reaches 0 in both passes)",
+    "su2": 0.0,
+    "swing_kept": false,
+    "tau": 0.0
+   },
+   "aging": {
+    "adopted": "Z",
+    "basis": "U5 fallback (zero aging for every family)",
+    "candidates_fitted": "held (amendments 2 and 3 rest on U5)",
+    "punter_curve": "held (the punter curve is an aging candidate; Z under the fallback)"
+   },
+   "below_min_cell": [
+    "undrafted rookie prior: 17 lines",
+    "honour cell: 23 seasons"
+   ],
+   "centres": {
+    "2010": {
+     "centre": -0.06001055131113712,
+     "opportunities": 14718.0,
+     "qualifiers": 96
+    },
+    "2011": {
+     "centre": -0.0548841894749879,
+     "opportunities": 14596.0,
+     "qualifiers": 95
+    },
+    "2012": {
+     "centre": -0.046669533725109034,
+     "opportunities": 14528.0,
+     "qualifiers": 105
+    },
+    "2013": {
+     "centre": -0.04884554871975293,
+     "opportunities": 14612.0,
+     "qualifiers": 95
+    },
+    "2014w4": {
+     "centre": -0.0735923752699541,
+     "opportunities": 2657.0,
+     "qualifiers": 45
+    }
+   },
+   "draft_priors": {
+    "drafted": {
+     "all": {
+      "lines": 89,
+      "mean": -0.03539545633014909,
+      "se": 0.012705598469758664,
+      "true_var": 0.0009749841531141341
+     },
+     "leave_class_out": {
+      "2010": {
+       "lines": 70,
+       "mean": -0.032643545132421056,
+       "se": 0.015102690816881103,
+       "true_var": 0.002164083436880968
+      },
+      "2011": {
+       "lines": 66,
+       "mean": -0.04424496375956577,
+       "se": 0.013844091338434861,
+       "true_var": 0.0
+      },
+      "2012": {
+       "lines": 65,
+       "mean": -0.023173452547620862,
+       "se": 0.014000098561372961,
+       "true_var": 0.0
+      },
+      "2013": {
+       "lines": 71,
+       "mean": -0.039968237180373935,
+       "se": 0.014866236828001691,
+       "true_var": 0.002622043928926768
+      },
+      "2014": {
+       "lines": 84,
+       "mean": -0.036327945603932786,
+       "se": 0.013134194577958728,
+       "true_var": 0.0022911467649422233
+      }
+     },
+     "lines_by_class": {
+      "2010": 19,
+      "2011": 23,
+      "2012": 24,
+      "2013": 18,
+      "2014": 5
+     }
+    },
+    "log_pick_slope": {
+     "applied": 0.0,
+     "lines": 89,
+     "se": 0.01407629936997886,
+     "slope": -0.005261880364857961,
+     "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+    },
+    "undrafted": {
+     "all": {
+      "lines": 17,
+      "mean": -0.0417877191305271,
+      "se": 0.022597143761842596,
+      "true_var": 0.0
+     },
+     "leave_class_out": {
+      "2011": {
+       "lines": 13,
+       "mean": -0.052503975262580035,
+       "se": 0.023656175765521804,
+       "true_var": 0.0
+      },
+      "2012": {
+       "lines": 9,
+       "mean": -0.027809102391647418,
+       "se": 0.03253809448188164,
+       "true_var": 0.0
+      },
+      "2013": {
+       "lines": 12,
+       "mean": -0.04066240420829618,
+       "se": 0.02899689549618979,
+       "true_var": 0.0
+      }
+     },
+     "lines_by_class": {
+      "2011": 4,
+      "2012": 8,
+      "2013": 5
+     }
+    }
+   },
+   "drift": {
+    "heterogeneity": {
+     "cochran_q": 0.441639899533144,
+     "df": 2,
+     "note": "reported; the pooled fit is used whatever it reads (specification section 2)",
+     "p": 0.801861042561465
+    },
+    "lag1_pairs": {
+     "2010-2011": {
+      "covariance": 0.0019263045378844277,
+      "players": 73,
+      "se": 0.001083353051183266
+     },
+     "2011-2012": {
+      "covariance": 0.001790139062552394,
+      "players": 68,
+      "se": 0.0017121727865615553
+     },
+     "2012-2013": {
+      "covariance": 0.0005205949397210576,
+      "players": 69,
+      "se": 0.0018535060230926467
+     }
+    },
+    "level_heterogeneity": {
+     "cochran_q": 1.6301803416485816,
+     "df": 4,
+     "p": 0.8033578496083041
+    },
+    "levels": {
+     "2010": {
+      "centre": -0.06001055131113712,
+      "qualifiers": 96,
+      "se": 0.013303429082237255
+     },
+     "2011": {
+      "centre": -0.0548841894749879,
+      "qualifiers": 95,
+      "se": 0.010661346845148491
+     },
+     "2012": {
+      "centre": -0.046669533725109034,
+      "qualifiers": 105,
+      "se": 0.013498457760934801
+     },
+     "2013": {
+      "centre": -0.04884554871975293,
+      "qualifiers": 95,
+      "se": 0.012989657065849824
+     },
+     "2014": {
+      "centre": -0.0735923752699541,
+      "qualifiers": 45,
+      "se": 0.019766338481517876
+     }
+    }
+   },
+   "floor": 30,
+   "forecast_calibration_2013_to_2014w4": {
+    "mean_z": 0.026913062861904386,
+    "players": 40,
+    "se_mean": 0.13594964971697046,
+    "se_var": 0.22645540682891915,
+    "status": "within 2 SE",
+    "var_z": 0.7392922903266786
+   },
+   "honour_cell": {
+    "mean": 0.05662243159427339,
+    "seasons": 23,
+    "true_var": 0.002126883812844111
+   },
+   "metric": "EPA per opportunity (rushing plus receiving EPA over carries plus targets), weekly statistics",
+   "noise": {
+    "2010": {
+     "sigma2": 0.9141321335923028,
+     "split_half_players": 96
+    },
+    "2011": {
+     "sigma2": 1.0387498094667174,
+     "split_half_players": 95
+    },
+    "2012": {
+     "sigma2": 1.0968137590677327,
+     "split_half_players": 105
+    },
+    "2013": {
+     "sigma2": 1.0486214283072008,
+     "split_half_players": 95
+    },
+    "2014w4": {
+     "sigma2": 1.2884874182102257,
+     "split_half_players": 45
+    }
+   },
+   "pass1": {
+    "bootstrap": {
+     "resamples": 200,
+     "rho_sd": 0.22617346771891703,
+     "sb2_sd": 0.0009787899279705883,
+     "su2_interval": [
+      0.0,
+      0.0045333011351755175
+     ]
+    },
+    "lag_moments": [
+     {
+      "fitted": 0.003295821554077507,
+      "lag": 0,
+      "moment": 0.0032958215540775065,
+      "terms": 436
+     },
+     {
+      "fitted": 0.0018091631497586258,
+      "lag": 1,
+      "moment": 0.0014203368493327562,
+      "terms": 210
+     },
+     {
+      "fitted": 0.0018091631497586258,
+      "lag": 2,
+      "moment": 0.002434654378490421,
+      "terms": 137
+     },
+     {
+      "fitted": 0.0018091631497586258,
+      "lag": 3,
+      "moment": 0.0010866606786076852,
+      "terms": 65
+     },
+     {
+      "fitted": 0.0018091631497586258,
+      "lag": 4,
+      "moment": 0.003760248848758067,
+      "terms": 22
+     }
+    ],
+    "players": 179,
+    "rho": 0.0,
+    "sb2": 0.0018091631497586258,
+    "sb2_no_swing": 0.002554201154681651,
+    "sse": 0.00020302763553853078,
+    "su2": 0.001486658404318881
+   },
+   "self_influence": {
+    "max": 0.08315548790170374,
+    "median": 0.00044647107489929015,
+    "p90": 0.00689973462892528,
+    "p99": 0.08315548790170374,
+    "players": 79,
+    "unit": "true-state SD of the family"
+   },
+   "two_pass_agreement": {
+    "outside": 0,
+    "rows": [
+     {
+      "pass1": -0.06001055131113712,
+      "pass2": -0.06561291937124851,
+      "quantity": "centre 2010",
+      "tolerance": 0.02660685816447451,
+      "within": true
+     },
+     {
+      "pass1": -0.0548841894749879,
+      "pass2": -0.05501208646867544,
+      "quantity": "centre 2011",
+      "tolerance": 0.021322693690296983,
+      "within": true
+     },
+     {
+      "pass1": -0.046669533725109034,
+      "pass2": -0.052536493657075016,
+      "quantity": "centre 2012",
+      "tolerance": 0.026996915521869603,
+      "within": true
+     },
+     {
+      "pass1": -0.04884554871975293,
+      "pass2": -0.054453566651213856,
+      "quantity": "centre 2013",
+      "tolerance": 0.025979314131699648,
+      "within": true
+     },
+     {
+      "pass1": -0.03539545633014909,
+      "pass2": -0.033530867293545624,
+      "quantity": "drafted rookie prior mean",
+      "tolerance": 0.02541119693951733,
+      "within": true
+     },
+     {
+      "pass1": -0.0417877191305271,
+      "pass2": -0.059789529675012686,
+      "quantity": "undrafted rookie prior mean",
+      "tolerance": 0.04519428752368519,
+      "within": true
+     }
+    ],
+    "rule": "reported; a quantity outside its tolerance is flagged, and the pass-1 value is the one used"
+   }
+  },
+  "TE": {
+   "adopted": {
+    "from": "pass 1, swing fixed at 0",
+    "held": false,
+    "rho": 0.0,
+    "sb2": 0.013046558391808502,
+    "status": "not kept (su2 interval reaches 0 in both passes)",
+    "su2": 0.0,
+    "swing_kept": false,
+    "tau": 0.0
+   },
+   "aging": {
+    "adopted": "Z",
+    "basis": "U5 fallback (zero aging for every family)",
+    "candidates_fitted": "held (amendments 2 and 3 rest on U5)",
+    "punter_curve": "held (the punter curve is an aging candidate; Z under the fallback)"
+   },
+   "below_min_cell": [
+    "undrafted rookie prior: 8 lines",
+    "honour cell: 12 seasons"
+   ],
+   "centres": {
+    "2010": {
+     "centre": 0.18670753767229836,
+     "opportunities": 3294.0,
+     "qualifiers": 61
+    },
+    "2011": {
+     "centre": 0.21211913056571555,
+     "opportunities": 3358.0,
+     "qualifiers": 54
+    },
+    "2012": {
+     "centre": 0.16044582314453723,
+     "opportunities": 3477.0,
+     "qualifiers": 55
+    },
+    "2013": {
+     "centre": 0.23251357638628276,
+     "opportunities": 3411.0,
+     "qualifiers": 61
+    },
+    "2014w4": {
+     "centre": 0.2636026796669809,
+     "opportunities": 529.0,
+     "qualifiers": 22
+    }
+   },
+   "draft_priors": {
+    "drafted": {
+     "all": {
+      "lines": 45,
+      "mean": -0.008412688214201571,
+      "se": 0.04858681175602534,
+      "true_var": 0.03349435193460852
+     },
+     "leave_class_out": {
+      "2010": {
+       "lines": 28,
+       "mean": -0.062382893972472576,
+       "se": 0.06608617968615169,
+       "true_var": 0.03333571402012277
+      },
+      "2011": {
+       "lines": 33,
+       "mean": 0.047547077274669905,
+       "se": 0.05956380518962231,
+       "true_var": 0.04780732159822072
+      },
+      "2012": {
+       "lines": 40,
+       "mean": -0.009511433535923281,
+       "se": 0.05191431749743692,
+       "true_var": 0.03663942493675565
+      },
+      "2013": {
+       "lines": 34,
+       "mean": -0.01698788489162223,
+       "se": 0.04797471247727709,
+       "true_var": 0.013658959848509719
+      }
+     },
+     "lines_by_class": {
+      "2010": 17,
+      "2011": 12,
+      "2012": 5,
+      "2013": 11
+     }
+    },
+    "log_pick_slope": {
+     "applied": 0.0,
+     "lines": 45,
+     "se": 0.0766172453470916,
+     "slope": -0.06153212369945764,
+     "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+    },
+    "undrafted": {
+     "all": {
+      "lines": 8,
+      "mean": 0.06338763910558648,
+      "se": 0.08618713416579131,
+      "true_var": 0.0
+     },
+     "leave_class_out": {
+      "2012": {
+       "lines": 5,
+       "mean": 0.05653213980456671,
+       "se": 0.14178074988809344,
+       "true_var": 0.0
+      },
+      "2013": {
+       "lines": 3,
+       "mean": 0.07481347127395277,
+       "se": 0.047113653908616805,
+       "true_var": 0.0
+      }
+     },
+     "lines_by_class": {
+      "2012": 3,
+      "2013": 5
+     }
+    }
+   },
+   "drift": {
+    "heterogeneity": {
+     "cochran_q": 5.023488772519684,
+     "df": 2,
+     "note": "reported; the pooled fit is used whatever it reads (specification section 2)",
+     "p": 0.08112659961402387
+    },
+    "lag1_pairs": {
+     "2010-2011": {
+      "covariance": 0.029465472814074394,
+      "players": 41,
+      "se": 0.01151625949832598
+     },
+     "2011-2012": {
+      "covariance": 0.009663490358521645,
+      "players": 41,
+      "se": 0.009356837086279412
+     },
+     "2012-2013": {
+      "covariance": 6.0637028072354165e-06,
+      "players": 37,
+      "se": 0.006484669162869487
+     }
+    },
+    "level_heterogeneity": {
+     "cochran_q": 3.5922424218829976,
+     "df": 4,
+     "p": 0.46399196860026737
+    },
+    "levels": {
+     "2010": {
+      "centre": 0.18670753767229836,
+      "qualifiers": 61,
+      "se": 0.034361029481065994
+     },
+     "2011": {
+      "centre": 0.21211913056571555,
+      "qualifiers": 54,
+      "se": 0.034729875804265266
+     },
+     "2012": {
+      "centre": 0.16044582314453723,
+      "qualifiers": 55,
+      "se": 0.03113264365987644
+     },
+     "2013": {
+      "centre": 0.23251357638628276,
+      "qualifiers": 61,
+      "se": 0.030093552331197086
+     },
+     "2014": {
+      "centre": 0.2636026796669809,
+      "qualifiers": 22,
+      "se": 0.08648978196380362
+     }
+    }
+   },
+   "floor": 15,
+   "forecast_calibration_2013_to_2014w4": {
+    "mean_z": -0.2552603859757315,
+    "players": 21,
+    "se_mean": 0.22199016207069594,
+    "se_var": 0.31622776601683794,
+    "status": "within 2 SE",
+    "var_z": 1.034872273179651
+   },
+   "honour_cell": {
+    "mean": 0.27625851299693954,
+    "seasons": 12,
+    "true_var": 0.03369921674456902
+   },
+   "metric": "EPA per opportunity (rushing plus receiving EPA over carries plus targets), weekly statistics",
+   "noise": {
+    "2010": {
+     "sigma2": 1.8571242733686173,
+     "split_half_players": 61
+    },
+    "2011": {
+     "sigma2": 1.8353858034900428,
+     "split_half_players": 54
+    },
+    "2012": {
+     "sigma2": 2.7989607539973886,
+     "split_half_players": 55
+    },
+    "2013": {
+     "sigma2": 2.938933202123009,
+     "split_half_players": 61
+    },
+    "2014w4": {
+     "sigma2": 2.1963238035608117,
+     "split_half_players": 22
+    }
+   },
+   "pass1": {
+    "bootstrap": {
+     "resamples": 200,
+     "rho_sd": 0.08770381975718047,
+     "sb2_sd": 0.005227720311984046,
+     "su2_interval": [
+      0.0,
+      0.007888357941773087
+     ]
+    },
+    "lag_moments": [
+     {
+      "fitted": 0.013046558391808502,
+      "lag": 0,
+      "moment": 0.008941107672144129,
+      "terms": 253
+     },
+     {
+      "fitted": 0.013046558391808502,
+      "lag": 1,
+      "moment": 0.01348329283260761,
+      "terms": 119
+     },
+     {
+      "fitted": 0.013046558391808502,
+      "lag": 2,
+      "moment": 0.017499417185543865,
+      "terms": 86
+     },
+     {
+      "fitted": 0.013046558391808502,
+      "lag": 3,
+      "moment": 0.01702696803058994,
+      "terms": 43
+     },
+     {
+      "fitted": 0.013046558391808502,
+      "lag": 4,
+      "moment": 0.052374209563731136,
+      "terms": 11
+     }
+    ],
+    "players": 105,
+    "rho": 0.0,
+    "sb2": 0.013046558391808502,
+    "sb2_no_swing": 0.013046558391808502,
+    "sse": 0.023686730135034563,
+    "su2": 0.0
+   },
+   "self_influence": {
+    "max": 0.08161965032856594,
+    "median": 0.0004226357975282805,
+    "p90": 0.008141839838894896,
+    "p99": 0.08161965032856594,
+    "players": 50,
+    "unit": "true-state SD of the family"
+   },
+   "two_pass_agreement": {
+    "outside": 0,
+    "rows": [
+     {
+      "pass1": 0.18670753767229836,
+      "pass2": 0.17820938268395348,
+      "quantity": "centre 2010",
+      "tolerance": 0.06872205896213199,
+      "within": true
+     },
+     {
+      "pass1": 0.21211913056571555,
+      "pass2": 0.219192985238481,
+      "quantity": "centre 2011",
+      "tolerance": 0.06945975160853053,
+      "within": true
+     },
+     {
+      "pass1": 0.16044582314453723,
+      "pass2": 0.16732115477867918,
+      "quantity": "centre 2012",
+      "tolerance": 0.06226528731975288,
+      "within": true
+     },
+     {
+      "pass1": 0.23251357638628276,
+      "pass2": 0.22811675003427498,
+      "quantity": "centre 2013",
+      "tolerance": 0.06018710466239417,
+      "within": true
+     },
+     {
+      "pass1": -0.008412688214201571,
+      "pass2": -0.014252629527050897,
+      "quantity": "drafted rookie prior mean",
+      "tolerance": 0.09717362351205068,
+      "within": true
+     },
+     {
+      "pass1": 0.06338763910558648,
+      "pass2": 0.03391344567049048,
+      "quantity": "undrafted rookie prior mean",
+      "tolerance": 0.17237426833158262,
+      "within": true
+     }
+    ],
+    "rule": "reported; a quantity outside its tolerance is flagged, and the pass-1 value is the one used"
+   }
+  },
+  "WR": {
+   "adopted": {
+    "from": "pass 1",
+    "held": false,
+    "rho": 0.53,
+    "sb2": 0.0,
+    "status": "Confirmed two-pass",
+    "su2": 0.02736054680469389,
+    "swing_kept": true,
+    "tau": 0.14026749162673216
+   },
+   "aging": {
+    "adopted": "Z",
+    "basis": "U5 fallback (zero aging for every family)",
+    "candidates_fitted": "held (amendments 2 and 3 rest on U5)",
+    "punter_curve": "held (the punter curve is an aging candidate; Z under the fallback)"
+   },
+   "below_min_cell": [
+    "undrafted rookie prior: 27 lines",
+    "honour cell: 25 seasons"
+   ],
+   "centres": {
+    "2010": {
+     "centre": 0.17302256451946307,
+     "opportunities": 10105.0,
+     "qualifiers": 132
+    },
+    "2011": {
+     "centre": 0.19119390201619843,
+     "opportunities": 9944.0,
+     "qualifiers": 131
+    },
+    "2012": {
+     "centre": 0.19923460050182046,
+     "opportunities": 10383.0,
+     "qualifiers": 137
+    },
+    "2013": {
+     "centre": 0.19496661648795055,
+     "opportunities": 10342.0,
+     "qualifiers": 129
+    },
+    "2014w4": {
+     "centre": 0.227738309797679,
+     "opportunities": 1814.0,
+     "qualifiers": 61
+    }
+   },
+   "draft_priors": {
+    "drafted": {
+     "all": {
+      "lines": 120,
+      "mean": -0.04769061582040141,
+      "se": 0.02656307570587671,
+      "true_var": 0.027570866271520292
+     },
+     "leave_class_out": {
+      "2010": {
+       "lines": 91,
+       "mean": -0.048042569196159374,
+       "se": 0.03132183749768512,
+       "true_var": 0.02925259193174931
+      },
+      "2011": {
+       "lines": 91,
+       "mean": -0.05768870483032643,
+       "se": 0.03032389000807375,
+       "true_var": 0.023932591286646945
+      },
+      "2012": {
+       "lines": 84,
+       "mean": -0.021250712833896523,
+       "se": 0.0322139871858222,
+       "true_var": 0.030739296577273714
+      },
+      "2013": {
+       "lines": 100,
+       "mean": -0.05749268924433192,
+       "se": 0.027530689517114456,
+       "true_var": 0.021451943148374085
+      },
+      "2014": {
+       "lines": 114,
+       "mean": -0.050312463639490955,
+       "se": 0.027751299710009957,
+       "true_var": 0.03222521748599938
+      }
+     },
+     "lines_by_class": {
+      "2010": 29,
+      "2011": 29,
+      "2012": 36,
+      "2013": 20,
+      "2014": 6
+     }
+    },
+    "log_pick_slope": {
+     "applied": 0.0,
+     "lines": 120,
+     "se": 0.028292420614849392,
+     "slope": -0.021314723636401006,
+     "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+    },
+    "undrafted": {
+     "all": {
+      "lines": 27,
+      "mean": 0.0012743149020064918,
+      "se": 0.05411077312363808,
+      "true_var": 0.013051846852627877
+     },
+     "leave_class_out": {
+      "2011": {
+       "lines": 20,
+       "mean": 0.00622132783285951,
+       "se": 0.06974774192563783,
+       "true_var": 0.027180693935089997
+      },
+      "2012": {
+       "lines": 13,
+       "mean": -0.04985247412626348,
+       "se": 0.04862276391374115,
+       "true_var": 0.0
+      },
+      "2013": {
+       "lines": 22,
+       "mean": 0.01821273475154199,
+       "se": 0.06395942522908636,
+       "true_var": 0.024622390116461376
+      },
+      "2014": {
+       "lines": 26,
+       "mean": 0.008699805750493738,
+       "se": 0.05570156983418524,
+       "true_var": 0.01614025828332577
+      }
+     },
+     "lines_by_class": {
+      "2011": 7,
+      "2012": 14,
+      "2013": 5,
+      "2014": 1
+     }
+    }
+   },
+   "drift": {
+    "heterogeneity": {
+     "cochran_q": 1.6670034534252058,
+     "df": 2,
+     "note": "reported; the pooled fit is used whatever it reads (specification section 2)",
+     "p": 0.43452503120758246
+    },
+    "lag1_pairs": {
+     "2010-2011": {
+      "covariance": 0.014106320392067726,
+      "players": 97,
+      "se": 0.007401120985770849
+     },
+     "2011-2012": {
+      "covariance": 0.02245558512329742,
+      "players": 94,
+      "se": 0.007139560582246374
+     },
+     "2012-2013": {
+      "covariance": 0.010739099853338692,
+      "players": 97,
+      "se": 0.005683772121269188
+     }
+    },
+    "level_heterogeneity": {
+     "cochran_q": 1.661730548832514,
+     "df": 4,
+     "p": 0.7976570053714258
+    },
+    "levels": {
+     "2010": {
+      "centre": 0.17302256451946307,
+      "qualifiers": 132,
+      "se": 0.02394578436285569
+     },
+     "2011": {
+      "centre": 0.19119390201619843,
+      "qualifiers": 131,
+      "se": 0.02497450154409371
+     },
+     "2012": {
+      "centre": 0.19923460050182046,
+      "qualifiers": 137,
+      "se": 0.025054483782346783
+     },
+     "2013": {
+      "centre": 0.19496661648795055,
+      "qualifiers": 129,
+      "se": 0.022813054536445814
+     },
+     "2014": {
+      "centre": 0.227738309797679,
+      "qualifiers": 61,
+      "se": 0.03679194541061358
+     }
+    }
+   },
+   "floor": 20,
+   "forecast_calibration_2013_to_2014w4": {
+    "mean_z": -0.039164331200298635,
+    "players": 54,
+    "se_mean": 0.11946535729006028,
+    "se_var": 0.19425717247145283,
+    "status": "within 2 SE",
+    "var_z": 0.7706864659918549
+   },
+   "honour_cell": {
+    "mean": 0.16725786992749664,
+    "seasons": 25,
+    "true_var": 0.001374551104673178
+   },
+   "metric": "EPA per opportunity (rushing plus receiving EPA over carries plus targets), weekly statistics",
+   "noise": {
+    "2010": {
+     "sigma2": 2.7262805898023537,
+     "split_half_players": 132
+    },
+    "2011": {
+     "sigma2": 2.533699557881574,
+     "split_half_players": 131
+    },
+    "2012": {
+     "sigma2": 2.580753378979454,
+     "split_half_players": 137
+    },
+    "2013": {
+     "sigma2": 2.9559487209370494,
+     "split_half_players": 129
+    },
+    "2014w4": {
+     "sigma2": 2.5041534004341575,
+     "split_half_players": 61
+    }
+   },
+   "pass1": {
+    "bootstrap": {
+     "resamples": 200,
+     "rho_sd": 0.16091845761130077,
+     "sb2_sd": 0.002819281366291737,
+     "su2_interval": [
+      0.014372566340240887,
+      0.03868476842444235
+     ]
+    },
+    "lag_moments": [
+     {
+      "fitted": 0.02736054680469389,
+      "lag": 0,
+      "moment": 0.027089462019025134,
+      "terms": 590
+     },
+     {
+      "fitted": 0.014501089806487764,
+      "lag": 1,
+      "moment": 0.01569732904650827,
+      "terms": 288
+     },
+     {
+      "fitted": 0.007685577597438515,
+      "lag": 2,
+      "moment": 0.009019768678623452,
+      "terms": 199
+     },
+     {
+      "fitted": 0.004073356126642413,
+      "lag": 3,
+      "moment": -0.0012106092299283763,
+      "terms": 97
+     },
+     {
+      "fitted": 0.002158878747120479,
+      "lag": 4,
+      "moment": -0.007313613854396671,
+      "terms": 28
+     }
+    ],
+    "players": 236,
+    "rho": 0.53,
+    "sb2": 0.0,
+    "sb2_no_swing": 0.01828314229653837,
+    "sse": 0.0060303704150391066,
+    "su2": 0.02736054680469389
+   },
+   "self_influence": {
+    "max": 0.055432330788419776,
+    "median": 0.00021060541858330763,
+    "p90": 0.01099377031757716,
+    "p99": 0.042743746343773995,
+    "players": 112,
+    "unit": "true-state SD of the family"
+   },
+   "two_pass_agreement": {
+    "outside": 0,
+    "rows": [
+     {
+      "pass1": 0.17302256451946307,
+      "pass2": 0.16947589584842643,
+      "quantity": "centre 2010",
+      "tolerance": 0.04789156872571138,
+      "within": true
+     },
+     {
+      "pass1": 0.19119390201619843,
+      "pass2": 0.20210822421386138,
+      "quantity": "centre 2011",
+      "tolerance": 0.04994900308818742,
+      "within": true
+     },
+     {
+      "pass1": 0.19923460050182046,
+      "pass2": 0.2036475832624626,
+      "quantity": "centre 2012",
+      "tolerance": 0.05010896756469357,
+      "within": true
+     },
+     {
+      "pass1": 0.19496661648795055,
+      "pass2": 0.2003530898674153,
+      "quantity": "centre 2013",
+      "tolerance": 0.04562610907289163,
+      "within": true
+     },
+     {
+      "pass1": -0.04769061582040141,
+      "pass2": -0.05249819023726448,
+      "quantity": "drafted rookie prior mean",
+      "tolerance": 0.05312615141175342,
+      "within": true
+     },
+     {
+      "pass1": 0.0012743149020064918,
+      "pass2": -0.01610798191726057,
+      "quantity": "undrafted rookie prior mean",
+      "tolerance": 0.10822154624727616,
+      "within": true
+     }
+    ],
+    "rule": "reported; a quantity outside its tolerance is flagged, and the pass-1 value is the one used"
+   }
+  }
+ },
+ "feedback": {
+  "applied": {
+   "availability": "from the 2015 transition (default 1B.13); F is 0 in 2014",
+   "in_2014": 0,
+   "role_2015": 0,
+   "snaps": 0
+  },
+  "outcome": "one-step forecast residual of a qualifying 2011-2013 season, in true-state SD units, pooled over families; role = change in starter share since the previous line, availability = seasons missed between lines; the 2013-to-2014 Weeks 1-4 pair held out",
+  "pass1": {
+   "availability": {
+    "cap": 2,
+    "cap_quantile": 1.0,
+    "loo_club_skill": -0.0008389114687810117,
+    "rows": 2504,
+    "se": 0.22026593819079318,
+    "slope": -0.260217306976678
+   },
+   "role": {
+    "cap": 0.38888888888888884,
+    "cap_quantile": 0.75,
+    "loo_club_skill": 0.008702953502371491,
+    "rows": 2504,
+    "se": 0.1728041081943201,
+    "slope": 0.842711780752118
+   }
+  },
+  "pass2": {
+   "availability": {
+    "cap": 2,
+    "cap_quantile": 1.0,
+    "loo_club_skill": -0.0014901579090569328,
+    "rows": 2420,
+    "se": 0.2294064465895436,
+    "slope": -0.21454138097606315
+   },
+   "role": {
+    "cap": 0.375,
+    "cap_quantile": 0.75,
+    "loo_club_skill": 0.008274585913516264,
+    "rows": 2420,
+    "se": 0.18657696172477034,
+    "slope": 0.8926838504238
+   }
+  },
+  "reconciled": {
+   "availability": {
+    "kept": false,
+    "weight": 0.0
+   },
+   "role": {
+    "kept": true,
+    "status": "Confirmed two-pass",
+    "weight": 0.842711780752118
+   }
+  }
+ },
+ "held_out_pair": [
+  2013,
+  2014
+ ],
+ "honours_evidence_sha256": "65dc3d8ec53c9418f7aab83e5bbff3441e735355f74d819f03ea92d1c404baca",
+ "information_boundary": "NFL regular seasons 2010-2013 and 2014 Weeks 1-4 (games through 2014-09-29), cut at fetch; positions from each season's own roster; 2013 and 2014 enter pooled fits only as an anonymous league population; no club, game or player field",
+ "lags": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "rho_grid": [
+  0.0,
+  0.99,
+  0.01
+ ],
+ "schema": "2010-2014-player-state-model-v1",
+ "second_pass": {
+  "estimator": "equal weight per player; chronological split-half noise",
+  "families": {
+   "DB": {
+    "centres": {
+     "2010": {
+      "centre": 0.5292494481236203,
+      "opportunities": 3624.0,
+      "qualifiers": 295
+     },
+     "2011": {
+      "centre": 0.5042016806722689,
+      "opportunities": 3570.0,
+      "qualifiers": 304
+     },
+     "2012": {
+      "centre": 0.4805356156819437,
+      "opportunities": 3622.0,
+      "qualifiers": 308
+     },
+     "2013": {
+      "centre": 0.5037479178234314,
+      "opportunities": 3602.0,
+      "qualifiers": 298
+     },
+     "2014w4": {
+      "centre": 0.49177330895795246,
+      "opportunities": 547.0,
+      "qualifiers": 133
+     }
+    },
+    "draft_priors": {
+     "drafted": {
+      "all": {
+       "lines": 264,
+       "mean": -0.13332725792416245,
+       "se": 0.01855992888201761,
+       "true_var": 0.01885735857970644
+      },
+      "leave_class_out": {
+       "2010": {
+        "lines": 197,
+        "mean": -0.15170787914279257,
+        "se": 0.020913455324437818,
+        "true_var": 0.012167003896233278
+       },
+       "2011": {
+        "lines": 196,
+        "mean": -0.11290245198479111,
+        "se": 0.02217809791834984,
+        "true_var": 0.02463744529445648
+       },
+       "2012": {
+        "lines": 202,
+        "mean": -0.132036368850506,
+        "se": 0.021419123147034515,
+        "true_var": 0.018601602885321075
+       },
+       "2013": {
+        "lines": 205,
+        "mean": -0.13642778272999448,
+        "se": 0.020624722439188555,
+        "true_var": 0.017478189914482273
+       },
+       "2014": {
+        "lines": 256,
+        "mean": -0.1333562875793565,
+        "se": 0.018938949383051924,
+        "true_var": 0.020651780917320367
+       }
+      },
+      "lines_by_class": {
+       "2010": 67,
+       "2011": 68,
+       "2012": 62,
+       "2013": 59,
+       "2014": 8
+      }
+     },
+     "log_pick_slope": {
+      "applied": 0.0,
+      "lines": 264,
+      "se": 0.017862143111955515,
+      "slope": -0.14851658130960302,
+      "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+     },
+     "undrafted": {
+      "all": {
+       "lines": 75,
+       "mean": -0.22695511429107298,
+       "se": 0.03535857027652396,
+       "true_var": 0.011179751062289064
+      },
+      "leave_class_out": {
+       "2011": {
+        "lines": 44,
+        "mean": -0.24896821412330616,
+        "se": 0.042503091013817496,
+        "true_var": 0.0
+       },
+       "2012": {
+        "lines": 47,
+        "mean": -0.19861834484931984,
+        "se": 0.049555444619765875,
+        "true_var": 0.02968482705144737
+       },
+       "2013": {
+        "lines": 60,
+        "mean": -0.2374229470545899,
+        "se": 0.038159614278095444,
+        "true_var": 0.005310533631079681
+       },
+       "2014": {
+        "lines": 74,
+        "mean": -0.22337649003881785,
+        "se": 0.035655629449395376,
+        "true_var": 0.011814899738186793
+       }
+      },
+      "lines_by_class": {
+       "2011": 31,
+       "2012": 28,
+       "2013": 15,
+       "2014": 1
+      }
+     }
+    },
+    "fit": {
+     "bootstrap": {
+      "resamples": 200,
+      "rho_sd": 0.11917428413881914,
+      "sb2_sd": 0.009095700467288075,
+      "su2_interval": [
+       0.020358589344710437,
+       0.06183845089427747
+      ]
+     },
+     "lag_moments": [
+      {
+       "fitted": 0.053706889887497423,
+       "lag": 0,
+       "moment": 0.04969507848265907,
+       "players": 514
+      },
+      {
+       "fitted": 0.04941033869649763,
+       "lag": 1,
+       "moment": 0.059844927399999436,
+       "players": 332
+      },
+      {
+       "fitted": 0.04545751160077782,
+       "lag": 2,
+       "moment": 0.04443651897765859,
+       "players": 254
+      },
+      {
+       "fitted": 0.041820910672715594,
+       "lag": 3,
+       "moment": 0.03721295865625008,
+       "players": 163
+      },
+      {
+       "fitted": 0.03847523781889835,
+       "lag": 4,
+       "moment": 0.03179372556895621,
+       "players": 67
+      }
+     ],
+     "players": 514,
+     "rho": 0.92,
+     "sb2": 0.0,
+     "sse": 0.05113785909037985,
+     "su2": 0.053706889887497423
+    },
+    "noise": {
+     "2010": {
+      "sigma2": 0.6376178139390476,
+      "split_half_players": 295
+     },
+     "2011": {
+      "sigma2": 0.6089107624889244,
+      "split_half_players": 304
+     },
+     "2012": {
+      "sigma2": 0.6245433727515328,
+      "split_half_players": 308
+     },
+     "2013": {
+      "sigma2": 0.6490370733055131,
+      "split_half_players": 298
+     },
+     "2014w4": {
+      "sigma2": 0.42634711779448625,
+      "split_half_players": 133
+     }
+    }
+   },
+   "DL": {
+    "centres": {
+     "2010": {
+      "centre": 0.8933258342707162,
+      "opportunities": 2667.0,
+      "qualifiers": 230
+     },
+     "2011": {
+      "centre": 0.9221567905778432,
+      "opportunities": 2717.0,
+      "qualifiers": 236
+     },
+     "2012": {
+      "centre": 0.9642988590357011,
+      "opportunities": 2717.0,
+      "qualifiers": 239
+     },
+     "2013": {
+      "centre": 1.034625517500941,
+      "opportunities": 2657.0,
+      "qualifiers": 230
+     },
+     "2014w4": {
+      "centre": 0.9965635738831615,
+      "opportunities": 291.0,
+      "qualifiers": 72
+     }
+    },
+    "draft_priors": {
+     "drafted": {
+      "all": {
+       "lines": 208,
+       "mean": -0.15914648489524483,
+       "se": 0.04572124667048014,
+       "true_var": 0.24916722205326033
+      },
+      "leave_class_out": {
+       "2010": {
+        "lines": 149,
+        "mean": -0.17323674138220393,
+        "se": 0.05445021558323856,
+        "true_var": 0.2399912801460332
+       },
+       "2011": {
+        "lines": 155,
+        "mean": -0.19789713010735058,
+        "se": 0.045872943645411515,
+        "true_var": 0.1346985442022439
+       },
+       "2012": {
+        "lines": 151,
+        "mean": -0.15059329002580127,
+        "se": 0.057059825805625686,
+        "true_var": 0.2999802378694727
+       },
+       "2013": {
+        "lines": 170,
+        "mean": -0.12251796307077778,
+        "se": 0.05293526173160265,
+        "true_var": 0.31404612304938695
+       },
+       "2014": {
+        "lines": 207,
+        "mean": -0.15630872118032735,
+        "se": 0.04585408128884406,
+        "true_var": 0.25079271599179875
+       }
+      },
+      "lines_by_class": {
+       "2010": 59,
+       "2011": 53,
+       "2012": 57,
+       "2013": 38,
+       "2014": 1
+      }
+     },
+     "log_pick_slope": {
+      "applied": 0.0,
+      "lines": 208,
+      "se": 0.03762584999271211,
+      "slope": -0.2507037520353853,
+      "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+     },
+     "undrafted": {
+      "all": {
+       "lines": 36,
+       "mean": -0.4759163003755959,
+       "se": 0.06995265870289902,
+       "true_var": 0.0
+      },
+      "leave_class_out": {
+       "2011": {
+        "lines": 21,
+        "mean": -0.46773379387454106,
+        "se": 0.10455413523138288,
+        "true_var": 0.0
+       },
+       "2012": {
+        "lines": 23,
+        "mean": -0.4932100557462442,
+        "se": 0.08271174612371192,
+        "true_var": 0.0
+       },
+       "2013": {
+        "lines": 28,
+        "mean": -0.4678475954826401,
+        "se": 0.07513897098769713,
+        "true_var": 0.0
+       }
+      },
+      "lines_by_class": {
+       "2011": 15,
+       "2012": 13,
+       "2013": 8
+      }
+     }
+    },
+    "fit": {
+     "bootstrap": {
+      "resamples": 200,
+      "rho_sd": 0.4549703287028727,
+      "sb2_sd": 0.12322774203302456,
+      "su2_interval": [
+       0.0,
+       0.3222645809228149
+      ]
+     },
+     "lag_moments": [
+      {
+       "fitted": 0.26198691699226595,
+       "lag": 0,
+       "moment": 0.23896535097024554,
+       "players": 413
+      },
+      {
+       "fitted": 0.2569927033426963,
+       "lag": 1,
+       "moment": 0.3096785338056867,
+       "players": 253
+      },
+      {
+       "fitted": 0.25209837396611806,
+       "lag": 2,
+       "moment": 0.25273568330549645,
+       "players": 189
+      },
+      {
+       "fitted": 0.24730193117707133,
+       "lag": 3,
+       "moment": 0.23182487587837947,
+       "players": 119
+      },
+      {
+       "fitted": 0.24260141724380557,
+       "lag": 4,
+       "moment": 0.17017761639604034,
+       "players": 29
+      }
+     ],
+     "players": 413,
+     "rho": 0.98,
+     "sb2": 0.012276234513783683,
+     "sse": 1.1018564118954224,
+     "su2": 0.24971068247848227
+    },
+    "noise": {
+     "2010": {
+      "sigma2": 1.2079023781945613,
+      "split_half_players": 230
+     },
+     "2011": {
+      "sigma2": 1.3396398648501724,
+      "split_half_players": 236
+     },
+     "2012": {
+      "sigma2": 1.5429598036124605,
+      "split_half_players": 239
+     },
+     "2013": {
+      "sigma2": 1.8754069426240136,
+      "split_half_players": 230
+     },
+     "2014w4": {
+      "sigma2": 1.7344328703703704,
+      "split_half_players": 72
+     }
+    }
+   },
+   "K": {
+    "centres": {
+     "2010": {
+      "centre": 0.004123160548561042,
+      "opportunities": 923.0,
+      "qualifiers": 35
+     },
+     "2011": {
+      "centre": 0.0007908880863846189,
+      "opportunities": 996.0,
+      "qualifiers": 33
+     },
+     "2012": {
+      "centre": 0.0011700739070523857,
+      "opportunities": 1005.0,
+      "qualifiers": 36
+     },
+     "2013": {
+      "centre": 0.000276787789878901,
+      "opportunities": 982.0,
+      "qualifiers": 32
+     },
+     "2014w4": {
+      "centre": -0.012960300047438325,
+      "opportunities": 64.0,
+      "qualifiers": 6
+     }
+    },
+    "draft_priors": {
+     "drafted": {
+      "all": {
+       "lines": 8,
+       "mean": -0.003398061744917306,
+       "se": 0.02451408462495978,
+       "true_var": 0.000265617267697635
+      },
+      "leave_class_out": {
+       "2011": {
+        "lines": 6,
+        "mean": -0.010897572872709912,
+        "se": 0.03244903383489098,
+        "true_var": 0.002194171367580643
+       },
+       "2012": {
+        "lines": 3,
+        "mean": -0.015727344909906345,
+        "se": 0.0364977219308835,
+        "true_var": 0.0
+       },
+       "2013": {
+        "lines": 7,
+        "mean": 0.008314069149614517,
+        "se": 0.024866747137735103,
+        "true_var": 0.0
+       }
+      },
+      "lines_by_class": {
+       "2011": 2,
+       "2012": 5,
+       "2013": 1
+      }
+     },
+     "log_pick_slope": {
+      "applied": 0.0,
+      "lines": 8,
+      "se": 0.17346705333195278,
+      "slope": -0.024800378208905908,
+      "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+     },
+     "undrafted": {
+      "all": {
+       "lines": 8,
+       "mean": 0.04380747709916339,
+       "se": 0.019936333434049408,
+       "true_var": 0.0
+      },
+      "leave_class_out": {
+       "2011": {
+        "lines": 4,
+        "mean": 0.04823410230676375,
+        "se": 0.03594985223136853,
+        "true_var": 0.0
+       },
+       "2012": {
+        "lines": 4,
+        "mean": 0.03938085189156304,
+        "se": 0.023438130068199566,
+        "true_var": 0.0
+       }
+      },
+      "lines_by_class": {
+       "2011": 4,
+       "2012": 4
+      }
+     }
+    },
+    "fit": {
+     "bootstrap": {
+      "resamples": 200,
+      "rho_sd": 0.12646260316789307,
+      "sb2_sd": 0.00013462552034254572,
+      "su2_interval": [
+       0.0,
+       0.0003609506543236635
+      ]
+     },
+     "lag_moments": [
+      {
+       "fitted": 0.0,
+       "lag": 0,
+       "moment": -0.0006999073252641851,
+       "players": 46
+      },
+      {
+       "fitted": 0.0,
+       "lag": 1,
+       "moment": 0.0003268722632366959,
+       "players": 38
+      },
+      {
+       "fitted": 0.0,
+       "lag": 2,
+       "moment": 3.5300252664260815e-05,
+       "players": 33
+      },
+      {
+       "fitted": 0.0,
+       "lag": 3,
+       "moment": 5.8979070883079136e-05,
+       "players": 23
+      },
+      {
+       "fitted": 0.0,
+       "lag": 4,
+       "moment": 0.003905634711448032,
+       "players": 3
+      }
+     ],
+     "players": 46,
+     "rho": 0.0,
+     "sb2": 0.0,
+     "sse": 7.247723551299553e-05,
+     "su2": 0.0
+    },
+    "noise": {
+     "2010": {
+      "sigma2": 0.13834254502033042,
+      "split_half_players": 35
+     },
+     "2011": {
+      "sigma2": 0.16215793013283789,
+      "split_half_players": 33
+     },
+     "2012": {
+      "sigma2": 0.17324629602203964,
+      "split_half_players": 36
+     },
+     "2013": {
+      "sigma2": 0.11262180169913034,
+      "split_half_players": 32
+     },
+     "2014w4": {
+      "sigma2": 0.04163042647787175,
+      "split_half_players": 6
+     }
+    }
+   },
+   "KR": {
+    "centres": {
+     "2010": {
+      "centre": 23.543869843114468,
+      "opportunities": 1721.0,
+      "qualifiers": 61
+     },
+     "2011": {
+      "centre": 24.820779220779222,
+      "opportunities": 1155.0,
+      "qualifiers": 51
+     },
+     "2012": {
+      "centre": 25.167106420404572,
+      "opportunities": 1137.0,
+      "qualifiers": 54
+     },
+     "2013": {
+      "centre": 24.84442169907881,
+      "opportunities": 977.0,
+      "qualifiers": 50
+     },
+     "2014w4": {
+      "centre": 25.22222222222222,
+      "opportunities": 81.0,
+      "qualifiers": 8
+     }
+    },
+    "draft_priors": {
+     "drafted": {
+      "all": {
+       "lines": 70,
+       "mean": -0.24605180037046287,
+       "se": 0.39192068946459085,
+       "true_var": 0.0
+      },
+      "leave_class_out": {
+       "2010": {
+        "lines": 41,
+        "mean": -0.48013984671925425,
+        "se": 0.5262246768229665,
+        "true_var": 0.0
+       },
+       "2011": {
+        "lines": 56,
+        "mean": -0.20322716165392793,
+        "se": 0.4565980808178514,
+        "true_var": 1.063997875447333
+       },
+       "2012": {
+        "lines": 54,
+        "mean": 0.0593385819861556,
+        "se": 0.454513573800282,
+        "true_var": 0.5921625067867655
+       },
+       "2013": {
+        "lines": 60,
+        "mean": -0.33884881598604066,
+        "se": 0.3920665971949407,
+        "true_var": 0.0
+       },
+       "2014": {
+        "lines": 69,
+        "mean": -0.3000203449813069,
+        "se": 0.39385436267007623,
+        "true_var": 0.0
+       }
+      },
+      "lines_by_class": {
+       "2010": 29,
+       "2011": 14,
+       "2012": 16,
+       "2013": 10,
+       "2014": 1
+      }
+     },
+     "log_pick_slope": {
+      "applied": 0.0,
+      "lines": 70,
+      "se": 0.5377172248505885,
+      "slope": -0.5101592962450346,
+      "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+     },
+     "undrafted": {
+      "all": {
+       "lines": 20,
+       "mean": -1.7738570815293824,
+       "se": 0.5415861978249193,
+       "true_var": 0.0
+      },
+      "leave_class_out": {
+       "2011": {
+        "lines": 16,
+        "mean": -1.3750428078202819,
+        "se": 0.6043414038851145,
+        "true_var": 0.0
+       },
+       "2012": {
+        "lines": 10,
+        "mean": -3.2407547884839873,
+        "se": 0.5789605570187438,
+        "true_var": 0.0
+       },
+       "2013": {
+        "lines": 15,
+        "mean": -1.2936424206531176,
+        "se": 0.612381171597777,
+        "true_var": 0.0
+       },
+       "2014": {
+        "lines": 19,
+        "mean": -1.7167660932632518,
+        "se": 0.5677012406120838,
+        "true_var": 0.0
+       }
+      },
+      "lines_by_class": {
+       "2011": 4,
+       "2012": 10,
+       "2013": 5,
+       "2014": 1
+      }
+     }
+    },
+    "fit": {
+     "bootstrap": {
+      "resamples": 200,
+      "rho_sd": 0.20727255003979664,
+      "sb2_sd": 0.5091030779832928,
+      "su2_interval": [
+       0.0,
+       1.300207910308131
+      ]
+     },
+     "lag_moments": [
+      {
+       "fitted": 0.40669591264515914,
+       "lag": 0,
+       "moment": -0.5130589704482094,
+       "players": 141
+      },
+      {
+       "fitted": 0.40669591264515914,
+       "lag": 1,
+       "moment": 3.268940337054562,
+       "players": 44
+      },
+      {
+       "fitted": 0.40669591264515914,
+       "lag": 2,
+       "moment": -0.48780918752022584,
+       "players": 27
+      },
+      {
+       "fitted": 0.40669591264515914,
+       "lag": 3,
+       "moment": 2.2753007559160916,
+       "players": 13
+      },
+      {
+       "fitted": 0.40669591264515914,
+       "lag": 4,
+       "moment": 4.013154496739651,
+       "players": 1
+      }
+     ],
+     "players": 141,
+     "rho": 0.0,
+     "sb2": 0.40669591264515914,
+     "sse": 559.7485131307294,
+     "su2": 0.0
+    },
+    "noise": {
+     "2010": {
+      "sigma2": 174.52752956328274,
+      "split_half_players": 61
+     },
+     "2011": {
+      "sigma2": 172.9371734557972,
+      "split_half_players": 51
+     },
+     "2012": {
+      "sigma2": 147.15701069378554,
+      "split_half_players": 54
+     },
+     "2013": {
+      "sigma2": 180.2765281252853,
+      "split_half_players": 50
+     },
+     "2014w4": {
+      "sigma2": 98.86272546897543,
+      "split_half_players": 8
+     }
+    }
+   },
+   "LB": {
+    "centres": {
+     "2010": {
+      "centre": 0.704210886682643,
+      "opportunities": 2921.0,
+      "qualifiers": 238
+     },
+     "2011": {
+      "centre": 0.7809902421395013,
+      "opportunities": 2767.0,
+      "qualifiers": 225
+     },
+     "2012": {
+      "centre": 0.7604244229337305,
+      "opportunities": 2686.0,
+      "qualifiers": 225
+     },
+     "2013": {
+      "centre": 0.8042757095466273,
+      "opportunities": 2713.0,
+      "qualifiers": 234
+     },
+     "2014w4": {
+      "centre": 0.77088948787062,
+      "opportunities": 371.0,
+      "qualifiers": 87
+     }
+    },
+    "draft_priors": {
+     "drafted": {
+      "all": {
+       "lines": 174,
+       "mean": -0.11838385016884517,
+       "se": 0.050902837923087946,
+       "true_var": 0.31148979378059016
+      },
+      "leave_class_out": {
+       "2010": {
+        "lines": 127,
+        "mean": -0.07936951463452657,
+        "se": 0.06475770784518874,
+        "true_var": 0.38079372131470385
+       },
+       "2011": {
+        "lines": 126,
+        "mean": -0.1856497655656479,
+        "se": 0.04808783077785534,
+        "true_var": 0.13721319869588913
+       },
+       "2012": {
+        "lines": 133,
+        "mean": -0.12946618544919897,
+        "se": 0.059444079290687894,
+        "true_var": 0.3295947685662679
+       },
+       "2013": {
+        "lines": 142,
+        "mean": -0.07240074106169667,
+        "se": 0.05889581558871459,
+        "true_var": 0.3722815016814276
+       },
+       "2014": {
+        "lines": 168,
+        "mean": -0.12752055358425798,
+        "se": 0.052006439545653364,
+        "true_var": 0.320182004095094
+       }
+      },
+      "lines_by_class": {
+       "2010": 47,
+       "2011": 48,
+       "2012": 41,
+       "2013": 32,
+       "2014": 6
+      }
+     },
+     "log_pick_slope": {
+      "applied": 0.0,
+      "lines": 174,
+      "se": 0.03892558601524787,
+      "slope": -0.4595935914526847,
+      "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+     },
+     "undrafted": {
+      "all": {
+       "lines": 82,
+       "mean": -0.542045218900922,
+       "se": 0.04185185071460092,
+       "true_var": 0.0
+      },
+      "leave_class_out": {
+       "2011": {
+        "lines": 48,
+        "mean": -0.5299795766502458,
+        "se": 0.05304734385370277,
+        "true_var": 0.0
+       },
+       "2012": {
+        "lines": 59,
+        "mean": -0.5868554222757537,
+        "se": 0.04648458509544815,
+        "true_var": 0.0
+       },
+       "2013": {
+        "lines": 57,
+        "mean": -0.5058232685310516,
+        "se": 0.0540495636300926,
+        "true_var": 0.024782009560054635
+       }
+      },
+      "lines_by_class": {
+       "2011": 34,
+       "2012": 23,
+       "2013": 25
+      }
+     }
+    },
+    "fit": {
+     "bootstrap": {
+      "resamples": 200,
+      "rho_sd": 0.2872610485255528,
+      "sb2_sd": 0.09444188080398293,
+      "su2_interval": [
+       0.0,
+       0.35187266580787957
+      ]
+     },
+     "lag_moments": [
+      {
+       "fitted": 0.2911630536318286,
+       "lag": 0,
+       "moment": 0.27506777747707484,
+       "players": 427
+      },
+      {
+       "fitted": 0.267921639398735,
+       "lag": 1,
+       "moment": 0.3031395587840691,
+       "players": 243
+      },
+      {
+       "fitted": 0.24653953830428885,
+       "lag": 2,
+       "moment": 0.2614418950576213,
+       "players": 189
+      },
+      {
+       "fitted": 0.2268680052973984,
+       "lag": 3,
+       "moment": 0.20359324397140793,
+       "players": 110
+      },
+      {
+       "fitted": 0.20877019493105922,
+       "lag": 4,
+       "moment": 0.14993403817132958,
+       "players": 33
+      }
+     ],
+     "players": 427,
+     "rho": 0.92,
+     "sb2": 0.0006453757181584072,
+     "sse": 0.6278087197040145,
+     "su2": 0.29051767791367017
+    },
+    "noise": {
+     "2010": {
+      "sigma2": 1.0648248237227445,
+      "split_half_players": 238
+     },
+     "2011": {
+      "sigma2": 1.090832287705223,
+      "split_half_players": 225
+     },
+     "2012": {
+      "sigma2": 0.9616176341765867,
+      "split_half_players": 225
+     },
+     "2013": {
+      "sigma2": 1.6419886539483473,
+      "split_half_players": 234
+     },
+     "2014w4": {
+      "sigma2": 1.2163314176245208,
+      "split_half_players": 87
+     }
+    }
+   },
+   "P": {
+    "centres": {
+     "2010": {
+      "centre": 37.703813559322036,
+      "opportunities": 2360.0,
+      "qualifiers": 33
+     },
+     "2011": {
+      "centre": 39.016970198675494,
+      "opportunities": 2416.0,
+      "qualifiers": 35
+     },
+     "2012": {
+      "centre": 40.01099365750529,
+      "opportunities": 2365.0,
+      "qualifiers": 32
+     },
+     "2013": {
+      "centre": 39.800840336134456,
+      "opportunities": 2380.0,
+      "qualifiers": 34
+     },
+     "2014w4": {
+      "centre": 40.06,
+      "opportunities": 150.0,
+      "qualifiers": 7
+     }
+    },
+    "draft_priors": {
+     "drafted": {
+      "all": {
+       "lines": 11,
+       "mean": 0.43176834725447255,
+       "se": 0.5675015955859961,
+       "true_var": 1.304425717834515
+      },
+      "leave_class_out": {
+       "2010": {
+        "lines": 8,
+        "mean": 0.5570951870136929,
+        "se": 0.5929106893235188,
+        "true_var": 0.7493434174709526
+       },
+       "2011": {
+        "lines": 9,
+        "mean": 0.2498715830453943,
+        "se": 0.6706315879684035,
+        "true_var": 1.8461059853076156
+       },
+       "2012": {
+        "lines": 7,
+        "mean": 0.5188001893657435,
+        "se": 0.710795017033221,
+        "true_var": 0.9999345967814648
+       },
+       "2013": {
+        "lines": 9,
+        "mean": 0.43457204336881083,
+        "se": 0.672007943505957,
+        "true_var": 1.8659320586702028
+       }
+      },
+      "lines_by_class": {
+       "2010": 3,
+       "2011": 2,
+       "2012": 4,
+       "2013": 2
+      }
+     },
+     "log_pick_slope": {
+      "applied": 0.0,
+      "lines": 11,
+      "se": 1.4645415344613946,
+      "slope": -1.472429732761221,
+      "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+     },
+     "undrafted": {
+      "all": {
+       "lines": 16,
+       "mean": -0.41473742672094893,
+       "se": 0.578393545524284,
+       "true_var": 2.5866744810958733
+      },
+      "leave_class_out": {
+       "2011": {
+        "lines": 12,
+        "mean": 0.018550127943161836,
+        "se": 0.7036256524588196,
+        "true_var": 3.43621118208258
+       },
+       "2012": {
+        "lines": 10,
+        "mean": -0.18404700067891114,
+        "se": 0.5787910210510889,
+        "true_var": 0.23735809775604277
+       },
+       "2013": {
+        "lines": 11,
+        "mean": -1.0566200084263733,
+        "se": 0.7258757223470632,
+        "true_var": 3.0036062785060227
+       },
+       "2014": {
+        "lines": 15,
+        "mean": -0.4444471945629516,
+        "se": 0.6175124504923433,
+        "true_var": 2.995401691468908
+       }
+      },
+      "lines_by_class": {
+       "2011": 4,
+       "2012": 6,
+       "2013": 5,
+       "2014": 1
+      }
+     }
+    },
+    "fit": {
+     "bootstrap": {
+      "resamples": 200,
+      "rho_sd": 0.1549987016074651,
+      "sb2_sd": 0.023449298396826645,
+      "su2_interval": [
+       0.7225911841371583,
+       3.052485554928642
+      ]
+     },
+     "lag_moments": [
+      {
+       "fitted": 1.8662463815408987,
+       "lag": 0,
+       "moment": 1.6756502810194704,
+       "players": 53
+      },
+      {
+       "fitted": 0.9517856545858584,
+       "lag": 1,
+       "moment": 1.817806260397395,
+       "players": 34
+      },
+      {
+       "fitted": 0.48541068383878777,
+       "lag": 2,
+       "moment": 0.3849042526611481,
+       "players": 29
+      },
+      {
+       "fitted": 0.2475594487577818,
+       "lag": 3,
+       "moment": -1.0550445488364635,
+       "players": 21
+      },
+      {
+       "fitted": 0.12625531886646868,
+       "lag": 4,
+       "moment": -3.779525431950563,
+       "players": 2
+      }
+     ],
+     "players": 53,
+     "rho": 0.51,
+     "sb2": 0.0,
+     "sse": 93.8605536977251,
+     "su2": 1.8662463815408987
+    },
+    "noise": {
+     "2010": {
+      "sigma2": 133.42766618714566,
+      "split_half_players": 33
+     },
+     "2011": {
+      "sigma2": 219.65997580169753,
+      "split_half_players": 35
+     },
+     "2012": {
+      "sigma2": 100.06870968761481,
+      "split_half_players": 32
+     },
+     "2013": {
+      "sigma2": 171.32054378125235,
+      "split_half_players": 34
+     },
+     "2014w4": {
+      "sigma2": 74.55526421473623,
+      "split_half_players": 7
+     }
+    }
+   },
+   "PR": {
+    "centres": {
+     "2010": {
+      "centre": 10.062683643486778,
+      "opportunities": 1021.0,
+      "qualifiers": 46
+     },
+     "2011": {
+      "centre": 10.21826923076923,
+      "opportunities": 1040.0,
+      "qualifiers": 41
+     },
+     "2012": {
+      "centre": 9.642787996127783,
+      "opportunities": 1033.0,
+      "qualifiers": 44
+     },
+     "2013": {
+      "centre": 9.745197168857432,
+      "opportunities": 989.0,
+      "qualifiers": 46
+     },
+     "2014w4": {
+      "centre": 9.5,
+      "opportunities": 118.0,
+      "qualifiers": 12
+     }
+    },
+    "draft_priors": {
+     "drafted": {
+      "all": {
+       "lines": 47,
+       "mean": -0.19442532225293274,
+       "se": 0.5028454253612915,
+       "true_var": 3.545654771196194
+      },
+      "leave_class_out": {
+       "2010": {
+        "lines": 31,
+        "mean": -0.3952449264698541,
+        "se": 0.6441518758957226,
+        "true_var": 4.755856165309339
+       },
+       "2011": {
+        "lines": 34,
+        "mean": -0.03454331597424458,
+        "se": 0.5654717898371912,
+        "true_var": 2.1629864122513247
+       },
+       "2012": {
+        "lines": 36,
+        "mean": -0.4789454531807969,
+        "se": 0.5573165100404052,
+        "true_var": 2.9435399897155943
+       },
+       "2013": {
+        "lines": 42,
+        "mean": -0.03889898924652203,
+        "se": 0.5452403292675423,
+        "true_var": 4.24586492297343
+       },
+       "2014": {
+        "lines": 45,
+        "mean": -0.09442447237775446,
+        "se": 0.5184651540970667,
+        "true_var": 3.7061991246568553
+       }
+      },
+      "lines_by_class": {
+       "2010": 16,
+       "2011": 13,
+       "2012": 11,
+       "2013": 5,
+       "2014": 2
+      }
+     },
+     "log_pick_slope": {
+      "applied": 0.0,
+      "lines": 47,
+      "se": 0.5114153182322347,
+      "slope": -0.3173803280255401,
+      "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+     },
+     "undrafted": {
+      "all": {
+       "lines": 13,
+       "mean": -0.040596814926677584,
+       "se": 0.9520397536005579,
+       "true_var": 2.0863646129025533
+      },
+      "leave_class_out": {
+       "2011": {
+        "lines": 11,
+        "mean": 0.8742830182568168,
+        "se": 0.8585938045100718,
+        "true_var": 0.0
+       },
+       "2012": {
+        "lines": 7,
+        "mean": -0.5680250319279645,
+        "se": 1.4064618853394086,
+        "true_var": 3.1052258428977986
+       },
+       "2013": {
+        "lines": 10,
+        "mean": -0.225414747311516,
+        "se": 1.1419059457480685,
+        "true_var": 3.4633222285536487
+       },
+       "2014": {
+        "lines": 11,
+        "mean": -0.4518242078504091,
+        "se": 1.0841936595604016,
+        "true_var": 2.6563801922232795
+       }
+      },
+      "lines_by_class": {
+       "2011": 2,
+       "2012": 6,
+       "2013": 3,
+       "2014": 2
+      }
+     }
+    },
+    "fit": {
+     "bootstrap": {
+      "resamples": 200,
+      "rho_sd": 0.0860926100196759,
+      "sb2_sd": 0.30177396713604954,
+      "su2_interval": [
+       0.0,
+       5.841790252572592
+      ]
+     },
+     "lag_moments": [
+      {
+       "fitted": 2.5804237364414253,
+       "lag": 0,
+       "moment": 2.578140659660237,
+       "players": 100
+      },
+      {
+       "fitted": 0.12902118682207128,
+       "lag": 1,
+       "moment": 0.35755032053362346,
+       "players": 43
+      },
+      {
+       "fitted": 0.006451059341103564,
+       "lag": 2,
+       "moment": -3.7099983754600108,
+       "players": 29
+      },
+      {
+       "fitted": 0.0003225529670551782,
+       "lag": 3,
+       "moment": 3.463015632146758,
+       "players": 15
+      },
+      {
+       "fitted": 1.612764835275891e-05,
+       "lag": 4,
+       "moment": -4.262643144753821,
+       "players": 3
+      }
+     ],
+     "players": 100,
+     "rho": 0.05,
+     "sb2": 0.0,
+     "sse": 637.1585588053678,
+     "su2": 2.5804237364414253
+    },
+    "noise": {
+     "2010": {
+      "sigma2": 179.33624328858653,
+      "split_half_players": 46
+     },
+     "2011": {
+      "sigma2": 134.9164675449489,
+      "split_half_players": 41
+     },
+     "2012": {
+      "sigma2": 136.70281473989237,
+      "split_half_players": 44
+     },
+     "2013": {
+      "sigma2": 148.573093616776,
+      "split_half_players": 46
+     },
+     "2014w4": {
+      "sigma2": 64.59403998779,
+      "split_half_players": 12
+     }
+    }
+   },
+   "QB": {
+    "centres": {
+     "2010": {
+      "centre": 0.017201131222481417,
+      "opportunities": 17754.0,
+      "qualifiers": 53
+     },
+     "2011": {
+      "centre": 0.021274529676316087,
+      "opportunities": 18125.0,
+      "qualifiers": 53
+     },
+     "2012": {
+      "centre": 0.03223652022113492,
+      "opportunities": 18449.0,
+      "qualifiers": 44
+     },
+     "2013": {
+      "centre": 0.02535116550913994,
+      "opportunities": 19015.0,
+      "qualifiers": 50
+     },
+     "2014w4": {
+      "centre": 0.11094802499769763,
+      "opportunities": 4256.0,
+      "qualifiers": 35
+     }
+    },
+    "draft_priors": {
+     "drafted": {
+      "all": {
+       "lines": 48,
+       "mean": -0.08906832473297138,
+       "se": 0.023866885908508474,
+       "true_var": 0.01127037600930015
+      },
+      "leave_class_out": {
+       "2010": {
+        "lines": 37,
+        "mean": -0.06581301326287019,
+        "se": 0.027185349641815553,
+        "true_var": 0.01036952377797691
+       },
+       "2011": {
+        "lines": 36,
+        "mean": -0.1017652335536109,
+        "se": 0.028961694278293957,
+        "true_var": 0.012236641270919845
+       },
+       "2012": {
+        "lines": 33,
+        "mean": -0.11017867707838663,
+        "se": 0.025252831692000335,
+        "true_var": 0.0022969680012150627
+       },
+       "2013": {
+        "lines": 41,
+        "mean": -0.07724642324778336,
+        "se": 0.02698244980286643,
+        "true_var": 0.015358960907917676
+       },
+       "2014": {
+        "lines": 45,
+        "mean": -0.09332197229618756,
+        "se": 0.02445950845134396,
+        "true_var": 0.013625060821127832
+       }
+      },
+      "lines_by_class": {
+       "2010": 11,
+       "2011": 12,
+       "2012": 15,
+       "2013": 7,
+       "2014": 3
+      }
+     },
+     "log_pick_slope": {
+      "applied": 0.0,
+      "lines": 48,
+      "se": 0.014457264601782057,
+      "slope": -0.021890370366211328,
+      "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+     },
+     "undrafted": {
+      "all": {
+       "lines": 3,
+       "mean": -0.24775742373705203,
+       "se": 0.1682345808014974,
+       "true_var": 0.06720756378874156
+      },
+      "leave_class_out": {
+       "2013": null
+      },
+      "lines_by_class": {
+       "2013": 3
+      }
+     }
+    },
+    "fit": {
+     "bootstrap": {
+      "resamples": 200,
+      "rho_sd": 0.2362902399592501,
+      "sb2_sd": 0.0040600151940036674,
+      "su2_interval": [
+       0.009936804602420045,
+       0.03645071029405367
+      ]
+     },
+     "lag_moments": [
+      {
+       "fitted": 0.029476615493694104,
+       "lag": 0,
+       "moment": 0.02949098537860956,
+       "players": 94
+      },
+      {
+       "fitted": 0.01129536927182828,
+       "lag": 1,
+       "moment": 0.010802784658111613,
+       "players": 53
+      },
+      {
+       "fitted": 0.009295432187423038,
+       "lag": 2,
+       "moment": 0.012356087965221807,
+       "players": 43
+      },
+      {
+       "fitted": 0.009075439108138463,
+       "lag": 3,
+       "moment": 0.007392642093735393,
+       "players": 28
+      },
+      {
+       "fitted": 0.009051239869417159,
+       "lag": 4,
+       "moment": 0.005537494769585894,
+       "players": 17
+      }
+     ],
+     "players": 94,
+     "rho": 0.11,
+     "sb2": 0.00904824895227183,
+     "sse": 0.0007048661430828114,
+     "su2": 0.020428366541422275
+    },
+    "noise": {
+     "2010": {
+      "sigma2": 1.9371826591599821,
+      "split_half_players": 53
+     },
+     "2011": {
+      "sigma2": 2.6277700013165566,
+      "split_half_players": 53
+     },
+     "2012": {
+      "sigma2": 2.800724891235543,
+      "split_half_players": 44
+     },
+     "2013": {
+      "sigma2": 2.1452001625043184,
+      "split_half_players": 50
+     },
+     "2014w4": {
+      "sigma2": 4.095323112687183,
+      "split_half_players": 35
+     }
+    }
+   },
+   "RB": {
+    "centres": {
+     "2010": {
+      "centre": -0.06561291937124851,
+      "opportunities": 14716.0,
+      "qualifiers": 96
+     },
+     "2011": {
+      "centre": -0.05501208646867544,
+      "opportunities": 14642.0,
+      "qualifiers": 96
+     },
+     "2012": {
+      "centre": -0.052536493657075016,
+      "opportunities": 14523.0,
+      "qualifiers": 105
+     },
+     "2013": {
+      "centre": -0.054453566651213856,
+      "opportunities": 14584.0,
+      "qualifiers": 95
+     },
+     "2014w4": {
+      "centre": -0.05714925808265931,
+      "opportunities": 2660.0,
+      "qualifiers": 45
+     }
+    },
+    "draft_priors": {
+     "drafted": {
+      "all": {
+       "lines": 89,
+       "mean": -0.033530867293545624,
+       "se": 0.013047020458021282,
+       "true_var": 0.0010740545873231967
+      },
+      "leave_class_out": {
+       "2010": {
+        "lines": 70,
+        "mean": -0.03173269696759788,
+        "se": 0.015654686030075242,
+        "true_var": 0.0034559356831333557
+       },
+       "2011": {
+        "lines": 66,
+        "mean": -0.041325359381607585,
+        "se": 0.01397727965714734,
+        "true_var": 0.0
+       },
+       "2012": {
+        "lines": 65,
+        "mean": -0.022932080291907155,
+        "se": 0.014451829006528237,
+        "true_var": 0.0
+       },
+       "2013": {
+        "lines": 71,
+        "mean": -0.03736322318187975,
+        "se": 0.015216226649287594,
+        "true_var": 0.0026976321920382275
+       },
+       "2014": {
+        "lines": 84,
+        "mean": -0.033867287913057896,
+        "se": 0.01354352380136824,
+        "true_var": 0.0018713379632432445
+       }
+      },
+      "lines_by_class": {
+       "2010": 19,
+       "2011": 23,
+       "2012": 24,
+       "2013": 18,
+       "2014": 5
+      }
+     },
+     "log_pick_slope": {
+      "applied": 0.0,
+      "lines": 89,
+      "se": 0.014464593109702061,
+      "slope": -0.001984605719334526,
+      "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+     },
+     "undrafted": {
+      "all": {
+       "lines": 18,
+       "mean": -0.059789529675012686,
+       "se": 0.021735769727106877,
+       "true_var": 0.0
+      },
+      "leave_class_out": {
+       "2011": {
+        "lines": 13,
+        "mean": -0.06521698069387517,
+        "se": 0.024614965791418836,
+        "true_var": 0.0
+       },
+       "2012": {
+        "lines": 10,
+        "mean": -0.06725705709382108,
+        "se": 0.02949852256718451,
+        "true_var": 0.0
+       },
+       "2013": {
+        "lines": 13,
+        "mean": -0.048617826795528354,
+        "se": 0.027001655496503386,
+        "true_var": 0.0
+       }
+      },
+      "lines_by_class": {
+       "2011": 5,
+       "2012": 8,
+       "2013": 5
+      }
+     }
+    },
+    "fit": {
+     "bootstrap": {
+      "resamples": 200,
+      "rho_sd": 0.1841737223384487,
+      "sb2_sd": 0.0008936466329426178,
+      "su2_interval": [
+       0.0,
+       0.006528885022338553
+      ]
+     },
+     "lag_moments": [
+      {
+       "fitted": 0.003545467660201359,
+       "lag": 0,
+       "moment": 0.0035454676602013585,
+       "players": 180
+      },
+      {
+       "fitted": 0.0014271428956682014,
+       "lag": 1,
+       "moment": 0.000574441964209593,
+       "players": 110
+      },
+      {
+       "fitted": 0.0014271428956682014,
+       "lag": 2,
+       "moment": 0.0021369967925595847,
+       "players": 74
+      },
+      {
+       "fitted": 0.0014271428956682014,
+       "lag": 3,
+       "moment": 0.0008225813983300862,
+       "players": 46
+      },
+      {
+       "fitted": 0.0014271428956682014,
+       "lag": 4,
+       "moment": 0.004567040303306284,
+       "players": 22
+      }
+     ],
+     "players": 180,
+     "rho": 0.0,
+     "sb2": 0.0014271428956682014,
+     "sse": 0.00035097870355886313,
+     "su2": 0.0021183247645331577
+    },
+    "noise": {
+     "2010": {
+      "sigma2": 1.2404846959753943,
+      "split_half_players": 96
+     },
+     "2011": {
+      "sigma2": 1.2978487503459128,
+      "split_half_players": 96
+     },
+     "2012": {
+      "sigma2": 0.9654498131735827,
+      "split_half_players": 105
+     },
+     "2013": {
+      "sigma2": 1.507319342500791,
+      "split_half_players": 95
+     },
+     "2014w4": {
+      "sigma2": 0.8916614747661599,
+      "split_half_players": 45
+     }
+    }
+   },
+   "TE": {
+    "centres": {
+     "2010": {
+      "centre": 0.17820938268395348,
+      "opportunities": 3283.0,
+      "qualifiers": 61
+     },
+     "2011": {
+      "centre": 0.219192985238481,
+      "opportunities": 3339.0,
+      "qualifiers": 54
+     },
+     "2012": {
+      "centre": 0.16732115477867918,
+      "opportunities": 3452.0,
+      "qualifiers": 55
+     },
+     "2013": {
+      "centre": 0.22811675003427498,
+      "opportunities": 3411.0,
+      "qualifiers": 62
+     },
+     "2014w4": {
+      "centre": 0.3233144208086688,
+      "opportunities": 528.0,
+      "qualifiers": 22
+     }
+    },
+    "draft_priors": {
+     "drafted": {
+      "all": {
+       "lines": 46,
+       "mean": -0.014252629527050897,
+       "se": 0.05055441475350732,
+       "true_var": 0.039872055247599625
+      },
+      "leave_class_out": {
+       "2010": {
+        "lines": 29,
+        "mean": -0.06784176691090131,
+        "se": 0.06874674227403021,
+        "true_var": 0.04246919338095127
+       },
+       "2011": {
+        "lines": 34,
+        "mean": 0.04931991605998058,
+        "se": 0.06097538630601498,
+        "true_var": 0.05708817365652928
+       },
+       "2012": {
+        "lines": 41,
+        "mean": -0.014899805568020247,
+        "se": 0.05439220412384026,
+        "true_var": 0.042878883967587794
+       },
+       "2013": {
+        "lines": 34,
+        "mean": -0.031336375060805756,
+        "se": 0.049771404193327554,
+        "true_var": 0.01345212017085995
+       }
+      },
+      "lines_by_class": {
+       "2010": 17,
+       "2011": 12,
+       "2012": 5,
+       "2013": 12
+      }
+     },
+     "log_pick_slope": {
+      "applied": 0.0,
+      "lines": 46,
+      "se": 0.07957712008025039,
+      "slope": -0.083456778571048,
+      "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+     },
+     "undrafted": {
+      "all": {
+       "lines": 8,
+       "mean": 0.03391344567049048,
+       "se": 0.10732904754086593,
+       "true_var": 0.0
+      },
+      "leave_class_out": {
+       "2012": {
+        "lines": 5,
+        "mean": 0.006610416919618145,
+        "se": 0.17457552942047297,
+        "true_var": 0.05521381340510895
+       },
+       "2013": {
+        "lines": 3,
+        "mean": 0.07941849358861106,
+        "se": 0.06534734689326863,
+        "true_var": 0.0
+       }
+      },
+      "lines_by_class": {
+       "2012": 3,
+       "2013": 5
+      }
+     }
+    },
+    "fit": {
+     "bootstrap": {
+      "resamples": 200,
+      "rho_sd": 0.24874281899182538,
+      "sb2_sd": 0.005665228530372727,
+      "su2_interval": [
+       0.0,
+       0.02346100176920475
+      ]
+     },
+     "lag_moments": [
+      {
+       "fitted": 0.011472873811284676,
+       "lag": 0,
+       "moment": 0.010423280565342976,
+       "players": 106
+      },
+      {
+       "fitted": 0.011472873811284676,
+       "lag": 1,
+       "moment": 0.003914188757794359,
+       "players": 56
+      },
+      {
+       "fitted": 0.011472873811284676,
+       "lag": 2,
+       "moment": 0.019753319928914652,
+       "players": 47
+      },
+      {
+       "fitted": 0.011472873811284676,
+       "lag": 3,
+       "moment": 0.00901627942870973,
+       "players": 32
+      },
+      {
+       "fitted": 0.011472873811284676,
+       "lag": 4,
+       "moment": 0.03183408288210899,
+       "players": 11
+      }
+     ],
+     "players": 106,
+     "rho": 0.0,
+     "sb2": 0.011472873811284676,
+     "sse": 0.011292337384851955,
+     "su2": 0.0
+    },
+    "noise": {
+     "2010": {
+      "sigma2": 1.545732130548584,
+      "split_half_players": 61
+     },
+     "2011": {
+      "sigma2": 2.6564715124246785,
+      "split_half_players": 54
+     },
+     "2012": {
+      "sigma2": 3.2051531328298735,
+      "split_half_players": 55
+     },
+     "2013": {
+      "sigma2": 2.178553677645065,
+      "split_half_players": 62
+     },
+     "2014w4": {
+      "sigma2": 3.1863029087842496,
+      "split_half_players": 22
+     }
+    }
+   },
+   "WR": {
+    "centres": {
+     "2010": {
+      "centre": 0.16947589584842643,
+      "opportunities": 10081.0,
+      "qualifiers": 133
+     },
+     "2011": {
+      "centre": 0.20210822421386138,
+      "opportunities": 9882.0,
+      "qualifiers": 130
+     },
+     "2012": {
+      "centre": 0.2036475832624626,
+      "opportunities": 10335.0,
+      "qualifiers": 137
+     },
+     "2013": {
+      "centre": 0.2003530898674153,
+      "opportunities": 10307.0,
+      "qualifiers": 130
+     },
+     "2014w4": {
+      "centre": 0.28142668732508647,
+      "opportunities": 1802.0,
+      "qualifiers": 61
+     }
+    },
+    "draft_priors": {
+     "drafted": {
+      "all": {
+       "lines": 120,
+       "mean": -0.05249819023726448,
+       "se": 0.02676427279336436,
+       "true_var": 0.02397054425528687
+      },
+      "leave_class_out": {
+       "2010": {
+        "lines": 90,
+        "mean": -0.05348656030214759,
+        "se": 0.03181017472879151,
+        "true_var": 0.026764463444609088
+       },
+       "2011": {
+        "lines": 92,
+        "mean": -0.06252320829312867,
+        "se": 0.030490765903538476,
+        "true_var": 0.020862217102488367
+       },
+       "2012": {
+        "lines": 84,
+        "mean": -0.026018899027486653,
+        "se": 0.032070867797027634,
+        "true_var": 0.02549866532159341
+       },
+       "2013": {
+        "lines": 100,
+        "mean": -0.05942065566663158,
+        "se": 0.027998824842787505,
+        "true_var": 0.018337387040074267
+       },
+       "2014": {
+        "lines": 114,
+        "mean": -0.05706625121713857,
+        "se": 0.02789052577092467,
+        "true_var": 0.028183692352610513
+       }
+      },
+      "lines_by_class": {
+       "2010": 30,
+       "2011": 28,
+       "2012": 36,
+       "2013": 20,
+       "2014": 6
+      }
+     },
+     "log_pick_slope": {
+      "applied": 0.0,
+      "lines": 120,
+      "se": 0.02835812814508861,
+      "slope": -0.015376105470240776,
+      "why": "U5 fallback: flat rookie estimates for every family (c1 = 0)"
+     },
+     "undrafted": {
+      "all": {
+       "lines": 28,
+       "mean": -0.01610798191726057,
+       "se": 0.0541257561846279,
+       "true_var": 0.008983773100973938
+      },
+      "leave_class_out": {
+       "2011": {
+        "lines": 21,
+        "mean": -0.009469309628682263,
+        "se": 0.0688975118316218,
+        "true_var": 0.02272292422797699
+       },
+       "2012": {
+        "lines": 13,
+        "mean": -0.0700454815650813,
+        "se": 0.048370201924226766,
+        "true_var": 0.0
+       },
+       "2013": {
+        "lines": 23,
+        "mean": -0.002113752792595942,
+        "se": 0.064194360824353,
+        "true_var": 0.02047723922469416
+       },
+       "2014": {
+        "lines": 27,
+        "mean": -0.0072224964545109915,
+        "se": 0.05540691350161911,
+        "true_var": 0.011159946206493548
+       }
+      },
+      "lines_by_class": {
+       "2011": 7,
+       "2012": 15,
+       "2013": 5,
+       "2014": 1
+      }
+     }
+    },
+    "fit": {
+     "bootstrap": {
+      "resamples": 200,
+      "rho_sd": 0.18762886238529508,
+      "sb2_sd": 0.0026868985274839875,
+      "su2_interval": [
+       0.012557980844912739,
+       0.04608597692767085
+      ]
+     },
+     "lag_moments": [
+      {
+       "fitted": 0.029457997241702574,
+       "lag": 0,
+       "moment": 0.029273941720342284,
+       "players": 237
+      },
+      {
+       "fitted": 0.014728998620851287,
+       "lag": 1,
+       "moment": 0.014432440161087237,
+       "players": 148
+      },
+      {
+       "fitted": 0.007364499310425644,
+       "lag": 2,
+       "moment": 0.013272581537461504,
+       "players": 109
+      },
+      {
+       "fitted": 0.003682249655212822,
+       "lag": 3,
+       "moment": -0.0051308721507806665,
+       "players": 71
+      },
+      {
+       "fitted": 0.001841124827606411,
+       "lag": 4,
+       "moment": -0.007655316592313768,
+       "players": 29
+      }
+     ],
+     "players": 237,
+     "rho": 0.5,
+     "sb2": 0.0,
+     "sse": 0.011955676163098547,
+     "su2": 0.029457997241702574
+    },
+    "noise": {
+     "2010": {
+      "sigma2": 2.9157658207344093,
+      "split_half_players": 133
+     },
+     "2011": {
+      "sigma2": 2.755780850622604,
+      "split_half_players": 130
+     },
+     "2012": {
+      "sigma2": 3.0761459448776516,
+      "split_half_players": 137
+     },
+     "2013": {
+      "sigma2": 2.8663285927323123,
+      "split_half_players": 130
+     },
+     "2014w4": {
+      "sigma2": 2.60642943793746,
+      "split_half_players": 61
+     }
+    }
+   }
+  },
+  "source": "nflscrapR reg_pbp 2010-2014 Weeks 1-4; weekly-roster positions"
+ },
+ "sources": {
+  "depth_charts_2010.csv": {
+   "sha256": "7771a3116a4518fc4a78fb51fe0850db661cc17fbdc54f666d540b85a04080a6"
+  },
+  "depth_charts_2011.csv": {
+   "sha256": "4c32f8cd3c1105d891fe64d98cdc902f2f2ad32e0f56b5088fe12aaaa316224a"
+  },
+  "depth_charts_2012.csv": {
+   "sha256": "e091a7fa0343fe3ae0bcee9202e1d8ca1ff859db398d20ab751017df29e85719"
+  },
+  "depth_charts_2013.csv": {
+   "sha256": "68a48cb5c3488aa505c2612c21797353c794c9ce5094e5071cc866373e71fd71"
+  },
+  "depth_charts_2014w4.csv": {
+   "sha256": "9ff91980447562de73852864d2426ee2226a01876c3f003b07b0e9f65c2a7108"
+  },
+  "draft_picks.csv": {
+   "sha256": "9c06250c9f588509b47ca9475db61b6227cb7120a81cf2acf7edbc1f080ce6b7"
+  },
+  "play_by_play_2010.csv.gz": {
+   "sha256": "6d4f519b4821f06ffe2285faadad8cee718f464eeb9a310a8276753da10bee2e"
+  },
+  "play_by_play_2011.csv.gz": {
+   "sha256": "ffa0bfb803f0c30a4b765af5e621b0f601d695efdba7d6d396fb067d6a0c89b2"
+  },
+  "play_by_play_2012.csv.gz": {
+   "sha256": "ff1cda2e26610ef8720324e442d1e5ebc24918e08fd1d2933590b7b91a7068cd"
+  },
+  "play_by_play_2013.csv.gz": {
+   "sha256": "b4cd0dc48697ec44a2041d57dfc1c7210a792d1b5be497c161ef20a5b7fb9942"
+  },
+  "play_by_play_2014w4.csv": {
+   "sha256": "fd6f77ac5ddac90f80b7559c7767976892902c380b9380aa85e0de98c406b719"
+  },
+  "players.csv": {
+   "sha256": "d35be6f1b8e6b3d87d9a4673888de588f1b53f3a612bf98309c058030dd31b81"
+  },
+  "reg_pbp_2010.csv": {
+   "sha256": "64224b82b8efc7b5c6d8c0c4e0054346bb1ac5df4c073c84d2ab8fb3e730f9da"
+  },
+  "reg_pbp_2011.csv": {
+   "sha256": "ba412141e8033103807810605ecdbdb5bf19d9dd683e1ff3173af1303fced12c"
+  },
+  "reg_pbp_2012.csv": {
+   "sha256": "9129396fc41597f9f44ab14d4d0fca890a3c56fea686b0b7dc92885aaedd0f98"
+  },
+  "reg_pbp_2013.csv": {
+   "sha256": "37b64a2510bf3da54430deaa0d3cbbdd8113d3be9ca4e1512d3cbf0d40320950"
+  },
+  "reg_pbp_2014w4.csv": {
+   "sha256": "5b68d291c82b20a1e31ecd850036dbbf93e1fe2c0ec015f2b733bbef8cf7b08e"
+  },
+  "roster_2010.csv": {
+   "sha256": "0c9dfde110e6c989bbecd830602b2562124b89388e1aac39b5287376f2370dd1"
+  },
+  "roster_2011.csv": {
+   "sha256": "6acc11a2b5f692db03e1945e0329da93f6b5debed3f99feed39eca470ab4cee5"
+  },
+  "roster_2012.csv": {
+   "sha256": "90628fcdadd9f2dde083bc77d41139cedc9fefd1fcc09f2ce8675823de23291b"
+  },
+  "roster_2013.csv": {
+   "sha256": "abf73c2b1ef10914af78f6b7397338508bd0c9f0372d2f0667a630e06a4484ed"
+  },
+  "roster_weekly_2010.csv": {
+   "sha256": "c415397ed98cbf9b5e038cb9415b9ed0d0b1d2611b09d39a7be521893b7c6533"
+  },
+  "roster_weekly_2011.csv": {
+   "sha256": "80de7a110233fa7569c26e298d6393b48349263f4dd117cf047612239801bc19"
+  },
+  "roster_weekly_2012.csv": {
+   "sha256": "262fd2f9a862c3b97275d91c60951f940a4e82989503b8359ac11b12a76c0e2f"
+  },
+  "roster_weekly_2013.csv": {
+   "sha256": "76c47a629075ffd75f9c4ee49fadb6dad45396be486af897078fee5722969781"
+  },
+  "roster_weekly_2014w4.csv": {
+   "sha256": "fc963d8ddd38aef3541f7db07b8732e1a7c0780ce0fba6bf02775b2c9cf5558c"
+  },
+  "stats_player_week_2010.csv": {
+   "sha256": "06ab31f488bec14e1801cf6c4bbf8a4833fdccea575b164f21ebf56c639c3097"
+  },
+  "stats_player_week_2011.csv": {
+   "sha256": "996ec73d77ee8d6eab595600c9e40453839026b6b087a6a12a4a5156c88272dd"
+  },
+  "stats_player_week_2012.csv": {
+   "sha256": "faca23ed9a71a8d6390a3a3525fde168f4ac58a6ca87c6852b7e7ed5cb54bf19"
+  },
+  "stats_player_week_2013.csv": {
+   "sha256": "fdd837ca0447a56537416ba7a4ea1e54ce4acc6c005f9851c079136187ff32c0"
+  },
+  "stats_player_week_2014w4.csv": {
+   "sha256": "fbb470b6eb9d2bf00935dbed40b495efa6de3e262abd9f77976cb6f71bf10f6b"
+  }
+ },
+ "specification_sha256": "ca028ba38009d1b84e5c887ea86ce8d697edf1705bcd9b755f60aede9d6f8446",
+ "tiers": {
+  "status": "held",
+  "why": "the tier population on the qualifier floors rests on amendment 3 (U5)"
+ },
+ "u5": {
+  "effect": "aging Z for every family; draft-slot slope 0; no tiers; a DL or LB family whose swing the two passes disagree on (so that amendment 3 would decide it) is held; cells under 30 are flagged, not merged",
+  "fallback": {
+   "aging": "Z for every family",
+   "draft_slope": 0,
+   "other_conditional_rules": "held"
+  },
+  "held": [
+   "forecast_residual_aging_basis",
+   "aging_two_pass_conjunction",
+   "draft_slope_negative_sign",
+   "min_cell_30",
+   "tier_population_on_qualifier_floors",
+   "dl_lb_swing_carry_from_pass_1"
+  ],
+  "status": "unanswered"
+ },
+ "verifier": "scripts/research/verify_2010_2014_player_state_model.py"
+}
