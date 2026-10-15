@@ -559,7 +559,11 @@ def non_offensive(records, seasons, kicks):
         out[name] = entry
 
     unit("interception", lambda s: records[s]["ints"], lambda x: int(x["td"]), lambda x: x["los"])
-    unit("fumble_lost", lambda s: records[s]["fumbles"], lambda x: int(x["td"]), lambda x: x["spot"])
+    # A lost fumble is binned by the fumbled snap's line of scrimmage (the
+    # specification's return_td_los_bins; always 1-99, so every unit is
+    # binned, end-zone strip-sacks included); the fumble spot is used only by
+    # the feasibility filter of the return records below.
+    unit("fumble_lost", lambda s: records[s]["fumbles"], lambda x: int(x["td"]), lambda x: x["los"])
     unit("punt", lambda s: records[s]["punts"], lambda x: int(x["td"]), lambda x: x["los"])
     unit("missed_field_goal", lambda s: [f for f in records[s]["fgs"] if f["result"] != "made"], lambda x: int(x["td"]))
     kick_seasons = tuple(s for s in seasons if s >= 2011)
@@ -972,6 +976,15 @@ def tables(art):
         lines.append("| %s | %d | %d | %s | %s | %s |" % (
             name, v["pooled"][0], v["pooled"][1], "%.3f" % v["season_lr"]["p"] if v["season_lr"] else "-",
             "%.4f" % v["los_lr"]["p"] if v.get("los_lr") else "-", v.get("bins_adopted", "-")))
+    labels = list(n["interception"]["los_bins"])
+    lines += ["", "Touchdowns per unit by the line of scrimmage of the snap (a lost fumble's fumbled snap):", ""]
+    lines.append("| Unit | " + " | ".join(labels) + " | Binned |")
+    lines.append("|---|" + "---|" * (len(labels) + 1))
+    for name in ("interception", "fumble_lost", "punt"):
+        bins = n[name]["los_bins"]
+        cells = ["%d/%d" % tuple(bins[b]) if b in bins else "-" for b in labels]
+        lines.append("| %s | %s | %d/%d |" % (name, " | ".join(cells), sum(v[0] for v in bins.values()),
+                                              sum(v[1] for v in bins.values())))
     lines += ["", "Return-touchdown records kept: %s; checks %s." % (
         ", ".join("%s %d" % (k, len(v)) for k, v in n["records"].items() if isinstance(v, list)),
         ", ".join("%s %d" % kv for kv in n["records"]["checks"].items())), ""]

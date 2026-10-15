@@ -66,6 +66,51 @@ class ProductionGameRunnerTests(unittest.TestCase):
         self.assertEqual(order,["closed","kernel"])
 
 
+    def test_decision_block_refusals_precede_event_closure(self):
+        # Kernel 2014.6 batch B9 (R8, R9, U6): a block the installed profile
+        # does not decide, the controlled club's missing block and an
+        # otherwise: ask no controlling coach can answer are all refused
+        # before the private event is journaled, so no journaled event is
+        # left without a result (plan section 2.10).
+        from dataclasses import replace
+        order=[]
+        class JournalClient:
+            snapshot="snapshot"
+            def close_event(self,packet): order.append("closed"); return "ab"*32
+        fake={"value":None}
+        def kernel(*args,**kwargs):
+            order.append("kernel"); return fake
+        delegation={"otherwise":"league"}
+        ask={"otherwise":"ask"}
+        both=lambda team,block: replace(team,try_policy=block,kickoff_policy=delegation)
+        live=self.home.team_id
+        cases=[
+            # the live 2014.5 profile decides no kind: any block is refused
+            ("2014.5",dict(home=replace(self.home,try_policy=delegation)),"does not resolve one"),
+            # 2014.6: the controlled club's missing block (U6)
+            ("2014.6",dict(management_mode="user_controlled",controlled_team=live),"U6"),
+            ("2014.6",dict(home=replace(self.home,try_policy=delegation),management_mode="user_controlled",
+                           controlled_team=live),"U6"),
+            # 2014.6: an ask in an autonomous game, and on the other club
+            ("2014.6",dict(home=both(self.home,ask)),"asks for a live two_point decision"),
+            ("2014.6",dict(home=both(self.home,delegation),away=both(self.away,ask),
+                           management_mode="user_controlled",controlled_team=live),
+             "%s asks for a live two_point decision"%self.away.team_id),
+        ]
+        with patch("runtime.game_runner.resolve_game",kernel), patch("runtime.game_runner.validate_result",lambda result:[]):
+            for version,kw,message in cases:
+                kw=dict(kw); home=kw.pop("home",self.home); away=kw.pop("away",self.away)
+                with self.subTest(version=version,message=message), patch("runtime.kernel.KERNEL_VERSION",version):
+                    with self.assertRaisesRegex(ValueError,message):
+                        run_game(home,away,event_id="b9-refuse",snapshot="snapshot",client=JournalClient(),**kw)
+                    self.assertEqual(order,[])
+            # The controlling coach's ask and a delegation pass to closure.
+            with patch("runtime.kernel.KERNEL_VERSION","2014.6"):
+                self.assertIs(run_game(both(self.home,ask),self.away,event_id="b9-ok",snapshot="snapshot",
+                                       client=JournalClient(),management_mode="user_controlled",
+                                       controlled_team=live),fake)
+        self.assertEqual(order,["closed","kernel"])
+
     def test_production_runner_refuses_test_hooks(self):
         # Kernel 2014.6 plumbing (B1): production resolves only with the
         # profile of KERNEL_VERSION; the kernel's _test_* hooks stay private.

@@ -32,6 +32,24 @@ Blocks (library/2014_6_pre_build_specification.md, section 6):
           depends on the index only).
   dev     dev-2014.6-<i>: development labels, never an acceptance reading.
 
+Batch B9 (scoring decisions; review round 1) adds two blocks with their own
+readings (no band table):
+
+  swap        the design's label swap on real inputs: Jacksonville's Week 4
+              game-day inputs (slate clubs, synthetic latent draws) carry the
+              GO_LATE two-point and ONSIDE_LATE onside blocks and play San
+              Diego at a neutral site, labels swap2-2014.6-0 .. -119; the
+              same 120 labels with the same inputs relabelled Denver
+              Broncos; and the same labels with the blocks moved to San
+              Diego. It reports each arm's compliance, go share, conversions,
+              onside kicks and the carrier's points, and the Jacksonville
+              against Denver z of points and go share (within 3 SE).
+  late-onside late-onside-2014.6-0 .. -599: the sample clubs, both on
+              {"otherwise": "onside"} (every kickoff from the 35 onside): the
+              late feasibility of onside starts. It reports refused games,
+              validation errors, fallback_zero_tuple, the onside kicks and
+              the onside starts in the last 5:00 of the game or overtime.
+
 Batch B7 (player states at runtime). Under a profile whose strength model is
 player-state-v1 the strength records are player-state records with synthetic
 latent draws: no private service is called. A synthetic season reference
@@ -75,7 +93,15 @@ for path in (ROOT, ROOT / "tests", ROOT / "scripts" / "research"):
         sys.path.insert(0, str(path))
 
 BLOCKS = {"a1": ("acc-2014.6-", 1000), "a2": ("acc-2014.6-x", 2000), "slate": ("slate-2014.6-", 512),
-          "a1z": ("acc-2014.6-z", 1000), "dev": ("dev-2014.6-", None)}
+          "a1z": ("acc-2014.6-z", 1000), "dev": ("dev-2014.6-", None),
+          # Batch B9 readings with their own summaries (swap_block, late_onside_block).
+          "swap": ("swap2-2014.6-", 120), "late-onside": ("late-onside-2014.6-", 600)}
+# The swap block's blocks (tests/test_scoring_decisions.py GO_LATE and ONSIDE_LATE).
+GO_LATE = {"otherwise": "kick", "rules": [{"when": {"period": [4], "diff_after_td": [-2, -5, -10]}, "decision": "go"},
+                                          {"when": {"period": [1, 2, 3], "diff_after_td": {"min": 16}}, "decision": "go"}]}
+ONSIDE_LATE = {"otherwise": "deep", "rules": [{"when": {"period": [4], "diff_after_score": {"min": -16, "max": -1},
+                                                        "game_seconds_max": 300}, "decision": "onside"}]}
+SWAP_ARMS = ("jax", "den", "sd")
 STRENGTH_SLOTS = (("QB", "offense"), ("WR", "offense"), ("OL", "offense"), ("DL", "defense"), ("LB", "defense"),
                   ("DB", "defense"))
 DIAGNOSTICS = ("chain_layout_failed", "chain_layout_resampled", "chain_layout_resample_exhausted",
@@ -283,6 +309,147 @@ def run(block, version, count=None, start=0, jobs=1):
     return rows
 
 
+# ---- batch B9 readings: the label swap on real inputs and late onside feasibility ----------------
+
+def _tries(result):
+    """(scorer, try record) for every try of a result."""
+    out = []
+    for p in result["possessions"]:
+        if p.get("try"):
+            out.append((p["team"], p["try"]))
+        n = p.get("non_offensive_score") or {}
+        if n.get("try"):
+            out.append((n["team"], n["try"]))
+    return out + [(k["receiving"], k["try"]) for k in result["kickoffs"] if k.get("try")]
+
+
+def swap_play(job):
+    arm, index, version = job
+    from dataclasses import replace
+    from runtime.kernel import resolve_game, validate_result
+    from runtime.profiles import profile_for
+    clubs = slate_clubs(version)
+    jax, sdc = clubs["Jacksonville Jaguars"], clubs["San Diego Chargers"]
+    if arm in ("jax", "den"):
+        jax = replace(jax, try_policy=GO_LATE, kickoff_policy=ONSIDE_LATE)
+        if arm == "den":
+            jax = replace(jax, team_id="Denver Broncos")
+        holder = jax.team_id
+    else:
+        sdc = replace(sdc, try_policy=GO_LATE, kickoff_policy=ONSIDE_LATE)
+        holder = sdc.team_id
+    label = "%s%d" % (BLOCKS["swap"][0], index)
+    try:
+        r = resolve_game(sdc, jax, seed=entropy(label), event_id=label, venue="neutral",
+                         _test_profile=profile_for(version))
+    except Exception as exc:  # a refused game is a finding
+        return arm, {"refused": "%s: %s" % (type(exc).__name__, exc)}
+    out = {"refused": None, "errors": len(validate_result(r)), "points": r["final_score"][holder], "tries": 0,
+           "go": 0, "conversions": 0, "compliant": 0, "kicks": 0, "kicks_compliant": 0, "onside": 0,
+           "onside_recovered": 0, "other_league": 0, "other_tries": 0}
+    for team, t in _tries(r):
+        if team != holder:
+            out["other_tries"] += 1
+            out["other_league"] += t["basis"] == "league"
+            continue
+        out["tries"] += 1
+        out["go"] += t["decision"] == "go"
+        out["conversions"] += t["decision"] == "go" and bool(t["made"])
+        out["compliant"] += t["basis"].startswith("policy:")
+    for k in r["kickoffs"]:
+        if k["kicking"] == holder and k.get("onside") is not None:
+            out["kicks"] += 1
+            out["kicks_compliant"] += k["basis"].startswith("policy:")
+            out["onside"] += bool(k["onside"])
+            out["onside_recovered"] += k["outcome"] == "onside_recovered"
+    return arm, out
+
+
+def swap_block(version="2014.6", jobs=1, count=None):
+    """The label swap on real inputs (module docstring, block swap)."""
+    import math
+    n = count or BLOCKS["swap"][1]
+    work = [(arm, i, version) for arm in SWAP_ARMS for i in range(n)]
+    if jobs > 1:
+        with multiprocessing.Pool(jobs) as pool:
+            rows = pool.map(swap_play, work, chunksize=4)
+    else:
+        rows = [swap_play(job) for job in work]
+    arms = {}
+    for arm, o in rows:
+        a = arms.setdefault(arm, {"games": 0, "refused": [], "errors": 0, "points": [], "tries": 0, "go": 0,
+                                  "conversions": 0, "compliant": 0, "kicks": 0, "kicks_compliant": 0, "onside": 0,
+                                  "onside_recovered": 0, "other_league": 0, "other_tries": 0})
+        a["games"] += 1
+        if o["refused"]:
+            a["refused"].append(o["refused"])
+            continue
+        a["points"].append(o["points"])
+        for key in ("errors", "tries", "go", "conversions", "compliant", "kicks", "kicks_compliant", "onside",
+                    "onside_recovered", "other_league", "other_tries"):
+            a[key] += o[key]
+    for a in arms.values():
+        pts = a.pop("points")
+        mean = sum(pts) / len(pts) if pts else None
+        se = (math.sqrt(sum((x - mean) ** 2 for x in pts) / (len(pts) - 1)) / math.sqrt(len(pts))
+              if len(pts) > 1 else None)
+        a["carrier_points"], a["carrier_points_se"] = mean, se
+    j, d = arms["jax"], arms["den"]
+    spread = math.sqrt((j["carrier_points_se"] or 0) ** 2 + (d["carrier_points_se"] or 0) ** 2)
+    z_points = (j["carrier_points"] - d["carrier_points"]) / spread if spread else 0.0
+    pooled = (j["go"] + d["go"]) / (j["tries"] + d["tries"]) if j["tries"] and d["tries"] else 0.0
+    z_go = ((j["go"] / j["tries"] - d["go"] / d["tries"])
+            / math.sqrt(pooled * (1 - pooled) * (1 / j["tries"] + 1 / d["tries"]))) if 0 < pooled < 1 else 0.0
+    return {"block": "swap", "kernel_profile": version, "games_per_arm": n, "arms": arms,
+            "z_points_jax_vs_den": z_points, "z_go_share_jax_vs_den": z_go,
+            "pass": (all(not a["refused"] and not a["errors"] and a["compliant"] == a["tries"]
+                         and a["kicks_compliant"] == a["kicks"] and a["other_league"] == a["other_tries"]
+                         for a in arms.values()) and abs(z_points) <= 3 and abs(z_go) <= 3)}
+
+
+def late_onside_play(job):
+    index, version = job
+    from dataclasses import replace
+    from runtime.kernel import resolve_game, validate_result
+    from runtime.profiles import profile_for
+    from synthetic_games import sample_teams
+    home, away = (replace(t, kickoff_policy={"otherwise": "onside"}) for t in sample_teams())
+    label = "%s%d" % (BLOCKS["late-onside"][0], index)
+    try:
+        r = resolve_game(home, away, seed=entropy(label), event_id=label, _test_profile=profile_for(version))
+    except Exception as exc:  # a refused game is a finding
+        return {"label": label, "refused": "%s: %s" % (type(exc).__name__, exc)}
+    onside = [k for k in r["kickoffs"] if k.get("onside")]
+    return {"label": label, "refused": None, "errors": validate_result(r)[:5],
+            "fallback_zero_tuple": r["diagnostics"].get("fallback_zero_tuple", 0),
+            "not_onside_from_35": sum(1 for k in r["kickoffs"] if bool(k.get("onside")) == bool(k["free_kick"])),
+            "onside": len(onside),
+            "late": sum(1 for k in onside if k["half"] == "OT" or (k["half"] == 2 and k["remaining"] <= 300))}
+
+
+def late_onside_block(version="2014.6", jobs=1, count=None):
+    """Late feasibility after onside starts (module docstring, block late-onside)."""
+    work = [(i, version) for i in range(count or BLOCKS["late-onside"][1])]
+    if jobs > 1:
+        with multiprocessing.Pool(jobs) as pool:
+            rows = pool.map(late_onside_play, work, chunksize=4)
+    else:
+        rows = [late_onside_play(job) for job in work]
+    refused = [r for r in rows if r["refused"]]
+    played = [r for r in rows if not r["refused"]]
+    out = {"block": "late-onside", "kernel_profile": version, "games": len(rows), "refused_games": len(refused),
+           "refused": [{"label": r["label"], "refused": r["refused"]} for r in refused[:50]],
+           "games_with_errors": sum(1 for r in played if r["errors"]),
+           "errors": [{"label": r["label"], "errors": r["errors"]} for r in played if r["errors"]][:50],
+           "fallback_zero_tuple": sum(r["fallback_zero_tuple"] for r in played),
+           "kickoffs_not_onside_from_35": sum(r["not_onside_from_35"] for r in played),
+           "onside_kicks": sum(r["onside"] for r in played),
+           "onside_late_or_overtime": sum(r["late"] for r in played)}
+    out["pass"] = not (out["refused_games"] or out["games_with_errors"] or out["fallback_zero_tuple"]
+                       or out["kickoffs_not_onside_from_35"])
+    return out
+
+
 def grade(receipts, version, provisional=True):
     """Graded tables with each row's registry status. provisional=False is
     the B17 re-grade: provisional detections (runtime.bands
@@ -362,6 +529,29 @@ def main():
     LATENT_REF = args.latent_ref
     if args.block == "dev" and args.count is None:
         parser.error("the dev block needs --count")
+    if args.block in ("swap", "late-onside"):
+        result = (swap_block if args.block == "swap" else late_onside_block)(args.profile, args.jobs, args.count)
+        if args.out:
+            args.out.write_text(json.dumps(result, indent=1, sort_keys=True, default=str) + "\n", encoding="utf-8")
+        if args.block == "swap":
+            for arm in SWAP_ARMS:
+                a = result["arms"][arm]
+                print("%s: %d games, %d refused, %d errors, carrier points %.2f (SE %.2f), go %d/%d, conversions "
+                      "%d/%d, try compliance %d/%d, kick compliance %d/%d, onside %d (recovered %d), other club "
+                      "league tries %d/%d" % (arm, a["games"], len(a["refused"]), a["errors"], a["carrier_points"],
+                                              a["carrier_points_se"], a["go"], a["tries"], a["conversions"], a["go"],
+                                              a["compliant"], a["tries"], a["kicks_compliant"], a["kicks"],
+                                              a["onside"], a["onside_recovered"], a["other_league"],
+                                              a["other_tries"]))
+            print("Jacksonville against Denver labels: points z %.2f, go share z %.2f; %s" % (
+                result["z_points_jax_vs_den"], result["z_go_share_jax_vs_den"], "PASS" if result["pass"] else "FAIL"))
+        else:
+            print("late-onside: %d games, %d refused, %d with validation errors, fallback_zero_tuple %d, kickoffs "
+                  "not onside from the 35 %d, onside kicks %d, onside starts in the last 5:00 or overtime %d; %s" % (
+                      result["games"], result["refused_games"], result["games_with_errors"],
+                      result["fallback_zero_tuple"], result["kickoffs_not_onside_from_35"], result["onside_kicks"],
+                      result["onside_late_or_overtime"], "PASS" if result["pass"] else "FAIL"))
+        return 0 if result["pass"] else 1
     rows = run(args.block, args.profile, args.count, args.start, args.jobs)
     result = summary(rows, args.profile, provisional=not args.regrade_provisional)
     result["block"] = args.block

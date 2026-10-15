@@ -71,6 +71,65 @@ def outcome_policies(data):
     return data
 
 
+def installed_profile():
+    """The profile production resolves with: runtime.KERNEL_VERSION's, as
+    read by this module (resolve_game and runtime.game_runner.run_game)."""
+    return profile_for(KERNEL_VERSION)
+
+
+def decision_block_errors(home, away, *, profile, game_type, management_mode="autonomous", controlled_team=None):
+    """The batch B9 decision-block refusals of one game ([] when it may
+    proceed), all decidable from the inputs before any draw. The production
+    runner applies them before the private event is journaled
+    (runtime.game_runner.run_game, with installed_profile()); the kernel
+    applies them again, before its first draw, as the second line:
+
+    - a block for a kind the resolving ``profile`` does not decide;
+    - any block in a preseason or Pro Bowl game;
+    - a malformed block (scoring_decisions.policy_errors);
+    - ``otherwise: ask`` on any club but the controlling coach's in a
+      user-controlled game (a live answer has no one to give it);
+    - U6 (unanswered): the controlled club of a user-controlled regular or
+      postseason game without a block (a standing rule, a delegation or
+      ``otherwise: ask``) for every kind the profile decides.
+
+    A rule reads only the inputs and the controlled-club designation, never
+    a club's identity; the same block on either side is refused or accepted
+    alike."""
+    errors = []
+    kinds = scoring.profile_kinds(profile)
+    user_controlled = management_mode == "user_controlled"
+    if user_controlled and controlled_team not in (home.team_id, away.team_id):
+        return ["user-controlled management requires the controlled club's team_id"]
+    present = {}
+    for team in (home, away):
+        for field, kind in (("try_policy", "two_point"), ("kickoff_policy", "kickoff")):
+            block = getattr(team, field, None)
+            if block is None:
+                continue
+            present[(team.team_id, kind)] = True
+            if kind not in kinds:
+                errors.append("%s carries a %s decision block; profile %s does not resolve one"
+                              % (team.team_id, kind, profile.kernel_version))
+                continue
+            if game_type in (PRESEASON, PRO_BOWL):
+                errors.append("%s carries a %s decision block in a %s game" % (team.team_id, kind, game_type))
+                continue
+            faults = scoring.policy_errors(block, kind)
+            if faults:
+                errors.append("%s decision block: %s" % (team.team_id, "; ".join(faults)))
+                continue
+            if block.get("otherwise") == "ask" and not (user_controlled and team.team_id == controlled_team):
+                errors.append("%s asks for a live %s decision; only the controlling coach's club in a "
+                              "user-controlled game can answer one" % (team.team_id, kind))
+    if user_controlled and game_type in ("regular", "postseason"):
+        missing = [kind for kind in kinds if (controlled_team, kind) not in present]
+        if missing:
+            errors.append("U6: %s has no %s decision block (a standing rule, a delegation or otherwise: ask); "
+                          "the user-controlled game fails closed" % (controlled_team, " or ".join(missing)))
+    return errors
+
+
 def _outcome_team(team):
     data = asdict(team)
     if data.get("strength") is None:
@@ -424,7 +483,7 @@ def resolve_game(home, away, *, seed, event_id, venue="home", weather="normal", 
     """
     if _test_profile is not None and not isinstance(_test_profile, Profile):
         raise TypeError("_test_profile must be a runtime.profiles.Profile")
-    profile = _test_profile if _test_profile is not None else profile_for(KERNEL_VERSION)
+    profile = _test_profile if _test_profile is not None else installed_profile()
     if _test_strength_receipt is not None and not isinstance(_test_strength_receipt, list):
         raise TypeError("_test_strength_receipt must be a list")
     try:
@@ -567,33 +626,18 @@ def _resolve_game(
     smodel = cbase.scoring() if scoring_on else None
     forced_scoring = _scoring_hook(_test_scoring, sequencing, scoring_on)
     pro_bowl_game = game_type == PRO_BOWL
-    policies = {}
-    for team in (home, away):
-        policies[team.team_id] = {}
-        for field, kind, held in (("try_policy", "two_point", try_v1), ("kickoff_policy", "kickoff", onside_v1)):
-            block = getattr(team, field, None)
-            if block is None:
-                policies[team.team_id][kind] = None
-                continue
-            if not held:
-                raise ValueError("%s carries a %s decision block; profile %s does not resolve one"
-                                 % (team.team_id, kind, profile.kernel_version))
-            if game_type in (PRESEASON, PRO_BOWL):
-                raise ValueError("%s carries a %s decision block in a %s game" % (team.team_id, kind, game_type))
-            faults = scoring.policy_errors(block, kind)
-            if faults:
-                raise ValueError("%s decision block: %s" % (team.team_id, "; ".join(faults)))
-            policies[team.team_id][kind] = scoring.canonical_policy(block)
-    if management_mode == "user_controlled" and game_type in ("regular", "postseason"):
-        # U6 (unanswered): the controlled club's two-point and onside
-        # decisions come from Stone, a standing rule or delegation on the
-        # frozen sheet or a live answer (otherwise: ask); without a block the
-        # game fails closed before any draw.
-        missing = [kind for kind, held in (("two_point", try_v1), ("kickoff", onside_v1))
-                   if held and policies[controlled_team][kind] is None]
-        if missing:
-            raise ValueError("U6: %s has no %s decision block (a standing rule, a delegation or otherwise: ask); "
-                             "the user-controlled game fails closed" % (controlled_team, " or ".join(missing)))
+    # The decision blocks (R8, R9) and U6 (unanswered: the controlled club's
+    # two-point and onside decisions come from Stone, a standing rule or
+    # delegation on the frozen sheet or a live answer, otherwise: ask) fail
+    # closed before any draw; the production runner has already refused the
+    # same inputs before journaling the event (decision_block_errors).
+    faults = decision_block_errors(home, away, profile=profile, game_type=game_type,
+                                   management_mode=management_mode, controlled_team=controlled_team)
+    if faults:
+        raise ValueError("; ".join(faults))
+    policies = {team.team_id: {kind: scoring.canonical_policy(getattr(team, field, None))
+                               for field, kind in (("try_policy", "two_point"), ("kickoff_policy", "kickoff"))}
+                for team in (home, away)}
     T = fpm.T
 
     teams = {home.team_id: home, away.team_id: away}
@@ -1000,7 +1044,8 @@ def _resolve_game(
         ``slot``, its ``eligible`` answers and only the public situation
         (``info``: clock, score, margin; never a probability); the
         continuation's answer is checked against the digest of that state.
-        Any other club, or autonomous mode, fails closed."""
+        Any other club, or autonomous mode, fails closed: such an ask is
+        refused before any draw (decision_block_errors) and here again."""
         if management_mode != "user_controlled" or team_id != controlled_team:
             raise ValueError("%s asks for a live %s decision; only the controlling coach's club in a "
                              "user-controlled game can answer one" % (team_id, trigger))
@@ -1143,6 +1188,22 @@ def _resolve_game(
         side, else the deep kick's return-touchdown test (R15) and a real
         return record. The base pool draw is taken first in every case and
         discarded when a branch replaces it."""
+        def kick_returner_value(number):
+            """The returner socket's input on a deep kick: the receiving
+            club's kick returner's tier value (the existing returner term's),
+            from the live roster through the preseason tracker's current block
+            without recording it; 0 without a strength record. No draw."""
+            strength = teams[receiving].strength
+            if not strength:
+                return 0.0
+            players = live_rosters()[receiving]
+            if trackers is not None:
+                players = trackers[receiving].view("special_teams", players,
+                                                   rotation.quarter_of_remaining(remaining, half == "OT"),
+                                                   number, record=False)[0]
+            return unit_strength.returner_adjustment(strength, usage.club_returner(players, "kick_return"), "KR",
+                                                     params=strength_params)[1]["value"]
+
         checkpoint()
         kick_no = len(kickoffs) + 1
         drawn = fpm.free_kick(rng) if free_kick else fpm.kickoff(rng)
@@ -1176,7 +1237,10 @@ def _resolve_game(
                 onside = {"onside": decision == "onside", "cell": cell, "p_onside": list(pair), "basis": basis}
             if onside and onside["onside"]:
                 label = smodel.recovery_class(seconds_left=remaining, period=period, overtime=overtime, diff=margin)
-                p_recover = smodel.p_recover(label)
+                # The onside kicking and hands unit sockets (slope 0) have no
+                # input: strength v4 defines no special-teams unit composite,
+                # so both read 0 until one is specified (runtime/README.md).
+                p_recover = smodel.p_recover(label, kicking_unit=0.0, hands_unit=0.0)
                 recovered = u1 < p_recover
                 if branch in ("onside_recovered", "onside_lost"):
                     recovered = branch == "onside_recovered"
@@ -1187,7 +1251,9 @@ def _resolve_game(
                          "return_yards": int(r["return_yards"]), "enforcement": int(r["enforcement"]),
                          "outcome": scoring.ONSIDE_RECOVERED if recovered else scoring.ONSIDE_LOST, "kick_spot": 35}
                 onside.update(recovery_class=label, p_recover=[smodel.recovery[label][0], smodel.recovery[label][1]])
-            elif returns_v1 and not free_kick and (u1 < smodel.p_return(smodel.kickoff) or branch == "touchdown"):
+            elif returns_v1 and not free_kick and (u1 < smodel.p_return(smodel.kickoff,
+                                                                        returner=kick_returner_value(kick_no))
+                                                   or branch == "touchdown"):
                 # R15: a deep kick from the 35 returned for a touchdown, on a
                 # real record (kick yards and the return from the receiving
                 # club's goal line, 35 + kick yards).
@@ -1612,12 +1678,31 @@ def _resolve_game(
         return_stream = None
         forced_drive = forced_scoring["drives"].get(drive_no)
 
-        def returned(unit, los):
+        def unit_input(side, unit):
+            """The E1 socket input of one of this drive's unit composites: the
+            composite of the drive's actual lineup less its strength term's
+            centre (runtime.strength), 0 for a side with no strength record.
+            Read for the slope-0 return and blocked-kick sockets; no draw."""
+            units = (strength_receipt.get("units") or {}).get(side)
+            if not units:
+                return 0.0
+            centre = next((term["centre"] for term in strength_params.terms
+                           if term["side"] == side and term["unit"] == unit), None)
+            if centre is None:
+                raise ValueError("profile %s has no %s %s strength term for its scoring socket"
+                                 % (profile.kernel_version, side, unit))
+            return units[unit]["composite"] - centre
+
+        def returned(unit, los, **inputs):
+            """The R15 test of this possession's turnover, punt or missed field
+            goal, with its E1 socket inputs (``returner``/``coverage`` for a
+            return, ``protection``/``rush`` for a blocked kick; slope 0)."""
             nonlocal return_stream
             return_stream = _stream(scoring.RETURN_TAG, seed, event_id, drive_no)
             u = return_stream.random()
             pair = smodel.missed_fg if unit == "missed_field_goal" else smodel.return_rate(unit, los)
-            prob = smodel.p_blocked(pair) if unit == "missed_field_goal" else smodel.p_return(pair)
+            prob = (smodel.p_blocked(pair, **inputs) if unit == "missed_field_goal"
+                    else smodel.p_return(pair, **inputs))
             return u < prob
 
         if category == "touchdown":
@@ -1670,7 +1755,9 @@ def _resolve_game(
                 score_kind, scoring_team = "field_goal", offense
             else:
                 next_start, next_kind = fpm.missed_fg_start(fg_distance), "missed_fg"
-                if returns_v1 and (returned("missed_field_goal", end_spot) or forced_drive == "blocked_fg_td"):
+                if returns_v1 and (returned("missed_field_goal", end_spot, protection=unit_input("offense", "protection"),
+                                            rush=unit_input("defense", "rush"))
+                                   or forced_drive == "blocked_fg_td"):
                     # Batch B9 (R15): a blocked kick returned for a touchdown
                     # (every sourced one was a block), from the line of
                     # scrimmage to the goal line.
@@ -1692,7 +1779,15 @@ def _resolve_game(
                                                                            params=strength_params)
                 punt_record = fpm.adjust_return(punt_record, ret_shift)
                 punt_record["returner"] = ret_receipt
-            if returns_v1 and (returned("punt", end_spot) or forced_drive in ("punt_return_td", "blocked_punt_td")):
+            punt_returner = 0.0
+            if returns_v1 and defense.strength:
+                # The returner socket's input: the receiving club's punt
+                # returner's tier value (the existing returner term's).
+                punt_returner = unit_strength.returner_adjustment(
+                    defense.strength, usage.club_returner(def_view, "punt_return"), "PR",
+                    params=strength_params)[1]["value"]
+            if returns_v1 and (returned("punt", end_spot, returner=punt_returner)
+                               or forced_drive in ("punt_return_td", "blocked_punt_td")):
                 # Batch B9 (R15): a punt returned or blocked for a touchdown,
                 # on a real record of the punt's bin feasible from this line
                 # (the base record is taken and discarded).
@@ -1729,14 +1824,15 @@ def _resolve_game(
                 # yards) of a real pick-six record of the bin, a fumble's
                 # 100 - the fumble spot.
                 forced = forced_drive == "defensive_touchdown"
+                coverage = unit_input("defense", "coverage")
                 if category == "interception":
-                    if returned("interception", end_spot) or forced:
+                    if returned("interception", end_spot, coverage=coverage) or forced:
                         records = smodel.interception_records(end_spot)
                         r = records[return_stream.randrange(len(records))]
                         defensive_td = ("interception", 100 - (end_spot - int(r["air_yards"])))
                 else:
                     fumbled_los = end_spot + int(layout["values"][-1])
-                    if returned("fumble_lost", fumbled_los) or forced:
+                    if returned("fumble_lost", fumbled_los, coverage=coverage) or forced:
                         defensive_td = ("fumble", 100 - end_spot)
                 if defensive_td is not None:
                     turnover_record = dict(turnover_record, return_yards=defensive_td[1], next_start=None)

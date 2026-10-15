@@ -5,7 +5,7 @@ import inspect
 import re
 
 from . import KERNEL_VERSION
-from .kernel import TeamInput, outcome_policies, resolve_game, validate_result
+from .kernel import TeamInput, decision_block_errors, installed_profile, outcome_policies, resolve_game, validate_result
 from . import scoring_decisions
 from .packets import canonical
 from .private_client import Client
@@ -165,6 +165,16 @@ def run_game(home: TeamInput, away: TeamInput, *, event_id, snapshot,
     client = client or Client(snapshot=snapshot)
     if client.snapshot != snapshot:
         raise ValueError("client and game snapshot differ")
+    # Kernel 2014.6 batch B9 (R8, R9, U6): every decision-block refusal the
+    # kernel would raise (a kind the installed profile does not decide, a
+    # block in a preseason or Pro Bowl game, a malformed block, an
+    # otherwise: ask no controlling coach can answer, the controlled club's
+    # missing block) fails closed here, before the private event is
+    # journaled, so no journaled event is left without a result.
+    faults = decision_block_errors(home, away, profile=installed_profile(), game_type=game_type,
+                                   management_mode=management_mode, controlled_team=controlled_team)
+    if faults:
+        raise ValueError("; ".join(faults))
     packet = build_game_packet(event_id, snapshot, home, away, venue=venue,
                                weather=weather, game_type=game_type,
                                management_mode=management_mode, game_date=game_date)

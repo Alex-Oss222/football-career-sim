@@ -118,6 +118,24 @@ class ChartTests(unittest.TestCase):
                          {k: len(v) for k, v in ART["onside"]["spot_records_from_35"].items()})
         self.assertEqual(MODEL.kick_chain_cap, 8)
 
+    def test_every_binned_unit_partitions_its_pooled_units(self):
+        # The lost-fumble bins are keyed by the fumbled snap's line of
+        # scrimmage (the specification's return_td_los_bins), so every unit
+        # is binned; a key that drops units (the fumble spot, off the field
+        # on an end-zone strip-sack) is refused by the model.
+        n = ART["non_offensive"]
+        for unit in ("interception", "fumble_lost", "punt"):
+            bins = n[unit]["los_bins"]
+            self.assertTrue(n[unit]["bins_adopted"], unit)
+            self.assertEqual([sum(v[0] for v in bins.values()), sum(v[1] for v in bins.values())],
+                             list(n[unit]["pooled"]), unit)
+        self.assertEqual(n["fumble_lost"]["los_bins"], {"1-20": [4, 151], "21-40": [13, 189], "41-60": [13, 307],
+                                                        "61-80": [35, 396], "81-99": [28, 123]})
+        broken = json.loads(json.dumps(ART))
+        broken["non_offensive"]["fumble_lost"]["los_bins"]["81-99"] = [23, 147]
+        with self.assertRaisesRegex(sd.ScoringModelError, "fumble_lost line-of-scrimmage bins"):
+            sd.model_from(broken)
+
     def test_try_state_boundaries(self):
         cmap = ART["try"]["decision_cell_map"]
         for seconds, label in ((10 ** 4, "Q1-Q3"), (901, "Q1-Q3"), (900, "Q4 900-601"), (601, "Q4 900-601"),
@@ -461,6 +479,33 @@ class ForcedCaseTests(unittest.TestCase):
         row = [x for x in r["play_ledger"] if x["drive"] == q["number"] and x["play_type"] in ("pass", "run")][-1]
         self.assertEqual(row["yardline"], q["end_spot"] + row["result_yards"])
         self.assertEqual(r["team_stats"][other(q["team"])]["players"][row["tackler"]]["fumble_return_touchdowns"], 1)
+
+    def test_fumble_rate_reads_the_bin_of_the_fumbled_snaps_line(self):
+        # b9-seek-14, drive 7: a lost fumble snapped from the 84 (bin 81-99)
+        # whose spot is the 78 (bin 61-80), found by search. Every lost
+        # fumble's rate lookup takes the fumbled row's own line of scrimmage,
+        # and the 81-99 lookup reads the artifact's 81-99 counts (bins keyed
+        # by that line since the round-1 review; never the fumble spot).
+        calls = []
+        original = sd.ScoringModel.return_rate
+
+        def spy(model, unit, los):
+            pair = original(model, unit, los)
+            calls.append((unit, int(los), pair))
+            return pair
+
+        with mock.patch.object(sd.ScoringModel, "return_rate", spy):
+            r = play("b9-seek-14")
+        fumbled = []
+        for p in r["possessions"]:
+            if p["category"] == "fumble_lost":
+                row = [x for x in r["play_ledger"] if x["drive"] == p["number"] and x["play_type"] in ("pass", "run")][-1]
+                fumbled.append((row["yardline"], p["end_spot"]))
+        self.assertIn((84, 78), fumbled)
+        self.assertEqual([los for unit, los, _ in calls if unit == "fumble_lost"], [los for los, _ in fumbled])
+        bins = ART["non_offensive"]["fumble_lost"]["los_bins"]
+        self.assertIn(("fumble_lost", 84, tuple(bins["81-99"])), calls)
+        self.assertNotEqual(bins["81-99"], bins["61-80"])
 
     def test_punt_return_and_blocked_punt(self):
         p = first(self.drives("punt"), lambda p: True, "a punt")
@@ -870,8 +915,29 @@ class E2PauseTests(unittest.TestCase):
             resolve_game(a, B, continuation={"decisions": stale}, **kw)
 
     def test_only_the_controlling_coach_answers_live(self):
-        with self.assertRaises(ValueError):
-            play("b9-ask-auto", home=with_team("A", {"try_policy": {"otherwise": "ask"}}))
+        # Refused from the inputs alone, before any draw, on every seed (also
+        # where the asking club never scores): never by how the game goes.
+        import random as random_module
+        from runtime import kernel
+
+        class NoDraw(random_module.Random):
+            def random(self):
+                raise AssertionError("a draw was taken before the ask was refused")
+
+        ask = {"otherwise": "ask"}
+        cases = [dict(home=with_team("A", {"try_policy": ask})),
+                 dict(home=with_team("A", {"kickoff_policy": ask})),
+                 dict(home=with_team("A", {"try_policy": DELEGATION, "kickoff_policy": DELEGATION}),
+                      away=with_team("B", {"try_policy": ask}), management_mode="user_controlled",
+                      controlled_team="A")]
+        with mock.patch.object(kernel, "_rng", lambda seed, packet: NoDraw(0)):
+            for kw in cases:
+                for i in range(6):
+                    with self.assertRaisesRegex(ValueError, "asks for a live"):
+                        play("b9-ask-%d" % i, **kw)
+        for i in range(30):
+            with self.assertRaisesRegex(ValueError, "asks for a live"):
+                play("b9-ask-auto-%d" % i, home=with_team("A", {"try_policy": ask}))
 
 
 class LabelTests(unittest.TestCase):
@@ -1072,6 +1138,16 @@ class LateFeasibilityTests(unittest.TestCase):
                 self.assertEqual(bool(k.get("onside")), not k["free_kick"])
         self.assertEqual(zero, 0)
 
+    def test_the_committed_late_onside_block(self):
+        # scripts/research/acceptance_2014_6.py --block late-onside (600 games
+        # at acceptance; three here).
+        sys.path.insert(0, str(ROOT / "scripts" / "research"))
+        import acceptance_2014_6 as acc
+        out = acc.late_onside_block(count=3)
+        self.assertTrue(out["pass"], out)
+        self.assertEqual(out["games"], 3)
+        self.assertGreater(out["onside_kicks"], 0)
+
 
 class RealInputLabelSwapTests(unittest.TestCase):
     """The Week 4 Jacksonville and San Diego inputs (acceptance slate clubs,
@@ -1105,6 +1181,104 @@ class RealInputLabelSwapTests(unittest.TestCase):
 
     def test_policy_moved_between_the_clubs(self):
         self.assertGreater(self.run_side("jax") + self.run_side("sd"), 0)
+
+    def test_the_committed_swap_block(self):
+        # scripts/research/acceptance_2014_6.py --block swap (120 games per arm
+        # at acceptance; two here): every holder's try and kick follows its
+        # block and the other club takes the league chart. A relabelled club
+        # is another packet (another stream), so the Jacksonville and Denver
+        # arms agree in distribution (the block's z readings), not game by game.
+        import acceptance_2014_6 as acc
+        out = acc.swap_block(count=2)
+        arms = out["arms"]
+        for arm in acc.SWAP_ARMS:
+            a = arms[arm]
+            self.assertEqual((a["refused"], a["errors"]), ([], 0), arm)
+            self.assertEqual((a["compliant"], a["kicks_compliant"], a["other_league"]),
+                             (a["tries"], a["kicks"], a["other_tries"]), arm)
+        self.assertTrue(all(arms[arm]["tries"] for arm in acc.SWAP_ARMS))
+        self.assertIn("z_points_jax_vs_den", out)
+
+
+class SocketWiringTests(unittest.TestCase):
+    """The E1 sockets reach the kernel's call sites (real Week 4 inputs with
+    synthetic latent draws): each return or blocked-kick probability is drawn
+    with its unit's input (the returner's tier value, the defence's coverage
+    composite, the kicking club's protection and the defence's rush, each
+    composite less its strength term's centre); at slope 0 nothing moves,
+    and a patched slope moves the drawn probability the declared way."""
+
+    SEEDS = 3
+
+    @classmethod
+    def setUpClass(cls):
+        sys.path.insert(0, str(ROOT / "scripts" / "research"))
+        import acceptance_2014_6 as acc
+        from runtime import strength
+        clubs = acc.slate_clubs("2014.6")
+        cls.jax, cls.sd = clubs["Jacksonville Jaguars"], clubs["San Diego Chargers"]
+        cls.terms = strength.parameters(PROFILE_2014_6.strength).terms
+        cls.base_games, cls.calls, cls.receipts = cls.games()
+
+    @classmethod
+    def games(cls, sockets=None):
+        calls, receipts, games = [], [], []
+        p_return, p_blocked = sd.ScoringModel.p_return, sd.ScoringModel.p_blocked
+
+        def spy_return(pair, returner=0.0, coverage=0.0):
+            p = p_return(pair, returner, coverage)
+            calls.append(("return", tuple(pair), {"returner": returner, "coverage": coverage}, p))
+            return p
+
+        def spy_blocked(pair, protection=0.0, rush=0.0):
+            p = p_blocked(pair, protection, rush)
+            calls.append(("blocked", tuple(pair), {"protection": protection, "rush": rush}, p))
+            return p
+
+        with mock.patch.object(sd.ScoringModel, "p_return", staticmethod(spy_return)), \
+                mock.patch.object(sd.ScoringModel, "p_blocked", staticmethod(spy_blocked)), \
+                mock.patch.dict(sd.SOCKETS, sockets or {}):
+            for i in range(cls.SEEDS):
+                games.append(resolve_game(cls.sd, cls.jax, seed=SEED + b"-b9-sock-%d" % i, event_id="b9-sock-%d" % i,
+                                          venue="neutral", _test_profile=PROFILE_2014_6,
+                                          _test_strength_receipt=receipts))
+        return games, calls, receipts
+
+    def deviations(self, side, unit):
+        centre = next(t["centre"] for t in self.terms if t["side"] == side and t["unit"] == unit)
+        return {r["units"][side][unit]["composite"] - centre for r in self.receipts if side in r["units"]}
+
+    def test_each_call_site_passes_its_unit_input(self):
+        coverage = self.deviations("defense", "coverage")
+        protection, rush = self.deviations("offense", "protection"), self.deviations("defense", "rush")
+        returns = [c for c in self.calls if c[0] == "return"]
+        blocked = [c for c in self.calls if c[0] == "blocked"]
+        turnover_pairs = {tuple(v) for unit in ("interception", "fumble_lost")
+                          for v in ART["non_offensive"][unit]["los_bins"].values()}
+        turnovers = [c for c in returns if c[1] in turnover_pairs and c[2]["returner"] == 0.0]
+        self.assertTrue(turnovers and blocked)
+        self.assertTrue(all(c[2]["coverage"] in coverage for c in turnovers))
+        self.assertTrue(any(c[2]["coverage"] != 0.0 for c in turnovers))
+        self.assertTrue(any(c[2]["returner"] != 0.0 for c in returns))
+        self.assertTrue(all(c[2]["protection"] in protection and c[2]["rush"] in rush for c in blocked))
+        self.assertTrue(all(c[3] == c[1][0] / c[1][1] for c in self.calls))  # slope 0: the base rate exactly
+
+    def test_a_patched_slope_moves_the_drawn_probability(self):
+        slopes = {"returner": 0.001, "coverage": 0.001, "blocked_kick_protection": 0.001, "blocked_kick_rush": 0.001}
+        _, calls, _ = self.games(slopes)
+        moved = 0
+        for kind, pair, inputs, p in calls:
+            base = pair[0] / pair[1]
+            if kind == "return":
+                expected = base + 0.001 * inputs["returner"] - 0.001 * inputs["coverage"]
+            else:
+                expected = base - 0.001 * inputs["protection"] + 0.001 * inputs["rush"]
+            self.assertAlmostEqual(p, min(1.0, max(0.0, expected)), places=12)
+            moved += p != base
+        self.assertGreater(moved, 0)
+        # A slope large enough to decide the draw changes the game itself.
+        games, _, _ = self.games({"coverage": -1.0})
+        self.assertNotEqual([g["final_score"] for g in games], [g["final_score"] for g in self.base_games])
 
 
 if __name__ == "__main__":

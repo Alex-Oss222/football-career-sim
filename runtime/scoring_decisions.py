@@ -26,14 +26,25 @@ or kick, onside or deep) by situation. A probability, share, rate or
 weight key anywhere in it is rejected, so a coach's block can never become
 a frequency the engine samples.
 
-E1 sockets (slope 0). The two-point success rate has a slope-0 socket on
-the scoring drive's matchup edge, and the returner, coverage, onside
-recovery (kicking and hands units) and blocked-kick (protection and rush)
-terms are named sockets at slope 0: no admissible evidence moves any of them
+E1 sockets (slope 0). No admissible evidence moves any of them
 (library/2010_2014_scoring_decisions_calibration.md; the 2014.4 phase 2
-study found no returner or coverage skill). Each socket returns the base
-rate exactly at slope 0 and moves the declared way only when a test patches
-its slope.
+study found no returner or coverage skill). Each returns the base rate
+exactly at slope 0 and moves the declared way only when a test patches its
+slope. The kernel passes each its input at the call site:
+
+- two-point success: the scoring drive's matchup edge (0 on a
+  non-offensive try);
+- returner: the receiving club's returner's tier value (the existing
+  returner term's) on punt and deep-kick returns;
+- coverage: the defence's coverage composite of the drive's lineup, less its
+  strength term's centre, on interception and fumble returns;
+- blocked-kick protection and rush: the kicking club's protection and the
+  defence's rush composites, each less its term's centre, on a missed field
+  goal;
+- onside kicking and hands units: no input. Strength v4 defines no
+  special-teams unit composite, so the kernel passes 0 and these two are
+  named terms only, inert by construction as well as by slope, until such a
+  composite is specified.
 """
 from __future__ import annotations
 
@@ -165,8 +176,18 @@ class ScoringModel:
         self.rates = {}
         for unit in ("interception", "fumble_lost", "punt"):
             entry = n[unit]
-            self.rates[unit] = ({label: _fraction(v) for label, v in entry["los_bins"].items()}
-                                if entry.get("bins_adopted") else {"*": _fraction(entry["pooled"])})
+            if entry.get("bins_adopted"):
+                # An adopted unit's bins partition its pooled units: a bin key
+                # that drops units (a fumble spot off the field, say) would
+                # read a rate counted on another state variable.
+                bins = {label: _fraction(v) for label, v in entry["los_bins"].items()}
+                total = (sum(k for k, _ in bins.values()), sum(n_ for _, n_ in bins.values()))
+                if total != _fraction(entry["pooled"]):
+                    raise ScoringModelError("%s line-of-scrimmage bins add up to %d/%d, not the pooled %d/%d"
+                                            % ((unit,) + total + tuple(entry["pooled"])))
+                self.rates[unit] = bins
+            else:
+                self.rates[unit] = {"*": _fraction(entry["pooled"])}
         self.missed_fg = _fraction(n["missed_field_goal"]["pooled"])
         self.kickoff = _fraction(n["kickoff"]["pooled"])
         self.safety_free_kick = _fraction(n["safety_free_kick"]["pooled"])

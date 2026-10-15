@@ -419,7 +419,7 @@ BASE_2010_2014W4 = CalibrationBase(
         # (scripts/research/build_2010_2014_scoring_decisions.py, --check),
         # read by runtime.scoring_decisions under the B9 profile flags.
         ("scoring", Pin("library/data/2010_2014w4_scoring_decisions.json",
-                        "bab767a9c470450b449579ad09da76b6e95e282f579771609d3d7b9cde36cef7")),
+                        "1b041841b34fed56d8aff04257ef4fb123c352f84fe5ae9724d78a7769f4c710")),
     ),
     # Counted from the committed 2010-2014 artifacts on October 3, 2026 (the
     # field-position total is the pooled partition, 25,468 drives: the
