@@ -21,7 +21,8 @@ from .player_evidence import empty_player_stats, normalize_players, observation
 from .profiles import Profile, profile_for
 from .play_detail import (
     KICKOFF_DETAIL_TAG, PUNT_BLOCKED_TD, PUNT_RETURN_TD, apply_drive_detail, apply_kickoff_detail, canonical_call_sheet, check_ledger,
-    has_chain_ledger, scoring_events, seat_try, try_fields, try_row, two_point_row, _period_clock, _stream,
+    has_chain_ledger, return_touchdown_distance_errors, scoring_events, seat_try, try_fields, try_row, two_point_row,
+    _period_clock, _stream,
 )
 
 
@@ -2527,6 +2528,11 @@ def validate_result(result, base=None):
                 errors.append("extra-point made attribution mismatch")
             if sum(p["extra_points_attempted"] for p in players.values()) != s["extra_point_attempts"]:
                 errors.append("extra-point attempt attribution mismatch")
+
+    if return_touchdown_distance_errors(result):
+        # Kernel 2014.6 batch B9 (R15; review round 2): every return
+        # touchdown covers 1 to 109 yards.
+        errors.append("return touchdown distance outside 1-109 yards")
 
     possessions = result["possessions"]
     elapsed = sum(p["seconds"] for p in possessions)

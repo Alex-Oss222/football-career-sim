@@ -1164,7 +1164,22 @@ def audit_scoring(receipts, cohort=None):
     extra point from its drive-model reference), never typed: rates use
     3*sqrt(p(1-p)/n) and counts 3*sqrt(c/n); a rate row reads INSUFFICIENT
     SAMPLE below 30 events (so the Q4 down-2 and late onside rows grade on
-    the 1,000-game block). Earlier cohorts have no row (0, [])."""
+    the 1,000-game block). Earlier cohorts have no row (0, []).
+
+    The four rows whose centres are the league decision charts' frequencies
+    (the two-point attempt share, the Q4 down-2 go share, onside kicks per
+    team-game and the late onside share) grade only the decisions the chart
+    made: basis ``league`` or ``delegated:league``
+    (runtime.scoring_decisions.CHART_BASES). A try or kickoff decided by a
+    club's block (``policy:i``) or a live answer (``live``) is the coach's
+    football decision, never a chart draw (the controlled club is never basis
+    ``league``; specification, scoring.controlled_club_basis), so it is
+    counted apart in one informational row and a block cannot move a graded
+    row. Onside kicks per team-game counts the team-games of the clubs whose
+    kickoffs that game were all chart-decided. The success, recovery and
+    return rows read every decision: the odds do not depend on the basis."""
+    from .scoring_decisions import CHART_BASES
+
     if cohort is None or not kernel_at_least(cohort, SCORING_FROM):
         return 0, []
     base = cohort_base(receipts, cohort)
@@ -1179,10 +1194,14 @@ def audit_scoring(receipts, cohort=None):
         observed, tolerance = _rate(made, n, centre)
         add(metric, observed, centre, tolerance, events=n, graded=graded)
 
-    def count_row(metric, total, centre, *, graded=True):
-        observed = total / team_games if team_games else None
-        tolerance = 3 * math.sqrt(centre / team_games) if team_games and centre else None
+    def count_row(metric, total, centre, *, graded=True, games=None):
+        games = team_games if games is None else games
+        observed = total / games if games else None
+        tolerance = 3 * math.sqrt(centre / games) if games and centre else None
         add(metric, observed, centre, tolerance, graded=graded)
+
+    def chart_decided(decision):
+        return decision.get("basis") in CHART_BASES
 
     teams = [s for r in receipts for s in r.get("team_stats", {}).values()]
 
@@ -1192,27 +1211,48 @@ def audit_scoring(receipts, cohort=None):
     # R8: the try decision, the two-point result and the extra point.
     tries = art["try"]["tries_by_season"].values()
     go_centre = sum(k for k, _ in tries) / sum(n for _, n in tries)
+    all_tries = [t for r in receipts for t in _tries(r)]
+    chart_tries = [t for t in all_tries if chart_decided(t)]
+    rate_row("two-point attempt share of tries", sum(t["decision"] == "go" for t in chart_tries), len(chart_tries),
+             go_centre)
     attempts, kicks_tried = total("two_point_attempts"), total("extra_point_attempts")
-    rate_row("two-point attempt share of tries", attempts, attempts + kicks_tried, go_centre)
     rate_row("two-point conversion rate", total("two_point_conversions"), attempts,
              pooled(art["two_point_success"]["pooled"]))
     rate_row("extra-point rate", total("extra_points_made"), kicks_tried, pooled(art["extra_point_reference"]["value"]))
     cell_map = art["try"]["decision_cell_map"]
     down_two = cell_map["Q4 120-0|-2"]
     chart = art["try"]["decision_chart"][down_two]
-    late = [t for r in receipts for t in _tries(r) if t.get("cell") == down_two]
+    late = [t for t in chart_tries if t.get("cell") == down_two]
     rate_row("fourth-quarter go share of tries down 2 after the touchdown", sum(t["decision"] == "go" for t in late),
              len(late), chart["go"] / chart["tries"])
     # R9: onside kicks, their late share and the recoveries.
     onside_chart = art["onside"]["decision_chart"]
     onside_total = sum(k for k, _ in art["onside"]["onside_share_by_season"].values())
-    count_row("onside kicks per team-game", total("onside_kicks"), onside_total / sum(art["team_games"].values()))
+    kicks = [k for r in receipts for k in _kicks(r)]
+    decided = [k for k in kicks if k.get("onside") is not None]
+    chart_games = chart_onside = 0
+    for r in receipts:
+        own = {}
+        for k in _kicks(r):
+            if k.get("onside") is not None:
+                own.setdefault(k.get("kicking"), []).append(k)
+        for club in r.get("team_stats", {}):
+            club_kicks = own.get(club, [])
+            if all(chart_decided(k) for k in club_kicks):
+                chart_games += 1
+                chart_onside += sum(bool(k["onside"]) for k in club_kicks)
+    count_row("onside kicks per team-game", chart_onside, onside_total / sum(art["team_games"].values()),
+              games=chart_games)
     late_cells = ("Q4 120-0|trail 1-3", "Q4 120-0|trail 4-8")
     late_pair = [sum(onside_chart[c][i] for c in late_cells) for i in (0, 1)]
-    kicks = [k for r in receipts for k in _kicks(r)]
-    late_kicks = [k for k in kicks if k.get("cell") in late_cells]
+    late_kicks = [k for k in decided if k.get("cell") in late_cells and chart_decided(k)]
     rate_row("onside share of kicks trailing by 1-8 inside 2:00", sum(bool(k.get("onside")) for k in late_kicks),
              len(late_kicks), late_pair[0] / late_pair[1])
+    # Decisions of a club's block or a live answer: counted apart, never graded.
+    apart = sum(not chart_decided(d) for d in all_tries + decided)
+    rows.append(("tries and kickoffs decided by a club's block or a live answer (informational; counted apart, "
+                 "never graded against the chart)", apart, None, None,
+                 "MEASURED" if team_games else "INSUFFICIENT SAMPLE"))
     for label, graded in (("expected", True), ("surprise", False)):
         onside = [k for k in kicks if k.get("onside") and k.get("recovery_class") == label]
         rate_row("%s onside recovery rate%s" % (label, "" if graded else " (informational)"),

@@ -2332,6 +2332,47 @@ def _check_spot_ledger(result, possessions, rows_by_drive, kicks, err, sequencin
                 err("label_target_mismatch", where)
 
 
+def return_touchdown_distance_errors(result):
+    """Kernel 2014.6 batch B9 (R15; review round 2): every return touchdown
+    covers runtime.scoring_decisions.RETURN_TD_YARDS (1 to 109 yards). Reads a
+    result or a receipt: each possession's sourced non_offensive_score, each
+    kickoff from the 35 that took an onside decision and was run back for a
+    touchdown (a real return record of R15), and, with the full snap ledger,
+    those scores' rows (the row that scored and the kick's row). A test-only
+    placeholder touchdown (batch B8 hook, no source and no onside decision) is
+    not R15's and is left out. Returns detail strings; [] when clean."""
+    from .scoring_decisions import RETURN_TD_YARDS
+
+    low, high = RETURN_TD_YARDS
+
+    def bad(value):
+        return isinstance(value, bool) or not isinstance(value, int) or not low <= value <= high
+
+    out = []
+    sourced = set()
+    for p in _possessions(result):
+        score = p.get("non_offensive_score") or {}
+        if score.get("source") is not None:
+            sourced.add(p["number"])
+            if bad(score.get("return_yards")):
+                out.append("drive %s %s touchdown covers %r yards" % (p["number"], score["source"],
+                                                                     score.get("return_yards")))
+    kick_list = kicks_of(result)
+    for k in kick_list:
+        if k.get("onside") is not None and k.get("outcome") == RETURN_TOUCHDOWN_OUTCOME and bad(k.get("return_yards")):
+            out.append("kick %s return touchdown covers %r yards" % (k.get("kick_no"), k.get("return_yards")))
+    ledger = result.get("play_ledger") or []
+    kick_rows = [r for r in ledger if r.get("play_type") in KICK_TYPES]
+    for row, k in zip(kick_rows, kick_list):
+        if k.get("onside") is not None and row.get("touchdown") and bad(row.get("return_yards")):
+            out.append("kick %s touchdown row covers %r yards" % (k.get("kick_no"), row.get("return_yards")))
+    for row in ledger:
+        if (row.get("play_type") not in KICK_TYPES and row.get("drive") in sourced and row.get("touchdown")
+                and row.get("scoring_team") not in (None, row.get("offense")) and bad(row.get("return_yards"))):
+            out.append("drive %s touchdown row covers %r yards" % (row.get("drive"), row.get("return_yards")))
+    return out
+
+
 def check_ledger(result, base=None, audit_only=False):
     """Coherence errors for one closed game, as 'class: detail' strings.
 
@@ -2482,6 +2523,10 @@ def check_ledger(result, base=None, audit_only=False):
         err("score_identity_violations", "scored points %s vs final %s" % (points, result["final_score"]))
     if result.get("scoring_events") is not None and result["scoring_events"] != events:
         err("score_identity_violations", "stored scoring_events differ from the rebuild")
+    for detail in return_touchdown_distance_errors(result):
+        # Kernel 2014.6 batch B9 (R15; review round 2): a return touchdown
+        # covers 1 to 109 yards.
+        err("score_identity_violations", detail)
     for team, s in result.get("team_stats", {}).items():
         if "extra_points_made" in s:
             # Kernel 2014.6 batch B9 (R8): + 2 per two-point conversion (the

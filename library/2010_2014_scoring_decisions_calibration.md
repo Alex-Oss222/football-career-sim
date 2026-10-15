@@ -19,7 +19,7 @@
   - a kickoff return covering 35 plus the kick yards;
   - a fumble spot on the field: the fumbled snap's line of scrimmage minus that snap's yards. The return is not tied to the fumble spot, because the ball is recovered where it rolls.
 
-  A record that fails a check is dropped and counted.
+  A record that fails a check is dropped and counted. These checks hold each record at its own line of scrimmage. The runtime draws a pick-six record of the bin at the game's line, so it keeps only the records whose air yards lie between that line minus 99 and plus 9. The return then covers 1 to 109 yards (`runtime/scoring_decisions.py`, since the batch B9 review, round 2).
 - **Denominators against the base.** The interception units equal the base's interception drives, season by season. The punt units equal its punt-terminal drives, whatever category the drive ended in. One 2011 punt is a source defect, explained in the artifact: its rows are out of file order, so it ends no drive. The kickoff units are reported as the base's kickoff records, plus its retained kicks, plus return touchdowns and a counted remainder.
 - **Try-snap participation.** From the 2013 snap counts, the first season nflverse publishes them. Club-game team snaps are regressed on the play-by-play counts of scrimmage snaps, no-play rows, two-point tries and kick snaps. The try coefficient is the number of on-field snaps a two-point try adds. It is a measured value, not a convention.
 

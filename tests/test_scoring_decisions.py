@@ -136,6 +136,30 @@ class ChartTests(unittest.TestCase):
         with self.assertRaisesRegex(sd.ScoringModelError, "fumble_lost line-of-scrimmage bins"):
             sd.model_from(broken)
 
+    def test_every_feasible_pick_six_record_stays_on_the_field(self):
+        # Review round 2: a record is feasible from a line of scrimmage only
+        # when its interception spot (LOS - air yards) lies between the
+        # passer's 1 and the back line, so every drawn return covers 1 to 109
+        # yards. Before the near-side bound, LOS 91-99 kept 1 to 6 records of
+        # the 81-99 bin whose return was 0 or negative (-7 at LOS 98).
+        low, high = sd.RETURN_TD_YARDS
+        for los in range(1, 100):
+            records = MODEL.interception_records(los)
+            self.assertTrue(records, los)
+            for r in records:
+                self.assertTrue(low <= 100 - (los - r["air_yards"]) <= high, (los, r))
+        self.assertEqual(len(MODEL.interception_records(98)), 44)
+        # An artifact with a line that has no feasible record is refused at
+        # load (here the 81-99 bin without its air yards of 0 or more).
+        broken = json.loads(json.dumps(ART))
+        recs = broken["non_offensive"]["records"]
+        fields = recs["fields"]["interception_return_td"]
+        at_bin, at_air = fields.index("los_bin"), fields.index("air_yards")
+        recs["interception_return_td"] = [r for r in recs["interception_return_td"]
+                                          if not (r[at_bin] == "81-99" and r[at_air] >= 0)]
+        with self.assertRaisesRegex(sd.ScoringModelError, "feasible from line of scrimmage 99"):
+            sd.model_from(broken)
+
     def test_try_state_boundaries(self):
         cmap = ART["try"]["decision_cell_map"]
         for seconds, label in ((10 ** 4, "Q1-Q3"), (901, "Q1-Q3"), (900, "Q4 900-601"), (601, "Q4 900-601"),
@@ -465,6 +489,48 @@ class ForcedCaseTests(unittest.TestCase):
         own_tds = sum(1 for x in r["play_ledger"] if x["offense"] == offense and x["play_type"] in ("pass", "run")
                       and x.get("touchdown") and not x.get("turnover"))
         self.assertEqual(call_tds, own_tds)
+
+    def test_pick_six_from_inside_the_passers_ten_covers_the_field(self):
+        # Review round 2 reproduction: p6-1509, drive 20 is an interception
+        # thrown from the passer's own 2 (LOS 98). Before the near-side bound
+        # its forced pick-six drew a record returned -7 yards; now the return
+        # is a feasible 1 to 109 yards, credited to the interceptor.
+        r = resolve_game(A, B, seed=SEED + b"p6-1509", event_id="p6-1509", _test_profile=PROFILE_2014_6,
+                         _test_scoring={"drives": {20: "defensive_touchdown"}})
+        self.assertEqual(clean(r), [])
+        q = r["possessions"][19]
+        self.assertEqual((q["category"], q["end_spot"], q["non_offensive_score"]["source"]),
+                         ("interception", 98, "interception"))
+        low, high = sd.RETURN_TD_YARDS
+        self.assertTrue(low <= q["non_offensive_score"]["return_yards"] <= high)
+        row = [x for x in r["play_ledger"] if x["drive"] == 20 and x["play_type"] in ("pass", "run")][-1]
+        line = r["team_stats"][other(q["team"])]["players"][row["tackler"]]
+        self.assertEqual(line["interception_return_yards"], q["non_offensive_score"]["return_yards"])
+
+    def test_a_return_touchdown_off_the_field_is_refused(self):
+        # validate_result and check_ledger (result, full and compact
+        # receipts) refuse a return touchdown that covers under 1 yard, the
+        # defense's and a kick's alike.
+        p = first(self.drives("interception"), lambda p: not p["half_final"], "a mid-half interception")
+        r = self.force({"drives": {p["number"]: "defensive_touchdown"}})
+        r["possessions"][p["number"] - 1]["non_offensive_score"]["return_yards"] = -7
+        self.assertIn("return touchdown distance outside 1-109 yards", validate_result(r))
+        for audited in (r, receipt(r, "full"), receipt(r)):
+            self.assertTrue(any(e.startswith("score_identity_violations") and "covers -7 yards" in e
+                                for e in check_ledger(audited)))
+        row = [x for x in r["play_ledger"] if x["drive"] == p["number"] and x["play_type"] in ("pass", "run")][-1]
+        r["possessions"][p["number"] - 1]["non_offensive_score"]["return_yards"] = 50
+        row["return_yards"] = 0
+        self.assertIn("return touchdown distance outside 1-109 yards", validate_result(r))
+        self.assertTrue(any("touchdown row covers 0 yards" in e for e in check_ledger(r)))
+        k = first(self.base["kickoffs"], lambda k: not k["free_kick"] and k.get("onside") is False, "a deep kickoff")
+        kicked = self.force({"kicks": {k["kick_no"]: "touchdown"}})
+        kick = kicked["kickoffs"][k["kick_no"] - 1]
+        self.assertEqual(kick["outcome"], "returned_touchdown")
+        kick["return_yards"] = 0
+        self.assertIn("return touchdown distance outside 1-109 yards", validate_result(kicked))
+        self.assertTrue(any("kick %d return touchdown covers 0 yards" % k["kick_no"] in e
+                            for e in check_ledger(kicked)))
 
     def test_fumble_return_keyed_by_the_fumbled_snap(self):
         # b9-seek-0, drive 2: a lost fumble (found by search; fails loudly if not).
@@ -1101,6 +1167,74 @@ class AuditTests(unittest.TestCase):
         self.assertIn("### Scoring-decision rows", text)
         self.assertIn(render_stats.POINTS_NOTE_2014_6, text)
         self.assertNotIn(render_stats.POINTS_NOTE, text)
+
+    CHART_ROWS = ("two-point attempt share of tries", "fourth-quarter go share of tries down 2 after the touchdown",
+                  "onside kicks per team-game", "onside share of kicks trailing by 1-8 inside 2:00")
+    APART = ("tries and kickoffs decided by a club's block or a live answer (informational; counted apart, "
+             "never graded against the chart)")
+
+    def test_a_block_never_moves_a_chart_row(self):
+        # Round-2 review: the rows centred on the league charts grade only
+        # the chart's decisions (league, delegated:league). Club A carries a
+        # block for both kinds (every decision policy:i); club B delegates to
+        # the chart. Moving A's block (every one of its decisions flipped,
+        # all else held) leaves each chart row and the counted-apart row
+        # unchanged, though the unfiltered go share moves.
+        import copy
+        from runtime import bands
+        a = with_team("A", {"try_policy": GO_LATE, "kickoff_policy": ONSIDE_LATE})
+        b = with_team("B", {"try_policy": DELEGATION, "kickoff_policy": DELEGATION})
+        receipts = [receipt(play("b9-basis-%d" % i, home=a, away=b)) for i in range(12)]
+        on = play_detail.KICK_SUMMARY_FIELDS.index("onside")
+        basis = play_detail.KICK_SUMMARY_FIELDS.index("basis")
+        kicking = play_detail.KICK_SUMMARY_FIELDS.index("kicking")
+        moved = copy.deepcopy(receipts)
+        flipped = 0
+        for rc in moved:
+            line = rc["team_stats"]["A"]  # every policy:i decision is A's; its counters move with it
+            for t in bands._tries(rc):
+                if t["basis"].startswith("policy:"):
+                    go = t["decision"] == "kick"
+                    t["decision"] = "go" if go else "kick"
+                    step = 1 if go else -1
+                    line["two_point_attempts"] += step
+                    line["extra_point_attempts"] -= step
+                    if t["made"]:
+                        line["two_point_conversions"] += step
+                        line["extra_points_made"] -= step
+                    flipped += 1
+            rows = [list(row) for row in rc["kicks"]]
+            for row in rows:
+                if row[on] is not None and row[basis].startswith("policy:"):
+                    self.assertEqual(row[kicking], "A")
+                    row[on] = not row[on]
+                    line["onside_kicks"] += 1 if row[on] else -1
+                    flipped += 1
+            rc["kicks"] = rows
+        self.assertGreater(flipped, 0)
+        graded = {}
+        for name, rcs in (("block", receipts), ("moved", moved)):
+            graded[name] = {m: (o, c, t, s) for m, o, c, t, s in bands.audit_scoring(rcs, cohort="2014.6")[1]
+                            if m in self.CHART_ROWS + (self.APART,)}
+        self.assertEqual(set(graded["block"]), set(self.CHART_ROWS + (self.APART,)))
+        self.assertEqual(graded["block"], graded["moved"])
+
+        def go_share(rcs):
+            tries = [t for rc in rcs for t in bands._tries(rc)]
+            return sum(t["decision"] == "go" for t in tries) / len(tries)
+        self.assertNotEqual(go_share(receipts), go_share(moved))
+        # The graded rows are B's delegated decisions exactly; A's are apart.
+        tries = [t for rc in receipts for t in bands._tries(rc)]
+        kicks = [k for rc in receipts for k in play_detail.kicks_of(rc) if k.get("onside") is not None]
+        chart = [t for t in tries if t["basis"] == "delegated:league"]
+        self.assertTrue(chart and len(chart) < len(tries))
+        self.assertAlmostEqual(graded["block"][self.CHART_ROWS[0]][0],
+                               sum(t["decision"] == "go" for t in chart) / len(chart))
+        b_onside = sum(bool(k["onside"]) for k in kicks if k["kicking"] == "B")
+        self.assertAlmostEqual(graded["block"][self.CHART_ROWS[2]][0], b_onside / len(receipts))
+        self.assertEqual(graded["block"][self.APART][0],
+                         sum(1 for d in tries + kicks if d["basis"].startswith("policy:")))
+        self.assertEqual(graded["block"][self.APART][3], "MEASURED")
 
 
 class IsolationTests(unittest.TestCase):

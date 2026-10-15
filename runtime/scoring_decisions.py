@@ -110,6 +110,10 @@ SOURCES = {"interception": "defensive_touchdowns", "fumble": "defensive_touchdow
 PLAYER_TD_FIELD = {"interception": "interception_return_touchdowns", "fumble": "fumble_return_touchdowns",
                    "punt_return": "punt_return_touchdowns", "blocked_punt": "blocked_kick_touchdowns",
                    "blocked_field_goal": "blocked_kick_touchdowns", "kickoff_return": "kick_return_touchdowns"}
+# The yards every return touchdown covers, checked by validate_result and
+# play_detail.check_ledger: at least 1 (a turnover spot behind the passer's
+# own goal line is off the field) and at most 109 (from the back line).
+RETURN_TD_YARDS = (1, 109)
 TWO_POINT_FIELDS = ("passing_two_point_conversions", "receiving_two_point_conversions",
                     "rushing_two_point_conversions")
 GROUP_DRAW = "group_draw"
@@ -200,6 +204,9 @@ class ScoringModel:
                                     % (self.kick_chain_cap, kick_chain_bound))
         if not self.records.get("kickoff_return_td"):
             raise ScoringModelError("no kickoff return touchdown records")
+        low, high = self.bin_edges[0][0], self.bin_edges[-1][1]
+        for los in range(low, high + 1):
+            self.interception_records(los)  # refuses a line with no feasible pick-six record
 
     # ---- R8 tries --------------------------------------------------------------------
 
@@ -287,11 +294,20 @@ class ScoringModel:
 
     def interception_records(self, los):
         """The bin's real pick-six records feasible from this line of
-        scrimmage (air yards at most LOS + 9); the whole bin when none is."""
-        label = los_bin(int(los), self._bins())
-        rows = [r for r in self.records["interception_return_td"] if r["los_bin"] == label]
-        feasible = [r for r in rows if r["air_yards"] <= int(los) + 9]
-        return feasible or rows
+        scrimmage: air yards from LOS - 99 to LOS + 9, so the interception
+        spot (LOS - air yards, in yards from the goal line the passer
+        attacks) lies between the passer's own 1 and the end line beyond that
+        goal, and the return, 100 - (LOS - air yards), covers RETURN_TD_YARDS
+        (1 to 109). The model refuses at load
+        an artifact with a line of scrimmage that has no feasible record, so
+        no infeasible record is ever drawn (batch B9 review, round 2)."""
+        los = int(los)
+        label = los_bin(los, self._bins())
+        feasible = [r for r in self.records["interception_return_td"]
+                    if r["los_bin"] == label and los - 99 <= r["air_yards"] <= los + 9]
+        if not feasible:
+            raise ScoringModelError("no pick-six record of bin %s is feasible from line of scrimmage %d" % (label, los))
+        return feasible
 
     def punt_records(self, los):
         """The punt bin's real return or blocked touchdown records feasible
