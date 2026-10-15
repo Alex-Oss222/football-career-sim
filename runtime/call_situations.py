@@ -26,9 +26,10 @@ Sudden change is the first two snaps of a possession that began with a
 takeaway. Fourth down takes the third-down menu of its distance. The zones
 nest outward (goal line, low red zone, high red zone) so a snap the inner
 menu cannot describe takes the nearest menu's call; ``normal down`` always
-closes the list. The final-play-of-half and two-point menus
-are not classified: the ledger has no two-point snap and no shot-decision
-mark, so those calls label only through their other menus.
+closes the list. The final-play-of-half menu is not classified: the ledger
+has no shot-decision mark, so those calls label only through their other
+menus. Kernel 2014.6 batch B9 (R8): a two-point try row is classified
+``two-point`` only (``classify_try``); scrimmage snaps never take that menu.
 """
 from __future__ import annotations
 
@@ -48,6 +49,7 @@ PRESS = "press-sequence"
 FOUR_MINUTE = "four-minute"
 SUDDEN_CHANGE = "sudden-change"
 OPENING = "opening-sequence"
+TWO_POINT = "two-point"
 
 _ALIASES = {
     "2nd-and-long": SECOND_LONG, "second-and-long": SECOND_LONG, "2nd-long": SECOND_LONG,
@@ -104,6 +106,14 @@ def half_clock(start_clock, remaining, overtime):
     if int(start_clock) > 1800:
         return 1, int(remaining) - 1800
     return 2, int(remaining)
+
+
+def classify_try():
+    """Kernel 2014.6 batch B9 (R8): the menus of a two-point try row: the
+    sheet's two-point menu (a call of the drawn play type declared on it),
+    else the uniform rule over the sheet's unrestricted calls. Labelling
+    only; the try's type and success were fixed before any label."""
+    return (TWO_POINT,)
 
 
 def classify(*, down, ydstogo, yardline, goal_to_go, half, half_remaining, score_diff,

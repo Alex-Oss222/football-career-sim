@@ -339,6 +339,17 @@ class CalibrationBase:
         from .injury_model import parameters_from
         return self.memo(("injury_parameters",), lambda: parameters_from(self.raw("injury")))
 
+    def scoring(self):
+        """Kernel 2014.6 batch B9: the base's scoring-decision model (R8, R9,
+        R15; runtime.scoring_decisions). A base without the pinned artifact
+        raises (CalibrationBaseError)."""
+        def build():
+            from .rules import KICK_CHAIN_BOUND
+            from .scoring_decisions import ScoringModel
+            return ScoringModel(self.raw("scoring"), kick_chain_bound=KICK_CHAIN_BOUND)
+        self.pin("scoring")
+        return self.memo(("model", "scoring"), build)
+
 
 BASE_2012 = CalibrationBase(
     name="2012",
@@ -404,6 +415,11 @@ BASE_2010_2014W4 = CalibrationBase(
                            "244eb8b9a2ca7a2ee611dc6c342aac9002d5ff8ec9ad7d19727990ad2824c01f")),
         ("specification", Pin("library/2014_6_pre_build_specification.md",
                               "ca028ba38009d1b84e5c887ea86ce8d697edf1705bcd9b755f60aede9d6f8446")),
+        # Kernel 2014.6 batch B9: the scoring-decision charts and rates
+        # (scripts/research/build_2010_2014_scoring_decisions.py, --check),
+        # read by runtime.scoring_decisions under the B9 profile flags.
+        ("scoring", Pin("library/data/2010_2014w4_scoring_decisions.json",
+                        "bab767a9c470450b449579ad09da76b6e95e282f579771609d3d7b9cde36cef7")),
     ),
     # Counted from the committed 2010-2014 artifacts on October 3, 2026 (the
     # field-position total is the pooled partition, 25,468 drives: the

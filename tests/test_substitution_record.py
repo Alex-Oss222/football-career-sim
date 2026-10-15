@@ -189,17 +189,26 @@ class RecorderTests(unittest.TestCase):
     def test_coach_choice_recomputes_the_record(self):
         spare = replace(self.a.roster[0], player_id="A-WR9", position="WR", depth=9)
         roster = self.a.roster + (spare,)
+        # Batch B9 (U6): the controlled club of a user-controlled game needs
+        # its two-point and onside decision blocks; a dated delegation to the
+        # league chart decides exactly as the chart does.
+        delegation = {"otherwise": "league", "source": "test fixture delegation"}
         a = TeamInput("A", tuple(p.player_id for p in roster), roster=roster,
                       offensive_call_sheet=self.a.offensive_call_sheet,
-                      rotation_plan=({"player_id": "A-WR1", "featured": True},))
+                      rotation_plan=({"player_id": "A-WR1", "featured": True},),
+                      try_policy=delegation, kickoff_policy=delegation)
+        # This club's inputs (the spare, the plan and the blocks) are its own
+        # packet, so its game is its own: take an A possession from it.
+        own = resolve_game(a, self.b, seed=SEED + b"-w2a", event_id="w2a", _test_profile=PROFILE_2014_6)
+        drive = [p["number"] for p in own["possessions"] if p["team"] == "A"][1]
         partial = resolve_game(a, self.b, seed=SEED + b"-w2a", event_id="w2a", management_mode="user_controlled",
-                               controlled_team="A", _test_onsets=force(self.drive, "A-WR1"),
+                               controlled_team="A", _test_onsets=force(drive, "A-WR1"),
                                _test_profile=PROFILE_2014_6)
         self.assertTrue(partial.get("paused"))
         pause = partial["pauses"][-1]
         choice = pause["decisions"][0]["eligible"][-1]
         final = resolve_game(a, self.b, seed=SEED + b"-w2a", event_id="w2a", management_mode="user_controlled",
-                             controlled_team="A", _test_onsets=force(self.drive, "A-WR1"),
+                             controlled_team="A", _test_onsets=force(drive, "A-WR1"),
                              continuation={"decisions": [{"token": pause["continuation_token"],
                                                           "choices": {"A-WR1": choice}}]},
                              _test_profile=PROFILE_2014_6)

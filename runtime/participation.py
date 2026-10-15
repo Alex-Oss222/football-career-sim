@@ -235,6 +235,32 @@ def scrimmage(accumulator, offense_id, defense_id, offense_view, defense_view, p
     return {offense_id: offense, defense_id: defense}
 
 
+def try_snap(accumulator, offense_id, defense_id, offense_view, defense_view, passer, front, row,
+             hazard_out=None):
+    """Kernel 2014.6 batch B9 (R8): {team_id: {player_id: snaps}} for one
+    two-point try snap: one offensive snap for the scoring club's slot
+    lineup and one defensive snap for the other club's (slot_lineup, the
+    single on-field source; fractional slots through the same per-club
+    accumulator, n = 1), and the try's named passer, runner and target on
+    the field. A labelled convention: the 2013 snap counts give 1.06
+    recorded snaps per try snap (library/data/2010_2014w4_scoring_decisions.json
+    try_snap_participation). The try is not a scrimmage row
+    (SCRIMMAGE_TYPES): it never counts toward a drive's snaps or a
+    preseason block's limits. `hazard_out` receives the slot credits alone
+    (the injury exposure), as for scrimmage()."""
+    lineup = slot_lineup(offense_view, defense_view, passer, front)
+    offense, defense = {}, {}
+    _credit_slots(accumulator, offense_id, lineup["offense"], 1, offense)
+    _credit_slots(accumulator, defense_id, lineup["defense"], 1, defense)
+    if hazard_out is not None:
+        hazard_out.update({offense_id: dict(offense), defense_id: dict(defense)})
+    for field in OFFENSE_FIELDS:
+        pid = row.get(field)
+        if pid is not None:
+            offense[pid] = max(offense.get(pid, 0), 1)
+    return {offense_id: offense, defense_id: defense}
+
+
 # ---- kicking plays -------------------------------------------------------------
 
 def _ids(players):

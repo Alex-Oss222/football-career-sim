@@ -290,7 +290,9 @@ def grade(receipts, version, provisional=True):
     from runtime import bands
     out = {}
     for name, fn in (("usage", bands.audit), ("drive_model", bands.audit_drive_model),
-                     ("field_position", bands.audit_field_position), ("injuries", bands.audit_injuries)):
+                     ("field_position", bands.audit_field_position), ("injuries", bands.audit_injuries),
+                     # Batch B9 (R8, R9, R15): the scoring-decision rows.
+                     ("scoring", bands.audit_scoring)):
         team_games, rows = fn(receipts, cohort=version)
         out[name] = {"team_games": team_games,
                      "rows": [[m, o, c, t, bands.known_status((m, o, c, t, s), version, provisional)]

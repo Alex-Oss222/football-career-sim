@@ -8,19 +8,20 @@ from . import calibration_base
 from . import injury_model
 from . import participation
 from . import rotation
-from .rules import (GAME_TYPES, KICK_CHAIN_BOUND, PRESEASON, RULES, extra_point_rule, kicking_club,
-                    ot_history, ot_status)
+from .rules import (GAME_TYPES, KEPT_KICK_OUTCOMES, KICK_CHAIN_BOUND, PRESEASON, RULES, kicking_club,
+                    ot_history, ot_status, try_rule)
 from . import chains as chain_walk
 from . import drive_model
 from . import field_position
 from . import strength as unit_strength
 from . import player_state
 from . import usage
+from . import scoring_decisions as scoring
 from .player_evidence import empty_player_stats, normalize_players, observation
 from .profiles import Profile, profile_for
 from .play_detail import (
-    apply_drive_detail, apply_kickoff_detail, canonical_call_sheet, check_ledger,
-    has_chain_ledger, scoring_events, try_row, _period_clock, _stream,
+    KICKOFF_DETAIL_TAG, PUNT_BLOCKED_TD, PUNT_RETURN_TD, apply_drive_detail, apply_kickoff_detail, canonical_call_sheet, check_ledger,
+    has_chain_ledger, scoring_events, seat_try, try_fields, try_row, two_point_row, _period_clock, _stream,
 )
 
 
@@ -45,13 +46,36 @@ class TeamInput:
     # scored (a unit with none sits below the study's centre). Omitted from
     # the outcome packet when None, so legacy packets are unchanged.
     strength: dict | None = None
+    # Kernel 2014.6 batch B9 (R8, R9): the club's standing two-point and
+    # onside decisions (call_sheet.json decisions.two_point and
+    # decisions.kickoff; runtime.scoring_decisions.policy_errors). Any club
+    # may carry them; each is omitted from the outcome packet when None and
+    # enters it through scoring_decisions.canonical_policy (id and source
+    # text stay with the frozen sheet), so legacy packets are unchanged.
+    try_policy: dict | None = None
+    kickoff_policy: dict | None = None
+
+
+POLICY_FIELDS = ("try_policy", "kickoff_policy")
+
+
+def outcome_policies(data):
+    """Drop None policies from a TeamInput's dict form and canonicalise the
+    rest (scoring_decisions.canonical_policy, the one stripper both packet
+    builders use)."""
+    for name in POLICY_FIELDS:
+        if data.get(name) is None:
+            data.pop(name, None)
+        else:
+            data[name] = scoring.canonical_policy(data[name])
+    return data
 
 
 def _outcome_team(team):
     data = asdict(team)
     if data.get("strength") is None:
         data.pop("strength", None)
-    return data
+    return outcome_policies(data)
 
 
 def _rng(seed, packet):
@@ -148,7 +172,10 @@ def _append_evidence(evidence, drive_ledger, offense_players, defense_players, o
                     )
 
     if outcome != "turnover":
-        route = next((p for p in drive_ledger if p.get("target")), None)
+        # Kernel 2014.6 batch B9: a two-point try row names a target but is
+        # not a scrimmage snap, so it is never route evidence (earlier ledgers
+        # have no such row, so their evidence is unchanged).
+        route = next((p for p in drive_ledger if p.get("target") and p.get("play_type") != "two_point"), None)
         if route:
             receiver = offense_by_id.get(route["target"])
             if receiver:
@@ -183,7 +210,10 @@ def _split_yards(total, weight_pass, weight_rush):
 def _start_kind(kick_record):
     """How a possession began after a kick: free_kick, kickoff or kickoff_touchback,
     or (kernel 2014.6 batch B8) free_kick_retained / kickoff_retained when the
-    kicking club kept the ball (outcome "retained")."""
+    kicking club kept the ball (outcome "retained"), or (batch B9, R9)
+    onside_recovery / onside_lost after an onside kick."""
+    if kick_record.get("outcome") in scoring.ONSIDE_START:
+        return scoring.ONSIDE_START[kick_record["outcome"]]
     retained = kick_record.get("outcome") == "retained"
     if kick_record["free_kick"]:
         return "free_kick_retained" if retained else "free_kick"
@@ -203,20 +233,41 @@ _SCORING_KICK_BRANCHES = ("retained", "touchdown")
 _SCORING_DRIVE_BRANCHES = ("defensive_touchdown",)
 
 
-def _scoring_hook(forced, sequencing):
+# Batch B9 adds the R9 onside outcomes, the R15 punt and field-goal returns,
+# and forced tries: ``tries`` maps "drive:N" or "kick:K" to {"decision": "go"
+# or "kick", "made": bool} (either key may be left out). With the B9 flags a
+# forced "touchdown" kick or "defensive_touchdown" drive runs the sourced R15
+# path (a real return record), not the B8 placeholder.
+_SCORING_KICK_BRANCHES_B9 = ("onside_recovered", "onside_lost")
+_SCORING_DRIVE_BRANCHES_B9 = ("punt_return_td", "blocked_punt_td", "blocked_fg_td")
+# Batch B9 team counters (append-only, kernel 2014.6 field group).
+SCORING_TEAM_FIELDS = ("two_point_attempts", "two_point_conversions", "defensive_touchdowns",
+                       "special_teams_touchdowns", "onside_kicks", "onside_recoveries")
+
+
+def _scoring_hook(forced, sequencing, scoring_on=False):
     if forced is None:
-        return {"kicks": {}, "drives": {}}
+        return {"kicks": {}, "drives": {}, "tries": {}}
     if not sequencing:
         raise ValueError("_test_scoring requires a profile holding possession_sequencing")
-    if not isinstance(forced, dict) or set(forced) - {"kicks", "drives"}:
-        raise ValueError("_test_scoring must be {'kicks': {...}, 'drives': {...}}")
+    if not isinstance(forced, dict) or set(forced) - {"kicks", "drives", "tries"}:
+        raise ValueError("_test_scoring must be {'kicks': {...}, 'drives': {...}, 'tries': {...}}")
     kicks = dict(forced.get("kicks") or {})
     drives = dict(forced.get("drives") or {})
-    if any(v not in _SCORING_KICK_BRANCHES for v in kicks.values()):
+    tries = dict(forced.get("tries") or {})
+    kick_branches = _SCORING_KICK_BRANCHES + (_SCORING_KICK_BRANCHES_B9 if scoring_on else ())
+    drive_branches = _SCORING_DRIVE_BRANCHES + (_SCORING_DRIVE_BRANCHES_B9 if scoring_on else ())
+    if any(v not in kick_branches for v in kicks.values()):
         raise ValueError("unknown forced kick branch")
-    if any(v not in _SCORING_DRIVE_BRANCHES for v in drives.values()):
+    if any(v not in drive_branches for v in drives.values()):
         raise ValueError("unknown forced drive branch")
-    return {"kicks": kicks, "drives": drives}
+    if tries and not scoring_on:
+        raise ValueError("forced tries need a profile holding two_point_tries")
+    for key, spec in tries.items():
+        if not isinstance(spec, dict) or set(spec) - {"decision", "made"} or spec.get("decision", "go") not in (
+                "go", "kick"):
+            raise ValueError("forced try %s must be {'decision': 'go'|'kick', 'made': bool}" % key)
+    return {"kicks": kicks, "drives": drives, "tries": tries}
 
 
 def _edge(team, defense, home, venue="home", off_view=(), def_view=(), passer=None):
@@ -408,8 +459,10 @@ def _resolve_game(
         raise ValueError("private seed required")
     if game_type not in GAME_TYPES:
         raise ValueError("unknown game type")
-    # The try rule is fixed before the first draw; None keeps the fixed rate.
-    xp_rule = extra_point_rule(game_type, game_date)
+    # The try rule is fixed before the first draw; None keeps the fixed rate
+    # (runtime.rules.try_rule, the 2015 seam; through 2014 its extra-point
+    # rule is extra_point_rule's).
+    xp_rule = try_rule(game_type, game_date)["extra_point"]
     if management_mode not in ("autonomous", "user_controlled"):
         raise ValueError("unknown management mode")
     if management_mode == "user_controlled" and controlled_team not in (home.team_id, away.team_id):
@@ -498,12 +551,59 @@ def _resolve_game(
     # Kernel 2014.6 batch B8: possession sequencing and its append-only
     # records; the test-only hook needs it (fails closed otherwise).
     sequencing = profile.has("possession_sequencing")
-    forced_scoring = _scoring_hook(_test_scoring, sequencing)
+    # Kernel 2014.6 batch B9: the scoring decisions (R8 two-point tries, R15
+    # defensive and return touchdowns, R9 onside kicks), each by its flag,
+    # each on the possession sequencing and the base's scoring artifact
+    # (fails closed otherwise). The Pro Bowl takes none of the try or kick
+    # branches (no kickoffs; the try stays the kick); R15's turnover, punt
+    # and field-goal returns apply in every game type.
+    try_v1 = profile.has("two_point_tries")
+    returns_v1 = profile.has("return_touchdowns")
+    onside_v1 = profile.has("onside_kicks")
+    scoring_on = try_v1 or returns_v1 or onside_v1
+    if scoring_on and not sequencing:
+        raise ValueError("profile %s holds a batch B9 scoring flag without possession_sequencing"
+                         % profile.kernel_version)
+    smodel = cbase.scoring() if scoring_on else None
+    forced_scoring = _scoring_hook(_test_scoring, sequencing, scoring_on)
+    pro_bowl_game = game_type == PRO_BOWL
+    policies = {}
+    for team in (home, away):
+        policies[team.team_id] = {}
+        for field, kind, held in (("try_policy", "two_point", try_v1), ("kickoff_policy", "kickoff", onside_v1)):
+            block = getattr(team, field, None)
+            if block is None:
+                policies[team.team_id][kind] = None
+                continue
+            if not held:
+                raise ValueError("%s carries a %s decision block; profile %s does not resolve one"
+                                 % (team.team_id, kind, profile.kernel_version))
+            if game_type in (PRESEASON, PRO_BOWL):
+                raise ValueError("%s carries a %s decision block in a %s game" % (team.team_id, kind, game_type))
+            faults = scoring.policy_errors(block, kind)
+            if faults:
+                raise ValueError("%s decision block: %s" % (team.team_id, "; ".join(faults)))
+            policies[team.team_id][kind] = scoring.canonical_policy(block)
+    if management_mode == "user_controlled" and game_type in ("regular", "postseason"):
+        # U6 (unanswered): the controlled club's two-point and onside
+        # decisions come from Stone, a standing rule or delegation on the
+        # frozen sheet or a live answer (otherwise: ask); without a block the
+        # game fails closed before any draw.
+        missing = [kind for kind, held in (("two_point", try_v1), ("kickoff", onside_v1))
+                   if held and policies[controlled_team][kind] is None]
+        if missing:
+            raise ValueError("U6: %s has no %s decision block (a standing rule, a delegation or otherwise: ask); "
+                             "the user-controlled game fails closed" % (controlled_team, " or ".join(missing)))
     T = fpm.T
 
     teams = {home.team_id: home, away.team_id: away}
     rosters = {home.team_id: home_players, away.team_id: away_players}
     stats = {t.team_id: _blank_team_stats(rosters[t.team_id]) for t in (home, away)}
+    if scoring_on:
+        # Batch B9 team counters (append-only; absent from earlier results).
+        for line in stats.values():
+            for field in SCORING_TEAM_FIELDS:
+                line[field] = 0
     # Preseason unit rotation (runtime/rotation.py): a tracker per club, from
     # its plan or the documented default. Any other game type has none, and a
     # rotation block in such a game fails closed before any draw.
@@ -864,11 +964,13 @@ def _resolve_game(
             row["sequence"] = len(play_ledger) + 1
             play_ledger.append(row)
 
-    def try_after(scorer_id, line, available, *, walk_off):
+    def try_after(scorer_id, line, available, *, walk_off, u=None):
         """The try after a non-offensive touchdown (R8 placeholder: the
         ordinary extra point on the fixed rate, or the dated 2014 preseason
         rule; one draw, the same as a drive's try). Returns xp_made (None for
-        a walk-off touchdown, which has no try)."""
+        a walk-off touchdown, which has no try). Batch B9: ``u`` (the keyed
+        try substream's result uniform) replaces the possession-stream draw
+        in the Pro Bowl, which takes no try decision."""
         if walk_off:
             return None
         line["extra_point_attempts"] += 1
@@ -884,10 +986,146 @@ def _resolve_game(
                 kick_shift, _ = unit_strength.kicker_adjustment(scorer.strength, kicker, params=strength_params)
                 xp_prob = min(strength_params.fg_prob_ceiling,
                               max(strength_params.fg_prob_floor, xp_prob + kick_shift))
-        xp_made = rng.random() < xp_prob
+        xp_made = (rng.random() if u is None else u) < xp_prob
         if xp_made:
             line["extra_points_made"] += 1
         return xp_made
+
+    # ---- Kernel 2014.6 batch B9: scoring decisions ------------------------------------------
+
+    def coach_choice(trigger, team_id, slot, eligible, info):
+        """A live decision of the controlling coach (a policy's ``otherwise:
+        ask``; U6), through the E2 pause machinery: the game returns a
+        genuine partial result (completed events only) with the decision
+        ``slot``, its ``eligible`` answers and only the public situation
+        (``info``: clock, score, margin; never a probability); the
+        continuation's answer is checked against the digest of that state.
+        Any other club, or autonomous mode, fails closed."""
+        if management_mode != "user_controlled" or team_id != controlled_team:
+            raise ValueError("%s asks for a live %s decision; only the controlling coach's club in a "
+                             "user-controlled game can answer one" % (team_id, trigger))
+        index = len(pause_state["history"])
+        pause = {"trigger": trigger, "team": team_id, **info,
+                 "decisions": [{"slot": slot, "eligible": list(eligible)}]}
+        pause["continuation_token"] = hashlib.sha256(json.dumps(
+            {"packet": packet_digest, "index": index, "pause": pause,
+             "possessions": possessions, "kickoffs": kickoffs, "play_ledger": play_ledger,
+             "injuries": injuries, "prior": pause_state["history"]},
+            sort_keys=True, separators=(",", ":"), default=str).encode()).hexdigest()
+        if index < len(decisions):
+            decision = decisions[index]
+            if not isinstance(decision, dict) or decision.get("token") != pause["continuation_token"]:
+                raise ValueError("stale or tampered continuation decision")
+            choices = decision.get("choices")
+            if not isinstance(choices, dict) or set(choices) != {slot} or choices[slot] not in eligible:
+                raise ValueError("continuation must answer %s with one of %s" % (slot, ", ".join(eligible)))
+            pause_state["history"].append({"trigger": trigger, "drive": info.get("drive"), "team": team_id,
+                                           "continuation_token": pause["continuation_token"],
+                                           "choices": dict(choices)})
+            return choices[slot]
+        raise _Paused(_partial_result(event_id, game_type, opening_receiver, stats, possessions, kickoffs,
+                                      play_ledger, injuries, substitutions, pause_state["history"], pause,
+                                      kernel_version=profile.kernel_version))
+
+    def side_view(team_id, side, quarter=None):
+        """A club's side as it lines up now, by the pure path (no filler
+        written back, a preseason block viewed with record=False): the
+        scorer's offense and the other club's defense on a try after a
+        non-offensive or return touchdown."""
+        view, _notes = participation.emergency_view(current[team_id], baseline[team_id], side,
+                                                    prefer=fills[team_id][side])
+        if trackers is not None:
+            view, _ = trackers[team_id].view(side, view, quarter, len(possessions) + 1, record=False)
+        return view
+
+    def kick_try_prob(scorer_id, view):
+        """The extra point's probability: the base's rate, or in the dated
+        2014 preseason window the 33-yard kick with the kicker's term."""
+        prob = xp_rate
+        if xp_rule is not None and xp_rule.get("distance"):
+            prob = dm.fg_make_prob_at(xp_rule["distance"])
+            if teams[scorer_id].strength:
+                kicker = usage.kicking_specialist(view, "K", "placekicker")
+                shift, _ = unit_strength.kicker_adjustment(teams[scorer_id].strength, kicker, params=strength_params)
+                prob = min(strength_params.fg_prob_ceiling, max(strength_params.fg_prob_floor, prob + shift))
+        return prob
+
+    def resolve_try(scorer_id, *, anchor, at, view, edge=0.0, result_rng=None):
+        """R8: one try's decision and result. The decision uniform is drawn on
+        the keyed scoring-try-v1 substream (event and anchor; no team id) in
+        every case, so a policy never shifts a later draw. The scorer's
+        policy rule decides (policy:i), its delegation or the league chart
+        cell of the try row's own stamp and the margin after the touchdown
+        (delegated:league, league), or the controlling coach live. The
+        result uniform is ``result_rng``'s next draw (an offensive
+        touchdown's: the possession stream at the extra point's position)
+        or the substream's second uniform (a non-offensive touchdown's).
+        Counts the club's attempt; returns the try record."""
+        opponent = other(scorer_id)
+        key = ("drive", anchor["drive"]) if "drive" in anchor else ("kick", anchor["kick"])
+        stream = _stream(scoring.TRY_TAG, seed, event_id, *key)
+        u_dec, u_res = stream.random(), stream.random()
+        seconds = scoring.try_seconds(at["period"], at["game_clock"])
+        diff = stats[scorer_id]["points"] + 6 - stats[opponent]["points"]
+        cell = smodel.try_cell(seconds, diff)
+        pair = smodel.p_go(cell)
+        state = {"period": at["period"], "diff": diff, "seconds": seconds}
+        decision, basis = scoring.decide(policies[scorer_id]["two_point"], "two_point", state, u_dec, pair)
+        forced = forced_scoring["tries"].get("%s:%s" % key, {})
+        if "decision" in forced:
+            decision = forced["decision"]
+        if decision is None:
+            score = {tid: stats[tid]["points"] for tid in stats}
+            score[scorer_id] += 6
+            decision = coach_choice("two_point", scorer_id, "try", scoring.TRY_DECISIONS,
+                                    {"drive": at["drive"], "anchor": dict(anchor), "period": at["period"],
+                                     "clock": at["game_clock"], "score": score,
+                                     "situation": {"margin_after_touchdown": diff}})
+        u = result_rng.random() if result_rng is not None else u_res
+        line = stats[scorer_id]
+        if decision == "kick":
+            made = u < kick_try_prob(scorer_id, view)
+        else:
+            made = u < smodel.two_point_success(edge)
+        if "made" in forced:
+            made = bool(forced["made"])
+        if decision == "kick":
+            line["extra_point_attempts"] += 1
+            line["extra_points_made"] += int(made)
+            points = int(made)
+        else:
+            line["two_point_attempts"] += 1
+            line["two_point_conversions"] += int(made)
+            points = 2 * int(made)
+        return {"decision": decision, "basis": basis, "cell": cell, "p_go": list(pair), "made": made,
+                "points": points, "type": "kick" if decision == "kick" else None}
+
+    def try_rows(record, scorer_id, *, anchor, at, off_view, def_view, passer=None):
+        """The try's ledger row after a non-offensive or return touchdown (or
+        an offensive touchdown's two-point row): an anchored extra_point row
+        (play_detail.try_row) or a two_point row (play_detail.two_point_row,
+        credit on its own keyed stream). A two-point snap credits one
+        offensive and one defensive slot-lineup snap
+        (participation.try_snap) and joins the next injury draw's exposure;
+        an extra point's unit is credited by the caller from the row's own
+        offense."""
+        opponent = other(scorer_id)
+        if record["decision"] == "kick":
+            return try_row(at, scoring=teams[scorer_id], opponent=opponent, available=off_view, stats=stats,
+                           made=record["made"], seed=seed, event_id=event_id, anchor=anchor, decision=record)
+        passer = passer or usage.game_passer(off_view) or off_view[0]
+        row = two_point_row(at, scoring=teams[scorer_id], opponent=opponent, available=off_view, stats=stats,
+                            made=record["made"], seed=seed, event_id=event_id, anchor=anchor, passer=passer,
+                            decision=record, pass_share=smodel.pass_share, usage_base=ubase)
+        record["type"] = row["try_type"]
+        hazard = {}
+        snaps = participation.try_snap(accumulator, scorer_id, opponent, off_view, def_view, passer,
+                                       usage.protection_front(off_view), row, hazard_out=hazard)
+        participation.credit(stats, scorer_id, snaps[scorer_id], "offense")
+        participation.credit(stats, opponent, snaps[opponent], "defense")
+        for tid in (scorer_id, opponent):
+            add_exposure(tid, hazard[tid])
+        return row
 
     def kick(kicking, receiving, *, free_kick, half, remaining, ot_label="OT", chain=1, after_drive=None):
         """One real kickoff (or safety free kick) record: one randrange.
@@ -895,11 +1133,69 @@ def _resolve_game(
         Kernel 2014.6 batch B8 (under possession_sequencing): the record also
         carries its chain position, the possession it followed, its basis and
         the scoring fields; a forced test branch may make it a kick the
-        kicking club keeps or a return touchdown."""
+        kicking club keeps or a return touchdown.
+
+        Kernel 2014.6 batch B9: in a fixed order on the keyed
+        scoring-kick-v1 substream (event and kick number; no team id; two
+        uniforms always drawn): the onside decision (R9; a kickoff from the
+        35 only, never a free kick), then for an onside kick its recovery (the
+        expected or surprise rate) and a real onside record of the recovering
+        side, else the deep kick's return-touchdown test (R15) and a real
+        return record. The base pool draw is taken first in every case and
+        discarded when a branch replaces it."""
         checkpoint()
         kick_no = len(kickoffs) + 1
         drawn = fpm.free_kick(rng) if free_kick else fpm.kickoff(rng)
         branch = forced_scoring["kicks"].get(kick_no)
+        onside = None
+        b9_touchdown = False
+        if scoring_on and not pro_bowl_game:
+            ks = _stream(scoring.KICK_TAG, seed, event_id, kick_no)
+            u0, u1 = ks.random(), ks.random()
+            margin = stats[kicking]["points"] - stats[receiving]["points"]
+            overtime = half == "OT"
+            opening = chain == 1 and after_drive is None
+            period = None if overtime else (4 if half == 2 and remaining <= RULES.quarter_seconds else
+                                            _period_clock(remaining)[0])
+            if onside_v1 and not free_kick:
+                cell = smodel.onside_cell(seconds_left=remaining, period=period, overtime=overtime, opening=opening,
+                                          diff=margin)
+                pair = smodel.p_onside(cell)
+                state = {"period": "OT" if overtime else period, "diff": margin, "seconds": remaining,
+                         "opening": opening}
+                decision, basis = scoring.decide(policies[kicking]["kickoff"], "kickoff", state, u0, pair)
+                if branch in ("onside_recovered", "onside_lost"):
+                    decision = "onside"
+                if decision is None:
+                    score = {tid: stats[tid]["points"] for tid in stats}
+                    decision = coach_choice("onside", kicking, "kickoff", scoring.KICKOFF_DECISIONS,
+                                            {"drive": len(possessions) + 1, "kick": kick_no, "half": half,
+                                             "period": "OT" if overtime else period,
+                                             "clock": _period_clock(remaining, overtime=ot_label if overtime else False)[1],
+                                             "score": score, "situation": {"margin": margin, "opening_kick": opening}})
+                onside = {"onside": decision == "onside", "cell": cell, "p_onside": list(pair), "basis": basis}
+            if onside and onside["onside"]:
+                label = smodel.recovery_class(seconds_left=remaining, period=period, overtime=overtime, diff=margin)
+                p_recover = smodel.p_recover(label)
+                recovered = u1 < p_recover
+                if branch in ("onside_recovered", "onside_lost"):
+                    recovered = branch == "onside_recovered"
+                side = "kicking" if recovered else "receiving"
+                pool = smodel.spot_records[side]
+                r = pool[ks.randrange(len(pool))]
+                drawn = {"touchback": False, "next_start": int(r["next_start"]), "kick_yards": int(r["kick_yards"]),
+                         "return_yards": int(r["return_yards"]), "enforcement": int(r["enforcement"]),
+                         "outcome": scoring.ONSIDE_RECOVERED if recovered else scoring.ONSIDE_LOST, "kick_spot": 35}
+                onside.update(recovery_class=label, p_recover=[smodel.recovery[label][0], smodel.recovery[label][1]])
+            elif returns_v1 and not free_kick and (u1 < smodel.p_return(smodel.kickoff) or branch == "touchdown"):
+                # R15: a deep kick from the 35 returned for a touchdown, on a
+                # real record (kick yards and the return from the receiving
+                # club's goal line, 35 + kick yards).
+                records = smodel.records["kickoff_return_td"]
+                r = records[ks.randrange(len(records))]
+                drawn = dict(drawn, touchback=False, outcome="returned_touchdown", kick_yards=int(r["kick_yards"]),
+                             return_yards=int(r["return_yards"]), enforcement=0, next_start=None)
+                b9_touchdown = True
         if branch == "retained":
             # The base draw is taken and discarded; a real retained record of
             # the kick kind stands in (the first in the artifact's list).
@@ -911,28 +1207,31 @@ def _resolve_game(
             drawn = {"touchback": False, "next_start": r[K["next_start"]], "kick_yards": r[K["kick_yards"]],
                      "return_yards": r[K["return_yards"]], "enforcement": r[K["enforcement"]],
                      "outcome": "retained", "kick_spot": 20 if free_kick else 35}
-        elif branch == "touchdown":
+        elif branch == "touchdown" and not b9_touchdown:
             # The drawn kick is run back to the goal line (R15 placeholder).
             spot = 20 if free_kick else 35
             drawn = dict(drawn, touchback=False, outcome="returned_touchdown",
                          return_yards=max(0, 100 - spot - int(drawn["kick_yards"] or 0)), next_start=None)
         retained = drawn["outcome"] == "retained"
         touchdown = drawn["outcome"] == "returned_touchdown"
+        onside_kick = drawn["outcome"] in (scoring.ONSIDE_RECOVERED, scoring.ONSIDE_LOST)
         live = live_rosters()
+        kick_quarter = None
         if trackers is not None:
             # Preseason: each club's special-teams block (or depth order).
             kick_quarter = rotation.quarter_of_remaining(remaining, half == "OT")
             live = {tid: trackers[tid].view("special_teams", live[tid], kick_quarter, kick_no)[0]
                     for tid in (kicking, receiving)}
-        if teams[receiving].strength and not drawn["touchback"] and not (retained or touchdown):
+        if teams[receiving].strength and not drawn["touchback"] and not (retained or touchdown or onside_kick):
             # Kernel 2014.4 phase 2: the returner's term (slope 0 in this
-            # candidate); no draw is consumed.
+            # candidate); no draw is consumed. Batch B9: an onside kick has
+            # no returner term.
             returner = usage.club_returner(live[receiving], "kick_return")
             ret_shift, ret_receipt = unit_strength.returner_adjustment(teams[receiving].strength, returner, "KR",
                                                                        params=strength_params)
             drawn = fpm.adjust_return(drawn, ret_shift)
             drawn["returner"] = ret_receipt
-        returned = not drawn["touchback"] and not retained
+        returned = not drawn["touchback"] and not retained and not onside_kick
         stats[kicking]["kickoffs"] += 1
         if returned:
             stats[receiving]["kick_returns"] += 1
@@ -948,20 +1247,42 @@ def _resolve_game(
             record["return_adjust"] = drawn["return_adjust"]
             record["returner_term"] = drawn.get("returner")
         xp_made = None
+        try_record = None
         if sequencing:
             # Batch B8 (append-only): the kick's place in its chain, the
             # possession it followed, the decision basis (a league draw; a
             # policy basis arrives with R9) and the scoring fields.
             record.update(remaining=remaining, chain=chain, after_drive=after_drive, basis="league",
                           touchdown=touchdown, scoring_team=receiving if touchdown else None)
+            if onside is not None:
+                # Batch B9 (R9, append-only): the onside decision, its basis,
+                # the chart cell and its onside/kicks pair, and for an onside
+                # kick the recovery class and its recovered/kicks pair.
+                record["basis"] = onside["basis"]
+                record.update({k: v for k, v in onside.items() if k != "basis"})
+                if onside_kick:
+                    stats[kicking]["onside_kicks"] += 1
+                    stats[kicking]["onside_recoveries"] += int(drawn["outcome"] == scoring.ONSIDE_RECOVERED)
             if touchdown:
                 line = stats[receiving]
                 line["touchdowns"] += 1
+                if scoring_on:
+                    line["special_teams_touchdowns"] += 1
                 walk_off = half == "OT" and ot_status(
                     ot_history(possessions, kickoffs + [record]), game_type) == "end"
-                xp_made = try_after(receiving, line, live[receiving], walk_off=walk_off)
-                record["xp_made"] = xp_made
-                record["points"] = 6 + (1 if xp_made else 0)
+                if try_v1:
+                    if not walk_off:
+                        at = {"drive": record["drive"], "period": _period_clock(remaining)[0],
+                              "game_clock": _period_clock(remaining)[1]}
+                        try_record = resolve_try(receiving, anchor={"kick": kick_no}, at=at, view=live[receiving])
+                        xp_made = try_record["made"] if try_record["decision"] == "kick" else None
+                        record["try"] = try_record
+                    record["xp_made"] = xp_made
+                    record["points"] = 6 + (try_record["points"] if try_record else 0)
+                else:
+                    xp_made = try_after(receiving, line, live[receiving], walk_off=walk_off)
+                    record["xp_made"] = xp_made
+                    record["points"] = 6 + (1 if xp_made else 0)
                 line["points"] += record["points"]
         kickoffs.append(record)
         rows = apply_kickoff_detail(
@@ -975,20 +1296,48 @@ def _resolve_game(
             # The receiving club lost the ball to the kicking club (R12 layer
             # C / R9 own the credit); the row says so, no returner is credited.
             rows[0].update(touchback=False, turnover=True, outcome="retained", next_start=drawn["next_start"])
+        if onside_kick:
+            # Batch B9 (R9): an onside kick; the recovering player is named
+            # evenly from the recovering club's kick unit on a keyed
+            # kickoff-detail substream (a credit-only convention, never
+            # player evidence: attribution group_draw). No return and no
+            # returner term on a kicking-club recovery.
+            recovering = kicking if drawn["outcome"] == scoring.ONSIDE_RECOVERED else receiving
+            rows[0].update(touchback=False, outcome=drawn["outcome"], next_start=drawn["next_start"], onside=True)
+            unit = participation.kick(rows[0], kicking, receiving, live[kicking], live[receiving])[recovering]
+            if unit:
+                pick = _stream(KICKOFF_DETAIL_TAG, seed, event_id, kick_no, "onside")
+                rows[0]["recovered_by"] = unit[pick.randrange(len(unit))]
+                rows[0]["attribution"] = scoring.GROUP_DRAW
         if touchdown:
             rows[0]["touchdown"] = True
             rows[0]["scoring_team"] = receiving
-            if xp_made is not None:
+            if scoring_on and rows[0].get("returner"):
+                line = stats[receiving]["players"].get(rows[0]["returner"])
+                if line is not None:
+                    line["kick_return_touchdowns"] = line.get("kick_return_touchdowns", 0) + 1
+            if try_record is not None:
+                at = {"drive": record["drive"], "period": rows[0]["period"], "game_clock": rows[0]["game_clock"]}
+                quarter = rotation.quarter_of_remaining(remaining, False) if trackers is not None else None
+                off = live[receiving] if try_record["decision"] == "kick" else side_view(receiving, "offense", quarter)
+                rows.append(try_rows(try_record, receiving, anchor={"kick": kick_no}, at=at, off_view=off,
+                                     def_view=side_view(kicking, "defense", quarter)))
+            elif xp_made is not None:
                 rows.append(try_row(rows[0], scoring=teams[receiving], opponent=kicking, available=live[receiving],
                                     stats=stats, made=xp_made, seed=seed, event_id=event_id,
                                     anchor={"kick": kick_no}))
         append_rows(rows)
         # Kernel 2014.4: the kick's units join the next drive's exposure.
+        # Batch B9: each row's units by its own offense (a try row after a
+        # return touchdown is the scorer's unit).
+        views = {kicking: live[kicking], receiving: live[receiving]}
         for row in rows:
-            units = participation.kick(row, kicking, receiving, live[kicking], live[receiving])
-            for team_id, ids in units.items():
-                add_exposure(team_id, participation.credit(stats, team_id, dict.fromkeys(ids, 1),
-                                                           "special_teams"))
+            if row.get("play_type") in participation.KICK_TYPES:
+                kicking_id, receiving_id = (row["offense"], row["defense"]) if scoring_on else (kicking, receiving)
+                units = participation.kick(row, kicking_id, receiving_id, views[kicking_id], views[receiving_id])
+                for team_id, ids in units.items():
+                    add_exposure(team_id, participation.credit(stats, team_id, dict.fromkeys(ids, 1),
+                                                               "special_teams"))
         if trackers is not None:
             for tid in (kicking, receiving):
                 trackers[tid].kicked(kick_quarter)
@@ -1224,6 +1573,23 @@ def _resolve_game(
         s["third_down_attempts"] += chains[2]
         s["third_down_conversions"] += chains[3]
 
+        terminal = category
+        if category == "clock":
+            terminal = QUARTER_REASON[quarter] if quarter else CLOCK_REASON[half]
+        if half == "OT":
+            start_clock, end_clock = window, window - seconds
+        else:
+            base = (4 - quarter) * RULES.quarter_seconds if quarter else (1800 if half == 1 else 0)
+            start_clock, end_clock = base + window, base + window - seconds
+        overtime_label = ot_label if half == "OT" else False
+        # Batch B9 (R8): the try row's own stamp, with its scoring snap at the
+        # drive's own end, never after the clock-expiry leg (the extra-point
+        # row's stamp since kernel 2014.4); the try state reads it.
+        own_used = seconds if drawn.own_seconds is None else max(0, min(int(drawn.own_seconds), seconds))
+        own_end = start_clock - own_used
+        try_period, try_clock = _period_clock(own_end, closing=own_end <= end_clock, overtime=overtime_label)
+        try_at = {"drive": drive_no, "period": try_period, "game_clock": try_clock, "snap_in_drive": plays + 1}
+
         # 8. Terminal scoring, then the transition to the next possession.
         points = 0
         score_kind = None
@@ -1237,13 +1603,39 @@ def _resolve_game(
         non_offensive_score = None
         punt_record = None
         turnover_record = None
+        try_record = None
+        # Batch B9 (R15): (source, return yards) when this possession's
+        # turnover, punt or missed field goal is returned for a touchdown,
+        # and the keyed scoring-return-v1 substream (event and drive; no team
+        # id) its one uniform is drawn on at every such event.
+        defensive_td = None
+        return_stream = None
+        forced_drive = forced_scoring["drives"].get(drive_no)
+
+        def returned(unit, los):
+            nonlocal return_stream
+            return_stream = _stream(scoring.RETURN_TAG, seed, event_id, drive_no)
+            u = return_stream.random()
+            pair = smodel.missed_fg if unit == "missed_field_goal" else smodel.return_rate(unit, los)
+            prob = smodel.p_blocked(pair) if unit == "missed_field_goal" else smodel.p_return(pair)
+            return u < prob
+
         if category == "touchdown":
             points = 6
             s["touchdowns"] += 1
             score_kind, scoring_team = "touchdown", offense
             walk_off = ot_history is not None and ot_status(
                 ot_history + [{"team": offense, "score": "touchdown"}], game_type) == "end"
-            if not walk_off:
+            if not walk_off and try_v1 and not pro_bowl_game:
+                # Batch B9 (R8): go or kick by the club's policy, a live
+                # answer or the league chart; the result on the possession
+                # stream at the extra point's position (one draw, as before).
+                try_record = resolve_try(offense, anchor={"drive": drive_no}, at=try_at, view=off_view, edge=edge,
+                                         result_rng=rng)
+                points += try_record["points"]
+                if try_record["decision"] == "kick":
+                    xp_made = try_record["made"]
+            elif not walk_off:
                 s["extra_point_attempts"] += 1
                 xp_prob = xp_rate
                 if xp_rule is not None and xp_rule.get("distance"):
@@ -1278,6 +1670,11 @@ def _resolve_game(
                 score_kind, scoring_team = "field_goal", offense
             else:
                 next_start, next_kind = fpm.missed_fg_start(fg_distance), "missed_fg"
+                if returns_v1 and (returned("missed_field_goal", end_spot) or forced_drive == "blocked_fg_td"):
+                    # Batch B9 (R15): a blocked kick returned for a touchdown
+                    # (every sourced one was a block), from the line of
+                    # scrimmage to the goal line.
+                    defensive_td = ("blocked_field_goal", 100 - end_spot)
         elif category == "punt":
             s["punts"] += 1
             punt_record = fpm.punt(rng, end_spot)
@@ -1295,7 +1692,28 @@ def _resolve_game(
                                                                            params=strength_params)
                 punt_record = fpm.adjust_return(punt_record, ret_shift)
                 punt_record["returner"] = ret_receipt
-            d["punt_returns"] += int(punt_record["outcome"] == "returned")
+            if returns_v1 and (returned("punt", end_spot) or forced_drive in ("punt_return_td", "blocked_punt_td")):
+                # Batch B9 (R15): a punt returned or blocked for a touchdown,
+                # on a real record of the punt's bin feasible from this line
+                # (the base record is taken and discarded).
+                records = smodel.punt_records(end_spot)
+                if forced_drive in ("punt_return_td", "blocked_punt_td"):
+                    blocked = forced_drive == "blocked_punt_td"
+                    records = [r for r in records if bool(r["blocked"]) == blocked] or [
+                        r for r in smodel.records["punt_return_or_block_td"]
+                        if bool(r["blocked"]) == blocked and (blocked or r["gross"] <= end_spot + 9)]
+                if records:
+                    r = records[return_stream.randrange(len(records))]
+                    blocked = bool(r["blocked"])
+                    gross = 0 if blocked else int(r["gross"])
+                    ry = 100 - end_spot + gross
+                    punt_record = {"los": end_spot, "outcome": PUNT_BLOCKED_TD if blocked else PUNT_RETURN_TD,
+                                   "gross": gross, "return_yards": ry, "enforcement": 0, "next_start": None,
+                                   "touchback": False, "record_los": int(r["los"])}
+                    defensive_td = ("blocked_punt" if blocked else "punt_return", ry)
+                else:
+                    diagnostics["return_td_without_record"] = diagnostics.get("return_td_without_record", 0) + 1
+            d["punt_returns"] += int(punt_record["outcome"] in ("returned", PUNT_RETURN_TD))
             next_start, next_kind = punt_record["next_start"], "punt"
             if punt_record.get("possession") == "kicking":
                 # Batch B8: the kicking club kept the ball (R12 layer C).
@@ -1304,7 +1722,25 @@ def _resolve_game(
             s["turnovers"] += 1
             turnover_record = fpm.turnover(rng, category, end_spot)
             next_start, next_kind = turnover_record["next_start"], category
-            if forced_scoring["drives"].get(drive_no) == "defensive_touchdown":
+            if returns_v1:
+                # Batch B9 (R15): the turnover returned for a touchdown at its
+                # line-of-scrimmage bin's sourced rate (the fumbled snap's line
+                # for a fumble); a pick-six's return covers 100 - (LOS - air
+                # yards) of a real pick-six record of the bin, a fumble's
+                # 100 - the fumble spot.
+                forced = forced_drive == "defensive_touchdown"
+                if category == "interception":
+                    if returned("interception", end_spot) or forced:
+                        records = smodel.interception_records(end_spot)
+                        r = records[return_stream.randrange(len(records))]
+                        defensive_td = ("interception", 100 - (end_spot - int(r["air_yards"])))
+                else:
+                    fumbled_los = end_spot + int(layout["values"][-1])
+                    if returned("fumble_lost", fumbled_los) or forced:
+                        defensive_td = ("fumble", 100 - end_spot)
+                if defensive_td is not None:
+                    turnover_record = dict(turnover_record, return_yards=defensive_td[1], next_start=None)
+            elif forced_drive == "defensive_touchdown":
                 # Batch B8 test branch (R15 placeholder): the defense returns
                 # the turnover for a touchdown and kicks off to this offense.
                 score_kind, scoring_team = "touchdown", defense.team_id
@@ -1325,18 +1761,39 @@ def _resolve_game(
             score_kind, scoring_team = "safety", defense.team_id
         elif category == "clock":
             s["clock_expired_drives"] += 1
+        if defensive_td is not None:
+            # Batch B9 (R15): the defense (or the punt or field-goal return
+            # unit) scores. The possession keeps its category and its
+            # counters; the score is the drive's non_offensive_score, its try
+            # R8's (the scorer's policy and margin), and no next start is
+            # published: the scorer kicks off when time remains.
+            source, ry = defensive_td
+            score_kind, scoring_team = "touchdown", defense.team_id
+            d["touchdowns"] += 1
+            d[scoring.SOURCES[source]] += 1
+            walk_off = ot_history is not None and ot_status(
+                ot_history + [{"team": offense, "score": "touchdown"}], game_type) == "end"
+            non_offensive_score = {"kind": "touchdown", "team": defense.team_id, "source": source,
+                                   "return_yards": ry, "points": 6, "xp_made": None}
+            if not walk_off and try_v1 and not pro_bowl_game:
+                try_record = resolve_try(defense.team_id, anchor={"drive": drive_no}, at=try_at, view=def_view)
+                non_offensive_score["try"] = try_record
+                non_offensive_score["points"] += try_record["points"]
+                if try_record["decision"] == "kick":
+                    non_offensive_score["xp_made"] = try_record["made"]
+            elif not walk_off:
+                # The Pro Bowl (no try decision): the kick, on the keyed
+                # substream's result uniform (2014.5 had no draw here).
+                stream = _stream(scoring.TRY_TAG, seed, event_id, "drive", drive_no)
+                stream.random()
+                d_xp = try_after(defense.team_id, d, def_view, walk_off=False, u=stream.random())
+                non_offensive_score["xp_made"] = d_xp
+                non_offensive_score["points"] += int(bool(d_xp))
+            d["points"] += non_offensive_score["points"]
+            next_start, next_kind = None, None
         s["drives"] += 1
         s["points"] += points
         s["time_of_possession"] += seconds
-
-        terminal = category
-        if category == "clock":
-            terminal = QUARTER_REASON[quarter] if quarter else CLOCK_REASON[half]
-        if half == "OT":
-            start_clock, end_clock = window, window - seconds
-        else:
-            base = (4 - quarter) * RULES.quarter_seconds if quarter else (1800 if half == 1 else 0)
-            start_clock, end_clock = base + window, base + window - seconds
 
         fourth_down = None
         if category in field_position.FOURTH_DOWN_CATEGORIES:
@@ -1413,7 +1870,55 @@ def _resolve_game(
             kernel_version=profile.kernel_version,
         )
         chain_walk.annotate(drive_ledger, layout["walk"], fourth_down)
-        if non_offensive_score is not None and non_offensive_score.get("xp_made") is not None:
+        if try_record is not None and score_kind == "touchdown" and scoring_team == offense:
+            # Batch B9 (R8): the offensive try row, anchored to this drive and
+            # naming its scorer; a two-point row sits right after the
+            # scoring snap, where the extra-point row would.
+            anchor = {"drive": drive_no}
+            if try_record["decision"] == "kick":
+                xp_row = next(r for r in drive_ledger if r.get("play_type") == "extra_point")
+                xp_row.update(try_fields(try_record), anchor=anchor, scoring_team=offense)
+            else:
+                # (Not `row`: that name is the drawn drive tuple below.)
+                try_line = try_rows(try_record, offense, anchor=anchor, at=try_at, off_view=off_view,
+                                    def_view=def_view, passer=passer)
+                drive_ledger.insert(seat_try(drive_ledger, try_line, overtime_label), try_line)
+        if defensive_td is not None:
+            # Batch B9 (R15): the scoring row. A turnover row carries
+            # touchdown and turnover both, the scorer the defense (the
+            # interceptor or the recoverer already named); a punt return's
+            # row its returner; a blocked punt's or field goal's row the
+            # player credited by an even draw from the defense's unit on that
+            # row (a labelled convention, attribution group_draw, never
+            # player evidence).
+            source, ry = defensive_td
+            if source in ("interception", "fumble"):
+                scored = [r for r in drive_ledger if r.get("play_type") in ("pass", "run")][-1]
+                credit = scored.get("tackler")
+            else:
+                scored = next(r for r in drive_ledger if r.get("play_type") in ("punt", "field_goal"))
+                credit = scored.get("returner") if source == "punt_return" else None
+                if source != "punt_return":
+                    unit = participation.kick(scored, offense, defense.team_id, off_view, def_view)[defense.team_id]
+                    credit = unit[return_stream.randrange(len(unit))] if unit else None
+                    scored.update(blocked=True, scorer=credit, attribution=scoring.GROUP_DRAW)
+            scored.update(touchdown=True, scoring_team=defense.team_id, return_yards=ry)
+            if credit is not None:
+                line = d["players"][credit]
+                field = scoring.PLAYER_TD_FIELD[source]
+                line[field] = line.get(field, 0) + 1
+            if try_record is not None:
+                quarter_now = period if trackers is not None else None
+                scorer_view = def_view if try_record["decision"] == "kick" else side_view(defense.team_id, "offense",
+                                                                                          quarter_now)
+                drive_ledger.append(try_rows(try_record, defense.team_id, anchor={"drive": drive_no}, at=try_at,
+                                             off_view=scorer_view,
+                                             def_view=side_view(offense, "defense", quarter_now)))
+            elif non_offensive_score.get("xp_made") is not None:
+                drive_ledger.append(try_row(try_at, scoring=defense, opponent=offense, available=def_view, stats=stats,
+                                            made=non_offensive_score["xp_made"], seed=seed, event_id=event_id,
+                                            anchor={"drive": drive_no}))
+        elif non_offensive_score is not None and non_offensive_score.get("xp_made") is not None:
             # Batch B8: the defense's try, anchored to this possession, after
             # the drive's own rows (the terminal snap is the turnover).
             period, game_clock = _period_clock(end_clock, closing=True, overtime=ot_label if half == "OT" else False)
@@ -1512,10 +2017,13 @@ def _resolve_game(
         if quarter:
             record["quarter"] = quarter
         if non_offensive_score is not None:
-            # Batch B8 (append-only; the kernel writes it only on the forced
-            # test branch until R15, batch B9): the score the defense made
-            # during this possession (runtime.rules.possession_score).
+            # Batch B8 (append-only): the score the defense made during this
+            # possession (runtime.rules.possession_score); batch B9 (R15)
+            # writes it with its source, return yards and try.
             record["non_offensive_score"] = non_offensive_score
+        if try_record is not None and scoring_team == offense:
+            # Batch B9 (R8, append-only): the offensive touchdown's try.
+            record["try"] = try_record
         possessions.append(record)
         # Kernel 2014.4: record this drive's participants, then draw injury
         # onsets for both clubs at the end of the drive (E2 step 1).
@@ -1529,9 +2037,13 @@ def _resolve_game(
         for team_id, side in ((offense, "offense"), (defense.team_id, "defense")):
             participation.credit(stats, team_id, scrimmage[team_id], side)
             add_exposure(team_id, hazard[team_id])
+        views = {offense: off_view, defense.team_id: def_view}
         for row in drive_ledger:
             if row.get("play_type") in participation.KICK_TYPES:
-                units = participation.kick(row, offense, defense.team_id, off_view, def_view)
+                # Batch B9: a row's units by its own offense (the defense's
+                # try after its touchdown is its unit; unchanged otherwise).
+                units = participation.kick(row, row["offense"], row["defense"], views[row["offense"]],
+                                           views[row["defense"]])
                 for team_id, ids in units.items():
                     add_exposure(team_id, participation.credit(stats, team_id, dict.fromkeys(ids, 1),
                                                                "special_teams"))
@@ -1543,7 +2055,6 @@ def _resolve_game(
             scrimmage_snaps = sum(1 for r in drive_ledger if r.get("play_type") in participation.SCRIMMAGE_TYPES)
             trackers[offense].played("offense", off_block, period, scrimmage_snaps)
             trackers[defense.team_id].played("defense", def_block, period, scrimmage_snaps)
-        overtime_label = ot_label if half == "OT" else False
         end_of_drive(drive_no, _period_clock(end_clock, closing=True, overtime=overtime_label), half)
         # Batch B8: the possession reports what ended it (the score, with its
         # scorer) and, when it did not score, who possesses next (the
@@ -1574,7 +2085,13 @@ def _resolve_game(
                     return None, None, None, kicked, True
                 kicking, receiving, free_kick = receiving, kicking, False
                 continue
-            retained = kicked["outcome"] == "retained"
+            retained = kicked["outcome"] in KEPT_KICK_OUTCOMES
+            if retained and half == "OT" and ot_status(ot_history(possessions, kickoffs), game_type) == "end":
+                # Batch B9 (R9, library rule R4): a kick the kicking club keeps
+                # before the receiving club's first overtime possession gives
+                # the receiver its opportunity; checked at once (after an
+                # opening field goal, the recovery ends the game).
+                return None, None, None, kicked, True
             return kicked["next_start"], _start_kind(kicked), kicking if retained else receiving, kicked, False
 
     def kicked_after(record, score, window, half, ot_label="OT"):
@@ -1589,7 +2106,7 @@ def _resolve_game(
                                    "next_start": kicked["next_start"], "touchback": kicked["touchback"],
                                    "enforcement": kicked["enforcement"]}
         record["next_start"] = kicked["next_start"]
-        return spot, start_kind, offense, kicked["outcome"] == "retained", ended
+        return spot, start_kind, offense, kicked["outcome"] in KEPT_KICK_OUTCOMES, ended
 
     def placed(record, score):
         """Pro Bowl: the next possession starts at the 25 (no kickoff), taken
@@ -1733,6 +2250,14 @@ def _resolve_game(
         # possessions and kicks (runtime.play_detail.scoring_events); the
         # audit rebuilds it again and compares, never trusting the stored list.
         result["scoring_events"] = scoring_events(result)
+    blocks = {team.team_id: {kind: json.loads(json.dumps(getattr(team, field)))
+                             for field, kind in (("try_policy", "two_point"), ("kickoff_policy", "kickoff"))
+                             if getattr(team, field, None) is not None} for team in (home, away)}
+    if any(blocks.values()):
+        # Batch B9 (append-only): each club's decision blocks as frozen on its
+        # sheet, id and source text included; the outcome packet and every
+        # draw read only their canonical form (scoring_decisions.canonical_policy).
+        result["decision_policies"] = {tid: b for tid, b in blocks.items() if b}
     return result
 
 
@@ -1756,8 +2281,9 @@ def validate_result(result, base=None):
         players = s["players"]
 
         if current:
+            # Kernel 2014.6 batch B9: + 2 per two-point conversion.
             expected = (
-                6 * s["touchdowns"] + s["extra_points_made"]
+                6 * s["touchdowns"] + s["extra_points_made"] + 2 * s.get("two_point_conversions", 0)
                 + 3 * s["field_goals"] + 2 * s["safeties"]
             )
         else:
@@ -1869,10 +2395,33 @@ def validate_result(result, base=None):
             != s["touchdowns"]
         ):
             errors.append("touchdown attribution mismatch")
+        if "two_point_attempts" in s:
+            # Kernel 2014.6 batch B9: every non-offensive and return
+            # touchdown names its player (the blocked-kick credit by the
+            # labelled even draw); two-point credits reconcile with the club's
+            # conversions; every touchdown outside overtime has exactly one
+            # try, an extra point or a two-point try.
+            credited = sum(p.get(field, 0) for p in players.values() for field in set(scoring.PLAYER_TD_FIELD.values()))
+            if credited != non_offensive:
+                errors.append("return touchdown attribution mismatch")
+            passing = sum(p.get("passing_two_point_conversions", 0) for p in players.values())
+            if (passing != sum(p.get("receiving_two_point_conversions", 0) for p in players.values())
+                    or passing + sum(p.get("rushing_two_point_conversions", 0) for p in players.values())
+                    != s["two_point_conversions"]):
+                errors.append("two-point conversion attribution mismatch")
+            if s["two_point_conversions"] > s["two_point_attempts"]:
+                errors.append("two-point conversions exceed attempts")
+            tries_due = sum(1 for e in scoring_events(result)
+                            if e["kind"] == "touchdown" and e["team"] == team and e["half"] != "OT")
+            if s["extra_point_attempts"] + s["two_point_attempts"] != tries_due:
+                errors.append("tries differ from the touchdowns outside overtime")
+            if (s.get("defensive_touchdowns", 0) + s.get("special_teams_touchdowns", 0)) != non_offensive:
+                errors.append("non-offensive touchdown counters differ from the scores")
         if current:
             if s["field_goals"] > s["field_goal_attempts"]:
                 errors.append("field goals made exceed attempts")
-            if not s["extra_points_made"] <= s["extra_point_attempts"] <= s["touchdowns"]:
+            if not s["extra_points_made"] <= s["extra_point_attempts"] <= s["touchdowns"] - s.get(
+                    "two_point_attempts", 0):
                 errors.append("extra-point counts inconsistent")
             if sum(p["field_goals_made"] for p in players.values()) != s["field_goals"]:
                 errors.append("field-goal made attribution mismatch")

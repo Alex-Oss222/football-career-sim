@@ -24,7 +24,7 @@ import re
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-from . import call_families, depth_library, player_bios, rails, strength
+from . import call_families, depth_library, player_bios, rails, scoring_decisions, strength
 from .usage import group, lineup_errors
 from .seasons import SeasonPaths, require_receipt_season
 
@@ -331,7 +331,13 @@ def roster_available(availability, game_day, season=2013):
     return game_day >= back
 
 
-def jacksonville_input(receipts, game_day, anchors, call_sheet, season=2013):
+def jacksonville_input(receipts, game_day, anchors, call_sheet, season=2013, decisions=None, decision_kinds=()):
+    """Jacksonville's TeamInput data for one game. Kernel 2014.6 batch B9
+    (R8, R9; U6): ``decisions`` is the frozen sheet's decisions object and
+    ``decision_kinds`` the kinds the resolving kernel decides; each block
+    becomes try_policy or kickoff_policy, and a kind with no block fails
+    closed (runtime.scoring_decisions.input_policies)."""
+    policies = scoring_decisions.input_policies(decisions, tuple(decision_kinds))
     undeclared = call_families.sheet_errors(call_sheet)
     if undeclared:
         # Kernel 2013.7 fails closed on a call no label rule covers.
@@ -370,6 +376,7 @@ def jacksonville_input(receipts, game_day, anchors, call_sheet, season=2013):
         "team_id": PROTAGONIST,
         "active_players": active,
         **anchors, "roster": roster, "offensive_call_sheet": list(call_sheet),
+        **policies,
     }
 
 
@@ -446,11 +453,18 @@ def strength_identities(roster, season, club=None, protagonist=False, registry=N
     return out
 
 
-def build_package(week, receipts, call_sheet, anchors, season=2013, strength_model=None):
+def build_package(week, receipts, call_sheet, anchors, season=2013, strength_model=None, decisions=None,
+                  decision_kinds=None):
     """The weekly package. `strength_model` is the strength record model for
     every club (the installed kernel's when None; kernel 2014.6 batch B7:
     under player-state-v1 every roster row needs its gsis id and the league
-    year must be bound, else the build blocks)."""
+    year must be bound, else the build blocks). `decisions` is the frozen
+    sheet's decisions object and `decision_kinds` the kinds the resolving
+    kernel decides (the installed kernel's when None; batch B9, U6: without
+    a block for each, Jacksonville's input fails closed; the closed 2013
+    season decides none)."""
+    if decision_kinds is None:
+        decision_kinds = scoring_decisions.live_kinds() if season != 2013 else ()
     games = []
     coverage = {}
     if season != 2013:
@@ -471,7 +485,8 @@ def build_package(week, receipts, call_sheet, anchors, season=2013, strength_mod
         def unit(team):
             club = clubs.get((rails.game_key(game), team)) if slate else None
             if team == PROTAGONIST:
-                data = jacksonville_input(receipts, game_day, anchors, call_sheet, season)
+                data = jacksonville_input(receipts, game_day, anchors, call_sheet, season, decisions=decisions,
+                                          decision_kinds=decision_kinds)
             else:
                 data = background_input(team, week, receipts, game_day, anchors, season, club=club)
             if season != 2013:

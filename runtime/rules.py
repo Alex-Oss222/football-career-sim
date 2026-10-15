@@ -80,6 +80,18 @@ def extra_point_rule(game_type="regular", game_date=None):
     return {"snap_yard_line": RULES.pat_snap_yard_line, "distance": None,
             "model": "extra_point_rate", "basis": "ordinary try"}
 
+def try_rule(game_type="regular", game_date=None):
+    """Kernel 2014.6 batch B9: the try rule of a game, a seam for the 2015
+    change (the extra point snapped from the 15 and the defense able to
+    score on a try). Through 2014 the kick is snapped from the 2 (the dated
+    2014 preseason Weeks 1-2 experiment aside, ``extra_point_rule``), a
+    two-point try from the 2, and the defense cannot score on a try (the
+    defensive two-point return began in 2015, outside the data window)."""
+    return {"extra_point": extra_point_rule(game_type, game_date),
+            "two_point_snap_yard_line": RULES.two_point_snap_yard_line,
+            "defense_may_score": False}
+
+
 DIVISION_TIEBREAKERS=("head_to_head","division_record","common_games","conference_record",
     "strength_of_victory","strength_of_schedule","conference_combined_rank",
     "league_combined_rank","net_common_points","net_all_points","net_touchdowns","coin_toss")
@@ -141,7 +153,10 @@ def ot_status(history, game_type="regular", expired=False):
 KICK_CHAIN_BOUND = 8
 # How a possession began after a kick the kicking club kept (a recovery of
 # the receiving club's fumble or muff, R12 layer C; an onside recovery, R9).
-RETAINED_START_KINDS = ("kickoff_retained", "free_kick_retained", "punt_retained")
+RETAINED_START_KINDS = ("kickoff_retained", "free_kick_retained", "punt_retained", "onside_recovery")
+# Kick record outcomes in which the kicking club keeps the ball (batch B8's
+# retained records; batch B9's onside recovery, R9).
+KEPT_KICK_OUTCOMES = ("retained", "onside_recovered")
 SCORE_POINTS = {"touchdown": 6, "field_goal": 3, "safety": 2}
 
 
@@ -162,7 +177,12 @@ def possession_score(p, opponent=None):
                 int(non_offensive.get("points", SCORE_POINTS[non_offensive["kind"]])))
     category = p.get("category")
     if category == "touchdown":
-        return ("touchdown", p.get("team"), 6 + (1 if p.get("xp_made") else 0))
+        # Kernel 2014.6 batch B9: a two-point try's points are in the
+        # possession's points (6 + try); older records carry 6 + the kick.
+        points = p.get("points")
+        if points is None:
+            points = 6 + (1 if p.get("xp_made") else 0)
+        return ("touchdown", p.get("team"), int(points))
     if category == "field_goal_attempt" and p.get("fg_made"):
         return ("field_goal", p.get("team"), 3)
     if category == "safety":
@@ -239,7 +259,7 @@ def ot_history(possessions, kicks=()):
             score = kick_score(kick)
             if score is not None:
                 history.append({"team": score[1], "score": "touchdown", "kick": kick.get("kick_no")})
-            elif kick.get("outcome") == "retained" and not possessed(kick.get("receiving")):
+            elif kick.get("outcome") in KEPT_KICK_OUTCOMES and not possessed(kick.get("receiving")):
                 history.append({"team": kick.get("receiving"), "score": None, "kick": kick.get("kick_no"),
                                 "opportunity": "kicking-club recovery (R4)"})
 

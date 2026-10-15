@@ -5,7 +5,8 @@ import inspect
 import re
 
 from . import KERNEL_VERSION
-from .kernel import TeamInput, resolve_game, validate_result
+from .kernel import TeamInput, outcome_policies, resolve_game, validate_result
+from . import scoring_decisions
 from .packets import canonical
 from .private_client import Client
 from .player_evidence import normalize_players, serialize_roster
@@ -27,7 +28,9 @@ def _team_packet(team):
     # Availability and rotation are football inputs; protagonist labels are not.
     data["roster"] = serialize_roster(normalize_players(team))
     data["offensive_call_sheet"] = canonical_call_sheet(team)
-    return data
+    # Kernel 2014.6 batch B9: the decision policies through the same stripper
+    # as the kernel's packet (absent when None).
+    return outcome_policies(data)
 
 
 def build_game_packet(event_id, snapshot, home, away, *, venue="home", weather="normal",
@@ -87,6 +90,18 @@ def build_game_packet(event_id, snapshot, home, away, *, venue="home", weather="
         rotation_faults = plan_errors(team, normalize_players(team), game_type)
         if rotation_faults:
             raise ValueError(f"{team.team_id} rotation plan: " + "; ".join(rotation_faults))
+        # Kernel 2014.6 batch B9 (R8, R9): a malformed decision block, or one
+        # in a preseason or Pro Bowl game, fails closed before the private
+        # event is journaled.
+        for field, kind in (("try_policy", "two_point"), ("kickoff_policy", "kickoff")):
+            block = getattr(team, field, None)
+            if block is None:
+                continue
+            if game_type in ("preseason", "pro_bowl"):
+                raise ValueError(f"{team.team_id} carries a {kind} decision block in a {game_type} game")
+            faults = scoring_decisions.policy_errors(block, kind)
+            if faults:
+                raise ValueError(f"{team.team_id} decision block: " + "; ".join(faults))
     packet = {
         "procedure": KERNEL_VERSION, "event_id": event_id, "snapshot": snapshot,
         "home": _team_packet(home), "away": _team_packet(away), "venue": venue,

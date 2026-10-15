@@ -896,7 +896,11 @@ def _audit_field_position_v3(receipts, base):
              [d["start_spot"] for d in kick_starts if d["start_kind"] == "kickoff"],
              centres["kickoff_nontouchback_start"])
     # Realized punt net by line of scrimmage.
-    punts = [d for d in spotted if d["category"] == "punt" and d.get("next_start") is not None]
+    # Batch B9 (R15): a punt returned or blocked for a touchdown hands over
+    # nothing (its possession's next start is the scorer's kickoff), so it
+    # has no realized net; the touchdown shares grade it.
+    punts = [d for d in spotted if d["category"] == "punt" and d.get("next_start") is not None
+             and not d.get("non_offensive_score")]
     for key in sorted(k for k in centres if k.startswith("punt_net:")):
         label = key.split(":", 1)[1]
         low, high = _label_bounds(label)
@@ -912,6 +916,18 @@ def _audit_field_position_v3(receipts, base):
                 kr_yards += line.get("kick_return_yards", 0) or 0
                 pr += line.get("punt_returns", 0) or 0
                 pr_yards += line.get("punt_return_yards", 0) or 0
+        # Batch B9 (R15): the drawn pools hold no return touchdown, so a
+        # return touchdown (drawn from its own real records and graded by the
+        # touchdown-share rows) leaves the mean, as it leaves the pool.
+        for kick in _kicks(receipt):
+            if kick.get("outcome") == "returned_touchdown":
+                kr -= 1
+                kr_yards -= int(kick.get("return_yards") or 0)
+        for d in _drives(receipt):
+            punt = d.get("punt") or {}
+            if punt.get("outcome") == "return_td":
+                pr -= 1
+                pr_yards -= int(punt.get("return_yards") or 0)
     for label, c, made, n in (("mean kickoff return yards (non-touchback kickoffs)", return_centres(base)["kickoff"],
                                kr_yards, kr),
                               ("mean punt return yards (returned punts)", return_centres(base)["punt"], pr_yards, pr)):
@@ -1109,6 +1125,123 @@ def audit_injuries(receipts, cohort=None):
         else:
             status = "WITHIN" if low <= value <= high else "OUTSIDE"
         rows.append((label, value, (low + high) / 2, (high - low) / 2, status))
+    return team_games, rows
+
+
+SCORING_FROM = (2014, 6)
+# The non-offensive touchdown sources of each unit's band row (R15).
+_RETURN_ROWS = (
+    ("interception-return touchdown share of interceptions", "interception", ("interception",), "interception"),
+    ("fumble-return touchdown share of lost fumbles", "fumble_lost", ("fumble",), "fumble_lost"),
+    ("punt return or blocked-punt touchdown share of punts", "punt", ("punt_return", "blocked_punt"), "punt"),
+)
+
+
+def _kicks(receipt):
+    from .play_detail import kicks_of
+    return kicks_of(receipt)
+
+
+def _tries(receipt):
+    """Every try record of a receipt (offensive touchdowns', non-offensive
+    touchdowns' and return touchdowns'), from the drives and kicks summaries."""
+    out = []
+    for d in _drives(receipt):
+        if d.get("try"):
+            out.append(d["try"])
+        non_offensive = d.get("non_offensive_score") or {}
+        if non_offensive.get("try"):
+            out.append(non_offensive["try"])
+    out += [k["try"] for k in _kicks(receipt) if k.get("try")]
+    return out
+
+
+def audit_scoring(receipts, cohort=None):
+    """Kernel 2014.6 batch B9 (R8, R9, R15): the scoring-decision rows for a
+    2014.6-or-later cohort, (team-games, [(metric, observed, centre,
+    tolerance, status)]). Every centre is read from the cohort base's
+    scoring artifact (library/data/2010_2014w4_scoring_decisions.json; the
+    extra point from its drive-model reference), never typed: rates use
+    3*sqrt(p(1-p)/n) and counts 3*sqrt(c/n); a rate row reads INSUFFICIENT
+    SAMPLE below 30 events (so the Q4 down-2 and late onside rows grade on
+    the 1,000-game block). Earlier cohorts have no row (0, [])."""
+    if cohort is None or not kernel_at_least(cohort, SCORING_FROM):
+        return 0, []
+    base = cohort_base(receipts, cohort)
+    art = base.scoring().data
+    team_games = sum(len(r.get("team_stats", {})) for r in receipts)
+    rows, add = _grader(team_games >= MIN_TEAM_GAMES)
+
+    def pooled(pair):
+        return pair[0] / pair[1]
+
+    def rate_row(metric, made, n, centre, *, graded=True):
+        observed, tolerance = _rate(made, n, centre)
+        add(metric, observed, centre, tolerance, events=n, graded=graded)
+
+    def count_row(metric, total, centre, *, graded=True):
+        observed = total / team_games if team_games else None
+        tolerance = 3 * math.sqrt(centre / team_games) if team_games and centre else None
+        add(metric, observed, centre, tolerance, graded=graded)
+
+    teams = [s for r in receipts for s in r.get("team_stats", {}).values()]
+
+    def total(field):
+        return sum(s.get(field, 0) for s in teams)
+
+    # R8: the try decision, the two-point result and the extra point.
+    tries = art["try"]["tries_by_season"].values()
+    go_centre = sum(k for k, _ in tries) / sum(n for _, n in tries)
+    attempts, kicks_tried = total("two_point_attempts"), total("extra_point_attempts")
+    rate_row("two-point attempt share of tries", attempts, attempts + kicks_tried, go_centre)
+    rate_row("two-point conversion rate", total("two_point_conversions"), attempts,
+             pooled(art["two_point_success"]["pooled"]))
+    rate_row("extra-point rate", total("extra_points_made"), kicks_tried, pooled(art["extra_point_reference"]["value"]))
+    cell_map = art["try"]["decision_cell_map"]
+    down_two = cell_map["Q4 120-0|-2"]
+    chart = art["try"]["decision_chart"][down_two]
+    late = [t for r in receipts for t in _tries(r) if t.get("cell") == down_two]
+    rate_row("fourth-quarter go share of tries down 2 after the touchdown", sum(t["decision"] == "go" for t in late),
+             len(late), chart["go"] / chart["tries"])
+    # R9: onside kicks, their late share and the recoveries.
+    onside_chart = art["onside"]["decision_chart"]
+    onside_total = sum(k for k, _ in art["onside"]["onside_share_by_season"].values())
+    count_row("onside kicks per team-game", total("onside_kicks"), onside_total / sum(art["team_games"].values()))
+    late_cells = ("Q4 120-0|trail 1-3", "Q4 120-0|trail 4-8")
+    late_pair = [sum(onside_chart[c][i] for c in late_cells) for i in (0, 1)]
+    kicks = [k for r in receipts for k in _kicks(r)]
+    late_kicks = [k for k in kicks if k.get("cell") in late_cells]
+    rate_row("onside share of kicks trailing by 1-8 inside 2:00", sum(bool(k.get("onside")) for k in late_kicks),
+             len(late_kicks), late_pair[0] / late_pair[1])
+    for label, graded in (("expected", True), ("surprise", False)):
+        onside = [k for k in kicks if k.get("onside") and k.get("recovery_class") == label]
+        rate_row("%s onside recovery rate%s" % (label, "" if graded else " (informational)"),
+                 sum(k.get("outcome") == "onside_recovered" for k in onside), len(onside),
+                 pooled(art["onside"]["recovery"][label]), graded=graded)
+    # R15: each unit's return-touchdown share, conditioned on the drawn category.
+    drives = [d for r in receipts for d in _drives(r)]
+    non_offensive = art["non_offensive"]
+
+    def scored(d, sources):
+        return (d.get("non_offensive_score") or {}).get("source") in sources
+
+    for metric, category, sources, unit in _RETURN_ROWS:
+        units = [d for d in drives if d.get("category") == category]
+        rate_row(metric, sum(scored(d, sources) for d in units), len(units), pooled(non_offensive[unit]["pooled"]))
+    deep = [k for k in kicks if not k.get("free_kick") and k.get("onside") is not None and not k.get("onside")]
+    rate_row("kickoff-return touchdown share of deep kickoffs",
+             sum(k.get("outcome") == "returned_touchdown" for k in deep), len(deep),
+             pooled(non_offensive["kickoff"]["pooled"]))
+    missed = [d for d in drives if d.get("category") == "field_goal_attempt" and not d.get("fg_made")]
+    rate_row("blocked field-goal touchdowns per missed field goal (informational)",
+             sum(scored(d, ("blocked_field_goal",)) for d in missed), len(missed),
+             pooled(non_offensive["missed_field_goal"]["pooled"]), graded=False)
+    count_row("non-offensive touchdowns per team-game (informational)",
+              total("defensive_touchdowns") + total("special_teams_touchdowns"),
+              pooled(non_offensive["non_offensive_touchdowns_per_team_game"]["pooled"]), graded=False)
+    # Points: measured, never forecast (the graded points row is the volume table's).
+    rows.append(("points per team-game (measured; no forecast)", total("points") / team_games if team_games else None,
+                 None, None, "MEASURED" if team_games else "INSUFFICIENT SAMPLE"))
     return team_games, rows
 
 

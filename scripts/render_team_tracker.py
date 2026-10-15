@@ -29,6 +29,21 @@ ROUNDS = {18: "Wild Card", 19: "Divisional", 20: "Conference Championship", 21: 
 COACH = {"Jacksonville Jaguars": "Alex Stone"}
 NOT_RECORDED = ("The receipts do not record the longest completion, the longest field goal, "
                 "or return and defensive touchdowns, so those template columns are left out rather than guessed.")
+# Kernel 2014.6 batch B9: receipts from 2014.6 record two-point conversions
+# and return and defensive touchdowns; earlier receipts do not.
+NOT_RECORDED_2014_6 = ("The receipts do not record the longest completion or the longest field goal, so those "
+                       "template columns are left out rather than guessed. Two-point conversions and return and "
+                       "defensive touchdowns are recorded from kernel 2014.6 games only.")
+B9_PLAYER_FIELDS = (("2PT pass", "passing_two_point_conversions"), ("2PT rec", "receiving_two_point_conversions"),
+                    ("2PT rush", "rushing_two_point_conversions"), ("INT TD", "interception_return_touchdowns"),
+                    ("FUM TD", "fumble_return_touchdowns"), ("PR TD", "punt_return_touchdowns"),
+                    ("KR TD", "kick_return_touchdowns"), ("BLK TD", "blocked_kick_touchdowns"))
+
+
+def not_recorded(games):
+    """The columns note: the 2014.6 wording once any game's receipt carries
+    the batch B9 counters, else the original sentence (closed views keep it)."""
+    return NOT_RECORDED_2014_6 if any("two_point_attempts" in x["team"] for x in games) else NOT_RECORDED
 
 
 def tracker_dir(root, year):
@@ -146,6 +161,12 @@ def sections(players, with_games):
     out += ["### Returns", "", table(["Player"] + gh + ["KR", "KR Yds", "KR Avg", "PR", "PR Yds", "PR Avg"],
         [[n] + G(l) + [g(l, "kick_returns"), g(l, "kick_return_yards"), avg(g(l, "kick_return_yards"), g(l, "kick_returns")),
           g(l, "punt_returns"), g(l, "punt_return_yards"), avg(g(l, "punt_return_yards"), g(l, "punt_returns"))] for n, l in returners])]
+    scorers = by([field for _, field in B9_PLAYER_FIELDS])
+    if scorers:
+        # Kernel 2014.6 batch B9: shown only when a 2014.6 receipt credits one
+        # (a blocked-kick touchdown's credit is a labelled even draw).
+        out += ["### Two-point conversions and return touchdowns", "", table(["Player"] + gh + [h for h, _ in B9_PLAYER_FIELDS],
+            [[n] + G(l) + [g(l, f) for _, f in B9_PLAYER_FIELDS] for n, l in scorers])]
     return out
 
 
@@ -190,7 +211,7 @@ def game_page(team, year, game, regular_before):
         lines += ["", f"## Season totals through {label(game)}", "",
                   f"Record through {label(game)}: {record(through)}. Rate stats are recalculated from the totals, never averaged across games.", ""]
         lines += [s.replace("### ", "#### ") for s in sections(totals(through), with_games=True)]
-    lines.append(NOT_RECORDED)
+    lines.append(not_recorded([game]))
     return "\n".join(lines) + "\n"
 
 
@@ -265,7 +286,8 @@ def readme(root, year, team, games):
         lines += [s.replace("### ", "#### ") for s in sections(totals(post), with_games=True)]
     else:
         lines += ["No postseason game.", ""]
-    lines += ["## Awards", "", table(["Type", "When", "Award", "Player", "Pos"], award_rows(root, year, team)), NOT_RECORDED]
+    lines += ["## Awards", "", table(["Type", "When", "Award", "Player", "Pos"], award_rows(root, year, team)),
+              not_recorded(games)]
     return "\n".join(lines) + "\n"
 
 

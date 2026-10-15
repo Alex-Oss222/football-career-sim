@@ -22,7 +22,9 @@ touchdown and field-goal drives over its drives, kneel-only drives
 and by passing: ledger run/pass rows flagged first_down (scrambles count as
 runs); by penalty: drives.chains[1] (the walked penalty first downs). Third
 down: team_stats. Fourth down: ledger run/pass rows on down 4, converted when
-first_down or touchdown. Total net yards = rushing yards + gross passing yards -
+first_down or touchdown (kernel 2014.6 batch B9: the touchdown of a turnover
+row returned for the defense's score, which carries touchdown and turnover
+both, is never the offense's conversion). Total net yards = rushing yards + gross passing yards -
 sack yards (team_stats and player sack_yards). Plays = rushing attempts +
 pass attempts + sacks. Success rate: ledger rows with down and ydstogo, kneels
 and spikes excluded, a turnover never successful. Explosive plays: ledger runs
@@ -32,12 +34,14 @@ counts: player counters. Kickoffs and touchbacks: ledger kickoff/free-kick rows.
 Net punting average: ledger punt rows, gross minus return yards minus 20 per
 touchback. Penalties: team_stats. Touchdowns: team_stats; the
 rushing-passing-returns split: ledger touchdown rows. Extra points and field
-goals: team_stats. Safeties: team_stats. Red zone: drives with a scrimmage snap
+goals: team_stats. Two-point conversions (kernel 2014.6 batch B9): team_stats,
+and the scoring summary reads each touchdown's try from its two_point or
+extra_point row. Safeties: team_stats. Red zone: drives with a scrimmage snap
 at the 20 or closer; goal to go: drives with a goal_to_go snap; both over the
 drives that ended in a touchdown.
 
 Omitted team stats rows (field not generated): punts had blocked, field goals
-and extra points had blocked, two-point conversions.
+and extra points had blocked; two-point conversions before kernel 2014.6.
 
 Individual tables and their sources
 -----------------------------------
@@ -57,8 +61,9 @@ Kickoff returns: RET, YDS, AVG, LNG, TD.
 Drive chart: drives rows (number, half/start_clock, start_kind, start_spot,
 scrimmage_plays, net_yards, own_seconds, category). Snap counts: the kernel
 2014.4 participation counters; the unit's snaps are the ledger's scrimmage rows
-for that side (kick rows for special teams), or the largest counter when the
-receipt has no ledger.
+for that side (kick rows for special teams; from kernel 2014.6 a two-point try
+row is one snap for each side), or the largest counter when the receipt has
+no ledger.
 
 Checks raised as GamebookError: the scoring summary adds to the final score,
 player passing and rushing yards add to the team counters, the first-down
@@ -79,7 +84,10 @@ START_KIND = {
     "kickoff": "Kickoff", "kickoff_touchback": "Kickoff", "free_kick": "Free kick", "punt": "Punt",
     "interception": "Interception", "fumble_lost": "Fumble", "downs": "Downs", "missed_fg": "Missed field goal",
     "period_change": "Period change", "placement": "Placement",
+    # Kernel 2014.6 batch B9 (R9): a possession after an onside kick.
+    "onside_recovery": "Onside kick recovered", "onside_lost": "Onside kick",
 }
+TRY_ROWS = ("extra_point", "two_point")
 END_KIND = {
     "touchdown": "Touchdown", "punt": "Punt", "interception": "Interception", "fumble_lost": "Fumble",
     "downs": "Downs", "safety": "Safety", "end_of_half": "End of half", "end_of_game": "End of game",
@@ -176,8 +184,10 @@ class GameView:
             return "%d-%d, %s" % (d["scrimmage_plays"], d["net_yards"], time_text(seconds))
 
         def try_after(index, club):
-            for row in rows[index + 1:index + 3]:
-                if row["play_type"] == "extra_point" and row["offense"] == club:
+            # Kernel 2014.6 batch B9 (R8): the try is an extra-point or a
+            # two-point row (after any clock row seated before it).
+            for row in rows[index + 1:index + 4]:
+                if row["play_type"] in TRY_ROWS and row["offense"] == club:
                     return row
             return None
 
@@ -191,11 +201,17 @@ class GameView:
                 else:
                     play = "%s %d yd run" % (_name(row["runner"]), yards)
                 drive = drive_text(row["drive"])
-            elif touchdown and (kind in KICKOFFS or kind == "punt" or row.get("turnover")):
+            elif touchdown and (kind in KICKOFFS or kind in ("punt", "field_goal") or row.get("turnover")):
                 club = row["defense"]
-                carrier = row.get("returner") if kind in KICKOFFS + ("punt",) else row.get("tackler")
-                label = {"kickoff": "kickoff", "free_kick": "free kick", "punt": "punt"}.get(
-                    kind, row.get("turnover_type") or "turnover")
+                if row.get("blocked"):
+                    # Kernel 2014.6 batch B9 (R15): a blocked punt or field
+                    # goal returned for a touchdown, credited to the scorer.
+                    carrier = row.get("scorer")
+                    label = "blocked %s" % ("punt" if kind == "punt" else "field goal")
+                else:
+                    carrier = row.get("returner") if kind in KICKOFFS + ("punt",) else row.get("tackler")
+                    label = {"kickoff": "kickoff", "free_kick": "free kick", "punt": "punt"}.get(
+                        kind, row.get("turnover_type") or "turnover")
                 play = "%s %d yd %s return" % (_name(carrier), row.get("return_yards") or 0, label)
                 drive = ""
             elif kind == "field_goal" and row.get("made"):
@@ -207,7 +223,18 @@ class GameView:
                 continue
             points = 6
             xp = try_after(index, club)
-            if xp is not None:
+            if xp is not None and xp["play_type"] == "two_point":
+                # Kernel 2014.6 batch B9 (R8): the two-point try, by its play.
+                if xp.get("try_type") == "pass":
+                    text = "%s pass from %s" % (_name(xp.get("target")), _name(xp.get("passer")))
+                else:
+                    text = "%s run" % _name(xp.get("runner"))
+                if xp.get("made"):
+                    play += " (%s)" % text
+                    points += 2
+                else:
+                    play += " (%s failed)" % ("pass" if xp.get("try_type") == "pass" else "run")
+            elif xp is not None:
                 if xp.get("made"):
                     play += " (%s kick)" % _name(xp["kicker"])
                     points += 1
@@ -270,7 +297,11 @@ class GameView:
 
     def fourth_down(self, club):
         rows = [r for r in self.scrim[club] if r.get("down") == 4]
-        return sum(1 for r in rows if r.get("first_down") or r.get("touchdown")), len(rows)
+        # A turnover row's touchdown (kernel 2014.6 batch B9: touchdown and
+        # turnover both true on a return touchdown) is the defense's, never
+        # the offense's conversion; earlier rows read as before.
+        return (sum(1 for r in rows if r.get("first_down") or (r.get("touchdown") and not r.get("turnover"))),
+                len(rows))
 
     def success_rate(self, club):
         rows = [r for r in self.scrim[club] if r.get("down") and r.get("ydstogo") is not None
@@ -347,10 +378,14 @@ class GameView:
     def unit_snaps(self, club, side):
         field = {"offense": "offensive_snaps", "defense": "defensive_snaps", "special_teams": "special_teams_snaps"}[side]
         if self.has_ledger:
+            # Kernel 2014.6 batch B9 (R8): a two-point try is one offensive
+            # and one defensive snap (the participation convention); earlier
+            # receipts have no such row.
+            tries = [r for r in self.ledger if r["play_type"] == "two_point"]
             if side == "offense":
-                return len(self.scrim[club])
+                return len(self.scrim[club]) + sum(1 for r in tries if r["offense"] == club)
             if side == "defense":
-                return len(self.scrim[self.other(club)])
+                return len(self.scrim[self.other(club)]) + sum(1 for r in tries if r["defense"] == club)
             return sum(1 for r in self.ledger if r["play_type"] in KICK_ROWS)
         return max((g(line, field) for line in self.players[club].values()), default=0)
 
@@ -453,6 +488,9 @@ def team_stats(view):
         ("", "Field goals, made-attempts",
          (lambda c: "%d-%d" % (s[c]["field_goals"], s[c]["field_goal_attempts"]))
          if all("field_goal_attempts" in s[c] for c in view.clubs) else None),
+        ("", "Two-point conversions, made-attempts",
+         (lambda c: "%d-%d" % (s[c]["two_point_conversions"], s[c]["two_point_attempts"]))
+         if all("two_point_attempts" in s[c] for c in view.clubs) else None),
         ("", "Safeties", optional("safeties")),
         ("Scoring chances", "Red zone efficiency", (lambda c: _ratio(*view.zone_trips(c, False))) if L else None),
         ("", "Goal to go efficiency", (lambda c: _ratio(*view.zone_trips(c, True))) if L else None),

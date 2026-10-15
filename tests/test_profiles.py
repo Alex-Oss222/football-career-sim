@@ -109,7 +109,10 @@ class ProfileTableTests(unittest.TestCase):
                                                           # batch B6 (W3, W5a, W2a)
                                                           "early_fg_v2", "clock_detail_v1", "substitution_record",
                                                           # batch B8 (possession sequencing)
-                                                          "possession_sequencing"}))
+                                                          "possession_sequencing",
+                                                          # batch B9 (R8, R15, R9 scoring decisions)
+                                                          "two_point_tries", "return_touchdowns",
+                                                          "onside_kicks"}))
         a, b = sample_teams()
         r = resolve_game(a, b, seed=SEED + b"-b5-2014-6", event_id="b5-2014-6", _test_profile=PROFILE_2014_6)
         self.assertEqual(r["kernel_version"], "2014.6")
@@ -129,6 +132,13 @@ class ProfileTableTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             Profile("2014.6", base="2012", cell_rules="2013.7", strength="honours-production-v3",
                     flags=frozenset({"no_such_flag"}))
+        # Batch B9: a scoring flag needs possession_sequencing (FLAG_REQUIRES),
+        # refused when the profile is constructed.
+        for flag in ("two_point_tries", "return_touchdowns", "onside_kicks"):
+            with self.assertRaises(ValueError):
+                Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PROFILE_2014_6.strength,
+                        flags=PROFILE_2014_6.flags - {"possession_sequencing"} - (
+                            {"two_point_tries", "return_touchdowns", "onside_kicks"} - {flag}))
 
     def test_only_a_profile_is_accepted(self):
         a, b = sample_teams()
@@ -180,18 +190,33 @@ class Profile2014_5IdentityTests(unittest.TestCase):
 
 
 class StripFieldGroupTests(unittest.TestCase):
-    def test_field_group_is_registered_and_empty_before_its_batches(self):
+    def test_field_group_is_registered_with_each_batch(self):
         # Batch B6 appended the fourth-down marker group and the W2a and W5a
         # fields; batch B8 the kick-record group, the kicks summary, the
-        # scoring events and the possession's non-offensive score.
+        # scoring events and the possession's non-offensive score; batch B9
+        # (R8, R9, R15) the frozen decision blocks, the offensive try record,
+        # the onside decision fields, the try-row and onside ledger fields,
+        # and its team and player counters.
         self.assertEqual(set(KERNEL_2014_6_FIELD_GROUP),
                          {"result", "possession", "ledger", "team", "player", "fourth_down", "kickoff"})
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["result"],
-                         ("calibration_base", "substitutions", "kicks", "scoring_events"))
-        self.assertEqual(KERNEL_2014_6_FIELD_GROUP["possession"], ("last_spike_seconds_left", "non_offensive_score"))
+                         ("calibration_base", "substitutions", "kicks", "scoring_events", "decision_policies"))
+        self.assertEqual(KERNEL_2014_6_FIELD_GROUP["possession"],
+                         ("last_spike_seconds_left", "non_offensive_score", "try"))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["kickoff"],
-                         ("remaining", "chain", "after_drive", "basis", "touchdown", "scoring_team", "xp_made", "points"))
-        self.assertEqual(KERNEL_2014_6_FIELD_GROUP["ledger"], ("decision_source",))
+                         ("remaining", "chain", "after_drive", "basis", "touchdown", "scoring_team", "xp_made", "points",
+                          "onside", "cell", "p_onside", "recovery_class", "p_recover", "try"))
+        self.assertEqual(KERNEL_2014_6_FIELD_GROUP["ledger"],
+                         ("decision_source", "anchor", "scoring_team", "decision", "basis", "cell", "p_go", "points",
+                          "onside", "recovered_by", "blocked", "scorer", "attribution"))
+        self.assertEqual(KERNEL_2014_6_TEAM_STAT_FIELDS,
+                         ("two_point_attempts", "two_point_conversions", "defensive_touchdowns",
+                          "special_teams_touchdowns", "onside_kicks", "onside_recoveries"))
+        self.assertEqual(KERNEL_2014_6_PLAYER_FIELDS,
+                         ("passing_two_point_conversions", "receiving_two_point_conversions",
+                          "rushing_two_point_conversions", "interception_return_touchdowns",
+                          "fumble_return_touchdowns", "punt_return_touchdowns", "kick_return_touchdowns",
+                          "blocked_kick_touchdowns"))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["fourth_down"], ("decision_source",))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["team"], KERNEL_2014_6_TEAM_STAT_FIELDS)
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["player"], KERNEL_2014_6_PLAYER_FIELDS)

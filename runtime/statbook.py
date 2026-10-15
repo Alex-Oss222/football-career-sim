@@ -45,24 +45,44 @@ FIELD_POSITION_FROM_KERNEL = (2013, 7)
 # per club (kernel_2014_6_games) only when such a receipt exists, so every
 # closed 2013 and 2014 Weeks 1-4 view is unchanged.
 KERNEL_2014_6_FROM = (2014, 6)
-KERNEL_2014_6_TEAM_STAT_FIELDS = ()
-KERNEL_2014_6_PLAYER_FIELDS = ()
+# Batch B9 (R8, R15, R9): the scoring-decision counters. Team: two-point
+# attempts and conversions, defensive (interception and fumble return) and
+# special-teams (punt return, blocked kick, kickoff return) touchdowns,
+# onside kicks and the kicking club's onside recoveries. Players, accumulated
+# only when present: the two-point conversion credits and the return
+# touchdowns (a blocked-kick touchdown's credit is a labelled group draw).
+KERNEL_2014_6_TEAM_STAT_FIELDS = ("two_point_attempts", "two_point_conversions", "defensive_touchdowns",
+                                  "special_teams_touchdowns", "onside_kicks", "onside_recoveries")
+KERNEL_2014_6_PLAYER_FIELDS = ("passing_two_point_conversions", "receiving_two_point_conversions",
+                               "rushing_two_point_conversions", "interception_return_touchdowns",
+                               "fumble_return_touchdowns", "punt_return_touchdowns", "kick_return_touchdowns",
+                               "blocked_kick_touchdowns")
 # Every key the 2014.6 group adds, by where it lives in a result or receipt
 # (tests/test_profiles.py strip_2014_6_fields removes exactly these).
 # DRIVE_SUMMARY_FIELDS additions are possession keys; snap-ledger row keys
 # are "ledger".
 KERNEL_2014_6_FIELD_GROUP = {
     # Batch B6 (W2a): the full receipt's substitution record. Batch B8: the
-    # compact kicks summary and the game's scoring events.
-    "result": ("calibration_base", "substitutions", "kicks", "scoring_events"),
+    # compact kicks summary and the game's scoring events. Batch B9: the
+    # decision blocks' id and source text (kept with the receipt, never in
+    # the outcome packet).
+    "result": ("calibration_base", "substitutions", "kicks", "scoring_events", "decision_policies"),
     # Batch B5: the window seconds left at a drive's last spike (R14). Batch
-    # B8: a non-offensive score made during the possession (R15, B9).
-    "possession": ("last_spike_seconds_left", "non_offensive_score"),
-    # Batch B8: the kick record's chain and scoring fields.
-    "kickoff": ("remaining", "chain", "after_drive", "basis", "touchdown", "scoring_team", "xp_made", "points"),
+    # B8: a non-offensive score made during the possession (R15, B9). Batch
+    # B9: an offensive touchdown's try record (R8).
+    "possession": ("last_spike_seconds_left", "non_offensive_score", "try"),
+    # Batch B8: the kick record's chain and scoring fields. Batch B9: R9's
+    # onside decision (chart cell and pair, recovery class and pair) and a
+    # return touchdown's try record (R8).
+    "kickoff": ("remaining", "chain", "after_drive", "basis", "touchdown", "scoring_team", "xp_made", "points",
+                "onside", "cell", "p_onside", "recovery_class", "p_recover", "try"),
     # Batch B6 (W5a): a league-model decision marker on new rows and on the
     # fourth-down state (nested under "fourth_down", see FOURTH_DOWN_FIELDS).
-    "ledger": ("decision_source",),
+    # Batch B9: a try row's anchor, scorer and decision record; an onside
+    # kick's recoverer; a blocked kick's scorer; the labelled group-draw
+    # attribution.
+    "ledger": ("decision_source", "anchor", "scoring_team", "decision", "basis", "cell", "p_go", "points",
+               "onside", "recovered_by", "blocked", "scorer", "attribution"),
     "fourth_down": ("decision_source",),
     "team": KERNEL_2014_6_TEAM_STAT_FIELDS,
     "player": KERNEL_2014_6_PLAYER_FIELDS,
@@ -72,6 +92,10 @@ KERNEL_2014_6_FIELD_GROUP = {
 # scrimmage rows only for such receipts (_plays_recorded); older receipts
 # keep their row count so closed views regenerate unchanged.
 KERNEL_2014_6_LEDGER_ROWS = ("timeout", "two_minute_warning")
+# Batch B9 (R8): the two-point try row, a 2014.6-only row kind that is not a
+# scrimmage row (plays_recorded never counts it) and exists only when a club
+# went for two.
+KERNEL_2014_6_TRY_ROWS = ("two_point",)
 SCRIMMAGE_ROWS = ("pass", "run")
 
 
@@ -206,6 +230,11 @@ def make_receipt(result, *, week, matchup, coverage="complete", detail="full",
         from .play_detail import kick_summary
         receipt["kicks"] = kick_summary(result.get("kickoffs", ()))
         receipt["scoring_events"] = deepcopy(result["scoring_events"])
+    if result.get("decision_policies") is not None:
+        # Kernel 2014.6 batch B9 (append-only): each club's decision blocks as
+        # frozen on its sheet, id and source text included (the outcome
+        # packet carries only their canonical form).
+        receipt["decision_policies"] = deepcopy(result["decision_policies"])
     if detail == "full":
         receipt["play_ledger"] = deepcopy(result.get("play_ledger", []))
         receipt["play_call_stats"] = deepcopy(result.get("play_call_stats", {}))

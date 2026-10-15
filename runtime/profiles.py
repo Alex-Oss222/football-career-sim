@@ -77,6 +77,26 @@ Batch B8 (possession sequencing) adds one flag:
   apart from those records; a profile without the flag runs the 2014.5
   sequencing byte for byte.
 
+Batch B9 (scoring decisions; result-changing) adds three flags, each needing
+possession_sequencing (FLAG_REQUIRES: a profile holding one without it is
+refused when it is constructed, and the kernel checks again) and a base that
+pins the scoring artifact (CalibrationBase.scoring; the kernel fails closed
+otherwise):
+
+- two_point_tries (R8): every touchdown that is not a walk-off takes a try
+  decision, go or kick, from the club's policy (TeamInput.try_policy), a
+  live answer from the controlling coach, or the league chart; a two-point
+  try succeeds on the pooled sourced rate. The try rows carry their anchor,
+  scoring club, decision, basis, cell and chart p.
+- return_touchdowns (R15): interceptions, lost fumbles, punts, missed field
+  goals and deep kickoffs may be returned for a touchdown at the sourced
+  line-of-scrimmage rates, conditioned on the replayed drive's category
+  (non_offensive_score; the scorer kicks off, overtime ends).
+- onside_kicks (R9): every kickoff from the 35 takes an onside decision
+  (TeamInput.kickoff_policy, a live answer, or the league chart); an onside
+  kick is recovered at the expected or surprise rate on a real onside
+  record of the recovering side; library rule R4 in overtime.
+
 A base names the flags its readers require (CalibrationBase.requires_flags):
 a profile resolving on it must hold them, and a profile holding base_2014_6
 or regimes_v3 on a base that does not serve them fails closed.
@@ -105,6 +125,11 @@ class Profile:
         unknown = self.flags - FLAGS
         if unknown:
             raise ValueError("unknown profile flags %s" % sorted(unknown))
+        for flag in sorted(self.flags):
+            missing = FLAG_REQUIRES.get(flag, frozenset()) - self.flags
+            if missing:
+                raise ValueError("profile %s holds %s without %s" % (self.kernel_version, flag,
+                                                                   ", ".join(sorted(missing))))
 
     def has(self, flag):
         return flag in self.flags
@@ -144,7 +169,12 @@ B6_FLAGS = frozenset({"early_fg_v2", "clock_detail_v1", "substitution_record"})
 # kicks, the next possessor returned by every alternation site) with its
 # append-only records (kick summary fields, scoring_events).
 B8_FLAGS = frozenset({"possession_sequencing"})
-FLAGS = BASE_FLAGS | {"injury_2014_6", "usage_2014_6"} | B6_FLAGS | B8_FLAGS
+# Batch B9 mechanism flags (R8, R15, R9), each requiring possession_sequencing.
+B9_FLAGS = frozenset({"two_point_tries", "return_touchdowns", "onside_kicks"})
+FLAGS = BASE_FLAGS | {"injury_2014_6", "usage_2014_6"} | B6_FLAGS | B8_FLAGS | B9_FLAGS
+# A mechanism flag that needs another flag's records (a profile holding it
+# without them is refused at construction).
+FLAG_REQUIRES = {flag: B8_FLAGS for flag in B9_FLAGS}
 
 
 def _legacy_base():
@@ -156,7 +186,8 @@ PROFILE_2014_5 = Profile("2014.5", base="2012", cell_rules="2013.7", strength="h
 PROFILE_2014_6 = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength="player-state-v1",
                          flags=frozenset({"base_2014_6", "regimes_v3", "injury_2014_6", "usage_2014_6",
                                           "early_fg_v2", "clock_detail_v1", "substitution_record",
-                                          "possession_sequencing"}),
+                                          "possession_sequencing", "two_point_tries", "return_touchdowns",
+                                          "onside_kicks"}),
                          record_base=True)
 
 PROFILES = {p.kernel_version: p for p in (PROFILE_2014_5, PROFILE_2014_6)}

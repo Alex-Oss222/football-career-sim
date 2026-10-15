@@ -160,21 +160,27 @@ def rebuild_record(week, season, root=ROOT, strength_model=None):
     sheet_path = call_sheet_path(int(week), int(season))
     if sheet_path is None:
         raise ValueError("no frozen call sheet for week %d" % int(week))
-    sheet = json.loads(sheet_path.read_text(encoding="utf-8"))["offensive_call_sheet"]
+    frozen = json.loads(sheet_path.read_text(encoding="utf-8"))
+    sheet = frozen["offensive_call_sheet"]
     receipts = [r for r in load_receipts(paths.receipts) if int(r["week"]) < int(week)]
-    own = [r for r in load_receipts(paths.receipts) if int(r["week"]) == int(week)
-           and week_inputs.PROTAGONIST in (r["away"], r["home"])]
+    closed = [r for r in load_receipts(paths.receipts) if int(r["week"]) == int(week)]
+    own = [r for r in closed if week_inputs.PROTAGONIST in (r["away"], r["home"])]
+    # Kernel 2014.6 batch B9: the decision kinds of the kernel that closed
+    # the week (none before 2014.6), so a rebuild reads the sheet as frozen.
+    from . import scoring_decisions
+    kinds = sorted({k for r in closed for k in scoring_decisions.kernel_kinds(r.get("kernel_version"))})
     bases = {}
     try:
         package = week_inputs.build_package(int(week), receipts, sheet, AVERAGE_ANCHORS, int(season),
-                                            strength_model=strength_model)
+                                            strength_model=strength_model, decisions=frozen.get("decisions"),
+                                            decision_kinds=tuple(kinds))
     except ValueError as exc:
         if not own or "Jacksonville" not in str(exc):
             raise
         receipt_input = _jacksonville_from_receipt(own[0], week_inputs.PROTAGONIST)
         with mock.patch.object(week_inputs, "jacksonville_input", return_value=dict(receipt_input)):
             package = week_inputs.build_package(int(week), receipts, sheet, AVERAGE_ANCHORS, int(season),
-                                                strength_model=strength_model)
+                                                strength_model=strength_model, decision_kinds=tuple(kinds))
         bases[week_inputs.PROTAGONIST] = RECEIPT_BASIS
     errors = rebuild_errors(package, paths.receipts)
     if errors:

@@ -1283,15 +1283,18 @@ def apply_drive_detail(
             _bump(line, "punts_inside_20")
         snapper = snap()
         returner = cover = None
-        if punt_record["outcome"] == "returned":
+        if punt_record["outcome"] in ("returned", PUNT_RETURN_TD):
             returner = _returner(rng, defenders, "punt_return")
             rline = defense_stats["players"][returner.player_id]
             _bump(rline, "punt_returns")
             _bump(rline, "punt_return_yards", ret)
             _bump(rline, "return_yards", ret)
             returner = returner.player_id
-            tackler = _coverage_tackle(rng, available, offense_stats["players"], "punt_coverage", (punter,))
-            cover = tackler.player_id if tackler else None
+            if punt_record["outcome"] == "returned":
+                # Kernel 2014.6 batch B9 (R15): a punt returned for a
+                # touchdown has no coverage tackle.
+                tackler = _coverage_tackle(rng, available, offense_stats["players"], "punt_coverage", (punter,))
+                cover = tackler.player_id if tackler else None
         ledger.append({**base_kick, "snap_in_drive": terminal_snap, "play_type": "punt",
                        "punter": punter.player_id, "cover_player": cover, "long_snapper": snapper,
                        "punt_yards": gross, "returner": returner, "return_yards": ret,
@@ -1450,6 +1453,10 @@ def _seat_clock_rows(ledger, plays, offense, defense, drive_no, w5a, kinds, comp
     return rows
 
 
+# Kernel 2014.6 batch B9 (R15): a punt returned or blocked for a touchdown.
+PUNT_RETURN_TD = "return_td"
+PUNT_BLOCKED_TD = "blocked_td"
+PUNT_TD_OUTCOMES = (PUNT_RETURN_TD, PUNT_BLOCKED_TD)
 POSSESSION_END_REASONS = ("downs", "end_of_half", "end_of_game", "end_of_overtime", "end_of_quarter")
 
 
@@ -1494,7 +1501,11 @@ def apply_kickoff_detail(*, seed, event_id, kick_no, kicking, receiving, rosters
     return [row]
 
 
-def try_row(at, *, scoring, opponent, available, stats, made, seed, event_id, anchor):
+def _try_key(anchor):
+    return "kick-%s" % anchor["kick"] if "kick" in anchor else "drive-%s" % anchor["drive"]
+
+
+def try_row(at, *, scoring, opponent, available, stats, made, seed, event_id, anchor, decision=None):
     """Kernel 2014.6 batch B8: the try row after a non-offensive touchdown (a
     kick return's or the defense's; R15, the try itself R8's). ``at`` gives
     the row's drive, period and game_clock. It is anchored to its score
@@ -1502,8 +1513,11 @@ def try_row(at, *, scoring, opponent, available, stats, made, seed, event_id, an
     ``scoring_team``, so the audit reads it against that kick or that
     possession's non_offensive_score, never as a possession's own try. The
     kicker and long snapper are named on a keyed detail stream; the kicker's
-    try counters are credited here (the club's by the kernel)."""
-    key = "kick-%s" % anchor["kick"] if "kick" in anchor else "drive-%s" % anchor["drive"]
+    try counters are credited here (the club's by the kernel).
+
+    Kernel 2014.6 batch B9 (R8): ``decision`` (the try record's decision,
+    basis, cell, chart p and points) is copied onto the row."""
+    key = _try_key(anchor)
     rng = _stream(KICKOFF_DETAIL_TAG, seed, event_id, key, "try")
     kicker = usage.kicking_specialist(available, "K", "placekicker") or choose(rng, available, {"K"}, "placekicker")
     line = stats[scoring.team_id]["players"][kicker.player_id]
@@ -1513,12 +1527,101 @@ def try_row(at, *, scoring, opponent, available, stats, made, seed, event_id, an
     snapper = usage.long_snapper(available, usage.protection_front(available))
     if snapper is not None:
         _bump(stats[scoring.team_id]["players"][snapper.player_id], "long_snaps")
-    return {"drive": at["drive"], "snap_in_drive": at.get("snap_in_drive", 0), "period": at["period"],
-            "game_clock": at["game_clock"], "offense": scoring.team_id, "defense": opponent,
-            "play_type": "extra_point", "kicker": kicker.player_id, "made": bool(made),
-            "long_snapper": snapper.player_id if snapper is not None else None,
-            "result_yards": 0, "touchdown": False, "turnover": False,
-            "anchor": dict(anchor), "scoring_team": scoring.team_id}
+    row = {"drive": at["drive"], "snap_in_drive": at.get("snap_in_drive", 0), "period": at["period"],
+           "game_clock": at["game_clock"], "offense": scoring.team_id, "defense": opponent,
+           "play_type": "extra_point", "kicker": kicker.player_id, "made": bool(made),
+           "long_snapper": snapper.player_id if snapper is not None else None,
+           "result_yards": 0, "touchdown": False, "turnover": False,
+           "anchor": dict(anchor), "scoring_team": scoring.team_id}
+    if decision is not None:
+        row.update(try_fields(decision))
+    return row
+
+
+# Kernel 2014.6 batch B9 (R8): the try record fields every try row carries
+# (decision, basis, chart cell, the chart's go/tries pair and the points).
+TRY_ROW_FIELDS = ("decision", "basis", "cell", "p_go", "points")
+TRY_DETAIL_TAG = "public-try-detail-v1"
+TWO_POINT_ROW = "two_point"
+TRY_ROWS = ("extra_point", TWO_POINT_ROW)
+
+
+def seat_try(rows, row, overtime=False):
+    """Kernel 2014.6 batch B9 (R8): the index at which a drive's own
+    two-point row is seated in its rows: where the extra-point row would
+    stand. That is after the scoring snap, after any timeout row seated after
+    the last snap, and after a two-minute-warning row whose mark is at or
+    above the try's stamp (the warning is seated before the first row at or
+    under 2:00, _seat_clock_rows)."""
+    at = next(i for i, r in enumerate(rows) if r.get("play_type") in ("pass", "run") and r.get("touchdown")) + 1
+    seconds = _row_seconds(row, overtime)
+    while at < len(rows) and (rows[at].get("play_type") == TIMEOUT_ROW or (
+            rows[at].get("play_type") == TWO_MINUTE_WARNING_ROW and _row_seconds(rows[at], overtime) >= seconds)):
+        at += 1
+    return at
+
+
+def try_fields(decision):
+    return {k: (list(decision[k]) if isinstance(decision.get(k), tuple) else decision.get(k)) for k in TRY_ROW_FIELDS}
+
+
+def two_point_row(at, *, scoring, opponent, available, stats, made, seed, event_id, anchor, passer, decision,
+                  pass_share, usage_base, scramble_rate=None):
+    """Kernel 2014.6 batch B9 (R8): the row of one two-point try from the 2.
+
+    Credit only, on its own keyed stream (public-try-detail-v1, by event and
+    anchor; no team id): the play type is a pass with the league's
+    pass share of two-point attempts (``pass_share``, the artifact's type
+    counts; success does not depend on it under the adopted pooled rate),
+    the passer is the drive's (or the scoring club's game passer after a
+    non-offensive touchdown), the receiver by the usage target shares and
+    the runner by the rush shares. A success credits
+    passing_/receiving_ or rushing_two_point_conversions; no pass attempt,
+    carry or yard is counted (the NFL convention). The descriptive call
+    label comes from the sheet's two-point menu on its own label stream."""
+    key = _try_key(anchor)
+    rng = _stream(TRY_DETAIL_TAG, seed, event_id, key)
+    shares = usage_base.usage()["values"]
+    rank_shapes = shares["rank_shares"]
+    factors = usage_base.tilt_factors()
+    lines = stats[scoring.team_id]["players"]
+    k, n = pass_share
+    kind = "pass" if rng.random() < k / n else "run"
+    qb = passer or usage.game_passer(available) or available[0]
+    row = {"drive": at["drive"], "snap_in_drive": at.get("snap_in_drive", 0), "period": at["period"],
+           "game_clock": at["game_clock"], "offense": scoring.team_id, "defense": opponent,
+           "play_type": TWO_POINT_ROW, "try_type": kind, "passer": None, "runner": None, "target": None,
+           "made": bool(made), "result_yards": 0, "touchdown": False, "turnover": False,
+           "anchor": dict(anchor), "scoring_team": scoring.team_id, **try_fields(decision)}
+    runner_group = target_group = runner_rank = target_rank = None
+    if kind == "pass":
+        tilt = usage.tilt_map(getattr(scoring, "strength", None), available, "target", factors)
+        receiver = usage.pick(rng, available, shares["target_share"], "target", role="receiver", tilt=tilt,
+                              rank_shapes=rank_shapes)
+        row["passer"], row["target"] = qb.player_id, receiver.player_id
+        target_group, target_rank = usage.group(receiver.position), _group_rank(available, receiver)
+        if made:
+            _bump(lines[qb.player_id], "passing_two_point_conversions")
+            _bump(lines[receiver.player_id], "receiving_two_point_conversions")
+    else:
+        tilt = usage.tilt_map(getattr(scoring, "strength", None), available, "rush", factors)
+        runner = usage.pick(rng, available, shares["rush_share"], "rush", role="rusher",
+                            only=lambda p: usage.group(p.position) != "QB" or p.player_id == qb.player_id,
+                            tilt=tilt, rank_shapes=rank_shapes)
+        row["runner"] = runner.player_id
+        runner_group, runner_rank = usage.group(runner.position), _group_rank(available, runner)
+        if made:
+            _bump(lines[runner.player_id], "rushing_two_point_conversions")
+    lrng = _stream(LABEL_TAG, seed, event_id, key, "try")
+    situation = {"menus": list(call_situations.classify_try())}
+    call, source, label_groups, scramble, _slot = _choose_label(
+        lrng, scoring, {"play_type": kind, "sack": False}, runner_group, target_group, runner_rank, target_rank,
+        situation, None, scramble_rate)
+    row.update({"concept": call["name"], "family": call["family"], "personnel": call["personnel"],
+                "formation": call["formation"], "motion": call["motion"], "protection": call["protection"],
+                "tags": list(call["tags"]), "label_source": source, "label_type": call["type"],
+                "label_groups": label_groups, "situation": situation["menus"][0], "scramble": scramble})
+    return row
 
 
 # ---- possession sequencing (kernel 2014.6, batch B8) -----------------------
@@ -1531,7 +1634,13 @@ def try_row(at, *, scoring, opponent, available, stats, made, seed, event_id, an
 # basis, the start it gave and the points it scored (a return touchdown with
 # its try; None otherwise). Append-only, like DRIVE_SUMMARY_FIELDS.
 KICK_SUMMARY_FIELDS = ("kick_no", "kicking", "receiving", "half", "remaining", "chain", "after_drive",
-                       "drive", "free_kick", "outcome", "basis", "next_start", "points")
+                       "drive", "free_kick", "outcome", "basis", "next_start", "points",
+                       # Kernel 2014.6 batch B9 (append-only): R9's onside
+                       # decision, its chart cell and recovery class, a
+                       # return touchdown's try record (R8) and the kick's
+                       # return yards (the band rows leave a return
+                       # touchdown's out of the drawn pool's mean).
+                       "onside", "cell", "recovery_class", "try", "return_yards")
 RETAINED_OUTCOME = "retained"
 RETURN_TOUCHDOWN_OUTCOME = "returned_touchdown"
 
@@ -1565,8 +1674,14 @@ def is_touchback(kick):
     return bool(kick["touchback"]) if "touchback" in kick else kick.get("outcome") == "touchback"
 
 
+ONSIDE_START_KINDS = {"onside_recovered": "onside_recovery", "onside_lost": "onside_lost"}
+KEPT_OUTCOMES = (RETAINED_OUTCOME, "onside_recovered")
+
+
 def expected_start_kind(kick):
     """The start kind of the possession a kick hands over (kernel._start_kind)."""
+    if kick.get("outcome") in ONSIDE_START_KINDS:
+        return ONSIDE_START_KINDS[kick["outcome"]]
     retained = kick.get("outcome") == RETAINED_OUTCOME
     if kick.get("free_kick"):
         return "free_kick_retained" if retained else "free_kick"
@@ -1580,7 +1695,9 @@ def scoring_events(result):
     a receipt's drives) and the kicks: {"kind", "team", "points", "half",
     "source": "drive" | "kick", and "drive" or "kick_no"}. A kick's event
     precedes the possession whose number it carries. Never read from the
-    stored list: the audit compares the rebuild to it."""
+    stored list: the audit compares the rebuild to it. Kernel 2014.6 batch
+    B9 (R8): a touchdown's event also carries its try record ("try") when the
+    kernel decided one (absent for a walk-off and for earlier records)."""
     from .rules import kick_score, possession_score
     teams = list(result.get("final_score") or result.get("score") or {})
     other = {t: next((u for u in teams if u != t), None) for t in teams}
@@ -1597,6 +1714,8 @@ def scoring_events(result):
             if score is not None:
                 events.append({"kind": score[0], "team": score[1], "points": score[2], "half": kick.get("half"),
                                "source": "kick", "kick_no": kick.get("kick_no")})
+                if kick.get("try") is not None:
+                    events[-1]["try"] = kick["try"]
 
     for p in possessions:
         kick_events(by_drive.pop(p["number"], ()))
@@ -1604,6 +1723,10 @@ def scoring_events(result):
         if score is not None:
             events.append({"kind": score[0], "team": score[1], "points": score[2], "half": p.get("half"),
                            "source": "drive", "drive": p["number"]})
+            non_offensive = p.get("non_offensive_score") or {}
+            decided = non_offensive.get("try") if non_offensive.get("kind") else p.get("try")
+            if decided is not None:
+                events[-1]["try"] = decided
     for number in sorted(k for k in by_drive if k is not None):
         kick_events(by_drive[number])
     return events
@@ -1788,6 +1911,10 @@ DRIVE_SUMMARY_FIELDS = (
     # a non-offensive score made during the possession
     # (runtime.rules.possession_score reads it first).
     "non_offensive_score",
+    # Kernel 2014.6 batch B9 (R8, append-only): an offensive touchdown's try
+    # record (decision, basis, chart cell and pair, made, points, type), so a
+    # compact receipt audits the try and its scoring event like the result.
+    "try",
 )
 LABEL_TYPES = {KNEEL_LABEL: "run", GENERIC_RUN: "run", SPIKE_LABEL: "pass",
                GENERIC_PASS: "pass", SCRAMBLE_LABEL: "pass"}
@@ -2061,7 +2188,8 @@ def _check_spots(result, possessions, err, fp):
         kick = p.get("kickoff_after")
         if category == "downs" and nxt != 100 - end:
             err("spot_chain_break", "drive %s downs next %s end %s" % (number, nxt, end))
-        if category == "field_goal_attempt" and not p.get("fg_made") and nxt != min(80, 110 - p["fg_distance"]):
+        if category == "field_goal_attempt" and not p.get("fg_made") and not p.get("non_offensive_score") \
+                and nxt != min(80, 110 - p["fg_distance"]):
             err("spot_chain_break", "drive %s missed FG next %s" % (number, nxt))
         if kick and (kick.get("next_start") != nxt or (
                 kick.get("touchback") and nxt != 80 + (kick.get("enforcement") or 0))):
@@ -2140,6 +2268,8 @@ def _check_spot_ledger(result, possessions, rows_by_drive, kicks, err, sequencin
         if not punts:
             continue
         row = punts[0]
+        if row.get("outcome") in PUNT_TD_OUTCOMES:
+            continue  # kernel 2014.6 batch B9 (R15): no hand-over; the scorer kicks off
         los, nxt = row.get("los"), row.get("next_start")
         if los != p.get("end_spot") or nxt != p.get("next_start"):
             err("kick_spot_mismatch", "punt on drive %s los %s next %s" % (p["number"], los, nxt))
@@ -2324,7 +2454,8 @@ def check_ledger(result, base=None, audit_only=False):
             # when that kick chain ended the game, a return touchdown in
             # overtime (rules.ot_history).
             chain_ended = (sequencing and p["half"] == "OT" and kicks_after.get(p["number"])
-                           and kick_score(kicks_after[p["number"]][-1]) is not None)
+                           and (kick_score(kicks_after[p["number"]][-1]) is not None
+                                or kicks_after[p["number"]][-1].get("outcome") in KEPT_OUTCOMES))
             if expired or (p is last and not chain_ended):
                 err("kickoff_after_expired_clock", "drive %s" % p["number"])
         if p.get("half_final"):
@@ -2338,7 +2469,7 @@ def check_ledger(result, base=None, audit_only=False):
                 err("clock_regression", "half-final drive %s does not end its window" % p["number"])
             if p.get("kickoff_after"):
                 err("kickoff_after_expired_clock", "kick after half-final drive %s" % p["number"])
-        if p["half"] == "OT" and category == "touchdown" and p.get("xp_made") is not None:
+        if p["half"] == "OT" and category == "touchdown" and (p.get("xp_made") is not None or p.get("try")):
             err("xp_after_ot_walkoff", "drive %s" % p["number"])
 
     # Every score, drive and kick, in game order (scoring_events): the
@@ -2353,7 +2484,10 @@ def check_ledger(result, base=None, audit_only=False):
         err("score_identity_violations", "stored scoring_events differ from the rebuild")
     for team, s in result.get("team_stats", {}).items():
         if "extra_points_made" in s:
-            identity = 6 * s["touchdowns"] + s["extra_points_made"] + 3 * s["field_goals"] + 2 * s["safeties"]
+            # Kernel 2014.6 batch B9 (R8): + 2 per two-point conversion (the
+            # counter is absent from every earlier receipt, which reads 0).
+            identity = (6 * s["touchdowns"] + s["extra_points_made"] + 2 * s.get("two_point_conversions", 0)
+                        + 3 * s["field_goals"] + 2 * s["safeties"])
             if identity != result["final_score"].get(team):
                 err("score_identity_violations", "%s team counters" % team)
 
@@ -2466,7 +2600,10 @@ def check_ledger(result, base=None, audit_only=False):
         for index, row in enumerate(rows):
             kind = row.get("play_type")
             if kind in ("pass", "run"):
-                if row.get("touchdown"):
+                # Kernel 2014.6 batch B9 (R15): a turnover returned for a
+                # touchdown carries touchdown and turnover both; its marker is
+                # the turnover (the touchdown is the defense's).
+                if row.get("touchdown") and not row.get("turnover"):
                     markers.append((index, "touchdown"))
                 if row.get("turnover"):
                     markers.append((index, row.get("turnover_type")))
@@ -2484,12 +2621,18 @@ def check_ledger(result, base=None, audit_only=False):
             err("drives_missing_terminal", "drive %s reason mismatch" % p["number"])
         if any(r.get("play_type") in ("pass", "run") for r in rows[index + 1:]):
             err("snaps_after_terminal", "drive %s" % p["number"])
-        tries = [r for r in rows if r.get("play_type") == "extra_point" and not r.get("anchor")]
+        tries = [r for r in rows if _own_try(r, p)]
+        own_try = p.get("try")
         if category == "touchdown":
-            if p.get("xp_made") is None and tries:
+            if p.get("xp_made") is None and own_try is None and tries:
                 err("xp_after_ot_walkoff" if p["half"] == "OT" else "duplicate_terminal",
                     "drive %s try without an attempt" % p["number"])
-            if p.get("xp_made") is not None and (len(tries) != 1 or tries[0].get("made") != p["xp_made"]):
+            if own_try is not None:
+                # Kernel 2014.6 batch B9 (R8): one try row of the decided kind.
+                kind = "extra_point" if own_try.get("decision") == "kick" else TWO_POINT_ROW
+                if len(tries) != 1 or tries[0].get("play_type") != kind or tries[0].get("made") != own_try.get("made"):
+                    err("score_identity_violations", "drive %s try row" % p["number"])
+            elif p.get("xp_made") is not None and (len(tries) != 1 or tries[0].get("made") != p["xp_made"]):
                 err("score_identity_violations", "drive %s try row" % p["number"])
         elif tries:
             err("duplicate_terminal", "drive %s try without a touchdown" % p["number"])
@@ -2537,30 +2680,41 @@ def check_ledger(result, base=None, audit_only=False):
         # against that kick's record, never as a possession's try.
         by_kick = {k.get("kick_no"): k for k in kick_list}
         anchored = {}
-        for rows in rows_by_drive.values():
+        for number, rows in rows_by_drive.items():
             for r in rows:
-                if r.get("play_type") == "extra_point" and r.get("anchor"):
+                if r.get("play_type") in TRY_ROWS and r.get("anchor") and not _own_try(r, by_number.get(number)):
                     a = r["anchor"] or {}
                     anchored.setdefault(("kick", a["kick"]) if "kick" in a else ("drive", a.get("drive")), []).append(r)
         for (kind, key), rows in anchored.items():
+            decided = None
             if kind == "kick":
                 k = by_kick.get(key)
                 score, made = (kick_score(k), kick_try_made(k)) if k is not None else (None, None)
                 if k is not None and "xp_made" not in k and made is None and len(rows) == 1 and not rows[0].get("made"):
                     made = False  # a summary row reads 6 for a missed try as for no try
+                decided = (k or {}).get("try")
             else:
                 p = by_number.get(key)
                 non_offensive = (p or {}).get("non_offensive_score") or {}
                 score = (non_offensive["kind"], non_offensive.get("team")) if non_offensive.get("kind") else None
                 made = non_offensive.get("xp_made")
+                decided = non_offensive.get("try")
+            if decided is not None:
+                # Kernel 2014.6 batch B9 (R8): the try record decides the row.
+                made = decided.get("made")
+                if rows and rows[0].get("play_type") != ("extra_point" if decided.get("decision") == "kick"
+                                                         else TWO_POINT_ROW):
+                    err("score_identity_violations", "try anchored to %s %s is not its decided kind" % (kind, key))
             if score is None or len(rows) != 1 or rows[0].get("made") != made or rows[0].get("offense") != score[1]:
                 err("score_identity_violations", "try anchored to %s %s" % (kind, key))
         for k in kick_list:
-            if kick_score(k) is not None and kick_try_made(k) is not None and len(anchored.get(("kick", k.get("kick_no")), ())) != 1:
+            has_try = k.get("try") is not None or kick_try_made(k) is not None
+            if kick_score(k) is not None and has_try and len(anchored.get(("kick", k.get("kick_no")), ())) != 1:
                 err("score_identity_violations", "kick %s touchdown without its try row" % k.get("kick_no"))
         for p in possessions:
             non_offensive = p.get("non_offensive_score") or {}
-            if non_offensive.get("kind") == "touchdown" and non_offensive.get("xp_made") is not None \
+            if non_offensive.get("kind") == "touchdown" and (non_offensive.get("xp_made") is not None
+                                                             or non_offensive.get("try") is not None) \
                     and len(anchored.get(("drive", p["number"]), ())) != 1:
                 err("score_identity_violations", "drive %s defensive touchdown without its try row" % p["number"])
     if spots:
@@ -2574,6 +2728,19 @@ def check_ledger(result, base=None, audit_only=False):
     if _GROUP_PREDICATES["b6_ledger"](result) and not skipped >= set(B6_CLASSES):
         _check_b6_ledger(result, possessions, rows_by_drive, err, base.field_position())
     return errors
+
+
+def _own_try(row, p):
+    """A try row that is a possession's own (an offensive touchdown's): an
+    unanchored extra-point row (every kernel before 2014.6), or (batch B9)
+    one anchored to that drive and naming its offense as the scorer."""
+    if row.get("play_type") not in TRY_ROWS:
+        return False
+    anchor = row.get("anchor")
+    if not anchor:
+        return row.get("play_type") == "extra_point"
+    return (p is not None and p.get("category") == "touchdown" and anchor.get("drive") == p.get("number")
+            and row.get("scoring_team") == p.get("team"))
 
 
 def _check_sequence(possessions, kicks, kicks_after, game_type, other, err):
@@ -2607,7 +2774,7 @@ def _check_sequence(possessions, kicks, kicks_after, game_type, other, err):
     pro_bowl = game_type == PRO_BOWL
 
     def handed_to(kick):
-        return kick["kicking"] if kick.get("outcome") == RETAINED_OUTCOME else kick["receiving"]
+        return kick["kicking"] if kick.get("outcome") in KEPT_OUTCOMES else kick["receiving"]
 
     # -- the alternation --------------------------------------------------------------------------
     for index, b in enumerate(possessions):
@@ -2645,7 +2812,7 @@ def _check_sequence(possessions, kicks, kicks_after, game_type, other, err):
                 err("possession_sequence_break", "drive %s possessed by %s after drive %s (%s)" % (
                     b["number"], b["team"], a["number"], a["category"]))
             if b.get("start_kind") in ("kickoff", "kickoff_touchback", "free_kick", "kickoff_retained",
-                                        "free_kick_retained") and not pro_bowl:
+                                        "free_kick_retained", "onside_recovery", "onside_lost") and not pro_bowl:
                 err("possession_sequence_break", "drive %s starts from a kick after a non-scoring drive"
                     % b["number"])
 
@@ -2690,6 +2857,8 @@ def _check_sequence(possessions, kicks, kicks_after, game_type, other, err):
             err("kick_chain_incoherent", "%s is followed by another kick before drive %s" % (where, n))
         nxt = by_number.get(n)
         if nxt is None:
+            if k.get("half") == "OT" and k.get("outcome") in KEPT_OUTCOMES and following is None:
+                continue  # batch B9 (R9, rule R4): a kept overtime kick may end the game
             err("kick_chain_incoherent", "%s hands the ball to no possession" % where)
             continue
         if nxt["team"] != handed_to(k):
@@ -2707,7 +2876,7 @@ def _check_sequence(possessions, kicks, kicks_after, game_type, other, err):
             kick_yards, ret = k.get("kick_yards") or 0, k.get("return_yards") or 0
             if is_touchback(k):
                 expected = 80 + e
-            elif k.get("outcome") == RETAINED_OUTCOME:
+            elif k.get("outcome") in KEPT_OUTCOMES:
                 expected = 100 - (spot + kick_yards - ret) + e
             else:
                 expected = spot + kick_yards - ret + e

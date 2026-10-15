@@ -7,6 +7,16 @@ carry the kick summary and scoring_events, which the audit rebuilds and
 compares. No branch fires in production until batches B9 and B10, so the
 test-only _test_scoring hook forces each branch here. Synthetic seeds only;
 the private service is never contacted.
+
+Batch B9 (result-changing) adds its scoring flags to PROFILE_2014_6, so the
+forced-branch tests below run the shipped profile (a forced return
+touchdown takes the sourced R15 path) while the no-branch invariance of B8
+itself is proved at the B8 level: PROFILE_B8 is PROFILE_2014_6 without the
+B9 flags, and NO_SEQUENCING is that without possession_sequencing (a B9 flag
+needs possession_sequencing, runtime.profiles.FLAG_REQUIRES). Batch B9 also
+anchors every try row, an offensive touchdown's included (plan B9, R8: try
+rows carry an anchor and scoring_team), so a kick's try is found by its
+kick anchor, not by having an anchor at all.
 """
 import sys
 from pathlib import Path
@@ -21,7 +31,7 @@ from runtime.calibration_base import BASE_2010_2014W4
 from runtime.kernel import _start_kind, resolve_game, validate_result
 from runtime.play_detail import (KICK_SUMMARY_FIELDS, check_ledger, expected_start_kind, kicks_of,
                                  measurable_classes, scoring_events)
-from runtime.profiles import PROFILE_2014_5, PROFILE_2014_6, Profile
+from runtime.profiles import B9_FLAGS, PROFILE_2014_5, PROFILE_2014_6, Profile
 from runtime.rules import (KICK_CHAIN_BOUND, RETAINED_START_KINDS, kick_score, kicking_club, ot_history,
                            ot_status, possession_score)
 from runtime.statbook import make_receipt
@@ -32,9 +42,11 @@ A, B = sample_teams()
 # A synthetic seed whose regulation ends level under PROFILE_2014_6 (found by
 # search; the test fails loudly if it no longer does).
 OT_NAME = "b8-ot-30"
+PROFILE_B8 = Profile("2014.6", base=PROFILE_2014_6.base, cell_rules=PROFILE_2014_6.cell_rules,
+                     strength=PROFILE_2014_6.strength, flags=PROFILE_2014_6.flags - B9_FLAGS, record_base=True)
 NO_SEQUENCING = Profile("2014.6", base=PROFILE_2014_6.base, cell_rules=PROFILE_2014_6.cell_rules,
                         strength=PROFILE_2014_6.strength,
-                        flags=PROFILE_2014_6.flags - {"possession_sequencing"}, record_base=True)
+                        flags=PROFILE_B8.flags - {"possession_sequencing"}, record_base=True)
 
 
 def play(name, forced=None, profile=PROFILE_2014_6, **kw):
@@ -163,9 +175,17 @@ class ForcedKickBranchTests(unittest.TestCase):
 
     def test_retained_free_kick_fails_closed_without_a_record(self):
         # The base holds no retained safety free kick (0 of 65); the forced
-        # branch cannot invent one. Find a safety drive to force it on.
-        base = play("b8-safety-11")
-        safety = next(p for p in base["possessions"] if p["category"] == "safety" and p.get("kickoff_after"))
+        # branch cannot invent one. Find a safety drive to force it on (a
+        # search, not a pinned seed: batch B9 changes results).
+        for i in range(11, 200):
+            name = "b8-safety-%d" % i
+            base = play(name)
+            safety = next((p for p in base["possessions"] if p["category"] == "safety" and p.get("kickoff_after")),
+                          None)
+            if safety is not None:
+                break
+        else:
+            self.fail("no synthetic game with a mid-half safety")
         kick = next(k for k in base["kickoffs"] if k["after_drive"] == safety["number"])
         # The club scored upon free-kicks to the scorer, who possesses next.
         self.assertTrue(kick["free_kick"])
@@ -173,7 +193,7 @@ class ForcedKickBranchTests(unittest.TestCase):
         self.assertEqual(base["possessions"][safety["number"]]["team"], other(safety["team"]))
         self.assertEqual(base["possessions"][safety["number"]]["start_kind"], "free_kick")
         with self.assertRaises(ValueError):
-            play("b8-safety-11", {"kicks": {kick["kick_no"]: "retained"}})
+            play(name, {"kicks": {kick["kick_no"]: "retained"}})
 
     def test_opening_kick_returned_for_a_touchdown(self):
         r = play("b8-td-open", {"kicks": {1: "touchdown"}})
@@ -187,11 +207,12 @@ class ForcedKickBranchTests(unittest.TestCase):
         # The scorer kicks off next on the same chain; the original kicker possesses first.
         self.assertEqual((second["chain"], second["after_drive"], second["drive"], second["kicking"]), (2, None, 1, receiver))
         self.assertEqual(r["possessions"][0]["team"], other(receiver))
+        # Batch B9 (R8): the event carries the try record the kernel decided.
         self.assertEqual(r["scoring_events"][0], {"kind": "touchdown", "team": receiver, "points": first["points"],
-                                                  "half": 1, "source": "kick", "kick_no": 1})
+                                                  "half": 1, "source": "kick", "kick_no": 1, "try": first["try"]})
         self.assertEqual(r["scoring_events"], scoring_events(r))
         # The try row is anchored to the kick and credited to the scorer's kicker.
-        tries = [x for x in r["play_ledger"] if x["play_type"] == "extra_point" and x.get("anchor")]
+        tries = [x for x in r["play_ledger"] if x["play_type"] == "extra_point" and x.get("anchor") == {"kick": 1}]
         self.assertEqual(len(tries), 1)
         self.assertEqual((tries[0]["anchor"], tries[0]["offense"], tries[0]["made"]), ({"kick": 1}, receiver, first["xp_made"]))
         self.assertEqual(r["team_stats"][receiver]["extra_point_attempts"],
@@ -306,8 +327,11 @@ class OvertimeSequencingTests(unittest.TestCase):
         history = ot_history(ot, [k for k in r["kickoffs"] if k["half"] == "OT"])
         self.assertEqual(history, [{"team": winner, "score": "touchdown", "kick": last["kick_no"]}])
         self.assertEqual(ot_status(history), "end")
-        # No try after a walk-off, no extra kick after the game ended.
-        self.assertFalse([x for x in r["play_ledger"] if x["play_type"] == "extra_point" and x.get("anchor")])
+        # No try after a walk-off, no extra kick after the game ended: no try
+        # row of either kind is anchored to the overtime kick, and none is
+        # stamped in overtime.
+        self.assertFalse([x for x in r["play_ledger"] if x["play_type"] in play_detail.TRY_ROWS
+                          and (x.get("anchor") == {"kick": last["kick_no"]} or x["period"] == "OT")])
         self.assertEqual(len([k for k in r["kickoffs"] if k["half"] == "OT"]), 1)
 
     def test_retained_opening_kick_gives_the_receiving_club_its_opportunity(self):
@@ -410,7 +434,7 @@ class InvarianceTests(unittest.TestCase):
     def test_flag_adds_only_the_records(self):
         for i in range(6):
             name = "b8-inv-%d" % i
-            on, off = play(name), play(name, profile=NO_SEQUENCING)
+            on, off = play(name, profile=PROFILE_B8), play(name, profile=NO_SEQUENCING)
             self.assertEqual(validate_result(on) + check_ledger(on), [])
             self.assertIn("scoring_events", on)
             self.assertNotIn("scoring_events", off)
@@ -428,7 +452,7 @@ class InvarianceTests(unittest.TestCase):
         self.assertEqual(len(measurable_classes(r)), 42)
 
     def test_scoring_events_match_the_drives(self):
-        r = play("b8-inv-1")
+        r = play("b8-inv-1", profile=PROFILE_B8)
         events = r["scoring_events"]
         self.assertTrue(all(e["source"] == "drive" for e in events))
         scored = [p for p in r["possessions"] if possession_score(p) is not None]

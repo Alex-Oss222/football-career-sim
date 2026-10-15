@@ -172,7 +172,8 @@ def dry_slate(week):
     slate = week_inputs.rails_slate(week, SEASON, receipts, games)
     clubs, _ = week_inputs._rails_clubs(slate, games, SEASON)
     package = week_inputs.build_package(week, receipts, call_sheet, {"offense_anchor": 2.0, "defense_anchor": 2.0,
-                                                                      "special_teams_anchor": 2.0}, SEASON)
+                                                                      "special_teams_anchor": 2.0}, SEASON,
+                                        decision_kinds=())  # identities read no decision block (B9)
     registry = player_bios.load()
     rows = []
     for game in package["games"]:

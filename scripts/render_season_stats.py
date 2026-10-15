@@ -13,7 +13,7 @@ if str(ROOT) not in sys.path:
 
 from runtime.bands import (
     KERNEL_2013_6_LABEL, KNOWN_DETECTION_BOUND, LEGACY_LABEL, audit, audit_drive_model, audit_field_position,
-    audit_injuries, coherence, cohorts, current_cohorts, known_detections, known_status, provisional_detections,
+    audit_injuries, audit_scoring, coherence, cohorts, current_cohorts, known_detections, known_status, provisional_detections,
 )
 from runtime.calibration_base import cohort_base
 from runtime.stat_tables import (
@@ -341,6 +341,27 @@ def team_stats_markdown(year, book, receipts=()):
                 t.get("kickoffs", 0))) + " |")
         lines.append("")
 
+    scoring_clubs = [(t, d) for t, d in clubs if d.get("kernel_2014_6_games")
+                     and "two_point_attempts" in d["team_stats"]]
+    if scoring_clubs:
+        # Kernel 2014.6 batch B9 (R8, R9, R15): counted only from kernel
+        # 2014.6 games; earlier receipts carry none of these counters.
+        lines += ["## Two-point tries, onside kicks and return touchdowns — kernel 2014.6 games", "",
+                  "Counted only from games closed under kernel 2014.6 or later; G counts those games "
+                  "only. DEF TD: interception and fumble return touchdowns; ST TD: punt return, "
+                  "blocked-kick and kickoff return touchdowns; ONS REC: the kicking club's recoveries "
+                  "of its own onside kicks.", "",
+                  "| Team | G | 2PA | 2PM | DEF TD | ST TD | ONSIDE | ONS REC |",
+                  "|---|---:|---:|---:|---:|---:|---:|---:|"]
+        for team_id, data in sorted(scoring_clubs):
+            t = data["team_stats"]
+            lines.append("| " + " | ".join(str(v) for v in (
+                team_id, data["kernel_2014_6_games"], t.get("two_point_attempts", 0),
+                t.get("two_point_conversions", 0), t.get("defensive_touchdowns", 0),
+                t.get("special_teams_touchdowns", 0), t.get("onside_kicks", 0),
+                t.get("onside_recoveries", 0))) + " |")
+        lines.append("")
+
     spots = field_position_rows(receipts)
     if spots:
         lines += ["## Field position — kernel 2013.7 games (after Week 8)", "",
@@ -405,6 +426,16 @@ POINTS_NOTE = (
     "(../../2013/regular_season/week_13_jacksonville_at_cleveland/output.md); earlier audits "
     "compared gross passing yards and read about 14 yards high)."
 )
+# Kernel 2014.6 batch B9: the "not modelled" sentence above holds for the
+# cohorts up to kernel 2014.5 only; from 2014.6 the scoring decisions are
+# modelled and graded in their own table.
+POINTS_NOTE_2014_6 = (
+    "Points: from kernel 2014.6 the two-point tries, onside kicks and the "
+    "non-offensive (interception, fumble, punt, blocked-kick and kickoff return) "
+    "touchdowns with their tries are modelled from the 2010-2014 scoring artifact "
+    "(the scoring-decision rows below); points per team-game are measured, never "
+    "forecast. Yards per team game are net of sack yards."
+)
 
 
 def _band_table(rows, cohort=None, centre_label="2012 band centre"):
@@ -462,13 +493,21 @@ def _base_cohort_lines(version, members, empty):
     drive_games, drive_rows = audit_drive_model(members, cohort=version)
     fp_games, fp_rows = audit_field_position(members, cohort=version)
     injury_games, injury_rows = audit_injuries(members, cohort=version)
+    scoring_games, scoring_rows = audit_scoring(members, cohort=version)
     checked, counts = coherence(members, cohort=version)
     sources = ", ".join("`%s`" % pin.path for role, pin in base.files if role != "specification")
+    scoring = [
+        "### Scoring-decision rows", "",
+        "Two-point tries, onside kicks and non-offensive touchdowns (kernel 2014.6 batch B9). "
+        "Centres from the base's scoring artifact; rates use 3*sqrt(p(1-p)/n) and counts "
+        "3*sqrt(c/n), and a rate row reads INSUFFICIENT SAMPLE below 30 events. INFORMATIONAL "
+        "rows are not graded and MEASURED rows have no centre.", "",
+    ] + _band_table(scoring_rows, centre_label=label) + [""] if scoring_rows else []
     return [
         "## Kernel %s cohort (%s)" % (version, _week_span(members, empty)), "",
         "**Calibration base:** %s (%s). **Team-games audited:** %d. Carry shares exclude "
         "kneels." % (base.name, sources, team_games), "",
-    ] + _band_table(rows, centre_label=label) + ["", POINTS_NOTE, "",
+    ] + _band_table(rows, centre_label=label) + ["", POINTS_NOTE_2014_6 if scoring_rows else POINTS_NOTE, "",
         "### Drive model rows", "",
         "Centres from the base's band centres (equal weight per event); tolerance is three "
         "standard errors at the observed sample.", "",
@@ -484,8 +523,7 @@ def _base_cohort_lines(version, members, empty):
         "The injury calibration's acceptance bands (kernel 2014.4 method): WITHIN when the "
         "observed value lies inside the band; the centre column is the band midpoint and the "
         "tolerance its half-width.", "",
-    ] + _band_table(injury_rows, centre_label="band midpoint") + [
-        "",
+    ] + _band_table(injury_rows, centre_label="band midpoint") + [""] + scoring + [
         "### Ledger coherence", "",
         "Zero-tolerance counts from `runtime.play_detail.check_ledger`, checked with this "
         "base's rules. Games checked: %d." % checked, "",

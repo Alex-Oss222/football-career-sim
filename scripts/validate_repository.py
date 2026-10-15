@@ -405,6 +405,20 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append(f'Call sheets cannot be checked: {exc}')
 
+    # Kernel 2014.6 batch B9 (R8, R9; U6): a committed call sheet's decisions
+    # block (Stone's standing two-point and onside rules, or a delegation)
+    # must be well formed: no probability, share or rate key, no unknown key,
+    # an explicit otherwise. A malformed block fails closed here and in the
+    # week build (WEEK_INPUTS: BLOCKED).
+    try:
+        from runtime.scoring_decisions import sheet_errors as decision_errors
+        for sheet_path in sorted((root/'career').glob('20*/**/call_sheet.json')):
+            data = json.loads(sheet_path.read_text())
+            for problem in decision_errors(data.get('decisions')):
+                require(False, f'{sheet_path.relative_to(root)}: {problem}')
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append(f'Call sheet decision blocks cannot be checked: {exc}')
+
     # Prepared 2014 storage is legitimate, but future/foreign receipts are not.
     try:
         from runtime.seasons import SeasonPaths, game_release_errors, require_receipt_season
