@@ -1,6 +1,6 @@
 # Coaching profiles
 
-[Alex Stone's profile](alex_stone_coaching_profile.md) | [Performance and job security](alex_stone_performance_review.md) | [NFL Coach Sheet](alex_stone_nfl_coach_sheet.md) | [Assistant assessments](staff_profiles.md) | [Writing template](profile_template.md)
+[Alex Stone's profile](alex_stone_coaching_profile.md) | [Ownership review and job security](alex_stone_performance_review.md) | [GM dossier and career record](alex_stone_nfl_coach_sheet.md) | [Assistant assessments](staff_profiles.md) | [Writing template](profile_template.md)
 
 This folder separates Stone's user-defined coaching identity, the assessment of his performance, and his career record. The profile was revised October 1, 2026 to adopt the user's edited draft, tone guidance and separate offensive and defensive approaches, each with passing and running sections. Each performance assessment and career record retains its own dated coverage. The [current season state](../../state/05_Current_Season_State.md) supplies the career date, and the [staff record](../2014/00_Team_Operations/Staff/coaching_staff.md) owns current assignments. Revising the profile does not complete a practice, install a concept or change an appointment.
 
@@ -9,8 +9,8 @@ This folder separates Stone's user-defined coaching identity, the assessment of 
 | Document | Reader's question | What belongs here |
 |---|---|---|
 | `alex_stone_coaching_profile.md` | Who is Stone as a head coach, and how does he approach decisions? | The user's adopted identity, preferences, teaching, relationships, preparation, tactics, delegation and public conduct. Describe the choices these produce without promising success. |
-| `alex_stone_performance_review.md` | Is he progressing, sustaining success or falling short, and what has the club decided? | A short season review, the trend across seasons, material unresolved problems, ownership's stated expectations and actual employment decisions. Detailed teaching observations stay in season reports. |
-| `alex_stone_nfl_coach_sheet.md` | What is on his resume, and what have his teams produced? | Background, appointments, calling responsibility, wins and losses, playoff finishes, season statistics, defined league ranks and rates, contract and authority. Preserve completed seasons as the career grows. |
+| `alex_stone_performance_review.md` | Is he progressing, sustaining success or falling short, and what has the club decided? | An ownership assessment of the inherited team, results, staff and player development, unresolved problems and continued employment. Distinguish the editorial ownership perspective from recorded club decisions; link detailed teaching observations to their season reports. |
+| `alex_stone_nfl_coach_sheet.md` | What would a GM need to know about hiring him, and what has he actually done? | The hiring case, actual responsibilities, inherited teams, coaching evidence and unresolved questions, followed by background, appointments, results, statistics, contract and authority. Preserve completed seasons as the career grows. |
 | `staff_profiles.md` | What has each assistant demonstrated? | The existing assistant assessments and their dated changes. Current appointments belong in the season staff record. |
 | `profile_template.md` | How should an assessment be written and updated? | Short prompts for the three functions, with no requirement to fill unsupported fields. |
 
@@ -58,4 +58,7 @@ These are references for editing the documents, not sources for Stone's biograph
 
 ## Preserved versions
 
+On October 3, 2026, the user selected the GM dossier and ownership review from [PR #226](https://github.com/Alex-Oss222/football-career-sim/pull/226) for adoption in the existing coach-sheet and performance-review files. Both cover the career through September 28, 2014. The original coaching profile was retained unchanged; its proposed rewrite was not adopted. This selection creates no new employment decision or football event.
+
 The October 1, 2026 rewrite renamed and condensed the three Stone files. Their complete earlier texts remain at the pinned revision: [profile and updates](https://github.com/Alex-Oss222/football-career-sim/blob/ed75f2bc8b9c4abe13d7d8e30a38507196642773/career/coaching_profiles/alex_stone.md), [February 2 assessment](https://github.com/Alex-Oss222/football-career-sim/blob/ed75f2bc8b9c4abe13d7d8e30a38507196642773/career/coaching_profiles/alex_stone_2013_assessment_record.md), and [February 28 coach sheet](https://github.com/Alex-Oss222/football-career-sim/blob/ed75f2bc8b9c4abe13d7d8e30a38507196642773/career/coaching_profiles/alex_stone_coach_sheet.md). The rewrite adds no football event, role decision or change of authority.
+
