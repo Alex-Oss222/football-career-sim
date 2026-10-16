@@ -244,6 +244,15 @@ Stone adopted three recommendations on October 2, 2026, with the branch at Septe
   - *F2* (after the first acceptance runs): F1 still merged a thin last-two-minutes cell with the 2:01-10:00 buckets, so the chart punted where the real clubs of the state went for it (three trailing-overtime punts against R14's zero-tolerance row; 357 gos against 449 real in the last two minutes when the chart is read back on its own rows). F2 widens the field zone within the last two minutes' own state first and applies the pre-build specification's R14 (a trailing overtime offense does not punt) to the chart. One alternative (widening every late state first) is recorded with its read-back.
   - *Coach decisions are never graded.* A punt decided by Stone's block or live answer is left out of the zero-tolerance and late trailing-punt band rows, as B9's chart rows leave out his tries and kickoffs.
 
+### Ball security (batch B10, October 16, 2026; implementation, not a new decision)
+
+The plan's B10 (W4 and R12 layers A, B and C) is built under `PROFILE_2014_6` only; the mechanism is in `runtime/README.md` (batch B10) and the league record in [the ball-security calibration](../library/2010_2014_ball_security_calibration.md).
+
+- **Fumble credit is never evidence (E1).** The fumbler, the forcer, the recoverer and the muffer of a 2014.6 game are named for the stat line only. Fumbles, lost fumbles, muffs, forced fumbles and recoveries (and, from batch B11, penalties) are excluded from `player_evidence` and from any progression evidence: the lost-fumble observation the kernel wrote before B10 is withheld under the credit, and no progression or observables reader takes these counters. A forcer or recoverer drawn evenly from his position group on the field, and an unrecorded muffer named the club's returner, are labelled conventions (`attribution` on every name), never observations about the player.
+- **Slope-0 terms.** Carrier ball security, returner muffs and defender forcing are named terms at 0, "not studied (admissible 2010-2012 evidence exists)" (`runtime.ball_security.TERMS`). No player's history moves a fumble, a muff or a forced fumble, and a real player's own 2013-2014 rows never set his value.
+- **Results.** Layer A and W4 change no outcome and no exposure (the projection gate). Layer B (a lost fumble's terminal snap kind from the replayed drive) and layer C (the kicking club's recoveries of kicks and punts at their real frequency) change results; each can be held by its own flag.
+- **Overtime punts** exclude retained records (counted) until a two-source amendment on muffs against return fumbles is recorded; overtime kickoffs follow R4.
+
 ### Other inputs in force
 
 - The 2014 points of emphasis are modelled before Week 5, from Stone's list.

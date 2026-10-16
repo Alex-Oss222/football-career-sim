@@ -27,7 +27,7 @@ from runtime.calibration_base import BASE_2010_2014W4
 from runtime.game_runner import build_game_packet
 from runtime.kernel import resolve_game, validate_result
 from runtime.play_detail import check_ledger, scoring_events
-from runtime.profiles import B9_FLAGS, B9F_FLAGS, PROFILE_2014_5, PROFILE_2014_6, Profile
+from runtime.profiles import B9_FLAGS, B9F_FLAGS, B10_FLAGS, PROFILE_2014_5, PROFILE_2014_6, Profile
 from runtime.rules import extra_point_rule, ot_history, ot_status, try_rule
 from runtime.statbook import (KERNEL_2014_6_PLAYER_FIELDS, KERNEL_2014_6_TEAM_STAT_FIELDS, aggregate_receipts,
                               make_receipt)
@@ -46,11 +46,13 @@ DELEGATION = {"otherwise": "league", "source": "fixture: follow the league chart
 # answer only scoring pauses delegate the controlled club's fourth downs to
 # the league chart, so every fourth down is decided as in the autonomous run.
 FOURTH = {"fourth_down_policy": {"otherwise": "league"}}
-# The B9 level of kernel 2014.6 (without the B9F live fourth downs): the
-# seed-pinned reproductions below were found under it, and B9F changes every
-# later fourth-down possession, so they keep reproducing at this level.
+# The B9 level of kernel 2014.6 (without the B9F live fourth downs and the
+# B10 ball security): the seed-pinned reproductions below were found under
+# it, and B9F changes every later fourth-down possession (B10 every later
+# lost-fumble layout and retained kick), so they keep reproducing at this
+# level.
 PROFILE_B9_LEVEL = Profile("2014.6", base=PROFILE_2014_6.base, cell_rules=PROFILE_2014_6.cell_rules,
-                           strength=PROFILE_2014_6.strength, flags=PROFILE_2014_6.flags - B9F_FLAGS,
+                           strength=PROFILE_2014_6.strength, flags=PROFILE_2014_6.flags - B9F_FLAGS - B10_FLAGS,
                            record_base=True)
 WEEK4_SHEET = ROOT / "career/2014/05_Regular_Season/Games/Week_04/call_sheet.json"
 SCORING_SOURCES = set(sd.SOURCES)
@@ -555,7 +557,11 @@ class ForcedCaseTests(unittest.TestCase):
         self.assertEqual(q["non_offensive_score"]["return_yards"], 100 - q["end_spot"])
         row = [x for x in r["play_ledger"] if x["drive"] == q["number"] and x["play_type"] in ("pass", "run")][-1]
         self.assertEqual(row["yardline"], q["end_spot"] + row["result_yards"])
-        self.assertEqual(r["team_stats"][other(q["team"])]["players"][row["tackler"]]["fumble_return_touchdowns"], 1)
+        # Batch B10: the return touchdown is the recoverer's (the fumble
+        # record's), a credit separate from the forcer's tackle.
+        scorer = row["fumble"]["recovered_by"]
+        self.assertEqual(row["fumble"]["recovering_team"], other(q["team"]))
+        self.assertEqual(r["team_stats"][other(q["team"])]["players"][scorer]["fumble_return_touchdowns"], 1)
 
     def test_fumble_rate_reads_the_bin_of_the_fumbled_snaps_line(self):
         # b9-seek-14, drive 7: a lost fumble snapped from the 84 (bin 81-99)

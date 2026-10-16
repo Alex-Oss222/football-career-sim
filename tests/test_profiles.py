@@ -19,7 +19,7 @@ import unittest
 from runtime import KERNEL_VERSION
 from runtime.calibration_base import BASE_2012, CalibrationBaseError, base_for_kernel
 from runtime.kernel import resolve_game, validate_result
-from runtime.profiles import PROFILE_2014_5, PROFILE_2014_6, PROFILES, Profile, profile_for
+from runtime.profiles import B10_FLAGS, PROFILE_2014_5, PROFILE_2014_6, PROFILES, Profile, profile_for
 from runtime.statbook import (KERNEL_2014_6_FIELD_GROUP, KERNEL_2014_6_PLAYER_FIELDS,
                               KERNEL_2014_6_TEAM_STAT_FIELDS)
 from synthetic_games import EVENT_PREFIX, SAMPLE_SIZE, SEED, sample_teams
@@ -54,6 +54,9 @@ def strip_2014_6_fields(result):
         for key in group.get("fourth_down", ()):
             if isinstance(p.get("fourth_down"), dict):
                 p["fourth_down"].pop(key, None)
+        for key in group.get("punt", ()):
+            if isinstance(p.get("punt"), dict):
+                p["punt"].pop(key, None)
     from runtime.statbook import KERNEL_2014_6_LEDGER_ROWS
     out["play_ledger"] = [row for row in out.get("play_ledger", ())
                           if row.get("play_type") not in KERNEL_2014_6_LEDGER_ROWS]
@@ -114,7 +117,10 @@ class ProfileTableTests(unittest.TestCase):
                                                           "two_point_tries", "return_touchdowns",
                                                           "onside_kicks",
                                                           # batch B9F (live fourth downs)
-                                                          "fourth_down_decisions"}))
+                                                          "fourth_down_decisions",
+                                                          # batch B10 (W4, R12 layers A, B and C)
+                                                          "ball_security_credit", "fumble_terminal_kind",
+                                                          "retained_kicks"}))
         a, b = sample_teams()
         r = resolve_game(a, b, seed=SEED + b"-b5-2014-6", event_id="b5-2014-6", _test_profile=PROFILE_2014_6)
         self.assertEqual(r["kernel_version"], "2014.6")
@@ -139,14 +145,26 @@ class ProfileTableTests(unittest.TestCase):
         for flag in ("possession_sequencing", "clock_detail_v1"):
             with self.assertRaises(ValueError):
                 Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PROFILE_2014_6.strength,
-                        flags=PROFILE_2014_6.flags - {flag, "two_point_tries", "return_touchdowns", "onside_kicks"})
+                        flags=PROFILE_2014_6.flags - B10_FLAGS
+                        - {flag, "two_point_tries", "return_touchdowns", "onside_kicks"})
         # Batch B9: a scoring flag needs possession_sequencing (FLAG_REQUIRES),
         # refused when the profile is constructed.
         for flag in ("two_point_tries", "return_touchdowns", "onside_kicks"):
             with self.assertRaises(ValueError):
                 Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PROFILE_2014_6.strength,
-                        flags=PROFILE_2014_6.flags - {"possession_sequencing", "fourth_down_decisions"} - (
+                        flags=PROFILE_2014_6.flags - B10_FLAGS - {"possession_sequencing", "fourth_down_decisions"} - (
                             {"two_point_tries", "return_touchdowns", "onside_kicks"} - {flag}))
+        # Batch B10: layers B and C need the credit layer, and layer C
+        # (retained kicks) possession_sequencing; the credit layer alone
+        # needs nothing.
+        for removed in ({"ball_security_credit"}, {"ball_security_credit", "fumble_terminal_kind"},
+                        {"ball_security_credit", "retained_kicks"}, {"possession_sequencing"}):
+            with self.assertRaises(ValueError):
+                Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PROFILE_2014_6.strength,
+                        flags=PROFILE_2014_6.flags - removed - {"two_point_tries", "return_touchdowns",
+                                                                "onside_kicks", "fourth_down_decisions"})
+        Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PROFILE_2014_6.strength,
+                flags=PROFILE_2014_6.flags - B10_FLAGS | {"ball_security_credit"})
 
     def test_only_a_profile_is_accepted(self):
         a, b = sample_teams()
@@ -205,27 +223,36 @@ class StripFieldGroupTests(unittest.TestCase):
         # (R8, R9, R15) the frozen decision blocks, the offensive try record,
         # the onside decision fields, the try-row and onside ledger fields,
         # and its team and player counters; batch B9F the possession's
-        # fourth-down records and segments and the ledger's decision mark.
+        # fourth-down records and segments and the ledger's decision mark;
+        # batch B10 (W4, R12) the ball-security marker, the possession's
+        # credited fumbles, the kick's and the punt summary's fumble, the
+        # ledger's fumble record, muffer and own recovery yards, and its team
+        # and player counters.
         self.assertEqual(set(KERNEL_2014_6_FIELD_GROUP),
-                         {"result", "possession", "ledger", "team", "player", "fourth_down", "kickoff"})
+                         {"result", "possession", "ledger", "team", "player", "fourth_down", "kickoff", "punt"})
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["result"],
-                         ("calibration_base", "substitutions", "kicks", "scoring_events", "decision_policies"))
+                         ("calibration_base", "substitutions", "kicks", "scoring_events", "decision_policies",
+                          "ball_security"))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["possession"],
-                         ("last_spike_seconds_left", "non_offensive_score", "try", "fourth_downs", "segments"))
+                         ("last_spike_seconds_left", "non_offensive_score", "try", "fourth_downs", "segments",
+                          "fumbles"))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["kickoff"],
                          ("remaining", "chain", "after_drive", "basis", "touchdown", "scoring_team", "xp_made", "points",
-                          "onside", "cell", "p_onside", "recovery_class", "p_recover", "try"))
+                          "onside", "cell", "p_onside", "recovery_class", "p_recover", "try", "fumble"))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["ledger"],
                          ("decision_source", "anchor", "scoring_team", "decision", "basis", "cell", "p_go", "points",
-                          "onside", "recovered_by", "blocked", "scorer", "attribution", "fourth_down_decision"))
+                          "onside", "recovered_by", "blocked", "scorer", "attribution", "fourth_down_decision",
+                          "fumble", "muffed_by", "own_recovery_yards"))
+        self.assertEqual(KERNEL_2014_6_FIELD_GROUP["punt"], ("fumble",))
         self.assertEqual(KERNEL_2014_6_TEAM_STAT_FIELDS,
                          ("two_point_attempts", "two_point_conversions", "defensive_touchdowns",
-                          "special_teams_touchdowns", "onside_kicks", "onside_recoveries"))
+                          "special_teams_touchdowns", "onside_kicks", "onside_recoveries",
+                          "fumbles", "fumbles_lost", "muffs", "kicking_team_recoveries"))
         self.assertEqual(KERNEL_2014_6_PLAYER_FIELDS,
                          ("passing_two_point_conversions", "receiving_two_point_conversions",
                           "rushing_two_point_conversions", "interception_return_touchdowns",
                           "fumble_return_touchdowns", "punt_return_touchdowns", "kick_return_touchdowns",
-                          "blocked_kick_touchdowns"))
+                          "blocked_kick_touchdowns", "muffs", "fumbles_recovered_own"))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["fourth_down"], ("decision_source",))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["team"], KERNEL_2014_6_TEAM_STAT_FIELDS)
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["player"], KERNEL_2014_6_PLAYER_FIELDS)

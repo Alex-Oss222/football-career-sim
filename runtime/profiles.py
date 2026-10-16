@@ -111,6 +111,29 @@ otherwise):
   punt outcome with the same matchup terms), and a conversion continues the
   possession with a continuation segment drawn from the new spot.
 
+Batch B10 (ball security; W4 and R12 layers A, B and C) adds three flags, each
+needing a base that pins the ball-security artifact and carries the schema-3
+fumble annotations (CalibrationBase.ball_security; the kernel fails closed
+otherwise):
+
+- ball_security_credit (W4 and layer A; credit only): a muffed kick names its
+  muffer by the record's role, every kept or out-of-bounds fumble of the
+  replayed drive is seated on its laid-out snap with its fumbler, forcer and
+  recoverer named from the side-aware on-field sets, a kick fumble's from
+  the kick play's units, each with its attribution; fumbles, muffs, forced
+  fumbles and recoveries are never player evidence. Outcomes and the
+  per-drive exposure are unchanged.
+- fumble_terminal_kind (layer B; needs ball_security_credit): a lost
+  fumble's terminal snap kind comes from the tuple's own lost entry, an
+  aborted snap carried by the quarterback or the centre (result-changing on
+  the chain-layout stream).
+- retained_kicks (layer C; needs possession_sequencing and
+  ball_security_credit): the kick and punt pools hold the kicking club's
+  recoveries at their real frequency; the turnover is the receiving club's,
+  the next possession the kicking club's; overtime kickoffs follow library
+  rule R4 and overtime punts exclude retained records, counted
+  (result-changing).
+
 A base names the flags its readers require (CalibrationBase.requires_flags):
 a profile resolving on it must hold them, and a profile holding base_2014_6
 or regimes_v3 on a base that does not serve them fails closed.
@@ -189,11 +212,15 @@ B9_FLAGS = frozenset({"two_point_tries", "return_touchdowns", "onside_kicks"})
 # (the possession's records) and clock_detail_v1 (the W5a stamps that time a
 # decision and the segments of a continued possession).
 B9F_FLAGS = frozenset({"fourth_down_decisions"})
-FLAGS = BASE_FLAGS | {"injury_2014_6", "usage_2014_6"} | B6_FLAGS | B8_FLAGS | B9_FLAGS | B9F_FLAGS
+# Batch B10 mechanism flags (W4 and R12 layers A, B and C).
+B10_FLAGS = frozenset({"ball_security_credit", "fumble_terminal_kind", "retained_kicks"})
+FLAGS = BASE_FLAGS | {"injury_2014_6", "usage_2014_6"} | B6_FLAGS | B8_FLAGS | B9_FLAGS | B9F_FLAGS | B10_FLAGS
 # A mechanism flag that needs another flag's records (a profile holding it
 # without them is refused at construction).
 FLAG_REQUIRES = {flag: B8_FLAGS for flag in B9_FLAGS}
 FLAG_REQUIRES["fourth_down_decisions"] = frozenset({"possession_sequencing", "clock_detail_v1"})
+FLAG_REQUIRES["fumble_terminal_kind"] = frozenset({"ball_security_credit"})
+FLAG_REQUIRES["retained_kicks"] = frozenset({"possession_sequencing", "ball_security_credit"})
 
 
 def _legacy_base():
@@ -206,7 +233,8 @@ PROFILE_2014_6 = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", stre
                          flags=frozenset({"base_2014_6", "regimes_v3", "injury_2014_6", "usage_2014_6",
                                           "early_fg_v2", "clock_detail_v1", "substitution_record",
                                           "possession_sequencing", "two_point_tries", "return_touchdowns",
-                                          "onside_kicks", "fourth_down_decisions"}),
+                                          "onside_kicks", "fourth_down_decisions", "ball_security_credit",
+                                          "fumble_terminal_kind", "retained_kicks"}),
                          record_base=True)
 
 PROFILES = {p.kernel_version: p for p in (PROFILE_2014_5, PROFILE_2014_6)}

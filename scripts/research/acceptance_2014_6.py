@@ -85,6 +85,30 @@ SACK_SHIFT_CLAMP shares, the club points and margin spread.
           fit's own scale (a1's six Plus floors lift both clubs' passing
           composite about 4.3 units above the real target-set centre).
 
+Batch B10 (ball security, W4 and R12 layers A, B and C).
+
+  ball-layers ball-layers-2014.6-0 .. -399: the sample clubs (no strength
+              records, home venue) under four profile levels on the same
+              labels: kernel 2014.6 without the B10 flags, with the credit
+              layer alone, without layer B, and PROFILE_2014_6. It reports
+              (1) the credit layer's projection identity against the level
+              without it (outcomes, per-drive injury exposure and kick-unit
+              credit identical once the declared fields are stripped: the
+              2014.6 field group, player lines, player evidence,
+              diagnostics, and a row's tackle names) and the forced-fumble
+              tackle shifts it made; (2) layer B: on every game, the first
+              possession at which PROFILE_2014_6 and the level without
+              layer B differ, whether it is a lost-fumble drive, and
+              whether its terminal snap kind, its completions, its yard
+              values or its layout resample changed, with the terminal
+              fallbacks; (3) layer C: retained kicks and the overtime punts
+              whose retained records were excluded.
+
+  --without F1,F2  (a1, a1z, a2, slate, dev) the same labels under the
+              profile less those flags, a reading of what a mechanism moves
+              (for example --block a2 --without fourth_down_decisions); never
+              the acceptance profile itself.
+
 The 12,000-game sweep is scripts/research/seed_sweep.py --block a6.
 
 Nothing is written unless --out names a file. Synthetic seeds only: no
@@ -112,7 +136,9 @@ BLOCKS = {"a1": ("acc-2014.6-", 1000), "a2": ("acc-2014.6-x", 2000), "slate": ("
           # Batch B9 readings with their own summaries (swap_block, late_onside_block).
           "swap": ("swap2-2014.6-", 120), "late-onside": ("late-onside-2014.6-", 600),
           # Batch B9F reading with its own summary (fourth_swap_block).
-          "fourth-swap": ("fourth-swap-2014.6-", 120)}
+          "fourth-swap": ("fourth-swap-2014.6-", 120),
+          # Batch B10 reading with its own summary (ball_layers_block).
+          "ball-layers": ("ball-layers-2014.6-", 400)}
 # The swap block's blocks (tests/test_scoring_decisions.py GO_LATE and ONSIDE_LATE).
 GO_LATE = {"otherwise": "kick", "rules": [{"when": {"period": [4], "diff_after_td": [-2, -5, -10]}, "decision": "go"},
                                           {"when": {"period": [1, 2, 3], "diff_after_td": {"min": 16}}, "decision": "go"}]}
@@ -135,7 +161,13 @@ DIAGNOSTICS = ("chain_layout_failed", "chain_layout_resampled", "chain_layout_re
                "h1_late_infeasible", "h1_neutral_infeasible", "clock_expiry_zero", "timeout_unavailable_kept",
                "ot_leading_offense",
                # batch B6: the W3 closable fallback and the W5a stamp exemptions
-               "fg_fourth_down_relaxed", "clock_gap_exempt", "timeout_seat_fallback")
+               "fg_fourth_down_relaxed", "clock_gap_exempt", "timeout_seat_fallback",
+               # batch B10: kept-fumble seating, layer B's terminal fallbacks,
+               # the forced-fumble tackle shift and the overtime retained-punt
+               # exclusion
+               "kept_fumble_unseated", "kept_fumble_kind_fallback", "kept_fumble_cut", "fumble_terminal_fallback",
+               "lost_fumble_entry_synthesized", "forced_fumble_tackle_moved", "ot_punt_retained_excluded",
+               "ot_punt_retained_records_excluded", "retained_kick_without_fumble", "lost_fumble_entry_unused")
 
 
 def entropy(label):
@@ -144,6 +176,9 @@ def entropy(label):
 
 
 LATENT_REF = 0
+# Batch B10: --without drops profile flags for a reading on the same labels
+# (the level without a mechanism); never the acceptance profile itself.
+WITHOUT = frozenset()
 SYNTHETIC_REFERENCE = b"acc-2014.6-synthetic-reference"
 FAMILY_OF_GROUP = {"QB": "QB", "RB": "RB", "FB": "RB", "WR": "WR", "TE": "TE", "DL": "DL", "LB": "LB", "DB": "DB",
                    "K": "K", "P": "P"}
@@ -287,9 +322,23 @@ def fixture(block, index, version="2014.6"):
     return home, away, "home"
 
 
+def run_profile(version, without=frozenset()):
+    """The kernel profile of a run: profile_for(version) less the --without
+    flags (batch B10; a reading on the same labels)."""
+    from runtime.profiles import Profile, profile_for
+    profile = profile_for(version)
+    if not without:
+        return profile
+    if set(without) - profile.flags:
+        raise ValueError("--without names flags the profile does not hold: %s" % sorted(set(without) - profile.flags))
+    return Profile(profile.kernel_version, base=profile.base, cell_rules=profile.cell_rules,
+                   strength=profile.strength, flags=profile.flags - frozenset(without), record_base=True)
+
+
 def play(job):
     global LATENT_REF
-    block, index, version, LATENT_REF = job
+    block, index, version, LATENT_REF = job[:4]
+    without = job[4] if len(job) > 4 else frozenset()
     from runtime.kernel import resolve_game, validate_result
     from runtime.profiles import profile_for
     from runtime.statbook import make_receipt
@@ -299,7 +348,7 @@ def play(job):
     strength_rows = []
     try:
         result = resolve_game(home, away, seed=entropy(label), event_id=label, venue=venue,
-                              _test_profile=profile_for(version), _test_strength_receipt=strength_rows)
+                              _test_profile=run_profile(version, without), _test_strength_receipt=strength_rows)
     except Exception as exc:  # a refused game is a finding
         return {"label": label, "refused": ["%s: %s" % (type(exc).__name__, exc)]}
     errors = validate_result(result)
@@ -325,7 +374,7 @@ def run(block, version, count=None, start=0, jobs=1):
     stop = (start + count) if count is not None else total
     if total is not None:
         stop = min(stop, total)
-    work = [(block, i, version, LATENT_REF) for i in range(start, stop)]
+    work = [(block, i, version, LATENT_REF, WITHOUT) for i in range(start, stop)]
     if jobs > 1:
         with multiprocessing.Pool(jobs) as pool:
             rows = pool.map(play, work, chunksize=4)
@@ -563,6 +612,145 @@ def fourth_swap_block(version="2014.6", jobs=1, count=None):
                      and abs(z_points) <= 3 and abs(z_go) <= 3 and abs(z_conv) <= 3)}
 
 
+# ---- batch B10 reading: the ball-security layers ------------------------------------------------
+
+def _b10_levels():
+    from runtime.profiles import B10_FLAGS, PROFILE_2014_6, Profile
+
+    def level(flags):
+        return Profile("2014.6", base=PROFILE_2014_6.base, cell_rules=PROFILE_2014_6.cell_rules,
+                       strength=PROFILE_2014_6.strength, flags=frozenset(flags), record_base=True)
+    off = PROFILE_2014_6.flags - B10_FLAGS
+    return {"off": level(off), "credit": level(off | {"ball_security_credit"}),
+            "no_layer_b": level(PROFILE_2014_6.flags - {"fumble_terminal_kind"}), "full": PROFILE_2014_6}
+
+
+def _b10_projection(result):
+    """The outcome a credit-only change may not move (ball_layers_block)."""
+    from test_profiles import strip_2014_6_fields
+    out = strip_2014_6_fields(result)
+    for key in ("player_evidence", "diagnostics"):
+        out.pop(key, None)
+    for team in out["team_stats"].values():
+        team.pop("players", None)
+    for row in out["play_ledger"]:
+        row.pop("tackler", None)
+        row.pop("assist_tackler", None)
+    return out
+
+
+def ball_layers_play(job):
+    index = job
+    from unittest import mock
+    from runtime import chains, participation
+    from runtime.kernel import resolve_game, validate_result
+    from synthetic_games import sample_teams
+    home, away = sample_teams()
+    label = "%s%d" % (BLOCKS["ball-layers"][0], index)
+    out = {"label": label, "refused": None}
+    results, exposure, layouts = {}, {}, {}
+    real_scrimmage, real_credit, real_layout = participation.scrimmage, participation.credit, chains.drive_layout
+    for name, profile in _b10_levels().items():
+        hazards, kicks, laid = [], [], []
+
+        def drive_layout(**kw):
+            out = real_layout(**kw)
+            laid.append({"drive": kw["drive_no"], "category": kw["category"], "lost_kind": kw.get("lost_kind"),
+                         "terminal": out["terminal"], "kinds": list(out["kinds"]),
+                         "completed": list(out["completed"]), "values": list(out["values"])})
+            return out
+
+        def scrimmage(*args, **kw):
+            snaps = real_scrimmage(*args, **kw)
+            if kw.get("hazard_out") is not None:
+                hazards.append(json.dumps(kw["hazard_out"], sort_keys=True))
+            return snaps
+
+        def credit(stats, team_id, snaps, side):
+            if side == "special_teams":
+                kicks.append((team_id, sorted(snaps)))
+            return real_credit(stats, team_id, snaps, side)
+        try:
+            with mock.patch.object(participation, "scrimmage", scrimmage), \
+                    mock.patch.object(participation, "credit", credit), \
+                    mock.patch.object(chains, "drive_layout", drive_layout):
+                results[name] = resolve_game(home, away, seed=entropy(label), event_id=label, _test_profile=profile)
+        except Exception as exc:  # a refused game is a finding
+            out["refused"] = "%s (%s): %s" % (name, type(exc).__name__, exc)
+            return out
+        exposure[name] = (hazards, kicks)
+        layouts[name] = laid
+    out["errors"] = sum(len(validate_result(r)) for r in results.values())
+    credit, off = results["credit"], results["off"]
+    out["credit_identical"] = (_b10_projection(credit) == _b10_projection(off)
+                               and exposure["credit"] == exposure["off"])
+    out["credit_fumbles"] = sum(len(p.get("fumbles") or ()) for p in credit["possessions"])
+    out["tackle_moved"] = credit["diagnostics"].get("forced_fumble_tackle_moved", 0)
+    full, no_b = results["full"], results["no_layer_b"]
+    out["terminal_fallback"] = full["diagnostics"].get("fumble_terminal_fallback", 0)
+    # Layer B moves a drive only through its layout: the first laid-out drive
+    # (a drawn drive or a fourth-down segment) at which the two levels
+    # differ, and what differs there.
+    def shape(laid):
+        return {k: v for k, v in laid.items() if k != "lost_kind"}
+    first = next(((a, b) for a, b in zip(layouts["full"], layouts["no_layer_b"]) if shape(a) != shape(b)), None)
+    out["layer_b"] = None
+    if first is not None or full["final_score"] != no_b["final_score"]:
+        a, b = first or ({}, {})
+        entry = {"lost_fumble_drive": a.get("category") == "fumble_lost" == b.get("category")
+                 and a.get("drive") == b.get("drive") and a.get("lost_kind") is not None}
+        if entry["lost_fumble_drive"]:
+            pa = next((p for p in full["possessions"] if p["number"] == a["drive"]), {})
+            pb = next((p for p in no_b["possessions"] if p["number"] == b["drive"]), {})
+            entry.update(terminal_kind=a["terminal"] != b["terminal"], plan=a["kinds"] != b["kinds"],
+                         completions=a["completed"] != b["completed"], values=a["values"] != b["values"],
+                         resample=pa.get("layout_resample") != pb.get("layout_resample"),
+                         entry_kind_kept=a["terminal"] == a["lost_kind"])
+        out["layer_b"] = entry
+    out["kicks_retained"] = sum(k["outcome"] == "retained" for k in full["kickoffs"])
+    out["punts_retained"] = sum((p.get("punt") or {}).get("outcome") == "retained" for p in full["possessions"])
+    out["ot_punt_excluded"] = full["diagnostics"].get("ot_punt_retained_excluded", 0)
+    out["team_games"] = 2
+    return out
+
+
+def ball_layers_block(version="2014.6", jobs=1, count=None):
+    """The B10 layer readings (module docstring, block ball-layers)."""
+    work = list(range(count or BLOCKS["ball-layers"][1]))
+    if jobs > 1:
+        with multiprocessing.Pool(jobs) as pool:
+            rows = pool.map(ball_layers_play, work, chunksize=4)
+    else:
+        rows = [ball_layers_play(job) for job in work]
+    refused = [r for r in rows if r["refused"]]
+    played = [r for r in rows if not r["refused"]]
+    diverged = [r["layer_b"] for r in played if r["layer_b"] is not None]
+    lost = [d for d in diverged if d["lost_fumble_drive"]]
+    out = {"block": "ball-layers", "games": len(rows), "refused_games": len(refused),
+           "refused": [{"label": r["label"], "refused": r["refused"]} for r in refused[:50]],
+           "validation_errors": sum(r["errors"] for r in played),
+           "credit_identical_games": sum(r["credit_identical"] for r in played),
+           "credit_fumbles": sum(r["credit_fumbles"] for r in played),
+           "credit_tackle_moved": sum(r["tackle_moved"] for r in played),
+           "layer_b_games_changed": len(diverged),
+           "layer_b_first_change_on_a_lost_fumble_drive": len(lost),
+           "layer_b_terminal_kind_changed": sum(d["terminal_kind"] for d in lost),
+           "layer_b_plan_changed": sum(d["plan"] for d in lost),
+           "layer_b_completions_changed": sum(d["completions"] for d in lost),
+           "layer_b_values_changed": sum(d["values"] for d in lost),
+           "layer_b_resample_changed": sum(d["resample"] for d in lost),
+           "layer_b_entry_kind_kept": sum(d["entry_kind_kept"] for d in lost),
+           "layer_b_terminal_fallbacks": sum(r["terminal_fallback"] for r in played),
+           "retained_kickoffs": sum(r["kicks_retained"] for r in played),
+           "retained_punts": sum(r["punts_retained"] for r in played),
+           "ot_punts_retained_excluded": sum(r["ot_punt_excluded"] for r in played),
+           "team_games": sum(r["team_games"] for r in played)}
+    out["pass"] = not (out["refused_games"] or out["validation_errors"]
+                       or out["credit_identical_games"] != len(played)
+                       or len(lost) != len(diverged))
+    return out
+
+
 def grade(receipts, version, provisional=True):
     """Graded tables with each row's registry status. provisional=False is
     the B17 re-grade: provisional detections (runtime.bands
@@ -574,7 +762,9 @@ def grade(receipts, version, provisional=True):
                      # Batch B9 (R8, R9, R15): the scoring-decision rows.
                      ("scoring", bands.audit_scoring),
                      # Batch B9F: the fourth-down rows.
-                     ("fourth_down", bands.audit_fourth_down)):
+                     ("fourth_down", bands.audit_fourth_down),
+                     # Batch B10: the ball-security rows.
+                     ("ball_security", bands.audit_ball_security)):
         team_games, rows = fn(receipts, cohort=version)
         out[name] = {"team_games": team_games,
                      "rows": [[m, o, c, t, bands.known_status((m, o, c, t, s), version, provisional)]
@@ -639,9 +829,15 @@ def main():
                         help="the B17 view: grade provisional detections as unregistered rows")
     parser.add_argument("--latent-ref", type=int, default=0,
                         help="batch B7: the synthetic season reference index for player-state draws")
+    parser.add_argument("--without", default="",
+                        help="batch B10: comma-separated profile flags to drop for a reading on the same labels "
+                             "(a1, a1z, a2, slate and dev blocks only)")
     args = parser.parse_args()
-    global LATENT_REF
+    global LATENT_REF, WITHOUT
     LATENT_REF = args.latent_ref
+    WITHOUT = frozenset(f for f in args.without.split(",") if f)
+    if WITHOUT:
+        run_profile(args.profile, WITHOUT)  # fail early on a flag the profile does not hold
     if args.block == "dev" and args.count is None:
         parser.error("the dev block needs --count")
     if args.block == "fourth-swap":
@@ -658,6 +854,27 @@ def main():
         print("Jacksonville against Denver labels: points z %.2f, go share z %.2f, conversion z %.2f; %s" % (
             result["z_points_jax_vs_den"], result["z_go_share_jax_vs_den"], result["z_conversion_jax_vs_den"],
             "PASS" if result["pass"] else "FAIL"))
+        return 0 if result["pass"] else 1
+    if args.block == "ball-layers":
+        result = ball_layers_block(args.profile, args.jobs, args.count)
+        if args.out:
+            args.out.write_text(json.dumps(result, indent=1, sort_keys=True, default=str) + "\n", encoding="utf-8")
+        print("ball-layers: %d games, %d refused, %d validation errors" % (
+            result["games"], result["refused_games"], result["validation_errors"]))
+        print("layer A: %d of %d games identical to the level without B10 once the declared fields are stripped; "
+              "%d fumbles credited, %d forced-fumble tackles moved to the forcer" % (
+                  result["credit_identical_games"], result["games"] - result["refused_games"],
+                  result["credit_fumbles"], result["credit_tackle_moved"]))
+        print("layer B: %d games changed, the first change on a lost-fumble drive in %d; of those the terminal kind "
+              "changed in %d, the snap plan in %d, completions in %d, yard values in %d, the layout resample in %d; "
+              "%d terminal fallbacks" % (
+                  result["layer_b_games_changed"], result["layer_b_first_change_on_a_lost_fumble_drive"],
+                  result["layer_b_terminal_kind_changed"], result["layer_b_plan_changed"],
+                  result["layer_b_completions_changed"], result["layer_b_values_changed"],
+                  result["layer_b_resample_changed"], result["layer_b_terminal_fallbacks"]))
+        print("layer C: %d retained kickoffs, %d retained punts over %d team-games; %d overtime punts excluded "
+              "retained records; %s" % (result["retained_kickoffs"], result["retained_punts"], result["team_games"],
+                                        result["ot_punts_retained_excluded"], "PASS" if result["pass"] else "FAIL"))
         return 0 if result["pass"] else 1
     if args.block in ("swap", "late-onside"):
         result = (swap_block if args.block == "swap" else late_onside_block)(args.profile, args.jobs, args.count)
@@ -685,10 +902,12 @@ def main():
     rows = run(args.block, args.profile, args.count, args.start, args.jobs)
     result = summary(rows, args.profile, provisional=not args.regrade_provisional)
     result["block"] = args.block
+    result["without"] = sorted(WITHOUT)
     if args.out:
         args.out.write_text(json.dumps(result, indent=1, sort_keys=True, default=str) + "\n", encoding="utf-8")
-    print("acceptance %s, kernel profile %s: %d games, %d refused; coherence violations %s; audit-only %s" % (
-        args.block, args.profile, result["games"], result["refused_games"],
+    print("acceptance %s, kernel profile %s%s: %d games, %d refused; coherence violations %s; audit-only %s" % (
+        args.block, args.profile, (" without " + ", ".join(sorted(WITHOUT))) if WITHOUT else "",
+        result["games"], result["refused_games"],
         result["bands"]["coherence"]["violations"] or "none",
         result["bands"]["coherence"].get("audit_only") or "none"))
     print("diagnostics: " + ", ".join("%s %d" % kv for kv in sorted(result["diagnostics"].items()) if kv[1]))

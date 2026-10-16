@@ -18,10 +18,12 @@ from . import player_state
 from . import usage
 from . import scoring_decisions as scoring
 from . import fourth_down as fourth
+from . import ball_security
 from .player_evidence import empty_player_stats, normalize_players, observation
 from .profiles import Profile, profile_for
 from .play_detail import (
-    KICKOFF_DETAIL_TAG, PUNT_BLOCKED_TD, PUNT_RETURN_TD, SACK_GAP_FROM_KERNEL, apply_drive_detail, apply_kickoff_detail,
+    BALL_SECURITY_TEAM_FIELDS, KICKOFF_DETAIL_TAG, PUNT_BLOCKED_TD, PUNT_RETURN_TD, SACK_GAP_FROM_KERNEL,
+    apply_drive_detail, apply_kickoff_detail, credit_kick_fumble,
     canonical_call_sheet, check_ledger, clock_context, clock_stamps, gap_kind, gap_seconds,
     has_chain_ledger, return_touchdown_distance_errors, scoring_events, seat_try, try_fields, try_row, two_point_row,
     _normalize_call, _period_clock, _stream,
@@ -206,7 +208,11 @@ def _merge_call_stats(target, source):
             row[field] += line.get(field, 0)
 
 
-def _append_evidence(evidence, drive_ledger, offense_players, defense_players, outcome):
+def _append_evidence(evidence, drive_ledger, offense_players, defense_players, outcome, ball_security=False):
+    """Kernel 2014.6 batch B10: with `ball_security` (profile flag
+    ball_security_credit) a fumble is never player evidence: fumbles, muffs,
+    forced fumbles and recoveries are group draws or replayed records (E1),
+    so the lost-fumble observation is left out."""
     offense_by_id = {p.player_id: p for p in offense_players}
     defense_by_id = {p.player_id: p for p in defense_players}
 
@@ -254,7 +260,7 @@ def _append_evidence(evidence, drive_ledger, offense_players, defense_players, o
                             processing="decision resulted in an interception",
                         )
                     )
-            elif play.get("runner"):
+            elif play.get("runner") and not (ball_security and play.get("turnover_type") == "fumble"):
                 runner = offense_by_id.get(play["runner"])
                 if runner:
                     evidence.append(
@@ -694,6 +700,22 @@ def _resolve_game(
     # its frozen sheet carries a fourth-down block.
     fourth_live_default = management_mode == "user_controlled" and game_type in ("regular", "postseason")
     T = fpm.T
+    # Kernel 2014.6 batch B10: ball security. W4 and R12 layer A (credit only:
+    # muffers, kept fumbles, forcers and recoverers), layer B (a lost
+    # fumble's terminal kind from the tuple) and layer C (retained kicks),
+    # each by its flag, on the base's ball-security artifact and its schema-3
+    # fumble annotations (fails closed otherwise).
+    bs_credit = profile.has("ball_security_credit")
+    bs_terminal = profile.has("fumble_terminal_kind")
+    retained_v1 = profile.has("retained_kicks")
+    if (bs_terminal or retained_v1) and not bs_credit:
+        raise ValueError("profile %s holds a batch B10 flag without ball_security_credit" % profile.kernel_version)
+    if retained_v1 and not sequencing:
+        raise ValueError("profile %s holds retained_kicks without possession_sequencing" % profile.kernel_version)
+    if bs_credit and ("fumbles" not in T or "fumble" not in fpm.KICK or "fumble" not in fpm.PUNT):
+        raise ValueError("profile %s holds ball_security_credit on a base without the fumble annotations"
+                         % profile.kernel_version)
+    bsm = cbase.ball_security() if bs_credit else None
 
     teams = {home.team_id: home, away.team_id: away}
     rosters = {home.team_id: home_players, away.team_id: away_players}
@@ -702,6 +724,12 @@ def _resolve_game(
         # Batch B9 team counters (append-only; absent from earlier results).
         for line in stats.values():
             for field in SCORING_TEAM_FIELDS:
+                line[field] = 0
+    if bs_credit:
+        # Batch B10 team counters (append-only): the club's fumbles, lost
+        # fumbles and muffs, and its recoveries of its own kicks.
+        for line in stats.values():
+            for field in BALL_SECURITY_TEAM_FIELDS:
                 line[field] = 0
     # Preseason unit rotation (runtime/rotation.py): a tracker per club, from
     # its plan or the documented default. Any other game type has none, and a
@@ -1261,7 +1289,12 @@ def _resolve_game(
 
         checkpoint()
         kick_no = len(kickoffs) + 1
-        drawn = fpm.free_kick(rng) if free_kick else fpm.kickoff(rng)
+        if retained_v1:
+            # Batch B10 (R12 layer C): the full pool, the kicking club's
+            # recoveries at their real frequency (overtime kicks too: rule R4).
+            drawn = fpm.free_kick(rng, retained=True) if free_kick else fpm.kickoff(rng, retained=True)
+        else:
+            drawn = fpm.free_kick(rng) if free_kick else fpm.kickoff(rng)
         branch = forced_scoring["kicks"].get(kick_no)
         onside = None
         b9_touchdown = False
@@ -1328,6 +1361,8 @@ def _resolve_game(
             drawn = {"touchback": False, "next_start": r[K["next_start"]], "kick_yards": r[K["kick_yards"]],
                      "return_yards": r[K["return_yards"]], "enforcement": r[K["enforcement"]],
                      "outcome": "retained", "kick_spot": 20 if free_kick else 35}
+            if "fumble" in K:
+                drawn.update(fumble=r[K["fumble"]], possession=r[K["possession"]])
         elif branch == "touchdown" and not b9_touchdown:
             # The drawn kick is run back to the goal line (R15 placeholder).
             spot = 20 if free_kick else 35
@@ -1417,6 +1452,18 @@ def _resolve_game(
             # The receiving club lost the ball to the kicking club (R12 layer
             # C / R9 own the credit); the row says so, no returner is credited.
             rows[0].update(touchback=False, turnover=True, outcome="retained", next_start=drawn["next_start"])
+            if retained_v1:
+                # Batch B10 (R12 layer C): the turnover is the receiving club's.
+                stats[receiving]["turnovers"] += 1
+        if bs_credit and not onside_kick and not touchdown and (
+                (retained and retained_v1) or (not retained and drawn.get("fumble"))):
+            # Batch B10 (W4, layer A): the kick's muff or return fumble, named
+            # from the kick play's units on the ("kick", k) stream.
+            units = participation.kick(rows[0], kicking, receiving, live[kicking], live[receiving])
+            record["fumble"] = credit_kick_fumble(rows[0], drawn.get("fumble"), retained=retained, kicking=kicking,
+                                                  receiving=receiving, units=units, stats=stats,
+                                                  rng=ball_security.stream(seed, event_id, "kick", kick_no),
+                                                  model=bsm, diagnostics=diagnostics)
         if onside_kick:
             # Batch B9 (R9): an onside kick; the recovering player is named
             # evenly from the recovering club's kick unit on a keyed
@@ -1607,6 +1654,10 @@ def _resolve_game(
         records, segments = [], []
         kinds, completed, values, stamps = [], [], [], []
         snap_calls = {}
+        # Batch B10 (layer A): the replayed real drives the joined snaps come
+        # from, (offset, kept snaps, the tuple's fumbles, its penalty records,
+        # its laid-out snaps).
+        fumble_sources = []
         used = [0, 0]
         penalty_fd = 0
         seg = {"drawn": drawn, "laid": laid, "resample": layout_resample, "start": spot, "window": window,
@@ -1635,6 +1686,8 @@ def _resolve_game(
             def replay_whole():
                 """The segment stands as drawn to its own terminal."""
                 nonlocal penalty_fd
+                fumble_sources.append((len(kinds), n, fpm.value(t, "fumbles", ()) or (),
+                                       fpm.value(t, "pen", ()) or (), n))
                 kinds.extend(lay["kinds"])
                 completed.extend(lay["completed"])
                 values.extend(int(v) for v in lay["values"])
@@ -1647,6 +1700,8 @@ def _resolve_game(
                                terminal=cat)
                 segments.append(summary)
                 return {"kind": "replayed", "category": cat, "laid": seg["laid"], "own": own,
+                        "lost": (ball_security.lost_entry(fpm.value(t, "fumbles", ()))
+                                 if cat == "fumble_lost" else None),
                         "expiry": sd.expiry_seconds, "ends_window": sd.consumes_window,
                         "kick_stamp": kick_stamp if cat in ("field_goal_attempt", "punt") else None,
                         "term_bucket": t[T["term_bucket"]],
@@ -1735,6 +1790,8 @@ def _resolve_game(
             # The model resolves: cut the segment at the decision point.
             modified = True
             kept = [int(v) for v in lay["values"][:i]]
+            fumble_sources.append((len(kinds), i, fpm.value(t, "fumbles", ()) or (),
+                                   fpm.value(t, "pen", ()) or (), n))
             kinds.extend(lay["kinds"][:i])
             completed.extend(lay["completed"][:i])
             values.extend(kept)
@@ -1836,7 +1893,12 @@ def _resolve_game(
             final = {"kind": "go", "category": terminal_category, "own": elapsed + act, "expiry": 0,
                      "ends_window": act >= left, "kick_stamp": None, "term_bucket": None, "fg_distance": None,
                      "terminal": layout_kind if terminal_category in ("touchdown", "interception", "fumble_lost")
-                     else None}
+                     else None,
+                     # Batch B10: a fourth-down attempt's lost fumble, which no
+                     # replayed drive describes (synthetic_entry of its kind).
+                     "lost": ({"synthetic": {"fumble_run": "run", "fumble_catch": "reception",
+                                             "fumble_sack": "sack"}[kind]}
+                              if terminal_category == "fumble_lost" else None)}
             break
 
         # The joined possession: one layout, one chain walk.
@@ -1881,6 +1943,7 @@ def _resolve_game(
             "penalty_first_downs": penalty_fd, "snap_calls": snap_calls,
             "clock_plan": {"stamps": list(stamps), "kick": final["kick_stamp"]},
             "last_spike_seconds_left": (spikes_at[-1] - base_clock) if spikes_at else None,
+            "fumble_sources": fumble_sources, "fumble_terminal": final.get("lost"),
         }
 
     def possess(offense, window, half, spot, start_kind, ot_history=None, ot_label="OT", quarter=None):
@@ -2024,13 +2087,17 @@ def _resolve_game(
                 # Batch B6 (W3): the kick comes on fourth down in every tier;
                 # the closable last fallback admits the real down, counted.
                 fg_down = 4
+            # Batch B10 (R12 layer B): a lost fumble's terminal kind from the
+            # tuple's own lost entry (runtime.ball_security.terminal_kind).
+            lost_kind = (ball_security.terminal_kind(ball_security.lost_entry(fpm.value(row, "fumbles", ())))
+                         if bs_terminal and category == "fumble_lost" else None)
             layout = chain_walk.drive_layout(
                 seed=seed, event_id=event_id, drive_no=drive_no, offense=offense, category=category,
                 td_type=td_type, runs=runs, attempts=attempts, sacks=sacks, kneel_yards=kneel_yards,
                 spikes=spikes, pass_yards=pass_yards, rush_free=rush_free, losses=sack_losses,
                 safety_terminal=safety_terminal, net=net, spot=start, completion_rate=completion_rate,
                 targets=list(row[T["chains"]]), term_down=row[T["term_down"]], diagnostics=scratch,
-                usage_values=usage_values, fg_down=fg_down, segment=segment)
+                usage_values=usage_values, fg_down=fg_down, segment=segment, lost_kind=lost_kind)
             return dict(net=net, end_spot=end_spot, plays=plays, runs=runs, attempts=attempts, sacks=sacks,
                         kneel_yards=kneel_yards, spikes=spikes, td_type=td_type, turnover_type=turnover_type,
                         kneel_sum=kneel_sum, terminal_value=terminal_value, safety_terminal=safety_terminal,
@@ -2274,7 +2341,20 @@ def _resolve_game(
                     defensive_td = ("blocked_field_goal", 100 - end_spot)
         elif category == "punt":
             s["punts"] += 1
-            punt_record = fpm.punt(rng, end_spot)
+            if retained_v1:
+                # Batch B10 (R12 layer C): the kicking club's recoveries at their
+                # real frequency, except in overtime, where retained records are
+                # excluded (counted) until the two-source rule amendment on
+                # muffs against return fumbles is recorded.
+                if half == "OT":
+                    near = fpm.retained_nearest(end_spot)
+                    if near:
+                        diagnostics["ot_punt_retained_excluded"] = diagnostics.get("ot_punt_retained_excluded", 0) + 1
+                        diagnostics["ot_punt_retained_records_excluded"] = \
+                            diagnostics.get("ot_punt_retained_records_excluded", 0) + near
+                punt_record = fpm.punt(rng, end_spot, retained=half != "OT")
+            else:
+                punt_record = fpm.punt(rng, end_spot)
             # Kernel 2014.4 phase 2: the punter's net term on the kicking
             # club's record and the returner's term on the receiving club's
             # (returner slope 0 in this candidate); no draw is consumed.
@@ -2321,8 +2401,11 @@ def _resolve_game(
             d["punt_returns"] += int(punt_record["outcome"] in ("returned", PUNT_RETURN_TD))
             next_start, next_kind = punt_record["next_start"], "punt"
             if punt_record.get("possession") == "kicking":
-                # Batch B8: the kicking club kept the ball (R12 layer C).
+                # Batch B8: the kicking club kept the ball (R12 layer C); batch
+                # B10 charges the turnover to the receiving club.
                 next_kind, next_offense = "punt_retained", offense
+                if retained_v1:
+                    d["turnovers"] += 1
         elif category in drive_model.TURNOVER_CATEGORIES:
             s["turnovers"] += 1
             turnover_record = fpm.turnover(rng, category, end_spot)
@@ -2428,6 +2511,17 @@ def _resolve_game(
                     # the league model; a block or a live answer the head coach).
                     fourth_down["decision_source"] = fourth.decision_source(joined["records"][-1]["basis"])
 
+        fumble_plan = None
+        if bs_credit:
+            # Batch B10 (W4, layer A): the replayed drives' fumbles and the
+            # lost fumble's entry, named on the ball-security stream.
+            if modified:
+                sources, lost_terminal = joined["fumble_sources"], joined["fumble_terminal"]
+            else:
+                fumbles = fpm.value(row, "fumbles", ()) or ()
+                sources = [(0, plays, fumbles, fpm.value(row, "pen", ()) or (), plays)]
+                lost_terminal = ball_security.lost_entry(fumbles) if category == "fumble_lost" else None
+            fumble_plan = {"model": bsm, "sources": sources, "terminal": lost_terminal, "terminal_kind": bs_terminal}
         drive_ledger, drive_calls = apply_drive_detail(
             calibration_base=cbase,
             usage_base=ubase,
@@ -2482,6 +2576,7 @@ def _resolve_game(
             # stamps and its go snaps' named calls (records only).
             clock_plan=joined["clock_plan"] if modified else None,
             snap_calls=joined["snap_calls"] if modified else None,
+            fumble_plan=fumble_plan,
         )
         chain_walk.annotate(drive_ledger, layout["walk"], fourth_down)
         if joined is not None and joined["records"]:
@@ -2521,6 +2616,9 @@ def _resolve_game(
             if source in ("interception", "fumble"):
                 scored = [r for r in drive_ledger if r.get("play_type") in ("pass", "run")][-1]
                 credit = scored.get("tackler")
+                if source == "fumble" and isinstance(scored.get("fumble"), dict):
+                    # Batch B10: the returner is the recoverer named.
+                    credit = scored["fumble"].get("recovered_by")
             else:
                 scored = next(r for r in drive_ledger if r.get("play_type") in ("punt", "field_goal"))
                 credit = scored.get("returner") if source == "punt_return" else None
@@ -2560,6 +2658,7 @@ def _resolve_game(
             off_view,
             def_view,
             "turnover" if turnover_type else LEGACY_OUTCOME.get(category, "other"),
+            ball_security=bs_credit,
         )
 
         record = {
@@ -2632,6 +2731,24 @@ def _resolve_game(
             for key in ("adjust", "return_adjust", "punter", "returner"):
                 if key in punt_record:
                     record["punt"][key] = punt_record[key]
+            if bs_credit:
+                # Batch B10 (append-only): the punt's muff or return fumble.
+                punt_row = next((r for r in drive_ledger if r.get("play_type") == "punt"), None)
+                if punt_row is not None and isinstance(punt_row.get("fumble"), dict):
+                    f = punt_row["fumble"]
+                    record["punt"]["fumble"] = {"kind": f["kind"], "outcome": f["outcome"], "role": f["role"],
+                                                "forced": f["forced"], "counted": f["counted"]}
+        if bs_credit:
+            # Batch B10 (append-only): the possession's scrimmage fumbles as
+            # credited, in snap order (no names; the full ledger names them).
+            scrim_rows = [r for r in drive_ledger if r.get("play_type") in ("pass", "run")]
+            record["fumbles"] = [{"snap": index, "kind": r["fumble"]["kind"], "outcome": r["fumble"]["outcome"],
+                                  "forced": r["fumble"]["forced"],
+                                  "forcer_recovered": bool(r["fumble"]["forced_by"]) and
+                                  r["fumble"]["forced_by"] == r["fumble"]["recovered_by"],
+                                  "snap_kind": "sack" if r.get("sack") else r["play_type"],
+                                  "terminal": index == len(scrim_rows) - 1 and r["fumble"]["outcome"] == "lost"}
+                                 for index, r in enumerate(scrim_rows) if isinstance(r.get("fumble"), dict)]
         if layout_resample is not None:
             record["layout_resample"] = layout_resample
         if fourth_on:
@@ -2884,6 +3001,11 @@ def _resolve_game(
         # possessions and kicks (runtime.play_detail.scoring_events); the
         # audit rebuilds it again and compares, never trusting the stored list.
         result["scoring_events"] = scoring_events(result)
+    if bs_credit:
+        # Batch B10 (append-only): which ball-security layers resolved the
+        # game (the audit and band rows read the marker).
+        result["ball_security"] = {"model": ball_security.MODEL, "credit": True, "terminal_kind": bs_terminal,
+                                   "retained_kicks": retained_v1}
     blocks = {team.team_id: {kind: json.loads(json.dumps(getattr(team, field)))
                              for field, kind in (("try_policy", "two_point"), ("kickoff_policy", "kickoff"),
                                                  ("fourth_down_policy", "fourth_down"))
@@ -2901,6 +3023,39 @@ REMOVAL_FIELDS = (("passer", "offense"), ("runner", "offense"), ("target", "offe
                   ("blocker", "offense"), ("kicker", "offense"), ("punter", "offense"),
                   ("long_snapper", "offense"), ("cover_player", "offense"),
                   ("tackler", "defense"), ("assist_tackler", "defense"), ("returner", "defense"))
+
+
+def removal_names(row):
+    """(club, player id) of every participant a ledger row names
+    (REMOVAL_FIELDS by the row's own offense or defense key), side-aware for
+    the names whose club depends on the play (kernel 2014.6 batches B9 and
+    B10): a kick row's muffer, fumbler and recoverer belong to the receiving
+    club (the row's defense) unless the kicking club recovered; a scrimmage
+    fumble's fumbler is the offense's and its forcer the defense's; a
+    recoverer is the recovering club's; an onside kick's recoverer the club
+    that recovered; a blocked kick's scorer the defense's."""
+    for field, side in REMOVAL_FIELDS:
+        pid = row.get(field)
+        if pid:
+            yield row.get(side), pid
+    kick_row = row.get("play_type") in participation.KICK_TYPES
+    receiving = row.get("defense") if kick_row else row.get("offense")
+    other_club = row.get("offense") if kick_row else row.get("defense")
+    if row.get("muffed_by"):
+        yield receiving, row["muffed_by"]
+    fumble = row.get("fumble")
+    if isinstance(fumble, dict):
+        if fumble.get("fumbled_by"):
+            yield receiving, fumble["fumbled_by"]
+        if fumble.get("forced_by"):
+            yield other_club, fumble["forced_by"]
+        if fumble.get("recovered_by"):
+            yield fumble.get("recovering_team"), fumble["recovered_by"]
+    if row.get("onside") and row.get("recovered_by"):
+        yield (row.get("offense") if row.get("outcome") == scoring.ONSIDE_RECOVERED else row.get("defense")), \
+            row["recovered_by"]
+    if row.get("blocked") and row.get("scorer"):
+        yield row.get("defense"), row["scorer"]
 
 
 def validate_result(result, base=None):
@@ -3080,9 +3235,8 @@ def validate_result(result, base=None):
         # Kernel 2014.4 (E2): a removed player takes no later snap or credit.
         late = False
         for row in result.get("play_ledger", []):
-            for field, side in REMOVAL_FIELDS:
-                pid = row.get(field)
-                onset = removed_at.get((row.get(side), pid)) if pid else None
+            for club, pid in removal_names(row):
+                onset = removed_at.get((club, pid))
                 if onset is not None and row.get("drive", 0) > onset:
                     late = True
         if late:

@@ -1464,6 +1464,10 @@ class FieldPositionModelV3(FieldPositionModel):
         self._kick_pools = {name: _receiving(data[name], self.KICK["possession"])
                             for name in ("kickoff_pool", "free_kick_pool")}
         self._punt_pool = _receiving(data["punt_pool"], self.PUNT["possession"])
+        # Kernel 2014.6 batch B10 (R12 layer C, profile flag retained_kicks):
+        # the full pools, the kicking club's recoveries at their real frequency.
+        self._kick_pools_all = {name: list(data[name]) for name in ("kickoff_pool", "free_kick_pool")}
+        self._punt_pool_all = list(data["punt_pool"])
         # Per category, the h1_late union's starts, sorted, for the time-match counts.
         T = self.T
         self._h1_starts = {c: sorted(t[T["t0"]] for t in self._members(("h1_late_union", None), c))
@@ -2132,13 +2136,39 @@ class FieldPositionModelV3(FieldPositionModel):
 
     # ---- transitions -------------------------------------------------------------------------
 
-    def kickoff(self, rng):
-        """A real own-35 kickoff (2011 onward) the receiving club takes over."""
-        return self._kick_record(rng, self._kick_pools["kickoff_pool"], 35)
+    def _kick_record(self, rng, pool, spot):
+        """The base draw (one randrange) with, for kernel 2014.6 batch B10, the
+        record's fumble [kind, outcome, muffer role] and possession (receiving,
+        or kicking for a retained record) alongside; no other key moves."""
+        record = pool[rng.randrange(len(pool))]
+        K = self.KICK
+        touchback = record[K["touchback"]]
+        return {"touchback": bool(touchback), "next_start": record[K["next_start"]],
+                "kick_yards": record[K["kick_yards"]],
+                "return_yards": 0 if touchback else record[K["return_yards"]],
+                "enforcement": record[K["enforcement"]], "outcome": record[K["outcome"]], "kick_spot": spot,
+                "fumble": record[K["fumble"]], "possession": record[K["possession"]]}
 
-    def free_kick(self, rng):
-        """A real safety free kick from the 20 the receiving club takes over."""
-        return self._kick_record(rng, self._kick_pools["free_kick_pool"], 20)
+    def kickoff(self, rng, retained=False):
+        """A real own-35 kickoff (2011 onward) the receiving club takes over;
+        with `retained` (batch B10, R12 layer C) from the full pool, the
+        kicking club's recoveries included at their real frequency."""
+        pools = self._kick_pools_all if retained else self._kick_pools
+        return self._kick_record(rng, pools["kickoff_pool"], 35)
+
+    def free_kick(self, rng, retained=False):
+        """A real safety free kick from the 20 the receiving club takes over
+        (the full pool with `retained`; it holds no retained free kick)."""
+        pools = self._kick_pools_all if retained else self._kick_pools
+        return self._kick_record(rng, pools["free_kick_pool"], 20)
+
+    def retained_nearest(self, los):
+        """Batch B10: how many of the full punt pool's nearest feasible
+        records from this line of scrimmage are retained records (the records
+        an overtime punt's exclusion leaves out; no draw)."""
+        P = self.PUNT
+        near = self._nearest(self._punt_pool_all, P["los"], los, lambda record: self.punt_feasible(record, los))
+        return sum(1 for record in near if record[P["possession"]] == "kicking")
 
     def punt_start(self, record, los):
         """The next start a real punt record gives from this line of
@@ -2163,9 +2193,13 @@ class FieldPositionModelV3(FieldPositionModel):
             return los <= record[P["los"]]
         return 1 <= self.punt_start(record, los) <= 99
 
-    def punt(self, rng, los):
+    def punt(self, rng, los, retained=False):
+        """A real punt from the feasible records nearest the line of
+        scrimmage; with `retained` (batch B10, R12 layer C) from the full pool,
+        the kicking club's recoveries included at their real frequency."""
         P = self.PUNT
-        candidates = self._nearest(self._punt_pool, P["los"], los, lambda record: self.punt_feasible(record, los))
+        pool = self._punt_pool_all if retained else self._punt_pool
+        candidates = self._nearest(pool, P["los"], los, lambda record: self.punt_feasible(record, los))
         record = candidates[rng.randrange(len(candidates))]
         touchback = bool(record[P["touchback"]])
         gross = los if touchback else record[P["gross"]]
@@ -2174,7 +2208,7 @@ class FieldPositionModelV3(FieldPositionModel):
         start = self.punt_start(record, los)
         out = {"los": los, "outcome": record[P["outcome"]], "gross": gross, "return_yards": ret,
                "enforcement": enforcement, "next_start": start, "touchback": touchback,
-               "record_los": record[P["los"]]}
+               "record_los": record[P["los"]], "fumble": record[P["fumble"]]}
         if record[P["possession"]] == "kicking":
             # Batch B8: the kicking club keeps the ball (its start is in its
             # own frame); drawn only once R12 layer C admits these records.

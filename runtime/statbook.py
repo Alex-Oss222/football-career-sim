@@ -51,12 +51,16 @@ KERNEL_2014_6_FROM = (2014, 6)
 # onside kicks and the kicking club's onside recoveries. Players, accumulated
 # only when present: the two-point conversion credits and the return
 # touchdowns (a blocked-kick touchdown's credit is a labelled group draw).
+# Batch B10 (W4, R12): the club's fumbles, lost fumbles and muffs (the
+# fumbling or muffing club) and its recoveries of its own kicks; players:
+# muffs and fumbles recovered by the fumbling club (own recoveries).
 KERNEL_2014_6_TEAM_STAT_FIELDS = ("two_point_attempts", "two_point_conversions", "defensive_touchdowns",
-                                  "special_teams_touchdowns", "onside_kicks", "onside_recoveries")
+                                  "special_teams_touchdowns", "onside_kicks", "onside_recoveries",
+                                  "fumbles", "fumbles_lost", "muffs", "kicking_team_recoveries")
 KERNEL_2014_6_PLAYER_FIELDS = ("passing_two_point_conversions", "receiving_two_point_conversions",
                                "rushing_two_point_conversions", "interception_return_touchdowns",
                                "fumble_return_touchdowns", "punt_return_touchdowns", "kick_return_touchdowns",
-                               "blocked_kick_touchdowns")
+                               "blocked_kick_touchdowns", "muffs", "fumbles_recovered_own")
 # Every key the 2014.6 group adds, by where it lives in a result or receipt
 # (tests/test_profiles.py strip_2014_6_fields removes exactly these).
 # DRIVE_SUMMARY_FIELDS additions are possession keys; snap-ledger row keys
@@ -66,27 +70,37 @@ KERNEL_2014_6_FIELD_GROUP = {
     # compact kicks summary and the game's scoring events. Batch B9: the
     # decision blocks' id and source text (kept with the receipt, never in
     # the outcome packet).
-    "result": ("calibration_base", "substitutions", "kicks", "scoring_events", "decision_policies"),
+    # Batch B10: the ball-security marker.
+    "result": ("calibration_base", "substitutions", "kicks", "scoring_events", "decision_policies", "ball_security"),
     # Batch B5: the window seconds left at a drive's last spike (R14). Batch
     # B8: a non-offensive score made during the possession (R15, B9). Batch
     # B9: an offensive touchdown's try record (R8). Batch B9F: the
     # possession's fourth-down decision records and a joined possession's
     # segments.
-    "possession": ("last_spike_seconds_left", "non_offensive_score", "try", "fourth_downs", "segments"),
+    # Batch B10: the possession's credited scrimmage fumbles.
+    "possession": ("last_spike_seconds_left", "non_offensive_score", "try", "fourth_downs", "segments", "fumbles"),
     # Batch B8: the kick record's chain and scoring fields. Batch B9: R9's
     # onside decision (chart cell and pair, recovery class and pair) and a
     # return touchdown's try record (R8).
+    # Batch B10: the kick's credited muff or return fumble.
     "kickoff": ("remaining", "chain", "after_drive", "basis", "touchdown", "scoring_team", "xp_made", "points",
-                "onside", "cell", "p_onside", "recovery_class", "p_recover", "try"),
+                "onside", "cell", "p_onside", "recovery_class", "p_recover", "try", "fumble"),
     # Batch B6 (W5a): a league-model decision marker on new rows and on the
     # fourth-down state (nested under "fourth_down", see FOURTH_DOWN_FIELDS).
     # Batch B9: a try row's anchor, scorer and decision record; an onside
     # kick's recoverer; a blocked kick's scorer; the labelled group-draw
     # attribution. Batch B9F: a fourth-down go snap's or decided kick's
     # decision mark.
+    # Batch B10: a row's fumble record (kind, outcome, the fumbler, forcer
+    # and recoverer with their attribution), a muffed kick's muffer and a
+    # muffing club's own recovery yards.
     "ledger": ("decision_source", "anchor", "scoring_team", "decision", "basis", "cell", "p_go", "points",
-               "onside", "recovered_by", "blocked", "scorer", "attribution", "fourth_down_decision"),
+               "onside", "recovered_by", "blocked", "scorer", "attribution", "fourth_down_decision",
+               "fumble", "muffed_by", "own_recovery_yards"),
     "fourth_down": ("decision_source",),
+    # Batch B10: the possession's punt summary carries its credited muff or
+    # return fumble (nested under "punt").
+    "punt": ("fumble",),
     "team": KERNEL_2014_6_TEAM_STAT_FIELDS,
     "player": KERNEL_2014_6_PLAYER_FIELDS,
 }
@@ -233,6 +247,9 @@ def make_receipt(result, *, week, matchup, coverage="complete", detail="full",
         from .play_detail import kick_summary
         receipt["kicks"] = kick_summary(result.get("kickoffs", ()))
         receipt["scoring_events"] = deepcopy(result["scoring_events"])
+    if result.get("ball_security") is not None:
+        # Kernel 2014.6 batch B10 (append-only): the ball-security marker.
+        receipt["ball_security"] = deepcopy(result["ball_security"])
     if result.get("decision_policies") is not None:
         # Kernel 2014.6 batch B9 (append-only): each club's decision blocks as
         # frozen on its sheet, id and source text included (the outcome

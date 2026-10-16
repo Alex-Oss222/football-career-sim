@@ -227,9 +227,10 @@ class StatbookTests(unittest.TestCase):
             # layout resample record and the field-goal probability; kernel
             # 2014.6 batch B8 the non_offensive_score slot (R15 fills it),
             # batch B9 the offensive touchdown's try record (R8), batch B9F
-            # the fourth-down decision records and the joined segments.
-            self.assertTrue(all(len(row) == 38 for row in receipt["drives"]))
-            self.assertEqual(len(DRIVE_SUMMARY_FIELDS), 38)
+            # the fourth-down decision records and the joined segments, batch
+            # B10 the possession's credited scrimmage fumbles.
+            self.assertTrue(all(len(row) == 39 for row in receipt["drives"]))
+            self.assertEqual(len(DRIVE_SUMMARY_FIELDS), 39)
         with self.assertRaises(ValueError):
             aggregate_receipts([{**make_receipt(result, week=4, matchup="B at A"), "schema_version": 4}])
         book = aggregate_receipts([make_receipt(result, week=4, matchup="B at A", detail="compact_stats")])
@@ -241,14 +242,16 @@ class StatbookTests(unittest.TestCase):
         # Kernel 2014.6 plumbing (B1): the field group and the per-club count
         # of 2014.6 games appear only once a 2014.6 receipt exists, so every
         # closed book and view is unchanged; the recorded base is copied.
-        # Batch B9 fills the team counters (R8, R9, R15): a 2014.5 receipt
-        # carries none of them and its book shows none.
+        # Batch B9 fills the team counters (R8, R9, R15) and batch B10 the
+        # ball-security counters: a 2014.5 receipt carries none of them and
+        # its book shows none.
         from runtime.statbook import KERNEL_2014_6_FROM, KERNEL_2014_6_TEAM_STAT_FIELDS
         from scripts.render_season_stats import compact_book_for_storage
         self.assertEqual(KERNEL_2014_6_FROM, (2014, 6))
         self.assertEqual(KERNEL_2014_6_TEAM_STAT_FIELDS,
                          ("two_point_attempts", "two_point_conversions", "defensive_touchdowns",
-                          "special_teams_touchdowns", "onside_kicks", "onside_recoveries"))
+                          "special_teams_touchdowns", "onside_kicks", "onside_recoveries",
+                          "fumbles", "fumbles_lost", "muffs", "kicking_team_recoveries"))
         old = make_receipt(dict(self.result("old"), kernel_version="2014.5"), week=1, matchup="B at A")
         self.assertNotIn("calibration_base", old)
         book = aggregate_receipts([old])

@@ -48,8 +48,11 @@ Individual tables and their sources
 Passing: counters, LNG from ledger completions. Rushing and receiving:
 counters. Interceptions: counters, LNG and TD from ledger interception rows
 (the row's tackler is the interceptor). Fumbles: FUM, LOST, OPP REC
-(fumble_recoveries), FORCED; OWN REC omitted, since every generated fumble is
-lost to the defense. Defense: TOT, SOLO, AST, SCK-YDS (sack yards from the
+(fumble_recoveries), FORCED; OWN REC (fumbles_recovered_own) and MUFFS from
+kernel 2014.6 batch B10, when the receipt carries them (before it every
+generated fumble was lost to the defense, so OWN REC was omitted). A fumble
+returned for a touchdown names its recoverer (the row's fumble record from
+batch B10, the row's tackler before it). Defense: TOT, SOLO, AST, SCK-YDS (sack yards from the
 ledger's sack rows by tackler), TFL, PD, INT, FF, FR; QB HITS omitted (not
 generated). Special teams defense: TOT (special_teams_tackles) only; SOLO,
 AST, FF, FR and BLK are not generated for coverage. Kicking: counters, LNG and
@@ -210,6 +213,9 @@ class GameView:
                     label = "blocked %s" % ("punt" if kind == "punt" else "field goal")
                 else:
                     carrier = row.get("returner") if kind in KICKOFFS + ("punt",) else row.get("tackler")
+                    if kind not in KICKOFFS + ("punt",) and isinstance(row.get("fumble"), dict):
+                        # Kernel 2014.6 batch B10: the recoverer returned it.
+                        carrier = row["fumble"].get("recovered_by")
                     label = {"kickoff": "kickoff", "free_kick": "free kick", "punt": "punt"}.get(
                         kind, row.get("turnover_type") or "turnover")
                 play = "%s %d yd %s return" % (_name(carrier), row.get("return_yards") or 0, label)
@@ -576,10 +582,15 @@ def individual(view, club):
                     lambda n, l: sum(1 for r in view.interception_rows(n) if r.get("touchdown"))]
     lines += _block("Interceptions", headers, rows_cache, columns)
 
-    # Fumbles
-    rows_cache = _rows(p, ("fumbles", "forced_fumbles", "fumble_recoveries"), "fumbles")
-    lines += _block("Fumbles", ["FUM", "LOST", "OPP REC", "FORCED"], rows_cache,
-                    [c("fumbles"), c("fumbles_lost"), c("fumble_recoveries"), c("forced_fumbles")])
+    # Fumbles. Kernel 2014.6 batch B10: own recoveries and muffs, when the
+    # receipt carries them (every generated fumble was lost before it).
+    own = any("fumbles_recovered_own" in line or "muffs" in line for line in p.values())
+    rows_cache = _rows(p, ("fumbles", "forced_fumbles", "fumble_recoveries")
+                       + (("fumbles_recovered_own", "muffs") if own else ()), "fumbles")
+    lines += _block("Fumbles", ["FUM", "LOST", "OPP REC", "FORCED"] + (["OWN REC", "MUFFS"] if own else []),
+                    rows_cache,
+                    [c("fumbles"), c("fumbles_lost"), c("fumble_recoveries"), c("forced_fumbles")]
+                    + ([c("fumbles_recovered_own"), c("muffs")] if own else []))
 
     # Defense
     rows_cache = defenders = _rows(p, ("tackles", "sacks", "tackles_for_loss", "passes_defended",

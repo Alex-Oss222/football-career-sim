@@ -561,7 +561,7 @@ FG_FOURTH_DOWN_RELAXED = "fg_fourth_down_relaxed"
 def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, attempts, sacks,
                  kneel_yards, spikes, pass_yards, rush_free, losses, safety_terminal, net, spot,
                  completion_rate, targets=None, term_down=None, diagnostics=None, usage_values=None,
-                 fg_down=None, segment=None):
+                 fg_down=None, segment=None, lost_kind=None):
     """The ordered snaps of one resolved drive with a legal chain walk.
 
     `category` is the kernel category (punt, field_goal_attempt, downs,
@@ -603,12 +603,21 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
     continuation segment after a fourth-down conversion on its own keyed
     layout stream (the drive's, keyed by the segment as well); None, the
     drive's first segment, keeps the unchanged stream.
+
+    Kernel 2014.6 (batch B10, R12 layer B; profile flag fumble_terminal_kind):
+    `lost_kind` (run, catch or sack: runtime.ball_security.terminal_kind of
+    the tuple's own lost entry) is a fumble_lost drive's terminal kind, taken
+    without the snap-count draw when the drive has a snap of that kind; the
+    existing option ladder stays the fallback when that kind cannot be
+    ordered. Every adopted terminal other than `lost_kind` is counted
+    fumble_terminal_fallback. None (every kernel up to 2014.5, and 2014.6
+    without the flag) is the unchanged draw.
     """
     args = dict(seed=seed, event_id=event_id, drive_no=drive_no, offense=offense, category=category,
                 td_type=td_type, runs=runs, attempts=attempts, sacks=sacks, kneel_yards=kneel_yards, spikes=spikes,
                 pass_yards=pass_yards, rush_free=rush_free, losses=losses, safety_terminal=safety_terminal, net=net,
                 spot=spot, completion_rate=completion_rate, targets=targets, usage_values=usage_values,
-                segment=segment)
+                segment=segment, lost_kind=lost_kind)
     if fg_down is not None and category == "field_goal_attempt":
         scratch = {}
         held = _drive_layout(term_down=fg_down, diagnostics=scratch, every_tier=True, **args)
@@ -625,7 +634,7 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
 def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, attempts, sacks,
                   kneel_yards, spikes, pass_yards, rush_free, losses, safety_terminal, net, spot,
                   completion_rate, targets=None, term_down=None, diagnostics=None, usage_values=None,
-                  every_tier=False, segment=None):
+                  every_tier=False, segment=None, lost_kind=None):
     """drive_layout's search (docstring there). `every_tier` keeps the
     field-goal terminal down in tiers 2 and 3 as well (W3)."""
     from . import play_detail as pd
@@ -636,8 +645,12 @@ def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs,
     kneel_yards = [int(y) for y in kneel_yards]
     losses = [int(x) for x in losses]
     spot, net = int(spot), int(net)
+    available = {"run": runs, "catch": attempts, "sack": sacks}
     if category == "safety":
         terminal = safety_terminal[0]
+    elif category == "fumble_lost" and lost_kind is not None and available.get(lost_kind, 0) > 0:
+        # Batch B10 (R12 layer B): the tuple's own lost-fumble kind, no draw.
+        terminal = lost_kind
     else:
         terminal = pd._terminal_kind(rng, category, td_type, runs, attempts, sacks)
     options = [terminal]
@@ -692,6 +705,8 @@ def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs,
         _, full, w = best
         for name in how:
             bump(name)
+        if category == "fumble_lost" and lost_kind is not None and terminal != lost_kind:
+            bump("fumble_terminal_fallback")
         if "chain_layout_repaired" in how:
             bump("prefix_order_repaired")
         return {"ok": True, "terminal": terminal, "kinds": [kinds[i] for i in full],

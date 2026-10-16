@@ -13,7 +13,7 @@ if str(ROOT) not in sys.path:
 
 from runtime.bands import (
     KERNEL_2013_6_LABEL, KNOWN_DETECTION_BOUND, LEGACY_LABEL, audit, audit_drive_model, audit_field_position,
-    audit_fourth_down, audit_injuries, audit_scoring, coherence, cohorts, current_cohorts, known_detections, known_status, provisional_detections,
+    audit_ball_security, audit_fourth_down, audit_injuries, audit_scoring, coherence, cohorts, current_cohorts, known_detections, known_status, provisional_detections,
 )
 from runtime.calibration_base import cohort_base
 from runtime.stat_tables import (
@@ -362,6 +362,29 @@ def team_stats_markdown(year, book, receipts=()):
                 t.get("onside_recoveries", 0))) + " |")
         lines.append("")
 
+    ball_clubs = [(t, d) for t, d in clubs if d.get("kernel_2014_6_games") and "muffs" in d["team_stats"]]
+    if ball_clubs:
+        # Kernel 2014.6 batch B10 (W4, R12): counted only from kernel 2014.6
+        # games; the fumble definition changed with them (split by definition,
+        # never combined with the earlier receipts' counters).
+        lines += ["## Ball security — kernel 2014.6 games", "",
+                  "Counted only from games closed under kernel 2014.6 or later; G counts those games only. "
+                  "FUM: the club's fumbles, its muffs the feed counts as fumbles included (a kickoff muff the "
+                  "club never possessed is a muff only); LOST: those the club lost; MUFFS: its muffed kicks; "
+                  "KICK REC: its recoveries of its own kicks. Earlier receipts counted every generated fumble as "
+                  "lost and named one defender as its forcer and recoverer, so the player tables' FUM, LOST, FF "
+                  "and FR columns combine two definitions this season and no fumble rank is published. Who "
+                  "fumbled, forced, recovered or muffed is a group draw or a replayed record, never evidence of "
+                  "a player's ball security.", "",
+                  "| Team | G | FUM | LOST | MUFFS | KICK REC |",
+                  "|---|---:|---:|---:|---:|---:|"]
+        for team_id, data in sorted(ball_clubs):
+            t = data["team_stats"]
+            lines.append("| " + " | ".join(str(v) for v in (
+                team_id, data["kernel_2014_6_games"], t.get("fumbles", 0), t.get("fumbles_lost", 0),
+                t.get("muffs", 0), t.get("kicking_team_recoveries", 0))) + " |")
+        lines.append("")
+
     spots = field_position_rows(receipts)
     if spots:
         lines += ["## Field position — kernel 2013.7 games (after Week 8)", "",
@@ -495,6 +518,7 @@ def _base_cohort_lines(version, members, empty):
     injury_games, injury_rows = audit_injuries(members, cohort=version)
     scoring_games, scoring_rows = audit_scoring(members, cohort=version)
     fourth_games, fourth_rows = audit_fourth_down(members, cohort=version)
+    ball_games, ball_rows = audit_ball_security(members, cohort=version)
     checked, counts = coherence(members, cohort=version)
     sources = ", ".join("`%s`" % pin.path for role, pin in base.files if role != "specification")
     scoring = [
@@ -511,6 +535,15 @@ def _base_cohort_lines(version, members, empty):
         "and the club decisions of a standing rule or a live call are counted apart. Rates use "
         "3*sqrt(p(1-p)/n) and counts 3*sqrt(c/n); a rate row reads INSUFFICIENT SAMPLE below 30 events.", "",
     ] + _band_table(fourth_rows, centre_label=label) + [""] if fourth_rows else []
+    ball = [
+        "### Ball-security rows", "",
+        "Fumbles, muffs and kicking-team recoveries (kernel 2014.6 batch B10). Centres from the base's "
+        "ball-security artifact (the fumbles row in the nflverse definition, less the defense's own "
+        "fumbles after a turnover); fumbles per team-game use 3*sqrt(phi*c/n) with the artifact's "
+        "team-game dispersion, other counts 3*sqrt(c/n) and rates 3*sqrt(p(1-p)/n); a rate row reads "
+        "INSUFFICIENT SAMPLE below 30 events. Who fumbled, forced, recovered or muffed is a group draw "
+        "or a replayed record, never evidence of a player's ball security.", "",
+    ] + _band_table(ball_rows, centre_label=label) + [""] if ball_rows else []
     return [
         "## Kernel %s cohort (%s)" % (version, _week_span(members, empty)), "",
         "**Calibration base:** %s (%s). **Team-games audited:** %d. Carry shares exclude "
@@ -531,7 +564,7 @@ def _base_cohort_lines(version, members, empty):
         "The injury calibration's acceptance bands (kernel 2014.4 method): WITHIN when the "
         "observed value lies inside the band; the centre column is the band midpoint and the "
         "tolerance its half-width.", "",
-    ] + _band_table(injury_rows, centre_label="band midpoint") + [""] + scoring + fourth + [
+    ] + _band_table(injury_rows, centre_label="band midpoint") + [""] + scoring + fourth + ball + [
         "### Ledger coherence", "",
         "Zero-tolerance counts from `runtime.play_detail.check_ledger`, checked with this "
         "base's rules. Games checked: %d." % checked, "",

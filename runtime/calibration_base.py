@@ -361,6 +361,17 @@ class CalibrationBase:
         self.pin("fourth_down")
         return self.memo(("model", "fourth_down"), build)
 
+    def ball_security(self):
+        """Kernel 2014.6 batch B10: the base's ball-security model (the band
+        centres of the fumble, muff and kicking-team-recovery rows and the
+        sourced credit shares; runtime.ball_security). A base without the
+        pinned artifact raises (CalibrationBaseError)."""
+        def build():
+            from .ball_security import BallSecurityModel
+            return BallSecurityModel(self.raw("ball_security"))
+        self.pin("ball_security")
+        return self.memo(("model", "ball_security"), build)
+
 
 BASE_2012 = CalibrationBase(
     name="2012",
@@ -436,6 +447,11 @@ BASE_2010_2014W4 = CalibrationBase(
         # --check), read by runtime.fourth_down under fourth_down_decisions.
         ("fourth_down", Pin("library/data/2010_2014w4_fourth_down_decisions.json",
                             "ed1f85472089b0af56e1b1f1a2deacb01952d02c72e9802b11ee62d7dc785031")),
+        # Kernel 2014.6 batch B10: the ball-security band centres and credit
+        # shares (scripts/research/build_2010_2014_ball_security.py, --check),
+        # read by runtime.ball_security under the B10 profile flags.
+        ("ball_security", Pin("library/data/2010_2014w4_ball_security.json",
+                              "ae3175ba713123df31f88e40bae9e7a13ac175db5b1c40ea8c843b439cc9a305")),
     ),
     # Counted from the committed 2010-2014 artifacts on October 3, 2026 (the
     # field-position total is the pooled partition, 25,468 drives: the
