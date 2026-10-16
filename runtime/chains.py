@@ -295,6 +295,26 @@ def layout_steps(layout):
     return out
 
 
+def layout_step_records(layout):
+    """The replayed penalty records of each step of layout_steps(layout), in
+    the same order: a snap's clauses (() for a snap without any) or a penalty
+    row's records (kernel 2014.6 review fix, October 16, 2026: the live
+    fourth-down pause lists them)."""
+    sequence = layout.get("sequence")
+    if sequence is None:
+        return [() for _ in layout["values"]]
+    events = layout.get("events") or ()
+    attached = layout.get("attached") or {}
+    out = []
+    for tag, ref in sequence:
+        if tag == "s":
+            groups = attached.get(ref)
+            out.append(tuple(r for g in groups for r in g.records) if groups else ())
+        else:
+            out.append(tuple(events[ref].records))
+    return out
+
+
 def layout_penalty_yards(layout):
     """The accepted yards of a laid-out drive's replayed records."""
     if layout.get("sequence") is None:

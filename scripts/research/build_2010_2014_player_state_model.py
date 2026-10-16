@@ -830,11 +830,12 @@ def drift_from(block, which="pass1"):
                  block["scale"] if which == "pass1" else block["pass2_scale"])
 
 
-def aging_rows(fam, lines, info, priors, params):
+def aging_rows(fam, lines, info, priors, params, tags=None):
     """([(pair start t, residual, forecast variance, age_t, experience_t)], rows without a birth date) for each
     consecutive pair (t, t + 1) of qualifying lines with t + 1 <= 2013 (the 2013-to-2014 Weeks 1-4 pair held
     out): the residual is the line at t + 1 less its one-step forecast from the player's lines through t,
-    with the current components and no aging (amendment 2)."""
+    with the current components and no aging (amendment 2). With `tags` (a list), each row's player id is
+    appended to it in row order (for the self-influence refit; never stored)."""
     rows, dropped = [], 0
     by_player = defaultdict(dict)
     for (pid, s), ln in lines[fam].items():
@@ -853,6 +854,8 @@ def aging_rows(fam, lines, info, priors, params):
                                                  tuple(range(SEASONS[0], t + 1)), t + 1)
             rows.append((t, b["y"] - mb - mu, P[0] + 2 * P[1] + P[2] + b["R"], age,
                          experience_at(info.get(pid), t)))
+            if tags is not None:
+                tags.append(pid)
     return rows, dropped
 
 
@@ -1055,8 +1058,10 @@ def drift_tables(fam, lines, centres, moments):
                               "note": "reported; the pooled fit is used whatever it reads (specification section 2)"}}
 
 
-def self_influence(fam, lines, info, priors, params, moments, honours, cell, drift=None):
-    """|change in a player's own 2014 expectation| / true SD when his own 2013-2014 rows leave the moment sums."""
+def self_influence(fam, lines, info, priors, params, moments, honours, cell, drift=None, without=None):
+    """|change in a player's own 2014 expectation| / true SD when his own 2013-2014 rows leave the moment sums and,
+    with `without` (pid -> the adopted curve refitted without his own aging rows whose outcome is his 2013 line),
+    the aging fit: the combined change of both channels (review fix, October 16, 2026)."""
     sd = math.sqrt(params["sb2"] + params["su2"]) if params["sb2"] + params["su2"] > 0 else None
     if sd is None:
         return {"players": 0, "note": "no true-state spread"}
@@ -1082,14 +1087,16 @@ def self_influence(fam, lines, info, priors, params, moments, honours, cell, dri
         if params["su2"] == 0:
             alt["sb2"] = max(0.0, sum(s for s, _ in tot) / sum(c for _, c in tot))
         a, _, _, _ = player_state(pid, fam, lines, info, priors, params, honours, cell, RECORD_SEASONS, 2014, drift)
-        b, _, _, _ = player_state(pid, fam, lines, info, priors, alt, honours, cell, RECORD_SEASONS, 2014, drift)
+        alt_drift = without(pid) if without is not None else drift
+        b, _, _, _ = player_state(pid, fam, lines, info, priors, alt, honours, cell, RECORD_SEASONS, 2014, alt_drift)
         out.append(abs((a[0] + a[1]) - (b[0] + b[1])) / sd)
     if not out:
         return {"players": 0}
     out.sort()
     q = lambda f: out[min(len(out) - 1, int(f * len(out)))]  # noqa: E731
     return {"players": len(out), "median": q(0.5), "p90": q(0.9), "p99": q(0.99), "max": out[-1],
-            "unit": "true-state SD of the family"}
+            "unit": "true-state SD of the family",
+            "channels": ("moment sums and the aging fit" if without is not None else "moment sums")}
 
 
 # ====================================================================== feedback (D)
@@ -1259,11 +1266,14 @@ def fit_aging(lines, info, fams, params, second, verify):
     units (decision D1), and each family's adopted curve."""
     per, scales = {}, {}
     pooled1, pooled2 = [], []
+    tagged = {"families": {}, "pooled": []}
     for fam in FAMILIES:
         pri1 = fams[fam]["draft_priors"]
         p2 = verify.pass2_params(second, fam)
         pri2 = dict(second["record"]["families"][fam]["draft_priors"], rule=pri1["rule"])
-        rows1, drop1 = aging_rows(fam, lines, info, pri1, params[fam])
+        tags = []
+        rows1, drop1 = aging_rows(fam, lines, info, pri1, params[fam], tags)
+        tagged["families"][fam] = list(zip(tags, rows1))
         rows2, drop2 = aging_rows(fam, second["lines"], second["info"], pri2, p2)
         f1, f2 = fit_candidates(rows1), fit_candidates(rows2)
         per[fam] = {"pass1": f1, "pass2": f2, "rows": [len(rows1), len(rows2)], "no_birth_date": [drop1, drop2],
@@ -1274,6 +1284,7 @@ def fit_aging(lines, info, fams, params, second, verify):
         if fam in NON_SPECIALISTS and s1 > 0 and s2 > 0:
             pooled1 += scaled_rows(rows1, s1)
             pooled2 += scaled_rows(rows2, s2)
+            tagged["pooled"] += list(zip(tags, scaled_rows(rows1, s1)))
     pf1, pf2 = fit_candidates(pooled1), fit_candidates(pooled2)
     pooled = {"families": list(NON_SPECIALISTS), "pass1": pf1, "pass2": pf2, "rows": [len(pooled1), len(pooled2)],
               "unit": "true-state SD of each family (residual over the family's sqrt(sb2 + su2), each pass its own)",
@@ -1299,38 +1310,111 @@ def fit_aging(lines, info, fams, params, second, verify):
                          "pass2_beta": per[fam]["pass2"][cand]["beta"], "pass2_scale": 1.0, "status": status,
                          "terms": TERM_NAMES[cand], "label": cand}
         fams[fam]["aging"] = block
-    return per, pooled
+    return per, pooled, tagged
 
 
-def residual_drift(lines, info, fams, params, pooled):
-    """The adopted pooled candidate refitted on the forecast residuals with the adopted curves applied (a check
-    that the applied curve leaves little drift; reported)."""
+AGE_BINS = (("under 25", None, 25), ("25-28", 25, 29), ("29-31", 29, 32), ("32 and over", 32, None))
+
+
+def _variant_report(rows, cand):
+    """One variant's rows: the weighted SSE of the residuals (sum of residual^2 / variance), the candidate refitted
+    on them (coefficients with SEs, dispersion estimated) and the weighted mean residual by age bin."""
+    n, k = len(rows), len(TERM_NAMES[cand])
+    out = {"rows": n, "wsse": sum(r * r / v for _, r, v, _, _ in rows)}
+    fit = _wls(rows, cand) if n > k else None
+    if fit is None:
+        out["refit"] = None
+    else:
+        beta, inv_diag, sse = fit
+        s2 = sse / (n - k)
+        out["refit"] = {"terms": TERM_NAMES[cand], "beta": beta,
+                        "se": [math.sqrt(max(0.0, s2 * d)) for d in inv_diag]}
+    bins = {}
+    for name, lo, hi in AGE_BINS:
+        sel = [(r, v) for _, r, v, a, _ in rows if (lo is None or a >= lo) and (hi is None or a < hi)]
+        w = sum(1 / v for _, v in sel)
+        bins[name] = {"rows": len(sel), "mean": sum(r / v for r, v in sel) / w if w else None}
+    out["by_age"] = bins
+    return out
+
+
+def horizon_drift(lines, info, fams, params, pooled):
+    """The aging check at the horizon the 2014 table uses (review fix, October 16, 2026; it replaces a refit on the
+    same one-step residuals the curve was fitted on, which returns zero by construction). A 2014 expectation from
+    2010-2012 lines takes the curve's step at each season after the player's last line (for a last line in 2012,
+    the steps at his 2012 and 2013 ages), so the check reads two-step forecasts:
+    - in sample: each qualifying t + 2 line (t = 2010, 2011) of a player with a qualifying line at t, forecast from
+      his lines through t (window 2010 to t, target t + 2);
+    - held out: each qualifying 2014 Weeks 1-4 line of a player with a 2012 line, forecast from his 2010-2012 lines
+      (the table's own window and target).
+    Each forecast with no curve, with the curve applied once (its step at the last line's age only) and as
+    applied; for each, the weighted SSE and the adopted pooled candidate refitted on the residuals, in true-state
+    SD units, pooled over the non-specialist families (pass 1's components; age and experience at the last line).
+    Reported only: the application rule is not changed by it (a change after these readings is Stone's call)."""
     cand = pooled["rule"]["adopted"]
     if cand == "Z":
         return {"candidate": "Z", "note": "no curve applied to the non-specialist families"}
-    rows = []
+    variants = ("none", "once", "as_applied")
+    sets = {"in_sample_two_step": {v: [] for v in variants},
+            "held_out_2012_lines_to_2014w4": {v: [] for v in variants}}
     for fam in NON_SPECIALISTS:
         drift = drift_from(fams[fam]["aging"])
         s = math.sqrt(max(params[fam]["sb2"] + params[fam]["su2"], 0.0))
         if s <= 0:
             continue
+        priors = fams[fam]["draft_priors"]
         by_player = defaultdict(dict)
         for (pid, season), ln in lines[fam].items():
             by_player[pid][season] = ln
         for pid in sorted(by_player):
             seasons = by_player[pid]
-            for t in AGING_PAIRS:
-                a, b = seasons.get(t), seasons.get(t + 1)
-                age = age_at(info.get(pid), t)
-                if not (a and b and a["qualifies"] and b["qualifies"]) or age is None:
+            d = info.get(pid)
+            cases = []
+            for t in (2010, 2011):
+                a, b = seasons.get(t), seasons.get(t + 2)
+                if a and b and a["qualifies"] and b["qualifies"]:
+                    cases.append(("in_sample_two_step", tuple(range(SEASONS[0], t + 1)), t + 2, b))
+            b = seasons.get(2014)
+            if b and b["qualifies"] and 2012 in seasons:
+                cases.append(("held_out_2012_lines_to_2014w4", RECORD_SEASONS, 2014, b))
+            for key, window, target, b in cases:
+                anchor = max(x for x in window if x in seasons)
+                age = age_at(d, anchor)
+                if age is None:
                     continue
-                (mb, mu, P), _, _, _ = player_state(pid, fam, lines, info, fams[fam]["draft_priors"], params[fam],
-                                                     {}, None, tuple(range(SEASONS[0], t + 1)), t + 1, drift)
-                rows.append((t, (b["y"] - mb - mu) / s, (P[0] + 2 * P[1] + P[2] + b["R"]) / s ** 2, age,
-                             experience_at(info.get(pid), t)))
-    fit = _wls(rows, cand)
-    return {"candidate": cand, "rows": len(rows), "beta_after": fit[0] if fit else None,
-            "beta_before": pooled["pass1"][cand]["beta"]}
+                (mb0, mu0, P), _, _, _ = player_state(pid, fam, lines, info, priors, params[fam], {}, None, window,
+                                                       target)
+                (mb1, mu1, _), _, _, _ = player_state(pid, fam, lines, info, priors, params[fam], {}, None, window,
+                                                       target, drift)
+                v = (P[0] + 2 * P[1] + P[2] + b["R"]) / s ** 2
+                r0 = (b["y"] - mb0 - mu0) / s
+                exp = experience_at(d, anchor)
+                for name, r in (("none", r0), ("once", r0 - drift.step(d, anchor) / s),
+                                ("as_applied", (b["y"] - mb1 - mu1) / s)):
+                    sets[key][name].append((anchor, r, v, age, exp))
+    return {"candidate": cand, "unit": "true-state SD of each family (pass 1)",
+            "rule": ("once = the curve's step at the last line's age only; as applied = every step after the last line "
+                     "(the adopted rule); reported, not used to choose"),
+            "checks": {key: {v: _variant_report(rows, cand) for v, rows in got.items()} for key, got in sets.items()}}
+
+
+def drift_without(fam, pid, fams, tagged):
+    """The adopted curve refitted without the player's own aging rows whose outcome is his 2013 line (the pairs
+    with t + 1 = 2013; 2014 is held out of the aging fit), for the self-influence check: the pooled set for a family
+    on the pooled curve (rows in SD units, the family's scale), the family's own rows otherwise. The curve itself
+    when he has no such row."""
+    block = fams[fam]["aging"]
+    if not block or block.get("adopted", "Z") == "Z":
+        return ZERO_DRIFT
+    pooled = block["source"].startswith("pooled")
+    rows = tagged["pooled"] if pooled else tagged["families"][fam]
+    keep = [r for p, r in rows if not (p == pid and r[0] + 1 == 2013)]
+    if len(keep) == len(rows):
+        return drift_from(block)
+    fit = _wls(keep, block["adopted"])
+    if fit is None:
+        return drift_from(block)
+    return Drift(block["adopted"], fit[0], block["scale"])
 
 
 def tier_cuts_from_production():
@@ -1468,7 +1552,7 @@ def build(dest, log=print):
                      "honour_cell_used": cells[fam] is not None}
     params = {f: {"sb2": a["sb2"], "su2": a["su2"], "rho": a["rho"]} for f, a in adopted.items()}
     log("player states: aging")
-    aging_per, aging_pooled = fit_aging(lines, info, fams, params, second, verify)
+    aging_per, aging_pooled, aging_tagged = fit_aging(lines, info, fams, params, second, verify)
     drifts = {f: drift_from(fams[f]["aging"]) for f in FAMILIES}
     drifts2 = {f: drift_from(fams[f]["aging"], "pass2") for f in FAMILIES}
     for fam in FAMILIES:
@@ -1481,8 +1565,9 @@ def build(dest, log=print):
         priors = fams[fam]["draft_priors"]
         fams[fam]["forecast_calibration_2013_to_2014w4"] = forecast_calibration(fam, lines, info, priors,
                                                                                params[fam], drifts[fam])
-        fams[fam]["self_influence"] = self_influence(fam, lines, info, priors, params[fam], moments_by[fam],
-                                                     honours_2014, cells[fam], drifts[fam])
+        fams[fam]["self_influence"] = self_influence(
+            fam, lines, info, priors, params[fam], moments_by[fam], honours_2014, cells[fam], drifts[fam],
+            lambda pid, fam=fam: drift_without(fam, pid, fams, aging_tagged))
         fb1_rows += feedback_rows(fam, lines, info, priors, params[fam], roles, drifts[fam])
         fams[fam]["drift"] = drift_tables(fam, lines, centres, moments_by[fam])
         fams[fam]["two_pass_agreement"] = agreement(fams[fam], second["record"]["families"][fam])
@@ -1533,7 +1618,7 @@ def build(dest, log=print):
                            "a prior-only state"),
                   "age_centre": AGE_CENTRE, "pairs": ["%d-%d" % (t, t + 1) for t in AGING_PAIRS],
                   "families": aging_per, "pooled": aging_pooled,
-                  "residual_after_application": residual_drift(lines, info, fams, params, aging_pooled)},
+                  "horizon_check": horizon_drift(lines, info, fams, params, aging_pooled)},
         "tiers": tiers,
         "feedback": feedback,
         "second_pass": second["record"],

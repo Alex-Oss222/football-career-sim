@@ -458,6 +458,47 @@ class RecordsTests(unittest.TestCase):
         only_old = team_stats_markdown(2014, agg([old]), [old])
         self.assertNotIn("penalty records", only_old)
 
+    def test_team_tracker_never_adds_the_two_definitions(self):
+        # Review fix (October 16, 2026): the tracker's season Penalties cell
+        # shows the counter games and the penalty-record games apart.
+        import tempfile
+        from runtime.seasons import SeasonPaths
+        from scripts import render_team_tracker as tracker
+        old = receipt(play("b11-split-old", profile=PROFILE_2014_5))
+        old.update(week=1, event_id="b11-tracker-old")
+        new = receipt(Sample.get()[1])
+        new.update(week=5, event_id="b11-tracker-new")
+        self.assertNotIsInstance(old.get("penalties"), dict)
+        self.assertIsInstance(new.get("penalties"), dict)
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = SeasonPaths(2014, Path(tmp)).stats / "game_receipts"
+            folder.mkdir(parents=True)
+
+            def readme(receipts):
+                for path in folder.glob("*.json"):
+                    path.unlink()
+                for rc in receipts:
+                    (folder / ("%s.json" % rc["event_id"])).write_text(json.dumps(rc))
+                games = tracker.load_games(Path(tmp), 2014, "A")
+                return games, tracker.readme(Path(tmp), 2014, "A", games)
+
+            games, text = readme([old, new])
+            a_old, a_new = old["team_stats"]["A"], new["team_stats"]["A"]
+            cell = "counter games %d-%d; penalty records %d-%d" % (
+                a_old["penalties"], a_old["penalty_yards"], a_new["penalties"], a_new["penalty_yards"])
+            self.assertIn(cell, text)
+            self.assertIn(tracker.PENALTY_SPLIT_NOTE, text)
+            summed = "| %d-%d |" % (a_old["penalties"] + a_new["penalties"],
+                                    a_old["penalty_yards"] + a_new["penalty_yards"])
+            self.assertNotIn(summed, text)
+            # one definition: the earlier single cell, no note
+            for only in ([old], [new]):
+                _, text = readme(only)
+                line = only[0]["team_stats"]["A"]
+                self.assertIn("| %d-%d |" % (line["penalties"], line["penalty_yards"]), text)
+                self.assertNotIn(tracker.PENALTY_SPLIT_NOTE, text)
+                self.assertNotIn("counter games", text)
+
 
 class BandTests(unittest.TestCase):
     def test_rows_and_centres(self):

@@ -296,9 +296,23 @@ class PolicyTests(unittest.TestCase):
             {"otherwise": "league", "rules": [{"when": {"los": 30}, "decision": "go"}]},
             {"otherwise": "league", "prepared_calls": {"third-and-short": "Nowhere"}},
             {"otherwise": "league", "prepared_calls": {"odds": SHEET_RUN}},
+            # Review fix (October 16, 2026): a menu no fourth down matches, and
+            # two spellings of one menu.
+            {"otherwise": "league", "prepared_calls": {"fourth and short": SHEET_RUN}},
+            {"otherwise": "league", "prepared_calls": {"second-and-long": SHEET_RUN}},
+            {"otherwise": "league", "prepared_calls": {"third and short": SHEET_RUN, "3rd-and-short": SHEET_PASS}},
         ]
         for block in bad:
             self.assertTrue(fd.policy_errors(block, names), block)
+
+    def test_prepared_call_menus_are_keyed_as_the_kernel_reads_them(self):
+        names = fd.sheet_call_names(A.offensive_call_sheet)
+        block = {"otherwise": "ask", "prepared_calls": {"third and short": SHEET_RUN, "Normal Down": SHEET_PASS,
+                                                         "high red zone": SHEET_RUN, "goal line": SHEET_PASS}}
+        self.assertEqual(fd.policy_errors(block, names), [])
+        self.assertEqual(fd.canonical_policy(block)["prepared_calls"],
+                         {"goal-line": SHEET_PASS, "high-red-zone": SHEET_RUN, "normal-down": SHEET_PASS,
+                          "third-and-short": SHEET_RUN})
 
     def test_call_sheet_decisions_and_week_inputs(self):
         names = fd.sheet_call_names(A.offensive_call_sheet)
@@ -632,6 +646,60 @@ class LiveTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             resolve_game(a, B, continuation={"decisions": decisions + [{"token": "0" * 64,
                                                                          "choices": {"fourth_down": "punt"}}]}, **kw)
+
+    def test_tices_prepared_call_reaches_the_pause_and_a_policy_go(self):
+        # Review fix (October 16, 2026): menus spelled as the sheets spell
+        # them reach the kernel's lookup, at a live pause and on a block's go.
+        menus = ["third and short", "third and medium", "third and long", "normal down"]
+        sheet = tuple(dict(c, menus=menus) for c in A.offensive_call_sheet)
+        prepared = {"third and short": SHEET_RUN, "3rd-and-medium": SHEET_PASS, "Third and Long": SHEET_PASS}
+        by_menu = {"third-and-short": SHEET_RUN, "third-and-medium": SHEET_PASS, "third-and-long": SHEET_PASS}
+
+        def menu_of(ydstogo):
+            return "third-and-short" if ydstogo <= 2 else "third-and-medium" if ydstogo <= 5 else "third-and-long"
+        a = replace(A, offensive_call_sheet=sheet, fourth_down_policy={"otherwise": "ask", "prepared_calls": prepared},
+                    **U6)
+        r, pauses, _ = live(a, B, "A", lambda pause: {"fourth_down": "punt"}, name="b9f-prepared")
+        self.assertTrue(pauses)
+        for pause in pauses:
+            call = pause["conversion_call"]
+            self.assertEqual(call["menu"], menu_of(pause["situation"]["ydstogo"]))
+            self.assertEqual(call["prepared"], by_menu[call["menu"]])
+        a = replace(a, fourth_down_policy={"otherwise": "go", "prepared_calls": prepared})
+        r = play("b9f-prepared-go", a, B, management_mode="user_controlled", controlled_team="A")
+        self.assertTrue(r["terminated"])
+        self.assertEqual(clean(r), [])
+        gos = [d for _, d in records(r, "A") if d["decision"] == "go"]
+        self.assertTrue(gos)
+        for d in gos:
+            self.assertEqual(d["call"], by_menu[menu_of(d["state"]["ydstogo"])], d["state"])
+
+    def test_the_drive_so_far_reconciles_with_its_penalty_records(self):
+        # Review fix (October 16, 2026): the drive summary lists the replayed
+        # records already enforced, so its scrimmage and penalty yards add to
+        # the start less the spot shown.
+        from scripts.close_week import _fourth_down_lines
+        a = replace(A, offensive_call_sheet=(), **U6)
+        with_records = 0
+        for i in range(6):
+            r, pauses, _ = live(a, B, "A", lambda pause: {"fourth_down": "punt"}, name="b9f-sofar-%d" % i)
+            self.assertEqual(clean(r), [])
+            for pause in pauses:
+                so_far = pause["drive_so_far"]
+                self.assertEqual(set(so_far), {"start_yardline_100", "snaps", "penalties", "penalty_yards"})
+                scrimmage = sum(snap["yards"] for snap in so_far["snaps"])
+                self.assertEqual(so_far["start_yardline_100"] - scrimmage - so_far["penalty_yards"],
+                                 pause["situation"]["yardline_100"], pause["drive"])
+                self.assertEqual(so_far["penalty_yards"], sum(e["yards"] for e in so_far["penalties"]))
+                for entry in so_far["penalties"]:
+                    self.assertEqual(set(entry), {"type", "fouled_by", "status", "yards", "first_down",
+                                                  "after_snaps"})
+                    self.assertLessEqual(entry["after_snaps"], len(so_far["snaps"]))
+                if so_far["penalties"]:
+                    with_records += 1
+                    text = "\n".join(_fourth_down_lines(pause))
+                    self.assertIn("%d penalty yards" % so_far["penalty_yards"], text)
+        self.assertGreater(with_records, 0)
 
     def test_live_answers_decide_and_the_other_club_takes_the_chart(self):
         a = replace(A, offensive_call_sheet=(), **U6)

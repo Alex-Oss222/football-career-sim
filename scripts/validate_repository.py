@@ -501,6 +501,10 @@ def validate(root=ROOT):
         from scripts.render_inseason_rails import check as check_inseason_pages
         errors.extend(inseason_rails.data_errors(2014, current_date, root))
         errors.extend(check_inseason_pages(2014, root))
+        # Kernel 2014.6 batch B15 review fix (October 16, 2026): the
+        # defensive-back family table is rebuilt whenever the rails grow.
+        from runtime.depth_library import db_families_errors
+        errors.extend(db_families_errors(2014, root))
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append('2014 in-season rails invalid: ' + str(exc))
 

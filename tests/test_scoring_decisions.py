@@ -1438,9 +1438,17 @@ class SocketWiringTests(unittest.TestCase):
             self.assertAlmostEqual(p, min(1.0, max(0.0, expected)), places=12)
             moved += p != base
         self.assertGreater(moved, 0)
-        # A slope large enough to decide the draw changes the game itself.
-        games, _, _ = self.games({"coverage": -1.0})
-        self.assertNotEqual([g["final_score"] for g in games], [g["final_score"] for g in self.base_games])
+        # A slope large enough to decide the draw changes the game itself: one
+        # sign drives every return probability with a nonzero coverage input
+        # to 0 and the other to 1, so at least one of them changes a game.
+        # (Review fix, October 16, 2026: the single sign held only for the
+        # draws before the rebuilt player-state manifest re-keyed these games.)
+        base = [g["final_score"] for g in self.base_games]
+        changed = []
+        for slope in (-1.0, 1.0):
+            games, _, _ = self.games({"coverage": slope})
+            changed.append([g["final_score"] for g in games] != base)
+        self.assertTrue(any(changed), changed)
 
 
 if __name__ == "__main__":

@@ -291,7 +291,7 @@ def parameters(model=MODEL):
 # ---- Kernel 2014.6 (batch B7): the player-state model's parameter entry -----------
 PLAYER_STATE_MODEL = "player-state-v1"
 V4_CALIBRATION = ROOT / "library/data/2014_strength_calibration_v4.json"
-V4_SHA256 = "5316d2bb71253bc52609bd1788a7f477f8e023790efc592b925007b2f59cd752"
+V4_SHA256 = "802c5bdb49ef898733961bb90d412ca15f34704ded7f977aa61519d81c0ba282"
 # The fitted terms in a fixed order (the three kernel channels; the ypc
 # terms have no channel and are reported only).
 V4_TERM_ORDER = ("td_share_offense_passing", "td_share_defense_run_defense", "sack_rate_offense_protection",

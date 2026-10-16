@@ -31,9 +31,12 @@ The Week 1 library itself is not rebuilt: the in-season rails pin its clubs bloc
 - 363 defensive backs with a family: 286 by chart slot, 27 by weekly label, 50 by the rails position; 14 rails newcomers with a generic DB label and no weekly row keep no family.
 - Pass 2 reproduces pass 1's family for all 290 library defensive backs (the builder stops on any difference).
 - No player's chart-slot family disagrees with his weekly label.
+- The status quo the seats replace (the builder's `status_quo_nickel_seat`, review fix, October 16, 2026): of the 31 library clubs, 14 have a safety as the fifth defensive back by the library's depth order (the 2014.5 nickel seat) by the library position label, and 10 by this table's family.
 - 15 library positions change: 13 corners by chart slot (DeAngelo Hall, Corey Graham, Charles Godfrey, Darius Butler, Lardarius Webb, Walter Thurmond, Sherrick McManis, Kareem Jackson, Ron Parker, Omar Bolden, Logan Ryan, Andre Hal, Keith McGill) and two Buffalo deep-safety-slot players by weekly label (Da'Norris Searcy and Duke Williams, SS to FS; a DS slot is not on the rule's list).
 
 ## Limits
+
+- The table records the in-season rails manifest it was built from (`sources.inseason_rails_manifest`). When the rails grow (a week's backlog appended), it must be rebuilt with `python scripts/research/build_2014_db_families.py` before that week's inputs are built: `runtime.depth_library.relabel_defensive_backs` and `scripts/validate_repository.py` refuse a table built against another manifest, and each frozen package records the table's sha256 (`rails.db_slots.families_sha256`), which `scripts/close_week.py` checks.
 
 - The charts are single-publisher, as in the Week 1 library.
 - A newcomer who joined after Week 4 and was on no Week 1 chart takes the rails' stated position; the weekly label after Week 4 is beyond the information gate.

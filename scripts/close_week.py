@@ -173,8 +173,19 @@ def _fourth_down_lines(pause):
                  ", ".join(conv.get("calls") or []) or "(no call on the sheet)")]
     so_far = pause.get("drive_so_far") or {}
     snaps = so_far.get("snaps") or []
-    lines.append("- the drive so far: from %s yards out, %d snaps, %d yards" % (
-        so_far.get("start_yardline_100"), len(snaps), sum(s.get("yards", 0) for s in snaps)))
+    scrimmage = sum(s.get("yards", 0) for s in snaps)
+    if "penalties" not in so_far:
+        lines.append("- the drive so far: from %s yards out, %d snaps, %d yards" % (
+            so_far.get("start_yardline_100"), len(snaps), scrimmage))
+        return lines
+    # Kernel 2014.6 batch B11 review fix (October 16, 2026): scrimmage and
+    # penalty yards apart, adding to the start less the spot shown.
+    lines.append("- the drive so far: from %s yards out, %d snaps, %d scrimmage yards, %d penalty yards" % (
+        so_far.get("start_yardline_100"), len(snaps), scrimmage, so_far.get("penalty_yards", 0)))
+    for entry in so_far["penalties"]:
+        lines.append("  - after %d snaps: %s on the %s, %s, %+d yards%s" % (
+            entry.get("after_snaps", 0), entry.get("type"), entry.get("fouled_by"), entry.get("status"),
+            entry.get("yards", 0), ", first down" if entry.get("first_down") else ""))
     return lines
 
 
@@ -315,6 +326,15 @@ def rails_package_errors(package, week, season, root=ROOT):
         errors.append("package rails cutoffs differ from the schedule's")
     if meta.get("manifest_sha256") != rails.sha256_file(rails.data_dir(season, root) / "manifest.json"):
         errors.append("in-season rails data changed after the package was frozen")
+    db_meta = meta.get("db_slots") or {}
+    if db_meta.get("applied"):
+        # Review fix (October 16, 2026): the defensive-back family table the
+        # package's labels came from (batch B15, W2b).
+        from runtime.seasons import SeasonPaths
+        table = SeasonPaths(season, root).db_families
+        if not table.is_file() or db_meta.get("families_sha256") != rails.sha256_file(table):
+            errors.append("the defensive-back family table changed after the package was frozen "
+                          "(or the package does not record it); rebuild with build_week_inputs.py")
     coverage = rails.week_cutoff_coverage_error(data, max(cutoffs.values()), week)
     if coverage:
         errors.append(coverage)

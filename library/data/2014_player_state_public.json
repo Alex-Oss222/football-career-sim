@@ -11,7 +11,7 @@
  "derivation": "player-state-v1",
  "identity_sha256": "1158f2f269e711b9bbff7e4397a317296aec4bbd91111a0efcf9d5e5d34b0947",
  "league_year": 2014,
- "model_sha256": "e702db4372c89c6316641c22ff119c7c2a1828b0cbb61779913a21bdf5984913",
+ "model_sha256": "a6bc773ca5838973fa3a7f641ae308da81e7c32d747c01aecd01301c12344ea8",
  "players": {
   "00-0004091": {
    "P": [

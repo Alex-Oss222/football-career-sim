@@ -713,6 +713,34 @@ class RecordsTests(unittest.TestCase):
         self.assertNotIn("OWN REC", old)
 
 
+    def test_player_pages_disclose_the_two_fumble_definitions(self):
+        # Review fix (October 16, 2026): a season mixing earlier receipts with
+        # kernel 2014.6 ones says so on every page that shows FUM, LOST, FF
+        # and FR; a single-definition season's pages are unchanged.
+        import tempfile
+        from runtime.seasons import SeasonPaths
+        from scripts import render_season_stats as views
+        from scripts import render_team_tracker as tracker
+        old = receipt(play("b10-pages-old", profile=PROFILE_2014_5))
+        old.update(week=1, event_id="b10-pages-old")
+        new = receipt(Sample.get()[2])
+        new.update(week=5, event_id="b10-pages-new")
+        mixed, only_old, only_new = (aggregate_receipts(r) for r in ([old, new], [old], [new]))
+        for render in (lambda b: views.team_markdown(2014, "A", b), lambda b: views.league_markdown(2014, b),
+                       lambda b: views.all_players_markdown(2014, b)):
+            self.assertIn(views.FUMBLE_SPLIT_NOTE, render(mixed))
+            self.assertNotIn(views.FUMBLE_SPLIT_NOTE, render(only_old))
+            self.assertNotIn(views.FUMBLE_SPLIT_NOTE, render(only_new))
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = SeasonPaths(2014, Path(tmp)).stats / "game_receipts"
+            folder.mkdir(parents=True)
+            for rc in (old, new):
+                (folder / ("%s.json" % rc["event_id"])).write_text(json.dumps(rc))
+            games = tracker.load_games(Path(tmp), 2014, "A")
+            self.assertIn(views.FUMBLE_SPLIT_NOTE, tracker.readme(Path(tmp), 2014, "A", games))
+            self.assertNotIn(views.FUMBLE_SPLIT_NOTE, tracker.readme(Path(tmp), 2014, "A", games[:1]))
+
+
 class BandTests(unittest.TestCase):
     def test_rows_and_centres(self):
         receipts = [dict(make_receipt(r, week=5, matchup="B at A", detail="compact_stats"),

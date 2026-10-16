@@ -1950,6 +1950,251 @@
     }
    }
   },
+  "horizon_check": {
+   "candidate": "M1",
+   "checks": {
+    "held_out_2012_lines_to_2014w4": {
+     "as_applied": {
+      "by_age": {
+       "25-28": {
+        "mean": 0.013726298343711344,
+        "rows": 142
+       },
+       "29-31": {
+        "mean": 0.08285537195479331,
+        "rows": 42
+       },
+       "32 and over": {
+        "mean": 0.7483163866633615,
+        "rows": 11
+       },
+       "under 25": {
+        "mean": 0.11417839617232758,
+        "rows": 125
+       }
+      },
+      "refit": {
+       "beta": [
+        0.08576249699598099,
+        0.013188088575423234,
+        0.0012408510135834838
+       ],
+       "se": [
+        0.10850263168362223,
+        0.028804575665337128,
+        0.007603321472889168
+       ],
+       "terms": [
+        "constant",
+        "age - 27",
+        "(age - 27)^2"
+       ]
+      },
+      "rows": 320,
+      "wsse": 281.9515415542166
+     },
+     "none": {
+      "by_age": {
+       "25-28": {
+        "mean": -0.12339848646737983,
+        "rows": 142
+       },
+       "29-31": {
+        "mean": -0.3396998527644796,
+        "rows": 42
+       },
+       "32 and over": {
+        "mean": 0.3130420099751537,
+        "rows": 11
+       },
+       "under 25": {
+        "mean": 0.43319433255549816,
+        "rows": 125
+       }
+      },
+      "refit": {
+       "beta": [
+        -0.09708078676471019,
+        -0.09574363792771577,
+        0.011406060173292541
+       ],
+       "se": [
+        0.10850263168362223,
+        0.028804575665337128,
+        0.007603321472889168
+       ],
+       "terms": [
+        "constant",
+        "age - 27",
+        "(age - 27)^2"
+       ]
+      },
+      "rows": 320,
+      "wsse": 292.45526194378107
+     },
+     "once": {
+      "by_age": {
+       "25-28": {
+        "mean": -0.08349259059358252,
+        "rows": 142
+       },
+       "29-31": {
+        "mean": -0.13892628747294714,
+        "rows": 42
+       },
+       "32 and over": {
+        "mean": 0.5377651585862248,
+        "rows": 11
+       },
+       "under 25": {
+        "mean": 0.22905017620089826,
+        "rows": 125
+       }
+      },
+      "refit": {
+       "beta": [
+        -0.032873436584327294,
+        -0.036198648949529136,
+        0.006323455593438006
+       ],
+       "se": [
+        0.10850263168362223,
+        0.028804575665337128,
+        0.007603321472889168
+       ],
+       "terms": [
+        "constant",
+        "age - 27",
+        "(age - 27)^2"
+       ]
+      },
+      "rows": 320,
+      "wsse": 282.8963749946501
+     }
+    },
+    "in_sample_two_step": {
+     "as_applied": {
+      "by_age": {
+       "25-28": {
+        "mean": 0.06331967599433301,
+        "rows": 545
+       },
+       "29-31": {
+        "mean": 0.14466566417207158,
+        "rows": 157
+       },
+       "32 and over": {
+        "mean": 0.2388186566559304,
+        "rows": 44
+       },
+       "under 25": {
+        "mean": -0.1126403097451417,
+        "rows": 527
+       }
+      },
+      "refit": {
+       "beta": [
+        0.052390098260990545,
+        0.03444128147355801,
+        -0.0014824334542608575
+       ],
+       "se": [
+        0.04326210263937501,
+        0.010961494588477914,
+        0.003010734086898272
+       ],
+       "terms": [
+        "constant",
+        "age - 27",
+        "(age - 27)^2"
+       ]
+      },
+      "rows": 1273,
+      "wsse": 1513.8499949680208
+     },
+     "none": {
+      "by_age": {
+       "25-28": {
+        "mean": -0.07671693032054061,
+        "rows": 545
+       },
+       "29-31": {
+        "mean": -0.28061213094632337,
+        "rows": 157
+       },
+       "32 and over": {
+        "mean": -0.20717406692855408,
+        "rows": 44
+       },
+       "under 25": {
+        "mean": 0.22288608047610323,
+        "rows": 527
+       }
+      },
+      "refit": {
+       "beta": [
+        -0.13052478928045683,
+        -0.07447568647619014,
+        0.008682695434766817
+       ],
+       "se": [
+        0.043261831411757205,
+        0.010961425866435217,
+        0.0030107152113886594
+       ],
+       "terms": [
+        "constant",
+        "age - 27",
+        "(age - 27)^2"
+       ]
+      },
+      "rows": 1273,
+      "wsse": 1562.9125970385855
+     },
+     "once": {
+      "by_age": {
+       "25-28": {
+        "mean": -0.03531509160681529,
+        "rows": 545
+       },
+       "29-31": {
+        "mean": -0.07837619669113749,
+        "rows": 157
+       },
+       "32 and over": {
+        "mean": 0.02188791892925998,
+        "rows": 44
+       },
+       "under 25": {
+        "mean": 0.009958422749926898,
+        "rows": 527
+       }
+      },
+      "refit": {
+       "beta": [
+        -0.06631743910007383,
+        -0.014930697498003723,
+        0.003600090854912269
+       ],
+       "se": [
+        0.043261831411757205,
+        0.010961425866435217,
+        0.0030107152113886594
+       ],
+       "terms": [
+        "constant",
+        "age - 27",
+        "(age - 27)^2"
+       ]
+      },
+      "rows": 1273,
+      "wsse": 1506.0837621440219
+     }
+    }
+   },
+   "rule": "once = the curve's step at the last line's age only; as applied = every step after the last line (the adopted rule); reported, not used to choose",
+   "unit": "true-state SD of each family (pass 1)"
+  },
   "pairs": [
    "2010-2011",
    "2011-2012",
@@ -2143,20 +2388,6 @@
     "why": "beats Z in both passes; the lowest pass 1 leave-one-season-pair-out SSE among M1, M2"
    },
    "unit": "true-state SD of each family (residual over the family's sqrt(sb2 + su2), each pass its own)"
-  },
-  "residual_after_application": {
-   "beta_after": [
-    8.531365057314087e-18,
-    -4.628210516714742e-17,
-    2.0423113491639627e-17
-   ],
-   "beta_before": [
-    -0.06420735018038269,
-    -0.05954498897818657,
-    0.005082604579854526
-   ],
-   "candidate": "M1",
-   "rows": 2365
   },
   "rule": "one-step forecast residuals (no aging, current components); candidates Z, C, M1, M2; eligible only if it beats Z in both passes (pass 1 leave-one-season-pair-out weighted SSE, pass 2 BIC n ln(SSE/n) + k ln n); the lowest pass 1 SSE adopted; the curve is the fitted correction to a forecast from the player's own record: it moves the forecast's persistent part at each season step after his last line, never inside the record or a prior-only state"
  },
@@ -2623,10 +2854,11 @@
     "su2": 0.05972147673924901
    },
    "self_influence": {
-    "max": 0.06322355593074518,
-    "median": 0.0001400169344480741,
-    "p90": 0.0022984888844032668,
-    "p99": 0.04000104757570227,
+    "channels": "moment sums and the aging fit",
+    "max": 0.06535710143924131,
+    "median": 0.0011783650113750376,
+    "p90": 0.010429512268074152,
+    "p99": 0.03143995640645575,
     "players": 243,
     "unit": "true-state SD of the family"
    },
@@ -3140,10 +3372,11 @@
     "su2": 0.3255244950703371
    },
    "self_influence": {
-    "max": 0.005664188842639901,
-    "median": 6.722520125509553e-06,
-    "p90": 0.000358687942502231,
-    "p99": 0.0032054384058204637,
+    "channels": "moment sums and the aging fit",
+    "max": 0.027888277877326048,
+    "median": 0.0015185390672550394,
+    "p90": 0.006632898721356424,
+    "p99": 0.01605574452094882,
     "players": 190,
     "unit": "true-state SD of the family"
    },
@@ -3580,6 +3813,7 @@
     "su2": 0.0002345709318142742
    },
    "self_influence": {
+    "channels": "moment sums and the aging fit",
     "max": 0.16990631324281438,
     "median": 0.020276214159782015,
     "p90": 0.08897101225645462,
@@ -4082,6 +4316,7 @@
     "su2": 1.2694601608692018
    },
    "self_influence": {
+    "channels": "moment sums and the aging fit",
     "max": 0.011820413324481338,
     "median": 0.0,
     "p90": 0.007923701131640792,
@@ -4599,10 +4834,11 @@
     "su2": 0.3455324354669859
    },
    "self_influence": {
-    "max": 0.16561120041362895,
-    "median": 0.0004032028030062647,
-    "p90": 0.007869900510069182,
-    "p99": 0.10000461190408494,
+    "channels": "moment sums and the aging fit",
+    "max": 0.16298533911601754,
+    "median": 0.0017583006721708038,
+    "p90": 0.012162424277584993,
+    "p99": 0.11953509489240013,
     "players": 173,
     "unit": "true-state SD of the family"
    },
@@ -5103,10 +5339,11 @@
     "su2": 1.6000856786531
    },
    "self_influence": {
-    "max": 0.0965012636587377,
-    "median": 0.0027951303500571927,
-    "p90": 0.030728386132938074,
-    "p99": 0.0965012636587377,
+    "channels": "moment sums and the aging fit",
+    "max": 0.992719944821254,
+    "median": 0.06972438907330084,
+    "p90": 0.3439082497741711,
+    "p99": 0.992719944821254,
     "players": 28,
     "unit": "true-state SD of the family"
    },
@@ -5600,6 +5837,7 @@
     "su2": 0.8444396530307553
    },
    "self_influence": {
+    "channels": "moment sums and the aging fit",
     "max": 0.38204097500997597,
     "median": 0.0,
     "p90": 0.029765969639368766,
@@ -6094,10 +6332,11 @@
     "su2": 0.013197682698515435
    },
    "self_influence": {
-    "max": 0.2949717805583293,
-    "median": 0.004507647583245025,
-    "p90": 0.06361425378608047,
-    "p99": 0.2949717805583293,
+    "channels": "moment sums and the aging fit",
+    "max": 0.30776702926762617,
+    "median": 0.0054562654524312635,
+    "p90": 0.08855156293483413,
+    "p99": 0.30776702926762617,
     "players": 44,
     "unit": "true-state SD of the family"
    },
@@ -6607,10 +6846,11 @@
     "su2": 0.001486658404318881
    },
    "self_influence": {
-    "max": 0.08315548790170374,
-    "median": 0.00046359642422300344,
-    "p90": 0.006899734628925417,
-    "p99": 0.08315548790170374,
+    "channels": "moment sums and the aging fit",
+    "max": 0.08465507189030792,
+    "median": 0.001492528490075858,
+    "p90": 0.008490959175429236,
+    "p99": 0.08465507189030792,
     "players": 79,
     "unit": "true-state SD of the family"
    },
@@ -7089,10 +7329,11 @@
     "su2": 0.0
    },
    "self_influence": {
-    "max": 0.09779603970522786,
-    "median": 0.0004226357975282805,
-    "p90": 0.008141839838894896,
-    "p99": 0.09779603970522786,
+    "channels": "moment sums and the aging fit",
+    "max": 0.0947053675297689,
+    "median": 0.000759859509103431,
+    "p90": 0.008895862571002831,
+    "p99": 0.0947053675297689,
     "players": 50,
     "unit": "true-state SD of the family"
    },
@@ -7609,10 +7850,11 @@
     "su2": 0.02736054680469389
    },
    "self_influence": {
-    "max": 0.055432330788419776,
-    "median": 0.00020357953701531962,
-    "p90": 0.009729548828520581,
-    "p99": 0.04319968202558201,
+    "channels": "moment sums and the aging fit",
+    "max": 0.057272787578316185,
+    "median": 0.0010327684120224009,
+    "p90": 0.01133516657792335,
+    "p99": 0.04432148633737297,
     "players": 112,
     "unit": "true-state SD of the family"
    },

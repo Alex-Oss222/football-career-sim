@@ -369,6 +369,12 @@ def db_role_errors(chart):
             errors.append("the %s role names %s, who is not on the chart's defensive-back list" % (role, holder))
         elif role == "outside_reserve" and db_family(chart.get("positions", {}).get(holder)) != "corner":
             errors.append("the outside_reserve role names %s, who is not a corner" % holder)
+    # Review fix (October 16, 2026): one player cannot hold both seats (the
+    # nickel is never in the outside order, so the reserve would be ignored).
+    holders = {role: [p for p, roles in chart.get("roles", {}).items() if role in (roles or ())] for role in SLOT_ROLES}
+    both = sorted(set(holders["nickel"]) & set(holders["outside_reserve"]))
+    for player in both:
+        errors.append("the nickel and outside_reserve roles name the same player (%s); they are separate seats" % player)
     return errors
 
 
@@ -675,5 +681,9 @@ def build_package(week, receipts, call_sheet, anchors, season=2013, strength_mod
         # Batch B15 (R21): each background club's available, dressed and
         # legal counts; (W2b) the DB labels and nickel roles applied.
         package["rails"]["game_day"] = game_day_report
-        package["rails"]["db_slots"] = {"applied": w2b, "clubs": db_report} if w2b else {"applied": False}
+        package["rails"]["db_slots"] = ({"applied": w2b, "clubs": db_report,
+                                         # Review fix (October 16, 2026): the family table the
+                                         # labels came from, checked by close_week.py.
+                                         "families_sha256": rails.sha256_file(SeasonPaths(season).db_families)}
+                                        if w2b else {"applied": False})
     return package

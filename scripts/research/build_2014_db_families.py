@@ -53,6 +53,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 import sources_2010_2014 as sources  # noqa: E402
+from runtime.depth_library import available  # noqa: E402
 from runtime.usage import group  # noqa: E402
 
 OUT = ROOT / "library" / "data" / "2014_db_families.json"
@@ -159,6 +160,28 @@ def sha256_file(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
+def status_quo(library, players):
+    """The status quo the W2b seats replace (plan batch B15: "restated by the
+    builder"): the library clubs whose fifth defensive back by the library's
+    depth order (Week 1 available players; the 2014.5 seat DB5, the nickel)
+    is a safety, counted by the library position label and by this table's
+    family."""
+    clubs = label = family = 0
+    for club in library["clubs"].values():
+        dbs = sorted((p for p in club["players"] if group(p["position"]) == "DB" and available(p, 1)),
+                     key=lambda p: p["depth"])
+        if len(dbs) < 5:
+            continue
+        clubs += 1
+        fifth = dbs[4]
+        label += label_family(fifth["position"]) == "safety"
+        family += (players.get(fifth.get("gsis_id")) or {}).get("family") == "safety"
+    return {"clubs": clubs, "safety_at_db5_by_library_label": label, "safety_at_db5_by_family": family,
+            "rule": ("library clubs with five or more Week 1 available defensive backs whose fifth by the library "
+                     "depth order (the 2014.5 nickel seat) is a safety: by the library position label, and by this "
+                     "table's family")}
+
+
 def build(dest):
     library = json.loads(LIBRARY.read_text(encoding="utf-8"))
     pass1 = library_slots(library)
@@ -247,6 +270,7 @@ def build(dest):
                 sum(1 for g in universe if g in pass1)),
             "chart_and_weekly_disagree": disagree,
             "library_positions_relabelled": relabelled,
+            "status_quo_nickel_seat": status_quo(library, players),
         },
     }
 

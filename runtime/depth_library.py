@@ -69,6 +69,28 @@ def db_families(season):
     return _db_families(str(SeasonPaths(season).db_families))
 
 
+def db_families_errors(season, root=None):
+    """Review fix (October 16, 2026): the season's defensive-back family table
+    must be built against the in-season rails manifest now committed (the
+    rails grow with each week's backlog, and a newcomer the table does not
+    hold would keep his rails position unnoticed). [] when it matches or the
+    season has no table."""
+    from . import rails
+    paths = SeasonPaths(season, root) if root is not None else SeasonPaths(season)
+    if not paths.db_families.is_file():
+        return []
+    data = json.loads(paths.db_families.read_text(encoding="utf-8"))
+    pinned = (data.get("sources", {}).get("inseason_rails_manifest") or {}).get("sha256")
+    manifest = rails.data_dir(season, paths.root) / "manifest.json"
+    if not manifest.is_file():
+        return []
+    if pinned != rails.sha256_file(manifest):
+        return ["%s was built against another in-season rails manifest (%s); rebuild it with "
+                "python scripts/research/build_2014_db_families.py before building the week's inputs"
+                % (paths.db_families.relative_to(paths.root).as_posix(), (pinned or "none")[:12])]
+    return []
+
+
 def relabel_defensive_backs(club, season, report=None):
     """One background club entry (the rails schema, players with gsis ids)
     with its defensive backs' contemporaneous labels (W2b): each player of
@@ -84,6 +106,9 @@ def relabel_defensive_backs(club, season, report=None):
     if data is None:
         raise ValueError("no %d defensive-back family table (library/data/%d_db_families.json); "
                          "the DB seats cannot be read" % (season, season))
+    stale = db_families_errors(season)
+    if stale:
+        raise ValueError(stale[0])
     players = data["players"]
     nickels = set(data.get("nickel", {}).get(club.get("code"), ()))
     out = []

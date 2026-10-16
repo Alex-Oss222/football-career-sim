@@ -374,7 +374,7 @@
   },
   "source": "nflscrapR reg_pbp drives (td_team = posteam), pass-2 E-values"
  },
- "player_state_model_sha256": "e702db4372c89c6316641c22ff119c7c2a1828b0cbb61779913a21bdf5984913",
+ "player_state_model_sha256": "a6bc773ca5838973fa3a7f641ae308da81e7c32d747c01aecd01301c12344ea8",
  "player_value": "E-value over the family's true-state SD (player-state model, U5 rules); 0 for no state or no spread; offensive linemen rule B plus honours",
  "previously_live_v3": [
   "sack_rate_offense_protection",

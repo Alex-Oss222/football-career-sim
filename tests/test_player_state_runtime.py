@@ -414,9 +414,18 @@ class DistributionTests(unittest.TestCase):
         r1 = resolve_game(a1, b, seed=SEED, event_id="b7-priv", _test_profile=PROFILE_2014_6)
         r2 = resolve_game(a2, b, seed=SEED, event_id="b7-priv", _test_profile=PROFILE_2014_6)
         self.assertEqual(set(r1), set(r2))
-        self.assertEqual(set(r1["possessions"][0]), set(r2["possessions"][0]))
+        # The fields every possession publishes are the same whatever was
+        # drawn; an outcome's own fields (a punt record, a try, a kick's
+        # probability) follow the drives the draws produced, never the draw.
+        # (Review fix, October 16, 2026: the earlier first-possession
+        # comparison held only while both first drives ended alike, and the
+        # rebuilt player-state manifest re-keys these games.)
+        always = lambda r: set.intersection(*(set(p) for p in r["possessions"]))  # noqa: E731
+        self.assertEqual(always(r1), always(r2))
         for r in (r1, r2):
             self.assertFalse(_has_key(r, "strength"))
+            for p in r["possessions"]:
+                self.assertFalse([k for k in p if any(w in k for w in ("strength", "latent", "drawn", "tier"))])
 
 
 class ServiceTests(unittest.TestCase):
@@ -694,6 +703,31 @@ class PrivacyAndObservablesTests(unittest.TestCase):
         self.assertEqual(len(errors), 4)
         for name in ("leak.json", "tier.json", "drawn.json", "value.json"):
             self.assertTrue(any(name in e for e in errors), name)
+
+    def test_frozen_input_packages_may_carry_the_attribution_tier_only(self):
+        # Review fix (October 16, 2026): the frozen weekly TeamInput package
+        # is the private record the tiers travel in; it still refuses a draw.
+        from runtime.privacy import privacy_errors
+        tier = {"games": [{"away_input": {"strength": {"players": {"x": {"attribution_tier": "Plus"}}}}}]}
+        cases = (({}, 0), ({"drawn_tier": "Plus"}, 1), ({"latent_value": 0.3}, 1))
+        for extra, expected in cases:
+            with tempfile.TemporaryDirectory() as tmp:
+                cache = Path(tmp) / ".sim_cache/2014"
+                cache.mkdir(parents=True)
+                data = json.loads(json.dumps(tier))
+                data["games"][0]["away_input"]["strength"]["players"]["x"].update(extra)
+                (cache / "week_05_inputs.json").write_text(json.dumps(data))
+                errors = privacy_errors(tmp)
+                self.assertEqual(len(errors), expected, (extra, errors))
+                self.assertFalse(any("attribution tier" in e for e in errors), errors)
+        with tempfile.TemporaryDirectory() as tmp:
+            for rel in ("career/x/tier.json", ".sim_cache/2014/week_05_results.json",
+                        ".sim_cache/week_05_inputs.json"):
+                path = Path(tmp) / rel
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(json.dumps(tier))
+            errors = privacy_errors(tmp)
+        self.assertEqual(len(errors), 3, errors)
 
     def test_observables_from_a_package_and_the_committed_backfill(self):
         from runtime import observables

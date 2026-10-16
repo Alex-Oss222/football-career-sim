@@ -22,7 +22,8 @@ from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from runtime import depth_library, participation, strength, usage, week_inputs
+from runtime import depth_library, participation, player_evidence, strength, usage, week_inputs
+from runtime.player_evidence import PlayerInput
 from runtime.depth_library import UNIT
 from runtime.kernel import DEPTH_ORDER, TeamInput, resolve_game, validate_result
 from runtime.profiles import PROFILE_2014_5, PROFILE_2014_6, Profile
@@ -131,6 +132,48 @@ class SeatTests(unittest.TestCase):
         self.assertEqual(ids(participation.db_seats(left + (filler,), starters))[:5],
                          ["A-CB1", "A-CB2", "A-S4", "A-X", "A-CB4"])
 
+    def test_seating_is_not_idempotent_once_a_family_runs_out(self):
+        # Review fix (October 16, 2026): a seat filled from the other family
+        # renumbers that player ahead of his own family, so a second seating
+        # reorders; the kernel seats every view once (KernelSeatTests).
+        left = tuple(p for p in self.players if p.player_id not in ("A-CB5", "A-S3", "A-S4", "A-S1"))
+        starters = participation.db_starters(left)
+        once = participation.seat_defensive_backs(left, starters)
+        self.assertEqual([p.player_id for p in usage.depth_order(once, "DB")],
+                         ["A-CB1", "A-CB2", "A-S2", "A-CB4", "A-CB3"])
+        twice = participation.seat_defensive_backs(once, starters)
+        self.assertNotEqual([p.player_id for p in usage.depth_order(twice, "DB")],
+                            [p.player_id for p in usage.depth_order(once, "DB")])
+
+    def test_the_outside_reserve_starts_when_a_starter_is_not_dressed(self):
+        # Review fix (October 16, 2026): the outside reserve is the first
+        # replacement for an outside starter before kickoff too, ahead of a
+        # lower-ranked corner. The Week 4 chart's DB order with Stone's
+        # recorded roles (Bouye nickel, Ball outside reserve) and Poyer
+        # inactive.
+        order = (("Aqib Talib", "CB"), ("Alterraun Verner", "CB"), ("Bacarri Rambo", "S"),
+                 ("Brynden Trawick", "S"), ("A.J. Bouye", "CB"), ("Chris Prosinski", "S"),
+                 ("Adrian Phillips", "S"), ("Alan Ball", "CB"), ("Malcolm Butler", "CB"))
+        roles = {"A.J. Bouye": ("nickel",), "Alan Ball": ("outside_reserve",)}
+        unit = tuple(PlayerInput(name, pos, unit="defense", depth=i, roles=roles.get(name, ()))
+                     for i, (name, pos) in enumerate(order, 1))
+        self.assertEqual(participation.db_starters(unit), ("Aqib Talib", "Alterraun Verner"))
+        without = lambda name: tuple(p for p in unit if p.player_id != name)  # noqa: E731
+        self.assertEqual(participation.db_starters(without("Aqib Talib")), ("Alterraun Verner", "Alan Ball"))
+        self.assertEqual(participation.db_starters(without("Alterraun Verner")), ("Aqib Talib", "Alan Ball"))
+        self.assertEqual(ids(participation.db_seats(without("Aqib Talib")))[:5],
+                         ["Alterraun Verner", "Alan Ball", "Bacarri Rambo", "Brynden Trawick", "A.J. Bouye"])
+        # The frozen Week 3 chart with its recorded roles (Poyer nickel, Bouye
+        # outside reserve): Talib not dressed, Bouye starts, not Butler.
+        players = player_evidence.normalize_players(jacksonville_week_3(WEEK3_ROLES))
+        self.assertEqual(participation.db_starters(players), ("Aqib Talib", "Alterraun Verner"))
+        self.assertEqual(participation.db_starters(tuple(p for p in players if p.player_id != "Aqib Talib")),
+                         ("Alterraun Verner", "A.J. Bouye"))
+        # Without roles the depth order decides, as before.
+        plain = tuple(replace(p, roles=()) for p in unit)
+        self.assertEqual(participation.db_starters(tuple(p for p in plain if p.player_id != "Aqib Talib")),
+                         ("Alterraun Verner", "A.J. Bouye"))
+
     def test_the_seats_read_only_family_depth_and_roles(self):
         # The label swap at the function: the same players under other ids
         # (another club's) take the same seats.
@@ -214,6 +257,38 @@ class KernelSeatTests(unittest.TestCase):
         for result in (ours, theirs):
             self.assertEqual(json.dumps(result, sort_keys=True, default=str), json.dumps(plain, sort_keys=True, default=str))
 
+    def test_every_consumer_reads_one_db_order_after_a_family_runs_short(self):
+        # Review fix (October 16, 2026): each view is seated once from the
+        # unseated live list, so the scrimmage lineup, the W2a record, the
+        # live rosters (kickoffs, coverage units, returners) and the
+        # successor read one DB order for the same available players.
+        a, b = sample_teams()
+        for gone, dropped, entrant, slot in (("B-S1", ("B-CB5", "B-S3", "B-S4"), "B-CB4", "DB4"),
+                                             ("B-CB1", ("B-CB3", "B-CB4", "B-CB5"), "B-S4", "DB5")):
+            team = replace(b, active_players=tuple(pid for pid in b.active_players if pid not in dropped))
+            tag = "w2b-once-" + gone
+            base = resolve_game(a, team, seed=SEED + b"-" + tag.encode(), event_id=tag, _test_profile=PROFILE_2014_6)
+            drive = [p["number"] for p in base["possessions"] if p["team"] == "A"][0]
+            orders = {}
+            real = participation.seat_defensive_backs
+
+            def logged(players, starters=None):
+                out = real(players, starters)
+                dbs = [p for p in usage.depth_order(out, "DB") if p.player_id.startswith("B-")]
+                if dbs:
+                    orders.setdefault(frozenset(p.player_id for p in dbs), set()).add(
+                        tuple(p.player_id for p in dbs))
+                return out
+            with mock.patch.object(participation, "seat_defensive_backs", logged):
+                r = resolve_game(a, team, seed=SEED + b"-" + tag.encode(), event_id=tag,
+                                 _test_profile=PROFILE_2014_6, _test_onsets=force(drive, gone))
+            self.assertEqual(validate_result(r), [])
+            for members, seen in orders.items():
+                self.assertEqual(len(seen), 1, (gone, sorted(seen)))
+            sub = next(s for s in r["substitutions"] if s["removed"] == gone)
+            self.assertEqual(sub["entrant"], entrant, gone)
+            self.assertEqual(sub["entering_slots"], [{"side": "defense", "slot": slot, "player": entrant}], gone)
+
     def test_the_2014_5_kernel_keeps_the_depth_order(self):
         r = self.play(jacksonville_week_3(WEEK3_ROLES), profile=PROFILE_2014_5)
         self.assertTrue(all("entrant" not in s for s in r["substitutions"]))
@@ -287,6 +362,26 @@ class PauseEligibilityTests(unittest.TestCase):
             self.play(onsets, self.answer(partial, {"Aqib Talib": "A.J. Bouye", "Alterraun Verner": "A.J. Bouye"}))
         with self.assertRaisesRegex(ValueError, "not an eligible"):
             self.play(onsets, self.answer(partial, {"Aqib Talib": "Alan Ball", "Alterraun Verner": DEPTH_ORDER}))
+
+    def test_a_depth_order_answer_beside_a_coach_choice_records_its_own_entrant(self):
+        # Review fix (October 16, 2026): the boundary's records are recomputed
+        # in removal order after the coach's choice, so Verner's depth-order
+        # record names the outside reserve and Talib's names only Butler.
+        onsets = {**self.onsets, **force(self.drive, "Alterraun Verner")}
+        partial = self.play(onsets)
+        resumed = self.play(onsets, self.answer(partial, {"Aqib Talib": "Malcolm Butler",
+                                                          "Alterraun Verner": DEPTH_ORDER}))
+        self.assertEqual(validate_result(resumed), [])
+        subs = {s["removed"]: s for s in resumed["substitutions"] if s["drive"] == self.drive and s["team"] == JAX}
+        talib, verner = subs["Aqib Talib"], subs["Alterraun Verner"]
+        self.assertEqual((talib["basis"], talib["replacement"], talib["entrant"]),
+                         ("coach_choice", "Malcolm Butler", "Malcolm Butler"))
+        self.assertEqual(talib["entering_slots"], [{"side": "defense", "slot": "DB1", "player": "Malcolm Butler"}])
+        self.assertEqual((verner["basis"], verner["replacement"], verner["entrant"]),
+                         ("depth_order", "A.J. Bouye", "A.J. Bouye"))
+        self.assertEqual(verner["entering_slots"], [{"side": "defense", "slot": "DB2", "player": "A.J. Bouye"}])
+        entering = [e["player"] for s in (talib, verner) for e in s["entering_slots"]]
+        self.assertEqual(len(entering), len(set(entering)))
 
     def test_the_pinned_receiver_list_moves(self):
         # tests/test_injuries_in_game.py pins the 2014.5 list (every receiver
@@ -365,9 +460,35 @@ class InputTests(unittest.TestCase):
         bad["roles"]["Chris Prosinski"] = ["outside_reserve"]
         self.assertTrue(any("not a corner" in e for e in week_inputs.db_role_errors(bad)))
         bad = copy.deepcopy(good)
+        del bad["roles"]["A.J. Bouye"]
+        bad["roles"]["Alan Ball"] = ["nickel", "outside_reserve"]
+        self.assertTrue(any("same player" in e for e in week_inputs.db_role_errors(bad)))
+        bad = copy.deepcopy(good)
         bad["roles"]["Kirk Cousins"] = ["passer", "nickel"]
         del bad["roles"]["A.J. Bouye"]
         self.assertTrue(any("defensive-back list" in e for e in week_inputs.db_role_errors(bad)))
+
+    def test_the_family_table_follows_the_rails_manifest(self):
+        # Review fix (October 16, 2026): a table built against another
+        # in-season rails manifest is refused, with the rebuild named.
+        from runtime import rails
+        self.assertEqual(depth_library.db_families_errors(2014), [])
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            table = SeasonPaths(2014, root).db_families
+            table.parent.mkdir(parents=True)
+            data = json.loads(SeasonPaths(2014).db_families.read_text(encoding="utf-8"))
+            table.write_text(json.dumps(data), encoding="utf-8")
+            manifest = rails.data_dir(2014, root) / "manifest.json"
+            manifest.parent.mkdir(parents=True)
+            manifest.write_bytes((rails.data_dir(2014) / "manifest.json").read_bytes())
+            self.assertEqual(depth_library.db_families_errors(2014, root), [])
+            manifest.write_bytes(manifest.read_bytes() + b"\n")
+            errors = depth_library.db_families_errors(2014, root)
+        self.assertEqual(len(errors), 1)
+        self.assertIn("build_2014_db_families.py", errors[0])
+        self.assertEqual(data["verification"]["status_quo_nickel_seat"]["safety_at_db5_by_library_label"], 14)
+        self.assertEqual(data["verification"]["status_quo_nickel_seat"]["safety_at_db5_by_family"], 10)
 
     def test_receipt_ids_are_never_renamed(self):
         receipts = [{"away": "X", "home": "Y", "team_stats": {"X": {"players": {"Old Name": {}}}, "Y": {"players": {}}}}]
@@ -442,6 +563,17 @@ class Week5BuildTests(unittest.TestCase):
         self.assertEqual(sum(fallback["count"].values()),
                          sum(len(v) for g in fallback["players"].values() for v in g.values()))
         self.assertTrue(package["rails"]["db_slots"]["applied"])
+        # Review fix (October 16, 2026): the package records the family table
+        # its labels came from, and the weekly close refuses another one.
+        from runtime import rails
+        from scripts.close_week import rails_package_errors
+        table = SeasonPaths(2014).db_families
+        self.assertEqual(package["rails"]["db_slots"]["families_sha256"], rails.sha256_file(table))
+        family_error = "defensive-back family table changed"
+        self.assertFalse(any(family_error in e for e in rails_package_errors(package, 5, 2014)))
+        stale = copy.deepcopy(package)
+        stale["rails"]["db_slots"]["families_sha256"] = "0" * 64
+        self.assertTrue(any(family_error in e for e in rails_package_errors(stale, 5, 2014)))
         # Without db_slots (the installed 2014.5 kernel) nothing is relabelled.
         plain = self.build(5, self.receipts, False)
         den = {p["player_id"]: p for g in plain["games"] for s in ("away_input", "home_input")

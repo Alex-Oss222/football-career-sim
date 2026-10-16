@@ -16,8 +16,8 @@
   "PR"
  ],
  "league_year": 2014,
- "model_sha256": "e702db4372c89c6316641c22ff119c7c2a1828b0cbb61779913a21bdf5984913",
- "public_table_sha256": "3c7eae3e9b15984abe04c3f1f8b6e884a1ff20bef5f42402a3297977a6255572",
+ "model_sha256": "a6bc773ca5838973fa3a7f641ae308da81e7c32d747c01aecd01301c12344ea8",
+ "public_table_sha256": "4b89745f1f4e33112d1b25c04502a10366f604b7e357a13922aad118d8dd45dc",
  "schema": "2014-player-state-manifest-v1",
  "specification_sha256": "ca028ba38009d1b84e5c887ea86ce8d697edf1705bcd9b755f60aede9d6f8446"
 }

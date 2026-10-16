@@ -138,12 +138,39 @@ def render(model, public, _previous=None):
         w("| %s | %s | %s | %s | %s | %s | %s |" % (
             k, a["label"], a["source"], ", ".join(a.get("terms") or []) or "-",
             ", ".join(_f(x, 4) for x in a.get("beta") or []) or "-", _f(a.get("scale")), a.get("status", "-")))
-    rd = ag["residual_after_application"]
+    hc = ag["horizon_check"]
     w("")
-    w("Check: the pooled candidate refitted on the forecast residuals with the applied curves (%s rows) reads %s "
-      "(before: %s); the curve corrects the one-step forecast it was fitted on, applied after each player's last line." % (
-          rd.get("rows", "-"), ", ".join(_f(x, 3) for x in rd.get("beta_after") or []) or "-",
-          ", ".join(_f(x, 4) for x in rd.get("beta_before") or []) or "-"))
+    if hc.get("checks"):
+        names = {"in_sample_two_step": "In sample: qualifying t + 2 lines (t = 2010, 2011) from lines through t",
+                 "held_out_2012_lines_to_2014w4": "Held out: 2014 Weeks 1-4 lines from 2010-2012 lines (the table's "
+                                                  "horizon)"}
+        labels = {"none": "no curve", "once": "once (last line's age)", "as_applied": "as applied"}
+        w("**Check at the table's horizon** (review fix, October 16, 2026). A 2014 expectation from 2010-2012 lines "
+          "takes the curve's step at each season after the player's last line, so for a last line in 2012 it takes "
+          "two steps; the check reads two-step forecasts (%s), in %s. Weighted SSE is the sum of residual^2 / forecast "
+          "variance; the refit is the %s candidate on the residuals (coefficients with SEs; a refit near zero means "
+          "the forecasts carry no age drift left). An earlier check refitted the curve on the same one-step "
+          "residuals it was fitted on, which returns zero by construction, so it is not reported." % (
+              hc["rule"], hc["unit"], hc["candidate"]))
+        w("")
+        w("| Forecasts | Curve | Rows | Weighted SSE | Refit coefficients (SE) | Mean residual by age at the last line "
+          "(under 25 / 25-28 / 29-31 / 32 and over) |")
+        w("|---|---|---:|---:|---|---|")
+        for key, got in hc["checks"].items():
+            for v in ("none", "once", "as_applied"):
+                r = got[v]
+                fit = r["refit"]
+                coef = ", ".join("%s (%s)" % (_f(b, 3), _f(e, 2)) for b, e in zip(fit["beta"], fit["se"])) \
+                    if fit else "-"
+                bins = " / ".join(_f(b["mean"], 3) for b in r["by_age"].values())
+                w("| %s | %s | %d | %s | %s | %s |" % (names.get(key, key), labels[v], r["rows"], _f(r["wsse"], 6),
+                                                       coef, bins))
+        w("")
+        w("The rule that applies the curve at every season step after the last line was adopted after an earlier "
+          "trial's reading (runtime/2014_engine_decisions.md, batch U5). Whether to keep it or apply the curve once, "
+          "at the last line's age, is Stone's call on these readings; the build does not change it.")
+    else:
+        w("Check at the table's horizon: %s." % hc.get("note", "-"))
     w("")
     w("## 4. Draft-slot starting estimates")
     w("")
@@ -225,8 +252,10 @@ def render(model, public, _previous=None):
             "; ".join("%s %s (%s)" % (p_, _f(v["covariance"]), _f(v["se"], 2)) for p_, v in sorted(dr["lag1_pairs"].items())),
             "-" if h["cochran_q"] is None else "%s (%d), %s" % (_f(h["cochran_q"], 3), h["df"], _f(h["p"], 2))))
     w("")
-    w("**Self-influence** (a player's own 2013-2014 rows removed from the moment sums, his 2014 expectation "
-      "recomputed; in the family's true-state SD; summaries over every such player, none stored per player):")
+    w("**Self-influence** (a player's own 2013-2014 rows removed from the moment sums and, for a family on an aging "
+      "curve, his own aging rows whose outcome is his 2013 line removed from the curve's fit; his 2014 expectation "
+      "recomputed with both; in the family's true-state SD; summaries over every such player, none stored per "
+      "player):")
     w("")
     w("| Family | Players | Median | 90th | 99th | Max |")
     w("|---|---:|---:|---:|---:|---:|")

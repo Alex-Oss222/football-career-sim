@@ -107,7 +107,18 @@ Pooled result: **M1** (beats Z in both passes; the lowest pass 1 leave-one-seaso
 | KR | Z | family | - | - | - | - |
 | PR | Z | family | - | - | - | - |
 
-Check: the pooled candidate refitted on the forecast residuals with the applied curves (2365 rows) reads 8.53e-18, -4.63e-17, 2.04e-17 (before: -0.06421, -0.05954, 0.005083); the curve corrects the one-step forecast it was fitted on, applied after each player's last line.
+**Check at the table's horizon** (review fix, October 16, 2026). A 2014 expectation from 2010-2012 lines takes the curve's step at each season after the player's last line, so for a last line in 2012 it takes two steps; the check reads two-step forecasts (once = the curve's step at the last line's age only; as applied = every step after the last line (the adopted rule); reported, not used to choose), in true-state SD of each family (pass 1). Weighted SSE is the sum of residual^2 / forecast variance; the refit is the M1 candidate on the residuals (coefficients with SEs; a refit near zero means the forecasts carry no age drift left). An earlier check refitted the curve on the same one-step residuals it was fitted on, which returns zero by construction, so it is not reported.
+
+| Forecasts | Curve | Rows | Weighted SSE | Refit coefficients (SE) | Mean residual by age at the last line (under 25 / 25-28 / 29-31 / 32 and over) |
+|---|---|---:|---:|---|---|
+| In sample: qualifying t + 2 lines (t = 2010, 2011) from lines through t | no curve | 1273 | 1562.91 | -0.131 (0.043), -0.0745 (0.011), 0.00868 (0.003) | 0.223 / -0.0767 / -0.281 / -0.207 |
+| In sample: qualifying t + 2 lines (t = 2010, 2011) from lines through t | once (last line's age) | 1273 | 1506.08 | -0.0663 (0.043), -0.0149 (0.011), 0.0036 (0.003) | 0.00996 / -0.0353 / -0.0784 / 0.0219 |
+| In sample: qualifying t + 2 lines (t = 2010, 2011) from lines through t | as applied | 1273 | 1513.85 | 0.0524 (0.043), 0.0344 (0.011), -0.00148 (0.003) | -0.113 / 0.0633 / 0.145 / 0.239 |
+| Held out: 2014 Weeks 1-4 lines from 2010-2012 lines (the table's horizon) | no curve | 320 | 292.455 | -0.0971 (0.11), -0.0957 (0.029), 0.0114 (0.0076) | 0.433 / -0.123 / -0.34 / 0.313 |
+| Held out: 2014 Weeks 1-4 lines from 2010-2012 lines (the table's horizon) | once (last line's age) | 320 | 282.896 | -0.0329 (0.11), -0.0362 (0.029), 0.00632 (0.0076) | 0.229 / -0.0835 / -0.139 / 0.538 |
+| Held out: 2014 Weeks 1-4 lines from 2010-2012 lines (the table's horizon) | as applied | 320 | 281.952 | 0.0858 (0.11), 0.0132 (0.029), 0.00124 (0.0076) | 0.114 / 0.0137 / 0.0829 / 0.748 |
+
+The rule that applies the curve at every season step after the last line was adopted after an earlier trial's reading (runtime/2014_engine_decisions.md, batch U5). Whether to keep it or apply the curve once, at the last line's age, is Stone's call on these readings; the build does not change it.
 
 ## 4. Draft-slot starting estimates
 
@@ -183,19 +194,19 @@ An admissible honour (AP All-Pro first or second team, or an original Pro Bowl, 
 | KR | 23.55 / 24.84 / 25.19 / 25.11 / 25.35 | 9.71 (4), 0.046 | 2010-2011 -1.031 (2.3); 2011-2012 4.639 (4.2); 2012-2013 2.986 (2.4) | 2.14 (2), 0.34 |
 | PR | 10.02 / 10.19 / 9.723 / 9.801 / 9.5 | 0.75 (4), 0.94 | 2010-2011 0.6521 (2.2); 2011-2012 2.641 (3.7); 2012-2013 -1.233 (2) | 0.976 (2), 0.61 |
 
-**Self-influence** (a player's own 2013-2014 rows removed from the moment sums, his 2014 expectation recomputed; in the family's true-state SD; summaries over every such player, none stored per player):
+**Self-influence** (a player's own 2013-2014 rows removed from the moment sums and, for a family on an aging curve, his own aging rows whose outcome is his 2013 line removed from the curve's fit; his 2014 expectation recomputed with both; in the family's true-state SD; summaries over every such player, none stored per player):
 
 | Family | Players | Median | 90th | 99th | Max |
 |---|---:|---:|---:|---:|---:|
-| QB | 44 | 0.0045 | 0.064 | 0.29 | 0.29 |
-| RB | 79 | 0.00046 | 0.0069 | 0.083 | 0.083 |
-| WR | 112 | 0.0002 | 0.0097 | 0.043 | 0.055 |
-| TE | 50 | 0.00042 | 0.0081 | 0.098 | 0.098 |
-| DL | 190 | 6.7e-06 | 0.00036 | 0.0032 | 0.0057 |
-| LB | 173 | 0.0004 | 0.0079 | 0.1 | 0.17 |
-| DB | 243 | 0.00014 | 0.0023 | 0.04 | 0.063 |
+| QB | 44 | 0.0055 | 0.089 | 0.31 | 0.31 |
+| RB | 79 | 0.0015 | 0.0085 | 0.085 | 0.085 |
+| WR | 112 | 0.001 | 0.011 | 0.044 | 0.057 |
+| TE | 50 | 0.00076 | 0.0089 | 0.095 | 0.095 |
+| DL | 190 | 0.0015 | 0.0066 | 0.016 | 0.028 |
+| LB | 173 | 0.0018 | 0.012 | 0.12 | 0.16 |
+| DB | 243 | 0.0012 | 0.01 | 0.031 | 0.065 |
 | K | 30 | 0.02 | 0.089 | 0.17 | 0.17 |
-| P | 28 | 0.0028 | 0.031 | 0.097 | 0.097 |
+| P | 28 | 0.07 | 0.34 | 0.99 | 0.99 |
 | KR | 33 | 0 | 0.0079 | 0.012 | 0.012 |
 | PR | 34 | 0 | 0.03 | 0.38 | 0.38 |
 

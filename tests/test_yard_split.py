@@ -273,6 +273,38 @@ class GameTests(unittest.TestCase):
             cls.games = [play("b13-sample-%d" % i) for i in range(12)]
         return cls.games
 
+    def test_the_last_fallback_lays_out_an_unlayable_real_split_with_the_installed_split(self):
+        # Review fix (October 16, 2026): the dated last fallback (decisions
+        # record, B13 item 7, the review entry) is pinned. When a drive's real
+        # split admits no legal layout and no drive of its rung does either,
+        # the game still closes: the drive is laid out with the installed
+        # split, counted real_split_dropped, its segment marked dropped. The
+        # real case (slate-2014.6-4, drive 25 at commit 3aae25f) no longer
+        # reaches the branch under the review's fixes, so the test forces it:
+        # every layout of one drive that carries its real split fails.
+        from unittest import mock
+        base = play("b13-last-fallback")
+        target = next(p["number"] for p in base["possessions"]
+                      if p["number"] > 4 and p.get("real_split") and p["scrimmage_plays"] >= 3 and not p.get("segments"))
+        real = chain_walk.drive_layout
+
+        def unlayable(**kw):
+            out = real(**kw)
+            if kw["drive_no"] == target and kw.get("real_split") is not None:
+                out = dict(out, ok=False)
+            return out
+        with mock.patch.object(chain_walk, "drive_layout", unlayable):
+            r = play("b13-last-fallback")
+        self.assertEqual(validate_result(r), [])
+        self.assertEqual(check_ledger(make_receipt(r, week=5, matchup="B at A", detail="compact_stats")), [])
+        self.assertEqual(r["diagnostics"].get("real_split_dropped"), 1)
+        self.assertEqual(r["diagnostics"]["chain_layout_resample_exhausted"], 0)
+        dropped = next(p for p in r["possessions"] if p["number"] == target)
+        self.assertIs(dropped["real_split"]["segments"][0].get("dropped"), True)
+        # Every earlier possession is the run without the forced failure.
+        self.assertEqual([p for p in r["possessions"] if p["number"] < target],
+                         [p for p in base["possessions"] if p["number"] < target])
+
     def test_flags_and_profiles(self):
         self.assertEqual(B13_FLAGS, frozenset({"yard_split", "snap_values"}))
         self.assertEqual(FLAG_REQUIRES["snap_values"], frozenset({"yard_split"}))

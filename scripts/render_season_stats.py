@@ -73,6 +73,30 @@ def header(title, version, book, team_id=None, intro=None):
     return lines
 
 
+# Kernel 2014.6 batch B10 review fix (October 16, 2026): the player tables'
+# fumble columns combine two definitions in a season that mixes earlier
+# receipts with kernel 2014.6 ones; the pages that show them say so (a
+# single-definition season's pages are unchanged).
+FUMBLE_SPLIT_NOTE = ("FUM, LOST, FF and FR combine two definitions this season: games closed before kernel 2014.6 "
+                     "counted every generated fumble as lost and named one defender as its forcer and recoverer; "
+                     "from kernel 2014.6 a fumble may be kept, the forcer and recoverer are separate group draws or "
+                     "replayed records, and muffs are counted. No fumble rank is published, and who fumbled, forced, "
+                     "recovered or muffed is never evidence of a player's ball security.")
+
+
+def fumble_definitions_mixed(book):
+    """True when the season's team-games mix kernel 2014.6 receipts with
+    earlier ones (the fumble columns then combine two definitions)."""
+    teams = book.get("teams", {}).values()
+    total = sum(d.get("games", 0) for d in teams)
+    newer = sum(d.get("kernel_2014_6_games", 0) for d in teams)
+    return 0 < newer < total
+
+
+def with_fumble_note(intro, book):
+    return intro + " " + FUMBLE_SPLIT_NOTE if fumble_definitions_mixed(book) else intro
+
+
 def no_games(book):
     return [] if book.get("receipt_count") else ["No regular-season game has closed.", ""]
 
@@ -83,7 +107,7 @@ def team_markdown(year, team_id, book):
     lines = header(
         "%s %s player statistics" % (year, team_id),
         "%s-W%02d-TEAM-PLAYER-STATS" % (year, book["through_week"]), book, team_id,
-        "By position, then player. G counts games on the game-day active list.",
+        with_fumble_note("By position, then player. G counts games on the game-day active list.", book),
     ) + no_games(book)
     team = book["teams"].get(team_id)
     if team:
@@ -95,8 +119,8 @@ def league_markdown(year, book):
     lines = header(
         "%s NFL player statistics by position" % year,
         "%s-W%02d-LEAGUE-PLAYER-STATS" % (year, book["through_week"]), book, None,
-        "Every club's players, one league-wide table per position, each sorted by "
-        "that position's primary production. G counts games on the game-day active list.",
+        with_fumble_note("Every club's players, one league-wide table per position, each sorted by "
+                         "that position's primary production. G counts games on the game-day active list.", book),
     ) + no_games(book)
     return "\n".join(lines + position_sections(book.get("players", {}), with_team=True))
 
@@ -105,8 +129,8 @@ def all_players_markdown(year, book):
     lines = header(
         "%s NFL rosters and player statistics" % year,
         "%s-W%02d-ALL-PLAYER-STATS" % (year, book["through_week"]), book, None,
-        "Club by club, then position, then player: every player who has been on a "
-        "game-day active list, with his position's statistics. G counts games active.",
+        with_fumble_note("Club by club, then position, then player: every player who has been on a "
+                         "game-day active list, with his position's statistics. G counts games active.", book),
     ) + no_games(book)
     for team_id in sorted(book.get("teams", {})):
         sections = position_sections(book["teams"][team_id].get("players", {}), with_team=False, level="###")

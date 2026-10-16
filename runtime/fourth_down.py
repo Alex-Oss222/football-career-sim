@@ -261,6 +261,29 @@ def _range_errors(at, key, value, whole=True):
     return ["%s.when.%s must be a list or a {min, max} range" % (at, key)]
 
 
+def prepared_menu_errors(prepared, where="decisions.fourth_down"):
+    """Review fix (October 16, 2026): every prepared_calls key must name, once
+    the sheets' spelling is normalized (call_situations.menu_key: 'third and
+    short', '3rd-and-short' and 'Third-and-Short' are one menu), a menu a
+    fourth down can match (the third-down menus of its distance, the zones,
+    the clock menus and normal down), and no two keys may name the same
+    menu; otherwise Tice's prepared call would silently never be shown."""
+    from . import call_situations as cs
+    allowed = (cs.THIRD_SHORT, cs.THIRD_MEDIUM, cs.THIRD_LONG, cs.GOAL_LINE, cs.LOW_RED, cs.HIGH_RED,
+               cs.BACKED_UP, cs.TWO_MINUTE, cs.PRESS, cs.FOUR_MINUTE, cs.NORMAL)
+    errors, seen = [], {}
+    for menu in prepared:
+        key = cs.menu_key(menu)
+        if key not in allowed:
+            errors.append("%s.prepared_calls.%s names no menu a fourth down can match (%s)"
+                          % (where, menu, ", ".join(allowed)))
+        elif key in seen:
+            errors.append("%s.prepared_calls.%s and .%s name the same menu (%s)" % (where, seen[key], menu, key))
+        else:
+            seen[key] = menu
+    return errors
+
+
 def policy_errors(block, call_names=None):
     """Problems with one ``decisions.fourth_down`` block of a frozen call sheet;
     [] when it is valid. ``call_names`` (the sheet's call names), when given,
@@ -291,6 +314,7 @@ def policy_errors(block, call_names=None):
                 errors.append("%s.prepared_calls.%s must name one call" % (where, menu))
             elif call_names is not None and name not in call_names:
                 errors.append("%s.prepared_calls.%s names %r, not a call of the sheet" % (where, menu, name))
+        errors += prepared_menu_errors([m for m in prepared if not _frequency_key(m)], where)
     rules = block.get("rules", [])
     if not isinstance(rules, list):
         return errors + ["%s.rules must be a list" % where]
@@ -342,8 +366,13 @@ def canonical_policy(block):
     matching rule applies), the prepared calls sorted. None stays None."""
     if block is None:
         return None
+    from .call_situations import menu_key
+    # Review fix (October 16, 2026): keyed by the canonical menu, so a block
+    # that spells a menu as the sheets do ('third and short') matches the
+    # kernel's lookup (policy_errors refuses an unknown or repeated menu).
+    prepared = {menu_key(k): v for k, v in (block.get("prepared_calls") or {}).items()}
     out = {"otherwise": block.get("otherwise"), "rules": [],
-           "prepared_calls": {k: block["prepared_calls"][k] for k in sorted(block.get("prepared_calls") or {})}}
+           "prepared_calls": {k: prepared[k] for k in sorted(prepared)}}
     for rule in block.get("rules", []) or []:
         when = copy.deepcopy(rule.get("when") or {})
         if isinstance(when.get("period"), list):

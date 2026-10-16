@@ -187,15 +187,23 @@ def _holds(player, role):
 
 def db_starters(players):
     """The ids of a dressed unit's two outside starters (W2b): its first two
-    corners by depth that hold neither slot role. The kernel settles them
-    once at kickoff from the game-day unit, so an outside reserve, not the
-    next corner by depth, replaces a removed starter; a coach's replacement
-    inherits the seat (kernel apply_decision)."""
+    corners by depth other than the nickel, the outside reserve passed over
+    only while two other such corners rank above him, so when a starter is
+    not dressed the outside reserve starts ahead of a lower-ranked corner
+    (review fix, October 16, 2026: he is the first replacement for an outside
+    starter whether the starter is out before kickoff or during the game).
+    The kernel settles them once at kickoff from the game-day unit, so an
+    outside reserve, not the next corner by depth, replaces a removed
+    starter; a coach's replacement inherits the seat (kernel apply_decision)."""
     dbs = usage.depth_order(players, "DB")
     nickel = next((p for p in dbs if _holds(p, "nickel")), None)
     corners = [p for p in dbs if db_family(p.position) == "corner" and p is not nickel]
     reserve = next((p for p in corners if _holds(p, "outside_reserve")), None)
-    return tuple(p.player_id for p in corners if p is not reserve)[:2]
+    rank = {p.player_id: i for i, p in enumerate(corners)}
+    others = [p for p in corners if p is not reserve]
+    ahead = [p for p in others if reserve is None or rank[p.player_id] < rank[reserve.player_id]]
+    pool = ahead + ([reserve] if reserve is not None else []) + [p for p in others if p not in ahead]
+    return tuple(p.player_id for p in pool)[:2]
 
 
 def db_seats(players, starters=None):
@@ -276,7 +284,10 @@ def seat_defensive_backs(players, starters=None):
     (db_seats: DB1 and DB2 the outside corners, DB3 and DB4 the safeties, DB5
     the nickel, then the reserves), so usage.depth_order(view, "DB") reads
     the seat order; every other player and every other field is unchanged,
-    and the tuple keeps its order. Idempotent for a fixed ``starters``."""
+    and the tuple keeps its order. Not idempotent once a family runs out (a
+    seat filled from the other family renumbers that player ahead of his own
+    family), so the kernel seats each view exactly once, from the unseated
+    live list."""
     players = tuple(players)
     seats = db_seats(players, starters)
     if not seats:

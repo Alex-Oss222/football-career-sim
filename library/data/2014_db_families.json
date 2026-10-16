@@ -3670,6 +3670,12 @@
   },
   "chart_and_weekly_disagree": [],
   "library_positions_relabelled": 15,
-  "pass2_family_agreement": "290 library defensive backs, every family the same in both passes"
+  "pass2_family_agreement": "290 library defensive backs, every family the same in both passes",
+  "status_quo_nickel_seat": {
+   "clubs": 31,
+   "rule": "library clubs with five or more Week 1 available defensive backs whose fifth by the library depth order (the 2014.5 nickel seat) is a safety: by the library position label, and by this table's family",
+   "safety_at_db5_by_family": 10,
+   "safety_at_db5_by_library_label": 14
+  }
  }
 }

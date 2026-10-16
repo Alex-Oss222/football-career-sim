@@ -964,7 +964,10 @@ def _resolve_game(
     fills = {tid: {"offense": {}, "defense": {}} for tid in rosters}
 
     def lineup(team_id, side, quarter=None, number=None):
-        view, notes = participation.emergency_view(seat(team_id, current[team_id]), baseline[team_id], side,
+        # W2b: seated exactly once, from the unseated live list (seating is
+        # not idempotent once a family runs out; review fix, October 16,
+        # 2026), so every consumer reads live_rosters()'s DB order.
+        view, notes = participation.emergency_view(current[team_id], baseline[team_id], side,
                                                    prefer=fills[team_id][side])
         view = seat(team_id, view)
         fills[team_id][side] = {n["group"]: n["filled_by"] for n in notes if n.get("filled_by")}
@@ -984,7 +987,9 @@ def _resolve_game(
         selecting or recording, then participation.slot_lineup. No draw, no
         state change; the kernel's lineup() is never called here."""
         views = {}
-        players = seat(team_id, players)
+        # W2b: each view seated exactly once from the unseated ``players``;
+        # the specialists and returners read the seated list (live_rosters).
+        seated = seat(team_id, players)
         for side in ("offense", "defense"):
             view, notes = participation.emergency_view(players, baseline[team_id], side,
                                                        prefer=fills[team_id][side])
@@ -1006,17 +1011,17 @@ def _resolve_game(
         passer = usage.game_passer(off_view) or off_view[0]
         front = usage.protection_front(off_view)
         lineup_now = participation.slot_lineup(off_view, def_view, passer, front)
-        kicker = usage.kicking_specialist(players, "K", "placekicker")
-        punter = usage.kicking_specialist(players, "P", "punt")
-        snapper = usage.long_snapper(players, front)
+        kicker = usage.kicking_specialist(seated, "K", "placekicker")
+        punter = usage.kicking_specialist(seated, "P", "punt")
+        snapper = usage.long_snapper(seated, front)
         return {
             "slots": {side: participation.slot_map(lineup_now, side) for side in ("offense", "defense")},
             "emergency": off_notes + def_notes,
             "specialists": {"K": kicker.player_id if kicker else None, "P": punter.player_id if punter else None,
                             "LS": snapper.player_id if snapper else None},
             "returners": {role: (r.player_id if r else None) for role, r in
-                          (("kick_return", usage.club_returner(players, "kick_return")),
-                           ("punt_return", usage.club_returner(players, "punt_return")))},
+                          (("kick_return", usage.club_returner(seated, "kick_return")),
+                           ("punt_return", usage.club_returner(seated, "punt_return")))},
         }
 
     def substitution_detail(before, after, removed_id):
@@ -1051,6 +1056,31 @@ def _resolve_game(
     # W2a: the pure lineup before each removal, kept so a coach's choice
     # (apply_decision) can recompute the record against the same baseline.
     lineup_before = {}
+    # W2c (review fix, October 16, 2026): the live list before each removal
+    # under pause_eligibility, so apply_decision recomputes a boundary's
+    # records in removal order (empty otherwise: the earlier recompute).
+    live_before = {}
+
+    def promote_into(live, choice, promoted, slot, order):
+        """``live`` with the chosen player replaced by ``promoted``, placed
+        before the first player listed after the vacated slot."""
+        rest = [p for p in live if p.player_id != choice]
+        at = next((i for i, p in enumerate(rest) if order[p.player_id] > order[slot]), len(rest))
+        return rest[:at] + [promoted] + rest[at:]
+
+    def depth_successor(tid, live, left, pid, grp):
+        """The autonomous successor of a removal (the depth-order rule): the
+        player at the removed player's rank of the seated group order after
+        it; for a lineman, the one who now completes the protection front."""
+        before = usage.depth_order(seat(tid, live), grp) if grp else []
+        rank = next((i for i, p in enumerate(before) if p.player_id == pid), None)
+        after = usage.depth_order(seat(tid, left), grp) if grp else []
+        successor = after[rank].player_id if rank is not None and rank < len(after) else None
+        if grp == "OL":
+            seated = {p.player_id for p in usage.protection_front(live).values()}
+            entering = [p.player_id for p in usage.protection_front(left).values() if p.player_id not in seated]
+            successor = entering[0] if entering else None
+        return successor
 
     def add_exposure(team_id, snaps):
         for pid, count in snaps.items():
@@ -1170,6 +1200,8 @@ def _resolve_game(
             before = usage.depth_order(seat(tid, live), grp) if grp else []
             rank = next((i for i, p in enumerate(before) if p.player_id == pid), None)
             pure_before = pure_lineup(tid, live) if substitution_record else None
+            if pause_v2 and substitution_record:
+                live_before[(tid, pid)] = list(live)
             if pause_v2 and tid not in boundary_slots:
                 # W2c: the club's on-field set before the first removal at this boundary.
                 boundary_slots[tid] = {sid for side in ("offense", "defense") for sid in pure_before["slots"][side]}
@@ -1256,6 +1288,8 @@ def _resolve_game(
                 raise ValueError("replacement %r is not an eligible available player" % (choice,))
         tid = pause["team"]
         order = original_index[tid]
+        ref_at_pause = db_ref.get(tid)
+        promotions = {}
         for slot, choice in sorted(choices.items(), key=lambda item: order[item[0]]):
             if pause_v2 and choice == DEPTH_ORDER:
                 continue
@@ -1274,16 +1308,53 @@ def _resolve_game(
                     [r for r in chosen.responsibilities if r not in participation.SLOT_ROLES]
                     + [r for r in gone.responsibilities if r in participation.SLOT_ROLES]))
                 db_ref[tid] = tuple(dict.fromkeys(choice if pid == slot else pid for pid in db_ref[tid]))
-            rest = [p for p in live if p.player_id != choice]
-            at = next((i for i, p in enumerate(rest) if order[p.player_id] > order[slot]), len(rest))
-            current[tid] = rest[:at] + [promoted] + rest[at:]
+            current[tid] = promote_into(live, choice, promoted, slot, order)
+            promotions[slot] = promoted
             for sub in substitutions:
                 if sub["removed"] == slot and sub["team"] == tid:
                     sub.update({"basis": "coach_choice", "replacement": choice})
-                    if substitution_record and (tid, slot) in lineup_before:
+                    if substitution_record and (tid, slot) in lineup_before and not live_before:
                         # W2a: the record recomputed after the coach's choice.
                         sub.update(substitution_detail(lineup_before[(tid, slot)], pure_lineup(tid, current[tid]),
                                                        slot))
+        if substitution_record and promotions and live_before:
+            # W2a (review fix, October 16, 2026): the club's removals at this
+            # boundary recomputed in removal order, each against the lineup
+            # the earlier removals and their decisions left (a coach's choice
+            # promoted, the sentinel by depth), so a depth_order slot beside a
+            # coach's choice records its own entrant and no record names a
+            # later removal's entrant. Without a coach's choice nothing is
+            # recomputed (the sentinel reproduces the autonomous records).
+            final_ref = db_ref.get(tid)
+            ref = ref_at_pause
+            applied = []
+            try:
+                for sub in substitutions:
+                    pid = sub["removed"]
+                    if sub["team"] != tid or sub["drive"] != pause["drive"] or (tid, pid) not in live_before:
+                        continue
+                    # The live list before this removal with the earlier
+                    # removals' promotions placed as apply_decision placed them.
+                    state = list(live_before[(tid, pid)])
+                    for slot_done, promoted_done in applied:
+                        state = promote_into(state, promoted_done.player_id, promoted_done, slot_done, order)
+                    if db_slots:
+                        db_ref[tid] = ref
+                    before = pure_lineup(tid, state)
+                    left = [p for p in state if p.player_id != pid]
+                    if pid in promotions:
+                        chosen = promotions[pid]
+                        left = promote_into(left, chosen.player_id, chosen, pid, order)
+                        applied.append((pid, chosen))
+                        if db_slots:
+                            ref = tuple(dict.fromkeys(chosen.player_id if r == pid else r for r in ref))
+                            db_ref[tid] = ref
+                    else:
+                        sub["replacement"] = depth_successor(tid, state, left, pid, sub["group"])
+                    sub.update(substitution_detail(before, pure_lineup(tid, left), pid))
+            finally:
+                if db_slots:
+                    db_ref[tid] = final_ref
         pause_state["history"].append({"drive": pause["drive"], "team": tid,
                                        "continuation_token": pause["continuation_token"],
                                        "choices": dict(choices)})
@@ -1393,9 +1464,9 @@ def _resolve_game(
         written back, a preseason block viewed with record=False): the
         scorer's offense and the other club's defense on a try after a
         non-offensive or return touchdown."""
-        view, _notes = participation.emergency_view(seat(team_id, current[team_id]), baseline[team_id], side,
+        view, _notes = participation.emergency_view(current[team_id], baseline[team_id], side,
                                                     prefer=fills[team_id][side])
-        view = seat(team_id, view)
+        view = seat(team_id, view)  # W2b: seated once (lineup)
         if trackers is not None:
             view, _ = trackers[team_id].view(side, view, quarter, len(possessions) + 1, record=False)
         return view
@@ -2041,6 +2112,7 @@ def _resolve_game(
                                              clock=shown_clock, overtime=overtime, diff=score_diff,
                                              start_kind=start_kind, snap_index=len(kinds) + shown_i)
                 prepared = ((policy or {}).get("prepared_calls") or {}).get(menu) if menu else None
+                penalties_so_far = None
                 if pen_on:
                     # Batch B11: the joined steps, then the segment's up to the
                     # shown snap (the rows before it included).
@@ -2051,8 +2123,27 @@ def _resolve_game(
                                 break
                             snaps_seen += 1
                         seg_steps.append(step)
-                    so_far = chain_walk.walk_steps(
-                        spot, chain_walk.layout_steps(joined_layout()) + seg_steps)["rows"]
+                    steps_so_far = chain_walk.layout_steps(joined_layout()) + seg_steps
+                    walked_so_far = chain_walk.walk_steps(spot, steps_so_far)
+                    so_far = walked_so_far["rows"]
+                    # Review fix (October 16, 2026): the replayed records
+                    # already enforced on the drive, so its scrimmage and
+                    # penalty yards add to the distance from the start to
+                    # the spot shown.
+                    records_so_far = (chain_walk.layout_step_records(joined_layout())
+                                      + chain_walk.layout_step_records(lay)[:len(seg_steps)])
+                    penalties_so_far, after = [], 0
+                    for step, recs, walked in zip(steps_so_far, records_so_far, walked_so_far["steps"]):
+                        if step[0] == "s":
+                            after += 1
+                        pen = step[2] if step[0] == "s" else step[1]
+                        credited = pen[2] if pen else None
+                        for k, r in enumerate(recs):
+                            penalties_so_far.append({
+                                "type": r.type, "fouled_by": {"O": "offense", "D": "defense"}.get(r.side, r.side),
+                                "status": penalty_records.STATUS.get(r.status, r.status), "yards": int(r.yards),
+                                "first_down": bool(walked["penalty_first_down"]) and k == credited,
+                                "after_snaps": after})
                 else:
                     so_far = chain_walk.walk(spot, values + [int(v) for v in lay["values"][:shown_i]])["rows"]
                 snaps_so_far = [{"down": r["down"], "ydstogo": r["ydstogo"], "yardline_100": r["los"],
@@ -2076,6 +2167,9 @@ def _resolve_game(
                         "conversion_call": {"menu": menu, "prepared": prepared if prepared in calls else None,
                                             "calls": calls},
                         "drive_so_far": {"start_yardline_100": spot, "snaps": snaps_so_far}}
+                if penalties_so_far is not None:
+                    info["drive_so_far"].update(penalties=penalties_so_far,
+                                                penalty_yards=sum(e["yards"] for e in penalties_so_far))
                 decision, call_name = fourth_answer(offense, drive_no, info, calls)
                 record["shown"] = {"down": shown["down"], "ydstogo": shown["ydstogo"], "los": shown["los"],
                                    "goal_to_go": shown["goal_to_go"], "period": shown_period, "clock": shown_text,
