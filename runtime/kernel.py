@@ -545,6 +545,9 @@ CALLER_ROLES = frozenset({"caller", "play_caller", "signal_caller", "designated_
 # Specialists' emergency replacements, in order (the punter kicks, the kicker
 # punts, a lineman snaps).
 SPECIALIST_SPARES = {"K": ("P",), "P": ("K",), "LS": ("OL",)}
+# Kernel 2014.6 batch B15 (W2c): the pause answer that keeps the autonomous
+# replacement rule (no player is promoted; the record keeps basis depth_order).
+DEPTH_ORDER = "depth_order"
 
 
 def _featured(team):
@@ -844,9 +847,32 @@ def _resolve_game(
     if yard_on and any(name not in T for name in yard_split.FIELDS):
         raise ValueError("profile %s holds yard_split on a base without the yardage annotations"
                          % profile.kernel_version)
+    # Kernel 2014.6 batch B15: W2b (db_slots) seats each club's defensive
+    # backs by position family in every view the kernel reads (the slot
+    # model, the field-goal block, the strength units, credit, the coverage
+    # units and the returner see one DB order; participation.db_seats), with
+    # the outside starters settled once from the game-day unit at kickoff;
+    # W2c (pause_eligibility, needing db_slots and substitution_record) orders
+    # an E2 pause's eligible replacements off-field family first and adds the
+    # depth_order sentinel and the default entrant and moves.
+    db_slots = profile.has("db_slots")
+    pause_v2 = profile.has("pause_eligibility")
+    if pause_v2 and not (db_slots and substitution_record):
+        raise ValueError("profile %s holds pause_eligibility without db_slots and substitution_record"
+                         % profile.kernel_version)
 
     teams = {home.team_id: home, away.team_id: away}
     rosters = {home.team_id: home_players, away.team_id: away_players}
+    # W2b: each club's two outside starters, settled from its game-day unit
+    # (a coach's replacement inherits the seat: apply_decision).
+    db_ref = {tid: participation.db_starters(players) for tid, players in rosters.items()} if db_slots else {}
+
+    def seat(team_id, players):
+        """W2b: ``players`` with the club's defensive backs in seat order
+        (participation.seat_defensive_backs); unchanged without db_slots."""
+        if not db_slots:
+            return players
+        return participation.seat_defensive_backs(players, db_ref[team_id])
     stats = {t.team_id: _blank_team_stats(rosters[t.team_id]) for t in (home, away)}
     if scoring_on:
         # Batch B9 team counters (append-only; absent from earlier results).
@@ -876,7 +902,9 @@ def _resolve_game(
             blocks, plan_errors = rotation.parse(team, rosters[team_id])
             if plan_errors:
                 raise ValueError("rotation plan: " + "; ".join(plan_errors))
-            trackers[team_id] = rotation.Tracker(team_id, blocks, rosters[team_id])
+            # W2b: the default rotation splits the defensive backs by family
+            # (the seated game-day unit's DB order).
+            trackers[team_id] = rotation.Tracker(team_id, blocks, seat(team_id, rosters[team_id]))
     else:
         plan_errors = [e for team in (home, away) for e in rotation.plan_errors(team, None, game_type)]
         if plan_errors:
@@ -936,8 +964,9 @@ def _resolve_game(
     fills = {tid: {"offense": {}, "defense": {}} for tid in rosters}
 
     def lineup(team_id, side, quarter=None, number=None):
-        view, notes = participation.emergency_view(current[team_id], baseline[team_id], side,
+        view, notes = participation.emergency_view(seat(team_id, current[team_id]), baseline[team_id], side,
                                                    prefer=fills[team_id][side])
+        view = seat(team_id, view)
         fills[team_id][side] = {n["group"]: n["filled_by"] for n in notes if n.get("filled_by")}
         block = None
         if trackers is not None:
@@ -946,7 +975,7 @@ def _resolve_game(
         return view, notes, block
 
     def live_rosters():
-        return {tid: tuple(players) for tid, players in current.items()}
+        return {tid: tuple(seat(tid, players)) for tid, players in current.items()}
 
     def pure_lineup(team_id, players):
         """Batch B6 (W2a): the club's on-field slots from `players` through
@@ -955,9 +984,11 @@ def _resolve_game(
         selecting or recording, then participation.slot_lineup. No draw, no
         state change; the kernel's lineup() is never called here."""
         views = {}
+        players = seat(team_id, players)
         for side in ("offense", "defense"):
             view, notes = participation.emergency_view(players, baseline[team_id], side,
                                                        prefer=fills[team_id][side])
+            view = seat(team_id, view)
             if trackers is not None:
                 tracker = trackers[team_id]
                 blocks = tracker.blocks[side]
@@ -1044,6 +1075,39 @@ def _resolve_game(
                 out.append(p.player_id)
         return out
 
+    def eligible_v2(team_id, player, on_field):
+        """Batch B15 (W2c): the replacements a pause offers for a removed
+        player's place, in order: the off-field players of his family (a
+        corner's corners, a safety's safeties; his group elsewhere), then the
+        off-field players of the group's other DB families, then the group's
+        players already on the field (an explicit reassignment: the chosen
+        player moves into the vacated seat and the entrant by depth fills
+        his), then the specialist spares; the emergency sources only when the
+        group is exhausted; and the sentinel DEPTH_ORDER, the autonomous
+        rule. ``on_field`` holds the club's on-field ids captured before the
+        first removal at the boundary. Seated order (W2b) throughout."""
+        players = seat(team_id, current[team_id])
+        grp = usage.group(player.position)
+        same = list(usage.depth_order(players, grp)) if grp else []
+        family = participation.db_family(player.position) if grp == "DB" else None
+        own = [p for p in same if family is None or participation.db_family(p.position) == family]
+        others = [p for p in same if p not in own]
+        ordered = ([p for p in own if p.player_id not in on_field] + [p for p in others if p.player_id not in on_field]
+                   + [p for p in same if p.player_id in on_field])
+        for spare in SPECIALIST_SPARES.get(grp, ()):
+            ordered += usage.depth_order(players, spare)
+        if not ordered:
+            for source in participation.EMERGENCY_FROM.get(grp, ()):
+                ordered += usage.depth_order(players, source)[usage.MINIMUM_GAME_DAY.get(source, 0):]
+        if not ordered and grp in ("K", "P", "LS"):
+            ordered = list(players)
+        seen, out = set(), []
+        for p in ordered:
+            if p.player_id not in seen:
+                seen.add(p.player_id)
+                out.append(p.player_id)
+        return out
+
     def consequential(team_id, player, counts_after):
         """E2: why this removal needs the controlling coach, else None."""
         grp = usage.group(player.position)
@@ -1094,6 +1158,7 @@ def _resolve_game(
                 boundary.append((tid, player, entry))
             exposure[tid] = {}
         decisions_due = []
+        boundary_slots = {}
         for tid, player, entry in boundary:
             if not entry["removed"]:
                 continue
@@ -1101,13 +1166,17 @@ def _resolve_game(
             grp = usage.group(player.position)
             live = current[tid]
             live_player = next(p for p in live if p.player_id == pid)
-            before = usage.depth_order(live, grp) if grp else []
+            # W2b: the successor by the seated group order (unchanged without db_slots).
+            before = usage.depth_order(seat(tid, live), grp) if grp else []
             rank = next((i for i, p in enumerate(before) if p.player_id == pid), None)
             pure_before = pure_lineup(tid, live) if substitution_record else None
+            if pause_v2 and tid not in boundary_slots:
+                # W2c: the club's on-field set before the first removal at this boundary.
+                boundary_slots[tid] = {sid for side in ("offense", "defense") for sid in pure_before["slots"][side]}
             current[tid] = [p for p in live if p.player_id != pid]
             removed[pid] = entry
             vacated[pid] = live_player
-            after = usage.depth_order(current[tid], grp) if grp else []
+            after = usage.depth_order(seat(tid, current[tid]), grp) if grp else []
             successor = after[rank].player_id if rank is not None and rank < len(after) else None
             if grp == "OL":
                 # The lineman who now completes the protection front.
@@ -1132,10 +1201,24 @@ def _resolve_game(
                 continue
             reason = consequential(tid, vacated[player.player_id], counts_after)
             if reason:
-                eligible = eligible_for(tid, vacated[player.player_id])
+                if pause_v2:
+                    eligible = eligible_v2(tid, vacated[player.player_id], boundary_slots.get(tid, set()))
+                else:
+                    eligible = eligible_for(tid, vacated[player.player_id])
                 if not eligible:
                     raise participation.NoLegalPersonnel(
                         "no available replacement for %s" % player.player_id)
+                if pause_v2:
+                    # W2c: the sentinel answer keeps the autonomous rule,
+                    # whose entrant and slot moves the pause shows (the
+                    # removal's W2a record).
+                    sub = next(s for s in reversed(substitutions)
+                               if s["team"] == tid and s["removed"] == player.player_id)
+                    decisions_due.append({"slot": player.player_id, "group": usage.group(player.position),
+                                          "reason": reason, "eligible": eligible + [DEPTH_ORDER],
+                                          "default": DEPTH_ORDER, "default_entrant": sub.get("entrant"),
+                                          "default_moves": list(sub.get("moves", ()))})
+                    continue
                 decisions_due.append({"slot": player.player_id, "group": usage.group(player.position),
                                       "reason": reason, "eligible": eligible, "default": eligible[0]})
         if not decisions_due:
@@ -1163,7 +1246,10 @@ def _resolve_game(
         slots = {d["slot"]: d for d in pause["decisions"]}
         if not isinstance(choices, dict) or set(choices) != set(slots):
             raise ValueError("continuation must choose exactly the pending replacements")
-        if len(set(choices.values())) != len(choices):
+        # W2c: the sentinel (the autonomous rule) is exempt from the
+        # duplicate check and never looked up as a player.
+        picked = [c for c in choices.values() if not (pause_v2 and c == DEPTH_ORDER)]
+        if len(set(picked)) != len(picked):
             raise ValueError("duplicate replacement in continuation")
         for slot, choice in choices.items():
             if choice not in slots[slot]["eligible"]:
@@ -1171,11 +1257,23 @@ def _resolve_game(
         tid = pause["team"]
         order = original_index[tid]
         for slot, choice in sorted(choices.items(), key=lambda item: order[item[0]]):
+            if pause_v2 and choice == DEPTH_ORDER:
+                continue
             gone = vacated[slot]
             live = current[tid]
             chosen = next(p for p in live if p.player_id == choice)
             promoted = replace(chosen, position=gone.position, depth=gone.depth,
                                rotation_status=gone.rotation_status)
+            if db_slots:
+                # W2b: the chosen player takes the vacated seat: its
+                # slot-defining roles pass to him (his own are dropped) and an
+                # outside starter's seat is his.
+                promoted = replace(promoted, roles=tuple(
+                    [r for r in chosen.roles if r not in participation.SLOT_ROLES]
+                    + [r for r in gone.roles if r in participation.SLOT_ROLES]), responsibilities=tuple(
+                    [r for r in chosen.responsibilities if r not in participation.SLOT_ROLES]
+                    + [r for r in gone.responsibilities if r in participation.SLOT_ROLES]))
+                db_ref[tid] = tuple(dict.fromkeys(choice if pid == slot else pid for pid in db_ref[tid]))
             rest = [p for p in live if p.player_id != choice]
             at = next((i for i, p in enumerate(rest) if order[p.player_id] > order[slot]), len(rest))
             current[tid] = rest[:at] + [promoted] + rest[at:]
@@ -1295,8 +1393,9 @@ def _resolve_game(
         written back, a preseason block viewed with record=False): the
         scorer's offense and the other club's defense on a try after a
         non-offensive or return touchdown."""
-        view, _notes = participation.emergency_view(current[team_id], baseline[team_id], side,
+        view, _notes = participation.emergency_view(seat(team_id, current[team_id]), baseline[team_id], side,
                                                     prefer=fills[team_id][side])
+        view = seat(team_id, view)
         if trackers is not None:
             view, _ = trackers[team_id].view(side, view, quarter, len(possessions) + 1, record=False)
         return view

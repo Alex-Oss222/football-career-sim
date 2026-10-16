@@ -141,6 +141,150 @@ def emergency_view(players, baseline, side, prefer=None):
     return tuple(view), notes
 
 
+# ---- Kernel 2014.6 batch B15 (W2b): position-true defensive-back seats ------
+# Under the profile flag db_slots the kernel seats a club's defensive backs by
+# position family before any consumer reads the DB depth order (the slot
+# model's DB1-5, the field-goal block's DB1-4, the strength units' base four,
+# tackle and coverage credit, the coverage units and the returner): DB1 and
+# DB2 the two outside corners, DB3 and DB4 the two safeties, DB5 the nickel,
+# then the reserves in the same family-balanced units. The family is the
+# position label (a corner CB; a safety S, SS, FS or SAF; any other DB label,
+# such as an emergency filler's, has none and fills a short seat). The
+# labels are the inputs' own: from 2014 Week 5 the background clubs' come
+# from their Week 1 chart slots, then their 2014 weekly-roster label
+# (runtime.depth_library.relabel_defensive_backs), Jacksonville's from Stone's
+# chart. Two slot-defining roles are read from the inputs: ``nickel`` (the
+# player who takes DB5 whenever he is available, settled before the base) and
+# ``outside_reserve`` (the first corner to replace an outside starter, the
+# nickel staying inside). Without them the move-up convention applies (the
+# third corner is the nickel; a removed outside corner is replaced by the
+# nickel moving outside and the next corner entering at nickel), labelled as
+# a convention: real practice splits it about evenly (design W2b, honest
+# limit 4). A removed corner is replaced from the corners and a removed safety
+# from the safeties; another family fills a seat only when its own family is
+# exhausted. One deterministic rule for every club; no draw is used, the slot
+# shares (SCRIMMAGE_SLOT_MIX) are unchanged and only the order inside the DB
+# group moves.
+SLOT_ROLES = ("nickel", "outside_reserve")
+CORNER_LABELS = frozenset({"CB"})
+SAFETY_LABELS = frozenset({"S", "SS", "FS", "SAF"})
+DB_UNIT = ("corner", "corner", "safety", "safety", "nickel")
+
+
+def db_family(position):
+    """'corner', 'safety' or None (a generic DB label) for a position label."""
+    label = str(position or "").upper()
+    if label in CORNER_LABELS:
+        return "corner"
+    if label in SAFETY_LABELS:
+        return "safety"
+    return None
+
+
+def _holds(player, role):
+    return role in player.roles or role in player.responsibilities
+
+
+def db_starters(players):
+    """The ids of a dressed unit's two outside starters (W2b): its first two
+    corners by depth that hold neither slot role. The kernel settles them
+    once at kickoff from the game-day unit, so an outside reserve, not the
+    next corner by depth, replaces a removed starter; a coach's replacement
+    inherits the seat (kernel apply_decision)."""
+    dbs = usage.depth_order(players, "DB")
+    nickel = next((p for p in dbs if _holds(p, "nickel")), None)
+    corners = [p for p in dbs if db_family(p.position) == "corner" and p is not nickel]
+    reserve = next((p for p in corners if _holds(p, "outside_reserve")), None)
+    return tuple(p.player_id for p in corners if p is not reserve)[:2]
+
+
+def db_seats(players, starters=None):
+    """[(seat, player)] for the defensive backs of ``players`` in seat order
+    (W2b): unit after unit of two outside corners, two safeties and a nickel
+    (seat labels CB, S and NB with the unit number), the designated nickel
+    settled first in the first unit. ``starters`` are the outside starters'
+    ids (db_starters of the game-day unit; of ``players`` when None). The
+    outside order is the starters, then the outside reserve, then the other
+    corners by depth; the undesignated nickel is the next corner of that
+    order other than the outside reserve (the reserve only when no other
+    corner is left). A seat whose family is exhausted takes a generic DB,
+    then the other family (a corner seat the next safety, a safety seat the
+    next corner of the outside order, the outside reserve last); a seat
+    nobody can fill stays empty."""
+    dbs = usage.depth_order(players, "DB")
+    if not dbs:
+        return []
+    starters = db_starters(players) if starters is None else tuple(starters)
+    order = {p.player_id: i for i, p in enumerate(dbs)}
+    nickel = next((p for p in dbs if _holds(p, "nickel")), None)
+    corners = [p for p in dbs if db_family(p.position) == "corner" and p is not nickel]
+    reserve = next((p for p in corners if _holds(p, "outside_reserve")), None)
+    outside = sorted(corners, key=lambda p: (0 if p.player_id in starters else 1 if p is reserve else 2,
+                                            order[p.player_id]))
+    safeties = [p for p in dbs if db_family(p.position) == "safety" and p is not nickel]
+    generic = [p for p in dbs if db_family(p.position) is None and p is not nickel]
+    taken = set()
+
+    def take(*pools):
+        for pool in pools:
+            for p in pool:
+                if p.player_id not in taken:
+                    taken.add(p.player_id)
+                    return p
+        return None
+
+    seats, unit = [], 0
+    while len(taken) < len(dbs):
+        unit += 1
+        chosen = {}
+        if unit == 1 and nickel is not None:
+            chosen[4] = nickel
+            taken.add(nickel.player_id)
+        # Own families first: the outside corners, the safeties, then the
+        # undesignated nickel (the reserve kept outside while another corner
+        # is left).
+        for index, kind in enumerate(DB_UNIT[:4]):
+            pick = take(outside if kind == "corner" else safeties)
+            if pick is not None:
+                chosen[index] = pick
+        inside = [p for p in outside if p is not reserve]
+        if 4 not in chosen:
+            pick = take(inside, outside)
+            if pick is not None:
+                chosen[4] = pick
+        # Then the short seats in seat order, from a generic DB, then the
+        # other family (the outside reserve last among the corners).
+        for index, kind in enumerate(DB_UNIT):
+            if index in chosen:
+                continue
+            pools = ((generic, safeties) if kind == "corner" else (generic, inside, outside) if kind == "safety"
+                     else (generic, inside, outside, safeties))
+            pick = take(*pools)
+            if pick is not None:
+                chosen[index] = pick
+        if not chosen:
+            break
+        for index in sorted(chosen):
+            label = ("CB%d" % (2 * unit - 1 + index) if index < 2 else "S%d" % (2 * unit - 3 + index)
+                     if index < 4 else "NB%d" % unit)
+            seats.append((label, chosen[index]))
+    return seats
+
+
+def seat_defensive_backs(players, starters=None):
+    """``players`` with each defensive back's depth renumbered by his seat
+    (db_seats: DB1 and DB2 the outside corners, DB3 and DB4 the safeties, DB5
+    the nickel, then the reserves), so usage.depth_order(view, "DB") reads
+    the seat order; every other player and every other field is unchanged,
+    and the tuple keeps its order. Idempotent for a fixed ``starters``."""
+    players = tuple(players)
+    seats = db_seats(players, starters)
+    if not seats:
+        return players
+    rank = {p.player_id: i for i, (_, p) in enumerate(seats, 1)}
+    return tuple(replace(p, depth=rank[p.player_id]) if p.player_id in rank else p for p in players)
+
+
 # ---- scrimmage ---------------------------------------------------------------
 
 def _credit(accumulator, key, share, snaps):

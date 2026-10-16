@@ -330,6 +330,30 @@ class InjuryRuleTests(unittest.TestCase):
         self.assertEqual(len(after.clubs["AAA"]["active"]), 53)
         self.assertEqual(rails.emergency_events(after, "BBB", 5, {}, date(2014, 10, 4), depth_library.available), [])
 
+    def test_u7_pairs_the_promotion_with_the_longest_injured_player_at_any_group(self):
+        # Kernel 2014.6 batch B15 (U7, option (i)): AAA at 53 is short of
+        # quarterbacks with none of them injured (all three deferred) and two
+        # branch-injured receivers; the dated practice-squad signing is paired
+        # with the reserve placement of the receiver projected out longest.
+        library, base, manifest = league(ps={"AAA": [ps_entry("80-0000007", "Squad QB", "QB")]})
+        st = state([], library, base, manifest)
+        qbs = [p["player_id"] for p in st.clubs["AAA"]["active"] if p["group"] == "QB"]
+        out = {pid("AAA", "WR", 5): date(2014, 11, 1), pid("AAA", "WR", 6): date(2014, 12, 20)}
+        events = rails.emergency_events(st, "AAA", 5, out, date(2014, 10, 4), depth_library.available, excluded=qbs)
+        self.assertEqual([e["player_id"] for e in events], ["Squad QB"])
+        self.assertEqual(events[0]["reserve_uid"], uid("AAA", "WR", 6))
+        self.assertEqual(events[0]["gate_date"], "2014-10-04")
+        after = state([], library, base, manifest, events=events)
+        self.assertEqual(after.errors, [])
+        self.assertIn("Squad QB", actives(after, "AAA"))
+        self.assertIn(pid("AAA", "WR", 6), [p["player_id"] for p in after.clubs["AAA"]["reserve"]])
+        self.assertEqual(len(after.clubs["AAA"]["active"]), 53)
+        # An injured player at the short group is still placed first.
+        out[pid("AAA", "QB", 1)] = date(2014, 10, 20)
+        events = rails.emergency_events(st, "AAA", 5, out, date(2014, 10, 4), depth_library.available,
+                                        excluded=qbs[1:])
+        self.assertEqual(events[0]["reserve_uid"], uid("AAA", "QB", 1))
+
 
 # ---- Jacksonville control, unplaced former Jaguars, retirements -------------------------
 

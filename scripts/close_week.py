@@ -178,6 +178,16 @@ def _fourth_down_lines(pause):
     return lines
 
 
+def default_detail(decision):
+    """Kernel 2014.6 batch B15 (W2c): what the depth_order default does (the
+    entrant and the slot moves of the autonomous rule); empty for a pause
+    record without them."""
+    if "default_entrant" not in decision:
+        return ""
+    moves = ", ".join("%s %s to %s" % (m["player"], m["from"], m["to"]) for m in decision.get("default_moves") or ())
+    return " (enters: %s; moves: %s)" % (decision.get("default_entrant") or "none", moves or "none")
+
+
 def describe_pause(record, record_path, week, season):
     pause = record["pause"]
     trigger = pause.get("trigger", "consequential_substitution")
@@ -194,9 +204,9 @@ def describe_pause(record, record_path, week, season):
                         injury.get("severity"), injury.get("restriction")))
     for decision in pause.get("decisions", []):
         if trigger == "consequential_substitution":
-            lines.append("- replace %s (%s; %s): eligible %s; depth default %s"
+            lines.append("- replace %s (%s; %s): eligible %s; depth default %s%s"
                          % (decision["slot"], decision.get("group"), decision.get("reason"),
-                            ", ".join(decision["eligible"]), decision.get("default")))
+                            ", ".join(decision["eligible"]), decision.get("default"), default_detail(decision)))
         else:
             lines.append("- %s: one of %s%s" % (decision["slot"], ", ".join(decision["eligible"]),
                                                  " (with %s)" % decision["with"] if decision.get("with") else ""))

@@ -166,6 +166,30 @@ otherwise; runtime.yard_split):
   slot, the others shuffled on the layout stream, each kind's delta by the
   gains-proportional rule.
 
+Batch B15 (inputs and participation; W2b result-changing, W2c the pause record
+only) adds two flags, guarded by the profile alone (no base table):
+
+- db_slots (W2b): each club's defensive backs are seated by position family
+  in every view the kernel reads (runtime.participation.db_seats: DB1 and DB2
+  the outside corners, DB3 and DB4 the safeties, DB5 the nickel, then the
+  reserves in family-balanced units), the designated ``nickel`` settled first,
+  an ``outside_reserve`` the first replacement for an outside starter, the two
+  outside starters settled from the game-day unit at kickoff; a removed corner
+  is replaced from the corners and a removed safety from the safeties; a
+  coach's replacement takes the vacated seat and its slot-defining roles; the
+  preseason default rotation splits the DB units by family. The slot shares
+  are unchanged; only the order inside the DB group moves (result-changing
+  through credit, the strength units' base four, the field-goal block and the
+  coverage units, and through exposure after a removal).
+- pause_eligibility (W2c; needs db_slots and substitution_record): an E2
+  pause offers the off-field players of the removed player's family first,
+  then the group's other DB families, then the players already on the field
+  as an explicit reassignment, the emergency sources only when the group is
+  exhausted, and the sentinel ``depth_order`` (the autonomous rule), which is
+  the pause's default; each decision carries ``default_entrant`` and
+  ``default_moves`` from the removal's W2a record. An autonomous game is
+  unchanged.
+
 A base names the flags its readers require (CalibrationBase.requires_flags):
 a profile resolving on it must hold them, and a profile holding base_2014_6
 or regimes_v3 on a base that does not serve them fails closed.
@@ -250,8 +274,10 @@ B10_FLAGS = frozenset({"ball_security_credit", "fumble_terminal_kind", "retained
 B11_FLAGS = frozenset({"penalty_records"})
 # Batch B13 mechanism flags (R16a yard split, R16b snap values).
 B13_FLAGS = frozenset({"yard_split", "snap_values"})
+# Batch B15 mechanism flags (W2b defensive-back seats, W2c pause eligibility).
+B15_FLAGS = frozenset({"db_slots", "pause_eligibility"})
 FLAGS = (BASE_FLAGS | {"injury_2014_6", "usage_2014_6"} | B6_FLAGS | B8_FLAGS | B9_FLAGS | B9F_FLAGS | B10_FLAGS
-         | B11_FLAGS | B13_FLAGS)
+         | B11_FLAGS | B13_FLAGS | B15_FLAGS)
 # A mechanism flag that needs another flag's records (a profile holding it
 # without them is refused at construction).
 FLAG_REQUIRES = {flag: B8_FLAGS for flag in B9_FLAGS}
@@ -260,6 +286,7 @@ FLAG_REQUIRES["fumble_terminal_kind"] = frozenset({"ball_security_credit"})
 FLAG_REQUIRES["retained_kicks"] = frozenset({"possession_sequencing", "ball_security_credit"})
 FLAG_REQUIRES["penalty_records"] = frozenset({"possession_sequencing"})
 FLAG_REQUIRES["snap_values"] = frozenset({"yard_split"})
+FLAG_REQUIRES["pause_eligibility"] = frozenset({"db_slots", "substitution_record"})
 
 
 def _legacy_base():
@@ -274,7 +301,7 @@ PROFILE_2014_6 = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", stre
                                           "possession_sequencing", "two_point_tries", "return_touchdowns",
                                           "onside_kicks", "fourth_down_decisions", "ball_security_credit",
                                           "fumble_terminal_kind", "retained_kicks", "penalty_records",
-                                          "yard_split", "snap_values"}),
+                                          "yard_split", "snap_values", "db_slots", "pause_eligibility"}),
                          record_base=True)
 
 PROFILES = {p.kernel_version: p for p in (PROFILE_2014_5, PROFILE_2014_6)}

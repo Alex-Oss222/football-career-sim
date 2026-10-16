@@ -338,6 +338,9 @@
     "library/data/2014_inseason_rails/week_05.json",
     "library/data/2014_inseason_rails/sources.json",
     "scripts/research/build_2014_inseason_rails.py",
+    "library/2014_db_families.md",
+    "library/data/2014_db_families.json",
+    "scripts/research/build_2014_db_families.py",
     "scripts/render_inseason_rails.py",
     "tests/test_inseason_rails.py"
   ],

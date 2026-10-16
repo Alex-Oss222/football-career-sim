@@ -35,7 +35,8 @@ W5A = MODEL.clock_detail
 B9F_OFF = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PROFILE_2014_6.strength,
                   flags=PROFILE_2014_6.flags - B9F_FLAGS, record_base=True)
 RECORDS_OFF = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PROFILE_2014_6.strength,
-                      flags=B9F_OFF.flags - {"clock_detail_v1", "substitution_record"}, record_base=True)
+                      flags=B9F_OFF.flags - {"clock_detail_v1", "substitution_record", "pause_eligibility"},
+                      record_base=True)
 # W5a's records (batch B11's penalty rows, also 2014.6-only ledger rows, are
 # the replayed records' own, tested in tests/test_penalties.py).
 NEW_ROWS = set(KERNEL_2014_6_LEDGER_ROWS) - {"penalty"}

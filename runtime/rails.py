@@ -1110,7 +1110,11 @@ def emergency_events(state, code, week, out_ids, cutoff, available_fn, excluded=
     group (earliest signing, then id), then its held additions at that group;
     with the club at its limit (or above it under C7), room comes only from
     putting its longest-projected injured player at that group on branch
-    reserve. `excluded` names players already in an earlier game's TeamInput
+    reserve, or, when none is left there, its longest-projected injured
+    player at any group (kernel 2014.6 batch B15, U7 option (i): the dated
+    practice-squad signing paired with the reserve placement of the club's
+    longest-held unavailable player; a healthy player is never moved).
+    `excluded` names players already in an earlier game's TeamInput
     this week (the slate deferral): they cannot play for this club this week
     and cannot be promoted, but are not injured."""
     from types import SimpleNamespace
@@ -1124,6 +1128,17 @@ def emergency_events(state, code, week, out_ids, cutoff, available_fn, excluded=
     for p in avail:
         counts[p["group"]] = counts.get(p["group"], 0) + 1
     events, room = [], LIMITS["active"] - len(active)
+
+    def longest(players):
+        return sorted(players, key=lambda p: (-out_ids[p["player_id"]].toordinal()
+                                              if isinstance(out_ids[p["player_id"]], date) else 0, p["uid"]))
+
+    # Kernel 2014.6 batch B15 (U7, option (i)): with no injured player at the
+    # short group to place, the room comes from the club's longest-projected
+    # branch-injured player at any other group (the pairing that keeps the
+    # 53 legal), never a healthy player; each placed once.
+    elsewhere = longest(p for p in active if p["player_id"] in out_ids)
+    placed = set()
     for grp, need in MINIMUM_GAME_DAY.items():
         short = need - counts.get(grp, 0)
         if short <= 0:
@@ -1134,9 +1149,7 @@ def emergency_events(state, code, week, out_ids, cutoff, available_fn, excluded=
         pool += [{"uid": h["uid"], **h["info"]} for h in state.held[code]["active"]
                  if group(h["info"]["position"]) == grp]
         pool = [c for c in pool if c["player_id"] not in excluded]
-        injured = sorted((p for p in active if p["group"] == grp and p["player_id"] in out_ids),
-                         key=lambda p: (-out_ids[p["player_id"]].toordinal()
-                                        if isinstance(out_ids[p["player_id"]], date) else 0, p["uid"]))
+        injured = longest(p for p in active if p["group"] == grp and p["player_id"] in out_ids)
         for cand in pool[:short]:
             ev = {"id": "EMERGENCY|%s|%s" % (_d(cutoff).isoformat(), cand["uid"]), "kind": "emergency_promotion",
                   "team": None, "club": code, "uid": cand["uid"], "player_id": cand["player_id"],
@@ -1145,9 +1158,12 @@ def emergency_events(state, code, week, out_ids, cutoff, available_fn, excluded=
                   "reason": "no legal game-day unit at %s (%s)" % (grp, ", ".join(lineup_errors(
                       [SimpleNamespace(position=p["position"]) for p in avail])))}
             if room <= 0:
-                if not injured:
+                source = [p for p in injured if p["uid"] not in placed] or [
+                    p for p in elsewhere if p["uid"] not in placed]
+                if not source:
                     break
-                ev["reserve_uid"] = injured.pop(0)["uid"]
+                ev["reserve_uid"] = source[0]["uid"]
+                placed.add(source[0]["uid"])
             else:
                 room -= 1
             events.append(ev)

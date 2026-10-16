@@ -124,7 +124,9 @@ class ProfileTableTests(unittest.TestCase):
                                                           # batch B11 (R11 penalty records)
                                                           "penalty_records",
                                                           # batch B13 (R16a yard split, R16b snap values)
-                                                          "yard_split", "snap_values"}))
+                                                          "yard_split", "snap_values",
+                                                          # batch B15 (W2b DB seats, W2c pause eligibility)
+                                                          "db_slots", "pause_eligibility"}))
         a, b = sample_teams()
         r = resolve_game(a, b, seed=SEED + b"-b5-2014-6", event_id="b5-2014-6", _test_profile=PROFILE_2014_6)
         self.assertEqual(r["kernel_version"], "2014.6")
@@ -169,6 +171,15 @@ class ProfileTableTests(unittest.TestCase):
                                                                 "onside_kicks", "fourth_down_decisions"})
         Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PROFILE_2014_6.strength,
                 flags=PROFILE_2014_6.flags - B10_FLAGS | {"ball_security_credit"})
+        # Batch B15: the pause eligibility (W2c) needs the DB seats (W2b) and
+        # the substitution record (W2a, its default entrant and moves); the
+        # seats alone need nothing.
+        for removed in ({"db_slots"}, {"substitution_record"}):
+            with self.assertRaises(ValueError):
+                Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PROFILE_2014_6.strength,
+                        flags=PROFILE_2014_6.flags - removed)
+        Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PROFILE_2014_6.strength,
+                flags=PROFILE_2014_6.flags - {"pause_eligibility", "substitution_record"})
 
     def test_only_a_profile_is_accepted(self):
         a, b = sample_teams()

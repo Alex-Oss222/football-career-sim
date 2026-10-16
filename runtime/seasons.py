@@ -84,6 +84,20 @@ class SeasonPaths:
         shards); runtime.rails reads it. A season without one has no rails."""
         return self.root / ('library/data/%d_inseason_rails' % self.year)
     @property
+    def practice_squads(self):
+        """The background clubs' practice-squad base (kernel 2014.6 batch B15,
+        U7 option (i)): the in-season rails base, whose two-pass practice
+        squads supply a dated promotion when a club cannot dress a legal
+        game-day unit (runtime.rails.emergency_events)."""
+        return self.inseason_rails / 'base.json'
+    @property
+    def db_families(self):
+        """The background defensive backs' contemporaneous families and
+        chart nickel roles (kernel 2014.6 batch B15, W2b), read from the
+        in-season rails' first week under a kernel that seats defensive backs
+        by family (runtime.depth_library.relabel_defensive_backs)."""
+        return self.root / ('library/data/%d_db_families.json' % self.year)
+    @property
     def generations(self): return self.career / 'migrations/event_generations.json'
 
     def cache(self, week, kind):

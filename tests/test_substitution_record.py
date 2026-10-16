@@ -28,7 +28,12 @@ from test_injuries_in_game import force
 ROOT = Path(__file__).resolve().parents[1]
 CHART = Path(__file__).parent / "data/week_03_jacksonville_game_depth_chart.json"
 RECORD_OFF = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PROFILE_2014_6.strength,
-                     flags=PROFILE_2014_6.flags - {"substitution_record"}, record_base=True)
+                     flags=PROFILE_2014_6.flags - {"substitution_record", "pause_eligibility"}, record_base=True)
+# Batch B15 seats the defensive backs by family (W2b): the W2a record's own
+# assertions on the depth-order DB group run on the kernel without the B15
+# flags; the seated record is asserted in tests/test_db_slots.py.
+SEATS_OFF = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PROFILE_2014_6.strength,
+                    flags=PROFILE_2014_6.flags - {"db_slots", "pause_eligibility"}, record_base=True)
 
 
 def jacksonville_week_3():
@@ -140,8 +145,12 @@ class RecorderTests(unittest.TestCase):
         self.assertGreater(r["team_stats"]["A"]["players"]["A-WR4"]["offensive_snaps"], 0)
         cb = subs["B-CB1"]
         self.assertEqual(cb["vacated_slots"], [{"side": "defense", "slot": "DB1"}])
-        self.assertEqual(cb["entering_slots"][0]["slot"], "DB5")
-        self.assertEqual(len(cb["moves"]), 4)
+        # Batch B15 (W2b): the corners replace a corner (the move-up
+        # convention: the nickel moves outside, the next corner enters at
+        # nickel); the safeties keep their seats.
+        self.assertEqual(cb["entering_slots"], [{"side": "defense", "slot": "DB5", "player": "B-CB4"}])
+        self.assertEqual([(m["player"], m["from"], m["to"]) for m in cb["moves"]],
+                         [("B-CB2", "DB2", "DB1"), ("B-CB3", "DB5", "DB2")])
         self.assertTrue(all(m["side"] == "defense" for m in cb["moves"]))
 
     def test_specialist_and_returner_changes(self):
@@ -209,7 +218,9 @@ class RecorderTests(unittest.TestCase):
                                _test_profile=PROFILE_2014_6)
         self.assertTrue(partial.get("paused"))
         pause = partial["pauses"][-1]
-        choice = pause["decisions"][0]["eligible"][-1]
+        # Batch B15 (W2c): the list ends with the depth_order sentinel; the
+        # last player on it is an on-field receiver (an explicit reassignment).
+        choice = [e for e in pause["decisions"][0]["eligible"] if e != "depth_order"][-1]
         final = resolve_game(a, self.b, seed=SEED + b"-w2a", event_id="w2a", management_mode="user_controlled",
                              controlled_team="A", _test_onsets=force(drive, "A-WR1"),
                              continuation={"decisions": [{"token": pause["continuation_token"],
@@ -248,11 +259,11 @@ class Week3ChartTests(unittest.TestCase):
     def test_talib_record_names_butler_and_bouye(self):
         jax = jacksonville_week_3()
         _, b = sample_teams()
-        base = resolve_game(jax, b, seed=SEED + b"-w2a-jax", event_id="w2a-jax", _test_profile=PROFILE_2014_6)
+        base = resolve_game(jax, b, seed=SEED + b"-w2a-jax", event_id="w2a-jax", _test_profile=SEATS_OFF)
         self.assertEqual(validate_result(base), [])
         b_drives = [p["number"] for p in base["possessions"] if p["team"] == "B"]
         poyer_drive, talib_drive = b_drives[0], b_drives[1]
-        r = resolve_game(jax, b, seed=SEED + b"-w2a-jax", event_id="w2a-jax", _test_profile=PROFILE_2014_6,
+        r = resolve_game(jax, b, seed=SEED + b"-w2a-jax", event_id="w2a-jax", _test_profile=SEATS_OFF,
                          _test_onsets={**force(poyer_drive, "Jordan Poyer", injury_class="head_neck"),
                                        **force(talib_drive, "Aqib Talib", injury_class="head_neck")})
         self.assertEqual(validate_result(r), [])
