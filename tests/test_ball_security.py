@@ -74,11 +74,13 @@ def clean(result):
 # Synthetic labels that reach each branch under PROFILE_2014_6 (found by a
 # search over the same label pattern; each test fails loudly if its label no
 # longer reaches the branch).
-# Re-searched for batch B11 (the penalty records move every later result):
-# each is the first label of the same pattern that reaches the branch.
-OT_REGULAR = "b10-ot-1"
-OT_POSTSEASON = "b10-ot-91"
-OT_PUNT = "b10-otp-16"
+# Re-searched for batch B11 (the penalty records move every later result)
+# and again for batch B13 (the replayed yard split moves every later layout
+# and the decisions read from it): each is the first label of the same
+# pattern that reaches the branch (the Pro Bowl label still does).
+OT_REGULAR = "b10-ot-4"
+OT_POSTSEASON = "b10-ot-22"
+OT_PUNT = "b10-otp-11"
 PRO_BOWL = "b10-pb-9"
 
 

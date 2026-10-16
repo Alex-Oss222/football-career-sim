@@ -2524,6 +2524,11 @@ DRIVE_SUMMARY_FIELDS = (
     # yards, declined, offsetting], the net accepted yards, the first downs
     # by penalty), so a compact receipt reconciles them like the result.
     "pen",
+    # Kernel 2014.6 batch B13 (append-only): each laid-out drive's replayed
+    # yard split and the possession's published runs by yards and long
+    # completions (runtime.yard_split), so a compact receipt grades the
+    # per-snap shape like the result.
+    "real_split",
 )
 LABEL_TYPES = {KNEEL_LABEL: "run", GENERIC_RUN: "run", SPIKE_LABEL: "pass",
                GENERIC_PASS: "pass", SCRAMBLE_LABEL: "pass"}

@@ -384,6 +384,18 @@ class CalibrationBase:
         self.pin("penalties")
         return self.memo(("model", "penalties"), build)
 
+    def yardage(self):
+        """Kernel 2014.6 batch B13: the base's yardage model (the R16c band
+        centres: yards per carry, completion rate, run share, rushing yards
+        per team-game and the per-snap run shape, with their spreads;
+        runtime.yard_split). A base without the pinned artifact fails
+        closed."""
+        def build():
+            from .yard_split import YardageModel
+            return YardageModel(self.raw("yardage"))
+        self.pin("yardage")
+        return self.memo(("model", "yardage"), build)
+
 
 BASE_2012 = CalibrationBase(
     name="2012",
@@ -470,6 +482,11 @@ BASE_2010_2014W4 = CalibrationBase(
         # --check), read by runtime.penalties under penalty_records.
         ("penalties", Pin("library/data/2010_2014w4_penalties.json",
                           "0576d09c3be3a10717395129de5a7c870aa6441e29c279f3bbc39a8e4152bba0")),
+        # Kernel 2014.6 batch B13: the yardage band centres
+        # (scripts/research/build_2010_2014_yardage.py, --check), read by
+        # runtime.bands.audit_yardage for the R16c rows.
+        ("yardage", Pin("library/data/2010_2014w4_yardage.json",
+                        "0aeb6a72cf1cbefe2433d020eea15d498662c4bcd33b4446b1dc2694d3751b1e")),
     ),
     # Counted from the committed 2010-2014 artifacts on October 3, 2026 (the
     # field-position total is the pooled partition, 25,468 drives: the

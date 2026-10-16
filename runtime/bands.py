@@ -1645,6 +1645,95 @@ def audit_penalties(receipts, cohort=None):
     return team_games, rows
 
 
+YARDAGE_FROM = (2014, 6)
+
+
+def audit_yardage(receipts, cohort=None, per_snap_graded=False):
+    """Kernel 2014.6 batch B13 (R16c): the yardage rows for a 2014.6-or-later
+    cohort resolved with the replayed yard split (the receipts' ``yardage``
+    marker), (team-games, [(metric, observed, centre, tolerance, status)]).
+    Every centre and spread is read from the cohort base's yardage artifact
+    (library/data/2010_2014w4_yardage.json, its ``band_centres``), never
+    typed. Graded: yards per carry, kneels included (3*SD/(carries*sqrt(n)),
+    SD the artifact's team-game residual SD and carries its mean carries per
+    team-game), the completion rate, spikes as attempts (3*sqrt(phi*p(1-p)/
+    attempts)), the run share of scrimmage plays (3*sqrt(phi*p(1-p)/plays)),
+    rushing yards per team-game (3*SD/sqrt(n)); the per-snap shape of
+    non-kneel runs (the shares losing yards, of 1-3 yards and of 20 or more;
+    3*sqrt(p(1-p)/runs)), read from each possession's ``real_split`` run
+    counts, is graded only when `per_snap_graded` (the synthetic all-club
+    samples of the acceptance runs; plan B13, R16c) and is informational on
+    a real cohort. Informational: the other run bins, completions of 20 or
+    more yards per attempt; measured: the completions the layout forced per
+    team-game. Earlier cohorts, and receipts without the marker, have no row
+    (0, [])."""
+    from .yard_split import RUN_BINS
+
+    if cohort is None or not kernel_at_least(cohort, YARDAGE_FROM):
+        return 0, []
+    marked = [r for r in receipts if isinstance(r.get("yardage"), dict)]
+    if not marked:
+        return 0, []
+    base = cohort_base(receipts, cohort)
+    model = base.yardage()
+    centres = model.centres
+    team_games = sum(len(r.get("team_stats", {})) for r in marked)
+    rows, add = _grader(team_games >= MIN_TEAM_GAMES)
+    teams = [s for r in marked for s in r.get("team_stats", {}).values()]
+    players = [line for s in teams for line in (s.get("players") or {}).values()]
+    carries = sum(line.get("rushing_attempts", 0) or 0 for line in players)
+    rushing = sum(s.get("rushing_yards", 0) or 0 for s in teams)
+    attempts = sum(line.get("pass_attempts", 0) or 0 for line in players)
+    completions = sum(line.get("completions", 0) or 0 for line in players)
+    sacks = sum(s.get("sacks_allowed", 0) or 0 for s in teams)
+    plays = carries + attempts + sacks
+
+    def pooled(entry):
+        k, n = entry["pooled"]
+        return k / n
+
+    y = centres["yards_per_carry"]
+    add("yards per carry (kneels included)", rushing / carries if carries else None, pooled(y),
+        3 * y["residual_sd_per_team_game"] / (y["carries_per_team_game"] * math.sqrt(team_games))
+        if team_games else None)
+    for name, metric, made, n in (("completion_rate", "completion rate (spikes as attempts)", completions, attempts),
+                                  ("run_share", "run share of scrimmage plays", carries, plays)):
+        entry = centres[name]
+        p = pooled(entry)
+        add(metric, made / n if n else None, p,
+            3 * math.sqrt(entry["dispersion"] * p * (1 - p) / n) if n else None, events=n)
+    r = centres["rushing_yards_per_team_game"]
+    add("rushing yards per team-game (kneels included)", rushing / team_games if team_games else None, pooled(r),
+        3 * r["sd"] / math.sqrt(team_games) if team_games else None)
+    bins = [0] * len(RUN_BINS)
+    long_completions = forced = 0
+    for receipt in marked:
+        for d in _drives(receipt):
+            split = d.get("real_split") or {}
+            for i, count in enumerate(split.get("runs") or ()):
+                bins[i] += count
+            long_completions += split.get("completions_20", 0) or 0
+            forced += sum((seg or {}).get("forced", 0) or 0 for seg in split.get("segments") or ())
+    runs = sum(bins)
+    shape = centres["run_bins"]
+    graded_bins = set(model.data.get("graded_bins") or ())
+    total = sum(shape["pooled"])
+    for i, label in enumerate(RUN_BINS):
+        centre = shape["pooled"][i] / total
+        graded = per_snap_graded and label in graded_bins
+        observed, tolerance = _rate(bins[i], runs, centre)
+        add("share of non-kneel runs %s%s" % (
+            {"loss": "losing yards", "zero": "gaining 0", "20+": "of 20+ yards"}.get(label, "of %s yards" % label),
+            "" if graded else " (informational)"), observed, centre, tolerance, events=runs, graded=graded)
+    observed, tolerance = _rate(long_completions, attempts, pooled(centres["completions_20_per_attempt"]))
+    add("completions of 20+ yards per attempt (informational)", observed,
+        pooled(centres["completions_20_per_attempt"]), tolerance, events=attempts, graded=False)
+    rows.append(("completions the layout forced per team-game (measured)",
+                 forced / team_games if team_games else None, None, None,
+                 "MEASURED" if team_games else "INSUFFICIENT SAMPLE"))
+    return team_games, rows
+
+
 def coherence(receipts, cohort=None):
     """Zero-tolerance ledger-coherence counts over the given receipts.
 

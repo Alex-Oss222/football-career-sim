@@ -149,6 +149,23 @@ annotations (CalibrationBase.penalties; the kernel fails closed otherwise):
   to the fouling club. The per-play Bernoulli counter of every earlier
   kernel is gone.
 
+Batch B13 (R16a, R16b; the yard split) adds two flags, each on a schema-3
+base carrying the B3b yardage annotations (the kernel fails closed
+otherwise; runtime.yard_split):
+
+- yard_split (R16a): each replayed drive keeps its own real rushing yards,
+  passing yards, completions and sack losses. The relocation delta is split
+  between the kinds (the runs take round(d x |R| / (|R| + |P|))), the
+  completions are fixed in every rung (a forced one counted), the sack
+  losses are never redrawn; the gauss and randint draws are still taken as
+  placeholders, so the possession stream is unchanged (result-changing on
+  the chain-layout stream: team counters, credit and, through the laid-out
+  fourth-down states, B9F's decision points).
+- snap_values (R16b; needs yard_split): each drive's real run and completion
+  values replace the uniform allocation, the terminal value on the terminal
+  slot, the others shuffled on the layout stream, each kind's delta by the
+  gains-proportional rule.
+
 A base names the flags its readers require (CalibrationBase.requires_flags):
 a profile resolving on it must hold them, and a profile holding base_2014_6
 or regimes_v3 on a base that does not serve them fails closed.
@@ -231,8 +248,10 @@ B9F_FLAGS = frozenset({"fourth_down_decisions"})
 B10_FLAGS = frozenset({"ball_security_credit", "fumble_terminal_kind", "retained_kicks"})
 # Batch B11 mechanism flag (R11, per-play penalty records).
 B11_FLAGS = frozenset({"penalty_records"})
+# Batch B13 mechanism flags (R16a yard split, R16b snap values).
+B13_FLAGS = frozenset({"yard_split", "snap_values"})
 FLAGS = (BASE_FLAGS | {"injury_2014_6", "usage_2014_6"} | B6_FLAGS | B8_FLAGS | B9_FLAGS | B9F_FLAGS | B10_FLAGS
-         | B11_FLAGS)
+         | B11_FLAGS | B13_FLAGS)
 # A mechanism flag that needs another flag's records (a profile holding it
 # without them is refused at construction).
 FLAG_REQUIRES = {flag: B8_FLAGS for flag in B9_FLAGS}
@@ -240,6 +259,7 @@ FLAG_REQUIRES["fourth_down_decisions"] = frozenset({"possession_sequencing", "cl
 FLAG_REQUIRES["fumble_terminal_kind"] = frozenset({"ball_security_credit"})
 FLAG_REQUIRES["retained_kicks"] = frozenset({"possession_sequencing", "ball_security_credit"})
 FLAG_REQUIRES["penalty_records"] = frozenset({"possession_sequencing"})
+FLAG_REQUIRES["snap_values"] = frozenset({"yard_split"})
 
 
 def _legacy_base():
@@ -253,7 +273,8 @@ PROFILE_2014_6 = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", stre
                                           "early_fg_v2", "clock_detail_v1", "substitution_record",
                                           "possession_sequencing", "two_point_tries", "return_touchdowns",
                                           "onside_kicks", "fourth_down_decisions", "ball_security_credit",
-                                          "fumble_terminal_kind", "retained_kicks", "penalty_records"}),
+                                          "fumble_terminal_kind", "retained_kicks", "penalty_records",
+                                          "yard_split", "snap_values"}),
                          record_base=True)
 
 PROFILES = {p.kernel_version: p for p in (PROFILE_2014_5, PROFILE_2014_6)}

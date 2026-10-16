@@ -122,7 +122,9 @@ class ProfileTableTests(unittest.TestCase):
                                                           "ball_security_credit", "fumble_terminal_kind",
                                                           "retained_kicks",
                                                           # batch B11 (R11 penalty records)
-                                                          "penalty_records"}))
+                                                          "penalty_records",
+                                                          # batch B13 (R16a yard split, R16b snap values)
+                                                          "yard_split", "snap_values"}))
         a, b = sample_teams()
         r = resolve_game(a, b, seed=SEED + b"-b5-2014-6", event_id="b5-2014-6", _test_profile=PROFILE_2014_6)
         self.assertEqual(r["kernel_version"], "2014.6")
@@ -234,10 +236,10 @@ class StripFieldGroupTests(unittest.TestCase):
                          {"result", "possession", "ledger", "team", "player", "fourth_down", "kickoff", "punt"})
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["result"],
                          ("calibration_base", "substitutions", "kicks", "scoring_events", "decision_policies",
-                          "ball_security", "penalties"))
+                          "ball_security", "penalties", "yardage"))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["possession"],
                          ("last_spike_seconds_left", "non_offensive_score", "try", "fourth_downs", "segments",
-                          "fumbles", "pen"))
+                          "fumbles", "pen", "real_split"))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["kickoff"],
                          ("remaining", "chain", "after_drive", "basis", "touchdown", "scoring_team", "xp_made", "points",
                           "onside", "cell", "p_onside", "recovery_class", "p_recover", "try", "fumble", "pen"))

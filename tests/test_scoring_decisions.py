@@ -27,7 +27,7 @@ from runtime.calibration_base import BASE_2010_2014W4
 from runtime.game_runner import build_game_packet
 from runtime.kernel import resolve_game, validate_result
 from runtime.play_detail import check_ledger, scoring_events
-from runtime.profiles import B9_FLAGS, B9F_FLAGS, B10_FLAGS, B11_FLAGS, PROFILE_2014_5, PROFILE_2014_6, Profile
+from runtime.profiles import B9_FLAGS, B9F_FLAGS, B10_FLAGS, B11_FLAGS, B13_FLAGS, PROFILE_2014_5, PROFILE_2014_6, Profile
 from runtime.rules import extra_point_rule, ot_history, ot_status, try_rule
 from runtime.statbook import (KERNEL_2014_6_PLAYER_FIELDS, KERNEL_2014_6_TEAM_STAT_FIELDS, aggregate_receipts,
                               make_receipt)
@@ -47,13 +47,15 @@ DELEGATION = {"otherwise": "league", "source": "fixture: follow the league chart
 # the league chart, so every fourth down is decided as in the autonomous run.
 FOURTH = {"fourth_down_policy": {"otherwise": "league"}}
 # The B9 level of kernel 2014.6 (without the B9F live fourth downs, the B10
-# ball security and the B11 penalty records): the seed-pinned reproductions
-# below were found under it, and B9F changes every later fourth-down
-# possession (B10 every later lost-fumble layout and retained kick, B11 every
-# later drive draw and layout), so they keep reproducing at this level.
+# ball security, the B11 penalty records and the B13 yard split): the
+# seed-pinned reproductions below were found under it, and B9F changes every
+# later fourth-down possession (B10 every later lost-fumble layout and
+# retained kick, B11 every later drive draw and layout, B13 every later
+# layout's values), so they keep reproducing at this level.
 PROFILE_B9_LEVEL = Profile("2014.6", base=PROFILE_2014_6.base, cell_rules=PROFILE_2014_6.cell_rules,
                            strength=PROFILE_2014_6.strength,
-                           flags=PROFILE_2014_6.flags - B9F_FLAGS - B10_FLAGS - B11_FLAGS, record_base=True)
+                           flags=PROFILE_2014_6.flags - B9F_FLAGS - B10_FLAGS - B11_FLAGS - B13_FLAGS,
+                           record_base=True)
 WEEK4_SHEET = ROOT / "career/2014/05_Regular_Season/Games/Week_04/call_sheet.json"
 SCORING_SOURCES = set(sd.SOURCES)
 
@@ -1058,25 +1060,32 @@ class LabelTests(unittest.TestCase):
                              [{k: v for k, v in r.items() if k not in labels} for r in y["play_ledger"]])
 
 
+# Re-searched for batch B13, whose replayed yard split moves every later
+# layout and the decisions read from it: "b9-views" no longer holds a
+# regulation touchdown after its blocked punt; "b9-views-0" is the first label
+# of the pattern b9-views-N whose chain below resolves.
+VIEWS_NAME = "b9-views-0"
+
+
 class StatbookAndViewTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         # Each branch is forced on a drive found after the earlier ones are
         # applied (a forced branch changes everything after it).
         forced = {"kicks": {1: "touchdown"}, "drives": {}, "tries": {}}
-        g = play("b9-views", forced)
+        g = play(VIEWS_NAME, forced)
         p = next(p for p in g["possessions"][:-1] if p["category"] in ("interception", "fumble_lost")
                  and p["half"] in (1, 2))
         forced["drives"][p["number"]] = "defensive_touchdown"
         forced["tries"]["drive:%d" % p["number"]] = {"decision": "go", "made": False}
-        g = play("b9-views", forced)
+        g = play(VIEWS_NAME, forced)
         punt = next(q for q in g["possessions"][:-1] if q["category"] == "punt" and q["number"] > p["number"])
         forced["drives"][punt["number"]] = "blocked_punt_td"
-        g = play("b9-views", forced)
+        g = play(VIEWS_NAME, forced)
         td = next(q for q in g["possessions"][:-1] if q["category"] == "touchdown" and q["number"] > punt["number"]
                   and q["half"] in (1, 2))
         forced["tries"]["drive:%d" % td["number"]] = {"decision": "go", "made": True}
-        cls.result = play("b9-views", forced)
+        cls.result = play(VIEWS_NAME, forced)
         assert validate_result(cls.result) == []
         cls.old = resolve_game(A, B, seed=SEED + b"-b9-old", event_id="b9-old", _test_profile=PROFILE_2014_5)
 

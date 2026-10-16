@@ -77,18 +77,19 @@ KERNEL_2014_6_FIELD_GROUP = {
     # decision blocks' id and source text (kept with the receipt, never in
     # the outcome packet).
     # Batch B10: the ball-security marker. Batch B11: the penalty-records
-    # marker.
+    # marker. Batch B13: the yard-split marker.
     "result": ("calibration_base", "substitutions", "kicks", "scoring_events", "decision_policies", "ball_security",
-               "penalties"),
+               "penalties", "yardage"),
     # Batch B5: the window seconds left at a drive's last spike (R14). Batch
     # B8: a non-offensive score made during the possession (R15, B9). Batch
     # B9: an offensive touchdown's try record (R8). Batch B9F: the
     # possession's fourth-down decision records and a joined possession's
     # segments.
     # Batch B10: the possession's credited scrimmage fumbles. Batch B11: its
-    # replayed penalty records' compact summary.
+    # replayed penalty records' compact summary. Batch B13: its replayed yard
+    # split and published run shape.
     "possession": ("last_spike_seconds_left", "non_offensive_score", "try", "fourth_downs", "segments", "fumbles",
-                   "pen"),
+                   "pen", "real_split"),
     # Batch B8: the kick record's chain and scoring fields. Batch B9: R9's
     # onside decision (chart cell and pair, recovery class and pair) and a
     # return touchdown's try record (R8).
@@ -270,6 +271,9 @@ def make_receipt(result, *, week, matchup, coverage="complete", detail="full",
     if result.get("penalties") is not None:
         # Kernel 2014.6 batch B11 (append-only): the penalty-records marker.
         receipt["penalties"] = deepcopy(result["penalties"])
+    if result.get("yardage") is not None:
+        # Kernel 2014.6 batch B13 (append-only): the yard-split marker.
+        receipt["yardage"] = deepcopy(result["yardage"])
     if result.get("decision_policies") is not None:
         # Kernel 2014.6 batch B9 (append-only): each club's decision blocks as
         # frozen on its sheet, id and source text included (the outcome

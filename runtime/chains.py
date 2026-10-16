@@ -909,11 +909,19 @@ class _Search:
 
 
 def _draw(rng, pd, category, terminal, runs, attempts, sacks, kneel_yards, spikes, pass_yards, rush_free,
-          losses, safety_terminal, completion_rate, usage_values=None):
+          losses, safety_terminal, completion_rate, usage_values=None, real=None, replay_values=False):
     """Kinds, completions and per-snap values, as runtime.play_detail._layout
     draws them (the movable snaps first, then kneels and the terminal snap).
     `usage_values` is the calibration base's usage table (the negative-run
-    rate and loss distribution; the 2012 base's when None)."""
+    rate and loss distribution; the 2012 base's when None).
+
+    Kernel 2014.6 batch B13 (runtime.yard_split): with `real` (R16a) exactly
+    the real completions are completed, the terminal catch counting as one,
+    chosen among the non-terminal attempts on this stream (rng.sample; an
+    interception is never completed); with `replay_values` too (R16b) each
+    kind's values are the real drive's own (yard_split.assign), the uniform
+    allocation the fallback when the slots do not match them (noted on the
+    returned draw's ``notes``)."""
     counts = {"run": runs, "att": attempts, "sack": sacks}
     if terminal:
         counts[pd.BASE_KIND[terminal]] -= 1
@@ -922,7 +930,16 @@ def _draw(rng, pd, category, terminal, runs, attempts, sacks, kneel_yards, spike
     kinds = movable + ["kneel"] * len(kneel_yards) + ([terminal] if terminal else [])
     plays = len(kinds)
     last = plays - 1
-    completed = [k == "catch" or (k == "att" and rng.random() < completion_rate) for k in kinds]
+    notes = []
+    if real is None:
+        completed = [k == "catch" or (k == "att" and rng.random() < completion_rate) for k in kinds]
+    else:
+        want = max(0, real.completions - (1 if terminal == "catch" else 0))
+        attempts_at = [i for i, k in enumerate(kinds) if k == "att"]
+        if want > len(attempts_at):
+            notes.append("real_completions_clamped")
+        chosen = set(rng.sample(attempts_at, min(want, len(attempts_at)))) if want and attempts_at else set()
+        completed = [k == "catch" or (k == "att" and i in chosen) for i, k in enumerate(kinds)]
     eligible = [i for i, k in enumerate(kinds) if k in ("att", "catch")]
     if pass_yards and eligible and not any(completed):
         completed[rng.choice(eligible)] = True
@@ -932,10 +949,32 @@ def _draw(rng, pd, category, terminal, runs, attempts, sacks, kneel_yards, spike
     sack_slots = [i for i, k in enumerate(kinds) if k == "sack" and not (category == "safety" and i == last)]
     kneel_slots = [i for i, k in enumerate(kinds) if k == "kneel"]
     values = [0] * plays
-    for index, value in zip(completion_slots, pd._allocate(pass_yards, len(completion_slots), rng)):
-        values[index] = value
-    for index, value in zip(run_slots, pd._allocate_runs(rush_free, len(run_slots), rng, usage_values)):
-        values[index] = value
+    replayed = None
+    if real is not None and replay_values:
+        from . import yard_split
+        terminal_at = last if terminal in ("catch", "run") and plays else None
+        replayed = []
+        for slots, real_values, total, kind, fallback in (
+                (completion_slots, real.completion_values, pass_yards, "catch", "real_values_fallback_completions"),
+                (run_slots, real.run_values, rush_free, "run", "real_values_fallback_runs")):
+            assigned = yard_split.assign(rng, slots, real_values, total,
+                                         terminal_slot=terminal_at if terminal == kind else None,
+                                         terminal_matches=real.term_kind == kind)
+            if assigned is None:
+                notes.append(fallback)
+            replayed.append(assigned)
+    if replayed is not None and replayed[0] is not None:
+        for index, value in replayed[0].items():
+            values[index] = value
+    else:
+        for index, value in zip(completion_slots, pd._allocate(pass_yards, len(completion_slots), rng)):
+            values[index] = value
+    if replayed is not None and replayed[1] is not None:
+        for index, value in replayed[1].items():
+            values[index] = value
+    else:
+        for index, value in zip(run_slots, pd._allocate_runs(rush_free, len(run_slots), rng, usage_values)):
+            values[index] = value
     for index, loss in zip(sack_slots, losses):
         values[index] = -loss
     for index, value in zip(kneel_slots, kneel_yards):
@@ -949,7 +988,17 @@ def _draw(rng, pd, category, terminal, runs, attempts, sacks, kneel_yards, spike
         if candidates:
             swap = rng.choice(candidates)
             values[last], values[swap] = values[swap], values[last]
-    return kinds, completed, values, len(movable)
+    return _Drawn((kinds, completed, values, len(movable)), notes)
+
+
+class _Drawn(tuple):
+    """A _draw result (kinds, completed, values, movable count) with the
+    batch B13 notes of that draw (the fallbacks the adopted draw counts)."""
+
+    def __new__(cls, items, notes=()):
+        out = super().__new__(cls, items)
+        out.notes = tuple(notes)
+        return out
 
 
 def _score(chains, targets):
@@ -961,13 +1010,17 @@ def _score(chains, targets):
     return sum(abs(a - b) for a, b in zip(chains, want))
 
 
-def _alt_plans(rng, pass_yards, rush_free, losses, *, usable, free_runs, td_type, losses_random, count=ALT_PLANS):
+def _alt_plans(rng, pass_yards, rush_free, losses, *, usable, free_runs, td_type, losses_random, count=ALT_PLANS,
+               pass_fixed=False):
     """Alternative (passing, free rushing, sack losses) plans for a drive the
     kernel's split cannot order legally. The drive's net never moves: a
     redrawn sack loss (3-10 yards, as the kernel draws it; only when the
     losses were drawn rather than fitted to the net) changes the free
     passing-plus-rushing total by the same amount, and passing yards shift
-    against rushing yards. The scoring kind keeps at least one yard."""
+    against rushing yards. The scoring kind keeps at least one yard. Kernel
+    2014.6 batch B13: `pass_fixed` (a replayed drive with no completion)
+    keeps the passing yards where they are (fixed completions bind every
+    rung)."""
     plans, seen = [], {(pass_yards, rush_free, tuple(losses))}
     shifts = list(SPLIT_SHIFTS)
     for k in range(count * 3):
@@ -982,6 +1035,8 @@ def _alt_plans(rng, pass_yards, rush_free, losses, *, usable, free_runs, td_type
             p = 0
         elif not free_runs:
             p = free_total
+        elif pass_fixed:
+            p = pass_yards
         else:
             p = pass_yards + shift
         r = free_total - p
@@ -1040,7 +1095,7 @@ FG_FOURTH_DOWN_RELAXED = "fg_fourth_down_relaxed"
 def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, attempts, sacks,
                  kneel_yards, spikes, pass_yards, rush_free, losses, safety_terminal, net, spot,
                  completion_rate, targets=None, term_down=None, diagnostics=None, usage_values=None,
-                 fg_down=None, segment=None, lost_kind=None, penalty=None):
+                 fg_down=None, segment=None, lost_kind=None, penalty=None, real_split=None, replay_values=False):
     """The ordered snaps of one resolved drive with a legal chain walk.
 
     `category` is the kernel category (punt, field_goal_attempt, downs,
@@ -1102,12 +1157,22 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
     snaps plus the records still net the drive. The layout gains "sequence"
     (["s", snap index] and ["p", event id] in order), "attached" ({snap
     index: [Attach]}), "events" and "chain_model". None is the unchanged path.
+
+    Kernel 2014.6 (batch B13, R16a and R16b; profile flags yard_split and
+    snap_values): `real_split` is the drive's runtime.yard_split.RealSplit. Its
+    completions are fixed in every rung (exactly the real count; pass yards
+    stay 0 for a drive with none), its sack losses are never redrawn
+    (losses_random is False), and with `replay_values` each kind's values are
+    the real drive's own (_draw). The fallbacks of the adopted draw are
+    counted (real_completions_clamped, real_values_fallback_completions,
+    real_values_fallback_runs). None is the unchanged path.
     """
     args = dict(seed=seed, event_id=event_id, drive_no=drive_no, offense=offense, category=category,
                 td_type=td_type, runs=runs, attempts=attempts, sacks=sacks, kneel_yards=kneel_yards, spikes=spikes,
                 pass_yards=pass_yards, rush_free=rush_free, losses=losses, safety_terminal=safety_terminal, net=net,
                 spot=spot, completion_rate=completion_rate, targets=targets, usage_values=usage_values,
-                segment=segment, lost_kind=lost_kind, penalty=penalty)
+                segment=segment, lost_kind=lost_kind, penalty=penalty, real_split=real_split,
+                replay_values=replay_values)
     if fg_down is not None and category == "field_goal_attempt":
         scratch = {}
         held = _drive_layout(term_down=fg_down, diagnostics=scratch, every_tier=True, **args)
@@ -1124,7 +1189,8 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
 def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, attempts, sacks,
                   kneel_yards, spikes, pass_yards, rush_free, losses, safety_terminal, net, spot,
                   completion_rate, targets=None, term_down=None, diagnostics=None, usage_values=None,
-                  every_tier=False, segment=None, lost_kind=None, penalty=None):
+                  every_tier=False, segment=None, lost_kind=None, penalty=None, real_split=None,
+                  replay_values=False):
     """drive_layout's search (docstring there). `every_tier` keeps the
     field-goal terminal down in tiers 2 and 3 as well (W3)."""
     from . import play_detail as pd
@@ -1166,7 +1232,11 @@ def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs,
     )
     usable = attempts - (1 if category == "interception" else 0)
     free_runs = runs - (1 if category == "safety" and safety_terminal and safety_terminal[0] == "run" else 0)
-    losses_random = usable + free_runs > 0
+    losses_random = usable + free_runs > 0 and real_split is None
+    # Batch B13 (R16a): a replayed drive with no completion keeps its passing
+    # yards fixed in every rung.
+    pass_fixed = real_split is not None and real_split.completions <= 0
+    draw_options = {"real": real_split, "replay_values": bool(replay_values and real_split is not None)}
 
     def attempt(kinds, completed, values, n_mov, tier):
         if penalty is not None:
@@ -1248,8 +1318,10 @@ def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs,
     def bump(name):
         diagnostics[name] = diagnostics.get(name, 0) + 1
 
-    def finish(kinds, completed, values, best, plan, how):
+    def finish(kinds, completed, values, best, plan, how, notes=()):
         for name in how:
+            bump(name)
+        for name in notes:
             bump(name)
         if category == "fumble_lost" and lost_kind is not None and terminal != lost_kind:
             bump("fumble_terminal_fallback")
@@ -1280,7 +1352,8 @@ def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs,
                 plan = plans[plan_no]
                 for draw_no in range(DRAWS if plan_no == 0 else ALT_DRAWS):
                     drawn = _draw(rng, pd, category, terminal, runs, attempts, sacks, kneel_yards, spikes,
-                                  plan[0], plan[1], plan[2], safety_terminal, completion_rate, usage_values)
+                                  plan[0], plan[1], plan[2], safety_terminal, completion_rate, usage_values,
+                                  **draw_options)
                     if plan_no == 0:
                         last_draw = drawn
                     best = attempt(*drawn, tier)
@@ -1296,12 +1369,12 @@ def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs,
                             how.append("chain_split_repaired")
                         if option_no:
                             how.append("chain_layout_repaired")
-                        return finish(*drawn[:3], best, plan, how)
+                        return finish(*drawn[:3], best, plan, how, notes=drawn.notes)
                 if plan_no == 0 and tier["alternatives"]:
                     if alternatives is None:
                         alternatives = _alt_plans(rng, pass_yards, rush_free, losses, usable=usable,
                                                   free_runs=free_runs, td_type=td_type,
-                                                  losses_random=losses_random)
+                                                  losses_random=losses_random, pass_fixed=pass_fixed)
                     plans = [kernel_plan] + alternatives
                 plan_no += 1
         # Value repair within kind on the kernel split's last draw (kind
@@ -1349,7 +1422,8 @@ def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs,
                 best = attempt(kinds, completed, values, n_mov, tiers[3])
                 if best is not None:
                     return finish(kinds, completed, values, best, kernel_plan,
-                                  ["chain_layout_inexact", "chain_layout_relaxed", "chain_layout_repaired"])
+                                  ["chain_layout_inexact", "chain_layout_relaxed", "chain_layout_repaired"],
+                                  notes=last_draw.notes)
     # Last rung: the plan enumerated rather than drawn. Every sack-loss
     # combination in the kernel's range when the losses were drawn (the
     # kernel's own losses otherwise), crossed with a one- or two-yard shift
@@ -1365,7 +1439,7 @@ def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs,
             combos = [tuple(rng.randint(3, 10) for _ in losses) for _ in range(LOSS_RUNG_LIMIT)]
     else:
         combos = [tuple(losses)]
-    shifts = (0, 1, -1, 2, -2) if usable and free_runs else (0,)
+    shifts = (0, 1, -1, 2, -2) if usable and free_runs and not pass_fixed else (0,)
     for shift, new_losses in itertools.product(shifts, combos):
         delta = sum(new_losses) - sum(losses)
         if not delta and not shift:
@@ -1378,12 +1452,13 @@ def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs,
             continue
         plan = (p, r, list(new_losses))
         drawn = _draw(rng, pd, category, options[0], runs, attempts, sacks, kneel_yards, spikes,
-                      plan[0], plan[1], plan[2], safety_terminal, completion_rate, usage_values)
+                      plan[0], plan[1], plan[2], safety_terminal, completion_rate, usage_values, **draw_options)
         best = attempt(*drawn, tiers[3])
         if best is not None:
             terminal = options[0]
             return finish(*drawn[:3], best, plan, ["chain_layout_inexact", "chain_layout_relaxed",
-                                                   "chain_split_repaired", "chain_plan_enumerated"])
+                                                   "chain_split_repaired", "chain_plan_enumerated"],
+                          notes=drawn.notes)
     # Final rung (October 1, 2026, defect register item 3): the plan
     # concentrated. A relocated drive whose net far exceeds what its snap
     # count spreads (a real 4-snap punt netting 19 behind a penalty first
@@ -1400,15 +1475,15 @@ def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs,
     # after every plan above failed.
     free_total = pass_yards + rush_free
     concentrated = [kernel_plan]
-    if usable and free_runs:
+    if usable and free_runs and not pass_fixed:
         concentrated += [(free_total, 0, losses), (0, free_total, losses)]
     concentrated += _alt_plans(rng, pass_yards, rush_free, losses, usable=usable, free_runs=free_runs,
-                               td_type=td_type, losses_random=losses_random)
+                               td_type=td_type, losses_random=losses_random, pass_fixed=pass_fixed)
     for plan in concentrated:
         if (td_type == "pass" and plan[0] < 1) or (td_type == "rush" and plan[1] < 1):
             continue
         drawn = _draw(rng, pd, category, options[0], runs, attempts, sacks, kneel_yards, spikes,
-                      plan[0], plan[1], plan[2], safety_terminal, completion_rate, usage_values)
+                      plan[0], plan[1], plan[2], safety_terminal, completion_rate, usage_values, **draw_options)
         kinds, completed, values, n_mov = drawn
         for movable_only in (True, False):
             for values in _concentrate(kinds, completed, list(drawn[2]), n_mov, category, options[0],
@@ -1419,7 +1494,7 @@ def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs,
                     how = ["chain_layout_inexact", "chain_layout_relaxed", "chain_plan_concentrated"]
                     if plan is not kernel_plan:
                         how.append("chain_split_repaired")
-                    return finish(kinds, completed, values, best, plan, how)
+                    return finish(kinds, completed, values, best, plan, how, notes=drawn.notes)
     bump("chain_layout_failed")
     bump("prefix_order_failed")
     kinds, completed, values, n_mov = last_draw

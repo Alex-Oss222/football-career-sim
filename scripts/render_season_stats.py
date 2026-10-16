@@ -13,7 +13,7 @@ if str(ROOT) not in sys.path:
 
 from runtime.bands import (
     KERNEL_2013_6_LABEL, KNOWN_DETECTION_BOUND, LEGACY_LABEL, audit, audit_drive_model, audit_field_position,
-    audit_ball_security, audit_fourth_down, audit_penalties, audit_injuries, audit_scoring, coherence, cohorts, current_cohorts, known_detections, known_status, provisional_detections,
+    audit_ball_security, audit_fourth_down, audit_penalties, audit_injuries, audit_scoring, audit_yardage, coherence, cohorts, current_cohorts, known_detections, known_status, provisional_detections,
 )
 from runtime.calibration_base import cohort_base
 from runtime.stat_tables import (
@@ -579,6 +579,7 @@ def _base_cohort_lines(version, members, empty):
     fourth_games, fourth_rows = audit_fourth_down(members, cohort=version)
     ball_games, ball_rows = audit_ball_security(members, cohort=version)
     penalty_games, penalty_rows = audit_penalties(members, cohort=version)
+    yardage_games, yardage_rows = audit_yardage(members, cohort=version)
     checked, counts = coherence(members, cohort=version)
     sources = ", ".join("`%s`" % pin.path for role, pin in base.files if role != "specification")
     scoring = [
@@ -613,6 +614,15 @@ def _base_cohort_lines(version, members, empty):
         "Each accepted foul is charged to the fouling club; who fouled is a group draw, never evidence, and an "
         "accept or decline is the real record's. The net-yards row is reported, never tuned.", "",
     ] + _band_table(penalty_rows, centre_label=label) + [""] if penalty_rows else []
+    yardage = [
+        "### Yardage rows", "",
+        "The replayed yard split (kernel 2014.6 batch B13): each replayed drive keeps its own real rushing and "
+        "passing yards, completions and sack losses, and its own run and completion values. Centres from the "
+        "base's yardage artifact; yards per carry uses 3*SD/(carries*sqrt(n)) with the artifact's team-game "
+        "residual SD, the completion rate and run share 3*sqrt(phi*p(1-p)/N) with its team-game dispersion, and "
+        "rushing yards 3*SD/sqrt(n). The run-shape rows are graded only on the synthetic all-club acceptance "
+        "samples; on a real cohort they are INFORMATIONAL.", "",
+    ] + _band_table(yardage_rows, centre_label=label) + [""] if yardage_rows else []
     return [
         "## Kernel %s cohort (%s)" % (version, _week_span(members, empty)), "",
         "**Calibration base:** %s (%s). **Team-games audited:** %d. Carry shares exclude "
@@ -633,7 +643,7 @@ def _base_cohort_lines(version, members, empty):
         "The injury calibration's acceptance bands (kernel 2014.4 method): WITHIN when the "
         "observed value lies inside the band; the centre column is the band midpoint and the "
         "tolerance its half-width.", "",
-    ] + _band_table(injury_rows, centre_label="band midpoint") + [""] + scoring + fourth + ball + penalty + [
+    ] + _band_table(injury_rows, centre_label="band midpoint") + [""] + scoring + fourth + ball + penalty + yardage + [
         "### Ledger coherence", "",
         "Zero-tolerance counts from `runtime.play_detail.check_ledger`, checked with this "
         "base's rules. Games checked: %d." % checked, "",

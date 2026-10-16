@@ -229,9 +229,10 @@ class StatbookTests(unittest.TestCase):
             # batch B9 the offensive touchdown's try record (R8), batch B9F
             # the fourth-down decision records and the joined segments, batch
             # B10 the possession's credited scrimmage fumbles, batch B11 its
-            # replayed penalty records' compact summary.
-            self.assertTrue(all(len(row) == 40 for row in receipt["drives"]))
-            self.assertEqual(len(DRIVE_SUMMARY_FIELDS), 40)
+            # replayed penalty records' compact summary, batch B13 its
+            # replayed yard split.
+            self.assertTrue(all(len(row) == 41 for row in receipt["drives"]))
+            self.assertEqual(len(DRIVE_SUMMARY_FIELDS), 41)
         with self.assertRaises(ValueError):
             aggregate_receipts([{**make_receipt(result, week=4, matchup="B at A"), "schema_version": 4}])
         book = aggregate_receipts([make_receipt(result, week=4, matchup="B at A", detail="compact_stats")])

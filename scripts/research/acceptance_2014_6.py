@@ -173,7 +173,13 @@ DIAGNOSTICS = ("chain_layout_failed", "chain_layout_resampled", "chain_layout_re
                # found by fallback, and the layouts laid out without their
                # records (the last fallback)
                "penalty_post_terminal_excluded", "penalty_kick_row_excluded", "penalty_host_fallback",
-               "penalty_layout_dropped", "penalty_records_dropped", "penalty_row_unseated")
+               "penalty_layout_dropped", "penalty_records_dropped", "penalty_row_unseated",
+               # batch B13: the replayed yard split's forced completions and
+               # fallbacks (runtime.yard_split)
+               "relocation_forced_completion", "real_split_terminal_moved", "real_split_rerouted",
+               "real_values_fallback_completions", "real_values_fallback_runs", "real_completions_clamped",
+               "real_losses_fallback", "real_sack_losses_moved", "real_split_unavailable", "real_split_dropped",
+               "chain_plan_concentrated", "chain_plan_enumerated", "chain_split_repaired")
 
 
 def entropy(label):
@@ -773,7 +779,12 @@ def grade(receipts, version, provisional=True):
                      # Batch B10: the ball-security rows.
                      ("ball_security", bands.audit_ball_security),
                      # Batch B11: the penalty rows.
-                     ("penalties", bands.audit_penalties)):
+                     ("penalties", bands.audit_penalties),
+                     # Batch B13 (R16c): the yardage rows; every acceptance
+                     # block is a synthetic all-club sample, so the per-snap
+                     # run shape is graded here (informational on a real
+                     # cohort's audit).
+                     ("yardage", lambda rc, cohort: bands.audit_yardage(rc, cohort=cohort, per_snap_graded=True))):
         team_games, rows = fn(receipts, cohort=version)
         out[name] = {"team_games": team_games,
                      "rows": [[m, o, c, t, bands.known_status((m, o, c, t, s), version, provisional)]

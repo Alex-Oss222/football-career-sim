@@ -20,6 +20,7 @@ from . import scoring_decisions as scoring
 from . import fourth_down as fourth
 from . import ball_security
 from . import penalties as penalty_records
+from . import yard_split
 from .player_evidence import empty_player_stats, normalize_players, observation
 from .profiles import Profile, profile_for
 from .play_detail import (
@@ -309,6 +310,106 @@ def _split_yards(total, weight_pass, weight_rush):
         else:
             rushing += leftover
     return passing, rushing
+
+
+def _yard_split(draw_rng, *, category, start, net, free, kneel_sum, terminal_value, open_sacks, pen_yards,
+                attempts, runs, safety_terminal, td_type, yards_per_attempt, yards_per_carry, scratch, real=None,
+                terminal_kind=None):
+    """Steps 5-6 of a drive's layout: (sack losses, passing yards, free
+    rushing yards, fixed snaps' sum), on `draw_rng` (the possession stream,
+    or a layout-resample stream). Counters go to `scratch` (merged only for
+    the adopted drive).
+
+    Kernel 2014.6 batch B13 (R16a, profile flag yard_split): with `real` (the
+    drive's runtime.yard_split.RealSplit) the open sacks take their real
+    losses, a drive whose sacks alone carry its yardage keeps its real losses
+    moved by the difference the net requires, and the free total is split by
+    yard_split.kind_split (`terminal_kind`: the drive's terminal kind when
+    known). The randint and gauss draws are taken under exactly the
+    conditions of every earlier kernel (placeholders), so the possession
+    stream is unchanged; None is the unchanged split."""
+    # 5. Sack losses (possession stream). With no free snap, the sacks
+    # carry the drive's yardage: their losses are fitted to the net.
+    if free > 0:
+        sack_losses = [draw_rng.randint(3, 10) for _ in range(open_sacks)]
+        if real is not None:
+            # Batch B13 (R16a): the real open-sack losses replace the
+            # placeholder draws (taken above under the same condition).
+            if len(real.losses) == open_sacks:
+                sack_losses = [int(x) for x in real.losses]
+            else:
+                scratch["real_losses_fallback"] = scratch.get("real_losses_fallback", 0) + 1
+        if category == "touchdown" and free == 1 and sum(sack_losses) > 99 - start:
+            # Only fixed snaps precede the scoring snap: their losses must
+            # keep the ball out of the own end zone.
+            while sum(sack_losses) > 99 - start:
+                big = max(range(len(sack_losses)), key=lambda i: (sack_losses[i], -i))
+                sack_losses[big] -= 1
+            scratch["sack_losses_fitted"] = scratch.get("sack_losses_fitted", 0) + 1
+    else:
+        required = kneel_sum + terminal_value - (net - pen_yards)
+        if real is not None and open_sacks and len(real.losses) == open_sacks:
+            # Batch B13 (R16a): the real losses, moved by the difference the
+            # net requires (the installed fit applied to the difference).
+            diff = required - sum(real.losses)
+            base, extra = divmod(diff, open_sacks)
+            sack_losses = [int(x) + base + (1 if i < extra else 0) for i, x in enumerate(real.losses)]
+            if diff:
+                scratch["real_sack_losses_moved"] = scratch.get("real_sack_losses_moved", 0) + 1
+        else:
+            if real is not None and open_sacks:
+                scratch["real_losses_fallback"] = scratch.get("real_losses_fallback", 0) + 1
+            base, extra = divmod(required, open_sacks) if open_sacks else (0, 0)
+            sack_losses = [base + (1 if i < extra else 0) for i in range(open_sacks)]
+        if open_sacks:
+            scratch["sack_losses_fitted"] = scratch.get("sack_losses_fitted", 0) + 1
+    fixed_sum = kneel_sum - sum(sack_losses) + terminal_value + pen_yards
+    free_total = net - fixed_sum
+
+    # 6. Gross passing/rushing yardage over the free snaps.
+    usable = attempts - (1 if category == "interception" else 0)
+    free_runs = runs - (1 if safety_terminal and safety_terminal[0] == "run" else 0)
+    weight_pass = max(0.0, draw_rng.gauss(usable * yards_per_attempt, max(6, usable * 3))) if usable else 0.0
+    weight_rush = max(0.0, draw_rng.gauss(free_runs * yards_per_carry, max(4, free_runs * 2))) if free_runs else 0.0
+    if real is not None:
+        # Batch B13 (R16a): the real drive's own split of its free total
+        # (runtime.yard_split.kind_split); the two gauss weights above are
+        # placeholders only.
+        pass_yards, rush_free, rerouted = yard_split.kind_split(free_total, real, usable=usable,
+                                                                free_runs=free_runs, terminal_kind=terminal_kind)
+        if rerouted:
+            scratch["real_split_rerouted"] = scratch.get("real_split_rerouted", 0) + 1
+    elif usable + free_runs == 0:
+        pass_yards = rush_free = 0
+    elif not usable:
+        pass_yards, rush_free = 0, free_total
+    elif not free_runs:
+        pass_yards, rush_free = free_total, 0
+    else:
+        if weight_pass + weight_rush <= 0:
+            scratch["yard_split_count_fallback"] = scratch.get("yard_split_count_fallback", 0) + 1
+            weight_pass, weight_rush = usable, free_runs
+        pass_yards, rush_free = _split_yards(free_total, weight_pass, weight_rush)
+    if td_type == "pass" and pass_yards < 1 and free_runs:
+        rush_free -= 1 - pass_yards
+        pass_yards = 1
+    elif td_type == "rush" and rush_free < 1 and usable:
+        pass_yards -= 1 - rush_free
+        rush_free = 1
+    if td_type and usable and free_runs:
+        # Feasibility, not calibration: the non-scoring kind's yards plus
+        # the fixed snaps keep the ball in the field before the scoring
+        # snap (running spot in [1, 99]); any excess moves to the scoring
+        # kind, whose total then lies in [1, 99].
+        before = rush_free if td_type == "pass" else pass_yards
+        fitted = min(max(before, start - 99 - fixed_sum), start - 1 - fixed_sum)
+        if fitted != before:
+            scratch["td_split_fitted"] = scratch.get("td_split_fitted", 0) + 1
+            if td_type == "pass":
+                rush_free, pass_yards = fitted, pass_yards + before - fitted
+            else:
+                pass_yards, rush_free = fitted, rush_free + before - fitted
+    return sack_losses, pass_yards, rush_free, fixed_sum
 
 
 def _start_kind(kick_record):
@@ -731,6 +832,18 @@ def _resolve_game(
         raise ValueError("profile %s holds penalty_records on a base without the penalty annotations"
                          % profile.kernel_version)
     pmodel = cbase.penalties() if pen_on else None
+    # Kernel 2014.6 batch B13 (R16a, R16b): the replayed drive's own yard
+    # split (runtime.yard_split): its real rushing and passing yards,
+    # completions and sack losses under yard_split, its real run and
+    # completion values under snap_values (needing yard_split); on the
+    # schema-3 yardage annotations (fails closed otherwise).
+    yard_on = profile.has("yard_split")
+    snap_on = profile.has("snap_values")
+    if snap_on and not yard_on:
+        raise ValueError("profile %s holds snap_values without yard_split" % profile.kernel_version)
+    if yard_on and any(name not in T for name in yard_split.FIELDS):
+        raise ValueError("profile %s holds yard_split on a base without the yardage annotations"
+                         % profile.kernel_version)
 
     teams = {home.team_id: home, away.team_id: away}
     rosters = {home.team_id: home_players, away.team_id: away_players}
@@ -1693,6 +1806,8 @@ def _resolve_game(
         punter = usage.kicking_specialist(off_view, "P", "punt")
         records, segments = [], []
         kinds, completed, values, stamps = [], [], [], []
+        # Batch B13: each laid-out segment's replayed split, in order.
+        real_splits = []
         # Batch B11 (ledger-walk-v2): the joined sequence of snaps and penalty
         # rows, the clauses riding on joined snaps and the joined events.
         seq, att, evs = [], {}, []
@@ -1747,6 +1862,7 @@ def _resolve_game(
         while True:
             sd, lay = seg["drawn"], seg["laid"]["layout"]
             cat, t = sd.category, sd.tuple
+            real_splits.append(seg["laid"].get("real_split"))
             n = len(lay["kinds"])
             charged = (min(seg["timeouts_before"][0], t[T["off_timeouts_used"]] or 0),
                        min(seg["timeouts_before"][1], t[T["def_timeouts_used"]] or 0))
@@ -2057,6 +2173,7 @@ def _resolve_game(
             "clock_plan": {"stamps": list(stamps), "kick": final["kick_stamp"]},
             "last_spike_seconds_left": (spikes_at[-1] - base_clock) if spikes_at else None,
             "fumble_sources": fumble_sources, "fumble_terminal": final.get("lost"),
+            "real_splits": real_splits,
         }
 
     def possess(offense, window, half, spot, start_kind, ot_history=None, ot_label="OT", quarter=None):
@@ -2106,7 +2223,8 @@ def _resolve_game(
         drawn = fpm.draw_drive(rng, spot, draw_half, window, score_diff, edge, diagnostics,
                                           timeouts_before, extra=draw_extra)
 
-        def lay_out(drawn, draw_rng, scratch, start=None, seg_window=None, segment=None, drop_records=False):
+        def lay_out(drawn, draw_rng, scratch, start=None, seg_window=None, segment=None, drop_records=False,
+                    drop_split=False):
             """Steps 4-6b for one drawn drive: its snap counts, the sack
             losses and yard split (on `draw_rng`) and the chain layout (its
             diagnostics in `scratch`, merged only for the adopted drive).
@@ -2116,7 +2234,10 @@ def _resolve_game(
             reads the possession's spot and window, unchanged. Batch B11:
             ``drop_records`` lays the drive out without its replayed records
             (their yards stay in the scrimmage split, as before 2014.6), the
-            last fallback of adopt_layout."""
+            last fallback of adopt_layout. Batch B13: ``drop_split`` lays it
+            out with the installed split (the placeholder draws as its sack
+            losses and split, the uniform allocation), adopt_layout's very
+            last fallback."""
             start = spot if start is None else start
             seg_window = window if seg_window is None else seg_window
             category, row = drawn.category, drawn.tuple
@@ -2151,61 +2272,28 @@ def _resolve_game(
                     scratch.get("penalty_post_terminal_excluded", 0) + len(plan.post)
                 scratch["penalty_kick_row_excluded"] = scratch.get("penalty_kick_row_excluded", 0) + len(plan.kick_row)
 
-            # 5. Sack losses (possession stream). With no free snap, the sacks
-            # carry the drive's yardage: their losses are fitted to the net.
-            if free > 0:
-                sack_losses = [draw_rng.randint(3, 10) for _ in range(open_sacks)]
-                if category == "touchdown" and free == 1 and sum(sack_losses) > 99 - start:
-                    # Only fixed snaps precede the scoring snap: their losses must
-                    # keep the ball out of the own end zone.
-                    while sum(sack_losses) > 99 - start:
-                        big = max(range(len(sack_losses)), key=lambda i: (sack_losses[i], -i))
-                        sack_losses[big] -= 1
-                    scratch["sack_losses_fitted"] = scratch.get("sack_losses_fitted", 0) + 1
-            else:
-                required = kneel_sum + terminal_value - (net - pen_yards)
-                base, extra = divmod(required, open_sacks) if open_sacks else (0, 0)
-                sack_losses = [base + (1 if i < extra else 0) for i in range(open_sacks)]
-                if open_sacks:
-                    scratch["sack_losses_fitted"] = scratch.get("sack_losses_fitted", 0) + 1
-            fixed_sum = kneel_sum - sum(sack_losses) + terminal_value + pen_yards
-            free_total = net - fixed_sum
-
-            # 6. Gross passing/rushing yardage over the free snaps.
-            usable = attempts - (1 if category == "interception" else 0)
-            free_runs = runs - (1 if safety_terminal and safety_terminal[0] == "run" else 0)
-            weight_pass = max(0.0, draw_rng.gauss(usable * yards_per_attempt, max(6, usable * 3))) if usable else 0.0
-            weight_rush = max(0.0, draw_rng.gauss(free_runs * yards_per_carry, max(4, free_runs * 2))) if free_runs else 0.0
-            if usable + free_runs == 0:
-                pass_yards = rush_free = 0
-            elif not usable:
-                pass_yards, rush_free = 0, free_total
-            elif not free_runs:
-                pass_yards, rush_free = free_total, 0
-            else:
-                if weight_pass + weight_rush <= 0:
-                    scratch["yard_split_count_fallback"] = scratch.get("yard_split_count_fallback", 0) + 1
-                    weight_pass, weight_rush = usable, free_runs
-                pass_yards, rush_free = _split_yards(free_total, weight_pass, weight_rush)
-            if td_type == "pass" and pass_yards < 1 and free_runs:
-                rush_free -= 1 - pass_yards
-                pass_yards = 1
-            elif td_type == "rush" and rush_free < 1 and usable:
-                pass_yards -= 1 - rush_free
-                rush_free = 1
-            if td_type and usable and free_runs:
-                # Feasibility, not calibration: the non-scoring kind's yards plus
-                # the fixed snaps keep the ball in the field before the scoring
-                # snap (running spot in [1, 99]); any excess moves to the scoring
-                # kind, whose total then lies in [1, 99].
-                before = rush_free if td_type == "pass" else pass_yards
-                fitted = min(max(before, start - 99 - fixed_sum), start - 1 - fixed_sum)
-                if fitted != before:
-                    scratch["td_split_fitted"] = scratch.get("td_split_fitted", 0) + 1
-                    if td_type == "pass":
-                        rush_free, pass_yards = fitted, pass_yards + before - fitted
-                    else:
-                        pass_yards, rush_free = fitted, rush_free + before - fitted
+            # Batch B10 (R12 layer B): a lost fumble's terminal kind from the
+            # tuple's own lost entry (runtime.ball_security.terminal_kind).
+            lost_kind = (ball_security.terminal_kind(ball_security.lost_entry(fpm.value(row, "fumbles", ())))
+                         if bs_terminal and category == "fumble_lost" else None)
+            # 5-6. Sack losses and the passing/rushing split (possession stream;
+            # _yard_split). Batch B13 (R16a): the replayed drive's own split
+            # under yard_split (runtime.yard_split), the placeholder draws
+            # taken under their exact earlier conditions.
+            real = yard_split.of_tuple(fpm, category, row) if yard_on else None
+            if yard_on and real is None and plays:
+                scratch["real_split_unavailable"] = scratch.get("real_split_unavailable", 0) + 1
+            replay = None if drop_split else real
+            terminal_kind = None
+            if category == "touchdown":
+                terminal_kind = "catch" if td_type == "pass" else "run"
+            elif lost_kind is not None and {"run": runs, "catch": attempts, "sack": sacks}.get(lost_kind, 0) > 0:
+                terminal_kind = lost_kind
+            sack_losses, pass_yards, rush_free, fixed_sum = _yard_split(
+                draw_rng, category=category, start=start, net=net, free=free, kneel_sum=kneel_sum,
+                terminal_value=terminal_value, open_sacks=open_sacks, pen_yards=pen_yards, attempts=attempts,
+                runs=runs, safety_terminal=safety_terminal, td_type=td_type, yards_per_attempt=yards_per_attempt,
+                yards_per_carry=yards_per_carry, scratch=scratch, real=replay, terminal_kind=terminal_kind)
 
             # 6b. Kernel 2014.4 (defect register item 3): the drive's ordered
             # snaps and their chain walk, on the kernel-owned chain-layout stream
@@ -2222,21 +2310,33 @@ def _resolve_game(
                 # Batch B6 (W3): the kick comes on fourth down in every tier;
                 # the closable last fallback admits the real down, counted.
                 fg_down = 4
-            # Batch B10 (R12 layer B): a lost fumble's terminal kind from the
-            # tuple's own lost entry (runtime.ball_security.terminal_kind).
-            lost_kind = (ball_security.terminal_kind(ball_security.lost_entry(fpm.value(row, "fumbles", ())))
-                         if bs_terminal and category == "fumble_lost" else None)
             layout = chain_walk.drive_layout(
                 seed=seed, event_id=event_id, drive_no=drive_no, offense=offense, category=category,
                 td_type=td_type, runs=runs, attempts=attempts, sacks=sacks, kneel_yards=kneel_yards,
                 spikes=spikes, pass_yards=pass_yards, rush_free=rush_free, losses=sack_losses,
                 safety_terminal=safety_terminal, net=net, spot=start, completion_rate=completion_rate,
                 targets=list(row[T["chains"]]), term_down=row[T["term_down"]], diagnostics=scratch,
-                usage_values=usage_values, fg_down=fg_down, segment=segment, lost_kind=lost_kind, penalty=plan)
+                usage_values=usage_values, fg_down=fg_down, segment=segment, lost_kind=lost_kind, penalty=plan,
+                real_split=replay, replay_values=snap_on)
+            real_record = None
+            if yard_on:
+                # Batch B13: the drive's replayed split as published, with the
+                # completions the layout forced and a moved terminal counted
+                # (merged for the adopted drive only); a drive the last
+                # fallback laid out with the installed split is marked.
+                real_record = yard_split.segment_record(real, layout)
+                if real_record is not None and drop_split:
+                    real_record["dropped"] = True
+                elif real_record is not None:
+                    if real_record["forced"]:
+                        scratch["relocation_forced_completion"] = (scratch.get("relocation_forced_completion", 0)
+                                                                   + real_record["forced"])
+                    if real_record["terminal_moved"]:
+                        scratch["real_split_terminal_moved"] = scratch.get("real_split_terminal_moved", 0) + 1
             return dict(net=net, end_spot=end_spot, plays=plays, runs=runs, attempts=attempts, sacks=sacks,
                         kneel_yards=kneel_yards, spikes=spikes, td_type=td_type, turnover_type=turnover_type,
                         kneel_sum=kneel_sum, terminal_value=terminal_value, safety_terminal=safety_terminal,
-                        layout=layout, dropped=dropped)
+                        layout=layout, dropped=dropped, real_split=real_record)
 
         def adopt_layout(drawn, start, seg_window, segment=None, seg_timeouts=None):
             """(drawn, laid, layout resample) of one drawn drive. When no plan
@@ -2285,7 +2385,7 @@ def _resolve_game(
                             diagnostics.get("chain_layout_resample_widened", 0) + 1
                     return out
 
-                def resample(extra, drop_records=False):
+                def resample(extra, drop_records=False, drop_split=False):
                     """The first alternative of the rung (on the drive's
                     layout-resample stream) whose layout is legal."""
                     tried = [original.tuple]
@@ -2298,7 +2398,7 @@ def _resolve_game(
                         tried.append(alt.tuple)
                         alt_scratch = {}
                         candidate = lay_out(alt, resample_rng, alt_scratch, start, seg_window, segment,
-                                            drop_records=drop_records)
+                                            drop_records=drop_records, drop_split=drop_split)
                         if candidate["layout"]["ok"]:
                             return alt, candidate, alt_scratch, attempt
                     return None
@@ -2329,6 +2429,27 @@ def _resolve_game(
                         diagnostics["penalty_records_dropped"] = (diagnostics.get("penalty_records_dropped", 0)
                                                                   + laid["dropped"])
                         diagnostics["penalty_layout_dropped"] = diagnostics.get("penalty_layout_dropped", 0) + 1
+                if yard_on and not laid["layout"]["ok"]:
+                    # Batch B13, the very last fallbacks: a drive whose real
+                    # split admits no legal layout from this spot and whose
+                    # rung holds no other drive that does (fixed real sack
+                    # losses and completions with yardage the replay does not
+                    # carry) is laid out with the installed split, then a
+                    # resample of the rung the same way; on the same
+                    # layout-resample stream, counted (real_split_dropped).
+                    split_scratch = {}
+                    candidate = lay_out(original, resample_rng, split_scratch, start, seg_window, segment,
+                                        drop_split=True)
+                    if candidate["layout"]["ok"]:
+                        drawn, laid, scratch = original, candidate, split_scratch
+                    else:
+                        found = resample(draw_extra, drop_split=True)
+                        if found is not None:
+                            drawn, laid, scratch, attempt = found
+                            layout_resample = dict(record_of(drawn, attempt), real_split_dropped=True)
+                            diagnostics["chain_layout_resampled"] += 1
+                    if laid["layout"]["ok"]:
+                        diagnostics["real_split_dropped"] = diagnostics.get("real_split_dropped", 0) + 1
                 if layout_resample is None and not laid["layout"]["ok"]:
                     diagnostics["chain_layout_resample_exhausted"] += 1
             for name, count in scratch.items():
@@ -2958,6 +3079,15 @@ def _resolve_game(
             record["fourth_downs"] = joined["records"] if joined is not None else []
             if modified:
                 record["segments"] = joined["segments"]
+        if yard_on:
+            # Batch B13 (append-only): each laid-out drive's replayed split
+            # (one per segment of a joined possession; runtime.yard_split
+            # segment_record), and the possession's published non-kneel runs
+            # by yards and its long completions, so a compact receipt grades
+            # the per-snap shape like the result.
+            run_bins, long_completions = yard_split.published(layout["kinds"], layout["completed"], layout["values"])
+            record["real_split"] = {"segments": joined["real_splits"] if modified else [laid.get("real_split")],
+                                    "runs": run_bins, "completions_20": long_completions}
         if regimes_v3 and spikes:
             # Kernel 2014.6 (append-only): the window seconds left at the
             # drive's last spike (the R14 spike rule's quantity).
@@ -3210,6 +3340,10 @@ def _resolve_game(
         # Batch B11 (append-only): the penalty records resolved the game (the
         # audit and band rows read the marker).
         result["penalties"] = {"model": penalty_records.MODEL, "chain_model": chain_walk.CHAIN_MODEL_V2}
+    if yard_on:
+        # Batch B13 (append-only): the replayed yard split resolved the game
+        # (the band rows read the marker).
+        result["yardage"] = {"model": yard_split.MODEL, "snap_values": snap_on}
     blocks = {team.team_id: {kind: json.loads(json.dumps(getattr(team, field)))
                              for field, kind in (("try_policy", "two_point"), ("kickoff_policy", "kickoff"),
                                                  ("fourth_down_policy", "fourth_down"))
