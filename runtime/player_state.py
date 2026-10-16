@@ -5,7 +5,9 @@ Policy: runtime/2014_engine_decisions.md (Stone's player policy, October 2,
 (section 4, Player states). Data (batch B4b, data only until this batch):
 
 * library/data/2010_2014_player_state_model.json: the fitted model (families,
-  adopted swing parameters sb2, su2, rho, tau; feedback weights);
+  adopted swing parameters sb2, su2, rho, tau; the applied aging curves; the
+  drawn-tier cut points; feedback weights), built with U5's rules (Stone,
+  October 16, 2026: amendments 2 and 3 as the specification writes them);
 * library/data/2014_player_state_public.json: the public table, one row per
   gsis id of the branch identity table, with the record family, basis, the
   expectation (m_b persistent, m_u swing) and its covariance P = [Pbb, Pbu,
@@ -36,9 +38,17 @@ carries with rho and renews with tau). A slot whose factor is 0 is not drawn
 (sigma 0 consumes nothing). The latent value a lineup slot reads is
 (m_b + m_u + deviation) / sqrt(sb2 + su2), the family's true-state SD units,
 the same unit the strength v4 fit used for its E-value composites
-(library/data/2014_strength_calibration_v4.json). A held family (LB under U5),
-a family with no spread and a no-state row (offensive linemen, long snappers)
-read 0 and draw nothing.
+(library/data/2014_strength_calibration_v4.json). A family with no spread and
+a no-state row (offensive linemen, long snappers) read 0 and draw nothing;
+since U5 no family is held (linebackers carry pass 1's swing set).
+
+Drawn tier (U5, amendment 3). A drawn player's tier is his drawn value
+against his family's cut points (the model's `tiers`: quantiles of the tier
+population's 2014 drawn-value distribution at the production file's
+percentile cuts); a family without cut points reads Average. It exists only
+inside the private TeamInput copy apply_latent returns (`drawn_tier`), next
+to `latent_value`, and is what the attribution tilt (runtime/usage.py) reads
+under this model; no-state players read Average there.
 
 Boundary. These values are hidden-state statistical priors for the engine
 only: never scouting evidence, never a staff-facing grade, and no staff
@@ -143,6 +153,28 @@ def family_scale(family):
     if p is None or p["held"]:
         return 0.0
     return math.sqrt(max(p["sb2"] + p["su2"], 0.0))
+
+
+TIER_ORDER = ("Replacement-Level", "Below-Average", "Average", "Plus", "Elite")
+
+
+def tier_cuts(family):
+    """The family's drawn-tier cut points (ascending, SD units) or None."""
+    block = ((model().get("tiers") or {}).get("families") or {}).get(family) or {}
+    cuts = block.get("cuts")
+    return [float(c) for c in cuts] if cuts else None
+
+
+def drawn_tier(family, value):
+    """The five-tier label of a drawn value in its family (the builder's tier_of rule: Replacement-Level at or
+    below the lowest cut, Elite above the highest); Average without cut points."""
+    cuts = tier_cuts(family)
+    if not cuts:
+        return "Average"
+    for name, cut in zip(TIER_ORDER, cuts):
+        if float(value) <= cut:
+            return name
+    return TIER_ORDER[-1]
 
 
 def has_state(row):
@@ -383,9 +415,9 @@ def requires_draws(*teams):
 
 def apply_latent(team, draws):
     """A deep copy of a TeamInput whose player-state record carries each
-    drawn player's latent value (`latent_value`, SD units). `draws` maps key
-    text to z hex. A TeamInput without a player-state record is returned
-    unchanged (no copy)."""
+    drawn player's latent value (`latent_value`, SD units) and drawn tier
+    (`drawn_tier`). `draws` maps key text to z hex. A TeamInput without a
+    player-state record is returned unchanged (no copy)."""
     record = getattr(team, "strength", None)
     if not record or record.get("model") != DERIVATION:
         return team
@@ -401,6 +433,7 @@ def apply_latent(team, draws):
         if not row:
             raise PlayerStateError("public state missing for %s" % pid)
         player["latent_value"] = latent_value(player["gsis_id"], row, z, year, base)
+        player["drawn_tier"] = drawn_tier(row["record_family"], player["latent_value"])
     return replace(team, strength=record)
 
 

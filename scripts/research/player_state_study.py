@@ -1,4 +1,4 @@
-"""Renders library/2010_2014_player_state_study.md from the player-state model (kernel 2014.6, batch B4b).
+"""Renders library/2010_2014_player_state_study.md from the player-state model (kernel 2014.6, batches B4b and U5).
 
 Every number in the study comes from library/data/2010_2014_player_state_model.json or the
 public table; nothing is typed. Called by build_2010_2014_player_state_model.py, whose --check
@@ -17,11 +17,17 @@ def _cap(text):
     return text[:1].upper() + text[1:]
 
 
+def _coef(fit, d=3):
+    if not fit or not fit.get("estimable") or not fit.get("beta"):
+        return "-"
+    return ", ".join("%s (%s)" % (_f(b, d), _f(s, 2)) for b, s in zip(fit["beta"], fit["se"]))
+
+
 def render(model, public, _previous=None):
     fams = model["families"]
     L = []
     w = L.append
-    w("# 2010-2014 player-state study (kernel 2014.6, batch B4b)")
+    w("# 2010-2014 player-state study (kernel 2014.6, batches B4b and U5)")
     w("")
     w("[Engine decisions](../runtime/2014_engine_decisions.md#kernel-20146-decisions-dated) · "
       "[Pre-build specification](2014_6_pre_build_specification.md) · [Strength studies](2014_strength_calibration.md)")
@@ -32,8 +38,10 @@ def render(model, public, _previous=None):
       "`scripts/research/verify_2010_2014_player_state_model.py` (pass 2); both have `--check`. Machine records: "
       "[`data/2010_2014_player_state_model.json`](data/2010_2014_player_state_model.json), "
       "[`data/2014_player_state_public.json`](data/2014_player_state_public.json) and "
-      "[`data/2014_player_state_manifest.json`](data/2014_player_state_manifest.json). Nothing in the runtime reads "
-      "them until batch B7, and no game has used them.")
+      "[`data/2014_player_state_manifest.json`](data/2014_player_state_manifest.json). Batch B7 (October 3, 2026) "
+      "wired them into the runtime behind `PROFILE_2014_6` (`runtime/player_state.py`, `runtime/strength.py` model "
+      "player-state-v1; runtime/README.md, batch B7); no game has used them, and none can until the release and the "
+      "league year's bind.")
     w("")
     w("**Boundary.** %s. A real player's own 2013-2014 statistics never set his own value: the public table is built "
       "from each player's 2010-2012 lines only, and 2013 and 2014 Weeks 1-4 enter the pooled fits as an anonymous "
@@ -41,8 +49,9 @@ def render(model, public, _previous=None):
       "by the private service from batch B7, and no one sees it." % _cap(model["boundary"]))
     w("")
     u5 = model["u5"]
-    w("**U5 is unanswered, so this build uses the fallback.** %s. Held, never replaced: %s." % (
-        _cap(u5["effect"]), ", ".join(u5["held"])))
+    w("**U5 accepted (%s).** Stone's answer: \"%s\" ([decision record](../runtime/2014_engine_decisions.md)). The "
+      "specification's rules conditional on U5 apply as written: %s. Decision D1: \"%s\". %s." % (
+          u5["date"], u5["answer"], ", ".join(u5["applied"]), u5["d1"], _cap(u5["effect"])))
     w("")
     w("## 1. Families, metrics and floors")
     w("")
@@ -58,7 +67,8 @@ def render(model, public, _previous=None):
     w("")
     w("Lag-k covariance C_k = sb2 + rho^k su2 over lags 0-4 (the 2013-to-2014 Weeks 1-4 pair held out), fitted on a "
       "0.01 grid of rho. Kept only if su2's bootstrap 95%% interval (%d resamples of players) excludes 0 in both passes; "
-      "size from pass 1 when pass 2's point lies inside pass 1's interval, otherwise the smaller." %
+      "size from pass 1 when pass 2's point lies inside pass 1's interval, otherwise the smaller. For DL and LB "
+      "amendment 3 (U5) takes pass 1's set: kept when pass 1's interval excludes 0, at pass 1's size and carry." %
       fams["QB"]["pass1"]["bootstrap"]["resamples"])
     w("")
     w("| Family | Pass 1 sb2 | Pass 1 su2 | Pass 1 rho | Pass 1 su2 interval | Pass 2 su2 | Pass 2 rho | Pass 2 su2 "
@@ -67,17 +77,11 @@ def render(model, public, _previous=None):
     second = model["second_pass"]["families"]
     for k, b in fams.items():
         p1, p2, a = b["pass1"], second[k]["fit"], b["adopted"]
-        status = a["status"] + ("; **held (U5)**" if a.get("held") else "")
         w("| %s | %s | %s | %s | %s to %s | %s | %s | %s to %s | %s | %s | %s | %s | %s |" % (
             k, _f(p1["sb2"]), _f(p1["su2"]), _f(p1["rho"], 2), _f(p1["bootstrap"]["su2_interval"][0]),
             _f(p1["bootstrap"]["su2_interval"][1]), _f(p2["su2"]), _f(p2["rho"], 2),
-            _f(p2["bootstrap"]["su2_interval"][0]), _f(p2["bootstrap"]["su2_interval"][1]), status,
-            "-" if a.get("held") else _f(a["sb2"]), "-" if a.get("held") else _f(a["su2"]),
-            "-" if a.get("held") else _f(a["rho"], 2), "-" if a.get("held") else _f(a["tau"])))
-    w("")
-    for k, b in fams.items():
-        if b["adopted"].get("held"):
-            w("- **%s held.** %s" % (k, b["adopted"]["held_reason"]))
+            _f(p2["bootstrap"]["su2_interval"][0]), _f(p2["bootstrap"]["su2_interval"][1]), a["status"],
+            _f(a["sb2"]), _f(a["su2"]), _f(a["rho"], 2), _f(a["tau"])))
     w("")
     w("A family whose swing is not kept carries no once-per-season draw; its persistent spread is the same least-squares "
       "fit with su2 fixed at 0 (every lag moment pooled). Fitted against empirical lag moments (the AR(1) fit's "
@@ -89,46 +93,107 @@ def render(model, public, _previous=None):
         w("| %s | %s |" % (k, " | ".join("%s / %s (%d)" % (_f(m["moment"]), _f(m["fitted"]), m["terms"])
                                        for m in b["pass1"]["lag_moments"])))
     w("")
-    w("## 3. Draft-slot starting estimates (flat under the U5 fallback)")
+    ag = model["aging"]
+    w("## 3. Aging (amendments 2 and 3; decision D1)")
+    w("")
+    w("Rule: %s. Age is measured on September 1 of season t, centred at %s; experience 0 and 1 are the first and "
+      "second seasons since the class (an undrafted player first rostered in 2010 has no known experience). Pairs: %s." % (
+          ag["rule"], ag["age_centre"], ", ".join(ag["pairs"])))
+    w("")
+    w("**Per family** (pass 1 leave-one-season-pair-out weighted SSE; pass 2 BIC; a candidate eligible only if it beats "
+      "Z in both):")
+    w("")
+    w("| Family | Rows (pass 1, pass 2) | Z SSE / BIC | C SSE / BIC | M1 SSE / BIC | M2 SSE / BIC | Beats Z: pass 1; "
+      "pass 2 | Per-family result |")
+    w("|---|---|---|---|---|---|---|---|")
+    for k, a in ag["families"].items():
+        r = a["rule"]
+        cells = []
+        for c in ("Z", "C", "M1", "M2"):
+            f1, f2 = a["pass1"][c], a["pass2"][c]
+            cells.append("%s / %s" % (_f(f1.get("loo_sse"), 5), _f(f2.get("bic"), 5)))
+        w("| %s | %d, %d | %s | %s; %s | %s |" % (k, a["rows"][0], a["rows"][1], " | ".join(cells),
+                                                ", ".join(r.get("beats_z_pass1") or []) or "none",
+                                                ", ".join(r.get("beats_z_pass2") or []) or "none", r["adopted"]))
+    w("")
+    p = ag["pooled"]
+    w("**Pooled across the non-specialist families** (%s; %s; rows %d and %d): %s." % (
+        ", ".join(p["families"]), p["unit"], p["rows"][0], p["rows"][1], p["disclosure"]))
+    w("")
+    w("| Candidate | Pass 1 SSE | Pass 2 BIC | Pass 1 coefficients (SE) | Pass 2 coefficients (SE) |")
+    w("|---|---:|---:|---|---|")
+    for c in ("Z", "C", "M1", "M2"):
+        f1, f2 = p["pass1"][c], p["pass2"][c]
+        w("| %s | %s | %s | %s | %s |" % (c, _f(f1.get("loo_sse"), 6), _f(f2.get("bic"), 6), _coef(f1, 4),
+                                         _coef(f2, 4)))
+    w("")
+    w("Pooled result: **%s** (%s)." % (p["rule"]["adopted"], p["rule"]["why"]))
+    w("")
+    w("**Applied curves** (the one-step change of the persistent part, family units = scale x terms . coefficients):")
+    w("")
+    w("| Family | Curve | Source | Terms | Coefficients | Scale | Status |")
+    w("|---|---|---|---|---|---:|---|")
+    for k, b in fams.items():
+        a = b["aging"]
+        w("| %s | %s | %s | %s | %s | %s | %s |" % (
+            k, a["label"], a["source"], ", ".join(a.get("terms") or []) or "-",
+            ", ".join(_f(x, 4) for x in a.get("beta") or []) or "-", _f(a.get("scale")), a.get("status", "-")))
+    rd = ag["residual_after_application"]
+    w("")
+    w("Check: the pooled candidate refitted on the forecast residuals with the applied curves (%s rows) reads %s "
+      "(before: %s); the curve corrects the one-step forecast it was fitted on, applied after each player's last line." % (
+          rd.get("rows", "-"), ", ".join(_f(x, 3) for x in rd.get("beta_after") or []) or "-",
+          ", ".join(_f(x, 4) for x in rd.get("beta_before") or []) or "-"))
+    w("")
+    w("## 4. Draft-slot starting estimates")
     w("")
     w("First and second seasons above the floor; each player's own class left out when his prior is formed; the real "
-      "selection slot or undrafted status for every club, Jacksonville's included (U4). The log-pick slope is fitted "
-      "and reported, and applied at 0.")
+      "selection slot or undrafted status for every club, Jacksonville's included (U4). The log-pick slope is kept only "
+      "if its leave-one-class-out skill is above 0 in both passes and it is negative in both (U5), on at least 30 "
+      "drafted lines.")
     w("")
-    w("| Family | Drafted mean (SE, lines) | Undrafted mean (SE, lines) | Fitted log-pick slope (SE) | Applied |")
-    w("|---|---|---|---|---|")
+    w("| Family | Drafted mean (SE, lines) | Undrafted mean (SE, lines) | Pass 1 slope (SE, lines, skill) | Pass 2 slope "
+      "(lines, skill) | Slope | Drafted cell | Undrafted cell |")
+    w("|---|---|---|---|---|---|---|---|")
     for k, b in fams.items():
         d = b["draft_priors"]
+        d2 = second[k]["draft_priors"]
+        rule = d["rule"]
 
         def cell(s):
             return "-" if not s else "%s (%s, %d)" % (_f(s["mean"]), _f(s["se"], 2), s["lines"])
-        sl = d["log_pick_slope"]
-        w("| %s | %s | %s | %s | %s |" % (k, cell(d["drafted"]["all"]), cell(d["undrafted"]["all"]),
-                                         "-" if sl["slope"] is None else "%s (%s)" % (_f(sl["slope"]), _f(sl["se"], 2)),
-                                         _f(sl["applied"])))
+        s1, s2 = d["log_pick_slope"], d2["log_pick_slope"]
+        w("| %s | %s | %s | %s | %s | %s | %s | %s |" % (
+            k, cell(d["drafted"]["all"]), cell(d["undrafted"]["all"]),
+            "-" if s1["slope"] is None else "%s (%s, %d, %s)" % (_f(s1["slope"]), _f(s1["se"], 2), s1["lines"],
+                                                                 _f(s1["loo_class_skill"], 3)),
+            "-" if s2["slope"] is None else "%s (%d, %s)" % (_f(s2["slope"]), s2["lines"], _f(s2["loo_class_skill"], 3)),
+            ("kept" if rule["slope"] else "not kept") + ": " + rule["slope_why"], rule["drafted"], rule["undrafted"]))
     w("")
-    w("Cells under the amendment-3 minimum of 30 are flagged, not merged (the rule is held): %s." % "; ".join(
+    w("**The 30-event minimum cell (U5).** A fitted cell under 30 raw events is not fitted on its own: %s." % "; ".join(
         "%s: %s" % (k, ", ".join(b["below_min_cell"])) for k, b in fams.items() if b["below_min_cell"]))
     w("")
-    w("## 4. Honours as a pseudo-observation")
+    w("## 5. Honours as a pseudo-observation")
     w("")
     w("An admissible honour (AP All-Pro first or second team, or an original Pro Bowl, public before the cutoff) is "
       "one more observation of that season's state, split between the persistent and swing parts by the Kalman gain: "
       "its value is the family's mean among honoured qualifier seasons and its variance their true-state dispersion "
-      "over the evidence weight (1.0 Confirmed two-pass, 0.5 Single-pass).")
+      "over the evidence weight (1.0 Confirmed two-pass, 0.5 Single-pass). A cell under 30 honoured seasons enters no "
+      "pseudo-observation; honours stay runtime floors.")
     w("")
-    w("| Family | Honoured seasons | Mean | True-state variance |")
-    w("|---|---:|---:|---:|")
+    w("| Family | Honoured seasons | Mean | True-state variance | Used |")
+    w("|---|---:|---:|---:|---|")
     for k, b in fams.items():
         c = b["honour_cell"]
-        w("| %s | %s | %s | %s |" % (k, c["seasons"] if c else "-", _f(c["mean"]) if c else "no estimable cell",
-                                     _f(c["true_var"]) if c else "-"))
+        est = c is not None and "mean" in c
+        w("| %s | %s | %s | %s | %s |" % (k, c["seasons"] if c else "-", _f(c["mean"]) if est else "no estimable cell",
+                                          _f(c["true_var"]) if est else "-", "yes" if b["honour_cell_used"] else "no"))
     w("")
-    w("## 5. Checks")
+    w("## 6. Checks")
     w("")
     w("**Forecast calibration on the held-out pair** (each qualifying 2014 Weeks 1-4 line forecast from the player's "
-      "lines through 2013; z = error over the forecast's own SD; within 2 SE means |mean z| and |var z - 1| inside "
-      "two standard errors):")
+      "lines through 2013 under the applied curve; z = error over the forecast's own SD; within 2 SE means |mean z| "
+      "and |var z - 1| inside two standard errors):")
     w("")
     w("| Family | Players | Mean z (SE) | Var z (SE) | Status |")
     w("|---|---:|---|---|---|")
@@ -157,7 +222,7 @@ def render(model, public, _previous=None):
         w("| %s | %s | %s | %s | %s |" % (
             k, " / ".join(_f(v["centre"]) for _, v in sorted(dr["levels"].items())),
             "-" if lh["cochran_q"] is None else "%s (%d), %s" % (_f(lh["cochran_q"], 3), lh["df"], _f(lh["p"], 2)),
-            "; ".join("%s %s (%s)" % (p, _f(v["covariance"]), _f(v["se"], 2)) for p, v in sorted(dr["lag1_pairs"].items())),
+            "; ".join("%s %s (%s)" % (p_, _f(v["covariance"]), _f(v["se"], 2)) for p_, v in sorted(dr["lag1_pairs"].items())),
             "-" if h["cochran_q"] is None else "%s (%d), %s" % (_f(h["cochran_q"], 3), h["df"], _f(h["p"], 2))))
     w("")
     w("**Self-influence** (a player's own 2013-2014 rows removed from the moment sums, his 2014 expectation "
@@ -173,9 +238,29 @@ def render(model, public, _previous=None):
         else:
             w("| %s | - | - | - | - | %s |" % (k, s.get("status") or s.get("note") or "-"))
     w("")
-    w("**Tiers:** %s (%s)." % (model["tiers"]["status"], model["tiers"]["why"]))
+    t = model["tiers"]
+    w("## 7. Drawn tiers (amendment 3)")
     w("")
-    w("## 6. Feedback (D): fitted, applied at 0 in 2014")
+    w("%s. Population: %s. The tier exists only privately at runtime, from the drawn value; no file holds one." % (
+        _cap(t["rule"]), t["population_rule"]))
+    w("")
+    w("| Family | Floor | Population | Cut points (SD units, at the shares below) | Synthetic check (%s references): "
+      "shares against targets | Within 2 SE | Chi-square (df), p |" % model["tiers"]["families"]["QB"].get(
+          "check", {}).get("references", "-"))
+    w("|---|---:|---:|---|---|---|---|")
+    for k, b in t["families"].items():
+        if not b.get("cuts"):
+            w("| %s | %s | %d | - (%s) | - | - | - |" % (k, b["floor"], b["population"], b.get("note", "-")))
+            continue
+        c = b["check"]
+        w("| %s | %s | %d | %s | %s | %s | %s (%d), %s |" % (
+            k, b["floor"], b["population"], ", ".join("%s at %s" % (_f(x, 3), _f(q, 2)) for x, q in zip(
+                b["cuts"], b["shares_below"])),
+            "; ".join("%s %s / %s" % (r["tier"], _f(r["share"], 3), _f(r["target"], 2)) for r in c["tiers"]),
+            "yes" if c["within"] else "no: " + ", ".join(r["tier"] for r in c["tiers"] if not r["within"]),
+            _f(c["chi_square"], 3), c["df"], _f(c["p"], 2)))
+    w("")
+    w("## 8. Feedback (D): fitted, applied at 0 in 2014")
     w("")
     fb = model["feedback"]
     w("Outcome: %s. Snaps carry weight %s (no public 2010-2012 snap counts). Role is applied at %s for the 2015 "
@@ -195,32 +280,42 @@ def render(model, public, _previous=None):
     w("In real data a role change partly reflects coaches' information about talent, not development caused by playing "
       "time; applying it causally would be Stone's policy, not something this fit establishes.")
     w("")
-    w("## 7. The 2014 public table")
+    w("## 9. The 2014 public table")
     w("")
     cov = public["coverage"]
     w("Rows for every player in the [branch identity table](../career/2014/League/personnel/branch_identity.json), "
       "keyed by gsis id, with no club field: record family, basis, m_b, m_u, P = [Pbb, Pbu, Puu], the honours lift, "
-      "the age on September 1, 2014 (recorded, unused under Z aging), class and real selection slot, and the 2010-2012 source rows. Bases: %s." %
-      ", ".join("%s %d" % kv for kv in sorted(cov.items())))
+      "the age on September 1, 2014, the applied aging curve, class and real selection slot, and the 2010-2012 source "
+      "rows. Bases: %s." % ", ".join("%s %d" % kv for kv in sorted(cov.items())))
     w("")
-    w("- record: carried from his own 2010-2012 lines; draft or undrafted: the flat starting estimate for his class "
-      "(his own class left out); population: a veteran entering before 2010 with no line, N(0, diag(sb2, su2)); "
-      "held: a family held under U5; no_state: offensive linemen, long snappers and players with no family.")
+    w("- record: carried from his own 2010-2012 lines, with the applied aging curve over the forecast horizon; draft "
+      "or undrafted: the starting estimate for his class (his own class left out) by the family's rookie rule; "
+      "population: a veteran entering before 2010 with no line, or a rookie of a family with fewer than 30 rookie "
+      "lines, N(0, diag(sb2, su2)); no_state: offensive linemen, long snappers and players with no family.")
     w("- The table is append-only for later entrants; once batch B7 binds the season, an edit to an existing row is "
       "refused.")
     w("")
-    w("## 8. Honest limits")
+    w("## 10. Honest limits")
     w("")
     w("- Five seasons, one of them four weeks long, identify the persistent-versus-swing split weakly; the bootstrap "
-      "intervals say so family by family.")
+      "intervals say so family by family. The DL and LB sets are pass 1's under amendment 3, not confirmed two-pass.")
+    pooled_rows = sum(ag["families"][k]["rows"][0] for k in p["families"])
+    defensive = sum(ag["families"][k]["rows"][0] for k in ("DL", "LB", "DB") if k in p["families"])
+    w("- The DL, LB and DB families hold %d of the pooled set's %d pass-1 rows, and their disruption metric counts "
+      "games with a recorded statistic: part of a young defender's rise can be a growing role, not ability alone. "
+      "Under D1 every non-specialist family uses the pooled curve when it is kept, whatever its own fit read "
+      "(section 3)." % (defensive, pooled_rows))
+    w("- The curve corrects a one-step forecast; the 2014 expectation of a player last seen in 2012 composes two "
+      "steps (ages in 2012 and 2013), an extrapolation of a one-step fit.")
     w("- Survivorship and selection on opportunity remain: players who leave are unobserved, and a rookie prior "
       "describes a rookie who reaches the floor.")
     w("- An honour pulls a player toward the honoured group's mean, so for a player already estimated above that mean "
       "the honours lift is negative; the runtime's honour floor (batch B7) is a separate rule.")
-    w("- Undrafted rookie cells are small in several families (section 3); with the minimum-cell rule held, their "
-      "means stand as computed, with their standard errors.")
-    w("- The disruption metric counts games with a recorded statistic, not snaps; the noise moment and the floors are "
-      "per game.")
+    kept = [(k, min(b["draft_priors"]["log_pick_slope"]["loo_class_skill"],
+                    second[k]["draft_priors"]["log_pick_slope"]["loo_class_skill"]))
+            for k, b in fams.items() if b["draft_priors"]["rule"]["slope"]]
+    w("- A kept draft-slot slope's smaller leave-one-class-out skill across the two passes: %s; a small positive "
+      "skill passes the rule as written." % (", ".join("%s %s" % (k, _f(v, 3)) for k, v in kept) or "none"))
     w("- These are priors on a hidden engine value. They are not scouting evidence, not a grade and not a forecast "
       "of any real player's 2014 season.")
     return "\n".join(L) + "\n"

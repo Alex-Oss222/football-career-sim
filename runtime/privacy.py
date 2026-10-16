@@ -4,9 +4,10 @@ Under strength model player-state-v1 each player's value is a private draw.
 The kernel publishes no per-possession strength block, so no public record of
 a kernel 2014.6 or later game may carry one: receipts (regular, postseason,
 preseason), paused records (paused_game.json) and weekly results caches
-(.sim_cache). No `attribution_tier` may appear outside library/data (the
-honours-production rule's tier travels only inside the private TeamInput
-record). Scoped so the model and evidence files under library/data are never
+(.sim_cache). No `attribution_tier`, `drawn_tier` or `latent_value` may
+appear outside library/data (the tiers and drawn values travel only inside
+the private TeamInput record; the drawn ones only in apply_latent's copy).
+Scoped so the model and evidence files under library/data are never
 rejected. Audits of earlier kernels are untouched: their receipts never held
 the block either, and their TeamInputs are not committed.
 """
@@ -79,6 +80,8 @@ def privacy_errors(root=ROOT):
                 if blocks:
                     errors.append("%s publishes a possession strength block under kernel %s (%s)"
                                   % (rel, record.get("kernel_version"), blocks[0]))
-        if _has_key(data, "attribution_tier"):
-            errors.append("%s carries an attribution tier outside library/data" % rel)
+        for key, what in (("attribution_tier", "an attribution tier"), ("drawn_tier", "a drawn tier"),
+                          ("latent_value", "a drawn player value")):
+            if _has_key(data, key):
+                errors.append("%s carries %s outside library/data" % (rel, what))
     return errors

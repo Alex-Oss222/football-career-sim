@@ -20,7 +20,7 @@ shared.
 
 --check recomputes pass 2 and compares it with the second_pass block recorded in
 library/data/2010_2014_player_state_model.json, and checks the manifest's digests and the
-public table's internal invariants (no club field, append-only shape, the U5 fallback).
+public table's internal invariants (no club field, append-only shape, the U5 rules as applied).
 The Railway image test reads only the manifest and those invariants. Stdlib only.
 """
 from __future__ import annotations
@@ -212,20 +212,32 @@ def roles_pass2(dest):
     return out
 
 
-def feedback_pass2(second, caps, dest, families=ps.FAMILIES):
+def pass2_params(second, fam):
+    """Pass 2's own components of a family under its own keep rule (its interval; no swing: every lag
+    moment pooled), the set pass 2's forecasts use."""
+    f = second["families"][fam]
+    params = {"sb2": f["sb2"], "su2": f["su2"] if f["bootstrap"]["su2_interval"][0] > 0 else 0.0}
+    params["rho"] = f["rho"] if params["su2"] > 0 else 0.0
+    if params["su2"] == 0:
+        moments = player_mean_moments(second["lines"][fam])
+        tot = ps.total_moments(moments)
+        w = sum(c for _, c in tot)
+        params["sb2"] = max(0.0, sum(s for s, _ in tot) / w) if w else 0.0
+    return params
+
+
+def feedback_pass2(second, caps, dest, families=ps.FAMILIES, rules=None, drifts=None):
+    """Pass 2's feedback fit on its own lines, components and rookie cells (under the family's adopted
+    rookie rule and aging curve, pass 2's coefficients, when given)."""
     roles = roles_pass2(dest)
     rows = []
     for fam in families:
-        f = second["families"][fam]
-        params = {"sb2": f["sb2"], "su2": f["su2"] if f["bootstrap"]["su2_interval"][0] > 0 else 0.0}
-        params["rho"] = f["rho"] if params["su2"] > 0 else 0.0
-        if params["su2"] == 0:
-            moments = player_mean_moments(second["lines"][fam])
-            tot = ps.total_moments(moments)
-            w = sum(c for _, c in tot)
-            params["sb2"] = max(0.0, sum(s for s, _ in tot) / w) if w else 0.0
+        params = pass2_params(second, fam)
         priors = second["record"]["families"][fam]["draft_priors"]
-        rows += ps.feedback_rows(fam, second["lines"], second["info"], priors, params, roles)
+        if rules and fam in rules:
+            priors = dict(priors, rule=rules[fam])
+        rows += ps.feedback_rows(fam, second["lines"], second["info"], priors, params, roles,
+                                 (drifts or {}).get(fam))
     return ps.feedback_fit(rows, q=caps)
 
 
@@ -245,11 +257,25 @@ def invariant_errors(model=None, public=None, manifest=None):
         errors.append("manifest public-table digest differs")
     if "kernel" in json.dumps(manifest).lower():
         errors.append("the manifest names a kernel")
+    if model.get("u5", {}).get("status") != "accepted":
+        errors.append("the model does not record U5 as accepted")
+    pooled = model["aging"]["pooled"]["rule"]["adopted"]
     for fam, block in model["families"].items():
-        if block["aging"]["adopted"] != "Z":
-            errors.append("%s: aging other than Z under the U5 fallback" % fam)
-        if block["draft_priors"]["log_pick_slope"]["applied"] != 0.0:
-            errors.append("%s: a draft-slot slope is applied under the U5 fallback" % fam)
+        aging = block["aging"]
+        if aging["adopted"] not in ps.CANDIDATES:
+            errors.append("%s: an aging candidate outside the specification" % fam)
+        if fam in ps.NON_SPECIALISTS and pooled != "Z" and aging.get("source") != "pooled (D1)":
+            errors.append("%s: the pooled curve is kept but the family does not use it" % fam)
+        if (fam in ps.SPECIALISTS or pooled == "Z") and aging["adopted"] != \
+                model["aging"]["families"][fam]["rule"]["adopted"]:
+            errors.append("%s: the per-family aging result is not the one applied" % fam)
+        rule = block["draft_priors"]["rule"]
+        slope = block["draft_priors"]["log_pick_slope"]
+        if rule["slope"] and not (slope["slope"] is not None and slope["slope"] < 0
+                                  and (slope["loo_class_skill"] or 0) > 0 and slope["lines"] >= ps.MIN_CELL):
+            errors.append("%s: a draft-slot slope applied without passing its rule" % fam)
+        if block["adopted"].get("held"):
+            errors.append("%s: a held family (U5 is accepted)" % fam)
     for gsis, row in public["players"].items():
         if any(k in row for k in ("club", "team", "name")):
             errors.append("%s: a club or name field in the public table" % gsis)
@@ -257,7 +283,9 @@ def invariant_errors(model=None, public=None, manifest=None):
             if src["season"] not in ps.RECORD_SEASONS:
                 errors.append("%s: a source row outside 2010-2012" % gsis)
         if "tier" in json.dumps(row):
-            errors.append("%s: a tier in the public table (held under U5)" % gsis)
+            errors.append("%s: a tier in the public table (drawn tiers exist only privately at runtime)" % gsis)
+        if row.get("basis") == "held":
+            errors.append("%s: a held row (U5 is accepted)" % gsis)
     return errors
 
 

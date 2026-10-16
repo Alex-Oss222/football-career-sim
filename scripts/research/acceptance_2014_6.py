@@ -71,8 +71,9 @@ latent draws: no private service is called. A synthetic season reference
 R_k = player_state.season_reference(b"acc-2014.6-synthetic-reference", k) with
 k = --latent-ref (default 0) stands in for the service's R_2014, and every
 drawable player's z is drawn from it by the same keyed draw. The a1 block's
-odd games give every player a synthetic state (family by position group; LB
-held and offensive linemen without a state, as in the committed model) and
+odd games give every player a synthetic state (family by position group;
+offensive linemen without a state, as in the committed model; since U5 the
+linebackers too are drawn, and each drawn player carries his drawn tier) and
 the same six Plus honours as before (now floors). The slate block builds each
 club's real public states (runtime.strength.team_strength under a synthetic
 binding stub; the committed public table) and applies the synthetic draws.
@@ -219,12 +220,13 @@ def _strength_record(team, version, honours=True):
             fam = FAMILY_OF_GROUP.get(usage.group(p.position))
             drawn = fam is not None and player_state.family_scale(fam) > 0
             row = players.setdefault(p.player_id, {"offdef": None, "special": None, "production": None})
-            row["state"] = {"family": fam, "basis": "synthetic" if drawn else ("held" if fam == "LB" else "no_state"),
+            row["state"] = {"family": fam, "basis": "synthetic" if drawn else "no_state",
                             "expected": 0.0, "drawn": drawn}
             if drawn:
                 k = player_state.key(2014, p.player_id, "b")
                 keys.append(k)
                 row["latent_value"] = player_state.draw_z(ref, k)
+                row["drawn_tier"] = player_state.drawn_tier(fam, row["latent_value"])
         record.update({"league_year": 2014, "manifest_sha256": player_state.manifest_sha256(),
                        "commitment": "synthetic-reference-%d" % LATENT_REF,
                        "latent_keys": sorted(keys, key=player_state.key_text)})

@@ -1,25 +1,25 @@
 {
  "adopted_terms": {
   "int_share_offense_passing": {
-   "centre": -0.010705446913836937,
-   "composite_sd": 3.07057784433713,
+   "centre": -0.07111358387500183,
+   "composite_sd": 2.745245201110762,
    "from": "single-term fit",
-   "loo_skill": 0.04326128689976916,
+   "loo_skill": 0.07539892543383475,
    "outcome": "int_share",
-   "pass2_loo_skill": 0.0421416303783565,
+   "pass2_loo_skill": 0.07726439513237904,
    "side": "offense",
-   "slope": 0.0019019692005202567,
+   "slope": 0.002493941396711427,
    "unit": "passing"
   },
   "td_share_offense_passing": {
-   "centre": -0.010705446913836937,
-   "composite_sd": 3.07057784433713,
+   "centre": -0.07111358387500183,
+   "composite_sd": 2.745245201110762,
    "from": "single-term fit",
-   "loo_skill": 0.25020092703275887,
+   "loo_skill": 0.2834806513212891,
    "outcome": "td_share",
-   "pass2_loo_skill": 0.21893384252241233,
+   "pass2_loo_skill": 0.24181621457151137,
    "side": "offense",
-   "slope": 0.008916698515270891,
+   "slope": 0.010441235179815397,
    "unit": "passing"
   }
  },
@@ -30,258 +30,258 @@
  },
  "drive_joint": {
   "drives": 12253,
-  "home": 0.025605137899796872,
-  "se_home": 0.006462076949379685,
+  "home": 0.02553313748466,
+  "se_home": 0.0064783855067535815,
   "terms": {
    "offense_passing": {
-    "as_strength": 0.008927597567134156,
-    "coefficient": 0.008927597567134156,
-    "se": 0.0012084377811578313
+    "as_strength": 0.010463291610208484,
+    "coefficient": 0.010463291610208484,
+    "se": 0.0013877941171297342
    }
   }
  },
  "fits": {
   "int_share_defense_coverage": {
    "club_seasons": 64,
-   "composite_mean": 0.8401249373503814,
+   "composite_mean": 1.476839402196912,
    "composite_range": [
-    -2.1126589410900087,
-    3.8871010781555824
+    -2.6796915454574184,
+    5.6493903315358995
    ],
-   "composite_sd": 1.3894631427180413,
-   "implied_club_sd": 0.0034288728045710408,
+   "composite_sd": 1.9024165532410158,
+   "implied_club_sd": 0.000664111260518821,
    "loo": {
     "null_rmse": 0.023440420912221017,
-    "rmse": 0.023421270451362764,
-    "skill": 0.0016333015618594793
+    "rmse": 0.0238424860397275,
+    "skill": -0.03459949532848805
    },
    "prior_sd": 0.025,
-   "r2": 0.023069015844266683,
-   "raw_slope": 0.002484690961046008,
-   "right_sign_and_skill": true,
-   "se": 0.002070259903406017,
-   "shrunk_sd": 0.0020631977371311427,
-   "shrunk_slope": 0.0024677680890934214,
-   "slope": 0.002484690961046008
+   "r2": 0.0008584490995371397,
+   "raw_slope": 0.00035039669966025714,
+   "right_sign_and_skill": false,
+   "se": 0.001530563403148416,
+   "shrunk_sd": 0.0015277030135686302,
+   "shrunk_slope": 0.0003490882474647419,
+   "slope": 0.00035039669966025714
   },
   "int_share_offense_passing": {
    "club_seasons": 64,
-   "composite_mean": -0.010705446913836937,
+   "composite_mean": -0.07111358387500183,
    "composite_range": [
-    -5.569584420884602,
-    7.304681529314577
+    -5.146347395449071,
+    7.537110137815298
    ],
-   "composite_sd": 3.07057784433713,
-   "implied_club_sd": 0.005840144487729105,
+   "composite_sd": 2.745245201110762,
+   "implied_club_sd": 0.006846480651173516,
    "loo": {
     "null_rmse": 0.0221503526463153,
-    "rmse": 0.021665929146494383,
-    "skill": 0.04326128689976916
+    "rmse": 0.021298932723345574,
+    "skill": 0.07539892543383475
    },
    "prior_sd": 0.025,
-   "r2": 0.07280978027274887,
-   "raw_slope": -0.0019042729281751704,
+   "r2": 0.10042540892412188,
+   "raw_slope": -0.0024975966254605305,
    "right_sign_and_skill": true,
-   "se": 0.000870069283099014,
-   "shrunk_sd": 0.0008695428330240772,
-   "shrunk_slope": 0.0019019692005202567,
-   "slope": 0.0019042729281751704
+   "se": 0.0009570930598731089,
+   "shrunk_sd": 0.0009563924513474214,
+   "shrunk_slope": 0.002493941396711427,
+   "slope": 0.0024975966254605305
   },
   "sack_rate_defense_rush": {
    "club_seasons": 64,
-   "composite_mean": 0.6702229861659433,
+   "composite_mean": 1.0514945989191027,
    "composite_range": [
-    -2.625827940305388,
-    7.017750624923609
+    -3.1012380713980123,
+    5.505389491365704
    ],
-   "composite_sd": 1.9439226232000424,
-   "implied_club_sd": 0.0011478019572516388,
+   "composite_sd": 2.0114938046187034,
+   "implied_club_sd": 0.0010728601933679526,
    "loo": {
     "null_rmse": 0.011831303773103624,
-    "rmse": 0.011936030496698736,
-    "skill": -0.017781679599766953
+    "rmse": 0.012003657366791098,
+    "skill": -0.029347396591629993
    },
    "prior_sd": 0.025,
-   "r2": 0.009552725024742803,
-   "raw_slope": 0.0005910175041838081,
+   "r2": 0.008511877620832942,
+   "raw_slope": 0.0005338292892741608,
    "right_sign_and_skill": false,
-   "se": 0.0007705263027639837,
-   "shrunk_sd": 0.0007701605874785142,
-   "shrunk_slope": 0.0005904566074559864,
-   "slope": 0.0005910175041838081
+   "se": 0.0007376809244057296,
+   "shrunk_sd": 0.0007373599930415673,
+   "shrunk_slope": 0.0005333649007043911,
+   "slope": 0.0005338292892741608
   },
   "sack_rate_offense_protection": {
    "club_seasons": 64,
-   "composite_mean": -0.21569011763413418,
+   "composite_mean": -0.21874529414810637,
    "composite_range": [
     -3.7908378476455633,
-    3.5477601815100135
+    3.489547366927778
    ],
-   "composite_sd": 1.5372279303731087,
-   "implied_club_sd": 0.001483424255552259,
+   "composite_sd": 1.5112747687460195,
+   "implied_club_sd": 0.0017643376007190157,
    "loo": {
     "null_rmse": 0.016632987536583786,
-    "rmse": 0.016931654475335154,
-    "skill": -0.03623503172668263
+    "rmse": 0.016894833544464558,
+    "skill": -0.03173297306306222
    },
    "prior_sd": 0.025,
-   "r2": 0.008363652825693069,
-   "raw_slope": -0.0009678105044396001,
+   "r2": 0.011897802944133562,
+   "raw_slope": -0.0011709367419940448,
    "right_sign_and_skill": false,
-   "se": 0.0013492848187431584,
-   "shrunk_sd": 0.0013473239281758039,
-   "shrunk_slope": 0.0009649995464187338,
-   "slope": 0.0009678105044396001
+   "se": 0.0013662685225866234,
+   "shrunk_sd": 0.0013642327621365472,
+   "shrunk_slope": 0.0011674499152678735,
+   "slope": 0.0011709367419940448
   },
   "td_share_defense_coverage": {
    "club_seasons": 64,
-   "composite_mean": 0.8401249373503814,
+   "composite_mean": 1.476839402196912,
    "composite_range": [
-    -2.1126589410900087,
-    3.8871010781555824
+    -2.6796915454574184,
+    5.6493903315358995
    ],
-   "composite_sd": 1.3894631427180413,
-   "implied_club_sd": 0.002977331609668702,
+   "composite_sd": 1.9024165532410158,
+   "implied_club_sd": 0.0015978718277577738,
    "loo": {
     "null_rmse": 0.04086895932752297,
-    "rmse": 0.04144633253990995,
-    "skill": -0.028454436849778775
+    "rmse": 0.04135481364889272,
+    "skill": -0.023917529198885346
    },
    "prior_sd": 0.025,
-   "r2": 0.005854651086855456,
-   "raw_slope": -0.0021885030335434385,
+   "r2": 0.0016507347665903893,
+   "raw_slope": 0.0008495328536690197,
    "right_sign_and_skill": false,
-   "se": 0.003651376943833731,
-   "shrunk_sd": 0.0036130434225209026,
-   "shrunk_slope": 0.002142792793945223,
-   "slope": 0.0021885030335434385
+   "se": 0.002674963519295493,
+   "shrunk_sd": 0.0026597813465882012,
+   "shrunk_slope": -0.0008399169072806846,
+   "slope": -0.0008495328536690197
   },
   "td_share_defense_run_defense": {
    "club_seasons": 64,
-   "composite_mean": 0.8042191484490485,
+   "composite_mean": 1.6224785255126348,
    "composite_range": [
-    -3.6588831805252666,
-    7.0540665201756445
+    -2.889606622360139,
+    5.68185240517037
    ],
-   "composite_sd": 1.9040788540015328,
-   "implied_club_sd": 0.0020618343147524414,
+   "composite_sd": 1.8435760137482156,
+   "implied_club_sd": 0.002260266303812091,
    "loo": {
     "null_rmse": 0.04086895932752297,
-    "rmse": 0.041630960477639166,
-    "skill": -0.03763760628761181
+    "rmse": 0.041512536215923865,
+    "skill": -0.031742633387326746
    },
    "prior_sd": 0.025,
-   "r2": 0.002623448382718774,
-   "raw_slope": -0.001095817814357183,
+   "r2": 0.0031722079379210566,
+   "raw_slope": -0.0012416008234854565,
    "right_sign_and_skill": false,
-   "se": 0.002735689186874439,
-   "shrunk_sd": 0.0027194557235838347,
-   "shrunk_slope": 0.0010828513275169126,
-   "slope": 0.001095817814357183
+   "se": 0.0028180345902617866,
+   "shrunk_sd": 0.0028003002837866265,
+   "shrunk_slope": 0.0012260228419964593,
+   "slope": 0.0012416008234854565
   },
   "td_share_offense_passing": {
    "club_seasons": 64,
-   "composite_mean": -0.010705446913836937,
+   "composite_mean": -0.07111358387500183,
    "composite_range": [
-    -5.569584420884602,
-    7.304681529314577
+    -5.146347395449071,
+    7.537110137815298
    ],
-   "composite_sd": 3.07057784433713,
-   "implied_club_sd": 0.02737941690562458,
+   "composite_sd": 2.745245201110762,
+   "implied_club_sd": 0.02866375077105708,
    "loo": {
     "null_rmse": 0.05316473857115078,
-    "rmse": 0.046035846384859115,
-    "skill": 0.25020092703275887
+    "rmse": 0.045002603963815974,
+    "skill": 0.2834806513212891
    },
    "prior_sd": 0.025,
-   "r2": 0.2818979621127269,
-   "raw_slope": 0.008964577853584232,
+   "r2": 0.3105777773137727,
+   "raw_slope": 0.010508366838340064,
    "right_sign_and_skill": true,
-   "se": 0.0018319433395739815,
-   "shrunk_sd": 0.0018270446334233568,
-   "shrunk_slope": 0.008916698515270891,
-   "slope": 0.008964577853584232
+   "se": 0.0020046001479852387,
+   "shrunk_sd": 0.0019981867942675726,
+   "shrunk_slope": 0.010441235179815397,
+   "slope": 0.010508366838340064
   },
   "td_share_offense_run": {
    "club_seasons": 64,
-   "composite_mean": -0.25415726447812376,
+   "composite_mean": -0.30850371167624396,
    "composite_range": [
-    -3.6274267422990114,
-    4.615805429062346
+    -3.705202264810971,
+    5.399208157959835
    ],
-   "composite_sd": 1.8425016740729996,
-   "implied_club_sd": 0.009938159366856918,
+   "composite_sd": 1.8647226222228712,
+   "implied_club_sd": 0.010346116143779872,
    "loo": {
     "null_rmse": 0.05316473857115078,
-    "rmse": 0.053594603627444934,
-    "skill": -0.016236434567998392
+    "rmse": 0.053551712685732986,
+    "skill": -0.014610528465825334
    },
    "prior_sd": 0.025,
-   "r2": 0.03860841138786153,
-   "raw_slope": 0.005500425844496831,
+   "r2": 0.04183958134463783,
+   "raw_slope": 0.005654915822614499,
    "right_sign_and_skill": false,
-   "se": 0.003514314217141246,
-   "shrunk_sd": 0.0034800979307421757,
-   "shrunk_slope": 0.005393840074450413,
-   "slope": 0.005500425844496831
+   "se": 0.0034648678482371064,
+   "shrunk_sd": 0.0034320622604766117,
+   "shrunk_slope": 0.005548340552358734,
+   "slope": 0.005654915822614499
   },
   "ypc_defense_run_defense": {
    "club_seasons": 64,
-   "composite_mean": 0.8042191484490485,
+   "composite_mean": 1.6224785255126348,
    "composite_range": [
-    -3.6588831805252666,
-    7.0540665201756445
+    -2.889606622360139,
+    5.68185240517037
    ],
-   "composite_sd": 1.9040788540015328,
-   "implied_club_sd": 0.09171382114411404,
+   "composite_sd": 1.8435760137482156,
+   "implied_club_sd": 0.06026106098871358,
    "loo": {
     "null_rmse": 0.4172182066539853,
-    "rmse": 0.41669608211796105,
-    "skill": 0.002501318606533909
+    "rmse": 0.4214066397043661,
+    "skill": -0.02017868213760554
    },
    "prior_sd": 0.25,
-   "r2": 0.05103315788774221,
-   "raw_slope": 0.04872477726751609,
+   "r2": 0.021680614314121494,
+   "raw_slope": 0.033111205134527165,
    "right_sign_and_skill": false,
-   "se": 0.026901979818705447,
-   "shrunk_sd": 0.026747564311413445,
-   "shrunk_slope": -0.04816702887665188,
-   "slope": -0.04872477726751609
+   "se": 0.02847833589952465,
+   "shrunk_sd": 0.028295343897607062,
+   "shrunk_slope": -0.032687049809351484,
+   "slope": -0.033111205134527165
   },
   "ypc_offense_run": {
    "club_seasons": 64,
-   "composite_mean": -0.25415726447812376,
+   "composite_mean": -0.30850371167624396,
    "composite_range": [
-    -3.6274267422990114,
-    4.615805429062346
+    -3.705202264810971,
+    5.399208157959835
    ],
-   "composite_sd": 1.8425016740729996,
-   "implied_club_sd": 0.06763777824190742,
+   "composite_sd": 1.8647226222228712,
+   "implied_club_sd": 0.04710313510575507,
    "loo": {
     "null_rmse": 0.5099134432266786,
-    "rmse": 0.5149180710642653,
-    "skill": -0.01972565057250697
+    "rmse": 0.5161930240255185,
+    "skill": -0.024781646302901583
    },
    "prior_sd": 0.25,
-   "r2": 0.01982706377284571,
-   "raw_slope": -0.03737467331130809,
+   "r2": 0.009683666797659085,
+   "raw_slope": -0.025707940220539603,
    "right_sign_and_skill": false,
-   "se": 0.03364609287868772,
-   "shrunk_sd": 0.03334545578806358,
-   "shrunk_slope": -0.03670975130914732,
-   "slope": -0.03737467331130809
+   "se": 0.03328659837889572,
+   "shrunk_sd": 0.03299541253081753,
+   "shrunk_slope": -0.025260129600189574,
+   "slope": -0.025707940220539603
   }
  },
- "fraction_of_target": 0.5704045188671787,
+ "fraction_of_target": 0.5971614743970225,
  "home_edge": {
   "drives": 12253,
   "from": "drive-level joint regression, season intercepts and the adopted touchdown-share composites, 500-draw game-cluster bootstrap",
-  "se": 0.006462076949379685,
-  "value": 0.025605137899796872
+  "se": 0.0064783855067535815,
+  "value": 0.02553313748466
  },
  "implied_club_sd": {
-  "int_share_offense_passing": 0.005840144487729105,
-  "td_share_offense_passing": 0.02737941690562458
+  "int_share_offense_passing": 0.006846480651173516,
+  "td_share_offense_passing": 0.02866375077105708
  },
  "individual_passer_interception_term": "not adopted (October 2, 2026 decision)",
  "information_boundary": "targets: the 2012 and 2013 regular seasons, club outcomes from the play-by-play, anonymous in the committed record (aggregate fits only); inputs: player-state E-values from each target's two evidence seasons; 2013 is a post-divergence league population and enters pooled fits only",
@@ -308,74 +308,74 @@
    "weekly roster position": 8
   }
  },
- "net_td_share_edge_sd": 0.02737941690562458,
+ "net_td_share_edge_sd": 0.02866375077105708,
  "pass2": {
   "fits": {
    "int_share_defense_coverage": {
-    "loo_skill": -0.005923604089008938,
+    "loo_skill": -0.03751337337489247,
     "right_sign_and_skill": false,
-    "se": 0.0019365584687398476,
-    "slope": 0.0018938856898023531
+    "se": 0.0013830692888799783,
+    "slope": -0.0001288636293613843
    },
    "int_share_offense_passing": {
-    "loo_skill": 0.0421416303783565,
+    "loo_skill": 0.07726439513237904,
     "right_sign_and_skill": true,
-    "se": 0.0011052198286018247,
-    "slope": 0.0023845015296924507
+    "se": 0.0012913128623445696,
+    "slope": 0.00339171589654297
    },
    "sack_rate_defense_rush": {
-    "loo_skill": -0.017007423833496738,
+    "loo_skill": -0.03307062830058061,
     "right_sign_and_skill": false,
-    "se": 0.000732826703600614,
-    "slope": 0.0005936735373766078
+    "se": 0.0006759223468199594,
+    "slope": 0.00040164246503261535
    },
    "sack_rate_offense_protection": {
-    "loo_skill": -0.03372919169585109,
+    "loo_skill": -0.02799186606235482,
     "right_sign_and_skill": false,
-    "se": 0.0013596777082235396,
-    "slope": 0.0009784738322785873
+    "se": 0.0013915091497318545,
+    "slope": 0.0012784108651526223
    },
    "td_share_defense_coverage": {
-    "loo_skill": -0.03402838987494028,
+    "loo_skill": -0.02470262894931685,
     "right_sign_and_skill": false,
-    "se": 0.0034129712023745367,
-    "slope": 0.0014597109001560963
+    "se": 0.002419941141501066,
+    "slope": -0.0008550950503224235
    },
    "td_share_defense_run_defense": {
-    "loo_skill": -0.03838619993881953,
+    "loo_skill": -0.03419779367154341,
     "right_sign_and_skill": false,
-    "se": 0.0026405614283758843,
-    "slope": 0.0010190194177304233
+    "se": 0.0024999793014159675,
+    "slope": 0.0009897845594240438
    },
    "td_share_offense_passing": {
-    "loo_skill": 0.21893384252241233,
+    "loo_skill": 0.24181621457151137,
     "right_sign_and_skill": true,
-    "se": 0.002372366427757248,
-    "slope": 0.01066567403514951
+    "se": 0.0027887306663157397,
+    "slope": 0.013072075680948373
    },
    "td_share_offense_run": {
-    "loo_skill": -0.013539221149288627,
+    "loo_skill": -0.0085243884703754,
     "right_sign_and_skill": false,
-    "se": 0.0034711989889429336,
-    "slope": 0.005742342835329003
+    "se": 0.003412743981382554,
+    "slope": 0.005844514201692436
    },
    "ypc_defense_run_defense": {
-    "loo_skill": 0.003985570410848016,
+    "loo_skill": -0.02535769417345346,
     "right_sign_and_skill": false,
-    "se": 0.02670002735254583,
-    "slope": -0.04973512178621764
+    "se": 0.02609524115345997,
+    "slope": -0.02811513715190656
    },
    "ypc_offense_run": {
-    "loo_skill": -0.02866340237493259,
+    "loo_skill": -0.024238335428769187,
     "right_sign_and_skill": false,
-    "se": 0.034324111026379146,
-    "slope": -0.017613598622886122
+    "se": 0.03371764149110834,
+    "slope": -0.011664529664804543
    }
   },
   "source": "nflscrapR reg_pbp drives (td_team = posteam), pass-2 E-values"
  },
- "player_state_model_sha256": "76f5e95f4bf70281c3da6fe2b9d4b96bffe7dfbf5b161ebb4775c78479376203",
- "player_value": "E-value over the family's true-state SD (player-state model); 0 for no state, no spread or a held family (U5: LB); offensive linemen rule B plus honours",
+ "player_state_model_sha256": "e702db4372c89c6316641c22ff119c7c2a1828b0cbb61779913a21bdf5984913",
+ "player_value": "E-value over the family's true-state SD (player-state model, U5 rules); 0 for no state or no spread; offensive linemen rule B plus honours",
  "previously_live_v3": [
   "sack_rate_offense_protection",
   "td_share_defense_run_defense",
@@ -429,34 +429,34 @@
   "int_share_offense_passing": {
    "clubs": {
     "count": 32,
-    "max": 0.0004306191120292493,
-    "median": 0.00011862130360742909,
-    "p90": 0.00019771033877658017,
-    "relative_max": 0.226133085051996
+    "max": 0.0004095556957250564,
+    "median": 9.072288765021256e-05,
+    "p90": 0.00022158111909495286,
+    "relative_max": 0.16397992035624992
    },
    "players": {
     "count": 164,
-    "max": 0.00020195553362549836,
-    "median": 1.3480322282816062e-05,
-    "p90": 6.717278871164753e-05,
-    "relative_max": 0.10605388053225576
+    "max": 0.000228163974204801,
+    "median": 1.5872218718108403e-05,
+    "p90": 5.873365320688143e-05,
+    "relative_max": 0.0913534122679758
    },
    "unit": "absolute change in the raw slope"
   },
   "td_share_offense_passing": {
    "clubs": {
     "count": 32,
-    "max": 0.0009750118156720122,
-    "median": 0.00014946226595191452,
-    "p90": 0.0005804322192421909,
-    "relative_max": 0.10876271382730882
+    "max": 0.0009209005171988017,
+    "median": 0.00018928918901681482,
+    "p90": 0.0006037208120535046,
+    "relative_max": 0.08763497995129661
    },
    "players": {
     "count": 164,
-    "max": 0.000724928539882078,
-    "median": 2.5428845695575283e-05,
-    "p90": 0.00015309806892824067,
-    "relative_max": 0.08086588701912337
+    "max": 0.0008166101991027973,
+    "median": 2.9169859676348234e-05,
+    "p90": 0.0001939920266083306,
+    "relative_max": 0.07771047696235467
    },
    "unit": "absolute change in the raw slope"
   }
@@ -492,18 +492,16 @@
  "value_bases": {
   "2012": {
    "OL rule B plus honours": 320,
-   "draft": 33,
-   "held": 196,
+   "draft": 49,
    "population": 2,
-   "record": 604,
+   "record": 784,
    "undrafted": 2
   },
   "2013": {
    "OL rule B plus honours": 320,
-   "draft": 29,
-   "held": 192,
+   "draft": 35,
    "population": 1,
-   "record": 598,
+   "record": 784,
    "undrafted": 3
   }
  },

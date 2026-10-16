@@ -222,14 +222,23 @@ def tilt_map(strength, players, kind, factors=None):
     """{player id: factor} for one club's available players and one credit
     kind ("target", "rush" or "sack"), from each player's attribution tier in
     the club's strength record. Empty (no tilt) without a record. `factors`
-    is the base's tilt table (tilt_factors_from); the 2012 base's when None."""
+    is the base's tilt table (tilt_factors_from); the 2012 base's when None.
+
+    Under the player-state model (kernel 2014.6, U5 accepted October 16,
+    2026) the tier is the player's drawn tier (`drawn_tier`, written by
+    runtime.player_state.apply_latent from his private drawn value), and a
+    player without one (no state, or no record) reads Average; the
+    honours-production `attribution_tier` stays the older models' tier."""
     records = (strength or {}).get("players") or {}
     if not records:
         return {}
+    from .player_state import DERIVATION
+    drawn = (strength or {}).get("model") == DERIVATION
     factors = (factors if factors is not None else tilt_factors())[kind]
     out = {}
     for p in players:
-        tier = (records.get(p.player_id) or {}).get("attribution_tier")
+        record = records.get(p.player_id) or {}
+        tier = (record.get("drawn_tier") or "Average") if drawn else record.get("attribution_tier")
         if tier in factors and factors[tier] != 1.0:
             out[p.player_id] = factors[tier]
     return out

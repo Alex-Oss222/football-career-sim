@@ -120,8 +120,10 @@ reads and the fitted terms:
   units (runtime/player_state.py: the public expectation plus the private
   once-per-season draw the service made at bind, fetched after the event is
   journaled and written into the record as `latent_value`); a no-state row
-  (offensive linemen, long snappers), a held family (LB under U5) and a
-  family with no spread read 0;
+  (offensive linemen, long snappers) and a family with no spread read 0
+  (since U5, October 16, 2026, no family is held: linebackers carry pass 1's
+  swing set, and the table carries the aging curves and draft-slot
+  starting estimates);
 * the family's side rule replaces the tier's: an offensive family counts only
   on offense, a defensive family only on defense, the QB family only in the
   passer slot and no other family there; a position change moves the matchup
@@ -139,10 +141,12 @@ reads and the fitted terms:
   PUNTER_SLOPE_V4 the refit on the committed net definition; the punter's
   input stays his public pre-divergence net (`deviation`); the kicker and
   returner terms stay 0;
-* the attribution tilt (runtime/usage.py) keeps reading the record's
-  honours-production `attribution_tier`: the drawn-tier population rests on
-  amendment 3 and is held with U5, so the item 19 rule stands unchanged and
-  no state value reaches credit;
+* the attribution tilt (runtime/usage.py) reads the drawn tier
+  (`drawn_tier`, U5 accepted October 16, 2026: the player's drawn value
+  against his family's cut points from the tier population on the
+  production-evidence qualifier floors), with the v2 factors and no-state
+  players at the Average factor; the honours-production `attribution_tier`
+  stays the record's tier for the older models;
 * under this model the kernel publishes no per-possession strength block
   (the drawn values would be readable from the contributors), and a record
   whose drawable players lack their latent value fails closed
@@ -287,7 +291,7 @@ def parameters(model=MODEL):
 # ---- Kernel 2014.6 (batch B7): the player-state model's parameter entry -----------
 PLAYER_STATE_MODEL = "player-state-v1"
 V4_CALIBRATION = ROOT / "library/data/2014_strength_calibration_v4.json"
-V4_SHA256 = "9be9ebad137e0f118f2f7bbf9a564e5ceaf54e691e249823bce5762e788d6ea5"
+V4_SHA256 = "5316d2bb71253bc52609bd1788a7f477f8e023790efc592b925007b2f59cd752"
 # The fitted terms in a fixed order (the three kernel channels; the ypc
 # terms have no channel and are reported only).
 V4_TERM_ORDER = ("td_share_offense_passing", "td_share_defense_run_defense", "sack_rate_offense_protection",

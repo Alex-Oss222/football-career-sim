@@ -153,12 +153,15 @@ class DrawMathTests(unittest.TestCase):
         # A family whose swing is not kept (tau 0): base slots only, in every year.
         rb = next(g for g, r in table.items() if r.get("record_family") == "RB" and ps.has_state(r))
         self.assertTrue(all(k[3] == "b" for k in ps.row_keys(rb, table[rb], 2016, 2014)))
-        # A held family and a no-state row draw nothing.
-        lb = next(g for g, r in table.items() if r.get("basis") == "held")
+        # Since U5 no family is held: a linebacker with a record draws his base slots; a
+        # no-state row draws nothing.
+        self.assertFalse(any(r.get("basis") == "held" for r in table.values()))
+        lb = next(g for g, r in table.items() if r.get("record_family") == "LB" and r.get("basis") == "record")
+        self.assertTrue(ps.has_state(table[lb]))
+        self.assertTrue(ps.row_keys(lb, table[lb], 2014, 2014))
         ol = next(g for g, r in table.items() if r.get("basis") == "no_state")
-        self.assertEqual(ps.row_keys(lb, table[lb], 2014, 2014), [])
         self.assertEqual(ps.row_keys(ol, table[ol], 2014, 2014), [])
-        self.assertEqual(ps.expected_value(table[lb]), 0.0)
+        self.assertEqual(ps.expected_value(table[ol]), 0.0)
 
     def test_latent_value_is_the_expectation_plus_the_factored_deviation(self):
         table = ps.public_table()
@@ -195,8 +198,11 @@ class PublicTableTests(unittest.TestCase):
         digest = hashlib.sha256(json.dumps(edited, indent=1, sort_keys=True).encode()).hexdigest()
         self.assertNotEqual(digest, ps.manifest()["public_table_sha256"])
 
-    def test_family_scale_and_held_families(self):
-        self.assertEqual(ps.family_scale("LB"), 0.0)
+    def test_family_scale_and_no_held_family(self):
+        lb = ps.family_params("LB")
+        self.assertFalse(lb["held"])
+        self.assertAlmostEqual(ps.family_scale("LB"), math.sqrt(lb["sb2"] + lb["su2"]))
+        self.assertGreater(ps.family_scale("LB"), 0.0)
         self.assertEqual(ps.family_scale("OL"), 0.0)
         qb = ps.family_params("QB")
         self.assertAlmostEqual(ps.family_scale("QB"), math.sqrt(qb["sb2"] + qb["su2"]))
@@ -441,7 +447,6 @@ class ServiceTests(unittest.TestCase):
         second = self.client.bind_latent(2014, ps.manifest_sha256())
         self.assertEqual(first["commitment"], second["commitment"])
         self.assertTrue(second["idempotent"])
-        self.assertEqual(first["rows"], 1708)
         table = ps.public_table()
         expected = sum(len(ps.row_keys(g, r, 2014, 2014)) for g, r in table.items())
         self.assertEqual(first["rows"], expected)
@@ -557,10 +562,16 @@ class RunnerTests(unittest.TestCase):
         other = replace(home, strength=dict(home.strength, commitment="f" * 64))
         with self.assertRaises(ValueError):
             game_runner.build_game_packet("2014-b7-other", "snapshot-b7", other, away)
-        # Drawn values may not enter a packet.
+        # Drawn values and drawn tiers may not enter a packet, a result or a receipt.
         drawn = ps.apply_latent(home, {ps.key_text(k): ps.z_text(0.0) for k in home.strength["latent_keys"]})
         with self.assertRaises(ValueError):
             game_runner.build_game_packet("2014-b7-drawn", "snapshot-b7", drawn, away)
+        tier_only = replace(home, strength=dict(home.strength, players={
+            pid: dict(p, drawn_tier="Plus") for pid, p in home.strength["players"].items()}))
+        with self.assertRaises(ValueError):
+            game_runner.build_game_packet("2014-b7-tier", "snapshot-b7", tier_only, away)
+        for name in ("latent_value", "drawn_tier", "attribution_tier"):
+            self.assertFalse(_has_key(first, name), name)
 
     def test_records_absent_path_makes_no_latent_call(self):
         from support_rosters import single_quarterback_teams
@@ -613,6 +624,58 @@ class WeeklyInputTests(unittest.TestCase):
         self.assertTrue(any(e.startswith("player_state") for e in errors))
 
 
+class DrawnTierTests(unittest.TestCase):
+    """U5 (amendment 3): the drawn tier from the tier population's cut points, read by the tilt."""
+
+    def test_drawn_tier_against_the_family_cut_points(self):
+        cuts = ps.tier_cuts("DB")
+        self.assertEqual(len(cuts), 4)
+        self.assertEqual(ps.drawn_tier("DB", cuts[0] - 1e-9), "Replacement-Level")
+        self.assertEqual(ps.drawn_tier("DB", cuts[0]), "Replacement-Level")
+        self.assertEqual(ps.drawn_tier("DB", (cuts[1] + cuts[2]) / 2), "Average")
+        self.assertEqual(ps.drawn_tier("DB", cuts[3] + 1e-9), "Elite")
+        missing = [f for f in ps.POSITION_FAMILIES if ps.tier_cuts(f) is None]
+        for fam in missing:
+            self.assertEqual(ps.drawn_tier(fam, 5.0), "Average")
+        self.assertEqual(ps.drawn_tier("OL", 5.0), "Average")
+
+    def test_the_builder_and_the_runtime_read_the_same_tier(self):
+        sys.path.insert(0, str(ROOT / "scripts/research"))
+        import build_2010_2014_player_state_model as builder
+        for fam in ("QB", "LB", "DB"):
+            cuts = ps.tier_cuts(fam)
+            for v in [c + d for c in cuts for d in (-1e-6, 0.0, 1e-6)]:
+                self.assertEqual(builder.tier_of(cuts, v), ps.drawn_tier(fam, v))
+
+    def test_apply_latent_writes_the_drawn_tier(self):
+        table = ps.public_table()
+        gsis = next(g for g, r in table.items() if r.get("record_family") == "LB" and ps.has_state(r))
+        record = {"model": ps.DERIVATION, "league_year": 2014, "players": {
+            "x": {"gsis_id": gsis, "state": {"family": "LB", "drawn": True}}}}
+        team = TeamInput("A", ("x",), strength=record)
+        draws = {ps.key_text(k): ps.z_text(ps.draw_z(SYNTHETIC_REF, k)) for k in ps.row_keys(gsis, table[gsis], 2014, 2014)}
+        out = ps.apply_latent(team, draws).strength["players"]["x"]
+        self.assertEqual(out["drawn_tier"], ps.drawn_tier("LB", out["latent_value"]))
+        self.assertNotIn("drawn_tier", record["players"]["x"])
+
+    def test_the_tilt_reads_the_drawn_tier_under_the_player_state_model(self):
+        from runtime import usage
+        roster = game_day_roster("A")
+        wrs = [p for p in roster if p.position == "WR"][:3]
+        factors = usage.tilt_factors()
+        state = {"model": ps.DERIVATION, "players": {
+            wrs[0].player_id: {"drawn_tier": "Plus", "attribution_tier": "Elite"},
+            wrs[1].player_id: {"attribution_tier": "Elite"}}}
+        tilt = usage.tilt_map(state, wrs, "target", factors)
+        self.assertEqual(tilt.get(wrs[0].player_id, 1.0), factors["target"]["Plus"])
+        self.assertEqual(tilt.get(wrs[1].player_id, 1.0), factors["target"]["Average"])
+        self.assertEqual(tilt.get(wrs[2].player_id, 1.0), factors["target"]["Average"])
+        old = dict(state, model="honours-production-v3")
+        tilt = usage.tilt_map(old, wrs, "target", factors)
+        self.assertEqual(tilt.get(wrs[0].player_id, 1.0), factors["target"]["Elite"])
+        self.assertEqual(tilt.get(wrs[2].player_id, 1.0), 1.0)
+
+
 class PrivacyAndObservablesTests(unittest.TestCase):
     def test_privacy_check_finds_a_leaking_record_and_passes_the_repository(self):
         from runtime.privacy import privacy_errors
@@ -625,10 +688,12 @@ class PrivacyAndObservablesTests(unittest.TestCase):
             (folder / "old.json").write_text(json.dumps({"kernel_version": "2014.5", "possessions": [
                 {"strength": {"units": {}, "edge": 0.1}}]}))
             (folder / "tier.json").write_text(json.dumps({"players": {"x": {"attribution_tier": "Plus"}}}))
+            (folder / "drawn.json").write_text(json.dumps({"players": {"x": {"drawn_tier": "Plus"}}}))
+            (folder / "value.json").write_text(json.dumps({"players": {"x": {"latent_value": 0.3}}}))
             errors = privacy_errors(tmp)
-        self.assertEqual(len(errors), 2)
-        self.assertTrue(any("leak.json" in e for e in errors))
-        self.assertTrue(any("tier.json" in e for e in errors))
+        self.assertEqual(len(errors), 4)
+        for name in ("leak.json", "tier.json", "drawn.json", "value.json"):
+            self.assertTrue(any(name in e for e in errors), name)
 
     def test_observables_from_a_package_and_the_committed_backfill(self):
         from runtime import observables

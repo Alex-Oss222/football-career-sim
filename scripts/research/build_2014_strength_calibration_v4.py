@@ -14,9 +14,11 @@ Rules (library/2014_6_pre_build_specification.md, section 4, Strength v4; U1(b),
 - Inputs are one-step-forecast E-values from the player-state model
   (library/data/2010_2014_player_state_model.json) at each target's evidence cutoff: the
   player's own lines in the two evidence seasons, his honours in them (public before the
-  target's kickoff), the flat draft-slot prior for a rookie (his own class left out). A
-  player's value is E over his family's true-state SD; a family with no state (offensive
-  linemen), no spread, or a held swing (U5) contributes 0, the Average of the runtime.
+  target's kickoff), the draft-slot prior for a rookie by his family's rookie rule (his own
+  class left out), and the family's adopted aging curve over the forecast horizon (U5,
+  accepted October 16, 2026). A player's value is E over his family's true-state SD; a
+  family with no state (offensive linemen) or no spread contributes 0, the Average of the
+  runtime.
   Offensive linemen keep rule B plus honours (the phase-2 rule): an honour's value
   (Elite 2, Plus 1, times its evidence weight), else -1 when unproven (no evidence season
   with 8 or more starts), else 0.
@@ -169,8 +171,9 @@ def defense_units(rows):
 class Evidence:
     """E-values for one pass: lines, family parameters, priors and honour cells."""
 
-    def __init__(self, lines, info, params, priors, cells):
+    def __init__(self, lines, info, params, priors, cells, drifts=None):
         self.lines, self.info, self.params, self.priors, self.cells = lines, info, params, priors, cells
+        self.drifts = drifts or {}
         self.cache = {}
 
     def value(self, pid, slot_family, target, window):
@@ -187,12 +190,12 @@ class Evidence:
             if total > 0:
                 honours = ps.honour_entries(KICKOFF[target], window)
                 state, basis, _, _ = ps.player_state(pid, fam, self.lines, self.info, self.priors[fam], p, honours,
-                                                     self.cells.get(fam), window, target)
+                                                     self.cells.get(fam), window, target, self.drifts.get(fam))
                 out = ((state[0] + state[1]) / math.sqrt(total), basis)
             else:
                 out = (0.0, "no spread")
         elif fam is not None:
-            out = (0.0, "held" if fam in ("DL", "LB") else "no state")
+            out = (0.0, "no state")
         self.cache[key] = out
         return out
 
@@ -609,15 +612,15 @@ def influence(comps, outs, members, adopted):
 
 # ====================================================================== the build
 def evidence_pass(lines, info, model_families, params_source):
-    params, priors = {}, {}
+    params, priors, drifts = {}, {}, {}
     for fam in ps.FAMILIES:
         block = model_families[fam]
         priors[fam] = block["draft_priors"]
+        drifts[fam] = ps.drift_from(block["aging"])
         if params_source == "adopted":
             a = block["adopted"]
-            if not a.get("held"):
-                params[fam] = {"sb2": a["sb2"], "su2": a["su2"], "rho": a["rho"]}
-    return params, priors
+            params[fam] = {"sb2": a["sb2"], "su2": a["su2"], "rho": a["rho"]}
+    return params, priors, drifts
 
 
 def build(dest, log=print):
@@ -629,14 +632,14 @@ def build(dest, log=print):
     lines1, _, _ = ps.season_lines(ps.extract_pass1(dest, lambda m: None))
     log("strength v4: pass 2 lines")
     lines2, _, _ = ps.season_lines(verify.extract_pass2(dest, lambda m: None), split="chrono")
-    params1, priors1 = evidence_pass(lines1, info, model["families"], "adopted")
-    # Pass 2 E-values use pass 2's own fits and keep rule (its own interval), its own priors and honour cells.
-    params2, priors2 = {}, {}
+    params1, priors1, drifts1 = evidence_pass(lines1, info, model["families"], "adopted")
+    # Pass 2 E-values use pass 2's own fits and keep rule (its own interval), its own rookie cells under the
+    # family's adopted rookie rule, its own coefficients of the adopted aging curve, and its own honour cells.
+    params2, priors2, drifts2 = {}, {}, {}
     for fam, rec in model["second_pass"]["families"].items():
         f = rec["fit"]
-        priors2[fam] = rec["draft_priors"]
-        if model["families"][fam]["adopted"].get("held"):
-            continue
+        priors2[fam] = dict(rec["draft_priors"], rule=model["families"][fam]["draft_priors"]["rule"])
+        drifts2[fam] = ps.drift_from(model["families"][fam]["aging"], "pass2")
         if f["bootstrap"]["su2_interval"][0] > 0:
             params2[fam] = {"sb2": f["sb2"], "su2": f["su2"], "rho": f["rho"]}
         else:
@@ -644,8 +647,8 @@ def build(dest, log=print):
             wsum = sum(c for _, c in tot)
             params2[fam] = {"sb2": max(0.0, sum(s for s, _ in tot) / wsum) if wsum else 0.0, "su2": 0.0, "rho": 0.0}
     hon = ps.honour_entries("2013-01-15", ps.RECORD_SEASONS)
-    ev1 = Evidence(lines1, info, params1, priors1, ps.honour_cells(lines1, hon))
-    ev2 = Evidence(lines2, info, params2, priors2, ps.honour_cells(lines2, hon))
+    ev1 = Evidence(lines1, info, params1, priors1, ps.honour_cells(lines1, hon), drifts1)
+    ev2 = Evidence(lines2, info, params2, priors2, ps.honour_cells(lines2, hon), drifts2)
     production = json.loads(PRODUCTION.read_text(encoding="utf-8"))
     comps1, comps2, members, outs1, outs2, rows1, bases, labels = {}, {}, {}, {}, {}, [], {}, {}
     contamination = None
@@ -695,8 +698,8 @@ def build(dest, log=print):
                                  "E-values from each target's two evidence seasons; 2013 is a post-divergence "
                                  "league population and enters pooled fits only"),
         "targets": [{"outcomes": t, "evidence": list(w), "kickoff": KICKOFF[t]} for t, w in TARGETS],
-        "player_value": ("E-value over the family's true-state SD (player-state model); 0 for no state, no spread "
-                         "or a held family (U5: LB); offensive linemen rule B plus honours"),
+        "player_value": ("E-value over the family's true-state SD (player-state model, U5 rules); 0 for no state "
+                         "or no spread; offensive linemen rule B plus honours"),
         "label_sources": labels,
         "value_bases": bases,
         "fits": fits1,
@@ -760,9 +763,10 @@ def report_section(a):
              "(2011-2012 evidence), pooled with season intercepts over %d club-seasons. A starter's value is his "
              "one-step-forecast E-value from the [player-state model](2010_2014_player_state_study.md) over his "
              "family's true-state SD; offensive linemen keep rule B plus honours. Labels are contemporaneous: the "
-             "Week 1 chart slot's family, then that season's weekly roster position. Under U5's fallback the "
-             "linebacker family's state is held, so linebackers contribute 0 (the runtime's Average) in every "
-             "composite. A term is kept when its leave-one-club-out skill is positive with the right sign and pass 2 "
+             "Week 1 chart slot's family, then that season's weekly roster position. With U5 accepted (October 16, "
+             "2026) the E-values carry the adopted aging curves, the draft-slot rookie rule and the minimum cell, and "
+             "linebackers carry their own values (pass 1's swing set). A term is kept when its leave-one-club-out "
+             "skill is positive with the right sign and pass 2 "
              "(nflscrapR drives with an independent classifier, pass-2 E-values) reproduces both." %
              a["fits"]["td_share_offense_passing"]["club_seasons"], "",
              "| Term | Slope (strength) | SE | Shrunk | Centre | Composite SD | LOO skill | Pass 2 skill | Kept |",
@@ -806,8 +810,9 @@ def report_section(a):
                   "%s: %s" % (t, ", ".join("%s %d" % kv for kv in sorted(b.items()))) for t, b in
                   sorted(a["value_bases"].items())), "",
               "**Limits.** Only aggregate fits are committed. 2013 enters as an anonymous post-divergence population; "
-              "no club's 2013 outcome or composite is recorded. The player-state inputs carry the U5 fallback (no "
-              "aging, flat rookie estimates, linebackers held). The sub-unit slot split remains a convention.", "",
+              "no club's 2013 outcome or composite is recorded. The player-state inputs carry U5's rules (the "
+              "applied aging curves, the draft-slot rookie rule, the minimum cell, DL and LB swing sets from pass 1). "
+              "The sub-unit slot split remains a convention.", "",
               END]
     return "\n".join(lines) + "\n"
 

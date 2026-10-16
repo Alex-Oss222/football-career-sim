@@ -1,4 +1,4 @@
-# 2010-2014 player-state study (kernel 2014.6, batch B4b)
+# 2010-2014 player-state study (kernel 2014.6, batches B4b and U5)
 
 [Engine decisions](../runtime/2014_engine_decisions.md#kernel-20146-decisions-dated) · [Pre-build specification](2014_6_pre_build_specification.md) · [Strength studies](2014_strength_calibration.md)
 
@@ -6,7 +6,7 @@
 
 **Boundary.** Hidden-state statistical priors for the engine only; never scouting evidence or a staff-facing grade; no staff assessment, grade or E2 advice reads them or their tiers. A real player's own 2013-2014 statistics never set his own value: the public table is built from each player's 2010-2012 lines only, and 2013 and 2014 Weeks 1-4 enter the pooled fits as an anonymous league population. The public table holds expectations only; the once-per-season draw is made and recorded by the private service from batch B7, and no one sees it.
 
-**U5 is unanswered, so this build uses the fallback.** Aging Z for every family; draft-slot slope 0; no tiers; a DL or LB family whose swing the two passes disagree on (so that amendment 3 would decide it) is held; cells under 30 are flagged, not merged. Held, never replaced: forecast_residual_aging_basis, aging_two_pass_conjunction, draft_slope_negative_sign, min_cell_30, tier_population_on_qualifier_floors, dl_lb_swing_carry_from_pass_1.
+**U5 accepted (2026-10-16).** Stone's answer: "Add U5 (Recommended)" ([decision record](../runtime/2014_engine_decisions.md)). The specification's rules conditional on U5 apply as written: forecast_residual_aging_basis, aging_two_pass_conjunction, draft_slope_negative_sign, min_cell_30, tier_population_on_qualifier_floors, dl_lb_swing_carry_from_pass_1. Decision D1: "(c) Pooled curve + test (Recommended)". Aging on forecast residuals with the two-pass conjunction and the pooled non-specialist set (D1); the draft-slot slope where kept in both passes and negative; the 30-event minimum cell; the tier population on the production-evidence qualifier floors; DL and LB swing sets from pass 1.
 
 ## 1. Families, metrics and floors
 
@@ -28,7 +28,7 @@ Offensive linemen and long snappers have no public performance rate and no state
 
 ## 2. The swing: size and carry
 
-Lag-k covariance C_k = sb2 + rho^k su2 over lags 0-4 (the 2013-to-2014 Weeks 1-4 pair held out), fitted on a 0.01 grid of rho. Kept only if su2's bootstrap 95% interval (200 resamples of players) excludes 0 in both passes; size from pass 1 when pass 2's point lies inside pass 1's interval, otherwise the smaller.
+Lag-k covariance C_k = sb2 + rho^k su2 over lags 0-4 (the 2013-to-2014 Weeks 1-4 pair held out), fitted on a 0.01 grid of rho. Kept only if su2's bootstrap 95% interval (200 resamples of players) excludes 0 in both passes; size from pass 1 when pass 2's point lies inside pass 1's interval, otherwise the smaller. For DL and LB amendment 3 (U5) takes pass 1's set: kept when pass 1's interval excludes 0, at pass 1's size and carry.
 
 | Family | Pass 1 sb2 | Pass 1 su2 | Pass 1 rho | Pass 1 su2 interval | Pass 2 su2 | Pass 2 rho | Pass 2 su2 interval | Status | Adopted sb2 | su2 | rho | tau |
 |---|---:|---:|---:|---|---:|---:|---|---|---:|---:|---:|---:|
@@ -36,15 +36,13 @@ Lag-k covariance C_k = sb2 + rho^k su2 over lags 0-4 (the 2013-to-2014 Weeks 1-4
 | RB | 0.001809 | 0.001487 | 0 | 0 to 0.004533 | 0.002118 | 0 | 0 to 0.006529 | not kept (su2 interval reaches 0 in both passes) | 0.002554 | 0 | 0 | 0 |
 | WR | 0 | 0.02736 | 0.53 | 0.01437 to 0.03868 | 0.02946 | 0.5 | 0.01256 to 0.04609 | Confirmed two-pass | 0 | 0.02736 | 0.53 | 0.1403 |
 | TE | 0.01305 | 0 | 0 | 0 to 0.007888 | 0 | 0 | 0 to 0.02346 | not kept (su2 interval reaches 0 in both passes) | 0.01305 | 0 | 0 | 0 |
-| DL | 0 | 0.3255 | 0.94 | 0 to 0.4219 | 0.2497 | 0.98 | 0 to 0.3223 | not kept (su2 interval reaches 0 in both passes) | 0.3095 | 0 | 0 | 0 |
-| LB | 0.001665 | 0.3455 | 0.9 | 0.01496 to 0.4048 | 0.2905 | 0.92 | 0 to 0.3519 | not kept (su2 interval reaches 0 in pass 2); **held (U5)** | - | - | - | - |
+| DL | 0 | 0.3255 | 0.94 | 0 to 0.4219 | 0.2497 | 0.98 | 0 to 0.3223 | pass 1's set (amendment 3; pass 1's interval reaches 0) | 0.3095 | 0 | 0 | 0 |
+| LB | 0.001665 | 0.3455 | 0.9 | 0.01496 to 0.4048 | 0.2905 | 0.92 | 0 to 0.3519 | pass 1's set (amendment 3; pass 1's interval excludes 0); the plain two-pass rule would read: not kept (su2 interval reaches 0 in pass 2) | 0.001665 | 0.3455 | 0.9 | 0.2562 |
 | DB | 0 | 0.05972 | 0.83 | 0.02751 to 0.06814 | 0.05371 | 0.92 | 0.02036 to 0.06184 | Confirmed two-pass | 0 | 0.05972 | 0.83 | 0.1363 |
 | K | 0 | 0.0002346 | 0.94 | 0 to 0.001423 | 0 | 0 | 0 to 0.000361 | not kept (su2 interval reaches 0 in both passes) | 0.0002217 | 0 | 0 | 0 |
 | P | 0 | 1.6 | 0.62 | 0.6403 to 2.86 | 1.866 | 0.51 | 0.7226 to 3.052 | Confirmed two-pass | 0 | 1.6 | 0.62 | 0.9925 |
 | KR | 1.193 | 1.269 | 0.38 | 0 to 4.47 | 0 | 0 | 0 to 1.3 | not kept (su2 interval reaches 0 in both passes) | 2.143 | 0 | 0 | 0 |
 | PR | 0 | 0.8444 | 0.31 | 0 to 3.092 | 2.58 | 0.05 | 0 to 5.842 | not kept (su2 interval reaches 0 in both passes) | 0.5545 | 0 | 0 | 0 |
-
-- **LB held.** U5 unanswered: the passes disagree on the LB swing and the design's resolution (amendment 3, pass 1's set) is conditional on U5, so the family's state is held
 
 A family whose swing is not kept carries no once-per-season draw; its persistent spread is the same least-squares fit with su2 fixed at 0 (every lag moment pooled). Fitted against empirical lag moments (the AR(1) fit's misfit, pass 1):
 
@@ -62,61 +60,110 @@ A family whose swing is not kept carries no once-per-season draw; its persistent
 | KR | 2.447 / 2.463 (223) | 2.005 / 1.675 (67) | 0.174 / 1.376 (35) | 2.859 / 1.263 (14) | 2.429 / 1.22 (1) |
 | PR | 0.8212 / 0.8444 (188) | 0.7145 / 0.2618 (72) | -1.857 / 0.08115 (39) | 3.461 / 0.02516 (16) | -4.15 / 0.007799 (3) |
 
-## 3. Draft-slot starting estimates (flat under the U5 fallback)
+## 3. Aging (amendments 2 and 3; decision D1)
 
-First and second seasons above the floor; each player's own class left out when his prior is formed; the real selection slot or undrafted status for every club, Jacksonville's included (U4). The log-pick slope is fitted and reported, and applied at 0.
+Rule: one-step forecast residuals (no aging, current components); candidates Z, C, M1, M2; eligible only if it beats Z in both passes (pass 1 leave-one-season-pair-out weighted SSE, pass 2 BIC n ln(SSE/n) + k ln n); the lowest pass 1 SSE adopted; the curve is the fitted correction to a forecast from the player's own record: it moves the forecast's persistent part at each season step after his last line, never inside the record or a prior-only state. Age is measured on September 1 of season t, centred at 27; experience 0 and 1 are the first and second seasons since the class (an undrafted player first rostered in 2010 has no known experience). Pairs: 2010-2011, 2011-2012, 2012-2013.
 
-| Family | Drafted mean (SE, lines) | Undrafted mean (SE, lines) | Fitted log-pick slope (SE) | Applied |
-|---|---|---|---|---|
-| QB | -0.08719 (0.023, 48) | -0.2345 (0.15, 3) | -0.01902 (0.014) | 0 |
-| RB | -0.0354 (0.013, 89) | -0.04179 (0.023, 17) | -0.005262 (0.014) | 0 |
-| WR | -0.04769 (0.027, 120) | 0.001274 (0.054, 27) | -0.02131 (0.028) | 0 |
-| TE | -0.008413 (0.049, 45) | 0.06339 (0.086, 8) | -0.06153 (0.077) | 0 |
-| DL | -0.1678 (0.047, 208) | -0.4872 (0.071, 36) | -0.2623 (0.038) | 0 |
-| LB | -0.1318 (0.053, 169) | -0.5939 (0.043, 80) | -0.4814 (0.04) | 0 |
-| DB | -0.1406 (0.02, 255) | -0.234 (0.036, 71) | -0.1579 (0.019) | 0 |
-| K | -0.01021 (0.023, 8) | 0.03726 (0.015, 8) | 0.02563 (0.16) | 0 |
-| P | 0.4489 (0.56, 11) | -0.3503 (0.56, 16) | -1.46 (1.5) | 0 |
-| KR | -0.3208 (0.4, 70) | -1.693 (0.49, 20) | -0.5268 (0.54) | 0 |
-| PR | -0.03051 (0.51, 47) | -0.1131 (0.94, 13) | -0.1369 (0.52) | 0 |
+**Per family** (pass 1 leave-one-season-pair-out weighted SSE; pass 2 BIC; a candidate eligible only if it beats Z in both):
 
-Cells under the amendment-3 minimum of 30 are flagged, not merged (the rule is held): QB: undrafted rookie prior: 3 lines, honour cell: 18 seasons; RB: undrafted rookie prior: 17 lines, honour cell: 23 seasons; WR: undrafted rookie prior: 27 lines, honour cell: 25 seasons; TE: undrafted rookie prior: 8 lines, honour cell: 12 seasons; K: drafted rookie prior: 8 lines, undrafted rookie prior: 8 lines; P: drafted rookie prior: 11 lines, undrafted rookie prior: 16 lines, honour cell: 7 seasons; KR: undrafted rookie prior: 20 lines, honour cell: 8 seasons; PR: undrafted rookie prior: 13 lines.
+| Family | Rows (pass 1, pass 2) | Z SSE / BIC | C SSE / BIC | M1 SSE / BIC | M2 SSE / BIC | Beats Z: pass 1; pass 2 | Per-family result |
+|---|---|---|---|---|---|---|---|
+| QB | 104, 104 | 80.607 / -59.395 | 82.133 / -54.751 | 91.559 / -46.191 | 92.904 / -38.129 | none; none | Z |
+| RB | 210, 210 | 267.37 / 32.45 | 267.5 / 37.78 | 275.79 / 46.786 | 301.11 / 52.602 | none; none | Z |
+| WR | 288, 288 | 286.44 / -23.979 | 286.86 / -18.406 | 290.4 / -7.164 | 294.84 / 2.6157 | none; none | Z |
+| TE | 119, 119 | 107.87 / -11.551 | 106.78 / -8.9295 | 105.07 / -3.1638 | 106.28 / 6.081 | C, M1, M2; none | Z |
+| DL | 503, 502 | 879 / 282.69 | 883.84 / 288.7 | 828.65 / 258.63 | 837.73 / 271 | M1, M2; M1, M2 | M1 |
+| LB | 476, 488 | 552.86 / 274.16 | 559.7 / 280.35 | 549.4 / 269.79 | 532.32 / 270.61 | M1, M2; M1, M2 | M2 |
+| DB | 665, 678 | 712.79 / 104.71 | 702.96 / 99.168 | 698.07 / 99.364 | 706.5 / 112.08 | C, M1, M2; C, M1 | M1 |
+| K | 87, 87 | 104.14 / -8.6078 | 105.12 / -4.1777 | 107.34 / 3.9412 | 105.92 / 11.235 | none; none | Z |
+| P | 80, 80 | 85.202 / -2.4134 | 86.109 / 1.8983 | 63.744 / -11.132 | 68.504 / -3.0272 | M1, M2; M1, M2 | M1 |
+| KR | 67, 67 | 96.881 / 16.447 | 97.453 / 20.426 | 100.19 / 28.797 | 105.08 / 36.08 | none; none | Z |
+| PR | 72, 73 | 78.675 / 12.907 | 80.427 / 16.687 | 72.524 / 18.496 | 75.218 / 22.935 | M1, M2; none | Z |
 
-## 4. Honours as a pseudo-observation
+**Pooled across the non-specialist families** (QB, RB, WR, TE, DL, LB, DB; true-state SD of each family (residual over the family's sqrt(sb2 + su2), each pass its own); rows 2365 and 2389): decision D1 (October 16, 2026): a candidate set added after the per-family results were seen; recorded as such.
 
-An admissible honour (AP All-Pro first or second team, or an original Pro Bowl, public before the cutoff) is one more observation of that season's state, split between the persistent and swing parts by the Kalman gain: its value is the family's mean among honoured qualifier seasons and its variance their true-state dispersion over the evidence weight (1.0 Confirmed two-pass, 0.5 Single-pass).
+| Candidate | Pass 1 SSE | Pass 2 BIC | Pass 1 coefficients (SE) | Pass 2 coefficients (SE) |
+|---|---:|---:|---|---|
+| Z | 2886.93 | 702.362 | - | - |
+| C | 2892.86 | 709.115 | 0.01202 (0.022) | 0.02367 (0.023) |
+| M1 | 2833.79 | 649.892 | -0.06421 (0.029), -0.05954 (0.0075), 0.005083 (0.0018) | -0.0644 (0.031), -0.0685 (0.0079), 0.005538 (0.0019) |
+| M2 | 2841.01 | 657.816 | -0.06947 (0.03), -0.04097 (0.011), 0.002093 (0.0022), 0.2285 (0.092), 0.07464 (0.08) | -0.07044 (0.031), -0.04737 (0.012), 0.002205 (0.0023), 0.256 (0.095), 0.07353 (0.084) |
 
-| Family | Honoured seasons | Mean | True-state variance |
-|---|---:|---:|---:|
-| QB | 18 | 0.1832 | 0.002288 |
-| RB | 23 | 0.05662 | 0.002127 |
-| WR | 25 | 0.1673 | 0.001375 |
-| TE | 12 | 0.2763 | 0.0337 |
-| DL | 40 | 1.126 | 0.7849 |
-| LB | 37 | 1.109 | 0.8666 |
-| DB | 46 | 0.3693 | 0.07894 |
-| K | - | no estimable cell | - |
-| P | 7 | 2.938 | 1.862 |
-| KR | 8 | 3.333 | 13.46 |
-| PR | - | no estimable cell | - |
+Pooled result: **M1** (beats Z in both passes; the lowest pass 1 leave-one-season-pair-out SSE among M1, M2).
 
-## 5. Checks
+**Applied curves** (the one-step change of the persistent part, family units = scale x terms . coefficients):
 
-**Forecast calibration on the held-out pair** (each qualifying 2014 Weeks 1-4 line forecast from the player's lines through 2013; z = error over the forecast's own SD; within 2 SE means |mean z| and |var z - 1| inside two standard errors):
+| Family | Curve | Source | Terms | Coefficients | Scale | Status |
+|---|---|---|---|---|---:|---|
+| QB | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.1341 | pass 1's coefficients |
+| RB | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.05054 | pass 1's coefficients |
+| WR | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.1654 | pass 1's coefficients |
+| TE | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.1142 | pass 1's coefficients |
+| DL | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.5563 | pass 1's coefficients |
+| LB | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.5892 | pass 1's coefficients |
+| DB | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.2444 | pass 1's coefficients |
+| K | Z | family | - | - | - | - |
+| P | M1 | family | constant, age - 27, (age - 27)^2 | 0.6138, -0.1887, -0.007969 | 1 | Confirmed two-pass (pass 2 within 2 SE) |
+| KR | Z | family | - | - | - | - |
+| PR | Z | family | - | - | - | - |
+
+Check: the pooled candidate refitted on the forecast residuals with the applied curves (2365 rows) reads 8.53e-18, -4.63e-17, 2.04e-17 (before: -0.06421, -0.05954, 0.005083); the curve corrects the one-step forecast it was fitted on, applied after each player's last line.
+
+## 4. Draft-slot starting estimates
+
+First and second seasons above the floor; each player's own class left out when his prior is formed; the real selection slot or undrafted status for every club, Jacksonville's included (U4). The log-pick slope is kept only if its leave-one-class-out skill is above 0 in both passes and it is negative in both (U5), on at least 30 drafted lines.
+
+| Family | Drafted mean (SE, lines) | Undrafted mean (SE, lines) | Pass 1 slope (SE, lines, skill) | Pass 2 slope (lines, skill) | Slope | Drafted cell | Undrafted cell |
+|---|---|---|---|---|---|---|---|
+| QB | -0.08719 (0.023, 48) | -0.2345 (0.15, 3) | -0.01902 (0.014, 48, 0.0523) | -0.02189 (48, 0.0646) | kept: kept in both passes and negative in both | slope | slope_last_pick |
+| RB | -0.0354 (0.013, 89) | -0.04179 (0.023, 17) | -0.005262 (0.014, 89, -0.0195) | -0.001985 (89, -0.00804) | not kept: not kept in both passes (leave-one-class-out skill -0.01949, -0.008036) | own | pooled |
+| WR | -0.04769 (0.027, 120) | 0.001274 (0.054, 27) | -0.02131 (0.028, 120, 0.00158) | -0.01538 (120, 0.000611) | kept: kept in both passes and negative in both | slope | slope_last_pick |
+| TE | -0.008413 (0.049, 45) | 0.06339 (0.086, 8) | -0.06153 (0.077, 45, 0.00437) | -0.08346 (46, 0.00214) | kept: kept in both passes and negative in both | slope | slope_last_pick |
+| DL | -0.1678 (0.047, 208) | -0.4872 (0.071, 36) | -0.2623 (0.038, 208, 0.167) | -0.2507 (208, 0.159) | kept: kept in both passes and negative in both | slope | own |
+| LB | -0.1318 (0.053, 169) | -0.5939 (0.043, 80) | -0.4814 (0.04, 169, 0.398) | -0.4596 (174, 0.378) | kept: kept in both passes and negative in both | slope | own |
+| DB | -0.1406 (0.02, 255) | -0.234 (0.036, 71) | -0.1579 (0.019, 255, 0.218) | -0.1485 (264, 0.211) | kept: kept in both passes and negative in both | slope | own |
+| K | -0.01021 (0.023, 8) | 0.03726 (0.015, 8) | 0.02563 (0.16, 8, -27.4) | -0.0248 (8, -31.2) | not kept: fewer than 30 drafted rookie lines in a pass (8, 8) | population | population |
+| P | 0.4489 (0.56, 11) | -0.3503 (0.56, 16) | -1.46 (1.5, 11, -1.62) | -1.472 (11, -1.57) | not kept: fewer than 30 drafted rookie lines in a pass (11, 11) | population | population |
+| KR | -0.3208 (0.4, 70) | -1.693 (0.49, 20) | -0.5268 (0.54, 70, -0.0671) | -0.5102 (70, -0.0638) | not kept: not kept in both passes (leave-one-class-out skill -0.06705, -0.06382) | own | pooled |
+| PR | -0.03051 (0.51, 47) | -0.1131 (0.94, 13) | -0.1369 (0.52, 47, -0.0963) | -0.3174 (47, -0.0636) | not kept: not kept in both passes (leave-one-class-out skill -0.09626, -0.06364) | own | pooled |
+
+**The 30-event minimum cell (U5).** A fitted cell under 30 raw events is not fitted on its own: QB: undrafted rookie cell: 3 lines: the slope at the class's last pick, honour cell: 18 seasons: no pseudo-observation; RB: undrafted rookie cell: 17 lines: the pooled rookie cell (106), honour cell: 23 seasons: no pseudo-observation; WR: undrafted rookie cell: 27 lines: the slope at the class's last pick, honour cell: 25 seasons: no pseudo-observation; TE: undrafted rookie cell: 8 lines: the slope at the class's last pick, honour cell: 12 seasons: no pseudo-observation; K: rookie cells: 16 lines in all, under 30: the population prior, draft-slot slope: 8 drafted lines: not fitted, honour cell: 7 seasons: no pseudo-observation; P: rookie cells: 27 lines in all, under 30: the population prior, draft-slot slope: 11 drafted lines: not fitted, honour cell: 7 seasons: no pseudo-observation; KR: undrafted rookie cell: 20 lines: the pooled rookie cell (90), honour cell: 8 seasons: no pseudo-observation; PR: undrafted rookie cell: 13 lines: the pooled rookie cell (60).
+
+## 5. Honours as a pseudo-observation
+
+An admissible honour (AP All-Pro first or second team, or an original Pro Bowl, public before the cutoff) is one more observation of that season's state, split between the persistent and swing parts by the Kalman gain: its value is the family's mean among honoured qualifier seasons and its variance their true-state dispersion over the evidence weight (1.0 Confirmed two-pass, 0.5 Single-pass). A cell under 30 honoured seasons enters no pseudo-observation; honours stay runtime floors.
+
+| Family | Honoured seasons | Mean | True-state variance | Used |
+|---|---:|---:|---:|---|
+| QB | 18 | 0.1832 | 0.002288 | no |
+| RB | 23 | 0.05662 | 0.002127 | no |
+| WR | 25 | 0.1673 | 0.001375 | no |
+| TE | 12 | 0.2763 | 0.0337 | no |
+| DL | 40 | 1.126 | 0.7849 | yes |
+| LB | 37 | 1.109 | 0.8666 | yes |
+| DB | 46 | 0.3693 | 0.07894 | yes |
+| K | 7 | no estimable cell | - | no |
+| P | 7 | 2.938 | 1.862 | no |
+| KR | 8 | 3.333 | 13.46 | no |
+| PR | - | no estimable cell | - | no |
+
+## 6. Checks
+
+**Forecast calibration on the held-out pair** (each qualifying 2014 Weeks 1-4 line forecast from the player's lines through 2013 under the applied curve; z = error over the forecast's own SD; within 2 SE means |mean z| and |var z - 1| inside two standard errors):
 
 | Family | Players | Mean z (SE) | Var z (SE) | Status |
 |---|---:|---|---|---|
-| QB | 32 | -0.00874 (0.14) | 0.669 (0.25) | within 2 SE |
-| RB | 40 | 0.0269 (0.14) | 0.739 (0.23) | within 2 SE |
-| WR | 54 | -0.0392 (0.12) | 0.771 (0.19) | within 2 SE |
-| TE | 21 | -0.255 (0.22) | 1.03 (0.32) | within 2 SE |
-| DL | 75 | 0.00272 (0.11) | 0.982 (0.16) | within 2 SE |
-| LB | - | - | - | held |
-| DB | 111 | 0.0206 (0.084) | 0.779 (0.13) | within 2 SE |
-| K | 6 | -0.0813 (0.27) | 0.438 (0.63) | within 2 SE |
-| P | 6 | -0.101 (0.38) | 0.845 (0.63) | within 2 SE |
+| QB | 32 | 0.038 (0.14) | 0.645 (0.25) | within 2 SE |
+| RB | 40 | 0.00897 (0.14) | 0.754 (0.23) | within 2 SE |
+| WR | 54 | -0.0498 (0.12) | 0.758 (0.19) | within 2 SE |
+| TE | 21 | -0.228 (0.22) | 1.06 (0.32) | within 2 SE |
+| DL | 75 | -0.0192 (0.11) | 0.976 (0.16) | within 2 SE |
+| LB | 71 | -0.167 (0.12) | 0.991 (0.17) | within 2 SE |
+| DB | 111 | -0.00992 (0.085) | 0.802 (0.13) | within 2 SE |
+| K | 6 | -0.0173 (0.28) | 0.455 (0.63) | within 2 SE |
+| P | 6 | -0.377 (0.28) | 0.462 (0.63) | within 2 SE |
 | KR | 4 | 0.0387 (0.62) | 1.53 (0.82) | within 2 SE |
-| PR | 8 | -0.00821 (0.32) | 0.839 (0.53) | within 2 SE |
+| PR | 8 | 0.00392 (0.33) | 0.859 (0.53) | within 2 SE |
 
 **Two-pass agreement** (each tolerance 2 SE from pass 1's own n; quantities outside are flagged and the pass-1 value is used): QB 0 of 6 outside; RB 0 of 6 outside; WR 0 of 6 outside; TE 0 of 6 outside; DL 0 of 6 outside; LB 0 of 6 outside; DB 0 of 6 outside; K 0 of 6 outside; P 0 of 6 outside; KR 0 of 6 outside; PR 0 of 6 outside.
 
@@ -140,43 +187,58 @@ An admissible honour (AP All-Pro first or second team, or an original Pro Bowl, 
 
 | Family | Players | Median | 90th | 99th | Max |
 |---|---:|---:|---:|---:|---:|
-| QB | 44 | 0.0045 | 0.077 | 0.26 | 0.26 |
-| RB | 79 | 0.00045 | 0.0069 | 0.083 | 0.083 |
-| WR | 112 | 0.00021 | 0.011 | 0.043 | 0.055 |
-| TE | 50 | 0.00042 | 0.0081 | 0.082 | 0.082 |
+| QB | 44 | 0.0045 | 0.064 | 0.29 | 0.29 |
+| RB | 79 | 0.00046 | 0.0069 | 0.083 | 0.083 |
+| WR | 112 | 0.0002 | 0.0097 | 0.043 | 0.055 |
+| TE | 50 | 0.00042 | 0.0081 | 0.098 | 0.098 |
 | DL | 190 | 6.7e-06 | 0.00036 | 0.0032 | 0.0057 |
-| LB | - | - | - | - | held |
-| DB | 243 | 0.00012 | 0.01 | 0.04 | 0.063 |
-| K | 30 | 0.0092 | 0.085 | 0.17 | 0.17 |
-| P | 28 | 0.0024 | 0.031 | 0.11 | 0.11 |
-| KR | 33 | 0 | 0.0085 | 0.012 | 0.012 |
+| LB | 173 | 0.0004 | 0.0079 | 0.1 | 0.17 |
+| DB | 243 | 0.00014 | 0.0023 | 0.04 | 0.063 |
+| K | 30 | 0.02 | 0.089 | 0.17 | 0.17 |
+| P | 28 | 0.0028 | 0.031 | 0.097 | 0.097 |
+| KR | 33 | 0 | 0.0079 | 0.012 | 0.012 |
 | PR | 34 | 0 | 0.03 | 0.38 | 0.38 |
 
-**Tiers:** held (the tier population on the qualifier floors rests on amendment 3 (U5)).
+## 7. Drawn tiers (amendment 3)
 
-## 6. Feedback (D): fitted, applied at 0 in 2014
+Drawn tier: the drawn 2014 value against the family's cut points, the quantiles of the tier population's drawn-value distribution at the production file's percentile cuts; no-state players and families without cut points read Average. Population: public rows of the family with a state and a 2010-2012 line at or above the committed production-evidence qualifier floor (library/data/2010_2012_production_evidence.json, preregistered metrics minimum). The tier exists only privately at runtime, from the drawn value; no file holds one.
 
-Outcome: one-step forecast residual of a qualifying 2011-2013 season, in true-state SD units, pooled over families; role = change in starter share since the previous line, availability = seasons missed between lines; the 2013-to-2014 Weeks 1-4 pair held out. Snaps carry weight 0 (no public 2010-2012 snap counts). Role is applied at 0 for the 2015 transition until Stone decides (default 1B.13); availability from the 2015 transition (default 1B.13); F is 0 in 2014.
+| Family | Floor | Population | Cut points (SD units, at the shares below) | Synthetic check (20 references): shares against targets | Within 2 SE | Chi-square (df), p |
+|---|---:|---:|---|---|---|---|
+| QB | 200 | 39 | -1.55 at 0.1, -0.807 at 0.3, 0.229 at 0.7, 0.981 at 0.9 | Replacement-Level 0.0936 / 0.1; Below-Average 0.213 / 0.2; Average 0.391 / 0.4; Plus 0.227 / 0.2; Elite 0.0756 / 0.1 | no: Elite | 8.57 (4), 0.073 |
+| RB | 100 | 50 | -1.07 at 0.1, -0.492 at 0.3, 0.361 at 0.7, 1.19 at 0.9 | Replacement-Level 0.084 / 0.1; Below-Average 0.213 / 0.2; Average 0.413 / 0.4; Plus 0.187 / 0.2; Elite 0.103 / 0.1 | yes | 4.76 (4), 0.31 |
+| WR | 60 | 70 | -1.43 at 0.1, -0.65 at 0.3, 0.445 at 0.7, 1.24 at 0.9 | Replacement-Level 0.106 / 0.1; Below-Average 0.204 / 0.2; Average 0.399 / 0.4; Plus 0.199 / 0.2; Elite 0.0921 / 0.1 | yes | 1.55 (4), 0.82 |
+| TE | 40 | 34 | -1.79 at 0.1, -0.917 at 0.3, 0.317 at 0.7, 1.39 at 0.9 | Replacement-Level 0.0926 / 0.1; Below-Average 0.207 / 0.2; Average 0.396 / 0.4; Plus 0.201 / 0.2; Elite 0.103 / 0.1 | yes | 0.651 (4), 0.96 |
+| DL | 8 | 146 | -1.11 at 0.1, -0.576 at 0.3, 0.568 at 0.7, 1.51 at 0.9 | Replacement-Level 0.0969 / 0.1; Below-Average 0.204 / 0.2; Average 0.4 / 0.4; Plus 0.202 / 0.2; Elite 0.0969 / 0.1 | yes | 0.863 (4), 0.93 |
+| LB | 8 | 123 | -1.21 at 0.1, -0.543 at 0.3, 0.565 at 0.7, 1.52 at 0.9 | Replacement-Level 0.089 / 0.1; Below-Average 0.206 / 0.2; Average 0.407 / 0.4; Plus 0.198 / 0.2; Elite 0.0992 / 0.1 | yes | 3.8 (4), 0.43 |
+| DB | 8 | 177 | -1.38 at 0.1, -0.617 at 0.3, 0.473 at 0.7, 1.28 at 0.9 | Replacement-Level 0.109 / 0.1; Below-Average 0.202 / 0.2; Average 0.392 / 0.4; Plus 0.196 / 0.2; Elite 0.101 / 0.1 | yes | 4.05 (4), 0.4 |
+| K | 15 | 25 | - (population under 30 rows: every player reads Average) | - | - | - |
+| P | 30 | 21 | - (population under 30 rows: every player reads Average) | - | - | - |
+
+## 8. Feedback (D): fitted, applied at 0 in 2014
+
+Outcome: one-step forecast residual of a qualifying 2011-2013 season, in true-state SD units, pooled over families, under the adopted aging curves; role = change in starter share since the previous line, availability = seasons missed between lines; the 2013-to-2014 Weeks 1-4 pair held out. Snaps carry weight 0 (no public 2010-2012 snap counts). Role is applied at 0 for the 2015 transition until Stone decides (default 1B.13); availability from the 2015 transition (default 1B.13); F is 0 in 2014.
 
 | Term | Pass 1 slope (SE) | Pass 1 LOO-club skill | Cap quantile | Pass 2 slope (SE) | Pass 2 skill | Kept | Weight |
 |---|---|---:|---:|---|---:|---|---:|
-| role | 0.8427 (0.17) | 0.0087 | 0.75 | 0.8927 (0.19) | 0.00827 | yes, Confirmed two-pass | 0.8427 |
-| availability | -0.2602 (0.22) | -0.000839 | 1 | -0.2145 (0.23) | -0.00149 | no | 0 |
+| role | 0.8235 (0.15) | 0.00986 | 0.75 | 0.852 (0.16) | 0.00913 | yes, Confirmed two-pass | 0.8235 |
+| availability | -0.329 (0.19) | -0.000174 | 1 | -0.2896 (0.19) | -0.000766 | no | 0 |
 
 In real data a role change partly reflects coaches' information about talent, not development caused by playing time; applying it causally would be Stone's policy, not something this fit establishes.
 
-## 7. The 2014 public table
+## 9. The 2014 public table
 
-Rows for every player in the [branch identity table](../career/2014/League/personnel/branch_identity.json), keyed by gsis id, with no club field: record family, basis, m_b, m_u, P = [Pbb, Pbu, Puu], the honours lift, the age on September 1, 2014 (recorded, unused under Z aging), class and real selection slot, and the 2010-2012 source rows. Bases: draft 273, held 250, no_state 360, population 2, record 765, undrafted 188.
+Rows for every player in the [branch identity table](../career/2014/League/personnel/branch_identity.json), keyed by gsis id, with no club field: record family, basis, m_b, m_u, P = [Pbb, Pbu, Puu], the honours lift, the age on September 1, 2014, the applied aging curve, class and real selection slot, and the 2010-2012 source rows. Bases: draft 337, no_state 360, population 19, record 909, undrafted 213.
 
-- record: carried from his own 2010-2012 lines; draft or undrafted: the flat starting estimate for his class (his own class left out); population: a veteran entering before 2010 with no line, N(0, diag(sb2, su2)); held: a family held under U5; no_state: offensive linemen, long snappers and players with no family.
+- record: carried from his own 2010-2012 lines, with the applied aging curve over the forecast horizon; draft or undrafted: the starting estimate for his class (his own class left out) by the family's rookie rule; population: a veteran entering before 2010 with no line, or a rookie of a family with fewer than 30 rookie lines, N(0, diag(sb2, su2)); no_state: offensive linemen, long snappers and players with no family.
 - The table is append-only for later entrants; once batch B7 binds the season, an edit to an existing row is refused.
 
-## 8. Honest limits
+## 10. Honest limits
 
-- Five seasons, one of them four weeks long, identify the persistent-versus-swing split weakly; the bootstrap intervals say so family by family.
+- Five seasons, one of them four weeks long, identify the persistent-versus-swing split weakly; the bootstrap intervals say so family by family. The DL and LB sets are pass 1's under amendment 3, not confirmed two-pass.
+- The DL, LB and DB families hold 1644 of the pooled set's 2365 pass-1 rows, and their disruption metric counts games with a recorded statistic: part of a young defender's rise can be a growing role, not ability alone. Under D1 every non-specialist family uses the pooled curve when it is kept, whatever its own fit read (section 3).
+- The curve corrects a one-step forecast; the 2014 expectation of a player last seen in 2012 composes two steps (ages in 2012 and 2013), an extrapolation of a one-step fit.
 - Survivorship and selection on opportunity remain: players who leave are unobserved, and a rookie prior describes a rookie who reaches the floor.
 - An honour pulls a player toward the honoured group's mean, so for a player already estimated above that mean the honours lift is negative; the runtime's honour floor (batch B7) is a separate rule.
-- Undrafted rookie cells are small in several families (section 3); with the minimum-cell rule held, their means stand as computed, with their standard errors.
-- The disruption metric counts games with a recorded statistic, not snaps; the noise moment and the floors are per game.
+- A kept draft-slot slope's smaller leave-one-class-out skill across the two passes: QB 0.0523, WR 0.000611, TE 0.00214, DL 0.159, LB 0.378, DB 0.211; a small positive skill passes the rule as written.
 - These are priors on a hidden engine value. They are not scouting evidence, not a grade and not a forecast of any real player's 2014 season.

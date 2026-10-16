@@ -59,7 +59,7 @@ def build_game_packet(event_id, snapshot, home, away, *, venue="home", weather="
             bound = player_state.require_binding(record["league_year"])
             if record["manifest_sha256"] != bound["manifest_sha256"] or record["commitment"] != bound["commitment"]:
                 raise ValueError(f"{team.team_id} player-state record names another binding than the committed one")
-            if any("latent_value" in p for p in record.get("players", {}).values()):
+            if any("latent_value" in p or "drawn_tier" in p for p in record.get("players", {}).values()):
                 raise ValueError(f"{team.team_id} TeamInput carries drawn values before closure")
     if not normalize_players(home) or not normalize_players(away):
         raise ValueError("each club requires an available, roster-bound participant")
