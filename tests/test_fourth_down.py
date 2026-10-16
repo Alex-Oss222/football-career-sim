@@ -790,6 +790,63 @@ class LiveTests(unittest.TestCase):
             self.assertTrue(all(d["basis"] == "league" for _, d in records(r)))
 
 
+class PreKickLedgerTests(unittest.TestCase):
+    """Kernel 2014.6 release check (October 16, 2026). A replayed drive whose
+    fourth-down kick carries a pre-kick penalty row (an accepted defensive
+    foul before the kick, here with an automatic first down) is decided at
+    that row's fourth-down state, so its kick row may stand at first down.
+    Two of the 250 standard-sample games with the acceptance module's
+    synthetic states under synthetic reference 1 (sample-2013-7-68 and -94)
+    were refused by validate_result for it ("0 fourth downs, 1 decisions"):
+    the per-record check read the pre-kick state while the count read only
+    the kick row's down. Tested on resolved games, the case laid into the
+    ledger, so no single draw is pinned."""
+
+    @staticmethod
+    def errors(possessions, rows_by_drive):
+        from runtime.play_detail import _check_fourth_downs
+        out = []
+        _check_fourth_downs(possessions, rows_by_drive, lambda cls, msg: out.append((cls, msg)))
+        return out
+
+    def test_a_replayed_kick_after_a_first_down_pre_kick_foul_is_its_fourth_down(self):
+        from runtime import penalties
+        from runtime.play_detail import KICK_TYPES
+        checked = 0
+        for i in range(12):
+            r = play("b9f-prekick-%d" % i)
+            rows_by_drive = {}
+            for row in r["play_ledger"]:
+                if row.get("play_type") not in KICK_TYPES:
+                    rows_by_drive.setdefault(row["drive"], []).append(row)
+            self.assertEqual(self.errors(r["possessions"], rows_by_drive), [])
+            for p in r["possessions"]:
+                recs = p.get("fourth_downs") or []
+                rows = rows_by_drive.get(p["number"], [])
+                kick = next((x for x in rows if x.get("play_type") == "field_goal"), None)
+                if not (recs and recs[-1].get("resolution") == "replayed" and recs[-1]["decision"] == "field_goal"
+                        and kick is not None and kick.get("down") == 4
+                        and not any(x.get("play_type") == penalties.PENALTY_ROW for x in rows)):
+                    continue
+                state = recs[-1]["state"]
+                foul = {"drive": p["number"], "play_type": penalties.PENALTY_ROW,
+                        "penalty_enforcement": penalties.PRE_KICK, "down": 4, "ydstogo": state["ydstogo"],
+                        "yardline": state["los"], "first_down": True}
+                laid = copy.deepcopy(rows_by_drive)
+                drive_rows = laid[p["number"]]
+                at = next(k for k, x in enumerate(drive_rows) if x.get("play_type") == "field_goal")
+                drive_rows[at] = dict(drive_rows[at], down=1)
+                drive_rows.insert(at, foul)
+                self.assertEqual(self.errors(r["possessions"], laid), [], p["number"])
+                unmarked = copy.deepcopy(laid)
+                kick_row = next(x for x in unmarked[p["number"]] if x.get("play_type") == "field_goal")
+                kick_row.pop("fourth_down_decision", None)
+                self.assertIn("an undecided fourth-down kick",
+                              " ".join(msg for _, msg in self.errors(r["possessions"], unmarked)))
+                checked += 1
+        self.assertGreater(checked, 2)
+
+
 class AuditTests(unittest.TestCase):
     def test_band_rows_read_the_artifact_and_grade_only_the_chart(self):
         games = [play("b9f-band-%d" % i) for i in range(10)]

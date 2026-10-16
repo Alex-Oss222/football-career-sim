@@ -103,6 +103,37 @@ def write(record, root=ROOT):
     return path
 
 
+def check_errors(rebuilt, committed):
+    """Why a committed week's observables differ from their rebuild ([] when
+    they agree). Every observed field (the clubs' rows, the events, the bases,
+    the schema, season and week) must be identical. The ``feedback`` block is
+    the record of the P5 fit in force when the file was written: its
+    ``applied`` rule must equal the current model's (F is 0 in 2014, so no
+    value reads the weights), and its weights are dated history, never
+    re-derived from a later fit (kernel 2014.6 release check, October 16,
+    2026: the U5 refit moved the role weight after the Weeks 1-4 files were
+    written, and a closed week's record is never rewritten)."""
+    errors = ["%s differs" % key for key in sorted(set(rebuilt) | set(committed))
+              if key != "feedback" and rebuilt.get(key) != committed.get(key)]
+    now, then = rebuilt.get("feedback") or {}, committed.get("feedback") or {}
+    if then.get("applied") != now.get("applied"):
+        errors.append("feedback.applied differs from the current model's")
+    if not isinstance(then.get("weights"), dict) or set(then["weights"]) != set(now.get("weights") or {}):
+        errors.append("feedback.weights does not name the current model's P5 inputs")
+    return errors
+
+
+def recorded_weights_note(rebuilt, committed):
+    """A plain note when the weights recorded at writing differ from the
+    current fit (None when they agree); information, never a failure."""
+    now = (rebuilt.get("feedback") or {}).get("weights")
+    then = (committed.get("feedback") or {}).get("weights")
+    if now == then:
+        return None
+    return "P5 weights recorded at writing %s; current fit %s" % (
+        json.dumps(then, sort_keys=True), json.dumps(now, sort_keys=True))
+
+
 def rebuild_errors(package, receipts_dir, skip=()):
     """Why a rebuilt package does not reproduce the closed week: a club whose
     dressed list differs from its receipt's player rows (clubs in `skip`

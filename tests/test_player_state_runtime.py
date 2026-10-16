@@ -756,6 +756,30 @@ class PrivacyAndObservablesTests(unittest.TestCase):
         for week in (1, 2, 3):
             self.assertTrue(observables.observables_path(week, 2014, ROOT).is_file())
 
+    def test_the_committed_weeks_rebuild_their_observations(self):
+        # Kernel 2014.6 release check (October 16, 2026): each committed
+        # Weeks 1-4 file's observations rebuild exactly from committed data
+        # (scripts/render_observables.py --check); the P5 weights it recorded
+        # when written stay as written (the U5 refit moved the role weight
+        # later), and any changed observation or applied rule is caught.
+        from runtime import observables
+        for week in (1, 2, 3, 4):
+            with self.subTest(week=week):
+                rebuilt = observables.rebuild_record(week, 2014, ROOT, strength_model=strength.MODEL)
+                committed = json.loads(observables.observables_path(week, 2014, ROOT).read_text())
+                self.assertEqual(observables.check_errors(rebuilt, committed), [])
+                self.assertEqual(rebuilt["feedback"], observables.feedback_record())
+        changed = copy.deepcopy(committed)
+        changed["clubs"]["Jacksonville Jaguars"][0]["active"] = not changed["clubs"]["Jacksonville Jaguars"][0]["active"]
+        self.assertEqual(observables.check_errors(rebuilt, changed), ["clubs differs"])
+        changed = copy.deepcopy(committed)
+        changed["feedback"]["applied"] = dict(changed["feedback"]["applied"], in_2014=1)
+        self.assertEqual(observables.check_errors(rebuilt, changed), ["feedback.applied differs from the current model's"])
+        changed = copy.deepcopy(committed)
+        changed["feedback"]["weights"] = dict(rebuilt["feedback"]["weights"])
+        self.assertEqual(observables.check_errors(rebuilt, changed), [])
+        self.assertIsNone(observables.recorded_weights_note(rebuilt, changed))
+
 
 if __name__ == "__main__":
     unittest.main()

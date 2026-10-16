@@ -10,7 +10,10 @@ closure; this command rebuilds a week closed before that record existed
 background club's closed receipt or nothing is written; Jacksonville's rows
 come from its closed full receipt where the current roster no longer rebuilds
 that week's frozen input, and the file says so. --check compares the rebuild
-with the committed file and writes nothing. No value or grade is written.
+with the committed file and writes nothing: every observed field must be
+identical; the P5 weights a file recorded when it was written are dated
+history, reported when a later fit differs (runtime.observables.check_errors).
+No value or grade is written.
 """
 from __future__ import annotations
 
@@ -40,10 +43,12 @@ def main(argv=None):
             return 1
         rebuilt = observables.rebuild_record(args.week, args.season, ROOT, strength_model=MODEL)
         committed = json.loads(target.read_text(encoding="utf-8"))
-        if rebuilt != committed:
-            print("OBSERVABLES: DIFFERS %s" % target.relative_to(ROOT))
+        errors = observables.check_errors(rebuilt, committed)
+        if errors:
+            print("OBSERVABLES: DIFFERS %s (%s)" % (target.relative_to(ROOT), "; ".join(errors)))
             return 1
-        print("OBSERVABLES: OK %s" % target.relative_to(ROOT))
+        note = observables.recorded_weights_note(rebuilt, committed)
+        print("OBSERVABLES: OK %s%s" % (target.relative_to(ROOT), " (%s)" % note if note else ""))
         return 0
     try:
         record, path = observables.backfill(args.week, args.season, ROOT, strength_model=MODEL)

@@ -2687,7 +2687,15 @@ def _check_fourth_downs(possessions, rows_by_drive, err):
                     err("fourth_down_decision_incoherent", "%s snap %s: an undecided fourth down"
                         % (where, r.get("snap_in_drive")))
         for r in kicks:
-            if r.get("down") == 4:
+            # Kernel 2014.6 release check fix (October 16, 2026): a replayed
+            # kick is decided at its first pre-kick penalty row's state (as
+            # the per-record check below reads it), so a fourth-down pre-kick
+            # row marks its kick even when an accepted defensive foul there
+            # gave the kick row a first down.
+            before = rows[:rows.index(r)]
+            pre_kick = next((x for x in before if x.get("play_type") == penalty_records.PENALTY_ROW
+                             and x.get("penalty_enforcement") == penalty_records.PRE_KICK), None)
+            if r.get("down") == 4 or (pre_kick is not None and pre_kick.get("down") == 4):
                 marked += 1
                 if not r.get("fourth_down_decision"):
                     err("fourth_down_decision_incoherent", "%s %s: an undecided fourth-down kick"
