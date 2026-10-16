@@ -414,7 +414,10 @@ def validate(root=ROOT):
         from runtime.scoring_decisions import sheet_errors as decision_errors
         for sheet_path in sorted((root/'career').glob('20*/**/call_sheet.json')):
             data = json.loads(sheet_path.read_text())
-            for problem in decision_errors(data.get('decisions')):
+            # Batch B9F: a fourth-down block's named calls must be calls of the sheet.
+            from runtime.fourth_down import sheet_call_names
+            names = sheet_call_names(data.get('offensive_call_sheet') or ())
+            for problem in decision_errors(data.get('decisions'), names):
                 require(False, f'{sheet_path.relative_to(root)}: {problem}')
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append(f'Call sheet decision blocks cannot be checked: {exc}')

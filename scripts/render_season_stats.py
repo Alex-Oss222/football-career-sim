@@ -13,7 +13,7 @@ if str(ROOT) not in sys.path:
 
 from runtime.bands import (
     KERNEL_2013_6_LABEL, KNOWN_DETECTION_BOUND, LEGACY_LABEL, audit, audit_drive_model, audit_field_position,
-    audit_injuries, audit_scoring, coherence, cohorts, current_cohorts, known_detections, known_status, provisional_detections,
+    audit_fourth_down, audit_injuries, audit_scoring, coherence, cohorts, current_cohorts, known_detections, known_status, provisional_detections,
 )
 from runtime.calibration_base import cohort_base
 from runtime.stat_tables import (
@@ -494,6 +494,7 @@ def _base_cohort_lines(version, members, empty):
     fp_games, fp_rows = audit_field_position(members, cohort=version)
     injury_games, injury_rows = audit_injuries(members, cohort=version)
     scoring_games, scoring_rows = audit_scoring(members, cohort=version)
+    fourth_games, fourth_rows = audit_fourth_down(members, cohort=version)
     checked, counts = coherence(members, cohort=version)
     sources = ", ".join("`%s`" % pin.path for role, pin in base.files if role != "specification")
     scoring = [
@@ -503,6 +504,13 @@ def _base_cohort_lines(version, members, empty):
         "3*sqrt(c/n), and a rate row reads INSUFFICIENT SAMPLE below 30 events. INFORMATIONAL "
         "rows are not graded and MEASURED rows have no centre.", "",
     ] + _band_table(scoring_rows, centre_label=label) + [""] if scoring_rows else []
+    fourth = [
+        "### Fourth-down rows", "",
+        "Fourth-down decisions and conversions (kernel 2014.6 batch B9F). Centres from the base's "
+        "fourth-down artifact; the go share and attempts rows grade only the league chart's decisions, "
+        "and the club decisions of a standing rule or a live call are counted apart. Rates use "
+        "3*sqrt(p(1-p)/n) and counts 3*sqrt(c/n); a rate row reads INSUFFICIENT SAMPLE below 30 events.", "",
+    ] + _band_table(fourth_rows, centre_label=label) + [""] if fourth_rows else []
     return [
         "## Kernel %s cohort (%s)" % (version, _week_span(members, empty)), "",
         "**Calibration base:** %s (%s). **Team-games audited:** %d. Carry shares exclude "
@@ -523,7 +531,7 @@ def _base_cohort_lines(version, members, empty):
         "The injury calibration's acceptance bands (kernel 2014.4 method): WITHIN when the "
         "observed value lies inside the band; the centre column is the band midpoint and the "
         "tolerance its half-width.", "",
-    ] + _band_table(injury_rows, centre_label="band midpoint") + [""] + scoring + [
+    ] + _band_table(injury_rows, centre_label="band midpoint") + [""] + scoring + fourth + [
         "### Ledger coherence", "",
         "Zero-tolerance counts from `runtime.play_detail.check_ledger`, checked with this "
         "base's rules. Games checked: %d." % checked, "",

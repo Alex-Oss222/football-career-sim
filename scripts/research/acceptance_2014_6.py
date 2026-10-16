@@ -50,6 +50,21 @@ readings (no band table):
               validation errors, fallback_zero_tuple, the onside kicks and
               the onside starts in the last 5:00 of the game or overtime.
 
+Batch B9F (live fourth downs) adds one block with its own readings:
+
+  fourth-swap the specification's label swap (library/2014_6_fourth_down_specification.md,
+              section 12): Jacksonville's Week 4 game-day inputs (slate
+              clubs, synthetic latent draws) carry the FOURTH_SWAP standing
+              fourth-down block and play San Diego at a neutral site, labels
+              fourth-swap-2014.6-0 .. -119; the same labels with the same
+              inputs relabelled Denver Broncos; and the same labels with the
+              same block (the same decision sequence as a function of the
+              state) moved to San Diego. It reports each arm's compliance
+              (the holder's fourth downs by its block, the other club's by
+              the chart), go decisions and conversions, and the carrier's
+              points, and the Jacksonville against Denver z of points, go
+              share and conversion rate (within 3 SE).
+
 Batch B7 (player states at runtime). Under a profile whose strength model is
 player-state-v1 the strength records are player-state records with synthetic
 latent draws: no private service is called. A synthetic season reference
@@ -95,13 +110,23 @@ for path in (ROOT, ROOT / "tests", ROOT / "scripts" / "research"):
 BLOCKS = {"a1": ("acc-2014.6-", 1000), "a2": ("acc-2014.6-x", 2000), "slate": ("slate-2014.6-", 512),
           "a1z": ("acc-2014.6-z", 1000), "dev": ("dev-2014.6-", None),
           # Batch B9 readings with their own summaries (swap_block, late_onside_block).
-          "swap": ("swap2-2014.6-", 120), "late-onside": ("late-onside-2014.6-", 600)}
+          "swap": ("swap2-2014.6-", 120), "late-onside": ("late-onside-2014.6-", 600),
+          # Batch B9F reading with its own summary (fourth_swap_block).
+          "fourth-swap": ("fourth-swap-2014.6-", 120)}
 # The swap block's blocks (tests/test_scoring_decisions.py GO_LATE and ONSIDE_LATE).
 GO_LATE = {"otherwise": "kick", "rules": [{"when": {"period": [4], "diff_after_td": [-2, -5, -10]}, "decision": "go"},
                                           {"when": {"period": [1, 2, 3], "diff_after_td": {"min": 16}}, "decision": "go"}]}
 ONSIDE_LATE = {"otherwise": "deep", "rules": [{"when": {"period": [4], "diff_after_score": {"min": -16, "max": -1},
                                                         "game_seconds_max": 300}, "decision": "onside"}]}
 SWAP_ARMS = ("jax", "den", "sd")
+# The fourth-swap block's standing fourth-down block (a fixture, not Stone's;
+# no named call, so the same block is valid on either club's sheet): go on
+# fourth and 1 between the 35s, go when trailing in the last 5:00, punt on
+# fourth and 8 or more at the opponent's 30-39, otherwise the league chart.
+FOURTH_SWAP = {"otherwise": "league", "rules": [
+    {"when": {"ydstogo": [1], "los": {"min": 35, "max": 65}}, "decision": "go"},
+    {"when": {"period": [4], "margin": {"min": -16, "max": -1}, "game_seconds_max": 300}, "decision": "go"},
+    {"when": {"ydstogo": {"min": 8}, "los": {"min": 30, "max": 39}}, "decision": "punt"}]}
 STRENGTH_SLOTS = (("QB", "offense"), ("WR", "offense"), ("OL", "offense"), ("DL", "defense"), ("LB", "defense"),
                   ("DB", "defense"))
 DIAGNOSTICS = ("chain_layout_failed", "chain_layout_resampled", "chain_layout_resample_exhausted",
@@ -450,6 +475,94 @@ def late_onside_block(version="2014.6", jobs=1, count=None):
     return out
 
 
+def fourth_swap_play(job):
+    arm, index, version = job
+    from dataclasses import replace
+    from runtime.kernel import resolve_game, validate_result
+    from runtime.play_detail import check_ledger
+    from runtime.profiles import profile_for
+    clubs = slate_clubs(version)
+    jax, sdc = clubs["Jacksonville Jaguars"], clubs["San Diego Chargers"]
+    if arm in ("jax", "den"):
+        jax = replace(jax, fourth_down_policy=FOURTH_SWAP)
+        if arm == "den":
+            jax = replace(jax, team_id="Denver Broncos")
+        holder = jax.team_id
+    else:
+        sdc = replace(sdc, fourth_down_policy=FOURTH_SWAP)
+        holder = sdc.team_id
+    label = "%s%d" % (BLOCKS["fourth-swap"][0], index)
+    try:
+        r = resolve_game(sdc, jax, seed=entropy(label), event_id=label, venue="neutral",
+                         _test_profile=profile_for(version))
+    except Exception as exc:  # a refused game is a finding
+        return arm, {"refused": "%s: %s" % (type(exc).__name__, exc)}
+    out = {"refused": None, "errors": len(validate_result(r)) + len(check_ledger(r)),
+           "points": r["final_score"][holder], "decisions": 0, "go": 0, "converted": 0, "compliant": 0,
+           "rule_decisions": 0, "other_decisions": 0, "other_league": 0}
+    for p in r["possessions"]:
+        for d in p.get("fourth_downs") or ():
+            if p["team"] != holder:
+                out["other_decisions"] += 1
+                out["other_league"] += d["basis"] == "league"
+                continue
+            out["decisions"] += 1
+            out["go"] += d["decision"] == "go"
+            out["converted"] += d["decision"] == "go" and d.get("outcome") in ("converted", "touchdown")
+            out["compliant"] += d["basis"].startswith("policy:") or d["basis"] == "delegated:league"
+            out["rule_decisions"] += d["basis"].startswith("policy:")
+    return arm, out
+
+
+def fourth_swap_block(version="2014.6", jobs=1, count=None):
+    """The B9F label swap on real inputs (module docstring, block fourth-swap)."""
+    import math
+    n = count or BLOCKS["fourth-swap"][1]
+    work = [(arm, i, version) for arm in SWAP_ARMS for i in range(n)]
+    if jobs > 1:
+        with multiprocessing.Pool(jobs) as pool:
+            rows = pool.map(fourth_swap_play, work, chunksize=4)
+    else:
+        rows = [fourth_swap_play(job) for job in work]
+    keys = ("errors", "decisions", "go", "converted", "compliant", "rule_decisions", "other_decisions",
+            "other_league")
+    arms = {}
+    for arm, o in rows:
+        a = arms.setdefault(arm, dict({"games": 0, "refused": [], "points": []}, **{k: 0 for k in keys}))
+        a["games"] += 1
+        if o["refused"]:
+            a["refused"].append(o["refused"])
+            continue
+        a["points"].append(o["points"])
+        for key in keys:
+            a[key] += o[key]
+    for a in arms.values():
+        pts = a.pop("points")
+        mean = sum(pts) / len(pts) if pts else None
+        se = (math.sqrt(sum((x - mean) ** 2 for x in pts) / (len(pts) - 1)) / math.sqrt(len(pts))
+              if len(pts) > 1 else None)
+        a["carrier_points"], a["carrier_points_se"] = mean, se
+
+    def z_share(k1, n1, k2, n2):
+        if not (n1 and n2):
+            return 0.0
+        pooled = (k1 + k2) / (n1 + n2)
+        if not 0 < pooled < 1:
+            return 0.0
+        return (k1 / n1 - k2 / n2) / math.sqrt(pooled * (1 - pooled) * (1 / n1 + 1 / n2))
+    j, d = arms["jax"], arms["den"]
+    spread = math.sqrt((j["carrier_points_se"] or 0) ** 2 + (d["carrier_points_se"] or 0) ** 2)
+    z_points = (j["carrier_points"] - d["carrier_points"]) / spread if spread else 0.0
+    z_go = z_share(j["go"], j["decisions"], d["go"], d["decisions"])
+    z_conv = z_share(j["converted"], j["go"], d["converted"], d["go"])
+    return {"block": "fourth-swap", "kernel_profile": version, "games_per_arm": n, "arms": arms,
+            "z_points_jax_vs_den": z_points, "z_go_share_jax_vs_den": z_go, "z_conversion_jax_vs_den": z_conv,
+            "pass": (all(not a["refused"] and not a["errors"] and a["compliant"] == a["decisions"]
+                         and a["other_league"] == a["other_decisions"] for a in arms.values())
+                     and all(arms[arm]["rule_decisions"] for arm in SWAP_ARMS)
+                     and abs(z_points) <= 3 and abs(z_go) <= 3 and abs(z_conv) <= 3)}
+
+
 def grade(receipts, version, provisional=True):
     """Graded tables with each row's registry status. provisional=False is
     the B17 re-grade: provisional detections (runtime.bands
@@ -459,7 +572,9 @@ def grade(receipts, version, provisional=True):
     for name, fn in (("usage", bands.audit), ("drive_model", bands.audit_drive_model),
                      ("field_position", bands.audit_field_position), ("injuries", bands.audit_injuries),
                      # Batch B9 (R8, R9, R15): the scoring-decision rows.
-                     ("scoring", bands.audit_scoring)):
+                     ("scoring", bands.audit_scoring),
+                     # Batch B9F: the fourth-down rows.
+                     ("fourth_down", bands.audit_fourth_down)):
         team_games, rows = fn(receipts, cohort=version)
         out[name] = {"team_games": team_games,
                      "rows": [[m, o, c, t, bands.known_status((m, o, c, t, s), version, provisional)]
@@ -529,6 +644,21 @@ def main():
     LATENT_REF = args.latent_ref
     if args.block == "dev" and args.count is None:
         parser.error("the dev block needs --count")
+    if args.block == "fourth-swap":
+        result = fourth_swap_block(args.profile, args.jobs, args.count)
+        if args.out:
+            args.out.write_text(json.dumps(result, indent=1, sort_keys=True, default=str) + "\n", encoding="utf-8")
+        for arm in SWAP_ARMS:
+            a = result["arms"][arm]
+            print("%s: %d games, %d refused, %d errors, carrier points %.2f (SE %.2f), fourth downs %d (by its "
+                  "block %d, by a rule %d), go %d, converted %d; other club %d, by the chart %d" % (
+                      arm, a["games"], len(a["refused"]), a["errors"], a["carrier_points"], a["carrier_points_se"],
+                      a["decisions"], a["compliant"], a["rule_decisions"], a["go"], a["converted"],
+                      a["other_decisions"], a["other_league"]))
+        print("Jacksonville against Denver labels: points z %.2f, go share z %.2f, conversion z %.2f; %s" % (
+            result["z_points_jax_vs_den"], result["z_go_share_jax_vs_den"], result["z_conversion_jax_vs_den"],
+            "PASS" if result["pass"] else "FAIL"))
+        return 0 if result["pass"] else 1
     if args.block in ("swap", "late-onside"):
         result = (swap_block if args.block == "swap" else late_onside_block)(args.profile, args.jobs, args.count)
         if args.out:

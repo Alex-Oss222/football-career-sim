@@ -570,6 +570,39 @@ def _choose_label(lrng, team, record, runner_group, target_group, runner_rank=No
     return call, source, _groups(call["target"]), False, slot
 
 
+FOURTH_DOWN_CALL = "fourth-down-call"
+
+
+def _call_only(call, field, available, base=None):
+    """Kernel 2014.6 batch B9F: the pick filter of a named call's declared
+    carrier or target groups (with `base`, both must hold), or None when the
+    call declares none or no available player of those groups qualifies."""
+    if call is None:
+        return None
+    groups = call.get(field)
+    if not isinstance(groups, tuple) or not groups:
+        return None
+    keep = (lambda p: usage.group(p.position) in groups and (base is None or base(p)))
+    return keep if any(keep(p) for p in available) else None
+
+
+def _call_fits(call, record, runner_group, target_group, runner_rank, target_rank):
+    """Whether a named call can describe the resolved snap (the label rules
+    of _choose_label: a run call a run by a carrier it declares, a pass call
+    a dropback; a sack fits any pass call)."""
+    kind = call.get("type")
+    if record["play_type"] == "run":
+        return kind in ("run", "any", "mixed") and isinstance(call["carrier"], tuple) and \
+            runner_group in call["carrier"] and _personnel_fits(call, runner_group, runner_rank)
+    if kind not in ("pass", "any", "mixed"):
+        return False
+    if record.get("sack"):
+        return True
+    return (call["target"] == call_families.ANY or (isinstance(call["target"], tuple)
+                                                     and target_group in call["target"])) \
+        and _personnel_fits(call, target_group, target_rank)
+
+
 def _scramble_rate(base=None):
     """The base's QB scramble share of QB carries (the 2012 base's when None)."""
     from .calibration_base import BASE_2012
@@ -930,6 +963,8 @@ def apply_drive_detail(
     timeouts_used=(0, 0),
     game_type="regular",
     kernel_version=None,
+    clock_plan=None,
+    snap_calls=None,
 ):
     """Allocate one resolved drive into reconciled player/snap public detail.
 
@@ -972,6 +1007,17 @@ def apply_drive_detail(
     (`game_type` names the Pro Bowl; `game_ledger` says whether the period's
     warning already exists). The sack gap is the 2014 value for
     `kernel_version` 2014.6 and later. Records only: no outcome changes.
+
+    Kernel 2014.6 (batch B9F): a possession joined from segments (a drawn
+    drive cut at a fourth-down decision, the resolved snap or kick, and a
+    continuation drawn after a conversion) passes `clock_plan`
+    {"stamps": [one per snap], "kick": kick stamp or None}, its stamps
+    computed segment by segment from the same W5a constants; the plan
+    replaces the single allocation. `snap_calls` {snap index: normalized
+    sheet call} names the call of a resolved go snap: its carrier or target
+    is drawn from the call's declared groups when they hold an available
+    player, and its label is that call (``sheet:fourth-down-call``) when it
+    can describe the snap. Neither changes a draw of the outcome.
     """
     from .calibration_base import BASE_2012
     from .calibration import kernel_rates
@@ -1048,10 +1094,18 @@ def apply_drive_detail(
         if not w5a:
             raise ValueError("clock detail needs a calibration base with the W5a constants")
         sack_key = ("sack_2014w4" if kernel_at_least(kernel_version, SACK_GAP_FROM_KERNEL) else "sack_2010_2013")
-        stamps, kick_stamp = clock_stamps(
-            w5a, kinds, completed, start_clock=start_clock, own=own,
-            kick_length=fp_model.kick_length(category) if category in ("field_goal_attempt", "punt") else 0,
-            sack_key=sack_key, overtime=overtime, pro_bowl=pro_bowl, diagnostics=diagnostics)
+        if clock_plan is not None:
+            stamps, kick_stamp = [int(v) for v in clock_plan["stamps"]], clock_plan.get("kick")
+            if len(stamps) != plays:
+                raise ValueError("clock plan stamps %d snaps; the drive has %d" % (len(stamps), plays))
+        else:
+            stamps, kick_stamp = clock_stamps(
+                w5a, kinds, completed, start_clock=start_clock, own=own,
+                kick_length=fp_model.kick_length(category) if category in ("field_goal_attempt", "punt") else 0,
+                sack_key=sack_key, overtime=overtime, pro_bowl=pro_bowl, diagnostics=diagnostics)
+    elif clock_plan is not None:
+        raise ValueError("a clock plan needs the clock detail (W5a) constants")
+    snap_calls = dict(snap_calls or {})
 
     def clock_at(remaining):
         return _period_clock(remaining, closing=remaining <= int(end_clock), overtime=overtime)
@@ -1151,7 +1205,8 @@ def apply_drive_detail(
             record["passer"] = qb.player_id
             _bump(qb_line, "dropbacks")
             receiver = usage.pick(rng, available, shares["target_share"], "target", role="receiver",
-                                  tilt=target_tilt, rank_shapes=rank_shapes)
+                                  tilt=target_tilt, rank_shapes=rank_shapes,
+                                  only=_call_only(snap_calls.get(index), "target", available))
             rec_line = offense_stats["players"][receiver.player_id]
             record["target"] = receiver.player_id
             groups_for[index] = (None, usage.group(receiver.position), None, _group_rank(available, receiver))
@@ -1209,9 +1264,11 @@ def apply_drive_detail(
             _bump(run_line, "rushing_attempts")
             _bump(run_line, "rushing_yards", yards)
         else:
+            called = _call_only(snap_calls.get(index), "carrier", available,
+                                lambda p: usage.group(p.position) != "QB" or p.player_id == qb.player_id)
             runner = usage.pick(
                 rng, available, shares["rush_share"], "rush", role="rusher",
-                only=lambda p: usage.group(p.position) != "QB" or p.player_id == qb.player_id,
+                only=called or (lambda p: usage.group(p.position) != "QB" or p.player_id == qb.player_id),
                 tilt=rush_tilt, rank_shapes=rank_shapes,
             )
             run_line = offense_stats["players"][runner.player_id]
@@ -1350,9 +1407,16 @@ def apply_drive_detail(
         scrimmage = not (record.get("kneel") or record.get("spike"))
         if positions and scrimmage and script_snaps < len(positions):
             script = {"positions": positions, "sent": sent}
-        call, source, label_groups, scramble, slot = _choose_label(
-            lrng, team, record, runner_group, target_group, runner_rank, target_rank, situation, script,
-            scramble_rate)
+        named = snap_calls.get(index)
+        if named is not None and _call_fits(named, record, runner_group, target_group, runner_rank, target_rank):
+            # Kernel 2014.6 batch B9F: the go snap's named call (Stone's live
+            # answer or a block's), carrier-true by construction.
+            call, source, scramble, slot = named, "sheet:" + FOURTH_DOWN_CALL, False, None
+            label_groups = _groups(named["carrier"] if record["play_type"] == "run" else named["target"])
+        else:
+            call, source, label_groups, scramble, slot = _choose_label(
+                lrng, team, record, runner_group, target_group, runner_rank, target_rank, situation, script,
+                scramble_rate)
         if scrimmage:
             script_snaps += 1
         if slot is not None:
@@ -1805,8 +1869,12 @@ _GROUP_PREDICATES = {
     # (has_kick_sequence); zero tolerance from the start, since no branch
     # fires until B9 and B10 and every game must already sequence cleanly.
     "b8_sequence": lambda r: from_kernel("2014.6")(r) and has_spots(r) and has_kick_sequence(r),
+    # Kernel 2014.6 batch B9F (live fourth downs): evaluated on a
+    # 2014.6-or-later result or receipt whose every possession carries its
+    # fourth-down decision records (has_fourth_downs); zero tolerance.
+    "b9f_fourth": lambda r: from_kernel("2014.6")(r) and has_spots(r) and has_fourth_downs(r),
 }
-_LISTED_FROM = {"b6_ledger": "2014.6", "b8_sequence": "2014.6"}
+_LISTED_FROM = {"b6_ledger": "2014.6", "b8_sequence": "2014.6", "b9f_fourth": "2014.6"}
 
 
 def _registry(rows):
@@ -1848,6 +1916,11 @@ COHERENCE_REGISTRY = _registry((
     # every kick sits coherently on its chain (side-aware, touchdown rows
     # exempt from the hand-over checks).
     ("b8_sequence", ("possession_sequence_break", "kick_chain_incoherent")),
+    # Kernel 2014.6 batch B9F (listed from the 2014.6 cohort): every fourth
+    # down was decided, each decision record agrees with the walked snaps,
+    # the ledger and the possession's category, and a joined possession's
+    # segments join.
+    ("b9f_fourth", ("fourth_down_decision_incoherent",)),
 ))
 
 
@@ -1868,6 +1941,7 @@ SPOT_CLASSES = _names("spot", "spot_ledger")
 SPOT_LEDGER_CLASSES = _names("spot_ledger")
 B6_CLASSES = _names("b6_ledger")
 B8_CLASSES = _names("b8_sequence")
+B9F_CLASSES = _names("b9f_fourth")
 AUDIT_ONLY_CLASSES = tuple(c.name for c in COHERENCE_REGISTRY if c.audit_only)
 
 
@@ -1915,6 +1989,10 @@ DRIVE_SUMMARY_FIELDS = (
     # record (decision, basis, chart cell and pair, made, points, type), so a
     # compact receipt audits the try and its scoring event like the result.
     "try",
+    # Kernel 2014.6 batch B9F (append-only): the possession's fourth-down
+    # decision records and, for a possession a decision changed, its
+    # segments, so a compact receipt audits them like the result.
+    "fourth_downs", "segments",
 )
 LABEL_TYPES = {KNEEL_LABEL: "run", GENERIC_RUN: "run", SPIKE_LABEL: "pass",
                GENERIC_PASS: "pass", SCRAMBLE_LABEL: "pass"}
@@ -1950,6 +2028,157 @@ def has_chain_model(result):
     carries its chains and fourth-down state walked from its own snaps."""
     possessions = _possessions(result)
     return bool(possessions) and all(p.get("chain_model") for p in possessions)
+
+
+def has_fourth_downs(result):
+    """Kernel 2014.6 batch B9F: every possession carries its fourth-down
+    decision records (a list, empty when it had no decision point)."""
+    possessions = _possessions(result)
+    return bool(possessions) and all(isinstance(p.get("fourth_downs"), list) for p in possessions)
+
+
+def _segment_key(seg):
+    """The envelope key of a joined possession's replayed segment."""
+    terminal = str(seg.get("terminal") or seg.get("category"))
+    return "clock" if terminal.startswith("end_of_") else terminal
+
+
+def _model_terminal(p):
+    """Kernel 2014.6 batch B9F: the possession's terminal is a fourth-down
+    decision's outcome, not a drawn tuple's own (its last segment was cut)."""
+    segments = p.get("segments")
+    return bool(segments) and segments[-1].get("end") != "replayed"
+
+
+FOURTH_DOWN_ACTIONS = ("go", "field_goal", "punt")
+FOURTH_DOWN_TIMINGS = ("before_third_down", "at_fourth_down")
+FOURTH_DOWN_OUTCOME_CATEGORY = {"touchdown": "touchdown", "failed": "downs", "interception": "interception",
+                                "fumble_lost": "fumble_lost", "field_goal": "field_goal_attempt",
+                                "punt": "punt"}
+
+
+def _check_fourth_downs(possessions, rows_by_drive, err):
+    """Kernel 2014.6 batch B9F: fourth_down_decision_incoherent.
+
+    Every decision record is well formed (an action, a basis, a timing, a
+    fourth-down state inside the field), only the last one ends the
+    possession, a replayed decision is the drawn drive's own kick, a model
+    outcome agrees with the possession's category, and a joined possession's
+    segments join (the first starts at the possession's start, each
+    continued one hands its end to the next, their snaps and own seconds add
+    up). With the full snap ledger: every fourth-down scrimmage snap that is
+    not a kneel or spike and every kick at fourth down carries its decision
+    mark, and each record's row has its state and outcome."""
+    bases = ("league", "delegated:league", "live")
+    for p in possessions:
+        number, category = p["number"], p["category"]
+        category = "clock" if str(category).startswith("end_of_") else category
+        records = p.get("fourth_downs") or []
+        where = "drive %s" % number
+        for k, rec in enumerate(records):
+            state = rec.get("state") or {}
+            basis = str(rec.get("basis"))
+            last = k == len(records) - 1
+            problem = None
+            if rec.get("decision") not in FOURTH_DOWN_ACTIONS or rec.get("timing") not in FOURTH_DOWN_TIMINGS:
+                problem = "decision or timing"
+            elif basis not in bases and not (basis.startswith("policy:") and basis[7:].isdigit()):
+                problem = "basis %s" % basis
+            elif not (state.get("down") == 4 and isinstance(state.get("los"), int) and 1 <= state["los"] <= 99
+                      and isinstance(state.get("ydstogo"), int) and 1 <= state["ydstogo"] <= state["los"]
+                      and bool(state.get("goal_to_go")) == (state["ydstogo"] == state["los"])):
+                problem = "state %s" % state
+            elif rec.get("terminal") and not last:
+                problem = "only the last decision ends the possession"
+            elif rec.get("resolution") == "replayed":
+                if rec["decision"] == "go" or rec.get("replay") != rec["decision"] or \
+                        FOURTH_DOWN_OUTCOME_CATEGORY[rec["decision"]] != category:
+                    problem = "replayed decision is not the drive's own kick"
+            elif rec.get("resolution") != "model":
+                problem = "resolution %s" % rec.get("resolution")
+            elif rec["decision"] == "go":
+                outcome = rec.get("outcome")
+                if not rec.get("conversion") or outcome not in ("converted", "touchdown", "failed", "interception",
+                                                                 "fumble_lost"):
+                    problem = "go outcome %s" % outcome
+                elif rec.get("terminal") and outcome == "converted" and category != "clock":
+                    problem = "a conversion ended the possession without the clock"
+                elif rec.get("terminal") and outcome != "converted" and \
+                        FOURTH_DOWN_OUTCOME_CATEGORY[outcome] != category:
+                    problem = "go outcome %s against category %s" % (outcome, category)
+                elif not rec.get("terminal") and outcome != "converted":
+                    problem = "a failed go did not end the possession"
+            elif FOURTH_DOWN_OUTCOME_CATEGORY[rec["decision"]] != category or not rec.get("terminal"):
+                problem = "kick decision against category %s" % category
+            if problem:
+                err("fourth_down_decision_incoherent", "%s decision %d: %s" % (where, k, problem))
+        segments = p.get("segments")
+        if segments:
+            modelled = [r for r in records if r.get("resolution") == "model"]
+            continued = [seg for seg in segments if seg.get("end") == "continued"]
+            problem = None
+            if not modelled:
+                problem = "segments without a model decision"
+            elif records and not records[-1].get("terminal") and segments[-1].get("end") != "replayed":
+                problem = "the possession ended after a conversion without a replayed segment"
+            elif segments[0].get("start") != p.get("start_spot"):
+                problem = "first segment starts at %s" % segments[0].get("start")
+            elif len(continued) != len(segments) - 1 or segments[-1].get("end") == "continued":
+                problem = "segment ends %s" % [seg.get("end") for seg in segments]
+            elif len(continued) != sum(1 for r in records if r.get("outcome") == "converted" and not r.get("terminal")):
+                problem = "continued segments do not match the conversions"
+            elif any(b.get("start") != a.get("start") - a.get("net", 0) for a, b in zip(segments, segments[1:])):
+                problem = "a continuation does not start where the conversion ended"
+            elif sum(seg.get("plays", 0) for seg in segments) != p.get("scrimmage_plays"):
+                problem = "segment snaps do not add up"
+            elif p.get("own_seconds") is not None and sum(seg.get("own_seconds", 0) for seg in segments) != \
+                    p["own_seconds"]:
+                problem = "segment seconds do not add up"
+            if problem:
+                err("fourth_down_decision_incoherent", "%s: %s" % (where, problem))
+        elif any(r.get("resolution") == "model" for r in records) or len(records) > 1:
+            err("fourth_down_decision_incoherent", "%s: a model decision without segments" % where)
+        if rows_by_drive is None:
+            continue
+        rows = rows_by_drive.get(number, [])
+        scrim = [r for r in rows if r.get("play_type") in ("pass", "run")]
+        kicks = [r for r in rows if r.get("play_type") in ("punt", "field_goal")]
+        marked = 0
+        for r in scrim:
+            if r.get("down") == 4 and not (r.get("kneel") or r.get("spike")):
+                marked += 1
+                if not r.get("fourth_down_decision"):
+                    err("fourth_down_decision_incoherent", "%s snap %s: an undecided fourth down"
+                        % (where, r.get("snap_in_drive")))
+        for r in kicks:
+            if r.get("down") == 4:
+                marked += 1
+                if not r.get("fourth_down_decision"):
+                    err("fourth_down_decision_incoherent", "%s %s: an undecided fourth-down kick"
+                        % (where, r["play_type"]))
+        if marked != len(records):
+            err("fourth_down_decision_incoherent", "%s: %d fourth downs, %d decisions" % (where, marked,
+                                                                                        len(records)))
+            continue
+        for k, rec in enumerate(records):
+            state = rec.get("state") or {}
+            if rec.get("decision") == "go":
+                index = rec.get("index")
+                row = scrim[index] if isinstance(index, int) and 0 <= index < len(scrim) else None
+                ok = row is not None and (row.get("down"), row.get("ydstogo"), row.get("yardline")) == (
+                    4, state.get("ydstogo"), state.get("los")) and \
+                    (row.get("fourth_down_decision") or {}).get("basis") == rec.get("basis")
+                if ok and rec.get("outcome") in ("converted", "touchdown"):
+                    ok = bool(row.get("first_down")) or bool(row.get("touchdown"))
+                elif ok:
+                    ok = row is scrim[-1] and not row.get("first_down")
+            else:
+                row = kicks[0] if kicks else None
+                ok = row is not None and (row.get("down"), row.get("ydstogo"), row.get("los")) == (
+                    4, state.get("ydstogo"), state.get("los")) and \
+                    (row.get("fourth_down_decision") or {}).get("decision") == rec.get("decision")
+            if not ok:
+                err("fourth_down_decision_incoherent", "%s decision %d: the ledger row disagrees" % (where, k))
 
 
 def has_chain_ledger(result):
@@ -2052,9 +2281,22 @@ def _check_clock_legs(result, possessions, rows_by_drive, err, fpm):
         if (expiry < 0 or expiry > fp.CLOCK_EXPIRY_ALLOWANCE or own + expiry != elapsed
                 or (expiry and not p.get("half_final"))):
             err("expiry_leg_exceeds_allowance", "drive %s own %s expiry %s over %s" % (number, own, expiry, elapsed))
-        span = ranges.get(p.get("scrimmage_plays"))
-        if span is None or not span[0] <= own <= span[1]:
-            err("seconds_per_snap_outside", "drive %s: %s snaps in %s s" % (number, p.get("scrimmage_plays"), own))
+        if p.get("segments"):
+            # Kernel 2014.6 batch B9F: each replayed segment's own seconds lie
+            # in the range of its own snap count (a segment cut at a decision
+            # is a prefix of a real drive's allocation).
+            for seg in p["segments"]:
+                if seg.get("end") != "replayed":
+                    continue
+                span = ranges.get(seg.get("plays"))
+                if span is None or not span[0] <= seg.get("own_seconds", -1) <= span[1]:
+                    err("seconds_per_snap_outside", "drive %s segment: %s snaps in %s s" % (
+                        number, seg.get("plays"), seg.get("own_seconds")))
+        else:
+            span = ranges.get(p.get("scrimmage_plays"))
+            if span is None or not span[0] <= own <= span[1]:
+                err("seconds_per_snap_outside", "drive %s: %s snaps in %s s" % (number, p.get("scrimmage_plays"),
+                                                                                 own))
         if rows_by_drive is None:
             continue
         own_end = p["end_clock"] + expiry
@@ -2169,7 +2411,25 @@ def _check_spots(result, possessions, err, fp):
             err("start_spot_out_of_field", "drive %s start %s" % (number, start))
             continue
         envelope = fp.load()["envelopes"][category][fp.start_bin(start)]
-        if envelope is None and not _zero_play_expiry(p):
+        segments = p.get("segments")
+        if segments:
+            # Kernel 2014.6 batch B9F: a possession joined from segments. Its
+            # replayed segments are real drives, each checked from its own
+            # start; a segment cut at a fourth-down decision ends in the
+            # decision's outcome, not a replayed category
+            # (fourth_down_decision_incoherent audits it).
+            envelope = None
+            for seg in segments:
+                if seg.get("end") != "replayed":
+                    continue
+                seg_key = _segment_key(seg)
+                envelope = fp.load()["envelopes"][seg_key][fp.start_bin(seg["start"])]
+                if envelope is None:
+                    err("category_impossible_at_start", "drive %s segment %s from %s" % (number, seg_key,
+                                                                                          seg["start"]))
+            if not segments[-1].get("end") == "replayed":
+                envelope = True  # the terminal is a decision's outcome
+        elif envelope is None and not _zero_play_expiry(p):
             err("category_impossible_at_start", "drive %s %s from %s" % (number, category, start))
         if category == "touchdown" and (net != start or end != 0):
             err("td_net_ne_start", "drive %s net %s start %s end %s" % (number, net, start, end))
@@ -2189,7 +2449,7 @@ def _check_spots(result, possessions, err, fp):
         if category == "downs" and nxt != 100 - end:
             err("spot_chain_break", "drive %s downs next %s end %s" % (number, nxt, end))
         if category == "field_goal_attempt" and not p.get("fg_made") and not p.get("non_offensive_score") \
-                and nxt != min(80, 110 - p["fg_distance"]):
+                and nxt != fp.missed_fg_start(p["fg_distance"]):
             err("spot_chain_break", "drive %s missed FG next %s" % (number, nxt))
         if kick and (kick.get("next_start") != nxt or (
                 kick.get("touchback") and nxt != 80 + (kick.get("enforcement") or 0))):
@@ -2219,7 +2479,7 @@ def _check_spots(result, possessions, err, fp):
                 }
             if expected is None or any(fd.get(k) != v for k, v in expected.items()):
                 err("fourth_down_state_missing", "drive %s" % number)
-            elif draw_half == 2 and fd["cell"] != "neutral" and (
+            elif draw_half == 2 and fd["cell"] != "neutral" and not _model_terminal(p) and (
                     fd["clock_bucket"] != fd.get("tuple_terminal_bucket")
                     or fp.cell_need(fd["cell"]) != fd["need"]):
                 err("late_terminal_state_mismatch", "drive %s bucket %s tuple %s" % (
@@ -2480,6 +2740,16 @@ def check_ledger(result, base=None, audit_only=False):
         range_key = "clock" if category.startswith("end_of_") else category
         if _zero_play_expiry(p):
             pass  # kernel 2014.4: no 2012 drive is replayed, so no 2012 net range applies
+        elif spots and p.get("segments"):
+            # Kernel 2014.6 batch B9F: the replayed segments of a joined
+            # possession, each against its own category and start.
+            for seg in p["segments"]:
+                if seg.get("end") != "replayed":
+                    continue
+                seg_key = _segment_key(seg)
+                envelope = fpm.load()["envelopes"][seg_key][fpm.start_bin(seg["start"])]
+                if envelope is None or (seg_key != "touchdown" and not envelope[0] <= seg["net"] <= envelope[1]):
+                    err("drive_net_outside_2012_range", "drive %s segment net %s" % (p["number"], seg["net"]))
         elif spots:
             envelope = fpm.load()["envelopes"][range_key][fpm.start_bin(p["start_spot"])] if (
                 isinstance(p["start_spot"], int) and 1 <= p["start_spot"] <= 99) else None
@@ -2566,9 +2836,12 @@ def check_ledger(result, base=None, audit_only=False):
 
     ledger = result.get("play_ledger")
     clock_legs = has_clock_legs(result)
+    b9f_fourth = _GROUP_PREDICATES["b9f_fourth"](result)
     if not ledger:
         if clock_legs:
             _check_clock_legs(result, possessions, None, err, base.field_position())
+        if b9f_fourth:
+            _check_fourth_downs(possessions, None, err)
         return errors
 
     previous = None
@@ -2772,6 +3045,8 @@ def check_ledger(result, base=None, audit_only=False):
         _check_clock_legs(result, possessions, rows_by_drive, err, base.field_position())
     if _GROUP_PREDICATES["b6_ledger"](result) and not skipped >= set(B6_CLASSES):
         _check_b6_ledger(result, possessions, rows_by_drive, err, base.field_position())
+    if b9f_fourth:
+        _check_fourth_downs(possessions, rows_by_drive, err)
     return errors
 
 
@@ -3030,10 +3305,20 @@ def _check_layout_resamples(possessions, err, fp):
     category at that index in the same pool, feasible at the drive's start
     spot; the resample count is a positive integer. `fp` is the
     field-position model of the result's own base."""
+    units = []
     for p in possessions:
+        if p.get("segments"):
+            # Kernel 2014.6 batch B9F: each segment's own resample record,
+            # against its drawn category, tuple snaps and start.
+            for seg in p["segments"]:
+                if seg.get("layout_resample"):
+                    units.append(({"number": p["number"], "layout_resample": seg["layout_resample"],
+                                   "category": seg["category"], "start_spot": seg["start"],
+                                   "scrimmage_plays": seg["tuple_plays"]}))
+        elif p.get("layout_resample"):
+            units.append(p)
+    for p in units:
         rec = p.get("layout_resample")
-        if not rec:
-            continue
         where = "drive %s" % p["number"]
         category = "clock" if str(p["category"]).startswith("end_of_") else p["category"]
         try:

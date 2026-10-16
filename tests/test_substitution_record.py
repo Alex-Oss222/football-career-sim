@@ -196,7 +196,10 @@ class RecorderTests(unittest.TestCase):
         a = TeamInput("A", tuple(p.player_id for p in roster), roster=roster,
                       offensive_call_sheet=self.a.offensive_call_sheet,
                       rotation_plan=({"player_id": "A-WR1", "featured": True},),
-                      try_policy=delegation, kickoff_policy=delegation)
+                      try_policy=delegation, kickoff_policy=delegation,
+                      # Batch B9F: the club's fourth downs follow the chart, so
+                      # the only pause is the substitution's.
+                      fourth_down_policy=delegation)
         # This club's inputs (the spare, the plan and the blocks) are its own
         # packet, so its game is its own: take an A possession from it.
         own = resolve_game(a, self.b, seed=SEED + b"-w2a", event_id="w2a", _test_profile=PROFILE_2014_6)

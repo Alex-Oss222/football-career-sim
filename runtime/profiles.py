@@ -97,6 +97,20 @@ otherwise):
   kick is recovered at the expected or surprise rate on a real onside
   record of the recovering side; library rule R4 in overtime.
 
+Batch B9F (live fourth downs; result-changing) adds one flag, needing
+possession_sequencing and clock_detail_v1 (FLAG_REQUIRES) and a base that pins
+the fourth-down artifact (CalibrationBase.fourth_down; the kernel fails closed
+otherwise):
+
+- fourth_down_decisions: every fourth-down decision point of a laid-out drive
+  (runtime.fourth_down) takes a decision, go, field goal or punt, from the
+  club's block (TeamInput.fourth_down_policy), the controlling coach's live
+  answer (the default for the controlled club of a user-controlled regular or
+  postseason game, Stone's standing instruction) or the league chart; one
+  resolution for every club follows (the sourced conversion, field-goal or
+  punt outcome with the same matchup terms), and a conversion continues the
+  possession with a continuation segment drawn from the new spot.
+
 A base names the flags its readers require (CalibrationBase.requires_flags):
 a profile resolving on it must hold them, and a profile holding base_2014_6
 or regimes_v3 on a base that does not serve them fails closed.
@@ -171,10 +185,15 @@ B6_FLAGS = frozenset({"early_fg_v2", "clock_detail_v1", "substitution_record"})
 B8_FLAGS = frozenset({"possession_sequencing"})
 # Batch B9 mechanism flags (R8, R15, R9), each requiring possession_sequencing.
 B9_FLAGS = frozenset({"two_point_tries", "return_touchdowns", "onside_kicks"})
-FLAGS = BASE_FLAGS | {"injury_2014_6", "usage_2014_6"} | B6_FLAGS | B8_FLAGS | B9_FLAGS
+# Batch B9F mechanism flag (live fourth downs), requiring possession_sequencing
+# (the possession's records) and clock_detail_v1 (the W5a stamps that time a
+# decision and the segments of a continued possession).
+B9F_FLAGS = frozenset({"fourth_down_decisions"})
+FLAGS = BASE_FLAGS | {"injury_2014_6", "usage_2014_6"} | B6_FLAGS | B8_FLAGS | B9_FLAGS | B9F_FLAGS
 # A mechanism flag that needs another flag's records (a profile holding it
 # without them is refused at construction).
 FLAG_REQUIRES = {flag: B8_FLAGS for flag in B9_FLAGS}
+FLAG_REQUIRES["fourth_down_decisions"] = frozenset({"possession_sequencing", "clock_detail_v1"})
 
 
 def _legacy_base():
@@ -187,7 +206,7 @@ PROFILE_2014_6 = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", stre
                          flags=frozenset({"base_2014_6", "regimes_v3", "injury_2014_6", "usage_2014_6",
                                           "early_fg_v2", "clock_detail_v1", "substitution_record",
                                           "possession_sequencing", "two_point_tries", "return_touchdowns",
-                                          "onside_kicks"}),
+                                          "onside_kicks", "fourth_down_decisions"}),
                          record_base=True)
 
 PROFILES = {p.kernel_version: p for p in (PROFILE_2014_5, PROFILE_2014_6)}

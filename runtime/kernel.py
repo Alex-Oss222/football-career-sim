@@ -17,13 +17,17 @@ from . import strength as unit_strength
 from . import player_state
 from . import usage
 from . import scoring_decisions as scoring
+from . import fourth_down as fourth
 from .player_evidence import empty_player_stats, normalize_players, observation
 from .profiles import Profile, profile_for
 from .play_detail import (
-    KICKOFF_DETAIL_TAG, PUNT_BLOCKED_TD, PUNT_RETURN_TD, apply_drive_detail, apply_kickoff_detail, canonical_call_sheet, check_ledger,
+    KICKOFF_DETAIL_TAG, PUNT_BLOCKED_TD, PUNT_RETURN_TD, SACK_GAP_FROM_KERNEL, apply_drive_detail, apply_kickoff_detail,
+    canonical_call_sheet, check_ledger, clock_context, clock_stamps, gap_kind, gap_seconds,
     has_chain_ledger, return_touchdown_distance_errors, scoring_events, seat_try, try_fields, try_row, two_point_row,
-    _period_clock, _stream,
+    _normalize_call, _period_clock, _stream,
 )
+from . import call_situations
+from .statbook import kernel_at_least
 
 
 @dataclass(frozen=True)
@@ -55,20 +59,30 @@ class TeamInput:
     # text stay with the frozen sheet), so legacy packets are unchanged.
     try_policy: dict | None = None
     kickoff_policy: dict | None = None
+    # Kernel 2014.6 batch B9F: the club's fourth-down block (call_sheet.json
+    # decisions.fourth_down; runtime.fourth_down.policy_errors): standing
+    # rules, an otherwise and Tice's prepared conversion calls by menu. Any
+    # club may carry one; omitted from the outcome packet when None and
+    # entering it through fourth_down.canonical_policy.
+    fourth_down_policy: dict | None = None
 
 
-POLICY_FIELDS = ("try_policy", "kickoff_policy")
+POLICY_FIELDS = ("try_policy", "kickoff_policy", "fourth_down_policy")
+POLICY_STRIPPERS = {"try_policy": lambda block, sheet: scoring.canonical_policy(block),
+                    "kickoff_policy": lambda block, sheet: scoring.canonical_policy(block),
+                    "fourth_down_policy": fourth.packet_policy}
 
 
-def outcome_policies(data):
+def outcome_policies(data, call_sheet=()):
     """Drop None policies from a TeamInput's dict form and canonicalise the
-    rest (scoring_decisions.canonical_policy, the one stripper both packet
-    builders use)."""
+    rest (scoring_decisions.canonical_policy, and fourth_down.packet_policy,
+    which also reads the club's raw ``call_sheet`` to commit a named call by
+    its football substance: the strippers both packet builders use)."""
     for name in POLICY_FIELDS:
         if data.get(name) is None:
             data.pop(name, None)
         else:
-            data[name] = scoring.canonical_policy(data[name])
+            data[name] = POLICY_STRIPPERS[name](data[name], call_sheet)
     return data
 
 
@@ -128,6 +142,29 @@ def decision_block_errors(home, away, *, profile, game_type, management_mode="au
         if missing:
             errors.append("U6: %s has no %s decision block (a standing rule, a delegation or otherwise: ask); "
                           "the user-controlled game fails closed" % (controlled_team, " or ".join(missing)))
+    # Kernel 2014.6 batch B9F: a fourth-down block. Optional: without one the
+    # controlled club of a user-controlled regular-season or postseason game
+    # decides live (Stone's standing instruction) and every other club by
+    # the chart; with one, the same refusals as the B9 blocks, and every call
+    # it names must be a call of the club's frozen sheet.
+    for team in (home, away):
+        block = getattr(team, "fourth_down_policy", None)
+        if block is None:
+            continue
+        if not profile.has("fourth_down_decisions"):
+            errors.append("%s carries a fourth_down decision block; profile %s does not resolve one"
+                          % (team.team_id, profile.kernel_version))
+            continue
+        if game_type in (PRESEASON, PRO_BOWL):
+            errors.append("%s carries a fourth_down decision block in a %s game" % (team.team_id, game_type))
+            continue
+        faults = fourth.policy_errors(block, fourth.sheet_call_names(getattr(team, "offensive_call_sheet", ())))
+        if faults:
+            errors.append("%s decision block: %s" % (team.team_id, "; ".join(faults)))
+            continue
+        if block.get("otherwise") == "ask" and not (user_controlled and team.team_id == controlled_team):
+            errors.append("%s asks for a live fourth_down decision; only the controlling coach's club in a "
+                          "user-controlled game can answer one" % team.team_id)
     return errors
 
 
@@ -135,7 +172,7 @@ def _outcome_team(team):
     data = asdict(team)
     if data.get("strength") is None:
         data.pop("strength", None)
-    return outcome_policies(data)
+    return outcome_policies(data, getattr(team, "offensive_call_sheet", ()) or ())
 
 
 def _rng(seed, packet):
@@ -639,6 +676,23 @@ def _resolve_game(
     policies = {team.team_id: {kind: scoring.canonical_policy(getattr(team, field, None))
                                for field, kind in (("try_policy", "two_point"), ("kickoff_policy", "kickoff"))}
                 for team in (home, away)}
+    # Kernel 2014.6 batch B9F: live fourth downs. Every fourth-down decision
+    # point of a laid-out drive takes a decision from its source (the club's
+    # block, the controlling coach's live answer, or the league chart) and
+    # one resolution for every club; a conversion continues the possession.
+    # It needs the W5a stamps (clock_detail_v1, required by the profile) and
+    # the base's fourth-down artifact (fails closed otherwise).
+    fourth_on = profile.has("fourth_down_decisions")
+    if fourth_on and not (clock_detail and sequencing):
+        raise ValueError("profile %s holds fourth_down_decisions without clock_detail_v1 and possession_sequencing"
+                         % profile.kernel_version)
+    fdm = cbase.fourth_down() if fourth_on else None
+    fourth_policies = {team.team_id: fourth.canonical_policy(getattr(team, "fourth_down_policy", None))
+                       for team in (home, away)}
+    # Stone's standing instruction: the controlled club of a user-controlled
+    # regular-season or postseason game decides its fourth downs live unless
+    # its frozen sheet carries a fourth-down block.
+    fourth_live_default = management_mode == "user_controlled" and game_type in ("regular", "postseason")
     T = fpm.T
 
     teams = {home.team_id: home, away.team_id: away}
@@ -1410,6 +1464,425 @@ def _resolve_game(
                 trackers[tid].kicked(kick_quarter)
         return record
 
+    # ---- Kernel 2014.6 batch B9F: fourth downs ----------------------------------------------
+
+    w5a_constants = getattr(fpm, "clock_detail", None) if fourth_on else None
+    if fourth_on and not w5a_constants:
+        raise ValueError("fourth_down_decisions needs a calibration base with the W5a constants")
+    w5a_sack_key = ("sack_2014w4" if kernel_at_least(profile.kernel_version, SACK_GAP_FROM_KERNEL)
+                    else "sack_2010_2013")
+
+    def fourth_answer(team_id, drive_no, info, calls):
+        """Stone's live fourth-down answer through the E2 pause machinery: a
+        genuine partial result (completed events only) with the public
+        situation Skalaski and Tice supply (``info``; never a probability, a
+        chart value or a make probability) and the eligible answers (go,
+        field goal or punt, and with go a call of the matching menu); the
+        continuation's answer is checked against the digest of that state.
+        Any other club, or an autonomous game, fails closed."""
+        if management_mode != "user_controlled" or team_id != controlled_team:
+            raise ValueError("%s asks for a live fourth_down decision; only the controlling coach's club in a "
+                             "user-controlled game can answer one" % team_id)
+        index = len(pause_state["history"])
+        slots = [{"slot": "fourth_down", "eligible": list(fourth.ACTIONS)}]
+        if calls:
+            slots.append({"slot": "call", "eligible": list(calls), "with": fourth.GO})
+        pause = {"trigger": "fourth_down", "team": team_id, **info, "decisions": slots}
+        pause["continuation_token"] = hashlib.sha256(json.dumps(
+            {"packet": packet_digest, "index": index, "pause": pause,
+             "possessions": possessions, "kickoffs": kickoffs, "play_ledger": play_ledger,
+             "injuries": injuries, "prior": pause_state["history"]},
+            sort_keys=True, separators=(",", ":"), default=str).encode()).hexdigest()
+        if index < len(decisions):
+            decision = decisions[index]
+            if not isinstance(decision, dict) or decision.get("token") != pause["continuation_token"]:
+                raise ValueError("stale or tampered continuation decision")
+            choices = decision.get("choices")
+            answer = choices.get("fourth_down") if isinstance(choices, dict) else None
+            if answer not in fourth.ACTIONS:
+                raise ValueError("continuation must answer fourth_down with one of %s" % ", ".join(fourth.ACTIONS))
+            need = {"fourth_down"} | ({"call"} if answer == fourth.GO and calls else set())
+            if set(choices) != need:
+                raise ValueError("continuation must answer exactly %s" % ", ".join(sorted(need)))
+            if "call" in need and choices["call"] not in calls:
+                raise ValueError("continuation must name a call of the matching menu: %s" % ", ".join(calls))
+            pause_state["history"].append({"trigger": "fourth_down", "drive": drive_no, "team": team_id,
+                                           "continuation_token": pause["continuation_token"],
+                                           "choices": dict(choices)})
+            return answer, choices.get("call")
+        raise _Paused(_partial_result(event_id, game_type, opening_receiver, stats, possessions, kickoffs,
+                                      play_ledger, injuries, substitutions, pause_state["history"], pause,
+                                      kernel_version=profile.kernel_version))
+
+    def sheet_of(team):
+        return [_normalize_call(item, "any") for item in (getattr(team, "offensive_call_sheet", ()) or ())]
+
+    def matching_calls(team, *, ydstogo, los, goal_to_go, drive_clock, clock, overtime, diff, start_kind, snap_index):
+        """(menu, call names) of Tice's matching menu: the frozen sheet's most
+        specific applicable menu with a call (fourth down takes the third-down
+        menu of its distance; runtime.call_situations); a sheet declaring no
+        menus offers every call; an empty sheet none."""
+        sheet = [c for c in sheet_of(team) if c["type"] in ("run", "pass", "mixed", "any")]
+        if not sheet:
+            return None, []
+        half_label, left = call_situations.half_clock(drive_clock, clock, overtime)
+        menus = call_situations.classify(down=4, ydstogo=ydstogo, yardline=los, goal_to_go=goal_to_go,
+                                         half=half_label, half_remaining=left, score_diff=diff,
+                                         start_kind=start_kind, snap_index=snap_index)
+        if not any(c["menus"] for c in sheet):
+            names = []
+            for c in sheet:
+                if c["name"] not in names:
+                    names.append(c["name"])
+            return None, names
+        for menu in menus:
+            names = []
+            for c in sheet:
+                if menu in c["menus"] and c["name"] not in names:
+                    names.append(c["name"])
+            if names:
+                return menu, names
+        return menus[0], []
+
+    def named_call(team, name):
+        if name is None:
+            return None
+        return next((c for c in sheet_of(team) if c["name"] == name), None)
+
+    def field_text(los):
+        los = int(los)
+        if los == 50:
+            return "midfield"
+        return ("own %d" % (100 - los)) if los > 50 else ("opponent %d" % los)
+
+    GO_LAYOUT = {"interception": ("int", False), "run": ("run", False), "fumble_run": ("run", False),
+                 "complete": ("att", True), "fumble_catch": ("catch", True), "incomplete": ("att", False),
+                 "sack": ("sack", False), "fumble_sack": ("sack", False)}
+    PLAY_TEXT = {"run": "run", "catch": "complete", "int": "interception", "sack": "sack", "kneel": "kneel",
+                 "spike": "spike"}
+
+    def decision_point(category, lay):
+        """(index, state, the replayed action) of a laid-out segment's first
+        fourth-down decision point, or None: before a scrimmage snap walked
+        at down 4 (a kneel or spike there stays the replayed drive's clock
+        play), else the state after a punt or field-goal drive's last snap
+        when it is down 4."""
+        if not lay.get("ok"):
+            return None
+        rows, kinds = lay["walk"]["rows"], lay["kinds"]
+        for i, state in enumerate(rows):
+            if state["down"] == 4:
+                if kinds[i] in ("kneel", "spike"):
+                    return None
+                return i, {k: state[k] for k in chain_walk.STATE_FIELDS}, fourth.GO
+        if category in fourth.REPLAY_ACTION:
+            state = lay["walk"]["state"]
+            if state is not None and state["down"] == 4:
+                return len(kinds), {k: state[k] for k in chain_walk.STATE_FIELDS}, fourth.REPLAY_ACTION[category]
+        return None
+
+    def fourth_downs(offense, defense, drive_no, spot, window, half, draw_half, quarter, ot_label, score_diff, edge,
+                     draw_extra, timeouts_before, start_kind, off_view, drawn, laid, layout_resample, adopt_layout):
+        """Kernel 2014.6 batch B9F: the possession's fourth-down decisions.
+
+        Walks the drawn drive and every continuation segment to its first
+        fourth-down decision point; takes the decision from its source (the
+        club's block, the controlling coach's live answer, or the chart, on
+        the keyed fourth-down-v1 substream drawn in every case); resolves it
+        with the one resolution of every club; and, after a conversion short
+        of the goal line, draws the continuation from the new spot on the
+        possession stream. Returns {"modified": False, "records": [...]}
+        when the drive stands as drawn (no decision point, or the decision
+        was the drawn drive's own kick there), else the joined possession:
+        its category, seconds, layout, timeouts, terminal and records."""
+        overtime = ot_label if half == "OT" else False
+        base_clock = 0 if half == "OT" else ((4 - quarter) * RULES.quarter_seconds if quarter
+                                              else (1800 if half == 1 else 0))
+        drive_clock = base_clock + window
+        team = teams[offense]
+        policy = fourth_policies[offense]
+        live_default = fourth_live_default and offense == controlled_team
+        kicker = usage.kicking_specialist(off_view, "K", "placekicker")
+        punter = usage.kicking_specialist(off_view, "P", "punt")
+        records, segments = [], []
+        kinds, completed, values, stamps = [], [], [], []
+        snap_calls = {}
+        used = [0, 0]
+        penalty_fd = 0
+        seg = {"drawn": drawn, "laid": laid, "resample": layout_resample, "start": spot, "window": window,
+               "clock": drive_clock, "timeouts_before": tuple(timeouts_before)}
+        index = 0
+        modified = False
+        final = None
+        while True:
+            sd, lay = seg["drawn"], seg["laid"]["layout"]
+            cat, t = sd.category, sd.tuple
+            n = len(lay["kinds"])
+            charged = (min(seg["timeouts_before"][0], t[T["off_timeouts_used"]] or 0),
+                       min(seg["timeouts_before"][1], t[T["def_timeouts_used"]] or 0))
+            own = max(0, int(sd.own_seconds))
+            seg_stamps, kick_stamp = clock_stamps(
+                w5a_constants, lay["kinds"], lay["completed"], start_clock=seg["clock"], own=own,
+                kick_length=fpm.kick_length(cat) if cat in ("field_goal_attempt", "punt") else 0,
+                sack_key=w5a_sack_key, overtime=overtime, pro_bowl=pro_bowl_game)
+            point = decision_point(cat, lay)
+            summary = {"start": seg["start"], "clock": seg["clock"], "window": seg["window"], "category": cat,
+                       "locator": fpm.tuple_locator(cat, t), "tuple": list(t[:5]), "tuple_plays": int(t[T["plays"]]),
+                       "timeouts": list(charged)}
+            if seg["resample"] is not None:
+                summary["layout_resample"] = seg["resample"]
+
+            def replay_whole():
+                """The segment stands as drawn to its own terminal."""
+                nonlocal penalty_fd
+                kinds.extend(lay["kinds"])
+                completed.extend(lay["completed"])
+                values.extend(int(v) for v in lay["values"])
+                stamps.extend(seg_stamps)
+                real = t[T["chains"]]
+                penalty_fd += chain_walk.penalty_first_downs(real[0], real[1], lay["walk"]["chains"][0])
+                used[0] += charged[0]
+                used[1] += charged[1]
+                summary.update(end="replayed", plays=n, own_seconds=own, net=sum(int(v) for v in lay["values"]),
+                               terminal=cat)
+                segments.append(summary)
+                return {"kind": "replayed", "category": cat, "laid": seg["laid"], "own": own,
+                        "expiry": sd.expiry_seconds, "ends_window": sd.consumes_window,
+                        "kick_stamp": kick_stamp if cat in ("field_goal_attempt", "punt") else None,
+                        "term_bucket": t[T["term_bucket"]],
+                        "fg_distance": t[T["fg_distance"]] if cat == "field_goal_attempt" else None}
+
+            if point is None:
+                if not modified:
+                    return {"modified": False, "records": records}
+                final = replay_whole()
+                break
+            i, state, replay = point
+            decision_clock = seg_stamps[i] if i < n else kick_stamp
+            stream = _stream(fourth.FOURTH_TAG, seed, event_id, drive_no, index)
+            u_dec, u_conv, u_rec = stream.random(), stream.random(), stream.random()
+            chart_state = fdm.state(overtime=half == "OT", game_seconds_left=decision_clock, diff=score_diff)
+            cell = fdm.cell(state["ydstogo"], state["los"], chart_state)
+            counts = fdm.chart_counts(cell, chart_state)
+            period, game_clock = _period_clock(decision_clock, overtime=overtime)
+            # A block's period list names overtime "OT" (every overtime period).
+            policy_state = {"period": "OT" if str(period).startswith("OT") else period,
+                            "diff": score_diff, "seconds": decision_clock,
+                            "ydstogo": state["ydstogo"], "los": state["los"], "goal_to_go": state["goal_to_go"]}
+            decision, basis, call_name = fourth.decide(policy, policy_state, u_dec, counts, live_default=live_default)
+            j = i - 1
+            timing = (fourth.BEFORE_THIRD if j >= 0 and lay["kinds"][j] not in ("kneel", "spike")
+                      else fourth.AT_FOURTH)
+            joined_index = len(kinds) + i
+            record = {"segment": index, "index": joined_index, "timing": timing,
+                      "state": dict(state, down=4, period=period, clock=game_clock, score_diff=score_diff),
+                      "replay": replay, "cell": cell, "chart": list(counts)}
+            if decision is None:
+                # Live: Skalaski's and Tice's information at the timing snap.
+                shown_i = j if timing == fourth.BEFORE_THIRD else i
+                shown = (lay["walk"]["rows"][shown_i] if shown_i < n else dict(state, down=4))
+                shown_clock = seg_stamps[shown_i] if shown_i < n else kick_stamp
+                shown_period, shown_text = _period_clock(shown_clock, overtime=overtime)
+                menu, calls = matching_calls(team, ydstogo=shown["ydstogo"], los=shown["los"],
+                                             goal_to_go=shown["goal_to_go"], drive_clock=drive_clock,
+                                             clock=shown_clock, overtime=overtime, diff=score_diff,
+                                             start_kind=start_kind, snap_index=len(kinds) + shown_i)
+                prepared = ((policy or {}).get("prepared_calls") or {}).get(menu) if menu else None
+                so_far = chain_walk.walk(spot, values + [int(v) for v in lay["values"][:shown_i]])["rows"]
+                snaps_so_far = [{"down": r["down"], "ydstogo": r["ydstogo"], "yardline_100": r["los"],
+                                 "play": PLAY_TEXT.get(k, "complete" if c else "incomplete"), "yards": int(v),
+                                 "first_down": bool(r["first_down"])}
+                                for r, k, c, v in zip(so_far, kinds + lay["kinds"][:shown_i],
+                                                      completed + lay["completed"][:shown_i],
+                                                      values + [int(v) for v in lay["values"][:shown_i]])]
+                info = {"drive": drive_no, "segment": index, "timing": timing, "period": shown_period,
+                        "clock": shown_text, "score": {tid: stats[tid]["points"] for tid in stats},
+                        "timeouts": {offense: timeouts_before[0], defense.team_id: timeouts_before[1]},
+                        "timeouts_as_of": "the start of this possession",
+                        "situation": {"down": shown["down"], "ydstogo": shown["ydstogo"],
+                                      "goal_to_go": shown["goal_to_go"], "yardline_100": shown["los"],
+                                      "field_position": field_text(shown["los"])},
+                        "kicking": {"field_goal_distance": shown["los"] + fdm.fg_offset,
+                                    "from": "the line of scrimmage shown",
+                                    "kicker": kicker.player_id if kicker else None,
+                                    "punter": punter.player_id if punter else None,
+                                    "venue": venue, "home": home.team_id, "weather": weather},
+                        "conversion_call": {"menu": menu, "prepared": prepared if prepared in calls else None,
+                                            "calls": calls},
+                        "drive_so_far": {"start_yardline_100": spot, "snaps": snaps_so_far}}
+                decision, call_name = fourth_answer(offense, drive_no, info, calls)
+                record["shown"] = {"down": shown["down"], "ydstogo": shown["ydstogo"], "los": shown["los"],
+                                   "goal_to_go": shown["goal_to_go"], "period": shown_period, "clock": shown_text,
+                                   "menu": menu}
+            elif decision == fourth.GO and call_name is None and policy is not None:
+                menu, calls = matching_calls(team, ydstogo=state["ydstogo"], los=state["los"],
+                                             goal_to_go=state["goal_to_go"], drive_clock=drive_clock,
+                                             clock=decision_clock, overtime=overtime, diff=score_diff,
+                                             start_kind=start_kind, snap_index=joined_index)
+                prepared = (policy.get("prepared_calls") or {}).get(menu) if menu else None
+                call_name = prepared if prepared in calls else None
+            call = named_call(team, call_name) if decision == fourth.GO else None
+            record.update(decision=decision, basis=basis, call=call["name"] if call else None)
+            if decision == replay and decision != fourth.GO:
+                # The drawn drive's own kick at this point: the drive stands
+                # (a go is always resolved by the model).
+                record.update(resolution="replayed", outcome=decision, terminal=True)
+                records.append(record)
+                if not modified:
+                    return {"modified": False, "records": records}
+                final = replay_whole()
+                break
+            # The model resolves: cut the segment at the decision point.
+            modified = True
+            kept = [int(v) for v in lay["values"][:i]]
+            kinds.extend(lay["kinds"][:i])
+            completed.extend(lay["completed"][:i])
+            values.extend(kept)
+            stamps.extend(seg_stamps[:i])
+            real = t[T["chains"]]
+            penalty_fd += chain_walk.penalty_first_downs(
+                real[0], real[1], sum(bool(r["first_down"]) for r in lay["walk"]["rows"][:i]))
+            used[0] += charged[0]
+            used[1] += charged[1]
+            elapsed = seg["clock"] - decision_clock
+            left = max(0, seg["window"] - elapsed)
+            line, distance = int(state["los"]), int(state["ydstogo"])
+            context = clock_context(decision_clock, overtime, pro_bowl_game)
+            if decision in (fourth.PUNT, fourth.FIELD_GOAL):
+                kick_category = "punt" if decision == fourth.PUNT else "field_goal_attempt"
+                act = min(int(fpm.kick_length(kick_category)), left)
+                record.update(resolution="model", outcome=decision, terminal=True)
+                records.append(record)
+                summary.update(end="truncated", plays=i, own_seconds=elapsed + act, net=sum(kept),
+                               terminal=kick_category)
+                segments.append(summary)
+                final = {"kind": "kick", "category": kick_category, "own": elapsed + act, "expiry": 0,
+                         "ends_window": act >= left, "kick_stamp": decision_clock, "term_bucket": None,
+                         "fg_distance": line + fdm.fg_offset if kick_category == "field_goal_attempt" else None,
+                         "terminal": None}
+                break
+            # Go: the sourced conversion, then a real attempt record of the bin.
+            pair = fdm.conversion_pair(distance, state["goal_to_go"])
+            p_convert = fdm.p_convert(pair, edge)
+            converted = u_conv < p_convert
+            family = {"run": "run", "pass": "pass"}.get(call["type"]) if call else None
+            candidates = fdm.attempt_records(distance, line, converted, family)
+            if candidates:
+                chosen = candidates[min(len(candidates) - 1, int(u_rec * len(candidates)))]
+                kind, yards = chosen["kind"], int(chosen["yards"])
+            else:
+                diagnostics["fourth_down_record_fallback"] = diagnostics.get("fourth_down_record_fallback", 0) + 1
+                kind = ("run" if family == "run" else "complete") if converted else (
+                    "run" if family == "run" else "incomplete")
+                yards = distance if converted else 0
+            if converted:
+                yards = min(max(yards, distance), line)
+            touchdown = converted and yards >= line
+            layout_kind, complete = GO_LAYOUT[kind]
+            if touchdown and layout_kind == "att":
+                layout_kind = "catch"
+            if kind == "interception":
+                yards = 0
+            if call is not None:
+                snap_calls[len(kinds)] = call
+            kinds.append(layout_kind)
+            completed.append(complete)
+            values.append(yards)
+            stamps.append(decision_clock)
+            record.update(resolution="model", conversion=list(pair), p_convert=p_convert, kind=kind, yards=yards)
+            if converted and not touchdown:
+                act = max(1, int(round(gap_seconds(w5a_constants, gap_kind(layout_kind, complete), context,
+                                                   w5a_sack_key))))
+                if act >= left:
+                    # The conversion runs out the window.
+                    record.update(outcome="converted", terminal=True)
+                    records.append(record)
+                    summary.update(end="truncated", plays=i + 1, own_seconds=elapsed + left, net=sum(kept) + yards,
+                                   terminal="clock")
+                    segments.append(summary)
+                    final = {"kind": "go", "category": "clock", "own": elapsed + left, "expiry": 0,
+                             "ends_window": True, "kick_stamp": None, "term_bucket": None, "fg_distance": None,
+                             "terminal": None}
+                    break
+                record.update(outcome="converted", terminal=False)
+                records.append(record)
+                summary.update(end="continued", plays=i + 1, own_seconds=elapsed + act, net=sum(kept) + yards,
+                               terminal=None)
+                segments.append(summary)
+                new_spot, new_window = line - yards, left - act
+                held = (timeouts_before[0] - used[0], timeouts_before[1] - used[1])
+                nxt = fpm.draw_drive(rng, new_spot, draw_half, new_window, score_diff, edge, diagnostics, held,
+                                     extra=draw_extra)
+                nxt, nxt_laid, nxt_resample = adopt_layout(nxt, new_spot, new_window, segment=index + 1,
+                                                           seg_timeouts=held)
+                seg = {"drawn": nxt, "laid": nxt_laid, "resample": nxt_resample, "start": new_spot,
+                       "window": new_window, "clock": decision_clock - act, "timeouts_before": held}
+                index += 1
+                continue
+            act = min(max(1, int(round(gap_seconds(w5a_constants, "incomplete", context, w5a_sack_key)))), left)
+            if touchdown:
+                outcome, terminal_category = "touchdown", "touchdown"
+            elif kind == "interception":
+                outcome, terminal_category = "interception", "interception"
+            elif kind.startswith("fumble_"):
+                outcome, terminal_category = "fumble_lost", "fumble_lost"
+            else:
+                outcome, terminal_category = "failed", "downs"
+            record.update(outcome=outcome, terminal=True)
+            records.append(record)
+            summary.update(end="truncated", plays=i + 1, own_seconds=elapsed + act, net=sum(kept) + yards,
+                           terminal=terminal_category)
+            segments.append(summary)
+            final = {"kind": "go", "category": terminal_category, "own": elapsed + act, "expiry": 0,
+                     "ends_window": act >= left, "kick_stamp": None, "term_bucket": None, "fg_distance": None,
+                     "terminal": layout_kind if terminal_category in ("touchdown", "interception", "fumble_lost")
+                     else None}
+            break
+
+        # The joined possession: one layout, one chain walk.
+        category = final["category"]
+        replayed = final["kind"] == "replayed"
+        last_laid = final.get("laid")
+        terminal = last_laid["layout"]["terminal"] if replayed else final["terminal"]
+        safety_terminal = last_laid["safety_terminal"] if replayed else None
+        terminal_value = last_laid["terminal_value"] if replayed else 0
+        walk = chain_walk.walk(spot, values, category in chain_walk.TURNOVER_TERMINALS)
+        net = sum(values)
+        end_spot = 0 if category == "touchdown" else (100 if category == "safety" else spot - net)
+        last = len(kinds) - 1
+        safety_run = safety_terminal is not None and safety_terminal[0] == "run"
+        safety_sack = safety_terminal is not None and safety_terminal[0] == "sack"
+        pass_yards = sum(v for k, c, v in zip(kinds, completed, values) if k in ("att", "catch") and c)
+        rush_free = sum(v for index_, (k, v) in enumerate(zip(kinds, values))
+                        if k == "run" and not (safety_run and index_ == last))
+        losses = [-v for index_, (k, v) in enumerate(zip(kinds, values))
+                  if k == "sack" and not (safety_sack and index_ == last)]
+        kneel_values = [v for k, v in zip(kinds, values) if k == "kneel"]
+        td_kind = None
+        if category == "touchdown":
+            td_kind = "pass" if terminal == "catch" else "rush"
+        joined_laid = {
+            "net": net, "end_spot": end_spot, "plays": len(kinds),
+            "runs": sum(k == "run" for k in kinds), "attempts": sum(k in ("att", "catch", "int") for k in kinds),
+            "sacks": sum(k == "sack" for k in kinds), "kneel_yards": kneel_values,
+            "spikes": sum(k == "spike" for k in kinds), "td_type": td_kind,
+            "turnover_type": category if category in drive_model.TURNOVER_CATEGORIES else None,
+            "kneel_sum": sum(kneel_values), "terminal_value": terminal_value, "safety_terminal": safety_terminal,
+            "layout": {"ok": True, "terminal": terminal, "kinds": kinds, "completed": completed, "values": values,
+                       "walk": walk, "pass_yards": pass_yards, "rush_free": rush_free, "losses": losses},
+        }
+        own_total = sum(seg_["own_seconds"] for seg_ in segments)
+        spikes_at = [s_ for k, s_ in zip(kinds, stamps) if k == "spike"]
+        return {
+            "modified": True, "records": records, "segments": segments, "category": category,
+            "seconds": own_total + final["expiry"], "own_seconds": own_total, "half_final": bool(final["ends_window"]),
+            "laid": joined_laid, "term_bucket": final["term_bucket"],
+            "fg_distance": final["fg_distance"], "timeouts_used": (used[0], used[1]),
+            "penalty_first_downs": penalty_fd, "snap_calls": snap_calls,
+            "clock_plan": {"stamps": list(stamps), "kick": final["kick_stamp"]},
+            "last_spike_seconds_left": (spikes_at[-1] - base_clock) if spikes_at else None,
+        }
+
     def possess(offense, window, half, spot, start_kind, ot_history=None, ot_label="OT", quarter=None):
         checkpoint()
         team = teams[offense]
@@ -1453,12 +1926,18 @@ def _resolve_game(
         drawn = fpm.draw_drive(rng, spot, draw_half, window, score_diff, edge, diagnostics,
                                           timeouts_before, extra=draw_extra)
 
-        def lay_out(drawn, draw_rng, scratch):
+        def lay_out(drawn, draw_rng, scratch, start=None, seg_window=None, segment=None):
             """Steps 4-6b for one drawn drive: its snap counts, the sack
             losses and yard split (on `draw_rng`) and the chain layout (its
-            diagnostics in `scratch`, merged only for the adopted drive)."""
+            diagnostics in `scratch`, merged only for the adopted drive).
+            Kernel 2014.6 batch B9F: a continuation segment of the possession
+            is laid out from its own ``start`` spot and ``seg_window`` on its
+            own keyed layout stream (``segment``); the drive's first segment
+            reads the possession's spot and window, unchanged."""
+            start = spot if start is None else start
+            seg_window = window if seg_window is None else seg_window
             category, row = drawn.category, drawn.tuple
-            net, end_spot = fpm.adapt(category, row, spot)
+            net, end_spot = fpm.adapt(category, row, start)
             plays = int(row[T["plays"]])
             runs, attempts, sacks = int(row[T["runs"]]), int(row[T["attempts"]]), int(row[T["sacks"]])
             kneel_yards = list(row[T["kneel_yards"]])
@@ -1478,10 +1957,10 @@ def _resolve_game(
             # carry the drive's yardage: their losses are fitted to the net.
             if free > 0:
                 sack_losses = [draw_rng.randint(3, 10) for _ in range(open_sacks)]
-                if category == "touchdown" and free == 1 and sum(sack_losses) > 99 - spot:
+                if category == "touchdown" and free == 1 and sum(sack_losses) > 99 - start:
                     # Only fixed snaps precede the scoring snap: their losses must
                     # keep the ball out of the own end zone.
-                    while sum(sack_losses) > 99 - spot:
+                    while sum(sack_losses) > 99 - start:
                         big = max(range(len(sack_losses)), key=lambda i: (sack_losses[i], -i))
                         sack_losses[big] -= 1
                     scratch["sack_losses_fitted"] = scratch.get("sack_losses_fitted", 0) + 1
@@ -1522,7 +2001,7 @@ def _resolve_game(
                 # snap (running spot in [1, 99]); any excess moves to the scoring
                 # kind, whose total then lies in [1, 99].
                 before = rush_free if td_type == "pass" else pass_yards
-                fitted = min(max(before, spot - 99 - fixed_sum), spot - 1 - fixed_sum)
+                fitted = min(max(before, start - 99 - fixed_sum), start - 1 - fixed_sum)
                 if fitted != before:
                     scratch["td_split_fitted"] = scratch.get("td_split_fitted", 0) + 1
                     if td_type == "pass":
@@ -1541,7 +2020,7 @@ def _resolve_game(
             # (same net), which the drive then publishes.
             fg_down = None
             if early_fg_v2 and category == "field_goal_attempt" and not fpm.early_fg_ok(
-                    row, window, half == "OT", drawn.consumes_window, draw_extra.get("walk_off_fg", False)):
+                    row, seg_window, half == "OT", drawn.consumes_window, draw_extra.get("walk_off_fg", False)):
                 # Batch B6 (W3): the kick comes on fourth down in every tier;
                 # the closable last fallback admits the real down, counted.
                 fg_down = 4
@@ -1549,79 +2028,109 @@ def _resolve_game(
                 seed=seed, event_id=event_id, drive_no=drive_no, offense=offense, category=category,
                 td_type=td_type, runs=runs, attempts=attempts, sacks=sacks, kneel_yards=kneel_yards,
                 spikes=spikes, pass_yards=pass_yards, rush_free=rush_free, losses=sack_losses,
-                safety_terminal=safety_terminal, net=net, spot=spot, completion_rate=completion_rate,
+                safety_terminal=safety_terminal, net=net, spot=start, completion_rate=completion_rate,
                 targets=list(row[T["chains"]]), term_down=row[T["term_down"]], diagnostics=scratch,
-                usage_values=usage_values, fg_down=fg_down)
+                usage_values=usage_values, fg_down=fg_down, segment=segment)
             return dict(net=net, end_spot=end_spot, plays=plays, runs=runs, attempts=attempts, sacks=sacks,
                         kneel_yards=kneel_yards, spikes=spikes, td_type=td_type, turnover_type=turnover_type,
                         kneel_sum=kneel_sum, terminal_value=terminal_value, safety_terminal=safety_terminal,
                         layout=layout)
 
-        scratch = {}
-        laid = lay_out(drawn, rng, scratch)
-        layout_resample = None
-        if not laid["layout"]["ok"]:
-            # Kernel 2014.4 phase 2 (register item 3, last fallback): no plan
-            # legalised this real drive's snaps, so another real drive of the
-            # same category and rung stands in, drawn on the drive's own
-            # layout-resample stream (never the possession stream); the
-            # original tuple is recorded. A closed week cannot abort on one
-            # drive; when the rung has no other legal drive the original
-            # keeps its unconstrained order and the audit flags it, as before.
-            resample_rng = chain_walk.resample_stream(seed, event_id, drive_no, offense)
-            original = drawn
-            tried = [drawn.tuple]
-            for attempt in range(1, LAYOUT_RESAMPLE_LIMIT + 1):
-                alt = (fpm.resample_drive(resample_rng, original, spot, window, exclude=tried,
-                                          timeouts=timeouts_before, extra=draw_extra) if regimes_v3
-                       else fpm.resample_drive(resample_rng, original, spot, window, exclude=tried))
-                if alt is None:
-                    break
-                tried.append(alt.tuple)
-                alt_scratch = {}
-                candidate = lay_out(alt, resample_rng, alt_scratch)
-                if candidate["layout"]["ok"]:
-                    drawn, laid, scratch = alt, candidate, alt_scratch
-                    layout_resample = {
-                        "resamples": attempt,
-                        "pool": list(original.pool_id) if original.pool_id else None,
-                        "original": {"locator": fpm.tuple_locator(original.category, original.tuple),
-                                     "tuple": list(original.tuple[:5])},
-                        "final": {"locator": fpm.tuple_locator(alt.category, alt.tuple),
-                                  "tuple": list(alt.tuple[:5])},
-                    }
-                    if original.match_width is not None:
-                        # Kernel 2014.6 (append-only): the R17 time-match width.
-                        layout_resample["match_width"] = original.match_width
-                    if regimes_v3 and (alt.pool_id != original.pool_id or alt.match_width != original.match_width):
-                        # Kernel 2014.6 (append-only): the wider pool the
-                        # resample drew from (FieldPositionModelV3._resample_rungs).
-                        layout_resample["final_pool"] = list(alt.pool_id)
-                        layout_resample["final_match_width"] = alt.match_width
-                        diagnostics["chain_layout_resample_widened"] = \
-                            diagnostics.get("chain_layout_resample_widened", 0) + 1
-                    diagnostics["chain_layout_resampled"] += 1
-                    break
-            if layout_resample is None:
-                diagnostics["chain_layout_resample_exhausted"] += 1
-        for name, count in scratch.items():
-            diagnostics[name] = diagnostics.get(name, 0) + count
+        def adopt_layout(drawn, start, seg_window, segment=None, seg_timeouts=None):
+            """(drawn, laid, layout resample) of one drawn drive. When no plan
+            legalised its snaps (kernel 2014.4 phase 2, register item 3, last
+            fallback), another real drive of the same category and rung
+            stands in, drawn on the drive's own layout-resample stream (never
+            the possession stream); the original tuple is recorded. A closed
+            week cannot abort on one drive; when the rung has no other legal
+            drive the original keeps its unconstrained order and the audit
+            flags it, as before. Kernel 2014.6 batch B9F: a continuation
+            segment uses its own start, window and timeouts and its keyed
+            streams; the first segment is the unchanged path."""
+            seg_timeouts = timeouts_before if seg_timeouts is None else seg_timeouts
+            scratch = {}
+            laid = lay_out(drawn, rng, scratch, start, seg_window, segment)
+            layout_resample = None
+            if not laid["layout"]["ok"]:
+                resample_rng = chain_walk.resample_stream(seed, event_id, drive_no, offense, segment=segment)
+                original = drawn
+                tried = [drawn.tuple]
+                for attempt in range(1, LAYOUT_RESAMPLE_LIMIT + 1):
+                    alt = (fpm.resample_drive(resample_rng, original, start, seg_window, exclude=tried,
+                                              timeouts=seg_timeouts, extra=draw_extra) if regimes_v3
+                           else fpm.resample_drive(resample_rng, original, start, seg_window, exclude=tried))
+                    if alt is None:
+                        break
+                    tried.append(alt.tuple)
+                    alt_scratch = {}
+                    candidate = lay_out(alt, resample_rng, alt_scratch, start, seg_window, segment)
+                    if candidate["layout"]["ok"]:
+                        drawn, laid, scratch = alt, candidate, alt_scratch
+                        layout_resample = {
+                            "resamples": attempt,
+                            "pool": list(original.pool_id) if original.pool_id else None,
+                            "original": {"locator": fpm.tuple_locator(original.category, original.tuple),
+                                         "tuple": list(original.tuple[:5])},
+                            "final": {"locator": fpm.tuple_locator(alt.category, alt.tuple),
+                                      "tuple": list(alt.tuple[:5])},
+                        }
+                        if original.match_width is not None:
+                            # Kernel 2014.6 (append-only): the R17 time-match width.
+                            layout_resample["match_width"] = original.match_width
+                        if regimes_v3 and (alt.pool_id != original.pool_id or alt.match_width != original.match_width):
+                            # Kernel 2014.6 (append-only): the wider pool the
+                            # resample drew from (FieldPositionModelV3._resample_rungs).
+                            layout_resample["final_pool"] = list(alt.pool_id)
+                            layout_resample["final_match_width"] = alt.match_width
+                            diagnostics["chain_layout_resample_widened"] = \
+                                diagnostics.get("chain_layout_resample_widened", 0) + 1
+                        diagnostics["chain_layout_resampled"] += 1
+                        break
+                if layout_resample is None:
+                    diagnostics["chain_layout_resample_exhausted"] += 1
+            for name, count in scratch.items():
+                diagnostics[name] = diagnostics.get(name, 0) + count
+            return drawn, laid, layout_resample
+
+        drawn, laid, layout_resample = adopt_layout(drawn, spot, window)
+        joined = fourth_downs(offense, defense, drive_no, spot, window, half, draw_half, quarter, ot_label,
+                              score_diff, edge, draw_extra, timeouts_before, start_kind, off_view,
+                              drawn, laid, layout_resample, adopt_layout) if fourth_on else None
+        modified = joined is not None and joined["modified"]
         category, row, seconds = drawn.category, drawn.tuple, drawn.seconds
-        # The real drive's charged timeouts, capped at what each club holds.
-        timeouts_used = (min(timeouts_before[0], row[T["off_timeouts_used"]] or 0),
-                         min(timeouts_before[1], row[T["def_timeouts_used"]] or 0))
+        own_seconds_v, half_final = drawn.own_seconds, drawn.consumes_window
+        term_bucket = row[T["term_bucket"]]
+        fg_distance_real = row[T["fg_distance"]] if category == "field_goal_attempt" else None
+        if modified:
+            # Batch B9F: a fourth-down decision changed the drive. The
+            # possession is the joined drive: its snaps, chain walk, seconds,
+            # timeouts and terminal come from its segments and the resolved
+            # decisions (fourth_downs); no single tuple stands for it.
+            category, seconds = joined["category"], joined["seconds"]
+            own_seconds_v, half_final = joined["own_seconds"], joined["half_final"]
+            laid, layout_resample = joined["laid"], None
+            term_bucket, fg_distance_real = joined["term_bucket"], joined["fg_distance"]
+            timeouts_used = joined["timeouts_used"]
+        else:
+            # The real drive's charged timeouts, capped at what each club holds.
+            timeouts_used = (min(timeouts_before[0], row[T["off_timeouts_used"]] or 0),
+                             min(timeouts_before[1], row[T["def_timeouts_used"]] or 0))
         timeouts[offense] -= timeouts_used[0]
         timeouts[other(offense)] -= timeouts_used[1]
-        half_final = drawn.consumes_window
         net, end_spot, plays = laid["net"], laid["end_spot"], laid["plays"]
         runs, attempts, sacks = laid["runs"], laid["attempts"], laid["sacks"]
         kneel_yards, spikes, td_type, turnover_type = laid["kneel_yards"], laid["spikes"], laid["td_type"], laid["turnover_type"]
         kneel_sum, terminal_value, safety_terminal, layout = laid["kneel_sum"], laid["terminal_value"], laid["safety_terminal"], laid["layout"]
         pass_yards, rush_free, sack_losses = layout["pass_yards"], layout["rush_free"], layout["losses"]
         walked = layout["walk"]["chains"]
-        real_chains = row[T["chains"]]
-        chains = [walked[0], chain_walk.penalty_first_downs(real_chains[0], real_chains[1], walked[0]),
-                  walked[1], walked[2], walked[3], walked[4]]
+        if modified:
+            # Each segment's penalty first downs against its kept snaps (the
+            # resolved snaps carry none; chains.penalty_first_downs).
+            chains = [walked[0], joined["penalty_first_downs"], walked[1], walked[2], walked[3], walked[4]]
+        else:
+            real_chains = row[T["chains"]]
+            chains = [walked[0], chain_walk.penalty_first_downs(real_chains[0], real_chains[1], walked[0]),
+                      walked[1], walked[2], walked[3], walked[4]]
 
         rush_yards = rush_free + kneel_sum + (terminal_value if safety_terminal and safety_terminal[0] == "run" else 0)
         sack_total = sum(sack_losses) + (-terminal_value if safety_terminal and safety_terminal[0] == "sack" else 0)
@@ -1652,7 +2161,7 @@ def _resolve_game(
         # Batch B9 (R8): the try row's own stamp, with its scoring snap at the
         # drive's own end, never after the clock-expiry leg (the extra-point
         # row's stamp since kernel 2014.4); the try state reads it.
-        own_used = seconds if drawn.own_seconds is None else max(0, min(int(drawn.own_seconds), seconds))
+        own_used = seconds if own_seconds_v is None else max(0, min(int(own_seconds_v), seconds))
         own_end = start_clock - own_used
         try_period, try_clock = _period_clock(own_end, closing=own_end <= end_clock, overtime=overtime_label)
         try_at = {"drive": drive_no, "period": try_period, "game_clock": try_clock, "snap_in_drive": plays + 1}
@@ -1740,7 +2249,7 @@ def _resolve_game(
                     s["extra_points_made"] += 1
         elif category == "field_goal_attempt":
             s["field_goal_attempts"] += 1
-            fg_distance = int(row[T["fg_distance"]])
+            fg_distance = int(fg_distance_real)
             # Kernel 2014.4 phase 2: the distance model (register item 18)
             # and the kicker's own term (special teams; slope 0 in this
             # candidate) on the same single draw.
@@ -1907,13 +2416,17 @@ def _resolve_game(
                 "clock_s": clock_s, "clock_bucket": fpm.terminal_bucket(clock_s) if draw_half == 2 else None,
                 "half": draw_half, "score_diff": score_diff, "need": fpm.need(score_diff),
                 "decision_zone": fpm.decision_zone(end_spot), "cell": drawn.cell,
-                "tuple_terminal_bucket": row[T["term_bucket"]],
+                "tuple_terminal_bucket": term_bucket,
                 "action": {"punt": "punt", "field_goal_attempt": "field_goal", "downs": "go"}[category],
             }
             if clock_detail:
                 # Batch B6 (W5a, append-only): the fourth-down action is the
                 # replayed drive's, a league-model decision, never a coach's.
                 fourth_down["decision_source"] = "league_model"
+                if joined is not None and joined["records"] and joined["records"][-1].get("terminal"):
+                    # Batch B9F: the terminal decision's source (the chart is
+                    # the league model; a block or a live answer the head coach).
+                    fourth_down["decision_source"] = fourth.decision_source(joined["records"][-1]["basis"])
 
         drive_ledger, drive_calls = apply_drive_detail(
             calibration_base=cbase,
@@ -1946,7 +2459,7 @@ def _resolve_game(
             start_spot=spot,
             start_clock=start_clock,
             end_clock=end_clock,
-            own_seconds=drawn.own_seconds,
+            own_seconds=own_seconds_v,
             overtime=ot_label if half == "OT" else False,
             punt_record=punt_record,
             turnover_record=turnover_record,
@@ -1965,8 +2478,24 @@ def _resolve_game(
             timeouts_used=timeouts_used,
             game_type=game_type,
             kernel_version=profile.kernel_version,
+            # Kernel 2014.6 batch B9F: a joined possession's segment-wise
+            # stamps and its go snaps' named calls (records only).
+            clock_plan=joined["clock_plan"] if modified else None,
+            snap_calls=joined["snap_calls"] if modified else None,
         )
         chain_walk.annotate(drive_ledger, layout["walk"], fourth_down)
+        if joined is not None and joined["records"]:
+            # Batch B9F (append-only): the row of each decision, the go snap or
+            # the kick, carries the decision, its basis, timing and call.
+            scrimmage_rows = [r for r in drive_ledger if r.get("play_type") in ("pass", "run")]
+            kick_rows = [r for r in drive_ledger if r.get("play_type") in ("punt", "field_goal")]
+            for decided in joined["records"]:
+                mark = {"decision": decided["decision"], "basis": decided["basis"], "timing": decided["timing"],
+                        "call": decided["call"]}
+                if decided["decision"] == fourth.GO:
+                    scrimmage_rows[decided["index"]]["fourth_down_decision"] = mark
+                elif kick_rows:
+                    kick_rows[0]["fourth_down_decision"] = mark
         if try_record is not None and score_kind == "touchdown" and scoring_team == offense:
             # Batch B9 (R8): the offensive try row, anchored to this drive and
             # naming its scorer; a two-point row sits right after the
@@ -2060,7 +2589,7 @@ def _resolve_game(
             "next_start": next_start,
             "score_diff": score_diff,
             "cell": drawn.cell,
-            "tuple_terminal_bucket": row[T["term_bucket"]],
+            "tuple_terminal_bucket": term_bucket,
             "chains": chains,
             "fourth_down": fourth_down,
             "kneels": len(kneel_yards),
@@ -2072,8 +2601,8 @@ def _resolve_game(
             # Kernel 2014.4 (append-only): the drive's own scaled seconds and
             # the clock-expiry leg after its last snap (seconds = own +
             # expiry; expiry is 0 unless the drive ends its window).
-            "own_seconds": drawn.own_seconds,
-            "expiry_seconds": drawn.expiry_seconds,
+            "own_seconds": own_seconds_v,
+            "expiry_seconds": seconds - own_seconds_v if modified else drawn.expiry_seconds,
             # Kernel 2014.4 (append-only): the drive's passer.
             "passer": passer.player_id,
             # Kernel 2014.4 (append-only): chains and fourth_down are walked
@@ -2105,10 +2634,18 @@ def _resolve_game(
                     record["punt"][key] = punt_record[key]
         if layout_resample is not None:
             record["layout_resample"] = layout_resample
+        if fourth_on:
+            # Batch B9F (append-only): every fourth-down decision of the
+            # possession, and for a possession a decision changed, its
+            # segments (each one's start, snaps, own seconds and tuple).
+            record["fourth_downs"] = joined["records"] if joined is not None else []
+            if modified:
+                record["segments"] = joined["segments"]
         if regimes_v3 and spikes:
             # Kernel 2014.6 (append-only): the window seconds left at the
             # drive's last spike (the R14 spike rule's quantity).
-            record["last_spike_seconds_left"] = window - drawn.own_seconds + int(fpm.value(row, "last_spike_to_end"))
+            record["last_spike_seconds_left"] = (joined["last_spike_seconds_left"] if modified else
+                                                 window - drawn.own_seconds + int(fpm.value(row, "last_spike_to_end")))
         if half == "OT":
             record["period"] = _period_clock(start_clock, overtime=ot_label)[0]
         if quarter:
@@ -2348,7 +2885,8 @@ def _resolve_game(
         # audit rebuilds it again and compares, never trusting the stored list.
         result["scoring_events"] = scoring_events(result)
     blocks = {team.team_id: {kind: json.loads(json.dumps(getattr(team, field)))
-                             for field, kind in (("try_policy", "two_point"), ("kickoff_policy", "kickoff"))
+                             for field, kind in (("try_policy", "two_point"), ("kickoff_policy", "kickoff"),
+                                                 ("fourth_down_policy", "fourth_down"))
                              if getattr(team, field, None) is not None} for team in (home, away)}
     if any(blocks.values()):
         # Batch B9 (append-only): each club's decision blocks as frozen on its

@@ -935,8 +935,10 @@ def _audit_field_position_v3(receipts, base):
     # Late trailing punts.
     for key, seconds, text in (("late_punt_share_last5_trail1_8", 300, "last 5:00"),
                                ("late_punt_share_le120_trail1_8", 120, "last 2:00")):
+        # Batch B9F: a possession whose terminal fourth down a club's block or
+        # a live answer decided is the coach's decision, never graded here.
         cell = [d for d in spotted if isinstance(d.get("score_diff"), int) and -8 <= d["score_diff"] <= -1
-                and (d["half"] == "OT" or (d["half"] == 2 and d["end_clock"] <= seconds))]
+                and (d["half"] == "OT" or (d["half"] == 2 and d["end_clock"] <= seconds)) and not _coach_decided(d)]
         rate_row("punt share of possessions ending in Q4's %s or OT, offense trailing 1-8" % text,
                  sum(d["category"] == "punt" for d in cell), len(cell), _pooled(centres[key]))
     mean_row("third-down attempts per punt drive", [d["chains"][2] for d in punts if d.get("chains")],
@@ -1018,7 +1020,9 @@ def _audit_field_position_v3(receipts, base):
                  spikes if with_field else None, 0, 0,
                  ("OUTSIDE" if spikes else "WITHIN") if with_field else "INSUFFICIENT SAMPLE"))
     trailing = [d for d in overtime if isinstance(d.get("score_diff"), int) and d["score_diff"] < 0]
-    punts_ot = sum(d["category"] == "punt" for d in trailing)
+    # Batch B9F: a punt a club's block or a live answer decided is the coach's
+    # football decision, never the model's (counted apart, never graded).
+    punts_ot = sum(d["category"] == "punt" and not _coach_decided(d) for d in trailing)
     rows.append(("trailing overtime punts (zero tolerance)", punts_ot, 0, 0,
                  "OUTSIDE" if punts_ot else "WITHIN"))
 
@@ -1282,6 +1286,101 @@ def audit_scoring(receipts, cohort=None):
     # Points: measured, never forecast (the graded points row is the volume table's).
     rows.append(("points per team-game (measured; no forecast)", total("points") / team_games if team_games else None,
                  None, None, "MEASURED" if team_games else "INSUFFICIENT SAMPLE"))
+    return team_games, rows
+
+
+def _coach_decided(drive):
+    """Kernel 2014.6 batch B9F: whether a drive's terminal fourth-down decision
+    came from a club's block or a live answer (basis ``policy:i`` or ``live``),
+    not the league chart."""
+    from .scoring_decisions import CHART_BASES
+    records = drive.get("fourth_downs") or ()
+    return bool(records) and bool(records[-1].get("terminal")) and records[-1].get("basis") not in CHART_BASES
+
+
+FOURTH_DOWN_FROM = (2014, 6)
+FOURTH_DOWN_CONVERTED = ("converted", "touchdown")
+
+
+def audit_fourth_down(receipts, cohort=None):
+    """Kernel 2014.6 batch B9F: the fourth-down rows for a 2014.6-or-later
+    cohort, (team-games, [(metric, observed, centre, tolerance, status)]).
+    Every centre is read from the cohort base's fourth-down artifact
+    (library/data/2010_2014w4_fourth_down_decisions.json, its ``centres``
+    count pairs), never typed: rates use 3*sqrt(p(1-p)/n) and counts
+    3*sqrt(c/n); a rate row reads INSUFFICIENT SAMPLE below 30 events.
+    Earlier cohorts have no row (0, []).
+
+    Graded (library/2014_6_fourth_down_specification.md, section 10): the go
+    share of the decisions the chart made (basis ``league`` or
+    ``delegated:league``), fourth-down attempts per team-game on the
+    team-games whose fourth downs were all chart-decided, and the conversion
+    rate of every go (the odds do not depend on the basis). A decision of a
+    club's block or a live answer is the coach's football decision: counted
+    apart in one informational row, never graded, so a block or an answer
+    cannot move a graded row. Informational: the field-goal and punt shares
+    of chart decisions, decisions per team-game, and the chart-conditional
+    go count against the sum of each chart decision's go probability (its
+    cell's go count over the cell's decisions)."""
+    from .scoring_decisions import CHART_BASES
+
+    if cohort is None or not kernel_at_least(cohort, FOURTH_DOWN_FROM):
+        return 0, []
+    base = cohort_base(receipts, cohort)
+    centres = base.fourth_down().centres
+    team_games = sum(len(r.get("team_stats", {})) for r in receipts)
+    rows, add = _grader(team_games >= MIN_TEAM_GAMES)
+
+    def pooled(name):
+        k, n = centres[name]
+        return k / n
+
+    def rate_row(metric, made, n, centre, *, graded=True):
+        observed, tolerance = _rate(made, n, centre)
+        add(metric, observed, centre, tolerance, events=n, graded=graded)
+
+    def count_row(metric, total, centre, *, graded=True, games=None):
+        games = team_games if games is None else games
+        observed = total / games if games else None
+        tolerance = 3 * math.sqrt(centre / games) if games and centre else None
+        add(metric, observed, centre, tolerance, graded=graded)
+
+    decisions, chart_games, chart_attempts = [], 0, 0
+    for r in receipts:
+        by_club = {}
+        for d in _drives(r):
+            for rec in d.get("fourth_downs") or ():
+                decisions.append(rec)
+                by_club.setdefault(d.get("team"), []).append(rec)
+        for club in r.get("team_stats", {}):
+            own = by_club.get(club, [])
+            if all(rec.get("basis") in CHART_BASES for rec in own):
+                chart_games += 1
+                chart_attempts += sum(rec.get("decision") == "go" for rec in own)
+    chart = [rec for rec in decisions if rec.get("basis") in CHART_BASES]
+    gos = [rec for rec in decisions if rec.get("decision") == "go"]
+    rate_row("fourth-down go share of chart decisions", sum(rec["decision"] == "go" for rec in chart), len(chart),
+             pooled("go_share"))
+    count_row("fourth-down attempts per team-game (team-games decided by the chart)", chart_attempts,
+              pooled("attempts_per_team_game"), games=chart_games)
+    rate_row("fourth-down conversion rate", sum(rec.get("outcome") in FOURTH_DOWN_CONVERTED for rec in gos),
+             len(gos), pooled("conversion_rate"))
+    rate_row("field-goal share of chart fourth-down decisions (informational)",
+             sum(rec["decision"] == "field_goal" for rec in chart), len(chart), pooled("field_goal_share"),
+             graded=False)
+    rate_row("punt share of chart fourth-down decisions (informational)",
+             sum(rec["decision"] == "punt" for rec in chart), len(chart), pooled("punt_share"), graded=False)
+    count_row("fourth-down decisions per team-game (informational)", len(decisions),
+              pooled("decisions_per_team_game"), graded=False)
+    expected = [rec["chart"][0] / sum(rec["chart"]) for rec in chart if rec.get("chart") and sum(rec["chart"])]
+    rows.append(("chart-conditional go count against the sum of the chart decisions' go probabilities "
+                 "(informational)", sum(rec["decision"] == "go" for rec in chart) if chart else None,
+                 sum(expected) if chart else None, None,
+                 "INFORMATIONAL" if len(chart) >= MIN_EVENTS and team_games >= MIN_TEAM_GAMES
+                 else "INSUFFICIENT SAMPLE"))
+    rows.append(("fourth downs decided by a club's block or a live answer (informational; counted apart, never "
+                 "graded against the chart)", len(decisions) - len(chart), None, None,
+                 "MEASURED" if team_games else "INSUFFICIENT SAMPLE"))
     return team_games, rows
 
 

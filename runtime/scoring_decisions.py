@@ -424,50 +424,75 @@ def canonical_policy(block):
 # The TeamInput field and the profile flag of each decision kind.
 POLICY_FIELDS = {"two_point": "try_policy", "kickoff": "kickoff_policy"}
 POLICY_FLAGS = {"two_point": "two_point_tries", "kickoff": "onside_kicks"}
+# Kernel 2014.6 batch B9F: the optional fourth-down block
+# (decisions.fourth_down; runtime.fourth_down.policy_errors). Optional: with
+# none, the controlled club of a user-controlled regular-season or
+# postseason game decides its fourth downs live (Stone's standing
+# instruction), so its absence never fails closed.
+OPTIONAL_KINDS = ("fourth_down",)
+POLICY_FIELDS["fourth_down"] = "fourth_down_policy"
+POLICY_FLAGS["fourth_down"] = "fourth_down_decisions"
 
 
 def profile_kinds(profile):
-    """The decision kinds a kernel profile resolves (its B9 flags)."""
+    """The decision kinds a kernel profile resolves that need a block on the
+    controlled club (its B9 flags; U6)."""
     return tuple(kind for kind in POLICY_KINDS if profile.has(POLICY_FLAGS[kind]))
+
+
+def decision_kinds(profile):
+    """Every decision kind a kernel profile resolves: the B9 kinds and, under
+    fourth_down_decisions (batch B9F), the optional fourth-down block."""
+    return profile_kinds(profile) + tuple(kind for kind in OPTIONAL_KINDS if profile.has(POLICY_FLAGS[kind]))
 
 
 def kernel_kinds(version):
     """The decision kinds the kernel ``version`` decided: its registered
-    profile's, and none for every kernel before 2014.6 (unregistered)."""
+    profile's (decision_kinds), and none for every kernel before 2014.6
+    (unregistered)."""
     from .profiles import PROFILES
     profile = PROFILES.get(str(version))
-    return profile_kinds(profile) if profile is not None else ()
+    return decision_kinds(profile) if profile is not None else ()
 
 
 def live_kinds():
     """The decision kinds of the installed kernel's profile."""
     from . import KERNEL_VERSION
     from .profiles import profile_for
-    return profile_kinds(profile_for(KERNEL_VERSION))
+    return decision_kinds(profile_for(KERNEL_VERSION))
 
 
-def sheet_errors(decisions):
+def sheet_errors(decisions, call_names=None):
     """Problems with a frozen call sheet's ``decisions`` object (its
-    ``two_point`` and ``kickoff`` blocks); [] when it is valid or absent."""
+    ``two_point`` and ``kickoff`` blocks and, batch B9F, its optional
+    ``fourth_down`` block, whose named calls are checked against
+    ``call_names`` when given); [] when it is valid or absent."""
     if decisions is None:
         return []
     if not isinstance(decisions, dict) or not decisions:
-        return ["decisions must be a nonempty object of two_point and kickoff blocks"]
-    errors = ["decisions: unknown block %r" % key for key in decisions if key not in POLICY_KINDS]
+        return ["decisions must be a nonempty object of two_point, kickoff and fourth_down blocks"]
+    errors = ["decisions: unknown block %r" % key for key in decisions
+              if key not in POLICY_KINDS + OPTIONAL_KINDS]
     for kind in POLICY_KINDS:
         if kind in decisions:
             errors += policy_errors(decisions[kind], kind)
+    if "fourth_down" in decisions:
+        from . import fourth_down
+        errors += fourth_down.policy_errors(decisions["fourth_down"], call_names)
     return errors
 
 
-def input_policies(decisions, kinds):
+def input_policies(decisions, kinds, call_names=None):
     """{TeamInput field: block} for the controlled club's user-controlled
     game, from its frozen sheet's ``decisions`` and the ``kinds`` the
     resolving kernel decides (fails closed, ValueError): a malformed block,
-    a block the kernel does not resolve, or a kind the kernel resolves with
-    no block (U6: Stone's standing rule, a delegation, or ``otherwise: ask``
-    for a live answer). No kind, no block: nothing is added."""
-    faults = sheet_errors(decisions)
+    a block the kernel does not resolve, or a required kind the kernel
+    resolves with no block (U6: Stone's standing rule, a delegation, or
+    ``otherwise: ask`` for a live answer). The optional fourth-down block
+    (batch B9F) passes through when present and is never required; its
+    named calls are checked against ``call_names`` when given. No kind, no
+    block: nothing is added."""
+    faults = sheet_errors(decisions, call_names)
     if faults:
         raise ValueError("call sheet decisions: " + "; ".join(faults))
     decisions = decisions or {}
@@ -475,12 +500,12 @@ def input_policies(decisions, kinds):
     if extra:
         raise ValueError("call sheet carries a %s decision block the resolving kernel does not decide"
                          % " and ".join(extra))
-    missing = [kind for kind in kinds if kind not in decisions]
+    missing = [kind for kind in kinds if kind not in decisions and kind not in OPTIONAL_KINDS]
     if missing:
         raise ValueError("U6: the call sheet has no decisions.%s block (Stone's standing rule, a dated "
                          "delegation such as otherwise: league, or otherwise: ask for a live answer); the "
                          "controlled club's inputs fail closed" % " or decisions.".join(missing))
-    return {POLICY_FIELDS[kind]: copy.deepcopy(decisions[kind]) for kind in kinds}
+    return {POLICY_FIELDS[kind]: copy.deepcopy(decisions[kind]) for kind in kinds if kind in decisions}
 
 
 def _matches(when, kind, state):

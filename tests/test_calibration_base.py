@@ -391,9 +391,12 @@ class CoherenceRegistryTests(unittest.TestCase):
     def test_every_class_has_a_group_predicate(self):
         from runtime import play_detail as pd
         # 42 classes through kernel 2014.5; batch B6 adds five audit-only
-        # classes and batch B8 two zero-tolerance sequencing classes, all
-        # listed only from the 2014.6 cohort.
-        self.assertEqual(len(pd.COHERENCE_REGISTRY), 42 + len(pd.B6_CLASSES) + len(pd.B8_CLASSES))
+        # classes, batch B8 two zero-tolerance sequencing classes and batch
+        # B9F the fourth-down decision class, all listed only from the 2014.6
+        # cohort.
+        self.assertEqual(len(pd.COHERENCE_REGISTRY), 42 + len(pd.B6_CLASSES) + len(pd.B8_CLASSES)
+                         + len(pd.B9F_CLASSES))
+        self.assertEqual(pd.B9F_CLASSES, ("fourth_down_decision_incoherent",))
         self.assertEqual(len(pd.B6_CLASSES), 5)
         self.assertEqual(pd.B8_CLASSES, ("possession_sequence_break", "kick_chain_incoherent"))
         self.assertEqual(pd.COHERENCE_CLASSES, tuple(c.name for c in pd.COHERENCE_REGISTRY))
@@ -407,7 +410,7 @@ class CoherenceRegistryTests(unittest.TestCase):
             if c.name in pd.B6_CLASSES:
                 self.assertEqual(c.listed_from, "2014.6", c.name)
                 self.assertTrue(c.audit_only, c.name)
-            elif c.name in pd.B8_CLASSES:
+            elif c.name in pd.B8_CLASSES or c.name in pd.B9F_CLASSES:
                 self.assertEqual(c.listed_from, "2014.6", c.name)
                 self.assertFalse(c.audit_only, c.name)
             else:
@@ -415,7 +418,7 @@ class CoherenceRegistryTests(unittest.TestCase):
                 self.assertFalse(c.audit_only, c.name)
         self.assertEqual(pd.classes_for_cohort("2013.6"), through_2014_5)
         self.assertEqual(pd.classes_for_cohort("2014.5"), through_2014_5)
-        self.assertEqual(pd.classes_for_cohort("2014.6"), through_2014_5 + pd.B8_CLASSES)
+        self.assertEqual(pd.classes_for_cohort("2014.6"), through_2014_5 + pd.B8_CLASSES + pd.B9F_CLASSES)
         self.assertEqual(pd.classes_for_cohort("2014.6", include_audit_only=True), pd.COHERENCE_CLASSES)
         self.assertEqual(pd.AUDIT_ONLY_CLASSES, pd.B6_CLASSES)
 

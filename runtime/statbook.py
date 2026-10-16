@@ -69,8 +69,10 @@ KERNEL_2014_6_FIELD_GROUP = {
     "result": ("calibration_base", "substitutions", "kicks", "scoring_events", "decision_policies"),
     # Batch B5: the window seconds left at a drive's last spike (R14). Batch
     # B8: a non-offensive score made during the possession (R15, B9). Batch
-    # B9: an offensive touchdown's try record (R8).
-    "possession": ("last_spike_seconds_left", "non_offensive_score", "try"),
+    # B9: an offensive touchdown's try record (R8). Batch B9F: the
+    # possession's fourth-down decision records and a joined possession's
+    # segments.
+    "possession": ("last_spike_seconds_left", "non_offensive_score", "try", "fourth_downs", "segments"),
     # Batch B8: the kick record's chain and scoring fields. Batch B9: R9's
     # onside decision (chart cell and pair, recovery class and pair) and a
     # return touchdown's try record (R8).
@@ -80,9 +82,10 @@ KERNEL_2014_6_FIELD_GROUP = {
     # fourth-down state (nested under "fourth_down", see FOURTH_DOWN_FIELDS).
     # Batch B9: a try row's anchor, scorer and decision record; an onside
     # kick's recoverer; a blocked kick's scorer; the labelled group-draw
-    # attribution.
+    # attribution. Batch B9F: a fourth-down go snap's or decided kick's
+    # decision mark.
     "ledger": ("decision_source", "anchor", "scoring_team", "decision", "basis", "cell", "p_go", "points",
-               "onside", "recovered_by", "blocked", "scorer", "attribution"),
+               "onside", "recovered_by", "blocked", "scorer", "attribution", "fourth_down_decision"),
     "fourth_down": ("decision_source",),
     "team": KERNEL_2014_6_TEAM_STAT_FIELDS,
     "player": KERNEL_2014_6_PLAYER_FIELDS,

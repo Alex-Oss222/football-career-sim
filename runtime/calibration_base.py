@@ -350,6 +350,17 @@ class CalibrationBase:
         self.pin("scoring")
         return self.memo(("model", "scoring"), build)
 
+    def fourth_down(self):
+        """Kernel 2014.6 batch B9F: the base's fourth-down model (the league
+        decision chart, conversion pairs, attempt records and the field-goal
+        snap offset; runtime.fourth_down). A base without the pinned artifact
+        raises (CalibrationBaseError)."""
+        def build():
+            from .fourth_down import FourthDownModel
+            return FourthDownModel(self.raw("fourth_down"))
+        self.pin("fourth_down")
+        return self.memo(("model", "fourth_down"), build)
+
 
 BASE_2012 = CalibrationBase(
     name="2012",
@@ -420,6 +431,11 @@ BASE_2010_2014W4 = CalibrationBase(
         # read by runtime.scoring_decisions under the B9 profile flags.
         ("scoring", Pin("library/data/2010_2014w4_scoring_decisions.json",
                         "1b041841b34fed56d8aff04257ef4fb123c352f84fe5ae9724d78a7769f4c710")),
+        # Kernel 2014.6 batch B9F: the fourth-down chart, conversion pairs and
+        # attempt records (scripts/research/build_2010_2014_fourth_down_decisions.py,
+        # --check), read by runtime.fourth_down under fourth_down_decisions.
+        ("fourth_down", Pin("library/data/2010_2014w4_fourth_down_decisions.json",
+                            "ed1f85472089b0af56e1b1f1a2deacb01952d02c72e9802b11ee62d7dc785031")),
     ),
     # Counted from the committed 2010-2014 artifacts on October 3, 2026 (the
     # field-position total is the pooled partition, 25,468 drives: the

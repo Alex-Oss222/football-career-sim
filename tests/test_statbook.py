@@ -226,9 +226,10 @@ class StatbookTests(unittest.TestCase):
             # the chain model; its phase 2 the adjusted punt transition, the
             # layout resample record and the field-goal probability; kernel
             # 2014.6 batch B8 the non_offensive_score slot (R15 fills it),
-            # batch B9 the offensive touchdown's try record (R8).
-            self.assertTrue(all(len(row) == 36 for row in receipt["drives"]))
-            self.assertEqual(len(DRIVE_SUMMARY_FIELDS), 36)
+            # batch B9 the offensive touchdown's try record (R8), batch B9F
+            # the fourth-down decision records and the joined segments.
+            self.assertTrue(all(len(row) == 38 for row in receipt["drives"]))
+            self.assertEqual(len(DRIVE_SUMMARY_FIELDS), 38)
         with self.assertRaises(ValueError):
             aggregate_receipts([{**make_receipt(result, week=4, matchup="B at A"), "schema_version": 4}])
         book = aggregate_receipts([make_receipt(result, week=4, matchup="B at A", detail="compact_stats")])

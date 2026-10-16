@@ -7,6 +7,7 @@ import re
 from . import KERNEL_VERSION
 from .kernel import TeamInput, decision_block_errors, installed_profile, outcome_policies, resolve_game, validate_result
 from . import scoring_decisions
+from . import fourth_down
 from .packets import canonical
 from .private_client import Client
 from .player_evidence import normalize_players, serialize_roster
@@ -29,8 +30,9 @@ def _team_packet(team):
     data["roster"] = serialize_roster(normalize_players(team))
     data["offensive_call_sheet"] = canonical_call_sheet(team)
     # Kernel 2014.6 batch B9: the decision policies through the same stripper
-    # as the kernel's packet (absent when None).
-    return outcome_policies(data)
+    # as the kernel's packet (absent when None); batch B9F's fourth-down block
+    # commits its named calls by their substance on the raw sheet.
+    return outcome_policies(data, getattr(team, "offensive_call_sheet", ()) or ())
 
 
 def build_game_packet(event_id, snapshot, home, away, *, venue="home", weather="normal",
@@ -100,6 +102,17 @@ def build_game_packet(event_id, snapshot, home, away, *, venue="home", weather="
             if game_type in ("preseason", "pro_bowl"):
                 raise ValueError(f"{team.team_id} carries a {kind} decision block in a {game_type} game")
             faults = scoring_decisions.policy_errors(block, kind)
+            if faults:
+                raise ValueError(f"{team.team_id} decision block: " + "; ".join(faults))
+        # Kernel 2014.6 batch B9F: a malformed fourth-down block, or one in a
+        # preseason or Pro Bowl game, fails closed before the private event is
+        # journaled.
+        block = getattr(team, "fourth_down_policy", None)
+        if block is not None:
+            if game_type in ("preseason", "pro_bowl"):
+                raise ValueError(f"{team.team_id} carries a fourth_down decision block in a {game_type} game")
+            faults = fourth_down.policy_errors(block, fourth_down.sheet_call_names(
+                getattr(team, "offensive_call_sheet", ()) or ()))
             if faults:
                 raise ValueError(f"{team.team_id} decision block: " + "; ".join(faults))
     packet = {

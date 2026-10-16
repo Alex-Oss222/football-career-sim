@@ -17,7 +17,7 @@ from runtime import play_detail as pd
 from runtime.calibration_base import BASE_2010_2014W4
 from runtime.gamebook import render as render_gamebook
 from runtime.kernel import resolve_game, validate_result
-from runtime.profiles import PROFILE_2014_5, PROFILE_2014_6, Profile
+from runtime.profiles import B9F_FLAGS, PROFILE_2014_5, PROFILE_2014_6, Profile
 from runtime.statbook import KERNEL_2014_6_LEDGER_ROWS, aggregate_receipts, make_receipt
 from synthetic_games import SEED, sample_teams
 from test_profiles import strip_2014_6_fields
@@ -28,8 +28,14 @@ sys.path.insert(0, str(ROOT / "scripts"))
 MODEL = BASE_2010_2014W4.field_position()
 W5A = MODEL.clock_detail
 # The stamper switch: the same kernel without the two records-only flags.
+# Batch B9F reads the W5a constants for its decision clock (a fourth-down
+# decision's game state and the clock of a resolved act), so the stamper's
+# records-only invariance is measured on the kernel without live fourth downs
+# (B9F_OFF), which FLAG_REQUIRES ties to clock_detail_v1.
+B9F_OFF = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PROFILE_2014_6.strength,
+                  flags=PROFILE_2014_6.flags - B9F_FLAGS, record_base=True)
 RECORDS_OFF = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PROFILE_2014_6.strength,
-                      flags=PROFILE_2014_6.flags - {"clock_detail_v1", "substitution_record"}, record_base=True)
+                      flags=B9F_OFF.flags - {"clock_detail_v1", "substitution_record"}, record_base=True)
 NEW_ROWS = set(KERNEL_2014_6_LEDGER_ROWS)
 INVARIANCE_GAMES = 600
 
@@ -68,7 +74,7 @@ class InvarianceTests(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.pairs = [(play(i, PROFILE_2014_6, "inv"), play(i, RECORDS_OFF, "inv")) for i in range(INVARIANCE_GAMES)]
+        cls.pairs = [(play(i, B9F_OFF, "inv"), play(i, RECORDS_OFF, "inv")) for i in range(INVARIANCE_GAMES)]
 
     def test_outcome_credit_and_exposure_invariant(self):
         for on, off in self.pairs:

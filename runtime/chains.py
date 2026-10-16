@@ -296,11 +296,16 @@ def _stream(seed, *parts):
     return random.Random(int.from_bytes(hashlib.sha256(seed + payload).digest(), "big"))
 
 
-def resample_stream(seed, event_id, drive_no, offense):
+def resample_stream(seed, event_id, drive_no, offense, segment=None):
     """Kernel 2014.4 phase 2: the stream a drive's layout resample draws
     on (its replacement tuple, sack losses and yard split), keyed like the
-    layout stream with its own tag so neither consumes the other."""
-    return _stream(seed, event_id, drive_no, offense, "layout-resample")
+    layout stream with its own tag so neither consumes the other. Kernel
+    2014.6 batch B9F: a continuation segment n of a possession (after a
+    fourth-down conversion) has its own, keyed by the segment as well; the
+    drive's first segment (None) keeps the unchanged key."""
+    if segment is None:
+        return _stream(seed, event_id, drive_no, offense, "layout-resample")
+    return _stream(seed, event_id, drive_no, offense, "layout-resample", "segment", int(segment))
 
 
 def _runs_clock(kind, completed):
@@ -556,7 +561,7 @@ FG_FOURTH_DOWN_RELAXED = "fg_fourth_down_relaxed"
 def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, attempts, sacks,
                  kneel_yards, spikes, pass_yards, rush_free, losses, safety_terminal, net, spot,
                  completion_rate, targets=None, term_down=None, diagnostics=None, usage_values=None,
-                 fg_down=None):
+                 fg_down=None, segment=None):
     """The ordered snaps of one resolved drive with a legal chain walk.
 
     `category` is the kernel category (punt, field_goal_attempt, downs,
@@ -593,11 +598,17 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
     (`term_down`), counted FG_FOURTH_DOWN_RELAXED; the first pass's
     diagnostics are discarded, so the counters describe the adopted layout.
     None (every kernel up to 2014.5) is the unchanged search.
+
+    Kernel 2014.6 (batch B9F): `segment` n lays out a possession's
+    continuation segment after a fourth-down conversion on its own keyed
+    layout stream (the drive's, keyed by the segment as well); None, the
+    drive's first segment, keeps the unchanged stream.
     """
     args = dict(seed=seed, event_id=event_id, drive_no=drive_no, offense=offense, category=category,
                 td_type=td_type, runs=runs, attempts=attempts, sacks=sacks, kneel_yards=kneel_yards, spikes=spikes,
                 pass_yards=pass_yards, rush_free=rush_free, losses=losses, safety_terminal=safety_terminal, net=net,
-                spot=spot, completion_rate=completion_rate, targets=targets, usage_values=usage_values)
+                spot=spot, completion_rate=completion_rate, targets=targets, usage_values=usage_values,
+                segment=segment)
     if fg_down is not None and category == "field_goal_attempt":
         scratch = {}
         held = _drive_layout(term_down=fg_down, diagnostics=scratch, every_tier=True, **args)
@@ -614,13 +625,14 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
 def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, attempts, sacks,
                   kneel_yards, spikes, pass_yards, rush_free, losses, safety_terminal, net, spot,
                   completion_rate, targets=None, term_down=None, diagnostics=None, usage_values=None,
-                  every_tier=False):
+                  every_tier=False, segment=None):
     """drive_layout's search (docstring there). `every_tier` keeps the
     field-goal terminal down in tiers 2 and 3 as well (W3)."""
     from . import play_detail as pd
 
     diagnostics = diagnostics if diagnostics is not None else {}
-    rng = _stream(seed, event_id, drive_no, offense)
+    rng = (_stream(seed, event_id, drive_no, offense) if segment is None
+           else _stream(seed, event_id, drive_no, offense, "segment", int(segment)))
     kneel_yards = [int(y) for y in kneel_yards]
     losses = [int(x) for x in losses]
     spot, net = int(spot), int(net)

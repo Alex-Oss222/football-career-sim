@@ -336,8 +336,13 @@ def jacksonville_input(receipts, game_day, anchors, call_sheet, season=2013, dec
     (R8, R9; U6): ``decisions`` is the frozen sheet's decisions object and
     ``decision_kinds`` the kinds the resolving kernel decides; each block
     becomes try_policy or kickoff_policy, and a kind with no block fails
-    closed (runtime.scoring_decisions.input_policies)."""
-    policies = scoring_decisions.input_policies(decisions, tuple(decision_kinds))
+    closed (runtime.scoring_decisions.input_policies). Batch B9F: an
+    optional decisions.fourth_down block (standing rules and Tice's prepared
+    calls, each a call of the frozen sheet) becomes fourth_down_policy; with
+    none, Jacksonville's fourth downs are Stone's live calls."""
+    from . import fourth_down
+    policies = scoring_decisions.input_policies(decisions, tuple(decision_kinds),
+                                                call_names=fourth_down.sheet_call_names(call_sheet))
     undeclared = call_families.sheet_errors(call_sheet)
     if undeclared:
         # Kernel 2013.7 fails closed on a call no label rule covers.

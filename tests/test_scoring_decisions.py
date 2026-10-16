@@ -27,7 +27,7 @@ from runtime.calibration_base import BASE_2010_2014W4
 from runtime.game_runner import build_game_packet
 from runtime.kernel import resolve_game, validate_result
 from runtime.play_detail import check_ledger, scoring_events
-from runtime.profiles import B9_FLAGS, PROFILE_2014_5, PROFILE_2014_6, Profile
+from runtime.profiles import B9_FLAGS, B9F_FLAGS, PROFILE_2014_5, PROFILE_2014_6, Profile
 from runtime.rules import extra_point_rule, ot_history, ot_status, try_rule
 from runtime.statbook import (KERNEL_2014_6_PLAYER_FIELDS, KERNEL_2014_6_TEAM_STAT_FIELDS, aggregate_receipts,
                               make_receipt)
@@ -41,6 +41,17 @@ A, B = sample_teams()
 PROFILE_B8 = Profile("2014.6", base=PROFILE_2014_6.base, cell_rules=PROFILE_2014_6.cell_rules,
                      strength=PROFILE_2014_6.strength, flags=PROFILE_2014_6.flags - B9_FLAGS, record_base=True)
 DELEGATION = {"otherwise": "league", "source": "fixture: follow the league chart", "id": "delegation"}
+# Batch B9F: a user-controlled club without a fourth-down block decides its
+# fourth downs live (Stone's standing instruction). The scoring tests that
+# answer only scoring pauses delegate the controlled club's fourth downs to
+# the league chart, so every fourth down is decided as in the autonomous run.
+FOURTH = {"fourth_down_policy": {"otherwise": "league"}}
+# The B9 level of kernel 2014.6 (without the B9F live fourth downs): the
+# seed-pinned reproductions below were found under it, and B9F changes every
+# later fourth-down possession, so they keep reproducing at this level.
+PROFILE_B9_LEVEL = Profile("2014.6", base=PROFILE_2014_6.base, cell_rules=PROFILE_2014_6.cell_rules,
+                           strength=PROFILE_2014_6.strength, flags=PROFILE_2014_6.flags - B9F_FLAGS,
+                           record_base=True)
 WEEK4_SHEET = ROOT / "career/2014/05_Regular_Season/Games/Week_04/call_sheet.json"
 SCORING_SOURCES = set(sd.SOURCES)
 
@@ -294,7 +305,7 @@ class PolicyValidationTests(unittest.TestCase):
             play("u6-half", home=with_team("A", {"try_policy": DELEGATION}), management_mode="user_controlled",
                  controlled_team="A")
         # The other club needs none; 2014.5 decides none.
-        a = with_team("A", {"try_policy": DELEGATION, "kickoff_policy": DELEGATION})
+        a = with_team("A", {"try_policy": DELEGATION, "kickoff_policy": DELEGATION, **FOURTH})
         r = play("u6-ok", home=a, management_mode="user_controlled", controlled_team="A")
         self.assertTrue(r["terminated"])
         self.assertTrue(all(t["basis"] == "delegated:league" for club, t in all_tries(r) if club == "A"))
@@ -393,8 +404,8 @@ class NoBonusTests(unittest.TestCase):
 
 class KernelExactTests(unittest.TestCase):
     def test_controlled_club_and_mode_change_nothing(self):
-        a = with_team("A", {"try_policy": DELEGATION, "kickoff_policy": DELEGATION})
-        b = with_team("B", {"try_policy": DELEGATION, "kickoff_policy": DELEGATION})
+        a = with_team("A", {"try_policy": DELEGATION, "kickoff_policy": DELEGATION, **FOURTH})
+        b = with_team("B", {"try_policy": DELEGATION, "kickoff_policy": DELEGATION, **FOURTH})
         compared = 0
         for i in range(8):
             name = "exact-%d" % i
@@ -495,7 +506,7 @@ class ForcedCaseTests(unittest.TestCase):
         # thrown from the passer's own 2 (LOS 98). Before the near-side bound
         # its forced pick-six drew a record returned -7 yards; now the return
         # is a feasible 1 to 109 yards, credited to the interceptor.
-        r = resolve_game(A, B, seed=SEED + b"p6-1509", event_id="p6-1509", _test_profile=PROFILE_2014_6,
+        r = resolve_game(A, B, seed=SEED + b"p6-1509", event_id="p6-1509", _test_profile=PROFILE_B9_LEVEL,
                          _test_scoring={"drives": {20: "defensive_touchdown"}})
         self.assertEqual(clean(r), [])
         q = r["possessions"][19]
@@ -561,7 +572,7 @@ class ForcedCaseTests(unittest.TestCase):
             return pair
 
         with mock.patch.object(sd.ScoringModel, "return_rate", spy):
-            r = play("b9-seek-14")
+            r = play("b9-seek-14", profile=PROFILE_B9_LEVEL)
         fumbled = []
         for p in r["possessions"]:
             if p["category"] == "fumble_lost":
@@ -849,7 +860,7 @@ class RulesTests(unittest.TestCase):
                     self.assertIsNotNone(p.get("try"), p["number"])
         # b9-seek-41, drive 25: a touchdown with 0:00 left in the fourth
         # quarter (found by search) is still tried, though it cannot win.
-        r = play("b9-seek-41")
+        r = play("b9-seek-41", profile=PROFILE_B9_LEVEL)
         p = r["possessions"][24]
         self.assertEqual((p["category"], p["half"], p["end_clock"]), ("touchdown", 2, 0))
         self.assertIsNotNone(p["try"])
@@ -911,7 +922,7 @@ class ParticipationTests(unittest.TestCase):
 
 class E2PauseTests(unittest.TestCase):
     def test_pause_across_a_non_offensive_touchdown(self):
-        a = with_team("A", {"try_policy": DELEGATION, "kickoff_policy": DELEGATION})
+        a = with_team("A", {"try_policy": DELEGATION, "kickoff_policy": DELEGATION, **FOURTH})
         base = play("b9-e2", home=a)
         p = first([p for p in base["possessions"][:-1] if p["team"] == "B" and p["half"] in (1, 2)
                    and p["category"] in ("interception", "fumble_lost")], lambda p: True, "a B turnover")
@@ -950,7 +961,7 @@ class E2PauseTests(unittest.TestCase):
         self.assertEqual(clean(r), [])
 
     def test_live_try_decision_through_the_pause(self):
-        a = with_team("A", {"try_policy": {"otherwise": "ask"}, "kickoff_policy": DELEGATION})
+        a = with_team("A", {"try_policy": {"otherwise": "ask"}, "kickoff_policy": DELEGATION, **FOURTH})
         kw = dict(seed=SEED + b"-b9-live", event_id="b9-live", _test_profile=PROFILE_2014_6,
                   management_mode="user_controlled", controlled_team="A")
         decisions, answers = [], []

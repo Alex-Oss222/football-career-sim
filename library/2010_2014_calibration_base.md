@@ -1,6 +1,6 @@
 # 2010-2014 league calibration base
 
-[Pre-build specification](2014_6_pre_build_specification.md) · [Scoring decisions](2010_2014_scoring_decisions_calibration.md) · [Context and conditions](2014_context_and_conditions_calibration.md) · [Engine decisions](../runtime/2014_engine_decisions.md#kernel-20146-decisions-dated) · [2012 field-position model](2012_field_position_model_calibration.md)
+[Pre-build specification](2014_6_pre_build_specification.md) · [Scoring decisions](2010_2014_scoring_decisions_calibration.md) · [Fourth downs](2010_2014_fourth_down_calibration.md) · [Context and conditions](2014_context_and_conditions_calibration.md) · [Engine decisions](../runtime/2014_engine_decisions.md#kernel-20146-decisions-dated) · [2012 field-position model](2012_field_position_model_calibration.md)
 
 **What this is.** The league base of kernel 2014.6, built in plan batch B3 and data only: no runtime module reads these files until batch B5. The user chose U1 = (b) on October 2, 2026, so from 2014 Week 5 the 2010-2014 window replaces the 2012 base for drive pools, game rates, band centres and the league effect fits. Weeks 1-4 of 2014 stand as played on the 2012 base. Three artifacts, all built by `scripts/research/build_2010_2014_league_base.py`, which has a `--check` mode:
 
@@ -13,7 +13,8 @@ The companion B3 artifacts:
 - `library/data/2010_2014w4_nfl_position_usage_baseline.json`, from `build_2010_2014_usage_baseline.py`;
 - `library/data/2010_2014w4_nfl_injury_calibration.json`, from `build_2010_2014_injury_calibration.py`;
 - `library/data/2013_2014_participation_structure.json`, from `build_2013_2014_participation_structure.py`, informational only;
-- the scoring and conditions records linked above.
+- the scoring and conditions records linked above;
+- `library/data/2010_2014w4_fourth_down_decisions.json` (batch B9F, under its own frozen specification), from `build_2010_2014_fourth_down_decisions.py`, with the fourth-down record linked above.
 
 **Data window and gate.** NFL regular seasons 2010-2013 and 2014 Weeks 1-4: 61 games, the last on September 29, 2014. The data is read only through `scripts/research/sources_2010_2014.py`, the batch B2 gate, which cuts 2014 at fetch and verifies every file's digest against `library/data/2010_2014_sources_manifest.json`. The base is usable in the branch from September 30, 2014. It is frozen at the first Week 5 event and stays frozen for the rest of 2014. 2013 and 2014 Weeks 1-4 are an anonymous post-divergence league population, so they enter pooled fits only. No artifact holds a club, game, player or date field, and no branch receipt or audit reading entered any value. Each header records the specification's sha256.
 

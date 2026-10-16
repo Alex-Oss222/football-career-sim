@@ -114,7 +114,9 @@ def main():
         # Kernel 2014.6 batch B9 (R8, R9; U6): Stone's standing two-point and
         # onside decisions, or a delegation, frozen with the sheet. Under a
         # kernel that decides them, Jacksonville's input fails closed without
-        # them (runtime.scoring_decisions.input_policies).
+        # them (runtime.scoring_decisions.input_policies). Batch B9F: an
+        # optional decisions.fourth_down block (his standing fourth-down rules
+        # and Tice's prepared calls); without one his fourth downs are live.
         decisions = sheet.get("decisions")
     receipts = [r for r in load_receipts(paths.receipts) if int(r["week"]) < args.week]
     # Postseason rounds also carry injuries from the earlier playoff rounds.

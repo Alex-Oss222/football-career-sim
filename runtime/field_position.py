@@ -396,7 +396,12 @@ def downs_start(end):
 
 
 def missed_fg_start(distance):
-    return min(80, 110 - distance)
+    """The receiving club's start after a missed field goal: the spot of the
+    kick (the line plus 7), at most its own 20 from the line (80). Kernel
+    2014.6 batch B9F: a kick decided from deep in the kicking club's own
+    territory (a live answer may choose one) is bounded at the one (1); no
+    real kick reaches that bound, so every earlier start is unchanged."""
+    return max(1, min(80, 110 - distance))
 
 
 class FieldPositionModel:
