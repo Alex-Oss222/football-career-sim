@@ -539,8 +539,12 @@ class FieldPositionModel:
                 runs -= 1
         return usable + runs, sum(t[T["kneel_yards"]]), terminal, sacks
 
-    def static_feasible(self, category, t, spot):
-        """Spot-only feasibility (no clock): field, envelope and snap capacity."""
+    def static_feasible(self, category, t, spot, penalty=None):
+        """Spot-only feasibility (no clock): field, envelope and snap capacity.
+        Kernel 2014.6 batch B11: `penalty` (runtime.penalties.static_summary of
+        the tuple's replayed records; None for every earlier kernel) puts the
+        records' yards outside the scrimmage snaps and uses the penalty-aware
+        chain condition."""
         T = self.T
         net, end = self.adapt(category, t, spot)
         b = self.start_bin(spot)
@@ -555,7 +559,8 @@ class FieldPositionModel:
         if category == "touchdown" and t[T["td_kind"]] not in ("pass", "rush"):
             return False
         free, kneels, terminal, sacks = self.fixed_yardage(category, t)
-        if t[T["kneel_yards"]] and not 1 <= end + kneels <= 99:
+        tail = penalty["tail_yards"] if penalty else 0
+        if t[T["kneel_yards"]] and not 1 <= end + kneels + tail <= 99:
             return False  # kneels are the drive's last snaps: the spot before them must be in the field
         if t[T["kneel_yards"]] and self.zone(t[T["start"]]) != self.zone(spot):
             return False  # kernel 2014.1: a kneel drive replays only from its own start zone
@@ -563,7 +568,7 @@ class FieldPositionModel:
             # Only sacks can carry the yardage: their losses are fitted to the
             # net, so the required loss must be non-negative (exactly zero
             # without a sack). A touchdown always has its scoring snap.
-            required = kneels + terminal - net
+            required = kneels + terminal - (net - (penalty["yards"] if penalty else 0))
             if required < 0 or (sacks <= 0 and required != 0) or category == "touchdown":
                 return False
         # Kernel 2014.4 (defect register item 3): the relocated snaps must admit a
@@ -571,7 +576,7 @@ class FieldPositionModel:
         # down, a downs failure on 4th, ...); see runtime.chains.chain_feasible.
         if t is not ZERO_TUPLE and not chains.chain_feasible(
                 category, plays=t[T["plays"]], net=net, spot=spot, kneel_yards=t[T["kneel_yards"]],
-                sacks=t[T["sacks"]], runs=t[T["runs"]], terminal_value=terminal):
+                sacks=t[T["sacks"]], runs=t[T["runs"]], terminal_value=terminal, penalty=penalty):
             return False
         return True
 
@@ -1461,6 +1466,8 @@ class FieldPositionModelV3(FieldPositionModel):
         self._any_start_cache = {}
         self._zone_cache = {}
         self._snap_range = None
+        self._penalty_plans = {}
+        self._run_loss = None
         self._kick_pools = {name: _receiving(data[name], self.KICK["possession"])
                             for name in ("kickoff_pool", "free_kick_pool")}
         self._punt_pool = _receiving(data["punt_pool"], self.PUNT["possession"])
@@ -1527,15 +1534,75 @@ class FieldPositionModelV3(FieldPositionModel):
         floor = self.SACK_LOSS_FLOOR
         return any(spot + floor * k <= 99 and net + floor * (sacks - k) < dist0 for k in range(sacks + 1))
 
-    def static_feasible(self, category, t, spot):
-        if not FieldPositionModel.static_feasible(self, category, t, spot):
+    # ---- Kernel 2014.6 batch B11 (R11): the replayed records ------------------------
+
+    def penalty_model(self):
+        """The base's penalty model (runtime.penalties.PenaltyModel; the
+        base's pinned penalty artifact against this artifact's type
+        vocabulary). A base without the pin fails closed."""
+        return self.base.penalties()
+
+    def penalty_plan(self, category, t):
+        """The tuple's runtime.penalties.DrivePlan, memoised per tuple."""
+        key = (id(t), category)
+        try:
+            return self._penalty_plans[key]
+        except KeyError:
+            pass
+        from . import penalties
+        T = self.T
+        plan = penalties.classify(self.penalty_model(), self.value(t, "pen", ()) or (), category, int(t[T["plays"]]))
+        summary = penalties.static_summary(plan)
+        # The base's largest sourced run loss (the scrimmage-gain bound of
+        # runtime.chains.chain_feasible's penalty branch).
+        summary["run_loss"] = self.run_loss_max()
+        self._penalty_plans[key] = (plan, summary, t)
+        return plan, summary, t
+
+    def penalty_summary(self, category, t):
+        if t is ZERO_TUPLE:
+            return None
+        return self.penalty_plan(category, t)[1]
+
+    def run_loss_max(self):
+        """The base's largest sourced run loss (the top bin of its usage
+        table's loss distribution, recorded at its lower bound)."""
+        if self._run_loss is None:
+            dist = self.base.usage()["values"]["negative_run_loss_distribution"]
+            self._run_loss = max(int(k.rstrip("+")) for k in dist)
+        return self._run_loss
+
+    def static_feasible(self, category, t, spot, penalty=False):
+        """Spot-only feasibility of a schema-3 tuple. Kernel 2014.6 batch B11:
+        with `penalty` (the profile flag penalty_records, from the kernel's
+        per-game context) the tuple's replayed records count: the
+        penalty-aware chain condition and the static relocation gate
+        (runtime.penalties.relocation_ok) mask a tuple whose records admit no
+        legal placement from this spot, on the possession stream; the B5 sack
+        order rule applies to a tuple without accepted records."""
+        summary = self.penalty_summary(category, t) if penalty else None
+        if not FieldPositionModel.static_feasible(self, category, t, spot, penalty=summary):
             return False
-        if not self.sack_order_feasible(category, t, spot):
+        if (summary is None or not summary["records"]) and not self.sack_order_feasible(category, t, spot):
             return False
         if category == "clock" and t is not ZERO_TUPLE:
             # R7: a clock expiry keeps its real end decision zone.
             end = self.adapt(category, t, spot)[1]
             if self.decision_zone(end) != self.decision_zone(t[self.T["end"]]):
+                return False
+        if summary is not None and summary["records"]:
+            from . import penalties
+            T = self.T
+            end = self.adapt(category, t, spot)[1]
+            if not penalties.relocation_ok(summary, spot=spot, end=end, sacks=t[T["sacks"]], runs=t[T["runs"]],
+                                           run_loss=self.run_loss_max()):
+                return False
+            if penalties.needs_excursion(summary, spot=spot, end=end) and not FieldPositionModel.static_feasible(
+                    self, category, t, spot):
+                # The excursion rule: a drive feasible only through its
+                # records (the record-free chain condition fails) whose
+                # records are legal only off its own path is masked; neither
+                # its layout nor the record-free fallback can realise it.
                 return False
         return True
 
@@ -1577,19 +1644,21 @@ class FieldPositionModelV3(FieldPositionModel):
             return bool(walk_off)
         return self.kick_snap_clock("field_goal_attempt", t, window) <= self.EARLY_FG_SECONDS
 
-    def fourth_down_fg_feasible(self, t, spot):
+    def fourth_down_fg_feasible(self, t, spot, penalty=False):
         """W3: can this field-goal tuple, replayed from `spot`, be laid out
         with the kick on fourth down (runtime.chains.fourth_down_fg_feasible)?
-        Memoised per tuple and spot under the base."""
-        key = (id(t), spot)
+        Memoised per tuple, spot and (batch B11) whether its replayed records
+        count, under the base."""
+        key = (id(t), spot, bool(penalty))
         try:
             return self._fg4_cache[key]
         except KeyError:
             pass
         T = self.T
         net = self.adapt("field_goal_attempt", t, spot)[0]
+        summary = self.penalty_summary("field_goal_attempt", t) if penalty else None
         ok = chains.fourth_down_fg_feasible(plays=t[T["plays"]], net=net, spot=spot, kneel_yards=t[T["kneel_yards"]],
-                                            sacks=t[T["sacks"]], runs=t[T["runs"]])
+                                            sacks=t[T["sacks"]], runs=t[T["runs"]], penalty=summary)
         self._fg4_cache[key] = ok
         return ok
 
@@ -1612,7 +1681,7 @@ class FieldPositionModelV3(FieldPositionModel):
         if self.early_fg_ok(t, window, regime in self.OVERTIME_REGIMES, ends_window,
                             (extra or {}).get("walk_off_fg", False)):
             return True
-        return self.fourth_down_fg_feasible(t, spot)
+        return self.fourth_down_fg_feasible(t, spot, (extra or {}).get("penalty_records", False))
 
     def ends_window(self, regime, category, t):
         if str(regime).startswith("fit"):
@@ -1706,11 +1775,12 @@ class FieldPositionModelV3(FieldPositionModel):
             out[c] = bisect.bisect_right(starts, window + width) - bisect.bisect_left(starts, window - width)
         return out
 
-    def _rungs(self, pool_id, category, spot):
+    def _rungs(self, pool_id, category, spot, penalty=False):
         """Spot-feasible tuples per rung (same bin, same zone); memoised per
-        (pool, category, spot): bounded, since a time match filters the
+        (pool, category, spot) and (batch B11) whether the tuples' replayed
+        records count (`penalty`): bounded, since a time match filters the
         union's rungs at draw time instead of keying the cache by window."""
-        key = (pool_id, category, spot)
+        key = (pool_id, category, spot, bool(penalty))
         try:
             return self._rungs_cache[key]
         except KeyError:
@@ -1729,34 +1799,46 @@ class FieldPositionModelV3(FieldPositionModel):
             members = self._members(pool_id, category)
             same = [t for t in members if self.start_bin(t[T["start"]]) == b]
             wider = [t for t in members if self.zone(t[T["start"]]) == z]
-        out = tuple(tuple(t for t in rung if self.static_feasible(category, t, spot)) for rung in (same, wider))
+        out = tuple(tuple(t for t in rung if self.static_feasible(category, t, spot, penalty)) for rung in (same, wider))
         self._rungs_cache[key] = out
         return out
+
+    def _any_start(self, pool_id, category, spot, penalty=False):
+        key = (pool_id, category, spot, bool(penalty))
+        try:
+            return self._any_start_cache[key]
+        except KeyError:
+            value = self._any_start_cache[key] = tuple(
+                t for t in self._members(pool_id, category) if self.static_feasible(category, t, spot, penalty))
+            return value
 
     def eligible(self, pool_id, category, spot, regime, window, match=None, extra=None):
         """Feasible tuples by the ladder (same bin, then same zone). With a
         time match the rungs are the h1_late union's, cached per (category,
         spot) and filtered by |t0 - w| <= match at draw time (bounded
         cache); the late need-union rungs are unchanged. `extra` carries the
-        per-game context the clock filters read (W3)."""
+        per-game context the clock filters read (W3; batch B11's
+        penalty_records flag selects the penalty-aware static checks)."""
+        penalty = (extra or {}).get("penalty_records", False)
         if match is not None:
-            for rung in self._rungs(("h1_late_union", None), category, spot):
+            for rung in self._rungs(("h1_late_union", None), category, spot, penalty):
                 feasible = self._dynamic(self._matched(rung, window, match), category, regime, window, spot, extra)
                 if feasible:
                     return feasible
             return ()
         # The ladder of FieldPositionModel.eligible, with the W3 context.
-        for rung in self._rungs(pool_id, category, spot):
+        for rung in self._rungs(pool_id, category, spot, penalty):
             feasible = self._dynamic(rung, category, regime, window, spot, extra)
             if feasible:
                 return feasible
         if NEED_UNION_RUNGS and regime == "late" and pool_id[0] == "late":
             union = ("late_union", cell_need(pool_id[1]))
-            for rung in self._rungs(union, category, spot):
+            for rung in self._rungs(union, category, spot, penalty):
                 feasible = self._dynamic(rung, category, regime, window, spot, extra)
                 if feasible:
                     return feasible
-            feasible = self._dynamic(self._any_start(union, category, spot), category, regime, window, spot, extra)
+            feasible = self._dynamic(self._any_start(union, category, spot, penalty), category, regime, window, spot,
+                                     extra)
             if feasible:
                 return feasible
         return ()
@@ -1893,12 +1975,13 @@ class FieldPositionModelV3(FieldPositionModel):
             _bump(diagnostics, "timeout_unavailable_kept")
         return category, self.draw_tuple(rng, options[category], extra.get("sack", 0.0)), level
 
-    def _clock_fallback(self, rng, tuples, spot, window):
+    def _clock_fallback(self, rng, tuples, spot, window, extra=None):
         T = self.T
         bucket = h1_bucket_index(window)
         by_distance = {}
+        penalty = (extra or {}).get("penalty_records", False)
         for t in tuples:
-            if t[T["final"]] and self.static_feasible("clock", t, spot) and self.time_feasible(t, window) \
+            if t[T["final"]] and self.static_feasible("clock", t, spot, penalty) and self.time_feasible(t, window) \
                     and self.spike_ok(t, window - self.own_seconds(t)):
                 by_distance.setdefault(abs(h1_bucket_index(t[T["t0"]]) - bucket), []).append(t)
         if not by_distance:
@@ -1967,7 +2050,7 @@ class FieldPositionModelV3(FieldPositionModel):
                 return Drive(drawn[0], drawn[1], self.scaled_seconds(drawn[1]), False, cell, "h1_neutral",
                              pool_id=pool_id, clock_regime="fit_h1")
             _bump(diagnostics, "h1_neutral_infeasible")
-            t = self._clock_fallback(rng, self._h1_late_clock_tuples(), spot, window)
+            t = self._clock_fallback(rng, self._h1_late_clock_tuples(), spot, window, extra)
             if t is not None:
                 _bump(diagnostics, "fallback_clock_tuple")
                 return self.ending_drive("clock", t, window, cell, "h1_late", fallback="clock_tuple")
@@ -1985,7 +2068,7 @@ class FieldPositionModelV3(FieldPositionModel):
                               "h1_late_cell_fallback" if pool_id is bucket else "h1_late_union_fallback")
                     return self._finish(drawn, window, cell, "h1_late", pool_id, match=match)
             _bump(diagnostics, "h1_late_infeasible")
-            t = self._clock_fallback(rng, self._h1_late_clock_tuples(), spot, window)
+            t = self._clock_fallback(rng, self._h1_late_clock_tuples(), spot, window, extra)
             if t is not None:
                 _bump(diagnostics, "fallback_clock_tuple")
                 return self.ending_drive("clock", t, window, cell, "h1_late", fallback="clock_tuple")
@@ -2028,7 +2111,7 @@ class FieldPositionModelV3(FieldPositionModel):
                                     exclude=tuple(masked) + primary_exclude, extra=extra, transfer=transfer)
         if drawn is None:
             if "clock" not in masked:
-                t = self._clock_fallback(rng, self._late_clock_tuples(need_label), spot, window)
+                t = self._clock_fallback(rng, self._late_clock_tuples(need_label), spot, window, extra)
                 if t is not None:
                     _bump(diagnostics, "fallback_clock_tuple")
                     return self.ending_drive("clock", t, window, cell, regime, fallback="clock_tuple")
@@ -2102,7 +2185,8 @@ class FieldPositionModelV3(FieldPositionModel):
             yield union, None, self.eligible(union, category, spot, regime, window, extra=extra)
         else:
             union = pool_id
-        yield union, None, self._dynamic(self._any_start(union, category, spot), category, regime, window, spot, extra)
+        yield union, None, self._dynamic(self._any_start(union, category, spot, (extra or {}).get("penalty_records", False)),
+                                         category, regime, window, spot, extra)
 
     def resample_drive(self, rng, drawn, spot, window, exclude=(), timeouts=None, extra=None):
         """resample_drive on the drawn rung, time match and regime, widening
@@ -2147,7 +2231,9 @@ class FieldPositionModelV3(FieldPositionModel):
                 "kick_yards": record[K["kick_yards"]],
                 "return_yards": 0 if touchback else record[K["return_yards"]],
                 "enforcement": record[K["enforcement"]], "outcome": record[K["outcome"]], "kick_spot": spot,
-                "fumble": record[K["fumble"]], "possession": record[K["possession"]]}
+                "fumble": record[K["fumble"]], "possession": record[K["possession"]],
+                # Batch B11 (R11): the kick row's own clauses (in its start).
+                "pen": record[K["pen"]]}
 
     def kickoff(self, rng, retained=False):
         """A real own-35 kickoff (2011 onward) the receiving club takes over;
@@ -2208,7 +2294,9 @@ class FieldPositionModelV3(FieldPositionModel):
         start = self.punt_start(record, los)
         out = {"los": los, "outcome": record[P["outcome"]], "gross": gross, "return_yards": ret,
                "enforcement": enforcement, "next_start": start, "touchback": touchback,
-               "record_los": record[P["los"]], "fumble": record[P["fumble"]]}
+               "record_los": record[P["los"]], "fumble": record[P["fumble"]],
+               # Batch B11 (R11): the punt row's own clauses (in its start).
+               "pen": record[P["pen"]]}
         if record[P["possession"]] == "kicking":
             # Batch B8: the kicking club keeps the ball (its start is in its
             # own frame); drawn only once R12 layer C admits these records.

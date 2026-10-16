@@ -545,7 +545,9 @@ class IsolationTests(unittest.TestCase):
 
     def test_unchanged_possessions_equal_the_branch_off_run(self):
         whole = prefixes = 0
-        for i in range(24):
+        # Batch B11: a decision-free game is rarer than one in 24 on these
+        # labels (b9f-iso-34 is the first), so the scan covers 35.
+        for i in range(35):
             name = "b9f-iso-%d" % i
             on, off = play(name), play(name, profile=PROFILE_B9)
             x, y = strip_2014_6_fields(on), strip_2014_6_fields(off)

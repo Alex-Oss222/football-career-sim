@@ -36,7 +36,9 @@ B9F_OFF = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PR
                   flags=PROFILE_2014_6.flags - B9F_FLAGS, record_base=True)
 RECORDS_OFF = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PROFILE_2014_6.strength,
                       flags=B9F_OFF.flags - {"clock_detail_v1", "substitution_record"}, record_base=True)
-NEW_ROWS = set(KERNEL_2014_6_LEDGER_ROWS)
+# W5a's records (batch B11's penalty rows, also 2014.6-only ledger rows, are
+# the replayed records' own, tested in tests/test_penalties.py).
+NEW_ROWS = set(KERNEL_2014_6_LEDGER_ROWS) - {"penalty"}
 INVARIANCE_GAMES = 600
 
 
@@ -134,10 +136,21 @@ class StampTests(unittest.TestCase):
                 if kicks:
                     kick = seconds_of(kicks[0], ot)
                     length = MODEL.kick_length(p["category"])
-                    expected = min(length, p["own_seconds"])
-                    if p["own_seconds"] - expected < len(scrim):
-                        expected = max(0, p["own_seconds"] - len(scrim))
-                    self.assertEqual(kick, own_end + expected)
+                    segments = p.get("segments")
+                    if segments and segments[-1]["end"] != "replayed":
+                        # Batch B9F: a kick the model resolved at a decision
+                        # point takes the kick's own seconds, cut by the window.
+                        self.assertTrue(0 <= kick - own_end <= length)
+                        if not p.get("half_final"):
+                            self.assertEqual(kick, own_end + length)
+                    else:
+                        # The drive's own kick, stamped within its (last) segment.
+                        seg_own = segments[-1]["own_seconds"] if segments else p["own_seconds"]
+                        seg_snaps = segments[-1]["plays"] if segments else len(scrim)
+                        expected = min(length, seg_own)
+                        if seg_own - expected < seg_snaps:
+                            expected = max(0, seg_own - seg_snaps)
+                        self.assertEqual(kick, own_end + expected)
                     self.assertGreaterEqual(stamps[-1], kick)
                 if p["own_seconds"] >= len(scrim):
                     # Every gap at least 1 s: distinct, decreasing stamps.

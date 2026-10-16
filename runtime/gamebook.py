@@ -20,7 +20,9 @@ start: drives.start_spot. Points per drive: drives.points of the club's
 touchdown and field-goal drives over its drives, kneel-only drives
 (kneels >= scrimmage_plays) excluded. Total first downs: team_stats; by rushing
 and by passing: ledger run/pass rows flagged first_down (scrambles count as
-runs); by penalty: drives.chains[1] (the walked penalty first downs). Third
+runs); by penalty: drives.chains[1] (the walked penalty first downs; kernel
+2014.6 batch B11, ledger-walk-v2: the count of the ledger's penalty records
+flagged first_down, which must equal chains[1]). Third
 down: team_stats. Fourth down: ledger run/pass rows on down 4, converted when
 first_down or touchdown (kernel 2014.6 batch B9: the touchdown of a turnover
 row returned for the defense's score, which carries touchdown and turnover
@@ -32,7 +34,9 @@ of 10+ and completions of 20+. Tackled for loss: ledger run rows (not kneels)
 with negative yards. Passing, rushing, punting, return, fumble and interception
 counts: player counters. Kickoffs and touchbacks: ledger kickoff/free-kick rows.
 Net punting average: ledger punt rows, gross minus return yards minus 20 per
-touchback. Penalties: team_stats. Touchdowns: team_stats; the
+touchback. Penalties: team_stats (kernel 2014.6 batch B11: the fouling
+club's accepted records, and its declined and offsetting records when the
+receipt carries them). Touchdowns: team_stats; the
 rushing-passing-returns split: ledger touchdown rows. Extra points and field
 goals: team_stats. Two-point conversions (kernel 2014.6 batch B9): team_stats,
 and the scoring summary reads each touchdown's try from its two_point or
@@ -61,6 +65,13 @@ ledger's punt rows. Punt returns: RET, YDS, AVG, LNG, TD (LNG and TD from the
 ledger); FC omitted, since a fair catch is not attributed to a returner.
 Kickoff returns: RET, YDS, AVG, LNG, TD.
 
+Penalty summary (kernel 2014.6 batch B11, full receipts with penalty
+records): every replayed record of the ledger in game order, its period and
+clock, the fouling club, the fouler (a labelled group draw, never evidence),
+the foul, its status, enforcement and yards, and the first down it gave. The
+records are the replayed real drives' own; accept or decline is the real
+record's, never a coaching choice.
+
 Drive chart: drives rows (number, half/start_clock, start_kind, start_spot,
 scrimmage_plays, net_yards, own_seconds, category). Snap counts: the kernel
 2014.4 participation counters; the unit's snaps are the ledger's scrimmage rows
@@ -74,6 +85,8 @@ split adds to the total, and the touchdown split adds to the team total.
 """
 from __future__ import annotations
 
+from .chains import CHAIN_MODEL_V2
+from .penalties import PENALTY_ROW
 from .play_detail import DRIVE_SUMMARY_FIELDS, _period_clock
 from .stat_tables import avg, combine, g, numeric, passer_rating, pct, thrown, time_text
 
@@ -291,11 +304,21 @@ class GameView:
     def counted_drives(self, club):
         return [d for d in self.club_drives[club] if not (d.get("kneels") and d["kneels"] >= d["scrimmage_plays"])]
 
+    def penalty_rows(self):
+        """Kernel 2014.6 batch B11: the ledger rows carrying replayed penalty records."""
+        return [r for r in self.ledger if r.get("penalties")]
+
     def first_down_split(self, club):
         rows = self.scrim[club]
         rushing = sum(1 for r in rows if r["play_type"] == "run" and r.get("first_down"))
         passing = sum(1 for r in rows if r["play_type"] == "pass" and r.get("first_down"))
         penalty = sum((d.get("chains") or [0, 0])[1] for d in self.club_drives[club])
+        if self.club_drives[club] and all(d.get("chain_model") == CHAIN_MODEL_V2 for d in self.club_drives[club]):
+            # Batch B11 (ledger-walk-v2): the records flagged first_down.
+            flagged = sum(1 for r in self.ledger if r.get("offense") == club and r["play_type"] in SCRIMMAGE + (PENALTY_ROW,)
+                          for e in (r.get("penalties") or ()) if e.get("first_down"))
+            if flagged != penalty:
+                raise GamebookError("%s penalty first downs: %d records, chains %d" % (club, flagged, penalty))
         total = self.stats[club]["first_downs"]
         if rushing + passing + penalty != total:
             raise GamebookError("%s first downs %d-%d-%d do not add to %d" % (club, rushing, passing, penalty, total))
@@ -483,6 +506,9 @@ def team_stats(view):
         ("", "Interception returns, number and yards",
          pair(lambda c: g(t[c], "defensive_interceptions"), lambda c: g(t[c], "interception_return_yards"))),
         ("Penalties", "Penalties, number and yards", pair(lambda c: s[c]["penalties"], lambda c: s[c]["penalty_yards"])),
+        ("", "Declined-offsetting",
+         (lambda c: "%d-%d" % (s[c]["penalties_declined"], s[c]["penalties_offsetting"]))
+         if all("penalties_declined" in s[c] for c in view.clubs) else None),
         ("Ball security", "Turnovers", lambda c: s[c]["turnovers"]),
         ("", "Interceptions thrown", lambda c: thrown(t[c])),
         ("", "Fumbles, number and lost", pair(lambda c: g(t[c], "fumbles"), lambda c: g(t[c], "fumbles_lost"))),
@@ -650,6 +676,29 @@ def individual(view, club):
     return lines
 
 
+PENALTY_ENFORCEMENT = {"no_play": "No play", "after_snap": "After the play", "pre_kick": "Before the kick",
+                       "on_kick": "On the kick"}
+
+
+def penalty_summary(view):
+    """Kernel 2014.6 batch B11: the replayed penalty records, in game order."""
+    rows = view.penalty_rows() if view.has_ledger else []
+    if not rows:
+        return []
+    lines = ["#### Penalty summary", "",
+             "| Qtr | Time | Club | Player | Foul | Status | Enforcement | Yards | First down |",
+             "|---|---|---|---|---|---|---|---:|---|"]
+    for r in rows:
+        for e in r["penalties"]:
+            lines.append("| %s | %s | %s | %s | %s | %s | %s | %s | %s |" % (
+                r.get("period"), r.get("game_clock"), nickname(e["team"]),
+                _name(e["fouler"]) if e.get("fouler") else UNATTRIBUTED, e["penalty_type"], e["status"].capitalize(),
+                PENALTY_ENFORCEMENT.get(e.get("enforcement"), e.get("enforcement")),
+                abs(int(e.get("penalty_yards") or 0)) if e["status"] == "accepted" else DASH,
+                "Yes" if e.get("first_down") else DASH))
+    return lines + [""]
+
+
 def drive_chart(view):
     if not view.drives or any(d.get("start_spot") is None for d in view.drives):
         return []
@@ -704,7 +753,7 @@ def render(receipt, lead_team):
     lines = scoring_summary(view) + team_stats(view)
     for club in view.clubs:
         lines += individual(view, club)
-    lines += drive_chart(view) + snap_counts(view)
+    lines += penalty_summary(view) + drive_chart(view) + snap_counts(view)
     text = "\n".join(lines).rstrip("\n")
     if "None" in text.split() or "nan" in text.lower().split():
         raise GamebookError("unrendered cell in the gamebook")

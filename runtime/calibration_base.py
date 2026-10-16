@@ -372,6 +372,18 @@ class CalibrationBase:
         self.pin("ball_security")
         return self.memo(("model", "ball_security"), build)
 
+    def penalties(self):
+        """Kernel 2014.6 batch B11: the base's penalty model (the
+        automatic-first-down classes, the half-distance rule, the sourced
+        fouler group shares and the B11 band centres; runtime.penalties),
+        read against the field-position artifact's type vocabulary. A base
+        without the pinned artifact fails closed."""
+        def build():
+            from .penalties import PenaltyModel
+            return PenaltyModel(self.raw("penalties"), self.raw("field_position")["penalty_types"])
+        self.pin("penalties")
+        return self.memo(("model", "penalties"), build)
+
 
 BASE_2012 = CalibrationBase(
     name="2012",
@@ -452,6 +464,12 @@ BASE_2010_2014W4 = CalibrationBase(
         # read by runtime.ball_security under the B10 profile flags.
         ("ball_security", Pin("library/data/2010_2014w4_ball_security.json",
                               "ae3175ba713123df31f88e40bae9e7a13ac175db5b1c40ea8c843b439cc9a305")),
+        # Kernel 2014.6 batch B11: the penalty model (automatic-first-down
+        # classes, the half-distance rule, fouler group shares and the B11
+        # band centres; scripts/research/build_2010_2014_penalties.py,
+        # --check), read by runtime.penalties under penalty_records.
+        ("penalties", Pin("library/data/2010_2014w4_penalties.json",
+                          "0576d09c3be3a10717395129de5a7c870aa6441e29c279f3bbc39a8e4152bba0")),
     ),
     # Counted from the committed 2010-2014 artifacts on October 3, 2026 (the
     # field-position total is the pooled partition, 25,468 drives: the

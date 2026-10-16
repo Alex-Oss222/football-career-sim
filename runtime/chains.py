@@ -140,6 +140,197 @@ def walk(start_spot, values, turnover_last=False):
 STATE_FIELDS = ("down", "ydstogo", "goal_to_go", "los")
 
 
+# ---- Kernel 2014.6 batch B11 (R11): ledger-walk-v2 -----------------------------------------
+#
+# Under the profile flag penalty_records a drive's walk takes an event list: its
+# scrimmage snaps, each with the clauses enforced after it (runtime.penalties
+# AFTER_SNAP), and its no-play and pre-kick penalty rows. A step is
+# ("s", yards, pen) or ("p", pen), pen = (accepted signed yards, automatic
+# first down, the credited record) or None (runtime.penalties.compiled).
+#
+# * A snap moves the spot by its own yards and is a scrimmage first down when it
+#   reaches the line to gain, as in walk(); its third- or fourth-down attempt
+#   is the snap's.
+# * Its clauses are then enforced from the spot it reached: a defensive foul is
+#   a first down by penalty when it is automatic for its type or its yards
+#   reach the line to gain, and the series restarts from the new spot; an
+#   offensive foul moves the ball back and keeps the down and the line to
+#   gain. On a snap that made its own first down an automatic foul is still a
+#   first down by penalty, as the source flags it (482 of the 1,136 drive
+#   plays flagged first_down_penalty also carry the rushing or passing flag,
+#   library/data/2010_2014w4_penalties.json first_down_convention); a foul
+#   that only reaches the new line is not.
+#   The snap's third- or fourth-down conversion is its own gain (the source's
+#   third_down_converted). A fourth-down snap short of the line is a turnover
+#   on downs unless its own clause gave the first down.
+# * A no-play row keeps the down: a defensive foul is a first down by penalty by
+#   the same rule, an offensive foul lengthens the distance; it is never a
+#   third- or fourth-down attempt.
+# * The drive's penalty first downs (chains[1]) are the walked count of rows that
+#   gave one (one record per row carries the flag).
+CHAIN_MODEL_V2 = "ledger-walk-v2"
+CHAIN_LAYOUT_TAG_V2 = "chain-layout-v2"
+
+
+def _enforce(spot, down, ltg, pen, gained):
+    """(new spot, down, line to gain, first down by penalty) after one row's clauses."""
+    y, auto, _ = pen
+    new = spot - int(y)
+    first = False
+    if auto or (y > 0 and new <= ltg):
+        first = bool(auto) or not gained
+        down, ltg = 1, line_to_gain(new)
+    return new, down, ltg, first
+
+
+def walk_steps(start_spot, steps, turnover_last=False):
+    """The v2 walk of one drive's steps (above). Returns the walk() fields over
+    the scrimmage snaps ("rows": the state before each snap and its scrimmage
+    first down; "chains" [first downs, 3rd att, 3rd conv, 4th att, 4th conv];
+    "state"; "failed" and "breaks" as snap indices) plus "steps" (the state
+    before every step, its scrimmage first down and its first down by penalty),
+    "penalty_first_downs" and "pre_tail_state" (the state after the last snap,
+    before any trailing penalty row; None when there is none to keep)."""
+    down, spot = 1, int(start_spot)
+    ltg = line_to_gain(spot)
+    rows, out_steps, breaks = [], [], []
+    failed = None
+    fd = a3 = c3 = a4 = c4 = pfd = 0
+    snaps = sum(1 for step in steps if step[0] == "s")
+    seen = 0
+    pre_tail = None
+    for step in steps:
+        if failed is not None and step[0] == "s":
+            breaks.append(seen)
+        before = {"down": down, "ydstogo": spot - ltg, "goal_to_go": ltg == 0, "los": spot}
+        first = False
+        if step[0] == "s":
+            value, pen = int(step[1]), step[2]
+            new = spot - value
+            seen += 1
+            lost = turnover_last and seen == snaps
+            gained = not lost and new <= ltg
+            was = down
+            if down == 3:
+                a3 += 1
+                c3 += gained
+            elif down == 4:
+                a4 += 1
+                c4 += gained
+            if gained:
+                fd += 1
+                down, ltg = 1, line_to_gain(new)
+            else:
+                down += 1
+            spot = new
+            if pen is not None and not lost:
+                spot, down, ltg, first = _enforce(spot, down, ltg, pen, gained)
+            if was >= 4 and not gained and not first and not lost and failed is None:
+                failed = seen - 1
+            rows.append(dict(before, first_down=gained))
+            out_steps.append(dict(before, first_down=gained, penalty_first_down=first))
+            if seen == snaps:
+                pre_tail = (None if failed is not None or down > 4 else
+                            {"down": down, "ydstogo": spot - ltg, "goal_to_go": ltg == 0, "los": spot})
+        else:
+            spot, down, ltg, first = _enforce(spot, down, ltg, step[1], False)
+            out_steps.append(dict(before, first_down=False, penalty_first_down=first))
+        pfd += first
+    state = None
+    if failed is None and down <= 4:
+        state = {"down": down, "ydstogo": spot - ltg, "goal_to_go": ltg == 0, "los": spot}
+    if not snaps:
+        pre_tail = {"down": 1, "ydstogo": int(start_spot) - line_to_gain(start_spot),
+                    "goal_to_go": line_to_gain(start_spot) == 0, "los": int(start_spot)}
+    return {"rows": rows, "chains": [fd, a3, c3, a4, c4], "state": state, "failed": failed, "breaks": breaks,
+            "steps": out_steps, "penalty_first_downs": pfd, "pre_tail_state": pre_tail}
+
+
+def fourth_down_state_steps(category, start_spot, steps):
+    """fourth_down_state over v2 steps: the state at the kick (after every row,
+    a pre-kick row included) or, on downs, before the failed fourth-down snap."""
+    w = walk_steps(start_spot, steps)
+    snaps = sum(1 for step in steps if step[0] == "s")
+    if category == "downs":
+        if w["failed"] is None or w["failed"] != snaps - 1:
+            return None
+        return {k: w["rows"][w["failed"]][k] for k in STATE_FIELDS}
+    if not steps:
+        spot = int(start_spot)
+        return {"down": 1, "ydstogo": spot - line_to_gain(spot), "goal_to_go": line_to_gain(spot) == 0, "los": spot}
+    return w["state"]
+
+
+def terminal_state_steps(category, start_spot, steps):
+    """terminal_state over v2 steps (the same fallback to the last step's state)."""
+    state = fourth_down_state_steps(category, start_spot, steps)
+    if state is not None:
+        return state
+    w = walk_steps(start_spot, steps)
+    if w["steps"]:
+        return {k: w["steps"][-1][k] for k in STATE_FIELDS}
+    spot = int(start_spot)
+    return {"down": 1, "ydstogo": spot - line_to_gain(spot), "goal_to_go": line_to_gain(spot) == 0, "los": spot}
+
+
+def layout_steps(layout):
+    """The v2 steps of a laid-out drive: its sequence of snaps (each with the
+    clauses riding on it) and penalty rows; a layout without a sequence (no
+    penalty records) is its snaps alone."""
+    from .penalties import compiled
+    sequence = layout.get("sequence")
+    values = layout["values"]
+    if sequence is None:
+        return [("s", int(v), None) for v in values]
+    events = layout.get("events") or ()
+    attached = layout.get("attached") or {}
+    out = []
+    for tag, ref in sequence:
+        if tag == "s":
+            groups = attached.get(ref)
+            records = tuple(r for g in groups for r in g.records) if groups else ()
+            out.append(("s", int(values[ref]), compiled(records) if records else None))
+        else:
+            out.append(("p", compiled(events[ref].records)))
+    return out
+
+
+def layout_penalty_yards(layout):
+    """The accepted yards of a laid-out drive's replayed records."""
+    if layout.get("sequence") is None:
+        return 0
+    events = layout.get("events") or ()
+    total = sum(r.yards for groups in (layout.get("attached") or {}).values() for g in groups for r in g.records)
+    total += sum(r.yards for tag, ref in layout["sequence"] if tag == "p" for r in events[ref].records)
+    return total
+
+
+def ledger_steps(rows):
+    """The v2 steps of one drive's ledger rows (its scrimmage rows with their
+    clause lists, its penalty rows), in ledger order, from the published
+    records: each accepted record's signed yards, its automatic first down
+    and the record holding the row's first-down flag."""
+    from .penalties import PENALTY_ROW
+    out = []
+    for row in rows:
+        kind = row.get("play_type")
+        if kind in ("pass", "run"):
+            out.append(("s", row.get("result_yards", 0), _ledger_pen(row.get("penalties"))))
+        elif kind == PENALTY_ROW:
+            out.append(("p", _ledger_pen(row.get("penalties")) or (0, False, None)))
+    return out
+
+
+def _ledger_pen(entries):
+    if not entries:
+        return None
+    yards = sum(int(e.get("penalty_yards") or 0) for e in entries if e.get("status") == "accepted")
+    auto = any(e.get("status") == "accepted" and e.get("penalty_side") == "defense" and e.get("auto_first_down")
+               for e in entries)
+    pick = next((i for i, e in enumerate(entries) if e.get("first_down")), None)
+    return (yards, auto, pick)
+
+
 def fourth_down_state(category, start_spot, values):
     """(down, ydstogo, goal_to_go, los) before a punt, field-goal or downs
     terminal: the state after the last scrimmage snap, or for downs the state
@@ -206,7 +397,7 @@ def last_series_lengths(category, kneels):
 
 
 def chain_feasible(category, *, plays, net, spot, kneel_yards=(), sacks=0, runs=0, terminal_value=0,
-                   last_lengths=None):
+                   last_lengths=None, penalty=None):
     """Can a drive of `plays` scrimmage snaps netting `net` from `spot` be
     ordered into a legal chain walk that ends in its category's terminal
     state? A necessary counting and yardage condition, evaluated before the
@@ -226,6 +417,23 @@ def chain_feasible(category, *, plays, net, spot, kneel_yards=(), sacks=0, runs=
       ground was gained, so the free snaps before them carry the net less
       the kneel yards (a 3-snap punt netting 8 after kneels of -3 ran for
       11, which is a first down and a punt on third down).
+
+    Kernel 2014.6 batch B11 (R11): `penalty` (runtime.penalties
+    .static_summary of the replayed records) makes the condition the
+    penalty-aware one. A first down may come from a penalty: each automatic
+    first down the search may seat lowers the scrimmage first downs needed
+    by one; the yards before the last series are bounded by the net less the
+    pre-kick rows' yards plus every offensive penalty yard the search may
+    seat (a loss after a first down); with no first down at all, the
+    scrimmage snaps' own gains (the net less every record's yards) must stay
+    short of the opening distance lengthened by the movable offensive
+    yards, unless a defensive record could restart the series. Each
+    scrimmage first down the drive still needs (beyond the automatic ones)
+    takes ten yards from its series' snaps and non-automatic defensive
+    records, so the snaps' positive gains, at most the scrimmage net plus
+    every loss the value model can draw (ten per sack, the base's largest
+    run loss per run, the kneels), plus those records' yards must reach ten
+    per first down.
     """
     spot, net, kneels = int(spot), int(net), len(kneel_yards)
     kneel_sum = sum(int(y) for y in kneel_yards)
@@ -249,16 +457,32 @@ def chain_feasible(category, *, plays, net, spot, kneel_yards=(), sacks=0, runs=
     lengths = last_series_lengths(category, kneels)
     if last_lengths is not None:
         lengths = tuple(n for n in last_lengths if n in lengths)
+    auto = penalty["auto_movable"] if penalty else 0
     for length in lengths:
         if length > plays:
             continue
         m = plays - length
         if m == 0:
-            if pre is None or category == "fumble_lost" or pre - kneel_sum < dist0:
+            if pre is None or category == "fumble_lost":
+                return True
+            if penalty is None:
+                if pre - kneel_sum < dist0:
+                    return True
+                continue
+            # No series boundary before the last series: the snaps' own gains
+            # plus every defensive record's yards stay short of the opening
+            # distance lengthened by the movable offensive yards, or one
+            # defensive record before the first snap is itself a first down
+            # (automatic, or as long as the opening distance) and the rest
+            # stay short of a fresh ten.
+            gains = pre - penalty["yards"] - kneel_sum + penalty["def_movable"] + penalty["def_tail"]
+            if gains < dist0 + penalty["off_movable"]:
+                return True
+            if penalty["opener"] is not None and gains - penalty["opener"] < 10 + penalty["off_movable"]:
                 return True
             continue
         f = math.ceil(m / 4)
-        if spot <= 10 * f:
+        if spot <= 10 * max(0, f - auto):
             continue
         if pre is not None:
             in_last = max(0, length - kneels - (0 if category in ("punt", "downs", "field_goal_attempt", "clock") else 1))
@@ -268,8 +492,14 @@ def chain_feasible(category, *, plays, net, spot, kneel_yards=(), sacks=0, runs=
                 # is one of `sacks` (min(sacks, in_last + 1)); a fumbled run
                 # adds its own ten to the non-terminal sacks.
                 lowest_last = kneel_sum - 10 * max(min(sacks, in_last + 1), (1 if runs else 0) + min(sacks, in_last))
-            if pre - min(0, lowest_last) < 10 * f:
+            before_last = pre if penalty is None else pre - penalty["tail_yards"] + penalty["off_movable"]
+            if before_last - min(0, lowest_last) < 10 * max(0, f - auto):
                 continue
+            if penalty is not None:
+                room = max(0, pre - penalty["yards"] + 10 * sacks + int(penalty.get("run_loss", 10)) * runs
+                           - kneel_sum)
+                if room + penalty["def_nonauto"] < 10 * max(0, f - auto):
+                    continue
         return True
     return False
 
@@ -279,38 +509,287 @@ def chain_feasible(category, *, plays, net, spot, kneel_yards=(), sacks=0, runs=
 FG_FOURTH_DOWN_LAST_SERIES = (3,)
 
 
-def fourth_down_fg_feasible(*, plays, net, spot, kneel_yards=(), sacks=0, runs=0):
+def fourth_down_fg_feasible(*, plays, net, spot, kneel_yards=(), sacks=0, runs=0, penalty=None):
     """Kernel 2014.6 (W3): can a field-goal drive of `plays` snaps netting
     `net` from `spot` be laid out with the kick on fourth down? The same
     counting and yardage condition as chain_feasible with the last series
     held to three snaps (a drive with fewer than three snaps cannot kick on
     fourth down)."""
     return chain_feasible("field_goal_attempt", plays=plays, net=net, spot=spot, kneel_yards=kneel_yards,
-                          sacks=sacks, runs=runs, last_lengths=FG_FOURTH_DOWN_LAST_SERIES)
+                          sacks=sacks, runs=runs, last_lengths=FG_FOURTH_DOWN_LAST_SERIES, penalty=penalty)
 
 
 # ---- layout ------------------------------------------------------------------
 
-def _stream(seed, *parts):
-    payload = json.dumps([CHAIN_LAYOUT_TAG, *parts], separators=(",", ":")).encode()
+def _stream(seed, *parts, tag=CHAIN_LAYOUT_TAG):
+    payload = json.dumps([tag, *parts], separators=(",", ":")).encode()
     return random.Random(int.from_bytes(hashlib.sha256(seed + payload).digest(), "big"))
 
 
-def resample_stream(seed, event_id, drive_no, offense, segment=None):
+def resample_stream(seed, event_id, drive_no, offense, segment=None, tag=CHAIN_LAYOUT_TAG):
     """Kernel 2014.4 phase 2: the stream a drive's layout resample draws
     on (its replacement tuple, sack losses and yard split), keyed like the
     layout stream with its own tag so neither consumes the other. Kernel
     2014.6 batch B9F: a continuation segment n of a possession (after a
     fourth-down conversion) has its own, keyed by the segment as well; the
-    drive's first segment (None) keeps the unchanged key."""
+    drive's first segment (None) keeps the unchanged key. Kernel 2014.6
+    batch B11: under penalty_records every layout stream carries
+    CHAIN_LAYOUT_TAG_V2."""
     if segment is None:
-        return _stream(seed, event_id, drive_no, offense, "layout-resample")
-    return _stream(seed, event_id, drive_no, offense, "layout-resample", "segment", int(segment))
+        return _stream(seed, event_id, drive_no, offense, "layout-resample", tag=tag)
+    return _stream(seed, event_id, drive_no, offense, "layout-resample", "segment", int(segment), tag=tag)
 
 
-def _runs_clock(kind, completed):
-    """A run, a sack or a completed pass leaves the clock running."""
+def _runs_clock(kind, completed, penalized=False):
+    """A run, a sack or a completed pass leaves the clock running. Kernel 2014.6
+    batch B11: the one clock rule for spikes and penalty rows (shared with
+    runtime.play_detail._seat_spikes): an accepted foul stops it, so a spike
+    never follows a penalty row or a snap with an accepted clause."""
+    if penalized:
+        return False
     return kind in ("run", "sack") or (kind in ("att", "catch") and completed)
+
+
+# ---- Kernel 2014.6 batch B11 (R11): penalty items of the layout search ----------------------
+
+def _penalized(records):
+    return any(r.status == "A" for r in records)
+
+
+def _resetter(pen):
+    """A row that can give a first down without a snap (a defensive accepted
+    clause with yards or an automatic first down)."""
+    return pen is not None and (pen[0] > 0 or pen[1])
+
+
+def _attach(rng, kinds, completed, terminal, groups, diagnostics):
+    """{snap index: [Attach]}: each clause group of a counted snap rides on a
+    laid-out snap of its host kind (a completion on a completed attempt, an
+    incompletion on an incomplete one), drawn evenly on the layout stream
+    among the snaps holding none yet; a group with no snap of its kind takes
+    one of the same base kind, else any (counted penalty_host_fallback). The
+    terminal snap of a touchdown or turnover drive holds none (its clauses
+    are enforced after the possession and never reach here)."""
+    from .penalties import HOST_KINDS
+    last = len(kinds) - 1
+    eligible = [i for i in range(len(kinds)) if not (terminal is not None and i == last)]
+    taken = set()
+    out = {}
+    for group in groups:
+        wanted = HOST_KINDS.get(group.host)
+
+        def fits(i, strict=True):
+            kind = kinds[i]
+            if wanted is None:
+                return True
+            if kind not in wanted:
+                return False
+            if strict and group.host == "complete":
+                return bool(completed[i])
+            if strict and group.host == "incomplete":
+                return not completed[i]
+            return True
+
+        pool = [i for i in eligible if i not in taken and fits(i)]
+        if not pool:
+            pool = [i for i in eligible if i not in taken and fits(i, strict=False)]
+            if not pool:
+                pool = [i for i in eligible if i not in taken] or list(eligible)
+            if pool:
+                diagnostics["penalty_host_fallback"] = diagnostics.get("penalty_host_fallback", 0) + 1
+        if not pool:
+            diagnostics["penalty_host_missing"] = diagnostics.get("penalty_host_missing", 0) + 1
+            continue
+        index = pool[rng.randrange(len(pool))]
+        taken.add(index)
+        out.setdefault(index, []).append(group)
+    return out
+
+
+def _snap_item(kinds, completed, values, i, attached):
+    from .penalties import compiled
+    groups = attached.get(i)
+    if not groups:
+        return ("s", kinds[i], bool(completed[i]), int(values[i]), None, ())
+    records = tuple(r for g in groups for r in g.records)
+    return ("s", kinds[i], bool(completed[i]), int(values[i]), compiled(records), records)
+
+
+def _event_item(event):
+    from .penalties import compiled
+    return ("p", None, False, 0, compiled(event.records), tuple(event.records))
+
+
+def _steps_of(items):
+    return [("s", it[3], it[4]) if it[0] == "s" else ("p", it[4]) for it in items]
+
+
+class _EventSearch:
+    """Kernel 2014.6 batch B11: _Search over the movable snaps and the
+    movable penalty rows of one drive (`items`; each a hashable tuple (tag,
+    kind, completed, yards, compiled clauses, records)), followed by its
+    fixed tail (`tail`: kneels, pre-kick rows, the terminal snap), with
+    walk_steps as its state. The hard constraints are _Search's, plus: every
+    record is enforced only where it is legal (runtime.penalties.legal) and
+    leaves the ball in the field; the final-down pruning holds only while no
+    row that can give a first down remains. Counts are [first downs, 3rd
+    att, 3rd conv, 4th att, 4th conv, non-terminal 4th conv, first downs by
+    penalty]; the caps and `exact` read the first six and five."""
+
+    def __init__(self, rng, items, tail, start, *, final_down, downs, turnover_last, caps=None, exact=None,
+                 spike_rule=True):
+        self.rng, self.items, self.tail, self.start = rng, list(items), list(tail), start
+        self.final_down, self.downs, self.turnover_last = final_down, downs, turnover_last
+        self.caps = tuple(caps) if caps else (None,) * 6
+        self.exact, self.spike_rule = tuple(exact) if exact else None, spike_rule
+        self.tail_snaps = [sum(1 for it in self.tail[p + 1:] if it[0] == "s") for p in range(len(self.tail))]
+        self.tail_resetters = [sum(1 for it in self.tail[p + 1:] if _resetter(it[4])) for p in range(len(self.tail))]
+        self.n_tail_snaps = sum(1 for it in self.tail if it[0] == "s")
+        self.n_tail_resetters = sum(1 for it in self.tail if _resetter(it[4]))
+
+    def _down_ok(self, next_down, snaps_after, resetters_after):
+        target = self.final_down
+        if isinstance(target, int) and not resetters_after:
+            if snaps_after != target - next_down and snaps_after < target:
+                return False
+        return True
+
+    def _step(self, state, item, snaps_after, resetters_after):
+        from .penalties import legal
+        spot, down, ltg, running, counts = state
+        tag, kind, completed, value, pen, records = item
+        fd, a3, c3, a4, c4, mid4, pfd = counts
+        if tag == "p":
+            if records and not legal(records, spot):
+                return None
+            y, auto, _ = pen
+            new = spot - y
+            if not 1 <= new <= 99:
+                return None
+            if auto or (y > 0 and new <= ltg):
+                down, ltg = 1, line_to_gain(new)
+                pfd += 1
+            if not self._down_ok(down, snaps_after, resetters_after):
+                return None
+            return (new, down, ltg, False, (fd, a3, c3, a4, c4, mid4, pfd))
+        new = spot - value
+        last_snap = snaps_after == 0
+        lost = self.turnover_last and last_snap
+        if not lost and not (last_snap and new == 0 and self.final_down == "td"):
+            if not 1 <= new <= 99:
+                return None
+        if kind == "spike" and self.spike_rule and not running:
+            return None
+        gained = not lost and new <= ltg
+        if gained and new <= 0 and not last_snap:
+            return None
+        was = down
+        if down == 3:
+            a3 += 1
+            c3 += gained
+        elif down == 4:
+            a4 += 1
+            c4 += gained
+            mid4 += gained and not last_snap
+        if gained:
+            fd += 1
+            down, ltg = 1, line_to_gain(new)
+        else:
+            down += 1
+        first = False
+        after = new
+        if pen is not None and not lost:
+            if not legal(records, new):
+                return None
+            y, auto, _ = pen
+            after = new - y
+            if not 1 <= after <= 99:
+                return None
+            if auto or (y > 0 and after <= ltg):
+                first = not gained
+                pfd += first
+                down, ltg = 1, line_to_gain(after)
+        if was == 4 and not gained and not first and not lost:
+            if not (self.downs and last_snap):
+                return None
+        counts = (fd, a3, c3, a4, c4, mid4, pfd)
+        for value_now, cap in zip(counts, self.caps):
+            if cap is not None and value_now > cap:
+                return None
+        if not self._down_ok(down, snaps_after, resetters_after):
+            return None
+        return (after, down, ltg, _runs_clock(kind, completed, _penalized(records)), counts)
+
+    def _finish(self, state):
+        for position, item in enumerate(self.tail):
+            state = self._step(state, item, self.tail_snaps[position], self.tail_resetters[position])
+            if state is None:
+                return False
+        if isinstance(self.final_down, int) and state[1] != self.final_down:
+            return False
+        if self.exact is not None and state[4][:5] != self.exact:
+            return False
+        return True
+
+    def run(self, budget=NODE_BUDGET):
+        """One randomized search: an order of the movable item indices, or
+        None, and whether the space was exhausted (_Search.run)."""
+        nodes = [0]
+        dead = set()
+        start_state = (self.start, 1, line_to_gain(self.start), False, (0,) * 7)
+        exhausted = [True]
+        distinct = []
+        for item in self.items:
+            if item not in distinct:
+                distinct.append(item)
+        counts0 = tuple(sum(1 for item in self.items if item == d) for d in distinct)
+        is_snap = [d[0] == "s" for d in distinct]
+        is_reset = [_resetter(d[4]) for d in distinct]
+        snaps0 = sum(n for n, s in zip(counts0, is_snap) if s)
+        resets0 = sum(n for n, r in zip(counts0, is_reset) if r)
+
+        def dfs(state, left, n_left, snaps_left, resets_left, path):
+            nodes[0] += 1
+            if nodes[0] > budget:
+                exhausted[0] = False
+                return None
+            if not n_left:
+                return path if self._finish(state) else None
+            key = (state, left)
+            if key in dead:
+                return None
+            order = [k for k, n in enumerate(left) if n]
+            self.rng.shuffle(order)
+            for k in order:
+                snaps_after = snaps_left - is_snap[k] + self.n_tail_snaps
+                resets_after = resets_left - is_reset[k] + self.n_tail_resetters
+                nxt = self._step(state, distinct[k], snaps_after, resets_after)
+                if nxt is None:
+                    continue
+                found = dfs(nxt, left[:k] + (left[k] - 1,) + left[k + 1:], n_left - 1, snaps_left - is_snap[k],
+                            resets_left - is_reset[k], path + [k])
+                if found is not None:
+                    return found
+                if nodes[0] > budget:
+                    return None
+            dead.add(key)
+            return None
+
+        picked = dfs(start_state, counts0, len(self.items), snaps0, resets0, [])
+        found = None
+        if picked is not None:
+            pools = {i: [j for j, item in enumerate(self.items) if item == d] for i, d in enumerate(distinct)}
+            found = [pools[k].pop(0) for k in picked]
+        return found, exhausted[0]
+
+
+def _score_steps(w, targets):
+    """_score with the drive's first downs by penalty against the real drive's
+    own count (c1)."""
+    score = _score(w["chains"], targets)
+    if targets:
+        score += abs(w["penalty_first_downs"] - int(targets[1]))
+    return score
 
 
 class _Search:
@@ -561,7 +1040,7 @@ FG_FOURTH_DOWN_RELAXED = "fg_fourth_down_relaxed"
 def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, attempts, sacks,
                  kneel_yards, spikes, pass_yards, rush_free, losses, safety_terminal, net, spot,
                  completion_rate, targets=None, term_down=None, diagnostics=None, usage_values=None,
-                 fg_down=None, segment=None, lost_kind=None):
+                 fg_down=None, segment=None, lost_kind=None, penalty=None):
     """The ordered snaps of one resolved drive with a legal chain walk.
 
     `category` is the kernel category (punt, field_goal_attempt, downs,
@@ -612,12 +1091,23 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
     ordered. Every adopted terminal other than `lost_kind` is counted
     fumble_terminal_fallback. None (every kernel up to 2014.5, and 2014.6
     without the flag) is the unchanged draw.
+
+    Kernel 2014.6 (batch B11, R11; profile flag penalty_records): `penalty` is
+    the replayed drive's runtime.penalties.DrivePlan. The layout stream
+    carries CHAIN_LAYOUT_TAG_V2; each drawn split's clause groups ride on host
+    snaps of their kind (_attach), the movable penalty rows join the snaps in
+    _EventSearch and the pre-kick rows its tail; the chain walk is walk_steps
+    (ledger-walk-v2) and every rung's search carries the records. The kernel
+    has already taken the records' yards out of the scrimmage split, so the
+    snaps plus the records still net the drive. The layout gains "sequence"
+    (["s", snap index] and ["p", event id] in order), "attached" ({snap
+    index: [Attach]}), "events" and "chain_model". None is the unchanged path.
     """
     args = dict(seed=seed, event_id=event_id, drive_no=drive_no, offense=offense, category=category,
                 td_type=td_type, runs=runs, attempts=attempts, sacks=sacks, kneel_yards=kneel_yards, spikes=spikes,
                 pass_yards=pass_yards, rush_free=rush_free, losses=losses, safety_terminal=safety_terminal, net=net,
                 spot=spot, completion_rate=completion_rate, targets=targets, usage_values=usage_values,
-                segment=segment, lost_kind=lost_kind)
+                segment=segment, lost_kind=lost_kind, penalty=penalty)
     if fg_down is not None and category == "field_goal_attempt":
         scratch = {}
         held = _drive_layout(term_down=fg_down, diagnostics=scratch, every_tier=True, **args)
@@ -634,14 +1124,15 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
 def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, attempts, sacks,
                   kneel_yards, spikes, pass_yards, rush_free, losses, safety_terminal, net, spot,
                   completion_rate, targets=None, term_down=None, diagnostics=None, usage_values=None,
-                  every_tier=False, segment=None, lost_kind=None):
+                  every_tier=False, segment=None, lost_kind=None, penalty=None):
     """drive_layout's search (docstring there). `every_tier` keeps the
     field-goal terminal down in tiers 2 and 3 as well (W3)."""
     from . import play_detail as pd
 
     diagnostics = diagnostics if diagnostics is not None else {}
-    rng = (_stream(seed, event_id, drive_no, offense) if segment is None
-           else _stream(seed, event_id, drive_no, offense, "segment", int(segment)))
+    tag = CHAIN_LAYOUT_TAG_V2 if penalty is not None else CHAIN_LAYOUT_TAG
+    rng = (_stream(seed, event_id, drive_no, offense, tag=tag) if segment is None
+           else _stream(seed, event_id, drive_no, offense, "segment", int(segment), tag=tag))
     kneel_yards = [int(y) for y in kneel_yards]
     losses = [int(x) for x in losses]
     spot, net = int(spot), int(net)
@@ -678,6 +1169,8 @@ def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs,
     losses_random = usable + free_runs > 0
 
     def attempt(kinds, completed, values, n_mov, tier):
+        if penalty is not None:
+            return attempt_events(kinds, completed, values, n_mov, tier)
         sig = [(kinds[i], completed[i], values[i]) for i in range(len(kinds))]
         search = _Search(rng, sig, n_mov, spot, final_down=tier["final"], downs=category == "downs",
                          turnover_last=turnover_last, caps=tier["caps"], exact=tier["exact"],
@@ -698,17 +1191,77 @@ def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs,
                 break
         return best
 
+    movable_events = [e for e in penalty.events if not e.tail] if penalty is not None else []
+    tail_events = [e for e in penalty.events if e.tail] if penalty is not None else []
+
+    def arrangement(kinds, completed, values, n_mov, attached):
+        """(movable items, their refs, tail items, their refs) of one draw."""
+        has_terminal = len(kinds) > n_mov + len(kneel_yards)
+        items = [_snap_item(kinds, completed, values, i, attached) for i in range(n_mov)]
+        refs = [("s", i) for i in range(n_mov)]
+        items += [_event_item(e) for e in movable_events]
+        refs += [("p", e.eid) for e in movable_events]
+        tail_idx = list(range(n_mov, n_mov + len(kneel_yards)))
+        tail = [_snap_item(kinds, completed, values, i, attached) for i in tail_idx]
+        tail_refs = [("s", i) for i in tail_idx]
+        tail += [_event_item(e) for e in tail_events]
+        tail_refs += [("p", e.eid) for e in tail_events]
+        if has_terminal:
+            tail.append(_snap_item(kinds, completed, values, len(kinds) - 1, attached))
+            tail_refs.append(("s", len(kinds) - 1))
+        return items, refs, tail, tail_refs
+
+    def attempt_events(kinds, completed, values, n_mov, tier):
+        attached = _attach(rng, kinds, completed, terminal if len(kinds) > n_mov + len(kneel_yards) else None,
+                           penalty.attached, diagnostics)
+        items, refs, tail, tail_refs = arrangement(kinds, completed, values, n_mov, attached)
+        search = _EventSearch(rng, items, tail, spot, final_down=tier["final"], downs=category == "downs",
+                              turnover_last=turnover_last, caps=tier["caps"], exact=tier["exact"],
+                              spike_rule=tier["spike"])
+        best = None
+        for _ in range(1 if tier["exact"] else RESTARTS):
+            order, exhausted = search.run(EXACT_BUDGET if tier["exact"] else NODE_BUDGET)
+            if order is None:
+                if exhausted:
+                    break
+                continue
+            sequence = [refs[j] for j in order] + tail_refs
+            w = walk_steps(spot, _steps_of([items[j] for j in order] + tail), turnover_last)
+            score = _score_steps(w, targets)
+            if best is None or score < best[0]:
+                best = (score, sequence, w, attached)
+            if score == 0:
+                break
+        return best
+
+    def ordered(kinds, completed, values, sequence, attached, w):
+        """The layout fields of a v2 arrangement: the snaps in sequence order,
+        the sequence and attachments re-indexed to that order."""
+        snap_order = [ref for tag, ref in sequence if tag == "s"]
+        position = {old: new for new, old in enumerate(snap_order)}
+        return {"kinds": [kinds[i] for i in snap_order], "completed": [completed[i] for i in snap_order],
+                "values": [values[i] for i in snap_order], "walk": w,
+                "sequence": [["s", position[ref]] if tag == "s" else ["p", ref] for tag, ref in sequence],
+                "attached": {position[i]: list(groups) for i, groups in attached.items() if i in position},
+                "events": list(penalty.events), "chain_model": CHAIN_MODEL_V2}
+
     def bump(name):
         diagnostics[name] = diagnostics.get(name, 0) + 1
 
     def finish(kinds, completed, values, best, plan, how):
-        _, full, w = best
         for name in how:
             bump(name)
         if category == "fumble_lost" and lost_kind is not None and terminal != lost_kind:
             bump("fumble_terminal_fallback")
         if "chain_layout_repaired" in how:
             bump("prefix_order_repaired")
+        if penalty is not None:
+            _, sequence, w, attached = best
+            out = {"ok": True, "terminal": terminal, "pass_yards": plan[0], "rush_free": plan[1],
+                   "losses": list(plan[2])}
+            out.update(ordered(kinds, completed, values, sequence, attached, w))
+            return out
+        _, full, w = best
         return {"ok": True, "terminal": terminal, "kinds": [kinds[i] for i in full],
                 "completed": [completed[i] for i in full], "values": [values[i] for i in full],
                 "walk": w, "pass_yards": plan[0], "rush_free": plan[1], "losses": list(plan[2])}
@@ -870,6 +1423,29 @@ def _drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs,
     bump("chain_layout_failed")
     bump("prefix_order_failed")
     kinds, completed, values, n_mov = last_draw
+    if penalty is not None:
+        # No legal arrangement: the snaps in their drawn order, each movable
+        # penalty row before the snap of its real order (the coherence
+        # classes report the break, as before).
+        attached = _attach(rng, kinds, completed, terminal if len(kinds) > n_mov + len(kneel_yards) else None,
+                           penalty.attached, diagnostics)
+        items, refs, tail, tail_refs = arrangement(kinds, completed, values, n_mov, attached)
+        snaps = [j for j, ref in enumerate(refs) if ref[0] == "s"]
+        events = sorted((j for j, ref in enumerate(refs) if ref[0] == "p"),
+                        key=lambda j: (penalty.events[refs[j][1]].before, j))
+        order, placed = [], 0
+        for j in snaps:
+            while events and penalty.events[refs[events[0]][1]].before <= placed:
+                order.append(events.pop(0))
+            order.append(j)
+            placed += 1
+        order += events
+        sequence = [refs[j] for j in order] + tail_refs
+        w = walk_steps(spot, _steps_of([items[j] for j in order] + tail), turnover_last)
+        out = {"ok": False, "terminal": terminal, "pass_yards": pass_yards, "rush_free": rush_free,
+               "losses": list(losses)}
+        out.update(ordered(kinds, completed, values, sequence, attached, w))
+        return out
     return {"ok": False, "terminal": terminal, "kinds": kinds, "completed": completed, "values": values,
             "walk": walk(spot, values, turnover_last), "pass_yards": pass_yards, "rush_free": rush_free,
             "losses": list(losses)}

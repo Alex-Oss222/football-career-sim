@@ -1560,6 +1560,91 @@ def return_centres(base=None):
     return base.memo(("return_centres",), build)
 
 
+PENALTY_RECORDS_FROM = (2014, 6)
+
+
+def audit_penalties(receipts, cohort=None):
+    """Kernel 2014.6 batch B11 (R11): the penalty rows for a 2014.6-or-later
+    cohort resolved with the penalty records (the receipts' marker),
+    (team-games, [(metric, observed, centre, tolerance, status)]). Every
+    centre is read from the cohort base's penalty artifact
+    (library/data/2010_2014w4_penalties.json, its ``band_centres``, in the
+    engine's scope: the replayed drive records and the kick plays' records,
+    the records enforced after a possession or on a field-goal row left
+    out), never typed. Graded (plan B11): accepted penalties per team-game
+    (3*sqrt(phi*c/n), phi the artifact's team-game dispersion), penalty yards
+    per team-game (3*SD/sqrt(n), the artifact's team-game SD) and first downs
+    by penalty per team-game (3*sqrt(c/n)). Informational: the defense's
+    share of accepted drive penalties, declined and offsetting records and
+    the kick plays' accepted penalties per team-game, and the net yards per
+    team-game the records move the offense (reported, never tuned; no
+    centre). Earlier cohorts, and receipts without the marker, have no row
+    (0, [])."""
+    if cohort is None or not kernel_at_least(cohort, PENALTY_RECORDS_FROM):
+        return 0, []
+    marked = [r for r in receipts if isinstance(r.get("penalties"), dict)]
+    if not marked:
+        return 0, []
+    base = cohort_base(receipts, cohort)
+    centres = base.penalties().centres
+    team_games = sum(len(r.get("team_stats", {})) for r in marked)
+    rows, add = _grader(team_games >= MIN_TEAM_GAMES)
+
+    def pooled(entry):
+        k, n = entry["pooled"]
+        return k / n
+
+    def count_row(metric, total, centre, *, graded=True, dispersion=1.0):
+        observed = total / team_games if team_games else None
+        tolerance = 3 * math.sqrt(dispersion * centre / team_games) if team_games and centre else None
+        add(metric, observed, centre, tolerance, graded=graded)
+
+    teams = [s for r in marked for s in r.get("team_stats", {}).values()]
+
+    def total(field):
+        return sum(s.get(field, 0) or 0 for s in teams)
+
+    accepted = centres["accepted_penalties_per_team_game"]
+    count_row("accepted penalties per team-game (drive and kick plays; the fouling club)", total("penalties"),
+              pooled(accepted), dispersion=accepted["dispersion"])
+    yards = centres["penalty_yards_per_team_game"]
+    centre = pooled(yards)
+    add("penalty yards per team-game (the fouling club)", total("penalty_yards") / team_games if team_games else None,
+        centre, 3 * yards["sd"] / math.sqrt(team_games) if team_games else None)
+    count_row("first downs by penalty per team-game", total("penalty_first_downs"),
+              pooled(centres["penalty_first_downs_per_team_game"]))
+    drives = [d for r in marked for d in _drives(r)]
+    drive_accepted = drive_defense = net = 0
+    for d in drives:
+        pen = d.get("pen") or {}
+        for club, row in (pen.get("clubs") or {}).items():
+            drive_accepted += row[0]
+            drive_defense += row[0] if club != d["team"] else 0
+        net += pen.get("net", 0) or 0
+    rate_observed, rate_tolerance = _rate(drive_defense, drive_accepted,
+                                          pooled(centres["defense_share_of_accepted_drive_penalties"]))
+    add("defense share of accepted drive penalties (informational)", rate_observed,
+        pooled(centres["defense_share_of_accepted_drive_penalties"]), rate_tolerance, events=drive_accepted,
+        graded=False)
+    count_row("declined penalties per team-game (informational)", total("penalties_declined"),
+              pooled(centres["declined_per_team_game"]), graded=False)
+    count_row("offsetting penalties per team-game (informational)", total("penalties_offsetting"),
+              pooled(centres["offsetting_per_team_game"]), graded=False)
+    kick_accepted = 0
+    for r in marked:
+        for k in _kicks(r):
+            kick_accepted += sum(row[0] for row in ((k.get("pen") or {}).get("clubs") or {}).values())
+        for d in _drives(r):
+            kick_accepted += sum(row[0] for row in (((d.get("punt") or {}).get("pen") or {}).get("clubs") or {})
+                                 .values())
+    count_row("kick-play accepted penalties per team-game (informational)", kick_accepted,
+              pooled(centres["kick_play_penalties_per_team_game"]), graded=False)
+    rows.append(("net yards the records move the offense per team-game (reported, not tuned)",
+                 net / team_games if team_games else None, None, None,
+                 "MEASURED" if team_games else "INSUFFICIENT SAMPLE"))
+    return team_games, rows
+
+
 def coherence(receipts, cohort=None):
     """Zero-tolerance ledger-coherence counts over the given receipts.
 

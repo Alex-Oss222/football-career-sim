@@ -22,7 +22,7 @@ base (U1 = (b)), registered by batch B5 with these flags:
   point, field-goal distance model, sack base rate, gross yards per attempt,
   yards per carry, completion rate, band centres) through the schema-3
   readers; the per-play penalty counter stays the 2012 base's factor until
-  R11 (batch B11) owns it.
+  R11 (batch B11, penalty_records) replaces it with the replayed records.
 - regimes_v3: the schema-3 end-of-half and late-game regimes of
   runtime.field_position.FieldPositionModelV3 (R17, R7, R10, R14, W5b).
 - injury_2014_6: the injury block of the bound base (it changes onsets);
@@ -134,6 +134,21 @@ otherwise):
   rule R4 and overtime punts exclude retained records, counted
   (result-changing).
 
+Batch B11 (R11, per-play penalty records; result-changing) adds one flag,
+needing possession_sequencing (the kick summaries carry their records) and a
+base that pins the penalty artifact and carries the schema-3 ``pen``
+annotations (CalibrationBase.penalties; the kernel fails closed otherwise):
+
+- penalty_records: every replayed drive's own penalty clauses are replayed
+  (runtime.penalties): no-play and pre-kick rows and clauses on counted snaps
+  enter the chain layout (runtime.chains.walk_steps, ledger-walk-v2, on the
+  chain-layout-v2 stream) and take their accepted yards out of the scrimmage
+  split; the penalty-aware static gate masks a tuple whose records admit no
+  legal placement on the possession stream; kick rows carry their kick
+  records' clauses; each record's fouler is a group draw; team counters go
+  to the fouling club. The per-play Bernoulli counter of every earlier
+  kernel is gone.
+
 A base names the flags its readers require (CalibrationBase.requires_flags):
 a profile resolving on it must hold them, and a profile holding base_2014_6
 or regimes_v3 on a base that does not serve them fails closed.
@@ -214,13 +229,17 @@ B9_FLAGS = frozenset({"two_point_tries", "return_touchdowns", "onside_kicks"})
 B9F_FLAGS = frozenset({"fourth_down_decisions"})
 # Batch B10 mechanism flags (W4 and R12 layers A, B and C).
 B10_FLAGS = frozenset({"ball_security_credit", "fumble_terminal_kind", "retained_kicks"})
-FLAGS = BASE_FLAGS | {"injury_2014_6", "usage_2014_6"} | B6_FLAGS | B8_FLAGS | B9_FLAGS | B9F_FLAGS | B10_FLAGS
+# Batch B11 mechanism flag (R11, per-play penalty records).
+B11_FLAGS = frozenset({"penalty_records"})
+FLAGS = (BASE_FLAGS | {"injury_2014_6", "usage_2014_6"} | B6_FLAGS | B8_FLAGS | B9_FLAGS | B9F_FLAGS | B10_FLAGS
+         | B11_FLAGS)
 # A mechanism flag that needs another flag's records (a profile holding it
 # without them is refused at construction).
 FLAG_REQUIRES = {flag: B8_FLAGS for flag in B9_FLAGS}
 FLAG_REQUIRES["fourth_down_decisions"] = frozenset({"possession_sequencing", "clock_detail_v1"})
 FLAG_REQUIRES["fumble_terminal_kind"] = frozenset({"ball_security_credit"})
 FLAG_REQUIRES["retained_kicks"] = frozenset({"possession_sequencing", "ball_security_credit"})
+FLAG_REQUIRES["penalty_records"] = frozenset({"possession_sequencing"})
 
 
 def _legacy_base():
@@ -234,7 +253,7 @@ PROFILE_2014_6 = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", stre
                                           "early_fg_v2", "clock_detail_v1", "substitution_record",
                                           "possession_sequencing", "two_point_tries", "return_touchdowns",
                                           "onside_kicks", "fourth_down_decisions", "ball_security_credit",
-                                          "fumble_terminal_kind", "retained_kicks"}),
+                                          "fumble_terminal_kind", "retained_kicks", "penalty_records"}),
                          record_base=True)
 
 PROFILES = {p.kernel_version: p for p in (PROFILE_2014_5, PROFILE_2014_6)}

@@ -60,7 +60,9 @@ BLOCKS = {
 DIAGNOSTICS = ("chain_layout_failed", "chain_layout_resampled", "chain_layout_resample_exhausted",
                "chain_plan_concentrated", "fallback_zero_tuple",
                # kernel 2014.6 batch B6: the W3 fourth-down fallback and the W5a stamp exemptions
-               "fg_fourth_down_relaxed", "clock_gap_exempt", "timeout_seat_fallback")
+               "fg_fourth_down_relaxed", "clock_gap_exempt", "timeout_seat_fallback",
+               # kernel 2014.6 batch B11: layouts laid out without their records (the last fallback)
+               "penalty_layout_dropped", "penalty_records_dropped", "penalty_host_fallback")
 
 
 def fixture(name):

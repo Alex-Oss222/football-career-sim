@@ -31,7 +31,7 @@ from runtime.calibration_base import BASE_2010_2014W4
 from runtime.kernel import _start_kind, resolve_game, validate_result
 from runtime.play_detail import (KICK_SUMMARY_FIELDS, check_ledger, expected_start_kind, kicks_of,
                                  measurable_classes, scoring_events)
-from runtime.profiles import B9_FLAGS, B9F_FLAGS, B10_FLAGS, PROFILE_2014_5, PROFILE_2014_6, Profile
+from runtime.profiles import B9_FLAGS, B9F_FLAGS, B10_FLAGS, B11_FLAGS, PROFILE_2014_5, PROFILE_2014_6, Profile
 from runtime.rules import (KICK_CHAIN_BOUND, RETAINED_START_KINDS, kick_score, kicking_club, ot_history,
                            ot_status, possession_score)
 from runtime.statbook import make_receipt
@@ -43,13 +43,15 @@ A, B = sample_teams()
 # search; the test fails loudly if it no longer does). Re-searched in batch
 # B9F, which changes every later fourth-down possession (b8-ot-30 no longer
 # reaches overtime; b8-ot-35 is the first label of the same search that does).
-OT_NAME = "b8-ot-35"
+# Re-searched again in batch B11, which moves every later drive (b8-ot-2 is
+# the first label of the same search that reaches overtime).
+OT_NAME = "b8-ot-2"
 # The B8 level: kernel 2014.6 without the B9 scoring flags, the B9F live
-# fourth downs and the B10 ball security (retained kicks need
-# possession_sequencing).
+# fourth downs, the B10 ball security and the B11 penalty records (retained
+# kicks and penalty records need possession_sequencing).
 PROFILE_B8 = Profile("2014.6", base=PROFILE_2014_6.base, cell_rules=PROFILE_2014_6.cell_rules,
-                     strength=PROFILE_2014_6.strength, flags=PROFILE_2014_6.flags - B9_FLAGS - B9F_FLAGS - B10_FLAGS,
-                     record_base=True)
+                     strength=PROFILE_2014_6.strength,
+                     flags=PROFILE_2014_6.flags - B9_FLAGS - B9F_FLAGS - B10_FLAGS - B11_FLAGS, record_base=True)
 NO_SEQUENCING = Profile("2014.6", base=PROFILE_2014_6.base, cell_rules=PROFILE_2014_6.cell_rules,
                         strength=PROFILE_2014_6.strength,
                         flags=PROFILE_B8.flags - {"possession_sequencing"}, record_base=True)

@@ -19,6 +19,7 @@ from . import usage
 from . import scoring_decisions as scoring
 from . import fourth_down as fourth
 from . import ball_security
+from . import penalties as penalty_records
 from .player_evidence import empty_player_stats, normalize_players, observation
 from .profiles import Profile, profile_for
 from .play_detail import (
@@ -716,6 +717,20 @@ def _resolve_game(
         raise ValueError("profile %s holds ball_security_credit on a base without the fumble annotations"
                          % profile.kernel_version)
     bsm = cbase.ball_security() if bs_credit else None
+    # Kernel 2014.6 batch B11 (R11): per-play penalty records. Every replayed
+    # drive's own clauses are replayed in its chain layout (runtime.penalties,
+    # runtime.chains ledger-walk-v2), kick rows carry their kick records'
+    # clauses, foulers are group draws, counters go to the fouling club; the
+    # per-play Bernoulli counter is gone. It needs the possession sequencing
+    # (kick summaries) and the base's penalty artifact and schema-3 `pen`
+    # annotations (fails closed otherwise).
+    pen_on = profile.has("penalty_records")
+    if pen_on and not sequencing:
+        raise ValueError("profile %s holds penalty_records without possession_sequencing" % profile.kernel_version)
+    if pen_on and ("pen" not in T or "pen" not in fpm.KICK or "pen" not in fpm.PUNT or not hasattr(fpm, "penalty_plan")):
+        raise ValueError("profile %s holds penalty_records on a base without the penalty annotations"
+                         % profile.kernel_version)
+    pmodel = cbase.penalties() if pen_on else None
 
     teams = {home.team_id: home, away.team_id: away}
     rosters = {home.team_id: home_players, away.team_id: away_players}
@@ -730,6 +745,13 @@ def _resolve_game(
         # fumbles and muffs, and its recoveries of its own kicks.
         for line in stats.values():
             for field in BALL_SECURITY_TEAM_FIELDS:
+                line[field] = 0
+    if pen_on:
+        # Batch B11 team counters (append-only): the club's declined and
+        # offsetting fouls and its first downs by penalty (the penalties and
+        # penalty_yards counters now charge the fouling club).
+        for line in stats.values():
+            for field in penalty_records.TEAM_FIELDS:
                 line[field] = 0
     # Preseason unit rotation (runtime/rotation.py): a tracker per club, from
     # its plan or the documented default. Any other game type has none, and a
@@ -1464,6 +1486,21 @@ def _resolve_game(
                                                   receiving=receiving, units=units, stats=stats,
                                                   rng=ball_security.stream(seed, event_id, "kick", kick_no),
                                                   model=bsm, diagnostics=diagnostics)
+        if pen_on and drawn.get("pen") and not (onside_kick or touchdown):
+            # Batch B11 (R11): the kick row carries the drawn record's own
+            # clauses (already in its next start), each fouler named evenly
+            # from the fouling side's unit on the play on the ("kick", k)
+            # stream; counters to the fouling club. A record a scoring branch
+            # replaced (an onside or return-touchdown record) carries none.
+            units = participation.kick(rows[0], kicking, receiving, live[kicking], live[receiving])
+            prng = penalty_records.stream(seed, event_id, "kick", kick_no)
+            entries = penalty_records.kick_records(pmodel, drawn["pen"], kicking=kicking, receiving=receiving)
+            for entry in entries:
+                penalty_records.name_kick_fouler(prng, entry, units.get(entry["team"]) or ())
+                penalty_records.charge(entry, stats)
+            rows[0]["penalties"] = entries
+        if pen_on:
+            record["pen"] = penalty_records.summary_of(rows[0].get("penalties") or (), kicking)
         if onside_kick:
             # Batch B9 (R9): an onside kick; the recovering player is named
             # evenly from the recovering club's kick unit on a keyed
@@ -1623,7 +1660,10 @@ def _resolve_game(
                     return None
                 return i, {k: state[k] for k in chain_walk.STATE_FIELDS}, fourth.GO
         if category in fourth.REPLAY_ACTION:
-            state = lay["walk"]["state"]
+            # Batch B11 (ledger-walk-v2): the decision comes before any
+            # pre-kick penalty row (it was made in kick formation).
+            state = (lay["walk"].get("pre_tail_state") if lay.get("sequence") is not None
+                     else lay["walk"]["state"])
             if state is not None and state["down"] == 4:
                 return len(kinds), {k: state[k] for k in chain_walk.STATE_FIELDS}, fourth.REPLAY_ACTION[category]
         return None
@@ -1653,6 +1693,9 @@ def _resolve_game(
         punter = usage.kicking_specialist(off_view, "P", "punt")
         records, segments = [], []
         kinds, completed, values, stamps = [], [], [], []
+        # Batch B11 (ledger-walk-v2): the joined sequence of snaps and penalty
+        # rows, the clauses riding on joined snaps and the joined events.
+        seq, att, evs = [], {}, []
         snap_calls = {}
         # Batch B10 (layer A): the replayed real drives the joined snaps come
         # from, (offset, kept snaps, the tuple's fumbles, its penalty records,
@@ -1660,11 +1703,47 @@ def _resolve_game(
         fumble_sources = []
         used = [0, 0]
         penalty_fd = 0
+        dropped = [0]   # batch B11: records dropped by the last layout fallback
         seg = {"drawn": drawn, "laid": laid, "resample": layout_resample, "start": spot, "window": window,
                "clock": drive_clock, "timeouts_before": tuple(timeouts_before)}
         index = 0
         modified = False
         final = None
+
+        def join_sequence(lay, cut, keep_tail):
+            """Batch B11: append a segment's sequence before its snap `cut` (its
+            snaps before the cut, the penalty rows before them and the clauses
+            on them; its pre-kick rows only with `keep_tail`, when the whole
+            segment stands) to the joined one; returns the kept records'
+            accepted yards."""
+            base_snap, base_ev = len(kinds), len(evs)
+            if lay.get("sequence") is None:
+                # A layout without records (its snaps alone).
+                seq.extend(["s", base_snap + ref] for ref in range(min(cut, len(lay["kinds"]))))
+                return 0
+            last_snap = max((pos for pos, (tag, _) in enumerate(lay["sequence"]) if tag == "s"), default=-1)
+            kept_yards = 0
+            for pos, (tag, ref) in enumerate(lay["sequence"]):
+                if tag == "s":
+                    if ref >= cut:
+                        break
+                    seq.append(["s", base_snap + ref])
+                    for group in lay["attached"].get(ref) or ():
+                        kept_yards += sum(r.yards for r in group.records)
+                    continue
+                if pos > last_snap and not keep_tail:
+                    break
+                seq.append(["p", base_ev + ref])
+                kept_yards += sum(r.yards for r in lay["events"][ref].records)
+            evs.extend(lay["events"])
+            for i_, groups in lay["attached"].items():
+                if i_ < cut:
+                    att[base_snap + i_] = groups
+            return kept_yards
+
+        def joined_layout():
+            return {"sequence": seq, "values": values, "attached": att, "events": evs}
+
         while True:
             sd, lay = seg["drawn"], seg["laid"]["layout"]
             cat, t = sd.category, sd.tuple
@@ -1688,6 +1767,9 @@ def _resolve_game(
                 nonlocal penalty_fd
                 fumble_sources.append((len(kinds), n, fpm.value(t, "fumbles", ()) or (),
                                        fpm.value(t, "pen", ()) or (), n))
+                if pen_on:
+                    join_sequence(lay, n, True)
+                    dropped[0] += seg["laid"].get("dropped", 0)
                 kinds.extend(lay["kinds"])
                 completed.extend(lay["completed"])
                 values.extend(int(v) for v in lay["values"])
@@ -1696,7 +1778,8 @@ def _resolve_game(
                 penalty_fd += chain_walk.penalty_first_downs(real[0], real[1], lay["walk"]["chains"][0])
                 used[0] += charged[0]
                 used[1] += charged[1]
-                summary.update(end="replayed", plays=n, own_seconds=own, net=sum(int(v) for v in lay["values"]),
+                summary.update(end="replayed", plays=n, own_seconds=own,
+                               net=sum(int(v) for v in lay["values"]) + chain_walk.layout_penalty_yards(lay),
                                terminal=cat)
                 segments.append(summary)
                 return {"kind": "replayed", "category": cat, "laid": seg["laid"], "own": own,
@@ -1743,7 +1826,20 @@ def _resolve_game(
                                              clock=shown_clock, overtime=overtime, diff=score_diff,
                                              start_kind=start_kind, snap_index=len(kinds) + shown_i)
                 prepared = ((policy or {}).get("prepared_calls") or {}).get(menu) if menu else None
-                so_far = chain_walk.walk(spot, values + [int(v) for v in lay["values"][:shown_i]])["rows"]
+                if pen_on:
+                    # Batch B11: the joined steps, then the segment's up to the
+                    # shown snap (the rows before it included).
+                    seg_steps, snaps_seen = [], 0
+                    for step in chain_walk.layout_steps(lay):
+                        if step[0] == "s":
+                            if snaps_seen >= shown_i:
+                                break
+                            snaps_seen += 1
+                        seg_steps.append(step)
+                    so_far = chain_walk.walk_steps(
+                        spot, chain_walk.layout_steps(joined_layout()) + seg_steps)["rows"]
+                else:
+                    so_far = chain_walk.walk(spot, values + [int(v) for v in lay["values"][:shown_i]])["rows"]
                 snaps_so_far = [{"down": r["down"], "ydstogo": r["ydstogo"], "yardline_100": r["los"],
                                  "play": PLAY_TEXT.get(k, "complete" if c else "incomplete"), "yards": int(v),
                                  "first_down": bool(r["first_down"])}
@@ -1792,6 +1888,10 @@ def _resolve_game(
             kept = [int(v) for v in lay["values"][:i]]
             fumble_sources.append((len(kinds), i, fpm.value(t, "fumbles", ()) or (),
                                    fpm.value(t, "pen", ()) or (), n))
+            # Batch B11: the records before the decision snap stand (a
+            # pre-kick row after the last snap goes with the replayed kick).
+            kept_pen = join_sequence(lay, i, False) if pen_on else 0
+            dropped[0] += seg["laid"].get("dropped", 0)
             kinds.extend(lay["kinds"][:i])
             completed.extend(lay["completed"][:i])
             values.extend(kept)
@@ -1810,7 +1910,7 @@ def _resolve_game(
                 act = min(int(fpm.kick_length(kick_category)), left)
                 record.update(resolution="model", outcome=decision, terminal=True)
                 records.append(record)
-                summary.update(end="truncated", plays=i, own_seconds=elapsed + act, net=sum(kept),
+                summary.update(end="truncated", plays=i, own_seconds=elapsed + act, net=sum(kept) + kept_pen,
                                terminal=kick_category)
                 segments.append(summary)
                 final = {"kind": "kick", "category": kick_category, "own": elapsed + act, "expiry": 0,
@@ -1846,6 +1946,8 @@ def _resolve_game(
             completed.append(complete)
             values.append(yards)
             stamps.append(decision_clock)
+            if pen_on:
+                seq.append(["s", len(kinds) - 1])
             record.update(resolution="model", conversion=list(pair), p_convert=p_convert, kind=kind, yards=yards)
             if converted and not touchdown:
                 act = max(1, int(round(gap_seconds(w5a_constants, gap_kind(layout_kind, complete), context,
@@ -1854,7 +1956,7 @@ def _resolve_game(
                     # The conversion runs out the window.
                     record.update(outcome="converted", terminal=True)
                     records.append(record)
-                    summary.update(end="truncated", plays=i + 1, own_seconds=elapsed + left, net=sum(kept) + yards,
+                    summary.update(end="truncated", plays=i + 1, own_seconds=elapsed + left, net=sum(kept) + kept_pen + yards,
                                    terminal="clock")
                     segments.append(summary)
                     final = {"kind": "go", "category": "clock", "own": elapsed + left, "expiry": 0,
@@ -1863,7 +1965,7 @@ def _resolve_game(
                     break
                 record.update(outcome="converted", terminal=False)
                 records.append(record)
-                summary.update(end="continued", plays=i + 1, own_seconds=elapsed + act, net=sum(kept) + yards,
+                summary.update(end="continued", plays=i + 1, own_seconds=elapsed + act, net=sum(kept) + kept_pen + yards,
                                terminal=None)
                 segments.append(summary)
                 new_spot, new_window = line - yards, left - act
@@ -1887,7 +1989,7 @@ def _resolve_game(
                 outcome, terminal_category = "failed", "downs"
             record.update(outcome=outcome, terminal=True)
             records.append(record)
-            summary.update(end="truncated", plays=i + 1, own_seconds=elapsed + act, net=sum(kept) + yards,
+            summary.update(end="truncated", plays=i + 1, own_seconds=elapsed + act, net=sum(kept) + kept_pen + yards,
                            terminal=terminal_category)
             segments.append(summary)
             final = {"kind": "go", "category": terminal_category, "own": elapsed + act, "expiry": 0,
@@ -1908,8 +2010,15 @@ def _resolve_game(
         terminal = last_laid["layout"]["terminal"] if replayed else final["terminal"]
         safety_terminal = last_laid["safety_terminal"] if replayed else None
         terminal_value = last_laid["terminal_value"] if replayed else 0
-        walk = chain_walk.walk(spot, values, category in chain_walk.TURNOVER_TERMINALS)
-        net = sum(values)
+        if pen_on:
+            # Batch B11 (ledger-walk-v2): one walk of the joined sequence.
+            joined_seq = joined_layout()
+            walk = chain_walk.walk_steps(spot, chain_walk.layout_steps(joined_seq),
+                                         category in chain_walk.TURNOVER_TERMINALS)
+            net = sum(values) + chain_walk.layout_penalty_yards(joined_seq)
+        else:
+            walk = chain_walk.walk(spot, values, category in chain_walk.TURNOVER_TERMINALS)
+            net = sum(values)
         end_spot = 0 if category == "touchdown" else (100 if category == "safety" else spot - net)
         last = len(kinds) - 1
         safety_run = safety_terminal is not None and safety_terminal[0] == "run"
@@ -1933,6 +2042,10 @@ def _resolve_game(
             "layout": {"ok": True, "terminal": terminal, "kinds": kinds, "completed": completed, "values": values,
                        "walk": walk, "pass_yards": pass_yards, "rush_free": rush_free, "losses": losses},
         }
+        if pen_on:
+            joined_laid["layout"].update(sequence=seq, attached=att, events=evs,
+                                         chain_model=chain_walk.CHAIN_MODEL_V2)
+            joined_laid["dropped"] = dropped[0]
         own_total = sum(seg_["own_seconds"] for seg_ in segments)
         spikes_at = [s_ for k, s_ in zip(kinds, stamps) if k == "spike"]
         return {
@@ -1980,6 +2093,10 @@ def _resolve_game(
             # kicked before fourth down only when the kick is early or a
             # fourth-down layout exists at the spot (FieldPositionModelV3).
             draw_extra["early_fg_v2"] = True
+        if pen_on:
+            # Batch B11 (R11): the static checks count the tuples' replayed
+            # records (FieldPositionModelV3.static_feasible).
+            draw_extra["penalty_records"] = True
 
         # 1-3. Game-state cell, category and a real 2012 drive feasible from
         # the start spot (runtime/field_position.py, possession stream).
@@ -1989,14 +2106,17 @@ def _resolve_game(
         drawn = fpm.draw_drive(rng, spot, draw_half, window, score_diff, edge, diagnostics,
                                           timeouts_before, extra=draw_extra)
 
-        def lay_out(drawn, draw_rng, scratch, start=None, seg_window=None, segment=None):
+        def lay_out(drawn, draw_rng, scratch, start=None, seg_window=None, segment=None, drop_records=False):
             """Steps 4-6b for one drawn drive: its snap counts, the sack
             losses and yard split (on `draw_rng`) and the chain layout (its
             diagnostics in `scratch`, merged only for the adopted drive).
             Kernel 2014.6 batch B9F: a continuation segment of the possession
             is laid out from its own ``start`` spot and ``seg_window`` on its
             own keyed layout stream (``segment``); the drive's first segment
-            reads the possession's spot and window, unchanged."""
+            reads the possession's spot and window, unchanged. Batch B11:
+            ``drop_records`` lays the drive out without its replayed records
+            (their yards stay in the scrimmage split, as before 2014.6), the
+            last fallback of adopt_layout."""
             start = spot if start is None else start
             seg_window = window if seg_window is None else seg_window
             category, row = drawn.category, drawn.tuple
@@ -2015,6 +2135,21 @@ def _resolve_game(
             safety_terminal = None
             if category == "safety":
                 safety_terminal = (row[T["safety_term_kind"]], terminal_value)
+            # Batch B11 (R11): the replayed records and their accepted yards,
+            # which move the ball outside the scrimmage snaps.
+            plan = fpm.penalty_plan(category, row)[0] if pen_on else None
+            dropped = 0
+            if plan is not None and drop_records:
+                dropped = len(plan.records)
+                plan = penalty_records.DrivePlan((), (), plan.post, plan.kick_row, (), 0)
+            pen_yards = plan.yards if plan is not None else 0
+            if plan is not None and (plan.post or plan.kick_row):
+                # Clauses enforced after the possession or on the drive's own
+                # kick row are not replayed (counted; merged for the adopted
+                # drive only).
+                scratch["penalty_post_terminal_excluded"] = \
+                    scratch.get("penalty_post_terminal_excluded", 0) + len(plan.post)
+                scratch["penalty_kick_row_excluded"] = scratch.get("penalty_kick_row_excluded", 0) + len(plan.kick_row)
 
             # 5. Sack losses (possession stream). With no free snap, the sacks
             # carry the drive's yardage: their losses are fitted to the net.
@@ -2028,12 +2163,12 @@ def _resolve_game(
                         sack_losses[big] -= 1
                     scratch["sack_losses_fitted"] = scratch.get("sack_losses_fitted", 0) + 1
             else:
-                required = kneel_sum + terminal_value - net
+                required = kneel_sum + terminal_value - (net - pen_yards)
                 base, extra = divmod(required, open_sacks) if open_sacks else (0, 0)
                 sack_losses = [base + (1 if i < extra else 0) for i in range(open_sacks)]
                 if open_sacks:
                     scratch["sack_losses_fitted"] = scratch.get("sack_losses_fitted", 0) + 1
-            fixed_sum = kneel_sum - sum(sack_losses) + terminal_value
+            fixed_sum = kneel_sum - sum(sack_losses) + terminal_value + pen_yards
             free_total = net - fixed_sum
 
             # 6. Gross passing/rushing yardage over the free snaps.
@@ -2097,11 +2232,11 @@ def _resolve_game(
                 spikes=spikes, pass_yards=pass_yards, rush_free=rush_free, losses=sack_losses,
                 safety_terminal=safety_terminal, net=net, spot=start, completion_rate=completion_rate,
                 targets=list(row[T["chains"]]), term_down=row[T["term_down"]], diagnostics=scratch,
-                usage_values=usage_values, fg_down=fg_down, segment=segment, lost_kind=lost_kind)
+                usage_values=usage_values, fg_down=fg_down, segment=segment, lost_kind=lost_kind, penalty=plan)
             return dict(net=net, end_spot=end_spot, plays=plays, runs=runs, attempts=attempts, sacks=sacks,
                         kneel_yards=kneel_yards, spikes=spikes, td_type=td_type, turnover_type=turnover_type,
                         kneel_sum=kneel_sum, terminal_value=terminal_value, safety_terminal=safety_terminal,
-                        layout=layout)
+                        layout=layout, dropped=dropped)
 
         def adopt_layout(drawn, start, seg_window, segment=None, seg_timeouts=None):
             """(drawn, laid, layout resample) of one drawn drive. When no plan
@@ -2113,47 +2248,88 @@ def _resolve_game(
             drive the original keeps its unconstrained order and the audit
             flags it, as before. Kernel 2014.6 batch B9F: a continuation
             segment uses its own start, window and timeouts and its keyed
-            streams; the first segment is the unchanged path."""
+            streams; the first segment is the unchanged path. Batch B11:
+            before that, a drive whose replayed records admit no legal
+            layout is laid out without them (their yards back in its
+            scrimmage split, as before 2014.6), then a resample of the rung by
+            the record-free gate the same way (``records_dropped``); counted
+            (penalty_layout_dropped, penalty_records_dropped)."""
             seg_timeouts = timeouts_before if seg_timeouts is None else seg_timeouts
             scratch = {}
             laid = lay_out(drawn, rng, scratch, start, seg_window, segment)
             layout_resample = None
             if not laid["layout"]["ok"]:
-                resample_rng = chain_walk.resample_stream(seed, event_id, drive_no, offense, segment=segment)
+                resample_rng = chain_walk.resample_stream(
+                    seed, event_id, drive_no, offense, segment=segment,
+                    tag=chain_walk.CHAIN_LAYOUT_TAG_V2 if pen_on else chain_walk.CHAIN_LAYOUT_TAG)
                 original = drawn
-                tried = [drawn.tuple]
-                for attempt in range(1, LAYOUT_RESAMPLE_LIMIT + 1):
-                    alt = (fpm.resample_drive(resample_rng, original, start, seg_window, exclude=tried,
-                                              timeouts=seg_timeouts, extra=draw_extra) if regimes_v3
-                           else fpm.resample_drive(resample_rng, original, start, seg_window, exclude=tried))
-                    if alt is None:
-                        break
-                    tried.append(alt.tuple)
-                    alt_scratch = {}
-                    candidate = lay_out(alt, resample_rng, alt_scratch, start, seg_window, segment)
+
+                def record_of(alt, attempt):
+                    out = {
+                        "resamples": attempt,
+                        "pool": list(original.pool_id) if original.pool_id else None,
+                        "original": {"locator": fpm.tuple_locator(original.category, original.tuple),
+                                     "tuple": list(original.tuple[:5])},
+                        "final": {"locator": fpm.tuple_locator(alt.category, alt.tuple),
+                                  "tuple": list(alt.tuple[:5])},
+                    }
+                    if original.match_width is not None:
+                        # Kernel 2014.6 (append-only): the R17 time-match width.
+                        out["match_width"] = original.match_width
+                    if regimes_v3 and (alt.pool_id != original.pool_id or alt.match_width != original.match_width):
+                        # Kernel 2014.6 (append-only): the wider pool the
+                        # resample drew from (FieldPositionModelV3._resample_rungs).
+                        out["final_pool"] = list(alt.pool_id)
+                        out["final_match_width"] = alt.match_width
+                        diagnostics["chain_layout_resample_widened"] = \
+                            diagnostics.get("chain_layout_resample_widened", 0) + 1
+                    return out
+
+                def resample(extra, drop_records=False):
+                    """The first alternative of the rung (on the drive's
+                    layout-resample stream) whose layout is legal."""
+                    tried = [original.tuple]
+                    for attempt in range(1, LAYOUT_RESAMPLE_LIMIT + 1):
+                        alt = (fpm.resample_drive(resample_rng, original, start, seg_window, exclude=tried,
+                                                  timeouts=seg_timeouts, extra=extra) if regimes_v3
+                               else fpm.resample_drive(resample_rng, original, start, seg_window, exclude=tried))
+                        if alt is None:
+                            return None
+                        tried.append(alt.tuple)
+                        alt_scratch = {}
+                        candidate = lay_out(alt, resample_rng, alt_scratch, start, seg_window, segment,
+                                            drop_records=drop_records)
+                        if candidate["layout"]["ok"]:
+                            return alt, candidate, alt_scratch, attempt
+                    return None
+
+                found = resample(draw_extra)
+                if found is not None:
+                    drawn, laid, scratch, attempt = found
+                    layout_resample = record_of(drawn, attempt)
+                    diagnostics["chain_layout_resampled"] += 1
+                elif pen_on and fpm.penalty_plan(original.category, original.tuple)[0].records:
+                    # Batch B11, the last fallbacks: the drawn drive without
+                    # its replayed records (their yards back in its scrimmage
+                    # split, as before 2014.6), then a resample of the rung by
+                    # the record-free gate laid out the same way; on the same
+                    # layout-resample stream, counted.
+                    drop_scratch = {}
+                    candidate = lay_out(original, resample_rng, drop_scratch, start, seg_window, segment,
+                                        drop_records=True)
                     if candidate["layout"]["ok"]:
-                        drawn, laid, scratch = alt, candidate, alt_scratch
-                        layout_resample = {
-                            "resamples": attempt,
-                            "pool": list(original.pool_id) if original.pool_id else None,
-                            "original": {"locator": fpm.tuple_locator(original.category, original.tuple),
-                                         "tuple": list(original.tuple[:5])},
-                            "final": {"locator": fpm.tuple_locator(alt.category, alt.tuple),
-                                      "tuple": list(alt.tuple[:5])},
-                        }
-                        if original.match_width is not None:
-                            # Kernel 2014.6 (append-only): the R17 time-match width.
-                            layout_resample["match_width"] = original.match_width
-                        if regimes_v3 and (alt.pool_id != original.pool_id or alt.match_width != original.match_width):
-                            # Kernel 2014.6 (append-only): the wider pool the
-                            # resample drew from (FieldPositionModelV3._resample_rungs).
-                            layout_resample["final_pool"] = list(alt.pool_id)
-                            layout_resample["final_match_width"] = alt.match_width
-                            diagnostics["chain_layout_resample_widened"] = \
-                                diagnostics.get("chain_layout_resample_widened", 0) + 1
-                        diagnostics["chain_layout_resampled"] += 1
-                        break
-                if layout_resample is None:
+                        drawn, laid, scratch = original, candidate, drop_scratch
+                    else:
+                        found = resample(dict(draw_extra, penalty_records=False), drop_records=True)
+                        if found is not None:
+                            drawn, laid, scratch, attempt = found
+                            layout_resample = dict(record_of(drawn, attempt), records_dropped=laid["dropped"])
+                            diagnostics["chain_layout_resampled"] += 1
+                    if laid["layout"]["ok"]:
+                        diagnostics["penalty_records_dropped"] = (diagnostics.get("penalty_records_dropped", 0)
+                                                                  + laid["dropped"])
+                        diagnostics["penalty_layout_dropped"] = diagnostics.get("penalty_layout_dropped", 0) + 1
+                if layout_resample is None and not laid["layout"]["ok"]:
                     diagnostics["chain_layout_resample_exhausted"] += 1
             for name, count in scratch.items():
                 diagnostics[name] = diagnostics.get(name, 0) + count
@@ -2190,7 +2366,11 @@ def _resolve_game(
         kneel_sum, terminal_value, safety_terminal, layout = laid["kneel_sum"], laid["terminal_value"], laid["safety_terminal"], laid["layout"]
         pass_yards, rush_free, sack_losses = layout["pass_yards"], layout["rush_free"], layout["losses"]
         walked = layout["walk"]["chains"]
-        if modified:
+        if pen_on:
+            # Batch B11 (ledger-walk-v2): the penalty first downs are walked
+            # from the replayed records like the scrimmage ones.
+            chains = [walked[0], layout["walk"]["penalty_first_downs"], walked[1], walked[2], walked[3], walked[4]]
+        elif modified:
             # Each segment's penalty first downs against its kept snaps (the
             # resolved snaps carry none; chains.penalty_first_downs).
             chains = [walked[0], joined["penalty_first_downs"], walked[1], walked[2], walked[3], walked[4]]
@@ -2208,10 +2388,13 @@ def _resolve_game(
         s["rushing_yards"] += rush_yards
         s["sacks_allowed"] += sacks
 
-        # 7. Penalties (counters only) and the drive's chains.
-        pens = sum(rng.random() < penalty_per_play for _ in range(plays))
-        s["penalties"] += pens
-        s["penalty_yards"] += pens * rng.randint(5, 10) if pens else 0
+        # 7. Penalties and the drive's chains. Batch B11 (R11): the replayed
+        # records are charged to the fouling club when the drive's rows are
+        # published (runtime.play_detail); no counter is drawn.
+        if not pen_on:
+            pens = sum(rng.random() < penalty_per_play for _ in range(plays))
+            s["penalties"] += pens
+            s["penalty_yards"] += pens * rng.randint(5, 10) if pens else 0
         s["first_downs"] += chains[0] + chains[1]
         s["third_down_attempts"] += chains[2]
         s["third_down_conversions"] += chains[3]
@@ -2490,7 +2673,8 @@ def _resolve_game(
             # Kernel 2014.4: the ledger's own state before the kick (after the
             # last scrimmage snap) or, on downs, before the failed fourth-down
             # snap (its line of scrimmage, not the spot where it ended).
-            state = chain_walk.terminal_state(category, spot, layout["values"])
+            state = (chain_walk.terminal_state_steps(category, spot, chain_walk.layout_steps(layout)) if pen_on
+                     else chain_walk.terminal_state(category, spot, layout["values"]))
             fourth_down = {
                 "down": state["down"],
                 "ydstogo": state["ydstogo"],
@@ -2577,6 +2761,7 @@ def _resolve_game(
             clock_plan=joined["clock_plan"] if modified else None,
             snap_calls=joined["snap_calls"] if modified else None,
             fumble_plan=fumble_plan,
+            penalty_detail={"model": pmodel} if pen_on else None,
         )
         chain_walk.annotate(drive_ledger, layout["walk"], fourth_down)
         if joined is not None and joined["records"]:
@@ -2705,8 +2890,9 @@ def _resolve_game(
             # Kernel 2014.4 (append-only): the drive's passer.
             "passer": passer.player_id,
             # Kernel 2014.4 (append-only): chains and fourth_down are walked
-            # from this drive's own snap ledger (runtime/chains.py).
-            "chain_model": chain_walk.CHAIN_MODEL,
+            # from this drive's own snap ledger (runtime/chains.py); batch B11
+            # walks its penalty rows and clauses too (ledger-walk-v2).
+            "chain_model": chain_walk.CHAIN_MODEL_V2 if pen_on else chain_walk.CHAIN_MODEL,
         }
         if off_notes or def_notes:
             record["emergency"] = off_notes + def_notes
@@ -2751,6 +2937,20 @@ def _resolve_game(
                                  for index, r in enumerate(scrim_rows) if isinstance(r.get("fumble"), dict)]
         if layout_resample is not None:
             record["layout_resample"] = layout_resample
+        if pen_on:
+            # Batch B11 (append-only): the possession's replayed records in
+            # compact form (per fouling club, the net accepted yards, the first
+            # downs by penalty), so a compact receipt reconciles them; its
+            # punt's clauses ride on its punt summary.
+            entries = [e for r in drive_ledger if r.get("play_type") not in ("punt",)
+                       for e in (r.get("penalties") or ())]
+            record["pen"] = penalty_records.summary_of(entries, offense)
+            if laid.get("dropped"):
+                # The records the last layout fallback dropped (adopt_layout).
+                record["pen"]["dropped"] = laid["dropped"]
+            if punt_record is not None and "punt" in record:
+                punt_row = next((r for r in drive_ledger if r.get("play_type") == "punt"), None)
+                record["punt"]["pen"] = penalty_records.summary_of((punt_row or {}).get("penalties") or (), offense)
         if fourth_on:
             # Batch B9F (append-only): every fourth-down decision of the
             # possession, and for a possession a decision changed, its
@@ -3006,6 +3206,10 @@ def _resolve_game(
         # game (the audit and band rows read the marker).
         result["ball_security"] = {"model": ball_security.MODEL, "credit": True, "terminal_kind": bs_terminal,
                                    "retained_kicks": retained_v1}
+    if pen_on:
+        # Batch B11 (append-only): the penalty records resolved the game (the
+        # audit and band rows read the marker).
+        result["penalties"] = {"model": penalty_records.MODEL, "chain_model": chain_walk.CHAIN_MODEL_V2}
     blocks = {team.team_id: {kind: json.loads(json.dumps(getattr(team, field)))
                              for field, kind in (("try_policy", "two_point"), ("kickoff_policy", "kickoff"),
                                                  ("fourth_down_policy", "fourth_down"))
@@ -3033,7 +3237,8 @@ def removal_names(row):
     club (the row's defense) unless the kicking club recovered; a scrimmage
     fumble's fumbler is the offense's and its forcer the defense's; a
     recoverer is the recovering club's; an onside kick's recoverer the club
-    that recovered; a blocked kick's scorer the defense's."""
+    that recovered; a blocked kick's scorer the defense's; (batch B11) a
+    replayed penalty record's fouler the fouling club's."""
     for field, side in REMOVAL_FIELDS:
         pid = row.get(field)
         if pid:
@@ -3056,6 +3261,9 @@ def removal_names(row):
             row["recovered_by"]
     if row.get("blocked") and row.get("scorer"):
         yield row.get("defense"), row["scorer"]
+    for entry in row.get("penalties") or ():
+        if isinstance(entry, dict) and entry.get("fouler"):
+            yield entry.get("team"), entry["fouler"]
 
 
 def validate_result(result, base=None):

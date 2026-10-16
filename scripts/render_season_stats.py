@@ -13,7 +13,7 @@ if str(ROOT) not in sys.path:
 
 from runtime.bands import (
     KERNEL_2013_6_LABEL, KNOWN_DETECTION_BOUND, LEGACY_LABEL, audit, audit_drive_model, audit_field_position,
-    audit_ball_security, audit_fourth_down, audit_injuries, audit_scoring, coherence, cohorts, current_cohorts, known_detections, known_status, provisional_detections,
+    audit_ball_security, audit_fourth_down, audit_penalties, audit_injuries, audit_scoring, coherence, cohorts, current_cohorts, known_detections, known_status, provisional_detections,
 )
 from runtime.calibration_base import cohort_base
 from runtime.stat_tables import (
@@ -256,6 +256,32 @@ def field_position_rows(receipts):
     return clubs
 
 
+def penalty_split(receipts):
+    """Kernel 2014.6 batch B11: each club's penalty counters split by
+    definition. A receipt with the penalty-records marker charges the fouling
+    club's accepted replayed records ("records": games, accepted, yards,
+    declined, offsetting, first downs by penalty); any other receipt carries
+    the earlier counter, one draw per scrimmage play charged to the offense
+    ("counter": games, penalties, yards). None when no receipt carries the
+    marker (every earlier view is unchanged)."""
+    receipts = list(receipts)
+    if not any(isinstance(r.get("penalties"), dict) for r in receipts):
+        return None
+    out = {}
+    for receipt in receipts:
+        records = isinstance(receipt.get("penalties"), dict)
+        for team_id, s in receipt.get("team_stats", {}).items():
+            row = out.setdefault(team_id, {"counter": [0, 0, 0], "records": [0, 0, 0, 0, 0, 0]})
+            if records:
+                values = (1, s.get("penalties", 0), s.get("penalty_yards", 0), s.get("penalties_declined", 0),
+                          s.get("penalties_offsetting", 0), s.get("penalty_first_downs", 0))
+                row["records"] = [a + b for a, b in zip(row["records"], values)]
+            else:
+                values = (1, s.get("penalties", 0), s.get("penalty_yards", 0))
+                row["counter"] = [a + b for a, b in zip(row["counter"], values)]
+    return out
+
+
 def team_stats_markdown(year, book, receipts=()):
     lines = header(
         "%s NFL team statistics" % year,
@@ -276,18 +302,31 @@ def team_stats_markdown(year, book, receipts=()):
     def third_pct(stats):
         return pct(stats["third_down_conversions"], stats["third_down_attempts"])
 
-    lines += ["## Offense", "",
-              "| Team | G | PTS/G | YDS/G | PLAYS/G | Y/P | PASS/G | RUSH/G | 1D/G | 3RD | 3RD% | GIVE | SCK | PEN/G | PEN YDS/G | TOP/G |",
+    split = penalty_split(receipts)
+    lines += ["## Offense", ""]
+    if split is not None:
+        # Kernel 2014.6 batch B11: the season's penalty counters have two
+        # definitions; PEN/G and PEN YDS/G here are the earlier counter's
+        # games only, and the records' games have their own table below.
+        lines += ["PEN/G and PEN YDS/G count only games closed before the penalty records (one draw per "
+                  "scrimmage play, charged to the offense), per such game; games with the penalty records "
+                  "are in the penalty table below. No combined penalty figure or rank is published.", ""]
+    lines += ["| Team | G | PTS/G | YDS/G | PLAYS/G | Y/P | PASS/G | RUSH/G | 1D/G | 3RD | 3RD% | GIVE | SCK | PEN/G | PEN YDS/G | TOP/G |",
               "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
     offense = []
     for team_id, data in clubs:
         n, t = data["games"], data["team_stats"]
         yards = t["passing_yards"] + t["rushing_yards"]
+        if split is None:
+            pen, pen_yards = per(t["penalties"], n), per(t["penalty_yards"], n)
+        else:
+            games, count, total = split.get(team_id, {"counter": [0, 0, 0]})["counter"]
+            pen, pen_yards = (per(count, games), per(total, games)) if games else ("—", "—")
         offense.append((-yards / n, team_id, (
             team_id, n, per(t["points"], n), per(yards, n), per(data["plays"], n),
             avg(yards, data["plays"]), per(t["passing_yards"], n), per(t["rushing_yards"], n),
             per(t["first_downs"], n), third(t), third_pct(t), t["turnovers"], t["sacks_allowed"],
-            per(t["penalties"], n), per(t["penalty_yards"], n), time_text(t["time_of_possession"] / n))))
+            pen, pen_yards, time_text(t["time_of_possession"] / n))))
     for _, _, row in sorted(offense):
         lines.append("| " + " | ".join(str(v) for v in row) + " |")
 
@@ -383,6 +422,26 @@ def team_stats_markdown(year, book, receipts=()):
             lines.append("| " + " | ".join(str(v) for v in (
                 team_id, data["kernel_2014_6_games"], t.get("fumbles", 0), t.get("fumbles_lost", 0),
                 t.get("muffs", 0), t.get("kicking_team_recoveries", 0))) + " |")
+        lines.append("")
+
+    if split is not None:
+        # Kernel 2014.6 batch B11 (R11): counted only from games with the
+        # penalty records; split by definition, never combined.
+        rows = [(team_id, row["records"]) for team_id, row in sorted(split.items()) if row["records"][0]]
+        lines += ["## Penalties — kernel 2014.6 games with penalty records", "",
+                  "Counted only from games closed with the penalty records; G counts those games only. Each "
+                  "accepted foul is charged to the fouling club (PEN, PEN YDS); DECL and OFFS count its declined "
+                  "and offsetting fouls; 1D PEN counts the club's own first downs by penalty. The fouls are "
+                  "the replayed real drives' own records; who fouled is a group draw, never evidence, and an "
+                  "accept or decline is the real record's, never a coaching choice. Earlier games charged a "
+                  "drawn count to the offense, so the two definitions are never added and no penalty rank is "
+                  "published.", "",
+                  "| Team | G | PEN | PEN YDS | PEN/G | PEN YDS/G | DECL | OFFS | 1D PEN |",
+                  "|---|---:|---:|---:|---:|---:|---:|---:|---:|"]
+        for team_id, (games, count, total, declined, offsetting, first_downs) in rows:
+            lines.append("| " + " | ".join(str(v) for v in (
+                team_id, games, count, total, per(count, games), per(total, games), declined, offsetting,
+                first_downs)) + " |")
         lines.append("")
 
     spots = field_position_rows(receipts)
@@ -519,6 +578,7 @@ def _base_cohort_lines(version, members, empty):
     scoring_games, scoring_rows = audit_scoring(members, cohort=version)
     fourth_games, fourth_rows = audit_fourth_down(members, cohort=version)
     ball_games, ball_rows = audit_ball_security(members, cohort=version)
+    penalty_games, penalty_rows = audit_penalties(members, cohort=version)
     checked, counts = coherence(members, cohort=version)
     sources = ", ".join("`%s`" % pin.path for role, pin in base.files if role != "specification")
     scoring = [
@@ -544,6 +604,15 @@ def _base_cohort_lines(version, members, empty):
         "INSUFFICIENT SAMPLE below 30 events. Who fumbled, forced, recovered or muffed is a group draw "
         "or a replayed record, never evidence of a player's ball security.", "",
     ] + _band_table(ball_rows, centre_label=label) + [""] if ball_rows else []
+    penalty = [
+        "### Penalty rows", "",
+        "Replayed penalty records (kernel 2014.6 batch B11). Centres from the base's penalty artifact, in the "
+        "engine's scope (the replayed drives' records and the kick plays' records; records enforced after a "
+        "possession or on a field-goal row are not replayed). Accepted penalties use 3*sqrt(phi*c/n) with the "
+        "artifact's team-game dispersion, penalty yards 3*SD/sqrt(n) and first downs by penalty 3*sqrt(c/n). "
+        "Each accepted foul is charged to the fouling club; who fouled is a group draw, never evidence, and an "
+        "accept or decline is the real record's. The net-yards row is reported, never tuned.", "",
+    ] + _band_table(penalty_rows, centre_label=label) + [""] if penalty_rows else []
     return [
         "## Kernel %s cohort (%s)" % (version, _week_span(members, empty)), "",
         "**Calibration base:** %s (%s). **Team-games audited:** %d. Carry shares exclude "
@@ -564,7 +633,7 @@ def _base_cohort_lines(version, members, empty):
         "The injury calibration's acceptance bands (kernel 2014.4 method): WITHIN when the "
         "observed value lies inside the band; the centre column is the band midpoint and the "
         "tolerance its half-width.", "",
-    ] + _band_table(injury_rows, centre_label="band midpoint") + [""] + scoring + fourth + ball + [
+    ] + _band_table(injury_rows, centre_label="band midpoint") + [""] + scoring + fourth + ball + penalty + [
         "### Ledger coherence", "",
         "Zero-tolerance counts from `runtime.play_detail.check_ledger`, checked with this "
         "base's rules. Games checked: %d." % checked, "",

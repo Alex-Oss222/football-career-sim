@@ -74,10 +74,12 @@ def clean(result):
 # Synthetic labels that reach each branch under PROFILE_2014_6 (found by a
 # search over the same label pattern; each test fails loudly if its label no
 # longer reaches the branch).
-OT_REGULAR = "b10-ot-19"
-OT_POSTSEASON = "b10-ot-8"
-OT_PUNT = "b10-otp-23"
-PRO_BOWL = "b10-pb-21"
+# Re-searched for batch B11 (the penalty records move every later result):
+# each is the first label of the same pattern that reaches the branch.
+OT_REGULAR = "b10-ot-1"
+OT_POSTSEASON = "b10-ot-91"
+OT_PUNT = "b10-otp-16"
+PRO_BOWL = "b10-pb-9"
 
 
 def _club(result, pid):
@@ -672,10 +674,14 @@ class RetainedKickTests(unittest.TestCase):
 
 class RecordsTests(unittest.TestCase):
     def test_field_groups(self):
-        self.assertEqual(KERNEL_2014_6_TEAM_STAT_FIELDS[-4:], play_detail.BALL_SECURITY_TEAM_FIELDS)
-        self.assertEqual(KERNEL_2014_6_PLAYER_FIELDS[-2:], play_detail.FUMBLE_COUNTERS)
-        self.assertEqual(play_detail.DRIVE_SUMMARY_FIELDS[-1], "fumbles")
-        self.assertEqual(play_detail.KICK_SUMMARY_FIELDS[-1], "fumble")
+        # Batch B10's counters and summary slots, in place (batch B11 appends
+        # after them).
+        self.assertEqual(KERNEL_2014_6_TEAM_STAT_FIELDS[6:10], play_detail.BALL_SECURITY_TEAM_FIELDS)
+        self.assertEqual(KERNEL_2014_6_PLAYER_FIELDS[8:10], play_detail.FUMBLE_COUNTERS)
+        fields = play_detail.DRIVE_SUMMARY_FIELDS
+        self.assertEqual(fields.index("fumbles"), fields.index("segments") + 1)
+        kick_fields = play_detail.KICK_SUMMARY_FIELDS
+        self.assertEqual(kick_fields.index("fumble"), kick_fields.index("return_yards") + 1)
 
     def test_profile_2014_5_carries_none(self):
         r = play("b10-old", profile=PROFILE_2014_5)

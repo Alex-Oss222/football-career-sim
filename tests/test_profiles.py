@@ -120,7 +120,9 @@ class ProfileTableTests(unittest.TestCase):
                                                           "fourth_down_decisions",
                                                           # batch B10 (W4, R12 layers A, B and C)
                                                           "ball_security_credit", "fumble_terminal_kind",
-                                                          "retained_kicks"}))
+                                                          "retained_kicks",
+                                                          # batch B11 (R11 penalty records)
+                                                          "penalty_records"}))
         a, b = sample_teams()
         r = resolve_game(a, b, seed=SEED + b"-b5-2014-6", event_id="b5-2014-6", _test_profile=PROFILE_2014_6)
         self.assertEqual(r["kernel_version"], "2014.6")
@@ -232,27 +234,29 @@ class StripFieldGroupTests(unittest.TestCase):
                          {"result", "possession", "ledger", "team", "player", "fourth_down", "kickoff", "punt"})
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["result"],
                          ("calibration_base", "substitutions", "kicks", "scoring_events", "decision_policies",
-                          "ball_security"))
+                          "ball_security", "penalties"))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["possession"],
                          ("last_spike_seconds_left", "non_offensive_score", "try", "fourth_downs", "segments",
-                          "fumbles"))
+                          "fumbles", "pen"))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["kickoff"],
                          ("remaining", "chain", "after_drive", "basis", "touchdown", "scoring_team", "xp_made", "points",
-                          "onside", "cell", "p_onside", "recovery_class", "p_recover", "try", "fumble"))
+                          "onside", "cell", "p_onside", "recovery_class", "p_recover", "try", "fumble", "pen"))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["ledger"],
                          ("decision_source", "anchor", "scoring_team", "decision", "basis", "cell", "p_go", "points",
                           "onside", "recovered_by", "blocked", "scorer", "attribution", "fourth_down_decision",
-                          "fumble", "muffed_by", "own_recovery_yards"))
-        self.assertEqual(KERNEL_2014_6_FIELD_GROUP["punt"], ("fumble",))
+                          "fumble", "muffed_by", "own_recovery_yards", "penalties", "penalty_enforcement",
+                          "penalty_yards", "untimed"))
+        self.assertEqual(KERNEL_2014_6_FIELD_GROUP["punt"], ("fumble", "pen"))
         self.assertEqual(KERNEL_2014_6_TEAM_STAT_FIELDS,
                          ("two_point_attempts", "two_point_conversions", "defensive_touchdowns",
                           "special_teams_touchdowns", "onside_kicks", "onside_recoveries",
-                          "fumbles", "fumbles_lost", "muffs", "kicking_team_recoveries"))
+                          "fumbles", "fumbles_lost", "muffs", "kicking_team_recoveries",
+                          "penalties_declined", "penalties_offsetting", "penalty_first_downs"))
         self.assertEqual(KERNEL_2014_6_PLAYER_FIELDS,
                          ("passing_two_point_conversions", "receiving_two_point_conversions",
                           "rushing_two_point_conversions", "interception_return_touchdowns",
                           "fumble_return_touchdowns", "punt_return_touchdowns", "kick_return_touchdowns",
-                          "blocked_kick_touchdowns", "muffs", "fumbles_recovered_own"))
+                          "blocked_kick_touchdowns", "muffs", "fumbles_recovered_own", "penalties", "penalty_yards"))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["fourth_down"], ("decision_source",))
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["team"], KERNEL_2014_6_TEAM_STAT_FIELDS)
         self.assertEqual(KERNEL_2014_6_FIELD_GROUP["player"], KERNEL_2014_6_PLAYER_FIELDS)

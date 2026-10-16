@@ -167,7 +167,12 @@ DIAGNOSTICS = ("chain_layout_failed", "chain_layout_resampled", "chain_layout_re
                # exclusion
                "kept_fumble_unseated", "kept_fumble_kind_fallback", "kept_fumble_cut", "fumble_terminal_fallback",
                "lost_fumble_entry_synthesized", "forced_fumble_tackle_moved", "ot_punt_retained_excluded",
-               "ot_punt_retained_records_excluded", "retained_kick_without_fumble", "lost_fumble_entry_unused")
+               "ot_punt_retained_records_excluded", "retained_kick_without_fumble", "lost_fumble_entry_unused",
+               # batch B11: the records left out of the replay, the hosts
+               # found by fallback, and the layouts laid out without their
+               # records (the last fallback)
+               "penalty_post_terminal_excluded", "penalty_kick_row_excluded", "penalty_host_fallback",
+               "penalty_layout_dropped", "penalty_records_dropped", "penalty_row_unseated")
 
 
 def entropy(label):
@@ -764,7 +769,9 @@ def grade(receipts, version, provisional=True):
                      # Batch B9F: the fourth-down rows.
                      ("fourth_down", bands.audit_fourth_down),
                      # Batch B10: the ball-security rows.
-                     ("ball_security", bands.audit_ball_security)):
+                     ("ball_security", bands.audit_ball_security),
+                     # Batch B11: the penalty rows.
+                     ("penalties", bands.audit_penalties)):
         team_games, rows = fn(receipts, cohort=version)
         out[name] = {"team_games": team_games,
                      "rows": [[m, o, c, t, bands.known_status((m, o, c, t, s), version, provisional)]

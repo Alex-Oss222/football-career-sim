@@ -19,6 +19,7 @@ from . import call_families
 from . import call_situations
 from . import chains as chain_walk
 from . import participation
+from . import penalties as penalty_records
 from . import usage
 from .player_evidence import choose
 
@@ -883,9 +884,11 @@ def _layout(rng, category, terminal, runs, attempts, sacks, kneel_yards, spikes,
 
 def _clock_runs_after(row):
     """True when the game clock keeps running after this snap: a run, a sack
-    or a completed pass. An incompletion or a spike stops it."""
+    or a completed pass. An incompletion or a spike stops it. Kernel 2014.6
+    batch B11: the one clock rule of runtime.chains._runs_clock (which also
+    stops the clock after an accepted foul, for the penalty-aware search)."""
     kind, completed, _ = row
-    return kind in ("run", "sack") or (kind in ("att", "catch") and completed)
+    return chain_walk._runs_clock(kind, completed)
 
 
 def _seat_spikes(rows, movable):
@@ -1262,6 +1265,7 @@ def apply_drive_detail(
     clock_plan=None,
     snap_calls=None,
     fumble_plan=None,
+    penalty_detail=None,
 ):
     """Allocate one resolved drive into reconciled player/snap public detail.
 
@@ -1334,6 +1338,18 @@ def apply_drive_detail(
     credited from the punt play's units (credit_kick_fumble, stream
     ("punt", drive)). The snap-detail stream is untouched on a drive without
     a fumble; on a lost fumble's terminal snap it draws no defender.
+
+    Kernel 2014.6 (batch B11, R11; profile flag penalty_records):
+    `penalty_detail` {"model": the base's PenaltyModel} publishes the
+    layout's replayed records (layout "sequence", "attached", "events", its
+    v2 walk): each no-play or pre-kick row becomes a ``penalty`` ledger row
+    (its down and distance before it, its records, untimed: stamped with the
+    clock of the play that follows), each counted snap's clauses its
+    ``penalties`` list, and the punt row the punt record's own clauses. Every
+    record's fouler is a group draw on the keyed public-penalty-detail-v1
+    stream ("drive", n) or ("punt", n) (runtime.penalties); team counters go
+    to the fouling club, first downs by penalty to the offense. No other
+    stream is read or advanced.
     """
     from .calibration_base import BASE_2012
     from .calibration import kernel_rates
@@ -1456,6 +1472,11 @@ def apply_drive_detail(
         record["tackler"] = defender.player_id
 
     running = 0
+    # Batch B11 (ledger-walk-v2): a snap's line of scrimmage is the walk's,
+    # after the records seated before it.
+    walk_spots = ([state["los"] for state in layout["walk"]["rows"]]
+                  if penalty_detail is not None and layout is not None and layout.get("sequence") is not None
+                  else None)
     for index in range(plays):
         snap_no = index + 1
         remaining = stamps[index] if stamps is not None else int(start_clock) - round(own * snap_no / plays)
@@ -1474,7 +1495,7 @@ def apply_drive_detail(
             "offense": team.team_id,
             "defense": defense.team_id,
             "play_type": "pass" if is_pass else "run",
-            "yardline": spot - running,
+            "yardline": walk_spots[index] if walk_spots is not None else spot - running,
             "passer": None,
             "runner": None,
             "target": None,
@@ -1811,7 +1832,115 @@ def apply_drive_detail(
                                   terminal, category, remaining_at, kick_stamp, stamps, timeouts_used,
                                   _clock_rng(seed, event_id=event_id, drive_no=drive_no, offense=team.team_id),
                                   start_clock, end_clock, overtime, pro_bowl, game_ledger, diagnostics)
+    if penalty_detail is not None:
+        ledger = _seat_penalty_rows(ledger, plays, layout, penalty_detail["model"], team, defense, drive_no,
+                                    available, defenders, qb, front, offense_stats, defense_stats, seed, event_id,
+                                    punt_record, overtime, diagnostics)
     return ledger, call_stats
+
+
+def _seat_penalty_rows(ledger, plays, layout, model, team, defense, drive_no, available, defenders, qb, front,
+                       offense_stats, defense_stats, seed, event_id, punt_record, overtime, diagnostics):
+    """Batch B11 (R11): the drive's replayed records on its ledger rows
+    (apply_drive_detail docstring). A no-play or pre-kick row is seated just
+    before the play that follows it (after any timeout or two-minute-warning
+    row seated before that play) and takes that play's clock; a record's
+    first-down flag is the walk's."""
+    offense_id, defense_id = team.team_id, defense.team_id
+    stats = {offense_id: offense_stats, defense_id: defense_stats}
+    walk = layout["walk"]
+    steps = walk.get("steps") or []
+    events = layout.get("events") or ()
+    attached = layout.get("attached") or {}
+    rng = penalty_records.stream(seed, event_id, "drive", drive_no)
+    lineup = participation.slot_lineup(available, defenders, qb, front)
+    on_field = {"offense": _unique_players(s["player"] for s in lineup["offense"]),
+                "defense": _unique_players(s["player"] for s in lineup["defense"])}
+    snap_rows = [r for r in ledger if r.get("play_type") in ("pass", "run")][:plays]
+    first_downs = 0
+    seats = []   # (snaps before, row) for each penalty row, in sequence order
+    snaps_seen = 0
+    for k, (tag, ref) in enumerate(layout.get("sequence") or ()):
+        step = steps[k] if k < len(steps) else {}
+        if tag == "s":
+            groups = attached.get(ref) or []
+            records = [r for g in groups for r in g.records]
+            if records:
+                _, _, pick = penalty_records.compiled(records)
+                entries = []
+                for i, rec in enumerate(records):
+                    entry = penalty_records.published(
+                        rec, offense=offense_id, defense=defense_id, enforcement=penalty_records.AFTER_SNAP,
+                        first_down=bool(step.get("penalty_first_down")) and i == pick)
+                    penalty_records.name_fouler(rng, model, entry, on_field[entry["penalty_side"]])
+                    penalty_records.charge(entry, stats)
+                    entries.append(entry)
+                first_downs += bool(step.get("penalty_first_down"))
+                snap_rows[ref]["penalties"] = entries
+            snaps_seen += 1
+            continue
+        event = events[ref]
+        records = list(event.records)
+        _, _, pick = penalty_records.compiled(records)
+        # A row after the drive's last snap is pre-kick by its place in the
+        # laid-out drive (plan B11), whatever its place in the real one.
+        enforcement = penalty_records.PRE_KICK if snaps_seen >= plays else penalty_records.NO_PLAY
+        entries = []
+        for i, rec in enumerate(records):
+            entry = penalty_records.published(rec, offense=offense_id, defense=defense_id, enforcement=enforcement,
+                                              first_down=bool(step.get("penalty_first_down")) and i == pick)
+            penalty_records.name_fouler(rng, model, entry, on_field[entry["penalty_side"]])
+            penalty_records.charge(entry, stats)
+            entries.append(entry)
+        first_downs += bool(step.get("penalty_first_down"))
+        row = {"drive": drive_no, "snap_in_drive": snaps_seen, "offense": offense_id, "defense": defense_id,
+               "play_type": penalty_records.PENALTY_ROW, "penalty_enforcement": enforcement,
+               "down": step.get("down"), "ydstogo": step.get("ydstogo"), "goal_to_go": step.get("goal_to_go"),
+               "yardline": step.get("los"), "penalties": entries,
+               "penalty_yards": sum(e["penalty_yards"] for e in entries if e["status"] == "accepted"),
+               "first_down": bool(step.get("penalty_first_down")), "result_yards": 0, "touchdown": False,
+               "turnover": False, "untimed": True, "decision_source": penalty_records.DECISION_SOURCE}
+        seats.append((snaps_seen, row))
+    if "penalty_first_downs" in offense_stats:
+        offense_stats["penalty_first_downs"] += first_downs
+    # The punt row carries the punt record's own clauses (already in its start).
+    punt_row = next((r for r in ledger if r.get("play_type") == "punt"), None)
+    if punt_row is not None and punt_record is not None and punt_record.get("pen"):
+        prng = penalty_records.stream(seed, event_id, "punt", drive_no)
+        units = participation.kick(punt_row, offense_id, defense_id, available, defenders)
+        entries = penalty_records.kick_records(model, punt_record["pen"], kicking=offense_id, receiving=defense_id)
+        for entry in entries:
+            penalty_records.name_kick_fouler(prng, entry, units.get(entry["team"]) or ())
+            penalty_records.charge(entry, stats)
+        punt_row["penalties"] = entries
+    if not seats:
+        return ledger
+    out = []
+    pending = list(seats)
+    snap_index = 0
+
+    def seat(prow, before):
+        prow["period"], prow["game_clock"] = before.get("period"), before.get("game_clock")
+        out.append(prow)
+
+    for row in ledger:
+        kind = row.get("play_type")
+        if kind in ("pass", "run"):
+            # The rows due before this snap, after the timeout or warning rows
+            # already seated before it.
+            while pending and pending[0][0] <= snap_index:
+                seat(pending.pop(0)[1], row)
+            snap_index += 1
+        elif kind in ("punt", "field_goal", "possession_end", "extra_point", "safety"):
+            # Pre-kick rows: after the last snap, before the kick or the end.
+            while pending:
+                seat(pending.pop(0)[1], row)
+        out.append(row)
+    for _, prow in pending:
+        # Nothing follows (a defensive guard): the last row's clock.
+        seat(prow, out[-1] if out else {})
+        diagnostics["penalty_row_unseated"] = diagnostics.get("penalty_row_unseated", 0) + 1
+    return out
 
 
 def _row_seconds(row, overtime):
@@ -2071,7 +2200,10 @@ KICK_SUMMARY_FIELDS = ("kick_no", "kicking", "receiving", "half", "remaining", "
                        # Kernel 2014.6 batch B10 (append-only): the kick's
                        # credited muff or return fumble (kind, outcome, the
                        # record's muffer role, forced, counted as a fumble).
-                       "fumble")
+                       "fumble",
+                       # Kernel 2014.6 batch B11 (append-only): the kick row's
+                       # replayed clauses in compact form (per fouling club).
+                       "pen")
 RETAINED_OUTCOME = "retained"
 RETURN_TOUCHDOWN_OUTCOME = "returned_touchdown"
 
@@ -2245,8 +2377,15 @@ _GROUP_PREDICATES = {
     # the ledger-free reconciliation reads the drives and kicks summaries,
     # the row checks the full snap ledger; zero tolerance.
     "b10_ball": lambda r: from_kernel("2014.6")(r) and has_spots(r) and has_ball_security(r),
+    # Kernel 2014.6 batch B11 (R11): evaluated on a 2014.6-or-later result or
+    # receipt whose every possession was walked by ledger-walk-v2
+    # (has_penalty_records); the counters reconcile with the compact
+    # summaries, the records and their enforcement with the full ledger;
+    # zero tolerance.
+    "b11_penalty": lambda r: from_kernel("2014.6")(r) and has_spots(r) and has_penalty_records(r),
 }
-_LISTED_FROM = {"b6_ledger": "2014.6", "b8_sequence": "2014.6", "b9f_fourth": "2014.6", "b10_ball": "2014.6"}
+_LISTED_FROM = {"b6_ledger": "2014.6", "b8_sequence": "2014.6", "b9f_fourth": "2014.6", "b10_ball": "2014.6",
+                "b11_penalty": "2014.6"}
 
 
 def _registry(rows):
@@ -2297,6 +2436,11 @@ COHERENCE_REGISTRY = _registry((
     # credit reconciles with its records and counters, and every muffed kick
     # names its muffer.
     ("b10_ball", ("fumble_credit_incoherent", "muff_without_muffer")),
+    # Kernel 2014.6 batch B11 (listed from the 2014.6 cohort): every replayed
+    # penalty record is well formed, legally enforced from its spot, and the
+    # fouling clubs' counters, the possessions' compact summaries and the
+    # first downs by penalty reconcile with the records.
+    ("b11_penalty", ("penalty_record_invalid", "penalty_enforcement_illegal", "penalty_counter_mismatch")),
 ))
 
 
@@ -2319,6 +2463,7 @@ B6_CLASSES = _names("b6_ledger")
 B8_CLASSES = _names("b8_sequence")
 B9F_CLASSES = _names("b9f_fourth")
 B10_CLASSES = _names("b10_ball")
+B11_CLASSES = _names("b11_penalty")
 AUDIT_ONLY_CLASSES = tuple(c.name for c in COHERENCE_REGISTRY if c.audit_only)
 
 
@@ -2374,6 +2519,11 @@ DRIVE_SUMMARY_FIELDS = (
     # scrimmage fumbles (kind, outcome, forced, the seated snap), so a
     # compact receipt grades and audits them like the result.
     "fumbles",
+    # Kernel 2014.6 batch B11 (append-only): the possession's replayed
+    # penalty records in compact form (per fouling club [accepted, charged
+    # yards, declined, offsetting], the net accepted yards, the first downs
+    # by penalty), so a compact receipt reconciles them like the result.
+    "pen",
 )
 LABEL_TYPES = {KNEEL_LABEL: "run", GENERIC_RUN: "run", SPIKE_LABEL: "pass",
                GENERIC_PASS: "pass", SCRAMBLE_LABEL: "pass"}
@@ -2555,8 +2705,16 @@ def _check_fourth_downs(possessions, rows_by_drive, err):
                     ok = row is scrim[-1] and not row.get("first_down")
             else:
                 row = kicks[0] if kicks else None
-                ok = row is not None and (row.get("down"), row.get("ydstogo"), row.get("los")) == (
-                    4, state.get("ydstogo"), state.get("los")) and \
+                # Batch B11: the replayed drive's own kick was decided before
+                # its pre-kick penalty rows, at the first one's state (the kick
+                # row has the state after them); a model kick at the state of
+                # the kick row.
+                pre_kick = next((r for r in rows if r.get("play_type") == penalty_records.PENALTY_ROW
+                                 and r.get("penalty_enforcement") == penalty_records.PRE_KICK), None) \
+                    if rec.get("resolution") == "replayed" else None
+                at = ((pre_kick.get("down"), pre_kick.get("ydstogo"), pre_kick.get("yardline")) if pre_kick
+                      else (row.get("down"), row.get("ydstogo"), row.get("los")) if row is not None else None)
+                ok = row is not None and at == (4, state.get("ydstogo"), state.get("los")) and \
                     (row.get("fourth_down_decision") or {}).get("decision") == rec.get("decision")
             if not ok:
                 err("fourth_down_decision_incoherent", "%s decision %d: the ledger row disagrees" % (where, k))
@@ -2584,6 +2742,191 @@ def _kick_fumbles(result, possessions, kick_list):
             other = next((t for t in teams if t != p["team"]), None)
             out.append((other, p["team"], punt["fumble"]))
     return out
+
+
+def has_penalty_records(result):
+    """Kernel 2014.6 batch B11: every possession was walked by ledger-walk-v2
+    (its replayed penalty records are rows and clauses of the ledger)."""
+    from .chains import CHAIN_MODEL_V2
+    possessions = _possessions(result)
+    return bool(possessions) and all(p.get("chain_model") == CHAIN_MODEL_V2 for p in possessions)
+
+
+def _drive_penalty_entries(rows):
+    """The published records of one drive's rows: its no-play and pre-kick
+    rows and the clauses on its scrimmage snaps (its punt row's are the kick
+    play's, read with the punt)."""
+    return [e for r in rows if r.get("play_type") in ("pass", "run", penalty_records.PENALTY_ROW)
+            for e in (r.get("penalties") or ())]
+
+
+def _accepted_yards(entries):
+    return sum(int(e.get("penalty_yards") or 0) for e in entries if e.get("status") == "accepted")
+
+
+def _check_penalties(result, possessions, kick_list, ledger, rows_by_drive, err):
+    """Kernel 2014.6 batch B11 classes (zero tolerance).
+
+    penalty_record_invalid: a malformed record (runtime.penalties.entry_errors),
+    a row with more than one first-down record, a penalty row whose first-down
+    flag differs from its records', or a compact summary that is not one.
+    penalty_enforcement_illegal: a scrimmage clause or penalty row not legally
+    enforceable from its spot (runtime.penalties.legal_entries: half the
+    distance, a half-distance record's floor or ceiling, a spot foul's new spot
+    in the field).
+    penalty_counter_mismatch: a club's accepted penalties, their yards, its
+    declined and offsetting records and its first downs by penalty differ
+    from the records charged to it (the compact summaries: every possession's
+    pen and punt pen and every kick's pen; with the full ledger, its rows
+    too), a possession's chains[1] differs from its first downs by penalty,
+    or a summary differs from its rows."""
+    pr = penalty_records
+    teams = list(result.get("final_score", {}))
+    totals = {t: [0, 0, 0, 0, 0] for t in teams}   # accepted, yards, declined, offsetting, first downs
+
+    def add_summary(summary, where, first_downs_to=None):
+        if not isinstance(summary, dict) or not isinstance(summary.get("clubs"), dict):
+            err("penalty_record_invalid", "%s summary" % where)
+            return
+        for club, row in summary["clubs"].items():
+            if club not in totals or not isinstance(row, list) or len(row) != 4:
+                err("penalty_record_invalid", "%s summary club %s" % (where, club))
+                continue
+            for i in range(4):
+                totals[club][i] += int(row[i])
+        if first_downs_to is not None:
+            totals[first_downs_to][4] += int(summary.get("first_downs") or 0)
+
+    for p in possessions:
+        where = "drive %s" % p["number"]
+        pen = p.get("pen")
+        add_summary(pen, where, first_downs_to=p["team"] if p["team"] in totals else None)
+        chain = list(p.get("chains") or [])
+        if isinstance(pen, dict) and len(chain) == 6 and chain[1] != pen.get("first_downs"):
+            err("penalty_counter_mismatch", "%s chains[1] %s vs %s first downs by penalty"
+                % (where, chain[1], pen.get("first_downs")))
+        punt = p.get("punt")
+        if isinstance(punt, dict) and "pen" in punt:
+            add_summary(punt["pen"], where + " punt")
+    for k in kick_list:
+        if "pen" in k and k.get("pen") is not None:
+            add_summary(k["pen"], "kick %s" % k.get("kick_no"))
+    for team, s in result.get("team_stats", {}).items():
+        if team not in totals:
+            continue
+        got = [s.get("penalties", 0), s.get("penalty_yards", 0), s.get("penalties_declined", 0),
+               s.get("penalties_offsetting", 0), s.get("penalty_first_downs", 0)]
+        if got != totals[team]:
+            err("penalty_counter_mismatch", "%s counters %s vs records %s" % (team, got, totals[team]))
+    if not ledger:
+        return
+    by_number = {p["number"]: p for p in possessions}
+    charged = {t: [0, 0, 0, 0, 0] for t in teams}
+    players = {t: {} for t in teams}
+
+    def charge(entries, first_downs_to=None):
+        for e in entries:
+            row = charged.get(e.get("team"))
+            if row is None:
+                continue
+            status = e.get("status")
+            if status == "accepted":
+                row[0] += 1
+                row[1] += pr.charged_yards(e)
+                if e.get("fouler"):
+                    line = players[e["team"]].setdefault(e["fouler"], [0, 0])
+                    line[0] += 1
+                    line[1] += pr.charged_yards(e)
+            elif status == "declined":
+                row[2] += 1
+            elif status == "offsetting":
+                row[3] += 1
+            if e.get("first_down") and first_downs_to in charged:
+                charged[first_downs_to][4] += 1
+
+    for row in ledger:
+        kind = row.get("play_type")
+        entries = row.get("penalties")
+        if entries is None:
+            continue
+        if not isinstance(entries, list):
+            err("penalty_record_invalid", "row %s penalties" % row.get("sequence"))
+            continue
+        kick = kind in KICK_TYPES or kind == "punt"
+        offense, defense = row.get("offense"), row.get("defense")
+        for e in entries:
+            for problem in pr.entry_errors(e, offense=offense, defense=defense, kick=kick):
+                err("penalty_record_invalid", "row %s: %s" % (row.get("sequence"), problem))
+        if sum(bool(e.get("first_down")) for e in entries) > 1:
+            err("penalty_record_invalid", "row %s: two first-down records" % row.get("sequence"))
+        if kind == pr.PENALTY_ROW and bool(row.get("first_down")) != any(e.get("first_down") for e in entries):
+            err("penalty_record_invalid", "row %s: first-down flag" % row.get("sequence"))
+        charge(entries, first_downs_to=None if kick else offense)
+    for team, s in result.get("team_stats", {}).items():
+        if team not in charged:
+            continue
+        got = [s.get("penalties", 0), s.get("penalty_yards", 0), s.get("penalties_declined", 0),
+               s.get("penalties_offsetting", 0), s.get("penalty_first_downs", 0)]
+        if got != charged[team]:
+            err("penalty_counter_mismatch", "%s counters %s vs ledger %s" % (team, got, charged[team]))
+        for pid, line in (s.get("players") or {}).items():
+            have = [line.get("penalties", 0), line.get("penalty_yards", 0)]
+            if have != players[team].get(pid, [0, 0]):
+                err("penalty_counter_mismatch", "%s player %s %s vs ledger %s"
+                    % (team, pid, have, players[team].get(pid, [0, 0])))
+        missing = set(players[team]) - set(s.get("players") or {})
+        if s.get("players") is not None and missing:
+            err("penalty_counter_mismatch", "%s foulers without a player line: %s" % (team, sorted(missing)))
+    for number, rows in rows_by_drive.items():
+        p = by_number.get(number)
+        if p is None:
+            continue
+        where = "drive %s" % number
+        entries = _drive_penalty_entries(rows)
+        if isinstance(p.get("pen"), dict) and pr.summary_of(entries, p["team"]) != {
+                k: v for k, v in p["pen"].items() if k != "dropped"}:
+            err("penalty_counter_mismatch", "%s summary differs from its rows" % where)
+        punt_row = next((r for r in rows if r.get("play_type") == "punt"), None)
+        if isinstance((p.get("punt") or {}).get("pen"), dict):
+            if pr.summary_of((punt_row or {}).get("penalties") or (), p["team"]) != p["punt"]["pen"]:
+                err("penalty_counter_mismatch", "%s punt summary differs from its row" % where)
+        # Each record's enforcement is its row's: a snap's clauses after the
+        # snap, a penalty row's no-play before the drive's last snap and
+        # pre-kick after it.
+        snaps = [i for i, r in enumerate(rows) if r.get("play_type") in ("pass", "run")]
+        last_snap = snaps[-1] if snaps else -1
+        for i, r in enumerate(rows):
+            kind = r.get("play_type")
+            if kind in ("pass", "run"):
+                want = pr.AFTER_SNAP
+            elif kind == pr.PENALTY_ROW:
+                want = pr.PRE_KICK if i > last_snap else pr.NO_PLAY
+                if r.get("penalty_enforcement") != want or not r.get("penalties"):
+                    err("penalty_record_invalid", "%s row %s enforcement %s" % (where, r.get("sequence"),
+                                                                               r.get("penalty_enforcement")))
+            else:
+                continue
+            if any(e.get("enforcement") != want for e in (r.get("penalties") or ())):
+                err("penalty_record_invalid", "%s row %s record enforcement" % (where, r.get("sequence")))
+        # Enforcement legality along the drive's own walk of its rows.
+        spot = p.get("start_spot")
+        if not isinstance(spot, int):
+            continue
+        for r in rows:
+            kind = r.get("play_type")
+            if kind in ("pass", "run"):
+                spot -= int(r.get("result_yards", 0))
+                clauses = r.get("penalties") or ()
+            elif kind == pr.PENALTY_ROW:
+                clauses = r.get("penalties") or ()
+                if r.get("yardline") != spot:
+                    err("penalty_enforcement_illegal", "%s penalty row at %s, the walk at %s"
+                        % (where, r.get("yardline"), spot))
+            else:
+                continue
+            if clauses and _accepted_yards(clauses) and not pr.legal_entries(clauses, spot):
+                err("penalty_enforcement_illegal", "%s row %s from %s" % (where, r.get("sequence"), spot))
+            spot -= _accepted_yards(clauses)
 
 
 def _check_ball_security(result, possessions, kick_list, ledger, err):
@@ -2693,13 +3036,81 @@ def has_chain_ledger(result):
     return all("down" in r and "ydstogo" in r for r in ledger if r.get("play_type") in ("pass", "run"))
 
 
+def _check_chain_ledger_v2(p, rows, err):
+    """Kernel 2014.6 batch B11 (ledger-walk-v2): one drive's chain classes,
+    re-walked from its scrimmage rows and penalty rows in ledger order
+    (runtime.chains.ledger_steps, walk_steps). The penalty rows' down,
+    distance and spot are the walk's at their place; chains[1] is the count
+    of records with first_down true (one per row at most)."""
+    from . import chains
+    from .field_position import FOURTH_DOWN_CATEGORIES
+    number, category = p["number"], p["category"]
+    walked_rows = [r for r in rows if r.get("play_type") in ("pass", "run", penalty_records.PENALTY_ROW)]
+    scrim = [r for r in walked_rows if r.get("play_type") in ("pass", "run")]
+    steps = chains.ledger_steps(walked_rows)
+    start = p["start_spot"]
+    w = chains.walk_steps(start, steps, category in chains.TURNOVER_TERMINALS)
+    where = "drive %s" % number
+    snap_no = 0
+    for row, state in zip(walked_rows, w["steps"]):
+        is_snap = row.get("play_type") in ("pass", "run")
+        snap_no += is_snap
+        flag = bool(row.get("first_down")) if is_snap else False
+        given = any(e.get("first_down") for e in (row.get("penalties") or ()))
+        if (row.get("down"), row.get("ydstogo"), row.get("yardline"), flag, given) != (
+                state["down"], state["ydstogo"], state["los"], state["first_down"], state["penalty_first_down"]):
+            err("down_distance_chain_break", "%s %s %s: %s & %s at %s" % (
+                where, "snap" if is_snap else "penalty row after snap", snap_no, row.get("down"),
+                row.get("ydstogo"), row.get("yardline")))
+            break
+    failed = w["failed"]
+    n = len(scrim)
+    if w["breaks"] or (failed is not None and not (category == "downs" and failed == n - 1)):
+        err("down_distance_chain_break", "%s snap after a failed fourth down" % where)
+    elif category == "downs" and failed is None:
+        err("down_distance_chain_break", "%s turned over on downs without failing on fourth" % where)
+    elif category == "punt" and n and (w["state"] is None or w["state"]["down"] != 4) and (
+            w["pre_tail_state"] is None or w["pre_tail_state"]["down"] != 4):
+        err("down_distance_chain_break", "%s punts before fourth down" % where)
+    for row, state in zip(walked_rows, w["steps"]):
+        if bool(row.get("goal_to_go")) != state["goal_to_go"] or (
+                bool(row.get("goal_to_go")) != (row.get("ydstogo") == row.get("yardline"))):
+            err("goal_to_go_mismatch", "%s row %s" % (where, row.get("sequence")))
+            break
+    if category in FOURTH_DOWN_CATEGORIES:
+        fd = p.get("fourth_down") or {}
+        expected = chains.fourth_down_state_steps(category, start, steps)
+        if expected is None or any(fd.get(k) != expected[k] for k in chains.STATE_FIELDS):
+            err("fourth_down_distance_mismatch", "%s published %s" % (
+                where, [fd.get(k) for k in chains.STATE_FIELDS]))
+        for row in rows:
+            if row.get("play_type") in ("punt", "field_goal") or (
+                    row.get("play_type") == "possession_end" and row.get("reason") == "downs"):
+                if any(row.get(k) != fd.get(k) for k in chains.STATE_FIELDS):
+                    err("fourth_down_distance_mismatch", "%s %s row" % (where, row.get("play_type")))
+        if fd and bool(fd.get("goal_to_go")) != (fd.get("ydstogo") == fd.get("los")):
+            err("goal_to_go_mismatch", "%s fourth-down state" % where)
+    chain = list(p.get("chains") or [])
+    flags = sum(bool(r.get("first_down")) for r in scrim)
+    records = sum(bool(e.get("first_down")) for e in _drive_penalty_entries(rows))
+    if (len(chain) != 6 or [chain[0]] + chain[2:6] != w["chains"] or chain[0] != flags
+            or chain[1] != records or chain[1] != w["penalty_first_downs"]):
+        err("first_downs_ne_ledger", "%s chains %s walk %s and %s by penalty" % (
+            where, chain, w["chains"], w["penalty_first_downs"]))
+
+
 def _check_chain_ledger(possessions, rows_by_drive, err):
     """Kernel 2014.4 (defect register item 3): each drive's published down,
     distance, first downs and fourth-down state are re-walked from its own
-    scrimmage rows (runtime.chains.walk) and must agree with them."""
+    scrimmage rows (runtime.chains.walk) and must agree with them. Batch
+    B11: a ledger-walk-v2 drive is re-walked with its penalty rows and
+    clauses (_check_chain_ledger_v2)."""
     from . import chains
     from .field_position import FOURTH_DOWN_CATEGORIES
     for p in possessions:
+        if p.get("chain_model") == chains.CHAIN_MODEL_V2:
+            _check_chain_ledger_v2(p, rows_by_drive.get(p["number"], []), err)
+            continue
         number, category = p["number"], p["category"]
         rows = rows_by_drive.get(number, [])
         scrim = [r for r in rows if r.get("play_type") in ("pass", "run")]
@@ -3353,6 +3764,8 @@ def check_ledger(result, base=None, audit_only=False):
             _check_clock_legs(result, possessions, None, err, base.field_position())
         if b9f_fourth:
             _check_fourth_downs(possessions, None, err)
+        if _GROUP_PREDICATES["b11_penalty"](result):
+            _check_penalties(result, possessions, kicks_of(result), None, {}, err)
         return errors
 
     previous = None
@@ -3419,6 +3832,7 @@ def check_ledger(result, base=None, audit_only=False):
         if row.get("play_type") in KICK_TYPES:
             continue
         rows_by_drive.setdefault(row["drive"], []).append(row)
+    v2_walk = has_penalty_records(result)
     for number in rows_by_drive:
         if number not in by_number:
             err("snaps_after_terminal", "rows for unknown drive %s" % number)
@@ -3471,12 +3885,52 @@ def check_ledger(result, base=None, audit_only=False):
                 err("score_identity_violations", "drive %s field-goal row" % p["number"])
         scrimmage = [r for r in rows if r.get("play_type") in ("pass", "run")]
         yards = [r.get("result_yards", 0) for r in scrimmage]
-        if sum(yards) != p["net_yards"]:
+        if v2_walk:
+            # Batch B11 (ledger-walk-v2): the snaps and the replayed records
+            # (the clauses on the snaps and the penalty rows) net the drive.
+            moved = sum(yards) + _accepted_yards(_drive_penalty_entries(rows))
+            if moved != p["net_yards"]:
+                err("snap_sum_ne_drive_net", "drive %s: %s vs %s" % (p["number"], moved, p["net_yards"]))
+        elif sum(yards) != p["net_yards"]:
             err("snap_sum_ne_drive_net", "drive %s: %s vs %s" % (p["number"], sum(yards), p["net_yards"]))
         if category == "touchdown":
             final = scrimmage[-1] if scrimmage else None
             if final is None or final.get("sack") or not final.get("touchdown") or final.get("result_yards", 0) <= 0:
                 err("td_snap_sack_or_nonpositive", "drive %s" % p["number"])
+        if spots and v2_walk:
+            # Batch B11: the running spot after every snap and every row's
+            # records; the scoring snap ends at the goal line, a safety's
+            # terminal snap at the own goal line.
+            spot = p["start_spot"]
+            position = 0
+            for r in rows:
+                kind = r.get("play_type")
+                if kind in ("pass", "run"):
+                    spot -= r.get("result_yards", 0)
+                    position += 1
+                    is_last = position == len(yards)
+                    if is_last and category == "touchdown":
+                        if spot != 0:
+                            err("prefix_out_of_bounds", "drive %s touchdown ends at %s" % (p["number"], spot))
+                        continue
+                    if is_last and category == "safety":
+                        if spot != 100:
+                            err("prefix_out_of_bounds", "drive %s safety ends at %s" % (p["number"], spot))
+                            err("safety_not_at_goal_line", "drive %s terminal snap ends at %s" % (p["number"], spot))
+                        continue
+                    if not 1 <= spot <= 99:
+                        err("prefix_out_of_bounds", "drive %s snap %s spot %s" % (p["number"], position, spot))
+                        break
+                elif kind != penalty_records.PENALTY_ROW:
+                    continue
+                moved = _accepted_yards(r.get("penalties") or ())
+                if moved:
+                    spot -= moved
+                    if not 1 <= spot <= 99:
+                        err("prefix_out_of_bounds", "drive %s records after snap %s spot %s"
+                            % (p["number"], position, spot))
+                        break
+            continue
         if spots:
             start = p["start_spot"]
             running = 0
@@ -3558,6 +4012,8 @@ def check_ledger(result, base=None, audit_only=False):
         _check_b6_ledger(result, possessions, rows_by_drive, err, base.field_position())
     if b9f_fourth:
         _check_fourth_downs(possessions, rows_by_drive, err)
+    if _GROUP_PREDICATES["b11_penalty"](result):
+        _check_penalties(result, possessions, kick_list, ledger, rows_by_drive, err)
     return errors
 
 
@@ -3721,6 +4177,18 @@ def audit_only_errors(result, base=None):
     return [e for e in check_ledger(result, base, audit_only=True) if e.split(":", 1)[0] in AUDIT_ONLY_CLASSES]
 
 
+def walk_off_context(result, possessions, p):
+    """Whether a made field goal on overtime possession `p` would have ended
+    the game (the kernel's walk_off_fg context, read from the overtime
+    history before it; W3's early overtime kick)."""
+    from .rules import ot_history, ot_status
+    before = [q for q in possessions if q.get("half") == "OT" and q["number"] < p["number"]]
+    kicks = [k for k in kicks_of(result) if k.get("half") == "OT" and (k.get("drive") or 0) <= p["number"]]
+    history = ot_history(before, kicks)
+    return ot_status(history + [{"team": p["team"], "score": "field_goal"}],
+                     result.get("game_type", "regular")) == "end"
+
+
 def _check_b6_ledger(result, possessions, rows_by_drive, err, fp):
     """Kernel 2014.6 batch B6 classes (audit-only until the sweep reads 0).
 
@@ -3728,7 +4196,8 @@ def _check_b6_ledger(result, possessions, rows_by_drive, err, fp):
     first, second or third down is coherent only when the drive ended its
     window, or in regulation the kick row's half clock is at most the base's
     EARLY_FG_SECONDS (a Pro Bowl quarter is its own window), or in overtime
-    the made kick ended the game.
+    the made kick ended the game or (batch B11, the W3 rule as specified) a
+    made kick would have ended it (walk_off_context; the kick may miss).
     kick_clock_shared (W5a): a punt or field-goal row stamped on the clock of
     the drive's last scrimmage snap.
     snap_at_zero (W5a): a scrimmage snap stamped 0:00.
@@ -3758,7 +4227,9 @@ def _check_b6_ledger(result, possessions, rows_by_drive, err, fp):
                     minutes, seconds = (int(v) for v in text.split(":"))
                     left = minutes * 60 + seconds
                     if half_overtime:
-                        ok = bool(p.get("fg_made")) and p is last
+                        # W3 as specified: the kick came where a made kick ends
+                        # the game (the kernel's walk-off context; it may miss).
+                        ok = (bool(p.get("fg_made")) and p is last) or walk_off_context(result, possessions, p)
                     elif pro_bowl or period in (2, 4):
                         ok = left <= early
                 if not ok:
@@ -3815,7 +4286,12 @@ def _check_layout_resamples(possessions, err, fp):
     original tuple's index and leading fields, and a final tuple of the same
     category at that index in the same pool, feasible at the drive's start
     spot; the resample count is a positive integer. `fp` is the
-    field-position model of the result's own base."""
+    field-position model of the result's own base. Kernel 2014.6 batch B11:
+    a ledger-walk-v2 drive's final tuple is feasible by the penalty-aware
+    gate the kernel drew it with (its replayed records count), or by the
+    record-free gate when the resample was laid out without its records
+    (``records_dropped``, the kernel's last fallback)."""
+    from .chains import CHAIN_MODEL_V2
     units = []
     for p in possessions:
         if p.get("segments"):
@@ -3825,7 +4301,7 @@ def _check_layout_resamples(possessions, err, fp):
                 if seg.get("layout_resample"):
                     units.append(({"number": p["number"], "layout_resample": seg["layout_resample"],
                                    "category": seg["category"], "start_spot": seg["start"],
-                                   "scrimmage_plays": seg["tuple_plays"]}))
+                                   "scrimmage_plays": seg["tuple_plays"], "chain_model": p.get("chain_model")}))
         elif p.get("layout_resample"):
             units.append(p)
     for p in units:
@@ -3849,7 +4325,12 @@ def _check_layout_resamples(possessions, err, fp):
             if original["locator"] == final["locator"]:
                 raise ValueError("final tuple is the original")
             final_tuple = tuples["final"]
-            if p.get("start_spot") is not None and not fp.static_feasible(category, final_tuple, p["start_spot"]):
+            # (A resample laid out without records, the kernel's last fallback,
+            # was drawn by the record-free gate.)
+            gate = ((True,) if p.get("chain_model") == CHAIN_MODEL_V2 and hasattr(fp, "penalty_plan")
+                    and not rec.get("records_dropped") else ())
+            if p.get("start_spot") is not None and not fp.static_feasible(category, final_tuple, p["start_spot"],
+                                                                          *gate):
                 raise ValueError("final tuple infeasible at the start spot")
             if int(final_tuple[fp.T["plays"]]) != int(p.get("scrimmage_plays", final_tuple[fp.T["plays"]])):
                 raise ValueError("published plays differ from the final tuple")

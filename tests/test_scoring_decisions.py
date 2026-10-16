@@ -27,7 +27,7 @@ from runtime.calibration_base import BASE_2010_2014W4
 from runtime.game_runner import build_game_packet
 from runtime.kernel import resolve_game, validate_result
 from runtime.play_detail import check_ledger, scoring_events
-from runtime.profiles import B9_FLAGS, B9F_FLAGS, B10_FLAGS, PROFILE_2014_5, PROFILE_2014_6, Profile
+from runtime.profiles import B9_FLAGS, B9F_FLAGS, B10_FLAGS, B11_FLAGS, PROFILE_2014_5, PROFILE_2014_6, Profile
 from runtime.rules import extra_point_rule, ot_history, ot_status, try_rule
 from runtime.statbook import (KERNEL_2014_6_PLAYER_FIELDS, KERNEL_2014_6_TEAM_STAT_FIELDS, aggregate_receipts,
                               make_receipt)
@@ -46,14 +46,14 @@ DELEGATION = {"otherwise": "league", "source": "fixture: follow the league chart
 # answer only scoring pauses delegate the controlled club's fourth downs to
 # the league chart, so every fourth down is decided as in the autonomous run.
 FOURTH = {"fourth_down_policy": {"otherwise": "league"}}
-# The B9 level of kernel 2014.6 (without the B9F live fourth downs and the
-# B10 ball security): the seed-pinned reproductions below were found under
-# it, and B9F changes every later fourth-down possession (B10 every later
-# lost-fumble layout and retained kick), so they keep reproducing at this
-# level.
+# The B9 level of kernel 2014.6 (without the B9F live fourth downs, the B10
+# ball security and the B11 penalty records): the seed-pinned reproductions
+# below were found under it, and B9F changes every later fourth-down
+# possession (B10 every later lost-fumble layout and retained kick, B11 every
+# later drive draw and layout), so they keep reproducing at this level.
 PROFILE_B9_LEVEL = Profile("2014.6", base=PROFILE_2014_6.base, cell_rules=PROFILE_2014_6.cell_rules,
-                           strength=PROFILE_2014_6.strength, flags=PROFILE_2014_6.flags - B9F_FLAGS - B10_FLAGS,
-                           record_base=True)
+                           strength=PROFILE_2014_6.strength,
+                           flags=PROFILE_2014_6.flags - B9F_FLAGS - B10_FLAGS - B11_FLAGS, record_base=True)
 WEEK4_SHEET = ROOT / "career/2014/05_Regular_Season/Games/Week_04/call_sheet.json"
 SCORING_SOURCES = set(sd.SOURCES)
 
@@ -546,9 +546,10 @@ class ForcedCaseTests(unittest.TestCase):
                             for e in check_ledger(kicked)))
 
     def test_fumble_return_keyed_by_the_fumbled_snap(self):
-        # b9-seek-0, drive 2: a lost fumble (found by search; fails loudly if not).
+        # b9-seek-0, drive 7: a lost fumble (found by search; fails loudly if
+        # not; re-searched for batch B11, which moves every later drive).
         base = play("b9-seek-0")
-        p = base["possessions"][1]
+        p = base["possessions"][6]
         self.assertEqual(p["category"], "fumble_lost")
         r = play("b9-seek-0", {"drives": {p["number"]: "defensive_touchdown"}})
         self.assertEqual(clean(r), [])
@@ -929,7 +930,8 @@ class ParticipationTests(unittest.TestCase):
 class E2PauseTests(unittest.TestCase):
     def test_pause_across_a_non_offensive_touchdown(self):
         a = with_team("A", {"try_policy": DELEGATION, "kickoff_policy": DELEGATION, **FOURTH})
-        base = play("b9-e2", home=a)
+        # b9-e2-0: a B turnover (re-searched for batch B11; "b9-e2" no longer has one).
+        base = play("b9-e2-0", home=a)
         p = first([p for p in base["possessions"][:-1] if p["team"] == "B" and p["half"] in (1, 2)
                    and p["category"] in ("interception", "fumble_lost")], lambda p: True, "a B turnover")
         # A scores on B's turnover and kicks the try: its kicker is exposed on
@@ -939,7 +941,7 @@ class E2PauseTests(unittest.TestCase):
                   "tries": {"drive:%d" % p["number"]: {"decision": "kick"}}}
         kicker = usage.kicking_specialist(list(a.roster), "K", "placekicker").player_id
         onsets = {(p["number"], kicker): {"injury_class": "lower_extremity", "severity": "short", "removed": True}}
-        kw = dict(seed=SEED + b"-b9-e2", event_id="b9-e2", _test_profile=PROFILE_2014_6, _test_scoring=forced,
+        kw = dict(seed=SEED + b"-b9-e2-0", event_id="b9-e2-0", _test_profile=PROFILE_2014_6, _test_scoring=forced,
                   _test_onsets=onsets, management_mode="user_controlled", controlled_team="A")
         decisions, ours = [], None
         for _ in range(12):

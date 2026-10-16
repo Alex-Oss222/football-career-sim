@@ -20,7 +20,7 @@ from runtime import chains
 from runtime import field_position as fp
 from runtime.calibration_base import BASE_2010_2014W4
 from runtime.kernel import resolve_game, validate_result
-from runtime.play_detail import audit_only_errors, check_ledger, DRIVE_SUMMARY_FIELDS
+from runtime.play_detail import audit_only_errors, check_ledger, DRIVE_SUMMARY_FIELDS, walk_off_context
 from runtime.profiles import PROFILE_2014_6
 from synthetic_games import SEED, sample_teams
 
@@ -204,7 +204,8 @@ class KernelTests(unittest.TestCase):
                     continue
                 row = kick_row(r, p["number"])
                 if p["half"] == "OT":
-                    ok = p["fg_made"] and p is last
+                    # W3: early in overtime where a made kick ends the game (it may miss).
+                    ok = (p["fg_made"] and p is last) or walk_off_context(r, r["possessions"], p)
                 else:
                     ok = p["half_final"] or (row["period"] in (2, 4) and half_clock(row, p["half"]) <= EARLY)
                 if ok:
