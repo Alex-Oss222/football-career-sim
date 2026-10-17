@@ -1,0 +1,10 @@
+{
+ "commitment": "c8bd24f1cef6bcf17d6e3ae1cc1c5623cede1948498d750770220063561e7b68",
+ "derivation": "player-state-v1",
+ "league_year": 2014,
+ "manifest_sha256": "8cad374c56800f7aac1a4d41aa4a1879300797f696d4d805739bf3e9d21ee39e",
+ "note": "Public commitment over the private service's drawn rows (runtime/player_state.py); the season reference and the draws stay in the service.",
+ "public_table_sha256": "e841f91da3bd57e884fe5af048d4b8dab275a65a735edf915aa45b07abf1326b",
+ "rows": 2178,
+ "schema": "player-state-binding-v1"
+}
