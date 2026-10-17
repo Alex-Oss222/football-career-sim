@@ -1,0 +1,25 @@
+# Kyle Long
+
+![Kyle Long career card](assets/kyle_long.svg)
+
+## Career stats
+
+### Regular season
+
+| Season | Club | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Chicago Bears | 16 | N/A | N/A | 6 | N/A | 0 | 0 | 0 | 0 | N/A |
+| 2014 | Chicago Bears | 4 | 4 | 278 | 1 | 19 | 0 | 0 | 0 | 0 | 69.5 |
+| **Career** |  | 20 | N/A | N/A | 7 | N/A | 0 | 0 | 0 | 0 | N/A |
+
+### Playoffs
+
+No playoff games on record.
+
+## Awards
+
+None on record.
+
+Schools listed: Oregon; Saddleback Community College; Florida State.
+
+Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).

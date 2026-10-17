@@ -1,0 +1,25 @@
+# Eric Page
+
+![Eric Page career card](assets/eric_page.svg)
+
+## Career stats
+
+### Regular season
+
+| Season | Club | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay Buccaneers | 16 | 20 | 16 | 251 | 15.7 | 2 | 15.7 | 80.0 | 74 | 1 | 0 |
+| **Career** |  | 16 | 20 | 16 | 251 | 15.7 | 2 | 15.7 | 80.0 | 74 | 1 | 0 |
+
+### Playoffs
+
+| Season | Club | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay Buccaneers | 1 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
+| **Career** |  | 1 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
+
+## Awards
+
+None on record.
+
+Records through January 5, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Tampa Bay Buccaneers players](README.md).

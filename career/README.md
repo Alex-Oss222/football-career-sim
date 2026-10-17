@@ -18,6 +18,8 @@ Games use the complete [regular-season output template](../foundation/templates/
 
 A player's opening assessment and dated updates remain together through the whole year. A separate final assessment is written with the season review. Earlier statistical rows remain intact, and a departed player's evidence remains history. The [career player index](player_profiles/README.md) connects seasons. Individual development plans and film records supply proposed work and actual distribution receipts without becoming duplicate assessment collections.
 
+[League player cards](league_players/README.md) give every player on record, club by club, a card in his club's colors and his season and career statistics, regenerated after every closed game.
+
 [Coaching profiles](coaching_profiles/README.md) retain Stone's and the assistants' development from their actual work. [Shared finances](finances/README.md) retain contract obligations and accounting across seasons. Neither set is rewritten into a second chronological account.
 
 ## Starting and handing off a career
