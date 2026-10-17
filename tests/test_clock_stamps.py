@@ -328,8 +328,11 @@ class RenderTests(unittest.TestCase):
         self.assertEqual([c for c, n, _ in counts if n], [])
         self.assertNotIn("kick_clock_shared", [c for c, _, _ in counts])
         checked, audit = bands.audit_only_coherence([self.receipt], cohort="2014.6")
-        self.assertEqual([c for c, _, _ in audit], list(pd.B6_CLASSES))
-        self.assertTrue(all(m == 1 for _, _, m in audit))
+        # Kernel 2014.6 W1a adds one reported class, measured only on a result
+        # carrying the defensive call record.
+        self.assertEqual([c for c, _, _ in audit], list(pd.B6_CLASSES + pd.W1A_REPORTED_CLASSES))
+        self.assertTrue(all(m == 1 for c, _, m in audit if c in pd.B6_CLASSES))
+        self.assertTrue(all(m == 0 for c, _, m in audit if c in pd.W1A_REPORTED_CLASSES))
         # Rendered coherence tables of the closed cohorts never list them.
         self.assertNotIn("kick_clock_shared", pd.classes_for_cohort("2014.5"))
 

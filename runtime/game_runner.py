@@ -26,6 +26,10 @@ def _team_packet(team):
     data = asdict(team)
     if data.get("strength") is None:
         data.pop("strength", None)  # legacy packets unchanged (kernel 2014.4 E1)
+    # Kernel 2014.6 W1a: the structured defensive sheet is records only and
+    # never enters the journaled packet (its sha256 is in the result, checked
+    # against the committed sheet by scripts/validate_repository.py).
+    data.pop("defensive_call_sheet", None)
     # Availability and rotation are football inputs; protagonist labels are not.
     data["roster"] = serialize_roster(normalize_players(team))
     data["offensive_call_sheet"] = canonical_call_sheet(team)

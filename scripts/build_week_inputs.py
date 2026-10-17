@@ -7,7 +7,8 @@ Reads the week's Jacksonville call sheet from
 career/YEAR/regular_season/week_NN_*/call_sheet.json (its offensive call sheet
 and, kernel 2014.6 batch B9, its decisions block: under a kernel that decides
 two-point tries and onside kicks, Jacksonville's input is BLOCKED without
-one) and every closed receipt for availability, builds the package and runs the weekly exclusivity and
+one; kernel 2014.6 W1a, its optional structured defensive sheet,
+defensive_call_sheet, records only) and every closed receipt for availability, builds the package and runs the weekly exclusivity and
 game-day gate with the scheduled game count. From the in-season rails'
 effective week (2014: Week 5) the committed moves must reach the slate's
 last cutoff first (library/2014_inseason_rails.md). The package is written to
@@ -99,7 +100,7 @@ def main():
         return 1
     jacksonville_plays = any(PROTAGONIST in (g["away"], g["home"]) for g in schedule(args.week, args.season))
     sheet_path = call_sheet_path(args.week, args.season)
-    decisions = None
+    decisions = defensive_sheet = None
     if sheet_path is None and not jacksonville_plays:
         call_sheet = []  # bye week: no Jacksonville game, so no call sheet
     elif sheet_path is None:
@@ -118,11 +119,17 @@ def main():
         # optional decisions.fourth_down block (his standing fourth-down rules
         # and Tice's prepared calls); without one his fourth downs are live.
         decisions = sheet.get("decisions")
+        # Kernel 2014.6 W1a: Stone's optional structured defensive sheet
+        # (records only; runtime.defensive_calls). A malformed sheet, one not
+        # transcribed verbatim from the packet, or one the installed kernel
+        # does not record, blocks the build; without one nothing is added.
+        defensive_sheet = sheet.get("defensive_call_sheet")
     receipts = [r for r in load_receipts(paths.receipts) if int(r["week"]) < args.week]
     # Postseason rounds also carry injuries from the earlier playoff rounds.
     receipts += [r for r in load_receipts(paths.postseason_receipts) if int(r["week"]) < args.week]
     try:
-        package = build_package(args.week, receipts, call_sheet, AVERAGE_ANCHORS, args.season, decisions=decisions)
+        package = build_package(args.week, receipts, call_sheet, AVERAGE_ANCHORS, args.season, decisions=decisions,
+                                defensive_sheet=defensive_sheet)
     except ValueError as exc:
         print("WEEK_INPUTS: BLOCKED")
         print("- %s" % exc)

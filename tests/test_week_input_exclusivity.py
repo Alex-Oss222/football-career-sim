@@ -7,6 +7,7 @@ import unittest
 from unittest import mock
 from dataclasses import asdict
 from pathlib import Path
+from types import SimpleNamespace
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from support_rosters import game_day_roster
@@ -187,6 +188,89 @@ class WeekInputExclusivityTests(unittest.TestCase):
         self.assertTrue(any("Houston Texans: game-day unit incomplete: RB" in e for e in errors))
         self.assertTrue(any("Houston Texans: game-day unit incomplete: LB" in e for e in errors))
         self.assertTrue(any("Jacksonville Jaguars: QB group has no explicit depth order" in e for e in errors))
+
+
+
+class PackageSeasonTests(unittest.TestCase):
+    """The CLI reads control from the package's own season's roster when no
+    --season is given, refuses a --season that differs from the package's,
+    and keeps the 2013 default for a package without a season key."""
+
+    ROSTERS={2013:"| Player | Pos | Status |\n|---|---|---|\n| Old Player | QB | Active 53 |\n",
+             2014:"| Player | Pos | Status |\n|---|---|---|\n| New Player | QB | Active 53 |\n"}
+
+    def run_cli(self, package, *argv):
+        from scripts import check_week_input_exclusivity as cli
+        requested=[]
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp=Path(tmp)
+            for season,text in self.ROSTERS.items():
+                (tmp/("roster_%d.md" % season)).write_text(text,encoding="utf-8")
+
+            def paths(season, root):
+                requested.append(season)
+                return SimpleNamespace(roster=tmp/("roster_%d.md" % season))
+            path=tmp/"week_05_inputs.json"
+            path.write_text(json.dumps(package),encoding="utf-8")
+            out=io.StringIO()
+            with mock.patch.object(cli,"SeasonPaths",paths), \
+                    mock.patch.object(sys,"argv",["x",str(path)]+list(argv)), \
+                    contextlib.redirect_stdout(out):
+                code=cli.main()
+        return code,out.getvalue(),requested
+
+    @staticmethod
+    def package(season=None):
+        away=WeekInputExclusivityTests.full_input("NYG","Old Player")
+        away["roster"][1]["player_id"]="New Player"
+        away["active_players"]=game_day_actives(away["roster"])
+        data={"games":[{"away":"New York Giants","home":"Jacksonville Jaguars","away_input":away,
+                        "home_input":WeekInputExclusivityTests.full_input("JAX","Jacksonville QB")}]}
+        if season is not None:
+            data["season"]=season
+        return data
+
+    def test_a_2014_package_without_season_uses_the_2014_roster(self):
+        code,out,requested=self.run_cli(self.package(2014),"--expected-games","1")
+        self.assertEqual((code,requested),(1,[2014]))
+        self.assertIn("New Player: Jacksonville-controlled player appears on New York Giants",out)
+        self.assertNotIn("Old Player",out)
+        code,out,requested=self.run_cli(self.package(2014),"--season","2014")
+        self.assertEqual((code,requested),(1,[2014]))
+        self.assertIn("New Player: Jacksonville-controlled",out)
+
+    def test_a_season_that_differs_from_the_package_is_blocked(self):
+        code,out,requested=self.run_cli(self.package(2014),"--season","2013")
+        self.assertEqual(code,1)
+        self.assertIn("WEEK_INPUT_EXCLUSIVITY: BLOCKED",out)
+        self.assertIn("the package is for season 2014, not --season 2013",out)
+        self.assertEqual(requested,[])  # refused before any roster is read
+        code,out,_=self.run_cli(self.package("twenty"))
+        self.assertEqual(code,1)
+        self.assertIn("is not a season year",out)
+
+    def test_a_package_without_a_season_key_keeps_the_2013_default(self):
+        code,out,requested=self.run_cli(self.package())
+        self.assertEqual((code,requested),(1,[2013]))
+        self.assertIn("Old Player: Jacksonville-controlled player appears on New York Giants",out)
+        self.assertNotIn("New Player",out)
+        code,out,requested=self.run_cli(self.package(),"--season","2014")
+        self.assertEqual((code,requested),(1,[2014]))
+        self.assertIn("New Player: Jacksonville-controlled",out)
+        # A list is not a package: no season, the 2013 default, and blocked.
+        code,out,requested=self.run_cli([])
+        self.assertEqual((code,requested),(1,[2013]))
+        self.assertIn("requires a nonempty games list",out)
+
+    def test_a_clean_package_of_its_own_season_is_ready(self):
+        data=self.package(2014)
+        for row in data["games"][0]["away_input"]["roster"]:
+            if row["player_id"] in {"Old Player","New Player"}:
+                row["player_id"]="Giants "+row["player_id"]
+        data["games"][0]["away_input"]["active_players"]=game_day_actives(data["games"][0]["away_input"]["roster"])
+        code,out,requested=self.run_cli(data,"--expected-games","1")
+        self.assertEqual((code,requested),(0,[2014]),out)
+        self.assertIn("WEEK_INPUT_EXCLUSIVITY: READY",out)
 
 
 if __name__=="__main__":

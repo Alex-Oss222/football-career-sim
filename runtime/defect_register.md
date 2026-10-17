@@ -27,7 +27,7 @@ Kernel 2014.6 was built to the frozen build plan of October 16, 2026, which Ston
 | 21 (background clubs never promote replacements; Stone's fix 13) | Closed, inputs from Week 5 | Batch B15, R21; U7 |
 | 23 (running clock after a sack outside two minutes) | Open calibration note | Row 23 |
 | 24 (2014 points of emphasis; Stone's fix 14, the downfield-foul emphasis) | **Open: not built in 2014.6** (batch B12, R24, cut by the October 16 scope decision); penalties follow the pooled 2010-2014 records | Row 24 |
-| Defensive calls recorded per snap (Stone's fix 15; no numbered row) | **Not built in 2014.6** (W1a, left out by decision D2 on October 16, then cut with B14) | Decisions record |
+| Defensive calls recorded per snap (Stone's fix 15; no numbered row) | **Fixed by W1a (records only), October 17, 2026**: Stone reversed decision D2 ("i would also build the fucking defecne two"), and every Jacksonville defensive snap now carries the applicable row of his frozen structured defensive sheet, with no result change (a call's effect stays at zero: no admissible evidence). Left out by D2 on October 16 and cut with B14 until then. The first sheet is frozen by Run Week 5 | Decisions record; runtime/README.md, kernel 2014.6 W1a |
 | 26 to 29 (in-season roster inputs) | As each row states (26 applied by the Week 5 batch) | Rows 26 to 29 |
 | 30 (clock use, timeouts, kneels and early kicks are league-model draws) | Limitation stands; fourth downs are now Stone's live call for Jacksonville (B9F) | Row 30 |
 | 31a to 31h (provisional detections) | Re-graded at the release check on the standard 250: 31c, 31d (touchdown), 31e and 31f read OUTSIDE and are accepted limits (32e, 32b, 32a, 32d); 31a, 31b, 31g and 31h read WITHIN | Item 31, item 32 |

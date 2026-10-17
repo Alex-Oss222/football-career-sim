@@ -31,6 +31,12 @@ menu, with go>"}}), and, when the frozen sheet's block says otherwise: ask, a
 two-point try ("two_point", {"choices": {"try": "go"|"kick"}}) or an onside
 kick ("onside", {"choices": {"kickoff": "onside"|"deep"}}). The paused record
 shows only what the staff supply, never a probability.
+
+Kernel 2014.6 W1a: the structured defensive sheet (records only) stays out of
+the journaled packet, so the paused record (and the closed record after it)
+binds each sheet's sha256 ("defensive_sheets"); a resume or a re-closure
+whose frozen package carries another sheet, or a sheet the pause did not, is
+refused before any draw (overnight review fix, October 17, 2026).
 """
 from __future__ import annotations
 
@@ -56,9 +62,14 @@ PARTIAL_FIELDS = ("score", "possessions", "kickoffs", "play_ledger", "injuries",
 
 def team_input(data):
     from runtime.kernel import TeamInput
+    # Kernel 2014.6 W1a: the frozen package's structured defensive sheet
+    # (records only) passes through as a dict, or None without one; a resume
+    # reads the same frozen package, whose sheets the paused record binds.
+    sheet = data.get("defensive_call_sheet")
     return TeamInput(**{**data, "active_players": tuple(data["active_players"]),
                         "roster": tuple(data["roster"]),
-                        "offensive_call_sheet": tuple(data.get("offensive_call_sheet", ()))})
+                        "offensive_call_sheet": tuple(data.get("offensive_call_sheet", ())),
+                        "defensive_call_sheet": dict(sheet) if sheet is not None else None})
 
 
 def encode(value):
@@ -130,6 +141,28 @@ def continuation_decisions(record, answer):
     return decisions
 
 
+def defensive_sheet_hashes(game):
+    """Kernel 2014.6 W1a (overnight review fix, October 17, 2026): {club:
+    sha256} of the frozen package's structured defensive sheets for this
+    game ({} without one). The sheet stays out of the journaled packet, so
+    the paused record binds it instead: a resume or a re-closure of the same
+    event refuses a package whose sheet changed (check_sheet_binding)."""
+    from runtime.defensive_calls import sheet_sha256
+    return {inp["team_id"]: sheet_sha256(inp["defensive_call_sheet"])
+            for inp in (game["home_input"], game["away_input"]) if inp.get("defensive_call_sheet") is not None}
+
+
+def check_sheet_binding(record, record_path, game):
+    """Refuse, before any draw, a paused or closed record whose bound
+    defensive sheets differ from the frozen package's (a record without the
+    binding bound none)."""
+    bound, now = record.get("defensive_sheets") or {}, defensive_sheet_hashes(game)
+    if bound != now:
+        raise ValueError("the frozen package's defensive call sheet changed since the pause: %s binds %s, the "
+                         "package carries %s" % (record_path, json.dumps(bound, sort_keys=True),
+                                                 json.dumps(now, sort_keys=True)))
+
+
 def write_paused(record_path, package, game, partial, decisions):
     """E2 step 4: completed events only. Never final totals."""
     if partial.get("terminated") or "final_score" in partial or "team_stats" in partial:
@@ -139,6 +172,9 @@ def write_paused(record_path, package, game, partial, decisions):
               "kernel_version": partial.get("kernel_version"),
               "pause": partial["pauses"][-1], "decisions": decisions,
               "partial": {k: partial[k] for k in PARTIAL_FIELDS if k in partial}}
+    sheets = defensive_sheet_hashes(game)
+    if sheets:
+        record["defensive_sheets"] = sheets
     record_path.parent.mkdir(parents=True, exist_ok=True)
     record_path.write_text(json.dumps(record, sort_keys=True, indent=1) + "\n", encoding="utf-8")
     return record
@@ -251,6 +287,8 @@ def close_slate(package, paths, snapshot, client, results_path, answer=None, run
     if own is not None and own["event_id"] not in results:
         record_path = paths.paused_game(week, postseason_week)
         record = read_paused(record_path, own["event_id"])
+        if record is not None:
+            check_sheet_binding(record, record_path, own)
         decisions = continuation_decisions(record, answer)
         result = run(team_input(own["home_input"]), team_input(own["away_input"]),
                      event_id=own["event_id"], snapshot=snapshot, client=client,
@@ -267,6 +305,8 @@ def close_slate(package, paths, snapshot, client, results_path, answer=None, run
         if record is not None:
             closed = {k: record[k] for k in ("season", "week", "event_id", "matchup")}
             closed.update({"status": "closed", "decisions": decisions, "pauses": result.get("pauses", [])})
+            if record.get("defensive_sheets"):
+                closed["defensive_sheets"] = record["defensive_sheets"]
             record_path.write_text(json.dumps(closed, sort_keys=True, indent=1) + "\n", encoding="utf-8")
     for game in package["games"]:
         if game is own or game["event_id"] in results:

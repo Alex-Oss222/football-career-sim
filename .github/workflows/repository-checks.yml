@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Kernel 2014.6 W1a: the repository check confirms that a week's
+          # call sheet was committed before the receipt that closed it, which
+          # needs the full history (a shallow checkout skips that check).
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -18,7 +23,16 @@ jobs:
       - name: Validate ten-year cap tracker
         run: python scripts/render_jaguars_cap_tracker.py --check
       - name: Regression tests
-        run: python -m unittest discover -s tests -v
+        # One process per test module on four cores; the verbose log of any
+        # failed module is printed, and every module's log is kept below.
+        run: python scripts/run_suite_parallel.py . --jobs 4 --out "${{ runner.temp }}/regression-test-logs"
+      - name: Keep the regression test logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: regression-test-logs
+          path: ${{ runner.temp }}/regression-test-logs
+          if-no-files-found: ignore
       - name: Report the separate game gate
         shell: bash
         run: |

@@ -379,7 +379,7 @@ def db_role_errors(chart):
 
 
 def jacksonville_input(receipts, game_day, anchors, call_sheet, season=2013, decisions=None, decision_kinds=(),
-                       db_roles=False):
+                       db_roles=False, defensive_sheet=None):
     """Jacksonville's TeamInput data for one game. Kernel 2014.6 batch B9
     (R8, R9; U6): ``decisions`` is the frozen sheet's decisions object and
     ``decision_kinds`` the kinds the resolving kernel decides; each block
@@ -390,8 +390,25 @@ def jacksonville_input(receipts, game_day, anchors, call_sheet, season=2013, dec
     none, Jacksonville's fourth downs are Stone's live calls. Batch B15
     (W2b): with ``db_roles`` (a kernel that seats defensive backs by family)
     the chart must name its nickel and outside reserve (db_role_errors), or
-    the input fails closed; the roles reach the kernel as chart roles."""
+    the input fails closed; the roles reach the kernel as chart roles.
+    Kernel 2014.6 W1a: an optional ``defensive_sheet`` (the frozen sheet's
+    defensive_call_sheet, Stone's structured defensive sheet) must pass
+    runtime.defensive_calls.sheet_errors and source_errors and be
+    Jacksonville's, and the installed kernel must record defensive calls, or
+    the input fails closed; it becomes the TeamInput's defensive_call_sheet
+    (records only, kept out of both packets). Without one nothing is added."""
     from . import fourth_down
+    if defensive_sheet is not None:
+        from . import defensive_calls
+        faults = defensive_calls.sheet_errors(defensive_sheet)
+        if not faults:
+            faults = defensive_calls.source_errors(defensive_sheet, ROOT, season)
+        if not faults and defensive_sheet.get("team") != PROTAGONIST:
+            faults = ["the sheet is %s's, not %s's" % (defensive_sheet.get("team"), PROTAGONIST)]
+        if not faults and not live_defensive_record():
+            faults = ["the installed kernel does not record defensive calls"]
+        if faults:
+            raise ValueError("W1a defensive call sheet: " + "; ".join(faults))
     policies = scoring_decisions.input_policies(decisions, tuple(decision_kinds),
                                                 call_names=fourth_down.sheet_call_names(call_sheet))
     undeclared = call_families.sheet_errors(call_sheet)
@@ -432,12 +449,15 @@ def jacksonville_input(receipts, game_day, anchors, call_sheet, season=2013, dec
         raise ValueError("Jacksonville would dress %d, not %d: unavailable but not listed inactive: %s; "
                          "healthy inactives: %s" % (len(active), GAME_DAY_ACTIVES, ", ".join(unlisted) or "none",
                                                      ", ".join(healthy_inactive)))
-    return {
+    data = {
         "team_id": PROTAGONIST,
         "active_players": active,
         **anchors, "roster": roster, "offensive_call_sheet": list(call_sheet),
         **policies,
     }
+    if defensive_sheet is not None:
+        data["defensive_call_sheet"] = json.loads(json.dumps(defensive_sheet))
+    return data
 
 
 def _rails_clubs(slate, games, season):
@@ -553,6 +573,14 @@ def live_db_slots():
     return profile_for(KERNEL_VERSION).has("db_slots")
 
 
+def live_defensive_record():
+    """Whether the installed kernel's profile records defensive calls
+    (kernel 2014.6 W1a, flag defensive_call_record)."""
+    from . import KERNEL_VERSION
+    from .profiles import profile_for
+    return profile_for(KERNEL_VERSION).has("defensive_call_record")
+
+
 def receipt_identity_errors(entries, receipts, identities):
     """Kernel 2014.6 batch B15 (R21): a player id used in a closed receipt is
     never renamed. ``entries`` are the slate's background club entries (rows
@@ -577,7 +605,7 @@ def receipt_identity_errors(entries, receipts, identities):
 
 
 def build_package(week, receipts, call_sheet, anchors, season=2013, strength_model=None, decisions=None,
-                  decision_kinds=None, db_slots=None):
+                  decision_kinds=None, db_slots=None, defensive_sheet=None):
     """The weekly package. `strength_model` is the strength record model for
     every club (the installed kernel's when None; kernel 2014.6 batch B7:
     under player-state-v1 every roster row needs its gsis id and the league
@@ -592,7 +620,9 @@ def build_package(week, receipts, call_sheet, anchors, season=2013, strength_mod
     nickel roles (depth_library.relabel_defensive_backs), and Jacksonville's
     chart must name its nickel and outside reserve, else its input fails
     closed (db_role_errors). Weeks before the rails, and the closed 2013
-    season, are unchanged."""
+    season, are unchanged. `defensive_sheet` (kernel 2014.6 W1a) is the
+    frozen sheet's optional defensive_call_sheet, passed to
+    jacksonville_input; without one the package is unchanged."""
     if decision_kinds is None:
         decision_kinds = scoring_decisions.live_kinds() if season != 2013 else ()
     if db_slots is None:
@@ -625,8 +655,11 @@ def build_package(week, receipts, call_sheet, anchors, season=2013, strength_mod
         def unit(team):
             club = clubs.get((rails.game_key(game), team)) if slate else None
             if team == PROTAGONIST:
+                # Kernel 2014.6 W1a: the sheet is passed only when the frozen
+                # call sheet carries one (records only).
+                sheet = {"defensive_sheet": defensive_sheet} if defensive_sheet is not None else {}
                 data = jacksonville_input(receipts, game_day, anchors, call_sheet, season, decisions=decisions,
-                                          decision_kinds=decision_kinds, db_roles=w2b)
+                                          decision_kinds=decision_kinds, db_roles=w2b, **sheet)
             else:
                 if w2b:
                     club = depth_library.relabel_defensive_backs(

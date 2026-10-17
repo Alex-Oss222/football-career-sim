@@ -190,6 +190,19 @@ only) adds two flags, guarded by the profile alone (no base table):
   ``default_moves`` from the removal's W2a record. An autonomous game is
   unchanged.
 
+Kernel 2014.6 W1a (the defensive call record; records only, added after the
+release on October 17, 2026) adds one flag, guarded by the profile alone (no
+base table):
+
+- defensive_call_record: a club whose TeamInput carries Stone's structured
+  defensive sheet (TeamInput.defensive_call_sheet, kept out of both packets)
+  has every defensive snap labelled with the sheet's applicable row after the
+  game has resolved (runtime.defensive_calls; deterministic, no random
+  number), and the result carries ``defensive_calls`` and
+  ``defensive_call_stats``. A game in which no club carries a sheet is byte
+  for byte the same with or without the flag; a profile without it refuses a
+  sheet before any draw.
+
 A base names the flags its readers require (CalibrationBase.requires_flags):
 a profile resolving on it must hold them, and a profile holding base_2014_6
 or regimes_v3 on a base that does not serve them fails closed.
@@ -276,8 +289,10 @@ B11_FLAGS = frozenset({"penalty_records"})
 B13_FLAGS = frozenset({"yard_split", "snap_values"})
 # Batch B15 mechanism flags (W2b defensive-back seats, W2c pause eligibility).
 B15_FLAGS = frozenset({"db_slots", "pause_eligibility"})
+# Kernel 2014.6 W1a flag (the defensive call record; records only).
+W1A_FLAGS = frozenset({"defensive_call_record"})
 FLAGS = (BASE_FLAGS | {"injury_2014_6", "usage_2014_6"} | B6_FLAGS | B8_FLAGS | B9_FLAGS | B9F_FLAGS | B10_FLAGS
-         | B11_FLAGS | B13_FLAGS | B15_FLAGS)
+         | B11_FLAGS | B13_FLAGS | B15_FLAGS | W1A_FLAGS)
 # A mechanism flag that needs another flag's records (a profile holding it
 # without them is refused at construction).
 FLAG_REQUIRES = {flag: B8_FLAGS for flag in B9_FLAGS}
@@ -301,7 +316,8 @@ PROFILE_2014_6 = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", stre
                                           "possession_sequencing", "two_point_tries", "return_touchdowns",
                                           "onside_kicks", "fourth_down_decisions", "ball_security_credit",
                                           "fumble_terminal_kind", "retained_kicks", "penalty_records",
-                                          "yard_split", "snap_values", "db_slots", "pause_eligibility"}),
+                                          "yard_split", "snap_values", "db_slots", "pause_eligibility",
+                                          "defensive_call_record"}),
                          record_base=True)
 
 PROFILES = {p.kernel_version: p for p in (PROFILE_2014_5, PROFILE_2014_6)}

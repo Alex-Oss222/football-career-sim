@@ -520,7 +520,31 @@ def play_calls_markdown(year, team_id, book):
             g(line, "negative_plays"), g(line, "touchdowns"), g(line, "turnovers"),
             g(line, "sacks"))) + " |")
     lines.append("")
+    lines += defensive_calls_markdown(book, team_id)
     return "\n".join(lines)
+
+
+def defensive_calls_markdown(book, team_id):
+    """Kernel 2014.6 W1a: the club's defensive call record, game by game:
+    snaps by the frozen sheet's row (no outcome column). Empty without one,
+    so earlier views are unchanged."""
+    games = (book.get("defensive_calls") or {}).get(team_id)
+    if not games:
+        return []
+    lines = ["## Defensive call record", "",
+             "Each defensive snap carries the row of Stone's frozen structured defensive sheet that its down "
+             "and distance, field zone or clock names (the sheet's applicable row, chosen by rule with no random "
+             "number, after the play was resolved). A row is the sheet's words, not the call on every such snap, "
+             "and the counts are a mix of situations, not Stone's call frequency or evidence that a call worked; "
+             "no row changes a result. Snaps no row names, kneels and spikes count as unlabelled.", "",
+             "| Week | Row | Situation | Sheet text | SNAPS |", "|---:|---|---|---|---:|"]
+    for game in games:
+        for rid, row in game["rows"].items():
+            lines.append("| %d | %s | %s | %s | %d |" % (game["week"], rid, row["menu"],
+                                                       str(row["text"]).replace("|", "/"), row["snaps"]))
+        lines.append("| %d | (unlabelled) | | | %d |" % (game["week"], game["unlabelled_snaps"]))
+    lines.append("")
+    return lines
 
 
 POINTS_NOTE = (

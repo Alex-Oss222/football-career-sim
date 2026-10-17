@@ -10,10 +10,17 @@ repository must show:
    kernel than the one that drew its prefix;
 2. no journaled-but-unreceipted 2014 event: every event in a local 2014 results
    cache (``.sim_cache/2014/week_NN_results.json`` and the preseason caches)
-   and every event in the private service's journal listing (``--journal``)
-   has a public receipt carrying its event id (an unreadable cache or listing
-   is a finding); every committed receipt must also appear in the listing, so
-   a truncated listing cannot clear the check;
+   has a public game receipt carrying its event id; every event in the
+   private service's journal listing (``--journal``) has a public record, a
+   game receipt or, for a non-game event (league awards, the league year,
+   futures contracts, staff searches, the coaching carousel), a committed
+   result record: an object carrying a nonempty ``event_id`` and
+   ``result_ref`` in a ``*results*.json`` file of the season's career folder
+   outside the game receipts. A game (an id of the form ``YEAR-weekNN-`` or
+   ``YEAR-preseason-NN-``) is recorded only by its receipt. An unreadable
+   cache, listing or result file is a finding; every committed receipt and
+   result record must also appear in the listing, so a truncated listing
+   cannot clear the check;
 3. the first 2014.6 week's inputs not frozen: no package
    (``.sim_cache/2014/week_NN_inputs.json``), no ``call_sheet.json`` and no
    ``conditions.json`` in that week's folder, because the 2014.6 sheet format
@@ -53,6 +60,10 @@ sys.path.insert(0, str(ROOT))
 from runtime.seasons import SeasonPaths  # noqa: E402
 
 PASS, FAIL, UNVERIFIED = "pass", "fail", "unverified"
+# The event ids of games (runtime.week_inputs.event_id, the postseason's weeks
+# included, and runtime.preseason): a result record never stands in for a
+# game's receipt.
+GAME_EVENT = re.compile(r"^\d{4}-(week\d{2}|preseason-\d{2})-")
 
 
 def _paused_records(paths):
@@ -94,6 +105,39 @@ def _receipts(folders):
 def receipted_events(folders):
     """Event ids carried by the public receipts in these folders."""
     return {row.get("event_id") for _, row in _receipts(folders) if row and row.get("event_id")}
+
+
+def _record_ids(node):
+    """Event ids of the non-game result records in one parsed results file."""
+    if isinstance(node, dict):
+        event_id, ref = node.get("event_id"), node.get("result_ref")
+        if isinstance(event_id, str) and event_id and isinstance(ref, str) and ref and not GAME_EVENT.match(event_id):
+            yield event_id
+        for value in node.values():
+            yield from _record_ids(value)
+    elif isinstance(node, list):
+        for value in node:
+            yield from _record_ids(value)
+
+
+def recorded_events(paths):
+    """(event ids, findings): the committed result records of the season's
+    non-game events. The owners (career/YEAR/**/*results*.json: the league
+    awards' results.json, league_year_results.json, futures_results.json and
+    the staff_changes search and carousel results) are discovered, not
+    listed, outside the game receipts and any .sim_cache."""
+    receipts = [paths.receipts, paths.postseason_receipts, paths.preseason_receipts]
+    events, findings = set(), []
+    if not paths.career.is_dir():
+        return events, findings
+    for path in sorted(paths.career.rglob("*results*.json")):
+        if {".sim_cache", "game_receipts"} & set(path.parts) or any(f in path.parents for f in receipts):
+            continue
+        try:
+            events.update(_record_ids(json.loads(path.read_text(encoding="utf-8"))))
+        except (OSError, ValueError):
+            findings.append("%s: unreadable result record" % path.relative_to(paths.root).as_posix())
+    return events, findings
 
 
 def _results_caches(paths):
@@ -150,19 +194,26 @@ def _journal_events(listing):
 
 
 def journal_findings(paths, listing):
-    """Events of this season in the service's journal listing without a receipt."""
+    """Events of this season in the service's journal listing without a
+    public record (a game receipt or a committed result record), and public
+    records absent from the listing. Returns (findings, listed events,
+    receipts, result records)."""
     try:
         events = _journal_events(listing)
     except (OSError, ValueError, KeyError, TypeError) as exc:
-        return ["%s: unreadable journal listing (%s)" % (listing, exc)], 0
+        return ["%s: unreadable journal listing (%s)" % (listing, exc)], 0, 0, 0
     season = set(e for e in events if e.startswith("%d-" % paths.year))
     receipted = receipted_events([paths.receipts, paths.postseason_receipts, paths.preseason_receipts])
-    findings = ["journal event %s has no public receipt" % e for e in sorted(season - receipted)]
-    # Every committed receipt was closed through the service, so a listing
-    # missing one is truncated or of the wrong store: it cannot clear the check.
+    recorded, findings = recorded_events(paths)
+    findings += ["journal event %s has no public receipt" % e for e in sorted(season - receipted - recorded)]
+    # Every committed receipt and result record was closed through the
+    # service, so a listing missing one is truncated or of the wrong store:
+    # it cannot clear the check.
     findings += ["receipt %s is absent from the journal listing (incomplete listing)" % e
                  for e in sorted(receipted - season)]
-    return findings, len(season)
+    findings += ["result record %s is absent from the journal listing (incomplete listing)" % e
+                 for e in sorted(recorded - receipted - season)]
+    return findings, len(season), len(receipted), len(recorded - receipted)
 
 
 def journal_check(paths, listing=None):
@@ -170,9 +221,10 @@ def journal_check(paths, listing=None):
     findings, caches = _cache_check(paths)
     notes = ["local results caches: %d" % caches]
     if listing is not None:
-        journal, events = journal_findings(paths, listing)
+        journal, events, receipts, records = journal_findings(paths, listing)
         findings += journal
-        notes.append("service journal listing compared: %d %d events" % (events, paths.year))
+        notes.append("service journal listing compared: %d %d events with %d game receipts and %d result records"
+                     % (events, paths.year, receipts, records))
     else:
         notes.append("service journal not compared (no --journal listing)")
     status = FAIL if findings else (PASS if listing is not None else UNVERIFIED)

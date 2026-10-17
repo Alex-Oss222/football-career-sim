@@ -18,10 +18,24 @@ into SOURCE_DIR first (a transient workspace, never committed):
 
 Usage:
   python scripts/research/build_2014_inseason_rails.py SOURCE_DIR --through YYYY-MM-DD
+  python scripts/research/build_2014_inseason_rails.py SOURCE_DIR --through YYYY-MM-DD --extend
   python scripts/research/build_2014_inseason_rails.py SOURCE_DIR --through YYYY-MM-DD --check
 
-Every input's sha256 is recorded in the manifest; `--check` rebuilds and
-compares without writing, and fails when an input hash differs from its pin.
+Every input's sha256 is recorded in the manifest. `--check` never writes.
+At the as-of date of a record holding only its first build (with or
+without `--extend`) it rebuilds and compares every file, and fails when an
+input hash differs from its pin. Otherwise (an extended record, or a later
+`--through`) it checks the last build. First the bookkeeping: the
+manifest's sha256 pins of the base and every shard, shard row counts, ids
+R14-0001 upward with no gap or repeat. Then, only when SOURCE_DIR's input
+hashes equal that build's pins, it re-derives the build's rows and compares
+them field by field with the committed rows, and wants every page of the
+source in sources.json. Last, any candidate row through `--through` the
+record lacks fails it. Any other source never passes: STALE at the as-of
+date, NOT VERIFIED (exit 1) after it, with the missing rows reported. The
+base's content, earlier builds' rows and the last build's no-op labels are
+not re-derived there; only the sha256 pins (as in validate_repository)
+guard them.
 
 Gate and append-only rules (library/2014_inseason_rails.md):
 - `--through` may not be later than Document 5's master date, and no row
@@ -1291,6 +1305,143 @@ def _key(row):
     return ("full", row["gate_date"], row["club"], row["kind"], row.get("uid") or row.get("player"))
 
 
+def _unmatched(rows, prior, ident):
+    """The candidate rows the committed rows `prior` do not already hold,
+    matched by identity key (`_key`) with the identity assignments of
+    `prior` frozen: --extend's matching, which --check repeats."""
+    for r in prior:  # the identity assignments already committed stay frozen
+        if r.get("uid") and r.get("player_id"):
+            ident.assigned[r["uid"]] = r["player_id"]
+    left = collections.Counter(_key(r) for r in prior)
+    new = []
+    for r in rows:
+        probe = finish(dict(r, id="R14-0000", effective_from_week=0), ident)
+        key = _key(probe)
+        if left[key]:
+            left[key] -= 1
+            continue
+        new.append(r)
+    return new
+
+
+def _num(row_id):
+    return int(row_id.split("-")[1])
+
+
+def _field_diffs(committed, derived):
+    """Field-by-field differences between committed and re-derived rows. A
+    repeated committed id is itself a difference: keyed by id, one copy
+    would hide the other."""
+    have, want = {r["id"]: r for r in committed}, {r["id"]: r for r in derived}
+
+    def show(r, k):
+        return json.dumps(r[k], ensure_ascii=False) if k in r else "absent"
+    out = ["%s is committed %d times" % (i, n)
+           for i, n in collections.Counter(r["id"] for r in committed).items() if n > 1]
+    out += ["%s is committed but not re-derived" % i for i in have if i not in want]
+    out += ["%s is re-derived but not committed" % i for i in want if i not in have]
+    for i in (i for i in want if i in have):
+        out += ["%s %s: committed %s, re-derived %s" % (i, k, show(have[i], k), show(want[i], k))
+                for k in sorted(set(have[i]) | set(want[i])) if show(have[i], k) != show(want[i], k)]
+    return out
+
+
+def _bookkeeping(manifest, shards, existing):
+    """The record's own bookkeeping, which needs no source: the manifest's
+    sha256 pins of the base and every shard (validate_repository's pins),
+    each shard's row count, ids running R14-0001 upward without a gap or
+    repeat in shard order, and the as-of date of the last build."""
+    out = []
+    for path, digest in [(manifest["base"]["path"], manifest["base"].get("sha256"))] + [
+            (s["path"], s.get("sha256")) for s in manifest["shards"]]:
+        if not (OUT / path).is_file() or sha256(OUT / path) != digest:
+            out.append("%s differs from its manifest sha256 pin" % path)
+    for s in manifest["shards"]:
+        if s.get("rows") != len(shards[s["path"]]["rows"]):
+            out.append("%s holds %d rows, the manifest records %s" % (s["path"], len(shards[s["path"]]["rows"]),
+                                                                       s.get("rows")))
+    ids = [r["id"] for r in existing]
+    if ids != ["R14-%04d" % i for i in range(1, len(ids) + 1)]:
+        out.append("row ids do not run R14-0001 upward without a gap or repeat, in shard order")
+    if manifest["as_of"] != manifest["builds"][-1]["through"]:
+        out.append("as-of date %s is not the last build's date %s" % (manifest["as_of"],
+                                                                      manifest["builds"][-1]["through"]))
+    return out
+
+
+def check_last_build(args, manifest, src, ident, control, shards, existing):
+    """`--check` on an extended record, or at a --through after the as-of
+    date; writes nothing. The record's bookkeeping is checked first
+    (`_bookkeeping`). When this source is the one the last build pins (its
+    input hashes equal that build's), that build is re-derived as --extend
+    made it (the rows numbered before it frozen, its candidates through its
+    own date matched by identity key, the rest numbered from its first id
+    into its shard's week) and compared field by field with its committed
+    rows, and every page hash the source gives through its date must be in
+    sources.json; its no-op labels are not re-derived. Then no candidate
+    row through --through may be missing from the record. Any other source
+    never passes: at the as-of date it is stale, after it the last build is
+    NOT VERIFIED and only the rows the record lacks are reported. The base's
+    content and earlier builds' rows are guarded by the sha256 pins alone."""
+    build = manifest["builds"][-1]
+    rows, problems = candidates(src, ident, control, src.pre_reserve, args.through)
+    if problems:
+        print("STOPPED:\n- " + "\n- ".join(problems))
+        return 1
+    stale = _bookkeeping(manifest, shards, existing)
+    unverified = None
+    rederived = src.hashes == build["inputs"]
+    if rederived:
+        lo, hi = (_num(i) for i in build["rows"])
+        prior = [r for r in existing if _num(r["id"]) < lo]
+        committed = [r for r in existing if lo <= _num(r["id"]) <= hi]
+        stale += ["%s is committed after the last build's rows" % r["id"] for r in existing if _num(r["id"]) > hi]
+        week = next((s["week"] for s in manifest["shards"] for r in shards[s["path"]]["rows"]
+                     if r["id"] == build["rows"][0]), manifest["shards"][-1]["week"])
+        new = _unmatched([r for r in rows if r["gate_date"] <= build["through"]], prior, ident)
+        derived = number(new, lo, week, ident, problems)
+        if problems:
+            print("STOPPED:\n- " + "\n- ".join(problems))
+            return 1
+        stale += _field_diffs(committed, derived)
+        if len(manifest["builds"]) > 1:
+            late = [r["id"] for r in derived if r["gate_date"] <= manifest["builds"][-2]["through"]]
+            if late != build.get("late_found", []):
+                stale.append("late-found rows: committed %s, re-derived %s" % (build.get("late_found", []), late))
+        # --extend adds a page only when sources.json lacks it, so every page
+        # of the pinned source is listed, though an older hash may stand.
+        pages = json.loads((OUT / "sources.json").read_text(encoding="utf-8"))
+        stale += ["sources.json lacks the %s page %s" % (kind, page)
+                  for kind, mapping in _pages(src, build["through"]).items()
+                  for page in mapping if page not in pages.get(kind, {})]
+        # Every committed row is gated on or before the as-of date, so a
+        # candidate gated after it is one the record lacks.
+        missing = sum(r["gate_date"] > build["through"] for r in rows)
+    else:
+        differ = ", ".join(sorted(
+            k for k in set(src.hashes) | set(build["inputs"]) if src.hashes.get(k) != build["inputs"].get(k)))
+        if args.through == manifest["as_of"]:
+            stale.append("inputs differ from the last build's pins: " + differ)
+        else:
+            unverified = "the last build's rows are not re-derived: this source is not the one it pins (%s)" % differ
+        missing = len(_unmatched(rows, existing, ident))
+    if missing:
+        stale.append("%d rows through %s are not committed (append with --extend)" % (missing, args.through))
+    if stale:
+        print("STALE:\n- " + "\n- ".join(stale + ([unverified] if unverified else [])))
+        return 1
+    if unverified:
+        # A later source may well hold the committed rows unchanged, but it
+        # cannot vouch for them: only the pinned source can.
+        print("IN-SEASON RAILS: NOT VERIFIED %d rows through %s; %s; check with the source the last build "
+              "(%s to %s, through %s) pins" % (len(existing), args.through, unverified, build["rows"][0],
+                                               build["rows"][1], build["through"]))
+        return 1
+    print("IN-SEASON RAILS: CURRENT %d rows through %s; the last build (%s to %s, through %s) re-derived field "
+          "by field" % (len(existing), args.through, build["rows"][0], build["rows"][1], build["through"]))
+    return 0
+
+
 def extend(args, manifest):
     """Append the rows gated after the committed as-of date through
     `--through`, plus any late-found row dated earlier, numbered from the
@@ -1305,19 +1456,10 @@ def extend(args, manifest):
     for s in manifest["shards"]:
         for code, entries in shards[s["path"]].get("noop_labels", {}).items():
             labels.setdefault(code, []).extend(entries)
-    for r in existing:  # the identity assignments already committed stay frozen
-        if r.get("uid") and r.get("player_id"):
-            ident.assigned[r["uid"]] = r["player_id"]
+    if args.check:
+        return check_last_build(args, manifest, src, ident, control, shards, existing)
     rows, problems = candidates(src, ident, control, src.pre_reserve, args.through)
-    left = collections.Counter(_key(r) for r in existing)
-    new = []
-    for r in rows:
-        probe = finish(dict(r, id="R14-0000", effective_from_week=0), ident)
-        key = _key(probe)
-        if left[key]:
-            left[key] -= 1
-            continue
-        new.append(r)
+    new = _unmatched(rows, existing, ident)
     if problems:
         print("STOPPED:\n- " + "\n- ".join(problems))
         return 1
@@ -1367,7 +1509,14 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("source_dir", type=Path)
     parser.add_argument("--through", required=True)
-    parser.add_argument("--check", action="store_true", help="rebuild the first build and compare (no write)")
+    parser.add_argument("--check", action="store_true",
+                        help="write nothing: at the as-of date of a first-build-only record, rebuild it and "
+                             "compare every file; otherwise check the last build: the manifest's sha256 pins, row "
+                             "counts and ids, then, only when SOURCE_DIR's input hashes equal that build's pins, "
+                             "re-derive its rows and compare them field by field and want its pages in "
+                             "sources.json, and fail on any row through --through the record lacks; another source "
+                             "never passes (STALE at the as-of date, NOT VERIFIED after it); the base's content, "
+                             "earlier builds' rows and no-op labels are guarded by the sha256 pins alone")
     parser.add_argument("--extend", action="store_true", help="append rows after the committed as-of date")
     args = parser.parse_args()
     master = player_bios.master_date(ROOT)
@@ -1376,6 +1525,13 @@ def main():
         return 1
     manifest_path = OUT / "manifest.json"
     existing = json.loads(manifest_path.read_text()) if manifest_path.exists() else None
+    if args.check and existing:
+        # --check never writes. A record holding only its first build is
+        # rebuilt and compared file by file at its as-of date, with or
+        # without --extend; an extended record no longer reproduces from its
+        # first build alone, and a rebuild through a later date never matches
+        # the committed as-of date, so both check the last build instead.
+        args.extend = len(existing.get("builds", ())) > 1 or args.through != existing["as_of"]
     if args.extend:
         if not existing:
             print("REFUSED: nothing committed to extend")
