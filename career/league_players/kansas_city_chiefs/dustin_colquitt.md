@@ -1,0 +1,26 @@
+# Dustin Colquitt
+
+![Dustin Colquitt career card](assets/dustin_colquitt.svg)
+
+## Career stats
+
+### Regular season
+
+| Season | Club | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City Chiefs | 16 | 84 | 3,717 | 44.2 | 39.5 | 35 | 62 | 4 | 41.7 | 5.2 | 322 |
+| 2014 | Kansas City Chiefs | 4 | 25 | 1,192 | 47.7 | 42.1 | 8 | 61 | 1 | 32.0 | 6.2 | 119 |
+| **Career** |  | 20 | 109 | 4,909 | 45.0 | 40.1 | 43 | 62 | 5 | 39.4 | 5.5 | 441 |
+
+### Playoffs
+
+| Season | Club | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City Chiefs | 1 | 6 | 280 | 46.7 | 43.5 | 3 | 56 | 0 | 50.0 | 6.0 | 19 |
+| **Career** |  | 1 | 6 | 280 | 46.7 | 43.5 | 3 | 56 | 0 | 50.0 | 6.0 | 19 |
+
+## Awards
+
+- AFC Special Teams Player of the Week (2014, Week 3)
+
+Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).

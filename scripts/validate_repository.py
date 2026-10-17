@@ -338,6 +338,18 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
         errors.append(f'Invalid team tracker: {exc}')
 
+    # The league player cards (career/league_players) are a generated reader
+    # view of the game records: a game closed without re-rendering fails.
+    try:
+        from scripts.render_player_cards import check as check_player_cards
+        card_errors = check_player_cards(root)
+        errors.extend(card_errors[:20])
+        if len(card_errors) > 20:
+            errors.append('League player cards: %d more stale or missing files; run '
+                          'scripts/render_player_cards.py' % (len(card_errors) - 20))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid league player cards: {exc}')
+
     # Season statistics are generated artifacts. Rebuild them from the durable
     # closed-game receipts so stale caches or hand-edited views fail closed.
     try:

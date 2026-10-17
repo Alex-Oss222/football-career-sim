@@ -342,7 +342,14 @@
     "library/data/2014_db_families.json",
     "scripts/research/build_2014_db_families.py",
     "scripts/render_inseason_rails.py",
-    "tests/test_inseason_rails.py"
+    "tests/test_inseason_rails.py",
+    "runtime/player_cards.py",
+    "scripts/render_player_cards.py",
+    "career/league_players/README.md",
+    "library/2014_listed_player_identity.md",
+    "library/data/2014_listed_player_identity.json",
+    "scripts/research/build_2014_listed_player_identity.py",
+    "tests/test_player_cards.py"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",
