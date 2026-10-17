@@ -1,0 +1,122 @@
+file,column,definition,coverage
+defense_player_season_2006_2013.csv,season,Regular season year,all
+defense_player_season_2006_2013.csv,team,"Club, current nflverse code (LA = Rams, LAC = Chargers, LV = Raiders for every season)",all
+defense_player_season_2006_2013.csv,gsis_id,NFL GSIS player ID; joins to nflverse play-by-play and player tables,all
+defense_player_season_2006_2013.csv,pfr_id,"Pro Football Reference player ID, for joining other sources",all
+defense_player_season_2006_2013.csv,player_name,"Name from depth chart, else roster, else player table",all
+defense_player_season_2006_2013.csv,position,"Defensive position from that season's depth chart, else roster, else player stats, else player table",all
+defense_player_season_2006_2013.csv,position_group,"DL (DE, DT, NT), LB (OLB, ILB, MLB), DB (CB, S). 3-4 edge rushers listed as OLB fall in LB",all
+defense_player_season_2006_2013.csv,depth_position,"Most frequent depth-chart slot that season (e.g. LDE, RCB, WLB)",all; blank if never on chart
+defense_player_season_2006_2013.csv,age_sept1,Age in years on 1 September of the season,all
+defense_player_season_2006_2013.csv,years_exp,Accrued seasons per nflverse roster,all
+defense_player_season_2006_2013.csv,draft_year,Draft year; blank = undrafted or unknown,all
+defense_player_season_2006_2013.csv,draft_round,Draft round; blank = undrafted or unknown,all
+defense_player_season_2006_2013.csv,draft_pick,Overall pick; blank = undrafted or unknown,all
+defense_player_season_2006_2013.csv,n_teams_season,Clubs the player has a row for that season; rows are per club,all
+defense_player_season_2006_2013.csv,team_games,Club regular-season games,all
+defense_player_season_2006_2013.csv,games_with_def_stat,Games in which the player was credited with any defensive stat on a scrimmage play (lower bound on games played),all
+defense_player_season_2006_2013.csv,games_season_all_teams,Games played per nflverse season stats; total across clubs if traded,all; blank if absent from that table
+defense_player_season_2006_2013.csv,team_depth_charts,Weekly NFL depth charts published for the club that season (16 to 18),all
+defense_player_season_2006_2013.csv,depth_weeks_listed,Weekly charts listing the player on defense at any depth,all
+defense_player_season_2006_2013.csv,depth_weeks_starter,Weekly charts listing the player as a defensive starter (depth 1),all
+defense_player_season_2006_2013.csv,depth_starter_share,depth_weeks_starter / team_depth_charts; the playing-time proxy for 2006 to 2012,all
+defense_player_season_2006_2013.csv,def_snaps,Regular-season defensive snaps,2013 only; nflverse 2012 file is empty
+defense_player_season_2006_2013.csv,def_snap_pct,def_snaps / team_def_snaps,2013 only
+defense_player_season_2006_2013.csv,games_with_def_snap,Games with at least one defensive snap,2013 only
+defense_player_season_2006_2013.csv,team_def_snaps,"Club defensive snaps, reconstructed from per-game snaps and percentages",2013 only
+defense_player_season_2006_2013.csv,sacks,"Sacks, half sacks as 0.5",all
+defense_player_season_2006_2013.csv,sack_plays,Plays credited with a full or half sack,all
+defense_player_season_2006_2013.csv,qb_hits,Official QB hits; most sacks also carry a QB hit,2006 on
+defense_player_season_2006_2013.csv,qb_hits_non_sack,QB hits on plays that were not sacks,2006 on
+defense_player_season_2006_2013.csv,pressure_plays,"Distinct plays with a sack, half sack or QB hit credit; the free pass-rush proxy, not PFF pressures",2006 on
+defense_player_season_2006_2013.csv,roughing_passer_pen,Roughing-the-passer penalties,all
+defense_player_season_2006_2013.csv,tackle_plays,"Scrimmage plays with any tackle credit (solo, shared or assist), counted once per play. Special teams excluded",all
+defense_player_season_2006_2013.csv,tackles_solo,Solo tackles on scrimmage plays,all
+defense_player_season_2006_2013.csv,tackles_with_assist,Shared tackles credited as primary (nflverse tackle_with_assist); recording drops sharply from 2011,all
+defense_player_season_2006_2013.csv,tackle_assists,Assisted tackles on scrimmage plays; recording convention shifts in 2011,all
+defense_player_season_2006_2013.csv,run_tackle_plays,Tackle credits on designed runs,all
+defense_player_season_2006_2013.csv,run_stops,Tackle credits on designed runs the offense failed to make successful (nflverse success = 0),all
+defense_player_season_2006_2013.csv,run_tackle_yards_mean,Mean yards gained on runs the player tackled; lower is better,all; blank if none
+defense_player_season_2006_2013.csv,run_tackle_epa_mean,Mean offensive EPA on runs the player tackled; lower is better,all; blank if none
+defense_player_season_2006_2013.csv,tackles_behind_los,Tackle credits on non-sack plays that lost yards; consistent substitute for TFL across all seasons,all
+defense_player_season_2006_2013.csv,tfl_official,Official tackles for loss,2008 on; blank 2006-2007 (not recorded)
+defense_player_season_2006_2013.csv,pass_tackle_plays,"Tackle credits on completed passes; rough indicator of who was near the catch, not targets allowed",all
+defense_player_season_2006_2013.csv,pass_stops,Tackle credits on completions that were not successful for the offense,all
+defense_player_season_2006_2013.csv,pass_tackle_yards_mean,Mean yards gained on completions the player tackled,all; blank if none
+defense_player_season_2006_2013.csv,pass_tackle_epa_mean,Mean offensive EPA on completions the player tackled,all; blank if none
+defense_player_season_2006_2013.csv,passes_defensed,Passes defensed,all
+defense_player_season_2006_2013.csv,interceptions,Interceptions,all
+defense_player_season_2006_2013.csv,dpi,Defensive pass interference penalties,all
+defense_player_season_2006_2013.csv,dpi_yards,Yards on DPI penalties,all
+defense_player_season_2006_2013.csv,holding_contact_pen,"Defensive holding, illegal contact and illegal use of hands penalties",all
+defense_player_season_2006_2013.csv,forced_fumbles,Forced fumbles on scrimmage plays,all
+defense_player_season_2006_2013.csv,fumble_recoveries,Opponent fumbles recovered on scrimmage plays,all
+defense_player_season_2006_2013.csv,def_penalties,"All defensive penalties charged to the player on scrimmage downs, including nullified plays",all
+defense_player_season_2006_2013.csv,def_penalty_yards,Yards on those penalties,all
+defense_player_season_2006_2013.csv,pre_snap_pen,"Defensive offside, encroachment and neutral zone infractions",all
+defense_team_season_2006_2013.csv,team,"Club, current nflverse code",all
+defense_team_season_2006_2013.csv,season,Regular season year,all
+defense_team_season_2006_2013.csv,games,Regular-season games,all
+defense_team_season_2006_2013.csv,plays,Opponent dropbacks plus designed runs with valid EPA (nflverse pass==1 or rush==1); includes penalty plays,all
+defense_team_season_2006_2013.csv,dropbacks,"Opponent dropbacks, including sacks and scrambles",all
+defense_team_season_2006_2013.csv,pass_attempts,"Opponent pass attempts, excluding sacks and scrambles",all
+defense_team_season_2006_2013.csv,rushes,"Opponent designed runs, excluding scrambles",all
+defense_team_season_2006_2013.csv,epa_per_play,Mean offensive EPA allowed per play; lower is better for the defense,all
+defense_team_season_2006_2013.csv,epa_per_dropback,EPA allowed per dropback (pass rush plus coverage),all
+defense_team_season_2006_2013.csv,epa_per_pass_att,"EPA allowed per pass attempt, sacks and scrambles excluded (coverage-leaning)",all
+defense_team_season_2006_2013.csv,epa_per_rush,EPA allowed per designed run,all
+defense_team_season_2006_2013.csv,success_dropback,Offensive success rate allowed on dropbacks,all
+defense_team_season_2006_2013.csv,success_rush,Offensive success rate allowed on runs,all
+defense_team_season_2006_2013.csv,epa_per_dropback_neutral,"As epa_per_dropback, win probability 10% to 90% and outside the last two minutes of each half",all
+defense_team_season_2006_2013.csv,epa_per_rush_neutral,"As epa_per_rush, same neutral filter",all
+defense_team_season_2006_2013.csv,epa_per_dropback_adj,"Opponent-adjusted: each play's EPA minus that offense's mean against all other defenses that season, re-centred on the league mean",all
+defense_team_season_2006_2013.csv,epa_per_rush_adj,"Opponent-adjusted EPA per run, same method",all
+defense_team_season_2006_2013.csv,sack_rate,Sacks per dropback,all
+defense_team_season_2006_2013.csv,qb_hit_or_sack_rate,Dropbacks with a QB hit or sack per dropback,all
+defense_team_season_2006_2013.csv,int_rate,Interceptions per pass attempt,all
+defense_team_season_2006_2013.csv,pass_defensed_rate,Pass attempts with a pass defensed or interception per attempt,all
+defense_team_season_2006_2013.csv,completion_rate_allowed,Completions per pass attempt,all
+defense_team_season_2006_2013.csv,explosive_pass_rate,Pass attempts gaining 20+ yards per attempt,all
+defense_team_season_2006_2013.csv,explosive_run_rate,Runs gaining 10+ yards per run,all
+defense_team_season_2006_2013.csv,run_stuff_rate,Runs gaining 0 or fewer yards per run,all
+defense_team_season_2006_2013.csv,yards_per_rush,Yards allowed per designed run,all
+defense_team_season_2006_2013.csv,def_penalties_per_game,"Defensive penalties on scrimmage downs per game, including declined and offsetting where recorded",all
+defense_team_season_2006_2013.csv,dpi_count,Defensive pass interference penalties; blank = none,all
+defense_team_season_2006_2013.csv,dpi_yards,DPI yards; blank = none,all
+defense_team_season_2006_2013.csv,drives_faced,Opponent drives (nflverse fixed_drive),all
+defense_team_season_2006_2013.csv,td_per_drive,"Share of opponent drives ending in an offensive touchdown; the old outcome measure, for comparison",all
+defense_team_season_2006_2013.csv,fg_per_drive,Share ending in a made field goal,all
+defense_team_season_2006_2013.csv,turnover_per_drive,Share ending in a turnover,all
+defense_team_season_2006_2013.csv,punt_per_drive,Share ending in a punt,all
+defense_team_season_2006_2013.csv,points_per_drive_approx,(7 x TD drives + 3 x FG drives) / drives,all
+defense_team_season_2006_2013.csv,points_allowed_per_game,"Points allowed per game from final scores, including return and defensive scores by the opponent",all
+defense_team_season_2006_2013.csv,prev_starter_weeks_share_returning,Share of last season's defensive starter-weeks belonging to players on this season's week-1 defensive depth chart (known before kickoff),all
+defense_team_season_2006_2013.csv,wk1_starters_returning,Week-1 defensive starters who started at least 4 weeks for the club last season,all
+defense_team_season_2006_2013.csv,epa_per_play_prev,Prior-season value of epa_per_play for the same club,all (2006 lags use 2005 data)
+defense_team_season_2006_2013.csv,epa_per_dropback_prev,Prior-season value of epa_per_dropback for the same club,all (2006 lags use 2005 data)
+defense_team_season_2006_2013.csv,epa_per_pass_att_prev,Prior-season value of epa_per_pass_att for the same club,all (2006 lags use 2005 data)
+defense_team_season_2006_2013.csv,epa_per_rush_prev,Prior-season value of epa_per_rush for the same club,all (2006 lags use 2005 data)
+defense_team_season_2006_2013.csv,epa_per_dropback_adj_prev,Prior-season value of epa_per_dropback_adj for the same club,all (2006 lags use 2005 data)
+defense_team_season_2006_2013.csv,epa_per_rush_adj_prev,Prior-season value of epa_per_rush_adj for the same club,all (2006 lags use 2005 data)
+defense_team_season_2006_2013.csv,success_dropback_prev,Prior-season value of success_dropback for the same club,all (2006 lags use 2005 data)
+defense_team_season_2006_2013.csv,success_rush_prev,Prior-season value of success_rush for the same club,all (2006 lags use 2005 data)
+defense_team_season_2006_2013.csv,sack_rate_prev,Prior-season value of sack_rate for the same club,all (2006 lags use 2005 data)
+defense_team_season_2006_2013.csv,qb_hit_or_sack_rate_prev,Prior-season value of qb_hit_or_sack_rate for the same club,2007 on (2005 pbp has no QB hits)
+defense_team_season_2006_2013.csv,int_rate_prev,Prior-season value of int_rate for the same club,all (2006 lags use 2005 data)
+defense_team_season_2006_2013.csv,td_per_drive_prev,Prior-season value of td_per_drive for the same club,all (2006 lags use 2005 data)
+defense_team_season_2006_2013.csv,points_per_drive_approx_prev,Prior-season value of points_per_drive_approx for the same club,all (2006 lags use 2005 data)
+defense_unclassified_players_2006_2013.csv,season,Regular season year,all
+defense_unclassified_players_2006_2013.csv,team,Club,all
+defense_unclassified_players_2006_2013.csv,gsis_id,GSIS ID,all
+defense_unclassified_players_2006_2013.csv,pfr_id,PFR ID,all
+defense_unclassified_players_2006_2013.csv,player_name,Name,all
+defense_unclassified_players_2006_2013.csv,roster_position,Roster position,all
+defense_unclassified_players_2006_2013.csv,stats_position,nflverse stats position,all
+defense_unclassified_players_2006_2013.csv,depth_position,Defensive depth slot if any,all
+defense_unclassified_players_2006_2013.csv,tackle_plays,As in player file,all
+defense_unclassified_players_2006_2013.csv,sacks,As in player file,all
+defense_unclassified_players_2006_2013.csv,qb_hits,As in player file,all
+defense_unclassified_players_2006_2013.csv,passes_defensed,As in player file,all
+defense_unclassified_players_2006_2013.csv,interceptions,As in player file,all
+defense_unclassified_players_2006_2013.csv,forced_fumbles,As in player file,all
+defense_unclassified_players_2006_2013.csv,def_penalties,As in player file,all
