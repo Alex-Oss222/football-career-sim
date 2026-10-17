@@ -475,6 +475,12 @@ def handler(store,token,snapshot=None,locked_until=None):
                 self.send(404,{"error":"not found"})
             except (json.JSONDecodeError,KeyError,TypeError,ValueError) as e:
                 self.send(409,{"error":str(e)})
+            except OSError as e:
+                # Kernel 2014.6 release review: a data file the service reads
+                # (the player-state model, public table or manifest) missing
+                # from the image answers with the error instead of dropping
+                # the connection.
+                self.send(500,{"error":"private runtime data unavailable: %s"%e})
     return Handler
 
 def main():

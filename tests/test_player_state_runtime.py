@@ -28,6 +28,7 @@ from runtime.kernel import TeamInput, resolve_game, validate_result
 from runtime.profiles import PROFILE_2014_5, PROFILE_2014_6
 from runtime.private_service import Store
 from local_private_service import local_service
+from release_staging import copied_root, stage_bound_release, stage_unbound_release
 from support_rosters import game_day_roster
 from synthetic_games import SEED
 
@@ -623,21 +624,27 @@ class WeeklyInputTests(unittest.TestCase):
 
     def test_release_gate_applies_from_kernel_2014_6(self):
         self.assertIn("player_state", seasons.RELEASE_GATES)
-        data = json.loads((ROOT / "runtime/season_readiness.json").read_text())
+        # Judged on a copy staged before the 2014 bind (release_staging), so
+        # the test holds whatever the real checkout's gate reads.
+        root = stage_unbound_release(copied_root(self))
+        data = json.loads((root / "runtime/season_readiness.json").read_text())
         gate = next(g for g in data["seasons"]["2014"]["gates"] if g["id"] == "player_state")
         self.assertEqual((gate["status"], gate["applies_from_kernel"]), ("BLOCKED", "2014.6"))
         # Kernel 2014.6 is installed (release, B18): the gate blocks every
         # new game until the bind; under 2014.5 it neither blocks nor passes.
-        errors = seasons.game_release_errors(2014)
+        errors = seasons.game_release_errors(2014, root)
         self.assertTrue(any(e.startswith("player_state") for e in errors))
         with mock.patch("runtime.KERNEL_VERSION", "2014.5"):
-            errors = seasons.game_release_errors(2014)
+            errors = seasons.game_release_errors(2014, root)
         self.assertFalse(any(e.startswith("player_state") for e in errors))
         # A committed receipt is judged by its own kernel's gates
         # (Stone, October 17, 2026, "A: one PR"; tests/test_continuity.py).
         for kernel, blocked in (("2014.4", False), ("2014.5", False), ("2014.6", True)):
-            errors = seasons.game_release_errors(2014, receipt_kernel=kernel)
+            errors = seasons.game_release_errors(2014, root, receipt_kernel=kernel)
             self.assertEqual(any(e.startswith("player_state") for e in errors), blocked, kernel)
+        # After the bind (staged) the gate passes the installed kernel.
+        stage_bound_release(root)
+        self.assertFalse(any(e.startswith("player_state") for e in seasons.game_release_errors(2014, root)))
 
 
 class DrawnTierTests(unittest.TestCase):

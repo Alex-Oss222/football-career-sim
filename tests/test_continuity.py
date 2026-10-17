@@ -11,6 +11,7 @@ from validate_repository import receipt_coverage_errors, validate
 from check_game_readiness import assess, check
 from runtime.seasons import current_record
 from runtime.events import EVENT_META, closures, load_events
+from release_staging import stage_unbound_release
 
 
 class ContinuityTests(unittest.TestCase):
@@ -45,13 +46,23 @@ class ContinuityTests(unittest.TestCase):
         # Kernel 2014.6 release (Stone, October 17, 2026, "A: one PR"). Half
         # one: the committed 2014.4 and 2014.5 receipts pass the repository
         # check while the player_state gate (from 2014.6) is still BLOCKED.
+        # The copy is staged before the 2014 bind (release_staging): the gate
+        # BLOCKED, no binding file and only the receipts of the kernels it
+        # does not apply to, so both halves are proved whatever the real
+        # checkout reads after the bind and later weeks.
         from runtime import KERNEL_VERSION
-        from runtime.seasons import game_release_errors, require_game_release
+        from runtime.seasons import game_release_errors, kernel_tuple, require_game_release
         message = '2014 receipts exist before season release acceptance'
+        stage_unbound_release(self.root)
         gate = next(g for g in json.loads((self.root/'runtime/season_readiness.json').read_text())
                     ['seasons']['2014']['gates'] if g['id'] == 'player_state')
         self.assertEqual((KERNEL_VERSION, gate['status'], gate['applies_from_kernel']), ('2014.6', 'BLOCKED', '2014.6'))
-        receipts = sorted((self.root/'career/2014/05_Regular_Season/Statistics/records/game_receipts').glob('week_*.json'))
+        receipts = []
+        for path in sorted((self.root/'career/2014/05_Regular_Season/Statistics/records/game_receipts').glob('week_*.json')):
+            if kernel_tuple(json.loads(path.read_text())['kernel_version']) < kernel_tuple(gate['applies_from_kernel']):
+                receipts.append(path)
+            else:
+                path.unlink()
         kernels = {json.loads(path.read_text())['kernel_version'] for path in receipts}
         self.assertEqual(kernels, {'2014.4', '2014.5'})
         self.assertNotIn(message, validate(self.root))

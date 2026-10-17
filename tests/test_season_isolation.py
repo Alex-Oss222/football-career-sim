@@ -5,7 +5,6 @@ import io
 import json
 import os
 from pathlib import Path
-import shutil
 import subprocess
 import sys
 import tempfile
@@ -18,38 +17,7 @@ from runtime import game_runner, week_inputs
 from runtime.seasons import SeasonPaths, current_record, require_receipt_season, game_release_errors
 from scripts import close_week, build_week_inputs, render_box_score
 import check_game_readiness
-
-IGNORED = ('.git', '.sim_cache', '__pycache__', '.pytest_cache')
-
-
-def copied_root(testcase, *, without_depth_chart=False):
-    """A throwaway copy of the checkout (no cache, no Git) so a test can take
-    a release input away without touching the real tree. The 2014 release has
-    been complete since the season depth chart was written after the 53-man
-    reduction, so an open gate now has to be staged on a copy."""
-    tmp = tempfile.TemporaryDirectory(dir=ROOT.parent)
-    testcase.addCleanup(tmp.cleanup)
-    root = Path(tmp.name) / 'repo'
-    shutil.copytree(ROOT, root, ignore=shutil.ignore_patterns(*IGNORED), symlinks=True)
-    if without_depth_chart:
-        SeasonPaths(2014, root).depth_chart.unlink()
-    return root
-
-
-def stage_bound_release(root):
-    """Kernel 2014.6 release (B18): the 2014 release is accepted except the
-    player_state gate, which stays BLOCKED until the 2014 bind from merged
-    main. A test of the released state stages that bind on a copy: the gate
-    reads VERIFIED with a stand-in evidence file. The real
-    runtime/season_readiness.json is never edited."""
-    path = root / 'runtime/season_readiness.json'
-    data = json.loads(path.read_text())
-    gate = next(g for g in data['seasons']['2014']['gates'] if g['id'] == 'player_state')
-    evidence = root / 'library/data/2014_player_state_binding.json'
-    evidence.write_text(json.dumps({'staged': 'test stand-in for the bind'}))
-    gate.update(status='VERIFIED', evidence=[evidence.relative_to(root).as_posix()])
-    path.write_text(json.dumps(data, indent=2))
-    return root
+from release_staging import copied_root, stage_bound_release, unbound_release_errors
 
 
 class SeasonIsolationTests(unittest.TestCase):
@@ -123,12 +91,13 @@ class SeasonIsolationTests(unittest.TestCase):
             self.assertFalse(result['ready'])
             self.assertIn('season_release', {b['id'] for b in result['blockers']})
             client.assert_not_called()
-            # Kernel 2014.6 release (B18): the real release is open at the
-            # player_state gate until the 2014 bind, so it never reaches the
-            # service either.
-            real = check_game_readiness.assess(season=2014)
+            # Kernel 2014.6 release (B18): before the 2014 bind (staged on a
+            # copy, release_staging) the release is open at the player_state
+            # gate, so it never reaches the service either.
+            with patch.object(check_game_readiness, 'game_release_errors', unbound_release_errors(self)):
+                unbound = check_game_readiness.assess(season=2014)
             self.assertTrue(any(b['id'] == 'season_release' and b['detail'].startswith('player_state')
-                                for b in real['blockers']))
+                                for b in unbound['blockers']))
             client.assert_not_called()
             # Only the released state (after the bind, staged here) reaches
             # the service at all.
@@ -138,10 +107,12 @@ class SeasonIsolationTests(unittest.TestCase):
             client.return_value.readiness.assert_called_once()
 
     def test_direct_2014_game_is_blocked_before_private_closure(self):
-        # Kernel 2014.6 release (B18): until the 2014 bind the player_state
-        # gate refuses every new 2014 game first.
+        # Kernel 2014.6 release (B18): until the 2014 bind (staged on a copy,
+        # release_staging) the player_state gate refuses every new 2014 game
+        # first.
         client = Mock()
-        with self.assertRaisesRegex(ValueError, 'Season 2014 game execution blocked: player_state'):
+        with patch('runtime.seasons.game_release_errors', unbound_release_errors(self)), \
+                self.assertRaisesRegex(ValueError, 'Season 2014 game execution blocked: player_state'):
             game_runner.run_game(None, None, event_id='2014-week01-a-at-b',
                                  snapshot='synthetic-snapshot', client=client)
         client.close_event.assert_not_called()

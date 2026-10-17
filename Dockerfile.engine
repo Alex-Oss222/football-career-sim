@@ -10,5 +10,10 @@ WORKDIR /app
 COPY --from=verify /app/runtime/ runtime/
 COPY --from=verify /app/state/05_Current_Season_State.md state/05_Current_Season_State.md
 COPY --from=verify /app/scripts/serve_private_runtime.py scripts/serve_private_runtime.py
+# Kernel 2014.6: the service binds the 2014 player states (POST /latent/bind)
+# from the pinned model, public table and manifest (runtime/player_state.py).
+COPY --from=verify /app/library/data/2010_2014_player_state_model.json library/data/2010_2014_player_state_model.json
+COPY --from=verify /app/library/data/2014_player_state_public.json library/data/2014_player_state_public.json
+COPY --from=verify /app/library/data/2014_player_state_manifest.json library/data/2014_player_state_manifest.json
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 ENGINE_BIND_HOST=0.0.0.0
 CMD ["python", "scripts/serve_private_runtime.py"]
