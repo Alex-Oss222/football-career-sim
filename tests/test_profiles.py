@@ -128,7 +128,9 @@ class ProfileTableTests(unittest.TestCase):
                                                           # batch B13 (R16a yard split, R16b snap values)
                                                           "yard_split", "snap_values",
                                                           # batch B15 (W2b DB seats, W2c pause eligibility)
-                                                          "db_slots", "pause_eligibility"}))
+                                                          "db_slots", "pause_eligibility",
+                                                          # W1a (the defensive call record; records only)
+                                                          "defensive_call_record"}))
         a, b = sample_teams()
         r = resolve_game(a, b, seed=SEED + b"-b5-2014-6", event_id="b5-2014-6", _test_profile=PROFILE_2014_6)
         self.assertEqual(r["kernel_version"], "2014.6")

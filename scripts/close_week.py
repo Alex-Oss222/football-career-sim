@@ -56,9 +56,14 @@ PARTIAL_FIELDS = ("score", "possessions", "kickoffs", "play_ledger", "injuries",
 
 def team_input(data):
     from runtime.kernel import TeamInput
+    # Kernel 2014.6 W1a: the frozen package's structured defensive sheet
+    # (records only) passes through as a dict, or None without one; a resume
+    # reads the same frozen package.
+    sheet = data.get("defensive_call_sheet")
     return TeamInput(**{**data, "active_players": tuple(data["active_players"]),
                         "roster": tuple(data["roster"]),
-                        "offensive_call_sheet": tuple(data.get("offensive_call_sheet", ()))})
+                        "offensive_call_sheet": tuple(data.get("offensive_call_sheet", ())),
+                        "defensive_call_sheet": dict(sheet) if sheet is not None else None})
 
 
 def encode(value):

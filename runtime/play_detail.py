@@ -2383,9 +2383,24 @@ _GROUP_PREDICATES = {
     # summaries, the records and their enforcement with the full ledger;
     # zero tolerance.
     "b11_penalty": lambda r: from_kernel("2014.6")(r) and has_spots(r) and has_penalty_records(r),
+    # Kernel 2014.6 W1a (the defensive call record): evaluated on a
+    # 2014.6-or-later result or full receipt carrying the defensive call
+    # record and its snap ledger (runtime.defensive_calls.has_record); the
+    # labels are rebuilt from the published rows and compared, zero tolerance.
+    "w1a_defense": lambda r: from_kernel("2014.6")(r) and has_spots(r) and _has_defensive_record(r),
+    # W1a's reported class (a package the participation convention does not
+    # seat): measured and reported, never a violation.
+    "w1a_reported": lambda r: from_kernel("2014.6")(r) and has_spots(r) and _has_defensive_record(r),
 }
 _LISTED_FROM = {"b6_ledger": "2014.6", "b8_sequence": "2014.6", "b9f_fourth": "2014.6", "b10_ball": "2014.6",
-                "b11_penalty": "2014.6"}
+                "b11_penalty": "2014.6", "w1a_defense": "2014.6", "w1a_reported": "2014.6"}
+# Groups whose classes are audit-only (reported, never a violation).
+_AUDIT_ONLY_GROUPS = ("b6_ledger", "w1a_reported")
+
+
+def _has_defensive_record(result):
+    from .defensive_calls import has_record
+    return has_record(result)
 
 
 def _registry(rows):
@@ -2393,7 +2408,7 @@ def _registry(rows):
     for group, names in rows:
         for name in names:
             out.append(CoherenceClass(name, group, _GROUP_PREDICATES[group], listed_from=_LISTED_FROM.get(group),
-                                      audit_only=group == "b6_ledger"))
+                                      audit_only=group in _AUDIT_ONLY_GROUPS))
     return tuple(out)
 
 
@@ -2441,6 +2456,13 @@ COHERENCE_REGISTRY = _registry((
     # fouling clubs' counters, the possessions' compact summaries and the
     # first downs by penalty reconcile with the records.
     ("b11_penalty", ("penalty_record_invalid", "penalty_enforcement_illegal", "penalty_counter_mismatch")),
+    # Kernel 2014.6 W1a (listed from the 2014.6 cohort): every defensive snap
+    # of a club with a sheet carries the label its published situation gives
+    # (the sheet's applicable row), no other row carries one, and the call
+    # statistics count the labels; a row whose package the participation
+    # convention does not seat is reported (audit-only).
+    ("w1a_defense", ("def_label_menu_mismatch", "def_label_wrong_club")),
+    ("w1a_reported", ("def_package_participation_conflict",)),
 ))
 
 
@@ -2464,6 +2486,8 @@ B8_CLASSES = _names("b8_sequence")
 B9F_CLASSES = _names("b9f_fourth")
 B10_CLASSES = _names("b10_ball")
 B11_CLASSES = _names("b11_penalty")
+W1A_CLASSES = _names("w1a_defense")
+W1A_REPORTED_CLASSES = _names("w1a_reported")
 AUDIT_ONLY_CLASSES = tuple(c.name for c in COHERENCE_REGISTRY if c.audit_only)
 
 
@@ -4027,6 +4051,10 @@ def check_ledger(result, base=None, audit_only=False):
         _check_fourth_downs(possessions, rows_by_drive, err)
     if _GROUP_PREDICATES["b11_penalty"](result):
         _check_penalties(result, possessions, kick_list, ledger, rows_by_drive, err)
+    if _GROUP_PREDICATES["w1a_defense"](result):
+        # Kernel 2014.6 W1a: the defensive call record.
+        from .defensive_calls import check as check_defensive_calls
+        check_defensive_calls(result, possessions, ledger, err)
     return errors
 
 

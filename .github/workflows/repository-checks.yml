@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Kernel 2014.6 W1a: the repository check confirms that a week's
+          # call sheet was committed before the receipt that closed it, which
+          # needs the full history (a shallow checkout skips that check).
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'

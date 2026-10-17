@@ -399,7 +399,10 @@ class CoherenceRegistryTests(unittest.TestCase):
         # ball-security classes and batch B11 the three penalty-record
         # classes, all listed only from the 2014.6 cohort.
         self.assertEqual(len(pd.COHERENCE_REGISTRY), 42 + len(pd.B6_CLASSES) + len(pd.B8_CLASSES)
-                         + len(pd.B9F_CLASSES) + len(pd.B10_CLASSES) + len(pd.B11_CLASSES))
+                         + len(pd.B9F_CLASSES) + len(pd.B10_CLASSES) + len(pd.B11_CLASSES)
+                         + len(pd.W1A_CLASSES) + len(pd.W1A_REPORTED_CLASSES))
+        self.assertEqual(pd.W1A_CLASSES, ("def_label_menu_mismatch", "def_label_wrong_club"))
+        self.assertEqual(pd.W1A_REPORTED_CLASSES, ("def_package_participation_conflict",))
         self.assertEqual(pd.B11_CLASSES, ("penalty_record_invalid", "penalty_enforcement_illegal",
                                           "penalty_counter_mismatch"))
         self.assertEqual(pd.B9F_CLASSES, ("fourth_down_decision_incoherent",))
@@ -414,11 +417,11 @@ class CoherenceRegistryTests(unittest.TestCase):
         self.assertEqual(len(through_2014_5), 42)
         for c in pd.COHERENCE_REGISTRY:
             self.assertTrue(callable(c.measurable), c.name)
-            if c.name in pd.B6_CLASSES:
+            if c.name in pd.B6_CLASSES or c.name in pd.W1A_REPORTED_CLASSES:
                 self.assertEqual(c.listed_from, "2014.6", c.name)
                 self.assertTrue(c.audit_only, c.name)
             elif (c.name in pd.B8_CLASSES or c.name in pd.B9F_CLASSES or c.name in pd.B10_CLASSES
-                  or c.name in pd.B11_CLASSES):
+                  or c.name in pd.B11_CLASSES or c.name in pd.W1A_CLASSES):
                 self.assertEqual(c.listed_from, "2014.6", c.name)
                 self.assertFalse(c.audit_only, c.name)
             else:
@@ -427,9 +430,10 @@ class CoherenceRegistryTests(unittest.TestCase):
         self.assertEqual(pd.classes_for_cohort("2013.6"), through_2014_5)
         self.assertEqual(pd.classes_for_cohort("2014.5"), through_2014_5)
         self.assertEqual(pd.classes_for_cohort("2014.6"),
-                         through_2014_5 + pd.B8_CLASSES + pd.B9F_CLASSES + pd.B10_CLASSES + pd.B11_CLASSES)
+                         through_2014_5 + pd.B8_CLASSES + pd.B9F_CLASSES + pd.B10_CLASSES + pd.B11_CLASSES
+                         + pd.W1A_CLASSES)
         self.assertEqual(pd.classes_for_cohort("2014.6", include_audit_only=True), pd.COHERENCE_CLASSES)
-        self.assertEqual(pd.AUDIT_ONLY_CLASSES, pd.B6_CLASSES)
+        self.assertEqual(pd.AUDIT_ONLY_CLASSES, pd.B6_CLASSES + pd.W1A_REPORTED_CLASSES)
 
     def test_a_2014_6_class_stays_out_of_closed_cohorts(self):
         # A class a later batch adds is gated by its kernel marker and

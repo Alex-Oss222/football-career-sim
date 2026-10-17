@@ -112,6 +112,64 @@ def receipt_coverage_errors(receipts, scheduled=None):
     return errors
 
 
+def _git(root, *args):
+    """(returncode, stdout) of a git command in ``root``, or None when git
+    or the checkout's history is not available."""
+    import shutil
+    import subprocess
+    if shutil.which('git') is None or not (Path(root) / '.git').exists():
+        return None
+    p = subprocess.run(['git', *args], cwd=root, capture_output=True, text=True)
+    return p.returncode, p.stdout.strip()
+
+
+def freeze_order_errors(root, sheet_rel, receipt_rel):
+    """Kernel 2014.6 W1a: the call sheet's freeze commit (the last commit
+    that changed it, with no uncommitted change since) precedes the commit
+    that added the receipt (its closure commit), or the receipt is not
+    committed yet (a closure in progress, after the freeze). Skipped, with
+    no error, where git or the full history is unavailable (a shallow
+    checkout or the engine image's copy)."""
+    shallow = _git(root, 'rev-parse', '--is-shallow-repository')
+    if shallow is None or shallow[0] != 0 or shallow[1] == 'true':
+        return []
+    freeze = _git(root, 'log', '-1', '--format=%H', '--', sheet_rel)[1]
+    if not freeze:
+        return [f'{sheet_rel}: the call sheet is not committed, so its freeze cannot precede the closure']
+    if _git(root, 'diff', '--quiet', 'HEAD', '--', sheet_rel)[0] != 0:
+        return [f'{sheet_rel}: the call sheet changed after its freeze commit {freeze[:12]}']
+    added = _git(root, 'log', '--diff-filter=A', '--format=%H', '--', receipt_rel)[1].split()
+    if not added:
+        return []
+    closure = added[-1]
+    if closure == freeze or _git(root, 'merge-base', '--is-ancestor', freeze, closure)[0] != 0:
+        return [f'{receipt_rel}: closed in {closure[:12]}, which does not follow the call sheet\'s freeze '
+                f'commit {freeze[:12]}']
+    return []
+
+
+def defensive_record_errors(root, paths, regular, playoff):
+    """Kernel 2014.6 W1a: every 2014 receipt carrying a defensive call
+    record against the week's committed call sheet and its freeze commit."""
+    from runtime.defensive_calls import receipt_record_errors
+    errors = []
+    for receipts, folder, postseason in ((regular, paths.receipts, False), (playoff, paths.postseason_receipts, True)):
+        for receipt in receipts:
+            if not receipt.get('defensive_calls'):
+                continue
+            week = int(receipt['week'])
+            sheet_path = paths.week_folder(week, postseason=postseason) / 'call_sheet.json'
+            data = json.loads(sheet_path.read_text()) if sheet_path.is_file() else None
+            event = receipt.get('event_id')
+            errors += [f'{event}: {problem}' for problem in receipt_record_errors(receipt, data)]
+            matches = [p for p in sorted(Path(folder).glob('*.json'))
+                       if json.loads(p.read_text()).get('event_id') == event]
+            if data is not None and matches:
+                errors += freeze_order_errors(root, sheet_path.relative_to(root).as_posix(),
+                                              matches[0].relative_to(root).as_posix())
+    return errors
+
+
 def validate(root=ROOT):
     root = Path(root).resolve()
     errors = []
@@ -419,6 +477,13 @@ def validate(root=ROOT):
             names = sheet_call_names(data.get('offensive_call_sheet') or ())
             for problem in decision_errors(data.get('decisions'), names):
                 require(False, f'{sheet_path.relative_to(root)}: {problem}')
+            # Kernel 2014.6 W1a: a structured defensive sheet must pass its
+            # schema, quote its packet lines verbatim and use only the active
+            # defensive book's words (the playbook lock).
+            from runtime.defensive_calls import committed_sheet_errors
+            season = int(sheet_path.relative_to(root).parts[1])
+            for problem in committed_sheet_errors(data, root, season):
+                require(False, f'{sheet_path.relative_to(root)}: defensive_call_sheet: {problem}')
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append(f'Call sheet decision blocks cannot be checked: {exc}')
 
@@ -446,6 +511,11 @@ def validate(root=ROOT):
                 for team, score in receipt['final_score'].items():
                     require(receipt['team_stats'][team]['points'] == score,
                             '2014 receipt points differ from final score')
+            # Kernel 2014.6 W1a: a receipt's defensive call record must name
+            # the week's committed sheet (its sha256 and the offensive
+            # menus' hash), and the sheet's freeze commit must precede the
+            # commit that closed the receipt.
+            errors.extend(defensive_record_errors(root, paths, regular, playoff))
         if regular:
             games = paths.regular_games()
             def scheduled_2014(week):

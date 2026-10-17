@@ -287,6 +287,13 @@ def make_receipt(result, *, week, matchup, coverage="complete", detail="full",
             # (entrant, slots, moves, fills, specialists, returners) rides
             # with the full receipt; compact receipts are unchanged.
             receipt["substitutions"] = deepcopy(result.get("substitutions", []))
+        if result.get("defensive_calls") is not None:
+            # Kernel 2014.6 W1a (append-only, full receipts only): the
+            # defensive call record (each sheet club's sheet sha256, its
+            # offensive menus' hash, its rows' menus and verbatim text) and
+            # the snaps by row; the labels ride on the snap rows.
+            receipt["defensive_calls"] = deepcopy(result["defensive_calls"])
+            receipt["defensive_call_stats"] = deepcopy(result.get("defensive_call_stats", {}))
     return receipt
 
 
@@ -429,7 +436,24 @@ def aggregate_receipts(receipts):
     for line in league_players.values():
         line["teams"] = sorted(line["teams"])
 
-    return {
+    # Kernel 2014.6 W1a: each sheet club's defensive call record by game
+    # (snaps by row only, no outcome column), only when a receipt carries
+    # one, so every closed view regenerates unchanged.
+    defensive = {}
+    for receipt in sorted(receipts, key=lambda r: (int(r.get("week", 0)), r.get("event_id", ""))):
+        record = receipt.get("defensive_calls")
+        if not record:
+            continue
+        for team_id, entry in sorted((record.get("teams") or {}).items()):
+            stats = (receipt.get("defensive_call_stats") or {}).get(team_id) or {}
+            defensive.setdefault(team_id, []).append({
+                "week": int(receipt.get("week", 0)), "event_id": receipt.get("event_id"),
+                "rows": {rid: {"menu": row.get("menu"), "text": row.get("text"),
+                               "snaps": ((stats.get("rows") or {}).get(rid) or {}).get("snaps", 0)}
+                         for rid, row in sorted((entry.get("rows") or {}).items())},
+                "unlabelled_snaps": stats.get("unlabelled_snaps", 0)})
+
+    book = {
         "schema_version": STATBOOK_SCHEMA_VERSION,
         "through_week": through_week,
         "coverage_complete": complete,
@@ -442,6 +466,9 @@ def aggregate_receipts(receipts):
         "players": league_players,
         "play_calls": play_calls,
     }
+    if defensive:
+        book["defensive_calls"] = defensive
+    return book
 
 
 def _plays_recorded(receipt):

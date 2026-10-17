@@ -37,7 +37,8 @@ class KernelCoherenceTests(unittest.TestCase):
         self.assertEqual(len(through_2014_5), 42)
         self.assertEqual(len(COHERENCE_CLASSES), 42 + len(play_detail.B6_CLASSES) + len(play_detail.B8_CLASSES)
                          + len(play_detail.B9F_CLASSES) + len(play_detail.B10_CLASSES)
-                         + len(play_detail.B11_CLASSES))
+                         + len(play_detail.B11_CLASSES) + len(play_detail.W1A_CLASSES)
+                         + len(play_detail.W1A_REPORTED_CLASSES))
         errors = [e for r in self.games for e in check_ledger(r)]
         self.assertEqual(errors, [])
         self.assertTrue(all(validate_result(r) == [] for r in self.games))

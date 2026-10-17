@@ -21,6 +21,7 @@ from . import fourth_down as fourth
 from . import ball_security
 from . import penalties as penalty_records
 from . import yard_split
+from . import defensive_calls
 from .player_evidence import empty_player_stats, normalize_players, observation
 from .profiles import Profile, profile_for
 from .play_detail import (
@@ -69,6 +70,12 @@ class TeamInput:
     # club may carry one; omitted from the outcome packet when None and
     # entering it through fourth_down.canonical_policy.
     fourth_down_policy: dict | None = None
+    # Kernel 2014.6 W1a: the club's structured defensive call sheet
+    # (call_sheet.json defensive_call_sheet; runtime.defensive_calls). Records
+    # only: kept out of the journaled game packet and the outcome packet, it
+    # labels the club's defensive snaps after the game has resolved and
+    # changes no draw.
+    defensive_call_sheet: dict | None = None
 
 
 POLICY_FIELDS = ("try_policy", "kickoff_policy", "fourth_down_policy")
@@ -169,6 +176,26 @@ def decision_block_errors(home, away, *, profile, game_type, management_mode="au
         if block.get("otherwise") == "ask" and not (user_controlled and team.team_id == controlled_team):
             errors.append("%s asks for a live fourth_down decision; only the controlling coach's club in a "
                           "user-controlled game can answer one" % team.team_id)
+    # Kernel 2014.6 W1a: a structured defensive sheet (records only). Any
+    # club may carry one; it must be well formed and the club's own, the
+    # profile must record defensive calls, and preseason and the Pro Bowl are
+    # out of scope. It never touches a pause trigger or a draw.
+    for team in (home, away):
+        sheet = getattr(team, "defensive_call_sheet", None)
+        if sheet is None:
+            continue
+        if not profile.has("defensive_call_record"):
+            errors.append("%s carries a defensive call sheet; profile %s does not record defensive calls"
+                          % (team.team_id, profile.kernel_version))
+            continue
+        if game_type in (PRESEASON, PRO_BOWL):
+            errors.append("%s carries a defensive call sheet in a %s game (out of scope)" % (team.team_id, game_type))
+            continue
+        faults = defensive_calls.sheet_errors(sheet)
+        if faults:
+            errors.append("%s defensive call sheet: %s" % (team.team_id, "; ".join(faults)))
+        elif sheet.get("team") != team.team_id:
+            errors.append("%s carries the defensive call sheet of %s" % (team.team_id, sheet.get("team")))
     return errors
 
 
@@ -176,6 +203,8 @@ def _outcome_team(team):
     data = asdict(team)
     if data.get("strength") is None:
         data.pop("strength", None)
+    # Kernel 2014.6 W1a: the defensive sheet never enters the outcome packet.
+    data.pop("defensive_call_sheet", None)
     return outcome_policies(data, getattr(team, "offensive_call_sheet", ()) or ())
 
 
@@ -3546,6 +3575,15 @@ def _resolve_game(
         # sheet, id and source text included; the outcome packet and every
         # draw read only their canonical form (scoring_decisions.canonical_policy).
         result["decision_policies"] = {tid: b for tid, b in blocks.items() if b}
+    sheets = {team.team_id: (team.defensive_call_sheet, getattr(team, "offensive_call_sheet", ()) or ())
+              for team in (home, away) if getattr(team, "defensive_call_sheet", None) is not None}
+    if sheets:
+        # Kernel 2014.6 W1a (records only; decision_block_errors refused a
+        # sheet the profile does not record): every defensive snap of a club
+        # with a sheet is labelled with the applicable row, deterministically,
+        # after the last event, so no draw, possession or exposure can move.
+        result["defensive_calls"], result["defensive_call_stats"] = defensive_calls.label_game(
+            play_ledger, possessions, sheets)
     return result
 
 

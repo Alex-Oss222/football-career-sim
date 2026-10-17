@@ -1,0 +1,341 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "caller": "Alex Stone",
+ "book": "career/playbook/alex_stone_2013_defensive_playbook_iteration_i.md",
+ "packet": "tests/data/defensive_sheet_fixture_packet.md",
+ "notes": [
+  "Synthetic test fixture (tests/test_defensive_calls.py and the W1a acceptance runs); not the frozen sheet of any game."
+ ],
+ "rush_rule": {
+  "rule": "four unless Stone calls the five-man counter",
+  "source": {
+   "path": "tests/data/defensive_sheet_fixture_packet.md",
+   "line": 35,
+   "text": "Every simulated pressure still rushes four unless Stone explicitly calls the five-man counter."
+  }
+ },
+ "practiced": {
+  "packages": [
+   "Base",
+   "Nickel",
+   "Dime"
+  ],
+  "fronts": [
+   "Under",
+   "Nickel Even",
+   "Bear"
+  ],
+  "coverages": [
+   "Quarters",
+   "3",
+   "6",
+   "1 Robber",
+   "Fire 3"
+  ],
+  "pressures": [
+   "base-4",
+   "replace",
+   "fire-zone"
+  ],
+  "tags": [
+   "mug",
+   "field"
+  ],
+  "sources": [
+   {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 9,
+    "text": "**Under Y, Quarters**"
+   },
+   {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 10,
+    "text": "**Nickel Even, Quarters**"
+   },
+   {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 11,
+    "text": "**Nickel Even, 3**"
+   },
+   {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 12,
+    "text": "**DIME, Nickel Even, Replace Field, Quarters**"
+   },
+   {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 13,
+    "text": "**DIME, Nickel Even, 6** with interior mugs"
+   },
+   {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 14,
+    "text": "**Nickel Fire 3**"
+   },
+   {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 15,
+    "text": "**Bear, 1 Robber**"
+   }
+  ]
+ },
+ "rows": [
+  {
+   "id": "P1",
+   "kind": "presentation",
+   "call": {
+    "package": "Nickel",
+    "front": "Nickel Even",
+    "coverage": [
+     "Quarters"
+    ],
+    "pressure": "base-4"
+   },
+   "source": {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 21,
+    "text": "11, 2x2 normal down | **Nickel Even, Quarters**"
+   }
+  },
+  {
+   "id": "P2",
+   "kind": "presentation",
+   "call": {
+    "package": "Base",
+    "front": "Under",
+    "strength": "Y",
+    "coverage": [
+     "Quarters"
+    ],
+    "pressure": "base-4"
+   },
+   "source": {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 22,
+    "text": "12 personnel | **Under Y, Quarters**"
+   }
+  },
+  {
+   "id": "D1",
+   "kind": "situation",
+   "menu": "normal-down",
+   "call": {
+    "package": "Base",
+    "front": "Under",
+    "strength": "Y",
+    "coverage": [
+     "Quarters"
+    ],
+    "pressure": "base-4"
+   },
+   "source": {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 23,
+    "text": "Normal down | **Under Y, Quarters** | Base four"
+   }
+  },
+  {
+   "id": "D2",
+   "kind": "situation",
+   "menu": "second-and-long",
+   "call": {
+    "package": "Dime",
+    "front": "Nickel Even",
+    "coverage": [
+     "Quarters"
+    ],
+    "pressure": "replace",
+    "tags": [
+     "field"
+    ]
+   },
+   "source": {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 24,
+    "text": "2nd-and-long | **DIME, Nickel Even, Quarters** | Replace Field"
+   }
+  },
+  {
+   "id": "C1",
+   "kind": "counter",
+   "call": {
+    "package": "Dime",
+    "front": "Nickel Even",
+    "coverage": [
+     "Quarters"
+    ],
+    "pressure": "replace"
+   },
+   "source": {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 24,
+    "text": "Replace Boundary from the same picture"
+   }
+  },
+  {
+   "id": "D3",
+   "kind": "situation",
+   "menu": "third-and-short",
+   "call": {
+    "package": "Base",
+    "front": "Bear",
+    "coverage": [
+     "1 Robber"
+    ],
+    "pressure": "base-4"
+   },
+   "source": {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 25,
+    "text": "3rd-1-2 | **Bear, 1 Robber** | Base four"
+   }
+  },
+  {
+   "id": "D4",
+   "kind": "situation",
+   "menu": "third-and-medium",
+   "call": {
+    "package": "Nickel",
+    "front": "Nickel Even",
+    "coverage": [
+     "3"
+    ],
+    "pressure": "base-4"
+   },
+   "source": {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 26,
+    "text": "3rd-3-5 | **Nickel Even, 3** | Base four"
+   }
+  },
+  {
+   "id": "K1",
+   "kind": "conditional",
+   "call": {
+    "package": "Nickel",
+    "front": "Nickel Even",
+    "coverage": [
+     "Fire 3"
+    ],
+    "pressure": "fire-zone"
+   },
+   "source": {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 26,
+    "text": "True Fire 3 only after protection declaration"
+   }
+  },
+  {
+   "id": "D5",
+   "kind": "situation",
+   "menu": "third-and-long",
+   "call": {
+    "package": "Dime",
+    "front": "Nickel Even",
+    "coverage": [
+     "6"
+    ],
+    "pressure": "replace",
+    "tags": [
+     "mug"
+    ]
+   },
+   "source": {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 27,
+    "text": "3rd-6+ | **DIME, Nickel Even, 6** | Mug interior, rush four"
+   }
+  },
+  {
+   "id": "D6",
+   "kind": "situation",
+   "menu": "red-zone",
+   "call": {
+    "package": "Nickel",
+    "front": "Nickel Even",
+    "coverage": [
+     "Quarters"
+    ],
+    "pressure": "base-4"
+   },
+   "source": {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 28,
+    "text": "Red zone | **Nickel Even, Quarters** | Reduced disguise"
+   }
+  },
+  {
+   "id": "D7",
+   "kind": "situation",
+   "menu": "two-minute",
+   "call": {
+    "package": "Nickel",
+    "front": "Nickel Even",
+    "coverage": [
+     "3"
+    ],
+    "pressure": "base-4"
+   },
+   "source": {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 29,
+    "text": "Two-minute | **Nickel Even, 3** | Four rush, limited stem"
+   }
+  },
+  {
+   "id": "D8",
+   "kind": "situation",
+   "menu": "lead-late",
+   "call": {
+    "package": "Dime",
+    "front": "Nickel Even",
+    "coverage": [
+     "Quarters"
+    ],
+    "pressure": "replace"
+   },
+   "source": {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 30,
+    "text": "Lead late | **DIME, Nickel Even, Quarters** | Four-man replacement pressure"
+   }
+  },
+  {
+   "id": "D9",
+   "kind": "situation",
+   "menu": "backed-up",
+   "call": {
+    "package": "Base",
+    "front": "Under",
+    "strength": "Y",
+    "coverage": [
+     "Quarters"
+    ],
+    "pressure": "base-4"
+   },
+   "source": {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 31,
+    "text": "Backed up | **Under Y, Quarters** | Base four"
+   }
+  },
+  {
+   "id": "K2",
+   "kind": "conditional",
+   "call": {
+    "package": "Nickel",
+    "front": "Nickel Even",
+    "coverage": [
+     "Quarters"
+    ],
+    "pressure": "base-4"
+   },
+   "source": {
+    "path": "tests/data/defensive_sheet_fixture_packet.md",
+    "line": 36,
+    "text": "If the offense goes tempo before the disguise is communicated, the defense aligns in **Nickel Even, Quarters** and plays football."
+   }
+  }
+ ]
+}
