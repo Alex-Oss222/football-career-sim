@@ -23,7 +23,10 @@ Encoding rules (kernel 2014.6 plan, B14 W1a):
 - nothing off the practiced menu is encoded: every package, front, coverage,
   pressure and tag a row names is on the sheet's ``practiced`` lists, and those
   lists hold only words of the active defensive book (read through the
-  playbook lock: ``docs/repository_map.json`` ``active_playbooks``);
+  playbook lock: ``docs/repository_map.json`` ``active_playbooks``); each
+  front, strength, coverage and tag a row names occurs on its own cited
+  packet line, and each practiced front, coverage and tag on one of the
+  practiced menu's cited lines (``source_errors``);
 - pressure families are the active book's section 8 six; the interior mug is
   encoded as ``replace`` with the ``mug`` tag;
 - lead-late is recorded as a convention naming both candidate windows
@@ -312,13 +315,61 @@ def _normalized(text):
     return " ".join(str(text).split())
 
 
+LOCKED_PREFIXES = ("career/playbook/", "archive/")
+
+
+def packet_path(rel, root=ROOT):
+    """The packet file a sheet's ``packet`` or a source's ``path`` names, or
+    None when it is not a packet in the repository. Overnight review fix
+    (October 17, 2026): decided on the resolved path, never the raw string,
+    so it must be a Markdown file inside the repository, spelled as its own
+    normalized repository-relative path (no './', '..', absolute or symlink
+    spelling), and never a playbook page (the playbook lock) or an archive
+    page (the hindsight archive)."""
+    if not isinstance(rel, str) or not rel:
+        return None
+    base = Path(root).resolve()
+    try:
+        path = (base / rel).resolve()
+        if not path.is_relative_to(base):
+            return None
+        norm = path.relative_to(base).as_posix()
+        if rel != norm or norm.startswith(LOCKED_PREFIXES) or path.suffix != ".md" or not path.is_file():
+            return None
+    except (OSError, ValueError):  # an unreadable spelling (a NUL byte, an overlong name) is no packet
+        return None
+    return path
+
+
+def _occurs(word, text):
+    """Whether a book word occurs in a packet line: case-insensitive, on
+    token boundaries (no letter or digit either side), its parts separated
+    by whitespace or hyphens, singular or with a plural 's'."""
+    parts = r"[\s-]+".join(re.escape(part) for part in str(word).split())
+    return re.search(r"(?<![0-9A-Za-z])%ss?(?![0-9A-Za-z])" % parts, str(text), re.I) is not None
+
+
+def _call_words(call):
+    """(kind, word) of a call's front, strength, coverage alternatives and
+    tags: the words its cited packet line must hold. Packages and pressure
+    keys stay on the declared lists ('base-4' has no fixed wording)."""
+    words = [(kind, call[kind]) for kind in ("front", "strength") if call.get(kind) is not None]
+    words += [("coverage", item) for item in call.get("coverage") or ()]
+    words += [("tag", tag) for tag in call.get("tags") or ()]
+    return words
+
+
 def source_errors(sheet, root=ROOT, season=None):
     """The repository checks of a sheet that passes sheet_errors: its book
     is the active defensive iteration (the playbook lock), or, for a sheet of
     ``season``, the iteration whose effective seasons cover it in the
-    playbook index, never one beginning after the active season; and every
+    playbook index, never one beginning after the active season; its packet
+    and every source name a packet of the repository (``packet_path``); every
     source names an existing packet line whose text holds the row's text
-    verbatim (whitespace runs compared as one space)."""
+    verbatim (whitespace runs compared as one space); every front, strength,
+    coverage and tag a row's call names occurs on that row's cited packet
+    line; and every practiced front, coverage and tag occurs on one of the
+    practiced menu's cited lines (``_occurs``)."""
     root = Path(root)
     errors = []
     book = sheet.get("book")
@@ -334,20 +385,20 @@ def source_errors(sheet, root=ROOT, season=None):
         if span is None or not span[0] <= int(season) <= span[1] or (active is not None and span[0] > int(active)):
             errors.append("book %r is not the defensive iteration in force for %s" % (book, season))
     packet = sheet.get("packet")
-    if not isinstance(packet, str) or not (root / packet).is_file():
-        errors.append("packet %r is not a file of the repository" % packet)
-    sources = [("rush_rule", (sheet.get("rush_rule") or {}).get("source"))]
-    sources += [("practiced.sources[%d]" % i, s) for i, s in enumerate((sheet.get("practiced") or {}).get("sources")
-                                                                        or ())]
-    sources += [("row %s" % r.get("id"), r.get("source")) for r in sheet.get("rows") or () if isinstance(r, dict)]
-    cache = {}
-    for where, source in sources:
+    if packet_path(packet, root) is None:
+        errors.append("packet %r is not a packet in the repository" % packet)
+    practiced = sheet.get("practiced") or {}
+    rows = [r for r in sheet.get("rows") or () if isinstance(r, dict)]
+    sources = [("rush_rule", (sheet.get("rush_rule") or {}).get("source"), None)]
+    sources += [("practiced.sources[%d]" % i, s, None) for i, s in enumerate(practiced.get("sources") or ())]
+    sources += [("row %s" % r.get("id"), r.get("source"), r) for r in rows]
+    cache, practiced_lines = {}, []
+    for where, source, row in sources:
         if not isinstance(source, dict):
             continue
-        rel = str(source.get("path") or "")
-        path = (root / rel).resolve()
-        if (rel.startswith(("career/playbook/", "archive/", "/")) or not path.is_relative_to(root.resolve())
-                or path.suffix != ".md" or not path.is_file()):
+        rel = source.get("path")
+        path = packet_path(rel, root)
+        if path is None:
             errors.append("%s: source path %r is not a packet in the repository" % (where, rel))
             continue
         lines = cache.setdefault(rel, path.read_text(encoding="utf-8").splitlines())
@@ -355,8 +406,24 @@ def source_errors(sheet, root=ROOT, season=None):
         if not isinstance(line, int) or not 1 <= line <= len(lines):
             errors.append("%s: line %s is outside %s" % (where, line, rel))
             continue
-        if _normalized(source.get("text", "")) not in _normalized(lines[line - 1]):
+        full = lines[line - 1]
+        if _normalized(source.get("text", "")) not in _normalized(full):
             errors.append("%s: text is not verbatim on %s line %d" % (where, rel, line))
+            continue
+        if where.startswith("practiced."):
+            practiced_lines.append(full)
+        call = row.get("call") if row is not None else None
+        if isinstance(call, dict):
+            # Overnight review fix (October 17, 2026): a row's encoded call
+            # is held to its own cited line, not only to the declared lists.
+            for kind, word in _call_words(call):
+                if not _occurs(word, full):
+                    errors.append("%s: %s %r is not on its cited line (%s line %d)" % (where, kind, word, rel, line))
+    # Each practiced front, coverage and tag on one of the menu's install lines.
+    for key in ("fronts", "coverages", "tags"):
+        for word in practiced.get(key) or ():
+            if not any(_occurs(word, full) for full in practiced_lines):
+                errors.append("practiced.%s: %r is on none of the practiced menu's cited lines" % (key, word))
     return errors
 
 

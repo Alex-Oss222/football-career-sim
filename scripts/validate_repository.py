@@ -150,7 +150,9 @@ def freeze_order_errors(root, sheet_rel, receipt_rel):
 
 def defensive_record_errors(root, paths, regular, playoff):
     """Kernel 2014.6 W1a: every 2014 receipt carrying a defensive call
-    record against the week's committed call sheet and its freeze commit."""
+    record against the week's committed call sheet, the week's paused
+    record's bound sheets (when that event paused) and the sheet's freeze
+    commit."""
     from runtime.defensive_calls import receipt_record_errors
     errors = []
     for receipts, folder, postseason in ((regular, paths.receipts, False), (playoff, paths.postseason_receipts, True)):
@@ -162,6 +164,19 @@ def defensive_record_errors(root, paths, regular, playoff):
             data = json.loads(sheet_path.read_text()) if sheet_path.is_file() else None
             event = receipt.get('event_id')
             errors += [f'{event}: {problem}' for problem in receipt_record_errors(receipt, data)]
+            # Overnight review fix (October 17, 2026): a paused (or closed
+            # after a pause) record of this event binds the defensive sheets
+            # it paused with; the receipt's record must name the same ones.
+            paused_path = paths.paused_game(week, postseason=postseason)
+            paused = json.loads(paused_path.read_text()) if paused_path.is_file() else None
+            if paused is not None and paused.get('event_id') == event:
+                bound = paused.get('defensive_sheets') or {}
+                named = {team: (entry or {}).get('sheet_sha256')
+                         for team, entry in (receipt['defensive_calls'].get('teams') or {}).items()}
+                if bound != named:
+                    errors.append(f'{event}: the paused record binds the defensive sheets '
+                                  f'{json.dumps(bound, sort_keys=True)}; the receipt\'s record names '
+                                  f'{json.dumps(named, sort_keys=True)}')
             matches = [p for p in sorted(Path(folder).glob('*.json'))
                        if json.loads(p.read_text()).get('event_id') == event]
             if data is not None and matches:

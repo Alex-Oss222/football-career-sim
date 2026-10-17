@@ -192,11 +192,78 @@ class SheetValidatorTests(unittest.TestCase):
         self.assertRefused(lambda s: self.row(s, "D1")["source"].update(line=999), "outside", repository=True)
         self.assertRefused(lambda s: self.row(s, "D1")["source"].update(path=dc.active_defensive_book()),
                            "not a packet", repository=True)
-        self.assertRefused(lambda s: s.update(packet="career/2014/no_such_packet.md"), "not a file", repository=True)
+        self.assertRefused(lambda s: s.update(packet="career/2014/no_such_packet.md"), "not a packet in the repository",
+                           repository=True)
         # Whitespace runs compare as one space (packet tables pad their cells).
         sheet = self.mutated(lambda s: self.row(s, "D1")["source"].update(
             text="Normal down |   **Under Y, Quarters**   | Base four"))
         self.assertEqual(dc.source_errors(sheet, ROOT, 2014), [])
+
+    def test_the_source_path_guard_reads_the_normalized_path(self):
+        """Overnight review fix (October 17, 2026): no spelling of a locked
+        playbook page or an archive page passes, and the validator never
+        opens one (the only error on the row is the path's)."""
+        later = "career/playbook/alex_stone_2016_2017_defensive_evolution_ii.md"
+        archive = "archive/2013_coaching_market_historical_comparator.md"
+        fixture_packet = "tests/data/defensive_sheet_fixture_packet.md"
+        for rel in (later, "./" + later, "career/../" + later, archive, "./" + archive, "runtime/../" + archive,
+                    dc.active_defensive_book(), "./" + dc.active_defensive_book(), "./" + fixture_packet,
+                    "tests/../" + fixture_packet, str(ROOT / fixture_packet), "/etc/hostname", "../outside.md",
+                    "career/2014/no\x00such.md"):
+            sheet = self.mutated(lambda s: self.row(s, "P1").update(source={"path": rel, "line": 1, "text": "x"}))
+            errors = [e for e in dc.source_errors(sheet, ROOT, 2014) if e.startswith("row P1:")]
+            self.assertEqual(errors, ["row P1: source path %r is not a packet in the repository" % rel], rel)
+            self.assertEqual(dc.source_errors(sheet, ROOT), dc.source_errors(sheet, ROOT, 2014), rel)
+        for rel in (later, "./" + later, archive, "./" + fixture_packet, "tests/data/defensive_sheet_fixture.json"):
+            self.assertRefused(lambda s: s.update(packet=rel), "packet %r is not a packet in the repository" % rel,
+                               repository=True)
+        data = {"team": "Jacksonville Jaguars", dc.SHEET_KEY: self.mutated(lambda s: s.update(packet=later))}
+        self.assertTrue(any("is not a packet in the repository" in e
+                            for e in dc.committed_sheet_errors(data, ROOT, 2014)))
+        self.assertIsNotNone(dc.packet_path(fixture_packet, ROOT))
+        self.assertIsNone(dc.packet_path("./" + fixture_packet, ROOT))
+        # A symlink spelling resolves elsewhere, so it is no packet either.
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp)
+            for rel in ("career/playbook/book.md", "career/2014/packet.md"):
+                (base / rel).parent.mkdir(parents=True, exist_ok=True)
+                (base / rel).write_text("x\n")
+            (base / "career/2014/link_book.md").symlink_to(base / "career/playbook/book.md")
+            (base / "career/2014/link_packet.md").symlink_to(base / "career/2014/packet.md")
+            self.assertIsNotNone(dc.packet_path("career/2014/packet.md", base))
+            self.assertIsNone(dc.packet_path("career/playbook/book.md", base))
+            self.assertIsNone(dc.packet_path("career/2014/link_book.md", base))
+            self.assertIsNone(dc.packet_path("career/2014/link_packet.md", base))
+
+    def test_each_call_word_is_on_its_cited_line(self):
+        """Overnight review fix (October 17, 2026): a row's front, strength,
+        coverage and tags occur on its own cited packet line, and every
+        practiced front, coverage and tag on one of the menu's lines."""
+        def off_menu(s):
+            s["practiced"]["pressures"].append("corner-slot-pressure")
+            s["practiced"]["fronts"].append("Odd")
+            self.row(s, "D1")["call"] = {"front": "Odd", "pressure": "corner-slot-pressure"}
+        sheet = self.mutated(off_menu)
+        self.assertEqual(dc.sheet_errors(sheet), [])
+        errors = dc.source_errors(sheet, ROOT, 2014)
+        self.assertTrue(any(e.startswith("row D1: front 'Odd' is not on its cited line") for e in errors), errors)
+        self.assertIn("practiced.fronts: 'Odd' is on none of the practiced menu's cited lines", errors)
+        self.assertRefused(lambda s: self.row(s, "D1")["call"].update(coverage=["Quarters", "3"]),
+                           "row D1: coverage '3' is not on its cited line", repository=True)
+        self.assertRefused(lambda s: self.row(s, "D9")["call"].update(strength="Field"),
+                           "row D9: strength 'Field' is not on its cited line", repository=True)
+        self.assertRefused(lambda s: self.row(s, "D5")["call"].update(tags=["mug", "field"]),
+                           "row D5: tag 'field' is not on its cited line", repository=True)
+        self.assertRefused(lambda s: s["practiced"]["tags"].append("boundary"),
+                           "practiced.tags: 'boundary' is on none", repository=True)
+        # Case-insensitive, token-bounded, singular or plural; parts by space or hyphen.
+        self.assertTrue(dc._occurs("mug", "**DIME, Nickel Even, 6** with interior mugs"))
+        self.assertTrue(dc._occurs("field", "| Replace Field |"))
+        self.assertTrue(dc._occurs("Nickel Even", "nickel-even quarters"))
+        self.assertTrue(dc._occurs("3", "Cover 3 escape"))
+        self.assertFalse(dc._occurs("3", "3rd down"))
+        self.assertFalse(dc._occurs("Y", "Yards after catch"))
+        self.assertFalse(dc._occurs("Fire 3", "Fire 33"))
 
     def test_committed_sheet_check(self):
         data = {"team": "Jacksonville Jaguars", dc.SHEET_KEY: fixture_sheet("Jacksonville Jaguars")}
@@ -491,6 +558,53 @@ class ClosureAndResumeTests(unittest.TestCase):
         self.assertIn("Jacksonville Jaguars", final["defensive_calls"]["teams"])
         self.assertEqual(stripped(final), stripped(r_plain[self.EVENT]))
         self.assertEqual(r_sheet[self.BACKGROUND], r_plain[self.BACKGROUND])
+        # The paused and the closed records bind the sheet (overnight review fix).
+        sha = dc.sheet_sha256(fixture_sheet("Jacksonville Jaguars"))
+        self.assertEqual(p_sheet["defensive_sheets"], {"Jacksonville Jaguars": sha})
+        self.assertNotIn("defensive_sheets", p_plain)
+        closed = json.loads(self.runs["sheet"][0].paused_game(1).read_text())
+        self.assertEqual((closed["status"], closed["defensive_sheets"]), ("closed", {"Jacksonville Jaguars": sha}))
+        self.assertEqual(final["defensive_calls"]["teams"]["Jacksonville Jaguars"]["sheet_sha256"], sha)
+
+    def home_sheet(self, arm):
+        return self.runs[arm][2]["games"][1]["home_input"]
+
+    def test_a_changed_sheet_cannot_resume(self):
+        """Overnight review fix (October 17, 2026): a sheet changed, added or
+        removed in the frozen package after the pause is refused before any
+        draw, and the paused record is left as it was."""
+        changes = {"sheet": (lambda inp: inp["defensive_call_sheet"]["rows"][2]["call"].update(coverage=["3"]),
+                             lambda inp: inp.pop("defensive_call_sheet")),
+                   "plain": (lambda inp: inp.update(defensive_call_sheet=fixture_sheet("Jacksonville Jaguars")),)}
+        for arm, edits in changes.items():
+            _, paused = self.close(arm)
+            self.assertIsNotNone(paused, arm)
+            defaults = {d["slot"]: d["default"] for d in paused["pause"]["decisions"]}
+            record_path = self.runs[arm][0].paused_game(1)
+            before = record_path.read_text()
+            original = copy.deepcopy(self.home_sheet(arm))
+            for edit in edits:
+                edit(self.home_sheet(arm))
+                with self.assertRaisesRegex(ValueError, "defensive call sheet changed since the pause"):
+                    self.close(arm, {"choices": defaults})
+                self.assertEqual(record_path.read_text(), before)
+                self.assertFalse(self.runs[arm][0].cache(1, "results").exists())
+                self.runs[arm][2]["games"][1]["home_input"] = copy.deepcopy(original)
+            results, still = self.close(arm, {"choices": defaults})  # the frozen sheet resumes
+            self.assertIsNone(still)
+            self.assertIn(self.EVENT, results)
+
+    def test_a_changed_sheet_cannot_reclose(self):
+        """With the results cache removed, the closed record still binds the
+        sheet: a re-closure under another sheet is refused."""
+        _, paused = self.close("sheet")
+        self.close("sheet", {"choices": {d["slot"]: d["default"] for d in paused["pause"]["decisions"]}})
+        paths = self.runs["sheet"][0]
+        paths.cache(1, "results").unlink()
+        self.home_sheet("sheet")["defensive_call_sheet"]["rows"][2]["call"].update(coverage=["3"])
+        with self.assertRaisesRegex(ValueError, "defensive call sheet changed since the pause"):
+            self.close("sheet")
+        self.assertFalse(paths.cache(1, "results").exists())
 
 
 @unittest.skipIf(shutil.which("git") is None, "git is not installed (the engine image)")
@@ -554,6 +668,55 @@ class FreezeOrderTests(unittest.TestCase):
         self.assertTrue(any("offensive menus" in e for e in dc.receipt_record_errors(receipt, other)))
         self.assertTrue(dc.receipt_record_errors(receipt, None))
         self.assertTrue(dc.receipt_record_errors(receipt, dict(call_sheet, team="Pittsburgh Steelers")))
+
+
+class PausedBindingCheckTests(unittest.TestCase):
+    """scripts/validate_repository.py (overnight review fix, October 17,
+    2026): a receipt's defensive call record names the sheets the event's
+    paused record bound. No git here, so the freeze order is skipped."""
+
+    def test_the_receipt_names_the_bound_sheets(self):
+        from scripts import validate_repository as vr
+        tmp = tempfile.TemporaryDirectory(); self.addCleanup(tmp.cleanup)
+        root = Path(tmp.name)
+
+        class Paths:
+            receipts, postseason_receipts = root / "receipts", root / "postseason"
+
+            def week_folder(self, week, postseason=False):
+                return root / ("Week_%02d" % week)
+
+            def paused_game(self, week, postseason=False):
+                return self.week_folder(week, postseason) / "paused_game.json"
+        paths = Paths()
+        a, b = sample_teams()
+        sheet = fixture_sheet("Jacksonville Jaguars")
+        result = play(replace(a, team_id="Jacksonville Jaguars", defensive_call_sheet=sheet), b, 2)
+        receipt = make_receipt(result, week=5, matchup="B at Jacksonville Jaguars")
+        paths.receipts.mkdir()
+        (paths.receipts / "week_05.json").write_text(json.dumps(receipt))
+        folder = paths.week_folder(5)
+        folder.mkdir()
+        (folder / "call_sheet.json").write_text(json.dumps({
+            "team": "Jacksonville Jaguars", "offensive_call_sheet": list(a.offensive_call_sheet), dc.SHEET_KEY: sheet}))
+
+        def errors(record=None):
+            target = paths.paused_game(5)
+            if record is None:
+                target.unlink(missing_ok=True)
+            else:
+                target.write_text(json.dumps(record))
+            return vr.defensive_record_errors(root, paths, [receipt], [])
+        self.assertEqual(errors(), [])  # the game never paused
+        bound = {"status": "closed", "event_id": receipt["event_id"],
+                 "defensive_sheets": {"Jacksonville Jaguars": dc.sheet_sha256(sheet)}}
+        self.assertEqual(errors(bound), [])
+        other = copy.deepcopy(sheet); other["rows"][2]["call"]["coverage"] = ["3"]
+        swapped = dict(bound, defensive_sheets={"Jacksonville Jaguars": dc.sheet_sha256(other)})
+        self.assertTrue(any("the paused record binds the defensive sheets" in e for e in errors(swapped)))
+        unbound = {k: v for k, v in bound.items() if k != "defensive_sheets"}
+        self.assertTrue(any("the paused record binds the defensive sheets {}" in e for e in errors(unbound)))
+        self.assertEqual(errors(dict(swapped, event_id="another-event")), [])
 
 
 if __name__ == "__main__":
