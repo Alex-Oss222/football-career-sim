@@ -23,7 +23,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from runtime import drive_model, game_runner, kernel, preseason, seasons
+from runtime import KERNEL_VERSION, drive_model, game_runner, kernel, preseason, seasons
+from runtime.profiles import profile_for
 from runtime.kernel import TeamInput, resolve_game, validate_result
 from runtime.rules import PRESEASON, active_limit, extra_point_rule
 from runtime.seasons import SeasonPaths
@@ -115,7 +116,10 @@ class ExtraPointRuleTests(unittest.TestCase):
     def test_kernel_applies_the_distance_on_august_8_and_not_on_august_22(self):
         a, b = self.teams()
         seed = hashlib.sha256(b"preseason-xp").digest()
-        with patch.object(drive_model, "fg_make_prob_at", return_value=0.0):
+        # The kernel draws through the live base's drive model (B1 plumbing;
+        # since the kernel 2014.6 release, the 2010-2014 base's).
+        live_model = profile_for(KERNEL_VERSION).calibration_base().drive_model()
+        with patch.object(live_model, "fg_make_prob_at", return_value=0.0):
             early = resolve_game(a, b, seed=seed, event_id="pre-1", game_type=PRESEASON, game_date="2014-08-08")
             late = resolve_game(a, b, seed=seed, event_id="pre-3", game_type=PRESEASON, game_date="2014-08-22")
         for result in (early, late):

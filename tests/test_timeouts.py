@@ -142,3 +142,54 @@ class LateRecalibrationTests(unittest.TestCase):
         for spot in (90, 60, 30):
             for t in fp.eligible(("late", cell), "interception", spot, "late", 400):
                 self.assertTrue(fp.static_feasible("interception", t, spot))
+
+class HeldTimeoutPreferenceTests(unittest.TestCase):
+    """Kernel 2014.6 batch B5, W5b on the schema-3 model: a timeout-conditioned
+    draw prefers, within the drawn category, real drives whose clubs used no
+    more timeouts than the branch clubs hold; no category is masked by
+    timeouts; timeout_unavailable_kept counts only the drawn category."""
+
+    @classmethod
+    def setUpClass(cls):
+        import random
+        from runtime.calibration_base import BASE_2010_2014W4
+        cls.m = BASE_2010_2014W4.field_position()
+        cls.random = random
+
+    def test_preference_and_no_masking(self):
+        m, T3 = self.m, self.m.T
+        rng = self.random.Random(47)
+        for _ in range(300):
+            spot, window = rng.randint(20, 90), rng.randint(30, 600)
+            held = (rng.randint(0, 3), rng.randint(0, 3))
+            diag = {}
+            drive = m.draw_drive(rng, spot, 2, window, rng.choice((-7, -3, 0, 3, 7)), 0.0, diag, timeouts=held)
+            if drive.tuple is fp.ZERO_TUPLE or drive.regime != "late":
+                continue
+            used = (drive.tuple[T3["off_timeouts_used"]] or 0, drive.tuple[T3["def_timeouts_used"]] or 0)
+            if not diag.get("timeout_unavailable_kept"):
+                self.assertTrue(used[0] <= held[0] and used[1] <= held[1], (used, held))
+
+    def test_kept_is_counted_for_the_drawn_category_only(self):
+        m = self.m
+        pool = ("late", "le120|trail4_8")
+        counts, options = m.draw_options(pool, "late", 60, 100)
+        diag = {}
+        rng = self.random.Random(53)
+        draws = [m._draw_from(rng, pool, "late", 60, 100, 0.0, (0, 0), "off", diag) for _ in range(200)]
+        kept_categories = {c for c, opts in options.items() if opts and m.held_preference(opts, (0, 0)) is None}
+        expected = sum(1 for d in draws if d and d[0] in kept_categories)
+        self.assertEqual(diag.get("timeout_unavailable_kept", 0), expected)
+
+    def test_kernel_cap_still_holds(self):
+        from runtime.kernel import resolve_game
+        from runtime.profiles import PROFILE_2014_6
+        from synthetic_games import SEED, sample_teams
+        a, b = sample_teams()
+        r = resolve_game(a, b, seed=SEED + b"-b5-timeouts", event_id="b5-timeouts", _test_profile=PROFILE_2014_6)
+        for p in r["possessions"]:
+            off_before, def_before, off_used, def_used = p["timeouts"]
+            self.assertLessEqual(off_used, off_before)
+            self.assertLessEqual(def_used, def_before)
+        self.assertEqual(check_ledger(r), [])
+

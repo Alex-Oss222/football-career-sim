@@ -24,7 +24,7 @@ import re
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-from . import call_families, depth_library, player_bios, rails, strength
+from . import call_families, depth_library, player_bios, rails, scoring_decisions, strength
 from .usage import group, lineup_errors
 from .seasons import SeasonPaths, require_receipt_season
 
@@ -230,10 +230,17 @@ def rails_slate(week, season, receipts, games=None, root=ROOT, data=None, contro
             "errors": errors, "branch": rails.Branch(control, tuple(c6 + emergencies))}
 
 
-def background_input(team, week, receipts, game_day, anchors, season=2013, club=None):
+def background_input(team, week, receipts, game_day, anchors, season=2013, club=None, report=None):
     """A background club's TeamInput: its Week 1 library entry, or, from the
     in-season rails' effective week, `club` (its rails entry at the game's
-    cutoff, required then)."""
+    cutoff, required then).
+
+    Kernel 2014.6 batch B15 (R21): the club dresses min(46, its legal
+    available players) (game_day_actives); a club that cannot dress a legal
+    unit at all is the residual the in-season rails' dated practice-squad
+    promotion resolves first (U7, runtime.rails.emergency_events). ``report``,
+    a dict, receives the club's available, dressed and legal counts (public
+    preparation metadata outside the TeamInput); the return is unchanged."""
     if club is not None:
         team_input = depth_library.club_input(team, club, week=week, **anchors)
     else:
@@ -243,6 +250,12 @@ def background_input(team, week, receipts, game_day, anchors, season=2013, club=
         if player["player_id"] in out:
             player["available"] = False
     team_input["active_players"] = game_day_actives(team_input["roster"])
+    if report is not None:
+        dressed = set(team_input["active_players"])
+        report.update({"available": sum(1 for p in team_input["roster"] if p["available"]),
+                       "dressed": len(dressed),
+                       "legal": not lineup_errors([_Row(p) for p in team_input["roster"]
+                                                   if p["player_id"] in dressed])})
     return team_input
 
 
@@ -331,12 +344,65 @@ def roster_available(availability, game_day, season=2013):
     return game_day >= back
 
 
-def jacksonville_input(receipts, game_day, anchors, call_sheet, season=2013):
+def db_role_errors(chart):
+    """Kernel 2014.6 batch B15 (W2b): problems with the game depth chart's
+    slot-defining defensive-back roles. Jacksonville's ``nickel`` and
+    ``outside_reserve`` come from Stone's recorded decisions, transcribed into
+    the chart's roles with his confirmation (the Run Week 5 preparation);
+    each must name exactly one player of the chart's DB group, the outside
+    reserve a corner. [] when both are present and valid."""
+    from .participation import SLOT_ROLES, db_family
+    errors = []
+    dbs = set(chart.get("depth", {}).get("DB", ()))
+    for role in SLOT_ROLES:
+        holders = sorted(p for p, roles in chart.get("roles", {}).items() if role in (roles or ()))
+        if not holders:
+            errors.append("the game depth chart names no %s role (Stone's recorded decision, transcribed with "
+                          "his confirmation at the week's preparation); Jacksonville's inputs fail closed" % role)
+            continue
+        if len(holders) > 1:
+            errors.append("the game depth chart names %d %s roles (%s); one is required"
+                          % (len(holders), role, ", ".join(holders)))
+            continue
+        holder = holders[0]
+        if holder not in dbs:
+            errors.append("the %s role names %s, who is not on the chart's defensive-back list" % (role, holder))
+        elif role == "outside_reserve" and db_family(chart.get("positions", {}).get(holder)) != "corner":
+            errors.append("the outside_reserve role names %s, who is not a corner" % holder)
+    # Review fix (October 16, 2026): one player cannot hold both seats (the
+    # nickel is never in the outside order, so the reserve would be ignored).
+    holders = {role: [p for p, roles in chart.get("roles", {}).items() if role in (roles or ())] for role in SLOT_ROLES}
+    both = sorted(set(holders["nickel"]) & set(holders["outside_reserve"]))
+    for player in both:
+        errors.append("the nickel and outside_reserve roles name the same player (%s); they are separate seats" % player)
+    return errors
+
+
+def jacksonville_input(receipts, game_day, anchors, call_sheet, season=2013, decisions=None, decision_kinds=(),
+                       db_roles=False):
+    """Jacksonville's TeamInput data for one game. Kernel 2014.6 batch B9
+    (R8, R9; U6): ``decisions`` is the frozen sheet's decisions object and
+    ``decision_kinds`` the kinds the resolving kernel decides; each block
+    becomes try_policy or kickoff_policy, and a kind with no block fails
+    closed (runtime.scoring_decisions.input_policies). Batch B9F: an
+    optional decisions.fourth_down block (standing rules and Tice's prepared
+    calls, each a call of the frozen sheet) becomes fourth_down_policy; with
+    none, Jacksonville's fourth downs are Stone's live calls. Batch B15
+    (W2b): with ``db_roles`` (a kernel that seats defensive backs by family)
+    the chart must name its nickel and outside reserve (db_role_errors), or
+    the input fails closed; the roles reach the kernel as chart roles."""
+    from . import fourth_down
+    policies = scoring_decisions.input_policies(decisions, tuple(decision_kinds),
+                                                call_names=fourth_down.sheet_call_names(call_sheet))
     undeclared = call_families.sheet_errors(call_sheet)
     if undeclared:
         # Kernel 2013.7 fails closed on a call no label rule covers.
         raise ValueError("call sheet cannot be labelled: " + "; ".join(undeclared))
     chart = json.loads(SeasonPaths(season, ROOT).depth_chart.read_text(encoding="utf-8"))
+    if db_roles:
+        faults = db_role_errors(chart)
+        if faults:
+            raise ValueError("W2b defensive-back roles: " + "; ".join(faults))
     depth = {player: rank for players in chart["depth"].values() for rank, player in enumerate(players, 1)}
     injured = injured_out(receipts, game_day, season)
     inactives = set(chart["game_day_inactives"]["players"])
@@ -370,6 +436,7 @@ def jacksonville_input(receipts, game_day, anchors, call_sheet, season=2013):
         "team_id": PROTAGONIST,
         "active_players": active,
         **anchors, "roster": roster, "offensive_call_sheet": list(call_sheet),
+        **policies,
     }
 
 
@@ -397,14 +464,62 @@ def _rails_metadata(slate, games, season, deferred):
         "branch_reserve": [e["id"] for e in slate["c6"]],
         "emergency": [e["id"] for e in slate["emergencies"]],
         "slate_deferred": deferred,
+        "depth_fallback": _depth_fallback(slate, games, season),
     }
 
 
-def strength_identities(roster, season, club=None, protagonist=False, registry=None):
+def _depth_fallback(slate, games, season):
+    """Kernel 2014.6 batch B15 (R21): the real Week 1 53 the Week 1 chart left
+    out and the players restored from a league suspension (the rails base's
+    fill and restoration entries) sit below every listed player of their
+    group: no second pre-first-game chart is read. Flagged and counted per
+    game and club, for the players in this week's entries."""
+    kinds = {c["id"]: c.get("kind") for c in slate["data"].base.get("corrections", ())}
+    flagged, count = {}, {}
+    for g in games:
+        key = rails.game_key(g)
+        state = slate["states"].get(slate["cutoffs"][key])
+        if state is None:
+            continue
+        for side in ("away", "home"):
+            team = g[side]
+            entry = slate["entries"].get((key, team))
+            if team == PROTAGONIST or entry is None:
+                continue
+            listed = {p["player_id"] for p in entry["players"]}
+            code = slate["data"].codes[team]
+            ids = sorted(p["player_id"] for p in state.clubs[code]["active"]
+                         if kinds.get(p.get("via")) in ("fill", "restoration") and p["player_id"] in listed)
+            if ids:
+                flagged.setdefault(event_id(g, season=season), {})[team] = ids
+                for pid in ids:
+                    kind = kinds[next(p["via"] for p in state.clubs[code]["active"] if p["player_id"] == pid)]
+                    count[kind] = count.get(kind, 0) + 1
+    return {"rule": "below every listed player of his group; no second pre-first-game chart is read",
+            "count": dict(sorted(count.items())), "players": flagged}
+
+
+def identity_map(season=2014, root=ROOT):
+    """{player_id: gsis_id} of the season's branch identity table (kernel
+    2014.6 batch B4a, career/YEAR/league/personnel/branch_identity.json): the
+    identity map that stays outside every packet. Empty when the season has
+    none."""
+    path = SeasonPaths(int(season), root).record("league/personnel/branch_identity.json")
+    if not path.is_file():
+        return {}
+    return dict(json.loads(path.read_text(encoding="utf-8")).get("by_player_id", {}))
+
+
+def strength_identities(roster, season, club=None, protagonist=False, registry=None, identities=None,
+                        strict=False):
     """Roster rows with their gsis id for runtime.strength, never in the
     TeamInput (PlayerInput has no gsis field). Background players take the
     rails entry's id; Jacksonville's come from the identity registry and fail
-    closed when missing (engineering review B6)."""
+    closed when missing (engineering review B6). Kernel 2014.6 (B7): the
+    branch identity table (`identities`, identity_map by default) fills a
+    row the source left without an id and must agree with the source's id
+    where both exist (a conflict blocks the build); with `strict`, the
+    player-state model's requirement, a row still without an id blocks."""
     ids = {}
     if club is not None:
         ids = {p["player_id"]: p.get("gsis_id") for p in club["players"]}
@@ -414,38 +529,123 @@ def strength_identities(roster, season, club=None, protagonist=False, registry=N
         if missing:
             raise ValueError("strength identity: no gsis id for " + ", ".join(missing))
         ids = {r["player_id"]: registry[r["player_id"]]["gsis_id"] for r in roster}
-    return [dict(r, gsis_id=ids.get(r["player_id"])) for r in roster]
+    identities = identity_map(season) if identities is None else identities
+    out = []
+    for r in roster:
+        source = ids.get(r["player_id"]) or r.get("gsis_id")
+        mapped = identities.get(r["player_id"])
+        if source and mapped and source != mapped:
+            raise ValueError("strength identity: %s is %s in its roster source and %s in the identity table"
+                             % (r["player_id"], source, mapped))
+        gsis = source or mapped
+        if strict and not gsis:
+            raise ValueError("strength identity: %s has no gsis id in its roster source or the identity table "
+                             "(the player-state model needs every identity)" % r["player_id"])
+        out.append(dict(r, gsis_id=gsis))
+    return out
 
 
-def build_package(week, receipts, call_sheet, anchors, season=2013):
+def live_db_slots():
+    """Whether the installed kernel's profile seats defensive backs by
+    family (kernel 2014.6 batch B15, W2b, flag db_slots)."""
+    from . import KERNEL_VERSION
+    from .profiles import profile_for
+    return profile_for(KERNEL_VERSION).has("db_slots")
+
+
+def receipt_identity_errors(entries, receipts, identities):
+    """Kernel 2014.6 batch B15 (R21): a player id used in a closed receipt is
+    never renamed. ``entries`` are the slate's background club entries (rows
+    with gsis ids), ``identities`` the branch identity table ({player id:
+    gsis}); a gsis id that a closed receipt carries under one id and a week's
+    entry under another is an error."""
+    used = {}
+    for receipt in receipts:
+        for team in (receipt["away"], receipt["home"]):
+            for pid in receipt["team_stats"][team].get("players", ()):
+                gsis = identities.get(pid)
+                if gsis:
+                    used.setdefault(gsis, set()).add(pid)
+    errors = []
+    for (_, team), club in sorted(entries.items()):
+        for p in club["players"]:
+            known = used.get(p.get("gsis_id"))
+            if known and p["player_id"] not in known:
+                errors.append("%s (%s) is %s in a closed receipt and %s in this week's %s entry"
+                              % (p["gsis_id"], team, ", ".join(sorted(known)), p["player_id"], team))
+    return errors
+
+
+def build_package(week, receipts, call_sheet, anchors, season=2013, strength_model=None, decisions=None,
+                  decision_kinds=None, db_slots=None):
+    """The weekly package. `strength_model` is the strength record model for
+    every club (the installed kernel's when None; kernel 2014.6 batch B7:
+    under player-state-v1 every roster row needs its gsis id and the league
+    year must be bound, else the build blocks). `decisions` is the frozen
+    sheet's decisions object and `decision_kinds` the kinds the resolving
+    kernel decides (the installed kernel's when None; batch B9, U6: without
+    a block for each, Jacksonville's input fails closed; the closed 2013
+    season decides none). `db_slots` is whether the resolving kernel seats
+    defensive backs by family (the installed kernel's when None; batch B15,
+    W2b): from the in-season rails' first week (2014 Week 5) each background
+    club's defensive backs then take their contemporaneous labels and chart
+    nickel roles (depth_library.relabel_defensive_backs), and Jacksonville's
+    chart must name its nickel and outside reserve, else its input fails
+    closed (db_role_errors). Weeks before the rails, and the closed 2013
+    season, are unchanged."""
+    if decision_kinds is None:
+        decision_kinds = scoring_decisions.live_kinds() if season != 2013 else ()
+    if db_slots is None:
+        db_slots = live_db_slots() if season != 2013 else False
     games = []
     coverage = {}
+    if season != 2013:
+        strength_model = strength_model or strength.live_model()
+    identities = identity_map(season) if season != 2013 else {}
+    strict = strength_model == strength.PLAYER_STATE_MODEL
     birth_dates = player_bios.load()
     slate_games = schedule(week, season)
     slate = rails_slate(week, season, receipts, slate_games) if season != 2013 else None
     clubs, deferred = _rails_clubs(slate, slate_games, season) if slate else ({}, [])
+    # Kernel 2014.6 batch B15 (W2b): the DB labels and roles from the rails'
+    # first week under a kernel that seats defensive backs by family.
+    w2b = bool(db_slots) and bool(slate)
+    game_day_report, db_report = {}, {}
     if slate:
         # Newcomers' public birth dates (nflverse players, carried in the
         # rails rows and base) for players the registry does not hold yet.
         birth_dates = dict(rails.identities(slate["data"]), **birth_dates)
+        # R21: a player id used in a closed receipt is never renamed.
+        renamed = receipt_identity_errors(clubs, receipts, identities)
+        if renamed:
+            raise ValueError("R21 identity: " + "; ".join(renamed[:10]))
     for game in slate_games:
         game_day = date.fromisoformat(game["date"])
 
         def unit(team):
             club = clubs.get((rails.game_key(game), team)) if slate else None
             if team == PROTAGONIST:
-                data = jacksonville_input(receipts, game_day, anchors, call_sheet, season)
+                data = jacksonville_input(receipts, game_day, anchors, call_sheet, season, decisions=decisions,
+                                          decision_kinds=decision_kinds, db_roles=w2b)
             else:
-                data = background_input(team, week, receipts, game_day, anchors, season, club=club)
+                if w2b:
+                    club = depth_library.relabel_defensive_backs(
+                        club, season, report=db_report.setdefault(event_id(game, season=season), {}).setdefault(
+                            team, {}))
+                report = game_day_report.setdefault(event_id(game, season=season), {}).setdefault(
+                    team, {}) if slate else None
+                data = background_input(team, week, receipts, game_day, anchors, season, club=club, report=report)
             if season != 2013:
                 # Kernel 2014.4 E1: every club, Jacksonville included, gets
                 # its dated honours record by the same rule, as of the game
                 # day (runtime/strength.py). The closed 2013 season is never
                 # rebuilt with it. From the rails' effective week every club
                 # joins by gsis id (engineering review B6).
-                rows = (strength_identities(data["roster"], season, club=club, protagonist=team == PROTAGONIST)
-                        if slate else data["roster"])
-                data["strength"], coverage[team] = strength.team_strength(team, rows, season, game_day)
+                rows = (strength_identities(data["roster"], season, club=club, protagonist=team == PROTAGONIST,
+                                            identities=identities, strict=strict)
+                        if slate or strict else data["roster"])
+                data["strength"], coverage[team] = strength.team_strength(team, rows, season, game_day,
+                                                                          model=strength_model)
             return data
 
         games.append({
@@ -478,4 +678,12 @@ def build_package(week, receipts, call_sheet, anchors, season=2013):
         # Public preparation metadata outside TeamInput and the outcome
         # packet: the rails files, cutoffs and state digests the week used.
         package["rails"] = _rails_metadata(slate, slate_games, season, deferred)
+        # Batch B15 (R21): each background club's available, dressed and
+        # legal counts; (W2b) the DB labels and nickel roles applied.
+        package["rails"]["game_day"] = game_day_report
+        package["rails"]["db_slots"] = ({"applied": w2b, "clubs": db_report,
+                                         # Review fix (October 16, 2026): the family table the
+                                         # labels came from, checked by close_week.py.
+                                         "families_sha256": rails.sha256_file(SeasonPaths(season).db_families)}
+                                        if w2b else {"applied": False})
     return package

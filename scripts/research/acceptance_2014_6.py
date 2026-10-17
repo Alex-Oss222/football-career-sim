@@ -1,0 +1,956 @@
+#!/usr/bin/env python3
+"""Kernel 2014.6 acceptance runs (batch B5 onward), committed.
+
+Resolves synthetic games under a kernel profile (default PROFILE_2014_6)
+through runtime.kernel.resolve_game with kernel entropy derived exactly as
+the production runner derives it from an opaque event reference (the label
+is the event id; seed_sweep.entropy), turns each closed result into a public
+receipt (runtime.statbook.make_receipt, compact_stats, with the possession
+list attached so the result-only rows are measurable) and grades the cohort
+with runtime.bands (usage and volume, drive model, field position and late
+game, injuries, ledger coherence).
+
+Blocks (library/2014_6_pre_build_specification.md, section 6):
+
+  a1      acc-2014.6-0 .. acc-2014.6-999: the 1,000-game block. Fixture by
+          the label's index only: an even index plays the synthetic sample
+          clubs without strength records (tests/synthetic_games.py
+          sample_teams), an odd index the same clubs with symmetric
+          synthetic strength records (Plus honours for each club's QB1, WR1,
+          OL1, DL1, LB1 and DB1); every fifth index at a neutral site.
+  a2      acc-2014.6-x0 .. acc-2014.6-x1999: the 2,000-game block for the
+          end-of-half rows (sample clubs, no strength records, home venue).
+  slate   the 512-game real 2014 inventory slate: the 31 background clubs'
+          2014 Week 1 game-day units (runtime.depth_library, 46 actives by
+          week_inputs.game_day_actives) and Jacksonville's current game
+          depth chart with its frozen Week 4 call sheet
+          (week_inputs.jacksonville_input as of the Week 4 game day), each
+          club with its dated strength record (runtime.strength.team_strength
+          as of September 7, 2014); each club hosts the next 16 clubs in
+          name order. Labels slate-2014.6-0 .. -511 (not a specification
+          block: the specification names no slate labels; the fixture
+          depends on the index only).
+  dev     dev-2014.6-<i>: development labels, never an acceptance reading.
+
+Batch B9 (scoring decisions; review round 1) adds two blocks with their own
+readings (no band table):
+
+  swap        the design's label swap on real inputs: Jacksonville's Week 4
+              game-day inputs (slate clubs, synthetic latent draws) carry the
+              GO_LATE two-point and ONSIDE_LATE onside blocks and play San
+              Diego at a neutral site, labels swap2-2014.6-0 .. -119; the
+              same 120 labels with the same inputs relabelled Denver
+              Broncos; and the same labels with the blocks moved to San
+              Diego. It reports each arm's compliance, go share, conversions,
+              onside kicks and the carrier's points, and the Jacksonville
+              against Denver z of points and go share (within 3 SE).
+  late-onside late-onside-2014.6-0 .. -599: the sample clubs, both on
+              {"otherwise": "onside"} (every kickoff from the 35 onside): the
+              late feasibility of onside starts. It reports refused games,
+              validation errors, fallback_zero_tuple, the onside kicks and
+              the onside starts in the last 5:00 of the game or overtime.
+
+Batch B9F (live fourth downs) adds one block with its own readings:
+
+  fourth-swap the specification's label swap (library/2014_6_fourth_down_specification.md,
+              section 12): Jacksonville's Week 4 game-day inputs (slate
+              clubs, synthetic latent draws) carry the FOURTH_SWAP standing
+              fourth-down block and play San Diego at a neutral site, labels
+              fourth-swap-2014.6-0 .. -119; the same labels with the same
+              inputs relabelled Denver Broncos; and the same labels with the
+              same block (the same decision sequence as a function of the
+              state) moved to San Diego. It reports each arm's compliance
+              (the holder's fourth downs by its block, the other club's by
+              the chart), go decisions and conversions, and the carrier's
+              points, and the Jacksonville against Denver z of points, go
+              share and conversion rate (within 3 SE).
+
+Batch B7 (player states at runtime). Under a profile whose strength model is
+player-state-v1 the strength records are player-state records with synthetic
+latent draws: no private service is called. A synthetic season reference
+R_k = player_state.season_reference(b"acc-2014.6-synthetic-reference", k) with
+k = --latent-ref (default 0) stands in for the service's R_2014, and every
+drawable player's z is drawn from it by the same keyed draw. The a1 block's
+odd games give every player a synthetic state (family by position group;
+offensive linemen without a state, as in the committed model; since U5 the
+linebackers too are drawn, and each drawn player carries his drawn tier) and
+the same six Plus honours as before (now floors). The slate block builds each
+club's real public states (runtime.strength.team_strength under a synthetic
+binding stub; the committed public table) and applies the synthetic draws.
+The summary adds the strength report: league mean edge, EDGE_CLAMP and
+SACK_SHIFT_CLAMP shares, the club points and margin spread.
+
+  a1z     acc-2014.6-z0 .. -z999 (B7, reported alongside a1, not a
+          specification block): the a1 fixture with the synthetic states
+          alone and no honours, so the symmetric records are centred on the
+          fit's own scale (a1's six Plus floors lift both clubs' passing
+          composite about 4.3 units above the real target-set centre).
+
+Batch B10 (ball security, W4 and R12 layers A, B and C).
+
+  ball-layers ball-layers-2014.6-0 .. -399: the sample clubs (no strength
+              records, home venue) under four profile levels on the same
+              labels: kernel 2014.6 without the B10 flags, with the credit
+              layer alone, without layer B, and PROFILE_2014_6. It reports
+              (1) the credit layer's projection identity against the level
+              without it (outcomes, per-drive injury exposure and kick-unit
+              credit identical once the declared fields are stripped: the
+              2014.6 field group, player lines, player evidence,
+              diagnostics, and a row's tackle names) and the forced-fumble
+              tackle shifts it made; (2) layer B: on every game, the first
+              possession at which PROFILE_2014_6 and the level without
+              layer B differ, whether it is a lost-fumble drive, and
+              whether its terminal snap kind, its completions, its yard
+              values or its layout resample changed, with the terminal
+              fallbacks; (3) layer C: retained kicks and the overtime punts
+              whose retained records were excluded.
+
+  --without F1,F2  (a1, a1z, a2, slate, dev) the same labels under the
+              profile less those flags, a reading of what a mechanism moves
+              (for example --block a2 --without fourth_down_decisions); never
+              the acceptance profile itself.
+
+The 12,000-game sweep is scripts/research/seed_sweep.py --block a6.
+
+Nothing is written unless --out names a file. Synthetic seeds only: no
+private service, no career state is changed (the slate reads committed
+career files).
+
+  python scripts/research/acceptance_2014_6.py --block a1 --jobs 4 --out /tmp/a1.json
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import multiprocessing
+from pathlib import Path
+import sys
+
+ROOT = Path(__file__).resolve().parents[2]
+for path in (ROOT, ROOT / "tests", ROOT / "scripts" / "research"):
+    if str(path) not in sys.path:
+        sys.path.insert(0, str(path))
+
+BLOCKS = {"a1": ("acc-2014.6-", 1000), "a2": ("acc-2014.6-x", 2000), "slate": ("slate-2014.6-", 512),
+          "a1z": ("acc-2014.6-z", 1000), "dev": ("dev-2014.6-", None),
+          # Batch B9 readings with their own summaries (swap_block, late_onside_block).
+          "swap": ("swap2-2014.6-", 120), "late-onside": ("late-onside-2014.6-", 600),
+          # Batch B9F reading with its own summary (fourth_swap_block).
+          "fourth-swap": ("fourth-swap-2014.6-", 120),
+          # Batch B10 reading with its own summary (ball_layers_block).
+          "ball-layers": ("ball-layers-2014.6-", 400)}
+# The swap block's blocks (tests/test_scoring_decisions.py GO_LATE and ONSIDE_LATE).
+GO_LATE = {"otherwise": "kick", "rules": [{"when": {"period": [4], "diff_after_td": [-2, -5, -10]}, "decision": "go"},
+                                          {"when": {"period": [1, 2, 3], "diff_after_td": {"min": 16}}, "decision": "go"}]}
+ONSIDE_LATE = {"otherwise": "deep", "rules": [{"when": {"period": [4], "diff_after_score": {"min": -16, "max": -1},
+                                                        "game_seconds_max": 300}, "decision": "onside"}]}
+SWAP_ARMS = ("jax", "den", "sd")
+# The fourth-swap block's standing fourth-down block (a fixture, not Stone's;
+# no named call, so the same block is valid on either club's sheet): go on
+# fourth and 1 between the 35s, go when trailing in the last 5:00, punt on
+# fourth and 8 or more at the opponent's 30-39, otherwise the league chart.
+FOURTH_SWAP = {"otherwise": "league", "rules": [
+    {"when": {"ydstogo": [1], "los": {"min": 35, "max": 65}}, "decision": "go"},
+    {"when": {"period": [4], "margin": {"min": -16, "max": -1}, "game_seconds_max": 300}, "decision": "go"},
+    {"when": {"ydstogo": {"min": 8}, "los": {"min": 30, "max": 39}}, "decision": "punt"}]}
+STRENGTH_SLOTS = (("QB", "offense"), ("WR", "offense"), ("OL", "offense"), ("DL", "defense"), ("LB", "defense"),
+                  ("DB", "defense"))
+DIAGNOSTICS = ("chain_layout_failed", "chain_layout_resampled", "chain_layout_resample_exhausted",
+               "fallback_zero_tuple", "fallback_fit_drive", "fallback_need_union", "fallback_clock_tuple",
+               "h1_fit_fallback", "h1_late_match_fallback", "h1_late_cell_fallback", "h1_late_union_fallback",
+               "h1_late_infeasible", "h1_neutral_infeasible", "clock_expiry_zero", "timeout_unavailable_kept",
+               "ot_leading_offense",
+               # batch B6: the W3 closable fallback and the W5a stamp exemptions
+               "fg_fourth_down_relaxed", "clock_gap_exempt", "timeout_seat_fallback",
+               # batch B10: kept-fumble seating, layer B's terminal fallbacks,
+               # the forced-fumble tackle shift and the overtime retained-punt
+               # exclusion
+               "kept_fumble_unseated", "kept_fumble_kind_fallback", "kept_fumble_cut", "fumble_terminal_fallback",
+               "lost_fumble_entry_synthesized", "forced_fumble_tackle_moved", "ot_punt_retained_excluded",
+               "ot_punt_retained_records_excluded", "retained_kick_without_fumble", "lost_fumble_entry_unused",
+               # batch B11: the records left out of the replay, the hosts
+               # found by fallback, and the layouts laid out without their
+               # records (the last fallback)
+               "penalty_post_terminal_excluded", "penalty_kick_row_excluded", "penalty_host_fallback",
+               "penalty_layout_dropped", "penalty_records_dropped", "penalty_row_unseated",
+               # batch B13: the replayed yard split's forced completions and
+               # fallbacks (runtime.yard_split)
+               "relocation_forced_completion", "real_split_terminal_moved", "real_split_rerouted",
+               "real_values_fallback_completions", "real_values_fallback_runs", "real_completions_clamped",
+               "real_losses_fallback", "real_sack_losses_moved", "real_split_unavailable", "real_split_dropped",
+               "chain_plan_concentrated", "chain_plan_enumerated", "chain_split_repaired")
+
+
+def entropy(label):
+    from seed_sweep import entropy as derive
+    return derive(label)
+
+
+LATENT_REF = 0
+# Batch B10: --without drops profile flags for a reading on the same labels
+# (the level without a mechanism); never the acceptance profile itself.
+WITHOUT = frozenset()
+SYNTHETIC_REFERENCE = b"acc-2014.6-synthetic-reference"
+FAMILY_OF_GROUP = {"QB": "QB", "RB": "RB", "FB": "RB", "WR": "WR", "TE": "TE", "DL": "DL", "LB": "LB", "DB": "DB",
+                   "K": "K", "P": "P"}
+
+
+def synthetic_reference(k=None):
+    from runtime import player_state
+    return player_state.season_reference(SYNTHETIC_REFERENCE, LATENT_REF if k is None else k)
+
+
+def _strength_record(team, version, honours=True):
+    """Symmetric synthetic honours (Plus) for six starters of a club; under
+    the player-state model every player also carries a synthetic state with
+    a draw from the synthetic reference (keyed by player id, as the service
+    keys by gsis id)."""
+    from runtime import player_state, strength, usage
+    from runtime.profiles import profile_for
+    players = {}
+    for grp, unit in (STRENGTH_SLOTS if honours else ()):
+        first = usage.depth_order(team.roster, grp)
+        if first:
+            players[first[0].player_id] = {"offdef": {
+                "tier": "Plus", "tier_value": 3, "evidence_weight": 1.0, "value": 1.0, "unit": unit,
+                "honour_position": grp, "honour_group": grp, "evidence_ids": ["synthetic-" + grp]},
+                "special": None}
+    model = profile_for(version).strength
+    record = {"model": model, "season": 2014, "as_of": "2014-09-07", "honour_seasons": [2011, 2012],
+              "players": players}
+    if model == strength.PLAYER_STATE_MODEL:
+        ref = synthetic_reference()
+        keys = []
+        for p in team.roster:
+            fam = FAMILY_OF_GROUP.get(usage.group(p.position))
+            drawn = fam is not None and player_state.family_scale(fam) > 0
+            row = players.setdefault(p.player_id, {"offdef": None, "special": None, "production": None})
+            row["state"] = {"family": fam, "basis": "synthetic" if drawn else "no_state",
+                            "expected": 0.0, "drawn": drawn}
+            if drawn:
+                k = player_state.key(2014, p.player_id, "b")
+                keys.append(k)
+                row["latent_value"] = player_state.draw_z(ref, k)
+                row["drawn_tier"] = player_state.drawn_tier(fam, row["latent_value"])
+        record.update({"league_year": 2014, "manifest_sha256": player_state.manifest_sha256(),
+                       "commitment": "synthetic-reference-%d" % LATENT_REF,
+                       "latent_keys": sorted(keys, key=player_state.key_text)})
+    return record
+
+
+def a1_fixture(index, version="2014.6", honours=True):
+    from dataclasses import replace
+    from synthetic_games import sample_teams
+    home, away = sample_teams()
+    if index % 2:
+        home, away = (replace(home, strength=_strength_record(home, version, honours)),
+                      replace(away, strength=_strength_record(away, version, honours)))
+    return home, away, ("neutral" if index % 5 == 0 else "home")
+
+
+_SLATE = None
+
+
+def slate_clubs(version="2014.6"):
+    """{club: TeamInput} of the 512-game slate (built once per process).
+    Under the player-state model each club's public states come from the
+    committed table through a synthetic binding stub, and its latent values
+    from the synthetic reference (no service call)."""
+    global _SLATE
+    if _SLATE is not None:
+        return _SLATE
+    from contextlib import ExitStack
+    from datetime import date
+    from unittest import mock
+    from runtime import depth_library, player_state, strength, week_inputs
+    from runtime.profiles import profile_for
+    model = profile_for(version).strength
+    stack = ExitStack()
+    if model == strength.PLAYER_STATE_MODEL:
+        stub = {"schema": player_state.BINDING_SCHEMA, "league_year": 2014,
+                "manifest_sha256": player_state.manifest_sha256(), "commitment": "synthetic-reference-%d" % LATENT_REF}
+        stack.enter_context(mock.patch.object(player_state, "binding", return_value=stub))
+    stack.__enter__()
+    from runtime.kernel import TeamInput
+    from runtime.player_evidence import normalize_players
+    from runtime.seasons import SeasonPaths
+    anchors = dict(offense_anchor=2.0, defense_anchor=2.0, special_teams_anchor=2.0)
+    library = depth_library.load(SeasonPaths(2014).background_depth)
+    identities = week_inputs.identity_map(2014)
+    inputs = {}
+    for team in sorted(library["clubs"]):
+        data = depth_library.team_input(team, week=1, season=2014, **anchors)
+        data["active_players"] = week_inputs.game_day_actives(data["roster"])
+        rows = data["roster"]
+        if model == strength.PLAYER_STATE_MODEL:
+            club = library["clubs"][team]
+            rows = week_inputs.strength_identities(rows, 2014, club=club, identities=identities, strict=True)
+        data["strength"], _ = strength.team_strength(team, rows, 2014, date(2014, 9, 7), model=model)
+        inputs[team] = data
+    sheet = json.loads((ROOT / "career/2014/05_Regular_Season/Games/Week_04/call_sheet.json").read_text())
+    from scripts.render_season_stats import load_receipts
+    receipts = [r for r in load_receipts(SeasonPaths(2014).receipts) if int(r["week"]) <= 4]
+    jax = week_inputs.jacksonville_input(receipts, date(2014, 10, 5), anchors, sheet["offensive_call_sheet"], 2014)
+    rows = week_inputs.strength_identities(jax["roster"], 2014, protagonist=True, identities=identities,
+                                           strict=model == strength.PLAYER_STATE_MODEL)
+    jax["strength"], _ = strength.team_strength(week_inputs.PROTAGONIST, rows, 2014, date(2014, 9, 7), model=model)
+    inputs[week_inputs.PROTAGONIST] = jax
+    stack.close()
+    out = {}
+    for team, data in inputs.items():
+        fields = {k: v for k, v in data.items() if k in TeamInput.__dataclass_fields__}
+        fields["active_players"] = tuple(fields["active_players"])
+        fields["roster"] = tuple(fields["roster"])
+        fields["offensive_call_sheet"] = tuple(fields.get("offensive_call_sheet", ()))
+        team_input = TeamInput(**fields)
+        normalize_players(team_input)
+        if model == strength.PLAYER_STATE_MODEL:
+            ref = synthetic_reference()
+            draws = {player_state.key_text(k): player_state.z_text(player_state.draw_z(ref, k))
+                     for k in team_input.strength["latent_keys"]}
+            team_input = player_state.apply_latent(team_input, draws)
+        out[team] = team_input
+    _SLATE = out
+    return out
+
+
+def slate_fixture(index, version="2014.6"):
+    clubs = slate_clubs(version)
+    names = sorted(clubs)
+    home = names[index // 16]
+    away = names[(names.index(home) + 1 + index % 16) % len(names)]
+    return clubs[home], clubs[away], "home"
+
+
+def fixture(block, index, version="2014.6"):
+    if block == "a1":
+        return a1_fixture(index, version)
+    if block == "a1z":
+        return a1_fixture(index, version, honours=False)
+    if block == "slate":
+        return slate_fixture(index, version)
+    from synthetic_games import sample_teams
+    home, away = sample_teams()
+    return home, away, "home"
+
+
+def run_profile(version, without=frozenset()):
+    """The kernel profile of a run: profile_for(version) less the --without
+    flags (batch B10; a reading on the same labels)."""
+    from runtime.profiles import Profile, profile_for
+    profile = profile_for(version)
+    if not without:
+        return profile
+    if set(without) - profile.flags:
+        raise ValueError("--without names flags the profile does not hold: %s" % sorted(set(without) - profile.flags))
+    return Profile(profile.kernel_version, base=profile.base, cell_rules=profile.cell_rules,
+                   strength=profile.strength, flags=profile.flags - frozenset(without), record_base=True)
+
+
+def play(job):
+    global LATENT_REF
+    block, index, version, LATENT_REF = job[:4]
+    without = job[4] if len(job) > 4 else frozenset()
+    from runtime.kernel import resolve_game, validate_result
+    from runtime.profiles import profile_for
+    from runtime.statbook import make_receipt
+    prefix = BLOCKS[block][0]
+    label = "%s%d" % (prefix, index)
+    home, away, venue = fixture(block, index, version)
+    strength_rows = []
+    try:
+        result = resolve_game(home, away, seed=entropy(label), event_id=label, venue=venue,
+                              _test_profile=run_profile(version, without), _test_strength_receipt=strength_rows)
+    except Exception as exc:  # a refused game is a finding
+        return {"label": label, "refused": ["%s: %s" % (type(exc).__name__, exc)]}
+    errors = validate_result(result)
+    receipt = make_receipt(result, week=5, matchup="%s at %s" % (away.team_id, home.team_id), detail="compact_stats")
+    receipt["possessions"] = result["possessions"]
+    from runtime.strength import parameters
+    params = parameters(profile_for(version).strength)
+    scores = result["final_score"]
+    return {"label": label, "refused": errors[:5], "receipt": receipt,
+            "digest": hashlib.sha256(json.dumps(result, sort_keys=True, default=str).encode()).hexdigest(),
+            "diagnostics": {k: result["diagnostics"].get(k, 0) for k in DIAGNOSTICS},
+            "strength": {"drives": len(strength_rows),
+                         "with_record": bool(home.strength or away.strength),
+                         "edge_sum": sum(r["edge"] for r in strength_rows),
+                         "edge_clamped": sum(1 for r in strength_rows if abs(r["edge"]) >= params.edge_clamp),
+                         "sack_clamped": sum(1 for r in strength_rows
+                                             if abs(r["sack_shift"]) >= params.sack_shift_clamp),
+                         "points": [scores[home.team_id], scores[away.team_id]]}}
+
+
+def run(block, version, count=None, start=0, jobs=1):
+    total = BLOCKS[block][1]
+    stop = (start + count) if count is not None else total
+    if total is not None:
+        stop = min(stop, total)
+    work = [(block, i, version, LATENT_REF, WITHOUT) for i in range(start, stop)]
+    if jobs > 1:
+        with multiprocessing.Pool(jobs) as pool:
+            rows = pool.map(play, work, chunksize=4)
+    else:
+        rows = [play(job) for job in work]
+    return rows
+
+
+# ---- batch B9 readings: the label swap on real inputs and late onside feasibility ----------------
+
+def _tries(result):
+    """(scorer, try record) for every try of a result."""
+    out = []
+    for p in result["possessions"]:
+        if p.get("try"):
+            out.append((p["team"], p["try"]))
+        n = p.get("non_offensive_score") or {}
+        if n.get("try"):
+            out.append((n["team"], n["try"]))
+    return out + [(k["receiving"], k["try"]) for k in result["kickoffs"] if k.get("try")]
+
+
+def swap_play(job):
+    arm, index, version = job
+    from dataclasses import replace
+    from runtime.kernel import resolve_game, validate_result
+    from runtime.profiles import profile_for
+    clubs = slate_clubs(version)
+    jax, sdc = clubs["Jacksonville Jaguars"], clubs["San Diego Chargers"]
+    if arm in ("jax", "den"):
+        jax = replace(jax, try_policy=GO_LATE, kickoff_policy=ONSIDE_LATE)
+        if arm == "den":
+            jax = replace(jax, team_id="Denver Broncos")
+        holder = jax.team_id
+    else:
+        sdc = replace(sdc, try_policy=GO_LATE, kickoff_policy=ONSIDE_LATE)
+        holder = sdc.team_id
+    label = "%s%d" % (BLOCKS["swap"][0], index)
+    try:
+        r = resolve_game(sdc, jax, seed=entropy(label), event_id=label, venue="neutral",
+                         _test_profile=profile_for(version))
+    except Exception as exc:  # a refused game is a finding
+        return arm, {"refused": "%s: %s" % (type(exc).__name__, exc)}
+    out = {"refused": None, "errors": len(validate_result(r)), "points": r["final_score"][holder], "tries": 0,
+           "go": 0, "conversions": 0, "compliant": 0, "kicks": 0, "kicks_compliant": 0, "onside": 0,
+           "onside_recovered": 0, "other_league": 0, "other_tries": 0}
+    for team, t in _tries(r):
+        if team != holder:
+            out["other_tries"] += 1
+            out["other_league"] += t["basis"] == "league"
+            continue
+        out["tries"] += 1
+        out["go"] += t["decision"] == "go"
+        out["conversions"] += t["decision"] == "go" and bool(t["made"])
+        out["compliant"] += t["basis"].startswith("policy:")
+    for k in r["kickoffs"]:
+        if k["kicking"] == holder and k.get("onside") is not None:
+            out["kicks"] += 1
+            out["kicks_compliant"] += k["basis"].startswith("policy:")
+            out["onside"] += bool(k["onside"])
+            out["onside_recovered"] += k["outcome"] == "onside_recovered"
+    return arm, out
+
+
+def swap_block(version="2014.6", jobs=1, count=None):
+    """The label swap on real inputs (module docstring, block swap)."""
+    import math
+    n = count or BLOCKS["swap"][1]
+    work = [(arm, i, version) for arm in SWAP_ARMS for i in range(n)]
+    if jobs > 1:
+        with multiprocessing.Pool(jobs) as pool:
+            rows = pool.map(swap_play, work, chunksize=4)
+    else:
+        rows = [swap_play(job) for job in work]
+    arms = {}
+    for arm, o in rows:
+        a = arms.setdefault(arm, {"games": 0, "refused": [], "errors": 0, "points": [], "tries": 0, "go": 0,
+                                  "conversions": 0, "compliant": 0, "kicks": 0, "kicks_compliant": 0, "onside": 0,
+                                  "onside_recovered": 0, "other_league": 0, "other_tries": 0})
+        a["games"] += 1
+        if o["refused"]:
+            a["refused"].append(o["refused"])
+            continue
+        a["points"].append(o["points"])
+        for key in ("errors", "tries", "go", "conversions", "compliant", "kicks", "kicks_compliant", "onside",
+                    "onside_recovered", "other_league", "other_tries"):
+            a[key] += o[key]
+    for a in arms.values():
+        pts = a.pop("points")
+        mean = sum(pts) / len(pts) if pts else None
+        se = (math.sqrt(sum((x - mean) ** 2 for x in pts) / (len(pts) - 1)) / math.sqrt(len(pts))
+              if len(pts) > 1 else None)
+        a["carrier_points"], a["carrier_points_se"] = mean, se
+    j, d = arms["jax"], arms["den"]
+    spread = math.sqrt((j["carrier_points_se"] or 0) ** 2 + (d["carrier_points_se"] or 0) ** 2)
+    z_points = (j["carrier_points"] - d["carrier_points"]) / spread if spread else 0.0
+    pooled = (j["go"] + d["go"]) / (j["tries"] + d["tries"]) if j["tries"] and d["tries"] else 0.0
+    z_go = ((j["go"] / j["tries"] - d["go"] / d["tries"])
+            / math.sqrt(pooled * (1 - pooled) * (1 / j["tries"] + 1 / d["tries"]))) if 0 < pooled < 1 else 0.0
+    return {"block": "swap", "kernel_profile": version, "games_per_arm": n, "arms": arms,
+            "z_points_jax_vs_den": z_points, "z_go_share_jax_vs_den": z_go,
+            "pass": (all(not a["refused"] and not a["errors"] and a["compliant"] == a["tries"]
+                         and a["kicks_compliant"] == a["kicks"] and a["other_league"] == a["other_tries"]
+                         for a in arms.values()) and abs(z_points) <= 3 and abs(z_go) <= 3)}
+
+
+def late_onside_play(job):
+    index, version = job
+    from dataclasses import replace
+    from runtime.kernel import resolve_game, validate_result
+    from runtime.profiles import profile_for
+    from synthetic_games import sample_teams
+    home, away = (replace(t, kickoff_policy={"otherwise": "onside"}) for t in sample_teams())
+    label = "%s%d" % (BLOCKS["late-onside"][0], index)
+    try:
+        r = resolve_game(home, away, seed=entropy(label), event_id=label, _test_profile=profile_for(version))
+    except Exception as exc:  # a refused game is a finding
+        return {"label": label, "refused": "%s: %s" % (type(exc).__name__, exc)}
+    onside = [k for k in r["kickoffs"] if k.get("onside")]
+    return {"label": label, "refused": None, "errors": validate_result(r)[:5],
+            "fallback_zero_tuple": r["diagnostics"].get("fallback_zero_tuple", 0),
+            "not_onside_from_35": sum(1 for k in r["kickoffs"] if bool(k.get("onside")) == bool(k["free_kick"])),
+            "onside": len(onside),
+            "late": sum(1 for k in onside if k["half"] == "OT" or (k["half"] == 2 and k["remaining"] <= 300))}
+
+
+def late_onside_block(version="2014.6", jobs=1, count=None):
+    """Late feasibility after onside starts (module docstring, block late-onside)."""
+    work = [(i, version) for i in range(count or BLOCKS["late-onside"][1])]
+    if jobs > 1:
+        with multiprocessing.Pool(jobs) as pool:
+            rows = pool.map(late_onside_play, work, chunksize=4)
+    else:
+        rows = [late_onside_play(job) for job in work]
+    refused = [r for r in rows if r["refused"]]
+    played = [r for r in rows if not r["refused"]]
+    out = {"block": "late-onside", "kernel_profile": version, "games": len(rows), "refused_games": len(refused),
+           "refused": [{"label": r["label"], "refused": r["refused"]} for r in refused[:50]],
+           "games_with_errors": sum(1 for r in played if r["errors"]),
+           "errors": [{"label": r["label"], "errors": r["errors"]} for r in played if r["errors"]][:50],
+           "fallback_zero_tuple": sum(r["fallback_zero_tuple"] for r in played),
+           "kickoffs_not_onside_from_35": sum(r["not_onside_from_35"] for r in played),
+           "onside_kicks": sum(r["onside"] for r in played),
+           "onside_late_or_overtime": sum(r["late"] for r in played)}
+    out["pass"] = not (out["refused_games"] or out["games_with_errors"] or out["fallback_zero_tuple"]
+                       or out["kickoffs_not_onside_from_35"])
+    return out
+
+
+def fourth_swap_play(job):
+    arm, index, version = job
+    from dataclasses import replace
+    from runtime.kernel import resolve_game, validate_result
+    from runtime.play_detail import check_ledger
+    from runtime.profiles import profile_for
+    clubs = slate_clubs(version)
+    jax, sdc = clubs["Jacksonville Jaguars"], clubs["San Diego Chargers"]
+    if arm in ("jax", "den"):
+        jax = replace(jax, fourth_down_policy=FOURTH_SWAP)
+        if arm == "den":
+            jax = replace(jax, team_id="Denver Broncos")
+        holder = jax.team_id
+    else:
+        sdc = replace(sdc, fourth_down_policy=FOURTH_SWAP)
+        holder = sdc.team_id
+    label = "%s%d" % (BLOCKS["fourth-swap"][0], index)
+    try:
+        r = resolve_game(sdc, jax, seed=entropy(label), event_id=label, venue="neutral",
+                         _test_profile=profile_for(version))
+    except Exception as exc:  # a refused game is a finding
+        return arm, {"refused": "%s: %s" % (type(exc).__name__, exc)}
+    out = {"refused": None, "errors": len(validate_result(r)) + len(check_ledger(r)),
+           "points": r["final_score"][holder], "decisions": 0, "go": 0, "converted": 0, "compliant": 0,
+           "rule_decisions": 0, "other_decisions": 0, "other_league": 0}
+    for p in r["possessions"]:
+        for d in p.get("fourth_downs") or ():
+            if p["team"] != holder:
+                out["other_decisions"] += 1
+                out["other_league"] += d["basis"] == "league"
+                continue
+            out["decisions"] += 1
+            out["go"] += d["decision"] == "go"
+            out["converted"] += d["decision"] == "go" and d.get("outcome") in ("converted", "touchdown")
+            out["compliant"] += d["basis"].startswith("policy:") or d["basis"] == "delegated:league"
+            out["rule_decisions"] += d["basis"].startswith("policy:")
+    return arm, out
+
+
+def fourth_swap_block(version="2014.6", jobs=1, count=None):
+    """The B9F label swap on real inputs (module docstring, block fourth-swap)."""
+    import math
+    n = count or BLOCKS["fourth-swap"][1]
+    work = [(arm, i, version) for arm in SWAP_ARMS for i in range(n)]
+    if jobs > 1:
+        with multiprocessing.Pool(jobs) as pool:
+            rows = pool.map(fourth_swap_play, work, chunksize=4)
+    else:
+        rows = [fourth_swap_play(job) for job in work]
+    keys = ("errors", "decisions", "go", "converted", "compliant", "rule_decisions", "other_decisions",
+            "other_league")
+    arms = {}
+    for arm, o in rows:
+        a = arms.setdefault(arm, dict({"games": 0, "refused": [], "points": []}, **{k: 0 for k in keys}))
+        a["games"] += 1
+        if o["refused"]:
+            a["refused"].append(o["refused"])
+            continue
+        a["points"].append(o["points"])
+        for key in keys:
+            a[key] += o[key]
+    for a in arms.values():
+        pts = a.pop("points")
+        mean = sum(pts) / len(pts) if pts else None
+        se = (math.sqrt(sum((x - mean) ** 2 for x in pts) / (len(pts) - 1)) / math.sqrt(len(pts))
+              if len(pts) > 1 else None)
+        a["carrier_points"], a["carrier_points_se"] = mean, se
+
+    def z_share(k1, n1, k2, n2):
+        if not (n1 and n2):
+            return 0.0
+        pooled = (k1 + k2) / (n1 + n2)
+        if not 0 < pooled < 1:
+            return 0.0
+        return (k1 / n1 - k2 / n2) / math.sqrt(pooled * (1 - pooled) * (1 / n1 + 1 / n2))
+    j, d = arms["jax"], arms["den"]
+    spread = math.sqrt((j["carrier_points_se"] or 0) ** 2 + (d["carrier_points_se"] or 0) ** 2)
+    z_points = (j["carrier_points"] - d["carrier_points"]) / spread if spread else 0.0
+    z_go = z_share(j["go"], j["decisions"], d["go"], d["decisions"])
+    z_conv = z_share(j["converted"], j["go"], d["converted"], d["go"])
+    return {"block": "fourth-swap", "kernel_profile": version, "games_per_arm": n, "arms": arms,
+            "z_points_jax_vs_den": z_points, "z_go_share_jax_vs_den": z_go, "z_conversion_jax_vs_den": z_conv,
+            "pass": (all(not a["refused"] and not a["errors"] and a["compliant"] == a["decisions"]
+                         and a["other_league"] == a["other_decisions"] for a in arms.values())
+                     and all(arms[arm]["rule_decisions"] for arm in SWAP_ARMS)
+                     and abs(z_points) <= 3 and abs(z_go) <= 3 and abs(z_conv) <= 3)}
+
+
+# ---- batch B10 reading: the ball-security layers ------------------------------------------------
+
+def _b10_levels():
+    from runtime.profiles import B10_FLAGS, PROFILE_2014_6, Profile
+
+    def level(flags):
+        return Profile("2014.6", base=PROFILE_2014_6.base, cell_rules=PROFILE_2014_6.cell_rules,
+                       strength=PROFILE_2014_6.strength, flags=frozenset(flags), record_base=True)
+    off = PROFILE_2014_6.flags - B10_FLAGS
+    return {"off": level(off), "credit": level(off | {"ball_security_credit"}),
+            "no_layer_b": level(PROFILE_2014_6.flags - {"fumble_terminal_kind"}), "full": PROFILE_2014_6}
+
+
+def _b10_projection(result):
+    """The outcome a credit-only change may not move (ball_layers_block)."""
+    from test_profiles import strip_2014_6_fields
+    out = strip_2014_6_fields(result)
+    for key in ("player_evidence", "diagnostics"):
+        out.pop(key, None)
+    for team in out["team_stats"].values():
+        team.pop("players", None)
+    for row in out["play_ledger"]:
+        row.pop("tackler", None)
+        row.pop("assist_tackler", None)
+    return out
+
+
+def ball_layers_play(job):
+    index = job
+    from unittest import mock
+    from runtime import chains, participation
+    from runtime.kernel import resolve_game, validate_result
+    from synthetic_games import sample_teams
+    home, away = sample_teams()
+    label = "%s%d" % (BLOCKS["ball-layers"][0], index)
+    out = {"label": label, "refused": None}
+    results, exposure, layouts = {}, {}, {}
+    real_scrimmage, real_credit, real_layout = participation.scrimmage, participation.credit, chains.drive_layout
+    for name, profile in _b10_levels().items():
+        hazards, kicks, laid = [], [], []
+
+        def drive_layout(**kw):
+            out = real_layout(**kw)
+            laid.append({"drive": kw["drive_no"], "category": kw["category"], "lost_kind": kw.get("lost_kind"),
+                         "terminal": out["terminal"], "kinds": list(out["kinds"]),
+                         "completed": list(out["completed"]), "values": list(out["values"])})
+            return out
+
+        def scrimmage(*args, **kw):
+            snaps = real_scrimmage(*args, **kw)
+            if kw.get("hazard_out") is not None:
+                hazards.append(json.dumps(kw["hazard_out"], sort_keys=True))
+            return snaps
+
+        def credit(stats, team_id, snaps, side):
+            if side == "special_teams":
+                kicks.append((team_id, sorted(snaps)))
+            return real_credit(stats, team_id, snaps, side)
+        try:
+            with mock.patch.object(participation, "scrimmage", scrimmage), \
+                    mock.patch.object(participation, "credit", credit), \
+                    mock.patch.object(chains, "drive_layout", drive_layout):
+                results[name] = resolve_game(home, away, seed=entropy(label), event_id=label, _test_profile=profile)
+        except Exception as exc:  # a refused game is a finding
+            out["refused"] = "%s (%s): %s" % (name, type(exc).__name__, exc)
+            return out
+        exposure[name] = (hazards, kicks)
+        layouts[name] = laid
+    out["errors"] = sum(len(validate_result(r)) for r in results.values())
+    credit, off = results["credit"], results["off"]
+    out["credit_identical"] = (_b10_projection(credit) == _b10_projection(off)
+                               and exposure["credit"] == exposure["off"])
+    out["credit_fumbles"] = sum(len(p.get("fumbles") or ()) for p in credit["possessions"])
+    out["tackle_moved"] = credit["diagnostics"].get("forced_fumble_tackle_moved", 0)
+    full, no_b = results["full"], results["no_layer_b"]
+    out["terminal_fallback"] = full["diagnostics"].get("fumble_terminal_fallback", 0)
+    # Layer B moves a drive only through its layout: the first laid-out drive
+    # (a drawn drive or a fourth-down segment) at which the two levels
+    # differ, and what differs there.
+    def shape(laid):
+        return {k: v for k, v in laid.items() if k != "lost_kind"}
+    first = next(((a, b) for a, b in zip(layouts["full"], layouts["no_layer_b"]) if shape(a) != shape(b)), None)
+    out["layer_b"] = None
+    if first is not None or full["final_score"] != no_b["final_score"]:
+        a, b = first or ({}, {})
+        entry = {"lost_fumble_drive": a.get("category") == "fumble_lost" == b.get("category")
+                 and a.get("drive") == b.get("drive") and a.get("lost_kind") is not None}
+        if entry["lost_fumble_drive"]:
+            pa = next((p for p in full["possessions"] if p["number"] == a["drive"]), {})
+            pb = next((p for p in no_b["possessions"] if p["number"] == b["drive"]), {})
+            entry.update(terminal_kind=a["terminal"] != b["terminal"], plan=a["kinds"] != b["kinds"],
+                         completions=a["completed"] != b["completed"], values=a["values"] != b["values"],
+                         resample=pa.get("layout_resample") != pb.get("layout_resample"),
+                         entry_kind_kept=a["terminal"] == a["lost_kind"])
+        out["layer_b"] = entry
+    out["kicks_retained"] = sum(k["outcome"] == "retained" for k in full["kickoffs"])
+    out["punts_retained"] = sum((p.get("punt") or {}).get("outcome") == "retained" for p in full["possessions"])
+    out["ot_punt_excluded"] = full["diagnostics"].get("ot_punt_retained_excluded", 0)
+    out["team_games"] = 2
+    return out
+
+
+def ball_layers_block(version="2014.6", jobs=1, count=None):
+    """The B10 layer readings (module docstring, block ball-layers)."""
+    work = list(range(count or BLOCKS["ball-layers"][1]))
+    if jobs > 1:
+        with multiprocessing.Pool(jobs) as pool:
+            rows = pool.map(ball_layers_play, work, chunksize=4)
+    else:
+        rows = [ball_layers_play(job) for job in work]
+    refused = [r for r in rows if r["refused"]]
+    played = [r for r in rows if not r["refused"]]
+    diverged = [r["layer_b"] for r in played if r["layer_b"] is not None]
+    lost = [d for d in diverged if d["lost_fumble_drive"]]
+    out = {"block": "ball-layers", "games": len(rows), "refused_games": len(refused),
+           "refused": [{"label": r["label"], "refused": r["refused"]} for r in refused[:50]],
+           "validation_errors": sum(r["errors"] for r in played),
+           "credit_identical_games": sum(r["credit_identical"] for r in played),
+           "credit_fumbles": sum(r["credit_fumbles"] for r in played),
+           "credit_tackle_moved": sum(r["tackle_moved"] for r in played),
+           "layer_b_games_changed": len(diverged),
+           "layer_b_first_change_on_a_lost_fumble_drive": len(lost),
+           "layer_b_terminal_kind_changed": sum(d["terminal_kind"] for d in lost),
+           "layer_b_plan_changed": sum(d["plan"] for d in lost),
+           "layer_b_completions_changed": sum(d["completions"] for d in lost),
+           "layer_b_values_changed": sum(d["values"] for d in lost),
+           "layer_b_resample_changed": sum(d["resample"] for d in lost),
+           "layer_b_entry_kind_kept": sum(d["entry_kind_kept"] for d in lost),
+           "layer_b_terminal_fallbacks": sum(r["terminal_fallback"] for r in played),
+           "retained_kickoffs": sum(r["kicks_retained"] for r in played),
+           "retained_punts": sum(r["punts_retained"] for r in played),
+           "ot_punts_retained_excluded": sum(r["ot_punt_excluded"] for r in played),
+           "team_games": sum(r["team_games"] for r in played)}
+    out["pass"] = not (out["refused_games"] or out["validation_errors"]
+                       or out["credit_identical_games"] != len(played)
+                       or len(lost) != len(diverged))
+    return out
+
+
+def grade(receipts, version, provisional=True):
+    """Graded tables with each row's registry status. provisional=False is
+    the B17 re-grade: provisional detections (runtime.bands
+    PROVISIONAL_DETECTIONS) are graded as unregistered rows."""
+    from runtime import bands
+    out = {}
+    for name, fn in (("usage", bands.audit), ("drive_model", bands.audit_drive_model),
+                     ("field_position", bands.audit_field_position), ("injuries", bands.audit_injuries),
+                     # Batch B9 (R8, R9, R15): the scoring-decision rows.
+                     ("scoring", bands.audit_scoring),
+                     # Batch B9F: the fourth-down rows.
+                     ("fourth_down", bands.audit_fourth_down),
+                     # Batch B10: the ball-security rows.
+                     ("ball_security", bands.audit_ball_security),
+                     # Batch B11: the penalty rows.
+                     ("penalties", bands.audit_penalties),
+                     # Batch B13 (R16c): the yardage rows; every acceptance
+                     # block is a synthetic all-club sample, so the per-snap
+                     # run shape is graded here (informational on a real
+                     # cohort's audit).
+                     ("yardage", lambda rc, cohort: bands.audit_yardage(rc, cohort=cohort, per_snap_graded=True))):
+        team_games, rows = fn(receipts, cohort=version)
+        out[name] = {"team_games": team_games,
+                     "rows": [[m, o, c, t, bands.known_status((m, o, c, t, s), version, provisional)]
+                              for m, o, c, t, s in rows]}
+    checked, counts = bands.coherence(receipts, cohort=version)
+    out["coherence"] = {"checked": checked, "violations": {cls: n for cls, n, _ in counts if n}}
+    # Batch B6: audit-only classes are reported, never gated.
+    checked, counts = bands.audit_only_coherence(receipts, cohort=version)
+    out["coherence"]["audit_only"] = {cls: n for cls, n, _ in counts}
+    return out
+
+
+def strength_report(rows):
+    """Batch B7 gate readings: league mean edge, clamp shares, club points
+    and margin spread (informational), over the games with a record."""
+    import statistics
+    games = [r["strength"] for r in rows if r.get("strength") and r["strength"]["with_record"]]
+    drives = sum(g["drives"] for g in games)
+    points = [p for g in games for p in g["points"]]
+    margins = [g["points"][0] - g["points"][1] for g in games]
+    return {"games_with_record": len(games), "drives": drives,
+            "mean_edge": (sum(g["edge_sum"] for g in games) / drives) if drives else None,
+            "edge_clamp_share": (sum(g["edge_clamped"] for g in games) / drives) if drives else None,
+            "sack_shift_clamp_share": (sum(g["sack_clamped"] for g in games) / drives) if drives else None,
+            "points_mean": statistics.fmean(points) if points else None,
+            "points_sd": statistics.pstdev(points) if len(points) > 1 else None,
+            "margin_sd": statistics.pstdev(margins) if len(margins) > 1 else None,
+            "latent_ref": LATENT_REF}
+
+
+def summary(rows, version, provisional=True):
+    receipts = [r["receipt"] for r in rows if "receipt" in r]
+    refused = [r for r in rows if r["refused"]]
+    diagnostics = {k: sum(r.get("diagnostics", {}).get(k, 0) for r in rows) for k in DIAGNOSTICS}
+    out = {"kernel_profile": version, "games": len(rows), "refused_games": len(refused),
+           "refused": [{"label": r["label"], "refused": r["refused"]} for r in refused[:50]],
+           "diagnostics": diagnostics, "digests": {r["label"]: r.get("digest") for r in rows}}
+    out["bands"] = grade(receipts, version, provisional)
+    out["strength"] = strength_report(rows)
+    outside = [(table, row[0], row[4]) for table, block in out["bands"].items() if table != "coherence"
+               for row in block["rows"] if str(row[4]).startswith("OUTSIDE")]
+    out["outside"] = outside
+    out["provisional_regrade"] = not provisional
+    # The gate reads: a row OUTSIDE that is neither a carried known detection
+    # inside its bound nor a provisional detection; provisional rows are listed
+    # apart so the B17 re-grade can see them with their status removed.
+    out["outside_ungated"] = [row for row in outside if "known detection, within" not in row[2]
+                              and "provisional detection" not in row[2]]
+    out["outside_provisional"] = [row for row in outside if "provisional detection" in row[2]]
+    return out
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--block", choices=sorted(BLOCKS), required=True)
+    parser.add_argument("--count", type=int)
+    parser.add_argument("--start", type=int, default=0)
+    parser.add_argument("--profile", default="2014.6")
+    parser.add_argument("--jobs", type=int, default=1)
+    parser.add_argument("--out", type=Path)
+    parser.add_argument("--regrade-provisional", action="store_true",
+                        help="the B17 view: grade provisional detections as unregistered rows")
+    parser.add_argument("--latent-ref", type=int, default=0,
+                        help="batch B7: the synthetic season reference index for player-state draws")
+    parser.add_argument("--without", default="",
+                        help="batch B10: comma-separated profile flags to drop for a reading on the same labels "
+                             "(a1, a1z, a2, slate and dev blocks only)")
+    args = parser.parse_args()
+    global LATENT_REF, WITHOUT
+    LATENT_REF = args.latent_ref
+    WITHOUT = frozenset(f for f in args.without.split(",") if f)
+    if WITHOUT:
+        run_profile(args.profile, WITHOUT)  # fail early on a flag the profile does not hold
+    if args.block == "dev" and args.count is None:
+        parser.error("the dev block needs --count")
+    if args.block == "fourth-swap":
+        result = fourth_swap_block(args.profile, args.jobs, args.count)
+        if args.out:
+            args.out.write_text(json.dumps(result, indent=1, sort_keys=True, default=str) + "\n", encoding="utf-8")
+        for arm in SWAP_ARMS:
+            a = result["arms"][arm]
+            print("%s: %d games, %d refused, %d errors, carrier points %.2f (SE %.2f), fourth downs %d (by its "
+                  "block %d, by a rule %d), go %d, converted %d; other club %d, by the chart %d" % (
+                      arm, a["games"], len(a["refused"]), a["errors"], a["carrier_points"], a["carrier_points_se"],
+                      a["decisions"], a["compliant"], a["rule_decisions"], a["go"], a["converted"],
+                      a["other_decisions"], a["other_league"]))
+        print("Jacksonville against Denver labels: points z %.2f, go share z %.2f, conversion z %.2f; %s" % (
+            result["z_points_jax_vs_den"], result["z_go_share_jax_vs_den"], result["z_conversion_jax_vs_den"],
+            "PASS" if result["pass"] else "FAIL"))
+        return 0 if result["pass"] else 1
+    if args.block == "ball-layers":
+        result = ball_layers_block(args.profile, args.jobs, args.count)
+        if args.out:
+            args.out.write_text(json.dumps(result, indent=1, sort_keys=True, default=str) + "\n", encoding="utf-8")
+        print("ball-layers: %d games, %d refused, %d validation errors" % (
+            result["games"], result["refused_games"], result["validation_errors"]))
+        print("layer A: %d of %d games identical to the level without B10 once the declared fields are stripped; "
+              "%d fumbles credited, %d forced-fumble tackles moved to the forcer" % (
+                  result["credit_identical_games"], result["games"] - result["refused_games"],
+                  result["credit_fumbles"], result["credit_tackle_moved"]))
+        print("layer B: %d games changed, the first change on a lost-fumble drive in %d; of those the terminal kind "
+              "changed in %d, the snap plan in %d, completions in %d, yard values in %d, the layout resample in %d; "
+              "%d terminal fallbacks" % (
+                  result["layer_b_games_changed"], result["layer_b_first_change_on_a_lost_fumble_drive"],
+                  result["layer_b_terminal_kind_changed"], result["layer_b_plan_changed"],
+                  result["layer_b_completions_changed"], result["layer_b_values_changed"],
+                  result["layer_b_resample_changed"], result["layer_b_terminal_fallbacks"]))
+        print("layer C: %d retained kickoffs, %d retained punts over %d team-games; %d overtime punts excluded "
+              "retained records; %s" % (result["retained_kickoffs"], result["retained_punts"], result["team_games"],
+                                        result["ot_punts_retained_excluded"], "PASS" if result["pass"] else "FAIL"))
+        return 0 if result["pass"] else 1
+    if args.block in ("swap", "late-onside"):
+        result = (swap_block if args.block == "swap" else late_onside_block)(args.profile, args.jobs, args.count)
+        if args.out:
+            args.out.write_text(json.dumps(result, indent=1, sort_keys=True, default=str) + "\n", encoding="utf-8")
+        if args.block == "swap":
+            for arm in SWAP_ARMS:
+                a = result["arms"][arm]
+                print("%s: %d games, %d refused, %d errors, carrier points %.2f (SE %.2f), go %d/%d, conversions "
+                      "%d/%d, try compliance %d/%d, kick compliance %d/%d, onside %d (recovered %d), other club "
+                      "league tries %d/%d" % (arm, a["games"], len(a["refused"]), a["errors"], a["carrier_points"],
+                                              a["carrier_points_se"], a["go"], a["tries"], a["conversions"], a["go"],
+                                              a["compliant"], a["tries"], a["kicks_compliant"], a["kicks"],
+                                              a["onside"], a["onside_recovered"], a["other_league"],
+                                              a["other_tries"]))
+            print("Jacksonville against Denver labels: points z %.2f, go share z %.2f; %s" % (
+                result["z_points_jax_vs_den"], result["z_go_share_jax_vs_den"], "PASS" if result["pass"] else "FAIL"))
+        else:
+            print("late-onside: %d games, %d refused, %d with validation errors, fallback_zero_tuple %d, kickoffs "
+                  "not onside from the 35 %d, onside kicks %d, onside starts in the last 5:00 or overtime %d; %s" % (
+                      result["games"], result["refused_games"], result["games_with_errors"],
+                      result["fallback_zero_tuple"], result["kickoffs_not_onside_from_35"], result["onside_kicks"],
+                      result["onside_late_or_overtime"], "PASS" if result["pass"] else "FAIL"))
+        return 0 if result["pass"] else 1
+    rows = run(args.block, args.profile, args.count, args.start, args.jobs)
+    result = summary(rows, args.profile, provisional=not args.regrade_provisional)
+    result["block"] = args.block
+    result["without"] = sorted(WITHOUT)
+    if args.out:
+        args.out.write_text(json.dumps(result, indent=1, sort_keys=True, default=str) + "\n", encoding="utf-8")
+    print("acceptance %s, kernel profile %s%s: %d games, %d refused; coherence violations %s; audit-only %s" % (
+        args.block, args.profile, (" without " + ", ".join(sorted(WITHOUT))) if WITHOUT else "",
+        result["games"], result["refused_games"],
+        result["bands"]["coherence"]["violations"] or "none",
+        result["bands"]["coherence"].get("audit_only") or "none"))
+    print("diagnostics: " + ", ".join("%s %d" % kv for kv in sorted(result["diagnostics"].items()) if kv[1]))
+    sr = result["strength"]
+    if sr["games_with_record"]:
+        print("strength (ref %d): %d games with records, %d drives, mean edge %.5f, edge clamp share %.4f, "
+              "sack-shift clamp share %.4f, points mean %.2f sd %.2f, margin sd %.2f" % (
+                  sr["latent_ref"], sr["games_with_record"], sr["drives"], sr["mean_edge"], sr["edge_clamp_share"],
+                  sr["sack_shift_clamp_share"], sr["points_mean"], sr["points_sd"], sr["margin_sd"]))
+    for table, block in result["bands"].items():
+        if table == "coherence":
+            continue
+        print("\n[%s] team-games %d" % (table, block["team_games"]))
+        for metric, observed, centre, tolerance, status in block["rows"]:
+            fmt = lambda v: "-" if v is None else ("%.4f" % v)
+            print("  %-96s %10s %10s %10s  %s" % (metric[:96], fmt(observed), fmt(centre), fmt(tolerance), status))
+    print("\nOUTSIDE rows: %d (ungated %d, provisional %d%s)" % (
+        len(result["outside"]), len(result["outside_ungated"]), len(result["outside_provisional"]),
+        "; provisional status removed" if result["provisional_regrade"] else ""))
+    for row in result["outside"]:
+        print("  %s: %s (%s)" % row)
+    return 1 if result["refused_games"] else 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

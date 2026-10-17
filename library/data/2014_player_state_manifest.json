@@ -1,0 +1,23 @@
+{
+ "bound": false,
+ "data_cutoff": "2014-09-29",
+ "derivation": "player-state-v1",
+ "families": [
+  "QB",
+  "RB",
+  "WR",
+  "TE",
+  "DL",
+  "LB",
+  "DB",
+  "K",
+  "P",
+  "KR",
+  "PR"
+ ],
+ "league_year": 2014,
+ "model_sha256": "a2498af3a763bd5f3bf83b61f08bdb1e7f60f9e2de346ac911cb5ec1b3fcdff3",
+ "public_table_sha256": "e841f91da3bd57e884fe5af048d4b8dab275a65a735edf915aa45b07abf1326b",
+ "schema": "2014-player-state-manifest-v1",
+ "specification_sha256": "ca028ba38009d1b84e5c887ea86ce8d697edf1705bcd9b755f60aede9d6f8446"
+}

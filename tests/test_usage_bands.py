@@ -5,7 +5,8 @@ import unittest
 
 import copy
 
-from runtime import KERNEL_VERSION, usage
+from runtime import usage
+from runtime.profiles import PROFILE_2014_5
 from runtime.bands import (KNOWN_DETECTION_BOUND, audit, audit_drive_model, audit_field_position,
                            coherence, cohorts, current_cohorts, known_detections, known_status)
 from runtime.kernel import TeamInput, resolve_game, validate_result
@@ -21,7 +22,11 @@ from synthetic_games import SAMPLE_SIZE, sample
 # from the first-half half-final redirect. Any other graded row going OUTSIDE
 # fails, and so does a known detection beyond KNOWN_DETECTION_BOUND x tolerance.
 # Kernel 2013.8 changes overtime only and carries the 2013.7 registry over.
-KNOWN_DETECTIONS = known_detections(KERNEL_VERSION)
+# Since the kernel 2014.6 release (B18) the shared sample is pinned to
+# PROFILE_2014_5 (tests/synthetic_games.py), so its rows are graded with that
+# kernel's registry; the 2014.6 cohort's rows are graded in its own modules.
+SAMPLE_KERNEL = PROFILE_2014_5.kernel_version
+KNOWN_DETECTIONS = known_detections(SAMPLE_KERNEL)
 
 
 
@@ -89,7 +94,7 @@ class UsageBandTests(unittest.TestCase):
         metrics = {row[0] for row in rows} | {row[0] for row in fp_rows}
         self.assertTrue(set(KNOWN_DETECTIONS) <= metrics)
         for row in rows:
-            status = known_status(row, KERNEL_VERSION)
+            status = known_status(row, SAMPLE_KERNEL)
             if row[0] in KNOWN_DETECTIONS:
                 self.assertIn("known detection", status)
                 self.assertNotIn("beyond", status)
@@ -98,7 +103,7 @@ class UsageBandTests(unittest.TestCase):
         # A known detection far outside its bound is still flagged.
         metric, observed, centre, tolerance, _ = next(r for r in rows if r[0] == "FGM per team game")
         far = (metric, centre + 3 * tolerance, centre, tolerance, "OUTSIDE")
-        self.assertIn("beyond", known_status(far, KERNEL_VERSION))
+        self.assertIn("beyond", known_status(far, SAMPLE_KERNEL))
         self.assertEqual(known_status(far, "2013.6"), "OUTSIDE")
 
     def test_field_position_rows(self):
@@ -113,7 +118,7 @@ class UsageBandTests(unittest.TestCase):
                 self.assertLessEqual(abs(observed - centre), KNOWN_DETECTION_BOUND * tolerance, metric)
         for metric, observed, centre, _, status in rows:
             print("[%s sample] %s: %s (2012 %s) %s" % (
-                KERNEL_VERSION, metric, "—" if observed is None else round(observed, 4), round(centre, 4), status))
+                SAMPLE_KERNEL, metric, "—" if observed is None else round(observed, 4), round(centre, 4), status))
 
     def test_doctored_late_punt_is_detected(self):
         """A punt in a zero-punt late cell (trailing 1-8 inside the last 2:00)
@@ -156,14 +161,14 @@ class UsageBandTests(unittest.TestCase):
             receipt["kernel_version"] = "2013.6"
         old, kernel_2013_6, current = cohorts(legacy + previous + self.receipts[30:40])
         self.assertEqual((len(old), len(kernel_2013_6), len(current)), (20, 10, 10))
-        self.assertTrue(all(r["kernel_version"] == KERNEL_VERSION for r in current))
+        self.assertTrue(all(r["kernel_version"] == SAMPLE_KERNEL for r in current))
         # The field-position era splits again by exact kernel version: 2013.7
         # receipts never join the current kernel's cohort.
         older = copy.deepcopy(self.receipts[40:45])
         for receipt in older:
             receipt["kernel_version"] = "2013.7"
         split = current_cohorts(cohorts(older + self.receipts[45:50])[2])
-        self.assertEqual([(v, len(r)) for v, r in split], [("2013.7", 5), (KERNEL_VERSION, 5)])
+        self.assertEqual([(v, len(r)) for v, r in split], [("2013.7", 5), (SAMPLE_KERNEL, 5)])
 
     def test_depth_chart_orders_usage(self):
         carries = {}

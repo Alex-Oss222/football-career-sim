@@ -4,14 +4,19 @@ The audit is a detector for engine or TeamInput defects (a missing position
 group, a backup quarterback taking starter snaps, inflated play volume). It
 never changes, reruns or selects a game result. An OUTSIDE row is a reason to
 inspect inputs and code, not a reason to reroll canon.
+
+Kernel 2014.6 plumbing (batch B1): band centres are keyed by cohort. A
+cohort is graded against the calibration base of its own kernel version
+(runtime.calibration_base.cohort_base; every kernel up to 2014.5 is the 2012
+base), a cohort whose receipts map to two bases raises, and each receipt's
+ledger coherence is checked with its own base's rules.
 """
 from __future__ import annotations
 
 import math
-from functools import lru_cache
 
-from .calibration import load as load_calibration
-from .usage import group, load as load_usage
+from .calibration_base import BASE_2012, cohort_base
+from .usage import group
 
 MIN_TEAM_GAMES = 16
 
@@ -37,10 +42,15 @@ def _shares(counter, groups):
     return {g: (counter.get(g, 0) / total if total else None) for g in groups}
 
 
-def expected():
-    usage = load_usage()["values"]
-    cal = load_calibration()
-    tilt = _tilt_source()
+def expected(base=None):
+    """The volume, share and top-share centres of one calibration base (the
+    2012 base's when None)."""
+    base = base or BASE_2012
+    if not base.legacy_2012():
+        return _expected_v3(base)
+    usage = base.usage()["values"]
+    cal = base.aggregate()
+    tilt = base.top_share_centres()
     rate = usage["assisted_tackle_play_rate"]
     return {
         "qb1_attempt_share": usage["passing"]["qb1_attempt_share"],
@@ -68,10 +78,42 @@ def expected():
     }
 
 
-def _tilt_source():
-    from .usage import TILT_SOURCE
-    import json
-    return json.loads(TILT_SOURCE.read_text(encoding="utf-8"))["team_game_top_shares_2012"]
+def _pooled(entry):
+    """events / denominator of a schema-3 [events, denominator] centre."""
+    made, n = entry["pooled"]
+    return made / n
+
+
+def _moments(entry):
+    """(n, mean, sd) of a schema-3 [n, sum, sum of squares] centre."""
+    n, total, squares = entry["pooled"]
+    mean = total / n
+    return n, mean, math.sqrt(max(0.0, (squares - n * mean * mean) / (n - 1)))
+
+
+def _expected_v3(base):
+    """The volume, share and top-share centres of a schema-3 base (kernel
+    2014.6, batch B5): the aggregate baseline's pooled volume pairs, the
+    usage baseline's shares and its own per team-game top shares."""
+    usage = base.usage()["values"]
+    volume = base.aggregate()["volume"]
+    tops = base.top_share_centres()
+    rate = usage["assisted_tackle_play_rate"]
+    return {
+        "qb1_attempt_share": usage["passing"]["qb1_attempt_share"],
+        "rush_share": usage["rush_share"],
+        "target_share": usage["target_share"],
+        "tackle_share": usage["tackle_share"],
+        "assisted_credit_share": 2 * rate / (1 + rate),
+        "plays_per_team_game": _pooled(volume["plays_per_team_game"]),
+        "yards_per_team_game": _pooled(volume["net_yards_per_team_game"]),
+        "points_per_team_game": _pooled(volume["points_per_team_game"]),
+        "first_downs_per_team_game": _pooled(volume["first_downs_per_team_game"]),
+        "third_down_attempts_per_team_game": _pooled(volume["third_down_attempts_per_team_game"]),
+        "third_down_rate": _pooled(volume["third_down_rate"]),
+        **{key: (tops[key]["mean"], tops[key]["sd"])
+           for key in ("top_receiver_target_share", "top_rusher_carry_share")},
+    }
 
 
 def _kneels_by_team(receipt):
@@ -153,10 +195,12 @@ def observe(receipts):
     }
 
 
-def audit(receipts):
-    """Return (team_games, rows); each row is (metric, observed, band, tolerance, status)."""
+def audit(receipts, cohort=None):
+    """Return (team_games, rows); each row is (metric, observed, band, tolerance, status).
+    Centres are the cohort's own base's (runtime.calibration_base.cohort_base)."""
+    base = cohort_base(receipts, cohort)
     obs = observe(receipts)
-    exp = expected()
+    exp = expected(base)
     enough = obs["team_games"] >= MIN_TEAM_GAMES
     rows = []
 
@@ -205,9 +249,6 @@ def audit(receipts):
 # 3*sqrt(p(1-p)/n) for rates, 3*sqrt(lambda/n) for per-team-game counts and
 # 3*sd/sqrt(n) for means, with the 2012 sd from the artifact.
 
-import math
-
-from . import drive_model
 from .statbook import DRIVE_MODEL_FROM_KERNEL, FIELD_POSITION_FROM_KERNEL, kernel_at_least
 
 LEGACY_LABEL = (
@@ -294,20 +335,135 @@ KNOWN_DETECTIONS["2014.4"] = dict(KNOWN_DETECTIONS["2014.3"])
 # Kernel 2014.5 changes call labels only (runtime/README.md, kernel 2014.5):
 # every result is identical to 2014.4, so the registry carries over unchanged.
 KNOWN_DETECTIONS["2014.5"] = dict(KNOWN_DETECTIONS["2014.4"])
+# Kernel 2014.6 (in build; the version flips only at its release): the
+# 2014.5 registry is carried over with its metric strings unchanged. Each row
+# is re-diagnosed against its new 2010-2014 centre at the batch that moves
+# it; a row that is no longer OUTSIDE leaves the registry there, and a new
+# OUTSIDE row is never registered here permanently without the user (U8).
+KNOWN_DETECTIONS["2014.6"] = dict(KNOWN_DETECTIONS["2014.5"])
+
+# Provisional detections (kernel 2014.6 build, batch B5X, October 3, 2026).
+# Batch B5 read seven graded 2014.6 rows OUTSIDE on its acceptance blocks and
+# stopped on U8. With the user's standing instruction to finish the build, the
+# build's parent decided to carry each as a PROVISIONAL detection instead of
+# holding the batch: the row stays graded, its status is never rewritten, no
+# centre, tolerance, coefficient or pool changes, and no closed result changes.
+# Each entry records the batch's own attribution and the batch expected to
+# resolve it. The provisional status is not the permanent registration U8
+# requires. Batch B17 re-grades every provisional row with the provisional
+# status removed (known_detections(cohort, provisional=False)); a row still
+# OUTSIDE at B17 is reported to the user as U8 with the full picture and is
+# never auto-registered permanently. The bound of KNOWN_DETECTION_BOUND does
+# not gate a provisional row: it is a carried diagnosis, not an accepted one.
+PROVISIONAL_REGRADE_BATCH = "B17"
+_PROVISIONAL_RESIDUAL = "residual note (kernel 2014.6 end-of-half design); no batch is expected to move it"
+_PROVISIONAL_UNEXPLAINED = "unexplained; re-grade at B17"
+PROVISIONAL_DETECTIONS = {
+    "2014.6": {
+        "first-half final possessions starting with 0-30 s left (share)": {
+            "observed": "0.428 against 0.494 +/- 0.034, every block",
+            "attribution": "design-measured residual: kickoff and return time are not modelled, so first-half "
+                           "final windows run slightly long (runtime/README.md, batch B5 acceptance)",
+            "resolves": _PROVISIONAL_RESIDUAL,
+        },
+        "first-half final possessions starting with 31-60 s left (share)": {
+            "observed": "0.317 against 0.257 +/- 0.029, every block",
+            "attribution": "the same design-measured residual as the 0-30 s window: the share the 0-30 s "
+                           "window loses moves here (runtime/README.md, batch B5 acceptance)",
+            "resolves": _PROVISIONAL_RESIDUAL,
+        },
+        "timeouts per team-game": {
+            "observed": "3.38 against 3.70 +/- 0.08, every block; kernel 2014.5 reads 3.29",
+            "attribution": "design-measured residual: a drive replay cannot charge timeouts it does not carry "
+                           "(runtime/README.md, batch B5 acceptance and attribution)",
+            "resolves": _PROVISIONAL_RESIDUAL,
+        },
+        "drive share: touchdown": {
+            "observed": "0.204 against 0.195 on A2; with punt and safety on A1",
+            "attribution": "the home term is not centred (at neutral sites the share reads 0.189); present "
+                           "under kernel 2014.5 on the same fixture",
+            "resolves": "B7 (the HOME_EDGE refit)",
+        },
+        "drive share: punt": {
+            "observed": "OUTSIDE on A1 with touchdown",
+            "attribution": "the uncentred home term, as drive share: touchdown",
+            "resolves": "B7 (the HOME_EDGE refit)",
+        },
+        "drive share: safety": {
+            "observed": "0.0017-0.0020 against 0.0028; also low under kernel 2014.5",
+            "attribution": "the uncentred home term, with touchdown and punt (batch B5 acceptance)",
+            "resolves": "B7 (the HOME_EDGE refit)",
+        },
+        "top receiver share of team targets (team-game)": {
+            "observed": "0.299 against 0.291 +/- 0.003; OUTSIDE under kernel 2014.5 too",
+            "attribution": "the synthetic acceptance fixture and the usage tilt",
+            "resolves": "B13/B16 (yardage credit and credit concentration)",
+        },
+        "punt share of possessions ending in Q4's last 2:00 or OT, offense trailing 1-8": {
+            "observed": "0.010-0.016 against 0.004 (2 of 536 real possessions)",
+            "attribution": "the pooled base, not the regimes: the B5 attribution run moves the row from 0.004 "
+                           "to 0.017 with the base alone",
+            "resolves": _PROVISIONAL_UNEXPLAINED,
+        },
+        "sacks per dropback": {
+            "observed": "0.069 against 0.063 on A1, strength records present",
+            "attribution": "the synthetic strength records' sack term",
+            "resolves": "B7 (strength v4 at runtime)",
+        },
+        "third-down attempts per punt drive": {
+            "observed": "1.200 against 1.189 +/- 0.010 on A2",
+            "attribution": "no cause isolated at B5",
+            "resolves": _PROVISIONAL_UNEXPLAINED,
+        },
+    },
+}
+# "punts per team game (drive-ending)" is already a carried detection; B5 read
+# it 4.66 against 4.82 +/- 0.15 on A1, within twice its tolerance, and its
+# carried note stands. It is re-diagnosed with the rest at B17.
 
 
-def known_detections(cohort):
-    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2", "2014.3", "2014.4" or "2014.5"); empty otherwise."""
-    return dict(KNOWN_DETECTIONS.get(cohort, {}))
+def _provisional_note(entry):
+    return ("PROVISIONAL (batch B5X, October 3, 2026; re-graded at %s with the provisional status "
+            "removed, never auto-registered permanently): %s; attribution: %s; expected to resolve: %s"
+            % (PROVISIONAL_REGRADE_BATCH, entry["observed"], entry["attribution"], entry["resolves"]))
 
 
-def known_status(row, cohort):
+for _cohort, _rows in PROVISIONAL_DETECTIONS.items():
+    for _metric, _entry in _rows.items():
+        if _metric in KNOWN_DETECTIONS[_cohort]:
+            raise AssertionError("provisional row already a carried detection: %s" % _metric)
+        KNOWN_DETECTIONS[_cohort][_metric] = _provisional_note(_entry)
+del _cohort, _rows, _metric, _entry
+
+
+def provisional_detections(cohort):
+    """{metric: {observed, attribution, resolves}} for the cohort's provisional
+    detections (kernel 2014.6 build only); empty otherwise."""
+    return {m: dict(e) for m, e in PROVISIONAL_DETECTIONS.get(cohort, {}).items()}
+
+
+def known_detections(cohort, provisional=True):
+    """{metric: note} for a kernel cohort ("2013.6" through "2014.5", and the
+    2014.6 cohort being built); empty otherwise. provisional=False is the B17
+    re-grade view: provisional rows are left out and graded as unregistered."""
+    rows = dict(KNOWN_DETECTIONS.get(cohort, {}))
+    if not provisional:
+        for metric in PROVISIONAL_DETECTIONS.get(cohort, {}):
+            rows.pop(metric, None)
+    return rows
+
+
+def known_status(row, cohort, provisional=True):
     """A row's rendered status: unchanged unless the metric is a known
     detection of that cohort, which is labelled and, when OUTSIDE, checked
-    against KNOWN_DETECTION_BOUND times its tolerance."""
+    against KNOWN_DETECTION_BOUND times its tolerance. A provisional detection
+    is labelled as such and not bounded; with provisional=False (the B17
+    re-grade) it is graded as an unregistered row."""
     metric, observed, centre, tolerance, status = row
-    if metric not in KNOWN_DETECTIONS.get(cohort, {}) or status not in ("WITHIN", "OUTSIDE"):
+    if metric not in known_detections(cohort, provisional) or status not in ("WITHIN", "OUTSIDE"):
         return status
+    if metric in PROVISIONAL_DETECTIONS.get(cohort, {}):
+        return "%s (provisional detection, re-graded at %s)" % (status, PROVISIONAL_REGRADE_BATCH)
     if status == "WITHIN":
         return "WITHIN (known detection)"
     if abs(observed - centre) <= KNOWN_DETECTION_BOUND * tolerance:
@@ -361,9 +517,41 @@ SHARE_GROUPS = (
 )
 
 
-def drive_model_expected():
-    data = drive_model.load()
-    cal = load_calibration()
+def _drive_model_expected_v3(base):
+    """Schema-3 drive-model centres (kernel 2014.6, batch B5): the
+    field-position artifact's band centres (unweighted, equal weight per
+    event, the 2010-2011 overtime drives excluded as the builder states).
+    The kickoff and kick-return per team-game rows have no schema-3 centre
+    and are not graded for this cohort."""
+    centres = base.field_position().load()["band_centres"]
+    edges = base.drive_model().load()["rates"]["fg_bin_edges"]
+    share = {}
+    for label, cats in SHARE_GROUPS:
+        made = sum(centres["drive_share:" + c]["pooled"][0] for c in cats)
+        share[label] = made / centres["drive_share:" + cats[0]]["pooled"][1]
+    return {
+        "fg_accuracy": _pooled(centres["fg_accuracy"]),
+        "fg_by_distance": {label: _pooled(centres["fg_accuracy:" + label]) for label, _, _ in edges},
+        "xp_accuracy": _pooled(centres["extra_point"]),
+        "fga_per_team_game": _pooled(centres["fga_per_team_game"]),
+        "fgm_per_team_game": _pooled(centres["fgm_per_team_game"]),
+        "drives_per_team_game": _pooled(centres["drives_per_team_game"]),
+        "punts_per_team_game": _pooled(centres["drive_ending_punts_per_team_game"]),
+        "drive_share": share,
+        "clock_expired_drives_per_team_game": _pooled(centres["clock_expired_drives_per_team_game"]),
+        "offensive_drive_turnovers_per_team_game": _pooled(centres["offensive_drive_turnovers_per_team_game"]),
+        "interception_share_of_turnovers": _pooled(centres["interception_share_of_turnovers"]),
+        "kickoffs_per_team_game": None,
+        "kick_returns_per_team_game": None,
+    }
+
+
+def drive_model_expected(base=None):
+    base = base or BASE_2012
+    if not base.legacy_2012():
+        return _drive_model_expected_v3(base)
+    data = base.drive_model().load()
+    cal = base.aggregate()
     totals = cal["period_totals"]
     counts = data["category_counts"]
     drives = sum(counts.values())
@@ -389,7 +577,7 @@ def drive_model_expected():
     }
 
 
-def drive_model_observe(receipts):
+def drive_model_observe(receipts, base=None):
     team_games = 0
     sums = {k: 0 for k in ("field_goal_attempts", "field_goals", "extra_point_attempts",
                            "extra_points_made", "drives", "punts", "clock_expired_drives",
@@ -397,7 +585,7 @@ def drive_model_observe(receipts):
     categories = {}
     bins = {}
     interceptions = 0
-    edges = drive_model.load()["rates"]["fg_bin_edges"]
+    edges = (base or BASE_2012).drive_model().load()["rates"]["fg_bin_edges"]
     for receipt in receipts:
         for game in receipt.get("team_stats", {}).values():
             team_games += 1
@@ -423,11 +611,13 @@ def drive_model_observe(receipts):
     }
 
 
-def audit_drive_model(receipts):
+def audit_drive_model(receipts, cohort=None):
     """Rows (metric, observed, centre, tolerance, status) for one kernel cohort
-    (2013.6 or 2013.7); never mixed across cohorts."""
-    obs = drive_model_observe(receipts)
-    exp = drive_model_expected()
+    (2013.6 or 2013.7); never mixed across cohorts, and graded against the
+    cohort's own base."""
+    base = cohort_base(receipts, cohort)
+    obs = drive_model_observe(receipts, base)
+    exp = drive_model_expected(base)
     n = obs["team_games"]
     enough = n >= MIN_TEAM_GAMES
     sums = obs["sums"]
@@ -468,7 +658,13 @@ def audit_drive_model(receipts):
         rate_row("drive share: %s" % label, made, drives, exp["drive_share"][label])
     count_row("clock-expired drives per team game", sums["clock_expired_drives"],
               exp["clock_expired_drives_per_team_game"])
-    count_row("offensive-drive turnovers per team game", sums["turnovers"],
+    # Kernel 2014.6 batch B10 (R12 layer C): a kick the kicking club keeps is
+    # the receiving club's turnover, not an offensive drive's, so from the
+    # 2014.6 cohort this row counts the drive categories (interceptions and
+    # lost fumbles), as its centre does; earlier cohorts keep the counter.
+    drive_turnovers = (obs["categories"].get("interception", 0) + obs["categories"].get("fumble_lost", 0)
+                       if cohort is not None and kernel_at_least(cohort, (2014, 6)) else sums["turnovers"])
+    count_row("offensive-drive turnovers per team game", drive_turnovers,
               exp["offensive_drive_turnovers_per_team_game"])
     turnovers = obs["categories"].get("interception", 0) + obs["categories"].get("fumble_lost", 0)
     rate_row("interception share of turnovers", obs["interceptions"], turnovers,
@@ -477,10 +673,12 @@ def audit_drive_model(receipts):
     # 2,620 unresolved) counts kickoffs the kernel does not model by design:
     # after non-offensive touchdowns, onside kicks and re-kicks, and after a
     # half-final score whose return ran out the clock.
-    count_row("kickoffs per team game (informational; centre includes kicks not modelled: "
-              "after non-offensive TDs, onside, re-kicks, after half-final scores)", sums["kickoffs"],
-              exp["kickoffs_per_team_game"], graded=False)
-    count_row("kick returns per team game", sums["kick_returns"], exp["kick_returns_per_team_game"])
+    if exp["kickoffs_per_team_game"] is not None:
+        count_row("kickoffs per team game (informational; centre includes kicks not modelled: "
+                  "after non-offensive TDs, onside, re-kicks, after half-final scores)", sums["kickoffs"],
+                  exp["kickoffs_per_team_game"], graded=False)
+    if exp["kick_returns_per_team_game"] is not None:
+        count_row("kick returns per team game", sums["kick_returns"], exp["kick_returns_per_team_game"])
     return n, rows
 
 
@@ -502,14 +700,18 @@ def _rate(made, n, centre):
     return (made / n if n else None), (3 * math.sqrt(centre * (1 - centre) / n) if n else None)
 
 
-def audit_field_position(receipts):
+def audit_field_position(receipts, cohort=None):
     """Rows (metric, observed, centre, tolerance, status) for the kernel 2013.7
     cohort: kick and punt transitions, late-game punts, real chains, sacks per
     dropback, and informational field-position shapes. Centres come from the
-    2012 field-position artifact's band_centres."""
-    from . import field_position as fp
+    cohort base's field-position artifact's band_centres (2012 through
+    kernel 2014.5)."""
     from .usage import group
 
+    base = cohort_base(receipts, cohort)
+    if not base.legacy_2012():
+        return _audit_field_position_v3(receipts, base)
+    fp = base.field_position()
     centres = fp.load()["band_centres"]
     team_games = sum(len(r.get("team_stats", {})) for r in receipts)
     rows, add = _grader(team_games >= MIN_TEAM_GAMES)
@@ -546,8 +748,8 @@ def audit_field_position(receipts):
                 kr_yards += line.get("kick_return_yards", 0) or 0
                 pr += line.get("punt_returns", 0) or 0
                 pr_yards += line.get("punt_return_yards", 0) or 0
-    for label, c, made, n in (("mean kickoff return yards (non-touchback kickoffs)", return_centres()["kickoff"], kr_yards, kr),
-                              ("mean punt return yards (returned punts)", return_centres()["punt"], pr_yards, pr)):
+    for label, c, made, n in (("mean kickoff return yards (non-touchback kickoffs)", return_centres(base)["kickoff"], kr_yards, kr),
+                              ("mean punt return yards (returned punts)", return_centres(base)["punt"], pr_yards, pr)):
         add(label, made / n if n else None, c["mean"], 3 * c["sd"] / math.sqrt(n) if n else None, events=n)
 
     # Late trailing punts (possessions ending in Q4's last 5:00 / 2:00 or OT).
@@ -581,7 +783,7 @@ def audit_field_position(receipts):
     observed, tolerance = _rate(sacks, dropbacks, made / n)
     add("sacks per dropback", observed, made / n, tolerance, events=dropbacks)
     total_credit = sum(credit.values())
-    for grp, share in sorted((load_usage()["values"]["sack_share"] or {}).items()):
+    for grp, share in sorted((base.usage()["values"]["sack_share"] or {}).items()):
         observed, tolerance = _rate(credit.get(grp, 0), total_credit, share)
         add("%s share of sack credits" % grp, observed, share, tolerance, events=total_credit)
 
@@ -638,38 +840,947 @@ def audit_field_position(receipts):
     return team_games, rows
 
 
-@lru_cache(maxsize=1)
-def return_centres():
-    """Kernel 2014.4 phase 2: the 2012 kickoff pool's non-touchback records
-    and the punt pool's returned records (return yards mean and SD)."""
-    from . import field_position as fp
-    from .field_position import KICK, PUNT
-    data = fp.load()
-    kicks = [r[KICK["return_yards"]] for r in data["kickoff_pool"] if not r[KICK["touchback"]]]
-    punts = [r[PUNT["return_yards"]] for r in data["punt_pool"] if r[PUNT["outcome"]] == "returned"]
-
-    def moments(xs):
-        m = sum(xs) / len(xs)
-        return {"n": len(xs), "mean": m, "sd": math.sqrt(sum((x - m) ** 2 for x in xs) / (len(xs) - 1))}
-    return {"kickoff": moments(kicks), "punt": moments(punts)}
+def _label_bounds(label):
+    """(low, high) yardline_100 of a schema-3 punt-net label ('own 1-10',
+    'opp 49-40') or a plain 'low-high' start-bin label."""
+    side, _, span = label.rpartition(" ")
+    a, b = (int(v) for v in span.split("-"))
+    if side == "own":
+        return 100 - max(a, b), 100 - min(a, b)
+    return min(a, b), max(a, b)
 
 
-def coherence(receipts):
+def _first_half(d):
+    return d.get("half") == 1
+
+
+def _h1_window(d):
+    """Seconds left in the first half at a first-half possession's start."""
+    return d["start_clock"] - 1800
+
+
+def _kick_clock(d):
+    """The game clock at a drive's terminal snap (its own end): end clock
+    plus the clock-expiry leg."""
+    return d["end_clock"] + (d.get("expiry_seconds") or 0)
+
+
+def _audit_field_position_v3(receipts, base):
+    """Schema-3 field-position rows (kernel 2014.6, batch B5): the graded
+    and informational rows of the pre-build specification (section 5, B5),
+    each centre an artifact value (band_centres, unweighted, equal weight per
+    event; the drawn pools for the return means), tolerances by the
+    module's formulas. New rows exist only for this cohort."""
+    from .usage import group
+
+    fp = base.field_position()
+    centres = fp.load()["band_centres"]
+    team_games = sum(len(r.get("team_stats", {})) for r in receipts)
+    rows, add = _grader(team_games >= MIN_TEAM_GAMES)
+    drives = [d for r in receipts for d in _drives(r)]
+    spotted = [d for d in drives if d.get("start_spot") is not None]
+
+    def rate_row(metric, made, n, centre, *, graded=True):
+        observed, tolerance = _rate(made, n, centre)
+        add(metric, observed, centre, tolerance, events=n, graded=graded)
+
+    def mean_row(metric, values, entry, *, graded=True):
+        _, mean, sd = _moments(entry)
+        add(metric, sum(values) / len(values) if values else None, mean,
+            3 * sd / math.sqrt(len(values)) if values else None, events=len(values), graded=graded)
+
+    def count_row(metric, total, n, centre, *, graded=True, dispersion=1.0):
+        observed = total / n if n else None
+        tolerance = 3 * math.sqrt(dispersion * centre / n) if n and centre else None
+        add(metric, observed, centre, tolerance, graded=graded)
+
+    # Kickoffs: every non-onside kickoff is followed by the receiving club's drive.
+    kick_starts = [d for d in spotted if d.get("start_kind") in ("kickoff", "kickoff_touchback")]
+    touchback_centre = _pooled(centres["kickoff_touchback_share"])
+    markers = [r.get("ball_security") for r in receipts if isinstance(r.get("ball_security"), dict)]
+    if markers and all(m.get("retained_kicks") for m in markers) and len(markers) == len(receipts):
+        # Batch B10 (R12 layer C): a kick the kicking club kept is a kickoff of
+        # the denominator (its start is the kicking club's), and the centre
+        # counts the base pool's retained kickoffs the same way.
+        retained_starts = [d for d in spotted if d.get("start_kind") == "kickoff_retained"]
+        kick_starts = kick_starts + retained_starts
+        made, n = centres["kickoff_touchback_share"]["pooled"]
+        touchback_centre = made / (n + len(fp.load()["retained_kick_pools"]["kickoff"]))
+    rate_row("kickoff touchback share", sum(d["start_kind"] == "kickoff_touchback" for d in kick_starts),
+             len(kick_starts), touchback_centre)
+    mean_row("mean start after a non-touchback kickoff (yardline_100)",
+             [d["start_spot"] for d in kick_starts if d["start_kind"] == "kickoff"],
+             centres["kickoff_nontouchback_start"])
+    # Realized punt net by line of scrimmage.
+    # Batch B9 (R15): a punt returned or blocked for a touchdown hands over
+    # nothing (its possession's next start is the scorer's kickoff), so it
+    # has no realized net; the touchdown shares grade it.
+    # Batch B10 (R12 layer C): a punt the kicking club kept starts its own
+    # next possession in its own frame, so it has no realized net either.
+    punts = [d for d in spotted if d["category"] == "punt" and d.get("next_start") is not None
+             and not d.get("non_offensive_score") and (d.get("punt") or {}).get("outcome") != "retained"]
+    for key in sorted(k for k in centres if k.startswith("punt_net:")):
+        label = key.split(":", 1)[1]
+        low, high = _label_bounds(label)
+        mean_row("mean realized punt net, LOS %s" % label,
+                 [d["end_spot"] - (100 - d["next_start"]) for d in punts if low <= d["end_spot"] <= high],
+                 centres[key])
+    # Return means from the player lines against the drawn pools' records.
+    kr = pr = kr_yards = pr_yards = 0
+    for receipt in receipts:
+        for game in receipt.get("team_stats", {}).values():
+            for line in game.get("players", {}).values():
+                kr += line.get("kick_returns", 0) or 0
+                kr_yards += line.get("kick_return_yards", 0) or 0
+                pr += line.get("punt_returns", 0) or 0
+                pr_yards += line.get("punt_return_yards", 0) or 0
+        # Batch B9 (R15): the drawn pools hold no return touchdown, so a
+        # return touchdown (drawn from its own real records and graded by the
+        # touchdown-share rows) leaves the mean, as it leaves the pool.
+        for kick in _kicks(receipt):
+            if kick.get("outcome") == "returned_touchdown":
+                kr -= 1
+                kr_yards -= int(kick.get("return_yards") or 0)
+        for d in _drives(receipt):
+            punt = d.get("punt") or {}
+            if punt.get("outcome") == "return_td":
+                pr -= 1
+                pr_yards -= int(punt.get("return_yards") or 0)
+    for label, c, made, n in (("mean kickoff return yards (non-touchback kickoffs)", return_centres(base)["kickoff"],
+                               kr_yards, kr),
+                              ("mean punt return yards (returned punts)", return_centres(base)["punt"], pr_yards, pr)):
+        add(label, made / n if n else None, c["mean"], 3 * c["sd"] / math.sqrt(n) if n else None, events=n)
+    # Late trailing punts.
+    for key, seconds, text in (("late_punt_share_last5_trail1_8", 300, "last 5:00"),
+                               ("late_punt_share_le120_trail1_8", 120, "last 2:00")):
+        # Batch B9F: a possession whose terminal fourth down a club's block or
+        # a live answer decided is the coach's decision, never graded here.
+        cell = [d for d in spotted if isinstance(d.get("score_diff"), int) and -8 <= d["score_diff"] <= -1
+                and (d["half"] == "OT" or (d["half"] == 2 and d["end_clock"] <= seconds)) and not _coach_decided(d)]
+        rate_row("punt share of possessions ending in Q4's %s or OT, offense trailing 1-8" % text,
+                 sum(d["category"] == "punt" for d in cell), len(cell), _pooled(centres[key]))
+    mean_row("third-down attempts per punt drive", [d["chains"][2] for d in punts if d.get("chains")],
+             centres["third_down_attempts_per_punt_drive"])
+    # Sacks per dropback and defensive sack credit by group.
+    sacks = dropbacks = 0
+    credit = {}
+    for receipt in receipts:
+        for game in receipt.get("team_stats", {}).values():
+            sacks += game.get("sacks_allowed", 0)
+            for line in game.get("players", {}).values():
+                dropbacks += line.get("dropbacks", 0)
+                if line.get("sacks"):
+                    grp = group(line.get("position"))
+                    credit[grp] = credit.get(grp, 0) + line["sacks"]
+    rate_row("sacks per dropback", sacks, dropbacks, _pooled(centres["sacks_per_dropback"]))
+    total_credit = sum(credit.values())
+    for grp, share in sorted((base.usage()["values"]["sack_share"] or {}).items()):
+        rate_row("%s share of sack credits" % grp, credit.get(grp, 0), total_credit, share)
+
+    # End of half and late game (R17, R7, R10, R14, W5b).
+    h1 = [d for d in spotted if _first_half(d)]
+    finals = [d for d in h1 if d.get("half_final")]
+    rate_row("first-half final possessions: field-goal-attempt share",
+             sum(d["category"] == "field_goal_attempt" for d in finals), len(finals),
+             _pooled(centres["h1_final_fg_share"]))
+    rate_row("first-half final possessions: clock share",
+             sum(str(d["category"]).startswith("end_of_") for d in finals), len(finals),
+             _pooled(centres["h1_final_clock_share"]))
+    for low, high in ((61, 120), (121, 240)):
+        starts = [d for d in h1 if low <= _h1_window(d) <= high]
+        rate_row("P(final | first-half possession starting with %d-%d s left)" % (low, high),
+                 sum(bool(d.get("half_final")) for d in starts), len(starts),
+                 _pooled(centres["h1_p_final:%d-%d" % (low, high)]))
+    for key in sorted((k for k in centres if k.startswith("h1_final_start_window:")),
+                      key=lambda k: int(k.split(":")[1].split("-")[0])):
+        low, high = (int(v) for v in key.split(":")[1].split("-"))
+        rate_row("first-half final possessions starting with %d-%d s left (share)" % (low, high),
+                 sum(low <= _h1_window(d) <= high for d in finals), len(finals), _pooled(centres[key]))
+    expired = [d for d in finals if str(d["category"]).startswith("end_of_")]
+    rate_row("clock-expired first halves ending inside the opponent 30", sum(d["end_spot"] <= 30 for d in expired),
+             len(expired), _pooled(centres["h1_clock_expired_inside_30"]))
+    for tag, low, high, graded in (("trail12p", -999, -12, True), ("trail9_11", -11, -9, False)):
+        late_fg = sum(1 for d in spotted if d["half"] == 2 and d["category"] == "field_goal_attempt"
+                      and _kick_clock(d) <= 120 and isinstance(d.get("score_diff"), int)
+                      and low <= d["score_diff"] <= high)
+        text = "12 or more" if tag == "trail12p" else "9-11"
+        count_row("field-goal attempts inside 2:00 of Q4, offense trailing by %s (per team-game)" % text, late_fg,
+                  team_games, _pooled(centres["q4_inside_2_min_fga_per_team_game:" + tag]), graded=graded)
+    h2_open = [d for d in spotted if d["half"] == 2 and d["start_clock"] > 600 and d.get("timeouts")]
+    count_row("defensive timeouts per second-half possession starting over 10:00",
+              sum(d["timeouts"][3] for d in h2_open), len(h2_open),
+              _pooled(centres["def_timeouts_per_h2_possession_over_600"]))
+    # Timeouts per team-game, with the dispersion of the observed team-game counts.
+    per_team_game = []
+    for receipt in receipts:
+        used = {team: 0 for team in receipt.get("team_stats", {})}
+        for d in _drives(receipt):
+            if d.get("timeouts"):
+                used[d["team"]] = used.get(d["team"], 0) + d["timeouts"][2]
+                other = next((t for t in used if t != d["team"]), None)
+                if other is not None:
+                    used[other] += d["timeouts"][3]
+        per_team_game += list(used.values())
+    mean = sum(per_team_game) / len(per_team_game) if per_team_game else 0
+    dispersion = (sum((x - mean) ** 2 for x in per_team_game) / (len(per_team_game) - 1) / mean
+                  if len(per_team_game) > 1 and mean else 1.0)
+    count_row("timeouts per team-game", sum(per_team_game), len(per_team_game),
+              _pooled(centres["timeouts_per_team_game"]), dispersion=dispersion)
+    # Zero-tolerance rows (R14): overtime spikes outside the spike window and
+    # trailing overtime punts. The spike row reads the possession field the
+    # kernel records (results; a receipt's drives summary does not carry it).
+    window = fp.SPIKE_WINDOW
+    overtime = [d for d in spotted if d["half"] == "OT"]
+    with_field = [d for r in receipts for d in r.get("possessions", ()) if d.get("half") == "OT"
+                  and "category" in d]
+    spikes = sum(1 for d in with_field if (d.get("last_spike_seconds_left") or 0) > window)
+    rows.append(("overtime spikes with more than %d s left (zero tolerance)" % window,
+                 spikes if with_field else None, 0, 0,
+                 ("OUTSIDE" if spikes else "WITHIN") if with_field else "INSUFFICIENT SAMPLE"))
+    trailing = [d for d in overtime if isinstance(d.get("score_diff"), int) and d["score_diff"] < 0]
+    # Batch B9F: a punt a club's block or a live answer decided is the coach's
+    # football decision, never the model's (counted apart, never graded).
+    punts_ot = sum(d["category"] == "punt" and not _coach_decided(d) for d in trailing)
+    rows.append(("trailing overtime punts (zero tolerance)", punts_ot, 0, 0,
+                 "OUTSIDE" if punts_ot else "WITHIN"))
+
+    # Informational shapes.
+    starts = [d["start_spot"] for d in spotted]
+    _, mean_start, _ = _moments(centres["start_all"])
+    add("mean drive start, all drives (all-drive centre)", sum(starts) / len(starts) if starts else None,
+        mean_start, None, graded=False)
+    bins = fp.load()["preregistration"]["start_bins"]
+    counts = [sum(season[i] for season in centres["start_bin_counts"].values()) for i in range(len(bins))]
+    for (low, high), n_bin in zip(bins, counts):
+        mine = sum(low <= s <= high for s in starts)
+        add("start-bin share %d-%d" % (low, high), mine / len(starts) if starts else None, n_bin / sum(counts),
+            None, graded=False)
+    for label, entry in centres["points_per_drive_by_start_bin"].items():
+        low, high = (int(v) for v in label.split("-"))
+        mine = [d.get("points", 0) for d in spotted if low <= d["start_spot"] <= high]
+        add("points per drive, start %s" % label, sum(mine) / len(mine) if mine else None, _pooled(entry), None,
+            graded=False)
+    qb_carries = scrambles = 0
+    for receipt in receipts:
+        for row in receipt.get("play_ledger", ()):
+            if row.get("play_type") == "run" and row.get("carrier_group") == "QB" and not row.get("kneel"):
+                qb_carries += 1
+                scrambles += bool(row.get("scramble"))
+    add("QB scramble share of QB carries (label stream)", scrambles / qb_carries if qb_carries else None,
+        _pooled(centres["scramble_share_of_qb_rushes"]), None, graded=False)
+    # Batch B6 (W5a, informational): spikes stamped with more than the spike
+    # window left in their half (regulation) or period (overtime), from the
+    # clock-detail stamps of full receipts.
+    spike_rows = outside = 0
+    for receipt in receipts:
+        postseason = receipt.get("game_type") == "postseason"
+        for row in receipt.get("play_ledger", ()):
+            if row.get("play_type") != "pass" or not row.get("spike"):
+                continue
+            spike_rows += 1
+            minutes, seconds = (int(v) for v in str(row.get("game_clock", "0:00")).split(":"))
+            left = minutes * 60 + seconds
+            period = row.get("period")
+            if not isinstance(period, str):
+                left += 900 if int(period) in (1, 3) else 0
+            outside += left > window
+    add("spikes stamped with more than %d s left in the half (share, informational)" % window,
+        outside / spike_rows if spike_rows else None, 0.0, None, events=spike_rows, graded=False)
+    fourth = [d["chains"] for d in spotted if d.get("chains")]
+    attempts, games = centres["fourth_down_per_team_game"]["pooled"]
+    conversions = centres["fourth_down_conversion"]["pooled"][0]
+    add("fourth-down attempts per team game (drive chains)",
+        sum(ch[4] for ch in fourth) / team_games if team_games else None, attempts / games, None, graded=False)
+    add("fourth-down conversions per team game (drive chains)",
+        sum(ch[5] for ch in fourth) / team_games if team_games else None, conversions / games, None, graded=False)
+    add("kneels per team game", sum(d.get("kneels") or 0 for d in spotted) / team_games if team_games else None,
+        _pooled(centres["kneels_per_team_game"]), None, graded=False)
+    return team_games, rows
+
+
+INJURY_ROWS = (
+    ("game_onsets_per_team_game", "injury onsets per team-game"),
+    ("rest_of_game_removals_per_team_game", "rest-of-game removals per team-game"),
+    ("head_neck_share_game_onsets", "head/neck share of onsets"),
+    ("head_neck_game_onsets_per_team_game", "head/neck onsets per team-game"),
+    ("lower_extremity_share_game_onsets", "lower-extremity share of onsets"),
+    ("time_loss_share_(short+)", "time-loss share of onsets (short or longer)"),
+    ("long_term_share", "long-term share of onsets"),
+)
+
+
+def audit_injuries(receipts, cohort=None):
+    """Injury rows by the kernel 2014.4 method (the calibration's acceptance
+    bands, WITHIN when low <= observed <= high), for a cohort graded on a
+    schema-3 base (kernel 2014.6 onward; batch B5); a 2012-base cohort has no
+    injury rows (its bands were a candidate acceptance, never an audit)."""
+    from .injury_model import acceptance_bands
+
+    base = cohort_base(receipts, cohort)
+    if base.legacy_2012():
+        return 0, []
+    bands = acceptance_bands(base.raw("injury"))
+    team_games = sum(len(r.get("team_stats", {})) for r in receipts)
+    injuries = [i for r in receipts for i in r.get("injuries", ())]
+    n = len(injuries)
+    enough = team_games >= MIN_TEAM_GAMES
+
+    def share(pred):
+        return sum(1 for i in injuries if pred(i)) / n if n else None
+    observed = {
+        "game_onsets_per_team_game": n / team_games if team_games else None,
+        "rest_of_game_removals_per_team_game":
+            sum(bool(i.get("removed")) for i in injuries) / team_games if team_games else None,
+        "head_neck_share_game_onsets": share(lambda i: i.get("injury_class") == "head_neck"),
+        "head_neck_game_onsets_per_team_game":
+            sum(i.get("injury_class") == "head_neck" for i in injuries) / team_games if team_games else None,
+        "lower_extremity_share_game_onsets": share(lambda i: i.get("injury_class") == "lower_extremity"),
+        "time_loss_share_(short+)": share(lambda i: i.get("severity") != "minor"),
+        "long_term_share": share(lambda i: i.get("severity") == "long_term"),
+    }
+    rows = []
+    for key, label in INJURY_ROWS:
+        low, high = bands[key]
+        value = observed[key]
+        if value is None or not enough:
+            status = "INSUFFICIENT SAMPLE"
+        else:
+            status = "WITHIN" if low <= value <= high else "OUTSIDE"
+        rows.append((label, value, (low + high) / 2, (high - low) / 2, status))
+    return team_games, rows
+
+
+SCORING_FROM = (2014, 6)
+# The non-offensive touchdown sources of each unit's band row (R15).
+_RETURN_ROWS = (
+    ("interception-return touchdown share of interceptions", "interception", ("interception",), "interception"),
+    ("fumble-return touchdown share of lost fumbles", "fumble_lost", ("fumble",), "fumble_lost"),
+    ("punt return or blocked-punt touchdown share of punts", "punt", ("punt_return", "blocked_punt"), "punt"),
+)
+
+
+def _kicks(receipt):
+    from .play_detail import kicks_of
+    return kicks_of(receipt)
+
+
+def _tries(receipt):
+    """Every try record of a receipt (offensive touchdowns', non-offensive
+    touchdowns' and return touchdowns'), from the drives and kicks summaries."""
+    out = []
+    for d in _drives(receipt):
+        if d.get("try"):
+            out.append(d["try"])
+        non_offensive = d.get("non_offensive_score") or {}
+        if non_offensive.get("try"):
+            out.append(non_offensive["try"])
+    out += [k["try"] for k in _kicks(receipt) if k.get("try")]
+    return out
+
+
+def audit_scoring(receipts, cohort=None):
+    """Kernel 2014.6 batch B9 (R8, R9, R15): the scoring-decision rows for a
+    2014.6-or-later cohort, (team-games, [(metric, observed, centre,
+    tolerance, status)]). Every centre is read from the cohort base's
+    scoring artifact (library/data/2010_2014w4_scoring_decisions.json; the
+    extra point from its drive-model reference), never typed: rates use
+    3*sqrt(p(1-p)/n) and counts 3*sqrt(c/n); a rate row reads INSUFFICIENT
+    SAMPLE below 30 events (so the Q4 down-2 and late onside rows grade on
+    the 1,000-game block). Earlier cohorts have no row (0, []).
+
+    The four rows whose centres are the league decision charts' frequencies
+    (the two-point attempt share, the Q4 down-2 go share, onside kicks per
+    team-game and the late onside share) grade only the decisions the chart
+    made: basis ``league`` or ``delegated:league``
+    (runtime.scoring_decisions.CHART_BASES). A try or kickoff decided by a
+    club's block (``policy:i``) or a live answer (``live``) is the coach's
+    football decision, never a chart draw (the controlled club is never basis
+    ``league``; specification, scoring.controlled_club_basis), so it is
+    counted apart in one informational row and a block cannot move a graded
+    row. Onside kicks per team-game counts the team-games of the clubs whose
+    kickoffs that game were all chart-decided. The success, recovery and
+    return rows read every decision: the odds do not depend on the basis."""
+    from .scoring_decisions import CHART_BASES
+
+    if cohort is None or not kernel_at_least(cohort, SCORING_FROM):
+        return 0, []
+    base = cohort_base(receipts, cohort)
+    art = base.scoring().data
+    team_games = sum(len(r.get("team_stats", {})) for r in receipts)
+    rows, add = _grader(team_games >= MIN_TEAM_GAMES)
+
+    def pooled(pair):
+        return pair[0] / pair[1]
+
+    def rate_row(metric, made, n, centre, *, graded=True):
+        observed, tolerance = _rate(made, n, centre)
+        add(metric, observed, centre, tolerance, events=n, graded=graded)
+
+    def count_row(metric, total, centre, *, graded=True, games=None):
+        games = team_games if games is None else games
+        observed = total / games if games else None
+        tolerance = 3 * math.sqrt(centre / games) if games and centre else None
+        add(metric, observed, centre, tolerance, graded=graded)
+
+    def chart_decided(decision):
+        return decision.get("basis") in CHART_BASES
+
+    teams = [s for r in receipts for s in r.get("team_stats", {}).values()]
+
+    def total(field):
+        return sum(s.get(field, 0) for s in teams)
+
+    # R8: the try decision, the two-point result and the extra point.
+    tries = art["try"]["tries_by_season"].values()
+    go_centre = sum(k for k, _ in tries) / sum(n for _, n in tries)
+    all_tries = [t for r in receipts for t in _tries(r)]
+    chart_tries = [t for t in all_tries if chart_decided(t)]
+    rate_row("two-point attempt share of tries", sum(t["decision"] == "go" for t in chart_tries), len(chart_tries),
+             go_centre)
+    attempts, kicks_tried = total("two_point_attempts"), total("extra_point_attempts")
+    rate_row("two-point conversion rate", total("two_point_conversions"), attempts,
+             pooled(art["two_point_success"]["pooled"]))
+    rate_row("extra-point rate", total("extra_points_made"), kicks_tried, pooled(art["extra_point_reference"]["value"]))
+    cell_map = art["try"]["decision_cell_map"]
+    down_two = cell_map["Q4 120-0|-2"]
+    chart = art["try"]["decision_chart"][down_two]
+    late = [t for t in chart_tries if t.get("cell") == down_two]
+    rate_row("fourth-quarter go share of tries down 2 after the touchdown", sum(t["decision"] == "go" for t in late),
+             len(late), chart["go"] / chart["tries"])
+    # R9: onside kicks, their late share and the recoveries.
+    onside_chart = art["onside"]["decision_chart"]
+    onside_total = sum(k for k, _ in art["onside"]["onside_share_by_season"].values())
+    kicks = [k for r in receipts for k in _kicks(r)]
+    decided = [k for k in kicks if k.get("onside") is not None]
+    chart_games = chart_onside = 0
+    for r in receipts:
+        own = {}
+        for k in _kicks(r):
+            if k.get("onside") is not None:
+                own.setdefault(k.get("kicking"), []).append(k)
+        for club in r.get("team_stats", {}):
+            club_kicks = own.get(club, [])
+            if all(chart_decided(k) for k in club_kicks):
+                chart_games += 1
+                chart_onside += sum(bool(k["onside"]) for k in club_kicks)
+    count_row("onside kicks per team-game", chart_onside, onside_total / sum(art["team_games"].values()),
+              games=chart_games)
+    late_cells = ("Q4 120-0|trail 1-3", "Q4 120-0|trail 4-8")
+    late_pair = [sum(onside_chart[c][i] for c in late_cells) for i in (0, 1)]
+    late_kicks = [k for k in decided if k.get("cell") in late_cells and chart_decided(k)]
+    rate_row("onside share of kicks trailing by 1-8 inside 2:00", sum(bool(k.get("onside")) for k in late_kicks),
+             len(late_kicks), late_pair[0] / late_pair[1])
+    # Decisions of a club's block or a live answer: counted apart, never graded.
+    apart = sum(not chart_decided(d) for d in all_tries + decided)
+    rows.append(("tries and kickoffs decided by a club's block or a live answer (informational; counted apart, "
+                 "never graded against the chart)", apart, None, None,
+                 "MEASURED" if team_games else "INSUFFICIENT SAMPLE"))
+    for label, graded in (("expected", True), ("surprise", False)):
+        onside = [k for k in kicks if k.get("onside") and k.get("recovery_class") == label]
+        rate_row("%s onside recovery rate%s" % (label, "" if graded else " (informational)"),
+                 sum(k.get("outcome") == "onside_recovered" for k in onside), len(onside),
+                 pooled(art["onside"]["recovery"][label]), graded=graded)
+    # R15: each unit's return-touchdown share, conditioned on the drawn category.
+    drives = [d for r in receipts for d in _drives(r)]
+    non_offensive = art["non_offensive"]
+
+    def scored(d, sources):
+        return (d.get("non_offensive_score") or {}).get("source") in sources
+
+    for metric, category, sources, unit in _RETURN_ROWS:
+        units = [d for d in drives if d.get("category") == category]
+        rate_row(metric, sum(scored(d, sources) for d in units), len(units), pooled(non_offensive[unit]["pooled"]))
+    deep = [k for k in kicks if not k.get("free_kick") and k.get("onside") is not None and not k.get("onside")]
+    rate_row("kickoff-return touchdown share of deep kickoffs",
+             sum(k.get("outcome") == "returned_touchdown" for k in deep), len(deep),
+             pooled(non_offensive["kickoff"]["pooled"]))
+    missed = [d for d in drives if d.get("category") == "field_goal_attempt" and not d.get("fg_made")]
+    rate_row("blocked field-goal touchdowns per missed field goal (informational)",
+             sum(scored(d, ("blocked_field_goal",)) for d in missed), len(missed),
+             pooled(non_offensive["missed_field_goal"]["pooled"]), graded=False)
+    count_row("non-offensive touchdowns per team-game (informational)",
+              total("defensive_touchdowns") + total("special_teams_touchdowns"),
+              pooled(non_offensive["non_offensive_touchdowns_per_team_game"]["pooled"]), graded=False)
+    # Points: measured, never forecast (the graded points row is the volume table's).
+    rows.append(("points per team-game (measured; no forecast)", total("points") / team_games if team_games else None,
+                 None, None, "MEASURED" if team_games else "INSUFFICIENT SAMPLE"))
+    return team_games, rows
+
+
+def _coach_decided(drive):
+    """Kernel 2014.6 batch B9F: whether a drive's terminal fourth-down decision
+    came from a club's block or a live answer (basis ``policy:i`` or ``live``),
+    not the league chart."""
+    from .scoring_decisions import CHART_BASES
+    records = drive.get("fourth_downs") or ()
+    return bool(records) and bool(records[-1].get("terminal")) and records[-1].get("basis") not in CHART_BASES
+
+
+FOURTH_DOWN_FROM = (2014, 6)
+FOURTH_DOWN_CONVERTED = ("converted", "touchdown")
+
+
+def audit_fourth_down(receipts, cohort=None):
+    """Kernel 2014.6 batch B9F: the fourth-down rows for a 2014.6-or-later
+    cohort, (team-games, [(metric, observed, centre, tolerance, status)]).
+    Every centre is read from the cohort base's fourth-down artifact
+    (library/data/2010_2014w4_fourth_down_decisions.json, its ``centres``
+    count pairs), never typed: rates use 3*sqrt(p(1-p)/n) and counts
+    3*sqrt(c/n); a rate row reads INSUFFICIENT SAMPLE below 30 events.
+    Earlier cohorts have no row (0, []).
+
+    Graded (library/2014_6_fourth_down_specification.md, section 10): the go
+    share of the decisions the chart made (basis ``league`` or
+    ``delegated:league``), fourth-down attempts per team-game on the
+    team-games whose fourth downs were all chart-decided, and the conversion
+    rate of every go (the odds do not depend on the basis). A decision of a
+    club's block or a live answer is the coach's football decision: counted
+    apart in one informational row, never graded, so a block or an answer
+    cannot move a graded row. Informational: the field-goal and punt shares
+    of chart decisions, decisions per team-game, and the chart-conditional
+    go count against the sum of each chart decision's go probability (its
+    cell's go count over the cell's decisions)."""
+    from .scoring_decisions import CHART_BASES
+
+    if cohort is None or not kernel_at_least(cohort, FOURTH_DOWN_FROM):
+        return 0, []
+    base = cohort_base(receipts, cohort)
+    centres = base.fourth_down().centres
+    team_games = sum(len(r.get("team_stats", {})) for r in receipts)
+    rows, add = _grader(team_games >= MIN_TEAM_GAMES)
+
+    def pooled(name):
+        k, n = centres[name]
+        return k / n
+
+    def rate_row(metric, made, n, centre, *, graded=True):
+        observed, tolerance = _rate(made, n, centre)
+        add(metric, observed, centre, tolerance, events=n, graded=graded)
+
+    def count_row(metric, total, centre, *, graded=True, games=None):
+        games = team_games if games is None else games
+        observed = total / games if games else None
+        tolerance = 3 * math.sqrt(centre / games) if games and centre else None
+        add(metric, observed, centre, tolerance, graded=graded)
+
+    decisions, chart_games, chart_attempts = [], 0, 0
+    for r in receipts:
+        by_club = {}
+        for d in _drives(r):
+            for rec in d.get("fourth_downs") or ():
+                decisions.append(rec)
+                by_club.setdefault(d.get("team"), []).append(rec)
+        for club in r.get("team_stats", {}):
+            own = by_club.get(club, [])
+            if all(rec.get("basis") in CHART_BASES for rec in own):
+                chart_games += 1
+                chart_attempts += sum(rec.get("decision") == "go" for rec in own)
+    chart = [rec for rec in decisions if rec.get("basis") in CHART_BASES]
+    gos = [rec for rec in decisions if rec.get("decision") == "go"]
+    rate_row("fourth-down go share of chart decisions", sum(rec["decision"] == "go" for rec in chart), len(chart),
+             pooled("go_share"))
+    count_row("fourth-down attempts per team-game (team-games decided by the chart)", chart_attempts,
+              pooled("attempts_per_team_game"), games=chart_games)
+    rate_row("fourth-down conversion rate", sum(rec.get("outcome") in FOURTH_DOWN_CONVERTED for rec in gos),
+             len(gos), pooled("conversion_rate"))
+    rate_row("field-goal share of chart fourth-down decisions (informational)",
+             sum(rec["decision"] == "field_goal" for rec in chart), len(chart), pooled("field_goal_share"),
+             graded=False)
+    rate_row("punt share of chart fourth-down decisions (informational)",
+             sum(rec["decision"] == "punt" for rec in chart), len(chart), pooled("punt_share"), graded=False)
+    count_row("fourth-down decisions per team-game (informational)", len(decisions),
+              pooled("decisions_per_team_game"), graded=False)
+    expected = [rec["chart"][0] / sum(rec["chart"]) for rec in chart if rec.get("chart") and sum(rec["chart"])]
+    rows.append(("chart-conditional go count against the sum of the chart decisions' go probabilities "
+                 "(informational)", sum(rec["decision"] == "go" for rec in chart) if chart else None,
+                 sum(expected) if chart else None, None,
+                 "INFORMATIONAL" if len(chart) >= MIN_EVENTS and team_games >= MIN_TEAM_GAMES
+                 else "INSUFFICIENT SAMPLE"))
+    rows.append(("fourth downs decided by a club's block or a live answer (informational; counted apart, never "
+                 "graded against the chart)", len(decisions) - len(chart), None, None,
+                 "MEASURED" if team_games else "INSUFFICIENT SAMPLE"))
+    return team_games, rows
+
+
+BALL_SECURITY_FROM = (2014, 6)
+# Layer B (informational): the layout kind of each lost-entry kind of the base's
+# drive pool (runtime.ball_security.terminal_kind; an aborted snap is run-hosted).
+_TERMINAL_KINDS = ("run", "catch", "sack")
+
+
+def _ball_markers(receipts):
+    return [r.get("ball_security") for r in receipts if isinstance(r.get("ball_security"), dict)]
+
+
+def audit_ball_security(receipts, cohort=None):
+    """Kernel 2014.6 batch B10: the ball-security rows for a 2014.6-or-later
+    cohort resolved with the ball-security credit (its marker),
+    (team-games, [(metric, observed, centre, tolerance, status)]). Every
+    centre is read from the cohort base's ball-security artifact
+    (library/data/2010_2014w4_ball_security.json, its ``band_centres``),
+    never typed. Graded (pre-build specification, section 5): fumbles per
+    team-game (3*sqrt(phi*c/n), phi the artifact's team-game dispersion),
+    lost fumbles per team-game (3*sqrt(c/n)), the offense-kept share of
+    scrimmage fumbles and the sack share of lost scrimmage fumbles
+    (3*sqrt(p(1-p)/n)), kicking-team recoveries per team-game (3*sqrt(c/n);
+    only for a cohort resolved with retained kicks, R12 layer C) and the
+    muffer role share (3 standard errors). Informational: the forced share of
+    lost non-aborted scrimmage fumbles, the forcer also recovering, muffs
+    per punt, the receiving club's keep share of punt muffs (the plan's 0.70)
+    and the realised lost-fumble terminal kinds against the base drive
+    pool's own lost entries (R12 layer B). A rate row reads INSUFFICIENT
+    SAMPLE below 30 events. Earlier cohorts, and receipts without the
+    marker, have no row (0, [])."""
+    if cohort is None or not kernel_at_least(cohort, BALL_SECURITY_FROM):
+        return 0, []
+    marked = [r for r in receipts if isinstance(r.get("ball_security"), dict)]
+    if not marked:
+        return 0, []
+    base = cohort_base(receipts, cohort)
+    centres = base.ball_security().centres
+    team_games = sum(len(r.get("team_stats", {})) for r in marked)
+    rows, add = _grader(team_games >= MIN_TEAM_GAMES)
+
+    def pooled(entry):
+        k, n = entry["pooled"]
+        return k / n
+
+    def rate_row(metric, made, n, centre, *, graded=True):
+        observed, tolerance = _rate(made, n, centre)
+        add(metric, observed, centre, tolerance, events=n, graded=graded)
+
+    def count_row(metric, total, centre, *, graded=True, dispersion=1.0):
+        observed = total / team_games if team_games else None
+        tolerance = 3 * math.sqrt(dispersion * centre / team_games) if team_games and centre else None
+        add(metric, observed, centre, tolerance, graded=graded)
+
+    teams = [s for r in marked for s in r.get("team_stats", {}).values()]
+
+    def total(field):
+        return sum(s.get(field, 0) or 0 for s in teams)
+
+    drives = [d for r in marked for d in _drives(r)]
+    scrim = [f for d in drives for f in (d.get("fumbles") or ())]
+    lost = [f for f in scrim if f["outcome"] == "lost"]
+    kick_records = []
+    for r in marked:
+        for k in _kicks(r):
+            if isinstance(k.get("fumble"), dict):
+                kick_records.append(("kick", k["fumble"]))
+        for d in _drives(r):
+            if isinstance((d.get("punt") or {}).get("fumble"), dict):
+                kick_records.append(("punt", d["punt"]["fumble"]))
+    fumbles = centres["fumbles_per_team_game"]
+    count_row("fumbles per team-game (nflverse definition, less defensive fumbles after a turnover)",
+              total("fumbles"), pooled(fumbles), dispersion=fumbles["dispersion"])
+    count_row("lost fumbles per team-game", total("fumbles_lost"), pooled(centres["lost_per_team_game"]))
+    rate_row("offense-kept share of scrimmage fumbles", sum(f["outcome"] != "lost" for f in scrim), len(scrim),
+             pooled(centres["offense_kept_share_of_scrimmage_fumbles"]))
+    rate_row("sack share of lost scrimmage fumbles", sum(f.get("snap_kind") == "sack" for f in lost), len(lost),
+             pooled(centres["sack_share_of_lost_scrimmage_fumbles"]))
+    recoveries = centres["kicking_team_recoveries_per_team_game"]
+    retained = all(m.get("retained_kicks") for m in _ball_markers(marked))
+    count_row("kicking-team recoveries per team-game (punts; kickoffs from the 35 from 2011)",
+              total("kicking_team_recoveries"), recoveries["centre"], graded=retained)
+    muffs = [f for _, f in kick_records if f.get("kind") == "muff"]
+    recorded = [f for f in muffs if f.get("role") is not None]
+    k, n = centres["muffer_role_share"]["returner"]
+    p = k / n
+    observed = sum(f["role"] == "returner" for f in recorded) / len(recorded) if recorded else None
+    tolerance = 3 * math.sqrt(p * (1 - p) / len(recorded)) if recorded else None
+    add("muffer role share (the returner, muffs with a recorded muffer)", observed, p, tolerance,
+        events=len(recorded))
+    non_aborted = [f for f in lost if f["kind"] != "aborted"]
+    rate_row("forced share of lost non-aborted scrimmage fumbles (informational)",
+             sum(bool(f["forced"]) for f in non_aborted), len(non_aborted),
+             pooled(centres["forced_share_of_lost_non_aborted_scrimmage_fumbles"]), graded=False)
+    forced_lost = [f for f in lost if f["forced"]]
+    rate_row("forcer also recovers, forced lost scrimmage fumbles (informational)",
+             sum(bool(f.get("forcer_recovered")) for f in forced_lost), len(forced_lost),
+             pooled(centres["forcer_also_recovers"]), graded=False)
+    punt_muffs = [f for where, f in kick_records if where == "punt" and f.get("kind") == "muff" and f.get("counted")]
+    rate_row("muffs per punt (informational)", len(punt_muffs), total("punts"), pooled(centres["muffs_per_punt"]),
+             graded=False)
+    rate_row("receiving club's keep share of punt muffs (informational)",
+             sum(f["outcome"] != "lost" for f in punt_muffs), len(punt_muffs),
+             pooled(centres["punt_muff_receiving_keep_share"]), graded=False)
+    # Layer B (informational): the realised terminal kinds of lost scrimmage
+    # fumbles against the base drive pool's own lost entries, each mapped by
+    # runtime.ball_security.terminal_kind (an aborted snap by its host play).
+    mapped = terminal_kind_centres(base)
+    pool_total = sum(mapped.values())
+    realised = {"run": sum(f.get("snap_kind") == "run" for f in lost),
+                "catch": sum(f.get("snap_kind") == "pass" for f in lost),
+                "sack": sum(f.get("snap_kind") == "sack" for f in lost)}
+    for kind in _TERMINAL_KINDS:
+        rate_row("lost-fumble terminal snaps: %s share (informational; the base pool's lost entries)" % kind,
+                 realised[kind], len(lost), mapped[kind] / pool_total if pool_total else None, graded=False)
+    return team_games, rows
+
+
+def terminal_kind_centres(base):
+    """Kernel 2014.6 batch B10 (R12 layer B): {run, catch, sack: count} of the
+    base drive pool's fumble_lost tuples by the layout kind of each tuple's
+    own lost entry (runtime.ball_security.terminal_kind); memoised per base.
+    A tuple whose lost entry is not a scrimmage fumble is left out."""
+    def build():
+        from . import ball_security
+        from .field_position import _v3_tuples
+        fpm = base.field_position()
+        counts = {kind: 0 for kind in _TERMINAL_KINDS}
+        for t in _v3_tuples(fpm.load(), "fumble_lost"):
+            kind = ball_security.terminal_kind(ball_security.lost_entry(fpm.value(t, "fumbles", ())))
+            if kind in counts:
+                counts[kind] += 1
+        return counts
+    return base.memo(("fumble_terminal_kinds",), build)
+
+
+def return_centres(base=None):
+    """Kernel 2014.4 phase 2: the base's kickoff pool's non-touchback records
+    and the punt pool's returned records (return yards mean and SD);
+    memoised per base (the 2012 base when None). Schema 3 (batch B5): the
+    records the kernel draws (receiving-club records; the retained
+    kicking-team recoveries, onside kicks and return touchdowns are not in
+    them), so the centre is the drawn pool's own, as for 2012."""
+    base = base or BASE_2012
+
+    def build():
+        fp = base.field_position()
+        data, KICK, PUNT = fp.load(), fp.KICK, fp.PUNT
+        kick_pool = getattr(fp, "_kick_pools", {}).get("kickoff_pool", data["kickoff_pool"])
+        punt_pool = getattr(fp, "_punt_pool", data["punt_pool"])
+        kicks = [r[KICK["return_yards"]] for r in kick_pool if not r[KICK["touchback"]]]
+        punts = [r[PUNT["return_yards"]] for r in punt_pool if r[PUNT["outcome"]] == "returned"]
+
+        def moments(xs):
+            m = sum(xs) / len(xs)
+            return {"n": len(xs), "mean": m, "sd": math.sqrt(sum((x - m) ** 2 for x in xs) / (len(xs) - 1))}
+        return {"kickoff": moments(kicks), "punt": moments(punts)}
+    return base.memo(("return_centres",), build)
+
+
+PENALTY_RECORDS_FROM = (2014, 6)
+
+
+def audit_penalties(receipts, cohort=None):
+    """Kernel 2014.6 batch B11 (R11): the penalty rows for a 2014.6-or-later
+    cohort resolved with the penalty records (the receipts' marker),
+    (team-games, [(metric, observed, centre, tolerance, status)]). Every
+    centre is read from the cohort base's penalty artifact
+    (library/data/2010_2014w4_penalties.json, its ``band_centres``, in the
+    engine's scope: the replayed drive records and the kick plays' records,
+    the records enforced after a possession or on a field-goal row left
+    out), never typed. Graded (plan B11): accepted penalties per team-game
+    (3*sqrt(phi*c/n), phi the artifact's team-game dispersion), penalty yards
+    per team-game (3*SD/sqrt(n), the artifact's team-game SD) and first downs
+    by penalty per team-game (3*sqrt(c/n)). Informational: the defense's
+    share of accepted drive penalties, declined and offsetting records and
+    the kick plays' accepted penalties per team-game, and the net yards per
+    team-game the records move the offense (reported, never tuned; no
+    centre). Earlier cohorts, and receipts without the marker, have no row
+    (0, [])."""
+    if cohort is None or not kernel_at_least(cohort, PENALTY_RECORDS_FROM):
+        return 0, []
+    marked = [r for r in receipts if isinstance(r.get("penalties"), dict)]
+    if not marked:
+        return 0, []
+    base = cohort_base(receipts, cohort)
+    centres = base.penalties().centres
+    team_games = sum(len(r.get("team_stats", {})) for r in marked)
+    rows, add = _grader(team_games >= MIN_TEAM_GAMES)
+
+    def pooled(entry):
+        k, n = entry["pooled"]
+        return k / n
+
+    def count_row(metric, total, centre, *, graded=True, dispersion=1.0):
+        observed = total / team_games if team_games else None
+        tolerance = 3 * math.sqrt(dispersion * centre / team_games) if team_games and centre else None
+        add(metric, observed, centre, tolerance, graded=graded)
+
+    teams = [s for r in marked for s in r.get("team_stats", {}).values()]
+
+    def total(field):
+        return sum(s.get(field, 0) or 0 for s in teams)
+
+    accepted = centres["accepted_penalties_per_team_game"]
+    count_row("accepted penalties per team-game (drive and kick plays; the fouling club)", total("penalties"),
+              pooled(accepted), dispersion=accepted["dispersion"])
+    yards = centres["penalty_yards_per_team_game"]
+    centre = pooled(yards)
+    add("penalty yards per team-game (the fouling club)", total("penalty_yards") / team_games if team_games else None,
+        centre, 3 * yards["sd"] / math.sqrt(team_games) if team_games else None)
+    count_row("first downs by penalty per team-game", total("penalty_first_downs"),
+              pooled(centres["penalty_first_downs_per_team_game"]))
+    drives = [d for r in marked for d in _drives(r)]
+    drive_accepted = drive_defense = net = 0
+    for d in drives:
+        pen = d.get("pen") or {}
+        for club, row in (pen.get("clubs") or {}).items():
+            drive_accepted += row[0]
+            drive_defense += row[0] if club != d["team"] else 0
+        net += pen.get("net", 0) or 0
+    rate_observed, rate_tolerance = _rate(drive_defense, drive_accepted,
+                                          pooled(centres["defense_share_of_accepted_drive_penalties"]))
+    add("defense share of accepted drive penalties (informational)", rate_observed,
+        pooled(centres["defense_share_of_accepted_drive_penalties"]), rate_tolerance, events=drive_accepted,
+        graded=False)
+    count_row("declined penalties per team-game (informational)", total("penalties_declined"),
+              pooled(centres["declined_per_team_game"]), graded=False)
+    count_row("offsetting penalties per team-game (informational)", total("penalties_offsetting"),
+              pooled(centres["offsetting_per_team_game"]), graded=False)
+    kick_accepted = 0
+    for r in marked:
+        for k in _kicks(r):
+            kick_accepted += sum(row[0] for row in ((k.get("pen") or {}).get("clubs") or {}).values())
+        for d in _drives(r):
+            kick_accepted += sum(row[0] for row in (((d.get("punt") or {}).get("pen") or {}).get("clubs") or {})
+                                 .values())
+    count_row("kick-play accepted penalties per team-game (informational)", kick_accepted,
+              pooled(centres["kick_play_penalties_per_team_game"]), graded=False)
+    rows.append(("net yards the records move the offense per team-game (reported, not tuned)",
+                 net / team_games if team_games else None, None, None,
+                 "MEASURED" if team_games else "INSUFFICIENT SAMPLE"))
+    return team_games, rows
+
+
+YARDAGE_FROM = (2014, 6)
+
+
+def audit_yardage(receipts, cohort=None, per_snap_graded=False):
+    """Kernel 2014.6 batch B13 (R16c): the yardage rows for a 2014.6-or-later
+    cohort resolved with the replayed yard split (the receipts' ``yardage``
+    marker), (team-games, [(metric, observed, centre, tolerance, status)]).
+    Every centre and spread is read from the cohort base's yardage artifact
+    (library/data/2010_2014w4_yardage.json, its ``band_centres``), never
+    typed. Graded: yards per carry, kneels included (3*SD/(carries*sqrt(n)),
+    SD the artifact's team-game residual SD and carries its mean carries per
+    team-game), the completion rate, spikes as attempts (3*sqrt(phi*p(1-p)/
+    attempts)), the run share of scrimmage plays (3*sqrt(phi*p(1-p)/plays)),
+    rushing yards per team-game (3*SD/sqrt(n)); the per-snap shape of
+    non-kneel runs (the shares losing yards, of 1-3 yards and of 20 or more;
+    3*sqrt(p(1-p)/runs)), read from each possession's ``real_split`` run
+    counts, is graded only when `per_snap_graded` (the synthetic all-club
+    samples of the acceptance runs; plan B13, R16c) and is informational on
+    a real cohort. Informational: the other run bins, completions of 20 or
+    more yards per attempt; measured: the completions the layout forced per
+    team-game. Earlier cohorts, and receipts without the marker, have no row
+    (0, [])."""
+    from .yard_split import RUN_BINS
+
+    if cohort is None or not kernel_at_least(cohort, YARDAGE_FROM):
+        return 0, []
+    marked = [r for r in receipts if isinstance(r.get("yardage"), dict)]
+    if not marked:
+        return 0, []
+    base = cohort_base(receipts, cohort)
+    model = base.yardage()
+    centres = model.centres
+    team_games = sum(len(r.get("team_stats", {})) for r in marked)
+    rows, add = _grader(team_games >= MIN_TEAM_GAMES)
+    teams = [s for r in marked for s in r.get("team_stats", {}).values()]
+    players = [line for s in teams for line in (s.get("players") or {}).values()]
+    carries = sum(line.get("rushing_attempts", 0) or 0 for line in players)
+    rushing = sum(s.get("rushing_yards", 0) or 0 for s in teams)
+    attempts = sum(line.get("pass_attempts", 0) or 0 for line in players)
+    completions = sum(line.get("completions", 0) or 0 for line in players)
+    sacks = sum(s.get("sacks_allowed", 0) or 0 for s in teams)
+    plays = carries + attempts + sacks
+
+    def pooled(entry):
+        k, n = entry["pooled"]
+        return k / n
+
+    y = centres["yards_per_carry"]
+    add("yards per carry (kneels included)", rushing / carries if carries else None, pooled(y),
+        3 * y["residual_sd_per_team_game"] / (y["carries_per_team_game"] * math.sqrt(team_games))
+        if team_games else None)
+    for name, metric, made, n in (("completion_rate", "completion rate (spikes as attempts)", completions, attempts),
+                                  ("run_share", "run share of scrimmage plays", carries, plays)):
+        entry = centres[name]
+        p = pooled(entry)
+        add(metric, made / n if n else None, p,
+            3 * math.sqrt(entry["dispersion"] * p * (1 - p) / n) if n else None, events=n)
+    r = centres["rushing_yards_per_team_game"]
+    add("rushing yards per team-game (kneels included)", rushing / team_games if team_games else None, pooled(r),
+        3 * r["sd"] / math.sqrt(team_games) if team_games else None)
+    bins = [0] * len(RUN_BINS)
+    long_completions = forced = 0
+    for receipt in marked:
+        for d in _drives(receipt):
+            split = d.get("real_split") or {}
+            for i, count in enumerate(split.get("runs") or ()):
+                bins[i] += count
+            long_completions += split.get("completions_20", 0) or 0
+            forced += sum((seg or {}).get("forced", 0) or 0 for seg in split.get("segments") or ())
+    runs = sum(bins)
+    shape = centres["run_bins"]
+    graded_bins = set(model.data.get("graded_bins") or ())
+    total = sum(shape["pooled"])
+    for i, label in enumerate(RUN_BINS):
+        centre = shape["pooled"][i] / total
+        graded = per_snap_graded and label in graded_bins
+        observed, tolerance = _rate(bins[i], runs, centre)
+        add("share of non-kneel runs %s%s" % (
+            {"loss": "losing yards", "zero": "gaining 0", "20+": "of 20+ yards"}.get(label, "of %s yards" % label),
+            "" if graded else " (informational)"), observed, centre, tolerance, events=runs, graded=graded)
+    observed, tolerance = _rate(long_completions, attempts, pooled(centres["completions_20_per_attempt"]))
+    add("completions of 20+ yards per attempt (informational)", observed,
+        pooled(centres["completions_20_per_attempt"]), tolerance, events=attempts, graded=False)
+    rows.append(("completions the layout forced per team-game (measured)",
+                 forced / team_games if team_games else None, None, None,
+                 "MEASURED" if team_games else "INSUFFICIENT SAMPLE"))
+    return team_games, rows
+
+
+def coherence(receipts, cohort=None):
     """Zero-tolerance ledger-coherence counts over the given receipts.
 
-    Returns (receipts checked, [(class, count, measurable receipts)]). A class
-    with no measurable receipt reads 'not measurable' in the renderers."""
-    from .play_detail import COHERENCE_CLASSES, check_ledger, coherence_counts, measurable_classes
+    Returns (receipts checked, [(class, count, measurable receipts)]) for the
+    classes the cohort's table lists (runtime.play_detail.classes_for_cohort).
+    A class with no measurable receipt reads 'not measurable' in the
+    renderers. Each receipt is checked with its own base's rules; a cohort
+    mixing two bases raises."""
+    from .play_detail import check_ledger, classes_for_cohort, coherence_counts, measurable_classes
 
+    cohort_base(receipts, cohort)
+    listed = classes_for_cohort(cohort)
     errors = []
     checked = 0
-    measurable = {cls: 0 for cls in COHERENCE_CLASSES}
+    measurable = {cls: 0 for cls in listed}
     for receipt in receipts:
         if not receipt.get("drives"):
             continue
         checked += 1
         for cls in measurable_classes(receipt):
-            measurable[cls] += 1
+            if cls in measurable:
+                measurable[cls] += 1
         errors += check_ledger(receipt)
     counts = coherence_counts(errors)
-    return checked, [(cls, counts.get(cls, 0), measurable[cls]) for cls in COHERENCE_CLASSES]
+    return checked, [(cls, counts.get(cls, 0), measurable[cls]) for cls in listed]
+
+
+def audit_only_coherence(receipts, cohort=None):
+    """Kernel 2014.6 batch B6: the audit-only classes' counts over the
+    receipts, (receipts checked, [(class, count, measurable receipts)]) for
+    the cohort's audit-only classes (runtime.play_detail.AUDIT_ONLY_CLASSES
+    listed from that cohort). Findings, never violations: they gate nothing
+    until the class leaves audit-only status."""
+    from .play_detail import audit_only_errors, classes_for_cohort, coherence_counts, measurable_classes
+
+    cohort_base(receipts, cohort)
+    listed = [c for c in classes_for_cohort(cohort, include_audit_only=True) if c not in classes_for_cohort(cohort)]
+    errors = []
+    checked = 0
+    measurable = {cls: 0 for cls in listed}
+    for receipt in receipts:
+        if not receipt.get("drives"):
+            continue
+        checked += 1
+        for cls in measurable_classes(receipt):
+            if cls in measurable:
+                measurable[cls] += 1
+        errors += audit_only_errors(receipt)
+    counts = coherence_counts(errors)
+    return checked, [(cls, counts.get(cls, 0), measurable[cls]) for cls in listed]

@@ -355,8 +355,10 @@ class PrivateRuntimeTests(unittest.TestCase):
 class KernelVersionTests(unittest.TestCase):
     def test_client_and_service_kernel_agree(self):
         from runtime import private_service
-        self.assertEqual(KERNEL_VERSION, "2014.5")
+        # Kernel 2014.6 release (B18): kernel 2014.6 and the schema-2 service.
+        self.assertEqual(KERNEL_VERSION, "2014.6")
         self.assertEqual(private_service.KERNEL, KERNEL_VERSION)
+        self.assertEqual(private_service.SCHEMA, "2")
 
 
 if __name__=='__main__': unittest.main()

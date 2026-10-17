@@ -141,6 +141,161 @@ def emergency_view(players, baseline, side, prefer=None):
     return tuple(view), notes
 
 
+# ---- Kernel 2014.6 batch B15 (W2b): position-true defensive-back seats ------
+# Under the profile flag db_slots the kernel seats a club's defensive backs by
+# position family before any consumer reads the DB depth order (the slot
+# model's DB1-5, the field-goal block's DB1-4, the strength units' base four,
+# tackle and coverage credit, the coverage units and the returner): DB1 and
+# DB2 the two outside corners, DB3 and DB4 the two safeties, DB5 the nickel,
+# then the reserves in the same family-balanced units. The family is the
+# position label (a corner CB; a safety S, SS, FS or SAF; any other DB label,
+# such as an emergency filler's, has none and fills a short seat). The
+# labels are the inputs' own: from 2014 Week 5 the background clubs' come
+# from their Week 1 chart slots, then their 2014 weekly-roster label
+# (runtime.depth_library.relabel_defensive_backs), Jacksonville's from Stone's
+# chart. Two slot-defining roles are read from the inputs: ``nickel`` (the
+# player who takes DB5 whenever he is available, settled before the base) and
+# ``outside_reserve`` (the first corner to replace an outside starter, the
+# nickel staying inside). Without them the move-up convention applies (the
+# third corner is the nickel; a removed outside corner is replaced by the
+# nickel moving outside and the next corner entering at nickel), labelled as
+# a convention: real practice splits it about evenly (design W2b, honest
+# limit 4). A removed corner is replaced from the corners and a removed safety
+# from the safeties; another family fills a seat only when its own family is
+# exhausted. One deterministic rule for every club; no draw is used, the slot
+# shares (SCRIMMAGE_SLOT_MIX) are unchanged and only the order inside the DB
+# group moves.
+SLOT_ROLES = ("nickel", "outside_reserve")
+CORNER_LABELS = frozenset({"CB"})
+SAFETY_LABELS = frozenset({"S", "SS", "FS", "SAF"})
+DB_UNIT = ("corner", "corner", "safety", "safety", "nickel")
+
+
+def db_family(position):
+    """'corner', 'safety' or None (a generic DB label) for a position label."""
+    label = str(position or "").upper()
+    if label in CORNER_LABELS:
+        return "corner"
+    if label in SAFETY_LABELS:
+        return "safety"
+    return None
+
+
+def _holds(player, role):
+    return role in player.roles or role in player.responsibilities
+
+
+def db_starters(players):
+    """The ids of a dressed unit's two outside starters (W2b): its first two
+    corners by depth other than the nickel, the outside reserve passed over
+    only while two other such corners rank above him, so when a starter is
+    not dressed the outside reserve starts ahead of a lower-ranked corner
+    (review fix, October 16, 2026: he is the first replacement for an outside
+    starter whether the starter is out before kickoff or during the game).
+    The kernel settles them once at kickoff from the game-day unit, so an
+    outside reserve, not the next corner by depth, replaces a removed
+    starter; a coach's replacement inherits the seat (kernel apply_decision)."""
+    dbs = usage.depth_order(players, "DB")
+    nickel = next((p for p in dbs if _holds(p, "nickel")), None)
+    corners = [p for p in dbs if db_family(p.position) == "corner" and p is not nickel]
+    reserve = next((p for p in corners if _holds(p, "outside_reserve")), None)
+    rank = {p.player_id: i for i, p in enumerate(corners)}
+    others = [p for p in corners if p is not reserve]
+    ahead = [p for p in others if reserve is None or rank[p.player_id] < rank[reserve.player_id]]
+    pool = ahead + ([reserve] if reserve is not None else []) + [p for p in others if p not in ahead]
+    return tuple(p.player_id for p in pool)[:2]
+
+
+def db_seats(players, starters=None):
+    """[(seat, player)] for the defensive backs of ``players`` in seat order
+    (W2b): unit after unit of two outside corners, two safeties and a nickel
+    (seat labels CB, S and NB with the unit number), the designated nickel
+    settled first in the first unit. ``starters`` are the outside starters'
+    ids (db_starters of the game-day unit; of ``players`` when None). The
+    outside order is the starters, then the outside reserve, then the other
+    corners by depth; the undesignated nickel is the next corner of that
+    order other than the outside reserve (the reserve only when no other
+    corner is left). A seat whose family is exhausted takes a generic DB,
+    then the other family (a corner seat the next safety, a safety seat the
+    next corner of the outside order, the outside reserve last); a seat
+    nobody can fill stays empty."""
+    dbs = usage.depth_order(players, "DB")
+    if not dbs:
+        return []
+    starters = db_starters(players) if starters is None else tuple(starters)
+    order = {p.player_id: i for i, p in enumerate(dbs)}
+    nickel = next((p for p in dbs if _holds(p, "nickel")), None)
+    corners = [p for p in dbs if db_family(p.position) == "corner" and p is not nickel]
+    reserve = next((p for p in corners if _holds(p, "outside_reserve")), None)
+    outside = sorted(corners, key=lambda p: (0 if p.player_id in starters else 1 if p is reserve else 2,
+                                            order[p.player_id]))
+    safeties = [p for p in dbs if db_family(p.position) == "safety" and p is not nickel]
+    generic = [p for p in dbs if db_family(p.position) is None and p is not nickel]
+    taken = set()
+
+    def take(*pools):
+        for pool in pools:
+            for p in pool:
+                if p.player_id not in taken:
+                    taken.add(p.player_id)
+                    return p
+        return None
+
+    seats, unit = [], 0
+    while len(taken) < len(dbs):
+        unit += 1
+        chosen = {}
+        if unit == 1 and nickel is not None:
+            chosen[4] = nickel
+            taken.add(nickel.player_id)
+        # Own families first: the outside corners, the safeties, then the
+        # undesignated nickel (the reserve kept outside while another corner
+        # is left).
+        for index, kind in enumerate(DB_UNIT[:4]):
+            pick = take(outside if kind == "corner" else safeties)
+            if pick is not None:
+                chosen[index] = pick
+        inside = [p for p in outside if p is not reserve]
+        if 4 not in chosen:
+            pick = take(inside, outside)
+            if pick is not None:
+                chosen[4] = pick
+        # Then the short seats in seat order, from a generic DB, then the
+        # other family (the outside reserve last among the corners).
+        for index, kind in enumerate(DB_UNIT):
+            if index in chosen:
+                continue
+            pools = ((generic, safeties) if kind == "corner" else (generic, inside, outside) if kind == "safety"
+                     else (generic, inside, outside, safeties))
+            pick = take(*pools)
+            if pick is not None:
+                chosen[index] = pick
+        if not chosen:
+            break
+        for index in sorted(chosen):
+            label = ("CB%d" % (2 * unit - 1 + index) if index < 2 else "S%d" % (2 * unit - 3 + index)
+                     if index < 4 else "NB%d" % unit)
+            seats.append((label, chosen[index]))
+    return seats
+
+
+def seat_defensive_backs(players, starters=None):
+    """``players`` with each defensive back's depth renumbered by his seat
+    (db_seats: DB1 and DB2 the outside corners, DB3 and DB4 the safeties, DB5
+    the nickel, then the reserves), so usage.depth_order(view, "DB") reads
+    the seat order; every other player and every other field is unchanged,
+    and the tuple keeps its order. Not idempotent once a family runs out (a
+    seat filled from the other family renumbers that player ahead of his own
+    family), so the kernel seats each view exactly once, from the unseated
+    live list."""
+    players = tuple(players)
+    seats = db_seats(players, starters)
+    if not seats:
+        return players
+    rank = {p.player_id: i for i, (_, p) in enumerate(seats, 1)}
+    return tuple(replace(p, depth=rank[p.player_id]) if p.player_id in rank else p for p in players)
+
+
 # ---- scrimmage ---------------------------------------------------------------
 
 def _credit(accumulator, key, share, snaps):
@@ -150,13 +305,56 @@ def _credit(accumulator, key, share, snaps):
     return after // 100 - before // 100
 
 
-def _slot_snaps(accumulator, prefix, ordered, shares, snaps, out):
-    for rank, share in enumerate(shares):
-        if rank >= len(ordered):
-            break
-        credited = _credit(accumulator, (prefix, rank), share, snaps)
+def slot_lineup(offense_view, defense_view, passer, front):
+    """Kernel 2014.6 batch B6 (W2a): the single on-field source. {side:
+    [slot]} for one drive's scrimmage snaps, each slot a dict with its
+    label, group, accumulator key (None for a full-share slot that is never
+    accumulated: the passer and the five linemen), rank inside that key and
+    share in hundredths. Order and keys are exactly those scrimmage()
+    credited before this record existed, so crediting is byte for byte the
+    same: passer, the protection front by slot, the back slots (RB1, then
+    the first fullback or RB2), WR1-3, TE1-2; DL1-4, LB1-3, DB1-5."""
+    offense = []
+    if passer is not None:
+        offense.append({"slot": "QB", "group": "QB", "key": None, "rank": None, "player": passer, "share": 100})
+    for label, lineman in front.items():
+        offense.append({"slot": label, "group": "OL", "key": None, "rank": None, "player": lineman, "share": 100})
+    backs = usage.depth_order(offense_view, "RB")
+    fullbacks = usage.depth_order(offense_view, "FB")
+    back_slots = backs[:1] + (fullbacks[:1] or backs[1:2])
+    for rank, (player, share) in enumerate(zip(back_slots, BACK_SLOTS)):
+        label = "FB1" if rank == 1 and fullbacks[:1] and player is fullbacks[0] else "RB%d" % (rank + 1)
+        offense.append({"slot": label, "group": "RB", "key": ("O", "RB"), "rank": rank, "player": player,
+                        "share": share})
+    for grp, shares in OFFENSE_SLOTS:
+        for rank, (player, share) in enumerate(zip(usage.depth_order(offense_view, grp), shares)):
+            offense.append({"slot": "%s%d" % (grp, rank + 1), "group": grp, "key": ("O", grp), "rank": rank,
+                            "player": player, "share": share})
+    defense = []
+    for grp, shares in DEFENSE_SLOTS:
+        for rank, (player, share) in enumerate(zip(usage.depth_order(defense_view, grp), shares)):
+            defense.append({"slot": "%s%d" % (grp, rank + 1), "group": grp, "key": ("D", grp), "rank": rank,
+                            "player": player, "share": share})
+    return {"offense": offense, "defense": defense}
+
+
+def slot_map(lineup, side):
+    """{player_id: slot label} of one side of a slot_lineup (a player in two
+    slots keeps the first)."""
+    out = {}
+    for slot in lineup[side]:
+        out.setdefault(slot["player"].player_id, slot["slot"])
+    return out
+
+
+def _credit_slots(accumulator, team_id, slots, n, out):
+    for slot in slots:
+        pid = slot["player"].player_id
+        if slot["key"] is None:
+            out[pid] = n
+            continue
+        credited = _credit(accumulator, ((team_id,) + slot["key"], slot["rank"]), slot["share"], n)
         if credited:
-            pid = ordered[rank].player_id
             out[pid] = out.get(pid, 0) + credited
 
 
@@ -168,7 +366,8 @@ def scrimmage(accumulator, offense_id, defense_id, offense_view, defense_view, p
     from the slot model alone (before the named-player uplift below): the
     injury exposure. It depends only on the lineups and the drive's snap
     count, so no attribution draw can move an injury hazard (kernel 2014.4,
-    defect register item 19: the attribution tilt changes credit only)."""
+    defect register item 19: the attribution tilt changes credit only).
+    Batch B6 (W2a): the slots are slot_lineup's, the single on-field source."""
     snaps_rows = [r for r in rows if r.get("play_type") in SCRIMMAGE_TYPES]
     n = len(snaps_rows)
     offense, defense = {}, {}
@@ -176,18 +375,9 @@ def scrimmage(accumulator, offense_id, defense_id, offense_view, defense_view, p
         if hazard_out is not None:
             hazard_out.update({offense_id: {}, defense_id: {}})
         return {offense_id: offense, defense_id: defense}
-    if passer is not None:
-        offense[passer.player_id] = n
-    for lineman in front.values():
-        offense[lineman.player_id] = n
-    backs = usage.depth_order(offense_view, "RB")
-    fullbacks = usage.depth_order(offense_view, "FB")
-    back_slots = backs[:1] + (fullbacks[:1] or backs[1:2])
-    _slot_snaps(accumulator, (offense_id, "O", "RB"), back_slots, BACK_SLOTS, n, offense)
-    for grp, shares in OFFENSE_SLOTS:
-        _slot_snaps(accumulator, (offense_id, "O", grp), usage.depth_order(offense_view, grp), shares, n, offense)
-    for grp, shares in DEFENSE_SLOTS:
-        _slot_snaps(accumulator, (defense_id, "D", grp), usage.depth_order(defense_view, grp), shares, n, defense)
+    lineup = slot_lineup(offense_view, defense_view, passer, front)
+    _credit_slots(accumulator, offense_id, lineup["offense"], n, offense)
+    _credit_slots(accumulator, defense_id, lineup["defense"], n, defense)
     if hazard_out is not None:
         hazard_out.update({offense_id: dict(offense), defense_id: dict(defense)})
     for side, fields in ((offense, OFFENSE_FIELDS), (defense, DEFENSE_FIELDS)):
@@ -197,6 +387,32 @@ def scrimmage(accumulator, offense_id, defense_id, offense_view, defense_view, p
                 named[pid] = named.get(pid, 0) + 1
         for pid, count in named.items():
             side[pid] = min(n, max(side.get(pid, 0), count))
+    return {offense_id: offense, defense_id: defense}
+
+
+def try_snap(accumulator, offense_id, defense_id, offense_view, defense_view, passer, front, row,
+             hazard_out=None):
+    """Kernel 2014.6 batch B9 (R8): {team_id: {player_id: snaps}} for one
+    two-point try snap: one offensive snap for the scoring club's slot
+    lineup and one defensive snap for the other club's (slot_lineup, the
+    single on-field source; fractional slots through the same per-club
+    accumulator, n = 1), and the try's named passer, runner and target on
+    the field. A labelled convention: the 2013 snap counts give 1.06
+    recorded snaps per try snap (library/data/2010_2014w4_scoring_decisions.json
+    try_snap_participation). The try is not a scrimmage row
+    (SCRIMMAGE_TYPES): it never counts toward a drive's snaps or a
+    preseason block's limits. `hazard_out` receives the slot credits alone
+    (the injury exposure), as for scrimmage()."""
+    lineup = slot_lineup(offense_view, defense_view, passer, front)
+    offense, defense = {}, {}
+    _credit_slots(accumulator, offense_id, lineup["offense"], 1, offense)
+    _credit_slots(accumulator, defense_id, lineup["defense"], 1, defense)
+    if hazard_out is not None:
+        hazard_out.update({offense_id: dict(offense), defense_id: dict(defense)})
+    for field in OFFENSE_FIELDS:
+        pid = row.get(field)
+        if pid is not None:
+            offense[pid] = max(offense.get(pid, 0), 1)
     return {offense_id: offense, defense_id: defense}
 
 

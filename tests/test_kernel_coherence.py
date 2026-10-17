@@ -9,6 +9,7 @@ from unittest import mock
 
 from runtime import drive_model, field_position, play_detail
 from runtime.kernel import TeamInput, resolve_game, validate_result, ot_status
+from runtime.profiles import PROFILE_2014_5
 from runtime.play_detail import COHERENCE_CLASSES, _period_clock, check_ledger
 from synthetic_games import EVENT_PREFIX, SEED, sample, sample_teams, team
 
@@ -29,11 +30,18 @@ class KernelCoherenceTests(unittest.TestCase):
     def test_check_ledger_zero_violations(self):
         # Kernel 2014.1 adds two timeout-state classes, kernel 2014.4 three
         # clock-leg classes and four chain classes.
-        self.assertEqual(len(COHERENCE_CLASSES), 42)
+        # Kernel 2014.6 batch B6 adds five audit-only classes and batch B8
+        # two sequencing classes, measured only on 2014.6 results; a 2014.5
+        # result measures the 42.
+        through_2014_5 = set(play_detail.classes_for_cohort("2014.5"))
+        self.assertEqual(len(through_2014_5), 42)
+        self.assertEqual(len(COHERENCE_CLASSES), 42 + len(play_detail.B6_CLASSES) + len(play_detail.B8_CLASSES)
+                         + len(play_detail.B9F_CLASSES) + len(play_detail.B10_CLASSES)
+                         + len(play_detail.B11_CLASSES))
         errors = [e for r in self.games for e in check_ledger(r)]
         self.assertEqual(errors, [])
         self.assertTrue(all(validate_result(r) == [] for r in self.games))
-        self.assertTrue(all(play_detail.measurable_classes(r) == set(COHERENCE_CLASSES) for r in self.games))
+        self.assertTrue(all(play_detail.measurable_classes(r) == through_2014_5 for r in self.games))
         failures = sum(r["diagnostics"].get("prefix_order_failed", 0) for r in self.games)
         zero = sum(r["diagnostics"].get("fallback_zero_tuple", 0) for r in self.games)
         self.assertEqual((failures, zero), (0, 0))
@@ -271,7 +279,7 @@ class KernelCoherenceTests(unittest.TestCase):
 
     def test_determinism(self):
         a, b = sample_teams()
-        one = resolve_game(a, b, seed=SEED + b"-00003", event_id=f"{EVENT_PREFIX}-3")
+        one = resolve_game(a, b, seed=SEED + b"-00003", event_id=f"{EVENT_PREFIX}-3", _test_profile=PROFILE_2014_5)
         self.assertEqual(one, self.games[3])
         from runtime.statbook import make_receipt
         self.assertEqual(make_receipt(one, week=4, matchup="B at A", detail="compact_stats")["drives"],
@@ -368,8 +376,10 @@ class HalfFinalClockTests(unittest.TestCase):
     def test_fallbacks_fit_or_expire(self):
         import random
         fp = field_position
-        with mock.patch.object(fp, "_draw_from", return_value=None), \
-                mock.patch.object(fp, "_clock_fallback", return_value=None):
+        # The module functions are the 2012 base's model; patch its instance.
+        model = fp.model()
+        with mock.patch.object(model, "_draw_from", return_value=None), \
+                mock.patch.object(model, "_clock_fallback", return_value=None):
             diagnostics = {}
             short = fp.draw_drive(random.Random(1), 75, 2, 30, -4, 0.0, diagnostics, (1, 1))
             self.assertEqual((short.category, short.fallback, short.own_seconds, short.expiry_seconds),
@@ -385,11 +395,11 @@ class HalfFinalClockTests(unittest.TestCase):
         # Unpatched, a window beyond the allowance with no feasible final gets
         # a real drive that fits inside it and the window continues.
         diagnostics = {}
-        with mock.patch.object(fp, "_clock_fallback", return_value=None):
-            real = fp._draw_from
+        with mock.patch.object(model, "_clock_fallback", return_value=None):
+            real = model._draw_from
             def no_finals(rng, pool_id, regime, *args, **kw):
                 return None if regime in ("h1_final", "late", "ot") else real(rng, pool_id, regime, *args, **kw)
-            with mock.patch.object(fp, "_draw_from", side_effect=no_finals):
+            with mock.patch.object(model, "_draw_from", side_effect=no_finals):
                 fit = fp.draw_drive(random.Random(3), 75, 2, 200, -4, 0.0, diagnostics, (1, 1))
         self.assertFalse(fit.consumes_window)
         self.assertLess(fit.seconds, 200)

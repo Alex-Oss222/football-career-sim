@@ -1,5 +1,6 @@
 import unittest
 
+from runtime.play_detail import DRIVE_SUMMARY_FIELDS
 from runtime.statbook import aggregate_receipts, leaders, make_receipt
 from runtime.stat_tables import passer_rating
 from scripts.render_season_stats import (
@@ -223,14 +224,52 @@ class StatbookTests(unittest.TestCase):
             # fields; kernel 2014.1 appends the timeout state and ladder level,
             # kernel 2014.4 the drive's own seconds, clock-expiry leg, passer and
             # the chain model; its phase 2 the adjusted punt transition, the
-            # layout resample record and the field-goal probability.
-            self.assertTrue(all(len(row) == 34 for row in receipt["drives"]))
+            # layout resample record and the field-goal probability; kernel
+            # 2014.6 batch B8 the non_offensive_score slot (R15 fills it),
+            # batch B9 the offensive touchdown's try record (R8), batch B9F
+            # the fourth-down decision records and the joined segments, batch
+            # B10 the possession's credited scrimmage fumbles, batch B11 its
+            # replayed penalty records' compact summary, batch B13 its
+            # replayed yard split.
+            self.assertTrue(all(len(row) == 41 for row in receipt["drives"]))
+            self.assertEqual(len(DRIVE_SUMMARY_FIELDS), 41)
         with self.assertRaises(ValueError):
             aggregate_receipts([{**make_receipt(result, week=4, matchup="B at A"), "schema_version": 4}])
         book = aggregate_receipts([make_receipt(result, week=4, matchup="B at A", detail="compact_stats")])
         self.assertEqual(book["teams"]["A"]["team_stats"]["drives"],
                          sum(1 for p in result["possessions"] if p["team"] == "A"))
         self.assertEqual(book["teams"]["A"]["drive_model_games"], 1)
+
+    def test_kernel_2014_6_field_group_scaffold(self):
+        # Kernel 2014.6 plumbing (B1): the field group and the per-club count
+        # of 2014.6 games appear only once a 2014.6 receipt exists, so every
+        # closed book and view is unchanged; the recorded base is copied.
+        # Batch B9 fills the team counters (R8, R9, R15) and batch B10 the
+        # ball-security counters, batch B11 the penalty records' counters: a
+        # 2014.5 receipt carries none of them and its book shows none.
+        from runtime.statbook import KERNEL_2014_6_FROM, KERNEL_2014_6_TEAM_STAT_FIELDS
+        from scripts.render_season_stats import compact_book_for_storage
+        self.assertEqual(KERNEL_2014_6_FROM, (2014, 6))
+        self.assertEqual(KERNEL_2014_6_TEAM_STAT_FIELDS,
+                         ("two_point_attempts", "two_point_conversions", "defensive_touchdowns",
+                          "special_teams_touchdowns", "onside_kicks", "onside_recoveries",
+                          "fumbles", "fumbles_lost", "muffs", "kicking_team_recoveries",
+                          "penalties_declined", "penalties_offsetting", "penalty_first_downs"))
+        old = make_receipt(dict(self.result("old"), kernel_version="2014.5"), week=1, matchup="B at A")
+        self.assertNotIn("calibration_base", old)
+        book = aggregate_receipts([old])
+        self.assertNotIn("kernel_2014_6_games", book["teams"]["A"])
+        self.assertNotIn("kernel_2014_6_games", compact_book_for_storage(book)["teams"]["A"])
+        for field in KERNEL_2014_6_TEAM_STAT_FIELDS:
+            self.assertNotIn(field, book["teams"]["A"]["team_stats"])
+        recorded = {"name": "2010_2014w4", "manifest_sha256": "0" * 64, "cell_rules": "2014.6"}
+        new = make_receipt(dict(self.result("new"), kernel_version="2014.6", calibration_base=recorded),
+                           week=2, matchup="B at A")
+        self.assertEqual(new["calibration_base"], recorded)
+        book = aggregate_receipts([old, new])
+        self.assertEqual(book["teams"]["A"]["kernel_2014_6_games"], 1)
+        self.assertEqual(book["teams"]["A"]["games"], 2)
+        self.assertEqual(compact_book_for_storage(book)["teams"]["B"]["kernel_2014_6_games"], 1)
 
     def test_passer_rating_matches_nfl_formula(self):
         line = {"completions": 20, "pass_attempts": 30, "passing_yards": 250,

@@ -1,6 +1,12 @@
 """Kernel 2014.4 candidate, defect register item 1: the E1 acceptance tests
 for unit strength from dated honours and the actual lineup (runtime/strength.py).
 
+These are tests of the honours-production-v3 model (strength.MODEL), the
+model of kernels 2014.4 and 2014.5. Since the kernel 2014.6 release (batch
+B18) every game here resolves under PROFILE_2014_5 and every record is built
+with that model; the player-state-v1 model of kernel 2014.6 is tested in
+tests/test_player_state_runtime.py.
+
 Synthetic seeds and synthetic evidence records only, except where a test
 reads the committed honours evidence to check the date gate and coverage.
 Sample sizes and tolerances were fixed before any sample was inspected.
@@ -17,11 +23,18 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from runtime import drive_model, field_position as fp, strength
 from runtime.drive_model import CATEGORIES
-from runtime.kernel import TeamInput, _edge, resolve_game, validate_result
+from runtime.kernel import TeamInput, _edge, resolve_game as _resolve_game, validate_result
+from runtime.profiles import PROFILE_2014_5
 from support_rosters import game_day_roster
 from synthetic_games import SEED
 
 EVENT = "strength-fixture"
+
+
+def resolve_game(*args, **kw):
+    """runtime.kernel.resolve_game under PROFILE_2014_5 (the honours model's kernel)."""
+    kw.setdefault("_test_profile", PROFILE_2014_5)
+    return _resolve_game(*args, **kw)
 
 
 def honour(unit, group, tier="Elite", weight=1.0):
@@ -198,7 +211,7 @@ class CoverageTests(unittest.TestCase):
         # Jacksonville's roster ids are names; they join by name and club.
         jax = [{"player_id": "Maurice Jones-Drew"}, {"player_id": "Jason Babin"},
                {"player_id": "Nobody In The Database"}]
-        rec, cov = strength.team_strength("Jacksonville Jaguars", jax, 2014, "2014-09-07")
+        rec, cov = strength.team_strength("Jacksonville Jaguars", jax, 2014, "2014-09-07", model=strength.MODEL)
         self.assertEqual(rec["players"]["Maurice Jones-Drew"]["offdef"]["tier"], "Elite")
         self.assertEqual(rec["players"]["Jason Babin"]["offdef"]["tier"], "Plus")
         self.assertEqual(cov["fallbacks"], [{"player_id": "Nobody In The Database",
@@ -231,7 +244,7 @@ class BuilderHookTests(unittest.TestCase):
                 mock.patch.object(week_inputs, "background_input",
                                   return_value={"team_id": "Denver Broncos", "roster": den}), \
                 mock.patch.object(week_inputs.player_bios, "biographies", return_value={}):
-            return week_inputs.build_package(1, [], [], {}, season)
+            return week_inputs.build_package(1, [], [], {}, season, strength_model=strength.MODEL)
 
     def test_2014_inputs_carry_strength(self):
         package = self.build(2014)
@@ -613,11 +626,28 @@ class ChannelTests(unittest.TestCase):
         mean = lambda ws: sum(w * s for w, s in zip(ws, sacks)) / sum(ws)
         self.assertGreater(mean(weights), mean([1.0] * len(pool)))
         self.assertLess(mean(fp.tuple_weights(pool, -0.03)), mean([1.0] * len(pool)))
-        # A zero shift is the same single randrange as every earlier kernel.
-        import random
-        one, two = random.Random(7), random.Random(7)
-        self.assertIs(fp.draw_tuple(one, pool, 0.0), pool[two.randrange(len(pool))])
-        self.assertEqual(one.random(), two.random())
+        # A zero shift is the same single randrange as every earlier kernel:
+        # a recording stream (no seed) sees exactly one randrange over the
+        # whole pool, and the tuple at that index is returned.
+        class Recording:
+            def __init__(self, index):
+                self.index, self.calls = index, []
+
+            def randrange(self, n):
+                self.calls.append(("randrange", n))
+                return self.index % n
+
+            def random(self):
+                self.calls.append(("random",))
+                return 0.5
+        for index in (0, 17, len(pool) - 1):
+            stream = Recording(index)
+            self.assertIs(fp.draw_tuple(stream, pool, 0.0), pool[index])
+            self.assertEqual(stream.calls, [("randrange", len(pool))])
+        # A shift draws once with random(), never randrange.
+        stream = Recording(0)
+        fp.draw_tuple(stream, pool, 0.03)
+        self.assertEqual(stream.calls, [("random",)])
         self.assertGreater(p0, 0.05)
 
     def test_sack_channel_direction_in_sampled_games(self):
@@ -651,6 +681,37 @@ class SpecialTeamsTests(unittest.TestCase):
         self.assertGreater(drive_model.fg_make_prob_at(50), 0.6)
         self.assertLess(drive_model.fg_make_prob_at(65), 0.4)
 
+    def test_parameters_are_a_per_version_table(self):
+        # Kernel 2014.6 plumbing (B1): the kernel reads its profile's entry;
+        # the honours-production-v3 entry is the module constants above.
+        params = strength.parameters(strength.MODEL)
+        self.assertIs(params, strength.PARAMETERS[strength.MODEL])
+        self.assertEqual(params.model, strength.MODEL)
+        self.assertEqual((params.offense_slope, params.defense_slope, params.offense_centre, params.defense_centre),
+                         (strength.OFFENSE_SLOPE, strength.DEFENSE_SLOPE, strength.OFFENSE_CENTRE,
+                          strength.DEFENSE_CENTRE))
+        self.assertIs(params.terms, strength.TERMS)
+        self.assertEqual((params.sack_shift_clamp, params.int_edge_clamp, params.punter_slope, params.kicker_slope,
+                          params.kick_returner_slope, params.punt_returner_slope, params.fg_prob_floor,
+                          params.fg_prob_ceiling, params.home_edge, params.edge_clamp,
+                          params.legacy_anchor_scale, params.legacy_anchor_centre),
+                         (strength.SACK_SHIFT_CLAMP, strength.INT_EDGE_CLAMP, strength.PUNTER_SLOPE,
+                          strength.KICKER_SLOPE, strength.KICK_RETURNER_SLOPE, strength.PUNT_RETURNER_SLOPE,
+                          strength.FG_PROB_FLOOR, strength.FG_PROB_CEILING, strength.HOME_EDGE, strength.EDGE_CLAMP,
+                          strength.LEGACY_ANCHOR_SCALE, strength.LEGACY_ANCHOR_CENTRE))
+        from runtime.profiles import PROFILES
+        for profile in PROFILES.values():
+            self.assertIn(profile.strength, strength.PARAMETERS)
+        with self.assertRaises(ValueError):
+            strength.parameters("honours-production-v9")
+        # Kernel 2014.6 (B7): the player-state entry is read from the v4
+        # artifact under its pin; its channels and clamps are the same.
+        v1 = strength.parameters(strength.PLAYER_STATE_MODEL)
+        self.assertEqual(v1.model, strength.PLAYER_STATE_MODEL)
+        self.assertEqual((v1.sack_shift_clamp, v1.int_edge_clamp, v1.edge_clamp), (params.sack_shift_clamp,
+                         params.int_edge_clamp, params.edge_clamp))
+        self.assertEqual([t["name"] for t in v1.terms], list(strength.V4_TERM_ORDER))
+
     def test_kicker_term_is_wired_and_inactive(self):
         roster = game_day_roster("A")
         kicker = next(p for p in roster if p.player_id == "A-K1")
@@ -659,12 +720,14 @@ class SpecialTeamsTests(unittest.TestCase):
                                               "deviation": 0.05}}})
         shift, receipt = strength.kicker_adjustment(rec, kicker)
         self.assertEqual((shift, receipt["value"]), (0.0, 2.0))
-        with mock.patch.object(strength, "KICKER_SLOPE", 0.02):
+        # Kernel 2014.6 plumbing (B1): constants live in the per-version table.
+        steep = replace(strength.parameters(), kicker_slope=0.02)
+        self.assertAlmostEqual(strength.kicker_adjustment(rec, kicker, params=steep)[0], 0.04)
+        with mock.patch.dict(strength.PARAMETERS, {strength.MODEL: steep}):
             self.assertAlmostEqual(strength.kicker_adjustment(rec, kicker)[0], 0.04)
         # A punter's record never feeds the kicker term.
         rec = record({"A-K1": {"offdef": None, "special": None, "production": {"tier": "Elite", "value": 2.0, "group": "P", "unit": "special"}}})
-        with mock.patch.object(strength, "KICKER_SLOPE", 0.02):
-            self.assertEqual(strength.kicker_adjustment(rec, kicker)[0], 0.0)
+        self.assertEqual(strength.kicker_adjustment(rec, kicker, params=steep)[0], 0.0)
 
     def test_punter_term_and_the_punt_adjustment(self):
         roster = game_day_roster("A")
@@ -713,9 +776,9 @@ class SpecialTeamsTests(unittest.TestCase):
                                                    "deviation": 4.0}}}})
         self.assertEqual(strength.returner_adjustment(rec, returner, "KR")[0], 0)
         self.assertEqual(strength.returner_adjustment(rec, returner, "PR")[0], 0)
-        with mock.patch.object(strength, "KICK_RETURNER_SLOPE", 1.5):
-            self.assertEqual(strength.returner_adjustment(rec, returner, "KR")[0], 3)
-            self.assertEqual(strength.returner_adjustment(rec, returner, "PR")[0], 0)
+        steep = replace(strength.parameters(), kick_returner_slope=1.5)
+        self.assertEqual(strength.returner_adjustment(rec, returner, "KR", params=steep)[0], 3)
+        self.assertEqual(strength.returner_adjustment(rec, returner, "PR", params=steep)[0], 0)
         kick = {"touchback": False, "next_start": 77, "kick_yards": 65, "return_yards": 22, "enforcement": 0,
                 "outcome": "returned"}
         out = fp.adjust_return(kick, 3)

@@ -20,13 +20,19 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from runtime import injury_model, participation, usage
 from runtime.game_runner import run_game
-from runtime.kernel import TeamInput, resolve_game, validate_result
+from runtime.kernel import DEPTH_ORDER, TeamInput, resolve_game, validate_result
 from local_private_service import local_service
 from support_rosters import game_day_roster
 from synthetic_games import SEED, sample, sample_teams
 
 GAME_SEED = SEED + b"-injury-00011"
 EVENT = "injury-11"
+# Kernel 2014.6 (B9, B9F; U6): a user-controlled club carries its two-point,
+# kickoff and fourth-down blocks. These tests are about the injury pause, so
+# the controlled club delegates all three to the league chart and pauses only
+# for a consequential removal.
+DELEGATED = {"try_policy": {"otherwise": "league"}, "kickoff_policy": {"otherwise": "league"},
+             "fourth_down_policy": {"otherwise": "league"}}
 PARTICIPANT_FIELDS = ("passer", "runner", "target", "blocker", "tackler", "assist_tackler",
                       "kicker", "punter", "returner", "cover_player", "long_snapper")
 
@@ -224,7 +230,7 @@ class PauseAndContinuationTests(unittest.TestCase):
         spare = replace(a.roster[0], player_id="A-WR9", position="WR", depth=9)
         roster = a.roster + (spare,)
         cls.a = team_with(a, roster=roster, active=tuple(p.player_id for p in a.roster),
-                          rotation_plan=({"player_id": "A-WR1", "featured": True},))
+                          rotation_plan=({"player_id": "A-WR1", "featured": True},), **DELEGATED)
         base = resolve_game(cls.a, cls.b, seed=GAME_SEED, event_id=EVENT)
         cls.d = drives_of(base, "A")[0]
         cls.onsets = {**force(cls.d, "A-QB1"), **force(cls.d, "A-WR1")}
@@ -256,10 +262,16 @@ class PauseAndContinuationTests(unittest.TestCase):
         self.assertTrue(all(i["drive"] <= self.d for i in partial["injuries"]))
         pause = partial["pauses"][-1]
         slots = {d["slot"]: d for d in pause["decisions"]}
+        # Kernel 2014.6 (B15, W2c): off-field players of the family first (the
+        # receivers not in the drive's personnel), then on-field
+        # reassignments, then the sentinel that keeps the depth order, which
+        # is the default; the default entrant is shown.
         self.assertEqual(slots["A-QB1"]["reason"], "quarterback")
-        self.assertEqual(slots["A-QB1"]["eligible"], ["A-QB2"])
+        self.assertEqual(slots["A-QB1"]["eligible"], ["A-QB2", DEPTH_ORDER])
+        self.assertEqual((slots["A-QB1"]["default"], slots["A-QB1"]["default_entrant"]), (DEPTH_ORDER, "A-QB2"))
         self.assertEqual(slots["A-WR1"]["reason"], "featured_role")
-        self.assertEqual(slots["A-WR1"]["eligible"], ["A-WR2", "A-WR3", "A-WR4", "A-WR5"])
+        self.assertEqual(slots["A-WR1"]["eligible"], ["A-WR4", "A-WR5", "A-WR2", "A-WR3", DEPTH_ORDER])
+        self.assertEqual((slots["A-WR1"]["default"], slots["A-WR1"]["default_entrant"]), (DEPTH_ORDER, "A-WR4"))
         self.assertIn("A-QB1", pause["availability"]["A"]["removed"])
         self.assertNotIn("A-WR9", json.dumps(pause["decisions"]))
 
@@ -389,12 +401,15 @@ class ProductionRunnerPauseTests(unittest.TestCase):
     """A natural pause and resume through run_game and the private closure.
 
     The local private store's seed is pinned per test (local_private_service)
-    so each run reproduces; "398" is the store seed under which the search
-    game ``pause-search-1`` once failed validation (a real 2012 kneel-then-punt
+    so each run reproduces. Under store seed "398" the search game
+    ``pause-search-1`` once failed validation (a real 2012 kneel-then-punt
     tuple admitted at a start spot where its free snap had to gain a first
-    down: chains.chain_feasible, October 2026)."""
+    down: chains.chain_feasible, October 2026); since kernel 2014.6 batch B1
+    that regression is the forced-tuple fixture
+    tests/test_chains.py SeedSweepRegressionTests.test_kneel_then_punt_gate_keeps_the_tuple_out,
+    and the seed only names this module's first natural-pause search."""
 
-    REGRESSION_SEED = "398"
+    PAUSE_SEED = "398"
     SWEEP_SEEDS = ("0", "8", "17")
 
     def setUp(self):
@@ -402,7 +417,8 @@ class ProductionRunnerPauseTests(unittest.TestCase):
         roster = tuple(p for p in game_day_roster("A") if p.player_id != "A-WR5")
         featured = ("A-QB1", "A-RB1", "A-WR1", "A-WR2", "A-TE1", "A-CB1", "A-S1", "A-OLB1", "A-DE1")
         self.home = TeamInput("A", tuple(p.player_id for p in roster), roster=roster,
-                              rotation_plan=tuple({"player_id": pid, "featured": True} for pid in featured))
+                              rotation_plan=tuple({"player_id": pid, "featured": True} for pid in featured),
+                              **DELEGATED)
         b_roster = tuple(p for p in game_day_roster("B") if p.player_id != "B-WR5")
         self.away = TeamInput("B", tuple(p.player_id for p in b_roster), roster=b_roster)
 
@@ -455,26 +471,7 @@ class ProductionRunnerPauseTests(unittest.TestCase):
         self.assertEqual(len(resumed["pauses"]), len(decisions))
 
     def test_run_game_pauses_and_resumes(self):
-        self.check(*self.pause_and_resume(self.REGRESSION_SEED))
-
-    def test_regression_seed_search_game_validates(self):
-        # Under store seed 398 the second search game (an ordinary terminated
-        # user-controlled game, no pause) raised ``down_distance_chain_break:
-        # drive 23 punts before fourth down``: a 3-snap punt tuple (run,
-        # kneel -2, kneel -1, punt) replayed from the 94 with net 8 forced an
-        # 11-yard run, a first down and a third-down punt. The feasibility
-        # gate now counts the kneel yards, so the tuple is never selected.
-        client = self.client(self.REGRESSION_SEED)
-        self.run_game(client, "pause-search-0")
-        result = self.run_game(client, "pause-search-1")
-        self.assertTrue(result["terminated"])
-        self.assertEqual(validate_result(result), [])
-        self.assertEqual(result["diagnostics"].get("chain_layout_failed", 0), 0)
-        self.assertEqual(result["diagnostics"].get("chain_layout_resample_exhausted", 0), 0)
-        for p in result["possessions"]:
-            if p["category"] == "punt" and any(r["drive"] == p["number"] and r.get("play_type") in ("pass", "run")
-                                               for r in result["play_ledger"]):
-                self.assertEqual(p["fourth_down"]["down"], 4, p["number"])
+        self.check(*self.pause_and_resume(self.PAUSE_SEED))
 
     def test_seed_sweep_keeps_the_invariants_through_pause_and_continue(self):
         for label in self.SWEEP_SEEDS:

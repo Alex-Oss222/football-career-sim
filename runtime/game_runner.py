@@ -5,10 +5,14 @@ import inspect
 import re
 
 from . import KERNEL_VERSION
-from .kernel import TeamInput, resolve_game, validate_result
+from .kernel import TeamInput, decision_block_errors, installed_profile, outcome_policies, resolve_game, validate_result
+from . import scoring_decisions
+from . import fourth_down
 from .packets import canonical
 from .private_client import Client
 from .player_evidence import normalize_players, serialize_roster
+from . import player_state
+from .strength import PLAYER_STATE_MODEL
 from .play_detail import canonical_call_sheet
 from .rotation import plan_errors
 from .usage import lineup_errors
@@ -25,7 +29,10 @@ def _team_packet(team):
     # Availability and rotation are football inputs; protagonist labels are not.
     data["roster"] = serialize_roster(normalize_players(team))
     data["offensive_call_sheet"] = canonical_call_sheet(team)
-    return data
+    # Kernel 2014.6 batch B9: the decision policies through the same stripper
+    # as the kernel's packet (absent when None); batch B9F's fourth-down block
+    # commits its named calls by their substance on the raw sheet.
+    return outcome_policies(data, getattr(team, "offensive_call_sheet", ()) or ())
 
 
 def build_game_packet(event_id, snapshot, home, away, *, venue="home", weather="normal",
@@ -40,6 +47,20 @@ def build_game_packet(event_id, snapshot, home, away, *, venue="home", weather="
         raise ValueError("current snapshot digest required")
     if home.team_id == away.team_id:
         raise ValueError("game teams must differ")
+    for team in (home, away):
+        # Kernel 2014.6 (B7): a player-state record commits its public states
+        # plus the league year's bound manifest digest, commitment and latent
+        # keys; the manifest must be the pinned one and the binding present.
+        record = team.strength
+        if record and record.get("model") == PLAYER_STATE_MODEL:
+            for field in ("league_year", "manifest_sha256", "commitment", "latent_keys"):
+                if field not in record:
+                    raise ValueError(f"{team.team_id} player-state record lacks {field}")
+            bound = player_state.require_binding(record["league_year"])
+            if record["manifest_sha256"] != bound["manifest_sha256"] or record["commitment"] != bound["commitment"]:
+                raise ValueError(f"{team.team_id} player-state record names another binding than the committed one")
+            if any("latent_value" in p or "drawn_tier" in p for p in record.get("players", {}).values()):
+                raise ValueError(f"{team.team_id} TeamInput carries drawn values before closure")
     if not normalize_players(home) or not normalize_players(away):
         raise ValueError("each club requires an available, roster-bound participant")
     for team in (home, away):
@@ -71,6 +92,29 @@ def build_game_packet(event_id, snapshot, home, away, *, venue="home", weather="
         rotation_faults = plan_errors(team, normalize_players(team), game_type)
         if rotation_faults:
             raise ValueError(f"{team.team_id} rotation plan: " + "; ".join(rotation_faults))
+        # Kernel 2014.6 batch B9 (R8, R9): a malformed decision block, or one
+        # in a preseason or Pro Bowl game, fails closed before the private
+        # event is journaled.
+        for field, kind in (("try_policy", "two_point"), ("kickoff_policy", "kickoff")):
+            block = getattr(team, field, None)
+            if block is None:
+                continue
+            if game_type in ("preseason", "pro_bowl"):
+                raise ValueError(f"{team.team_id} carries a {kind} decision block in a {game_type} game")
+            faults = scoring_decisions.policy_errors(block, kind)
+            if faults:
+                raise ValueError(f"{team.team_id} decision block: " + "; ".join(faults))
+        # Kernel 2014.6 batch B9F: a malformed fourth-down block, or one in a
+        # preseason or Pro Bowl game, fails closed before the private event is
+        # journaled.
+        block = getattr(team, "fourth_down_policy", None)
+        if block is not None:
+            if game_type in ("preseason", "pro_bowl"):
+                raise ValueError(f"{team.team_id} carries a fourth_down decision block in a {game_type} game")
+            faults = fourth_down.policy_errors(block, fourth_down.sheet_call_names(
+                getattr(team, "offensive_call_sheet", ()) or ()))
+            if faults:
+                raise ValueError(f"{team.team_id} decision block: " + "; ".join(faults))
     packet = {
         "procedure": KERNEL_VERSION, "event_id": event_id, "snapshot": snapshot,
         "home": _team_packet(home), "away": _team_packet(away), "venue": venue,
@@ -89,6 +133,24 @@ def _entropy_from_ref(result_ref):
     try: raw = bytes.fromhex(result_ref)
     except ValueError as exc: raise ValueError("private runtime returned invalid opaque event reference") from exc
     return hashlib.sha256(ENTROPY_DOMAIN + raw).digest()
+
+
+def fetch_latent(client, event_id, home, away):
+    """(home, away) with their drawn player states applied, fetched from the
+    private service for a journaled event; unchanged, with no service call,
+    when neither club carries a player-state record."""
+    keys = player_state.keys_of_inputs(home, away)
+    if not keys:
+        return home, away
+    records = [t.strength for t in (home, away) if t.strength and t.strength.get("model") == PLAYER_STATE_MODEL]
+    years = {int(r["league_year"]) for r in records}
+    commitments = {r["commitment"] for r in records}
+    if len(years) != 1 or len(commitments) != 1:
+        raise ValueError("the two clubs' player-state records name different bindings")
+    data = client.latent_draws(event_id, next(iter(years)), keys, player_state.roster_sha256(keys))
+    if data.get("commitment") != next(iter(commitments)):
+        raise ValueError("private runtime served draws under another commitment than the packet's")
+    return player_state.apply_latent(home, data["draws"]), player_state.apply_latent(away, data["draws"])
 
 
 def run_game(home: TeamInput, away: TeamInput, *, event_id, snapshot,
@@ -116,11 +178,25 @@ def run_game(home: TeamInput, away: TeamInput, *, event_id, snapshot,
     client = client or Client(snapshot=snapshot)
     if client.snapshot != snapshot:
         raise ValueError("client and game snapshot differ")
+    # Kernel 2014.6 batch B9 (R8, R9, U6): every decision-block refusal the
+    # kernel would raise (a kind the installed profile does not decide, a
+    # block in a preseason or Pro Bowl game, a malformed block, an
+    # otherwise: ask no controlling coach can answer, the controlled club's
+    # missing block) fails closed here, before the private event is
+    # journaled, so no journaled event is left without a result.
+    faults = decision_block_errors(home, away, profile=installed_profile(), game_type=game_type,
+                                   management_mode=management_mode, controlled_team=controlled_team)
+    if faults:
+        raise ValueError("; ".join(faults))
     packet = build_game_packet(event_id, snapshot, home, away, venue=venue,
                                weather=weather, game_type=game_type,
                                management_mode=management_mode, game_date=game_date)
     result_ref = client.close_event(packet)  # durable closure precedes draw
     entropy = _entropy_from_ref(result_ref)
+    # Kernel 2014.6 (B7): the player-state draws are fetched only after the
+    # event is journaled, applied to deep copies of the inputs, and never
+    # enter the packet. Inputs without a player-state record make no call.
+    home, away = fetch_latent(client, event_id, home, away)
     result = resolve_game(home, away, seed=entropy, event_id=event_id, venue=venue,
                           weather=weather, game_type=game_type,
                           management_mode=management_mode, controlled_team=controlled_team,
@@ -154,4 +230,13 @@ def architecture_errors():
     source = inspect.getsource(run_game)
     if source.find("close_event(") > source.find("resolve_game("):
         errors.append("kernel can run before private event closure")
+    # Kernel 2014.6 plumbing (batch B1): production resolves only with the
+    # profile of runtime.KERNEL_VERSION. The kernel's private test hooks
+    # (_test_onsets, _test_profile, any later _test_*) are for tests and
+    # acceptance scripts; the production runner may neither accept nor pass one.
+    hooks = sorted(name for name in params if name.startswith("_test"))
+    if hooks:
+        errors.append("production runner accepts a test hook (%s)" % ", ".join(hooks))
+    if "_test_" in source:
+        errors.append("production runner passes a test hook to the kernel")
     return errors

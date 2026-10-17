@@ -292,7 +292,7 @@ class FieldPositionTests(unittest.TestCase):
                     points[d["team"]] += 6
                 if d["category"] == "safety":
                     points["B" if d["team"] == "A" else "A"] += 2
-            return {"final_score": points, "game_type": "regular",
+            return {"final_score": points, "game_type": "regular", "kernel_version": "2013.7",
                     "drives": [[d.get(f) for f in DRIVE_SUMMARY_FIELDS] for d in drives]}
 
         def classes(res):

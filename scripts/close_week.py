@@ -22,6 +22,15 @@ of the slate or any receipt closes. Stone answers with a JSON file
 with --continue ANSWER.json: the same packet closes through the same private
 event reference, so the prefix and the frozen injury reproduce, and the
 whole slate then closes as one batch. Background games stay autonomous.
+
+Kernel 2014.6 (batch B9F): the same pause carries Stone's live decisions
+(the pause's trigger): a Jacksonville fourth down ("fourth_down", prepared
+before the third-down snap whenever possible; answer {"choices":
+{"fourth_down": "go"|"field_goal"|"punt", "call": "<a call of the matching
+menu, with go>"}}), and, when the frozen sheet's block says otherwise: ask, a
+two-point try ("two_point", {"choices": {"try": "go"|"kick"}}) or an onside
+kick ("onside", {"choices": {"kickoff": "onside"|"deep"}}). The paused record
+shows only what the staff supply, never a probability.
 """
 from __future__ import annotations
 
@@ -75,22 +84,35 @@ def controlled_team_id(game):
 
 
 def load_answer(path):
-    """Stone's substitution answer: {"choices": {slot: replacement}, "token"?: str}."""
+    """Stone's answer: {"choices": {slot: answer}, "token"?: str}: a removed
+    player's replacement, or (kernel 2014.6) a fourth-down, two-point or
+    onside decision by its slot; the kernel validates it against the pause."""
     data = json.loads(Path(path).read_text(encoding="utf-8"))
     if not isinstance(data, dict) or not isinstance(data.get("choices"), dict) or not data["choices"]:
-        raise ValueError("answer file must hold a nonempty 'choices' object {removed player: replacement}")
+        raise ValueError("answer file must hold a nonempty 'choices' object {slot: answer} (a removed player's "
+                         "replacement, or fourth_down, call, try or kickoff)")
     if "token" in data and not isinstance(data["token"], str):
         raise ValueError("answer token must be a string")
     return data
 
 
-def read_paused(record_path, event_id):
+def read_paused(record_path, event_id, kernel_version=None):
+    """The week's paused record for this event, or None. Kernel 2014.6
+    plumbing (batch B1): a pause is continued only by the kernel that made
+    it. A waiting pause recorded under another kernel version is refused
+    (with or without --continue): resuming would replay its prefix with
+    different draws, so the recorded state could not reproduce."""
     if not record_path.exists():
         return None
     record = json.loads(record_path.read_text(encoding="utf-8"))
     if record.get("event_id") != event_id:
         raise ValueError("paused record %s belongs to event %s, not %s"
                          % (record_path, record.get("event_id"), event_id))
+    if kernel_version is None:
+        from runtime import KERNEL_VERSION as kernel_version
+    if record.get("status") == "paused" and record.get("kernel_version") != kernel_version:
+        raise ValueError("paused record %s was made by kernel %s; the live kernel is %s, so --continue "
+                         "cannot resume it" % (record_path, record.get("kernel_version"), kernel_version))
     return record
 
 
@@ -122,25 +144,93 @@ def write_paused(record_path, package, game, partial, decisions):
     return record
 
 
+TRIGGER_TEXT = {"consequential_substitution": "consequential substitution", "fourth_down": "fourth down",
+                "two_point": "try after touchdown", "onside": "kickoff"}
+ANSWER_EXAMPLE = {"fourth_down": '{"choices": {"fourth_down": "go" | "field_goal" | "punt", "call": "<call>"}}',
+                  "two_point": '{"choices": {"try": "go" | "kick"}}',
+                  "onside": '{"choices": {"kickoff": "onside" | "deep"}}'}
+ORDINAL = {1: "1st", 2: "2nd", 3: "3rd", 4: "4th"}
+
+
+def _fourth_down_lines(pause):
+    """Skalaski's and Tice's information as the pause carries it."""
+    sit, kick, conv = pause["situation"], pause["kicking"], pause["conversion_call"]
+    distance = "goal" if sit.get("goal_to_go") else sit.get("ydstogo")
+    timing = ("prepared before the third-down snap" if pause.get("timing") == "before_third_down"
+              else "at the fourth-down snap")
+    lines = ["- %s: %s and %s at the %s (%s yards to the goal line)" % (
+                 timing, ORDINAL.get(sit.get("down"), sit.get("down")), distance, sit.get("field_position"),
+                 sit.get("yardline_100")),
+             "- Skalaski: score %s, clock %s %s, timeouts %s (held at %s)" % (
+                 json.dumps(pause.get("score"), sort_keys=True), pause.get("period"), pause.get("clock"),
+                 json.dumps(pause.get("timeouts"), sort_keys=True), pause.get("timeouts_as_of")),
+             "- Skalaski: field goal of %s yards from %s; kicker %s, punter %s; venue %s (home %s), weather %s" % (
+                 kick.get("field_goal_distance"), kick.get("from"), kick.get("kicker"), kick.get("punter"),
+                 kick.get("venue"), kick.get("home"), kick.get("weather")),
+             "- Tice: prepared conversion call %s; matching menu %s: %s" % (
+                 conv.get("prepared") or "(none named on the frozen sheet)",
+                 conv.get("menu") or "(the sheet declares no menus; every call)",
+                 ", ".join(conv.get("calls") or []) or "(no call on the sheet)")]
+    so_far = pause.get("drive_so_far") or {}
+    snaps = so_far.get("snaps") or []
+    scrimmage = sum(s.get("yards", 0) for s in snaps)
+    if "penalties" not in so_far:
+        lines.append("- the drive so far: from %s yards out, %d snaps, %d yards" % (
+            so_far.get("start_yardline_100"), len(snaps), scrimmage))
+        return lines
+    # Kernel 2014.6 batch B11 review fix (October 16, 2026): scrimmage and
+    # penalty yards apart, adding to the start less the spot shown.
+    lines.append("- the drive so far: from %s yards out, %d snaps, %d scrimmage yards, %d penalty yards" % (
+        so_far.get("start_yardline_100"), len(snaps), scrimmage, so_far.get("penalty_yards", 0)))
+    for entry in so_far["penalties"]:
+        lines.append("  - after %d snaps: %s on the %s, %s, %+d yards%s" % (
+            entry.get("after_snaps", 0), entry.get("type"), entry.get("fouled_by"), entry.get("status"),
+            entry.get("yards", 0), ", first down" if entry.get("first_down") else ""))
+    return lines
+
+
+def default_detail(decision):
+    """Kernel 2014.6 batch B15 (W2c): what the depth_order default does (the
+    entrant and the slot moves of the autonomous rule); empty for a pause
+    record without them."""
+    if "default_entrant" not in decision:
+        return ""
+    moves = ", ".join("%s %s to %s" % (m["player"], m["from"], m["to"]) for m in decision.get("default_moves") or ())
+    return " (enters: %s; moves: %s)" % (decision.get("default_entrant") or "none", moves or "none")
+
+
 def describe_pause(record, record_path, week, season):
     pause = record["pause"]
-    lines = ["WEEK %d PAUSED: %s, drive %s, %s %s, score %s"
-             % (week, record["matchup"], pause.get("drive"), pause.get("period"), pause.get("clock"),
-                json.dumps(pause.get("score"), sort_keys=True))]
+    trigger = pause.get("trigger", "consequential_substitution")
+    lines = ["WEEK %d PAUSED (%s): %s, drive %s, %s %s, score %s"
+             % (week, TRIGGER_TEXT.get(trigger, trigger), record["matchup"], pause.get("drive"), pause.get("period"),
+                pause.get("clock"), json.dumps(pause.get("score"), sort_keys=True))]
+    if trigger == "fourth_down":
+        lines += _fourth_down_lines(pause)
+    elif trigger in ("two_point", "onside"):
+        lines.append("- situation %s" % json.dumps(pause.get("situation"), sort_keys=True))
     for injury in pause.get("injuries", []):
         lines.append("- removed: %s (%s; %s, %s, restriction %s)"
                      % (injury.get("player"), injury.get("team"), injury.get("injury_class"),
                         injury.get("severity"), injury.get("restriction")))
     for decision in pause.get("decisions", []):
-        lines.append("- replace %s (%s; %s): eligible %s; depth default %s"
-                     % (decision["slot"], decision.get("group"), decision.get("reason"),
-                        ", ".join(decision["eligible"]), decision.get("default")))
+        if trigger == "consequential_substitution":
+            lines.append("- replace %s (%s; %s): eligible %s; depth default %s%s"
+                         % (decision["slot"], decision.get("group"), decision.get("reason"),
+                            ", ".join(decision["eligible"]), decision.get("default"), default_detail(decision)))
+        else:
+            lines.append("- %s: one of %s%s" % (decision["slot"], ", ".join(decision["eligible"]),
+                                                 " (with %s)" % decision["with"] if decision.get("with") else ""))
     lines.append("- continuation token %s... (paused record: %s)"
                  % (pause["continuation_token"][:16], record_path))
-    lines.append("Answer with a JSON file {\"choices\": {%s}} and rerun: "
+    if trigger in ANSWER_EXAMPLE:
+        example = ANSWER_EXAMPLE[trigger]
+    else:
+        example = '{"choices": {%s}}' % ", ".join('"%s": "<replacement>"' % d["slot"]
+                                                  for d in pause.get("decisions", []))
+    lines.append("Answer with a JSON file %s and rerun: "
                  "python scripts/close_week.py %d --season %d --close --continue ANSWER.json"
-                 % (", ".join('"%s": "<replacement>"' % d["slot"] for d in pause.get("decisions", [])),
-                    week, season))
+                 % (example, week, season))
     return "\n".join(lines)
 
 
@@ -236,6 +326,15 @@ def rails_package_errors(package, week, season, root=ROOT):
         errors.append("package rails cutoffs differ from the schedule's")
     if meta.get("manifest_sha256") != rails.sha256_file(rails.data_dir(season, root) / "manifest.json"):
         errors.append("in-season rails data changed after the package was frozen")
+    db_meta = meta.get("db_slots") or {}
+    if db_meta.get("applied"):
+        # Review fix (October 16, 2026): the defensive-back family table the
+        # package's labels came from (batch B15, W2b).
+        from runtime.seasons import SeasonPaths
+        table = SeasonPaths(season, root).db_families
+        if not table.is_file() or db_meta.get("families_sha256") != rails.sha256_file(table):
+            errors.append("the defensive-back family table changed after the package was frozen "
+                          "(or the package does not record it); rebuild with build_week_inputs.py")
     coverage = rails.week_cutoff_coverage_error(data, max(cutoffs.values()), week)
     if coverage:
         errors.append(coverage)
@@ -248,7 +347,8 @@ def main():
     parser.add_argument("--close", action="store_true", help="actually close the events")
     parser.add_argument("--season", type=int, required=True)
     parser.add_argument("--continue", dest="answer", metavar="ANSWER.json",
-                        help="Stone's substitution answer for a paused Jacksonville game")
+                        help="Stone's answer for a paused Jacksonville game (a substitution, or a "
+                             "fourth-down, two-point or onside decision)")
     args = parser.parse_args()
     paths = SeasonPaths(args.season, ROOT)
     try:
@@ -295,6 +395,11 @@ def main():
         return PAUSED
 
     write_receipts(package, paths, results, args.season)
+    if args.season != 2013:
+        # Kernel 2014.6 (B7): the week's participation observables from the
+        # frozen package (runtime.observables); records only.
+        from runtime import observables
+        observables.write(observables.from_package(package, observables.season_identities(args.season, ROOT)), ROOT)
     subprocess.run([sys.executable, str(ROOT / "scripts/render_season_stats.py"), str(args.season),
                     "--team", PROTAGONIST], check=True)
     subprocess.run([sys.executable, str(ROOT / "scripts/render_standings.py"), str(args.season)], check=True)

@@ -330,6 +330,30 @@ class InjuryRuleTests(unittest.TestCase):
         self.assertEqual(len(after.clubs["AAA"]["active"]), 53)
         self.assertEqual(rails.emergency_events(after, "BBB", 5, {}, date(2014, 10, 4), depth_library.available), [])
 
+    def test_u7_pairs_the_promotion_with_the_longest_injured_player_at_any_group(self):
+        # Kernel 2014.6 batch B15 (U7, option (i)): AAA at 53 is short of
+        # quarterbacks with none of them injured (all three deferred) and two
+        # branch-injured receivers; the dated practice-squad signing is paired
+        # with the reserve placement of the receiver projected out longest.
+        library, base, manifest = league(ps={"AAA": [ps_entry("80-0000007", "Squad QB", "QB")]})
+        st = state([], library, base, manifest)
+        qbs = [p["player_id"] for p in st.clubs["AAA"]["active"] if p["group"] == "QB"]
+        out = {pid("AAA", "WR", 5): date(2014, 11, 1), pid("AAA", "WR", 6): date(2014, 12, 20)}
+        events = rails.emergency_events(st, "AAA", 5, out, date(2014, 10, 4), depth_library.available, excluded=qbs)
+        self.assertEqual([e["player_id"] for e in events], ["Squad QB"])
+        self.assertEqual(events[0]["reserve_uid"], uid("AAA", "WR", 6))
+        self.assertEqual(events[0]["gate_date"], "2014-10-04")
+        after = state([], library, base, manifest, events=events)
+        self.assertEqual(after.errors, [])
+        self.assertIn("Squad QB", actives(after, "AAA"))
+        self.assertIn(pid("AAA", "WR", 6), [p["player_id"] for p in after.clubs["AAA"]["reserve"]])
+        self.assertEqual(len(after.clubs["AAA"]["active"]), 53)
+        # An injured player at the short group is still placed first.
+        out[pid("AAA", "QB", 1)] = date(2014, 10, 20)
+        events = rails.emergency_events(st, "AAA", 5, out, date(2014, 10, 4), depth_library.available,
+                                        excluded=qbs[1:])
+        self.assertEqual(events[0]["reserve_uid"], uid("AAA", "QB", 1))
+
 
 # ---- Jacksonville control, unplaced former Jaguars, retirements -------------------------
 
@@ -890,9 +914,34 @@ class CommittedDataTests(unittest.TestCase):
                     seen[p["uid"]] = code
 
     def test_the_week_5_package_joins_every_club_by_gsis(self):
+        # Kernel 2014.6 release (B18): the installed kernel's build, on the
+        # player-state model under a stand-in for the 2014 binding (the bind
+        # follows the merge), with league delegations standing in for Stone's
+        # Week 5 two-point and kickoff rules and his recorded defensive-back
+        # roles (Bouye nickel, Ball outside reserve) on a copy of the chart.
+        from runtime import player_state
         receipts = load_receipts(SeasonPaths(2014).receipts)
         sheet = json.loads((SeasonPaths(2014).week_folder(4) / "call_sheet.json").read_text())["offensive_call_sheet"]
-        package = week_inputs.build_package(5, receipts, sheet, build_week_inputs.AVERAGE_ANCHORS, 2014)
+        stand_in = {"schema": player_state.BINDING_SCHEMA, "league_year": 2014,
+                    "manifest_sha256": player_state.manifest_sha256(), "commitment": "0" * 64}
+        decisions = {"two_point": {"otherwise": "league"}, "kickoff": {"otherwise": "league"}}
+        chart_data = json.loads(SeasonPaths(2014).depth_chart.read_text(encoding="utf-8"))
+        chart_data["roles"].setdefault("A.J. Bouye", []).append("nickel")
+        chart_data["roles"].setdefault("Alan Ball", []).append("outside_reserve")
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        chart = Path(tmp.name) / "chart.json"
+        chart.write_text(json.dumps(chart_data), encoding="utf-8")
+
+        class Paths(SeasonPaths):
+            @property
+            def depth_chart(self):
+                return chart if self.year == 2014 else super().depth_chart
+
+        with mock.patch.object(week_inputs, "SeasonPaths", Paths), \
+                mock.patch.object(player_state, "binding", return_value=stand_in):
+            package = week_inputs.build_package(5, receipts, sheet, build_week_inputs.AVERAGE_ANCHORS, 2014,
+                                                decisions=decisions)
         self.assertEqual(len(package["strength_coverage"]), 30)
         for team, cov in package["strength_coverage"].items():
             self.assertFalse([f for f in cov["fallbacks"] if f["reason"].startswith("identity")], team)

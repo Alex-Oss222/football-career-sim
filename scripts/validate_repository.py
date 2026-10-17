@@ -405,6 +405,23 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append(f'Call sheets cannot be checked: {exc}')
 
+    # Kernel 2014.6 batch B9 (R8, R9; U6): a committed call sheet's decisions
+    # block (Stone's standing two-point and onside rules, or a delegation)
+    # must be well formed: no probability, share or rate key, no unknown key,
+    # an explicit otherwise. A malformed block fails closed here and in the
+    # week build (WEEK_INPUTS: BLOCKED).
+    try:
+        from runtime.scoring_decisions import sheet_errors as decision_errors
+        for sheet_path in sorted((root/'career').glob('20*/**/call_sheet.json')):
+            data = json.loads(sheet_path.read_text())
+            # Batch B9F: a fourth-down block's named calls must be calls of the sheet.
+            from runtime.fourth_down import sheet_call_names
+            names = sheet_call_names(data.get('offensive_call_sheet') or ())
+            for problem in decision_errors(data.get('decisions'), names):
+                require(False, f'{sheet_path.relative_to(root)}: {problem}')
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append(f'Call sheet decision blocks cannot be checked: {exc}')
+
     # Prepared 2014 storage is legitimate, but future/foreign receipts are not.
     try:
         from runtime.seasons import SeasonPaths, game_release_errors, require_receipt_season
@@ -416,7 +433,15 @@ def validate(root=ROOT):
         ids = [r['event_id'] for r in regular + playoff]
         require(len(ids) == len(set(ids)), '2014 receipts contain duplicate event identities')
         if regular or playoff:
-            require(not game_release_errors(2014, root), '2014 receipts exist before season release acceptance')
+            # Kernel 2014.6 release (Stone, October 17, 2026, "A: one PR"):
+            # each committed receipt is judged by the release gates that
+            # apply to the kernel that produced it, so the 2014.4 and 2014.5
+            # receipts are not judged by the player_state gate that starts at
+            # 2014.6. A new game still fails closed on every gate of the
+            # installed kernel (require_game_release, check_game_readiness).
+            for kernel in sorted({r.get('kernel_version') or '' for r in regular + playoff}):
+                require(not game_release_errors(2014, root, receipt_kernel=kernel or None),
+                        '2014 receipts exist before season release acceptance')
             for receipt in regular + playoff:
                 for team, score in receipt['final_score'].items():
                     require(receipt['team_stats'][team]['points'] == score,
@@ -447,7 +472,8 @@ def validate(root=ROOT):
         require(len({r['event_id'] for r in preseason}) == len(preseason), '2014 preseason receipts contain duplicate event identities')
         if preseason:
             for receipt in preseason:
-                require(not game_release_errors(2014, root, preseason=int(receipt.get('preseason_game') or 0) or None),
+                require(not game_release_errors(2014, root, preseason=int(receipt.get('preseason_game') or 0) or None,
+                                                receipt_kernel=receipt.get('kernel_version') or None),
                         '2014 preseason receipts exist before season release acceptance')
             fixtures = {g['game_id'] for g in paths.preseason_games()}
             for receipt in preseason:
@@ -464,6 +490,17 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append('2014 season records invalid: ' + str(exc))
 
+    # Kernel 2014.6 (batch B7) privacy check: under the player-state model
+    # the drawn values are hidden, so no receipt, paused record or results
+    # file of kernel 2014.6 or later may carry a possession strength block,
+    # and no attribution tier appears outside library/data (the model files
+    # themselves are the only legitimate holders).
+    try:
+        from runtime.privacy import privacy_errors
+        errors.extend(privacy_errors(root))
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append('player-state privacy check failed: ' + str(exc))
+
     # In-season roster rails (library/2014_inseason_rails.md): the committed
     # moves stay behind the master clock, keep their recorded hashes and
     # stripped forms, and every closed week from the effective week has a
@@ -473,6 +510,10 @@ def validate(root=ROOT):
         from scripts.render_inseason_rails import check as check_inseason_pages
         errors.extend(inseason_rails.data_errors(2014, current_date, root))
         errors.extend(check_inseason_pages(2014, root))
+        # Kernel 2014.6 batch B15 review fix (October 16, 2026): the
+        # defensive-back family table is rebuilt whenever the rails grow.
+        from runtime.depth_library import db_families_errors
+        errors.extend(db_families_errors(2014, root))
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append('2014 in-season rails invalid: ' + str(exc))
 

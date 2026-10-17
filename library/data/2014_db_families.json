@@ -1,0 +1,3681 @@
+{
+ "builder": "scripts/research/build_2014_db_families.py",
+ "effective_from_week": 5,
+ "nickel": {
+  "TB": [
+   "00-0029087"
+  ]
+ },
+ "outside_reserve": {},
+ "players": {
+  "00-0018227": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Charles Woodson",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0020840": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Ryan Clark",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0021891": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Ivan Taylor",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0022045": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Terence Newman",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0022080": {
+   "basis": "chart_slot",
+   "chart_slot": "CB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Rashean Mathis",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0022119": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Troy Polamalu",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0022123": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Charles Tillman",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 2
+  },
+  "00-0022247": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Mike Adams (IND)",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0022341": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "George Wilson",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0022900": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Will Allen",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0022923": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "DeAngelo Hall",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 3
+  },
+  "00-0023013": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Brandon Browner",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0023287": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Jim Leonhard",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0023441": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Adam Jones",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0023443": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Antrel Rolle",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0023444": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Carlos Rogers",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0023495": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Kelvin Hayden",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 1
+  },
+  "00-0023918": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Jarrett Bush",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0024061": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Tramon Williams",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0024183": {
+   "basis": "chart_slot",
+   "chart_slot": "CB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Brent Grimes",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0024223": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Donte Whitner",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0024234": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Antonio Cromartie",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0024239": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Johnathan Joseph",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0024257": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Danieal Manning",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0024258": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Roman Harper",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0024269": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Bernard Pollard",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0024273": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Richard Marshall",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0024277": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Tim Jennings",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0024360": {
+   "basis": "chart_slot",
+   "chart_slot": "S1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Dawan Landry",
+   "position": "S",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0024421": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Antoine Bethea",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0024429": {
+   "basis": "chart_slot",
+   "chart_slot": "CB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Cortland Finnegan",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0024796": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Craig Dahl",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0025393": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "LaRon Landry",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0025401": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Darrelle Revis",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0025405": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Leon Hall",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0025406": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Michael Griffin",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0025408": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Reggie Nelson",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0025411": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Brandon Meriweather",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0025424": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Eric Weddle",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0025442": {
+   "basis": "chart_slot",
+   "chart_slot": "CB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Josh Wilson",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0025453": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Usama Young",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0025513": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Dashon Goldson",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0025534": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Tarell Brown",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0025555": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Corey Graham",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0025557": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "William Gay",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0025608": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Trumaine McBride",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0025753": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "James Ihedigbo",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0025902": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Elbert Mack",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0025940": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Husain Abdullah",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0026071": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Kyle Arrington",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026151": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Leodis McKelvin",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026156": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Dominique Rodgers-Cromartie",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026165": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Mike Jenkins",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 1
+  },
+  "00-0026167": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Antoine Cason",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026175": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Brandon Flowers",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026180": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Tracy Porter",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026207": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Charles Godfrey",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026238": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Thomas DeCoud",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0026240": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Tyvon Branch",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 3
+  },
+  "00-0026257": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Quintin Demps",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0026280": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Brandon Carr",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026282": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Zackary Bowman",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026283": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Orlando Scandrick",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026334": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Ryan Mundy",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0026369": {
+   "basis": "chart_slot",
+   "chart_slot": "CB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Cary Williams",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026515": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Tony Carter",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026578": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Colt Anderson",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0026738": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Nate Ness",
+   "position": "S",
+   "weekly_label": "S",
+   "weekly_week": 2
+  },
+  "00-0026758": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "C.J. Spillman",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0026903": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Keenan Lewis",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026910": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Gregory Toler",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026935": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Brice McCain",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026944": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Captain Munnerlyn",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026945": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "E.J. Biggers",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0026990": {
+   "basis": "chart_slot",
+   "chart_slot": "S1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Malcolm Jenkins",
+   "position": "S",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027001": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Vontae Davis",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027009": {
+   "basis": "chart_slot",
+   "chart_slot": "S1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Louis Delmas",
+   "position": "S",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027010": {
+   "basis": "chart_slot",
+   "chart_slot": "S2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Patrick Chung",
+   "position": "S",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027017": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Darius Butler",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027018": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Jairus Byrd",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027023": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Michael Mitchell",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027031": {
+   "basis": "chart_slot",
+   "chart_slot": "S1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "William Moore",
+   "position": "S",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0027037": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Sean Smith",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027041": {
+   "basis": "chart_slot",
+   "chart_slot": "CB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Bradley Fletcher",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027047": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Derek Cox",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0027060": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Lardarius Webb",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027062": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Christopher Owens",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027064": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Jerraud Powers",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027067": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Rashad Johnson",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027081": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Glover Quin",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027083": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "David Bruton",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027124": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Don Carey",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027136": {
+   "basis": "chart_slot",
+   "chart_slot": "CB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Jason McCourty",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027144": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Ellis Lankster",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 3
+  },
+  "00-0027195": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Rafael Bush",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027232": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Sergio Brown",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027235": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Ross Ventrone",
+   "position": "S",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0027244": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Jeromy Miles",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027256": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Darian Stewart",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027290": {
+   "basis": "chart_slot",
+   "chart_slot": "CB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Cassius Vaughn",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027338": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Aaron Berry",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 1
+  },
+  "00-0027375": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Tramaine Brock",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027378": {
+   "basis": "chart_slot",
+   "chart_slot": "S2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Chris Maragos",
+   "position": "S",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027416": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Barry Church",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0027422": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Danny McCray",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027440": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Sam Shields",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027503": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Josh Gordy",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027539": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Anthony Levine",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0027547": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Marcus Sherels",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027610": {
+   "basis": "chart_slot",
+   "chart_slot": "CB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Phillip Adams",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027647": {
+   "basis": "chart_slot",
+   "chart_slot": "S1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Devin McCourty",
+   "position": "S",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0027649": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Chris Cook",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027652": {
+   "basis": "chart_slot",
+   "chart_slot": "S1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Nate Allen",
+   "position": "S",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0027653": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "T.J. Ward",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0027660": {
+   "basis": "chart_slot",
+   "chart_slot": "CB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Javier Arenas",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027676": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Morgan Burnett",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0027680": {
+   "basis": "chart_slot",
+   "chart_slot": "SS3",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Major Wright",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0027710": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Darrell Stuckey",
+   "position": "FS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0027711": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Walter Thurmond",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 2
+  },
+  "00-0027733": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Kam Chancellor",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0027736": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Kendrick Lewis",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027737": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Perrish Cox",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027743": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Sherrick McManis",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027744": {
+   "basis": "chart_slot",
+   "chart_slot": "CB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Nolan Carroll",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027762": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Reshad Jones",
+   "position": "FS",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0027763": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Crezdon Butler",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027835": {
+   "basis": "chart_slot",
+   "chart_slot": "FS3",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Kurt Coleman",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027840": {
+   "basis": "chart_slot",
+   "chart_slot": "CB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Robert McClain",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027842": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Stevie Brown",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027853": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Teddy Williams",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0027858": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Eric Berry",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0027860": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Joe Haden",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027866": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Earl Thomas",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027872": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Kareem Jackson",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027879": {
+   "basis": "chart_slot",
+   "chart_slot": "CB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Kyle Wilson",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027882": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Patrick Robinson",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027887": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Taylor Mays",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027914": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Andrew Sendejo",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027943": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Patrick Peterson",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027957": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Prince Amukamara",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027965": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Jimmy Smith",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0027971": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Ras-I Dowling",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0027972": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Aaron Williams",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0027983": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Rahim Moore",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027988": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Marcus Gilchrist",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0027992": {
+   "basis": "chart_slot",
+   "chart_slot": "S2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Jaiquawn Jarrett",
+   "position": "S",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0027998": {
+   "basis": "chart_slot",
+   "chart_slot": "CB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Brandon Harris",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0028018": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Chris Culliver",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0028027": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Shareece Wright",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0028031": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Chris Conte",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0028038": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Da'Norris Searcy",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0028046": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Quinton Carter",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0028051": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Chimdi Chekwa",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0028066": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Cortez Allen",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0028069": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Davon House",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0028075": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Buster Skrine",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0028081": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Josh Thomas",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0028082": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Shiloh Keo",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0028092": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Richard Sherman",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0028102": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Chykie Brown",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0028111": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Byron Maxwell",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0028128": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Colin Jones",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0028160": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Anthony Gaitor",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0028173": {
+   "basis": "chart_slot",
+   "chart_slot": "S1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Jimmy Wilson",
+   "position": "S",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0028224": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Chris Harris",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0028334": {
+   "basis": "chart_slot",
+   "chart_slot": "CB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Darrin Walls",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0028441": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Jeron Johnson",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0028445": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Ron Parker",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0028564": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Isa Abdul-Quddus",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0028598": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "M.D. Jennings",
+   "position": "FS",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0028601": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Brandian Ross",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0028750": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Brandon Smith",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0028767": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Sterling Moore",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0028871": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Matt Daniels",
+   "position": "SS",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0028899": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Rodney McLeod",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0028908": {
+   "basis": "chart_slot",
+   "chart_slot": "S2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Michael Thomas",
+   "position": "S",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0028911": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Derrius Brooks",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0028924": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Tashaun Gipson",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0028942": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Duke Ihenacho",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 3
+  },
+  "00-0028954": {
+   "basis": "chart_slot",
+   "chart_slot": "FS3",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Robert Golden",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0028970": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Chase Minnifield",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0028996": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Richard Crawford",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0029030": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Micah Pellerin",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0029065": {
+   "basis": "chart_slot",
+   "chart_slot": "SS3",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Johnson Bademosi",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0029087": {
+   "basis": "chart_slot",
+   "chart_slot": "NKL1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Leonard Johnson",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029107": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Kelcie McCray",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0029143": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Josh Bush",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0029177": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Sean Baker",
+   "position": "SS",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0029191": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "DeShawn Shead",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0029201": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Sean Richardson",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0029213": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Chris Greenwood",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0029214": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Shaun Prater",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029215": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "George Iloka",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0029220": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Terrence Frederick",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0029261": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Casey Hayward",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029265": {
+   "basis": "chart_slot",
+   "chart_slot": "CB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Dwight Bentley",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 1
+  },
+  "00-0029267": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Jayron Hosley",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0029280": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Ron Brooks",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029285": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Josh Norman",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029294": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Asa Jackson",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029295": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Jeremy Lane",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 1
+  },
+  "00-0029297": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Trenton Robinson",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0029299": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Isaiah Frey",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029329": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Neiko Thorpe",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029357": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Chandler Fenner",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0029407": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Will Hill",
+   "position": "FS",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0029410": {
+   "basis": "chart_slot",
+   "chart_slot": "S2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Tavon Wilson",
+   "position": "S",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0029416": {
+   "basis": "chart_slot",
+   "chart_slot": "CB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Brandon Boykin",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029422": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Keith Tandy",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0029520": {
+   "basis": "chart_slot",
+   "chart_slot": "SS3",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Eddie Pleasant",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0029529": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Coty Sensabaugh",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029530": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Justin Bethel",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029542": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Stephon Gilmore",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029553": {
+   "basis": "chart_slot",
+   "chart_slot": "CB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Antonio Allen",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029560": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Dre Kirkpatrick",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029563": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Omar Bolden",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029570": {
+   "basis": "chart_slot",
+   "chart_slot": "S3",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Nate Ebner",
+   "position": "S",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0029575": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Robert Blanton",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0029596": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Alfonzo Dennard",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029606": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Harrison Smith",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0029639": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Jamell Fleming",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029658": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Corey White",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029670": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Mark Barron",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0029676": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Morris Claiborne",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029681": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Janoris Jenkins",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029690": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Trumaine Johnson",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029691": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Josh Robinson",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029696": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Chris Lewis-Harris",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029747": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Chris Banjo",
+   "position": "FS",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0029764": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Cody Davis",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0029767": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Robert Steeples",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0029825": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Sheldon Price",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0029853": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Josh Aubrey",
+   "position": "SS",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0029864": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Onterio McCalebb",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 1
+  },
+  "00-0029876": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Jumal Rolle",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0029888": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Darryl Morris",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029901": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Rashaan Melvin",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 2
+  },
+  "00-0029942": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Marcus Burley",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0029958": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Steven Terrell",
+   "position": "FS",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0029987": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Kanorris Davis",
+   "position": "S",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0030041": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Nickell Robey",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030060": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Kenny Vaccaro",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030062": {
+   "basis": "chart_slot",
+   "chart_slot": "CB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Darius Slay",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030073": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Duke Williams",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0030080": {
+   "basis": "chart_slot",
+   "chart_slot": "S2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Earl Wolff",
+   "position": "S",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030084": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Jonathan Meeks",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 2
+  },
+  "00-0030090": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Micah Hyde",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0030103": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "John Boyett",
+   "position": "S",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0030127": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Marcus Cooper",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030141": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "C.J. Wilson (CHI)",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0030161": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Bradley McDougald",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030194": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Jakar Hamilton",
+   "position": "S",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0030196": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Jeff Heath",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0030254": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Robert Lester",
+   "position": "S",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0030259": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Melvin White",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030275": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Demontre Hurst",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030283": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Steve Williams",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030294": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Tony Jefferson",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030312": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Jahleel Addae",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030317": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Marcus Cromartie",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0030368": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Chance Casey",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0030383": {
+   "basis": "chart_slot",
+   "chart_slot": "S1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Duron Harmon",
+   "position": "S",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0030395": {
+   "basis": "chart_slot",
+   "chart_slot": "S3",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Don Jones",
+   "position": "S",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030403": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "B.W. Webb",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030411": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Logan Ryan",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030412": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Shamarko Thomas",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030420": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "David Amerson",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030423": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Phillip Thomas",
+   "position": "S",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0030427": {
+   "basis": "chart_slot",
+   "chart_slot": "S2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Kemal Ishmael",
+   "position": "S",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030435": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Jeremy Harris",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030451": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Demetrius McCray",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030459": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Tyrann Mathieu",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0030469": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Johnthan Banks",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030471": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Shawn Williams",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030484": {
+   "basis": "chart_slot",
+   "chart_slot": "CB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Jamar Taylor",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030487": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Tharold Simon",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030491": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Daimion Stafford",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030519": {
+   "basis": "chart_slot",
+   "chart_slot": "CB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Will Davis",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030523": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Kayvon Webster",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030528": {
+   "basis": "chart_slot",
+   "chart_slot": "CB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Robert Alford",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030530": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "T.J. McDonald",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030535": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Brandon McGee",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030538": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Johnathan Cyprien",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030539": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Dwayne Gratz",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030541": {
+   "basis": "chart_slot",
+   "chart_slot": "CB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Blidi Wreh-Wilson",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030543": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "J.J. Wilcox",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0030548": {
+   "basis": "chart_slot",
+   "chart_slot": "FS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Eric Reid",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0030556": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Leon McFadden",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 1
+  },
+  "00-0030557": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Josh Evans",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030559": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Matt Elam",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030562": {
+   "basis": "chart_slot",
+   "chart_slot": "CB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Desmond Trufant",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030566": {
+   "basis": "chart_slot",
+   "chart_slot": "SS1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "D.J. Swearinger",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030575": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB1",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Xavier Rhodes",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030592": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Dee Milliner",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030640": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Marcus Ball",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030644": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Akeem Davis",
+   "position": "S",
+   "weekly_label": "S",
+   "weekly_week": 4
+  },
+  "00-0030665": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Daniel Sorensen",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 1
+  },
+  "00-0030699": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Deji Olatoye",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0030703": {
+   "basis": "chart_slot",
+   "chart_slot": "CB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Sammy Seamster",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 2
+  },
+  "00-0030722": {
+   "basis": "chart_slot",
+   "chart_slot": "SS3",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Jerome Couplin",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0030730": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Mohammed Seisay",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030740": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Kimario McFadden",
+   "position": "S",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0030767": {
+   "basis": "chart_slot",
+   "chart_slot": "FS3",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "L.J. McCray",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0030788": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Ri'Shard Anderson",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0030802": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Brian Dixon",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030814": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Pierre Warren",
+   "position": "S",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0030853": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Loucheiz Purifoy",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030901": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Jimmy Legree",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0030903": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Deon Broomfield",
+   "position": "S",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0030908": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Kenny Ladler",
+   "position": "S",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0030917": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Chris Davis",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0030982": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Marcus Roberson",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031015": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Phillip Gaines",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031016": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Ross Cockrell",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031041": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Kyle Fuller",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031052": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Bashaud Breeland",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031059": {
+   "basis": "chart_slot",
+   "chart_slot": "CB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Marqueston Huff",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031061": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Dontae Johnson",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031063": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Brock Vereen",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0031070": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Nat Berhe",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0031072": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Vinnie Sunseri",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0031077": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Kendall James",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0031080": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Demetri Goodson",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031087": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Andre Hal",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031090": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Jabari Price",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031096": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Ahmad Dixon",
+   "position": "S",
+   "weekly_label": "S",
+   "weekly_week": 4
+  },
+  "00-0031097": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Terrance Mitchell",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0031116": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Greg Ducre",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0031119": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Carrington Byndom",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0031151": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Marcus Williams",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0031173": {
+   "basis": "chart_slot",
+   "chart_slot": "CB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Jaylen Watkins",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031176": {
+   "basis": "chart_slot",
+   "chart_slot": "CB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Nevin Lawson",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 2
+  },
+  "00-0031181": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Ricardo Allen",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0031188": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Bennett Jackson",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0031232": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Robert Nelson",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031239": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Stanley Jean-Baptiste",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031253": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "K'Waun Williams",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031261": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Tre Boston",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0031262": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Bene' Benwikere",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031267": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Antone Exum",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0031269": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "T.J. Carrie",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031272": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Jonathan Dowling",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0031276": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Tyler Patmon",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031298": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Jimmie Ward",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0031307": {
+   "basis": "chart_slot",
+   "chart_slot": "S2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Walt Aikens",
+   "position": "S",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0031312": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Ed Reynolds",
+   "position": "S",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0031328": {
+   "basis": "weekly_roster",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Brandon Dixon",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031331": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Pierre Desir",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031333": {
+   "basis": "chart_slot",
+   "chart_slot": "FS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Ha Ha Clinton-Dix",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0031334": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Jason Verrett",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031338": {
+   "basis": "chart_slot",
+   "chart_slot": "FS3",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Terrence Brooks",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0031343": {
+   "basis": "chart_slot",
+   "chart_slot": "S1",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Calvin Pryor",
+   "position": "S",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0031347": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Keith McGill",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031352": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Al Louis-Jean",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0031366": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Deone Bucannon",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0031372": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Bradley Roby",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031380": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB3",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Darqueze Dennard",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031383": {
+   "basis": "chart_slot",
+   "chart_slot": "S2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Dezmen Southward",
+   "position": "S",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0031389": {
+   "basis": "chart_slot",
+   "chart_slot": "FS3",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Lamarcus Joyner",
+   "position": "FS",
+   "weekly_label": "FS",
+   "weekly_week": 4
+  },
+  "00-0031393": {
+   "basis": "chart_slot",
+   "chart_slot": "SS2",
+   "family": "safety",
+   "origin": "library",
+   "player_id": "Maurice Alexander",
+   "position": "SS",
+   "weekly_label": "SS",
+   "weekly_week": 4
+  },
+  "00-0031394": {
+   "basis": "chart_slot",
+   "chart_slot": "LCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "E.J. Gaines",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  },
+  "00-0031397": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Christian Bryant",
+   "position": "S",
+   "weekly_label": null,
+   "weekly_week": null
+  },
+  "00-0031438": {
+   "basis": "chart_slot",
+   "chart_slot": "RCB2",
+   "family": "corner",
+   "origin": "library",
+   "player_id": "Justin Gilbert",
+   "position": "CB",
+   "weekly_label": "CB",
+   "weekly_week": 4
+  }
+ },
+ "rule": "chart slot first (LCB, RCB, CB, NB, NCB, NKL a corner; SS, FS, S a safety: the best-ranked family slot of the player's Week 1 chart rows), then the 2014 weekly-roster label of his latest regular-season week in Weeks 1-4 (CB a corner; S, SS, FS, SAF a safety), then the in-season rails' stated position; never the depth chart's position column or players.csv. A corner's label is CB; a safety keeps his deciding safety label. Nickel: a Week 1 chart NB, NCB or NKL slot at the player's own branch club. No chart in the source labels an outside reserve.",
+ "schema_version": 1,
+ "season": 2014,
+ "sources": {
+  "depth_charts_2014w4.csv": {
+   "scope": "2014 Week 1, REG, Defense rows (pass 2)",
+   "sha256": "9ff91980447562de73852864d2426ee2226a01876c3f003b07b0e9f65c2a7108"
+  },
+  "inseason_rails_manifest": {
+   "path": "library/data/2014_inseason_rails/manifest.json",
+   "sha256": "b5b73f64e0f6e2aab4e648e8d73ca70a747497ab5800c39bb48d349d5f45709c"
+  },
+  "roster_weekly_2014w4.csv": {
+   "scope": "2014 REG Weeks 1-4, the latest week per player",
+   "sha256": "fc963d8ddd38aef3541f7db07b8732e1a7c0780ce0fba6bf02775b2c9cf5558c"
+  },
+  "week1_library": {
+   "path": "library/data/2014_week1_depth_charts.json",
+   "sha256": "129a213a58da8d8834179bcefea11ffe9b51fe6be56a26e84e2c3780e299d053"
+  }
+ },
+ "status": "PREPARED, GATED",
+ "verification": {
+  "basis": {
+   "chart_slot": 286,
+   "none": 14,
+   "rails_position": 50,
+   "weekly_roster": 27
+  },
+  "chart_and_weekly_disagree": [],
+  "library_positions_relabelled": 15,
+  "pass2_family_agreement": "290 library defensive backs, every family the same in both passes",
+  "status_quo_nickel_seat": {
+   "clubs": 31,
+   "rule": "library clubs with five or more Week 1 available defensive backs whose fifth by the library depth order (the 2014.5 nickel seat) is a safety: by the library position label, and by this table's family",
+   "safety_at_db5_by_family": 10,
+   "safety_at_db5_by_library_label": 14
+  }
+ }
+}

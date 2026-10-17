@@ -54,6 +54,22 @@ class ProBowlGameTests(unittest.TestCase):
         self.assertGreater(seen, 100)
 
 
+class ProBowl2014_6Tests(unittest.TestCase):
+    """Kernel 2014.6 batch B5: Pro Bowl quarters on the schema-3 regimes (the
+    first three quarters draw as first-half windows, h1_late at or under
+    600 s; the fourth as the second half's last fifteen minutes)."""
+
+    def test_games_validate(self):
+        from runtime.profiles import PROFILE_2014_6
+        a, b = sample_teams()
+        for i in range(12):
+            game = resolve_game(a, b, seed=SEED + b"-b5-%04d" % i, event_id="pb-b5-%d" % i, venue="neutral",
+                                game_type="pro_bowl", _test_profile=PROFILE_2014_6)
+            self.assertEqual(validate_result(game), [])
+            self.assertEqual(game["kickoffs"], [])
+            self.assertEqual(game["diagnostics"].get("fallback_zero_tuple", 0), 0)
+
+
 class ProBowlDraftTests(unittest.TestCase):
     def test_quotas_and_captains(self):
         from scripts import pro_bowl

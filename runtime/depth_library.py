@@ -56,6 +56,80 @@ def team_input(team, *, offense_anchor, defense_anchor, special_teams_anchor, we
                       special_teams_anchor=special_teams_anchor, week=week)
 
 
+@lru_cache(maxsize=4)
+def _db_families(path):
+    path = Path(path)
+    return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else None
+
+
+def db_families(season):
+    """The season's defensive-back families (kernel 2014.6 batch B15, W2b;
+    library/data/YEAR_db_families.json, scripts/research/build_2014_db_families.py),
+    or None when the season has none."""
+    return _db_families(str(SeasonPaths(season).db_families))
+
+
+def db_families_errors(season, root=None):
+    """Review fix (October 16, 2026): the season's defensive-back family table
+    must be built against the in-season rails manifest now committed (the
+    rails grow with each week's backlog, and a newcomer the table does not
+    hold would keep his rails position unnoticed). [] when it matches or the
+    season has no table."""
+    from . import rails
+    paths = SeasonPaths(season, root) if root is not None else SeasonPaths(season)
+    if not paths.db_families.is_file():
+        return []
+    data = json.loads(paths.db_families.read_text(encoding="utf-8"))
+    pinned = (data.get("sources", {}).get("inseason_rails_manifest") or {}).get("sha256")
+    manifest = rails.data_dir(season, paths.root) / "manifest.json"
+    if not manifest.is_file():
+        return []
+    if pinned != rails.sha256_file(manifest):
+        return ["%s was built against another in-season rails manifest (%s); rebuild it with "
+                "python scripts/research/build_2014_db_families.py before building the week's inputs"
+                % (paths.db_families.relative_to(paths.root).as_posix(), (pinned or "none")[:12])]
+    return []
+
+
+def relabel_defensive_backs(club, season, report=None):
+    """One background club entry (the rails schema, players with gsis ids)
+    with its defensive backs' contemporaneous labels (W2b): each player of
+    the DB group whose gsis id the season's family table holds takes its
+    label (CB for a corner; a safety keeps his SS, FS or S), and a player the
+    club's own Week 1 chart lists at nickel takes the ``nickel`` role. A
+    player the table does not hold keeps the rails' stated position (counted
+    in ``report``). Nothing else changes; read only from the in-season rails'
+    first week under a kernel that seats defensive backs by family
+    (runtime.week_inputs.build_package), so the Week 1 library, Weeks 1 to 4
+    and every earlier package are unchanged."""
+    data = db_families(season)
+    if data is None:
+        raise ValueError("no %d defensive-back family table (library/data/%d_db_families.json); "
+                         "the DB seats cannot be read" % (season, season))
+    stale = db_families_errors(season)
+    if stale:
+        raise ValueError(stale[0])
+    players = data["players"]
+    nickels = set(data.get("nickel", {}).get(club.get("code"), ()))
+    out = []
+    for p in club["players"]:
+        row = dict(p)
+        if group(p["position"]) == "DB":
+            rec = players.get(p.get("gsis_id"))
+            if rec is not None:
+                if report is not None and rec["position"] != p["position"]:
+                    report.setdefault("relabelled", []).append(
+                        {"player_id": p["player_id"], "from": p["position"], "to": rec["position"],
+                         "basis": rec["basis"]})
+                row["position"] = rec["position"]
+            elif report is not None:
+                report.setdefault("unlisted", []).append(p["player_id"])
+            if p.get("gsis_id") in nickels and "nickel" not in (p.get("roles") or ()):
+                row["roles"] = list(p.get("roles") or ()) + ["nickel"]
+        out.append(row)
+    return dict(club, players=out)
+
+
 def club_input(team, club, *, offense_anchor, defense_anchor, special_teams_anchor, week=1):
     """The same TeamInput from one club entry (the library's schema), wherever
     it is stored: the Week 1 library or a preseason opponent roster file."""

@@ -21,11 +21,19 @@ from unittest import mock
 from runtime import KERNEL_VERSION
 from runtime import field_position as fp
 from runtime.kernel import resolve_game, validate_result
+from runtime.profiles import PROFILE_2014_5
 from runtime.play_detail import check_ledger
 from runtime.rules import RULES, ot_status
 from synthetic_games import SEED, sample, sample_teams
 
-REAL_DRAW = fp.draw_drive
+# Kernel 2014.6 plumbing (batch B1): the kernel draws through its bound
+# calibration base's model, so the script patches the 2012 base's model
+# instance (the base of kernel 2014.5); REAL_DRAW is its own method. Since
+# the kernel 2014.6 release (B18) the scripted and searched games resolve
+# under PROFILE_2014_5 explicitly; kernel 2014.6's overtime cells are
+# Overtime2014_6Tests below.
+MODEL = fp.model()
+REAL_DRAW = MODEL.draw_drive
 
 
 class Infeasible(Exception):
@@ -39,7 +47,8 @@ def _tied_regulation_seeds(game_type, count):
     found = []
     for i in range(SEARCH):
         seed = SEED + b"-ot-%s-%05d" % (game_type.encode(), i)
-        result = resolve_game(a, b, seed=seed, event_id="ot-%s-%d" % (game_type, i), game_type=game_type)
+        result = resolve_game(a, b, seed=seed, event_id="ot-%s-%d" % (game_type, i), game_type=game_type,
+                              _test_profile=PROFILE_2014_5)
         if any(p["half"] == "OT" for p in result["possessions"]):
             found.append((seed, "ot-%s-%d" % (game_type, i), result))
             if len(found) == count:
@@ -105,15 +114,17 @@ class OvertimeRuleTests(unittest.TestCase):
     def replay(self, script, game_type="regular", which=0):
         seed, event_id, _ = (self.regular if game_type == "regular" else self.postseason)[which]
         a, b = sample_teams()
-        with mock.patch.object(fp, "draw_drive", _scripted(script)):
-            result = resolve_game(a, b, seed=seed, event_id=event_id, game_type=game_type)
+        with mock.patch.object(MODEL, "draw_drive", _scripted(script)):
+            result = resolve_game(a, b, seed=seed, event_id=event_id, game_type=game_type,
+                                  _test_profile=PROFILE_2014_5)
         self.assertEqual(validate_result(result), [])
         self.assertEqual(check_ledger(result), [])
         return result
 
     def test_kernel_version(self):
         # 2013.8 introduced these rules; later kernels keep them.
-        self.assertIn(KERNEL_VERSION, ("2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2", "2014.3", "2014.4", "2014.5"))
+        self.assertIn(KERNEL_VERSION, ("2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2", "2014.3", "2014.4", "2014.5",
+                                       "2014.6"))
         self.assertEqual((RULES.regular_ot_seconds, RULES.postseason_ot_seconds), (900, 900))
 
     def test_opening_field_goal_gives_the_other_club_a_possession(self):
@@ -228,6 +239,96 @@ class OvertimeRuleTests(unittest.TestCase):
             if tied:
                 self.assertEqual(game_type, "regular")
                 self.assertEqual(ot[-1]["end_clock"], 0)
+
+
+class Overtime2014_6Tests(unittest.TestCase):
+    """Kernel 2014.6 batch B5, R14 on the schema-3 model: ot_first when the
+    overtime history is empty, ot_sudden otherwise; a trailing overtime
+    offense draws the late trail1_3 cell at the overtime clock's own time
+    label and never punts, through every fallback; the spike rule."""
+
+    @classmethod
+    def setUpClass(cls):
+        import random
+        from runtime.calibration_base import BASE_2010_2014W4
+        cls.model = BASE_2010_2014W4.field_position()
+        cls.random = random
+
+    def test_first_and_sudden_death_cells(self):
+        m = self.model
+        rng = self.random.Random(41)
+        for empty, kind in ((True, "ot_first"), (False, "ot_sudden")):
+            for _ in range(60):
+                drive = m.draw_drive(rng, rng.randint(20, 85), "OT", rng.randint(200, 600), 0, 0.0, {},
+                                     timeouts=(2, 2), extra={"ot_history_empty": empty})
+                if drive.fallback is None and drive.pool_id is not None:
+                    self.assertEqual(drive.pool_id[0], kind)
+        self.assertEqual(sum(m.data["ot_first_counts"].values()), 41)
+
+    def test_trailing_offense_never_punts(self):
+        m = self.model
+        rng = self.random.Random(43)
+        self.assertEqual(m.cell_for("OT", 600, -3), "301-600|trail1_3")
+        self.assertEqual(m.cell_for("OT", 90, -3), "le120|trail1_3")
+        for _ in range(600):
+            window = rng.randint(1, 600)
+            drive = m.draw_drive(rng, rng.randint(1, 99), "OT", window, -3, rng.uniform(-0.1, 0.1), {},
+                                 timeouts=(rng.randint(0, 2), rng.randint(0, 2)), extra={"ot_history_empty": False})
+            self.assertNotEqual(drive.category, "punt")
+        # Through _fit_or_expire too: with the cell and union draws empty
+        # and no clock fallback, the fit rung still never punts.
+        real = m._draw_from
+        with mock.patch.object(m, "_draw_from", lambda *a, **k: None if k.get("clock_regime") != "fit_ot"
+                               else real(*a, **k)), mock.patch.object(m, "_clock_fallback", lambda *a, **k: None):
+            diagnostics = {}
+            for _ in range(300):
+                drive = m.draw_drive(rng, rng.randint(1, 99), "OT", rng.randint(100, 600), -3, 0.0, diagnostics,
+                                     timeouts=(2, 2), extra={"ot_history_empty": False})
+                self.assertNotEqual(drive.category, "punt")
+            self.assertGreater(diagnostics.get("fallback_fit_drive", 0), 0)
+
+    def test_punt_weight_moves_to_downs(self):
+        m = self.model
+        counts = {c: 10 for c in fp.CATEGORIES}
+        options = {c: (1,) for c in fp.CATEGORIES}
+        plain = m.category_mix_v3(counts, 0.0, options)
+        moved = m.category_mix_v3(counts, 0.0, options, transfer=("punt", "downs"))
+        self.assertEqual(moved["punt"], 0.0)
+        self.assertAlmostEqual(moved["downs"], plain["downs"] + plain["punt"])
+
+    def test_spike_rule(self):
+        m = self.model
+        T = m.T
+        spiked = [t for c in fp.CATEGORIES for t in fp._v3_tuples(m.data, c) if t[T["spikes"]]]
+        self.assertTrue(spiked)
+        self.assertTrue(all(isinstance(t[T["last_spike_to_end"]], int) for t in spiked))
+        for t in spiked[:50]:
+            last = t[T["last_spike_to_end"]]
+            self.assertTrue(m.spike_ok(t, m.SPIKE_WINDOW - last))
+            self.assertFalse(m.spike_ok(t, m.SPIKE_WINDOW - last + 1))
+        # Every pre-divergence real spike is inside the window at its own clock.
+        rows = m.data["constants"]["spike_window"]
+        self.assertEqual(rows["pre_divergence_max_seconds"], m.SPIKE_WINDOW)
+
+    def test_overtime_games_on_the_2014_6_profile(self):
+        from runtime.profiles import PROFILE_2014_6
+        a, b = sample_teams()
+        found = 0
+        for i in range(120):
+            r = resolve_game(a, b, seed=SEED + b"-b5-ot-%03d" % i, event_id="b5-ot-%d" % i,
+                             _test_profile=PROFILE_2014_6)
+            ot = _ot(r)
+            if not ot:
+                continue
+            found += 1
+            self.assertEqual(validate_result(r), [])
+            for p in ot:
+                if p["score_diff"] < 0:
+                    self.assertNotEqual(p["category"], "punt")
+                self.assertLessEqual(p.get("last_spike_seconds_left", 0), self.model.SPIKE_WINDOW)
+            if found == 3:
+                break
+        self.assertGreater(found, 0)
 
 
 if __name__ == "__main__":

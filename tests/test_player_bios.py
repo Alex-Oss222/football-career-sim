@@ -120,8 +120,12 @@ class PlayerBiographyTests(unittest.TestCase):
                    mock.patch.object(week_inputs, "jacksonville_input", return_value=jax),
                    mock.patch.object(week_inputs, "background_input", return_value=phi),
                    mock.patch.object(week_inputs.strength, "team_strength", return_value=(None, {})))
+        # The Week 1 package's strength model (honours-production-v3, kernel
+        # 2014.5's): the player-state model of kernel 2014.6 needs every gsis
+        # id, a separate rule (tests/test_player_state_runtime.py).
+        week1_model = week_inputs.strength.MODEL
         with patches[0], patches[1], patches[2], patches[3]:
-            row = week_inputs.build_package(1, [], [], {}, season=2014)["games"][0]
+            row = week_inputs.build_package(1, [], [], {}, season=2014, strength_model=week1_model)["games"][0]
         self.assertEqual(row["player_ages"]["Nobody Listed"],
                          {"gsis_id": None, "birth_date": None, "age": None, "age_unverified": True})
         self.assertEqual(row["player_ages"]["Brad Meester"]["age"], 37)
@@ -130,7 +134,7 @@ class PlayerBiographyTests(unittest.TestCase):
         jax["roster"].append(phi["roster"].pop())
         with patches[0], patches[1], patches[2], patches[3], \
                 self.assertRaisesRegex(ValueError, "Verify birth date before preparing player: Nobody Listed"):
-            week_inputs.build_package(1, [], [], {}, season=2014)
+            week_inputs.build_package(1, [], [], {}, season=2014, strength_model=week1_model)
 
     def test_week1_library_birth_dates_are_registered_or_named_unverified(self):
         library = json.loads((ROOT / "library/data/2014_week1_depth_charts.json").read_text())

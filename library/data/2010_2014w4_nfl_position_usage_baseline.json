@@ -1,0 +1,1725 @@
+{
+ "builder": "scripts/research/build_2010_2014_usage_baseline.py",
+ "definitions": {
+  "assisted_tackle_play_rate": "tackled scrimmage plays that carried at least one assist credit, over all tackled scrimmage plays.",
+  "negative_run_loss_distribution": "yards lost on runs that lost yardage; key 6+ pools losses of six or more.",
+  "qb1_attempt_share": "mean over team-games of the leading passer share of that team pass attempts.",
+  "rank_shares": "within one team-game, the position group production ranked by volume: index 0 is the most-used player. These are usage-rank shapes, not depth-chart facts; the runtime maps them onto the coach-supplied depth order.",
+  "rush_share": "share of rushing attempts with an identified rusher, by position group; scrambles count as QB rushes; kneels are excluded (separate play type).",
+  "tackle_share": "share of tackle credits (solo plus each assist credit) on scrimmage run/pass plays, by defensive group; offensive-player tackles after turnovers (about 2 percent) are excluded from the displayed groups.",
+  "target_share": "share of non-sack pass attempts with an identified target, by position group."
+ },
+ "drive_model": {
+  "field_goal": {
+   "drives": 3541,
+   "plays_mean": 7.666,
+   "plays_sd": 3.132,
+   "seconds_per_play": 28.89
+  },
+  "other": {
+   "drives": 3301,
+   "plays_mean": 5.034,
+   "plays_sd": 3.587,
+   "seconds_per_play": 23.67
+  },
+  "punt": {
+   "drives": 10370,
+   "plays_mean": 4.272,
+   "plays_sd": 1.788,
+   "seconds_per_play": 30.4
+  },
+  "touchdown": {
+   "drives": 4976,
+   "plays_mean": 7.26,
+   "plays_sd": 3.536,
+   "seconds_per_play": 27.46
+  },
+  "turnover": {
+   "drives": 2912,
+   "plays_mean": 4.576,
+   "plays_sd": 2.965,
+   "seconds_per_play": 24.75
+  }
+ },
+ "drive_model_note": "Per-result plays and seconds-per-play are observed pbp means. The runtime scales plays and clock by single factors so the expected team-game totals equal the existing verified baseline (64.2 plays and 10.47 drives per team game). The pbp drive definition counts end-of-half and split possessions that the PFR drive table does not; the scale factors absorb that definitional difference and are recomputed from this file at load time, never hand-set.",
+ "drive_model_results": {
+  "counts": {
+   "": 1,
+   "End of half": 1647,
+   "Field goal": 3541,
+   "Missed field goal": 667,
+   "Opp touchdown": 445,
+   "Punt": 10370,
+   "Safety": 69,
+   "Touchdown": 4976,
+   "Turnover": 2912,
+   "Turnover on downs": 917
+  },
+  "rule": "nflverse fixed_drive_result collapsed to the committed categories: Touchdown, Field goal, Punt and Turnover by name; every other result is other; an opponent touchdown is left out (as in the committed 2012 block)"
+ },
+ "homogeneity": {
+  "fullback_rush_share_trend": {
+   "by_season": {
+    "2010": 0.0394,
+    "2011": 0.02772,
+    "2012": 0.02152,
+    "2013": 0.02319,
+    "2014w4": 0.01242
+   },
+   "flag": "the fullback rushing share declines across the window; the pooled share overstates 2014 use",
+   "slope_per_season": -0.005848
+  },
+  "interception_share": {
+   "DB": {
+    "by_season": {
+     "2010": [
+      407,
+      510
+     ],
+     "2011": [
+      397,
+      506
+     ],
+     "2012": [
+      368,
+      468
+     ],
+     "2013": [
+      374,
+      502
+     ],
+     "2014w4": [
+      81,
+      102
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.306659,
+     "stat": 4.8164,
+     "test": "chi-square"
+    }
+   },
+   "DL": {
+    "by_season": {
+     "2010": [
+      22,
+      510
+     ],
+     "2011": [
+      17,
+      506
+     ],
+     "2012": [
+      9,
+      468
+     ],
+     "2013": [
+      20,
+      502
+     ],
+     "2014w4": [
+      6,
+      102
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.168154,
+     "stat": 6.4471,
+     "test": "chi-square"
+    }
+   },
+   "LB": {
+    "by_season": {
+     "2010": [
+      81,
+      510
+     ],
+     "2011": [
+      92,
+      506
+     ],
+     "2012": [
+      91,
+      468
+     ],
+     "2013": [
+      108,
+      502
+     ],
+     "2014w4": [
+      15,
+      102
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.157645,
+     "stat": 6.6157,
+     "test": "chi-square"
+    }
+   }
+  },
+  "pass_defensed_share": {
+   "DB": {
+    "by_season": {
+     "2010": [
+      1623,
+      2441
+     ],
+     "2011": [
+      1665,
+      2444
+     ],
+     "2012": [
+      1616,
+      2402
+     ],
+     "2013": [
+      1681,
+      2458
+     ],
+     "2014w4": [
+      359,
+      509
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.350478,
+     "stat": 4.4337,
+     "test": "chi-square"
+    }
+   },
+   "DL": {
+    "by_season": {
+     "2010": [
+      327,
+      2441
+     ],
+     "2011": [
+      312,
+      2444
+     ],
+     "2012": [
+      325,
+      2402
+     ],
+     "2013": [
+      296,
+      2458
+     ],
+     "2014w4": [
+      64,
+      509
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.544994,
+     "stat": 3.0772,
+     "test": "chi-square"
+    }
+   },
+   "LB": {
+    "by_season": {
+     "2010": [
+      487,
+      2441
+     ],
+     "2011": [
+      467,
+      2444
+     ],
+     "2012": [
+      461,
+      2402
+     ],
+     "2013": [
+      479,
+      2458
+     ],
+     "2014w4": [
+      85,
+      509
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.556953,
+     "stat": 3.0052,
+     "test": "chi-square"
+    }
+   }
+  },
+  "rush_share": {
+   "FB": {
+    "by_season": {
+     "2010": [
+      535,
+      13579
+     ],
+     "2011": [
+      378,
+      13637
+     ],
+     "2012": [
+      292,
+      13571
+     ],
+     "2013": [
+      313,
+      13495
+     ],
+     "2014w4": [
+      40,
+      3220
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.0,
+     "stat": 128.2965,
+     "test": "chi-square"
+    }
+   },
+   "QB": {
+    "by_season": {
+     "2010": [
+      1072,
+      13579
+     ],
+     "2011": [
+      1221,
+      13637
+     ],
+     "2012": [
+      1223,
+      13571
+     ],
+     "2013": [
+      1317,
+      13495
+     ],
+     "2014w4": [
+      307,
+      3220
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 3e-06,
+     "stat": 30.8442,
+     "test": "chi-square"
+    }
+   },
+   "RB": {
+    "by_season": {
+     "2010": [
+      11514,
+      13579
+     ],
+     "2011": [
+      11713,
+      13637
+     ],
+     "2012": [
+      11766,
+      13571
+     ],
+     "2013": [
+      11587,
+      13495
+     ],
+     "2014w4": [
+      2792,
+      3220
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.000156,
+     "stat": 22.5408,
+     "test": "chi-square"
+    }
+   },
+   "TE": {
+    "by_season": {
+     "2010": [
+      13,
+      13579
+     ],
+     "2011": [
+      21,
+      13637
+     ],
+     "2012": [
+      6,
+      13571
+     ],
+     "2013": [
+      19,
+      13495
+     ],
+     "2014w4": [
+      4,
+      3220
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.05495,
+     "stat": 9.2587,
+     "test": "chi-square"
+    }
+   },
+   "WR": {
+    "by_season": {
+     "2010": [
+      427,
+      13579
+     ],
+     "2011": [
+      284,
+      13637
+     ],
+     "2012": [
+      258,
+      13571
+     ],
+     "2013": [
+      227,
+      13495
+     ],
+     "2014w4": [
+      75,
+      3220
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.0,
+     "stat": 79.4942,
+     "test": "chi-square"
+    }
+   }
+  },
+  "sack_share": {
+   "DB": {
+    "by_season": {
+     "2010": [
+      116,
+      1121
+     ],
+     "2011": [
+      95,
+      1181
+     ],
+     "2012": [
+      74,
+      1162
+     ],
+     "2013": [
+      106,
+      1288
+     ],
+     "2014w4": [
+      23,
+      240
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.013924,
+     "stat": 12.512,
+     "test": "chi-square"
+    }
+   },
+   "DL": {
+    "by_season": {
+     "2010": [
+      608,
+      1121
+     ],
+     "2011": [
+      667,
+      1181
+     ],
+     "2012": [
+      696,
+      1162
+     ],
+     "2013": [
+      717,
+      1288
+     ],
+     "2014w4": [
+      136,
+      240
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.086267,
+     "stat": 8.1491,
+     "test": "chi-square"
+    }
+   },
+   "LB": {
+    "by_season": {
+     "2010": [
+      396,
+      1121
+     ],
+     "2011": [
+      416,
+      1181
+     ],
+     "2012": [
+      392,
+      1162
+     ],
+     "2013": [
+      465,
+      1288
+     ],
+     "2014w4": [
+      80,
+      240
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.759059,
+     "stat": 1.8732,
+     "test": "chi-square"
+    }
+   }
+  },
+  "tackle_share": {
+   "DB": {
+    "by_season": {
+     "2010": [
+      11926,
+      29830
+     ],
+     "2011": [
+      11694,
+      29181
+     ],
+     "2012": [
+      11819,
+      29460
+     ],
+     "2013": [
+      11997,
+      29809
+     ],
+     "2014w4": [
+      3034,
+      7189
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.011939,
+     "stat": 12.8679,
+     "test": "chi-square"
+    }
+   },
+   "DL": {
+    "by_season": {
+     "2010": [
+      6750,
+      29830
+     ],
+     "2011": [
+      6564,
+      29181
+     ],
+     "2012": [
+      6666,
+      29460
+     ],
+     "2013": [
+      6815,
+      29809
+     ],
+     "2014w4": [
+      1541,
+      7189
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.138924,
+     "stat": 6.9431,
+     "test": "chi-square"
+    }
+   },
+   "LB": {
+    "by_season": {
+     "2010": [
+      10505,
+      29830
+     ],
+     "2011": [
+      10268,
+      29181
+     ],
+     "2012": [
+      10396,
+      29460
+     ],
+     "2013": [
+      10388,
+      29809
+     ],
+     "2014w4": [
+      2482,
+      7189
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.625919,
+     "stat": 2.6051,
+     "test": "chi-square"
+    }
+   }
+  },
+  "target_share": {
+   "FB": {
+    "by_season": {
+     "2010": [
+      518,
+      17067
+     ],
+     "2011": [
+      458,
+      17229
+     ],
+     "2012": [
+      457,
+      17595
+     ],
+     "2013": [
+      449,
+      17898
+     ],
+     "2014w4": [
+      66,
+      4220
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 3e-06,
+     "stat": 30.7945,
+     "test": "chi-square"
+    }
+   },
+   "RB": {
+    "by_season": {
+     "2010": [
+      2826,
+      17067
+     ],
+     "2011": [
+      2950,
+      17229
+     ],
+     "2012": [
+      2731,
+      17595
+     ],
+     "2013": [
+      2979,
+      17898
+     ],
+     "2014w4": [
+      708,
+      4220
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.001471,
+     "stat": 17.6097,
+     "test": "chi-square"
+    }
+   },
+   "TE": {
+    "by_season": {
+     "2010": [
+      3544,
+      17067
+     ],
+     "2011": [
+      3670,
+      17229
+     ],
+     "2012": [
+      3779,
+      17595
+     ],
+     "2013": [
+      3724,
+      17898
+     ],
+     "2014w4": [
+      889,
+      4220
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.406408,
+     "stat": 3.997,
+     "test": "chi-square"
+    }
+   },
+   "WR": {
+    "by_season": {
+     "2010": [
+      10160,
+      17067
+     ],
+     "2011": [
+      10120,
+      17229
+     ],
+     "2012": [
+      10595,
+      17595
+     ],
+     "2013": [
+      10721,
+      17898
+     ],
+     "2014w4": [
+      2552,
+      4220
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.039557,
+     "stat": 10.0523,
+     "test": "chi-square"
+    }
+   }
+  },
+  "tfl_share": {
+   "DB": {
+    "by_season": {
+     "2010": [
+      440,
+      2315
+     ],
+     "2011": [
+      375,
+      2350
+     ],
+     "2012": [
+      397,
+      2345
+     ],
+     "2013": [
+      368,
+      2400
+     ],
+     "2014w4": [
+      92,
+      521
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.010244,
+     "stat": 13.2213,
+     "test": "chi-square"
+    }
+   },
+   "DL": {
+    "by_season": {
+     "2010": [
+      992,
+      2315
+     ],
+     "2011": [
+      1042,
+      2350
+     ],
+     "2012": [
+      1069,
+      2345
+     ],
+     "2013": [
+      1120,
+      2400
+     ],
+     "2014w4": [
+      238,
+      521
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.098134,
+     "stat": 7.8268,
+     "test": "chi-square"
+    }
+   },
+   "LB": {
+    "by_season": {
+     "2010": [
+      882,
+      2315
+     ],
+     "2011": [
+      931,
+      2350
+     ],
+     "2012": [
+      876,
+      2345
+     ],
+     "2013": [
+      911,
+      2400
+     ],
+     "2014w4": [
+      191,
+      521
+     ]
+    },
+    "drift": {
+     "df": 4,
+     "p": 0.509461,
+     "stat": 3.2967,
+     "test": "chi-square"
+    }
+   }
+  }
+ },
+ "information_boundary": "NFL regular seasons 2010-2013 and 2014 Weeks 1-4 (games through September 29, 2014), cut at fetch; positions from each season's own roster (2014: the cut Week 1-4 weekly roster); no club, game, player or date field.",
+ "purpose": "League-wide position-group usage shapes and drive-volume shapes for kernel 2013.4 attribution and the statistical band audit. Shapes distribute already-resolved team production across a club depth chart; they never decide who is on the depth chart, never rate a player and never set a Jacksonville quota.",
+ "regression_2012": "the committed builder's 2012 output equals this accumulation's 2012 summary, and the 2012 drive block equals the committed artifact's (counts exact, moments within 0.0015: the committed other row was combined from rounded moments)",
+ "schema": "2010-2014w4-nfl-position-usage-baseline-v1",
+ "season_type": "regular",
+ "seasons": [
+  "2010",
+  "2011",
+  "2012",
+  "2013",
+  "2014w4"
+ ],
+ "second_pass": {
+  "comparison": [
+   {
+    "group": "RB",
+    "nflscrapr": 0.8588,
+    "nflverse": 0.8586,
+    "share": "rush_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "QB",
+    "nflscrapr": 0.0893,
+    "nflverse": 0.0894,
+    "share": "rush_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "FB",
+    "nflscrapr": 0.0271,
+    "nflverse": 0.0271,
+    "share": "rush_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "WR",
+    "nflscrapr": 0.0221,
+    "nflverse": 0.0221,
+    "share": "rush_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "TE",
+    "nflscrapr": 0.0011,
+    "nflverse": 0.0011,
+    "share": "rush_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "WR",
+    "nflscrapr": 0.596,
+    "nflverse": 0.5965,
+    "share": "target_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "TE",
+    "nflscrapr": 0.2107,
+    "nflverse": 0.2109,
+    "share": "target_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "RB",
+    "nflscrapr": 0.1652,
+    "nflverse": 0.1648,
+    "share": "target_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "FB",
+    "nflscrapr": 0.0265,
+    "nflverse": 0.0263,
+    "share": "target_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "DB",
+    "nflscrapr": 0.402,
+    "nflverse": 0.4023,
+    "share": "tackle_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "LB",
+    "nflscrapr": 0.3506,
+    "nflverse": 0.351,
+    "share": "tackle_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "DL",
+    "nflscrapr": 0.2255,
+    "nflverse": 0.2258,
+    "share": "tackle_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "DL",
+    "nflscrapr": 0.4472,
+    "nflverse": 0.4492,
+    "share": "tfl_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "LB",
+    "nflscrapr": 0.381,
+    "nflverse": 0.3817,
+    "share": "tfl_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "DB",
+    "nflscrapr": 0.1692,
+    "nflverse": 0.1684,
+    "share": "tfl_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "DL",
+    "nflscrapr": null,
+    "nflverse": 0.566,
+    "share": "sack_share",
+    "status": "informational"
+   },
+   {
+    "group": "LB",
+    "nflscrapr": null,
+    "nflverse": 0.3507,
+    "share": "sack_share",
+    "status": "informational"
+   },
+   {
+    "group": "DB",
+    "nflscrapr": null,
+    "nflverse": 0.0828,
+    "share": "sack_share",
+    "status": "informational"
+   },
+   {
+    "group": "DB",
+    "nflscrapr": 0.7761,
+    "nflverse": 0.7792,
+    "share": "interception_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "LB",
+    "nflscrapr": 0.1873,
+    "nflverse": 0.1853,
+    "share": "interception_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "DL",
+    "nflscrapr": 0.0361,
+    "nflverse": 0.0354,
+    "share": "interception_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "DB",
+    "nflscrapr": 0.6751,
+    "nflverse": 0.6772,
+    "share": "pass_defensed_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "LB",
+    "nflscrapr": 0.1924,
+    "nflverse": 0.193,
+    "share": "pass_defensed_share",
+    "status": "within 0.01"
+   },
+   {
+    "group": "DL",
+    "nflscrapr": 0.1316,
+    "nflverse": 0.1291,
+    "share": "pass_defensed_share",
+    "status": "within 0.01"
+   }
+  ],
+  "result": "pass",
+  "rule": "pooled shares within 0.01 (sack shares informational: nflscrapR's half-sack columns differ)",
+  "source": "nflscrapR reg_pbp, the same accumulation"
+ },
+ "sources": {
+  "play_by_play_2010.csv.gz": {
+   "sha256": "6d4f519b4821f06ffe2285faadad8cee718f464eeb9a310a8276753da10bee2e"
+  },
+  "play_by_play_2011.csv.gz": {
+   "sha256": "ffa0bfb803f0c30a4b765af5e621b0f601d695efdba7d6d396fb067d6a0c89b2"
+  },
+  "play_by_play_2012.csv.gz": {
+   "sha256": "ff1cda2e26610ef8720324e442d1e5ebc24918e08fd1d2933590b7b91a7068cd"
+  },
+  "play_by_play_2013.csv.gz": {
+   "sha256": "b4cd0dc48697ec44a2041d57dfc1c7210a792d1b5be497c161ef20a5b7fb9942"
+  },
+  "play_by_play_2014w4.csv": {
+   "sha256": "fd6f77ac5ddac90f80b7559c7767976892902c380b9380aa85e0de98c406b719"
+  },
+  "reg_pbp_2010.csv": {
+   "sha256": "64224b82b8efc7b5c6d8c0c4e0054346bb1ac5df4c073c84d2ab8fb3e730f9da"
+  },
+  "reg_pbp_2011.csv": {
+   "sha256": "ba412141e8033103807810605ecdbdb5bf19d9dd683e1ff3173af1303fced12c"
+  },
+  "reg_pbp_2012.csv": {
+   "sha256": "9129396fc41597f9f44ab14d4d0fca890a3c56fea686b0b7dc92885aaedd0f98"
+  },
+  "reg_pbp_2013.csv": {
+   "sha256": "37b64a2510bf3da54430deaa0d3cbbdd8113d3be9ca4e1512d3cbf0d40320950"
+  },
+  "reg_pbp_2014w4.csv": {
+   "sha256": "5b68d291c82b20a1e31ecd850036dbbf93e1fe2c0ec015f2b733bbef8cf7b08e"
+  },
+  "roster_2010.csv": {
+   "sha256": "0c9dfde110e6c989bbecd830602b2562124b89388e1aac39b5287376f2370dd1"
+  },
+  "roster_2011.csv": {
+   "sha256": "6acc11a2b5f692db03e1945e0329da93f6b5debed3f99feed39eca470ab4cee5"
+  },
+  "roster_2012.csv": {
+   "sha256": "90628fcdadd9f2dde083bc77d41139cedc9fefd1fcc09f2ce8675823de23291b"
+  },
+  "roster_2013.csv": {
+   "sha256": "abf73c2b1ef10914af78f6b7397338508bd0c9f0372d2f0667a630e06a4484ed"
+  },
+  "roster_weekly_2014w4.csv": {
+   "sha256": "fc963d8ddd38aef3541f7db07b8732e1a7c0780ce0fba6bf02775b2c9cf5558c"
+  }
+ },
+ "specification_sha256": "ca028ba38009d1b84e5c887ea86ce8d697edf1705bcd9b755f60aede9d6f8446",
+ "team_game_top_shares": {
+  "definition": "per team-game, the top player's share of the club's targets (or non-QB carries, kneels included), two-point tries excluded; positions from each season's own roster",
+  "top_receiver_target_share": {
+   "mean": 0.290455650838567,
+   "sd": 0.06466905388799439,
+   "team_games": 2170
+  },
+  "top_rusher_carry_share": {
+   "mean": 0.6942625961341986,
+   "sd": 0.15708113611379007,
+   "team_games": 2170
+  }
+ },
+ "team_games": 2170,
+ "team_games_by_season": {
+  "2010": 512,
+  "2011": 512,
+  "2012": 512,
+  "2013": 512,
+  "2014w4": 122
+ },
+ "values": {
+  "assisted_tackle_play_rate": 0.2107,
+  "interception_share": {
+   "DB": 0.7792,
+   "DL": 0.0354,
+   "LB": 0.1853
+  },
+  "negative_run_loss_distribution": {
+   "1": 0.4197,
+   "2": 0.2595,
+   "3": 0.1495,
+   "4": 0.081,
+   "5": 0.0448,
+   "6+": 0.0454
+  },
+  "negative_run_rate": 0.0962,
+  "pass_defensed_share": {
+   "DB": 0.6772,
+   "DL": 0.1291,
+   "LB": 0.193
+  },
+  "passing": {
+   "qb1_attempt_share": 0.9735,
+   "single_passer_team_game_rate": 0.824
+  },
+  "penalty_first_downs_per_team_game": 1.727,
+  "rank_shares": {
+   "rush_RB": [
+    0.734,
+    0.2273,
+    0.0372,
+    0.0015
+   ],
+   "tackle_DB": [
+    0.3232,
+    0.237,
+    0.1782,
+    0.1311,
+    0.0835,
+    0.0364,
+    0.0091
+   ],
+   "tackle_DL": [
+    0.3712,
+    0.2438,
+    0.1672,
+    0.1111,
+    0.0635,
+    0.03,
+    0.011
+   ],
+   "tackle_LB": [
+    0.4369,
+    0.2878,
+    0.1692,
+    0.0717,
+    0.0253,
+    0.0073,
+    0.0015
+   ],
+   "target_RB": [
+    0.7631,
+    0.2066,
+    0.0286
+   ],
+   "target_TE": [
+    0.7898,
+    0.1861,
+    0.024
+   ],
+   "target_WR": [
+    0.4675,
+    0.2981,
+    0.171,
+    0.0549,
+    0.0082
+   ]
+  },
+  "run_tfl_play_rate": 0.0943,
+  "rush_share": {
+   "FB": 0.0271,
+   "QB": 0.0894,
+   "RB": 0.8586,
+   "TE": 0.0011,
+   "WR": 0.0221
+  },
+  "sack_share": {
+   "DB": 0.0828,
+   "DL": 0.566,
+   "LB": 0.3507
+  },
+  "scrimmage_first_downs_per_team_game": 17.893,
+  "tackle_share": {
+   "DB": 0.4023,
+   "DL": 0.2258,
+   "LB": 0.351
+  },
+  "target_share": {
+   "FB": 0.0263,
+   "RB": 0.1648,
+   "TE": 0.2109,
+   "WR": 0.5965
+  },
+  "tfl_share": {
+   "DB": 0.1684,
+   "DL": 0.4492,
+   "LB": 0.3817
+  },
+  "third_down_attempts_per_team_game": 13.367
+ },
+ "values_by_season": {
+  "2010": {
+   "assisted_tackle_play_rate": 0.2334,
+   "interception_share": {
+    "DB": 0.798,
+    "DL": 0.0431,
+    "LB": 0.1588
+   },
+   "negative_run_loss_distribution": {
+    "1": 0.4149,
+    "2": 0.2568,
+    "3": 0.1486,
+    "4": 0.0843,
+    "5": 0.0469,
+    "6+": 0.0485
+   },
+   "negative_run_rate": 0.0926,
+   "pass_defensed_share": {
+    "DB": 0.6649,
+    "DL": 0.134,
+    "LB": 0.1995
+   },
+   "passing": {
+    "qb1_attempt_share": 0.9655,
+    "single_passer_team_game_rate": 0.8086
+   },
+   "penalty_first_downs_per_team_game": 1.449,
+   "rank_shares": {
+    "rush_RB": [
+     0.7457,
+     0.228,
+     0.0259,
+     0.0004
+    ],
+    "tackle_DB": [
+     0.3265,
+     0.2388,
+     0.1769,
+     0.13,
+     0.0802,
+     0.0372,
+     0.0089
+    ],
+    "tackle_DL": [
+     0.3709,
+     0.2438,
+     0.1679,
+     0.113,
+     0.0636,
+     0.0294,
+     0.0103
+    ],
+    "tackle_LB": [
+     0.4262,
+     0.2809,
+     0.1765,
+     0.0785,
+     0.0288,
+     0.0075,
+     0.0014
+    ],
+    "target_RB": [
+     0.779,
+     0.2007,
+     0.0197
+    ],
+    "target_TE": [
+     0.7879,
+     0.1878,
+     0.0243
+    ],
+    "target_WR": [
+     0.4667,
+     0.3002,
+     0.1734,
+     0.0551,
+     0.0045
+    ]
+   },
+   "run_tfl_play_rate": 0.0907,
+   "rush_share": {
+    "FB": 0.0394,
+    "QB": 0.0789,
+    "RB": 0.8479,
+    "TE": 0.001,
+    "WR": 0.0314
+   },
+   "sack_share": {
+    "DB": 0.1035,
+    "DL": 0.5428,
+    "LB": 0.3537
+   },
+   "scrimmage_first_downs_per_team_game": 17.469,
+   "tackle_share": {
+    "DB": 0.3998,
+    "DL": 0.2263,
+    "LB": 0.3522
+   },
+   "target_share": {
+    "FB": 0.0304,
+    "RB": 0.1656,
+    "TE": 0.2077,
+    "WR": 0.5953
+   },
+   "tfl_share": {
+    "DB": 0.1901,
+    "DL": 0.4285,
+    "LB": 0.381
+   },
+   "third_down_attempts_per_team_game": 13.359
+  },
+  "2011": {
+   "assisted_tackle_play_rate": 0.2004,
+   "interception_share": {
+    "DB": 0.7846,
+    "DL": 0.0336,
+    "LB": 0.1818
+   },
+   "negative_run_loss_distribution": {
+    "1": 0.4313,
+    "2": 0.2513,
+    "3": 0.1579,
+    "4": 0.0737,
+    "5": 0.0448,
+    "6+": 0.041
+   },
+   "negative_run_rate": 0.0966,
+   "pass_defensed_share": {
+    "DB": 0.6813,
+    "DL": 0.1277,
+    "LB": 0.1911
+   },
+   "passing": {
+    "qb1_attempt_share": 0.9747,
+    "single_passer_team_game_rate": 0.8184
+   },
+   "penalty_first_downs_per_team_game": 1.709,
+   "rank_shares": {
+    "rush_RB": [
+     0.7261,
+     0.2308,
+     0.0414,
+     0.0016
+    ],
+    "tackle_DB": [
+     0.3222,
+     0.2373,
+     0.1796,
+     0.1321,
+     0.0832,
+     0.0354,
+     0.0093
+    ],
+    "tackle_DL": [
+     0.3652,
+     0.246,
+     0.1662,
+     0.1115,
+     0.0656,
+     0.0305,
+     0.0123
+    ],
+    "tackle_LB": [
+     0.4299,
+     0.2841,
+     0.1757,
+     0.075,
+     0.0261,
+     0.0076,
+     0.0014
+    ],
+    "target_RB": [
+     0.7575,
+     0.2065,
+     0.0352
+    ],
+    "target_TE": [
+     0.7871,
+     0.1908,
+     0.0221
+    ],
+    "target_WR": [
+     0.4659,
+     0.2976,
+     0.1719,
+     0.0537,
+     0.0101
+    ]
+   },
+   "run_tfl_play_rate": 0.095,
+   "rush_share": {
+    "FB": 0.0277,
+    "QB": 0.0895,
+    "RB": 0.8589,
+    "TE": 0.0015,
+    "WR": 0.0208
+   },
+   "sack_share": {
+    "DB": 0.0804,
+    "DL": 0.5648,
+    "LB": 0.3527
+   },
+   "scrimmage_first_downs_per_team_game": 17.76,
+   "tackle_share": {
+    "DB": 0.4007,
+    "DL": 0.2249,
+    "LB": 0.3519
+   },
+   "target_share": {
+    "FB": 0.0266,
+    "RB": 0.1712,
+    "TE": 0.213,
+    "WR": 0.5874
+   },
+   "tfl_share": {
+    "DB": 0.1596,
+    "DL": 0.4434,
+    "LB": 0.3962
+   },
+   "third_down_attempts_per_team_game": 13.262
+  },
+  "2012": {
+   "assisted_tackle_play_rate": 0.2041,
+   "interception_share": {
+    "DB": 0.7863,
+    "DL": 0.0192,
+    "LB": 0.1944
+   },
+   "negative_run_loss_distribution": {
+    "1": 0.4301,
+    "2": 0.2524,
+    "3": 0.1434,
+    "4": 0.0849,
+    "5": 0.0417,
+    "6+": 0.0475
+   },
+   "negative_run_rate": 0.1007,
+   "pass_defensed_share": {
+    "DB": 0.6728,
+    "DL": 0.1353,
+    "LB": 0.1919
+   },
+   "passing": {
+    "qb1_attempt_share": 0.9783,
+    "single_passer_team_game_rate": 0.8281
+   },
+   "penalty_first_downs_per_team_game": 1.795,
+   "rank_shares": {
+    "rush_RB": [
+     0.7414,
+     0.2131,
+     0.0437,
+     0.0018
+    ],
+    "tackle_DB": [
+     0.3237,
+     0.2382,
+     0.1789,
+     0.131,
+     0.0847,
+     0.0347,
+     0.0077
+    ],
+    "tackle_DL": [
+     0.3749,
+     0.2391,
+     0.165,
+     0.1134,
+     0.0646,
+     0.0306,
+     0.0106
+    ],
+    "tackle_LB": [
+     0.4397,
+     0.2913,
+     0.1695,
+     0.0679,
+     0.0233,
+     0.0062,
+     0.0016
+    ],
+    "target_RB": [
+     0.7542,
+     0.2107,
+     0.0329
+    ],
+    "target_TE": [
+     0.7923,
+     0.1859,
+     0.0218
+    ],
+    "target_WR": [
+     0.4685,
+     0.2983,
+     0.1657,
+     0.0571,
+     0.01
+    ]
+   },
+   "run_tfl_play_rate": 0.0984,
+   "rush_share": {
+    "FB": 0.0215,
+    "QB": 0.0901,
+    "RB": 0.867,
+    "TE": 0.0004,
+    "WR": 0.019
+   },
+   "sack_share": {
+    "DB": 0.0633,
+    "DL": 0.5994,
+    "LB": 0.3373
+   },
+   "scrimmage_first_downs_per_team_game": 18.049,
+   "tackle_share": {
+    "DB": 0.4012,
+    "DL": 0.2263,
+    "LB": 0.3529
+   },
+   "target_share": {
+    "FB": 0.026,
+    "RB": 0.1552,
+    "TE": 0.2148,
+    "WR": 0.6022
+   },
+   "tfl_share": {
+    "DB": 0.1693,
+    "DL": 0.4559,
+    "LB": 0.3736
+   },
+   "third_down_attempts_per_team_game": 13.309
+  },
+  "2013": {
+   "assisted_tackle_play_rate": 0.2046,
+   "interception_share": {
+    "DB": 0.745,
+    "DL": 0.0398,
+    "LB": 0.2151
+   },
+   "negative_run_loss_distribution": {
+    "1": 0.4078,
+    "2": 0.2705,
+    "3": 0.1504,
+    "4": 0.0814,
+    "5": 0.0465,
+    "6+": 0.0434
+   },
+   "negative_run_rate": 0.0956,
+   "pass_defensed_share": {
+    "DB": 0.6839,
+    "DL": 0.1204,
+    "LB": 0.1949
+   },
+   "passing": {
+    "qb1_attempt_share": 0.9754,
+    "single_passer_team_game_rate": 0.8457
+   },
+   "penalty_first_downs_per_team_game": 1.834,
+   "rank_shares": {
+    "rush_RB": [
+     0.733,
+     0.2305,
+     0.0348,
+     0.0018
+    ],
+    "tackle_DB": [
+     0.3227,
+     0.236,
+     0.1774,
+     0.1308,
+     0.0848,
+     0.0368,
+     0.0096
+    ],
+    "tackle_DL": [
+     0.3743,
+     0.2459,
+     0.1697,
+     0.1068,
+     0.06,
+     0.0304,
+     0.0109
+    ],
+    "tackle_LB": [
+     0.4525,
+     0.2956,
+     0.1569,
+     0.0645,
+     0.0214,
+     0.0071,
+     0.0017
+    ],
+    "target_RB": [
+     0.7646,
+     0.2056,
+     0.0271
+    ],
+    "target_TE": [
+     0.7927,
+     0.1814,
+     0.0251
+    ],
+    "target_WR": [
+     0.4697,
+     0.2959,
+     0.1738,
+     0.0529,
+     0.0074
+    ]
+   },
+   "run_tfl_play_rate": 0.0942,
+   "rush_share": {
+    "FB": 0.0232,
+    "QB": 0.0976,
+    "RB": 0.8586,
+    "TE": 0.0014,
+    "WR": 0.0168
+   },
+   "sack_share": {
+    "DB": 0.0823,
+    "DL": 0.5567,
+    "LB": 0.361
+   },
+   "scrimmage_first_downs_per_team_game": 18.104,
+   "tackle_share": {
+    "DB": 0.4025,
+    "DL": 0.2286,
+    "LB": 0.3485
+   },
+   "target_share": {
+    "FB": 0.0251,
+    "RB": 0.1664,
+    "TE": 0.2081,
+    "WR": 0.599
+   },
+   "tfl_share": {
+    "DB": 0.1533,
+    "DL": 0.4667,
+    "LB": 0.3796
+   },
+   "third_down_attempts_per_team_game": 13.609
+  },
+  "2014w4": {
+   "assisted_tackle_play_rate": 0.2134,
+   "interception_share": {
+    "DB": 0.7941,
+    "DL": 0.0588,
+    "LB": 0.1471
+   },
+   "negative_run_loss_distribution": {
+    "1": 0.3926,
+    "2": 0.2919,
+    "3": 0.1409,
+    "4": 0.0805,
+    "5": 0.0436,
+    "6+": 0.0503
+   },
+   "negative_run_rate": 0.0925,
+   "pass_defensed_share": {
+    "DB": 0.7053,
+    "DL": 0.1257,
+    "LB": 0.167
+   },
+   "passing": {
+    "qb1_attempt_share": 0.9731,
+    "single_passer_team_game_rate": 0.8033
+   },
+   "penalty_first_downs_per_team_game": 2.23,
+   "rank_shares": {
+    "rush_RB": [
+     0.6917,
+     0.255,
+     0.049,
+     0.0044
+    ],
+    "tackle_DB": [
+     0.314,
+     0.227,
+     0.1791,
+     0.133,
+     0.0874,
+     0.0441,
+     0.0127
+    ],
+    "tackle_DL": [
+     0.3691,
+     0.2452,
+     0.168,
+     0.1106,
+     0.0642,
+     0.0271,
+     0.0115
+    ],
+    "tackle_LB": [
+     0.4339,
+     0.2858,
+     0.1621,
+     0.0751,
+     0.0314,
+     0.0103,
+     0.0014
+    ],
+    "target_RB": [
+     0.7507,
+     0.2198,
+     0.0258
+    ],
+    "target_TE": [
+     0.7854,
+     0.1802,
+     0.0344
+    ],
+    "target_WR": [
+     0.4634,
+     0.2997,
+     0.1669,
+     0.0587,
+     0.0109
+    ]
+   },
+   "run_tfl_play_rate": 0.0907,
+   "rush_share": {
+    "FB": 0.0124,
+    "QB": 0.0953,
+    "RB": 0.8671,
+    "TE": 0.0012,
+    "WR": 0.0233
+   },
+   "sack_share": {
+    "DB": 0.0958,
+    "DL": 0.5687,
+    "LB": 0.3354
+   },
+   "scrimmage_first_downs_per_team_game": 18.697,
+   "tackle_share": {
+    "DB": 0.422,
+    "DL": 0.2144,
+    "LB": 0.3452
+   },
+   "target_share": {
+    "FB": 0.0156,
+    "RB": 0.1678,
+    "TE": 0.2107,
+    "WR": 0.6047
+   },
+   "tfl_share": {
+    "DB": 0.1766,
+    "DL": 0.4568,
+    "LB": 0.3666
+   },
+   "third_down_attempts_per_team_game": 13.066
+  }
+ }
+}

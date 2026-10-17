@@ -217,6 +217,8 @@ case. This prevents arbitrary age curves, draft-status bonuses or hard-coded
 
 The hidden change must not be written directly into coach-facing reports.
 
+*Dated note (October 2, 2026):* by Stone's explicit decision, kernel 2014.6 adopts aging and experience curves pooled over 2010-2014, draft-slot starting estimates for players without a pre-2013 record, and a recorded once-per-season swing. They are fitted, externally calibrated priors on the engine's hidden player state, the calibrated-prior case this section requires, not a silent default. They are not transitions resolved by this model. They never enter coach-facing reports or staff grades, and no staff assessment reads them. See [Kernel 2014.6 decisions](../../../../runtime/2014_engine_decisions.md#kernel-20146-decisions-dated).
+
 ### Observed belief
 
 `ObservedTraitUpdate` records what the staff/user can currently support. Its

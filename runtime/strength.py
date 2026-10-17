@@ -110,11 +110,54 @@ this record only after the possession is resolved and can change no score.
 
 Nothing here reads a club name or which side is the protagonist; Jacksonville
 is scored from the same evidence files by the same rule.
+
+Kernel 2014.6 (batch B7): model player-state-v1 (PLAYER_STATE_MODEL), the
+entry PROFILE_2014_6 resolves with. The honours and production rules above
+stay the record's public evidence; what changes is the value a lineup slot
+reads and the fitted terms:
+
+* each player's value is his drawn player state in his family's true-state SD
+  units (runtime/player_state.py: the public expectation plus the private
+  once-per-season draw the service made at bind, fetched after the event is
+  journaled and written into the record as `latent_value`); a no-state row
+  (offensive linemen, long snappers) and a family with no spread read 0
+  (since U5, October 16, 2026, no family is held: linebackers carry pass 1's
+  swing set, and the table carries the aging curves and draft-slot
+  starting estimates);
+* the family's side rule replaces the tier's: an offensive family counts only
+  on offense, a defensive family only on defense, the QB family only in the
+  passer slot and no other family there; a position change moves the matchup
+  slot only (the value is keyed by gsis id, never by position);
+* honours act as floors: with an admissible honour on that side (the QB rule
+  included) the slot reads max(drawn value, honours value), never less;
+* offensive linemen keep rule B plus honours (the honours value if any, else
+  0 proven, OL_UNPROVEN_VALUE unproven);
+* TERMS_V4 (library/data/2014_strength_calibration_v4.json, read at import
+  under its sha256 pin, never typed): passing on touchdown share and passing
+  on interception share are live; protection-to-sack and run defense turned
+  off by the keep rule (U3), every other term carried at slope 0 with its
+  composite centre so a receipt shows every sub-composite;
+* HOME_EDGE_V4 is the drive-level joint regression's home term and
+  PUNTER_SLOPE_V4 the refit on the committed net definition; the punter's
+  input stays his public pre-divergence net (`deviation`); the kicker and
+  returner terms stay 0;
+* the attribution tilt (runtime/usage.py) reads the drawn tier
+  (`drawn_tier`, U5 accepted October 16, 2026: the player's drawn value
+  against his family's cut points from the tier population on the
+  production-evidence qualifier floors), with the v2 factors and no-state
+  players at the Average factor; the honours-production `attribution_tier`
+  stays the record's tier for the older models;
+* under this model the kernel publishes no per-possession strength block
+  (the drawn values would be readable from the contributors), and a record
+  whose drawable players lack their latent value fails closed
+  (runtime.player_state.latent_errors).
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import re
+from dataclasses import dataclass
 from datetime import date
 from functools import lru_cache
 from pathlib import Path
@@ -194,6 +237,112 @@ EDGE_CLAMP = 0.12
 # Legacy anchor path (TeamInputs without a strength record).
 LEGACY_ANCHOR_SCALE = 0.025
 LEGACY_ANCHOR_CENTRE = 2.0
+
+
+
+@dataclass(frozen=True)
+class StrengthParameters:
+    """Every resolution constant of one strength model version (kernel 2014.6
+    plumbing, batch B1). The kernel reads its profile's entry of PARAMETERS
+    (runtime.profiles.Profile.strength); the module constants above are the
+    honours-production-v3 entry, checked against their files by the tests."""
+    model: str
+    offense_slope: float
+    defense_slope: float
+    offense_centre: float
+    defense_centre: float
+    terms: tuple
+    sack_shift_clamp: float
+    int_edge_clamp: float
+    punter_slope: float
+    kicker_slope: float
+    kick_returner_slope: float
+    punt_returner_slope: float
+    fg_prob_floor: float
+    fg_prob_ceiling: float
+    home_edge: float
+    edge_clamp: float
+    legacy_anchor_scale: float
+    legacy_anchor_centre: float
+
+
+# Per-version table. Kernels 2014.4 and 2014.5 resolve with
+# honours-production-v3; a later model is a new entry, never an edit.
+PARAMETERS = {
+    MODEL: StrengthParameters(
+        model=MODEL, offense_slope=OFFENSE_SLOPE, defense_slope=DEFENSE_SLOPE,
+        offense_centre=OFFENSE_CENTRE, defense_centre=DEFENSE_CENTRE, terms=TERMS,
+        sack_shift_clamp=SACK_SHIFT_CLAMP, int_edge_clamp=INT_EDGE_CLAMP, punter_slope=PUNTER_SLOPE,
+        kicker_slope=KICKER_SLOPE, kick_returner_slope=KICK_RETURNER_SLOPE,
+        punt_returner_slope=PUNT_RETURNER_SLOPE, fg_prob_floor=FG_PROB_FLOOR, fg_prob_ceiling=FG_PROB_CEILING,
+        home_edge=HOME_EDGE, edge_clamp=EDGE_CLAMP, legacy_anchor_scale=LEGACY_ANCHOR_SCALE,
+        legacy_anchor_centre=LEGACY_ANCHOR_CENTRE),
+}
+
+
+def parameters(model=MODEL):
+    """The parameter-table entry of a strength model version; unknown raises."""
+    try:
+        return PARAMETERS[model]
+    except KeyError:
+        raise ValueError("no strength parameters are registered for model %r" % (model,)) from None
+
+
+# ---- Kernel 2014.6 (batch B7): the player-state model's parameter entry -----------
+PLAYER_STATE_MODEL = "player-state-v1"
+V4_CALIBRATION = ROOT / "library/data/2014_strength_calibration_v4.json"
+V4_SHA256 = "44374a747ed1e4b319fb4bb2e68451c27f229e99ab77416c1af93f49a86a5b31"
+# The fitted terms in a fixed order (the three kernel channels; the ypc
+# terms have no channel and are reported only).
+V4_TERM_ORDER = ("td_share_offense_passing", "td_share_defense_run_defense", "sack_rate_offense_protection",
+                 "sack_rate_defense_rush", "int_share_offense_passing", "int_share_defense_coverage",
+                 "td_share_offense_run", "td_share_defense_coverage")
+
+
+@lru_cache(maxsize=1)
+def v4_calibration_file():
+    raw = V4_CALIBRATION.read_bytes()
+    if hashlib.sha256(raw).hexdigest() != V4_SHA256:
+        raise ValueError("library/data/2014_strength_calibration_v4.json differs from its pinned sha256")
+    data = json.loads(raw.decode("utf-8"))
+    if data.get("schema") != "2014-strength-calibration-v4":
+        raise ValueError("unknown strength v4 schema")
+    return data
+
+
+def _v4_terms(data):
+    terms = []
+    for name in V4_TERM_ORDER:
+        outcome = "td_share" if name.startswith("td_share") else "sack_rate" if name.startswith("sack_rate") \
+            else "int_share"
+        rest = name[len(outcome) + 1:]
+        side, unit = rest.split("_", 1)
+        fit = data["fits"][name]
+        kept = bool(data["kept"].get(name))
+        slope = float(data["adopted_terms"][name]["slope"]) if kept else 0.0
+        terms.append({"name": name, "outcome": outcome, "side": side, "unit": unit, "slope": slope,
+                      "centre": float(fit["composite_mean"]), "active": kept})
+    return tuple(terms)
+
+
+def _register_player_state_parameters():
+    data = v4_calibration_file()
+    PARAMETERS[PLAYER_STATE_MODEL] = StrengthParameters(
+        model=PLAYER_STATE_MODEL, offense_slope=OFFENSE_SLOPE, defense_slope=DEFENSE_SLOPE,
+        offense_centre=OFFENSE_CENTRE, defense_centre=DEFENSE_CENTRE, terms=_v4_terms(data),
+        sack_shift_clamp=SACK_SHIFT_CLAMP, int_edge_clamp=INT_EDGE_CLAMP,
+        punter_slope=float(data["punter"]["adopted"]["slope"]) if data["punter"]["adopted"].get("kept") else 0.0,
+        kicker_slope=float(data["kicker_slope"]), kick_returner_slope=float(data["returner_slope"]),
+        punt_returner_slope=float(data["returner_slope"]), fg_prob_floor=FG_PROB_FLOOR,
+        fg_prob_ceiling=FG_PROB_CEILING, home_edge=float(data["home_edge"]["value"]), edge_clamp=EDGE_CLAMP,
+        legacy_anchor_scale=LEGACY_ANCHOR_SCALE, legacy_anchor_centre=LEGACY_ANCHOR_CENTRE)
+
+
+_register_player_state_parameters()
+TERMS_V4 = PARAMETERS[PLAYER_STATE_MODEL].terms
+HOME_EDGE_V4 = PARAMETERS[PLAYER_STATE_MODEL].home_edge
+PUNTER_SLOPE_V4 = PARAMETERS[PLAYER_STATE_MODEL].punter_slope
+
 
 DIVERGENCE = "2013-01-15"
 LAST_PRE_DIVERGENCE_SEASON = 2012
@@ -536,31 +685,71 @@ def resolve_id(row, club_code, season):
 
 # ---- TeamInput strength record --------------------------------------------------
 
-def team_strength(team_name, roster, season, as_of):
+def live_model():
+    """The strength model of the installed kernel's profile."""
+    from . import KERNEL_VERSION
+    from .profiles import profile_for
+    return profile_for(KERNEL_VERSION).strength
+
+
+def team_strength(team_name, roster, season, as_of, model=None):
     """(strength record for TeamInput.strength, coverage receipt).
 
-    The record carries only players with admissible evidence (honours or
-    production); every other roster player is an Average low-confidence
-    fallback, listed with the reason in the coverage receipt. Identical for
-    every club."""
+    `model` is the strength model (the installed kernel's when None). Under
+    honours-production-v3 the record carries only players with admissible
+    evidence (honours or production); every other roster player is an
+    Average low-confidence fallback, listed with the reason in the coverage
+    receipt. Under player-state-v1 every roster row must carry its gsis id
+    (an unresolved identity fails closed), the record adds each player's
+    public state {family, basis, expected, drawn} and the league year's
+    bound manifest digest, commitment and sorted latent keys; a player with
+    no public row is listed as a fallback (no state, honours only).
+    Identical for every club."""
+    model = model or live_model()
+    if model not in PARAMETERS:
+        raise ValueError("unknown strength model %r" % (model,))
     code = club_codes(season).get(team_name, team_name)
     players, fallbacks, receipts = {}, [], []
+    state_model = model == PLAYER_STATE_MODEL
+    if state_model:
+        from . import player_state
+        bound = player_state.require_binding(season)
     for row in roster:
         pid = row["player_id"] if isinstance(row, dict) else row.player_id
         data = row if isinstance(row, dict) else {"player_id": pid, "gsis_id": getattr(row, "gsis_id", None)}
         gsis, join = resolve_id(data, code, season)
         if gsis is None:
+            if state_model:
+                raise ValueError("%s: no gsis id for %s (%s); the player-state model needs every identity"
+                                 % (team_name, pid, join))
             fallbacks.append({"player_id": pid, "reason": "identity_" + join})
             continue
         record, rejected = player_record(gsis, season, as_of)
         if rejected:
             receipts.append({"player_id": pid, "gsis_id": gsis, "rejected": rejected})
+        if state_model:
+            state = player_state.public_state(gsis, season)
+            if state is None:
+                fallbacks.append({"player_id": pid, "gsis_id": gsis, "reason": "no_public_state"})
+            if record is None and state is None:
+                continue
+            players[pid] = {"gsis_id": gsis, "join": join, **(record or {"offdef": None, "special": None,
+                                                                          "production": None})}
+            if state is not None:
+                players[pid]["state"] = state
+            continue
         if record is None:
             fallbacks.append({"player_id": pid, "reason": "no_admissible_evidence"})
             continue
         players[pid] = {"gsis_id": gsis, "join": join, **record}
-    strength = {"model": MODEL, "season": int(season), "as_of": _iso(as_of),
+    strength = {"model": model, "season": int(season), "as_of": _iso(as_of),
                 "honour_seasons": list(honour_seasons(season)), "players": players}
+    if state_model:
+        strength.update({
+            "league_year": int(season), "manifest_sha256": bound["manifest_sha256"],
+            "commitment": bound["commitment"],
+            "latent_keys": player_state.record_keys(
+                sorted(p["gsis_id"] for p in players.values() if (p.get("state") or {}).get("drawn")), season)})
     coverage = {"team": team_name, "code": code, "roster_players": len(roster),
                 "with_evidence": sorted(players),
                 "with_honours": sorted(p for p, r in players.items() if r.get("offdef") or r.get("special")),
@@ -568,6 +757,12 @@ def team_strength(team_name, roster, season, as_of):
                 "with_job_evidence": sorted(p for p, r in players.items() if r.get("job")),
                 "with_return_evidence": sorted(p for p, r in players.items() if r.get("returns")),
                 "fallbacks": fallbacks, "rejected": receipts}
+    if state_model:
+        coverage["with_state"] = sorted(p for p, r in players.items() if (r.get("state") or {}).get("drawn"))
+        coverage["state_bases"] = {}
+        for r in players.values():
+            basis = (r.get("state") or {}).get("basis") or "no_public_row"
+            coverage["state_bases"][basis] = coverage["state_bases"].get(basis, 0) + 1
     return strength, coverage
 
 
@@ -584,7 +779,7 @@ def coverage_report(season, as_of, rosters=None):
                 rosters[names[p["inventory_club"]]].append({"player_id": p["player_id"]})
     clubs = {}
     for team, roster in sorted(rosters.items()):
-        strength, coverage = team_strength(team, roster, season, as_of)
+        strength, coverage = team_strength(team, roster, season, as_of, model=MODEL)
         clubs[team] = {**coverage, "strength": strength}
     return {"model": MODEL, "season": int(season), "as_of": _iso(as_of),
             "honour_seasons": list(honour_seasons(season)), "clubs": clubs,
@@ -646,14 +841,35 @@ def defense_units(view):
             "run_defense": dl + lb + ([("DB", box)] if box is not None else [])}
 
 
+def _honours_value(record, slot, side):
+    part = (record or {}).get("offdef")
+    if part and part["unit"] == side and (slot == "QB") == (part["honour_group"] == "QB"):
+        return part["value"]
+    return 0.0
+
+
+def state_slot_value(record, slot, side):
+    """(value, honours value, drawn value) of one player in one lineup slot
+    under the player-state model: his drawn value in SD units when his
+    family's side is this side (the QB family only in the passer slot and
+    no other family there), with an admissible honour on that side as a
+    floor. A record without a state reads the honours value alone."""
+    from . import player_state
+    honours = _honours_value(record, slot, side)
+    state = (record or {}).get("state") or {}
+    drawn = 0.0
+    family = state.get("family")
+    if state.get("drawn") and player_state.FAMILY_SIDE.get(family) == side and (slot == "QB") == (family == "QB"):
+        if "latent_value" not in record:
+            raise player_state.PlayerStateError("latent value missing for a drawn player")
+        drawn = float(record["latent_value"])
+    return (max(honours, drawn) if honours > 0 else drawn), honours, drawn
+
+
 def slot_value(record, slot, side):
     """(value, honours value, production value) of one player in one lineup
     slot under the preregistered max rule and the side/passer rule."""
-    honours = 0.0
-    part = (record or {}).get("offdef")
-    if part and part["unit"] == side:
-        if (slot == "QB") == (part["honour_group"] == "QB"):
-            honours = part["value"]
+    honours = _honours_value(record, slot, side)
     production = 0.0
     prod = (record or {}).get("production")
     if prod and prod["unit"] == side and (slot == "QB") == (prod["group"] == "QB"):
@@ -670,6 +886,7 @@ def composite(strength, starters, side, unit=None):
     an OL slot with no honour and no proven window job counts
     OL_UNPROVEN_VALUE."""
     players = (strength or {}).get("players", {})
+    state_model = (strength or {}).get("model") == PLAYER_STATE_MODEL
     total, rows = 0.0, []
     seen = set()
     for slot, player in starters:
@@ -677,7 +894,10 @@ def composite(strength, starters, side, unit=None):
             continue
         seen.add(player.player_id)
         record = players.get(player.player_id)
-        value, honours, production = slot_value(record, slot, side)
+        if state_model:
+            value, honours, production = state_slot_value(record, slot, side)
+        else:
+            value, honours, production = slot_value(record, slot, side)
         unproven = False
         if slot == "OL" and unit in ("protection", "run") and honours <= 0:
             if not ((record or {}).get("job") or {}).get("proven"):
@@ -692,8 +912,10 @@ def composite(strength, starters, side, unit=None):
         if honours:
             row["tier"] = record["offdef"]["tier"]
             row["evidence_weight"] = record["offdef"]["evidence_weight"]
-        if production:
+        if production and not state_model:
             row["production_tier"] = record["production"]["tier"]
+        if production and state_model:
+            row["drawn_value"] = production
         if unproven:
             row["ol_unproven"] = True
         rows.append(row)
@@ -710,11 +932,12 @@ def unit_composites(strength, view, side, passer=None):
     return out
 
 
-def term_parts(units_by_side):
+def term_parts(units_by_side, params=None):
     """{term name: part} for every phase-2 term from the two sides' unit
     composites (a side without a record contributes no term)."""
+    params = params or parameters()
     parts = {}
-    for term in TERMS:
+    for term in params.terms:
         units = units_by_side.get(term["side"])
         if units is None:
             continue
@@ -722,11 +945,13 @@ def term_parts(units_by_side):
     return parts
 
 
-def drive_edge(offense_team, defense_team, off_view, def_view, passer, home_offense):
+def drive_edge(offense_team, defense_team, off_view, def_view, passer, home_offense, params=None):
     """(touchdown-share edge, receipt) for one drive. `home_offense` is True
     only for the designated home club's offense at a home venue. The receipt
     also carries `int_edge` (interception-share shift) and `sack_shift`
-    (per-dropback sack-probability shift) for the drive draw."""
+    (per-dropback sack-probability shift) for the drive draw. `params` is the
+    profile's StrengthParameters (honours-production-v3 when None)."""
+    params = params or parameters()
     receipt = {"units": {}, "terms": {}}
     units_by_side = {}
     if getattr(offense_team, "strength", None):
@@ -734,29 +959,30 @@ def drive_edge(offense_team, defense_team, off_view, def_view, passer, home_offe
         receipt["units"]["offense"] = units_by_side["offense"]
         off_part = None
     else:
-        off_part = (offense_team.offense_anchor - LEGACY_ANCHOR_CENTRE) * LEGACY_ANCHOR_SCALE
+        off_part = (offense_team.offense_anchor - params.legacy_anchor_centre) * params.legacy_anchor_scale
     if getattr(defense_team, "strength", None):
         units_by_side["defense"] = unit_composites(defense_team.strength, def_view, "defense")
         receipt["units"]["defense"] = units_by_side["defense"]
         def_part = None
     else:
-        def_part = (defense_team.defense_anchor - LEGACY_ANCHOR_CENTRE) * LEGACY_ANCHOR_SCALE
-    parts = term_parts(units_by_side)
+        def_part = (defense_team.defense_anchor - params.legacy_anchor_centre) * params.legacy_anchor_scale
+    parts = term_parts(units_by_side, params)
     receipt["terms"] = parts
 
     def total(outcome, side):
-        return sum(v for t, v in ((t, parts.get(t["name"])) for t in TERMS)
+        return sum(v for t, v in ((t, parts.get(t["name"])) for t in params.terms)
                    if v is not None and t["outcome"] == outcome and t["side"] == side)
 
     if off_part is None:
         off_part = total("td_share", "offense")
     if def_part is None:
         def_part = total("td_share", "defense")
-    home = HOME_EDGE if home_offense else 0.0
-    edge = max(-EDGE_CLAMP, min(EDGE_CLAMP, off_part - def_part + home))
-    int_edge = max(-INT_EDGE_CLAMP, min(INT_EDGE_CLAMP, total("int_share", "defense") - total("int_share", "offense")))
-    sack_shift = max(-SACK_SHIFT_CLAMP, min(SACK_SHIFT_CLAMP,
-                                            total("sack_rate", "defense") - total("sack_rate", "offense")))
+    home = params.home_edge if home_offense else 0.0
+    edge = max(-params.edge_clamp, min(params.edge_clamp, off_part - def_part + home))
+    int_edge = max(-params.int_edge_clamp, min(params.int_edge_clamp,
+                                               total("int_share", "defense") - total("int_share", "offense")))
+    sack_shift = max(-params.sack_shift_clamp, min(params.sack_shift_clamp,
+                                                   total("sack_rate", "defense") - total("sack_rate", "offense")))
     receipt.update({"offense_part": off_part, "defense_part": def_part, "home": home, "edge": edge,
                     "int_edge": int_edge, "sack_shift": sack_shift})
     return edge, receipt
@@ -780,24 +1006,27 @@ def _special_value(strength, player, kind):
     return part.get("value", 0.0), part.get("deviation")
 
 
-def kicker_adjustment(strength, kicker):
+def kicker_adjustment(strength, kicker, params=None):
     """(make-probability shift, receipt): KICKER_SLOPE x the kicker's tier value."""
+    params = params or parameters()
     value, _ = _special_value(strength, kicker, "K")
-    shift = KICKER_SLOPE * value
+    shift = params.kicker_slope * value
     return shift, {"player_id": getattr(kicker, "player_id", None), "value": value, "shift": shift}
 
 
-def punter_adjustment(strength, punter):
+def punter_adjustment(strength, punter, params=None):
     """(gross-yards shift, receipt): PUNTER_SLOPE x the punter's shrunk net
     above his season's league mean (the continuous predictor), rounded."""
+    params = params or parameters()
     _, deviation = _special_value(strength, punter, "P")
-    shift = int(round(PUNTER_SLOPE * deviation)) if deviation is not None else 0
+    shift = int(round(params.punter_slope * deviation)) if deviation is not None else 0
     return shift, {"player_id": getattr(punter, "player_id", None), "deviation": deviation, "shift": shift}
 
 
-def returner_adjustment(strength, returner, kind):
+def returner_adjustment(strength, returner, kind, params=None):
     """(return-yards shift, receipt): the returner slope x his tier value, rounded."""
+    params = params or parameters()
     value, _ = _special_value(strength, returner, kind)
-    slope = KICK_RETURNER_SLOPE if kind == "KR" else PUNT_RETURNER_SLOPE
+    slope = params.kick_returner_slope if kind == "KR" else params.punt_returner_slope
     shift = int(round(slope * value))
     return shift, {"player_id": getattr(returner, "player_id", None), "value": value, "shift": shift}

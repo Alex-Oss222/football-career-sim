@@ -3,7 +3,9 @@ from pathlib import Path
 from runtime.anchors import evidence_anchor, initialize_team
 from runtime.calibration import load, validate
 from runtime.injuries import maybe_injury
+from dataclasses import replace
 from runtime.kernel import TeamInput, resolve_game, validate_result
+from runtime.profiles import PROFILE_2014_5
 from runtime.game_runner import resolve_background_game, resolve_protagonist_game
 from runtime.rules import RULES, DIVISION_TIEBREAKERS, WILD_CARD_TIEBREAKERS, PLAYOFF_SEEDS, review_authority
 
@@ -79,6 +81,11 @@ class RuntimeTests(unittest.TestCase):
             resolve_game(a,b,seed=self.seed,event_id='pause',management_mode='user_controlled')
         with self.assertRaises(ValueError):
             resolve_game(a,b,seed=self.seed,event_id='pause',continuation={'decisions':[]})
+        # Kernel 2014.6 (U6): the controlled club needs its two-point and
+        # kickoff blocks; without them the user-controlled game fails closed.
+        with self.assertRaisesRegex(ValueError,'U6'):
+            resolve_game(a,b,seed=self.seed,event_id='pause',management_mode='user_controlled',controlled_team='A')
+        a=replace(a,try_policy={'otherwise':'league'},kickoff_policy={'otherwise':'league'})
         done=resolve_game(a,b,seed=self.seed,event_id='pause',management_mode='user_controlled',controlled_team='A')
         self.assertTrue(done['terminated'] or done['pauses'][-1]['team']=='A')
     # 250 games per test at most: the deploy image runs this whole suite.
@@ -102,11 +109,16 @@ class RuntimeTests(unittest.TestCase):
     def test_matchup_movement(self):
         def mean(x): return sum(x)/len(x)
         sa,sb=self.teams(2)
-        strong=[resolve_game(sa,sb,seed=self.seed,event_id=f'batch-{i}')['final_score']['A'] for i in range(250)]
+        # Same kernel as the shared neutral sample (PROFILE_2014_5).
+        strong=[resolve_game(sa,sb,seed=self.seed,event_id=f'batch-{i}',_test_profile=PROFILE_2014_5)['final_score']['A'] for i in range(250)]
         neutral=[r['final_score']['A'] for r in self.neutral_sample()]
         self.assertGreater(mean(strong),mean(neutral))
     def test_overtime_terminates_and_reconciles(self):
-        a,b=self.teams()
+        # Kernel 2014.6 (B10): a lost fumble's recoverer is a defender on the
+        # field, so the all-WR fixture carries a defensive eleven.
+        defenders=tuple(f"{pos}:d{i}" for i,pos in enumerate(('DE','DT','DT','DE','OLB','MLB','OLB','CB','CB','SS','FS')))
+        players=tuple(f"WR:p{i}" for i in range(46-len(defenders)))+defenders
+        a,b=TeamInput('A',players,2,2),TeamInput('B',players,2,2)
         found=None
         for i in range(500):
             result=resolve_game(a,b,seed=self.seed,event_id=f'ot-search-{i}')
@@ -116,7 +128,9 @@ class RuntimeTests(unittest.TestCase):
         self.assertLessEqual(sum(p['seconds'] for p in found['possessions']),4500)
 
     def test_penalties_are_event_generated_not_score_adjustments(self):
-        a,b=self.teams(); result=resolve_game(a,b,seed=self.seed,event_id='penalties')
+        # The kernel 2014.5 counter (5 to 10 yards a flag); kernel 2014.6's
+        # per-play penalty records are tested in tests/test_penalties.py.
+        a,b=self.teams(); result=resolve_game(a,b,seed=self.seed,event_id='penalties',_test_profile=PROFILE_2014_5)
         self.assertTrue(all(s['penalties']>=0 and s['penalty_yards']>=s['penalties']*5
                             for s in result['team_stats'].values()))
     def test_injury_bounds_position_and_replay(self):

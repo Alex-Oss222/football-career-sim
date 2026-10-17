@@ -1,0 +1,359 @@
+{
+ "builder": "scripts/research/build_2013_2014_participation_structure.py",
+ "by_season": {
+  "2013": {
+   "absence_absorption": {
+    "other family, moved up": 3,
+    "other family, new": 2,
+    "same family, moved up": 41,
+    "same family, new": 17
+   },
+   "db5_family": {
+    "CB": 383,
+    "S": 129
+   },
+   "db6_family": {
+    "CB": 235,
+    "S": 230
+   },
+   "rank_shares": {
+    "DB": [
+     0.9942,
+     0.9821,
+     0.9473,
+     0.8519,
+     0.5593,
+     0.2441,
+     0.0759
+    ],
+    "DL": [
+     0.8393,
+     0.7366,
+     0.5971,
+     0.4644,
+     0.3172,
+     0.1992,
+     0.1154
+    ],
+    "LB": [
+     0.9768,
+     0.88,
+     0.5925,
+     0.3337,
+     0.1338
+    ],
+    "OL": [
+     1.0,
+     0.9992,
+     0.9965,
+     0.9797,
+     0.9047,
+     0.1332,
+     0.027
+    ],
+    "QB": [
+     0.9729,
+     0.0274
+    ],
+    "RB": [
+     0.6667,
+     0.3411,
+     0.1524
+    ],
+    "TE": [
+     0.8268,
+     0.3665,
+     0.095
+    ],
+    "WR": [
+     0.8998,
+     0.7859,
+     0.5535,
+     0.1798,
+     0.0391,
+     0.0011
+    ]
+   },
+   "team_games": 512,
+   "top4_make_up": {
+    "1 CB / 3 S": 10,
+    "2 CB / 2 S": 455,
+    "3 CB / 1 S": 45,
+    "4 CB / 0 S": 2
+   }
+  },
+  "2014w4": {
+   "absence_absorption": {
+    "same family, moved up": 3,
+    "same family, new": 1
+   },
+   "db5_family": {
+    "CB": 100,
+    "S": 22
+   },
+   "db6_family": {
+    "CB": 60,
+    "S": 55
+   },
+   "rank_shares": {
+    "DB": [
+     0.9938,
+     0.9761,
+     0.9398,
+     0.8426,
+     0.5574,
+     0.2511,
+     0.0809
+    ],
+    "DL": [
+     0.795,
+     0.6853,
+     0.5424,
+     0.4394,
+     0.3232,
+     0.2158,
+     0.1316
+    ],
+    "LB": [
+     0.9775,
+     0.8651,
+     0.6068,
+     0.3548,
+     0.1859
+    ],
+    "OL": [
+     0.9998,
+     0.9989,
+     0.9915,
+     0.9745,
+     0.8997,
+     0.1266,
+     0.0359
+    ],
+    "QB": [
+     0.9694,
+     0.0314
+    ],
+    "RB": [
+     0.6333,
+     0.3135,
+     0.1629
+    ],
+    "TE": [
+     0.7993,
+     0.3888,
+     0.1117
+    ],
+    "WR": [
+     0.8892,
+     0.7931,
+     0.5547,
+     0.2056,
+     0.0468,
+     0.0033
+    ]
+   },
+   "team_games": 122,
+   "top4_make_up": {
+    "1 CB / 3 S": 3,
+    "2 CB / 2 S": 109,
+    "3 CB / 1 S": 10
+   }
+  }
+ },
+ "definitions": {
+  "absence_absorption": "a defensive back in the club's previous game's top four with no defensive snap in this game; the top-four entrant of his family if any, else another entrant; moved up = the entrant played in the previous game",
+  "db_family": "corner (CB, DB) or safety (S, SS, FS, SAF) from the weekly roster label",
+  "rank_shares": "per team-game, the group's players ranked by their side's snaps; each rank's snaps over the club's team snaps (the median of snaps / share over players at 50% or more)"
+ },
+ "information_boundary": "nflverse snap counts, 2013 regular season and 2014 Weeks 1-4 (cut at fetch); contemporaneous weekly-roster positions; anonymous league structure; no club, game, player or date field.",
+ "pooled": {
+  "absence_absorption": {
+   "other family, moved up": 3,
+   "other family, new": 2,
+   "same family, moved up": 44,
+   "same family, new": 18
+  },
+  "db5_family": {
+   "CB": 483,
+   "S": 151
+  },
+  "db6_family": {
+   "CB": 295,
+   "S": 285
+  },
+  "rank_shares": {
+   "DB": [
+    0.9941,
+    0.981,
+    0.9459,
+    0.8501,
+    0.5589,
+    0.2454,
+    0.0769
+   ],
+   "DL": [
+    0.8308,
+    0.7268,
+    0.5866,
+    0.4596,
+    0.3183,
+    0.2024,
+    0.1185
+   ],
+   "LB": [
+    0.9769,
+    0.8771,
+    0.5952,
+    0.3378,
+    0.1438
+   ],
+   "OL": [
+    1.0,
+    0.9991,
+    0.9956,
+    0.9787,
+    0.9037,
+    0.1319,
+    0.0287
+   ],
+   "QB": [
+    0.9722,
+    0.0282
+   ],
+   "RB": [
+    0.6603,
+    0.3358,
+    0.1544
+   ],
+   "TE": [
+    0.8215,
+    0.3708,
+    0.0982
+   ],
+   "WR": [
+    0.8978,
+    0.7873,
+    0.5537,
+    0.1848,
+    0.0406,
+    0.0015
+   ]
+  },
+  "team_games": 634,
+  "top4_make_up": {
+   "1 CB / 3 S": 13,
+   "2 CB / 2 S": 564,
+   "3 CB / 1 S": 55,
+   "4 CB / 0 S": 2
+  }
+ },
+ "position_joins": {
+  "2013": {
+   "snap_file_label": 2157,
+   "weekly_roster_joined": 20664
+  },
+  "2014w4": {
+   "snap_file_label": 445,
+   "weekly_roster_joined": 5016
+  }
+ },
+ "schema": "2013-2014-participation-structure-v1",
+ "second_pass_snap_file_labels": {
+  "absence_absorption": {
+   "other family, moved up": 3,
+   "other family, new": 2,
+   "same family, moved up": 44,
+   "same family, new": 18
+  },
+  "db5_family": {
+   "CB": 483,
+   "S": 151
+  },
+  "db6_family": {
+   "CB": 295,
+   "S": 285
+  },
+  "rank_shares": {
+   "DB": [
+    0.9941,
+    0.981,
+    0.9459,
+    0.8501,
+    0.5589,
+    0.2454,
+    0.0769
+   ],
+   "DL": [
+    0.8308,
+    0.7268,
+    0.5866,
+    0.4596,
+    0.3178,
+    0.203,
+    0.1182
+   ],
+   "LB": [
+    0.9769,
+    0.8771,
+    0.5958,
+    0.3383,
+    0.1436
+   ],
+   "OL": [
+    1.0,
+    0.9991,
+    0.9956,
+    0.9787,
+    0.9037,
+    0.1319,
+    0.0287
+   ],
+   "QB": [
+    0.9722,
+    0.0282
+   ],
+   "RB": [
+    0.6603,
+    0.3358,
+    0.1544
+   ],
+   "TE": [
+    0.8215,
+    0.3708,
+    0.0982
+   ],
+   "WR": [
+    0.8978,
+    0.7873,
+    0.5537,
+    0.1848,
+    0.0406,
+    0.0015
+   ]
+  },
+  "team_games": 634,
+  "top4_make_up": {
+   "1 CB / 3 S": 13,
+   "2 CB / 2 S": 564,
+   "3 CB / 1 S": 55,
+   "4 CB / 0 S": 2
+  }
+ },
+ "sources": {
+  "roster_weekly_2013.csv": {
+   "sha256": "76c47a629075ffd75f9c4ee49fadb6dad45396be486af897078fee5722969781"
+  },
+  "roster_weekly_2014w4.csv": {
+   "sha256": "fc963d8ddd38aef3541f7db07b8732e1a7c0780ce0fba6bf02775b2c9cf5558c"
+  },
+  "snap_counts_2013.csv": {
+   "sha256": "9d1fdd557875b9a2c71d88e583da24a739dfca671edf8223d6171e39a421000e"
+  },
+  "snap_counts_2014w4.csv": {
+   "sha256": "ffb78423a402194b6417ef35953814e09d9038f28aa550212cc87a16e6ef2b8b"
+  }
+ },
+ "specification_sha256": "ca028ba38009d1b84e5c887ea86ce8d697edf1705bcd9b755f60aede9d6f8446",
+ "status": "informational centres only: no kernel coefficient reads this file; SCRIMMAGE_SLOT_MIX unchanged (decision 1B.4)"
+}

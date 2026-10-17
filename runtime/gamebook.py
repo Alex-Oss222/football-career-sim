@@ -20,9 +20,13 @@ start: drives.start_spot. Points per drive: drives.points of the club's
 touchdown and field-goal drives over its drives, kneel-only drives
 (kneels >= scrimmage_plays) excluded. Total first downs: team_stats; by rushing
 and by passing: ledger run/pass rows flagged first_down (scrambles count as
-runs); by penalty: drives.chains[1] (the walked penalty first downs). Third
+runs); by penalty: drives.chains[1] (the walked penalty first downs; kernel
+2014.6 batch B11, ledger-walk-v2: the count of the ledger's penalty records
+flagged first_down, which must equal chains[1]). Third
 down: team_stats. Fourth down: ledger run/pass rows on down 4, converted when
-first_down or touchdown. Total net yards = rushing yards + gross passing yards -
+first_down or touchdown (kernel 2014.6 batch B9: the touchdown of a turnover
+row returned for the defense's score, which carries touchdown and turnover
+both, is never the offense's conversion). Total net yards = rushing yards + gross passing yards -
 sack yards (team_stats and player sack_yards). Plays = rushing attempts +
 pass attempts + sacks. Success rate: ledger rows with down and ydstogo, kneels
 and spikes excluded, a turnover never successful. Explosive plays: ledger runs
@@ -30,22 +34,29 @@ of 10+ and completions of 20+. Tackled for loss: ledger run rows (not kneels)
 with negative yards. Passing, rushing, punting, return, fumble and interception
 counts: player counters. Kickoffs and touchbacks: ledger kickoff/free-kick rows.
 Net punting average: ledger punt rows, gross minus return yards minus 20 per
-touchback. Penalties: team_stats. Touchdowns: team_stats; the
+touchback. Penalties: team_stats (kernel 2014.6 batch B11: the fouling
+club's accepted records, and its declined and offsetting records when the
+receipt carries them). Touchdowns: team_stats; the
 rushing-passing-returns split: ledger touchdown rows. Extra points and field
-goals: team_stats. Safeties: team_stats. Red zone: drives with a scrimmage snap
+goals: team_stats. Two-point conversions (kernel 2014.6 batch B9): team_stats,
+and the scoring summary reads each touchdown's try from its two_point or
+extra_point row. Safeties: team_stats. Red zone: drives with a scrimmage snap
 at the 20 or closer; goal to go: drives with a goal_to_go snap; both over the
 drives that ended in a touchdown.
 
 Omitted team stats rows (field not generated): punts had blocked, field goals
-and extra points had blocked, two-point conversions.
+and extra points had blocked; two-point conversions before kernel 2014.6.
 
 Individual tables and their sources
 -----------------------------------
 Passing: counters, LNG from ledger completions. Rushing and receiving:
 counters. Interceptions: counters, LNG and TD from ledger interception rows
 (the row's tackler is the interceptor). Fumbles: FUM, LOST, OPP REC
-(fumble_recoveries), FORCED; OWN REC omitted, since every generated fumble is
-lost to the defense. Defense: TOT, SOLO, AST, SCK-YDS (sack yards from the
+(fumble_recoveries), FORCED; OWN REC (fumbles_recovered_own) and MUFFS from
+kernel 2014.6 batch B10, when the receipt carries them (before it every
+generated fumble was lost to the defense, so OWN REC was omitted). A fumble
+returned for a touchdown names its recoverer (the row's fumble record from
+batch B10, the row's tackler before it). Defense: TOT, SOLO, AST, SCK-YDS (sack yards from the
 ledger's sack rows by tackler), TFL, PD, INT, FF, FR; QB HITS omitted (not
 generated). Special teams defense: TOT (special_teams_tackles) only; SOLO,
 AST, FF, FR and BLK are not generated for coverage. Kicking: counters, LNG and
@@ -54,11 +65,19 @@ ledger's punt rows. Punt returns: RET, YDS, AVG, LNG, TD (LNG and TD from the
 ledger); FC omitted, since a fair catch is not attributed to a returner.
 Kickoff returns: RET, YDS, AVG, LNG, TD.
 
+Penalty summary (kernel 2014.6 batch B11, full receipts with penalty
+records): every replayed record of the ledger in game order, its period and
+clock, the fouling club, the fouler (a labelled group draw, never evidence),
+the foul, its status, enforcement and yards, and the first down it gave. The
+records are the replayed real drives' own; accept or decline is the real
+record's, never a coaching choice.
+
 Drive chart: drives rows (number, half/start_clock, start_kind, start_spot,
 scrimmage_plays, net_yards, own_seconds, category). Snap counts: the kernel
 2014.4 participation counters; the unit's snaps are the ledger's scrimmage rows
-for that side (kick rows for special teams), or the largest counter when the
-receipt has no ledger.
+for that side (kick rows for special teams; from kernel 2014.6 a two-point try
+row is one snap for each side), or the largest counter when the receipt has
+no ledger.
 
 Checks raised as GamebookError: the scoring summary adds to the final score,
 player passing and rushing yards add to the team counters, the first-down
@@ -66,6 +85,8 @@ split adds to the total, and the touchdown split adds to the team total.
 """
 from __future__ import annotations
 
+from .chains import CHAIN_MODEL_V2
+from .penalties import PENALTY_ROW
 from .play_detail import DRIVE_SUMMARY_FIELDS, _period_clock
 from .stat_tables import avg, combine, g, numeric, passer_rating, pct, thrown, time_text
 
@@ -79,7 +100,10 @@ START_KIND = {
     "kickoff": "Kickoff", "kickoff_touchback": "Kickoff", "free_kick": "Free kick", "punt": "Punt",
     "interception": "Interception", "fumble_lost": "Fumble", "downs": "Downs", "missed_fg": "Missed field goal",
     "period_change": "Period change", "placement": "Placement",
+    # Kernel 2014.6 batch B9 (R9): a possession after an onside kick.
+    "onside_recovery": "Onside kick recovered", "onside_lost": "Onside kick",
 }
+TRY_ROWS = ("extra_point", "two_point")
 END_KIND = {
     "touchdown": "Touchdown", "punt": "Punt", "interception": "Interception", "fumble_lost": "Fumble",
     "downs": "Downs", "safety": "Safety", "end_of_half": "End of half", "end_of_game": "End of game",
@@ -176,8 +200,10 @@ class GameView:
             return "%d-%d, %s" % (d["scrimmage_plays"], d["net_yards"], time_text(seconds))
 
         def try_after(index, club):
-            for row in rows[index + 1:index + 3]:
-                if row["play_type"] == "extra_point" and row["offense"] == club:
+            # Kernel 2014.6 batch B9 (R8): the try is an extra-point or a
+            # two-point row (after any clock row seated before it).
+            for row in rows[index + 1:index + 4]:
+                if row["play_type"] in TRY_ROWS and row["offense"] == club:
                     return row
             return None
 
@@ -191,11 +217,20 @@ class GameView:
                 else:
                     play = "%s %d yd run" % (_name(row["runner"]), yards)
                 drive = drive_text(row["drive"])
-            elif touchdown and (kind in KICKOFFS or kind == "punt" or row.get("turnover")):
+            elif touchdown and (kind in KICKOFFS or kind in ("punt", "field_goal") or row.get("turnover")):
                 club = row["defense"]
-                carrier = row.get("returner") if kind in KICKOFFS + ("punt",) else row.get("tackler")
-                label = {"kickoff": "kickoff", "free_kick": "free kick", "punt": "punt"}.get(
-                    kind, row.get("turnover_type") or "turnover")
+                if row.get("blocked"):
+                    # Kernel 2014.6 batch B9 (R15): a blocked punt or field
+                    # goal returned for a touchdown, credited to the scorer.
+                    carrier = row.get("scorer")
+                    label = "blocked %s" % ("punt" if kind == "punt" else "field goal")
+                else:
+                    carrier = row.get("returner") if kind in KICKOFFS + ("punt",) else row.get("tackler")
+                    if kind not in KICKOFFS + ("punt",) and isinstance(row.get("fumble"), dict):
+                        # Kernel 2014.6 batch B10: the recoverer returned it.
+                        carrier = row["fumble"].get("recovered_by")
+                    label = {"kickoff": "kickoff", "free_kick": "free kick", "punt": "punt"}.get(
+                        kind, row.get("turnover_type") or "turnover")
                 play = "%s %d yd %s return" % (_name(carrier), row.get("return_yards") or 0, label)
                 drive = ""
             elif kind == "field_goal" and row.get("made"):
@@ -207,7 +242,18 @@ class GameView:
                 continue
             points = 6
             xp = try_after(index, club)
-            if xp is not None:
+            if xp is not None and xp["play_type"] == "two_point":
+                # Kernel 2014.6 batch B9 (R8): the two-point try, by its play.
+                if xp.get("try_type") == "pass":
+                    text = "%s pass from %s" % (_name(xp.get("target")), _name(xp.get("passer")))
+                else:
+                    text = "%s run" % _name(xp.get("runner"))
+                if xp.get("made"):
+                    play += " (%s)" % text
+                    points += 2
+                else:
+                    play += " (%s failed)" % ("pass" if xp.get("try_type") == "pass" else "run")
+            elif xp is not None:
                 if xp.get("made"):
                     play += " (%s kick)" % _name(xp["kicker"])
                     points += 1
@@ -258,11 +304,21 @@ class GameView:
     def counted_drives(self, club):
         return [d for d in self.club_drives[club] if not (d.get("kneels") and d["kneels"] >= d["scrimmage_plays"])]
 
+    def penalty_rows(self):
+        """Kernel 2014.6 batch B11: the ledger rows carrying replayed penalty records."""
+        return [r for r in self.ledger if r.get("penalties")]
+
     def first_down_split(self, club):
         rows = self.scrim[club]
         rushing = sum(1 for r in rows if r["play_type"] == "run" and r.get("first_down"))
         passing = sum(1 for r in rows if r["play_type"] == "pass" and r.get("first_down"))
         penalty = sum((d.get("chains") or [0, 0])[1] for d in self.club_drives[club])
+        if self.club_drives[club] and all(d.get("chain_model") == CHAIN_MODEL_V2 for d in self.club_drives[club]):
+            # Batch B11 (ledger-walk-v2): the records flagged first_down.
+            flagged = sum(1 for r in self.ledger if r.get("offense") == club and r["play_type"] in SCRIMMAGE + (PENALTY_ROW,)
+                          for e in (r.get("penalties") or ()) if e.get("first_down"))
+            if flagged != penalty:
+                raise GamebookError("%s penalty first downs: %d records, chains %d" % (club, flagged, penalty))
         total = self.stats[club]["first_downs"]
         if rushing + passing + penalty != total:
             raise GamebookError("%s first downs %d-%d-%d do not add to %d" % (club, rushing, passing, penalty, total))
@@ -270,7 +326,11 @@ class GameView:
 
     def fourth_down(self, club):
         rows = [r for r in self.scrim[club] if r.get("down") == 4]
-        return sum(1 for r in rows if r.get("first_down") or r.get("touchdown")), len(rows)
+        # A turnover row's touchdown (kernel 2014.6 batch B9: touchdown and
+        # turnover both true on a return touchdown) is the defense's, never
+        # the offense's conversion; earlier rows read as before.
+        return (sum(1 for r in rows if r.get("first_down") or (r.get("touchdown") and not r.get("turnover"))),
+                len(rows))
 
     def success_rate(self, club):
         rows = [r for r in self.scrim[club] if r.get("down") and r.get("ydstogo") is not None
@@ -347,10 +407,14 @@ class GameView:
     def unit_snaps(self, club, side):
         field = {"offense": "offensive_snaps", "defense": "defensive_snaps", "special_teams": "special_teams_snaps"}[side]
         if self.has_ledger:
+            # Kernel 2014.6 batch B9 (R8): a two-point try is one offensive
+            # and one defensive snap (the participation convention); earlier
+            # receipts have no such row.
+            tries = [r for r in self.ledger if r["play_type"] == "two_point"]
             if side == "offense":
-                return len(self.scrim[club])
+                return len(self.scrim[club]) + sum(1 for r in tries if r["offense"] == club)
             if side == "defense":
-                return len(self.scrim[self.other(club)])
+                return len(self.scrim[self.other(club)]) + sum(1 for r in tries if r["defense"] == club)
             return sum(1 for r in self.ledger if r["play_type"] in KICK_ROWS)
         return max((g(line, field) for line in self.players[club].values()), default=0)
 
@@ -442,6 +506,9 @@ def team_stats(view):
         ("", "Interception returns, number and yards",
          pair(lambda c: g(t[c], "defensive_interceptions"), lambda c: g(t[c], "interception_return_yards"))),
         ("Penalties", "Penalties, number and yards", pair(lambda c: s[c]["penalties"], lambda c: s[c]["penalty_yards"])),
+        ("", "Declined-offsetting",
+         (lambda c: "%d-%d" % (s[c]["penalties_declined"], s[c]["penalties_offsetting"]))
+         if all("penalties_declined" in s[c] for c in view.clubs) else None),
         ("Ball security", "Turnovers", lambda c: s[c]["turnovers"]),
         ("", "Interceptions thrown", lambda c: thrown(t[c])),
         ("", "Fumbles, number and lost", pair(lambda c: g(t[c], "fumbles"), lambda c: g(t[c], "fumbles_lost"))),
@@ -453,6 +520,9 @@ def team_stats(view):
         ("", "Field goals, made-attempts",
          (lambda c: "%d-%d" % (s[c]["field_goals"], s[c]["field_goal_attempts"]))
          if all("field_goal_attempts" in s[c] for c in view.clubs) else None),
+        ("", "Two-point conversions, made-attempts",
+         (lambda c: "%d-%d" % (s[c]["two_point_conversions"], s[c]["two_point_attempts"]))
+         if all("two_point_attempts" in s[c] for c in view.clubs) else None),
         ("", "Safeties", optional("safeties")),
         ("Scoring chances", "Red zone efficiency", (lambda c: _ratio(*view.zone_trips(c, False))) if L else None),
         ("", "Goal to go efficiency", (lambda c: _ratio(*view.zone_trips(c, True))) if L else None),
@@ -538,10 +608,15 @@ def individual(view, club):
                     lambda n, l: sum(1 for r in view.interception_rows(n) if r.get("touchdown"))]
     lines += _block("Interceptions", headers, rows_cache, columns)
 
-    # Fumbles
-    rows_cache = _rows(p, ("fumbles", "forced_fumbles", "fumble_recoveries"), "fumbles")
-    lines += _block("Fumbles", ["FUM", "LOST", "OPP REC", "FORCED"], rows_cache,
-                    [c("fumbles"), c("fumbles_lost"), c("fumble_recoveries"), c("forced_fumbles")])
+    # Fumbles. Kernel 2014.6 batch B10: own recoveries and muffs, when the
+    # receipt carries them (every generated fumble was lost before it).
+    own = any("fumbles_recovered_own" in line or "muffs" in line for line in p.values())
+    rows_cache = _rows(p, ("fumbles", "forced_fumbles", "fumble_recoveries")
+                       + (("fumbles_recovered_own", "muffs") if own else ()), "fumbles")
+    lines += _block("Fumbles", ["FUM", "LOST", "OPP REC", "FORCED"] + (["OWN REC", "MUFFS"] if own else []),
+                    rows_cache,
+                    [c("fumbles"), c("fumbles_lost"), c("fumble_recoveries"), c("forced_fumbles")]
+                    + ([c("fumbles_recovered_own"), c("muffs")] if own else []))
 
     # Defense
     rows_cache = defenders = _rows(p, ("tackles", "sacks", "tackles_for_loss", "passes_defended",
@@ -601,6 +676,29 @@ def individual(view, club):
     return lines
 
 
+PENALTY_ENFORCEMENT = {"no_play": "No play", "after_snap": "After the play", "pre_kick": "Before the kick",
+                       "on_kick": "On the kick"}
+
+
+def penalty_summary(view):
+    """Kernel 2014.6 batch B11: the replayed penalty records, in game order."""
+    rows = view.penalty_rows() if view.has_ledger else []
+    if not rows:
+        return []
+    lines = ["#### Penalty summary", "",
+             "| Qtr | Time | Club | Player | Foul | Status | Enforcement | Yards | First down |",
+             "|---|---|---|---|---|---|---|---:|---|"]
+    for r in rows:
+        for e in r["penalties"]:
+            lines.append("| %s | %s | %s | %s | %s | %s | %s | %s | %s |" % (
+                r.get("period"), r.get("game_clock"), nickname(e["team"]),
+                _name(e["fouler"]) if e.get("fouler") else UNATTRIBUTED, e["penalty_type"], e["status"].capitalize(),
+                PENALTY_ENFORCEMENT.get(e.get("enforcement"), e.get("enforcement")),
+                abs(int(e.get("penalty_yards") or 0)) if e["status"] == "accepted" else DASH,
+                "Yes" if e.get("first_down") else DASH))
+    return lines + [""]
+
+
 def drive_chart(view):
     if not view.drives or any(d.get("start_spot") is None for d in view.drives):
         return []
@@ -655,7 +753,7 @@ def render(receipt, lead_team):
     lines = scoring_summary(view) + team_stats(view)
     for club in view.clubs:
         lines += individual(view, club)
-    lines += drive_chart(view) + snap_counts(view)
+    lines += penalty_summary(view) + drive_chart(view) + snap_counts(view)
     text = "\n".join(lines).rstrip("\n")
     if "None" in text.split() or "nan" in text.lower().split():
         raise GamebookError("unrendered cell in the gamebook")

@@ -144,6 +144,41 @@ def check_inputs(data, controlled_players, protagonist="Jacksonville Jaguars", e
                 f"{player}: appears on multiple weekly TeamInputs: "
                 + ", ".join(sorted(teams))
             )
+    errors.extend(gsis_errors(games))
+    return errors
+
+
+def gsis_errors(games):
+    """Kernel 2014.6 (B7): a gsis id in a strength record names one player
+    on one club in the weekly slate. Two roster rows of one club or rows of
+    two clubs sharing a gsis id, or a player-state record whose latent keys
+    name a gsis outside its own players, fail the gate."""
+    errors = []
+    owners = {}
+    for game in games:
+        if not isinstance(game, dict):
+            continue
+        for side in ("away", "home"):
+            team = game.get(side)
+            record = (game.get(side + "_input") or {}).get("strength") if isinstance(game.get(side + "_input"), dict) else None
+            if not isinstance(record, dict):
+                continue
+            seen = {}
+            for pid, row in (record.get("players") or {}).items():
+                gsis = (row or {}).get("gsis_id")
+                if not gsis:
+                    continue
+                if gsis in seen and seen[gsis] != pid:
+                    errors.append(f"{team}: gsis {gsis} names two roster rows: {seen[gsis]} and {pid}")
+                seen[gsis] = pid
+                owners.setdefault(gsis, {})[team] = pid
+            for key in record.get("latent_keys") or ():
+                if isinstance(key, (list, tuple)) and len(key) == 4 and key[2] not in seen:
+                    errors.append(f"{team}: latent key names gsis {key[2]}, not one of its players")
+    for gsis, teams in sorted(owners.items()):
+        if len(teams) > 1:
+            errors.append("gsis %s appears on multiple weekly TeamInputs: %s"
+                          % (gsis, ", ".join("%s (%s)" % (t, p) for t, p in sorted(teams.items()))))
     return errors
 
 
