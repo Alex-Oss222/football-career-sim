@@ -12,6 +12,7 @@ from runtime import chains, field_position as fp, play_detail
 from runtime.calibration_base import BASE_2012
 from runtime.chains import chain_feasible, drive_layout, fourth_down_state, walk
 from runtime.kernel import resolve_game, validate_result
+from runtime.profiles import PROFILE_2014_5
 from runtime.play_detail import CHAIN_CLASSES, check_ledger, measurable_classes
 from runtime.game_runner import ENTROPY_DOMAIN
 from support_rosters import game_day_roster, single_quarterback_teams
@@ -128,7 +129,9 @@ class PenaltyFirstDownTests(unittest.TestCase):
 
     def test_kernel_publishes_the_absorbed_count(self):
         # Every drive's published penalty count is the formula applied to its
-        # own real tuple and walk, in drive order.
+        # own real tuple and walk, in drive order (ledger-walk-v1: kernel
+        # 2014.5, PROFILE_2014_5; kernel 2014.6 replays per-play penalty
+        # records, tests/test_penalties.py).
         a, b = sample_teams()
         calls = []
         real = chains.penalty_first_downs
@@ -142,7 +145,8 @@ class PenaltyFirstDownTests(unittest.TestCase):
         with mock.patch.object(chains, "penalty_first_downs", side_effect=spy):
             for i in range(20):
                 calls.clear()
-                r = resolve_game(a, b, seed=SEED + b"-pen-%02d" % i, event_id="pen-fd-%d" % i)
+                r = resolve_game(a, b, seed=SEED + b"-pen-%02d" % i, event_id="pen-fd-%d" % i,
+                                 _test_profile=PROFILE_2014_5)
                 drives = [p for p in r["possessions"] if p.get("chain_model") == chains.CHAIN_MODEL]
                 self.assertEqual(len(calls), len(drives))
                 for p, (c0, c1, walked, out) in zip(drives, calls):
@@ -670,7 +674,9 @@ class SampleChainTests(unittest.TestCase):
 class LayoutResampleTests(unittest.TestCase):
     """Kernel 2014.4 phase 2: when no plan legalises a drawn drive's snaps,
     another real drive of the same category and rung stands in, on the
-    drive's own resample stream, recorded in the receipt; the game closes."""
+    drive's own resample stream, recorded in the receipt; the game closes.
+    On the 2012 base (PROFILE_2014_5), whose tuple seconds fp.scaled_seconds
+    reads."""
 
     def failing_layout(self, drive_no):
         real = chains.drive_layout
@@ -691,12 +697,12 @@ class LayoutResampleTests(unittest.TestCase):
         from runtime import kernel
         a, b = sample_teams()
         seed = SEED + b"-resample-01"
-        base = resolve_game(a, b, seed=seed, event_id="resample-1")
+        base = resolve_game(a, b, seed=seed, event_id="resample-1", _test_profile=PROFILE_2014_5)
         wrapper, calls = self.failing_layout(4)
         with mock.patch.object(kernel.chain_walk, "drive_layout", wrapper):
-            first = resolve_game(a, b, seed=seed, event_id="resample-1")
+            first = resolve_game(a, b, seed=seed, event_id="resample-1", _test_profile=PROFILE_2014_5)
         with mock.patch.object(kernel.chain_walk, "drive_layout", self.failing_layout(4)[0]):
-            second = resolve_game(a, b, seed=seed, event_id="resample-1")
+            second = resolve_game(a, b, seed=seed, event_id="resample-1", _test_profile=PROFILE_2014_5)
         self.assertEqual(validate_result(first), [])
         self.assertEqual(check_ledger(first), [])
         self.assertEqual(first["diagnostics"]["chain_layout_resampled"], 1)

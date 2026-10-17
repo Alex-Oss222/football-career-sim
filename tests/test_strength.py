@@ -1,6 +1,12 @@
 """Kernel 2014.4 candidate, defect register item 1: the E1 acceptance tests
 for unit strength from dated honours and the actual lineup (runtime/strength.py).
 
+These are tests of the honours-production-v3 model (strength.MODEL), the
+model of kernels 2014.4 and 2014.5. Since the kernel 2014.6 release (batch
+B18) every game here resolves under PROFILE_2014_5 and every record is built
+with that model; the player-state-v1 model of kernel 2014.6 is tested in
+tests/test_player_state_runtime.py.
+
 Synthetic seeds and synthetic evidence records only, except where a test
 reads the committed honours evidence to check the date gate and coverage.
 Sample sizes and tolerances were fixed before any sample was inspected.
@@ -17,11 +23,18 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from runtime import drive_model, field_position as fp, strength
 from runtime.drive_model import CATEGORIES
-from runtime.kernel import TeamInput, _edge, resolve_game, validate_result
+from runtime.kernel import TeamInput, _edge, resolve_game as _resolve_game, validate_result
+from runtime.profiles import PROFILE_2014_5
 from support_rosters import game_day_roster
 from synthetic_games import SEED
 
 EVENT = "strength-fixture"
+
+
+def resolve_game(*args, **kw):
+    """runtime.kernel.resolve_game under PROFILE_2014_5 (the honours model's kernel)."""
+    kw.setdefault("_test_profile", PROFILE_2014_5)
+    return _resolve_game(*args, **kw)
 
 
 def honour(unit, group, tier="Elite", weight=1.0):
@@ -198,7 +211,7 @@ class CoverageTests(unittest.TestCase):
         # Jacksonville's roster ids are names; they join by name and club.
         jax = [{"player_id": "Maurice Jones-Drew"}, {"player_id": "Jason Babin"},
                {"player_id": "Nobody In The Database"}]
-        rec, cov = strength.team_strength("Jacksonville Jaguars", jax, 2014, "2014-09-07")
+        rec, cov = strength.team_strength("Jacksonville Jaguars", jax, 2014, "2014-09-07", model=strength.MODEL)
         self.assertEqual(rec["players"]["Maurice Jones-Drew"]["offdef"]["tier"], "Elite")
         self.assertEqual(rec["players"]["Jason Babin"]["offdef"]["tier"], "Plus")
         self.assertEqual(cov["fallbacks"], [{"player_id": "Nobody In The Database",
@@ -231,7 +244,7 @@ class BuilderHookTests(unittest.TestCase):
                 mock.patch.object(week_inputs, "background_input",
                                   return_value={"team_id": "Denver Broncos", "roster": den}), \
                 mock.patch.object(week_inputs.player_bios, "biographies", return_value={}):
-            return week_inputs.build_package(1, [], [], {}, season)
+            return week_inputs.build_package(1, [], [], {}, season, strength_model=strength.MODEL)
 
     def test_2014_inputs_carry_strength(self):
         package = self.build(2014)

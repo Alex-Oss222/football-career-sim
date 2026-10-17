@@ -21,13 +21,17 @@ from unittest import mock
 from runtime import KERNEL_VERSION
 from runtime import field_position as fp
 from runtime.kernel import resolve_game, validate_result
+from runtime.profiles import PROFILE_2014_5
 from runtime.play_detail import check_ledger
 from runtime.rules import RULES, ot_status
 from synthetic_games import SEED, sample, sample_teams
 
 # Kernel 2014.6 plumbing (batch B1): the kernel draws through its bound
 # calibration base's model, so the script patches the 2012 base's model
-# instance (the live base of kernel 2014.5); REAL_DRAW is its own method.
+# instance (the base of kernel 2014.5); REAL_DRAW is its own method. Since
+# the kernel 2014.6 release (B18) the scripted and searched games resolve
+# under PROFILE_2014_5 explicitly; kernel 2014.6's overtime cells are
+# Overtime2014_6Tests below.
 MODEL = fp.model()
 REAL_DRAW = MODEL.draw_drive
 
@@ -43,7 +47,8 @@ def _tied_regulation_seeds(game_type, count):
     found = []
     for i in range(SEARCH):
         seed = SEED + b"-ot-%s-%05d" % (game_type.encode(), i)
-        result = resolve_game(a, b, seed=seed, event_id="ot-%s-%d" % (game_type, i), game_type=game_type)
+        result = resolve_game(a, b, seed=seed, event_id="ot-%s-%d" % (game_type, i), game_type=game_type,
+                              _test_profile=PROFILE_2014_5)
         if any(p["half"] == "OT" for p in result["possessions"]):
             found.append((seed, "ot-%s-%d" % (game_type, i), result))
             if len(found) == count:
@@ -110,14 +115,16 @@ class OvertimeRuleTests(unittest.TestCase):
         seed, event_id, _ = (self.regular if game_type == "regular" else self.postseason)[which]
         a, b = sample_teams()
         with mock.patch.object(MODEL, "draw_drive", _scripted(script)):
-            result = resolve_game(a, b, seed=seed, event_id=event_id, game_type=game_type)
+            result = resolve_game(a, b, seed=seed, event_id=event_id, game_type=game_type,
+                                  _test_profile=PROFILE_2014_5)
         self.assertEqual(validate_result(result), [])
         self.assertEqual(check_ledger(result), [])
         return result
 
     def test_kernel_version(self):
         # 2013.8 introduced these rules; later kernels keep them.
-        self.assertIn(KERNEL_VERSION, ("2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2", "2014.3", "2014.4", "2014.5"))
+        self.assertIn(KERNEL_VERSION, ("2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2", "2014.3", "2014.4", "2014.5",
+                                       "2014.6"))
         self.assertEqual((RULES.regular_ot_seconds, RULES.postseason_ot_seconds), (900, 900))
 
     def test_opening_field_goal_gives_the_other_club_a_possession(self):

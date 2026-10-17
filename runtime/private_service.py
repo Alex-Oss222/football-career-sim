@@ -24,7 +24,7 @@ from urllib.parse import urlsplit, parse_qs
 from .packets import canonical
 from . import player_state
 
-SCHEMA="1"; KERNEL="2014.5"
+SCHEMA="2"; KERNEL="2014.6"
 
 class Store:
     def __init__(self,path):

@@ -41,6 +41,34 @@ class ContinuityTests(unittest.TestCase):
     def test_closed_current_records_pass(self):
         self.assertEqual(validate(self.root), [])
 
+    def test_receipts_are_judged_by_the_gates_of_their_own_kernel(self):
+        # Kernel 2014.6 release (Stone, October 17, 2026, "A: one PR"). Half
+        # one: the committed 2014.4 and 2014.5 receipts pass the repository
+        # check while the player_state gate (from 2014.6) is still BLOCKED.
+        from runtime import KERNEL_VERSION
+        from runtime.seasons import game_release_errors, require_game_release
+        message = '2014 receipts exist before season release acceptance'
+        gate = next(g for g in json.loads((self.root/'runtime/season_readiness.json').read_text())
+                    ['seasons']['2014']['gates'] if g['id'] == 'player_state')
+        self.assertEqual((KERNEL_VERSION, gate['status'], gate['applies_from_kernel']), ('2014.6', 'BLOCKED', '2014.6'))
+        receipts = sorted((self.root/'career/2014/05_Regular_Season/Statistics/records/game_receipts').glob('week_*.json'))
+        kernels = {json.loads(path.read_text())['kernel_version'] for path in receipts}
+        self.assertEqual(kernels, {'2014.4', '2014.5'})
+        self.assertNotIn(message, validate(self.root))
+        for kernel in sorted(kernels):
+            self.assertFalse(any(e.startswith('player_state') for e in game_release_errors(2014, self.root, receipt_kernel=kernel)))
+        # Half two: a new game on the installed kernel still fails closed on
+        # that gate (require_game_release and the readiness check unchanged).
+        self.assertTrue(any(e.startswith('player_state') for e in game_release_errors(2014, self.root)))
+        with self.assertRaisesRegex(ValueError, 'player_state'):
+            require_game_release(2014, self.root)
+        self.assertTrue(any(b.startswith('2014 season release: player_state') for b in check(self.root, season=2014)))
+        # And a committed receipt of the installed kernel is judged by it.
+        data = json.loads(receipts[-1].read_text())
+        data['kernel_version'] = KERNEL_VERSION
+        receipts[-1].write_text(json.dumps(data))
+        self.assertIn(message, validate(self.root))
+
     def test_changed_output_requires_summary_review(self):
         output = self.root/'career/2013/offseason/otas/output.md'
         output.write_text(output.read_text()+'\nSynthetic changed observation.\n')

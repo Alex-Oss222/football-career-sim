@@ -433,7 +433,15 @@ def validate(root=ROOT):
         ids = [r['event_id'] for r in regular + playoff]
         require(len(ids) == len(set(ids)), '2014 receipts contain duplicate event identities')
         if regular or playoff:
-            require(not game_release_errors(2014, root), '2014 receipts exist before season release acceptance')
+            # Kernel 2014.6 release (Stone, October 17, 2026, "A: one PR"):
+            # each committed receipt is judged by the release gates that
+            # apply to the kernel that produced it, so the 2014.4 and 2014.5
+            # receipts are not judged by the player_state gate that starts at
+            # 2014.6. A new game still fails closed on every gate of the
+            # installed kernel (require_game_release, check_game_readiness).
+            for kernel in sorted({r.get('kernel_version') or '' for r in regular + playoff}):
+                require(not game_release_errors(2014, root, receipt_kernel=kernel or None),
+                        '2014 receipts exist before season release acceptance')
             for receipt in regular + playoff:
                 for team, score in receipt['final_score'].items():
                     require(receipt['team_stats'][team]['points'] == score,
@@ -464,7 +472,8 @@ def validate(root=ROOT):
         require(len({r['event_id'] for r in preseason}) == len(preseason), '2014 preseason receipts contain duplicate event identities')
         if preseason:
             for receipt in preseason:
-                require(not game_release_errors(2014, root, preseason=int(receipt.get('preseason_game') or 0) or None),
+                require(not game_release_errors(2014, root, preseason=int(receipt.get('preseason_game') or 0) or None,
+                                                receipt_kernel=receipt.get('kernel_version') or None),
                         '2014 preseason receipts exist before season release acceptance')
             fixtures = {g['game_id'] for g in paths.preseason_games()}
             for receipt in preseason:

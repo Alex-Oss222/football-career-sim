@@ -1,5 +1,12 @@
 """One shared, cached synthetic kernel sample (2014.5) for the kernel test modules.
 
+Since the kernel 2014.6 release (batch B18, October 17, 2026) the sample is
+pinned to PROFILE_2014_5, the kernel these coherence, label and band tests
+were written for and the one that produced the closed 2013 and 2014 Weeks 1-4
+receipts; the 2014.6 mechanisms keep their own samples under PROFILE_2014_6
+in their own test modules (test_base_2014_6.py, test_yard_split.py and the
+rest).
+
 Resolving games is the slow part of the suite (the Railway image runs the
 whole suite on every deploy), so the coherence, label and band tests share
 one 250-game sample computed once per process. Synthetic seeds only; the
@@ -14,6 +21,7 @@ for the quarterback, a Stick declared for tight ends only, and a run declared
 from functools import lru_cache
 
 from runtime.kernel import TeamInput, resolve_game
+from runtime.profiles import PROFILE_2014_5
 from support_rosters import game_day_roster
 
 SEED = b"synthetic-calibration-seed-not-career-state"
@@ -61,6 +69,6 @@ def sample_teams():
 def sample():
     a, b = sample_teams()
     return tuple(
-        resolve_game(a, b, seed=SEED + b"-%05d" % i, event_id=f"{EVENT_PREFIX}-{i}")
+        resolve_game(a, b, seed=SEED + b"-%05d" % i, event_id=f"{EVENT_PREFIX}-{i}", _test_profile=PROFILE_2014_5)
         for i in range(SAMPLE_SIZE)
     )

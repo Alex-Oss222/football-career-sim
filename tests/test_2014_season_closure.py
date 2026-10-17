@@ -43,10 +43,19 @@ SEASON, WEEK = 2014, 1
 IGNORED = (".git", ".sim_cache", "__pycache__", ".pytest_cache")
 
 
+# Kernel 2014.6 release (B18; U6, B9F): the user-controlled club carries its
+# two-point, kickoff and fourth-down blocks; this synthetic acceptance slate
+# delegates all three to the league chart (Stone's own rules are Week 5
+# inputs; the live fourth-down path is tests/test_close_week_pause.py's).
+DELEGATED = {"try_policy": {"otherwise": "league"}, "kickoff_policy": {"otherwise": "league"},
+             "fourth_down_policy": {"otherwise": "league"}}
+
+
 def club(team_id, prefix):
     """A legal 46-player game-day unit (support_rosters has 47; drop the fifth receiver)."""
     roster = tuple(p for p in game_day_roster(prefix) if p.player_id != prefix + "-WR5")
-    return TeamInput(team_id, tuple(p.player_id for p in roster), roster=roster)
+    return TeamInput(team_id, tuple(p.player_id for p in roster), roster=roster,
+                     **(DELEGATED if team_id == JAX else {}))
 
 
 def weekly_package(paths):

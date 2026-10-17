@@ -13,6 +13,7 @@ import unittest
 from runtime import call_families
 from runtime.game_runner import build_game_packet
 from runtime.kernel import TeamInput, resolve_game, validate_result
+from runtime.profiles import PROFILE_2014_5
 from runtime.play_detail import canonical_call_sheet, check_ledger, coherence_counts
 from synthetic_games import EVENT_PREFIX, SEED, TEAM_A_SHEET, WEEK6_SHEET, sample, sample_teams
 
@@ -114,7 +115,8 @@ class CallLabelTests(unittest.TestCase):
                          build_game_packet("iso", "snapshot", legal(a), legal(b)))
         for i in range(ISOLATION_GAMES):
             first = self.games[i]
-            second = resolve_game(x, b, seed=SEED + b"-%05d" % i, event_id=f"{EVENT_PREFIX}-{i}")
+            second = resolve_game(x, b, seed=SEED + b"-%05d" % i, event_id=f"{EVENT_PREFIX}-{i}",
+                                  _test_profile=PROFILE_2014_5)  # the shared sample's kernel
             self.assertEqual(first["possessions"], second["possessions"])
             self.assertEqual(first["kickoffs"], second["kickoffs"])
             self.assertEqual(first["team_stats"], second["team_stats"])

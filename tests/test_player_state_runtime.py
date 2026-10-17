@@ -626,11 +626,18 @@ class WeeklyInputTests(unittest.TestCase):
         data = json.loads((ROOT / "runtime/season_readiness.json").read_text())
         gate = next(g for g in data["seasons"]["2014"]["gates"] if g["id"] == "player_state")
         self.assertEqual((gate["status"], gate["applies_from_kernel"]), ("BLOCKED", "2014.6"))
+        # Kernel 2014.6 is installed (release, B18): the gate blocks every
+        # new game until the bind; under 2014.5 it neither blocks nor passes.
         errors = seasons.game_release_errors(2014)
-        self.assertFalse(any(e.startswith("player_state") for e in errors))
-        with mock.patch("runtime.KERNEL_VERSION", "2014.6"):
-            errors = seasons.game_release_errors(2014)
         self.assertTrue(any(e.startswith("player_state") for e in errors))
+        with mock.patch("runtime.KERNEL_VERSION", "2014.5"):
+            errors = seasons.game_release_errors(2014)
+        self.assertFalse(any(e.startswith("player_state") for e in errors))
+        # A committed receipt is judged by its own kernel's gates
+        # (Stone, October 17, 2026, "A: one PR"; tests/test_continuity.py).
+        for kernel, blocked in (("2014.4", False), ("2014.5", False), ("2014.6", True)):
+            errors = seasons.game_release_errors(2014, receipt_kernel=kernel)
+            self.assertEqual(any(e.startswith("player_state") for e in errors), blocked, kernel)
 
 
 class DrawnTierTests(unittest.TestCase):

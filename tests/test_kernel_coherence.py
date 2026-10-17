@@ -9,6 +9,7 @@ from unittest import mock
 
 from runtime import drive_model, field_position, play_detail
 from runtime.kernel import TeamInput, resolve_game, validate_result, ot_status
+from runtime.profiles import PROFILE_2014_5
 from runtime.play_detail import COHERENCE_CLASSES, _period_clock, check_ledger
 from synthetic_games import EVENT_PREFIX, SEED, sample, sample_teams, team
 
@@ -278,7 +279,7 @@ class KernelCoherenceTests(unittest.TestCase):
 
     def test_determinism(self):
         a, b = sample_teams()
-        one = resolve_game(a, b, seed=SEED + b"-00003", event_id=f"{EVENT_PREFIX}-3")
+        one = resolve_game(a, b, seed=SEED + b"-00003", event_id=f"{EVENT_PREFIX}-3", _test_profile=PROFILE_2014_5)
         self.assertEqual(one, self.games[3])
         from runtime.statbook import make_receipt
         self.assertEqual(make_receipt(one, week=4, matchup="B at A", detail="compact_stats")["drives"],

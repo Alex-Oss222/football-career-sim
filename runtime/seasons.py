@@ -202,7 +202,7 @@ def require_receipt_season(receipts, season):
             raise ValueError('Receipt lacks a season-qualified event id: ' + event)
 
 
-def game_release_errors(season, root=ROOT, preseason=None):
+def game_release_errors(season, root=ROOT, preseason=None, receipt_kernel=None):
     """Public release gate, independent of credentials or legacy VERIFIED flags.
 
     ``preseason=N`` scopes the required-input check to preseason game N: the
@@ -210,6 +210,15 @@ def game_release_errors(season, root=ROOT, preseason=None):
     (``Game_0N/depth_chart.json``, Stone's plan), not the season input
     ``game_depth_chart.json``, which stays required for every regular-season
     or postseason closure. The release gates themselves are the same.
+
+    ``receipt_kernel`` (kernel 2014.6 release, Stone's decision of October
+    17, 2026, "A: one PR"): only the repository check passes it, to judge a
+    committed receipt by the gates that apply to the kernel that produced it
+    (a gate with ``applies_from_kernel`` later than that kernel is not
+    judged). The installed kernel must still be the accepted one. Every
+    game-closing caller (``require_game_release``,
+    ``scripts/check_game_readiness.py``) leaves it None, so the gates of the
+    installed kernel apply and a new game fails closed on any open gate.
     """
     paths = SeasonPaths(season, root)
     if preseason is not None and (type(preseason) is not int or not 1 <= preseason <= 5):
@@ -230,7 +239,8 @@ def game_release_errors(season, root=ROOT, preseason=None):
         if gate['status'] not in ('BLOCKED', 'PARTIAL', 'VERIFIED') or not gate.get('remaining'):
             raise ValueError('Invalid season release disposition: ' + gate['id'])
         applies_from = gate.get('applies_from_kernel')
-        if applies_from and kernel_tuple(KERNEL_VERSION) < kernel_tuple(applies_from):
+        judged = KERNEL_VERSION if receipt_kernel is None else receipt_kernel
+        if applies_from and kernel_tuple(judged) < kernel_tuple(applies_from):
             # Kernel 2014.6 (B7): a gate of a kernel not yet installed (the
             # player-state binding) neither blocks nor passes the installed
             # kernel; it fails closed the moment that kernel is live.

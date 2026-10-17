@@ -4,7 +4,9 @@ Written October 2, 2026, for the 2010-2014 player-evidence policy the user adopt
 
 ## Already covered, do not upload
 
-The public nflverse releases (pinned by sha256 in `library/data/`) already provide, for 2010-2014: play-by-play, weekly and season player statistics, QB hits and sacks by defender, draft picks, combine results, rosters, weekly injury reports, and snap counts from 2012 onward. Real 2013 and 2014 statistics are therefore not needed from the user.
+The public nflverse releases (pinned by sha256 in `library/data/`) already provide, for 2010-2014: play-by-play, weekly and season player statistics, QB hits and sacks by defender, draft picks, combine results, rosters, weekly injury reports, and snap counts from 2013 onward. Real 2013 and 2014 statistics are therefore not needed from the user.
+
+**Correction (October 17, 2026, kernel 2014.6 release).** This file first said the public snap counts start in 2012. They start in 2013: the nflverse `snap_counts_2012.csv` has a header and no rows (`library/2012_nfl_injury_calibration.md`, item D4), and the committed source fetcher reads snap counts for 2013 and 2014 only (`scripts/research/sources_2010_2014.py`). 2012 snap counts are therefore not covered, and request 1 below now includes 2012.
 
 ## Do not upload anything from 2015 or later
 
@@ -21,15 +23,15 @@ Free, redistributable data (for example Pro Football Reference exports, if their
 
 ## The requests, in priority order
 
-### 1. Snap counts for 2010 and 2011 (highest value for player states)
+### 1. Snap counts for 2010, 2011 and 2012 (highest value for player states)
 
-What it unlocks: aging curves and the snap/role/availability feedback fitted on five seasons instead of three, for every position, especially offensive linemen and defensive backs.
+What it unlocks: aging curves and the snap/role/availability feedback fitted on five seasons instead of two (2013 and 2014), for every position, especially offensive linemen and defensive backs.
 
 One row per player per game (preferred) or per player per season:
 
 | Column | Meaning |
 |---|---|
-| season | 2010 or 2011 |
+| season | 2010, 2011 or 2012 |
 | week | regular-season week (blank for a season row) |
 | game_date | YYYY-MM-DD (blank for a season row) |
 | team | team abbreviation the player played for |
@@ -44,7 +46,7 @@ One row per player per game (preferred) or per player per season:
 | st_snaps | special-teams snaps |
 | st_pct | share, 0-100 |
 
-Likely source: PFF (snap counts go back to 2006). Pro Football Reference starts in 2012, which the project already has.
+Likely source: PFF (snap counts go back to 2006). Pro Football Reference publishes snap counts from 2012; the project does not hold that season (the public nflverse file for 2012 is empty).
 
 ### 2. Pass-rush and pass-block charting, 2010-2014
 

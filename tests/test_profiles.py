@@ -25,6 +25,7 @@ from runtime.statbook import (KERNEL_2014_6_FIELD_GROUP, KERNEL_2014_6_PLAYER_FI
 from synthetic_games import EVENT_PREFIX, SAMPLE_SIZE, SEED, sample_teams
 
 FIXTURE = Path(__file__).parent / "data/result_identity_2014_5_profile.json"
+FIXTURE_2014_6 = Path(__file__).parent / "data/result_identity_2014_6.json"
 
 
 def projection_digest(r):
@@ -78,8 +79,9 @@ def strip_2014_6_fields(result):
 class ProfileTableTests(unittest.TestCase):
     def test_registered_profiles(self):
         self.assertEqual(set(PROFILES), {"2014.5", "2014.6"})
-        self.assertIs(profile_for(KERNEL_VERSION), PROFILE_2014_5)
-        self.assertEqual(KERNEL_VERSION, "2014.5")
+        # Kernel 2014.6 release (B18): the live kernel's profile is 2014.6.
+        self.assertIs(profile_for(KERNEL_VERSION), PROFILE_2014_6)
+        self.assertEqual(KERNEL_VERSION, "2014.6")
         for version, profile in PROFILES.items():
             self.assertEqual(profile.kernel_version, version)
             self.assertEqual(profile.base, base_for_kernel(version))
@@ -222,12 +224,110 @@ class Profile2014_5IdentityTests(unittest.TestCase):
             self.assertEqual(projection_digest(r), row["digest"], "sample game %d" % i)
             self.assertEqual(full_digest(r), row["full_digest"], "sample game %d" % i)
 
+
+def identity_game(a, b, game_type, i, profile=None):
+    """One of the 40 identity games by tests/data/result_identity.json's seed
+    rule; ``profile`` None resolves on the profile of KERNEL_VERSION."""
+    seed = hashlib.sha256(("identity-%s-%d" % (game_type, i)).encode()).digest()
+    extra = {} if profile is None else {"_test_profile": profile}
+    return resolve_game(a, b, seed=seed, event_id="identity-%s-%d" % (game_type, i),
+                        venue="neutral" if i % 5 == 0 else "home", game_type=game_type, **extra)
+
+
+IDENTITY_2014_6_NOTE = (
+    "Result digests of the 40 synthetic identity games under kernel 2014.6 (PROFILE_2014_6), recorded on "
+    "October 16, 2026 at the kernel 2014.6 release (plan batch B18) by `PYTHONPATH=. python tests/test_profiles.py "
+    "--record-2014-6`, before the version flip, and re-recorded on October 17, 2026 after the release decisions "
+    "(the pooled aging curve applied once), with every digest unchanged. The fixture clubs "
+    "(tests/synthetic_games.py sample_teams()) carry no strength record, so no player state is read and no "
+    "private draw is requested. 'digest' is the tests/test_attribution.py ResultIdentityTests projection "
+    "(final score, possessions, kickoffs, injuries, opening receiver, team counters); 'full_digest' is the "
+    "sha256 of the whole result (json.dumps with sort_keys, default=str). A credit-only or display-only "
+    "change to kernel 2014.6 must reproduce this file; a later kernel that deliberately changes results "
+    "records its own file and leaves this one asserted under PROFILE_2014_6, as "
+    "result_identity_2014_5_profile.json stays asserted under PROFILE_2014_5.")
+
+
+def record_2014_6_identity():
+    """The tests/data/result_identity_2014_6.json record, computed from the tree."""
+    a, b = sample_teams()
+    rows = []
+    for row in json.loads((FIXTURE.parent / "result_identity.json").read_text())["games"]:
+        game_type, i = row["game_type"], row["index"]
+        r = identity_game(a, b, game_type, i, PROFILE_2014_6)
+        rows.append({"digest": projection_digest(r), "full_digest": full_digest(r), "game_type": game_type,
+                     "index": i, "final_score": r["final_score"]})
+    return {"kernel": "2014.6", "profile": "runtime.profiles.PROFILE_2014_6", "note": IDENTITY_2014_6_NOTE,
+            "identity_rule": "tests/data/result_identity.json seed_rule (40 games)", "identity": rows}
+
+
+def format_2014_6_identity(record):
+    """The fixture's text: header keys, then one identity row per line."""
+    head = {k: v for k, v in record.items() if k != "identity"}
+    lines = ["{"] + ["  %s: %s," % (json.dumps(k), json.dumps(v)) for k, v in head.items()]
+    lines.append('  "identity": [')
+    lines += ["    %s%s" % (json.dumps(row, sort_keys=True), "," if n < len(record["identity"]) - 1 else "")
+              for n, row in enumerate(record["identity"])]
+    lines += ["  ]", "}"]
+    return "\n".join(lines) + "\n"
+
+
+class Profile2014_6IdentityTests(unittest.TestCase):
+    """Kernel 2014.6 release (batch B18): PROFILE_2014_6 reproduces the 40
+    identity digests recorded at the release, projection and whole result,
+    and the profile of KERNEL_VERSION is that profile."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.fixture = json.loads(FIXTURE_2014_6.read_text())
+
+    def test_identity_games(self):
+        self.assertEqual((self.fixture["kernel"], self.fixture["profile"]),
+                         ("2014.6", "runtime.profiles.PROFILE_2014_6"))
+        self.assertEqual(len(self.fixture["identity"]), 40)
+        seeds = {(row["game_type"], row["index"])
+                 for row in json.loads((FIXTURE.parent / "result_identity.json").read_text())["games"]}
+        self.assertEqual({(row["game_type"], row["index"]) for row in self.fixture["identity"]}, seeds)
+        a, b = sample_teams()
+        for row in self.fixture["identity"]:
+            game_type, i = row["game_type"], row["index"]
+            r = identity_game(a, b, game_type, i, PROFILE_2014_6)
+            self.assertEqual(r["kernel_version"], "2014.6")
+            self.assertEqual(r["calibration_base"]["name"], "2010_2014w4")
+            self.assertEqual(validate_result(r), [], "%s %d" % (game_type, i))
+            self.assertEqual(r["final_score"], row["final_score"], "%s %d" % (game_type, i))
+            self.assertEqual(projection_digest(r), row["digest"], "%s %d" % (game_type, i))
+            self.assertEqual(full_digest(r), row["full_digest"], "%s %d" % (game_type, i))
+
     def test_default_profile_is_the_live_kernel(self):
         # No _test_profile is the profile of KERNEL_VERSION: the same result.
+        self.assertIs(profile_for(KERNEL_VERSION), PROFILE_2014_6)
         a, b = sample_teams()
-        row = self.fixture["sample"][0]
-        r = resolve_game(a, b, seed=SEED + b"-%05d" % 0, event_id=f"{EVENT_PREFIX}-0")
-        self.assertEqual(full_digest(r), row["full_digest"])
+        for row in (self.fixture["identity"][0], self.fixture["identity"][-1]):
+            r = identity_game(a, b, row["game_type"], row["index"])
+            self.assertEqual(full_digest(r), row["full_digest"])
+
+    def test_the_fixture_is_the_recorder_output(self):
+        # The committed file is the recorder's text for its own record
+        # (format included); test_identity_games proves the record is this
+        # tree's results, so no digest was typed by hand.
+        self.assertEqual(format_2014_6_identity(self.fixture), FIXTURE_2014_6.read_text(encoding="utf-8"))
+        self.assertEqual(self.fixture["note"], IDENTITY_2014_6_NOTE)
+
+
+class ReleasePinTests(unittest.TestCase):
+    """Kernel 2014.6 release (B18): runtime/season_readiness.json accepts the
+    installed kernel and pins its calibration base, and the checkout holds
+    every pin of that base."""
+
+    def test_season_readiness_pins_the_live_base(self):
+        from runtime.calibration_base import get_base, record
+        data = json.loads((Path(__file__).resolve().parents[1] / "runtime/season_readiness.json").read_text())
+        release = data["seasons"]["2014"]
+        self.assertEqual(release["accepted_kernel"], KERNEL_VERSION)
+        base = get_base(base_for_kernel(release["accepted_kernel"]))
+        self.assertEqual(release["calibration_base"], record(base))
+        self.assertEqual(base.verify(), [])
 
 
 class StripFieldGroupTests(unittest.TestCase):
@@ -294,4 +394,8 @@ class StripFieldGroupTests(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    if sys.argv[1:] == ["--record-2014-6"]:
+        # Kernel 2014.6 release (B18): write tests/data/result_identity_2014_6.json.
+        FIXTURE_2014_6.write_text(format_2014_6_identity(record_2014_6_identity()), encoding="utf-8")
+    else:
+        unittest.main()

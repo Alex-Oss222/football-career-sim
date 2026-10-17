@@ -37,8 +37,13 @@ class ProvisionalRegistryTests(unittest.TestCase):
     def test_only_the_2014_6_cohort_has_provisional_rows(self):
         self.assertEqual(set(PROVISIONAL_DETECTIONS), {"2014.6"})
         self.assertEqual(set(provisional_detections("2014.6")), EXPECTED)
-        for cohort in ("2013.6", "2013.7", "2014.1", "2014.2", "2014.5", KERNEL_VERSION, "legacy"):
+        for cohort in ("2013.6", "2013.7", "2014.1", "2014.2", "2014.5", "legacy"):
             self.assertEqual(provisional_detections(cohort), {})
+        # Kernel 2014.6 release (B18): the live kernel is the provisional
+        # cohort itself (its rows were re-graded at the release check; the
+        # OUTSIDE ones are Stone's accepted limits, defect register item 32).
+        self.assertEqual(KERNEL_VERSION, "2014.6")
+        self.assertEqual(set(provisional_detections(KERNEL_VERSION)), EXPECTED)
 
     def test_released_registries_are_unchanged(self):
         self.assertEqual(set(known_detections("2014.5")), {

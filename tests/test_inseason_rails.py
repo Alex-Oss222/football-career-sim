@@ -914,9 +914,34 @@ class CommittedDataTests(unittest.TestCase):
                     seen[p["uid"]] = code
 
     def test_the_week_5_package_joins_every_club_by_gsis(self):
+        # Kernel 2014.6 release (B18): the installed kernel's build, on the
+        # player-state model under a stand-in for the 2014 binding (the bind
+        # follows the merge), with league delegations standing in for Stone's
+        # Week 5 two-point and kickoff rules and his recorded defensive-back
+        # roles (Bouye nickel, Ball outside reserve) on a copy of the chart.
+        from runtime import player_state
         receipts = load_receipts(SeasonPaths(2014).receipts)
         sheet = json.loads((SeasonPaths(2014).week_folder(4) / "call_sheet.json").read_text())["offensive_call_sheet"]
-        package = week_inputs.build_package(5, receipts, sheet, build_week_inputs.AVERAGE_ANCHORS, 2014)
+        stand_in = {"schema": player_state.BINDING_SCHEMA, "league_year": 2014,
+                    "manifest_sha256": player_state.manifest_sha256(), "commitment": "0" * 64}
+        decisions = {"two_point": {"otherwise": "league"}, "kickoff": {"otherwise": "league"}}
+        chart_data = json.loads(SeasonPaths(2014).depth_chart.read_text(encoding="utf-8"))
+        chart_data["roles"].setdefault("A.J. Bouye", []).append("nickel")
+        chart_data["roles"].setdefault("Alan Ball", []).append("outside_reserve")
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        chart = Path(tmp.name) / "chart.json"
+        chart.write_text(json.dumps(chart_data), encoding="utf-8")
+
+        class Paths(SeasonPaths):
+            @property
+            def depth_chart(self):
+                return chart if self.year == 2014 else super().depth_chart
+
+        with mock.patch.object(week_inputs, "SeasonPaths", Paths), \
+                mock.patch.object(player_state, "binding", return_value=stand_in):
+            package = week_inputs.build_package(5, receipts, sheet, build_week_inputs.AVERAGE_ANCHORS, 2014,
+                                                decisions=decisions)
         self.assertEqual(len(package["strength_coverage"]), 30)
         for team, cov in package["strength_coverage"].items():
             self.assertFalse([f for f in cov["fallbacks"] if f["reason"].startswith("identity")], team)

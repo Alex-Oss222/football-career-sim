@@ -207,15 +207,18 @@ class ReadinessPinTests(unittest.TestCase):
         sys.path.insert(0, str(ROOT / "scripts"))
         from check_game_readiness import calibration_base_blockers
         self.assertEqual(calibration_base_blockers(ROOT), [])
+        # The 2012 base is kernel 2014.5's (the live kernel's until the 2014.6
+        # release, batch B18), so its copy is checked for that kernel.
+        self.assertEqual(calibration_base_blockers(ROOT, version="2014.5"), [])
         with tempfile.TemporaryDirectory() as tmp:
             for role, pin in BASE_2012.files:
                 target = Path(tmp) / pin.path
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_bytes((ROOT / pin.path).read_bytes())
-            self.assertEqual(calibration_base_blockers(tmp), [])
+            self.assertEqual(calibration_base_blockers(tmp, version="2014.5"), [])
             path = Path(tmp) / BASE_2012.pin("fg_distance").path
             path.write_bytes(path.read_bytes().replace(b"slope_per_yard", b"slope_per_yarD"))
-            blockers = calibration_base_blockers(tmp)
+            blockers = calibration_base_blockers(tmp, version="2014.5")
             self.assertEqual([b["id"] for b in blockers], ["calibration_base"])
             self.assertIn("2014_strength_calibration_v3.json", blockers[0]["detail"])
         # Batch B5: the 2014.6 base is pinned, so readiness for it passes on

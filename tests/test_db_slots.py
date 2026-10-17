@@ -504,7 +504,13 @@ class Week5BuildTests(unittest.TestCase):
     event is closed): Jacksonville fails closed until its roles are in the
     chart; with Stone's recorded roles (Bouye nickel, Ball outside reserve)
     every club is legal and dresses 46, the background DBs take their labels
-    and Weeks 1 to 4 are unchanged."""
+    and Weeks 1 to 4 are unchanged.
+
+    Since the kernel 2014.6 release (B18) the build is the installed
+    kernel's: the player-state model, under a stand-in for the 2014 binding
+    (the bind follows the merge), and Jacksonville's two-point and kickoff
+    blocks, here league delegations standing in for Stone's Week 5 rules
+    (the Week 4 sheet carries none)."""
 
     @classmethod
     def setUpClass(cls):
@@ -514,7 +520,11 @@ class Week5BuildTests(unittest.TestCase):
         sheet = json.loads((paths.week_folder(4) / "call_sheet.json").read_text(encoding="utf-8"))
         cls.args = (sheet["offensive_call_sheet"], {"offense_anchor": 2.0, "defense_anchor": 2.0,
                                                     "special_teams_anchor": 2.0}, 2014)
-        cls.decisions = sheet.get("decisions")
+        cls.decisions = dict(sheet.get("decisions") or {}, two_point={"otherwise": "league"},
+                             kickoff={"otherwise": "league"})
+        from runtime import player_state
+        cls.binding = {"schema": player_state.BINDING_SCHEMA, "league_year": 2014,
+                       "manifest_sha256": player_state.manifest_sha256(), "commitment": "0" * 64}
         chart = json.loads(paths.depth_chart.read_text(encoding="utf-8"))
         chart["roles"].setdefault("A.J. Bouye", []).append("nickel")
         chart["roles"].setdefault("Alan Ball", []).append("outside_reserve")
@@ -526,7 +536,7 @@ class Week5BuildTests(unittest.TestCase):
     def tearDownClass(cls):
         cls.tmp.cleanup()
 
-    def build(self, week, receipts, db_slots, chart=None):
+    def build(self, week, receipts, db_slots, chart=None, **kernel):
         test = self
 
         class Paths(SeasonPaths):
@@ -534,8 +544,11 @@ class Week5BuildTests(unittest.TestCase):
             def depth_chart(self):
                 return test.chart if chart and self.year == 2014 else super().depth_chart
 
-        with mock.patch.object(week_inputs, "SeasonPaths", Paths):
-            return week_inputs.build_package(week, receipts, *self.args, decisions=self.decisions, db_slots=db_slots)
+        from runtime import player_state
+        with mock.patch.object(week_inputs, "SeasonPaths", Paths), \
+                mock.patch.object(player_state, "binding", return_value=self.binding):
+            return week_inputs.build_package(week, receipts, *self.args, decisions=self.decisions, db_slots=db_slots,
+                                             **kernel)
 
     def test_week_5(self):
         with self.assertRaisesRegex(ValueError, "W2b defensive-back roles"):
@@ -574,7 +587,7 @@ class Week5BuildTests(unittest.TestCase):
         stale = copy.deepcopy(package)
         stale["rails"]["db_slots"]["families_sha256"] = "0" * 64
         self.assertTrue(any(family_error in e for e in rails_package_errors(stale, 5, 2014)))
-        # Without db_slots (the installed 2014.5 kernel) nothing is relabelled.
+        # Without db_slots (as under kernel 2014.5) nothing is relabelled.
         plain = self.build(5, self.receipts, False)
         den = {p["player_id"]: p for g in plain["games"] for s in ("away_input", "home_input")
                if g[s]["team_id"] == "Denver Broncos" for p in g[s]["roster"]}
@@ -597,9 +610,12 @@ class Week5BuildTests(unittest.TestCase):
                     "roster": [dict(p) for p in frozen.roster], "offensive_call_sheet": list(call_sheet)}
 
         receipts = [r for r in self.receipts if int(r["week"]) < 4]
+        # Week 4 is closed under kernel 2014.5: its package is that kernel's
+        # build (the honours-production-v3 records, no decision kinds).
+        closed = {"strength_model": strength.MODEL, "decision_kinds": ()}
         with mock.patch.object(week_inputs, "jacksonville_input", stub):
-            on = self.build(4, receipts, True)
-            off = self.build(4, receipts, False)
+            on = self.build(4, receipts, True, **closed)
+            off = self.build(4, receipts, False, **closed)
         self.assertEqual(json.dumps(on, sort_keys=True), json.dumps(off, sort_keys=True))
         self.assertEqual(asked, [False, False])
         self.assertNotIn("rails", on)

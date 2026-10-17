@@ -36,6 +36,22 @@ def copied_root(testcase, *, without_depth_chart=False):
     return root
 
 
+def stage_bound_release(root):
+    """Kernel 2014.6 release (B18): the 2014 release is accepted except the
+    player_state gate, which stays BLOCKED until the 2014 bind from merged
+    main. A test of the released state stages that bind on a copy: the gate
+    reads VERIFIED with a stand-in evidence file. The real
+    runtime/season_readiness.json is never edited."""
+    path = root / 'runtime/season_readiness.json'
+    data = json.loads(path.read_text())
+    gate = next(g for g in data['seasons']['2014']['gates'] if g['id'] == 'player_state')
+    evidence = root / 'library/data/2014_player_state_binding.json'
+    evidence.write_text(json.dumps({'staged': 'test stand-in for the bind'}))
+    gate.update(status='VERIFIED', evidence=[evidence.relative_to(root).as_posix()])
+    path.write_text(json.dumps(data, indent=2))
+    return root
+
+
 class SeasonIsolationTests(unittest.TestCase):
     def test_missing_2014_schedule_never_uses_2013(self):
         with tempfile.TemporaryDirectory(dir=ROOT.parent) as tmp:
@@ -95,9 +111,8 @@ class SeasonIsolationTests(unittest.TestCase):
             self.assertEqual(current_record('roster', root).read_text(), '2014')
 
     def test_successful_service_cannot_override_open_2014_release(self):
-        # The real 2014 release is accepted, so an open gate is staged by
-        # patching the gate loader; the real runtime/season_readiness.json is
-        # never edited.
+        # An open gate is staged by patching the gate loader; the real
+        # runtime/season_readiness.json is never edited.
         with patch.object(check_game_readiness, 'validate', return_value=[]), \
                 patch.object(check_game_readiness, 'Client') as client, \
                 patch.dict(os.environ, {'ENGINE_RUNTIME_URL': 'http://audit.invalid', 'ENGINE_API_TOKEN': 'synthetic'}):
@@ -108,17 +123,34 @@ class SeasonIsolationTests(unittest.TestCase):
             self.assertFalse(result['ready'])
             self.assertIn('season_release', {b['id'] for b in result['blockers']})
             client.assert_not_called()
-            # Only the released state reaches the service at all.
-            released = check_game_readiness.assess(season=2014)
+            # Kernel 2014.6 release (B18): the real release is open at the
+            # player_state gate until the 2014 bind, so it never reaches the
+            # service either.
+            real = check_game_readiness.assess(season=2014)
+            self.assertTrue(any(b['id'] == 'season_release' and b['detail'].startswith('player_state')
+                                for b in real['blockers']))
+            client.assert_not_called()
+            # Only the released state (after the bind, staged here) reaches
+            # the service at all.
+            with patch.object(check_game_readiness, 'game_release_errors', return_value=[]):
+                released = check_game_readiness.assess(season=2014)
             self.assertNotIn('season_release', {b['id'] for b in released['blockers']})
             client.return_value.readiness.assert_called_once()
 
     def test_direct_2014_game_is_blocked_before_private_closure(self):
-        # Under the accepted 2014 release the refusal moves from the release
-        # gate to the private snapshot identity check: a client that is not
-        # bound to the game's snapshot never closes an event.
+        # Kernel 2014.6 release (B18): until the 2014 bind the player_state
+        # gate refuses every new 2014 game first.
         client = Mock()
-        with self.assertRaisesRegex(ValueError, 'client and game snapshot differ'):
+        with self.assertRaisesRegex(ValueError, 'Season 2014 game execution blocked: player_state'):
+            game_runner.run_game(None, None, event_id='2014-week01-a-at-b',
+                                 snapshot='synthetic-snapshot', client=client)
+        client.close_event.assert_not_called()
+        # Under the accepted 2014 release (after the bind, staged here) the
+        # refusal moves from the release gate to the private snapshot
+        # identity check: a client that is not bound to the game's snapshot
+        # never closes an event.
+        with patch('runtime.seasons.game_release_errors', return_value=[]), \
+                self.assertRaisesRegex(ValueError, 'client and game snapshot differ'):
             game_runner.run_game(None, None, event_id='2014-week01-a-at-b',
                                  snapshot='synthetic-snapshot', client=client)
         client.close_event.assert_not_called()
@@ -136,7 +168,7 @@ class SeasonIsolationTests(unittest.TestCase):
         eve = date(2014, 9, 6)
         with patch.object(build_week_inputs, 'master_date', return_value=eve):
             self.assertIn('Information gate', build_week_inputs.information_gate_error(1, 2014) or '')
-        released = copied_root(self)
+        released = stage_bound_release(copied_root(self))
         with patch.object(build_week_inputs, 'ROOT', released), \
                 patch.object(build_week_inputs, 'master_date', return_value=eve), \
                 patch.object(sys, 'argv', ['test', '1', '--season', '2014']), \

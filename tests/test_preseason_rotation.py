@@ -20,7 +20,7 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from runtime import game_runner, rotation
-from runtime.kernel import TeamInput, resolve_game, validate_result
+from runtime.kernel import DEPTH_ORDER, TeamInput, resolve_game, validate_result
 from runtime.rules import PRESEASON
 from support_rosters import game_day_roster
 from synthetic_games import TEAM_A_SHEET
@@ -158,7 +158,10 @@ class RemovalTests(unittest.TestCase):
         pause = partial["pauses"][-1]
         decision = next(d for d in pause["decisions"] if d["slot"] == "A-QB1")
         self.assertEqual(decision["reason"], "quarterback")
-        self.assertEqual(decision["eligible"], ["A-QB2", "A-QB3"])
+        # Kernel 2014.6 (B15, W2c): the eligible list ends with the sentinel
+        # that keeps the depth order, the default.
+        self.assertEqual(decision["eligible"], ["A-QB2", "A-QB3", DEPTH_ORDER])
+        self.assertEqual((decision["default"], decision["default_entrant"]), (DEPTH_ORDER, "A-QB2"))
         self.assertNotIn("rotation", partial)
         # Stone sends the third quarterback: his choice leads the block, then the plan resumes.
         result = play(a, b, management_mode="user_controlled", controlled_team="A", _test_onsets=dict(onsets),

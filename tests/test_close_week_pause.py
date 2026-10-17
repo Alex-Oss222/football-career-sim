@@ -33,6 +33,11 @@ from local_private_service import local_service
 from support_rosters import game_day_roster
 
 JAX = close_week.PROTAGONIST
+# Kernel 2014.6 release (B18; U6, B9F): the user-controlled club carries its
+# two-point, kickoff and fourth-down blocks. CloseWeekPauseTests is about the
+# injury pause, so Jacksonville delegates all three to the league chart there.
+DELEGATED = {"try_policy": {"otherwise": "league"}, "kickoff_policy": {"otherwise": "league"},
+             "fourth_down_policy": {"otherwise": "league"}}
 EVENT = "pause-week01-b-at-jacksonville"
 BACKGROUND = "pause-week01-d-at-c"
 
@@ -69,7 +74,7 @@ class CloseWeekPauseTests(unittest.TestCase):
         (root / "career/2014").mkdir(parents=True)
         self.paths = SeasonPaths(2014, root)
         self.client = local_service(self, root / "private", seed_label)[1]
-        self.home = club(JAX, "A", featured=("A-QB1", "A-WR1"), third_quarterback=True)
+        self.home = replace(club(JAX, "A", featured=("A-QB1", "A-WR1"), third_quarterback=True), **DELEGATED)
         self.away = club("B", "B")
         # Background game listed first: the closure must still draw Jacksonville first.
         self.package = {"season": 2014, "week": 1, "games": [
@@ -177,11 +182,14 @@ class CloseWeekPauseTests(unittest.TestCase):
         self.assertEqual([i for i in auto["injuries"] if i["drive"] <= self.drive],
                          [i for i in final["injuries"] if i["drive"] <= self.drive])
         auto_sub = next(s for s in auto["substitutions"] if s["removed"] == "A-QB1")
-        self.assertEqual((auto_sub["basis"], auto_sub["replacement"]), ("depth_order", quarterback["default"]))
+        # Kernel 2014.6 (B15, W2c): the default answer is the sentinel that
+        # keeps the depth order, and the pause names its entrant.
+        self.assertEqual(quarterback["default"], kernel.DEPTH_ORDER)
+        self.assertEqual((auto_sub["basis"], auto_sub["replacement"]), ("depth_order", quarterback["default_entrant"]))
         self.assertNotEqual(auto_sub["replacement"], choice)
         first_passer = lambda r: next(p["passer"] for p in r["possessions"] if p["team"] == JAX and p["number"] > self.drive)
         self.assertEqual(first_passer(final), choice)
-        self.assertEqual(first_passer(auto), quarterback["default"])
+        self.assertEqual(first_passer(auto), quarterback["default_entrant"])
         self.assertTrue(all(p["passer"] == "A-QB1" for p in final["possessions"]
                             if p["team"] == JAX and p["number"] <= self.drive))
 
@@ -261,8 +269,8 @@ class FourthDownPauseTests(unittest.TestCase):
     Skalaski and Tice supply, the answer file resumes it, and the background
     game is decided by the league chart. Its two-point tries are asked live
     as well (otherwise: ask; U6 answered either way). The kernel resolves
-    under PROFILE_2014_6 through the runner's binding (test patch only); the
-    installed kernel stays 2014.5."""
+    under PROFILE_2014_6 through the runner's binding (test patch only; since
+    the release, B18, it is the installed kernel's profile as well)."""
 
     SHEET = ({"name": "12 Ace Right, Power R", "family": "Power", "type": "run"},
              {"name": "12 Trey Right, Stick", "family": "Stick", "type": "pass"})
