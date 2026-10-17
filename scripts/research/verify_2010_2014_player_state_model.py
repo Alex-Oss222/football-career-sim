@@ -269,6 +269,9 @@ def invariant_errors(model=None, public=None, manifest=None):
         if (fam in ps.SPECIALISTS or pooled == "Z") and aging["adopted"] != \
                 model["aging"]["families"][fam]["rule"]["adopted"]:
             errors.append("%s: the per-family aging result is not the one applied" % fam)
+        if aging["adopted"] != "Z" and aging.get("application") != ps.APPLICATION_DECISION[
+                "pooled" if aging.get("source") == "pooled (D1)" else "family"]:
+            errors.append("%s: the aging application rule is not release decision 2's" % fam)
         rule = block["draft_priors"]["rule"]
         slope = block["draft_priors"]["log_pick_slope"]
         if rule["slope"] and not (slope["slope"] is not None and slope["slope"] < 0

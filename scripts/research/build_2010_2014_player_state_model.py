@@ -61,8 +61,9 @@ public performance rate and no state):
   overall pick where kept, else the drafted or undrafted family means, each player's own
   class left out, under the minimum cell) or, for a veteran entering before 2010, from the
   population N(0, diag(sb2, su2)); the adopted aging curve moves the forecast's persistent
-  part at each season step after the player's last line (the forecast correction it was
-  fitted as); an admissible honour (AP
+  part after the player's last line (the forecast correction it was fitted as): the pooled
+  curve once, by its step at the last line's age (release decision 2, October 16-17, 2026),
+  a family's own curve (the punters') at each season step; an admissible honour (AP
   All-Pro or original Pro Bowl, public before the cutoff) enters as a pseudo-observation
   split by the Kalman gain, with EVIDENCE_WEIGHT 1.0 (Confirmed two-pass) or 0.5
   (Single-pass); the record family is the family holding most of his 2010-2012
@@ -135,6 +136,18 @@ U5_DECISION = {"status": "accepted", "date": "2026-10-16",
                "applied": PS["u5_conditional"],
                "d1": "(c) Pooled curve + test (Recommended)",
                "dl_lb_swing": "pass 1's sets (amendment 3)"}
+# Release decision 2 (Stone, the release check, October 16-17, 2026; runtime/2014_engine_decisions.md, release
+# decisions): the pooled curve applies once, at the age of the player's last line, instead of at each season step
+# after it. A family's own curve (the punters') keeps the rule it was built with; no other rule changes.
+APPLICATIONS = ("every_step", "once")
+APPLICATION_DECISION = {"decision": "release decision 2, the aging application rule",
+                        "date": "2026-10-16/17 (question card, answered before the container restart at about "
+                                "01:50 UTC on October 17)",
+                        "answer": "Once (Recommended)",
+                        "record": "runtime/2014_engine_decisions.md (release decisions)",
+                        "pooled": "once", "family": "every_step",
+                        "before": ("each season step after the last line, for every adopted curve (batch U5 and its "
+                                   "review fix, October 16, 2026)")}
 LATENT_REFERENCES = 20
 METRICS = {
     "QB": "EPA per dropback (passing_epa over attempts plus sacks), weekly statistics",
@@ -695,11 +708,13 @@ def update(state, y, R):
 def filter_player(start, lines, honours, params, honour_cell, target, drift=None, d=None, anchor=None):
     """Forecast of (m_b, m_u, P) for season `target` from `start` = (season, state), the
     player's lines {season: (y, R)} and honours {season: weight}, seasons before target only.
-    With an aging curve (`drift`) the forecast's persistent part moves by the curve's step at
-    each season step from `anchor` (the player's last line in the window) to the target: the
-    curve was fitted as the correction to a one-step forecast from a player's own record, so it
-    is applied to the forecast horizon only, never inside the record or to a prior-only state
-    (the rookie priors already describe the first two seasons)."""
+    With an aging curve (`drift`) the forecast's persistent part moves after `anchor` (the
+    player's last line in the window): the curve was fitted as the correction to a one-step
+    forecast from a player's own record, so it is applied to the forecast horizon only, never
+    inside the record or to a prior-only state (the rookie priors already describe the first two
+    seasons). Under the curve's application rule it moves by the step at each season from the
+    anchor to the target ("every_step") or by the step at the anchor's age once ("once": release
+    decision 2, October 16-17, 2026)."""
     season, state = start
     while season < target:
         if season in lines:
@@ -707,7 +722,8 @@ def filter_player(start, lines, honours, params, honour_cell, target, drift=None
         if season in honours and honour_cell is not None:
             state = update(state, honour_cell["mean"], honour_cell["true_var"] / honours[season])
         state = propagate(state, params, 1)
-        if drift is not None and anchor is not None and season >= anchor:
+        if drift is not None and anchor is not None and (
+                season == anchor or (season > anchor and drift.application == "every_step")):
             mb, mu, P = state
             state = (mb + drift.step(d, season), mu, P)
         season += 1
@@ -804,10 +820,15 @@ class Drift:
     """An adopted aging curve: the one-step change of the persistent state from season t to t + 1,
     scale x terms(age_t, experience_t) . beta, in the family's units (scale is the family's true-state SD for
     the pooled curve, fitted in SD units, and 1 for a family's own curve). A season without a birth date
-    carries no age-dependent step."""
+    carries no age-dependent step. `application` is how a forecast takes it after the player's last line:
+    "every_step" (its step at each season from the last line to the target) or "once" (its step at the last
+    line's age only, whatever the horizon; release decision 2, October 16-17, 2026, for the pooled curve)."""
 
-    def __init__(self, candidate, beta=(), scale=1.0):
+    def __init__(self, candidate, beta=(), scale=1.0, application="every_step"):
+        if application not in APPLICATIONS:
+            raise ValueError("unknown aging application %r" % (application,))
         self.candidate, self.beta, self.scale = candidate, list(beta), float(scale)
+        self.application = application
 
     def step(self, d, season):
         if self.candidate == "Z":
@@ -823,11 +844,14 @@ ZERO_DRIFT = Drift("Z")
 
 
 def drift_from(block, which="pass1"):
-    """The Drift of a family's model aging block (`which`: pass1 or pass2 coefficients and scale)."""
+    """The Drift of a family's model aging block (`which`: pass1 or pass2 coefficients and scale), under the
+    block's application rule (a block without one is refused: the rule is part of the curve)."""
     if not block or block.get("adopted", "Z") == "Z":
         return ZERO_DRIFT
+    if block.get("application") not in APPLICATIONS:
+        raise ValueError("an aging block without an application rule")
     return Drift(block["adopted"], block["beta"] if which == "pass1" else block["pass2_beta"],
-                 block["scale"] if which == "pass1" else block["pass2_scale"])
+                 block["scale"] if which == "pass1" else block["pass2_scale"], block["application"])
 
 
 def aging_rows(fam, lines, info, priors, params, tags=None):
@@ -1297,7 +1321,8 @@ def fit_aging(lines, info, fams, params, second, verify):
             cand = pooled["rule"]["adopted"]
             block = {"adopted": cand, "source": "pooled (D1)", "beta": pf1[cand]["beta"], "scale": s1,
                      "pass2_beta": pf2[cand]["beta"], "pass2_scale": s2, "status": "pass 1's coefficients",
-                     "terms": TERM_NAMES[cand], "label": "%s (pooled)" % cand}
+                     "terms": TERM_NAMES[cand], "label": "%s (pooled)" % cand,
+                     "application": APPLICATION_DECISION["pooled"]}
         else:
             cand = per[fam]["rule"]["adopted"]
             if cand == "Z":
@@ -1308,7 +1333,7 @@ def fit_aging(lines, info, fams, params, second, verify):
                                 else (per[fam]["pass1"][cand]["beta"], "pass 1's coefficients"))
                 block = {"adopted": cand, "source": "family", "beta": beta, "scale": 1.0,
                          "pass2_beta": per[fam]["pass2"][cand]["beta"], "pass2_scale": 1.0, "status": status,
-                         "terms": TERM_NAMES[cand], "label": cand}
+                         "terms": TERM_NAMES[cand], "label": cand, "application": APPLICATION_DECISION["family"]}
         fams[fam]["aging"] = block
     return per, pooled, tagged
 
@@ -1340,25 +1365,28 @@ def _variant_report(rows, cand):
 
 def horizon_drift(lines, info, fams, params, pooled):
     """The aging check at the horizon the 2014 table uses (review fix, October 16, 2026; it replaces a refit on the
-    same one-step residuals the curve was fitted on, which returns zero by construction). A 2014 expectation from
-    2010-2012 lines takes the curve's step at each season after the player's last line (for a last line in 2012,
-    the steps at his 2012 and 2013 ages), so the check reads two-step forecasts:
+    same one-step residuals the curve was fitted on, which returns zero by construction). For a last line in 2012 a
+    2014 expectation from 2010-2012 lines is two seasons ahead, so the check reads two-step forecasts:
     - in sample: each qualifying t + 2 line (t = 2010, 2011) of a player with a qualifying line at t, forecast from
       his lines through t (window 2010 to t, target t + 2);
     - held out: each qualifying 2014 Weeks 1-4 line of a player with a 2012 line, forecast from his 2010-2012 lines
       (the table's own window and target).
-    Each forecast with no curve, with the curve applied once (its step at the last line's age only) and as
-    applied; for each, the weighted SSE and the adopted pooled candidate refitted on the residuals, in true-state
-    SD units, pooled over the non-specialist families (pass 1's components; age and experience at the last line).
-    Reported only: the application rule is not changed by it (a change after these readings is Stone's call)."""
+    Each forecast with no curve, with the curve once (its step at the last line's age only) and at every step after
+    the last line; for each, the weighted SSE and the adopted pooled candidate refitted on the residuals, in
+    true-state SD units, pooled over the non-specialist families (pass 1's components; age and experience at the
+    last line). `applied` names the rule the table uses: once since release decision 2 (October 16-17, 2026), every
+    step before it; the readings are the same either way, only the label of the applied one moves."""
     cand = pooled["rule"]["adopted"]
     if cand == "Z":
         return {"candidate": "Z", "note": "no curve applied to the non-specialist families"}
-    variants = ("none", "once", "as_applied")
+    variants = ("none", "once", "every_step")
     sets = {"in_sample_two_step": {v: [] for v in variants},
             "held_out_2012_lines_to_2014w4": {v: [] for v in variants}}
+    applied = set()
     for fam in NON_SPECIALISTS:
         drift = drift_from(fams[fam]["aging"])
+        applied.add(drift.application)
+        every = Drift(drift.candidate, drift.beta, drift.scale, "every_step")
         s = math.sqrt(max(params[fam]["sb2"] + params[fam]["su2"], 0.0))
         if s <= 0:
             continue
@@ -1385,16 +1413,19 @@ def horizon_drift(lines, info, fams, params, pooled):
                 (mb0, mu0, P), _, _, _ = player_state(pid, fam, lines, info, priors, params[fam], {}, None, window,
                                                        target)
                 (mb1, mu1, _), _, _, _ = player_state(pid, fam, lines, info, priors, params[fam], {}, None, window,
-                                                       target, drift)
+                                                       target, every)
                 v = (P[0] + 2 * P[1] + P[2] + b["R"]) / s ** 2
                 r0 = (b["y"] - mb0 - mu0) / s
                 exp = experience_at(d, anchor)
                 for name, r in (("none", r0), ("once", r0 - drift.step(d, anchor) / s),
-                                ("as_applied", (b["y"] - mb1 - mu1) / s)):
+                                ("every_step", (b["y"] - mb1 - mu1) / s)):
                     sets[key][name].append((anchor, r, v, age, exp))
-    return {"candidate": cand, "unit": "true-state SD of each family (pass 1)",
-            "rule": ("once = the curve's step at the last line's age only; as applied = every step after the last line "
-                     "(the adopted rule); reported, not used to choose"),
+    if len(applied) != 1:
+        raise ValueError("the non-specialist families do not share one application rule")
+    return {"candidate": cand, "unit": "true-state SD of each family (pass 1)", "applied": applied.pop(),
+            "rule": ("once = the curve's step at the last line's age only; every step = its step at each season after "
+                     "the last line; applied = the table's rule (once since release decision 2, October 16-17, 2026; "
+                     "every step before it)"),
             "checks": {key: {v: _variant_report(rows, cand) for v, rows in got.items()} for key, got in sets.items()}}
 
 
@@ -1414,7 +1445,7 @@ def drift_without(fam, pid, fams, tagged):
     fit = _wls(keep, block["adopted"])
     if fit is None:
         return drift_from(block)
-    return Drift(block["adopted"], fit[0], block["scale"])
+    return Drift(block["adopted"], fit[0], block["scale"], block["application"])
 
 
 def tier_cuts_from_production():
@@ -1614,8 +1645,10 @@ def build(dest, log=print):
                            "eligible only if it beats Z in both passes (pass 1 leave-one-season-pair-out weighted "
                            "SSE, pass 2 BIC n ln(SSE/n) + k ln n); the lowest pass 1 SSE adopted; the curve is the "
                            "fitted correction to a forecast from the player's own record: it moves the forecast's "
-                           "persistent part at each season step after his last line, never inside the record or "
-                           "a prior-only state"),
+                           "persistent part after his last line, never inside the record or a prior-only state; "
+                           "the pooled curve once, by its step at the last line's age (release decision 2), a "
+                           "family's own curve at each season step"),
+                  "application": APPLICATION_DECISION,
                   "age_centre": AGE_CENTRE, "pairs": ["%d-%d" % (t, t + 1) for t in AGING_PAIRS],
                   "families": aging_per, "pooled": aging_pooled,
                   "horizon_check": horizon_drift(lines, info, fams, params, aging_pooled)},

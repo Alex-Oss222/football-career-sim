@@ -295,6 +295,38 @@ class U5Tests(unittest.TestCase):
         self.assertAlmostEqual(aged[0] - plain[0], 1.0)  # 2012 -> 2013 and 2013 -> 2014 only
         prior_only = ps.filter_player(start, {}, {}, params, None, 2014, drift, {}, None)
         self.assertEqual(prior_only[0], ps.filter_player(start, {}, {}, params, None, 2014)[0])
+        # Release decision 2: applied once, the step at the last line's age only, whatever the horizon.
+        once = ps.Drift("C", [0.5], application="once")
+        self.assertAlmostEqual(ps.filter_player(start, lines, {}, params, None, 2014, once, {}, 2012)[0] - plain[0], 0.5)
+        early = {2010: (0.0, 1.0)}
+        plain_early = ps.filter_player(start, early, {}, params, None, 2014)
+        self.assertAlmostEqual(ps.filter_player(start, early, {}, params, None, 2014, drift, {}, 2010)[0]
+                               - plain_early[0], 2.0)
+        self.assertAlmostEqual(ps.filter_player(start, early, {}, params, None, 2014, once, {}, 2010)[0]
+                               - plain_early[0], 0.5)
+        self.assertAlmostEqual(ps.filter_player(start, lines, {}, params, None, 2013, once, {}, 2012)[0],
+                               ps.filter_player(start, lines, {}, params, None, 2013, drift, {}, 2012)[0])
+        with self.assertRaises(ValueError):
+            ps.Drift("C", [0.5], application="twice")
+        with self.assertRaises(ValueError):
+            ps.drift_from({"adopted": "C", "beta": [0.5], "scale": 1.0, "pass2_beta": [0.5], "pass2_scale": 1.0})
+
+    def test_the_pooled_curve_applies_once_and_the_punter_curve_every_step(self):
+        m = model()
+        self.assertEqual(m["aging"]["application"]["answer"], "Once (Recommended)")
+        for fam, block in m["families"].items():
+            a = block["aging"]
+            if a["adopted"] == "Z":
+                self.assertNotIn("application", a, fam)
+            elif a["source"] == "pooled (D1)":
+                self.assertEqual(a["application"], "once", fam)
+            else:
+                self.assertEqual(a["application"], "every_step", fam)
+        hc = m["aging"]["horizon_check"]
+        if hc["candidate"] != "Z":
+            self.assertEqual(hc["applied"], "once")
+            for got in hc["checks"].values():
+                self.assertEqual(sorted(got), ["every_step", "none", "once"])
 
     def test_age_and_experience(self):
         d = {"birth_date": "1990-09-01", "cls": 2012, "drafted": True}

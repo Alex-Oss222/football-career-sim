@@ -1,6 +1,15 @@
 {
  "aging": {
   "age_centre": 27,
+  "application": {
+   "answer": "Once (Recommended)",
+   "before": "each season step after the last line, for every adopted curve (batch U5 and its review fix, October 16, 2026)",
+   "date": "2026-10-16/17 (question card, answered before the container restart at about 01:50 UTC on October 17)",
+   "decision": "release decision 2, the aging application rule",
+   "family": "every_step",
+   "pooled": "once",
+   "record": "runtime/2014_engine_decisions.md (release decisions)"
+  },
   "families": {
    "DB": {
     "no_birth_date": [
@@ -1951,10 +1960,11 @@
    }
   },
   "horizon_check": {
+   "applied": "once",
    "candidate": "M1",
    "checks": {
     "held_out_2012_lines_to_2014w4": {
-     "as_applied": {
+     "every_step": {
       "by_age": {
        "25-28": {
         "mean": 0.013726298343711344,
@@ -2073,7 +2083,7 @@
      }
     },
     "in_sample_two_step": {
-     "as_applied": {
+     "every_step": {
       "by_age": {
        "25-28": {
         "mean": 0.06331967599433301,
@@ -2192,7 +2202,7 @@
      }
     }
    },
-   "rule": "once = the curve's step at the last line's age only; as applied = every step after the last line (the adopted rule); reported, not used to choose",
+   "rule": "once = the curve's step at the last line's age only; every step = its step at each season after the last line; applied = the table's rule (once since release decision 2, October 16-17, 2026; every step before it)",
    "unit": "true-state SD of each family (pass 1)"
   },
   "pairs": [
@@ -2389,7 +2399,7 @@
    },
    "unit": "true-state SD of each family (residual over the family's sqrt(sb2 + su2), each pass its own)"
   },
-  "rule": "one-step forecast residuals (no aging, current components); candidates Z, C, M1, M2; eligible only if it beats Z in both passes (pass 1 leave-one-season-pair-out weighted SSE, pass 2 BIC n ln(SSE/n) + k ln n); the lowest pass 1 SSE adopted; the curve is the fitted correction to a forecast from the player's own record: it moves the forecast's persistent part at each season step after his last line, never inside the record or a prior-only state"
+  "rule": "one-step forecast residuals (no aging, current components); candidates Z, C, M1, M2; eligible only if it beats Z in both passes (pass 1 leave-one-season-pair-out weighted SSE, pass 2 BIC n ln(SSE/n) + k ln n); the lowest pass 1 SSE adopted; the curve is the fitted correction to a forecast from the player's own record: it moves the forecast's persistent part after his last line, never inside the record or a prior-only state; the pooled curve once, by its step at the last line's age (release decision 2), a family's own curve at each season step"
  },
  "boundary": "hidden-state statistical priors for the engine only; never scouting evidence or a staff-facing grade; no staff assessment, grade or E2 advice reads them or their tiers",
  "builder": "scripts/research/build_2010_2014_player_state_model.py",
@@ -2413,6 +2423,7 @@
    },
    "aging": {
     "adopted": "M1",
+    "application": "once",
     "beta": [
      -0.06420735018038269,
      -0.05954498897818657,
@@ -2768,12 +2779,12 @@
    },
    "floor": 4,
    "forecast_calibration_2013_to_2014w4": {
-    "mean_z": -0.0099219291685669,
+    "mean_z": -0.008613318263340315,
     "players": 111,
-    "se_mean": 0.08502687827387201,
+    "se_mean": 0.08493624538023362,
     "se_var": 0.13483997249264842,
     "status": "within 2 SE",
-    "var_z": 0.8024822732189831
+    "var_z": 0.8007724015013294
    },
    "honour_cell": {
     "mean": 0.3692676767224743,
@@ -2855,10 +2866,10 @@
    },
    "self_influence": {
     "channels": "moment sums and the aging fit",
-    "max": 0.06535710143924131,
-    "median": 0.0011783650113750376,
-    "p90": 0.010429512268074152,
-    "p99": 0.03143995640645575,
+    "max": 0.06427431078245552,
+    "median": 0.0006866649718672187,
+    "p90": 0.005087685129964,
+    "p99": 0.031045140536403434,
     "players": 243,
     "unit": "true-state SD of the family"
    },
@@ -2931,6 +2942,7 @@
    },
    "aging": {
     "adopted": "M1",
+    "application": "once",
     "beta": [
      -0.06420735018038269,
      -0.05954498897818657,
@@ -3286,12 +3298,12 @@
    },
    "floor": 4,
    "forecast_calibration_2013_to_2014w4": {
-    "mean_z": -0.019211696213941476,
+    "mean_z": -0.01618575147663709,
     "players": 75,
-    "se_mean": 0.11408521540440647,
+    "se_mean": 0.1141009607437753,
     "se_var": 0.1643989873053573,
     "status": "within 2 SE",
-    "var_z": 0.9761577280402367
+    "var_z": 0.9764271931989416
    },
    "honour_cell": {
     "mean": 1.1258307292235687,
@@ -3373,10 +3385,10 @@
    },
    "self_influence": {
     "channels": "moment sums and the aging fit",
-    "max": 0.027888277877326048,
-    "median": 0.0015185390672550394,
-    "p90": 0.006632898721356424,
-    "p99": 0.01605574452094882,
+    "max": 0.01662782930115752,
+    "median": 0.00082088464419909,
+    "p90": 0.0037310455725994176,
+    "p99": 0.009528427332223255,
     "players": 190,
     "unit": "true-state SD of the family"
    },
@@ -4393,6 +4405,7 @@
    },
    "aging": {
     "adopted": "M1",
+    "application": "once",
     "beta": [
      -0.06420735018038269,
      -0.05954498897818657,
@@ -4748,12 +4761,12 @@
    },
    "floor": 4,
    "forecast_calibration_2013_to_2014w4": {
-    "mean_z": -0.16723489913808406,
+    "mean_z": -0.16563646824286407,
     "players": 71,
-    "se_mean": 0.11816045520878987,
+    "se_mean": 0.11842810220604576,
     "se_var": 0.1690308509457033,
     "status": "within 2 SE",
-    "var_z": 0.9912944154355392
+    "var_z": 0.9957902928409191
    },
    "honour_cell": {
     "mean": 1.1089850010714364,
@@ -4835,10 +4848,10 @@
    },
    "self_influence": {
     "channels": "moment sums and the aging fit",
-    "max": 0.16298533911601754,
-    "median": 0.0017583006721708038,
-    "p90": 0.012162424277584993,
-    "p99": 0.11953509489240013,
+    "max": 0.16432950118017337,
+    "median": 0.0011019616290891833,
+    "p90": 0.009105197036393004,
+    "p99": 0.10063054217757249,
     "players": 173,
     "unit": "true-state SD of the family"
    },
@@ -4904,6 +4917,7 @@
    },
    "aging": {
     "adopted": "M1",
+    "application": "every_step",
     "beta": [
      0.6137506590824515,
      -0.1886848890474602,
@@ -5907,6 +5921,7 @@
    },
    "aging": {
     "adopted": "M1",
+    "application": "once",
     "beta": [
      -0.06420735018038269,
      -0.05954498897818657,
@@ -6246,12 +6261,12 @@
    },
    "floor": 50,
    "forecast_calibration_2013_to_2014w4": {
-    "mean_z": 0.037995021783294794,
+    "mean_z": 0.02873262723402536,
     "players": 32,
-    "se_mean": 0.14198362143366292,
+    "se_mean": 0.14097374329088877,
     "se_var": 0.254000254000381,
     "status": "within 2 SE",
-    "var_z": 0.6450991601733664
+    "var_z": 0.635955081518253
    },
    "honour_cell": {
     "mean": 0.18315326303336554,
@@ -6333,10 +6348,10 @@
    },
    "self_influence": {
     "channels": "moment sums and the aging fit",
-    "max": 0.30776702926762617,
-    "median": 0.0054562654524312635,
-    "p90": 0.08855156293483413,
-    "p99": 0.30776702926762617,
+    "max": 0.3006358818491472,
+    "median": 0.004866461804341474,
+    "p90": 0.08533891098796233,
+    "p99": 0.3006358818491472,
     "players": 44,
     "unit": "true-state SD of the family"
    },
@@ -6402,6 +6417,7 @@
    },
    "aging": {
     "adopted": "M1",
+    "application": "once",
     "beta": [
      -0.06420735018038269,
      -0.05954498897818657,
@@ -6847,10 +6863,10 @@
    },
    "self_influence": {
     "channels": "moment sums and the aging fit",
-    "max": 0.08465507189030792,
-    "median": 0.001492528490075858,
-    "p90": 0.008490959175429236,
-    "p99": 0.08465507189030792,
+    "max": 0.08389831788360559,
+    "median": 0.0011806449752635867,
+    "p90": 0.006974004476486927,
+    "p99": 0.08389831788360559,
     "players": 79,
     "unit": "true-state SD of the family"
    },
@@ -6916,6 +6932,7 @@
    },
    "aging": {
     "adopted": "M1",
+    "application": "once",
     "beta": [
      -0.06420735018038269,
      -0.05954498897818657,
@@ -7330,10 +7347,10 @@
    },
    "self_influence": {
     "channels": "moment sums and the aging fit",
-    "max": 0.0947053675297689,
-    "median": 0.000759859509103431,
-    "p90": 0.008895862571002831,
-    "p99": 0.0947053675297689,
+    "max": 0.09642955620446934,
+    "median": 0.0006010861414791174,
+    "p90": 0.008832397234088964,
+    "p99": 0.09642955620446934,
     "players": 50,
     "unit": "true-state SD of the family"
    },
@@ -7399,6 +7416,7 @@
    },
    "aging": {
     "adopted": "M1",
+    "application": "once",
     "beta": [
      -0.06420735018038269,
      -0.05954498897818657,
@@ -7764,12 +7782,12 @@
    },
    "floor": 20,
    "forecast_calibration_2013_to_2014w4": {
-    "mean_z": -0.04975999503425501,
+    "mean_z": -0.04920899114842364,
     "players": 54,
-    "se_mean": 0.11851664541557845,
+    "se_mean": 0.11850930372498004,
     "se_var": 0.19425717247145283,
     "status": "within 2 SE",
-    "var_z": 0.7584945429903454
+    "var_z": 0.7584005737464967
    },
    "honour_cell": {
     "mean": 0.16725786992749664,
@@ -7851,10 +7869,10 @@
    },
    "self_influence": {
     "channels": "moment sums and the aging fit",
-    "max": 0.057272787578316185,
-    "median": 0.0010327684120224009,
-    "p90": 0.01133516657792335,
-    "p99": 0.04432148633737297,
+    "max": 0.05633065455557329,
+    "median": 0.0006371940761961383,
+    "p90": 0.010514537777867643,
+    "p99": 0.043866623173050096,
     "players": 112,
     "unit": "true-state SD of the family"
    },
@@ -7920,36 +7938,36 @@
    "availability": {
     "cap": 2,
     "cap_quantile": 1.0,
-    "loo_club_skill": -0.00017412091857682555,
+    "loo_club_skill": -8.811096027283583e-05,
     "rows": 3020,
-    "se": 0.1879394671715806,
-    "slope": -0.3289788770552473
+    "se": 0.1878750156112494,
+    "slope": -0.3313824120069125
    },
    "role": {
     "cap": 0.38888888888888884,
     "cap_quantile": 0.75,
-    "loo_club_skill": 0.009862277563173705,
+    "loo_club_skill": 0.009893690939213773,
     "rows": 3020,
-    "se": 0.145760219645081,
-    "slope": 0.8235056482639087
+    "se": 0.1457088260796417,
+    "slope": 0.8245864080211139
    }
   },
   "pass2": {
    "availability": {
     "cap": 2,
     "cap_quantile": 1.0,
-    "loo_club_skill": -0.0007657193067169832,
+    "loo_club_skill": -0.0007119427396946598,
     "rows": 2943,
-    "se": 0.1942363478777713,
-    "slope": -0.2896203761602085
+    "se": 0.19417813015320243,
+    "slope": -0.2937246679222981
    },
    "role": {
     "cap": 0.375,
     "cap_quantile": 0.75,
-    "loo_club_skill": 0.00913137284785659,
+    "loo_club_skill": 0.009190493758743035,
     "rows": 2943,
-    "se": 0.15620024513196576,
-    "slope": 0.852038636131466
+    "se": 0.15615037475330312,
+    "slope": 0.8543620772990951
    }
   },
   "reconciled": {
@@ -7960,7 +7978,7 @@
    "role": {
     "kept": true,
     "status": "Confirmed two-pass",
-    "weight": 0.8235056482639087
+    "weight": 0.8245864080211139
    }
   }
  },
@@ -11260,42 +11278,42 @@
   "families": {
    "DB": {
     "check": {
-     "chi_square": 4.045197740112996,
+     "chi_square": 3.048022598870061,
      "df": 4,
      "draws": 3540,
-     "p": 0.39992355776113464,
+     "p": 0.5498213465542525,
      "references": 20,
      "tiers": [
       {
-       "share": 0.10932203389830508,
+       "share": 0.10367231638418078,
        "target": 0.1,
        "tier": "Replacement-Level",
        "tolerance": 0.010084389681792216,
        "within": true
       },
       {
-       "share": 0.2019774011299435,
+       "share": 0.2093220338983051,
        "target": 0.19999999999999998,
        "tier": "Below-Average",
        "tolerance": 0.013445852909056286,
        "within": true
       },
       {
-       "share": 0.39152542372881355,
+       "share": 0.3898305084745763,
        "target": 0.39999999999999997,
        "tier": "Average",
        "tolerance": 0.016467739391852365,
        "within": true
       },
       {
-       "share": 0.1963276836158192,
+       "share": 0.19745762711864406,
        "target": 0.20000000000000007,
        "tier": "Plus",
        "tolerance": 0.013445852909056288,
        "within": true
       },
       {
-       "share": 0.10084745762711865,
+       "share": 0.09971751412429379,
        "target": 0.09999999999999998,
        "tier": "Elite",
        "tolerance": 0.010084389681792214,
@@ -11306,10 +11324,10 @@
      "within": true
     },
     "cuts": [
-     -1.3772720191928745,
-     -0.6169810806219034,
-     0.4725840538413316,
-     1.2827727208542972
+     -1.3680155887582512,
+     -0.6045025292712201,
+     0.4984925610891353,
+     1.3074495321748647
     ],
     "floor": 8,
     "population": 177,
@@ -11323,42 +11341,42 @@
    },
    "DL": {
     "check": {
-     "chi_square": 0.8630136986301289,
+     "chi_square": 3.001712328767102,
      "df": 4,
      "draws": 2920,
-     "p": 0.9298060908301818,
+     "p": 0.5575388871282891,
      "references": 20,
      "tiers": [
       {
-       "share": 0.09691780821917809,
+       "share": 0.09554794520547945,
        "target": 0.1,
        "tier": "Replacement-Level",
        "tolerance": 0.01110349815296408,
        "within": true
       },
       {
-       "share": 0.20410958904109588,
+       "share": 0.20616438356164385,
        "target": 0.19999999999999998,
        "tier": "Below-Average",
        "tolerance": 0.014804664203952106,
        "within": true
       },
       {
-       "share": 0.4,
+       "share": 0.3993150684931507,
        "target": 0.39999999999999997,
        "tier": "Average",
        "tolerance": 0.018131936556464983,
        "within": true
       },
       {
-       "share": 0.20205479452054795,
+       "share": 0.20582191780821918,
        "target": 0.20000000000000007,
        "tier": "Plus",
        "tolerance": 0.014804664203952106,
        "within": true
       },
       {
-       "share": 0.09691780821917809,
+       "share": 0.09315068493150686,
        "target": 0.09999999999999998,
        "tier": "Elite",
        "tolerance": 0.011103498152964077,
@@ -11369,10 +11387,10 @@
      "within": true
     },
     "cuts": [
-     -1.110259687526944,
-     -0.5760473042894672,
-     0.5682188632112033,
-     1.514631766055334
+     -1.0275791410588049,
+     -0.523143699774191,
+     0.5728023941850988,
+     1.5399064885614706
     ],
     "floor": 8,
     "population": 146,
@@ -11399,42 +11417,42 @@
    },
    "LB": {
     "check": {
-     "chi_square": 3.798780487804888,
+     "chi_square": 5.010162601626036,
      "df": 4,
      "draws": 2460,
-     "p": 0.4339223014869602,
+     "p": 0.2862563374119329,
      "references": 20,
      "tiers": [
       {
-       "share": 0.08902439024390243,
+       "share": 0.08943089430894309,
        "target": 0.1,
        "tier": "Replacement-Level",
        "tolerance": 0.012097167578182678,
        "within": true
       },
       {
-       "share": 0.20609756097560974,
+       "share": 0.2056910569105691,
        "target": 0.19999999999999998,
        "tier": "Below-Average",
        "tolerance": 0.016129556770910238,
        "within": true
       },
       {
-       "share": 0.4073170731707317,
+       "share": 0.4138211382113821,
        "target": 0.39999999999999997,
        "tier": "Average",
        "tolerance": 0.019754591932991793,
        "within": true
       },
       {
-       "share": 0.1983739837398374,
+       "share": 0.19308943089430894,
        "target": 0.20000000000000007,
        "tier": "Plus",
        "tolerance": 0.016129556770910238,
        "within": true
       },
       {
-       "share": 0.0991869918699187,
+       "share": 0.09796747967479674,
        "target": 0.09999999999999998,
        "tier": "Elite",
        "tolerance": 0.012097167578182676,
@@ -11445,10 +11463,10 @@
      "within": true
     },
     "cuts": [
-     -1.206822223239481,
-     -0.542605512481322,
-     0.5651858111464194,
-     1.5163527905885474
+     -1.17345979489465,
+     -0.4925607043605399,
+     0.6159008628242086,
+     1.543675056095723
     ],
     "floor": 8,
     "population": 123,
@@ -11475,56 +11493,56 @@
    },
    "QB": {
     "check": {
-     "chi_square": 8.573717948717928,
+     "chi_square": 4.342948717948709,
      "df": 4,
      "draws": 780,
-     "p": 0.07268395127960513,
+     "p": 0.3615778956058414,
      "references": 20,
      "tiers": [
       {
-       "share": 0.09358974358974359,
+       "share": 0.09230769230769231,
        "target": 0.1,
        "tier": "Replacement-Level",
        "tolerance": 0.02148344622118299,
        "within": true
       },
       {
-       "share": 0.2128205128205128,
+       "share": 0.2205128205128205,
        "target": 0.19999999999999998,
        "tier": "Below-Average",
        "tolerance": 0.028644594961577317,
        "within": true
       },
       {
-       "share": 0.391025641025641,
+       "share": 0.3935897435897436,
        "target": 0.39999999999999997,
        "tier": "Average",
        "tolerance": 0.03508232077228117,
        "within": true
       },
       {
-       "share": 0.22692307692307692,
+       "share": 0.20897435897435898,
        "target": 0.20000000000000007,
        "tier": "Plus",
        "tolerance": 0.028644594961577317,
        "within": true
       },
       {
-       "share": 0.07564102564102564,
+       "share": 0.08461538461538462,
        "target": 0.09999999999999998,
        "tier": "Elite",
        "tolerance": 0.021483446221182985,
-       "within": false
+       "within": true
       }
      ],
      "tolerance_rule": "each tier share within 2 binomial SE of its target",
-     "within": false
+     "within": true
     },
     "cuts": [
-     -1.547321218470322,
-     -0.8074490317556042,
-     0.22861397834122105,
-     0.9806081140880594
+     -1.4481133469545786,
+     -0.7049899257425869,
+     0.332956194607853,
+     1.083286799443659
     ],
     "floor": 200,
     "population": 39,
@@ -11538,28 +11556,28 @@
    },
    "RB": {
     "check": {
-     "chi_square": 4.762500000000016,
+     "chi_square": 6.3225000000000176,
      "df": 4,
      "draws": 1000,
-     "p": 0.3125457137865021,
+     "p": 0.17632357279507674,
      "references": 20,
      "tiers": [
       {
-       "share": 0.084,
+       "share": 0.083,
        "target": 0.1,
        "tier": "Replacement-Level",
        "tolerance": 0.018973665961010275,
        "within": true
       },
       {
-       "share": 0.213,
+       "share": 0.195,
        "target": 0.19999999999999998,
        "tier": "Below-Average",
        "tolerance": 0.025298221281347035,
        "within": true
       },
       {
-       "share": 0.413,
+       "share": 0.429,
        "target": 0.39999999999999997,
        "tier": "Average",
        "tolerance": 0.030983866769659335,
@@ -11573,7 +11591,7 @@
        "within": true
       },
       {
-       "share": 0.103,
+       "share": 0.106,
        "target": 0.09999999999999998,
        "tier": "Elite",
        "tolerance": 0.018973665961010272,
@@ -11584,10 +11602,10 @@
      "within": true
     },
     "cuts": [
-     -1.0667407286599881,
-     -0.4924288791930943,
-     0.3613494143725251,
-     1.1930348101343364
+     -1.0088479139976445,
+     -0.503297689758891,
+     0.3585479367248404,
+     1.264100522135167
     ],
     "floor": 100,
     "population": 50,
@@ -11601,10 +11619,10 @@
    },
    "TE": {
     "check": {
-     "chi_square": 0.6507352941176472,
+     "chi_square": 1.0624999999999931,
      "df": 4,
      "draws": 680,
-     "p": 0.9572623792321773,
+     "p": 0.9001754369685941,
      "references": 20,
      "tiers": [
       {
@@ -11622,21 +11640,21 @@
        "within": true
       },
       {
-       "share": 0.39558823529411763,
+       "share": 0.3926470588235294,
        "target": 0.39999999999999997,
        "tier": "Average",
        "tolerance": 0.03757345746510897,
        "within": true
       },
       {
-       "share": 0.20147058823529412,
+       "share": 0.21029411764705883,
        "target": 0.20000000000000007,
        "tier": "Plus",
        "tolerance": 0.03067859955389482,
        "within": true
       },
       {
-       "share": 0.10294117647058823,
+       "share": 0.09705882352941177,
        "target": 0.09999999999999998,
        "tier": "Elite",
        "tolerance": 0.02300894966542111,
@@ -11647,10 +11665,10 @@
      "within": true
     },
     "cuts": [
-     -1.7856067493405123,
-     -0.9172230768112986,
-     0.31666211168463787,
-     1.3949515329872915
+     -1.6957460696006517,
+     -0.8222620415166972,
+     0.4167753040626503,
+     1.4730816656636936
     ],
     "floor": 40,
     "population": 34,
@@ -11664,42 +11682,42 @@
    },
    "WR": {
     "check": {
-     "chi_square": 1.548214285714283,
+     "chi_square": 1.6071428571428652,
      "df": 4,
      "draws": 1400,
-     "p": 0.8180679604510309,
+     "p": 0.8075077693340302,
      "references": 20,
      "tiers": [
       {
-       "share": 0.10642857142857143,
+       "share": 0.09857142857142857,
        "target": 0.1,
        "tier": "Replacement-Level",
        "tolerance": 0.016035674514745465,
        "within": true
       },
       {
-       "share": 0.20357142857142857,
+       "share": 0.2092857142857143,
        "target": 0.19999999999999998,
        "tier": "Below-Average",
        "tolerance": 0.021380899352993952,
        "within": true
       },
       {
-       "share": 0.3992857142857143,
+       "share": 0.4057142857142857,
        "target": 0.39999999999999997,
        "tier": "Average",
        "tolerance": 0.026186146828319087,
        "within": true
       },
       {
-       "share": 0.19857142857142857,
+       "share": 0.19071428571428573,
        "target": 0.20000000000000007,
        "tier": "Plus",
        "tolerance": 0.021380899352993952,
        "within": true
       },
       {
-       "share": 0.09214285714285714,
+       "share": 0.09571428571428571,
        "target": 0.09999999999999998,
        "tier": "Elite",
        "tolerance": 0.01603567451474546,
@@ -11710,10 +11728,10 @@
      "within": true
     },
     "cuts": [
-     -1.4347134860697377,
-     -0.6503827866902321,
-     0.44455542104025103,
-     1.2430111351491888
+     -1.34065882463285,
+     -0.5707862951129332,
+     0.4973445880183667,
+     1.2709036461864551
     ],
     "floor": 60,
     "population": 70,

@@ -129,35 +129,45 @@ def render(model, public, _previous=None):
     w("")
     w("Pooled result: **%s** (%s)." % (p["rule"]["adopted"], p["rule"]["why"]))
     w("")
-    w("**Applied curves** (the one-step change of the persistent part, family units = scale x terms . coefficients):")
+    w("**Applied curves** (the one-step change of the persistent part, family units = scale x terms . coefficients; "
+      "application: how a 2014 expectation takes it after the player's last line, once at the last line's age or at "
+      "each season step):")
     w("")
-    w("| Family | Curve | Source | Terms | Coefficients | Scale | Status |")
-    w("|---|---|---|---|---|---:|---|")
+    w("| Family | Curve | Source | Terms | Coefficients | Scale | Status | Application |")
+    w("|---|---|---|---|---|---:|---|---|")
+    apps = {"once": "once (last line's age)", "every_step": "each season step"}
     for k, b in fams.items():
         a = b["aging"]
-        w("| %s | %s | %s | %s | %s | %s | %s |" % (
+        w("| %s | %s | %s | %s | %s | %s | %s | %s |" % (
             k, a["label"], a["source"], ", ".join(a.get("terms") or []) or "-",
-            ", ".join(_f(x, 4) for x in a.get("beta") or []) or "-", _f(a.get("scale")), a.get("status", "-")))
+            ", ".join(_f(x, 4) for x in a.get("beta") or []) or "-", _f(a.get("scale")), a.get("status", "-"),
+            apps.get(a.get("application"), "-")))
+    dec = ag.get("application")
+    if dec:
+        w("")
+        w("**Application rule** (%s; %s; answer \"%s\"; %s): the pooled curve applies %s, a family's own curve %s. "
+          "Before it: %s." % (dec["decision"], dec["date"], dec["answer"], dec["record"],
+                              apps[dec["pooled"]], apps[dec["family"]], dec["before"]))
     hc = ag["horizon_check"]
     w("")
     if hc.get("checks"):
         names = {"in_sample_two_step": "In sample: qualifying t + 2 lines (t = 2010, 2011) from lines through t",
                  "held_out_2012_lines_to_2014w4": "Held out: 2014 Weeks 1-4 lines from 2010-2012 lines (the table's "
                                                   "horizon)"}
-        labels = {"none": "no curve", "once": "once (last line's age)", "as_applied": "as applied"}
-        w("**Check at the table's horizon** (review fix, October 16, 2026). A 2014 expectation from 2010-2012 lines "
-          "takes the curve's step at each season after the player's last line, so for a last line in 2012 it takes "
-          "two steps; the check reads two-step forecasts (%s), in %s. Weighted SSE is the sum of residual^2 / forecast "
-          "variance; the refit is the %s candidate on the residuals (coefficients with SEs; a refit near zero means "
-          "the forecasts carry no age drift left). An earlier check refitted the curve on the same one-step "
-          "residuals it was fitted on, which returns zero by construction, so it is not reported." % (
-              hc["rule"], hc["unit"], hc["candidate"]))
+        labels = {"none": "no curve", "once": "once (last line's age)", "every_step": "every step"}
+        labels[hc["applied"]] += ", applied"
+        w("**Check at the table's horizon** (review fix, October 16, 2026). For a last line in 2012 a 2014 expectation "
+          "from 2010-2012 lines is two seasons ahead, so the check reads two-step forecasts (%s), in %s. Weighted SSE "
+          "is the sum of residual^2 / forecast variance; the refit is the %s candidate on the residuals (coefficients "
+          "with SEs; a refit near zero means the forecasts carry no age drift left). An earlier check refitted the "
+          "curve on the same one-step residuals it was fitted on, which returns zero by construction, so it is not "
+          "reported." % (hc["rule"], hc["unit"], hc["candidate"]))
         w("")
         w("| Forecasts | Curve | Rows | Weighted SSE | Refit coefficients (SE) | Mean residual by age at the last line "
           "(under 25 / 25-28 / 29-31 / 32 and over) |")
         w("|---|---|---:|---:|---|---|")
         for key, got in hc["checks"].items():
-            for v in ("none", "once", "as_applied"):
+            for v in ("none", "once", "every_step"):
                 r = got[v]
                 fit = r["refit"]
                 coef = ", ".join("%s (%s)" % (_f(b, 3), _f(e, 2)) for b, e in zip(fit["beta"], fit["se"])) \
@@ -166,9 +176,10 @@ def render(model, public, _previous=None):
                 w("| %s | %s | %d | %s | %s | %s |" % (names.get(key, key), labels[v], r["rows"], _f(r["wsse"], 6),
                                                        coef, bins))
         w("")
-        w("The rule that applies the curve at every season step after the last line was adopted after an earlier "
-          "trial's reading (runtime/2014_engine_decisions.md, batch U5). Whether to keep it or apply the curve once, "
-          "at the last line's age, is Stone's call on these readings; the build does not change it.")
+        w("The every-step rule was adopted after an earlier trial's reading (runtime/2014_engine_decisions.md, batch "
+          "U5); on these readings it overshoots in sample (the age slope reversed) and is not confirmed out of sample. "
+          "Stone chose at the release check to apply the pooled curve once, at the last line's age (release decision "
+          "2); the readings above are the same under either rule, and only the applied label moved.")
     else:
         w("Check at the table's horizon: %s." % hc.get("note", "-"))
     w("")
@@ -334,8 +345,10 @@ def render(model, public, _previous=None):
       "games with a recorded statistic: part of a young defender's rise can be a growing role, not ability alone. "
       "Under D1 every non-specialist family uses the pooled curve when it is kept, whatever its own fit read "
       "(section 3)." % (defensive, pooled_rows))
-    w("- The curve corrects a one-step forecast; the 2014 expectation of a player last seen in 2012 composes two "
-      "steps (ages in 2012 and 2013), an extrapolation of a one-step fit.")
+    w("- The curve corrects a one-step forecast; the 2014 expectation of a player last seen in 2012 is two seasons "
+      "ahead. The pooled curve is applied once, at the last line's age (release decision 2): composing two steps "
+      "overshot in sample (section 3), and once is itself an approximation at a two-season horizon, not a "
+      "two-step fit. The punter curve still composes its steps.")
     w("- Survivorship and selection on opportunity remain: players who leave are unobserved, and a rookie prior "
       "describes a rookie who reaches the floor.")
     w("- An honour pulls a player toward the honoured group's mean, so for a player already estimated above that mean "

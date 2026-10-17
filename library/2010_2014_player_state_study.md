@@ -62,7 +62,7 @@ A family whose swing is not kept carries no once-per-season draw; its persistent
 
 ## 3. Aging (amendments 2 and 3; decision D1)
 
-Rule: one-step forecast residuals (no aging, current components); candidates Z, C, M1, M2; eligible only if it beats Z in both passes (pass 1 leave-one-season-pair-out weighted SSE, pass 2 BIC n ln(SSE/n) + k ln n); the lowest pass 1 SSE adopted; the curve is the fitted correction to a forecast from the player's own record: it moves the forecast's persistent part at each season step after his last line, never inside the record or a prior-only state. Age is measured on September 1 of season t, centred at 27; experience 0 and 1 are the first and second seasons since the class (an undrafted player first rostered in 2010 has no known experience). Pairs: 2010-2011, 2011-2012, 2012-2013.
+Rule: one-step forecast residuals (no aging, current components); candidates Z, C, M1, M2; eligible only if it beats Z in both passes (pass 1 leave-one-season-pair-out weighted SSE, pass 2 BIC n ln(SSE/n) + k ln n); the lowest pass 1 SSE adopted; the curve is the fitted correction to a forecast from the player's own record: it moves the forecast's persistent part after his last line, never inside the record or a prior-only state; the pooled curve once, by its step at the last line's age (release decision 2), a family's own curve at each season step. Age is measured on September 1 of season t, centred at 27; experience 0 and 1 are the first and second seasons since the class (an undrafted player first rostered in 2010 has no known experience). Pairs: 2010-2011, 2011-2012, 2012-2013.
 
 **Per family** (pass 1 leave-one-season-pair-out weighted SSE; pass 2 BIC; a candidate eligible only if it beats Z in both):
 
@@ -91,34 +91,36 @@ Rule: one-step forecast residuals (no aging, current components); candidates Z, 
 
 Pooled result: **M1** (beats Z in both passes; the lowest pass 1 leave-one-season-pair-out SSE among M1, M2).
 
-**Applied curves** (the one-step change of the persistent part, family units = scale x terms . coefficients):
+**Applied curves** (the one-step change of the persistent part, family units = scale x terms . coefficients; application: how a 2014 expectation takes it after the player's last line, once at the last line's age or at each season step):
 
-| Family | Curve | Source | Terms | Coefficients | Scale | Status |
-|---|---|---|---|---|---:|---|
-| QB | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.1341 | pass 1's coefficients |
-| RB | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.05054 | pass 1's coefficients |
-| WR | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.1654 | pass 1's coefficients |
-| TE | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.1142 | pass 1's coefficients |
-| DL | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.5563 | pass 1's coefficients |
-| LB | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.5892 | pass 1's coefficients |
-| DB | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.2444 | pass 1's coefficients |
-| K | Z | family | - | - | - | - |
-| P | M1 | family | constant, age - 27, (age - 27)^2 | 0.6138, -0.1887, -0.007969 | 1 | Confirmed two-pass (pass 2 within 2 SE) |
-| KR | Z | family | - | - | - | - |
-| PR | Z | family | - | - | - | - |
+| Family | Curve | Source | Terms | Coefficients | Scale | Status | Application |
+|---|---|---|---|---|---:|---|---|
+| QB | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.1341 | pass 1's coefficients | once (last line's age) |
+| RB | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.05054 | pass 1's coefficients | once (last line's age) |
+| WR | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.1654 | pass 1's coefficients | once (last line's age) |
+| TE | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.1142 | pass 1's coefficients | once (last line's age) |
+| DL | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.5563 | pass 1's coefficients | once (last line's age) |
+| LB | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.5892 | pass 1's coefficients | once (last line's age) |
+| DB | M1 (pooled) | pooled (D1) | constant, age - 27, (age - 27)^2 | -0.06421, -0.05954, 0.005083 | 0.2444 | pass 1's coefficients | once (last line's age) |
+| K | Z | family | - | - | - | - | - |
+| P | M1 | family | constant, age - 27, (age - 27)^2 | 0.6138, -0.1887, -0.007969 | 1 | Confirmed two-pass (pass 2 within 2 SE) | each season step |
+| KR | Z | family | - | - | - | - | - |
+| PR | Z | family | - | - | - | - | - |
 
-**Check at the table's horizon** (review fix, October 16, 2026). A 2014 expectation from 2010-2012 lines takes the curve's step at each season after the player's last line, so for a last line in 2012 it takes two steps; the check reads two-step forecasts (once = the curve's step at the last line's age only; as applied = every step after the last line (the adopted rule); reported, not used to choose), in true-state SD of each family (pass 1). Weighted SSE is the sum of residual^2 / forecast variance; the refit is the M1 candidate on the residuals (coefficients with SEs; a refit near zero means the forecasts carry no age drift left). An earlier check refitted the curve on the same one-step residuals it was fitted on, which returns zero by construction, so it is not reported.
+**Application rule** (release decision 2, the aging application rule; 2026-10-16/17 (question card, answered before the container restart at about 01:50 UTC on October 17); answer "Once (Recommended)"; runtime/2014_engine_decisions.md (release decisions)): the pooled curve applies once (last line's age), a family's own curve each season step. Before it: each season step after the last line, for every adopted curve (batch U5 and its review fix, October 16, 2026).
+
+**Check at the table's horizon** (review fix, October 16, 2026). For a last line in 2012 a 2014 expectation from 2010-2012 lines is two seasons ahead, so the check reads two-step forecasts (once = the curve's step at the last line's age only; every step = its step at each season after the last line; applied = the table's rule (once since release decision 2, October 16-17, 2026; every step before it)), in true-state SD of each family (pass 1). Weighted SSE is the sum of residual^2 / forecast variance; the refit is the M1 candidate on the residuals (coefficients with SEs; a refit near zero means the forecasts carry no age drift left). An earlier check refitted the curve on the same one-step residuals it was fitted on, which returns zero by construction, so it is not reported.
 
 | Forecasts | Curve | Rows | Weighted SSE | Refit coefficients (SE) | Mean residual by age at the last line (under 25 / 25-28 / 29-31 / 32 and over) |
 |---|---|---:|---:|---|---|
 | In sample: qualifying t + 2 lines (t = 2010, 2011) from lines through t | no curve | 1273 | 1562.91 | -0.131 (0.043), -0.0745 (0.011), 0.00868 (0.003) | 0.223 / -0.0767 / -0.281 / -0.207 |
-| In sample: qualifying t + 2 lines (t = 2010, 2011) from lines through t | once (last line's age) | 1273 | 1506.08 | -0.0663 (0.043), -0.0149 (0.011), 0.0036 (0.003) | 0.00996 / -0.0353 / -0.0784 / 0.0219 |
-| In sample: qualifying t + 2 lines (t = 2010, 2011) from lines through t | as applied | 1273 | 1513.85 | 0.0524 (0.043), 0.0344 (0.011), -0.00148 (0.003) | -0.113 / 0.0633 / 0.145 / 0.239 |
+| In sample: qualifying t + 2 lines (t = 2010, 2011) from lines through t | once (last line's age), applied | 1273 | 1506.08 | -0.0663 (0.043), -0.0149 (0.011), 0.0036 (0.003) | 0.00996 / -0.0353 / -0.0784 / 0.0219 |
+| In sample: qualifying t + 2 lines (t = 2010, 2011) from lines through t | every step | 1273 | 1513.85 | 0.0524 (0.043), 0.0344 (0.011), -0.00148 (0.003) | -0.113 / 0.0633 / 0.145 / 0.239 |
 | Held out: 2014 Weeks 1-4 lines from 2010-2012 lines (the table's horizon) | no curve | 320 | 292.455 | -0.0971 (0.11), -0.0957 (0.029), 0.0114 (0.0076) | 0.433 / -0.123 / -0.34 / 0.313 |
-| Held out: 2014 Weeks 1-4 lines from 2010-2012 lines (the table's horizon) | once (last line's age) | 320 | 282.896 | -0.0329 (0.11), -0.0362 (0.029), 0.00632 (0.0076) | 0.229 / -0.0835 / -0.139 / 0.538 |
-| Held out: 2014 Weeks 1-4 lines from 2010-2012 lines (the table's horizon) | as applied | 320 | 281.952 | 0.0858 (0.11), 0.0132 (0.029), 0.00124 (0.0076) | 0.114 / 0.0137 / 0.0829 / 0.748 |
+| Held out: 2014 Weeks 1-4 lines from 2010-2012 lines (the table's horizon) | once (last line's age), applied | 320 | 282.896 | -0.0329 (0.11), -0.0362 (0.029), 0.00632 (0.0076) | 0.229 / -0.0835 / -0.139 / 0.538 |
+| Held out: 2014 Weeks 1-4 lines from 2010-2012 lines (the table's horizon) | every step | 320 | 281.952 | 0.0858 (0.11), 0.0132 (0.029), 0.00124 (0.0076) | 0.114 / 0.0137 / 0.0829 / 0.748 |
 
-The rule that applies the curve at every season step after the last line was adopted after an earlier trial's reading (runtime/2014_engine_decisions.md, batch U5). Whether to keep it or apply the curve once, at the last line's age, is Stone's call on these readings; the build does not change it.
+The every-step rule was adopted after an earlier trial's reading (runtime/2014_engine_decisions.md, batch U5); on these readings it overshoots in sample (the age slope reversed) and is not confirmed out of sample. Stone chose at the release check to apply the pooled curve once, at the last line's age (release decision 2); the readings above are the same under either rule, and only the applied label moved.
 
 ## 4. Draft-slot starting estimates
 
@@ -164,13 +166,13 @@ An admissible honour (AP All-Pro first or second team, or an original Pro Bowl, 
 
 | Family | Players | Mean z (SE) | Var z (SE) | Status |
 |---|---:|---|---|---|
-| QB | 32 | 0.038 (0.14) | 0.645 (0.25) | within 2 SE |
+| QB | 32 | 0.0287 (0.14) | 0.636 (0.25) | within 2 SE |
 | RB | 40 | 0.00897 (0.14) | 0.754 (0.23) | within 2 SE |
-| WR | 54 | -0.0498 (0.12) | 0.758 (0.19) | within 2 SE |
+| WR | 54 | -0.0492 (0.12) | 0.758 (0.19) | within 2 SE |
 | TE | 21 | -0.228 (0.22) | 1.06 (0.32) | within 2 SE |
-| DL | 75 | -0.0192 (0.11) | 0.976 (0.16) | within 2 SE |
-| LB | 71 | -0.167 (0.12) | 0.991 (0.17) | within 2 SE |
-| DB | 111 | -0.00992 (0.085) | 0.802 (0.13) | within 2 SE |
+| DL | 75 | -0.0162 (0.11) | 0.976 (0.16) | within 2 SE |
+| LB | 71 | -0.166 (0.12) | 0.996 (0.17) | within 2 SE |
+| DB | 111 | -0.00861 (0.085) | 0.801 (0.13) | within 2 SE |
 | K | 6 | -0.0173 (0.28) | 0.455 (0.63) | within 2 SE |
 | P | 6 | -0.377 (0.28) | 0.462 (0.63) | within 2 SE |
 | KR | 4 | 0.0387 (0.62) | 1.53 (0.82) | within 2 SE |
@@ -198,13 +200,13 @@ An admissible honour (AP All-Pro first or second team, or an original Pro Bowl, 
 
 | Family | Players | Median | 90th | 99th | Max |
 |---|---:|---:|---:|---:|---:|
-| QB | 44 | 0.0055 | 0.089 | 0.31 | 0.31 |
-| RB | 79 | 0.0015 | 0.0085 | 0.085 | 0.085 |
-| WR | 112 | 0.001 | 0.011 | 0.044 | 0.057 |
-| TE | 50 | 0.00076 | 0.0089 | 0.095 | 0.095 |
-| DL | 190 | 0.0015 | 0.0066 | 0.016 | 0.028 |
-| LB | 173 | 0.0018 | 0.012 | 0.12 | 0.16 |
-| DB | 243 | 0.0012 | 0.01 | 0.031 | 0.065 |
+| QB | 44 | 0.0049 | 0.085 | 0.3 | 0.3 |
+| RB | 79 | 0.0012 | 0.007 | 0.084 | 0.084 |
+| WR | 112 | 0.00064 | 0.011 | 0.044 | 0.056 |
+| TE | 50 | 0.0006 | 0.0088 | 0.096 | 0.096 |
+| DL | 190 | 0.00082 | 0.0037 | 0.0095 | 0.017 |
+| LB | 173 | 0.0011 | 0.0091 | 0.1 | 0.16 |
+| DB | 243 | 0.00069 | 0.0051 | 0.031 | 0.064 |
 | K | 30 | 0.02 | 0.089 | 0.17 | 0.17 |
 | P | 28 | 0.07 | 0.34 | 0.99 | 0.99 |
 | KR | 33 | 0 | 0.0079 | 0.012 | 0.012 |
@@ -216,13 +218,13 @@ Drawn tier: the drawn 2014 value against the family's cut points, the quantiles 
 
 | Family | Floor | Population | Cut points (SD units, at the shares below) | Synthetic check (20 references): shares against targets | Within 2 SE | Chi-square (df), p |
 |---|---:|---:|---|---|---|---|
-| QB | 200 | 39 | -1.55 at 0.1, -0.807 at 0.3, 0.229 at 0.7, 0.981 at 0.9 | Replacement-Level 0.0936 / 0.1; Below-Average 0.213 / 0.2; Average 0.391 / 0.4; Plus 0.227 / 0.2; Elite 0.0756 / 0.1 | no: Elite | 8.57 (4), 0.073 |
-| RB | 100 | 50 | -1.07 at 0.1, -0.492 at 0.3, 0.361 at 0.7, 1.19 at 0.9 | Replacement-Level 0.084 / 0.1; Below-Average 0.213 / 0.2; Average 0.413 / 0.4; Plus 0.187 / 0.2; Elite 0.103 / 0.1 | yes | 4.76 (4), 0.31 |
-| WR | 60 | 70 | -1.43 at 0.1, -0.65 at 0.3, 0.445 at 0.7, 1.24 at 0.9 | Replacement-Level 0.106 / 0.1; Below-Average 0.204 / 0.2; Average 0.399 / 0.4; Plus 0.199 / 0.2; Elite 0.0921 / 0.1 | yes | 1.55 (4), 0.82 |
-| TE | 40 | 34 | -1.79 at 0.1, -0.917 at 0.3, 0.317 at 0.7, 1.39 at 0.9 | Replacement-Level 0.0926 / 0.1; Below-Average 0.207 / 0.2; Average 0.396 / 0.4; Plus 0.201 / 0.2; Elite 0.103 / 0.1 | yes | 0.651 (4), 0.96 |
-| DL | 8 | 146 | -1.11 at 0.1, -0.576 at 0.3, 0.568 at 0.7, 1.51 at 0.9 | Replacement-Level 0.0969 / 0.1; Below-Average 0.204 / 0.2; Average 0.4 / 0.4; Plus 0.202 / 0.2; Elite 0.0969 / 0.1 | yes | 0.863 (4), 0.93 |
-| LB | 8 | 123 | -1.21 at 0.1, -0.543 at 0.3, 0.565 at 0.7, 1.52 at 0.9 | Replacement-Level 0.089 / 0.1; Below-Average 0.206 / 0.2; Average 0.407 / 0.4; Plus 0.198 / 0.2; Elite 0.0992 / 0.1 | yes | 3.8 (4), 0.43 |
-| DB | 8 | 177 | -1.38 at 0.1, -0.617 at 0.3, 0.473 at 0.7, 1.28 at 0.9 | Replacement-Level 0.109 / 0.1; Below-Average 0.202 / 0.2; Average 0.392 / 0.4; Plus 0.196 / 0.2; Elite 0.101 / 0.1 | yes | 4.05 (4), 0.4 |
+| QB | 200 | 39 | -1.45 at 0.1, -0.705 at 0.3, 0.333 at 0.7, 1.08 at 0.9 | Replacement-Level 0.0923 / 0.1; Below-Average 0.221 / 0.2; Average 0.394 / 0.4; Plus 0.209 / 0.2; Elite 0.0846 / 0.1 | yes | 4.34 (4), 0.36 |
+| RB | 100 | 50 | -1.01 at 0.1, -0.503 at 0.3, 0.359 at 0.7, 1.26 at 0.9 | Replacement-Level 0.083 / 0.1; Below-Average 0.195 / 0.2; Average 0.429 / 0.4; Plus 0.187 / 0.2; Elite 0.106 / 0.1 | yes | 6.32 (4), 0.18 |
+| WR | 60 | 70 | -1.34 at 0.1, -0.571 at 0.3, 0.497 at 0.7, 1.27 at 0.9 | Replacement-Level 0.0986 / 0.1; Below-Average 0.209 / 0.2; Average 0.406 / 0.4; Plus 0.191 / 0.2; Elite 0.0957 / 0.1 | yes | 1.61 (4), 0.81 |
+| TE | 40 | 34 | -1.7 at 0.1, -0.822 at 0.3, 0.417 at 0.7, 1.47 at 0.9 | Replacement-Level 0.0926 / 0.1; Below-Average 0.207 / 0.2; Average 0.393 / 0.4; Plus 0.21 / 0.2; Elite 0.0971 / 0.1 | yes | 1.06 (4), 0.9 |
+| DL | 8 | 146 | -1.03 at 0.1, -0.523 at 0.3, 0.573 at 0.7, 1.54 at 0.9 | Replacement-Level 0.0955 / 0.1; Below-Average 0.206 / 0.2; Average 0.399 / 0.4; Plus 0.206 / 0.2; Elite 0.0932 / 0.1 | yes | 3 (4), 0.56 |
+| LB | 8 | 123 | -1.17 at 0.1, -0.493 at 0.3, 0.616 at 0.7, 1.54 at 0.9 | Replacement-Level 0.0894 / 0.1; Below-Average 0.206 / 0.2; Average 0.414 / 0.4; Plus 0.193 / 0.2; Elite 0.098 / 0.1 | yes | 5.01 (4), 0.29 |
+| DB | 8 | 177 | -1.37 at 0.1, -0.605 at 0.3, 0.498 at 0.7, 1.31 at 0.9 | Replacement-Level 0.104 / 0.1; Below-Average 0.209 / 0.2; Average 0.39 / 0.4; Plus 0.197 / 0.2; Elite 0.0997 / 0.1 | yes | 3.05 (4), 0.55 |
 | K | 15 | 25 | - (population under 30 rows: every player reads Average) | - | - | - |
 | P | 30 | 21 | - (population under 30 rows: every player reads Average) | - | - | - |
 
@@ -232,8 +234,8 @@ Outcome: one-step forecast residual of a qualifying 2011-2013 season, in true-st
 
 | Term | Pass 1 slope (SE) | Pass 1 LOO-club skill | Cap quantile | Pass 2 slope (SE) | Pass 2 skill | Kept | Weight |
 |---|---|---:|---:|---|---:|---|---:|
-| role | 0.8235 (0.15) | 0.00986 | 0.75 | 0.852 (0.16) | 0.00913 | yes, Confirmed two-pass | 0.8235 |
-| availability | -0.329 (0.19) | -0.000174 | 1 | -0.2896 (0.19) | -0.000766 | no | 0 |
+| role | 0.8246 (0.15) | 0.00989 | 0.75 | 0.8544 (0.16) | 0.00919 | yes, Confirmed two-pass | 0.8246 |
+| availability | -0.3314 (0.19) | -8.81e-05 | 1 | -0.2937 (0.19) | -0.000712 | no | 0 |
 
 In real data a role change partly reflects coaches' information about talent, not development caused by playing time; applying it causally would be Stone's policy, not something this fit establishes.
 
@@ -248,7 +250,7 @@ Rows for every player in the [branch identity table](../career/2014/League/perso
 
 - Five seasons, one of them four weeks long, identify the persistent-versus-swing split weakly; the bootstrap intervals say so family by family. The DL and LB sets are pass 1's under amendment 3, not confirmed two-pass.
 - The DL, LB and DB families hold 1644 of the pooled set's 2365 pass-1 rows, and their disruption metric counts games with a recorded statistic: part of a young defender's rise can be a growing role, not ability alone. Under D1 every non-specialist family uses the pooled curve when it is kept, whatever its own fit read (section 3).
-- The curve corrects a one-step forecast; the 2014 expectation of a player last seen in 2012 composes two steps (ages in 2012 and 2013), an extrapolation of a one-step fit.
+- The curve corrects a one-step forecast; the 2014 expectation of a player last seen in 2012 is two seasons ahead. The pooled curve is applied once, at the last line's age (release decision 2): composing two steps overshot in sample (section 3), and once is itself an approximation at a two-season horizon, not a two-step fit. The punter curve still composes its steps.
 - Survivorship and selection on opportunity remain: players who leave are unobserved, and a rookie prior describes a rookie who reaches the floor.
 - An honour pulls a player toward the honoured group's mean, so for a player already estimated above that mean the honours lift is negative; the runtime's honour floor (batch B7) is a separate rule.
 - A kept draft-slot slope's smaller leave-one-class-out skill across the two passes: QB 0.0523, WR 0.000611, TE 0.00214, DL 0.159, LB 0.378, DB 0.211; a small positive skill passes the rule as written.
