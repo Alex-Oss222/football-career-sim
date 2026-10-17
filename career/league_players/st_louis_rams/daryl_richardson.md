@@ -25,4 +25,4 @@
 - AP First-Team All-Pro (2013, RB)
 - Pro Bowl selection (2013, RB)
 
-Records through September 29, 2014. Identity: the public player file's latest listing (no 2014 Weeks 1-4 roster row). [All St. Louis Rams players](README.md).
+Records through January 12, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All St. Louis Rams players](README.md).

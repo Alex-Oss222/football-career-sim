@@ -22,4 +22,4 @@
 
 None on record.
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 3 roster listing. [All New York Jets players](README.md).
+Records through January 12, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 3 roster listing. [All New York Jets players](README.md).

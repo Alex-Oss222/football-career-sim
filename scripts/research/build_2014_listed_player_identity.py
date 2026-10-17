@@ -3,11 +3,14 @@
 
   python scripts/research/build_2014_listed_player_identity.py [SOURCE_DIR] [--check]
 
-SOURCE_DIR (default $LISTED_IDENTITY_SOURCES) holds the two pinned public
-nflverse files used by the in-season rails (library/2014_inseason_rails.md):
+SOURCE_DIR (default $LISTED_IDENTITY_SOURCES) holds three pinned public
+nflverse files: the two the in-season rails pin (library/2014_inseason_rails.md)
+and the 2013 season roster the league player database pins
+(career/2014/League/personnel/league_database_report.md):
 
   nflverse/roster_weekly_2014.csv  sha256 331022cd3b0c69d99c581f02b6fde6853e87ac431739c4b49841ee6e02893d6c
   nflverse/players.csv             sha256 e85b2736908bd6701b038d18d98025e2b31e6e9db7cebf6f21e71fb0c88f9ba1
+  nflverse/roster_2013.csv         sha256 abf73c2b1ef10914af78f6b7397338508bd0c9f0372d2f0667a630e06a4484ed
 
 Writes library/data/2014_listed_player_identity.json: for each gsis id, the
 listed height (inches), weight (lb), college and jersey number that the
@@ -17,12 +20,17 @@ league player cards (runtime/player_cards.py) show. Rules:
   from the weekly roster file; later weeks are never opened into the output.
 - Height, weight and college: the player's latest Weeks 1-4 row carrying the
   field (college falls back to the public player file when every Weeks 1-4
-  row leaves it blank). A player with no Weeks 1-4 row takes the public player file's
-  listing (``listing: "player_file"``), kept only for gsis ids that a
-  committed identity source of this repository names (the 2014 identity map,
-  the birth-date registry, the 2014 Week 1 rosters, the league player
-  database). Heights outside 60-90 inches and weights outside 150-400 lb are
-  dropped as unusable.
+  row leaves it blank). A player with no Weeks 1-4 row takes his 2013 season
+  roster listing, the row of his latest 2013 week (``listing: "roster_2013"``);
+  with neither, the public player file (``listing: "player_file"``): its
+  college, and its height and weight only when his last listed season there
+  is 2013 or earlier, so that no listing later than the record is shown.
+  Fallback listings are kept only for gsis ids that a committed identity
+  source of this repository names (the 2014 identity map, the birth-date
+  registry, the 2014 Week 1 rosters, the league player database). Text is
+  HTML-unescaped ("Texas A&amp;M" in the weekly file reads "Texas A&M").
+  Heights outside 60-90 inches and weights outside 150-400 lb are dropped as
+  unusable.
 - Number: the jersey number of his latest Weeks 1-4 row, with that row's club
   (``number_basis``, club codes normalized to the repository's codes) and
   week; and, when a Weeks 1-4 row lists him with the real 2014 Jaguars, that
@@ -39,6 +47,7 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import html
 import json
 import os
 import sys
@@ -48,6 +57,11 @@ ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "library" / "data" / "2014_listed_player_identity.json"
 ROSTER = ("nflverse/roster_weekly_2014.csv", "331022cd3b0c69d99c581f02b6fde6853e87ac431739c4b49841ee6e02893d6c")
 PLAYERS = ("nflverse/players.csv", "e85b2736908bd6701b038d18d98025e2b31e6e9db7cebf6f21e71fb0c88f9ba1")
+ROSTER_2013 = ("nflverse/roster_2013.csv", "abf73c2b1ef10914af78f6b7397338508bd0c9f0372d2f0667a630e06a4484ed")
+SOURCES = (ROSTER, PLAYERS, ROSTER_2013)
+# The player file's height and weight are its latest listing: shown only when that listing
+# cannot postdate the record (his last listed season there is 2013 or earlier).
+PLAYER_FILE_LAST_SEASON = 2013
 SEASON = 2014
 THROUGH_WEEK = 4
 # nflverse weekly-roster club codes that differ from the repository's codes.
@@ -110,13 +124,21 @@ def jersey(value):
 
 
 def text(value):
-    value = (value or "").strip()
+    value = html.unescape(value or "").strip()
     return value or None
+
+
+def season(value):
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return None
 
 
 def build(source_dir, root=ROOT):
     roster_path = verified(source_dir, *ROSTER)
     players_path = verified(source_dir, *PLAYERS)
+    roster13_path = verified(source_dir, *ROSTER_2013)
     weekly = {}
     with open(roster_path, encoding="utf-8", newline="") as f:
         for row in csv.DictReader(f):
@@ -130,10 +152,15 @@ def build(source_dir, root=ROOT):
                 weekly.setdefault(row["gsis_id"], []).append((week, row))
     with open(players_path, encoding="utf-8", newline="") as f:
         listing = {r["gsis_id"]: r for r in csv.DictReader(f) if r.get("gsis_id")}
-    wanted = set(weekly) | (known_ids(root) & set(listing))
+    roster13 = {}
+    with open(roster13_path, encoding="utf-8", newline="") as f:
+        for row in csv.DictReader(f):
+            if row.get("gsis_id") and row.get("season") == str(SEASON - 1):
+                roster13.setdefault(row["gsis_id"], []).append((season(row.get("week")) or 0, row))
+    wanted = set(weekly) | (known_ids(root) & (set(listing) | set(roster13)))
     out = {}
-    counts = {"weeks_1_4": 0, "player_file": 0, "height": 0, "weight": 0, "college": 0, "number": 0,
-              "jaguars_number": 0}
+    counts = {"weeks_1_4": 0, "roster_2013": 0, "player_file": 0, "height": 0, "weight": 0, "college": 0,
+              "number": 0, "jaguars_number": 0}
     for gsis in sorted(wanted):
         rows = sorted(weekly.get(gsis, []), key=lambda x: x[0])  # stable: file order within a week
         entry = {}
@@ -153,11 +180,18 @@ def build(source_dir, root=ROOT):
             if jax:
                 entry["jaguars_number"] = jersey(jax[-1][1]["jersey_number"])
                 entry["jaguars_week"] = jax[-1][0]
+        elif gsis in roster13:
+            _, q = sorted(roster13[gsis], key=lambda x: x[0])[-1]  # his latest 2013 week; file order on a tie
+            entry = {"listing": "roster_2013", "height_in": inches(q.get("height")),
+                     "weight": pounds(q.get("weight")), "college": text(q.get("college"))}
+            if entry["college"] is None and gsis in listing:
+                entry["college"] = text(listing[gsis].get("college_name"))
         else:
             q = listing[gsis]
-            entry = {"listing": "player_file", "height_in": inches(q.get("height")),
-                     "weight": pounds(q.get("weight")), "college": text(q.get("college_name")),
-                     "number": None, "number_basis": None}
+            dated = (season(q.get("last_season")) or 9999) <= PLAYER_FILE_LAST_SEASON
+            entry = {"listing": "player_file", "college": text(q.get("college_name")),
+                     "height_in": inches(q.get("height")) if dated else None,
+                     "weight": pounds(q.get("weight")) if dated else None}
         if not any(entry.get(f) is not None for f in ("height_in", "weight", "college", "number")):
             continue
         counts[entry["listing"]] += 1
@@ -170,12 +204,16 @@ def build(source_dir, root=ROOT):
         "builder": "scripts/research/build_2014_listed_player_identity.py",
         "scope": "Listed height, weight, college and jersey number for the league player cards. Reader data "
                  "only: nothing in a game, an evaluation or a decision reads it.",
-        "gate": "2014 regular season, Weeks 1 to %d of the weekly roster file; the player file only for players "
-                "with no Weeks 1-%d row" % (THROUGH_WEEK, THROUGH_WEEK),
+        "gate": "2014 regular season, Weeks 1 to %d of the weekly roster file; for a player with no Weeks 1-%d row, "
+                "his 2013 season roster listing; with neither, the player file's college, and its height and weight "
+                "only when his last listed season there is %d or earlier" % (THROUGH_WEEK, THROUGH_WEEK,
+                                                                             PLAYER_FILE_LAST_SEASON),
         "sources": {ROSTER[0]: {"sha256": ROSTER[1],
                                 "url": "https://github.com/nflverse/nflverse-data/releases/download/weekly_rosters/roster_weekly_2014.csv"},
                     PLAYERS[0]: {"sha256": PLAYERS[1],
-                                 "url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.csv"}},
+                                 "url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.csv"},
+                    ROSTER_2013[0]: {"sha256": ROSTER_2013[1],
+                                     "url": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2013.csv"}},
         "club_code_normalization": CODE_FIX,
         "counts": counts,
         "players": out,
@@ -197,7 +235,7 @@ def main(argv=None):
                         default=Path(os.environ["LISTED_IDENTITY_SOURCES"]) if os.environ.get("LISTED_IDENTITY_SOURCES") else None)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args(argv)
-    if args.source_dir is None or not all((args.source_dir / n).is_file() for n, _ in (ROSTER, PLAYERS)):
+    if args.source_dir is None or not all((args.source_dir / n).is_file() for n, _ in SOURCES):
         print("sources not present (pass SOURCE_DIR or set $LISTED_IDENTITY_SOURCES); nothing built", file=sys.stderr)
         return 2
     text = render(build(args.source_dir))

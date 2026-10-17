@@ -25,4 +25,4 @@
 - AFC Defensive Player of the Month (2013, September)
 - Pro Bowl selection (2013, S)
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).

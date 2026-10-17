@@ -22,4 +22,4 @@
 
 None on record.
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Buffalo Bills players](README.md).
+Records through February 2, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Buffalo Bills players](README.md).

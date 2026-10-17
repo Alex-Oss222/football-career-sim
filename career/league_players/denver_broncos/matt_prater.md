@@ -21,4 +21,4 @@ No playoff games on record.
 - AFC Special Teams Player of the Week (2013, Week 8)
 - AFC Special Teams Player of the Week (2013, Week 15)
 
-Records through September 29, 2014. Identity: the public player file's latest listing (no 2014 Weeks 1-4 roster row). [All Denver Broncos players](README.md).
+Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Denver Broncos players](README.md).

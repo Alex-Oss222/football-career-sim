@@ -26,4 +26,4 @@
 - AP First-Team All-Pro (2013, DE)
 - Pro Bowl selection (2013, DE)
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).

@@ -24,4 +24,4 @@
 - AFC Offensive Player of the Week (2013, Week 8)
 - AP Offensive Rookie of the Year (2013)
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).

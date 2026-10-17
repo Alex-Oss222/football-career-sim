@@ -20,4 +20,6 @@ No playoff games on record.
 
 None on record.
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).
+Schools listed: University of South Florida; Fort Scott CC; College of the Canyons.
+
+Records through September 25, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).

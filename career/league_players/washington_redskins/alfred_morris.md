@@ -23,4 +23,4 @@ No playoff games on record.
 - NFC Offensive Player of the Week (2014, Week 3)
 - NFC Offensive Player of the Week (2014, Week 4)
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Washington Redskins players](README.md).
+Records through September 25, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Washington Redskins players](README.md).

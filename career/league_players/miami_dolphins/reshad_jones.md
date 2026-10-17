@@ -20,4 +20,4 @@ No playoff games on record.
 - AP Second-Team All-Pro (2013, S)
 - Pro Bowl selection (2013, S)
 
-Records through September 29, 2014. Identity: the public player file's latest listing (no 2014 Weeks 1-4 roster row). [All Miami Dolphins players](README.md).
+Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Miami Dolphins players](README.md).

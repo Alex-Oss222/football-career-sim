@@ -25,4 +25,4 @@ None on record.
 
 [Jacksonville player card](../../2014/00_Team_Operations/Team/Player_Cards/dwight_lowery.md)
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: the number he wore in 2014 with the Atlanta Falcons (Jacksonville has not recorded one). [All Jacksonville Jaguars players](README.md).
+Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: the number he wore in 2014 with the Atlanta Falcons (Jacksonville has not recorded one). [All Jacksonville Jaguars players](README.md).

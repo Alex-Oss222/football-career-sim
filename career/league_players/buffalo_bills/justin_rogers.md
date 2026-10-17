@@ -24,4 +24,4 @@
 - AP Second-Team All-Pro (2013, CB)
 - Pro Bowl selection (2013, CB)
 
-Records through September 29, 2014. Identity: the public player file's latest listing (no 2014 Weeks 1-4 roster row). [All Buffalo Bills players](README.md).
+Records through February 2, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Buffalo Bills players](README.md).

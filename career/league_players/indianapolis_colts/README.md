@@ -25,7 +25,7 @@ AFC South · Players whose latest game on record was with the Indianapolis Colts
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---:|---|---|---:|---:|
-| 84 | [Cecil Shorts](cecil_shorts.md) | WR | 4 | 16 |
+| N/A | [Cecil Shorts](cecil_shorts.md) | WR | 4 | 16 |
 | 16 | [Da'Rick Rogers](da_rick_rogers.md) | WR | 4 | 0 |
 | N/A | [David Reed](david_reed.md) | WR | 0 | 16 |
 | 10 | [Donte Moncrief](donte_moncrief.md) | WR | 4 | 0 |

@@ -22,4 +22,6 @@
 
 None on record.
 
-Records through September 29, 2014. Identity: the public player file's latest listing (no 2014 Weeks 1-4 roster row). [All Tennessee Titans players](README.md).
+Schools listed: California (PA); Pittsburgh; University of Edinboro.
+
+Records through January 19, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Tennessee Titans players](README.md).

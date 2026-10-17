@@ -28,7 +28,7 @@ AFC South · Players whose latest game on record was with the Jacksonville Jagua
 | 16 | [Andrew Hawkins](andrew_hawkins.md) | WR | 4 | 0 |
 | 17 | [Davante Adams](davante_adams.md) | WR | 4 | 0 |
 | 14 | [Hakeem Nicks](hakeem_nicks.md) | WR | 1 | 16 |
-| 12 | [Mike Brown](mike_brown.md) | WR | 0 | 9 |
+| N/A | [Mike Brown](mike_brown.md) | WR | 0 | 9 |
 | N/A | [Toney Clemons](toney_clemons.md) | WR | 0 | 16 |
 
 ## Tight ends
@@ -46,9 +46,9 @@ AFC South · Players whose latest game on record was with the Jacksonville Jagua
 | # | Player | Pos | 2014 G | 2013 G |
 |---:|---|---|---:|---:|
 | 68 | [Andrew Norwell](andrew_norwell.md) | G | 4 | 0 |
-| 67 | [Austin Pasztor](austin_pasztor.md) | OG | 0 | 8 |
+| N/A | [Austin Pasztor](austin_pasztor.md) | OG | 0 | 8 |
 | N/A | [Brad Meester](brad_meester.md) | C | 0 | 15 |
-| 78 | [Cameron Bradfield](cameron_bradfield.md) | OT | 0 | 16 |
+| N/A | [Cameron Bradfield](cameron_bradfield.md) | OT | 0 | 16 |
 | 72 | [Charles Leno Jr.](charles_leno_jr.md) | OT | 4 | 0 |
 | 77 | [Cornelius Lucas](cornelius_lucas.md) | OT | 4 | 0 |
 | 60 | [Eugene Monroe](eugene_monroe.md) | OT | 4 | 16 |
@@ -67,21 +67,21 @@ AFC South · Players whose latest game on record was with the Jacksonville Jagua
 | N/A | [Aaron Donald](aaron_donald.md) | DT | 4 | 0 |
 | 90 | [Andre Branch](andre_branch.md) | DE | 4 | 16 |
 | N/A | [C.J. Mosley](c_j_mosley.md) | DT | 4 | 7 |
-| 98 | [C.J. Wilson](c_j_wilson.md) | DE | 0 | 2 |
+| N/A | [C.J. Wilson](c_j_wilson.md) | DE | 0 | 2 |
 | N/A | [Daniel Te'o-Nesheim](daniel_te_o_nesheim.md) | DE | 4 | 16 |
 | 92 | [Jeremy Mincey](jeremy_mincey.md) | DE | 4 | 16 |
 | N/A | [Jeris Pendleton](jeris_pendleton.md) | DT | 0 | 7 |
-| 95 | [Lavar Edwards](lavar_edwards.md) | DE | 0 | 5 |
+| N/A | [Lavar Edwards](lavar_edwards.md) | DE | 0 | 5 |
 | 97 | [Roy Miller](roy_miller.md) | DT | 4 | 16 |
-| 59 | [Ryan Davis](ryan_davis.md) | DE | 0 | 15 |
+| N/A | [Ryan Davis](ryan_davis.md) | DE | 0 | 15 |
 | 99 | [Sen'Derrick Marks](sen_derrick_marks.md) | DT | 4 | 16 |
-| 93 | [Tyson Alualu](tyson_alualu.md) | DT | 0 | 16 |
+| N/A | [Tyson Alualu](tyson_alualu.md) | DT | 0 | 16 |
 
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---:|---|---|---:|---:|
-| N/A | [Christian Jones](christian_jones.md) | LB | 4 | 0 |
+| 59 | [Christian Jones](christian_jones.md) | LB | 4 | 0 |
 | N/A | [Daryl Smith](daryl_smith.md) | LB | 4 | 16 |
 | 49 | [Julian Stanford](julian_stanford.md) | LB | 4 | 16 |
 | 51 | [Paul Posluszny](paul_posluszny.md) | LB | 4 | 11 |

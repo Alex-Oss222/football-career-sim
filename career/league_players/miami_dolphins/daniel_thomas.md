@@ -19,4 +19,6 @@ No playoff games on record.
 
 None on record.
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All Miami Dolphins players](README.md).
+Schools listed: Kansas State; Manhattan Christian Coll. KS (J.C.); Butler County JC; Northwest Mississippi CC.
+
+Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All Miami Dolphins players](README.md).

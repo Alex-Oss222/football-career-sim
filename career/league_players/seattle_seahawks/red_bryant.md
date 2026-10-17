@@ -20,4 +20,4 @@ No playoff games on record.
 - AP Second-Team All-Pro (2013, DE)
 - Pro Bowl selection (2013, DE)
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Seattle Seahawks players](README.md).
+Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Seattle Seahawks players](README.md).

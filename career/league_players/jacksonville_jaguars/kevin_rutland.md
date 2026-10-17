@@ -22,4 +22,4 @@
 
 None on record.
 
-Records through September 29, 2014. Identity: the public player file's latest listing (no 2014 Weeks 1-4 roster row). [All Jacksonville Jaguars players](README.md).
+Records through January 11, 2014. Identity: the public player file, last listed in 2013 or earlier (no 2014 Weeks 1-4 or 2013 roster row). [All Jacksonville Jaguars players](README.md).

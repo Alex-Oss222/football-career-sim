@@ -17,7 +17,11 @@ rating; totals equal ``runtime.statbook.aggregate_receipts``. A value the
 records do not carry is "N/A", never 0 or an estimate. Identity comes from
 committed sources only: the 2014 identity map and birth-date registry, the
 2014 Week 1 rosters, the league player database and the listed 2014 identity
-(``library/data/2014_listed_player_identity.json``). This is a reader view: no
+(``library/data/2014_listed_player_identity.json``), and a name-keyed entry
+is used only when its gsis id is the player's. A card and a player page carry
+the date of the latest game they cover (his or his club's while he was
+theirs), so a player whose record did not change is not rewritten; the index
+and club pages carry the latest date on record. This is a reader view: no
 game, evaluation or decision reads it.
 """
 from __future__ import annotations
@@ -327,27 +331,31 @@ def tiles_for(group, rows, long_seen):
             ("REC", fi(gv("receptions"))), per_game("OFF SNAPS/G", "offensive_snaps")]
 
 
-def window_games(club_games, year, gtype, rows):
-    """His clubs' games that season while he was theirs, as far as the record shows: each club
-    from his first game with it (the first club from the season's start) until his first game
-    with the next club."""
+def window_dates(club_games, year, gtype, rows):
+    """The dates of his clubs' games that season while he was theirs, as far as the record shows:
+    each club from his first game with it (the first club from the season's start) until his
+    first game with the next club."""
     order = []
     for r in sorted(rows, key=lambda r: (r["date"], r["week"])):
         if not order or order[-1][0] != r["team"]:
             if r["team"] not in [c for c, _ in order]:
                 order.append((r["team"], r["date"]))
-    count = 0
+    out = []
     for i, (club, start) in enumerate(order):
         end = order[i + 1][1] if i + 1 < len(order) else None
-        dates = club_games.get((year, gtype, club), [])
-        count += sum(1 for d in dates if (i == 0 or d >= start) and (end is None or d < end))
-    return count
+        out += [d for d in club_games.get((year, gtype, club), []) if (i == 0 or d >= start) and (end is None or d < end)]
+    return sorted(out)
 
 
-def block(group, rows, club_count, long_seen):
+def window_games(club_games, year, gtype, rows):
+    return len(window_dates(club_games, year, gtype, rows))
+
+
+def block(group, rows, dates, long_seen):
     if not rows:
         return None
-    return {"games": len(rows), "club_games": club_count, "tiles": tiles_for(group, rows, long_seen)}
+    return {"games": len(rows), "club_games": len(dates), "tiles": tiles_for(group, rows, long_seen),
+            "through": max(list(dates) + [r["date"] for r in rows])}
 
 
 # ------------------------------------------------------------------ identity
@@ -368,9 +376,9 @@ class Identity:
                 if p.get("gsis_id"):
                     self.week1_gsis.setdefault(p["gsis_id"], rec)
         self.listed = _load(root / "library/data/2014_listed_player_identity.json")["players"]
-        self.college = {p["player_id"]: p["college"]
-                        for p in _load(SeasonPaths(2014, root).record("league/personnel/league_players.json"))["players"]
-                        if p.get("player_id") and p.get("college")}
+        league = _load(SeasonPaths(2014, root).record("league/personnel/league_players.json"))["players"]
+        self.college = {p["player_id"]: p["college"] for p in league if p.get("player_id") and p.get("college")}
+        self.league_dob = {p["player_id"]: p["birth_date"] for p in league if p.get("player_id") and p.get("birth_date")}
         self.jax_dob = {}
         for row in SeasonPaths(2014, root).roster.read_text(encoding="utf-8").splitlines():
             m = re.match(r"\|\s*([^|]+?)\s*\|\s*([A-Z]+)\s*\|\s*(\d{4}-\d{2}-\d{2})\s*\|", row)
@@ -382,17 +390,36 @@ class Identity:
         b = (self.births.get(name) or {}).get("gsis_id")
         return (a or b) if year >= 2014 else (b or a)
 
-    def birth_date(self, names, week1, latest):
-        """Corrections first, then the registry, the 2014 Week 1 roster and Jacksonville's roster."""
-        for name in sorted(names):
-            if (self.fixes.get(name) or {}).get("birth_date"):
-                return self.fixes[name]["birth_date"]
-        for name in sorted(names):
-            if (self.births.get(name) or {}).get("birth_date"):
-                return self.births[name]["birth_date"]
-        if week1 and week1.get("birth_date"):
+    def week1_row(self, gsis, name):
+        """His 2014 Week 1 roster row: by gsis, else by record name when that row is not another man's."""
+        row = self.week1_gsis.get(gsis) if gsis else None
+        if row is None:
+            row = self.week1_name.get(name)
+            if row is not None and not same_person(row.get("gsis_id"), gsis):
+                row = None
+        return row
+
+    def birth_date(self, names, gsis, week1, latest):
+        """Corrections first, then the registry, the 2014 Week 1 roster, the league player database
+        and Jacksonville's roster. A name-keyed entry counts only when it names the same gsis id
+        (two players can share a record name across seasons)."""
+        for source in (self.fixes, self.births):
+            for name in sorted(names):
+                entry = source.get(name) or {}
+                if entry.get("birth_date") and same_person(entry.get("gsis_id"), gsis):
+                    return entry["birth_date"]
+        if week1 and week1.get("birth_date") and same_person(week1.get("gsis_id"), gsis):
             return week1["birth_date"]
-        return self.jax_dob.get(latest)
+        if gsis and self.league_dob.get(gsis):
+            return self.league_dob[gsis]
+        if latest in self.jax_dob and same_person(self.branch.get(latest), gsis):
+            return self.jax_dob[latest]
+        return None
+
+
+def same_person(entry_gsis, gsis):
+    """A name-keyed entry is his unless both ids are known and differ."""
+    return not entry_gsis or not gsis or entry_gsis == gsis
 
 
 def height_text(inches):
@@ -457,9 +484,9 @@ def card_data(root=ROOT):
     rec = collect(root)
     games, long_seen, club_games = rec["games"], rec["long_seen"], rec["club_games"]
     ident = Identity(root)
+    current_jax = jacksonville_current(root, ident)
     years = record_years(root)
     as_of = max(r["date"] for r in games)
-    as_of_date = dt.date.fromisoformat(as_of)
     for r in games:
         r["key"] = ident.gsis(r["pid"], r["year"]) or "%s-%s" % (slugify(display(r["pid"])), GROUP_OF.get(r["pos"], "x"))
     by_player = {}
@@ -487,25 +514,26 @@ def card_data(root=ROOT):
         gsis = ident.gsis(last["pid"], last["year"])
         listed = ident.listed.get(gsis, {}) if gsis else {}
         number, number_note = None, None
-        w1 = (ident.week1_gsis.get(gsis) if gsis else None) or ident.week1_name.get(last["pid"])
+        w1 = ident.week1_row(gsis, last["pid"])
+        current = is_current_jaguar(current_jax, gsis, {r["pid"] for r in rows})
         if last["team"] != JAX:
-            if w1 and w1.get("club") == last["team"] and str(w1.get("jersey") or "").isdigit():
+            # A Week 1 row placed with a club by a Jacksonville trade carries his real club's number.
+            if (w1 and w1.get("club") == last["team"] and not w1.get("branch_note")
+                    and str(w1.get("jersey") or "").isdigit()):
                 number, number_note = int(w1["jersey"]), "2014 Week 1 roster"
             elif listed.get("number") is not None and (listed.get("number_basis") or {}).get("club") == ident.codes.get(last["team"]):
                 number = listed["number"]
                 number_note = "2014 Week %d roster listing" % listed["number_basis"]["week"]
+        elif not current:
+            pass  # a former Jaguar: Jacksonville has not recorded his number
         elif listed.get("jaguars_number") is not None:
             number, number_note = listed["jaguars_number"], "jaguars"
         elif listed.get("number") is not None:
             number, number_note = listed["number"], "other:" + listed["number_basis"]["club"]
-        dob = ident.birth_date({r["pid"] for r in rows}, w1, last["pid"])
-        age = None
-        if dob:
-            b = dt.date.fromisoformat(dob)
-            age = as_of_date.year - b.year - ((as_of_date.month, as_of_date.day) < (b.month, b.day))
+        dob = ident.birth_date({r["pid"] for r in rows}, gsis, w1, last["pid"])
         college = ident.college.get(gsis) if gsis else None
         college = college or listed.get("college")
-        seasons, career_rows, career_clubs = {}, {"regular": [], "playoffs": []}, {"regular": 0, "playoffs": 0}
+        seasons, career_rows, career_dates = {}, {"regular": [], "playoffs": []}, {"regular": [], "playoffs": []}
         for year in years:
             yr = [r for r in rows if r["year"] == year]
             if not yr:
@@ -516,25 +544,31 @@ def card_data(root=ROOT):
                     s["clubs"].append(r["team"])
             for gtype in ("regular", "playoffs"):
                 gr = [r for r in yr if r["type"] == gtype]
-                cg = window_games(club_games, year, gtype, gr) if gr else 0
-                s[gtype] = block(group, gr, cg, long_seen)
+                dates = window_dates(club_games, year, gtype, gr) if gr else []
+                s[gtype] = block(group, gr, dates, long_seen)
                 career_rows[gtype].extend(gr)
-                career_clubs[gtype] += cg
+                career_dates[gtype] += dates
             seasons[year] = s
+        career = {g: block(group, career_rows[g], career_dates[g], long_seen) for g in ("regular", "playoffs")}
+        through = max(b["through"] for b in career.values() if b)
+        age = None
+        if dob:
+            b, t = dt.date.fromisoformat(dob), dt.date.fromisoformat(through)
+            age = t.year - b.year - ((t.month, t.day) < (b.month, b.day))
         players.append({
             "key": key, "gsis": gsis, "name": display(last["pid"]), "record_names": sorted({r["pid"] for r in rows}),
             "team": last["team"], "pos": pos, "group": group, "number": number, "number_note": number_note,
             "height_in": listed.get("height_in"), "weight": listed.get("weight"), "listing": listed.get("listing"),
-            "birth_date": dob, "age": age, "college": college, "seasons": seasons,
-            "career": {g: block(group, career_rows[g], career_clubs[g], long_seen) for g in ("regular", "playoffs")},
-            "awards": awards.get(key, []),
+            "birth_date": dob, "age": age, "college": college, "seasons": seasons, "career": career,
+            "through": through, "current_jaguar": current, "awards": awards.get(key, []),
         })
-    # Jacksonville numbers: his real 2014 Jaguars number; else the number he wore in 2014 with his
-    # real club when no other current Jaguar holds or claims it; else none (Jacksonville has not
-    # recorded jersey numbers of its own).
+    # Jacksonville numbers, for players Jacksonville currently controls (active roster, reserve and
+    # practice squad): his real 2014 Jaguars number; else the number he wore in 2014 with his real
+    # club when no other current Jaguar holds or claims it; else none. A former Jaguar shows none.
+    # Jacksonville has not recorded jersey numbers of its own.
     claims = {}
     for p in players:
-        if p["team"] == JAX and p["number"] is not None:
+        if p["team"] == JAX and p["current_jaguar"] and p["number"] is not None:
             claims.setdefault(p["number"], []).append(p)
     for number, ps in claims.items():
         for p in ps:
@@ -550,6 +584,21 @@ def card_data(root=ROOT):
             p["number_note"] = ("the number he wore in 2014 with the %s (Jacksonville has not recorded one)"
                                 % club_of_code.get(code, code))
     return {"as_of": as_of, "years": years, "players": players, "unmatched_awards": unmatched}
+
+
+def jacksonville_current(root, ident):
+    """(gsis ids, names without one) of the players Jacksonville controls now: every roster table
+    row whose status shows club control, practice squad included (the weekly input gate's rule)."""
+    from scripts.check_week_input_exclusivity import controlled_players_from_roster
+    active = _load(Path(root) / "docs/repository_map.json")["active_season"]
+    names = controlled_players_from_roster(SeasonPaths(active, root).roster)
+    ids = {ident.branch[n] for n in names if ident.branch.get(n)}
+    return ids, {n for n in names if not ident.branch.get(n)}
+
+
+def is_current_jaguar(current, gsis, record_names):
+    ids, unkeyed = current
+    return bool(gsis and gsis in ids) or bool(unkeyed & set(record_names))
 
 
 # ------------------------------------------------------------------ layout
@@ -582,6 +631,14 @@ def assign_slugs(players):
 W, H = 1280, 888
 BW, BH = 610, 276
 FONT = '-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif'
+# Tiles: two rows of five, 104 x 80 with a 10 px gap, drawn as one dashed stroke per row (the
+# 570 px run is five dash-and-gap periods, so each row starts on a dash however a renderer
+# carries the pattern between subpaths).
+TILE_X, TILE_PITCH, TILE_ROWS = 25, 114, (72, 162)
+CENTRES = tuple(TILE_X + 52 + i * TILE_PITCH for i in range(5))
+COLLEGE_CHARS = 40
+SMALL_TEXT = 4.5   # WCAG AA for text under 18.66 px bold
+ACCENT = 1.6       # a decorative stripe that reads against its background
 
 
 def _x(s):
@@ -592,41 +649,85 @@ def _fit(text, base, width, em=0.6):
     return min(base, int(width / (em * max(len(text), 1))))
 
 
+def tile_colour(primary, ink):
+    """The tile shade on a season block: a step toward the text colour, or away from it when that
+    step would leave the 12 px labels under AA contrast."""
+    toward = mix(ink, primary, 0.14)
+    if contrast(ink, toward) >= SMALL_TEXT:
+        return toward
+    return mix(INK if ink == WHITE else WHITE, primary, 0.14)
+
+
+def secondary_on_page(secondary):
+    """Whether the secondary colour reads as a stripe under the header band, against the page. When
+    it does not, the secondary draws the rule under the name instead, on the primary."""
+    return contrast(secondary, PAGE) >= ACCENT
+
+
+def college_text(college, limit=COLLEGE_CHARS):
+    """The schools that fit, whole and in their listed order; an ellipsis marks any left out."""
+    if len(college) <= limit:
+        return college
+    schools = college.split("; ")
+    shown = schools[0]
+    for s in schools[1:]:
+        if len(shown) + len("; ") + len(s) + len("; …") > limit:
+            break
+        shown += "; " + s
+    if len(shown) + len("; …") <= limit and shown != college:
+        return shown + "; …"
+    words = shown.split(" ")
+    while len(words) > 1 and len(" ".join(words)) + 2 > limit:
+        words.pop()
+    return " ".join(words) + " …"
+
+
+def _short(colour):
+    """#RRGGBB as #RGB when that is the same colour."""
+    h = colour.lstrip("#")
+    return "#" + h[::2] if h[0::2] == h[1::2] else colour
+
+
+def _row(cls, y, items, base=None, em=0.6, width=96):
+    """One text element per row: the first item at the element's own x, the rest in positioned
+    tspans (each its own anchored chunk); an item too long for its slot gets a smaller size."""
+    head, spans = None, []
+    for x, s in items:
+        size = _fit(s, base, width, em) if base else None
+        style = "" if size == base else ' style="font-size:%dpx"' % size
+        if head is None and not style:
+            head = (x, _x(s))
+        else:
+            spans.append('<tspan x="%d"%s>%s</tspan>' % (x, style, _x(s)))
+    if head is None:
+        return '<text y="%d" class="%s">%s</text>' % (y, cls, "".join(spans))
+    return '<text x="%d" y="%d" class="%s">%s%s</text>' % (head[0], y, cls, head[1], "".join(spans))
+
+
 def _block_svg(x, y, title, b, empty, on_primary, colors):
     primary, secondary, ink = colors
-    fill = primary if on_primary else SURFACE
-    tile = mix(ink, primary, 0.14) if on_primary else SURFACE_TILE
     out = ['<g transform="translate(%d %d)" class="%s">' % (x, y, "p" if on_primary else "c"),
-           '<rect width="%d" height="%d" rx="22" fill="%s"/>' % (BW, BH, fill)]
+           '<rect width="%d" height="%d" rx="22" fill="%s"/>' % (BW, BH, primary if on_primary else SURFACE)]
     if not on_primary:
-        accent = secondary if contrast(secondary, SURFACE) >= 1.6 else primary
+        accent = secondary if contrast(secondary, SURFACE) >= ACCENT else primary
         out.append('<rect x="22" width="%d" height="4" fill="%s"/>' % (BW - 44, accent))
     out.append('<text x="24" y="42" class="bt">%s</text>' % _x(title.upper()))
     if b is None:
         out.append('<text x="%d" y="156" class="m">%s</text></g>' % (BW // 2, _x(empty)))
         return "".join(out)
-    out.append('<text x="586" y="42" class="g">%d G</text>' % b["games"])
-    out.append('<path d="M24 58H586" class="d"/>')
-    tw, gap, th = 104, 10, 80
-    path, texts = [], []
-    for i, (label, value) in enumerate(b["tiles"]):
-        tx, ty = 25 + (i % 5) * (tw + gap), 72 + (i // 5) * (th + 10)
-        path.append("M%d %dh%dv%dh-%dz" % (tx + 4, ty + 4, tw - 8, th - 8, tw - 8))
-        cx = tx + tw // 2
-        vs, ls = _fit(value, 28, 96, 0.6), _fit(label, 12, 96, 0.66)
-        texts.append('<text x="%d" y="%d" class="v"%s>%s</text>' % (
-            cx, ty + 44, "" if vs == 28 else ' style="font-size:%dpx"' % vs, _x(value)))
-        texts.append('<text x="%d" y="%d" class="l"%s>%s</text>' % (
-            cx, ty + 66, "" if ls == 12 else ' style="font-size:%dpx"' % ls, _x(label)))
-    out.append('<path d="%s" fill="%s" stroke="%s" stroke-width="8" stroke-linejoin="round"/>'
-               % ("".join(path), tile, tile))
-    out.extend(texts)
+    out.append('<text x="586" y="42" class="g">%d G</text><path d="M24 58H586" class="d"/>' % b["games"])
+    out.append('<path d="%s" class="t"/>' % "".join("M%d %dh%d" % (TILE_X, ty + 40, 5 * TILE_PITCH)
+                                                   for ty in TILE_ROWS))
+    for row, ty in enumerate(TILE_ROWS):
+        tiles = b["tiles"][row * 5:row * 5 + 5]
+        out.append(_row("v", ty + 44, [(CENTRES[i], v) for i, (_, v) in enumerate(tiles)], 28, 0.6))
+        out.append(_row("l", ty + 66, [(CENTRES[i], l) for i, (l, _) in enumerate(tiles)], 12, 0.66))
     out.append('<text x="24" y="%d" class="f">%d of %d games on record</text></g>'
                % (BH - 12, b["games"], b["club_games"]))
     return "".join(out)
 
 
-def card_svg(p, as_of):
+def card_svg(p):
     primary, secondary = COLORS[p["team"]]
     ink = text_on(primary)
     colors = (primary, secondary, ink)
@@ -634,41 +735,40 @@ def card_svg(p, as_of):
     s = p["seasons"][latest]
     name = p["name"]
     name_size = 50 if len(name) <= 24 else (42 if len(name) <= 30 else 34)
-    college = p["college"] or N_A
-    if len(college) > 40:
-        college = college[:39].rstrip() + "..."
     born = long_date(p["birth_date"]) if p["birth_date"] else N_A
-    ident = [("NO.", "#%d" % p["number"] if p["number"] is not None else N_A, 52),
-             ("HEIGHT", height_text(p["height_in"]), 150),
-             ("WEIGHT", "%d lb" % p["weight"] if p["weight"] is not None else N_A, 270),
-             ("BORN", born, 390), ("AGE", str(p["age"]) if p["age"] is not None else N_A, 640),
-             ("COLLEGE", college, 730)]
-    style = ("text{font-family:%s;fill:#FFF}.h text,.p text{fill:%s}.e{font-size:15px;font-weight:700;"
-             "letter-spacing:2px;opacity:.8}.n{font-weight:700}.s{font-size:22px;font-weight:600}"
-             ".k{font-size:13px;font-weight:700;letter-spacing:1.5px;opacity:.75}.i{font-size:22px;font-weight:600}"
-             ".r{text-anchor:end}.bt{font-size:22px;font-weight:700;letter-spacing:.5px}.g{font-size:20px;"
-             "font-weight:700;text-anchor:end}.v{font-size:28px;font-weight:700;text-anchor:middle}"
-             ".l{font-size:12px;font-weight:700;text-anchor:middle;opacity:.8}.f{font-size:14px;opacity:.75}"
-             ".m{font-size:18px;text-anchor:middle;opacity:.8}.d{stroke:%s;stroke-opacity:.2}"
-             ".c .d{stroke:#FFF}.x{font-size:14px;fill:#9BA1AA}" % (FONT, ink, ink))
+    ident = [(52, "NO.", "#%d" % p["number"] if p["number"] is not None else N_A),
+             (150, "HEIGHT", height_text(p["height_in"])),
+             (270, "WEIGHT", "%d lb" % p["weight"] if p["weight"] is not None else N_A),
+             (390, "BORN", born), (640, "AGE", str(p["age"]) if p["age"] is not None else N_A),
+             (730, "COLLEGE", college_text(p["college"]) if p["college"] else N_A)]
+    # Text on the club colours is full strength (AA on every primary); only the dark career
+    # surface dims its small text.
+    style = ("text{font:700 22px %s;fill:#FFF}.h text,.p text{fill:%s}.e{font-size:15px;letter-spacing:2px}"
+             ".s,.i{font-weight:600}.k{font-size:13px;letter-spacing:1.5px}.r{text-anchor:end}"
+             ".bt{letter-spacing:.5px}.g{font-size:20px;text-anchor:end}.v,.l,.m{text-anchor:middle}"
+             ".v{font-size:28px}.l{font-size:12px}.f,.m,.x{font-weight:400}.f,.x{font-size:14px}.m{font-size:18px}"
+             ".c .l,.c .m{opacity:.8}.c .f{opacity:.75}.x{fill:#9BA1AA}.d{stroke:%s;stroke-opacity:.2}"
+             ".c .d{stroke:#FFF}.t{fill:none;stroke-width:80;stroke-dasharray:104 10}.p .t{stroke:%s}"
+             ".c .t{stroke:%s}" % (FONT, _short(ink), _short(ink), tile_colour(primary, ink), SURFACE_TILE))
     out = ['<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d" role="img" '
            'aria-labelledby="t">' % (W, H, W, H),
            '<title id="t">%s career card</title>' % _x(name),
            "<style>%s</style>" % style,
            '<rect width="%d" height="%d" rx="28" fill="%s"/>' % (W, H, PAGE),
            '<path d="M20 44a24 24 0 0 1 24-24h1192a24 24 0 0 1 24 24v200H20z" fill="%s"/>' % primary,
-           '<rect x="20" y="244" width="1240" height="8" fill="%s"/>' % secondary,
+           ('<rect x="20" y="244" width="1240" height="8" fill="%s"/>' % secondary
+            if secondary_on_page(secondary) else ""),
            '<g class="h">',
            '<text x="52" y="64" class="e">PLAYER CAREER</text>',
-           '<text x="52" y="120" class="n" style="font-size:%dpx">%s</text>' % (name_size, _x(name)),
+           '<text x="52" y="120" style="font-size:%dpx">%s</text>' % (name_size, _x(name)),
            '<text x="52" y="156" class="s">%s · NFL · %s</text>' % (_x(p["team"]), _x(p["pos"] or N_A)),
            '<text x="1228" y="64" class="e r">RECORD THROUGH</text>',
-           '<text x="1228" y="100" class="r n" style="font-size:28px">%s</text>' % _x(long_date(as_of)),
-           '<path d="M52 176H1228" class="d"/>']
-    for label, value, x in ident:
-        out.append('<text x="%d" y="202" class="k">%s</text><text x="%d" y="230" class="i">%s</text>'
-                   % (x, label, x, _x(value)))
-    out.append("</g>")
+           '<text x="1228" y="100" class="r" style="font-size:28px">%s</text>' % _x(long_date(p["through"])),
+           ('<path d="M52 176H1228" class="d"/>' if secondary_on_page(secondary)
+            else '<path d="M52 176H1228" stroke="%s" stroke-width="4"/>' % secondary),
+           _row("k", 202, [(x, k) for x, k, _ in ident]),
+           _row("i", 230, [(x, v) for x, _, v in ident]),
+           "</g>"]
     out.append(_block_svg(20, 272, "%d playoffs" % latest, s["playoffs"], "No playoff games in %d" % latest,
                           True, colors))
     out.append(_block_svg(650, 272, "Career playoffs", p["career"]["playoffs"], "No playoff games on record",
@@ -680,7 +780,7 @@ def card_svg(p, as_of):
     out.append('<text x="32" y="872" class="x">Regular season and playoffs are separate records. '
                'N/A: not on record.</text>')
     out.append("</svg>")
-    return "\n".join(out) + "\n"
+    return "\n".join(line for line in out if line) + "\n"
 
 
 # ------------------------------------------------------------------ Markdown
@@ -712,7 +812,14 @@ def b_games(b):
     return b["games"] if b else 0
 
 
-def player_page(p, as_of, profile_link):
+LISTING_BASIS = {
+    "weeks_1_4": "listed 2014 roster data, Weeks 1-4",
+    "roster_2013": "his listed 2013 season roster data (no 2014 Weeks 1-4 roster row)",
+    "player_file": "the public player file's college (no 2014 Weeks 1-4 or 2013 roster row)",
+}
+
+
+def player_page(p, profile_link):
     lines = ["# %s" % p["name"], "",
              "![%s career card](assets/%s.svg)" % (p["name"], p["slug"]), "",
              "## Career stats", "", "### Regular season", ""]
@@ -724,15 +831,14 @@ def player_page(p, as_of, profile_link):
     lines.append("")
     if profile_link:
         lines += ["[Jacksonville player card](%s)" % profile_link, ""]
-    if p["listing"] == "weeks_1_4":
-        basis = "listed 2014 roster data, Weeks 1-4"
-    elif p["listing"] == "player_file":
-        basis = "the public player file's latest listing (no 2014 Weeks 1-4 roster row)"
-    else:
-        basis = "no listing on record"
+    if p["college"] and college_text(p["college"]) != p["college"]:
+        lines += ["Schools listed: %s." % p["college"], ""]
+    basis = LISTING_BASIS.get(p["listing"], "no listing on record")
+    if p["listing"] == "player_file" and p["height_in"] is not None:
+        basis = "the public player file, last listed in 2013 or earlier (no 2014 Weeks 1-4 or 2013 roster row)"
     number = "; number: %s" % p["number_note"] if p["number"] is not None and p["number_note"] else ""
     lines.append("Records through %s. Identity: %s%s. [All %s players](README.md)."
-                 % (long_date(as_of), basis, number, p["team"]))
+                 % (long_date(p["through"]), basis, number, p["team"]))
     return "\n".join(lines) + "\n"
 
 
@@ -789,6 +895,19 @@ def jacksonville_profiles(root):
     return out
 
 
+def profile_for(p, profiles, branch):
+    """His Jacksonville working card: the roster name's gsis id must be his. A roster name with no
+    id matches only an exact record name of a player whose latest game was with Jacksonville."""
+    for name in sorted(profiles):
+        gsis = branch.get(name)
+        if gsis and p["gsis"]:
+            if gsis == p["gsis"]:
+                return profiles[name]
+        elif name in p["record_names"] and p["team"] == JAX:
+            return profiles[name]
+    return None
+
+
 def render(root=ROOT):
     """{path relative to the repository root: text} for the whole folder."""
     root = Path(root)
@@ -801,17 +920,18 @@ def render(root=ROOT):
         raise ValueError("no club colours for: " + ", ".join(unknown))
     assign_slugs(players)
     profiles = jacksonville_profiles(root)
+    branch = Identity(root).branch
     files = {}
     by_club = {}
     for p in players:
         by_club.setdefault(p["team"], []).append(p)
         base = "%s/%s" % (FOLDER, club_slug(p["team"]))
         link = None
-        prof = next((profiles[n] for n in [p["name"]] + p["record_names"] if n in profiles), None)
+        prof = profile_for(p, profiles, branch)
         if prof is not None:
             link = Path(os.path.relpath(prof, root / base)).as_posix()
-        files["%s/%s.md" % (base, p["slug"])] = player_page(p, as_of, link)
-        files["%s/assets/%s.svg" % (base, p["slug"])] = card_svg(p, as_of)
+        files["%s/%s.md" % (base, p["slug"])] = player_page(p, link)
+        files["%s/assets/%s.svg" % (base, p["slug"])] = card_svg(p)
     for team, ps in by_club.items():
         files["%s/%s/README.md" % (FOLDER, club_slug(team))] = club_page(team, ps, years, as_of)
     files["%s/README.md" % FOLDER] = index_page({t: len(ps) for t, ps in by_club.items()}, years, as_of)

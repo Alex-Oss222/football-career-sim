@@ -23,4 +23,4 @@ No playoff games on record.
 - AP First-Team All-Pro (2013, P)
 - Pro Bowl selection (2013, P)
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).

@@ -20,4 +20,4 @@ No playoff games on record.
 - NFC Defensive Player of the Week (2013, Week 6)
 - Pro Bowl selection (2013, DT)
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Green Bay Packers players](README.md).
+Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Green Bay Packers players](README.md).

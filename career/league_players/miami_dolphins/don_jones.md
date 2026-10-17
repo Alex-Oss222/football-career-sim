@@ -19,4 +19,6 @@ No playoff games on record.
 
 None on record.
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Miami Dolphins players](README.md).
+Schools listed: Arkansas State; Mississippi Gulf Coast CC.
+
+Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Miami Dolphins players](README.md).

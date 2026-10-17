@@ -19,4 +19,6 @@ No playoff games on record.
 
 None on record.
 
-Records through September 29, 2014. Identity: the public player file's latest listing (no 2014 Weeks 1-4 roster row). [All Seattle Seahawks players](README.md).
+Schools listed: Northeastern State (Ok); Navarro; Oklahoma State.
+
+Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Seattle Seahawks players](README.md).

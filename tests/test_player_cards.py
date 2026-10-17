@@ -70,6 +70,15 @@ def player(name, club):
     return next(p for p in data()["players"] if p["name"] == name and p["team"] == club)
 
 
+def row_items(text):
+    """The items of one row element: its own text, then each tspan's."""
+    return ([text.text] if text.text else []) + [t.text for t in text.iter(SVG + "tspan")]
+
+
+def svg_rows(root, cls):
+    return [item for t in root.iter(SVG + "text") if t.get("class") == cls for item in row_items(t)]
+
+
 def svg_tiles(path):
     """[(label, value)] in document order for each stat block of a card."""
     root = ET.fromstring(path.read_bytes())
@@ -77,12 +86,23 @@ def svg_tiles(path):
     for g in root.iter(SVG + "g"):
         if g.get("class") not in ("p", "c"):
             continue
-        texts = [(t.get("class"), t.text) for t in g.iter(SVG + "text")]
-        values = [v for c, v in texts if c == "v"]
-        labels = [v for c, v in texts if c == "l"]
-        title = next(v for c, v in texts if c == "bt")
-        blocks.append((title, list(zip(labels, values))))
+        title = next(t.text for t in g.iter(SVG + "text") if t.get("class") == "bt")
+        blocks.append((title, list(zip(svg_rows(g, "l"), svg_rows(g, "v")))))
     return blocks
+
+
+def svg_identity(path):
+    """{label: value} of a card's header identity row."""
+    root = ET.fromstring(path.read_bytes())
+    return dict(zip(svg_rows(root, "k"), svg_rows(root, "i")))
+
+
+def svg_text(path):
+    return [t for el in ET.fromstring(path.read_bytes()).iter() for t in (el.text, el.tail) if t]
+
+
+def card_path(p):
+    return FOLDER / player_cards.club_slug(p["team"]) / "assets" / ("%s.svg" % p["slug"])
 
 
 class CommittedFolderTests(unittest.TestCase):
@@ -149,7 +169,7 @@ class SvgTests(unittest.TestCase):
                     self.assertNotIn("url(", value, path)
             self.assertNotIn(b"@import", data)
             self.assertNotIn(b"http", data.replace(b'xmlns="http://www.w3.org/2000/svg"', b""), path)
-            self.assertLess(len(data), 9000, path)
+            self.assertLessEqual(len(data), 6144, path)  # the 6 KB budget per card
 
     def test_reader_words_stay_out_of_the_cards(self):
         banned = re.compile(r"\b(simulation|kernel|receipts?|engine|ledger|snapshot|checkpoint)\b", re.I)
@@ -259,10 +279,9 @@ class ValueTests(unittest.TestCase):
         players = data()["players"]
         no_college = next(p for p in players if p["college"] is None)
         no_number = next(p for p in players if p["number"] is None)
-        for p, label in ((no_college, "COLLEGE"), (no_number, "NO.")):
-            path = FOLDER / player_cards.club_slug(p["team"]) / "assets" / ("%s.svg" % p["slug"])
-            texts = [t.text for t in ET.fromstring(path.read_bytes()).iter(SVG + "text")]
-            self.assertEqual(texts[texts.index(label) + 1], "N/A", path)
+        no_height = next(p for p in players if p["height_in"] is None)
+        for p, label in ((no_college, "COLLEGE"), (no_number, "NO."), (no_height, "HEIGHT"), (no_height, "WEIGHT")):
+            self.assertEqual(svg_identity(card_path(p))[label], "N/A", card_path(p))
 
     def test_jacksonville_numbers_follow_the_rule(self):
         jax = [p for p in data()["players"] if p["team"] == "Jacksonville Jaguars"]
@@ -273,6 +292,91 @@ class ValueTests(unittest.TestCase):
         # A number borrowed from another club is never shared with another current Jaguar.
         for p in borrowed:
             self.assertEqual(shown.count(p["number"]), 1, p["name"])
+        # Only players Jacksonville controls now carry a number on a Jaguars card.
+        self.assertTrue(all(p["current_jaguar"] for p in jax if p["number"] is not None))
+        self.assertIsNone(player("Ryan Davis", "Jacksonville Jaguars")["number"])  # waived August 30
+        self.assertIsNone(player("C.J. Wilson", "Jacksonville Jaguars")["number"])  # a Jaguar only in 2013
+        jones = player("Christian Jones", "Jacksonville Jaguars")
+        self.assertTrue(jones["current_jaguar"])
+        self.assertEqual(jones["number"], 59)
+
+    def test_no_club_shows_one_number_twice(self):
+        seen = {}
+        for p in data()["players"]:
+            if p["number"] is not None:
+                seen.setdefault((p["team"], p["number"]), []).append(p["name"])
+        self.assertEqual({k: v for k, v in seen.items() if len(v) > 1}, {})
+        # A Week 1 row placed with a club by a Jacksonville trade carries his real club's number.
+        self.assertIsNone(player("Cecil Shorts", "Indianapolis Colts")["number"])
+        self.assertIsNone(player("Jason Babin", "Miami Dolphins")["number"])
+        self.assertEqual(player("Jack Doyle", "Indianapolis Colts")["number"], 84)
+
+    def test_namesakes_keep_their_own_birth_dates(self):
+        car = player("Jonathan Stewart", "Carolina Panthers")
+        stl = player("Jonathan Stewart", "St. Louis Rams")
+        self.assertNotEqual(car["gsis"], stl["gsis"])
+        self.assertEqual((car["birth_date"], car["age"]), ("1987-03-21", 27))
+        self.assertEqual(stl["birth_date"], "1990-11-23")
+        self.assertEqual(svg_identity(card_path(car))["BORN"], "March 21, 1987")
+        self.assertEqual(svg_identity(card_path(stl))["BORN"], "November 23, 1990")
+        # No card takes a name-keyed birth date recorded for a different gsis id.
+        registry = json.loads((ROOT / "library/data/player_birth_dates.json").read_text(encoding="utf-8"))["players"]
+        for p in data()["players"]:
+            for name in p["record_names"]:
+                entry = registry.get(name) or {}
+                if entry.get("gsis_id") and p["gsis"] and entry["gsis_id"] != p["gsis"]:
+                    self.assertNotEqual(p["birth_date"], entry["birth_date"], (p["name"], p["team"]))
+
+    def test_text_is_unescaped_once(self):
+        listed = json.loads((ROOT / "library/data/2014_listed_player_identity.json").read_text(encoding="utf-8"))
+        self.assertFalse([v for v in listed["players"].values() if "&amp;" in v.get("college", "")])
+        for path in sorted(FOLDER.rglob("*.svg")):
+            self.assertFalse([t for t in svg_text(path) if "&amp;" in t or "&#" in t], path)
+        self.assertEqual(svg_identity(card_path(player("Mike Evans", "Tampa Bay Buccaneers")))["COLLEGE"], "Texas A&M")
+
+    def test_long_college_lists_are_cut_at_a_school(self):
+        long = [p for p in data()["players"] if p["college"] and len(p["college"]) > player_cards.COLLEGE_CHARS]
+        self.assertTrue(long)
+        for p in long:
+            shown = svg_identity(card_path(p))["COLLEGE"]
+            self.assertLessEqual(len(shown), player_cards.COLLEGE_CHARS, p["name"])
+            self.assertNotIn("...", shown)
+            self.assertTrue(shown.endswith("; …"), shown)
+            self.assertTrue(p["college"].startswith(shown[:-len("; …")] + "; "), shown)
+            page = (FOLDER / player_cards.club_slug(p["team"]) / ("%s.md" % p["slug"])).read_text(encoding="utf-8")
+            self.assertIn("Schools listed: %s." % p["college"], page)
+
+    def test_each_card_is_dated_by_the_games_it_covers(self):
+        # A card's date is the latest game it covers (his, or his club's while he was theirs), so a
+        # card whose record did not change is not rewritten; the index carries the latest date.
+        as_of = data()["as_of"]
+        index = (FOLDER / "README.md").read_text(encoding="utf-8")
+        self.assertIn("record through %s." % player_cards.long_date(as_of), index)
+        cousins = player("Kirk Cousins", "Jacksonville Jaguars")
+        self.assertEqual(cousins["through"], "2014-09-28")
+        meester = player("Brad Meester", "Jacksonville Jaguars")
+        self.assertEqual(max(meester["seasons"]), 2013)
+        self.assertLess(meester["through"], "2014-03-01")
+        text = card_path(meester).read_text(encoding="utf-8")
+        self.assertIn(player_cards.long_date(meester["through"]), text)
+        self.assertNotIn(player_cards.long_date(as_of), text)
+        for p in data()["players"]:
+            covered = [b["through"] for b in p["career"].values() if b]
+            self.assertEqual(p["through"], max(covered), p["name"])
+
+    def test_text_on_the_club_colours_meets_aa(self):
+        style = re.search(r"<style>(.*?)</style>", (FOLDER / "README.md").parent.joinpath(
+            "jacksonville_jaguars", "assets", "kirk_cousins.svg").read_text(encoding="utf-8")).group(1)
+        # Small text is dimmed only on the dark career surface.
+        for rule in re.findall(r"([^{}]+)\{(?:[^}]*;)?opacity:", style):
+            self.assertTrue(all(sel.strip().startswith(".c ") for sel in rule.split(",")), rule)
+        for club, (primary, secondary) in player_cards.COLORS.items():
+            ink = player_cards.text_on(primary)
+            self.assertGreaterEqual(player_cards.contrast(ink, primary), 4.5, club)
+            self.assertGreaterEqual(player_cards.contrast(ink, player_cards.tile_colour(primary, ink)), 4.5, club)
+            # The secondary shows on every card: a stripe on the page, or the rule on the band.
+            ground = player_cards.PAGE if player_cards.secondary_on_page(secondary) else primary
+            self.assertGreaterEqual(player_cards.contrast(secondary, ground), player_cards.ACCENT, club)
 
 
 class LinkTests(unittest.TestCase):
@@ -291,6 +395,27 @@ class LinkTests(unittest.TestCase):
         for page in sorted(FOLDER.glob("*/*.md")):
             for target in link.findall(page.read_text(encoding="utf-8")):
                 self.assertTrue((page.parent / target).resolve().is_file(), "%s -> %s" % (page, target))
+
+    def test_only_the_same_player_links_a_jacksonville_card(self):
+        for rel in ("baltimore_ravens/c_j_mosley.md", "san_diego_chargers/mike_harris.md"):
+            self.assertNotIn("Jacksonville player card", (FOLDER / rel).read_text(encoding="utf-8"), rel)
+        profiles = player_cards.jacksonville_profiles(ROOT)
+        branch = player_cards.Identity(ROOT).branch
+        by_path = {path: name for name, path in profiles.items()}
+        linked = 0
+        for p in data()["players"]:
+            page = (FOLDER / player_cards.club_slug(p["team"]) / ("%s.md" % p["slug"])).read_text(encoding="utf-8")
+            prof = player_cards.profile_for(p, profiles, branch)
+            self.assertEqual(prof is not None, "Jacksonville player card" in page, p["name"])
+            if prof is None:
+                continue
+            linked += 1
+            name = by_path[prof]
+            self.assertIn(name, p["record_names"], p["name"])
+            if branch.get(name):
+                self.assertEqual(branch[name], p["gsis"], p["name"])
+            self.assertTrue(p["current_jaguar"], p["name"])
+        self.assertGreater(linked, 40)
 
     def test_jacksonville_players_link_their_working_card(self):
         text = (FOLDER / "jacksonville_jaguars" / "kirk_cousins.md").read_text(encoding="utf-8")

@@ -19,4 +19,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: the number he wore in 2014 with the Oakland Raiders (Jacksonville has not recorded one). [All Jacksonville Jaguars players](README.md).
+Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Jacksonville Jaguars players](README.md).

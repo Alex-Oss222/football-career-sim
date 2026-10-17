@@ -66,7 +66,7 @@ AFC East · Players whose latest game on record was with the Miami Dolphins. G c
 | N/A | [Dion Jordan](dion_jordan.md) | DE | 0 | 8 |
 | 90 | [Earl Mitchell](earl_mitchell.md) | DT | 4 | 16 |
 | 98 | [Jared Odrick](jared_odrick.md) | DT | 4 | 11 |
-| 58 | [Jason Babin](jason_babin.md) | DE | 3 | 16 |
+| N/A | [Jason Babin](jason_babin.md) | DE | 3 | 16 |
 | 50 | [Olivier Vernon](olivier_vernon.md) | DE | 4 | 16 |
 | 94 | [Randy Starks](randy_starks.md) | DT | 4 | 16 |
 | 78 | [Terrence Fede](terrence_fede.md) | DE | 1 | 0 |
