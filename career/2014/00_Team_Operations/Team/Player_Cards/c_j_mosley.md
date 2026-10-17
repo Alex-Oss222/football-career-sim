@@ -1,5 +1,11 @@
 # C.J. Mosley — 2014 Player Profile
 
+<!-- player-card:begin -->
+![C.J. Mosley career card](../../../../league_players/jacksonville_jaguars/assets/c_j_mosley.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/c_j_mosley.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/CJ_Mosley_%28defensive_lineman%29_2012.jpg?width=500" alt="C.J. Mosley" width="160">
 

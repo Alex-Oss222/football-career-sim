@@ -1,5 +1,11 @@
 # Chris Prosinski — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Chris Prosinski career card](../../../../league_players/jacksonville_jaguars/assets/chris_prosinski.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/chris_prosinski.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

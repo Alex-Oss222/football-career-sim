@@ -1,5 +1,11 @@
 # Malcolm Butler — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Malcolm Butler career card](../../../../league_players/jacksonville_jaguars/assets/malcolm_butler.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/malcolm_butler.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Malcolm_Butler_%28American_football%29.JPG?width=500" alt="Malcolm Butler" width="160">
 

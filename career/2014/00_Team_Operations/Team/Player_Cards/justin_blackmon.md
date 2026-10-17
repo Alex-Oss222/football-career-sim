@@ -1,5 +1,11 @@
 # Justin Blackmon — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Justin Blackmon career card](../../../../league_players/indianapolis_colts/assets/justin_blackmon.svg)
+
+[Career statistics](../../../../league_players/indianapolis_colts/justin_blackmon.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

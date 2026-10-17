@@ -1,5 +1,11 @@
 # Allen Hurns — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Allen Hurns career card](../../../../league_players/jacksonville_jaguars/assets/allen_hurns.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/allen_hurns.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Allen_Hurns.jpg?width=500" alt="Allen Hurns" width="160">
 

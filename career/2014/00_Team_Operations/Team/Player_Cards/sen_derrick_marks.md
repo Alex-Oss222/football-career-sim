@@ -1,5 +1,11 @@
 # Sen'Derrick Marks — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Sen'Derrick Marks career card](../../../../league_players/jacksonville_jaguars/assets/sen_derrick_marks.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/sen_derrick_marks.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sen%27Derrick_Marks_2014_Jaguars_training_camp_Cropped.jpg?width=500" alt="Sen&#x27;Derrick Marks" width="160">
 

@@ -1,5 +1,11 @@
 # Lane Johnson — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Lane Johnson career card](../../../../league_players/jacksonville_jaguars/assets/lane_johnson.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/lane_johnson.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

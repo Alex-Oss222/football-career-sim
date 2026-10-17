@@ -1,5 +1,11 @@
 # Montell Owens — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Montell Owens career card](../../../../league_players/jacksonville_jaguars/assets/montell_owens.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/montell_owens.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

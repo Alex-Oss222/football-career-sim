@@ -1,5 +1,11 @@
 # Travis Kelce — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Travis Kelce career card](../../../../league_players/jacksonville_jaguars/assets/travis_kelce.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/travis_kelce.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Travis_Kelce_in_the_Oval_Office_of_the_White_House_on_June_5%2C_2023_-_P20230605AS-0902_%28cropped%29.jpg?width=500" alt="Travis Kelce" width="160">
 

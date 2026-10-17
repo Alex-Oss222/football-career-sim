@@ -1,5 +1,11 @@
 # C.J. Anderson — 2014 Player Profile
 
+<!-- player-card:begin -->
+![C.J. Anderson career card](../../../../league_players/jacksonville_jaguars/assets/c_j_anderson.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/c_j_anderson.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/C._J._Anderson_2014.JPG?width=500" alt="C.J. Anderson" width="160">
 

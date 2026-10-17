@@ -1,5 +1,11 @@
 # Jordan Poyer — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Jordan Poyer career card](../../../../league_players/jacksonville_jaguars/assets/jordan_poyer.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/jordan_poyer.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jordan_Poyer_2021_%28cropped%29.jpg?width=500" alt="Jordan Poyer" width="160">
 

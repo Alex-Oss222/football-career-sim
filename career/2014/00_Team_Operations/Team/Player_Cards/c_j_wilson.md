@@ -1,5 +1,11 @@
 # C.J. Wilson — 2014 Player Profile
 
+<!-- player-card:begin -->
+![C.J. Wilson career card](../../../../league_players/jacksonville_jaguars/assets/c_j_wilson.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/c_j_wilson.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/C.J._Wilson_August_1_2011_at_Packers_Training_Camp.jpg?width=500" alt="C.J. Wilson" width="160">
 

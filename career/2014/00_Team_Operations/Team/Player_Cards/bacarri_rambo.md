@@ -1,5 +1,11 @@
 # Bacarri Rambo — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Bacarri Rambo career card](../../../../league_players/jacksonville_jaguars/assets/bacarri_rambo.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/bacarri_rambo.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bacarri_Rambo.JPG?width=500" alt="Bacarri Rambo" width="160">
 

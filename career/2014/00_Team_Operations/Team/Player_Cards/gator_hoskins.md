@@ -1,5 +1,11 @@
 # Gator Hoskins — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Gator Hoskins career card](../../../../league_players/jacksonville_jaguars/assets/gator_hoskins.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/gator_hoskins.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Gator_Hoskins.JPG?width=500" alt="Gator Hoskins" width="160">
 

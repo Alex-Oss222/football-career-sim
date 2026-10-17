@@ -1,5 +1,11 @@
 # Marcel Jensen — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Marcel Jensen career card](../../../../league_players/jacksonville_jaguars/assets/marcel_jensen.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/marcel_jensen.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

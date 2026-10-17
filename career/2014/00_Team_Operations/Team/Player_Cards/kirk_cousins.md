@@ -1,5 +1,11 @@
 # Kirk Cousins — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Kirk Cousins career card](../../../../league_players/jacksonville_jaguars/assets/kirk_cousins.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/kirk_cousins.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cousins_2022.jpg?width=500" alt="Kirk Cousins" width="160">
 

@@ -1,5 +1,11 @@
 # Bryan Anger — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Bryan Anger career card](../../../../league_players/jacksonville_jaguars/assets/bryan_anger.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/bryan_anger.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bryan_Anger_punts_at_2008_Emerald_Bowl.JPG?width=500" alt="Bryan Anger" width="160">
 

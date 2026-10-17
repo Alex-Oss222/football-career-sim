@@ -1,5 +1,11 @@
 # Joel Bitonio — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Joel Bitonio career card](../../../../league_players/jacksonville_jaguars/assets/joel_bitonio.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/joel_bitonio.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Joel_Bitonio_%2851372881330%29_%28cropped%29.jpg?width=500" alt="Joel Bitonio" width="160">
 

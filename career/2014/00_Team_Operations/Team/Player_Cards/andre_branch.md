@@ -1,5 +1,11 @@
 # Andre Branch — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Andre Branch career card](../../../../league_players/jacksonville_jaguars/assets/andre_branch.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/andre_branch.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Andre_Branch_%28cropped%29.jpg?width=500" alt="Andre Branch" width="160">
 

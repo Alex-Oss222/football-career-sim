@@ -1,5 +1,11 @@
 # Mike Harris — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Mike Harris career card](../../../../league_players/jacksonville_jaguars/assets/mike_harris.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/mike_harris.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

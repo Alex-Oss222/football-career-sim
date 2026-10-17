@@ -1,5 +1,11 @@
 # John Parker Wilson — 2014 Player Profile
 
+<!-- player-card:begin -->
+![John Parker Wilson career card](../../../../league_players/jacksonville_jaguars/assets/john_parker_wilson.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/john_parker_wilson.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

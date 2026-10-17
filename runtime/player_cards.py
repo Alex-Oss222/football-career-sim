@@ -9,7 +9,10 @@ module after every closed game:
 - ``<club>/<player>.md``: his card image, his regular-season and playoff
   statistics by season with a career row, and his awards on record;
 - ``<club>/assets/<player>.svg``: the card (header with listed identity, then
-  latest-season and career blocks for playoffs and regular season).
+  latest-season and career blocks for playoffs and regular season);
+- on each Jacksonville player card page (2014 onward) whose player has a
+  league page, a generated block directly under its H1 with his card and a
+  link to his career statistics. Only the block is written.
 
 Every statistic is arithmetic on the committed game records (the receipts the
 statbook reads), with the repository's own field names, loaders and passer
@@ -908,8 +911,124 @@ def profile_for(p, profiles, branch):
     return None
 
 
-def render(root=ROOT):
-    """{path relative to the repository root: text} for the whole folder."""
+# ------------------------------------------------------------------ Jacksonville player card pages
+# Each Jacksonville player card page (career/<year>/... player_profiles, 2014 onward) whose player
+# has a league page carries his card directly under its H1, in a generated block. Only the block is
+# ever written: the rest of the page (the authored assessment, the photo, the yearly statistics)
+# belongs to its own owners.
+CARD_BEGIN, CARD_END = "<!-- player-card:begin -->", "<!-- player-card:end -->"
+PROFILE_FROM = 2014
+PROFILE_SKIP = ("README.md", "TEMPLATE.md")
+_PAGE_TITLE = re.compile(r"# (.+?)(?: — .*)?")
+
+
+def profile_pages(root):
+    """{path: the player name in its H1} for every player page in the player-card folders from
+    2014 through the active season."""
+    root = Path(root)
+    active = _load(root / "docs/repository_map.json")["active_season"]
+    out = {}
+    for year in range(PROFILE_FROM, active + 1):
+        folder = SeasonPaths(year, root).record("player_profiles")
+        if not folder.is_dir():
+            continue
+        for path in sorted(folder.glob("*.md")):
+            if path.name in PROFILE_SKIP:
+                continue
+            m = _PAGE_TITLE.fullmatch(path.read_text(encoding="utf-8").partition("\n")[0])
+            if m:
+                out[path] = m.group(1)
+    return out
+
+
+def page_players(pages, players, branch):
+    """{page path: league player} by the reverse link's rule (profile_for): the page name's gsis id
+    must be his; a name with no id matches only an exact record name of a player whose latest game
+    was with Jacksonville. A page no league player matches is absent."""
+    out = {}
+    by_year = {}
+    for path, name in pages.items():
+        by_year.setdefault(path.parent, {})[name] = path
+    for p in players:
+        for named in by_year.values():
+            page = profile_for(p, named, branch)
+            if page is None:
+                continue
+            if page in out:
+                raise ValueError("two league players match the player card page %s" % page)
+            out[page] = p
+    return out
+
+
+def card_block(page, p, root):
+    """The block for his page: the card image and a link to his league page, relative to the page."""
+    base = Path(root) / FOLDER / club_slug(p["team"])
+
+    def rel(target):
+        return Path(os.path.relpath(target, page.parent)).as_posix()
+    return "\n".join([CARD_BEGIN,
+                      "![%s career card](%s)" % (p["name"], rel(base / "assets" / ("%s.svg" % p["slug"]))),
+                      "",
+                      "[Career statistics](%s)" % rel(base / ("%s.md" % p["slug"])),
+                      CARD_END])
+
+
+def with_card_block(text, block):
+    """The page with its block replaced in place, inserted directly under the H1 when it has none,
+    or removed when ``block`` is None. Nothing outside the markers changes."""
+    begin = text.find(CARD_BEGIN)
+    if begin >= 0:
+        end = text.find(CARD_END, begin)
+        if end < 0 or text.count(CARD_BEGIN) != 1 or text.count(CARD_END) != 1:
+            raise ValueError("a player card page needs exactly one %s ... %s block" % (CARD_BEGIN, CARD_END))
+        end += len(CARD_END)
+        if block is not None:
+            return text[:begin] + block + text[end:]
+        if text[begin - 1:begin] == "\n" and text[end:end + 1] == "\n":
+            begin, end = begin - 1, end + 1
+        return text[:begin] + text[end:]
+    if CARD_END in text:
+        raise ValueError("a player card page has %s without %s" % (CARD_END, CARD_BEGIN))
+    if block is None:
+        return text
+    title, _, body = text.partition("\n")
+    return title + "\n\n" + block + "\n" + (body if body.startswith("\n") else "\n" + body)
+
+
+def render_pages(root, players, branch):
+    """{page path relative to the repository root: its text with the block current}."""
+    root = Path(root)
+    pages = profile_pages(root)
+    matched = page_players(pages, players, branch)
+    out = {}
+    for path in pages:
+        p = matched.get(path)
+        text = path.read_bytes().decode("utf-8")
+        out[path.relative_to(root).as_posix()] = with_card_block(text, card_block(path, p, root) if p else None)
+    return out
+
+
+def check_pages(root, pages):
+    root = Path(root)
+    errors = []
+    for rel, text in pages.items():
+        path = root / rel
+        if not path.is_file():
+            continue
+        current = path.read_bytes().decode("utf-8")
+        if current == text:
+            continue
+        if CARD_BEGIN not in current:
+            errors.append("Jacksonville player card page lacks its career card: %s" % rel)
+        elif CARD_BEGIN not in text:
+            errors.append("Jacksonville player card page has a career card with no league page: %s" % rel)
+        else:
+            errors.append("Jacksonville player card page career card stale: %s" % rel)
+    return errors
+
+
+def _build(root):
+    """(league folder files, Jacksonville player card pages), each {relative path: text}."""
     root = Path(root)
     data = card_data(root)
     if data["unmatched_awards"]:
@@ -935,13 +1054,21 @@ def render(root=ROOT):
     for team, ps in by_club.items():
         files["%s/%s/README.md" % (FOLDER, club_slug(team))] = club_page(team, ps, years, as_of)
     files["%s/README.md" % FOLDER] = index_page({t: len(ps) for t, ps in by_club.items()}, years, as_of)
-    return dict(sorted(files.items()))
+    return dict(sorted(files.items())), render_pages(root, players, branch)
 
 
-def check(root=ROOT, expected=None):
+def render(root=ROOT):
+    """{path relative to the repository root: text} for the whole folder."""
+    return _build(root)[0]
+
+
+def check(root=ROOT, expected=None, pages=None):
+    """Errors for the league folder and, when ``pages`` is given or ``expected`` is not, the career
+    card blocks on the Jacksonville player card pages. Writes nothing."""
     root = Path(root)
-    expected = render(root) if expected is None else expected
-    errors = []
+    if expected is None:
+        expected, pages = _build(root)
+    errors = check_pages(root, pages) if pages is not None else []
     for rel, text in expected.items():
         path = root / rel
         if not path.is_file():
@@ -958,10 +1085,17 @@ def check(root=ROOT, expected=None):
 
 
 def write(root=ROOT):
-    """Write the folder, removing pages of players no longer on record. Returns (written, removed)."""
+    """Write the folder, removing pages of players no longer on record, and bring each Jacksonville
+    player card page's career card block up to date. Returns (written, removed, pages changed)."""
     root = Path(root)
-    expected = render(root)
+    expected, pages = _build(root)
     written = removed = 0
+    changed = 0
+    for rel, text in pages.items():
+        path = root / rel
+        if path.read_bytes() != text.encode("utf-8"):
+            path.write_bytes(text.encode("utf-8"))
+            changed += 1
     for rel, text in expected.items():
         path = root / rel
         data = text.encode("utf-8")
@@ -977,4 +1111,4 @@ def write(root=ROOT):
             removed += 1
         elif path.is_dir() and not any(path.iterdir()):
             path.rmdir()
-    return written, removed
+    return written, removed, changed

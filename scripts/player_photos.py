@@ -73,7 +73,10 @@ def block(row, name, width=160):
 
 def place_block(text, row, name):
     """Insert or refresh the photo block directly under the card's title
-    line; remove it when the player has no photo."""
+    line, after the generated career card block when that sits there
+    (runtime/player_cards.py keeps it directly under the title); remove it
+    when the player has no photo."""
+    from runtime.player_cards import CARD_BEGIN, CARD_END
     if PHOTO_START in text:
         before, rest = text.split(PHOTO_START, 1)
         after = rest.split(PHOTO_END, 1)[1]
@@ -81,4 +84,8 @@ def place_block(text, row, name):
     if row is None:
         return text
     title, _, body = text.partition('\n')
+    body = body.lstrip('\n')
+    if body.startswith(CARD_BEGIN) and CARD_END in body:
+        card, _, body = body.partition(CARD_END)
+        title += '\n\n' + card + CARD_END
     return title + '\n\n' + block(row, name) + '\n\n' + body.lstrip('\n')

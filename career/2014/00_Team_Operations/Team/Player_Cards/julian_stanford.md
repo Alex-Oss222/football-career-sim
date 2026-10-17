@@ -1,5 +1,11 @@
 # Julian Stanford — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Julian Stanford career card](../../../../league_players/jacksonville_jaguars/assets/julian_stanford.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/julian_stanford.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

@@ -1,5 +1,11 @@
 # Josh Scobee — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Josh Scobee career card](../../../../league_players/jacksonville_jaguars/assets/josh_scobee.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/josh_scobee.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Scobee.jpg?width=500" alt="Josh Scobee" width="160">
 

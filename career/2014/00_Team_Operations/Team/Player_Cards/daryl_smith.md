@@ -1,5 +1,11 @@
 # Daryl Smith — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Daryl Smith career card](../../../../league_players/jacksonville_jaguars/assets/daryl_smith.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/daryl_smith.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Daryl_Smith.JPG?width=500" alt="Daryl Smith" width="160">
 

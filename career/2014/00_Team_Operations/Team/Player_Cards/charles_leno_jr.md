@@ -1,5 +1,11 @@
 # Charles Leno Jr. — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Charles Leno Jr. career card](../../../../league_players/jacksonville_jaguars/assets/charles_leno_jr.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/charles_leno_jr.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

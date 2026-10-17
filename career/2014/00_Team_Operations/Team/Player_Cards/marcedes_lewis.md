@@ -1,5 +1,11 @@
 # Marcedes Lewis — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Marcedes Lewis career card](../../../../league_players/jacksonville_jaguars/assets/marcedes_lewis.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/marcedes_lewis.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marcedes_Lewis_2014.jpg?width=500" alt="Marcedes Lewis" width="160">
 

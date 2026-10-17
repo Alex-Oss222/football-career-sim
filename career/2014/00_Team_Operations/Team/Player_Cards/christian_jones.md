@@ -1,5 +1,11 @@
 # Christian Jones — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Christian Jones career card](../../../../league_players/jacksonville_jaguars/assets/christian_jones.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/christian_jones.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Christian_Jones_bears.jpg?width=500" alt="Christian Jones" width="160">
 

@@ -1,5 +1,11 @@
 # Dwight Lowery — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Dwight Lowery career card](../../../../league_players/jacksonville_jaguars/assets/dwight_lowery.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/dwight_lowery.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dwight_Lowery.jpg?width=500" alt="Dwight Lowery" width="160">
 

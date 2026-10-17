@@ -1,5 +1,11 @@
 # Aaron Donald — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Aaron Donald career card](../../../../league_players/jacksonville_jaguars/assets/aaron_donald.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/aaron_donald.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Donald_2014_combine.jpg?width=500" alt="Aaron Donald" width="160">
 

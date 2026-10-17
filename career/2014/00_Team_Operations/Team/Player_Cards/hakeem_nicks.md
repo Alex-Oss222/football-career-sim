@@ -1,5 +1,11 @@
 # Hakeem Nicks — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Hakeem Nicks career card](../../../../league_players/jacksonville_jaguars/assets/hakeem_nicks.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/hakeem_nicks.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hakeem_Nicks.JPG?width=500" alt="Hakeem Nicks" width="160">
 

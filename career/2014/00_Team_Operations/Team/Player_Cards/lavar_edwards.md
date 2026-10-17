@@ -1,5 +1,11 @@
 # Lavar Edwards — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Lavar Edwards career card](../../../../league_players/jacksonville_jaguars/assets/lavar_edwards.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/lavar_edwards.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

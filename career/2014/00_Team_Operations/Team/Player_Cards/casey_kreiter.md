@@ -1,5 +1,11 @@
 # Casey Kreiter — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Casey Kreiter career card](../../../../league_players/jacksonville_jaguars/assets/casey_kreiter.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/casey_kreiter.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

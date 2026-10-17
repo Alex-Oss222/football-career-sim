@@ -1,5 +1,11 @@
 # Davante Adams — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Davante Adams career card](../../../../league_players/jacksonville_jaguars/assets/davante_adams.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/davante_adams.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Davante_Adams_Cropped.jpg?width=500" alt="Davante Adams" width="160">
 

@@ -1,5 +1,11 @@
 # Chad Henne — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Chad Henne career card](../../../../league_players/jacksonville_jaguars/assets/chad_henne.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/chad_henne.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chad_Henne_2014_%28cropped%29.jpg?width=500" alt="Chad Henne" width="160">
 

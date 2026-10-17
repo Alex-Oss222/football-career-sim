@@ -1,5 +1,11 @@
 # Telvin Smith — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Telvin Smith career card](../../../../league_players/jacksonville_jaguars/assets/telvin_smith.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/telvin_smith.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Telvin_Smith.png?width=500" alt="Telvin Smith" width="160">
 

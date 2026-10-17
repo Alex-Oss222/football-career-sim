@@ -1,5 +1,11 @@
 # Eugene Monroe — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Eugene Monroe career card](../../../../league_players/jacksonville_jaguars/assets/eugene_monroe.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/eugene_monroe.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/EugeneJ11.jpg?width=500" alt="Eugene Monroe" width="160">
 

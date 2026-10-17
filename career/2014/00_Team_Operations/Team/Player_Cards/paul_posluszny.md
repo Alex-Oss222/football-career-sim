@@ -1,5 +1,11 @@
 # Paul Posluszny — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Paul Posluszny career card](../../../../league_players/jacksonville_jaguars/assets/paul_posluszny.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/paul_posluszny.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Posluszny_2014_Pro_Bowl.jpg?width=500" alt="Paul Posluszny" width="160">
 

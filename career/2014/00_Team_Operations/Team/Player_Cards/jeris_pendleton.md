@@ -1,5 +1,11 @@
 # Jeris Pendleton — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Jeris Pendleton career card](../../../../league_players/jacksonville_jaguars/assets/jeris_pendleton.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/jeris_pendleton.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

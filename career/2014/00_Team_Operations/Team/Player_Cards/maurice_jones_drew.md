@@ -1,5 +1,11 @@
 # Maurice Jones-Drew — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Maurice Jones-Drew career card](../../../../league_players/jacksonville_jaguars/assets/maurice_jones_drew.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/maurice_jones_drew.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Maurice_Jones-Drew_ESPNWeekend2010-066.jpg?width=500" alt="Maurice Jones-Drew" width="160">
 

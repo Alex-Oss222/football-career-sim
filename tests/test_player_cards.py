@@ -3,7 +3,9 @@
 The committed career/league_players folder must equal a fresh render of the
 committed game records; every SVG is a static image GitHub can show; the
 numbers on a card and a page equal the statbook's totals; a field the records
-do not hold reads N/A; and every link resolves.
+do not hold reads N/A; and every link resolves. Each Jacksonville player card
+page whose player has a league page shows his card in a generated block
+directly under its H1, and nothing else on the page is written.
 """
 import io
 import json
@@ -40,11 +42,16 @@ def data():
     return _DATA
 
 
-def rendered():
+def built():
+    """(league folder files, Jacksonville player card pages) for the committed state."""
     global _RENDER
     if _RENDER is None:
-        _RENDER = player_cards.render(ROOT)
+        _RENDER = player_cards._build(ROOT)
     return _RENDER
+
+
+def rendered():
+    return built()[0]
 
 
 def book(year, kind="regular"):
@@ -107,7 +114,7 @@ def card_path(p):
 
 class CommittedFolderTests(unittest.TestCase):
     def test_committed_folder_is_current(self):
-        self.assertEqual(player_cards.check(ROOT, rendered()), [])
+        self.assertEqual(player_cards.check(ROOT, *built()), [])
 
     def test_script_check_passes_on_the_committed_state(self):
         with redirect_stdout(io.StringIO()) as out:
@@ -421,6 +428,138 @@ class LinkTests(unittest.TestCase):
         text = (FOLDER / "jacksonville_jaguars" / "kirk_cousins.md").read_text(encoding="utf-8")
         target = SeasonPaths(2014, ROOT).record("player_profiles") / "kirk_cousins.md"
         self.assertIn("[Jacksonville player card](%s)" % os.path.relpath(target, FOLDER / "jacksonville_jaguars"), text)
+
+
+PROFILES = SeasonPaths(2014, ROOT).record("player_profiles")
+
+
+def page_block(text):
+    """The text from the begin marker through the end marker, or None."""
+    if player_cards.CARD_BEGIN not in text:
+        return None
+    return player_cards.CARD_BEGIN + text.split(player_cards.CARD_BEGIN, 1)[1].split(player_cards.CARD_END, 1)[0] \
+        + player_cards.CARD_END
+
+
+def without_block(text):
+    """The page as its own owners wrote it: the block and its framing blank line removed."""
+    return player_cards.with_card_block(text, None)
+
+
+class JacksonvillePageTests(unittest.TestCase):
+    def matched(self):
+        pages = player_cards.profile_pages(ROOT)
+        return pages, player_cards.page_players(pages, data()["players"], player_cards.Identity(ROOT).branch)
+
+    def test_kirk_cousins_page_shows_his_current_card_under_the_title(self):
+        page = PROFILES / "kirk_cousins.md"
+        text = page.read_text(encoding="utf-8")
+        lines = text.splitlines()
+        self.assertEqual(lines[0], "# Kirk Cousins — 2014 Player Profile")
+        self.assertEqual(lines[1], "")
+        self.assertEqual(lines[2], player_cards.CARD_BEGIN)
+        block = page_block(text)
+        self.assertEqual(text.count(player_cards.CARD_BEGIN), 1)
+        # Matched by gsis id: his league page is the Jaguars quarterback's.
+        branch = player_cards.Identity(ROOT).branch
+        cousins = player("Kirk Cousins", "Jacksonville Jaguars")
+        self.assertEqual(cousins["gsis"], branch["Kirk Cousins"])
+        self.assertIs(self.matched()[1][page], cousins)
+        self.assertEqual(block, player_cards.card_block(page, cousins, ROOT))
+        self.assertEqual(built()[1][page.relative_to(ROOT).as_posix()], text)
+        image = re.search(r"!\[Kirk Cousins career card\]\(([^)\s]+)\)", block).group(1)
+        stats = re.search(r"\[Career statistics\]\(([^)\s]+)\)", block).group(1)
+        self.assertEqual(image, "../../../../league_players/jacksonville_jaguars/assets/kirk_cousins.svg")
+        self.assertEqual((page.parent / image).resolve(), (FOLDER / "jacksonville_jaguars/assets/kirk_cousins.svg").resolve())
+        self.assertTrue((page.parent / image).resolve().is_file())
+        self.assertEqual((page.parent / stats).resolve(), (FOLDER / "jacksonville_jaguars/kirk_cousins.md").resolve())
+        self.assertTrue((page.parent / stats).resolve().is_file())
+        # The photo follows the card, and the photo refresh keeps that order.
+        from scripts.player_photos import Photos, place_block
+        self.assertEqual(place_block(text, Photos(ROOT).lookup("Kirk Cousins"), "Kirk Cousins"), text)
+        self.assertLess(text.index(player_cards.CARD_END), text.index("<!-- photo -->"))
+
+    def test_every_page_has_a_block_exactly_when_he_has_a_league_page(self):
+        pages, matched = self.matched()
+        self.assertEqual(set(pages), {p for p in PROFILES.glob("*.md") if p.name not in ("README.md", "TEMPLATE.md")})
+        ids = {p["gsis"] for p in data()["players"] if p["gsis"]}
+        jaguar_names = {n for p in data()["players"] if p["team"] == player_cards.JAX for n in p["record_names"]}
+        branch = player_cards.Identity(ROOT).branch
+        for path, name in pages.items():
+            text = path.read_text(encoding="utf-8")
+            if path in matched:
+                p = matched[path]
+                self.assertEqual(page_block(text), player_cards.card_block(path, p, ROOT), name)
+                self.assertTrue(text.startswith(text.partition("\n")[0] + "\n\n" + player_cards.CARD_BEGIN), name)
+                if branch.get(name) and p["gsis"]:
+                    self.assertEqual(branch[name], p["gsis"], name)
+                for target in re.findall(r"\]\(([^)\s]+)\)", page_block(text)):
+                    self.assertTrue((path.parent / target).resolve().is_file(), "%s -> %s" % (name, target))
+            else:
+                # No league player is his: none carries his gsis id, or, when the page name has
+                # none, none whose latest game was with Jacksonville carries the name.
+                self.assertNotIn("player-card:", text, name)
+                self.assertNotIn(branch[name], ids, name) if branch.get(name) else self.assertNotIn(
+                    name, jaguar_names, name)
+        self.assertGreater(len(matched), 40)
+
+    def test_rerun_is_idempotent_and_replaces_only_the_block(self):
+        page = PROFILES / "kirk_cousins.md"
+        text = page.read_text(encoding="utf-8")
+        block = page_block(text)
+        self.assertEqual(player_cards.with_card_block(text, block), text)
+        stale = text.replace("kirk_cousins.svg", "someone_else.svg")
+        self.assertNotEqual(stale, text)
+        self.assertEqual(player_cards.with_card_block(stale, block), text)
+        original = without_block(text)
+        self.assertNotIn("player-card:", original)
+        self.assertEqual(original, text.replace("\n" + block + "\n", "", 1))
+        self.assertEqual(player_cards.with_card_block(original, block), text)
+        self.assertEqual(player_cards.with_card_block(player_cards.with_card_block(original, block), block), text)
+        # Content outside the markers is byte-identical, wherever the block sits.
+        edited = text.replace("**Season:** 2014", "**Season:** 2014 ", 1)
+        replaced = player_cards.with_card_block(edited.replace(block, "%s\nold\n%s" % (
+            player_cards.CARD_BEGIN, player_cards.CARD_END)), block)
+        self.assertEqual(replaced, edited)
+        with self.assertRaises(ValueError):
+            player_cards.with_card_block(text + "\n" + player_cards.CARD_BEGIN + "\n", block)
+        # The committed pages already equal a fresh render: a rerun writes nothing.
+        for rel, expected in built()[1].items():
+            self.assertEqual((ROOT / rel).read_bytes(), expected.encode("utf-8"), rel)
+
+    def test_check_flags_missing_stale_and_unmatched_blocks_and_writes_nothing(self):
+        cousins = player("Kirk Cousins", "Jacksonville Jaguars")
+        branch = player_cards.Identity(ROOT).branch
+        with tempfile.TemporaryDirectory() as tmp:
+            copy = Path(tmp)
+            (copy / "docs").mkdir()
+            shutil.copy(ROOT / "docs/repository_map.json", copy / "docs/repository_map.json")
+            folder = SeasonPaths(2014, copy).record("player_profiles")
+            folder.mkdir(parents=True)
+            committed = (PROFILES / "kirk_cousins.md").read_text(encoding="utf-8")
+            nobody = "# Pat Nobody — 2014 Player Profile\n\n**Team:** Jacksonville Jaguars  \n"
+            (folder / "kirk_cousins.md").write_text(without_block(committed), encoding="utf-8")
+            (folder / "pat_nobody.md").write_text(nobody, encoding="utf-8")
+            (folder / "pat_nobody_stale.md").write_text(player_cards.with_card_block(
+                nobody, player_cards.card_block(folder / "pat_nobody_stale.md", cousins, copy)), encoding="utf-8")
+            (folder / "README.md").write_text("# 2014 player profiles\n", encoding="utf-8")
+            before = {p.name: p.read_bytes() for p in folder.iterdir()}
+            pages = player_cards.render_pages(copy, data()["players"], branch)
+            rel = folder.relative_to(copy).as_posix()
+            self.assertEqual(sorted(pages), ["%s/%s" % (rel, n) for n in ("kirk_cousins.md", "pat_nobody.md",
+                                                                        "pat_nobody_stale.md")])
+            self.assertEqual(pages["%s/kirk_cousins.md" % rel], committed)
+            self.assertEqual(pages["%s/pat_nobody.md" % rel], nobody)       # no league page, no block
+            self.assertEqual(pages["%s/pat_nobody_stale.md" % rel], nobody)  # a stale block is removed
+            errors = player_cards.check(copy, {}, pages)
+            self.assertEqual(errors, [
+                "Jacksonville player card page lacks its career card: %s/kirk_cousins.md" % rel,
+                "Jacksonville player card page has a career card with no league page: %s/pat_nobody_stale.md" % rel])
+            (folder / "kirk_cousins.md").write_text(committed.replace("kirk_cousins.svg", "x.svg"), encoding="utf-8")
+            before["kirk_cousins.md"] = (folder / "kirk_cousins.md").read_bytes()
+            self.assertIn("Jacksonville player card page career card stale: %s/kirk_cousins.md" % rel,
+                          player_cards.check(copy, {}, player_cards.render_pages(copy, data()["players"], branch)))
+            self.assertEqual({p.name: p.read_bytes() for p in folder.iterdir()}, before)
 
 
 @unittest.skipUnless(os.environ.get("LISTED_IDENTITY_SOURCES"), "pinned nflverse sources not present")

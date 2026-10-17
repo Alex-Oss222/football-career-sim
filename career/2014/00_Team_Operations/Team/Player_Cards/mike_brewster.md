@@ -1,5 +1,11 @@
 # Mike Brewster — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Mike Brewster career card](../../../../league_players/jacksonville_jaguars/assets/mike_brewster.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/mike_brewster.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

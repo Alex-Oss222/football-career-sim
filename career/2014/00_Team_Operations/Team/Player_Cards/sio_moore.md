@@ -1,5 +1,11 @@
 # Sio Moore — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Sio Moore career card](../../../../league_players/jacksonville_jaguars/assets/sio_moore.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/sio_moore.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sio_Moore.JPG?width=500" alt="Sio Moore" width="160">
 

@@ -1,5 +1,11 @@
 # A.J. Bouye — 2014 Player Profile
 
+<!-- player-card:begin -->
+![A.J. Bouye career card](../../../../league_players/jacksonville_jaguars/assets/a_j_bouye.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/a_j_bouye.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/A._J._Bouye.JPG?width=500" alt="A.J. Bouye" width="160">
 

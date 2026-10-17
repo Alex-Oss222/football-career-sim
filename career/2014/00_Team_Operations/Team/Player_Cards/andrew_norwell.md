@@ -1,5 +1,11 @@
 # Andrew Norwell — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Andrew Norwell career card](../../../../league_players/jacksonville_jaguars/assets/andrew_norwell.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/andrew_norwell.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_Norwell_2022.jpg?width=500" alt="Andrew Norwell" width="160">
 

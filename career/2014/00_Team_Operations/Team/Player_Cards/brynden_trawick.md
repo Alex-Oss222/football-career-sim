@@ -1,5 +1,11 @@
 # Brynden Trawick — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Brynden Trawick career card](../../../../league_players/jacksonville_jaguars/assets/brynden_trawick.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/brynden_trawick.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Brynden_Trawick.JPG?width=500" alt="Brynden Trawick" width="160">
 

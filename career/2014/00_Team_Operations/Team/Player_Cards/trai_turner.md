@@ -1,5 +1,11 @@
 # Trai Turner — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Trai Turner career card](../../../../league_players/jacksonville_jaguars/assets/trai_turner.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/trai_turner.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Trai_Turner.jpg?width=500" alt="Trai Turner" width="160">
 

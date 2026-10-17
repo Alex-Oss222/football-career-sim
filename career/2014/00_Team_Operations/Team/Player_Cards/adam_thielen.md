@@ -1,5 +1,11 @@
 # Adam Thielen — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Adam Thielen career card](../../../../league_players/jacksonville_jaguars/assets/adam_thielen.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/adam_thielen.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Adam_Thielen_2017.jpg?width=500" alt="Adam Thielen" width="160">
 

@@ -1,5 +1,11 @@
 # Andrew Hawkins — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Andrew Hawkins career card](../../../../league_players/jacksonville_jaguars/assets/andrew_hawkins.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/andrew_hawkins.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_hawkins_bengals.jpg?width=500" alt="Andrew Hawkins" width="160">
 

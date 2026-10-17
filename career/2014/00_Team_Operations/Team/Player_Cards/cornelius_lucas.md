@@ -1,5 +1,11 @@
 # Cornelius Lucas — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Cornelius Lucas career card](../../../../league_players/jacksonville_jaguars/assets/cornelius_lucas.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/cornelius_lucas.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cornelius_Lucas_WFT_2021_training_camp_%28cropped%29.jpg?width=500" alt="Cornelius Lucas" width="160">
 

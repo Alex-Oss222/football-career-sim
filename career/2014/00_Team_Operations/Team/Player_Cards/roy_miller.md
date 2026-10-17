@@ -1,5 +1,11 @@
 # Roy Miller — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Roy Miller career card](../../../../league_players/jacksonville_jaguars/assets/roy_miller.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/roy_miller.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Roy_Miller_%28American_football%29.JPG?width=500" alt="Roy Miller" width="160">
 

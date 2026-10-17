@@ -1,5 +1,11 @@
 # Daniel Te'o-Nesheim — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Daniel Te'o-Nesheim career card](../../../../league_players/jacksonville_jaguars/assets/daniel_te_o_nesheim.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/daniel_te_o_nesheim.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

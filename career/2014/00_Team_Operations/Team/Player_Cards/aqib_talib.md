@@ -1,5 +1,11 @@
 # Aqib Talib — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Aqib Talib career card](../../../../league_players/jacksonville_jaguars/assets/aqib_talib.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/aqib_talib.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aqib_Talib_2014.JPG?width=500" alt="Aqib Talib" width="160">
 
