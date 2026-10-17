@@ -1,7 +1,8 @@
 """
 Build free defensive datasets for 2006-2013 from nflverse releases.
 
-Usage: python3 -I build_defense_csvs.py RAW_DIR OUT_DIR
+Usage: python3 -I scripts/research/build_defense_2006_2013.py RAW_DIR OUT_DIR
+(writes the files committed under library/data/defense_2006_2013/; record: library/2006_2013_defense_data.md)
 
 RAW_DIR must contain (from github.com/nflverse/nflverse-data releases):
   pbp_{2005..2013}.parquet          play_by_play_{year}.parquet
