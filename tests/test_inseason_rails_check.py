@@ -212,6 +212,112 @@ class CheckTests(unittest.TestCase):
                            (("S2", "--through", "2014-09-28", "--check"), 1)):
             self.assertEqual(self.checked(*argv)[0], want, argv)
 
+    def edit_shard(self, edit, repin=True):
+        """Edit week_05.json's rows; with `repin`, record the edited shard's
+        sha256 and row count in the manifest too, so only the comparison
+        under test can catch the edit."""
+        shard = self.out / "week_05.json"
+        data = json.loads(shard.read_text(encoding="utf-8"))
+        edit(data["rows"])
+        shard.write_text(builder.dumps(data), encoding="utf-8")
+        if repin:
+            path = self.out / "manifest.json"
+            manifest = json.loads(path.read_text(encoding="utf-8"))
+            manifest["shards"][0].update(sha256=builder.sha256(shard), rows=len(data["rows"]))
+            path.write_text(builder.dumps(manifest), encoding="utf-8")
+
+    def test_a_repeated_row_id_is_stale_even_with_the_genuine_row_after_it(self):
+        good = {"id": "R14-0005", "real_date": "2014-10-01"}
+        self.assertIn("R14-0005 is committed 2 times",
+                      builder._field_diffs([dict(good, real_date="2014-01-01"), good], [good]))
+        self.write_record()
+
+        def duplicate(rows):
+            at = next(i for i, r in enumerate(rows) if r["id"] == "R14-0005")
+            rows.insert(at, dict(rows[at], real_date="2014-01-01", counterparty="ZZZ"))
+        self.edit_shard(duplicate)
+        code, out = self.checked("S2", "--through", "2014-10-04", "--check")
+        self.assertEqual(code, 1, out)
+        self.assertIn("R14-0005 is committed 2 times", out)
+        self.assertIn("row ids do not run R14-0001 upward without a gap or repeat", out)
+        self.assertNotIn("sha256 pin", out)
+
+    def test_another_source_never_passes_after_the_as_of_date(self):
+        self.write_record()
+        self.master = date(2014, 10, 11)
+        # The first build's source holds no row the record lacks, yet it
+        # cannot vouch for the extension.
+        code, out = self.checked("S1", "--through", "2014-10-05", "--check")
+        self.assertEqual(code, 1, out)
+        self.assertIn("NOT VERIFIED 6 rows through 2014-10-05", out)
+        self.assertNotIn("CURRENT", out)
+        # A source with the pinned rows under another hash, against an edited
+        # extension row whose manifest pins were updated: not verified, and
+        # only the pinned source finds the edit.
+        self.edit_shard(lambda rows: rows[4].update(real_date="2014-09-30"))
+        with mock.patch.dict(SOURCES, {"S5": ("h5", OCTOBER)}):
+            for argv in (("S5", "--through", "2014-10-11", "--check"),
+                         ("S5", "--through", "2014-10-11", "--check", "--extend")):
+                code, out = self.checked(*argv)
+                self.assertEqual(code, 1, out)
+                self.assertIn("NOT VERIFIED", out)
+                self.assertIn("not re-derived: this source is not the one it pins (research/inseason_moves.csv)", out)
+            # At the as-of date the same source is stale.
+            code, out = self.checked("S5", "--through", "2014-10-04", "--check")
+            self.assertEqual(code, 1, out)
+            self.assertIn("inputs differ from the last build's pins", out)
+        code, out = self.checked("S2", "--through", "2014-10-11", "--check")
+        self.assertEqual(code, 1, out)
+        self.assertIn('R14-0005 real_date: committed "2014-09-30", re-derived "2014-10-01"', out)
+        # A later source with rows to append is stale and still not verified.
+        code, out = self.checked("S3", "--through", "2014-10-11", "--check")
+        self.assertEqual(code, 1, out)
+        self.assertIn("1 rows through 2014-10-11 are not committed", out)
+        self.assertIn("not re-derived: this source is not the one it pins", out)
+
+    def test_check_extend_on_a_first_build_record_compares_every_file(self):
+        self.write_record(extended=False)
+        base = self.out / "base.json"
+        data = json.loads(base.read_text(encoding="utf-8"))
+        data["corrections"].append({"action": "add", "club": "AAA", "uid": "x"})
+        base.write_text(builder.dumps(data), encoding="utf-8")
+        for argv in (("S1", "--through", "2014-09-28", "--check"),
+                     ("S1", "--through", "2014-09-28", "--check", "--extend")):
+            code, out = self.checked(*argv)
+            self.assertEqual(code, 1, argv)
+            self.assertIn("STALE: base.json", out)
+
+    def test_the_bookkeeping_of_an_extended_record_is_checked(self):
+        self.write_record()
+        clean = snapshot(self.out)
+
+        def tampered(name, change):
+            path = self.out / name
+            data = json.loads(path.read_text(encoding="utf-8"))
+            change(data)
+            path.write_text(builder.dumps(data), encoding="utf-8")
+            code, out = self.checked("S2", "--through", "2014-10-04", "--check")
+            for n, b in clean.items():
+                (self.out / n).write_bytes(b)
+            self.assertEqual(code, 1, name)
+            return out
+        out = tampered("base.json", lambda b: b["corrections"].append({"action": "add", "club": "AAA", "uid": "x"}))
+        self.assertIn("base.json differs from its manifest sha256 pin", out)
+        # A first-build row is not re-derived from the October source; its
+        # shard's pin guards it.
+        out = tampered("week_05.json", lambda s: s["rows"][0].update(real_date="2014-09-01", reason="edited"))
+        self.assertIn("week_05.json differs from its manifest sha256 pin", out)
+        self.assertNotIn("R14-0001", out)
+        out = tampered("manifest.json", lambda m: m["shards"][0].update(sha256="0" * 64, rows=99))
+        self.assertIn("week_05.json differs from its manifest sha256 pin", out)
+        self.assertIn("week_05.json holds 6 rows, the manifest records 99", out)
+        out = tampered("manifest.json", lambda m: m.update(as_of="2014-10-03"))
+        self.assertIn("as-of date 2014-10-03 is not the last build's date 2014-10-04", out)
+        out = tampered("sources.json", lambda p: p.update(nfl_wire={}))
+        self.assertIn("sources.json lacks the nfl_wire page %s" % (WIRE % 10), out)
+        self.assertEqual(snapshot(self.out), clean)
+        self.assertEqual(self.checked("S2", "--through", "2014-10-04", "--check")[0], 0)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -339,6 +339,19 @@ class NonGameRecordTests(unittest.TestCase):
                          ["result record %s is absent from the journal listing (incomplete listing)" % self.FUTURES])
         self.assertEqual(self.check([self.GAME, self.FUTURES])["status"], "pass")
 
+    def test_a_game_event_is_recorded_only_by_its_receipt(self):
+        # A results file anywhere in the career folder naming a game, regular
+        # season, postseason or preseason, never stands in for its receipt.
+        games = ["2014-week05-c-at-d", "2014-week18-e-at-f-g2", "2014-preseason-01-x-at-y"]
+        self.record("05_Regular_Season/Games/Week_05/rehearsal_results.json",
+                    {"games": [{"event_id": g, "result_ref": "deadbeef"} for g in games]})
+        journal = self.check([self.GAME] + games)
+        self.assertEqual(journal["status"], "fail")
+        self.assertEqual(journal["findings"], ["journal event %s has no public receipt" % g for g in sorted(games)])
+        self.assertIn("1 game receipts and 0 result records", journal["note"])
+        # Nor is such a record one the listing must hold.
+        self.assertEqual(self.check([self.GAME])["status"], "pass")
+
 
 if __name__ == "__main__":
     unittest.main()

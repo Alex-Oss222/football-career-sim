@@ -16,9 +16,11 @@ repository must show:
    futures contracts, staff searches, the coaching carousel), a committed
    result record: an object carrying a nonempty ``event_id`` and
    ``result_ref`` in a ``*results*.json`` file of the season's career folder
-   outside the game receipts. An unreadable cache, listing or result file is
-   a finding; every committed receipt and result record must also appear in
-   the listing, so a truncated listing cannot clear the check;
+   outside the game receipts. A game (an id of the form ``YEAR-weekNN-`` or
+   ``YEAR-preseason-NN-``) is recorded only by its receipt. An unreadable
+   cache, listing or result file is a finding; every committed receipt and
+   result record must also appear in the listing, so a truncated listing
+   cannot clear the check;
 3. the first 2014.6 week's inputs not frozen: no package
    (``.sim_cache/2014/week_NN_inputs.json``), no ``call_sheet.json`` and no
    ``conditions.json`` in that week's folder, because the 2014.6 sheet format
@@ -58,6 +60,10 @@ sys.path.insert(0, str(ROOT))
 from runtime.seasons import SeasonPaths  # noqa: E402
 
 PASS, FAIL, UNVERIFIED = "pass", "fail", "unverified"
+# The event ids of games (runtime.week_inputs.event_id, the postseason's weeks
+# included, and runtime.preseason): a result record never stands in for a
+# game's receipt.
+GAME_EVENT = re.compile(r"^\d{4}-(week\d{2}|preseason-\d{2})-")
 
 
 def _paused_records(paths):
@@ -102,10 +108,10 @@ def receipted_events(folders):
 
 
 def _record_ids(node):
-    """Event ids of the result records in one parsed results file."""
+    """Event ids of the non-game result records in one parsed results file."""
     if isinstance(node, dict):
         event_id, ref = node.get("event_id"), node.get("result_ref")
-        if isinstance(event_id, str) and event_id and isinstance(ref, str) and ref:
+        if isinstance(event_id, str) and event_id and isinstance(ref, str) and ref and not GAME_EVENT.match(event_id):
             yield event_id
         for value in node.values():
             yield from _record_ids(value)
