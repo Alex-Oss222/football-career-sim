@@ -185,8 +185,9 @@ def gsis_errors(games):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("inputs", type=Path)
-    parser.add_argument("--season", type=int, default=2013,
-                        help="Season whose branch roster defines Jacksonville control (default 2013).")
+    parser.add_argument("--season", type=int, default=None,
+                        help="Season whose branch roster defines Jacksonville control (default: the "
+                             "package's own season, else 2013).")
     parser.add_argument(
         "--roster",
         type=Path,
@@ -202,7 +203,22 @@ def main():
     args = parser.parse_args()
 
     data = json.loads(args.inputs.read_text(encoding="utf-8"))
-    controlled = controlled_players_from_roster(args.roster or SeasonPaths(args.season, ROOT).roster)
+    # A package names its season; without --season its own season's roster
+    # defines control (the documented command passes none), and a stated
+    # --season that differs from the package's is refused. A package with no
+    # season key keeps the 2013 default.
+    packaged = data.get("season") if isinstance(data, dict) else None
+    if packaged is not None and (isinstance(packaged, bool) or not str(packaged).strip().isdigit()):
+        print("WEEK_INPUT_EXCLUSIVITY: BLOCKED")
+        print("- the package's season %r is not a season year" % (packaged,))
+        return 1
+    packaged = None if packaged is None else int(packaged)
+    season = args.season if args.season is not None else (packaged or 2013)
+    if packaged is not None and packaged != season:
+        print("WEEK_INPUT_EXCLUSIVITY: BLOCKED")
+        print("- the package is for season %s, not --season %s" % (packaged, season))
+        return 1
+    controlled = controlled_players_from_roster(args.roster or SeasonPaths(season, ROOT).roster)
     errors = check_inputs(
         data, controlled, args.protagonist, expected_games=args.expected_games
     )

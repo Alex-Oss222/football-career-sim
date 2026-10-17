@@ -284,5 +284,61 @@ class ReleasePreconditionTests(unittest.TestCase):
                 self.assertEqual(len(result["checks"][2]["findings"]), 1)
 
 
+
+class NonGameRecordTests(unittest.TestCase):
+    """Check 2 counts a non-game event (league awards, the league year,
+    futures, staff searches, the carousel) as publicly recorded by its
+    committed result record, in both directions of the listing comparison."""
+
+    GAME = "2014-week05-a-at-b"
+    AWARD = "2014-award-week01-afc-offense-v1-2014"
+    FUTURES = "2014-futures-contracts-v1"
+
+    def setUp(self):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        self.root, self.paths = season_root(tmp.name)
+        (self.paths.receipts / "r.json").write_text(json.dumps({"event_id": self.GAME}))
+        self.listing = Path(tmp.name) / "journal.json"
+
+    def record(self, relative, data):
+        path = self.paths.career / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(data))
+
+    def check(self, events):
+        self.listing.write_text(json.dumps({"events": [{"event_id": e, "closed": True} for e in events]}))
+        return preconditions.report(self.root, journal=self.listing, release=True)["checks"][1]
+
+    def test_a_non_game_event_with_a_committed_result_record_passes(self):
+        self.record("01_Early_Offseason/futures_results.json",
+                    {"procedure": "futures", "event_id": self.FUTURES, "result_ref": "c9e3", "ledger_entry": 1})
+        self.record("05_Regular_Season/Awards/results.json",
+                    {"week-1": {"awards": {"AFC-offense": {"event_id": self.AWARD, "result_ref": "360e"}}}})
+        journal = self.check([self.GAME, self.AWARD, self.FUTURES])
+        self.assertEqual((journal["status"], journal["findings"]), ("pass", []), journal)
+        self.assertIn("3 2014 events with 1 game receipts and 2 result records", journal["note"])
+
+    def test_a_journal_event_with_no_receipt_and_no_record_fails(self):
+        # An event id without a result reference is not a result record.
+        self.record("01_Early_Offseason/staff_changes/carousel_results.json",
+                    {"event_id": "2014-coaching-carousel-v1", "result_ref": ""})
+        journal = self.check([self.GAME, "2014-coaching-carousel-v1"])
+        self.assertEqual(journal["status"], "fail")
+        self.assertEqual(journal["findings"], ["journal event 2014-coaching-carousel-v1 has no public receipt"])
+        (self.paths.career / "01_Early_Offseason/league_year_results.json").write_text("{not json")
+        journal = self.check([self.GAME])
+        self.assertEqual(journal["status"], "fail")
+        self.assertIn("unreadable result record", journal["findings"][0])
+
+    def test_a_committed_result_record_missing_from_the_listing_fails(self):
+        self.record("01_Early_Offseason/futures_results.json", {"event_id": self.FUTURES, "result_ref": "c9e3"})
+        journal = self.check([self.GAME])
+        self.assertEqual(journal["status"], "fail")
+        self.assertEqual(journal["findings"],
+                         ["result record %s is absent from the journal listing (incomplete listing)" % self.FUTURES])
+        self.assertEqual(self.check([self.GAME, self.FUTURES])["status"], "pass")
+
+
 if __name__ == "__main__":
     unittest.main()

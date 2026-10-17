@@ -18,10 +18,17 @@ into SOURCE_DIR first (a transient workspace, never committed):
 
 Usage:
   python scripts/research/build_2014_inseason_rails.py SOURCE_DIR --through YYYY-MM-DD
+  python scripts/research/build_2014_inseason_rails.py SOURCE_DIR --through YYYY-MM-DD --extend
   python scripts/research/build_2014_inseason_rails.py SOURCE_DIR --through YYYY-MM-DD --check
 
-Every input's sha256 is recorded in the manifest; `--check` rebuilds and
-compares without writing, and fails when an input hash differs from its pin.
+Every input's sha256 is recorded in the manifest. `--check` never writes.
+On a record holding only its first build it rebuilds and compares every
+file, and fails when an input hash differs from its pin. On an extended
+record (and with `--extend` on any record) it re-derives the last build's
+rows from the source that build pins and compares them field by field with
+the committed rows; that build's no-op labels and page hashes are not
+re-derived. It then fails on any candidate row through `--through` the
+record lacks, and, at the as-of date, on a source other than the pinned one.
 
 Gate and append-only rules (library/2014_inseason_rails.md):
 - `--through` may not be later than Document 5's master date, and no row
@@ -1291,6 +1298,96 @@ def _key(row):
     return ("full", row["gate_date"], row["club"], row["kind"], row.get("uid") or row.get("player"))
 
 
+def _unmatched(rows, prior, ident):
+    """The candidate rows the committed rows `prior` do not already hold,
+    matched by identity key (`_key`) with the identity assignments of
+    `prior` frozen: --extend's matching, which --check repeats."""
+    for r in prior:  # the identity assignments already committed stay frozen
+        if r.get("uid") and r.get("player_id"):
+            ident.assigned[r["uid"]] = r["player_id"]
+    left = collections.Counter(_key(r) for r in prior)
+    new = []
+    for r in rows:
+        probe = finish(dict(r, id="R14-0000", effective_from_week=0), ident)
+        key = _key(probe)
+        if left[key]:
+            left[key] -= 1
+            continue
+        new.append(r)
+    return new
+
+
+def _num(row_id):
+    return int(row_id.split("-")[1])
+
+
+def _field_diffs(committed, derived):
+    """Field-by-field differences between committed and re-derived rows."""
+    have, want = {r["id"]: r for r in committed}, {r["id"]: r for r in derived}
+
+    def show(r, k):
+        return json.dumps(r[k], ensure_ascii=False) if k in r else "absent"
+    out = ["%s is committed but not re-derived" % i for i in have if i not in want]
+    out += ["%s is re-derived but not committed" % i for i in want if i not in have]
+    for i in (i for i in want if i in have):
+        out += ["%s %s: committed %s, re-derived %s" % (i, k, show(have[i], k), show(want[i], k))
+                for k in sorted(set(have[i]) | set(want[i])) if show(have[i], k) != show(want[i], k)]
+    return out
+
+
+def check_last_build(args, manifest, src, ident, control, shards, existing):
+    """`--check` on an extended record, or `--check --extend`; writes
+    nothing. When this source is the one the last build pins, that build is
+    re-derived as --extend made it (the rows numbered before it frozen, its
+    candidates through its own date matched by identity key, the rest
+    numbered from its first id into its shard's week) and compared field by
+    field with its committed rows; its no-op labels and page hashes are not
+    re-derived. Then no candidate row through --through may be missing from
+    the record. With another source only that is checked, and at the as-of
+    date a source that is not the pinned one is itself stale."""
+    build = manifest["builds"][-1]
+    rows, problems = candidates(src, ident, control, src.pre_reserve, args.through)
+    if problems:
+        print("STOPPED:\n- " + "\n- ".join(problems))
+        return 1
+    stale = []
+    rederived = src.hashes == build["inputs"]
+    if rederived:
+        lo, hi = (_num(i) for i in build["rows"])
+        prior = [r for r in existing if _num(r["id"]) < lo]
+        committed = [r for r in existing if lo <= _num(r["id"]) <= hi]
+        stale += ["%s is committed after the last build's rows" % r["id"] for r in existing if _num(r["id"]) > hi]
+        week = next((s["week"] for s in manifest["shards"] for r in shards[s["path"]]["rows"]
+                     if r["id"] == build["rows"][0]), manifest["shards"][-1]["week"])
+        new = _unmatched([r for r in rows if r["gate_date"] <= build["through"]], prior, ident)
+        derived = number(new, lo, week, ident, problems)
+        if problems:
+            print("STOPPED:\n- " + "\n- ".join(problems))
+            return 1
+        stale += _field_diffs(committed, derived)
+        if len(manifest["builds"]) > 1:
+            late = [r["id"] for r in derived if r["gate_date"] <= manifest["builds"][-2]["through"]]
+            if late != build.get("late_found", []):
+                stale.append("late-found rows: committed %s, re-derived %s" % (build.get("late_found", []), late))
+        # Every committed row is gated on or before the as-of date, so a
+        # candidate gated after it is one the record lacks.
+        missing = sum(r["gate_date"] > build["through"] for r in rows)
+    else:
+        if args.through == manifest["as_of"]:
+            stale.append("inputs differ from the last build's pins: " + ", ".join(sorted(
+                k for k in set(src.hashes) | set(build["inputs"]) if src.hashes.get(k) != build["inputs"].get(k))))
+        missing = len(_unmatched(rows, existing, ident))
+    if missing:
+        stale.append("%d rows through %s are not committed (append with --extend)" % (missing, args.through))
+    if stale:
+        print("STALE:\n- " + "\n- ".join(stale))
+        return 1
+    print("IN-SEASON RAILS: CURRENT %d rows through %s; the last build (%s to %s, through %s) %s" % (
+        len(existing), args.through, build["rows"][0], build["rows"][1], build["through"],
+        "re-derived field by field" if rederived else "not re-derived: this source is not the one it pins"))
+    return 0
+
+
 def extend(args, manifest):
     """Append the rows gated after the committed as-of date through
     `--through`, plus any late-found row dated earlier, numbered from the
@@ -1305,19 +1402,10 @@ def extend(args, manifest):
     for s in manifest["shards"]:
         for code, entries in shards[s["path"]].get("noop_labels", {}).items():
             labels.setdefault(code, []).extend(entries)
-    for r in existing:  # the identity assignments already committed stay frozen
-        if r.get("uid") and r.get("player_id"):
-            ident.assigned[r["uid"]] = r["player_id"]
+    if args.check:
+        return check_last_build(args, manifest, src, ident, control, shards, existing)
     rows, problems = candidates(src, ident, control, src.pre_reserve, args.through)
-    left = collections.Counter(_key(r) for r in existing)
-    new = []
-    for r in rows:
-        probe = finish(dict(r, id="R14-0000", effective_from_week=0), ident)
-        key = _key(probe)
-        if left[key]:
-            left[key] -= 1
-            continue
-        new.append(r)
+    new = _unmatched(rows, existing, ident)
     if problems:
         print("STOPPED:\n- " + "\n- ".join(problems))
         return 1
@@ -1367,7 +1455,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("source_dir", type=Path)
     parser.add_argument("--through", required=True)
-    parser.add_argument("--check", action="store_true", help="rebuild the first build and compare (no write)")
+    parser.add_argument("--check", action="store_true",
+                        help="write nothing: rebuild a first-build-only record and compare every file; on an "
+                             "extended record, or with --extend, re-derive the last build's rows from its pinned "
+                             "source and compare them field by field (its no-op labels and page hashes are not "
+                             "re-derived), and fail on any row through --through the record lacks")
     parser.add_argument("--extend", action="store_true", help="append rows after the committed as-of date")
     args = parser.parse_args()
     master = player_bios.master_date(ROOT)
@@ -1376,6 +1468,10 @@ def main():
         return 1
     manifest_path = OUT / "manifest.json"
     existing = json.loads(manifest_path.read_text()) if manifest_path.exists() else None
+    if args.check and existing and len(existing.get("builds", ())) > 1:
+        # An extended record no longer reproduces from its first build
+        # alone; --check checks its last build instead (never writes).
+        args.extend = True
     if args.extend:
         if not existing:
             print("REFUSED: nothing committed to extend")
