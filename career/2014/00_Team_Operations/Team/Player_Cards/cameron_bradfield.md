@@ -1,11 +1,5 @@
 # Cameron Bradfield — 2014 Player Profile
 
-<!-- player-card:begin -->
-![Cameron Bradfield career card](../../../../league_players/jacksonville_jaguars/assets/cameron_bradfield.svg)
-
-[Career statistics](../../../../league_players/jacksonville_jaguars/cameron_bradfield.md)
-<!-- player-card:end -->
-
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

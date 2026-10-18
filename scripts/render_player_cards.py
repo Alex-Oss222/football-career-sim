@@ -7,12 +7,14 @@ Writes career/league_players/: an index of the 32 clubs, one page per club
 (its players by position group), and for every player in the game records a
 page (his card, his regular-season and playoff statistics by season with a
 career row, his awards) and the card itself as an SVG image. Pages of
-players no longer on record are removed. Each Jacksonville player card page
-(2014 onward) whose player has a league page also shows his card directly
+players no longer on record are removed. Each current Jacksonville player's
+card page that his league page links back to also shows his card directly
 under its title, in a generated <!-- player-card:begin --> ...
-<!-- player-card:end --> block with a link to his career statistics; only
-that block is written. --check writes nothing and fails when any file or
-block differs. Run after every closed game (docs/update_workflow.md).
+<!-- player-card:end --> block with a link to his career statistics; a
+former player's page carries none. Only that block is written, and a block
+found anywhere else on the page is moved back under the title. --check
+writes nothing and fails when any file or block differs or a block is not
+directly under its title. Run after every closed game (docs/update_workflow.md).
 The cards are a reader view: no game, evaluation or decision reads them.
 """
 from __future__ import annotations

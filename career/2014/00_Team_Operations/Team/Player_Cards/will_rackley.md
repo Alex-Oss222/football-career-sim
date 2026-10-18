@@ -1,11 +1,5 @@
 # Will Rackley — 2014 Player Profile
 
-<!-- player-card:begin -->
-![Will Rackley career card](../../../../league_players/jacksonville_jaguars/assets/will_rackley.svg)
-
-[Career statistics](../../../../league_players/jacksonville_jaguars/will_rackley.md)
-<!-- player-card:end -->
-
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

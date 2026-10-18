@@ -1,11 +1,5 @@
 # Cecil Shorts — 2014 Player Profile
 
-<!-- player-card:begin -->
-![Cecil Shorts career card](../../../../league_players/indianapolis_colts/assets/cecil_shorts.svg)
-
-[Career statistics](../../../../league_players/indianapolis_colts/cecil_shorts.md)
-<!-- player-card:end -->
-
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cecil_Shorts_III.jpg?width=500" alt="Cecil Shorts" width="160">
 

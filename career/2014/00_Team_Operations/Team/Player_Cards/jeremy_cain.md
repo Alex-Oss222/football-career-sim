@@ -1,11 +1,5 @@
 # Jeremy Cain — 2014 Player Profile
 
-<!-- player-card:begin -->
-![Jeremy Cain career card](../../../../league_players/chicago_bears/assets/jeremy_cain.svg)
-
-[Career statistics](../../../../league_players/chicago_bears/jeremy_cain.md)
-<!-- player-card:end -->
-
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy_Cain.jpg?width=500" alt="Jeremy Cain" width="160">
 

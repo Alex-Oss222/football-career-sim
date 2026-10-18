@@ -1,11 +1,5 @@
 # Mike Brown — 2014 Player Profile
 
-<!-- player-card:begin -->
-![Mike Brown career card](../../../../league_players/jacksonville_jaguars/assets/mike_brown.svg)
-
-[Career statistics](../../../../league_players/jacksonville_jaguars/mike_brown.md)
-<!-- player-card:end -->
-
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Brown_20140914.jpg?width=500" alt="Mike Brown" width="160">
 

@@ -10,9 +10,10 @@ module after every closed game:
   statistics by season with a career row, and his awards on record;
 - ``<club>/assets/<player>.svg``: the card (header with listed identity, then
   latest-season and career blocks for playoffs and regular season);
-- on each Jacksonville player card page (2014 onward) whose player has a
-  league page, a generated block directly under its H1 with his card and a
-  link to his career statistics. Only the block is written.
+- on each current Jacksonville player's card page that his league page links
+  back to, a generated block directly under its H1 with his card and a link
+  to his career statistics. Former players' pages carry none. Only the block
+  is written.
 
 Every statistic is arithmetic on the committed game records (the receipts the
 statbook reads), with the repository's own field names, loaders and passer
@@ -912,10 +913,12 @@ def profile_for(p, profiles, branch):
 
 
 # ------------------------------------------------------------------ Jacksonville player card pages
-# Each Jacksonville player card page (career/<year>/... player_profiles, 2014 onward) whose player
-# has a league page carries his card directly under its H1, in a generated block. Only the block is
-# ever written: the rest of the page (the authored assessment, the photo, the yearly statistics)
-# belongs to its own owners.
+# Each current Jacksonville player's card page (the page his league page links back to, by
+# jacksonville_profiles and profile_for) carries his career card directly under its H1, in a
+# generated block. Every other player page from 2014 on, a former player's included, carries none:
+# a former player's page is history through his departure and must not follow him to a new club.
+# Only the block and its framing blank lines are ever written: the rest of the page (the authored
+# assessment, the photo, the yearly statistics) belongs to its own owners.
 CARD_BEGIN, CARD_END = "<!-- player-card:begin -->", "<!-- player-card:end -->"
 PROFILE_FROM = 2014
 PROFILE_SKIP = ("README.md", "TEMPLATE.md")
@@ -941,22 +944,18 @@ def profile_pages(root):
     return out
 
 
-def page_players(pages, players, branch):
-    """{page path: league player} by the reverse link's rule (profile_for): the page name's gsis id
-    must be his; a name with no id matches only an exact record name of a player whose latest game
-    was with Jacksonville. A page no league player matches is absent."""
+def page_players(players, profiles, branch):
+    """{page path: league player} for the current roster's pages (``profiles``, by name, from
+    jacksonville_profiles), by the reverse link's own rule (profile_for), so a page carries a block
+    exactly when his league page links back to it."""
     out = {}
-    by_year = {}
-    for path, name in pages.items():
-        by_year.setdefault(path.parent, {})[name] = path
     for p in players:
-        for named in by_year.values():
-            page = profile_for(p, named, branch)
-            if page is None:
-                continue
-            if page in out:
-                raise ValueError("two league players match the player card page %s" % page)
-            out[page] = p
+        page = profile_for(p, profiles, branch)
+        if page is None:
+            continue
+        if page in out:
+            raise ValueError("two league players match the player card page %s" % page)
+        out[page] = p
     return out
 
 
@@ -973,33 +972,46 @@ def card_block(page, p, root):
                       CARD_END])
 
 
+def without_card_block(text):
+    """The page with its block, and one framing newline on each side, removed (unchanged when it
+    has none). Raises ValueError unless the markers form at most one ordered pair."""
+    begins, ends = text.count(CARD_BEGIN), text.count(CARD_END)
+    if begins == ends == 0:
+        return text
+    begin, end = text.find(CARD_BEGIN), text.find(CARD_END)
+    if begins != 1 or ends != 1 or end < begin:
+        raise ValueError("a player card page needs exactly one %s ... %s block" % (CARD_BEGIN, CARD_END))
+    end += len(CARD_END)
+    if text[begin - 1:begin] == "\n" and text[end:end + 1] == "\n":
+        begin, end = begin - 1, end + 1
+    return text[:begin] + text[end:]
+
+
+def block_under_title(text):
+    """True when the page's block begins directly under its H1 (title line, one blank line)."""
+    return text.partition("\n")[2].startswith("\n" + CARD_BEGIN + "\n")
+
+
 def with_card_block(text, block):
-    """The page with its block replaced in place, inserted directly under the H1 when it has none,
-    or removed when ``block`` is None. Nothing outside the markers changes."""
-    begin = text.find(CARD_BEGIN)
-    if begin >= 0:
-        end = text.find(CARD_END, begin)
-        if end < 0 or text.count(CARD_BEGIN) != 1 or text.count(CARD_END) != 1:
-            raise ValueError("a player card page needs exactly one %s ... %s block" % (CARD_BEGIN, CARD_END))
-        end += len(CARD_END)
-        if block is not None:
-            return text[:begin] + block + text[end:]
-        if text[begin - 1:begin] == "\n" and text[end:end + 1] == "\n":
-            begin, end = begin - 1, end + 1
-        return text[:begin] + text[end:]
-    if CARD_END in text:
-        raise ValueError("a player card page has %s without %s" % (CARD_END, CARD_BEGIN))
+    """The page with its block directly under the H1: an existing block is taken out wherever it
+    sits and ``block`` put there, or the block is removed when ``block`` is None. Nothing else on
+    the page changes."""
+    text = without_card_block(text)
     if block is None:
         return text
     title, _, body = text.partition("\n")
     return title + "\n\n" + block + "\n" + (body if body.startswith("\n") else "\n" + body)
 
 
-def render_pages(root, players, branch):
-    """{page path relative to the repository root: its text with the block current}."""
+def render_pages(root, matched):
+    """{page path relative to the repository root: its text with the block current}, for every
+    player page from 2014 on; ``matched`` ({page path: league player}, from page_players) names the
+    pages that carry one."""
     root = Path(root)
     pages = profile_pages(root)
-    matched = page_players(pages, players, branch)
+    untitled = sorted(str(path) for path in matched if path not in pages)
+    if untitled:
+        raise ValueError("current player card page without a player title line: " + "; ".join(untitled))
     out = {}
     for path in pages:
         p = matched.get(path)
@@ -1021,7 +1033,10 @@ def check_pages(root, pages):
         if CARD_BEGIN not in current:
             errors.append("Jacksonville player card page lacks its career card: %s" % rel)
         elif CARD_BEGIN not in text:
-            errors.append("Jacksonville player card page has a career card with no league page: %s" % rel)
+            errors.append("Jacksonville player card page has a career card it should not carry "
+                          "(no league page links back to it): %s" % rel)
+        elif not block_under_title(current):
+            errors.append("Jacksonville player card page career card is not directly under its title: %s" % rel)
         else:
             errors.append("Jacksonville player card page career card stale: %s" % rel)
     return errors
@@ -1038,15 +1053,16 @@ def _build(root):
     if unknown:
         raise ValueError("no club colours for: " + ", ".join(unknown))
     assign_slugs(players)
-    profiles = jacksonville_profiles(root)
     branch = Identity(root).branch
+    matched = page_players(players, jacksonville_profiles(root), branch)
+    linked = {id(p): page for page, p in matched.items()}
     files = {}
     by_club = {}
     for p in players:
         by_club.setdefault(p["team"], []).append(p)
         base = "%s/%s" % (FOLDER, club_slug(p["team"]))
         link = None
-        prof = profile_for(p, profiles, branch)
+        prof = linked.get(id(p))
         if prof is not None:
             link = Path(os.path.relpath(prof, root / base)).as_posix()
         files["%s/%s.md" % (base, p["slug"])] = player_page(p, link)
@@ -1054,7 +1070,7 @@ def _build(root):
     for team, ps in by_club.items():
         files["%s/%s/README.md" % (FOLDER, club_slug(team))] = club_page(team, ps, years, as_of)
     files["%s/README.md" % FOLDER] = index_page({t: len(ps) for t, ps in by_club.items()}, years, as_of)
-    return dict(sorted(files.items())), render_pages(root, players, branch)
+    return dict(sorted(files.items())), render_pages(root, matched)
 
 
 def render(root=ROOT):

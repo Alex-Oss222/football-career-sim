@@ -1,11 +1,5 @@
 # Toney Clemons — 2014 Player Profile
 
-<!-- player-card:begin -->
-![Toney Clemons career card](../../../../league_players/jacksonville_jaguars/assets/toney_clemons.svg)
-
-[Career statistics](../../../../league_players/jacksonville_jaguars/toney_clemons.md)
-<!-- player-card:end -->
-
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

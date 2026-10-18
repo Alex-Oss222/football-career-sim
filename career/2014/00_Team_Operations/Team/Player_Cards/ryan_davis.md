@@ -1,11 +1,5 @@
 # Ryan Davis — 2014 Player Profile
 
-<!-- player-card:begin -->
-![Ryan Davis career card](../../../../league_players/jacksonville_jaguars/assets/ryan_davis.svg)
-
-[Career statistics](../../../../league_players/jacksonville_jaguars/ryan_davis.md)
-<!-- player-card:end -->
-
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  
