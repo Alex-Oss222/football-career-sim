@@ -9,7 +9,7 @@ Two state files record the coach's job and the decisions still open. Code reads 
 - the holder, his employment status and his appointments: employer, title, role, unit, start and end, the term's recorded basis and the hire and retention history;
 - the reporting line, with every field null where Document 3 records `[UNSET]`;
 - an index of the employer's measures and requests, each linked to its source;
-- a parity-checked transcription of Document 3's final authority by domain (the owner once the foundation pull request merges), with the holder's part in each row normalized;
+- the current values of final authority by domain, one row for each row of Document 3's authority map, with the holder's part in each row normalized;
 - delegation by phase (who calls, who prepares, who transmits, who declares the front), the game-management decisions the head coach retains and how the game handles each, the game-day relays and the emergency leads;
 - an index of standing instructions. The rule text stays in its own record.
 
@@ -25,7 +25,7 @@ The files do not own:
 
 Neither file is a current record in `docs/repository_map.json`, because the season handoff copies every current record into the next year. The map names them under `career_layer`.
 
-**The Document 3 handoff, in two phases.** Until the foundation pull request that turns Document 3's cells into pointers merges, [Document 3 section 5](../foundation/03_Head_Coach_Organization_and_Authority_Canon.md#5-authority-map) remains the stated sole source of final authority. The job record's authority rows are then a transcription that validation keeps identical to it: columns 3 to 7 byte for byte, except column 4 of rows 13 and 14, whose operational delegation the job record owns. Document 3 row 7 has six cells, its required-consultation cell missing, so the check reads its fifth and sixth cells as the rule limit and the provenance, and the job record holds no consultation for the row, until the foundation pull request repairs it. Any later change to a Document 3 cell fails validation until the job row and its normalized part are revisited. Once that pull request merges, Document 3 keeps the row taxonomy and the precedence rules, and each pointer cell names the job record, which then owns the values. The parity check accepts either form, so the foundation change needs no code change.
+**The Document 3 handoff.** Document 3 rebuild draft 2.9 (October 18, 2026) turned its employer, title, start-date, reporting, delegation, final-authority and standing-instruction cells into pointers to the job record and the queue. [Document 3 section 5](../foundation/03_Head_Coach_Organization_and_Authority_Canon.md#5-authority-map) keeps the row taxonomy and the precedence rules; each of its rows points to the job record, which owns the values. Before that, the job record's authority rows were a transcription that validation kept identical to Document 3. The conversion also gave Document 3 row 7 the standard shape: its required-consultation cell had been missing, and the job record holds no consultation for the row. Validation still requires each job row to name a Document 3 row with the same decision domain, and a Document 3 cell written back in value form is compared again, columns 3 to 7 byte for byte except column 4 of rows 13 and 14, whose operational delegation the job record owns, so the two cannot drift apart.
 
 ## 2. Schemas
 
@@ -116,7 +116,7 @@ An unreadable or missing queue refuses every gated event: the gate fails closed.
 
 ## 5. When the workflow stops
 
-A stop is warranted when the head coach has a decision or a required substantive recommendation, the choice is consequential, existing instructions do not already cover it, and the next action would commit the choice or remove a meaningful alternative. The stop comes before that next action, and the queue item is what makes the code stop there; a stop written only in prose halts nothing. Once the foundation pull request merges, the rule's full text is in `foundation/decision_rules.md`.
+A stop is warranted when the head coach has a decision or a required substantive recommendation, the choice is consequential, existing instructions do not already cover it, and the next action would commit the choice or remove a meaningful alternative. The stop comes before that next action, and the queue item is what makes the code stop there; a stop written only in prose halts nothing. The rule's full text is in the [decision rules](../foundation/decision_rules.md), and each job's working view, stops and automatic work in its role file: the [head coach](../foundation/roles/head_coach.md), the [coordinator](../foundation/roles/coordinator.md), the [position coach](../foundation/roles/position_coach.md) and the coach [between jobs](../foundation/roles/between_jobs.md).
 
 The live in-game pauses are not queue items: a Jacksonville fourth down that the call sheet does not freeze, a legal backup passer and a Jacksonville injury replacement stop the game through `close_week.py`'s pause exit.
 

@@ -2,9 +2,10 @@
 authority, and who calls each phase (state/current_job.json).
 
 The record owns these facts; Document 5, the staff register and the desk
-render from it (docs/career_layer.md). Until Document 3 section 5 becomes a
-pointer, the authority rows are a transcription that ``f3_parity_errors``
-keeps identical to it. Nothing that resolves a game reads this module.
+render from it (docs/career_layer.md). Document 3 section 5 keeps the row
+taxonomy and points here for the values; ``f3_parity_errors`` keeps the rows
+on that taxonomy and compares any Document 3 cell written back in value form.
+Nothing that resolves a game reads this module.
 """
 from datetime import date
 import json
@@ -46,11 +47,6 @@ SCHEDULED_KEYS = ("from", "to", "effective", "start", "end")
 DATE_KEYS = PAST_KEYS + SCHEDULED_KEYS + ("end_date", "user_date")
 DELEGATED = re.compile(r"^delegation\.play_calling\.([a-z_]+)$")
 PARITY = "Document 3 and the job record disagree; correct the record that is wrong (Document 3 §11.2), then rerun."
-# Document 3 row 7 has six cells: its required-consultation cell is missing,
-# so its fifth and sixth cells are the rule limit and the provenance. The job
-# record holds them under those fields, with no consultation recorded, until
-# the foundation pull request repairs the row.
-SHORT_ROWS = {"7": {"consultation": None, "limits": 5, "provenance": 6}}
 
 
 def load(root):
@@ -224,13 +220,11 @@ def f3_parity_errors(job, root):
         if not row.get("final") and "NOT APPLICABLE" not in final:
             errors.append(where + "Document 3 does not mark the row NOT APPLICABLE. " + PARITY)
         columns = [("final_text", 3), ("consultation", 5), ("limits", 6), ("provenance", 7)]
-        if number in SHORT_ROWS and len(cells) == 6:
-            columns = [("final_text", 3)] + list(SHORT_ROWS[number].items())
         if number not in ("13", "14"):
             columns.append(("permitted", 4))
         for field, n in columns:
-            if row.get(field) != (None if n is None else _cell(cells, n)):
-                errors.append(where + "%s differs from Document 3 column %s. %s" % (field, n or "(missing)", PARITY))
+            if row.get(field) != _cell(cells, n):
+                errors.append(where + "%s differs from Document 3 column %s. %s" % (field, n, PARITY))
     start = date.fromisoformat(current["start"]) if current.get("start") else None
     expected = (("Employing organization", (current.get("employer") or {}).get("club"), False),
                 ("Position title", current.get("title"), True),

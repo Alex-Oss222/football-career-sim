@@ -10,6 +10,7 @@ carries the values or pointers to the job record.
 from datetime import date, timedelta
 import json
 from pathlib import Path
+import re
 import sys
 from types import SimpleNamespace
 import unittest
@@ -151,22 +152,28 @@ class CurrentJobTests(unittest.TestCase):
         self.assertTrue(any("authority row 5: permitted differs from Document 3 column 4" in e
                             for e in self.with_row("5", {4: "Stone is consulted."})))
 
-    def test_short_document_3_row_7_is_read_by_meaning(self):
+    def test_document_3_points_every_row_to_the_job_record(self):
+        # Each Document 3 section 5 row is one pointer cell naming its own
+        # job-record row, and the pointers alone pass the parity check.
+        text = (self.root / F3).read_text(encoding="utf-8")
+        section = text.split("## 5. Authority map", 1)[1].split("### 5.1", 1)[0]
+        rows = [l for l in section.splitlines() if re.match(r"\| \d+a? \|", l)]
+        self.assertEqual([l.split(" | ", 1)[0][2:] for l in rows], list(current_job.AUTHORITY_ROWS))
+        for line in rows:
+            number = line.split(" | ", 1)[0][2:]
+            self.assertEqual(line.count("|"), 4, line)
+            self.assertTrue(line.endswith("(../state/current_job.json) row %s |" % number), line)
+        self.assertEqual(current_job.f3_parity_errors(self.job, self.root), [])
+        # Row 7 written back in its old six-cell value form, the
+        # required-consultation cell missing, is caught: the record holds no
+        # consultation, so the limit sits in the consultation column.
         row = next(r for r in self.current(self.job)["authority"]["domains"] if r["row"] == "7")
         self.assertIsNone(row["consultation"])
-        # Document 3's six-cell row 7: the limit and provenance in cells 5 and 6.
         short = "| " + " | ".join(["7", row["domain"], row["final_text"], row["permitted"], row["limits"],
                                    row["provenance"]]) + " |"
-        text = (self.root / F3).read_text(encoding="utf-8")
-        line = next(l for l in text.split("## 5. Authority map", 1)[1].splitlines() if l.startswith("| 7 |"))
-        self.replace(F3, line, short)
-        self.assertFalse(any("authority row 7:" in e for e in current_job.f3_parity_errors(self.job, self.root)))
-        # A shift back into the consultation field is caught.
-        job = json.loads(json.dumps(self.job))
-        shifted = next(r for r in self.current(job)["authority"]["domains"] if r["row"] == "7")
-        shifted.update(consultation=row["limits"], limits=row["provenance"], provenance=None)
-        self.assertTrue(any("authority row 7: consultation differs" in e
-                            for e in current_job.f3_parity_errors(job, self.root)))
+        self.replace(F3, next(l for l in rows if l.startswith("| 7 |")), short)
+        self.assertTrue(any("authority row 7: consultation differs from Document 3 column 5" in e
+                            for e in current_job.f3_parity_errors(self.job, self.root)))
 
     def test_subjects_share_one_vocabulary(self):
         job = json.loads(json.dumps(self.job))
