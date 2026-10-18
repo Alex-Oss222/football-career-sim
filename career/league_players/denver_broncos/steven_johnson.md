@@ -9,8 +9,8 @@
 | Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Denver Broncos | 25 | 53 | 16 | 5 | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 0.3 | 3 |
-| 2014 | Denver Broncos | 26 | 53 | 3 | 15 | 0 | 1 | 0 | 1 | 1 | 1 | 0 | 5.0 | 12 |
-| **Career** |  |  |  | 19 | 20 | 0 | 1 | 0 | 1 | 2 | 2 | 1 | 1.1 | 15 |
+| 2014 | Denver Broncos | 26 | 53 | 4 | 17 | 0 | 1 | 0 | 1 | 1 | 1 | 0 | 4.2 | 13 |
+| **Career** |  |  |  | 20 | 22 | 0 | 1 | 0 | 1 | 2 | 2 | 1 | 1.1 | 16 |
 
 ### Playoffs
 
@@ -22,4 +22,4 @@ None on record.
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
-Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).

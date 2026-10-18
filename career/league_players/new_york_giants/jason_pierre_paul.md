@@ -9,8 +9,8 @@
 | Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | New York Giants | 24 | 90 | 16 | 15 | 1 | 1 | 0 | 0 | 0 | 0 | 3 | 0.9 | 12 |
-| 2014 | New York Giants | 25 | 90 | 4 | 26 | 3 | 3 | 0 | 0 | 0 | 0 | 4 | 6.5 | 20 |
-| **Career** |  |  |  | 20 | 41 | 4 | 4 | 0 | 0 | 0 | 0 | 7 | 2.0 | 32 |
+| 2014 | New York Giants | 25 | 90 | 5 | 32 | 3 | 4 | 0 | 0 | 0 | 0 | 4 | 6.4 | 23 |
+| **Career** |  |  |  | 21 | 47 | 4 | 5 | 0 | 0 | 0 | 0 | 7 | 2.2 | 35 |
 
 ### Playoffs
 
@@ -24,4 +24,4 @@ Schools listed: University of South Florida; Fort Scott CC; College of the Canyo
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
-Records through September 25, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).

@@ -8,8 +8,8 @@
 
 | Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Denver Broncos | 25 | 71 | 3 | 0 | 32 | 3 | 17 | 0 | 0 | 0 | 0 | 10.7 |
-| **Career** |  |  |  | 3 | 0 | 32 | 3 | 17 | 0 | 0 | 0 | 0 | 10.7 |
+| 2014 | Denver Broncos | 25 | 71 | 4 | 0 | 32 | 3 | 20 | 0 | 0 | 0 | 0 | 8.0 |
+| **Career** |  |  |  | 4 | 0 | 32 | 3 | 20 | 0 | 0 | 0 | 0 | 8.0 |
 
 ### Playoffs
 
@@ -21,4 +21,4 @@ None on record.
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
-Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).

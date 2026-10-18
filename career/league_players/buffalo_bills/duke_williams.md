@@ -9,8 +9,8 @@
 | Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Buffalo Bills | 22 | 27 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 0 |
-| 2014 | Buffalo Bills | 23 | 27 | 4 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 0 |
-| **Career** |  |  |  | 6 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 0 |
+| 2014 | Buffalo Bills | 23 | 27 | 5 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.8 | 0 |
+| **Career** |  |  |  | 7 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.9 | 0 |
 
 ### Playoffs
 
@@ -22,4 +22,4 @@ None on record.
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).

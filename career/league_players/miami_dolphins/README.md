@@ -1,6 +1,6 @@
 # Miami Dolphins players
 
-AFC East · Players whose latest game on record was with the Miami Dolphins. G counts regular-season games with any club. Records through September 29, 2014. [All clubs](../README.md).
+AFC East · Players whose latest game on record was with the Miami Dolphins. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
 
 ## Quarterbacks
 

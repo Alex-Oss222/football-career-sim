@@ -9,8 +9,8 @@
 | Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Tennessee Titans | 25 | 10 | 16 | 389-600 | 64.8 | 3,928 | 25 | 18 | 6.5 | 84.8 | 245.5 | 188 | 1 |
-| 2014 | Tennessee Titans | 26 | 10 | 3 | 72-121 | 59.5 | 845 | 5 | 5 | 7.0 | 77.3 | 281.7 | 22 | 0 |
-| **Career** |  |  |  | 19 | 461-721 | 63.9 | 4,773 | 30 | 23 | 6.6 | 83.5 | 251.2 | 210 | 1 |
+| 2014 | Tennessee Titans | 26 | 10 | 4 | 91-151 | 60.3 | 995 | 7 | 5 | 6.6 | 81.4 | 248.8 | 42 | 0 |
+| **Career** |  |  |  | 20 | 480-751 | 63.9 | 4,923 | 32 | 23 | 6.6 | 84.1 | 246.2 | 230 | 1 |
 
 ### Playoffs
 
@@ -25,4 +25,4 @@
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).

@@ -9,8 +9,8 @@
 | Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Seattle Seahawks | 27 | 56 | 15 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.3 | 4 |
-| 2014 | Seattle Seahawks | 28 | 56 | 3 | 23 | 4 | 4 | 1 | 1 | 0 | 0 | 8 | 7.7 | 17 |
-| **Career** |  |  |  | 18 | 28 | 4 | 4 | 1 | 1 | 0 | 0 | 8 | 1.6 | 21 |
+| 2014 | Seattle Seahawks | 28 | 56 | 4 | 26 | 5 | 4 | 1 | 1 | 0 | 0 | 10 | 6.5 | 20 |
+| **Career** |  |  |  | 19 | 31 | 5 | 4 | 1 | 1 | 0 | 0 | 10 | 1.6 | 24 |
 
 ### Playoffs
 
@@ -22,4 +22,4 @@ None on record.
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
-Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).

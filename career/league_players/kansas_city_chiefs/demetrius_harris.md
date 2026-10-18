@@ -8,8 +8,8 @@
 
 | Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Kansas City Chiefs | 23 | 84 | 4 | 2 | 2 | 18 | 9.0 | 0 | 4.5 | 100.0 | 16 | 0 | 0 |
-| **Career** |  |  |  | 4 | 2 | 2 | 18 | 9.0 | 0 | 4.5 | 100.0 | 16 | 0 | 0 |
+| 2014 | Kansas City Chiefs | 23 | 84 | 5 | 2 | 2 | 18 | 9.0 | 0 | 3.6 | 100.0 | 16 | 0 | 0 |
+| **Career** |  |  |  | 5 | 2 | 2 | 18 | 9.0 | 0 | 3.6 | 100.0 | 16 | 0 | 0 |
 
 ### Playoffs
 
@@ -21,4 +21,4 @@ None on record.
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).

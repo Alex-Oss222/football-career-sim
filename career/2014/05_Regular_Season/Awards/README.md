@@ -14,7 +14,7 @@ These pages display recorded results without repeating the draw.
 | [Week 2](week_02/README.md) | Recorded |
 | [Week 3](week_03/README.md) | Recorded |
 | [Week 4](week_04/README.md) | Recorded |
-| Week 5 | Awaiting closed games and awards |
+| [Week 5](week_05/README.md) | Recorded |
 | Week 6 | Awaiting closed games and awards |
 | Week 7 | Awaiting closed games and awards |
 | Week 8 | Awaiting closed games and awards |
@@ -32,7 +32,7 @@ These pages display recorded results without repeating the draw.
 
 | Month | Awards |
 |---|---|
-| September | Awaiting the season’s dated coverage and closed awards |
+| [September](monthly/september/README.md) | Recorded |
 | October | Awaiting the season’s dated coverage and closed awards |
 | November | Awaiting the season’s dated coverage and closed awards |
 | December | Awaiting the season’s dated coverage and closed awards |

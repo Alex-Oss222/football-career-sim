@@ -1,6 +1,6 @@
 # Reports, assessments and teaching templates
 
-Choose the template for the work actually completed. The same template supplies the chat response and the saved report; writing a second abbreviated account is not required. Replace its instructions with the football account, preserve the section order, and give the important findings the space they need. A short period with little evidence does not need padding.
+Choose the template for the work actually completed. The same template supplies the chat response and the saved report; writing a second abbreviated account is not required. Replace its instructions with the football account, preserve the section order, and give the important findings the space they need. A short period with little evidence does not need padding. Game turns also follow the [game-output workflow](../../docs/game_output_workflow.md): retain the layouts and generated full statistics, author the football and media from established evidence, and review those separately. Prompts do not authorize invented activity or repeated filler.
 
 All destinations below are relative to `career/<year>/` for 2014 onward. The season calendar controls dates and overlap; the folder order does not move rookie camp ahead of the draft. Create filled files when their work occurs, not empty future reports.
 

@@ -9,8 +9,8 @@
 | Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Jacksonville Jaguars | 28 | 32 | 16 | 282 | 1,334 | 4.7 | 8 | 83.4 | 42 | 400 | 4 | 324 | 2 |
-| 2014 | Jacksonville Jaguars | 29 | N/A | 4 | 75 | 351 | 4.7 | 1 | 87.8 | 11 | 94 | 1 | 86 | 0 |
-| **Career** |  |  |  | 20 | 357 | 1,685 | 4.7 | 9 | 84.2 | 53 | 494 | 5 | 410 | 2 |
+| 2014 | Jacksonville Jaguars | 29 | N/A | 5 | 99 | 461 | 4.7 | 2 | 92.2 | 16 | 150 | 1 | 115 | 1 |
+| **Career** |  |  |  | 21 | 381 | 1,795 | 4.7 | 10 | 85.5 | 58 | 550 | 5 | 439 | 3 |
 
 ### Playoffs
 
@@ -27,4 +27,4 @@
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Jacksonville Jaguars players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Jacksonville Jaguars players](README.md).

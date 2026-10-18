@@ -1,5 +1,11 @@
 # Todd Davis — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Todd Davis career card](../../../../league_players/jacksonville_jaguars/assets/todd_davis.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/todd_davis.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  
@@ -101,13 +107,21 @@ A productive small-school inside linebacker with a downhill style and coverage-u
 
 No NFL season. The college record is described qualitatively above; no college statistic is entered as an NFL figure.
 
+## Dated coaching updates
+
+### September 29 to October 4, 2014 | Active for Pittsburgh
+
+Active for the first time this season. Stone's packet dresses him in place of Hoskins for additional linebacker and coverage-unit depth, citing Pittsburgh's run game, Stanford's injury and Posluszny's late projected clearance; Westhoff checked him in the active coverage rotation in Friday's kicking period. Nothing charged to him on the recorded reps.
+
+Source: [Week 5 record](../../../05_Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 4 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded |
+| 2014 | Jacksonville | Through Week 5 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 

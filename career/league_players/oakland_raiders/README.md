@@ -1,6 +1,6 @@
 # Oakland Raiders players
 
-AFC West · Players whose latest game on record was with the Oakland Raiders. G counts regular-season games with any club. Records through September 29, 2014. [All clubs](../README.md).
+AFC West · Players whose latest game on record was with the Oakland Raiders. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
 
 ## Quarterbacks
 
@@ -69,7 +69,6 @@ AFC West · Players whose latest game on record was with the Oakland Raiders. G 
 |---:|---|---|---:|---:|
 | 94 | [Antonio Smith](antonio_smith.md) | DT | 4 | 0 |
 | N/A | [Brian Sanford](brian_sanford.md) | DE | 0 | 2 |
-| N/A | [Christo Bilukidi](christo_bilukidi.md) | DT | 0 | 16 |
 | N/A | [Jason Hunter](jason_hunter.md) | DE | 0 | 16 |
 | 78 | [Justin Ellis](justin_ellis.md) | NT | 4 | 0 |
 | 91 | [Justin Tuck](justin_tuck.md) | DE | 4 | 12 |

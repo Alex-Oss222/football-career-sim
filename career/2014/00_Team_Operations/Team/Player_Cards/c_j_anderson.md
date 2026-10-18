@@ -169,7 +169,7 @@ Source: [preseason game 1 output](../../../04_Training_Camp_and_Preseason/Presea
 
 | Season | Team(s) | Coverage | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST | REC AVG | REC LNG | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 4 | 4 | 24 | 130 | 5.4 | 1 | 24 | 4 | 3 | 55 | 1 | 0 | 0 | 18.3 | 26 | 75.0 | 0 | 0 | — | 0 | 0 | — | 3 |
+| 2014 | Jacksonville | Through Week 5 | 5 | 27 | 138 | 5.1 | 1 | 24 | 5 | 4 | 67 | 1 | 0 | 0 | 16.8 | 26 | 80.0 | 0 | 0 | — | 0 | 0 | — | 3 |
 
 ## Playoff statistics by year
 

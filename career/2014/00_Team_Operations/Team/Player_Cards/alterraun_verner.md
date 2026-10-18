@@ -146,7 +146,7 @@ Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Traini
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR | DEF SNAPS | QB HITS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 4 | 4 | 15 | 14 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 214 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 2 |
+| 2014 | Jacksonville | Through Week 5 | 5 | 20 | 18 | 2 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 274 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 2 |
 
 ## Playoff statistics by year
 

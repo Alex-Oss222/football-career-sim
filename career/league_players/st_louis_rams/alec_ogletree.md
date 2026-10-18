@@ -9,8 +9,8 @@
 | Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | St. Louis Rams | 21 | 52 | 15 | 18 | 1 | 1 | 0 | 1 | 0 | 0 | 1 | 1.2 | 14 |
-| 2014 | St. Louis Rams | 22 | 52 | 3 | 34 | 0 | 1 | 1 | 3 | 0 | 0 | 2 | 11.3 | 22 |
-| **Career** |  |  |  | 18 | 52 | 1 | 2 | 1 | 4 | 0 | 0 | 3 | 2.9 | 36 |
+| 2014 | St. Louis Rams | 22 | 52 | 4 | 44 | 1 | 2 | 1 | 3 | 0 | 0 | 4 | 11.0 | 30 |
+| **Career** |  |  |  | 19 | 62 | 2 | 3 | 1 | 4 | 0 | 0 | 5 | 3.3 | 44 |
 
 ### Playoffs
 
@@ -22,4 +22,4 @@ None on record.
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
-Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).

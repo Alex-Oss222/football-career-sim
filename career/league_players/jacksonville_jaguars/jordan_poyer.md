@@ -27,4 +27,4 @@ None on record.
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: the number he wore in 2014 with the Cleveland Browns (Jacksonville has not recorded one). [All Jacksonville Jaguars players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: the number he wore in 2014 with the Cleveland Browns (Jacksonville has not recorded one). [All Jacksonville Jaguars players](README.md).

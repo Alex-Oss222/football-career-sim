@@ -133,13 +133,19 @@ His independent medical hold was reassessed Wednesday, September 24, with no cha
 
 Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md) and the [medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed). This coaching update preserves the opening grades above.
 
+### September 29 to October 4, 2014 | Released; inactive by decision
+
+His independent medical hold was released Thursday, October 2, its projected date, by the independent process; he took no part in the Monday walkthrough or the Wednesday practice and then took approved preparation work in full on Thursday and Friday and in the Saturday walkthrough. Stone's packet had already made him inactive for Pittsburgh whether or not the release came, rather than install a new dime or kicking-game job late in the week, and that decision stands; no designation on the Friday report. No football finding attaches to the hold or the decision.
+
+Source: [Week 5 record](../../../05_Regular_Season/Games/Week_05/output.md) and the [medical history](../../Medical/medical_history.md#september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR | DEF SNAPS | QB HITS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 4 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 13 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 1 |
+| 2014 | Jacksonville | Through Week 5 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 13 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 1 |
 
 ## Playoff statistics by year
 

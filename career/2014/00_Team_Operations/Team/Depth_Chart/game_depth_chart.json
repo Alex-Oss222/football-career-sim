@@ -1,10 +1,10 @@
 {
  "team": "Jacksonville Jaguars",
  "season": 2014,
- "status": "SEASON GAME DEPTH CHART, the released 2014 game input. Issued by Stone on August 30, 2014 at the reduction to 53 (Document 3 row 9) from the August 28 personnel packet's baseline, over the 53 only; the secondary re-set September 13, 2014 for Week 2 after the September 8 transactions (Harris and Lowery to reserve/injured, Ball signed, Phillips promoted); the order unchanged and the inactives re-set September 20, 2014 for Week 3; the defensive-back order and the inactives re-set September 27, 2014 for Week 4 after the San Diego preparation (Bouye the nickel and Prosinski the sixth defensive back with Poyer and Butler on their holds and listed last). Stone changes it only by decision; each change is logged in career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md and copied here in the same commit.",
- "effective": "August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); the defensive-back order set for Week 2 on September 13, 2014 and re-set for Week 4 on September 27, 2014 with game_day_inactives re-set for Week 4 the same day",
+ "status": "SEASON GAME DEPTH CHART, the released 2014 game input. Issued by Stone on August 30, 2014 at the reduction to 53 (Document 3 row 9) from the August 28 personnel packet's baseline, over the 53 only; the secondary re-set September 13, 2014 for Week 2 after the September 8 transactions (Harris and Lowery to reserve/injured, Ball signed, Phillips promoted); the order unchanged and the inactives re-set September 20, 2014 for Week 3; the defensive-back order and the inactives re-set September 27, 2014 for Week 4 after the San Diego preparation (Bouye the nickel and Prosinski the sixth defensive back with Poyer and Butler on their holds and listed last); the receiver order, the defensive-back order, the nickel and outside-reserve seats and the inactives re-set October 4, 2014 for Week 5 after the Pittsburgh preparation (Adams X with Nicks fifth and the X relief only; Bouye the nickel, Ball the outside reserve, Butler released and inactive by decision, Poyer on his hold and listed last). Stone changes it only by decision; each change is logged in career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md and copied here in the same commit.",
+ "effective": "August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); the defensive-back order set for Week 2 on September 13, 2014 and re-set for Week 4 on September 27, 2014; the receiver order, the defensive-back order and its two slot roles re-set for Week 5 on October 4, 2014, with game_day_inactives re-set for Week 5 the same day",
  "sources": "The August 28 personnel packet's season depth chart baseline (Regular-season Week 1.md: Adams X, Thielen H, Hawkins Z; Lewis, Kelce, Jensen; Monroe, Bitonio, Brewster, Turner, Johnson; Kreiter snapping; Hawkins returning kicks and punts with Hurns the second punt returner; Nicks back to X and Adams to Z only after medical clearance and a full practice week); the frozen August 27 Atlanta chart (Preseason_Games/Game_04/depth_chart.json) for every other order; the current roster for control and availability; the August 30 reduction (Roster_Decisions/final_roster_cuts.md) for the 53.",
- "rule": "Order within each kernel position group, first = starter, as the kernel reads it. The packet's baseline sets the starting eleven on offense, the snapper and the returners; the Atlanta chart's order is carried for everyone else, minus the players who left on August 30. A player out under a medical instruction is listed last in his group while out and is on the inactive list (Poyer and Butler, on their holds, are last among the defensive backs for Week 4; Nicks completed the full practice week of Stone's condition on September 27 and keeps his sixth place until Stone decides his return to X; Hoskins keeps the fourth tight-end place); a player on reserve/injured is off the chart; his return to the order is Stone's decision on clearance under the packet's condition. The roles field carries the kernel roles (passer, placekicker, punt, kick_return, punt_return); Hurns is the second punt returner by Stone's instruction and is not given the kernel role, which the kernel reads as the first returner.",
+ "rule": "Order within each kernel position group, first = starter, as the kernel reads it. The packet's baseline sets the starting eleven on offense, the snapper and the returners; the Atlanta chart's order is carried for everyone else, minus the players who left on August 30. A player out under a medical instruction is listed last in his group while out and is on the inactive list (Poyer, on his hold, is last among the defensive backs for Week 5; Butler, released October 2, is placed above him and is inactive by Stone's decision; Stone decided Nicks's X question on October 4: Adams starts X and Nicks is the fifth receiver and the X relief on prepared series only, not a starting promotion; Hoskins keeps the fourth tight-end place); a player on reserve/injured is off the chart; his return to the order is Stone's decision on clearance under the packet's condition. The roles field carries the kernel roles (passer, placekicker, punt, kick_return, punt_return) and, from Week 5, the two defensive-back seat roles kernel 2014.6 reads (nickel: Bouye; outside_reserve: Ball, the first corner to replace an outside starter), transcribed from Stone's Dime decision in the Week 5 packet; Hurns is the second punt returner by Stone's instruction and is not given the kernel role, which the kernel reads as the first returner.",
  "depth": {
   "QB": [
    "Kirk Cousins",
@@ -23,8 +23,8 @@
    "Adam Thielen",
    "Andrew Hawkins",
    "Allen Hurns",
-   "Taylor Gabriel",
-   "Hakeem Nicks"
+   "Hakeem Nicks",
+   "Taylor Gabriel"
   ],
   "TE": [
    "Marcedes Lewis",
@@ -71,8 +71,8 @@
    "Chris Prosinski",
    "Adrian Phillips",
    "Alan Ball",
-   "Jordan Poyer",
-   "Malcolm Butler"
+   "Malcolm Butler",
+   "Jordan Poyer"
   ],
   "K": [
    "Josh Scobee"
@@ -152,6 +152,12 @@
   "Andrew Hawkins": [
    "kick_return",
    "punt_return"
+  ],
+  "A.J. Bouye": [
+   "nickel"
+  ],
+  "Alan Ball": [
+   "outside_reserve"
   ]
  },
  "captains": {
@@ -169,16 +175,16 @@
   ]
  },
  "game_day_inactives": {
-  "week": 4,
+  "week": 5,
   "players": [
    "Jordan Poyer",
    "Malcolm Butler",
    "Jonathan Grimes",
    "Corey Linsley",
    "Kasim Edebali",
-   "Todd Davis",
-   "Taylor Gabriel"
+   "Taylor Gabriel",
+   "Gator Hoskins"
   ],
-  "note": "Seven of the 53 are inactive for Week 4 at San Diego (46 dress; rules library R4), set by Stone on September 27, 2014 after the San Diego preparation under his Week 4 packet. Two by medical instruction, listed last in the defensive-back group while out: Jordan Poyer (independent medical hold, reassessed September 27 with no change, projected return October 9) and Malcolm Butler (independent medical hold, reassessed September 24 with no change, projected return October 2). Five by the packet's provisional list as the week's evidence resolved it: Hakeem Nicks completed the full practice week September 22 to 27, so the packet's alternative for that case applied and Jonathan Grimes, the third back in Stone's explicit hierarchy, is the next healthy inactive, Westhoff's unit check finding no defined coverage job on him (one kicking-game snap in Week 3) and the Friday availability check (Adams cleared Friday without a practice, questionable) favouring the extra receiver; Corey Linsley (ninth lineman), Kasim Edebali (eighth defensive lineman), Todd Davis (seventh linebacker) and Taylor Gabriel (fifth receiver) are the packet's healthy-depth candidates. This dresses Nicks, Alan Ball and Gator Hoskins compared with Week 3: Ball is the eighth healthy defensive back and the outside reserve behind Talib and Verner; Hoskins entered the preparation as the packet recommended and its conditions for returning him to the list (Kelce cleared, a failed job and another position needing the place) were not all met. Kelce and Talib, cleared and released September 25, and Adams, cleared September 26 (questionable), are active; Talib starts outside with Verner, Bouye is the nickel and Prosinski the sixth defensive back (the packet's Talib-in secondary). Nicks's return to X with Adams to Z is Stone's decision, open; his chart place is unchanged. Mike Harris and Dwight Lowery are on reserve/injured from September 8 and are not on the chart. The four reserve/injured players and the seven practice-squad players are not on the 53 and cannot appear here."
+  "note": "Seven of the 53 are inactive for Week 5 against Pittsburgh (46 dress; rules library R4), set by Stone on October 4, 2014 after the Pittsburgh preparation under his September 28 packet, its stated availability assumption holding (Posluszny, Stanford and Phillips eligible within their medical instructions). One by medical instruction, listed last in the defensive-back group while out: Jordan Poyer (independent medical hold, no reassessment communicated in the week, projected return October 9). Six by the packet's selected plan: Malcolm Butler, released by the independent process October 2 and inactive by Stone's decision rather than given a new dime or kicking-game job late in the week; Jonathan Grimes (RB3, no necessary prepared game-day assignment); Corey Linsley (ninth offensive lineman); Kasim Edebali (eighth defensive lineman); Taylor Gabriel (sixth receiver); and Gator Hoskins (fourth tight end). The list replaces Week 4's: Todd Davis dresses in Hoskins's place for linebacker and coverage-unit depth, Stone's stated reason being Pittsburgh's run game, Stanford's injury and Posluszny's late projected clearance. None of the packet's medical contingencies applied: Phillips and Stanford were cleared September 29 and Posluszny October 3. Forty-six dress: two quarterbacks, two backs, the fullback, five receivers, three tight ends, eight linemen, seven defensive linemen, seven linebackers, eight defensive backs, the kicker, the punter and the snapper. Mike Harris and Dwight Lowery are on reserve/injured from September 8 and are not on the chart. The four reserve/injured players and the seven practice-squad players are not on the 53 and cannot appear here."
  }
 }

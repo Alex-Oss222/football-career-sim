@@ -208,6 +208,18 @@ def rebuild_record(week, season, root=ROOT, strength_model=None):
     except ValueError as exc:
         if not own or "Jacksonville" not in str(exc):
             raise
+        package = None
+    if package is not None and own:
+        # Review fix (October 18, 2026, the Week 5 preparation): the current
+        # roster and chart can build a legal Jacksonville unit for an earlier
+        # week that is not the one that dressed (a later week's inactives);
+        # that too means they no longer reproduce the frozen input, so the
+        # closed receipt is the basis, as when the build fails.
+        others = {team for game in package["games"] for team in (game["away"], game["home"])
+                  if team != week_inputs.PROTAGONIST}
+        if rebuild_errors(package, paths.receipts, skip=others):
+            package = None
+    if package is None:
         receipt_input = _jacksonville_from_receipt(own[0], week_inputs.PROTAGONIST)
         with mock.patch.object(week_inputs, "jacksonville_input", return_value=dict(receipt_input)):
             package = week_inputs.build_package(int(week), receipts, sheet, AVERAGE_ANCHORS, int(season),

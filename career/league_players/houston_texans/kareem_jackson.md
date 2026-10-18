@@ -9,8 +9,8 @@
 | Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Houston Texans | 25 | 25 | 16 | 75 | 0 | 7 | 0 | 2 | 0 | 0 | 0 | 4.7 | 0 |
-| 2014 | Houston Texans | 26 | 25 | 4 | 14 | 1 | 4 | 29 | 2 | 0 | 0 | 0 | 3.5 | 0 |
-| **Career** |  |  |  | 20 | 89 | 1 | 11 | 29 | 4 | 0 | 0 | 0 | 4.5 | 0 |
+| 2014 | Houston Texans | 26 | 25 | 5 | 19 | 1 | 5 | 29 | 2 | 0 | 0 | 0 | 3.8 | 0 |
+| **Career** |  |  |  | 21 | 94 | 1 | 12 | 29 | 4 | 0 | 0 | 0 | 4.5 | 0 |
 
 ### Playoffs
 
@@ -22,4 +22,4 @@ None on record.
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Houston Texans players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Houston Texans players](README.md).

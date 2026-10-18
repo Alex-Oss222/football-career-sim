@@ -361,7 +361,11 @@ class ValueTests(unittest.TestCase):
         index = (FOLDER / "README.md").read_text(encoding="utf-8")
         self.assertIn("record through %s." % player_cards.long_date(as_of), index)
         cousins = player("Kirk Cousins", "Jacksonville Jaguars")
-        self.assertEqual(cousins["through"], "2014-09-28")
+        # He has played every Jacksonville game on record: his card runs through the club's latest.
+        jacksonville = max(r["date"] for r in player_cards.collect(ROOT)["games"]
+                           if r["team"] == "Jacksonville Jaguars")
+        self.assertEqual(cousins["through"], jacksonville)
+        self.assertGreaterEqual(cousins["through"], "2014-09-28")
         meester = player("Brad Meester", "Jacksonville Jaguars")
         self.assertEqual(max(meester["seasons"]), 2013)
         self.assertLess(meester["through"], "2014-03-01")

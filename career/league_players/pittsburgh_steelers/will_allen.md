@@ -9,8 +9,8 @@
 | Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Dallas Cowboys | 31 | N/A | 7 | 23 | 1 | 4 | 27 | 0 | 2 | 0 | 0 | 3.3 | 0 |
-| 2014 | Pittsburgh Steelers | 32 | 20 | 4 | 12 | 1 | 1 | 38 | 0 | 0 | 0 | 0 | 3.0 | 0 |
-| **Career** |  |  |  | 11 | 35 | 2 | 5 | 65 | 0 | 2 | 0 | 0 | 3.2 | 0 |
+| 2014 | Pittsburgh Steelers | 32 | 20 | 5 | 12 | 1 | 1 | 38 | 0 | 0 | 0 | 0 | 2.4 | 0 |
+| **Career** |  |  |  | 12 | 35 | 2 | 5 | 65 | 0 | 2 | 0 | 0 | 2.9 | 0 |
 
 ### Playoffs
 
@@ -22,4 +22,4 @@ None on record.
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).

@@ -9,8 +9,8 @@
 | Season | Team | Age | # | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Kansas City Chiefs | 26 | 6 | 16 | 35-38 | 92.1 | N/A | 42-42 | 100.0 | 147 | N/A | N/A | N/A | 9.2 |
-| 2014 | Tennessee Titans | 27 | 8 | 4 | 10-11 | 90.9 | 51 | 8-8 | 100.0 | 38 | 5-6 | 1-1 | 4-4 | 9.5 |
-| **Career** |  |  |  | 20 | 45-49 | 91.8 | N/A | 50-50 | 100.0 | 185 | N/A | N/A | N/A | 9.2 |
+| 2014 | Tennessee Titans | 27 | 8 | 5 | 12-13 | 92.3 | 51 | 10-10 | 100.0 | 46 | 5-6 | 1-1 | 6-6 | 9.2 |
+| **Career** |  |  |  | 21 | 47-51 | 92.2 | N/A | 52-52 | 100.0 | 193 | N/A | N/A | N/A | 9.2 |
 
 ### Playoffs
 
@@ -27,4 +27,4 @@
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).

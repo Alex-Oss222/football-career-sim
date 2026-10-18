@@ -9,8 +9,8 @@
 | Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | New York Jets | 22 | 7 | 16 | 384-613 | 62.6 | 3,933 | 24 | 19 | 6.4 | 81.2 | 245.8 | 130 | 1 |
-| 2014 | New York Jets | 23 | 7 | 4 | 81-137 | 59.1 | 750 | 8 | 1 | 5.5 | 90.6 | 187.5 | 62 | 2 |
-| **Career** |  |  |  | 20 | 465-750 | 62.0 | 4,683 | 32 | 20 | 6.2 | 82.9 | 234.2 | 192 | 3 |
+| 2014 | New York Jets | 23 | 7 | 5 | 96-162 | 59.3 | 974 | 10 | 2 | 6.0 | 91.9 | 194.8 | 68 | 2 |
+| **Career** |  |  |  | 21 | 480-775 | 61.9 | 4,907 | 34 | 21 | 6.3 | 83.4 | 233.7 | 198 | 3 |
 
 ### Playoffs
 
@@ -26,4 +26,4 @@
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
