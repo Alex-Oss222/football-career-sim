@@ -12,6 +12,9 @@ from scripts.season_handoff import (
 )
 from tests.test_annual_assessment_completion import authored_card, empty_period
 
+# Staging and opening fail closed without a readable decision queue.
+EMPTY_QUEUE = {'schema_version': 1, 'enforced_from': {'season': 2014, 'week': 6}, 'items': []}
+
 
 class HandoffTests(unittest.TestCase):
     def baseline(self, root, year):
@@ -20,6 +23,8 @@ class HandoffTests(unittest.TestCase):
     def bare_baseline(self, root, year):
         folder = root / 'career' / str(year)
         folder.mkdir(parents=True,exist_ok=True)
+        (root/'state').mkdir(exist_ok=True)
+        (root/'state/decision_queue.json').write_text(json.dumps(EMPTY_QUEUE))
         evidence = folder/'closed.md'
         evidence.write_text('Synthetic closed interviews and administrative evidence')
         files = {'roster':'roster.md','staff':'coaching_staff.md','depth_chart':'depth.json',
@@ -347,6 +352,50 @@ class HandoffTests(unittest.TestCase):
             prior['pending_decisions']=[{'id':'new-opening-hold','blocks_opening':True,'status':'OPEN'}]
             prior_path.write_text(json.dumps(prior))
             self.assertTrue(any('prior handoff / new-opening-hold' in e for e in opening_errors(root,opening)))
+
+    def write_queue(self, root, kind, status='OPEN'):
+        item = {'id': 'test-'+kind.replace('_', '-'), 'title': 'Test decision', 'class': 'staff_appointment',
+                'owner': 'stone', 'status': status, 'blocks': [{'kind': kind, 'season': 2015}],
+                'record': {'path': 'career/2014/closed.md'}}
+        (root/'state/decision_queue.json').write_text(json.dumps(dict(EMPTY_QUEUE, items=[item])))
+        return item['id']
+
+    def test_open_queue_item_blocks_opening_until_resolved(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);opening=self.completed_opening(root)
+            self.assertEqual(opening_errors(root,opening),[])
+            for kind in ('season_opening', 'season_stage'):
+                # Staging a season implies opening it, so either block holds opening.
+                with self.subTest(kind=kind):
+                    item=self.write_queue(root,kind)
+                    self.assertIn('Unresolved decision blocks opening: decision queue / '+item,
+                                  opening_errors(root,opening))
+                    with self.assertRaisesRegex(ValueError,'decision queue / '+item):review_opening(root,opening)
+                    self.write_queue(root,kind,status='RESOLVED')
+                    self.assertEqual(opening_errors(root,opening),[])
+            (root/'state/decision_queue.json').unlink()
+            self.assertTrue(any(e.startswith('Decision queue unreadable: ') for e in opening_errors(root,opening)))
+
+    def test_open_queue_item_blocks_staging_before_any_write(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);data=self.baseline(root,2014)
+            self.write_queue(root,'season_stage')
+            with self.assertRaisesRegex(ValueError,'Decision open: test-season-stage'):stage(root,data)
+            self.assertFalse((root/'career/2015/opening_handoff.json').exists())
+            self.assertFalse(SeasonPaths(2015,root).roster.exists())
+            self.write_queue(root,'season_stage',status='RESOLVED')
+            first=stage(root,data)
+            self.assertTrue(SeasonPaths(2015,root).roster.exists())
+            # An item that holds only opening does not hold staging.
+            self.write_queue(root,'season_opening')
+            self.assertEqual(stage(root,data),first)
+
+    def test_missing_queue_blocks_staging(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);data=self.baseline(root,2014)
+            (root/'state/decision_queue.json').unlink()
+            with self.assertRaisesRegex(ValueError,'Decision queue unreadable'):stage(root,data)
+            self.assertFalse(SeasonPaths(2015,root).roster.exists())
 
 
 if __name__=='__main__':unittest.main()

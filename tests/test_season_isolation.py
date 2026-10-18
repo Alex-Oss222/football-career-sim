@@ -19,6 +19,10 @@ from scripts import close_week, build_week_inputs, render_box_score
 import check_game_readiness
 from release_staging import copied_root, stage_bound_release, unbound_release_errors
 
+# A synthetic root's decision queue (state/decision_queue.json): without one
+# every weekly gate fails closed.
+EMPTY_QUEUE = {'schema_version': 1, 'enforced_from': {'season': 2014, 'week': 6}, 'items': []}
+
 
 class SeasonIsolationTests(unittest.TestCase):
     def test_missing_2014_schedule_never_uses_2013(self):
@@ -177,6 +181,7 @@ class SeasonIsolationTests(unittest.TestCase):
             state = root / 'state/05_Current_Season_State.md'
             state.parent.mkdir()
             state.write_text('isolated synthetic checkpoint')
+            (root / 'state/decision_queue.json').write_text(json.dumps(EMPTY_QUEUE))
             game = {'event_id': '2014-week01-a-at-b', 'receipt': 'week_01_a_at_b.json',
                     'week': 1, 'home': 'B', 'away': 'A', 'venue': 'home',
                     'home_input': {}, 'away_input': {}}
@@ -203,6 +208,140 @@ class SeasonIsolationTests(unittest.TestCase):
             self.assertTrue(paths.cache(1, 'results').exists())
             runner.assert_called_once()
             self.assertEqual(commands.call_args_list[-1].args[0][-1], '2014')
+
+
+class DecisionQueueCloseGateTests(unittest.TestCase):
+    """scripts/close_week.py refuses an open decision that holds the week, or
+    a part of its committed call sheet, before readiness, the private
+    snapshot or any draw (storage only, on a synthetic root as above)."""
+
+    GAME = {'event_id': '2014-week01-a-at-b', 'receipt': 'week_01_a_at_b.json',
+            'week': 1, 'home': 'B', 'away': 'A', 'venue': 'home',
+            'home_input': {}, 'away_input': {}}
+
+    def setUp(self):
+        tmp = tempfile.TemporaryDirectory(dir=ROOT.parent)
+        self.addCleanup(tmp.cleanup)
+        self.root = Path(tmp.name)
+        self.paths = SeasonPaths(2014, self.root)
+        (self.root / 'state').mkdir()
+        (self.root / 'state/05_Current_Season_State.md').write_text('isolated synthetic checkpoint')
+        inputs = self.paths.cache(1, 'inputs')
+        inputs.parent.mkdir(parents=True)
+        inputs.write_text(json.dumps({'season': 2014, 'week': 1, 'games': [self.GAME]}))
+
+    def write_queue(self, *blocks, cls='weekly_game_plan'):
+        item = {'id': 'test-decision', 'title': 'Test decision', 'class': cls, 'owner': 'stone',
+                'status': 'OPEN', 'blocks': list(blocks), 'deadline': None,
+                'record': {'path': 'career/2014/README.md'}}
+        (self.root / 'state/decision_queue.json').write_text(json.dumps(dict(EMPTY_QUEUE, items=[item])))
+
+    def close(self, *flags):
+        with patch.object(close_week, 'ROOT', self.root), \
+                patch.object(close_week, 'require_game_release'), \
+                patch.object(week_inputs, 'schedule', return_value=[self.GAME]), \
+                patch('scripts.check_week_input_exclusivity.controlled_players_from_roster', return_value=[]), \
+                patch('scripts.check_week_input_exclusivity.check_inputs', return_value=[]), \
+                patch('runtime.game_runner.run_game', return_value={'synthetic': True}) as runner, \
+                patch('runtime.private_client.Client') as client, \
+                patch.object(close_week.subprocess, 'run', return_value=subprocess.CompletedProcess(
+                    [], 0, 'GAME READINESS: READY', '')) as commands, \
+                patch.object(sys, 'argv', ['test', '1', '--season', '2014', *flags]), \
+                contextlib.redirect_stdout(io.StringIO()) as out:
+            code = close_week.main()
+        runner.assert_not_called()
+        client.assert_not_called()
+        commands.assert_not_called()
+        return code, out.getvalue()
+
+    def test_open_item_refuses_a_close_and_a_dry_run_reports_it(self):
+        self.write_queue({'kind': 'week_close', 'season': 2014, 'week': 1})
+        code, out = self.close('--close')
+        self.assertEqual(code, 1)
+        self.assertIn('WEEK_CLOSE: BLOCKED\n- Decision open: test-decision, Test decision. It holds the Week 1 '
+                      'game.', out)
+        self.assertFalse(self.paths.cache(1, 'results').exists())
+        code, out = self.close()
+        self.assertEqual(code, 0)
+        self.assertIn('Note: Decision open: test-decision', out)
+        self.assertIn('(a --close would be refused)', out)
+        self.assertIn('Dry run: 1 games', out)
+
+    def test_missing_queue_fails_closed(self):
+        code, out = self.close('--close')
+        self.assertEqual(code, 1)
+        self.assertIn('WEEK_CLOSE: BLOCKED\n- Decision queue unreadable (state/decision_queue.json', out)
+
+    def test_open_part_refuses_only_a_committed_sheet_that_freezes_it(self):
+        self.write_queue({'kind': 'call_sheet_part', 'season': 2014, 'week': 1, 'part': 'decisions.fourth_down'},
+                         cls='game_management_rule')
+        sheet = self.paths.week_folder(1) / 'call_sheet.json'
+        sheet.parent.mkdir(parents=True)
+        sheet.write_text(json.dumps({'offensive_call_sheet': [], 'decisions': {'fourth_down': {}}}))
+        code, out = self.close('--close')
+        self.assertEqual(code, 1)
+        self.assertIn('It holds freezing a fourth-down rule in the Week 1 call sheet.', out)
+        # Without that part the item holds nothing; the dry run reports none.
+        sheet.write_text(json.dumps({'offensive_call_sheet': [], 'decisions': {'two_point': {}}}))
+        code, out = self.close()
+        self.assertEqual(code, 0)
+        self.assertNotIn('Decision open', out)
+
+    def test_paused_game_is_left_unchanged_and_the_edit_must_be_reverted(self):
+        self.write_queue({'kind': 'week_close', 'season': 2014, 'week': 1})
+        record = self.paths.paused_game(1)
+        record.parent.mkdir(parents=True)
+        record.write_text(json.dumps({'status': 'paused', 'event_id': self.GAME['event_id']}))
+        before = record.read_bytes()
+        answer = self.root / 'answer.json'
+        answer.write_text(json.dumps({'choices': {}}))
+        code, out = self.close('--close', '--continue', str(answer))
+        self.assertEqual(code, 1)
+        self.assertEqual(record.read_bytes(), before)
+        self.assertIn('WEEK_CLOSE: BLOCKED', out)
+        self.assertIn('revert the edit that opened this item, then rerun the same --continue', out)
+        self.assertNotIn('advance the private snapshot', out)
+
+    def test_paused_game_without_continue_names_only_the_revert(self):
+        self.write_queue({'kind': 'week_close', 'season': 2014, 'week': 1})
+        record = self.paths.paused_game(1)
+        record.parent.mkdir(parents=True)
+        record.write_text(json.dumps({'status': 'paused', 'event_id': self.GAME['event_id']}))
+        code, out = self.close('--close')
+        self.assertEqual(code, 1)
+        self.assertIn('revert the edit that opened this item, then rerun with --continue', out)
+        self.assertNotIn('advance the private snapshot', out)
+
+    def test_part_frozen_in_the_package_holds_after_the_sheet_drops_it(self):
+        # The package froze Jacksonville's fourth-down rule; the committed
+        # sheet lost the block, or the sheet itself, after the build.
+        game = dict(self.GAME, home='Jacksonville Jaguars',
+                    home_input={'team_id': 'Jacksonville Jaguars', 'fourth_down_policy': {'rules': []}})
+        self.paths.cache(1, 'inputs').write_text(json.dumps({'season': 2014, 'week': 1, 'games': [game]}))
+        self.write_queue({'kind': 'call_sheet_part', 'season': 2014, 'week': 1, 'part': 'decisions.fourth_down'},
+                         cls='game_management_rule')
+        sheet = self.paths.week_folder(1) / 'call_sheet.json'
+        sheet.parent.mkdir(parents=True)
+        sheet.write_text(json.dumps({'offensive_call_sheet': [], 'decisions': {'two_point': {}}}))
+        for present in (True, False):
+            if not present:
+                sheet.unlink()
+            with self.subTest(sheet=present):
+                code, out = self.close('--close')
+                self.assertEqual(code, 1)
+                self.assertIn('It holds freezing a fourth-down rule in the Week 1 call sheet.', out)
+
+    def test_partly_closed_slate_is_never_voided_or_redrawn(self):
+        self.write_queue({'kind': 'week_close', 'season': 2014, 'week': 1})
+        results = self.paths.cache(1, 'results')
+        results.write_text(json.dumps({self.GAME['event_id']: {'synthetic': True}}))
+        before = results.read_bytes()
+        code, out = self.close('--close')
+        self.assertEqual(code, 1)
+        self.assertEqual(results.read_bytes(), before)
+        self.assertIn('Never void or redraw the week for it.', out)
+        self.assertNotIn('advance the private snapshot', out)
+        self.assertFalse(self.paths.receipts.exists())
 
 
 if __name__ == '__main__':

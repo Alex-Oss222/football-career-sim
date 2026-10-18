@@ -46,6 +46,7 @@ A script that talks to the private Engine State service needs `ENGINE_RUNTIME_UR
 | Command | What it does |
 |---|---|
 | `python scripts/render_annual_record.py YEAR [--root PATH] [--check]` | The one-line annual `Record.md` from each event owner's metadata |
+| `python scripts/render_career_views.py [--check]` | The career views (Document 5, the staff register's phase control, the head coach's desk) from the current-job record and the decision queue; writing is refused while a Jacksonville game is paused |
 | `python scripts/render_trade_pages.py YEAR [--check]` | Trade navigation from the completed-trade index |
 | `python scripts/render_jaguars_cap_tracker.py [--check]` | The twelve-year financial horizon from the contract inputs |
 | `python scripts/render_draft_order.py [--check]` | The 2014 draft order from the closed receipts |

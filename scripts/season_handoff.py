@@ -9,6 +9,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+from runtime import decision_queue
 from runtime.seasons import SeasonPaths
 from runtime.season_layout import opening_guides
 from runtime.events import EVENT_META, resolve_path
@@ -282,6 +283,14 @@ def opening_errors(root, data):
                     and decision.get('status') != 'RESOLVED'):
                 errors.append('Unresolved decision blocks opening: '+origin+' / '+
                               str(decision.get('id', decision.get('decision', 'unnamed decision'))))
+    # The decision queue (state/decision_queue.json) holds opening as well;
+    # an unreadable queue refuses it.
+    try:
+        queue = decision_queue.load(root)
+        for item, _ in decision_queue.blocking_items(queue, [decision_queue.event('season_opening', year)]):
+            errors.append('Unresolved decision blocks opening: decision queue / '+str(item.get('id')))
+    except ValueError as exc:
+        errors.append('Decision queue unreadable: '+str(exc))
     if data.get('status') != 'STAGED' or data.get('source_season') != year-1:
         errors.append('Opening manifest is not a staged successor')
     review = data.get('opening_review', {})
@@ -423,11 +432,13 @@ def unplayed_opening_errors(paths):
 
 
 def stage(root, data):
-    """Preflight every write; existing different files cannot be overwritten."""
+    """Preflight every write; existing different files cannot be overwritten.
+    An open decision-queue item that holds staging the successor refuses it."""
     root = Path(root).resolve()
     errors = check(root, data, staging=True)
     if errors:
         raise ValueError('; '.join(errors))
+    decision_queue.refuse_if_blocked([decision_queue.event('season_stage', data['next_season'])], root)
     year, nxt = data['season'], data['next_season']
     paths = SeasonPaths(nxt, root)
     folder = paths.career

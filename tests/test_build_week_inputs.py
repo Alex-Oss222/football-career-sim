@@ -1,4 +1,5 @@
-"""scripts/build_week_inputs.py: the information gate and its messages."""
+"""scripts/build_week_inputs.py: the information gate, the decision-queue
+gates and their messages."""
 import contextlib
 import io
 import json
@@ -12,7 +13,8 @@ from unittest import mock
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from runtime import week_inputs
+from runtime import decision_queue, week_inputs
+from runtime.seasons import SeasonPaths
 from scripts import build_week_inputs
 
 
@@ -61,6 +63,75 @@ class CallSheetMessageTests(unittest.TestCase):
         self.assertEqual(code, 1)
         self.assertIn("No Jacksonville call sheet for Week 1: Stone's weekly plan must be frozen as "
                       "career/2014/05_Regular_Season/Games/Week_01/call_sheet.json", out.getvalue())
+
+
+class DecisionQueueGateTests(unittest.TestCase):
+    """An open item that holds the week, or a part its call sheet freezes,
+    stops the build before any input is built (runtime.decision_queue). The
+    queue is patched, so the repository's own items never matter here."""
+
+    def queue(self, block, cls="weekly_game_plan"):
+        item = {"id": "test-item", "title": "Test decision", "class": cls, "owner": "stone",
+                "status": "OPEN", "blocks": [block], "deadline": None,
+                "record": {"path": "career/2014/README.md"}}
+        return {"schema_version": 1, "enforced_from": {"season": 2014, "week": 1}, "items": [item]}
+
+    def build(self, *patches):
+        out = io.StringIO()
+        with contextlib.ExitStack() as stack:
+            stack.enter_context(mock.patch.object(build_week_inputs, "require_game_release"))
+            stack.enter_context(mock.patch.object(sys, "argv", ["x", "1", "--season", "2014"]))
+            for patch in patches:
+                stack.enter_context(patch)
+            stack.enter_context(contextlib.redirect_stdout(out))
+            code = build_week_inputs.main()
+        return code, out.getvalue()
+
+    def test_open_plan_blocks_the_build_and_leaves_no_package(self):
+        queue = self.queue(decision_queue.event("week_inputs", 2014, 1))
+        code, out = self.build(mock.patch.object(decision_queue, "load", return_value=queue),
+                               mock.patch.object(build_week_inputs, "build_package",
+                                                 side_effect=AssertionError("built")))
+        self.assertEqual(code, 1)
+        self.assertIn("WEEK_INPUTS: BLOCKED\n- Decision open: test-item, Test decision. It holds the Week 1 "
+                      "game", out)
+        self.assertFalse(SeasonPaths(2014).cache(1, "inputs").exists())
+
+    def test_unreadable_queue_fails_closed(self):
+        code, out = self.build(mock.patch.object(decision_queue, "load",
+                                                 side_effect=ValueError("state/decision_queue.json: missing")),
+                               mock.patch.object(build_week_inputs, "build_package",
+                                                 side_effect=AssertionError("built")))
+        self.assertEqual(code, 1)
+        self.assertIn("WEEK_INPUTS: BLOCKED\n- Decision queue unreadable (state/decision_queue.json: missing)",
+                      out)
+        self.assertFalse(SeasonPaths(2014).cache(1, "inputs").exists())
+
+    def test_open_part_blocks_only_a_sheet_that_freezes_it(self):
+        queue = self.queue(decision_queue.event("call_sheet_part", 2014, 1, part="decisions.fourth_down"),
+                           cls="game_management_rule")
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "call_sheet.json"
+            path.write_text(json.dumps({"offensive_call_sheet": [], "decisions": {"fourth_down": {}}}),
+                            encoding="utf-8")
+            code, out = self.build(mock.patch.object(decision_queue, "load", return_value=queue),
+                                   mock.patch.object(build_week_inputs, "call_sheet_path", return_value=path),
+                                   mock.patch.object(build_week_inputs, "build_package",
+                                                     side_effect=AssertionError("built")))
+            self.assertEqual(code, 1)
+            self.assertIn("WEEK_INPUTS: BLOCKED\n- Decision open: test-item", out)
+            self.assertIn("It holds freezing a fourth-down rule in the Week 1 call sheet.", out)
+            # Without that part the same item holds nothing: the build goes on
+            # to the package, which the patch stops with a sentinel.
+            path.write_text(json.dumps({"offensive_call_sheet": [], "decisions": {"two_point": {}}}),
+                            encoding="utf-8")
+            code, out = self.build(mock.patch.object(decision_queue, "load", return_value=queue),
+                                   mock.patch.object(build_week_inputs, "call_sheet_path", return_value=path),
+                                   mock.patch.object(build_week_inputs, "build_package",
+                                                     side_effect=ValueError("sentinel")))
+        self.assertEqual(code, 1)
+        self.assertIn("WEEK_INPUTS: BLOCKED\n- sentinel", out)
+        self.assertNotIn("Decision open", out)
 
 
 class ActiveStatusTests(unittest.TestCase):

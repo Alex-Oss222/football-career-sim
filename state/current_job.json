@@ -1,0 +1,893 @@
+{
+ "schema_version": 1,
+ "holder": "stone",
+ "status": "EMPLOYED",
+ "current_appointment": "2013-01-15-jax-head-coach",
+ "parties": {
+  "stone": {
+   "name": "Alex Stone",
+   "kind": "person",
+   "aliases": [
+    "Stone"
+   ]
+  },
+  "khan": {
+   "name": "Shad Khan",
+   "kind": "person",
+   "aliases": [
+    "Khan",
+    "ownership"
+   ]
+  },
+  "caldwell": {
+   "name": "David Caldwell",
+   "kind": "person",
+   "aliases": [
+    "Caldwell"
+   ]
+  },
+  "tice": {
+   "name": "Mike Tice",
+   "kind": "person"
+  },
+  "crennel": {
+   "name": "Romeo Crennel",
+   "kind": "person"
+  },
+  "westhoff": {
+   "name": "Mike Westhoff",
+   "kind": "person"
+  },
+  "lowry": {
+   "name": "Alan Lowry",
+   "kind": "person"
+  },
+  "bates": {
+   "name": "Jeremy Bates",
+   "kind": "person"
+  },
+  "skalaski": {
+   "name": "Charlie Skalaski",
+   "kind": "person"
+  },
+  "daryl_smith": {
+   "name": "Daryl Smith",
+   "kind": "player"
+  },
+  "medical_staff": {
+   "name": "Team medical staff",
+   "kind": "group",
+   "aliases": [
+    "medical personnel",
+    "medical and communications staff"
+   ]
+  },
+  "communications_staff": {
+   "name": "Team communications staff",
+   "kind": "group",
+   "aliases": [
+    "communications department",
+    "communications staff"
+   ]
+  },
+  "coaching_staff": {
+   "name": "Jacksonville coaching staff",
+   "kind": "group"
+  }
+ },
+ "appointments": [
+  {
+   "id": "2013-01-15-jax-head-coach",
+   "employer": {
+    "club": "Jacksonville Jaguars",
+    "team_id": "JAX",
+    "league": "NFL"
+   },
+   "title": "Head coach",
+   "role": "head_coach",
+   "unit": "team",
+   "start": "2013-01-15",
+   "end": null,
+   "term": {
+    "end_date": null,
+    "end_basis": "No end date is recorded; only the four-year length (Document 3 §3.1; docs/season_cycle_milestones.md §4 item 1)"
+   },
+   "contract": [
+    {
+     "path": "foundation/03_Head_Coach_Organization_and_Authority_Canon.md",
+     "anchor": "31-head-coach-contract"
+    },
+    {
+     "path": "career/2013/offseason/head_coach_contract.md"
+    }
+   ],
+   "history": [
+    {
+     "date": "2013-01-15",
+     "kind": "accepted",
+     "event": "2013-01-15-pre-hire-search-closure",
+     "record": {
+      "path": "career/2013/offseason/hiring_search.md",
+      "anchor": "entry-7--jacksonville-counter-resolved-offer-accepted"
+     }
+    },
+    {
+     "date": "2014-01-15",
+     "kind": "retained",
+     "note": "on his existing contract; nothing about the contract, his authority or his staff changes",
+     "event": "2014-01-15-stone-retained",
+     "record": {
+      "path": "career/2013/season_review/owner_and_gm_review.md",
+      "anchor": "entry-3-the-clubs-decision"
+     }
+    }
+   ],
+   "reporting": {
+    "employment_decided_by": [
+     "khan",
+     "caldwell"
+    ],
+    "employment_row": "1",
+    "direct_supervisor": null,
+    "evaluator": null,
+    "cadence": null,
+    "escalation": null,
+    "unset_basis": {
+     "path": "foundation/03_Head_Coach_Organization_and_Authority_Canon.md",
+     "anchor": "32-reporting-and-evaluation"
+    }
+   },
+   "evaluation": [
+    {
+     "id": "year-1-standard",
+     "by": "contract",
+     "season": 2013,
+     "text": "Functional program installation, credible player development, dependable preparation/communication, and an evidence-based quarterback direction; no immediate-playoff requirement",
+     "record": {
+      "path": "career/2013/offseason/head_coach_contract.md"
+     }
+    },
+    {
+     "id": "caldwell-2014-first-measures",
+     "by": "caldwell",
+     "season": 2014,
+     "label": "first 2014 measures",
+     "measures": [
+      "the scoring margin",
+      "the quarterback's ball security and protection"
+     ],
+     "record": {
+      "path": "career/2013/season_review/owner_and_gm_review.md",
+      "anchor": "follow-ups"
+     }
+    }
+   ],
+   "employer_requests": [
+    {
+     "id": "khan-london-week",
+     "by": "khan",
+     "season": 2014,
+     "status": "OPEN",
+     "text": "prepare the London week for Dallas (November 9, 2014, Wembley) on the 2013 Wembley plan",
+     "record": {
+      "path": "career/2013/season_review/owner_and_gm_review.md",
+      "anchor": "follow-ups"
+     }
+    }
+   ],
+   "default_sees": {
+    "record": {
+     "path": "foundation/03_Head_Coach_Organization_and_Authority_Canon.md",
+     "anchor": "62-boundary-rules"
+    }
+   },
+   "authority": {
+    "taxonomy": {
+     "path": "foundation/03_Head_Coach_Organization_and_Authority_Canon.md",
+     "anchor": "5-authority-map"
+    },
+    "domains": [
+     {
+      "row": "1",
+      "domain": "Hire, retain, suspend, or fire the head coach",
+      "final": [
+       "khan",
+       "caldwell"
+      ],
+      "stone_action": "responds",
+      "final_text": "Owner Shad Khan and GM David Caldwell (Caldwell conducted and closed the search under Khan's ownership)",
+      "permitted": "The user may negotiate, object, or resign, but cannot decide the employer's action.",
+      "consultation": "[UNSET]",
+      "limits": "[UNSET]",
+      "provenance": "`hiring_search.md` Entries 1, 7; library/2013_coaching_market_pre_hire.md §3.2",
+      "scope": null,
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "2",
+      "domain": "Hire, retain, assign, suspend, or fire assistant coaches",
+      "final": [
+       "stone"
+      ],
+      "stone_action": "decides",
+      "final_text": "Stone",
+      "permitted": "Stone selects and hires his own coaching staff.",
+      "consultation": "Caldwell's general budget/cap authority (row 6) still applies to what the staff costs.",
+      "limits": "Contract, budget, equal-employment, league requirements as applicable",
+      "provenance": "`hiring_search.md` Entries 4, 6-7",
+      "scope": null,
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "3",
+      "domain": "Final player-acquisition and target-selection decisions",
+      "final": [
+       "caldwell"
+      ],
+      "stone_action": "recommends",
+      "final_text": "Caldwell, **except** row 3a",
+      "permitted": "Stone may recommend and evaluate; final call rests with Caldwell outside row 3a.",
+      "consultation": "Caldwell must obtain and consider Stone's written projection for row-3a matters",
+      "limits": "Distinguish target selection from contract execution (row 5) and transaction mechanisms (row 20)",
+      "provenance": "`hiring_search.md` Entries 6-7",
+      "scope": "except row 3a",
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "3a",
+      "domain": "Franchise-level quarterback decisions specifically: using the first-round pick on a QB, trading premium draft capital for one, a major multiyear financial commitment to one as the intended starter, or a major disposition of the starting QB",
+      "final": [
+       "caldwell"
+      ],
+      "stone_action": "consulted",
+      "final_text": "Caldwell",
+      "permitted": "Stone has a consultation and documented-voice right, not a concurrence or veto. Stone proposed a limited concurrence right in exchange for a partial guarantee; Jacksonville declined and the original terms stand.",
+      "consultation": "Caldwell must obtain and consider Stone's written football projection and meet with him to resolve disagreement before acting",
+      "limits": "Neither Gabbert nor a QB at the second selection is mandated in advance",
+      "provenance": "`hiring_search.md` Entries 6-7",
+      "scope": "written football projection and a meeting to resolve disagreement before Caldwell acts; no concurrence or veto",
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "4",
+      "domain": "Draft selections or recruiting offers",
+      "final": [
+       "caldwell"
+      ],
+      "stone_action": "recommends",
+      "final_text": "Caldwell",
+      "permitted": "Stone may recommend",
+      "consultation": "[UNSET beyond row 3a's QB carve-out]",
+      "limits": "Applicable draft, recruiting, admissions, eligibility, and calendar rules",
+      "provenance": "`hiring_search.md` Entries 6-7",
+      "scope": null,
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "5",
+      "domain": "Player contract negotiation and execution",
+      "final": [
+       "caldwell"
+      ],
+      "stone_action": "unset",
+      "final_text": "Caldwell",
+      "permitted": "[UNSET]",
+      "consultation": "Agent, contract, cap, legal, and ownership or administration roles as applicable",
+      "limits": "Applicable CBA, law, budget, and approval rules",
+      "provenance": "`hiring_search.md` Entries 6-7",
+      "scope": null,
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "6",
+      "domain": "Salary-cap management or team and program budget",
+      "final": [
+       "caldwell"
+      ],
+      "stone_action": "decides_part",
+      "final_text": "Caldwell, **except** the assistant-coach budget ceiling Stone was promised (Section 3.1)",
+      "permitted": "Stone controls how the promised assistant-coach budget is spent within that ceiling.",
+      "consultation": "[UNSET]",
+      "limits": "Selected season's actual financial rules. No fictional cap may be implied.",
+      "provenance": "`hiring_search.md` Entries 4, 6-7",
+      "scope": "how the promised assistant-coach budget is spent within its ceiling",
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "7",
+      "domain": "Final roster cuts and roster-limit compliance",
+      "final": [
+       "caldwell"
+      ],
+      "stone_action": "recommends",
+      "final_text": "Caldwell (inferred from his retained general personnel/acquisition authority, row 3; not itself separately negotiated)",
+      "permitted": "Stone provides the coaching evaluation Caldwell weighs.",
+      "consultation": null,
+      "limits": "Roster, notice, waiver, contract, and deadline rules",
+      "provenance": "Labeled inference, not an explicit contract term — `hiring_search.md` Entries 6-7",
+      "scope": "the coaching evaluation Caldwell weighs",
+      "inference": true,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "8",
+      "domain": "Game-day active status, elevations, and inactives",
+      "final": [
+       "stone"
+      ],
+      "stone_action": "decides",
+      "final_text": "Stone",
+      "permitted": "Game-day decisions are Stone's, per the accepted offer.",
+      "consultation": "Medical availability (rows 15-16) still controls",
+      "limits": "Active-list, elevation, reporting, and deadline rules",
+      "provenance": "`hiring_search.md` Entries 6-7",
+      "scope": null,
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "9",
+      "domain": "Depth chart and package roles",
+      "final": [
+       "stone"
+      ],
+      "stone_action": "decides",
+      "final_text": "Stone",
+      "permitted": "Explicit contract term.",
+      "consultation": "Coordinators and position coaches provide input",
+      "limits": "Availability, contract, roster, and competition rules",
+      "provenance": "`hiring_search.md` Entries 4, 6-7",
+      "scope": null,
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "10",
+      "domain": "Starting lineups",
+      "final": [
+       "stone"
+      ],
+      "stone_action": "decides",
+      "final_text": "Stone",
+      "permitted": "Follows from depth-chart authority (row 9) and game-day authority (row 8).",
+      "consultation": "Coordinators, position coaches, and medical availability",
+      "limits": "The head coach cannot start a medically unavailable or ineligible player.",
+      "provenance": "`hiring_search.md` Entries 6-7",
+      "scope": null,
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "11",
+      "domain": "Practice schedule, workload, and repetition allocation",
+      "final": [
+       "stone"
+      ],
+      "stone_action": "decides",
+      "final_text": "Stone (inferred from his retained head-coach/game-day/depth-chart authority; not itself a separately negotiated line item)",
+      "permitted": "Sets the practice structure.",
+      "consultation": "Medical, performance, coordinator, facilities, and operations input",
+      "limits": "CBA, governing-body, calendar, travel, and facility limits",
+      "provenance": "Labeled inference — `hiring_search.md` Entries 6-7",
+      "scope": null,
+      "inference": true,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "12",
+      "domain": "Offensive game-day operation",
+      "final": [
+       "stone"
+      ],
+      "stone_action": "decides",
+      "final_text": "Stone",
+      "permitted": "Calls or delegates as head coach, including in-game changes.",
+      "consultation": "Mike Tice and offensive staff",
+      "limits": "Applicable game rules",
+      "provenance": "Head-coach responsibilities; user clarification, [original-contract reconciliation](../career/2014/00_Team_Operations/Finances/player_contracts/contracts.md)",
+      "scope": null,
+      "inference": false,
+      "delegated": "delegation.play_calling.offense",
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "13",
+      "domain": "Defensive game-day operation",
+      "final": [
+       "stone"
+      ],
+      "stone_action": "decides",
+      "final_text": "Stone (formal authority of the head-coach role)",
+      "permitted": "Calls or delegates as head coach, including in-game changes.",
+      "consultation": "Current coaching-staff register",
+      "limits": "Applicable game rules; Section 4 may record operational delegation but cannot change this row",
+      "provenance": "Structural default only; not part of the negotiated contract terms",
+      "scope": null,
+      "inference": false,
+      "delegated": "delegation.play_calling.defense",
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "14",
+      "domain": "Special-teams decisions and calls",
+      "final": [
+       "stone"
+      ],
+      "stone_action": "decides",
+      "final_text": "Stone (formal authority of the head-coach role)",
+      "permitted": "Calls or delegates as head coach, including in-game changes.",
+      "consultation": "Current coaching-staff register",
+      "limits": "Applicable game rules; Section 4 may record operational delegation but cannot change final authority",
+      "provenance": "Structural final authority unchanged; Entry 84 appointment ends the Entry 75 interim assignment",
+      "scope": null,
+      "inference": false,
+      "delegated": "delegation.play_calling.special_teams",
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "15",
+      "domain": "Medical diagnosis",
+      "final": [
+       "medical_staff"
+      ],
+      "stone_action": "none",
+      "final_text": "Qualified medical personnel (team physician/athletic training staff, per standard NFL practice)",
+      "permitted": "No diagnostic authority. The coach may report observations and request an evaluation.",
+      "consultation": "Player, team physician, athletic trainers, and specialists as applicable",
+      "limits": "Medical ethics, law, CBA, governing-body policy, and privacy rules",
+      "provenance": "Standard NFL structure, not bespoke to this contract",
+      "scope": null,
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "16",
+      "domain": "Medical clearance and return-to-participation status",
+      "final": [
+       "medical_staff"
+      ],
+      "stone_action": "none",
+      "final_text": "Qualified medical personnel (team physician/athletic training staff)",
+      "permitted": "No power to clear or overrule. The coach may decide how to use a medically available player within stated limitations.",
+      "consultation": "Player, physician, athletic training, performance, independent specialists or protocols as applicable",
+      "limits": "Medical protocol, law, CBA, and governing-body rules",
+      "provenance": "Standard NFL structure, not bespoke to this contract",
+      "scope": null,
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "17",
+      "domain": "Injury reporting and official availability designation",
+      "final": [
+       "medical_staff",
+       "communications_staff"
+      ],
+      "stone_action": "informs",
+      "final_text": "Team medical and communications staff, per the league's official injury-report rules for the season in play",
+      "permitted": "The coach may supply football-use information but cannot alter medical findings.",
+      "consultation": "Medical, communications, legal or compliance, and league personnel",
+      "limits": "Selected season's exact reporting and privacy rules (Document 2)",
+      "provenance": "Standard NFL structure, not bespoke to this contract",
+      "scope": null,
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "18",
+      "domain": "Player discipline",
+      "final": [
+       "stone"
+      ],
+      "stone_action": "decides_part",
+      "final_text": "Stone, for ordinary football discipline (consistent with his established 2012 interim-HC record of holding \"team discipline\" authority, Section 1.4); serious or legal matters escalate to Caldwell/ownership/league",
+      "permitted": "[UNSET — Stone's specific disciplinary philosophy/approach is not yet established canon; see Section 2]",
+      "consultation": "Personnel executive, legal or compliance, union, owner or administrator, and security as applicable for serious matters",
+      "limits": "Contract, CBA, law, league, due-process, and appeal rules",
+      "provenance": "Inferred from Stone's established prior HC record, not a bespoke Jacksonville contract term",
+      "scope": "ordinary football discipline; serious or legal matters escalate",
+      "inference": true,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "19",
+      "domain": "Media policy, access, and official communications",
+      "final": [
+       "communications_staff",
+       "stone"
+      ],
+      "stone_action": "decides_part",
+      "final_text": "Team communications department for official/organizational policy; Stone handles direct football-related media as head coach",
+      "permitted": "[UNSET — Stone's specific media approach/voice is not yet established canon; see Section 2]",
+      "consultation": "Communications department and executive leadership",
+      "limits": "League, sponsor, contract, and legal rules",
+      "provenance": "Standard NFL structure; Stone's specific approach not yet canon",
+      "scope": "direct football-related media",
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "20",
+      "domain": "Professional trades, waivers, claims, releases, reserve mechanisms, and practice-squad transactions",
+      "final": [
+       "caldwell"
+      ],
+      "stone_action": "recommends",
+      "final_text": "Caldwell",
+      "permitted": "Stone may recommend, per Document 7 §6.2a's trade procedure.",
+      "consultation": "Personnel, cap or contract, medical, and ownership roles as applicable",
+      "limits": "Selected season's transaction rules and deadlines",
+      "provenance": "`hiring_search.md` Entries 6-7",
+      "scope": null,
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "21",
+      "domain": "College or amateur transfers, scholarships, eligibility, admissions, and recruiting administration",
+      "final": [],
+      "stone_action": "not_applicable",
+      "final_text": "NOT APPLICABLE",
+      "permitted": "NOT APPLICABLE",
+      "consultation": "NOT APPLICABLE",
+      "limits": "NOT APPLICABLE",
+      "provenance": "NFL team; no college/amateur eligibility apparatus applies",
+      "scope": null,
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
+      "row": "22",
+      "domain": "Facilities, staffing levels, equipment, technology, travel resources, and other material allocation",
+      "final": [
+       "caldwell",
+       "khan"
+      ],
+      "stone_action": "decides_part",
+      "final_text": "Caldwell/ownership generally, **except** the assistant-coach budget ceiling in row 6/Section 3.1",
+      "permitted": "Stone's input governs how the promised assistant-coach budget is used.",
+      "consultation": "Operations, finance, ownership or administration, medical, performance, and business units",
+      "limits": "Budget, procurement, law, league, and facility limits",
+      "provenance": "`hiring_search.md` Entries 4, 6-7 for the staff-budget carve-out only",
+      "scope": "how the promised assistant-coach budget is used",
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     }
+    ]
+   },
+   "delegation": {
+    "play_calling": [
+     {
+      "phase": "offense",
+      "caller": "stone",
+      "prepares": "tice",
+      "from": null,
+      "from_label": "the 2013 season",
+      "to": null,
+      "stone_retains": "Final offensive menu, game-plan approval, situational direction, game management",
+      "record": {
+       "path": "career/2013/coaching_staff.md",
+       "anchor": "phase-control"
+      }
+     },
+     {
+      "phase": "defense",
+      "caller": "crennel",
+      "prepares": "crennel",
+      "from": null,
+      "from_label": "the 2013 season",
+      "to": "2014-09-28",
+      "stone_retains": "Final team principles, coordinator supervision, major situational/game-management decisions",
+      "record": {
+       "path": "career/2013/coaching_staff.md",
+       "anchor": "phase-control"
+      }
+     },
+     {
+      "phase": "defense",
+      "caller": "stone",
+      "prepares": "crennel",
+      "transmits": "crennel",
+      "transmits_what": "the call and the between-snap information",
+      "front_declaration": "daryl_smith",
+      "instructed": "2014-09-21",
+      "from": "2014-09-28",
+      "from_label": "Week 4",
+      "to": null,
+      "end_rule": "No end date stated; in force until changed",
+      "stone_retains": "Final team principles, coordinator supervision, major situational/game-management decisions; the defensive calls",
+      "event": "2014-09-27-san-diego-preparation-closed",
+      "record": {
+       "path": "career/2014/05_Regular_Season/Games/Week_04/Week 4 Packet_ at San Diego.md",
+       "anchor": "hc-direction"
+      },
+      "continued": [
+       {
+        "date": "2014-09-28",
+        "record": {
+         "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md"
+        }
+       }
+      ]
+     },
+     {
+      "phase": "special_teams",
+      "caller": "lowry",
+      "prepares": "lowry",
+      "from": null,
+      "from_label": "the 2013 season",
+      "to": "2014-01-12",
+      "record": {
+       "path": "career/2013/coaching_staff.md",
+       "anchor": "phase-control"
+      }
+     },
+     {
+      "phase": "special_teams",
+      "caller": "stone",
+      "prepares": "stone",
+      "interim": true,
+      "from": "2014-01-12",
+      "to": "2014-02-11",
+      "event": "2014-01-12-lowry-atlanta-hire",
+      "record": {
+       "path": "career/2014/01_Early_Offseason/staff_changes/timeline.md"
+      }
+     },
+     {
+      "phase": "special_teams",
+      "caller": "westhoff",
+      "prepares": "westhoff",
+      "from": "2014-02-11",
+      "to": null,
+      "stone_retains": "Final team-level priorities, roster/use decisions within Stone's authority, consequential game management",
+      "event": "2014-02-11-westhoff-hired",
+      "record": {
+       "path": "career/2014/01_Early_Offseason/staff_changes/hires.md"
+      }
+     }
+    ],
+    "game_management": {
+     "decides": "stone",
+     "with": "staff recommendations",
+     "decisions": [
+      {
+       "id": "fourth_down",
+       "mechanism": "live",
+       "how": "a live pause, unless the week's call sheet freezes a rule"
+      },
+      {
+       "id": "two_point",
+       "mechanism": "sheet_rule",
+       "how": "the call sheet's frozen rule, or a live pause when the rule says ask"
+      },
+      {
+       "id": "kickoff",
+       "mechanism": "sheet_rule",
+       "how": "the call sheet's frozen kickoff rule, or a live pause when the rule says ask"
+      },
+      {
+       "id": "timeouts_and_clock",
+       "mechanism": "not_live",
+       "how": "set by the game model with each replayed drive, not by Stone (defect register item 30)",
+       "record": {
+        "path": "runtime/defect_register.md"
+       }
+      },
+      {
+       "id": "replay_challenge",
+       "mechanism": "not_modelled",
+       "how": "no challenge decision exists in the game"
+      }
+     ],
+     "record": {
+      "path": "foundation/03_Head_Coach_Organization_and_Authority_Canon.md",
+      "anchor": "4-game-day-staff-responsibilities"
+     }
+    },
+    "relay": {
+     "carriers": [
+      {
+       "party": "tice",
+       "carries": "the offensive situation and the next eligible opening call"
+      },
+      {
+       "party": "bates",
+       "carries": "quarterback and protection information"
+      },
+      {
+       "party": "skalaski",
+       "carries": "clock, timeout, fourth-down and challenge information"
+      }
+     ],
+     "event": "2014-09-20-indianapolis-preparation-closed",
+     "record": {
+      "path": "career/2014/05_Regular_Season/Games/Week_03/Week 3 Packet_ Indianapolis.md",
+      "anchor": "decisions-needed-from-stone"
+     },
+     "continued": [
+      {
+       "date": "2014-09-28",
+       "record": {
+        "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md"
+       }
+      }
+     ]
+    },
+    "emergency": {
+     "practice_lead": [
+      "tice",
+      "crennel"
+     ],
+     "limits": "run the approved schedule, keep the periods on time, coordinate the three phases and make ordinary situational adjustments; no depth-chart, install, role, disciplinary or personnel change",
+     "unchanged": "Crennel continues to run the defense and Westhoff special teams; medical staff retain all participation authority",
+     "from": "2014-04-18",
+     "event": "2014-04-18-offseason-operating-decisions",
+     "record": {
+      "path": "career/2014/02_Offseason_Training/stone_april_18_2014_decisions.md",
+      "anchor": "practice-if-stone-is-out"
+     },
+     "game_day_caller": null,
+     "game_day_note": "Not appointed; never a prerequisite (the AGENTS.md play-calling rule)"
+    }
+   },
+   "standing_instructions": [
+    {
+     "id": "continue-calling-arrangement",
+     "subject": "play_calling",
+     "status": "IN_FORCE",
+     "closes": [
+      "play_calling_delegation",
+      "emergency_succession"
+     ],
+     "summary": "Stone can call, delegate or take back any phase at any time; continue the arrangement until he changes it, without making it a recurring planning question",
+     "record": {
+      "path": "career/2014/00_Team_Operations/Staff/coaching_staff.md",
+      "anchor": "phase-control"
+     }
+    },
+    {
+     "id": "stone-healthy-inactive-rule",
+     "subject": "inactives",
+     "status": "IN_FORCE",
+     "closes": [
+      "game_day_inactives"
+     ],
+     "summary": "The deepest healthy reserve on the chart in each of the five largest healthy position groups, never below a legal game-day unit, re-set each week",
+     "effective": "2014-08-31",
+     "record": {
+      "path": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/roster_decisions.md",
+      "anchor": "august-31-2014-the-week-1-inactives-stone-document-3-row-8"
+     }
+    },
+    {
+     "id": "stone-two-point-rule-2014-week5",
+     "subject": "two_point",
+     "status": "IN_FORCE",
+     "closes": [
+      "game_management_rule"
+     ],
+     "summary": "Kick, except go for two in the fourth quarter when the touchdown leaves Jacksonville down 2, up 1 or down 5",
+     "given": {
+      "user_date": "2026-10-17",
+      "event": "2014-10-04-pittsburgh-preparation-closed"
+     },
+     "record": {
+      "path": "career/2014/05_Regular_Season/Games/Week_05/call_sheet.json",
+      "pointer": "/decisions/two_point"
+     }
+    },
+    {
+     "id": "stone-kickoff-rule-2014-week5",
+     "subject": "kickoff",
+     "status": "IN_FORCE",
+     "closes": [
+      "game_management_rule"
+     ],
+     "summary": "Onside when trailing by 1 to 16 with 2:00 or less left; onside when trailing by 9 to 16 with 5:00 or less left; deep otherwise",
+     "given": {
+      "user_date": "2026-10-16",
+      "event": "2014-10-04-pittsburgh-preparation-closed"
+     },
+     "record": {
+      "path": "career/2014/05_Regular_Season/Games/Week_05/call_sheet.json",
+      "pointer": "/decisions/kickoff"
+     }
+    },
+    {
+     "id": "stone-fourth-down-rule",
+     "subject": "fourth_down",
+     "status": "IN_FORCE",
+     "closes": [
+      "game_management_rule"
+     ],
+     "given": {
+      "user_date": "2026-10-18",
+      "in_world": "2014-10-05",
+      "event": "2014-10-05-week-5-vs-pittsburgh",
+      "note": "given during the Week 5 game after the first fourth down"
+     },
+     "summary": "Fourth-and-2 or less, go, with Tice's first call on the matching menu; fourth-and-3 or 4, go on the opponent's side of midfield, otherwise the field goal or the punt by the field-goal line; fourth-and-5 or more, a field goal when the kick is 52 yards or less, otherwise a punt",
+     "applies": "frozen into each week's call sheet as its decisions.fourth_down block",
+     "record": {
+      "path": "career/2014/05_Regular_Season/Games/Week_05/output.md",
+      "anchor": "addendum-october-18-2026-the-fourth-down-rule-stands-for-every-game"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -316,6 +316,27 @@ def validate(root=ROOT):
     except (OSError, IndexError, TypeError, ValueError) as exc:
         errors.append(f'Malformed canonical state: {exc}')
 
+    # The current-job record, the decision queue and their generated views
+    # (docs/career_layer.md). An open decision is never an error here: this
+    # runs inside game readiness.
+    try:
+        from runtime import current_job, decision_queue
+        from scripts.render_career_views import check as check_career_views
+        job = current_job.load(root)
+        errors.extend(current_job.validation_errors(root, mapping, events, current_date))
+        errors.extend(decision_queue.validation_errors(root, mapping, events, current_date, job))
+        # The map names the files the code binds; the renderer and the gates
+        # read the constants, so the two must agree.
+        layer = {'job': current_job.JOB.as_posix(), 'queue': decision_queue.QUEUE.as_posix()}
+        require(mapping.get('career_layer') == layer,
+                f'docs/repository_map.json career_layer must be {layer}, the paths the career layer reads')
+        for label, rel in (('Current job record', current_job.JOB), ('Decision queue', decision_queue.QUEUE)):
+            require(f'| {label} | `{git_blob((root/rel).read_bytes())}`' in state,
+                    f'Document 5 names a stale {label} version; run scripts/render_career_views.py')
+        errors.extend(check_career_views(root))
+    except (OSError, ValueError, KeyError, IndexError, TypeError, NotImplementedError) as exc:
+        errors.append(f'Invalid current job or decision queue: {exc}')
+
     # Age views must advance with the canonical calendar, including birthdays
     # during a season and January postseason dates in the next calendar year.
     try:

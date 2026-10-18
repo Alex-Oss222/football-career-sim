@@ -11,12 +11,16 @@ Write names, dates and football findings in ordinary language. Descriptive event
 | Practice or camp work | The phase's `training_report.md`, including its assessment | Dated player updates, an actual position-battle card, availability, current state and any changed role or medical instruction |
 | Signing, release, tender or trade | The actual contract or transaction record | Roster, contract register, cap and future obligations, depth chart, pick ownership, player development cohort and Documents 4 and 5 |
 | Draft selection or rookie contract | Drafted or undrafted result record | Player control, contracts, finances, pick ownership, working player record, development cohort and current state |
-| Outside staff request, permission, interview or outcome | Dated staff request/outcome record; preserve frozen method and result artifacts | Staff timeline and current pending decisions; employment and payroll only if a departure or appointment occurred |
+| Outside staff request, permission, interview or outcome | Dated staff request/outcome record; preserve frozen method and result artifacts | Staff timeline and the decision queue (`state/decision_queue.json`); employment and payroll only if a departure or appointment occurred |
 | Staff hire, departure or delegated responsibility | Staff hiring/departure/decision record | Current staff, contracts, authority where affected and Documents 4 and 5 |
+| Change in who calls a phase, a relay or an emergency lead | `delegation` in `state/current_job.json`, with the dated event record as its source | Document 5's current-job block, the staff register's phase-control block and the desk, through `render_career_views.py` |
+| Stone decision or standing instruction | Its event record: the weekly packet, game output or transaction record | The decision-queue item, marked `RESOLVED` with that record, or the `standing_instructions` entry in `state/current_job.json`; then `render_career_views.py` |
 | Medical decision | Dated medical record or the phase/game record that received the instruction | Current availability and permitted work; role or roster changes only if separately decided |
 | Game | Game output and public result receipt | Box score, relevant season statistics and standings, awards when due, actual injuries/roles, player updates and current state |
 | Bye | That week's output | Actual practice, recovery, self-scout and decisions; no game receipt |
 | Technical or foundation correction | The affected technical or rule owner | Source hashes, references and readiness when affected; no fabricated football event |
+
+The [career layer](career_layer.md) describes the current-job record, the decision queue, its decision classes and the scripts that refuse while an item is open.
 
 Plans retain intended teaching, priorities and authorized limits. A report owns observed work. The calendar retains dates, opponents, windows and deadlines, with sources and dated corrections. Do not append completed-event narratives, cap snapshots, role assessments or engine status to the calendar. A historical financial as-of date remains correct until a financial event changes it.
 
@@ -27,7 +31,7 @@ Trades and free agency are year-round areas under `00_Team_Operations`; their po
 1. Read current state, the team's calendar, the applicable plan and the relevant sources. Respect the active playbook iteration and dated information gates. The [2014 NFL calendar](../library/2014_nfl_calendar.md) provides league research; [Jacksonville's calendar](../career/2014/Calendar.md) supplies the team route. Actual historical opponents, dates, venues, byes and published amendments control every year. Branch standings determine draft order and playoff qualification.
 2. Write the completed event in its domain owner. Keep its actual date, authority, conditions, uncertainty and consequences. A mixed date window may contain several separately dated events. Preserve prior facts and identify a correction where needed; do not silently alter a result or present a proposal as completed.
 3. Attach the descriptive event metadata to that owner and its closure metadata to the record that closes the bounded progression. New phase metadata names the source event through `event_ref`. Legacy identifiers are resolved by the single compatibility map, not displayed as a second history. Generate the year's `Record.md` from the owners.
-4. Update each genuinely affected current view in the same commit. Reconcile control, contracts, known financial effects, medical instructions and roles even when an unrelated amount remains unknown. Never use an unknown figure as zero. Preserve unexecuted plans and frozen pre-result choices.
+4. Update each genuinely affected current view, and open or resolve the affected decision-queue items, in the same commit. Reconcile control, contracts, known financial effects, medical instructions and roles even when an unrelated amount remains unknown. Never use an unknown figure as zero. Preserve unexecuted plans and frozen pre-result choices.
 5. Reconcile Documents 4 and 5 checkpoints and source pointers. Document 4 may retain its older content version if none of its facts changed; Document 5 must name that exact version. After a foundation edit, refresh its Git-blob hash in Document 5 using `git hash-object`.
 6. Refresh player ages after a master-date or roster change, and refresh the development cohort after any signing, departure, trade, draft addition or tender resolution. Verify a new player's identity and birth date before a game. Review updated reports and assessments against their evidence, run validation and the appropriate tests, and commit the complete dependency set through a pull request.
 
@@ -40,11 +44,12 @@ python scripts/render_annual_record.py YEAR
 python scripts/render_player_ages.py
 python scripts/build_player_progression_roster.py
 python scripts/render_jaguars_cap_tracker.py --check
+python scripts/render_career_views.py --check
 python scripts/validate_repository.py
 python -m unittest discover -s tests -v
 ```
 
-Regenerate cap views before their check when financial inputs changed. Generated trade and award pages likewise come from their source owners. Resolve paths with `SeasonPaths`, never by recreating an old flat folder named in a frozen reference.
+Regenerate cap views before their check when financial inputs changed, and the career views (`render_career_views.py` without `--check`) after a change to the job record, the decision queue, Document 5's master date or its next dated events, and after freezing a call sheet or writing a week's README or output. Generated trade and award pages likewise come from their source owners. Resolve paths with `SeasonPaths`, never by recreating an old flat folder named in a frozen reference.
 
 ## Games and their statistical evidence
 

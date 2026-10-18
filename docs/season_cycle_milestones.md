@@ -6,6 +6,8 @@ The research behind the hiring rules and career norms is in [the coaching career
 
 **How to read the tables.** A **stop** means the next step needs Stone's choice from the user: a weekly packet, a phase plan, a memo to Caldwell, or an answer to a live pause. **Automatic** means the step resolves under existing rules, a method frozen before its draw, or a standing instruction, without asking the user. Caldwell's and ownership's own decisions are resolved from their recorded authority and criteria, never assumed, and every automatic draw reads only concrete inputs, never which club is Stone's (Document 1 §9.1). `Y` is the NFL season; dates in brackets are the 2014 season's remaining dates, then the 2015 cycle's, from [the 2014 calendar](../career/2014/Calendar.md) and [the 2015 calendar](../career/2015/Calendar.md).
 
+Apart from a live pause, which the game itself enforces, a stop is enforced only through a decision-queue item of the class that fits it ([decision classes](career_layer.md)); a stop written only in prose here does not halt a script.
+
 ## 1. The yearly cycle
 
 | Window | Milestone | Resolves automatically | Stops for the user | Owner or command |

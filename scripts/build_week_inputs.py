@@ -14,7 +14,9 @@ defensive_call_sheet (records only). It also reads every closed receipt for
 availability, builds the package and runs the weekly exclusivity and
 game-day gate with the scheduled game count. From the in-season rails'
 effective week (2014: Week 5) the committed moves must reach the slate's
-last cutoff first (library/2014_inseason_rails.md). The package is written to
+last cutoff first (library/2014_inseason_rails.md). An open decision-queue
+item that names this week, or a part of its call sheet, blocks the build
+(runtime.decision_queue). The package is written to
 .sim_cache/YEAR/week_NN_inputs.json only when the gate passes; any other exit
 leaves no package at that path. Nothing is drawn and no event is closed.
 """
@@ -101,6 +103,15 @@ def main():
     if gate:
         print("WEEK_INPUTS: BLOCKED\n- " + gate)
         return 1
+    # An open decision that holds this week (state/decision_queue.json):
+    # nothing is built for it until the decision is settled. Imported here,
+    # not at the top, because runtime.observables imports this script to
+    # rebuild closed weeks and no rebuild may load the queue.
+    from runtime import decision_queue
+    held = decision_queue.blocking_errors([decision_queue.event("week_inputs", args.season, args.week)], ROOT)
+    if held:
+        print("WEEK_INPUTS: BLOCKED\n- " + "\n- ".join(held))
+        return 1
     jacksonville_plays = any(PROTAGONIST in (g["away"], g["home"]) for g in schedule(args.week, args.season))
     sheet_path = call_sheet_path(args.week, args.season)
     decisions = defensive_sheet = None
@@ -127,6 +138,14 @@ def main():
         # transcribed verbatim from the packet, or one the installed kernel
         # does not record, blocks the build; without one nothing is added.
         defensive_sheet = sheet.get("defensive_call_sheet")
+        # An open decision that holds a part this sheet freezes (for example
+        # a fourth-down rule) blocks the build; a sheet without it does not.
+        held = decision_queue.blocking_errors(
+            [decision_queue.event("call_sheet_part", args.season, args.week, part=p)
+             for p in decision_queue.sheet_parts(sheet)], ROOT)
+        if held:
+            print("WEEK_INPUTS: BLOCKED\n- " + "\n- ".join(held))
+            return 1
     receipts = [r for r in load_receipts(paths.receipts) if int(r["week"]) < args.week]
     # Postseason rounds also carry injuries from the earlier playoff rounds.
     receipts += [r for r in load_receipts(paths.postseason_receipts) if int(r["week"]) < args.week]
