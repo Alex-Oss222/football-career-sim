@@ -1,8 +1,10 @@
 """The decision queue: what an item holds, the fail-closed gate and validation.
 
-Mutations run on one throwaway copy of the checkout per class; each test
-restores the files it changed. Weeks come from the fixtures and receipts
-(the first unplayed Jacksonville week, the first bye), and dates from the
+Mutations run on one throwaway copy of the checkout per class, with any
+paused-game record removed so a live pause cannot decide a test; each test
+restores the files it changed. The season is the active one; weeks come from
+the fixtures and receipts (the first unplayed Jacksonville week, then the
+first unplayed postseason round, and the first bye), and dates from the
 master date, so the tests hold at any later clock.
 """
 from datetime import timedelta
@@ -21,9 +23,12 @@ from runtime.decision_queue import event
 from runtime.events import load_events, repository_map
 from runtime.player_bios import master_date
 from runtime.seasons import SeasonPaths
+from scripts import render_career_views as views
+from scripts.validate_repository import validate
 
-SEASON = 2014
+SEASON = int(repository_map(ROOT)["active_season"])
 CLUB = "Jacksonville Jaguars"
+# A sample sheet's content only; it is written into the active season's folders.
 W5_SHEET = "career/2014/05_Regular_Season/Games/Week_05/call_sheet.json"
 
 
@@ -32,9 +37,20 @@ def club_weeks():
 
 
 def first_unplayed_week():
-    """The first week with a Jacksonville fixture and no receipt."""
-    receipts = SeasonPaths(SEASON, ROOT).receipts
-    return next(w for w in club_weeks() if not any(receipts.glob("week_%02d_*.json" % w)))
+    """The first week with a Jacksonville fixture and no receipt, then the
+    first postseason round with none; None once every round has closed."""
+    paths = SeasonPaths(SEASON, ROOT)
+    first = 18 + (1 if SEASON >= 2021 else 0)
+    weeks = [(w, paths.receipts) for w in club_weeks()]
+    weeks += [(w, paths.postseason_receipts) for w in range(first, first + 4)]
+    return next((w for w, folder in weeks if not any(folder.glob("week_%02d_*.json" % w))), None)
+
+
+def without_pauses(root):
+    """Remove the copy's paused-game records (untracked; a live pause would
+    refuse the views and hold the test's own items)."""
+    for record in Path(root).glob("career/**/paused_game.json"):
+        record.unlink()
 
 
 class DecisionQueueTests(unittest.TestCase):
@@ -43,8 +59,14 @@ class DecisionQueueTests(unittest.TestCase):
         cls.mapping = repository_map(ROOT)
         cls.events = load_events(ROOT, cls.mapping)
         cls.master = master_date(ROOT)
-        cls.root = copied_root(SimpleNamespace(addCleanup=cls.addClassCleanup))
         cls.week = first_unplayed_week()
+        if cls.week is None:
+            raise unittest.SkipTest("every %d game has closed; the queue tests need an unplayed week of the "
+                                    "active season" % SEASON)
+        cls.post = decision_queue._is_postseason(SEASON, cls.week)
+        cls.label = decision_queue.week_label(SEASON, cls.week)
+        cls.root = copied_root(SimpleNamespace(addCleanup=cls.addClassCleanup))
+        without_pauses(cls.root)
 
     def setUp(self):
         self.job = current_job.load(self.root)
@@ -64,7 +86,7 @@ class DecisionQueueTests(unittest.TestCase):
                 "raised": {"date": self.master.isoformat(), "by": "workflow"}, "status": "OPEN",
                 "waits_on": [], "deadline": None,
                 "blocks": [event("week_inputs", SEASON, self.week)], "fallback": None, "can_continue": None,
-                "record": {"path": "career/2014/README.md"}, "sources": [], "resolution": None}
+                "record": {"path": "career/%d/README.md" % SEASON}, "sources": [], "resolution": None}
         item.update(changes)
         return item
 
@@ -124,8 +146,14 @@ class DecisionQueueTests(unittest.TestCase):
         self.write(str(decision_queue.QUEUE), json.dumps(dict(self.queue, items=[item])))
         lines = decision_queue.blocking_errors([event("week_close", SEASON, self.week)], self.root)
         self.assertEqual(len(lines), 1)
-        self.assertTrue(lines[0].startswith("Decision open: test-plan, Test plan. It holds the Week %d game. "
-                                            "Owner: Alex Stone (the user): present it to the user" % self.week))
+        self.assertTrue(lines[0].startswith("Decision open: test-plan, Test plan. It holds %s game. "
+                                            "Owner: Alex Stone (the user): present it to the user" % self.label))
+        self.assertIn("advance the private snapshot from main, then rerun.", lines[0])
+        # During a pause or after a partial slate the line names no way to
+        # settle and rerun; the caller says to revert the edit.
+        quiet = decision_queue.blocking_errors([event("week_close", SEASON, self.week)], self.root, settle=False)
+        self.assertEqual(quiet, [lines[0].split(" When it is settled", 1)[0]])
+        self.assertTrue(quiet[0].endswith("Record: career/%d/README.md." % SEASON))
         self.assertEqual(decision_queue.blocking_errors([event("week_close", SEASON, self.week + 1)], self.root), [])
         self.assertEqual(decision_queue.describe(event("week_close", 2014, 18)), "the Wild Card game")
         self.assertEqual(decision_queue.describe(event("week_inputs", 2014, 21)),
@@ -137,6 +165,19 @@ class DecisionQueueTests(unittest.TestCase):
         sheet = json.loads((ROOT / W5_SHEET).read_text(encoding="utf-8"))
         self.assertCountEqual(decision_queue.sheet_parts(sheet), ["offensive_call_sheet", "decisions.two_point",
                                                                   "decisions.kickoff", "defensive_call_sheet"])
+
+    def test_package_parts_name_the_clubs_frozen_inputs(self):
+        from runtime import scoring_decisions
+        # Every policy field the build writes maps to its sheet part.
+        self.assertEqual({f: p for f, p in decision_queue.INPUT_PARTS.items() if p.startswith("decisions.")},
+                         {f: "decisions." + k for k, f in scoring_decisions.POLICY_FIELDS.items()})
+        ours = {"team_id": CLUB, "offensive_call_sheet": [], "fourth_down_policy": {"rules": []},
+                "try_policy": None}
+        package = {"games": [{"home": CLUB, "away": "A", "home_input": ours,
+                              "away_input": {"team_id": "A", "kickoff_policy": {}}}]}
+        self.assertEqual(decision_queue.package_parts(package, CLUB),
+                         ["offensive_call_sheet", "decisions.fourth_down"])
+        self.assertEqual(decision_queue.package_parts({"games": []}, CLUB), [])
 
     def test_class_may_not_block_that_kind(self):
         item = self.plan_item(**{"class": "personnel_transaction", "owner": "caldwell"})
@@ -172,12 +213,45 @@ class DecisionQueueTests(unittest.TestCase):
 
     def test_open_item_on_closed_week(self):
         item = self.plan_item(blocks=[event("week_inputs", 2014, 5)])
-        self.assertError("test-plan is open, but Week 5 of 2014 has closed", self.errors_with(item))
+        self.assertError("test-plan is open, but Week 5 of 2014 has closed; it is Alex Stone's decision, which the "
+                         "workflow may not resolve or withdraw: present it to the user", self.errors_with(item))
+
+    def test_closed_week_whose_sheet_never_froze_the_part(self):
+        # The Week 5 sheet froze a two-point rule and no fourth-down rule.
+        item = self.plan_item(**{"class": "game_management_rule", "subject": "fourth_down",
+                                 "authority_rows": ["12"],
+                                 "blocks": [event("call_sheet_part", 2014, 5, part="decisions.fourth_down")],
+                                 "standing_not_applied": [{"instruction": "stone-fourth-down-rule",
+                                                           "reason": "A test reason."}]})
+        errors = self.errors_with(item)
+        self.assertError("test-plan is open, but Week 5 of 2014 has closed without freezing a fourth-down rule in "
+                         "its call sheet; move the block to the next week in which Jacksonville Jaguars plays in "
+                         "the closing commit (bookkeeping, not a settlement)", errors)
+        frozen = dict(item, subject="two_point", blocks=[event("call_sheet_part", 2014, 5, part="decisions.two_point")],
+                      standing_not_applied=[{"instruction": "stone-two-point-rule-2014-week5",
+                                             "reason": "A test reason."}])
+        self.assertError("test-plan is open, but Week 5 of 2014 has closed; it is Alex Stone's decision",
+                         self.errors_with(frozen))
+
+    def test_subject_comes_from_the_shared_vocabulary(self):
+        item = self.plan_item(**{"class": "game_management_rule", "subject": "onside", "authority_rows": ["12"],
+                                 "blocks": []})
+        self.assertError("test-plan has unknown subject 'onside' (one of %s)" % ", ".join(current_job.SUBJECTS),
+                         self.errors_with(item))
+        # The same item under the vocabulary's word is covered by Stone's kickoff rule.
+        self.assertError("test-plan is covered by the standing instruction stone-kickoff-rule-2014-week5",
+                         self.errors_with(dict(item, subject="kickoff")))
+
+    def test_a_wait_with_no_named_owner_is_valid(self):
+        item = self.plan_item(waits_on=[{"what": "a test wait", "owner": None, "date": None}])
+        self.assertFalse(any("waits_on owner" in e for e in self.errors_with(item)))
+        item["waits_on"][0]["owner"] = "nobody"
+        self.assertError("test-plan names waits_on owner 'nobody', which is not a party", self.errors_with(item))
 
     def test_open_item_during_a_pause(self):
-        paused = SeasonPaths(SEASON, self.root).paused_game(self.week).relative_to(self.root).as_posix()
+        paused = SeasonPaths(SEASON, self.root).paused_game(self.week, self.post).relative_to(self.root).as_posix()
         self.write(paused, json.dumps({"status": "paused"}))
-        self.assertError("test-plan holds Week %d of 2014 while that game is paused" % self.week,
+        self.assertError("test-plan holds %s of %d while that game is paused" % (self.label[4:], SEASON),
                          self.errors_with(self.plan_item()))
 
     def test_calling_items_are_raised_only_by_the_user(self):
@@ -206,19 +280,19 @@ class DecisionQueueTests(unittest.TestCase):
 
     def test_call_sheet_without_a_resolved_plan(self):
         sheet = json.loads((ROOT / W5_SHEET).read_text(encoding="utf-8"))
-        folder = SeasonPaths(SEASON, self.root).week_folder(self.week)
+        folder = SeasonPaths(SEASON, self.root).week_folder(self.week, self.post)
         self.write((folder / "call_sheet.json").relative_to(self.root).as_posix(), json.dumps(sheet))
         others = [i for i in self.queue["items"] if not (
             i["class"] == "weekly_game_plan" and i["status"] == "RESOLVED"
             and event("week_inputs", SEASON, self.week) in i["blocks"])]
         errors = self.errors_with(*others, keep=False)
-        self.assertError("call sheet for Week %d exists without Stone's resolved weekly plan item" % self.week, errors)
+        self.assertError("call sheet for %s exists without Stone's resolved weekly plan item" % self.label[4:], errors)
         self.assertFalse(any("call sheet for Week" in e for e in self.errors_with(*others, self.resolved(), keep=False)))
 
     def test_block_on_a_bye_week(self):
         bye = next(w for w in range(1, 18) if w not in club_weeks())
         item = self.plan_item(blocks=[event("week_inputs", SEASON, bye)])
-        self.assertError("test-plan holds Week %d of 2014, in which Jacksonville Jaguars does not play" % bye,
+        self.assertError("test-plan holds Week %d of %d, in which Jacksonville Jaguars does not play" % (bye, SEASON),
                          self.errors_with(item))
 
     def test_open_season_opening_for_the_active_season(self):
@@ -230,6 +304,12 @@ class DecisionQueueTests(unittest.TestCase):
     def test_further_open_item_for_the_next_week_is_valid(self):
         self.assertEqual(self.errors_with(self.plan_item()), [])
         self.assertEqual(current_job.validation_errors(self.root, self.mapping, self.events, self.master), [])
+        # Re-rendered, the whole repository validates with the extra item.
+        for path in views.render(self.root):
+            self.addCleanup(path.write_bytes, path.read_bytes())
+        views.write(self.root)
+        self.assertEqual(views.check(self.root), [])
+        self.assertEqual(validate(self.root), [])
 
 
 if __name__ == "__main__":

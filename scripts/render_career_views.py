@@ -10,10 +10,11 @@ Document 5, phase-control in the staff register, desk in the active season's
 README and decision-classes in docs/career_layer.md. Document 5's manifest
 also names both files' git blobs, which binds them into its digest and so
 into the private snapshot. The views read only those two files, Document 5's
-master-date cell and section 9, the active season's fixtures and
-docs/repository_map.json; never a receipt, standings, awards or the wall
-clock. Writing is refused while a Jacksonville game is paused; --check is
-read-only and exits 1 on a stale, malformed or unrenderable view.
+master-date cell and section 9, the active season's fixtures,
+docs/repository_map.json and whether the next game's week README and call
+sheet and the last game's output exist; never a receipt, standings, awards
+or the wall clock. Writing is refused while a Jacksonville game is paused;
+--check is read-only and exits 1 on a stale, malformed or unrenderable view.
 """
 from __future__ import annotations
 
@@ -46,7 +47,7 @@ BANNED = re.compile(r"\b(branch|simulation|receipt|kernel|engine|ledger|snapshot
 VOICED = frozenset({"desk", "phase-control"})   # reader prose; the Document 5 blocks are a state file
 LINK = re.compile(r"\]\(@([^)#]*)(?:#([^)]*))?\)")   # a view's repository-relative link before localizing
 PHASE_LABEL = {"offense": "Offense", "defense": "Defense", "special_teams": "Special teams"}
-DECISION_LABEL = {"fourth_down": "fourth downs", "two_point": "two-point tries", "onside": "onside kicks",
+DECISION_LABEL = {"fourth_down": "fourth downs", "two_point": "two-point tries", "kickoff": "onside kicks",
                   "timeouts_and_clock": "timeouts and clock management", "replay_challenge": "replay challenges"}
 SUBJECT_LABEL = {"play_calling": "Calling arrangement", "inactives": "Inactives", "two_point": "Two-point tries",
                  "kickoff": "Kickoffs", "fourth_down": "Fourth downs"}
@@ -58,7 +59,8 @@ HISTORY_LABEL = {"accepted": "hire", "retained": "retention"}
 # The holder's part in a row, in Document 5's final-authority sentence.
 AUTHORITY_NOTE = {"recommends": " on {who}'s recommendation", "consulted": " after consulting {who}",
                   "unset": " ({who}'s role not recorded)", "responds": " ({who} responds)",
-                  "informs": " ({who} supplies information)", "none": ""}
+                  "informs": " ({who} supplies information)", "decides_part": " ({who} decides {scope})",
+                  "none": ""}
 # The same part, addressed to the holder on the desk.
 YOU_PHRASE = {"decides": "you decide", "decides_part": "you decide {scope}", "recommends": "you recommend",
               "consulted": "after consulting you", "responds": "you respond", "informs": "you supply information",
@@ -75,8 +77,10 @@ PERSONNEL_LINKS = (("Trades", "trades/README.md"), ("Free agency", "free_agency/
 STAFF_LINKS = (("Coaching profiles", "career/coaching_profiles/README.md"),
                ("Staff profiles", "career/coaching_profiles/staff_profiles.md"),
                ("Coaching payroll", "career/finances/coaching_and_organization/coaching_payroll.md"))
+# Not the ownership review: an editorial reconstruction never communicated
+# to the coach (Document 3 section 6.2 item 8); the desk shows only the
+# employer's communicated measures.
 CAREER_LINKS = (("Coach sheet", "career/coaching_profiles/alex_stone_nfl_coach_sheet.md"),
-                ("Performance review", "career/coaching_profiles/alex_stone_performance_review.md"),
                 ("Coaching profile", "career/coaching_profiles/alex_stone_coaching_profile.md"))
 OPEN_QUESTIONS = {"path": "docs/season_cycle_milestones.md", "anchor": "4-open-questions-for-the-user"}
 
@@ -395,7 +399,8 @@ def emergency_value(ctx):
 
 def authority_value(ctx):
     """One sentence grouping Document 3's rows by who decides and the
-    holder's part, in the row order."""
+    holder's part, in the row order. A row the holder decides in part also
+    names its final authority, unless that is the holder alone."""
     current = current_job.appointment(ctx.job) or {}
     rows = (current.get("authority") or {}).get("domains") or []
     holder, who = ctx.job["holder"], short(ctx, ctx.job["holder"])
@@ -405,11 +410,14 @@ def authority_value(ctx):
     clauses = ["%s decides %s" % (name(ctx, holder), ", and ".join(head))] if head else []
     groups = {}
     for row in rows:
-        if row["stone_action"] not in ("decides", "decides_part", "not_applicable"):
-            groups.setdefault(tuple(row["final"]), {}).setdefault(row["stone_action"], []).append(row["row"])
+        action = row["stone_action"]
+        if action in ("decides", "not_applicable") or (action == "decides_part" and row["final"] == [holder]):
+            continue
+        scope = ctx.show("authority.%s.scope" % row["row"], row.get("scope")) if action == "decides_part" else None
+        groups.setdefault(tuple(row["final"]), {}).setdefault((action, scope), []).append(row["row"])
     for final, actions in groups.items():
-        parts = [rows_text(numbers) + AUTHORITY_NOTE.get(action, "").format(who=who)
-                 for action, numbers in actions.items()]
+        parts = [rows_text(numbers) + AUTHORITY_NOTE.get(action, "").format(who=who, scope=scope)
+                 for (action, scope), numbers in actions.items()]
         parties = join(name(ctx, p, lower=True) for p in final)
         clauses.append("%s %s %s" % (parties, verb(ctx, list(final)), join(parts)))
     taxonomy = (current.get("authority") or {}).get("taxonomy")
@@ -488,7 +496,8 @@ def measures_value(ctx, current):
             continue
         who = "The contract" if entry.get("by") == "contract" else name(ctx, entry["by"])
         what = "; ".join(entry.get("measures") or ()) or entry.get("text") or "not recorded"
-        shown.append("%s, %s: %s (%s)" % (who, entry.get("season"), ctx.show("evaluation.measures", what),
+        label = ctx.show("evaluation.label", entry["label"]) if entry.get("label") else entry.get("season")
+        shown.append("%s, %s: %s (%s)" % (who, label, ctx.show("evaluation.measures", what),
                                           link(ctx, "record", entry["record"])))
     return "; ".join(shown) or "not recorded"
 
@@ -736,7 +745,9 @@ def _ownership(ctx, current, last, upcoming):
         if (entry.get("season") or 0) == latest:
             who = "The contract's" if entry.get("by") == "contract" else name(ctx, entry["by"]) + "'s"
             what = "; ".join(entry.get("measures") or ()) or entry.get("text") or "not recorded"
-            sentences.append("%s %s measures: %s" % (who, entry.get("season"), ctx.show("evaluation.measures", what)))
+            label = (ctx.show("evaluation.label", entry["label"]) if entry.get("label")
+                     else "%s measures" % entry.get("season"))
+            sentences.append("%s %s: %s" % (who, label, ctx.show("evaluation.measures", what)))
     for request in current.get("employer_requests") or ():
         if request.get("status") == "OPEN":
             sentences.append("%s's request: %s" % (name(ctx, request["by"]),

@@ -17,7 +17,7 @@ Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013; retai
 Open questions on the career's own rules, which are yours rather than Stone's football decisions: [season cycle, section 4](../../docs/season_cycle_milestones.md#4-open-questions-for-the-user).
 
 ### With others
-- Individual film packets: preparation and coach approval (Jacksonville coaching staff); waiting on cause review and comparison clips and a supplied video asset. [Record](00_Team_Operations/Film/player_queue.md)
+- Individual film packets: preparation and coach approval (Jacksonville coaching staff); waiting on cause review and comparison clips for the Cousins packet and a supplied video asset. [Record](00_Team_Operations/Film/player_queue.md)
 - Three open practice-squad places (David Caldwell). [Record](00_Team_Operations/Team/Roster/roster.md)
 
 ### Next dated events
@@ -43,7 +43,7 @@ Open questions on the career's own rules, which are yours rather than Stone's fo
 - **Inactives (in force, from August 31, 2014):** The deepest healthy reserve on the chart in each of the five largest healthy position groups, never below a legal game-day unit, re-set each week. [Record](04_Training_Camp_and_Preseason/Roster_Decisions/roster_decisions.md#august-31-2014-the-week-1-inactives-stone-document-3-row-8)
 - **Two-point tries (in force):** Kick, except go for two in the fourth quarter when the touchdown leaves Jacksonville down 2, up 1 or down 5. [Record](05_Regular_Season/Games/Week_05/call_sheet.json)
 - **Kickoffs (in force):** Onside when trailing by 1 to 16 with 2:00 or less left; onside when trailing by 9 to 16 with 5:00 or less left; deep otherwise. [Record](05_Regular_Season/Games/Week_05/call_sheet.json)
-- **Fourth downs (in force):** Fourth-and-2 or less, go, with Tice's first call on the matching menu; fourth-and-3 or 4, go on the opponent's side of midfield, otherwise the field goal or the punt by the field-goal line; fourth-and-5 or more, a field goal when the kick is 52 yards or less, otherwise a punt; frozen into each week's call sheet as its decisions.fourth_down block. [Record](05_Regular_Season/Games/Week_05/output.md#player-findings-and-material-decisions)
+- **Fourth downs (in force):** Fourth-and-2 or less, go, with Tice's first call on the matching menu; fourth-and-3 or 4, go on the opponent's side of midfield, otherwise the field goal or the punt by the field-goal line; fourth-and-5 or more, a field goal when the kick is 52 yards or less, otherwise a punt; frozen into each week's call sheet as its decisions.fourth_down block. [Record](05_Regular_Season/Games/Week_05/output.md#addendum-october-18-2026-the-fourth-down-rule-stands-for-every-game)
 
 ### Team
 [Roster](00_Team_Operations/Team/Roster/roster.md) · [Depth chart](00_Team_Operations/Team/Depth_Chart/depth_chart.md) · [Injury report](00_Team_Operations/Medical/current_injury_report.md) · [Medical history](00_Team_Operations/Medical/medical_history.md) · [Player cards](00_Team_Operations/Team/README.md) · [Standings](05_Regular_Season/standings.md) · [Team tracker](05_Regular_Season/Statistics/records/team_tracker/README.md)
@@ -64,10 +64,10 @@ Open questions on the career's own rules, which are yours rather than Stone's fo
 [Trades](00_Team_Operations/Trades/README.md) · [Free agency](00_Team_Operations/Free_Agency/README.md) · [Draft board](03_Draft/player_draft_board.md) · [Pick ownership](03_Draft/pick_ownership.json)
 
 ### Ownership
-Shad Khan and David Caldwell decide your employment (row 1). David Caldwell's 2014 measures: the scoring margin; the quarterback's ball security and protection. Shad Khan's request: prepare the London week for Dallas (November 9, 2014, Wembley) on the 2013 Wembley plan. Direct supervisor, evaluator, review cadence and escalation: not recorded. Contract term: no end date is recorded; only the four-year length. [Retention](../2013/season_review/owner_and_gm_review.md#entry-3-the-clubs-decision) · [Document 3](../../foundation/03_Head_Coach_Organization_and_Authority_Canon.md#31-head-coach-contract) · [Contract](../2013/offseason/head_coach_contract.md)
+Shad Khan and David Caldwell decide your employment (row 1). David Caldwell's first 2014 measures: the scoring margin; the quarterback's ball security and protection. Shad Khan's request: prepare the London week for Dallas (November 9, 2014, Wembley) on the 2013 Wembley plan. Direct supervisor, evaluator, review cadence and escalation: not recorded. Contract term: no end date is recorded; only the four-year length. [Retention](../2013/season_review/owner_and_gm_review.md#entry-3-the-clubs-decision) · [Document 3](../../foundation/03_Head_Coach_Organization_and_Authority_Canon.md#31-head-coach-contract) · [Contract](../2013/offseason/head_coach_contract.md)
 
 ### Career
-[Coach sheet](../coaching_profiles/alex_stone_nfl_coach_sheet.md) · [Performance review](../coaching_profiles/alex_stone_performance_review.md) · [Coaching profile](../coaching_profiles/alex_stone_coaching_profile.md) · [Hiring search](../2013/offseason/hiring_search.md#entry-7--jacksonville-counter-resolved-offer-accepted)
+[Coach sheet](../coaching_profiles/alex_stone_nfl_coach_sheet.md) · [Coaching profile](../coaching_profiles/alex_stone_coaching_profile.md) · [Hiring search](../2013/offseason/hiring_search.md#entry-7--jacksonville-counter-resolved-offer-accepted)
 <!-- desk:end -->
 
 The calendar contains scheduled dates, deadlines and opponents. The annual record gives one dated line for each completed event and links to its full record. Current roster, contract, medical and depth-chart facts have their own owners.

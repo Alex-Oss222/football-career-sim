@@ -49,7 +49,7 @@ python scripts/validate_repository.py
 python -m unittest discover -s tests -v
 ```
 
-Regenerate cap views before their check when financial inputs changed, and the career views (`render_career_views.py` without `--check`) after a change to the job record, the decision queue, Document 5's master date or its next dated events. Generated trade and award pages likewise come from their source owners. Resolve paths with `SeasonPaths`, never by recreating an old flat folder named in a frozen reference.
+Regenerate cap views before their check when financial inputs changed, and the career views (`render_career_views.py` without `--check`) after a change to the job record, the decision queue, Document 5's master date or its next dated events, and after freezing a call sheet or writing a week's README or output. Generated trade and award pages likewise come from their source owners. Resolve paths with `SeasonPaths`, never by recreating an old flat folder named in a frozen reference.
 
 ## Games and their statistical evidence
 

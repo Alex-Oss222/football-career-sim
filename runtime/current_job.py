@@ -32,6 +32,11 @@ ROLE_SECTIONS = {   # the desk's sections for each role; only BUILT_DESKS render
     "position_coach": ("My room", "Teaching", "Weekly assignment", "Evaluations", "Career"),
     "between_jobs": ("Career", "Vacancies", "Contacts", "Offers")}
 MECHANISMS = ("live", "sheet_rule", "not_live", "not_modelled")
+# The subjects a standing instruction or a decision-queue item may name: the
+# calling arrangement, the inactives and each retained game decision by its
+# delegation.game_management id, so the vocabularies cannot drift apart.
+SUBJECTS = ("play_calling", "inactives", "fourth_down", "two_point", "kickoff", "timeouts_and_clock",
+            "replay_challenge")
 REQUEST_STATUSES = ("OPEN", "MET", "WITHDRAWN")
 RECORD_KEYS = frozenset({"path", "anchor", "pointer"})
 # Keys holding ISO dates. A past-only key may never pass the master date; a
@@ -41,6 +46,11 @@ SCHEDULED_KEYS = ("from", "to", "effective", "start", "end")
 DATE_KEYS = PAST_KEYS + SCHEDULED_KEYS + ("end_date", "user_date")
 DELEGATED = re.compile(r"^delegation\.play_calling\.([a-z_]+)$")
 PARITY = "Document 3 and the job record disagree; correct the record that is wrong (Document 3 §11.2), then rerun."
+# Document 3 row 7 has six cells: its required-consultation cell is missing,
+# so its fifth and sixth cells are the rule limit and the provenance. The job
+# record holds them under those fields, with no consultation recorded, until
+# the foundation pull request repairs the row.
+SHORT_ROWS = {"7": {"consultation": None, "limits": 5, "provenance": 6}}
 
 
 def load(root):
@@ -214,11 +224,13 @@ def f3_parity_errors(job, root):
         if not row.get("final") and "NOT APPLICABLE" not in final:
             errors.append(where + "Document 3 does not mark the row NOT APPLICABLE. " + PARITY)
         columns = [("final_text", 3), ("consultation", 5), ("limits", 6), ("provenance", 7)]
+        if number in SHORT_ROWS and len(cells) == 6:
+            columns = [("final_text", 3)] + list(SHORT_ROWS[number].items())
         if number not in ("13", "14"):
             columns.append(("permitted", 4))
         for field, n in columns:
-            if row.get(field) != _cell(cells, n):
-                errors.append(where + "%s differs from Document 3 column %d. %s" % (field, n, PARITY))
+            if row.get(field) != (None if n is None else _cell(cells, n)):
+                errors.append(where + "%s differs from Document 3 column %s. %s" % (field, n or "(missing)", PARITY))
     start = date.fromisoformat(current["start"]) if current.get("start") else None
     expected = (("Employing organization", (current.get("employer") or {}).get("club"), False),
                 ("Position title", current.get("title"), True),
@@ -423,6 +435,8 @@ def _validation_errors(job, root, mapping, events, master, prefix):
         bad = [c for c in item.get("closes") or () if c not in CLASSES]
         if bad or not isinstance(item.get("closes"), list):
             errors.append(label + "closes must list decision classes (%s)" % ", ".join(map(str, bad)))
+        if item.get("subject") is not None and item["subject"] not in SUBJECTS:
+            errors.append(label + "subject must be one of %s" % ", ".join(SUBJECTS))
         if item.get("open_item") is not None:
             if queue_ids is None:
                 from . import decision_queue
@@ -447,6 +461,9 @@ def _validation_errors(job, root, mapping, events, master, prefix):
         if decision.get("mechanism") not in MECHANISMS:
             errors.append(prefix + "game-management decision %s mechanism must be one of %s"
                           % (decision.get("id"), ", ".join(MECHANISMS)))
+        if decision.get("id") not in SUBJECTS:
+            errors.append(prefix + "game-management decision id %s must be one of %s"
+                          % (decision.get("id"), ", ".join(SUBJECTS)))
     requests = current.get("employer_requests") or []
     seen = [r.get("id") for r in requests]
     if len(seen) != len(set(seen)):

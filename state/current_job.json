@@ -151,6 +151,7 @@
      "id": "caldwell-2014-first-measures",
      "by": "caldwell",
      "season": 2014,
+     "label": "first 2014 measures",
      "measures": [
       "the scoring margin",
       "the quarterback's ball security and protection"
@@ -329,9 +330,9 @@
       "stone_action": "recommends",
       "final_text": "Caldwell (inferred from his retained general personnel/acquisition authority, row 3; not itself separately negotiated)",
       "permitted": "Stone provides the coaching evaluation Caldwell weighs.",
-      "consultation": "Roster, notice, waiver, contract, and deadline rules",
-      "limits": "Labeled inference, not an explicit contract term — `hiring_search.md` Entries 6-7",
-      "provenance": null,
+      "consultation": null,
+      "limits": "Roster, notice, waiver, contract, and deadline rules",
+      "provenance": "Labeled inference, not an explicit contract term — `hiring_search.md` Entries 6-7",
       "scope": "the coaching evaluation Caldwell weighs",
       "inference": true,
       "delegated": null,
@@ -734,7 +735,7 @@
        "how": "the call sheet's frozen rule, or a live pause when the rule says ask"
       },
       {
-       "id": "onside",
+       "id": "kickoff",
        "mechanism": "sheet_rule",
        "how": "the call sheet's frozen kickoff rule, or a live pause when the rule says ask"
       },
@@ -883,7 +884,7 @@
      "applies": "frozen into each week's call sheet as its decisions.fourth_down block",
      "record": {
       "path": "career/2014/05_Regular_Season/Games/Week_05/output.md",
-      "anchor": "player-findings-and-material-decisions"
+      "anchor": "addendum-october-18-2026-the-fourth-down-rule-stands-for-every-game"
      }
     }
    ]

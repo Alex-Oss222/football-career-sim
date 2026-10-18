@@ -9,7 +9,7 @@ Two state files record the coach's job and the decisions still open. Code reads 
 - the holder, his employment status and his appointments: employer, title, role, unit, start and end, the term's recorded basis and the hire and retention history;
 - the reporting line, with every field null where Document 3 records `[UNSET]`;
 - an index of the employer's measures and requests, each linked to its source;
-- final authority by Document 3 domain, with the holder's part in each row normalized;
+- a parity-checked transcription of Document 3's final authority by domain (the owner once the foundation pull request merges), with the holder's part in each row normalized;
 - delegation by phase (who calls, who prepares, who transmits, who declares the front), the game-management decisions the head coach retains and how the game handles each, the game-day relays and the emergency leads;
 - an index of standing instructions. The rule text stays in its own record.
 
@@ -25,7 +25,7 @@ The files do not own:
 
 Neither file is a current record in `docs/repository_map.json`, because the season handoff copies every current record into the next year. The map names them under `career_layer`.
 
-**The Document 3 handoff, in two phases.** Until the foundation pull request that turns Document 3's cells into pointers merges, [Document 3 section 5](../foundation/03_Head_Coach_Organization_and_Authority_Canon.md#5-authority-map) remains the stated sole source of final authority. The job record's authority rows are then a transcription that validation keeps identical to it: columns 3 to 7 byte for byte, except column 4 of rows 13 and 14, whose operational delegation the job record owns. Any later change to a Document 3 cell fails validation until the job row and its normalized part are revisited. Once that pull request merges, Document 3 keeps the row taxonomy and the precedence rules, and each pointer cell names the job record, which then owns the values. The parity check accepts either form, so the foundation change needs no code change.
+**The Document 3 handoff, in two phases.** Until the foundation pull request that turns Document 3's cells into pointers merges, [Document 3 section 5](../foundation/03_Head_Coach_Organization_and_Authority_Canon.md#5-authority-map) remains the stated sole source of final authority. The job record's authority rows are then a transcription that validation keeps identical to it: columns 3 to 7 byte for byte, except column 4 of rows 13 and 14, whose operational delegation the job record owns. Document 3 row 7 has six cells, its required-consultation cell missing, so the check reads its fifth and sixth cells as the rule limit and the provenance, and the job record holds no consultation for the row, until the foundation pull request repairs it. Any later change to a Document 3 cell fails validation until the job row and its normalized part are revisited. Once that pull request merges, Document 3 keeps the row taxonomy and the precedence rules, and each pointer cell names the job record, which then owns the values. The parity check accepts either form, so the foundation change needs no code change.
 
 ## 2. Schemas
 
@@ -40,13 +40,15 @@ Every `record` is `{"path", "anchor"?, "pointer"?}`: a repository-relative path 
 | `appointments[].employer`, `title`, `role`, `unit`, `start`, `end` | The job; `role` selects the desk (`head_coach` and `interim_head_coach` share one) |
 | `term`, `contract`, `history` | The recorded end date or its basis, links to the contract, and dated `accepted` and `retained` entries with their events |
 | `reporting` | Who decides employment (Document 3 row 1); supervisor, evaluator, cadence and escalation, null when unrecorded |
-| `evaluation`, `employer_requests` | The employer's measures by season, and requests with status `OPEN`, `MET` or `WITHDRAWN` |
+| `evaluation`, `employer_requests` | The employer's measures by season, with an optional `label` taken from the source (for example "first 2014 measures"), and requests with status `OPEN`, `MET` or `WITHDRAWN` |
 | `default_sees` | A link to Document 3 section 6.2; no text is copied |
 | `authority.domains` | One row per Document 3 row (1, 2, 3, 3a, 4 to 22): the verbatim columns, `final` party ids, `stone_action` (`decides`, `decides_part`, `recommends`, `consulted`, `responds`, `informs`, `none`, `unset`, `not_applicable`), `scope`, `inference` and `delegated` |
 | `delegation.play_calling` | Dated intervals per phase: `caller`, `prepares`, optional `transmits`, `transmits_what`, `front_declaration`, `interim`, `instructed`, `from` (inclusive), `to` (the handover date, exclusive) and `stone_retains` |
-| `delegation.game_management` | The retained game decisions, each with a `mechanism`: `live` (a pause), `sheet_rule` (the frozen call sheet), `not_live` (set by the game model) or `not_modelled` |
+| `delegation.game_management` | The retained game decisions, each with an `id` from the subject vocabulary below and a `mechanism`: `live` (a pause), `sheet_rule` (the frozen call sheet), `not_live` (set by the game model) or `not_modelled` |
 | `delegation.relay`, `delegation.emergency` | Who carries what on game day; the emergency practice leads, their limits and the game-day caller (null: not appointed) |
 | `standing_instructions` | `id`, `subject`, `status` (`IN_FORCE`, `RECORDED`, `SUPERSEDED`, `WITHDRAWN`), the queue classes it `closes`, `summary`, optional `applies`, `given` or `effective`, and its record |
+
+A `subject`, on an instruction or a queue item, is one of `SUBJECTS` in `runtime/current_job.py`: `play_calling`, `inactives` and the game-management ids (`fourth_down`, `two_point`, `kickoff`, `timeouts_and_clock`, `replay_challenge`). Validation refuses any other, so an item cannot escape an instruction's coverage by a spelling.
 
 ### The decision queue
 
@@ -57,8 +59,8 @@ Every `record` is `{"path", "anchor"?, "pointer"?}`: a repository-relative path 
 | `owner`, `owner_note` or `owner_basis`, `advisers` | Party ids; an owner other than the class default needs a note or basis |
 | `authority_rows`, `question` | The Document 3 rows involved and what is to be decided |
 | `raised` | `date`, `by` (`user`, `workflow`, `staff`, `organization`, `medical`), optional closed `event` |
-| `status`, `resolution` | `OPEN`, `RESOLVED` or `WITHDRAWN`; a settled item carries `date`, `by` (`user`, `standing_instruction`, `organization`, `medical`, `staff`), `record`, `summary` and, when settled by a standing instruction, its id |
-| `waits_on` | What the decision waits for, whose it is and the date when one is recorded |
+| `status`, `resolution` | `OPEN`, `RESOLVED` or `WITHDRAWN`; a settled item's `resolution` is `{date, by, record, summary, event?, standing_instruction?}`: `by` is `user`, `standing_instruction`, `organization`, `medical` or `staff`, the optional `event` is a closed event, and `standing_instruction` is the instruction's id when `by` is `standing_instruction` |
+| `waits_on` | What the decision waits for, whose it is (null when the record names no one) and the date when one is recorded |
 | `deadline`, `blocks` | The deadline with its label and the event it must precede; the events the item holds (section 4) |
 | `standing_not_applied` | An in-force instruction that would cover the item, with the recorded reason it does not |
 | `fallback`, `can_continue` | What happens if the item stays open, and what can continue meanwhile; neither is filled without a source |
@@ -106,11 +108,11 @@ An item holds an event when it is `OPEN` and one of its blocks, or an event a bl
 | Script | Events checked | Refusal |
 |---|---|---|
 | `scripts/build_week_inputs.py N --season YEAR` | `week_inputs`; then `call_sheet_part` for each part present in the week's committed call sheet | Prints `WEEK_INPUTS: BLOCKED` and one line per item; exit 1; no package is left |
-| `scripts/close_week.py N --season YEAR --close` (and `--continue`) | `week_close`, and `call_sheet_part` for each part of the committed sheet | Prints `WEEK_CLOSE: BLOCKED`; exit 1, never the pause exit 2. During a pause it says to revert the edit and rerun the same `--continue`; after a partial slate, to revert and rerun, never to void or redraw |
+| `scripts/close_week.py N --season YEAR --close` (and `--continue`) | `week_close`, and `call_sheet_part` for each part of the committed sheet or of Jacksonville's inputs in the frozen package (`offensive_call_sheet`, `defensive_call_sheet`, `try_policy`, `kickoff_policy`, `fourth_down_policy`) | Prints `WEEK_CLOSE: BLOCKED`; exit 1, never the pause exit 2. While the week's game is paused (with or without `--continue`) it says to revert the edit and rerun with `--continue`; after a partial slate, to revert and rerun, never to void or redraw. In both cases the refusal line drops its settle-and-rerun instruction |
 | `scripts/close_week.py` without `--close` | The same | Reports each line as a note; exit 0 |
 | `scripts/season_handoff.py` opening check and stage | `season_opening`; `season_stage` | The opening errors list the item; staging prints `HANDOFF BLOCKED`; exit 1 |
 
-An unreadable or missing queue refuses every gated event: the gate fails closed. A sheet without a given part is never held by an item on that part. Nothing that resolves a game reads either file, and closing an event depends on an item's status and the event's identity, never on a result.
+An unreadable or missing queue refuses every gated event: the gate fails closed. A sheet, or a frozen package, without a given part is never held by an item on that part. Nothing that resolves a game reads either file, and closing an event depends on an item's status and the event's identity, never on a result.
 
 ## 5. When the workflow stops
 
@@ -134,14 +136,14 @@ An `IN_FORCE` standing instruction may answer a live pause or close a queue item
 
 It also keeps two rows after Document 4's in Document 5's manifest, naming the git blob of each file. That binds both files into Document 5's digest and so into the private snapshot: every change to either file moves the digest.
 
-The views read only the two files, Document 5's master-date cell and the section 9 rows still marked Scheduled, the active season's fixtures and `docs/repository_map.json`. They never read a receipt, standings, awards or the wall clock. Every link is written relative to its file and must resolve, headings included. The desk and phase-control blocks are reader prose: a word from the voice rule in AGENTS.md stops the render and names the source field to reword. The desk is built for the head coach only; any other role reports that its desk is defined but not built.
+The views read only the two files, Document 5's master-date cell and the section 9 rows still marked Scheduled, the active season's fixtures, `docs/repository_map.json`, and whether the next game's week README and call sheet and the last game's `output.md` exist. They never read a receipt, standings, awards or the wall clock. Every link is written relative to its file and must resolve, headings included. The desk and phase-control blocks are reader prose: a word from the voice rule in AGENTS.md stops the render and names the source field to reword. The desk is built for the head coach only; any other role reports that its desk is defined but not built.
 
 `--check` is read-only. It reports a stale block, a missing or duplicated marker, a desk anywhere but the active season's README and anything that stops the render, and exits 1. Repository validation runs the same check. Writing is refused while any regular-season, postseason or preseason Jacksonville game is paused.
 
 ## 7. Cadence
 
 - Open and resolve items in the commit that closes the event that raised or settled them.
-- When a week closes, open the next items for the next week in which Jacksonville plays, never a bye: the weekly game plan and, unless a standing instruction covers them, the game-day inactives. An open item that still holds a closed week is a validation error, so the closing commit resolves or withdraws it.
+- When a week closes, open the next items for the next week in which Jacksonville plays, never a bye: the weekly game plan and, unless a standing instruction covers them, the game-day inactives. An open item that still holds a closed week is a validation error. An item on a call-sheet part the closed week's sheet did not freeze held nothing, so the closing commit moves that block to the next week in which Jacksonville plays; that is bookkeeping, not a settlement. Any other open item is resolved or withdrawn in the closing commit by whoever may settle it, and never by the workflow when it is the holder's (below).
 - An `IN_FORCE` instruction may answer a live pause or close an item; a `RECORDED` one never does.
 - Never edit either file, or Document 5, while a game is paused: the paused game's packet carries Document 5's digest, so any edit makes the same `--continue` impossible.
 - The holder's items are resolved only `by: "user"` or by a standing instruction. The workflow never settles his decision.

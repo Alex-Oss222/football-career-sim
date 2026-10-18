@@ -27,6 +27,11 @@ BLOCK_KINDS = {"week_inputs": ("season", "week"), "week_close": ("season", "week
 IMPLIES = {"week_inputs": ("week_close",), "season_stage": ("season_opening",)}
 SHEET_PARTS = ("offensive_call_sheet", "decisions.two_point", "decisions.kickoff",
                "decisions.fourth_down", "defensive_call_sheet")
+# The club's TeamInput field each frozen part becomes in a week's package
+# (runtime.week_inputs.jacksonville_input; scoring_decisions.POLICY_FIELDS).
+INPUT_PARTS = {"offensive_call_sheet": "offensive_call_sheet", "defensive_call_sheet": "defensive_call_sheet",
+               "try_policy": "decisions.two_point", "kickoff_policy": "decisions.kickoff",
+               "fourth_down_policy": "decisions.fourth_down"}
 RAISED_BY = ("user", "workflow", "staff", "organization", "medical")
 RESOLVED_BY = ("user", "standing_instruction", "organization", "medical", "staff")
 WEEK_KINDS = frozenset({"week_inputs", "week_close", "call_sheet_part"})
@@ -132,6 +137,20 @@ def sheet_parts(sheet):
     return parts + ["decisions." + key for key in sheet.get("decisions") or {}]
 
 
+def package_parts(package, club):
+    """The call-sheet parts a frozen week package carries in ``club``'s
+    inputs, so a close is held by what it would draw as well as by the
+    committed sheet."""
+    parts = []
+    for game in package.get("games") or ():
+        for side in ("home", "away"):
+            data = game.get(side + "_input") or {}
+            if club in (game.get(side), data.get("team_id")):
+                parts += [part for key, part in INPUT_PARTS.items()
+                          if data.get(key) is not None and part not in parts]
+    return parts
+
+
 def sheet_path(season, week, root):
     """The committed call sheet's path, as build_week_inputs.call_sheet_path
     finds it (the regular-season folder, then the postseason folder)."""
@@ -176,21 +195,27 @@ def _is_holder(item, job):
     return cls is not None and cls.default_owner == "holder"
 
 
-def refusal_line(item, ev, job):
+def refusal_line(item, ev, job, settle=True):
+    """One item's refusal. Without ``settle`` (a paused game, or a slate
+    partly closed) the line names no way to settle and rerun: the caller's
+    only instruction is to revert the edit that opened the item."""
     owner = current_job.party_name(job, item.get("owner")) if job is not None else str(item.get("owner"))
     if _is_holder(item, job):
         owner += " (the user): present it to the user; do not settle it in the workflow"
     deadline = item.get("deadline") or {}
     record = item.get("record") or {}
     target = str(record.get("path")) + ("#" + record["anchor"] if record.get("anchor") else "")
-    return ("Decision open: %s, %s. It holds %s. Owner: %s.%s Record: %s. When it is settled, mark it RESOLVED "
-            "in state/decision_queue.json with its resolution record, run python scripts/render_career_views.py, "
-            "merge, advance the private snapshot from main, then rerun."
+    line = ("Decision open: %s, %s. It holds %s. Owner: %s.%s Record: %s."
             % (item.get("id"), item.get("title"), describe(ev), owner,
                " Needed %s." % deadline["label"] if deadline.get("label") else "", target))
+    if settle:
+        line += (" When it is settled, mark it RESOLVED in state/decision_queue.json with its resolution record, "
+                 "run python scripts/render_career_views.py, merge, advance the private snapshot from main, "
+                 "then rerun.")
+    return line
 
 
-def blocking_errors(events, root):
+def blocking_errors(events, root, settle=True):
     """One refusal line per open item holding any of ``events``. An
     unreadable queue refuses everything (the gate fails closed)."""
     try:
@@ -201,7 +226,7 @@ def blocking_errors(events, root):
         job = current_job.load(root)
     except ValueError:
         job = None
-    return [refusal_line(item, ev, job) for item, ev in blocking_items(queue, events)]
+    return [refusal_line(item, ev, job, settle) for item, ev in blocking_items(queue, events)]
 
 
 def refuse_if_blocked(events, root):
@@ -294,10 +319,13 @@ def _validation_errors(queue, root, mapping, events, master, job, prefix):
         if raised.get("by") not in RAISED_BY:
             say("raised.by must be one of %s" % ", ".join(RAISED_BY))
         named = [("owner", item.get("owner"))] + [("adviser", p) for p in item.get("advisers") or ()]
-        named += [("waits_on owner", w.get("owner")) for w in item.get("waits_on") or ()]
+        # A wait's owner is null where its record names none.
+        named += [("waits_on owner", w["owner"]) for w in item.get("waits_on") or () if w.get("owner") is not None]
         for role, pid in named:
             if pid not in parties:
                 say("names %s %r, which is not a party in the job record" % (role, pid))
+        if item.get("subject") is not None and item["subject"] not in current_job.SUBJECTS:
+            say("has unknown subject %r (one of %s)" % (item["subject"], ", ".join(current_job.SUBJECTS)))
         for row in item.get("authority_rows") or ():
             if row not in current_job.AUTHORITY_ROWS:
                 say("names unknown authority row %r" % (row,))
@@ -402,15 +430,33 @@ def _validation_errors(queue, root, mapping, events, master, job, prefix):
         elif status == "OPEN" and resolution is not None:
             say("is OPEN with a resolution")
         if status == "OPEN":
-            # 9. Closed while open.
+            # 9. Closed while open. A block on a call-sheet part the closed
+            # week's committed sheet never froze held nothing: the closing
+            # commit moves it to the next week the club plays (bookkeeping,
+            # not a settlement). The holder's decision is never settled here.
             weeks = sorted({(b["season"], b["week"]) for b in blocks
                             if b.get("kind") in WEEK_KINDS and type(b.get("season")) is int and type(b.get("week")) is int})
             for season, week in weeks:
                 paths = SeasonPaths(season, root)
                 folder = paths.postseason_receipts if _is_postseason(season, week) else paths.receipts
                 if any(folder.glob("week_%02d_*.json" % week)):
-                    say("is open, but %s of %d has closed; resolve or withdraw it in the closing commit"
-                        % (week_label(season, week)[4:], season))
+                    label = week_label(season, week)[4:]
+                    held = [b for b in blocks if b.get("kind") in WEEK_KINDS
+                            and (b.get("season"), b.get("week")) == (season, week)]
+                    frozen = sheet_parts(committed_sheet(season, week, root) or {})
+                    unfrozen = [b["part"] for b in held
+                                if b["kind"] == "call_sheet_part" and b.get("part") not in frozen]
+                    if len(unfrozen) == len(held):
+                        say("is open, but %s of %d has closed without freezing %s in its call sheet; move the block "
+                            "to the next week in which %s plays in the closing commit (bookkeeping, not a settlement)"
+                            % (label, season, " or ".join(PART_LABEL.get(p, p) for p in unfrozen), club or "the club"))
+                    elif item.get("owner") == holder:
+                        say("is open, but %s of %d has closed; it is %s's decision, which the workflow may not "
+                            "resolve or withdraw: present it to the user"
+                            % (label, season, current_job.party_name(job, holder)))
+                    else:
+                        say("is open, but %s of %d has closed; resolve or withdraw it in the closing commit"
+                            % (label, season))
                 # 10. Paused.
                 if any(h.get("kind") == "week_close" and h.get("week") == week for h in implied):
                     for post in (False, True):

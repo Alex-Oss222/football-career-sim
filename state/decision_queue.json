@@ -84,7 +84,7 @@
     },
     {
      "what": "Poyer's projected return; the independent process releases the hold",
-     "owner": "medical_staff",
+     "owner": null,
      "date": "2014-10-09"
     }
    ],
@@ -171,13 +171,13 @@
    "status": "OPEN",
    "waits_on": [
     {
-     "what": "cause review and comparison clips",
-     "owner": "coaching_staff",
+     "what": "cause review and comparison clips for the Cousins packet",
+     "owner": null,
      "date": null
     },
     {
      "what": "a supplied video asset",
-     "owner": "coaching_staff",
+     "owner": null,
      "date": null
     }
    ],

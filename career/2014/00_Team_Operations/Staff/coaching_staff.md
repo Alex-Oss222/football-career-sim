@@ -300,7 +300,7 @@ Stone's own playing background at tight end does not make Zernhelt a ceremonial 
 
 **Contract:** 3 seasons, $4.95M total; $1.60M in 2013.
 **Reports to:** Stone.
-**Play-calling:** Crennel called the defense in 2013 and through Week 3 of 2014. From Week 4 (September 28, 2014) Stone calls the defense by his September 21 instruction, with no end date stated; Crennel prepares the defensive call sheet and the situation and protection information, transmits Stone's call to the field and keeps the between-snap information ([Week 4 record](../../05_Regular_Season/Games/Week_04/output.md)).
+**Play-calling:** see [Phase control](#phase-control) above, generated from the current job record.
 
 #### Why the contract is at the top of the assistant market
 

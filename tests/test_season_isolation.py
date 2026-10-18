@@ -300,6 +300,36 @@ class DecisionQueueCloseGateTests(unittest.TestCase):
         self.assertEqual(record.read_bytes(), before)
         self.assertIn('WEEK_CLOSE: BLOCKED', out)
         self.assertIn('revert the edit that opened this item, then rerun the same --continue', out)
+        self.assertNotIn('advance the private snapshot', out)
+
+    def test_paused_game_without_continue_names_only_the_revert(self):
+        self.write_queue({'kind': 'week_close', 'season': 2014, 'week': 1})
+        record = self.paths.paused_game(1)
+        record.parent.mkdir(parents=True)
+        record.write_text(json.dumps({'status': 'paused', 'event_id': self.GAME['event_id']}))
+        code, out = self.close('--close')
+        self.assertEqual(code, 1)
+        self.assertIn('revert the edit that opened this item, then rerun with --continue', out)
+        self.assertNotIn('advance the private snapshot', out)
+
+    def test_part_frozen_in_the_package_holds_after_the_sheet_drops_it(self):
+        # The package froze Jacksonville's fourth-down rule; the committed
+        # sheet lost the block, or the sheet itself, after the build.
+        game = dict(self.GAME, home='Jacksonville Jaguars',
+                    home_input={'team_id': 'Jacksonville Jaguars', 'fourth_down_policy': {'rules': []}})
+        self.paths.cache(1, 'inputs').write_text(json.dumps({'season': 2014, 'week': 1, 'games': [game]}))
+        self.write_queue({'kind': 'call_sheet_part', 'season': 2014, 'week': 1, 'part': 'decisions.fourth_down'},
+                         cls='game_management_rule')
+        sheet = self.paths.week_folder(1) / 'call_sheet.json'
+        sheet.parent.mkdir(parents=True)
+        sheet.write_text(json.dumps({'offensive_call_sheet': [], 'decisions': {'two_point': {}}}))
+        for present in (True, False):
+            if not present:
+                sheet.unlink()
+            with self.subTest(sheet=present):
+                code, out = self.close('--close')
+                self.assertEqual(code, 1)
+                self.assertIn('It holds freezing a fourth-down rule in the Week 1 call sheet.', out)
 
     def test_partly_closed_slate_is_never_voided_or_redrawn(self):
         self.write_queue({'kind': 'week_close', 'season': 2014, 'week': 1})
@@ -310,6 +340,7 @@ class DecisionQueueCloseGateTests(unittest.TestCase):
         self.assertEqual(code, 1)
         self.assertEqual(results.read_bytes(), before)
         self.assertIn('Never void or redraw the week for it.', out)
+        self.assertNotIn('advance the private snapshot', out)
         self.assertFalse(self.paths.receipts.exists())
 
 

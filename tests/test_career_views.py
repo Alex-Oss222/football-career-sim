@@ -1,9 +1,10 @@
 """The career views rendered from the job record and the decision queue.
 
-Mutations run on one throwaway copy of the checkout; each test restores the
+Mutations run on one throwaway copy of the checkout, with any paused-game
+record removed so a live pause cannot decide a test; each test restores the
 files it changed. Weeks come from the fixtures and receipts (the first
-unplayed Jacksonville week) and dates from the master date, so the tests hold
-at any later clock.
+unplayed Jacksonville week, then the first unplayed postseason round) and
+dates from the master date, so the tests hold at any later clock.
 """
 from datetime import date
 import json
@@ -38,20 +39,30 @@ def club_games(root):
 
 
 def first_unplayed_week(root):
-    """The first week with a Jacksonville fixture and no receipt."""
+    """The first week with a Jacksonville fixture and no receipt, then the
+    first postseason round with none; None once every round has closed."""
     season = int(repository_map(root)["active_season"])
-    receipts = SeasonPaths(season, root).receipts
-    return next(g["week"] for g in club_games(root) if not any(receipts.glob("week_%02d_*.json" % g["week"])))
+    paths = SeasonPaths(season, root)
+    first = 18 + (1 if season >= 2021 else 0)
+    weeks = [(g["week"], paths.receipts) for g in club_games(root)]
+    weeks += [(w, paths.postseason_receipts) for w in range(first, first + 4)]
+    return next((w for w, folder in weeks if not any(folder.glob("week_%02d_*.json" % w))), None)
 
 
 class CareerViewTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
+        cls.week = first_unplayed_week(ROOT)
+        if cls.week is None:
+            raise unittest.SkipTest("every game of the active season has closed; the view tests need an "
+                                    "unplayed week")
         cls.root = copied_root(SimpleNamespace(addCleanup=cls.addClassCleanup)).resolve()
+        # Untracked paused-game records: a live pause would refuse every write.
+        for record in cls.root.glob("career/**/paused_game.json"):
+            record.unlink()
         cls.season = int(repository_map(cls.root)["active_season"])
         cls.paths = SeasonPaths(cls.season, cls.root)
         cls.readme = cls.paths.career / "README.md"
-        cls.week = first_unplayed_week(cls.root)
         cls.master = master_date(cls.root)
 
     def setUp(self):
@@ -114,7 +125,9 @@ class CareerViewTests(unittest.TestCase):
 
     def test_delegation_change_makes_staff_register_stale(self):
         def change(current):
-            current["delegation"]["play_calling"][0]["stone_retains"] = "A changed retained role"
+            offense = next(r for r in current["delegation"]["play_calling"]
+                           if r["phase"] == "offense" and r["to"] is None)
+            offense["stone_retains"] = "A changed retained role"
         self.with_job(change)
         staff = current_record("staff", self.root).relative_to(self.root).as_posix()
         errors = views.check(self.root)
@@ -245,6 +258,19 @@ class CareerViewTests(unittest.TestCase):
         rows = [l.split(" | ")[0] for l in manifest.splitlines() if l.startswith("| ")]
         at = rows.index("| Document 4")
         self.assertEqual(rows[at + 1:at + 3], ["| Current job record", "| Decision queue"])
+
+    def test_partly_decided_rows_name_their_final_authority(self):
+        row = next(l for l in self.rendered(STATE).splitlines() if l.startswith("| Final authority |"))
+        current = current_job.appointment(self.job)
+        for domain in current["authority"]["domains"]:
+            if domain["stone_action"] == "decides_part" and domain["final"] != [self.holder]:
+                parties = views.join(current_job.party_name(self.job, p) for p in domain["final"])
+                clause = next(c for c in row.split("; ") if "row %s (" % domain["row"] in c)
+                self.assertIn(parties.lower(), clause.lower())
+                self.assertIn("decides %s)" % domain["scope"], clause)
+
+    def test_desk_links_no_uncommunicated_review(self):
+        self.assertNotIn("alex_stone_performance_review", self.desk())
 
     def test_classes_block_lists_every_class(self):
         text = self.rendered("docs/career_layer.md")
