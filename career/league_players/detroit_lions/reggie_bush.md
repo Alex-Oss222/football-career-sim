@@ -6,11 +6,11 @@
 
 ### Regular season
 
-| Season | Club | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Detroit Lions | 14 | 240 | 1,148 | 4.8 | 15 | 82.0 | 41 | 428 | 6 | 281 | 3 |
-| 2014 | Detroit Lions | 2 | 18 | 76 | 4.2 | 0 | 38.0 | 3 | 12 | 0 | 21 | 0 |
-| **Career** |  | 16 | 258 | 1,224 | 4.7 | 15 | 76.5 | 44 | 440 | 6 | 302 | 3 |
+| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Detroit Lions | 28 | 21 | 14 | 240 | 1,148 | 4.8 | 15 | 82.0 | 41 | 428 | 6 | 281 | 3 |
+| 2014 | Detroit Lions | 29 | 21 | 2 | 18 | 76 | 4.2 | 0 | 38.0 | 3 | 12 | 0 | 21 | 0 |
+| **Career** |  |  |  | 16 | 258 | 1,224 | 4.7 | 15 | 76.5 | 44 | 440 | 6 | 302 | 3 |
 
 ### Playoffs
 
@@ -23,5 +23,7 @@ No playoff games on record.
 - NFC Offensive Player of the Month (2013, October)
 - NFC Offensive Player of the Week (2013, Week 15)
 - Pro Bowl selection (2013, RB)
+
+Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
 Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).

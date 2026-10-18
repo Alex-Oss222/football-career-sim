@@ -6,21 +6,23 @@
 
 ### Regular season
 
-| Season | Club | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 16 | 6 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0.4 | 812 |
-| 2014 | New York Giants | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 283 |
-| **Career** |  | 20 | 7 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0.3 | 1,095 |
+| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City Chiefs | 28 | 35 | 16 | 6 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0.4 | 812 |
+| 2014 | New York Giants | 29 | 35 | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 283 |
+| **Career** |  |  |  | 20 | 7 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0.3 | 1,095 |
 
 ### Playoffs
 
-| Season | Club | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 78 |
-| **Career** |  | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 78 |
+| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City Chiefs | 28 | 35 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 78 |
+| **Career** |  |  |  | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 78 |
 
 ## Awards
 
 None on record.
+
+Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
 Records through September 25, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).

@@ -6,21 +6,23 @@
 
 ### Regular season
 
-| Season | Club | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 16 | 146 | 95 | 1,145 | 12.1 | 8 | 71.6 | 65.1 | 62 | 25 | 2 |
-| 2014 | Denver Broncos | 3 | 26 | 19 | 188 | 9.9 | 3 | 62.7 | 73.1 | 34 | 0 | 0 |
-| **Career** |  | 19 | 172 | 114 | 1,333 | 11.7 | 11 | 70.2 | 66.3 | 62 | 25 | 2 |
+| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh Steelers | 26 | 88 | 16 | 146 | 95 | 1,145 | 12.1 | 8 | 71.6 | 65.1 | 62 | 25 | 2 |
+| 2014 | Denver Broncos | 27 | 10 | 3 | 26 | 19 | 188 | 9.9 | 3 | 62.7 | 73.1 | 34 | 0 | 0 |
+| **Career** |  |  |  | 19 | 172 | 114 | 1,333 | 11.7 | 11 | 70.2 | 66.3 | 62 | 25 | 2 |
 
 ### Playoffs
 
-| Season | Club | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 1 | 23 | 16 | 116 | 7.2 | 0 | 116.0 | 69.6 | 18 | 0 | 0 |
-| **Career** |  | 1 | 23 | 16 | 116 | 7.2 | 0 | 116.0 | 69.6 | 18 | 0 | 0 |
+| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh Steelers | 26 | 88 | 1 | 23 | 16 | 116 | 7.2 | 0 | 116.0 | 69.6 | 18 | 0 | 0 |
+| **Career** |  |  |  | 1 | 23 | 16 | 116 | 7.2 | 0 | 116.0 | 69.6 | 18 | 0 | 0 |
 
 ## Awards
 
 None on record.
+
+Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
 Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).

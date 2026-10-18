@@ -6,11 +6,11 @@
 
 ### Regular season
 
-| Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Oakland Raiders | 16 | 90 | 7 | 9 | 0 | 7 | 0 | 0 | 16 | 5.6 | 71 |
-| 2014 | Kansas City Chiefs | 4 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0.5 | 1 |
-| **Career** |  | 20 | 92 | 7 | 9 | 0 | 7 | 0 | 0 | 17 | 4.6 | 72 |
+| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Oakland Raiders | 26 | 98 | 16 | 90 | 7 | 9 | 0 | 7 | 0 | 0 | 16 | 5.6 | 71 |
+| 2014 | Kansas City Chiefs | 27 | 99 | 4 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0.5 | 1 |
+| **Career** |  |  |  | 20 | 92 | 7 | 9 | 0 | 7 | 0 | 0 | 17 | 4.6 | 72 |
 
 ### Playoffs
 
@@ -19,5 +19,7 @@ No playoff games on record.
 ## Awards
 
 - Pro Bowl selection (2013, DT)
+
+Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
 Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).

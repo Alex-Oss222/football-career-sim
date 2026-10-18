@@ -387,6 +387,81 @@ class ValueTests(unittest.TestCase):
             self.assertGreaterEqual(player_cards.contrast(secondary, ground), player_cards.ACCENT, club)
 
 
+class SeasonColumnTests(unittest.TestCase):
+    """Each career-table season row leads with his team, his age on the league's opening game of
+    that season and the number listed for him that season; the career row leaves both blank."""
+
+    def head(self, rel, heading="### Regular season"):
+        text = (ROOT / rel).read_text(encoding="utf-8")
+        body = text.split(heading, 1)[1]
+        return [c.strip() for c in next(l for l in body.splitlines() if l.startswith("|")).strip("|").split("|")]
+
+    def test_the_columns_lead_every_table(self):
+        rel = "%s/jacksonville_jaguars/kirk_cousins.md" % player_cards.FOLDER
+        self.assertEqual(self.head(rel)[:5], ["Season", "Team", "Age", "#", "G"])
+        self.assertEqual(self.head(rel, "### Playoffs")[:5], ["Season", "Team", "Age", "#", "G"])
+        for path in sorted(FOLDER.glob("*/*.md")):
+            if path.name == "README.md":
+                continue
+            text = path.read_text(encoding="utf-8")
+            for line in text.splitlines():
+                if line.startswith("| Season |"):
+                    self.assertTrue(line.startswith("| Season | Team | Age | # | G |"), path)
+
+    def test_age_is_on_the_opening_game_of_each_season(self):
+        self.assertEqual(player_cards.opening_dates(ROOT, (2013, 2014)), {2013: "2013-09-05", 2014: "2014-09-04"})
+        self.assertEqual(player_cards.age_on("1990-09-05", "2013-09-05"), 23)  # his birthday that day
+        self.assertEqual(player_cards.age_on("1990-09-06", "2013-09-05"), 22)
+        self.assertIsNone(player_cards.age_on(None, "2013-09-05"))
+        p = player("Kirk Cousins", "Jacksonville Jaguars")  # born August 19, 1988
+        rows = page_rows("%s/jacksonville_jaguars/kirk_cousins.md" % player_cards.FOLDER)
+        self.assertEqual((rows["2013"]["Age"], rows["2014"]["Age"]), ("25", "26"))
+        self.assertEqual(page_rows("%s/jacksonville_jaguars/kirk_cousins.md" % player_cards.FOLDER,
+                                   "### Playoffs")["2013"]["Age"], "25")
+        self.assertEqual(p["seasons"][2014]["age"], player_cards.age_on(p["birth_date"], "2014-09-04"))
+
+    def test_no_birth_date_reads_na(self):
+        p = next(x for x in data()["players"] if x["birth_date"] is None and x["seasons"])
+        self.assertTrue(all(s["age"] is None for s in p["seasons"].values()))
+        rows = page_rows("%s/%s/%s.md" % (player_cards.FOLDER, player_cards.club_slug(p["team"]), p["slug"]))
+        year = str(min(y for y, s in p["seasons"].items() if s["regular"]))
+        self.assertEqual(rows[year]["Age"], "N/A")
+
+    def test_the_number_follows_the_season_and_team(self):
+        number = player_cards.season_number
+        codes = {"Alpha Club": "AAA", "Beta Club": "BBB", "Jacksonville Jaguars": "JAX"}
+        p = {"team": "Beta Club", "number": 11}
+        listed = {"number": 22, "number_basis": {"club": "AAA", "week": 2},
+                  "number_2013": 33, "number_2013_basis": {"club": "AAA", "week": 17}}
+        w1 = {"club": "Alpha Club", "jersey": "44"}
+        self.assertEqual(number(2014, "Beta Club", p, listed, w1, codes), 11)  # his latest team: the card's number
+        self.assertEqual(number(2014, "Alpha Club", p, listed, w1, codes), 44)  # another 2014 team: Week 1 roster
+        self.assertEqual(number(2014, "Alpha Club", p, listed, dict(w1, branch_note="trade"), codes), 22)
+        self.assertIsNone(number(2014, "Alpha Club", p, dict(listed, number_basis={"club": "BBB"}), None, codes))
+        self.assertIsNone(number(2014, "Jacksonville Jaguars", p, listed, w1, codes))  # not his latest team
+        self.assertEqual(number(2013, "Alpha Club", p, listed, w1, codes), 33)  # the 2013 roster, same team
+        self.assertIsNone(number(2013, "Beta Club", p, listed, w1, codes))  # listed with another team
+        jax = dict(listed, number_2013_basis={"club": "JAX", "week": 17})
+        self.assertEqual(number(2013, "Jacksonville Jaguars", p, jax, w1, codes), 33)  # the real 2013 Jaguars
+        self.assertIsNone(number(2015, "Beta Club", p, listed, w1, codes))  # no listing for a later season
+        # Committed pages: a Jaguar the real 2013 Jaguars did not list reads N/A for 2013.
+        rows = page_rows("%s/jacksonville_jaguars/kirk_cousins.md" % player_cards.FOLDER)
+        cousins = player("Kirk Cousins", "Jacksonville Jaguars")
+        self.assertEqual(rows["2013"]["#"], "N/A")
+        self.assertEqual(rows["2014"]["#"], str(cousins["number"]))
+        doyle = player("Jack Doyle", "Indianapolis Colts")
+        self.assertEqual({y: s["number"] for y, s in doyle["seasons"].items()}, {2013: 84, 2014: 84})
+        # Every season number is the card's own for the latest 2014 team.
+        for x in data()["players"]:
+            s = x["seasons"].get(2014)
+            if s and s["clubs"][-1] == x["team"]:
+                self.assertEqual(s["number"], x["number"], x["name"])
+
+    def test_the_career_row_leaves_age_and_number_blank(self):
+        rows = page_rows("%s/jacksonville_jaguars/kirk_cousins.md" % player_cards.FOLDER)
+        self.assertEqual((rows["Career"]["Team"], rows["Career"]["Age"], rows["Career"]["#"]), ("", "", ""))
+
+
 class LinkTests(unittest.TestCase):
     def test_club_and_index_pages_link_only_to_existing_pages(self):
         link = re.compile(r"\]\(([^)\s]+)\)")

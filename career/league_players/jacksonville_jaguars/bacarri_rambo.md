@@ -6,23 +6,25 @@
 
 ### Regular season
 
-| Season | Club | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 16 | 51 | 0 | 3 | 0 | 3 | 0 | 0 | 0 | 3.2 | 83 |
-| 2014 | Jacksonville Jaguars | 4 | 18 | 0 | 2 | 0 | 1 | 0 | 0 | 0 | 4.5 | 0 |
-| **Career** |  | 20 | 69 | 0 | 5 | 0 | 4 | 0 | 0 | 0 | 3.5 | 83 |
+| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville Jaguars | 23 | N/A | 16 | 51 | 0 | 3 | 0 | 3 | 0 | 0 | 0 | 3.2 | 83 |
+| 2014 | Jacksonville Jaguars | 24 | 24 | 4 | 18 | 0 | 2 | 0 | 1 | 0 | 0 | 0 | 4.5 | 0 |
+| **Career** |  |  |  | 20 | 69 | 0 | 5 | 0 | 4 | 0 | 0 | 0 | 3.5 | 83 |
 
 ### Playoffs
 
-| Season | Club | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 2 | 4 | 1 | 2 | 18 | 0 | 0 | 0 | 0 | 2.0 | 0 |
-| **Career** |  | 2 | 4 | 1 | 2 | 18 | 0 | 0 | 0 | 0 | 2.0 | 0 |
+| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville Jaguars | 23 | N/A | 2 | 4 | 1 | 2 | 18 | 0 | 0 | 0 | 0 | 2.0 | 0 |
+| **Career** |  |  |  | 2 | 4 | 1 | 2 | 18 | 0 | 0 | 0 | 0 | 2.0 | 0 |
 
 ## Awards
 
 None on record.
 
 [Jacksonville player card](../../2014/00_Team_Operations/Team/Player_Cards/bacarri_rambo.md)
+
+Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
 Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: the number he wore in 2014 with the Washington Redskins (Jacksonville has not recorded one). [All Jacksonville Jaguars players](README.md).

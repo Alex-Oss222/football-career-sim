@@ -6,20 +6,22 @@
 
 ### Regular season
 
-| Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 14 | 8 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0.6 | 5 |
-| **Career** |  | 14 | 8 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0.6 | 5 |
+| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee Titans | 27 | 57 | 14 | 8 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0.6 | 5 |
+| **Career** |  |  |  | 14 | 8 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0.6 | 5 |
 
 ### Playoffs
 
-| Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 2 | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0.5 | 1 |
-| **Career** |  | 2 | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0.5 | 1 |
+| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee Titans | 27 | 57 | 2 | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0.5 | 1 |
+| **Career** |  |  |  | 2 | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0.5 | 1 |
 
 ## Awards
 
 None on record.
+
+Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
 Records through January 19, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Tennessee Titans players](README.md).

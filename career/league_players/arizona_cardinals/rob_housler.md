@@ -6,11 +6,11 @@
 
 ### Regular season
 
-| Season | Club | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Arizona Cardinals | 14 | 83 | 62 | 643 | 10.4 | 3 | 45.9 | 74.7 | 51 | 0 | 0 |
-| 2014 | Arizona Cardinals | 3 | 15 | 7 | 86 | 12.3 | 1 | 28.7 | 46.7 | 28 | 0 | 0 |
-| **Career** |  | 17 | 98 | 69 | 729 | 10.6 | 4 | 42.9 | 70.4 | 51 | 0 | 0 |
+| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Arizona Cardinals | 25 | 84 | 14 | 83 | 62 | 643 | 10.4 | 3 | 45.9 | 74.7 | 51 | 0 | 0 |
+| 2014 | Arizona Cardinals | 26 | 84 | 3 | 15 | 7 | 86 | 12.3 | 1 | 28.7 | 46.7 | 28 | 0 | 0 |
+| **Career** |  |  |  | 17 | 98 | 69 | 729 | 10.6 | 4 | 42.9 | 70.4 | 51 | 0 | 0 |
 
 ### Playoffs
 
@@ -19,5 +19,7 @@ No playoff games on record.
 ## Awards
 
 None on record.
+
+Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
 Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Arizona Cardinals players](README.md).

@@ -7,7 +7,9 @@ module after every closed game:
 - ``<club>/README.md``: the players whose latest game on record was with that
   club, by position group;
 - ``<club>/<player>.md``: his card image, his regular-season and playoff
-  statistics by season with a career row, and his awards on record;
+  statistics by season with a career row (each season row leads with his
+  team, his age on the league's opening game of that season and the number
+  listed for him that season; ``season_number``), and his awards on record;
 - ``<club>/assets/<player>.svg``: the card (header with listed identity, then
   latest-season and career blocks for playoffs and regular season);
 - on each current Jacksonville player's card page that his league page links
@@ -83,6 +85,8 @@ COLORS = {
     "Arizona Cardinals": ("#97233F", "#FFB612"), "St. Louis Rams": ("#002244", "#B3995D"),
     "San Francisco 49ers": ("#AA0000", "#B3995D"), "Seattle Seahawks": ("#002244", "#69BE28"),
 }
+# The season whose rosters the listed identity's 2014 numbers come from (Weeks 1-4).
+LISTING_SEASON = 2014
 WHITE, INK = "#FFFFFF", "#101418"
 SURFACE, SURFACE_TILE, PAGE = "#1B1E23", "#272B32", "#111317"
 
@@ -482,6 +486,44 @@ def award_rows(root, years):
 
 
 # ------------------------------------------------------------------ assemble
+def opening_dates(root, years):
+    """{season: the date of the league's first regular-season game}, from each season's schedule."""
+    return {y: min(g["date"] for g in _load(SeasonPaths(y, root).schedule)["games"]) for y in years}
+
+
+def age_on(birth_date, day):
+    if not birth_date:
+        return None
+    b, t = dt.date.fromisoformat(birth_date), dt.date.fromisoformat(day)
+    return t.year - b.year - ((t.month, t.day) < (b.month, b.day))
+
+
+def season_number(year, club, p, listed, w1, codes):
+    """The number a career table shows for one season row, for the club he ended that season
+    with. 2014: the card's own number for his latest club (the rule below, Jacksonville's
+    included); for another club, his 2014 Week 1 roster number with it (not a row a
+    Jacksonville trade placed there) or his Weeks 1-4 listing with it. 2013: his 2013 season
+    roster number (his latest 2013 week) when that row is with the same club; for Jacksonville
+    that is the real 2013 Jaguars' listing, Jacksonville having recorded no numbers. Otherwise
+    None (N/A): no number is inferred."""
+    code = codes.get(club)
+    if year == LISTING_SEASON:
+        if club == p["team"]:
+            return p["number"]
+        if club == JAX:
+            return None
+        if (w1 and w1.get("club") == club and not w1.get("branch_note")
+                and str(w1.get("jersey") or "").isdigit()):
+            return int(w1["jersey"])
+        if listed.get("number") is not None and (listed.get("number_basis") or {}).get("club") == code:
+            return listed["number"]
+        return None
+    if year == LISTING_SEASON - 1:
+        if listed.get("number_2013") is not None and (listed.get("number_2013_basis") or {}).get("club") == code:
+            return listed["number_2013"]
+    return None
+
+
 def card_data(root=ROOT):
     """All players on record, their clubs, identity, blocks and awards."""
     root = Path(root)
@@ -490,6 +532,7 @@ def card_data(root=ROOT):
     ident = Identity(root)
     current_jax = jacksonville_current(root, ident)
     years = record_years(root)
+    openings = opening_dates(root, years)
     as_of = max(r["date"] for r in games)
     for r in games:
         r["key"] = ident.gsis(r["pid"], r["year"]) or "%s-%s" % (slugify(display(r["pid"])), GROUP_OF.get(r["pos"], "x"))
@@ -542,7 +585,7 @@ def card_data(root=ROOT):
             yr = [r for r in rows if r["year"] == year]
             if not yr:
                 continue
-            s = {"clubs": []}
+            s = {"clubs": [], "age": age_on(dob, openings[year])}
             for r in yr:
                 if r["team"] not in s["clubs"]:
                     s["clubs"].append(r["team"])
@@ -565,6 +608,7 @@ def card_data(root=ROOT):
             "height_in": listed.get("height_in"), "weight": listed.get("weight"), "listing": listed.get("listing"),
             "birth_date": dob, "age": age, "college": college, "seasons": seasons, "career": career,
             "through": through, "current_jaguar": current, "awards": awards.get(key, []),
+            "_listed": listed, "_w1": w1,
         })
     # Jacksonville numbers, for players Jacksonville currently controls (active roster, reserve and
     # practice squad): his real 2014 Jaguars number; else the number he wore in 2014 with his real
@@ -578,6 +622,10 @@ def card_data(root=ROOT):
         for p in ps:
             if p["number_note"].startswith("other:") and len(ps) > 1:
                 p["number"], p["number_note"] = None, None
+    for p in players:
+        listed, w1 = p.pop("_listed"), p.pop("_w1")
+        for year, s in p["seasons"].items():
+            s["number"] = season_number(year, s["clubs"][-1], p, listed, w1, ident.codes)
     club_of_code = {code: club for club, code in ident.codes.items()}
     for p in players:
         note = p["number_note"]
@@ -793,22 +841,27 @@ def _cell(v):
 
 
 def stat_table(p, gtype):
-    """Rows by season (his club or clubs that season) and a career row."""
+    """Rows by season (his team or teams that season, his age on that season's opening game,
+    the number listed for him that season) and a career row."""
     rows = [(year, s) for year, s in sorted(p["seasons"].items()) if s[gtype]]
     if not rows:
         return None
     labels = [label for label, _ in p["career"][gtype]["tiles"] if label != "GAMES"]
-    head = ["Season", "Club", "G"] + labels
+    head = ["Season", "Team", "Age", "#", "G"] + labels
     lines = ["| " + " | ".join(head) + " |", "|" + "|".join(["---", "---"] + ["---:"] * (len(head) - 2)) + "|"]
 
     def values(b):
         tiles = dict(b["tiles"])
         return [tiles.get(label, N_A) for label in labels]
+
+    def known(v):
+        return N_A if v is None else v
     for year, s in rows:
-        lines.append("| " + " | ".join(_cell(v) for v in [year, ", ".join(s["clubs"]), b_games(s[gtype])]
+        lines.append("| " + " | ".join(_cell(v) for v in [year, ", ".join(s["clubs"]), known(s.get("age")),
+                                                          known(s.get("number")), b_games(s[gtype])]
                                        + values(s[gtype])) + " |")
     c = p["career"][gtype]
-    lines.append("| " + " | ".join(_cell(v) for v in ["**Career**", "", c["games"]] + values(c)) + " |")
+    lines.append("| " + " | ".join(_cell(v) for v in ["**Career**", "", "", "", c["games"]] + values(c)) + " |")
     return "\n".join(lines)
 
 
@@ -841,6 +894,9 @@ def player_page(p, profile_link):
     if p["listing"] == "player_file" and p["height_in"] is not None:
         basis = "the public player file, last listed in 2013 or earlier (no 2014 Weeks 1-4 or 2013 roster row)"
     number = "; number: %s" % p["number_note"] if p["number"] is not None and p["number_note"] else ""
+    lines += ["Age is his age on the league's opening game of each season; # is the number listed for him that "
+              "season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing "
+              "applies.", ""]
     lines.append("Records through %s. Identity: %s%s. [All %s players](README.md)."
                  % (long_date(p["through"]), basis, number, p["team"]))
     return "\n".join(lines) + "\n"
@@ -869,7 +925,8 @@ def club_page(team, players, years, as_of):
 def index_page(counts, years, as_of):
     lines = ["# League players", "",
              "Every player in the %s game records, under the club of his latest game on record. Each player page "
-             "has his career card, his regular-season and playoff statistics by season and his awards." % (
+             "has his career card, his regular-season and playoff statistics by season (each season row with his team, "
+             "his age on that season's opening game and the number listed for him that season) and his awards." % (
                  " and ".join(str(y) for y in years)), ""]
     for conf in ("AFC", "NFC"):
         lines += ["## %s" % conf, ""]
