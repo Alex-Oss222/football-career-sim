@@ -6,7 +6,7 @@
 
 ## Storage and bulk-report rule
 
-Each played preseason game's complete output remains in its existing game folder. For 2014 onward, use `career/[year]/04_Training_Camp_and_Preseason/Preseason_Games/Game_NN/output.md`; preserve the existing named game folders for 2013. The game output owns preparation, recorded media, the game narrative, the coaching report, full generated box score, consequential decisions and subsequent work. Keep receipt/provenance, medical changes and personnel decisions in their existing supporting owners.
+Each played preseason game's complete output remains in its existing game folder. For 2014 onward, use `career/[year]/04_Training_Camp_and_Preseason/Preseason_Games/Game_NN/output.md`; preserve the existing named game folders for 2013. The game output owns preparation, recorded media, the game narrative, the coaching report, full generated box score, consequential decisions and subsequent work. Keep receipt/provenance, medical changes and personnel decisions in their existing supporting owners. Before closure, place the existing box-score markers in section 4's box-score slot. The preseason closer fills that slot; if it had to append a missing marker at the end of the file, move the intact generated block to its proper slot before delivering the report.
 
 Use all eight sections below for the consolidated preseason turn. Show period-level coach status and preparation once, and repeat the complete section 4 game block for each played game, with the correct opponent/date and its own report and box score. Keep each game's recorded media clearly dated in sections 3 and 5. Section 6 draws together the findings across games and camp; section 7 shows the current personnel at the report's cutoff; section 8 closes the period actually reached. The [consolidated review guide](training_camp_and_preseason/preseason_review.md) supplies section 6's football substance, not a replacement layout.
 
@@ -89,7 +89,7 @@ Every narrated event must come from the simulated game's generated result or ano
 
 Prefer concrete football cause over generic evaluation.
 
-A useful highlight usually contains two or three of these:
+Use the details that explain the sequence; the items below are considerations, not a composition formula:
 
 1. **Situation:** score/clock, field position, down-and-distance, personnel, or game state.
 2. **Action:** what the offense, defense, special-teams unit, or coach actually did.
@@ -121,7 +121,7 @@ Write like a sharp coach-facing game story.
 
 ### Anti-slop guardrails
 
-Before finalizing the narrative, cut or rewrite any sentence that would still fit after changing only the team and player names. Generic prose is not made specific by inserting a proper noun.
+Before finalizing the narrative, cut generic praise, blame or significance claims that add no football fact or supported conclusion. An ordinary factual sentence can stay ordinary; do not add contrived detail merely to make it unique to this game.
 
 Watch for repeated AI-style rhetorical scaffolding. Do not lean on:
 
@@ -222,13 +222,15 @@ Research informs the form. Use the inspected references in the media method; add
 
 **Review:** [Immediate postgame assessment, or completed staff review with its actual evidence-through date.]
 
+[Select the prompts this game actually tested. Give a finding one main home, and revisit it only for a different conclusion. The unit sections develop the football; player findings explain an individual implication; section 6 organizes the next work. Do not answer every prompt or provide a catalogue of missing observations.]
+
 #### What the staff wanted to see
 
-[Briefly identify the camp questions the game was meant to test, the prepared menu, personnel opportunities and material workload limits. Explain why a player or combination received that work when the reason is recorded. Distinguish the plan from who actually played. Do not assume every starter plays the same number of series or that game three always has a fixed rehearsal role. The recorded pregame exchange belongs in section 3; do not repeat it here.]
+[Refer to the camp questions and opportunities established in section 2, then explain which were actually tested. Do not repeat the whole prepared menu or practice plan. Explain why a player or combination received that work when the reason is recorded. Distinguish the plan from who actually played. Do not assume every starter plays the same number of series or that game three always has a fixed rehearsal role. The recorded pregame exchange belongs in section 3; do not repeat it here.]
 
 #### What the game established
 
-[Use the game summary directly above as the account of what happened. Explain what those sequences establish about the team's play as a whole and what changed with the actual personnel. Connect offense, defense and special teams through possession, field position and the situations they left each other. Include the opponent's contribution. Develop the coaching assessment here without retelling the chronology.]
+[Use the game summary directly above as the account of what happened. State the game-level conclusion that connects the units, leaving their detailed work to the sections below. Connect offense, defense and special teams through possession, field position and the situations they left each other. Include the opponent's contribution. Develop the coaching assessment here without retelling the chronology.]
 
 #### How the units played
 
@@ -248,7 +250,7 @@ Research informs the form. Use the inspected references in the media method; add
 
 #### Communication and game operation
 
-[Explain whether the team could get the call from the sideline into the huddle, make its shared declarations and get the correct people aligned before the snap. Use specific recorded examples of protection agreement, coverage exchanges, substitutions, tempo, clock handling or a replacement taking over communication. Describe what held together and what needed rescue, including timeout or play-menu costs when established. Account for coach-to-player communication as well as player-to-player communication.]
+[Develop a material communication or operation finding not already explained in a unit section. The evidence may concern getting the call from the sideline into the huddle, making shared declarations or aligning the correct personnel before the snap. Use specific recorded examples of protection agreement, coverage exchanges, substitutions, tempo, clock handling or a replacement taking over communication. Describe what held together and what needed rescue, including timeout or play-menu costs when established. Account for coach-to-player communication as well as player-to-player communication.]
 
 [Do not label every bust a communication problem. Distinguish a call not received, conflicting instructions, a correctly understood job executed poorly and a cause that is still unclear. A clean penalty line or a win does not establish clean communication. If only one unit has usable evidence, state that limit once and assess that unit without awarding the whole team a communication verdict.]
 
@@ -274,7 +276,7 @@ Research informs the form. Use the inspected references in the media method; add
 - [Player]: [Specific football evidence and relevant statistics.]
 - [Player]: [Specific football evidence and relevant statistics.]
 [Include only additional material findings; no player-count quota.]
-[These are concise references to the developed player findings above, not another assessment or a second account of the same plays.]
+[Omit this optional list when the named player paragraphs already supply these findings. Do not assess the same player again or repeat the same plays after the box score.]
 
 **Material game-management decisions:** [Only consequential fourth-down, clock, challenge, timeout, personnel, tempo, or other head-coach decisions actually made. Separate the quality of the decision from whether the result worked. Omit if none.]
 
@@ -290,17 +292,17 @@ Research informs the form. Use the inspected references in the media method; add
 
 ## 6. Coaching takeaways and preseason carry-forward
 
-[For a bulk report, connect the games to the camp findings here using the consolidated review guide. Retain the three fields below; develop the changes in unit execution, communication and player assessment without replaying each game.]
+[For a bulk report, connect the games to the camp findings here using the consolidated review guide. The fields below organize what continues. For a single-game report, carry forward the consequences of section 4 rather than writing the review again. A field with no distinct material work does not need filler.]
 
-**What held up:** [Execution, communication, preparation, or unit strengths actually supported by the period.]
+**What held up:** [The work or personnel use the staff can retain because of the findings above.]
 
-**What must be corrected:** [Specific football problems. Distinguish assignment, communication, technique, physical loss, processing, medical limitation, and teaching failure.]
+**What must be corrected:** [The resulting correction or unresolved football question. Keep the distinction between assignment, technique, physical execution and teaching where it changes the next work; do not repeat every finding.]
 
 **Next-period carry-forward:** [What Stone/staff will retain, reduce, correct, or investigate. Do not pre-resolve the next period's outcome.]
 
 ## 7. Preseason personnel and availability snapshot
 
-This is a **complete unit-level period view**, not a second copy of the full roster. Every functional position group gets a current line, but name only the starters, primary rotational players, specialists, and anyone whose role or availability is material to the period.
+This is a **complete unit-level period view**, not a second copy of the full roster or the coaching review. Every functional position group gets a current line, but name only the starters, primary rotational players, specialists, and anyone whose role or availability is material to the period. An unchanged group retains its supported current view. The evidence column can point to a finding above instead of restating it; a new evaluation is not required for every group after every game.
 
 Use actual camp/game assignments and the current competition status. A first-group trial or a QB1 label for one exhibition does not award the regular-season job. Include material reserve and mixed-group findings; keep an unsettled position unsettled until Stone makes a decision.
 

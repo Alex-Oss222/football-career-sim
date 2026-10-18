@@ -2,6 +2,8 @@
 
 Revised October 18, 2026 at the user's instruction to overhaul the writing process while preserving the career and its game-output layouts. This method governs pregame and postgame media in the [regular-season](../foundation/templates/regular_season_output_template.md) and [preseason](../foundation/templates/preseason_output_template.md) templates. Use it with the [game-output workflow](game_output_workflow.md). It supplies a writing method, not career facts or a license to make decisions for Stone.
 
+Changing this method does not authorize rewriting an existing game report or its dialogue. Apply it when the user requests a new game turn or an edit to a particular output.
+
 The earlier method required a real transcript question for every generated question, imposed session ranges and converted a few observed speaking habits into rules for every answer. Those requirements are superseded. Original questions and responsive answers should arise from the public football situation. Real transcripts are references for how conversation works, not text to transplant.
 
 ## 1. Establish what each speaker can know
@@ -9,6 +11,8 @@ The earlier method required a real transcript question for every generated quest
 Read the dated game and preparation records, Stone's actual decisions, public availability and prior public statements. Fix the session's place in the week. Pregame reporters cannot ask about a result that has not occurred. An immediate postgame answer cannot use next day's film findings. A reporter cannot know a private call sheet, unannounced medical conclusion or internal personnel discussion merely because it appears elsewhere in the repository.
 
 Keep three things distinct while drafting: what happened, what Stone has already decided or expressed, and what is still open. That distinction belongs in the author's working understanding; it need not become a disclaimer in every answer.
+
+A missing detail in the author's sources is not evidence that Stone forgot the play, did not see it or needs film to understand it. Do not turn missing call, assignment or coverage data into an invented confession or a routine "I need to see the tape." Keep the answer within supported knowledge. A deferral fits when the session's timing or established record supports that uncertainty; it is not a substitute for an absent database field. The same boundary applies to an invented claim that he already knows the cause.
 
 The user controls Stone's substantive positions and decisions. An authorized game report may give routine expression to established positions in his voice, including rephrasing already-authored routine answers when the user requests a rewrite. Preserve the user's actual wording where it is recorded as theirs. Do not invent a new promise, lineup choice, policy, public accusation, relationship or private motive. If a question requires an uncovered consequential choice, leave it for the user. Routine answers do not require a fresh approval turn each time.
 
@@ -18,11 +22,13 @@ A presentation revision cannot manufacture a previously absent press conference,
 
 Start with what a beat reporter has a reason to ask about: a public change, a meaningful sequence, a player's work, an injury update, the opponent, or a decision with an observable consequence. Ask what the reporter wants to find out, not what section of the staff report still needs to be summarized.
 
+Work out the exchange before polishing individual lines: what does the reporter want to learn, and what can Stone actually say in response? Do not choose a question merely to give him a statistic to repeat, display a coaching virtue or deliver a predetermined speech. A broad opening can belong in the room; specificity does not require a long statistical premise. A reporter may seek confirmation, an explanation or an update without receiving a new revelation.
+
 Use ordinary spoken wording. A question may be short, open, specific or occasionally two-part. Do not make all reporters equally polished, technical or confrontational. Do not manufacture stumbles, interruptions or bad grammar as proof of realism. Technical detail is useful when a reporter plausibly saw it and wants it explained; internal labels and exhaustive statistical premises usually are not.
 
 Let the session develop. After an answer, a reporter might clarify what Stone meant, challenge a premise, ask about the player he named or move to another subject. Follow-ups should respond to that answer, rather than form a prewritten checklist of coaching virtues. A difficult question need not be hostile, and a routine win need not produce manufactured controversy.
 
-There is no fixed question count, topic order or required number of follow-ups. Stop when the remaining questions repeat what has been answered or add material the public does not have. Keep the pregame and postgame sections in their established places.
+There is no fixed question count, topic order or required number of follow-ups. Stop when the remaining questions repeat what has been answered or have no plausible public basis. A reporter may ask for information that has not been announced; the question must not assume that an unannounced fact is already known. Keep the pregame and postgame sections in their established places.
 
 Do not copy a real question and swap names or numbers. Do not claim a real transcript supplied wording that was newly authored here. A club's topic label beginning with "On" is an editor's summary, not a verbatim reporter question.
 
@@ -30,7 +36,7 @@ Do not copy a real question and swap names or numbers. Do not claim a real trans
 
 Read the [approved coaching profile](../career/coaching_profiles/alex_stone_coaching_profile.md), especially its communication and public-accountability sections. The profile controls over an older generated answer. Stone is measured and articulate, enjoys explaining football and can be dry. He need not sound irritated, evasive or monosyllabic to sound human.
 
-Answer the question that was asked. A simple acknowledgment may be enough. A real football explanation may take a paragraph. Use contractions and uneven sentence lengths naturally; neither a prescribed sentence count nor an obligatory long-short pattern improves the voice. An ordinary spoken phrase is allowed when it fits. Avoid stock closers and assembled slogans, rather than maintaining a blacklist of words no real coach could ever say.
+Respond to the question that was asked. Stone can answer directly, correct its premise or protect information he would keep private under his established approach. He does not have to accept the reporter's framing or supply a complete explanation on demand. A simple acknowledgment may be enough. A real football explanation may take a paragraph. Use contractions and uneven sentence lengths naturally; neither a prescribed sentence count nor an obligatory long-short pattern improves the voice. An ordinary spoken phrase is allowed when it fits. Avoid stock closers and assembled slogans, rather than maintaining a blacklist of words no real coach could ever say.
 
 Give Stone a reason for the detail he mentions. He may remember the situation of a decision, describe an observed problem or cite a useful number. He should not recite snap totals, hashes, category labels or an entire player line because those numbers are available to the author. Precise figures belong in an answer when they were plausibly available and actually help answer it.
 
@@ -48,6 +54,16 @@ Do not put reporting machinery in his mouth. Phrases about what the receipt supp
 ## 4. Review the exchange
 
 Read the dialogue aloud without the surrounding report. Does a question sound like a person seeking information? Does the answer respond to it? Does a follow-up depend on what was said? Remove duplicated premises, answers that restate the recap and repeated denials of unsupported possibilities.
+
+Review the whole session for these failures, rather than banning an ordinary phrase whenever it appears:
+
+- Questions repeatedly read out a player's numbers so that Stone can read them back.
+- Questions about why something happened receive only another result summary and the same film deferral. Narrow the unsupported claim or the question; do not invent a cause to make the answer sound insightful.
+- Different answers repeatedly end with the same ownership statement, praise, correction or promise about next week. Keep the established position without rebuilding the same speech around each topic.
+- A follow-up ignores the answer's actual qualification, disagreement or refusal and proceeds as though the planned response was given.
+- An author's evidence limit becomes Stone's supposed memory, observation or knowledge limit.
+
+An occasional guarded, familiar or incomplete answer is plausible. The failure is a session assembled from interchangeable exchanges, not the absence of a quotable insight in every reply. The approved profile and The Prowl's sample lines establish his manner and positions; they are not reusable scripts for each win, loss or player question.
 
 Then verify every material premise, number and commitment against its proper dated source. Keep the natural wording where accurate. Correct unsupported substance rather than sanding every answer into the same cautious voice. Check that private preparation and later knowledge have not leaked into the room.
 

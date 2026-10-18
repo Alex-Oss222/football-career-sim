@@ -73,9 +73,9 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 *Prose paragraphs under these four labels. No tables.*
 
-**Opponent context.** \[One paragraph from the branch's own film and statbook: what the opponent showed on offense, defense and special teams, its record and recent results in the branch, the players the plan had to account for, and its availability. State plainly anything the staff did not know going in.\]
+**Opponent context.** \[From the branch's own film and statbook: what the opponent showed on offense, defense and special teams, its record and recent results in the branch, the players the plan had to account for, and its availability. State plainly anything the staff did not know going in.\]
 
-**Stone's priorities and decisions.** \[One or two paragraphs. The priorities for the week and the decision each one drove. Starters and any change from last week. The shape of the call sheet: base personnel, the openers and what they were built to find out, third down, red zone, the defensive plan. What was on the menu, and what was taken off it and why.\]
+**Stone's priorities and decisions.** \[The priorities for the week and the decision each one drove. Starters and any change from last week. The shape of the call sheet: base personnel, the openers and what they were built to find out, third down, red zone, the defensive plan. What was on the menu, and what was taken off it and why.\]
 
 **The week, day by day.** \[Preserve the recorded dates and sequence of preparation. Describe what was actually reviewed, installed or rehearsed and material restrictions. Combine quiet days when useful; do not invent activity for a missing day or silently discard existing preparation evidence.\]
 
@@ -103,13 +103,13 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 *Keep the four quarter labels and game order. Explain the scoring changes, consequential turnovers and sequences that shaped the result without translating the drive chart into prose. Use the exact clock, distance, call or drive length when supported and useful; they are not a required bundle for every score. A quiet quarter can be brief. Add overtime only when played.*
 
-**First quarter.** \[One paragraph.\]
+**First quarter.** \[The supported action and its consequences in this quarter.\]
 
-**Second quarter.** \[One paragraph.\]
+**Second quarter.** \[The supported action and its consequences in this quarter.\]
 
-**Third quarter.** \[One paragraph.\]
+**Third quarter.** \[The supported action and its consequences in this quarter.\]
 
-**Fourth quarter.** \[One paragraph.\]
+**Fourth quarter.** \[The supported action and its consequences in this quarter.\]
 
 **Final: \[Winning team\] \[XX\], \[Losing team\] \[XX\]**
 
@@ -124,11 +124,11 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 **Review:** \[Immediate postgame assessment, or completed staff review with the actual evidence-through date.\]
 
-*Read the prepared call sheet, participation and substitutions, public play record, medical instructions and recorded coaching findings. Use the active, taught playbook to interpret the job. Explain assignments, recognition, technique, physical execution and decisions separately where the distinction matters. A statistic does not supply an unrecorded cause. Research informs the questions and writing, never missing events. The [report research](../../docs/preseason_game_reports.md) explains this method for both game formats.*
+*The prompts below identify possible football questions; select the ones this game actually tested. A unit does not need a sentence on each listed technique or an inventory of missing observations. Give each finding one main home, and revisit it only to add a different conclusion. Read the prepared call sheet, participation and substitutions, public play record, medical instructions and recorded coaching findings. Use the active, taught playbook to interpret the job. Explain assignments, recognition, technique, physical execution and decisions separately where the distinction matters. A statistic does not supply an unrecorded cause. Research informs the questions and writing, never missing events. The [report research](../../docs/preseason_game_reports.md) explains this method for both game formats.*
 
 #### The team's performance
 
-\[Lead with the main supported football finding. Explain what repeatedly sustained or stopped the team and how the units affected one another through possession, field position and game situations. Use representative sequences already established above without telling the quarters again. Include what the opponent forced the team to change. Distinguish a repeated problem from one costly play.\]
+\[Lead with the game-level finding that connects the units. Explain what repeatedly sustained or stopped the team and how possession, field position and game situations linked their work. Leave the detailed unit findings to their sections below. Use representative sequences already established above without telling the quarters again. Include what the opponent forced the team to change. Distinguish a repeated problem from one costly play.\]
 
 #### Offense
 
@@ -146,13 +146,13 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 #### Communication and coaching response
 
-\[Describe the actual path from sideline call to alignment and shared assignment: substitutions, protection declarations, coverage exchanges, tempo, replacement callers and clock handling when relevant. Separate a call not received, conflicting instructions, a recognition error and a correctly understood job executed poorly. A low penalty total does not establish clean communication.\]
+\[Develop a material communication or coaching finding not already explained in the unit review. Relevant evidence may concern the path from sideline call to alignment and shared assignment: substitutions, protection declarations, coverage exchanges, tempo, replacement callers and clock handling when relevant. Separate a call not received, conflicting instructions, a recognition error and a correctly understood job executed poorly. A low penalty total does not establish clean communication.\]
 
 \[Assess the staff's contribution as well as the players'. Was the call timely, the instruction consistent and the support suitable for the job? Describe a delivered correction and its later response only when recorded. If the cause is unresolved, identify the football question for review. Recommendations and untested adjustments remain proposals. Section 5 carries the resulting work forward. Do not invent Stone's private thoughts or a staff meeting.\]
 
 #### Player findings and material decisions
 
-*Use the existing fields below for the individual findings; do not add another standout list. Develop the relevant assignment, technique, opposition and repeated or contrary evidence behind the player's line. Include a useful strength and a limitation together when both occurred. A narrow opportunity stays narrow. Record material during-year changes as dated observations on the opening annual card; this report does not create another full assessment or a new preseason position-battle card.*
+*Use the existing fields below for individual conclusions that add to the unit review; do not add another standout list or repeat the same statistical line. Develop the relevant assignment, technique, opposition and repeated or contrary evidence behind the player's work. Include a useful strength and a limitation together when both occurred. A narrow opportunity stays narrow. Record material during-year changes as dated observations on the opening annual card; this report does not create another full assessment or a new preseason position-battle card.*
 
 **Player of the game:** \[Retain an established selection, with the supporting performance. Do not invent an award solely to fill the field.\]
 
@@ -160,9 +160,9 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 - &#91;Player\]: \[The meaningful work, its supporting evidence and any relevant limit. Either club may appear; no player-count quota and no second statistical recap.\]
 
-**Material game-management decisions:** \[Each fourth-down, challenge, timeout or clock decision by Stone that entered the result, with the situation and the outcome. "None recorded" if there were none.\]
+**Material game-management decisions:** \[Assess the consequential decisions Stone actually made against what he knew at the time. Refer to a sequence already told rather than retelling it; preserve his recorded reason and distinguish the choice from its outcome. Omit when there is no additional finding.\]
 
-**Injuries and availability from the game:** \[Each player who left, his club and when it happened; the medical finding, restriction and projected return only when communicated. Distinguish an observation from a diagnosis and a forecast from clearance. "None" if there were none.\]
+**Injuries and availability from the game:** \[Material removals and their effect on the game. Medical findings and restrictions appear only when communicated; section 6 gives the current status and next-game implications. Omit when there was no change.\]
 
 ### Full stats for the game
 
@@ -338,25 +338,25 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 *The staff's supported football conclusions and resulting work. Preserve Stone's recorded choices without inventing his private reaction. Use the game report above and actual coaching evidence; a statistic alone cannot establish the cause. Develop each field as far as its material work requires, without repeating the unit review.*
 
-**What held up:** \[What worked and the evidence for it.\]
+**What held up:** \[What the staff can retain for the next week because of the findings above. Do not retell the supporting plays.\]
 
-**What must be corrected:** \[Each problem, the evidence, and the player or unit it belongs to.\]
+**What must be corrected:** \[The resulting correction or unresolved football question, with its player or unit. Do not manufacture a fault or repeat the complete unit assessment.\]
 
-**Next-week carry-forward:** \[What next week's preparation starts from: the cutups, the corrections, what stays on the menu and what waits. Name the responsible actual coach and the next useful opportunity for each material correction. Distinguish work proposed, instruction delivered and improvement actually observed.\]
+**Next-week carry-forward:** \[Turn those conclusions into the actual or proposed next work: the cutups, the corrections, what stays on the menu and what waits. Name the responsible actual coach and the next useful opportunity for each material correction. Distinguish work proposed, instruction delivered and improvement actually observed.\]
 
 ## 6. Weekly personnel and availability snapshot
 
-*The roster as it stands leaving this game. Preserve the unit headings and tables, with concise current-role and availability entries. Full participation is accounted for in the generated statistics; this section explains material role, medical and evaluation findings. Do not recopy every player's statistical line or invent a new judgment for an unchanged group. Link the controlling roster and medical records.*
+*The roster as it stands leaving this game. Preserve the unit headings and tables, with concise current-role and availability entries. Full participation is accounted for in the generated statistics; this section explains material role, medical and evaluation findings. Do not recopy every player's statistical line or invent a new judgment for an unchanged group. An unchanged group retains its supported current view; the evidence column can point to the finding above rather than restate it. Link the controlling roster and medical records.*
 
 ### Offense
 
 | Group | Primary personnel / current role | Availability | Current qualitative read | This week's evidence / issue |
 | --- | --- | --- | --- | --- |
-| QB | \[QB1; QB2\] | \[Available / name and status\] | \[One phrase\] | \[Material football finding or current open issue\] |
-| RB / FB | \[Lead back; rotation; FB\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| WR | \[Starters; WR3\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| TE | \[Lead; TE2; package roles\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| OL | \[LT; LG; C; RG; RT; swing\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
+| QB | \[QB1; QB2\] | \[Available / name and status\] | \[Supported current view\] | \[Material football finding or current open issue\] |
+| RB / FB | \[Lead back; rotation; FB\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| WR | \[Starters; WR3\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| TE | \[Lead; TE2; package roles\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| OL | \[LT; LG; C; RG; RT; swing\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
 
 **Offensive role changes:** \[Each change, or "None."\]
 
@@ -364,12 +364,12 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 | Group | Primary personnel / current role | Availability | Current qualitative read | This week's evidence / issue |
 | --- | --- | --- | --- | --- |
-| Interior DL | \[Starters; rotation\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| Edge | \[Starters; rotation\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| LB | \[Starters; next man\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| CB | \[Starters\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| Nickel | \[Player\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| S | \[Starters\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
+| Interior DL | \[Starters; rotation\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| Edge | \[Starters; rotation\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| LB | \[Starters; next man\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| CB | \[Starters\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| Nickel | \[Player\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| S | \[Starters\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
 
 **Defensive role changes:** \[Each change, or "None."\]
 
@@ -377,12 +377,12 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 | Unit | Primary personnel / role | Availability | Current qualitative read | This week's evidence / issue |
 | --- | --- | --- | --- | --- |
-| K | \[Player\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| P | \[Player\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| LS / operation | \[Player\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| Kick return | \[Players\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| Punt return | \[Players\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| Coverage units | \[Players\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
+| K | \[Player\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| P | \[Player\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| LS / operation | \[Player\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| Kick return | \[Players\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| Punt return | \[Players\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| Coverage units | \[Players\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
 
 ### Material personnel changes this week
 
