@@ -49,10 +49,16 @@ class ClosedSeasonViewTests(unittest.TestCase):
 
     def test_2014_season_views_and_standings(self):
         from scripts.render_standings import render
+        from runtime import week_inputs
         paths = SeasonPaths(2014, ROOT)
         receipts = receipts_in(paths.receipts)
-        self.assertEqual(len(receipts), 61)
-        self.assertEqual({int(r["week"]) for r in receipts}, {1, 2, 3, 4})
+        # Every closed week is complete and the closed weeks run from Week 1
+        # without a gap (61 receipts through Week 4, 76 through Week 5).
+        weeks = sorted({int(r["week"]) for r in receipts})
+        self.assertEqual(weeks, list(range(1, max(weeks) + 1)))
+        for week in weeks:
+            with self.subTest(week=week):
+                self.assertEqual(sum(int(r["week"]) == week for r in receipts), len(week_inputs.schedule(week, 2014)))
         self.check_views(2014, receipts, paths.stats)
         self.assertEqual(paths.record("standings.md").read_text(), render(2014, receipts))
 
@@ -112,6 +118,10 @@ class ClosedAwardViewTests(unittest.TestCase):
 
 class ClosedLedgerTests(unittest.TestCase):
     def test_every_committed_receipt_audits_as_recorded(self):
+        # The cohort recorded before B1 (every 2013 receipt and 2014's
+        # preseason and Weeks 1-4, all on the 2012 base) audits exactly as
+        # recorded; a receipt closed after it (kernel 2014.6, from Week 5)
+        # carries its own kernel's base and audits clean.
         fixture = json.loads(LEDGER.read_text())
         rows = {}
         for year in (2013, 2014):
@@ -119,9 +129,15 @@ class ClosedLedgerTests(unittest.TestCase):
             for folder in (paths.receipts, paths.postseason_receipts, paths.preseason_receipts):
                 for path in sorted(Path(folder).glob("*.json")):
                     receipt = json.loads(path.read_text())
+                    key = path.relative_to(ROOT).as_posix()
+                    if key not in fixture["rows"]:
+                        with self.subTest(later_receipt=key):
+                            self.assertEqual(receipt["kernel_version"], "2014.6")
+                            self.assertIsNot(base_for_result(receipt), BASE_2012)
+                            self.assertEqual(check_ledger(receipt), [])
+                        continue
                     self.assertIs(base_for_result(receipt), BASE_2012)
-                    rows[path.relative_to(ROOT).as_posix()] = {"errors": check_ledger(receipt),
-                                                              "measurable": sorted(measurable_classes(receipt))}
+                    rows[key] = {"errors": check_ledger(receipt), "measurable": sorted(measurable_classes(receipt))}
         self.assertEqual(len(rows), fixture["receipts"])
         self.assertEqual({k: [len(v["measurable"]), v["errors"]] for k, v in rows.items()}, fixture["rows"])
         blob = json.dumps(rows, sort_keys=True, separators=(",", ":"))

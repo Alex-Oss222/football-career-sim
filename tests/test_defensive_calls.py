@@ -459,8 +459,11 @@ class InputsTests(unittest.TestCase):
         cls.anchors = {"offense_anchor": 2.0, "defense_anchor": 2.0, "special_teams_anchor": 2.0}
 
     def build(self, **kw):
-        return self.week_inputs.jacksonville_input(self.receipts, date(2014, 10, 5), self.anchors, self.call_sheet,
-                                                   2014, **kw)
+        # The Week 5 roster as it stood before kickoff (tests/support_as_of.py).
+        from support_as_of import roster_before_week
+        with roster_before_week(5):
+            return self.week_inputs.jacksonville_input(self.receipts, date(2014, 10, 5), self.anchors,
+                                                       self.call_sheet, 2014, **kw)
 
     def test_jacksonville_input(self):
         plain = self.build()
