@@ -42,7 +42,7 @@ An ordinary week runs: the brief, his consolidated decisions, automatic preparat
 
 ## 4. Game management
 
-The job record's `delegation.game_management.decisions[].mechanism` says which retained game decisions the game actually puts to him: `live` (a pause, unless the week's call sheet freezes a rule), `sheet_rule` (the call sheet's frozen rule, or a pause when the rule says ask), `not_live` (set by the game model) or `not_modelled`. As the record stands, fourth downs are live, two-point tries and onside kicks follow the sheet rule, and timeouts, clock use and kneels are not yet Stone's live calls: the game model sets them with each replayed drive ([defect register](../../runtime/defect_register.md) item 30). No replay challenge is modelled. If this section and the record differ, the record controls.
+The job record's `delegation.game_management.decisions[].mechanism` says which retained game decisions the game actually puts to him: `live` (a pause, unless the week's call sheet freezes a rule), `sheet_rule` (the call sheet's frozen rule, or a pause when the rule says ask), `not_live` (set by the game model) or `not_modelled`. Each decision's current mechanism is the record's. Timeouts, clock use and kneels are not yet Stone's live calls: the game model sets them with each replayed drive ([defect register](../../runtime/defect_register.md) item 30). If this section and the record differ, the record controls.
 
 A defensive call sheet is a record of the calls: in the current game model it changes no result ([coordinator](coordinator.md#2-calling)).
 

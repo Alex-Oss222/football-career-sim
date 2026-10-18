@@ -14,7 +14,7 @@
 | Factual divergence point | January 15, 2013 accepted Jacksonville offer; hiring-search record |
 | Head coach | Alex-Lamar Stone (full legal name); Alex Stone (ordinary professional name). Resolved 2026-09-17; see §1.1. |
 | Document owner | Canon editor |
-| Normal update trigger | Approved change to coach background, head-coach contract, reporting line, authority, play-calling delegation, personnel-interaction granularity, senior staff structure, durable relationship canon, audience-specific career reputation, or standing instruction |
+| Normal update trigger | Approved change to coach background, the head-coach contract terms this document holds, the Authority Map row taxonomy, the precedence rules, personnel-interaction granularity, senior staff structure, durable relationship canon, audience-specific career reputation, the standing communication and preparation defaults, or other text this document owns. A change to a current value this document points to (employer, title, start date, reporting line, final authority, play-calling delegation or a standing football instruction) is made in the [current job record](../state/current_job.json), and an unresolved decision in the [decision queue](../state/decision_queue.json). |
 | Required companion documents | Project Instructions; League, Era, and Sourcebook; Roster and Staff Register; Current Season State; Chronology, Game Ledger, and Handoff Protocol |
 
 This document records who the protagonist head coach is, what the coach has explicitly established, how the organization is structured, and who may decide what. It does not contain weekly plans, a live depth chart, current injuries, game state, or an indefinitely growing event summary.
@@ -172,10 +172,10 @@ Legacy coaching-philosophy candidates (including the earlier "Bear Crawl" materi
 
 | Field | Canonical entry | Information access | Provenance, effective date, and source |
 |---|---|---|---|
-| Employing organization | [Current job record](../state/current_job.json), `appointments[0]` | Public | `hiring_search.md` Entry 7, 2026-09-18 |
-| Position title | [Current job record](../state/current_job.json), `appointments[0]` | Public | `hiring_search.md` Entry 7, 2026-09-18 |
+| Employing organization | [Current job record](../state/current_job.json), appointment `2013-01-15-jax-head-coach` | Public | `hiring_search.md` Entry 7, 2026-09-18 |
+| Position title | [Current job record](../state/current_job.json), appointment `2013-01-15-jax-head-coach` | Public | `hiring_search.md` Entry 7, 2026-09-18 |
 | Contract execution date | January 15, 2013 | Public | User-confirmed, 2026-09-18; `hiring_search.md` Entries 4-7 |
-| Effective start date | [Current job record](../state/current_job.json), `appointments[0]` | Public | User-confirmed, 2026-09-18 |
+| Effective start date | [Current job record](../state/current_job.json), appointment `2013-01-15-jax-head-coach` | Public | User-confirmed, 2026-09-18 |
 | Guaranteed term and end date | 4 years, fully guaranteed for all four years (accepted as originally offered; a negotiated partial-guarantee/performance-vesting alternative was proposed by Stone and declined by Jacksonville) | Public | `hiring_search.md` Entries 6-7 |
 | Club or school options | [UNSET; not addressed in the offer] | — | Unknown or undetermined |
 | Base compensation | [UNSET; no salary figure was stated or inferred in the offer] | Coach-known confidential | Unknown or undetermined — do not invent a figure |
@@ -194,7 +194,7 @@ Legacy coaching-philosophy candidates (including the earlier "Bear Crawl" materi
 
 ### 3.2 Reporting and evaluation
 
-The reporting line is in the [current job record](../state/current_job.json), `appointments[0].reporting`. Its employer decision-makers are the ones Authority Map row 1 names, as this section directed; its other fields are null where Document 3 recorded `[UNSET]`. Document 3 also recorded the football-operations counterpart, the business or administrative counterpart and the legal, compliance, or league liaison as `[UNSET]`; the job record has no field for them, and they remain unknown.
+The reporting line is in the [current job record](../state/current_job.json), in the `reporting` field of the appointment named by `current_appointment`. Its employer decision-makers are the ones Authority Map row 1 names, as this section directed; its other fields are null where Document 3 recorded `[UNSET]`. Document 3 also recorded the football-operations counterpart, the business or administrative counterpart and the legal, compliance, or league liaison as `[UNSET]`; the job record has no field for them, and they remain unknown.
 
 Contract terms and reporting identities are evidence used to complete the Authority Map. They do not create a second source of final authority in this section.
 
@@ -206,7 +206,24 @@ Stone is the head coach. He may call plays himself or delegate any phase, includ
 
 This section records the current working arrangements only. The Authority Map in Section 5 is the sole source of final authority. A row reference here imports the current Section 5 entry; it does not restate or amend it.
 
-The current arrangement is in the [current job record](../state/current_job.json), `appointments[0].delegation`: who calls, prepares and transmits each phase and from when, the game-management decisions Stone retains and how the game handles each, the game-day relays and the emergency leads, each linked to the instruction, appointment or decision that set it. The retained game-management decisions rest on the executed head-coach contract's game-day authority (current staff §1; reconciled by Entry 13); the Week 4 change in who calls the defense is reconciled by the [Week 4 correction](../career/2014/05_Regular_Season/Games/Week_04/output.md#correction-entered-october-18-2026-1232-utc). Material departures from the approved plan and Document 7 pause triggers return control to the head coach. Follow the era's exact rules, never infer an unrecorded standing choice, and record an emergency succession only when an installed plan complies with staffing and game rules.
+The current arrangement is in the [current job record](../state/current_job.json), in the `delegation` field of the appointment named by `current_appointment`: who calls, prepares and transmits each phase and from when, the game-management decisions Stone retains and how the game handles each, the game-day relays and the emergency leads, each linked to the instruction, appointment or decision that set it. The retained game-management decisions rest on the executed head-coach contract's game-day authority (current staff §1; reconciled by Entry 13); the Week 4 change in who calls the defense is reconciled by the [Week 4 correction](../career/2014/05_Regular_Season/Games/Week_04/output.md#correction-entered-october-18-2026-1232-utc). Material departures from the approved plan and Document 7 pause triggers return control to the head coach. Follow the era's exact rules, never infer an unrecorded standing choice, and record an emergency succession only when an installed plan complies with staffing and game rules.
+
+Each responsibility imports these Authority Map rows:
+
+| Responsibility | Authority Map reference |
+|---|---|
+| Offensive system and weekly plan implementation | Rows 11 and 12; row 22 when resources are required |
+| Defensive system and weekly plan implementation | Rows 11 and 13; row 22 when resources are required |
+| Defensive play calling | Row 13 |
+| Special-teams plan implementation | Rows 11 and 14; row 22 when resources are required |
+| Special-teams calls | Row 14 |
+| Fourth-down go, field-goal, or punt selection | Rows 12 and 14, as applicable |
+| Timeouts and clock management | Rows 12–14, as applicable |
+| Replay challenge or review request | Rows 12–14, as applicable |
+| Two-point attempt, onside kick, and other unusual strategy | Rows 12 and 14, as applicable |
+| Emergency succession if a caller is unavailable | Rows 2 and 12–14, as applicable |
+
+Stone sets the offensive system (established staff-building canon; [2013 coaching staff](../career/2013/coaching_staff.md), §1; reconciled by Entry 13). His retained special-teams role includes approval of the unit plan, and existing player assignments stand until an authorized change (Entry 84 appointment effective February 11, 2014). Unusual strategy beyond the game-management decisions the job record lists is also Stone's, with staff recommendations, and its consequential choices remain user-controlled (executed head-coach contract, game-day authority).
 
 The selected game-detail mode is owned by Document 2. This table is a read-only interface summary plus Document 3's operational delegation; it cannot change the mode.
 
@@ -287,7 +304,7 @@ List only structural roles necessary to understand reporting, operational delega
 | Football operations and administration | [UNSET] | [UNSET] | Rows 7, 8, 11, 17, 19, 20, and 22 as applicable | [UNSET] | [UNSET] | [Unknown or undetermined; date/source UNSET] |
 | Salary-cap, contracts, budget, or financial aid | [UNSET] | [UNSET] | Rows 5, 6, 20, 21, and 22 as applicable | [UNSET] | [UNSET] | [Unknown or undetermined; date/source UNSET] |
 | Scouting, recruiting, or personnel evaluation | [UNSET] | [UNSET] | Rows 3, 4, 20, and 21 as applicable | [UNSET] | [UNSET] | [Unknown or undetermined; date/source UNSET] |
-| Offensive coordinator | Mike Tice; generated from [current staff](../career/2014/00_Team_Operations/Staff/coaching_staff.md) | Alex Stone | Rows 11 and 12 | Coordinates the unit and weekly process; Stone is the ordinary caller | See Section 4; no independent acquisition authority | Closed staff-building record and current coaching staff §1; Entry 13 reconciliation |
+| Offensive coordinator | Mike Tice; generated from [current staff](../career/2014/00_Team_Operations/Staff/coaching_staff.md) | Alex Stone | Rows 11 and 12 | Coordinates the unit and weekly process (who calls it: [job record](../state/current_job.json)) | See Section 4; no independent acquisition authority | Closed staff-building record and current coaching staff §1; Entry 13 reconciliation |
 | Defensive coordinator | Romeo Crennel; generated from [current staff](../career/2014/00_Team_Operations/Staff/coaching_staff.md) | Alex Stone | Rows 11 and 13 | Defensive coordinator; prepares the defense (who calls it: [job record](../state/current_job.json)) | See Section 4; no independent acquisition authority | Closed staff-building record and current coaching staff §1; Entry 13 reconciliation; [Week 4 correction](../career/2014/05_Regular_Season/Games/Week_04/output.md#correction-entered-october-18-2026-1232-utc) |
 | Special-teams coordinator | Mike Westhoff; generated from [current staff](../career/2014/00_Team_Operations/Staff/coaching_staff.md) | Alex Stone | Rows 11 and 14 | Runs the kicking game within Stone's approved plan | See Section 4; no independent acquisition authority | Entry 84 appointment effective February 11, 2014 |
 | Medical director or team physician | [UNSET] | [UNSET] | Rows 15–17 | [UNSET; diagnosis, clearance, reporting, or consultation only as assigned by those rows] | Head coach has no medical override. [Other boundary UNSET] | [Unknown or undetermined; date/source UNSET] |
@@ -497,7 +514,6 @@ This is a generated lookup index, not a revision log and not an independent sour
 | Season-ledger Entry 77; effective February 2, 2014, reconciling the January 12 interim assignment | Document control, Section 4, row 14 and Section 6.1 | Special-teams post vacant; Stone is interim operator under existing final authority | Current staff, Document 4 and Document 5 source manifest reconciled |
 | Season-ledger Entry 84; effective February 11, 2014 (career clock February 2, 2014) | Document control, Section 4, row 14 and Section 6.1 | Mike Westhoff is special-teams coordinator; Stone's interim direction ended February 11 | Current staff, Document 4 and Document 5 source manifest reconciled |
 | [Week 4 correction entered October 18, 2026](../career/2014/05_Regular_Season/Games/Week_04/output.md#correction-entered-october-18-2026-1232-utc); effective September 28, 2014 (Stone's instruction of September 21) | Document control, Section 4, row 13 and Section 6.1 | Stone calls the defense; Crennel prepares and transmits | Job record, staff register and Documents 4 and 5 carry the replacement; Document 5 source manifest reconciled |
-| Pointer conversion, October 18, 2026 (career clock October 5, 2014); administrative, with no football event and so no correction entry ([career layer](../docs/career_layer.md#1-what-the-two-files-own)) | Document control, Sections 3.1, 3.2, 4, 5, 6.1, 8, 9 and 11.1 | Employer, title, start date, reporting line, delegation, final-authority values and standing instructions point to the job record, and unresolved decisions to the decision queue; this document keeps the row taxonomy and the precedence rules | Document 4 and Document 5 source manifest reconciled; validation keeps the job record's rows on this document's taxonomy |
 
 ### 11.4 Mandatory audit triggers
 

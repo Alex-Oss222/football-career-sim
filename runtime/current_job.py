@@ -4,7 +4,8 @@ authority, and who calls each phase (state/current_job.json).
 The record owns these facts; Document 5, the staff register and the desk
 render from it (docs/career_layer.md). Document 3 section 5 keeps the row
 taxonomy and points here for the values; ``f3_parity_errors`` keeps the rows
-on that taxonomy and compares any Document 3 cell written back in value form.
+on that taxonomy, accepts only the exact pointer forms and compares any
+Document 3 cell written back in value form.
 Nothing that resolves a game reads this module.
 """
 from datetime import date
@@ -47,6 +48,11 @@ SCHEDULED_KEYS = ("from", "to", "effective", "start", "end")
 DATE_KEYS = PAST_KEYS + SCHEDULED_KEYS + ("end_date", "user_date")
 DELEGATED = re.compile(r"^delegation\.play_calling\.([a-z_]+)$")
 PARITY = "Document 3 and the job record disagree; correct the record that is wrong (Document 3 §11.2), then rerun."
+# The only pointer forms Document 3 may use: a section 5 row is exactly
+# | N | domain | ROW_POINTER % N |, and a section 3.1 cell is exactly
+# CONTRACT_POINTER % the current appointment's id.
+ROW_POINTER = "[job record](../state/current_job.json) row %s"
+CONTRACT_POINTER = "[Current job record](../state/current_job.json), appointment `%s`"
 
 
 def load(root):
@@ -165,16 +171,20 @@ def record_error(root, mapping, record):
     return None
 
 
-def _table(text, start, stop):
-    """{first cell: cells} for the pipe-table rows between two headings."""
+def _rows(text, start, stop):
+    """The cells of each pipe-table row between two headings, in order."""
     if start not in text:
         raise ValueError("Document 3 has no heading %r" % start)
     section = text.split(start, 1)[1].split(stop, 1)[0]
+    return [[c.strip() for c in line.strip()[1:-1].split("|")]
+            for line in section.splitlines() if line.startswith("| ")]
+
+
+def _table(text, start, stop):
+    """{first cell: cells} for the pipe-table rows between two headings."""
     rows = {}
-    for line in section.splitlines():
-        if line.startswith("| "):
-            cells = [c.strip() for c in line.strip()[1:-1].split("|")]
-            rows.setdefault(cells[0], cells)
+    for cells in _rows(text, start, stop):
+        rows.setdefault(cells[0], cells)
     return rows
 
 
@@ -184,22 +194,35 @@ def _cell(cells, n):
 
 
 def f3_parity_errors(job, root):
-    """The authority rows and the employment facts against Document 3 while
-    it holds them; a Document 3 cell that points to the job record passes."""
+    """The authority rows and the employment facts against Document 3. Each
+    Document 3 cell is either the exact pointer to the job record or the
+    record's own value, compared in full; a Document 3 row with no job row,
+    and a repeated row number, fail."""
     current = appointment(job)
     if current is None:
         return []
     prefix = "Current job: "
     try:
         text = (Path(root) / F3).read_text(encoding="utf-8")
-        authority = {k: v for k, v in _table(text, "## 5. Authority map", "### 5.1").items()
-                     if re.fullmatch(r"\d+a?", k)}
+        listed = [cells for cells in _rows(text, "## 5. Authority map", "### 5.1")
+                  if re.fullmatch(r"\d+[a-z]?", cells[0])]
         contract = _table(text, "### 3.1 Head-coach contract", "### 3.2")
     except (OSError, ValueError) as exc:
         return [prefix + "cannot read Document 3: %s" % exc]
     errors = []
+    domains = (current.get("authority") or {}).get("domains") or ()
+    known = {row.get("row") for row in domains}
+    numbers = [cells[0] for cells in listed]
+    for number in sorted(set(numbers), key=numbers.index):
+        if numbers.count(number) > 1:
+            errors.append(prefix + "Document 3 section 5 lists row %s more than once. %s" % (number, PARITY))
+        if number not in known:
+            errors.append(prefix + "Document 3 section 5 row %s has no job-record row. %s" % (number, PARITY))
+    authority = {}
+    for cells in listed:
+        authority.setdefault(cells[0], cells)
     parties = job.get("parties") or {}
-    for row in (current.get("authority") or {}).get("domains") or ():
+    for row in domains:
         number = row.get("row")
         cells = authority.get(number)
         where = prefix + "authority row %s: " % number
@@ -208,9 +231,16 @@ def f3_parity_errors(job, root):
             continue
         if _cell(cells, 2) != row.get("domain"):
             errors.append(where + "the decision domain differs. " + PARITY)
-        final = _cell(cells, 3) or ""
-        if "current_job.json" in final:
+        pointer = ROW_POINTER % number
+        if cells[2:] == [pointer]:
             continue
+        if any("current_job.json" in c for c in cells):
+            errors.append(where + "a Document 3 pointer row is exactly | %s | <domain> | %s |, with no other cell. %s"
+                          % (number, pointer, PARITY))
+            continue
+        if len(cells) != 7:
+            errors.append(where + "a Document 3 value-form row has 7 cells, not %d. %s" % (len(cells), PARITY))
+        final = _cell(cells, 3) or ""
         for pid in row.get("final") or ():
             party = parties.get(pid) or {}
             names = [party.get("name") or pid] + list(party.get("aliases") or ())
@@ -229,13 +259,18 @@ def f3_parity_errors(job, root):
     expected = (("Employing organization", (current.get("employer") or {}).get("club"), False),
                 ("Position title", current.get("title"), True),
                 ("Effective start date", f"{start:%B} {start.day}, {start.year}" if start else None, False))
+    pointer = CONTRACT_POINTER % current.get("id")
     for label, value, fold in expected:
         cells = contract.get(label)
         entry = _cell(cells, 2) if cells else None
         if entry is None:
             errors.append(prefix + "Document 3 section 3.1 has no %s row. %s" % (label, PARITY))
-        elif "current_job.json" not in entry and not (
-                value and (value.lower() in entry.lower() if fold else value in entry)):
+        elif entry == pointer:
+            continue
+        elif "current_job.json" in entry:
+            errors.append(prefix + "Document 3 section 3.1 %s points to the job record other than exactly as %s. %s"
+                          % (label, pointer, PARITY))
+        elif not (value and (value.lower() in entry.lower() if fold else value in entry)):
             errors.append(prefix + "Document 3 section 3.1 %s does not match the job record. %s" % (label, PARITY))
     return errors
 

@@ -141,7 +141,8 @@ class CurrentJobTests(unittest.TestCase):
         self.assertTrue(any("authority row 8:" in e and "Document 3 and the job record disagree" in e
                             for e in self.with_row("8", {3: "Caldwell"})))
         self.doCleanups()
-        self.assertFalse(any("authority row 8:" in e for e in self.with_row(
+        # A pointer inside a value-form row is not the pointer form.
+        self.assertTrue(any("authority row 8: a Document 3 pointer row is exactly" in e for e in self.with_row(
             "8", {3: "[current job record](../state/current_job.json)"})))
         self.doCleanups()
         self.assertTrue(any("authority row 8: the decision domain differs" in e
@@ -157,12 +158,12 @@ class CurrentJobTests(unittest.TestCase):
         # job-record row, and the pointers alone pass the parity check.
         text = (self.root / F3).read_text(encoding="utf-8")
         section = text.split("## 5. Authority map", 1)[1].split("### 5.1", 1)[0]
-        rows = [l for l in section.splitlines() if re.match(r"\| \d+a? \|", l)]
+        rows = [l for l in section.splitlines() if re.match(r"\| \d+[a-z]? \|", l)]
         self.assertEqual([l.split(" | ", 1)[0][2:] for l in rows], list(current_job.AUTHORITY_ROWS))
         for line in rows:
             number = line.split(" | ", 1)[0][2:]
             self.assertEqual(line.count("|"), 4, line)
-            self.assertTrue(line.endswith("(../state/current_job.json) row %s |" % number), line)
+            self.assertTrue(line.endswith(" | %s |" % (current_job.ROW_POINTER % number)), line)
         self.assertEqual(current_job.f3_parity_errors(self.job, self.root), [])
         # Row 7 written back in its old six-cell value form, the
         # required-consultation cell missing, is caught: the record holds no
@@ -174,6 +175,41 @@ class CurrentJobTests(unittest.TestCase):
         self.replace(F3, next(l for l in rows if l.startswith("| 7 |")), short)
         self.assertTrue(any("authority row 7: consultation differs from Document 3 column 5" in e
                             for e in current_job.f3_parity_errors(self.job, self.root)))
+
+    def test_document_3_pointers_are_exact(self):
+        # Only the exact pointer forms pass. A value beside a pointer, a
+        # pointer to another row, extra cells, a row or lettered subrow the
+        # job record lacks, a repeated row and a section 3.1 value beside the
+        # pointer each fail validation.
+        text = (self.root / F3).read_text(encoding="utf-8")
+        section = text.split("## 5. Authority map", 1)[1].split("### 5.1", 1)[0]
+        line = next(l for l in section.splitlines() if l.startswith("| 13 |"))
+        subrow = next(l for l in section.splitlines() if l.startswith("| 3a |"))
+        pointer = current_job.ROW_POINTER % "13"
+        contract = current_job.CONTRACT_POINTER % self.current(self.job)["id"]
+
+        def errors(old, new):
+            self.replace(F3, old, new)
+            found = current_job.f3_parity_errors(self.job, self.root)
+            self.doCleanups()
+            return found
+
+        exact = "authority row 13: a Document 3 pointer row is exactly"
+        for changed in (line.replace(pointer, "Romeo Crennel (%s)" % pointer),
+                        line.replace(pointer, "Romeo Crennel; " + pointer),
+                        line.replace("row 13 |", "row 5 |"),
+                        line + " Crennel is the ordinary defensive caller | x | y | z |"):
+            self.assertTrue(any(exact in e for e in errors(line, changed)), changed)
+        self.assertTrue(any("Document 3 section 5 row 23 has no job-record row" in e
+                            for e in errors(line, line + "\n| 23 | Another domain | Alex Stone |")))
+        self.assertTrue(any("Document 3 section 5 row 3b has no job-record row" in e for e in errors(
+            subrow, subrow + "\n| 3b | Quarterback veto on a first-round pick | Alex Stone | Stone may veto | x | y | z |")))
+        self.assertTrue(any("Document 3 section 5 lists row 13 more than once" in e
+                            for e in errors(line, line + "\n" + line)))
+        self.assertTrue(any("section 3.1 Employing organization points to the job record other than exactly as" in e
+                            for e in errors("| Employing organization | %s |" % contract,
+                                            "| Employing organization | Tennessee Titans; %s |" % contract)))
+        self.assertEqual(current_job.f3_parity_errors(self.job, self.root), [])
 
     def test_subjects_share_one_vocabulary(self):
         job = json.loads(json.dumps(self.job))

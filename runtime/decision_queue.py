@@ -424,7 +424,10 @@ def _validation_errors(queue, root, mapping, events, master, job, prefix):
                         % (current_job.party_name(job, holder), resolution["by"]))
                 if resolution["by"] == "standing_instruction":
                     named_rule = next((i for i in in_force if i.get("id") == resolution.get("standing_instruction")), None)
-                    if named_rule is None or not _closes(named_rule, item):
+                    if cls is not None and not cls.closable_by_standing:
+                        say("is settled by a standing instruction, but the class %s does not close by a standing "
+                            "instruction (foundation/decision_rules.md section 4)" % item.get("class"))
+                    elif named_rule is None or not _closes(named_rule, item):
                         say("is settled by a standing instruction, but %r is no IN_FORCE instruction that closes %s"
                             % (resolution.get("standing_instruction"), item.get("class")))
         elif status == "OPEN" and resolution is not None:

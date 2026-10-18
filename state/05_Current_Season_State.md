@@ -15,7 +15,7 @@ This document states what is true now and what comes next. The [2014 record](../
 |---|---|---|
 | Document 1 | `0e1b7b95d65d0a76b83ee192cb961e2c520308d1` | Active foundation source |
 | Document 2 | `c4bb8d569467f085882da407c8660cbc4001452d` | Active foundation source |
-| Document 3 | `5a50b319950caa4d258afa9383e736a04015ade2` | Active foundation source |
+| Document 3 | `0b70fd8ff0d1e9495779686fb89939dcb21b9303` | Active foundation source |
 | Document 4 | `JAX-2014-OCT05-REGISTER-87` | Roster, staff, medical and role register |
 | Current job record | `516f1024a1bce7b4f6f9fd917a5267873f3aa232` | [Job, authority and delegation](current_job.json) |
 | Decision queue | `ed18fc348124467f846ee8304cbc56633a76baa8` | [Open and resolved decisions](decision_queue.json) |
