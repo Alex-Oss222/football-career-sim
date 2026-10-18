@@ -9,6 +9,7 @@ How the repository is kept: file ownership, the season layout, the weekly workfl
 | [update_workflow.md](update_workflow.md) | Keeping the career records current: event owners, dependent views, game closure, statistics and checks |
 | [season_structure.md](season_structure.md) | Season folders and record ownership, season continuity and path rules |
 | [run_week.md](run_week.md) | The Run Week prompt and the inputs Stone supplies each week |
+| [season_cycle_milestones.md](season_cycle_milestones.md) | Stone's yearly cycle and career milestones, what stops for the user, and the year-to-year checklist |
 | [repository_map.json](repository_map.json) | Machine map of the active season, current record owners, required files and phases (read by the validator) |
 
 ## Report methods (research behind the templates)

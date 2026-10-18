@@ -14,6 +14,7 @@ An evidence-based NFL head-coaching career simulation centered on Alex-Lamar Sto
 - [Career](career/README.md): seasons, coaching profiles and playbooks.
 - [Coaching career path](library/nfl_coaching_career_path.md): research on the climb from position coach to head coach, its milestones and the points that stop for the user.
 - [How the folders work](docs/season_structure.md): what lives in a season and what carries to the next.
+- [Season cycle and milestones](docs/season_cycle_milestones.md): the football year, Stone's career milestones, the stops that need the user and the year-to-year checklist.
 - [Report templates](foundation/templates/README.md): training, games, assessments, interviews and the file that owns each completed report.
 
 ## Repository ownership
