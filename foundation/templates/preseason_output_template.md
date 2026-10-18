@@ -1,7 +1,7 @@
 # Preseason output template
 
 **Status:** Complete preseason version of the user's original game-output layout. It preserves all eight sections and places the full coaching report beneath each game narrative in section 4.
-**Authority:** Required coach-facing preseason format under Document 7 §§5.1 and 5.2. The existing bulk-turn process and material-decision pauses still govern execution.
+**Authority:** Required coach-facing preseason format under Document 7 §§5.1 and 5.2. The existing bulk-turn process and material-decision pauses still govern execution. Apply the [game-output workflow](../../docs/game_output_workflow.md) to authoring and presentation revisions.
 **When used:** A requested individual preseason game report or the consolidated preseason turn. Use the [regular-season output template](regular_season_output_template.md) for regular-season and postseason turns. A camp practice uses the [camp report](training_camp_and_preseason/training_camp_report.md). An unplayed game receives preparation only, never filled results or invented performances.
 
 ## Storage and bulk-report rule
@@ -37,15 +37,15 @@ A call entry may contain:
 
 Do not invent structure that was not actually prepared. If only the family is established, supply only the family/name/type. Human display aliases do not determine the result; football substance is canonicalized in the frozen game packet. A named-call preseason total may be reported only from the generated snap ledger, never inferred afterward from the prose recap.
 
-## Depth and word-count rule
+## Depth follows the football
 
-Length follows the actual football evidence. A complete individual game package will often need 1,100 to 1,600 words of prose plus tables and the generated box score, with less for a thin record. The selected game narrative usually needs 300 to 450 words; leave enough room afterward for the coaching report. These are planning bands, not quotas.
+Keep the complete eight-section layout and full generated statistics. The account is authored from actual evidence, not expanded mechanically from fields. A unit finding, a mixed-group comparison or a consequential adjustment may need substantial explanation. A quiet or poorly documented period does not need padding. There are no word, sequence or player-count quotas.
 
-In a bulk turn, give each game the space needed to explain its actual action, unit execution, communication and consequential players. Keep the cross-game review concise by discussing what changed instead of repeating the individual reports. Do not compress the whole preseason into a score table or a few star statistics. An unfinished period remains unfinished.
+In a bulk turn, explain each game's actual action and material findings, then use the cross-game review to assess what changed. Preserve the existing preparation chronology and supporting evidence when restyling. An unfinished period remains unfinished.
 
 ## Coaching report beneath the game summary
 
-Section 4 keeps the established game header and selected narrative. Immediately below the narrative, render **Report to render** and every subsection through the full box score. This incorporates the former separate game-report material into the original output layout. The date and final score remain in the game header; do not add a second game title or result. Preserve sections 1 through 8, including both media sessions, coach status, the personnel snapshot and closure.
+Section 4 keeps the established game header and selected narrative. Immediately below the narrative, retain **Report to render** and its supported football findings, then the full box score. The subordinate prompts guide the review; they do not require empty findings or a repeated limitation under every unit. This incorporates the former separate game-report material into the original output layout. The date and final score remain in the game header; do not add a second game title or result. Preserve sections 1 through 8, including both media sessions, coach status, the personnel snapshot and closure.
 
 Read the prepared menu, actual participation/substitutions, public receipt/play record, medical instructions and dated coaching observations before filling the report. Use the relevant active playbook entries and the [player-assessment method](training_camp_and_preseason/player_assessment.md). A concept's presence in the book does not establish that it was taught or called. Distinguish an immediate impression from a completed staff review. Do not invent film viewing, a spoken check, effort, a missed assignment or a technical cause from a statistic alone.
 
@@ -63,7 +63,7 @@ The final score is already visible before the prose. The narrative's job is to l
 
 ### Select the game before writing it
 
-For a routine game, narrate roughly **6-10 meaningful sequences** when the generated evidence supports that many. Use fewer when the game is quiet or the evidence is sparse. A sequence can be a full drive, a short cluster of plays, or one spotlight play when Document 7 §3.5 legitimately escalates the detail.
+Select the meaningful sequences that explain this game. The number follows the action and the evidence. A sequence can be a full drive, a short cluster of plays, or one spotlight play when Document 7 §3.5 legitimately escalates the detail.
 
 Possible sequences include:
 
@@ -156,37 +156,13 @@ Insert the complete output of the season's supported preseason renderer in the m
 
 ## Media rule
 
-Pregame and postgame media are actual **question-and-answer texture**, not press-release summaries and not the game recap rewritten inside quotation marks.
+Follow the [head-coach media method](../../docs/head_coach_media_method.md). Write original questions from information public at the time of the session. Give reporters a reason to ask each question and let follow-ups respond to the actual answer. Use **Reporter:** unless a real speaker and their recorded words already belong to the event. Do not transplant another coach's session or attach a source credit to an invented question.
 
-Questions must arise from plausible public context available at that point. The reporter may press a follow-up when the first answer leaves a real public football question unresolved, but do not manufacture hostility or controversy to create drama.
+Write Stone from his approved profile and established decisions. He can explain a football choice, acknowledge a problem, credit someone or give a short answer without becoming a stat sheet or an evidence disclaimer. Answer length follows what he has to say; neither clipped replies nor technical speeches are compulsory. There is no question-count quota or required proportion of terse answers.
 
-Reporter questions should vary in length and construction. Avoid a row of polished, two-part questions that all ask Stone to summarize the same issue. Ask about concrete choices, availability, matchup problems, game management, role changes, or public consequences.
+An authorized media writeup may express routine established positions in natural wording. Preserve the user's actual words and the meaning of recorded decisions. Do not invent a promise, new role decision, diagnosis, public accusation or private motive. Return a genuinely consequential unanswered choice to the user. A retrospective revision may rephrase already-authored routine dialogue, but cannot invent a session that never occurred or put later film knowledge in an earlier answer.
 
-Stone's established media voice from `career/2013/offseason/the_prowl_program_identity.md` controls:
-
-- understated;
-- specific;
-- dry when appropriate;
-- football first;
-- answers what he can answer;
-- protects what should remain private;
-- does not treat every question as disrespectful;
-- does not use the podium to coach through a player.
-
-Stone does not repeatedly sell "The Prowl" as branding. After a loss, he owns his approved plan and his game-management decisions before shifting blame. After a win, he can credit the team plainly while still identifying correctable football. A player's costly mistake may be identified as a football mistake, but the podium does not become a character judgment. Internal discipline stays private except for material football availability.
-
-Routine answers should usually be **1-4 sentences**. Longer answers need a real football reason. Stone may say he needs the tape, medical information, or staff review when that is genuinely true, but do not use uncertainty as a canned answer to every difficult question.
-
-Do not invent direct quotes from a named real reporter or media member unless that person and quote are already part of the canonical event. Use **Reporter:** generically otherwise.
-
-A routine pregame session normally uses **2-3 substantive questions**. A routine postgame session normally uses **3-5 substantive questions**. High-stakes sessions may run longer where the result genuinely creates more to address.
-
-**Answer method.** Both sessions follow the [head-coach media method](../../docs/head_coach_media_method.md): how real sessions run, the catalogue of real answers, the anti-slop rules, Stone's voice sheet and a worked postgame example. Its key rules, carried here:
-
-- Questions are taken from real transcripts in the reporter's wording and length (clipped, two-in-one, statement-questions and the reporter's own count included); only the branch's names and details change. Run them in a real session's order: the largest thing first, plays and players in the middle, the wide questions last. End each media section with a **Question sources** line per question: the coach asked, the club, the date and the transcript link.
-- Stone's answers open on the substance, never by restating the question. No lists of three built for rhythm, no "at the end of the day", no sermon, no explaining the plan's rationale unprompted, no coach-speak the real transcripts do not show. The tape deferral and "I'll have to look at it" each appear at most once per session and carry a specific observation.
-- Give a one-sentence answer where a real coach would give one; a third of a postgame session after a loss runs that short. Numbers only as the coach would hold them at the podium.
-- Injury answers give what the medical record holds and stop; the roster is Caldwell's; a competition is not decided from the podium after one game; blame is Stone's first and in one sentence; credit is named and specific.
+Research informs the form. Use the inspected references in the media method; add research when an unfamiliar situation warrants it. Keep any new source and material evidence notes together at the end of the output, outside the dialogue. Preserve the existing source evidence without repeating research administration in the football account.
 
 ---
 
@@ -240,7 +216,7 @@ A routine pregame session normally uses **2-3 substantive questions**. A routine
 
 ### Game narrative: selected highlights
 
-[Usual target: 300-450 words; expand or shorten with the actual game evidence. Follow a selected chronology, not a possession log. Use only meaningful generated sequences. Paragraphs do not need to map one-to-one to drives. Explain concrete football cause and consequence. Include Stone's in-game management only where he actually made or approved a recorded decision. Do not invent interiority, fake technical precision, atmosphere, or a moral at the end.]
+[Give the actual game evidence the space it needs. Follow a selected chronology, not a possession log. Use only meaningful generated sequences. Paragraphs do not need to map one-to-one to drives. Explain concrete football cause and consequence. Include Stone's in-game management only where he actually made or approved a recorded decision. Do not invent interiority, fake technical precision, atmosphere, or a moral at the end.]
 
 ### Report to render
 
@@ -297,7 +273,7 @@ A routine pregame session normally uses **2-3 substantive questions**. A routine
 **Standout performances**
 - [Player]: [Specific football evidence and relevant statistics.]
 - [Player]: [Specific football evidence and relevant statistics.]
-[Use 2-4 only when earned by the generated game.]
+[Include only additional material findings; no player-count quota.]
 [These are concise references to the developed player findings above, not another assessment or a second account of the same plays.]
 
 **Material game-management decisions:** [Only consequential fourth-down, clock, challenge, timeout, personnel, tempo, or other head-coach decisions actually made. Separate the quality of the decision from whether the result worked. Omit if none.]
@@ -310,7 +286,7 @@ A routine pregame session normally uses **2-3 substantive questions**. A routine
 
 **Stone:** [Answer in Stone's established voice. Do not restate the recap. Address the football question.]
 
-[Use 3-5 substantive questions for a routine game; more only when the stakes/result justify it.]
+[Continue while another public football question or follow-up adds something. No fixed count.]
 
 ## 6. Coaching takeaways and preseason carry-forward
 
@@ -389,6 +365,7 @@ Do not repeat the entire roster or every unchanged backup. `career/[year]/roster
 **Preseason statistics:** [Completed-game coverage and the separate preseason statistics record; any specific missing receipt/box-score support]
 **Dated record:** [Descriptive link to the actual game/period event owner and its annual Record.md index; retain the existing event for a presentation-only rewrite]
 **Next event:** [Exact next football/calendar event]
+**Supporting notes:** [Existing source links and any material evidence limit, stated once. Writing references inform form; they are not sources for invented questions. Omit routine execution and validation logs.]
 ~~~
 
 Coach-facing evaluation uses the established qualitative language only: **Elite / Plus / Average / Below-Average / Replacement-Level** where a tier is actually useful. Never expose hidden numeric ratings, probabilities, grades, or roster-survival percentages.
