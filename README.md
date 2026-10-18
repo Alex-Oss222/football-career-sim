@@ -12,6 +12,7 @@ An evidence-based NFL head-coaching career simulation centered on Alex-Lamar Sto
 - [Player cards](career/2014/00_Team_Operations/Team/Player_Cards/README.md): current personnel assessments and each player’s annual statistics.
 - [2013 season](career/2013/README.md): completed season, player sheets, statistics and history.
 - [Career](career/README.md): seasons, coaching profiles and playbooks.
+- [Coaching career path](library/nfl_coaching_career_path.md): research on the climb from position coach to head coach, its milestones and the points that stop for the user.
 - [How the folders work](docs/season_structure.md): what lives in a season and what carries to the next.
 - [Report templates](foundation/templates/README.md): training, games, assessments, interviews and the file that owns each completed report.
 

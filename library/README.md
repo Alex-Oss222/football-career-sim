@@ -99,6 +99,12 @@ These artifacts are pinned by the 2012 base in `runtime/calibration_base.py`, wh
 |---|---|---|---|
 | [2015_historical_calendar.md](2015_historical_calendar.md) | The real 2015 calendar: sources and verification | Researched ahead; advances no clock | None |
 
+## Coaching careers (2013 to 2015 rules)
+
+| Record | Subject | Status | Artifacts and builder |
+|---|---|---|---|
+| [nfl_coaching_career_path.md](nfl_coaching_career_path.md) | The NFL coaching ladder from position coach to head coach: rungs, timelines, the hiring cycle, contracts, failure points and the stops that need the user | Research only; two passes, with Confirmed, Pattern, Unverified and Later labels | None |
+
 ## Methods
 
 | Record | Subject | Status |
