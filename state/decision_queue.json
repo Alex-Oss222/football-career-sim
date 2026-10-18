@@ -1,0 +1,196 @@
+{
+ "schema_version": 1,
+ "enforced_from": {
+  "season": 2014,
+  "week": 6
+ },
+ "items": [
+  {
+   "id": "2014-w06-game-plan",
+   "title": "Week 6 game plan for Tennessee",
+   "class": "weekly_game_plan",
+   "owner": "stone",
+   "authority_rows": [
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14"
+   ],
+   "question": "Stone's Week 6 plan for Tennessee, from which the call sheet is frozen before the game: the menu, including whether the Flea Flicker and TE Delay stay, and who takes Trawick's practice work after his October 7 exam.",
+   "raised": {
+    "date": "2014-10-05",
+    "by": "workflow",
+    "event": "2014-10-05-week-5-vs-pittsburgh"
+   },
+   "status": "OPEN",
+   "waits_on": [],
+   "deadline": {
+    "date": "2014-10-12",
+    "label": "before the Week 6 call sheet is frozen and the Week 6 inputs are built; kickoff October 12, 1 p.m. ET",
+    "before": {
+     "kind": "week_inputs",
+     "season": 2014,
+     "week": 6
+    }
+   },
+   "blocks": [
+    {
+     "kind": "week_inputs",
+     "season": 2014,
+     "week": 6
+    }
+   ],
+   "fallback": null,
+   "can_continue": null,
+   "record": {
+    "path": "career/2014/05_Regular_Season/Games/Week_06/README.md"
+   },
+   "sources": [
+    {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/output.md",
+     "anchor": "5-coaching-takeaways-and-next-week-carry-forward"
+    }
+   ],
+   "migrated_from": "state/05 JAX-2014-OCT05-STATE-111, section 8 row 'Week 6 inactives and game plan'; section 7 (Trawick's practice work); section 9 rows October 7 to 12; Week 5 output section 5 (Flea Flicker and TE Delay)",
+   "resolution": null
+  },
+  {
+   "id": "2014-w06-inactives",
+   "title": "Week 6 inactives",
+   "class": "game_day_inactives",
+   "owner": "stone",
+   "authority_rows": [
+    "8"
+   ],
+   "question": "Stone's Week 6 inactives after the October 6 and 7 exams of Christian Jones and Trawick, with Poyer's hold projected to October 9.",
+   "raised": {
+    "date": "2014-10-05",
+    "by": "workflow",
+    "event": "2014-10-05-week-5-vs-pittsburgh"
+   },
+   "status": "OPEN",
+   "waits_on": [
+    {
+     "what": "Christian Jones's reassessment and projected return",
+     "owner": "medical_staff",
+     "date": "2014-10-06"
+    },
+    {
+     "what": "Trawick's reassessment",
+     "owner": "medical_staff",
+     "date": "2014-10-07"
+    },
+    {
+     "what": "Poyer's projected return; the independent process releases the hold",
+     "owner": "medical_staff",
+     "date": "2014-10-09"
+    }
+   ],
+   "deadline": {
+    "date": "2014-10-12",
+    "label": "before the Week 6 inputs are built",
+    "before": {
+     "kind": "week_inputs",
+     "season": 2014,
+     "week": 6
+    }
+   },
+   "blocks": [
+    {
+     "kind": "week_inputs",
+     "season": 2014,
+     "week": 6
+    }
+   ],
+   "standing_not_applied": [
+    {
+     "instruction": "stone-healthy-inactive-rule",
+     "reason": "Document 5 (STATE-111, sections 8 and 9) lists the Week 6 inactives as Stone's after the October 6 and 7 exams; the August 31 rule covers the healthy inactives only"
+    }
+   ],
+   "fallback": null,
+   "can_continue": null,
+   "record": {
+    "path": "career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md"
+   },
+   "sources": [
+    {
+     "path": "career/2014/00_Team_Operations/Medical/medical_history.md",
+     "anchor": "october-5-week-5-injuries-against-pittsburgh"
+    }
+   ],
+   "migrated_from": "state/05 JAX-2014-OCT05-STATE-111, section 8 row 'Week 6 inactives and game plan'; section 9 rows October 6 to 9",
+   "resolution": null
+  },
+  {
+   "id": "2014-practice-squad-vacancies",
+   "title": "Three open practice-squad places",
+   "class": "personnel_transaction",
+   "owner": "caldwell",
+   "authority_rows": [
+    "20"
+   ],
+   "question": "Three places open (an outside receiver, a tight end and a safety after Phillips's September 8 promotion); no candidate named.",
+   "raised": {
+    "date": "2014-09-08",
+    "by": "organization",
+    "event": "2014-09-08-harris-lowery-reserve-injured-phillips-promoted",
+    "note": "two places open from the August 31 signings; the third from Phillips's promotion"
+   },
+   "status": "OPEN",
+   "waits_on": [],
+   "deadline": null,
+   "blocks": [],
+   "fallback": null,
+   "can_continue": null,
+   "record": {
+    "path": "career/2014/00_Team_Operations/Team/Roster/roster.md"
+   },
+   "sources": [
+    {
+     "path": "career/2014/00_Team_Operations/Team/Roster/transactions_2014-09-08.md"
+    }
+   ],
+   "migrated_from": "state/05 JAX-2014-OCT05-STATE-111, section 8 row 'Practice squad'",
+   "resolution": null
+  },
+  {
+   "id": "2014-film-packet-approval",
+   "title": "Individual film packets: preparation and coach approval",
+   "class": "staff_work",
+   "owner": "coaching_staff",
+   "owner_note": "The record says coach approval without naming the coach",
+   "authority_rows": [],
+   "question": "No individual packet issued; packets await coach approval; January 31 receipts unverified.",
+   "raised": {
+    "date": "2014-02-02",
+    "by": "staff"
+   },
+   "status": "OPEN",
+   "waits_on": [
+    {
+     "what": "cause review and comparison clips",
+     "owner": "coaching_staff",
+     "date": null
+    },
+    {
+     "what": "a supplied video asset",
+     "owner": "coaching_staff",
+     "date": null
+    }
+   ],
+   "deadline": null,
+   "blocks": [],
+   "fallback": null,
+   "can_continue": null,
+   "record": {
+    "path": "career/2014/00_Team_Operations/Film/player_queue.md"
+   },
+   "sources": [],
+   "migrated_from": "state/05 JAX-2014-OCT05-STATE-111, section 8 row 'Film'",
+   "resolution": null
+  }
+ ]
+}

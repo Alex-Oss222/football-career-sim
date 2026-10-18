@@ -349,7 +349,13 @@
     "library/2014_listed_player_identity.md",
     "library/data/2014_listed_player_identity.json",
     "scripts/research/build_2014_listed_player_identity.py",
-    "tests/test_player_cards.py"
+    "tests/test_player_cards.py",
+    "state/current_job.json",
+    "state/decision_queue.json",
+    "docs/career_layer.md",
+    "runtime/current_job.py",
+    "runtime/decision_queue.py",
+    "scripts/render_career_views.py"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",
@@ -418,6 +424,10 @@
     "record": "career/2014/Record.md",
     "inseason_rails": "library/data/2014_inseason_rails/manifest.json",
     "observables": "career/2014/League/personnel/observables"
+  },
+  "career_layer": {
+    "job": "state/current_job.json",
+    "queue": "state/decision_queue.json"
   },
   "background_depth_status": "Legacy biography source only; not legal 2014 game input. The 2014 background library (library/data/2014_week1_depth_charts.json) is prepared research, gated until the master clock reaches Week 1, September 7, 2014",
   "event_record_sources": [
