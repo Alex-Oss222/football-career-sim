@@ -4,10 +4,17 @@
 Each year's opening card remains intact through the season. Its dated coaching
 updates are authored from event evidence, never generated from statistical totals.
 The separate final assessment belongs to the season review after season close.
-Each season row leads with Season | Team | Age | #, as on the league player
-pages: Jacksonville, whose games the tables count, his age on the league's
-opening game of that season and the number listed for him with Jacksonville
-that season, from runtime.player_cards.jacksonville_rows; N/A when not on record.
+Each season row leads with Season | Team | Age | #: the Jacksonville Jaguars,
+whose games the tables count; his age on the league's opening game of that
+season; and the number his league card shows while he is a current Jaguar
+(runtime.player_cards.jacksonville_rows): his real 2014 Jaguars listing, else
+his real 2014 number with his real club when no other current Jaguar claims it.
+Jacksonville has recorded no numbers of its own, so # is N/A for a player with
+no game on record, one whose latest game was with another club, or one who had
+already left when the row was first written. Only a current player's row in an
+open season is worked out again; once he has left or the season has closed,
+the row keeps the cells already written (written_row), so a closed season's
+cards never follow later roster changes.
 """
 import argparse
 import json
@@ -150,6 +157,43 @@ def lead_cells(year, row=None):
     team, age, number = row or (player_cards.JAX, None, None)
     return [str(year), team, *(player_cards.N_A if v is None else str(v) for v in (age, number))]
 
+def written_row(text, year):
+    """(team, age, number) exactly as a card's statistics block already shows them in the year's row
+    (lead_cells reads them back unchanged), or None when it has no such row under these columns."""
+    if START not in text or END not in text:
+        return None
+    block = text.split(START,1)[1].split(END,1)[0]
+    lead = '| '+' | '.join(LEAD)+' |'
+    for heading in ('Regular-season statistics by year','Playoff statistics by year'):
+        lines = section(block,heading).splitlines()
+        header = next((l for l in lines if l.startswith('| Season |')),'')
+        row = next((l for l in lines if l.startswith(f'| {year} |')),None)
+        if header.startswith(lead) and row:
+            team, age, number = [c.strip() for c in row.strip().strip('|').split('|')][1:4]
+            return (team, *(None if v == player_cards.N_A else int(v) if v.isdigit() else v
+                            for v in (age, number)))
+    return None
+
+def season_lead(year, cards, live, root=ROOT):
+    """{card name: (team, age, number)} for the year's row of each card ({name: card text}). Only a
+    player in ``live`` (Jacksonville controls him and the season is open) is worked out from the
+    league records (season_rows); every other row keeps the cells already written, so a departure,
+    a later roster change or the next season never rewrites it. A card with no such row yet is
+    worked out."""
+    kept = {name: written_row(text, year) for name, text in cards.items() if name not in live}
+    kept = {name: row for name, row in kept.items() if row is not None}
+    fresh = [name for name in cards if name not in kept]
+    return {**(season_rows(year, fresh, root) if fresh else {}), **kept}
+
+def live_players(year, root=ROOT):
+    """The players whose season row is still worked out: those Jacksonville controls on the year's
+    roster (practice squad included) while that season is open; none once it has closed."""
+    from scripts.check_week_input_exclusivity import controlled_players_from_roster
+    roster = SeasonPaths(year, root).roster
+    if season_is_complete(year, root) or not roster.is_file():
+        return set()
+    return controlled_players_from_roster(roster)
+
 def stats_block(year,player,pos,periods,old='',root=ROOT,row=None):
     lines = [START]
     for post,heading in [(False,'Regular-season statistics by year'),(True,'Playoff statistics by year')]:
@@ -182,8 +226,12 @@ def refresh_cards(year,root=ROOT,check=False):
     errors = []
     cards = [path for path in sorted(SeasonPaths(year, root).record('player_profiles').glob('*.md'))
              if path.name not in ('README.md','TEMPLATE.md')]
-    names = [card_name(path.read_text(encoding='utf-8')) for path in cards]
-    identity = season_rows(year, [name for name in names if name], root)
+    texts = {}
+    for path in cards:
+        text = path.read_text(encoding='utf-8')
+        if card_name(text):
+            texts.setdefault(card_name(text), text)
+    identity = season_lead(year, texts, live_players(year, root), root)
     for path in cards:
         text = path.read_text(encoding='utf-8')
         if text.count(START) != 1 or text.count(END) != 1 or not text.rstrip().endswith(END):

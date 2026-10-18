@@ -1,6 +1,7 @@
 from runtime.seasons import SeasonPaths
 import re
 import json
+import shutil
 import tempfile
 import unittest
 from pathlib import Path
@@ -8,6 +9,7 @@ from runtime import player_cards
 from scripts.update_player_cards import (
     ROOT, START, END, LEAD, columns, clean_labels, refresh_text, stats_block,
     stat_values, profile_errors, period_data, season_rows, lead_cells,
+    written_row, season_lead, refresh_cards,
 )
 
 CARDS = SeasonPaths(2014, ROOT).record('player_profiles')
@@ -146,8 +148,11 @@ class WorkingPlayerCardTests(unittest.TestCase):
         self.assertEqual(separator.count('---'), len(LEAD)+len(columns('QB')))
 
     def test_card_and_league_page_agree_on_team_age_and_number(self):
-        """Every card that links to his league page shows that page's 2014 age and number."""
-        compared = 0
+        """Every card that links to his league page shows that page's 2014 age, and its Team and #
+        when that page's 2014 row ends with Jacksonville. A player signed in season whose 2014 games
+        so far were all with another club has that club and its number there, Jacksonville and N/A
+        here."""
+        compared = numbered = 0
         for path in sorted(CARDS.glob('*.md')):
             text = path.read_text(encoding='utf-8')
             link = re.search(r'\[Career statistics\]\(([^)]+)\)', text)
@@ -159,9 +164,14 @@ class WorkingPlayerCardTests(unittest.TestCase):
             if theirs is None:
                 continue
             compared += 1
-            self.assertEqual((mine['Age'], mine['#']), (theirs['Age'], theirs['#']), path.name)
-            self.assertIn(mine['Team'], theirs['Team'].split(', '), path.name)
+            self.assertEqual(mine['Age'], theirs['Age'], path.name)
+            self.assertEqual(mine['Team'], player_cards.JAX, path.name)
+            if theirs['Team'].split(', ')[-1] != player_cards.JAX:
+                continue
+            numbered += 1
+            self.assertEqual(mine['#'], theirs['#'], path.name)
         self.assertGreaterEqual(compared, 50)
+        self.assertGreaterEqual(numbered, 50)
 
     def test_rows_use_the_league_cards_birth_dates_and_season_number(self):
         data = player_cards.card_data(ROOT)
@@ -189,11 +199,128 @@ class WorkingPlayerCardTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             self.assertEqual(season_rows(2014, ['Kirk Cousins'], Path(folder)), {})
 
+    def test_a_written_row_reads_back_exactly(self):
+        for path in sorted(CARDS.glob('*.md')):
+            if path.name in ('README.md', 'TEMPLATE.md'):
+                continue
+            text = path.read_text(encoding='utf-8')
+            row = next(l for l in text.split('## Regular-season statistics by year', 1)[1].splitlines()
+                       if l.startswith('| 2014 |'))
+            self.assertTrue(row.startswith('| '+' | '.join(lead_cells(2014, written_row(text, 2014)))+' | '),
+                            path.name)
+        self.assertIsNone(written_row('# Pat Nobody\n', 2014))
+        self.assertIsNone(written_row((CARDS/'kirk_cousins.md').read_text(encoding='utf-8'), 2015))
+
+    def test_only_a_current_player_in_an_open_season_is_worked_out_again(self):
+        text = (CARDS/'kirk_cousins.md').read_text(encoding='utf-8')
+        written = written_row(text, 2014)
+        self.assertEqual(written, rows_2014()['Kirk Cousins'])
+        with tempfile.TemporaryDirectory() as folder:
+            # Left, or the season closed (not live): the written cells stay, whatever the records say now.
+            self.assertEqual(season_lead(2014, {'Kirk Cousins': text}, set(), Path(folder)),
+                             {'Kirk Cousins': written})
+            # Live: worked out from the league records (none in this root, so N/A).
+            self.assertEqual(season_lead(2014, {'Kirk Cousins': text}, {'Kirk Cousins'}, Path(folder)), {})
+
     def test_both_years_show_the_completed_2013_production(self):
         for year in (2013, 2014):
             text = SeasonPaths(year, ROOT).record('player_profiles/kirk_cousins.md').read_text(encoding='utf-8')
             self.assertIn('| Statistic | 2013 regular season | 2013 playoffs |', text)
             self.assertIn('| YDS | 3981 | 480 |', text)
+
+
+CARD_FOLDER = CARDS.relative_to(ROOT).as_posix()
+ROSTER = SeasonPaths(2014, ROOT).roster.relative_to(ROOT).as_posix()
+REVIEW = SeasonPaths(2014, ROOT).record('closeouts/season_review.md').relative_to(ROOT).as_posix()
+NEXT_ROSTER = SeasonPaths(2015, ROOT).roster.relative_to(ROOT).as_posix()
+MAP = 'docs/repository_map.json'
+
+
+def overlay(target, files=(), copies=()):
+    """A root at ``target`` that reads as the repository through symbolic links, except each
+    relative folder in ``copies`` and each relative file in ``files``, which are real copies (a
+    file not in the repository is left to the caller), so a write there never reaches the
+    repository. The folders on the way to either are real too."""
+    tree = {}
+    for rel in (*files, *copies):
+        node = tree
+        for part in Path(rel).parts:
+            node = node.setdefault(part, {})
+
+    def build(source, dest, node, rel):
+        dest.mkdir(exist_ok=True)
+        for child in (sorted(source.iterdir()) if source.is_dir() else ()):
+            if child.name != '.git' and child.name not in node:
+                (dest/child.name).symlink_to(child)
+        for name, sub in node.items():
+            path = (rel/name).as_posix()
+            if path in copies:
+                shutil.copytree(source/name, dest/name)
+            elif path in files:
+                if (source/name).is_file():
+                    shutil.copyfile(source/name, dest/name)
+            else:
+                build(source/name, dest/name, sub, rel/name)
+    build(ROOT, target, tree, Path())
+
+
+class ClosedSeasonCardTests(unittest.TestCase):
+    """A closed season's cards are frozen history: neither a later release nor the switch to the
+    next season changes a byte of them (the season review receipt and the handoff hash them)."""
+
+    def snapshot(self, folder):
+        return {p.name: p.read_bytes() for p in sorted(folder.iterdir())}
+
+    def test_a_release_or_the_next_season_leaves_a_closed_seasons_cards_byte_identical(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp).resolve()
+            overlay(root, files=(ROSTER, REVIEW, MAP, NEXT_ROSTER), copies=(CARD_FOLDER,))
+            cards = root/CARD_FOLDER
+            # Every write below lands in the copies, never in the repository.
+            self.assertFalse(cards.is_symlink())
+            self.assertFalse(any(p.is_symlink() for p in cards.rglob('*')))
+            self.assertFalse((root/ROSTER).is_symlink())
+            roster = (root/ROSTER).read_text(encoding='utf-8')
+            released = ''.join(l for l in roster.splitlines(True) if not l.startswith('| Kirk Cousins |'))
+            self.assertNotEqual(released, roster)
+            cousins = cards/'kirk_cousins.md'
+            row = written_row(cousins.read_text(encoding='utf-8'), 2014)
+            self.assertIsNotNone(row[2])
+
+            # Open season: once he is released, the current state gives no Jacksonville number, but
+            # the row he already has keeps its cells.
+            (root/ROSTER).write_text(released, encoding='utf-8')
+            self.assertEqual(season_rows(2014, ['Kirk Cousins'], root)['Kirk Cousins'][2], None)
+            self.assertEqual([e for e in refresh_cards(2014, root, check=True) if 'kirk_cousins' in e], [])
+            (root/ROSTER).write_text(roster, encoding='utf-8')
+
+            # The season review closes the season: the pages are rendered once as history.
+            (root/REVIEW).write_text('# 2014 season review\n', encoding='utf-8')
+            for rel, text in player_cards._build(root)[1].items():
+                self.assertTrue(rel.startswith(CARD_FOLDER+'/'), rel)
+                (root/rel).write_text(text, encoding='utf-8')
+            self.assertEqual(refresh_cards(2014, root), [])
+            frozen = self.snapshot(cards)
+            self.assertFalse(any(player_cards.CARD_BEGIN.encode() in b for b in frozen.values()))
+            self.assertEqual(written_row(cousins.read_text(encoding='utf-8'), 2014), row)
+            self.assertEqual(refresh_cards(2014, root, check=True), [])
+
+            # A release after the close.
+            (root/ROSTER).write_text(released, encoding='utf-8')
+            pages = player_cards._build(root)[1]
+            self.assertEqual({rel: (root/rel).read_text(encoding='utf-8') for rel in pages}, pages)
+            self.assertEqual(refresh_cards(2014, root, check=True), [])
+            self.assertEqual(self.snapshot(cards), frozen)
+
+            # The next season becomes active, without him.
+            data = json.loads((root/MAP).read_text(encoding='utf-8'))
+            data['active_season'] = 2015
+            (root/MAP).write_text(json.dumps(data), encoding='utf-8')
+            (root/NEXT_ROSTER).write_text(released, encoding='utf-8')
+            pages = player_cards._build(root)[1]
+            self.assertFalse(any(rel.startswith(CARD_FOLDER+'/') for rel in pages))
+            self.assertEqual(refresh_cards(2014, root, check=True), [])
+            self.assertEqual(self.snapshot(cards), frozen)
 
 
 if __name__ == '__main__':

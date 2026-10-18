@@ -14,12 +14,16 @@ module after every closed game:
   latest-season and career blocks for playoffs and regular season);
 - on each current Jacksonville player's card page that his league page links
   back to, a generated block directly under its H1 with his card and a link
-  to his career statistics. Former players' pages carry none. Only the block
-  is written.
+  to his career statistics, in the active season's folder while that season
+  is open. Former players' pages carry none, nor does any page once its
+  season has closed; earlier seasons' pages are never read or written. Only
+  the block is written.
 
-``jacksonville_rows`` gives the Season | Team | Age | # lead of the season rows
-in the statistics tables at the bottom of each Jacksonville player card
-(``scripts/update_player_cards.py`` writes them), by the same rules.
+``jacksonville_rows`` gives the Season | Team | Age | # lead that
+``scripts/update_player_cards.py`` writes on a current player's row in the
+statistics tables at the bottom of each Jacksonville player card while the
+season is open: the number his league card shows. A row keeps the cells
+already written once he has left or the season has closed.
 
 Every statistic is arithmetic on the committed game records (the receipts the
 statbook reads), with the repository's own field names, loaders and passer
@@ -947,17 +951,18 @@ def index_page(counts, years, as_of):
 
 
 def jacksonville_profiles(root):
-    """Current Jacksonville-controlled players' working card paths, by name."""
-    from scripts.build_player_progression_roster import parse_current_roster
-    active = _load(root / "docs/repository_map.json")["active_season"]
+    """Current Jacksonville-controlled players' working card paths, by name: every roster table row
+    whose status shows club control, practice squad included (jacksonville_current's rule, the one
+    the league card's current_jaguar follows)."""
+    from scripts.check_week_input_exclusivity import controlled_players_from_roster
+    active = _load(Path(root) / "docs/repository_map.json")["active_season"]
     paths = SeasonPaths(active, root)
     folder = paths.record("player_profiles")
-    _, _, roster = parse_current_roster(paths.roster)
     out = {}
-    for r in roster:
-        path = folder / (slugify(r.player) + ".md")
+    for name in sorted(controlled_players_from_roster(paths.roster)):
+        path = folder / (slugify(name) + ".md")
         if path.is_file():
-            out[r.player] = path
+            out[name] = path
     return out
 
 
@@ -977,8 +982,11 @@ def profile_for(p, profiles, branch):
 # ------------------------------------------------------------------ Jacksonville player card pages
 # Each current Jacksonville player's card page (the page his league page links back to, by
 # jacksonville_profiles and profile_for) carries his career card directly under its H1, in a
-# generated block. Every other player page from 2014 on, a former player's included, carries none:
-# a former player's page is history through his departure and must not follow him to a new club.
+# generated block. Every other page in the active season's folder, a former player's included,
+# carries none: a former player's page is history through his departure and must not follow him to
+# a new club. Once the active season has closed (its season review is on record), every page in
+# its folder is history in the same way and carries none, so the frozen season record never links
+# to a league page that later moves. Pages of earlier seasons are never read or written.
 # Only the block and its framing blank lines are ever written: the rest of the page (the authored
 # assessment, the photo, the yearly statistics) belongs to its own owners.
 CARD_BEGIN, CARD_END = "<!-- player-card:begin -->", "<!-- player-card:end -->"
@@ -988,22 +996,30 @@ _PAGE_TITLE = re.compile(r"# (.+?)(?: — .*)?")
 
 
 def profile_pages(root):
-    """{path: the player name in its H1} for every player page in the player-card folders from
-    2014 through the active season."""
+    """{path: the player name in its H1} for every player page in the active season's player-card
+    folder (2014 on). An earlier season's pages are history and are not included."""
     root = Path(root)
     active = _load(root / "docs/repository_map.json")["active_season"]
+    folder = SeasonPaths(active, root).record("player_profiles")
     out = {}
-    for year in range(PROFILE_FROM, active + 1):
-        folder = SeasonPaths(year, root).record("player_profiles")
-        if not folder.is_dir():
+    if active < PROFILE_FROM or not folder.is_dir():
+        return out
+    for path in sorted(folder.glob("*.md")):
+        if path.name in PROFILE_SKIP:
             continue
-        for path in sorted(folder.glob("*.md")):
-            if path.name in PROFILE_SKIP:
-                continue
-            m = _PAGE_TITLE.fullmatch(path.read_text(encoding="utf-8").partition("\n")[0])
-            if m:
-                out[path] = m.group(1)
+        m = _PAGE_TITLE.fullmatch(path.read_text(encoding="utf-8").partition("\n")[0])
+        if m:
+            out[path] = m.group(1)
     return out
+
+
+def season_open(root):
+    """Whether the active season is still open: not yet closed by its season review
+    (scripts/build_annual_player_sheets.season_is_complete). Only an open season's pages carry
+    career card blocks and are linked back to."""
+    from scripts.build_annual_player_sheets import season_is_complete
+    active = _load(Path(root) / "docs/repository_map.json")["active_season"]
+    return not season_is_complete(active, Path(root))
 
 
 def page_players(players, profiles, branch):
@@ -1067,8 +1083,8 @@ def with_card_block(text, block):
 
 def render_pages(root, matched):
     """{page path relative to the repository root: its text with the block current}, for every
-    player page from 2014 on; ``matched`` ({page path: league player}, from page_players) names the
-    pages that carry one."""
+    player page in the active season's folder (profile_pages); ``matched`` ({page path: league
+    player}, from page_players) names the pages that carry one."""
     root = Path(root)
     pages = profile_pages(root)
     untitled = sorted(str(path) for path in matched if path not in pages)
@@ -1107,17 +1123,23 @@ def check_pages(root, pages):
 # ------------------------------------------------------------------ Jacksonville player card season rows
 # The regular-season and playoff tables at the bottom of each Jacksonville player card
 # (scripts/update_player_cards.py) count Jacksonville's games only, so their season row leads with
-# Jacksonville, his age on the league's opening game of that season and the number listed for him
-# with Jacksonville that season, by the same functions as his league page's season rows.
+# the Jacksonville Jaguars, his age on the league's opening game of that season and #. Jacksonville
+# has recorded no jersey numbers of its own: # is the number his league card shows while he is a
+# current Jaguar whose latest game was with Jacksonville (his real 2014 Jaguars listing, else his
+# real 2014 number with his real club when no other current Jaguar claims it; the league page
+# names which), and N/A for a player with no game on record, one whose latest game was with
+# another club, or a former player. update_player_cards works the row out only for a current
+# player while the season is open; once he has left or the season has closed, the row keeps the
+# cells already written.
 def jacksonville_rows(year, names, root=ROOT, data=None):
-    """{card name: (team, age, number)} for the ``year`` row of each named Jacksonville player card;
-    None is N/A. A card is his league player's by the reverse link's own rule (profile_for): the
-    current roster's cards exactly as their career card blocks are matched (page_players over
-    jacksonville_profiles), then each other named card (a former player's) among the remaining
-    players. Age is age_on his league card's birth date at the season's opening game
-    (opening_dates); # is season_number for Jacksonville that season, so the card and his league
-    page cannot disagree. A card with no league player (no game on record) takes its age from the
-    same birth-date sources (Identity.birth_date) and has no number: Jacksonville records none."""
+    """{card name: (team, age, number)} for the ``year`` row of each named Jacksonville player card,
+    from the current state; None is N/A. A card is his league player's by the reverse link's own
+    rule (profile_for): the current roster's cards exactly as their career card blocks are matched
+    (page_players over jacksonville_profiles), then each other named card (a former player's) among
+    the remaining players. Age is age_on his league card's birth date at the season's opening game
+    (opening_dates); # is season_number for Jacksonville that season, so a current player's card
+    and his league page cannot disagree. A card with no league player (no game on record) takes its
+    age from the same birth-date sources (Identity.birth_date) and has no number."""
     root = Path(root)
     data = card_data(root) if data is None else data
     players = data["players"]
@@ -1156,7 +1178,7 @@ def _build(root):
         raise ValueError("no club colours for: " + ", ".join(unknown))
     assign_slugs(players)
     branch = Identity(root).branch
-    matched = page_players(players, jacksonville_profiles(root), branch)
+    matched = page_players(players, jacksonville_profiles(root), branch) if season_open(root) else {}
     linked = {id(p): page for page, p in matched.items()}
     files = {}
     by_club = {}

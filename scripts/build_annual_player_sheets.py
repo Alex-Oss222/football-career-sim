@@ -405,10 +405,14 @@ def final_assessment_errors(season: int, root: Path = ROOT, *,
     manifest = json.loads(_handoff_path(season, root).read_text(encoding='utf-8'))
     exit_sources = {_source_path(root, item['path']).resolve()
                     for item in manifest['gates']['exit_interviews']['evidence']}
-    from scripts.update_player_cards import START, END, refresh_text, period_data, section, season_rows
+    from scripts.update_player_cards import START, END, refresh_text, period_data, section, season_lead
     try:
         periods = {post: period_data(season, post, root) for post in (False, True)}
-        identity = season_rows(season, [p.player for p in players], root)
+        # The closed season's row shows what the opening card already shows for it, never the
+        # current roster's view (season_lead keeps every written row of a closed season).
+        openings = {p.player: (root/p.evidence).read_text(encoding='utf-8')
+                    for p in players if (root/p.evidence).is_file()}
+        identity = season_lead(season, openings, set(), root)
     except (ValueError, OSError, KeyError) as error:
         return errors+[f'{season}: invalid final statistics evidence: {error}']
     for player in players:

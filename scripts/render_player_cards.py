@@ -11,7 +11,9 @@ players no longer on record are removed. Each current Jacksonville player's
 card page that his league page links back to also shows his card directly
 under its title, in a generated <!-- player-card:begin --> ...
 <!-- player-card:end --> block with a link to his career statistics; a
-former player's page carries none. Only that block is written, and a block
+former player's page carries none, and only the active season's pages are
+kept, none of them with a block once that season has closed (earlier
+seasons' pages are never rewritten). Only that block is written, and a block
 found anywhere else on the page is moved back under the title. --check
 writes nothing and fails when any file or block differs or a block is not
 directly under its title. Run after every closed game (docs/update_workflow.md).

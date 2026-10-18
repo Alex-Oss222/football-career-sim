@@ -596,6 +596,19 @@ class JacksonvillePageTests(unittest.TestCase):
                 self.assertNotIn("player-card:", text, name)
         self.assertGreater(len(matched), 40)
 
+    def test_practice_squad_cards_are_matched_like_the_rest_of_the_roster(self):
+        """Blocks and links back are matched over every player Jacksonville controls, practice squad
+        included: the same set the league card's current_jaguar reads (jacksonville_current)."""
+        from scripts.check_week_input_exclusivity import controlled_players_from_roster
+        controlled = controlled_players_from_roster(SeasonPaths(2014, ROOT).roster)
+        profiles = player_cards.jacksonville_profiles(ROOT)
+        self.assertEqual(profiles, {n: PROFILES / ("%s.md" % player_cards.slugify(n)) for n in sorted(controlled)
+                                    if (PROFILES / ("%s.md" % player_cards.slugify(n))).is_file()})
+        for name in ("Tyler Bray", "Richard Murphy", "Matt Feiler", "Tyler Shatley", "Jackson Jeffcoat",
+                     "Jerome Long", "Jemea Thomas"):
+            self.assertIn(name, profiles)
+        self.assertEqual(len(profiles), 64)
+
     def test_former_players_pages_do_not_follow_them_to_new_clubs(self):
         current = set(player_cards.jacksonville_profiles(ROOT).values())
         for slug, name, club in (("jeremy_cain", "Jeremy Cain", "Chicago Bears"),
