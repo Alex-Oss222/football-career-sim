@@ -1,6 +1,6 @@
 # League players
 
-Every player in the 2013 and 2014 game records, under the club of his latest game on record. Each player page has his career card, his regular-season and playoff statistics by season and his awards.
+Every player in the 2013 and 2014 game records, under the club of his latest game on record. Each player page has his career card, his regular-season and playoff statistics by season (each season row with his team, his age on that season's opening game and the number listed for him that season) and his awards.
 
 ## AFC
 

@@ -6,20 +6,22 @@
 
 ### Regular season
 
-| Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 16 | 90 | 6 | 2 | 2 | 9 | 2 | 2 | 10 | 5.6 | 64 |
-| **Career** |  | 16 | 90 | 6 | 2 | 2 | 9 | 2 | 2 | 10 | 5.6 | 64 |
+| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota Vikings | 27 | 50 | 16 | 90 | 6 | 2 | 2 | 9 | 2 | 2 | 10 | 5.6 | 64 |
+| **Career** |  |  |  | 16 | 90 | 6 | 2 | 2 | 9 | 2 | 2 | 10 | 5.6 | 64 |
 
 ### Playoffs
 
-| Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 3 | 20 | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 6.7 | 16 |
-| **Career** |  | 3 | 20 | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 6.7 | 16 |
+| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota Vikings | 27 | 50 | 3 | 20 | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 6.7 | 16 |
+| **Career** |  |  |  | 3 | 20 | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 6.7 | 16 |
 
 ## Awards
 
 None on record.
+
+Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
 Records through February 2, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Minnesota Vikings players](README.md).

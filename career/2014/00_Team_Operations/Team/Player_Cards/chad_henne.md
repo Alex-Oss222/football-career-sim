@@ -1,5 +1,11 @@
 # Chad Henne — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Chad Henne career card](../../../../league_players/jacksonville_jaguars/assets/chad_henne.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/chad_henne.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chad_Henne_2014_%28cropped%29.jpg?width=500" alt="Chad Henne" width="160">
 
@@ -150,14 +156,14 @@ Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Traini
 
 ## Regular-season statistics by year
 
-| Season | Team(s) | Coverage | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 5 | 5 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
+| Season | Team | Age | # | Coverage | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 29 | 7 | Through Week 5 | 5 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 
-| Season | Team(s) | Coverage | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
+| Season | Team | Age | # | Coverage | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 29 | 7 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
 
 <!-- yearly-statistics:end -->

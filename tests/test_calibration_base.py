@@ -95,9 +95,15 @@ class MappingTests(unittest.TestCase):
             get_base("1999")
 
     def test_every_committed_receipt_has_a_base(self):
+        # Every committed receipt maps to the base of its own kernel: the
+        # 2012 base through kernel 2014.5, the 2010-2014 base from 2014.6
+        # (whose first receipts closed in Week 5 of 2014).
         receipts = committed_receipts()
         self.assertGreater(len(receipts), 300)
-        self.assertEqual({base_for_kernel(r["kernel_version"]) for r in receipts}, {"2012"})
+        for receipt in receipts:
+            version = receipt["kernel_version"]
+            with self.subTest(kernel=version):
+                self.assertEqual(base_for_kernel(version), "2010_2014w4" if version == "2014.6" else "2012")
 
 
 class Pin2012Tests(unittest.TestCase):

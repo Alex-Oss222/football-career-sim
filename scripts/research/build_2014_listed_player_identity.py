@@ -37,6 +37,10 @@ league player cards (runtime/player_cards.py) show. Rules:
   number as ``jaguars_number``. Which number a card shows is the runtime's
   rule (runtime/player_cards.py); Jacksonville has not recorded jersey numbers
   of its own.
+- 2013 number: for every listed player in the 2013 season roster, the jersey
+  number of his latest 2013 week's row (``number_2013``), with that row's club
+  (normalized) and week (``number_2013_basis``). The career tables' "#"
+  column reads it for a 2013 season row only when the club matches.
 
 No statistic, grade or football judgement is read or written. --check
 rebuilds from the sources and compares with the committed file. The runtime
@@ -160,7 +164,7 @@ def build(source_dir, root=ROOT):
     wanted = set(weekly) | (known_ids(root) & (set(listing) | set(roster13)))
     out = {}
     counts = {"weeks_1_4": 0, "roster_2013": 0, "player_file": 0, "height": 0, "weight": 0, "college": 0,
-              "number": 0, "jaguars_number": 0}
+              "number": 0, "jaguars_number": 0, "number_2013": 0}
     for gsis in sorted(wanted):
         rows = sorted(weekly.get(gsis, []), key=lambda x: x[0])  # stable: file order within a week
         entry = {}
@@ -192,22 +196,27 @@ def build(source_dir, root=ROOT):
             entry = {"listing": "player_file", "college": text(q.get("college_name")),
                      "height_in": inches(q.get("height")) if dated else None,
                      "weight": pounds(q.get("weight")) if dated else None}
-        if not any(entry.get(f) is not None for f in ("height_in", "weight", "college", "number")):
+        if gsis in roster13:
+            week13, q13 = sorted(roster13[gsis], key=lambda x: x[0])[-1]  # his latest 2013 week
+            entry["number_2013"] = jersey(q13.get("jersey_number"))
+            if entry["number_2013"] is not None:
+                entry["number_2013_basis"] = {"club": CODE_FIX.get(q13.get("team"), q13.get("team")), "week": week13}
+        if not any(entry.get(f) is not None for f in ("height_in", "weight", "college", "number", "number_2013")):
             continue
         counts[entry["listing"]] += 1
         for f, c in (("height_in", "height"), ("weight", "weight"), ("college", "college"),
-                     ("number", "number"), ("jaguars_number", "jaguars_number")):
+                     ("number", "number"), ("jaguars_number", "jaguars_number"), ("number_2013", "number_2013")):
             counts[c] += entry.get(f) is not None
         out[gsis] = {k: v for k, v in entry.items() if v is not None}  # absent = not listed
     return {
         "schema_version": 1,
         "builder": "scripts/research/build_2014_listed_player_identity.py",
-        "scope": "Listed height, weight, college and jersey number for the league player cards. Reader data "
+        "scope": "Listed height, weight, college and jersey numbers (2014 and 2013) for the league player cards. Reader data "
                  "only: nothing in a game, an evaluation or a decision reads it.",
         "gate": "2014 regular season, Weeks 1 to %d of the weekly roster file; for a player with no Weeks 1-%d row, "
                 "his 2013 season roster listing; with neither, the player file's college, and its height and weight "
-                "only when his last listed season there is %d or earlier" % (THROUGH_WEEK, THROUGH_WEEK,
-                                                                             PLAYER_FILE_LAST_SEASON),
+                "only when his last listed season there is %d or earlier; and each listed player's 2013 season roster "
+                "number (his latest 2013 week)" % (THROUGH_WEEK, THROUGH_WEEK, PLAYER_FILE_LAST_SEASON),
         "sources": {ROSTER[0]: {"sha256": ROSTER[1],
                                 "url": "https://github.com/nflverse/nflverse-data/releases/download/weekly_rosters/roster_weekly_2014.csv"},
                     PLAYERS[0]: {"sha256": PLAYERS[1],

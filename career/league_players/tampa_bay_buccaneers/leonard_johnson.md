@@ -6,21 +6,23 @@
 
 ### Regular season
 
-| Season | Club | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 16 | 61 | 2 | 7 | 28 | 3 | 0 | 1 | 1 | 3.8 | 107 |
-| 2014 | Tampa Bay Buccaneers | 5 | 15 | 1 | 4 | 20 | 0 | 0 | 0 | 0 | 3.0 | 0 |
-| **Career** |  | 21 | 76 | 3 | 11 | 48 | 3 | 0 | 1 | 1 | 3.6 | 107 |
+| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay Buccaneers | 23 | 29 | 16 | 61 | 2 | 7 | 28 | 3 | 0 | 1 | 1 | 3.8 | 107 |
+| 2014 | Tampa Bay Buccaneers | 24 | 29 | 5 | 15 | 1 | 4 | 20 | 0 | 0 | 0 | 0 | 3.0 | 0 |
+| **Career** |  |  |  | 21 | 76 | 3 | 11 | 48 | 3 | 0 | 1 | 1 | 3.6 | 107 |
 
 ### Playoffs
 
-| Season | Club | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 1 | 6 | 1 | 1 | 26 | 0 | 0 | 1 | 1 | 6.0 | 11 |
-| **Career** |  | 1 | 6 | 1 | 1 | 26 | 0 | 0 | 1 | 1 | 6.0 | 11 |
+| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay Buccaneers | 23 | 29 | 1 | 6 | 1 | 1 | 26 | 0 | 0 | 1 | 1 | 6.0 | 11 |
+| **Career** |  |  |  | 1 | 6 | 1 | 1 | 26 | 0 | 0 | 1 | 1 | 6.0 | 11 |
 
 ## Awards
 
 None on record.
+
+Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
 Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).

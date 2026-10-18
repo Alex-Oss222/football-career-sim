@@ -6,18 +6,18 @@
 
 ### Regular season
 
-| Season | Club | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 15 | 275 | 1,340 | 4.9 | 7 | 89.3 | 43 | 477 | 2 | 318 | 3 |
-| 2014 | Buffalo Bills | 5 | 87 | 463 | 5.3 | 3 | 92.6 | 15 | 209 | 2 | 102 | 1 |
-| **Career** |  | 20 | 362 | 1,803 | 5.0 | 10 | 90.2 | 58 | 686 | 4 | 420 | 4 |
+| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo Bills | 26 | 28 | 15 | 275 | 1,340 | 4.9 | 7 | 89.3 | 43 | 477 | 2 | 318 | 3 |
+| 2014 | Buffalo Bills | 27 | 28 | 5 | 87 | 463 | 5.3 | 3 | 92.6 | 15 | 209 | 2 | 102 | 1 |
+| **Career** |  |  |  | 20 | 362 | 1,803 | 5.0 | 10 | 90.2 | 58 | 686 | 4 | 420 | 4 |
 
 ### Playoffs
 
-| Season | Club | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 4 | 75 | 430 | 5.7 | 2 | 107.5 | 10 | 135 | 1 | 85 | 0 |
-| **Career** |  | 4 | 75 | 430 | 5.7 | 2 | 107.5 | 10 | 135 | 1 | 85 | 0 |
+| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo Bills | 26 | 28 | 4 | 75 | 430 | 5.7 | 2 | 107.5 | 10 | 135 | 1 | 85 | 0 |
+| **Career** |  |  |  | 4 | 75 | 430 | 5.7 | 2 | 107.5 | 10 | 135 | 1 | 85 | 0 |
 
 ## Awards
 
@@ -25,5 +25,7 @@
 - AFC Offensive Player of the Week (2013, Week 15)
 - Super Bowl MVP (2013 season)
 - AFC Offensive Player of the Week (2014, Week 4)
+
+Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
 Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).

@@ -6,21 +6,23 @@
 
 ### Regular season
 
-| Season | Club | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 16 | 369-585 | 63.1 | 4,120 | 16 | 17 | 7.0 | 81.0 | 257.5 | 176 | 1 |
-| 2014 | New York Jets | 5 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| **Career** |  | 21 | 369-585 | 63.1 | 4,120 | 16 | 17 | 7.0 | 81.0 | 196.2 | 176 | 1 |
+| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia Eagles | 33 | 7 | 16 | 369-585 | 63.1 | 4,120 | 16 | 17 | 7.0 | 81.0 | 257.5 | 176 | 1 |
+| 2014 | New York Jets | 34 | 1 | 5 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
+| **Career** |  |  |  | 21 | 369-585 | 63.1 | 4,120 | 16 | 17 | 7.0 | 81.0 | 196.2 | 176 | 1 |
 
 ### Playoffs
 
-| Season | Club | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 3 | 70-104 | 67.3 | 797 | 5 | 5 | 7.7 | 86.1 | 265.7 | 36 | 0 |
-| **Career** |  | 3 | 70-104 | 67.3 | 797 | 5 | 5 | 7.7 | 86.1 | 265.7 | 36 | 0 |
+| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia Eagles | 33 | 7 | 3 | 70-104 | 67.3 | 797 | 5 | 5 | 7.7 | 86.1 | 265.7 | 36 | 0 |
+| **Career** |  |  |  | 3 | 70-104 | 67.3 | 797 | 5 | 5 | 7.7 | 86.1 | 265.7 | 36 | 0 |
 
 ## Awards
 
 None on record.
+
+Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
 Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).

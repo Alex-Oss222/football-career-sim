@@ -556,8 +556,11 @@ class Week5BuildTests(unittest.TestCase):
                 return super().depth_chart
 
         from runtime import player_state
+        from support_as_of import roster_before_week
+        # The roster as it stood before the week's game (a closed week's own
+        # injuries are on the current roster; tests/support_as_of.py).
         with mock.patch.object(week_inputs, "SeasonPaths", Paths), \
-                mock.patch.object(player_state, "binding", return_value=self.binding):
+                mock.patch.object(player_state, "binding", return_value=self.binding), roster_before_week(week):
             return week_inputs.build_package(week, receipts, *self.args, decisions=self.decisions, db_slots=db_slots,
                                              **kernel)
 

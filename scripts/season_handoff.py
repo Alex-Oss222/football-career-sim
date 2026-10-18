@@ -463,6 +463,7 @@ def stage(root, data):
             missing = current_cards-{p.name for p in cards.glob('*.md')}
             if missing:
                 raise ValueError('Missing current player opening cards: '+', '.join(sorted(missing)))
+        identity = None
         for source in sorted(cards.glob('*.md')):
             target = paths.record('player_profiles') / source.name
             if year >= 2014:
@@ -497,11 +498,14 @@ def stage(root, data):
                 text = re.sub(r'^\*\*Previous annual profile:\*\*[^\n]*',
                               f'**Previous annual profile:** [{year} profile]({previous})', text, flags=re.M)
                 if '<!-- yearly-statistics:start -->' in text:
-                    from scripts.update_player_cards import refresh_text, period_data
+                    from scripts.update_player_cards import refresh_text, period_data, season_rows, card_name
                     name = re.search(r'^# (.+?) — ', text)[1]
                     pos = re.search(r'^\*\*Position:\*\* (\S+)', text, re.M)[1]
                     periods = {post: period_data(nxt, post, root) for post in (False, True)}
-                    text = refresh_text(text, nxt, name, pos, periods, root)
+                    if identity is None:  # one league read for every carried card's season row
+                        identity = season_rows(nxt, [n for n in (card_name(c.read_text()) for c in
+                                                                 sorted(cards.glob('*.md'))) if n], root)
+                    text = refresh_text(text, nxt, name, pos, periods, root, identity.get(name))
             writes[target] = text
     for relative, text in opening_guides(nxt).items():
         path = folder/relative

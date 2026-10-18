@@ -1,5 +1,11 @@
 # Casey Kreiter — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Casey Kreiter career card](../../../../league_players/jacksonville_jaguars/assets/casey_kreiter.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/casey_kreiter.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  
@@ -113,14 +119,14 @@ Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Traini
 
 ## Regular-season statistics by year
 
-| Season | Team(s) | Coverage | G | LONG SNAPS | FG SNAPS | TRY SNAPS | PUNT SNAPS | BAD SNAPS | PEN | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 5 | 5 | 48 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | 0 |
+| Season | Team | Age | # | Coverage | G | LONG SNAPS | FG SNAPS | TRY SNAPS | PUNT SNAPS | BAD SNAPS | PEN | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 24 | N/A | Through Week 5 | 5 | 48 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | 0 |
 
 ## Playoff statistics by year
 
-| Season | Team(s) | Coverage | G | LONG SNAPS | FG SNAPS | TRY SNAPS | PUNT SNAPS | BAD SNAPS | PEN | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
+| Season | Team | Age | # | Coverage | G | LONG SNAPS | FG SNAPS | TRY SNAPS | PUNT SNAPS | BAD SNAPS | PEN | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 24 | N/A | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
 
 <!-- yearly-statistics:end -->
