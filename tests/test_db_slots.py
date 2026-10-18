@@ -504,7 +504,9 @@ class Week5BuildTests(unittest.TestCase):
     event is closed): Jacksonville fails closed until its roles are in the
     chart; with Stone's recorded roles (Bouye nickel, Ball outside reserve)
     every club is legal and dresses 46, the background DBs take their labels
-    and Weeks 1 to 4 are unchanged.
+    and Weeks 1 to 4 are unchanged. The fail-closed case strips the two roles
+    from a copy of the committed chart (they were transcribed at the Week 5
+    preparation), so it does not depend on the clock.
 
     Since the kernel 2014.6 release (B18) the build is the installed
     kernel's: the player-state model, under a stand-in for the 2014 binding
@@ -526,11 +528,18 @@ class Week5BuildTests(unittest.TestCase):
         cls.binding = {"schema": player_state.BINDING_SCHEMA, "league_year": 2014,
                        "manifest_sha256": player_state.manifest_sha256(), "commitment": "0" * 64}
         chart = json.loads(paths.depth_chart.read_text(encoding="utf-8"))
-        chart["roles"].setdefault("A.J. Bouye", []).append("nickel")
-        chart["roles"].setdefault("Alan Ball", []).append("outside_reserve")
+        bare = copy.deepcopy(chart)
+        bare["roles"] = {p: [r for r in roles if r not in ("nickel", "outside_reserve")]
+                         for p, roles in bare["roles"].items()}
+        for player, role in (("A.J. Bouye", "nickel"), ("Alan Ball", "outside_reserve")):
+            roles = chart["roles"].setdefault(player, [])
+            if role not in roles:
+                roles.append(role)
         cls.tmp = tempfile.TemporaryDirectory()
         cls.chart = Path(cls.tmp.name) / "chart.json"
         cls.chart.write_text(json.dumps(chart), encoding="utf-8")
+        cls.bare = Path(cls.tmp.name) / "bare.json"
+        cls.bare.write_text(json.dumps(bare), encoding="utf-8")
 
     @classmethod
     def tearDownClass(cls):
@@ -542,7 +551,9 @@ class Week5BuildTests(unittest.TestCase):
         class Paths(SeasonPaths):
             @property
             def depth_chart(self):
-                return test.chart if chart and self.year == 2014 else super().depth_chart
+                if chart and self.year == 2014:
+                    return test.bare if chart == "bare" else test.chart
+                return super().depth_chart
 
         from runtime import player_state
         with mock.patch.object(week_inputs, "SeasonPaths", Paths), \
@@ -552,7 +563,7 @@ class Week5BuildTests(unittest.TestCase):
 
     def test_week_5(self):
         with self.assertRaisesRegex(ValueError, "W2b defensive-back roles"):
-            self.build(5, self.receipts, True)
+            self.build(5, self.receipts, True, chart="bare")
         package = self.build(5, self.receipts, True, chart=True)
         from scripts.check_week_input_exclusivity import check_inputs, controlled_players_from_roster
         self.assertEqual(check_inputs(package, controlled_players_from_roster(SeasonPaths(2014).roster), JAX,

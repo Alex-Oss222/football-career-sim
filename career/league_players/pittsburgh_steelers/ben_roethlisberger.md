@@ -9,8 +9,8 @@
 | Season | Club | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Pittsburgh Steelers | 16 | 360-570 | 63.2 | 4,027 | 26 | 11 | 7.1 | 91.3 | 251.7 | 171 | 2 |
-| 2014 | Pittsburgh Steelers | 4 | 82-134 | 61.2 | 916 | 5 | 5 | 6.8 | 78.5 | 229.0 | 43 | 0 |
-| **Career** |  | 20 | 442-704 | 62.8 | 4,943 | 31 | 16 | 7.0 | 88.9 | 247.2 | 214 | 2 |
+| 2014 | Pittsburgh Steelers | 5 | 99-161 | 61.5 | 1,107 | 6 | 5 | 6.9 | 81.5 | 221.4 | 52 | 1 |
+| **Career** |  | 21 | 459-731 | 62.8 | 5,134 | 32 | 16 | 7.0 | 89.1 | 244.5 | 223 | 3 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).

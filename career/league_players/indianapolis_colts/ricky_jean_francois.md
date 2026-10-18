@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Indianapolis Colts | 16 | 47 | 4 | 3 | 0 | 0 | 0 | 0 | 11 | 2.9 | 35 |
-| 2014 | Indianapolis Colts | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  | 20 | 47 | 4 | 3 | 0 | 0 | 0 | 0 | 11 | 2.4 | 35 |
+| 2014 | Indianapolis Colts | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
+| **Career** |  | 21 | 47 | 4 | 3 | 0 | 0 | 0 | 0 | 11 | 2.2 | 35 |
 
 ### Playoffs
 
@@ -20,4 +20,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).

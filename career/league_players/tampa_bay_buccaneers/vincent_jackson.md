@@ -9,8 +9,8 @@
 | Season | Club | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Tampa Bay Buccaneers | 16 | 135 | 88 | 821 | 9.3 | 4 | 51.3 | 65.2 | 43 | 1 | 2 |
-| 2014 | Tampa Bay Buccaneers | 4 | 26 | 17 | 187 | 11.0 | 4 | 46.8 | 65.4 | 27 | 3 | 0 |
-| **Career** |  | 20 | 161 | 105 | 1,008 | 9.6 | 8 | 50.4 | 65.2 | 43 | 4 | 2 |
+| 2014 | Tampa Bay Buccaneers | 5 | 35 | 23 | 243 | 10.6 | 5 | 48.6 | 65.7 | 27 | 11 | 0 |
+| **Career** |  | 21 | 170 | 111 | 1,064 | 9.6 | 9 | 50.7 | 65.3 | 43 | 12 | 2 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).

@@ -9,8 +9,8 @@
 | Season | Club | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Buffalo Bills | 16 | 15 | 14 | 144 | 10.3 | 0 | 9.0 | 93.3 | 24 | 10 | 0 |
-| 2014 | Buffalo Bills | 4 | 40 | 22 | 335 | 15.2 | 1 | 83.8 | 55.0 | 49 | 0 | 1 |
-| **Career** |  | 20 | 55 | 36 | 479 | 13.3 | 1 | 23.9 | 65.5 | 49 | 10 | 1 |
+| 2014 | Buffalo Bills | 5 | 44 | 26 | 384 | 14.8 | 2 | 76.8 | 59.1 | 49 | 0 | 1 |
+| **Career** |  | 21 | 59 | 40 | 528 | 13.2 | 2 | 25.1 | 67.8 | 49 | 10 | 1 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).

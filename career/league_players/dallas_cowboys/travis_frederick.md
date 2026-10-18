@@ -9,8 +9,8 @@
 | Season | Club | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Dallas Cowboys | 16 | N/A | N/A | 2 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Dallas Cowboys | 4 | 4 | 193 | 1 | 11 | 0 | 0 | 0 | 0 | 48.2 |
-| **Career** |  | 20 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
+| 2014 | Dallas Cowboys | 5 | 5 | 257 | 1 | 17 | 0 | 0 | 0 | 0 | 51.4 |
+| **Career** |  | 21 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).

@@ -3,7 +3,7 @@
 **Status:** The user's weekly game turn template, confirmed September 30, 2026. Applies to every regular-season and postseason game turn from the 2014 season onward; 2013 turns keep the earlier format, retained in git history.
 **When used:** Regular-season game weeks, byes and postseason turns. An unplayed slot contains preparation only; do not fill a result, player performance or box score before the game is resolved. Use the [preseason output template](preseason_output_template.md) for preseason turns and the [offseason output template](offseason_output_template.md) for offseason turns. Document 7 governs simulation; this template governs presentation.
 
-Every weekly game turn follows this layout. Bracketed text is a field to fill. Italic text is an instruction to whoever writes the turn: it is carried out, then left out of the output.
+Every weekly game turn follows this layout. Bracketed text is an authoring prompt, not a requirement to manufacture content. Italic instructions are carried out and left out of the output. Apply the [game-output workflow](../../docs/game_output_workflow.md) before writing or restyling a turn.
 
 The confirmed weekly layout has unnumbered Coach info followed by seven numbered sections. The game is section 3. Its quarter narrative and result summary lead directly into **Report to render**, followed by the existing player findings, decisions, availability and full generated statistics. Postgame media stays in section 4, coaching carry-forward in section 5, personnel in section 6 and closure in section 7. The preseason template has its own eight-section numbering; do not renumber either to match the other.
 
@@ -11,27 +11,22 @@ The confirmed weekly layout has unnumbered Coach info followed by seven numbered
 
 *These rules govern the whole turn. None of this section appears in the output.*
 
-1. **Facts come from the branch.** Scores, stats, rosters, injuries, schemes and results come only from the branch's recorded film findings, actual event owners, statbook and game receipt. No real-world result, stat or roster fact enters a turn.
-2. **Research supplies form, never facts.** Research shows how a real week runs, what reporters really ask, how a head coach really answers, and how a real game story reads. The branch supplies everything those forms are filled with.
-3. **Research is done every turn, before the section is written.** Each narrative section below opens with a research step that says where to look, how to look, and what to do with what is found. Open the pages and read them in full. A search result is not a source. Last week's turn is not a source.
-4. **Never fake a research step.** If a step cannot be run, the engine note in Section 7 says which one and why. An invented question is never presented as a real one.
-5. **Every player is tracked.** Every player who appears in the receipt appears in the full stats. Every change in health, role or depth appears in Section 6. The statbook is updated from the receipt before Section 7 is written.
-6. **Nothing about the engine is shown** except the one engine note line in Section 7. No status block, event id, generation, kernel version or restart record.
+1. **Keep the career and its evidence.** Use the existing preparation, user decisions, result, medical record and statistics. A presentation revision does not run another game, advance the clock, change a role or supply a missing conversation. Retain recorded preparation dates and supporting sources.
+2. **Statistics are generated; the football account is authored.** Preserve the complete receipt-derived statistics below. Verified record and score tables may also be rendered. Write the preparation, story, coaching review and media from the actual evidence; do not turn a field or JSON key into a sentence to fill a section.
+3. **Research informs the writing.** Use the inspected references in the [media method](../../docs/head_coach_media_method.md) and report research. Consult more sources when an unfamiliar situation or a factual question requires them. There is no per-section browsing quota. Sources supply form and football context, never this career's events or dialogue.
+4. **Questions are original.** Ask what a reporter could reasonably ask from public information at that point. Let follow-ups respond to Stone's answer. Do not transplant another session's questions or assign an invented line to a real reporter.
+5. **Stone remains user-controlled.** In an authorized media writeup, routine answers may express recorded decisions and established positions in his voice. Preserve the user's actual words and their meaning. Do not create a new commitment, policy, personnel decision, accusation or private motive; a consequential unanswered choice returns to the user.
+6. **Keep machinery in its proper owners.** Preserve event metadata, receipts and validation records. Their contents do not become football narration. A material evidence gap is described once in the supporting notes, and in the football account only where it changes the conclusion or the next decision.
 
 ### Prose standard
 
-*Applies to every narrative passage: the week, the quarters, the takeaways.*
-
-**Research before writing.** Before the first narrative passage of the turn, read three real pieces of the kind about to be written (listed in each section). Keep one open while drafting and compare against it.
-
-- Past tense, third person, plain verbs.
-- Ground the account in this game's people, assignments, situations and consequences. Use exact down, distance, yard line, clock or concept only when recorded; a sentence does not need a number to explain football.
-- The quarter narrative reports what happened. The coaching report explains what the evidence supports about the work and why it matters for the next assignment. Separate observation from interpretation. Cut unsupported momentum, tone-setting, statement-game or importance claims.
-- Nothing from inside a player's or coach's head unless he says it in a Q&A.
-- No adjectives for effort, heart or character. No weather or crowd used as mood.
-- No em dashes, no rhetorical questions, no one-line paragraphs for effect, no lists of three built for rhythm, no "not X but Y" constructions.
-- A paragraph ends on its last fact. It does not end on a summary or a line that points ahead.
-- The check: reread each sentence and ask whether it could appear unchanged in a story about a different game. If it could, rewrite it with this game's facts or cut it.
+- Write preparation and game accounts in past tense, third person, with plain verbs and named people. Media answers use Stone's spoken voice.
+- Explain what happened and what the evidence supports. A sack establishes a sack; a recorded protection finding can explain it. Do not invent a missed assignment, film session or sideline exchange to bridge the two.
+- Give important football detail room. Select statistics and sequences because they explain a finding, rather than repeating every table or narrating every possession.
+- Keep the seven sections and their purposes. Subheadings and fields are prompts; omit unsupported optional findings, empty lists and duplicate explanations. No quota for praise, criticism, standout players or words.
+- Let the story, coaching review and next work do different jobs. The story gives the action; the review examines the actual work; the carry-forward names the resulting task.
+- Avoid generic importance claims, slogans, staged drama and audit language. Do not invent private thoughts, crowd reactions or weather as mood. Read the prose aloud and rewrite sentences that sound like a form being completed.
+- No em dashes, rhetorical questions in the narrator's voice, or one-line paragraphs for dramatic effect. Reporter questions and ordinary spoken answers remain natural.
 
 ### Runner mechanics
 
@@ -70,122 +65,51 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 ## 1. Week setup and game preparation
 
-### Research before writing
+### Preparation evidence
 
-*Carry this out, then write the section. None of this block appears in the output.*
-
-**What to find out.** What a real NFL staff and roster do on each day of a week shaped like this one, and how that work is reported in writing.
-
-**Where to look.**
-
-- Practice reports and game-week notebooks published by team sites and beat writers during real NFL weeks.
-- Long accounts of how a game plan is built: coaches' own writing on game planning and opening scripts (Bill Walsh and Brian Billick both wrote on it), and features that follow one staff through one week.
-- The league's own rules for the week on the NFL Football Operations site: practice participation reports, game status designations, the inactive list deadline, practice-squad elevations, padded-practice limits.
-
-**How to look.**
-
-1. Name the shape of this week from the branch: standard Sunday, short week, long week, after a bye, opener, after a win or a loss, a new starter, a key player on a medical hold.
-2. Find and read in full at least three real pieces, at least one of them from a real week with the same shape.
-3. From each, note four things: what the staff and players did on each day, the order in which the plan was installed, the working words used for it, and what the writer reported as fact versus left out.
-
-**What to do with it.**
-
-- Build the branch's week on the real skeleton: what real clubs do on the day after a game, the players' day off when the staff builds the plan, the three practice days and what each installs, the day-before walkthrough, and game day through the inactive list.
-- Use the real vocabulary where it fits the branch's facts. Do not borrow a real club's facts, quotes or sentences.
-- Report the week the way the real pieces do: what was installed, who practiced and how much, who was ruled out, what was cut from the plan. Follow the prose standard.
-- If the branch has no information on something a real staff would know, say the staff did not have it. Do not fill the gap.
+*Read the dated preparation record, approved priorities, opponent evidence and actual availability first. Preserve the recorded week. Use comparable practice-week accounts only if they help explain an unfamiliar schedule or reporting form; verify an applicable rule separately when it changes the work. A standard NFL week is not evidence that a particular meeting, drill or instruction occurred here.*
 
 ### Section layout
 
 *Prose paragraphs under these four labels. No tables.*
 
-**Opponent context.** \[One paragraph from the branch's own film and statbook: what the opponent showed on offense, defense and special teams, its record and recent results in the branch, the players the plan had to account for, and its availability. State plainly anything the staff did not know going in.\]
+**Opponent context.** \[From the branch's own film and statbook: what the opponent showed on offense, defense and special teams, its record and recent results in the branch, the players the plan had to account for, and its availability. State plainly anything the staff did not know going in.\]
 
-**Stone's priorities and decisions.** \[One or two paragraphs. The priorities for the week and the decision each one drove. Starters and any change from last week. The shape of the call sheet: base personnel, the openers and what they were built to find out, third down, red zone, the defensive plan. What was on the menu, and what was taken off it and why.\]
+**Stone's priorities and decisions.** \[The priorities for the week and the decision each one drove. Starters and any change from last week. The shape of the call sheet: base personnel, the openers and what they were built to find out, third down, red zone, the defensive plan. What was on the menu, and what was taken off it and why.\]
 
-**The week, day by day.** \[One short paragraph per day from the day after the last game through the day before this one. For each day: what was reviewed, installed or rehearsed, the teaching point, and who was limited or held out. Shift the days for a Thursday, Saturday or Monday game and say so.\]
+**The week, day by day.** \[Preserve the recorded dates and sequence of preparation. Describe what was actually reviewed, installed or rehearsed and material restrictions. Combine quiet days when useful; do not invent activity for a missing day or silently discard existing preparation evidence.\]
 
 **Availability.** \[Practice participation for every player who was not a full participant, by day. Final game status for each. Players ruled out, elevations, and the inactive list.\]
 
 ## 2. Pregame media Q&A
 
-### Research before writing
+*Follow the [head-coach media method](../../docs/head_coach_media_method.md). Use public information available before kickoff: the previous result, an announced role change, availability, the opponent and the coming game. Keep internal game-plan detail private unless Stone has already made it public. Research examples inform spoken form; the questions themselves are written for this week.*
 
-*Carry this out, then write the section. None of this block appears in the output.*
+**Reporter:** \[An original question about a specific public football matter.\]
 
-**What to find out.** Which questions real reporters have asked real NFL head coaches in the situations this game presents, and how those coaches answered.
+**Stone:** \[A spoken answer expressing an established position or authorized decision.\]
 
-**Where to look.**
-
-- Press-conference transcripts that NFL clubs publish on their own sites, midweek and end of week.
-- The ASAP Sports transcript archive.
-- Full press-conference video, and beat writers' own transcriptions in their practice-week coverage.
-
-**How to look.**
-
-1. Look at this game and list what a beat reporter would ask about. Use only what is public in the branch: last week's result, a lineup change, a player's first start, the injury report, the opponent's best players, the opposing coach, a streak, the standings, a short or long week.
-2. For each item, find a real head coach's pregame press conference where the same situation existed. A rookie tackle's first start. A quarterback's first start for a new club. A starter held out by the medical staff. An opener. A return to a former club.
-3. Read the whole transcript, not the one question. Note how the session ran, which questions were asked, and how they were worded.
-4. Read at least two more transcripts from other head coaches for the range of how coaches answer.
-
-**What to do with it.**
-
-- **Questions.** Take each question as the reporter asked it. Keep its wording, length and angle, including the ones that are statements, two questions in one, or loosely phrased. Change only the names and details that belong to the branch. Do not write a question from scratch.
-- **Answers.** Answer as Stone. His voice from earlier turns governs. The transcripts supply how a head coach handles each kind of question: what he answers straight, what he declines, how he talks about injuries, rookies and the opponent, and how long he talks.
-- **Facts.** Stone's answers contain only what Section 1 and the branch support. The podium answer may hold back what Section 1 shows. It never contradicts the branch.
-- **Order.** Run the questions in the order a real session runs, not grouped by topic.
-- **Method.** Apply the [head-coach media method](../../docs/head_coach_media_method.md): its catalogue of real answers, its anti-slop rules (no answer restates the question; no lists of three built for rhythm; no "at the end of the day"; no sermon; no unprompted plan rationale; the tape deferral and "I'll have to look at it" at most once each per session, with a specific observation; one-sentence answers where a real coach gives one; numbers only as held at the podium) and Stone's voice sheet (straight on his own decisions, blame first and short after a loss, named credit, the injury answer stops at the medical record, the roster is Caldwell's, no job decided from the podium).
-
-### Section layout
-
-*Five to eight questions. The number follows how much the week gives reporters to ask about. Each answer is one paragraph in Stone's spoken voice, as long as a real coach's answer to that kind of question.*
-
-**Reporter:** \[Real question, adapted to the branch's names and details.\]
-
-**Stone:** \[Answer.\]
-
-*Repeat for each question.*
-
-**Question sources:** \[One line per question: the coach who was asked it, the club, the date, and a link to the transcript.\]
+*Continue when the week gives the room another worthwhile question. A follow-up responds to what was just said. There is no minimum, maximum or required topic checklist. Avoid variations of a question already answered. If no pregame session occurred, retain the section with that brief fact instead of inventing one during a retrospective rewrite.*
 
 ## 3. Game
 
-### Research before writing
+### Game evidence
 
-*Carry this out, then write the quarters. None of this block appears in the output.*
-
-**What to find out.** How working sportswriters write a game one quarter at a time.
-
-**Where to look.**
-
-- Associated Press game stories.
-- Quarter-by-quarter recaps and game summaries on team sites.
-- Newspaper game stories by beat writers.
-
-**How to look.**
-
-1. Name the shape of this game from the receipt: a blowout, a comeback, a defensive game, a game decided late, a game decided by turnovers.
-2. Find and read in full at least three real pieces, at least one a quarter-by-quarter recap and at least one of a real game with the same shape.
-3. Note how each one reports a scoring drive (plays, yards, the key play, the scorer, the clock), how it reports a turnover and what came of it, how it handles a possession that went nowhere, and how little comment it adds.
-
-**What to do with it.**
-
-- Write each quarter to that pattern using only the receipt. Every play, player, yardage and clock time cited must be in the receipt.
-- Do not borrow a real story's sentences. Follow the prose standard.
+*Read the scoring, possession and play records together. Resolve a factual conflict before writing. The full generated statistics preserve the complete accounting; the quarter narrative selects the sequences needed to understand the result. Use the report research when it helps with form, never to import another game's plays or causes.*
 
 ### Section layout
 
 **Week \[X\]: \[Away team\] at \[Home team\]**
 
-*One paragraph per quarter, in game order. Each paragraph covers every score and every turnover of that quarter in the order they happened. A scoring drive gets its length in plays and yards, its key play with down, distance and concept, the scorer, and the clock. A possession that did not score is mentioned only when it explains field position or a later score. A scoreless quarter still gets a paragraph on what each side's possessions did. The paragraph stops at the quarter's last event. Add an overtime paragraph only if overtime was played.*
+*Keep the four quarter labels and game order. Explain the scoring changes, consequential turnovers and sequences that shaped the result without translating the drive chart into prose. Use the exact clock, distance, call or drive length when supported and useful; they are not a required bundle for every score. A quiet quarter can be brief. Add overtime only when played.*
 
-**First quarter.** \[One paragraph.\]
+**First quarter.** \[The supported action and its consequences in this quarter.\]
 
-**Second quarter.** \[One paragraph.\]
+**Second quarter.** \[The supported action and its consequences in this quarter.\]
 
-**Third quarter.** \[One paragraph.\]
+**Third quarter.** \[The supported action and its consequences in this quarter.\]
 
-**Fourth quarter.** \[One paragraph.\]
+**Fourth quarter.** \[The supported action and its consequences in this quarter.\]
 
 **Final: \[Winning team\] \[XX\], \[Losing team\] \[XX\]**
 
@@ -200,11 +124,11 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 **Review:** \[Immediate postgame assessment, or completed staff review with the actual evidence-through date.\]
 
-*Read the prepared call sheet, participation and substitutions, public play record, medical instructions and recorded coaching findings. Use the active, taught playbook to interpret the job. Explain assignments, recognition, technique, physical execution and decisions separately where the distinction matters. A statistic does not supply an unrecorded cause. Research informs the questions and writing, never missing events. The [report research](../../docs/preseason_game_reports.md) explains this method for both game formats.*
+*The prompts below identify possible football questions; select the ones this game actually tested. A unit does not need a sentence on each listed technique or an inventory of missing observations. Give each finding one main home, and revisit it only to add a different conclusion. Read the prepared call sheet, participation and substitutions, public play record, medical instructions and recorded coaching findings. Use the active, taught playbook to interpret the job. Explain assignments, recognition, technique, physical execution and decisions separately where the distinction matters. A statistic does not supply an unrecorded cause. Research informs the questions and writing, never missing events. The [report research](../../docs/preseason_game_reports.md) explains this method for both game formats.*
 
 #### The team's performance
 
-\[Lead with the main supported football finding. Explain what repeatedly sustained or stopped the team and how the units affected one another through possession, field position and game situations. Use representative sequences already established above without telling the quarters again. Include what the opponent forced the team to change. Distinguish a repeated problem from one costly play.\]
+\[Lead with the game-level finding that connects the units. Explain what repeatedly sustained or stopped the team and how possession, field position and game situations linked their work. Leave the detailed unit findings to their sections below. Use representative sequences already established above without telling the quarters again. Include what the opponent forced the team to change. Distinguish a repeated problem from one costly play.\]
 
 #### Offense
 
@@ -222,24 +146,23 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 #### Communication and coaching response
 
-\[Describe the actual path from sideline call to alignment and shared assignment: substitutions, protection declarations, coverage exchanges, tempo, replacement callers and clock handling when relevant. Separate a call not received, conflicting instructions, a recognition error and a correctly understood job executed poorly. A low penalty total does not establish clean communication.\]
+\[Develop a material communication or coaching finding not already explained in the unit review. Relevant evidence may concern the path from sideline call to alignment and shared assignment: substitutions, protection declarations, coverage exchanges, tempo, replacement callers and clock handling when relevant. Separate a call not received, conflicting instructions, a recognition error and a correctly understood job executed poorly. A low penalty total does not establish clean communication.\]
 
 \[Assess the staff's contribution as well as the players'. Was the call timely, the instruction consistent and the support suitable for the job? Describe a delivered correction and its later response only when recorded. If the cause is unresolved, identify the football question for review. Recommendations and untested adjustments remain proposals. Section 5 carries the resulting work forward. Do not invent Stone's private thoughts or a staff meeting.\]
 
 #### Player findings and material decisions
 
-*Use the existing fields below for the individual findings; do not add another standout list. Develop the relevant assignment, technique, opposition and repeated or contrary evidence behind the player's line. Include a useful strength and a limitation together when both occurred. A narrow opportunity stays narrow. Record material during-year changes as dated observations on the opening annual card; this report does not create another full assessment or a new preseason position-battle card.*
+*Use the existing fields below for individual conclusions that add to the unit review; do not add another standout list or repeat the same statistical line. Develop the relevant assignment, technique, opposition and repeated or contrary evidence behind the player's work. Include a useful strength and a limitation together when both occurred. A narrow opportunity stays narrow. Record material during-year changes as dated observations on the opening annual card; this report does not create another full assessment or a new preseason position-battle card.*
 
-**Player of the game:** \[Name, position, club\]. \[His line from the full stats and the plays it came on. One player, from either club.\]
+**Player of the game:** \[Retain an established selection, with the supporting performance. Do not invent an award solely to fill the field.\]
 
 **Standout performances**
 
-- &#91;Player\]: \[his line from the full stats and the play or plays it came on.\]
-- &#91;Three to five players. Either club may appear.\]
+- &#91;Player\]: \[The meaningful work, its supporting evidence and any relevant limit. Either club may appear; no player-count quota and no second statistical recap.\]
 
-**Material game-management decisions:** \[Each fourth-down, challenge, timeout or clock decision by Stone that entered the result, with the situation and the outcome. "None recorded" if there were none.\]
+**Material game-management decisions:** \[Assess the consequential decisions Stone actually made against what he knew at the time. Refer to a sequence already told rather than retelling it; preserve his recorded reason and distinguish the choice from its outcome. Omit when there is no additional finding.\]
 
-**Injuries and availability from the game:** \[Each player who left, his club and when it happened; the medical finding, restriction and projected return only when communicated. Distinguish an observation from a diagnosis and a forecast from clearance. "None" if there were none.\]
+**Injuries and availability from the game:** \[Material removals and their effect on the game. Medical findings and restrictions appear only when communicated; section 6 gives the current status and next-game implications. Omit when there was no change.\]
 
 ### Full stats for the game
 
@@ -403,55 +326,37 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 ## 4. Postgame media Q&A
 
-### Research before writing
+*Follow the [head-coach media method](../../docs/head_coach_media_method.md), using what was publicly observable at this session's time. Lead with the game matter likely to draw attention, then let the answers give reporters something to pursue. A reporter can press an important choice; a loss alone does not require hostility or a longer session.*
 
-*The same method as Section 2, run on postgame transcripts. Carry it out, then write the section. None of this block appears in the output.*
+**Reporter:** \[An original question arising from this game's public action or an earlier public answer.\]
 
-**Where to look.** Postgame press-conference transcripts on club sites and in the ASAP Sports archive, full postgame press-conference video, and the quotes sections of real game stories.
+**Stone:** \[His response, with enough football to answer the question and no newly invented decision or diagnosis.\]
 
-**How to look.**
-
-1. Look at this game and list what a reporter would ask about. Use the four quarter paragraphs and the full stats: the result, the quarterback's line, turnovers, sacks allowed, third down, a rookie's day, a back who outgained the starter, a late score, an injury, a decision Stone made.
-2. For each item, find a real head coach's postgame press conference after a real game where the same thing happened. A win with two interceptions. A rookie tackle charged with sacks. A defense with takeaways and no sack. A loss decided on a late drive.
-3. Read the whole transcript and at least two more from other head coaches, including one after a win and one after a loss.
-
-**What to do with it.** As in Section 2: real questions in their real wording with only the branch's names and details changed, Stone's answers in his own voice, facts only from the branch, real session order. After a loss, or a game with a disputed decision, the real sessions run longer and press harder. Match that. The [head-coach media method](../../docs/head_coach_media_method.md) governs the answers as in Section 2; its section 6 is a worked postgame example after an overtime loss.
-
-### Section layout
-
-*Five to twelve questions. A routine result sits at the low end. A loss, an injury to a starter or a disputed decision pushes it up. At least one question goes to the worst sequence of the game or Stone's hardest decision.*
-
-**Reporter:** \[Real question, adapted to the branch's names and details.\]
-
-**Stone:** \[Answer.\]
-
-*Repeat for each question.*
-
-**Question sources:** \[One line per question: the coach who was asked it, the club, the date, and a link to the transcript.\]
+*Continue only while another question adds something. Short answers, fuller explanations and ordinary acknowledgment all have a place. Do not make Stone recite the gamebook or the author's evidence checks. Keep later film findings out of an immediate postgame answer.*
 
 ## 5. Coaching takeaways and next-week carry-forward
 
 *The staff's supported football conclusions and resulting work. Preserve Stone's recorded choices without inventing his private reaction. Use the game report above and actual coaching evidence; a statistic alone cannot establish the cause. Develop each field as far as its material work requires, without repeating the unit review.*
 
-**What held up:** \[What worked and the evidence for it.\]
+**What held up:** \[What the staff can retain for the next week because of the findings above. Do not retell the supporting plays.\]
 
-**What must be corrected:** \[Each problem, the evidence, and the player or unit it belongs to.\]
+**What must be corrected:** \[The resulting correction or unresolved football question, with its player or unit. Do not manufacture a fault or repeat the complete unit assessment.\]
 
-**Next-week carry-forward:** \[What next week's preparation starts from: the cutups, the corrections, what stays on the menu and what waits. Name the responsible actual coach and the next useful opportunity for each material correction. Distinguish work proposed, instruction delivered and improvement actually observed.\]
+**Next-week carry-forward:** \[Turn those conclusions into the actual or proposed next work: the cutups, the corrections, what stays on the menu and what waits. Name the responsible actual coach and the next useful opportunity for each material correction. Distinguish work proposed, instruction delivered and improvement actually observed.\]
 
 ## 6. Weekly personnel and availability snapshot
 
-*The roster as it stands leaving this game. Every player on the active roster sits in one of these groups, and every player who appeared in the full stats is accounted for. The evidence column uses this week's numbers from the receipt.*
+*The roster as it stands leaving this game. Preserve the unit headings and tables, with concise current-role and availability entries. Full participation is accounted for in the generated statistics; this section explains material role, medical and evaluation findings. Do not recopy every player's statistical line or invent a new judgment for an unchanged group. An unchanged group retains its supported current view; the evidence column can point to the finding above rather than restate it. Link the controlling roster and medical records.*
 
 ### Offense
 
 | Group | Primary personnel / current role | Availability | Current qualitative read | This week's evidence / issue |
 | --- | --- | --- | --- | --- |
-| QB | \[QB1; QB2\] | \[Available / name and status\] | \[One phrase\] | \[Line from the full stats; open issue\] |
-| RB / FB | \[Lead back; rotation; FB\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| WR | \[Starters; WR3\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| TE | \[Lead; TE2; package roles\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| OL | \[LT; LG; C; RG; RT; swing\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
+| QB | \[QB1; QB2\] | \[Available / name and status\] | \[Supported current view\] | \[Material football finding or current open issue\] |
+| RB / FB | \[Lead back; rotation; FB\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| WR | \[Starters; WR3\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| TE | \[Lead; TE2; package roles\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| OL | \[LT; LG; C; RG; RT; swing\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
 
 **Offensive role changes:** \[Each change, or "None."\]
 
@@ -459,12 +364,12 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 | Group | Primary personnel / current role | Availability | Current qualitative read | This week's evidence / issue |
 | --- | --- | --- | --- | --- |
-| Interior DL | \[Starters; rotation\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| Edge | \[Starters; rotation\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| LB | \[Starters; next man\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| CB | \[Starters\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| Nickel | \[Player\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| S | \[Starters\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
+| Interior DL | \[Starters; rotation\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| Edge | \[Starters; rotation\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| LB | \[Starters; next man\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| CB | \[Starters\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| Nickel | \[Player\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| S | \[Starters\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
 
 **Defensive role changes:** \[Each change, or "None."\]
 
@@ -472,12 +377,12 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 | Unit | Primary personnel / role | Availability | Current qualitative read | This week's evidence / issue |
 | --- | --- | --- | --- | --- |
-| K | \[Player\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| P | \[Player\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| LS / operation | \[Player\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| Kick return | \[Players\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| Punt return | \[Players\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
-| Coverage units | \[Players\] | \[Availability\] | \[One phrase\] | \[Evidence\] |
+| K | \[Player\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| P | \[Player\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| LS / operation | \[Player\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| Kick return | \[Players\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| Punt return | \[Players\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
+| Coverage units | \[Players\] | \[Availability\] | \[Supported current view\] | \[Evidence\] |
 
 ### Material personnel changes this week
 
@@ -494,9 +399,9 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 **Division / conference position:** \[Place in the division and how ties were broken; conference seed if the season ended today.\] See \[standings link\].
 
-**Statbook:** \[Through Week X; receipts counted; coverage complete or the gaps; leaders published.\]
+**Statistics:** \[Link to the updated season statistics and their through-date. Put a coverage limitation here only if it affects their use.\]
 
-**Engine note:** \[Only if something affected the result or its record, or a research step could not be run. Leave the line out otherwise.\]
+**Supporting notes:** \[Compact links to the existing preparation, decision, medical and game sources. State a material evidence limitation once if needed. Any new writing references are references for form, not the source of a reporter's words. Omit routine execution, browsing and validation logs. Preserve machine metadata in its existing place.\]
 
 **Dated record:** \[Descriptive link to the completed game/event owner; the annual Record.md provides its one-line index. A presentation-only rewrite retains the existing event.\]
 

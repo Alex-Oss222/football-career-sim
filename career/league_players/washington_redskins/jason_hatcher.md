@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Dallas Cowboys | 16 | 46 | 4 | 5 | 0 | 2 | 1 | 1 | 5 | 2.9 | 29 |
-| 2014 | Washington Redskins | 4 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2.2 | 6 |
-| **Career** |  | 20 | 55 | 4 | 5 | 0 | 2 | 1 | 1 | 5 | 2.8 | 35 |
+| 2014 | Washington Redskins | 5 | 11 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2.2 | 8 |
+| **Career** |  | 21 | 57 | 4 | 6 | 0 | 2 | 1 | 1 | 5 | 2.7 | 37 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 25, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Washington Redskins players](README.md).
+Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Washington Redskins players](README.md).

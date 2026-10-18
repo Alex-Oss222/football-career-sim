@@ -9,7 +9,8 @@
 | Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Buffalo Bills | 16 | 160 | 4 | 14 | 1 | 7 | 0 | 0 | 14 | 10.0 | 100 |
-| **Career** |  | 16 | 160 | 4 | 14 | 1 | 7 | 0 | 0 | 14 | 10.0 | 100 |
+| 2014 | Buffalo Bills | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 1 |
+| **Career** |  | 17 | 161 | 4 | 14 | 1 | 7 | 0 | 0 | 14 | 9.5 | 101 |
 
 ### Playoffs
 
@@ -22,4 +23,4 @@
 
 None on record.
 
-Records through February 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All Buffalo Bills players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All Buffalo Bills players](README.md).

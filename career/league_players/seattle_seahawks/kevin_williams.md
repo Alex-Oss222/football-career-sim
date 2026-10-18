@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Minnesota Vikings | 15 | 16 | 1 | 1 | 0 | 0 | 0 | 0 | 4 | 1.1 | 14 |
-| 2014 | Seattle Seahawks | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.7 | 2 |
-| **Career** |  | 18 | 18 | 1 | 1 | 0 | 0 | 0 | 0 | 4 | 1.0 | 16 |
+| 2014 | Seattle Seahawks | 4 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.2 | 5 |
+| **Career** |  | 19 | 21 | 1 | 1 | 0 | 0 | 0 | 0 | 4 | 1.1 | 19 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).

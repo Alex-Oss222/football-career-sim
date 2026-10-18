@@ -133,13 +133,19 @@ Activated into the Week 4 preparation as the packet recommended rather than carr
 
 Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above.
 
+### September 29 to October 4, 2014 | Healthy, inactive
+
+Full in every session of the Pittsburgh week with no communicated restriction. The fourth tight end and inactive for Week 5 on the packet's selected plan: Stone dresses Todd Davis in his place for linebacker and coverage-unit depth, and the packet assigns him no receiving package merely because he is available. Nothing charged to him on the recorded reps.
+
+Source: [Week 5 record](../../../05_Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 4 | 1 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — | 0 | 0 | — | 0 | 0 | — | 0 |
+| 2014 | Jacksonville | Through Week 5 | 1 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 

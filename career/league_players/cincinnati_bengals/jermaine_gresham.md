@@ -9,8 +9,8 @@
 | Season | Club | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Cincinnati Bengals | 16 | 121 | 71 | 649 | 9.1 | 4 | 40.6 | 58.7 | 33 | 0 | 0 |
-| 2014 | Cincinnati Bengals | 3 | 16 | 10 | 180 | 18.0 | 1 | 60.0 | 62.5 | 61 | 0 | 0 |
-| **Career** |  | 19 | 137 | 81 | 829 | 10.2 | 5 | 43.6 | 59.1 | 61 | 0 | 0 |
+| 2014 | Cincinnati Bengals | 4 | 21 | 13 | 226 | 17.4 | 1 | 56.5 | 61.9 | 61 | 0 | 0 |
+| **Career** |  | 20 | 142 | 84 | 875 | 10.4 | 5 | 43.8 | 59.2 | 61 | 0 | 0 |
 
 ### Playoffs
 
@@ -20,4 +20,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cincinnati Bengals players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cincinnati Bengals players](README.md).

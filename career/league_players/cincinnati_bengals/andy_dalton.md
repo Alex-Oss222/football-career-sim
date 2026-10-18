@@ -9,8 +9,8 @@
 | Season | Club | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Cincinnati Bengals | 16 | 388-619 | 62.7 | 4,370 | 28 | 15 | 7.1 | 88.7 | 273.1 | 208 | 1 |
-| 2014 | Cincinnati Bengals | 3 | 61-105 | 58.1 | 779 | 1 | 4 | 7.4 | 68.7 | 259.7 | 39 | 3 |
-| **Career** |  | 19 | 449-724 | 62.0 | 5,149 | 29 | 19 | 7.1 | 85.8 | 271.0 | 247 | 4 |
+| 2014 | Cincinnati Bengals | 4 | 87-149 | 58.4 | 1,046 | 2 | 6 | 7.0 | 67.7 | 261.5 | 39 | 3 |
+| **Career** |  | 20 | 475-768 | 61.8 | 5,416 | 30 | 21 | 7.1 | 84.6 | 270.8 | 247 | 4 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@ No playoff games on record.
 - AP Second-Team All-Pro (2013, QB)
 - Pro Bowl selection (2013, QB)
 
-Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cincinnati Bengals players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cincinnati Bengals players](README.md).

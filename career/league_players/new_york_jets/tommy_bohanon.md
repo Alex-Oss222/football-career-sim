@@ -9,8 +9,8 @@
 | Season | Club | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | New York Jets | 16 | 10 | 64 | 6.4 | 1 | 4.0 | 7 | 73 | 1 | 17 | 0 |
-| 2014 | New York Jets | 4 | 4 | 21 | 5.2 | 0 | 5.2 | 4 | 19 | 0 | 8 | 0 |
-| **Career** |  | 20 | 14 | 85 | 6.1 | 1 | 4.2 | 11 | 92 | 1 | 25 | 0 |
+| 2014 | New York Jets | 5 | 5 | 26 | 5.2 | 0 | 5.2 | 5 | 23 | 0 | 10 | 0 |
+| **Career** |  | 21 | 15 | 90 | 6.0 | 1 | 4.3 | 12 | 96 | 1 | 27 | 0 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).

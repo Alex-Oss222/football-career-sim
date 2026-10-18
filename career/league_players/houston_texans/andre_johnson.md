@@ -9,7 +9,8 @@
 | Season | Club | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Houston Texans | 16 | 146 | 93 | 1,015 | 10.9 | 7 | 63.4 | 63.7 | 73 | 23 | 3 |
-| **Career** |  | 16 | 146 | 93 | 1,015 | 10.9 | 7 | 63.4 | 63.7 | 73 | 23 | 3 |
+| 2014 | Houston Texans | 1 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
+| **Career** |  | 17 | 146 | 93 | 1,015 | 10.9 | 7 | 59.7 | 63.7 | 73 | 23 | 3 |
 
 ### Playoffs
 
@@ -19,4 +20,4 @@ No playoff games on record.
 
 None on record.
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All Houston Texans players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All Houston Texans players](README.md).

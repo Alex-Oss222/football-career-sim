@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Tampa Bay Buccaneers | 16 | 26 | 2 | 1 | 0 | 0 | 0 | 0 | 2 | 1.6 | 17 |
-| 2014 | Tampa Bay Buccaneers | 4 | 33 | 0 | 3 | 0 | 3 | 0 | 0 | 0 | 8.2 | 25 |
-| **Career** |  | 20 | 59 | 2 | 4 | 0 | 3 | 0 | 0 | 2 | 3.0 | 42 |
+| 2014 | Tampa Bay Buccaneers | 5 | 40 | 0 | 4 | 0 | 3 | 0 | 1 | 0 | 8.0 | 30 |
+| **Career** |  | 21 | 66 | 2 | 5 | 0 | 3 | 0 | 1 | 2 | 3.1 | 47 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).

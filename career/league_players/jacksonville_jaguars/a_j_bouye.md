@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Jacksonville Jaguars | 15 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.3 | 200 |
-| 2014 | Jacksonville Jaguars | 4 | 4 | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 1.0 | 0 |
-| **Career** |  | 19 | 9 | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 0.5 | 200 |
+| 2014 | Jacksonville Jaguars | 5 | 6 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 1.2 | 0 |
+| **Career** |  | 20 | 11 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 0.6 | 200 |
 
 ### Playoffs
 
@@ -25,4 +25,4 @@ None on record.
 
 [Jacksonville player card](../../2014/00_Team_Operations/Team/Player_Cards/a_j_bouye.md)
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Jacksonville Jaguars players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Jacksonville Jaguars players](README.md).

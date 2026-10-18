@@ -8,8 +8,8 @@
 
 | Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Seattle Seahawks | 3 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1.7 | 3 |
-| **Career** |  | 3 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1.7 | 3 |
+| 2014 | Seattle Seahawks | 4 | 8 | 1 | 0 | 0 | 0 | 0 | 0 | 2 | 2.0 | 6 |
+| **Career** |  | 4 | 8 | 1 | 0 | 0 | 0 | 0 | 0 | 2 | 2.0 | 6 |
 
 ### Playoffs
 
@@ -21,4 +21,4 @@ None on record.
 
 Schools listed: West Virginia; Mt. San Antonio; Butler County CC.
 
-Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).

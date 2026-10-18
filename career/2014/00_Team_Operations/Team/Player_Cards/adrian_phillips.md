@@ -116,13 +116,19 @@ Sixteen kicking-game snaps and no defensive snap, with the coverage tackle on Ro
 
 Source: [Week 4 game record](../../../05_Regular_Season/Games/Week_04/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 29 to October 4, 2014 | Cleared Monday
+
+Cleared Monday, September 29, his projected date, at the reassessment his instruction named, and full in every session of the Pittsburgh week. Under Stone's packet he dresses as the next safety and a kicking-game reserve, and Westhoff reconciled his kicking jobs in the Friday period once the medical decision was known. Nothing charged to him on the recorded reps.
+
+Source: [Week 5 record](../../../05_Regular_Season/Games/Week_05/output.md) and the [medical history](../../Medical/medical_history.md#september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR | DEF SNAPS | QB HITS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 4 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 1 |
+| 2014 | Jacksonville | Through Week 5 | 4 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 1 |
 
 ## Playoff statistics by year
 

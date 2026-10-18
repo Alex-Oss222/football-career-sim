@@ -8,8 +8,8 @@
 
 | Season | Club | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Green Bay Packers | 4 | 4 | 252 | 1 | 21 | 0 | 0 | 0 | 0 | 63.0 |
-| **Career** |  | 4 | 4 | 252 | 1 | 21 | 0 | 0 | 0 | 0 | 63.0 |
+| 2014 | Green Bay Packers | 5 | 5 | 324 | 3 | 24 | 0 | 0 | 0 | 0 | 64.8 |
+| **Career** |  | 5 | 5 | 324 | 3 | 24 | 0 | 0 | 0 | 0 | 64.8 |
 
 ### Playoffs
 
@@ -19,4 +19,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).

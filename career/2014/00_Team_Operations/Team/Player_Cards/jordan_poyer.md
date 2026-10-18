@@ -172,13 +172,19 @@ His independent medical hold was reassessed Saturday, September 27, with no chan
 
 Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md) and the [medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed). This coaching update preserves the opening grades above.
 
+### September 29 to October 4, 2014 | Hold continues
+
+No reassessment was communicated in the Pittsburgh week and his independent medical hold stands, projected return October 9; no football work, out on the Friday report and inactive by medical instruction for Week 5, listed last among the defensive backs while out, Bouye at nickel. No football finding attaches to the hold.
+
+Source: [Week 5 record](../../../05_Regular_Season/Games/Week_05/output.md) and the [medical history](../../Medical/medical_history.md#september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR | DEF SNAPS | QB HITS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 4 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 155 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 2 |
+| 2014 | Jacksonville | Through Week 5 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 155 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 2 |
 
 ## Playoff statistics by year
 

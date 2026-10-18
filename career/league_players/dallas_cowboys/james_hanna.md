@@ -9,8 +9,8 @@
 | Season | Club | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Dallas Cowboys | 16 | 23 | 15 | 241 | 16.1 | 2 | 15.1 | 65.2 | 67 | 1 | 0 |
-| 2014 | Dallas Cowboys | 4 | 5 | 5 | 37 | 7.4 | 0 | 9.2 | 100.0 | 18 | 0 | 0 |
-| **Career** |  | 20 | 28 | 20 | 278 | 13.9 | 2 | 13.9 | 71.4 | 67 | 1 | 0 |
+| 2014 | Dallas Cowboys | 5 | 6 | 5 | 37 | 7.4 | 0 | 7.4 | 83.3 | 18 | 0 | 0 |
+| **Career** |  | 21 | 29 | 20 | 278 | 13.9 | 2 | 13.2 | 69.0 | 67 | 1 | 0 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).

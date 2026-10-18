@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Kansas City Chiefs | 16 | 12 | 0 | 3 | 0 | 1 | 0 | 0 | 1 | 0.8 | 7 |
-| 2014 | Kansas City Chiefs | 4 | 4 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 1.0 | 2 |
-| **Career** |  | 20 | 16 | 1 | 4 | 0 | 1 | 0 | 0 | 2 | 0.8 | 9 |
+| 2014 | Kansas City Chiefs | 5 | 6 | 1 | 2 | 0 | 0 | 0 | 0 | 1 | 1.2 | 4 |
+| **Career** |  | 21 | 18 | 1 | 5 | 0 | 1 | 0 | 0 | 2 | 0.9 | 11 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).

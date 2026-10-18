@@ -89,8 +89,8 @@ These artifacts are pinned by the 2012 base in `runtime/calibration_base.py`, wh
 | [2014_week1_rosters_branch_adjustment.md](2014_week1_rosters_branch_adjustment.md) | Real Week 1 rosters and the branch-adjusted copy | User-supplied source; branch-adjusted | `data/2014_week1_rosters_source.json`, `data/2014_week1_rosters_branch_adjusted.json`; no builder |
 | [2014_week1_depth_charts.md](2014_week1_depth_charts.md) | Week 1 depth charts for the 31 background clubs | In use from September 7, 2014 | `data/2014_week1_depth_charts.json`; `build_2014_week1_depth_charts.py` |
 | [2014_preseason_opponent_rosters.md](2014_preseason_opponent_rosters.md) | Each preseason opponent's camp roster | Prepared research; each game froze its own copy | `data/2014_preseason_opponent_rosters.json`; `build_2014_preseason_opponent_rosters.py` |
-| [2014_inseason_rails.md](2014_inseason_rails.md) | Other clubs' in-season roster moves | Prepared, gated; effective from Week 5 | `data/2014_inseason_rails/`; `build_2014_inseason_rails.py` |
-| [2014_db_families.md](2014_db_families.md) | Defensive-back families for the background clubs | Prepared, gated; read from Week 5 | `data/2014_db_families.json`; `build_2014_db_families.py` |
+| [2014_inseason_rails.md](2014_inseason_rails.md) | Other clubs' in-season roster moves | In use from Week 5 (October 5, 2014); built through October 4 | `data/2014_inseason_rails/`; `build_2014_inseason_rails.py` |
+| [2014_db_families.md](2014_db_families.md) | Defensive-back families for the background clubs | In use from Week 5 (October 5, 2014), read by kernel 2014.6 | `data/2014_db_families.json`; `build_2014_db_families.py` |
 | [2014_listed_player_identity.md](2014_listed_player_identity.md) | Listed height, weight, college and number for the player cards | Reader data only | `data/2014_listed_player_identity.json`; `build_2014_listed_player_identity.py` |
 
 ## 2015 season

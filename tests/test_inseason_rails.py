@@ -570,6 +570,17 @@ def extended(rows):
                             labels=data.labels)
 
 
+def first_build():
+    """The committed data as the first build left them (its rows and as-of
+    date), before any extension: the clock-independent stand-in for the
+    record before the Week 5 moves were appended."""
+    data = rails.load(2014)
+    build = data.manifest["builds"][0]
+    last = build["rows"][1]
+    return rails.from_parts(dict(data.manifest, as_of=build["through"]), data.base,
+                            [r for r in data.rows if r["id"] <= last], data.library, labels=data.labels)
+
+
 class CutoffTests(unittest.TestCase):
     def test_week_5_cutoffs_come_from_the_schedule(self):
         cut = rails.slate_cutoffs(week_inputs.schedule(5, 2014))
@@ -615,6 +626,12 @@ class CutoffTests(unittest.TestCase):
                      counterparty="GB")]
         data = extended(extra)
         receipts = [r for r in load_receipts(SeasonPaths(2014).receipts)]
+        # The committed moves can defer real players of their own (a real
+        # Thursday player who moved before Sunday); the synthetic mover is
+        # deferred on top of them.
+        with mock.patch.object(rails, "load", return_value=extended([])):
+            _, real_deferred = week_inputs._rails_clubs(week_inputs.rails_slate(5, 2014, receipts),
+                                                        week_inputs.schedule(5, 2014), 2014)
         with mock.patch.object(rails, "load", return_value=data):
             slate = week_inputs.rails_slate(5, 2014, receipts)
             clubs, deferred = week_inputs._rails_clubs(slate, week_inputs.schedule(5, 2014), 2014)
@@ -622,7 +639,9 @@ class CutoffTests(unittest.TestCase):
         sunday = [c for (key, team), c in clubs.items() if team == "Cleveland Browns"][0]
         self.assertIn("Synthetic Mover", [p["player_id"] for p in thursday["players"]])
         self.assertNotIn("Synthetic Mover", [p["player_id"] for p in sunday["players"]])
-        self.assertEqual([d["player_id"] for d in deferred], ["Synthetic Mover"])
+        self.assertNotIn("Synthetic Mover", [d["player_id"] for d in real_deferred])
+        self.assertEqual(sorted(d["player_id"] for d in deferred),
+                         sorted([d["player_id"] for d in real_deferred] + ["Synthetic Mover"]))
 
     def test_a_game_day_row_waits_for_the_clubs_next_game(self):
         games = week_inputs.schedule(5, 2014)
@@ -682,10 +701,14 @@ class CutoffTests(unittest.TestCase):
         self.assertTrue(rails.receipt_departure_errors(silent, [receipt], dates, codes, 5))
 
     def test_the_coverage_gate_blocks_week_5_until_the_moves_reach_its_cutoff(self):
-        self.assertIn("committed through 2014-09-28", build_week_inputs.rails_coverage_error(5, 2014))
+        # The record as its first build left it (through September 28) blocks
+        # Week 5; the committed extension through the slate's last cutoff opens it.
+        with mock.patch.object(rails, "load", return_value=first_build()):
+            self.assertIn("committed through 2014-09-28", build_week_inputs.rails_coverage_error(5, 2014))
         self.assertIsNone(build_week_inputs.rails_coverage_error(4, 2014))
         errors = close_week.rails_package_errors({"week": 5}, 5, 2014)
         self.assertEqual(errors, ["package lacks its in-season rails record (rebuild with build_week_inputs.py)"])
+        self.assertIsNone(build_week_inputs.rails_coverage_error(5, 2014))
         with mock.patch.object(rails, "load", return_value=extended([])):
             self.assertIsNone(build_week_inputs.rails_coverage_error(5, 2014))
 
@@ -741,6 +764,10 @@ class ClosedWeekTests(unittest.TestCase):
         checked = 0
         for r in receipts:
             week = int(r["week"])
+            if week >= rails.load(2014).effective_from_week:
+                # From Week 5 the units come from the rails slate, not the
+                # Week 1 library (runtime.depth_library.team_input refuses).
+                continue
             prior = [x for x in receipts if int(x["week"]) < week]
             game = next(g for g in week_inputs.schedule(week, 2014) if g["away"] == r["away"] and g["home"] == r["home"])
             for team in (r["away"], r["home"]):
@@ -831,8 +858,12 @@ class PlacementTests(unittest.TestCase):
 
 class CommittedDataTests(unittest.TestCase):
     def test_the_data_pass_the_gate_and_schema_checks(self):
-        self.assertEqual(rails.data_errors(2014, date(2014, 9, 28)), [])
-        self.assertTrue(rails.data_errors(2014, date(2014, 9, 27)))  # a row gated September 28 is past it
+        data = rails.load(2014)
+        as_of = date.fromisoformat(data.manifest["as_of"])
+        latest = max(date.fromisoformat(r["gate_date"]) for r in data.rows)
+        self.assertEqual(rails.data_errors(2014, as_of), [])
+        self.assertEqual(rails.data_errors(2014, player_bios.master_date(ROOT)), [])  # the committed clock
+        self.assertTrue(rails.data_errors(2014, latest - timedelta(days=1)))  # the latest row is past it
 
     def test_a_row_past_the_clock_fails_validation(self):
         folder = rails.data_dir(2014)
@@ -845,20 +876,21 @@ class CommittedDataTests(unittest.TestCase):
             (root / "library/data/2014_week1_depth_charts.json").write_bytes(
                 (ROOT / "library/data/2014_week1_depth_charts.json").read_bytes())
             shard = json.loads((target / "week_05.json").read_text())
-            shard["rows"][-1]["gate_date"] = "2014-10-02"
+            clock = date.fromisoformat(json.loads((target / "manifest.json").read_text())["as_of"])
+            shard["rows"][-1]["gate_date"] = (clock + timedelta(days=2)).isoformat()
             (target / "week_05.json").write_text(json.dumps(shard))
             manifest = json.loads((target / "manifest.json").read_text())
             manifest["shards"][0]["sha256"] = rails.sha256_file(target / "week_05.json")
             (target / "manifest.json").write_text(json.dumps(manifest))
             with mock.patch.object(rails, "data_dir", return_value=target):
-                errors = rails.data_errors(2014, date(2014, 9, 28), root)
+                errors = rails.data_errors(2014, clock, root)
             self.assertTrue(any("after the clock" in e for e in errors))
             shard["rows"][0]["source_pages"] = []
             (target / "week_05.json").write_text(json.dumps(shard))
             manifest["shards"][0]["sha256"] = rails.sha256_file(target / "week_05.json")
             (target / "manifest.json").write_text(json.dumps(manifest))
             with mock.patch.object(rails, "data_dir", return_value=target):
-                errors = rails.data_errors(2014, date(2014, 9, 28), root)
+                errors = rails.data_errors(2014, clock, root)
         self.assertTrue(any("no source-page hash" in e for e in errors))
 
     def test_stripped_rows_carry_no_identity_and_every_row_its_dates(self):
@@ -920,14 +952,18 @@ class CommittedDataTests(unittest.TestCase):
         # Week 5 two-point and kickoff rules and his recorded defensive-back
         # roles (Bouye nickel, Ball outside reserve) on a copy of the chart.
         from runtime import player_state
-        receipts = load_receipts(SeasonPaths(2014).receipts)
+        # The receipts before Week 5 (clock-relative: Week 5's own closed
+        # receipts carry its game injuries forward to Week 6).
+        receipts = [r for r in load_receipts(SeasonPaths(2014).receipts) if int(r["week"]) < 5]
         sheet = json.loads((SeasonPaths(2014).week_folder(4) / "call_sheet.json").read_text())["offensive_call_sheet"]
         stand_in = {"schema": player_state.BINDING_SCHEMA, "league_year": 2014,
                     "manifest_sha256": player_state.manifest_sha256(), "commitment": "0" * 64}
         decisions = {"two_point": {"otherwise": "league"}, "kickoff": {"otherwise": "league"}}
         chart_data = json.loads(SeasonPaths(2014).depth_chart.read_text(encoding="utf-8"))
-        chart_data["roles"].setdefault("A.J. Bouye", []).append("nickel")
-        chart_data["roles"].setdefault("Alan Ball", []).append("outside_reserve")
+        for player, role in (("A.J. Bouye", "nickel"), ("Alan Ball", "outside_reserve")):
+            roles = chart_data["roles"].setdefault(player, [])
+            if role not in roles:
+                roles.append(role)
         tmp = tempfile.TemporaryDirectory()
         self.addCleanup(tmp.cleanup)
         chart = Path(tmp.name) / "chart.json"
@@ -938,22 +974,39 @@ class CommittedDataTests(unittest.TestCase):
             def depth_chart(self):
                 return chart if self.year == 2014 else super().depth_chart
 
+        # Once Week 5 has closed, the current roster carries the game's own
+        # injuries forward, so Jacksonville's unit is the one that dressed (its
+        # closed full receipt, as observables.rebuild_record does); the test is
+        # about the background clubs' identity join.
+        from runtime import observables
+        own = [r for r in load_receipts(SeasonPaths(2014).receipts)
+               if int(r["week"]) == 5 and week_inputs.PROTAGONIST in (r["away"], r["home"])]
+        dressed = mock.patch.object(week_inputs, "jacksonville_input", return_value=dict(
+            observables._jacksonville_from_receipt(own[0], week_inputs.PROTAGONIST))) if own else mock.patch.object(
+            week_inputs, "PROTAGONIST", week_inputs.PROTAGONIST)
         with mock.patch.object(week_inputs, "SeasonPaths", Paths), \
-                mock.patch.object(player_state, "binding", return_value=stand_in):
+                mock.patch.object(player_state, "binding", return_value=stand_in), dressed:
             package = week_inputs.build_package(5, receipts, sheet, build_week_inputs.AVERAGE_ANCHORS, 2014,
                                                 decisions=decisions)
         self.assertEqual(len(package["strength_coverage"]), 30)
         for team, cov in package["strength_coverage"].items():
             self.assertFalse([f for f in cov["fallbacks"] if f["reason"].startswith("identity")], team)
-        self.assertEqual(check_inputs(package, set(), "Jacksonville Jaguars", expected_games=15), [])
-        self.assertEqual(package["rails"]["as_of"], "2014-09-28")
+        errors = check_inputs(package, set(), "Jacksonville Jaguars", expected_games=15)
+        if own:  # the receipt basis lists the 46 who dressed with no depth rank (observables.RECEIPT_BASIS)
+            errors = [e for e in errors if not (e.startswith("Jacksonville Jaguars:") and "explicit depth order" in e)]
+        self.assertEqual(errors, [])
+        self.assertEqual(package["rails"]["as_of"], rails.load(2014).manifest["as_of"])
         for game in package["games"]:
             for side in ("away_input", "home_input"):
                 self.assertTrue(all("gsis_id" not in p for p in game[side]["roster"]))
 
     def test_the_weekly_record_renders_and_no_page_is_written_early(self):
+        # Clock-relative (Week 5 closure, October 5, 2014): the page exists
+        # once the week has closed receipts, never before; check() holds
+        # either way.
         self.assertEqual(render_inseason_rails.check(2014), [])
-        self.assertFalse(render_inseason_rails.page_path(2014, 5).exists())
+        closed = any(int(r["week"]) == 5 for r in load_receipts(SeasonPaths(2014).receipts))
+        self.assertEqual(render_inseason_rails.page_path(2014, 5).exists(), closed)
         text = render_inseason_rails.render(2014, 5)
         self.assertIn("## Held additions", text)
         meta = json.loads(re.search(r"<!-- rails-week: (\{.*?\}) -->", text).group(1))
@@ -967,7 +1020,8 @@ class BuilderTests(unittest.TestCase):
         import sys
         from scripts.research import build_2014_inseason_rails as builder
         out = io.StringIO()
-        with mock.patch.object(sys, "argv", ["x", "/nonexistent", "--through", "2014-10-04"]), \
+        past = (player_bios.master_date(ROOT) + timedelta(days=1)).isoformat()
+        with mock.patch.object(sys, "argv", ["x", "/nonexistent", "--through", past]), \
                 contextlib.redirect_stdout(out):
             self.assertEqual(builder.main(), 1)
         self.assertIn("after the master date", out.getvalue())

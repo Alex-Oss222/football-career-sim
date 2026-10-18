@@ -23,7 +23,7 @@ The audit labels (S, STALE, DATA, F, Y, LINK) are the finding identifiers of the
 | `AGENTS.md`, 2014 E1/E2 section: kernel 2014.6 is installed (`runtime/__init__.py`) and accepted by `runtime/season_readiness.json` | Both files read 2014.6. The rule sentence "No 2014 game is authorized while ... remain BLOCKED", the readiness instruction and season routing are byte-unchanged | STALE-01, DATA-03, F12 |
 | `AGENTS.md`, 2014 film and training paragraph: the short paths are logical names under `career/2014/offseason`, with the physical folders named; two lowercase logical paths case-corrected to their files | The old base `career/2014/early_offseason` resolved to missing files; the new one resolves all seven through `runtime.season_layout`. No rule word changed | S08, STALE-14 |
 | [Game readiness](../state/game_readiness.md): every public 2014 gate VERIFIED on kernel 2014.6; the October 1 status kept as a dated earlier record | `runtime/season_readiness.json` gates; an offline `check_game_readiness.py --season 2014` reports only the private-runtime probe | STALE-03 |
-| [2014 checklist](../career/2014/Supporting_Records/readiness.md): the Engine, Tooling and League-inputs cells | `season_closure` and `legal_rosters` VERIFIED; kernel 2014.6 released October 17, 2026. The checkpoint line and per-week requirements were left for the Week 5 closure | STALE-04, Y15 |
+| [2014 checklist](../career/2014/Supporting_Records/readiness.md): the Tooling and League-inputs cells | `season_closure` and `legal_rosters` VERIFIED. The checkpoint line, the per-week requirements and the Engine cell were left for the Week 5 closure, which wrote them; the merge of `main` kept its Engine cell | STALE-04, Y15 |
 | [2012 injury calibration](../library/2012_nfl_injury_calibration.md) status line | `runtime/injury_model.py` reads it and the 2012 base pins it. Its JSON, sha256-pinned, was not edited | STALE-06 |
 | [2014 Week 1 library](../library/2014_week1_depth_charts.md) status token: in use from September 7, 2014 | Weeks 1 to 4 were built on it; the gate sentence its test reads is kept verbatim | STALE-09 |
 | Training camp, preseason and schedule READMEs | Camp report complete through August 29; the cut to 53 executed August 30; all gates VERIFIED and four weeks closed | STALE-10, STALE-11, STALE-12 |
@@ -66,7 +66,7 @@ The audit labels (S, STALE, DATA, F, Y, LINK) are the finding identifiers of the
 
 ## Deliberately left
 
-- `career/2014/05_Regular_Season/Games/Week_05/README.md` (its doubled period and its index of `Week_05_Pittsburgh.md`): the Run Week 5 branch owns the page.
+- `career/2014/05_Regular_Season/Games/Week_05/README.md` (its doubled period, since corrected by the Week 5 closure, and its index of `Week_05_Pittsburgh.md`): the Run Week 5 branch owns the page.
 - `state/05_Current_Season_State.md`: any byte change moves the snapshot digest (see STALE-05 below).
 - `foundation/`: the rulebook is reported, never edited, in a cleanup (STALE-22).
 - Closed records keep their wording: the 2013 migration records still name the retired helpers (indexed instead), and the sha256-pinned JSON files keep their out-of-date internal status strings (`2012_nfl_injury_calibration.json`, `2010_2014w4_nfl_injury_calibration.json`).
@@ -81,7 +81,7 @@ The audit labels (S, STALE, DATA, F, Y, LINK) are the finding identifiers of the
 |---|---|---|
 | S10 | `docs/pr_132_followup_review.md` is a finished September 29 review, but `docs/repository_map.json` still requires it | Approve moving it to `archive/` and updating or dropping its required-files entry |
 | S15, STALE-21 | `Supporting_Records/operating_baseline.md` reads "Current through July 29, 2014" with 78 controlled players and open defects, and it is cited as `legal_rosters` gate evidence | Relabel it as the July 29, 2014 baseline (no fact changes) and describe it that way in the Supporting Records README, rather than refreshing it |
-| STALE-05 | Document 5 still names kernel 2014.5, lists closed defect items 7 and 8 as open and calls the Week 1 library gated | Fold the corrections into the Run Week 5 closure, which replaces Document 5 anyway |
+| STALE-05 | Document 5 named kernel 2014.5, listed closed defect items 7 and 8 as open and called the Week 1 library gated. The Week 5 closure (October 18, 2026) now names kernel 2014.6 and records items 7 and 8 closed; its league-inputs bullet still calls the Week 1 library prepared and gated until September 7, 2014 | Fold that last correction into the next closure that replaces Document 5 |
 | STALE-19 | Two VERIFIED gate records in `runtime/season_readiness.json` keep "remaining" clauses that have since been met | Approve appending a dated status sentence to each, changing no status, kernel or base field |
 | STALE-20 | The release boundary and the runtime release record stop before recording step 7, the live `check_game_readiness.py --season 2014` from merged `main` | Once the live result is confirmed, append one dated line to each record |
 | STALE-22 | Document 7 section 8 still gives the August 8, 2013 clock and only the 2012 calibration | Decide whether to authorize a rulebook update for the 2014 season and the 2014.6 base |

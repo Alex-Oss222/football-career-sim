@@ -153,13 +153,19 @@ Full in every session of the San Diego week, the Monday walkthrough, the Wednesd
 
 Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above.
 
+### September 29 to October 4, 2014 | The X relief
+
+Full in every session of the Pittsburgh week. Stone kept Adams at X for Pittsburgh and made Nicks the fifth receiver and the X relief, not a starting promotion. The relief combination was rehearsed as the packet scripted it: the designated base-pass rep at X in relief of Adams in Wednesday's move-the-ball period with Thielen and Hawkins in their own jobs, the 11 Doubles Stick relief check on Thursday's third-down card and the Saturday recheck. It was released for the prepared 11 Doubles Drive HALF and Stick SCAT relief series only; Hurns keeps the established relief job everywhere else. Nothing charged to him on the recorded reps. Active for Week 5.
+
+Source: [Week 5 record](../../../05_Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 4 | 1 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — | 0 | 0 | — | 0 | 0 | — | 0 |
+| 2014 | Jacksonville | Through Week 5 | 2 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 

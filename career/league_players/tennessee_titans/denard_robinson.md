@@ -9,8 +9,8 @@
 | Season | Club | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Tennessee Titans | 16 | 0 | 0 | N/A | 0 | 0.0 | 5 | 49 | 2 | 5 | 0 |
-| 2014 | Tennessee Titans | 4 | 18 | 84 | 4.7 | 0 | 21.0 | 3 | 28 | 0 | 21 | 0 |
-| **Career** |  | 20 | 18 | 84 | 4.7 | 0 | 4.2 | 8 | 77 | 2 | 26 | 0 |
+| 2014 | Tennessee Titans | 5 | 28 | 138 | 4.9 | 0 | 27.6 | 6 | 44 | 0 | 34 | 0 |
+| **Career** |  | 21 | 28 | 138 | 4.9 | 0 | 6.6 | 11 | 93 | 2 | 39 | 0 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Tennessee Titans players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Tennessee Titans players](README.md).

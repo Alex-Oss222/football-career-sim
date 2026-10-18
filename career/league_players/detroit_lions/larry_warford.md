@@ -9,8 +9,8 @@
 | Season | Club | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Detroit Lions | 14 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Detroit Lions | 4 | 4 | 265 | 1 | 18 | 0 | 0 | 0 | 0 | 66.2 |
-| **Career** |  | 18 | N/A | N/A | 6 | N/A | 0 | 0 | 0 | 0 | N/A |
+| 2014 | Detroit Lions | 5 | 5 | 334 | 1 | 24 | 0 | 0 | 0 | 0 | 66.8 |
+| **Career** |  | 19 | N/A | N/A | 6 | N/A | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -20,4 +20,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).
