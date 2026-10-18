@@ -155,6 +155,12 @@ Thirty-two defensive snaps as the third linebacker with four tackles: the 6-yard
 
 Source: [Week 4 game record](../../../05_Regular_Season/Games/Week_04/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 29 to October 4, 2014 | The limit ended
+
+Reassessed Monday, September 29, the day his instruction named: no time lost was projected and nothing else was communicated, so the participation limit ended there and he took every session of the Pittsburgh week in full. His package and kicking-game jobs for Pittsburgh stand, which keeps him on the planned 46 under the packet's condition. Nothing charged to him on the recorded reps.
+
+Source: [Week 5 record](../../../05_Regular_Season/Games/Week_05/output.md) and the [medical history](../../Medical/medical_history.md#september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

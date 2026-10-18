@@ -107,6 +107,14 @@ A small, fast receiver and returner (5-8, 167) from Abilene Christian with run-a
 
 No NFL season. The college record is described qualitatively above; no college statistic is entered as an NFL figure.
 
+## Dated coaching updates
+
+### October 4, 2014 | Sixth receiver
+
+Sixth in Stone's Pittsburgh receiver order, behind Nicks, and inactive for Week 5 on the packet's selected plan, as in the first four weeks. No football finding attaches to the decision.
+
+Source: [Week 5 record](../../../05_Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

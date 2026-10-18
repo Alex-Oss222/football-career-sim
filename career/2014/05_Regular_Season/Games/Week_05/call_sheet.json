@@ -1,0 +1,1147 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "event": "2014 regular season Week 5, Pittsburgh at Jacksonville, October 5, 2014",
+ "status": "EX_ANTE_CALL_SHEET_FROZEN",
+ "frozen": "2014-10-04, after the Saturday walkthrough of the thirty opening numbers with its short-yardage, backed-up and sudden-change interruptions, the substitutions, sideline signals and emergency calls, the Kelce and Nicks rechecks, the final medical and 46 check and Stone's freeze checklist; before any draw",
+ "provenance": "Stone's Week 5 packet of September 28, 2014 (career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md: the direction, the personnel and staff decisions, the Pittsburgh questions, the practice week and scripted periods, the thirty-call opening menu, the situational offense, the special-play cards, the sixteen defensive responses and the game operation and freeze), issued by Stone and applied September 29 to October 4. Every call below is a Week 4 frozen call from the active 2013 offensive book (Iteration I), carried as the packet names it. The packet numbers 30 opening calls: 18 distinct calls with the packet's numbering in 'opener' and twelve returns to a picture already shown in 'opener_returns', position 26 now the return to 12 SHIFT Empty Stick in place of last week's vacant number. The Trey TE Delay, Spacing from Doubles (two-minute and PRESS only) and Snag (low red zone and two-point only) complete 21 distinct calls; 12 Trey Y-Cross HALF is not carried and the Throwback Screen Left is on no folder (notes). The K and N player combinations were released on the week's unprompted checks (career/2014/05_Regular_Season/Games/Week_05/output.md, section 1). The label stream reads each call's menus, opener position and returns (kernel 2014.5); the returns, conditions, triggers, gates and alerts remain in-game coaching guidance the kernel does not condition on, and none of these fields enters the outcome packet. decisions carries Stone's standing two-point and onside rules verbatim; fourth downs are his live calls. defensive_call_sheet transcribes the sixteen defensive responses as a record only.",
+ "menus": {
+  "opening_sequence": "Stone's order as the packet numbers it: 12 Ace Power Right (1); 12 SHIFT Empty Stick (2); 12 Trey Y-Cross SOLID (3, C/K); 11 Bunch Mesh HALF (4, C/K); 12 Wing Outside Zone Left (5, the backside edge and pursuit recorded before 6); 12 Wing Boot Flood Right (6, only after a confirmed backside chase); the returns to 1 (7) and 2 (8); 12 Ace Counter Right (9); 11 Doubles Drive HALF (10, C/N); the return to 3 (11); 11 Doubles Stick SCAT (12, C/K/N); 11 Doubles RB Slow Screen (13, only against a credible rush); 12 Ace Power Left (14); the return to 4 (15); 12 Ace Flea Flicker MAX (16, only after the actual safety response supports the shot); 12 Wing TE Delay (17, only against a credible rush and a viable release lane); 11 SHIFT Empty Spacing SCAT (18); 11 Doubles Inside Zone Right (19, favorable structure only); the returns to 5 (20), 6 (21) and 3 (22); 11 Trips Inside Zone + Bubble (23, the taught count only); 12 Ace Power Pass / Post-Cross MAX (24, on its trigger); the returns to 9 (25) and 2 (26, the complete call that replaces last week's vacant number); 11 Trey Dagger HALF (27, eligible downs and clean protection only); the returns to 1 (28), 4 (29) and 3 (30). Eighteen distinct calls and twelve planned returns. A numbered opener is an eligible option, not a command to ignore down, distance, field position or coverage: Tice skips an ineligible item and retains it for a later suitable situation, and backed-up, third and fourth down, scoring and clock situations take precedence. Call control, unchanged from Week 4 with Stone calling both sides: Tice tracks the next eligible opener number and the situation folder and is the single offensive situation and opener relay; Bates supplies quarterback and protection information without issuing a competing call; Crennel prepares and transmits the defensive call; Skalaski brings the next clock, fourth-down and challenge decision early; Westhoff supplies the kicking information; Stone makes every call and every decision. If radio communication fails, the existing practiced sideline procedure and reduced menu apply.",
+  "normal_down": "first-and-10: Power, Counter, Outside Zone, Stick, the SOLID Y-Cross and Mesh according to the front, with the Dagger eligible behind clean protection; second-and-1-to-3: the lead-back run, the conditional Power Pass, and the Flea Flicker only when its setup is present; second-and-4-to-6: the Dagger's eligible window with the same normal-down calls; Jones-Drew is the back unless an identified relief call sends Anderson; tight-end receiving emphasis without a target quota, coverage deciding the throw",
+  "second_and_long": "the SOLID Y-Cross, Mesh HALF, Drive HALF, the RB Slow Screen, or Lewis's TE Delay from Wing or Trey; protection set first; the screen and the delay only with their rush reason",
+  "third_down": "third-and-1-2: Power, Counter, Mesh or the taught Inside Zone + Bubble count, no Dagger, the quick alternative only if it actually gains the needed yardage; third-and-3-5: Stick SCAT, Mesh HALF and Drive HALF, the immediate throw identified against the extra rusher and the sticks located; third-and-6-9: the SOLID Y-Cross, Drive HALF, the protected Dagger only with its gate satisfied, or the Slow Screen against the appropriate rush, no extra receiver released by leaving a rusher unaccounted; third-and-10-or-more: the same protected intermediate menu, with route depth and catch-and-run opportunity fitted to the distance",
+  "backed_up": "Power, Inside Zone, Outside Zone and Stick SCAT with a known pressure answer; no flea flicker, no throwback and no slow shot",
+  "fourth_down": "Stone's live call: the matching distance folder, and Stone makes the go, kick or punt decision from the score, the field, the clock, the timeouts and the current execution, with Skalaski's relay of the decision point; no automatic rule is added and the sheet carries no fourth-down block",
+  "red_zone": "high red zone (20-11): Power, the SOLID Y-Cross, Mesh, the gated Boot Flood Right and Lewis's TE Delay when the rush creates it; low red zone (10-5): Bunch Mesh, Snag (here and in the two-point folder only), Power, Counter and the boot when its edge rule is satisfied; goal line (4-in): Power Right, Power Left and Counter Right, with no untaught gadget",
+  "two_point": "the carried folder: 12 Ace Power Right, 12 Ace Counter Right, 11 Bunch Mesh HALF, 11 Bunch Snag, 12 Wing Boot Flood Right and 12 SHIFT Empty Stick, chosen from the actual leverage and the prepared card; whether to try for two is Stone's standing rule in decisions.two_point (kick, except go for two in the fourth quarter when the touchdown leaves Jacksonville down 2, up 1 or down 5)",
+  "two_minute": "Stick SCAT, Spacing SCAT (from Doubles or the shift to Empty), Drive HALF, Mesh HALF and the rush-qualified Slow Screen; the practiced PRESS sequence only, and HOLD does not mean hurry-up; the clock and the timeouts decide when an inbounds throw is acceptable",
+  "PRESS_sequence": "the practiced sequence by signal and word, no unpracticed PRESS check: 11 Doubles Stick SCAT, 11 Doubles Spacing SCAT, 11 SHIFT Empty Spacing SCAT, 11 Bunch Mesh HALF, 11 Doubles Drive HALF and the slow screen",
+  "four_minute": "Jones-Drew's Power, Counter and Outside Zone, with the SOLID Y-Cross and the gated Boot Flood Right available against a loaded run front; the first down is sought while respecting the cost of a stopped clock and a sack",
+  "sudden_change": "a sound base call first (Power, Counter, or the Wing Outside Zone and Boot Flood Right pair, carried from the Week 4 folder) unless the game has already supplied the setup for the protected shot; a turnover itself does not make the Flea Flicker favorable",
+  "final_play_of_half": "the prepared MAX Power Pass only when the field and clock justify a scoring attempt; otherwise the appropriate clock or kicking decision, with no invented fixed field-goal range",
+  "empty_rule": "the shift toward Empty from twelve personnel and the shift to Empty from eleven personnel, both practiced; the static Empty is off (not taught)",
+  "receiver_arrangement": "Adams the starting X, Thielen the starting H and movable receiver, Hawkins the starting Z and the primary kickoff and punt returner, from the season game depth chart; Hurns the first general receiver relief and the second punt returner; Nicks the fifth receiver and X relief only, on prepared 11 Doubles Drive HALF and Stick SCAT relief series while Adams rests, released after the W6 rep, the T4 check and the Saturday recheck, not a starting promotion and with no other receiver's job; Gabriel inactive. Lewis the established Y and the TE Delay receiver; Kelce TE2 with the rehearsed receiving-Y jobs on the Trey Y-Cross, the Bunch Mesh and the Doubles Stick and his place in the Wing Boot distribution, Lewis the complementary job in twelve personnel; Jensen TE3; Hoskins inactive. Jones-Drew RB1 and the normal-down lead back with no touch quota; Anderson RB2 for an identified relief series, protection need or prepared package, entering with the full calls he has practiced; Grimes inactive; the Flea Flicker exchange is Jones-Drew's"
+ },
+ "notes": [
+  "Week 5 packet (Stone, September 28, 2014), section 4: every base call name comes from Week 4's frozen sheet and the active 2013 offensive book (Iteration I); the changed order and the named K (Kelce receiving Y) and N (Nicks X relief) combinations are this week's preparation choices, each released only after its unprompted check. The Throwback Screen Left was walked and repped Thursday (T6) as future teaching work from its eleven-player job card and is excluded from every Week 5 callable folder by the packet whatever the reps showed; it has no opening number and no menu here. The Halfback Pass and the WR Pass stay off (no player has demonstrated the throw), and Boot Flood Left, the Choice tag, Y-Iso, the dropback Sail, the Alert Post tag, Texas/Angle, Split Leak, the static Empty, six-lineman football, Trap and Wham are not added. 12 Trey Y-Cross HALF, frozen in Week 4 at opener 12, is not carried: no line of the Week 5 packet names it (its line 48 states the HALF protection rule for the HALF calls the packet does name), and 11 Trey Stick stays off as in Week 4.",
+  "The K and N combinations are player jobs within calls already on the sheet, not new calls: the label stream credits a target by position group, never by name, so the frozen calls are unchanged by them. Kelce's receiving-Y jobs on 12 Trey Y-Cross SOLID (W2) and 11 Bunch Mesh HALF (W3) and his place in the Wing Boot distribution (W4) were rehearsed in Wednesday's periods, and those three jobs and his 11 Doubles Stick SCAT receiving-Y variant were rechecked without the prompt Thursday and in the Saturday walkthrough; Nicks's X relief on 11 Doubles Drive HALF and Stick SCAT in W6, T4 and the Saturday walkthrough. Adams is the starting X; Nicks is not promoted and takes no unprepared package.",
+  "The Flea Flicker is not in the 2013 call-family map, so it carries an explicit target, the receivers and tight end in MAX's route in twelve personnel (book section 8); it is typed pass, the handoff and return to Cousins being a fake. Its trigger (the actual safety response on the Power presentations), the Power Pass setup, the Boot Flood Right edge rule, the Dagger gate, the screen's and the delay's rush reasons and the planned returns are coaching guidance the kernel does not condition on. The menus and opener positions are read by the label stream only (kernel 2014.5) and never enter the outcome packet; a fourth-down snap takes the third-down menu of its distance (runtime.call_situations). The opener calls that declare no normal-down menu (the Boot Flood Right, Drive HALF, the Slow Screen, the Flea Flicker, the Wing TE Delay, the Empty Spacing, the Doubles Inside Zone and the access) declare the opening sequence so that label names a menu each carries; the label stream sends an opener position only on a normal-down snap and does not read a trigger. The Flea Flicker's eligibility on second-and-1-to-3 after its trigger is coaching guidance and not a menu, as in Week 4.",
+  "Kernel 2014.6 reads the decisions block: decisions.two_point is Stone's standing two-point rule and decisions.kickoff his onside rule, both verbatim. There is no fourth_down block: each Jacksonville fourth down pauses the game for Stone's live go, field-goal or punt call with Skalaski's information and Tice's prepared call, and the answer is recorded with the game.",
+  "Formation modifiers, direction, motion and protection are descriptive fields the kernel freezes in the canonical sheet for audit. Distinct directions of the same family from the same picture (Power Right and Left from Ace) are distinct calls on the packet and are frozen as such. Protection: SCAT the existing quick-game protection and answer, HALF the existing half-slide with the back's scan and a clean count, SOLID the back committed in the six-man protection and the first intermediate protection, MAX the existing shot protection with limited receivers (packet section 4).",
+  "Defensive sheet (Stone calls the defense, continuing the arrangement begun at San Diego; Crennel prepares the defense, gives Stone the situation and protection information and transmits his call; Daryl Smith makes the front declaration): the sixteen Pittsburgh responses of packet section 5 are transcribed row by row in defensive_call_sheet, a record only that changes no play. Quarters and 6 by the active match rules as the weekly coverage emphasis, 6 playing quarters toward the declared passing strength and the half-field rule opposite; Nickel by default on second-and-long while the run remains credible and Dime against true pass pictures; the base four primary with Replace Field and Replace Boundary as conditional change-ups and the interior mug a presentation that still rushes four; Nickel Fire 3 the installed five-man counter only after its protection opportunity; Cover 1 Robber on third-and-3-to-5 and in the red zone; Cover 3 Match the practiced emergency simplification. Not on the sheet: the eight-up presentation (neither active book). Force, cutback and the plus-one fitter are the first gate on every call against Bell and Blount.",
+  "Special-teams sheet (Westhoff; sideline guidance the kernel does not read): Kreiter, Anger and Scobee; Hawkins returns kicks and punts with Hurns the prepared punt-return alternative; Todd Davis in the active coverage rotation and Hoskins removed from the projected units; Phillips's and Stanford's kicking jobs reconciled after their September 29 medical decisions; Friday's F5 period covered kickoff placement and lanes, punt vice and protection, the backed-up punt, field goal and PAT, fair-catch and return decisions, hands and onside; Archer's fifteen kickoff returns for 334 yards in four games inform placement and lane integrity, and the actual Pittsburgh punt returner is confirmed on game day; no special-teams fake; range decisions from Scobee's warmup, the conditions, field position and score. The kernel reads the roles field of the game depth chart (Scobee, Anger, Hawkins) and places Kreiter as the snapper.",
+  "The seven inactives (Poyer on his independent medical hold; Butler by Stone's decision after his October 2 release; Grimes, Linsley, Edebali, Gabriel and Hoskins, Stone's selected list, whose medical assumption held when Posluszny, Stanford and Phillips cleared) were set at the October 4 freeze; they are carried in game_depth_chart.json, not here. Todd Davis dresses. Bouye is the nickel, Ball the outside reserve and Prosinski the sixth defensive back; Posluszny, cleared October 3, is back in his base role."
+ ],
+ "offensive_call_sheet": [
+  {
+   "name": "12 Ace, Power Right",
+   "family": "Power",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "tags": [
+    "opener",
+    "two-point folder"
+   ],
+   "opener": 1,
+   "opener_returns": [
+    7,
+    28
+   ],
+   "menus": [
+    "normal down",
+    "third-and-short",
+    "backed up",
+    "high red zone",
+    "low red zone",
+    "goal line",
+    "two-point",
+    "four minute",
+    "sudden change"
+   ],
+   "what_stone_is_looking_at": "Opener 1 and the returns at 7 and 28: Jones-Drew's lead track; the front and the safety fit, with the prepared access or quick answer if the count defeats the run; the return at 7 asks whether the first safety response repeats without inferring a tendency from one snap, the return at 28 goes back to the lead-back run if the fit remains favorable"
+  },
+  {
+   "name": "12 SHIFT Empty, Stick",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Empty (after shift)",
+   "motion": "SHIFT toward Empty",
+   "tags": [
+    "opener",
+    "shift",
+    "tight ends",
+    "two-point folder"
+   ],
+   "opener": 2,
+   "opener_returns": [
+    8,
+    26
+   ],
+   "menus": [
+    "normal down",
+    "two-point"
+   ],
+   "what_stone_is_looking_at": "Opener 2 and the returns at 8 and 26: Lewis in the established receiving Y job and Kelce in the second-tight-end distribution; the apex and the taught out or sit answer; skipped if the shift or the pressure answer is unresolved; the return at 8 rechecks who handles both tight ends after the defense has seen the run, and 26 is the complete call that replaces last week's vacant number"
+  },
+  {
+   "name": "12 Trey, Y-Cross, SOLID",
+   "family": "Y-Cross",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey",
+   "protection": "SOLID",
+   "tags": [
+    "opener",
+    "tight ends",
+    "Kelce receiving Y"
+   ],
+   "opener": 3,
+   "opener_returns": [
+    11,
+    22,
+    30
+   ],
+   "menus": [
+    "normal down",
+    "2nd-and-long",
+    "third-and-long",
+    "high red zone",
+    "four minute"
+   ],
+   "what_stone_is_looking_at": "Opener 3 and the returns at 11, 22 and 30 (C/K): Kelce in the primary crossing job and Lewis in the complementary assignment, released on Wednesday's W2 reps, the Thursday unprompted recheck and the Saturday walkthrough; the cross read against linebacker and safety leverage after protection is settled; coverage still decides the throw; the established Lewis combination if the K job is not available; the first intermediate protection; in the four-minute folder against a loaded run front"
+  },
+  {
+   "name": "11 Bunch, Mesh, HALF",
+   "family": "Mesh",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right",
+   "protection": "HALF",
+   "tags": [
+    "opener",
+    "Kelce receiving Y",
+    "two-point folder"
+   ],
+   "opener": 4,
+   "opener_returns": [
+    15,
+    29
+   ],
+   "menus": [
+    "normal down",
+    "2nd-and-long",
+    "third-and-short",
+    "third-and-medium",
+    "high red zone",
+    "low red zone",
+    "two-point",
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "Opener 4 and the returns at 15 and 29 (C/K): Kelce in the Y job, released on Wednesday's W3 reps and the later rechecks; the crossers against man and the taught sit or window against zone, legal spacing kept; the established Lewis combination is the fallback; no forced tight-end throw"
+  },
+  {
+   "name": "12 Wing, Outside Zone Left",
+   "family": "Outside Zone",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Left",
+   "tags": [
+    "opener"
+   ],
+   "opener": 5,
+   "opener_returns": [
+    20
+   ],
+   "menus": [
+    "normal down",
+    "backed up",
+    "four minute",
+    "sudden change"
+   ],
+   "what_stone_is_looking_at": "Opener 5 and the return at 20: Jones-Drew presses the taught track; the backside edge and pursuit recorded before 6 is considered, and rechecked at 20 for the next boot opportunity"
+  },
+  {
+   "name": "12 Wing, Boot Flood Right",
+   "family": "Boot Flood",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Wing Left",
+   "tags": [
+    "opener",
+    "movement pass",
+    "tight ends",
+    "two-point folder"
+   ],
+   "opener": 6,
+   "opener_returns": [
+    21
+   ],
+   "menus": [
+    "opening sequence",
+    "high red zone",
+    "low red zone",
+    "two-point",
+    "four minute",
+    "sudden change"
+   ],
+   "what_stone_is_looking_at": "Opener 6 and the return at 21 (C/T): the tight ends' intermediate and flat distribution under the existing edge rule, Kelce's place in it rehearsed in Wednesday's W4 pairs; sent only after a confirmed backside chase and read high to low; skipped if the edge stays home, and a previous chase is not permanent permission; gated in the four-minute and high-red-zone folders"
+  },
+  {
+   "name": "12 Ace, Counter Right",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "tags": [
+    "opener",
+    "two-point folder"
+   ],
+   "opener": 9,
+   "opener_returns": [
+    25
+   ],
+   "menus": [
+    "normal down",
+    "third-and-short",
+    "low red zone",
+    "goal line",
+    "two-point",
+    "four minute",
+    "sudden change"
+   ],
+   "what_stone_is_looking_at": "Opener 9 and the return at 25: Jones-Drew; the kick or log read and the pull path, testing the defense's response to the initial action; the return attacks a demonstrated flow response with the same blocking rules"
+  },
+  {
+   "name": "11 Doubles, Drive, HALF",
+   "family": "Drive",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "protection": "HALF",
+   "tags": [
+    "opener",
+    "Nicks X relief"
+   ],
+   "opener": 10,
+   "menus": [
+    "opening sequence",
+    "2nd-and-long",
+    "third-and-medium",
+    "third-and-long",
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "Opener 10 (C/N): the shallow and dig against underneath leverage; Adams is the normal X; Nicks may take X on a prepared relief series, released after the W6 designated rep, the T4 check and the Saturday recheck, with Thielen at H and Hawkins at Z unchanged; shortened if protection cannot support the intermediate route"
+  },
+  {
+   "name": "11 Doubles, Stick, SCAT",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "protection": "SCAT",
+   "tags": [
+    "opener",
+    "pressure answer",
+    "Kelce receiving Y",
+    "Nicks X relief"
+   ],
+   "opener": 12,
+   "menus": [
+    "normal down",
+    "third-and-medium",
+    "backed up",
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "Opener 12 (C/K/N): the extra rusher identified and the immediate answer; Kelce's receiving-Y variant and Nicks's X-relief variant each passed its own unprompted check (Kelce's on the Thursday recheck and in the Saturday walkthrough, Nicks's in T4's designated relief check and the Saturday walkthrough); the established Adams X and Y assignments remain callable; on the backed-up menu only with a known pressure answer"
+  },
+  {
+   "name": "11 Doubles, RB Slow Screen",
+   "family": "RB Slow Screen",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "tags": [
+    "opener",
+    "screen",
+    "pressure answer"
+   ],
+   "opener": 13,
+   "menus": [
+    "opening sequence",
+    "2nd-and-long",
+    "third-and-long",
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "Opener 13 (C/T): Jones-Drew, or the separately prepared Anderson version; used only against a credible rush, never because it is next on the list; the current screen answer while the throwback stays off"
+  },
+  {
+   "name": "12 Ace, Power Left",
+   "family": "Power",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "tags": [
+    "opener"
+   ],
+   "opener": 14,
+   "menus": [
+    "normal down",
+    "third-and-short",
+    "backed up",
+    "high red zone",
+    "low red zone",
+    "goal line",
+    "four minute",
+    "sudden change"
+   ],
+   "what_stone_is_looking_at": "Opener 14: the front's strength adjustment and Jones-Drew's track compared with 1"
+  },
+  {
+   "name": "12 Ace, Flea Flicker, MAX",
+   "family": "Flea Flicker",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "protection": "MAX",
+   "target": [
+    "WR",
+    "TE"
+   ],
+   "tags": [
+    "opener",
+    "special play",
+    "shot",
+    "Week 4 install"
+   ],
+   "opener": 16,
+   "menus": [
+    "opening sequence",
+    "sudden change"
+   ],
+   "what_stone_is_looking_at": "Opener 16, second-and-1-to-3 and the sudden-change folder (C/T), a shot with setup: the 12 Ace Power action, Jones-Drew's handoff and return to Cousins behind MAX and the vertical throw, retained on Thursday's T5 reps; called only after Pittsburgh's actual safety response on the Power presentations supports it, with the coached covered-shot exit; Jones-Drew's exchange only; never backed up or in the low red zone; no trigger means no call"
+  },
+  {
+   "name": "12 Wing, TE Delay",
+   "family": "TE Delay",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Wing",
+   "tags": [
+    "opener",
+    "screen",
+    "tight ends",
+    "Week 4 install"
+   ],
+   "opener": 17,
+   "menus": [
+    "opening sequence",
+    "2nd-and-long",
+    "high red zone"
+   ],
+   "what_stone_is_looking_at": "Opener 17 (C/T): Lewis shows protection and releases on the practiced timing, retained on Thursday's T7 reps; only against a credible rush and a viable release lane; the SOLID Y-Cross if the rush will not create the window; never backed up"
+  },
+  {
+   "name": "11 SHIFT Empty, Spacing, SCAT",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Empty (after shift)",
+   "motion": "SHIFT to Empty (back-to-empty)",
+   "protection": "SCAT",
+   "tags": [
+    "opener",
+    "shift"
+   ],
+   "opener": 18,
+   "menus": [
+    "opening sequence",
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "Opener 18: the back-to-empty communication and the underneath distribution; skipped if the formation or the pressure answer is not clean; in the two-minute menu"
+  },
+  {
+   "name": "11 Doubles, Inside Zone Right",
+   "family": "Inside Zone",
+   "type": "run",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "tags": [
+    "opener"
+   ],
+   "opener": 19,
+   "menus": [
+    "opening sequence",
+    "backed up"
+   ],
+   "what_stone_is_looking_at": "Opener 19: Jones-Drew against a favorable structure; no automatic run into an unblocked defender created by a bad count; on the backed-up menu"
+  },
+  {
+   "name": "11 Trips, Inside Zone + Bubble",
+   "family": "Inside + Bubble",
+   "type": "mixed",
+   "personnel": "11",
+   "formation": "11 Trips Right",
+   "tags": [
+    "opener",
+    "access package"
+   ],
+   "opener": 23,
+   "menus": [
+    "opening sequence",
+    "third-and-short"
+   ],
+   "what_stone_is_looking_at": "Opener 23: the taught box and overhang count; the access is a defined answer, not an improvised extra read; on the third-and-1-to-2 card"
+  },
+  {
+   "name": "12 Ace, Power Pass / Post-Cross, MAX",
+   "family": "Power Pass",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "protection": "MAX",
+   "tags": [
+    "opener",
+    "conditional",
+    "shot"
+   ],
+   "opener": 24,
+   "menus": [
+    "normal down",
+    "final play of half"
+   ],
+   "what_stone_is_looking_at": "Opener 24 (C/T): the established route card and the safety and protection trigger; a closed shot goes to its taught exit, with no consecutive shot to recover a missed opportunity; on second-and-1-to-3 only when its setup is present, and the final play of a half only when the field and clock justify a scoring attempt"
+  },
+  {
+   "name": "11 Trey, Dagger, HALF",
+   "family": "Dagger",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Trey Right",
+   "protection": "HALF",
+   "tags": [
+    "opener",
+    "protection gate"
+   ],
+   "opener": 27,
+   "menus": [
+    "normal down",
+    "third-and-long"
+   ],
+   "what_stone_is_looking_at": "Opener 27 (C/T): eligible on first-and-10, second-and-4-to-6 or third-and-6-plus with clean protection; off the short-yardage card; the clear-out and dig and the underneath answer"
+  },
+  {
+   "name": "12 Trey, TE Delay",
+   "family": "TE Delay",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey",
+   "tags": [
+    "screen",
+    "tight ends",
+    "Week 4 install"
+   ],
+   "menus": [
+    "2nd-and-long",
+    "high red zone"
+   ],
+   "what_stone_is_looking_at": "Lewis's delay from the Trey protection picture (special card C), retained on Thursday's T7 reps; second-and-7-or-more and the high red zone only, with a rush reason; no opener position"
+  },
+  {
+   "name": "11 Doubles, Spacing, SCAT",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "protection": "SCAT",
+   "tags": [
+    "two-minute"
+   ],
+   "menus": [
+    "two-minute",
+    "PRESS sequence"
+   ],
+   "what_stone_is_looking_at": "Two-minute and the practiced PRESS sequence only: Spacing SCAT from Doubles, rehearsed in Friday's F2 period"
+  },
+  {
+   "name": "11 Bunch, Snag",
+   "family": "Snag",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right",
+   "tags": [
+    "red zone",
+    "two-point folder"
+   ],
+   "menus": [
+    "low red zone",
+    "two-point"
+   ],
+   "what_stone_is_looking_at": "The low red zone and the two-point folder only, not a general field call; Tice confirms the field zone before the call leaves the sideline"
+  }
+ ],
+ "decisions": {
+  "two_point": {
+   "id": "stone-two-point-rule-2014-week5",
+   "source": "Stone's standing two-point rule (user, October 17, 2026, answer \"Option 2 (Recommended)\"): kick, except go for two in the fourth quarter when the touchdown leaves Jacksonville down 2, up 1 or down 5.",
+   "rules": [
+    {
+     "id": "go-q4-down2-up1-down5",
+     "when": {
+      "period": [
+       4
+      ],
+      "diff_after_td": [
+       -5,
+       -2,
+       1
+      ]
+     },
+     "decision": "go"
+    }
+   ],
+   "otherwise": "kick"
+  },
+  "kickoff": {
+   "id": "stone-kickoff-rule-2014-week5",
+   "source": "Stone's standing kickoff rule (user, October 16, 2026): \"League practice (recommended). Onside when trailing by 1 to 16 with 2:00 or less left. Onside when trailing by 9 to 16 with 5:00 or less left. Deep otherwise.\"",
+   "rules": [
+    {
+     "id": "onside-trail-1-16-inside-2:00",
+     "when": {
+      "period": [
+       4
+      ],
+      "diff_after_score": {
+       "min": -16,
+       "max": -1
+      },
+      "game_seconds_max": 120
+     },
+     "decision": "onside"
+    },
+    {
+     "id": "onside-trail-9-16-inside-5:00",
+     "when": {
+      "period": [
+       4
+      ],
+      "diff_after_score": {
+       "min": -16,
+       "max": -9
+      },
+      "game_seconds_max": 300
+     },
+     "decision": "onside"
+    }
+   ],
+   "otherwise": "deep"
+  }
+ },
+ "defensive_call_sheet": {
+  "schema_version": 1,
+  "team": "Jacksonville Jaguars",
+  "caller": "Alex Stone",
+  "book": "career/playbook/alex_stone_2013_defensive_playbook_iteration_i.md",
+  "packet": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+  "notes": [
+   "Frozen October 4, 2014 with the offensive sheet, after Thursday's T1 to T3 and T8 periods, Friday's F4 closeout and the Saturday walkthrough of the four-rush, seven-coverer maps; transcribed from the sixteen responses of Stone's Week 5 packet (section 5) with each row's packet line verbatim. Records only: no row changes any play, and a row is the sheet's words for a situation, not the call on every snap of it.",
+   "Labelling rows exist only where a response names a down-and-distance, zone or clock trigger: second-and-long (09, Nickel while the run remains credible), third-and-3-to-5 (10), third-and-6-plus (11), the red zone (14) and two-minute and late lead (15). The packet gives no response for normal downs, third-and-1-to-2 or backed up, so those snaps carry no row. The record's own conventions, not Stone's: a fourth-down snap takes the third-down menu of its distance, a goal-line snap and a two-point try fall through to the red-zone row, late lead applies the second half's last 2:00 with the defense leading (LEAD_LATE_CONVENTION), and 15's 'four rush' is recorded as the base four with Replace a conditional row, as the response's last sentence makes replacement pressure conditional.",
+   "Responses 01 to 05 (Dime personnel, the base four, Replace Field, Replace Boundary and the interior mug) are conditional rows: they name the Dime group and its pressure and never label. The personnel the responses name (Talib and Verner outside, Bouye the nickel, Rambo and Trawick the safeties, Prosinski the sixth defensive back, Daryl Smith the linebacker, Mincey, Marks, Miller and Branch the four) are in the game depth chart, not here. Response 13 (bunch, stack and motion exchange rules) names no front or coverage and is a presentation row without a call.",
+   "Cover 1 Robber is the change-up carried from the Week 3 and Week 4 sheets (three Nickel Even snaps September 25, the Week 4 packet's man-leverage keep criterion unassessed on that record) and Nickel Fire 3 is carried from its September 25 install; no Week 5 period rehearsed either. Cover 3 Match is the practiced emergency simplification (response 16), not the normal answer. The rush rule is the one the Week 4 sheet carried; the Week 5 packet restates it in response 10."
+  ],
+  "rush_rule": {
+   "rule": "four unless Stone calls the five-man counter",
+   "source": {
+    "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+    "line": 266,
+    "text": "The fifth rusher means six in coverage, not seven; no automatic Fire 3."
+   }
+  },
+  "practiced": {
+   "packages": [
+    "Nickel",
+    "Dime"
+   ],
+   "fronts": [
+    "Under",
+    "Nickel Even"
+   ],
+   "coverages": [
+    "Quarters",
+    "6",
+    "1 Robber",
+    "Fire 3",
+    "3 Match"
+   ],
+   "pressures": [
+    "base-4",
+    "replace",
+    "fire-zone"
+   ],
+   "tags": [
+    "field",
+    "boundary",
+    "mug"
+   ],
+   "sources": [
+    {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 128,
+     "text": "Nickel Even Quarters and Nickel Even 6"
+    },
+    {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 136,
+     "text": "Under Y Quarters and Nickel Even Quarters"
+    },
+    {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 140,
+     "text": "Dime Quarters with base four and Replace Field"
+    },
+    {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 141,
+     "text": "Dime 6 and Replace Boundary"
+    },
+    {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 142,
+     "text": "Dime Quarters with the installed interior-mug presentation, showing up to seven."
+    },
+    {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 147,
+     "text": "current eligible personnel, Quarters or 6."
+    },
+    {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 153,
+     "text": "Nickel or Dime Quarters/6 with base four or a qualified Replace call."
+    },
+    {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 266,
+     "text": "10. THIRD-AND-3 TO 5: NICKEL QUARTERS OR COVER 1 ROBBER."
+    },
+    {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 266,
+     "text": "Nickel Fire 3 is the installed real five-man counter"
+    },
+    {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 278,
+     "text": "Cover 3 Match remains the practiced emergency simplification if the match exchange fails."
+    }
+   ]
+  },
+  "rows": [
+   {
+    "id": "2nd-long",
+    "kind": "situation",
+    "menu": "second-and-long",
+    "call": {
+     "package": "Nickel"
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 264,
+     "text": "09. SECOND-AND-LONG: NICKEL WHEN THE RUN REMAINS CREDIBLE."
+    }
+   },
+   {
+    "id": "3rd-3-5",
+    "kind": "situation",
+    "menu": "third-and-medium",
+    "call": {
+     "package": "Nickel",
+     "coverage": [
+      "Quarters",
+      "1 Robber"
+     ],
+     "pressure": "base-4"
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 266,
+     "text": "10. THIRD-AND-3 TO 5: NICKEL QUARTERS OR COVER 1 ROBBER. Choose from release leverage, Bell's location and the sticks. Use the base four or a qualified four-man Replace."
+    }
+   },
+   {
+    "id": "3rd-6-plus",
+    "kind": "situation",
+    "menu": "third-and-long",
+    "call": {
+     "package": "Dime",
+     "coverage": [
+      "Quarters",
+      "6"
+     ],
+     "pressure": "base-4"
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 268,
+     "text": "11. THIRD-AND-6-PLUS: DIME QUARTERS OR COVER 6. Show the common threat picture, use the base four first"
+    }
+   },
+   {
+    "id": "red-zone",
+    "kind": "situation",
+    "menu": "red-zone",
+    "call": {
+     "coverage": [
+      "Quarters",
+      "1 Robber"
+     ]
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 274,
+     "text": "14. RED ZONE: QUARTERS OR COVER 1 ROBBER, MINIMUM DISGUISE."
+    }
+   },
+   {
+    "id": "late-lead",
+    "kind": "situation",
+    "menu": "lead-late",
+    "call": {
+     "coverage": [
+      "Quarters",
+      "6"
+     ],
+     "pressure": "base-4"
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 276,
+     "text": "15. TWO-MINUTE / LATE LEAD: QUARTERS OR COVER 6, FOUR RUSH."
+    }
+   },
+   {
+    "id": "two-minute",
+    "kind": "situation",
+    "menu": "two-minute",
+    "call": {
+     "coverage": [
+      "Quarters",
+      "6"
+     ],
+     "pressure": "base-4"
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 276,
+     "text": "15. TWO-MINUTE / LATE LEAD: QUARTERS OR COVER 6, FOUR RUSH."
+    }
+   },
+   {
+    "id": "dime-personnel",
+    "kind": "conditional",
+    "call": {
+     "package": "Dime"
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 248,
+     "text": "01. DIME PERSONNEL: APPROVED FOR PASS PICTURES."
+    }
+   },
+   {
+    "id": "dime-base-4",
+    "kind": "conditional",
+    "call": {
+     "package": "Dime",
+     "pressure": "base-4"
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 250,
+     "text": "02. DIME BASE FOUR: PRIMARY."
+    }
+   },
+   {
+    "id": "replace-field",
+    "kind": "conditional",
+    "call": {
+     "package": "Dime",
+     "pressure": "replace",
+     "tags": [
+      "field"
+     ]
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 252,
+     "text": "03. REPLACE FIELD: CONDITIONAL CHANGE-UP. Bouye replaces Mincey as the field-edge rusher and owns field contain."
+    }
+   },
+   {
+    "id": "replace-boundary",
+    "kind": "conditional",
+    "call": {
+     "package": "Dime",
+     "pressure": "replace",
+     "tags": [
+      "boundary"
+     ]
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 254,
+     "text": "04. REPLACE BOUNDARY: CONDITIONAL CHANGE-UP. Prosinski replaces Branch at the boundary edge, owns boundary contain"
+    }
+   },
+   {
+    "id": "interior-mug",
+    "kind": "conditional",
+    "call": {
+     "package": "Dime",
+     "pressure": "replace",
+     "tags": [
+      "mug"
+     ]
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 256,
+     "text": "05. INTERIOR MUG: APPROVED PRESENTATION, NOT AN EXTRA RUSHER."
+    }
+   },
+   {
+    "id": "pic-12-heavy",
+    "kind": "presentation",
+    "call": {
+     "front": "Under",
+     "strength": "Y",
+     "coverage": [
+      "Quarters"
+     ],
+     "pressure": "base-4"
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 258,
+     "text": "06. 12 PERSONNEL / CREDIBLE HEAVY RUN: UNDER Y QUARTERS. Start with the base four."
+    }
+   },
+   {
+    "id": "pic-11-2x2",
+    "kind": "presentation",
+    "call": {
+     "front": "Nickel Even",
+     "coverage": [
+      "Quarters"
+     ],
+     "pressure": "base-4"
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 260,
+     "text": "07. 11 PERSONNEL, BALANCED 2x2: NICKEL EVEN QUARTERS. Four-man rush first."
+    }
+   },
+   {
+    "id": "pic-11-3x1",
+    "kind": "presentation",
+    "call": {
+     "front": "Nickel Even",
+     "strength": "Passing",
+     "coverage": [
+      "6"
+     ]
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 262,
+     "text": "08. 11 PERSONNEL, 3x1: NICKEL EVEN COVER 6. Declare passing strength, quarters toward it, half-field opposite."
+    }
+   },
+   {
+    "id": "pic-empty",
+    "kind": "presentation",
+    "call": {
+     "coverage": [
+      "Quarters",
+      "6"
+     ],
+     "pressure": "base-4"
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 270,
+     "text": "12. EMPTY: CURRENT MATCHING PERSONNEL, FOUR RUSH. Prefer Dime Quarters/6 only when the defense can legally substitute and communicate it."
+    }
+   },
+   {
+    "id": "pic-bunch-stack-motion",
+    "kind": "presentation",
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 272,
+     "text": "13. BUNCH / STACK / MOTION: INSTALLED EXCHANGE RULES. Count eligibles, reset passing strength, confirm who takes the crosser, first vertical and Bell if he detaches."
+    }
+   },
+   {
+    "id": "11-2x2-replace",
+    "kind": "conditional",
+    "call": {
+     "front": "Nickel Even",
+     "coverage": [
+      "Quarters"
+     ],
+     "pressure": "replace"
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 260,
+     "text": "Only call a qualified Replace when its protection target, hot coverage and run fit are clear;"
+    }
+   },
+   {
+    "id": "2nd-long-dime-pass",
+    "kind": "conditional",
+    "call": {
+     "package": "Dime",
+     "coverage": [
+      "Quarters",
+      "6"
+     ]
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 264,
+     "text": "Quarters or Cover 6 in Dime is available when Pittsburgh's personnel and support picture truly favor pass; otherwise keep Nickel's structural run fit."
+    }
+   },
+   {
+    "id": "3rd-3-5-replace",
+    "kind": "conditional",
+    "call": {
+     "package": "Nickel",
+     "coverage": [
+      "Quarters",
+      "1 Robber"
+     ],
+     "pressure": "replace"
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 266,
+     "text": "10. THIRD-AND-3 TO 5: NICKEL QUARTERS OR COVER 1 ROBBER. Choose from release leverage, Bell's location and the sticks. Use the base four or a qualified four-man Replace."
+    }
+   },
+   {
+    "id": "3rd-3-5-fire-3",
+    "kind": "counter",
+    "call": {
+     "package": "Nickel",
+     "coverage": [
+      "Fire 3"
+     ],
+     "pressure": "fire-zone"
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 266,
+     "text": "Nickel Fire 3 is the installed real five-man counter only after a protection opportunity and the conceded/contested hot throw are identified."
+    }
+   },
+   {
+    "id": "3rd-6-plus-replace-field",
+    "kind": "conditional",
+    "call": {
+     "package": "Dime",
+     "coverage": [
+      "Quarters",
+      "6"
+     ],
+     "pressure": "replace",
+     "tags": [
+      "field"
+     ]
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 268,
+     "text": "11. THIRD-AND-6-PLUS: DIME QUARTERS OR COVER 6. Show the common threat picture, use the base four first and choose Field or Boundary Replace only after the Thursday checks pass."
+    }
+   },
+   {
+    "id": "3rd-6-plus-replace-boundary",
+    "kind": "conditional",
+    "call": {
+     "package": "Dime",
+     "coverage": [
+      "Quarters",
+      "6"
+     ],
+     "pressure": "replace",
+     "tags": [
+      "boundary"
+     ]
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 268,
+     "text": "11. THIRD-AND-6-PLUS: DIME QUARTERS OR COVER 6. Show the common threat picture, use the base four first and choose Field or Boundary Replace only after the Thursday checks pass."
+    }
+   },
+   {
+    "id": "empty-dime",
+    "kind": "conditional",
+    "call": {
+     "package": "Dime",
+     "coverage": [
+      "Quarters",
+      "6"
+     ]
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 270,
+     "text": "Prefer Dime Quarters/6 only when the defense can legally substitute and communicate it."
+    }
+   },
+   {
+    "id": "empty-mug",
+    "kind": "conditional",
+    "call": {
+     "pressure": "replace",
+     "tags": [
+      "mug"
+     ]
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 270,
+     "text": "The mug tests Pittsburgh's five-man count but is not proof of a free rusher."
+    }
+   },
+   {
+    "id": "goal-line-heavy",
+    "kind": "conditional",
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 274,
+     "text": "Near the goal line choose the appropriate prepared heavy answer rather than forcing pass-first Dime onto a short run surface."
+    }
+   },
+   {
+    "id": "late-dime-pass",
+    "kind": "conditional",
+    "call": {
+     "package": "Dime",
+     "coverage": [
+      "Quarters",
+      "6"
+     ]
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 276,
+     "text": "15. TWO-MINUTE / LATE LEAD: QUARTERS OR COVER 6, FOUR RUSH. Keep current eligible personnel if tempo blocks a substitution. Dime against an actual pass picture;"
+    }
+   },
+   {
+    "id": "late-nickel-run",
+    "kind": "conditional",
+    "call": {
+     "package": "Nickel",
+     "coverage": [
+      "Quarters",
+      "6"
+     ]
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 276,
+     "text": "15. TWO-MINUTE / LATE LEAD: QUARTERS OR COVER 6, FOUR RUSH. Keep current eligible personnel if tempo blocks a substitution. Dime against an actual pass picture; Nickel when the run remains available."
+    }
+   },
+   {
+    "id": "late-replace",
+    "kind": "conditional",
+    "call": {
+     "coverage": [
+      "Quarters",
+      "6"
+     ],
+     "pressure": "replace"
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 276,
+     "text": "Replacement pressure is still conditional on contain and hot coverage."
+    }
+   },
+   {
+    "id": "tempo-nickel",
+    "kind": "conditional",
+    "call": {
+     "front": "Nickel Even",
+     "coverage": [
+      "Quarters"
+     ]
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 278,
+     "text": "Nickel Even Quarters with Nickel already out,"
+    }
+   },
+   {
+    "id": "tempo-under",
+    "kind": "conditional",
+    "call": {
+     "front": "Under",
+     "coverage": [
+      "Quarters"
+     ]
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 278,
+     "text": "Under Quarters with the base group,"
+    }
+   },
+   {
+    "id": "tempo-dime",
+    "kind": "conditional",
+    "call": {
+     "package": "Dime",
+     "coverage": [
+      "Quarters"
+     ]
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 278,
+     "text": "the simplest Dime Quarters when Dime is already on the field."
+    }
+   },
+   {
+    "id": "cover-3-match-emergency",
+    "kind": "conditional",
+    "call": {
+     "coverage": [
+      "3 Match"
+     ]
+    },
+    "source": {
+     "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md",
+     "line": 278,
+     "text": "Cover 3 Match remains the practiced emergency simplification if the match exchange fails."
+    }
+   }
+  ]
+ }
+}

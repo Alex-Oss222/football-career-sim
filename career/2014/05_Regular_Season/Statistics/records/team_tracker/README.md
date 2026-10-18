@@ -16,19 +16,19 @@
 
 ## Depth chart
 
-From [00_Team_Operations/Team/Depth_Chart/game_depth_chart.json](../../../../00_Team_Operations/Team/Depth_Chart/game_depth_chart.json), August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); the defensive-back order set for Week 2 on September 13, 2014 and re-set for Week 4 on September 27, 2014 with game_day_inactives re-set for Week 4 the same day. Order is first listed first; Stone owns it.
+From [00_Team_Operations/Team/Depth_Chart/game_depth_chart.json](../../../../00_Team_Operations/Team/Depth_Chart/game_depth_chart.json), August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); the defensive-back order set for Week 2 on September 13, 2014 and re-set for Week 4 on September 27, 2014; the receiver order, the defensive-back order and its two slot roles re-set for Week 5 on October 4, 2014, with game_day_inactives re-set for Week 5 the same day. Order is first listed first; Stone owns it.
 
 | Group | Order |
 |---|---|
 | QB | Kirk Cousins / Chad Henne |
 | RB | Maurice Jones-Drew / C.J. Anderson / Jonathan Grimes |
 | FB | Montell Owens |
-| WR | Davante Adams / Adam Thielen / Andrew Hawkins / Allen Hurns / Taylor Gabriel / Hakeem Nicks |
+| WR | Davante Adams / Adam Thielen / Andrew Hawkins / Allen Hurns / Hakeem Nicks / Taylor Gabriel |
 | TE | Marcedes Lewis / Travis Kelce / Marcel Jensen / Gator Hoskins |
 | OL | Eugene Monroe / Joel Bitonio / Mike Brewster / Trai Turner / Lane Johnson / Cornelius Lucas / Charles Leno Jr. / Andrew Norwell / Corey Linsley |
 | DL | Jeremy Mincey / Sen'Derrick Marks / Roy Miller / Andre Branch / C.J. Mosley / Daniel Te'o-Nesheim / Aaron Donald / Kasim Edebali |
 | LB | Daryl Smith / Paul Posluszny / Julian Stanford / Sio Moore / Telvin Smith / Christian Jones / Todd Davis |
-| DB | Aqib Talib / Alterraun Verner / Bacarri Rambo / Brynden Trawick / A.J. Bouye / Chris Prosinski / Adrian Phillips / Alan Ball / Jordan Poyer / Malcolm Butler |
+| DB | Aqib Talib / Alterraun Verner / Bacarri Rambo / Brynden Trawick / A.J. Bouye / Chris Prosinski / Adrian Phillips / Alan Ball / Malcolm Butler / Jordan Poyer |
 | K | Josh Scobee |
 | P | Bryan Anger |
 | LS | Casey Kreiter |

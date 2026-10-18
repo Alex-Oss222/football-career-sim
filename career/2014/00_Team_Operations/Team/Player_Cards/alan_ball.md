@@ -153,6 +153,12 @@ The outside work in the packet's Talib-out picture Monday and Wednesday before T
 
 Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above.
 
+### October 4, 2014 | The outside reserve
+
+Stone's Dime decision names him the outside reserve behind Talib and Verner on the game chart, the first corner to replace an outside starter while Bouye stays inside. Full in every session of the Pittsburgh week. Nothing charged to him on the recorded reps. Active for Week 5.
+
+Source: [Week 5 record](../../../05_Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

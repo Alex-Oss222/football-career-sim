@@ -142,6 +142,12 @@ The sixth defensive back in Dime, the first team work of the dime lane he cross-
 
 Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above.
 
+### September 29 to October 4, 2014 | The sixth defensive back again
+
+The sixth defensive back in Stone's Dime group for Pittsburgh. Thursday's pressure periods gave him the replacement rusher's job in Replace Boundary, taking Andre Branch's boundary-edge rush and the boundary contain while Andre Branch dropped to the hot lane, with the vacated slot and flat distribution beside Daryl Smith in Replace Field; the Friday closeout with the same group. Nothing charged to him on the recorded reps. Sixth in the defensive-back order for Week 5 (Stone's decision, October 4); coverage units; active for Week 5.
+
+Source: [Week 5 record](../../../05_Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

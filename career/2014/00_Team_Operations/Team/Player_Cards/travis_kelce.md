@@ -161,6 +161,12 @@ Reassessed Monday with no change and out of the Monday walkthrough and the Wedne
 
 Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md) and the [medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed). This coaching update preserves the opening grades above.
 
+### September 29 to October 4, 2014 | The receiving Y
+
+Stone's packet gave him a specific receiving emphasis without a new chart title: the receiving Y job on selected 12 Trey Y-Cross with SOLID and 11 Bunch Mesh with HALF reps and the flat and intermediate distribution on the Wing Boot, with Lewis taking the complementary assignment in twelve personnel. He took those reps on Wednesday, the unprompted recheck on Thursday and the Saturday walkthrough recheck, and the combinations were released for the Pittsburgh sheet; Lewis stays the established Y and the TE Delay receiver. Coverage still decides the throw and no target total was set. Nothing charged to him on the recorded reps. Active for Week 5 at TE2.
+
+Source: [Week 5 record](../../../05_Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

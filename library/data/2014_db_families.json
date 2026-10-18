@@ -748,6 +748,16 @@
    "weekly_label": "CB",
    "weekly_week": 4
   },
+  "00-0026952": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Jamarca Sanford",
+   "position": "SS",
+   "weekly_label": null,
+   "weekly_week": null
+  },
   "00-0026990": {
    "basis": "chart_slot",
    "chart_slot": "S1",
@@ -1537,6 +1547,16 @@
    "position": "CB",
    "weekly_label": "CB",
    "weekly_week": 4
+  },
+  "00-0028056": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Jalil Brown",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
   },
   "00-0028066": {
    "basis": "chart_slot",
@@ -3649,7 +3669,7 @@
   },
   "inseason_rails_manifest": {
    "path": "library/data/2014_inseason_rails/manifest.json",
-   "sha256": "b5b73f64e0f6e2aab4e648e8d73ca70a747497ab5800c39bb48d349d5f45709c"
+   "sha256": "a98b3d1a313236dd1e99bdc7159f18c354f69d8c81715d187f9a3f19e043b370"
   },
   "roster_weekly_2014w4.csv": {
    "scope": "2014 REG Weeks 1-4, the latest week per player",
@@ -3665,7 +3685,7 @@
   "basis": {
    "chart_slot": 286,
    "none": 14,
-   "rails_position": 50,
+   "rails_position": 52,
    "weekly_roster": 27
   },
   "chart_and_weekly_disagree": [],
