@@ -3,7 +3,7 @@ Jacksonville Jaguars, 3-1
 Next game: Pittsburgh, Sunday, October 5, 2014, 1 p.m. ET, EverBank Field.
 Planning date: after the San Diego game. The calendar remains September 28.
 
-This is Stone's preparation draft in the requested first-person voice. I am continuing to call both sides, expanding purposeful tight-end receiving work, keeping the Jones-Drew/Anderson/Grimes hierarchy and using four-man replacement pressure with split-field matching and a situational dime. I have selected the Pittsburgh receiver order, a conditional seven-inactive plan and sixteen defensive responses below. These are my football decisions for the preparation, not a claim of completed practices, medical examinations or clearances, roster transactions, a frozen game-day 46 or a played Week 5 game. The calendar remains September 28; every medical change after that date must be reported and recorded when it occurs.
+This is Stone's preparation draft in the requested first-person voice. I am continuing to call both sides, expanding purposeful tight-end receiving work, keeping the Jones-Drew/Anderson/Grimes hierarchy and using four-man replacement pressure with split-field matching and a situational dime. I have selected the Pittsburgh receiver order, a conditional seven-inactive plan and sixteen defensive responses below. These are my football decisions for the preparation, not a claim of completed practices, medical examinations or clearances, roster transactions, a frozen game-day 46 or a played Week 5 game. Every medical change after September 28 must be reported and recorded when it occurs.
 
 MY ASSESSMENT AND DIRECTION
 
@@ -53,7 +53,7 @@ The current six are Talib and Verner outside; Bouye at nickel; Rambo and Trawick
 
 Oden owns the coverage declaration and the dime defender's exchange. Pleasant owns the edge drop and rush lanes. Bush owns the linebacker fit and back distribution. Crennel reconciles all three before the call reaches me.
 
-We currently have enough cleared defensive backs for that group.We currently have enough medically eligible defensive backs for that group. Ball remains the available outside reserve. Phillips is out under the September 28 instruction until the September 29 clearance process actually resolves it; if cleared he dresses as the next safety and kicking-game reserve. Butler's projected October 2 independent release is not an accomplished clearance. Even if that release occurs, I am making him inactive for Pittsburgh rather than installing a new dime or special-teams assignment late in the week. Poyer's hold projects to October 9, after this game, so he is projected inactive by medical instruction. Neither player practices while held, and a cleared Butler may take only approved preparation work, not an automatic Sunday role.
+We currently have enough medically eligible defensive backs for that group. Ball remains the available outside reserve. Phillips is out under the September 28 instruction until the September 29 clearance process actually resolves it; if cleared he dresses as the next safety and kicking-game reserve. Butler's projected October 2 independent release is not an accomplished clearance. Even if that release occurs, I am making him inactive for Pittsburgh rather than installing a new dime or special-teams assignment late in the week. Poyer's hold projects to October 9, after this game, so he is projected inactive by medical instruction. Neither player practices while held, and a cleared Butler may take only approved preparation work, not an automatic Sunday role.
 
 Jemea Thomas is the practice-squad defensive back. If injuries remove a necessary job and the active roster cannot supply it, my recommendation to Caldwell is to consider Thomas for that specific job after his preparation is checked. Caldwell must resolve the contract and 53-man place; the player must also be selected among the 46 who dress. This is the 2014 process, not a temporary modern game-day elevation. If the job or transaction cannot be completed, reduce to the prepared nickel answer.
 
@@ -197,7 +197,7 @@ OPENING MENU: THIRTY ELIGIBLE CALLS
 29. Return to 04, Bunch Mesh HALF. C/K. Use the prepared man or zone answer; no forced tight-end throw.
 30. Return to 03, Y-Cross SOLID. C/K. Revisit the best confirmed tight-end matchup behind the protected intermediate concept.
 
-All base call names above come from Week 4's frozen sheet and the active offensive Iteration I. The changed order and named K combinations are this packet's proposals. The throwback candidate is separate and never enters merely because a printed opener number exists.
+All base call names above come from Week 4's frozen sheet and the active offensive Iteration I. The changed order and named K and N combinations are this packet's preparation choices, with each new player combination gated by an unprompted check. The throwback is excluded from all Pittsburgh game folders, not just the thirty-call opener.
 
 SITUATIONAL OFFENSE
 
