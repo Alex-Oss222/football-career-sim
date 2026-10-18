@@ -27,3 +27,4 @@ How the repository is kept: file ownership, the season layout, the weekly workfl
 | Page | What it covers |
 |---|---|
 | [pr_132_followup_review.md](pr_132_followup_review.md) | Dated September 29, 2026 review of PR #132 and its follow-up |
+| [repository_cleanup_2026-10-17.md](repository_cleanup_2026-10-17.md) | The October 17, 2026 cleanup: what changed, what was left and what needs the user |
