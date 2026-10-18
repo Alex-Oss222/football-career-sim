@@ -3,12 +3,15 @@
 
   python scripts/build_week_inputs.py WEEK --season YEAR
 
-Reads the week's Jacksonville call sheet from
-career/YEAR/regular_season/week_NN_*/call_sheet.json (its offensive call sheet
-and, kernel 2014.6 batch B9, its decisions block: under a kernel that decides
+Reads the week's Jacksonville call sheet from the week folder,
+SeasonPaths(YEAR).week_folder(N)/call_sheet.json (2014:
+career/2014/05_Regular_Season/Games/Week_NN/; 2013:
+career/2013/regular_season/week_NN_*/): its offensive call sheet; from
+kernel 2014.6 batch B9, its decisions block (under a kernel that decides
 two-point tries and onside kicks, Jacksonville's input is BLOCKED without
-one; kernel 2014.6 W1a, its optional structured defensive sheet,
-defensive_call_sheet, records only) and every closed receipt for availability, builds the package and runs the weekly exclusivity and
+one); and from kernel 2014.6 W1a, its optional structured defensive sheet,
+defensive_call_sheet (records only). It also reads every closed receipt for
+availability, builds the package and runs the weekly exclusivity and
 game-day gate with the scheduled game count. From the in-season rails'
 effective week (2014: Week 5) the committed moves must reach the slate's
 last cutoff first (library/2014_inseason_rails.md). The package is written to

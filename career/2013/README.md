@@ -19,6 +19,9 @@ Start with [current state](../../state/05_Current_Season_State.md). The [2013 da
 | [Team stats](stats/team_stats.md) | Per-game team totals for every club |
 | [Band audit](stats/calibration_audit.md) | League receipts against sourced 2012 usage and volume shapes |
 | [Game readiness](../../state/game_readiness.md) | Requirements before game resolution |
+| [Game depth chart](depth_chart.json) | Jacksonville's 2013 game depth chart and game-day inactives, the season's game input |
+| [Medical history](medical_history.md) | Recovered availability records and season-end returns |
+| [Player ages](player_ages.md) | Generated birth-date and age view, as of the date the file states |
 | [Scouting](scouting/README.md) | 2014 draft focus directive and dated prospect scouting reports |
 
 ## Phase and event records

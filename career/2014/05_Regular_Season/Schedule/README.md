@@ -15,7 +15,7 @@
 
 Regenerate with `python scripts/render_2014_opponents.py`; check with `python scripts/render_2014_opponents.py --check`. Edit source inputs only after a sourced correction; never hand-edit generated files. Repository validation also checks them.
 
-Fixture acceptance checks run in `tests/test_2014_fixtures.py`. No scores, team strengths or standings are created. The 2013 schedule remains exclusive to 2013; the game release gates still block 2014 execution. An undated opponent row must never be passed off as a scheduled game.
+Fixture acceptance checks run in `tests/test_2014_fixtures.py`. No scores, team strengths or standings are created. The 2013 schedule remains exclusive to 2013; each 2014 game still runs only after `python scripts/check_game_readiness.py --season 2014` and the weekly gates pass. An undated opponent row must never be passed off as a scheduled game.
 
 <!-- folder-files -->
 ## Files in this folder

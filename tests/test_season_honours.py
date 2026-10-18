@@ -79,5 +79,28 @@ class SeasonHonoursTests(unittest.TestCase):
                 winner['team'], winner['score']), text)
 
 
+class HonoursValidationTests(unittest.TestCase):
+    """Repository validation judges the page without regenerating it."""
+
+    def test_validation_reports_a_stale_page_and_writes_nothing(self):
+        import shutil
+        from scripts.validate_repository import season_honours_errors
+        checkout_page = honours.PAGE.read_bytes()
+        with tempfile.TemporaryDirectory() as folder:
+            awards = Path(folder) / "career/2013/awards"
+            shutil.copytree(honours.AWARDS, awards)
+            self.assertEqual(season_honours_errors(awards), [])
+            page = awards / "season_honours.md"
+            page.write_text(page.read_text(encoding="utf-8") + "hand edit\n", encoding="utf-8")
+            edited = page.read_bytes()
+            errors = season_honours_errors(awards)
+            self.assertEqual(errors, ["season_honours.md is stale; run scripts/season_honours.py render"])
+            self.assertEqual(page.read_bytes(), edited)
+        self.assertEqual(honours.PAGE.read_bytes(), checkout_page)
+
+    def test_render_text_matches_the_committed_page(self):
+        self.assertEqual(honours.render_text(ROOT), honours.PAGE.read_text(encoding="utf-8"))
+
+
 if __name__ == "__main__":
     unittest.main()

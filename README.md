@@ -12,7 +12,9 @@ An evidence-based NFL head-coaching career simulation centered on Alex-Lamar Sto
 - [Player cards](career/2014/00_Team_Operations/Team/Player_Cards/README.md): current personnel assessments and each player’s annual statistics.
 - [2013 season](career/2013/README.md): completed season, player sheets, statistics and history.
 - [Career](career/README.md): seasons, coaching profiles and playbooks.
+- [Coaching career path](library/nfl_coaching_career_path.md): research on the climb from position coach to head coach, its milestones and the points that stop for the user.
 - [How the folders work](docs/season_structure.md): what lives in a season and what carries to the next.
+- [Season cycle and milestones](docs/season_cycle_milestones.md): the football year, Stone's career milestones, the stops that need the user and the year-to-year checklist.
 - [Report templates](foundation/templates/README.md): training, games, assessments, interviews and the file that owns each completed report.
 
 ## Repository ownership
@@ -22,11 +24,12 @@ An evidence-based NFL head-coaching career simulation centered on Alex-Lamar Sto
 | [foundation](foundation/01_Project_Instructions.md) | Stable operating rules, active sourcebook, authority, event-record protocol, engine specification and templates |
 | [state](state/05_Current_Season_State.md) | Current coach-known register and compact resume snapshot |
 | [career](career/README.md) | Season-specific plans, dated results, annual event indexes and readable current views |
-| [library](library/2013_jacksonville_master_calendar.md) | Sourced research; each file states its permitted information date |
+| [library](library/README.md) | Sourced research; each file states its permitted information date. [Data index](library/data/README.md) |
 | [archive](archive/README.md) | Superseded or quarantined material, excluded from ordinary runtime reads |
-| [docs](docs/update_workflow.md) | File ownership, dependencies and maintenance procedure |
-| [scripts](scripts/validate_repository.py) | Validation, readiness, weekly input build and close, generated views and private-snapshot advance |
-| [runtime](runtime/README.md) | Shared game kernel (2013.x), authenticated private-service interface and public statbook; no private career state is committed here |
+| [docs](docs/README.md) | File ownership, dependencies, maintenance procedure and report methods |
+| [scripts](scripts/README.md) | Validation, readiness, weekly input build and close, generated views and private-snapshot advance |
+| [runtime](runtime/README.md) | Shared game kernel (`KERNEL_VERSION` in `runtime/__init__.py`, currently 2014.6), authenticated private-service interface and public statbook; no private career state is committed here |
+| [tests](tests/) | Regression tests; run with `python scripts/run_suite_parallel.py`, as CI does |
 
 ## Work on the repository
 

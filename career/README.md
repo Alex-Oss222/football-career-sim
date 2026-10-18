@@ -30,6 +30,8 @@ After acceptance, reconcile the governing documents, roster, staff, contract, ru
 
 At the end of a season, player and coach exit reviews come last in the year’s football route. The season-review handoff carries the reviewed roster, medical instructions, contracts, staff, draft assets and unfinished development into the next year; fresh season statistics and awards start empty. `scripts/season_handoff.py` stages that transfer after the required reviews. A new folder is preparation, not proof that its events have happened.
 
+The [season cycle and career milestones guide](../docs/season_cycle_milestones.md) maps the football year, Stone's contract and review milestones, which steps stop for the user and the year-to-year checklist of commands and owners.
+
 ## Maintaining the records
 
 The [update workflow](../docs/update_workflow.md) and [repository map](../docs/repository_map.json) determine which owners and current views change together. Write the actual result first, update only affected views, regenerate the annual record and other derived pages, and validate the complete change. Do not create a new document for every practice, conversation, transaction summary or accounting scenario.

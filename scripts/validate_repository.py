@@ -74,9 +74,10 @@ def season_honours_errors(awards_dir):
     if str(ROOT) not in sys.path:
         sys.path.insert(0, str(ROOT))
     from scripts import season_honours
-    season_honours.render()
-    if page.read_text(encoding='utf-8') != before:
-        errors.append('season_honours.md was stale; regenerated with scripts/season_honours.py render')
+    # Compare without writing: the validated root's own method and results
+    # build the expected page, and neither tree is changed.
+    if season_honours.render_text(awards_dir.parents[2]) != before:
+        errors.append('season_honours.md is stale; run scripts/season_honours.py render')
     return errors
 
 
@@ -444,7 +445,7 @@ def validate(root=ROOT):
         try:
             from scripts.render_draft_order import render as render_draft_order
             require(draft_order.read_text() == render_draft_order(),
-                    'career/2014/draft/draft_order.md is stale; run render_draft_order.py')
+                    f'{draft_order.relative_to(root).as_posix()} is stale; run render_draft_order.py')
         except (OSError, ValueError, KeyError, TypeError) as exc:
             errors.append(f'Draft order cannot be rebuilt from receipts: {exc}')
     # The opponent inventory is deliberately undated; validate it without
