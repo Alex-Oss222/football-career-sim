@@ -6,7 +6,7 @@ Use the complete [preseason output template](../preseason_output_template.md) an
 
 [Use the full template's existing period header and evidence cutoff. Do not start a separate output package. Adapt the subjects below as prose within section 6's What held up, What must be corrected and Next-period carry-forward fields. If a longer bulk review needs subheadings, render them at level 3 or deeper inside section 6. Do not create competing numbered sections.]
 
-[Lead with what the staff can now trust and the largest remaining football problem. Establish whether this is an interim review or the completed preseason.]
+[Lead with the material conclusions the completed work supports and any unresolved work that remains. Do not manufacture a strength or fault to fill the opening. Establish whether this is an interim review or the completed preseason.]
 
 ## Games and the questions they answered
 
