@@ -1,5 +1,11 @@
 # Andrew Norwell — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Andrew Norwell career card](../../../../league_players/jacksonville_jaguars/assets/andrew_norwell.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/andrew_norwell.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_Norwell_2022.jpg?width=500" alt="Andrew Norwell" width="160">
 
@@ -119,14 +125,14 @@ Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Traini
 
 ## Regular-season statistics by year
 
-| Season | Team(s) | Coverage | G | SCK ALLOWED | STARTS | OFF SNAPS | PEN | PEN YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 5 | 5 | 0 | 0 | 0 | Unrecorded | Unrecorded | 0 | 0 | — | 0 | 0 | — | 0 |
+| Season | Team | Age | # | Coverage | G | SCK ALLOWED | STARTS | OFF SNAPS | PEN | PEN YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 22 | 68 | Through Week 5 | 5 | 0 | 0 | 0 | Unrecorded | Unrecorded | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 
-| Season | Team(s) | Coverage | G | SCK ALLOWED | STARTS | OFF SNAPS | PEN | PEN YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
+| Season | Team | Age | # | Coverage | G | SCK ALLOWED | STARTS | OFF SNAPS | PEN | PEN YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 22 | 68 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
 
 <!-- yearly-statistics:end -->

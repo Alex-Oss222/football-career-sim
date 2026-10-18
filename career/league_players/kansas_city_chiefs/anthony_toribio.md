@@ -6,20 +6,22 @@
 
 ### Regular season
 
-| Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 16 | 13 | 0 | 1 | 0 | 0 | 1 | 1 | 1 | 0.8 | 6 |
-| **Career** |  | 16 | 13 | 0 | 1 | 0 | 0 | 1 | 1 | 1 | 0.8 | 6 |
+| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City Chiefs | 28 | 98 | 16 | 13 | 0 | 1 | 0 | 0 | 1 | 1 | 1 | 0.8 | 6 |
+| **Career** |  |  |  | 16 | 13 | 0 | 1 | 0 | 0 | 1 | 1 | 1 | 0.8 | 6 |
 
 ### Playoffs
 
-| Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 1 | 2 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 2.0 | 1 |
-| **Career** |  | 1 | 2 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 2.0 | 1 |
+| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City Chiefs | 28 | 98 | 1 | 2 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 2.0 | 1 |
+| **Career** |  |  |  | 1 | 2 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 2.0 | 1 |
 
 ## Awards
 
 None on record.
+
+Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
 Records through January 4, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Kansas City Chiefs players](README.md).

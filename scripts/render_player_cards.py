@@ -7,8 +7,16 @@ Writes career/league_players/: an index of the 32 clubs, one page per club
 (its players by position group), and for every player in the game records a
 page (his card, his regular-season and playoff statistics by season with a
 career row, his awards) and the card itself as an SVG image. Pages of
-players no longer on record are removed. --check writes nothing and fails
-when any file differs. Run after every closed game (docs/update_workflow.md).
+players no longer on record are removed. Each current Jacksonville player's
+card page that his league page links back to also shows his card directly
+under its title, in a generated <!-- player-card:begin --> ...
+<!-- player-card:end --> block with a link to his career statistics; a
+former player's page carries none, and only the active season's pages are
+kept, none of them with a block once that season has closed (earlier
+seasons' pages are never rewritten). Only that block is written, and a block
+found anywhere else on the page is moved back under the title. --check
+writes nothing and fails when any file or block differs or a block is not
+directly under its title. Run after every closed game (docs/update_workflow.md).
 The cards are a reader view: no game, evaluation or decision reads them.
 """
 from __future__ import annotations
@@ -39,8 +47,9 @@ def main(argv=None):
         if len(errors) > 50:
             print("... and %d more" % (len(errors) - 50))
         return 1 if errors else 0
-    written, removed = player_cards.write(args.root)
-    print("wrote %s: %d files changed, %d removed" % (player_cards.FOLDER, written, removed))
+    written, removed, pages = player_cards.write(args.root)
+    print("wrote %s: %d files changed, %d removed; %d Jacksonville player card pages updated"
+          % (player_cards.FOLDER, written, removed, pages))
     return 0
 
 

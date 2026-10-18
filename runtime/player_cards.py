@@ -7,9 +7,23 @@ module after every closed game:
 - ``<club>/README.md``: the players whose latest game on record was with that
   club, by position group;
 - ``<club>/<player>.md``: his card image, his regular-season and playoff
-  statistics by season with a career row, and his awards on record;
+  statistics by season with a career row (each season row leads with his
+  team, his age on the league's opening game of that season and the number
+  listed for him that season; ``season_number``), and his awards on record;
 - ``<club>/assets/<player>.svg``: the card (header with listed identity, then
-  latest-season and career blocks for playoffs and regular season).
+  latest-season and career blocks for playoffs and regular season);
+- on each current Jacksonville player's card page that his league page links
+  back to, a generated block directly under its H1 with his card and a link
+  to his career statistics, in the active season's folder while that season
+  is open. Former players' pages carry none, nor does any page once its
+  season has closed; earlier seasons' pages are never read or written. Only
+  the block is written.
+
+``jacksonville_rows`` gives the Season | Team | Age | # lead that
+``scripts/update_player_cards.py`` writes on a current player's row in the
+statistics tables at the bottom of each Jacksonville player card while the
+season is open: the number his league card shows. A row keeps the cells
+already written once he has left or the season has closed.
 
 Every statistic is arithmetic on the committed game records (the receipts the
 statbook reads), with the repository's own field names, loaders and passer
@@ -79,6 +93,8 @@ COLORS = {
     "Arizona Cardinals": ("#97233F", "#FFB612"), "St. Louis Rams": ("#002244", "#B3995D"),
     "San Francisco 49ers": ("#AA0000", "#B3995D"), "Seattle Seahawks": ("#002244", "#69BE28"),
 }
+# The season whose rosters the listed identity's 2014 numbers come from (Weeks 1-4).
+LISTING_SEASON = 2014
 WHITE, INK = "#FFFFFF", "#101418"
 SURFACE, SURFACE_TILE, PAGE = "#1B1E23", "#272B32", "#111317"
 
@@ -478,6 +494,44 @@ def award_rows(root, years):
 
 
 # ------------------------------------------------------------------ assemble
+def opening_dates(root, years):
+    """{season: the date of the league's first regular-season game}, from each season's schedule."""
+    return {y: min(g["date"] for g in _load(SeasonPaths(y, root).schedule)["games"]) for y in years}
+
+
+def age_on(birth_date, day):
+    if not birth_date:
+        return None
+    b, t = dt.date.fromisoformat(birth_date), dt.date.fromisoformat(day)
+    return t.year - b.year - ((t.month, t.day) < (b.month, b.day))
+
+
+def season_number(year, club, p, listed, w1, codes):
+    """The number a career table shows for one season row, for the club he ended that season
+    with. 2014: the card's own number for his latest club (the rule below, Jacksonville's
+    included); for another club, his 2014 Week 1 roster number with it (not a row a
+    Jacksonville trade placed there) or his Weeks 1-4 listing with it. 2013: his 2013 season
+    roster number (his latest 2013 week) when that row is with the same club; for Jacksonville
+    that is the real 2013 Jaguars' listing, Jacksonville having recorded no numbers. Otherwise
+    None (N/A): no number is inferred."""
+    code = codes.get(club)
+    if year == LISTING_SEASON:
+        if club == p["team"]:
+            return p["number"]
+        if club == JAX:
+            return None
+        if (w1 and w1.get("club") == club and not w1.get("branch_note")
+                and str(w1.get("jersey") or "").isdigit()):
+            return int(w1["jersey"])
+        if listed.get("number") is not None and (listed.get("number_basis") or {}).get("club") == code:
+            return listed["number"]
+        return None
+    if year == LISTING_SEASON - 1:
+        if listed.get("number_2013") is not None and (listed.get("number_2013_basis") or {}).get("club") == code:
+            return listed["number_2013"]
+    return None
+
+
 def card_data(root=ROOT):
     """All players on record, their clubs, identity, blocks and awards."""
     root = Path(root)
@@ -486,6 +540,7 @@ def card_data(root=ROOT):
     ident = Identity(root)
     current_jax = jacksonville_current(root, ident)
     years = record_years(root)
+    openings = opening_dates(root, years)
     as_of = max(r["date"] for r in games)
     for r in games:
         r["key"] = ident.gsis(r["pid"], r["year"]) or "%s-%s" % (slugify(display(r["pid"])), GROUP_OF.get(r["pos"], "x"))
@@ -538,7 +593,7 @@ def card_data(root=ROOT):
             yr = [r for r in rows if r["year"] == year]
             if not yr:
                 continue
-            s = {"clubs": []}
+            s = {"clubs": [], "age": age_on(dob, openings[year])}
             for r in yr:
                 if r["team"] not in s["clubs"]:
                     s["clubs"].append(r["team"])
@@ -561,6 +616,7 @@ def card_data(root=ROOT):
             "height_in": listed.get("height_in"), "weight": listed.get("weight"), "listing": listed.get("listing"),
             "birth_date": dob, "age": age, "college": college, "seasons": seasons, "career": career,
             "through": through, "current_jaguar": current, "awards": awards.get(key, []),
+            "_listed": listed, "_w1": w1,
         })
     # Jacksonville numbers, for players Jacksonville currently controls (active roster, reserve and
     # practice squad): his real 2014 Jaguars number; else the number he wore in 2014 with his real
@@ -574,6 +630,11 @@ def card_data(root=ROOT):
         for p in ps:
             if p["number_note"].startswith("other:") and len(ps) > 1:
                 p["number"], p["number_note"] = None, None
+    # His listing and Week 1 row stay on the record (``_listed``, ``_w1``) so a season's number for
+    # another club than the one he ended it with (jacksonville_rows) comes from season_number too.
+    for p in players:
+        for year, s in p["seasons"].items():
+            s["number"] = season_number(year, s["clubs"][-1], p, p["_listed"], p["_w1"], ident.codes)
     club_of_code = {code: club for club, code in ident.codes.items()}
     for p in players:
         note = p["number_note"]
@@ -789,22 +850,27 @@ def _cell(v):
 
 
 def stat_table(p, gtype):
-    """Rows by season (his club or clubs that season) and a career row."""
+    """Rows by season (his team or teams that season, his age on that season's opening game,
+    the number listed for him that season) and a career row."""
     rows = [(year, s) for year, s in sorted(p["seasons"].items()) if s[gtype]]
     if not rows:
         return None
     labels = [label for label, _ in p["career"][gtype]["tiles"] if label != "GAMES"]
-    head = ["Season", "Club", "G"] + labels
+    head = ["Season", "Team", "Age", "#", "G"] + labels
     lines = ["| " + " | ".join(head) + " |", "|" + "|".join(["---", "---"] + ["---:"] * (len(head) - 2)) + "|"]
 
     def values(b):
         tiles = dict(b["tiles"])
         return [tiles.get(label, N_A) for label in labels]
+
+    def known(v):
+        return N_A if v is None else v
     for year, s in rows:
-        lines.append("| " + " | ".join(_cell(v) for v in [year, ", ".join(s["clubs"]), b_games(s[gtype])]
+        lines.append("| " + " | ".join(_cell(v) for v in [year, ", ".join(s["clubs"]), known(s.get("age")),
+                                                          known(s.get("number")), b_games(s[gtype])]
                                        + values(s[gtype])) + " |")
     c = p["career"][gtype]
-    lines.append("| " + " | ".join(_cell(v) for v in ["**Career**", "", c["games"]] + values(c)) + " |")
+    lines.append("| " + " | ".join(_cell(v) for v in ["**Career**", "", "", "", c["games"]] + values(c)) + " |")
     return "\n".join(lines)
 
 
@@ -837,6 +903,9 @@ def player_page(p, profile_link):
     if p["listing"] == "player_file" and p["height_in"] is not None:
         basis = "the public player file, last listed in 2013 or earlier (no 2014 Weeks 1-4 or 2013 roster row)"
     number = "; number: %s" % p["number_note"] if p["number"] is not None and p["number_note"] else ""
+    lines += ["Age is his age on the league's opening game of each season; # is the number listed for him that "
+              "season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing "
+              "applies.", ""]
     lines.append("Records through %s. Identity: %s%s. [All %s players](README.md)."
                  % (long_date(p["through"]), basis, number, p["team"]))
     return "\n".join(lines) + "\n"
@@ -865,7 +934,8 @@ def club_page(team, players, years, as_of):
 def index_page(counts, years, as_of):
     lines = ["# League players", "",
              "Every player in the %s game records, under the club of his latest game on record. Each player page "
-             "has his career card, his regular-season and playoff statistics by season and his awards." % (
+             "has his career card, his regular-season and playoff statistics by season (each season row with his team, "
+             "his age on that season's opening game and the number listed for him that season) and his awards." % (
                  " and ".join(str(y) for y in years)), ""]
     for conf in ("AFC", "NFC"):
         lines += ["## %s" % conf, ""]
@@ -881,17 +951,18 @@ def index_page(counts, years, as_of):
 
 
 def jacksonville_profiles(root):
-    """Current Jacksonville-controlled players' working card paths, by name."""
-    from scripts.build_player_progression_roster import parse_current_roster
-    active = _load(root / "docs/repository_map.json")["active_season"]
+    """Current Jacksonville-controlled players' working card paths, by name: every roster table row
+    whose status shows club control, practice squad included (jacksonville_current's rule, the one
+    the league card's current_jaguar follows)."""
+    from scripts.check_week_input_exclusivity import controlled_players_from_roster
+    active = _load(Path(root) / "docs/repository_map.json")["active_season"]
     paths = SeasonPaths(active, root)
     folder = paths.record("player_profiles")
-    _, _, roster = parse_current_roster(paths.roster)
     out = {}
-    for r in roster:
-        path = folder / (slugify(r.player) + ".md")
+    for name in sorted(controlled_players_from_roster(paths.roster)):
+        path = folder / (slugify(name) + ".md")
         if path.is_file():
-            out[r.player] = path
+            out[name] = path
     return out
 
 
@@ -908,8 +979,195 @@ def profile_for(p, profiles, branch):
     return None
 
 
-def render(root=ROOT):
-    """{path relative to the repository root: text} for the whole folder."""
+# ------------------------------------------------------------------ Jacksonville player card pages
+# Each current Jacksonville player's card page (the page his league page links back to, by
+# jacksonville_profiles and profile_for) carries his career card directly under its H1, in a
+# generated block. Every other page in the active season's folder, a former player's included,
+# carries none: a former player's page is history through his departure and must not follow him to
+# a new club. Once the active season has closed (its season review is on record), every page in
+# its folder is history in the same way and carries none, so the frozen season record never links
+# to a league page that later moves. Pages of earlier seasons are never read or written.
+# Only the block and its framing blank lines are ever written: the rest of the page (the authored
+# assessment, the photo, the yearly statistics) belongs to its own owners.
+CARD_BEGIN, CARD_END = "<!-- player-card:begin -->", "<!-- player-card:end -->"
+PROFILE_FROM = 2014
+PROFILE_SKIP = ("README.md", "TEMPLATE.md")
+_PAGE_TITLE = re.compile(r"# (.+?)(?: — .*)?")
+
+
+def profile_pages(root):
+    """{path: the player name in its H1} for every player page in the active season's player-card
+    folder (2014 on). An earlier season's pages are history and are not included."""
+    root = Path(root)
+    active = _load(root / "docs/repository_map.json")["active_season"]
+    folder = SeasonPaths(active, root).record("player_profiles")
+    out = {}
+    if active < PROFILE_FROM or not folder.is_dir():
+        return out
+    for path in sorted(folder.glob("*.md")):
+        if path.name in PROFILE_SKIP:
+            continue
+        m = _PAGE_TITLE.fullmatch(path.read_text(encoding="utf-8").partition("\n")[0])
+        if m:
+            out[path] = m.group(1)
+    return out
+
+
+def season_open(root):
+    """Whether the active season is still open: not yet closed by its season review
+    (scripts/build_annual_player_sheets.season_is_complete). Only an open season's pages carry
+    career card blocks and are linked back to."""
+    from scripts.build_annual_player_sheets import season_is_complete
+    active = _load(Path(root) / "docs/repository_map.json")["active_season"]
+    return not season_is_complete(active, Path(root))
+
+
+def page_players(players, profiles, branch):
+    """{page path: league player} for the current roster's pages (``profiles``, by name, from
+    jacksonville_profiles), by the reverse link's own rule (profile_for), so a page carries a block
+    exactly when his league page links back to it."""
+    out = {}
+    for p in players:
+        page = profile_for(p, profiles, branch)
+        if page is None:
+            continue
+        if page in out:
+            raise ValueError("two league players match the player card page %s" % page)
+        out[page] = p
+    return out
+
+
+def card_block(page, p, root):
+    """The block for his page: the card image and a link to his league page, relative to the page."""
+    base = Path(root) / FOLDER / club_slug(p["team"])
+
+    def rel(target):
+        return Path(os.path.relpath(target, page.parent)).as_posix()
+    return "\n".join([CARD_BEGIN,
+                      "![%s career card](%s)" % (p["name"], rel(base / "assets" / ("%s.svg" % p["slug"]))),
+                      "",
+                      "[Career statistics](%s)" % rel(base / ("%s.md" % p["slug"])),
+                      CARD_END])
+
+
+def without_card_block(text):
+    """The page with its block, and one framing newline on each side, removed (unchanged when it
+    has none). Raises ValueError unless the markers form at most one ordered pair."""
+    begins, ends = text.count(CARD_BEGIN), text.count(CARD_END)
+    if begins == ends == 0:
+        return text
+    begin, end = text.find(CARD_BEGIN), text.find(CARD_END)
+    if begins != 1 or ends != 1 or end < begin:
+        raise ValueError("a player card page needs exactly one %s ... %s block" % (CARD_BEGIN, CARD_END))
+    end += len(CARD_END)
+    if text[begin - 1:begin] == "\n" and text[end:end + 1] == "\n":
+        begin, end = begin - 1, end + 1
+    return text[:begin] + text[end:]
+
+
+def block_under_title(text):
+    """True when the page's block begins directly under its H1 (title line, one blank line)."""
+    return text.partition("\n")[2].startswith("\n" + CARD_BEGIN + "\n")
+
+
+def with_card_block(text, block):
+    """The page with its block directly under the H1: an existing block is taken out wherever it
+    sits and ``block`` put there, or the block is removed when ``block`` is None. Nothing else on
+    the page changes."""
+    text = without_card_block(text)
+    if block is None:
+        return text
+    title, _, body = text.partition("\n")
+    return title + "\n\n" + block + "\n" + (body if body.startswith("\n") else "\n" + body)
+
+
+def render_pages(root, matched):
+    """{page path relative to the repository root: its text with the block current}, for every
+    player page in the active season's folder (profile_pages); ``matched`` ({page path: league
+    player}, from page_players) names the pages that carry one."""
+    root = Path(root)
+    pages = profile_pages(root)
+    untitled = sorted(str(path) for path in matched if path not in pages)
+    if untitled:
+        raise ValueError("current player card page without a player title line: " + "; ".join(untitled))
+    out = {}
+    for path in pages:
+        p = matched.get(path)
+        text = path.read_bytes().decode("utf-8")
+        out[path.relative_to(root).as_posix()] = with_card_block(text, card_block(path, p, root) if p else None)
+    return out
+
+
+def check_pages(root, pages):
+    root = Path(root)
+    errors = []
+    for rel, text in pages.items():
+        path = root / rel
+        if not path.is_file():
+            continue
+        current = path.read_bytes().decode("utf-8")
+        if current == text:
+            continue
+        if CARD_BEGIN not in current:
+            errors.append("Jacksonville player card page lacks its career card: %s" % rel)
+        elif CARD_BEGIN not in text:
+            errors.append("Jacksonville player card page has a career card it should not carry "
+                          "(no league page links back to it): %s" % rel)
+        elif not block_under_title(current):
+            errors.append("Jacksonville player card page career card is not directly under its title: %s" % rel)
+        else:
+            errors.append("Jacksonville player card page career card stale: %s" % rel)
+    return errors
+
+
+# ------------------------------------------------------------------ Jacksonville player card season rows
+# The regular-season and playoff tables at the bottom of each Jacksonville player card
+# (scripts/update_player_cards.py) count Jacksonville's games only, so their season row leads with
+# the Jacksonville Jaguars, his age on the league's opening game of that season and #. Jacksonville
+# has recorded no jersey numbers of its own: # is the number his league card shows while he is a
+# current Jaguar whose latest game was with Jacksonville (his real 2014 Jaguars listing, else his
+# real 2014 number with his real club when no other current Jaguar claims it; the league page
+# names which), and N/A for a player with no game on record, one whose latest game was with
+# another club, or a former player. update_player_cards works the row out only for a current
+# player while the season is open; once he has left or the season has closed, the row keeps the
+# cells already written.
+def jacksonville_rows(year, names, root=ROOT, data=None):
+    """{card name: (team, age, number)} for the ``year`` row of each named Jacksonville player card,
+    from the current state; None is N/A. A card is his league player's by the reverse link's own
+    rule (profile_for): the current roster's cards exactly as their career card blocks are matched
+    (page_players over jacksonville_profiles), then each other named card (a former player's) among
+    the remaining players. Age is age_on his league card's birth date at the season's opening game
+    (opening_dates); # is season_number for Jacksonville that season, so a current player's card
+    and his league page cannot disagree. A card with no league player (no game on record) takes its
+    age from the same birth-date sources (Identity.birth_date) and has no number."""
+    root = Path(root)
+    data = card_data(root) if data is None else data
+    players = data["players"]
+    ident = Identity(root)
+    schedule = SeasonPaths(year, root).schedule
+    opening = opening_dates(root, (year,))[year] if schedule.is_file() else None
+    names = sorted(set(names))
+    profiles = jacksonville_profiles(root)
+    by_page = page_players(players, profiles, ident.branch)
+    found = {name: by_page[page] for name, page in profiles.items() if page in by_page and name in names}
+    taken = {id(p) for p in by_page.values()}
+    others = {name: name for name in names if name not in profiles}
+    found.update(page_players([p for p in players if id(p) not in taken], others, ident.branch))
+    out = {}
+    for name in names:
+        p = found.get(name)
+        if p is not None:
+            dob = p["birth_date"]
+            number = season_number(year, JAX, p, p["_listed"], p["_w1"], ident.codes)
+        else:
+            gsis = ident.gsis(name, year)
+            dob, number = ident.birth_date({name}, gsis, ident.week1_row(gsis, name), name), None
+        out[name] = (JAX, age_on(dob, opening) if opening else None, number)
+    return out
+
+
+def _build(root):
+    """(league folder files, Jacksonville player card pages), each {relative path: text}."""
     root = Path(root)
     data = card_data(root)
     if data["unmatched_awards"]:
@@ -919,15 +1177,16 @@ def render(root=ROOT):
     if unknown:
         raise ValueError("no club colours for: " + ", ".join(unknown))
     assign_slugs(players)
-    profiles = jacksonville_profiles(root)
     branch = Identity(root).branch
+    matched = page_players(players, jacksonville_profiles(root), branch) if season_open(root) else {}
+    linked = {id(p): page for page, p in matched.items()}
     files = {}
     by_club = {}
     for p in players:
         by_club.setdefault(p["team"], []).append(p)
         base = "%s/%s" % (FOLDER, club_slug(p["team"]))
         link = None
-        prof = profile_for(p, profiles, branch)
+        prof = linked.get(id(p))
         if prof is not None:
             link = Path(os.path.relpath(prof, root / base)).as_posix()
         files["%s/%s.md" % (base, p["slug"])] = player_page(p, link)
@@ -935,13 +1194,21 @@ def render(root=ROOT):
     for team, ps in by_club.items():
         files["%s/%s/README.md" % (FOLDER, club_slug(team))] = club_page(team, ps, years, as_of)
     files["%s/README.md" % FOLDER] = index_page({t: len(ps) for t, ps in by_club.items()}, years, as_of)
-    return dict(sorted(files.items()))
+    return dict(sorted(files.items())), render_pages(root, matched)
 
 
-def check(root=ROOT, expected=None):
+def render(root=ROOT):
+    """{path relative to the repository root: text} for the whole folder."""
+    return _build(root)[0]
+
+
+def check(root=ROOT, expected=None, pages=None):
+    """Errors for the league folder and, when ``pages`` is given or ``expected`` is not, the career
+    card blocks on the Jacksonville player card pages. Writes nothing."""
     root = Path(root)
-    expected = render(root) if expected is None else expected
-    errors = []
+    if expected is None:
+        expected, pages = _build(root)
+    errors = check_pages(root, pages) if pages is not None else []
     for rel, text in expected.items():
         path = root / rel
         if not path.is_file():
@@ -958,10 +1225,17 @@ def check(root=ROOT, expected=None):
 
 
 def write(root=ROOT):
-    """Write the folder, removing pages of players no longer on record. Returns (written, removed)."""
+    """Write the folder, removing pages of players no longer on record, and bring each Jacksonville
+    player card page's career card block up to date. Returns (written, removed, pages changed)."""
     root = Path(root)
-    expected = render(root)
+    expected, pages = _build(root)
     written = removed = 0
+    changed = 0
+    for rel, text in pages.items():
+        path = root / rel
+        if path.read_bytes() != text.encode("utf-8"):
+            path.write_bytes(text.encode("utf-8"))
+            changed += 1
     for rel, text in expected.items():
         path = root / rel
         data = text.encode("utf-8")
@@ -977,4 +1251,4 @@ def write(root=ROOT):
             removed += 1
         elif path.is_dir() and not any(path.iterdir()):
             path.rmdir()
-    return written, removed
+    return written, removed, changed

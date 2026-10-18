@@ -203,7 +203,7 @@ class AnnualAssessmentCompletionTests(unittest.TestCase):
                 root, _, _ = self.fixture()
                 final = target_path(2015, 'Sam Snap', root)
                 text = final.read_text()
-                final.write_text(text.replace(f'| {old_year} | Jacksonville |', f'| {old_year} | Invented team |', 1))
+                final.write_text(text.replace(f'| {old_year} | Jacksonville Jaguars |', f'| {old_year} | Invented team |', 1))
                 self.assertTrue(any('statistics' in e for e in final_assessment_errors(2015, root, require_complete=True)))
 
     def test_closeout_filename_does_not_replace_reviewed_gate(self):

@@ -1,5 +1,11 @@
 # Roy Miller — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Roy Miller career card](../../../../league_players/jacksonville_jaguars/assets/roy_miller.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/roy_miller.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Roy_Miller_%28American_football%29.JPG?width=500" alt="Roy Miller" width="160">
 
@@ -137,14 +143,14 @@ Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) an
 
 ## Regular-season statistics by year
 
-| Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 5 | 5 | 8 | 4 | 4 | 3 | 1 | 2 | 0 | 0 | 1 | 1 | 345 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
+| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 27 | 97 | Through Week 5 | 5 | 8 | 4 | 4 | 3 | 1 | 2 | 0 | 0 | 1 | 1 | 345 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 
-| Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
+| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 27 | 97 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
 
 <!-- yearly-statistics:end -->

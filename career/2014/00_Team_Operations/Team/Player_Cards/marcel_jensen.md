@@ -1,5 +1,11 @@
 # Marcel Jensen — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Marcel Jensen career card](../../../../league_players/jacksonville_jaguars/assets/marcel_jensen.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/marcel_jensen.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  
@@ -129,14 +135,14 @@ Source: [preseason game 4 output](../../../04_Training_Camp_and_Preseason/Presea
 
 ## Regular-season statistics by year
 
-| Season | Team(s) | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 5 | 5 | 1 | 1 | 10 | 10.0 | 0 | 10 | 0 | 0 | 0 | 0 | 0 | 100.0 | 0 | 0 | — | 0 | 0 | — | 0 |
+| Season | Team | Age | # | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 24 | 87 | Through Week 5 | 5 | 1 | 1 | 10 | 10.0 | 0 | 10 | 0 | 0 | 0 | 0 | 0 | 100.0 | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 
-| Season | Team(s) | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
+| Season | Team | Age | # | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 24 | 87 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
 
 <!-- yearly-statistics:end -->

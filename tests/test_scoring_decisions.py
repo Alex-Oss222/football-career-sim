@@ -1320,7 +1320,9 @@ class RealInputLabelSwapTests(unittest.TestCase):
     def setUpClass(cls):
         sys.path.insert(0, str(ROOT / "scripts" / "research"))
         import acceptance_2014_6 as acc
-        clubs = acc.slate_clubs("2014.6")
+        from support_as_of import roster_before_week
+        with roster_before_week(5):  # the Week 5 roster before kickoff (tests/support_as_of.py)
+            clubs = acc.slate_clubs("2014.6")
         cls.jax, cls.sd = clubs["Jacksonville Jaguars"], clubs["San Diego Chargers"]
 
     def run_side(self, carrier):
@@ -1377,7 +1379,9 @@ class SocketWiringTests(unittest.TestCase):
         sys.path.insert(0, str(ROOT / "scripts" / "research"))
         import acceptance_2014_6 as acc
         from runtime import strength
-        clubs = acc.slate_clubs("2014.6")
+        from support_as_of import roster_before_week
+        with roster_before_week(5):  # the Week 5 roster before kickoff (tests/support_as_of.py)
+            clubs = acc.slate_clubs("2014.6")
         cls.jax, cls.sd = clubs["Jacksonville Jaguars"], clubs["San Diego Chargers"]
         cls.terms = strength.parameters(PROFILE_2014_6.strength).terms
         cls.base_games, cls.calls, cls.receipts = cls.games()

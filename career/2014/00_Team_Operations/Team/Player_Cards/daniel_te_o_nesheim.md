@@ -1,5 +1,11 @@
 # Daniel Te'o-Nesheim — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Daniel Te'o-Nesheim career card](../../../../league_players/jacksonville_jaguars/assets/daniel_te_o_nesheim.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/daniel_te_o_nesheim.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  
@@ -122,14 +128,14 @@ Prior-club historical NFL statistics, not Jacksonville totals. Source: [2013 his
 
 ## Regular-season statistics by year
 
-| Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 5 | 5 | 4 | 2 | 2 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 4 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
+| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 27 | N/A | Through Week 5 | 5 | 4 | 2 | 2 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 4 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 
-| Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
+| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 27 | N/A | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
 
 <!-- yearly-statistics:end -->

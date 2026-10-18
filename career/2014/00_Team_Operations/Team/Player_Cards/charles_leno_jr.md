@@ -1,5 +1,11 @@
 # Charles Leno Jr. — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Charles Leno Jr. career card](../../../../league_players/jacksonville_jaguars/assets/charles_leno_jr.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/charles_leno_jr.md)
+<!-- player-card:end -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  
@@ -105,14 +111,14 @@ No NFL season. The college record is described qualitatively above; no college s
 
 ## Regular-season statistics by year
 
-| Season | Team(s) | Coverage | G | SCK ALLOWED | STARTS | OFF SNAPS | PEN | PEN YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 5 | 5 | 0 | 0 | 0 | Unrecorded | Unrecorded | 0 | 0 | — | 0 | 0 | — | 0 |
+| Season | Team | Age | # | Coverage | G | SCK ALLOWED | STARTS | OFF SNAPS | PEN | PEN YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 22 | 72 | Through Week 5 | 5 | 0 | 0 | 0 | Unrecorded | Unrecorded | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 
-| Season | Team(s) | Coverage | G | SCK ALLOWED | STARTS | OFF SNAPS | PEN | PEN YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
+| Season | Team | Age | # | Coverage | G | SCK ALLOWED | STARTS | OFF SNAPS | PEN | PEN YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 22 | 72 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
 
 <!-- yearly-statistics:end -->

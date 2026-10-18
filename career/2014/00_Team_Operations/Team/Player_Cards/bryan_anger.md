@@ -1,5 +1,11 @@
 # Bryan Anger — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Bryan Anger career card](../../../../league_players/jacksonville_jaguars/assets/bryan_anger.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/bryan_anger.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bryan_Anger_punts_at_2008_Emerald_Bowl.JPG?width=500" alt="Bryan Anger" width="160">
 
@@ -137,14 +143,14 @@ Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Traini
 
 ## Regular-season statistics by year
 
-| Season | Team(s) | Coverage | G | PUNTS | YDS | AVG | LNG | IN20 | TB | NET YDS | NET AVG | RET ALLOWED | RET YDS ALLOWED | BLOCKED | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 5 | 5 | 25 | 1139 | 45.6 | 62 | 10 | 3 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | 0 |
+| Season | Team | Age | # | Coverage | G | PUNTS | YDS | AVG | LNG | IN20 | TB | NET YDS | NET AVG | RET ALLOWED | RET YDS ALLOWED | BLOCKED | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 25 | 19 | Through Week 5 | 5 | 25 | 1139 | 45.6 | 62 | 10 | 3 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | 0 |
 
 ## Playoff statistics by year
 
-| Season | Team(s) | Coverage | G | PUNTS | YDS | AVG | LNG | IN20 | TB | NET YDS | NET AVG | RET ALLOWED | RET YDS ALLOWED | BLOCKED | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
+| Season | Team | Age | # | Coverage | G | PUNTS | YDS | AVG | LNG | IN20 | TB | NET YDS | NET AVG | RET ALLOWED | RET YDS ALLOWED | BLOCKED | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 25 | 19 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
 
 <!-- yearly-statistics:end -->

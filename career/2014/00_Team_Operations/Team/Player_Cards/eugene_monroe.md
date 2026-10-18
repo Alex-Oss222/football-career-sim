@@ -1,5 +1,11 @@
 # Eugene Monroe — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Eugene Monroe career card](../../../../league_players/jacksonville_jaguars/assets/eugene_monroe.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/eugene_monroe.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/EugeneJ11.jpg?width=500" alt="Eugene Monroe" width="160">
 
@@ -128,14 +134,14 @@ Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) an
 
 ## Regular-season statistics by year
 
-| Season | Team(s) | Coverage | G | SCK ALLOWED | STARTS | OFF SNAPS | PEN | PEN YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 5 | 5 | 3 | 5 | 332 | Unrecorded | Unrecorded | 0 | 0 | — | 0 | 0 | — | 0 |
+| Season | Team | Age | # | Coverage | G | SCK ALLOWED | STARTS | OFF SNAPS | PEN | PEN YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 27 | 60 | Through Week 5 | 5 | 3 | 5 | 332 | Unrecorded | Unrecorded | 0 | 0 | — | 0 | 0 | — | 0 |
 
 ## Playoff statistics by year
 
-| Season | Team(s) | Coverage | G | SCK ALLOWED | STARTS | OFF SNAPS | PEN | PEN YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
+| Season | Team | Age | # | Coverage | G | SCK ALLOWED | STARTS | OFF SNAPS | PEN | PEN YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 27 | 60 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
 
 <!-- yearly-statistics:end -->

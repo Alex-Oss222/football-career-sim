@@ -6,10 +6,10 @@
 
 ### Regular season
 
-| Season | Club | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Jacksonville Jaguars | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 |
-| **Career** |  | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 |
+| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 | Jacksonville Jaguars | 22 | 72 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 |
+| **Career** |  |  |  | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 |
 
 ### Playoffs
 
@@ -20,5 +20,7 @@ No playoff games on record.
 None on record.
 
 [Jacksonville player card](../../2014/00_Team_Operations/Team/Player_Cards/charles_leno_jr.md)
+
+Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 
 Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: the number he wore in 2014 with the Chicago Bears (Jacksonville has not recorded one). [All Jacksonville Jaguars players](README.md).

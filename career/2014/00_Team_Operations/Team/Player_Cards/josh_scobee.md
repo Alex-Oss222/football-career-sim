@@ -1,5 +1,11 @@
 # Josh Scobee — 2014 Player Profile
 
+<!-- player-card:begin -->
+![Josh Scobee career card](../../../../league_players/jacksonville_jaguars/assets/josh_scobee.svg)
+
+[Career statistics](../../../../league_players/jacksonville_jaguars/josh_scobee.md)
+<!-- player-card:end -->
+
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Scobee.jpg?width=500" alt="Josh Scobee" width="160">
 
@@ -127,14 +133,14 @@ Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) an
 
 ## Regular-season statistics by year
 
-| Season | Team(s) | Coverage | G | FGM | FGA | FG% | XPM | XPA | PTS | LONG | FGM 0-19 | FGA 0-19 | FGM 20-29 | FGA 20-29 | FGM 30-39 | FGA 30-39 | FGM 40-49 | FGA 40-49 | FGM 50+ | FGA 50+ | KO | KO YDS | KO TB | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 5 | 5 | 8 | 10 | 80.0 | 13 | 13 | 37 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | 0 |
+| Season | Team | Age | # | Coverage | G | FGM | FGA | FG% | XPM | XPA | PTS | LONG | FGM 0-19 | FGA 0-19 | FGM 20-29 | FGA 20-29 | FGM 30-39 | FGA 30-39 | FGM 40-49 | FGA 40-49 | FGM 50+ | FGA 50+ | KO | KO YDS | KO TB | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 32 | 10 | Through Week 5 | 5 | 8 | 10 | 80.0 | 13 | 13 | 37 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | 0 |
 
 ## Playoff statistics by year
 
-| Season | Team(s) | Coverage | G | FGM | FGA | FG% | XPM | XPA | PTS | LONG | FGM 0-19 | FGA 0-19 | FGM 20-29 | FGA 20-29 | FGM 30-39 | FGA 30-39 | FGM 40-49 | FGA 40-49 | FGM 50+ | FGA 50+ | KO | KO YDS | KO TB | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
+| Season | Team | Age | # | Coverage | G | FGM | FGA | FG% | XPM | XPA | PTS | LONG | FGM 0-19 | FGA 0-19 | FGM 20-29 | FGA 20-29 | FGM 30-39 | FGA 30-39 | FGM 40-49 | FGA 40-49 | FGM 50+ | FGA 50+ | KO | KO YDS | KO TB | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 32 | 10 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
 
 <!-- yearly-statistics:end -->
