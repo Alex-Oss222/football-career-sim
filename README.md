@@ -26,7 +26,7 @@ An evidence-based NFL head-coaching career simulation centered on Alex-Lamar Sto
 | [archive](archive/README.md) | Superseded or quarantined material, excluded from ordinary runtime reads |
 | [docs](docs/update_workflow.md) | File ownership, dependencies and maintenance procedure |
 | [scripts](scripts/validate_repository.py) | Validation, readiness, weekly input build and close, generated views and private-snapshot advance |
-| [runtime](runtime/README.md) | Shared game kernel (2013.x), authenticated private-service interface and public statbook; no private career state is committed here |
+| [runtime](runtime/README.md) | Shared game kernel (`KERNEL_VERSION` in `runtime/__init__.py`, currently 2014.6), authenticated private-service interface and public statbook; no private career state is committed here |
 
 ## Work on the repository
 

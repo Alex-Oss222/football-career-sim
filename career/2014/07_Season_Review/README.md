@@ -33,7 +33,7 @@ Opening readiness rereads the current 2014 handoff, so reopening a team gate or 
 
 ## Simulation after transfer
 
-Passing a handoff check does not release games. Each season needs its own registered kernel, era rules, fixtures, legal rosters, financial control and closure acceptance. The existing six game-release gates remain in force. Stats and receipts are always season-qualified, and a missing successor input never falls back to 2013. The user's choice to start the next season cannot silently select draft targets, renew contracts, change roles or clear injuries.
+Passing a handoff check does not release games. Each season needs its own registered kernel, era rules, fixtures, legal rosters, financial control and closure acceptance. The season's seven game-release gates (`RELEASE_GATES` in `runtime/seasons.py`; `runtime/season_readiness.json`) remain in force. Stats and receipts are always season-qualified, and a missing successor input never falls back to 2013. The user's choice to start the next season cannot silently select draft targets, renew contracts, change roles or clear injuries.
 
 <!-- folder-files -->
 ## Files in this folder

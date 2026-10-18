@@ -31,7 +31,7 @@ Each training phase has two substantive files: `staff_plan.md` for intended work
 
 Across the year, each player has two assessment records. The opening assessment in `00_Team_Operations/Team/Player_Cards` retains its starting baseline and adds dated updates from rookie camp through the postseason. The separate final assessment belongs in `07_Season_Review/Player_Assessments` after the season closes. Preserve former players' history and earlier yearly statistics. Individual development plans own proposed work; they are not a third set of player evaluations.
 
-Open competitions live under `04_Training_Camp_and_Preseason/Position_Battles`, grouped by unit, then position, then the actual contested spot. The existing 2014 cards are WR1, WR3, left guard, the conditional right-guard alternative, Edge 1 and long snapper. A vacancy or a cross-training exercise does not create a battle. Compare the actual candidates and their relevant work, link the source reports, and retain the dated decision when a competition closes. The depth chart remains the owner of current assignments.
+Open competitions live under `04_Training_Camp_and_Preseason/Position_Battles`, grouped by unit, then position, then the actual contested spot. The existing 2014 cards are WR1, WR3, left guard, the conditional right-guard alternative, Edge 1 and long snapper (all six resolved August 30, 2014 and kept as dated history; no 2014 competition is open). A vacancy or a cross-training exercise does not create a battle. Compare the actual candidates and their relevant work, link the source reports, and retain the dated decision when a competition closes. The depth chart remains the owner of current assignments.
 
 ## Season continuity
 

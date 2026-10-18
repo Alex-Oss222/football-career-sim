@@ -2,7 +2,7 @@
 
 [2014 calendar](../2014/Calendar.md) | [Sources and verification](../../library/2015_historical_calendar.md) | [Living coaching profiles](../coaching_profiles/README.md)
 
-**Historical scheduling reference, prepared September 29, 2026.** This is the real 2015 calendar, including Jacksonville's announced practices and fixtures. The branch remains February 2, 2014. Every future event is unplayed; this file records no participation, transaction, clearance, coaching change or result. Times are **Eastern**, including London and away games. Source letters refer to the verification register.
+**Historical scheduling reference, prepared September 29, 2026.** This is the real 2015 calendar, including Jacksonville's announced practices and fixtures. Prepared at the February 2, 2014 clock; the current clock is in [Document 5](../../state/05_Current_Season_State.md). Every future event is unplayed; this file records no participation, transaction, clearance, coaching change or result. Times are **Eastern**, including London and away games. Source letters refer to the verification register.
 
 ## January and February: finish the 2014 season
 
@@ -107,7 +107,7 @@ Later daily camp sessions are not specified by this public release. Use the exac
 | September 10, midnight | Top 51 accounting ends | L |
 | September 10; September 13 to 14 | League opening weekend | B/K |
 
-No signing or list placement occurs automatically. A readiness check and the required engine release must precede a branch game. The [E1/E2 decision](../../runtime/2014_engine_decisions.md) remains a design record, not an implemented strength or live-injury system.
+No signing or list placement occurs automatically. A readiness check and the required engine release must precede a branch game. The [E1/E2 policy](../../runtime/2014_engine_decisions.md) is implemented in the 2014 kernels; a 2015 game still needs its own registered season release.
 
 ## Jacksonville regular season: actual historical schedule
 
