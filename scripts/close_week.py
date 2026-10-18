@@ -37,6 +37,11 @@ the journaled packet, so the paused record (and the closed record after it)
 binds each sheet's sha256 ("defensive_sheets"); a resume or a re-closure
 whose frozen package carries another sheet, or a sheet the pause did not, is
 refused before any draw (overnight review fix, October 17, 2026).
+
+Decision queue (state/decision_queue.json): an open item that holds this
+week, or a part of its committed call sheet, refuses --close and --close
+--continue with exit status 1 before the readiness check, the private
+snapshot or any draw; the dry run reports it (runtime.decision_queue).
 """
 from __future__ import annotations
 
@@ -414,9 +419,31 @@ def main():
         for error in errors:
             print("- " + error)
         return 1
+    # The decision queue: never inside close_slate, so no slate is refused
+    # partway; imported here so nothing that draws a game loads it.
+    from runtime import decision_queue
+    sheet = decision_queue.committed_sheet(args.season, args.week, ROOT)
+    checks = [decision_queue.event("week_close", args.season, args.week)]
+    checks += [decision_queue.event("call_sheet_part", args.season, args.week, part=p)
+               for p in (decision_queue.sheet_parts(sheet) if sheet else [])]
+    held = decision_queue.blocking_errors(checks, ROOT)
     if not args.close:
+        for line in held:
+            print("Note: " + line + " (a --close would be refused)")
         print("Dry run: %d games in %s; add --close to close them." % (len(package["games"]), package_path.name))
         return 0
+    if held:
+        print("WEEK_CLOSE: BLOCKED\n- " + "\n- ".join(held))
+        if args.answer:
+            postseason_week = any(g.get("game_type") == "postseason" for g in package["games"])
+            print("- The paused game record %s is unchanged. Document 5 and the decision queue must not change "
+                  "while a game is paused: revert the edit that opened this item, then rerun the same --continue."
+                  % paths.paused_game(args.week, postseason_week).relative_to(paths.root))
+        elif paths.cache(args.week, "results").exists():
+            print("- Part of this week's slate has already closed (%s). Revert the edit that opened this item and "
+                  "rerun: the closed events replay unchanged. Never void or redraw the week for it."
+                  % paths.cache(args.week, "results").relative_to(paths.root))
+        return 1
     answer = load_answer(args.answer) if args.answer else None
     readiness = subprocess.run([sys.executable, str(ROOT / "scripts/check_game_readiness.py"), "--season", str(args.season)],
                                capture_output=True, text=True)
