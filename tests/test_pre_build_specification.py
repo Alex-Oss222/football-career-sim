@@ -150,22 +150,6 @@ def season_root(tmp):
 
 
 class ReleasePreconditionTests(unittest.TestCase):
-    def test_repository_holds_before_the_flip(self):
-        # A precondition of the 2014.6 release only: after the flip the Week 5
-        # sheet and package are frozen by design.
-        from runtime import KERNEL_VERSION
-        if KERNEL_VERSION != "2014.5":
-            self.skipTest("kernel 2014.6 released; the release preconditions no longer apply")
-        result = preconditions.report(ROOT, 2014, 5)
-        self.assertTrue(result["ok"], result)
-        # The service journal is never visible here: the check is unverified,
-        # never a pass on no evidence, and release mode refuses it.
-        journal = result["checks"][1]
-        self.assertEqual(journal["status"], "unverified", journal)
-        self.assertFalse(preconditions.report(ROOT, 2014, 5, release=True)["ok"])
-        slate = result["checks"][3]
-        self.assertEqual(slate["status"], "pass", slate)
-
     def test_clean_root_holds(self):
         with tempfile.TemporaryDirectory() as tmp:
             root, _ = season_root(tmp)

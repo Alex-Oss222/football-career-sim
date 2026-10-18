@@ -42,16 +42,11 @@ if str(ROOT) not in sys.path:
 
 from runtime.rules import PRESEASON, active_limit
 from runtime.seasons import SeasonPaths, require_game_release, require_receipt_season
-from scripts.close_week import (PROTAGONIST, as_json, continuation_decisions, load_answer, read_paused,
-                                team_input, write_paused)
+from scripts.close_week import (PROTAGONIST, as_json, continuation_decisions, controlled_team_id, default_detail,
+                                load_answer, read_paused, team_input, write_paused)
 
 PAUSED = 2
 MARKER = "<!-- box-score event=%s team=%s -->\n<!-- /box-score -->\n"
-
-
-def controlled_team_id(game):
-    side = "home_input" if game["home"] == PROTAGONIST else "away_input"
-    return game[side]["team_id"]
 
 
 def the_game(package):
@@ -78,16 +73,6 @@ def gate_errors(package, paths, number):
     errors += check_inputs(package, controlled_players_from_roster(paths.roster), PROTAGONIST,
                            expected_games=1, active_limit=active_limit(PRESEASON))
     return errors
-
-
-def default_detail(decision):
-    """Kernel 2014.6 batch B15 (W2c): what the depth_order default does (the
-    entrant and the slot moves of the autonomous rule); empty for a pause
-    record without them."""
-    if "default_entrant" not in decision:
-        return ""
-    moves = ", ".join("%s %s to %s" % (m["player"], m["from"], m["to"]) for m in decision.get("default_moves") or ())
-    return " (enters: %s; moves: %s)" % (decision.get("default_entrant") or "none", moves or "none")
 
 
 def describe_pause(record, record_path, number, season):
