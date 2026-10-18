@@ -4,6 +4,7 @@
 **Structure source:** [`library/2013_nfl_awards_structure.md`](../../../library/2013_nfl_awards_structure.md) (categories and calendar only).
 **Method:** [`methodology.json`](methodology.json), committed before any winner was drawn.
 **Record:** [`weekly_and_monthly.md`](weekly_and_monthly.md) (generated), with every draw in [`results.json`](results.json).
+**Built by:** `scripts/research/build_2013_honours_evidence.py SOURCE_DIR PACKAGE...` writes [`season_honours_evidence.json`](season_honours_evidence.json); it needs the frozen 2013 weekly TeamInput packages from the transient `.sim_cache`, so a fresh session cannot rerun it.
 
 ## How winners are chosen
 

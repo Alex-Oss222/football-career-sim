@@ -13,6 +13,13 @@ Preparation carried out before the March 11 league-year opening. Later dated ame
 | [Contract preparation](../00_Team_Operations/Finances/player_contracts/README.md) | Current terms and free-agency/control status. |
 | [Trade preparation](../00_Team_Operations/Trades/targets_and_offers/README.md) | Targets and proposed exchanges; execution is recorded separately. |
 
+## Draw code
+
+Each closed draw's results file pins the drawing script's bytes as `code_sha256`; compare `git show COMMIT:scripts/NAME.py | sha256sum` with it. Each script refuses a second `--close`.
+
+- Futures ([futures_results.json](futures_results.json)): drawn by `scripts/futures_2014.py` at commit 8f85462; later edits moved paths only.
+- League year ([league_year_results.json](league_year_results.json)): drawn by `scripts/league_year_2014.py` at commit 34c5986; later edits moved paths only.
+
 <!-- folder-files -->
 ## Files in this folder
 

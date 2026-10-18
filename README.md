@@ -22,11 +22,12 @@ An evidence-based NFL head-coaching career simulation centered on Alex-Lamar Sto
 | [foundation](foundation/01_Project_Instructions.md) | Stable operating rules, active sourcebook, authority, event-record protocol, engine specification and templates |
 | [state](state/05_Current_Season_State.md) | Current coach-known register and compact resume snapshot |
 | [career](career/README.md) | Season-specific plans, dated results, annual event indexes and readable current views |
-| [library](library/2013_jacksonville_master_calendar.md) | Sourced research; each file states its permitted information date |
+| [library](library/README.md) | Sourced research; each file states its permitted information date. [Data index](library/data/README.md) |
 | [archive](archive/README.md) | Superseded or quarantined material, excluded from ordinary runtime reads |
-| [docs](docs/update_workflow.md) | File ownership, dependencies and maintenance procedure |
-| [scripts](scripts/validate_repository.py) | Validation, readiness, weekly input build and close, generated views and private-snapshot advance |
+| [docs](docs/README.md) | File ownership, dependencies, maintenance procedure and report methods |
+| [scripts](scripts/README.md) | Validation, readiness, weekly input build and close, generated views and private-snapshot advance |
 | [runtime](runtime/README.md) | Shared game kernel (`KERNEL_VERSION` in `runtime/__init__.py`, currently 2014.6), authenticated private-service interface and public statbook; no private career state is committed here |
+| [tests](tests/) | Regression tests; run with `python scripts/run_suite_parallel.py`, as CI does |
 
 ## Work on the repository
 

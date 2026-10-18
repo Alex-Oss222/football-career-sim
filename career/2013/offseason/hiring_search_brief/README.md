@@ -24,3 +24,16 @@ Priority alone is not permission to accept an offer. A general preference is not
 - `library/2013_coaching_market_pre_hire.md` — public team context available at the January 14 cutoff.
 
 The archived historical comparator at `archive/2013_coaching_market_historical_comparator.md` is not a hiring-search source because it contains later real-world outcomes.
+
+## Files
+
+The user's brief, in the order written. Each file's own heading or opening line names its subject; this list adds no summary.
+
+- [00_overview_and_universal_terms.md](00_overview_and_universal_terms.md)
+- [01_jacksonville_jaguars.md](01_jacksonville_jaguars.md)
+- [02_arizona_cardinals.md](02_arizona_cardinals.md)
+- [03_philadelphia_eagles.md](03_philadelphia_eagles.md)
+- [04_chicago_bears.md](04_chicago_bears.md)
+- [05_interview_positions.md](05_interview_positions.md)
+- [06_bountygate_answer.md](06_bountygate_answer.md)
+- [07_jacksonville_counter_offer.md](07_jacksonville_counter_offer.md)

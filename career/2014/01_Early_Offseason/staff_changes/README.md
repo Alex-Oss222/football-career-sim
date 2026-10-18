@@ -46,6 +46,15 @@ This clarification ([spring staff responsibilities](../../02_Offseason_Training/
 
 The user may change Jacksonville's discretionary policy prospectively. A policy change cannot waive league restrictions or undo a closed outcome. Interview permission, the coach's decision to participate, an offer, release/contract handling where applicable, and acceptance remain distinct. The frozen January method and result files are historical artifacts and are not rewritten by this clarification.
 
+## Draw code and base rates
+
+Each closed draw's results file pins the drawing script's bytes as `code_sha256`; compare `git show COMMIT:scripts/NAME.py | sha256sum` with it. Each script refuses a second `--close`.
+
+- January carousel ([carousel_results.json](carousel_results.json)): drawn by `scripts/coaching_carousel.py` at commit 35f1276; later edits changed paths and the page renderer only, and the draw code is unchanged.
+- February deferred procedure ([carousel_deferred_results.json](carousel_deferred_results.json)): drawn by `scripts/coaching_carousel_deferred.py` at commit b8812d2; later edits moved paths only. Its `entry75_code_sha256` matches `scripts/coaching_carousel.py` at commit 42f785d.
+- Special teams coordinator search ([st_search_results.json](st_search_results.json)): drawn by `scripts/st_coordinator_search.py` at commit 10ba5f7; later edits moved paths only.
+- Base rates: `library/data/2012_hc_change_base_rates.json`, which the carousel method reads, is built by `scripts/research/build_hc_change_base_rates.py GAMES_CSV` from nfldata `games.csv` (the source digest is inside the JSON). Its digest is the carousel results' `rates_sha256`.
+
 <!-- folder-files -->
 ## Files in this folder
 

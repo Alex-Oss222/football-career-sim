@@ -9,3 +9,9 @@ engine_state/
 
 # Large transient simulation inputs/results used only during a run.
 .sim_cache/
+
+# Local and CI by-products (not a privacy measure).
+.pytest_cache/
+*.egg-info/
+.DS_Store
+readiness-report.txt
