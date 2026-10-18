@@ -101,6 +101,14 @@ A productive small-school inside linebacker with a downhill style and coverage-u
 
 No NFL season. The college record is described qualitatively above; no college statistic is entered as an NFL figure.
 
+## Dated coaching updates
+
+### September 29 to October 4, 2014 | Active for Pittsburgh
+
+Active for the first time this season. Stone's packet dresses him in place of Hoskins for additional linebacker and coverage-unit depth, citing Pittsburgh's run game, Stanford's injury and Posluszny's late projected clearance; Westhoff checked him in the active coverage rotation in Friday's kicking period. Nothing charged to him on the recorded reps.
+
+Source: [Week 5 record](../../../05_Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

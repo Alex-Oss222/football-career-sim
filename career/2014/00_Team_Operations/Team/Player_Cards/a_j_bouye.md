@@ -156,6 +156,12 @@ The nickel for San Diego with Poyer on his hold, the packet's job kept whether o
 
 Source: [Week 4 record](../../../05_Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above.
 
+### September 29 to October 4, 2014 | The nickel again
+
+The nickel for Pittsburgh in Stone's Dime group and on the game chart, Poyer still on his hold. Thursday's pressure periods gave him the replacement rusher's job in Replace Field, taking Mincey's field-edge rush and the field contain while Mincey dropped to the hot and curl lane, with the slot distribution in Replace Boundary and the interior-mug presentation. Nothing charged to him on the recorded reps.
+
+Source: [Week 5 record](../../../05_Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

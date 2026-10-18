@@ -150,6 +150,12 @@ All 64 defensive snaps with seven tackles, five solo, and a pressure: the sack o
 
 Source: [Week 4 game record](../../../05_Regular_Season/Games/Week_04/output.md) and its public receipt. This coaching update preserves the opening grades above.
 
+### September 29 to October 4, 2014 | Cleared Friday
+
+Reassessed Monday, September 29, with no change and out of the Monday walkthrough and the Wednesday and Thursday practices, Bush rehearsing the linebacker contingency with Sio Moore, Telvin Smith and the next medically eligible linebackers in the recorded order. Cleared Friday, October 3, his projected date; Stone's packet allows Friday work after an actual clearance within the communicated limits, none was communicated, and he took the Friday practice and the Saturday walkthrough in full. Restored to his base role for Pittsburgh by Stone's decision; no designation on the Friday report. No football finding attaches to the instruction.
+
+Source: [Week 5 record](../../../05_Regular_Season/Games/Week_05/output.md) and the [medical history](../../Medical/medical_history.md#september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

@@ -8,7 +8,7 @@
 | [Week 2](Week_02/README.md) | September 14 | at Washington | 1 p.m. | **Played: Jacksonville 24, Washington 7** |
 | [Week 3](Week_03/README.md) | September 21 | Indianapolis | 1 p.m. | **Played: Jacksonville 38, Indianapolis 34** |
 | [Week 4](Week_04/README.md) | September 28 | at San Diego | 4:05 p.m. | **Played: San Diego 21, Jacksonville 20** |
-| [Week 5](Week_05/README.md) | October 5 | Pittsburgh | 1 p.m. | Next; preparation opens September 29 |
+| [Week 5](Week_05/README.md) | October 5 | Pittsburgh | 1 p.m. | Next; preparation closed October 4, call sheet frozen, game day reached |
 | [Week 6](Week_06/README.md) | October 12 | at Tennessee | 1 p.m. | Not started |
 | [Week 7](Week_07/README.md) | October 19 | Cleveland | 1 p.m. | Not started |
 | [Week 8](Week_08/README.md) | October 26 | Miami | 1 p.m. | Not started |

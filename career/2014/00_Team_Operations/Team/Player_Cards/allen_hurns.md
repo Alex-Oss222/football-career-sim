@@ -107,6 +107,14 @@ A tall outside receiver from Miami with a productive senior season, body control
 
 No NFL season. The college record is described qualitatively above; no college statistic is entered as an NFL figure.
 
+## Dated coaching updates
+
+### September 29 to October 4, 2014 | First relief receiver
+
+Stone's Pittsburgh order makes him the first general relief receiver and keeps him the second punt returner behind Hawkins, the prepared alternative in Westhoff's Friday return period. The fourth receiver on the chart, ahead of Nicks, whose relief is limited to the prepared X series. Nothing charged to him on the recorded reps. Active for Week 5.
+
+Source: [Week 5 record](../../../05_Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

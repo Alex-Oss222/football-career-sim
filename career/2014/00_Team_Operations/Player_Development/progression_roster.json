@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "season": 2014,
-  "as_of": "September 28, 2014, after the Week 4 game at San Diego",
+  "as_of": "October 5, 2014, game day against Pittsburgh at EverBank Field before kickoff; no transaction since September 8. Stanford and Phillips cleared September 29, Butler's hold was released October 2 and Posluszny cleared October 3; Poyer is out for Week 5 on his hold",
   "roster_source": "career/2014/00_Team_Operations/Team/Roster/roster.md",
   "continuity_source": "career/2014/00_Team_Operations/Player_Development/2013_exit_player_index.json",
   "policy": "Roster controls eligibility. The exit index identifies Jacksonville 2013 continuity only. Regenerate after any transaction or draft addition before progression is resolved.",
