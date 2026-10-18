@@ -17,6 +17,10 @@ module after every closed game:
   to his career statistics. Former players' pages carry none. Only the block
   is written.
 
+``jacksonville_rows`` gives the Season | Team | Age | # lead of the season rows
+in the statistics tables at the bottom of each Jacksonville player card
+(``scripts/update_player_cards.py`` writes them), by the same rules.
+
 Every statistic is arithmetic on the committed game records (the receipts the
 statbook reads), with the repository's own field names, loaders and passer
 rating; totals equal ``runtime.statbook.aggregate_receipts``. A value the
@@ -622,10 +626,11 @@ def card_data(root=ROOT):
         for p in ps:
             if p["number_note"].startswith("other:") and len(ps) > 1:
                 p["number"], p["number_note"] = None, None
+    # His listing and Week 1 row stay on the record (``_listed``, ``_w1``) so a season's number for
+    # another club than the one he ended it with (jacksonville_rows) comes from season_number too.
     for p in players:
-        listed, w1 = p.pop("_listed"), p.pop("_w1")
         for year, s in p["seasons"].items():
-            s["number"] = season_number(year, s["clubs"][-1], p, listed, w1, ident.codes)
+            s["number"] = season_number(year, s["clubs"][-1], p, p["_listed"], p["_w1"], ident.codes)
     club_of_code = {code: club for club, code in ident.codes.items()}
     for p in players:
         note = p["number_note"]
@@ -1097,6 +1102,46 @@ def check_pages(root, pages):
         else:
             errors.append("Jacksonville player card page career card stale: %s" % rel)
     return errors
+
+
+# ------------------------------------------------------------------ Jacksonville player card season rows
+# The regular-season and playoff tables at the bottom of each Jacksonville player card
+# (scripts/update_player_cards.py) count Jacksonville's games only, so their season row leads with
+# Jacksonville, his age on the league's opening game of that season and the number listed for him
+# with Jacksonville that season, by the same functions as his league page's season rows.
+def jacksonville_rows(year, names, root=ROOT, data=None):
+    """{card name: (team, age, number)} for the ``year`` row of each named Jacksonville player card;
+    None is N/A. A card is his league player's by the reverse link's own rule (profile_for): the
+    current roster's cards exactly as their career card blocks are matched (page_players over
+    jacksonville_profiles), then each other named card (a former player's) among the remaining
+    players. Age is age_on his league card's birth date at the season's opening game
+    (opening_dates); # is season_number for Jacksonville that season, so the card and his league
+    page cannot disagree. A card with no league player (no game on record) takes its age from the
+    same birth-date sources (Identity.birth_date) and has no number: Jacksonville records none."""
+    root = Path(root)
+    data = card_data(root) if data is None else data
+    players = data["players"]
+    ident = Identity(root)
+    schedule = SeasonPaths(year, root).schedule
+    opening = opening_dates(root, (year,))[year] if schedule.is_file() else None
+    names = sorted(set(names))
+    profiles = jacksonville_profiles(root)
+    by_page = page_players(players, profiles, ident.branch)
+    found = {name: by_page[page] for name, page in profiles.items() if page in by_page and name in names}
+    taken = {id(p) for p in by_page.values()}
+    others = {name: name for name in names if name not in profiles}
+    found.update(page_players([p for p in players if id(p) not in taken], others, ident.branch))
+    out = {}
+    for name in names:
+        p = found.get(name)
+        if p is not None:
+            dob = p["birth_date"]
+            number = season_number(year, JAX, p, p["_listed"], p["_w1"], ident.codes)
+        else:
+            gsis = ident.gsis(name, year)
+            dob, number = ident.birth_date({name}, gsis, ident.week1_row(gsis, name), name), None
+        out[name] = (JAX, age_on(dob, opening) if opening else None, number)
+    return out
 
 
 def _build(root):

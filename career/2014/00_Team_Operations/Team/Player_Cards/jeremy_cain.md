@@ -132,14 +132,14 @@ Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Traini
 
 ## Regular-season statistics by year
 
-| Season | Team(s) | Coverage | G | LONG SNAPS | FG SNAPS | TRY SNAPS | PUNT SNAPS | BAD SNAPS | PEN | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 5 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded |
+| Season | Team | Age | # | Coverage | G | LONG SNAPS | FG SNAPS | TRY SNAPS | PUNT SNAPS | BAD SNAPS | PEN | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 34 | N/A | Through Week 5 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded |
 
 ## Playoff statistics by year
 
-| Season | Team(s) | Coverage | G | LONG SNAPS | FG SNAPS | TRY SNAPS | PUNT SNAPS | BAD SNAPS | PEN | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
+| Season | Team | Age | # | Coverage | G | LONG SNAPS | FG SNAPS | TRY SNAPS | PUNT SNAPS | BAD SNAPS | PEN | ST TKL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2014 | Jacksonville Jaguars | 34 | N/A | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
 
 <!-- yearly-statistics:end -->

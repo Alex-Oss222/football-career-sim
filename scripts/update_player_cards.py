@@ -4,6 +4,10 @@
 Each year's opening card remains intact through the season. Its dated coaching
 updates are authored from event evidence, never generated from statistical totals.
 The separate final assessment belongs to the season review after season close.
+Each season row leads with Season | Team | Age | #, as on the league player
+pages: Jacksonville, whose games the tables count, his age on the league's
+opening game of that season and the number listed for him with Jacksonville
+that season, from runtime.player_cards.jacksonville_rows; N/A when not on record.
 """
 import argparse
 import json
@@ -19,6 +23,7 @@ from runtime.statbook import aggregate_receipts
 from runtime.stat_tables import POSITION_GROUPS, GAMES, RETURNS, col, derived, avg, pct
 from runtime.seasons import SeasonPaths, require_receipt_season
 from scripts.player_photos import Photos, place_block
+from runtime import player_cards
 START = '<!-- yearly-statistics:start -->'
 END = '<!-- yearly-statistics:end -->'
 WORKING = '**Profile status:** Working player card'
@@ -129,47 +134,70 @@ def stat_values(player,pos,period,closed=False,postseason=False):
             values.append(f'{value:g}' if isinstance(value,(int,float)) else str(value))
     return label,values
 
-def stats_block(year,player,pos,periods,old='',root=ROOT):
+LEAD = ['Season', 'Team', 'Age', '#', 'Coverage']
+
+def season_rows(year, names, root=ROOT):
+    """{card name: (team, age, number)} for the year's season row, by the league player pages' own
+    rules (runtime.player_cards.jacksonville_rows). A root without the league records (no
+    repository map, as in a test fixture) has none on record: its rows read N/A."""
+    root = Path(root)
+    if not (root/'docs/repository_map.json').is_file():
+        return {}
+    return player_cards.jacksonville_rows(year, names, root)
+
+def lead_cells(year, row=None):
+    """Season | Team | Age | # for a season row; ``row`` is (team, age, number), None is N/A."""
+    team, age, number = row or (player_cards.JAX, None, None)
+    return [str(year), team, *(player_cards.N_A if v is None else str(v) for v in (age, number))]
+
+def stats_block(year,player,pos,periods,old='',root=ROOT,row=None):
     lines = [START]
     for post,heading in [(False,'Regular-season statistics by year'),(True,'Playoff statistics by year')]:
         status,values = stat_values(player,pos,periods[post],season_is_complete(year,root),post)
-        header = '| '+' | '.join(['Season','Team(s)','Coverage',*[c[0] for c in columns(pos)]])+' |'
+        header = '| '+' | '.join([*LEAD,*[c[0] for c in columns(pos)]])+' |'
         prior = section(old,heading)
         old_header = next((l for l in prior.splitlines() if l.startswith('| Season |')),None)
         rows = [l for l in prior.splitlines() if re.match(r'^\| \d{4} \|',l) and not l.startswith(f'| {year} |')]
         if rows and old_header!=header:
             raise ValueError('Position/history columns changed; preserve older rows in a separate position block')
-        rows += ['| '+' | '.join([str(year),'Jacksonville',status,*values])+' |']
-        lines += ['', '## '+heading,'',header,'| '+' | '.join(['---']*(3+len(values)))+' |',*rows]
+        rows += ['| '+' | '.join([*lead_cells(year,row),status,*values])+' |']
+        lines += ['', '## '+heading,'',header,'| '+' | '.join(['---']*(len(LEAD)+len(values)))+' |',*rows]
     return '\n'.join([*lines,'',END])
 
-def refresh_text(text,year,player,pos,periods,root=ROOT):
+def refresh_text(text,year,player,pos,periods,root=ROOT,row=None):
+    """The card with its statistics block current; ``row`` is his season_rows entry (None: N/A)."""
     if START not in text or END not in text:
         raise ValueError('Missing statistics boundaries')
     old = text.split(START,1)[1].split(END,1)[0]
-    return text.split(START,1)[0]+stats_block(year,player,pos,periods,old,root)+text.split(END,1)[1]
+    return text.split(START,1)[0]+stats_block(year,player,pos,periods,old,root,row)+text.split(END,1)[1]
+
+def card_name(text):
+    """The player name in a card's title line, or None."""
+    title = re.search(r'^# (.+?) — ',text,re.M)
+    return title[1] if title else None
 
 def refresh_cards(year,root=ROOT,check=False):
     periods = {p:period_data(year,p,root) for p in (False,True)}
     photos = Photos(root)
     errors = []
-    for path in sorted(SeasonPaths(year, root).record('player_profiles').glob('*.md')):
-        if path.name in ('README.md','TEMPLATE.md'):
-            continue
+    cards = [path for path in sorted(SeasonPaths(year, root).record('player_profiles').glob('*.md'))
+             if path.name not in ('README.md','TEMPLATE.md')]
+    names = [card_name(path.read_text(encoding='utf-8')) for path in cards]
+    identity = season_rows(year, [name for name in names if name], root)
+    for path in cards:
         text = path.read_text(encoding='utf-8')
         if text.count(START) != 1 or text.count(END) != 1 or not text.rstrip().endswith(END):
             errors.append(f'{path.relative_to(root)}: yearly statistics must be a single block at the bottom')
             continue
         if START not in text:
             continue
-        title = re.search(r'^# (.+?) — ',text,re.M)
+        name = card_name(text)
         pos = card_field(text, 'Position')
-        if not title or not any(pos in group[1] for group in POSITION_GROUPS):
+        if not name or not any(pos in group[1] for group in POSITION_GROUPS):
             errors.append(f'{path.relative_to(root)}: missing player identity or unsupported position')
             continue
-        name = title[1]
         try:
-            updated = refresh_text(text,year,name,pos,periods,root)
+            updated = refresh_text(text,year,name,pos,periods,root,identity.get(name))
             updated = place_block(updated, photos.lookup(name), name)
         except (ValueError, KeyError) as error:
             errors.append(f'{path.relative_to(root)}: {error}')

@@ -405,9 +405,10 @@ def final_assessment_errors(season: int, root: Path = ROOT, *,
     manifest = json.loads(_handoff_path(season, root).read_text(encoding='utf-8'))
     exit_sources = {_source_path(root, item['path']).resolve()
                     for item in manifest['gates']['exit_interviews']['evidence']}
-    from scripts.update_player_cards import START, END, refresh_text, period_data, section
+    from scripts.update_player_cards import START, END, refresh_text, period_data, section, season_rows
     try:
         periods = {post: period_data(season, post, root) for post in (False, True)}
+        identity = season_rows(season, [p.player for p in players], root)
     except (ValueError, OSError, KeyError) as error:
         return errors+[f'{season}: invalid final statistics evidence: {error}']
     for player in players:
@@ -431,7 +432,8 @@ def final_assessment_errors(season: int, root: Path = ROOT, *,
             errors.append(f'{path.relative_to(root)}: final statistics require a single block at the bottom')
             continue
         try:
-            if refresh_text(text, season, player.player, player.pos, periods, root) != text:
+            if refresh_text(text, season, player.player, player.pos, periods, root,
+                            identity.get(player.player)) != text:
                 errors.append(f'{path.relative_to(root)}: final statistics differ from season receipts')
         except ValueError as error:
             errors.append(f'{path.relative_to(root)}: {error}')
