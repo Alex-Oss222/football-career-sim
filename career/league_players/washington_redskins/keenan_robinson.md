@@ -8,8 +8,8 @@
 
 | Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Washington Redskins | 4 | 39 | 1 | 4 | 0 | 4 | 0 | 0 | 2 | 9.8 | 20 |
-| **Career** |  | 4 | 39 | 1 | 4 | 0 | 4 | 0 | 0 | 2 | 9.8 | 20 |
+| 2014 | Washington Redskins | 5 | 45 | 1 | 4 | 1 | 5 | 0 | 0 | 2 | 9.0 | 23 |
+| **Career** |  | 5 | 45 | 1 | 4 | 1 | 5 | 0 | 0 | 2 | 9.0 | 23 |
 
 ### Playoffs
 
@@ -19,4 +19,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 25, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Washington Redskins players](README.md).
+Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Washington Redskins players](README.md).

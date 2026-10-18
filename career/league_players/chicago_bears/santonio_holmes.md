@@ -9,8 +9,8 @@
 | Season | Club | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | New York Jets | 16 | 99 | 62 | 729 | 11.8 | 4 | 45.6 | 62.6 | 44 | 18 | 1 |
-| 2014 | Chicago Bears | 4 | 20 | 10 | 109 | 10.9 | 0 | 27.2 | 50.0 | 19 | 0 | 0 |
-| **Career** |  | 20 | 119 | 72 | 838 | 11.6 | 4 | 41.9 | 60.5 | 44 | 18 | 1 |
+| 2014 | Chicago Bears | 5 | 23 | 13 | 136 | 10.5 | 0 | 27.2 | 56.5 | 19 | 0 | 0 |
+| **Career** |  | 21 | 122 | 75 | 865 | 11.5 | 4 | 41.2 | 61.5 | 44 | 18 | 1 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).

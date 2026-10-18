@@ -8,8 +8,8 @@
 
 | Season | Club | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Arizona Cardinals | 3 | 4-6 | 66.7 | 41 | 7-7 | 100.0 | 19 | 2-3 | 0-0 | 2-3 | 6.3 |
-| **Career** |  | 3 | 4-6 | 66.7 | 41 | 7-7 | 100.0 | 19 | 2-3 | 0-0 | 2-3 | 6.3 |
+| 2014 | Arizona Cardinals | 4 | 6-8 | 75.0 | 41 | 10-10 | 100.0 | 28 | 2-3 | 0-0 | 4-5 | 7.0 |
+| **Career** |  | 4 | 6-8 | 75.0 | 41 | 10-10 | 100.0 | 28 | 2-3 | 0-0 | 4-5 | 7.0 |
 
 ### Playoffs
 
@@ -19,4 +19,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Arizona Cardinals players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Arizona Cardinals players](README.md).

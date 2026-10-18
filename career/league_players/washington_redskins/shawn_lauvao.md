@@ -8,8 +8,8 @@
 
 | Season | Club | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Washington Redskins | 4 | 4 | 268 | 1 | 17 | 0 | 0 | 0 | 0 | 67.0 |
-| **Career** |  | 4 | 4 | 268 | 1 | 17 | 0 | 0 | 0 | 0 | 67.0 |
+| 2014 | Washington Redskins | 5 | 5 | 342 | 1 | 21 | 0 | 0 | 0 | 0 | 68.4 |
+| **Career** |  | 5 | 5 | 342 | 1 | 21 | 0 | 0 | 0 | 0 | 68.4 |
 
 ### Playoffs
 
@@ -19,4 +19,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 25, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Washington Redskins players](README.md).
+Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Washington Redskins players](README.md).

@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Dallas Cowboys | 16 | 141 | 9 | 11 | 1 | 9 | 0 | 0 | 14 | 8.8 | 103 |
-| 2014 | Dallas Cowboys | 4 | 35 | 1 | 4 | 0 | 3 | 0 | 0 | 4 | 8.8 | 22 |
-| **Career** |  | 20 | 176 | 10 | 15 | 1 | 12 | 0 | 0 | 18 | 8.8 | 125 |
+| 2014 | Dallas Cowboys | 5 | 45 | 2 | 4 | 0 | 3 | 0 | 0 | 5 | 9.0 | 30 |
+| **Career** |  | 21 | 186 | 11 | 15 | 1 | 12 | 0 | 0 | 19 | 8.9 | 133 |
 
 ### Playoffs
 
@@ -25,4 +25,4 @@
 - AP Second-Team All-Pro (2013, OLB)
 - Pro Bowl selection (2013, OLB)
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).

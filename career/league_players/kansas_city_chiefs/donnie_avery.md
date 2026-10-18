@@ -9,8 +9,8 @@
 | Season | Club | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Kansas City Chiefs | 16 | 159 | 99 | 1,155 | 11.7 | 7 | 72.2 | 62.3 | 58 | 11 | 1 |
-| 2014 | Kansas City Chiefs | 4 | 35 | 22 | 256 | 11.6 | 1 | 64.0 | 62.9 | 61 | 0 | 1 |
-| **Career** |  | 20 | 194 | 121 | 1,411 | 11.7 | 8 | 70.5 | 62.4 | 61 | 11 | 2 |
+| 2014 | Kansas City Chiefs | 5 | 42 | 29 | 366 | 12.6 | 1 | 73.2 | 69.0 | 61 | 0 | 1 |
+| **Career** |  | 21 | 201 | 128 | 1,521 | 11.9 | 8 | 72.4 | 63.7 | 61 | 11 | 2 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 29, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).

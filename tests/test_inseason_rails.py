@@ -764,6 +764,10 @@ class ClosedWeekTests(unittest.TestCase):
         checked = 0
         for r in receipts:
             week = int(r["week"])
+            if week >= rails.load(2014).effective_from_week:
+                # From Week 5 the units come from the rails slate, not the
+                # Week 1 library (runtime.depth_library.team_input refuses).
+                continue
             prior = [x for x in receipts if int(x["week"]) < week]
             game = next(g for g in week_inputs.schedule(week, 2014) if g["away"] == r["away"] and g["home"] == r["home"])
             for team in (r["away"], r["home"]):
@@ -948,7 +952,9 @@ class CommittedDataTests(unittest.TestCase):
         # Week 5 two-point and kickoff rules and his recorded defensive-back
         # roles (Bouye nickel, Ball outside reserve) on a copy of the chart.
         from runtime import player_state
-        receipts = load_receipts(SeasonPaths(2014).receipts)
+        # The receipts before Week 5 (clock-relative: Week 5's own closed
+        # receipts carry its game injuries forward to Week 6).
+        receipts = [r for r in load_receipts(SeasonPaths(2014).receipts) if int(r["week"]) < 5]
         sheet = json.loads((SeasonPaths(2014).week_folder(4) / "call_sheet.json").read_text())["offensive_call_sheet"]
         stand_in = {"schema": player_state.BINDING_SCHEMA, "league_year": 2014,
                     "manifest_sha256": player_state.manifest_sha256(), "commitment": "0" * 64}
@@ -968,22 +974,39 @@ class CommittedDataTests(unittest.TestCase):
             def depth_chart(self):
                 return chart if self.year == 2014 else super().depth_chart
 
+        # Once Week 5 has closed, the current roster carries the game's own
+        # injuries forward, so Jacksonville's unit is the one that dressed (its
+        # closed full receipt, as observables.rebuild_record does); the test is
+        # about the background clubs' identity join.
+        from runtime import observables
+        own = [r for r in load_receipts(SeasonPaths(2014).receipts)
+               if int(r["week"]) == 5 and week_inputs.PROTAGONIST in (r["away"], r["home"])]
+        dressed = mock.patch.object(week_inputs, "jacksonville_input", return_value=dict(
+            observables._jacksonville_from_receipt(own[0], week_inputs.PROTAGONIST))) if own else mock.patch.object(
+            week_inputs, "PROTAGONIST", week_inputs.PROTAGONIST)
         with mock.patch.object(week_inputs, "SeasonPaths", Paths), \
-                mock.patch.object(player_state, "binding", return_value=stand_in):
+                mock.patch.object(player_state, "binding", return_value=stand_in), dressed:
             package = week_inputs.build_package(5, receipts, sheet, build_week_inputs.AVERAGE_ANCHORS, 2014,
                                                 decisions=decisions)
         self.assertEqual(len(package["strength_coverage"]), 30)
         for team, cov in package["strength_coverage"].items():
             self.assertFalse([f for f in cov["fallbacks"] if f["reason"].startswith("identity")], team)
-        self.assertEqual(check_inputs(package, set(), "Jacksonville Jaguars", expected_games=15), [])
+        errors = check_inputs(package, set(), "Jacksonville Jaguars", expected_games=15)
+        if own:  # the receipt basis lists the 46 who dressed with no depth rank (observables.RECEIPT_BASIS)
+            errors = [e for e in errors if not (e.startswith("Jacksonville Jaguars:") and "explicit depth order" in e)]
+        self.assertEqual(errors, [])
         self.assertEqual(package["rails"]["as_of"], rails.load(2014).manifest["as_of"])
         for game in package["games"]:
             for side in ("away_input", "home_input"):
                 self.assertTrue(all("gsis_id" not in p for p in game[side]["roster"]))
 
     def test_the_weekly_record_renders_and_no_page_is_written_early(self):
+        # Clock-relative (Week 5 closure, October 5, 2014): the page exists
+        # once the week has closed receipts, never before; check() holds
+        # either way.
         self.assertEqual(render_inseason_rails.check(2014), [])
-        self.assertFalse(render_inseason_rails.page_path(2014, 5).exists())
+        closed = any(int(r["week"]) == 5 for r in load_receipts(SeasonPaths(2014).receipts))
+        self.assertEqual(render_inseason_rails.page_path(2014, 5).exists(), closed)
         text = render_inseason_rails.render(2014, 5)
         self.assertIn("## Held additions", text)
         meta = json.loads(re.search(r"<!-- rails-week: (\{.*?\}) -->", text).group(1))

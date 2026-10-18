@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Houston Texans | 16 | 75 | 0 | 7 | 0 | 2 | 0 | 0 | 0 | 4.7 | 0 |
-| 2014 | Houston Texans | 4 | 14 | 1 | 4 | 29 | 2 | 0 | 0 | 0 | 3.5 | 0 |
-| **Career** |  | 20 | 89 | 1 | 11 | 29 | 4 | 0 | 0 | 0 | 4.5 | 0 |
+| 2014 | Houston Texans | 5 | 19 | 1 | 5 | 29 | 2 | 0 | 0 | 0 | 3.8 | 0 |
+| **Career** |  | 21 | 94 | 1 | 12 | 29 | 4 | 0 | 0 | 0 | 4.5 | 0 |
 
 ### Playoffs
 
@@ -20,4 +20,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Houston Texans players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Houston Texans players](README.md).

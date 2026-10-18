@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Minnesota Vikings | 16 | 89 | 9 | 8 | 0 | 7 | 1 | 1 | 17 | 5.6 | 63 |
-| 2014 | Chicago Bears | 4 | 27 | 9 | 3 | 0 | 2 | 1 | 1 | 11 | 6.8 | 25 |
-| **Career** |  | 20 | 116 | 18 | 11 | 0 | 9 | 2 | 2 | 28 | 5.8 | 88 |
+| 2014 | Chicago Bears | 5 | 31 | 9 | 5 | 0 | 3 | 1 | 1 | 11 | 6.2 | 28 |
+| **Career** |  | 21 | 120 | 18 | 13 | 0 | 10 | 2 | 2 | 28 | 5.7 | 91 |
 
 ### Playoffs
 
@@ -22,5 +22,6 @@
 ## Awards
 
 - Pro Bowl selection (2013, DE)
+- NFC Defensive Player of the Month (2014, September)
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).

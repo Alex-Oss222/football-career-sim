@@ -9,8 +9,8 @@
 | Season | Club | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | San Diego Chargers | 16 | 22-26 | 84.6 | N/A | 46-46 | 100.0 | 112 | N/A | N/A | N/A | 7.0 |
-| 2014 | San Diego Chargers | 4 | 3-3 | 100.0 | 58 | 11-11 | 100.0 | 20 | 0-0 | 1-1 | 2-2 | 5.0 |
-| **Career** |  | 20 | 25-29 | 86.2 | N/A | 57-57 | 100.0 | 132 | N/A | N/A | N/A | 6.6 |
+| 2014 | San Diego Chargers | 5 | 5-5 | 100.0 | 58 | 14-14 | 100.0 | 29 | 1-1 | 2-2 | 2-2 | 5.8 |
+| **Career** |  | 21 | 27-31 | 87.1 | N/A | 60-60 | 100.0 | 141 | N/A | N/A | N/A | 6.7 |
 
 ### Playoffs
 
@@ -20,4 +20,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).

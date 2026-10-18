@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Dallas Cowboys | 16 | 86 | 5 | 12 | 85 | 5 | 2 | 1 | 1 | 5.4 | 0 |
-| 2014 | Dallas Cowboys | 2 | 9 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 4.5 | 0 |
-| **Career** |  | 18 | 95 | 5 | 14 | 85 | 5 | 2 | 1 | 1 | 5.3 | 0 |
+| 2014 | Dallas Cowboys | 3 | 14 | 1 | 3 | 83 | 0 | 0 | 0 | 0 | 4.7 | 0 |
+| **Career** |  | 19 | 100 | 6 | 15 | 168 | 5 | 2 | 1 | 1 | 5.3 | 0 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).

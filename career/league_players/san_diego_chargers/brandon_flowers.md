@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Kansas City Chiefs | 16 | 70 | 2 | 9 | 33 | 3 | 1 | 0 | 0 | 4.4 | 0 |
-| 2014 | San Diego Chargers | 4 | 34 | 2 | 7 | 2 | 3 | 1 | 0 | 0 | 8.5 | 0 |
-| **Career** |  | 20 | 104 | 4 | 16 | 35 | 6 | 2 | 0 | 0 | 5.2 | 0 |
+| 2014 | San Diego Chargers | 5 | 40 | 3 | 8 | 2 | 3 | 1 | 0 | 0 | 8.0 | 0 |
+| **Career** |  | 21 | 110 | 5 | 17 | 35 | 6 | 2 | 0 | 0 | 5.2 | 0 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).

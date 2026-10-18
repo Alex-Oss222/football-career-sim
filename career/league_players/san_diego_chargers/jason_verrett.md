@@ -8,8 +8,8 @@
 
 | Season | Club | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | San Diego Chargers | 4 | 12 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3.0 | 0 |
-| **Career** |  | 4 | 12 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3.0 | 0 |
+| 2014 | San Diego Chargers | 5 | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 2.6 | 0 |
+| **Career** |  | 5 | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 2.6 | 0 |
 
 ### Playoffs
 
@@ -19,4 +19,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).

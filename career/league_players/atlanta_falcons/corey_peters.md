@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Atlanta Falcons | 16 | 35 | 5 | 5 | 0 | 0 | 1 | 1 | 8 | 2.2 | 23 |
-| 2014 | Atlanta Falcons | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  | 20 | 35 | 5 | 5 | 0 | 0 | 1 | 1 | 8 | 1.8 | 23 |
+| 2014 | Atlanta Falcons | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
+| **Career** |  | 21 | 35 | 5 | 5 | 0 | 0 | 1 | 1 | 8 | 1.7 | 23 |
 
 ### Playoffs
 
@@ -20,4 +20,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).

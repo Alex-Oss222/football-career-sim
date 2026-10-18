@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Philadelphia Eagles | 16 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 3 |
-| 2014 | Philadelphia Eagles | 4 | 9 | 1 | 1 | 0 | 0 | 0 | 0 | 2 | 2.2 | 9 |
-| **Career** |  | 20 | 12 | 1 | 1 | 0 | 0 | 0 | 0 | 2 | 0.6 | 12 |
+| 2014 | Philadelphia Eagles | 5 | 12 | 1 | 1 | 0 | 0 | 0 | 0 | 3 | 2.4 | 10 |
+| **Career** |  | 21 | 15 | 1 | 1 | 0 | 0 | 0 | 0 | 3 | 0.7 | 13 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Philadelphia Eagles players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Philadelphia Eagles players](README.md).

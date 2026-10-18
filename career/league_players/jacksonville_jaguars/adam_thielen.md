@@ -9,8 +9,8 @@
 | Season | Club | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Jacksonville Jaguars | 16 | 84 | 52 | 616 | 11.8 | 3 | 38.5 | 61.9 | 50 | 3 | 0 |
-| 2014 | Jacksonville Jaguars | 4 | 23 | 14 | 119 | 8.5 | 0 | 29.8 | 60.9 | 33 | 1 | 1 |
-| **Career** |  | 20 | 107 | 66 | 735 | 11.1 | 3 | 36.8 | 61.7 | 50 | 4 | 1 |
+| 2014 | Jacksonville Jaguars | 5 | 28 | 19 | 168 | 8.8 | 0 | 33.6 | 67.9 | 33 | 1 | 1 |
+| **Career** |  | 21 | 112 | 71 | 784 | 11.0 | 3 | 37.3 | 63.4 | 50 | 4 | 1 |
 
 ### Playoffs
 
@@ -25,4 +25,4 @@ None on record.
 
 [Jacksonville player card](../../2014/00_Team_Operations/Team/Player_Cards/adam_thielen.md)
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Jacksonville Jaguars players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Jacksonville Jaguars players](README.md).

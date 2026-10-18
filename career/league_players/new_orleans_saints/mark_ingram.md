@@ -9,8 +9,8 @@
 | Season | Club | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | New Orleans Saints | 16 | 85 | 288 | 3.4 | 1 | 18.0 | 9 | 105 | 2 | 94 | 0 |
-| 2014 | New Orleans Saints | 4 | 64 | 374 | 5.8 | 4 | 93.5 | 10 | 159 | 1 | 74 | 0 |
-| **Career** |  | 20 | 149 | 662 | 4.4 | 5 | 33.1 | 19 | 264 | 3 | 168 | 0 |
+| 2014 | New Orleans Saints | 5 | 79 | 425 | 5.4 | 5 | 85.0 | 15 | 222 | 1 | 94 | 0 |
+| **Career** |  | 21 | 164 | 713 | 4.3 | 6 | 34.0 | 24 | 327 | 3 | 188 | 0 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New Orleans Saints players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New Orleans Saints players](README.md).

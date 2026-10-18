@@ -9,8 +9,8 @@
 | Season | Club | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | New York Jets | 16 | 61 | 35 | 243 | 6.9 | 1 | 15.2 | 57.4 | 33 | 24 | 0 |
-| 2014 | New York Jets | 4 | 33 | 19 | 131 | 6.9 | 1 | 32.8 | 57.6 | 16 | 1 | 1 |
-| **Career** |  | 20 | 94 | 54 | 374 | 6.9 | 2 | 18.7 | 57.4 | 33 | 25 | 1 |
+| 2014 | New York Jets | 5 | 43 | 25 | 211 | 8.4 | 2 | 42.2 | 58.1 | 24 | 1 | 2 |
+| **Career** |  | 21 | 104 | 60 | 454 | 7.6 | 3 | 21.6 | 57.7 | 33 | 25 | 2 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
