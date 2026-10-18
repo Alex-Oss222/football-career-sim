@@ -272,6 +272,20 @@ class DecisionQueueTests(unittest.TestCase):
                                         {"instruction": "stone-healthy-inactive-rule", "reason": "A test reason."}]
         self.assertFalse(any("test-plan is covered" in e for e in self.errors_with(item, job=job)))
 
+    def test_a_standing_instruction_closes_only_closable_classes(self):
+        # The weekly plan is not closable by a standing instruction, even one
+        # in force that names its class; the game-day inactives are.
+        job = json.loads(json.dumps(self.job))
+        current_job.appointment(job)["standing_instructions"].append(
+            {"id": "test-plan-rule", "status": "IN_FORCE", "closes": ["weekly_game_plan", "game_day_inactives"],
+             "record": {"path": "career/2014/README.md"}})
+        item = self.resolved(by="standing_instruction", standing_instruction="test-plan-rule")
+        self.assertError("test-plan is settled by a standing instruction, but the class weekly_game_plan does not "
+                         "close by a standing instruction", self.errors_with(item, job=job))
+        item.update({"class": "game_day_inactives", "authority_rows": ["8"]})
+        self.assertFalse(any("test-plan is settled by a standing instruction" in e
+                             for e in self.errors_with(item, job=job)))
+
     def test_holder_needs_a_part_in_the_class(self):
         item = self.plan_item(**{"class": "medical_status", "owner": "stone", "owner_note": "A test note",
                                  "blocks": [], "deadline": None})

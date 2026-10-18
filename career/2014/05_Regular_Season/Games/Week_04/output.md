@@ -728,3 +728,14 @@ The roster as it leaves Qualcomm Stadium, September 28, 2014. [Roster](../../../
 **Dated record:** This output is the event owner of the game (`2014-09-28-week-4-at-san-diego`), as the preparation (`2014-09-27-san-diego-preparation-closed`) and game day (`2014-09-28-week-4-game-day`) are above; the [2014 record](../../../Record.md) indexes it; the three injuries are in the [medical history](../../../00_Team_Operations/Medical/medical_history.md#september-28-week-4-injuries-at-san-diego) with one incident record each; the [league results](../../League_Results/week_04.md) carry the other twelve games.
 
 **Next event:** Week 5 vs. Pittsburgh Steelers, Sunday, October 5, 1 p.m. ET, EverBank Field; the San Diego review and the Pittsburgh introduction Monday, September 29, with Stanford's, Posluszny's and Phillips's reassessments that day, and Butler's projected return October 2 inside the week; the Week 5 packet is the user's before the week's plan is frozen.
+
+### Correction entered October 18, 2026, 12:32 UTC
+
+- Supersedes: Document 3 rebuild draft 2.8 as current values: section 4, the row "Defensive play calling" (Romeo Crennel the ordinary caller) and the interface row "Side or phases directly called by the user" (Crennel normally directs the defense); section 5, row 13, column 4 (Crennel the established ordinary defensive caller); and section 6.1, the defensive coordinator's assigned operational function (ordinary defensive caller)
+- Canon class: User canon
+- Conflict discovered: Document 3 still named Crennel as the ordinary defensive caller
+- Authoritative basis: Stone's September 21 instruction ([Week 4 packet](Week%204%20Packet_%20at%20San%20Diego.md#hc-direction))
+- Replacement: Stone calls the defense from September 28, 2014, with no end date stated; Crennel prepares the defense and transmits the call and the between-snap information; Daryl Smith makes the front declaration
+- Downstream records corrected: [Document 3](../../../../../foundation/03_Head_Coach_Organization_and_Authority_Canon.md) (rebuild draft 2.9); the [job record](../../../../../state/current_job.json), the [staff register](../../../00_Team_Operations/Staff/coaching_staff.md#phase-control) and Documents 4 and 5 already carry the replacement, and Document 5 now names the corrected Document 3
+- Remaining uncertainty: none
+- Head-coach knowledge date and channel: Stone's own instruction, September 21, 2014

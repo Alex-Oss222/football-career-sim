@@ -355,7 +355,12 @@
     "docs/career_layer.md",
     "runtime/current_job.py",
     "runtime/decision_queue.py",
-    "scripts/render_career_views.py"
+    "scripts/render_career_views.py",
+    "foundation/decision_rules.md",
+    "foundation/roles/head_coach.md",
+    "foundation/roles/coordinator.md",
+    "foundation/roles/position_coach.md",
+    "foundation/roles/between_jobs.md"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",
