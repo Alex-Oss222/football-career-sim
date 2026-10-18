@@ -9,8 +9,8 @@
 | Season | Club | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Seattle Seahawks | 16 | 78 | 3,622 | 46.4 | 40.2 | 31 | 65 | 2 | 39.7 | 4.9 | 444 |
-| 2014 | Seattle Seahawks | 3 | 16 | 746 | 46.6 | 39.4 | 7 | 66 | 3 | 43.8 | 5.3 | 55 |
-| **Career** |  | 19 | 94 | 4,368 | 46.5 | 40.1 | 38 | 66 | 5 | 40.4 | 4.9 | 499 |
+| 2014 | Seattle Seahawks | 4 | 21 | 922 | 43.9 | 38.4 | 11 | 66 | 3 | 52.4 | 5.2 | 55 |
+| **Career** |  | 20 | 99 | 4,544 | 45.9 | 39.8 | 42 | 66 | 5 | 42.4 | 5.0 | 499 |
 
 ### Playoffs
 
@@ -20,4 +20,4 @@ No playoff games on record.
 
 - NFC Special Teams Player of the Week (2013, Week 13)
 
-Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).

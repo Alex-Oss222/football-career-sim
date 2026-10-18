@@ -9,8 +9,8 @@
 | Season | Club | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Dallas Cowboys | 16 | 24-29 | 82.8 | N/A | 40-40 | 100.0 | 112 | N/A | N/A | N/A | 7.0 |
-| 2014 | Dallas Cowboys | 4 | 6-6 | 100.0 | 52 | 7-7 | 100.0 | 25 | 0-0 | 1-1 | 5-5 | 6.2 |
-| **Career** |  | 20 | 30-35 | 85.7 | N/A | 47-47 | 100.0 | 137 | N/A | N/A | N/A | 6.8 |
+| 2014 | Dallas Cowboys | 5 | 8-8 | 100.0 | 52 | 11-11 | 100.0 | 35 | 0-0 | 1-1 | 7-7 | 7.0 |
+| **Career** |  | 21 | 32-37 | 86.5 | N/A | 51-51 | 100.0 | 147 | N/A | N/A | N/A | 7.0 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 - NFC Special Teams Player of the Week (2013, Week 12)
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).

@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Detroit Lions | 16 | 87 | 9 | 11 | 0 | 3 | 1 | 1 | 15 | 5.4 | 62 |
-| 2014 | Detroit Lions | 4 | 7 | 2 | 1 | 0 | 0 | 0 | 0 | 4 | 1.8 | 7 |
-| **Career** |  | 20 | 94 | 11 | 12 | 0 | 3 | 1 | 1 | 19 | 4.7 | 69 |
+| 2014 | Detroit Lions | 5 | 9 | 2 | 1 | 0 | 0 | 0 | 0 | 4 | 1.8 | 9 |
+| **Career** |  | 21 | 96 | 11 | 12 | 0 | 3 | 1 | 1 | 19 | 4.6 | 71 |
 
 ### Playoffs
 
@@ -20,4 +20,4 @@ No playoff games on record.
 
 - AP Second-Team All-Pro (2013, DT)
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).

@@ -107,13 +107,21 @@ A big linebacker who played middle and outside at Florida State, with size for a
 
 No NFL season. The college record is described qualitatively above; no college statistic is entered as an NFL figure.
 
+## Dated coaching updates
+
+### October 5, 2014 | Week 5, Pittsburgh at Jacksonville
+
+Eighteen of the 26 kicking-game snaps and no defensive snap, with no tackle recorded. A minor upper-extremity injury was logged at 10:35 of the second quarter at the end of Pittsburgh's three-and-out that ended in Wing's 54-yard punt; he was not removed: out, projected return October 6, reassessment October 6 ([medical record](../../Medical/incidents/christian_jones_2014-10-05.md)). No role change follows.
+
+Source: [Week 5 game record](../../../05_Regular_Season/Games/Week_05/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 4 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 3 |
+| 2014 | Jacksonville | Through Week 5 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 3 |
 
 ## Playoff statistics by year
 

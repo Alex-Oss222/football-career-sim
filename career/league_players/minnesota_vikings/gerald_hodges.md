@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Minnesota Vikings | 16 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| 2014 | Minnesota Vikings | 4 | 7 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 1.8 | 4 |
-| **Career** |  | 20 | 7 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 0.3 | 4 |
+| 2014 | Minnesota Vikings | 5 | 7 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 1.4 | 4 |
+| **Career** |  | 21 | 7 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 0.3 | 4 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).

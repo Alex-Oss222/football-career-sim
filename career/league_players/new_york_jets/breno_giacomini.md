@@ -9,8 +9,8 @@
 | Season | Club | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Seattle Seahawks | 13 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | New York Jets | 4 | 4 | 263 | 3 | 17 | 0 | 0 | 0 | 0 | 65.8 |
-| **Career** |  | 17 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
+| 2014 | New York Jets | 5 | 5 | 317 | 3 | 20 | 0 | 0 | 0 | 0 | 63.4 |
+| **Career** |  | 18 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -20,4 +20,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).

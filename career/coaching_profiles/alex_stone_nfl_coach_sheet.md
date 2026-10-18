@@ -6,7 +6,7 @@
 *Photo: supplied by the user, October 1, 2026.*
 <!-- /photo -->
 
-Jacksonville Jaguars · September 28, 2014 · Age 51  
+Jacksonville Jaguars · October 5, 2014 · Age 51  
 Second season in Jacksonville; third season with NFL head-coaching responsibility, including New Orleans in 2012.
 
 *General manager's assessment based on the established career. It records no new candidacy, reference check or hiring decision.*
@@ -19,7 +19,7 @@ Stone has handled two substantially different head-coaching assignments. In New 
 
 The attraction is an offensive head coach with experience organizing the whole team, a detailed interest in teaching and a demonstrated willingness to leave final personnel authority with the GM. His Jacksonville arrangement has room for strong coordinators. He has given younger players jobs without requiring all of them to arrive as complete players.
 
-The most important unfinished part of the case is quarterback development. His New Orleans record includes extensive work with Brees in an offense Payton had already established. Jacksonville offers the more relevant test for a club expecting its next coach to bring along an inexperienced starter. Cousins won the competition and produced a usable first season. Eighteen interceptions and 38 sacks left the question open. The first four games of 2014 add evidence; they do not yet supply a second full year.
+The most important unfinished part of the case is quarterback development. His New Orleans record includes extensive work with Brees in an offense Payton had already established. Jacksonville offers the more relevant test for a club expecting its next coach to bring along an inexperienced starter. Cousins won the competition and produced a usable first season. Eighteen interceptions and 38 sacks left the question open. The first five games of 2014 add evidence; they do not yet supply a second full year.
 
 Stone merits serious consideration for a job built around offensive coaching, player development and a clear GM-coach partnership. The interview needs to establish how his operation would work with the roster and assistants actually available to the hiring club. His current staff cannot be treated as a package that automatically follows him.
 
@@ -29,9 +29,9 @@ Stone merits serious consideration for a job built around offensive coaching, pl
 |---|---|---:|---:|---|
 | 2012 | New Orleans, interim HC / OC | 12-4 | 1-1 | Second in NFC South; Divisional round |
 | 2013 | Jacksonville, HC | 10-6 | 1-1 | Second in AFC South; Divisional round |
-| 2014 | Jacksonville, HC | 3-1 through Week 4 | Not reached | Season in progress |
+| 2014 | Jacksonville, HC | 3-2 through Week 5 | Not reached | Season in progress |
 
-Completed seasons: **22-10**, .688; postseason **2-2**. Including the current four games: **25-11**, .694, in the regular season. The 2013 playoff win was 38-14 at Kansas City; the season ended with a 20-13 loss at Tennessee. Preseason is excluded throughout.
+Completed seasons: **22-10**, .688; postseason **2-2**. Including the current five games: **25-12**, .676, in the regular season. The 2013 playoff win was 38-14 at Kansas City; the season ended with a 20-13 loss at Tennessee. Preseason is excluded throughout.
 
 Stone was a 2013 Coach of the Year finalist. Rex Ryan won. His three championships as an assistant came with New England in the 2003 and 2004 seasons and New Orleans in 2009.
 
@@ -87,7 +87,7 @@ Cousins's first season is the relevant case file: 3,981 passing yards, 23 touchd
 
 The [June 2014 minicamp report][minicamp] records Bates showing Cousins a requested end-zone view of a protection error. Cousins identified the wrong-way slide and the correct answer before being given the coaching point. Whether Cousins consistently makes the same recognition against a live rush remains the more demanding question.
 
-Through Week 4 of 2014, Cousins is 84 of 140 for 987 yards, nine touchdowns and four interceptions, with eight sacks. It is too early to pronounce the development complete or to use Brees's earlier career as a substitute for the answer.
+Through Week 5 of 2014, Cousins is 105 of 173 for 1,213 yards, nine touchdowns and seven interceptions, with eight sacks. It is too early to pronounce the development complete or to use Brees's earlier career as a substitute for the answer.
 
 ### What does his football require from the roster?
 
@@ -176,7 +176,7 @@ The separate 2013 postseason totals were 51 points scored and 34 allowed in two 
 
 ### Current year
 
-Through four games in 2014: 105 points scored, 82 allowed, five giveaways, six takeaways, eight sacks allowed and ten made. Jacksonville converted 25 of 60 third downs, 41.7 percent; opponents converted 34 of 68, 50 percent. Crennel called the first three defensive games; Stone called the fourth. These totals do not provide a full-season ranking or an assessment of a year not yet completed.
+Through five games in 2014: 115 points scored, 109 allowed, nine giveaways, seven takeaways, eight sacks allowed and twelve made. Jacksonville converted 29 of 70 third downs, 41.4 percent; opponents converted 38 of 82, 46.3 percent. Crennel called the first three defensive games; Stone called the fourth and fifth. These totals do not provide a full-season ranking or an assessment of a year not yet completed.
 
 ### Background
 

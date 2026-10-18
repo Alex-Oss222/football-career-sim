@@ -224,6 +224,20 @@ class SeasonClosure2014Tests(unittest.TestCase):
             (tracker / rel).write_text(text, encoding="utf-8")
         self.assertEqual(update_player_cards.refresh_cards(SEASON, root), [])
         player_cards.write(root)  # the league player cards, after the week's awards
+        # The in-season rails records of the closed weeks read the receipts
+        # before them, so the synthetic Week 1 changes their generated block
+        # as the weekly workflow would regenerate it; the batch's event after
+        # the block is kept (render_inseason_rails.check compares the block).
+        from scripts import render_inseason_rails
+        closed = render_season_stats.load_receipts(paths.receipts)
+        folder = render_inseason_rails.page_path(SEASON, 5, root).parent
+        for page in (sorted(folder.glob("week_*.md")) if folder.is_dir() else []):
+            week = int(page.stem.split("_")[1])
+            current = page.read_text(encoding="utf-8")
+            generated = render_inseason_rails.render(SEASON, week, root, [r for r in closed if int(r["week"]) < week])
+            end = render_inseason_rails.END
+            tail = current.split(end, 1)[1] if end in current else "\n"
+            page.write_text(generated.split(end)[0] + end + tail, encoding="utf-8")
 
         # The repository validator accepts the closed, regenerated temporary
         # root. A checkout mid-edit may already carry continuity errors of its

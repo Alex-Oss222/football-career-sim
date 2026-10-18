@@ -9,8 +9,8 @@
 | Season | Club | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | St. Louis Rams | 16 | 4 | 3 | 16 | 5.3 | 0 | 1.0 | 75.0 | 10 | 0 | 0 |
-| 2014 | St. Louis Rams | 3 | 10 | 5 | 17 | 3.4 | 0 | 5.7 | 50.0 | 9 | 0 | 0 |
-| **Career** |  | 19 | 14 | 8 | 33 | 4.1 | 0 | 1.7 | 57.1 | 10 | 0 | 0 |
+| 2014 | St. Louis Rams | 4 | 13 | 6 | 33 | 5.5 | 0 | 8.2 | 46.2 | 16 | 2 | 0 |
+| **Career** |  | 20 | 17 | 9 | 49 | 5.4 | 0 | 2.5 | 52.9 | 16 | 2 | 0 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).

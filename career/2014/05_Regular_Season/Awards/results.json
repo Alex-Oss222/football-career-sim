@@ -586,5 +586,299 @@
     "winner_index": 1
    }
   }
+ },
+ "week-5": {
+  "kind": "week",
+  "key": "5",
+  "label": "Week 5",
+  "order": 5,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2014-award-week05-afc-offense-v1-2014",
+    "packet_sha256": "127b588804743f266a2749252202b5866a112b70a15ade94ec80e269f72123e5",
+    "result_ref": "b0022dc168b695ba851733cc21c48f002132a12454b7cff4f48711b1bc9e5f37",
+    "shortlist": [
+     {
+      "player": "Jamaal Charles",
+      "team": "Kansas City Chiefs",
+      "score": 36.7
+     },
+     {
+      "player": "Danny Woodhead",
+      "team": "San Diego Chargers",
+      "score": 28.9
+     },
+     {
+      "player": "Sammy Watkins",
+      "team": "Buffalo Bills",
+      "score": 25.3
+     }
+    ],
+    "winner_index": 1
+   },
+   "AFC-defense": {
+    "event_id": "2014-award-week05-afc-defense-v1-2014",
+    "packet_sha256": "a1ef0526cc285ef02eea62561717639614559a9b18b8a7a7313b665ae9df9dca",
+    "result_ref": "3c88dce01b8c0f4d0f82d4643016deb341562f3272be48419a653093690b40b7",
+    "shortlist": [
+     {
+      "player": "Jamie Collins",
+      "team": "New England Patriots",
+      "score": 22.5
+     },
+     {
+      "player": "Damon Harrison",
+      "team": "New York Jets",
+      "score": 21.0
+     },
+     {
+      "player": "Jimmy Smith",
+      "team": "Baltimore Ravens",
+      "score": 20.9
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2014-award-week05-afc-special_teams-v1-2014",
+    "packet_sha256": "0e2c9a5edd008a55e452bb781f13af30437e03fb38c604f8e3c07c3a81d2b15b",
+    "result_ref": "6343fe29f6aeb98144795536dc0615190d53d51bf65fe2288a52cb52adce129f",
+    "shortlist": [
+     {
+      "player": "Andre Caldwell",
+      "team": "Denver Broncos",
+      "score": 19.1
+     },
+     {
+      "player": "Travis Benjamin",
+      "team": "Cleveland Browns",
+      "score": 13.5
+     },
+     {
+      "player": "Brandon Tate",
+      "team": "Cincinnati Bengals",
+      "score": 12.8
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-offense": {
+    "event_id": "2014-award-week05-nfc-offense-v1-2014",
+    "packet_sha256": "38a63ba787deb87431f272fbbf41f3fa0ee6a870fa620fd45b612555733bd5c2",
+    "result_ref": "5f559c6c226e20217e419ca46bcfbb282de67e8eccc2b6ab2fe2930cf9a35e94",
+    "shortlist": [
+     {
+      "player": "Shaun Hill",
+      "team": "St. Louis Rams",
+      "score": 30.9
+     },
+     {
+      "player": "Zac Stacy",
+      "team": "St. Louis Rams",
+      "score": 27.6
+     },
+     {
+      "player": "Devonta Freeman",
+      "team": "Atlanta Falcons",
+      "score": 25.9
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2014-award-week05-nfc-defense-v1-2014",
+    "packet_sha256": "260ba8cd19fade81dc08ed3015e0c8709d1fd6a9bb803c500973a49651f60f28",
+    "result_ref": "452dfa5a38ecf9ee5a07d295c16e2e107c057d0d39563a760a28e0dc79158e53",
+    "shortlist": [
+     {
+      "player": "DeAndre Levy",
+      "team": "Detroit Lions",
+      "score": 23.0
+     },
+     {
+      "player": "Malcolm Smith",
+      "team": "Seattle Seahawks",
+      "score": 22.5
+     },
+     {
+      "player": "Robert Alford",
+      "team": "Atlanta Falcons",
+      "score": 20.5
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-special_teams": {
+    "event_id": "2014-award-week05-nfc-special_teams-v1-2014",
+    "packet_sha256": "efc1d914d7a1d8ed5ce58692577157323e509e45513a7b11beaa607f95c07047",
+    "result_ref": "5c2a62f783dd389d546e218a3aef9f3da3797ee3bf11c0dc1f37e8bc6593eebe",
+    "shortlist": [
+     {
+      "player": "Benny Cunningham",
+      "team": "St. Louis Rams",
+      "score": 13.9
+     },
+     {
+      "player": "Alex Henery",
+      "team": "Detroit Lions",
+      "score": 12.0
+     },
+     {
+      "player": "Cody Parkey",
+      "team": "Philadelphia Eagles",
+      "score": 12.0
+     }
+    ],
+    "winner_index": 0
+   }
+  }
+ },
+ "month-September": {
+  "kind": "month",
+  "key": "September",
+  "label": "September (Weeks 1-4)",
+  "order": 101,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2014-award-september-afc-offense-v1-2014",
+    "packet_sha256": "256acf325c02802adb42789511d19e9aaa3fb237c4814f1296d07a8b2b8f1957",
+    "result_ref": "b08a9c4d2563a607d3bc7ccadec1da7a64e629fc4dd48836c3c93f60eb1c036e",
+    "shortlist": [
+     {
+      "player": "Le'Veon Bell",
+      "team": "Pittsburgh Steelers",
+      "score": 137.8
+     },
+     {
+      "player": "Joe Flacco",
+      "team": "Baltimore Ravens",
+      "score": 89.42
+     },
+     {
+      "player": "Andrew Luck",
+      "team": "Indianapolis Colts",
+      "score": 86.24
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2014-award-september-afc-defense-v1-2014",
+    "packet_sha256": "78f67d8ea7925a45ef56fd4a6a4a0d965f043308df8d2a2ae2fe9e87c339b124",
+    "result_ref": "3b2a1e531b6bcda05e8ca4593e17d21b3a4a90d93ea2f8154165fec88c2fbf11",
+    "shortlist": [
+     {
+      "player": "Ryan Shazier",
+      "team": "Pittsburgh Steelers",
+      "score": 68.3
+     },
+     {
+      "player": "Brandon Spikes",
+      "team": "Buffalo Bills",
+      "score": 57.5
+     },
+     {
+      "player": "Justin Houston",
+      "team": "Kansas City Chiefs",
+      "score": 54.5
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2014-award-september-afc-special_teams-v1-2014",
+    "packet_sha256": "52246b4a2fe4a0f09957b1efaba49ce25f1970e90bdee8944456dd40d381ef3e",
+    "result_ref": "ee15fade54c259b7d28248e48f79bc11dcbfc7c4ca320c30c8c683acb166755e",
+    "shortlist": [
+     {
+      "player": "Billy Cundiff",
+      "team": "Cleveland Browns",
+      "score": 42.0
+     },
+     {
+      "player": "Shaun Suisham",
+      "team": "Pittsburgh Steelers",
+      "score": 41.0
+     },
+     {
+      "player": "Jacoby Jones",
+      "team": "Baltimore Ravens",
+      "score": 39.1
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-offense": {
+    "event_id": "2014-award-september-nfc-offense-v1-2014",
+    "packet_sha256": "e64a46503513e4965da0a31662a284e15e0586151f0497624320839cb7a386b1",
+    "result_ref": "f1a9428ee27f30abbf2312e8722b45f81d97d3bfd2dd004a97acd6a285bdba53",
+    "shortlist": [
+     {
+      "player": "Matt Ryan",
+      "team": "Atlanta Falcons",
+      "score": 93.94
+     },
+     {
+      "player": "Devonta Freeman",
+      "team": "Atlanta Falcons",
+      "score": 91.8
+     },
+     {
+      "player": "Alfred Morris",
+      "team": "Washington Redskins",
+      "score": 88.5
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-defense": {
+    "event_id": "2014-award-september-nfc-defense-v1-2014",
+    "packet_sha256": "17f6ac02df9e1f8217fb5bc7e508628fad6ba5526f252f0659407de1b0a7916b",
+    "result_ref": "7cb822132d3d0754bff4d929f7268df4d7dd31f6dec5aab267eea874876d6987",
+    "shortlist": [
+     {
+      "player": "Jared Allen",
+      "team": "Chicago Bears",
+      "score": 73.0
+     },
+     {
+      "player": "Paul Worrilow",
+      "team": "Atlanta Falcons",
+      "score": 70.2
+     },
+     {
+      "player": "Jameel McClain",
+      "team": "New York Giants",
+      "score": 65.3
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2014-award-september-nfc-special_teams-v1-2014",
+    "packet_sha256": "906046f83bcc3aa5dee39df1a793b6260fb120863b9a1849f7bb670e199ba623",
+    "result_ref": "924f5c220b1b3830f94883de8e9c80b43fca96fe6a6c243375f675162833d2af",
+    "shortlist": [
+     {
+      "player": "Jeremy Ross",
+      "team": "Detroit Lions",
+      "score": 46.8
+     },
+     {
+      "player": "Cody Parkey",
+      "team": "Philadelphia Eagles",
+      "score": 40.0
+     },
+     {
+      "player": "Andre Roberts",
+      "team": "Washington Redskins",
+      "score": 37.5
+     }
+    ],
+    "winner_index": 0
+   }
+  }
  }
 }

@@ -9,8 +9,8 @@
 | Season | Club | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Cleveland Browns | 16 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| 2014 | Cleveland Browns | 3 | 77-117 | 65.8 | 844 | 4 | 3 | 7.2 | 87.7 | 281.3 | 68 | 1 |
-| **Career** |  | 19 | 77-117 | 65.8 | 844 | 4 | 3 | 7.2 | 87.7 | 44.4 | 68 | 1 |
+| 2014 | Cleveland Browns | 4 | 102-158 | 64.6 | 1,151 | 6 | 4 | 7.3 | 88.3 | 287.8 | 77 | 1 |
+| **Career** |  | 20 | 102-158 | 64.6 | 1,151 | 6 | 4 | 7.3 | 88.3 | 57.5 | 77 | 1 |
 
 ### Playoffs
 
@@ -20,4 +20,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).

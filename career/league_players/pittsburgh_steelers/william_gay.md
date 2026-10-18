@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Pittsburgh Steelers | 16 | 49 | 1 | 6 | 33 | 1 | 0 | 0 | 0 | 3.1 | 25 |
-| 2014 | Pittsburgh Steelers | 4 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.2 | 0 |
-| **Career** |  | 20 | 54 | 1 | 6 | 33 | 1 | 0 | 0 | 0 | 2.7 | 25 |
+| 2014 | Pittsburgh Steelers | 5 | 8 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1.6 | 0 |
+| **Career** |  | 21 | 57 | 1 | 6 | 33 | 1 | 0 | 1 | 0 | 2.7 | 25 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).

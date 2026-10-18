@@ -9,8 +9,8 @@
 | Season | Club | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Tampa Bay Buccaneers | 16 | 100 | 65 | 873 | 13.4 | 6 | 54.6 | 65.0 | 80 | 0 | 0 |
-| 2014 | Buffalo Bills | 4 | 20 | 15 | 113 | 7.5 | 0 | 28.2 | 75.0 | 20 | 0 | 1 |
-| **Career** |  | 20 | 120 | 80 | 986 | 12.3 | 6 | 49.3 | 66.7 | 80 | 0 | 1 |
+| 2014 | Buffalo Bills | 5 | 22 | 16 | 126 | 7.9 | 0 | 25.2 | 72.7 | 20 | 0 | 1 |
+| **Career** |  | 21 | 122 | 81 | 999 | 12.3 | 6 | 47.6 | 66.4 | 80 | 0 | 1 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).

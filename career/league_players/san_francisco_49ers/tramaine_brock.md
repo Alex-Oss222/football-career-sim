@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | San Francisco 49ers | 7 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0.1 | 0 |
-| 2014 | San Francisco 49ers | 4 | 36 | 1 | 5 | 23 | 1 | 0 | 1 | 1 | 9.0 | 0 |
-| **Career** |  | 11 | 37 | 1 | 5 | 23 | 2 | 0 | 1 | 1 | 3.4 | 0 |
+| 2014 | San Francisco 49ers | 5 | 46 | 2 | 6 | 23 | 1 | 0 | 1 | 1 | 9.2 | 0 |
+| **Career** |  | 12 | 47 | 2 | 6 | 23 | 2 | 0 | 1 | 1 | 3.9 | 0 |
 
 ### Playoffs
 
@@ -22,4 +22,4 @@ None on record.
 
 Schools listed: Belhaven College; Minnesota; Mississippi Gulf Coast CC.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).

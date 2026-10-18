@@ -9,8 +9,8 @@
 | Season | Club | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Jacksonville Jaguars | 16 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Jacksonville Jaguars | 4 | 4 | 269 | 3 | 20 | 0 | 0 | 0 | 0 | 67.2 |
-| **Career** |  | 20 | N/A | N/A | 11 | N/A | 0 | 0 | 0 | 0 | N/A |
+| 2014 | Jacksonville Jaguars | 5 | 5 | 332 | 3 | 23 | 0 | 0 | 0 | 0 | 66.4 |
+| **Career** |  | 21 | N/A | N/A | 11 | N/A | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -25,4 +25,4 @@ None on record.
 
 [Jacksonville player card](../../2014/00_Team_Operations/Team/Player_Cards/lane_johnson.md)
 
-Records through September 28, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Jacksonville Jaguars players](README.md).
+Records through October 5, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Jacksonville Jaguars players](README.md).

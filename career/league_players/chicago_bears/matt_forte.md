@@ -9,8 +9,8 @@
 | Season | Club | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Chicago Bears | 16 | 280 | 1,408 | 5.0 | 9 | 88.0 | 39 | 329 | 3 | 319 | 2 |
-| 2014 | Chicago Bears | 4 | 68 | 306 | 4.5 | 1 | 76.5 | 11 | 128 | 1 | 79 | 1 |
-| **Career** |  | 20 | 348 | 1,714 | 4.9 | 10 | 85.7 | 50 | 457 | 4 | 398 | 3 |
+| 2014 | Chicago Bears | 5 | 88 | 413 | 4.7 | 2 | 82.6 | 15 | 176 | 1 | 103 | 1 |
+| **Career** |  | 21 | 368 | 1,821 | 4.9 | 11 | 86.7 | 54 | 505 | 4 | 422 | 3 |
 
 ### Playoffs
 
@@ -20,4 +20,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).

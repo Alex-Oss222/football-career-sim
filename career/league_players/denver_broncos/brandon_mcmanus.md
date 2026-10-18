@@ -8,8 +8,8 @@
 
 | Season | Club | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Denver Broncos | 3 | 6-6 | 100.0 | 47 | 11-11 | 100.0 | 29 | 2-2 | 0-0 | 4-4 | 9.7 |
-| **Career** |  | 3 | 6-6 | 100.0 | 47 | 11-11 | 100.0 | 29 | 2-2 | 0-0 | 4-4 | 9.7 |
+| 2014 | Denver Broncos | 4 | 7-7 | 100.0 | 47 | 13-13 | 100.0 | 34 | 2-2 | 0-0 | 5-5 | 8.5 |
+| **Career** |  | 4 | 7-7 | 100.0 | 47 | 13-13 | 100.0 | 34 | 2-2 | 0-0 | 5-5 | 8.5 |
 
 ### Playoffs
 
@@ -19,4 +19,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).

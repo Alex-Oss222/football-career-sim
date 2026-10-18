@@ -9,8 +9,8 @@
 | Season | Club | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Dallas Cowboys | 16 | 344-551 | 62.4 | 3,888 | 26 | 12 | 7.1 | 90.2 | 243.0 | 290 | 1 |
-| 2014 | Dallas Cowboys | 4 | 103-152 | 67.8 | 1,140 | 4 | 2 | 7.5 | 93.1 | 285.0 | 39 | 1 |
-| **Career** |  | 20 | 447-703 | 63.6 | 5,028 | 30 | 14 | 7.2 | 90.8 | 251.4 | 329 | 2 |
+| 2014 | Dallas Cowboys | 5 | 126-188 | 67.0 | 1,391 | 4 | 3 | 7.4 | 89.2 | 278.2 | 42 | 1 |
+| **Career** |  | 21 | 470-739 | 63.6 | 5,279 | 30 | 15 | 7.1 | 89.9 | 251.4 | 332 | 2 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 - NFC Offensive Player of the Week (2013, Week 4)
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).

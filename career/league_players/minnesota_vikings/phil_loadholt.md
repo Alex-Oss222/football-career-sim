@@ -9,8 +9,8 @@
 | Season | Club | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Minnesota Vikings | 16 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Minnesota Vikings | 3 | 3 | 140 | 1 | 6 | 0 | 0 | 0 | 0 | 46.7 |
-| **Career** |  | 19 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
+| 2014 | Minnesota Vikings | 4 | 4 | 204 | 2 | 8 | 0 | 0 | 0 | 0 | 51.0 |
+| **Career** |  | 20 | N/A | N/A | 6 | N/A | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).

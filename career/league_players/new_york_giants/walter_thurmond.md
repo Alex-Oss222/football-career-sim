@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Seattle Seahawks | 16 | 8 | 0 | 0 | 0 | 0 | 0 | 2 | 2 | 0.5 | 0 |
-| 2014 | New York Giants | 4 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.8 | 0 |
-| **Career** |  | 20 | 15 | 0 | 0 | 0 | 0 | 0 | 2 | 2 | 0.8 | 0 |
+| 2014 | New York Giants | 5 | 7 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 1.4 | 0 |
+| **Career** |  | 21 | 15 | 0 | 1 | 0 | 0 | 0 | 2 | 2 | 0.7 | 0 |
 
 ### Playoffs
 
@@ -20,4 +20,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 25, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).

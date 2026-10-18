@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Washington Redskins | 16 | 18 | 3 | 1 | 0 | 2 | 0 | 0 | 4 | 1.1 | 11 |
-| 2014 | Detroit Lions | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  | 20 | 18 | 3 | 1 | 0 | 2 | 0 | 0 | 4 | 0.9 | 11 |
+| 2014 | Detroit Lions | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
+| **Career** |  | 21 | 18 | 3 | 1 | 0 | 2 | 0 | 0 | 4 | 0.9 | 11 |
 
 ### Playoffs
 
@@ -20,4 +20,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).

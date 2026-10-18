@@ -142,13 +142,21 @@ A physical developmental safety whose coverage-unit communication and run-suppor
 
 Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
 
+## Dated coaching updates
+
+### October 5, 2014 | Week 5, Pittsburgh at Jacksonville
+
+All 60 defensive snaps at safety next to Rambo and five on the kicking game, with eight tackles, seven solo, and a pass defended, the incompletion for Antonio Brown at 0:45 of the second quarter on the possession that ended in Suisham's field goal. Three of the tackles came on Pittsburgh's 80-yard touchdown drive in the fourth quarter: Bell's 2-yard run on second-and-6, Blount's 6-yard run on third-and-4 and, shared with Daryl Smith, Roethlisberger's 3-yard scramble on second-and-8. The play-by-play records the tackle and not the fit or the coverage, so the run support on that drive is a film item for the staff. A minor lower-extremity injury was logged at the end of that drive, at 2:28 of the fourth quarter; he was not removed and was on the field for the three kneel-downs that ended the game: out, projected return October 11, reassessment October 7 ([medical record](../../Medical/incidents/brynden_trawick_2014-10-05.md)). No role change follows from the instruction; the Week 6 safety pairing is Stone's after the reassessment.
+
+Source: [Week 5 game record](../../../05_Regular_Season/Games/Week_05/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
 | Season | Team(s) | Coverage | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR | DEF SNAPS | QB HITS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville | Through Week 4 | 4 | 8 | 7 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 205 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 1 |
+| 2014 | Jacksonville | Through Week 5 | 5 | 16 | 14 | 2 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 265 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 1 |
 
 ## Playoff statistics by year
 

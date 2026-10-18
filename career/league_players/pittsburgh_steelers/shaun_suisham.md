@@ -9,8 +9,8 @@
 | Season | Club | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Pittsburgh Steelers | 16 | 31-36 | 86.1 | N/A | 40-40 | 100.0 | 133 | N/A | N/A | N/A | 8.3 |
-| 2014 | Pittsburgh Steelers | 4 | 9-9 | 100.0 | 47 | 14-14 | 100.0 | 41 | 4-4 | 0-0 | 5-5 | 10.2 |
-| **Career** |  | 20 | 40-45 | 88.9 | N/A | 54-54 | 100.0 | 174 | N/A | N/A | N/A | 8.7 |
+| 2014 | Pittsburgh Steelers | 5 | 11-11 | 100.0 | 47 | 17-17 | 100.0 | 50 | 5-5 | 0-0 | 6-6 | 10.0 |
+| **Career** |  | 21 | 42-47 | 89.4 | N/A | 57-57 | 100.0 | 183 | N/A | N/A | N/A | 8.7 |
 
 ### Playoffs
 
@@ -21,6 +21,6 @@
 
 ## Awards
 
-None on record.
+- AFC Special Teams Player of the Month (2014, September)
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).

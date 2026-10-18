@@ -9,8 +9,8 @@
 | Season | Club | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | New York Jets | 16 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.3 | 0 |
-| 2014 | New York Jets | 4 | 18 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 4.5 | 0 |
-| **Career** |  | 20 | 23 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 1.1 | 0 |
+| 2014 | New York Jets | 5 | 26 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 5.2 | 0 |
+| **Career** |  | 21 | 31 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 1.5 | 0 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).

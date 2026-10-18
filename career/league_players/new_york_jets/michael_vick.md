@@ -9,8 +9,8 @@
 | Season | Club | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Philadelphia Eagles | 16 | 369-585 | 63.1 | 4,120 | 16 | 17 | 7.0 | 81.0 | 257.5 | 176 | 1 |
-| 2014 | New York Jets | 4 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| **Career** |  | 20 | 369-585 | 63.1 | 4,120 | 16 | 17 | 7.0 | 81.0 | 206.0 | 176 | 1 |
+| 2014 | New York Jets | 5 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
+| **Career** |  | 21 | 369-585 | 63.1 | 4,120 | 16 | 17 | 7.0 | 81.0 | 196.2 | 176 | 1 |
 
 ### Playoffs
 
@@ -23,4 +23,4 @@
 
 None on record.
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).

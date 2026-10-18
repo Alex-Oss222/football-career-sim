@@ -8,8 +8,8 @@
 
 | Season | Club | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Cleveland Browns | 3 | 3 | 18 | 6.0 | 0 | 6.0 | 4 | 37 | 0 | 7 | 0 |
-| **Career** |  | 3 | 3 | 18 | 6.0 | 0 | 6.0 | 4 | 37 | 0 | 7 | 0 |
+| 2014 | Cleveland Browns | 4 | 3 | 18 | 6.0 | 0 | 4.5 | 5 | 53 | 0 | 8 | 0 |
+| **Career** |  | 4 | 3 | 18 | 6.0 | 0 | 4.5 | 5 | 53 | 0 | 8 | 0 |
 
 ### Playoffs
 
@@ -19,4 +19,4 @@ No playoff games on record.
 
 None on record.
 
-Records through September 21, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
