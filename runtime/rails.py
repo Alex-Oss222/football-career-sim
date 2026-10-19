@@ -365,6 +365,29 @@ def _tables(text):
         yield dict(zip(columns, cells)), year
 
 
+def _roster_tables(path):
+    """(current rows, departure rows) as (row, heading year) pairs keyed by the roster's column
+    names: from 2014 read from the roster record (runtime/roster.py), every current player with
+    his Status and every departure with its heading's year; for 2013 from its roster page."""
+    from . import roster as roster_record
+    if roster_record.is_record(path):
+        data = roster_record.load(path)
+        current = [({"Player": r["name"], "Pos": r["position"], "Status": r["status"]}, None)
+                   for r in data["players"]]
+        columns = (("disposition", "Rails disposition"), ("outstanding", "Outstanding Jacksonville position"),
+                   ("control_began", "Control began"))
+        departed = []
+        for r in data["departures"]:
+            row = {"Player": r["name"], "Pos": r["position"], "How control ended": r["how_control_ended"]}
+            row.update({column: r[key] for key, column in columns if key in r})
+            departed.append((row, r["year"]))
+        return current, departed
+    text = Path(path).read_text(encoding="utf-8")
+    current, departed = text.split("\n## Departures", 1) if "\n## Departures" in text else (text, "")
+    departed = re.split(r"^## ", departed, maxsplit=1, flags=re.M)[0]
+    return list(_tables(current)), list(_tables(departed))
+
+
 def jacksonville_control(season, root=ROOT, registry=None):
     """Dated Jacksonville control intervals by gsis id (engineering review S4).
 
@@ -387,9 +410,7 @@ def jacksonville_control(season, root=ROOT, registry=None):
     from .seasons import SeasonPaths
     from . import player_bios
     registry = player_bios.load(root) if registry is None else registry
-    text = SeasonPaths(int(season), root).roster.read_text(encoding="utf-8")
-    current, departed = text.split("\n## Departures", 1) if "\n## Departures" in text else (text, "")
-    departed = re.split(r"^## ", departed, maxsplit=1, flags=re.M)[0]
+    current_rows, departed_rows = _roster_tables(SeasonPaths(int(season), root).roster)
     season_start = date(int(season), 9, 1)
     intervals, names, departures, errors = {}, {}, {}, []
     dated_current = {}
@@ -401,7 +422,7 @@ def jacksonville_control(season, root=ROOT, registry=None):
             return None
         return row["gsis_id"]
 
-    for row, _ in _tables(current):
+    for row, _ in current_rows:
         if "Status" not in row:
             continue
         status = row["Status"]
@@ -420,7 +441,7 @@ def jacksonville_control(season, root=ROOT, registry=None):
         names[uid] = row["Player"]
         dated_current[uid] = start
         intervals.setdefault(uid, []).append((start, None))
-    for row, year in _tables(departed):
+    for row, year in departed_rows:
         how = row.get("How control ended", "")
         m = _DEPARTED.search(how)
         if not m:

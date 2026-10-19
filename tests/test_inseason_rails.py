@@ -15,6 +15,7 @@ from types import SimpleNamespace
 from unittest import mock
 
 from runtime import depth_library, player_bios, rails, week_inputs
+from runtime import roster as roster_record
 from runtime.usage import protection_front
 from scripts import build_week_inputs, close_week, render_inseason_rails
 from scripts.check_week_input_exclusivity import check_inputs
@@ -484,18 +485,30 @@ ROSTER = SeasonPaths(2014).roster
 THOMPSON = "00-0029388"  # Deonte Thompson: real Baltimore moves on September 20 to 26
 
 
+# The roster record's names for the columns of a departure table (runtime/roster.py).
+DEPARTURE_FIELDS = {"Player": "name", "Pos": "position", "Control began": "control_began",
+                    "How control ended": "how_control_ended", "Rails disposition": "disposition"}
+
+
 def roster_variant(status=None, departed=None, columns="| Player | Pos | Control began | How control ended | Rails disposition |"):
-    text = ROSTER.read_text(encoding="utf-8")
+    """The roster record with a synthetic Deonte Thompson: a current row with ``status`` after
+    Hakeem Nicks, and/or a departure row (its cells under ``columns``) dated October 20, 2014."""
+    data = json.loads(ROSTER.read_text(encoding="utf-8"))
     if status:
-        anchor = text.index("| Hakeem Nicks | WR |")
-        end = text.index("\n", anchor)
-        text = text[:end + 1] + ("| Deonte Thompson | WR | 1989-02-14 | 25 | %s | No communicated restriction | "
-                                 "test |\n" % status) + text[end + 1:]
+        at = next(i for i, p in enumerate(data["players"]) if p["name"] == "Hakeem Nicks")
+        lst = roster_record.list_for(status) or "active"
+        data["players"].insert(at + 1, {
+            "name": "Deonte Thompson", "position": "WR", "list": lst,
+            "group": "Wide receivers" if lst == "active" else None, "status": status,
+            "availability": None if lst == "practice_squad" else "No communicated restriction",
+            "sources": {"status": "test", "availability": "test"}})
     if departed:
-        at = text.index("### August 30 and 31, 2014")
-        dashes = "|" + " --- |" * (columns.count("|") - 1)
-        text = text[:at] + "### October 20, 2014\n\n%s\n%s\n%s\n\n" % (columns, dashes, departed) + text[at:]
-    return text
+        heads = [c.strip() for c in columns.strip().strip("|").split("|")]
+        cells = [c.strip() for c in departed.strip().strip("|").split("|")]
+        row = {DEPARTURE_FIELDS[h]: c for h, c in zip(heads, cells)}
+        row.update(heading="October 20, 2014", year=2014, source="test")
+        data["departures"].insert(0, row)
+    return json.dumps(data, indent=1)
 
 
 def control_from(text):

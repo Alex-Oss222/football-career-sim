@@ -78,7 +78,7 @@ class SeasonIsolationTests(unittest.TestCase):
             mapping = {'active_season': 2014, 'current_records': {'roster': 'career/2013/roster.md'}}
             (root / 'docs/repository_map.json').write_text(json.dumps(mapping))
             self.assertEqual(current_record('roster', root).read_text(), '2013')
-            mapping['current_records']['roster'] = 'career/2014/Team_Operations/Team/Roster/roster.md'
+            mapping['current_records']['roster'] = SeasonPaths(2014, root).roster.relative_to(root).as_posix()
             (root / 'docs/repository_map.json').write_text(json.dumps(mapping))
             self.assertEqual(current_record('roster', root).read_text(), '2014')
 

@@ -8,6 +8,7 @@ import unittest
 from unittest.mock import patch
 
 from runtime.seasons import SeasonPaths
+import support_roster_record
 from scripts.build_annual_player_sheets import (
     GENERAL_TRAITS, assessment_card_errors, final_assessment_errors,
     load_season_players, review_final_assessments, target_path,
@@ -82,16 +83,8 @@ class AnnualAssessmentCompletionTests(unittest.TestCase):
         self.addCleanup(temp.cleanup)
         root = Path(temp.name)
         paths = SeasonPaths(year, root)
-        paths.roster.parent.mkdir(parents=True, exist_ok=True)
-        paths.roster.write_text('''**As of:** Season close
-**Canonical controlled-player count:** **1**
-
-## Current controlled players
-
-| Player | Pos | Status |
-| --- | --- | --- |
-| Sam Snap | LS | Under contract |
-''')
+        support_roster_record.write(paths.roster, [('Sam Snap', 'LS', 'Active 53')], as_of='%d-12-28' % year,
+                                    event='at the close of the season')
         gates = {}
         for gate, filename in [('team_season_closed', 'season_closeout.md'),
                                ('exit_interviews', 'exit_interviews.md')]:

@@ -46,14 +46,16 @@ class PlayerBiographyTests(unittest.TestCase):
 
     def test_current_views_and_practice_squad_are_complete(self):
         self.assertEqual(render_player_ages.check(), [])
-        roster = current_record('roster').read_text()
-        names = [n for n, _, _ in render_player_ages.controlled_rows(roster)]
+        from runtime import roster as roster_record
+        names = [p["name"] for p in roster_record.load(current_record('roster'))["players"]]
         # 64 under club control from September 8, 2014: the active 53, the four
         # on reserve/injured and the seven practice-squad players (the roster's
         # canonical count of 57 excludes the practice squad, listed separately;
         # Alan Ball signed and Adrian Phillips promoted September 8).
         self.assertEqual(len(set(names)), 64)
-        self.assertIn("| Tyler Bray | QB | 1991-12-27 | 22 | Practice squad (signed August 31, 2014) |", roster)
+        # The ages page lists them with the status the roster record holds (rebuild step 3b).
+        ages = current_record('player_ages').read_text()
+        self.assertIn("| Tyler Bray | QB | 1991-12-27 | 22 | Practice squad |", ages)
 
     def test_regeneration_replaces_stale_age_and_is_idempotent(self):
         text = "<!-- player-ages-as-of: 2013-12-29 -->\n\n| Player | Pos | DOB | Age | Status |\n|---|---|---|---:|---|\n| Mike Harris | CB | 1900-01-01 | 99 | Active 53 |\n"
@@ -76,7 +78,8 @@ class PlayerBiographyTests(unittest.TestCase):
             label = f"{next_day:%B} {next_day.day}, {next_day.year}"
             p.write_text(re.sub(r"(\| Master date/time \| )[A-Za-z]+ \d{1,2}, \d{4}",
                                 lambda m: m[1] + label, p.read_text()))
-            self.assertEqual(len(render_player_ages.check(root)), 3)
+            # The register and the ages page; the roster page is built with its own ages.
+            self.assertEqual(len(render_player_ages.check(root)), 2)
 
     def test_game_date_metadata_does_not_change_team_input(self):
         # Meester remains rostered in January; a historical retirement date is

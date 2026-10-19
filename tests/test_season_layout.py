@@ -49,7 +49,10 @@ class SeasonLayoutTests(unittest.TestCase):
                          'career/2013/stats/game_receipts/x.json')
         paths = SeasonPaths(2014, ROOT)
         self.assertEqual(paths.depth_chart, ROOT/'data/2014/Team_Operations/Team/Depth_Chart/game_depth_chart.json')
-        self.assertEqual(paths.roster, ROOT/'career/2014/Team_Operations/Team/Roster/roster.md')
+        # Rebuild step 3b: the roster record is the owner; the page is built from it.
+        self.assertEqual(paths.roster, ROOT/'data/2014/Team_Operations/Team/Roster/roster.json')
+        self.assertEqual(paths.roster_page, ROOT/'career/2014/Team_Operations/Team/Roster/roster.md')
+        self.assertEqual(SeasonPaths(2013, ROOT).roster, ROOT/'career/2013/roster.md')
         self.assertEqual(paths.call_sheet(5), ROOT/'data/2014/Regular_Season/Games/Week_05/call_sheet.json')
         self.assertEqual(paths.week_folder(5), ROOT/'career/2014/Regular_Season/Games/Week_05')
         self.assertEqual(paths.file_in(paths.stats, 'season_totals.json'),

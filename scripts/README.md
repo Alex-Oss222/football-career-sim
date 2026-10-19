@@ -27,11 +27,12 @@ A script that talks to the private Engine State service needs `ENGINE_RUNTIME_UR
 | `python scripts/league_awards.py month NAME --season YEAR [--close]` | Monthly awards on the league's announcement date |
 | `python scripts/league_awards.py render --season YEAR` | Rewrites the award pages |
 | `python scripts/render_player_pages.py [--check] [--root PATH]` | Every player page, built from the permanent player records (`data/people/players/`): the league pages under `career/league_players/` and the active season's Jacksonville player folder; `--check` also fails on a record that breaks the schema or an award whose winner is not in the game records |
+| `python scripts/render_club_pages.py [--check] [--root PATH]` | The team page, the roster and the depth chart, built from the roster record, the game and working depth charts, the depth chart's dated update log, the closed games and the current-job record (`scripts/render_club_pages.py`); `--check` also fails a page that breaks the clean-page rule |
 | `python scripts/update_player_cards.py YEAR [--check]` | Refreshes statistics on a player card still in the earlier card layout (built pages are skipped); `--check` validates the season's opening assessments, on the records for built pages |
 | `python scripts/render_observables.py --season YEAR --week N [--check]` | Backfills or checks a closed week's participation observables |
 | `python scripts/render_inseason_rails.py --season YEAR [--week N] [--write] [--check] [--event ID]` | One week's in-season rails page from the committed rails data |
 | `python scripts/render_coach_record.py YEAR [--opponent NAME] [--date YYYY-MM-DD]` | Stone's head-coaching record table for the weekly Coach info block |
-| `python scripts/render_player_ages.py [--check]` | Birth-date and age columns as of Document 5's master date |
+| `python scripts/render_player_ages.py [--check]` | The register's birth-date and age columns and the player ages page, as of Document 5's master date |
 | `python scripts/advance_private_snapshot.py CHECKPOINT` | From merged `main` only: advances the private snapshot to the current Document 5 digest |
 
 ## Preseason
@@ -48,7 +49,7 @@ A script that talks to the private Engine State service needs `ENGINE_RUNTIME_UR
 | `python scripts/render_annual_record.py YEAR [--root PATH] [--check]` | The one-line annual `Record.md` from each event owner's metadata |
 | `python scripts/render_career_views.py [--check]` | The career views (Document 5, the staff register's phase control, the head coach's desk) from the current-job record and the decision queue; writing is refused while a Jacksonville game is paused |
 | `python scripts/render_trade_pages.py YEAR [--check]` | Trade navigation from the completed-trade index |
-| `python scripts/render_jaguars_cap_tracker.py [--check]` | The twelve-year financial horizon from the contract inputs |
+| `python scripts/render_jaguars_cap_tracker.py [--check]` | The twelve-year financial horizon and the player cap views from the contract inputs (`data/finances/financial_inputs.json`) |
 | `python scripts/render_draft_order.py [--check]` | The 2014 draft order from the closed receipts |
 | `python scripts/render_2014_opponents.py [--check]` | The undated 2014 opponent matrix |
 | `python scripts/resolve_compensatory_picks.py [--check]` | The branch 2014 compensatory picks (deterministic) |
