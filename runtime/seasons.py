@@ -11,6 +11,11 @@ import re
 from .season_layout import DATA_ROOT, is_system_file, season_relative
 
 ROOT = Path(__file__).resolve().parents[1]
+# A game's result page. From 2014 Week 6 (every later game, the postseason included) it is the Game
+# Report; the games before it keep their weekly output.md as written (docs/rebuild_plan.md, rule 1).
+GAME_REPORT = 'Game_Report.md'
+GAME_OUTPUT = 'output.md'
+GAME_REPORT_FROM = (2014, 6)
 RELEASE_GATES = {'tier1_engine', 'season_rules', 'season_closure', 'dated_fixtures',
                  'legal_rosters', 'financial_control', 'player_state'}
 
@@ -166,6 +171,13 @@ class SeasonPaths:
     def call_sheet(self, week, postseason=False):
         """The week's frozen call sheet (``call_sheet.json``)."""
         return self.week_data(week, postseason) / 'call_sheet.json'
+
+    def game_report(self, week, postseason=False):
+        """The game's result page: the Game Report (``GAME_REPORT``) from 2014 Week 6, the
+        postseason after it included; before it the week's ``output.md`` as written."""
+        year, first = GAME_REPORT_FROM
+        report = self.year > year or (self.year == year and (postseason or week >= first))
+        return self.week_folder(week, postseason) / (GAME_REPORT if report else GAME_OUTPUT)
 
     def paused_game(self, week, postseason=False, preseason=False):
         """Kernel 2014.4 E2: the protagonist game's paused partial record.

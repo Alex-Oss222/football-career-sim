@@ -14,8 +14,12 @@ category tables, drive chart), kept byte-identical for the closed 2013
 outputs, and from 2014 the gamebook layout of the weekly game turn template
 (scoring summary, team stats, eleven individual tables per club, drive chart,
 snap counts) in runtime/gamebook.py, whose docstring lists the rows and
-columns each receipt field supports and the ones left out. `--line-score`
-prints the template's Section 3 line score for a 2014-onward receipt.
+columns each receipt field supports and the ones left out. From 2014 Week 6
+the result page is the Game Report (Game_Report.md, runtime.seasons
+.SeasonPaths.game_report): its block is the same gamebook with the sacks
+column headed SCK/YDS, so the page passes the clean-page check; a weekly
+output.md keeps SCK-YDS byte for byte. `--line-score` prints the template's
+Section 3 line score for a 2014-onward receipt.
 """
 from __future__ import annotations
 
@@ -216,11 +220,12 @@ def drive_chart(receipt):
 GAMEBOOK_FROM_SEASON = 2014
 
 
-def render(receipt, lead_team, season=2013):
-    """The box score for one club's output: 2013 layout, or the gamebook from 2014."""
+def render(receipt, lead_team, season=2013, report=False):
+    """The box score for one club's output: 2013 layout, or the gamebook from 2014 (``report``:
+    the Game Report's headers)."""
     if season >= GAMEBOOK_FROM_SEASON:
         from runtime.gamebook import render as render_gamebook
-        return render_gamebook(receipt, lead_team)
+        return render_gamebook(receipt, lead_team, report=report)
     clubs = team_order(receipt, lead_team)
     lines = comparison(receipt, clubs)
     for club in clubs:
@@ -229,10 +234,16 @@ def render(receipt, lead_team, season=2013):
     return "\n".join(lines)
 
 
-def fill(text, directory=RECEIPTS, season=2013):
-    """Return text with every marked box-score block regenerated."""
+def is_report(path):
+    """Whether ``path`` is a Game Report (the result page from 2014 Week 6)."""
+    from runtime.seasons import GAME_REPORT
+    return Path(path).name == GAME_REPORT
+
+
+def fill(text, directory=RECEIPTS, season=2013, report=False):
+    """Return text with every marked box-score block regenerated (``report``: a Game Report)."""
     def replace(match):
-        body = render(load_receipt(match.group("event"), directory), match.group("team"), season)
+        body = render(load_receipt(match.group("event"), directory), match.group("team"), season, report)
         return match.group(1) + body + "\n" + match.group(5)
     return BLOCK.sub(replace, text)
 
@@ -242,7 +253,8 @@ def stale_blocks(path, directory=RECEIPTS, season=2013):
     text = Path(path).read_text(encoding="utf-8")
     stale = []
     for match in BLOCK.finditer(text):
-        expected = render(load_receipt(match.group("event"), directory), match.group("team"), season) + "\n"
+        expected = render(load_receipt(match.group("event"), directory), match.group("team"), season,
+                          is_report(path)) + "\n"
         if match.group("body") != expected:
             stale.append(match.group("event"))
     return stale
@@ -269,7 +281,7 @@ def main():
         text = path.read_text(encoding="utf-8")
         for match in BLOCK.finditer(text):
             require_receipt_season([load_receipt(match.group('event'), receipts)], args.season)
-        path.write_text(fill(text, receipts, args.season), encoding="utf-8")
+        path.write_text(fill(text, receipts, args.season, is_report(path)), encoding="utf-8")
         print("filled box scores in %s" % path)
         return
     if not args.event_id:

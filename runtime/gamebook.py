@@ -158,6 +158,12 @@ def _ratio(made, attempts):
     return "%d-%d, %s%%" % (made, attempts, "%.0f" % (100.0 * made / attempts)) if attempts else "%d-%d" % (made, attempts)
 
 
+# The sacks-and-yards column header. A Game Report (the result page from 2014 Week 6) writes it as
+# the league's gamebooks do, SCK/YDS; the weekly outputs before it keep SCK-YDS as written.
+SACK_YARDS = "SCK-YDS"
+REPORT_SACK_YARDS = "SCK/YDS"
+
+
 class GameView:
     """One receipt, indexed by club."""
 
@@ -166,6 +172,7 @@ class GameView:
         if lead_team not in clubs:
             raise ValueError("%s did not play in %s" % (lead_team, receipt["event_id"]))
         self.receipt = receipt
+        self.sack_yards = SACK_YARDS
         self.clubs = [lead_team] + [c for c in clubs if c != lead_team]
         self.away, self.home = receipt["away"], receipt["home"]
         self.game_type = receipt.get("game_type", "regular")
@@ -575,7 +582,7 @@ def individual(view, club):
 
     # Passing
     rows_cache = _rows(p, ("pass_attempts", "sacks_taken"), "passing_yards")
-    headers = ["CMP/ATT", "YDS", "AVG", "TD", "INT", "SCK-YDS"] + (["LNG"] if L else []) + ["RTG"]
+    headers = ["CMP/ATT", "YDS", "AVG", "TD", "INT", view.sack_yards] + (["LNG"] if L else []) + ["RTG"]
     columns = [lambda n, l: "%d/%d" % (g(l, "completions"), g(l, "pass_attempts")), c("passing_yards"),
                lambda n, l: avg(g(l, "passing_yards"), g(l, "pass_attempts")), c("passing_touchdowns"),
                lambda n, l: thrown(l), lambda n, l: "%d-%d" % (g(l, "sacks_taken"), g(l, "sack_yards"))]
@@ -628,7 +635,7 @@ def individual(view, club):
         yards = sum(view.sack_yards_by(n) for n, _ in defenders) if name is None else view.sack_yards_by(name)
         return "%.1f-%d" % (g(line, "sacks"), yards)
 
-    lines += _block("Defense", ["TOT", "SOLO", "AST", "SCK-YDS" if L else "SCK", "TFL", "PD", "INT", "FF", "FR"],
+    lines += _block("Defense", ["TOT", "SOLO", "AST", view.sack_yards if L else "SCK", "TFL", "PD", "INT", "FF", "FR"],
                     rows_cache, [c("tackles"), c("solo_tackles"), c("assisted_tackles"), sack_cell,
                                  c("tackles_for_loss"), c("passes_defended"), c("defensive_interceptions"),
                                  c("forced_fumbles"), c("fumble_recoveries")], total=True)
@@ -748,8 +755,11 @@ def snap_counts(view):
     return lines
 
 
-def render(receipt, lead_team):
+def render(receipt, lead_team, report=False):
+    """The gamebook block; ``report`` gives the Game Report's column header (REPORT_SACK_YARDS),
+    every other cell unchanged."""
     view = GameView(receipt, lead_team)
+    view.sack_yards = REPORT_SACK_YARDS if report else SACK_YARDS
     lines = scoring_summary(view) + team_stats(view)
     for club in view.clubs:
         lines += individual(view, club)

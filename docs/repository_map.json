@@ -399,7 +399,10 @@
     "scripts/check_game_plan.py",
     "scripts/apply_game_plan.py",
     "tests/test_game_plan.py",
-    "tests/test_game_week_pages.py"
+    "tests/test_game_week_pages.py",
+    "runtime/week_pages.py",
+    "scripts/render_week_pages.py",
+    "career/2014/Team_Operations/Medical/current_injury_report.md"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",
@@ -468,7 +471,9 @@
     "background_depth": "library/data/2013_week1_depth_charts.json",
     "record": "career/2014/Record.md",
     "inseason_rails": "library/data/2014_inseason_rails/manifest.json",
-    "observables": "data/2014/League/personnel/observables"
+    "observables": "data/2014/League/personnel/observables",
+    "injury_report": "career/2014/Team_Operations/Medical/current_injury_report.md",
+    "medical_history": "career/2014/Team_Operations/Medical/medical_history.md"
   },
   "career_layer": {
     "job": "state/current_job.json",

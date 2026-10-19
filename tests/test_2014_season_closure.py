@@ -234,6 +234,10 @@ class SeasonClosure2014Tests(unittest.TestCase):
         from scripts import render_career_views, render_coach_pages
         render_coach_pages.write(root)
         render_career_views.write(root)
+        # The Games and league-results indexes and the injury report read the closed games
+        # (scripts/render_week_pages.py, rebuild step 4).
+        from scripts import render_week_pages
+        self.assertEqual(render_week_pages.write(root, SEASON)[1], [])
         # The in-season rails records of the closed weeks read the receipts
         # before them, so the synthetic Week 1 changes their generated block
         # as the weekly workflow would regenerate it; the batch's event after

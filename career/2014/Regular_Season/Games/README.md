@@ -1,35 +1,27 @@
 # Jacksonville 2014 regular season
 
-**IN PROGRESS: 3-2 through Week 5.** The schedule was released April 23, 2014, 8 p.m. ET ([2014 dated record](../../Record.md)). The full 256-game release is frozen in [fixtures.json](../../../../data/2014/Regular_Season/Schedule/fixtures.json) ([readable view](../Schedule/fixtures.md), [sources](../Schedule/sources.md)); no game result or participant is imported. Kickoffs below use Eastern Time as released. Dated historical amendments apply on their own dates.
+**3-2 through Week 5.** Next: Week 6 at Tennessee, Sunday, October 12, 1 p.m. ET, LP Field.
 
-| Week | Date | Jacksonville game | Kickoff | Status |
-|---|---|---|---|---|
-| [Week 1](Week_01/README.md) | September 7 | at Philadelphia | 1 p.m. | **Played: Jacksonville 23, Philadelphia 20 (OT)** |
-| [Week 2](Week_02/README.md) | September 14 | at Washington | 1 p.m. | **Played: Jacksonville 24, Washington 7** |
-| [Week 3](Week_03/README.md) | September 21 | Indianapolis | 1 p.m. | **Played: Jacksonville 38, Indianapolis 34** |
-| [Week 4](Week_04/README.md) | September 28 | at San Diego | 4:05 p.m. | **Played: San Diego 21, Jacksonville 20** |
-| [Week 5](Week_05/README.md) | October 5 | Pittsburgh | 1 p.m. | **Played: Pittsburgh 27, Jacksonville 10** |
-| [Week 6](Week_06/README.md) | October 12 | at Tennessee | 1 p.m. | Next; preparation opens October 6 |
-| [Week 7](Week_07/README.md) | October 19 | Cleveland | 1 p.m. | Not started |
-| [Week 8](Week_08/README.md) | October 26 | Miami | 1 p.m. | Not started |
-| [Week 9](Week_09/README.md) | November 2 | at Cincinnati | 1 p.m. | Not started |
-| [Week 10](Week_10/README.md) | November 9 | Dallas, Wembley (designated home) | 1 p.m. | Not started |
-| [Week 11](Week_11/README.md) | November 16 | Bye | — | Not started |
-| [Week 12](Week_12/README.md) | November 23 | at Indianapolis | 1 p.m. | Not started |
-| [Week 13](Week_13/README.md) | November 30 | New York Giants | 1 p.m. | Not started |
-| [Week 14](Week_14/README.md) | December 7 | Houston | 1 p.m. | Not started |
-| [Week 15](Week_15/README.md) | December 14 | at Baltimore | 1 p.m. | Not started |
-| [Week 16](Week_16/README.md) | December 18 | Tennessee (Thursday) | 8:25 p.m. | Not started |
-| [Week 17](Week_17/README.md) | December 28 | at Houston | 1 p.m. | Not started |
+| Week | Date | Opponent | Kickoff (ET) | Site | Result |
+|---|---|---|---|---|---|
+| [Week 1](Week_01/README.md) | Sunday, September 7 | at Philadelphia | 1 p.m. | Lincoln Financial Field | [Won 23-20 (OT)](Week_01/output.md) |
+| [Week 2](Week_02/README.md) | Sunday, September 14 | at Washington | 1 p.m. | FedExField | [Won 24-7](Week_02/output.md) |
+| [Week 3](Week_03/README.md) | Sunday, September 21 | vs. Indianapolis | 1 p.m. | EverBank Field | [Won 38-34](Week_03/output.md) |
+| [Week 4](Week_04/README.md) | Sunday, September 28 | at San Diego | 4:05 p.m. | Qualcomm Stadium | [Lost 21-20](Week_04/output.md) |
+| [Week 5](Week_05/README.md) | Sunday, October 5 | vs. Pittsburgh | 1 p.m. | EverBank Field | [Lost 27-10](Week_05/output.md) |
+| [Week 6](Week_06/README.md) | Sunday, October 12 | at Tennessee | 1 p.m. | LP Field | Next |
+| [Week 7](Week_07/README.md) | Sunday, October 19 | vs. Cleveland | 1 p.m. | EverBank Field |  |
+| [Week 8](Week_08/README.md) | Sunday, October 26 | vs. Miami | 1 p.m. | EverBank Field |  |
+| [Week 9](Week_09/README.md) | Sunday, November 2 | at Cincinnati | 1 p.m. | Paul Brown Stadium |  |
+| [Week 10](Week_10/README.md) | Sunday, November 9 | vs. Dallas | 1 p.m. | Wembley Stadium, London |  |
+| [Week 11](Week_11/README.md) |  | Bye |  |  |  |
+| [Week 12](Week_12/README.md) | Sunday, November 23 | at Indianapolis | 1 p.m. | Lucas Oil Stadium |  |
+| [Week 13](Week_13/README.md) | Sunday, November 30 | vs. N.Y. Giants | 1 p.m. | EverBank Field |  |
+| [Week 14](Week_14/README.md) | Sunday, December 7 | vs. Houston | 1 p.m. | EverBank Field |  |
+| [Week 15](Week_15/README.md) | Sunday, December 14 | at Baltimore | 1 p.m. | M&T Bank Stadium |  |
+| [Week 16](Week_16/README.md) | Thursday, December 18 | vs. Tennessee | 8:25 p.m. | EverBank Field |  |
+| [Week 17](Week_17/README.md) | Sunday, December 28 | at Houston | 1 p.m. | NRG Stadium |  |
 
-Source: [Jaguars April 23 release](https://www.jaguars.com/news/2014-jaguars-schedule-released-12908209), matching the frozen league fixtures. The other game release gates remain required; this index does not bypass them.
+Dates, sites and kickoffs are the league's schedule as released April 23, 2014, Eastern Time; a later change applies from the date it was announced.
 
-## Running a week after release
-
-Read the current checkpoint and calendar, frozen fixtures, actual roster/medical instructions, installed playbooks and existing ex-ante plan. Pass both repository and game readiness, including season-aware inputs and weekly control exclusivity. Follow the existing one-command weekly workflow for Jacksonville and all background games through the same kernel. No hidden protagonist bonus, branch-win talent rating or real result may enter resolution.
-
-A game week needs the pre-result plan/call sheet, permitted training, actual game output, full Jacksonville public receipt, background compact-stat receipts, generated season stat/standings views, actual individual feedback/film receipts and atomic event closure. Each week's `output.md` follows the [weekly game turn template](../../../../foundation/templates/regular_season_output_template.md): header and coach record (`scripts/render_coach_record.py`), week setup, pregame Q&A, the game by quarter, the generated full stats block (`scripts/render_box_score.py --season 2014 --write`, gamebook layout: scoring summary, team stats, individual tables, drive chart, snap counts), postgame Q&A, takeaways, personnel snapshot and closure. The [individual workflow](../../Offseason_Training/Coaching_Methods/weekly_workflow.md), [player profiles](../../Team_Operations/Player_Development/roster_profiles.md) and [staff evolution](../../Early_Offseason/staff_changes/README.md) continue throughout the season.
-
-On the actual bye, use the permitted review/time-off process; no Jacksonville game or fake game receipt is created. Background games still close normally. Preserve experience and supported player strengths while revising open questions from actual work. Do not backdate tapes or interpret a generated season total as mastery.
-
-After the final regular-season week, qualification and reseeding come only from branch receipts. The [calendar's conditional postseason dates](../../Calendar.md#2014-postseason-and-season-review) govern January–February 2015. No playoff berth, opponent or season-close date is assumed.
+[Schedule](../Schedule/fixtures.md) · [Schedule sources](../Schedule/sources.md) · [Standings](../standings.md) · [League results](../League_Results/README.md) · [Statistics](../Statistics/README.md) · [Calendar](../../Calendar.md)

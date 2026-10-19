@@ -1,3 +1,13 @@
 # 2014 league results
 
-**Through Week 5:** [week_01.md](week_01.md) (closed September 7, 2014), [week_02.md](week_02.md) (closed September 14, 2014), [week_03.md](week_03.md) (closed September 21, 2014), [week_04.md](week_04.md) (closed September 28, 2014; thirteen games, Arizona, Cincinnati, Cleveland, Denver, Seattle and St. Louis on bye) and [week_05.md](week_05.md) (closed October 5, 2014; fifteen games, Miami and Oakland on bye), each with all of its games and Jacksonville's result cross-referenced to its own output. Create `week_NN.md` only after that dated slate closes. Preserve generated background receipts separately and narrate concise highlights from them. Jacksonville's own output belongs in its game folder. A bye creates no Jacksonville game receipt. No historical scores or empty weekly result files are imported.
+Every closed week's scores and highlights; Jacksonville's own game has its full report in its week's folder.
+
+| Week | Played | Games | Byes | Jacksonville |
+|---|---|---:|---|---|
+| [Week 1](week_01.md) | September 4 to 8, 2014 | 16 | None | [Won 23-20 (OT) at Philadelphia](../Games/Week_01/output.md) |
+| [Week 2](week_02.md) | September 11 to 15, 2014 | 16 | None | [Won 24-7 at Washington](../Games/Week_02/output.md) |
+| [Week 3](week_03.md) | September 18 to 22, 2014 | 16 | None | [Won 38-34 vs. Indianapolis](../Games/Week_03/output.md) |
+| [Week 4](week_04.md) | September 25 to 29, 2014 | 13 | Arizona, Cincinnati, Cleveland, Denver, Seattle and St. Louis | [Lost 21-20 at San Diego](../Games/Week_04/output.md) |
+| [Week 5](week_05.md) | October 2 to 6, 2014 | 15 | Miami and Oakland | [Lost 27-10 vs. Pittsburgh](../Games/Week_05/output.md) |
+
+[Standings](../standings.md) · [Jacksonville's games](../Games/README.md) · [Statistics](../Statistics/README.md)
