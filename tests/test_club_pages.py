@@ -141,14 +141,17 @@ class ClubPageTests(unittest.TestCase):
         for group, players in chart["depth"].items():
             if group not in club_pages.GROUP_NAMES:
                 continue
-            rows = tables(self.chart_text, "### " + club_pages.GROUP_NAMES[group])
+            rows = tables(self.chart_text, "#### " + club_pages.GROUP_NAMES[group])
             self.assertEqual([name_of(r[1]) for r in rows], players, group)
             self.assertEqual([int(r[0]) for r in rows], list(range(1, len(players) + 1)))
-        heading = "## Captains, %s" % chart["captains"]["date"]
-        self.assertIn(heading, self.chart_text.splitlines())
+        self.assertIn("## Captains", self.chart_text.splitlines())
+        self.assertIn("## First-unit offense", self.chart_text.splitlines())
+        self.assertIn("## Situational defensive roles", self.chart_text.splitlines())
         from scripts.validate_repository import anchors
-        self.assertIn("captains-august-31-2014", anchors(self.chart_text))
-        log = tables(self.chart_text, "## Update log")
+        self.assertIn("captains", anchors(self.chart_text))
+        history_rel = self.ctx.paths.career / "Team_Operations/Team/Depth_Chart/Changes.md"
+        history = history_rel.read_text(encoding="utf-8")
+        log = tables(history, "## Update log")
         self.assertEqual(len(log), len(self.ctx.log["entries"]))
         self.assertEqual([r[0] for r in log], [e["date"] for e in self.ctx.log["entries"]])
 
