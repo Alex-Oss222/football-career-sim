@@ -32,7 +32,10 @@ def _player_link(ctx, page, name):
 
 
 def _facts(ctx):
-    receipts = load_receipts(ctx.paths.receipts) if ctx.paths.receipts.is_dir() else []
+    source = load_receipts(ctx.paths.receipts) if ctx.paths.receipts.is_dir() else []
+    # Only complete NFL game results belong in the current summary.
+    receipts = [r for r in source if r.get("home") in DIVISION_OF and r.get("away") in DIVISION_OF
+                and isinstance(r.get("final_score"), dict) and isinstance(r.get("team_stats"), dict)]
     book = aggregate_receipts(receipts)
     team = book.get("teams", {}).get(CLUB, {})
     games = sorted((r for r in receipts if CLUB in (r["home"], r["away"])), key=lambda r: int(r["week"]))
