@@ -54,9 +54,15 @@ class RegistryTests(unittest.TestCase):
                 self.assertTrue(folder.is_dir(), (d.kind, folder))
 
     def test_page_names(self):
-        pages = decisions.week_pages(2014, 1, ROOT)
+        from runtime.seasons import GAME_REPORT_FROM, SeasonPaths
+        year, first = GAME_REPORT_FROM
+        pages = decisions.week_pages(year, first, ROOT)
         self.assertEqual((pages.briefing.name, pages.plan.name, pages.report.name),
                          ("Game_Week_Briefing.md", "Game_Plan.md", "Game_Report.md"))
+        # The result page is the folder map's (SeasonPaths.game_report): before the first Game Report
+        # week it is the week's output as written.
+        for week in (first - 1, first, first + 1):
+            self.assertEqual(decisions.week_pages(year, week, ROOT).report, SeasonPaths(year, ROOT).game_report(week))
 
 
 class BriefingTests(unittest.TestCase):
@@ -75,7 +81,7 @@ class BriefingTests(unittest.TestCase):
         places = [text.index(s) for s in SECTIONS]
         self.assertEqual(places, sorted(places))
         self.assertIn(self.wk.opponent, text)
-        self.assertIsNotNone(render_game_week.issued_on(text))
+        self.assertIsNotNone(render_game_week.issued_on(self.wk))
         self.assertEqual(render_game_week.validation_errors(self.root), [])
         self.assertEqual(render_game_week.check(self.root), [])
 
@@ -120,13 +126,16 @@ class BriefingTests(unittest.TestCase):
         queue = (self.root / "state/decision_queue.json").read_bytes()
         with contextlib.redirect_stdout(io.StringIO()):
             written = render_game_week.write(self.root)
-        earlier = render_game_week.earlier_briefings(render_game_week.Week(self.root))
+        earlier = [path for path, _ in render_game_week.earlier_briefings(render_game_week.Week(self.root))]
         self.assertEqual(len(earlier), 1)
         self.assertEqual(earlier[0].read_text(encoding="utf-8"), old)
         self.assertIn(earlier[0], written)
         shown = changed["name"] + " |" in self.wk.pages.briefing.read_text(encoding="utf-8")
         self.assertEqual(shown, not under)
         self.assertIn(earlier[0].name, self.wk.pages.readme.read_text(encoding="utf-8"))
+        # Both issues are in the week's issue record, the earlier one under its kept name.
+        record = render_game_week.issues(render_game_week.Week(self.root))
+        self.assertEqual([e["file"] for e in record], [earlier[0].name, self.wk.pages.briefing.name])
         # Issuing a page moves no time and settles nothing.
         self.assertEqual((self.root / "state/05_Current_Season_State.md").read_bytes(), state)
         self.assertEqual((self.root / "state/decision_queue.json").read_bytes(), queue)
@@ -148,6 +157,182 @@ class BriefingTests(unittest.TestCase):
         if "Week %d" % week in waiting:
             self.assertIn("[Game Week Briefing](%s)" % self.wk.rel(self.wk.pages.briefing).split("/", 2)[2], waiting)
             self.assertIn("[Game Plan](%s)" % self.wk.rel(self.wk.pages.plan).split("/", 2)[2], waiting)
+
+
+class IssueRecordTests(unittest.TestCase):
+    """F3: each issued briefing is held to its recorded issue; a hand edit fails validation and is
+    never kept as what he saw; the issue date is the record's, never read from the page."""
+
+    def setUp(self):
+        self.root = copy_repo(self)
+        wk = render_game_week.Week(self.root)
+        if wk.game is None:
+            self.skipTest("no Jacksonville game is open")
+        with contextlib.redirect_stdout(io.StringIO()):
+            render_game_week.write(self.root)
+        self.wk = render_game_week.Week(self.root)
+
+    def test_a_hand_edited_briefing_fails_and_is_never_kept(self):
+        page = self.wk.pages.briefing
+        issued = page.read_text(encoding="utf-8")
+        self.assertEqual(render_game_week.validation_errors(self.root), [])
+        record = render_game_week.issues(self.wk)
+        self.assertEqual(record[-1]["sha256"], render_game_week.sha256(page))
+        mine = self.wk.record("Jacksonville Jaguars")
+        edited = issued.replace("| Jacksonville | %s |" % mine, "| Jacksonville | 9-0 |", 1)
+        self.assertNotEqual(edited, issued)
+        page.write_text(edited, encoding="utf-8")
+        self.assertTrue(any("differs from the briefing issued" in e for e in render_game_week.validation_errors(self.root)))
+        with self.assertRaises(ValueError):
+            render_game_week.write(self.root)
+        self.assertEqual(render_game_week.earlier_briefings(render_game_week.Week(self.root)), [])
+        self.assertFalse(list(self.wk.pages.folder.glob(page.stem + "_*.md")))
+        page.write_text(issued, encoding="utf-8")
+        self.assertEqual(render_game_week.validation_errors(self.root), [])
+
+    def test_a_briefing_no_issue_produced_fails(self):
+        stray = self.wk.pages.earlier_briefing("October 1")
+        stray.write_text(self.wk.pages.briefing.read_text(encoding="utf-8"), encoding="utf-8")
+        self.assertTrue(any("not a briefing the issue record holds" in e
+                            for e in render_game_week.validation_errors(self.root)))
+        stray.unlink()
+        render_game_week.issues_path(self.wk).unlink()
+        self.assertTrue(any("has no issue record" in e for e in render_game_week.validation_errors(self.root)))
+
+    def test_the_issue_date_is_the_records(self):
+        page = self.wk.pages.briefing
+        when = render_game_week.issued_on(self.wk)
+        self.assertEqual(when.isoformat(), render_game_week.issues(self.wk)[-1]["date"])
+        self.assertIn("From the coaching staff, %s:" % render_game_week.day(when), page.read_text(encoding="utf-8"))
+        self.assertIn("Issued %s" % render_game_week.day(when), self.wk.pages.readme.read_text(encoding="utf-8"))
+
+
+def receipt(event, week, away, home, scores, stats, records=False):
+    """A minimal closed-game record for the statistics owner (runtime/statbook.aggregate_receipts)."""
+    from runtime.statbook import STATBOOK_SCHEMA_VERSION
+    out = {"event_id": event, "schema_version": STATBOOK_SCHEMA_VERSION, "week": week, "coverage": "complete",
+           "away": away, "home": home, "final_score": scores,
+           "team_stats": {club: dict(stats[club], points=scores[club]) for club in (away, home)}}
+    if records:
+        out["penalties"] = {}      # the game carries the penalty records (each foul charged to its club)
+    return out
+
+
+def player(position, **fields):
+    return dict(fields, position=position)
+
+
+class BriefingFactsTests(unittest.TestCase):
+    """The briefing's figures are the statistics owner's (R2, F5), a tie is a tie (R4), the medical
+    table names the roster status and reads exams across the new year (R11, F10, W6-9), and the
+    plan's practice work is due before the week's first practice (R7)."""
+
+    def test_penalties_under_two_methods_are_never_added(self):
+        games = [receipt("e1", 4, "B", "A", {"A": 10, "B": 7},
+                         {"A": {"penalties": 8, "penalty_yards": 58, "players": {}},
+                          "B": {"penalties": 2, "penalty_yards": 18, "players": {}}}),
+                 receipt("e2", 5, "A", "C", {"A": 20, "C": 23},
+                         {"A": {"penalties": 10, "penalty_yards": 63, "players": {}},
+                          "C": {"penalties": 7, "penalty_yards": 69, "players": {}}}, records=True)]
+        rows, note = render_game_week.team_rows(games, "A")
+        penalties = {r[0]: r[1:] for r in rows if r[0].startswith("Penalties")}
+        self.assertEqual(penalties, {"Penalties, through Week 4": ["8 for 58 yards", "2 for 18 yards"],
+                                     "Penalties, from Week 5": ["10 for 63 yards", "7 for 69 yards"]})
+        self.assertIn("never added", note)
+        self.assertNotIn("18 for 121 yards", str(rows))
+        # One method alone is one row, and the other figures are the statistics owner's totals.
+        rows, note = render_game_week.team_rows(games[1:], "A")
+        self.assertIsNone(note)
+        self.assertIn(["Penalties", "10 for 63 yards", "7 for 69 yards"], rows)
+        self.assertIn(["Points", "30", "30"], render_game_week.team_rows(games, "A")[0])
+
+    def test_players_tied_for_a_lead_each_have_a_row(self):
+        games = [receipt("e1", 1, "B", "A", {"A": 10, "B": 7},
+                         {"A": {"players": {"Mincey": player("DE", sacks=2, tackles=5),
+                                            "Stanford": player("LB", sacks=2, tackles=7),
+                                            "Posluszny": player("LB", sacks=1, tackles=7)}},
+                          "B": {"players": {}}})]
+        rows = render_game_week.leaders(games, "A")
+        self.assertEqual([r[:2] for r in rows if r[0].startswith("Sacks")],
+                         [["Sacks, tied", "Mincey"], ["Sacks, tied", "Stanford"]])
+        self.assertEqual([r[:2] for r in rows if r[0].startswith("Tackles")],
+                         [["Tackles, tied", "Posluszny"], ["Tackles, tied", "Stanford"]])
+        from runtime import season_summary as summary
+        team = {"players": {"X": {"tackles": 40}, "Y": {"tackles": 40}, "Z": {"tackles": 12}}}
+        self.assertEqual([(c, n) for c, n, _ in summary.leaders(team)], [("Tackling, tied", "X"), ("Tackling, tied", "Y")])
+
+    def stand_in(self, root, master):
+        """A week read for the medical table: the copy's roster record as of ``master``."""
+        from types import SimpleNamespace
+        from runtime.seasons import SeasonPaths
+        paths = SeasonPaths(2014, root)
+        return SimpleNamespace(paths=paths, master=master, rel=lambda p: Path(p).relative_to(root).as_posix())
+
+    def edited_roster(self, root, changes):
+        from runtime.seasons import SeasonPaths
+        path = SeasonPaths(2014, root).roster
+        data = json.loads(path.read_text(encoding="utf-8"))
+        for row in data["players"]:
+            if row["name"] in changes:
+                row.update(changes[row["name"]])
+        path.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        return data
+
+    def test_the_medical_table_names_the_reserve_list_and_the_year_of_each_exam(self):
+        from datetime import date
+        root = copy_repo(self)
+        data = json.loads(render_game_week.Week(root).paths.roster.read_text(encoding="utf-8"))
+        active = next(p for p in data["players"] if p["list"] == "active")
+        season = next(p for p in data["players"] if p["list"] == "reserve")
+        self.edited_roster(root, {
+            active["name"]: {"availability": "Out, minor: trunk, logged in the Week 16 game; projected return "
+                                             "January 5, 2015; reassessment January 2 ([medical record](x.md))"},
+            season["name"]: {"status": "Reserve/Injured (placed August 31, 2014)",
+                             "availability": "Out, long term: lower extremity; projected return October 9, 2014"}})
+        rows = {r[0]: r for r in render_game_week.availability_rows(self.stand_in(root, date(2014, 12, 28)), "x.md")}
+        # A reassessment written without its year is the nearer one: across the new year it keeps 2015.
+        self.assertEqual(rows[active["name"]][3:7], ["Out", "trunk (minor)", "January 5, 2015", "January 2, 2015"])
+        # A player on reserve/injured, not designated for return, is out for the season.
+        self.assertEqual(rows[season["name"]][2], "Reserve/injured")
+        self.assertEqual(rows[season["name"]][5], "Out for the season")
+        rows = {r[0]: r for r in render_game_week.availability_rows(self.stand_in(root, date(2015, 1, 3)), "x.md")}
+        self.assertEqual(rows[active["name"]][6], "None communicated")  # January 2, 2015 has passed
+        self.edited_roster(root, {season["name"]: {"status": "Reserve/Injured, designated for return (placed "
+                                                             "September 8, 2014)"}})
+        rows = {r[0]: r for r in render_game_week.availability_rows(self.stand_in(root, date(2014, 10, 5)), "x.md")}
+        self.assertEqual(rows[season["name"]][2], "Reserve/injured, designated for return")
+        self.assertEqual(rows[season["name"]][5], "October 9, 2014")
+
+    def test_an_entry_in_another_layout_is_read_whole_or_refused(self):
+        from datetime import date
+        root = copy_repo(self)
+        data = json.loads(render_game_week.Week(root).paths.roster.read_text(encoding="utf-8"))
+        name = next(p for p in data["players"] if p["list"] == "active")["name"]
+        self.edited_roster(root, {name: {"availability": "Out, short: lower extremity; projected return October 30, "
+                                                         "2014; reassessment October 18 ([medical record](x.md))"}})
+        row = next(r for r in render_game_week.availability_rows(self.stand_in(root, date(2014, 10, 12)), "x.md")
+                   if r[0] == name)
+        self.assertEqual(row[4:7], ["lower extremity (short)", "October 30, 2014", "October 18"])
+        self.edited_roster(root, {name: {"availability": "Sore after practice"}})
+        with self.assertRaises(ValueError):
+            render_game_week.availability_rows(self.stand_in(root, date(2014, 10, 12)), "x.md")
+
+    def test_the_practice_work_is_due_before_the_first_practice(self):
+        from datetime import date
+        from runtime import season_summary as summary
+        events = [("October 6", "Pittsburgh review"), ("October 7 to 11", "Week 6 practice week; an exam October 7")]
+        self.assertEqual(summary.first_practice(events, 6, date(2014, 10, 5)), date(2014, 10, 7))
+        self.assertIsNone(summary.first_practice(events, 6, date(2014, 10, 8)))
+        self.assertIsNone(summary.first_practice(events, 7, date(2014, 10, 5)))
+        root = copy_repo(self)
+        wk = render_game_week.Week(root)
+        if wk.game is None:
+            self.skipTest("no Jacksonville game is open")
+        text = "\n".join(render_game_week.asks_section(wk, wk.rel(wk.pages.briefing)))
+        practice = render_game_week.first_practice(wk)
+        plan_rows = [line for line in text.splitlines() if line.startswith("| ") and "game plan" in line.lower()]
+        for line in plan_rows:
+            self.assertEqual("Practice work before the first practice" in line, practice is not None)
 
 
 if __name__ == "__main__":

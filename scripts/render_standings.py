@@ -22,11 +22,12 @@ if str(ROOT) not in sys.path:
 
 from runtime.league import CONFERENCES, DIVISION_OF, DIVISIONS, TEAMS, conference_of
 from runtime.standings import compute, pct_text
+from runtime.seasons import CLEAN_SEASON
 from scripts.render_season_stats import load_receipts
 
 PROTAGONIST = "Jacksonville Jaguars"
 # The first season whose standings page is written clean (the 2013 page is history).
-CLEAN_FROM = 2014
+CLEAN_FROM = CLEAN_SEASON
 STREAK_WORDS = {"W": "Won", "L": "Lost", "T": "Tied"}
 
 

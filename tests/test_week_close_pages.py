@@ -109,7 +109,7 @@ class WeekClosePagesTests(unittest.TestCase):
                 injured = [i for i in receipt["injuries"] if i.get("team") == JAX]
                 self.assertGreaterEqual(len(injured), len(SEVERITIES))
                 for injury, (severity, days) in zip(injured, SEVERITIES):
-                    injury.update({"severity": severity, "return_days": days})
+                    injury.update({"severity": severity, "return_days": days, "reassessment_days": 6})
             (paths.receipts / receipt_name(after)).write_text(json.dumps(receipt, indent=1), encoding="utf-8")
         return ours
 
@@ -126,18 +126,17 @@ class WeekClosePagesTests(unittest.TestCase):
         roster = self.paths.roster
         data = json.loads(roster.read_text(encoding="utf-8"))
         data["as_of"] = {"date": played.isoformat(), "event": "after the Week %d game" % WEEK}
-        page = self.paths.roster_page.relative_to(self.root).as_posix()
         injured = [i for i in receipt["injuries"] if i.get("team") == JAX]
         self.assertTrue(injured, "the fake week carries no Jacksonville injury")
+        # Each instruction as the close records it: written from the game's record in the one
+        # medical format (runtime/week_pages.availability_entry), as render_week_pages.py
+        # --availability prints it.
+        season = week_pages.Season(self.root, SEASON)
+        game = next(r for r in season.receipts.values() if int(r["week"]) == WEEK and JAX in (r["away"], r["home"]))
         for injury in injured:
             row = next(p for p in data["players"] if p["name"] == injury["player"])
-            incident = self.paths.record("medical/incidents/%s_%s.md" % (
-                week_pages.people.slugify(injury["player"]), played.isoformat())).relative_to(self.root).as_posix()
-            row["availability"] = "%s, %s: %s; projected return %s ([medical record](%s))" % (
-                injury["restriction"].capitalize(), week_pages.severity_words(injury),
-                week_pages.injury_words(injury).split(",")[0],
-                week_pages.long_date(played + timedelta(days=injury["return_days"])),
-                week_pages.relative(page, incident))
+            row["availability"], source = week_pages.availability_entry(season, game, injury)
+            row.setdefault("sources", {})["availability"] = source
         roster.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         return played
 
@@ -240,6 +239,36 @@ class WeekClosePagesTests(unittest.TestCase):
                                                      if g["week"] > WEEK and JAX in (g["away"], g["home"])), root)
         self.assertTrue(following.briefing.is_file() and following.plan.is_file())
         self.assertIn("Game Report", decisions.week_pages(SEASON, WEEK, root).readme.read_text(encoding="utf-8"))
+
+        # The briefing of the next week reads each new instruction whole, its exam included.
+        from scripts import render_game_week
+        briefing = following.briefing.read_text(encoding="utf-8")
+        for injury in (i for i in receipt["injuries"] if i.get("team") == JAX and i.get("reassessment_days")):
+            exam = week_pages.month_day(self.played + timedelta(days=injury["reassessment_days"]))
+            line = next(l for l in briefing.splitlines() if l.startswith("| %s |" % injury["player"]))
+            self.assertIn("| %s |" % exam, line)
+            self.assertNotIn("projected return", line)
+
+        # A played week's index is checked like the open week's (F4): left stale, it fails.
+        played_pages = decisions.week_pages(SEASON, WEEK, root)
+        built = played_pages.readme.read_text(encoding="utf-8")
+        played_pages.readme.write_text(built.replace("[Game Report](Game_Report.md)", "Game Report"), encoding="utf-8")
+        self.assertTrue(any("Week %d: the week index is missing or stale" % WEEK in e
+                            for e in render_game_week.validation_errors(root)))
+        self.assertTrue(render_game_week.check(root, WEEK))
+        played_pages.readme.write_text(built, encoding="utf-8")
+        self.assertEqual(render_game_week.check(root, WEEK), [])
+
+        # The week's league-results highlights are stored text a rebuild renders (F6).
+        game = next(g for g in week_pages.ordered_games(season, WEEK) if JAX not in (g["away"], g["home"]))
+        path = week_pages.highlights_path(season, WEEK)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps({"games": {season.receipt(game)["event_id"]: "A stored highlight."}}),
+                        encoding="utf-8")
+        self.assertTrue(render_week_pages.check(root, SEASON))
+        self.assertEqual(rebuild_pages.rebuild(root, SEASON)[1], [])
+        self.assertIn("A stored highlight.", results.read_text(encoding="utf-8"))
+        self.assertEqual(render_week_pages.check(root, SEASON), [])
 
         # Every page is checked as written, none re-recorded as history, and validation of the copy
         # adds nothing to the real checkout's.

@@ -18,8 +18,12 @@ close of any week with a new injury does. Nothing is written
 when a page would break the clean-page rule (runtime/clean_pages.py): the
 problems are printed instead. ``--check`` writes nothing and reports a page
 that is missing, stale, hand-edited or unclean, a game without its medical
-history entry, and a missing incident record (an entry and an incident record
-are written once, as of the game, and later facts never rewrite them). Run it after
+history entry, a missing incident record (an entry and an incident record
+are written once, as of the game, and later facts never rewrite them) and a
+roster medical communication not in its one format (runtime/season_summary.py).
+``--availability`` prints, and writes nothing, each player's medical
+communication from the latest Jacksonville game's record, in that format, for
+the close to record on his roster row. Run it after
 every closed game and after any change to the roster record
 (docs/update_workflow.md); repository validation runs the check.
 """
@@ -33,16 +37,15 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from runtime import week_pages  # noqa: E402
+from runtime import season_summary as summary, week_pages  # noqa: E402
 from runtime.clean_pages import text_errors  # noqa: E402
-from runtime.seasons import active_season  # noqa: E402
+from runtime.seasons import CLEAN_SEASON, active_season  # noqa: E402
 
 
 def plan(root, year):
     """(season, {rel: text} to write in full, appended history text or None, {rel: text} new incidents)."""
     root = Path(root).resolve()
     season = week_pages.Season(root, year)
-    pages = week_pages.built(season)
     history = week_pages.medical_path(season, "medical_history.md")
     current = history.read_text(encoding="utf-8") if history.is_file() else ""
     missing = [entry for event, entry in week_pages.history_entries(season) if '"id": "%s"' % event not in current]
@@ -50,13 +53,16 @@ def plan(root, year):
     if missing:
         appended = current.rstrip("\n") + "\n\n" + "\n".join(missing)
     created = {rel: text for rel, text in week_pages.incidents(season).items() if not (root / rel).is_file()}
+    # The pages link the incident records this write creates, so one write is final.
+    season.pending = set(created)
+    pages = week_pages.built(season)
     return season, pages, appended, created
 
 
 def check(root=ROOT, year=None):
     root = Path(root).resolve()
     year = active_season(root) if year is None else year
-    if year < 2014:
+    if year < CLEAN_SEASON:
         return []
     season = week_pages.Season(root, year)
     errors = []
@@ -75,7 +81,22 @@ def check(root=ROOT, year=None):
     for rel in week_pages.incidents(season):
         if not (root / rel).is_file():
             errors.append("Incident record missing: %s; run scripts/render_week_pages.py" % rel)
+    # The pages read each player's medical communication in its one format (runtime/season_summary.py).
+    errors += ["Roster record: %s" % e for e in summary.format_errors(season.roster, season.as_of)]
     return errors
+
+
+def availability(root=ROOT, year=None):
+    """[(player, text, source)]: the roster record's medical communication for each Jacksonville
+    player injured in the latest closed Jacksonville game, written from the game's record
+    (runtime/week_pages.availability_entry), for the close to record on his roster row."""
+    root = Path(root).resolve()
+    season = week_pages.Season(root, active_season(root) if year is None else year)
+    ours = [r for r in season.receipts.values() if week_pages.JAX in (r["away"], r["home"])]
+    if not ours:
+        return []
+    last = max(ours, key=lambda r: int(r["week"]))
+    return [(i["player"],) + week_pages.availability_entry(season, last, i) for i in week_pages.ours_injured(last)]
 
 
 def write(root=ROOT, year=None):
@@ -113,8 +134,14 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--season", type=int)
     parser.add_argument("--check", action="store_true")
+    parser.add_argument("--availability", action="store_true",
+                        help="print each player's medical communication from the latest Jacksonville game; writes nothing")
     parser.add_argument("--root", type=Path, default=ROOT)
     args = parser.parse_args(argv)
+    if args.availability:
+        for player, text, source in availability(args.root, args.season):
+            print("%s\n  availability: %s\n  source: %s" % (player, text, source))
+        return 0
     if args.check:
         errors = check(args.root, args.season)
         print("\n".join(errors) if errors else "WEEK PAGES CURRENT")

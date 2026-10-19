@@ -19,13 +19,13 @@ From the medical staff: every player under a medical instruction, as the club ha
 
 | Player | Pos | List | Status | Injury | Projected return | Next exam | Limits | Record |
 |---|---|---|---|---|---|---|---|---|
-| Christian Jones | LB | Active roster | Out, minor | upper extremity | October 6, 2014 | October 6 |  | [Medical record](../../../Team_Operations/Medical/incidents/christian_jones_2014-10-05.md) |
-| Brynden Trawick | S | Active roster | Out, minor | lower extremity | October 11, 2014 | October 7 |  | [Medical record](../../../Team_Operations/Medical/incidents/brynden_trawick_2014-10-05.md) |
-| Jordan Poyer | CB | Active roster | Independent medical hold, short | head/neck | October 9, 2014 | None communicated |  | [Medical record](../../../Team_Operations/Medical/incidents/jordan_poyer_2014-09-21.md) |
-| Cameron Brate | TE | Reserve list | Out, long term | lower extremity | January 15, 2015 | None communicated |  | [Medical history](../../../Team_Operations/Medical/medical_history.md#august-29-to-31-reassessments-bouyes-clearance-and-the-reserve-placements) |
-| Jerrell Jackson | WR | Reserve list | Out, multi-week | lower extremity | October 9, 2014 | None communicated |  | [Medical history](../../../Team_Operations/Medical/medical_history.md#august-29-to-31-reassessments-bouyes-clearance-and-the-reserve-placements) |
-| Mike Harris | CB | Reserve list | Out, long term | lower extremity | December 8, 2014 | None communicated |  | [Medical record](../../../Team_Operations/Medical/incidents/mike_harris_2014-09-07.md) |
-| Dwight Lowery | S | Reserve list | Out, long term | lower extremity | December 11, 2014 | None communicated | No practice before October 20; No return before November 3 | [Medical record](../../../Team_Operations/Medical/incidents/dwight_lowery_2014-09-07.md) |
+| Christian Jones | LB | Active roster | Out | upper extremity (minor) | October 6, 2014 | October 6 |  | [Medical record](../../../Team_Operations/Medical/incidents/christian_jones_2014-10-05.md) |
+| Brynden Trawick | S | Active roster | Out | lower extremity (minor) | October 11, 2014 | October 7 |  | [Medical record](../../../Team_Operations/Medical/incidents/brynden_trawick_2014-10-05.md) |
+| Jordan Poyer | CB | Active roster | Independent hold | head/neck (short) | October 9, 2014 | None communicated |  | [Medical record](../../../Team_Operations/Medical/incidents/jordan_poyer_2014-09-21.md) |
+| Cameron Brate | TE | Reserve/injured | Out | lower extremity (long term) | Out for the season | None communicated |  | [Medical history](../../../Team_Operations/Medical/medical_history.md#august-29-to-31-reassessments-bouyes-clearance-and-the-reserve-placements) |
+| Jerrell Jackson | WR | Reserve/injured | Out | lower extremity (multi-week) | Out for the season | None communicated |  | [Medical history](../../../Team_Operations/Medical/medical_history.md#august-29-to-31-reassessments-bouyes-clearance-and-the-reserve-placements) |
+| Mike Harris | CB | Reserve/injured | Out | lower extremity (long term) | Out for the season | None communicated |  | [Medical record](../../../Team_Operations/Medical/incidents/mike_harris_2014-09-07.md) |
+| Dwight Lowery | S | Reserve/injured, designated for return | Out | lower extremity (long term) | December 11, 2014 | None communicated | No practice before October 20; No return before November 3 | [Medical record](../../../Team_Operations/Medical/incidents/dwight_lowery_2014-09-07.md) |
 
 ## How we played
 
@@ -50,8 +50,12 @@ Season leaders through Week 5:
 | Rushing | Maurice Jones-Drew | RB | 99 carries, 461 yards, 2 TD |
 | Receiving | Davante Adams | WR | 30 catches, 369 yards, 2 TD |
 | Tackles | Daryl Smith | LB | 48 |
-| Sacks | Jeremy Mincey | DE | 2 |
-| Interceptions | Alterraun Verner | CB | 1 |
+| Sacks, tied | Jeremy Mincey | DE | 2 |
+| Sacks, tied | Julian Stanford | LB | 2 |
+| Sacks, tied | Paul Posluszny | LB | 2 |
+| Interceptions, tied | Alterraun Verner | CB | 1 |
+| Interceptions, tied | Aqib Talib | CB | 1 |
+| Interceptions, tied | Paul Posluszny | LB | 1 |
 
 ## Pro scouting report: Tennessee
 
@@ -80,7 +84,10 @@ Totals over 5 games.
 | Turnovers | 9 | 4 |
 | Sacks allowed | 10 | 11 |
 | Third downs converted | 24 of 63 | 31 of 72 |
-| Penalties | 46 for 318 yards | 27 for 219 yards |
+| Penalties, through Week 4 | 36 for 255 yards | 20 for 150 yards |
+| Penalties, from Week 5 | 10 for 63 yards | 7 for 69 yards |
+
+The two penalty counts are never added: through Week 4, each game's penalties were charged to the offense; from Week 5, each accepted foul is charged to the club that committed it.
 
 ### Leaders
 
@@ -89,8 +96,11 @@ Totals over 5 games.
 | Passing | Jake Locker | QB | 91 of 151, 995 yards, 7 TD, 5 INT |
 | Rushing | Shonn Greene | RB | 81 carries, 387 yards, 2 TD |
 | Receiving | Kendall Wright | WR | 33 catches, 288 yards, 3 TD |
-| Tackles | Wesley Woodyard | ILB | 34 |
-| Sacks | Bernard Pollard | SS | 2 |
+| Tackles, tied | Wesley Woodyard | ILB | 34 |
+| Tackles, tied | Zach Brown | ILB | 34 |
+| Sacks, tied | Bernard Pollard | SS | 2 |
+| Sacks, tied | Sammie Lee Hill | NT | 2 |
+| Sacks, tied | Zach Brown | ILB | 2 |
 | Interceptions | Bernard Pollard | SS | 2 |
 
 ### Roster
@@ -144,7 +154,7 @@ Moves made public since the opening week:
 
 | Decision | To settle | Due | Still to come |
 |---|---|---|---|
-| Week 6 game plan for Tennessee | The menu, including whether the Flea Flicker and TE Delay stay, and who takes Trawick's practice work after his October 7 exam. | Before kickoff, Sunday, October 12, 1 p.m. ET | Nothing |
+| Week 6 game plan for Tennessee | The menu, including whether the Flea Flicker and TE Delay stay, and who takes Trawick's practice work after his October 7 exam. | Practice work before the first practice, Tuesday, October 7; the rest before kickoff, Sunday, October 12, 1 p.m. ET | Trawick's reassessment (October 7) |
 | Week 6 inactives | Who does not dress | Before kickoff, Sunday, October 12, 1 p.m. ET | Christian Jones's reassessment and projected return (October 6); Trawick's reassessment (October 7); Poyer's projected return (October 9) |
 
 Write your decisions on the [Game Plan](Game_Plan.md); the staff checks it and tells you what is missing before anything is set for the game.

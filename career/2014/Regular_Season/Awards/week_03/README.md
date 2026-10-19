@@ -21,13 +21,11 @@ The league’s players of the week for Week 3, for the games of September 18 to 
 
 ![AFC Offensive Player: Le'Veon Bell wins; winner centered with a gold border](afc_offense.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![Le'Veon Bell](https://commons.wikimedia.org/wiki/Special:FilePath/LeVeon_Bell_26_practicing_2013.jpg?width=60) | Le'Veon Bell | Pittsburgh Steelers | 45.8 | Winner |
-| ![Kirk Cousins](https://commons.wikimedia.org/wiki/Special:FilePath/Cousins_2022.jpg?width=60) | Kirk Cousins | Jacksonville Jaguars | 32.4 | Finalist |
-| ![Joe Flacco](https://commons.wikimedia.org/wiki/Special:FilePath/Joe_Flacco_2025_Browns_Camp_-_54694425196_%28cropped%29.jpg?width=60) | Joe Flacco | Baltimore Ravens | 32.1 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![Le'Veon Bell](https://commons.wikimedia.org/wiki/Special:FilePath/LeVeon_Bell_26_practicing_2013.jpg?width=60) | Le'Veon Bell | Pittsburgh Steelers | Winner |
+| ![Kirk Cousins](https://commons.wikimedia.org/wiki/Special:FilePath/Cousins_2022.jpg?width=60) | Kirk Cousins | Jacksonville Jaguars | Nominee |
+| ![Joe Flacco](https://commons.wikimedia.org/wiki/Special:FilePath/Joe_Flacco_2025_Browns_Camp_-_54694425196_%28cropped%29.jpg?width=60) | Joe Flacco | Baltimore Ravens | Nominee |
 
 *Photo: Le'Veon Bell, I, the copyright holder of this work, hereby publish it under the following license:, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:LeVeon_Bell_26_practicing_2013.jpg).*
 
@@ -43,13 +41,11 @@ The shortlist score is the award formula’s score for the week; the panel picke
 
 ![AFC Defensive Player: Aaron Williams wins; winner centered with a gold border](afc_defense.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![Aaron Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Williams_%28American_football%29.JPG?width=60) | Aaron Williams | Buffalo Bills | 25.6 | Winner |
-| ![Ryan Shazier](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Shazier.jpg?width=60) | Ryan Shazier | Pittsburgh Steelers | 25.3 | Finalist |
-| ![Darrelle Revis](https://commons.wikimedia.org/wiki/Special:FilePath/Darrelle_Revis_ESPNWeekend2010-051.jpg?width=60) | Darrelle Revis | New England Patriots | 24.8 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![Aaron Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Williams_%28American_football%29.JPG?width=60) | Aaron Williams | Buffalo Bills | Winner |
+| ![Ryan Shazier](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Shazier.jpg?width=60) | Ryan Shazier | Pittsburgh Steelers | Nominee |
+| ![Darrelle Revis](https://commons.wikimedia.org/wiki/Special:FilePath/Darrelle_Revis_ESPNWeekend2010-051.jpg?width=60) | Darrelle Revis | New England Patriots | Nominee |
 
 *Photo: Aaron Williams, Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:Aaron_Williams_(American_football).JPG).*
 
@@ -65,13 +61,11 @@ The shortlist score is the award formula’s score for the week; the panel picke
 
 ![AFC Special Teams Player: Dustin Colquitt wins; winner centered with a gold border](afc_special_teams.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![Andrew Hawkins](https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_hawkins_bengals.jpg?width=60) | Andrew Hawkins | Jacksonville Jaguars | 18.3 | Finalist |
-| ![Dustin Colquitt](https://commons.wikimedia.org/wiki/Special:FilePath/Chiefs_Punter_Dustin_Colquitt_Super_Bowl_54_Interview_%28cropped%29.png?width=60) | Dustin Colquitt | Kansas City Chiefs | 16.5 | Winner |
-| ![Ryan Succop](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Succop.JPG?width=60) | Ryan Succop | Tennessee Titans | 14.0 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![Andrew Hawkins](https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_hawkins_bengals.jpg?width=60) | Andrew Hawkins | Jacksonville Jaguars | Nominee |
+| ![Dustin Colquitt](https://commons.wikimedia.org/wiki/Special:FilePath/Chiefs_Punter_Dustin_Colquitt_Super_Bowl_54_Interview_%28cropped%29.png?width=60) | Dustin Colquitt | Kansas City Chiefs | Winner |
+| ![Ryan Succop](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Succop.JPG?width=60) | Ryan Succop | Tennessee Titans | Nominee |
 
 *Photo: Andrew Hawkins, original: Navin75 derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0), [source](https://commons.wikimedia.org/wiki/File:Andrew_hawkins_bengals.jpg).*
 
@@ -87,13 +81,11 @@ The shortlist score is the award formula’s score for the week; the panel picke
 
 ![NFC Offensive Player: Alfred Morris wins; winner centered with a gold border](nfc_offense.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![Alfred Morris](https://commons.wikimedia.org/wiki/Special:FilePath/Alfred_morris_redskins.jpg?width=60) | Alfred Morris | Washington Redskins | 31.8 | Winner |
-| ![Joique Bell](https://commons.wikimedia.org/wiki/Special:FilePath/Joique_Bell_warming_up_before_a_Detroit_Lions_football_game_on_2013-09-29.jpg?width=60) | Joique Bell | Detroit Lions | 27.9 | Finalist |
-| ![Mark Ingram](https://commons.wikimedia.org/wiki/Special:FilePath/Mark_Ingram%2C_Jr._at_the_White_House_2010-03-08_3.jpg?width=60) | Mark Ingram | New Orleans Saints | 23.9 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![Alfred Morris](https://commons.wikimedia.org/wiki/Special:FilePath/Alfred_morris_redskins.jpg?width=60) | Alfred Morris | Washington Redskins | Winner |
+| ![Joique Bell](https://commons.wikimedia.org/wiki/Special:FilePath/Joique_Bell_warming_up_before_a_Detroit_Lions_football_game_on_2013-09-29.jpg?width=60) | Joique Bell | Detroit Lions | Nominee |
+| ![Mark Ingram](https://commons.wikimedia.org/wiki/Special:FilePath/Mark_Ingram%2C_Jr._at_the_White_House_2010-03-08_3.jpg?width=60) | Mark Ingram | New Orleans Saints | Nominee |
 
 *Photo: Alfred Morris, Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0), [source](https://commons.wikimedia.org/wiki/File:Alfred_morris_redskins.jpg).*
 
@@ -109,13 +101,11 @@ The shortlist score is the award formula’s score for the week; the panel picke
 
 ![NFC Defensive Player: Matt Shaughnessy wins; winner centered with a gold border](nfc_defense.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![Matt Shaughnessy](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Shaughnessy.JPG?width=60) | Matt Shaughnessy | Arizona Cardinals | 23.8 | Winner |
-| ![Ryan Mundy](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_mundy_bears.jpg?width=60) | Ryan Mundy | Chicago Bears | 23.0 | Finalist |
-| ![Henry Melton](https://commons.wikimedia.org/wiki/Special:FilePath/Melton_Quinnan_123.jpg?width=60) | Henry Melton | Dallas Cowboys | 20.5 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![Matt Shaughnessy](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Shaughnessy.JPG?width=60) | Matt Shaughnessy | Arizona Cardinals | Winner |
+| ![Ryan Mundy](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_mundy_bears.jpg?width=60) | Ryan Mundy | Chicago Bears | Nominee |
+| ![Henry Melton](https://commons.wikimedia.org/wiki/Special:FilePath/Melton_Quinnan_123.jpg?width=60) | Henry Melton | Dallas Cowboys | Nominee |
 
 *Photo: Matt Shaughnessy, Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:Matt_Shaughnessy.JPG).*
 
@@ -131,13 +121,11 @@ The shortlist score is the award formula’s score for the week; the panel picke
 
 ![NFC Special Teams Player: Shayne Graham wins; winner centered with a gold border](nfc_special_teams.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![Cody Parkey](https://commons.wikimedia.org/wiki/Special:FilePath/Cody_Parkey.jpg?width=60) | Cody Parkey | Philadelphia Eagles | 15.0 | Finalist |
-| ![Shayne Graham](https://commons.wikimedia.org/wiki/Special:FilePath/Shayne_Graham_2006-11-05.jpg?width=60) | Shayne Graham | New Orleans Saints | 15.0 | Winner |
-| ![Nolan Carroll](https://commons.wikimedia.org/wiki/Special:FilePath/Nolan_Carroll.jpg?width=60) | Nolan Carroll | Philadelphia Eagles | 14.7 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![Cody Parkey](https://commons.wikimedia.org/wiki/Special:FilePath/Cody_Parkey.jpg?width=60) | Cody Parkey | Philadelphia Eagles | Nominee |
+| ![Shayne Graham](https://commons.wikimedia.org/wiki/Special:FilePath/Shayne_Graham_2006-11-05.jpg?width=60) | Shayne Graham | New Orleans Saints | Winner |
+| ![Nolan Carroll](https://commons.wikimedia.org/wiki/Special:FilePath/Nolan_Carroll.jpg?width=60) | Nolan Carroll | Philadelphia Eagles | Nominee |
 
 *Photo: Cody Parkey, Sgt. Staci Miller, Public domain, [source](https://commons.wikimedia.org/wiki/File:Cody_Parkey.jpg).*
 

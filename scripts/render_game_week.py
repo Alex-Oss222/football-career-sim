@@ -29,22 +29,35 @@ names another. Every page is built from its stored owners only:
 - the week index (the folder's README): the three pages, the date and the
   opponent.
 
-A briefing is dated the day it is issued. If the situation changes after it
-goes out (anything the page shows other than its date), writing issues a new
-one and keeps the old one beside it, as what he saw, named for its date
-(Game_Week_Briefing_October_5.md). Stone settling the week's own items on his
-Game Plan is not such a change (``overtaken``); a briefing issued later shows
-them "Set on your Game Plan". Writing opens the week's two decision items
-first (scripts/open_game_week.py), so the briefing lists them. Opening or
-building a page never moves time or creates an event; the week index carries
-the event line of the applied Game Plan from its record.
+A briefing is dated the day it is issued. Every issue is entered in the
+week's issue record (``briefings.json`` in the week's data folder: the date,
+the file and the sha256 of the page as it went out), which owns the issue
+dates; nothing reads a date back from a page. If the situation changes after
+a briefing goes out (anything the page shows other than its date), writing
+issues a new one and keeps the old one beside it, as what he saw, named for
+its date (Game_Week_Briefing_October_5.md). A briefing that no longer matches
+its recorded issue was edited by hand: writing refuses until it is restored,
+so a hand edit is never kept as what he saw. Stone settling the week's own
+items on his Game Plan is not such a change (``overtaken``); a briefing
+issued later shows them "Set on your Game Plan". Writing opens the week's two
+decision items first (scripts/open_game_week.py), so the briefing lists them.
+Opening or building a page never moves time or creates an event; the week
+index carries the event line of the applied Game Plan from its record.
 
-``--check`` writes nothing. It reports a missing or out-of-date index, a
-missing Game Plan beside a briefing, a malformed staff read, and a briefing
-the situation has overtaken (a new one is due). Repository validation runs the
-narrower ``validation_errors``: the open week's index current, its Game Plan
-present beside its briefing and its staff read well formed (a dated briefing
-that has been overtaken is the weekly workflow's to re-issue, not a defect).
+The season statistics, leaders and penalties are the statistics owner's
+(runtime/statbook.aggregate_receipts and the penalty split of
+scripts/render_season_stats.py: the two penalty counts are shown apart, never
+added), players tied for a lead each have a row, and the medical table reads
+the roster record in its one medical format (runtime/season_summary.py).
+
+``--check`` writes nothing. It reports, for every week whose folder holds a
+game week page (played weeks included; with ``--week N`` that week alone), a
+missing or out-of-date index, briefings that differ from their issue record
+or that no issue produced, a malformed staff read and, while the week is open,
+a missing Game Plan beside a briefing, a briefing not yet issued or one the
+situation has overtaken (a new one is due). Repository validation runs
+``validation_errors``: the same checks without the overtaken briefing, which
+is the weekly workflow's to re-issue, not a defect.
 """
 from __future__ import annotations
 
@@ -67,13 +80,6 @@ from runtime.seasons import SeasonPaths  # noqa: E402
 
 JAX = "Jacksonville Jaguars"
 MONTHS = "January|February|March|April|May|June|July|August|September|October|November|December"
-CLEAR = "No communicated restriction"
-MOVE_WORDS = {"ps_signing": "Signed to the practice squad", "waived": "Waived", "fa_signing": "Signed as a free agent",
-              "ps_promotion": "Promoted from the practice squad", "ps_release": "Released from the practice squad",
-              "released": "Released", "released_unspecified": "Released", "re_signing": "Re-signed",
-              "ps_poach": "Signed from another club's practice squad", "waiver_claim": "Claimed off waivers",
-              "retirement": "Retired", "trade_in": "Acquired in a trade", "trade_out": "Traded away",
-              "reserve_injured": "Placed on reserve/injured", "suspension": "Suspended"}
 # The authority domains a game week touches, shown under "Who else decides" when the final word
 # is someone else's (the club's wording is the team page's: render_club_pages.DECISIONS).
 GAME_WEEK_DOMAINS = ("Medical diagnosis", "Medical clearance and return-to-participation status",
@@ -97,13 +103,10 @@ LEADERS = (("Passing", "passing_yards", lambda l: "%d of %d, %s yards, %d TD, %d
            ("Tackles", "tackles", lambda l: "%d" % l.get("tackles", 0)),
            ("Sacks", "sacks", lambda l: "%s" % number(l.get("sacks", 0))),
            ("Interceptions", "defensive_interceptions", lambda l: "%d" % l.get("defensive_interceptions", 0)))
-TEAM_ROWS = (("Points", lambda t, s: s), ("First downs", lambda t, s: t.get("first_downs", 0)),
-             ("Passing yards", lambda t, s: t.get("passing_yards", 0)),
-             ("Rushing yards", lambda t, s: t.get("rushing_yards", 0)),
-             ("Turnovers", lambda t, s: t.get("turnovers", 0)),
-             ("Sacks allowed", lambda t, s: t.get("sacks_allowed", 0)),
-             ("Third downs converted", lambda t, s: (t.get("third_down_conversions", 0), t.get("third_down_attempts", 0))),
-             ("Penalties", lambda t, s: (t.get("penalties", 0), t.get("penalty_yards", 0))))
+# The team figures the briefing shows, each a field of the statistics owner's season totals
+# (runtime/statbook.aggregate_receipts); third downs and penalties have rows of their own.
+TEAM_ROWS = (("Points", "points"), ("First downs", "first_downs"), ("Passing yards", "passing_yards"),
+             ("Rushing yards", "rushing_yards"), ("Turnovers", "turnovers"), ("Sacks allowed", "sacks_allowed"))
 
 
 def yards(value):
@@ -219,35 +222,38 @@ def game_section(wk):
             + table(["Club", "Record"], rows) + [""])
 
 
+# A reserve status from which no return this season is possible (runtime/roster.status_name).
+SEASON_ENDING = frozenset({"Reserve/Injured"})
+
+
 def availability_rows(wk, page_rel):
+    """One row per player under a medical instruction, read from the roster record in its one
+    medical format (runtime/season_summary.medical_entry): his list as the roster names it, the
+    instruction, the injury and its severity, the projected return ("Out for the season" on a
+    reserve list he cannot come back from), the exams still to come and the limits."""
+    from runtime import season_summary as summary
+    from runtime.week_pages import status_text
     data = roster_record.load(wk.paths.roster)
     roster_page = wk.rel(wk.paths.roster_page)
     rows = []
     for p in roster_record.players(data):
-        text = p.get("availability") or ""
-        if not text or text.startswith(CLEAR):
+        entry = summary.medical_entry(p, wk.master)
+        if entry is None:
             continue
-        status, _, rest = text.partition(":")
-        injury = rest.split(",")[0].strip() if rest else ""
-        back = re.search(r"projected return ((?:%s) \d{1,2}, \d{4})" % MONTHS, text)
-        exams = [m for m in re.finditer(r"\breassessment ((?:%s) \d{1,2})\b" % MONTHS, text)]
-        upcoming = []
-        for m in exams:
-            when = date.fromisoformat("%d-%02d-%02d" % (wk.master.year, MONTHS.split("|").index(m[1].split()[0]) + 1,
-                                                        int(m[1].split()[1])))
-            if when >= wk.master:
-                upcoming.append(day(when, False))
-        limits = re.findall(r"\bno (?:practice|return) before (?:%s) \d{1,2}" % MONTHS, text)
-        record = re.search(r"\[(medical record|medical history)\]\(([^)]+)\)", text)
         target = ""
-        if record:
-            dest, _, anchor = record[2].partition("#")
+        if entry["record"]:
+            label, dest = entry["record"]
+            dest, _, anchor = dest.partition("#")
             resolved = os.path.normpath(os.path.join(os.path.dirname(roster_page), dest)).replace(os.sep, "/")
-            target = link(page_rel, resolved, record[1][:1].upper() + record[1][1:], anchor)
-        listed = {"active": "Active roster", "reserve": "Reserve list", "practice_squad": "Practice squad"}[p["list"]]
-        rows.append([p["name"], p["position"], listed, status.strip(), injury,
-                     back[1] if back else "Not set", "; ".join(upcoming) or "None communicated",
-                     "; ".join(l[:1].upper() + l[1:] for l in limits), target])
+            target = link(page_rel, resolved, label[:1].upper() + label[1:], anchor)
+        if roster_record.status_name(p["status"]) in SEASON_ENDING:
+            back = "Out for the season"
+        else:
+            back = day(entry["projected"]) if entry["projected"] else "Not set"
+        exams = "; ".join(day(d, d.year != wk.master.year) for d in entry["reviews"]) or "None communicated"
+        rows.append([p["name"], p["position"], status_text(p["status"]), entry["instruction"],
+                     "%s (%s)" % (entry["injury"], entry["severity"]), back, exams,
+                     "; ".join(l[:1].upper() + l[1:] for l in entry["limits"]), target])
     return rows
 
 
@@ -261,44 +267,70 @@ def medical_section(wk, page_rel):
     return out + table(head, rows) + [""]
 
 
-def team_stat_rows(games, club):
-    totals = {}
-    other_totals = {}
-    for r in games:
-        other = r["away"] if r["home"] == club else r["home"]
-        for side, store in ((club, totals), (other, other_totals)):
-            stats = r["team_stats"].get(side, {})
-            for label, value in TEAM_ROWS:
-                v = value(stats, r["final_score"][side])
-                if isinstance(v, tuple):
-                    old = store.get(label, (0, 0))
-                    store[label] = (old[0] + v[0], old[1] + v[1])
-                else:
-                    store[label] = store.get(label, 0) + v
-    return totals, other_totals
+def season_book(games):
+    """The statistics owner's totals over ``games`` (runtime/statbook.aggregate_receipts), the
+    same aggregation every statistics page reads."""
+    from runtime.statbook import aggregate_receipts
+    return aggregate_receipts(games)
 
 
-def shown(label, value):
-    if isinstance(value, tuple):
-        return "%d of %d" % value if label.startswith("Third") else "%d for %d yards" % value
-    return yards(value)
+def penalty_rows(games, club):
+    """([label, club, its opponents] rows, note or None) for the penalties over ``games``. A season
+    whose games were counted under the two penalty methods shows each count apart, as the
+    statistics pages do: the two are never added (scripts/render_season_stats.penalty_split)."""
+    from scripts.render_season_stats import penalty_split
+
+    def cell(count, total):
+        return "%d for %d yards" % (count, total)
+
+    split = penalty_split(games)
+    if split is None:
+        book = season_book(games)["teams"].get(club) or {}
+        own, opp = book.get("team_stats") or {}, book.get("opponent_stats") or {}
+        return [["Penalties", cell(own.get("penalties", 0), own.get("penalty_yards", 0)),
+                 cell(opp.get("penalties", 0), opp.get("penalty_yards", 0))]], None
+    empty = {"counter": [0, 0, 0], "records": [0, 0, 0, 0, 0, 0]}
+    mine = split.get(club, empty)
+    others = [v for team, v in split.items() if team != club]
+
+    def theirs(kind):
+        return [sum(v[kind][i] for v in others) for i in range(3)]
+
+    before = [int(r["week"]) for r in games if not isinstance(r.get("penalties"), dict)]
+    after = [int(r["week"]) for r in games if isinstance(r.get("penalties"), dict)]
+    if before and after:
+        first, second = "through Week %d" % max(before), "from Week %d" % min(after)
+        rows = [["Penalties, " + first, cell(*mine["counter"][1:3]), cell(*theirs("counter")[1:3])],
+                ["Penalties, " + second, cell(*mine["records"][1:3]), cell(*theirs("records")[1:3])]]
+        note = ("The two penalty counts are never added: %s, each game's penalties were charged to the offense; "
+                "%s, each accepted foul is charged to the club that committed it." % (first, second))
+        return rows, note
+    kind = "records" if after else "counter"
+    return [["Penalties", cell(*mine[kind][1:3]), cell(*theirs(kind)[1:3])]], None
+
+
+def team_rows(games, club):
+    """([label, club, its opponents] rows, note or None): the club's totals over ``games`` and its
+    opponents', from the statistics owner."""
+    team = season_book(games)["teams"].get(club) or {}
+    own, opp = team.get("team_stats") or {}, team.get("opponent_stats") or {}
+    rows = [[label, yards(own.get(field, 0)), yards(opp.get(field, 0))] for label, field in TEAM_ROWS]
+    rows.append(["Third downs converted"] + ["%d of %d" % (side.get("third_down_conversions", 0),
+                                                          side.get("third_down_attempts", 0)) for side in (own, opp)])
+    penalties, note = penalty_rows(games, club)
+    return rows + penalties, note
 
 
 def leaders(games, club):
-    lines = {}
-    for r in games:
-        for name, line in (r["team_stats"].get(club, {}).get("players") or {}).items():
-            total = lines.setdefault(name, {})
-            for key, value in line.items():
-                if isinstance(value, (int, float)) and not isinstance(value, bool):
-                    total[key] = total.get(key, 0) + value
-            total["position"] = line.get("position", total.get("position", ""))
+    """[category, player, pos, season] for each category: every player tied for the club's lead
+    has a row, the category reading "Sacks, tied" (runtime/season_summary.tied_leaders)."""
+    from runtime import season_summary as summary
+    players = (season_book(games)["teams"].get(club) or {}).get("players") or {}
     rows = []
     for label, field, fmt in LEADERS:
-        ranked = sorted(((n, l) for n, l in lines.items() if l.get(field, 0) > 0), key=lambda x: (-x[1][field], x[0]))
-        if ranked:
-            name, line = ranked[0]
-            rows.append([label, name, line.get("position", ""), fmt(line)])
+        top = summary.tied_leaders(players, field)
+        for name, line in top:
+            rows.append([label + (", tied" if len(top) > 1 else ""), name, line.get("position", ""), fmt(line)])
     return rows
 
 
@@ -313,9 +345,8 @@ def last_game_section(wk):
     verb = "beat" if mine > theirs else "lost to" if mine < theirs else "tied"
     out += ["Last game: Week %d, %s %s %d-%d %s." % (int(last["week"]), verb, wk.place(other), max(mine, theirs),
                                                      min(mine, theirs), "at home" if last["home"] == JAX else "away"), ""]
-    ours, theirs_ = team_stat_rows([last], JAX)
-    out += table(["", club_short(JAX), club_short(other)],
-                 [[label, shown(label, ours[label]), shown(label, theirs_[label])] for label, _ in TEAM_ROWS]) + [""]
+    rows, note = team_rows([last], JAX)
+    out += table(["", club_short(JAX), club_short(other)], rows) + [""] + ([note, ""] if note else [])
     out += ["Season leaders through Week %d:" % int(last["week"]), ""]
     out += table(["Category", "Player", "Pos", "Season"], leaders(games, JAX)) + [""]
     return out
@@ -339,10 +370,9 @@ def opponent_section(wk):
         out += ["%s has not played a regular-season game." % club_short(club), ""]
     else:
         out += ["### Results", ""] + table(["Week", "Opponent", "Result", "Record"], rows) + [""]
-        ours, theirs = team_stat_rows(games, club)
+        rows, note = team_rows(games, club)
         out += ["### Season statistics", "", "Totals over %d games." % len(games), ""]
-        out += table(["", club_short(club), "Its opponents"],
-                     [[label, shown(label, ours[label]), shown(label, theirs[label])] for label, _ in TEAM_ROWS]) + [""]
+        out += table(["", club_short(club), "Its opponents"], rows) + [""] + ([note, ""] if note else [])
         out += ["### Leaders", ""] + table(["Category", "Player", "Pos", "Season"], leaders(games, club)) + [""]
     out += roster_lines(wk, club)
     return out
@@ -366,6 +396,7 @@ def roster_lines(wk, club):
     out += ["### Roster", "", "First on the opening-week depth chart at each spot:", ""]
     out += table(["Spot", "Player", "#"], first) + [""]
     from runtime import rails
+    from scripts.render_inseason_rails import move_words
     data = rails.load(wk.season, wk.root)
     code = (library["clubs"][club] or {}).get("code")
     moves = []
@@ -376,12 +407,19 @@ def roster_lines(wk, club):
             if date.fromisoformat(row["gate_date"]) > wk.master:
                 continue
             moves.append((row["gate_date"], row.get("player", ""), [
-                day(row["gate_date"], False), MOVE_WORDS.get(row.get("kind"), str(row.get("kind")).replace("_", " ").capitalize()),
+                day(row["gate_date"], False), move_words(row.get("kind")),
                 row.get("player", ""), row.get("position", "")]))
     moves = [m[2] for m in sorted(moves, key=lambda m: (m[0], m[1]))]
     out += ["Moves made public since the opening week:", ""]
     out += (table(["Date", "Move", "Player", "Pos"], moves) if moves else ["None on file."]) + [""]
     return out
+
+
+def first_practice(wk):
+    """The first day of the game's practice week, when it is still to come (the scheduled events,
+    runtime/season_summary.first_practice); else None."""
+    from runtime import season_summary as summary
+    return summary.first_practice(wk.cv.scheduled, wk.game["week"], wk.master)
 
 
 def plan_settled(wk):
@@ -411,6 +449,7 @@ def asks_section(wk, page_rel, plan_open=False):
         rows = []
         kickoff = "Before kickoff, %s, %s, %s" % (wk.game.get("weekday"), day(wk.game["date"], False),
                                                    wk.views.kickoff(wk.game["kickoff_et"]))
+        practice = first_practice(wk)
         for item in items:
             question = item.get("question") or ""
             settle = wk.views.football(question.split(":", 1)[1]) if ":" in question else ""
@@ -418,6 +457,10 @@ def asks_section(wk, page_rel, plan_open=False):
             before = deadline.get("before") or {}
             due = kickoff if before.get("week") == week else ("By %s" % day(deadline["date"], False)
                                                              if deadline.get("date") else "Not set")
+            if item.get("class") == "weekly_game_plan" and before.get("week") == week and practice:
+                # The plan's practice work is needed before the week's first practice; the rest by kickoff.
+                due = "Practice work before the first practice, %s, %s; the rest %s" % (
+                    practice.strftime("%A"), day(practice, False), kickoff[:1].lower() + kickoff[1:])
             if item["id"] in settled and not plan_open:
                 due = "Set on your Game Plan, %s" % day(item["resolution"]["date"], False)
             waits = [wk.views.football(w["what"].split(";")[0]) + (" (%s)" % day(w["date"], False) if w.get("date") else "")
@@ -503,26 +546,100 @@ def briefing(wk, issued=None, plan_open=False):
 
 
 ISSUED = re.compile(r"^(From the coaching staff, )((?:%s) \d{1,2}, \d{4})(: )" % MONTHS, re.M)
-
-
-def issued_on(text):
-    m = ISSUED.search(text or "")
-    if not m:
-        return None
-    from datetime import datetime
-    return datetime.strptime(m[2], "%B %d, %Y").date()
+# The week's issue record (in the week's data folder): every briefing issued, oldest first, with
+# its date, its file in the week folder and the sha256 of its bytes as it went out.
+ISSUES = "briefings.json"
+ISSUES_ABOUT = ("Every Game Week Briefing issued for the week, oldest first: the day it went out, its file in the "
+                "week folder (the latest is the current briefing, each earlier one kept as he saw it) and the "
+                "sha256 of its bytes as issued. Written only by scripts/render_game_week.py; validation holds "
+                "each briefing to its entry.")
 
 
 def undated(text):
+    """The briefing without its issue date (the "From the coaching staff, <date>:" line)."""
     return ISSUED.sub(r"\1\3", text)
 
 
-def overtaken(wk, old):
-    """Whether the situation has changed since the briefing ``old`` went out: anything it shows other
-    than its date. Stone settling the week's own items on his Game Plan is his answer to the
-    briefing, not a change of situation, so it is compared as it was before he set them."""
-    then = undated(old)
-    return then != undated(briefing(wk)) and then != undated(briefing(wk, plan_open=True))
+def issues_path(wk):
+    return wk.pages.data / ISSUES
+
+
+def issues(wk):
+    """[{date, file, sha256}] of the week's issued briefings, oldest first ([] before the first)."""
+    path = issues_path(wk)
+    if not path.is_file():
+        return []
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return [dict(e) for e in data.get("issued") or ()]
+
+
+def save_issues(wk, entries):
+    path = issues_path(wk)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({"about": ISSUES_ABOUT, "issued": entries}, indent=1, ensure_ascii=False) + "\n",
+                    encoding="utf-8")
+    return path
+
+
+def sha256(path):
+    import hashlib
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def issued_on(wk):
+    """The day the current briefing was issued, from the issue record; None before the first."""
+    entries = issues(wk)
+    return date.fromisoformat(entries[-1]["date"]) if entries else None
+
+
+def issue_errors(wk):
+    """The week's briefings against the issue record: each recorded briefing present with the bytes
+    it went out with, the latest the current briefing, dates in order and not after today, and no
+    briefing in the folder that no issue produced."""
+    label = "Week %d" % wk.game["week"]
+    entries = issues(wk)
+    current = wk.pages.briefing
+    if not entries:
+        return (["%s: the Game Week Briefing has no issue record (%s); a briefing goes out only through python "
+                 "scripts/render_game_week.py" % (label, wk.rel(issues_path(wk)))] if current.is_file() else [])
+    errors, previous, recorded = [], None, set()
+    for n, entry in enumerate(entries):
+        try:
+            when, name, digest = date.fromisoformat(entry["date"]), entry["file"], entry["sha256"]
+        except (KeyError, TypeError, ValueError):
+            errors.append("%s: issue record entry %d is malformed (%s)" % (label, n + 1, wk.rel(issues_path(wk))))
+            continue
+        recorded.add(name)
+        path = wk.pages.folder / name
+        if previous is not None and when < previous:
+            errors.append("%s: the briefing of %s is recorded after a later one" % (label, day(when)))
+        if when > wk.master:
+            errors.append("%s: a briefing is recorded as issued %s, after today (%s)" % (label, day(when), day(wk.master)))
+        previous = when
+        if n == len(entries) - 1 and name != current.name:
+            errors.append("%s: the latest issue (%s) is not the current Game Week Briefing" % (label, name))
+        if not path.is_file():
+            errors.append("%s: the briefing issued %s is missing (%s)" % (label, day(when), wk.rel(path)))
+        elif sha256(path) != digest:
+            errors.append("%s: %s differs from the briefing issued %s; a briefing is never edited by hand (restore "
+                          "it as it went out; a changed situation is a new briefing)" % (label, wk.rel(path), day(when)))
+    for path in sorted(wk.pages.folder.glob(current.stem + "_*.md")):
+        if path.name not in recorded:
+            errors.append("%s: %s is not a briefing the issue record holds" % (label, wk.rel(path)))
+    return errors
+
+
+def overtaken(wk, old=None):
+    """Whether the situation has changed since the briefing ``old`` (by default the current one)
+    went out: its rebuild for its own issue date differs from it. Stone settling the week's own
+    items on his Game Plan is his answer to the briefing, not a change of situation, so it is also
+    compared as it was before he set them. False before the first briefing."""
+    when = issued_on(wk)
+    if when is None or not wk.pages.briefing.is_file():
+        return False
+    if old is None:
+        old = wk.pages.briefing.read_text(encoding="utf-8")
+    return old != briefing(wk, when) and old != briefing(wk, when, plan_open=True)
 
 
 def read_errors(wk, text):
@@ -565,8 +682,9 @@ def plan_page(wk):
 
 
 def earlier_briefings(wk):
-    found = sorted(wk.pages.folder.glob(wk.pages.briefing.stem + "_*.md"))
-    return sorted(found, key=lambda p: (issued_on(p.read_text(encoding="utf-8")) or date.min, p.name))
+    """[(path, issue date)] of the briefings the current one replaced, oldest first, from the issue
+    record."""
+    return [(wk.pages.folder / e["file"], date.fromisoformat(e["date"])) for e in issues(wk)[:-1]]
 
 
 def index_page(wk):
@@ -574,7 +692,7 @@ def index_page(wk):
     week = wk.game["week"]
     rows = []
     if wk.pages.briefing.is_file():
-        when = issued_on(wk.pages.briefing.read_text(encoding="utf-8"))
+        when = issued_on(wk)
         rows.append([link(page_rel, wk.rel(wk.pages.briefing), "Game Week Briefing"),
                      "The coaching staff's brief: availability, how both clubs have played, what we need from you "
                      "and by when", "Issued %s" % day(when) if when else "Issued"])
@@ -593,7 +711,7 @@ def index_page(wk):
     earlier = earlier_briefings(wk)
     if earlier:
         out += ["Earlier briefings, as they went out: " + ", ".join(
-            link(page_rel, wk.rel(p), day(issued_on(p.read_text(encoding="utf-8")))) for p in earlier) + ".", ""]
+            link(page_rel, wk.rel(p), day(when)) for p, when in earlier) + ".", ""]
     applied = game_plan.applied_record(wk.pages.applied)
     if applied is not None and applied.get("event"):
         out += [game_plan.event_line(applied), ""]
@@ -607,7 +725,9 @@ def index_page(wk):
 # ---------------------------------------------------------------- write and check
 def write(root=ROOT, week=None):
     """Issue the week's pages; returns the paths written. A briefing the situation has overtaken is
-    kept beside the new one, named for its date."""
+    kept beside the new one, named for its date, and every issue is entered in the week's issue
+    record. A briefing that differs from its recorded issue (edited by hand) is never kept as what he
+    saw: the write refuses until it is restored."""
     wk = Week(root, week)
     if wk.game is None:
         return []
@@ -620,19 +740,23 @@ def write(root=ROOT, week=None):
         written.append(Path(root).resolve() / open_game_week.QUEUE)
         wk = Week(root, week)
     wk.pages.folder.mkdir(parents=True, exist_ok=True)
-    new = briefing(wk)
-    old = wk.pages.briefing.read_text(encoding="utf-8") if wk.pages.briefing.is_file() else None
-    if old is None or overtaken(wk, old):
-        if old is not None:
-            when = issued_on(old)
-            label = day(when, False) if when else "earlier"
+    entries = issues(wk)
+    problems = issue_errors(wk) if (entries or wk.pages.briefing.is_file()) else []
+    if problems:
+        raise ValueError("; ".join(problems))
+    if not entries or overtaken(wk):
+        if entries:
+            label = day(date.fromisoformat(entries[-1]["date"]), False)
             target, n = wk.pages.earlier_briefing(label), 2
             while target.exists():
                 target, n = wk.pages.earlier_briefing("%s %d" % (label, n)), n + 1
-            target.write_text(old, encoding="utf-8")
+            target.write_bytes(wk.pages.briefing.read_bytes())
+            entries[-1]["file"] = target.name
             written.append(target)
-        wk.pages.briefing.write_text(new, encoding="utf-8")
-        written.append(wk.pages.briefing)
+        wk.pages.briefing.write_text(briefing(wk), encoding="utf-8")
+        entries.append({"date": wk.master.isoformat(), "file": wk.pages.briefing.name,
+                        "sha256": sha256(wk.pages.briefing)})
+        written += [wk.pages.briefing, save_issues(wk, entries)]
     if not wk.pages.plan.is_file():
         wk.pages.plan.write_text(plan_page(wk), encoding="utf-8")
         written.append(wk.pages.plan)
@@ -655,43 +779,64 @@ def write_index(root=ROOT, week=None):
     return []
 
 
-def validation_errors(root=ROOT):
-    """The open week's pages: its index current, its Game Plan beside its briefing, its staff read
-    well formed. Nothing to check before a week's briefing is issued."""
+def has_pages(pages):
+    """Whether a week's folder holds a game week page (a briefing, a Game Plan or an issue record);
+    a week before the Game Week pages keeps its index as written."""
+    return pages.briefing.is_file() or pages.plan.is_file() or (pages.data / ISSUES).is_file()
+
+
+def page_weeks(root=ROOT):
+    """The weeks of the season's Jacksonville games whose folder holds a game week page, played
+    weeks included."""
     wk = Week(root)
-    if wk.game is None or not wk.pages.briefing.is_file():
-        return []
-    errors = []
+    return [g["week"] for g in wk.cv.games if has_pages(decisions.week_pages(wk.season, g["week"], wk.root))]
+
+
+def week_errors(wk):
+    """One week's pages against their owners: the index current, the briefings as their issue record
+    holds them, the staff read well formed and, while the week is open, its Game Plan beside its
+    briefing."""
     label = "Week %d" % wk.game["week"]
-    if not wk.pages.plan.is_file():
+    errors = []
+    if not has_pages(wk.pages):
+        return errors
+    if wk.pages.briefing.is_file() and not wk.pages.plan.is_file() and not wk.closed:
         errors.append("%s: the Game Week Briefing is issued without a Game Plan (%s)" % (label, wk.rel(wk.pages.plan)))
     index = index_page(wk)
     if not wk.pages.readme.is_file() or wk.pages.readme.read_text(encoding="utf-8") != index:
-        errors.append("%s: the week index is missing or stale (%s); run python scripts/render_game_week.py"
-                      % (label, wk.rel(wk.pages.readme)))
-    errors += ["%s: %s" % (label, e) for e in read_errors(wk, wk.pages.briefing.read_text(encoding="utf-8"))]
-    if issued_on(wk.pages.briefing.read_text(encoding="utf-8")) is None:
-        errors.append("%s: the Game Week Briefing carries no issue date" % label)
+        errors.append("%s: the week index is missing or stale (%s); run python scripts/render_game_week.py%s"
+                      % (label, wk.rel(wk.pages.readme), " --week %d" % wk.game["week"] if wk.closed else ""))
+    errors += issue_errors(wk)
+    if wk.pages.briefing.is_file():
+        errors += ["%s: %s" % (label, e) for e in read_errors(wk, wk.pages.briefing.read_text(encoding="utf-8"))]
+    return errors
+
+
+def validation_errors(root=ROOT):
+    """Every game week's pages, played weeks included (week_errors). A dated briefing that the
+    situation has overtaken is the weekly workflow's to re-issue, not a defect."""
+    errors = []
+    for week in page_weeks(root):
+        errors += week_errors(Week(root, week))
     return errors
 
 
 def check(root=ROOT, week=None):
+    """``validation_errors`` (with ``week``, that week's alone, played or open), and for an open week
+    a briefing not yet issued or overtaken by the situation, and an unclean briefing."""
     wk = Week(root, week)
     if wk.game is None:
         return []
-    errors = validation_errors(root) if week is None else []
+    errors = validation_errors(root) if week is None else week_errors(wk)
     label = "Week %d" % wk.game["week"]
     if wk.closed:
         return errors
     if not wk.pages.briefing.is_file():
         return errors + ["%s: no Game Week Briefing has been issued; run python scripts/render_game_week.py" % label]
-    new = briefing(wk)
-    old = wk.pages.briefing.read_text(encoding="utf-8")
-    if overtaken(wk, old):
+    if overtaken(wk):
         errors.append("%s: the situation has changed since the briefing of %s; a new briefing is due (run python "
-                      "scripts/render_game_week.py, which keeps the old one as he saw it)"
-                      % (label, day(issued_on(old)) if issued_on(old) else "its issue"))
-    errors += page_errors(wk.rel(wk.pages.briefing), new, root=wk.root)
+                      "scripts/render_game_week.py, which keeps the old one as he saw it)" % (label, day(issued_on(wk))))
+    errors += page_errors(wk.rel(wk.pages.briefing), briefing(wk, issued_on(wk)), root=wk.root)
     return errors
 
 

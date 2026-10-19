@@ -46,7 +46,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from runtime import current_job, decision_queue  # noqa: E402
+from runtime import current_job, decision_queue, season_summary as summary  # noqa: E402
 from runtime.events import load_events, repository_map, resolve_path  # noqa: E402
 from runtime.player_bios import master_date  # noqa: E402
 from runtime.clean_pages import page_errors  # noqa: E402
@@ -731,8 +731,13 @@ def _waiting(ctx, items):
         game = games.get(week)
         deadline = (item.get("deadline") or {}).get("date")
         if game is not None:
-            line += " Due before kickoff, %s, %s, %s." % (game.get("weekday"), day(game["date"], False),
-                                                        kickoff(game["kickoff_et"]))
+            line += " Due before kickoff, %s, %s, %s" % (game.get("weekday"), day(game["date"], False),
+                                                       kickoff(game["kickoff_et"]))
+            practice = (summary.first_practice(ctx.scheduled, week, ctx.master)
+                        if item.get("class") == "weekly_game_plan" else None)
+            # The plan's practice work is needed before the week's first practice.
+            line += ("; the practice work before the first practice, %s, %s." % (
+                practice.strftime("%A"), day(practice.isoformat(), False)) if practice else ".")
         elif deadline:
             line += " Due by %s." % day(deadline, False)
         waits = []

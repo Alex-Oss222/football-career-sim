@@ -1021,7 +1021,10 @@ class CommittedDataTests(unittest.TestCase):
         closed = any(int(r["week"]) == 5 for r in load_receipts(SeasonPaths(2014).receipts))
         self.assertEqual(render_inseason_rails.page_path(2014, 5).exists(), closed)
         text = render_inseason_rails.render(2014, 5)
-        self.assertIn("## Held additions", text)
+        # The page is the league's transactions; the hold mechanics are the detail's (rebuild step 4).
+        self.assertIn("| Date | Club | Move | Player | Status |", text)
+        self.assertNotIn("Held", text)
+        self.assertIn("## Held additions", render_inseason_rails.detail(2014, 5))
         # The week's record of its files and league states is kept beside the page in the data
         # area (rebuild step 4); the page itself carries no markup.
         self.assertNotIn("<!--", text)

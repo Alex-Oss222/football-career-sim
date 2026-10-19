@@ -16,6 +16,9 @@ ROOT = Path(__file__).resolve().parents[1]
 GAME_REPORT = 'Game_Report.md'
 GAME_OUTPUT = 'output.md'
 GAME_REPORT_FROM = (2014, 6)
+# The first season whose built pages are written clean (docs/rebuild_plan.md, rule 4): the season
+# of the first Game Report week; earlier seasons' pages are history.
+CLEAN_SEASON = GAME_REPORT_FROM[0]
 RELEASE_GATES = {'tier1_engine', 'season_rules', 'season_closure', 'dated_fixtures',
                  'legal_rosters', 'financial_control', 'player_state'}
 

@@ -348,15 +348,16 @@ class PlanFixTests(OpenWeek):
     def chart(self):
         return json.loads(SeasonPaths(SEASON, self.root).depth_chart.read_text(encoding="utf-8"))
 
-    def set_availability(self, names, note):
+    def set_availability(self, names, note, reissue=True):
         path = SeasonPaths(SEASON, self.root).roster
         data = json.loads(path.read_text(encoding="utf-8"))
         for p in data["players"]:
             if p["name"] in names:
                 p["availability"] = note
         path.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
-        from scripts import render_game_week
-        quiet(render_game_week.write, self.root)
+        if reissue:
+            from scripts import render_game_week
+            quiet(render_game_week.write, self.root)
 
     def game_day(self):
         from datetime import date
@@ -537,10 +538,20 @@ class PlanFixTests(OpenWeek):
         from scripts.check_game_plan import Plan, inactive_problems
         name = self.chart()["depth"]["WR"][0]
         choices = self.complete()
-        self.set_availability([name], "Doubtful with an ankle sprain after the Friday practice")
+        # The briefing's medical table reads only the one medical format, so no briefing can be
+        # issued over the unreadable note (the medical staff restates it first).
+        self.set_availability([name], "Doubtful with an ankle sprain after the Friday practice", reissue=False)
+        from scripts import render_game_week
+        with self.assertRaises(ValueError):
+            quiet(render_game_week.write, self.root)
         self.write(choices)
         problems = inactive_problems(Plan(self.root, SEASON, self.week))
         self.assertTrue(any(p.startswith("Inactives: %s's medical status" % name) for p in problems), problems)
+        # The whole check reports it as problems, never a traceback.
+        from scripts.check_game_plan import check
+        found = check(self.root, SEASON, self.week)[0]
+        self.assertTrue(any(p.startswith("Inactives: %s's medical status" % name) for p in found), found)
+        self.assertTrue(any(p.startswith("Game Week Briefing: ") and "medical format" in p for p in found), found)
 
     # GP11: an upload for a played week is refused before anything is written; apply never tracebacks.
     def test_gp11_uploads_are_refused_before_writing(self):

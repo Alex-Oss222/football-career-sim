@@ -66,10 +66,10 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from runtime.seasons import SeasonPaths, active_season  # noqa: E402
+from runtime.seasons import CLEAN_SEASON, SeasonPaths, active_season  # noqa: E402
 
 JAX = "Jacksonville Jaguars"
-FIRST_SEASON = 2014     # earlier seasons are closed history; their pages are never rebuilt
+FIRST_SEASON = CLEAN_SEASON     # earlier seasons are closed history; their pages are never rebuilt
 
 
 class Run:
@@ -201,19 +201,17 @@ def box_scores(run):
 def game_week_pages(run):
     from runtime import decisions
     from scripts import render_game_week
+    if run.check:
+        # Every week's index and issue record, played weeks included, and the open week's briefing.
+        run.problems += render_game_week.check(run.root)
+        return
     played = sorted({int(r["week"]) for r in run.receipts() if JAX in (r["home"], r["away"])})
     for week in played:
         pages = decisions.week_pages(run.year, week, run.root)
         if not (pages.briefing.is_file() or pages.plan.is_file()):
             continue        # a week before the Game Week pages keeps its index as written
-        if run.check:
-            run.put(pages.readme, render_game_week.index_page(render_game_week.Week(run.root, week)))
-        else:
-            run.written += [run.rel(p) for p in render_game_week.write_index(run.root, week)]
-    if run.check:
-        run.problems += render_game_week.check(run.root)
-    else:
-        run.written += [run.rel(p) for p in render_game_week.write(run.root)]
+        run.written += [run.rel(p) for p in render_game_week.write_index(run.root, week)]
+    run.written += [run.rel(p) for p in render_game_week.write(run.root)]
 
 
 def week_pages(run):

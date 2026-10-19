@@ -1,9 +1,9 @@
-# 2014 Jacksonville Jaguars play calls
+# 2014 Jacksonville Jaguars snaps by call-sheet label
 
 **Through:** Week 5.
 **Coverage:** complete for this club's closed games.
 
-Every snap in the play-by-play carries a call from that week's call sheet that fits its ball carrier or target; this table counts the snaps under each call and what they gained. The sheet sets the calls available in each situation, so a call's totals reflect the situations it was used in. Generic, kneel, spike and scramble rows are separate; a quarterback scramble counts under the pass call it carries. Y/P is yards per snap; 20+ counts gains of 20 yards or more; NEG counts snaps that lost yardage.
+Each snap in the play-by-play is matched after the play to a call on that week's sheet that fits its ball carrier or target. The counts show where the snaps fell, not which call was made or how well a call worked. Generic, kneel, spike and scramble rows are separate; a quarterback scramble counts under the pass label it carries. Y/P is yards per snap; 20+ counts gains of 20 yards or more; NEG counts snaps that lost yardage.
 
 | Call | Family | SNAPS | RUNS | DB | CMP | ATT | CMP% | YDS | Y/P | 20+ | NEG | TD | TO | SCK |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -35,11 +35,11 @@ Every snap in the play-by-play carries a call from that week's call sheet that f
 | 12 Wing, TE Delay | TE Delay | 2 | 0 | 2 | 0 | 2 | 0.0 | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 |
 | Clock (spike) | Clock (spike) | 1 | 0 | 1 | 0 | 1 | 0.0 | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 |
 
-## Defensive calls by situation
+## Defensive snaps by situation
 
-Each defensive snap is listed under the row of Stone's defensive call sheet for its down and distance, field zone or clock, with that row's call as the sheet writes it. A situation's snaps are a count of the snaps in that situation. Snaps no row names, kneels and spikes are listed as other snaps.
+Each defensive snap is listed under the row of Stone's defensive call sheet for its down and distance, field zone or clock, with that row's wording. A situation's snaps are a count of the snaps in that situation, not the call on every such snap or evidence that a call worked. Snaps no row names, kneels and spikes are listed as other snaps.
 
-| Week | Situation | Call | SNAPS |
+| Week | Situation | Sheet wording | SNAPS |
 |---:|---|---|---:|
 | 5 | second and long | NICKEL WHEN THE RUN REMAINS CREDIBLE. | 11 |
 | 5 | third and medium | NICKEL QUARTERS OR COVER 1 ROBBER. Choose from release leverage, Bell's location and the sticks. Use the base four or a qualified four-man Replace. | 3 |

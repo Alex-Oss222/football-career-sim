@@ -21,13 +21,11 @@ The league’s players of the week for Week 4, for the games of September 25 to 
 
 ![AFC Offensive Player: C.J. Spiller wins; winner centered with a gold border](afc_offense.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![C.J. Spiller](https://commons.wikimedia.org/wiki/Special:FilePath/C.J._Spiller_2015.jpg?width=60) | C.J. Spiller | Buffalo Bills | 34.2 | Winner |
-| ![DeAndre Hopkins](https://commons.wikimedia.org/wiki/Special:FilePath/DeAndre_Hopkins_2020.jpg?width=60) | DeAndre Hopkins | Houston Texans | 28.6 | Finalist |
-| ![Le'Veon Bell](https://commons.wikimedia.org/wiki/Special:FilePath/LeVeon_Bell_26_practicing_2013.jpg?width=60) | Le'Veon Bell | Pittsburgh Steelers | 27.9 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![C.J. Spiller](https://commons.wikimedia.org/wiki/Special:FilePath/C.J._Spiller_2015.jpg?width=60) | C.J. Spiller | Buffalo Bills | Winner |
+| ![DeAndre Hopkins](https://commons.wikimedia.org/wiki/Special:FilePath/DeAndre_Hopkins_2020.jpg?width=60) | DeAndre Hopkins | Houston Texans | Nominee |
+| ![Le'Veon Bell](https://commons.wikimedia.org/wiki/Special:FilePath/LeVeon_Bell_26_practicing_2013.jpg?width=60) | Le'Veon Bell | Pittsburgh Steelers | Nominee |
 
 *Photo: C.J. Spiller, Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0), [source](https://commons.wikimedia.org/wiki/File:C.J._Spiller_2015.jpg).*
 
@@ -43,13 +41,11 @@ The shortlist score is the award formula’s score for the week; the panel picke
 
 ![AFC Defensive Player: Mike Mohamed wins; winner centered with a gold border](afc_defense.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![Mike Mohamed](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Mohamed.JPG?width=60) | Mike Mohamed | Houston Texans | 26.5 | Winner |
-| ![Brandon Spikes](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Spikes.JPG?width=60) | Brandon Spikes | Buffalo Bills | 22.5 | Finalist |
-| ![Jimmy Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Jimmy_smith_2011_stadium_practice.jpg?width=60) | Jimmy Smith | Baltimore Ravens | 17.3 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![Mike Mohamed](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Mohamed.JPG?width=60) | Mike Mohamed | Houston Texans | Winner |
+| ![Brandon Spikes](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Spikes.JPG?width=60) | Brandon Spikes | Buffalo Bills | Nominee |
+| ![Jimmy Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Jimmy_smith_2011_stadium_practice.jpg?width=60) | Jimmy Smith | Baltimore Ravens | Nominee |
 
 *Photo: Mike Mohamed, Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:Mike_Mohamed.JPG).*
 
@@ -65,13 +61,11 @@ The shortlist score is the award formula’s score for the week; the panel picke
 
 ![AFC Special Teams Player: Justin Tucker wins; winner centered with a gold border](afc_special_teams.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![Ryan Succop](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Succop.JPG?width=60) | Ryan Succop | Tennessee Titans | 16.0 | Finalist |
-| ![Justin Tucker](https://commons.wikimedia.org/wiki/Special:FilePath/Justin_Tucker_%28cropped%29.jpg?width=60) | Justin Tucker | Baltimore Ravens | 14.0 | Winner |
-| ![Shaun Suisham](https://commons.wikimedia.org/wiki/Special:FilePath/Suisham_closeup.jpg?width=60) | Shaun Suisham | Pittsburgh Steelers | 14.0 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![Ryan Succop](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Succop.JPG?width=60) | Ryan Succop | Tennessee Titans | Nominee |
+| ![Justin Tucker](https://commons.wikimedia.org/wiki/Special:FilePath/Justin_Tucker_%28cropped%29.jpg?width=60) | Justin Tucker | Baltimore Ravens | Winner |
+| ![Shaun Suisham](https://commons.wikimedia.org/wiki/Special:FilePath/Suisham_closeup.jpg?width=60) | Shaun Suisham | Pittsburgh Steelers | Nominee |
 
 *Photo: Ryan Succop, Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:Ryan_Succop.JPG).*
 
@@ -87,13 +81,11 @@ The shortlist score is the award formula’s score for the week; the panel picke
 
 ![NFC Offensive Player: Alfred Morris wins; winner centered with a gold border](nfc_offense.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![Alfred Morris](https://commons.wikimedia.org/wiki/Special:FilePath/Alfred_morris_redskins.jpg?width=60) | Alfred Morris | Washington Redskins | 38.7 | Winner |
-| ![Tony Romo](https://commons.wikimedia.org/wiki/Special:FilePath/Tony_Romo_before_2008_Pro_Bowl_%28cropped%29.JPEG?width=60) | Tony Romo | Dallas Cowboys | 30.3 | Finalist |
-| ![Mark Ingram](https://commons.wikimedia.org/wiki/Special:FilePath/Mark_Ingram%2C_Jr._at_the_White_House_2010-03-08_3.jpg?width=60) | Mark Ingram | New Orleans Saints | 28.3 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![Alfred Morris](https://commons.wikimedia.org/wiki/Special:FilePath/Alfred_morris_redskins.jpg?width=60) | Alfred Morris | Washington Redskins | Winner |
+| ![Tony Romo](https://commons.wikimedia.org/wiki/Special:FilePath/Tony_Romo_before_2008_Pro_Bowl_%28cropped%29.JPEG?width=60) | Tony Romo | Dallas Cowboys | Nominee |
+| ![Mark Ingram](https://commons.wikimedia.org/wiki/Special:FilePath/Mark_Ingram%2C_Jr._at_the_White_House_2010-03-08_3.jpg?width=60) | Mark Ingram | New Orleans Saints | Nominee |
 
 *Photo: Alfred Morris, Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0), [source](https://commons.wikimedia.org/wiki/File:Alfred_morris_redskins.jpg).*
 
@@ -109,13 +101,11 @@ The shortlist score is the award formula’s score for the week; the panel picke
 
 ![NFC Defensive Player: Ryan Kerrigan wins; winner centered with a gold border](nfc_defense.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![Thomas Davis](https://commons.wikimedia.org/wiki/Special:FilePath/Thomas_davis_2014.jpg?width=60) | Thomas Davis | Carolina Panthers | 27.5 | Finalist |
-| ![Paul Worrilow](https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Worrilow_2013.jpg?width=60) | Paul Worrilow | Atlanta Falcons | 26.5 | Finalist |
-| ![Ryan Kerrigan](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Kerrigan.JPG?width=60) | Ryan Kerrigan | Washington Redskins | 25.0 | Winner |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![Thomas Davis](https://commons.wikimedia.org/wiki/Special:FilePath/Thomas_davis_2014.jpg?width=60) | Thomas Davis | Carolina Panthers | Nominee |
+| ![Paul Worrilow](https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Worrilow_2013.jpg?width=60) | Paul Worrilow | Atlanta Falcons | Nominee |
+| ![Ryan Kerrigan](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Kerrigan.JPG?width=60) | Ryan Kerrigan | Washington Redskins | Winner |
 
 *Photo: Thomas Davis, original: Spc. Klinton Smith of the 3d U.S. Infantry Regiment of the United States Army derivative: Diddykong1130, Public domain, [source](https://commons.wikimedia.org/wiki/File:Thomas_davis_2014.jpg).*
 
@@ -131,13 +121,11 @@ The shortlist score is the award formula’s score for the week; the panel picke
 
 ![NFC Special Teams Player: Josh Brown wins; winner centered with a gold border](nfc_special_teams.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![Jeremy Ross](https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy_Ross_Golden_Bears.jpg?width=60) | Jeremy Ross | Detroit Lions | 17.4 | Finalist |
-| ![Josh Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Brown_%28American_football%29.JPG?width=60) | Josh Brown | New York Giants | 12.0 | Winner |
-| ![Shayne Graham](https://commons.wikimedia.org/wiki/Special:FilePath/Shayne_Graham_2006-11-05.jpg?width=60) | Shayne Graham | New Orleans Saints | 12.0 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![Jeremy Ross](https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy_Ross_Golden_Bears.jpg?width=60) | Jeremy Ross | Detroit Lions | Nominee |
+| ![Josh Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Brown_%28American_football%29.JPG?width=60) | Josh Brown | New York Giants | Winner |
+| ![Shayne Graham](https://commons.wikimedia.org/wiki/Special:FilePath/Shayne_Graham_2006-11-05.jpg?width=60) | Shayne Graham | New Orleans Saints | Nominee |
 
 *Photo: Jeremy Ross, original: John Martinez Pavliga derivative: Diddykong1130, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0), [source](https://commons.wikimedia.org/wiki/File:Jeremy_Ross_Golden_Bears.jpg).*
 

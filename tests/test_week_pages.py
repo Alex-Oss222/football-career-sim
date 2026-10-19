@@ -96,17 +96,45 @@ class WeekPagesTests(unittest.TestCase):
         for week in range(1, FIRST):
             self.assertNotIn(season.rel(week_pages.week_page_path(season, week)), built)
 
-    def test_week_page_keeps_hand_written_highlights(self):
+    def test_week_page_renders_the_stored_highlights_and_never_drops_one(self):
+        # F6: the highlights and reactive events are stored text in the page's twin in the data
+        # area, never parsed back from the page; an entry that names no other game of the week stops
+        # the build instead of being dropped.
+        import shutil
+        import tempfile
         season = week_pages.Season(ROOT, SEASON)
         weeks = season.closed_weeks()
         if not weeks:
             self.skipTest("no closed week")
         week = weeks[-1]
+        tmp = tempfile.TemporaryDirectory(dir=ROOT.parent)
+        self.addCleanup(tmp.cleanup)
+        root = Path(tmp.name)
+        for part in ("career", "data", "docs", "state", "library/data", "runtime/season_readiness.json"):
+            source, target = ROOT / part, root / part
+            target.parent.mkdir(parents=True, exist_ok=True)
+            (shutil.copytree if source.is_dir() else shutil.copy2)(source, target)
+        season = week_pages.Season(root, SEASON)
         _, blank = week_pages.week_page(season, week)
-        heading = next(line for line in blank.splitlines() if line.startswith("## ") and week_pages.REACTIVE not in line)
-        filled = blank.replace(heading + "\n\n" + week_pages.TO_COME, heading + "\n\nA written highlight.", 1)
-        _, again = week_pages.week_page(season, week, filled)
-        self.assertEqual(again, filled)
+        self.assertNotIn("A written highlight.", blank)
+        other = next(g for g in week_pages.ordered_games(season, week) if JAX not in (g["away"], g["home"]))
+        ours = season.jacksonville(week)
+        event = season.receipt(other)["event_id"]
+        path = week_pages.highlights_path(season, week)
+        self.assertTrue(path.relative_to(root).as_posix().startswith("data/"))
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps({"games": {event: "A written highlight."}, "reactive_events": "A dust-up."}),
+                        encoding="utf-8")
+        _, page = week_pages.week_page(season, week)
+        heading = "## " + week_pages.score_line(season.receipt(other))
+        self.assertIn(heading, page)
+        self.assertIn("A written highlight.", page.split(heading, 1)[1].split("\n## ", 1)[0])
+        self.assertIn("## %s\n\nA dust-up.\n" % week_pages.REACTIVE, page)
+        for bad in ({"games": {event + "x": "Lost."}}, {"games": {event: 3}}, {"games": {}, "notes": "x"},
+                    {"games": {season.receipt(ours)["event_id"]: "Ours."}} if ours else {"games": {"x": "y"}}):
+            path.write_text(json.dumps(bad), encoding="utf-8")
+            with self.assertRaises(ValueError, msg=bad):
+                week_pages.week_page(season, week)
 
     def test_injury_report_lists_every_instruction_on_the_record(self):
         season = week_pages.Season(ROOT, SEASON)
@@ -206,6 +234,30 @@ class SharedSummaryTests(unittest.TestCase):
         self.assertEqual(summary.medical_status(held), "Independent hold · head/neck (short)")
         self.assertEqual(summary.medical_status({"availability": "Limited, minor: upper extremity, logged"}),
                          "Limited · upper extremity (minor)")
+
+    def test_an_availability_entry_from_the_game_record_reads_back_whole(self):
+        # W6-9: the roster's medical communication has one format, written from the game's record
+        # and read by every page; an entry outside it is a validation error.
+        from datetime import timedelta
+        from runtime import season_summary as summary
+        season = week_pages.Season(ROOT, SEASON)
+        games = [r for r in season.receipts.values() if week_pages.ours_injured(r)]
+        if not games:
+            self.skipTest("no Jacksonville injury on record")
+        receipt = max(games, key=lambda r: int(r["week"]))
+        injury = dict(week_pages.ours_injured(receipt)[0], return_days=24, reassessment_days=6, severity="multi_week")
+        text, source = week_pages.availability_entry(season, receipt, injury)
+        played = week_pages.injury_date(season, receipt)
+        entry = summary.medical_entry({"availability": text}, played)
+        self.assertEqual(entry["severity"], "multi-week")
+        self.assertNotIn("projected", entry["injury"])
+        self.assertEqual(entry["projected"], played + timedelta(days=24))
+        self.assertEqual(entry["reviews"], [played + timedelta(days=6)])
+        self.assertTrue((ROOT / source).name.startswith(week_pages.people.slugify(injury["player"])))
+        self.assertEqual(summary.format_errors({"players": [{"name": "X", "availability": text}]}, played), [])
+        self.assertTrue(summary.format_errors({"players": [{"name": "X", "availability": "Sore"}]}, played))
+        self.assertTrue(summary.format_errors({"players": [{"name": "X", "availability":
+                                                            "Out, minor: trunk; projected return May 2"}]}, played))
 
     def test_leaders_count_sacks_in_words(self):
         from runtime import season_summary as summary
