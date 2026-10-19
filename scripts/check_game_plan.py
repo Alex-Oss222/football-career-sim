@@ -34,7 +34,7 @@ What it checks:
   outside reserve corner defensive backs), the starter, kicker and punter go
   to the head of their group, and the defensive-back seats stay valid;
 - the offense: every word of every call is the active offensive playbook's
-  (its concept, personnel, formation, motion, protection and name;
+  (its concept, personnel, formation, motion, protection, name and tags;
   runtime/offensive_words.py, read through the playbook lock), every
   situation a call names is one of the call sheet's;
 - the decision rules: "Same as Week N" carries a rule that week froze (the
@@ -51,9 +51,11 @@ What it checks:
   not a change of situation).
 
 Open items with other people that hold the week, and medical exams still to
-come, are listed as notes; they do not fail the check. A page that has
-changed since it was applied passes as complete but is reported "not yet
-set" (exit 1) until it is applied again. Nothing here moves time or creates
+come (each once), are listed as notes; they do not fail the check, and a
+complete page is applied once no exam its items wait on is still to come
+(scripts/apply_game_plan.waiting). A page that has changed since it was
+applied passes as complete but is reported "not yet set" (exit 1) until it
+is applied again. Nothing here moves time or creates
 an event. scripts/apply_game_plan.py applies a page that passes.
 """
 from __future__ import annotations
@@ -276,22 +278,38 @@ def carried_inactives(plan, week):
     return list(listed.get("players") or []) if listed.get("week") == week else None
 
 
+def inactive_rule(plan):
+    """Stone's standing inactive rule in force, or None."""
+    return next((i for i in current_job.instructions(plan.job) if i.get("subject") == "inactives"), None)
+
+
 def standing_inactives(plan):
     """(players, problems): Stone's standing inactive rule for the week: every player out for the game,
     and the deepest healthy reserve on the chart in each of the five largest healthy position groups,
-    never below a legal game-day unit. Where its words do not settle the week (the count of healthy
-    players to sit is not five, a tie for the fifth-largest group, a group left short), it says so
-    and he names the players."""
-    rule = next((i for i in current_job.instructions(plan.job) if i.get("subject") == "inactives"), None)
-    if rule is None:
+    never below a legal game-day unit. When the week sits more healthy players than five, the page
+    names the others below Standing rule, and they follow the rule's five. Where its words do not
+    settle the week (fewer than five healthy places, a tie for the fifth-largest group, a group left
+    short) or the page names the wrong number besides it, it says so."""
+    if inactive_rule(plan) is None:
         return None, ["Inactives: no standing inactive rule is in force; name the players"]
+    value = plan.choices.get("inactives")
+    named = list(value.get("players") or []) if isinstance(value, dict) else []
     outs, _ = plan.outs()
     needed = plan.needed()
     healthy_needed = needed - len(outs)
-    if healthy_needed != RULE_GROUPS:
+    if healthy_needed < RULE_GROUPS:
         return None, ["Inactives: your standing rule sits %d healthy players, but this week %d sit with %d out "
                       "for the game, so %d healthy; name the players" % (RULE_GROUPS, max(needed, len(outs)),
                                                                        len(outs), max(healthy_needed, 0))]
+    others = healthy_needed - RULE_GROUPS
+    if len(named) != others:
+        if not others:
+            return None, ["Inactives: your standing rule makes the %d this week (%d out for the game and its %d "
+                          "healthy players); write Standing rule alone, without the %d named"
+                          % (needed, len(outs), RULE_GROUPS, len(named))]
+        return None, ["Inactives: your standing rule sits %d healthy players, but this week %d sit with %d out for "
+                      "the game, so %d healthy; name the other %d in the table below Standing rule (%d named)"
+                      % (RULE_GROUPS, needed, len(outs), healthy_needed, others, len(named))]
     active = set(plan.active())
     groups = []
     for group, order in (plan.chart.get("depth") or {}).items():
@@ -304,14 +322,42 @@ def standing_inactives(plan):
                       "and %s both have %d healthy players); name the players"
                       % (groups[RULE_GROUPS - 1][0], groups[RULE_GROUPS][0], len(groups[RULE_GROUPS][1]))]
     picks = [healthy[-1] for _, healthy in groups[:RULE_GROUPS]]
+    already = [p for p in named if p in picks]
+    if already:
+        return None, ["Inactives: %s already sits by your standing rule; name another" % p for p in already]
     from runtime.usage import lineup_errors
     positions = plan.chart.get("positions") or {}
-    dressed = [p for p in plan.active() if p not in outs and p not in picks]
+    dressed = [p for p in plan.active() if p not in outs and p not in picks and p not in named]
     short = lineup_errors([type("Row", (), {"position": positions.get(p)})() for p in dressed])
     if short:
         return None, ["Inactives: your standing rule would leave the game-day unit short (%s); name the players"
                       % "; ".join(short)]
-    return [p for p in plan.active() if p in outs] + picks, []
+    return [p for p in plan.active() if p in outs] + picks + named, []
+
+
+def inactive_ask(plan):
+    """What the week's inactives ask of Stone, in football words: how many sit, how many are out for
+    the game on the medical staff's projections, and what his standing rule leaves to him; None
+    when a medical note cannot be read (the briefing then asks only who does not dress)."""
+    outs, problems = plan.outs()
+    if problems:
+        return None
+    needed, active = plan.needed(), len(plan.active())
+    out = ("on the medical staff's projections no one is out for the game" if not outs else
+           "on the medical staff's projections %d %s out for the game" % (len(outs), "is" if len(outs) == 1 else "are"))
+    head = "who does not dress: %d of the %d; %s" % (needed, active, out)
+    if len(outs) >= needed:
+        return head + ", so the list is %s" % ("those players" if len(outs) > 1 else "that player")
+    if inactive_rule(plan) is None:
+        return head + ", so you name %d healthy players" % (needed - len(outs))
+    healthy = needed - len(outs)
+    if healthy == RULE_GROUPS:
+        return head + ", so your standing rule sits the other five and settles the list"
+    if healthy > RULE_GROUPS:
+        return head + ", so your standing rule sits five healthy players and leaves %d for you to name" % (
+            healthy - RULE_GROUPS)
+    return head + (", so %d healthy players sit, fewer than the five your standing rule sits, and you name them"
+                   % healthy)
 
 
 # ---------------------------------------------------------------- the checks
@@ -706,17 +752,26 @@ def check(root, season, week):
         when = date.fromisoformat(plan.applied["applied"])
         plan.changed_since_applied = "%s %d, %d" % (when.strftime("%B"), when.day, when.year)
     from runtime import decision_queue
+    from runtime.decisions import waits_ahead
     holder = plan.job.get("holder")
-    for item in decision_queue.unresolved(decision_queue.load(plan.root)):
+    queue = decision_queue.load(plan.root)
+    for item in decision_queue.unresolved(queue):
         held = [b for b in item.get("blocks") or () if b.get("season") == season and b.get("week") == week]
         if held and item.get("owner") != holder:
             plan.notes.append("Still open with %s: %s" % (current_job.party_name(plan.job, item["owner"]),
                                                           item["title"]))
-        for wait in item.get("waits_on") or () if held else ():
-            if wait.get("date") and wait["date"] >= plan.master.isoformat():
-                when = date.fromisoformat(wait["date"])
-                plan.notes.append("Still to come: %s (%s %d)" % (wait["what"].split(";")[0], when.strftime("%B"),
-                                                                 when.day))
+        for wait in waits_ahead(item, plan.master) if held else ():
+            when = date.fromisoformat(wait["date"]) if wait.get("date") else None
+            note = "Still to come: %s%s" % (wait["what"].split(";")[0],
+                                            " (%s %d)" % (when.strftime("%B"), when.day) if when else "")
+            if note not in plan.notes:
+                plan.notes.append(note)
+    if not problems:
+        from scripts.apply_game_plan import waiting
+        if waiting(plan):
+            # Complete, and set from the page once the exams his items wait on are held (the apply waits).
+            plan.notes.append("The page is complete; it is set for the game once the exams still to come are "
+                              "held, when the staff applies it")
     return problems, plan.notes, plan
 
 

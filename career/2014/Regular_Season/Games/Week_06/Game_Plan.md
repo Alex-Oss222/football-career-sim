@@ -4,7 +4,7 @@ Sunday, October 12, 2014, 1 p.m. ET, LP Field. Your decisions for the game: writ
 
 ## Inactives
 
-> 7 players from the active roster, one per row, among them every player out on a medical instruction on game day (when more are out, those players only); or Standing rule, which means every player out on a medical instruction on game day and your rule in force for the rest: the deepest healthy reserve on the chart in each of the five largest healthy position groups, never below a legal game-day unit, re-set each week; or Same as Week 5.
+> 7 players from the active roster, one per row, among them every player out on a medical instruction on game day (when more are out, those players only); or Standing rule, which means every player out on a medical instruction on game day and the healthy players your rule in force sits: the deepest healthy reserve on the chart in each of the five largest healthy position groups, never below a legal game-day unit, re-set each week; when the week needs more than that, write Standing rule above the table and name the others in it; or Same as Week 5.
 
 | Player | Pos | Reason |
 |---|---|---|

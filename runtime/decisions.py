@@ -147,6 +147,20 @@ class WeekPages:
         return self.folder / (self.briefing.stem + "_" + label.replace(" ", "_") + ".md")
 
 
+def waits_ahead(item, as_of):
+    """The waits of a decision-queue item still to come on ``as_of`` (a date): each dated on or after
+    it (an exam that day is still to come) and each with no date, in their order. A wait whose date
+    has passed is not shown on a page built for ``as_of``."""
+    day = as_of.isoformat()
+    return [w for w in item.get("waits_on") or () if not w.get("date") or w["date"] >= day]
+
+
+def exams_ahead(item, as_of):
+    """The dated waits still to come on ``as_of``. While one remains, his answer on his page is set but
+    the item stays open: he confirms it once they are held (scripts/apply_game_plan.py)."""
+    return [w for w in waits_ahead(item, as_of) if w.get("date")]
+
+
 def week_pages(year, week, root=None, postseason=False):
     paths = SeasonPaths(year) if root is None else SeasonPaths(year, root)
     return WeekPages(paths.week_folder(week, postseason), paths.week_data(week, postseason),

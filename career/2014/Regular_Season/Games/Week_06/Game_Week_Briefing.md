@@ -155,7 +155,7 @@ Moves made public since the opening week:
 | Decision | To settle | Due | Still to come |
 |---|---|---|---|
 | Week 6 game plan for Tennessee | The menu, including whether the Flea Flicker and TE Delay stay, and who takes Trawick's practice work after his October 7 exam. | Practice work before the first practice, Tuesday, October 7; the rest before kickoff, Sunday, October 12, 1 p.m. ET | Trawick's reassessment (October 7) |
-| Week 6 inactives | Who does not dress | Before kickoff, Sunday, October 12, 1 p.m. ET | Christian Jones's reassessment and projected return (October 6); Trawick's reassessment (October 7); Poyer's projected return (October 9) |
+| Week 6 inactives | Who does not dress: 7 of the 53; on the medical staff's projections no one is out for the game, so your standing rule sits five healthy players and leaves 2 for you to name | Before kickoff, Sunday, October 12, 1 p.m. ET | Christian Jones's reassessment and projected return (October 6); Trawick's reassessment (October 7); Poyer's projected return (October 9) |
 
 Write your decisions on the [Game Plan](Game_Plan.md); the staff checks it and tells you what is missing before anything is set for the game.
 

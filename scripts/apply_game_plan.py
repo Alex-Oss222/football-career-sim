@@ -19,7 +19,9 @@ already reads, and the record of the apply:
   that label rather than leave it on the wrong player;
 - the decision-queue items the plan settles (the week's game plan and
   inactives, Stone's), marked RESOLVED by the user with the page as their
-  record;
+  record. Nothing is applied while either item still waits on an exam dated
+  that day or later (its ``waits_on``): the page is complete, and it is set
+  once the exams are held, when the check reads their results (``waiting``);
 - the week's inactives record beside the call sheet (``inactives.json``,
   runtime/decisions.WeekPages.inactives), the permanent owner of the list
   ("Same as Week N" reads it; the chart holds only the latest list);
@@ -47,6 +49,7 @@ import argparse
 import hashlib
 import json
 import sys
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -88,7 +91,9 @@ def inactive_note(plan, players):
     value = plan.choices.get("inactives") or {}
     reasons = value.get("reasons") or {} if isinstance(value, dict) else {}
     listed = "; ".join("%s (%s)" % (p, reasons[p]) if p in reasons else p for p in players)
-    how = (" by his standing rule" if isinstance(value, dict) and value.get("standing") else
+    named = len(value.get("players") or ()) if isinstance(value, dict) else 0
+    how = (" by his standing rule" + (", with %d he named" % named if named else "")
+           if isinstance(value, dict) and value.get("standing") else
            " as in Week %d" % value["same_as"] if isinstance(value, dict) and "same_as" in value else "")
     return ("%d of the %d are inactive for Week %d %s (%d dress), set by Stone on %s on his Week %d Game Plan%s: %s."
             % (len(players), len(plan.active()), plan.week, opponent_words(plan), len(plan.active()) - len(players),
@@ -252,22 +257,27 @@ def apply_records(plan, sheet, players, resolve_queue=True):
     return written
 
 
+def plan_items(plan, queue):
+    """The week's open items Stone's Game Plan answers (his game plan and inactives)."""
+    holder = plan.job.get("holder")
+    return [i for i in queue["items"] if i.get("status") == "OPEN" and i.get("owner") == holder
+            and i.get("class") in PLAN_CLASSES and any(
+                b.get("kind") == "week_inputs" and b.get("season") == plan.season and b.get("week") == plan.week
+                for b in i.get("blocks") or ())]
+
+
 def settle_queue(plan, page):
     from runtime import decision_queue
     queue_path = plan.root / decision_queue.QUEUE
     queue = json.loads(queue_path.read_text(encoding="utf-8"))
-    holder = plan.job.get("holder")
     settled = 0
-    for item in queue["items"]:
-        held = any(b.get("kind") == "week_inputs" and b.get("season") == plan.season and b.get("week") == plan.week
-                   for b in item.get("blocks") or ())
-        if item.get("status") == "OPEN" and held and item.get("owner") == holder and item.get("class") in PLAN_CLASSES:
-            what = "the game plan" if item["class"] == "weekly_game_plan" else "the inactives"
-            item["status"] = "RESOLVED"
-            item["resolution"] = {"date": plan.master.isoformat(), "by": "user", "record": {"path": page},
-                                  "summary": "Stone set %s on his Week %d Game Plan, checked and applied %s"
-                                             % (what, plan.week, long_date(plan.master))}
-            settled += 1
+    for item in plan_items(plan, queue):
+        what = "the game plan" if item["class"] == "weekly_game_plan" else "the inactives"
+        item["status"] = "RESOLVED"
+        item["resolution"] = {"date": plan.master.isoformat(), "by": "user", "record": {"path": page},
+                              "summary": "Stone set %s on his Week %d Game Plan, checked and applied %s"
+                                         % (what, plan.week, long_date(plan.master))}
+        settled += 1
     if not settled:
         return []
     write_like(queue_path, queue)
@@ -282,10 +292,34 @@ def rebuild(root, week=None):
     return problems
 
 
-def apply(root, season, week, rebuild_pages=True):
+def waiting(plan):
+    """One line per item the page answers that still waits on an exam dated today or later: until
+    they are held, nothing is set from the page (the clock waits for his answer after them; the
+    check then reads their results). [] when nothing waits."""
+    from runtime import decision_queue
+    from runtime.decisions import exams_ahead
+    out = []
+    for item in plan_items(plan, decision_queue.load(plan.root)):
+        ahead = exams_ahead(item, plan.master)
+        if ahead:
+            out.append("%s waits on %s; the page is complete and is set once %s held" % (
+                item["title"], "; ".join("%s (%s)" % (w["what"].split(";")[0],
+                                                      long_date(date.fromisoformat(w["date"]))) for w in ahead),
+                "it is" if len(ahead) == 1 else "they are"))
+    return out
+
+
+def apply(root, season, week, rebuild_pages=True, report=None):
+    """Check the week's page and apply it; ``report`` (a dict) is told when nothing is set because
+    an item still waits on an exam (``waiting``)."""
     problems, notes, plan = check(root, season, week)
     if problems:
         return problems, []
+    held = waiting(plan)
+    if held:
+        if report is not None:
+            report["waiting"] = True
+        return held, []
     sheet = plan.sheet()
     written = apply_records(plan, sheet, plan.inactives())
     if rebuild_pages:
@@ -359,13 +393,14 @@ def main(argv=None):
     try:
         if args.file is not None:
             place_upload(args.root, args.season, args.week, args.file)
-        problems, written = apply(args.root, args.season, args.week)
+        report = {}
+        problems, written = apply(args.root, args.season, args.week, report=report)
     except (OSError, ValueError) as exc:
         print("GAME PLAN: NOT APPLIED\n- %s" % exc)
         return 1
     root = Path(args.root).resolve()
     if not written:
-        print("GAME PLAN: NOT APPLIED")
+        print("GAME PLAN: COMPLETE, NOT YET SET" if report.get("waiting") else "GAME PLAN: NOT APPLIED")
         for problem in problems:
             print("- " + problem)
         return 1

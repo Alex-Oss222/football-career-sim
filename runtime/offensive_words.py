@@ -19,7 +19,10 @@ A call on the Game Plan is checked word by word:
 - its protection: one of the book's protections;
 - its name: every word one of the book's words above, a concept word of the
   family map, a route tag, a position label, or a part of the name of a
-  player on the club's roster.
+  player on the club's roster;
+- its tags: every word one the name may use, a number, or one of the plain
+  staff words a tag describes a call with (``TAG_WORDS``: what the call is
+  for, never a play), so no later book's term reaches the sheet as a tag.
 
 Lowercase connecting words (``CONNECTIVES``) may join the words of a
 formation or a motion ("SHIFT to Empty"). Nothing here is read by the game
@@ -61,6 +64,13 @@ BOOK_PLAYS = ("Flea Flicker", "Halfback Pass", "Throwback Screen", "WR Reverse",
               "RB Screen Fake Cross", "Tunnel Fake Draw")
 # 13 Access and Packaged Plays; 2.2 Vocabulary Rules (Cross, Vert).
 CALL_WORDS = ("Access", "Cross", "Vert")
+# The staff's plain words for what a call is for (its situation, its purpose, its package), which
+# a tag may use besides the book's words: none names a concept, a route or a protection.
+TAG_WORDS = ("answer", "backed", "change", "conditional", "down", "downs", "end", "ends", "folder",
+             "four-minute", "gate", "goal", "install", "line", "movement", "opener", "package", "pass",
+             "play", "pressure", "protection", "receiving", "red", "relief", "run", "short", "shot",
+             "special", "sudden", "third", "tight", "two-minute", "two-point", "up", "week", "yardage",
+             "zone")
 CONNECTIVES = ("to", "toward", "across", "from", "after", "the", "and", "with", "into", "back", "both", "one",
                "of", "or")
 # The lists every word of which tests/test_game_plan.py holds to the book.
@@ -85,6 +95,9 @@ _PROTECTION = _low(PROTECTIONS)
 _PLAYS = {re.sub(r"[^a-z0-9+]", "", p.lower()): p for p in BOOK_PLAYS}
 _NAME = (_SHAPE | _PROTECTION | _tokens(BACK_PROTECTION) | _tokens(ROUTE_TAGS) | _tokens(BOOK_PLAYS)
          | _tokens(CALL_WORDS) | _tokens(call_families.FAMILIES) | _tokens(call_families.ALIASES))
+
+
+_TAG = _NAME | _low(TAG_WORDS)
 
 
 def concept(family):
@@ -151,4 +164,9 @@ def call_errors(call, player_names=()):
         if word.upper() in PERSONNEL or word.lower() in players or _word_ok(word, _NAME):
             continue
         out.append("the call's name has %r, which is not a word of the active playbook" % word)
+    for tag in call.get("tags") or ():
+        for word in _words(tag):
+            if word.isdigit() or word.upper() in PERSONNEL or word.lower() in players or _word_ok(word, _TAG):
+                continue
+            out.append("the tag %r has %r, which is not a word of the active playbook" % (tag, word))
     return out

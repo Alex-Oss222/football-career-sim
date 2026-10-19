@@ -175,6 +175,29 @@ class OpenWeek(unittest.TestCase):
         self.pages.plan.write_text(game_plan.render("Week %d Game Plan" % self.week, "Intro.", choices, legal),
                                    encoding="utf-8")
 
+    def week_items(self, queue=None):
+        queue = queue or json.loads((self.root / "state/decision_queue.json").read_text(encoding="utf-8"))
+        return queue, [i for i in queue["items"] if i["class"] in ("weekly_game_plan", "game_day_inactives")
+                       and any(b.get("week") == self.week for b in i["blocks"])]
+
+    def exams_held(self):
+        """In the copy, the exams the week's items wait on held: each dated wait moved to the day before
+        today (the clock stays), and the briefing re-issued for the changed situation. Nothing changes
+        in a week whose items wait on no exam."""
+        from datetime import timedelta
+        from runtime.player_bios import master_date
+        queue, items = self.week_items()
+        before = (master_date(self.root) - timedelta(days=1)).isoformat()
+        for item in items:
+            for wait in item.get("waits_on") or ():
+                if wait.get("date"):
+                    wait["date"] = before
+        (self.root / "state/decision_queue.json").write_text(json.dumps(queue, indent=1, ensure_ascii=False)
+                                                              + "\n", encoding="utf-8")
+        from scripts import render_game_week
+        with contextlib.redirect_stdout(io.StringIO()):
+            render_game_week.write(self.root)
+
 
 class CheckTests(OpenWeek):
     def test_the_blank_page_names_what_is_missing(self):
@@ -219,6 +242,7 @@ class CheckTests(OpenWeek):
                     "defense": {"same_as": self.previous}, "special_teams": "none", "notes": "none"})
         problems, _, _ = self.check()
         self.assertEqual(problems, [])
+        self.exams_held()
         with contextlib.redirect_stdout(io.StringIO()):
             problems, written = apply(self.root, SEASON, self.week)
         self.assertEqual(problems, [])
@@ -325,8 +349,9 @@ def quiet(call, *args, **kwargs):
     return result, out.getvalue()
 
 
-class PlanFixTests(OpenWeek):
-    """The step-4 review findings on the Game Plan, its check and its apply, each in a copy."""
+class PlanCopy(OpenWeek):
+    """A copy with the open week's pages issued, and the helpers the review tests share (no tests of
+    its own)."""
 
     def complete(self, **over):
         choices = {"inactives": {"players": needed_inactives(self.root, self.week)}, "depth": "none",
@@ -369,6 +394,10 @@ class PlanFixTests(OpenWeek):
         from datetime import timedelta
         back = self.game_day() + timedelta(days=30)
         return "Out, short: lower extremity; projected return %s %d, %d" % (back.strftime("%B"), back.day, back.year)
+
+
+class PlanFixTests(PlanCopy):
+    """The step-4 review findings on the Game Plan, its check and its apply, each in a copy."""
 
     # GP1: the playbook lock covers every word a call carries.
     def test_gp1_every_word_of_a_call_is_held_to_the_active_book(self):
@@ -423,6 +452,7 @@ class PlanFixTests(OpenWeek):
         from scripts import check_game_plan, render_game_week
         from scripts.validate_repository import validate
         self.write(self.complete())
+        self.exams_held()
         self.apply()
         self.assertFalse(any("a new briefing is due" in e for e in render_game_week.check(self.root)))
         self.assertEqual(validate(self.root), [])
@@ -455,6 +485,7 @@ class PlanFixTests(OpenWeek):
         swap[2], swap[3] = swap[3], swap[2]
         self.write(self.complete(depth={"orders": {"Wide receivers": swap}, "roles": {"Starter": backup}}))
         self.assertEqual(self.check()[0], [])
+        self.exams_held()
         self.apply()
         chart = self.chart()
         self.assertEqual(chart["depth"]["QB"][0], backup)
@@ -667,6 +698,192 @@ class PlanFixTests(OpenWeek):
         render_career_views.write(self.root)
         self.assertEqual([e for e in validate(self.root) if "Decision queue" in e or "game-plan item" in e], [])
 
+
+
+class VerifierRoundTests(PlanCopy):
+    """The step-4 verifier's last findings (R6, R7 and the fresh ones), each in a copy, from the stored
+    facts of the open week."""
+
+    def inactive_row(self):
+        text = self.pages.briefing.read_text(encoding="utf-8")
+        return next(l for l in text.splitlines() if l.startswith("| Week %d inactives |" % self.week))
+
+    # R6: Standing rule with the others he names, and the ask saying what the rule leaves to him.
+    def test_r6_standing_rule_with_the_others_named(self):
+        from scripts.check_game_plan import Plan, RULE_GROUPS, standing_inactives
+        self.write(self.complete(inactives={"standing": True}))
+        plan = Plan(self.root, SEASON, self.week)
+        outs, _ = plan.outs()
+        healthy = plan.needed() - len(outs)
+        row = self.inactive_row()
+        self.assertIn("who does not dress: %d of the %d" % (plan.needed(), len(plan.active())), row.lower())
+        players, problems = standing_inactives(plan)
+        if healthy < RULE_GROUPS:
+            self.assertIsNone(players)
+            self.assertIn("name the players", problems[0])
+            return
+        if healthy == RULE_GROUPS:
+            self.assertIn("settles the list", row)
+            self.write(self.complete(inactives={"standing": True, "players": [plan.active()[-1]]}))
+            _, problems = standing_inactives(Plan(self.root, SEASON, self.week))
+            self.assertIn("write Standing rule alone", problems[0])
+            return
+        others = healthy - RULE_GROUPS
+        self.assertIn("leaves %d for you to name" % others, row)
+        self.assertIn("name the other %d in the table below Standing rule (0 named)" % others, problems[0])
+        # The rule's five, as its words say; then the others he names, from the rest of the healthy players.
+        chart, active = self.chart(), set(plan.active())
+        groups = sorted(((g, [p for p in o if p in active and p not in outs]) for g, o in chart["depth"].items()),
+                        key=lambda g: -len(g[1]))
+        picks = [h[-1] for _, h in groups[:RULE_GROUPS] if h]
+        named = [p for p in needed_inactives(self.root, self.week) if p not in picks and p not in outs][:others]
+        self.write(self.complete(inactives={"standing": True, "players": named, "reasons": {named[0]: "Coach's call"}}))
+        text = self.pages.plan.read_text(encoding="utf-8")
+        section = text.split("## Inactives", 1)[1].split("\n## ", 1)[0]
+        self.assertIn("\nStanding rule\n", section)
+        self.assertIn("| %s |" % named[0], section)
+        plan = Plan(self.root, SEASON, self.week)
+        self.assertEqual(plan.problems, [])
+        self.assertEqual(plan.choices["inactives"]["players"], named)
+        self.assertEqual(self.check()[0], [])
+        self.assertEqual(plan.inactives(), [p for p in plan.active() if p in outs] + picks + named)
+        # One of the rule's own five named again is refused.
+        self.write(self.complete(inactives={"standing": True, "players": [picks[0]] + named[1:]}))
+        self.assertIn("Inactives: %s already sits by your standing rule; name another" % picks[0], self.check()[0])
+        legal = game_plan.legal_lines(7, None, self.previous, {"inactives": "The rule."})["Inactives"]
+        self.assertIn("write Standing rule above the table and name the others in it", legal)
+        self.assertNotIn("for the rest", legal)
+
+    # R7: nothing is set from the page while an exam his items wait on is still to come.
+    def test_r7_the_plan_is_set_only_after_the_exams(self):
+        from scripts import apply_game_plan, check_game_plan, render_career_views, render_game_week
+        from runtime.player_bios import master_date
+        queue, items = self.week_items()
+        inactives = next(i for i in items if i["class"] == "game_day_inactives")
+        today = master_date(self.root).isoformat()
+        inactives["waits_on"] = list(inactives.get("waits_on") or []) + [
+            {"what": "a test reassessment", "owner": "medical_staff", "date": today}]
+        (self.root / "state/decision_queue.json").write_text(json.dumps(queue, indent=1, ensure_ascii=False) + "\n",
+                                                              encoding="utf-8")
+        quiet(render_game_week.write, self.root)
+        self.write(self.complete())
+        problems, notes, _ = self.check()
+        self.assertEqual(problems, [])
+        self.assertIn("Still to come: a test reassessment (%s)" % "%s %d" % (
+            master_date(self.root).strftime("%B"), master_date(self.root).day), notes)
+        self.assertEqual(len(notes), len(set(notes)))
+        before = (self.root / "state/decision_queue.json").read_bytes()
+        code, out = quiet(apply_game_plan.main, [str(self.week), "--season", str(SEASON), "--root", str(self.root)])
+        self.assertEqual(code, 1)
+        self.assertIn("GAME PLAN: COMPLETE, NOT YET SET", out)
+        self.assertIn("a test reassessment", out)
+        self.assertEqual((self.root / "state/decision_queue.json").read_bytes(), before)
+        self.assertFalse(self.pages.call_sheet.exists())
+        self.assertFalse(self.pages.applied.exists())
+        render_career_views.write(self.root)
+        desk = SeasonPaths(SEASON, self.root).desk.read_text(encoding="utf-8")
+        self.assertNotIn("Nothing is waiting on you.", desk)
+        self.assertIn("a test reassessment", desk)
+        # Held: the same page applies and settles both items.
+        self.exams_held()
+        self.apply()
+        _, items = self.week_items()
+        self.assertTrue(items and all(i["status"] == "RESOLVED" for i in items))
+        code, _ = quiet(check_game_plan.main, [str(self.week), "--season", str(SEASON), "--root", str(self.root)])
+        self.assertEqual(code, 0)
+
+    # Fresh: a briefing issued later shows only the exams still to come on its issue date.
+    def test_still_to_come_is_as_of_the_issue_date(self):
+        from datetime import timedelta
+        from runtime.decisions import waits_ahead
+        from scripts import render_game_week
+        queue, items = self.week_items()
+        wk = render_game_week.Week(self.root)
+        item = next(i for i in items if i["class"] == "game_day_inactives")
+        item["waits_on"] = [{"what": "a past exam", "owner": "medical_staff",
+                             "date": (wk.master - timedelta(days=1)).isoformat()},
+                            {"what": "an exam today", "owner": "medical_staff", "date": wk.master.isoformat()}]
+        (self.root / "state/decision_queue.json").write_text(json.dumps(queue, indent=1, ensure_ascii=False) + "\n",
+                                                              encoding="utf-8")
+        self.assertEqual([w["what"] for w in waits_ahead(item, wk.master)], ["an exam today"])
+        wk = render_game_week.Week(self.root)
+        now = render_game_week.briefing(wk)
+        row = next(l for l in now.splitlines() if l.startswith("| Week %d inactives |" % self.week))
+        self.assertIn("an exam today", row)
+        self.assertNotIn("a past exam", row)
+        later = render_game_week.briefing(wk, wk.master + timedelta(days=1))
+        row = next(l for l in later.splitlines() if l.startswith("| Week %d inactives |" % self.week))
+        self.assertTrue(row.rstrip().endswith("| Nothing |"), row)
+
+    # Fresh: the inactives item opens waiting on the exams the medical entries name before the game.
+    def test_the_inactives_item_waits_on_the_exams_before_the_game(self):
+        from datetime import date, timedelta
+        from scripts import open_game_week, render_game_week
+        wk = render_game_week.Week(self.root)
+        game_day = date.fromisoformat(wk.game["date"])
+        active = roster_record.players(self.roster(), ("active",))
+        soon, late = active[-1]["name"], active[-2]["name"]
+        exam = wk.master + timedelta(days=max(0, (game_day - wk.master).days - 1))
+        after = game_day + timedelta(days=3)
+        long = lambda d: "%s %d, %d" % (d.strftime("%B"), d.day, d.year)
+        self.set_availability([soon], "Out, minor: lower extremity; projected return %s; reassessment %s %d"
+                              % (long(after), exam.strftime("%B"), exam.day), reissue=False)
+        self.set_availability([late], "Out, short: lower extremity; projected return %s; reassessment %s %d"
+                              % (long(after + timedelta(days=7)), after.strftime("%B"), after.day), reissue=False)
+        waits = open_game_week.items_for(self.root, render_game_week.Week(self.root))[1]["waits_on"]
+        self.assertIn({"what": "%s's reassessment" % soon, "owner": "medical_staff", "date": exam.isoformat()}, waits)
+        self.assertFalse(any(w["what"].startswith(late) for w in waits))
+        self.assertTrue(all(wk.master.isoformat() <= w["date"] < wk.game["date"] for w in waits))
+
+    # Fresh: a note outside the medical format is a check line, never a traceback.
+    def test_an_unreadable_note_is_a_check_line(self):
+        from scripts import render_game_week
+        name = roster_record.players(self.roster(), ("active",))[-1]["name"]
+        self.set_availability([name], "Doubtful with an ankle sprain after the Friday practice", reissue=False)
+        code, out = quiet(render_game_week.main, ["--check", "--root", str(self.root)])
+        self.assertEqual(code, 1)
+        self.assertIn("cannot be built", out)
+        self.assertIn(name, out)
+        code, out = quiet(render_game_week.main, ["--root", str(self.root)])
+        self.assertEqual(code, 1)
+        self.assertIn("cannot be built", out)
+
+    # Fresh: the week index says the Game Report is written only once the game has closed.
+    def test_the_report_opened_before_the_game_is_not_written(self):
+        from scripts import render_game_week
+        self.pages.report.write_text("# Week %d Game Report\n" % self.week, encoding="utf-8")
+        index = render_game_week.index_page(render_game_week.Week(self.root))
+        row = next(l for l in index.splitlines() if "[Game Report]" in l)
+        self.assertTrue(row.rstrip().endswith("| Preparation written |"), row)
+
+    # Fresh: a call's tags are held to the active book as its name is.
+    def test_tags_are_held_to_the_active_book(self):
+        from runtime import offensive_words
+        names = [p["name"] for p in roster_record.players(self.roster())]
+        problems = offensive_words.call_errors({"tags": ["Glance", "red zone", "Dart"]}, names)
+        self.assertEqual(problems, ["the tag 'Glance' has 'Glance', which is not a word of the active playbook",
+                                    "the tag 'Dart' has 'Dart', which is not a word of the active playbook"])
+        for week in range(1, self.week):
+            path = SeasonPaths(SEASON, self.root).call_sheet(week)
+            if path.is_file():
+                for call in json.loads(path.read_text(encoding="utf-8")).get("offensive_call_sheet") or ():
+                    self.assertEqual(offensive_words.call_errors({"tags": call.get("tags")}, names), [], call["name"])
+        self.assertEqual([w for w in offensive_words.TAG_WORDS if offensive_words.concept(w) is not None], [])
+        sheet = json.loads(SeasonPaths(SEASON, self.root).call_sheet(self.previous).read_text(encoding="utf-8"))
+        calls = [dict(c, tags=["Glance"]) if n == 0 else c for n, c in enumerate(sheet["offensive_call_sheet"])]
+        choices = game_plan.choices_from_sheet(dict(sheet, offensive_call_sheet=calls))
+        self.write(self.complete(offense=choices["offense"]))
+        self.assertTrue(any("the tag 'Glance'" in p for p in self.check()[0]), self.check()[0])
+
+
+class DocsTests(unittest.TestCase):
+    # Fresh: the league-results highlights live in the page's data twin; the page is never hand-edited.
+    def test_highlights_are_stored_in_the_data_twin(self):
+        for rel in ("docs/run_week.md", "foundation/templates/regular_season_output_template.md"):
+            text = (ROOT / rel).read_text(encoding="utf-8")
+            self.assertNotIn("every rebuild keeps them", text, rel)
+            self.assertIn("League_Results/week_NN.json", text, rel)
+            self.assertIn("never edited by hand", text, rel)
 
 class OffensiveWordsTests(unittest.TestCase):
     def test_every_word_is_the_active_books(self):

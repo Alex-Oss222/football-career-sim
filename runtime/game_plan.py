@@ -417,8 +417,9 @@ def legal_lines(inactive_count=7, special_teams_caller=None, previous_week=None,
             return "; or Standing rule"
         return "; or Standing rule, which means your rule in force: %s" % (text[:1].lower() + text[1:]).rstrip(".")
     inactive_rule = ("; or Standing rule, which means every player out on a medical instruction on game day and "
-                     "your rule in force for the rest: %s" % (standing["inactives"][:1].lower()
-                                                              + standing["inactives"][1:]).rstrip(".")
+                     "the healthy players your rule in force sits: %s; when the week needs more than that, write "
+                     "Standing rule above the table and name the others in it"
+                     % (standing["inactives"][:1].lower() + standing["inactives"][1:]).rstrip(".")
                      if standing.get("inactives") else "")
     return {
         "Inactives": "%d players from the active roster, one per row, among them every player out on a medical "
@@ -531,6 +532,11 @@ def render(title, intro, choices, legal):
             continue
         if name == "Inactives" and isinstance(value, dict) and value.get("standing"):
             out += [STANDING, ""]
+            if value.get("players"):
+                reasons = value.get("reasons") or {}
+                out += table(["Player", "Pos", "Reason"],
+                             [[p, (value.get("positions") or {}).get(p, ""), reasons.get(p, "")]
+                              for p in value["players"]]) + [""]
         elif name == "Inactives":
             if value is not None:
                 reasons = value.get("reasons") or {}
@@ -646,9 +652,19 @@ def parse(text):
     return choices, problems
 
 
+def _is_standing(text):
+    return text.lower().rstrip(".") == STANDING.lower()
+
+
 def _inactives(section, problems):
-    if [t.lower().rstrip(".") for t in data_lines(section.lines)] == [STANDING.lower()]:
-        return {"standing": True}
+    """The inactives as written: a table of players; Standing rule alone; or Standing rule above a
+    table of the others he names when the week needs more than his rule sits ({"standing": True,
+    "players": ...})."""
+    texts = data_lines(section.lines)
+    standing = any(_is_standing(t) for t in texts)
+    if standing and not any(t.startswith("|") for t in texts):
+        if len([t for t in texts if _is_standing(t)]) == len(texts):
+            return {"standing": True}
     rows = read_table(section.lines, ("Player", "Pos", "Reason"), "Inactives", problems)
     players, reasons, positions, lines = [], {}, {}, {}
     for n, row in rows:
@@ -661,11 +677,12 @@ def _inactives(section, problems):
             reasons[name] = row["Reason"]
         if row.get("Pos"):
             positions[name] = row["Pos"]
-    stray = [t for _, t in section.lines if not t.startswith("|")]
+    stray = [t for _, t in section.lines if not t.startswith("|") and not (standing and _is_standing(t))]
     if stray:
-        problems.append("Inactives: write one player per table row, or Standing rule alone (%r is outside "
-                        "the table)" % stray[0])
-    return {"players": players, "reasons": reasons, "positions": positions, "lines": lines}
+        problems.append("Inactives: write one player per table row, Standing rule alone, or Standing rule above "
+                        "a table of the others you name (%r is outside the table)" % stray[0])
+    value = {"players": players, "reasons": reasons, "positions": positions, "lines": lines}
+    return dict({"standing": True}, **value) if standing else value
 
 
 def _depth(section, problems):

@@ -431,10 +431,22 @@ def plan_settled(wk):
             and ((i.get("resolution") or {}).get("record") or {}).get("path") == page]
 
 
-def asks_section(wk, page_rel, plan_open=False):
+def inactive_ask(wk):
+    """What the week's inactives ask of him (scripts/check_game_plan.inactive_ask), or None."""
+    from scripts.check_game_plan import Plan, inactive_ask as ask
+    try:
+        return ask(Plan(wk.root, wk.season, wk.game["week"]))
+    except (OSError, ValueError, KeyError):
+        return None
+
+
+def asks_section(wk, page_rel, plan_open=False, issued=None):
     """What is asked of Stone for the week. The items he settled on his Game Plan stay in the table,
     marked set on it (``plan_open`` shows them as they were before he set it, which is how a briefing
-    is compared: settling his own items does not overtake it)."""
+    is compared: settling his own items does not overtake it). Still to come lists only the exams
+    dated on or after the briefing's issue date (``issued``, by default today). The inactives say how
+    many sit and what his standing rule leaves to him."""
+    issued = issued or wk.master
     holder = wk.job.get("holder")
     week = wk.game["week"]
     items = [i for i in wk.views.ordered_items(wk.cv) if i.get("owner") == holder
@@ -463,8 +475,14 @@ def asks_section(wk, page_rel, plan_open=False):
                     practice.strftime("%A"), day(practice, False), kickoff[:1].lower() + kickoff[1:])
             if item["id"] in settled and not plan_open:
                 due = "Set on your Game Plan, %s" % day(item["resolution"]["date"], False)
-            waits = [wk.views.football(w["what"].split(";")[0]) + (" (%s)" % day(w["date"], False) if w.get("date") else "")
-                     for w in item.get("waits_on") or ()]
+            waits = []
+            for w in decisions.waits_ahead(item, issued):
+                text = wk.views.football(w["what"].split(";")[0]) + (" (%s)" % day(w["date"], False)
+                                                                     if w.get("date") else "")
+                if text not in waits:
+                    waits.append(text)
+            if item.get("class") == "game_day_inactives":
+                settle = inactive_ask(wk) or settle
             settle = settle or SETTLE.get(item.get("class"), "")
             rows.append([item["title"].rstrip("."), settle[:1].upper() + settle[1:] if settle else "",
                          due, "; ".join(w for w in waits if w) or "Nothing"])
@@ -534,7 +552,7 @@ def briefing(wk, issued=None, plan_open=False):
     out += medical_section(wk, page_rel)
     out += last_game_section(wk)
     out += opponent_section(wk)
-    out += asks_section(wk, page_rel, plan_open)
+    out += asks_section(wk, page_rel, plan_open, issued)
     out += standing_section(wk, page_rel)
     out += others_section(wk, page_rel)
     out += read_section(wk)
@@ -705,7 +723,9 @@ def index_page(wk):
                  "tries, kickoffs, the defense and the kicking game", plan_status])
     report = wk.pages.report
     rows.append([link(page_rel, wk.rel(report), "Game Report") if report.is_file() else "Game Report",
-                 "What happened and what changed", "Written" if report.is_file() else "After the game"])
+                 "What happened and what changed",
+                 # Opened before the game with its preparation; written once the game has closed.
+                 ("Written" if wk.closed else "Preparation written") if report.is_file() else "After the game"])
     out = ["# Week %d: %s" % (week, wk.title_where()), "", "%s." % wk.when(), ""]
     out += table(["Page", "What it holds", "Status"], rows) + [""]
     earlier = earlier_briefings(wk)
@@ -823,7 +843,15 @@ def validation_errors(root=ROOT):
 
 def check(root=ROOT, week=None):
     """``validation_errors`` (with ``week``, that week's alone, played or open), and for an open week
-    a briefing not yet issued or overtaken by the situation, and an unclean briefing."""
+    a briefing not yet issued or overtaken by the situation, and an unclean briefing. A record the
+    pages read that is not in its format (a medical note, say) is one line, as validation reports it."""
+    try:
+        return _check(root, week)
+    except ValueError as exc:
+        return ["game week pages: cannot be built: %s" % exc]
+
+
+def _check(root, week):
     wk = Week(root, week)
     if wk.game is None:
         return []
@@ -846,7 +874,11 @@ def main(argv=None):
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--root", type=Path, default=ROOT)
     args = parser.parse_args(argv)
-    wk = Week(args.root, args.week)
+    try:
+        wk = Week(args.root, args.week)
+    except ValueError as exc:
+        print("game week pages: cannot be built: %s" % exc)
+        return 1
     note = None
     if wk.game is not None and not wk.closed and not wk.pages.staff_read.is_file():
         note = "note: Week %d's staff read is still to come (%s); the briefing says so" % (
@@ -857,10 +889,16 @@ def main(argv=None):
         if note:
             print(note)
         return 1 if errors else 0
-    if wk.game is not None and wk.closed:
-        written = write_index(args.root, args.week)
-    else:
-        written = write(args.root, args.week)
+    try:
+        if wk.game is not None and wk.closed:
+            written = write_index(args.root, args.week)
+        else:
+            written = write(args.root, args.week)
+    except ValueError as exc:
+        # A record the pages read that is not in its format (a medical note, the issue record): named,
+        # with nothing written past it.
+        print("game week pages: cannot be built: %s" % exc)
+        return 1
     for path in written:
         print("wrote %s" % Path(path).relative_to(Path(args.root).resolve()).as_posix())
     if not written:

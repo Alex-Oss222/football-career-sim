@@ -741,10 +741,12 @@ def _waiting(ctx, items):
         elif deadline:
             line += " Due by %s." % day(deadline, False)
         waits = []
-        for wait in item.get("waits_on") or ():
+        from runtime.decisions import waits_ahead
+        for wait in waits_ahead(item, ctx.master):     # an exam already held is not still to come
             what = football(ctx.show("waits_on.what", wait["what"]).split(";")[0])
-            if what:
-                waits.append("%s (%s)" % (what, day(wait["date"], False)) if wait.get("date") else what)
+            text = ("%s (%s)" % (what, day(wait["date"], False)) if wait.get("date") else what) if what else ""
+            if text and text not in waits:
+                waits.append(text)
         if waits:
             line += " Still to come: %s." % "; ".join(waits)
         decision_pages = _decision_pages(ctx, week) if week is not None else []

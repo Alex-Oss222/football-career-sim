@@ -10,7 +10,10 @@ schedule and his standing instructions:
 
 - the week's game plan (class ``weekly_game_plan``), which holds the week's
   inputs until he sets his Game Plan;
-- the week's inactives (class ``game_day_inactives``). When a standing
+- the week's inactives (class ``game_day_inactives``), waiting on every
+  exam the medical entries name before the game (``medical_waits``: a
+  reassessment or a projected return), so a list set before them is
+  confirmed after them. When a standing
   instruction covers the inactives (his healthy-inactive rule), the item says
   why it is still his (``standing_not_applied``): the rule covers the healthy
   inactives only, and who is out for the game is known only as the week goes
@@ -74,6 +77,35 @@ def last_game_event(root, wk):
     return (found[-1].id if found else None), rel
 
 
+def medical_waits(wk):
+    """What the week's inactives wait on: each exam the roster record's medical entries name between
+    today and the game day (runtime/season_summary.medical_entry: a reassessment or a projected
+    return, on or after today and before the game date), one wait per player and date, oldest first.
+    A projected return alone under an independent hold has no club owner (the independent process
+    releases it). A note not in the medical format is left to the check, which names it."""
+    from runtime import roster as roster_record, season_summary as summary
+    game_day = date.fromisoformat(wk.game["date"])
+    out = []
+    for row in summary.held(roster_record.load(wk.paths.roster)):
+        try:
+            entry = summary.medical_entry(row, wk.master)
+        except ValueError:
+            continue
+        if entry is None:
+            continue
+        on = {}
+        for d in entry["reviews"]:
+            if wk.master <= d < game_day:
+                on.setdefault(d, []).append("reassessment")
+        if entry["projected"] and wk.master <= entry["projected"] < game_day:
+            on.setdefault(entry["projected"], []).append("projected return")
+        independent = entry["instruction"] == summary.KINDS["Independent medical hold"]
+        for d, what in on.items():
+            owner = None if independent and what == ["projected return"] else "medical_staff"
+            out.append({"what": "%s's %s" % (row["name"], " and ".join(what)), "owner": owner, "date": d.isoformat()})
+    return sorted(out, key=lambda w: (w["date"], w["what"]))
+
+
 def items_for(root, wk):
     """The week's two items for Stone, as they open."""
     season, week, game = wk.season, wk.game["week"], wk.game
@@ -99,7 +131,7 @@ def items_for(root, wk):
     inactives = {"id": "%d-w%02d-inactives" % (season, week), "title": "Week %d inactives" % week,
                  "class": INACTIVES, "owner": holder, "authority_rows": list(decision_queue.CLASSES[INACTIVES].rows),
                  "question": "Stone's Week %d inactives for %s." % (week, place),
-                 "raised": dict(raised), "status": "OPEN", "waits_on": [],
+                 "raised": dict(raised), "status": "OPEN", "waits_on": medical_waits(wk),
                  "deadline": {"date": game["date"], "label": "before the Week %d inputs are built" % week,
                               "before": dict(block)},
                  "blocks": [dict(block)]}
