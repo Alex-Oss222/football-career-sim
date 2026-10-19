@@ -748,7 +748,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 
 ### Contract notes
 
-Three-year $1,445,000 deal reconstructed as rookie minimum bases plus $5,000 bonus. The final $1,668 allocation matches the original-contract residue reported by OTC; the actual later departure is not applied.
+Three-year $1,445,000 deal reconstructed as rookie minimum bases plus $5,000 bonus. The final $1,668 allocation matches the original-contract residue reported by OTC.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
@@ -855,7 +855,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 
 ### Contract notes
 
-Original 2012 deal retained through 2015, including $25,000 annual workout bonus. The $3.425 million original 2015 salary is used before any actual later trade adjustment.
+Original 2012 deal retained through 2015, including $25,000 annual workout bonus. The $3.425 million 2015 salary is the original contract's figure.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
