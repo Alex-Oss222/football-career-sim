@@ -38,8 +38,13 @@ entry is a page written from Week 6 on. Any other change (an edited old
 line, a page rewritten by hand or by its generator: the standings, the desk)
 makes the whole page a new one, so a generator must be cleaned before it
 rewrites a page after Week 5 (docs/rebuild_plan.md names the build step that
-cleans each such view). A page the player page builder writes is checked by
-its marker.
+cleans each such view). One change keeps a page history: when a page it links
+to moves, its link destinations may be rewritten and nothing else, and the
+commit that does it re-records the page's digest and length in the map (a
+moved page's entry moves to its new path) and updates the pin; the rebuild
+plan's "Pages written before Week 6" paragraph holds the rule and its audit.
+Such an entry holds the re-recorded bytes, not the bytes before Week 6. A
+page the player page builder writes is checked by its marker.
 
 Folder map. ``folder_map_errors`` fails when a script or runtime module,
 other than the folder map itself (runtime/season_layout.py, runtime/seasons.py)
@@ -246,7 +251,7 @@ def history_pin_errors(root=ROOT):
     found = digest(path.read_bytes())
     if found != PAGE_HISTORY_SHA256:
         return ["Page history map changed without its pin: %s is %s, the folder map pins %s; a page written "
-                "before Week 6 is never added or changed after the fact" % (PAGE_HISTORY, found, PAGE_HISTORY_SHA256)]
+                "before Week 6 is never added, and is re-recorded only after a change to its link destinations alone" % (PAGE_HISTORY, found, PAGE_HISTORY_SHA256)]
     return []
 
 

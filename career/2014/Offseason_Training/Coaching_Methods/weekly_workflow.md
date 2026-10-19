@@ -47,7 +47,7 @@ No invented defect is required on a correct rep. Several players missing the sam
 - Film owner: update preparation and distribution independently. A coach's draft, a sent packet, a player acknowledgment and a completed retest are different events.
 - Phase closer: link the actual output and carry forward retained jobs, open corrections, unobserved work, legal/medical limits, parked evaluations, owner and next review opportunity. Do not manufacture an output for an unrun phase.
 
-- Coaching evidence reviewer: record instruction, player response and follow-up in the phase output. Update Stone's [performance review](../../../Stone/Performance_Reviews.md) only when the evidence materially changes a standing concern; routine weekly observations stay here. His adopted identity changes only when the user revises it. Keep assistant updates in their existing record under the [folder method](../../../../foundation/templates/coach_profile_template.md). Identify the actual contributor and available information, count a shared improvement once and leave missing delivery or retest evidence open.
+- Coaching evidence reviewer: record instruction, player response and follow-up in the phase output. Update Stone's [performance review](../../../Stone/Performance_Reviews.md) only when the evidence materially changes a standing concern; routine weekly observations stay here. His adopted identity changes only when the user revises it. Keep assistant updates in their existing record under the [folder method](../../../../foundation/templates/coach_records_method.md). Identify the actual contributor and available information, count a shared improvement once and leave missing delivery or retest evidence open.
 
 ## Teaching status and the stop rule
 

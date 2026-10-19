@@ -180,7 +180,8 @@ STONE_REVIEWS = STONE_PAGES + '/Performance_Reviews.md'
 STONE_COACH_SHEET = STONE_PAGES + '/Coach_Sheet_through_October_2014.md'
 STONE_PHOTO = STONE_PAGES + '/photos/alex_stone.webp'
 # The assistants' profiles (staff_profiles.md), outside the season folders like Stone's, with
-# their index. How any coach's profile is written: foundation/templates/coach_profile_template.md.
+# their index. How any coach's profile is written: foundation/templates/coach_profile_template.md,
+# with the folder method beside it (coach_records_method.md, the old folder README).
 ASSISTANT_COACH_PAGES = 'career/Assistant_Coaches'
 ASSISTANT_INDEX = ASSISTANT_COACH_PAGES + '/README.md'
 CANON_OVERRIDES = PEOPLE_ROOT + '/canon_overrides.json'
@@ -191,7 +192,7 @@ PAGE_HISTORY = DATA_ROOT + '/pages/history.json'
 # The sha256 of the page history map's bytes. The map exempts the pages it lists, so it is pinned:
 # validation fails when the map changes unless this pin changes in the same commit
 # (runtime/clean_pages.history_pin_errors).
-PAGE_HISTORY_SHA256 = 'a9564e63e52e93ce2dbae3d96133bcc511d2fde876af34d85f6711083f34d3e5'
+PAGE_HISTORY_SHA256 = '57ba83ee8240bdd27122641208fc763c6ee140fc654f42ae1d6af23b60480c3b'
 # The research registries the player pages read through (one owner each).
 BIRTH_DATE_REGISTRY = 'library/data/player_birth_dates.json'
 BIRTH_DATE_CORRECTIONS = 'library/data/player_birth_date_corrections.json'

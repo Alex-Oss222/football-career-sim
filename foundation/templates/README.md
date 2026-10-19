@@ -45,7 +45,7 @@ The regular-season output has unnumbered Coach info followed by seven sections, 
 | Record a medical incident | [Medical report](medical_injury_report_template.md) | `Team_Operations/Medical/`; routine examinations remain in `medical_history.md` |
 | General offseason business | [Offseason output](offseason_output_template.md) | The applicable early-offseason turn; completed transactions remain with their domain owners |
 | Pre-hire candidacy | [Hiring-search output](hiring_search_output_template.md) | The actual pre-hire search record, not an ordinary assistant hiring report |
-| Write or update a coach's profile, review or coach sheet | [Coach profile](coach_profile_template.md), with the folder method | Outside the season folders: Stone's in `career/Stone/`, the assistants' in `career/Assistant_Coaches/staff_profiles.md` |
+| Write or update a coach's profile, review or coach sheet | [Coach profile](coach_profile_template.md), with the [coach records method](coach_records_method.md) | Outside the season folders: Stone's in `career/Stone/`, the assistants' in `career/Assistant_Coaches/staff_profiles.md` |
 
 The [assessment method](training_camp_and_preseason/player_assessment.md) guides judgment inside reports and cards. The [phase record guide](phase_record_template.md) governs ownership and metadata. Neither creates another report family. Statistics, box scores, standings, finance views and the annual record use their existing renderers.
 
