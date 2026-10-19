@@ -1,10 +1,25 @@
 #!/usr/bin/env python3
-"""Rebuild the public season-stat views from closed-game stat receipts."""
+"""Rebuild the public season-stat views from closed-game stat receipts.
+
+From 2014 every page is written clean (docs/rebuild_plan.md, rule 4): football
+words only, with no file, script, version or system names. The figures, the
+orders and the rankings are the same computation as before; only the words
+around them change, and 2013 keeps its pages byte for byte. The statistical
+band audit is a check for the game code, not a page to read, so from 2014 it is
+written to the data area (``view_path``); the season folder's copy as it stood
+after 2014 Week 5 stays there as history (rebuild rule 1: the Week 1 to 5 game
+reports link to it) and is never rewritten. The statbook index and the records
+index are built here too from 2014, so the closed-week count they show is
+never kept by hand; the statbook index (the Statistics folder's README, which
+only this script writes) leads with the club's season at a glance, its games
+and its leaders, in the words the desk uses (runtime/season_summary.py).
+"""
 from __future__ import annotations
 
 import argparse
 import json
 from pathlib import Path
+import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -20,13 +35,57 @@ from runtime.stat_tables import (
     POSITION_GROUPS, avg, combine, g, pct, position_sections, rating_value,
     time_text,
 )
-from runtime.seasons import page_link
+from runtime.seasons import CLEAN_SEASON, page_link
 from runtime.statbook import aggregate_receipts, leaders
 
 # NFL passing qualifier: 14 attempts per team game (Wikipedia, "Passer
 # rating"; NFL leaderboard minimum). Rushing and receiving average
 # qualifiers are not applied until verified from a dated source.
 PASSING_ATTEMPTS_PER_TEAM_GAME = 14
+# The first season whose statistics pages are written clean (2013's are history).
+CLEAN_FROM = CLEAN_SEASON
+# From 2014 these views are system files: written to the data area, never a page to read.
+SYSTEM_VIEWS = ("season_totals.json", "calibration_audit.md")
+# The statbook index (the logical statbook.md: the Statistics folder's README) and the records
+# index, built from 2014.
+STATBOOK, RECORDS_INDEX = "statbook.md", "README.md"
+
+
+def clean(year):
+    return year >= CLEAN_FROM
+
+
+def view_path(paths, name):
+    """Where a generated statistics view is written: the statbook index at the season's statbook
+    page, a system view (``SYSTEM_VIEWS``) in the data area from 2014, every other view in the
+    statistics records folder (a system file's twin in the data area, by the folder map)."""
+    if name == STATBOOK:
+        return paths.record(STATBOOK)
+    if clean(paths.year) and name in SYSTEM_VIEWS:
+        return paths.data_for(paths.stats) / name
+    return paths.file_in(paths.stats, name)
+
+
+def change_weeks(receipts):
+    """The first week whose game records carry each later counting method, by name: "fumbles"
+    (a fumble may be kept, the forcer and recoverer are credited apart, muffs count), "penalties"
+    (each accepted foul charged to the club that committed it) and "scoring" (two-point tries,
+    onside kicks and return touchdowns). A method no game carries is absent."""
+    found = {}
+    for receipt in receipts:
+        week = int(receipt["week"])
+        team = next(iter(receipt.get("team_stats", {}).values()), {})
+        for name, present in (("fumbles", receipt.get("ball_security") is not None),
+                              ("penalties", isinstance(receipt.get("penalties"), dict)),
+                              ("scoring", "two_point_attempts" in team)):
+            if present:
+                found[name] = min(found.get(name, week), week)
+    return found
+
+
+def since(weeks, name):
+    """'from Week N on', or 'since the change' when no game carries the method."""
+    return ("from Week %d on" % weeks[name]) if name in (weeks or {}) else "since the change"
 
 
 def load_receipts(directory):
@@ -43,7 +102,9 @@ def through_line(book):
     return "**Through:** Week %d." % book["through_week"]
 
 
-def coverage_line(book, team_id=None):
+def coverage_line(book, team_id=None, clean_page=False):
+    if clean_page:
+        return clean_coverage_line(book, team_id)
     if not book.get("receipt_count"):
         return "**Coverage:** no closed-game receipts yet; every table is empty."
     if not book["coverage_complete"]:
@@ -66,7 +127,28 @@ def coverage_line(book, team_id=None):
     return "**Coverage:** complete for every closed game."
 
 
-def header(title, version, book, team_id=None, intro=None):
+def clean_coverage_line(book, team_id=None):
+    """The coverage line in football words (the same cases as ``coverage_line``)."""
+    if not book.get("receipt_count"):
+        return "**Coverage:** no game has closed; every table is empty."
+    if not book["coverage_complete"]:
+        return ("**Coverage:** PARTIAL. One or more games lack a complete statistics record. Tables show "
+                "only the statistics kept and are not complete league rankings.")
+    if team_id is not None:
+        if not book.get("team_player_attribution_complete", {}).get(team_id, True):
+            return ("**Coverage:** team totals complete; player credit PARTIAL for this club because a "
+                    "roster correction left the exact credit unknowable.")
+        return "**Coverage:** complete for this club's closed games."
+    if not book.get("player_attribution_complete", True):
+        return ("**Coverage:** team totals complete; player credit PARTIAL for one or more clubs. Known "
+                "player lines are shown; league rankings are withheld.")
+    return "**Coverage:** complete for every closed game."
+
+
+def header(title, version, book, team_id=None, intro=None, clean_page=False):
+    if clean_page:
+        lines = ["# " + title, "", through_line(book), coverage_line(book, team_id, True), ""]
+        return lines + ([intro, ""] if intro else [])
     lines = ["# " + title, "", "**Version:** `%s`" % version, through_line(book),
              coverage_line(book, team_id), ""]
     if intro:
@@ -94,8 +176,21 @@ def fumble_definitions_mixed(book):
     return 0 < newer < total
 
 
-def with_fumble_note(intro, book):
-    return intro + " " + FUMBLE_SPLIT_NOTE if fumble_definitions_mixed(book) else intro
+def clean_fumble_note(weeks):
+    """FUMBLE_SPLIT_NOTE in football words, with the week the counting changed."""
+    first = (weeks or {}).get("fumbles")
+    before = ("through Week %d" % (first - 1)) if first else "before the change"
+    after = ("from Week %d" % first) if first else "since the change"
+    return ("FUM, LOST, FF and FR combine two counting methods this season: %s every fumble counted as "
+            "lost, with one defender credited with forcing and recovering it; %s a fumble may be kept, "
+            "the players who force and recover it are credited separately and muffs are counted. No "
+            "fumble ranking is kept." % (before, after))
+
+
+def with_fumble_note(intro, book, weeks=None, clean_page=False):
+    if not fumble_definitions_mixed(book):
+        return intro
+    return intro + " " + (clean_fumble_note(weeks) if clean_page else FUMBLE_SPLIT_NOTE)
 
 
 def no_games(book):
@@ -104,37 +199,41 @@ def no_games(book):
 
 # ---- player views ------------------------------------------------------------
 
-def team_markdown(year, team_id, book):
+def team_markdown(year, team_id, book, weeks=None):
     lines = header(
         "%s %s player statistics" % (year, team_id),
         "%s-W%02d-TEAM-PLAYER-STATS" % (year, book["through_week"]), book, team_id,
-        with_fumble_note("By position, then player. G counts games on the game-day active list.", book),
+        with_fumble_note("By position, then player. G counts games on the game-day active list.", book,
+                         weeks, clean(year)), clean(year),
     ) + no_games(book)
     team = book["teams"].get(team_id)
     if team:
-        lines += position_sections(team["players"], with_team=False)
+        lines += position_sections(team["players"], with_team=False, clean=clean(year))
     return "\n".join(lines)
 
 
-def league_markdown(year, book):
+def league_markdown(year, book, weeks=None):
     lines = header(
         "%s NFL player statistics by position" % year,
         "%s-W%02d-LEAGUE-PLAYER-STATS" % (year, book["through_week"]), book, None,
         with_fumble_note("Every club's players, one league-wide table per position, each sorted by "
-                         "that position's primary production. G counts games on the game-day active list.", book),
+                         "that position's primary production. G counts games on the game-day active list.", book,
+                         weeks, clean(year)), clean(year),
     ) + no_games(book)
-    return "\n".join(lines + position_sections(book.get("players", {}), with_team=True))
+    return "\n".join(lines + position_sections(book.get("players", {}), with_team=True, clean=clean(year)))
 
 
-def all_players_markdown(year, book):
+def all_players_markdown(year, book, weeks=None):
     lines = header(
         "%s NFL rosters and player statistics" % year,
         "%s-W%02d-ALL-PLAYER-STATS" % (year, book["through_week"]), book, None,
         with_fumble_note("Club by club, then position, then player: every player who has been on a "
-                         "game-day active list, with his position's statistics. G counts games active.", book),
+                         "game-day active list, with his position's statistics. G counts games active.", book,
+                         weeks, clean(year)), clean(year),
     ) + no_games(book)
     for team_id in sorted(book.get("teams", {})):
-        sections = position_sections(book["teams"][team_id].get("players", {}), with_team=False, level="###")
+        sections = position_sections(book["teams"][team_id].get("players", {}), with_team=False, level="###",
+                                     clean=clean(year))
         if sections:
             lines += ["## " + team_id, ""] + sections
     return "\n".join(lines)
@@ -197,11 +296,15 @@ def team_games(book, line):
 def leaders_markdown(year, book):
     lines = header(
         "%s NFL statistical leaders" % year,
-        "%s-W%02d-LEADERS" % (year, book["through_week"]), book,
+        "%s-W%02d-LEADERS" % (year, book["through_week"]), book, clean_page=clean(year),
     )
     if not book.get("receipt_count"):
         return "\n".join(lines + ["No regular-season game has closed, so no leader exists yet.", ""])
     if not book["coverage_complete"] or not book.get("player_attribution_complete", True):
+        if clean(year):
+            return "\n".join(lines + [
+                "League rankings are withheld while player credit is incomplete. Known lines remain in "
+                "the [league player statistics](league_player_stats.md).", ""])
         return "\n".join(lines + [
             "League rankings are withheld while player attribution is incomplete. "
             "Known lines remain in `league_player_stats.md`.", ""])
@@ -308,11 +411,15 @@ def penalty_split(receipts):
 
 
 def team_stats_markdown(year, book, receipts=()):
+    c = clean(year)
+    weeks = change_weeks(receipts)
     lines = header(
         "%s NFL team statistics" % year,
         "%s-W%02d-TEAM-STATS" % (year, book["through_week"]), book, None,
+        ("Per-game team statistics from the closed games. Plays are rushing attempts plus dropbacks. "
+         "Records and tiebreakers are on the [standings](../standings.md).") if c else
         "Per-game team statistics from closed-game receipts. Plays are rushing "
-        "attempts plus dropbacks. Records and tiebreakers live in `../standings.md`.",
+        "attempts plus dropbacks. Records and tiebreakers live in `../standings.md`.", c,
     ) + no_games(book)
     clubs = [(t, d) for t, d in book.get("teams", {}).items() if d.get("games")]
     if not clubs:
@@ -329,14 +436,21 @@ def team_stats_markdown(year, book, receipts=()):
 
     split = penalty_split(receipts)
     lines += ["## Offense", ""]
-    if split is not None:
+    if split is not None and c:
+        first = weeks.get("penalties")
+        lines += ["PEN/G and PEN YDS/G count only the games %s, when each game's penalties were charged to "
+                  "the offense, per such game; the games %s, with each accepted foul charged to the club that "
+                  "committed it, are in the penalty table below. The two counts are never added and no penalty "
+                  "ranking is kept." % (("through Week %d" % (first - 1)) if first else "before the change",
+                                        ("from Week %d on" % first) if first else "since the change"), ""]
+    elif split is not None:
         # Kernel 2014.6 batch B11: the season's penalty counters have two
         # definitions; PEN/G and PEN YDS/G here are the earlier counter's
         # games only, and the records' games have their own table below.
         lines += ["PEN/G and PEN YDS/G count only games closed before the penalty records (one draw per "
                   "scrimmage play, charged to the offense), per such game; games with the penalty records "
                   "are in the penalty table below. No combined penalty figure or rank is published.", ""]
-    lines += ["| Team | G | PTS/G | YDS/G | PLAYS/G | Y/P | PASS/G | RUSH/G | 1D/G | 3RD | 3RD% | GIVE | SCK | PEN/G | PEN YDS/G | TOP/G |",
+    lines += ["| Team | G | PTS/G | YDS/G | PLAYS/G | Y/P | PASS/G | RUSH/G | %s | 3RD | 3RD%% | GIVE | SCK | PEN/G | PEN YDS/G | TOP/G |" % ("FD/G" if c else "1D/G"),
               "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
     offense = []
     for team_id, data in clubs:
@@ -357,7 +471,7 @@ def team_stats_markdown(year, book, receipts=()):
 
     lines += ["", "## Defense", "",
               "Opponent production per game. SCK counts sacks by the defense; TAKE counts takeaways.", "",
-              "| Team | G | PTS/G | YDS/G | PLAYS/G | Y/P | PASS/G | RUSH/G | 1D/G | 3RD | 3RD% | TAKE | SCK | TO +/- |",
+              "| Team | G | PTS/G | YDS/G | PLAYS/G | Y/P | PASS/G | RUSH/G | %s | 3RD | 3RD%% | TAKE | SCK | TO +/- |" % ("FD/G" if c else "1D/G"),
               "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
     defense = []
     for team_id, data in clubs:
@@ -387,7 +501,13 @@ def team_stats_markdown(year, book, receipts=()):
     lines.append("")
 
     drive_clubs = [(t, d) for t, d in clubs if d.get("drive_model_games")]
-    if drive_clubs:
+    if drive_clubs and c:
+        lines += ["## Drives and kicking", "",
+                  "Counted from the games that record drives; G counts those games. SAF counts safeties, "
+                  "DOWNS turnovers on downs, CLOCK drives ended by the clock and KO kickoffs.", "",
+                  "| Team | G | DRIVES | FGA | XPA | XPM | SAF | DOWNS | CLOCK | KO |",
+                  "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
+    elif drive_clubs:
         lines += ["## Drives and kicking — Week 4 onward (kernels 2013.6-2013.7)", "",
                   "Counted only from games closed under kernel 2013.6 or later; Weeks 1-3 receipts "
                   "(kernels 2013.4/2013.5) do not carry these counters and are not included. "
@@ -396,6 +516,7 @@ def team_stats_markdown(year, book, receipts=()):
                   "downed, out-of-bounds or touchback punt).", "",
                   "| Team | G | DRIVES | FGA | XPA | XPM | SAF | DOWNS | CLOCK | KO |",
                   "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
+    if drive_clubs:
         for team_id, data in sorted(drive_clubs):
             t = data["team_stats"]
             lines.append("| " + " | ".join(str(v) for v in (
@@ -407,7 +528,14 @@ def team_stats_markdown(year, book, receipts=()):
 
     scoring_clubs = [(t, d) for t, d in clubs if d.get("kernel_2014_6_games")
                      and "two_point_attempts" in d["team_stats"]]
-    if scoring_clubs:
+    if scoring_clubs and c:
+        lines += ["## Two-point tries, onside kicks and return touchdowns", "",
+                  "Counted %s; G counts those games. DEF TD: interception and fumble return touchdowns; "
+                  "ST TD: punt return, blocked-kick and kickoff return touchdowns; ONS REC: the kicking "
+                  "club's recoveries of its own onside kicks." % since(weeks, "scoring"), "",
+                  "| Team | G | 2PA | 2PM | DEF TD | ST TD | ONSIDE | ONS REC |",
+                  "|---|---:|---:|---:|---:|---:|---:|---:|"]
+    elif scoring_clubs:
         # Kernel 2014.6 batch B9 (R8, R9, R15): counted only from kernel
         # 2014.6 games; earlier receipts carry none of these counters.
         lines += ["## Two-point tries, onside kicks and return touchdowns — kernel 2014.6 games", "",
@@ -417,6 +545,7 @@ def team_stats_markdown(year, book, receipts=()):
                   "of its own onside kicks.", "",
                   "| Team | G | 2PA | 2PM | DEF TD | ST TD | ONSIDE | ONS REC |",
                   "|---|---:|---:|---:|---:|---:|---:|---:|"]
+    if scoring_clubs:
         for team_id, data in sorted(scoring_clubs):
             t = data["team_stats"]
             lines.append("| " + " | ".join(str(v) for v in (
@@ -427,7 +556,17 @@ def team_stats_markdown(year, book, receipts=()):
         lines.append("")
 
     ball_clubs = [(t, d) for t, d in clubs if d.get("kernel_2014_6_games") and "muffs" in d["team_stats"]]
-    if ball_clubs:
+    if ball_clubs and c:
+        lines += ["## Ball security", "",
+                  "Counted %s; G counts those games. FUM: the club's fumbles, its muffs counted as fumbles "
+                  "included (a kickoff muff the club never possessed is a muff only); LOST: those the club lost; "
+                  "MUFFS: its muffed kicks; KICK REC: its recoveries of its own kicks. Earlier games counted every "
+                  "fumble as lost, with one defender credited with forcing and recovering it, so the player "
+                  "tables' FUM, LOST, FF and FR columns combine two counting methods this season and no fumble "
+                  "ranking is kept." % since(weeks, "fumbles"), "",
+                  "| Team | G | FUM | LOST | MUFFS | KICK REC |",
+                  "|---|---:|---:|---:|---:|---:|"]
+    elif ball_clubs:
         # Kernel 2014.6 batch B10 (W4, R12): counted only from kernel 2014.6
         # games; the fumble definition changed with them (split by definition,
         # never combined with the earlier receipts' counters).
@@ -442,6 +581,7 @@ def team_stats_markdown(year, book, receipts=()):
                   "a player's ball security.", "",
                   "| Team | G | FUM | LOST | MUFFS | KICK REC |",
                   "|---|---:|---:|---:|---:|---:|"]
+    if ball_clubs:
         for team_id, data in sorted(ball_clubs):
             t = data["team_stats"]
             lines.append("| " + " | ".join(str(v) for v in (
@@ -453,6 +593,15 @@ def team_stats_markdown(year, book, receipts=()):
         # Kernel 2014.6 batch B11 (R11): counted only from games with the
         # penalty records; split by definition, never combined.
         rows = [(team_id, row["records"]) for team_id, row in sorted(split.items()) if row["records"][0]]
+    if split is not None and c:
+        lines += ["## Penalties", "",
+                  "Counted %s; G counts those games. Each accepted foul is charged to the club that committed it "
+                  "(PEN, PEN YDS); DECL and OFFS count its declined and offsetting fouls; FD PEN counts the club's "
+                  "own first downs by penalty. Earlier games charged each game's penalties to the offense, so the "
+                  "two counts are never added and no penalty ranking is kept." % since(weeks, "penalties"), "",
+                  "| Team | G | PEN | PEN YDS | PEN/G | PEN YDS/G | DECL | OFFS | FD PEN |",
+                  "|---|---:|---:|---:|---:|---:|---:|---:|---:|"]
+    elif split is not None:
         lines += ["## Penalties — kernel 2014.6 games with penalty records", "",
                   "Counted only from games closed with the penalty records; G counts those games only. Each "
                   "accepted foul is charged to the fouling club (PEN, PEN YDS); DECL and OFFS count its declined "
@@ -463,6 +612,7 @@ def team_stats_markdown(year, book, receipts=()):
                   "published.", "",
                   "| Team | G | PEN | PEN YDS | PEN/G | PEN YDS/G | DECL | OFFS | 1D PEN |",
                   "|---|---:|---:|---:|---:|---:|---:|---:|---:|"]
+    if split is not None:
         for team_id, (games, count, total, declined, offsetting, first_downs) in rows:
             lines.append("| " + " | ".join(str(v) for v in (
                 team_id, games, count, total, per(count, games), per(total, games), declined, offsetting,
@@ -470,7 +620,15 @@ def team_stats_markdown(year, book, receipts=()):
         lines.append("")
 
     spots = field_position_rows(receipts)
-    if spots:
+    if spots and c:
+        lines += ["## Field position", "",
+                  "Average drive start for the club and for its opponents, net punting (line of scrimmage to "
+                  "the receiving club's start, returns and penalties included) and fourth-down attempts and "
+                  "conversions inside drives (a failed attempt ending a drive is a turnover on downs). G counts "
+                  "the games that record drive starts.", "",
+                  "| Team | G | DRIVES | AVG START | OPP AVG START | PUNTS | NET PUNT | 4TH ATT | 4TH CONV |",
+                  "|---|---:|---:|---|---|---:|---:|---:|---:|"]
+    elif spots:
         lines += ["## Field position — kernel 2013.7 games (after Week 8)", "",
                   "Kernel 2013.7 games only: average drive start for the club and for its "
                   "opponents, realized punt net (line of scrimmage to the receiving start, "
@@ -479,6 +637,7 @@ def team_stats_markdown(year, book, receipts=()):
                   "drive is a turnover on downs). G counts those games only.", "",
                   "| Team | G | DRIVES | AVG START | OPP AVG START | PUNTS | NET PUNT | 4TH ATT | 4TH CONV |",
                   "|---|---:|---:|---|---|---:|---:|---:|---:|"]
+    if spots:
         for team_id, row in sorted(spots.items()):
             lines.append("| " + " | ".join(str(v) for v in (
                 team_id, row["games"], row["drives"],
@@ -489,7 +648,76 @@ def team_stats_markdown(year, book, receipts=()):
     return "\n".join(lines)
 
 
+# The defensive sheet's situations in football words (runtime/defensive_calls.MENUS).
+SITUATION_WORDS = {
+    "normal-down": "normal downs", "second-and-long": "second and long", "third-and-short": "third and short",
+    "third-and-medium": "third and medium", "third-and-long": "third and long", "two-point": "two-point try",
+    "goal-line": "goal line", "low-red-zone": "low red zone", "high-red-zone": "high red zone",
+    "red-zone": "red zone", "backed-up": "backed up", "two-minute": "two-minute",
+    "four-minute": "four-minute", "lead-late": "leading late",
+}
+
+
+def clean_play_calls_markdown(year, team_id, book):
+    """The snaps by call-sheet label in football words, then the defensive snaps by situation. The
+    same rows, orders and figures as ``play_calls_markdown``, with its evidence limit kept: a label
+    is matched to a snap after the play, so the counts are not the calls made, nor evidence that a
+    call worked."""
+    lines = header(
+        "%s %s snaps by call-sheet label" % (year, team_id), None, book, team_id,
+        "Each snap in the play-by-play is matched after the play to a call on that week's sheet that fits "
+        "its ball carrier or target. The counts show where the snaps fell, not which call was made or how "
+        "well a call worked. Generic, kneel, spike and scramble rows are separate; a quarterback scramble "
+        "counts under the pass label it carries. Y/P is yards per snap; 20+ counts gains of 20 yards or more; "
+        "NEG counts snaps that lost yardage.", True,
+    ) + no_games(book)
+    calls = book.get("play_calls", {}).get(team_id, {})
+    if not calls:
+        return "\n".join(lines)
+    lines += call_rows(calls)
+    games = (book.get("defensive_calls") or {}).get(team_id)
+    if games:
+        lines += ["## Defensive snaps by situation", "",
+                  "Each defensive snap is listed under the row of Stone's defensive call sheet for its down and "
+                  "distance, field zone or clock, with that row's wording. A situation's snaps are a count of the "
+                  "snaps in that situation, not the call on every such snap or evidence that a call worked. Snaps "
+                  "no row names, kneels and spikes are listed as other snaps.", "",
+                  "| Week | Situation | Sheet wording | SNAPS |", "|---:|---|---|---:|"]
+        for game in games:
+            for row in game["rows"].values():
+                lines.append("| %d | %s | %s | %d |" % (
+                    game["week"], SITUATION_WORDS.get(row["menu"], str(row["menu"]).replace("-", " ")),
+                    sheet_call(row["text"]), row["snaps"]))
+            lines.append("| %d | other snaps | | %d |" % (game["week"], game["unlabelled_snaps"]))
+        lines.append("")
+    return "\n".join(lines)
+
+
+def sheet_call(text):
+    """A defensive sheet row's call without its numbered heading ("09. SECOND-AND-LONG: "), which
+    the situation column already names; the call itself is the sheet's words."""
+    text = str(text).replace("|", "/")
+    head = re.match(r"^\s*\d+\.\s+[^:]*:\s*", text)
+    return text[head.end():] if head and head.end() < len(text) else text
+
+
+def call_rows(calls):
+    lines = ["| Call | Family | SNAPS | RUNS | DB | CMP | ATT | CMP% | YDS | Y/P | 20+ | NEG | TD | TO | SCK |",
+             "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
+    for name, line in sorted(calls.items(), key=lambda item: (-g(item[1], "snaps"), item[0])):
+        lines.append("| " + " | ".join(str(v) for v in (
+            name, line.get("family", name), g(line, "snaps"), g(line, "runs"), g(line, "dropbacks"),
+            g(line, "completions"), g(line, "pass_attempts"),
+            pct(g(line, "completions"), g(line, "pass_attempts")), g(line, "yards"),
+            avg(g(line, "yards"), g(line, "snaps")), g(line, "explosive_plays"),
+            g(line, "negative_plays"), g(line, "touchdowns"), g(line, "turnovers"),
+            g(line, "sacks"))) + " |")
+    return lines + [""]
+
+
 def play_calls_markdown(year, team_id, book):
+    if clean(year):
+        return clean_play_calls_markdown(year, team_id, book)
     lines = header(
         "%s %s descriptive call labels" % (year, team_id),
         "%s-W%02d-PLAY-CALL-STATS" % (year, book["through_week"]), book, team_id,
@@ -815,16 +1043,115 @@ def compact_book_for_storage(book):
     return compact
 
 
-def render_views(year, team, receipts):
+# The statistics pages the indexes list, in order, with what each holds (2014 onward).
+INDEXED_VIEWS = (
+    ("team_player_stats.md", "%s player statistics", "the club's players by position"),
+    ("team_stats.md", "Team statistics", "every club's offense, defense and special teams, per game"),
+    ("league_player_stats.md", "League player statistics", "every player by position, league-wide"),
+    ("league_leaders.md", "League leaders", "the leaders at each position and overall"),
+    ("play_call_stats.md", "%s snaps by call-sheet label",
+     "where the club's snaps fell by the sheet's labels, and its defensive snaps by situation; not the calls made"),
+    ("all_player_stats.md", "Rosters and player statistics", "club by club, every player who has dressed"),
+)
+
+
+def _rel(path, page):
+    import os
+    return Path(os.path.relpath(path, Path(page).parent)).as_posix()
+
+
+def _team_name(team):
+    return team.split()[-1] if team else team
+
+
+def glance_sections(paths, team, book, receipts, page):
+    """The statbook's club summary (2014 onward): the season at a glance, the games played and the
+    club's leaders, in the words the desk uses (runtime/season_summary.py)."""
+    from runtime import people, season_summary as summary
+    from runtime.standings import compute
+    games = summary.club_games(receipts, team)
+    club = book.get("teams", {}).get(team, {})
+    first, points, efficiency = summary.glance(club, games, compute(receipts), team)
+    lines = ["## Team at a glance", "", "| Season | Scoring | Efficiency |", "|---|---|---|",
+             "| %s | %s | %s |" % (first, points, efficiency), "",
+             "## Games played", "", "| Week | Opponent | Result |", "|---:|---|---:|"]
+    for receipt in games:
+        week, other = int(receipt["week"]), summary.opponent(receipt, team)
+        ours, theirs = receipt["final_score"][team], receipt["final_score"][other]
+        label = ("vs " if receipt["home"] == team else "at ") + other
+        report = paths.game_report(week)
+        if report.is_file():
+            label = "[%s](%s)" % (label, _rel(report, page))
+        lines.append("| %d | %s | %s %d-%d |" % (week, label, "W" if ours > theirs else "L" if ours < theirs else "T",
+                                                ours, theirs))
+    if not games:
+        lines.append("| | No game played | |")
+    lines += ["", "## Player leaders", "", "| Category | Player | Season total |", "|---|---|---:|"]
+    cards = paths.record("player_profiles")
+    for label, name, value in summary.leaders(club):
+        target = cards / (people.slugify(name) + ".md")
+        shown = "[%s](%s)" % (name, _rel(target, page)) if target.is_file() else name
+        lines.append("| %s | %s | %s |" % (label, shown, value))
+    return lines + [""]
+
+
+def index_pages(year, team, book, root=ROOT, receipts=()):
+    """The statbook index (the Statistics folder's README) and the records index, built from the
+    same receipts as the views (2014 onward), with links placed by the folder map. The statbook
+    leads with the club's season at a glance, its games and its leaders (``glance_sections``)."""
+    from runtime.seasons import SeasonPaths
+    paths = SeasonPaths(year, root)
+    statbook, records = view_path(paths, STATBOOK), view_path(paths, RECORDS_INDEX)
+    tracker = paths.stats / "team_tracker" / "README.md"
+    standings = paths.record("standings.md")
+    if not book.get("receipt_count"):
+        status = "No regular-season game has closed; every page is empty until the first game closes."
+    elif book["coverage_complete"]:
+        status = "**Through Week %d.** Every closed game is counted (%d games)." % (book["through_week"],
+                                                                                  book["receipt_count"])
+    else:
+        status = ("**Through Week %d.** Coverage is PARTIAL: one or more games lack a complete statistics "
+                  "record, so the pages show only the statistics kept." % book["through_week"])
+    rows = [["[%s](%s)" % (title % _team_name(team) if "%s" in title else title, _rel(records.parent / name, statbook)),
+             what] for name, title, what in INDEXED_VIEWS]
+    rows.append(["[%s team tracker](%s)" % (_team_name(team), _rel(tracker, statbook)),
+                 "the club's season and game-by-game totals"])
+    rows.append(["[Standings](%s)" % _rel(standings, statbook), "division, conference and league standings"])
+    top = ["[Regular season](%s)" % _rel(paths.record("regular_season/README.md"), statbook)]
+    cards = paths.record("player_profiles/README.md")
+    if cards.is_file():
+        top.append("[Player pages](%s)" % _rel(cards, statbook))
+    top.append("[Head coach's desk](%s)" % _rel(paths.desk, statbook))
+    lines = ["# %d regular-season statistics" % year, "", " · ".join(top), "", status, ""]
+    if book.get("receipt_count"):
+        lines += glance_sections(paths, team, book, receipts, statbook)
+    lines += ["## Full statistics", "", "| Page | What it holds |", "|---|---|"]
+    lines += ["| %s | %s |" % tuple(row) for row in rows] + [""]
+    lines += ["Every page is rebuilt from the game records after each closed week. Preseason games never "
+              "count here, and postseason games are kept apart.", ""]
+    prior = SeasonPaths(year - 1, root).record(STATBOOK) if year - 1 >= 2013 else None
+    if prior is not None and prior.is_file():
+        lines += ["The %d season: [statistics](%s)." % (year - 1, _rel(prior, statbook)), ""]
+    index = ["# %d statistics pages" % year, "", "[Statistics](%s)" % _rel(statbook, records), "", status, ""]
+    index += ["- [%s](%s): %s" % (title % _team_name(team) if "%s" in title else title, name, what)
+              for name, title, what in INDEXED_VIEWS]
+    index += ["- [%s team tracker](%s): the club's season and game-by-game totals" % (
+        _team_name(team), _rel(tracker, records)), ""]
+    return {STATBOOK: "\n".join(lines), RECORDS_INDEX: "\n".join(index)}
+
+
+def render_views(year, team, receipts, root=ROOT):
     from runtime.seasons import require_receipt_season
     require_receipt_season(receipts, year)
-    """Every generated stat file, keyed by file name, from one receipt set."""
+    """Every generated stat file, keyed by file name, from one receipt set; from 2014 also the
+    statbook and records indexes (``index_pages``). ``view_path`` places each one."""
     book = aggregate_receipts(receipts)
+    weeks = change_weeks(receipts)
     views = {
         "season_totals.json": json.dumps(compact_book_for_storage(book), sort_keys=True, separators=(",", ":")) + "\n",
-        "team_player_stats.md": team_markdown(year, team, book),
-        "league_player_stats.md": league_markdown(year, book),
-        "all_player_stats.md": all_players_markdown(year, book),
+        "team_player_stats.md": team_markdown(year, team, book, weeks),
+        "league_player_stats.md": league_markdown(year, book, weeks),
+        "all_player_stats.md": all_players_markdown(year, book, weeks),
         "league_leaders.md": leaders_markdown(year, book),
         "play_call_stats.md": play_calls_markdown(year, team, book),
         "team_stats.md": team_stats_markdown(year, book, receipts),
@@ -833,23 +1160,32 @@ def render_views(year, team, receipts):
     from runtime.seasons import SeasonPaths
     from runtime.season_layout import rebase_markdown
     from runtime.season_layout import logical_path
-    return {name: rebase_markdown(text, logical_path(year, 'stats/' + name),
-                                  (SeasonPaths(year, ROOT).stats / name).relative_to(ROOT))
-            if name.endswith('.md') else text for name, text in views.items()}
+    paths = SeasonPaths(year, ROOT)
+    out = {name: rebase_markdown(text, logical_path(year, 'stats/' + name), view_path(paths, name).relative_to(ROOT))
+           if name.endswith('.md') else text for name, text in views.items()}
+    if clean(year):
+        out.update(index_pages(year, team, book, root, receipts))
+    return out
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("year", type=int)
     parser.add_argument("--team", required=True, help="Exact team_id used by game receipts")
+    parser.add_argument("--check", action="store_true", help="write nothing; exit 1 when a view is stale")
     args = parser.parse_args()
 
     from runtime.seasons import SeasonPaths
     paths = SeasonPaths(args.year, ROOT)
     receipts = load_receipts(paths.receipts)
     views = render_views(args.year, args.team, receipts)
+    if args.check:
+        stale = [view_path(paths, name).relative_to(ROOT).as_posix() for name, text in views.items()
+                 if not view_path(paths, name).is_file() or view_path(paths, name).read_text(encoding="utf-8") != text]
+        print("\n".join("Statistics view stale: " + s for s in stale) if stale else "STATISTICS CURRENT")
+        return 1 if stale else 0
     for name, text in views.items():
-        target = paths.file_in(paths.stats, name)
+        target = view_path(paths, name)
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(text, encoding="utf-8")
     print("rendered %d stat views from %d receipts" % (len(views), len(receipts)))
@@ -858,7 +1194,8 @@ def main():
         # scripts/render_player_pages.py again once the week's awards are drawn.
         from runtime import player_pages
         player_pages.write(ROOT)
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

@@ -17,8 +17,8 @@ This document states what is true now and what comes next. The [2014 record](../
 | Document 2 | `c4bb8d569467f085882da407c8660cbc4001452d` | Active foundation source |
 | Document 3 | `a5f5f93704944360710945663419b98a4627355a` | Active foundation source |
 | Document 4 | `JAX-2014-OCT05-REGISTER-88` | Roster, staff, medical and role register |
-| Current job record | `48f3ccd0ada2e732317ccad4c25d19ed557032cc` | [Job, authority and delegation](current_job.json) |
-| Decision queue | `f0c5434e5dd608424cf6ac55c3677cda71e2a491` | [Open and resolved decisions](decision_queue.json) |
+| Current job record | `603ddcb84ff70e475e9479bd10f1e519ea01a4c6` | [Job, authority and delegation](current_job.json) |
+| Decision queue | `b62b51641451ac5100656ca8601b77af265edf35` | [Open and resolved decisions](decision_queue.json) |
 | Document 6 | [Event records and handoff protocol](../foundation/06_Event_Records_and_Handoff.md) | Latest closed football event, and latest closed event of any kind: [Week 5 against Pittsburgh](../career/2014/Regular_Season/Games/Week_05/output.md), October 5, 2014 (Pittsburgh 27, Jacksonville 10), after the game-day clock advance of October 5 and the Pittsburgh preparation closed October 4 |
 
 ## 1. Master clock and competition position
@@ -165,7 +165,7 @@ Execution and observable effort remain separate: protection losses were techniqu
 <!-- decision-queue:begin -->
 | Decision | Owner | Needed | Holds | Waiting on | Record |
 |---|---|---|---|---|---|
-| Week 6 game plan for Tennessee | Alex Stone | before the Week 6 call sheet is frozen and the Week 6 inputs are built; kickoff October 12, 1 p.m. ET | the Week 6 game | nothing | [record](../career/2014/Regular_Season/Games/Week_06/README.md) |
+| Week 6 game plan for Tennessee | Alex Stone | before the Week 6 call sheet is frozen and the Week 6 inputs are built; kickoff October 12, 1 p.m. ET | the Week 6 game | Trawick's reassessment (October 7) | [record](../career/2014/Regular_Season/Games/Week_06/README.md) |
 | Week 6 inactives | Alex Stone | before the Week 6 inputs are built | the Week 6 game | Christian Jones's reassessment and projected return (October 6); Trawick's reassessment (October 7); Poyer's projected return; the independent process releases the hold (October 9) | [record](../career/2014/Team_Operations/Team/Depth_Chart/depth_chart.md) |
 | Individual film packets: preparation and coach approval | Jacksonville coaching staff | no deadline | nothing | cause review and comparison clips for the Cousins packet; the cut-up video, not yet supplied | [record](../career/2014/Team_Operations/Film/player_queue.md) |
 | Three open practice-squad places | David Caldwell | no deadline | nothing | nothing | [record](../career/2014/Team_Operations/Team/Roster/roster.md) |

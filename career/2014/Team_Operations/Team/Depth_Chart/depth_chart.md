@@ -13,7 +13,7 @@ Player use varies with the personnel package. The starting line and the X, H and
 | Position | Player | Assignment |
 |---|---|---|
 | QB | [Kirk Cousins](../Player_Cards/kirk_cousins.md) | Chad Henne is QB2 |
-| RB | [Maurice Jones-Drew](../Player_Cards/maurice_jones_drew.md) | Anderson and Grimes follow |
+| RB | [Maurice Jones-Drew](../Player_Cards/maurice_jones_drew.md) | C.J. Anderson and Jonathan Grimes follow |
 | FB | [Montell Owens](../Player_Cards/montell_owens.md) | For fullback packages |
 | X | [Davante Adams](../Player_Cards/davante_adams.md) | X (WR1) |
 | H | [Adam Thielen](../Player_Cards/adam_thielen.md) | H |
@@ -45,11 +45,11 @@ The first defensive-line and linebacker groups, and the first four defensive bac
 
 ## Current medical limitations
 
-| Player | Status | Next date |
+| Player | Status | Next medical date |
 |---|---|---|
-| [Christian Jones](../Player_Cards/christian_jones.md) | Out · upper extremity (minor) | Review October 6; Projected October 6, 2014 |
-| [Brynden Trawick](../Player_Cards/brynden_trawick.md) | Out · lower extremity (minor) | Review October 7; Projected October 11, 2014 |
-| [Jordan Poyer](../Player_Cards/jordan_poyer.md) | Independent hold · head/neck | Projected October 9, 2014 |
+| [Christian Jones](../Player_Cards/christian_jones.md) | Out · upper extremity (minor) | Review October 6, 2014; projected return October 6, 2014 |
+| [Brynden Trawick](../Player_Cards/brynden_trawick.md) | Out · lower extremity (minor) | Review October 7, 2014; projected return October 11, 2014 |
+| [Jordan Poyer](../Player_Cards/jordan_poyer.md) | Independent hold · head/neck (short) | Projected return October 9, 2014 |
 
 Medical clearance remains with the medical staff. [Full medical report](../../Medical/current_injury_report.md)
 

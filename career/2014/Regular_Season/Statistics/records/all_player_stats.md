@@ -1,10 +1,9 @@
 # 2014 NFL rosters and player statistics
 
-**Version:** `2014-W05-ALL-PLAYER-STATS`
 **Through:** Week 5.
 **Coverage:** complete for every closed game.
 
-Club by club, then position, then player: every player who has been on a game-day active list, with his position's statistics. G counts games active. FUM, LOST, FF and FR combine two definitions this season: games closed before kernel 2014.6 counted every generated fumble as lost and named one defender as its forcer and recoverer; from kernel 2014.6 a fumble may be kept, the forcer and recoverer are separate group draws or replayed records, and muffs are counted. No fumble rank is published, and who fumbled, forced, recovered or muffed is never evidence of a player's ball security.
+Club by club, then position, then player: every player who has been on a game-day active list, with his position's statistics. G counts games active. FUM, LOST, FF and FR combine two counting methods this season: through Week 4 every fumble counted as lost, with one defender credited with forcing and recovering it; from Week 5 a fumble may be kept, the players who force and recover it are credited separately and muffs are counted. No fumble ranking is kept.
 
 ## Arizona Cardinals
 
@@ -136,51 +135,51 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Lyle Sendlein | C | offensive_snaps 251, special_teams_snaps 18 |
-| Antonio Cromartie | CB | defensive_snaps 227, special_teams_snaps 16 |
-| Jerraud Powers | CB | defensive_snaps 130, special_teams_snaps 49 |
-| Justin Bethel | CB | defensive_snaps 1, special_teams_snaps 33 |
-| Patrick Peterson | CB | defensive_snaps 227, special_teams_snaps 16 |
-| Alex Okafor | DE | defensive_snaps 1 |
-| Calais Campbell | DE | defensive_snaps 227, special_teams_snaps 16 |
-| Matt Shaughnessy | DE | INT YDS 38, defensive_snaps 227, penalties 1, penalty_yards 5, special_teams_snaps 16 |
-| Ed Stinson | DT | defensive_snaps 1 |
-| Frostee Rucker | DT | defensive_snaps 158, special_teams_snaps 16 |
-| Rashad Johnson | FS | defensive_snaps 52, penalties 1, penalty_yards 10, special_teams_snaps 65 |
-| Tyrann Mathieu | FS | defensive_snaps 227, special_teams_snaps 16 |
-| Earl Watford | G | special_teams_snaps 4 |
-| Jonathan Cooper | G | special_teams_snaps 14 |
-| Paul Fanaika | G | offensive_snaps 251, special_teams_snaps 18 |
-| Ted Larsen | G | offensive_snaps 251, penalties 1, penalty_yards 5, special_teams_snaps 18 |
-| Kenny Demens | ILB | defensive_snaps 5 |
-| Kevin Minter | ILB | defensive_snaps 227, special_teams_snaps 16 |
-| Larry Foote | ILB | defensive_snaps 227, special_teams_snaps 16 |
-| Lorenzo Alexander | ILB | special_teams_snaps 65 |
-| Chandler Catanzaro | K | special_teams_snaps 38 |
-| Mike Leach | LS | special_teams_snaps 32 |
-| Alameda Ta'amu | NT | defensive_snaps 4 |
-| Dan Williams | NT | defensive_snaps 227, special_teams_snaps 16 |
-| John Abraham | OLB | defensive_snaps 115, special_teams_snaps 16 |
-| Sam Acho | OLB | defensive_snaps 2, special_teams_snaps 65 |
-| Thomas Keiser | OLB | special_teams_snaps 47 |
-| Dave Zastudil | P | special_teams_snaps 32 |
-| Carson Palmer | QB | RUSH LNG 25, offensive_snaps 251 |
-| Andre Ellington | RB | REC LNG 25, offensive_snaps 240 |
-| Jonathan Dwyer | RB | REC LNG 7, offensive_snaps 72, penalties 1, penalty_yards 10, special_teams_snaps 61 |
-| Robert Hughes | RB | special_teams_snaps 1 |
-| Stepfan Taylor | RB | REC LNG 11, offensive_snaps 10, special_teams_snaps 39 |
-| Tony Jefferson | SS | defensive_snaps 227, special_teams_snaps 16 |
-| Bobby Massie | T | offensive_snaps 251, penalties 2, penalty_yards 10, special_teams_snaps 18 |
-| Jared Veldheer | T | offensive_snaps 251, special_teams_snaps 18 |
-| Bradley Sowell | TE | offensive_snaps 1, special_teams_snaps 65 |
-| Darren Fells | TE | special_teams_snaps 1 |
-| John Carlson | TE | offensive_snaps 74, special_teams_snaps 83 |
-| Rob Housler | TE | offensive_snaps 251, special_teams_snaps 18 |
-| Jaron Brown | WR | offensive_snaps 1, special_teams_snaps 65 |
-| John Brown | WR | RUSH LNG 7, offensive_snaps 113 |
-| Larry Fitzgerald | WR | offensive_snaps 251, penalties 1, penalty_yards 10 |
-| Michael Floyd | WR | RUSH LNG 6, offensive_snaps 251 |
-| Ted Ginn | WR | offensive_snaps 6, special_teams_snaps 31 |
+| Lyle Sendlein | C | OFF SNAPS 251, ST SNAPS 18 |
+| Antonio Cromartie | CB | DEF SNAPS 227, ST SNAPS 16 |
+| Jerraud Powers | CB | DEF SNAPS 130, ST SNAPS 49 |
+| Justin Bethel | CB | DEF SNAPS 1, ST SNAPS 33 |
+| Patrick Peterson | CB | DEF SNAPS 227, ST SNAPS 16 |
+| Alex Okafor | DE | DEF SNAPS 1 |
+| Calais Campbell | DE | DEF SNAPS 227, ST SNAPS 16 |
+| Matt Shaughnessy | DE | INT YDS 38, DEF SNAPS 227, PEN 1, PEN YDS 5, ST SNAPS 16 |
+| Ed Stinson | DT | DEF SNAPS 1 |
+| Frostee Rucker | DT | DEF SNAPS 158, ST SNAPS 16 |
+| Rashad Johnson | FS | DEF SNAPS 52, PEN 1, PEN YDS 10, ST SNAPS 65 |
+| Tyrann Mathieu | FS | DEF SNAPS 227, ST SNAPS 16 |
+| Earl Watford | G | ST SNAPS 4 |
+| Jonathan Cooper | G | ST SNAPS 14 |
+| Paul Fanaika | G | OFF SNAPS 251, ST SNAPS 18 |
+| Ted Larsen | G | OFF SNAPS 251, PEN 1, PEN YDS 5, ST SNAPS 18 |
+| Kenny Demens | ILB | DEF SNAPS 5 |
+| Kevin Minter | ILB | DEF SNAPS 227, ST SNAPS 16 |
+| Larry Foote | ILB | DEF SNAPS 227, ST SNAPS 16 |
+| Lorenzo Alexander | ILB | ST SNAPS 65 |
+| Chandler Catanzaro | K | ST SNAPS 38 |
+| Mike Leach | LS | ST SNAPS 32 |
+| Alameda Ta'amu | NT | DEF SNAPS 4 |
+| Dan Williams | NT | DEF SNAPS 227, ST SNAPS 16 |
+| John Abraham | OLB | DEF SNAPS 115, ST SNAPS 16 |
+| Sam Acho | OLB | DEF SNAPS 2, ST SNAPS 65 |
+| Thomas Keiser | OLB | ST SNAPS 47 |
+| Dave Zastudil | P | ST SNAPS 32 |
+| Carson Palmer | QB | RUSH LNG 25, OFF SNAPS 251 |
+| Andre Ellington | RB | REC LNG 25, OFF SNAPS 240 |
+| Jonathan Dwyer | RB | REC LNG 7, OFF SNAPS 72, PEN 1, PEN YDS 10, ST SNAPS 61 |
+| Robert Hughes | RB | ST SNAPS 1 |
+| Stepfan Taylor | RB | REC LNG 11, OFF SNAPS 10, ST SNAPS 39 |
+| Tony Jefferson | SS | DEF SNAPS 227, ST SNAPS 16 |
+| Bobby Massie | T | OFF SNAPS 251, PEN 2, PEN YDS 10, ST SNAPS 18 |
+| Jared Veldheer | T | OFF SNAPS 251, ST SNAPS 18 |
+| Bradley Sowell | TE | OFF SNAPS 1, ST SNAPS 65 |
+| Darren Fells | TE | ST SNAPS 1 |
+| John Carlson | TE | OFF SNAPS 74, ST SNAPS 83 |
+| Rob Housler | TE | OFF SNAPS 251, ST SNAPS 18 |
+| Jaron Brown | WR | OFF SNAPS 1, ST SNAPS 65 |
+| John Brown | WR | RUSH LNG 7, OFF SNAPS 113 |
+| Larry Fitzgerald | WR | OFF SNAPS 251, PEN 1, PEN YDS 10 |
+| Michael Floyd | WR | RUSH LNG 6, OFF SNAPS 251 |
+| Ted Ginn | WR | OFF SNAPS 6, ST SNAPS 31 |
 
 ## Atlanta Falcons
 
@@ -317,50 +316,50 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| James Stone | C | special_teams_snaps 5 |
-| Joe Hawley | C | offensive_snaps 324, special_teams_snaps 26 |
-| Desmond Trufant | CB | defensive_snaps 311, special_teams_snaps 17 |
-| Javier Arenas | CB | defensive_snaps 76, special_teams_snaps 80 |
-| Josh Wilson | CB | defensive_snaps 300, special_teams_snaps 37 |
-| Robert Alford | CB | defensive_snaps 158, special_teams_snaps 8 |
-| Robert McClain | CB | defensive_snaps 236, special_teams_snaps 65 |
-| Jonathan Babineaux | DE | defensive_snaps 311, special_teams_snaps 17 |
-| Kroy Biermann | DE | defensive_snaps 311, special_teams_snaps 17 |
-| Osi Umenyiora | DE | defensive_snaps 9 |
-| Paul Soliai | DT | defensive_snaps 311, special_teams_snaps 17 |
-| Ra'Shede Hageman | DT | defensive_snaps 2 |
-| Tyson Jackson | DT | defensive_snaps 215, special_teams_snaps 17 |
-| Patrick DiMarco | FB | offensive_snaps 63, special_teams_snaps 83 |
-| Jon Asamoah | G | offensive_snaps 255, penalties 1, penalty_yards 5, special_teams_snaps 21 |
-| Justin Blalock | G | offensive_snaps 324, penalties 1, penalty_yards 5, special_teams_snaps 26 |
-| Matt Bryant | K | special_teams_snaps 54 |
-| Joplo Bartu | LB | defensive_snaps 311, special_teams_snaps 17 |
-| Nathan Stupar | LB | defensive_snaps 154, special_teams_snaps 17 |
-| Paul Worrilow | LB | INT YDS 32, defensive_snaps 311, special_teams_snaps 17 |
-| Prince Shembo | LB | defensive_snaps 8, special_teams_snaps 8 |
-| Josh Harris | LS | special_teams_snaps 50 |
-| Tyler Starr | OLB | defensive_snaps 3, special_teams_snaps 100 |
-| Matt Bosher | P | special_teams_snaps 50 |
-| Matt Ryan | QB | RUSH LNG 8, offensive_snaps 324 |
-| Antone Smith | RB | offensive_snaps 1, special_teams_snaps 19 |
-| Devonta Freeman | RB | REC LNG 80, offensive_snaps 324 |
-| Jacquizz Rodgers | RB | offensive_snaps 3, special_teams_snaps 100 |
-| Steven Jackson | RB | REC LNG 33, offensive_snaps 41, special_teams_snaps 100 |
-| Dezmen Southward | S | defensive_snaps 2, special_teams_snaps 71 |
-| Kemal Ishmael | S | defensive_snaps 102, special_teams_snaps 80 |
-| William Moore | S | defensive_snaps 311, special_teams_snaps 17 |
-| Gabe Carimi | T | offensive_snaps 52, special_teams_snaps 4 |
-| Jake Matthews | T | offensive_snaps 324, penalties 1, penalty_yards 5, special_teams_snaps 26 |
-| Lamar Holmes | T | offensive_snaps 272, special_teams_snaps 22 |
-| Ryan Schraeder | T | offensive_snaps 69, special_teams_snaps 26 |
-| Bear Pascoe | TE | offensive_snaps 95, special_teams_snaps 126 |
-| Levine Toilolo | TE | offensive_snaps 324, penalties 1, penalty_yards 5, special_teams_snaps 26 |
-| Courtney Roby | WR | offensive_snaps 1, special_teams_snaps 28 |
-| Devin Hester | WR | offensive_snaps 214, penalties 1, penalty_yards 10, special_teams_snaps 48 |
-| Eric Weems | WR | offensive_snaps 3, special_teams_snaps 41 |
-| Harry Douglas | WR | RUSH LNG 25, offensive_snaps 59, special_teams_snaps 62 |
-| Julio Jones | WR | RUSH LNG 4, offensive_snaps 324 |
-| Roddy White | WR | RUSH LNG 2, offensive_snaps 198 |
+| James Stone | C | ST SNAPS 5 |
+| Joe Hawley | C | OFF SNAPS 324, ST SNAPS 26 |
+| Desmond Trufant | CB | DEF SNAPS 311, ST SNAPS 17 |
+| Javier Arenas | CB | DEF SNAPS 76, ST SNAPS 80 |
+| Josh Wilson | CB | DEF SNAPS 300, ST SNAPS 37 |
+| Robert Alford | CB | DEF SNAPS 158, ST SNAPS 8 |
+| Robert McClain | CB | DEF SNAPS 236, ST SNAPS 65 |
+| Jonathan Babineaux | DE | DEF SNAPS 311, ST SNAPS 17 |
+| Kroy Biermann | DE | DEF SNAPS 311, ST SNAPS 17 |
+| Osi Umenyiora | DE | DEF SNAPS 9 |
+| Paul Soliai | DT | DEF SNAPS 311, ST SNAPS 17 |
+| Ra'Shede Hageman | DT | DEF SNAPS 2 |
+| Tyson Jackson | DT | DEF SNAPS 215, ST SNAPS 17 |
+| Patrick DiMarco | FB | OFF SNAPS 63, ST SNAPS 83 |
+| Jon Asamoah | G | OFF SNAPS 255, PEN 1, PEN YDS 5, ST SNAPS 21 |
+| Justin Blalock | G | OFF SNAPS 324, PEN 1, PEN YDS 5, ST SNAPS 26 |
+| Matt Bryant | K | ST SNAPS 54 |
+| Joplo Bartu | LB | DEF SNAPS 311, ST SNAPS 17 |
+| Nathan Stupar | LB | DEF SNAPS 154, ST SNAPS 17 |
+| Paul Worrilow | LB | INT YDS 32, DEF SNAPS 311, ST SNAPS 17 |
+| Prince Shembo | LB | DEF SNAPS 8, ST SNAPS 8 |
+| Josh Harris | LS | ST SNAPS 50 |
+| Tyler Starr | OLB | DEF SNAPS 3, ST SNAPS 100 |
+| Matt Bosher | P | ST SNAPS 50 |
+| Matt Ryan | QB | RUSH LNG 8, OFF SNAPS 324 |
+| Antone Smith | RB | OFF SNAPS 1, ST SNAPS 19 |
+| Devonta Freeman | RB | REC LNG 80, OFF SNAPS 324 |
+| Jacquizz Rodgers | RB | OFF SNAPS 3, ST SNAPS 100 |
+| Steven Jackson | RB | REC LNG 33, OFF SNAPS 41, ST SNAPS 100 |
+| Dezmen Southward | S | DEF SNAPS 2, ST SNAPS 71 |
+| Kemal Ishmael | S | DEF SNAPS 102, ST SNAPS 80 |
+| William Moore | S | DEF SNAPS 311, ST SNAPS 17 |
+| Gabe Carimi | T | OFF SNAPS 52, ST SNAPS 4 |
+| Jake Matthews | T | OFF SNAPS 324, PEN 1, PEN YDS 5, ST SNAPS 26 |
+| Lamar Holmes | T | OFF SNAPS 272, ST SNAPS 22 |
+| Ryan Schraeder | T | OFF SNAPS 69, ST SNAPS 26 |
+| Bear Pascoe | TE | OFF SNAPS 95, ST SNAPS 126 |
+| Levine Toilolo | TE | OFF SNAPS 324, PEN 1, PEN YDS 5, ST SNAPS 26 |
+| Courtney Roby | WR | OFF SNAPS 1, ST SNAPS 28 |
+| Devin Hester | WR | OFF SNAPS 214, PEN 1, PEN YDS 10, ST SNAPS 48 |
+| Eric Weems | WR | OFF SNAPS 3, ST SNAPS 41 |
+| Harry Douglas | WR | RUSH LNG 25, OFF SNAPS 59, ST SNAPS 62 |
+| Julio Jones | WR | RUSH LNG 4, OFF SNAPS 324 |
+| Roddy White | WR | RUSH LNG 2, OFF SNAPS 198 |
 
 ## Baltimore Ravens
 
@@ -500,52 +499,52 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Gino Gradkowski | C | special_teams_snaps 32 |
-| Jeremy Zuttah | C | offensive_snaps 331, special_teams_snaps 32 |
-| Asa Jackson | CB | defensive_snaps 330, special_teams_snaps 24 |
-| Chykie Brown | CB | defensive_snaps 19, penalties 1, penalty_yards 3, special_teams_snaps 104 |
-| Jimmy Smith | CB | defensive_snaps 330, interception_return_touchdowns 1, special_teams_snaps 24 |
-| Chris Canty | DE | defensive_snaps 330, special_teams_snaps 24 |
-| DeAngelo Tyson | DE | defensive_snaps 228, special_teams_snaps 24 |
-| Haloti Ngata | DT | defensive_snaps 330, special_teams_snaps 24 |
-| Lawrence Guy | DT | defensive_snaps 1 |
-| Timmy Jernigan | DT | defensive_snaps 11 |
-| Kyle Juszczyk | FB | REC LNG 76, FR 1, offensive_snaps 82, special_teams_snaps 104 |
-| Darian Stewart | FS | defensive_snaps 330, special_teams_snaps 24 |
-| Jeromy Miles | FS | defensive_snaps 64, penalties 1, penalty_yards 29, special_teams_snaps 88 |
-| Lardarius Webb | FS | defensive_snaps 265, special_teams_snaps 102 |
-| Kelechi Osemele | G | offensive_snaps 331, penalties 1, penalty_yards 5, special_teams_snaps 32 |
-| Marshal Yanda | G | FUM 1, fumbles_recovered_own 1, offensive_snaps 331, penalties 1, penalty_yards 10, special_teams_snaps 32 |
-| Rick Wagner | G | offensive_snaps 331, special_teams_snaps 32 |
-| Albert McClellan | ILB | defensive_snaps 3 |
-| Arthur Brown | ILB | defensive_snaps 2, special_teams_snaps 104 |
-| C.J. Mosley (BAL) | ILB | defensive_snaps 330, special_teams_snaps 24 |
-| Zach Orr | ILB | special_teams_snaps 84 |
-| Justin Tucker | K | special_teams_snaps 65 |
-| Morgan Cox | LS | special_teams_snaps 52 |
-| Brandon Williams (BAL) | NT | defensive_snaps 330, special_teams_snaps 24 |
-| Courtney Upshaw | OLB | defensive_snaps 164, special_teams_snaps 24 |
-| Elvis Dumervil | OLB | special_teams_snaps 19 |
-| Pernell McPhee | OLB | defensive_snaps 1, special_teams_snaps 104 |
-| Terrell Suggs | OLB | defensive_snaps 330, special_teams_snaps 24 |
-| Sam Koch | P | special_teams_snaps 52 |
-| Joe Flacco | QB | RUSH LNG 15, offensive_snaps 331, passing_two_point_conversions 1, penalties 1, penalty_yards 12 |
-| Bernard Pierce | RB | REC LNG 26, offensive_snaps 331 |
-| Fitzgerald Toussaint | RB | REC LNG 20, offensive_snaps 2 |
-| Justin Forsett | RB | REC LNG 18, offensive_snaps 40, special_teams_snaps 69 |
-| Lorenzo Taliaferro | RB | REC LNG 19, offensive_snaps 6, special_teams_snaps 3 |
-| Matt Elam | SS | defensive_snaps 250, special_teams_snaps 21 |
-| James Hurst | T | offensive_snaps 331, penalties 2, penalty_yards 10, special_teams_snaps 32 |
-| Crockett Gillmore | TE | offensive_snaps 28, special_teams_snaps 38 |
-| Dennis Pitta | TE | offensive_snaps 239, special_teams_snaps 21 |
-| Owen Daniels | TE | offensive_snaps 162, special_teams_snaps 110 |
-| Phillip Supernaw | TE | special_teams_snaps 10 |
-| Deonte Thompson | WR | special_teams_snaps 8 |
-| Jacoby Jones | WR | RUSH LNG 12, fumbles_recovered_own 1, muffs 1, offensive_snaps 130, receiving_two_point_conversions 1, special_teams_snaps 46 |
-| Kamar Aiken | WR | offensive_snaps 1, special_teams_snaps 5 |
-| Marlon Brown | WR | offensive_snaps 21, special_teams_snaps 96 |
-| Steve Smith | WR | RUSH LNG 7, offensive_snaps 331 |
-| Torrey Smith | WR | offensive_snaps 331 |
+| Gino Gradkowski | C | ST SNAPS 32 |
+| Jeremy Zuttah | C | OFF SNAPS 331, ST SNAPS 32 |
+| Asa Jackson | CB | DEF SNAPS 330, ST SNAPS 24 |
+| Chykie Brown | CB | DEF SNAPS 19, PEN 1, PEN YDS 3, ST SNAPS 104 |
+| Jimmy Smith | CB | DEF SNAPS 330, INT TD 1, ST SNAPS 24 |
+| Chris Canty | DE | DEF SNAPS 330, ST SNAPS 24 |
+| DeAngelo Tyson | DE | DEF SNAPS 228, ST SNAPS 24 |
+| Haloti Ngata | DT | DEF SNAPS 330, ST SNAPS 24 |
+| Lawrence Guy | DT | DEF SNAPS 1 |
+| Timmy Jernigan | DT | DEF SNAPS 11 |
+| Kyle Juszczyk | FB | REC LNG 76, FR 1, OFF SNAPS 82, ST SNAPS 104 |
+| Darian Stewart | FS | DEF SNAPS 330, ST SNAPS 24 |
+| Jeromy Miles | FS | DEF SNAPS 64, PEN 1, PEN YDS 29, ST SNAPS 88 |
+| Lardarius Webb | FS | DEF SNAPS 265, ST SNAPS 102 |
+| Kelechi Osemele | G | OFF SNAPS 331, PEN 1, PEN YDS 5, ST SNAPS 32 |
+| Marshal Yanda | G | FUM 1, OWN FUM REC 1, OFF SNAPS 331, PEN 1, PEN YDS 10, ST SNAPS 32 |
+| Rick Wagner | G | OFF SNAPS 331, ST SNAPS 32 |
+| Albert McClellan | ILB | DEF SNAPS 3 |
+| Arthur Brown | ILB | DEF SNAPS 2, ST SNAPS 104 |
+| C.J. Mosley (BAL) | ILB | DEF SNAPS 330, ST SNAPS 24 |
+| Zach Orr | ILB | ST SNAPS 84 |
+| Justin Tucker | K | ST SNAPS 65 |
+| Morgan Cox | LS | ST SNAPS 52 |
+| Brandon Williams (BAL) | NT | DEF SNAPS 330, ST SNAPS 24 |
+| Courtney Upshaw | OLB | DEF SNAPS 164, ST SNAPS 24 |
+| Elvis Dumervil | OLB | ST SNAPS 19 |
+| Pernell McPhee | OLB | DEF SNAPS 1, ST SNAPS 104 |
+| Terrell Suggs | OLB | DEF SNAPS 330, ST SNAPS 24 |
+| Sam Koch | P | ST SNAPS 52 |
+| Joe Flacco | QB | RUSH LNG 15, OFF SNAPS 331, 2PT PASS 1, PEN 1, PEN YDS 12 |
+| Bernard Pierce | RB | REC LNG 26, OFF SNAPS 331 |
+| Fitzgerald Toussaint | RB | REC LNG 20, OFF SNAPS 2 |
+| Justin Forsett | RB | REC LNG 18, OFF SNAPS 40, ST SNAPS 69 |
+| Lorenzo Taliaferro | RB | REC LNG 19, OFF SNAPS 6, ST SNAPS 3 |
+| Matt Elam | SS | DEF SNAPS 250, ST SNAPS 21 |
+| James Hurst | T | OFF SNAPS 331, PEN 2, PEN YDS 10, ST SNAPS 32 |
+| Crockett Gillmore | TE | OFF SNAPS 28, ST SNAPS 38 |
+| Dennis Pitta | TE | OFF SNAPS 239, ST SNAPS 21 |
+| Owen Daniels | TE | OFF SNAPS 162, ST SNAPS 110 |
+| Phillip Supernaw | TE | ST SNAPS 10 |
+| Deonte Thompson | WR | ST SNAPS 8 |
+| Jacoby Jones | WR | RUSH LNG 12, OWN FUM REC 1, MUFFS 1, OFF SNAPS 130, 2PT REC 1, ST SNAPS 46 |
+| Kamar Aiken | WR | OFF SNAPS 1, ST SNAPS 5 |
+| Marlon Brown | WR | OFF SNAPS 21, ST SNAPS 96 |
+| Steve Smith | WR | RUSH LNG 7, OFF SNAPS 331 |
+| Torrey Smith | WR | OFF SNAPS 331 |
 
 ## Buffalo Bills
 
@@ -684,53 +683,53 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Eric Wood | C | offensive_snaps 306, special_teams_snaps 27 |
-| Kraig Urbik | C | special_teams_snaps 23 |
-| Leodis McKelvin | CB | defensive_snaps 350, special_teams_snaps 53 |
-| Nickell Robey | CB | special_teams_snaps 84 |
-| Ross Cockrell | CB | special_teams_snaps 14 |
-| Stephon Gilmore | CB | defensive_snaps 350, penalties 2, penalty_yards 10, special_teams_snaps 28 |
-| Jarius Wynn | DE | defensive_snaps 187, special_teams_snaps 20 |
-| Jerry Hughes | DE | defensive_snaps 85, special_teams_snaps 8 |
-| Mario Williams | DE | defensive_snaps 350, penalties 1, penalty_yards 5, special_teams_snaps 28 |
-| Corbin Bryant | DT | defensive_snaps 3 |
-| Kyle Williams | DT | defensive_snaps 350, special_teams_snaps 28 |
-| Marcell Dareus | DT | defensive_snaps 324, special_teams_snaps 28 |
-| Stefan Charles | DT | defensive_snaps 3 |
-| Frank Summers | FB | REC LNG 22, offensive_snaps 70, special_teams_snaps 99 |
-| Corey Graham | FS | defensive_snaps 279, special_teams_snaps 107 |
-| Chris Williams | G | offensive_snaps 306, special_teams_snaps 27 |
-| Cyril Richardson | G | special_teams_snaps 4 |
-| Randell Johnson | ILB | defensive_snaps 3, special_teams_snaps 107 |
-| Dan Carpenter | K | special_teams_snaps 57 |
-| Garrison Sanborn | LS | special_teams_snaps 49 |
-| Brandon Spikes | MLB | defensive_snaps 350, special_teams_snaps 28 |
-| Preston Brown | MLB | defensive_snaps 350, special_teams_snaps 28 |
-| Ty Powell | MLB | defensive_snaps 10 |
-| Keith Rivers | OLB | defensive_snaps 174, special_teams_snaps 28 |
-| Manny Lawson | OLB | special_teams_snaps 58 |
-| Nigel Bradham | OLB | defensive_snaps 1, special_teams_snaps 21 |
-| Jordan Gay | P | special_teams_snaps 49 |
-| E.J. Manuel | QB | RUSH LNG 9, offensive_snaps 151 |
-| Kyle Orton | QB | RUSH LNG 5, fumbles_recovered_own 1, offensive_snaps 155, penalties 1, penalty_yards 5 |
-| Anthony Dixon | RB | special_teams_snaps 5 |
-| Bryce Brown | RB | REC LNG 15, offensive_snaps 32, special_teams_snaps 107 |
-| C.J. Spiller | RB | REC LNG 41, offensive_snaps 306, special_teams_snaps 30 |
-| Fred Jackson | RB | REC LNG 31, offensive_snaps 6, special_teams_snaps 37 |
-| Aaron Williams | SS | defensive_snaps 350, special_teams_snaps 28 |
-| Da'Norris Searcy | SS | defensive_snaps 350, penalties 2, penalty_yards 19, special_teams_snaps 28 |
-| Duke Williams | SS | defensive_snaps 4, special_teams_snaps 107 |
-| Chris Hairston | T | offensive_snaps 306, special_teams_snaps 27 |
-| Cordy Glenn | T | offensive_snaps 306, special_teams_snaps 27 |
-| Erik Pears | T | offensive_snaps 306, special_teams_snaps 27 |
-| Chris Gragg | TE | offensive_snaps 36, penalties 1, penalty_yards 15, special_teams_snaps 105 |
-| Lee Smith | TE | offensive_snaps 54, special_teams_snaps 77 |
-| Scott Chandler | TE | offensive_snaps 306, penalties 1, penalty_yards 10, special_teams_snaps 27 |
-| Chris Hogan | WR | special_teams_snaps 15 |
-| Marquise Goodwin | WR | RUSH LNG 4, offensive_snaps 3, special_teams_snaps 107 |
-| Mike Williams | WR | offensive_snaps 136 |
-| Robert Woods | WR | offensive_snaps 306 |
-| Sammy Watkins | WR | offensive_snaps 306 |
+| Eric Wood | C | OFF SNAPS 306, ST SNAPS 27 |
+| Kraig Urbik | C | ST SNAPS 23 |
+| Leodis McKelvin | CB | DEF SNAPS 350, ST SNAPS 53 |
+| Nickell Robey | CB | ST SNAPS 84 |
+| Ross Cockrell | CB | ST SNAPS 14 |
+| Stephon Gilmore | CB | DEF SNAPS 350, PEN 2, PEN YDS 10, ST SNAPS 28 |
+| Jarius Wynn | DE | DEF SNAPS 187, ST SNAPS 20 |
+| Jerry Hughes | DE | DEF SNAPS 85, ST SNAPS 8 |
+| Mario Williams | DE | DEF SNAPS 350, PEN 1, PEN YDS 5, ST SNAPS 28 |
+| Corbin Bryant | DT | DEF SNAPS 3 |
+| Kyle Williams | DT | DEF SNAPS 350, ST SNAPS 28 |
+| Marcell Dareus | DT | DEF SNAPS 324, ST SNAPS 28 |
+| Stefan Charles | DT | DEF SNAPS 3 |
+| Frank Summers | FB | REC LNG 22, OFF SNAPS 70, ST SNAPS 99 |
+| Corey Graham | FS | DEF SNAPS 279, ST SNAPS 107 |
+| Chris Williams | G | OFF SNAPS 306, ST SNAPS 27 |
+| Cyril Richardson | G | ST SNAPS 4 |
+| Randell Johnson | ILB | DEF SNAPS 3, ST SNAPS 107 |
+| Dan Carpenter | K | ST SNAPS 57 |
+| Garrison Sanborn | LS | ST SNAPS 49 |
+| Brandon Spikes | MLB | DEF SNAPS 350, ST SNAPS 28 |
+| Preston Brown | MLB | DEF SNAPS 350, ST SNAPS 28 |
+| Ty Powell | MLB | DEF SNAPS 10 |
+| Keith Rivers | OLB | DEF SNAPS 174, ST SNAPS 28 |
+| Manny Lawson | OLB | ST SNAPS 58 |
+| Nigel Bradham | OLB | DEF SNAPS 1, ST SNAPS 21 |
+| Jordan Gay | P | ST SNAPS 49 |
+| E.J. Manuel | QB | RUSH LNG 9, OFF SNAPS 151 |
+| Kyle Orton | QB | RUSH LNG 5, OWN FUM REC 1, OFF SNAPS 155, PEN 1, PEN YDS 5 |
+| Anthony Dixon | RB | ST SNAPS 5 |
+| Bryce Brown | RB | REC LNG 15, OFF SNAPS 32, ST SNAPS 107 |
+| C.J. Spiller | RB | REC LNG 41, OFF SNAPS 306, ST SNAPS 30 |
+| Fred Jackson | RB | REC LNG 31, OFF SNAPS 6, ST SNAPS 37 |
+| Aaron Williams | SS | DEF SNAPS 350, ST SNAPS 28 |
+| Da'Norris Searcy | SS | DEF SNAPS 350, PEN 2, PEN YDS 19, ST SNAPS 28 |
+| Duke Williams | SS | DEF SNAPS 4, ST SNAPS 107 |
+| Chris Hairston | T | OFF SNAPS 306, ST SNAPS 27 |
+| Cordy Glenn | T | OFF SNAPS 306, ST SNAPS 27 |
+| Erik Pears | T | OFF SNAPS 306, ST SNAPS 27 |
+| Chris Gragg | TE | OFF SNAPS 36, PEN 1, PEN YDS 15, ST SNAPS 105 |
+| Lee Smith | TE | OFF SNAPS 54, ST SNAPS 77 |
+| Scott Chandler | TE | OFF SNAPS 306, PEN 1, PEN YDS 10, ST SNAPS 27 |
+| Chris Hogan | WR | ST SNAPS 15 |
+| Marquise Goodwin | WR | RUSH LNG 4, OFF SNAPS 3, ST SNAPS 107 |
+| Mike Williams | WR | OFF SNAPS 136 |
+| Robert Woods | WR | OFF SNAPS 306 |
+| Sammy Watkins | WR | OFF SNAPS 306 |
 
 ## Carolina Panthers
 
@@ -863,50 +862,50 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Fernando Velasco | C | offensive_snaps 27, special_teams_snaps 3 |
-| Ryan Kalil | C | offensive_snaps 280, special_teams_snaps 18 |
-| Antoine Cason | CB | defensive_snaps 349, special_teams_snaps 31 |
-| Bene' Benwikere | CB | defensive_snaps 278, special_teams_snaps 95 |
-| Melvin White | CB | defensive_snaps 349, special_teams_snaps 31 |
-| Charles Johnson | DE | defensive_snaps 275, special_teams_snaps 24 |
-| Greg Hardy | DE | defensive_snaps 349, special_teams_snaps 31 |
-| Mario Addison | DE | defensive_snaps 2 |
-| Wes Horton | DE | defensive_snaps 4 |
-| Colin Cole | DT | defensive_snaps 309, penalties 1, penalty_yards 5, special_teams_snaps 27 |
-| Dwan Edwards | DT | defensive_snaps 85, special_teams_snaps 11 |
-| Star Lotulelei | DT | defensive_snaps 276, special_teams_snaps 31 |
-| Mike Tolbert | FB | REC LNG 9, offensive_snaps 76, special_teams_snaps 95 |
-| Thomas DeCoud | FS | defensive_snaps 349, special_teams_snaps 31 |
-| Amini Silatolu | G | offensive_snaps 307, special_teams_snaps 21 |
-| Brandon Linder | G | offensive_snaps 307, special_teams_snaps 21 |
-| Byron Bell | G | offensive_snaps 307, penalties 2, penalty_yards 20, special_teams_snaps 21 |
-| Graham Gano | K | special_teams_snaps 45 |
-| J.J. Jansen | LS | special_teams_snaps 41 |
-| Ben Jacobs | MLB | defensive_snaps 44, special_teams_snaps 7 |
-| Luke Kuechly | MLB | defensive_snaps 349, special_teams_snaps 31 |
-| A.J. Klein | OLB | special_teams_snaps 95 |
-| Chase Blackburn | OLB | defensive_snaps 210, special_teams_snaps 31 |
-| Jason Williams | OLB | defensive_snaps 3, special_teams_snaps 74 |
-| Thomas Davis | OLB | defensive_snaps 275, special_teams_snaps 24 |
-| Brad Nortman | P | special_teams_snaps 41 |
-| Cam Newton | QB | RUSH LNG 10, offensive_snaps 307 |
-| DeAngelo Williams | RB | REC LNG 34, offensive_snaps 307 |
-| Fozzy Whittaker | RB | offensive_snaps 11, penalties 1, penalty_yards 10, special_teams_snaps 39 |
-| Jonathan Stewart | RB | offensive_snaps 18, special_teams_snaps 82 |
-| Charles Godfrey | S | defensive_snaps 5, special_teams_snaps 95 |
-| Roman Harper | SS | defensive_snaps 349, penalties 1, penalty_yards 28, special_teams_snaps 31 |
-| Tre Boston | SS | defensive_snaps 4, special_teams_snaps 95 |
-| Garry Williams | T | special_teams_snaps 21 |
-| Nate Chandler | T | offensive_snaps 307, special_teams_snaps 21 |
-| Brandon Williams (CAR) | TE | offensive_snaps 3, special_teams_snaps 85 |
-| Ed Dickson | TE | offensive_snaps 90, special_teams_snaps 116 |
-| Greg Olsen | TE | offensive_snaps 307, penalties 1, penalty_yards 5, special_teams_snaps 21 |
-| Richie Brockel | TE | offensive_snaps 1, special_teams_snaps 8 |
-| Brenton Bersin | WR | offensive_snaps 90 |
-| Corey Brown | WR | offensive_snaps 25, special_teams_snaps 51 |
-| Jason Avant | WR | RUSH LNG 20, offensive_snaps 84, special_teams_snaps 55 |
-| Jerricho Cotchery | WR | offensive_snaps 307 |
-| Kelvin Benjamin | WR | RUSH LNG 20, offensive_snaps 249 |
+| Fernando Velasco | C | OFF SNAPS 27, ST SNAPS 3 |
+| Ryan Kalil | C | OFF SNAPS 280, ST SNAPS 18 |
+| Antoine Cason | CB | DEF SNAPS 349, ST SNAPS 31 |
+| Bene' Benwikere | CB | DEF SNAPS 278, ST SNAPS 95 |
+| Melvin White | CB | DEF SNAPS 349, ST SNAPS 31 |
+| Charles Johnson | DE | DEF SNAPS 275, ST SNAPS 24 |
+| Greg Hardy | DE | DEF SNAPS 349, ST SNAPS 31 |
+| Mario Addison | DE | DEF SNAPS 2 |
+| Wes Horton | DE | DEF SNAPS 4 |
+| Colin Cole | DT | DEF SNAPS 309, PEN 1, PEN YDS 5, ST SNAPS 27 |
+| Dwan Edwards | DT | DEF SNAPS 85, ST SNAPS 11 |
+| Star Lotulelei | DT | DEF SNAPS 276, ST SNAPS 31 |
+| Mike Tolbert | FB | REC LNG 9, OFF SNAPS 76, ST SNAPS 95 |
+| Thomas DeCoud | FS | DEF SNAPS 349, ST SNAPS 31 |
+| Amini Silatolu | G | OFF SNAPS 307, ST SNAPS 21 |
+| Brandon Linder | G | OFF SNAPS 307, ST SNAPS 21 |
+| Byron Bell | G | OFF SNAPS 307, PEN 2, PEN YDS 20, ST SNAPS 21 |
+| Graham Gano | K | ST SNAPS 45 |
+| J.J. Jansen | LS | ST SNAPS 41 |
+| Ben Jacobs | MLB | DEF SNAPS 44, ST SNAPS 7 |
+| Luke Kuechly | MLB | DEF SNAPS 349, ST SNAPS 31 |
+| A.J. Klein | OLB | ST SNAPS 95 |
+| Chase Blackburn | OLB | DEF SNAPS 210, ST SNAPS 31 |
+| Jason Williams | OLB | DEF SNAPS 3, ST SNAPS 74 |
+| Thomas Davis | OLB | DEF SNAPS 275, ST SNAPS 24 |
+| Brad Nortman | P | ST SNAPS 41 |
+| Cam Newton | QB | RUSH LNG 10, OFF SNAPS 307 |
+| DeAngelo Williams | RB | REC LNG 34, OFF SNAPS 307 |
+| Fozzy Whittaker | RB | OFF SNAPS 11, PEN 1, PEN YDS 10, ST SNAPS 39 |
+| Jonathan Stewart | RB | OFF SNAPS 18, ST SNAPS 82 |
+| Charles Godfrey | S | DEF SNAPS 5, ST SNAPS 95 |
+| Roman Harper | SS | DEF SNAPS 349, PEN 1, PEN YDS 28, ST SNAPS 31 |
+| Tre Boston | SS | DEF SNAPS 4, ST SNAPS 95 |
+| Garry Williams | T | ST SNAPS 21 |
+| Nate Chandler | T | OFF SNAPS 307, ST SNAPS 21 |
+| Brandon Williams (CAR) | TE | OFF SNAPS 3, ST SNAPS 85 |
+| Ed Dickson | TE | OFF SNAPS 90, ST SNAPS 116 |
+| Greg Olsen | TE | OFF SNAPS 307, PEN 1, PEN YDS 5, ST SNAPS 21 |
+| Richie Brockel | TE | OFF SNAPS 1, ST SNAPS 8 |
+| Brenton Bersin | WR | OFF SNAPS 90 |
+| Corey Brown | WR | OFF SNAPS 25, ST SNAPS 51 |
+| Jason Avant | WR | RUSH LNG 20, OFF SNAPS 84, ST SNAPS 55 |
+| Jerricho Cotchery | WR | OFF SNAPS 307 |
+| Kelvin Benjamin | WR | RUSH LNG 20, OFF SNAPS 249 |
 
 ## Chicago Bears
 
@@ -1042,51 +1041,51 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Brian De La Puente | C | special_teams_snaps 23 |
-| Roberto Garza | C | offensive_snaps 343, special_teams_snaps 23 |
-| Charles Tillman | CB | defensive_snaps 320, penalties 1, penalty_yards 15, special_teams_snaps 24 |
-| Kyle Fuller | CB | defensive_snaps 258, penalties 2, penalty_yards 12, special_teams_snaps 91 |
-| Tim Jennings | CB | defensive_snaps 300, special_teams_snaps 22 |
-| Cornelius Washington | DE | defensive_snaps 1 |
-| Jared Allen | DE | defensive_snaps 320, special_teams_snaps 24 |
-| Trevor Scott | DE | defensive_snaps 221, special_teams_snaps 24 |
-| Jay Ratliff | DT | defensive_snaps 320, special_teams_snaps 24 |
-| Will Sutton | DT | defensive_snaps 5 |
-| Tony Fiammetta | FB | REC LNG 9, offensive_snaps 84, special_teams_snaps 94 |
-| Brock Vereen | FS | defensive_snaps 3, special_teams_snaps 94 |
-| Danny McCray | FS | defensive_snaps 320, special_teams_snaps 24 |
-| Jermon Bushrod | G | offensive_snaps 343, special_teams_snaps 23 |
-| Kyle Long | G | offensive_snaps 343, special_teams_snaps 23 |
-| Matt Slauson | G | offensive_snaps 343, special_teams_snaps 23 |
-| Robbie Gould | K | special_teams_snaps 46 |
-| Jeremy Cain | LS | special_teams_snaps 46 |
-| D.J. Williams | MLB | defensive_snaps 200, special_teams_snaps 24 |
-| Jon Bostic | MLB | defensive_snaps 2, special_teams_snaps 94 |
-| Ego Ferguson | NT | defensive_snaps 2 |
-| Stephen Paea | NT | defensive_snaps 320, special_teams_snaps 24 |
-| David Bass | OLB | special_teams_snaps 20 |
-| Khaseem Greene | OLB | defensive_snaps 6, special_teams_snaps 70 |
-| Lamarr Houston | OLB | defensive_snaps 51, special_teams_snaps 6 |
-| Lance Briggs | OLB | defensive_snaps 237, penalties 1, special_teams_snaps 18 |
-| Shea McClellin | OLB | defensive_snaps 320, special_teams_snaps 24 |
-| Willie Young | OLB | special_teams_snaps 94 |
-| Pat O'Donnell | P | special_teams_snaps 46 |
-| Jay Cutler | QB | RUSH LNG 9, offensive_snaps 343, penalties 2, penalty_yards 10 |
-| Ka'Deem Carey | RB | offensive_snaps 5, special_teams_snaps 13 |
-| Matt Forte | RB | REC LNG 35, offensive_snaps 343 |
-| Senorise Perry | RB | REC LNG 16, offensive_snaps 30, special_teams_snaps 23 |
-| Ryan Mundy | SS | defensive_snaps 320, penalties 1, penalty_yards 15, special_teams_snaps 24 |
-| Sherrick McManis | SS | defensive_snaps 20, special_teams_snaps 94 |
-| Jordan Mills | T | offensive_snaps 343, special_teams_snaps 23 |
-| Dante Rosario | TE | offensive_snaps 19, special_teams_snaps 61 |
-| Martellus Bennett | TE | offensive_snaps 343, special_teams_snaps 23 |
-| Matthew Mulligan | TE | offensive_snaps 82, special_teams_snaps 97 |
-| Alshon Jeffery | WR | offensive_snaps 343 |
-| Brandon Marshall (CHI) | WR | RUSH LNG 5, offensive_snaps 327 |
-| Chris Williams (CHI) | WR | special_teams_snaps 5 |
-| Josh Morgan | WR | offensive_snaps 9, special_teams_snaps 90 |
-| Micheal Spurlock | WR | offensive_snaps 1 |
-| Santonio Holmes | WR | offensive_snaps 161, penalties 1, penalty_yards 5, special_teams_snaps 25 |
+| Brian De La Puente | C | ST SNAPS 23 |
+| Roberto Garza | C | OFF SNAPS 343, ST SNAPS 23 |
+| Charles Tillman | CB | DEF SNAPS 320, PEN 1, PEN YDS 15, ST SNAPS 24 |
+| Kyle Fuller | CB | DEF SNAPS 258, PEN 2, PEN YDS 12, ST SNAPS 91 |
+| Tim Jennings | CB | DEF SNAPS 300, ST SNAPS 22 |
+| Cornelius Washington | DE | DEF SNAPS 1 |
+| Jared Allen | DE | DEF SNAPS 320, ST SNAPS 24 |
+| Trevor Scott | DE | DEF SNAPS 221, ST SNAPS 24 |
+| Jay Ratliff | DT | DEF SNAPS 320, ST SNAPS 24 |
+| Will Sutton | DT | DEF SNAPS 5 |
+| Tony Fiammetta | FB | REC LNG 9, OFF SNAPS 84, ST SNAPS 94 |
+| Brock Vereen | FS | DEF SNAPS 3, ST SNAPS 94 |
+| Danny McCray | FS | DEF SNAPS 320, ST SNAPS 24 |
+| Jermon Bushrod | G | OFF SNAPS 343, ST SNAPS 23 |
+| Kyle Long | G | OFF SNAPS 343, ST SNAPS 23 |
+| Matt Slauson | G | OFF SNAPS 343, ST SNAPS 23 |
+| Robbie Gould | K | ST SNAPS 46 |
+| Jeremy Cain | LS | ST SNAPS 46 |
+| D.J. Williams | MLB | DEF SNAPS 200, ST SNAPS 24 |
+| Jon Bostic | MLB | DEF SNAPS 2, ST SNAPS 94 |
+| Ego Ferguson | NT | DEF SNAPS 2 |
+| Stephen Paea | NT | DEF SNAPS 320, ST SNAPS 24 |
+| David Bass | OLB | ST SNAPS 20 |
+| Khaseem Greene | OLB | DEF SNAPS 6, ST SNAPS 70 |
+| Lamarr Houston | OLB | DEF SNAPS 51, ST SNAPS 6 |
+| Lance Briggs | OLB | DEF SNAPS 237, PEN 1, ST SNAPS 18 |
+| Shea McClellin | OLB | DEF SNAPS 320, ST SNAPS 24 |
+| Willie Young | OLB | ST SNAPS 94 |
+| Pat O'Donnell | P | ST SNAPS 46 |
+| Jay Cutler | QB | RUSH LNG 9, OFF SNAPS 343, PEN 2, PEN YDS 10 |
+| Ka'Deem Carey | RB | OFF SNAPS 5, ST SNAPS 13 |
+| Matt Forte | RB | REC LNG 35, OFF SNAPS 343 |
+| Senorise Perry | RB | REC LNG 16, OFF SNAPS 30, ST SNAPS 23 |
+| Ryan Mundy | SS | DEF SNAPS 320, PEN 1, PEN YDS 15, ST SNAPS 24 |
+| Sherrick McManis | SS | DEF SNAPS 20, ST SNAPS 94 |
+| Jordan Mills | T | OFF SNAPS 343, ST SNAPS 23 |
+| Dante Rosario | TE | OFF SNAPS 19, ST SNAPS 61 |
+| Martellus Bennett | TE | OFF SNAPS 343, ST SNAPS 23 |
+| Matthew Mulligan | TE | OFF SNAPS 82, ST SNAPS 97 |
+| Alshon Jeffery | WR | OFF SNAPS 343 |
+| Brandon Marshall (CHI) | WR | RUSH LNG 5, OFF SNAPS 327 |
+| Chris Williams (CHI) | WR | ST SNAPS 5 |
+| Josh Morgan | WR | OFF SNAPS 9, ST SNAPS 90 |
+| Micheal Spurlock | WR | OFF SNAPS 1 |
+| Santonio Holmes | WR | OFF SNAPS 161, PEN 1, PEN YDS 5, ST SNAPS 25 |
 
 ## Cincinnati Bengals
 
@@ -1221,50 +1220,50 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Russell Bodine | C | offensive_snaps 285, special_teams_snaps 18 |
-| Adam Jones | CB | defensive_snaps 214, special_teams_snaps 71 |
-| Dre Kirkpatrick | CB | defensive_snaps 2, special_teams_snaps 77 |
-| Leon Hall | CB | defensive_snaps 220, special_teams_snaps 21 |
-| Terence Newman | CB | defensive_snaps 260, special_teams_snaps 23 |
-| Robert Geathers | DE | defensive_snaps 179, special_teams_snaps 23 |
-| Wallace Gilberry | DE | defensive_snaps 260, special_teams_snaps 23 |
-| Geno Atkins | DT | defensive_snaps 260, special_teams_snaps 23 |
-| Margus Hunt | DT | defensive_snaps 1 |
-| Reggie Nelson | FS | defensive_snaps 260, special_teams_snaps 23 |
-| Taylor Mays | FS | defensive_snaps 34, special_teams_snaps 77 |
-| Clint Boling | G | offensive_snaps 285, special_teams_snaps 18 |
-| Kevin Zeitler | G | offensive_snaps 285, special_teams_snaps 18 |
-| Mike Nugent | K | special_teams_snaps 39 |
-| Clark Harris | LS | special_teams_snaps 35 |
-| Marquis Flowers | MLB | special_teams_snaps 58 |
-| Rey Maualuga | MLB | defensive_snaps 234, special_teams_snaps 23 |
-| Vincent Rey | MLB | special_teams_snaps 77 |
-| Vontaze Burfict | MLB | INT YDS 2, defensive_snaps 260, special_teams_snaps 23 |
-| Brandon Thompson | NT | defensive_snaps 7 |
-| Domata Peko | NT | defensive_snaps 260, special_teams_snaps 23 |
-| Carlos Dunlap | OLB | defensive_snaps 16 |
-| Emmanuel Lamur | OLB | defensive_snaps 142, special_teams_snaps 23 |
-| Jayson DiManche | OLB | defensive_snaps 3, special_teams_snaps 74 |
-| Sean Porter | OLB | special_teams_snaps 19 |
-| Kevin Huber | P | special_teams_snaps 35 |
-| Andy Dalton | QB | RUSH LNG 9, offensive_snaps 285 |
-| Cedric Peerman | RB | REC LNG 3, offensive_snaps 3, special_teams_snaps 6 |
-| Giovani Bernard | RB | REC LNG 13, offensive_snaps 285 |
-| Jeremy Hill | RB | REC LNG 16, offensive_snaps 73, special_teams_snaps 77 |
-| George Iloka | SS | defensive_snaps 260, special_teams_snaps 23 |
-| Shawn Williams | SS | special_teams_snaps 12 |
-| Andre Smith | T | offensive_snaps 285, special_teams_snaps 18 |
-| Andrew Whitworth | T | offensive_snaps 285, special_teams_snaps 18 |
-| Marshall Newhouse | T | special_teams_snaps 18 |
-| Alex Smith (CIN) | TE | offensive_snaps 1, special_teams_snaps 53 |
-| Jermaine Gresham | TE | offensive_snaps 285, special_teams_snaps 18 |
-| Ryan Hewitt | TE | offensive_snaps 1, special_teams_snaps 1 |
-| Tyler Eifert | TE | offensive_snaps 83, special_teams_snaps 95 |
-| A.J. Green | WR | offensive_snaps 285, penalties 1, penalty_yards 10 |
-| Brandon Tate | WR | offensive_snaps 5, special_teams_snaps 39 |
-| Dane Sanzenbacher | WR | RUSH LNG 4, offensive_snaps 126 |
-| James Wright | WR | special_teams_snaps 57 |
-| Mohamed Sanu | WR | offensive_snaps 285 |
+| Russell Bodine | C | OFF SNAPS 285, ST SNAPS 18 |
+| Adam Jones | CB | DEF SNAPS 214, ST SNAPS 71 |
+| Dre Kirkpatrick | CB | DEF SNAPS 2, ST SNAPS 77 |
+| Leon Hall | CB | DEF SNAPS 220, ST SNAPS 21 |
+| Terence Newman | CB | DEF SNAPS 260, ST SNAPS 23 |
+| Robert Geathers | DE | DEF SNAPS 179, ST SNAPS 23 |
+| Wallace Gilberry | DE | DEF SNAPS 260, ST SNAPS 23 |
+| Geno Atkins | DT | DEF SNAPS 260, ST SNAPS 23 |
+| Margus Hunt | DT | DEF SNAPS 1 |
+| Reggie Nelson | FS | DEF SNAPS 260, ST SNAPS 23 |
+| Taylor Mays | FS | DEF SNAPS 34, ST SNAPS 77 |
+| Clint Boling | G | OFF SNAPS 285, ST SNAPS 18 |
+| Kevin Zeitler | G | OFF SNAPS 285, ST SNAPS 18 |
+| Mike Nugent | K | ST SNAPS 39 |
+| Clark Harris | LS | ST SNAPS 35 |
+| Marquis Flowers | MLB | ST SNAPS 58 |
+| Rey Maualuga | MLB | DEF SNAPS 234, ST SNAPS 23 |
+| Vincent Rey | MLB | ST SNAPS 77 |
+| Vontaze Burfict | MLB | INT YDS 2, DEF SNAPS 260, ST SNAPS 23 |
+| Brandon Thompson | NT | DEF SNAPS 7 |
+| Domata Peko | NT | DEF SNAPS 260, ST SNAPS 23 |
+| Carlos Dunlap | OLB | DEF SNAPS 16 |
+| Emmanuel Lamur | OLB | DEF SNAPS 142, ST SNAPS 23 |
+| Jayson DiManche | OLB | DEF SNAPS 3, ST SNAPS 74 |
+| Sean Porter | OLB | ST SNAPS 19 |
+| Kevin Huber | P | ST SNAPS 35 |
+| Andy Dalton | QB | RUSH LNG 9, OFF SNAPS 285 |
+| Cedric Peerman | RB | REC LNG 3, OFF SNAPS 3, ST SNAPS 6 |
+| Giovani Bernard | RB | REC LNG 13, OFF SNAPS 285 |
+| Jeremy Hill | RB | REC LNG 16, OFF SNAPS 73, ST SNAPS 77 |
+| George Iloka | SS | DEF SNAPS 260, ST SNAPS 23 |
+| Shawn Williams | SS | ST SNAPS 12 |
+| Andre Smith | T | OFF SNAPS 285, ST SNAPS 18 |
+| Andrew Whitworth | T | OFF SNAPS 285, ST SNAPS 18 |
+| Marshall Newhouse | T | ST SNAPS 18 |
+| Alex Smith (CIN) | TE | OFF SNAPS 1, ST SNAPS 53 |
+| Jermaine Gresham | TE | OFF SNAPS 285, ST SNAPS 18 |
+| Ryan Hewitt | TE | OFF SNAPS 1, ST SNAPS 1 |
+| Tyler Eifert | TE | OFF SNAPS 83, ST SNAPS 95 |
+| A.J. Green | WR | OFF SNAPS 285, PEN 1, PEN YDS 10 |
+| Brandon Tate | WR | OFF SNAPS 5, ST SNAPS 39 |
+| Dane Sanzenbacher | WR | RUSH LNG 4, OFF SNAPS 126 |
+| James Wright | WR | ST SNAPS 57 |
+| Mohamed Sanu | WR | OFF SNAPS 285 |
 
 ## Cleveland Browns
 
@@ -1402,52 +1401,52 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Alex Mack | C | offensive_snaps 288, special_teams_snaps 25 |
-| Buster Skrine | CB | defensive_snaps 241, special_teams_snaps 16 |
-| Joe Haden | CB | defensive_snaps 241, special_teams_snaps 16 |
-| Justin Gilbert | CB | defensive_snaps 191, penalties 1, penalty_yards 15, special_teams_snaps 92 |
-| K'Waun Williams | CB | special_teams_snaps 37 |
-| Pierre Desir | CB | defensive_snaps 6, special_teams_snaps 92 |
-| Armonty Bryant | DE | defensive_snaps 241, special_teams_snaps 16 |
-| Billy Winn | DE | defensive_snaps 3 |
-| Phillip Taylor | DE | defensive_snaps 241, special_teams_snaps 16 |
-| John Hughes | DT | defensive_snaps 4 |
-| Ray Agnew | FB | REC LNG 19, offensive_snaps 71, special_teams_snaps 92 |
-| Tashaun Gipson | FS | defensive_snaps 241, special_teams_snaps 16 |
-| John Greco | G | offensive_snaps 288, special_teams_snaps 25 |
-| Paul McQuistan | G | special_teams_snaps 17 |
-| Ryan Seymour | G | offensive_snaps 221, special_teams_snaps 20 |
-| Craig Robertson | ILB | INT YDS 14, defensive_snaps 201, special_teams_snaps 13 |
-| Karlos Dansby | ILB | defensive_snaps 140, special_teams_snaps 16 |
-| Tank Carder | ILB | defensive_snaps 1, special_teams_snaps 92 |
-| Billy Cundiff | K | special_teams_snaps 52 |
-| Christian Yount | LS | special_teams_snaps 44 |
-| Ahtyba Rubin | NT | defensive_snaps 241, penalties 1, penalty_yards 15, special_teams_snaps 16 |
-| Ishmaa'ily Kitchen | NT | defensive_snaps 167, special_teams_snaps 16 |
-| Barkevious Mingo | OLB | defensive_snaps 241, special_teams_snaps 16 |
-| Christian Kirksey | OLB | defensive_snaps 2, special_teams_snaps 75 |
-| Eric Martin | OLB | defensive_snaps 4, special_teams_snaps 80 |
-| Jabaal Sheard | OLB | special_teams_snaps 29 |
-| Paul Kruger | OLB | defensive_snaps 24, special_teams_snaps 3 |
-| Spencer Lanning | P | special_teams_snaps 44 |
-| Brian Hoyer | QB | RUSH LNG 19, offensive_snaps 288, penalties 2, penalty_yards 19 |
-| Ben Tate | RB | REC LNG 18, offensive_snaps 288 |
-| Glenn Winston | RB | REC LNG 8, offensive_snaps 2 |
-| Isaiah Crowell | RB | REC LNG 19, offensive_snaps 29, special_teams_snaps 69 |
-| Donte Whitner | SS | defensive_snaps 241, special_teams_snaps 16 |
-| Jim Leonhard | SS | special_teams_snaps 92 |
-| Joe Thomas | T | offensive_snaps 288, special_teams_snaps 25 |
-| Mitchell Schwartz | T | offensive_snaps 288, special_teams_snaps 25 |
-| Vinston Painter | T | offensive_snaps 67, special_teams_snaps 13 |
-| Gary Barnidge | TE | offensive_snaps 85, penalties 1, penalty_yards 5, special_teams_snaps 117 |
-| Jim Dray | TE | offensive_snaps 1 |
-| Jordan Cameron | TE | offensive_snaps 288, special_teams_snaps 25 |
-| Josh Gordon | WR | offensive_snaps 30 |
-| Laron Byrd | WR | offensive_snaps 90, special_teams_snaps 7 |
-| Marlon Moore | WR | offensive_snaps 1, special_teams_snaps 26 |
-| Marqise Lee | WR | RUSH LNG 6, offensive_snaps 288 |
-| Miles Austin | WR | offensive_snaps 19 |
-| Travis Benjamin | WR | RUSH LNG 4, offensive_snaps 277, special_teams_snaps 46 |
+| Alex Mack | C | OFF SNAPS 288, ST SNAPS 25 |
+| Buster Skrine | CB | DEF SNAPS 241, ST SNAPS 16 |
+| Joe Haden | CB | DEF SNAPS 241, ST SNAPS 16 |
+| Justin Gilbert | CB | DEF SNAPS 191, PEN 1, PEN YDS 15, ST SNAPS 92 |
+| K'Waun Williams | CB | ST SNAPS 37 |
+| Pierre Desir | CB | DEF SNAPS 6, ST SNAPS 92 |
+| Armonty Bryant | DE | DEF SNAPS 241, ST SNAPS 16 |
+| Billy Winn | DE | DEF SNAPS 3 |
+| Phillip Taylor | DE | DEF SNAPS 241, ST SNAPS 16 |
+| John Hughes | DT | DEF SNAPS 4 |
+| Ray Agnew | FB | REC LNG 19, OFF SNAPS 71, ST SNAPS 92 |
+| Tashaun Gipson | FS | DEF SNAPS 241, ST SNAPS 16 |
+| John Greco | G | OFF SNAPS 288, ST SNAPS 25 |
+| Paul McQuistan | G | ST SNAPS 17 |
+| Ryan Seymour | G | OFF SNAPS 221, ST SNAPS 20 |
+| Craig Robertson | ILB | INT YDS 14, DEF SNAPS 201, ST SNAPS 13 |
+| Karlos Dansby | ILB | DEF SNAPS 140, ST SNAPS 16 |
+| Tank Carder | ILB | DEF SNAPS 1, ST SNAPS 92 |
+| Billy Cundiff | K | ST SNAPS 52 |
+| Christian Yount | LS | ST SNAPS 44 |
+| Ahtyba Rubin | NT | DEF SNAPS 241, PEN 1, PEN YDS 15, ST SNAPS 16 |
+| Ishmaa'ily Kitchen | NT | DEF SNAPS 167, ST SNAPS 16 |
+| Barkevious Mingo | OLB | DEF SNAPS 241, ST SNAPS 16 |
+| Christian Kirksey | OLB | DEF SNAPS 2, ST SNAPS 75 |
+| Eric Martin | OLB | DEF SNAPS 4, ST SNAPS 80 |
+| Jabaal Sheard | OLB | ST SNAPS 29 |
+| Paul Kruger | OLB | DEF SNAPS 24, ST SNAPS 3 |
+| Spencer Lanning | P | ST SNAPS 44 |
+| Brian Hoyer | QB | RUSH LNG 19, OFF SNAPS 288, PEN 2, PEN YDS 19 |
+| Ben Tate | RB | REC LNG 18, OFF SNAPS 288 |
+| Glenn Winston | RB | REC LNG 8, OFF SNAPS 2 |
+| Isaiah Crowell | RB | REC LNG 19, OFF SNAPS 29, ST SNAPS 69 |
+| Donte Whitner | SS | DEF SNAPS 241, ST SNAPS 16 |
+| Jim Leonhard | SS | ST SNAPS 92 |
+| Joe Thomas | T | OFF SNAPS 288, ST SNAPS 25 |
+| Mitchell Schwartz | T | OFF SNAPS 288, ST SNAPS 25 |
+| Vinston Painter | T | OFF SNAPS 67, ST SNAPS 13 |
+| Gary Barnidge | TE | OFF SNAPS 85, PEN 1, PEN YDS 5, ST SNAPS 117 |
+| Jim Dray | TE | OFF SNAPS 1 |
+| Jordan Cameron | TE | OFF SNAPS 288, ST SNAPS 25 |
+| Josh Gordon | WR | OFF SNAPS 30 |
+| Laron Byrd | WR | OFF SNAPS 90, ST SNAPS 7 |
+| Marlon Moore | WR | OFF SNAPS 1, ST SNAPS 26 |
+| Marqise Lee | WR | RUSH LNG 6, OFF SNAPS 288 |
+| Miles Austin | WR | OFF SNAPS 19 |
+| Travis Benjamin | WR | RUSH LNG 4, OFF SNAPS 277, ST SNAPS 46 |
 
 ## Dallas Cowboys
 
@@ -1580,51 +1579,51 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Travis Frederick | C | offensive_snaps 257, special_teams_snaps 17 |
-| Brandon Carr | CB | defensive_snaps 193, interception_return_touchdowns 1, special_teams_snaps 16 |
-| Morris Claiborne | CB | defensive_snaps 325, special_teams_snaps 23 |
-| Sterling Moore | CB | defensive_snaps 110, special_teams_snaps 94 |
-| Tyler Patmon | CB | defensive_snaps 285, special_teams_snaps 61 |
-| George Selvie | DE | defensive_snaps 325, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Jack Crawford | DE | defensive_snaps 1 |
-| Tyrone Crawford | DE | defensive_snaps 1 |
-| Davon Coleman | DT | defensive_snaps 225, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Henry Melton | DT | defensive_snaps 325, penalties 1, penalty_yards 13, special_teams_snaps 23 |
-| Nick Hayden | DT | defensive_snaps 325, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Terrell McClain | DT | defensive_snaps 7 |
-| Tyler Clutts | FB | REC LNG 38, offensive_snaps 77, special_teams_snaps 94 |
-| J.J. Wilcox | FS | defensive_snaps 270, special_teams_snaps 20 |
-| Jeff Heath | FS | defensive_snaps 1, special_teams_snaps 36 |
-| Mackenzy Bernadeau | G | special_teams_snaps 2 |
-| Ronald Leary | G | offensive_snaps 310, penalties 2, penalty_yards 11, special_teams_snaps 19 |
-| Zack Martin | G | offensive_snaps 310, special_teams_snaps 19 |
-| Bruce Carter | ILB | defensive_snaps 325, fumble_return_touchdowns 1, special_teams_snaps 23 |
-| Korey Toomer | ILB | INT YDS 18, defensive_snaps 4, special_teams_snaps 94 |
-| Dan Bailey | K | special_teams_snaps 42 |
-| L.P. Ladouceur | LS | special_teams_snaps 43 |
-| Anthony Hitchens | MLB | defensive_snaps 1, special_teams_snaps 94 |
-| Rolando McClain | MLB | defensive_snaps 162, special_teams_snaps 23 |
-| Cameron Lawrence | OLB | defensive_snaps 1, fumbles_recovered_own 1, special_teams_snaps 94 |
-| Justin Durant | OLB | defensive_snaps 325, special_teams_snaps 23 |
-| Kyle Wilber | OLB | defensive_snaps 8 |
-| Chris Jones (DAL) | P | special_teams_snaps 43 |
-| Tony Romo | QB | RUSH LNG 14, offensive_snaps 310, penalties 1, penalty_yards 5 |
-| DeMarco Murray | RB | REC LNG 35, offensive_snaps 310 |
-| Joseph Randle | RB | REC LNG 11, offensive_snaps 6, special_teams_snaps 2 |
-| Lance Dunbar | RB | REC LNG 24, offensive_snaps 35, special_teams_snaps 61 |
-| Barry Church | SS | defensive_snaps 325, special_teams_snaps 23 |
-| C.J. Spillman | SS | defensive_snaps 55, special_teams_snaps 76 |
-| Doug Free | T | offensive_snaps 310, special_teams_snaps 19 |
-| Jermey Parnell | T | offensive_snaps 53, special_teams_snaps 19 |
-| Tyron Smith | T | offensive_snaps 310, special_teams_snaps 19 |
-| Gavin Escobar | TE | offensive_snaps 80, penalties 1, penalty_yards 10, special_teams_snaps 102 |
-| James Hanna | TE | offensive_snaps 17, special_teams_snaps 21 |
-| Jason Witten | TE | offensive_snaps 310, special_teams_snaps 19 |
-| Cole Beasley | WR | RUSH LNG 11, offensive_snaps 120 |
-| Devin Street | WR | offensive_snaps 1, penalties 2, penalty_yards 9, special_teams_snaps 94 |
-| Dez Bryant | WR | offensive_snaps 310 |
-| Dwayne Harris | WR | fumbles_recovered_own 1, muffs 2, offensive_snaps 26, special_teams_snaps 47 |
-| Terrance Williams | WR | RUSH LNG 9, offensive_snaps 310 |
+| Travis Frederick | C | OFF SNAPS 257, ST SNAPS 17 |
+| Brandon Carr | CB | DEF SNAPS 193, INT TD 1, ST SNAPS 16 |
+| Morris Claiborne | CB | DEF SNAPS 325, ST SNAPS 23 |
+| Sterling Moore | CB | DEF SNAPS 110, ST SNAPS 94 |
+| Tyler Patmon | CB | DEF SNAPS 285, ST SNAPS 61 |
+| George Selvie | DE | DEF SNAPS 325, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Jack Crawford | DE | DEF SNAPS 1 |
+| Tyrone Crawford | DE | DEF SNAPS 1 |
+| Davon Coleman | DT | DEF SNAPS 225, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Henry Melton | DT | DEF SNAPS 325, PEN 1, PEN YDS 13, ST SNAPS 23 |
+| Nick Hayden | DT | DEF SNAPS 325, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Terrell McClain | DT | DEF SNAPS 7 |
+| Tyler Clutts | FB | REC LNG 38, OFF SNAPS 77, ST SNAPS 94 |
+| J.J. Wilcox | FS | DEF SNAPS 270, ST SNAPS 20 |
+| Jeff Heath | FS | DEF SNAPS 1, ST SNAPS 36 |
+| Mackenzy Bernadeau | G | ST SNAPS 2 |
+| Ronald Leary | G | OFF SNAPS 310, PEN 2, PEN YDS 11, ST SNAPS 19 |
+| Zack Martin | G | OFF SNAPS 310, ST SNAPS 19 |
+| Bruce Carter | ILB | DEF SNAPS 325, FUM TD 1, ST SNAPS 23 |
+| Korey Toomer | ILB | INT YDS 18, DEF SNAPS 4, ST SNAPS 94 |
+| Dan Bailey | K | ST SNAPS 42 |
+| L.P. Ladouceur | LS | ST SNAPS 43 |
+| Anthony Hitchens | MLB | DEF SNAPS 1, ST SNAPS 94 |
+| Rolando McClain | MLB | DEF SNAPS 162, ST SNAPS 23 |
+| Cameron Lawrence | OLB | DEF SNAPS 1, OWN FUM REC 1, ST SNAPS 94 |
+| Justin Durant | OLB | DEF SNAPS 325, ST SNAPS 23 |
+| Kyle Wilber | OLB | DEF SNAPS 8 |
+| Chris Jones (DAL) | P | ST SNAPS 43 |
+| Tony Romo | QB | RUSH LNG 14, OFF SNAPS 310, PEN 1, PEN YDS 5 |
+| DeMarco Murray | RB | REC LNG 35, OFF SNAPS 310 |
+| Joseph Randle | RB | REC LNG 11, OFF SNAPS 6, ST SNAPS 2 |
+| Lance Dunbar | RB | REC LNG 24, OFF SNAPS 35, ST SNAPS 61 |
+| Barry Church | SS | DEF SNAPS 325, ST SNAPS 23 |
+| C.J. Spillman | SS | DEF SNAPS 55, ST SNAPS 76 |
+| Doug Free | T | OFF SNAPS 310, ST SNAPS 19 |
+| Jermey Parnell | T | OFF SNAPS 53, ST SNAPS 19 |
+| Tyron Smith | T | OFF SNAPS 310, ST SNAPS 19 |
+| Gavin Escobar | TE | OFF SNAPS 80, PEN 1, PEN YDS 10, ST SNAPS 102 |
+| James Hanna | TE | OFF SNAPS 17, ST SNAPS 21 |
+| Jason Witten | TE | OFF SNAPS 310, ST SNAPS 19 |
+| Cole Beasley | WR | RUSH LNG 11, OFF SNAPS 120 |
+| Devin Street | WR | OFF SNAPS 1, PEN 2, PEN YDS 9, ST SNAPS 94 |
+| Dez Bryant | WR | OFF SNAPS 310 |
+| Dwayne Harris | WR | OWN FUM REC 1, MUFFS 2, OFF SNAPS 26, ST SNAPS 47 |
+| Terrance Williams | WR | RUSH LNG 9, OFF SNAPS 310 |
 
 ## Denver Broncos
 
@@ -1758,51 +1757,51 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Manuel Ramirez | C | offensive_snaps 231, penalties 1, penalty_yards 5, special_teams_snaps 20 |
-| Will Montgomery | C | special_teams_snaps 4 |
-| Bradley Roby | CB | defensive_snaps 281, penalties 1, penalty_yards 15, special_teams_snaps 18 |
-| Chris Harris | CB | defensive_snaps 281, special_teams_snaps 18 |
-| Kayvon Webster | CB | defensive_snaps 57, special_teams_snaps 77 |
-| DeMarcus Ware | DE | defensive_snaps 281, penalties 1, penalty_yards 15, special_teams_snaps 18 |
-| Derek Wolfe | DE | defensive_snaps 281, special_teams_snaps 18 |
-| Lerentee McCray | DE | defensive_snaps 6 |
-| Quanterus Smith | DE | defensive_snaps 1 |
-| Sylvester Williams | DT | defensive_snaps 281, special_teams_snaps 18 |
-| David Bruton | FS | defensive_snaps 170, special_teams_snaps 77 |
-| Omar Bolden | FS | special_teams_snaps 22 |
-| Rahim Moore | FS | defensive_snaps 281, special_teams_snaps 18 |
-| Louis Vasquez | G | fumbles_recovered_own 1, offensive_snaps 231, penalties 1, penalty_yards 5, special_teams_snaps 20 |
-| Orlando Franklin | G | offensive_snaps 231, special_teams_snaps 20 |
-| Brandon Marshall (DEN) | ILB | defensive_snaps 17, special_teams_snaps 11 |
-| Corey Nelson | ILB | defensive_snaps 2, special_teams_snaps 72 |
-| Danny Trevathan | ILB | defensive_snaps 118, special_teams_snaps 10 |
-| Brandon McManus | K | special_teams_snaps 43 |
-| Aaron Brewer | LS | special_teams_snaps 38 |
-| Lamin Barrow | MLB | special_teams_snaps 77 |
-| Nate Irving | MLB | defensive_snaps 172, penalties 1, penalty_yards 15, special_teams_snaps 13 |
-| Steven Johnson | MLB | defensive_snaps 122, special_teams_snaps 13 |
-| Marvin Austin | NT | defensive_snaps 4 |
-| Terrance Knighton | NT | defensive_snaps 196, special_teams_snaps 18 |
-| Von Miller | OLB | defensive_snaps 281, special_teams_snaps 18 |
-| Britton Colquitt | P | special_teams_snaps 38 |
-| Peyton Manning | QB | RUSH LNG 17, offensive_snaps 231 |
-| Juwan Thompson | RB | offensive_snaps 4, special_teams_snaps 18 |
-| Montee Ball | RB | REC LNG 25, offensive_snaps 231 |
-| Ronnie Hillman | RB | REC LNG 16, offensive_snaps 59, special_teams_snaps 77 |
-| Quinton Carter | SS | defensive_snaps 2, special_teams_snaps 77 |
-| T.J. Ward | SS | defensive_snaps 281, special_teams_snaps 18 |
-| Chris Clark | T | offensive_snaps 199, special_teams_snaps 16 |
-| Paul Cornick | T | offensive_snaps 32, special_teams_snaps 20 |
-| Ryan Clady | T | offensive_snaps 231, special_teams_snaps 20 |
-| Jacob Tamme | TE | offensive_snaps 1, special_teams_snaps 74 |
-| Julius Thomas | TE | offensive_snaps 231, special_teams_snaps 20 |
-| Virgil Green | TE | offensive_snaps 68, special_teams_snaps 97 |
-| Andre Caldwell | WR | offensive_snaps 102, special_teams_snaps 20 |
-| Cody Latimer | WR | offensive_snaps 7, special_teams_snaps 77 |
-| Demaryius Thomas | WR | offensive_snaps 231, penalties 1, penalty_yards 5 |
-| Emmanuel Sanders | WR | offensive_snaps 231 |
-| Isaiah Burse | WR | fumbles_recovered_own 1, muffs 1, offensive_snaps 1, punt_return_touchdowns 1, special_teams_snaps 16 |
-| Nathan Palmer | WR | offensive_snaps 1 |
+| Manuel Ramirez | C | OFF SNAPS 231, PEN 1, PEN YDS 5, ST SNAPS 20 |
+| Will Montgomery | C | ST SNAPS 4 |
+| Bradley Roby | CB | DEF SNAPS 281, PEN 1, PEN YDS 15, ST SNAPS 18 |
+| Chris Harris | CB | DEF SNAPS 281, ST SNAPS 18 |
+| Kayvon Webster | CB | DEF SNAPS 57, ST SNAPS 77 |
+| DeMarcus Ware | DE | DEF SNAPS 281, PEN 1, PEN YDS 15, ST SNAPS 18 |
+| Derek Wolfe | DE | DEF SNAPS 281, ST SNAPS 18 |
+| Lerentee McCray | DE | DEF SNAPS 6 |
+| Quanterus Smith | DE | DEF SNAPS 1 |
+| Sylvester Williams | DT | DEF SNAPS 281, ST SNAPS 18 |
+| David Bruton | FS | DEF SNAPS 170, ST SNAPS 77 |
+| Omar Bolden | FS | ST SNAPS 22 |
+| Rahim Moore | FS | DEF SNAPS 281, ST SNAPS 18 |
+| Louis Vasquez | G | OWN FUM REC 1, OFF SNAPS 231, PEN 1, PEN YDS 5, ST SNAPS 20 |
+| Orlando Franklin | G | OFF SNAPS 231, ST SNAPS 20 |
+| Brandon Marshall (DEN) | ILB | DEF SNAPS 17, ST SNAPS 11 |
+| Corey Nelson | ILB | DEF SNAPS 2, ST SNAPS 72 |
+| Danny Trevathan | ILB | DEF SNAPS 118, ST SNAPS 10 |
+| Brandon McManus | K | ST SNAPS 43 |
+| Aaron Brewer | LS | ST SNAPS 38 |
+| Lamin Barrow | MLB | ST SNAPS 77 |
+| Nate Irving | MLB | DEF SNAPS 172, PEN 1, PEN YDS 15, ST SNAPS 13 |
+| Steven Johnson | MLB | DEF SNAPS 122, ST SNAPS 13 |
+| Marvin Austin | NT | DEF SNAPS 4 |
+| Terrance Knighton | NT | DEF SNAPS 196, ST SNAPS 18 |
+| Von Miller | OLB | DEF SNAPS 281, ST SNAPS 18 |
+| Britton Colquitt | P | ST SNAPS 38 |
+| Peyton Manning | QB | RUSH LNG 17, OFF SNAPS 231 |
+| Juwan Thompson | RB | OFF SNAPS 4, ST SNAPS 18 |
+| Montee Ball | RB | REC LNG 25, OFF SNAPS 231 |
+| Ronnie Hillman | RB | REC LNG 16, OFF SNAPS 59, ST SNAPS 77 |
+| Quinton Carter | SS | DEF SNAPS 2, ST SNAPS 77 |
+| T.J. Ward | SS | DEF SNAPS 281, ST SNAPS 18 |
+| Chris Clark | T | OFF SNAPS 199, ST SNAPS 16 |
+| Paul Cornick | T | OFF SNAPS 32, ST SNAPS 20 |
+| Ryan Clady | T | OFF SNAPS 231, ST SNAPS 20 |
+| Jacob Tamme | TE | OFF SNAPS 1, ST SNAPS 74 |
+| Julius Thomas | TE | OFF SNAPS 231, ST SNAPS 20 |
+| Virgil Green | TE | OFF SNAPS 68, ST SNAPS 97 |
+| Andre Caldwell | WR | OFF SNAPS 102, ST SNAPS 20 |
+| Cody Latimer | WR | OFF SNAPS 7, ST SNAPS 77 |
+| Demaryius Thomas | WR | OFF SNAPS 231, PEN 1, PEN YDS 5 |
+| Emmanuel Sanders | WR | OFF SNAPS 231 |
+| Isaiah Burse | WR | OWN FUM REC 1, MUFFS 1, OFF SNAPS 1, PR TD 1, ST SNAPS 16 |
+| Nathan Palmer | WR | OFF SNAPS 1 |
 
 ## Detroit Lions
 
@@ -1946,55 +1945,55 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Dominic Raiola | C | offensive_snaps 334, special_teams_snaps 24 |
-| Travis Swanson | C | special_teams_snaps 24 |
-| Cassius Vaughn | CB | defensive_snaps 168, special_teams_snaps 74 |
-| Darius Slay | CB | defensive_snaps 299, special_teams_snaps 26 |
-| Dwight Bentley | CB | defensive_snaps 56, special_teams_snaps 22 |
-| Nevin Lawson | CB | special_teams_snaps 30 |
-| Rashean Mathis | CB | defensive_snaps 299, special_teams_snaps 26 |
-| Devin Taylor | DE | defensive_snaps 7 |
-| Ezekiel Ansah | DE | defensive_snaps 299, special_teams_snaps 26 |
-| Jason Jones | DE | defensive_snaps 299, penalties 1, penalty_yards 5, special_teams_snaps 26 |
-| Larry Webster | DE | defensive_snaps 1 |
-| Caraun Reid | DT | defensive_snaps 1 |
-| Ndamukong Suh | DT | defensive_snaps 299, special_teams_snaps 26 |
-| Nick Fairley | DT | defensive_snaps 207, special_teams_snaps 26 |
-| Jed Collins | FB | REC LNG 36, offensive_snaps 83, special_teams_snaps 103 |
-| Don Carey | FS | defensive_snaps 102, special_teams_snaps 45 |
-| Glover Quin | FS | defensive_snaps 299, special_teams_snaps 26 |
-| Larry Warford | G | offensive_snaps 334, special_teams_snaps 24 |
-| Rob Sims | G | offensive_snaps 334, special_teams_snaps 24 |
-| Josh Bynes | ILB | special_teams_snaps 21 |
-| Alex Henery | K | special_teams_snaps 12 |
-| Nate Freese | K | special_teams_snaps 37 |
-| Don Muhlbach | LS | special_teams_snaps 48 |
-| Stephen Tulloch | MLB | defensive_snaps 299, special_teams_snaps 26 |
-| Travis Lewis | MLB | defensive_snaps 11, special_teams_snaps 22 |
-| Ashlee Palmer | OLB | defensive_snaps 1, special_teams_snaps 103 |
-| DeAndre Levy | OLB | defensive_snaps 299, special_teams_snaps 26 |
-| Tahir Whitehead | OLB | defensive_snaps 149, special_teams_snaps 26 |
-| Sam Martin | P | special_teams_snaps 48 |
-| Matthew Stafford | QB | RUSH LNG 50, offensive_snaps 334, penalties 1, penalty_yards 10 |
-| George Winn | RB | offensive_snaps 2 |
-| Joique Bell | RB | REC LNG 29, offensive_snaps 266, special_teams_snaps 21 |
-| Reggie Bush | RB | REC LNG 7, offensive_snaps 74 |
-| Theo Riddick | RB | REC LNG 16, offensive_snaps 5, special_teams_snaps 21 |
-| Isa Abdul-Quddus | SS | defensive_snaps 93, special_teams_snaps 94 |
-| James Ihedigbo | SS | defensive_snaps 124, special_teams_snaps 12 |
-| Jerome Couplin | SS | defensive_snaps 3, special_teams_snaps 69 |
-| Corey Hilliard | T | fumbles_recovered_own 1, offensive_snaps 241, special_teams_snaps 19 |
-| LaAdrian Waddle | T | offensive_snaps 334, special_teams_snaps 24 |
-| Riley Reiff | T | offensive_snaps 93, special_teams_snaps 5 |
-| Brandon Pettigrew | TE | offensive_snaps 334, penalties 1, penalty_yards 10, special_teams_snaps 24 |
-| Eric Ebron | TE | offensive_snaps 1, special_teams_snaps 82 |
-| Joseph Fauria | TE | offensive_snaps 98, special_teams_snaps 127 |
-| Calvin Johnson | WR | RUSH LNG 9, offensive_snaps 334, penalties 1, penalty_yards 10 |
-| Corey Fuller | WR | offensive_snaps 32, special_teams_snaps 82 |
-| Golden Tate | WR | RUSH LNG 3, offensive_snaps 265 |
-| Jeremy Ross | WR | fumbles_recovered_own 1, muffs 1, offensive_snaps 72, special_teams_snaps 54 |
-| Kevin Ogletree | WR | RUSH LNG 4, offensive_snaps 119 |
-| Ryan Broyles | WR | offensive_snaps 3, penalties 1, penalty_yards 5, special_teams_snaps 103 |
+| Dominic Raiola | C | OFF SNAPS 334, ST SNAPS 24 |
+| Travis Swanson | C | ST SNAPS 24 |
+| Cassius Vaughn | CB | DEF SNAPS 168, ST SNAPS 74 |
+| Darius Slay | CB | DEF SNAPS 299, ST SNAPS 26 |
+| Dwight Bentley | CB | DEF SNAPS 56, ST SNAPS 22 |
+| Nevin Lawson | CB | ST SNAPS 30 |
+| Rashean Mathis | CB | DEF SNAPS 299, ST SNAPS 26 |
+| Devin Taylor | DE | DEF SNAPS 7 |
+| Ezekiel Ansah | DE | DEF SNAPS 299, ST SNAPS 26 |
+| Jason Jones | DE | DEF SNAPS 299, PEN 1, PEN YDS 5, ST SNAPS 26 |
+| Larry Webster | DE | DEF SNAPS 1 |
+| Caraun Reid | DT | DEF SNAPS 1 |
+| Ndamukong Suh | DT | DEF SNAPS 299, ST SNAPS 26 |
+| Nick Fairley | DT | DEF SNAPS 207, ST SNAPS 26 |
+| Jed Collins | FB | REC LNG 36, OFF SNAPS 83, ST SNAPS 103 |
+| Don Carey | FS | DEF SNAPS 102, ST SNAPS 45 |
+| Glover Quin | FS | DEF SNAPS 299, ST SNAPS 26 |
+| Larry Warford | G | OFF SNAPS 334, ST SNAPS 24 |
+| Rob Sims | G | OFF SNAPS 334, ST SNAPS 24 |
+| Josh Bynes | ILB | ST SNAPS 21 |
+| Alex Henery | K | ST SNAPS 12 |
+| Nate Freese | K | ST SNAPS 37 |
+| Don Muhlbach | LS | ST SNAPS 48 |
+| Stephen Tulloch | MLB | DEF SNAPS 299, ST SNAPS 26 |
+| Travis Lewis | MLB | DEF SNAPS 11, ST SNAPS 22 |
+| Ashlee Palmer | OLB | DEF SNAPS 1, ST SNAPS 103 |
+| DeAndre Levy | OLB | DEF SNAPS 299, ST SNAPS 26 |
+| Tahir Whitehead | OLB | DEF SNAPS 149, ST SNAPS 26 |
+| Sam Martin | P | ST SNAPS 48 |
+| Matthew Stafford | QB | RUSH LNG 50, OFF SNAPS 334, PEN 1, PEN YDS 10 |
+| George Winn | RB | OFF SNAPS 2 |
+| Joique Bell | RB | REC LNG 29, OFF SNAPS 266, ST SNAPS 21 |
+| Reggie Bush | RB | REC LNG 7, OFF SNAPS 74 |
+| Theo Riddick | RB | REC LNG 16, OFF SNAPS 5, ST SNAPS 21 |
+| Isa Abdul-Quddus | SS | DEF SNAPS 93, ST SNAPS 94 |
+| James Ihedigbo | SS | DEF SNAPS 124, ST SNAPS 12 |
+| Jerome Couplin | SS | DEF SNAPS 3, ST SNAPS 69 |
+| Corey Hilliard | T | OWN FUM REC 1, OFF SNAPS 241, ST SNAPS 19 |
+| LaAdrian Waddle | T | OFF SNAPS 334, ST SNAPS 24 |
+| Riley Reiff | T | OFF SNAPS 93, ST SNAPS 5 |
+| Brandon Pettigrew | TE | OFF SNAPS 334, PEN 1, PEN YDS 10, ST SNAPS 24 |
+| Eric Ebron | TE | OFF SNAPS 1, ST SNAPS 82 |
+| Joseph Fauria | TE | OFF SNAPS 98, ST SNAPS 127 |
+| Calvin Johnson | WR | RUSH LNG 9, OFF SNAPS 334, PEN 1, PEN YDS 10 |
+| Corey Fuller | WR | OFF SNAPS 32, ST SNAPS 82 |
+| Golden Tate | WR | RUSH LNG 3, OFF SNAPS 265 |
+| Jeremy Ross | WR | OWN FUM REC 1, MUFFS 1, OFF SNAPS 72, ST SNAPS 54 |
+| Kevin Ogletree | WR | RUSH LNG 4, OFF SNAPS 119 |
+| Ryan Broyles | WR | OFF SNAPS 3, PEN 1, PEN YDS 5, ST SNAPS 103 |
 
 ## Green Bay Packers
 
@@ -2133,51 +2132,51 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Garth Gerhart | C | special_teams_snaps 21 |
-| Casey Hayward | CB | defensive_snaps 52, special_teams_snaps 96 |
-| Davon House | CB | defensive_snaps 25, special_teams_snaps 62 |
-| Jarrett Bush | CB | defensive_snaps 1, special_teams_snaps 16 |
-| Sam Shields | CB | defensive_snaps 334, special_teams_snaps 15 |
-| Tramon Williams | CB | defensive_snaps 334, special_teams_snaps 15 |
-| Julius Peppers | DE | defensive_snaps 334, special_teams_snaps 15 |
-| Datone Jones | DT | defensive_snaps 334, special_teams_snaps 15 |
-| Mike Daniels | DT | defensive_snaps 334, special_teams_snaps 15 |
-| John Kuhn | FB | REC LNG 46, offensive_snaps 80, special_teams_snaps 104 |
-| Ha Ha Clinton-Dix | FS | defensive_snaps 212, special_teams_snaps 72 |
-| Micah Hyde | FS | defensive_snaps 334, special_teams_snaps 15 |
-| Josh Sitton | G | offensive_snaps 324, special_teams_snaps 24 |
-| Lane Taylor | G | special_teams_snaps 24 |
-| T.J. Lang | G | LONG SNAPS 43, fumbles_recovered_own 1, offensive_snaps 324, penalties 1, penalty_yards 5, special_teams_snaps 46 |
-| Carl Bradford | ILB | special_teams_snaps 17 |
-| Sam Barrington | ILB | defensive_snaps 1, special_teams_snaps 104 |
-| Mason Crosby | K | special_teams_snaps 50 |
-| Brett Goode | LS | special_teams_snaps 12 |
-| Brad Jones | MLB | defensive_snaps 142, special_teams_snaps 15 |
-| Jamari Lattimore | MLB | defensive_snaps 4, special_teams_snaps 87 |
-| Letroy Guion | NT | defensive_snaps 232, special_teams_snaps 15 |
-| Mike Pennel | NT | defensive_snaps 6 |
-| A.J. Hawk | OLB | defensive_snaps 334, special_teams_snaps 15 |
-| Clay Matthews | OLB | defensive_snaps 334, penalties 1, penalty_yards 15, special_teams_snaps 15 |
-| Mike Neal | OLB | defensive_snaps 1, special_teams_snaps 104 |
-| Nick Perry | OLB | defensive_snaps 31, penalties 1, penalty_yards 15 |
-| Tim Masthay | P | special_teams_snaps 55 |
-| Aaron Rodgers | QB | RUSH LNG 26, offensive_snaps 324 |
-| DuJuan Harris | RB | REC LNG 10, offensive_snaps 74, special_teams_snaps 19 |
-| Eddie Lacy | RB | REC LNG 54, offensive_snaps 221 |
-| James Starks | RB | REC LNG 26, offensive_snaps 56, special_teams_snaps 8 |
-| Morgan Burnett | SS | defensive_snaps 213, special_teams_snaps 8 |
-| Sean Richardson | SS | defensive_snaps 104, special_teams_snaps 87 |
-| Bryan Bulaga | T | offensive_snaps 324, penalties 2, penalty_yards 10, special_teams_snaps 24 |
-| David Bakhtiari | T | offensive_snaps 324, penalties 1, penalty_yards 10, special_teams_snaps 24 |
-| Derek Sherrod | T | offensive_snaps 324, special_teams_snaps 24 |
-| Andrew Quarless | TE | offensive_snaps 21, special_teams_snaps 45 |
-| Brandon Bostick | TE | offensive_snaps 74, special_teams_snaps 99 |
-| Richard Rodgers | TE | offensive_snaps 324, special_teams_snaps 24 |
-| Allen Robinson | WR | offensive_snaps 93, special_teams_snaps 43 |
-| Jarrett Boykin | WR | RUSH LNG 5, offensive_snaps 186 |
-| Jeff Janis | WR | offensive_snaps 3, special_teams_snaps 68 |
-| Jordy Nelson | WR | RUSH LNG 18, offensive_snaps 191 |
-| Randall Cobb | WR | RUSH LNG 9, offensive_snaps 324, special_teams_snaps 28 |
+| Garth Gerhart | C | ST SNAPS 21 |
+| Casey Hayward | CB | DEF SNAPS 52, ST SNAPS 96 |
+| Davon House | CB | DEF SNAPS 25, ST SNAPS 62 |
+| Jarrett Bush | CB | DEF SNAPS 1, ST SNAPS 16 |
+| Sam Shields | CB | DEF SNAPS 334, ST SNAPS 15 |
+| Tramon Williams | CB | DEF SNAPS 334, ST SNAPS 15 |
+| Julius Peppers | DE | DEF SNAPS 334, ST SNAPS 15 |
+| Datone Jones | DT | DEF SNAPS 334, ST SNAPS 15 |
+| Mike Daniels | DT | DEF SNAPS 334, ST SNAPS 15 |
+| John Kuhn | FB | REC LNG 46, OFF SNAPS 80, ST SNAPS 104 |
+| Ha Ha Clinton-Dix | FS | DEF SNAPS 212, ST SNAPS 72 |
+| Micah Hyde | FS | DEF SNAPS 334, ST SNAPS 15 |
+| Josh Sitton | G | OFF SNAPS 324, ST SNAPS 24 |
+| Lane Taylor | G | ST SNAPS 24 |
+| T.J. Lang | G | LONG SNAPS 43, OWN FUM REC 1, OFF SNAPS 324, PEN 1, PEN YDS 5, ST SNAPS 46 |
+| Carl Bradford | ILB | ST SNAPS 17 |
+| Sam Barrington | ILB | DEF SNAPS 1, ST SNAPS 104 |
+| Mason Crosby | K | ST SNAPS 50 |
+| Brett Goode | LS | ST SNAPS 12 |
+| Brad Jones | MLB | DEF SNAPS 142, ST SNAPS 15 |
+| Jamari Lattimore | MLB | DEF SNAPS 4, ST SNAPS 87 |
+| Letroy Guion | NT | DEF SNAPS 232, ST SNAPS 15 |
+| Mike Pennel | NT | DEF SNAPS 6 |
+| A.J. Hawk | OLB | DEF SNAPS 334, ST SNAPS 15 |
+| Clay Matthews | OLB | DEF SNAPS 334, PEN 1, PEN YDS 15, ST SNAPS 15 |
+| Mike Neal | OLB | DEF SNAPS 1, ST SNAPS 104 |
+| Nick Perry | OLB | DEF SNAPS 31, PEN 1, PEN YDS 15 |
+| Tim Masthay | P | ST SNAPS 55 |
+| Aaron Rodgers | QB | RUSH LNG 26, OFF SNAPS 324 |
+| DuJuan Harris | RB | REC LNG 10, OFF SNAPS 74, ST SNAPS 19 |
+| Eddie Lacy | RB | REC LNG 54, OFF SNAPS 221 |
+| James Starks | RB | REC LNG 26, OFF SNAPS 56, ST SNAPS 8 |
+| Morgan Burnett | SS | DEF SNAPS 213, ST SNAPS 8 |
+| Sean Richardson | SS | DEF SNAPS 104, ST SNAPS 87 |
+| Bryan Bulaga | T | OFF SNAPS 324, PEN 2, PEN YDS 10, ST SNAPS 24 |
+| David Bakhtiari | T | OFF SNAPS 324, PEN 1, PEN YDS 10, ST SNAPS 24 |
+| Derek Sherrod | T | OFF SNAPS 324, ST SNAPS 24 |
+| Andrew Quarless | TE | OFF SNAPS 21, ST SNAPS 45 |
+| Brandon Bostick | TE | OFF SNAPS 74, ST SNAPS 99 |
+| Richard Rodgers | TE | OFF SNAPS 324, ST SNAPS 24 |
+| Allen Robinson | WR | OFF SNAPS 93, ST SNAPS 43 |
+| Jarrett Boykin | WR | RUSH LNG 5, OFF SNAPS 186 |
+| Jeff Janis | WR | OFF SNAPS 3, ST SNAPS 68 |
+| Jordy Nelson | WR | RUSH LNG 18, OFF SNAPS 191 |
+| Randall Cobb | WR | RUSH LNG 9, OFF SNAPS 324, ST SNAPS 28 |
 
 ## Houston Texans
 
@@ -2312,48 +2311,48 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Ben Jones | C | offensive_snaps 323, special_teams_snaps 23 |
-| Chris Myers | C | offensive_snaps 323, penalties 2, penalty_yards 10, special_teams_snaps 23 |
-| Elbert Mack | CB | defensive_snaps 51, special_teams_snaps 103 |
-| Johnathan Joseph | CB | defensive_snaps 327, special_teams_snaps 27 |
-| J.J. Watt | DE | defensive_snaps 327, special_teams_snaps 27 |
-| Jared Crick | DE | INT YDS 44, defensive_snaps 327, penalties 1, penalty_yards 2, special_teams_snaps 27 |
-| Jeoffrey Pagan | DE | defensive_snaps 1 |
-| Tim Jamison | DE | defensive_snaps 7 |
-| Whitney Mercilus | DE | defensive_snaps 226, special_teams_snaps 27 |
-| Jay Prosch | FB | REC LNG 2, offensive_snaps 80, penalties 1, penalty_yards 9, special_teams_snaps 103 |
-| Danieal Manning | FS | defensive_snaps 10, special_teams_snaps 103 |
-| Kendrick Lewis | FS | defensive_snaps 327, special_teams_snaps 27 |
-| Brandon Brooks | G | offensive_snaps 323, special_teams_snaps 23 |
-| Akeem Dent | ILB | special_teams_snaps 23 |
-| Brian Cushing | ILB | defensive_snaps 327, special_teams_snaps 27 |
-| Jeff Tarpinian | ILB | defensive_snaps 3, special_teams_snaps 103 |
-| Justin Tuggle | ILB | special_teams_snaps 103 |
-| Mike Mohamed | ILB | INT YDS 20, defensive_snaps 327, special_teams_snaps 27 |
-| Randy Bullock | K | special_teams_snaps 50 |
-| Jonathan Weeks | LS | special_teams_snaps 47 |
-| Jerrell Powe | NT | defensive_snaps 327, penalties 1, penalty_yards 5, special_teams_snaps 27 |
-| Brooks Reed | OLB | defensive_snaps 163, special_teams_snaps 27 |
-| Jadeveon Clowney | OLB | defensive_snaps 9 |
-| Jason Ankrah | OLB | special_teams_snaps 80 |
-| Shane Lechler | P | special_teams_snaps 47 |
-| Ryan Fitzpatrick | QB | RUSH LNG 23, fumbles_recovered_own 1, offensive_snaps 323 |
-| Alfred Blue | RB | REC LNG 11, offensive_snaps 8, special_teams_snaps 23 |
-| Arian Foster | RB | REC LNG 41, offensive_snaps 323 |
-| Ronnie Brown | RB | offensive_snaps 20, special_teams_snaps 45 |
-| D.J. Swearinger | SS | defensive_snaps 327, special_teams_snaps 27 |
-| Kareem Jackson | SS | defensive_snaps 327, penalties 1, penalty_yards 12, special_teams_snaps 27 |
-| Shiloh Keo | SS | defensive_snaps 208, special_teams_snaps 80 |
-| Derek Newton | T | offensive_snaps 323, special_teams_snaps 23 |
-| Duane Brown | T | offensive_snaps 323, penalties 2, penalty_yards 15, special_teams_snaps 23 |
-| Jeff Adams | T | special_teams_snaps 23 |
-| C.J. Fiedorowicz | TE | offensive_snaps 96, special_teams_snaps 126 |
-| Garrett Graham | TE | offensive_snaps 323, special_teams_snaps 23 |
-| Ryan Griffin | TE | offensive_snaps 4, special_teams_snaps 11 |
-| Damaris Johnson | WR | offensive_snaps 143 |
-| DeAndre Hopkins | WR | RUSH LNG 10, offensive_snaps 323 |
-| DeVier Posey | WR | RUSH LNG 2, offensive_snaps 9, special_teams_snaps 103 |
-| Keshawn Martin | WR | RUSH LNG 4, offensive_snaps 323, special_teams_snaps 52 |
+| Ben Jones | C | OFF SNAPS 323, ST SNAPS 23 |
+| Chris Myers | C | OFF SNAPS 323, PEN 2, PEN YDS 10, ST SNAPS 23 |
+| Elbert Mack | CB | DEF SNAPS 51, ST SNAPS 103 |
+| Johnathan Joseph | CB | DEF SNAPS 327, ST SNAPS 27 |
+| J.J. Watt | DE | DEF SNAPS 327, ST SNAPS 27 |
+| Jared Crick | DE | INT YDS 44, DEF SNAPS 327, PEN 1, PEN YDS 2, ST SNAPS 27 |
+| Jeoffrey Pagan | DE | DEF SNAPS 1 |
+| Tim Jamison | DE | DEF SNAPS 7 |
+| Whitney Mercilus | DE | DEF SNAPS 226, ST SNAPS 27 |
+| Jay Prosch | FB | REC LNG 2, OFF SNAPS 80, PEN 1, PEN YDS 9, ST SNAPS 103 |
+| Danieal Manning | FS | DEF SNAPS 10, ST SNAPS 103 |
+| Kendrick Lewis | FS | DEF SNAPS 327, ST SNAPS 27 |
+| Brandon Brooks | G | OFF SNAPS 323, ST SNAPS 23 |
+| Akeem Dent | ILB | ST SNAPS 23 |
+| Brian Cushing | ILB | DEF SNAPS 327, ST SNAPS 27 |
+| Jeff Tarpinian | ILB | DEF SNAPS 3, ST SNAPS 103 |
+| Justin Tuggle | ILB | ST SNAPS 103 |
+| Mike Mohamed | ILB | INT YDS 20, DEF SNAPS 327, ST SNAPS 27 |
+| Randy Bullock | K | ST SNAPS 50 |
+| Jonathan Weeks | LS | ST SNAPS 47 |
+| Jerrell Powe | NT | DEF SNAPS 327, PEN 1, PEN YDS 5, ST SNAPS 27 |
+| Brooks Reed | OLB | DEF SNAPS 163, ST SNAPS 27 |
+| Jadeveon Clowney | OLB | DEF SNAPS 9 |
+| Jason Ankrah | OLB | ST SNAPS 80 |
+| Shane Lechler | P | ST SNAPS 47 |
+| Ryan Fitzpatrick | QB | RUSH LNG 23, OWN FUM REC 1, OFF SNAPS 323 |
+| Alfred Blue | RB | REC LNG 11, OFF SNAPS 8, ST SNAPS 23 |
+| Arian Foster | RB | REC LNG 41, OFF SNAPS 323 |
+| Ronnie Brown | RB | OFF SNAPS 20, ST SNAPS 45 |
+| D.J. Swearinger | SS | DEF SNAPS 327, ST SNAPS 27 |
+| Kareem Jackson | SS | DEF SNAPS 327, PEN 1, PEN YDS 12, ST SNAPS 27 |
+| Shiloh Keo | SS | DEF SNAPS 208, ST SNAPS 80 |
+| Derek Newton | T | OFF SNAPS 323, ST SNAPS 23 |
+| Duane Brown | T | OFF SNAPS 323, PEN 2, PEN YDS 15, ST SNAPS 23 |
+| Jeff Adams | T | ST SNAPS 23 |
+| C.J. Fiedorowicz | TE | OFF SNAPS 96, ST SNAPS 126 |
+| Garrett Graham | TE | OFF SNAPS 323, ST SNAPS 23 |
+| Ryan Griffin | TE | OFF SNAPS 4, ST SNAPS 11 |
+| Damaris Johnson | WR | OFF SNAPS 143 |
+| DeAndre Hopkins | WR | RUSH LNG 10, OFF SNAPS 323 |
+| DeVier Posey | WR | RUSH LNG 2, OFF SNAPS 9, ST SNAPS 103 |
+| Keshawn Martin | WR | RUSH LNG 4, OFF SNAPS 323, ST SNAPS 52 |
 
 ## Indianapolis Colts
 
@@ -2490,53 +2489,53 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Jonotthan Harrison | C | offensive_snaps 47, special_teams_snaps 11 |
-| Khaled Holmes | C | offensive_snaps 313, special_teams_snaps 22 |
-| Gregory Toler | CB | defensive_snaps 297, special_teams_snaps 27 |
-| Josh Gordy | CB | defensive_snaps 26, special_teams_snaps 98 |
-| Vontae Davis | CB | defensive_snaps 297, special_teams_snaps 27 |
-| Cam Johnson | DE | defensive_snaps 225, special_teams_snaps 27 |
-| Cory Redding | DE | defensive_snaps 293, special_teams_snaps 26 |
-| Arthur Jones | DT | defensive_snaps 233, special_teams_snaps 20 |
-| Zach Kerr | DT | defensive_snaps 52, special_teams_snaps 7 |
-| Mario Harvey | FB | REC LNG 22, offensive_snaps 88, special_teams_snaps 98 |
-| Darius Butler | FS | defensive_snaps 214, penalties 1, penalty_yards 5, special_teams_snaps 90 |
-| LaRon Landry | FS | defensive_snaps 297, special_teams_snaps 27 |
-| Sergio Brown | FS | defensive_snaps 1, special_teams_snaps 10 |
-| Hugh Thornton | G | offensive_snaps 360, penalties 1, penalty_yards 5, special_teams_snaps 24 |
-| Jack Mewhort | G | offensive_snaps 360, special_teams_snaps 24 |
-| Jerrell Freeman | ILB | defensive_snaps 297, special_teams_snaps 27 |
-| Josh McNary | ILB | defensive_snaps 2, special_teams_snaps 98 |
-| Adam Vinatieri | K | special_teams_snaps 50 |
-| Matt Overton | LS | special_teams_snaps 41 |
-| D'Qwell Jackson | MLB | defensive_snaps 297, special_teams_snaps 27 |
-| Henoc Muamba | MLB | defensive_snaps 3, special_teams_snaps 98 |
-| Josh Chapman | NT | defensive_snaps 297, special_teams_snaps 27 |
-| Montori Hughes | NT | defensive_snaps 5, special_teams_snaps 1 |
-| Bjoern Werner | OLB | defensive_snaps 147, special_teams_snaps 27 |
-| Erik Walden | OLB | defensive_snaps 7, special_teams_snaps 4 |
-| Jonathan Newsome | OLB | penalties 1, penalty_yards 10, special_teams_snaps 98 |
-| Pat McAfee | P | special_teams_snaps 41 |
-| Andrew Luck | QB | RUSH LNG 15, offensive_snaps 360 |
-| Ahmad Bradshaw | RB | REC LNG 19, offensive_snaps 126, special_teams_snaps 71 |
-| Dan Herron | RB | REC LNG 9, offensive_snaps 8, special_teams_snaps 31 |
-| Trent Richardson | RB | REC LNG 19, offensive_snaps 245 |
-| Zurlon Tipton | RB | offensive_snaps 2, special_teams_snaps 12 |
-| Colt Anderson | SS | defensive_snaps 1, special_teams_snaps 18 |
-| Mike Adams (IND) | SS | defensive_snaps 297, special_teams_snaps 27 |
-| Anthony Castonzo | T | offensive_snaps 360, penalties 1, penalty_yards 5, special_teams_snaps 24 |
-| Gosder Cherilus | T | offensive_snaps 360, special_teams_snaps 24 |
-| Joe Reitz | T | special_teams_snaps 13 |
-| Coby Fleener | TE | offensive_snaps 101, special_teams_snaps 86 |
-| Dwayne Allen | TE | offensive_snaps 288, special_teams_snaps 19 |
-| Jack Doyle | TE | offensive_snaps 67, special_teams_snaps 70 |
-| Cecil Shorts | WR | offensive_snaps 1, special_teams_snaps 27 |
-| Da'Rick Rogers | WR | RUSH LNG 6, offensive_snaps 3, special_teams_snaps 80 |
-| Donte Moncrief | WR | offensive_snaps 160 |
-| Griff Whalen | WR | muffs 1, offensive_snaps 1, special_teams_snaps 24 |
-| Justin Blackmon | WR | special_teams_snaps 8 |
-| Reggie Wayne | WR | RUSH LNG 7, offensive_snaps 360 |
-| T.Y. Hilton | WR | RUSH LNG 3, offensive_snaps 360, penalties 1, penalty_yards 5 |
+| Jonotthan Harrison | C | OFF SNAPS 47, ST SNAPS 11 |
+| Khaled Holmes | C | OFF SNAPS 313, ST SNAPS 22 |
+| Gregory Toler | CB | DEF SNAPS 297, ST SNAPS 27 |
+| Josh Gordy | CB | DEF SNAPS 26, ST SNAPS 98 |
+| Vontae Davis | CB | DEF SNAPS 297, ST SNAPS 27 |
+| Cam Johnson | DE | DEF SNAPS 225, ST SNAPS 27 |
+| Cory Redding | DE | DEF SNAPS 293, ST SNAPS 26 |
+| Arthur Jones | DT | DEF SNAPS 233, ST SNAPS 20 |
+| Zach Kerr | DT | DEF SNAPS 52, ST SNAPS 7 |
+| Mario Harvey | FB | REC LNG 22, OFF SNAPS 88, ST SNAPS 98 |
+| Darius Butler | FS | DEF SNAPS 214, PEN 1, PEN YDS 5, ST SNAPS 90 |
+| LaRon Landry | FS | DEF SNAPS 297, ST SNAPS 27 |
+| Sergio Brown | FS | DEF SNAPS 1, ST SNAPS 10 |
+| Hugh Thornton | G | OFF SNAPS 360, PEN 1, PEN YDS 5, ST SNAPS 24 |
+| Jack Mewhort | G | OFF SNAPS 360, ST SNAPS 24 |
+| Jerrell Freeman | ILB | DEF SNAPS 297, ST SNAPS 27 |
+| Josh McNary | ILB | DEF SNAPS 2, ST SNAPS 98 |
+| Adam Vinatieri | K | ST SNAPS 50 |
+| Matt Overton | LS | ST SNAPS 41 |
+| D'Qwell Jackson | MLB | DEF SNAPS 297, ST SNAPS 27 |
+| Henoc Muamba | MLB | DEF SNAPS 3, ST SNAPS 98 |
+| Josh Chapman | NT | DEF SNAPS 297, ST SNAPS 27 |
+| Montori Hughes | NT | DEF SNAPS 5, ST SNAPS 1 |
+| Bjoern Werner | OLB | DEF SNAPS 147, ST SNAPS 27 |
+| Erik Walden | OLB | DEF SNAPS 7, ST SNAPS 4 |
+| Jonathan Newsome | OLB | PEN 1, PEN YDS 10, ST SNAPS 98 |
+| Pat McAfee | P | ST SNAPS 41 |
+| Andrew Luck | QB | RUSH LNG 15, OFF SNAPS 360 |
+| Ahmad Bradshaw | RB | REC LNG 19, OFF SNAPS 126, ST SNAPS 71 |
+| Dan Herron | RB | REC LNG 9, OFF SNAPS 8, ST SNAPS 31 |
+| Trent Richardson | RB | REC LNG 19, OFF SNAPS 245 |
+| Zurlon Tipton | RB | OFF SNAPS 2, ST SNAPS 12 |
+| Colt Anderson | SS | DEF SNAPS 1, ST SNAPS 18 |
+| Mike Adams (IND) | SS | DEF SNAPS 297, ST SNAPS 27 |
+| Anthony Castonzo | T | OFF SNAPS 360, PEN 1, PEN YDS 5, ST SNAPS 24 |
+| Gosder Cherilus | T | OFF SNAPS 360, ST SNAPS 24 |
+| Joe Reitz | T | ST SNAPS 13 |
+| Coby Fleener | TE | OFF SNAPS 101, ST SNAPS 86 |
+| Dwayne Allen | TE | OFF SNAPS 288, ST SNAPS 19 |
+| Jack Doyle | TE | OFF SNAPS 67, ST SNAPS 70 |
+| Cecil Shorts | WR | OFF SNAPS 1, ST SNAPS 27 |
+| Da'Rick Rogers | WR | RUSH LNG 6, OFF SNAPS 3, ST SNAPS 80 |
+| Donte Moncrief | WR | OFF SNAPS 160 |
+| Griff Whalen | WR | MUFFS 1, OFF SNAPS 1, ST SNAPS 24 |
+| Justin Blackmon | WR | ST SNAPS 8 |
+| Reggie Wayne | WR | RUSH LNG 7, OFF SNAPS 360 |
+| T.Y. Hilton | WR | RUSH LNG 3, OFF SNAPS 360, PEN 1, PEN YDS 5 |
 
 ## Jacksonville Jaguars
 
@@ -2677,52 +2676,52 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Mike Brewster | C | offensive_snaps 332, special_teams_snaps 23 |
-| A.J. Bouye | CB | defensive_snaps 125, penalties 1, penalty_yards 15, special_teams_snaps 100 |
-| Alan Ball | CB | special_teams_snaps 27 |
-| Alterraun Verner | CB | defensive_snaps 274, special_teams_snaps 42 |
-| Aqib Talib | CB | defensive_snaps 329, special_teams_snaps 17 |
-| Jordan Poyer | CB | defensive_snaps 155, special_teams_snaps 57 |
-| Malcolm Butler | CB | defensive_snaps 13, special_teams_snaps 41 |
-| Mike Harris | CB | defensive_snaps 70, special_teams_snaps 4 |
-| Andre Branch | DE | defensive_snaps 239, special_teams_snaps 19 |
-| Daniel Te'o-Nesheim | DE | defensive_snaps 4 |
-| Jeremy Mincey | DE | defensive_snaps 345, special_teams_snaps 19 |
-| C.J. Mosley | DT | defensive_snaps 5 |
-| Roy Miller | DT | defensive_snaps 345, penalties 1, penalty_yards 15, special_teams_snaps 19 |
-| Sen'Derrick Marks | DT | defensive_snaps 345, special_teams_snaps 19 |
-| Montell Owens | FB | REC LNG 28, offensive_snaps 83, special_teams_snaps 103 |
-| Trai Turner | G | offensive_snaps 332, special_teams_snaps 23 |
-| Josh Scobee | K | special_teams_snaps 49 |
-| Christian Jones | LB | special_teams_snaps 103 |
-| Daryl Smith | LB | defensive_snaps 345, special_teams_snaps 19 |
-| Julian Stanford | LB | defensive_snaps 172, special_teams_snaps 19 |
-| Paul Posluszny | LB | INT YDS 21, defensive_snaps 345, special_teams_snaps 19 |
-| Sio Moore | LB | defensive_snaps 13 |
-| Telvin Smith | LB | defensive_snaps 2, special_teams_snaps 103 |
-| Todd Davis | LB | special_teams_snaps 18 |
-| Casey Kreiter | LS | special_teams_snaps 48 |
-| Cornelius Lucas | OT | special_teams_snaps 23 |
-| Eugene Monroe | OT | offensive_snaps 332, special_teams_snaps 23 |
-| Joel Bitonio | OT | offensive_snaps 332, special_teams_snaps 23 |
-| Lane Johnson | OT | offensive_snaps 332, special_teams_snaps 23 |
-| Bryan Anger | P | special_teams_snaps 48 |
-| Kirk Cousins | QB | RUSH LNG 15, offensive_snaps 332, penalties 2, penalty_yards 19 |
-| C.J. Anderson | RB | REC LNG 26, offensive_snaps 32, special_teams_snaps 85 |
-| Jonathan Grimes | RB | REC LNG 20, offensive_snaps 6, special_teams_snaps 1 |
-| Maurice Jones-Drew | RB | REC LNG 32, offensive_snaps 332 |
-| Adrian Phillips | S | defensive_snaps 1, special_teams_snaps 31 |
-| Bacarri Rambo | S | defensive_snaps 345, special_teams_snaps 19 |
-| Brynden Trawick | S | defensive_snaps 265, special_teams_snaps 30 |
-| Chris Prosinski | S | defensive_snaps 1, special_teams_snaps 59 |
-| Dwight Lowery | S | defensive_snaps 80, special_teams_snaps 4 |
-| Marcedes Lewis | TE | offensive_snaps 332, special_teams_snaps 23 |
-| Marcel Jensen | TE | offensive_snaps 1, special_teams_snaps 3 |
-| Travis Kelce | TE | offensive_snaps 99, penalties 1, penalty_yards 10, special_teams_snaps 126 |
-| Adam Thielen | WR | RUSH LNG 1, offensive_snaps 332 |
-| Allen Hurns | WR | offensive_snaps 5, special_teams_snaps 103 |
-| Andrew Hawkins | WR | fumbles_recovered_own 1, offensive_snaps 147, special_teams_snaps 52 |
-| Davante Adams | WR | RUSH LNG 2, offensive_snaps 332 |
+| Mike Brewster | C | OFF SNAPS 332, ST SNAPS 23 |
+| A.J. Bouye | CB | DEF SNAPS 125, PEN 1, PEN YDS 15, ST SNAPS 100 |
+| Alan Ball | CB | ST SNAPS 27 |
+| Alterraun Verner | CB | DEF SNAPS 274, ST SNAPS 42 |
+| Aqib Talib | CB | DEF SNAPS 329, ST SNAPS 17 |
+| Jordan Poyer | CB | DEF SNAPS 155, ST SNAPS 57 |
+| Malcolm Butler | CB | DEF SNAPS 13, ST SNAPS 41 |
+| Mike Harris | CB | DEF SNAPS 70, ST SNAPS 4 |
+| Andre Branch | DE | DEF SNAPS 239, ST SNAPS 19 |
+| Daniel Te'o-Nesheim | DE | DEF SNAPS 4 |
+| Jeremy Mincey | DE | DEF SNAPS 345, ST SNAPS 19 |
+| C.J. Mosley | DT | DEF SNAPS 5 |
+| Roy Miller | DT | DEF SNAPS 345, PEN 1, PEN YDS 15, ST SNAPS 19 |
+| Sen'Derrick Marks | DT | DEF SNAPS 345, ST SNAPS 19 |
+| Montell Owens | FB | REC LNG 28, OFF SNAPS 83, ST SNAPS 103 |
+| Trai Turner | G | OFF SNAPS 332, ST SNAPS 23 |
+| Josh Scobee | K | ST SNAPS 49 |
+| Christian Jones | LB | ST SNAPS 103 |
+| Daryl Smith | LB | DEF SNAPS 345, ST SNAPS 19 |
+| Julian Stanford | LB | DEF SNAPS 172, ST SNAPS 19 |
+| Paul Posluszny | LB | INT YDS 21, DEF SNAPS 345, ST SNAPS 19 |
+| Sio Moore | LB | DEF SNAPS 13 |
+| Telvin Smith | LB | DEF SNAPS 2, ST SNAPS 103 |
+| Todd Davis | LB | ST SNAPS 18 |
+| Casey Kreiter | LS | ST SNAPS 48 |
+| Cornelius Lucas | OT | ST SNAPS 23 |
+| Eugene Monroe | OT | OFF SNAPS 332, ST SNAPS 23 |
+| Joel Bitonio | OT | OFF SNAPS 332, ST SNAPS 23 |
+| Lane Johnson | OT | OFF SNAPS 332, ST SNAPS 23 |
+| Bryan Anger | P | ST SNAPS 48 |
+| Kirk Cousins | QB | RUSH LNG 15, OFF SNAPS 332, PEN 2, PEN YDS 19 |
+| C.J. Anderson | RB | REC LNG 26, OFF SNAPS 32, ST SNAPS 85 |
+| Jonathan Grimes | RB | REC LNG 20, OFF SNAPS 6, ST SNAPS 1 |
+| Maurice Jones-Drew | RB | REC LNG 32, OFF SNAPS 332 |
+| Adrian Phillips | S | DEF SNAPS 1, ST SNAPS 31 |
+| Bacarri Rambo | S | DEF SNAPS 345, ST SNAPS 19 |
+| Brynden Trawick | S | DEF SNAPS 265, ST SNAPS 30 |
+| Chris Prosinski | S | DEF SNAPS 1, ST SNAPS 59 |
+| Dwight Lowery | S | DEF SNAPS 80, ST SNAPS 4 |
+| Marcedes Lewis | TE | OFF SNAPS 332, ST SNAPS 23 |
+| Marcel Jensen | TE | OFF SNAPS 1, ST SNAPS 3 |
+| Travis Kelce | TE | OFF SNAPS 99, PEN 1, PEN YDS 10, ST SNAPS 126 |
+| Adam Thielen | WR | RUSH LNG 1, OFF SNAPS 332 |
+| Allen Hurns | WR | OFF SNAPS 5, ST SNAPS 103 |
+| Andrew Hawkins | WR | OWN FUM REC 1, OFF SNAPS 147, ST SNAPS 52 |
+| Davante Adams | WR | RUSH LNG 2, OFF SNAPS 332 |
 
 ## Kansas City Chiefs
 
@@ -2859,51 +2858,51 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Rodney Hudson | C | offensive_snaps 308, special_teams_snaps 17 |
-| Christopher Owens | CB | defensive_snaps 46, special_teams_snaps 91 |
-| Marcus Cooper | CB | defensive_snaps 323, special_teams_snaps 21 |
-| Sean Smith | CB | defensive_snaps 323, special_teams_snaps 21 |
-| Allen Bailey | DE | defensive_snaps 323, special_teams_snaps 21 |
-| Dee Ford | DE | defensive_snaps 223, special_teams_snaps 21 |
-| Jaye Howard | DE | defensive_snaps 6 |
-| Mike Devito | DE | defensive_snaps 323, special_teams_snaps 21 |
-| Vance Walker | DE | defensive_snaps 3 |
-| Anthony Sherman | FB | REC LNG 4, offensive_snaps 75, special_teams_snaps 91 |
-| Husain Abdullah | FS | defensive_snaps 214, special_teams_snaps 91 |
-| Kelcie McCray | FS | defensive_snaps 3, special_teams_snaps 59 |
-| Jeff Allen | G | offensive_snaps 308, special_teams_snaps 17 |
-| Mike McGlynn | G | offensive_snaps 308, special_teams_snaps 17 |
-| Zach Fulton | G | offensive_snaps 308, special_teams_snaps 17 |
-| Derrick Johnson | ILB | defensive_snaps 314, special_teams_snaps 20 |
-| Joshua Mauga | ILB | defensive_snaps 172, special_teams_snaps 21 |
-| Cairo Santos | K | special_teams_snaps 37 |
-| Thomas Gafford | LS | special_teams_snaps 44 |
-| Damion Square | NT | defensive_snaps 6 |
-| Dontari Poe | NT | defensive_snaps 323, special_teams_snaps 21 |
-| Frank Zombo | OLB | special_teams_snaps 88 |
-| James-Michael Johnson | OLB | defensive_snaps 4, special_teams_snaps 82 |
-| Josh Martin | OLB | defensive_snaps 2, special_teams_snaps 91 |
-| Justin Houston | OLB | defensive_snaps 296, special_teams_snaps 20 |
-| Tamba Hali | OLB | defensive_snaps 31, special_teams_snaps 2 |
-| Dustin Colquitt | P | special_teams_snaps 44 |
-| Alex Smith (KC) | QB | RUSH LNG 15, offensive_snaps 308 |
-| Cyrus Gray | RB | special_teams_snaps 20 |
-| Jamaal Charles | RB | REC LNG 26, offensive_snaps 308 |
-| Joe McKnight | RB | REC LNG 29, offensive_snaps 32, special_teams_snaps 62 |
-| Knile Davis | RB | offensive_snaps 7, special_teams_snaps 23 |
-| Eric Berry | SS | defensive_snaps 323, special_teams_snaps 21 |
-| Johnathan Cyprien | SS | defensive_snaps 323, special_teams_snaps 21 |
-| Eric Fisher | T | offensive_snaps 308, special_teams_snaps 17 |
-| Ryan Harris | T | special_teams_snaps 17 |
-| Anthony Fasano | TE | offensive_snaps 308, special_teams_snaps 17 |
-| Demetrius Harris | TE | offensive_snaps 91, special_teams_snaps 108 |
-| A.J. Jenkins | WR | offensive_snaps 3, special_teams_snaps 35 |
-| Albert Wilson | WR | offensive_snaps 136, penalties 1, penalty_yards 10 |
-| De'Anthony Thomas | WR | offensive_snaps 3, special_teams_snaps 9 |
-| Donnie Avery | WR | offensive_snaps 308 |
-| Dwayne Bowe | WR | special_teams_snaps 5 |
-| Frankie Hammond | WR | offensive_snaps 308 |
-| Junior Hemingway | WR | offensive_snaps 1, special_teams_snaps 68 |
+| Rodney Hudson | C | OFF SNAPS 308, ST SNAPS 17 |
+| Christopher Owens | CB | DEF SNAPS 46, ST SNAPS 91 |
+| Marcus Cooper | CB | DEF SNAPS 323, ST SNAPS 21 |
+| Sean Smith | CB | DEF SNAPS 323, ST SNAPS 21 |
+| Allen Bailey | DE | DEF SNAPS 323, ST SNAPS 21 |
+| Dee Ford | DE | DEF SNAPS 223, ST SNAPS 21 |
+| Jaye Howard | DE | DEF SNAPS 6 |
+| Mike Devito | DE | DEF SNAPS 323, ST SNAPS 21 |
+| Vance Walker | DE | DEF SNAPS 3 |
+| Anthony Sherman | FB | REC LNG 4, OFF SNAPS 75, ST SNAPS 91 |
+| Husain Abdullah | FS | DEF SNAPS 214, ST SNAPS 91 |
+| Kelcie McCray | FS | DEF SNAPS 3, ST SNAPS 59 |
+| Jeff Allen | G | OFF SNAPS 308, ST SNAPS 17 |
+| Mike McGlynn | G | OFF SNAPS 308, ST SNAPS 17 |
+| Zach Fulton | G | OFF SNAPS 308, ST SNAPS 17 |
+| Derrick Johnson | ILB | DEF SNAPS 314, ST SNAPS 20 |
+| Joshua Mauga | ILB | DEF SNAPS 172, ST SNAPS 21 |
+| Cairo Santos | K | ST SNAPS 37 |
+| Thomas Gafford | LS | ST SNAPS 44 |
+| Damion Square | NT | DEF SNAPS 6 |
+| Dontari Poe | NT | DEF SNAPS 323, ST SNAPS 21 |
+| Frank Zombo | OLB | ST SNAPS 88 |
+| James-Michael Johnson | OLB | DEF SNAPS 4, ST SNAPS 82 |
+| Josh Martin | OLB | DEF SNAPS 2, ST SNAPS 91 |
+| Justin Houston | OLB | DEF SNAPS 296, ST SNAPS 20 |
+| Tamba Hali | OLB | DEF SNAPS 31, ST SNAPS 2 |
+| Dustin Colquitt | P | ST SNAPS 44 |
+| Alex Smith (KC) | QB | RUSH LNG 15, OFF SNAPS 308 |
+| Cyrus Gray | RB | ST SNAPS 20 |
+| Jamaal Charles | RB | REC LNG 26, OFF SNAPS 308 |
+| Joe McKnight | RB | REC LNG 29, OFF SNAPS 32, ST SNAPS 62 |
+| Knile Davis | RB | OFF SNAPS 7, ST SNAPS 23 |
+| Eric Berry | SS | DEF SNAPS 323, ST SNAPS 21 |
+| Johnathan Cyprien | SS | DEF SNAPS 323, ST SNAPS 21 |
+| Eric Fisher | T | OFF SNAPS 308, ST SNAPS 17 |
+| Ryan Harris | T | ST SNAPS 17 |
+| Anthony Fasano | TE | OFF SNAPS 308, ST SNAPS 17 |
+| Demetrius Harris | TE | OFF SNAPS 91, ST SNAPS 108 |
+| A.J. Jenkins | WR | OFF SNAPS 3, ST SNAPS 35 |
+| Albert Wilson | WR | OFF SNAPS 136, PEN 1, PEN YDS 10 |
+| De'Anthony Thomas | WR | OFF SNAPS 3, ST SNAPS 9 |
+| Donnie Avery | WR | OFF SNAPS 308 |
+| Dwayne Bowe | WR | ST SNAPS 5 |
+| Frankie Hammond | WR | OFF SNAPS 308 |
+| Junior Hemingway | WR | OFF SNAPS 1, ST SNAPS 68 |
 
 ## Miami Dolphins
 
@@ -3039,50 +3038,50 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Samson Satele | C | offensive_snaps 277, special_teams_snaps 18 |
-| Brent Grimes | CB | defensive_snaps 238, special_teams_snaps 16 |
-| Cortland Finnegan | CB | defensive_snaps 238, special_teams_snaps 16 |
-| Jamar Taylor | CB | defensive_snaps 188, special_teams_snaps 78 |
-| Will Davis | CB | defensive_snaps 4, special_teams_snaps 78 |
-| Cameron Wake | DE | defensive_snaps 238, special_teams_snaps 16 |
-| Derrick Shelby | DE | defensive_snaps 5 |
-| Olivier Vernon | DE | defensive_snaps 238, special_teams_snaps 16 |
-| Terrence Fede | DE | defensive_snaps 2 |
-| Earl Mitchell | DT | defensive_snaps 238, special_teams_snaps 16 |
-| Jared Odrick | DT | defensive_snaps 2 |
-| Randy Starks | DT | defensive_snaps 164, special_teams_snaps 16 |
-| Daryn Colledge | G | offensive_snaps 277, special_teams_snaps 18 |
-| Shelley Smith | G | offensive_snaps 277, special_teams_snaps 18 |
-| Caleb Sturgis | K | special_teams_snaps 36 |
-| Chris McCain | LB | special_teams_snaps 78 |
-| Dannell Ellerbe | LB | defensive_snaps 209, special_teams_snaps 16 |
-| Jason Trusnik | LB | defensive_snaps 1, special_teams_snaps 78 |
-| Jelani Jenkins | LB | defensive_snaps 90, special_teams_snaps 9 |
-| Jonathan Freeny | LB | defensive_snaps 6, special_teams_snaps 22 |
-| Jordan Tripp | LB | special_teams_snaps 21 |
-| Koa Misi | LB | defensive_snaps 119, special_teams_snaps 12 |
-| Philip Wheeler | LB | defensive_snaps 177, special_teams_snaps 11 |
-| John Denney | LS | special_teams_snaps 38 |
-| Brandon Fields | P | special_teams_snaps 38 |
-| Ryan Tannehill | QB | RUSH LNG 5, offensive_snaps 277 |
-| Damien Williams | RB | REC LNG 9, offensive_snaps 18, special_teams_snaps 50 |
-| Knowshon Moreno | RB | REC LNG 19, offensive_snaps 110, special_teams_snaps 68 |
-| Lamar Miller | RB | REC LNG 15, offensive_snaps 226 |
-| Orleans Darkwa | RB | special_teams_snaps 11 |
-| Jimmy Wilson | S | defensive_snaps 238, special_teams_snaps 16 |
-| Louis Delmas | S | defensive_snaps 238, special_teams_snaps 16 |
-| Michael Thomas | S | special_teams_snaps 78 |
-| Walt Aikens | S | special_teams_snaps 38 |
-| Branden Albert | T | offensive_snaps 277, special_teams_snaps 18 |
-| Ja'Wuan James | T | offensive_snaps 277, special_teams_snaps 18 |
-| Nate Garner | T | special_teams_snaps 18 |
-| Charles Clay | TE | offensive_snaps 277, special_teams_snaps 18 |
-| Dion Sims | TE | offensive_snaps 83, special_teams_snaps 96 |
-| Brandon Gibson | WR | offensive_snaps 277 |
-| Brian Hartline | WR | offensive_snaps 120 |
-| Jarvis Landry | WR | offensive_snaps 2, special_teams_snaps 34 |
-| Mike Wallace | WR | offensive_snaps 277 |
-| Rishard Matthews | WR | offensive_snaps 5, special_teams_snaps 68 |
+| Samson Satele | C | OFF SNAPS 277, ST SNAPS 18 |
+| Brent Grimes | CB | DEF SNAPS 238, ST SNAPS 16 |
+| Cortland Finnegan | CB | DEF SNAPS 238, ST SNAPS 16 |
+| Jamar Taylor | CB | DEF SNAPS 188, ST SNAPS 78 |
+| Will Davis | CB | DEF SNAPS 4, ST SNAPS 78 |
+| Cameron Wake | DE | DEF SNAPS 238, ST SNAPS 16 |
+| Derrick Shelby | DE | DEF SNAPS 5 |
+| Olivier Vernon | DE | DEF SNAPS 238, ST SNAPS 16 |
+| Terrence Fede | DE | DEF SNAPS 2 |
+| Earl Mitchell | DT | DEF SNAPS 238, ST SNAPS 16 |
+| Jared Odrick | DT | DEF SNAPS 2 |
+| Randy Starks | DT | DEF SNAPS 164, ST SNAPS 16 |
+| Daryn Colledge | G | OFF SNAPS 277, ST SNAPS 18 |
+| Shelley Smith | G | OFF SNAPS 277, ST SNAPS 18 |
+| Caleb Sturgis | K | ST SNAPS 36 |
+| Chris McCain | LB | ST SNAPS 78 |
+| Dannell Ellerbe | LB | DEF SNAPS 209, ST SNAPS 16 |
+| Jason Trusnik | LB | DEF SNAPS 1, ST SNAPS 78 |
+| Jelani Jenkins | LB | DEF SNAPS 90, ST SNAPS 9 |
+| Jonathan Freeny | LB | DEF SNAPS 6, ST SNAPS 22 |
+| Jordan Tripp | LB | ST SNAPS 21 |
+| Koa Misi | LB | DEF SNAPS 119, ST SNAPS 12 |
+| Philip Wheeler | LB | DEF SNAPS 177, ST SNAPS 11 |
+| John Denney | LS | ST SNAPS 38 |
+| Brandon Fields | P | ST SNAPS 38 |
+| Ryan Tannehill | QB | RUSH LNG 5, OFF SNAPS 277 |
+| Damien Williams | RB | REC LNG 9, OFF SNAPS 18, ST SNAPS 50 |
+| Knowshon Moreno | RB | REC LNG 19, OFF SNAPS 110, ST SNAPS 68 |
+| Lamar Miller | RB | REC LNG 15, OFF SNAPS 226 |
+| Orleans Darkwa | RB | ST SNAPS 11 |
+| Jimmy Wilson | S | DEF SNAPS 238, ST SNAPS 16 |
+| Louis Delmas | S | DEF SNAPS 238, ST SNAPS 16 |
+| Michael Thomas | S | ST SNAPS 78 |
+| Walt Aikens | S | ST SNAPS 38 |
+| Branden Albert | T | OFF SNAPS 277, ST SNAPS 18 |
+| Ja'Wuan James | T | OFF SNAPS 277, ST SNAPS 18 |
+| Nate Garner | T | ST SNAPS 18 |
+| Charles Clay | TE | OFF SNAPS 277, ST SNAPS 18 |
+| Dion Sims | TE | OFF SNAPS 83, ST SNAPS 96 |
+| Brandon Gibson | WR | OFF SNAPS 277 |
+| Brian Hartline | WR | OFF SNAPS 120 |
+| Jarvis Landry | WR | OFF SNAPS 2, ST SNAPS 34 |
+| Mike Wallace | WR | OFF SNAPS 277 |
+| Rishard Matthews | WR | OFF SNAPS 5, ST SNAPS 68 |
 
 ## Minnesota Vikings
 
@@ -3222,51 +3221,51 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Joe Berger | C | fumbles_recovered_own 1, offensive_snaps 118, special_teams_snaps 12 |
-| John Sullivan | C | offensive_snaps 193, special_teams_snaps 8 |
-| Captain Munnerlyn | CB | defensive_snaps 326, special_teams_snaps 23 |
-| Jabari Price | CB | special_teams_snaps 23 |
-| Josh Robinson | CB | defensive_snaps 282, special_teams_snaps 76 |
-| Xavier Rhodes | CB | defensive_snaps 212, special_teams_snaps 16 |
-| Brian Robison | DE | defensive_snaps 326, special_teams_snaps 23 |
-| Everson Griffen | DE | defensive_snaps 326, special_teams_snaps 23 |
-| Sharrif Floyd | DT | defensive_snaps 326, special_teams_snaps 23 |
-| Tom Johnson | DT | defensive_snaps 6 |
-| Jerome Felton | FB | REC LNG 15, offensive_snaps 79, special_teams_snaps 108 |
-| Zach Line | FB | offensive_snaps 1, special_teams_snaps 29 |
-| Andrew Sendejo | FS | defensive_snaps 1, special_teams_snaps 108 |
-| Harrison Smith | FS | defensive_snaps 326, special_teams_snaps 23 |
-| Brandon Fusco | G | offensive_snaps 288, special_teams_snaps 14 |
-| Charlie Johnson | G | offensive_snaps 311, special_teams_snaps 14 |
-| David Yankey | G | offensive_snaps 130, special_teams_snaps 14 |
-| Gerald Hodges | ILB | defensive_snaps 7, special_teams_snaps 5 |
-| Blair Walsh | K | special_teams_snaps 33 |
-| Cullen Loeffler | LS | special_teams_snaps 47 |
-| Audie Cole | MLB | defensive_snaps 3, special_teams_snaps 108 |
-| Jasper Brinkley | MLB | defensive_snaps 326, special_teams_snaps 23 |
-| Michael Mauti | MLB | special_teams_snaps 83 |
-| Linval Joseph | NT | defensive_snaps 226, special_teams_snaps 23 |
-| Shamar Stephen | NT | defensive_snaps 3 |
-| Anthony Barr | OLB | defensive_snaps 162, special_teams_snaps 23 |
-| Brandon Watts | OLB | defensive_snaps 1, special_teams_snaps 65 |
-| Chad Greenway | OLB | defensive_snaps 326, special_teams_snaps 23 |
-| Jeff Locke | P | special_teams_snaps 47 |
-| Matt Cassel | QB | RUSH LNG 7, offensive_snaps 311, passing_two_point_conversions 1 |
-| Adrian Peterson | RB | REC LNG 37, fumbles_recovered_own 1, offensive_snaps 212 |
-| Jerick McKinnon | RB | REC LNG 60, offensive_snaps 57, special_teams_snaps 50 |
-| Matt Asiata | RB | REC LNG 19, offensive_snaps 66, special_teams_snaps 69 |
-| Antone Exum | SS | defensive_snaps 93, special_teams_snaps 108 |
-| Robert Blanton | SS | defensive_snaps 326, penalties 2, penalty_yards 10, special_teams_snaps 23 |
-| Matt Kalil | T | offensive_snaps 311, special_teams_snaps 14 |
-| Phil Loadholt | T | offensive_snaps 204, penalties 2, penalty_yards 10, special_teams_snaps 8 |
-| Kyle Rudolph | TE | offensive_snaps 311, special_teams_snaps 14 |
-| MarQueis Gray | TE | offensive_snaps 4, special_teams_snaps 102 |
-| Rhett Ellison | TE | offensive_snaps 94, penalties 1, penalty_yards 5, special_teams_snaps 120 |
-| Charles Johnson (CLE) | WR | special_teams_snaps 13 |
-| Cordarrelle Patterson | WR | offensive_snaps 177, special_teams_snaps 16 |
-| Greg Jennings | WR | RUSH LNG 5, offensive_snaps 311 |
-| Jarius Wright | WR | offensive_snaps 199, receiving_two_point_conversions 1 |
-| Rodney Smith | WR | offensive_snaps 72, special_teams_snaps 13 |
+| Joe Berger | C | OWN FUM REC 1, OFF SNAPS 118, ST SNAPS 12 |
+| John Sullivan | C | OFF SNAPS 193, ST SNAPS 8 |
+| Captain Munnerlyn | CB | DEF SNAPS 326, ST SNAPS 23 |
+| Jabari Price | CB | ST SNAPS 23 |
+| Josh Robinson | CB | DEF SNAPS 282, ST SNAPS 76 |
+| Xavier Rhodes | CB | DEF SNAPS 212, ST SNAPS 16 |
+| Brian Robison | DE | DEF SNAPS 326, ST SNAPS 23 |
+| Everson Griffen | DE | DEF SNAPS 326, ST SNAPS 23 |
+| Sharrif Floyd | DT | DEF SNAPS 326, ST SNAPS 23 |
+| Tom Johnson | DT | DEF SNAPS 6 |
+| Jerome Felton | FB | REC LNG 15, OFF SNAPS 79, ST SNAPS 108 |
+| Zach Line | FB | OFF SNAPS 1, ST SNAPS 29 |
+| Andrew Sendejo | FS | DEF SNAPS 1, ST SNAPS 108 |
+| Harrison Smith | FS | DEF SNAPS 326, ST SNAPS 23 |
+| Brandon Fusco | G | OFF SNAPS 288, ST SNAPS 14 |
+| Charlie Johnson | G | OFF SNAPS 311, ST SNAPS 14 |
+| David Yankey | G | OFF SNAPS 130, ST SNAPS 14 |
+| Gerald Hodges | ILB | DEF SNAPS 7, ST SNAPS 5 |
+| Blair Walsh | K | ST SNAPS 33 |
+| Cullen Loeffler | LS | ST SNAPS 47 |
+| Audie Cole | MLB | DEF SNAPS 3, ST SNAPS 108 |
+| Jasper Brinkley | MLB | DEF SNAPS 326, ST SNAPS 23 |
+| Michael Mauti | MLB | ST SNAPS 83 |
+| Linval Joseph | NT | DEF SNAPS 226, ST SNAPS 23 |
+| Shamar Stephen | NT | DEF SNAPS 3 |
+| Anthony Barr | OLB | DEF SNAPS 162, ST SNAPS 23 |
+| Brandon Watts | OLB | DEF SNAPS 1, ST SNAPS 65 |
+| Chad Greenway | OLB | DEF SNAPS 326, ST SNAPS 23 |
+| Jeff Locke | P | ST SNAPS 47 |
+| Matt Cassel | QB | RUSH LNG 7, OFF SNAPS 311, 2PT PASS 1 |
+| Adrian Peterson | RB | REC LNG 37, OWN FUM REC 1, OFF SNAPS 212 |
+| Jerick McKinnon | RB | REC LNG 60, OFF SNAPS 57, ST SNAPS 50 |
+| Matt Asiata | RB | REC LNG 19, OFF SNAPS 66, ST SNAPS 69 |
+| Antone Exum | SS | DEF SNAPS 93, ST SNAPS 108 |
+| Robert Blanton | SS | DEF SNAPS 326, PEN 2, PEN YDS 10, ST SNAPS 23 |
+| Matt Kalil | T | OFF SNAPS 311, ST SNAPS 14 |
+| Phil Loadholt | T | OFF SNAPS 204, PEN 2, PEN YDS 10, ST SNAPS 8 |
+| Kyle Rudolph | TE | OFF SNAPS 311, ST SNAPS 14 |
+| MarQueis Gray | TE | OFF SNAPS 4, ST SNAPS 102 |
+| Rhett Ellison | TE | OFF SNAPS 94, PEN 1, PEN YDS 5, ST SNAPS 120 |
+| Charles Johnson (CLE) | WR | ST SNAPS 13 |
+| Cordarrelle Patterson | WR | OFF SNAPS 177, ST SNAPS 16 |
+| Greg Jennings | WR | RUSH LNG 5, OFF SNAPS 311 |
+| Jarius Wright | WR | OFF SNAPS 199, 2PT REC 1 |
+| Rodney Smith | WR | OFF SNAPS 72, ST SNAPS 13 |
 
 ## New England Patriots
 
@@ -3405,53 +3404,53 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Bryan Stork | C | special_teams_snaps 24 |
-| Jordan Devey | C | offensive_snaps 110, special_teams_snaps 24 |
-| Ryan Wendell | C | offensive_snaps 310, special_teams_snaps 24 |
-| Alfonzo Dennard | CB | defensive_snaps 343, special_teams_snaps 16 |
-| Darrelle Revis | CB | defensive_snaps 343, special_teams_snaps 16 |
-| Kyle Arrington | CB | defensive_snaps 59, special_teams_snaps 87 |
-| Chandler Jones | DE | defensive_snaps 239, special_teams_snaps 16 |
-| Rob Ninkovich | DE | defensive_snaps 343, special_teams_snaps 16 |
-| Zach Moore | DE | defensive_snaps 8 |
-| Chris Jones (NE) | DT | defensive_snaps 1 |
-| Joe Vellano | DT | defensive_snaps 343, special_teams_snaps 16 |
-| Vince Wilfork | DT | defensive_snaps 343, special_teams_snaps 16 |
-| Logan Ryan | FS | defensive_snaps 4, special_teams_snaps 87 |
-| Dan Connolly | G | LONG SNAPS 37, offensive_snaps 310, special_teams_snaps 42 |
-| Josh Kline | G | offensive_snaps 200, special_teams_snaps 16 |
-| Stephen Gostkowski | K | special_teams_snaps 50 |
-| Darius Fleming | LB | INT YDS 4, defensive_snaps 124, special_teams_snaps 15 |
-| Dont'a Hightower | LB | INT YDS 3, defensive_snaps 233, special_teams_snaps 13 |
-| Jamie Collins | LB | INT YDS 32, defensive_snaps 331, special_teams_snaps 16 |
-| Jerod Mayo | LB | defensive_snaps 134, special_teams_snaps 3 |
-| Danny Aiken | LS | special_teams_snaps 10 |
-| Chris White | OLB | defensive_snaps 1 |
-| Dominique Easley | OLB | defensive_snaps 41, special_teams_snaps 7 |
-| Ryan Allen | P | special_teams_snaps 47 |
-| Tom Brady | QB | RUSH LNG 9, offensive_snaps 310, penalties 1, penalty_yards 5 |
-| Brandon Bolden | RB | special_teams_snaps 83 |
-| James Develin | RB | special_teams_snaps 1 |
-| James White | RB | offensive_snaps 6, special_teams_snaps 87 |
-| Shane Vereen | RB | offensive_snaps 82, special_teams_snaps 86 |
-| Stevan Ridley | RB | REC LNG 17, offensive_snaps 307 |
-| Storm Johnson | RB | special_teams_snaps 1 |
-| Devin McCourty | S | defensive_snaps 343, special_teams_snaps 16 |
-| Duron Harmon | S | defensive_snaps 343, special_teams_snaps 16 |
-| Patrick Chung | S | defensive_snaps 214, special_teams_snaps 87 |
-| Tavon Wilson | S | special_teams_snaps 25 |
-| Nate Solder | T | offensive_snaps 310, special_teams_snaps 24 |
-| Sebastian Vollmer | T | offensive_snaps 310, special_teams_snaps 24 |
-| Michael Hoomanawanui | TE | offensive_snaps 141, special_teams_snaps 91 |
-| Rob Gronkowski | TE | offensive_snaps 239, special_teams_snaps 18 |
-| Timothy Wright | TE | offensive_snaps 21, special_teams_snaps 93 |
-| Aaron Dobson | WR | RUSH LNG 1, offensive_snaps 138 |
-| Brandon LaFell | WR | special_teams_snaps 35 |
-| Brian Tyms | WR | special_teams_snaps 19 |
-| Danny Amendola | WR | offensive_snaps 310 |
-| Julian Edelman | WR | offensive_snaps 310, special_teams_snaps 21 |
-| Kenbrell Thompkins | WR | offensive_snaps 5, special_teams_snaps 68 |
-| Matt Slater | WR | offensive_snaps 1, special_teams_snaps 17 |
+| Bryan Stork | C | ST SNAPS 24 |
+| Jordan Devey | C | OFF SNAPS 110, ST SNAPS 24 |
+| Ryan Wendell | C | OFF SNAPS 310, ST SNAPS 24 |
+| Alfonzo Dennard | CB | DEF SNAPS 343, ST SNAPS 16 |
+| Darrelle Revis | CB | DEF SNAPS 343, ST SNAPS 16 |
+| Kyle Arrington | CB | DEF SNAPS 59, ST SNAPS 87 |
+| Chandler Jones | DE | DEF SNAPS 239, ST SNAPS 16 |
+| Rob Ninkovich | DE | DEF SNAPS 343, ST SNAPS 16 |
+| Zach Moore | DE | DEF SNAPS 8 |
+| Chris Jones (NE) | DT | DEF SNAPS 1 |
+| Joe Vellano | DT | DEF SNAPS 343, ST SNAPS 16 |
+| Vince Wilfork | DT | DEF SNAPS 343, ST SNAPS 16 |
+| Logan Ryan | FS | DEF SNAPS 4, ST SNAPS 87 |
+| Dan Connolly | G | LONG SNAPS 37, OFF SNAPS 310, ST SNAPS 42 |
+| Josh Kline | G | OFF SNAPS 200, ST SNAPS 16 |
+| Stephen Gostkowski | K | ST SNAPS 50 |
+| Darius Fleming | LB | INT YDS 4, DEF SNAPS 124, ST SNAPS 15 |
+| Dont'a Hightower | LB | INT YDS 3, DEF SNAPS 233, ST SNAPS 13 |
+| Jamie Collins | LB | INT YDS 32, DEF SNAPS 331, ST SNAPS 16 |
+| Jerod Mayo | LB | DEF SNAPS 134, ST SNAPS 3 |
+| Danny Aiken | LS | ST SNAPS 10 |
+| Chris White | OLB | DEF SNAPS 1 |
+| Dominique Easley | OLB | DEF SNAPS 41, ST SNAPS 7 |
+| Ryan Allen | P | ST SNAPS 47 |
+| Tom Brady | QB | RUSH LNG 9, OFF SNAPS 310, PEN 1, PEN YDS 5 |
+| Brandon Bolden | RB | ST SNAPS 83 |
+| James Develin | RB | ST SNAPS 1 |
+| James White | RB | OFF SNAPS 6, ST SNAPS 87 |
+| Shane Vereen | RB | OFF SNAPS 82, ST SNAPS 86 |
+| Stevan Ridley | RB | REC LNG 17, OFF SNAPS 307 |
+| Storm Johnson | RB | ST SNAPS 1 |
+| Devin McCourty | S | DEF SNAPS 343, ST SNAPS 16 |
+| Duron Harmon | S | DEF SNAPS 343, ST SNAPS 16 |
+| Patrick Chung | S | DEF SNAPS 214, ST SNAPS 87 |
+| Tavon Wilson | S | ST SNAPS 25 |
+| Nate Solder | T | OFF SNAPS 310, ST SNAPS 24 |
+| Sebastian Vollmer | T | OFF SNAPS 310, ST SNAPS 24 |
+| Michael Hoomanawanui | TE | OFF SNAPS 141, ST SNAPS 91 |
+| Rob Gronkowski | TE | OFF SNAPS 239, ST SNAPS 18 |
+| Timothy Wright | TE | OFF SNAPS 21, ST SNAPS 93 |
+| Aaron Dobson | WR | RUSH LNG 1, OFF SNAPS 138 |
+| Brandon LaFell | WR | ST SNAPS 35 |
+| Brian Tyms | WR | ST SNAPS 19 |
+| Danny Amendola | WR | OFF SNAPS 310 |
+| Julian Edelman | WR | OFF SNAPS 310, ST SNAPS 21 |
+| Kenbrell Thompkins | WR | OFF SNAPS 5, ST SNAPS 68 |
+| Matt Slater | WR | OFF SNAPS 1, ST SNAPS 17 |
 
 ## New Orleans Saints
 
@@ -3584,50 +3583,50 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Jonathan Goodwin | C | offensive_snaps 329, special_teams_snaps 23 |
-| Tim Lelito | C | special_teams_snaps 23 |
-| Brian Dixon | CB | defensive_snaps 264, special_teams_snaps 98 |
-| Corey White | CB | defensive_snaps 3, special_teams_snaps 98 |
-| Keenan Lewis | CB | defensive_snaps 332, special_teams_snaps 23 |
-| Patrick Robinson | CB | defensive_snaps 332, special_teams_snaps 23 |
-| Cameron Jordan | DE | defensive_snaps 332, special_teams_snaps 23 |
-| Glenn Foster | DE | defensive_snaps 2 |
-| Akiem Hicks | DT | defensive_snaps 332, special_teams_snaps 23 |
-| Tyrunn Walker | DT | defensive_snaps 230, special_teams_snaps 23 |
-| Austin Johnson | FB | REC LNG 8, offensive_snaps 81, special_teams_snaps 98 |
-| Jairus Byrd | FS | defensive_snaps 332, penalties 1, penalty_yards 16, special_teams_snaps 23 |
-| Rafael Bush | FS | special_teams_snaps 98 |
-| Ben Grubbs | G | offensive_snaps 329, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Jahri Evans | G | offensive_snaps 329, special_teams_snaps 23 |
-| Curtis Lofton | ILB | INT YDS 10, defensive_snaps 332, special_teams_snaps 23 |
-| David Hawthorne | ILB | defensive_snaps 183, special_teams_snaps 13 |
-| Kyle Knox | ILB | special_teams_snaps 98 |
-| Ramon Humber | ILB | defensive_snaps 9, special_teams_snaps 52 |
-| Shayne Graham | K | special_teams_snaps 51 |
-| Justin Drescher | LS | special_teams_snaps 43 |
-| Brandon Deaderick | NT | defensive_snaps 7 |
-| Brodrick Bunkley | NT | defensive_snaps 332, penalties 1, penalty_yards 1, special_teams_snaps 23 |
-| Junior Galette | OLB | defensive_snaps 240, special_teams_snaps 23 |
-| Parys Haralson | OLB | defensive_snaps 82, special_teams_snaps 10 |
-| Ronald Powell | OLB | defensive_snaps 3, penalties 1, penalty_yards 10, special_teams_snaps 98 |
-| Thomas Morstead | P | special_teams_snaps 43 |
-| Drew Brees | QB | RUSH LNG 23, offensive_snaps 329, penalties 2, penalty_yards 17 |
-| Khiry Robinson | RB | REC LNG 19, offensive_snaps 42, special_teams_snaps 76 |
-| Mark Ingram | RB | REC LNG 45, offensive_snaps 329 |
-| Pierre Thomas | RB | REC LNG 20, offensive_snaps 8 |
-| Travaris Cadet | RB | special_teams_snaps 50 |
-| Kenny Vaccaro | SS | defensive_snaps 332, special_teams_snaps 23 |
-| Vinnie Sunseri | SS | defensive_snaps 1, special_teams_snaps 44 |
-| Terron Armstead | T | offensive_snaps 329, special_teams_snaps 23 |
-| Zach Strief | T | offensive_snaps 329, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Benjamin Watson | TE | offensive_snaps 94, penalties 1, penalty_yards 10, special_teams_snaps 113 |
-| Jimmy Graham | TE | offensive_snaps 329, special_teams_snaps 23 |
-| Josh Hill | TE | offensive_snaps 4, special_teams_snaps 45 |
-| Brandin Cooks | WR | RUSH LNG 11, offensive_snaps 285 |
-| Joe Morgan | WR | offensive_snaps 78 |
-| Kenny Stills | WR | offensive_snaps 2, special_teams_snaps 18 |
-| Marques Colston | WR | RUSH LNG 9, offensive_snaps 329 |
-| Robert Meachem | WR | offensive_snaps 114, special_teams_snaps 23 |
+| Jonathan Goodwin | C | OFF SNAPS 329, ST SNAPS 23 |
+| Tim Lelito | C | ST SNAPS 23 |
+| Brian Dixon | CB | DEF SNAPS 264, ST SNAPS 98 |
+| Corey White | CB | DEF SNAPS 3, ST SNAPS 98 |
+| Keenan Lewis | CB | DEF SNAPS 332, ST SNAPS 23 |
+| Patrick Robinson | CB | DEF SNAPS 332, ST SNAPS 23 |
+| Cameron Jordan | DE | DEF SNAPS 332, ST SNAPS 23 |
+| Glenn Foster | DE | DEF SNAPS 2 |
+| Akiem Hicks | DT | DEF SNAPS 332, ST SNAPS 23 |
+| Tyrunn Walker | DT | DEF SNAPS 230, ST SNAPS 23 |
+| Austin Johnson | FB | REC LNG 8, OFF SNAPS 81, ST SNAPS 98 |
+| Jairus Byrd | FS | DEF SNAPS 332, PEN 1, PEN YDS 16, ST SNAPS 23 |
+| Rafael Bush | FS | ST SNAPS 98 |
+| Ben Grubbs | G | OFF SNAPS 329, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Jahri Evans | G | OFF SNAPS 329, ST SNAPS 23 |
+| Curtis Lofton | ILB | INT YDS 10, DEF SNAPS 332, ST SNAPS 23 |
+| David Hawthorne | ILB | DEF SNAPS 183, ST SNAPS 13 |
+| Kyle Knox | ILB | ST SNAPS 98 |
+| Ramon Humber | ILB | DEF SNAPS 9, ST SNAPS 52 |
+| Shayne Graham | K | ST SNAPS 51 |
+| Justin Drescher | LS | ST SNAPS 43 |
+| Brandon Deaderick | NT | DEF SNAPS 7 |
+| Brodrick Bunkley | NT | DEF SNAPS 332, PEN 1, PEN YDS 1, ST SNAPS 23 |
+| Junior Galette | OLB | DEF SNAPS 240, ST SNAPS 23 |
+| Parys Haralson | OLB | DEF SNAPS 82, ST SNAPS 10 |
+| Ronald Powell | OLB | DEF SNAPS 3, PEN 1, PEN YDS 10, ST SNAPS 98 |
+| Thomas Morstead | P | ST SNAPS 43 |
+| Drew Brees | QB | RUSH LNG 23, OFF SNAPS 329, PEN 2, PEN YDS 17 |
+| Khiry Robinson | RB | REC LNG 19, OFF SNAPS 42, ST SNAPS 76 |
+| Mark Ingram | RB | REC LNG 45, OFF SNAPS 329 |
+| Pierre Thomas | RB | REC LNG 20, OFF SNAPS 8 |
+| Travaris Cadet | RB | ST SNAPS 50 |
+| Kenny Vaccaro | SS | DEF SNAPS 332, ST SNAPS 23 |
+| Vinnie Sunseri | SS | DEF SNAPS 1, ST SNAPS 44 |
+| Terron Armstead | T | OFF SNAPS 329, ST SNAPS 23 |
+| Zach Strief | T | OFF SNAPS 329, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Benjamin Watson | TE | OFF SNAPS 94, PEN 1, PEN YDS 10, ST SNAPS 113 |
+| Jimmy Graham | TE | OFF SNAPS 329, ST SNAPS 23 |
+| Josh Hill | TE | OFF SNAPS 4, ST SNAPS 45 |
+| Brandin Cooks | WR | RUSH LNG 11, OFF SNAPS 285 |
+| Joe Morgan | WR | OFF SNAPS 78 |
+| Kenny Stills | WR | OFF SNAPS 2, ST SNAPS 18 |
+| Marques Colston | WR | RUSH LNG 9, OFF SNAPS 329 |
+| Robert Meachem | WR | OFF SNAPS 114, ST SNAPS 23 |
 
 ## New York Giants
 
@@ -3763,51 +3762,51 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| J.D. Walton | C | offensive_snaps 288, penalties 1, penalty_yards 7, special_teams_snaps 22 |
-| Weston Richburg | C | offensive_snaps 115, special_teams_snaps 10 |
-| Dominique Rodgers-Cromartie | CB | defensive_snaps 334, special_teams_snaps 22 |
-| Prince Amukamara | CB | defensive_snaps 265, penalties 1, penalty_yards 6, special_teams_snaps 16 |
-| Trumaine McBride | CB | defensive_snaps 1, special_teams_snaps 39 |
-| Zackary Bowman | CB | defensive_snaps 1, special_teams_snaps 23 |
-| Jason Pierre-Paul | DE | defensive_snaps 334, penalties 1, penalty_yards 5, special_teams_snaps 22 |
-| Mathias Kiwanuka | DE | defensive_snaps 334, penalties 1, penalty_yards 5, special_teams_snaps 22 |
-| Robert Ayers | DE | defensive_snaps 6 |
-| Jay Bromley | DT | defensive_snaps 5 |
-| Johnathan Hankins | DT | defensive_snaps 231, special_teams_snaps 22 |
-| Mike Patterson | DT | defensive_snaps 334, special_teams_snaps 22 |
-| Henry Hynoski | FB | REC LNG 39, offensive_snaps 72, special_teams_snaps 96 |
-| Quintin Demps | FS | defensive_snaps 1, special_teams_snaps 25 |
-| Stevie Brown | FS | defensive_snaps 334, special_teams_snaps 22 |
-| Brandon Mosley | G | offensive_snaps 288, penalties 1, penalty_yards 5, special_teams_snaps 22 |
-| John Jerry | G | offensive_snaps 173, special_teams_snaps 12 |
-| Justin Pugh | G | offensive_snaps 288, special_teams_snaps 22 |
-| Josh Brown | K | special_teams_snaps 47 |
-| Zak DeOssie | LS | special_teams_snaps 45 |
-| Jameel McClain | MLB | INT YDS 58, defensive_snaps 334, special_teams_snaps 22 |
-| Jon Beason | MLB | special_teams_snaps 96 |
-| Mark Herzlich | MLB | defensive_snaps 1, special_teams_snaps 96 |
-| Devon Kennard | OLB | defensive_snaps 166, special_teams_snaps 22 |
-| Jacquian Williams | OLB | defensive_snaps 334, special_teams_snaps 22 |
-| Spencer Paysinger | OLB | defensive_snaps 8 |
-| Steve Weatherford | P | special_teams_snaps 45 |
-| Eli Manning | QB | RUSH LNG 12, offensive_snaps 288, penalties 2, penalty_yards 15 |
-| Andre Williams | RB | REC LNG 31, offensive_snaps 26, special_teams_snaps 85 |
-| Peyton Hillis | RB | offensive_snaps 7, special_teams_snaps 33 |
-| Rashad Jennings | RB | REC LNG 40, offensive_snaps 288 |
-| Walter Thurmond | S | defensive_snaps 280, penalties 1, penalty_yards 15, special_teams_snaps 79 |
-| Antrel Rolle | SS | defensive_snaps 334, special_teams_snaps 22 |
-| Nat Berhe | SS | defensive_snaps 63, special_teams_snaps 96 |
-| Charles Brown | T | special_teams_snaps 22 |
-| Will Beatty | T | offensive_snaps 288, special_teams_snaps 22 |
-| Adrien Robinson | TE | special_teams_snaps 80 |
-| Daniel Fells | TE | offensive_snaps 84, special_teams_snaps 118 |
-| Larry Donnell | TE | offensive_snaps 288, special_teams_snaps 22 |
-| Corey Washington | WR | offensive_snaps 2, special_teams_snaps 79 |
-| Jerrel Jernigan | WR | offensive_snaps 127, penalties 1, penalty_yards 10 |
-| Odell Beckham | WR | special_teams_snaps 22 |
-| Preston Parker | WR | offensive_snaps 4, special_teams_snaps 23 |
-| Rueben Randle | WR | RUSH LNG 2, offensive_snaps 288 |
-| Victor Cruz | WR | RUSH LNG 10, offensive_snaps 288 |
+| J.D. Walton | C | OFF SNAPS 288, PEN 1, PEN YDS 7, ST SNAPS 22 |
+| Weston Richburg | C | OFF SNAPS 115, ST SNAPS 10 |
+| Dominique Rodgers-Cromartie | CB | DEF SNAPS 334, ST SNAPS 22 |
+| Prince Amukamara | CB | DEF SNAPS 265, PEN 1, PEN YDS 6, ST SNAPS 16 |
+| Trumaine McBride | CB | DEF SNAPS 1, ST SNAPS 39 |
+| Zackary Bowman | CB | DEF SNAPS 1, ST SNAPS 23 |
+| Jason Pierre-Paul | DE | DEF SNAPS 334, PEN 1, PEN YDS 5, ST SNAPS 22 |
+| Mathias Kiwanuka | DE | DEF SNAPS 334, PEN 1, PEN YDS 5, ST SNAPS 22 |
+| Robert Ayers | DE | DEF SNAPS 6 |
+| Jay Bromley | DT | DEF SNAPS 5 |
+| Johnathan Hankins | DT | DEF SNAPS 231, ST SNAPS 22 |
+| Mike Patterson | DT | DEF SNAPS 334, ST SNAPS 22 |
+| Henry Hynoski | FB | REC LNG 39, OFF SNAPS 72, ST SNAPS 96 |
+| Quintin Demps | FS | DEF SNAPS 1, ST SNAPS 25 |
+| Stevie Brown | FS | DEF SNAPS 334, ST SNAPS 22 |
+| Brandon Mosley | G | OFF SNAPS 288, PEN 1, PEN YDS 5, ST SNAPS 22 |
+| John Jerry | G | OFF SNAPS 173, ST SNAPS 12 |
+| Justin Pugh | G | OFF SNAPS 288, ST SNAPS 22 |
+| Josh Brown | K | ST SNAPS 47 |
+| Zak DeOssie | LS | ST SNAPS 45 |
+| Jameel McClain | MLB | INT YDS 58, DEF SNAPS 334, ST SNAPS 22 |
+| Jon Beason | MLB | ST SNAPS 96 |
+| Mark Herzlich | MLB | DEF SNAPS 1, ST SNAPS 96 |
+| Devon Kennard | OLB | DEF SNAPS 166, ST SNAPS 22 |
+| Jacquian Williams | OLB | DEF SNAPS 334, ST SNAPS 22 |
+| Spencer Paysinger | OLB | DEF SNAPS 8 |
+| Steve Weatherford | P | ST SNAPS 45 |
+| Eli Manning | QB | RUSH LNG 12, OFF SNAPS 288, PEN 2, PEN YDS 15 |
+| Andre Williams | RB | REC LNG 31, OFF SNAPS 26, ST SNAPS 85 |
+| Peyton Hillis | RB | OFF SNAPS 7, ST SNAPS 33 |
+| Rashad Jennings | RB | REC LNG 40, OFF SNAPS 288 |
+| Walter Thurmond | S | DEF SNAPS 280, PEN 1, PEN YDS 15, ST SNAPS 79 |
+| Antrel Rolle | SS | DEF SNAPS 334, ST SNAPS 22 |
+| Nat Berhe | SS | DEF SNAPS 63, ST SNAPS 96 |
+| Charles Brown | T | ST SNAPS 22 |
+| Will Beatty | T | OFF SNAPS 288, ST SNAPS 22 |
+| Adrien Robinson | TE | ST SNAPS 80 |
+| Daniel Fells | TE | OFF SNAPS 84, ST SNAPS 118 |
+| Larry Donnell | TE | OFF SNAPS 288, ST SNAPS 22 |
+| Corey Washington | WR | OFF SNAPS 2, ST SNAPS 79 |
+| Jerrel Jernigan | WR | OFF SNAPS 127, PEN 1, PEN YDS 10 |
+| Odell Beckham | WR | ST SNAPS 22 |
+| Preston Parker | WR | OFF SNAPS 4, ST SNAPS 23 |
+| Rueben Randle | WR | RUSH LNG 2, OFF SNAPS 288 |
+| Victor Cruz | WR | RUSH LNG 10, OFF SNAPS 288 |
 
 ## New York Jets
 
@@ -3944,48 +3943,48 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Nick Mangold | C | fumbles_recovered_own 1, offensive_snaps 317, special_teams_snaps 20 |
-| Antonio Allen | CB | defensive_snaps 330, special_teams_snaps 27 |
-| Darrin Walls | CB | defensive_snaps 330, special_teams_snaps 27 |
-| Kyle Wilson | CB | defensive_snaps 263, special_teams_snaps 108 |
-| Phillip Adams | CB | defensive_snaps 7, special_teams_snaps 108 |
-| Leger Douzable | DE | defensive_snaps 330, special_teams_snaps 27 |
-| Muhammad Wilkerson | DE | defensive_snaps 330, special_teams_snaps 27 |
-| John Conner | FB | offensive_snaps 2 |
-| Tommy Bohanon | FB | REC LNG 17, offensive_snaps 79, special_teams_snaps 108 |
-| Brian Winters | G | offensive_snaps 317, special_teams_snaps 20 |
-| Willie Colon | G | offensive_snaps 317, special_teams_snaps 20 |
-| A.J. Edds | ILB | defensive_snaps 1, special_teams_snaps 108 |
-| Nick Bellore | ILB | defensive_snaps 3, special_teams_snaps 88 |
-| Nick Folk | K | special_teams_snaps 42 |
-| Tanner Purdum | LS | special_teams_snaps 53 |
-| Demario Davis | MLB | defensive_snaps 330, special_teams_snaps 27 |
-| Damon Harrison | NT | INT YDS 32, defensive_snaps 330, special_teams_snaps 27 |
-| Kenrick Ellis | NT | defensive_snaps 229, special_teams_snaps 27 |
-| Calvin Pace | OLB | defensive_snaps 199, penalties 1, penalty_yards 23, special_teams_snaps 27 |
-| David Harris | OLB | defensive_snaps 261, special_teams_snaps 18 |
-| Quinton Coples | OLB | defensive_snaps 41, special_teams_snaps 9 |
-| Trevor Reilly | OLB | defensive_snaps 2, special_teams_snaps 108 |
-| Ryan Quigley | P | special_teams_snaps 53 |
-| Geno Smith | QB | RUSH LNG 17, offensive_snaps 317 |
-| Bilal Powell | RB | offensive_snaps 9 |
-| Chris Ivory | RB | REC LNG 42, fumbles_recovered_own 1, offensive_snaps 317 |
-| Chris Johnson | RB | REC LNG 26, offensive_snaps 36, special_teams_snaps 61 |
-| Calvin Pryor | S | defensive_snaps 330, penalties 2, penalty_yards 8, special_teams_snaps 27 |
-| Dawan Landry | S | defensive_snaps 330, special_teams_snaps 27 |
-| Jaiquawn Jarrett | S | defensive_snaps 3, special_teams_snaps 108 |
-| Breno Giacomini | T | offensive_snaps 317, special_teams_snaps 20 |
-| D'Brickashaw Ferguson | T | offensive_snaps 317, special_teams_snaps 20 |
-| Sheldon Richardson | T | special_teams_snaps 20 |
-| Jace Amaro | TE | offensive_snaps 88, special_teams_snaps 121 |
-| Jeff Cumberland | TE | offensive_snaps 317, special_teams_snaps 20 |
-| Zach Sudfeld | TE | offensive_snaps 5, special_teams_snaps 18 |
-| David Nelson | WR | offensive_snaps 4, special_teams_snaps 108 |
-| Eric Decker | WR | offensive_snaps 317 |
-| Greg Salas | WR | offensive_snaps 140 |
-| Jalen Saunders | WR | special_teams_snaps 18 |
-| Jeremy Kerley | WR | RUSH LNG 1, muffs 1, offensive_snaps 317, special_teams_snaps 5 |
-| Saalim Hakim | WR | RUSH LNG 6, offensive_snaps 5, special_teams_snaps 30 |
+| Nick Mangold | C | OWN FUM REC 1, OFF SNAPS 317, ST SNAPS 20 |
+| Antonio Allen | CB | DEF SNAPS 330, ST SNAPS 27 |
+| Darrin Walls | CB | DEF SNAPS 330, ST SNAPS 27 |
+| Kyle Wilson | CB | DEF SNAPS 263, ST SNAPS 108 |
+| Phillip Adams | CB | DEF SNAPS 7, ST SNAPS 108 |
+| Leger Douzable | DE | DEF SNAPS 330, ST SNAPS 27 |
+| Muhammad Wilkerson | DE | DEF SNAPS 330, ST SNAPS 27 |
+| John Conner | FB | OFF SNAPS 2 |
+| Tommy Bohanon | FB | REC LNG 17, OFF SNAPS 79, ST SNAPS 108 |
+| Brian Winters | G | OFF SNAPS 317, ST SNAPS 20 |
+| Willie Colon | G | OFF SNAPS 317, ST SNAPS 20 |
+| A.J. Edds | ILB | DEF SNAPS 1, ST SNAPS 108 |
+| Nick Bellore | ILB | DEF SNAPS 3, ST SNAPS 88 |
+| Nick Folk | K | ST SNAPS 42 |
+| Tanner Purdum | LS | ST SNAPS 53 |
+| Demario Davis | MLB | DEF SNAPS 330, ST SNAPS 27 |
+| Damon Harrison | NT | INT YDS 32, DEF SNAPS 330, ST SNAPS 27 |
+| Kenrick Ellis | NT | DEF SNAPS 229, ST SNAPS 27 |
+| Calvin Pace | OLB | DEF SNAPS 199, PEN 1, PEN YDS 23, ST SNAPS 27 |
+| David Harris | OLB | DEF SNAPS 261, ST SNAPS 18 |
+| Quinton Coples | OLB | DEF SNAPS 41, ST SNAPS 9 |
+| Trevor Reilly | OLB | DEF SNAPS 2, ST SNAPS 108 |
+| Ryan Quigley | P | ST SNAPS 53 |
+| Geno Smith | QB | RUSH LNG 17, OFF SNAPS 317 |
+| Bilal Powell | RB | OFF SNAPS 9 |
+| Chris Ivory | RB | REC LNG 42, OWN FUM REC 1, OFF SNAPS 317 |
+| Chris Johnson | RB | REC LNG 26, OFF SNAPS 36, ST SNAPS 61 |
+| Calvin Pryor | S | DEF SNAPS 330, PEN 2, PEN YDS 8, ST SNAPS 27 |
+| Dawan Landry | S | DEF SNAPS 330, ST SNAPS 27 |
+| Jaiquawn Jarrett | S | DEF SNAPS 3, ST SNAPS 108 |
+| Breno Giacomini | T | OFF SNAPS 317, ST SNAPS 20 |
+| D'Brickashaw Ferguson | T | OFF SNAPS 317, ST SNAPS 20 |
+| Sheldon Richardson | T | ST SNAPS 20 |
+| Jace Amaro | TE | OFF SNAPS 88, ST SNAPS 121 |
+| Jeff Cumberland | TE | OFF SNAPS 317, ST SNAPS 20 |
+| Zach Sudfeld | TE | OFF SNAPS 5, ST SNAPS 18 |
+| David Nelson | WR | OFF SNAPS 4, ST SNAPS 108 |
+| Eric Decker | WR | OFF SNAPS 317 |
+| Greg Salas | WR | OFF SNAPS 140 |
+| Jalen Saunders | WR | ST SNAPS 18 |
+| Jeremy Kerley | WR | RUSH LNG 1, MUFFS 1, OFF SNAPS 317, ST SNAPS 5 |
+| Saalim Hakim | WR | RUSH LNG 6, OFF SNAPS 5, ST SNAPS 30 |
 
 ## Oakland Raiders
 
@@ -4115,48 +4114,48 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Stefen Wisniewski | C | offensive_snaps 282, special_teams_snaps 20 |
-| Carlos Rogers | CB | defensive_snaps 247, special_teams_snaps 16 |
-| Neiko Thorpe | CB | defensive_snaps 1, special_teams_snaps 82 |
-| T.J. Carrie | CB | special_teams_snaps 26 |
-| Tarell Brown | CB | defensive_snaps 247, special_teams_snaps 16 |
-| Justin Tuck | DE | defensive_snaps 247, special_teams_snaps 16 |
-| Khalil Mack | DE | defensive_snaps 247, special_teams_snaps 16 |
-| Antonio Smith | DT | defensive_snaps 178, special_teams_snaps 16 |
-| Stacy McGee | DT | defensive_snaps 2 |
-| Jamize Olawale | FB | offensive_snaps 1, special_teams_snaps 82 |
-| Marcel Reece | FB | REC LNG 18, offensive_snaps 68, special_teams_snaps 82 |
-| Charles Woodson | FS | defensive_snaps 247, special_teams_snaps 16 |
-| Jonathan Dowling | FS | special_teams_snaps 82 |
-| Keith McGill | FS | special_teams_snaps 40 |
-| Sebastian Janikowski | K | special_teams_snaps 42 |
-| LaMarr Woodley | LB | INT YDS 16, defensive_snaps 247, special_teams_snaps 16 |
-| Jon Condo | LS | special_teams_snaps 36 |
-| Kaluka Maiava | MLB | defensive_snaps 122, special_teams_snaps 16 |
-| Miles Burris | MLB | defensive_snaps 247, special_teams_snaps 16 |
-| Justin Ellis | NT | defensive_snaps 23, special_teams_snaps 2 |
-| Pat Sims | NT | defensive_snaps 224, special_teams_snaps 14 |
-| Benson Mayowa | OLB | defensive_snaps 5 |
-| Marquette King | P | special_teams_snaps 36 |
-| Derek Carr | QB | RUSH LNG 30, offensive_snaps 280 |
-| Matt Schaub | QB | offensive_snaps 2 |
-| Darren McFadden | RB | REC LNG 52, offensive_snaps 282 |
-| Latavius Murray | RB | REC LNG 15, offensive_snaps 20, special_teams_snaps 18 |
-| Taiwan Jones | RB | offensive_snaps 6, special_teams_snaps 82 |
-| Tyvon Branch | SS | defensive_snaps 247, special_teams_snaps 16 |
-| Usama Young | SS | defensive_snaps 196, special_teams_snaps 82 |
-| Austin Howard | T | offensive_snaps 282, special_teams_snaps 20 |
-| Donald Penn | T | offensive_snaps 282, special_teams_snaps 20 |
-| Khalif Barnes | T | offensive_snaps 282, special_teams_snaps 20 |
-| Matt McCants | T | special_teams_snaps 20 |
-| Menelik Watson | T | offensive_snaps 282, special_teams_snaps 20 |
-| Brian Leonhardt | TE | special_teams_snaps 82 |
-| David Ausberry | TE | offensive_snaps 282, special_teams_snaps 20 |
-| Mychal Rivera | TE | offensive_snaps 83, special_teams_snaps 102 |
-| Andre Holmes | WR | offensive_snaps 4, special_teams_snaps 82 |
-| Denarius Moore | WR | offensive_snaps 125 |
-| James Jones | WR | RUSH LNG 38, offensive_snaps 282 |
-| Rod Streater | WR | RUSH LNG 6, offensive_snaps 282 |
+| Stefen Wisniewski | C | OFF SNAPS 282, ST SNAPS 20 |
+| Carlos Rogers | CB | DEF SNAPS 247, ST SNAPS 16 |
+| Neiko Thorpe | CB | DEF SNAPS 1, ST SNAPS 82 |
+| T.J. Carrie | CB | ST SNAPS 26 |
+| Tarell Brown | CB | DEF SNAPS 247, ST SNAPS 16 |
+| Justin Tuck | DE | DEF SNAPS 247, ST SNAPS 16 |
+| Khalil Mack | DE | DEF SNAPS 247, ST SNAPS 16 |
+| Antonio Smith | DT | DEF SNAPS 178, ST SNAPS 16 |
+| Stacy McGee | DT | DEF SNAPS 2 |
+| Jamize Olawale | FB | OFF SNAPS 1, ST SNAPS 82 |
+| Marcel Reece | FB | REC LNG 18, OFF SNAPS 68, ST SNAPS 82 |
+| Charles Woodson | FS | DEF SNAPS 247, ST SNAPS 16 |
+| Jonathan Dowling | FS | ST SNAPS 82 |
+| Keith McGill | FS | ST SNAPS 40 |
+| Sebastian Janikowski | K | ST SNAPS 42 |
+| LaMarr Woodley | LB | INT YDS 16, DEF SNAPS 247, ST SNAPS 16 |
+| Jon Condo | LS | ST SNAPS 36 |
+| Kaluka Maiava | MLB | DEF SNAPS 122, ST SNAPS 16 |
+| Miles Burris | MLB | DEF SNAPS 247, ST SNAPS 16 |
+| Justin Ellis | NT | DEF SNAPS 23, ST SNAPS 2 |
+| Pat Sims | NT | DEF SNAPS 224, ST SNAPS 14 |
+| Benson Mayowa | OLB | DEF SNAPS 5 |
+| Marquette King | P | ST SNAPS 36 |
+| Derek Carr | QB | RUSH LNG 30, OFF SNAPS 280 |
+| Matt Schaub | QB | OFF SNAPS 2 |
+| Darren McFadden | RB | REC LNG 52, OFF SNAPS 282 |
+| Latavius Murray | RB | REC LNG 15, OFF SNAPS 20, ST SNAPS 18 |
+| Taiwan Jones | RB | OFF SNAPS 6, ST SNAPS 82 |
+| Tyvon Branch | SS | DEF SNAPS 247, ST SNAPS 16 |
+| Usama Young | SS | DEF SNAPS 196, ST SNAPS 82 |
+| Austin Howard | T | OFF SNAPS 282, ST SNAPS 20 |
+| Donald Penn | T | OFF SNAPS 282, ST SNAPS 20 |
+| Khalif Barnes | T | OFF SNAPS 282, ST SNAPS 20 |
+| Matt McCants | T | ST SNAPS 20 |
+| Menelik Watson | T | OFF SNAPS 282, ST SNAPS 20 |
+| Brian Leonhardt | TE | ST SNAPS 82 |
+| David Ausberry | TE | OFF SNAPS 282, ST SNAPS 20 |
+| Mychal Rivera | TE | OFF SNAPS 83, ST SNAPS 102 |
+| Andre Holmes | WR | OFF SNAPS 4, ST SNAPS 82 |
+| Denarius Moore | WR | OFF SNAPS 125 |
+| James Jones | WR | RUSH LNG 38, OFF SNAPS 282 |
+| Rod Streater | WR | RUSH LNG 6, OFF SNAPS 282 |
 
 ## Philadelphia Eagles
 
@@ -4291,53 +4290,53 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Jason Kelce | C | offensive_snaps 285, special_teams_snaps 19 |
-| Bradley Fletcher | CB | defensive_snaps 352, special_teams_snaps 25 |
-| Brandon Boykin | CB | defensive_snaps 129, special_teams_snaps 120 |
-| Cary Williams | CB | defensive_snaps 352, special_teams_snaps 25 |
-| Dwayne Gratz | CB | defensive_snaps 175, penalties 1, penalty_yards 17, special_teams_snaps 39 |
-| Nolan Carroll | CB | defensive_snaps 4, special_teams_snaps 30 |
-| Brandon Bair | DE | defensive_snaps 4 |
-| Cedric Thornton | DE | defensive_snaps 352, special_teams_snaps 25 |
-| Fletcher Cox | DE | defensive_snaps 352, special_teams_snaps 25 |
-| Vinny Curry | DE | defensive_snaps 245, special_teams_snaps 25 |
-| Allen Barbre | G | offensive_snaps 126, special_teams_snaps 26 |
-| Andrew Gardner | G | offensive_snaps 38, special_teams_snaps 13 |
-| Evan Mathis | G | offensive_snaps 243, special_teams_snaps 17 |
-| Luke Joeckel | G | offensive_snaps 346, penalties 1, penalty_yards 10, special_teams_snaps 26 |
-| Matt Tobin | G | special_teams_snaps 3 |
-| Todd Herremans | G | offensive_snaps 346, special_teams_snaps 26 |
-| Casey Matthews | ILB | defensive_snaps 3, special_teams_snaps 122 |
-| DeMeco Ryans | ILB | defensive_snaps 352, penalties 1, penalty_yards 15, special_teams_snaps 25 |
-| Mychal Kendricks | ILB | defensive_snaps 176, special_teams_snaps 25 |
-| Najee Goode | ILB | defensive_snaps 1, special_teams_snaps 122 |
-| Cody Parkey | K | special_teams_snaps 56 |
-| Jon Dorenbos | LS | special_teams_snaps 59 |
-| Beau Allen | NT | defensive_snaps 1 |
-| Bennie Logan | NT | defensive_snaps 352, special_teams_snaps 25 |
-| Brandon Graham | OLB | special_teams_snaps 122 |
-| Connor Barwin | OLB | defensive_snaps 12 |
-| Marcus Smith | OLB | special_teams_snaps 18 |
-| Trent Cole | OLB | defensive_snaps 352, penalties 1, penalty_yards 15, special_teams_snaps 25 |
-| Donnie Jones | P | special_teams_snaps 59 |
-| Nick Foles | QB | RUSH LNG 27, offensive_snaps 346 |
-| Chris Polk | RB | REC LNG 6, offensive_snaps 20, special_teams_snaps 122 |
-| Darren Sproles | RB | REC LNG 24, offensive_snaps 132, special_teams_snaps 29 |
-| LeSean McCoy | RB | REC LNG 38, offensive_snaps 288 |
-| Malcolm Jenkins | S | defensive_snaps 352, special_teams_snaps 25 |
-| Nate Allen | S | defensive_snaps 326, special_teams_snaps 55 |
-| Jason Peters | T | fumbles_recovered_own 1, offensive_snaps 346, special_teams_snaps 26 |
-| Brent Celek | TE | offensive_snaps 346, special_teams_snaps 26 |
-| James Casey | TE | special_teams_snaps 122 |
-| Trey Burton | TE | special_teams_snaps 39 |
-| Zach Ertz | TE | offensive_snaps 102, special_teams_snaps 148 |
-| Ace Sanders | WR | offensive_snaps 7, special_teams_snaps 77 |
-| Brad Smith | WR | offensive_snaps 298 |
-| Jeff Maehl | WR | offensive_snaps 37, special_teams_snaps 95 |
-| Jeremy Maclin | WR | RUSH LNG 2, offensive_snaps 281 |
-| Jordan Matthews | WR | offensive_snaps 182, special_teams_snaps 8 |
-| Josh Huff | WR | offensive_snaps 29 |
-| Riley Cooper | WR | offensive_snaps 22 |
+| Jason Kelce | C | OFF SNAPS 285, ST SNAPS 19 |
+| Bradley Fletcher | CB | DEF SNAPS 352, ST SNAPS 25 |
+| Brandon Boykin | CB | DEF SNAPS 129, ST SNAPS 120 |
+| Cary Williams | CB | DEF SNAPS 352, ST SNAPS 25 |
+| Dwayne Gratz | CB | DEF SNAPS 175, PEN 1, PEN YDS 17, ST SNAPS 39 |
+| Nolan Carroll | CB | DEF SNAPS 4, ST SNAPS 30 |
+| Brandon Bair | DE | DEF SNAPS 4 |
+| Cedric Thornton | DE | DEF SNAPS 352, ST SNAPS 25 |
+| Fletcher Cox | DE | DEF SNAPS 352, ST SNAPS 25 |
+| Vinny Curry | DE | DEF SNAPS 245, ST SNAPS 25 |
+| Allen Barbre | G | OFF SNAPS 126, ST SNAPS 26 |
+| Andrew Gardner | G | OFF SNAPS 38, ST SNAPS 13 |
+| Evan Mathis | G | OFF SNAPS 243, ST SNAPS 17 |
+| Luke Joeckel | G | OFF SNAPS 346, PEN 1, PEN YDS 10, ST SNAPS 26 |
+| Matt Tobin | G | ST SNAPS 3 |
+| Todd Herremans | G | OFF SNAPS 346, ST SNAPS 26 |
+| Casey Matthews | ILB | DEF SNAPS 3, ST SNAPS 122 |
+| DeMeco Ryans | ILB | DEF SNAPS 352, PEN 1, PEN YDS 15, ST SNAPS 25 |
+| Mychal Kendricks | ILB | DEF SNAPS 176, ST SNAPS 25 |
+| Najee Goode | ILB | DEF SNAPS 1, ST SNAPS 122 |
+| Cody Parkey | K | ST SNAPS 56 |
+| Jon Dorenbos | LS | ST SNAPS 59 |
+| Beau Allen | NT | DEF SNAPS 1 |
+| Bennie Logan | NT | DEF SNAPS 352, ST SNAPS 25 |
+| Brandon Graham | OLB | ST SNAPS 122 |
+| Connor Barwin | OLB | DEF SNAPS 12 |
+| Marcus Smith | OLB | ST SNAPS 18 |
+| Trent Cole | OLB | DEF SNAPS 352, PEN 1, PEN YDS 15, ST SNAPS 25 |
+| Donnie Jones | P | ST SNAPS 59 |
+| Nick Foles | QB | RUSH LNG 27, OFF SNAPS 346 |
+| Chris Polk | RB | REC LNG 6, OFF SNAPS 20, ST SNAPS 122 |
+| Darren Sproles | RB | REC LNG 24, OFF SNAPS 132, ST SNAPS 29 |
+| LeSean McCoy | RB | REC LNG 38, OFF SNAPS 288 |
+| Malcolm Jenkins | S | DEF SNAPS 352, ST SNAPS 25 |
+| Nate Allen | S | DEF SNAPS 326, ST SNAPS 55 |
+| Jason Peters | T | OWN FUM REC 1, OFF SNAPS 346, ST SNAPS 26 |
+| Brent Celek | TE | OFF SNAPS 346, ST SNAPS 26 |
+| James Casey | TE | ST SNAPS 122 |
+| Trey Burton | TE | ST SNAPS 39 |
+| Zach Ertz | TE | OFF SNAPS 102, ST SNAPS 148 |
+| Ace Sanders | WR | OFF SNAPS 7, ST SNAPS 77 |
+| Brad Smith | WR | OFF SNAPS 298 |
+| Jeff Maehl | WR | OFF SNAPS 37, ST SNAPS 95 |
+| Jeremy Maclin | WR | RUSH LNG 2, OFF SNAPS 281 |
+| Jordan Matthews | WR | OFF SNAPS 182, ST SNAPS 8 |
+| Josh Huff | WR | OFF SNAPS 29 |
+| Riley Cooper | WR | OFF SNAPS 22 |
 
 ## Pittsburgh Steelers
 
@@ -4474,51 +4473,51 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Maurkice Pouncey | C | offensive_snaps 323, special_teams_snaps 28 |
-| Brice McCain | CB | defensive_snaps 2, special_teams_snaps 73 |
-| Cortez Allen | CB | defensive_snaps 326, special_teams_snaps 22 |
-| Ivan Taylor | CB | defensive_snaps 326, special_teams_snaps 22 |
-| William Gay | CB | defensive_snaps 109, special_teams_snaps 93 |
-| Brett Keisel | DE | defensive_snaps 2 |
-| Stephon Tuitt | DE | defensive_snaps 227, special_teams_snaps 22 |
-| Cameron Heyward | DT | defensive_snaps 324, special_teams_snaps 22 |
-| Will Johnson | FB | REC LNG 2, offensive_snaps 80, special_teams_snaps 93 |
-| Michael Mitchell | FS | defensive_snaps 253, special_teams_snaps 18 |
-| Will Allen | FS | defensive_snaps 224, special_teams_snaps 79 |
-| David DeCastro | G | offensive_snaps 326, special_teams_snaps 28 |
-| Ramon Foster | G | offensive_snaps 326, special_teams_snaps 28 |
-| Ryan Shazier | ILB | INT YDS 3, defensive_snaps 326, special_teams_snaps 22 |
-| Sean Spence | ILB | special_teams_snaps 7 |
-| Vince Williams | ILB | defensive_snaps 1, special_teams_snaps 93 |
-| Shaun Suisham | K | special_teams_snaps 60 |
-| Greg Warren | LS | special_teams_snaps 46 |
-| Cam Thomas | NT | defensive_snaps 326, special_teams_snaps 22 |
-| Daniel McCullers | NT | defensive_snaps 11 |
-| Steve McLendon | NT | defensive_snaps 326, special_teams_snaps 22 |
-| Arthur Moats | OLB | defensive_snaps 1, special_teams_snaps 83 |
-| Jarvis Jones | OLB | defensive_snaps 13 |
-| Jason Worilds | OLB | defensive_snaps 326, special_teams_snaps 22 |
-| Lawrence Timmons | OLB | defensive_snaps 162, special_teams_snaps 22 |
-| Terence Garvin | OLB | special_teams_snaps 86 |
-| Brad Wing | P | special_teams_snaps 46 |
-| Ben Roethlisberger | QB | RUSH LNG 18, offensive_snaps 326 |
-| Dri Archer | RB | offensive_snaps 6, special_teams_snaps 25 |
-| Le'Veon Bell | RB | REC LNG 55, offensive_snaps 326 |
-| LeGarrette Blount | RB | REC LNG 28, offensive_snaps 31, special_teams_snaps 70 |
-| Shamarko Thomas | SS | defensive_snaps 1, special_teams_snaps 20 |
-| Troy Polamalu | SS | defensive_snaps 326, special_teams_snaps 22 |
-| Kelvin Beachum | T | offensive_snaps 326, special_teams_snaps 28 |
-| Marcus Gilbert | T | offensive_snaps 326, special_teams_snaps 28 |
-| Mike Adams (PIT) | T | offensive_snaps 3, special_teams_snaps 28 |
-| Heath Miller | TE | offensive_snaps 326, special_teams_snaps 28 |
-| Matt Spaeth | TE | offensive_snaps 96, special_teams_snaps 121 |
-| Michael Palmer | TE | special_teams_snaps 26 |
-| Antonio Brown | WR | offensive_snaps 276, penalties 1, penalty_yards 10, special_teams_snaps 15 |
-| Darrius Heyward-Bey | WR | offensive_snaps 1, special_teams_snaps 23 |
-| Justin Brown | WR | offensive_snaps 172 |
-| Lance Moore | WR | offensive_snaps 4, special_teams_snaps 54 |
-| Markus Wheaton | WR | offensive_snaps 326 |
-| Martavis Bryant | WR | offensive_snaps 24, special_teams_snaps 8 |
+| Maurkice Pouncey | C | OFF SNAPS 323, ST SNAPS 28 |
+| Brice McCain | CB | DEF SNAPS 2, ST SNAPS 73 |
+| Cortez Allen | CB | DEF SNAPS 326, ST SNAPS 22 |
+| Ivan Taylor | CB | DEF SNAPS 326, ST SNAPS 22 |
+| William Gay | CB | DEF SNAPS 109, ST SNAPS 93 |
+| Brett Keisel | DE | DEF SNAPS 2 |
+| Stephon Tuitt | DE | DEF SNAPS 227, ST SNAPS 22 |
+| Cameron Heyward | DT | DEF SNAPS 324, ST SNAPS 22 |
+| Will Johnson | FB | REC LNG 2, OFF SNAPS 80, ST SNAPS 93 |
+| Michael Mitchell | FS | DEF SNAPS 253, ST SNAPS 18 |
+| Will Allen | FS | DEF SNAPS 224, ST SNAPS 79 |
+| David DeCastro | G | OFF SNAPS 326, ST SNAPS 28 |
+| Ramon Foster | G | OFF SNAPS 326, ST SNAPS 28 |
+| Ryan Shazier | ILB | INT YDS 3, DEF SNAPS 326, ST SNAPS 22 |
+| Sean Spence | ILB | ST SNAPS 7 |
+| Vince Williams | ILB | DEF SNAPS 1, ST SNAPS 93 |
+| Shaun Suisham | K | ST SNAPS 60 |
+| Greg Warren | LS | ST SNAPS 46 |
+| Cam Thomas | NT | DEF SNAPS 326, ST SNAPS 22 |
+| Daniel McCullers | NT | DEF SNAPS 11 |
+| Steve McLendon | NT | DEF SNAPS 326, ST SNAPS 22 |
+| Arthur Moats | OLB | DEF SNAPS 1, ST SNAPS 83 |
+| Jarvis Jones | OLB | DEF SNAPS 13 |
+| Jason Worilds | OLB | DEF SNAPS 326, ST SNAPS 22 |
+| Lawrence Timmons | OLB | DEF SNAPS 162, ST SNAPS 22 |
+| Terence Garvin | OLB | ST SNAPS 86 |
+| Brad Wing | P | ST SNAPS 46 |
+| Ben Roethlisberger | QB | RUSH LNG 18, OFF SNAPS 326 |
+| Dri Archer | RB | OFF SNAPS 6, ST SNAPS 25 |
+| Le'Veon Bell | RB | REC LNG 55, OFF SNAPS 326 |
+| LeGarrette Blount | RB | REC LNG 28, OFF SNAPS 31, ST SNAPS 70 |
+| Shamarko Thomas | SS | DEF SNAPS 1, ST SNAPS 20 |
+| Troy Polamalu | SS | DEF SNAPS 326, ST SNAPS 22 |
+| Kelvin Beachum | T | OFF SNAPS 326, ST SNAPS 28 |
+| Marcus Gilbert | T | OFF SNAPS 326, ST SNAPS 28 |
+| Mike Adams (PIT) | T | OFF SNAPS 3, ST SNAPS 28 |
+| Heath Miller | TE | OFF SNAPS 326, ST SNAPS 28 |
+| Matt Spaeth | TE | OFF SNAPS 96, ST SNAPS 121 |
+| Michael Palmer | TE | ST SNAPS 26 |
+| Antonio Brown | WR | OFF SNAPS 276, PEN 1, PEN YDS 10, ST SNAPS 15 |
+| Darrius Heyward-Bey | WR | OFF SNAPS 1, ST SNAPS 23 |
+| Justin Brown | WR | OFF SNAPS 172 |
+| Lance Moore | WR | OFF SNAPS 4, ST SNAPS 54 |
+| Markus Wheaton | WR | OFF SNAPS 326 |
+| Martavis Bryant | WR | OFF SNAPS 24, ST SNAPS 8 |
 
 ## San Diego Chargers
 
@@ -4653,51 +4652,51 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Nick Hardwick | C | offensive_snaps 316, penalties 1, penalty_yards 5, special_teams_snaps 19 |
-| Brandon Flowers | CB | defensive_snaps 322, penalties 3, penalty_yards 14, special_teams_snaps 21 |
-| Jason Verrett | CB | defensive_snaps 258, penalties 2, penalty_yards 11, special_teams_snaps 87 |
-| Richard Marshall | CB | defensive_snaps 4, special_teams_snaps 88 |
-| Shareece Wright | CB | defensive_snaps 309, special_teams_snaps 21 |
-| Kendall Reyes | DE | defensive_snaps 322, special_teams_snaps 21 |
-| Corey Liuget | DT | defensive_snaps 322, special_teams_snaps 21 |
-| Lawrence Guy | DT | defensive_snaps 185, special_teams_snaps 18 |
-| Ricardo Mathews | DT | defensive_snaps 1 |
-| Ryan Carrethers | DT | defensive_snaps 4 |
-| Sean Lissemore | DT | defensive_snaps 322, special_teams_snaps 21 |
-| Tenny Palepoi | DT | defensive_snaps 44, special_teams_snaps 3 |
-| Darrell Stuckey | FS | defensive_snaps 13, special_teams_snaps 88 |
-| Eric Weddle | FS | defensive_snaps 322, special_teams_snaps 21 |
-| Chad Rinehart | G | offensive_snaps 316, special_teams_snaps 19 |
-| D.J. Fluker | G | offensive_snaps 316, penalties 1, penalty_yards 5, special_teams_snaps 19 |
-| Johnnie Troutman | G | offensive_snaps 316, special_teams_snaps 19 |
-| Donald Butler | ILB | defensive_snaps 160, penalties 1, penalty_yards 11, special_teams_snaps 21 |
-| Kavell Conner | ILB | defensive_snaps 2, special_teams_snaps 88 |
-| Manti Te'o | ILB | defensive_snaps 322, special_teams_snaps 21 |
-| Reggie Walker | ILB | defensive_snaps 2, special_teams_snaps 88 |
-| Nick Novak | K | special_teams_snaps 43 |
-| Mike Windt | LS | special_teams_snaps 41 |
-| Jarret Johnson | OLB | defensive_snaps 4 |
-| Melvin Ingram | OLB | defensive_snaps 322, special_teams_snaps 21 |
-| Tourek Williams | OLB | special_teams_snaps 88 |
-| Mike Scifres | P | special_teams_snaps 41 |
-| Philip Rivers | QB | RUSH LNG 10, fumbles_recovered_own 1, offensive_snaps 316 |
-| Branden Oliver | RB | offensive_snaps 3, special_teams_snaps 38 |
-| Danny Woodhead | RB | REC LNG 32, offensive_snaps 178, special_teams_snaps 50 |
-| Donald Brown | RB | REC LNG 5, offensive_snaps 41, special_teams_snaps 23 |
-| Ryan Mathews | RB | REC LNG 27, offensive_snaps 188 |
-| Jahleel Addae | SS | special_teams_snaps 11 |
-| Marcus Gilchrist | SS | defensive_snaps 322, special_teams_snaps 21 |
-| King Dunlap | T | offensive_snaps 316, special_teams_snaps 19 |
-| Willie Smith | T | special_teams_snaps 19 |
-| Antonio Gates | TE | offensive_snaps 316, special_teams_snaps 19 |
-| David Johnson | TE | offensive_snaps 2 |
-| John Phillips | TE | special_teams_snaps 37 |
-| Ladarius Green | TE | offensive_snaps 94, special_teams_snaps 107 |
-| Dontrelle Inman | WR | offensive_snaps 2 |
-| Eddie Royal | WR | RUSH LNG 15, offensive_snaps 140, special_teams_snaps 19 |
-| Keenan Allen | WR | RUSH LNG 8, offensive_snaps 316 |
-| Malcom Floyd | WR | offensive_snaps 316 |
-| Seyi Ajirotutu | WR | offensive_snaps 7, special_teams_snaps 88 |
+| Nick Hardwick | C | OFF SNAPS 316, PEN 1, PEN YDS 5, ST SNAPS 19 |
+| Brandon Flowers | CB | DEF SNAPS 322, PEN 3, PEN YDS 14, ST SNAPS 21 |
+| Jason Verrett | CB | DEF SNAPS 258, PEN 2, PEN YDS 11, ST SNAPS 87 |
+| Richard Marshall | CB | DEF SNAPS 4, ST SNAPS 88 |
+| Shareece Wright | CB | DEF SNAPS 309, ST SNAPS 21 |
+| Kendall Reyes | DE | DEF SNAPS 322, ST SNAPS 21 |
+| Corey Liuget | DT | DEF SNAPS 322, ST SNAPS 21 |
+| Lawrence Guy | DT | DEF SNAPS 185, ST SNAPS 18 |
+| Ricardo Mathews | DT | DEF SNAPS 1 |
+| Ryan Carrethers | DT | DEF SNAPS 4 |
+| Sean Lissemore | DT | DEF SNAPS 322, ST SNAPS 21 |
+| Tenny Palepoi | DT | DEF SNAPS 44, ST SNAPS 3 |
+| Darrell Stuckey | FS | DEF SNAPS 13, ST SNAPS 88 |
+| Eric Weddle | FS | DEF SNAPS 322, ST SNAPS 21 |
+| Chad Rinehart | G | OFF SNAPS 316, ST SNAPS 19 |
+| D.J. Fluker | G | OFF SNAPS 316, PEN 1, PEN YDS 5, ST SNAPS 19 |
+| Johnnie Troutman | G | OFF SNAPS 316, ST SNAPS 19 |
+| Donald Butler | ILB | DEF SNAPS 160, PEN 1, PEN YDS 11, ST SNAPS 21 |
+| Kavell Conner | ILB | DEF SNAPS 2, ST SNAPS 88 |
+| Manti Te'o | ILB | DEF SNAPS 322, ST SNAPS 21 |
+| Reggie Walker | ILB | DEF SNAPS 2, ST SNAPS 88 |
+| Nick Novak | K | ST SNAPS 43 |
+| Mike Windt | LS | ST SNAPS 41 |
+| Jarret Johnson | OLB | DEF SNAPS 4 |
+| Melvin Ingram | OLB | DEF SNAPS 322, ST SNAPS 21 |
+| Tourek Williams | OLB | ST SNAPS 88 |
+| Mike Scifres | P | ST SNAPS 41 |
+| Philip Rivers | QB | RUSH LNG 10, OWN FUM REC 1, OFF SNAPS 316 |
+| Branden Oliver | RB | OFF SNAPS 3, ST SNAPS 38 |
+| Danny Woodhead | RB | REC LNG 32, OFF SNAPS 178, ST SNAPS 50 |
+| Donald Brown | RB | REC LNG 5, OFF SNAPS 41, ST SNAPS 23 |
+| Ryan Mathews | RB | REC LNG 27, OFF SNAPS 188 |
+| Jahleel Addae | SS | ST SNAPS 11 |
+| Marcus Gilchrist | SS | DEF SNAPS 322, ST SNAPS 21 |
+| King Dunlap | T | OFF SNAPS 316, ST SNAPS 19 |
+| Willie Smith | T | ST SNAPS 19 |
+| Antonio Gates | TE | OFF SNAPS 316, ST SNAPS 19 |
+| David Johnson | TE | OFF SNAPS 2 |
+| John Phillips | TE | ST SNAPS 37 |
+| Ladarius Green | TE | OFF SNAPS 94, ST SNAPS 107 |
+| Dontrelle Inman | WR | OFF SNAPS 2 |
+| Eddie Royal | WR | RUSH LNG 15, OFF SNAPS 140, ST SNAPS 19 |
+| Keenan Allen | WR | RUSH LNG 8, OFF SNAPS 316 |
+| Malcom Floyd | WR | OFF SNAPS 316 |
+| Seyi Ajirotutu | WR | OFF SNAPS 7, ST SNAPS 88 |
 
 ## San Francisco 49ers
 
@@ -4830,53 +4829,53 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Daniel Kilgore | C | offensive_snaps 324, special_teams_snaps 23 |
-| Joe Looney | C | offensive_snaps 324, special_teams_snaps 23 |
-| Chris Cook | CB | defensive_snaps 3, special_teams_snaps 84 |
-| Chris Culliver | CB | defensive_snaps 324, special_teams_snaps 28 |
-| Perrish Cox | CB | defensive_snaps 257, special_teams_snaps 84 |
-| Tramaine Brock | CB | defensive_snaps 324, special_teams_snaps 28 |
-| Cornellius Carradine | DE | defensive_snaps 1 |
-| Demarcus Dobbs | DE | defensive_snaps 90, special_teams_snaps 9 |
-| Justin Smith | DE | defensive_snaps 324, special_teams_snaps 28 |
-| Ray McDonald | DE | defensive_snaps 198, special_teams_snaps 19 |
-| Tony Jerod-Eddie | DT | defensive_snaps 262, penalties 1, penalty_yards 15, special_teams_snaps 28 |
-| Bruce Miller | FB | REC LNG 17, offensive_snaps 51, special_teams_snaps 55 |
-| Eric Reid | FS | defensive_snaps 324, special_teams_snaps 28 |
-| Jimmie Ward | FS | defensive_snaps 3, special_teams_snaps 84 |
-| Dillon Farrell | G | special_teams_snaps 23 |
-| Mike Iupati | G | offensive_snaps 324, special_teams_snaps 23 |
-| Chris Borland | ILB | defensive_snaps 43, penalties 1, penalty_yards 5, special_teams_snaps 69 |
-| Michael Wilhoite | ILB | defensive_snaps 97, special_teams_snaps 8 |
-| Nick Moody | ILB | defensive_snaps 2, special_teams_snaps 64 |
-| Patrick Willis | ILB | defensive_snaps 237, special_teams_snaps 21 |
-| Phil Dawson | K | special_teams_snaps 43 |
-| Kyle Nelson | LS | special_teams_snaps 42 |
-| Ian Williams | NT | defensive_snaps 324, special_teams_snaps 28 |
-| Quinton Dial | NT | defensive_snaps 3 |
-| Aaron Lynch | OLB | special_teams_snaps 84 |
-| Ahmad Brooks | OLB | defensive_snaps 209, penalties 1, penalty_yards 4, special_teams_snaps 28 |
-| Corey Lemonier | OLB | special_teams_snaps 16 |
-| Dan Skuta | OLB | defensive_snaps 227, special_teams_snaps 20 |
-| Andy Lee | P | special_teams_snaps 42 |
-| Colin Kaepernick | QB | RUSH LNG 17, offensive_snaps 324, penalties 1, penalty_yards 5 |
-| Carlos Hyde | RB | REC LNG 13, offensive_snaps 48, special_teams_snaps 65 |
-| Frank Gore | RB | REC LNG 74, offensive_snaps 324 |
-| LaMichael James | RB | offensive_snaps 4, special_teams_snaps 6 |
-| Antoine Bethea | SS | defensive_snaps 324, penalties 1, penalty_yards 6, special_teams_snaps 28 |
-| Craig Dahl | SS | defensive_snaps 1, special_teams_snaps 9 |
-| Anthony Davis | T | offensive_snaps 250, special_teams_snaps 17 |
-| Joe Staley | T | offensive_snaps 324, special_teams_snaps 23 |
-| Jonathan Martin | T | offensive_snaps 74, special_teams_snaps 6 |
-| Derek Carrier | TE | special_teams_snaps 21 |
-| Vance McDonald | TE | offensive_snaps 95, penalties 1, penalty_yards 10, special_teams_snaps 107 |
-| Vernon Davis | TE | offensive_snaps 324, special_teams_snaps 23 |
-| Anquan Boldin | WR | RUSH LNG 9, offensive_snaps 324 |
-| Brandon Lloyd | WR | offensive_snaps 11, special_teams_snaps 84 |
-| Bruce Ellington | WR | offensive_snaps 2, special_teams_snaps 45 |
-| Michael Crabtree | WR | offensive_snaps 324 |
-| Quinton Patton | WR | special_teams_snaps 2 |
-| Steve Johnson | WR | offensive_snaps 145 |
+| Daniel Kilgore | C | OFF SNAPS 324, ST SNAPS 23 |
+| Joe Looney | C | OFF SNAPS 324, ST SNAPS 23 |
+| Chris Cook | CB | DEF SNAPS 3, ST SNAPS 84 |
+| Chris Culliver | CB | DEF SNAPS 324, ST SNAPS 28 |
+| Perrish Cox | CB | DEF SNAPS 257, ST SNAPS 84 |
+| Tramaine Brock | CB | DEF SNAPS 324, ST SNAPS 28 |
+| Cornellius Carradine | DE | DEF SNAPS 1 |
+| Demarcus Dobbs | DE | DEF SNAPS 90, ST SNAPS 9 |
+| Justin Smith | DE | DEF SNAPS 324, ST SNAPS 28 |
+| Ray McDonald | DE | DEF SNAPS 198, ST SNAPS 19 |
+| Tony Jerod-Eddie | DT | DEF SNAPS 262, PEN 1, PEN YDS 15, ST SNAPS 28 |
+| Bruce Miller | FB | REC LNG 17, OFF SNAPS 51, ST SNAPS 55 |
+| Eric Reid | FS | DEF SNAPS 324, ST SNAPS 28 |
+| Jimmie Ward | FS | DEF SNAPS 3, ST SNAPS 84 |
+| Dillon Farrell | G | ST SNAPS 23 |
+| Mike Iupati | G | OFF SNAPS 324, ST SNAPS 23 |
+| Chris Borland | ILB | DEF SNAPS 43, PEN 1, PEN YDS 5, ST SNAPS 69 |
+| Michael Wilhoite | ILB | DEF SNAPS 97, ST SNAPS 8 |
+| Nick Moody | ILB | DEF SNAPS 2, ST SNAPS 64 |
+| Patrick Willis | ILB | DEF SNAPS 237, ST SNAPS 21 |
+| Phil Dawson | K | ST SNAPS 43 |
+| Kyle Nelson | LS | ST SNAPS 42 |
+| Ian Williams | NT | DEF SNAPS 324, ST SNAPS 28 |
+| Quinton Dial | NT | DEF SNAPS 3 |
+| Aaron Lynch | OLB | ST SNAPS 84 |
+| Ahmad Brooks | OLB | DEF SNAPS 209, PEN 1, PEN YDS 4, ST SNAPS 28 |
+| Corey Lemonier | OLB | ST SNAPS 16 |
+| Dan Skuta | OLB | DEF SNAPS 227, ST SNAPS 20 |
+| Andy Lee | P | ST SNAPS 42 |
+| Colin Kaepernick | QB | RUSH LNG 17, OFF SNAPS 324, PEN 1, PEN YDS 5 |
+| Carlos Hyde | RB | REC LNG 13, OFF SNAPS 48, ST SNAPS 65 |
+| Frank Gore | RB | REC LNG 74, OFF SNAPS 324 |
+| LaMichael James | RB | OFF SNAPS 4, ST SNAPS 6 |
+| Antoine Bethea | SS | DEF SNAPS 324, PEN 1, PEN YDS 6, ST SNAPS 28 |
+| Craig Dahl | SS | DEF SNAPS 1, ST SNAPS 9 |
+| Anthony Davis | T | OFF SNAPS 250, ST SNAPS 17 |
+| Joe Staley | T | OFF SNAPS 324, ST SNAPS 23 |
+| Jonathan Martin | T | OFF SNAPS 74, ST SNAPS 6 |
+| Derek Carrier | TE | ST SNAPS 21 |
+| Vance McDonald | TE | OFF SNAPS 95, PEN 1, PEN YDS 10, ST SNAPS 107 |
+| Vernon Davis | TE | OFF SNAPS 324, ST SNAPS 23 |
+| Anquan Boldin | WR | RUSH LNG 9, OFF SNAPS 324 |
+| Brandon Lloyd | WR | OFF SNAPS 11, ST SNAPS 84 |
+| Bruce Ellington | WR | OFF SNAPS 2, ST SNAPS 45 |
+| Michael Crabtree | WR | OFF SNAPS 324 |
+| Quinton Patton | WR | ST SNAPS 2 |
+| Steve Johnson | WR | OFF SNAPS 145 |
 
 ## Seattle Seahawks
 
@@ -5010,50 +5009,50 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Justin Britt | C | offensive_snaps 273, special_teams_snaps 20 |
-| Max Unger | C | offensive_snaps 273, special_teams_snaps 20 |
-| Byron Maxwell | CB | defensive_snaps 271, special_teams_snaps 18 |
-| Jeremy Lane | CB | defensive_snaps 215, penalties 1, penalty_yards 9, special_teams_snaps 84 |
-| Richard Sherman | CB | defensive_snaps 271, penalties 1, penalty_yards 8, special_teams_snaps 18 |
-| Cliff Avril | DE | INT YDS 35, defensive_snaps 271, special_teams_snaps 18 |
-| Michael Bennett | DE | defensive_snaps 271, special_teams_snaps 18 |
-| Jordan Hill | DT | defensive_snaps 1 |
-| Kevin Williams | DT | defensive_snaps 5 |
-| Tony McDaniel | DT | defensive_snaps 187, special_teams_snaps 18 |
-| Derrick Coleman | FB | REC LNG 18, offensive_snaps 68, special_teams_snaps 84 |
-| DeShawn Shead | FS | defensive_snaps 1, special_teams_snaps 43 |
-| Earl Thomas | FS | FUM 1, defensive_snaps 271, muffs 1, special_teams_snaps 40 |
-| Alvin Bailey | G | special_teams_snaps 20 |
-| J.R. Sweezy | G | offensive_snaps 273, special_teams_snaps 20 |
-| James Carpenter | G | offensive_snaps 273, special_teams_snaps 20 |
-| Stephen Hauschka | K | special_teams_snaps 40 |
-| O'Brien Schofield | LB | defensive_snaps 1, special_teams_snaps 84 |
-| Clint Gresham | LS | special_teams_snaps 41 |
-| Bobby Wagner | MLB | defensive_snaps 178, special_teams_snaps 18 |
-| Brock Coyle | MLB | defensive_snaps 4, special_teams_snaps 50 |
-| Brandon Mebane | NT | defensive_snaps 271, special_teams_snaps 18 |
-| Bruce Irvin | OLB | defensive_snaps 47, special_teams_snaps 7 |
-| K.J. Wright | OLB | defensive_snaps 271, fumble_return_touchdowns 1, special_teams_snaps 18 |
-| Malcolm Smith | OLB | defensive_snaps 185, special_teams_snaps 11 |
-| Michael Morgan | OLB | special_teams_snaps 63 |
-| Jon Ryan | P | special_teams_snaps 41 |
-| Russell Wilson | QB | RUSH LNG 23, fumbles_recovered_own 1, offensive_snaps 273 |
-| Christine Michael | RB | offensive_snaps 4, special_teams_snaps 7 |
-| Marshawn Lynch | RB | REC LNG 25, offensive_snaps 273 |
-| Robert Turbin | RB | REC LNG 68, offensive_snaps 25, special_teams_snaps 74 |
-| Jeron Johnson | SS | defensive_snaps 3, special_teams_snaps 84 |
-| Kam Chancellor | SS | defensive_snaps 271, penalties 2, penalty_yards 12, special_teams_snaps 18 |
-| Russell Okung | T | offensive_snaps 273, special_teams_snaps 20 |
-| Cooper Helfet | TE | offensive_snaps 1 |
-| Greg Scruggs | TE | offensive_snaps 1, special_teams_snaps 49 |
-| Luke Willson | TE | offensive_snaps 79, special_teams_snaps 104 |
-| Zach Miller | TE | offensive_snaps 273, special_teams_snaps 20 |
-| Doug Baldwin | WR | offensive_snaps 273 |
-| Jermaine Kearse | WR | offensive_snaps 121 |
-| Kevin Norwood | WR | offensive_snaps 1 |
-| Paul Richardson | WR | offensive_snaps 1, special_teams_snaps 7 |
-| Percy Harvin | WR | RUSH LNG 2, offensive_snaps 273, special_teams_snaps 21 |
-| Ricardo Lockette | WR | RUSH LNG 1, offensive_snaps 12, special_teams_snaps 84 |
+| Justin Britt | C | OFF SNAPS 273, ST SNAPS 20 |
+| Max Unger | C | OFF SNAPS 273, ST SNAPS 20 |
+| Byron Maxwell | CB | DEF SNAPS 271, ST SNAPS 18 |
+| Jeremy Lane | CB | DEF SNAPS 215, PEN 1, PEN YDS 9, ST SNAPS 84 |
+| Richard Sherman | CB | DEF SNAPS 271, PEN 1, PEN YDS 8, ST SNAPS 18 |
+| Cliff Avril | DE | INT YDS 35, DEF SNAPS 271, ST SNAPS 18 |
+| Michael Bennett | DE | DEF SNAPS 271, ST SNAPS 18 |
+| Jordan Hill | DT | DEF SNAPS 1 |
+| Kevin Williams | DT | DEF SNAPS 5 |
+| Tony McDaniel | DT | DEF SNAPS 187, ST SNAPS 18 |
+| Derrick Coleman | FB | REC LNG 18, OFF SNAPS 68, ST SNAPS 84 |
+| DeShawn Shead | FS | DEF SNAPS 1, ST SNAPS 43 |
+| Earl Thomas | FS | FUM 1, DEF SNAPS 271, MUFFS 1, ST SNAPS 40 |
+| Alvin Bailey | G | ST SNAPS 20 |
+| J.R. Sweezy | G | OFF SNAPS 273, ST SNAPS 20 |
+| James Carpenter | G | OFF SNAPS 273, ST SNAPS 20 |
+| Stephen Hauschka | K | ST SNAPS 40 |
+| O'Brien Schofield | LB | DEF SNAPS 1, ST SNAPS 84 |
+| Clint Gresham | LS | ST SNAPS 41 |
+| Bobby Wagner | MLB | DEF SNAPS 178, ST SNAPS 18 |
+| Brock Coyle | MLB | DEF SNAPS 4, ST SNAPS 50 |
+| Brandon Mebane | NT | DEF SNAPS 271, ST SNAPS 18 |
+| Bruce Irvin | OLB | DEF SNAPS 47, ST SNAPS 7 |
+| K.J. Wright | OLB | DEF SNAPS 271, FUM TD 1, ST SNAPS 18 |
+| Malcolm Smith | OLB | DEF SNAPS 185, ST SNAPS 11 |
+| Michael Morgan | OLB | ST SNAPS 63 |
+| Jon Ryan | P | ST SNAPS 41 |
+| Russell Wilson | QB | RUSH LNG 23, OWN FUM REC 1, OFF SNAPS 273 |
+| Christine Michael | RB | OFF SNAPS 4, ST SNAPS 7 |
+| Marshawn Lynch | RB | REC LNG 25, OFF SNAPS 273 |
+| Robert Turbin | RB | REC LNG 68, OFF SNAPS 25, ST SNAPS 74 |
+| Jeron Johnson | SS | DEF SNAPS 3, ST SNAPS 84 |
+| Kam Chancellor | SS | DEF SNAPS 271, PEN 2, PEN YDS 12, ST SNAPS 18 |
+| Russell Okung | T | OFF SNAPS 273, ST SNAPS 20 |
+| Cooper Helfet | TE | OFF SNAPS 1 |
+| Greg Scruggs | TE | OFF SNAPS 1, ST SNAPS 49 |
+| Luke Willson | TE | OFF SNAPS 79, ST SNAPS 104 |
+| Zach Miller | TE | OFF SNAPS 273, ST SNAPS 20 |
+| Doug Baldwin | WR | OFF SNAPS 273 |
+| Jermaine Kearse | WR | OFF SNAPS 121 |
+| Kevin Norwood | WR | OFF SNAPS 1 |
+| Paul Richardson | WR | OFF SNAPS 1, ST SNAPS 7 |
+| Percy Harvin | WR | RUSH LNG 2, OFF SNAPS 273, ST SNAPS 21 |
+| Ricardo Lockette | WR | RUSH LNG 1, OFF SNAPS 12, ST SNAPS 84 |
 
 ## St. Louis Rams
 
@@ -5188,50 +5187,50 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Scott Wells | C | offensive_snaps 266, penalties 1, penalty_yards 9, special_teams_snaps 16 |
-| Tim Barnes | C | special_teams_snaps 16 |
-| Brandon McGee | CB | defensive_snaps 248, special_teams_snaps 44 |
-| E.J. Gaines | CB | special_teams_snaps 20 |
-| Janoris Jenkins | CB | defensive_snaps 271, special_teams_snaps 18 |
-| Alex Carrington | DE | defensive_snaps 212, special_teams_snaps 18 |
-| Chris Long | DE | defensive_snaps 271, penalties 1, penalty_yards 5, special_teams_snaps 18 |
-| Eugene Sims | DE | defensive_snaps 1 |
-| Kendall Langford | DE | defensive_snaps 271, special_teams_snaps 18 |
-| Michael Brockers | DE | defensive_snaps 191, special_teams_snaps 14 |
-| William Hayes | DE | defensive_snaps 57, special_teams_snaps 4 |
-| Ethan Westbrooks | DT | defensive_snaps 3 |
-| Rodney McLeod | FS | defensive_snaps 174, special_teams_snaps 12 |
-| Davin Joseph | G | offensive_snaps 266, special_teams_snaps 16 |
-| Alec Ogletree | ILB | INT YDS 24, defensive_snaps 271, special_teams_snaps 18 |
-| Greg Zuerlein | K | special_teams_snaps 35 |
-| Jake McQuaide | LS | special_teams_snaps 40 |
-| Daren Bates | MLB | special_teams_snaps 91 |
-| James Laurinaitis | MLB | defensive_snaps 202, special_teams_snaps 14 |
-| Jo-Lonn Dunbar | OLB | INT YDS 15, defensive_snaps 170, special_teams_snaps 18 |
-| Ray-Ray Armstrong | OLB | defensive_snaps 5, special_teams_snaps 60 |
-| Robert Quinn | OLB | defensive_snaps 37, special_teams_snaps 7 |
-| Johnny Hekker | P | special_teams_snaps 40 |
-| Shaun Hill | QB | RUSH LNG 24, offensive_snaps 266, penalties 1, penalty_yards 2 |
-| Benny Cunningham | RB | offensive_snaps 12, special_teams_snaps 21 |
-| Chase Reynolds | RB | REC LNG 14, offensive_snaps 89, special_teams_snaps 87 |
-| Tre Mason | RB | special_teams_snaps 64 |
-| Trey Watts | RB | special_teams_snaps 15 |
-| Zac Stacy | RB | REC LNG 55, offensive_snaps 249 |
-| Maurice Alexander | SS | defensive_snaps 258, special_teams_snaps 42 |
-| T.J. McDonald | SS | defensive_snaps 271, penalties 1, penalty_yards 15, special_teams_snaps 18 |
-| Greg Robinson | T | offensive_snaps 266, special_teams_snaps 16 |
-| Jake Long | T | offensive_snaps 266, special_teams_snaps 16 |
-| Joe Barksdale | T | offensive_snaps 266, penalties 2, penalty_yards 15, special_teams_snaps 16 |
-| Alex Bayer | TE | offensive_snaps 1, special_teams_snaps 84 |
-| Cory Harkey | TE | special_teams_snaps 91 |
-| Jared Cook | TE | offensive_snaps 78, penalties 1, penalty_yards 10, special_teams_snaps 107 |
-| Lance Kendricks | TE | offensive_snaps 266, penalties 1, penalty_yards 10, special_teams_snaps 16 |
-| Austin Pettis | WR | RUSH LNG 2, offensive_snaps 118 |
-| Brian Quick | WR | offensive_snaps 5, special_teams_snaps 91 |
-| Chris Givens | WR | special_teams_snaps 91 |
-| Kenny Britt | WR | offensive_snaps 266 |
-| Stedman Bailey | WR | special_teams_snaps 9 |
-| Tavon Austin | WR | RUSH LNG 6, offensive_snaps 266, special_teams_snaps 27 |
+| Scott Wells | C | OFF SNAPS 266, PEN 1, PEN YDS 9, ST SNAPS 16 |
+| Tim Barnes | C | ST SNAPS 16 |
+| Brandon McGee | CB | DEF SNAPS 248, ST SNAPS 44 |
+| E.J. Gaines | CB | ST SNAPS 20 |
+| Janoris Jenkins | CB | DEF SNAPS 271, ST SNAPS 18 |
+| Alex Carrington | DE | DEF SNAPS 212, ST SNAPS 18 |
+| Chris Long | DE | DEF SNAPS 271, PEN 1, PEN YDS 5, ST SNAPS 18 |
+| Eugene Sims | DE | DEF SNAPS 1 |
+| Kendall Langford | DE | DEF SNAPS 271, ST SNAPS 18 |
+| Michael Brockers | DE | DEF SNAPS 191, ST SNAPS 14 |
+| William Hayes | DE | DEF SNAPS 57, ST SNAPS 4 |
+| Ethan Westbrooks | DT | DEF SNAPS 3 |
+| Rodney McLeod | FS | DEF SNAPS 174, ST SNAPS 12 |
+| Davin Joseph | G | OFF SNAPS 266, ST SNAPS 16 |
+| Alec Ogletree | ILB | INT YDS 24, DEF SNAPS 271, ST SNAPS 18 |
+| Greg Zuerlein | K | ST SNAPS 35 |
+| Jake McQuaide | LS | ST SNAPS 40 |
+| Daren Bates | MLB | ST SNAPS 91 |
+| James Laurinaitis | MLB | DEF SNAPS 202, ST SNAPS 14 |
+| Jo-Lonn Dunbar | OLB | INT YDS 15, DEF SNAPS 170, ST SNAPS 18 |
+| Ray-Ray Armstrong | OLB | DEF SNAPS 5, ST SNAPS 60 |
+| Robert Quinn | OLB | DEF SNAPS 37, ST SNAPS 7 |
+| Johnny Hekker | P | ST SNAPS 40 |
+| Shaun Hill | QB | RUSH LNG 24, OFF SNAPS 266, PEN 1, PEN YDS 2 |
+| Benny Cunningham | RB | OFF SNAPS 12, ST SNAPS 21 |
+| Chase Reynolds | RB | REC LNG 14, OFF SNAPS 89, ST SNAPS 87 |
+| Tre Mason | RB | ST SNAPS 64 |
+| Trey Watts | RB | ST SNAPS 15 |
+| Zac Stacy | RB | REC LNG 55, OFF SNAPS 249 |
+| Maurice Alexander | SS | DEF SNAPS 258, ST SNAPS 42 |
+| T.J. McDonald | SS | DEF SNAPS 271, PEN 1, PEN YDS 15, ST SNAPS 18 |
+| Greg Robinson | T | OFF SNAPS 266, ST SNAPS 16 |
+| Jake Long | T | OFF SNAPS 266, ST SNAPS 16 |
+| Joe Barksdale | T | OFF SNAPS 266, PEN 2, PEN YDS 15, ST SNAPS 16 |
+| Alex Bayer | TE | OFF SNAPS 1, ST SNAPS 84 |
+| Cory Harkey | TE | ST SNAPS 91 |
+| Jared Cook | TE | OFF SNAPS 78, PEN 1, PEN YDS 10, ST SNAPS 107 |
+| Lance Kendricks | TE | OFF SNAPS 266, PEN 1, PEN YDS 10, ST SNAPS 16 |
+| Austin Pettis | WR | RUSH LNG 2, OFF SNAPS 118 |
+| Brian Quick | WR | OFF SNAPS 5, ST SNAPS 91 |
+| Chris Givens | WR | ST SNAPS 91 |
+| Kenny Britt | WR | OFF SNAPS 266 |
+| Stedman Bailey | WR | ST SNAPS 9 |
+| Tavon Austin | WR | RUSH LNG 6, OFF SNAPS 266, ST SNAPS 27 |
 
 ## Tampa Bay Buccaneers
 
@@ -5372,50 +5371,50 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Evan Smith | C | offensive_snaps 328, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Johnthan Banks | CB | defensive_snaps 305, special_teams_snaps 41 |
-| Leonard Johnson | CB | defensive_snaps 308, special_teams_snaps 36 |
-| Mike Jenkins | CB | defensive_snaps 321, special_teams_snaps 22 |
-| Adrian Clayborn | DE | defensive_snaps 321, penalties 1, penalty_yards 15, special_teams_snaps 22 |
-| Michael Johnson | DE | defensive_snaps 196, special_teams_snaps 15 |
-| William Gholston | DE | defensive_snaps 1 |
-| Clinton McDonald | DT | defensive_snaps 260, special_teams_snaps 22 |
-| Da'Quan Bowers | DT | defensive_snaps 88, special_teams_snaps 7 |
-| Gerald McCoy | DT | defensive_snaps 321, special_teams_snaps 22 |
-| Jorvorskie Lane | FB | REC LNG 15, offensive_snaps 79, penalties 1, penalty_yards 10, special_teams_snaps 88 |
-| Dashon Goldson | FS | defensive_snaps 78, special_teams_snaps 6 |
-| Keith Tandy | FS | defensive_snaps 5, special_teams_snaps 88 |
-| Kevin Pamphile | G | special_teams_snaps 23 |
-| Logan Mankins | G | offensive_snaps 328, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Patrick Omameh | G | offensive_snaps 328, special_teams_snaps 23 |
-| Lavonte David | ILB | defensive_snaps 321, penalties 1, penalty_yards 5, special_teams_snaps 22 |
-| Patrick Murray | K | special_teams_snaps 50 |
-| Andrew DePaola | LS | special_teams_snaps 44 |
-| Dane Fletcher | MLB | defensive_snaps 41, penalties 1, penalty_yards 5, special_teams_snaps 5 |
-| Mason Foster | MLB | defensive_snaps 124, special_teams_snaps 17 |
-| Danny Lansanah | OLB | defensive_snaps 7, special_teams_snaps 78 |
-| Jonathan Casillas | OLB | defensive_snaps 321, special_teams_snaps 22 |
-| Scott Solomon | OLB | defensive_snaps 1, special_teams_snaps 88 |
-| Steven Means | OLB | special_teams_snaps 70 |
-| Michael Koenen | P | special_teams_snaps 44 |
-| Josh McCown | QB | RUSH LNG 22, offensive_snaps 328 |
-| Bobby Rainey | RB | REC LNG 22, offensive_snaps 32, penalties 1, penalty_yards 5, special_teams_snaps 15 |
-| Doug Martin | RB | REC LNG 18, offensive_snaps 328 |
-| Mike James | RB | special_teams_snaps 8 |
-| Bradley McDougald | SS | defensive_snaps 206, special_teams_snaps 58 |
-| Major Wright | SS | special_teams_snaps 82 |
-| Mark Barron | SS | defensive_snaps 321, penalties 1, penalty_yards 21, special_teams_snaps 22 |
-| Anthony Collins | T | offensive_snaps 328, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Demar Dotson | T | offensive_snaps 328, special_teams_snaps 23 |
-| Austin Seferian-Jenkins | TE | offensive_snaps 97, special_teams_snaps 111 |
-| Brandon Myers | TE | offensive_snaps 328, special_teams_snaps 23 |
-| Luke Stocker | TE | special_teams_snaps 57 |
-| Chris Owusu | WR | offensive_snaps 115, special_teams_snaps 20 |
-| Mike Evans | WR | offensive_snaps 328 |
-| Robert Herron | WR | offensive_snaps 1, special_teams_snaps 18 |
-| Russell Shepard | WR | offensive_snaps 34, special_teams_snaps 70 |
-| Solomon Patton | WR | offensive_snaps 1, special_teams_snaps 17 |
-| Vincent Jackson | WR | RUSH LNG 8, offensive_snaps 328, penalties 1, penalty_yards 10 |
+| Evan Smith | C | OFF SNAPS 328, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Johnthan Banks | CB | DEF SNAPS 305, ST SNAPS 41 |
+| Leonard Johnson | CB | DEF SNAPS 308, ST SNAPS 36 |
+| Mike Jenkins | CB | DEF SNAPS 321, ST SNAPS 22 |
+| Adrian Clayborn | DE | DEF SNAPS 321, PEN 1, PEN YDS 15, ST SNAPS 22 |
+| Michael Johnson | DE | DEF SNAPS 196, ST SNAPS 15 |
+| William Gholston | DE | DEF SNAPS 1 |
+| Clinton McDonald | DT | DEF SNAPS 260, ST SNAPS 22 |
+| Da'Quan Bowers | DT | DEF SNAPS 88, ST SNAPS 7 |
+| Gerald McCoy | DT | DEF SNAPS 321, ST SNAPS 22 |
+| Jorvorskie Lane | FB | REC LNG 15, OFF SNAPS 79, PEN 1, PEN YDS 10, ST SNAPS 88 |
+| Dashon Goldson | FS | DEF SNAPS 78, ST SNAPS 6 |
+| Keith Tandy | FS | DEF SNAPS 5, ST SNAPS 88 |
+| Kevin Pamphile | G | ST SNAPS 23 |
+| Logan Mankins | G | OFF SNAPS 328, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Patrick Omameh | G | OFF SNAPS 328, ST SNAPS 23 |
+| Lavonte David | ILB | DEF SNAPS 321, PEN 1, PEN YDS 5, ST SNAPS 22 |
+| Patrick Murray | K | ST SNAPS 50 |
+| Andrew DePaola | LS | ST SNAPS 44 |
+| Dane Fletcher | MLB | DEF SNAPS 41, PEN 1, PEN YDS 5, ST SNAPS 5 |
+| Mason Foster | MLB | DEF SNAPS 124, ST SNAPS 17 |
+| Danny Lansanah | OLB | DEF SNAPS 7, ST SNAPS 78 |
+| Jonathan Casillas | OLB | DEF SNAPS 321, ST SNAPS 22 |
+| Scott Solomon | OLB | DEF SNAPS 1, ST SNAPS 88 |
+| Steven Means | OLB | ST SNAPS 70 |
+| Michael Koenen | P | ST SNAPS 44 |
+| Josh McCown | QB | RUSH LNG 22, OFF SNAPS 328 |
+| Bobby Rainey | RB | REC LNG 22, OFF SNAPS 32, PEN 1, PEN YDS 5, ST SNAPS 15 |
+| Doug Martin | RB | REC LNG 18, OFF SNAPS 328 |
+| Mike James | RB | ST SNAPS 8 |
+| Bradley McDougald | SS | DEF SNAPS 206, ST SNAPS 58 |
+| Major Wright | SS | ST SNAPS 82 |
+| Mark Barron | SS | DEF SNAPS 321, PEN 1, PEN YDS 21, ST SNAPS 22 |
+| Anthony Collins | T | OFF SNAPS 328, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Demar Dotson | T | OFF SNAPS 328, ST SNAPS 23 |
+| Austin Seferian-Jenkins | TE | OFF SNAPS 97, ST SNAPS 111 |
+| Brandon Myers | TE | OFF SNAPS 328, ST SNAPS 23 |
+| Luke Stocker | TE | ST SNAPS 57 |
+| Chris Owusu | WR | OFF SNAPS 115, ST SNAPS 20 |
+| Mike Evans | WR | OFF SNAPS 328 |
+| Robert Herron | WR | OFF SNAPS 1, ST SNAPS 18 |
+| Russell Shepard | WR | OFF SNAPS 34, ST SNAPS 70 |
+| Solomon Patton | WR | OFF SNAPS 1, ST SNAPS 17 |
+| Vincent Jackson | WR | RUSH LNG 8, OFF SNAPS 328, PEN 1, PEN YDS 10 |
 
 ## Tennessee Titans
 
@@ -5549,52 +5548,52 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Brian Schwenke | C | offensive_snaps 323, penalties 2, penalty_yards 10, special_teams_snaps 23 |
-| Blidi Wreh-Wilson | CB | defensive_snaps 336, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Brandon Harris | CB | defensive_snaps 65, special_teams_snaps 98 |
-| Jason McCourty | CB | defensive_snaps 321, special_teams_snaps 23 |
-| DaQuan Jones | DE | defensive_snaps 2 |
-| Ropati Pitoitua | DE | defensive_snaps 336, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Jurrell Casey | DT | defensive_snaps 336, special_teams_snaps 23 |
-| Karl Klug | DT | defensive_snaps 2 |
-| Mike Martin | DT | defensive_snaps 232, special_teams_snaps 23 |
-| George Wilson | FS | defensive_snaps 217, special_teams_snaps 71 |
-| Michael Griffin | FS | defensive_snaps 336, special_teams_snaps 23 |
-| Andy Levitre | G | offensive_snaps 323, special_teams_snaps 23 |
-| Chance Warmack | G | offensive_snaps 323, penalties 2, penalty_yards 14, special_teams_snaps 23 |
-| Avery Williamson | ILB | defensive_snaps 1, special_teams_snaps 98 |
-| Wesley Woodyard | ILB | defensive_snaps 336, special_teams_snaps 23 |
-| Zach Brown | ILB | defensive_snaps 336, special_teams_snaps 23 |
-| Zaviar Gooden | ILB | defensive_snaps 2, special_teams_snaps 98 |
-| Ryan Succop | K | special_teams_snaps 49 |
-| Beau Brinkley | LS | special_teams_snaps 45 |
-| Al Woods | NT | defensive_snaps 4 |
-| Sammie Lee Hill | NT | defensive_snaps 336, special_teams_snaps 23 |
-| Derrick Morgan | OLB | defensive_snaps 166, special_teams_snaps 23 |
-| Kamerion Wimbley | OLB | defensive_snaps 15 |
-| Brett Kern | P | special_teams_snaps 45 |
-| Charlie Whitehurst | QB | RUSH LNG 18, offensive_snaps 61 |
-| Jake Locker | QB | RUSH LNG 14, offensive_snaps 262 |
-| Bishop Sankey | RB | REC LNG 9, offensive_snaps 6, penalties 1, penalty_yards 5, special_teams_snaps 98 |
-| Denard Robinson | RB | REC LNG 18, offensive_snaps 87, special_teams_snaps 98 |
-| Dexter McCluster | RB | special_teams_snaps 25 |
-| Leon Washington | RB | REC LNG 33, offensive_snaps 2, special_teams_snaps 25 |
-| Shonn Greene | RB | REC LNG 16, offensive_snaps 323 |
-| Bernard Pollard | SS | defensive_snaps 336, special_teams_snaps 23 |
-| Daimion Stafford | SS | special_teams_snaps 26 |
-| Michael Oher | T | offensive_snaps 323, special_teams_snaps 23 |
-| Michael Roos | T | offensive_snaps 323, special_teams_snaps 23 |
-| Taylor Lewan | T | special_teams_snaps 23 |
-| Craig Stevens | TE | offensive_snaps 94, special_teams_snaps 120 |
-| Delanie Walker | TE | offensive_snaps 323, penalties 1, penalty_yards 10, special_teams_snaps 23 |
-| Jackie Battle | TE | offensive_snaps 2, special_teams_snaps 98 |
-| Taylor Thompson | TE | special_teams_snaps 1 |
-| Derek Hagan | WR | RUSH LNG 11, offensive_snaps 9, special_teams_snaps 98 |
-| Justin Hunter | WR | offensive_snaps 143 |
-| Kendall Wright | WR | RUSH LNG 15, offensive_snaps 323, penalties 1, penalty_yards 9 |
-| Kris Durham | WR | special_teams_snaps 11 |
-| Nate Washington | WR | RUSH LNG 12, offensive_snaps 323 |
-| Trevor Graham | WR | offensive_snaps 1, special_teams_snaps 41 |
+| Brian Schwenke | C | OFF SNAPS 323, PEN 2, PEN YDS 10, ST SNAPS 23 |
+| Blidi Wreh-Wilson | CB | DEF SNAPS 336, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Brandon Harris | CB | DEF SNAPS 65, ST SNAPS 98 |
+| Jason McCourty | CB | DEF SNAPS 321, ST SNAPS 23 |
+| DaQuan Jones | DE | DEF SNAPS 2 |
+| Ropati Pitoitua | DE | DEF SNAPS 336, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Jurrell Casey | DT | DEF SNAPS 336, ST SNAPS 23 |
+| Karl Klug | DT | DEF SNAPS 2 |
+| Mike Martin | DT | DEF SNAPS 232, ST SNAPS 23 |
+| George Wilson | FS | DEF SNAPS 217, ST SNAPS 71 |
+| Michael Griffin | FS | DEF SNAPS 336, ST SNAPS 23 |
+| Andy Levitre | G | OFF SNAPS 323, ST SNAPS 23 |
+| Chance Warmack | G | OFF SNAPS 323, PEN 2, PEN YDS 14, ST SNAPS 23 |
+| Avery Williamson | ILB | DEF SNAPS 1, ST SNAPS 98 |
+| Wesley Woodyard | ILB | DEF SNAPS 336, ST SNAPS 23 |
+| Zach Brown | ILB | DEF SNAPS 336, ST SNAPS 23 |
+| Zaviar Gooden | ILB | DEF SNAPS 2, ST SNAPS 98 |
+| Ryan Succop | K | ST SNAPS 49 |
+| Beau Brinkley | LS | ST SNAPS 45 |
+| Al Woods | NT | DEF SNAPS 4 |
+| Sammie Lee Hill | NT | DEF SNAPS 336, ST SNAPS 23 |
+| Derrick Morgan | OLB | DEF SNAPS 166, ST SNAPS 23 |
+| Kamerion Wimbley | OLB | DEF SNAPS 15 |
+| Brett Kern | P | ST SNAPS 45 |
+| Charlie Whitehurst | QB | RUSH LNG 18, OFF SNAPS 61 |
+| Jake Locker | QB | RUSH LNG 14, OFF SNAPS 262 |
+| Bishop Sankey | RB | REC LNG 9, OFF SNAPS 6, PEN 1, PEN YDS 5, ST SNAPS 98 |
+| Denard Robinson | RB | REC LNG 18, OFF SNAPS 87, ST SNAPS 98 |
+| Dexter McCluster | RB | ST SNAPS 25 |
+| Leon Washington | RB | REC LNG 33, OFF SNAPS 2, ST SNAPS 25 |
+| Shonn Greene | RB | REC LNG 16, OFF SNAPS 323 |
+| Bernard Pollard | SS | DEF SNAPS 336, ST SNAPS 23 |
+| Daimion Stafford | SS | ST SNAPS 26 |
+| Michael Oher | T | OFF SNAPS 323, ST SNAPS 23 |
+| Michael Roos | T | OFF SNAPS 323, ST SNAPS 23 |
+| Taylor Lewan | T | ST SNAPS 23 |
+| Craig Stevens | TE | OFF SNAPS 94, ST SNAPS 120 |
+| Delanie Walker | TE | OFF SNAPS 323, PEN 1, PEN YDS 10, ST SNAPS 23 |
+| Jackie Battle | TE | OFF SNAPS 2, ST SNAPS 98 |
+| Taylor Thompson | TE | ST SNAPS 1 |
+| Derek Hagan | WR | RUSH LNG 11, OFF SNAPS 9, ST SNAPS 98 |
+| Justin Hunter | WR | OFF SNAPS 143 |
+| Kendall Wright | WR | RUSH LNG 15, OFF SNAPS 323, PEN 1, PEN YDS 9 |
+| Kris Durham | WR | ST SNAPS 11 |
+| Nate Washington | WR | RUSH LNG 12, OFF SNAPS 323 |
+| Trevor Graham | WR | OFF SNAPS 1, ST SNAPS 41 |
 
 ## Washington Redskins
 
@@ -5731,49 +5730,49 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Kory Lichtensteiger | C | offensive_snaps 342, special_teams_snaps 21 |
-| Bashaud Breeland | CB | defensive_snaps 312, special_teams_snaps 41 |
-| David Amerson | CB | defensive_snaps 323, special_teams_snaps 29 |
-| E.J. Biggers | CB | defensive_snaps 2, special_teams_snaps 104 |
-| Jarvis Jenkins | DE | defensive_snaps 1 |
-| Jason Hatcher | DE | defensive_snaps 224, special_teams_snaps 29 |
-| Ryan Kerrigan | DE | defensive_snaps 323, special_teams_snaps 29 |
-| Trent Murphy | DE | defensive_snaps 1 |
-| Chris Baker | DT | defensive_snaps 323, special_teams_snaps 29 |
-| Darrel Young | FB | REC LNG 20, offensive_snaps 80, special_teams_snaps 101 |
-| DeAngelo Hall | FS | defensive_snaps 323, special_teams_snaps 29 |
-| Ryan Clark | FS | defensive_snaps 323, penalties 1, penalty_yards 5, special_teams_snaps 29 |
-| Trenton Robinson | FS | special_teams_snaps 104 |
-| Chris Chester | G | offensive_snaps 342, penalties 1, penalty_yards 5, special_teams_snaps 21 |
-| Josh LeRibeus | G | special_teams_snaps 4 |
-| Shawn Lauvao | G | offensive_snaps 342, penalties 2, penalty_yards 10, special_teams_snaps 21 |
-| Adam Hayward | ILB | defensive_snaps 6, special_teams_snaps 63 |
-| Perry Riley | ILB | defensive_snaps 323, special_teams_snaps 29 |
-| Kai Forbath | K | special_teams_snaps 45 |
-| Nick Sundberg | LS | special_teams_snaps 48 |
-| Akeem Jordan | MLB | special_teams_snaps 18 |
-| Keenan Robinson | MLB | defensive_snaps 323, special_teams_snaps 29 |
-| Will Compton | MLB | defensive_snaps 62, special_teams_snaps 14 |
-| Barry Cofield | NT | defensive_snaps 323, special_teams_snaps 29 |
-| Kedric Golston | NT | defensive_snaps 4 |
-| Brian Orakpo | OLB | defensive_snaps 2 |
-| Gabe Miller | OLB | defensive_snaps 104, special_teams_snaps 17 |
-| Tress Way | P | special_teams_snaps 48 |
-| Colt McCoy | QB | RUSH LNG 3, offensive_snaps 69 |
-| Robert Griffin | QB | RUSH LNG 7, offensive_snaps 273 |
-| Alfred Morris | RB | REC LNG 59, offensive_snaps 342 |
-| Roy Helu | RB | REC LNG 24, offensive_snaps 39, special_teams_snaps 104 |
-| Silas Redd | RB | offensive_snaps 3, special_teams_snaps 44 |
-| Duke Ihenacho | SS | defensive_snaps 1, special_teams_snaps 55 |
-| Josh Evans | SS | defensive_snaps 268, special_teams_snaps 92 |
-| Morgan Moses | T | offensive_snaps 69, special_teams_snaps 21 |
-| Trent Williams | T | offensive_snaps 342, special_teams_snaps 21 |
-| Tyler Polumbus | T | offensive_snaps 273, special_teams_snaps 17 |
-| Jordan Reed | TE | offensive_snaps 227, special_teams_snaps 14 |
-| Logan Paulsen | TE | offensive_snaps 182, special_teams_snaps 94 |
-| Niles Paul | TE | offensive_snaps 35, penalties 1, penalty_yards 5, special_teams_snaps 109 |
-| Andre Roberts | WR | RUSH LNG 1, offensive_snaps 152, special_teams_snaps 53 |
-| DeSean Jackson | WR | offensive_snaps 342 |
-| Pierre Garcon | WR | RUSH LNG 4, offensive_snaps 342 |
-| Ryan Grant | WR | offensive_snaps 3, special_teams_snaps 13 |
-| Santana Moss | WR | offensive_snaps 13, special_teams_snaps 104 |
+| Kory Lichtensteiger | C | OFF SNAPS 342, ST SNAPS 21 |
+| Bashaud Breeland | CB | DEF SNAPS 312, ST SNAPS 41 |
+| David Amerson | CB | DEF SNAPS 323, ST SNAPS 29 |
+| E.J. Biggers | CB | DEF SNAPS 2, ST SNAPS 104 |
+| Jarvis Jenkins | DE | DEF SNAPS 1 |
+| Jason Hatcher | DE | DEF SNAPS 224, ST SNAPS 29 |
+| Ryan Kerrigan | DE | DEF SNAPS 323, ST SNAPS 29 |
+| Trent Murphy | DE | DEF SNAPS 1 |
+| Chris Baker | DT | DEF SNAPS 323, ST SNAPS 29 |
+| Darrel Young | FB | REC LNG 20, OFF SNAPS 80, ST SNAPS 101 |
+| DeAngelo Hall | FS | DEF SNAPS 323, ST SNAPS 29 |
+| Ryan Clark | FS | DEF SNAPS 323, PEN 1, PEN YDS 5, ST SNAPS 29 |
+| Trenton Robinson | FS | ST SNAPS 104 |
+| Chris Chester | G | OFF SNAPS 342, PEN 1, PEN YDS 5, ST SNAPS 21 |
+| Josh LeRibeus | G | ST SNAPS 4 |
+| Shawn Lauvao | G | OFF SNAPS 342, PEN 2, PEN YDS 10, ST SNAPS 21 |
+| Adam Hayward | ILB | DEF SNAPS 6, ST SNAPS 63 |
+| Perry Riley | ILB | DEF SNAPS 323, ST SNAPS 29 |
+| Kai Forbath | K | ST SNAPS 45 |
+| Nick Sundberg | LS | ST SNAPS 48 |
+| Akeem Jordan | MLB | ST SNAPS 18 |
+| Keenan Robinson | MLB | DEF SNAPS 323, ST SNAPS 29 |
+| Will Compton | MLB | DEF SNAPS 62, ST SNAPS 14 |
+| Barry Cofield | NT | DEF SNAPS 323, ST SNAPS 29 |
+| Kedric Golston | NT | DEF SNAPS 4 |
+| Brian Orakpo | OLB | DEF SNAPS 2 |
+| Gabe Miller | OLB | DEF SNAPS 104, ST SNAPS 17 |
+| Tress Way | P | ST SNAPS 48 |
+| Colt McCoy | QB | RUSH LNG 3, OFF SNAPS 69 |
+| Robert Griffin | QB | RUSH LNG 7, OFF SNAPS 273 |
+| Alfred Morris | RB | REC LNG 59, OFF SNAPS 342 |
+| Roy Helu | RB | REC LNG 24, OFF SNAPS 39, ST SNAPS 104 |
+| Silas Redd | RB | OFF SNAPS 3, ST SNAPS 44 |
+| Duke Ihenacho | SS | DEF SNAPS 1, ST SNAPS 55 |
+| Josh Evans | SS | DEF SNAPS 268, ST SNAPS 92 |
+| Morgan Moses | T | OFF SNAPS 69, ST SNAPS 21 |
+| Trent Williams | T | OFF SNAPS 342, ST SNAPS 21 |
+| Tyler Polumbus | T | OFF SNAPS 273, ST SNAPS 17 |
+| Jordan Reed | TE | OFF SNAPS 227, ST SNAPS 14 |
+| Logan Paulsen | TE | OFF SNAPS 182, ST SNAPS 94 |
+| Niles Paul | TE | OFF SNAPS 35, PEN 1, PEN YDS 5, ST SNAPS 109 |
+| Andre Roberts | WR | RUSH LNG 1, OFF SNAPS 152, ST SNAPS 53 |
+| DeSean Jackson | WR | OFF SNAPS 342 |
+| Pierre Garcon | WR | RUSH LNG 4, OFF SNAPS 342 |
+| Ryan Grant | WR | OFF SNAPS 3, ST SNAPS 13 |
+| Santana Moss | WR | OFF SNAPS 13, ST SNAPS 104 |

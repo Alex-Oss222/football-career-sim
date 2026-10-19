@@ -38,13 +38,18 @@ class Methodology2014Tests(unittest.TestCase):
                           "November": [9, 10, 11, 12], "December": [13, 14, 15, 16, 17]})
         self.assertIn("by week, not by calendar date", self.m2014["month_rule"])
 
-    def test_readme_carries_the_freeze(self):
+    def test_readme_names_the_awards_and_keeps_the_method_off_the_page(self):
+        # From 2014 the index reads as the league's announcements (rebuild step 4): the awards and
+        # the weeks of each month; the frozen method stays in its record (methodology.json).
         pages = render_pages(2014, {}, self.m2014)
-        self.assertIn("## Methodology", pages["README.md"])
-        self.assertIn("Frozen August 28, 2014", pages["README.md"])
-        self.assertNotIn("Before the first draw, freeze", pages["README.md"])
-        # Without a freeze the index keeps its reminder.
-        self.assertIn("Before the first draw, freeze", render_pages(2014, {})["README.md"])
+        readme = pages["README.md"]
+        self.assertIn("## The awards", readme)
+        self.assertIn("September (Weeks 1-4", readme)
+        for word in ("formula", "panel", "score", "weigh", "fixed on"):
+            self.assertNotIn(word, readme.lower())
+        self.assertNotIn("Each month covers", render_pages(2014, {})["README.md"])  # no freeze, no months
+        # 2013's index keeps its layout and the freeze.
+        self.assertIn("## How the winners are chosen", render_pages(2013, {}, self.m2013)["README.md"])
 
     def test_missing_methodology_is_a_clear_error(self):
         with self.assertRaisesRegex(FileNotFoundError, "No 2015 awards methodology: freeze "

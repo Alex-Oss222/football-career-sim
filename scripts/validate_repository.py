@@ -436,6 +436,35 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
         errors.append(f'Invalid club pages or cap views: {exc}')
 
+    # The open game week's pages (scripts/render_game_week.py, rebuild step 4): once its Game Week
+    # Briefing is issued, the week index is current, the Game Plan sits beside the briefing and the
+    # staff read is well formed. A dated briefing the situation has overtaken is re-issued by the
+    # weekly workflow (render_game_week.py --check), not failed here.
+    try:
+        from scripts.render_game_week import validation_errors as game_week_errors
+        errors.extend(game_week_errors(root))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid game week pages: {exc}')
+
+    # Stone's applied Game Plans (scripts/apply_game_plan.py): each applied week's page and call
+    # sheet as its record froze them (the page stays the record of his decision), and the open
+    # week's game-plan item opened once its briefing is issued.
+    try:
+        from scripts.apply_game_plan import validation_errors as game_plan_errors
+        errors.extend(game_plan_errors(root))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid applied Game Plans: {exc}')
+
+    # The result-side week pages (scripts/render_week_pages.py: the Games and league-results
+    # indexes, the league-results week pages from Week 6, the injury report, the medical
+    # history's game entries and the incident records they open) are built from the closed
+    # games and the roster record: a closed game or a changed record without a rebuild fails.
+    try:
+        from scripts.render_week_pages import check as check_week_pages
+        errors.extend(check_week_pages(root))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid week pages: {exc}')
+
     # Clean pages (docs/rebuild_plan.md, rule 4): a built page, and any page
     # written from 2014 Week 6 on, is football only. Folder map (stored-facts
     # rule 2): no script or runtime module writes a season folder or a year
@@ -566,11 +595,13 @@ def validate(root=ROOT):
                 require(False, f'{output.relative_to(root)}: box score for {event_id} '
                                'differs from its receipt; run render_box_score.py --write')
         # From 2014 the filled block is the gamebook layout of the weekly game
-        # turn template (runtime/gamebook.py), checked against the same receipts.
-        from runtime.seasons import SeasonPaths
+        # turn template (runtime/gamebook.py), checked against the same receipts;
+        # from 2014 Week 6 the result page is the Game Report (GAME_REPORT).
+        from runtime.seasons import GAME_OUTPUT, GAME_REPORT, SeasonPaths
         for year in sorted({2014, mapping.get('active_season', 2014)}):
             paths = SeasonPaths(year, root)
-            outputs = sorted(paths.regular_season.glob('*/output.md')) + sorted(paths.postseason.glob('*/output.md'))
+            outputs = sorted(p for name in (GAME_OUTPUT, GAME_REPORT) for folder in (paths.regular_season, paths.postseason)
+                             for p in folder.glob('*/' + name))
             for output in outputs:
                 for event_id in stale_blocks(output, paths.receipts, season=year):
                     require(False, f'{output.relative_to(root)}: box score for {event_id} '
@@ -620,7 +651,7 @@ def validate(root=ROOT):
     # Prepared 2014 storage is legitimate, but future/foreign receipts are not.
     try:
         from runtime.seasons import SeasonPaths, game_release_errors, require_receipt_season
-        from scripts.render_season_stats import load_receipts, render_views
+        from scripts.render_season_stats import load_receipts, render_views, view_path
         paths = SeasonPaths(2014, root)
         regular = load_receipts(paths.receipts)
         playoff = load_receipts(paths.postseason_receipts)
@@ -654,8 +685,8 @@ def validate(root=ROOT):
                     raise ValueError('no regular-season fixture week')
                 return rows
             errors.extend(receipt_coverage_errors(regular, scheduled_2014))
-            for name, expected in render_views(2014, 'Jacksonville Jaguars', regular).items():
-                view = paths.file_in(paths.stats, name)
+            for name, expected in render_views(2014, 'Jacksonville Jaguars', regular, root).items():
+                view = view_path(paths, name)
                 require(view.is_file() and view.read_text() == expected,
                         '2014 generated statistics missing or stale: ' + name)
             from scripts.render_standings import render as standings_view
@@ -735,7 +766,7 @@ def validate(root=ROOT):
                 results = json.loads((data/'results.json').read_text()) if (data/'results.json').exists() else {}
                 method = (json.loads((data/'methodology.json').read_text())
                           if results or (data/'methodology.json').is_file() else None)
-                for relative, text in award_pages(year, results, method).items():
+                for relative, text in award_pages(year, results, method, root=root).items():
                     path = folder/relative
                     previous = path.read_text() if path.is_file() else ''
                     require(path.is_file() and previous == preserve_event_comments(text, previous),

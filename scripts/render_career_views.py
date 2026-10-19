@@ -14,9 +14,17 @@ both files' git blobs, which binds them into its digest and so into the
 private snapshot. The views read only those two files, Stone's coach record
 (the contract), Document 5's master-date cell and section 9, the active
 season's fixtures, the closed events, docs/repository_map.json, whether the
-next game's week README and call sheet and the last game's output exist, and
-the employer club's own closed-game receipts for the desk's last result and
-record; never another club's receipt, the standings, awards or the wall clock.
+next game's week README and call sheet and the last game's output exist,
+whether a week's Game Week Briefing and Game Plan exist (the desk links both
+under "Waiting on you" once they are issued), and the employer club's own
+closed-game receipts for the desk's last result and record; never awards or
+the wall clock. The desk's season summary (scripts/render_season_hub.py: the
+season at a glance, with the club's place in the standings from every closed
+game, its leaders and its players under a medical instruction from the roster
+record) and the season calendar (the current month and the next games above
+the full-year dates, which the calendar page keeps as written) are built here
+too. The injury report and the statistics index have their own builders
+(scripts/render_week_pages.py, scripts/render_season_stats.py).
 The staff register's phase-control table is no longer written: the Staff page
 (scripts/render_coach_pages.py) shows who calls what. Writing is refused while
 a Jacksonville game is paused; --check is read-only and exits 1 on a stale,
@@ -38,7 +46,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from runtime import current_job, decision_queue  # noqa: E402
+from runtime import current_job, decision_queue, season_summary as summary  # noqa: E402
 from runtime.events import load_events, repository_map, resolve_path  # noqa: E402
 from runtime.player_bios import master_date  # noqa: E402
 from runtime.clean_pages import page_errors  # noqa: E402
@@ -55,7 +63,7 @@ DOC = Path("docs/career_layer.md")
 MANIFEST_ROWS = (("Current job record", current_job.JOB.as_posix(), "Job, authority and delegation"),
                  ("Decision queue", decision_queue.QUEUE.as_posix(), "Open and resolved decisions"))
 BANNED = re.compile(r"\b(branch|simulation|receipt|kernel|engine|ledger|snapshot|checkpoint)s?\b", re.I)
-VOICED = frozenset({"desk", "calendar", "medical", "statbook"})   # reader prose; the Document 5 blocks are a state file
+VOICED = frozenset({"desk", "calendar"})   # reader prose; the Document 5 blocks are a state file
 LINK = re.compile(r"\]\(@([^)#]*)(?:#([^)]*))?\)")   # a view's repository-relative link before localizing
 PHASE_LABEL = {"offense": "Offense", "defense": "Defense", "special_teams": "Special teams"}
 DECISION_LABEL = {"fourth_down": "fourth downs", "two_point": "two-point tries", "kickoff": "onside kicks",
@@ -584,6 +592,17 @@ def _week_readme(ctx, week, label):
     return link(ctx, label, readme.relative_to(ctx.root).as_posix()) if readme.is_file() else label
 
 
+def _decision_pages(ctx, week):
+    """Links to the week's Game Week Briefing and Game Plan, when both have been issued
+    (runtime/decisions.py names them; scripts/render_game_week.py writes them)."""
+    from runtime.decisions import week_pages
+    pages = week_pages(ctx.season, week, ctx.root)
+    if not (pages.briefing.is_file() and pages.plan.is_file()):
+        return []
+    return [link(ctx, label, path.relative_to(ctx.root).as_posix())
+            for label, path in (("Game Week Briefing", pages.briefing), ("Game Plan", pages.plan))]
+
+
 def render_desk(ctx):
     """The active season's README, whole: today and the last result, the job, what is waiting
     on him, the next event, then everything else."""
@@ -712,18 +731,28 @@ def _waiting(ctx, items):
         game = games.get(week)
         deadline = (item.get("deadline") or {}).get("date")
         if game is not None:
-            line += " Due before kickoff, %s, %s, %s." % (game.get("weekday"), day(game["date"], False),
-                                                        kickoff(game["kickoff_et"]))
+            line += " Due before kickoff, %s, %s, %s" % (game.get("weekday"), day(game["date"], False),
+                                                       kickoff(game["kickoff_et"]))
+            practice = (summary.first_practice(ctx.scheduled, week, ctx.master)
+                        if item.get("class") == "weekly_game_plan" else None)
+            # The plan's practice work is needed before the week's first practice.
+            line += ("; the practice work before the first practice, %s, %s." % (
+                practice.strftime("%A"), day(practice.isoformat(), False)) if practice else ".")
         elif deadline:
             line += " Due by %s." % day(deadline, False)
         waits = []
-        for wait in item.get("waits_on") or ():
+        from runtime.decisions import waits_ahead
+        for wait in waits_ahead(item, ctx.master):     # an exam already held is not still to come
             what = football(ctx.show("waits_on.what", wait["what"]).split(";")[0])
-            if what:
-                waits.append("%s (%s)" % (what, day(wait["date"], False)) if wait.get("date") else what)
+            text = ("%s (%s)" % (what, day(wait["date"], False)) if wait.get("date") else what) if what else ""
+            if text and text not in waits:
+                waits.append(text)
         if waits:
             line += " Still to come: %s." % "; ".join(waits)
-        if week is not None and (ctx.paths.week_folder(week) / "README.md").is_file():
+        decision_pages = _decision_pages(ctx, week) if week is not None else []
+        if decision_pages:
+            line += " " + " · ".join(decision_pages)
+        elif week is not None and (ctx.paths.week_folder(week) / "README.md").is_file():
             line += " " + _week_readme(ctx, week, "Week %d" % week)
         elif _readable(ctx, item.get("record")):
             line += " " + page_link(ctx, item["record"])
@@ -897,16 +926,15 @@ def managed(root):
     return {"current-job": STATE, "decision-queue": STATE,
             "desk": paths.desk.relative_to(root),
             "calendar": paths.calendar.relative_to(root),
-            "medical": paths.record("medical/current_injury_report.md").relative_to(root),
-            "statbook": paths.record("statbook.md").relative_to(root),
             "decision-classes": DOC}
 
 
 BUILDERS = {"current-job": current_job_block, "decision-queue": decision_queue_block,
             "desk": render_desk, "calendar": render_season_hub.calendar_page,
-            "medical": render_season_hub.medical_page, "statbook": render_season_hub.statistics_page,
             "decision-classes": classes_block}
-WHOLE = frozenset({"desk", "calendar", "medical", "statbook"})     # built as the whole file, with no markers
+# Built as the whole file, with no markers. The injury report is built by scripts/render_week_pages.py
+# and the statistics index by scripts/render_season_stats.py, each its page's only builder.
+WHOLE = frozenset({"desk", "calendar"})
 
 
 def _render(root):

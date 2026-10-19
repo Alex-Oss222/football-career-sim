@@ -6,8 +6,8 @@ Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013. [Coac
 
 ## Waiting on you
 
-1. **Week 6 game plan for Tennessee.** To settle: the menu, including whether the Flea Flicker and TE Delay stay, and who takes Trawick's practice work after his October 7 exam. Due before kickoff, Sunday, October 12, 1 p.m. ET. [Week 6](Regular_Season/Games/Week_06/README.md)
-2. **Week 6 inactives.** Due before kickoff, Sunday, October 12, 1 p.m. ET. Still to come: Christian Jones's reassessment and projected return (October 6); Trawick's reassessment (October 7); Poyer's projected return (October 9). [Week 6](Regular_Season/Games/Week_06/README.md)
+1. **Week 6 game plan for Tennessee.** To settle: the menu, including whether the Flea Flicker and TE Delay stay, and who takes Trawick's practice work after his October 7 exam. Due before kickoff, Sunday, October 12, 1 p.m. ET; the practice work before the first practice, Tuesday, October 7. Still to come: Trawick's reassessment (October 7). [Game Week Briefing](Regular_Season/Games/Week_06/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_06/Game_Plan.md)
+2. **Week 6 inactives.** Due before kickoff, Sunday, October 12, 1 p.m. ET. Still to come: Christian Jones's reassessment and projected return (October 6); Trawick's reassessment (October 7); Poyer's projected return (October 9). [Game Week Briefing](Regular_Season/Games/Week_06/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_06/Game_Plan.md)
 
 ## Next event
 
@@ -26,17 +26,18 @@ Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013. [Coac
 | Passing | [Kirk Cousins](Team_Operations/Team/Player_Cards/kirk_cousins.md) | 1,213 pass yds · 9 TD, 7 INT |
 | Rushing | [Maurice Jones-Drew](Team_Operations/Team/Player_Cards/maurice_jones_drew.md) | 461 rush yds · 2 TD |
 | Receiving | [Davante Adams](Team_Operations/Team/Player_Cards/davante_adams.md) | 369 rec yds · 30 catches, 2 TD |
-| Tackling | [Daryl Smith](Team_Operations/Team/Player_Cards/daryl_smith.md) | 48 tackles · 1 sacks |
+| Tackling | [Daryl Smith](Team_Operations/Team/Player_Cards/daryl_smith.md) | 48 tackles · 1 sack |
 
 ## Medical and availability
 
 | Player | Status | Next medical date |
 |---|---|---|
-| [Christian Jones](Team_Operations/Team/Player_Cards/christian_jones.md) | [Out · upper extremity (minor)](Team_Operations/Medical/incidents/christian_jones_2014-10-05.md) | Review October 6; Projected October 6, 2014 |
-| [Brynden Trawick](Team_Operations/Team/Player_Cards/brynden_trawick.md) | [Out · lower extremity (minor)](Team_Operations/Medical/incidents/brynden_trawick_2014-10-05.md) | Review October 7; Projected October 11, 2014 |
-| [Jordan Poyer](Team_Operations/Team/Player_Cards/jordan_poyer.md) | [Independent hold · head/neck](Team_Operations/Medical/incidents/jordan_poyer_2014-09-21.md) | Projected October 9, 2014 |
+| [Christian Jones](Team_Operations/Team/Player_Cards/christian_jones.md) | [Out · upper extremity (minor)](Team_Operations/Medical/incidents/christian_jones_2014-10-05.md) | Review October 6, 2014; projected return October 6, 2014 |
+| [Brynden Trawick](Team_Operations/Team/Player_Cards/brynden_trawick.md) | [Out · lower extremity (minor)](Team_Operations/Medical/incidents/brynden_trawick_2014-10-05.md) | Review October 7, 2014; projected return October 11, 2014 |
+| [Jordan Poyer](Team_Operations/Team/Player_Cards/jordan_poyer.md) | [Independent hold · head/neck (short)](Team_Operations/Medical/incidents/jordan_poyer_2014-09-21.md) | Projected return October 9, 2014 |
 
-Projected dates require medical clearance. [Full medical report](Team_Operations/Medical/current_injury_report.md)
+Projected dates require medical clearance. [Full injury report](Team_Operations/Medical/current_injury_report.md)
+
 ## Coming up
 
 - October 6: Pittsburgh review and Tennessee introduction; Christian Jones's reassessment and projected return

@@ -1,0 +1,13 @@
+{
+ "as_of": "2014-10-04",
+ "files": {
+  "base.json": "bee21bad5741491cab66e9ca32bc728b9c49db06726c4f3a19cff5c0125412f1",
+  "week_05.json": "a2702feeda8e4fde9142b2021554abfb14a5bed1ca354d1f17ad1adf5dc18a76"
+ },
+ "season": 2014,
+ "state_digests": {
+  "2014-10-01": "9bbccaf1012be9d6305befe3bf02182cc1a42dbf99d0bdab25612024239d296b",
+  "2014-10-04": "7ad84be0eee572e825009bf548dd1b44b929324b53a0f0ef2cf7921b1e4fd64c"
+ },
+ "week": 5
+}

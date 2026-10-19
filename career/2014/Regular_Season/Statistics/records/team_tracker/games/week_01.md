@@ -1,8 +1,6 @@
 # Jacksonville Jaguars 2014: Week 1 at Philadelphia Eagles
 
-**Result:** W 23-20. **Generated** by `python scripts/render_team_tracker.py 2014` from receipt `2014-week01-jacksonville-jaguars-at-philadelphia-eagles`; do not edit by hand.
-
-Reader view for the user only. It is not an input to the simulation or to any evaluation.
+**Result:** W 23-20. [Season tracker](../README.md)
 
 ## This game
 
@@ -163,4 +161,4 @@ Record through Week 1: 1-0. Rate stats are recalculated from the totals, never a
 |---|---|---|---|---|---|---|---|
 | Andrew Hawkins | 1 | 2 | 52 | 26.0 | 4 | 62 | 15.5 |
 
-The receipts do not record the longest completion, the longest field goal, or return and defensive touchdowns, so those template columns are left out rather than guessed.
+The game records do not include the longest completion, the longest field goal, or return and defensive touchdowns, so those columns are left out rather than guessed.

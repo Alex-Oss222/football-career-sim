@@ -1,6 +1,5 @@
 # 2014 NFL statistical leaders
 
-**Version:** `2014-W05-LEADERS`
 **Through:** Week 5.
 **Coverage:** complete for every closed game.
 

@@ -124,7 +124,7 @@ An `IN_FORCE` standing instruction may answer a live pause or close a queue item
 
 ## 6. Rendering and checking
 
-`python scripts/render_career_views.py` maintains three named blocks and four complete reader pages. The named blocks appear once between their matching `NAME:begin` and `NAME:end` markers:
+`python scripts/render_career_views.py` maintains three named blocks and two complete reader pages. The named blocks appear once between their matching `NAME:begin` and `NAME:end` markers:
 
 | View | File |
 |---|---|
@@ -133,14 +133,14 @@ An `IN_FORCE` standing instruction may answer a live pause or close a queue item
 | `decision-classes` | This file, section 3 |
 | `desk` | The whole of the active season's README |
 | `calendar` | The active season's Calendar.md, with the current month first |
-| `medical` | The active season's medical-availability report |
-| `statbook` | The active season's Statistics README, with team and player summaries |
+
+The injury report and the Statistics README are not career views: each has one builder of its own (`render_week_pages.py` and `render_season_stats.py`), and `python scripts/rebuild_pages.py` runs every builder in order.
 
 It also keeps two rows after Document 4's in Document 5's manifest, naming the git blob of each file. That binds both files into Document 5's digest and so into the private snapshot: every change to either file moves the digest.
 
-The job and decision blocks read the two state files, the coach record, the master date, the dated events and the published fixture list. The coach's desk continues to show the coach-owned decisions from the current decision record. Its season performance, standings, player production and medical sections are now derived from the completed games and roster's current medical communication. The calendar is assembled from the recorded dates and the same fixtures, keeping the complete historical year below the current month. The statbook's team and player figures are derived from completed regular-season games. None of these pages stores an independent game result, injury clearance or depth decision.
+The job and decision blocks read the two state files, the coach record, the master date, the dated events and the published fixture list. The coach's desk continues to show the coach-owned decisions from the current decision record. Its season performance, standings, player production and medical sections are derived from the completed games and the roster's current medical communication (`scripts/render_season_hub.py`, through `runtime/season_summary.py`, which gives the statistics index and the injury report the same words). The calendar is assembled from the recorded dates and the same fixtures, keeping the complete historical year below the current month. None of these pages stores an independent game result, injury clearance or depth decision.
 
-Links are relative to each reader page and must resolve. The head coach's desk and the three companion pages are checked for reader-friendly football prose. The voice check rejects internal process wording before writing. The coach's desk remains available only for the head-coach role; the other roles are defined separately.
+Links are relative to each reader page and must resolve. The head coach's desk and the calendar are checked for reader-friendly football prose. The voice check rejects internal process wording before writing. The coach's desk remains available only for the head-coach role; the other roles are defined separately.
 
 `--check` is read-only. It reports a stale block or desk, a missing or duplicated marker, a desk block in any README and anything that stops the render, and exits 1. Repository validation runs the same check. Writing is refused while any regular-season, postseason or preseason Jacksonville game is paused.
 

@@ -5,6 +5,7 @@
   python scripts/league_awards.py week N --season YEAR --close    # draw and record
   python scripts/league_awards.py month NAME --season YEAR [--close]
   python scripts/league_awards.py render --season YEAR # rewrite the award pages
+  python scripts/league_awards.py render --season YEAR --check  # write nothing; exit 1 when stale
 
 The method is fixed in career/2013/awards/methodology.json before any
 winner is drawn: one scoring formula per category, applied identically to
@@ -142,7 +143,8 @@ def render(season=2013):
         from scripts.render_award_pages import render_pages
         from runtime.events import preserve_event_comments
         results = load_results(season)
-        pages = render_pages(season, results, method(season) if results or method_path(season).is_file() else None)
+        pages = render_pages(season, results, method(season) if results or method_path(season).is_file() else None,
+                             root=ROOT)
         for relative, text in pages.items():
             path = SeasonPaths(season, ROOT).awards / relative
             path.parent.mkdir(parents=True, exist_ok=True)
@@ -170,6 +172,22 @@ def render(season=2013):
     (SeasonPaths(season, ROOT).awards / 'weekly_and_monthly.md').write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
+def render_check(season):
+    """The award pages (2014 onward) that differ from their render; writes nothing."""
+    from scripts.render_award_pages import render_pages
+    from runtime.events import preserve_event_comments
+    results = load_results(season)
+    pages = render_pages(season, results, method(season) if results or method_path(season).is_file() else None,
+                         root=ROOT)
+    stale = []
+    for relative, text in pages.items():
+        path = SeasonPaths(season, ROOT).awards / relative
+        previous = path.read_text(encoding='utf-8') if path.is_file() else ''
+        if not path.is_file() or previous != preserve_event_comments(text, previous):
+            stale.append(path.relative_to(ROOT).as_posix())
+    return stale
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("kind", choices=("week", "month", "render"))
@@ -177,8 +195,13 @@ def main():
     parser.add_argument("--close", action="store_true")
     parser.add_argument("--note", default="")
     parser.add_argument("--season", type=int, required=True)
+    parser.add_argument("--check", action="store_true", help="render only: write nothing; exit 1 when a page is stale")
     args = parser.parse_args()
     paths = SeasonPaths(args.season, ROOT)
+    if args.kind == "render" and args.check:
+        stale = render_check(args.season)
+        print("\n".join("Award page stale: " + s for s in stale) if stale else "AWARD PAGES CURRENT")
+        return 1 if stale else 0
     if args.kind == "render":
         render(args.season)
         return 0

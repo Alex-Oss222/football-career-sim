@@ -1,8 +1,6 @@
 # Jacksonville Jaguars 2014 stat tracker
 
-**Generated** by `python scripts/render_team_tracker.py 2014` from the closed-game receipts; do not edit by hand. It updates every time a game closes.
-
-**Reader view for the user only.** It is not an input to the simulation, the engine, player evaluation or any decision. The receipts under `stats/game_receipts/` and `stats/postseason_receipts/` remain the source.
+Rebuilt after every closed game from the game records.
 
 ## Team info
 
@@ -16,7 +14,7 @@
 
 ## Depth chart
 
-From [Team_Operations/Team/Depth_Chart/game_depth_chart.json](../../../../../../data/2014/Team_Operations/Team/Depth_Chart/game_depth_chart.json), August 30, 2014, after Caldwell's reduction to 53 (4 p.m. ET); the defensive-back order set for Week 2 on September 13, 2014 and re-set for Week 4 on September 27, 2014; the receiver order, the defensive-back order and its two slot roles re-set for Week 5 on October 4, 2014, with game_day_inactives re-set for Week 5 the same day. Order is first listed first; Stone owns it.
+The current order, first listed first; Stone owns it. Dates and roles are on the [depth chart](../../../../Team_Operations/Team/Depth_Chart/depth_chart.md).
 
 | Group | Order |
 |---|---|
@@ -37,17 +35,17 @@ From [Team_Operations/Team/Depth_Chart/game_depth_chart.json](../../../../../../
 
 | Game | Opponent | Result | Page |
 |---|---|---|---|
-| Week 1 | at Philadelphia Eagles | W 23-20 | [week_01.md](games/week_01.md) |
-| Week 2 | at Washington Redskins | W 24-7 | [week_02.md](games/week_02.md) |
-| Week 3 | vs. Indianapolis Colts | W 38-34 | [week_03.md](games/week_03.md) |
-| Week 4 | at San Diego Chargers | L 20-21 | [week_04.md](games/week_04.md) |
-| Week 5 | vs. Pittsburgh Steelers | L 10-27 | [week_05.md](games/week_05.md) |
+| Week 1 | at Philadelphia Eagles | W 23-20 | [Week 1](games/week_01.md) |
+| Week 2 | at Washington Redskins | W 24-7 | [Week 2](games/week_02.md) |
+| Week 3 | vs. Indianapolis Colts | W 38-34 | [Week 3](games/week_03.md) |
+| Week 4 | at San Diego Chargers | L 20-21 | [Week 4](games/week_04.md) |
+| Week 5 | vs. Pittsburgh Steelers | L 10-27 | [Week 5](games/week_05.md) |
 
 ## Regular-season totals
 
 Through Week 5, 3-2. Rate stats are recalculated from the totals.
 
-FUM, LOST, FF and FR combine two definitions this season: games closed before kernel 2014.6 counted every generated fumble as lost and named one defender as its forcer and recoverer; from kernel 2014.6 a fumble may be kept, the forcer and recoverer are separate group draws or replayed records, and muffs are counted. No fumble rank is published, and who fumbled, forced, recovered or muffed is never evidence of a player's ball security.
+FUM, LOST, FF and FR combine two counting methods this season: through Week 4 every fumble counted as lost, with one defender credited with forcing and recovering it; from Week 5 a fumble may be kept, the players who force and recover it are credited separately and muffs are counted. No fumble ranking is kept.
 
 #### Quarterbacks
 
@@ -148,9 +146,9 @@ FUM, LOST, FF and FR combine two definitions this season: games closed before ke
 
 | Points | First downs | 3rd down | 3rd % | Turnovers | Sacks allowed | Penalties | Time of possession |
 |---|---|---|---|---|---|---|---|
-| 115 | 104 | 29/70 | 41.4 | 9 | 8 | counter games 19-146; penalty records 6-69 | 156:20 |
+| 115 | 104 | 29/70 | 41.4 | 9 | 8 | through Week 4: 19-146; from Week 5: 6-69 | 156:20 |
 
-Penalties are split by definition and never added: the counter games closed before the penalty records (one draw per scrimmage play, charged to the offense) and the penalty-record games (each accepted foul charged to the fouling club). No combined penalty figure is shown.
+Penalties are shown as two counts that are never added: through Week 4, each game's penalties were charged to the offense; from Week 5, each accepted foul is charged to the club that committed it. No combined penalty figure is shown.
 
 ## Postseason totals
 
@@ -160,4 +158,4 @@ No postseason game.
 
 None recorded.
 
-The receipts do not record the longest completion or the longest field goal, so those template columns are left out rather than guessed. Two-point conversions and return and defensive touchdowns are recorded from kernel 2014.6 games only.
+The game records do not include the longest completion or the longest field goal, so those columns are left out rather than guessed. Two-point conversions and return and defensive touchdowns are recorded from Week 5 on.

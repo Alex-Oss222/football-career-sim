@@ -227,6 +227,11 @@ def player_link(ctx, rel, name):
     return link(rel, page, name) if page else name
 
 
+def join_names(names):
+    names = list(names)
+    return names[0] if len(names) == 1 else ", ".join(names[:-1]) + " and " + names[-1]
+
+
 def availability(ctx, name):
     row = next((p for p in ctx.roster["players"] if p["name"] == name), None)
     return (row or {}).get("availability") or ""
@@ -301,7 +306,10 @@ def role_labels(ctx):
     labels = {}
     for decision in ctx.working.get("stone_role_decisions", ()):
         for row in decision.get("decisions", ()):
-            labels[row["player"]] = row["role"]
+            if row.get("role") is None:
+                labels.pop(row["player"], None)     # a later decision cleared the label
+            else:
+                labels[row["player"]] = row["role"]
     for player, roles in ctx.chart.get("roles", {}).items():
         if player not in labels and roles:
             labels[player] = ", ".join(ROLE_NAMES.get(r, r) for r in roles)
@@ -309,8 +317,9 @@ def role_labels(ctx):
 
 
 def depth_chart_page(ctx):
-    """Current assignments first; a shorter full depth order follows."""
-    from scripts import render_season_hub as hub
+    """Current assignments first; a shorter full depth order follows. Every name and note comes
+    from the game depth chart and the roster record."""
+    from runtime import season_summary as summary
 
     rel = ctx.paths.record("depth_chart.md").relative_to(ctx.root).as_posix()
     labels = role_labels(ctx)
@@ -331,8 +340,10 @@ def depth_chart_page(ctx):
     def seat(pos, name, note=""):
         if name:
             offense.append([pos, player_link(ctx, rel, name), note])
-    seat("QB", (depth.get("QB") or [None])[0], "Chad Henne is QB2")
-    seat("RB", (depth.get("RB") or [None])[0], "Anderson and Grimes follow")
+    quarterbacks, backs = depth.get("QB") or [None], depth.get("RB") or [None]
+    seat("QB", quarterbacks[0], "%s is QB2" % quarterbacks[1] if len(quarterbacks) > 1 else "")
+    seat("RB", backs[0], "%s %s" % (join_names(backs[1:]), "follows" if len(backs) == 2 else "follow")
+         if len(backs) > 1 else "")
     seat("FB", (depth.get("FB") or [None])[0], "For fullback packages")
     receivers = depth.get("WR") or []
     for i, label in enumerate(("X", "H", "Z")):
@@ -365,11 +376,11 @@ def depth_chart_page(ctx):
         special_defense.append(["Dime, sixth defensive back", player_link(ctx, rel, dbs[5])])
     lines += [table(["Role", "Player"], special_defense) if special_defense else "No separate package seats recorded.", "",
               "## Current medical limitations", ""]
-    active = hub._active_medical(ctx.roster)
+    active = summary.held(ctx.roster)
     if active:
-        lines += [table(["Player", "Status", "Next date"],
-                        [[player_link(ctx, rel, p["name"]), hub._medical_status(p), hub._medical_dates(p)]
-                         for p in active]), ""]
+        lines += [table(["Player", "Status", "Next medical date"],
+                        [[player_link(ctx, rel, p["name"]), summary.medical_status(p),
+                          summary.next_dates(p, ctx.as_of)] for p in active]), ""]
     else:
         lines += ["No medical instructions on the 53-man roster.", ""]
     lines += ["Medical clearance remains with the medical staff. " +

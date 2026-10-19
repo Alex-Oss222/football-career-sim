@@ -1,11 +1,11 @@
-# Regular-season output template
+# Game Report template (regular season and postseason)
 
-**Status:** The user's weekly game turn template, confirmed September 30, 2026. Applies to every regular-season and postseason game turn from the 2014 season onward; 2013 turns keep the earlier format, retained in git history.
+**Status:** The user's weekly game turn template, confirmed September 30, 2026. Applies to every regular-season and postseason game turn from the 2014 season onward; 2013 turns keep the earlier format, retained in git history. From 2014 Week 6 (October 19, 2026, rebuild step 4) the filled page is the week's **Game Report**, `Game_Report.md` in the week's folder, the result page of the game week's three pages: the Game Week Briefing (what Stone needed to know), his Game Plan (what he decided) and the Game Report (what happened and what changed). 2014 Weeks 1 to 5 keep their `output.md` as written. From Week 6 section 6 is headed "Weekly personnel and availability", without the earlier last word, which the clean-page check does not allow on a page; the earlier reports keep their heading as written.
 **When used:** Regular-season game weeks, byes and postseason turns. An unplayed slot contains preparation only; do not fill a result, player performance or box score before the game is resolved. Use the [preseason output template](preseason_output_template.md) for preseason turns and the [offseason output template](offseason_output_template.md) for offseason turns. Document 7 governs simulation; this template governs presentation.
 
-Every weekly game turn follows this layout. Bracketed text is an authoring prompt, not a requirement to manufacture content. Italic instructions are carried out and left out of the output. Apply the [game-output workflow](../../docs/game_output_workflow.md) before writing or restyling a turn.
+Every Game Report follows this layout. Bracketed text is an authoring prompt, not a requirement to manufacture content. Italic instructions are carried out and left out of the output. Apply the [game-output workflow](../../docs/game_output_workflow.md) before writing or restyling a turn.
 
-The confirmed weekly layout has unnumbered Coach info followed by seven numbered sections. The game is section 3. Its quarter narrative and result summary lead directly into **Report to render**, followed by the existing player findings, decisions, availability and full generated statistics. Postgame media stays in section 4, coaching carry-forward in section 5, personnel in section 6 and closure in section 7. The preseason template has its own eight-section numbering; do not renumber either to match the other.
+The confirmed weekly layout has unnumbered Coach info followed by seven numbered sections. The game is section 3. Its quarter narrative and result summary lead directly into the **Game review** (the block the earlier outputs titled "Report to render"), followed by the existing player findings, decisions, availability and full generated statistics. Postgame media stays in section 4, coaching carry-forward in section 5, personnel in section 6 and closure in section 7. The preseason template has its own eight-section numbering; do not renumber either to match the other.
 
 ## Rules for every turn
 
@@ -17,6 +17,7 @@ The confirmed weekly layout has unnumbered Coach info followed by seven numbered
 4. **Questions are original.** Ask what a reporter could reasonably ask from public information at that point. Let follow-ups respond to Stone's answer. Do not transplant another session's questions or assign an invented line to a real reporter.
 5. **Stone remains user-controlled.** In an authorized media writeup, routine answers may express recorded decisions and established positions in his voice. Preserve the user's actual words and their meaning. Do not create a new commitment, policy, personnel decision, accusation or private motive; a consequential unanswered choice returns to the user.
 6. **Keep machinery in its proper owners.** Preserve event metadata, receipts and validation records. Their contents do not become football narration. A material evidence gap is described once in the supporting notes, and in the football account only where it changes the conclusion or the next decision.
+7. **The page is football only.** A Game Report passes the clean-page check in repository validation (rebuild rule 4): no internal code or identifier, no file path, script or module name, no system note, disclaimer or version label, and none of the words engine, branch, receipt, kernel, ledger, snapshot, checkpoint or simulation. Write "the game book", "the play-by-play", "the film", "the staff record". Link to pages (the Game Week Briefing, the Game Plan, the medical history, the standings, the statistics), never to a file in the data area. The only markup is the event-record line and the two box-score markers, each on a line of its own.
 
 ### Prose standard
 
@@ -32,10 +33,12 @@ The confirmed weekly layout has unnumbered Coach info followed by seven numbered
 
 *Carried out by whoever runs the turn. None of this block appears in the output.*
 
-- *Storage. The complete protagonist turn is the week's `output.md`, at `career/[year]/Regular_Season/Games/Week_NN/output.md` for a regular-season week and under `career/[year]/Postseason/Games/` for a postseason game; both resolve through `runtime.seasons.SeasonPaths.week_folder`. No separate prep, press, recap or highlights file. Background games go to `career/[year]/Regular_Season/League_Results/week_NN.md` as a scores-and-highlights roundup and are never expanded into this format.*
+- *Storage. The complete protagonist turn is the week's Game Report, `runtime.seasons.SeasonPaths.game_report(N)`: `career/[year]/Regular_Season/Games/Week_NN/Game_Report.md` for a regular-season week and under `career/[year]/Postseason/Games/` for a postseason game (2014 Weeks 1 to 5: `output.md`, as written). It sits beside the week's Game Week Briefing and Game Plan; no separate prep, press, recap or highlights file. Background games go to `career/[year]/Regular_Season/League_Results/week_NN.md` as a scores-and-highlights roundup and are never expanded into this format: `python scripts/render_week_pages.py --season YEAR` builds that page's dates, byes, score table and one heading per game, and the highlights (two to four sentences and one to three standouts per game) and the reactive events are stored in that page's data twin, `data/[year]/Regular_Season/League_Results/week_NN.json` (`games` keyed by event id, `reactive_events`), which the page renders under those headings. The page is never edited by hand; a rebuild replaces anything written on it.*
+- *The event record. The game's event-record line sits on a line of its own in the Game Report. Its one-line summary becomes the game's line in the annual record, which the clean-page check reads, so it is written in football words: the score, the decisive sequences, the material decisions, injuries and transactions, the record and the standing. No kernel, generation, audit or validation wording; `python scripts/render_annual_record.py YEAR` refuses a summary that breaks the rule and names the problem.*
 - *Receipts. Every closed game produces a public stat receipt under the season's stats directory (`SeasonPaths.receipts`, with postseason receipts in the sibling `postseason_receipts` directory): a full receipt with the complete player dictionaries, snap `play_ledger`, drives and named-call statistics for the protagonist's game, and a `compact_stats` receipt for each background game. Everything statistical is generated from the receipts, never typed: the full stats block below, the standings (`python scripts/render_standings.py YEAR`) and the season statistics (`python scripts/render_season_stats.py YEAR --team TEAM_ID`) are all regenerated after the week closes. A missing attribution stays missing; no real historical statistic fills it.*
-- *The full stats block. The whole "Full stats for the game" block is generated by `python scripts/render_box_score.py --season YEAR --write <output.md>` between the markers `<!-- box-score event=EVENT_ID team=[Team name] -->` and `<!-- /box-score -->`, which sit where that block belongs. Nothing inside the markers is typed or edited by hand; `scripts/validate_repository.py` fails if the block differs from its receipt. The renderer records in its docstring which rows and columns the receipt supports and leaves out the rest.*
-- *Call sheet. Before the draw, Stone's executable offensive menu is frozen as `call_sheet.json` in the week folder and passed to the simulator as structured `TeamInput.offensive_call_sheet` data. A call entry may contain `name`, `family`, `type` (`run`, `pass`, `any` or `mixed`), `personnel`, `formation`, `motion`, `protection` and `tags`. Supply only structure that was actually prepared; if only the family is established, give only the family, name and type. A named-call total may be reported only from the generated snap ledger, never inferred from the prose.*
+- *The full stats block. The whole "Full stats for the game" block is generated by `python scripts/render_box_score.py --season YEAR --write <Game_Report.md>` between the markers `<!-- box-score event=EVENT_ID team=[Team name] -->` and `<!-- /box-score -->`, each on a line of its own where that block belongs. Nothing inside the markers is typed or edited by hand; `scripts/validate_repository.py` fails if the block differs from its receipt. In a Game Report the sacks columns are headed SCK/YDS (an `output.md` keeps SCK-YDS as written). The renderer records in its docstring which rows and columns the receipt supports and leaves out the rest.*
+- *The pages the close rewrites. After the game closes: the box score above; `python scripts/render_week_pages.py --season YEAR` for the Games and league-results indexes, the league-results week page, the injury report built from the roster record, the medical history's dated entry for the game's Jacksonville injuries and an incident record for each new injury; then the annual record. Hand-written medical updates (a reassessment, a clearance, a hold released) are dated entries appended at the end of the medical history, each with its event-record line, in football words.*
+- *Call sheet. Before the draw, Stone's executable offensive menu is frozen as `call_sheet.json` in the week's data folder (`SeasonPaths.call_sheet`), applied from his Game Plan, and passed to the simulator as structured `TeamInput.offensive_call_sheet` data. A call entry may contain `name`, `family`, `type` (`run`, `pass`, `any` or `mixed`), `personnel`, `formation`, `motion`, `protection` and `tags`. Supply only structure that was actually prepared; if only the family is established, give only the family, name and type. A named-call total may be reported only from the generated snap ledger, never inferred from the prose.*
 - *Coach info. The record table is printed by `python scripts/render_coach_record.py YEAR --opponent "[Opponent name]" --date YYYY-MM-DD` from the receipts and the recorded hire date, with the template's omission rules applied.*
 
 ## Header
@@ -73,9 +76,9 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 *Prose paragraphs under these four labels. No tables.*
 
-**Opponent context.** \[From the branch's own film and statbook: what the opponent showed on offense, defense and special teams, its record and recent results in the branch, the players the plan had to account for, and its availability. State plainly anything the staff did not know going in.\]
+**Opponent context.** \[From this season's own film and game records, as the Game Week Briefing gave them: what the opponent showed on offense, defense and special teams, its record and recent results this season, the players the plan had to account for, and its availability. State plainly anything the staff did not know going in.\]
 
-**Stone's priorities and decisions.** \[The priorities for the week and the decision each one drove. Starters and any change from last week. The shape of the call sheet: base personnel, the openers and what they were built to find out, third down, red zone, the defensive plan. What was on the menu, and what was taken off it and why.\]
+**Stone's priorities and decisions.** \[From his Game Plan: the priorities for the week and the decision each one drove. Starters and any change from last week. The shape of the call sheet: base personnel, the openers and what they were built to find out, third down, red zone, the defensive plan. What was on the menu, and what was taken off it and why.\]
 
 **The week, day by day.** \[Preserve the recorded dates and sequence of preparation. Describe what was actually reviewed, installed or rehearsed and material restrictions. Combine quiet days when useful; do not invent activity for a missing day or silently discard existing preparation evidence.\]
 
@@ -120,7 +123,7 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 *Add an OT column only if overtime was played.*
 
-### Report to render
+### Game review
 
 **Review:** \[Immediate postgame assessment, or completed staff review with the actual evidence-through date.\]
 
@@ -235,7 +238,7 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 **Passing**
 
-| Player | CMP/ATT | YDS | AVG | TD | INT | SCK-YDS | LNG | RTG |
+| Player | CMP/ATT | YDS | AVG | TD | INT | SCK/YDS | LNG | RTG |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | \[Name\] | \[XX/XX\] | \[XXX\] | \[X.X\] | \[X\] | \[X\] | \[X-XX\] | \[XX\] | \[XXX.X\] |
 
@@ -267,7 +270,7 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 **Defense**
 
-| Player | TOT | SOLO | AST | SCK-YDS | TFL | QB HITS | PD | INT | FF | FR |
+| Player | TOT | SOLO | AST | SCK/YDS | TFL | QB HITS | PD | INT | FF | FR |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | \[Name\] | \[XX\] | \[X\] | \[X\] | \[X.X-XX\] | \[X\] | \[X\] | \[X\] | \[X\] | \[X\] | \[X\] |
 | Team total | \[XX\] | \[XX\] | \[XX\] | \[X.X-XX\] | \[X\] | \[X\] | \[X\] | \[X\] | \[X\] | \[X\] |
@@ -344,7 +347,7 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 **Next-week carry-forward:** \[Turn those conclusions into the actual or proposed next work: the cutups, the corrections, what stays on the menu and what waits. Name the responsible actual coach and the next useful opportunity for each material correction. Distinguish work proposed, instruction delivered and improvement actually observed.\]
 
-## 6. Weekly personnel and availability snapshot
+## 6. Weekly personnel and availability
 
 *The roster as it stands leaving this game. Preserve the unit headings and tables, with concise current-role and availability entries. Full participation is accounted for in the generated statistics; this section explains material role, medical and evaluation findings. Do not recopy every player's statistical line or invent a new judgment for an unchanged group. An unchanged group retains its supported current view; the evidence column can point to the finding above rather than restate it. Link the controlling roster and medical records.*
 
@@ -393,7 +396,7 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 ## 7. Week closure
 
-*Written last, after the statbook has been updated from the receipt.*
+*Written last, after the statistics, standings, awards, medical pages and indexes have been rebuilt from the closed game.*
 
 **Record after game:** \[W-L-T\]
 
@@ -401,8 +404,8 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 **Statistics:** \[Link to the updated season statistics and their through-date. Put a coverage limitation here only if it affects their use.\]
 
-**Supporting notes:** \[Compact links to the existing preparation, decision, medical and game sources. State a material evidence limitation once if needed. Any new writing references are references for form, not the source of a reporter's words. Omit routine execution, browsing and validation logs. Preserve machine metadata in its existing place.\]
+**Supporting notes:** \[Compact links to the week's pages: the Game Week Briefing, the Game Plan, the medical history and injury report, the league results, the awards. State a material evidence limitation once if needed, in football words. Any new writing references are references for form, not the source of a reporter's words. Omit routine execution, browsing and validation logs, and every link into the data area. Preserve machine metadata in its existing place.\]
 
-**Dated record:** \[Descriptive link to the completed game/event owner; the annual Record.md provides its one-line index. A presentation-only rewrite retains the existing event.\]
+**Dated record:** \[A link to the season's annual record, where this game's event line indexes this report. A presentation-only rewrite retains the existing event.\]
 
 **Next event:** \[Week X+1 vs. / at Opponent, Day, Month Date, Time\], or \[bye / playoff round / offseason phase\].

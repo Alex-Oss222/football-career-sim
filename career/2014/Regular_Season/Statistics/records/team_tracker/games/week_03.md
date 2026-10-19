@@ -1,8 +1,6 @@
 # Jacksonville Jaguars 2014: Week 3 vs. Indianapolis Colts
 
-**Result:** W 38-34. **Generated** by `python scripts/render_team_tracker.py 2014` from receipt `2014-week03-indianapolis-colts-at-jacksonville-jaguars`; do not edit by hand.
-
-Reader view for the user only. It is not an input to the simulation or to any evaluation.
+**Result:** W 38-34. [Season tracker](../README.md)
 
 ## This game
 
@@ -173,4 +171,4 @@ Record through Week 3: 3-0. Rate stats are recalculated from the totals, never a
 |---|---|---|---|---|---|---|---|
 | Andrew Hawkins | 3 | 8 | 230 | 28.8 | 9 | 100 | 11.1 |
 
-The receipts do not record the longest completion, the longest field goal, or return and defensive touchdowns, so those template columns are left out rather than guessed.
+The game records do not include the longest completion, the longest field goal, or return and defensive touchdowns, so those columns are left out rather than guessed.

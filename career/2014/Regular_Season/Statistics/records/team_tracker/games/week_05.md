@@ -1,8 +1,6 @@
 # Jacksonville Jaguars 2014: Week 5 vs. Pittsburgh Steelers
 
-**Result:** L 10-27. **Generated** by `python scripts/render_team_tracker.py 2014` from receipt `2014-week05-pittsburgh-steelers-at-jacksonville-jaguars`; do not edit by hand.
-
-Reader view for the user only. It is not an input to the simulation or to any evaluation.
+**Result:** L 10-27. [Season tracker](../README.md)
 
 ## This game
 
@@ -102,7 +100,7 @@ Reader view for the user only. It is not an input to the simulation or to any ev
 
 Record through Week 5: 3-2. Rate stats are recalculated from the totals, never averaged across games.
 
-FUM, LOST, FF and FR combine two definitions this season: games closed before kernel 2014.6 counted every generated fumble as lost and named one defender as its forcer and recoverer; from kernel 2014.6 a fumble may be kept, the forcer and recoverer are separate group draws or replayed records, and muffs are counted. No fumble rank is published, and who fumbled, forced, recovered or muffed is never evidence of a player's ball security.
+FUM, LOST, FF and FR combine two counting methods this season: through Week 4 every fumble counted as lost, with one defender credited with forcing and recovering it; from Week 5 a fumble may be kept, the players who force and recover it are credited separately and muffs are counted. No fumble ranking is kept.
 
 #### Quarterbacks
 
@@ -175,4 +173,4 @@ FUM, LOST, FF and FR combine two definitions this season: games closed before ke
 |---|---|---|---|---|---|---|---|
 | Andrew Hawkins | 5 | 13 | 310 | 23.8 | 13 | 123 | 9.5 |
 
-The receipts do not record the longest completion or the longest field goal, so those template columns are left out rather than guessed. Two-point conversions and return and defensive touchdowns are recorded from kernel 2014.6 games only.
+The game records do not include the longest completion or the longest field goal, so those columns are left out rather than guessed. Two-point conversions and return and defensive touchdowns are recorded from Week 5 on.
