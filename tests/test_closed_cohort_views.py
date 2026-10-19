@@ -44,12 +44,16 @@ def receipts_in(folder):
 
 class ClosedSeasonViewTests(unittest.TestCase):
     def check_views(self, year, receipts, folder):
-        from scripts.render_season_stats import render_views
+        from scripts.render_season_stats import render_views, view_path
         views = render_views(year, TEAM, receipts)
         self.assertIn("calibration_audit.md", views)
+        paths = SeasonPaths(year, ROOT)
+        self.assertEqual(paths.stats, Path(folder))
         for name, text in views.items():
             with self.subTest(year=year, view=name):
-                self.assertEqual(SeasonPaths(year, ROOT).file_in(folder, name).read_text(encoding="utf-8"), text)
+                # Where the weekly workflow writes each view (2014: the audit in the data area,
+                # the statbook index at the statbook page).
+                self.assertEqual(view_path(paths, name).read_text(encoding="utf-8"), text)
 
     def test_2013_season_views_and_standings(self):
         from scripts.render_standings import render

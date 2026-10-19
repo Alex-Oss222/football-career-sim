@@ -1,99 +1,146 @@
-# Week 3 awards
+# Week 3 Players of the Week
 
 [All regular-season awards](../README.md)
 
-## AFC Offensive Player
+The league’s players of the week for Week 3, for the games of September 18 to September 22, 2014.
 
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/LeVeon_Bell_26_practicing_2013.jpg?width=500" alt="Le&#x27;Veon Bell" width="160">
+| Award | Player | Club |
+|---|---|---|
+| AFC Offensive Player of the Week | Le'Veon Bell | Pittsburgh Steelers |
+| AFC Defensive Player of the Week | Aaron Williams | Buffalo Bills |
+| AFC Special Teams Player of the Week | Dustin Colquitt | Kansas City Chiefs |
+| NFC Offensive Player of the Week | Alfred Morris | Washington Redskins |
+| NFC Defensive Player of the Week | Matt Shaughnessy | Arizona Cardinals |
+| NFC Special Teams Player of the Week | Shayne Graham | New Orleans Saints |
+
+## AFC Offensive Player of the Week
+
+![Le'Veon Bell](https://commons.wikimedia.org/wiki/Special:FilePath/LeVeon_Bell_26_practicing_2013.jpg?width=160)
+
+**Le'Veon Bell, running back, Pittsburgh Steelers.** In the Steelers' 34-24 win over the Carolina Panthers on September 21: 26 carries for 202 yards and 2 touchdowns; 6 catches for 76 yards and 1 touchdown.
 
 ![AFC Offensive Player: Le'Veon Bell wins; winner centered with a gold border](afc_offense.svg)
 
 | Photo | Player | Team | Shortlist score | Result |
 |---|---|---|---:|---|
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/LeVeon_Bell_26_practicing_2013.jpg?width=500" alt="Le&#x27;Veon Bell" width="60"> | Le'Veon Bell | Pittsburgh Steelers | 45.8 | Winner |
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cousins_2022.jpg?width=500" alt="Kirk Cousins" width="60"> | Kirk Cousins | Jacksonville Jaguars | 32.4 | Finalist |
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Joe_Flacco_2025_Browns_Camp_-_54694425196_%28cropped%29.jpg?width=500" alt="Joe Flacco" width="60"> | Joe Flacco | Baltimore Ravens | 32.1 | Finalist |
+| ![Le'Veon Bell](https://commons.wikimedia.org/wiki/Special:FilePath/LeVeon_Bell_26_practicing_2013.jpg?width=60) | Le'Veon Bell | Pittsburgh Steelers | 45.8 | Winner |
+| ![Kirk Cousins](https://commons.wikimedia.org/wiki/Special:FilePath/Cousins_2022.jpg?width=60) | Kirk Cousins | Jacksonville Jaguars | 32.4 | Finalist |
+| ![Joe Flacco](https://commons.wikimedia.org/wiki/Special:FilePath/Joe_Flacco_2025_Browns_Camp_-_54694425196_%28cropped%29.jpg?width=60) | Joe Flacco | Baltimore Ravens | 32.1 | Finalist |
 
-Scores preserve the recorded shortlist. No vote totals or second/third places are inferred.
+The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
 
-Photos, identity imagery only: Le'Veon Bell (I, the copyright holder of this work, hereby publish it under the following license:, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:LeVeon_Bell_26_practicing_2013.jpg)); Kirk Cousins (All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0), [source](https://commons.wikimedia.org/wiki/File:Cousins_2022.jpg)); Joe Flacco (Erik Drost, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0), [source](https://commons.wikimedia.org/wiki/File:Joe_Flacco_2025_Browns_Camp_-_54694425196_(cropped).jpg)).
+*Photo: Le'Veon Bell, I, the copyright holder of this work, hereby publish it under the following license:, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:LeVeon_Bell_26_practicing_2013.jpg).*
 
-## AFC Defensive Player
+*Photo: Kirk Cousins, All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0), [source](https://commons.wikimedia.org/wiki/File:Cousins_2022.jpg).*
 
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Williams_%28American_football%29.JPG?width=500" alt="Aaron Williams" width="160">
+*Photo: Joe Flacco, Erik Drost, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0), [source](https://commons.wikimedia.org/wiki/File:Joe_Flacco_2025_Browns_Camp_-_54694425196_(cropped).jpg).*
+
+## AFC Defensive Player of the Week
+
+![Aaron Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Williams_%28American_football%29.JPG?width=160)
+
+**Aaron Williams, safety, Buffalo Bills.** In the Bills' 24-21 loss to the San Diego Chargers on September 21: 13 tackles, 2 interceptions, 2 passes defended.
 
 ![AFC Defensive Player: Aaron Williams wins; winner centered with a gold border](afc_defense.svg)
 
 | Photo | Player | Team | Shortlist score | Result |
 |---|---|---|---:|---|
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Williams_%28American_football%29.JPG?width=500" alt="Aaron Williams" width="60"> | Aaron Williams | Buffalo Bills | 25.6 | Winner |
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Shazier.jpg?width=500" alt="Ryan Shazier" width="60"> | Ryan Shazier | Pittsburgh Steelers | 25.3 | Finalist |
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Darrelle_Revis_ESPNWeekend2010-051.jpg?width=500" alt="Darrelle Revis" width="60"> | Darrelle Revis | New England Patriots | 24.8 | Finalist |
+| ![Aaron Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Williams_%28American_football%29.JPG?width=60) | Aaron Williams | Buffalo Bills | 25.6 | Winner |
+| ![Ryan Shazier](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Shazier.jpg?width=60) | Ryan Shazier | Pittsburgh Steelers | 25.3 | Finalist |
+| ![Darrelle Revis](https://commons.wikimedia.org/wiki/Special:FilePath/Darrelle_Revis_ESPNWeekend2010-051.jpg?width=60) | Darrelle Revis | New England Patriots | 24.8 | Finalist |
 
-Scores preserve the recorded shortlist. No vote totals or second/third places are inferred.
+The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
 
-Photos, identity imagery only: Aaron Williams (Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:Aaron_Williams_(American_football).JPG)); Ryan Shazier (David Schellhaas, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0), [source](https://commons.wikimedia.org/wiki/File:Ryan_Shazier.jpg)); Darrelle Revis (Jeff Kern, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0), [source](https://commons.wikimedia.org/wiki/File:Darrelle_Revis_ESPNWeekend2010-051.jpg)).
+*Photo: Aaron Williams, Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:Aaron_Williams_(American_football).JPG).*
 
-## AFC Special Teams Player
+*Photo: Ryan Shazier, David Schellhaas, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0), [source](https://commons.wikimedia.org/wiki/File:Ryan_Shazier.jpg).*
 
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chiefs_Punter_Dustin_Colquitt_Super_Bowl_54_Interview_%28cropped%29.png?width=500" alt="Dustin Colquitt" width="160">
+*Photo: Darrelle Revis, Jeff Kern, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0), [source](https://commons.wikimedia.org/wiki/File:Darrelle_Revis_ESPNWeekend2010-051.jpg).*
+
+## AFC Special Teams Player of the Week
+
+![Dustin Colquitt](https://commons.wikimedia.org/wiki/Special:FilePath/Chiefs_Punter_Dustin_Colquitt_Super_Bowl_54_Interview_%28cropped%29.png?width=160)
+
+**Dustin Colquitt, punter, Kansas City Chiefs.** In the Chiefs' 31-6 loss to the Miami Dolphins on September 21: 7 punts for a 52.1-yard average, 4 inside the 20.
 
 ![AFC Special Teams Player: Dustin Colquitt wins; winner centered with a gold border](afc_special_teams.svg)
 
 | Photo | Player | Team | Shortlist score | Result |
 |---|---|---|---:|---|
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_hawkins_bengals.jpg?width=500" alt="Andrew Hawkins" width="60"> | Andrew Hawkins | Jacksonville Jaguars | 18.3 | Finalist |
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chiefs_Punter_Dustin_Colquitt_Super_Bowl_54_Interview_%28cropped%29.png?width=500" alt="Dustin Colquitt" width="60"> | Dustin Colquitt | Kansas City Chiefs | 16.5 | Winner |
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Succop.JPG?width=500" alt="Ryan Succop" width="60"> | Ryan Succop | Tennessee Titans | 14.0 | Finalist |
+| ![Andrew Hawkins](https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_hawkins_bengals.jpg?width=60) | Andrew Hawkins | Jacksonville Jaguars | 18.3 | Finalist |
+| ![Dustin Colquitt](https://commons.wikimedia.org/wiki/Special:FilePath/Chiefs_Punter_Dustin_Colquitt_Super_Bowl_54_Interview_%28cropped%29.png?width=60) | Dustin Colquitt | Kansas City Chiefs | 16.5 | Winner |
+| ![Ryan Succop](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Succop.JPG?width=60) | Ryan Succop | Tennessee Titans | 14.0 | Finalist |
 
-Scores preserve the recorded shortlist. No vote totals or second/third places are inferred.
+The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
 
-Photos, identity imagery only: Andrew Hawkins (original: Navin75 derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0), [source](https://commons.wikimedia.org/wiki/File:Andrew_hawkins_bengals.jpg)); Dustin Colquitt (Time2Football, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0), [source](https://commons.wikimedia.org/wiki/File:Chiefs_Punter_Dustin_Colquitt_Super_Bowl_54_Interview_(cropped).png)); Ryan Succop (Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:Ryan_Succop.JPG)).
+*Photo: Andrew Hawkins, original: Navin75 derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0), [source](https://commons.wikimedia.org/wiki/File:Andrew_hawkins_bengals.jpg).*
 
-## NFC Offensive Player
+*Photo: Dustin Colquitt, Time2Football, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0), [source](https://commons.wikimedia.org/wiki/File:Chiefs_Punter_Dustin_Colquitt_Super_Bowl_54_Interview_(cropped).png).*
 
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Alfred_morris_redskins.jpg?width=500" alt="Alfred Morris" width="160">
+*Photo: Ryan Succop, Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:Ryan_Succop.JPG).*
+
+## NFC Offensive Player of the Week
+
+![Alfred Morris](https://commons.wikimedia.org/wiki/Special:FilePath/Alfred_morris_redskins.jpg?width=160)
+
+**Alfred Morris, running back, Washington Redskins.** In the Redskins' 33-30 loss to the Philadelphia Eagles on September 21: 18 carries for 73 yards and 2 touchdowns; 4 catches for 65 yards and 1 touchdown.
 
 ![NFC Offensive Player: Alfred Morris wins; winner centered with a gold border](nfc_offense.svg)
 
 | Photo | Player | Team | Shortlist score | Result |
 |---|---|---|---:|---|
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Alfred_morris_redskins.jpg?width=500" alt="Alfred Morris" width="60"> | Alfred Morris | Washington Redskins | 31.8 | Winner |
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Joique_Bell_warming_up_before_a_Detroit_Lions_football_game_on_2013-09-29.jpg?width=500" alt="Joique Bell" width="60"> | Joique Bell | Detroit Lions | 27.9 | Finalist |
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mark_Ingram%2C_Jr._at_the_White_House_2010-03-08_3.jpg?width=500" alt="Mark Ingram" width="60"> | Mark Ingram | New Orleans Saints | 23.9 | Finalist |
+| ![Alfred Morris](https://commons.wikimedia.org/wiki/Special:FilePath/Alfred_morris_redskins.jpg?width=60) | Alfred Morris | Washington Redskins | 31.8 | Winner |
+| ![Joique Bell](https://commons.wikimedia.org/wiki/Special:FilePath/Joique_Bell_warming_up_before_a_Detroit_Lions_football_game_on_2013-09-29.jpg?width=60) | Joique Bell | Detroit Lions | 27.9 | Finalist |
+| ![Mark Ingram](https://commons.wikimedia.org/wiki/Special:FilePath/Mark_Ingram%2C_Jr._at_the_White_House_2010-03-08_3.jpg?width=60) | Mark Ingram | New Orleans Saints | 23.9 | Finalist |
 
-Scores preserve the recorded shortlist. No vote totals or second/third places are inferred.
+The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
 
-Photos, identity imagery only: Alfred Morris (Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0), [source](https://commons.wikimedia.org/wiki/File:Alfred_morris_redskins.jpg)); Joique Bell (Kevin Doebler, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:Joique_Bell_warming_up_before_a_Detroit_Lions_football_game_on_2013-09-29.jpg)); Mark Ingram (Executive Office of the President, Public domain, [source](https://commons.wikimedia.org/wiki/File:Mark_Ingram,_Jr._at_the_White_House_2010-03-08_3.jpg)).
+*Photo: Alfred Morris, Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0), [source](https://commons.wikimedia.org/wiki/File:Alfred_morris_redskins.jpg).*
 
-## NFC Defensive Player
+*Photo: Joique Bell, Kevin Doebler, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:Joique_Bell_warming_up_before_a_Detroit_Lions_football_game_on_2013-09-29.jpg).*
 
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Shaughnessy.JPG?width=500" alt="Matt Shaughnessy" width="160">
+*Photo: Mark Ingram, Executive Office of the President, Public domain, [source](https://commons.wikimedia.org/wiki/File:Mark_Ingram,_Jr._at_the_White_House_2010-03-08_3.jpg).*
+
+## NFC Defensive Player of the Week
+
+![Matt Shaughnessy](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Shaughnessy.JPG?width=160)
+
+**Matt Shaughnessy, defensive end, Arizona Cardinals.** In the Cardinals' 24-20 win over the San Francisco 49ers on September 21: 10 tackles, 1 sack, 2 tackles for loss, 1 interception, 1 pass defended.
 
 ![NFC Defensive Player: Matt Shaughnessy wins; winner centered with a gold border](nfc_defense.svg)
 
 | Photo | Player | Team | Shortlist score | Result |
 |---|---|---|---:|---|
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Shaughnessy.JPG?width=500" alt="Matt Shaughnessy" width="60"> | Matt Shaughnessy | Arizona Cardinals | 23.8 | Winner |
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_mundy_bears.jpg?width=500" alt="Ryan Mundy" width="60"> | Ryan Mundy | Chicago Bears | 23.0 | Finalist |
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Melton_Quinnan_123.jpg?width=500" alt="Henry Melton" width="60"> | Henry Melton | Dallas Cowboys | 20.5 | Finalist |
+| ![Matt Shaughnessy](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Shaughnessy.JPG?width=60) | Matt Shaughnessy | Arizona Cardinals | 23.8 | Winner |
+| ![Ryan Mundy](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_mundy_bears.jpg?width=60) | Ryan Mundy | Chicago Bears | 23.0 | Finalist |
+| ![Henry Melton](https://commons.wikimedia.org/wiki/Special:FilePath/Melton_Quinnan_123.jpg?width=60) | Henry Melton | Dallas Cowboys | 20.5 | Finalist |
 
-Scores preserve the recorded shortlist. No vote totals or second/third places are inferred.
+The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
 
-Photos, identity imagery only: Matt Shaughnessy (Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:Matt_Shaughnessy.JPG)); Ryan Mundy (original: U.S. Army Photo by Sgt. 1st Class Michel Sauret on behalf of 416th Theater Engineer Command Army Reserve derivative: Diddykong1130, Public domain, [source](https://commons.wikimedia.org/wiki/File:Ryan_mundy_bears.jpg)); Henry Melton (Quinnanmatt, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:Melton_Quinnan_123.jpg)).
+*Photo: Matt Shaughnessy, Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:Matt_Shaughnessy.JPG).*
 
-## NFC Special Teams Player
+*Photo: Ryan Mundy, original: U.S. Army Photo by Sgt. 1st Class Michel Sauret on behalf of 416th Theater Engineer Command Army Reserve derivative: Diddykong1130, Public domain, [source](https://commons.wikimedia.org/wiki/File:Ryan_mundy_bears.jpg).*
 
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shayne_Graham_2006-11-05.jpg?width=500" alt="Shayne Graham" width="160">
+*Photo: Henry Melton, Quinnanmatt, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:Melton_Quinnan_123.jpg).*
+
+## NFC Special Teams Player of the Week
+
+![Shayne Graham](https://commons.wikimedia.org/wiki/Special:FilePath/Shayne_Graham_2006-11-05.jpg?width=160)
+
+**Shayne Graham, kicker, New Orleans Saints.** In the Saints' 33-7 win over the Minnesota Vikings on September 21: 4 of 4 field goals; 3 of 3 extra points.
 
 ![NFC Special Teams Player: Shayne Graham wins; winner centered with a gold border](nfc_special_teams.svg)
 
 | Photo | Player | Team | Shortlist score | Result |
 |---|---|---|---:|---|
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cody_Parkey.jpg?width=500" alt="Cody Parkey" width="60"> | Cody Parkey | Philadelphia Eagles | 15.0 | Finalist |
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shayne_Graham_2006-11-05.jpg?width=500" alt="Shayne Graham" width="60"> | Shayne Graham | New Orleans Saints | 15.0 | Winner |
-| <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nolan_Carroll.jpg?width=500" alt="Nolan Carroll" width="60"> | Nolan Carroll | Philadelphia Eagles | 14.7 | Finalist |
+| ![Cody Parkey](https://commons.wikimedia.org/wiki/Special:FilePath/Cody_Parkey.jpg?width=60) | Cody Parkey | Philadelphia Eagles | 15.0 | Finalist |
+| ![Shayne Graham](https://commons.wikimedia.org/wiki/Special:FilePath/Shayne_Graham_2006-11-05.jpg?width=60) | Shayne Graham | New Orleans Saints | 15.0 | Winner |
+| ![Nolan Carroll](https://commons.wikimedia.org/wiki/Special:FilePath/Nolan_Carroll.jpg?width=60) | Nolan Carroll | Philadelphia Eagles | 14.7 | Finalist |
 
-Scores preserve the recorded shortlist. No vote totals or second/third places are inferred.
+The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
 
-Photos, identity imagery only: Cody Parkey (Sgt. Staci Miller, Public domain, [source](https://commons.wikimedia.org/wiki/File:Cody_Parkey.jpg)); Shayne Graham (Keith Allison from Baltimore, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0), [source](https://commons.wikimedia.org/wiki/File:Shayne_Graham_2006-11-05.jpg)); Nolan Carroll (Chrisjnelson at en.wikipedia, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0), [source](https://commons.wikimedia.org/wiki/File:Nolan_Carroll.jpg)).
+*Photo: Cody Parkey, Sgt. Staci Miller, Public domain, [source](https://commons.wikimedia.org/wiki/File:Cody_Parkey.jpg).*
+
+*Photo: Shayne Graham, Keith Allison from Baltimore, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0), [source](https://commons.wikimedia.org/wiki/File:Shayne_Graham_2006-11-05.jpg).*
+
+*Photo: Nolan Carroll, Chrisjnelson at en.wikipedia, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0), [source](https://commons.wikimedia.org/wiki/File:Nolan_Carroll.jpg).*

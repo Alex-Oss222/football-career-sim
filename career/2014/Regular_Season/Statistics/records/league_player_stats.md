@@ -1,10 +1,9 @@
 # 2014 NFL player statistics by position
 
-**Version:** `2014-W05-LEAGUE-PLAYER-STATS`
 **Through:** Week 5.
 **Coverage:** complete for every closed game.
 
-Every club's players, one league-wide table per position, each sorted by that position's primary production. G counts games on the game-day active list. FUM, LOST, FF and FR combine two definitions this season: games closed before kernel 2014.6 counted every generated fumble as lost and named one defender as its forcer and recoverer; from kernel 2014.6 a fumble may be kept, the forcer and recoverer are separate group draws or replayed records, and muffs are counted. No fumble rank is published, and who fumbled, forced, recovered or muffed is never evidence of a player's ball security.
+Every club's players, one league-wide table per position, each sorted by that position's primary production. G counts games on the game-day active list. FUM, LOST, FF and FR combine two counting methods this season: through Week 4 every fumble counted as lost, with one defender credited with forcing and recovering it; from Week 5 a fumble may be kept, the players who force and recover it are credited separately and muffs are counted. No fumble ranking is kept.
 
 ## Quarterbacks
 
@@ -2037,1444 +2036,1444 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Team | Pos | Statistics |
 |---|---|---|---|
-| Lyle Sendlein | Arizona Cardinals | C | offensive_snaps 251, special_teams_snaps 18 |
-| Antonio Cromartie | Arizona Cardinals | CB | defensive_snaps 227, special_teams_snaps 16 |
-| Jerraud Powers | Arizona Cardinals | CB | defensive_snaps 130, special_teams_snaps 49 |
-| Justin Bethel | Arizona Cardinals | CB | defensive_snaps 1, special_teams_snaps 33 |
-| Patrick Peterson | Arizona Cardinals | CB | defensive_snaps 227, special_teams_snaps 16 |
-| Alex Okafor | Arizona Cardinals | DE | defensive_snaps 1 |
-| Calais Campbell | Arizona Cardinals | DE | defensive_snaps 227, special_teams_snaps 16 |
-| Matt Shaughnessy | Arizona Cardinals | DE | INT YDS 38, defensive_snaps 227, penalties 1, penalty_yards 5, special_teams_snaps 16 |
-| Ed Stinson | Arizona Cardinals | DT | defensive_snaps 1 |
-| Frostee Rucker | Arizona Cardinals | DT | defensive_snaps 158, special_teams_snaps 16 |
-| Rashad Johnson | Arizona Cardinals | FS | defensive_snaps 52, penalties 1, penalty_yards 10, special_teams_snaps 65 |
-| Tyrann Mathieu | Arizona Cardinals | FS | defensive_snaps 227, special_teams_snaps 16 |
-| Earl Watford | Arizona Cardinals | G | special_teams_snaps 4 |
-| Jonathan Cooper | Arizona Cardinals | G | special_teams_snaps 14 |
-| Paul Fanaika | Arizona Cardinals | G | offensive_snaps 251, special_teams_snaps 18 |
-| Ted Larsen | Arizona Cardinals | G | offensive_snaps 251, penalties 1, penalty_yards 5, special_teams_snaps 18 |
-| Kenny Demens | Arizona Cardinals | ILB | defensive_snaps 5 |
-| Kevin Minter | Arizona Cardinals | ILB | defensive_snaps 227, special_teams_snaps 16 |
-| Larry Foote | Arizona Cardinals | ILB | defensive_snaps 227, special_teams_snaps 16 |
-| Lorenzo Alexander | Arizona Cardinals | ILB | special_teams_snaps 65 |
-| Chandler Catanzaro | Arizona Cardinals | K | special_teams_snaps 38 |
-| Mike Leach | Arizona Cardinals | LS | special_teams_snaps 32 |
-| Alameda Ta'amu | Arizona Cardinals | NT | defensive_snaps 4 |
-| Dan Williams | Arizona Cardinals | NT | defensive_snaps 227, special_teams_snaps 16 |
-| John Abraham | Arizona Cardinals | OLB | defensive_snaps 115, special_teams_snaps 16 |
-| Sam Acho | Arizona Cardinals | OLB | defensive_snaps 2, special_teams_snaps 65 |
-| Thomas Keiser | Arizona Cardinals | OLB | special_teams_snaps 47 |
-| Dave Zastudil | Arizona Cardinals | P | special_teams_snaps 32 |
-| Carson Palmer | Arizona Cardinals | QB | RUSH LNG 25, offensive_snaps 251 |
-| Andre Ellington | Arizona Cardinals | RB | REC LNG 25, offensive_snaps 240 |
-| Jonathan Dwyer | Arizona Cardinals | RB | REC LNG 7, offensive_snaps 72, penalties 1, penalty_yards 10, special_teams_snaps 61 |
-| Robert Hughes | Arizona Cardinals | RB | special_teams_snaps 1 |
-| Stepfan Taylor | Arizona Cardinals | RB | REC LNG 11, offensive_snaps 10, special_teams_snaps 39 |
-| Tony Jefferson | Arizona Cardinals | SS | defensive_snaps 227, special_teams_snaps 16 |
-| Bobby Massie | Arizona Cardinals | T | offensive_snaps 251, penalties 2, penalty_yards 10, special_teams_snaps 18 |
-| Jared Veldheer | Arizona Cardinals | T | offensive_snaps 251, special_teams_snaps 18 |
-| Bradley Sowell | Arizona Cardinals | TE | offensive_snaps 1, special_teams_snaps 65 |
-| Darren Fells | Arizona Cardinals | TE | special_teams_snaps 1 |
-| John Carlson | Arizona Cardinals | TE | offensive_snaps 74, special_teams_snaps 83 |
-| Rob Housler | Arizona Cardinals | TE | offensive_snaps 251, special_teams_snaps 18 |
-| Jaron Brown | Arizona Cardinals | WR | offensive_snaps 1, special_teams_snaps 65 |
-| John Brown | Arizona Cardinals | WR | RUSH LNG 7, offensive_snaps 113 |
-| Larry Fitzgerald | Arizona Cardinals | WR | offensive_snaps 251, penalties 1, penalty_yards 10 |
-| Michael Floyd | Arizona Cardinals | WR | RUSH LNG 6, offensive_snaps 251 |
-| Ted Ginn | Arizona Cardinals | WR | offensive_snaps 6, special_teams_snaps 31 |
-| James Stone | Atlanta Falcons | C | special_teams_snaps 5 |
-| Joe Hawley | Atlanta Falcons | C | offensive_snaps 324, special_teams_snaps 26 |
-| Desmond Trufant | Atlanta Falcons | CB | defensive_snaps 311, special_teams_snaps 17 |
-| Javier Arenas | Atlanta Falcons | CB | defensive_snaps 76, special_teams_snaps 80 |
-| Josh Wilson | Atlanta Falcons | CB | defensive_snaps 300, special_teams_snaps 37 |
-| Robert Alford | Atlanta Falcons | CB | defensive_snaps 158, special_teams_snaps 8 |
-| Robert McClain | Atlanta Falcons | CB | defensive_snaps 236, special_teams_snaps 65 |
-| Jonathan Babineaux | Atlanta Falcons | DE | defensive_snaps 311, special_teams_snaps 17 |
-| Kroy Biermann | Atlanta Falcons | DE | defensive_snaps 311, special_teams_snaps 17 |
-| Osi Umenyiora | Atlanta Falcons | DE | defensive_snaps 9 |
-| Paul Soliai | Atlanta Falcons | DT | defensive_snaps 311, special_teams_snaps 17 |
-| Ra'Shede Hageman | Atlanta Falcons | DT | defensive_snaps 2 |
-| Tyson Jackson | Atlanta Falcons | DT | defensive_snaps 215, special_teams_snaps 17 |
-| Patrick DiMarco | Atlanta Falcons | FB | offensive_snaps 63, special_teams_snaps 83 |
-| Jon Asamoah | Atlanta Falcons | G | offensive_snaps 255, penalties 1, penalty_yards 5, special_teams_snaps 21 |
-| Justin Blalock | Atlanta Falcons | G | offensive_snaps 324, penalties 1, penalty_yards 5, special_teams_snaps 26 |
-| Matt Bryant | Atlanta Falcons | K | special_teams_snaps 54 |
-| Joplo Bartu | Atlanta Falcons | LB | defensive_snaps 311, special_teams_snaps 17 |
-| Nathan Stupar | Atlanta Falcons | LB | defensive_snaps 154, special_teams_snaps 17 |
-| Paul Worrilow | Atlanta Falcons | LB | INT YDS 32, defensive_snaps 311, special_teams_snaps 17 |
-| Prince Shembo | Atlanta Falcons | LB | defensive_snaps 8, special_teams_snaps 8 |
-| Josh Harris | Atlanta Falcons | LS | special_teams_snaps 50 |
-| Tyler Starr | Atlanta Falcons | OLB | defensive_snaps 3, special_teams_snaps 100 |
-| Matt Bosher | Atlanta Falcons | P | special_teams_snaps 50 |
-| Matt Ryan | Atlanta Falcons | QB | RUSH LNG 8, offensive_snaps 324 |
-| Antone Smith | Atlanta Falcons | RB | offensive_snaps 1, special_teams_snaps 19 |
-| Devonta Freeman | Atlanta Falcons | RB | REC LNG 80, offensive_snaps 324 |
-| Jacquizz Rodgers | Atlanta Falcons | RB | offensive_snaps 3, special_teams_snaps 100 |
-| Steven Jackson | Atlanta Falcons | RB | REC LNG 33, offensive_snaps 41, special_teams_snaps 100 |
-| Dezmen Southward | Atlanta Falcons | S | defensive_snaps 2, special_teams_snaps 71 |
-| Kemal Ishmael | Atlanta Falcons | S | defensive_snaps 102, special_teams_snaps 80 |
-| William Moore | Atlanta Falcons | S | defensive_snaps 311, special_teams_snaps 17 |
-| Gabe Carimi | Atlanta Falcons | T | offensive_snaps 52, special_teams_snaps 4 |
-| Jake Matthews | Atlanta Falcons | T | offensive_snaps 324, penalties 1, penalty_yards 5, special_teams_snaps 26 |
-| Lamar Holmes | Atlanta Falcons | T | offensive_snaps 272, special_teams_snaps 22 |
-| Ryan Schraeder | Atlanta Falcons | T | offensive_snaps 69, special_teams_snaps 26 |
-| Bear Pascoe | Atlanta Falcons | TE | offensive_snaps 95, special_teams_snaps 126 |
-| Levine Toilolo | Atlanta Falcons | TE | offensive_snaps 324, penalties 1, penalty_yards 5, special_teams_snaps 26 |
-| Courtney Roby | Atlanta Falcons | WR | offensive_snaps 1, special_teams_snaps 28 |
-| Devin Hester | Atlanta Falcons | WR | offensive_snaps 214, penalties 1, penalty_yards 10, special_teams_snaps 48 |
-| Eric Weems | Atlanta Falcons | WR | offensive_snaps 3, special_teams_snaps 41 |
-| Harry Douglas | Atlanta Falcons | WR | RUSH LNG 25, offensive_snaps 59, special_teams_snaps 62 |
-| Julio Jones | Atlanta Falcons | WR | RUSH LNG 4, offensive_snaps 324 |
-| Roddy White | Atlanta Falcons | WR | RUSH LNG 2, offensive_snaps 198 |
-| Gino Gradkowski | Baltimore Ravens | C | special_teams_snaps 32 |
-| Jeremy Zuttah | Baltimore Ravens | C | offensive_snaps 331, special_teams_snaps 32 |
-| Asa Jackson | Baltimore Ravens | CB | defensive_snaps 330, special_teams_snaps 24 |
-| Chykie Brown | Baltimore Ravens | CB | defensive_snaps 19, penalties 1, penalty_yards 3, special_teams_snaps 104 |
-| Jimmy Smith | Baltimore Ravens | CB | defensive_snaps 330, interception_return_touchdowns 1, special_teams_snaps 24 |
-| Chris Canty | Baltimore Ravens | DE | defensive_snaps 330, special_teams_snaps 24 |
-| DeAngelo Tyson | Baltimore Ravens | DE | defensive_snaps 228, special_teams_snaps 24 |
-| Haloti Ngata | Baltimore Ravens | DT | defensive_snaps 330, special_teams_snaps 24 |
-| Timmy Jernigan | Baltimore Ravens | DT | defensive_snaps 11 |
-| Kyle Juszczyk | Baltimore Ravens | FB | REC LNG 76, FR 1, offensive_snaps 82, special_teams_snaps 104 |
-| Darian Stewart | Baltimore Ravens | FS | defensive_snaps 330, special_teams_snaps 24 |
-| Jeromy Miles | Baltimore Ravens | FS | defensive_snaps 64, penalties 1, penalty_yards 29, special_teams_snaps 88 |
-| Lardarius Webb | Baltimore Ravens | FS | defensive_snaps 265, special_teams_snaps 102 |
-| Kelechi Osemele | Baltimore Ravens | G | offensive_snaps 331, penalties 1, penalty_yards 5, special_teams_snaps 32 |
-| Marshal Yanda | Baltimore Ravens | G | FUM 1, fumbles_recovered_own 1, offensive_snaps 331, penalties 1, penalty_yards 10, special_teams_snaps 32 |
-| Rick Wagner | Baltimore Ravens | G | offensive_snaps 331, special_teams_snaps 32 |
-| Albert McClellan | Baltimore Ravens | ILB | defensive_snaps 3 |
-| Arthur Brown | Baltimore Ravens | ILB | defensive_snaps 2, special_teams_snaps 104 |
-| C.J. Mosley (BAL) | Baltimore Ravens | ILB | defensive_snaps 330, special_teams_snaps 24 |
-| Zach Orr | Baltimore Ravens | ILB | special_teams_snaps 84 |
-| Justin Tucker | Baltimore Ravens | K | special_teams_snaps 65 |
-| Morgan Cox | Baltimore Ravens | LS | special_teams_snaps 52 |
-| Brandon Williams (BAL) | Baltimore Ravens | NT | defensive_snaps 330, special_teams_snaps 24 |
-| Courtney Upshaw | Baltimore Ravens | OLB | defensive_snaps 164, special_teams_snaps 24 |
-| Elvis Dumervil | Baltimore Ravens | OLB | special_teams_snaps 19 |
-| Pernell McPhee | Baltimore Ravens | OLB | defensive_snaps 1, special_teams_snaps 104 |
-| Terrell Suggs | Baltimore Ravens | OLB | defensive_snaps 330, special_teams_snaps 24 |
-| Sam Koch | Baltimore Ravens | P | special_teams_snaps 52 |
-| Joe Flacco | Baltimore Ravens | QB | RUSH LNG 15, offensive_snaps 331, passing_two_point_conversions 1, penalties 1, penalty_yards 12 |
-| Bernard Pierce | Baltimore Ravens | RB | REC LNG 26, offensive_snaps 331 |
-| Fitzgerald Toussaint | Baltimore Ravens | RB | REC LNG 20, offensive_snaps 2 |
-| Justin Forsett | Baltimore Ravens | RB | REC LNG 18, offensive_snaps 40, special_teams_snaps 69 |
-| Lorenzo Taliaferro | Baltimore Ravens | RB | REC LNG 19, offensive_snaps 6, special_teams_snaps 3 |
-| Matt Elam | Baltimore Ravens | SS | defensive_snaps 250, special_teams_snaps 21 |
-| James Hurst | Baltimore Ravens | T | offensive_snaps 331, penalties 2, penalty_yards 10, special_teams_snaps 32 |
-| Crockett Gillmore | Baltimore Ravens | TE | offensive_snaps 28, special_teams_snaps 38 |
-| Dennis Pitta | Baltimore Ravens | TE | offensive_snaps 239, special_teams_snaps 21 |
-| Owen Daniels | Baltimore Ravens | TE | offensive_snaps 162, special_teams_snaps 110 |
-| Phillip Supernaw | Baltimore Ravens | TE | special_teams_snaps 10 |
-| Deonte Thompson | Baltimore Ravens | WR | special_teams_snaps 8 |
-| Jacoby Jones | Baltimore Ravens | WR | RUSH LNG 12, fumbles_recovered_own 1, muffs 1, offensive_snaps 130, receiving_two_point_conversions 1, special_teams_snaps 46 |
-| Kamar Aiken | Baltimore Ravens | WR | offensive_snaps 1, special_teams_snaps 5 |
-| Marlon Brown | Baltimore Ravens | WR | offensive_snaps 21, special_teams_snaps 96 |
-| Steve Smith | Baltimore Ravens | WR | RUSH LNG 7, offensive_snaps 331 |
-| Torrey Smith | Baltimore Ravens | WR | offensive_snaps 331 |
-| Lawrence Guy | Baltimore Ravens, San Diego Chargers | DT | defensive_snaps 186, special_teams_snaps 18 |
-| Eric Wood | Buffalo Bills | C | offensive_snaps 306, special_teams_snaps 27 |
-| Kraig Urbik | Buffalo Bills | C | special_teams_snaps 23 |
-| Leodis McKelvin | Buffalo Bills | CB | defensive_snaps 350, special_teams_snaps 53 |
-| Nickell Robey | Buffalo Bills | CB | special_teams_snaps 84 |
-| Ross Cockrell | Buffalo Bills | CB | special_teams_snaps 14 |
-| Stephon Gilmore | Buffalo Bills | CB | defensive_snaps 350, penalties 2, penalty_yards 10, special_teams_snaps 28 |
-| Jarius Wynn | Buffalo Bills | DE | defensive_snaps 187, special_teams_snaps 20 |
-| Jerry Hughes | Buffalo Bills | DE | defensive_snaps 85, special_teams_snaps 8 |
-| Mario Williams | Buffalo Bills | DE | defensive_snaps 350, penalties 1, penalty_yards 5, special_teams_snaps 28 |
-| Corbin Bryant | Buffalo Bills | DT | defensive_snaps 3 |
-| Kyle Williams | Buffalo Bills | DT | defensive_snaps 350, special_teams_snaps 28 |
-| Marcell Dareus | Buffalo Bills | DT | defensive_snaps 324, special_teams_snaps 28 |
-| Stefan Charles | Buffalo Bills | DT | defensive_snaps 3 |
-| Frank Summers | Buffalo Bills | FB | REC LNG 22, offensive_snaps 70, special_teams_snaps 99 |
-| Corey Graham | Buffalo Bills | FS | defensive_snaps 279, special_teams_snaps 107 |
-| Chris Williams | Buffalo Bills | G | offensive_snaps 306, special_teams_snaps 27 |
-| Cyril Richardson | Buffalo Bills | G | special_teams_snaps 4 |
-| Randell Johnson | Buffalo Bills | ILB | defensive_snaps 3, special_teams_snaps 107 |
-| Dan Carpenter | Buffalo Bills | K | special_teams_snaps 57 |
-| Garrison Sanborn | Buffalo Bills | LS | special_teams_snaps 49 |
-| Brandon Spikes | Buffalo Bills | MLB | defensive_snaps 350, special_teams_snaps 28 |
-| Preston Brown | Buffalo Bills | MLB | defensive_snaps 350, special_teams_snaps 28 |
-| Ty Powell | Buffalo Bills | MLB | defensive_snaps 10 |
-| Keith Rivers | Buffalo Bills | OLB | defensive_snaps 174, special_teams_snaps 28 |
-| Manny Lawson | Buffalo Bills | OLB | special_teams_snaps 58 |
-| Nigel Bradham | Buffalo Bills | OLB | defensive_snaps 1, special_teams_snaps 21 |
-| Jordan Gay | Buffalo Bills | P | special_teams_snaps 49 |
-| E.J. Manuel | Buffalo Bills | QB | RUSH LNG 9, offensive_snaps 151 |
-| Kyle Orton | Buffalo Bills | QB | RUSH LNG 5, fumbles_recovered_own 1, offensive_snaps 155, penalties 1, penalty_yards 5 |
-| Anthony Dixon | Buffalo Bills | RB | special_teams_snaps 5 |
-| Bryce Brown | Buffalo Bills | RB | REC LNG 15, offensive_snaps 32, special_teams_snaps 107 |
-| C.J. Spiller | Buffalo Bills | RB | REC LNG 41, offensive_snaps 306, special_teams_snaps 30 |
-| Fred Jackson | Buffalo Bills | RB | REC LNG 31, offensive_snaps 6, special_teams_snaps 37 |
-| Aaron Williams | Buffalo Bills | SS | defensive_snaps 350, special_teams_snaps 28 |
-| Da'Norris Searcy | Buffalo Bills | SS | defensive_snaps 350, penalties 2, penalty_yards 19, special_teams_snaps 28 |
-| Duke Williams | Buffalo Bills | SS | defensive_snaps 4, special_teams_snaps 107 |
-| Chris Hairston | Buffalo Bills | T | offensive_snaps 306, special_teams_snaps 27 |
-| Cordy Glenn | Buffalo Bills | T | offensive_snaps 306, special_teams_snaps 27 |
-| Erik Pears | Buffalo Bills | T | offensive_snaps 306, special_teams_snaps 27 |
-| Chris Gragg | Buffalo Bills | TE | offensive_snaps 36, penalties 1, penalty_yards 15, special_teams_snaps 105 |
-| Lee Smith | Buffalo Bills | TE | offensive_snaps 54, special_teams_snaps 77 |
-| Scott Chandler | Buffalo Bills | TE | offensive_snaps 306, penalties 1, penalty_yards 10, special_teams_snaps 27 |
-| Chris Hogan | Buffalo Bills | WR | special_teams_snaps 15 |
-| Marquise Goodwin | Buffalo Bills | WR | RUSH LNG 4, offensive_snaps 3, special_teams_snaps 107 |
-| Mike Williams | Buffalo Bills | WR | offensive_snaps 136 |
-| Robert Woods | Buffalo Bills | WR | offensive_snaps 306 |
-| Sammy Watkins | Buffalo Bills | WR | offensive_snaps 306 |
-| Fernando Velasco | Carolina Panthers | C | offensive_snaps 27, special_teams_snaps 3 |
-| Ryan Kalil | Carolina Panthers | C | offensive_snaps 280, special_teams_snaps 18 |
-| Antoine Cason | Carolina Panthers | CB | defensive_snaps 349, special_teams_snaps 31 |
-| Bene' Benwikere | Carolina Panthers | CB | defensive_snaps 278, special_teams_snaps 95 |
-| Melvin White | Carolina Panthers | CB | defensive_snaps 349, special_teams_snaps 31 |
-| Charles Johnson | Carolina Panthers | DE | defensive_snaps 275, special_teams_snaps 24 |
-| Greg Hardy | Carolina Panthers | DE | defensive_snaps 349, special_teams_snaps 31 |
-| Mario Addison | Carolina Panthers | DE | defensive_snaps 2 |
-| Wes Horton | Carolina Panthers | DE | defensive_snaps 4 |
-| Colin Cole | Carolina Panthers | DT | defensive_snaps 309, penalties 1, penalty_yards 5, special_teams_snaps 27 |
-| Dwan Edwards | Carolina Panthers | DT | defensive_snaps 85, special_teams_snaps 11 |
-| Star Lotulelei | Carolina Panthers | DT | defensive_snaps 276, special_teams_snaps 31 |
-| Mike Tolbert | Carolina Panthers | FB | REC LNG 9, offensive_snaps 76, special_teams_snaps 95 |
-| Thomas DeCoud | Carolina Panthers | FS | defensive_snaps 349, special_teams_snaps 31 |
-| Amini Silatolu | Carolina Panthers | G | offensive_snaps 307, special_teams_snaps 21 |
-| Brandon Linder | Carolina Panthers | G | offensive_snaps 307, special_teams_snaps 21 |
-| Byron Bell | Carolina Panthers | G | offensive_snaps 307, penalties 2, penalty_yards 20, special_teams_snaps 21 |
-| Graham Gano | Carolina Panthers | K | special_teams_snaps 45 |
-| J.J. Jansen | Carolina Panthers | LS | special_teams_snaps 41 |
-| Ben Jacobs | Carolina Panthers | MLB | defensive_snaps 44, special_teams_snaps 7 |
-| Luke Kuechly | Carolina Panthers | MLB | defensive_snaps 349, special_teams_snaps 31 |
-| A.J. Klein | Carolina Panthers | OLB | special_teams_snaps 95 |
-| Chase Blackburn | Carolina Panthers | OLB | defensive_snaps 210, special_teams_snaps 31 |
-| Jason Williams | Carolina Panthers | OLB | defensive_snaps 3, special_teams_snaps 74 |
-| Thomas Davis | Carolina Panthers | OLB | defensive_snaps 275, special_teams_snaps 24 |
-| Brad Nortman | Carolina Panthers | P | special_teams_snaps 41 |
-| Cam Newton | Carolina Panthers | QB | RUSH LNG 10, offensive_snaps 307 |
-| DeAngelo Williams | Carolina Panthers | RB | REC LNG 34, offensive_snaps 307 |
-| Fozzy Whittaker | Carolina Panthers | RB | offensive_snaps 11, penalties 1, penalty_yards 10, special_teams_snaps 39 |
-| Jonathan Stewart | Carolina Panthers | RB | offensive_snaps 18, special_teams_snaps 82 |
-| Charles Godfrey | Carolina Panthers | S | defensive_snaps 5, special_teams_snaps 95 |
-| Roman Harper | Carolina Panthers | SS | defensive_snaps 349, penalties 1, penalty_yards 28, special_teams_snaps 31 |
-| Tre Boston | Carolina Panthers | SS | defensive_snaps 4, special_teams_snaps 95 |
-| Garry Williams | Carolina Panthers | T | special_teams_snaps 21 |
-| Nate Chandler | Carolina Panthers | T | offensive_snaps 307, special_teams_snaps 21 |
-| Brandon Williams (CAR) | Carolina Panthers | TE | offensive_snaps 3, special_teams_snaps 85 |
-| Ed Dickson | Carolina Panthers | TE | offensive_snaps 90, special_teams_snaps 116 |
-| Greg Olsen | Carolina Panthers | TE | offensive_snaps 307, penalties 1, penalty_yards 5, special_teams_snaps 21 |
-| Richie Brockel | Carolina Panthers | TE | offensive_snaps 1, special_teams_snaps 8 |
-| Brenton Bersin | Carolina Panthers | WR | offensive_snaps 90 |
-| Corey Brown | Carolina Panthers | WR | offensive_snaps 25, special_teams_snaps 51 |
-| Jason Avant | Carolina Panthers | WR | RUSH LNG 20, offensive_snaps 84, special_teams_snaps 55 |
-| Jerricho Cotchery | Carolina Panthers | WR | offensive_snaps 307 |
-| Kelvin Benjamin | Carolina Panthers | WR | RUSH LNG 20, offensive_snaps 249 |
-| Brian De La Puente | Chicago Bears | C | special_teams_snaps 23 |
-| Roberto Garza | Chicago Bears | C | offensive_snaps 343, special_teams_snaps 23 |
-| Charles Tillman | Chicago Bears | CB | defensive_snaps 320, penalties 1, penalty_yards 15, special_teams_snaps 24 |
-| Kyle Fuller | Chicago Bears | CB | defensive_snaps 258, penalties 2, penalty_yards 12, special_teams_snaps 91 |
-| Tim Jennings | Chicago Bears | CB | defensive_snaps 300, special_teams_snaps 22 |
-| Cornelius Washington | Chicago Bears | DE | defensive_snaps 1 |
-| Jared Allen | Chicago Bears | DE | defensive_snaps 320, special_teams_snaps 24 |
-| Trevor Scott | Chicago Bears | DE | defensive_snaps 221, special_teams_snaps 24 |
-| Jay Ratliff | Chicago Bears | DT | defensive_snaps 320, special_teams_snaps 24 |
-| Will Sutton | Chicago Bears | DT | defensive_snaps 5 |
-| Tony Fiammetta | Chicago Bears | FB | REC LNG 9, offensive_snaps 84, special_teams_snaps 94 |
-| Brock Vereen | Chicago Bears | FS | defensive_snaps 3, special_teams_snaps 94 |
-| Danny McCray | Chicago Bears | FS | defensive_snaps 320, special_teams_snaps 24 |
-| Jermon Bushrod | Chicago Bears | G | offensive_snaps 343, special_teams_snaps 23 |
-| Kyle Long | Chicago Bears | G | offensive_snaps 343, special_teams_snaps 23 |
-| Matt Slauson | Chicago Bears | G | offensive_snaps 343, special_teams_snaps 23 |
-| Robbie Gould | Chicago Bears | K | special_teams_snaps 46 |
-| Jeremy Cain | Chicago Bears | LS | special_teams_snaps 46 |
-| D.J. Williams | Chicago Bears | MLB | defensive_snaps 200, special_teams_snaps 24 |
-| Jon Bostic | Chicago Bears | MLB | defensive_snaps 2, special_teams_snaps 94 |
-| Ego Ferguson | Chicago Bears | NT | defensive_snaps 2 |
-| Stephen Paea | Chicago Bears | NT | defensive_snaps 320, special_teams_snaps 24 |
-| David Bass | Chicago Bears | OLB | special_teams_snaps 20 |
-| Khaseem Greene | Chicago Bears | OLB | defensive_snaps 6, special_teams_snaps 70 |
-| Lamarr Houston | Chicago Bears | OLB | defensive_snaps 51, special_teams_snaps 6 |
-| Lance Briggs | Chicago Bears | OLB | defensive_snaps 237, penalties 1, special_teams_snaps 18 |
-| Shea McClellin | Chicago Bears | OLB | defensive_snaps 320, special_teams_snaps 24 |
-| Willie Young | Chicago Bears | OLB | special_teams_snaps 94 |
-| Pat O'Donnell | Chicago Bears | P | special_teams_snaps 46 |
-| Jay Cutler | Chicago Bears | QB | RUSH LNG 9, offensive_snaps 343, penalties 2, penalty_yards 10 |
-| Ka'Deem Carey | Chicago Bears | RB | offensive_snaps 5, special_teams_snaps 13 |
-| Matt Forte | Chicago Bears | RB | REC LNG 35, offensive_snaps 343 |
-| Senorise Perry | Chicago Bears | RB | REC LNG 16, offensive_snaps 30, special_teams_snaps 23 |
-| Ryan Mundy | Chicago Bears | SS | defensive_snaps 320, penalties 1, penalty_yards 15, special_teams_snaps 24 |
-| Sherrick McManis | Chicago Bears | SS | defensive_snaps 20, special_teams_snaps 94 |
-| Jordan Mills | Chicago Bears | T | offensive_snaps 343, special_teams_snaps 23 |
-| Dante Rosario | Chicago Bears | TE | offensive_snaps 19, special_teams_snaps 61 |
-| Martellus Bennett | Chicago Bears | TE | offensive_snaps 343, special_teams_snaps 23 |
-| Matthew Mulligan | Chicago Bears | TE | offensive_snaps 82, special_teams_snaps 97 |
-| Alshon Jeffery | Chicago Bears | WR | offensive_snaps 343 |
-| Brandon Marshall (CHI) | Chicago Bears | WR | RUSH LNG 5, offensive_snaps 327 |
-| Chris Williams (CHI) | Chicago Bears | WR | special_teams_snaps 5 |
-| Josh Morgan | Chicago Bears | WR | offensive_snaps 9, special_teams_snaps 90 |
-| Micheal Spurlock | Chicago Bears | WR | offensive_snaps 1 |
-| Santonio Holmes | Chicago Bears | WR | offensive_snaps 161, penalties 1, penalty_yards 5, special_teams_snaps 25 |
-| Russell Bodine | Cincinnati Bengals | C | offensive_snaps 285, special_teams_snaps 18 |
-| Adam Jones | Cincinnati Bengals | CB | defensive_snaps 214, special_teams_snaps 71 |
-| Dre Kirkpatrick | Cincinnati Bengals | CB | defensive_snaps 2, special_teams_snaps 77 |
-| Leon Hall | Cincinnati Bengals | CB | defensive_snaps 220, special_teams_snaps 21 |
-| Terence Newman | Cincinnati Bengals | CB | defensive_snaps 260, special_teams_snaps 23 |
-| Robert Geathers | Cincinnati Bengals | DE | defensive_snaps 179, special_teams_snaps 23 |
-| Wallace Gilberry | Cincinnati Bengals | DE | defensive_snaps 260, special_teams_snaps 23 |
-| Geno Atkins | Cincinnati Bengals | DT | defensive_snaps 260, special_teams_snaps 23 |
-| Margus Hunt | Cincinnati Bengals | DT | defensive_snaps 1 |
-| Reggie Nelson | Cincinnati Bengals | FS | defensive_snaps 260, special_teams_snaps 23 |
-| Taylor Mays | Cincinnati Bengals | FS | defensive_snaps 34, special_teams_snaps 77 |
-| Clint Boling | Cincinnati Bengals | G | offensive_snaps 285, special_teams_snaps 18 |
-| Kevin Zeitler | Cincinnati Bengals | G | offensive_snaps 285, special_teams_snaps 18 |
-| Mike Nugent | Cincinnati Bengals | K | special_teams_snaps 39 |
-| Clark Harris | Cincinnati Bengals | LS | special_teams_snaps 35 |
-| Marquis Flowers | Cincinnati Bengals | MLB | special_teams_snaps 58 |
-| Rey Maualuga | Cincinnati Bengals | MLB | defensive_snaps 234, special_teams_snaps 23 |
-| Vincent Rey | Cincinnati Bengals | MLB | special_teams_snaps 77 |
-| Vontaze Burfict | Cincinnati Bengals | MLB | INT YDS 2, defensive_snaps 260, special_teams_snaps 23 |
-| Brandon Thompson | Cincinnati Bengals | NT | defensive_snaps 7 |
-| Domata Peko | Cincinnati Bengals | NT | defensive_snaps 260, special_teams_snaps 23 |
-| Carlos Dunlap | Cincinnati Bengals | OLB | defensive_snaps 16 |
-| Emmanuel Lamur | Cincinnati Bengals | OLB | defensive_snaps 142, special_teams_snaps 23 |
-| Jayson DiManche | Cincinnati Bengals | OLB | defensive_snaps 3, special_teams_snaps 74 |
-| Sean Porter | Cincinnati Bengals | OLB | special_teams_snaps 19 |
-| Kevin Huber | Cincinnati Bengals | P | special_teams_snaps 35 |
-| Andy Dalton | Cincinnati Bengals | QB | RUSH LNG 9, offensive_snaps 285 |
-| Cedric Peerman | Cincinnati Bengals | RB | REC LNG 3, offensive_snaps 3, special_teams_snaps 6 |
-| Giovani Bernard | Cincinnati Bengals | RB | REC LNG 13, offensive_snaps 285 |
-| Jeremy Hill | Cincinnati Bengals | RB | REC LNG 16, offensive_snaps 73, special_teams_snaps 77 |
-| George Iloka | Cincinnati Bengals | SS | defensive_snaps 260, special_teams_snaps 23 |
-| Shawn Williams | Cincinnati Bengals | SS | special_teams_snaps 12 |
-| Andre Smith | Cincinnati Bengals | T | offensive_snaps 285, special_teams_snaps 18 |
-| Andrew Whitworth | Cincinnati Bengals | T | offensive_snaps 285, special_teams_snaps 18 |
-| Marshall Newhouse | Cincinnati Bengals | T | special_teams_snaps 18 |
-| Alex Smith (CIN) | Cincinnati Bengals | TE | offensive_snaps 1, special_teams_snaps 53 |
-| Jermaine Gresham | Cincinnati Bengals | TE | offensive_snaps 285, special_teams_snaps 18 |
-| Ryan Hewitt | Cincinnati Bengals | TE | offensive_snaps 1, special_teams_snaps 1 |
-| Tyler Eifert | Cincinnati Bengals | TE | offensive_snaps 83, special_teams_snaps 95 |
-| A.J. Green | Cincinnati Bengals | WR | offensive_snaps 285, penalties 1, penalty_yards 10 |
-| Brandon Tate | Cincinnati Bengals | WR | offensive_snaps 5, special_teams_snaps 39 |
-| Dane Sanzenbacher | Cincinnati Bengals | WR | RUSH LNG 4, offensive_snaps 126 |
-| James Wright | Cincinnati Bengals | WR | special_teams_snaps 57 |
-| Mohamed Sanu | Cincinnati Bengals | WR | offensive_snaps 285 |
-| Alex Mack | Cleveland Browns | C | offensive_snaps 288, special_teams_snaps 25 |
-| Buster Skrine | Cleveland Browns | CB | defensive_snaps 241, special_teams_snaps 16 |
-| Joe Haden | Cleveland Browns | CB | defensive_snaps 241, special_teams_snaps 16 |
-| Justin Gilbert | Cleveland Browns | CB | defensive_snaps 191, penalties 1, penalty_yards 15, special_teams_snaps 92 |
-| K'Waun Williams | Cleveland Browns | CB | special_teams_snaps 37 |
-| Pierre Desir | Cleveland Browns | CB | defensive_snaps 6, special_teams_snaps 92 |
-| Armonty Bryant | Cleveland Browns | DE | defensive_snaps 241, special_teams_snaps 16 |
-| Billy Winn | Cleveland Browns | DE | defensive_snaps 3 |
-| Phillip Taylor | Cleveland Browns | DE | defensive_snaps 241, special_teams_snaps 16 |
-| John Hughes | Cleveland Browns | DT | defensive_snaps 4 |
-| Ray Agnew | Cleveland Browns | FB | REC LNG 19, offensive_snaps 71, special_teams_snaps 92 |
-| Tashaun Gipson | Cleveland Browns | FS | defensive_snaps 241, special_teams_snaps 16 |
-| John Greco | Cleveland Browns | G | offensive_snaps 288, special_teams_snaps 25 |
-| Paul McQuistan | Cleveland Browns | G | special_teams_snaps 17 |
-| Ryan Seymour | Cleveland Browns | G | offensive_snaps 221, special_teams_snaps 20 |
-| Craig Robertson | Cleveland Browns | ILB | INT YDS 14, defensive_snaps 201, special_teams_snaps 13 |
-| Karlos Dansby | Cleveland Browns | ILB | defensive_snaps 140, special_teams_snaps 16 |
-| Tank Carder | Cleveland Browns | ILB | defensive_snaps 1, special_teams_snaps 92 |
-| Billy Cundiff | Cleveland Browns | K | special_teams_snaps 52 |
-| Christian Yount | Cleveland Browns | LS | special_teams_snaps 44 |
-| Ahtyba Rubin | Cleveland Browns | NT | defensive_snaps 241, penalties 1, penalty_yards 15, special_teams_snaps 16 |
-| Ishmaa'ily Kitchen | Cleveland Browns | NT | defensive_snaps 167, special_teams_snaps 16 |
-| Barkevious Mingo | Cleveland Browns | OLB | defensive_snaps 241, special_teams_snaps 16 |
-| Christian Kirksey | Cleveland Browns | OLB | defensive_snaps 2, special_teams_snaps 75 |
-| Eric Martin | Cleveland Browns | OLB | defensive_snaps 4, special_teams_snaps 80 |
-| Jabaal Sheard | Cleveland Browns | OLB | special_teams_snaps 29 |
-| Paul Kruger | Cleveland Browns | OLB | defensive_snaps 24, special_teams_snaps 3 |
-| Spencer Lanning | Cleveland Browns | P | special_teams_snaps 44 |
-| Brian Hoyer | Cleveland Browns | QB | RUSH LNG 19, offensive_snaps 288, penalties 2, penalty_yards 19 |
-| Ben Tate | Cleveland Browns | RB | REC LNG 18, offensive_snaps 288 |
-| Glenn Winston | Cleveland Browns | RB | REC LNG 8, offensive_snaps 2 |
-| Isaiah Crowell | Cleveland Browns | RB | REC LNG 19, offensive_snaps 29, special_teams_snaps 69 |
-| Donte Whitner | Cleveland Browns | SS | defensive_snaps 241, special_teams_snaps 16 |
-| Jim Leonhard | Cleveland Browns | SS | special_teams_snaps 92 |
-| Joe Thomas | Cleveland Browns | T | offensive_snaps 288, special_teams_snaps 25 |
-| Mitchell Schwartz | Cleveland Browns | T | offensive_snaps 288, special_teams_snaps 25 |
-| Vinston Painter | Cleveland Browns | T | offensive_snaps 67, special_teams_snaps 13 |
-| Gary Barnidge | Cleveland Browns | TE | offensive_snaps 85, penalties 1, penalty_yards 5, special_teams_snaps 117 |
-| Jim Dray | Cleveland Browns | TE | offensive_snaps 1 |
-| Jordan Cameron | Cleveland Browns | TE | offensive_snaps 288, special_teams_snaps 25 |
-| Josh Gordon | Cleveland Browns | WR | offensive_snaps 30 |
-| Laron Byrd | Cleveland Browns | WR | offensive_snaps 90, special_teams_snaps 7 |
-| Marlon Moore | Cleveland Browns | WR | offensive_snaps 1, special_teams_snaps 26 |
-| Marqise Lee | Cleveland Browns | WR | RUSH LNG 6, offensive_snaps 288 |
-| Miles Austin | Cleveland Browns | WR | offensive_snaps 19 |
-| Travis Benjamin | Cleveland Browns | WR | RUSH LNG 4, offensive_snaps 277, special_teams_snaps 46 |
-| Travis Frederick | Dallas Cowboys | C | offensive_snaps 257, special_teams_snaps 17 |
-| Brandon Carr | Dallas Cowboys | CB | defensive_snaps 193, interception_return_touchdowns 1, special_teams_snaps 16 |
-| Morris Claiborne | Dallas Cowboys | CB | defensive_snaps 325, special_teams_snaps 23 |
-| Sterling Moore | Dallas Cowboys | CB | defensive_snaps 110, special_teams_snaps 94 |
-| Tyler Patmon | Dallas Cowboys | CB | defensive_snaps 285, special_teams_snaps 61 |
-| George Selvie | Dallas Cowboys | DE | defensive_snaps 325, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Jack Crawford | Dallas Cowboys | DE | defensive_snaps 1 |
-| Tyrone Crawford | Dallas Cowboys | DE | defensive_snaps 1 |
-| Davon Coleman | Dallas Cowboys | DT | defensive_snaps 225, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Henry Melton | Dallas Cowboys | DT | defensive_snaps 325, penalties 1, penalty_yards 13, special_teams_snaps 23 |
-| Nick Hayden | Dallas Cowboys | DT | defensive_snaps 325, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Terrell McClain | Dallas Cowboys | DT | defensive_snaps 7 |
-| Tyler Clutts | Dallas Cowboys | FB | REC LNG 38, offensive_snaps 77, special_teams_snaps 94 |
-| J.J. Wilcox | Dallas Cowboys | FS | defensive_snaps 270, special_teams_snaps 20 |
-| Jeff Heath | Dallas Cowboys | FS | defensive_snaps 1, special_teams_snaps 36 |
-| Mackenzy Bernadeau | Dallas Cowboys | G | special_teams_snaps 2 |
-| Ronald Leary | Dallas Cowboys | G | offensive_snaps 310, penalties 2, penalty_yards 11, special_teams_snaps 19 |
-| Zack Martin | Dallas Cowboys | G | offensive_snaps 310, special_teams_snaps 19 |
-| Bruce Carter | Dallas Cowboys | ILB | defensive_snaps 325, fumble_return_touchdowns 1, special_teams_snaps 23 |
-| Korey Toomer | Dallas Cowboys | ILB | INT YDS 18, defensive_snaps 4, special_teams_snaps 94 |
-| Dan Bailey | Dallas Cowboys | K | special_teams_snaps 42 |
-| L.P. Ladouceur | Dallas Cowboys | LS | special_teams_snaps 43 |
-| Anthony Hitchens | Dallas Cowboys | MLB | defensive_snaps 1, special_teams_snaps 94 |
-| Rolando McClain | Dallas Cowboys | MLB | defensive_snaps 162, special_teams_snaps 23 |
-| Cameron Lawrence | Dallas Cowboys | OLB | defensive_snaps 1, fumbles_recovered_own 1, special_teams_snaps 94 |
-| Justin Durant | Dallas Cowboys | OLB | defensive_snaps 325, special_teams_snaps 23 |
-| Kyle Wilber | Dallas Cowboys | OLB | defensive_snaps 8 |
-| Chris Jones (DAL) | Dallas Cowboys | P | special_teams_snaps 43 |
-| Tony Romo | Dallas Cowboys | QB | RUSH LNG 14, offensive_snaps 310, penalties 1, penalty_yards 5 |
-| DeMarco Murray | Dallas Cowboys | RB | REC LNG 35, offensive_snaps 310 |
-| Joseph Randle | Dallas Cowboys | RB | REC LNG 11, offensive_snaps 6, special_teams_snaps 2 |
-| Lance Dunbar | Dallas Cowboys | RB | REC LNG 24, offensive_snaps 35, special_teams_snaps 61 |
-| Barry Church | Dallas Cowboys | SS | defensive_snaps 325, special_teams_snaps 23 |
-| C.J. Spillman | Dallas Cowboys | SS | defensive_snaps 55, special_teams_snaps 76 |
-| Doug Free | Dallas Cowboys | T | offensive_snaps 310, special_teams_snaps 19 |
-| Jermey Parnell | Dallas Cowboys | T | offensive_snaps 53, special_teams_snaps 19 |
-| Tyron Smith | Dallas Cowboys | T | offensive_snaps 310, special_teams_snaps 19 |
-| Gavin Escobar | Dallas Cowboys | TE | offensive_snaps 80, penalties 1, penalty_yards 10, special_teams_snaps 102 |
-| James Hanna | Dallas Cowboys | TE | offensive_snaps 17, special_teams_snaps 21 |
-| Jason Witten | Dallas Cowboys | TE | offensive_snaps 310, special_teams_snaps 19 |
-| Cole Beasley | Dallas Cowboys | WR | RUSH LNG 11, offensive_snaps 120 |
-| Devin Street | Dallas Cowboys | WR | offensive_snaps 1, penalties 2, penalty_yards 9, special_teams_snaps 94 |
-| Dez Bryant | Dallas Cowboys | WR | offensive_snaps 310 |
-| Dwayne Harris | Dallas Cowboys | WR | fumbles_recovered_own 1, muffs 2, offensive_snaps 26, special_teams_snaps 47 |
-| Terrance Williams | Dallas Cowboys | WR | RUSH LNG 9, offensive_snaps 310 |
-| Manuel Ramirez | Denver Broncos | C | offensive_snaps 231, penalties 1, penalty_yards 5, special_teams_snaps 20 |
-| Will Montgomery | Denver Broncos | C | special_teams_snaps 4 |
-| Bradley Roby | Denver Broncos | CB | defensive_snaps 281, penalties 1, penalty_yards 15, special_teams_snaps 18 |
-| Chris Harris | Denver Broncos | CB | defensive_snaps 281, special_teams_snaps 18 |
-| Kayvon Webster | Denver Broncos | CB | defensive_snaps 57, special_teams_snaps 77 |
-| DeMarcus Ware | Denver Broncos | DE | defensive_snaps 281, penalties 1, penalty_yards 15, special_teams_snaps 18 |
-| Derek Wolfe | Denver Broncos | DE | defensive_snaps 281, special_teams_snaps 18 |
-| Lerentee McCray | Denver Broncos | DE | defensive_snaps 6 |
-| Quanterus Smith | Denver Broncos | DE | defensive_snaps 1 |
-| Sylvester Williams | Denver Broncos | DT | defensive_snaps 281, special_teams_snaps 18 |
-| David Bruton | Denver Broncos | FS | defensive_snaps 170, special_teams_snaps 77 |
-| Omar Bolden | Denver Broncos | FS | special_teams_snaps 22 |
-| Rahim Moore | Denver Broncos | FS | defensive_snaps 281, special_teams_snaps 18 |
-| Louis Vasquez | Denver Broncos | G | fumbles_recovered_own 1, offensive_snaps 231, penalties 1, penalty_yards 5, special_teams_snaps 20 |
-| Orlando Franklin | Denver Broncos | G | offensive_snaps 231, special_teams_snaps 20 |
-| Brandon Marshall (DEN) | Denver Broncos | ILB | defensive_snaps 17, special_teams_snaps 11 |
-| Corey Nelson | Denver Broncos | ILB | defensive_snaps 2, special_teams_snaps 72 |
-| Danny Trevathan | Denver Broncos | ILB | defensive_snaps 118, special_teams_snaps 10 |
-| Brandon McManus | Denver Broncos | K | special_teams_snaps 43 |
-| Aaron Brewer | Denver Broncos | LS | special_teams_snaps 38 |
-| Lamin Barrow | Denver Broncos | MLB | special_teams_snaps 77 |
-| Nate Irving | Denver Broncos | MLB | defensive_snaps 172, penalties 1, penalty_yards 15, special_teams_snaps 13 |
-| Steven Johnson | Denver Broncos | MLB | defensive_snaps 122, special_teams_snaps 13 |
-| Marvin Austin | Denver Broncos | NT | defensive_snaps 4 |
-| Terrance Knighton | Denver Broncos | NT | defensive_snaps 196, special_teams_snaps 18 |
-| Von Miller | Denver Broncos | OLB | defensive_snaps 281, special_teams_snaps 18 |
-| Britton Colquitt | Denver Broncos | P | special_teams_snaps 38 |
-| Peyton Manning | Denver Broncos | QB | RUSH LNG 17, offensive_snaps 231 |
-| Juwan Thompson | Denver Broncos | RB | offensive_snaps 4, special_teams_snaps 18 |
-| Montee Ball | Denver Broncos | RB | REC LNG 25, offensive_snaps 231 |
-| Ronnie Hillman | Denver Broncos | RB | REC LNG 16, offensive_snaps 59, special_teams_snaps 77 |
-| Quinton Carter | Denver Broncos | SS | defensive_snaps 2, special_teams_snaps 77 |
-| T.J. Ward | Denver Broncos | SS | defensive_snaps 281, special_teams_snaps 18 |
-| Chris Clark | Denver Broncos | T | offensive_snaps 199, special_teams_snaps 16 |
-| Paul Cornick | Denver Broncos | T | offensive_snaps 32, special_teams_snaps 20 |
-| Ryan Clady | Denver Broncos | T | offensive_snaps 231, special_teams_snaps 20 |
-| Jacob Tamme | Denver Broncos | TE | offensive_snaps 1, special_teams_snaps 74 |
-| Julius Thomas | Denver Broncos | TE | offensive_snaps 231, special_teams_snaps 20 |
-| Virgil Green | Denver Broncos | TE | offensive_snaps 68, special_teams_snaps 97 |
-| Andre Caldwell | Denver Broncos | WR | offensive_snaps 102, special_teams_snaps 20 |
-| Cody Latimer | Denver Broncos | WR | offensive_snaps 7, special_teams_snaps 77 |
-| Demaryius Thomas | Denver Broncos | WR | offensive_snaps 231, penalties 1, penalty_yards 5 |
-| Emmanuel Sanders | Denver Broncos | WR | offensive_snaps 231 |
-| Isaiah Burse | Denver Broncos | WR | fumbles_recovered_own 1, muffs 1, offensive_snaps 1, punt_return_touchdowns 1, special_teams_snaps 16 |
-| Nathan Palmer | Denver Broncos | WR | offensive_snaps 1 |
-| Dominic Raiola | Detroit Lions | C | offensive_snaps 334, special_teams_snaps 24 |
-| Travis Swanson | Detroit Lions | C | special_teams_snaps 24 |
-| Cassius Vaughn | Detroit Lions | CB | defensive_snaps 168, special_teams_snaps 74 |
-| Darius Slay | Detroit Lions | CB | defensive_snaps 299, special_teams_snaps 26 |
-| Dwight Bentley | Detroit Lions | CB | defensive_snaps 56, special_teams_snaps 22 |
-| Nevin Lawson | Detroit Lions | CB | special_teams_snaps 30 |
-| Rashean Mathis | Detroit Lions | CB | defensive_snaps 299, special_teams_snaps 26 |
-| Devin Taylor | Detroit Lions | DE | defensive_snaps 7 |
-| Ezekiel Ansah | Detroit Lions | DE | defensive_snaps 299, special_teams_snaps 26 |
-| Jason Jones | Detroit Lions | DE | defensive_snaps 299, penalties 1, penalty_yards 5, special_teams_snaps 26 |
-| Larry Webster | Detroit Lions | DE | defensive_snaps 1 |
-| Caraun Reid | Detroit Lions | DT | defensive_snaps 1 |
-| Ndamukong Suh | Detroit Lions | DT | defensive_snaps 299, special_teams_snaps 26 |
-| Nick Fairley | Detroit Lions | DT | defensive_snaps 207, special_teams_snaps 26 |
-| Jed Collins | Detroit Lions | FB | REC LNG 36, offensive_snaps 83, special_teams_snaps 103 |
-| Don Carey | Detroit Lions | FS | defensive_snaps 102, special_teams_snaps 45 |
-| Glover Quin | Detroit Lions | FS | defensive_snaps 299, special_teams_snaps 26 |
-| Larry Warford | Detroit Lions | G | offensive_snaps 334, special_teams_snaps 24 |
-| Rob Sims | Detroit Lions | G | offensive_snaps 334, special_teams_snaps 24 |
-| Josh Bynes | Detroit Lions | ILB | special_teams_snaps 21 |
-| Alex Henery | Detroit Lions | K | special_teams_snaps 12 |
-| Nate Freese | Detroit Lions | K | special_teams_snaps 37 |
-| Don Muhlbach | Detroit Lions | LS | special_teams_snaps 48 |
-| Stephen Tulloch | Detroit Lions | MLB | defensive_snaps 299, special_teams_snaps 26 |
-| Travis Lewis | Detroit Lions | MLB | defensive_snaps 11, special_teams_snaps 22 |
-| Ashlee Palmer | Detroit Lions | OLB | defensive_snaps 1, special_teams_snaps 103 |
-| DeAndre Levy | Detroit Lions | OLB | defensive_snaps 299, special_teams_snaps 26 |
-| Tahir Whitehead | Detroit Lions | OLB | defensive_snaps 149, special_teams_snaps 26 |
-| Sam Martin | Detroit Lions | P | special_teams_snaps 48 |
-| Matthew Stafford | Detroit Lions | QB | RUSH LNG 50, offensive_snaps 334, penalties 1, penalty_yards 10 |
-| George Winn | Detroit Lions | RB | offensive_snaps 2 |
-| Joique Bell | Detroit Lions | RB | REC LNG 29, offensive_snaps 266, special_teams_snaps 21 |
-| Reggie Bush | Detroit Lions | RB | REC LNG 7, offensive_snaps 74 |
-| Theo Riddick | Detroit Lions | RB | REC LNG 16, offensive_snaps 5, special_teams_snaps 21 |
-| Isa Abdul-Quddus | Detroit Lions | SS | defensive_snaps 93, special_teams_snaps 94 |
-| James Ihedigbo | Detroit Lions | SS | defensive_snaps 124, special_teams_snaps 12 |
-| Jerome Couplin | Detroit Lions | SS | defensive_snaps 3, special_teams_snaps 69 |
-| Corey Hilliard | Detroit Lions | T | fumbles_recovered_own 1, offensive_snaps 241, special_teams_snaps 19 |
-| LaAdrian Waddle | Detroit Lions | T | offensive_snaps 334, special_teams_snaps 24 |
-| Riley Reiff | Detroit Lions | T | offensive_snaps 93, special_teams_snaps 5 |
-| Brandon Pettigrew | Detroit Lions | TE | offensive_snaps 334, penalties 1, penalty_yards 10, special_teams_snaps 24 |
-| Eric Ebron | Detroit Lions | TE | offensive_snaps 1, special_teams_snaps 82 |
-| Joseph Fauria | Detroit Lions | TE | offensive_snaps 98, special_teams_snaps 127 |
-| Calvin Johnson | Detroit Lions | WR | RUSH LNG 9, offensive_snaps 334, penalties 1, penalty_yards 10 |
-| Corey Fuller | Detroit Lions | WR | offensive_snaps 32, special_teams_snaps 82 |
-| Golden Tate | Detroit Lions | WR | RUSH LNG 3, offensive_snaps 265 |
-| Jeremy Ross | Detroit Lions | WR | fumbles_recovered_own 1, muffs 1, offensive_snaps 72, special_teams_snaps 54 |
-| Kevin Ogletree | Detroit Lions | WR | RUSH LNG 4, offensive_snaps 119 |
-| Ryan Broyles | Detroit Lions | WR | offensive_snaps 3, penalties 1, penalty_yards 5, special_teams_snaps 103 |
-| Garth Gerhart | Green Bay Packers | C | special_teams_snaps 21 |
-| Casey Hayward | Green Bay Packers | CB | defensive_snaps 52, special_teams_snaps 96 |
-| Davon House | Green Bay Packers | CB | defensive_snaps 25, special_teams_snaps 62 |
-| Jarrett Bush | Green Bay Packers | CB | defensive_snaps 1, special_teams_snaps 16 |
-| Sam Shields | Green Bay Packers | CB | defensive_snaps 334, special_teams_snaps 15 |
-| Tramon Williams | Green Bay Packers | CB | defensive_snaps 334, special_teams_snaps 15 |
-| Julius Peppers | Green Bay Packers | DE | defensive_snaps 334, special_teams_snaps 15 |
-| Datone Jones | Green Bay Packers | DT | defensive_snaps 334, special_teams_snaps 15 |
-| Mike Daniels | Green Bay Packers | DT | defensive_snaps 334, special_teams_snaps 15 |
-| John Kuhn | Green Bay Packers | FB | REC LNG 46, offensive_snaps 80, special_teams_snaps 104 |
-| Ha Ha Clinton-Dix | Green Bay Packers | FS | defensive_snaps 212, special_teams_snaps 72 |
-| Micah Hyde | Green Bay Packers | FS | defensive_snaps 334, special_teams_snaps 15 |
-| Josh Sitton | Green Bay Packers | G | offensive_snaps 324, special_teams_snaps 24 |
-| Lane Taylor | Green Bay Packers | G | special_teams_snaps 24 |
-| T.J. Lang | Green Bay Packers | G | LONG SNAPS 43, fumbles_recovered_own 1, offensive_snaps 324, penalties 1, penalty_yards 5, special_teams_snaps 46 |
-| Carl Bradford | Green Bay Packers | ILB | special_teams_snaps 17 |
-| Sam Barrington | Green Bay Packers | ILB | defensive_snaps 1, special_teams_snaps 104 |
-| Mason Crosby | Green Bay Packers | K | special_teams_snaps 50 |
-| Brett Goode | Green Bay Packers | LS | special_teams_snaps 12 |
-| Brad Jones | Green Bay Packers | MLB | defensive_snaps 142, special_teams_snaps 15 |
-| Jamari Lattimore | Green Bay Packers | MLB | defensive_snaps 4, special_teams_snaps 87 |
-| Letroy Guion | Green Bay Packers | NT | defensive_snaps 232, special_teams_snaps 15 |
-| Mike Pennel | Green Bay Packers | NT | defensive_snaps 6 |
-| A.J. Hawk | Green Bay Packers | OLB | defensive_snaps 334, special_teams_snaps 15 |
-| Clay Matthews | Green Bay Packers | OLB | defensive_snaps 334, penalties 1, penalty_yards 15, special_teams_snaps 15 |
-| Mike Neal | Green Bay Packers | OLB | defensive_snaps 1, special_teams_snaps 104 |
-| Nick Perry | Green Bay Packers | OLB | defensive_snaps 31, penalties 1, penalty_yards 15 |
-| Tim Masthay | Green Bay Packers | P | special_teams_snaps 55 |
-| Aaron Rodgers | Green Bay Packers | QB | RUSH LNG 26, offensive_snaps 324 |
-| DuJuan Harris | Green Bay Packers | RB | REC LNG 10, offensive_snaps 74, special_teams_snaps 19 |
-| Eddie Lacy | Green Bay Packers | RB | REC LNG 54, offensive_snaps 221 |
-| James Starks | Green Bay Packers | RB | REC LNG 26, offensive_snaps 56, special_teams_snaps 8 |
-| Morgan Burnett | Green Bay Packers | SS | defensive_snaps 213, special_teams_snaps 8 |
-| Sean Richardson | Green Bay Packers | SS | defensive_snaps 104, special_teams_snaps 87 |
-| Bryan Bulaga | Green Bay Packers | T | offensive_snaps 324, penalties 2, penalty_yards 10, special_teams_snaps 24 |
-| David Bakhtiari | Green Bay Packers | T | offensive_snaps 324, penalties 1, penalty_yards 10, special_teams_snaps 24 |
-| Derek Sherrod | Green Bay Packers | T | offensive_snaps 324, special_teams_snaps 24 |
-| Andrew Quarless | Green Bay Packers | TE | offensive_snaps 21, special_teams_snaps 45 |
-| Brandon Bostick | Green Bay Packers | TE | offensive_snaps 74, special_teams_snaps 99 |
-| Richard Rodgers | Green Bay Packers | TE | offensive_snaps 324, special_teams_snaps 24 |
-| Allen Robinson | Green Bay Packers | WR | offensive_snaps 93, special_teams_snaps 43 |
-| Jarrett Boykin | Green Bay Packers | WR | RUSH LNG 5, offensive_snaps 186 |
-| Jeff Janis | Green Bay Packers | WR | offensive_snaps 3, special_teams_snaps 68 |
-| Jordy Nelson | Green Bay Packers | WR | RUSH LNG 18, offensive_snaps 191 |
-| Randall Cobb | Green Bay Packers | WR | RUSH LNG 9, offensive_snaps 324, special_teams_snaps 28 |
-| Ben Jones | Houston Texans | C | offensive_snaps 323, special_teams_snaps 23 |
-| Chris Myers | Houston Texans | C | offensive_snaps 323, penalties 2, penalty_yards 10, special_teams_snaps 23 |
-| Elbert Mack | Houston Texans | CB | defensive_snaps 51, special_teams_snaps 103 |
-| Johnathan Joseph | Houston Texans | CB | defensive_snaps 327, special_teams_snaps 27 |
-| J.J. Watt | Houston Texans | DE | defensive_snaps 327, special_teams_snaps 27 |
-| Jared Crick | Houston Texans | DE | INT YDS 44, defensive_snaps 327, penalties 1, penalty_yards 2, special_teams_snaps 27 |
-| Jeoffrey Pagan | Houston Texans | DE | defensive_snaps 1 |
-| Tim Jamison | Houston Texans | DE | defensive_snaps 7 |
-| Whitney Mercilus | Houston Texans | DE | defensive_snaps 226, special_teams_snaps 27 |
-| Jay Prosch | Houston Texans | FB | REC LNG 2, offensive_snaps 80, penalties 1, penalty_yards 9, special_teams_snaps 103 |
-| Danieal Manning | Houston Texans | FS | defensive_snaps 10, special_teams_snaps 103 |
-| Kendrick Lewis | Houston Texans | FS | defensive_snaps 327, special_teams_snaps 27 |
-| Brandon Brooks | Houston Texans | G | offensive_snaps 323, special_teams_snaps 23 |
-| Akeem Dent | Houston Texans | ILB | special_teams_snaps 23 |
-| Brian Cushing | Houston Texans | ILB | defensive_snaps 327, special_teams_snaps 27 |
-| Jeff Tarpinian | Houston Texans | ILB | defensive_snaps 3, special_teams_snaps 103 |
-| Justin Tuggle | Houston Texans | ILB | special_teams_snaps 103 |
-| Mike Mohamed | Houston Texans | ILB | INT YDS 20, defensive_snaps 327, special_teams_snaps 27 |
-| Randy Bullock | Houston Texans | K | special_teams_snaps 50 |
-| Jonathan Weeks | Houston Texans | LS | special_teams_snaps 47 |
-| Jerrell Powe | Houston Texans | NT | defensive_snaps 327, penalties 1, penalty_yards 5, special_teams_snaps 27 |
-| Brooks Reed | Houston Texans | OLB | defensive_snaps 163, special_teams_snaps 27 |
-| Jadeveon Clowney | Houston Texans | OLB | defensive_snaps 9 |
-| Jason Ankrah | Houston Texans | OLB | special_teams_snaps 80 |
-| Shane Lechler | Houston Texans | P | special_teams_snaps 47 |
-| Ryan Fitzpatrick | Houston Texans | QB | RUSH LNG 23, fumbles_recovered_own 1, offensive_snaps 323 |
-| Alfred Blue | Houston Texans | RB | REC LNG 11, offensive_snaps 8, special_teams_snaps 23 |
-| Arian Foster | Houston Texans | RB | REC LNG 41, offensive_snaps 323 |
-| Ronnie Brown | Houston Texans | RB | offensive_snaps 20, special_teams_snaps 45 |
-| D.J. Swearinger | Houston Texans | SS | defensive_snaps 327, special_teams_snaps 27 |
-| Kareem Jackson | Houston Texans | SS | defensive_snaps 327, penalties 1, penalty_yards 12, special_teams_snaps 27 |
-| Shiloh Keo | Houston Texans | SS | defensive_snaps 208, special_teams_snaps 80 |
-| Derek Newton | Houston Texans | T | offensive_snaps 323, special_teams_snaps 23 |
-| Duane Brown | Houston Texans | T | offensive_snaps 323, penalties 2, penalty_yards 15, special_teams_snaps 23 |
-| Jeff Adams | Houston Texans | T | special_teams_snaps 23 |
-| C.J. Fiedorowicz | Houston Texans | TE | offensive_snaps 96, special_teams_snaps 126 |
-| Garrett Graham | Houston Texans | TE | offensive_snaps 323, special_teams_snaps 23 |
-| Ryan Griffin | Houston Texans | TE | offensive_snaps 4, special_teams_snaps 11 |
-| Damaris Johnson | Houston Texans | WR | offensive_snaps 143 |
-| DeAndre Hopkins | Houston Texans | WR | RUSH LNG 10, offensive_snaps 323 |
-| DeVier Posey | Houston Texans | WR | RUSH LNG 2, offensive_snaps 9, special_teams_snaps 103 |
-| Keshawn Martin | Houston Texans | WR | RUSH LNG 4, offensive_snaps 323, special_teams_snaps 52 |
-| Jonotthan Harrison | Indianapolis Colts | C | offensive_snaps 47, special_teams_snaps 11 |
-| Khaled Holmes | Indianapolis Colts | C | offensive_snaps 313, special_teams_snaps 22 |
-| Gregory Toler | Indianapolis Colts | CB | defensive_snaps 297, special_teams_snaps 27 |
-| Josh Gordy | Indianapolis Colts | CB | defensive_snaps 26, special_teams_snaps 98 |
-| Vontae Davis | Indianapolis Colts | CB | defensive_snaps 297, special_teams_snaps 27 |
-| Cam Johnson | Indianapolis Colts | DE | defensive_snaps 225, special_teams_snaps 27 |
-| Cory Redding | Indianapolis Colts | DE | defensive_snaps 293, special_teams_snaps 26 |
-| Arthur Jones | Indianapolis Colts | DT | defensive_snaps 233, special_teams_snaps 20 |
-| Zach Kerr | Indianapolis Colts | DT | defensive_snaps 52, special_teams_snaps 7 |
-| Mario Harvey | Indianapolis Colts | FB | REC LNG 22, offensive_snaps 88, special_teams_snaps 98 |
-| Darius Butler | Indianapolis Colts | FS | defensive_snaps 214, penalties 1, penalty_yards 5, special_teams_snaps 90 |
-| LaRon Landry | Indianapolis Colts | FS | defensive_snaps 297, special_teams_snaps 27 |
-| Sergio Brown | Indianapolis Colts | FS | defensive_snaps 1, special_teams_snaps 10 |
-| Hugh Thornton | Indianapolis Colts | G | offensive_snaps 360, penalties 1, penalty_yards 5, special_teams_snaps 24 |
-| Jack Mewhort | Indianapolis Colts | G | offensive_snaps 360, special_teams_snaps 24 |
-| Jerrell Freeman | Indianapolis Colts | ILB | defensive_snaps 297, special_teams_snaps 27 |
-| Josh McNary | Indianapolis Colts | ILB | defensive_snaps 2, special_teams_snaps 98 |
-| Adam Vinatieri | Indianapolis Colts | K | special_teams_snaps 50 |
-| Matt Overton | Indianapolis Colts | LS | special_teams_snaps 41 |
-| D'Qwell Jackson | Indianapolis Colts | MLB | defensive_snaps 297, special_teams_snaps 27 |
-| Henoc Muamba | Indianapolis Colts | MLB | defensive_snaps 3, special_teams_snaps 98 |
-| Josh Chapman | Indianapolis Colts | NT | defensive_snaps 297, special_teams_snaps 27 |
-| Montori Hughes | Indianapolis Colts | NT | defensive_snaps 5, special_teams_snaps 1 |
-| Bjoern Werner | Indianapolis Colts | OLB | defensive_snaps 147, special_teams_snaps 27 |
-| Erik Walden | Indianapolis Colts | OLB | defensive_snaps 7, special_teams_snaps 4 |
-| Jonathan Newsome | Indianapolis Colts | OLB | penalties 1, penalty_yards 10, special_teams_snaps 98 |
-| Pat McAfee | Indianapolis Colts | P | special_teams_snaps 41 |
-| Andrew Luck | Indianapolis Colts | QB | RUSH LNG 15, offensive_snaps 360 |
-| Ahmad Bradshaw | Indianapolis Colts | RB | REC LNG 19, offensive_snaps 126, special_teams_snaps 71 |
-| Dan Herron | Indianapolis Colts | RB | REC LNG 9, offensive_snaps 8, special_teams_snaps 31 |
-| Trent Richardson | Indianapolis Colts | RB | REC LNG 19, offensive_snaps 245 |
-| Zurlon Tipton | Indianapolis Colts | RB | offensive_snaps 2, special_teams_snaps 12 |
-| Colt Anderson | Indianapolis Colts | SS | defensive_snaps 1, special_teams_snaps 18 |
-| Mike Adams (IND) | Indianapolis Colts | SS | defensive_snaps 297, special_teams_snaps 27 |
-| Anthony Castonzo | Indianapolis Colts | T | offensive_snaps 360, penalties 1, penalty_yards 5, special_teams_snaps 24 |
-| Gosder Cherilus | Indianapolis Colts | T | offensive_snaps 360, special_teams_snaps 24 |
-| Joe Reitz | Indianapolis Colts | T | special_teams_snaps 13 |
-| Coby Fleener | Indianapolis Colts | TE | offensive_snaps 101, special_teams_snaps 86 |
-| Dwayne Allen | Indianapolis Colts | TE | offensive_snaps 288, special_teams_snaps 19 |
-| Jack Doyle | Indianapolis Colts | TE | offensive_snaps 67, special_teams_snaps 70 |
-| Cecil Shorts | Indianapolis Colts | WR | offensive_snaps 1, special_teams_snaps 27 |
-| Da'Rick Rogers | Indianapolis Colts | WR | RUSH LNG 6, offensive_snaps 3, special_teams_snaps 80 |
-| Donte Moncrief | Indianapolis Colts | WR | offensive_snaps 160 |
-| Griff Whalen | Indianapolis Colts | WR | muffs 1, offensive_snaps 1, special_teams_snaps 24 |
-| Justin Blackmon | Indianapolis Colts | WR | special_teams_snaps 8 |
-| Reggie Wayne | Indianapolis Colts | WR | RUSH LNG 7, offensive_snaps 360 |
-| T.Y. Hilton | Indianapolis Colts | WR | RUSH LNG 3, offensive_snaps 360, penalties 1, penalty_yards 5 |
-| Mike Brewster | Jacksonville Jaguars | C | offensive_snaps 332, special_teams_snaps 23 |
-| A.J. Bouye | Jacksonville Jaguars | CB | defensive_snaps 125, penalties 1, penalty_yards 15, special_teams_snaps 100 |
-| Alan Ball | Jacksonville Jaguars | CB | special_teams_snaps 27 |
-| Alterraun Verner | Jacksonville Jaguars | CB | defensive_snaps 274, special_teams_snaps 42 |
-| Aqib Talib | Jacksonville Jaguars | CB | defensive_snaps 329, special_teams_snaps 17 |
-| Jordan Poyer | Jacksonville Jaguars | CB | defensive_snaps 155, special_teams_snaps 57 |
-| Malcolm Butler | Jacksonville Jaguars | CB | defensive_snaps 13, special_teams_snaps 41 |
-| Mike Harris | Jacksonville Jaguars | CB | defensive_snaps 70, special_teams_snaps 4 |
-| Andre Branch | Jacksonville Jaguars | DE | defensive_snaps 239, special_teams_snaps 19 |
-| Daniel Te'o-Nesheim | Jacksonville Jaguars | DE | defensive_snaps 4 |
-| Jeremy Mincey | Jacksonville Jaguars | DE | defensive_snaps 345, special_teams_snaps 19 |
-| C.J. Mosley | Jacksonville Jaguars | DT | defensive_snaps 5 |
-| Roy Miller | Jacksonville Jaguars | DT | defensive_snaps 345, penalties 1, penalty_yards 15, special_teams_snaps 19 |
-| Sen'Derrick Marks | Jacksonville Jaguars | DT | defensive_snaps 345, special_teams_snaps 19 |
-| Montell Owens | Jacksonville Jaguars | FB | REC LNG 28, offensive_snaps 83, special_teams_snaps 103 |
-| Trai Turner | Jacksonville Jaguars | G | offensive_snaps 332, special_teams_snaps 23 |
-| Josh Scobee | Jacksonville Jaguars | K | special_teams_snaps 49 |
-| Christian Jones | Jacksonville Jaguars | LB | special_teams_snaps 103 |
-| Daryl Smith | Jacksonville Jaguars | LB | defensive_snaps 345, special_teams_snaps 19 |
-| Julian Stanford | Jacksonville Jaguars | LB | defensive_snaps 172, special_teams_snaps 19 |
-| Paul Posluszny | Jacksonville Jaguars | LB | INT YDS 21, defensive_snaps 345, special_teams_snaps 19 |
-| Sio Moore | Jacksonville Jaguars | LB | defensive_snaps 13 |
-| Telvin Smith | Jacksonville Jaguars | LB | defensive_snaps 2, special_teams_snaps 103 |
-| Todd Davis | Jacksonville Jaguars | LB | special_teams_snaps 18 |
-| Casey Kreiter | Jacksonville Jaguars | LS | special_teams_snaps 48 |
-| Cornelius Lucas | Jacksonville Jaguars | OT | special_teams_snaps 23 |
-| Eugene Monroe | Jacksonville Jaguars | OT | offensive_snaps 332, special_teams_snaps 23 |
-| Joel Bitonio | Jacksonville Jaguars | OT | offensive_snaps 332, special_teams_snaps 23 |
-| Lane Johnson | Jacksonville Jaguars | OT | offensive_snaps 332, special_teams_snaps 23 |
-| Bryan Anger | Jacksonville Jaguars | P | special_teams_snaps 48 |
-| Kirk Cousins | Jacksonville Jaguars | QB | RUSH LNG 15, offensive_snaps 332, penalties 2, penalty_yards 19 |
-| C.J. Anderson | Jacksonville Jaguars | RB | REC LNG 26, offensive_snaps 32, special_teams_snaps 85 |
-| Jonathan Grimes | Jacksonville Jaguars | RB | REC LNG 20, offensive_snaps 6, special_teams_snaps 1 |
-| Maurice Jones-Drew | Jacksonville Jaguars | RB | REC LNG 32, offensive_snaps 332 |
-| Adrian Phillips | Jacksonville Jaguars | S | defensive_snaps 1, special_teams_snaps 31 |
-| Bacarri Rambo | Jacksonville Jaguars | S | defensive_snaps 345, special_teams_snaps 19 |
-| Brynden Trawick | Jacksonville Jaguars | S | defensive_snaps 265, special_teams_snaps 30 |
-| Chris Prosinski | Jacksonville Jaguars | S | defensive_snaps 1, special_teams_snaps 59 |
-| Dwight Lowery | Jacksonville Jaguars | S | defensive_snaps 80, special_teams_snaps 4 |
-| Marcedes Lewis | Jacksonville Jaguars | TE | offensive_snaps 332, special_teams_snaps 23 |
-| Marcel Jensen | Jacksonville Jaguars | TE | offensive_snaps 1, special_teams_snaps 3 |
-| Travis Kelce | Jacksonville Jaguars | TE | offensive_snaps 99, penalties 1, penalty_yards 10, special_teams_snaps 126 |
-| Adam Thielen | Jacksonville Jaguars | WR | RUSH LNG 1, offensive_snaps 332 |
-| Allen Hurns | Jacksonville Jaguars | WR | offensive_snaps 5, special_teams_snaps 103 |
-| Andrew Hawkins | Jacksonville Jaguars | WR | fumbles_recovered_own 1, offensive_snaps 147, special_teams_snaps 52 |
-| Davante Adams | Jacksonville Jaguars | WR | RUSH LNG 2, offensive_snaps 332 |
-| Rodney Hudson | Kansas City Chiefs | C | offensive_snaps 308, special_teams_snaps 17 |
-| Christopher Owens | Kansas City Chiefs | CB | defensive_snaps 46, special_teams_snaps 91 |
-| Marcus Cooper | Kansas City Chiefs | CB | defensive_snaps 323, special_teams_snaps 21 |
-| Sean Smith | Kansas City Chiefs | CB | defensive_snaps 323, special_teams_snaps 21 |
-| Allen Bailey | Kansas City Chiefs | DE | defensive_snaps 323, special_teams_snaps 21 |
-| Dee Ford | Kansas City Chiefs | DE | defensive_snaps 223, special_teams_snaps 21 |
-| Jaye Howard | Kansas City Chiefs | DE | defensive_snaps 6 |
-| Mike Devito | Kansas City Chiefs | DE | defensive_snaps 323, special_teams_snaps 21 |
-| Vance Walker | Kansas City Chiefs | DE | defensive_snaps 3 |
-| Anthony Sherman | Kansas City Chiefs | FB | REC LNG 4, offensive_snaps 75, special_teams_snaps 91 |
-| Husain Abdullah | Kansas City Chiefs | FS | defensive_snaps 214, special_teams_snaps 91 |
-| Kelcie McCray | Kansas City Chiefs | FS | defensive_snaps 3, special_teams_snaps 59 |
-| Jeff Allen | Kansas City Chiefs | G | offensive_snaps 308, special_teams_snaps 17 |
-| Mike McGlynn | Kansas City Chiefs | G | offensive_snaps 308, special_teams_snaps 17 |
-| Zach Fulton | Kansas City Chiefs | G | offensive_snaps 308, special_teams_snaps 17 |
-| Derrick Johnson | Kansas City Chiefs | ILB | defensive_snaps 314, special_teams_snaps 20 |
-| Joshua Mauga | Kansas City Chiefs | ILB | defensive_snaps 172, special_teams_snaps 21 |
-| Cairo Santos | Kansas City Chiefs | K | special_teams_snaps 37 |
-| Thomas Gafford | Kansas City Chiefs | LS | special_teams_snaps 44 |
-| Damion Square | Kansas City Chiefs | NT | defensive_snaps 6 |
-| Dontari Poe | Kansas City Chiefs | NT | defensive_snaps 323, special_teams_snaps 21 |
-| Frank Zombo | Kansas City Chiefs | OLB | special_teams_snaps 88 |
-| James-Michael Johnson | Kansas City Chiefs | OLB | defensive_snaps 4, special_teams_snaps 82 |
-| Josh Martin | Kansas City Chiefs | OLB | defensive_snaps 2, special_teams_snaps 91 |
-| Justin Houston | Kansas City Chiefs | OLB | defensive_snaps 296, special_teams_snaps 20 |
-| Tamba Hali | Kansas City Chiefs | OLB | defensive_snaps 31, special_teams_snaps 2 |
-| Dustin Colquitt | Kansas City Chiefs | P | special_teams_snaps 44 |
-| Alex Smith (KC) | Kansas City Chiefs | QB | RUSH LNG 15, offensive_snaps 308 |
-| Cyrus Gray | Kansas City Chiefs | RB | special_teams_snaps 20 |
-| Jamaal Charles | Kansas City Chiefs | RB | REC LNG 26, offensive_snaps 308 |
-| Joe McKnight | Kansas City Chiefs | RB | REC LNG 29, offensive_snaps 32, special_teams_snaps 62 |
-| Knile Davis | Kansas City Chiefs | RB | offensive_snaps 7, special_teams_snaps 23 |
-| Eric Berry | Kansas City Chiefs | SS | defensive_snaps 323, special_teams_snaps 21 |
-| Johnathan Cyprien | Kansas City Chiefs | SS | defensive_snaps 323, special_teams_snaps 21 |
-| Eric Fisher | Kansas City Chiefs | T | offensive_snaps 308, special_teams_snaps 17 |
-| Ryan Harris | Kansas City Chiefs | T | special_teams_snaps 17 |
-| Anthony Fasano | Kansas City Chiefs | TE | offensive_snaps 308, special_teams_snaps 17 |
-| Demetrius Harris | Kansas City Chiefs | TE | offensive_snaps 91, special_teams_snaps 108 |
-| A.J. Jenkins | Kansas City Chiefs | WR | offensive_snaps 3, special_teams_snaps 35 |
-| Albert Wilson | Kansas City Chiefs | WR | offensive_snaps 136, penalties 1, penalty_yards 10 |
-| De'Anthony Thomas | Kansas City Chiefs | WR | offensive_snaps 3, special_teams_snaps 9 |
-| Donnie Avery | Kansas City Chiefs | WR | offensive_snaps 308 |
-| Dwayne Bowe | Kansas City Chiefs | WR | special_teams_snaps 5 |
-| Frankie Hammond | Kansas City Chiefs | WR | offensive_snaps 308 |
-| Junior Hemingway | Kansas City Chiefs | WR | offensive_snaps 1, special_teams_snaps 68 |
-| Samson Satele | Miami Dolphins | C | offensive_snaps 277, special_teams_snaps 18 |
-| Brent Grimes | Miami Dolphins | CB | defensive_snaps 238, special_teams_snaps 16 |
-| Cortland Finnegan | Miami Dolphins | CB | defensive_snaps 238, special_teams_snaps 16 |
-| Jamar Taylor | Miami Dolphins | CB | defensive_snaps 188, special_teams_snaps 78 |
-| Will Davis | Miami Dolphins | CB | defensive_snaps 4, special_teams_snaps 78 |
-| Cameron Wake | Miami Dolphins | DE | defensive_snaps 238, special_teams_snaps 16 |
-| Derrick Shelby | Miami Dolphins | DE | defensive_snaps 5 |
-| Olivier Vernon | Miami Dolphins | DE | defensive_snaps 238, special_teams_snaps 16 |
-| Terrence Fede | Miami Dolphins | DE | defensive_snaps 2 |
-| Earl Mitchell | Miami Dolphins | DT | defensive_snaps 238, special_teams_snaps 16 |
-| Jared Odrick | Miami Dolphins | DT | defensive_snaps 2 |
-| Randy Starks | Miami Dolphins | DT | defensive_snaps 164, special_teams_snaps 16 |
-| Daryn Colledge | Miami Dolphins | G | offensive_snaps 277, special_teams_snaps 18 |
-| Shelley Smith | Miami Dolphins | G | offensive_snaps 277, special_teams_snaps 18 |
-| Caleb Sturgis | Miami Dolphins | K | special_teams_snaps 36 |
-| Chris McCain | Miami Dolphins | LB | special_teams_snaps 78 |
-| Dannell Ellerbe | Miami Dolphins | LB | defensive_snaps 209, special_teams_snaps 16 |
-| Jason Trusnik | Miami Dolphins | LB | defensive_snaps 1, special_teams_snaps 78 |
-| Jelani Jenkins | Miami Dolphins | LB | defensive_snaps 90, special_teams_snaps 9 |
-| Jonathan Freeny | Miami Dolphins | LB | defensive_snaps 6, special_teams_snaps 22 |
-| Jordan Tripp | Miami Dolphins | LB | special_teams_snaps 21 |
-| Koa Misi | Miami Dolphins | LB | defensive_snaps 119, special_teams_snaps 12 |
-| Philip Wheeler | Miami Dolphins | LB | defensive_snaps 177, special_teams_snaps 11 |
-| John Denney | Miami Dolphins | LS | special_teams_snaps 38 |
-| Brandon Fields | Miami Dolphins | P | special_teams_snaps 38 |
-| Ryan Tannehill | Miami Dolphins | QB | RUSH LNG 5, offensive_snaps 277 |
-| Damien Williams | Miami Dolphins | RB | REC LNG 9, offensive_snaps 18, special_teams_snaps 50 |
-| Knowshon Moreno | Miami Dolphins | RB | REC LNG 19, offensive_snaps 110, special_teams_snaps 68 |
-| Lamar Miller | Miami Dolphins | RB | REC LNG 15, offensive_snaps 226 |
-| Orleans Darkwa | Miami Dolphins | RB | special_teams_snaps 11 |
-| Jimmy Wilson | Miami Dolphins | S | defensive_snaps 238, special_teams_snaps 16 |
-| Louis Delmas | Miami Dolphins | S | defensive_snaps 238, special_teams_snaps 16 |
-| Michael Thomas | Miami Dolphins | S | special_teams_snaps 78 |
-| Walt Aikens | Miami Dolphins | S | special_teams_snaps 38 |
-| Branden Albert | Miami Dolphins | T | offensive_snaps 277, special_teams_snaps 18 |
-| Ja'Wuan James | Miami Dolphins | T | offensive_snaps 277, special_teams_snaps 18 |
-| Nate Garner | Miami Dolphins | T | special_teams_snaps 18 |
-| Charles Clay | Miami Dolphins | TE | offensive_snaps 277, special_teams_snaps 18 |
-| Dion Sims | Miami Dolphins | TE | offensive_snaps 83, special_teams_snaps 96 |
-| Brandon Gibson | Miami Dolphins | WR | offensive_snaps 277 |
-| Brian Hartline | Miami Dolphins | WR | offensive_snaps 120 |
-| Jarvis Landry | Miami Dolphins | WR | offensive_snaps 2, special_teams_snaps 34 |
-| Mike Wallace | Miami Dolphins | WR | offensive_snaps 277 |
-| Rishard Matthews | Miami Dolphins | WR | offensive_snaps 5, special_teams_snaps 68 |
-| Joe Berger | Minnesota Vikings | C | fumbles_recovered_own 1, offensive_snaps 118, special_teams_snaps 12 |
-| John Sullivan | Minnesota Vikings | C | offensive_snaps 193, special_teams_snaps 8 |
-| Captain Munnerlyn | Minnesota Vikings | CB | defensive_snaps 326, special_teams_snaps 23 |
-| Jabari Price | Minnesota Vikings | CB | special_teams_snaps 23 |
-| Josh Robinson | Minnesota Vikings | CB | defensive_snaps 282, special_teams_snaps 76 |
-| Xavier Rhodes | Minnesota Vikings | CB | defensive_snaps 212, special_teams_snaps 16 |
-| Brian Robison | Minnesota Vikings | DE | defensive_snaps 326, special_teams_snaps 23 |
-| Everson Griffen | Minnesota Vikings | DE | defensive_snaps 326, special_teams_snaps 23 |
-| Sharrif Floyd | Minnesota Vikings | DT | defensive_snaps 326, special_teams_snaps 23 |
-| Tom Johnson | Minnesota Vikings | DT | defensive_snaps 6 |
-| Jerome Felton | Minnesota Vikings | FB | REC LNG 15, offensive_snaps 79, special_teams_snaps 108 |
-| Zach Line | Minnesota Vikings | FB | offensive_snaps 1, special_teams_snaps 29 |
-| Andrew Sendejo | Minnesota Vikings | FS | defensive_snaps 1, special_teams_snaps 108 |
-| Harrison Smith | Minnesota Vikings | FS | defensive_snaps 326, special_teams_snaps 23 |
-| Brandon Fusco | Minnesota Vikings | G | offensive_snaps 288, special_teams_snaps 14 |
-| Charlie Johnson | Minnesota Vikings | G | offensive_snaps 311, special_teams_snaps 14 |
-| David Yankey | Minnesota Vikings | G | offensive_snaps 130, special_teams_snaps 14 |
-| Gerald Hodges | Minnesota Vikings | ILB | defensive_snaps 7, special_teams_snaps 5 |
-| Blair Walsh | Minnesota Vikings | K | special_teams_snaps 33 |
-| Cullen Loeffler | Minnesota Vikings | LS | special_teams_snaps 47 |
-| Audie Cole | Minnesota Vikings | MLB | defensive_snaps 3, special_teams_snaps 108 |
-| Jasper Brinkley | Minnesota Vikings | MLB | defensive_snaps 326, special_teams_snaps 23 |
-| Michael Mauti | Minnesota Vikings | MLB | special_teams_snaps 83 |
-| Linval Joseph | Minnesota Vikings | NT | defensive_snaps 226, special_teams_snaps 23 |
-| Shamar Stephen | Minnesota Vikings | NT | defensive_snaps 3 |
-| Anthony Barr | Minnesota Vikings | OLB | defensive_snaps 162, special_teams_snaps 23 |
-| Brandon Watts | Minnesota Vikings | OLB | defensive_snaps 1, special_teams_snaps 65 |
-| Chad Greenway | Minnesota Vikings | OLB | defensive_snaps 326, special_teams_snaps 23 |
-| Jeff Locke | Minnesota Vikings | P | special_teams_snaps 47 |
-| Matt Cassel | Minnesota Vikings | QB | RUSH LNG 7, offensive_snaps 311, passing_two_point_conversions 1 |
-| Adrian Peterson | Minnesota Vikings | RB | REC LNG 37, fumbles_recovered_own 1, offensive_snaps 212 |
-| Jerick McKinnon | Minnesota Vikings | RB | REC LNG 60, offensive_snaps 57, special_teams_snaps 50 |
-| Matt Asiata | Minnesota Vikings | RB | REC LNG 19, offensive_snaps 66, special_teams_snaps 69 |
-| Antone Exum | Minnesota Vikings | SS | defensive_snaps 93, special_teams_snaps 108 |
-| Robert Blanton | Minnesota Vikings | SS | defensive_snaps 326, penalties 2, penalty_yards 10, special_teams_snaps 23 |
-| Matt Kalil | Minnesota Vikings | T | offensive_snaps 311, special_teams_snaps 14 |
-| Phil Loadholt | Minnesota Vikings | T | offensive_snaps 204, penalties 2, penalty_yards 10, special_teams_snaps 8 |
-| Kyle Rudolph | Minnesota Vikings | TE | offensive_snaps 311, special_teams_snaps 14 |
-| MarQueis Gray | Minnesota Vikings | TE | offensive_snaps 4, special_teams_snaps 102 |
-| Rhett Ellison | Minnesota Vikings | TE | offensive_snaps 94, penalties 1, penalty_yards 5, special_teams_snaps 120 |
-| Charles Johnson (CLE) | Minnesota Vikings | WR | special_teams_snaps 13 |
-| Cordarrelle Patterson | Minnesota Vikings | WR | offensive_snaps 177, special_teams_snaps 16 |
-| Greg Jennings | Minnesota Vikings | WR | RUSH LNG 5, offensive_snaps 311 |
-| Jarius Wright | Minnesota Vikings | WR | offensive_snaps 199, receiving_two_point_conversions 1 |
-| Rodney Smith | Minnesota Vikings | WR | offensive_snaps 72, special_teams_snaps 13 |
-| Bryan Stork | New England Patriots | C | special_teams_snaps 24 |
-| Jordan Devey | New England Patriots | C | offensive_snaps 110, special_teams_snaps 24 |
-| Ryan Wendell | New England Patriots | C | offensive_snaps 310, special_teams_snaps 24 |
-| Alfonzo Dennard | New England Patriots | CB | defensive_snaps 343, special_teams_snaps 16 |
-| Darrelle Revis | New England Patriots | CB | defensive_snaps 343, special_teams_snaps 16 |
-| Kyle Arrington | New England Patriots | CB | defensive_snaps 59, special_teams_snaps 87 |
-| Chandler Jones | New England Patriots | DE | defensive_snaps 239, special_teams_snaps 16 |
-| Rob Ninkovich | New England Patriots | DE | defensive_snaps 343, special_teams_snaps 16 |
-| Zach Moore | New England Patriots | DE | defensive_snaps 8 |
-| Chris Jones (NE) | New England Patriots | DT | defensive_snaps 1 |
-| Joe Vellano | New England Patriots | DT | defensive_snaps 343, special_teams_snaps 16 |
-| Vince Wilfork | New England Patriots | DT | defensive_snaps 343, special_teams_snaps 16 |
-| Logan Ryan | New England Patriots | FS | defensive_snaps 4, special_teams_snaps 87 |
-| Dan Connolly | New England Patriots | G | LONG SNAPS 37, offensive_snaps 310, special_teams_snaps 42 |
-| Josh Kline | New England Patriots | G | offensive_snaps 200, special_teams_snaps 16 |
-| Stephen Gostkowski | New England Patriots | K | special_teams_snaps 50 |
-| Darius Fleming | New England Patriots | LB | INT YDS 4, defensive_snaps 124, special_teams_snaps 15 |
-| Dont'a Hightower | New England Patriots | LB | INT YDS 3, defensive_snaps 233, special_teams_snaps 13 |
-| Jamie Collins | New England Patriots | LB | INT YDS 32, defensive_snaps 331, special_teams_snaps 16 |
-| Jerod Mayo | New England Patriots | LB | defensive_snaps 134, special_teams_snaps 3 |
-| Danny Aiken | New England Patriots | LS | special_teams_snaps 10 |
-| Chris White | New England Patriots | OLB | defensive_snaps 1 |
-| Dominique Easley | New England Patriots | OLB | defensive_snaps 41, special_teams_snaps 7 |
-| Ryan Allen | New England Patriots | P | special_teams_snaps 47 |
-| Tom Brady | New England Patriots | QB | RUSH LNG 9, offensive_snaps 310, penalties 1, penalty_yards 5 |
-| Brandon Bolden | New England Patriots | RB | special_teams_snaps 83 |
-| James Develin | New England Patriots | RB | special_teams_snaps 1 |
-| James White | New England Patriots | RB | offensive_snaps 6, special_teams_snaps 87 |
-| Shane Vereen | New England Patriots | RB | offensive_snaps 82, special_teams_snaps 86 |
-| Stevan Ridley | New England Patriots | RB | REC LNG 17, offensive_snaps 307 |
-| Storm Johnson | New England Patriots | RB | special_teams_snaps 1 |
-| Devin McCourty | New England Patriots | S | defensive_snaps 343, special_teams_snaps 16 |
-| Duron Harmon | New England Patriots | S | defensive_snaps 343, special_teams_snaps 16 |
-| Patrick Chung | New England Patriots | S | defensive_snaps 214, special_teams_snaps 87 |
-| Tavon Wilson | New England Patriots | S | special_teams_snaps 25 |
-| Nate Solder | New England Patriots | T | offensive_snaps 310, special_teams_snaps 24 |
-| Sebastian Vollmer | New England Patriots | T | offensive_snaps 310, special_teams_snaps 24 |
-| Michael Hoomanawanui | New England Patriots | TE | offensive_snaps 141, special_teams_snaps 91 |
-| Rob Gronkowski | New England Patriots | TE | offensive_snaps 239, special_teams_snaps 18 |
-| Timothy Wright | New England Patriots | TE | offensive_snaps 21, special_teams_snaps 93 |
-| Aaron Dobson | New England Patriots | WR | RUSH LNG 1, offensive_snaps 138 |
-| Brandon LaFell | New England Patriots | WR | special_teams_snaps 35 |
-| Brian Tyms | New England Patriots | WR | special_teams_snaps 19 |
-| Danny Amendola | New England Patriots | WR | offensive_snaps 310 |
-| Julian Edelman | New England Patriots | WR | offensive_snaps 310, special_teams_snaps 21 |
-| Kenbrell Thompkins | New England Patriots | WR | offensive_snaps 5, special_teams_snaps 68 |
-| Matt Slater | New England Patriots | WR | offensive_snaps 1, special_teams_snaps 17 |
-| Jonathan Goodwin | New Orleans Saints | C | offensive_snaps 329, special_teams_snaps 23 |
-| Tim Lelito | New Orleans Saints | C | special_teams_snaps 23 |
-| Brian Dixon | New Orleans Saints | CB | defensive_snaps 264, special_teams_snaps 98 |
-| Corey White | New Orleans Saints | CB | defensive_snaps 3, special_teams_snaps 98 |
-| Keenan Lewis | New Orleans Saints | CB | defensive_snaps 332, special_teams_snaps 23 |
-| Patrick Robinson | New Orleans Saints | CB | defensive_snaps 332, special_teams_snaps 23 |
-| Cameron Jordan | New Orleans Saints | DE | defensive_snaps 332, special_teams_snaps 23 |
-| Glenn Foster | New Orleans Saints | DE | defensive_snaps 2 |
-| Akiem Hicks | New Orleans Saints | DT | defensive_snaps 332, special_teams_snaps 23 |
-| Tyrunn Walker | New Orleans Saints | DT | defensive_snaps 230, special_teams_snaps 23 |
-| Austin Johnson | New Orleans Saints | FB | REC LNG 8, offensive_snaps 81, special_teams_snaps 98 |
-| Jairus Byrd | New Orleans Saints | FS | defensive_snaps 332, penalties 1, penalty_yards 16, special_teams_snaps 23 |
-| Rafael Bush | New Orleans Saints | FS | special_teams_snaps 98 |
-| Ben Grubbs | New Orleans Saints | G | offensive_snaps 329, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Jahri Evans | New Orleans Saints | G | offensive_snaps 329, special_teams_snaps 23 |
-| Curtis Lofton | New Orleans Saints | ILB | INT YDS 10, defensive_snaps 332, special_teams_snaps 23 |
-| David Hawthorne | New Orleans Saints | ILB | defensive_snaps 183, special_teams_snaps 13 |
-| Kyle Knox | New Orleans Saints | ILB | special_teams_snaps 98 |
-| Ramon Humber | New Orleans Saints | ILB | defensive_snaps 9, special_teams_snaps 52 |
-| Shayne Graham | New Orleans Saints | K | special_teams_snaps 51 |
-| Justin Drescher | New Orleans Saints | LS | special_teams_snaps 43 |
-| Brandon Deaderick | New Orleans Saints | NT | defensive_snaps 7 |
-| Brodrick Bunkley | New Orleans Saints | NT | defensive_snaps 332, penalties 1, penalty_yards 1, special_teams_snaps 23 |
-| Junior Galette | New Orleans Saints | OLB | defensive_snaps 240, special_teams_snaps 23 |
-| Parys Haralson | New Orleans Saints | OLB | defensive_snaps 82, special_teams_snaps 10 |
-| Ronald Powell | New Orleans Saints | OLB | defensive_snaps 3, penalties 1, penalty_yards 10, special_teams_snaps 98 |
-| Thomas Morstead | New Orleans Saints | P | special_teams_snaps 43 |
-| Drew Brees | New Orleans Saints | QB | RUSH LNG 23, offensive_snaps 329, penalties 2, penalty_yards 17 |
-| Khiry Robinson | New Orleans Saints | RB | REC LNG 19, offensive_snaps 42, special_teams_snaps 76 |
-| Mark Ingram | New Orleans Saints | RB | REC LNG 45, offensive_snaps 329 |
-| Pierre Thomas | New Orleans Saints | RB | REC LNG 20, offensive_snaps 8 |
-| Travaris Cadet | New Orleans Saints | RB | special_teams_snaps 50 |
-| Kenny Vaccaro | New Orleans Saints | SS | defensive_snaps 332, special_teams_snaps 23 |
-| Vinnie Sunseri | New Orleans Saints | SS | defensive_snaps 1, special_teams_snaps 44 |
-| Terron Armstead | New Orleans Saints | T | offensive_snaps 329, special_teams_snaps 23 |
-| Zach Strief | New Orleans Saints | T | offensive_snaps 329, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Benjamin Watson | New Orleans Saints | TE | offensive_snaps 94, penalties 1, penalty_yards 10, special_teams_snaps 113 |
-| Jimmy Graham | New Orleans Saints | TE | offensive_snaps 329, special_teams_snaps 23 |
-| Josh Hill | New Orleans Saints | TE | offensive_snaps 4, special_teams_snaps 45 |
-| Brandin Cooks | New Orleans Saints | WR | RUSH LNG 11, offensive_snaps 285 |
-| Joe Morgan | New Orleans Saints | WR | offensive_snaps 78 |
-| Kenny Stills | New Orleans Saints | WR | offensive_snaps 2, special_teams_snaps 18 |
-| Marques Colston | New Orleans Saints | WR | RUSH LNG 9, offensive_snaps 329 |
-| Robert Meachem | New Orleans Saints | WR | offensive_snaps 114, special_teams_snaps 23 |
-| J.D. Walton | New York Giants | C | offensive_snaps 288, penalties 1, penalty_yards 7, special_teams_snaps 22 |
-| Weston Richburg | New York Giants | C | offensive_snaps 115, special_teams_snaps 10 |
-| Dominique Rodgers-Cromartie | New York Giants | CB | defensive_snaps 334, special_teams_snaps 22 |
-| Prince Amukamara | New York Giants | CB | defensive_snaps 265, penalties 1, penalty_yards 6, special_teams_snaps 16 |
-| Trumaine McBride | New York Giants | CB | defensive_snaps 1, special_teams_snaps 39 |
-| Zackary Bowman | New York Giants | CB | defensive_snaps 1, special_teams_snaps 23 |
-| Jason Pierre-Paul | New York Giants | DE | defensive_snaps 334, penalties 1, penalty_yards 5, special_teams_snaps 22 |
-| Mathias Kiwanuka | New York Giants | DE | defensive_snaps 334, penalties 1, penalty_yards 5, special_teams_snaps 22 |
-| Robert Ayers | New York Giants | DE | defensive_snaps 6 |
-| Jay Bromley | New York Giants | DT | defensive_snaps 5 |
-| Johnathan Hankins | New York Giants | DT | defensive_snaps 231, special_teams_snaps 22 |
-| Mike Patterson | New York Giants | DT | defensive_snaps 334, special_teams_snaps 22 |
-| Henry Hynoski | New York Giants | FB | REC LNG 39, offensive_snaps 72, special_teams_snaps 96 |
-| Quintin Demps | New York Giants | FS | defensive_snaps 1, special_teams_snaps 25 |
-| Stevie Brown | New York Giants | FS | defensive_snaps 334, special_teams_snaps 22 |
-| Brandon Mosley | New York Giants | G | offensive_snaps 288, penalties 1, penalty_yards 5, special_teams_snaps 22 |
-| John Jerry | New York Giants | G | offensive_snaps 173, special_teams_snaps 12 |
-| Justin Pugh | New York Giants | G | offensive_snaps 288, special_teams_snaps 22 |
-| Josh Brown | New York Giants | K | special_teams_snaps 47 |
-| Zak DeOssie | New York Giants | LS | special_teams_snaps 45 |
-| Jameel McClain | New York Giants | MLB | INT YDS 58, defensive_snaps 334, special_teams_snaps 22 |
-| Jon Beason | New York Giants | MLB | special_teams_snaps 96 |
-| Mark Herzlich | New York Giants | MLB | defensive_snaps 1, special_teams_snaps 96 |
-| Devon Kennard | New York Giants | OLB | defensive_snaps 166, special_teams_snaps 22 |
-| Jacquian Williams | New York Giants | OLB | defensive_snaps 334, special_teams_snaps 22 |
-| Spencer Paysinger | New York Giants | OLB | defensive_snaps 8 |
-| Steve Weatherford | New York Giants | P | special_teams_snaps 45 |
-| Eli Manning | New York Giants | QB | RUSH LNG 12, offensive_snaps 288, penalties 2, penalty_yards 15 |
-| Andre Williams | New York Giants | RB | REC LNG 31, offensive_snaps 26, special_teams_snaps 85 |
-| Peyton Hillis | New York Giants | RB | offensive_snaps 7, special_teams_snaps 33 |
-| Rashad Jennings | New York Giants | RB | REC LNG 40, offensive_snaps 288 |
-| Walter Thurmond | New York Giants | S | defensive_snaps 280, penalties 1, penalty_yards 15, special_teams_snaps 79 |
-| Antrel Rolle | New York Giants | SS | defensive_snaps 334, special_teams_snaps 22 |
-| Nat Berhe | New York Giants | SS | defensive_snaps 63, special_teams_snaps 96 |
-| Charles Brown | New York Giants | T | special_teams_snaps 22 |
-| Will Beatty | New York Giants | T | offensive_snaps 288, special_teams_snaps 22 |
-| Adrien Robinson | New York Giants | TE | special_teams_snaps 80 |
-| Daniel Fells | New York Giants | TE | offensive_snaps 84, special_teams_snaps 118 |
-| Larry Donnell | New York Giants | TE | offensive_snaps 288, special_teams_snaps 22 |
-| Corey Washington | New York Giants | WR | offensive_snaps 2, special_teams_snaps 79 |
-| Jerrel Jernigan | New York Giants | WR | offensive_snaps 127, penalties 1, penalty_yards 10 |
-| Odell Beckham | New York Giants | WR | special_teams_snaps 22 |
-| Preston Parker | New York Giants | WR | offensive_snaps 4, special_teams_snaps 23 |
-| Rueben Randle | New York Giants | WR | RUSH LNG 2, offensive_snaps 288 |
-| Victor Cruz | New York Giants | WR | RUSH LNG 10, offensive_snaps 288 |
-| Nick Mangold | New York Jets | C | fumbles_recovered_own 1, offensive_snaps 317, special_teams_snaps 20 |
-| Antonio Allen | New York Jets | CB | defensive_snaps 330, special_teams_snaps 27 |
-| Darrin Walls | New York Jets | CB | defensive_snaps 330, special_teams_snaps 27 |
-| Kyle Wilson | New York Jets | CB | defensive_snaps 263, special_teams_snaps 108 |
-| Phillip Adams | New York Jets | CB | defensive_snaps 7, special_teams_snaps 108 |
-| Leger Douzable | New York Jets | DE | defensive_snaps 330, special_teams_snaps 27 |
-| Muhammad Wilkerson | New York Jets | DE | defensive_snaps 330, special_teams_snaps 27 |
-| John Conner | New York Jets | FB | offensive_snaps 2 |
-| Tommy Bohanon | New York Jets | FB | REC LNG 17, offensive_snaps 79, special_teams_snaps 108 |
-| Brian Winters | New York Jets | G | offensive_snaps 317, special_teams_snaps 20 |
-| Willie Colon | New York Jets | G | offensive_snaps 317, special_teams_snaps 20 |
-| A.J. Edds | New York Jets | ILB | defensive_snaps 1, special_teams_snaps 108 |
-| Nick Bellore | New York Jets | ILB | defensive_snaps 3, special_teams_snaps 88 |
-| Nick Folk | New York Jets | K | special_teams_snaps 42 |
-| Tanner Purdum | New York Jets | LS | special_teams_snaps 53 |
-| Demario Davis | New York Jets | MLB | defensive_snaps 330, special_teams_snaps 27 |
-| Damon Harrison | New York Jets | NT | INT YDS 32, defensive_snaps 330, special_teams_snaps 27 |
-| Kenrick Ellis | New York Jets | NT | defensive_snaps 229, special_teams_snaps 27 |
-| Calvin Pace | New York Jets | OLB | defensive_snaps 199, penalties 1, penalty_yards 23, special_teams_snaps 27 |
-| David Harris | New York Jets | OLB | defensive_snaps 261, special_teams_snaps 18 |
-| Quinton Coples | New York Jets | OLB | defensive_snaps 41, special_teams_snaps 9 |
-| Trevor Reilly | New York Jets | OLB | defensive_snaps 2, special_teams_snaps 108 |
-| Ryan Quigley | New York Jets | P | special_teams_snaps 53 |
-| Geno Smith | New York Jets | QB | RUSH LNG 17, offensive_snaps 317 |
-| Bilal Powell | New York Jets | RB | offensive_snaps 9 |
-| Chris Ivory | New York Jets | RB | REC LNG 42, fumbles_recovered_own 1, offensive_snaps 317 |
-| Chris Johnson | New York Jets | RB | REC LNG 26, offensive_snaps 36, special_teams_snaps 61 |
-| Calvin Pryor | New York Jets | S | defensive_snaps 330, penalties 2, penalty_yards 8, special_teams_snaps 27 |
-| Dawan Landry | New York Jets | S | defensive_snaps 330, special_teams_snaps 27 |
-| Jaiquawn Jarrett | New York Jets | S | defensive_snaps 3, special_teams_snaps 108 |
-| Breno Giacomini | New York Jets | T | offensive_snaps 317, special_teams_snaps 20 |
-| D'Brickashaw Ferguson | New York Jets | T | offensive_snaps 317, special_teams_snaps 20 |
-| Sheldon Richardson | New York Jets | T | special_teams_snaps 20 |
-| Jace Amaro | New York Jets | TE | offensive_snaps 88, special_teams_snaps 121 |
-| Jeff Cumberland | New York Jets | TE | offensive_snaps 317, special_teams_snaps 20 |
-| Zach Sudfeld | New York Jets | TE | offensive_snaps 5, special_teams_snaps 18 |
-| David Nelson | New York Jets | WR | offensive_snaps 4, special_teams_snaps 108 |
-| Eric Decker | New York Jets | WR | offensive_snaps 317 |
-| Greg Salas | New York Jets | WR | offensive_snaps 140 |
-| Jalen Saunders | New York Jets | WR | special_teams_snaps 18 |
-| Jeremy Kerley | New York Jets | WR | RUSH LNG 1, muffs 1, offensive_snaps 317, special_teams_snaps 5 |
-| Saalim Hakim | New York Jets | WR | RUSH LNG 6, offensive_snaps 5, special_teams_snaps 30 |
-| Trevor Graham | New York Jets, Tennessee Titans | WR | offensive_snaps 1, special_teams_snaps 41 |
-| Stefen Wisniewski | Oakland Raiders | C | offensive_snaps 282, special_teams_snaps 20 |
-| Carlos Rogers | Oakland Raiders | CB | defensive_snaps 247, special_teams_snaps 16 |
-| Neiko Thorpe | Oakland Raiders | CB | defensive_snaps 1, special_teams_snaps 82 |
-| T.J. Carrie | Oakland Raiders | CB | special_teams_snaps 26 |
-| Tarell Brown | Oakland Raiders | CB | defensive_snaps 247, special_teams_snaps 16 |
-| Justin Tuck | Oakland Raiders | DE | defensive_snaps 247, special_teams_snaps 16 |
-| Khalil Mack | Oakland Raiders | DE | defensive_snaps 247, special_teams_snaps 16 |
-| Antonio Smith | Oakland Raiders | DT | defensive_snaps 178, special_teams_snaps 16 |
-| Stacy McGee | Oakland Raiders | DT | defensive_snaps 2 |
-| Jamize Olawale | Oakland Raiders | FB | offensive_snaps 1, special_teams_snaps 82 |
-| Marcel Reece | Oakland Raiders | FB | REC LNG 18, offensive_snaps 68, special_teams_snaps 82 |
-| Charles Woodson | Oakland Raiders | FS | defensive_snaps 247, special_teams_snaps 16 |
-| Jonathan Dowling | Oakland Raiders | FS | special_teams_snaps 82 |
-| Keith McGill | Oakland Raiders | FS | special_teams_snaps 40 |
-| Sebastian Janikowski | Oakland Raiders | K | special_teams_snaps 42 |
-| LaMarr Woodley | Oakland Raiders | LB | INT YDS 16, defensive_snaps 247, special_teams_snaps 16 |
-| Jon Condo | Oakland Raiders | LS | special_teams_snaps 36 |
-| Kaluka Maiava | Oakland Raiders | MLB | defensive_snaps 122, special_teams_snaps 16 |
-| Miles Burris | Oakland Raiders | MLB | defensive_snaps 247, special_teams_snaps 16 |
-| Justin Ellis | Oakland Raiders | NT | defensive_snaps 23, special_teams_snaps 2 |
-| Pat Sims | Oakland Raiders | NT | defensive_snaps 224, special_teams_snaps 14 |
-| Benson Mayowa | Oakland Raiders | OLB | defensive_snaps 5 |
-| Marquette King | Oakland Raiders | P | special_teams_snaps 36 |
-| Derek Carr | Oakland Raiders | QB | RUSH LNG 30, offensive_snaps 280 |
-| Matt Schaub | Oakland Raiders | QB | offensive_snaps 2 |
-| Darren McFadden | Oakland Raiders | RB | REC LNG 52, offensive_snaps 282 |
-| Latavius Murray | Oakland Raiders | RB | REC LNG 15, offensive_snaps 20, special_teams_snaps 18 |
-| Taiwan Jones | Oakland Raiders | RB | offensive_snaps 6, special_teams_snaps 82 |
-| Tyvon Branch | Oakland Raiders | SS | defensive_snaps 247, special_teams_snaps 16 |
-| Usama Young | Oakland Raiders | SS | defensive_snaps 196, special_teams_snaps 82 |
-| Austin Howard | Oakland Raiders | T | offensive_snaps 282, special_teams_snaps 20 |
-| Donald Penn | Oakland Raiders | T | offensive_snaps 282, special_teams_snaps 20 |
-| Khalif Barnes | Oakland Raiders | T | offensive_snaps 282, special_teams_snaps 20 |
-| Matt McCants | Oakland Raiders | T | special_teams_snaps 20 |
-| Menelik Watson | Oakland Raiders | T | offensive_snaps 282, special_teams_snaps 20 |
-| Brian Leonhardt | Oakland Raiders | TE | special_teams_snaps 82 |
-| David Ausberry | Oakland Raiders | TE | offensive_snaps 282, special_teams_snaps 20 |
-| Mychal Rivera | Oakland Raiders | TE | offensive_snaps 83, special_teams_snaps 102 |
-| Andre Holmes | Oakland Raiders | WR | offensive_snaps 4, special_teams_snaps 82 |
-| Denarius Moore | Oakland Raiders | WR | offensive_snaps 125 |
-| James Jones | Oakland Raiders | WR | RUSH LNG 38, offensive_snaps 282 |
-| Rod Streater | Oakland Raiders | WR | RUSH LNG 6, offensive_snaps 282 |
-| Jason Kelce | Philadelphia Eagles | C | offensive_snaps 285, special_teams_snaps 19 |
-| Bradley Fletcher | Philadelphia Eagles | CB | defensive_snaps 352, special_teams_snaps 25 |
-| Brandon Boykin | Philadelphia Eagles | CB | defensive_snaps 129, special_teams_snaps 120 |
-| Cary Williams | Philadelphia Eagles | CB | defensive_snaps 352, special_teams_snaps 25 |
-| Dwayne Gratz | Philadelphia Eagles | CB | defensive_snaps 175, penalties 1, penalty_yards 17, special_teams_snaps 39 |
-| Nolan Carroll | Philadelphia Eagles | CB | defensive_snaps 4, special_teams_snaps 30 |
-| Brandon Bair | Philadelphia Eagles | DE | defensive_snaps 4 |
-| Cedric Thornton | Philadelphia Eagles | DE | defensive_snaps 352, special_teams_snaps 25 |
-| Fletcher Cox | Philadelphia Eagles | DE | defensive_snaps 352, special_teams_snaps 25 |
-| Vinny Curry | Philadelphia Eagles | DE | defensive_snaps 245, special_teams_snaps 25 |
-| Allen Barbre | Philadelphia Eagles | G | offensive_snaps 126, special_teams_snaps 26 |
-| Andrew Gardner | Philadelphia Eagles | G | offensive_snaps 38, special_teams_snaps 13 |
-| Evan Mathis | Philadelphia Eagles | G | offensive_snaps 243, special_teams_snaps 17 |
-| Luke Joeckel | Philadelphia Eagles | G | offensive_snaps 346, penalties 1, penalty_yards 10, special_teams_snaps 26 |
-| Matt Tobin | Philadelphia Eagles | G | special_teams_snaps 3 |
-| Todd Herremans | Philadelphia Eagles | G | offensive_snaps 346, special_teams_snaps 26 |
-| Casey Matthews | Philadelphia Eagles | ILB | defensive_snaps 3, special_teams_snaps 122 |
-| DeMeco Ryans | Philadelphia Eagles | ILB | defensive_snaps 352, penalties 1, penalty_yards 15, special_teams_snaps 25 |
-| Mychal Kendricks | Philadelphia Eagles | ILB | defensive_snaps 176, special_teams_snaps 25 |
-| Najee Goode | Philadelphia Eagles | ILB | defensive_snaps 1, special_teams_snaps 122 |
-| Cody Parkey | Philadelphia Eagles | K | special_teams_snaps 56 |
-| Jon Dorenbos | Philadelphia Eagles | LS | special_teams_snaps 59 |
-| Beau Allen | Philadelphia Eagles | NT | defensive_snaps 1 |
-| Bennie Logan | Philadelphia Eagles | NT | defensive_snaps 352, special_teams_snaps 25 |
-| Brandon Graham | Philadelphia Eagles | OLB | special_teams_snaps 122 |
-| Connor Barwin | Philadelphia Eagles | OLB | defensive_snaps 12 |
-| Marcus Smith | Philadelphia Eagles | OLB | special_teams_snaps 18 |
-| Trent Cole | Philadelphia Eagles | OLB | defensive_snaps 352, penalties 1, penalty_yards 15, special_teams_snaps 25 |
-| Donnie Jones | Philadelphia Eagles | P | special_teams_snaps 59 |
-| Nick Foles | Philadelphia Eagles | QB | RUSH LNG 27, offensive_snaps 346 |
-| Chris Polk | Philadelphia Eagles | RB | REC LNG 6, offensive_snaps 20, special_teams_snaps 122 |
-| Darren Sproles | Philadelphia Eagles | RB | REC LNG 24, offensive_snaps 132, special_teams_snaps 29 |
-| LeSean McCoy | Philadelphia Eagles | RB | REC LNG 38, offensive_snaps 288 |
-| Malcolm Jenkins | Philadelphia Eagles | S | defensive_snaps 352, special_teams_snaps 25 |
-| Nate Allen | Philadelphia Eagles | S | defensive_snaps 326, special_teams_snaps 55 |
-| Jason Peters | Philadelphia Eagles | T | fumbles_recovered_own 1, offensive_snaps 346, special_teams_snaps 26 |
-| Brent Celek | Philadelphia Eagles | TE | offensive_snaps 346, special_teams_snaps 26 |
-| James Casey | Philadelphia Eagles | TE | special_teams_snaps 122 |
-| Trey Burton | Philadelphia Eagles | TE | special_teams_snaps 39 |
-| Zach Ertz | Philadelphia Eagles | TE | offensive_snaps 102, special_teams_snaps 148 |
-| Ace Sanders | Philadelphia Eagles | WR | offensive_snaps 7, special_teams_snaps 77 |
-| Brad Smith | Philadelphia Eagles | WR | offensive_snaps 298 |
-| Jeff Maehl | Philadelphia Eagles | WR | offensive_snaps 37, special_teams_snaps 95 |
-| Jeremy Maclin | Philadelphia Eagles | WR | RUSH LNG 2, offensive_snaps 281 |
-| Jordan Matthews | Philadelphia Eagles | WR | offensive_snaps 182, special_teams_snaps 8 |
-| Josh Huff | Philadelphia Eagles | WR | offensive_snaps 29 |
-| Riley Cooper | Philadelphia Eagles | WR | offensive_snaps 22 |
-| Maurkice Pouncey | Pittsburgh Steelers | C | offensive_snaps 323, special_teams_snaps 28 |
-| Brice McCain | Pittsburgh Steelers | CB | defensive_snaps 2, special_teams_snaps 73 |
-| Cortez Allen | Pittsburgh Steelers | CB | defensive_snaps 326, special_teams_snaps 22 |
-| Ivan Taylor | Pittsburgh Steelers | CB | defensive_snaps 326, special_teams_snaps 22 |
-| William Gay | Pittsburgh Steelers | CB | defensive_snaps 109, special_teams_snaps 93 |
-| Brett Keisel | Pittsburgh Steelers | DE | defensive_snaps 2 |
-| Stephon Tuitt | Pittsburgh Steelers | DE | defensive_snaps 227, special_teams_snaps 22 |
-| Cameron Heyward | Pittsburgh Steelers | DT | defensive_snaps 324, special_teams_snaps 22 |
-| Will Johnson | Pittsburgh Steelers | FB | REC LNG 2, offensive_snaps 80, special_teams_snaps 93 |
-| Michael Mitchell | Pittsburgh Steelers | FS | defensive_snaps 253, special_teams_snaps 18 |
-| Will Allen | Pittsburgh Steelers | FS | defensive_snaps 224, special_teams_snaps 79 |
-| David DeCastro | Pittsburgh Steelers | G | offensive_snaps 326, special_teams_snaps 28 |
-| Ramon Foster | Pittsburgh Steelers | G | offensive_snaps 326, special_teams_snaps 28 |
-| Ryan Shazier | Pittsburgh Steelers | ILB | INT YDS 3, defensive_snaps 326, special_teams_snaps 22 |
-| Sean Spence | Pittsburgh Steelers | ILB | special_teams_snaps 7 |
-| Vince Williams | Pittsburgh Steelers | ILB | defensive_snaps 1, special_teams_snaps 93 |
-| Shaun Suisham | Pittsburgh Steelers | K | special_teams_snaps 60 |
-| Greg Warren | Pittsburgh Steelers | LS | special_teams_snaps 46 |
-| Cam Thomas | Pittsburgh Steelers | NT | defensive_snaps 326, special_teams_snaps 22 |
-| Daniel McCullers | Pittsburgh Steelers | NT | defensive_snaps 11 |
-| Steve McLendon | Pittsburgh Steelers | NT | defensive_snaps 326, special_teams_snaps 22 |
-| Arthur Moats | Pittsburgh Steelers | OLB | defensive_snaps 1, special_teams_snaps 83 |
-| Jarvis Jones | Pittsburgh Steelers | OLB | defensive_snaps 13 |
-| Jason Worilds | Pittsburgh Steelers | OLB | defensive_snaps 326, special_teams_snaps 22 |
-| Lawrence Timmons | Pittsburgh Steelers | OLB | defensive_snaps 162, special_teams_snaps 22 |
-| Terence Garvin | Pittsburgh Steelers | OLB | special_teams_snaps 86 |
-| Brad Wing | Pittsburgh Steelers | P | special_teams_snaps 46 |
-| Ben Roethlisberger | Pittsburgh Steelers | QB | RUSH LNG 18, offensive_snaps 326 |
-| Dri Archer | Pittsburgh Steelers | RB | offensive_snaps 6, special_teams_snaps 25 |
-| Le'Veon Bell | Pittsburgh Steelers | RB | REC LNG 55, offensive_snaps 326 |
-| LeGarrette Blount | Pittsburgh Steelers | RB | REC LNG 28, offensive_snaps 31, special_teams_snaps 70 |
-| Shamarko Thomas | Pittsburgh Steelers | SS | defensive_snaps 1, special_teams_snaps 20 |
-| Troy Polamalu | Pittsburgh Steelers | SS | defensive_snaps 326, special_teams_snaps 22 |
-| Kelvin Beachum | Pittsburgh Steelers | T | offensive_snaps 326, special_teams_snaps 28 |
-| Marcus Gilbert | Pittsburgh Steelers | T | offensive_snaps 326, special_teams_snaps 28 |
-| Mike Adams (PIT) | Pittsburgh Steelers | T | offensive_snaps 3, special_teams_snaps 28 |
-| Heath Miller | Pittsburgh Steelers | TE | offensive_snaps 326, special_teams_snaps 28 |
-| Matt Spaeth | Pittsburgh Steelers | TE | offensive_snaps 96, special_teams_snaps 121 |
-| Michael Palmer | Pittsburgh Steelers | TE | special_teams_snaps 26 |
-| Antonio Brown | Pittsburgh Steelers | WR | offensive_snaps 276, penalties 1, penalty_yards 10, special_teams_snaps 15 |
-| Darrius Heyward-Bey | Pittsburgh Steelers | WR | offensive_snaps 1, special_teams_snaps 23 |
-| Justin Brown | Pittsburgh Steelers | WR | offensive_snaps 172 |
-| Lance Moore | Pittsburgh Steelers | WR | offensive_snaps 4, special_teams_snaps 54 |
-| Markus Wheaton | Pittsburgh Steelers | WR | offensive_snaps 326 |
-| Martavis Bryant | Pittsburgh Steelers | WR | offensive_snaps 24, special_teams_snaps 8 |
-| Nick Hardwick | San Diego Chargers | C | offensive_snaps 316, penalties 1, penalty_yards 5, special_teams_snaps 19 |
-| Brandon Flowers | San Diego Chargers | CB | defensive_snaps 322, penalties 3, penalty_yards 14, special_teams_snaps 21 |
-| Jason Verrett | San Diego Chargers | CB | defensive_snaps 258, penalties 2, penalty_yards 11, special_teams_snaps 87 |
-| Richard Marshall | San Diego Chargers | CB | defensive_snaps 4, special_teams_snaps 88 |
-| Shareece Wright | San Diego Chargers | CB | defensive_snaps 309, special_teams_snaps 21 |
-| Kendall Reyes | San Diego Chargers | DE | defensive_snaps 322, special_teams_snaps 21 |
-| Corey Liuget | San Diego Chargers | DT | defensive_snaps 322, special_teams_snaps 21 |
-| Ricardo Mathews | San Diego Chargers | DT | defensive_snaps 1 |
-| Ryan Carrethers | San Diego Chargers | DT | defensive_snaps 4 |
-| Sean Lissemore | San Diego Chargers | DT | defensive_snaps 322, special_teams_snaps 21 |
-| Tenny Palepoi | San Diego Chargers | DT | defensive_snaps 44, special_teams_snaps 3 |
-| Darrell Stuckey | San Diego Chargers | FS | defensive_snaps 13, special_teams_snaps 88 |
-| Eric Weddle | San Diego Chargers | FS | defensive_snaps 322, special_teams_snaps 21 |
-| Chad Rinehart | San Diego Chargers | G | offensive_snaps 316, special_teams_snaps 19 |
-| D.J. Fluker | San Diego Chargers | G | offensive_snaps 316, penalties 1, penalty_yards 5, special_teams_snaps 19 |
-| Johnnie Troutman | San Diego Chargers | G | offensive_snaps 316, special_teams_snaps 19 |
-| Donald Butler | San Diego Chargers | ILB | defensive_snaps 160, penalties 1, penalty_yards 11, special_teams_snaps 21 |
-| Kavell Conner | San Diego Chargers | ILB | defensive_snaps 2, special_teams_snaps 88 |
-| Manti Te'o | San Diego Chargers | ILB | defensive_snaps 322, special_teams_snaps 21 |
-| Reggie Walker | San Diego Chargers | ILB | defensive_snaps 2, special_teams_snaps 88 |
-| Nick Novak | San Diego Chargers | K | special_teams_snaps 43 |
-| Mike Windt | San Diego Chargers | LS | special_teams_snaps 41 |
-| Jarret Johnson | San Diego Chargers | OLB | defensive_snaps 4 |
-| Melvin Ingram | San Diego Chargers | OLB | defensive_snaps 322, special_teams_snaps 21 |
-| Tourek Williams | San Diego Chargers | OLB | special_teams_snaps 88 |
-| Mike Scifres | San Diego Chargers | P | special_teams_snaps 41 |
-| Philip Rivers | San Diego Chargers | QB | RUSH LNG 10, fumbles_recovered_own 1, offensive_snaps 316 |
-| Branden Oliver | San Diego Chargers | RB | offensive_snaps 3, special_teams_snaps 38 |
-| Danny Woodhead | San Diego Chargers | RB | REC LNG 32, offensive_snaps 178, special_teams_snaps 50 |
-| Donald Brown | San Diego Chargers | RB | REC LNG 5, offensive_snaps 41, special_teams_snaps 23 |
-| Ryan Mathews | San Diego Chargers | RB | REC LNG 27, offensive_snaps 188 |
-| Jahleel Addae | San Diego Chargers | SS | special_teams_snaps 11 |
-| Marcus Gilchrist | San Diego Chargers | SS | defensive_snaps 322, special_teams_snaps 21 |
-| King Dunlap | San Diego Chargers | T | offensive_snaps 316, special_teams_snaps 19 |
-| Willie Smith | San Diego Chargers | T | special_teams_snaps 19 |
-| Antonio Gates | San Diego Chargers | TE | offensive_snaps 316, special_teams_snaps 19 |
-| David Johnson | San Diego Chargers | TE | offensive_snaps 2 |
-| John Phillips | San Diego Chargers | TE | special_teams_snaps 37 |
-| Ladarius Green | San Diego Chargers | TE | offensive_snaps 94, special_teams_snaps 107 |
-| Dontrelle Inman | San Diego Chargers | WR | offensive_snaps 2 |
-| Eddie Royal | San Diego Chargers | WR | RUSH LNG 15, offensive_snaps 140, special_teams_snaps 19 |
-| Keenan Allen | San Diego Chargers | WR | RUSH LNG 8, offensive_snaps 316 |
-| Malcom Floyd | San Diego Chargers | WR | offensive_snaps 316 |
-| Seyi Ajirotutu | San Diego Chargers | WR | offensive_snaps 7, special_teams_snaps 88 |
-| Daniel Kilgore | San Francisco 49ers | C | offensive_snaps 324, special_teams_snaps 23 |
-| Joe Looney | San Francisco 49ers | C | offensive_snaps 324, special_teams_snaps 23 |
-| Chris Cook | San Francisco 49ers | CB | defensive_snaps 3, special_teams_snaps 84 |
-| Chris Culliver | San Francisco 49ers | CB | defensive_snaps 324, special_teams_snaps 28 |
-| Perrish Cox | San Francisco 49ers | CB | defensive_snaps 257, special_teams_snaps 84 |
-| Tramaine Brock | San Francisco 49ers | CB | defensive_snaps 324, special_teams_snaps 28 |
-| Cornellius Carradine | San Francisco 49ers | DE | defensive_snaps 1 |
-| Demarcus Dobbs | San Francisco 49ers | DE | defensive_snaps 90, special_teams_snaps 9 |
-| Justin Smith | San Francisco 49ers | DE | defensive_snaps 324, special_teams_snaps 28 |
-| Ray McDonald | San Francisco 49ers | DE | defensive_snaps 198, special_teams_snaps 19 |
-| Tony Jerod-Eddie | San Francisco 49ers | DT | defensive_snaps 262, penalties 1, penalty_yards 15, special_teams_snaps 28 |
-| Bruce Miller | San Francisco 49ers | FB | REC LNG 17, offensive_snaps 51, special_teams_snaps 55 |
-| Eric Reid | San Francisco 49ers | FS | defensive_snaps 324, special_teams_snaps 28 |
-| Jimmie Ward | San Francisco 49ers | FS | defensive_snaps 3, special_teams_snaps 84 |
-| Dillon Farrell | San Francisco 49ers | G | special_teams_snaps 23 |
-| Mike Iupati | San Francisco 49ers | G | offensive_snaps 324, special_teams_snaps 23 |
-| Chris Borland | San Francisco 49ers | ILB | defensive_snaps 43, penalties 1, penalty_yards 5, special_teams_snaps 69 |
-| Michael Wilhoite | San Francisco 49ers | ILB | defensive_snaps 97, special_teams_snaps 8 |
-| Nick Moody | San Francisco 49ers | ILB | defensive_snaps 2, special_teams_snaps 64 |
-| Patrick Willis | San Francisco 49ers | ILB | defensive_snaps 237, special_teams_snaps 21 |
-| Phil Dawson | San Francisco 49ers | K | special_teams_snaps 43 |
-| Kyle Nelson | San Francisco 49ers | LS | special_teams_snaps 42 |
-| Ian Williams | San Francisco 49ers | NT | defensive_snaps 324, special_teams_snaps 28 |
-| Quinton Dial | San Francisco 49ers | NT | defensive_snaps 3 |
-| Aaron Lynch | San Francisco 49ers | OLB | special_teams_snaps 84 |
-| Ahmad Brooks | San Francisco 49ers | OLB | defensive_snaps 209, penalties 1, penalty_yards 4, special_teams_snaps 28 |
-| Corey Lemonier | San Francisco 49ers | OLB | special_teams_snaps 16 |
-| Dan Skuta | San Francisco 49ers | OLB | defensive_snaps 227, special_teams_snaps 20 |
-| Andy Lee | San Francisco 49ers | P | special_teams_snaps 42 |
-| Colin Kaepernick | San Francisco 49ers | QB | RUSH LNG 17, offensive_snaps 324, penalties 1, penalty_yards 5 |
-| Carlos Hyde | San Francisco 49ers | RB | REC LNG 13, offensive_snaps 48, special_teams_snaps 65 |
-| Frank Gore | San Francisco 49ers | RB | REC LNG 74, offensive_snaps 324 |
-| LaMichael James | San Francisco 49ers | RB | offensive_snaps 4, special_teams_snaps 6 |
-| Antoine Bethea | San Francisco 49ers | SS | defensive_snaps 324, penalties 1, penalty_yards 6, special_teams_snaps 28 |
-| Craig Dahl | San Francisco 49ers | SS | defensive_snaps 1, special_teams_snaps 9 |
-| Anthony Davis | San Francisco 49ers | T | offensive_snaps 250, special_teams_snaps 17 |
-| Joe Staley | San Francisco 49ers | T | offensive_snaps 324, special_teams_snaps 23 |
-| Jonathan Martin | San Francisco 49ers | T | offensive_snaps 74, special_teams_snaps 6 |
-| Derek Carrier | San Francisco 49ers | TE | special_teams_snaps 21 |
-| Vance McDonald | San Francisco 49ers | TE | offensive_snaps 95, penalties 1, penalty_yards 10, special_teams_snaps 107 |
-| Vernon Davis | San Francisco 49ers | TE | offensive_snaps 324, special_teams_snaps 23 |
-| Anquan Boldin | San Francisco 49ers | WR | RUSH LNG 9, offensive_snaps 324 |
-| Brandon Lloyd | San Francisco 49ers | WR | offensive_snaps 11, special_teams_snaps 84 |
-| Bruce Ellington | San Francisco 49ers | WR | offensive_snaps 2, special_teams_snaps 45 |
-| Michael Crabtree | San Francisco 49ers | WR | offensive_snaps 324 |
-| Quinton Patton | San Francisco 49ers | WR | special_teams_snaps 2 |
-| Steve Johnson | San Francisco 49ers | WR | offensive_snaps 145 |
-| Justin Britt | Seattle Seahawks | C | offensive_snaps 273, special_teams_snaps 20 |
-| Max Unger | Seattle Seahawks | C | offensive_snaps 273, special_teams_snaps 20 |
-| Byron Maxwell | Seattle Seahawks | CB | defensive_snaps 271, special_teams_snaps 18 |
-| Jeremy Lane | Seattle Seahawks | CB | defensive_snaps 215, penalties 1, penalty_yards 9, special_teams_snaps 84 |
-| Richard Sherman | Seattle Seahawks | CB | defensive_snaps 271, penalties 1, penalty_yards 8, special_teams_snaps 18 |
-| Cliff Avril | Seattle Seahawks | DE | INT YDS 35, defensive_snaps 271, special_teams_snaps 18 |
-| Michael Bennett | Seattle Seahawks | DE | defensive_snaps 271, special_teams_snaps 18 |
-| Jordan Hill | Seattle Seahawks | DT | defensive_snaps 1 |
-| Kevin Williams | Seattle Seahawks | DT | defensive_snaps 5 |
-| Tony McDaniel | Seattle Seahawks | DT | defensive_snaps 187, special_teams_snaps 18 |
-| Derrick Coleman | Seattle Seahawks | FB | REC LNG 18, offensive_snaps 68, special_teams_snaps 84 |
-| DeShawn Shead | Seattle Seahawks | FS | defensive_snaps 1, special_teams_snaps 43 |
-| Earl Thomas | Seattle Seahawks | FS | FUM 1, defensive_snaps 271, muffs 1, special_teams_snaps 40 |
-| Alvin Bailey | Seattle Seahawks | G | special_teams_snaps 20 |
-| J.R. Sweezy | Seattle Seahawks | G | offensive_snaps 273, special_teams_snaps 20 |
-| James Carpenter | Seattle Seahawks | G | offensive_snaps 273, special_teams_snaps 20 |
-| Stephen Hauschka | Seattle Seahawks | K | special_teams_snaps 40 |
-| O'Brien Schofield | Seattle Seahawks | LB | defensive_snaps 1, special_teams_snaps 84 |
-| Clint Gresham | Seattle Seahawks | LS | special_teams_snaps 41 |
-| Bobby Wagner | Seattle Seahawks | MLB | defensive_snaps 178, special_teams_snaps 18 |
-| Brock Coyle | Seattle Seahawks | MLB | defensive_snaps 4, special_teams_snaps 50 |
-| Brandon Mebane | Seattle Seahawks | NT | defensive_snaps 271, special_teams_snaps 18 |
-| Bruce Irvin | Seattle Seahawks | OLB | defensive_snaps 47, special_teams_snaps 7 |
-| K.J. Wright | Seattle Seahawks | OLB | defensive_snaps 271, fumble_return_touchdowns 1, special_teams_snaps 18 |
-| Malcolm Smith | Seattle Seahawks | OLB | defensive_snaps 185, special_teams_snaps 11 |
-| Michael Morgan | Seattle Seahawks | OLB | special_teams_snaps 63 |
-| Jon Ryan | Seattle Seahawks | P | special_teams_snaps 41 |
-| Russell Wilson | Seattle Seahawks | QB | RUSH LNG 23, fumbles_recovered_own 1, offensive_snaps 273 |
-| Christine Michael | Seattle Seahawks | RB | offensive_snaps 4, special_teams_snaps 7 |
-| Marshawn Lynch | Seattle Seahawks | RB | REC LNG 25, offensive_snaps 273 |
-| Robert Turbin | Seattle Seahawks | RB | REC LNG 68, offensive_snaps 25, special_teams_snaps 74 |
-| Jeron Johnson | Seattle Seahawks | SS | defensive_snaps 3, special_teams_snaps 84 |
-| Kam Chancellor | Seattle Seahawks | SS | defensive_snaps 271, penalties 2, penalty_yards 12, special_teams_snaps 18 |
-| Russell Okung | Seattle Seahawks | T | offensive_snaps 273, special_teams_snaps 20 |
-| Cooper Helfet | Seattle Seahawks | TE | offensive_snaps 1 |
-| Greg Scruggs | Seattle Seahawks | TE | offensive_snaps 1, special_teams_snaps 49 |
-| Luke Willson | Seattle Seahawks | TE | offensive_snaps 79, special_teams_snaps 104 |
-| Zach Miller | Seattle Seahawks | TE | offensive_snaps 273, special_teams_snaps 20 |
-| Doug Baldwin | Seattle Seahawks | WR | offensive_snaps 273 |
-| Jermaine Kearse | Seattle Seahawks | WR | offensive_snaps 121 |
-| Kevin Norwood | Seattle Seahawks | WR | offensive_snaps 1 |
-| Paul Richardson | Seattle Seahawks | WR | offensive_snaps 1, special_teams_snaps 7 |
-| Percy Harvin | Seattle Seahawks | WR | RUSH LNG 2, offensive_snaps 273, special_teams_snaps 21 |
-| Ricardo Lockette | Seattle Seahawks | WR | RUSH LNG 1, offensive_snaps 12, special_teams_snaps 84 |
-| Scott Wells | St. Louis Rams | C | offensive_snaps 266, penalties 1, penalty_yards 9, special_teams_snaps 16 |
-| Tim Barnes | St. Louis Rams | C | special_teams_snaps 16 |
-| Brandon McGee | St. Louis Rams | CB | defensive_snaps 248, special_teams_snaps 44 |
-| E.J. Gaines | St. Louis Rams | CB | special_teams_snaps 20 |
-| Janoris Jenkins | St. Louis Rams | CB | defensive_snaps 271, special_teams_snaps 18 |
-| Alex Carrington | St. Louis Rams | DE | defensive_snaps 212, special_teams_snaps 18 |
-| Chris Long | St. Louis Rams | DE | defensive_snaps 271, penalties 1, penalty_yards 5, special_teams_snaps 18 |
-| Eugene Sims | St. Louis Rams | DE | defensive_snaps 1 |
-| Kendall Langford | St. Louis Rams | DE | defensive_snaps 271, special_teams_snaps 18 |
-| Michael Brockers | St. Louis Rams | DE | defensive_snaps 191, special_teams_snaps 14 |
-| William Hayes | St. Louis Rams | DE | defensive_snaps 57, special_teams_snaps 4 |
-| Ethan Westbrooks | St. Louis Rams | DT | defensive_snaps 3 |
-| Rodney McLeod | St. Louis Rams | FS | defensive_snaps 174, special_teams_snaps 12 |
-| Davin Joseph | St. Louis Rams | G | offensive_snaps 266, special_teams_snaps 16 |
-| Alec Ogletree | St. Louis Rams | ILB | INT YDS 24, defensive_snaps 271, special_teams_snaps 18 |
-| Greg Zuerlein | St. Louis Rams | K | special_teams_snaps 35 |
-| Jake McQuaide | St. Louis Rams | LS | special_teams_snaps 40 |
-| Daren Bates | St. Louis Rams | MLB | special_teams_snaps 91 |
-| James Laurinaitis | St. Louis Rams | MLB | defensive_snaps 202, special_teams_snaps 14 |
-| Jo-Lonn Dunbar | St. Louis Rams | OLB | INT YDS 15, defensive_snaps 170, special_teams_snaps 18 |
-| Ray-Ray Armstrong | St. Louis Rams | OLB | defensive_snaps 5, special_teams_snaps 60 |
-| Robert Quinn | St. Louis Rams | OLB | defensive_snaps 37, special_teams_snaps 7 |
-| Johnny Hekker | St. Louis Rams | P | special_teams_snaps 40 |
-| Shaun Hill | St. Louis Rams | QB | RUSH LNG 24, offensive_snaps 266, penalties 1, penalty_yards 2 |
-| Benny Cunningham | St. Louis Rams | RB | offensive_snaps 12, special_teams_snaps 21 |
-| Chase Reynolds | St. Louis Rams | RB | REC LNG 14, offensive_snaps 89, special_teams_snaps 87 |
-| Tre Mason | St. Louis Rams | RB | special_teams_snaps 64 |
-| Trey Watts | St. Louis Rams | RB | special_teams_snaps 15 |
-| Zac Stacy | St. Louis Rams | RB | REC LNG 55, offensive_snaps 249 |
-| Maurice Alexander | St. Louis Rams | SS | defensive_snaps 258, special_teams_snaps 42 |
-| T.J. McDonald | St. Louis Rams | SS | defensive_snaps 271, penalties 1, penalty_yards 15, special_teams_snaps 18 |
-| Greg Robinson | St. Louis Rams | T | offensive_snaps 266, special_teams_snaps 16 |
-| Jake Long | St. Louis Rams | T | offensive_snaps 266, special_teams_snaps 16 |
-| Joe Barksdale | St. Louis Rams | T | offensive_snaps 266, penalties 2, penalty_yards 15, special_teams_snaps 16 |
-| Alex Bayer | St. Louis Rams | TE | offensive_snaps 1, special_teams_snaps 84 |
-| Cory Harkey | St. Louis Rams | TE | special_teams_snaps 91 |
-| Jared Cook | St. Louis Rams | TE | offensive_snaps 78, penalties 1, penalty_yards 10, special_teams_snaps 107 |
-| Lance Kendricks | St. Louis Rams | TE | offensive_snaps 266, penalties 1, penalty_yards 10, special_teams_snaps 16 |
-| Austin Pettis | St. Louis Rams | WR | RUSH LNG 2, offensive_snaps 118 |
-| Brian Quick | St. Louis Rams | WR | offensive_snaps 5, special_teams_snaps 91 |
-| Chris Givens | St. Louis Rams | WR | special_teams_snaps 91 |
-| Kenny Britt | St. Louis Rams | WR | offensive_snaps 266 |
-| Stedman Bailey | St. Louis Rams | WR | special_teams_snaps 9 |
-| Tavon Austin | St. Louis Rams | WR | RUSH LNG 6, offensive_snaps 266, special_teams_snaps 27 |
-| Evan Smith | Tampa Bay Buccaneers | C | offensive_snaps 328, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Johnthan Banks | Tampa Bay Buccaneers | CB | defensive_snaps 305, special_teams_snaps 41 |
-| Leonard Johnson | Tampa Bay Buccaneers | CB | defensive_snaps 308, special_teams_snaps 36 |
-| Mike Jenkins | Tampa Bay Buccaneers | CB | defensive_snaps 321, special_teams_snaps 22 |
-| Adrian Clayborn | Tampa Bay Buccaneers | DE | defensive_snaps 321, penalties 1, penalty_yards 15, special_teams_snaps 22 |
-| Michael Johnson | Tampa Bay Buccaneers | DE | defensive_snaps 196, special_teams_snaps 15 |
-| William Gholston | Tampa Bay Buccaneers | DE | defensive_snaps 1 |
-| Clinton McDonald | Tampa Bay Buccaneers | DT | defensive_snaps 260, special_teams_snaps 22 |
-| Da'Quan Bowers | Tampa Bay Buccaneers | DT | defensive_snaps 88, special_teams_snaps 7 |
-| Gerald McCoy | Tampa Bay Buccaneers | DT | defensive_snaps 321, special_teams_snaps 22 |
-| Jorvorskie Lane | Tampa Bay Buccaneers | FB | REC LNG 15, offensive_snaps 79, penalties 1, penalty_yards 10, special_teams_snaps 88 |
-| Dashon Goldson | Tampa Bay Buccaneers | FS | defensive_snaps 78, special_teams_snaps 6 |
-| Keith Tandy | Tampa Bay Buccaneers | FS | defensive_snaps 5, special_teams_snaps 88 |
-| Kevin Pamphile | Tampa Bay Buccaneers | G | special_teams_snaps 23 |
-| Logan Mankins | Tampa Bay Buccaneers | G | offensive_snaps 328, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Patrick Omameh | Tampa Bay Buccaneers | G | offensive_snaps 328, special_teams_snaps 23 |
-| Lavonte David | Tampa Bay Buccaneers | ILB | defensive_snaps 321, penalties 1, penalty_yards 5, special_teams_snaps 22 |
-| Patrick Murray | Tampa Bay Buccaneers | K | special_teams_snaps 50 |
-| Andrew DePaola | Tampa Bay Buccaneers | LS | special_teams_snaps 44 |
-| Dane Fletcher | Tampa Bay Buccaneers | MLB | defensive_snaps 41, penalties 1, penalty_yards 5, special_teams_snaps 5 |
-| Mason Foster | Tampa Bay Buccaneers | MLB | defensive_snaps 124, special_teams_snaps 17 |
-| Danny Lansanah | Tampa Bay Buccaneers | OLB | defensive_snaps 7, special_teams_snaps 78 |
-| Jonathan Casillas | Tampa Bay Buccaneers | OLB | defensive_snaps 321, special_teams_snaps 22 |
-| Scott Solomon | Tampa Bay Buccaneers | OLB | defensive_snaps 1, special_teams_snaps 88 |
-| Steven Means | Tampa Bay Buccaneers | OLB | special_teams_snaps 70 |
-| Michael Koenen | Tampa Bay Buccaneers | P | special_teams_snaps 44 |
-| Josh McCown | Tampa Bay Buccaneers | QB | RUSH LNG 22, offensive_snaps 328 |
-| Bobby Rainey | Tampa Bay Buccaneers | RB | REC LNG 22, offensive_snaps 32, penalties 1, penalty_yards 5, special_teams_snaps 15 |
-| Doug Martin | Tampa Bay Buccaneers | RB | REC LNG 18, offensive_snaps 328 |
-| Mike James | Tampa Bay Buccaneers | RB | special_teams_snaps 8 |
-| Bradley McDougald | Tampa Bay Buccaneers | SS | defensive_snaps 206, special_teams_snaps 58 |
-| Major Wright | Tampa Bay Buccaneers | SS | special_teams_snaps 82 |
-| Mark Barron | Tampa Bay Buccaneers | SS | defensive_snaps 321, penalties 1, penalty_yards 21, special_teams_snaps 22 |
-| Anthony Collins | Tampa Bay Buccaneers | T | offensive_snaps 328, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Demar Dotson | Tampa Bay Buccaneers | T | offensive_snaps 328, special_teams_snaps 23 |
-| Austin Seferian-Jenkins | Tampa Bay Buccaneers | TE | offensive_snaps 97, special_teams_snaps 111 |
-| Brandon Myers | Tampa Bay Buccaneers | TE | offensive_snaps 328, special_teams_snaps 23 |
-| Luke Stocker | Tampa Bay Buccaneers | TE | special_teams_snaps 57 |
-| Chris Owusu | Tampa Bay Buccaneers | WR | offensive_snaps 115, special_teams_snaps 20 |
-| Mike Evans | Tampa Bay Buccaneers | WR | offensive_snaps 328 |
-| Robert Herron | Tampa Bay Buccaneers | WR | offensive_snaps 1, special_teams_snaps 18 |
-| Russell Shepard | Tampa Bay Buccaneers | WR | offensive_snaps 34, special_teams_snaps 70 |
-| Solomon Patton | Tampa Bay Buccaneers | WR | offensive_snaps 1, special_teams_snaps 17 |
-| Vincent Jackson | Tampa Bay Buccaneers | WR | RUSH LNG 8, offensive_snaps 328, penalties 1, penalty_yards 10 |
-| Brian Schwenke | Tennessee Titans | C | offensive_snaps 323, penalties 2, penalty_yards 10, special_teams_snaps 23 |
-| Blidi Wreh-Wilson | Tennessee Titans | CB | defensive_snaps 336, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Brandon Harris | Tennessee Titans | CB | defensive_snaps 65, special_teams_snaps 98 |
-| Jason McCourty | Tennessee Titans | CB | defensive_snaps 321, special_teams_snaps 23 |
-| DaQuan Jones | Tennessee Titans | DE | defensive_snaps 2 |
-| Ropati Pitoitua | Tennessee Titans | DE | defensive_snaps 336, penalties 1, penalty_yards 5, special_teams_snaps 23 |
-| Jurrell Casey | Tennessee Titans | DT | defensive_snaps 336, special_teams_snaps 23 |
-| Karl Klug | Tennessee Titans | DT | defensive_snaps 2 |
-| Mike Martin | Tennessee Titans | DT | defensive_snaps 232, special_teams_snaps 23 |
-| George Wilson | Tennessee Titans | FS | defensive_snaps 217, special_teams_snaps 71 |
-| Michael Griffin | Tennessee Titans | FS | defensive_snaps 336, special_teams_snaps 23 |
-| Andy Levitre | Tennessee Titans | G | offensive_snaps 323, special_teams_snaps 23 |
-| Chance Warmack | Tennessee Titans | G | offensive_snaps 323, penalties 2, penalty_yards 14, special_teams_snaps 23 |
-| Avery Williamson | Tennessee Titans | ILB | defensive_snaps 1, special_teams_snaps 98 |
-| Wesley Woodyard | Tennessee Titans | ILB | defensive_snaps 336, special_teams_snaps 23 |
-| Zach Brown | Tennessee Titans | ILB | defensive_snaps 336, special_teams_snaps 23 |
-| Zaviar Gooden | Tennessee Titans | ILB | defensive_snaps 2, special_teams_snaps 98 |
-| Ryan Succop | Tennessee Titans | K | special_teams_snaps 49 |
-| Beau Brinkley | Tennessee Titans | LS | special_teams_snaps 45 |
-| Al Woods | Tennessee Titans | NT | defensive_snaps 4 |
-| Sammie Lee Hill | Tennessee Titans | NT | defensive_snaps 336, special_teams_snaps 23 |
-| Derrick Morgan | Tennessee Titans | OLB | defensive_snaps 166, special_teams_snaps 23 |
-| Kamerion Wimbley | Tennessee Titans | OLB | defensive_snaps 15 |
-| Brett Kern | Tennessee Titans | P | special_teams_snaps 45 |
-| Charlie Whitehurst | Tennessee Titans | QB | RUSH LNG 18, offensive_snaps 61 |
-| Jake Locker | Tennessee Titans | QB | RUSH LNG 14, offensive_snaps 262 |
-| Bishop Sankey | Tennessee Titans | RB | REC LNG 9, offensive_snaps 6, penalties 1, penalty_yards 5, special_teams_snaps 98 |
-| Denard Robinson | Tennessee Titans | RB | REC LNG 18, offensive_snaps 87, special_teams_snaps 98 |
-| Dexter McCluster | Tennessee Titans | RB | special_teams_snaps 25 |
-| Leon Washington | Tennessee Titans | RB | REC LNG 33, offensive_snaps 2, special_teams_snaps 25 |
-| Shonn Greene | Tennessee Titans | RB | REC LNG 16, offensive_snaps 323 |
-| Bernard Pollard | Tennessee Titans | SS | defensive_snaps 336, special_teams_snaps 23 |
-| Daimion Stafford | Tennessee Titans | SS | special_teams_snaps 26 |
-| Michael Oher | Tennessee Titans | T | offensive_snaps 323, special_teams_snaps 23 |
-| Michael Roos | Tennessee Titans | T | offensive_snaps 323, special_teams_snaps 23 |
-| Taylor Lewan | Tennessee Titans | T | special_teams_snaps 23 |
-| Craig Stevens | Tennessee Titans | TE | offensive_snaps 94, special_teams_snaps 120 |
-| Delanie Walker | Tennessee Titans | TE | offensive_snaps 323, penalties 1, penalty_yards 10, special_teams_snaps 23 |
-| Jackie Battle | Tennessee Titans | TE | offensive_snaps 2, special_teams_snaps 98 |
-| Taylor Thompson | Tennessee Titans | TE | special_teams_snaps 1 |
-| Derek Hagan | Tennessee Titans | WR | RUSH LNG 11, offensive_snaps 9, special_teams_snaps 98 |
-| Justin Hunter | Tennessee Titans | WR | offensive_snaps 143 |
-| Kendall Wright | Tennessee Titans | WR | RUSH LNG 15, offensive_snaps 323, penalties 1, penalty_yards 9 |
-| Kris Durham | Tennessee Titans | WR | special_teams_snaps 11 |
-| Nate Washington | Tennessee Titans | WR | RUSH LNG 12, offensive_snaps 323 |
-| Kory Lichtensteiger | Washington Redskins | C | offensive_snaps 342, special_teams_snaps 21 |
-| Bashaud Breeland | Washington Redskins | CB | defensive_snaps 312, special_teams_snaps 41 |
-| David Amerson | Washington Redskins | CB | defensive_snaps 323, special_teams_snaps 29 |
-| E.J. Biggers | Washington Redskins | CB | defensive_snaps 2, special_teams_snaps 104 |
-| Jarvis Jenkins | Washington Redskins | DE | defensive_snaps 1 |
-| Jason Hatcher | Washington Redskins | DE | defensive_snaps 224, special_teams_snaps 29 |
-| Ryan Kerrigan | Washington Redskins | DE | defensive_snaps 323, special_teams_snaps 29 |
-| Trent Murphy | Washington Redskins | DE | defensive_snaps 1 |
-| Chris Baker | Washington Redskins | DT | defensive_snaps 323, special_teams_snaps 29 |
-| Darrel Young | Washington Redskins | FB | REC LNG 20, offensive_snaps 80, special_teams_snaps 101 |
-| DeAngelo Hall | Washington Redskins | FS | defensive_snaps 323, special_teams_snaps 29 |
-| Ryan Clark | Washington Redskins | FS | defensive_snaps 323, penalties 1, penalty_yards 5, special_teams_snaps 29 |
-| Trenton Robinson | Washington Redskins | FS | special_teams_snaps 104 |
-| Chris Chester | Washington Redskins | G | offensive_snaps 342, penalties 1, penalty_yards 5, special_teams_snaps 21 |
-| Josh LeRibeus | Washington Redskins | G | special_teams_snaps 4 |
-| Shawn Lauvao | Washington Redskins | G | offensive_snaps 342, penalties 2, penalty_yards 10, special_teams_snaps 21 |
-| Adam Hayward | Washington Redskins | ILB | defensive_snaps 6, special_teams_snaps 63 |
-| Perry Riley | Washington Redskins | ILB | defensive_snaps 323, special_teams_snaps 29 |
-| Kai Forbath | Washington Redskins | K | special_teams_snaps 45 |
-| Nick Sundberg | Washington Redskins | LS | special_teams_snaps 48 |
-| Akeem Jordan | Washington Redskins | MLB | special_teams_snaps 18 |
-| Keenan Robinson | Washington Redskins | MLB | defensive_snaps 323, special_teams_snaps 29 |
-| Will Compton | Washington Redskins | MLB | defensive_snaps 62, special_teams_snaps 14 |
-| Barry Cofield | Washington Redskins | NT | defensive_snaps 323, special_teams_snaps 29 |
-| Kedric Golston | Washington Redskins | NT | defensive_snaps 4 |
-| Brian Orakpo | Washington Redskins | OLB | defensive_snaps 2 |
-| Gabe Miller | Washington Redskins | OLB | defensive_snaps 104, special_teams_snaps 17 |
-| Tress Way | Washington Redskins | P | special_teams_snaps 48 |
-| Colt McCoy | Washington Redskins | QB | RUSH LNG 3, offensive_snaps 69 |
-| Robert Griffin | Washington Redskins | QB | RUSH LNG 7, offensive_snaps 273 |
-| Alfred Morris | Washington Redskins | RB | REC LNG 59, offensive_snaps 342 |
-| Roy Helu | Washington Redskins | RB | REC LNG 24, offensive_snaps 39, special_teams_snaps 104 |
-| Silas Redd | Washington Redskins | RB | offensive_snaps 3, special_teams_snaps 44 |
-| Duke Ihenacho | Washington Redskins | SS | defensive_snaps 1, special_teams_snaps 55 |
-| Josh Evans | Washington Redskins | SS | defensive_snaps 268, special_teams_snaps 92 |
-| Morgan Moses | Washington Redskins | T | offensive_snaps 69, special_teams_snaps 21 |
-| Trent Williams | Washington Redskins | T | offensive_snaps 342, special_teams_snaps 21 |
-| Tyler Polumbus | Washington Redskins | T | offensive_snaps 273, special_teams_snaps 17 |
-| Jordan Reed | Washington Redskins | TE | offensive_snaps 227, special_teams_snaps 14 |
-| Logan Paulsen | Washington Redskins | TE | offensive_snaps 182, special_teams_snaps 94 |
-| Niles Paul | Washington Redskins | TE | offensive_snaps 35, penalties 1, penalty_yards 5, special_teams_snaps 109 |
-| Andre Roberts | Washington Redskins | WR | RUSH LNG 1, offensive_snaps 152, special_teams_snaps 53 |
-| DeSean Jackson | Washington Redskins | WR | offensive_snaps 342 |
-| Pierre Garcon | Washington Redskins | WR | RUSH LNG 4, offensive_snaps 342 |
-| Ryan Grant | Washington Redskins | WR | offensive_snaps 3, special_teams_snaps 13 |
-| Santana Moss | Washington Redskins | WR | offensive_snaps 13, special_teams_snaps 104 |
+| Lyle Sendlein | Arizona Cardinals | C | OFF SNAPS 251, ST SNAPS 18 |
+| Antonio Cromartie | Arizona Cardinals | CB | DEF SNAPS 227, ST SNAPS 16 |
+| Jerraud Powers | Arizona Cardinals | CB | DEF SNAPS 130, ST SNAPS 49 |
+| Justin Bethel | Arizona Cardinals | CB | DEF SNAPS 1, ST SNAPS 33 |
+| Patrick Peterson | Arizona Cardinals | CB | DEF SNAPS 227, ST SNAPS 16 |
+| Alex Okafor | Arizona Cardinals | DE | DEF SNAPS 1 |
+| Calais Campbell | Arizona Cardinals | DE | DEF SNAPS 227, ST SNAPS 16 |
+| Matt Shaughnessy | Arizona Cardinals | DE | INT YDS 38, DEF SNAPS 227, PEN 1, PEN YDS 5, ST SNAPS 16 |
+| Ed Stinson | Arizona Cardinals | DT | DEF SNAPS 1 |
+| Frostee Rucker | Arizona Cardinals | DT | DEF SNAPS 158, ST SNAPS 16 |
+| Rashad Johnson | Arizona Cardinals | FS | DEF SNAPS 52, PEN 1, PEN YDS 10, ST SNAPS 65 |
+| Tyrann Mathieu | Arizona Cardinals | FS | DEF SNAPS 227, ST SNAPS 16 |
+| Earl Watford | Arizona Cardinals | G | ST SNAPS 4 |
+| Jonathan Cooper | Arizona Cardinals | G | ST SNAPS 14 |
+| Paul Fanaika | Arizona Cardinals | G | OFF SNAPS 251, ST SNAPS 18 |
+| Ted Larsen | Arizona Cardinals | G | OFF SNAPS 251, PEN 1, PEN YDS 5, ST SNAPS 18 |
+| Kenny Demens | Arizona Cardinals | ILB | DEF SNAPS 5 |
+| Kevin Minter | Arizona Cardinals | ILB | DEF SNAPS 227, ST SNAPS 16 |
+| Larry Foote | Arizona Cardinals | ILB | DEF SNAPS 227, ST SNAPS 16 |
+| Lorenzo Alexander | Arizona Cardinals | ILB | ST SNAPS 65 |
+| Chandler Catanzaro | Arizona Cardinals | K | ST SNAPS 38 |
+| Mike Leach | Arizona Cardinals | LS | ST SNAPS 32 |
+| Alameda Ta'amu | Arizona Cardinals | NT | DEF SNAPS 4 |
+| Dan Williams | Arizona Cardinals | NT | DEF SNAPS 227, ST SNAPS 16 |
+| John Abraham | Arizona Cardinals | OLB | DEF SNAPS 115, ST SNAPS 16 |
+| Sam Acho | Arizona Cardinals | OLB | DEF SNAPS 2, ST SNAPS 65 |
+| Thomas Keiser | Arizona Cardinals | OLB | ST SNAPS 47 |
+| Dave Zastudil | Arizona Cardinals | P | ST SNAPS 32 |
+| Carson Palmer | Arizona Cardinals | QB | RUSH LNG 25, OFF SNAPS 251 |
+| Andre Ellington | Arizona Cardinals | RB | REC LNG 25, OFF SNAPS 240 |
+| Jonathan Dwyer | Arizona Cardinals | RB | REC LNG 7, OFF SNAPS 72, PEN 1, PEN YDS 10, ST SNAPS 61 |
+| Robert Hughes | Arizona Cardinals | RB | ST SNAPS 1 |
+| Stepfan Taylor | Arizona Cardinals | RB | REC LNG 11, OFF SNAPS 10, ST SNAPS 39 |
+| Tony Jefferson | Arizona Cardinals | SS | DEF SNAPS 227, ST SNAPS 16 |
+| Bobby Massie | Arizona Cardinals | T | OFF SNAPS 251, PEN 2, PEN YDS 10, ST SNAPS 18 |
+| Jared Veldheer | Arizona Cardinals | T | OFF SNAPS 251, ST SNAPS 18 |
+| Bradley Sowell | Arizona Cardinals | TE | OFF SNAPS 1, ST SNAPS 65 |
+| Darren Fells | Arizona Cardinals | TE | ST SNAPS 1 |
+| John Carlson | Arizona Cardinals | TE | OFF SNAPS 74, ST SNAPS 83 |
+| Rob Housler | Arizona Cardinals | TE | OFF SNAPS 251, ST SNAPS 18 |
+| Jaron Brown | Arizona Cardinals | WR | OFF SNAPS 1, ST SNAPS 65 |
+| John Brown | Arizona Cardinals | WR | RUSH LNG 7, OFF SNAPS 113 |
+| Larry Fitzgerald | Arizona Cardinals | WR | OFF SNAPS 251, PEN 1, PEN YDS 10 |
+| Michael Floyd | Arizona Cardinals | WR | RUSH LNG 6, OFF SNAPS 251 |
+| Ted Ginn | Arizona Cardinals | WR | OFF SNAPS 6, ST SNAPS 31 |
+| James Stone | Atlanta Falcons | C | ST SNAPS 5 |
+| Joe Hawley | Atlanta Falcons | C | OFF SNAPS 324, ST SNAPS 26 |
+| Desmond Trufant | Atlanta Falcons | CB | DEF SNAPS 311, ST SNAPS 17 |
+| Javier Arenas | Atlanta Falcons | CB | DEF SNAPS 76, ST SNAPS 80 |
+| Josh Wilson | Atlanta Falcons | CB | DEF SNAPS 300, ST SNAPS 37 |
+| Robert Alford | Atlanta Falcons | CB | DEF SNAPS 158, ST SNAPS 8 |
+| Robert McClain | Atlanta Falcons | CB | DEF SNAPS 236, ST SNAPS 65 |
+| Jonathan Babineaux | Atlanta Falcons | DE | DEF SNAPS 311, ST SNAPS 17 |
+| Kroy Biermann | Atlanta Falcons | DE | DEF SNAPS 311, ST SNAPS 17 |
+| Osi Umenyiora | Atlanta Falcons | DE | DEF SNAPS 9 |
+| Paul Soliai | Atlanta Falcons | DT | DEF SNAPS 311, ST SNAPS 17 |
+| Ra'Shede Hageman | Atlanta Falcons | DT | DEF SNAPS 2 |
+| Tyson Jackson | Atlanta Falcons | DT | DEF SNAPS 215, ST SNAPS 17 |
+| Patrick DiMarco | Atlanta Falcons | FB | OFF SNAPS 63, ST SNAPS 83 |
+| Jon Asamoah | Atlanta Falcons | G | OFF SNAPS 255, PEN 1, PEN YDS 5, ST SNAPS 21 |
+| Justin Blalock | Atlanta Falcons | G | OFF SNAPS 324, PEN 1, PEN YDS 5, ST SNAPS 26 |
+| Matt Bryant | Atlanta Falcons | K | ST SNAPS 54 |
+| Joplo Bartu | Atlanta Falcons | LB | DEF SNAPS 311, ST SNAPS 17 |
+| Nathan Stupar | Atlanta Falcons | LB | DEF SNAPS 154, ST SNAPS 17 |
+| Paul Worrilow | Atlanta Falcons | LB | INT YDS 32, DEF SNAPS 311, ST SNAPS 17 |
+| Prince Shembo | Atlanta Falcons | LB | DEF SNAPS 8, ST SNAPS 8 |
+| Josh Harris | Atlanta Falcons | LS | ST SNAPS 50 |
+| Tyler Starr | Atlanta Falcons | OLB | DEF SNAPS 3, ST SNAPS 100 |
+| Matt Bosher | Atlanta Falcons | P | ST SNAPS 50 |
+| Matt Ryan | Atlanta Falcons | QB | RUSH LNG 8, OFF SNAPS 324 |
+| Antone Smith | Atlanta Falcons | RB | OFF SNAPS 1, ST SNAPS 19 |
+| Devonta Freeman | Atlanta Falcons | RB | REC LNG 80, OFF SNAPS 324 |
+| Jacquizz Rodgers | Atlanta Falcons | RB | OFF SNAPS 3, ST SNAPS 100 |
+| Steven Jackson | Atlanta Falcons | RB | REC LNG 33, OFF SNAPS 41, ST SNAPS 100 |
+| Dezmen Southward | Atlanta Falcons | S | DEF SNAPS 2, ST SNAPS 71 |
+| Kemal Ishmael | Atlanta Falcons | S | DEF SNAPS 102, ST SNAPS 80 |
+| William Moore | Atlanta Falcons | S | DEF SNAPS 311, ST SNAPS 17 |
+| Gabe Carimi | Atlanta Falcons | T | OFF SNAPS 52, ST SNAPS 4 |
+| Jake Matthews | Atlanta Falcons | T | OFF SNAPS 324, PEN 1, PEN YDS 5, ST SNAPS 26 |
+| Lamar Holmes | Atlanta Falcons | T | OFF SNAPS 272, ST SNAPS 22 |
+| Ryan Schraeder | Atlanta Falcons | T | OFF SNAPS 69, ST SNAPS 26 |
+| Bear Pascoe | Atlanta Falcons | TE | OFF SNAPS 95, ST SNAPS 126 |
+| Levine Toilolo | Atlanta Falcons | TE | OFF SNAPS 324, PEN 1, PEN YDS 5, ST SNAPS 26 |
+| Courtney Roby | Atlanta Falcons | WR | OFF SNAPS 1, ST SNAPS 28 |
+| Devin Hester | Atlanta Falcons | WR | OFF SNAPS 214, PEN 1, PEN YDS 10, ST SNAPS 48 |
+| Eric Weems | Atlanta Falcons | WR | OFF SNAPS 3, ST SNAPS 41 |
+| Harry Douglas | Atlanta Falcons | WR | RUSH LNG 25, OFF SNAPS 59, ST SNAPS 62 |
+| Julio Jones | Atlanta Falcons | WR | RUSH LNG 4, OFF SNAPS 324 |
+| Roddy White | Atlanta Falcons | WR | RUSH LNG 2, OFF SNAPS 198 |
+| Gino Gradkowski | Baltimore Ravens | C | ST SNAPS 32 |
+| Jeremy Zuttah | Baltimore Ravens | C | OFF SNAPS 331, ST SNAPS 32 |
+| Asa Jackson | Baltimore Ravens | CB | DEF SNAPS 330, ST SNAPS 24 |
+| Chykie Brown | Baltimore Ravens | CB | DEF SNAPS 19, PEN 1, PEN YDS 3, ST SNAPS 104 |
+| Jimmy Smith | Baltimore Ravens | CB | DEF SNAPS 330, INT TD 1, ST SNAPS 24 |
+| Chris Canty | Baltimore Ravens | DE | DEF SNAPS 330, ST SNAPS 24 |
+| DeAngelo Tyson | Baltimore Ravens | DE | DEF SNAPS 228, ST SNAPS 24 |
+| Haloti Ngata | Baltimore Ravens | DT | DEF SNAPS 330, ST SNAPS 24 |
+| Timmy Jernigan | Baltimore Ravens | DT | DEF SNAPS 11 |
+| Kyle Juszczyk | Baltimore Ravens | FB | REC LNG 76, FR 1, OFF SNAPS 82, ST SNAPS 104 |
+| Darian Stewart | Baltimore Ravens | FS | DEF SNAPS 330, ST SNAPS 24 |
+| Jeromy Miles | Baltimore Ravens | FS | DEF SNAPS 64, PEN 1, PEN YDS 29, ST SNAPS 88 |
+| Lardarius Webb | Baltimore Ravens | FS | DEF SNAPS 265, ST SNAPS 102 |
+| Kelechi Osemele | Baltimore Ravens | G | OFF SNAPS 331, PEN 1, PEN YDS 5, ST SNAPS 32 |
+| Marshal Yanda | Baltimore Ravens | G | FUM 1, OWN FUM REC 1, OFF SNAPS 331, PEN 1, PEN YDS 10, ST SNAPS 32 |
+| Rick Wagner | Baltimore Ravens | G | OFF SNAPS 331, ST SNAPS 32 |
+| Albert McClellan | Baltimore Ravens | ILB | DEF SNAPS 3 |
+| Arthur Brown | Baltimore Ravens | ILB | DEF SNAPS 2, ST SNAPS 104 |
+| C.J. Mosley (BAL) | Baltimore Ravens | ILB | DEF SNAPS 330, ST SNAPS 24 |
+| Zach Orr | Baltimore Ravens | ILB | ST SNAPS 84 |
+| Justin Tucker | Baltimore Ravens | K | ST SNAPS 65 |
+| Morgan Cox | Baltimore Ravens | LS | ST SNAPS 52 |
+| Brandon Williams (BAL) | Baltimore Ravens | NT | DEF SNAPS 330, ST SNAPS 24 |
+| Courtney Upshaw | Baltimore Ravens | OLB | DEF SNAPS 164, ST SNAPS 24 |
+| Elvis Dumervil | Baltimore Ravens | OLB | ST SNAPS 19 |
+| Pernell McPhee | Baltimore Ravens | OLB | DEF SNAPS 1, ST SNAPS 104 |
+| Terrell Suggs | Baltimore Ravens | OLB | DEF SNAPS 330, ST SNAPS 24 |
+| Sam Koch | Baltimore Ravens | P | ST SNAPS 52 |
+| Joe Flacco | Baltimore Ravens | QB | RUSH LNG 15, OFF SNAPS 331, 2PT PASS 1, PEN 1, PEN YDS 12 |
+| Bernard Pierce | Baltimore Ravens | RB | REC LNG 26, OFF SNAPS 331 |
+| Fitzgerald Toussaint | Baltimore Ravens | RB | REC LNG 20, OFF SNAPS 2 |
+| Justin Forsett | Baltimore Ravens | RB | REC LNG 18, OFF SNAPS 40, ST SNAPS 69 |
+| Lorenzo Taliaferro | Baltimore Ravens | RB | REC LNG 19, OFF SNAPS 6, ST SNAPS 3 |
+| Matt Elam | Baltimore Ravens | SS | DEF SNAPS 250, ST SNAPS 21 |
+| James Hurst | Baltimore Ravens | T | OFF SNAPS 331, PEN 2, PEN YDS 10, ST SNAPS 32 |
+| Crockett Gillmore | Baltimore Ravens | TE | OFF SNAPS 28, ST SNAPS 38 |
+| Dennis Pitta | Baltimore Ravens | TE | OFF SNAPS 239, ST SNAPS 21 |
+| Owen Daniels | Baltimore Ravens | TE | OFF SNAPS 162, ST SNAPS 110 |
+| Phillip Supernaw | Baltimore Ravens | TE | ST SNAPS 10 |
+| Deonte Thompson | Baltimore Ravens | WR | ST SNAPS 8 |
+| Jacoby Jones | Baltimore Ravens | WR | RUSH LNG 12, OWN FUM REC 1, MUFFS 1, OFF SNAPS 130, 2PT REC 1, ST SNAPS 46 |
+| Kamar Aiken | Baltimore Ravens | WR | OFF SNAPS 1, ST SNAPS 5 |
+| Marlon Brown | Baltimore Ravens | WR | OFF SNAPS 21, ST SNAPS 96 |
+| Steve Smith | Baltimore Ravens | WR | RUSH LNG 7, OFF SNAPS 331 |
+| Torrey Smith | Baltimore Ravens | WR | OFF SNAPS 331 |
+| Lawrence Guy | Baltimore Ravens, San Diego Chargers | DT | DEF SNAPS 186, ST SNAPS 18 |
+| Eric Wood | Buffalo Bills | C | OFF SNAPS 306, ST SNAPS 27 |
+| Kraig Urbik | Buffalo Bills | C | ST SNAPS 23 |
+| Leodis McKelvin | Buffalo Bills | CB | DEF SNAPS 350, ST SNAPS 53 |
+| Nickell Robey | Buffalo Bills | CB | ST SNAPS 84 |
+| Ross Cockrell | Buffalo Bills | CB | ST SNAPS 14 |
+| Stephon Gilmore | Buffalo Bills | CB | DEF SNAPS 350, PEN 2, PEN YDS 10, ST SNAPS 28 |
+| Jarius Wynn | Buffalo Bills | DE | DEF SNAPS 187, ST SNAPS 20 |
+| Jerry Hughes | Buffalo Bills | DE | DEF SNAPS 85, ST SNAPS 8 |
+| Mario Williams | Buffalo Bills | DE | DEF SNAPS 350, PEN 1, PEN YDS 5, ST SNAPS 28 |
+| Corbin Bryant | Buffalo Bills | DT | DEF SNAPS 3 |
+| Kyle Williams | Buffalo Bills | DT | DEF SNAPS 350, ST SNAPS 28 |
+| Marcell Dareus | Buffalo Bills | DT | DEF SNAPS 324, ST SNAPS 28 |
+| Stefan Charles | Buffalo Bills | DT | DEF SNAPS 3 |
+| Frank Summers | Buffalo Bills | FB | REC LNG 22, OFF SNAPS 70, ST SNAPS 99 |
+| Corey Graham | Buffalo Bills | FS | DEF SNAPS 279, ST SNAPS 107 |
+| Chris Williams | Buffalo Bills | G | OFF SNAPS 306, ST SNAPS 27 |
+| Cyril Richardson | Buffalo Bills | G | ST SNAPS 4 |
+| Randell Johnson | Buffalo Bills | ILB | DEF SNAPS 3, ST SNAPS 107 |
+| Dan Carpenter | Buffalo Bills | K | ST SNAPS 57 |
+| Garrison Sanborn | Buffalo Bills | LS | ST SNAPS 49 |
+| Brandon Spikes | Buffalo Bills | MLB | DEF SNAPS 350, ST SNAPS 28 |
+| Preston Brown | Buffalo Bills | MLB | DEF SNAPS 350, ST SNAPS 28 |
+| Ty Powell | Buffalo Bills | MLB | DEF SNAPS 10 |
+| Keith Rivers | Buffalo Bills | OLB | DEF SNAPS 174, ST SNAPS 28 |
+| Manny Lawson | Buffalo Bills | OLB | ST SNAPS 58 |
+| Nigel Bradham | Buffalo Bills | OLB | DEF SNAPS 1, ST SNAPS 21 |
+| Jordan Gay | Buffalo Bills | P | ST SNAPS 49 |
+| E.J. Manuel | Buffalo Bills | QB | RUSH LNG 9, OFF SNAPS 151 |
+| Kyle Orton | Buffalo Bills | QB | RUSH LNG 5, OWN FUM REC 1, OFF SNAPS 155, PEN 1, PEN YDS 5 |
+| Anthony Dixon | Buffalo Bills | RB | ST SNAPS 5 |
+| Bryce Brown | Buffalo Bills | RB | REC LNG 15, OFF SNAPS 32, ST SNAPS 107 |
+| C.J. Spiller | Buffalo Bills | RB | REC LNG 41, OFF SNAPS 306, ST SNAPS 30 |
+| Fred Jackson | Buffalo Bills | RB | REC LNG 31, OFF SNAPS 6, ST SNAPS 37 |
+| Aaron Williams | Buffalo Bills | SS | DEF SNAPS 350, ST SNAPS 28 |
+| Da'Norris Searcy | Buffalo Bills | SS | DEF SNAPS 350, PEN 2, PEN YDS 19, ST SNAPS 28 |
+| Duke Williams | Buffalo Bills | SS | DEF SNAPS 4, ST SNAPS 107 |
+| Chris Hairston | Buffalo Bills | T | OFF SNAPS 306, ST SNAPS 27 |
+| Cordy Glenn | Buffalo Bills | T | OFF SNAPS 306, ST SNAPS 27 |
+| Erik Pears | Buffalo Bills | T | OFF SNAPS 306, ST SNAPS 27 |
+| Chris Gragg | Buffalo Bills | TE | OFF SNAPS 36, PEN 1, PEN YDS 15, ST SNAPS 105 |
+| Lee Smith | Buffalo Bills | TE | OFF SNAPS 54, ST SNAPS 77 |
+| Scott Chandler | Buffalo Bills | TE | OFF SNAPS 306, PEN 1, PEN YDS 10, ST SNAPS 27 |
+| Chris Hogan | Buffalo Bills | WR | ST SNAPS 15 |
+| Marquise Goodwin | Buffalo Bills | WR | RUSH LNG 4, OFF SNAPS 3, ST SNAPS 107 |
+| Mike Williams | Buffalo Bills | WR | OFF SNAPS 136 |
+| Robert Woods | Buffalo Bills | WR | OFF SNAPS 306 |
+| Sammy Watkins | Buffalo Bills | WR | OFF SNAPS 306 |
+| Fernando Velasco | Carolina Panthers | C | OFF SNAPS 27, ST SNAPS 3 |
+| Ryan Kalil | Carolina Panthers | C | OFF SNAPS 280, ST SNAPS 18 |
+| Antoine Cason | Carolina Panthers | CB | DEF SNAPS 349, ST SNAPS 31 |
+| Bene' Benwikere | Carolina Panthers | CB | DEF SNAPS 278, ST SNAPS 95 |
+| Melvin White | Carolina Panthers | CB | DEF SNAPS 349, ST SNAPS 31 |
+| Charles Johnson | Carolina Panthers | DE | DEF SNAPS 275, ST SNAPS 24 |
+| Greg Hardy | Carolina Panthers | DE | DEF SNAPS 349, ST SNAPS 31 |
+| Mario Addison | Carolina Panthers | DE | DEF SNAPS 2 |
+| Wes Horton | Carolina Panthers | DE | DEF SNAPS 4 |
+| Colin Cole | Carolina Panthers | DT | DEF SNAPS 309, PEN 1, PEN YDS 5, ST SNAPS 27 |
+| Dwan Edwards | Carolina Panthers | DT | DEF SNAPS 85, ST SNAPS 11 |
+| Star Lotulelei | Carolina Panthers | DT | DEF SNAPS 276, ST SNAPS 31 |
+| Mike Tolbert | Carolina Panthers | FB | REC LNG 9, OFF SNAPS 76, ST SNAPS 95 |
+| Thomas DeCoud | Carolina Panthers | FS | DEF SNAPS 349, ST SNAPS 31 |
+| Amini Silatolu | Carolina Panthers | G | OFF SNAPS 307, ST SNAPS 21 |
+| Brandon Linder | Carolina Panthers | G | OFF SNAPS 307, ST SNAPS 21 |
+| Byron Bell | Carolina Panthers | G | OFF SNAPS 307, PEN 2, PEN YDS 20, ST SNAPS 21 |
+| Graham Gano | Carolina Panthers | K | ST SNAPS 45 |
+| J.J. Jansen | Carolina Panthers | LS | ST SNAPS 41 |
+| Ben Jacobs | Carolina Panthers | MLB | DEF SNAPS 44, ST SNAPS 7 |
+| Luke Kuechly | Carolina Panthers | MLB | DEF SNAPS 349, ST SNAPS 31 |
+| A.J. Klein | Carolina Panthers | OLB | ST SNAPS 95 |
+| Chase Blackburn | Carolina Panthers | OLB | DEF SNAPS 210, ST SNAPS 31 |
+| Jason Williams | Carolina Panthers | OLB | DEF SNAPS 3, ST SNAPS 74 |
+| Thomas Davis | Carolina Panthers | OLB | DEF SNAPS 275, ST SNAPS 24 |
+| Brad Nortman | Carolina Panthers | P | ST SNAPS 41 |
+| Cam Newton | Carolina Panthers | QB | RUSH LNG 10, OFF SNAPS 307 |
+| DeAngelo Williams | Carolina Panthers | RB | REC LNG 34, OFF SNAPS 307 |
+| Fozzy Whittaker | Carolina Panthers | RB | OFF SNAPS 11, PEN 1, PEN YDS 10, ST SNAPS 39 |
+| Jonathan Stewart | Carolina Panthers | RB | OFF SNAPS 18, ST SNAPS 82 |
+| Charles Godfrey | Carolina Panthers | S | DEF SNAPS 5, ST SNAPS 95 |
+| Roman Harper | Carolina Panthers | SS | DEF SNAPS 349, PEN 1, PEN YDS 28, ST SNAPS 31 |
+| Tre Boston | Carolina Panthers | SS | DEF SNAPS 4, ST SNAPS 95 |
+| Garry Williams | Carolina Panthers | T | ST SNAPS 21 |
+| Nate Chandler | Carolina Panthers | T | OFF SNAPS 307, ST SNAPS 21 |
+| Brandon Williams (CAR) | Carolina Panthers | TE | OFF SNAPS 3, ST SNAPS 85 |
+| Ed Dickson | Carolina Panthers | TE | OFF SNAPS 90, ST SNAPS 116 |
+| Greg Olsen | Carolina Panthers | TE | OFF SNAPS 307, PEN 1, PEN YDS 5, ST SNAPS 21 |
+| Richie Brockel | Carolina Panthers | TE | OFF SNAPS 1, ST SNAPS 8 |
+| Brenton Bersin | Carolina Panthers | WR | OFF SNAPS 90 |
+| Corey Brown | Carolina Panthers | WR | OFF SNAPS 25, ST SNAPS 51 |
+| Jason Avant | Carolina Panthers | WR | RUSH LNG 20, OFF SNAPS 84, ST SNAPS 55 |
+| Jerricho Cotchery | Carolina Panthers | WR | OFF SNAPS 307 |
+| Kelvin Benjamin | Carolina Panthers | WR | RUSH LNG 20, OFF SNAPS 249 |
+| Brian De La Puente | Chicago Bears | C | ST SNAPS 23 |
+| Roberto Garza | Chicago Bears | C | OFF SNAPS 343, ST SNAPS 23 |
+| Charles Tillman | Chicago Bears | CB | DEF SNAPS 320, PEN 1, PEN YDS 15, ST SNAPS 24 |
+| Kyle Fuller | Chicago Bears | CB | DEF SNAPS 258, PEN 2, PEN YDS 12, ST SNAPS 91 |
+| Tim Jennings | Chicago Bears | CB | DEF SNAPS 300, ST SNAPS 22 |
+| Cornelius Washington | Chicago Bears | DE | DEF SNAPS 1 |
+| Jared Allen | Chicago Bears | DE | DEF SNAPS 320, ST SNAPS 24 |
+| Trevor Scott | Chicago Bears | DE | DEF SNAPS 221, ST SNAPS 24 |
+| Jay Ratliff | Chicago Bears | DT | DEF SNAPS 320, ST SNAPS 24 |
+| Will Sutton | Chicago Bears | DT | DEF SNAPS 5 |
+| Tony Fiammetta | Chicago Bears | FB | REC LNG 9, OFF SNAPS 84, ST SNAPS 94 |
+| Brock Vereen | Chicago Bears | FS | DEF SNAPS 3, ST SNAPS 94 |
+| Danny McCray | Chicago Bears | FS | DEF SNAPS 320, ST SNAPS 24 |
+| Jermon Bushrod | Chicago Bears | G | OFF SNAPS 343, ST SNAPS 23 |
+| Kyle Long | Chicago Bears | G | OFF SNAPS 343, ST SNAPS 23 |
+| Matt Slauson | Chicago Bears | G | OFF SNAPS 343, ST SNAPS 23 |
+| Robbie Gould | Chicago Bears | K | ST SNAPS 46 |
+| Jeremy Cain | Chicago Bears | LS | ST SNAPS 46 |
+| D.J. Williams | Chicago Bears | MLB | DEF SNAPS 200, ST SNAPS 24 |
+| Jon Bostic | Chicago Bears | MLB | DEF SNAPS 2, ST SNAPS 94 |
+| Ego Ferguson | Chicago Bears | NT | DEF SNAPS 2 |
+| Stephen Paea | Chicago Bears | NT | DEF SNAPS 320, ST SNAPS 24 |
+| David Bass | Chicago Bears | OLB | ST SNAPS 20 |
+| Khaseem Greene | Chicago Bears | OLB | DEF SNAPS 6, ST SNAPS 70 |
+| Lamarr Houston | Chicago Bears | OLB | DEF SNAPS 51, ST SNAPS 6 |
+| Lance Briggs | Chicago Bears | OLB | DEF SNAPS 237, PEN 1, ST SNAPS 18 |
+| Shea McClellin | Chicago Bears | OLB | DEF SNAPS 320, ST SNAPS 24 |
+| Willie Young | Chicago Bears | OLB | ST SNAPS 94 |
+| Pat O'Donnell | Chicago Bears | P | ST SNAPS 46 |
+| Jay Cutler | Chicago Bears | QB | RUSH LNG 9, OFF SNAPS 343, PEN 2, PEN YDS 10 |
+| Ka'Deem Carey | Chicago Bears | RB | OFF SNAPS 5, ST SNAPS 13 |
+| Matt Forte | Chicago Bears | RB | REC LNG 35, OFF SNAPS 343 |
+| Senorise Perry | Chicago Bears | RB | REC LNG 16, OFF SNAPS 30, ST SNAPS 23 |
+| Ryan Mundy | Chicago Bears | SS | DEF SNAPS 320, PEN 1, PEN YDS 15, ST SNAPS 24 |
+| Sherrick McManis | Chicago Bears | SS | DEF SNAPS 20, ST SNAPS 94 |
+| Jordan Mills | Chicago Bears | T | OFF SNAPS 343, ST SNAPS 23 |
+| Dante Rosario | Chicago Bears | TE | OFF SNAPS 19, ST SNAPS 61 |
+| Martellus Bennett | Chicago Bears | TE | OFF SNAPS 343, ST SNAPS 23 |
+| Matthew Mulligan | Chicago Bears | TE | OFF SNAPS 82, ST SNAPS 97 |
+| Alshon Jeffery | Chicago Bears | WR | OFF SNAPS 343 |
+| Brandon Marshall (CHI) | Chicago Bears | WR | RUSH LNG 5, OFF SNAPS 327 |
+| Chris Williams (CHI) | Chicago Bears | WR | ST SNAPS 5 |
+| Josh Morgan | Chicago Bears | WR | OFF SNAPS 9, ST SNAPS 90 |
+| Micheal Spurlock | Chicago Bears | WR | OFF SNAPS 1 |
+| Santonio Holmes | Chicago Bears | WR | OFF SNAPS 161, PEN 1, PEN YDS 5, ST SNAPS 25 |
+| Russell Bodine | Cincinnati Bengals | C | OFF SNAPS 285, ST SNAPS 18 |
+| Adam Jones | Cincinnati Bengals | CB | DEF SNAPS 214, ST SNAPS 71 |
+| Dre Kirkpatrick | Cincinnati Bengals | CB | DEF SNAPS 2, ST SNAPS 77 |
+| Leon Hall | Cincinnati Bengals | CB | DEF SNAPS 220, ST SNAPS 21 |
+| Terence Newman | Cincinnati Bengals | CB | DEF SNAPS 260, ST SNAPS 23 |
+| Robert Geathers | Cincinnati Bengals | DE | DEF SNAPS 179, ST SNAPS 23 |
+| Wallace Gilberry | Cincinnati Bengals | DE | DEF SNAPS 260, ST SNAPS 23 |
+| Geno Atkins | Cincinnati Bengals | DT | DEF SNAPS 260, ST SNAPS 23 |
+| Margus Hunt | Cincinnati Bengals | DT | DEF SNAPS 1 |
+| Reggie Nelson | Cincinnati Bengals | FS | DEF SNAPS 260, ST SNAPS 23 |
+| Taylor Mays | Cincinnati Bengals | FS | DEF SNAPS 34, ST SNAPS 77 |
+| Clint Boling | Cincinnati Bengals | G | OFF SNAPS 285, ST SNAPS 18 |
+| Kevin Zeitler | Cincinnati Bengals | G | OFF SNAPS 285, ST SNAPS 18 |
+| Mike Nugent | Cincinnati Bengals | K | ST SNAPS 39 |
+| Clark Harris | Cincinnati Bengals | LS | ST SNAPS 35 |
+| Marquis Flowers | Cincinnati Bengals | MLB | ST SNAPS 58 |
+| Rey Maualuga | Cincinnati Bengals | MLB | DEF SNAPS 234, ST SNAPS 23 |
+| Vincent Rey | Cincinnati Bengals | MLB | ST SNAPS 77 |
+| Vontaze Burfict | Cincinnati Bengals | MLB | INT YDS 2, DEF SNAPS 260, ST SNAPS 23 |
+| Brandon Thompson | Cincinnati Bengals | NT | DEF SNAPS 7 |
+| Domata Peko | Cincinnati Bengals | NT | DEF SNAPS 260, ST SNAPS 23 |
+| Carlos Dunlap | Cincinnati Bengals | OLB | DEF SNAPS 16 |
+| Emmanuel Lamur | Cincinnati Bengals | OLB | DEF SNAPS 142, ST SNAPS 23 |
+| Jayson DiManche | Cincinnati Bengals | OLB | DEF SNAPS 3, ST SNAPS 74 |
+| Sean Porter | Cincinnati Bengals | OLB | ST SNAPS 19 |
+| Kevin Huber | Cincinnati Bengals | P | ST SNAPS 35 |
+| Andy Dalton | Cincinnati Bengals | QB | RUSH LNG 9, OFF SNAPS 285 |
+| Cedric Peerman | Cincinnati Bengals | RB | REC LNG 3, OFF SNAPS 3, ST SNAPS 6 |
+| Giovani Bernard | Cincinnati Bengals | RB | REC LNG 13, OFF SNAPS 285 |
+| Jeremy Hill | Cincinnati Bengals | RB | REC LNG 16, OFF SNAPS 73, ST SNAPS 77 |
+| George Iloka | Cincinnati Bengals | SS | DEF SNAPS 260, ST SNAPS 23 |
+| Shawn Williams | Cincinnati Bengals | SS | ST SNAPS 12 |
+| Andre Smith | Cincinnati Bengals | T | OFF SNAPS 285, ST SNAPS 18 |
+| Andrew Whitworth | Cincinnati Bengals | T | OFF SNAPS 285, ST SNAPS 18 |
+| Marshall Newhouse | Cincinnati Bengals | T | ST SNAPS 18 |
+| Alex Smith (CIN) | Cincinnati Bengals | TE | OFF SNAPS 1, ST SNAPS 53 |
+| Jermaine Gresham | Cincinnati Bengals | TE | OFF SNAPS 285, ST SNAPS 18 |
+| Ryan Hewitt | Cincinnati Bengals | TE | OFF SNAPS 1, ST SNAPS 1 |
+| Tyler Eifert | Cincinnati Bengals | TE | OFF SNAPS 83, ST SNAPS 95 |
+| A.J. Green | Cincinnati Bengals | WR | OFF SNAPS 285, PEN 1, PEN YDS 10 |
+| Brandon Tate | Cincinnati Bengals | WR | OFF SNAPS 5, ST SNAPS 39 |
+| Dane Sanzenbacher | Cincinnati Bengals | WR | RUSH LNG 4, OFF SNAPS 126 |
+| James Wright | Cincinnati Bengals | WR | ST SNAPS 57 |
+| Mohamed Sanu | Cincinnati Bengals | WR | OFF SNAPS 285 |
+| Alex Mack | Cleveland Browns | C | OFF SNAPS 288, ST SNAPS 25 |
+| Buster Skrine | Cleveland Browns | CB | DEF SNAPS 241, ST SNAPS 16 |
+| Joe Haden | Cleveland Browns | CB | DEF SNAPS 241, ST SNAPS 16 |
+| Justin Gilbert | Cleveland Browns | CB | DEF SNAPS 191, PEN 1, PEN YDS 15, ST SNAPS 92 |
+| K'Waun Williams | Cleveland Browns | CB | ST SNAPS 37 |
+| Pierre Desir | Cleveland Browns | CB | DEF SNAPS 6, ST SNAPS 92 |
+| Armonty Bryant | Cleveland Browns | DE | DEF SNAPS 241, ST SNAPS 16 |
+| Billy Winn | Cleveland Browns | DE | DEF SNAPS 3 |
+| Phillip Taylor | Cleveland Browns | DE | DEF SNAPS 241, ST SNAPS 16 |
+| John Hughes | Cleveland Browns | DT | DEF SNAPS 4 |
+| Ray Agnew | Cleveland Browns | FB | REC LNG 19, OFF SNAPS 71, ST SNAPS 92 |
+| Tashaun Gipson | Cleveland Browns | FS | DEF SNAPS 241, ST SNAPS 16 |
+| John Greco | Cleveland Browns | G | OFF SNAPS 288, ST SNAPS 25 |
+| Paul McQuistan | Cleveland Browns | G | ST SNAPS 17 |
+| Ryan Seymour | Cleveland Browns | G | OFF SNAPS 221, ST SNAPS 20 |
+| Craig Robertson | Cleveland Browns | ILB | INT YDS 14, DEF SNAPS 201, ST SNAPS 13 |
+| Karlos Dansby | Cleveland Browns | ILB | DEF SNAPS 140, ST SNAPS 16 |
+| Tank Carder | Cleveland Browns | ILB | DEF SNAPS 1, ST SNAPS 92 |
+| Billy Cundiff | Cleveland Browns | K | ST SNAPS 52 |
+| Christian Yount | Cleveland Browns | LS | ST SNAPS 44 |
+| Ahtyba Rubin | Cleveland Browns | NT | DEF SNAPS 241, PEN 1, PEN YDS 15, ST SNAPS 16 |
+| Ishmaa'ily Kitchen | Cleveland Browns | NT | DEF SNAPS 167, ST SNAPS 16 |
+| Barkevious Mingo | Cleveland Browns | OLB | DEF SNAPS 241, ST SNAPS 16 |
+| Christian Kirksey | Cleveland Browns | OLB | DEF SNAPS 2, ST SNAPS 75 |
+| Eric Martin | Cleveland Browns | OLB | DEF SNAPS 4, ST SNAPS 80 |
+| Jabaal Sheard | Cleveland Browns | OLB | ST SNAPS 29 |
+| Paul Kruger | Cleveland Browns | OLB | DEF SNAPS 24, ST SNAPS 3 |
+| Spencer Lanning | Cleveland Browns | P | ST SNAPS 44 |
+| Brian Hoyer | Cleveland Browns | QB | RUSH LNG 19, OFF SNAPS 288, PEN 2, PEN YDS 19 |
+| Ben Tate | Cleveland Browns | RB | REC LNG 18, OFF SNAPS 288 |
+| Glenn Winston | Cleveland Browns | RB | REC LNG 8, OFF SNAPS 2 |
+| Isaiah Crowell | Cleveland Browns | RB | REC LNG 19, OFF SNAPS 29, ST SNAPS 69 |
+| Donte Whitner | Cleveland Browns | SS | DEF SNAPS 241, ST SNAPS 16 |
+| Jim Leonhard | Cleveland Browns | SS | ST SNAPS 92 |
+| Joe Thomas | Cleveland Browns | T | OFF SNAPS 288, ST SNAPS 25 |
+| Mitchell Schwartz | Cleveland Browns | T | OFF SNAPS 288, ST SNAPS 25 |
+| Vinston Painter | Cleveland Browns | T | OFF SNAPS 67, ST SNAPS 13 |
+| Gary Barnidge | Cleveland Browns | TE | OFF SNAPS 85, PEN 1, PEN YDS 5, ST SNAPS 117 |
+| Jim Dray | Cleveland Browns | TE | OFF SNAPS 1 |
+| Jordan Cameron | Cleveland Browns | TE | OFF SNAPS 288, ST SNAPS 25 |
+| Josh Gordon | Cleveland Browns | WR | OFF SNAPS 30 |
+| Laron Byrd | Cleveland Browns | WR | OFF SNAPS 90, ST SNAPS 7 |
+| Marlon Moore | Cleveland Browns | WR | OFF SNAPS 1, ST SNAPS 26 |
+| Marqise Lee | Cleveland Browns | WR | RUSH LNG 6, OFF SNAPS 288 |
+| Miles Austin | Cleveland Browns | WR | OFF SNAPS 19 |
+| Travis Benjamin | Cleveland Browns | WR | RUSH LNG 4, OFF SNAPS 277, ST SNAPS 46 |
+| Travis Frederick | Dallas Cowboys | C | OFF SNAPS 257, ST SNAPS 17 |
+| Brandon Carr | Dallas Cowboys | CB | DEF SNAPS 193, INT TD 1, ST SNAPS 16 |
+| Morris Claiborne | Dallas Cowboys | CB | DEF SNAPS 325, ST SNAPS 23 |
+| Sterling Moore | Dallas Cowboys | CB | DEF SNAPS 110, ST SNAPS 94 |
+| Tyler Patmon | Dallas Cowboys | CB | DEF SNAPS 285, ST SNAPS 61 |
+| George Selvie | Dallas Cowboys | DE | DEF SNAPS 325, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Jack Crawford | Dallas Cowboys | DE | DEF SNAPS 1 |
+| Tyrone Crawford | Dallas Cowboys | DE | DEF SNAPS 1 |
+| Davon Coleman | Dallas Cowboys | DT | DEF SNAPS 225, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Henry Melton | Dallas Cowboys | DT | DEF SNAPS 325, PEN 1, PEN YDS 13, ST SNAPS 23 |
+| Nick Hayden | Dallas Cowboys | DT | DEF SNAPS 325, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Terrell McClain | Dallas Cowboys | DT | DEF SNAPS 7 |
+| Tyler Clutts | Dallas Cowboys | FB | REC LNG 38, OFF SNAPS 77, ST SNAPS 94 |
+| J.J. Wilcox | Dallas Cowboys | FS | DEF SNAPS 270, ST SNAPS 20 |
+| Jeff Heath | Dallas Cowboys | FS | DEF SNAPS 1, ST SNAPS 36 |
+| Mackenzy Bernadeau | Dallas Cowboys | G | ST SNAPS 2 |
+| Ronald Leary | Dallas Cowboys | G | OFF SNAPS 310, PEN 2, PEN YDS 11, ST SNAPS 19 |
+| Zack Martin | Dallas Cowboys | G | OFF SNAPS 310, ST SNAPS 19 |
+| Bruce Carter | Dallas Cowboys | ILB | DEF SNAPS 325, FUM TD 1, ST SNAPS 23 |
+| Korey Toomer | Dallas Cowboys | ILB | INT YDS 18, DEF SNAPS 4, ST SNAPS 94 |
+| Dan Bailey | Dallas Cowboys | K | ST SNAPS 42 |
+| L.P. Ladouceur | Dallas Cowboys | LS | ST SNAPS 43 |
+| Anthony Hitchens | Dallas Cowboys | MLB | DEF SNAPS 1, ST SNAPS 94 |
+| Rolando McClain | Dallas Cowboys | MLB | DEF SNAPS 162, ST SNAPS 23 |
+| Cameron Lawrence | Dallas Cowboys | OLB | DEF SNAPS 1, OWN FUM REC 1, ST SNAPS 94 |
+| Justin Durant | Dallas Cowboys | OLB | DEF SNAPS 325, ST SNAPS 23 |
+| Kyle Wilber | Dallas Cowboys | OLB | DEF SNAPS 8 |
+| Chris Jones (DAL) | Dallas Cowboys | P | ST SNAPS 43 |
+| Tony Romo | Dallas Cowboys | QB | RUSH LNG 14, OFF SNAPS 310, PEN 1, PEN YDS 5 |
+| DeMarco Murray | Dallas Cowboys | RB | REC LNG 35, OFF SNAPS 310 |
+| Joseph Randle | Dallas Cowboys | RB | REC LNG 11, OFF SNAPS 6, ST SNAPS 2 |
+| Lance Dunbar | Dallas Cowboys | RB | REC LNG 24, OFF SNAPS 35, ST SNAPS 61 |
+| Barry Church | Dallas Cowboys | SS | DEF SNAPS 325, ST SNAPS 23 |
+| C.J. Spillman | Dallas Cowboys | SS | DEF SNAPS 55, ST SNAPS 76 |
+| Doug Free | Dallas Cowboys | T | OFF SNAPS 310, ST SNAPS 19 |
+| Jermey Parnell | Dallas Cowboys | T | OFF SNAPS 53, ST SNAPS 19 |
+| Tyron Smith | Dallas Cowboys | T | OFF SNAPS 310, ST SNAPS 19 |
+| Gavin Escobar | Dallas Cowboys | TE | OFF SNAPS 80, PEN 1, PEN YDS 10, ST SNAPS 102 |
+| James Hanna | Dallas Cowboys | TE | OFF SNAPS 17, ST SNAPS 21 |
+| Jason Witten | Dallas Cowboys | TE | OFF SNAPS 310, ST SNAPS 19 |
+| Cole Beasley | Dallas Cowboys | WR | RUSH LNG 11, OFF SNAPS 120 |
+| Devin Street | Dallas Cowboys | WR | OFF SNAPS 1, PEN 2, PEN YDS 9, ST SNAPS 94 |
+| Dez Bryant | Dallas Cowboys | WR | OFF SNAPS 310 |
+| Dwayne Harris | Dallas Cowboys | WR | OWN FUM REC 1, MUFFS 2, OFF SNAPS 26, ST SNAPS 47 |
+| Terrance Williams | Dallas Cowboys | WR | RUSH LNG 9, OFF SNAPS 310 |
+| Manuel Ramirez | Denver Broncos | C | OFF SNAPS 231, PEN 1, PEN YDS 5, ST SNAPS 20 |
+| Will Montgomery | Denver Broncos | C | ST SNAPS 4 |
+| Bradley Roby | Denver Broncos | CB | DEF SNAPS 281, PEN 1, PEN YDS 15, ST SNAPS 18 |
+| Chris Harris | Denver Broncos | CB | DEF SNAPS 281, ST SNAPS 18 |
+| Kayvon Webster | Denver Broncos | CB | DEF SNAPS 57, ST SNAPS 77 |
+| DeMarcus Ware | Denver Broncos | DE | DEF SNAPS 281, PEN 1, PEN YDS 15, ST SNAPS 18 |
+| Derek Wolfe | Denver Broncos | DE | DEF SNAPS 281, ST SNAPS 18 |
+| Lerentee McCray | Denver Broncos | DE | DEF SNAPS 6 |
+| Quanterus Smith | Denver Broncos | DE | DEF SNAPS 1 |
+| Sylvester Williams | Denver Broncos | DT | DEF SNAPS 281, ST SNAPS 18 |
+| David Bruton | Denver Broncos | FS | DEF SNAPS 170, ST SNAPS 77 |
+| Omar Bolden | Denver Broncos | FS | ST SNAPS 22 |
+| Rahim Moore | Denver Broncos | FS | DEF SNAPS 281, ST SNAPS 18 |
+| Louis Vasquez | Denver Broncos | G | OWN FUM REC 1, OFF SNAPS 231, PEN 1, PEN YDS 5, ST SNAPS 20 |
+| Orlando Franklin | Denver Broncos | G | OFF SNAPS 231, ST SNAPS 20 |
+| Brandon Marshall (DEN) | Denver Broncos | ILB | DEF SNAPS 17, ST SNAPS 11 |
+| Corey Nelson | Denver Broncos | ILB | DEF SNAPS 2, ST SNAPS 72 |
+| Danny Trevathan | Denver Broncos | ILB | DEF SNAPS 118, ST SNAPS 10 |
+| Brandon McManus | Denver Broncos | K | ST SNAPS 43 |
+| Aaron Brewer | Denver Broncos | LS | ST SNAPS 38 |
+| Lamin Barrow | Denver Broncos | MLB | ST SNAPS 77 |
+| Nate Irving | Denver Broncos | MLB | DEF SNAPS 172, PEN 1, PEN YDS 15, ST SNAPS 13 |
+| Steven Johnson | Denver Broncos | MLB | DEF SNAPS 122, ST SNAPS 13 |
+| Marvin Austin | Denver Broncos | NT | DEF SNAPS 4 |
+| Terrance Knighton | Denver Broncos | NT | DEF SNAPS 196, ST SNAPS 18 |
+| Von Miller | Denver Broncos | OLB | DEF SNAPS 281, ST SNAPS 18 |
+| Britton Colquitt | Denver Broncos | P | ST SNAPS 38 |
+| Peyton Manning | Denver Broncos | QB | RUSH LNG 17, OFF SNAPS 231 |
+| Juwan Thompson | Denver Broncos | RB | OFF SNAPS 4, ST SNAPS 18 |
+| Montee Ball | Denver Broncos | RB | REC LNG 25, OFF SNAPS 231 |
+| Ronnie Hillman | Denver Broncos | RB | REC LNG 16, OFF SNAPS 59, ST SNAPS 77 |
+| Quinton Carter | Denver Broncos | SS | DEF SNAPS 2, ST SNAPS 77 |
+| T.J. Ward | Denver Broncos | SS | DEF SNAPS 281, ST SNAPS 18 |
+| Chris Clark | Denver Broncos | T | OFF SNAPS 199, ST SNAPS 16 |
+| Paul Cornick | Denver Broncos | T | OFF SNAPS 32, ST SNAPS 20 |
+| Ryan Clady | Denver Broncos | T | OFF SNAPS 231, ST SNAPS 20 |
+| Jacob Tamme | Denver Broncos | TE | OFF SNAPS 1, ST SNAPS 74 |
+| Julius Thomas | Denver Broncos | TE | OFF SNAPS 231, ST SNAPS 20 |
+| Virgil Green | Denver Broncos | TE | OFF SNAPS 68, ST SNAPS 97 |
+| Andre Caldwell | Denver Broncos | WR | OFF SNAPS 102, ST SNAPS 20 |
+| Cody Latimer | Denver Broncos | WR | OFF SNAPS 7, ST SNAPS 77 |
+| Demaryius Thomas | Denver Broncos | WR | OFF SNAPS 231, PEN 1, PEN YDS 5 |
+| Emmanuel Sanders | Denver Broncos | WR | OFF SNAPS 231 |
+| Isaiah Burse | Denver Broncos | WR | OWN FUM REC 1, MUFFS 1, OFF SNAPS 1, PR TD 1, ST SNAPS 16 |
+| Nathan Palmer | Denver Broncos | WR | OFF SNAPS 1 |
+| Dominic Raiola | Detroit Lions | C | OFF SNAPS 334, ST SNAPS 24 |
+| Travis Swanson | Detroit Lions | C | ST SNAPS 24 |
+| Cassius Vaughn | Detroit Lions | CB | DEF SNAPS 168, ST SNAPS 74 |
+| Darius Slay | Detroit Lions | CB | DEF SNAPS 299, ST SNAPS 26 |
+| Dwight Bentley | Detroit Lions | CB | DEF SNAPS 56, ST SNAPS 22 |
+| Nevin Lawson | Detroit Lions | CB | ST SNAPS 30 |
+| Rashean Mathis | Detroit Lions | CB | DEF SNAPS 299, ST SNAPS 26 |
+| Devin Taylor | Detroit Lions | DE | DEF SNAPS 7 |
+| Ezekiel Ansah | Detroit Lions | DE | DEF SNAPS 299, ST SNAPS 26 |
+| Jason Jones | Detroit Lions | DE | DEF SNAPS 299, PEN 1, PEN YDS 5, ST SNAPS 26 |
+| Larry Webster | Detroit Lions | DE | DEF SNAPS 1 |
+| Caraun Reid | Detroit Lions | DT | DEF SNAPS 1 |
+| Ndamukong Suh | Detroit Lions | DT | DEF SNAPS 299, ST SNAPS 26 |
+| Nick Fairley | Detroit Lions | DT | DEF SNAPS 207, ST SNAPS 26 |
+| Jed Collins | Detroit Lions | FB | REC LNG 36, OFF SNAPS 83, ST SNAPS 103 |
+| Don Carey | Detroit Lions | FS | DEF SNAPS 102, ST SNAPS 45 |
+| Glover Quin | Detroit Lions | FS | DEF SNAPS 299, ST SNAPS 26 |
+| Larry Warford | Detroit Lions | G | OFF SNAPS 334, ST SNAPS 24 |
+| Rob Sims | Detroit Lions | G | OFF SNAPS 334, ST SNAPS 24 |
+| Josh Bynes | Detroit Lions | ILB | ST SNAPS 21 |
+| Alex Henery | Detroit Lions | K | ST SNAPS 12 |
+| Nate Freese | Detroit Lions | K | ST SNAPS 37 |
+| Don Muhlbach | Detroit Lions | LS | ST SNAPS 48 |
+| Stephen Tulloch | Detroit Lions | MLB | DEF SNAPS 299, ST SNAPS 26 |
+| Travis Lewis | Detroit Lions | MLB | DEF SNAPS 11, ST SNAPS 22 |
+| Ashlee Palmer | Detroit Lions | OLB | DEF SNAPS 1, ST SNAPS 103 |
+| DeAndre Levy | Detroit Lions | OLB | DEF SNAPS 299, ST SNAPS 26 |
+| Tahir Whitehead | Detroit Lions | OLB | DEF SNAPS 149, ST SNAPS 26 |
+| Sam Martin | Detroit Lions | P | ST SNAPS 48 |
+| Matthew Stafford | Detroit Lions | QB | RUSH LNG 50, OFF SNAPS 334, PEN 1, PEN YDS 10 |
+| George Winn | Detroit Lions | RB | OFF SNAPS 2 |
+| Joique Bell | Detroit Lions | RB | REC LNG 29, OFF SNAPS 266, ST SNAPS 21 |
+| Reggie Bush | Detroit Lions | RB | REC LNG 7, OFF SNAPS 74 |
+| Theo Riddick | Detroit Lions | RB | REC LNG 16, OFF SNAPS 5, ST SNAPS 21 |
+| Isa Abdul-Quddus | Detroit Lions | SS | DEF SNAPS 93, ST SNAPS 94 |
+| James Ihedigbo | Detroit Lions | SS | DEF SNAPS 124, ST SNAPS 12 |
+| Jerome Couplin | Detroit Lions | SS | DEF SNAPS 3, ST SNAPS 69 |
+| Corey Hilliard | Detroit Lions | T | OWN FUM REC 1, OFF SNAPS 241, ST SNAPS 19 |
+| LaAdrian Waddle | Detroit Lions | T | OFF SNAPS 334, ST SNAPS 24 |
+| Riley Reiff | Detroit Lions | T | OFF SNAPS 93, ST SNAPS 5 |
+| Brandon Pettigrew | Detroit Lions | TE | OFF SNAPS 334, PEN 1, PEN YDS 10, ST SNAPS 24 |
+| Eric Ebron | Detroit Lions | TE | OFF SNAPS 1, ST SNAPS 82 |
+| Joseph Fauria | Detroit Lions | TE | OFF SNAPS 98, ST SNAPS 127 |
+| Calvin Johnson | Detroit Lions | WR | RUSH LNG 9, OFF SNAPS 334, PEN 1, PEN YDS 10 |
+| Corey Fuller | Detroit Lions | WR | OFF SNAPS 32, ST SNAPS 82 |
+| Golden Tate | Detroit Lions | WR | RUSH LNG 3, OFF SNAPS 265 |
+| Jeremy Ross | Detroit Lions | WR | OWN FUM REC 1, MUFFS 1, OFF SNAPS 72, ST SNAPS 54 |
+| Kevin Ogletree | Detroit Lions | WR | RUSH LNG 4, OFF SNAPS 119 |
+| Ryan Broyles | Detroit Lions | WR | OFF SNAPS 3, PEN 1, PEN YDS 5, ST SNAPS 103 |
+| Garth Gerhart | Green Bay Packers | C | ST SNAPS 21 |
+| Casey Hayward | Green Bay Packers | CB | DEF SNAPS 52, ST SNAPS 96 |
+| Davon House | Green Bay Packers | CB | DEF SNAPS 25, ST SNAPS 62 |
+| Jarrett Bush | Green Bay Packers | CB | DEF SNAPS 1, ST SNAPS 16 |
+| Sam Shields | Green Bay Packers | CB | DEF SNAPS 334, ST SNAPS 15 |
+| Tramon Williams | Green Bay Packers | CB | DEF SNAPS 334, ST SNAPS 15 |
+| Julius Peppers | Green Bay Packers | DE | DEF SNAPS 334, ST SNAPS 15 |
+| Datone Jones | Green Bay Packers | DT | DEF SNAPS 334, ST SNAPS 15 |
+| Mike Daniels | Green Bay Packers | DT | DEF SNAPS 334, ST SNAPS 15 |
+| John Kuhn | Green Bay Packers | FB | REC LNG 46, OFF SNAPS 80, ST SNAPS 104 |
+| Ha Ha Clinton-Dix | Green Bay Packers | FS | DEF SNAPS 212, ST SNAPS 72 |
+| Micah Hyde | Green Bay Packers | FS | DEF SNAPS 334, ST SNAPS 15 |
+| Josh Sitton | Green Bay Packers | G | OFF SNAPS 324, ST SNAPS 24 |
+| Lane Taylor | Green Bay Packers | G | ST SNAPS 24 |
+| T.J. Lang | Green Bay Packers | G | LONG SNAPS 43, OWN FUM REC 1, OFF SNAPS 324, PEN 1, PEN YDS 5, ST SNAPS 46 |
+| Carl Bradford | Green Bay Packers | ILB | ST SNAPS 17 |
+| Sam Barrington | Green Bay Packers | ILB | DEF SNAPS 1, ST SNAPS 104 |
+| Mason Crosby | Green Bay Packers | K | ST SNAPS 50 |
+| Brett Goode | Green Bay Packers | LS | ST SNAPS 12 |
+| Brad Jones | Green Bay Packers | MLB | DEF SNAPS 142, ST SNAPS 15 |
+| Jamari Lattimore | Green Bay Packers | MLB | DEF SNAPS 4, ST SNAPS 87 |
+| Letroy Guion | Green Bay Packers | NT | DEF SNAPS 232, ST SNAPS 15 |
+| Mike Pennel | Green Bay Packers | NT | DEF SNAPS 6 |
+| A.J. Hawk | Green Bay Packers | OLB | DEF SNAPS 334, ST SNAPS 15 |
+| Clay Matthews | Green Bay Packers | OLB | DEF SNAPS 334, PEN 1, PEN YDS 15, ST SNAPS 15 |
+| Mike Neal | Green Bay Packers | OLB | DEF SNAPS 1, ST SNAPS 104 |
+| Nick Perry | Green Bay Packers | OLB | DEF SNAPS 31, PEN 1, PEN YDS 15 |
+| Tim Masthay | Green Bay Packers | P | ST SNAPS 55 |
+| Aaron Rodgers | Green Bay Packers | QB | RUSH LNG 26, OFF SNAPS 324 |
+| DuJuan Harris | Green Bay Packers | RB | REC LNG 10, OFF SNAPS 74, ST SNAPS 19 |
+| Eddie Lacy | Green Bay Packers | RB | REC LNG 54, OFF SNAPS 221 |
+| James Starks | Green Bay Packers | RB | REC LNG 26, OFF SNAPS 56, ST SNAPS 8 |
+| Morgan Burnett | Green Bay Packers | SS | DEF SNAPS 213, ST SNAPS 8 |
+| Sean Richardson | Green Bay Packers | SS | DEF SNAPS 104, ST SNAPS 87 |
+| Bryan Bulaga | Green Bay Packers | T | OFF SNAPS 324, PEN 2, PEN YDS 10, ST SNAPS 24 |
+| David Bakhtiari | Green Bay Packers | T | OFF SNAPS 324, PEN 1, PEN YDS 10, ST SNAPS 24 |
+| Derek Sherrod | Green Bay Packers | T | OFF SNAPS 324, ST SNAPS 24 |
+| Andrew Quarless | Green Bay Packers | TE | OFF SNAPS 21, ST SNAPS 45 |
+| Brandon Bostick | Green Bay Packers | TE | OFF SNAPS 74, ST SNAPS 99 |
+| Richard Rodgers | Green Bay Packers | TE | OFF SNAPS 324, ST SNAPS 24 |
+| Allen Robinson | Green Bay Packers | WR | OFF SNAPS 93, ST SNAPS 43 |
+| Jarrett Boykin | Green Bay Packers | WR | RUSH LNG 5, OFF SNAPS 186 |
+| Jeff Janis | Green Bay Packers | WR | OFF SNAPS 3, ST SNAPS 68 |
+| Jordy Nelson | Green Bay Packers | WR | RUSH LNG 18, OFF SNAPS 191 |
+| Randall Cobb | Green Bay Packers | WR | RUSH LNG 9, OFF SNAPS 324, ST SNAPS 28 |
+| Ben Jones | Houston Texans | C | OFF SNAPS 323, ST SNAPS 23 |
+| Chris Myers | Houston Texans | C | OFF SNAPS 323, PEN 2, PEN YDS 10, ST SNAPS 23 |
+| Elbert Mack | Houston Texans | CB | DEF SNAPS 51, ST SNAPS 103 |
+| Johnathan Joseph | Houston Texans | CB | DEF SNAPS 327, ST SNAPS 27 |
+| J.J. Watt | Houston Texans | DE | DEF SNAPS 327, ST SNAPS 27 |
+| Jared Crick | Houston Texans | DE | INT YDS 44, DEF SNAPS 327, PEN 1, PEN YDS 2, ST SNAPS 27 |
+| Jeoffrey Pagan | Houston Texans | DE | DEF SNAPS 1 |
+| Tim Jamison | Houston Texans | DE | DEF SNAPS 7 |
+| Whitney Mercilus | Houston Texans | DE | DEF SNAPS 226, ST SNAPS 27 |
+| Jay Prosch | Houston Texans | FB | REC LNG 2, OFF SNAPS 80, PEN 1, PEN YDS 9, ST SNAPS 103 |
+| Danieal Manning | Houston Texans | FS | DEF SNAPS 10, ST SNAPS 103 |
+| Kendrick Lewis | Houston Texans | FS | DEF SNAPS 327, ST SNAPS 27 |
+| Brandon Brooks | Houston Texans | G | OFF SNAPS 323, ST SNAPS 23 |
+| Akeem Dent | Houston Texans | ILB | ST SNAPS 23 |
+| Brian Cushing | Houston Texans | ILB | DEF SNAPS 327, ST SNAPS 27 |
+| Jeff Tarpinian | Houston Texans | ILB | DEF SNAPS 3, ST SNAPS 103 |
+| Justin Tuggle | Houston Texans | ILB | ST SNAPS 103 |
+| Mike Mohamed | Houston Texans | ILB | INT YDS 20, DEF SNAPS 327, ST SNAPS 27 |
+| Randy Bullock | Houston Texans | K | ST SNAPS 50 |
+| Jonathan Weeks | Houston Texans | LS | ST SNAPS 47 |
+| Jerrell Powe | Houston Texans | NT | DEF SNAPS 327, PEN 1, PEN YDS 5, ST SNAPS 27 |
+| Brooks Reed | Houston Texans | OLB | DEF SNAPS 163, ST SNAPS 27 |
+| Jadeveon Clowney | Houston Texans | OLB | DEF SNAPS 9 |
+| Jason Ankrah | Houston Texans | OLB | ST SNAPS 80 |
+| Shane Lechler | Houston Texans | P | ST SNAPS 47 |
+| Ryan Fitzpatrick | Houston Texans | QB | RUSH LNG 23, OWN FUM REC 1, OFF SNAPS 323 |
+| Alfred Blue | Houston Texans | RB | REC LNG 11, OFF SNAPS 8, ST SNAPS 23 |
+| Arian Foster | Houston Texans | RB | REC LNG 41, OFF SNAPS 323 |
+| Ronnie Brown | Houston Texans | RB | OFF SNAPS 20, ST SNAPS 45 |
+| D.J. Swearinger | Houston Texans | SS | DEF SNAPS 327, ST SNAPS 27 |
+| Kareem Jackson | Houston Texans | SS | DEF SNAPS 327, PEN 1, PEN YDS 12, ST SNAPS 27 |
+| Shiloh Keo | Houston Texans | SS | DEF SNAPS 208, ST SNAPS 80 |
+| Derek Newton | Houston Texans | T | OFF SNAPS 323, ST SNAPS 23 |
+| Duane Brown | Houston Texans | T | OFF SNAPS 323, PEN 2, PEN YDS 15, ST SNAPS 23 |
+| Jeff Adams | Houston Texans | T | ST SNAPS 23 |
+| C.J. Fiedorowicz | Houston Texans | TE | OFF SNAPS 96, ST SNAPS 126 |
+| Garrett Graham | Houston Texans | TE | OFF SNAPS 323, ST SNAPS 23 |
+| Ryan Griffin | Houston Texans | TE | OFF SNAPS 4, ST SNAPS 11 |
+| Damaris Johnson | Houston Texans | WR | OFF SNAPS 143 |
+| DeAndre Hopkins | Houston Texans | WR | RUSH LNG 10, OFF SNAPS 323 |
+| DeVier Posey | Houston Texans | WR | RUSH LNG 2, OFF SNAPS 9, ST SNAPS 103 |
+| Keshawn Martin | Houston Texans | WR | RUSH LNG 4, OFF SNAPS 323, ST SNAPS 52 |
+| Jonotthan Harrison | Indianapolis Colts | C | OFF SNAPS 47, ST SNAPS 11 |
+| Khaled Holmes | Indianapolis Colts | C | OFF SNAPS 313, ST SNAPS 22 |
+| Gregory Toler | Indianapolis Colts | CB | DEF SNAPS 297, ST SNAPS 27 |
+| Josh Gordy | Indianapolis Colts | CB | DEF SNAPS 26, ST SNAPS 98 |
+| Vontae Davis | Indianapolis Colts | CB | DEF SNAPS 297, ST SNAPS 27 |
+| Cam Johnson | Indianapolis Colts | DE | DEF SNAPS 225, ST SNAPS 27 |
+| Cory Redding | Indianapolis Colts | DE | DEF SNAPS 293, ST SNAPS 26 |
+| Arthur Jones | Indianapolis Colts | DT | DEF SNAPS 233, ST SNAPS 20 |
+| Zach Kerr | Indianapolis Colts | DT | DEF SNAPS 52, ST SNAPS 7 |
+| Mario Harvey | Indianapolis Colts | FB | REC LNG 22, OFF SNAPS 88, ST SNAPS 98 |
+| Darius Butler | Indianapolis Colts | FS | DEF SNAPS 214, PEN 1, PEN YDS 5, ST SNAPS 90 |
+| LaRon Landry | Indianapolis Colts | FS | DEF SNAPS 297, ST SNAPS 27 |
+| Sergio Brown | Indianapolis Colts | FS | DEF SNAPS 1, ST SNAPS 10 |
+| Hugh Thornton | Indianapolis Colts | G | OFF SNAPS 360, PEN 1, PEN YDS 5, ST SNAPS 24 |
+| Jack Mewhort | Indianapolis Colts | G | OFF SNAPS 360, ST SNAPS 24 |
+| Jerrell Freeman | Indianapolis Colts | ILB | DEF SNAPS 297, ST SNAPS 27 |
+| Josh McNary | Indianapolis Colts | ILB | DEF SNAPS 2, ST SNAPS 98 |
+| Adam Vinatieri | Indianapolis Colts | K | ST SNAPS 50 |
+| Matt Overton | Indianapolis Colts | LS | ST SNAPS 41 |
+| D'Qwell Jackson | Indianapolis Colts | MLB | DEF SNAPS 297, ST SNAPS 27 |
+| Henoc Muamba | Indianapolis Colts | MLB | DEF SNAPS 3, ST SNAPS 98 |
+| Josh Chapman | Indianapolis Colts | NT | DEF SNAPS 297, ST SNAPS 27 |
+| Montori Hughes | Indianapolis Colts | NT | DEF SNAPS 5, ST SNAPS 1 |
+| Bjoern Werner | Indianapolis Colts | OLB | DEF SNAPS 147, ST SNAPS 27 |
+| Erik Walden | Indianapolis Colts | OLB | DEF SNAPS 7, ST SNAPS 4 |
+| Jonathan Newsome | Indianapolis Colts | OLB | PEN 1, PEN YDS 10, ST SNAPS 98 |
+| Pat McAfee | Indianapolis Colts | P | ST SNAPS 41 |
+| Andrew Luck | Indianapolis Colts | QB | RUSH LNG 15, OFF SNAPS 360 |
+| Ahmad Bradshaw | Indianapolis Colts | RB | REC LNG 19, OFF SNAPS 126, ST SNAPS 71 |
+| Dan Herron | Indianapolis Colts | RB | REC LNG 9, OFF SNAPS 8, ST SNAPS 31 |
+| Trent Richardson | Indianapolis Colts | RB | REC LNG 19, OFF SNAPS 245 |
+| Zurlon Tipton | Indianapolis Colts | RB | OFF SNAPS 2, ST SNAPS 12 |
+| Colt Anderson | Indianapolis Colts | SS | DEF SNAPS 1, ST SNAPS 18 |
+| Mike Adams (IND) | Indianapolis Colts | SS | DEF SNAPS 297, ST SNAPS 27 |
+| Anthony Castonzo | Indianapolis Colts | T | OFF SNAPS 360, PEN 1, PEN YDS 5, ST SNAPS 24 |
+| Gosder Cherilus | Indianapolis Colts | T | OFF SNAPS 360, ST SNAPS 24 |
+| Joe Reitz | Indianapolis Colts | T | ST SNAPS 13 |
+| Coby Fleener | Indianapolis Colts | TE | OFF SNAPS 101, ST SNAPS 86 |
+| Dwayne Allen | Indianapolis Colts | TE | OFF SNAPS 288, ST SNAPS 19 |
+| Jack Doyle | Indianapolis Colts | TE | OFF SNAPS 67, ST SNAPS 70 |
+| Cecil Shorts | Indianapolis Colts | WR | OFF SNAPS 1, ST SNAPS 27 |
+| Da'Rick Rogers | Indianapolis Colts | WR | RUSH LNG 6, OFF SNAPS 3, ST SNAPS 80 |
+| Donte Moncrief | Indianapolis Colts | WR | OFF SNAPS 160 |
+| Griff Whalen | Indianapolis Colts | WR | MUFFS 1, OFF SNAPS 1, ST SNAPS 24 |
+| Justin Blackmon | Indianapolis Colts | WR | ST SNAPS 8 |
+| Reggie Wayne | Indianapolis Colts | WR | RUSH LNG 7, OFF SNAPS 360 |
+| T.Y. Hilton | Indianapolis Colts | WR | RUSH LNG 3, OFF SNAPS 360, PEN 1, PEN YDS 5 |
+| Mike Brewster | Jacksonville Jaguars | C | OFF SNAPS 332, ST SNAPS 23 |
+| A.J. Bouye | Jacksonville Jaguars | CB | DEF SNAPS 125, PEN 1, PEN YDS 15, ST SNAPS 100 |
+| Alan Ball | Jacksonville Jaguars | CB | ST SNAPS 27 |
+| Alterraun Verner | Jacksonville Jaguars | CB | DEF SNAPS 274, ST SNAPS 42 |
+| Aqib Talib | Jacksonville Jaguars | CB | DEF SNAPS 329, ST SNAPS 17 |
+| Jordan Poyer | Jacksonville Jaguars | CB | DEF SNAPS 155, ST SNAPS 57 |
+| Malcolm Butler | Jacksonville Jaguars | CB | DEF SNAPS 13, ST SNAPS 41 |
+| Mike Harris | Jacksonville Jaguars | CB | DEF SNAPS 70, ST SNAPS 4 |
+| Andre Branch | Jacksonville Jaguars | DE | DEF SNAPS 239, ST SNAPS 19 |
+| Daniel Te'o-Nesheim | Jacksonville Jaguars | DE | DEF SNAPS 4 |
+| Jeremy Mincey | Jacksonville Jaguars | DE | DEF SNAPS 345, ST SNAPS 19 |
+| C.J. Mosley | Jacksonville Jaguars | DT | DEF SNAPS 5 |
+| Roy Miller | Jacksonville Jaguars | DT | DEF SNAPS 345, PEN 1, PEN YDS 15, ST SNAPS 19 |
+| Sen'Derrick Marks | Jacksonville Jaguars | DT | DEF SNAPS 345, ST SNAPS 19 |
+| Montell Owens | Jacksonville Jaguars | FB | REC LNG 28, OFF SNAPS 83, ST SNAPS 103 |
+| Trai Turner | Jacksonville Jaguars | G | OFF SNAPS 332, ST SNAPS 23 |
+| Josh Scobee | Jacksonville Jaguars | K | ST SNAPS 49 |
+| Christian Jones | Jacksonville Jaguars | LB | ST SNAPS 103 |
+| Daryl Smith | Jacksonville Jaguars | LB | DEF SNAPS 345, ST SNAPS 19 |
+| Julian Stanford | Jacksonville Jaguars | LB | DEF SNAPS 172, ST SNAPS 19 |
+| Paul Posluszny | Jacksonville Jaguars | LB | INT YDS 21, DEF SNAPS 345, ST SNAPS 19 |
+| Sio Moore | Jacksonville Jaguars | LB | DEF SNAPS 13 |
+| Telvin Smith | Jacksonville Jaguars | LB | DEF SNAPS 2, ST SNAPS 103 |
+| Todd Davis | Jacksonville Jaguars | LB | ST SNAPS 18 |
+| Casey Kreiter | Jacksonville Jaguars | LS | ST SNAPS 48 |
+| Cornelius Lucas | Jacksonville Jaguars | OT | ST SNAPS 23 |
+| Eugene Monroe | Jacksonville Jaguars | OT | OFF SNAPS 332, ST SNAPS 23 |
+| Joel Bitonio | Jacksonville Jaguars | OT | OFF SNAPS 332, ST SNAPS 23 |
+| Lane Johnson | Jacksonville Jaguars | OT | OFF SNAPS 332, ST SNAPS 23 |
+| Bryan Anger | Jacksonville Jaguars | P | ST SNAPS 48 |
+| Kirk Cousins | Jacksonville Jaguars | QB | RUSH LNG 15, OFF SNAPS 332, PEN 2, PEN YDS 19 |
+| C.J. Anderson | Jacksonville Jaguars | RB | REC LNG 26, OFF SNAPS 32, ST SNAPS 85 |
+| Jonathan Grimes | Jacksonville Jaguars | RB | REC LNG 20, OFF SNAPS 6, ST SNAPS 1 |
+| Maurice Jones-Drew | Jacksonville Jaguars | RB | REC LNG 32, OFF SNAPS 332 |
+| Adrian Phillips | Jacksonville Jaguars | S | DEF SNAPS 1, ST SNAPS 31 |
+| Bacarri Rambo | Jacksonville Jaguars | S | DEF SNAPS 345, ST SNAPS 19 |
+| Brynden Trawick | Jacksonville Jaguars | S | DEF SNAPS 265, ST SNAPS 30 |
+| Chris Prosinski | Jacksonville Jaguars | S | DEF SNAPS 1, ST SNAPS 59 |
+| Dwight Lowery | Jacksonville Jaguars | S | DEF SNAPS 80, ST SNAPS 4 |
+| Marcedes Lewis | Jacksonville Jaguars | TE | OFF SNAPS 332, ST SNAPS 23 |
+| Marcel Jensen | Jacksonville Jaguars | TE | OFF SNAPS 1, ST SNAPS 3 |
+| Travis Kelce | Jacksonville Jaguars | TE | OFF SNAPS 99, PEN 1, PEN YDS 10, ST SNAPS 126 |
+| Adam Thielen | Jacksonville Jaguars | WR | RUSH LNG 1, OFF SNAPS 332 |
+| Allen Hurns | Jacksonville Jaguars | WR | OFF SNAPS 5, ST SNAPS 103 |
+| Andrew Hawkins | Jacksonville Jaguars | WR | OWN FUM REC 1, OFF SNAPS 147, ST SNAPS 52 |
+| Davante Adams | Jacksonville Jaguars | WR | RUSH LNG 2, OFF SNAPS 332 |
+| Rodney Hudson | Kansas City Chiefs | C | OFF SNAPS 308, ST SNAPS 17 |
+| Christopher Owens | Kansas City Chiefs | CB | DEF SNAPS 46, ST SNAPS 91 |
+| Marcus Cooper | Kansas City Chiefs | CB | DEF SNAPS 323, ST SNAPS 21 |
+| Sean Smith | Kansas City Chiefs | CB | DEF SNAPS 323, ST SNAPS 21 |
+| Allen Bailey | Kansas City Chiefs | DE | DEF SNAPS 323, ST SNAPS 21 |
+| Dee Ford | Kansas City Chiefs | DE | DEF SNAPS 223, ST SNAPS 21 |
+| Jaye Howard | Kansas City Chiefs | DE | DEF SNAPS 6 |
+| Mike Devito | Kansas City Chiefs | DE | DEF SNAPS 323, ST SNAPS 21 |
+| Vance Walker | Kansas City Chiefs | DE | DEF SNAPS 3 |
+| Anthony Sherman | Kansas City Chiefs | FB | REC LNG 4, OFF SNAPS 75, ST SNAPS 91 |
+| Husain Abdullah | Kansas City Chiefs | FS | DEF SNAPS 214, ST SNAPS 91 |
+| Kelcie McCray | Kansas City Chiefs | FS | DEF SNAPS 3, ST SNAPS 59 |
+| Jeff Allen | Kansas City Chiefs | G | OFF SNAPS 308, ST SNAPS 17 |
+| Mike McGlynn | Kansas City Chiefs | G | OFF SNAPS 308, ST SNAPS 17 |
+| Zach Fulton | Kansas City Chiefs | G | OFF SNAPS 308, ST SNAPS 17 |
+| Derrick Johnson | Kansas City Chiefs | ILB | DEF SNAPS 314, ST SNAPS 20 |
+| Joshua Mauga | Kansas City Chiefs | ILB | DEF SNAPS 172, ST SNAPS 21 |
+| Cairo Santos | Kansas City Chiefs | K | ST SNAPS 37 |
+| Thomas Gafford | Kansas City Chiefs | LS | ST SNAPS 44 |
+| Damion Square | Kansas City Chiefs | NT | DEF SNAPS 6 |
+| Dontari Poe | Kansas City Chiefs | NT | DEF SNAPS 323, ST SNAPS 21 |
+| Frank Zombo | Kansas City Chiefs | OLB | ST SNAPS 88 |
+| James-Michael Johnson | Kansas City Chiefs | OLB | DEF SNAPS 4, ST SNAPS 82 |
+| Josh Martin | Kansas City Chiefs | OLB | DEF SNAPS 2, ST SNAPS 91 |
+| Justin Houston | Kansas City Chiefs | OLB | DEF SNAPS 296, ST SNAPS 20 |
+| Tamba Hali | Kansas City Chiefs | OLB | DEF SNAPS 31, ST SNAPS 2 |
+| Dustin Colquitt | Kansas City Chiefs | P | ST SNAPS 44 |
+| Alex Smith (KC) | Kansas City Chiefs | QB | RUSH LNG 15, OFF SNAPS 308 |
+| Cyrus Gray | Kansas City Chiefs | RB | ST SNAPS 20 |
+| Jamaal Charles | Kansas City Chiefs | RB | REC LNG 26, OFF SNAPS 308 |
+| Joe McKnight | Kansas City Chiefs | RB | REC LNG 29, OFF SNAPS 32, ST SNAPS 62 |
+| Knile Davis | Kansas City Chiefs | RB | OFF SNAPS 7, ST SNAPS 23 |
+| Eric Berry | Kansas City Chiefs | SS | DEF SNAPS 323, ST SNAPS 21 |
+| Johnathan Cyprien | Kansas City Chiefs | SS | DEF SNAPS 323, ST SNAPS 21 |
+| Eric Fisher | Kansas City Chiefs | T | OFF SNAPS 308, ST SNAPS 17 |
+| Ryan Harris | Kansas City Chiefs | T | ST SNAPS 17 |
+| Anthony Fasano | Kansas City Chiefs | TE | OFF SNAPS 308, ST SNAPS 17 |
+| Demetrius Harris | Kansas City Chiefs | TE | OFF SNAPS 91, ST SNAPS 108 |
+| A.J. Jenkins | Kansas City Chiefs | WR | OFF SNAPS 3, ST SNAPS 35 |
+| Albert Wilson | Kansas City Chiefs | WR | OFF SNAPS 136, PEN 1, PEN YDS 10 |
+| De'Anthony Thomas | Kansas City Chiefs | WR | OFF SNAPS 3, ST SNAPS 9 |
+| Donnie Avery | Kansas City Chiefs | WR | OFF SNAPS 308 |
+| Dwayne Bowe | Kansas City Chiefs | WR | ST SNAPS 5 |
+| Frankie Hammond | Kansas City Chiefs | WR | OFF SNAPS 308 |
+| Junior Hemingway | Kansas City Chiefs | WR | OFF SNAPS 1, ST SNAPS 68 |
+| Samson Satele | Miami Dolphins | C | OFF SNAPS 277, ST SNAPS 18 |
+| Brent Grimes | Miami Dolphins | CB | DEF SNAPS 238, ST SNAPS 16 |
+| Cortland Finnegan | Miami Dolphins | CB | DEF SNAPS 238, ST SNAPS 16 |
+| Jamar Taylor | Miami Dolphins | CB | DEF SNAPS 188, ST SNAPS 78 |
+| Will Davis | Miami Dolphins | CB | DEF SNAPS 4, ST SNAPS 78 |
+| Cameron Wake | Miami Dolphins | DE | DEF SNAPS 238, ST SNAPS 16 |
+| Derrick Shelby | Miami Dolphins | DE | DEF SNAPS 5 |
+| Olivier Vernon | Miami Dolphins | DE | DEF SNAPS 238, ST SNAPS 16 |
+| Terrence Fede | Miami Dolphins | DE | DEF SNAPS 2 |
+| Earl Mitchell | Miami Dolphins | DT | DEF SNAPS 238, ST SNAPS 16 |
+| Jared Odrick | Miami Dolphins | DT | DEF SNAPS 2 |
+| Randy Starks | Miami Dolphins | DT | DEF SNAPS 164, ST SNAPS 16 |
+| Daryn Colledge | Miami Dolphins | G | OFF SNAPS 277, ST SNAPS 18 |
+| Shelley Smith | Miami Dolphins | G | OFF SNAPS 277, ST SNAPS 18 |
+| Caleb Sturgis | Miami Dolphins | K | ST SNAPS 36 |
+| Chris McCain | Miami Dolphins | LB | ST SNAPS 78 |
+| Dannell Ellerbe | Miami Dolphins | LB | DEF SNAPS 209, ST SNAPS 16 |
+| Jason Trusnik | Miami Dolphins | LB | DEF SNAPS 1, ST SNAPS 78 |
+| Jelani Jenkins | Miami Dolphins | LB | DEF SNAPS 90, ST SNAPS 9 |
+| Jonathan Freeny | Miami Dolphins | LB | DEF SNAPS 6, ST SNAPS 22 |
+| Jordan Tripp | Miami Dolphins | LB | ST SNAPS 21 |
+| Koa Misi | Miami Dolphins | LB | DEF SNAPS 119, ST SNAPS 12 |
+| Philip Wheeler | Miami Dolphins | LB | DEF SNAPS 177, ST SNAPS 11 |
+| John Denney | Miami Dolphins | LS | ST SNAPS 38 |
+| Brandon Fields | Miami Dolphins | P | ST SNAPS 38 |
+| Ryan Tannehill | Miami Dolphins | QB | RUSH LNG 5, OFF SNAPS 277 |
+| Damien Williams | Miami Dolphins | RB | REC LNG 9, OFF SNAPS 18, ST SNAPS 50 |
+| Knowshon Moreno | Miami Dolphins | RB | REC LNG 19, OFF SNAPS 110, ST SNAPS 68 |
+| Lamar Miller | Miami Dolphins | RB | REC LNG 15, OFF SNAPS 226 |
+| Orleans Darkwa | Miami Dolphins | RB | ST SNAPS 11 |
+| Jimmy Wilson | Miami Dolphins | S | DEF SNAPS 238, ST SNAPS 16 |
+| Louis Delmas | Miami Dolphins | S | DEF SNAPS 238, ST SNAPS 16 |
+| Michael Thomas | Miami Dolphins | S | ST SNAPS 78 |
+| Walt Aikens | Miami Dolphins | S | ST SNAPS 38 |
+| Branden Albert | Miami Dolphins | T | OFF SNAPS 277, ST SNAPS 18 |
+| Ja'Wuan James | Miami Dolphins | T | OFF SNAPS 277, ST SNAPS 18 |
+| Nate Garner | Miami Dolphins | T | ST SNAPS 18 |
+| Charles Clay | Miami Dolphins | TE | OFF SNAPS 277, ST SNAPS 18 |
+| Dion Sims | Miami Dolphins | TE | OFF SNAPS 83, ST SNAPS 96 |
+| Brandon Gibson | Miami Dolphins | WR | OFF SNAPS 277 |
+| Brian Hartline | Miami Dolphins | WR | OFF SNAPS 120 |
+| Jarvis Landry | Miami Dolphins | WR | OFF SNAPS 2, ST SNAPS 34 |
+| Mike Wallace | Miami Dolphins | WR | OFF SNAPS 277 |
+| Rishard Matthews | Miami Dolphins | WR | OFF SNAPS 5, ST SNAPS 68 |
+| Joe Berger | Minnesota Vikings | C | OWN FUM REC 1, OFF SNAPS 118, ST SNAPS 12 |
+| John Sullivan | Minnesota Vikings | C | OFF SNAPS 193, ST SNAPS 8 |
+| Captain Munnerlyn | Minnesota Vikings | CB | DEF SNAPS 326, ST SNAPS 23 |
+| Jabari Price | Minnesota Vikings | CB | ST SNAPS 23 |
+| Josh Robinson | Minnesota Vikings | CB | DEF SNAPS 282, ST SNAPS 76 |
+| Xavier Rhodes | Minnesota Vikings | CB | DEF SNAPS 212, ST SNAPS 16 |
+| Brian Robison | Minnesota Vikings | DE | DEF SNAPS 326, ST SNAPS 23 |
+| Everson Griffen | Minnesota Vikings | DE | DEF SNAPS 326, ST SNAPS 23 |
+| Sharrif Floyd | Minnesota Vikings | DT | DEF SNAPS 326, ST SNAPS 23 |
+| Tom Johnson | Minnesota Vikings | DT | DEF SNAPS 6 |
+| Jerome Felton | Minnesota Vikings | FB | REC LNG 15, OFF SNAPS 79, ST SNAPS 108 |
+| Zach Line | Minnesota Vikings | FB | OFF SNAPS 1, ST SNAPS 29 |
+| Andrew Sendejo | Minnesota Vikings | FS | DEF SNAPS 1, ST SNAPS 108 |
+| Harrison Smith | Minnesota Vikings | FS | DEF SNAPS 326, ST SNAPS 23 |
+| Brandon Fusco | Minnesota Vikings | G | OFF SNAPS 288, ST SNAPS 14 |
+| Charlie Johnson | Minnesota Vikings | G | OFF SNAPS 311, ST SNAPS 14 |
+| David Yankey | Minnesota Vikings | G | OFF SNAPS 130, ST SNAPS 14 |
+| Gerald Hodges | Minnesota Vikings | ILB | DEF SNAPS 7, ST SNAPS 5 |
+| Blair Walsh | Minnesota Vikings | K | ST SNAPS 33 |
+| Cullen Loeffler | Minnesota Vikings | LS | ST SNAPS 47 |
+| Audie Cole | Minnesota Vikings | MLB | DEF SNAPS 3, ST SNAPS 108 |
+| Jasper Brinkley | Minnesota Vikings | MLB | DEF SNAPS 326, ST SNAPS 23 |
+| Michael Mauti | Minnesota Vikings | MLB | ST SNAPS 83 |
+| Linval Joseph | Minnesota Vikings | NT | DEF SNAPS 226, ST SNAPS 23 |
+| Shamar Stephen | Minnesota Vikings | NT | DEF SNAPS 3 |
+| Anthony Barr | Minnesota Vikings | OLB | DEF SNAPS 162, ST SNAPS 23 |
+| Brandon Watts | Minnesota Vikings | OLB | DEF SNAPS 1, ST SNAPS 65 |
+| Chad Greenway | Minnesota Vikings | OLB | DEF SNAPS 326, ST SNAPS 23 |
+| Jeff Locke | Minnesota Vikings | P | ST SNAPS 47 |
+| Matt Cassel | Minnesota Vikings | QB | RUSH LNG 7, OFF SNAPS 311, 2PT PASS 1 |
+| Adrian Peterson | Minnesota Vikings | RB | REC LNG 37, OWN FUM REC 1, OFF SNAPS 212 |
+| Jerick McKinnon | Minnesota Vikings | RB | REC LNG 60, OFF SNAPS 57, ST SNAPS 50 |
+| Matt Asiata | Minnesota Vikings | RB | REC LNG 19, OFF SNAPS 66, ST SNAPS 69 |
+| Antone Exum | Minnesota Vikings | SS | DEF SNAPS 93, ST SNAPS 108 |
+| Robert Blanton | Minnesota Vikings | SS | DEF SNAPS 326, PEN 2, PEN YDS 10, ST SNAPS 23 |
+| Matt Kalil | Minnesota Vikings | T | OFF SNAPS 311, ST SNAPS 14 |
+| Phil Loadholt | Minnesota Vikings | T | OFF SNAPS 204, PEN 2, PEN YDS 10, ST SNAPS 8 |
+| Kyle Rudolph | Minnesota Vikings | TE | OFF SNAPS 311, ST SNAPS 14 |
+| MarQueis Gray | Minnesota Vikings | TE | OFF SNAPS 4, ST SNAPS 102 |
+| Rhett Ellison | Minnesota Vikings | TE | OFF SNAPS 94, PEN 1, PEN YDS 5, ST SNAPS 120 |
+| Charles Johnson (CLE) | Minnesota Vikings | WR | ST SNAPS 13 |
+| Cordarrelle Patterson | Minnesota Vikings | WR | OFF SNAPS 177, ST SNAPS 16 |
+| Greg Jennings | Minnesota Vikings | WR | RUSH LNG 5, OFF SNAPS 311 |
+| Jarius Wright | Minnesota Vikings | WR | OFF SNAPS 199, 2PT REC 1 |
+| Rodney Smith | Minnesota Vikings | WR | OFF SNAPS 72, ST SNAPS 13 |
+| Bryan Stork | New England Patriots | C | ST SNAPS 24 |
+| Jordan Devey | New England Patriots | C | OFF SNAPS 110, ST SNAPS 24 |
+| Ryan Wendell | New England Patriots | C | OFF SNAPS 310, ST SNAPS 24 |
+| Alfonzo Dennard | New England Patriots | CB | DEF SNAPS 343, ST SNAPS 16 |
+| Darrelle Revis | New England Patriots | CB | DEF SNAPS 343, ST SNAPS 16 |
+| Kyle Arrington | New England Patriots | CB | DEF SNAPS 59, ST SNAPS 87 |
+| Chandler Jones | New England Patriots | DE | DEF SNAPS 239, ST SNAPS 16 |
+| Rob Ninkovich | New England Patriots | DE | DEF SNAPS 343, ST SNAPS 16 |
+| Zach Moore | New England Patriots | DE | DEF SNAPS 8 |
+| Chris Jones (NE) | New England Patriots | DT | DEF SNAPS 1 |
+| Joe Vellano | New England Patriots | DT | DEF SNAPS 343, ST SNAPS 16 |
+| Vince Wilfork | New England Patriots | DT | DEF SNAPS 343, ST SNAPS 16 |
+| Logan Ryan | New England Patriots | FS | DEF SNAPS 4, ST SNAPS 87 |
+| Dan Connolly | New England Patriots | G | LONG SNAPS 37, OFF SNAPS 310, ST SNAPS 42 |
+| Josh Kline | New England Patriots | G | OFF SNAPS 200, ST SNAPS 16 |
+| Stephen Gostkowski | New England Patriots | K | ST SNAPS 50 |
+| Darius Fleming | New England Patriots | LB | INT YDS 4, DEF SNAPS 124, ST SNAPS 15 |
+| Dont'a Hightower | New England Patriots | LB | INT YDS 3, DEF SNAPS 233, ST SNAPS 13 |
+| Jamie Collins | New England Patriots | LB | INT YDS 32, DEF SNAPS 331, ST SNAPS 16 |
+| Jerod Mayo | New England Patriots | LB | DEF SNAPS 134, ST SNAPS 3 |
+| Danny Aiken | New England Patriots | LS | ST SNAPS 10 |
+| Chris White | New England Patriots | OLB | DEF SNAPS 1 |
+| Dominique Easley | New England Patriots | OLB | DEF SNAPS 41, ST SNAPS 7 |
+| Ryan Allen | New England Patriots | P | ST SNAPS 47 |
+| Tom Brady | New England Patriots | QB | RUSH LNG 9, OFF SNAPS 310, PEN 1, PEN YDS 5 |
+| Brandon Bolden | New England Patriots | RB | ST SNAPS 83 |
+| James Develin | New England Patriots | RB | ST SNAPS 1 |
+| James White | New England Patriots | RB | OFF SNAPS 6, ST SNAPS 87 |
+| Shane Vereen | New England Patriots | RB | OFF SNAPS 82, ST SNAPS 86 |
+| Stevan Ridley | New England Patriots | RB | REC LNG 17, OFF SNAPS 307 |
+| Storm Johnson | New England Patriots | RB | ST SNAPS 1 |
+| Devin McCourty | New England Patriots | S | DEF SNAPS 343, ST SNAPS 16 |
+| Duron Harmon | New England Patriots | S | DEF SNAPS 343, ST SNAPS 16 |
+| Patrick Chung | New England Patriots | S | DEF SNAPS 214, ST SNAPS 87 |
+| Tavon Wilson | New England Patriots | S | ST SNAPS 25 |
+| Nate Solder | New England Patriots | T | OFF SNAPS 310, ST SNAPS 24 |
+| Sebastian Vollmer | New England Patriots | T | OFF SNAPS 310, ST SNAPS 24 |
+| Michael Hoomanawanui | New England Patriots | TE | OFF SNAPS 141, ST SNAPS 91 |
+| Rob Gronkowski | New England Patriots | TE | OFF SNAPS 239, ST SNAPS 18 |
+| Timothy Wright | New England Patriots | TE | OFF SNAPS 21, ST SNAPS 93 |
+| Aaron Dobson | New England Patriots | WR | RUSH LNG 1, OFF SNAPS 138 |
+| Brandon LaFell | New England Patriots | WR | ST SNAPS 35 |
+| Brian Tyms | New England Patriots | WR | ST SNAPS 19 |
+| Danny Amendola | New England Patriots | WR | OFF SNAPS 310 |
+| Julian Edelman | New England Patriots | WR | OFF SNAPS 310, ST SNAPS 21 |
+| Kenbrell Thompkins | New England Patriots | WR | OFF SNAPS 5, ST SNAPS 68 |
+| Matt Slater | New England Patriots | WR | OFF SNAPS 1, ST SNAPS 17 |
+| Jonathan Goodwin | New Orleans Saints | C | OFF SNAPS 329, ST SNAPS 23 |
+| Tim Lelito | New Orleans Saints | C | ST SNAPS 23 |
+| Brian Dixon | New Orleans Saints | CB | DEF SNAPS 264, ST SNAPS 98 |
+| Corey White | New Orleans Saints | CB | DEF SNAPS 3, ST SNAPS 98 |
+| Keenan Lewis | New Orleans Saints | CB | DEF SNAPS 332, ST SNAPS 23 |
+| Patrick Robinson | New Orleans Saints | CB | DEF SNAPS 332, ST SNAPS 23 |
+| Cameron Jordan | New Orleans Saints | DE | DEF SNAPS 332, ST SNAPS 23 |
+| Glenn Foster | New Orleans Saints | DE | DEF SNAPS 2 |
+| Akiem Hicks | New Orleans Saints | DT | DEF SNAPS 332, ST SNAPS 23 |
+| Tyrunn Walker | New Orleans Saints | DT | DEF SNAPS 230, ST SNAPS 23 |
+| Austin Johnson | New Orleans Saints | FB | REC LNG 8, OFF SNAPS 81, ST SNAPS 98 |
+| Jairus Byrd | New Orleans Saints | FS | DEF SNAPS 332, PEN 1, PEN YDS 16, ST SNAPS 23 |
+| Rafael Bush | New Orleans Saints | FS | ST SNAPS 98 |
+| Ben Grubbs | New Orleans Saints | G | OFF SNAPS 329, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Jahri Evans | New Orleans Saints | G | OFF SNAPS 329, ST SNAPS 23 |
+| Curtis Lofton | New Orleans Saints | ILB | INT YDS 10, DEF SNAPS 332, ST SNAPS 23 |
+| David Hawthorne | New Orleans Saints | ILB | DEF SNAPS 183, ST SNAPS 13 |
+| Kyle Knox | New Orleans Saints | ILB | ST SNAPS 98 |
+| Ramon Humber | New Orleans Saints | ILB | DEF SNAPS 9, ST SNAPS 52 |
+| Shayne Graham | New Orleans Saints | K | ST SNAPS 51 |
+| Justin Drescher | New Orleans Saints | LS | ST SNAPS 43 |
+| Brandon Deaderick | New Orleans Saints | NT | DEF SNAPS 7 |
+| Brodrick Bunkley | New Orleans Saints | NT | DEF SNAPS 332, PEN 1, PEN YDS 1, ST SNAPS 23 |
+| Junior Galette | New Orleans Saints | OLB | DEF SNAPS 240, ST SNAPS 23 |
+| Parys Haralson | New Orleans Saints | OLB | DEF SNAPS 82, ST SNAPS 10 |
+| Ronald Powell | New Orleans Saints | OLB | DEF SNAPS 3, PEN 1, PEN YDS 10, ST SNAPS 98 |
+| Thomas Morstead | New Orleans Saints | P | ST SNAPS 43 |
+| Drew Brees | New Orleans Saints | QB | RUSH LNG 23, OFF SNAPS 329, PEN 2, PEN YDS 17 |
+| Khiry Robinson | New Orleans Saints | RB | REC LNG 19, OFF SNAPS 42, ST SNAPS 76 |
+| Mark Ingram | New Orleans Saints | RB | REC LNG 45, OFF SNAPS 329 |
+| Pierre Thomas | New Orleans Saints | RB | REC LNG 20, OFF SNAPS 8 |
+| Travaris Cadet | New Orleans Saints | RB | ST SNAPS 50 |
+| Kenny Vaccaro | New Orleans Saints | SS | DEF SNAPS 332, ST SNAPS 23 |
+| Vinnie Sunseri | New Orleans Saints | SS | DEF SNAPS 1, ST SNAPS 44 |
+| Terron Armstead | New Orleans Saints | T | OFF SNAPS 329, ST SNAPS 23 |
+| Zach Strief | New Orleans Saints | T | OFF SNAPS 329, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Benjamin Watson | New Orleans Saints | TE | OFF SNAPS 94, PEN 1, PEN YDS 10, ST SNAPS 113 |
+| Jimmy Graham | New Orleans Saints | TE | OFF SNAPS 329, ST SNAPS 23 |
+| Josh Hill | New Orleans Saints | TE | OFF SNAPS 4, ST SNAPS 45 |
+| Brandin Cooks | New Orleans Saints | WR | RUSH LNG 11, OFF SNAPS 285 |
+| Joe Morgan | New Orleans Saints | WR | OFF SNAPS 78 |
+| Kenny Stills | New Orleans Saints | WR | OFF SNAPS 2, ST SNAPS 18 |
+| Marques Colston | New Orleans Saints | WR | RUSH LNG 9, OFF SNAPS 329 |
+| Robert Meachem | New Orleans Saints | WR | OFF SNAPS 114, ST SNAPS 23 |
+| J.D. Walton | New York Giants | C | OFF SNAPS 288, PEN 1, PEN YDS 7, ST SNAPS 22 |
+| Weston Richburg | New York Giants | C | OFF SNAPS 115, ST SNAPS 10 |
+| Dominique Rodgers-Cromartie | New York Giants | CB | DEF SNAPS 334, ST SNAPS 22 |
+| Prince Amukamara | New York Giants | CB | DEF SNAPS 265, PEN 1, PEN YDS 6, ST SNAPS 16 |
+| Trumaine McBride | New York Giants | CB | DEF SNAPS 1, ST SNAPS 39 |
+| Zackary Bowman | New York Giants | CB | DEF SNAPS 1, ST SNAPS 23 |
+| Jason Pierre-Paul | New York Giants | DE | DEF SNAPS 334, PEN 1, PEN YDS 5, ST SNAPS 22 |
+| Mathias Kiwanuka | New York Giants | DE | DEF SNAPS 334, PEN 1, PEN YDS 5, ST SNAPS 22 |
+| Robert Ayers | New York Giants | DE | DEF SNAPS 6 |
+| Jay Bromley | New York Giants | DT | DEF SNAPS 5 |
+| Johnathan Hankins | New York Giants | DT | DEF SNAPS 231, ST SNAPS 22 |
+| Mike Patterson | New York Giants | DT | DEF SNAPS 334, ST SNAPS 22 |
+| Henry Hynoski | New York Giants | FB | REC LNG 39, OFF SNAPS 72, ST SNAPS 96 |
+| Quintin Demps | New York Giants | FS | DEF SNAPS 1, ST SNAPS 25 |
+| Stevie Brown | New York Giants | FS | DEF SNAPS 334, ST SNAPS 22 |
+| Brandon Mosley | New York Giants | G | OFF SNAPS 288, PEN 1, PEN YDS 5, ST SNAPS 22 |
+| John Jerry | New York Giants | G | OFF SNAPS 173, ST SNAPS 12 |
+| Justin Pugh | New York Giants | G | OFF SNAPS 288, ST SNAPS 22 |
+| Josh Brown | New York Giants | K | ST SNAPS 47 |
+| Zak DeOssie | New York Giants | LS | ST SNAPS 45 |
+| Jameel McClain | New York Giants | MLB | INT YDS 58, DEF SNAPS 334, ST SNAPS 22 |
+| Jon Beason | New York Giants | MLB | ST SNAPS 96 |
+| Mark Herzlich | New York Giants | MLB | DEF SNAPS 1, ST SNAPS 96 |
+| Devon Kennard | New York Giants | OLB | DEF SNAPS 166, ST SNAPS 22 |
+| Jacquian Williams | New York Giants | OLB | DEF SNAPS 334, ST SNAPS 22 |
+| Spencer Paysinger | New York Giants | OLB | DEF SNAPS 8 |
+| Steve Weatherford | New York Giants | P | ST SNAPS 45 |
+| Eli Manning | New York Giants | QB | RUSH LNG 12, OFF SNAPS 288, PEN 2, PEN YDS 15 |
+| Andre Williams | New York Giants | RB | REC LNG 31, OFF SNAPS 26, ST SNAPS 85 |
+| Peyton Hillis | New York Giants | RB | OFF SNAPS 7, ST SNAPS 33 |
+| Rashad Jennings | New York Giants | RB | REC LNG 40, OFF SNAPS 288 |
+| Walter Thurmond | New York Giants | S | DEF SNAPS 280, PEN 1, PEN YDS 15, ST SNAPS 79 |
+| Antrel Rolle | New York Giants | SS | DEF SNAPS 334, ST SNAPS 22 |
+| Nat Berhe | New York Giants | SS | DEF SNAPS 63, ST SNAPS 96 |
+| Charles Brown | New York Giants | T | ST SNAPS 22 |
+| Will Beatty | New York Giants | T | OFF SNAPS 288, ST SNAPS 22 |
+| Adrien Robinson | New York Giants | TE | ST SNAPS 80 |
+| Daniel Fells | New York Giants | TE | OFF SNAPS 84, ST SNAPS 118 |
+| Larry Donnell | New York Giants | TE | OFF SNAPS 288, ST SNAPS 22 |
+| Corey Washington | New York Giants | WR | OFF SNAPS 2, ST SNAPS 79 |
+| Jerrel Jernigan | New York Giants | WR | OFF SNAPS 127, PEN 1, PEN YDS 10 |
+| Odell Beckham | New York Giants | WR | ST SNAPS 22 |
+| Preston Parker | New York Giants | WR | OFF SNAPS 4, ST SNAPS 23 |
+| Rueben Randle | New York Giants | WR | RUSH LNG 2, OFF SNAPS 288 |
+| Victor Cruz | New York Giants | WR | RUSH LNG 10, OFF SNAPS 288 |
+| Nick Mangold | New York Jets | C | OWN FUM REC 1, OFF SNAPS 317, ST SNAPS 20 |
+| Antonio Allen | New York Jets | CB | DEF SNAPS 330, ST SNAPS 27 |
+| Darrin Walls | New York Jets | CB | DEF SNAPS 330, ST SNAPS 27 |
+| Kyle Wilson | New York Jets | CB | DEF SNAPS 263, ST SNAPS 108 |
+| Phillip Adams | New York Jets | CB | DEF SNAPS 7, ST SNAPS 108 |
+| Leger Douzable | New York Jets | DE | DEF SNAPS 330, ST SNAPS 27 |
+| Muhammad Wilkerson | New York Jets | DE | DEF SNAPS 330, ST SNAPS 27 |
+| John Conner | New York Jets | FB | OFF SNAPS 2 |
+| Tommy Bohanon | New York Jets | FB | REC LNG 17, OFF SNAPS 79, ST SNAPS 108 |
+| Brian Winters | New York Jets | G | OFF SNAPS 317, ST SNAPS 20 |
+| Willie Colon | New York Jets | G | OFF SNAPS 317, ST SNAPS 20 |
+| A.J. Edds | New York Jets | ILB | DEF SNAPS 1, ST SNAPS 108 |
+| Nick Bellore | New York Jets | ILB | DEF SNAPS 3, ST SNAPS 88 |
+| Nick Folk | New York Jets | K | ST SNAPS 42 |
+| Tanner Purdum | New York Jets | LS | ST SNAPS 53 |
+| Demario Davis | New York Jets | MLB | DEF SNAPS 330, ST SNAPS 27 |
+| Damon Harrison | New York Jets | NT | INT YDS 32, DEF SNAPS 330, ST SNAPS 27 |
+| Kenrick Ellis | New York Jets | NT | DEF SNAPS 229, ST SNAPS 27 |
+| Calvin Pace | New York Jets | OLB | DEF SNAPS 199, PEN 1, PEN YDS 23, ST SNAPS 27 |
+| David Harris | New York Jets | OLB | DEF SNAPS 261, ST SNAPS 18 |
+| Quinton Coples | New York Jets | OLB | DEF SNAPS 41, ST SNAPS 9 |
+| Trevor Reilly | New York Jets | OLB | DEF SNAPS 2, ST SNAPS 108 |
+| Ryan Quigley | New York Jets | P | ST SNAPS 53 |
+| Geno Smith | New York Jets | QB | RUSH LNG 17, OFF SNAPS 317 |
+| Bilal Powell | New York Jets | RB | OFF SNAPS 9 |
+| Chris Ivory | New York Jets | RB | REC LNG 42, OWN FUM REC 1, OFF SNAPS 317 |
+| Chris Johnson | New York Jets | RB | REC LNG 26, OFF SNAPS 36, ST SNAPS 61 |
+| Calvin Pryor | New York Jets | S | DEF SNAPS 330, PEN 2, PEN YDS 8, ST SNAPS 27 |
+| Dawan Landry | New York Jets | S | DEF SNAPS 330, ST SNAPS 27 |
+| Jaiquawn Jarrett | New York Jets | S | DEF SNAPS 3, ST SNAPS 108 |
+| Breno Giacomini | New York Jets | T | OFF SNAPS 317, ST SNAPS 20 |
+| D'Brickashaw Ferguson | New York Jets | T | OFF SNAPS 317, ST SNAPS 20 |
+| Sheldon Richardson | New York Jets | T | ST SNAPS 20 |
+| Jace Amaro | New York Jets | TE | OFF SNAPS 88, ST SNAPS 121 |
+| Jeff Cumberland | New York Jets | TE | OFF SNAPS 317, ST SNAPS 20 |
+| Zach Sudfeld | New York Jets | TE | OFF SNAPS 5, ST SNAPS 18 |
+| David Nelson | New York Jets | WR | OFF SNAPS 4, ST SNAPS 108 |
+| Eric Decker | New York Jets | WR | OFF SNAPS 317 |
+| Greg Salas | New York Jets | WR | OFF SNAPS 140 |
+| Jalen Saunders | New York Jets | WR | ST SNAPS 18 |
+| Jeremy Kerley | New York Jets | WR | RUSH LNG 1, MUFFS 1, OFF SNAPS 317, ST SNAPS 5 |
+| Saalim Hakim | New York Jets | WR | RUSH LNG 6, OFF SNAPS 5, ST SNAPS 30 |
+| Trevor Graham | New York Jets, Tennessee Titans | WR | OFF SNAPS 1, ST SNAPS 41 |
+| Stefen Wisniewski | Oakland Raiders | C | OFF SNAPS 282, ST SNAPS 20 |
+| Carlos Rogers | Oakland Raiders | CB | DEF SNAPS 247, ST SNAPS 16 |
+| Neiko Thorpe | Oakland Raiders | CB | DEF SNAPS 1, ST SNAPS 82 |
+| T.J. Carrie | Oakland Raiders | CB | ST SNAPS 26 |
+| Tarell Brown | Oakland Raiders | CB | DEF SNAPS 247, ST SNAPS 16 |
+| Justin Tuck | Oakland Raiders | DE | DEF SNAPS 247, ST SNAPS 16 |
+| Khalil Mack | Oakland Raiders | DE | DEF SNAPS 247, ST SNAPS 16 |
+| Antonio Smith | Oakland Raiders | DT | DEF SNAPS 178, ST SNAPS 16 |
+| Stacy McGee | Oakland Raiders | DT | DEF SNAPS 2 |
+| Jamize Olawale | Oakland Raiders | FB | OFF SNAPS 1, ST SNAPS 82 |
+| Marcel Reece | Oakland Raiders | FB | REC LNG 18, OFF SNAPS 68, ST SNAPS 82 |
+| Charles Woodson | Oakland Raiders | FS | DEF SNAPS 247, ST SNAPS 16 |
+| Jonathan Dowling | Oakland Raiders | FS | ST SNAPS 82 |
+| Keith McGill | Oakland Raiders | FS | ST SNAPS 40 |
+| Sebastian Janikowski | Oakland Raiders | K | ST SNAPS 42 |
+| LaMarr Woodley | Oakland Raiders | LB | INT YDS 16, DEF SNAPS 247, ST SNAPS 16 |
+| Jon Condo | Oakland Raiders | LS | ST SNAPS 36 |
+| Kaluka Maiava | Oakland Raiders | MLB | DEF SNAPS 122, ST SNAPS 16 |
+| Miles Burris | Oakland Raiders | MLB | DEF SNAPS 247, ST SNAPS 16 |
+| Justin Ellis | Oakland Raiders | NT | DEF SNAPS 23, ST SNAPS 2 |
+| Pat Sims | Oakland Raiders | NT | DEF SNAPS 224, ST SNAPS 14 |
+| Benson Mayowa | Oakland Raiders | OLB | DEF SNAPS 5 |
+| Marquette King | Oakland Raiders | P | ST SNAPS 36 |
+| Derek Carr | Oakland Raiders | QB | RUSH LNG 30, OFF SNAPS 280 |
+| Matt Schaub | Oakland Raiders | QB | OFF SNAPS 2 |
+| Darren McFadden | Oakland Raiders | RB | REC LNG 52, OFF SNAPS 282 |
+| Latavius Murray | Oakland Raiders | RB | REC LNG 15, OFF SNAPS 20, ST SNAPS 18 |
+| Taiwan Jones | Oakland Raiders | RB | OFF SNAPS 6, ST SNAPS 82 |
+| Tyvon Branch | Oakland Raiders | SS | DEF SNAPS 247, ST SNAPS 16 |
+| Usama Young | Oakland Raiders | SS | DEF SNAPS 196, ST SNAPS 82 |
+| Austin Howard | Oakland Raiders | T | OFF SNAPS 282, ST SNAPS 20 |
+| Donald Penn | Oakland Raiders | T | OFF SNAPS 282, ST SNAPS 20 |
+| Khalif Barnes | Oakland Raiders | T | OFF SNAPS 282, ST SNAPS 20 |
+| Matt McCants | Oakland Raiders | T | ST SNAPS 20 |
+| Menelik Watson | Oakland Raiders | T | OFF SNAPS 282, ST SNAPS 20 |
+| Brian Leonhardt | Oakland Raiders | TE | ST SNAPS 82 |
+| David Ausberry | Oakland Raiders | TE | OFF SNAPS 282, ST SNAPS 20 |
+| Mychal Rivera | Oakland Raiders | TE | OFF SNAPS 83, ST SNAPS 102 |
+| Andre Holmes | Oakland Raiders | WR | OFF SNAPS 4, ST SNAPS 82 |
+| Denarius Moore | Oakland Raiders | WR | OFF SNAPS 125 |
+| James Jones | Oakland Raiders | WR | RUSH LNG 38, OFF SNAPS 282 |
+| Rod Streater | Oakland Raiders | WR | RUSH LNG 6, OFF SNAPS 282 |
+| Jason Kelce | Philadelphia Eagles | C | OFF SNAPS 285, ST SNAPS 19 |
+| Bradley Fletcher | Philadelphia Eagles | CB | DEF SNAPS 352, ST SNAPS 25 |
+| Brandon Boykin | Philadelphia Eagles | CB | DEF SNAPS 129, ST SNAPS 120 |
+| Cary Williams | Philadelphia Eagles | CB | DEF SNAPS 352, ST SNAPS 25 |
+| Dwayne Gratz | Philadelphia Eagles | CB | DEF SNAPS 175, PEN 1, PEN YDS 17, ST SNAPS 39 |
+| Nolan Carroll | Philadelphia Eagles | CB | DEF SNAPS 4, ST SNAPS 30 |
+| Brandon Bair | Philadelphia Eagles | DE | DEF SNAPS 4 |
+| Cedric Thornton | Philadelphia Eagles | DE | DEF SNAPS 352, ST SNAPS 25 |
+| Fletcher Cox | Philadelphia Eagles | DE | DEF SNAPS 352, ST SNAPS 25 |
+| Vinny Curry | Philadelphia Eagles | DE | DEF SNAPS 245, ST SNAPS 25 |
+| Allen Barbre | Philadelphia Eagles | G | OFF SNAPS 126, ST SNAPS 26 |
+| Andrew Gardner | Philadelphia Eagles | G | OFF SNAPS 38, ST SNAPS 13 |
+| Evan Mathis | Philadelphia Eagles | G | OFF SNAPS 243, ST SNAPS 17 |
+| Luke Joeckel | Philadelphia Eagles | G | OFF SNAPS 346, PEN 1, PEN YDS 10, ST SNAPS 26 |
+| Matt Tobin | Philadelphia Eagles | G | ST SNAPS 3 |
+| Todd Herremans | Philadelphia Eagles | G | OFF SNAPS 346, ST SNAPS 26 |
+| Casey Matthews | Philadelphia Eagles | ILB | DEF SNAPS 3, ST SNAPS 122 |
+| DeMeco Ryans | Philadelphia Eagles | ILB | DEF SNAPS 352, PEN 1, PEN YDS 15, ST SNAPS 25 |
+| Mychal Kendricks | Philadelphia Eagles | ILB | DEF SNAPS 176, ST SNAPS 25 |
+| Najee Goode | Philadelphia Eagles | ILB | DEF SNAPS 1, ST SNAPS 122 |
+| Cody Parkey | Philadelphia Eagles | K | ST SNAPS 56 |
+| Jon Dorenbos | Philadelphia Eagles | LS | ST SNAPS 59 |
+| Beau Allen | Philadelphia Eagles | NT | DEF SNAPS 1 |
+| Bennie Logan | Philadelphia Eagles | NT | DEF SNAPS 352, ST SNAPS 25 |
+| Brandon Graham | Philadelphia Eagles | OLB | ST SNAPS 122 |
+| Connor Barwin | Philadelphia Eagles | OLB | DEF SNAPS 12 |
+| Marcus Smith | Philadelphia Eagles | OLB | ST SNAPS 18 |
+| Trent Cole | Philadelphia Eagles | OLB | DEF SNAPS 352, PEN 1, PEN YDS 15, ST SNAPS 25 |
+| Donnie Jones | Philadelphia Eagles | P | ST SNAPS 59 |
+| Nick Foles | Philadelphia Eagles | QB | RUSH LNG 27, OFF SNAPS 346 |
+| Chris Polk | Philadelphia Eagles | RB | REC LNG 6, OFF SNAPS 20, ST SNAPS 122 |
+| Darren Sproles | Philadelphia Eagles | RB | REC LNG 24, OFF SNAPS 132, ST SNAPS 29 |
+| LeSean McCoy | Philadelphia Eagles | RB | REC LNG 38, OFF SNAPS 288 |
+| Malcolm Jenkins | Philadelphia Eagles | S | DEF SNAPS 352, ST SNAPS 25 |
+| Nate Allen | Philadelphia Eagles | S | DEF SNAPS 326, ST SNAPS 55 |
+| Jason Peters | Philadelphia Eagles | T | OWN FUM REC 1, OFF SNAPS 346, ST SNAPS 26 |
+| Brent Celek | Philadelphia Eagles | TE | OFF SNAPS 346, ST SNAPS 26 |
+| James Casey | Philadelphia Eagles | TE | ST SNAPS 122 |
+| Trey Burton | Philadelphia Eagles | TE | ST SNAPS 39 |
+| Zach Ertz | Philadelphia Eagles | TE | OFF SNAPS 102, ST SNAPS 148 |
+| Ace Sanders | Philadelphia Eagles | WR | OFF SNAPS 7, ST SNAPS 77 |
+| Brad Smith | Philadelphia Eagles | WR | OFF SNAPS 298 |
+| Jeff Maehl | Philadelphia Eagles | WR | OFF SNAPS 37, ST SNAPS 95 |
+| Jeremy Maclin | Philadelphia Eagles | WR | RUSH LNG 2, OFF SNAPS 281 |
+| Jordan Matthews | Philadelphia Eagles | WR | OFF SNAPS 182, ST SNAPS 8 |
+| Josh Huff | Philadelphia Eagles | WR | OFF SNAPS 29 |
+| Riley Cooper | Philadelphia Eagles | WR | OFF SNAPS 22 |
+| Maurkice Pouncey | Pittsburgh Steelers | C | OFF SNAPS 323, ST SNAPS 28 |
+| Brice McCain | Pittsburgh Steelers | CB | DEF SNAPS 2, ST SNAPS 73 |
+| Cortez Allen | Pittsburgh Steelers | CB | DEF SNAPS 326, ST SNAPS 22 |
+| Ivan Taylor | Pittsburgh Steelers | CB | DEF SNAPS 326, ST SNAPS 22 |
+| William Gay | Pittsburgh Steelers | CB | DEF SNAPS 109, ST SNAPS 93 |
+| Brett Keisel | Pittsburgh Steelers | DE | DEF SNAPS 2 |
+| Stephon Tuitt | Pittsburgh Steelers | DE | DEF SNAPS 227, ST SNAPS 22 |
+| Cameron Heyward | Pittsburgh Steelers | DT | DEF SNAPS 324, ST SNAPS 22 |
+| Will Johnson | Pittsburgh Steelers | FB | REC LNG 2, OFF SNAPS 80, ST SNAPS 93 |
+| Michael Mitchell | Pittsburgh Steelers | FS | DEF SNAPS 253, ST SNAPS 18 |
+| Will Allen | Pittsburgh Steelers | FS | DEF SNAPS 224, ST SNAPS 79 |
+| David DeCastro | Pittsburgh Steelers | G | OFF SNAPS 326, ST SNAPS 28 |
+| Ramon Foster | Pittsburgh Steelers | G | OFF SNAPS 326, ST SNAPS 28 |
+| Ryan Shazier | Pittsburgh Steelers | ILB | INT YDS 3, DEF SNAPS 326, ST SNAPS 22 |
+| Sean Spence | Pittsburgh Steelers | ILB | ST SNAPS 7 |
+| Vince Williams | Pittsburgh Steelers | ILB | DEF SNAPS 1, ST SNAPS 93 |
+| Shaun Suisham | Pittsburgh Steelers | K | ST SNAPS 60 |
+| Greg Warren | Pittsburgh Steelers | LS | ST SNAPS 46 |
+| Cam Thomas | Pittsburgh Steelers | NT | DEF SNAPS 326, ST SNAPS 22 |
+| Daniel McCullers | Pittsburgh Steelers | NT | DEF SNAPS 11 |
+| Steve McLendon | Pittsburgh Steelers | NT | DEF SNAPS 326, ST SNAPS 22 |
+| Arthur Moats | Pittsburgh Steelers | OLB | DEF SNAPS 1, ST SNAPS 83 |
+| Jarvis Jones | Pittsburgh Steelers | OLB | DEF SNAPS 13 |
+| Jason Worilds | Pittsburgh Steelers | OLB | DEF SNAPS 326, ST SNAPS 22 |
+| Lawrence Timmons | Pittsburgh Steelers | OLB | DEF SNAPS 162, ST SNAPS 22 |
+| Terence Garvin | Pittsburgh Steelers | OLB | ST SNAPS 86 |
+| Brad Wing | Pittsburgh Steelers | P | ST SNAPS 46 |
+| Ben Roethlisberger | Pittsburgh Steelers | QB | RUSH LNG 18, OFF SNAPS 326 |
+| Dri Archer | Pittsburgh Steelers | RB | OFF SNAPS 6, ST SNAPS 25 |
+| Le'Veon Bell | Pittsburgh Steelers | RB | REC LNG 55, OFF SNAPS 326 |
+| LeGarrette Blount | Pittsburgh Steelers | RB | REC LNG 28, OFF SNAPS 31, ST SNAPS 70 |
+| Shamarko Thomas | Pittsburgh Steelers | SS | DEF SNAPS 1, ST SNAPS 20 |
+| Troy Polamalu | Pittsburgh Steelers | SS | DEF SNAPS 326, ST SNAPS 22 |
+| Kelvin Beachum | Pittsburgh Steelers | T | OFF SNAPS 326, ST SNAPS 28 |
+| Marcus Gilbert | Pittsburgh Steelers | T | OFF SNAPS 326, ST SNAPS 28 |
+| Mike Adams (PIT) | Pittsburgh Steelers | T | OFF SNAPS 3, ST SNAPS 28 |
+| Heath Miller | Pittsburgh Steelers | TE | OFF SNAPS 326, ST SNAPS 28 |
+| Matt Spaeth | Pittsburgh Steelers | TE | OFF SNAPS 96, ST SNAPS 121 |
+| Michael Palmer | Pittsburgh Steelers | TE | ST SNAPS 26 |
+| Antonio Brown | Pittsburgh Steelers | WR | OFF SNAPS 276, PEN 1, PEN YDS 10, ST SNAPS 15 |
+| Darrius Heyward-Bey | Pittsburgh Steelers | WR | OFF SNAPS 1, ST SNAPS 23 |
+| Justin Brown | Pittsburgh Steelers | WR | OFF SNAPS 172 |
+| Lance Moore | Pittsburgh Steelers | WR | OFF SNAPS 4, ST SNAPS 54 |
+| Markus Wheaton | Pittsburgh Steelers | WR | OFF SNAPS 326 |
+| Martavis Bryant | Pittsburgh Steelers | WR | OFF SNAPS 24, ST SNAPS 8 |
+| Nick Hardwick | San Diego Chargers | C | OFF SNAPS 316, PEN 1, PEN YDS 5, ST SNAPS 19 |
+| Brandon Flowers | San Diego Chargers | CB | DEF SNAPS 322, PEN 3, PEN YDS 14, ST SNAPS 21 |
+| Jason Verrett | San Diego Chargers | CB | DEF SNAPS 258, PEN 2, PEN YDS 11, ST SNAPS 87 |
+| Richard Marshall | San Diego Chargers | CB | DEF SNAPS 4, ST SNAPS 88 |
+| Shareece Wright | San Diego Chargers | CB | DEF SNAPS 309, ST SNAPS 21 |
+| Kendall Reyes | San Diego Chargers | DE | DEF SNAPS 322, ST SNAPS 21 |
+| Corey Liuget | San Diego Chargers | DT | DEF SNAPS 322, ST SNAPS 21 |
+| Ricardo Mathews | San Diego Chargers | DT | DEF SNAPS 1 |
+| Ryan Carrethers | San Diego Chargers | DT | DEF SNAPS 4 |
+| Sean Lissemore | San Diego Chargers | DT | DEF SNAPS 322, ST SNAPS 21 |
+| Tenny Palepoi | San Diego Chargers | DT | DEF SNAPS 44, ST SNAPS 3 |
+| Darrell Stuckey | San Diego Chargers | FS | DEF SNAPS 13, ST SNAPS 88 |
+| Eric Weddle | San Diego Chargers | FS | DEF SNAPS 322, ST SNAPS 21 |
+| Chad Rinehart | San Diego Chargers | G | OFF SNAPS 316, ST SNAPS 19 |
+| D.J. Fluker | San Diego Chargers | G | OFF SNAPS 316, PEN 1, PEN YDS 5, ST SNAPS 19 |
+| Johnnie Troutman | San Diego Chargers | G | OFF SNAPS 316, ST SNAPS 19 |
+| Donald Butler | San Diego Chargers | ILB | DEF SNAPS 160, PEN 1, PEN YDS 11, ST SNAPS 21 |
+| Kavell Conner | San Diego Chargers | ILB | DEF SNAPS 2, ST SNAPS 88 |
+| Manti Te'o | San Diego Chargers | ILB | DEF SNAPS 322, ST SNAPS 21 |
+| Reggie Walker | San Diego Chargers | ILB | DEF SNAPS 2, ST SNAPS 88 |
+| Nick Novak | San Diego Chargers | K | ST SNAPS 43 |
+| Mike Windt | San Diego Chargers | LS | ST SNAPS 41 |
+| Jarret Johnson | San Diego Chargers | OLB | DEF SNAPS 4 |
+| Melvin Ingram | San Diego Chargers | OLB | DEF SNAPS 322, ST SNAPS 21 |
+| Tourek Williams | San Diego Chargers | OLB | ST SNAPS 88 |
+| Mike Scifres | San Diego Chargers | P | ST SNAPS 41 |
+| Philip Rivers | San Diego Chargers | QB | RUSH LNG 10, OWN FUM REC 1, OFF SNAPS 316 |
+| Branden Oliver | San Diego Chargers | RB | OFF SNAPS 3, ST SNAPS 38 |
+| Danny Woodhead | San Diego Chargers | RB | REC LNG 32, OFF SNAPS 178, ST SNAPS 50 |
+| Donald Brown | San Diego Chargers | RB | REC LNG 5, OFF SNAPS 41, ST SNAPS 23 |
+| Ryan Mathews | San Diego Chargers | RB | REC LNG 27, OFF SNAPS 188 |
+| Jahleel Addae | San Diego Chargers | SS | ST SNAPS 11 |
+| Marcus Gilchrist | San Diego Chargers | SS | DEF SNAPS 322, ST SNAPS 21 |
+| King Dunlap | San Diego Chargers | T | OFF SNAPS 316, ST SNAPS 19 |
+| Willie Smith | San Diego Chargers | T | ST SNAPS 19 |
+| Antonio Gates | San Diego Chargers | TE | OFF SNAPS 316, ST SNAPS 19 |
+| David Johnson | San Diego Chargers | TE | OFF SNAPS 2 |
+| John Phillips | San Diego Chargers | TE | ST SNAPS 37 |
+| Ladarius Green | San Diego Chargers | TE | OFF SNAPS 94, ST SNAPS 107 |
+| Dontrelle Inman | San Diego Chargers | WR | OFF SNAPS 2 |
+| Eddie Royal | San Diego Chargers | WR | RUSH LNG 15, OFF SNAPS 140, ST SNAPS 19 |
+| Keenan Allen | San Diego Chargers | WR | RUSH LNG 8, OFF SNAPS 316 |
+| Malcom Floyd | San Diego Chargers | WR | OFF SNAPS 316 |
+| Seyi Ajirotutu | San Diego Chargers | WR | OFF SNAPS 7, ST SNAPS 88 |
+| Daniel Kilgore | San Francisco 49ers | C | OFF SNAPS 324, ST SNAPS 23 |
+| Joe Looney | San Francisco 49ers | C | OFF SNAPS 324, ST SNAPS 23 |
+| Chris Cook | San Francisco 49ers | CB | DEF SNAPS 3, ST SNAPS 84 |
+| Chris Culliver | San Francisco 49ers | CB | DEF SNAPS 324, ST SNAPS 28 |
+| Perrish Cox | San Francisco 49ers | CB | DEF SNAPS 257, ST SNAPS 84 |
+| Tramaine Brock | San Francisco 49ers | CB | DEF SNAPS 324, ST SNAPS 28 |
+| Cornellius Carradine | San Francisco 49ers | DE | DEF SNAPS 1 |
+| Demarcus Dobbs | San Francisco 49ers | DE | DEF SNAPS 90, ST SNAPS 9 |
+| Justin Smith | San Francisco 49ers | DE | DEF SNAPS 324, ST SNAPS 28 |
+| Ray McDonald | San Francisco 49ers | DE | DEF SNAPS 198, ST SNAPS 19 |
+| Tony Jerod-Eddie | San Francisco 49ers | DT | DEF SNAPS 262, PEN 1, PEN YDS 15, ST SNAPS 28 |
+| Bruce Miller | San Francisco 49ers | FB | REC LNG 17, OFF SNAPS 51, ST SNAPS 55 |
+| Eric Reid | San Francisco 49ers | FS | DEF SNAPS 324, ST SNAPS 28 |
+| Jimmie Ward | San Francisco 49ers | FS | DEF SNAPS 3, ST SNAPS 84 |
+| Dillon Farrell | San Francisco 49ers | G | ST SNAPS 23 |
+| Mike Iupati | San Francisco 49ers | G | OFF SNAPS 324, ST SNAPS 23 |
+| Chris Borland | San Francisco 49ers | ILB | DEF SNAPS 43, PEN 1, PEN YDS 5, ST SNAPS 69 |
+| Michael Wilhoite | San Francisco 49ers | ILB | DEF SNAPS 97, ST SNAPS 8 |
+| Nick Moody | San Francisco 49ers | ILB | DEF SNAPS 2, ST SNAPS 64 |
+| Patrick Willis | San Francisco 49ers | ILB | DEF SNAPS 237, ST SNAPS 21 |
+| Phil Dawson | San Francisco 49ers | K | ST SNAPS 43 |
+| Kyle Nelson | San Francisco 49ers | LS | ST SNAPS 42 |
+| Ian Williams | San Francisco 49ers | NT | DEF SNAPS 324, ST SNAPS 28 |
+| Quinton Dial | San Francisco 49ers | NT | DEF SNAPS 3 |
+| Aaron Lynch | San Francisco 49ers | OLB | ST SNAPS 84 |
+| Ahmad Brooks | San Francisco 49ers | OLB | DEF SNAPS 209, PEN 1, PEN YDS 4, ST SNAPS 28 |
+| Corey Lemonier | San Francisco 49ers | OLB | ST SNAPS 16 |
+| Dan Skuta | San Francisco 49ers | OLB | DEF SNAPS 227, ST SNAPS 20 |
+| Andy Lee | San Francisco 49ers | P | ST SNAPS 42 |
+| Colin Kaepernick | San Francisco 49ers | QB | RUSH LNG 17, OFF SNAPS 324, PEN 1, PEN YDS 5 |
+| Carlos Hyde | San Francisco 49ers | RB | REC LNG 13, OFF SNAPS 48, ST SNAPS 65 |
+| Frank Gore | San Francisco 49ers | RB | REC LNG 74, OFF SNAPS 324 |
+| LaMichael James | San Francisco 49ers | RB | OFF SNAPS 4, ST SNAPS 6 |
+| Antoine Bethea | San Francisco 49ers | SS | DEF SNAPS 324, PEN 1, PEN YDS 6, ST SNAPS 28 |
+| Craig Dahl | San Francisco 49ers | SS | DEF SNAPS 1, ST SNAPS 9 |
+| Anthony Davis | San Francisco 49ers | T | OFF SNAPS 250, ST SNAPS 17 |
+| Joe Staley | San Francisco 49ers | T | OFF SNAPS 324, ST SNAPS 23 |
+| Jonathan Martin | San Francisco 49ers | T | OFF SNAPS 74, ST SNAPS 6 |
+| Derek Carrier | San Francisco 49ers | TE | ST SNAPS 21 |
+| Vance McDonald | San Francisco 49ers | TE | OFF SNAPS 95, PEN 1, PEN YDS 10, ST SNAPS 107 |
+| Vernon Davis | San Francisco 49ers | TE | OFF SNAPS 324, ST SNAPS 23 |
+| Anquan Boldin | San Francisco 49ers | WR | RUSH LNG 9, OFF SNAPS 324 |
+| Brandon Lloyd | San Francisco 49ers | WR | OFF SNAPS 11, ST SNAPS 84 |
+| Bruce Ellington | San Francisco 49ers | WR | OFF SNAPS 2, ST SNAPS 45 |
+| Michael Crabtree | San Francisco 49ers | WR | OFF SNAPS 324 |
+| Quinton Patton | San Francisco 49ers | WR | ST SNAPS 2 |
+| Steve Johnson | San Francisco 49ers | WR | OFF SNAPS 145 |
+| Justin Britt | Seattle Seahawks | C | OFF SNAPS 273, ST SNAPS 20 |
+| Max Unger | Seattle Seahawks | C | OFF SNAPS 273, ST SNAPS 20 |
+| Byron Maxwell | Seattle Seahawks | CB | DEF SNAPS 271, ST SNAPS 18 |
+| Jeremy Lane | Seattle Seahawks | CB | DEF SNAPS 215, PEN 1, PEN YDS 9, ST SNAPS 84 |
+| Richard Sherman | Seattle Seahawks | CB | DEF SNAPS 271, PEN 1, PEN YDS 8, ST SNAPS 18 |
+| Cliff Avril | Seattle Seahawks | DE | INT YDS 35, DEF SNAPS 271, ST SNAPS 18 |
+| Michael Bennett | Seattle Seahawks | DE | DEF SNAPS 271, ST SNAPS 18 |
+| Jordan Hill | Seattle Seahawks | DT | DEF SNAPS 1 |
+| Kevin Williams | Seattle Seahawks | DT | DEF SNAPS 5 |
+| Tony McDaniel | Seattle Seahawks | DT | DEF SNAPS 187, ST SNAPS 18 |
+| Derrick Coleman | Seattle Seahawks | FB | REC LNG 18, OFF SNAPS 68, ST SNAPS 84 |
+| DeShawn Shead | Seattle Seahawks | FS | DEF SNAPS 1, ST SNAPS 43 |
+| Earl Thomas | Seattle Seahawks | FS | FUM 1, DEF SNAPS 271, MUFFS 1, ST SNAPS 40 |
+| Alvin Bailey | Seattle Seahawks | G | ST SNAPS 20 |
+| J.R. Sweezy | Seattle Seahawks | G | OFF SNAPS 273, ST SNAPS 20 |
+| James Carpenter | Seattle Seahawks | G | OFF SNAPS 273, ST SNAPS 20 |
+| Stephen Hauschka | Seattle Seahawks | K | ST SNAPS 40 |
+| O'Brien Schofield | Seattle Seahawks | LB | DEF SNAPS 1, ST SNAPS 84 |
+| Clint Gresham | Seattle Seahawks | LS | ST SNAPS 41 |
+| Bobby Wagner | Seattle Seahawks | MLB | DEF SNAPS 178, ST SNAPS 18 |
+| Brock Coyle | Seattle Seahawks | MLB | DEF SNAPS 4, ST SNAPS 50 |
+| Brandon Mebane | Seattle Seahawks | NT | DEF SNAPS 271, ST SNAPS 18 |
+| Bruce Irvin | Seattle Seahawks | OLB | DEF SNAPS 47, ST SNAPS 7 |
+| K.J. Wright | Seattle Seahawks | OLB | DEF SNAPS 271, FUM TD 1, ST SNAPS 18 |
+| Malcolm Smith | Seattle Seahawks | OLB | DEF SNAPS 185, ST SNAPS 11 |
+| Michael Morgan | Seattle Seahawks | OLB | ST SNAPS 63 |
+| Jon Ryan | Seattle Seahawks | P | ST SNAPS 41 |
+| Russell Wilson | Seattle Seahawks | QB | RUSH LNG 23, OWN FUM REC 1, OFF SNAPS 273 |
+| Christine Michael | Seattle Seahawks | RB | OFF SNAPS 4, ST SNAPS 7 |
+| Marshawn Lynch | Seattle Seahawks | RB | REC LNG 25, OFF SNAPS 273 |
+| Robert Turbin | Seattle Seahawks | RB | REC LNG 68, OFF SNAPS 25, ST SNAPS 74 |
+| Jeron Johnson | Seattle Seahawks | SS | DEF SNAPS 3, ST SNAPS 84 |
+| Kam Chancellor | Seattle Seahawks | SS | DEF SNAPS 271, PEN 2, PEN YDS 12, ST SNAPS 18 |
+| Russell Okung | Seattle Seahawks | T | OFF SNAPS 273, ST SNAPS 20 |
+| Cooper Helfet | Seattle Seahawks | TE | OFF SNAPS 1 |
+| Greg Scruggs | Seattle Seahawks | TE | OFF SNAPS 1, ST SNAPS 49 |
+| Luke Willson | Seattle Seahawks | TE | OFF SNAPS 79, ST SNAPS 104 |
+| Zach Miller | Seattle Seahawks | TE | OFF SNAPS 273, ST SNAPS 20 |
+| Doug Baldwin | Seattle Seahawks | WR | OFF SNAPS 273 |
+| Jermaine Kearse | Seattle Seahawks | WR | OFF SNAPS 121 |
+| Kevin Norwood | Seattle Seahawks | WR | OFF SNAPS 1 |
+| Paul Richardson | Seattle Seahawks | WR | OFF SNAPS 1, ST SNAPS 7 |
+| Percy Harvin | Seattle Seahawks | WR | RUSH LNG 2, OFF SNAPS 273, ST SNAPS 21 |
+| Ricardo Lockette | Seattle Seahawks | WR | RUSH LNG 1, OFF SNAPS 12, ST SNAPS 84 |
+| Scott Wells | St. Louis Rams | C | OFF SNAPS 266, PEN 1, PEN YDS 9, ST SNAPS 16 |
+| Tim Barnes | St. Louis Rams | C | ST SNAPS 16 |
+| Brandon McGee | St. Louis Rams | CB | DEF SNAPS 248, ST SNAPS 44 |
+| E.J. Gaines | St. Louis Rams | CB | ST SNAPS 20 |
+| Janoris Jenkins | St. Louis Rams | CB | DEF SNAPS 271, ST SNAPS 18 |
+| Alex Carrington | St. Louis Rams | DE | DEF SNAPS 212, ST SNAPS 18 |
+| Chris Long | St. Louis Rams | DE | DEF SNAPS 271, PEN 1, PEN YDS 5, ST SNAPS 18 |
+| Eugene Sims | St. Louis Rams | DE | DEF SNAPS 1 |
+| Kendall Langford | St. Louis Rams | DE | DEF SNAPS 271, ST SNAPS 18 |
+| Michael Brockers | St. Louis Rams | DE | DEF SNAPS 191, ST SNAPS 14 |
+| William Hayes | St. Louis Rams | DE | DEF SNAPS 57, ST SNAPS 4 |
+| Ethan Westbrooks | St. Louis Rams | DT | DEF SNAPS 3 |
+| Rodney McLeod | St. Louis Rams | FS | DEF SNAPS 174, ST SNAPS 12 |
+| Davin Joseph | St. Louis Rams | G | OFF SNAPS 266, ST SNAPS 16 |
+| Alec Ogletree | St. Louis Rams | ILB | INT YDS 24, DEF SNAPS 271, ST SNAPS 18 |
+| Greg Zuerlein | St. Louis Rams | K | ST SNAPS 35 |
+| Jake McQuaide | St. Louis Rams | LS | ST SNAPS 40 |
+| Daren Bates | St. Louis Rams | MLB | ST SNAPS 91 |
+| James Laurinaitis | St. Louis Rams | MLB | DEF SNAPS 202, ST SNAPS 14 |
+| Jo-Lonn Dunbar | St. Louis Rams | OLB | INT YDS 15, DEF SNAPS 170, ST SNAPS 18 |
+| Ray-Ray Armstrong | St. Louis Rams | OLB | DEF SNAPS 5, ST SNAPS 60 |
+| Robert Quinn | St. Louis Rams | OLB | DEF SNAPS 37, ST SNAPS 7 |
+| Johnny Hekker | St. Louis Rams | P | ST SNAPS 40 |
+| Shaun Hill | St. Louis Rams | QB | RUSH LNG 24, OFF SNAPS 266, PEN 1, PEN YDS 2 |
+| Benny Cunningham | St. Louis Rams | RB | OFF SNAPS 12, ST SNAPS 21 |
+| Chase Reynolds | St. Louis Rams | RB | REC LNG 14, OFF SNAPS 89, ST SNAPS 87 |
+| Tre Mason | St. Louis Rams | RB | ST SNAPS 64 |
+| Trey Watts | St. Louis Rams | RB | ST SNAPS 15 |
+| Zac Stacy | St. Louis Rams | RB | REC LNG 55, OFF SNAPS 249 |
+| Maurice Alexander | St. Louis Rams | SS | DEF SNAPS 258, ST SNAPS 42 |
+| T.J. McDonald | St. Louis Rams | SS | DEF SNAPS 271, PEN 1, PEN YDS 15, ST SNAPS 18 |
+| Greg Robinson | St. Louis Rams | T | OFF SNAPS 266, ST SNAPS 16 |
+| Jake Long | St. Louis Rams | T | OFF SNAPS 266, ST SNAPS 16 |
+| Joe Barksdale | St. Louis Rams | T | OFF SNAPS 266, PEN 2, PEN YDS 15, ST SNAPS 16 |
+| Alex Bayer | St. Louis Rams | TE | OFF SNAPS 1, ST SNAPS 84 |
+| Cory Harkey | St. Louis Rams | TE | ST SNAPS 91 |
+| Jared Cook | St. Louis Rams | TE | OFF SNAPS 78, PEN 1, PEN YDS 10, ST SNAPS 107 |
+| Lance Kendricks | St. Louis Rams | TE | OFF SNAPS 266, PEN 1, PEN YDS 10, ST SNAPS 16 |
+| Austin Pettis | St. Louis Rams | WR | RUSH LNG 2, OFF SNAPS 118 |
+| Brian Quick | St. Louis Rams | WR | OFF SNAPS 5, ST SNAPS 91 |
+| Chris Givens | St. Louis Rams | WR | ST SNAPS 91 |
+| Kenny Britt | St. Louis Rams | WR | OFF SNAPS 266 |
+| Stedman Bailey | St. Louis Rams | WR | ST SNAPS 9 |
+| Tavon Austin | St. Louis Rams | WR | RUSH LNG 6, OFF SNAPS 266, ST SNAPS 27 |
+| Evan Smith | Tampa Bay Buccaneers | C | OFF SNAPS 328, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Johnthan Banks | Tampa Bay Buccaneers | CB | DEF SNAPS 305, ST SNAPS 41 |
+| Leonard Johnson | Tampa Bay Buccaneers | CB | DEF SNAPS 308, ST SNAPS 36 |
+| Mike Jenkins | Tampa Bay Buccaneers | CB | DEF SNAPS 321, ST SNAPS 22 |
+| Adrian Clayborn | Tampa Bay Buccaneers | DE | DEF SNAPS 321, PEN 1, PEN YDS 15, ST SNAPS 22 |
+| Michael Johnson | Tampa Bay Buccaneers | DE | DEF SNAPS 196, ST SNAPS 15 |
+| William Gholston | Tampa Bay Buccaneers | DE | DEF SNAPS 1 |
+| Clinton McDonald | Tampa Bay Buccaneers | DT | DEF SNAPS 260, ST SNAPS 22 |
+| Da'Quan Bowers | Tampa Bay Buccaneers | DT | DEF SNAPS 88, ST SNAPS 7 |
+| Gerald McCoy | Tampa Bay Buccaneers | DT | DEF SNAPS 321, ST SNAPS 22 |
+| Jorvorskie Lane | Tampa Bay Buccaneers | FB | REC LNG 15, OFF SNAPS 79, PEN 1, PEN YDS 10, ST SNAPS 88 |
+| Dashon Goldson | Tampa Bay Buccaneers | FS | DEF SNAPS 78, ST SNAPS 6 |
+| Keith Tandy | Tampa Bay Buccaneers | FS | DEF SNAPS 5, ST SNAPS 88 |
+| Kevin Pamphile | Tampa Bay Buccaneers | G | ST SNAPS 23 |
+| Logan Mankins | Tampa Bay Buccaneers | G | OFF SNAPS 328, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Patrick Omameh | Tampa Bay Buccaneers | G | OFF SNAPS 328, ST SNAPS 23 |
+| Lavonte David | Tampa Bay Buccaneers | ILB | DEF SNAPS 321, PEN 1, PEN YDS 5, ST SNAPS 22 |
+| Patrick Murray | Tampa Bay Buccaneers | K | ST SNAPS 50 |
+| Andrew DePaola | Tampa Bay Buccaneers | LS | ST SNAPS 44 |
+| Dane Fletcher | Tampa Bay Buccaneers | MLB | DEF SNAPS 41, PEN 1, PEN YDS 5, ST SNAPS 5 |
+| Mason Foster | Tampa Bay Buccaneers | MLB | DEF SNAPS 124, ST SNAPS 17 |
+| Danny Lansanah | Tampa Bay Buccaneers | OLB | DEF SNAPS 7, ST SNAPS 78 |
+| Jonathan Casillas | Tampa Bay Buccaneers | OLB | DEF SNAPS 321, ST SNAPS 22 |
+| Scott Solomon | Tampa Bay Buccaneers | OLB | DEF SNAPS 1, ST SNAPS 88 |
+| Steven Means | Tampa Bay Buccaneers | OLB | ST SNAPS 70 |
+| Michael Koenen | Tampa Bay Buccaneers | P | ST SNAPS 44 |
+| Josh McCown | Tampa Bay Buccaneers | QB | RUSH LNG 22, OFF SNAPS 328 |
+| Bobby Rainey | Tampa Bay Buccaneers | RB | REC LNG 22, OFF SNAPS 32, PEN 1, PEN YDS 5, ST SNAPS 15 |
+| Doug Martin | Tampa Bay Buccaneers | RB | REC LNG 18, OFF SNAPS 328 |
+| Mike James | Tampa Bay Buccaneers | RB | ST SNAPS 8 |
+| Bradley McDougald | Tampa Bay Buccaneers | SS | DEF SNAPS 206, ST SNAPS 58 |
+| Major Wright | Tampa Bay Buccaneers | SS | ST SNAPS 82 |
+| Mark Barron | Tampa Bay Buccaneers | SS | DEF SNAPS 321, PEN 1, PEN YDS 21, ST SNAPS 22 |
+| Anthony Collins | Tampa Bay Buccaneers | T | OFF SNAPS 328, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Demar Dotson | Tampa Bay Buccaneers | T | OFF SNAPS 328, ST SNAPS 23 |
+| Austin Seferian-Jenkins | Tampa Bay Buccaneers | TE | OFF SNAPS 97, ST SNAPS 111 |
+| Brandon Myers | Tampa Bay Buccaneers | TE | OFF SNAPS 328, ST SNAPS 23 |
+| Luke Stocker | Tampa Bay Buccaneers | TE | ST SNAPS 57 |
+| Chris Owusu | Tampa Bay Buccaneers | WR | OFF SNAPS 115, ST SNAPS 20 |
+| Mike Evans | Tampa Bay Buccaneers | WR | OFF SNAPS 328 |
+| Robert Herron | Tampa Bay Buccaneers | WR | OFF SNAPS 1, ST SNAPS 18 |
+| Russell Shepard | Tampa Bay Buccaneers | WR | OFF SNAPS 34, ST SNAPS 70 |
+| Solomon Patton | Tampa Bay Buccaneers | WR | OFF SNAPS 1, ST SNAPS 17 |
+| Vincent Jackson | Tampa Bay Buccaneers | WR | RUSH LNG 8, OFF SNAPS 328, PEN 1, PEN YDS 10 |
+| Brian Schwenke | Tennessee Titans | C | OFF SNAPS 323, PEN 2, PEN YDS 10, ST SNAPS 23 |
+| Blidi Wreh-Wilson | Tennessee Titans | CB | DEF SNAPS 336, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Brandon Harris | Tennessee Titans | CB | DEF SNAPS 65, ST SNAPS 98 |
+| Jason McCourty | Tennessee Titans | CB | DEF SNAPS 321, ST SNAPS 23 |
+| DaQuan Jones | Tennessee Titans | DE | DEF SNAPS 2 |
+| Ropati Pitoitua | Tennessee Titans | DE | DEF SNAPS 336, PEN 1, PEN YDS 5, ST SNAPS 23 |
+| Jurrell Casey | Tennessee Titans | DT | DEF SNAPS 336, ST SNAPS 23 |
+| Karl Klug | Tennessee Titans | DT | DEF SNAPS 2 |
+| Mike Martin | Tennessee Titans | DT | DEF SNAPS 232, ST SNAPS 23 |
+| George Wilson | Tennessee Titans | FS | DEF SNAPS 217, ST SNAPS 71 |
+| Michael Griffin | Tennessee Titans | FS | DEF SNAPS 336, ST SNAPS 23 |
+| Andy Levitre | Tennessee Titans | G | OFF SNAPS 323, ST SNAPS 23 |
+| Chance Warmack | Tennessee Titans | G | OFF SNAPS 323, PEN 2, PEN YDS 14, ST SNAPS 23 |
+| Avery Williamson | Tennessee Titans | ILB | DEF SNAPS 1, ST SNAPS 98 |
+| Wesley Woodyard | Tennessee Titans | ILB | DEF SNAPS 336, ST SNAPS 23 |
+| Zach Brown | Tennessee Titans | ILB | DEF SNAPS 336, ST SNAPS 23 |
+| Zaviar Gooden | Tennessee Titans | ILB | DEF SNAPS 2, ST SNAPS 98 |
+| Ryan Succop | Tennessee Titans | K | ST SNAPS 49 |
+| Beau Brinkley | Tennessee Titans | LS | ST SNAPS 45 |
+| Al Woods | Tennessee Titans | NT | DEF SNAPS 4 |
+| Sammie Lee Hill | Tennessee Titans | NT | DEF SNAPS 336, ST SNAPS 23 |
+| Derrick Morgan | Tennessee Titans | OLB | DEF SNAPS 166, ST SNAPS 23 |
+| Kamerion Wimbley | Tennessee Titans | OLB | DEF SNAPS 15 |
+| Brett Kern | Tennessee Titans | P | ST SNAPS 45 |
+| Charlie Whitehurst | Tennessee Titans | QB | RUSH LNG 18, OFF SNAPS 61 |
+| Jake Locker | Tennessee Titans | QB | RUSH LNG 14, OFF SNAPS 262 |
+| Bishop Sankey | Tennessee Titans | RB | REC LNG 9, OFF SNAPS 6, PEN 1, PEN YDS 5, ST SNAPS 98 |
+| Denard Robinson | Tennessee Titans | RB | REC LNG 18, OFF SNAPS 87, ST SNAPS 98 |
+| Dexter McCluster | Tennessee Titans | RB | ST SNAPS 25 |
+| Leon Washington | Tennessee Titans | RB | REC LNG 33, OFF SNAPS 2, ST SNAPS 25 |
+| Shonn Greene | Tennessee Titans | RB | REC LNG 16, OFF SNAPS 323 |
+| Bernard Pollard | Tennessee Titans | SS | DEF SNAPS 336, ST SNAPS 23 |
+| Daimion Stafford | Tennessee Titans | SS | ST SNAPS 26 |
+| Michael Oher | Tennessee Titans | T | OFF SNAPS 323, ST SNAPS 23 |
+| Michael Roos | Tennessee Titans | T | OFF SNAPS 323, ST SNAPS 23 |
+| Taylor Lewan | Tennessee Titans | T | ST SNAPS 23 |
+| Craig Stevens | Tennessee Titans | TE | OFF SNAPS 94, ST SNAPS 120 |
+| Delanie Walker | Tennessee Titans | TE | OFF SNAPS 323, PEN 1, PEN YDS 10, ST SNAPS 23 |
+| Jackie Battle | Tennessee Titans | TE | OFF SNAPS 2, ST SNAPS 98 |
+| Taylor Thompson | Tennessee Titans | TE | ST SNAPS 1 |
+| Derek Hagan | Tennessee Titans | WR | RUSH LNG 11, OFF SNAPS 9, ST SNAPS 98 |
+| Justin Hunter | Tennessee Titans | WR | OFF SNAPS 143 |
+| Kendall Wright | Tennessee Titans | WR | RUSH LNG 15, OFF SNAPS 323, PEN 1, PEN YDS 9 |
+| Kris Durham | Tennessee Titans | WR | ST SNAPS 11 |
+| Nate Washington | Tennessee Titans | WR | RUSH LNG 12, OFF SNAPS 323 |
+| Kory Lichtensteiger | Washington Redskins | C | OFF SNAPS 342, ST SNAPS 21 |
+| Bashaud Breeland | Washington Redskins | CB | DEF SNAPS 312, ST SNAPS 41 |
+| David Amerson | Washington Redskins | CB | DEF SNAPS 323, ST SNAPS 29 |
+| E.J. Biggers | Washington Redskins | CB | DEF SNAPS 2, ST SNAPS 104 |
+| Jarvis Jenkins | Washington Redskins | DE | DEF SNAPS 1 |
+| Jason Hatcher | Washington Redskins | DE | DEF SNAPS 224, ST SNAPS 29 |
+| Ryan Kerrigan | Washington Redskins | DE | DEF SNAPS 323, ST SNAPS 29 |
+| Trent Murphy | Washington Redskins | DE | DEF SNAPS 1 |
+| Chris Baker | Washington Redskins | DT | DEF SNAPS 323, ST SNAPS 29 |
+| Darrel Young | Washington Redskins | FB | REC LNG 20, OFF SNAPS 80, ST SNAPS 101 |
+| DeAngelo Hall | Washington Redskins | FS | DEF SNAPS 323, ST SNAPS 29 |
+| Ryan Clark | Washington Redskins | FS | DEF SNAPS 323, PEN 1, PEN YDS 5, ST SNAPS 29 |
+| Trenton Robinson | Washington Redskins | FS | ST SNAPS 104 |
+| Chris Chester | Washington Redskins | G | OFF SNAPS 342, PEN 1, PEN YDS 5, ST SNAPS 21 |
+| Josh LeRibeus | Washington Redskins | G | ST SNAPS 4 |
+| Shawn Lauvao | Washington Redskins | G | OFF SNAPS 342, PEN 2, PEN YDS 10, ST SNAPS 21 |
+| Adam Hayward | Washington Redskins | ILB | DEF SNAPS 6, ST SNAPS 63 |
+| Perry Riley | Washington Redskins | ILB | DEF SNAPS 323, ST SNAPS 29 |
+| Kai Forbath | Washington Redskins | K | ST SNAPS 45 |
+| Nick Sundberg | Washington Redskins | LS | ST SNAPS 48 |
+| Akeem Jordan | Washington Redskins | MLB | ST SNAPS 18 |
+| Keenan Robinson | Washington Redskins | MLB | DEF SNAPS 323, ST SNAPS 29 |
+| Will Compton | Washington Redskins | MLB | DEF SNAPS 62, ST SNAPS 14 |
+| Barry Cofield | Washington Redskins | NT | DEF SNAPS 323, ST SNAPS 29 |
+| Kedric Golston | Washington Redskins | NT | DEF SNAPS 4 |
+| Brian Orakpo | Washington Redskins | OLB | DEF SNAPS 2 |
+| Gabe Miller | Washington Redskins | OLB | DEF SNAPS 104, ST SNAPS 17 |
+| Tress Way | Washington Redskins | P | ST SNAPS 48 |
+| Colt McCoy | Washington Redskins | QB | RUSH LNG 3, OFF SNAPS 69 |
+| Robert Griffin | Washington Redskins | QB | RUSH LNG 7, OFF SNAPS 273 |
+| Alfred Morris | Washington Redskins | RB | REC LNG 59, OFF SNAPS 342 |
+| Roy Helu | Washington Redskins | RB | REC LNG 24, OFF SNAPS 39, ST SNAPS 104 |
+| Silas Redd | Washington Redskins | RB | OFF SNAPS 3, ST SNAPS 44 |
+| Duke Ihenacho | Washington Redskins | SS | DEF SNAPS 1, ST SNAPS 55 |
+| Josh Evans | Washington Redskins | SS | DEF SNAPS 268, ST SNAPS 92 |
+| Morgan Moses | Washington Redskins | T | OFF SNAPS 69, ST SNAPS 21 |
+| Trent Williams | Washington Redskins | T | OFF SNAPS 342, ST SNAPS 21 |
+| Tyler Polumbus | Washington Redskins | T | OFF SNAPS 273, ST SNAPS 17 |
+| Jordan Reed | Washington Redskins | TE | OFF SNAPS 227, ST SNAPS 14 |
+| Logan Paulsen | Washington Redskins | TE | OFF SNAPS 182, ST SNAPS 94 |
+| Niles Paul | Washington Redskins | TE | OFF SNAPS 35, PEN 1, PEN YDS 5, ST SNAPS 109 |
+| Andre Roberts | Washington Redskins | WR | RUSH LNG 1, OFF SNAPS 152, ST SNAPS 53 |
+| DeSean Jackson | Washington Redskins | WR | OFF SNAPS 342 |
+| Pierre Garcon | Washington Redskins | WR | RUSH LNG 4, OFF SNAPS 342 |
+| Ryan Grant | Washington Redskins | WR | OFF SNAPS 3, ST SNAPS 13 |
+| Santana Moss | Washington Redskins | WR | OFF SNAPS 13, ST SNAPS 104 |

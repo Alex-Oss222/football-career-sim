@@ -179,6 +179,27 @@ LABELS = {
 }
 
 
+# Football labels for the counters LABELS leaves unnamed, used where a page is written clean
+# (docs/rebuild_plan.md, rule 4: no system names); any other unnamed counter is shown in words.
+CLEAN_LABELS = {
+    "offensive_snaps": "OFF SNAPS", "defensive_snaps": "DEF SNAPS", "special_teams_snaps": "ST SNAPS",
+    "penalties": "PEN", "penalty_yards": "PEN YDS", "fumbles_recovered_own": "OWN FUM REC",
+    "passing_two_point_conversions": "2PT PASS", "rushing_two_point_conversions": "2PT RUSH",
+    "receiving_two_point_conversions": "2PT REC", "interception_return_touchdowns": "INT TD",
+    "fumble_return_touchdowns": "FUM TD", "punt_return_touchdowns": "PR TD",
+    "kick_return_touchdowns": "KR TD", "blocked_kick_touchdowns": "BLK TD",
+}
+
+
+def label(field, clean=False):
+    """A counter's column label; on a clean page a counter without one is named in words."""
+    if field in LABELS:
+        return LABELS[field]
+    if clean:
+        return CLEAN_LABELS.get(field) or field.replace("_", " ").upper()
+    return field
+
+
 def position_group(position):
     for index, (_, positions, _, _) in enumerate(POSITION_GROUPS):
         if position in positions:
@@ -241,13 +262,14 @@ def rows_with(players, fields, sort_field):
     return rows
 
 
-def position_sections(players, *, with_team, level="##"):
+def position_sections(players, *, with_team, level="##", clean=False):
     """Position first, then players.
 
     One table per position group with at least one game-active player, then
     returners, then any stored counter that falls outside a player's
     position columns (a receiver's coverage tackle, for example), so the
-    readable view never drops a generated statistic.
+    readable view never drops a generated statistic. ``clean`` names those
+    counters in football words (``label``); the figures are the same.
     """
     grouped = {index: [] for index in range(len(POSITION_GROUPS))}
     extra_rows = []
@@ -297,7 +319,7 @@ def position_sections(players, *, with_team, level="##"):
                   "| Player | " + ("Team | " if with_team else "") + "Pos | Statistics |",
                   "|---|" + ("---|" if with_team else "") + "---|---|"]
         for player_id, line, extra in extra_rows:
-            stats = ", ".join("%s %s" % (LABELS.get(f, f), g(line, f)) for f in extra)
+            stats = ", ".join("%s %s" % (label(f, clean), g(line, f)) for f in extra)
             team = (", ".join(line.get("teams", ())) + " | ") if with_team else ""
             lines.append("| %s | %s%s | %s |" % (player_id, team, line.get("position", ""), stats))
         lines.append("")

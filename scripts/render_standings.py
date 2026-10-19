@@ -2,7 +2,13 @@
 """Rebuild career/YEAR/standings.md from closed-game stat receipts.
 
 `--through-week N` prints the standings as they stood after week N instead
-of writing the current file.
+of writing the current file; `--check` writes nothing and exits 1 when the
+page differs from its render.
+
+From 2014 the page is written clean (docs/rebuild_plan.md, rule 4): football
+words only, the streak as "Won 3", with no file, script or rulebook names.
+Every figure, order and seed is the same computation as before; 2013 keeps
+its page byte for byte.
 """
 from __future__ import annotations
 
@@ -19,6 +25,9 @@ from runtime.standings import compute, pct_text
 from scripts.render_season_stats import load_receipts
 
 PROTAGONIST = "Jacksonville Jaguars"
+# The first season whose standings page is written clean (the 2013 page is history).
+CLEAN_FROM = 2014
+STREAK_WORDS = {"W": "Won", "L": "Lost", "T": "Tied"}
 
 
 def club(team):
@@ -29,7 +38,14 @@ def diff(value):
     return "%+d" % value if value else "0"
 
 
-def division_tables(result):
+def streak_text(streak, clean):
+    """The streak cell: the stored "W3" form, or "Won 3" on a clean page."""
+    if clean and streak[:1] in STREAK_WORDS and streak[1:].isdigit():
+        return "%s %s" % (STREAK_WORDS[streak[0]], streak[1:])
+    return streak
+
+
+def division_tables(result, clean=False):
     lines = ["## Division standings", "",
              "Clubs are ordered by winning percentage, ties broken by the division procedure.", ""]
     for division in DIVISIONS:
@@ -43,7 +59,7 @@ def division_tables(result):
                 club(team), o.wins, o.losses, o.ties, pct_text(o.pct), line.points_for,
                 line.points_against, diff(line.points_for - line.points_against),
                 line.home.text(), line.away.text(), line.division.text(), line.conference.text(),
-                line.streak))
+                streak_text(line.streak, clean)))
         lines.append("")
     return lines
 
@@ -126,6 +142,17 @@ def render(year, receipts, through_week=None):
     result = compute(receipts)
     week = result["through_week"]
     through = ("Week %d" % week) if result["played"] else "no regular-season game has been played"
+    if year >= CLEAN_FROM:
+        lines = [
+            "# %d NFL standings" % year, "",
+            "**Through:** %s. All 32 clubs, regular-season games only." % through, "",
+            "Pct counts a tie as half a win. SOV is strength of victory, the combined winning "
+            "percentage of the clubs a team has beaten; SOS is strength of schedule, the combined "
+            "winning percentage of all its opponents. Ties in the standings are broken by the NFL "
+            "tiebreaking procedure; a tie that survives to the coin toss is reported, never tossed.", "",
+        ]
+        return "\n".join(lines + division_tables(result, clean=True) + conference_tables(result)
+                         + league_table(result) + tiebreak_notes(result))
     lines = [
         "# %d NFL standings" % year, "",
         "**Through:** %s." % through,
@@ -145,6 +172,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("year", type=int)
     parser.add_argument("--through-week", type=int)
+    parser.add_argument("--check", action="store_true", help="write nothing; exit 1 when the page is stale")
     args = parser.parse_args()
     from runtime.seasons import SeasonPaths
     paths = SeasonPaths(args.year, ROOT)
@@ -153,9 +181,14 @@ def main():
     if args.through_week is not None:
         print(text)
         return
+    if args.check:
+        page = paths.record('standings.md')
+        current = page.is_file() and page.read_text(encoding="utf-8") == text
+        print("STANDINGS CURRENT" if current else "Standings stale: %s" % page.relative_to(ROOT))
+        return 0 if current else 1
     paths.record('standings.md').write_text(text, encoding="utf-8")
     print("rendered standings from %d receipts" % len(receipts))
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

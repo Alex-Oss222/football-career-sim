@@ -9,6 +9,10 @@ file per game under games/ with that game's tables plus the running totals
 through it. Every number is arithmetic on the stored receipt counters; nothing
 is typed or estimated. It is a reader view for the user and is never an input
 to the simulation, an evaluation or a decision.
+
+From 2014 the pages are written clean (docs/rebuild_plan.md, rule 4): football
+words only, with no file, script or system names; every figure is the same
+arithmetic as before, and 2013 keeps its pages byte for byte.
 """
 from __future__ import annotations
 
@@ -26,6 +30,8 @@ from runtime.seasons import SeasonPaths
 from runtime.season_layout import logical_path, rebase_markdown
 
 ROUNDS = {18: "Wild Card", 19: "Divisional", 20: "Conference Championship", 21: "Super Bowl"}
+# The first season whose tracker pages are written clean (2013's are history).
+CLEAN_FROM = 2014
 COACH = {"Jacksonville Jaguars": "Alex Stone"}
 NOT_RECORDED = ("The receipts do not record the longest completion, the longest field goal, "
                 "or return and defensive touchdowns, so those template columns are left out rather than guessed.")
@@ -40,21 +46,41 @@ B9_PLAYER_FIELDS = (("2PT pass", "passing_two_point_conversions"), ("2PT rec", "
                     ("KR TD", "kick_return_touchdowns"), ("BLK TD", "blocked_kick_touchdowns"))
 
 
-def fumble_note(games):
+def first_week(games, test):
+    """The first regular-season week among ``games`` that passes ``test``, or None."""
+    weeks = [x["week"] for x in games if x["kind"] == "regular" and test(x)]
+    return min(weeks) if weeks else None
+
+
+def fumble_note(games, clean=False):
     """Batch B10 review fix (October 16, 2026): the fumble-definition note
     (render_season_stats.FUMBLE_SPLIT_NOTE) when the games mix kernel 2014.6
-    receipts with earlier ones; [] otherwise (closed views unchanged)."""
+    receipts with earlier ones; [] otherwise (closed views unchanged). A clean
+    page gives it in football words with the week the counting changed."""
     kinds = {bool(x.get("ball_security")) for x in games}
     if kinds != {True, False}:
         return []
-    from scripts.render_season_stats import FUMBLE_SPLIT_NOTE
+    from scripts.render_season_stats import FUMBLE_SPLIT_NOTE, clean_fumble_note
+    if clean:
+        return [clean_fumble_note({"fumbles": first_week(games, lambda x: x.get("ball_security"))}), ""]
     return [FUMBLE_SPLIT_NOTE, ""]
 
 
-def not_recorded(games):
+def not_recorded(games, clean=False, season_games=None):
     """The columns note: the 2014.6 wording once any game's receipt carries
-    the batch B9 counters, else the original sentence (closed views keep it)."""
-    return NOT_RECORDED_2014_6 if any("two_point_attempts" in x["team"] for x in games) else NOT_RECORDED
+    the batch B9 counters, else the original sentence (closed views keep it).
+    A clean page says the same in football words; ``season_games`` gives the
+    week the two-point and return-touchdown counts began."""
+    later = any("two_point_attempts" in x["team"] for x in games)
+    if not clean:
+        return NOT_RECORDED_2014_6 if later else NOT_RECORDED
+    if not later:
+        return ("The game records do not include the longest completion, the longest field goal, or return "
+                "and defensive touchdowns, so those columns are left out rather than guessed.")
+    week = first_week(season_games or games, lambda x: "two_point_attempts" in x["team"])
+    return ("The game records do not include the longest completion or the longest field goal, so those "
+            "columns are left out rather than guessed. Two-point conversions and return and defensive "
+            "touchdowns are recorded %s." % (("from Week %d on" % week) if week else "in the later games"))
 
 
 def tracker_dir(root, year):
@@ -189,7 +215,7 @@ def sections(players, with_games):
     return out
 
 
-def advanced(players, team_lines):
+def advanced(players, team_lines, clean=False):
     """Rate stats computed from stored counters only (no play-by-play model)."""
     out = ["### Advanced", ""]
     qbs = sorted(((n, l) for n, l in players.items() if g(l, "pass_attempts")), key=lambda x: -g(x[1], "pass_attempts"))
@@ -209,15 +235,35 @@ def advanced(players, team_lines):
     out += ["**Team.**", "", table(["Points", "First downs", "3rd down", "3rd %", "Turnovers", "Sacks allowed", "Penalties", "Time of possession"],
             [[g(t, "points"), g(t, "first_downs"), f'{g(t, "third_down_conversions")}/{g(t, "third_down_attempts")}',
               pct(g(t, "third_down_conversions"), g(t, "third_down_attempts")), g(t, "turnovers"), g(t, "sacks_allowed"),
-              penalty_cell(team_lines), time_text(g(t, "time_of_possession")) if g(t, "time_of_possession") else "—"]])]
+              penalty_cell(team_lines, clean), time_text(g(t, "time_of_possession")) if g(t, "time_of_possession") else "—"]])]
     if split_penalties(team_lines):
-        out += [PENALTY_SPLIT_NOTE, ""]
+        out += [clean_penalty_note(team_lines) if clean else PENALTY_SPLIT_NOTE, ""]
     return out
 
 
 PENALTY_SPLIT_NOTE = ("Penalties are split by definition and never added: the counter games closed before the "
                       "penalty records (one draw per scrimmage play, charged to the offense) and the penalty-record "
                       "games (each accepted foul charged to the fouling club). No combined penalty figure is shown.")
+
+
+def penalty_weeks(team_lines):
+    """(last week of the earlier count, first week of the penalty records) among the lines."""
+    before = [x["_week"] for x in team_lines if not x.get("_penalty_records") and "_week" in x]
+    after = [x["_week"] for x in team_lines if x.get("_penalty_records") and "_week" in x]
+    return (max(before) if before else None), (min(after) if after else None)
+
+
+def penalty_labels(team_lines):
+    before, after = penalty_weeks(team_lines)
+    return (("through Week %d" % before) if before else "before the change",
+            ("from Week %d" % after) if after else "since the change")
+
+
+def clean_penalty_note(team_lines):
+    before, after = penalty_labels(team_lines)
+    return ("Penalties are shown as two counts that are never added: %s, each game's penalties were charged "
+            "to the offense; %s, each accepted foul is charged to the club that committed it. No combined "
+            "penalty figure is shown." % (before, after))
 
 
 def split_penalties(team_lines):
@@ -227,23 +273,48 @@ def split_penalties(team_lines):
     return kinds == {True, False}
 
 
-def penalty_cell(team_lines):
+def penalty_cell(team_lines, clean=False):
     """The Penalties cell: count-yards over the lines when they share one
     definition (every closed single-definition view is unchanged), else the
-    counter games and the penalty-record games as two labelled figures."""
+    counter games and the penalty-record games as two labelled figures (on a
+    clean page labelled by their weeks)."""
     if not split_penalties(team_lines):
         t = combine(team_lines)
         return f'{g(t, "penalties")}-{g(t, "penalty_yards")}'
     a = combine([x for x in team_lines if not x.get("_penalty_records")])
     b = combine([x for x in team_lines if x.get("_penalty_records")])
+    if clean:
+        first, second = penalty_labels(team_lines)
+        return (f'{first}: {g(a, "penalties")}-{g(a, "penalty_yards")}; '
+                f'{second}: {g(b, "penalties")}-{g(b, "penalty_yards")}')
     return (f'counter games {g(a, "penalties")}-{g(a, "penalty_yards")}; '
             f'penalty records {g(b, "penalties")}-{g(b, "penalty_yards")}')
 
 
-def team_line(game):
+def team_line(game, clean=False):
     t = game["team"]
-    return ({k: v for k, v in t.items() if k != "players"} | {"points": game["points"]}
+    line = ({k: v for k, v in t.items() if k != "players"} | {"points": game["points"]}
             | {"_penalty_records": bool(game.get("penalty_records"))})
+    if clean and game["kind"] == "regular":
+        # The week labels the two penalty counts on a clean page; it is never a shown total.
+        line["_week"] = game["week"]
+    return line
+
+
+def clean_game_page(team, year, game, regular_before, season_games):
+    """A game's page in football words: the same tables as ``game_page``."""
+    lines = [f"# {team} {year}: {label(game)} {'vs.' if game['home'] else 'at'} {game['opponent']}", "",
+             f"**Result:** {result(game)}. [Season tracker](../README.md)", "", "## This game", ""]
+    lines += sections(game["team"]["players"], with_games=False)
+    lines += advanced(game["team"]["players"], [team_line(game, True)], clean=True)
+    if game["kind"] == "regular":
+        through = regular_before + [game]
+        lines += ["", f"## Season totals through {label(game)}", "",
+                  f"Record through {label(game)}: {record(through)}. Rate stats are recalculated from the totals, never averaged across games.", ""]
+        lines += fumble_note(through, clean=True)
+        lines += [s.replace("### ", "#### ") for s in sections(totals(through), with_games=True)]
+    lines.append(not_recorded([game], clean=True, season_games=season_games))
+    return "\n".join(lines) + "\n"
 
 
 def game_page(team, year, game, regular_before):
@@ -268,6 +339,25 @@ def record(games):
     l = sum(g_["points"] < g_["opp_points"] for g_ in games)
     t = len(games) - w - l
     return f"{w}-{l}" + (f"-{t}" if t else "")
+
+
+def clean_depth_lines(root, year):
+    """The depth chart section in football words: the order by group, with a link to the depth
+    chart page that carries its date and roles."""
+    paths = SeasonPaths(year, root)
+    final = paths.depth_chart
+    working = paths.record('offseason/depth_chart_working.json')
+    path = final if final.exists() else working if working.exists() else None
+    if not path:
+        return ["No depth chart is recorded for this season yet.", ""]
+    data = json.loads(path.read_text(encoding="utf-8"))
+    rows = [[pos, " / ".join(names) if names else "Open"] for pos, names in data["depth"].items()]
+    lead = "Order is first listed first; Stone owns it."
+    if paths.record("depth_chart.md").is_file():
+        # Written against the page's logical place (the season's stats/team_tracker/), as every
+        # link here is; render() rebases it to the depth chart page's real place.
+        lead = "The current order, first listed first; Stone owns it. Dates and roles are on the [depth chart](../../depth_chart.md)."
+    return [lead, "", table(["Group", "Order"], rows)]
 
 
 def depth_lines(root, year):
@@ -314,6 +404,35 @@ def award_rows(root, year, team):
     return rows
 
 
+def clean_readme(root, year, team, games):
+    """The tracker's front page in football words: the same tables as ``readme``."""
+    regular = [x for x in games if x["kind"] == "regular"]
+    post = [x for x in games if x["kind"] != "regular"]
+    lines = [f"# {team} {year} stat tracker", "",
+             "Rebuilt after every closed game from the game records.", "",
+             "## Team info", "",
+             table(["Field", "Value"], [["Team", team], ["Season", year], ["Head coach", COACH.get(team, "Not recorded")],
+                   ["Regular-season record", record(regular) if regular else "No game closed"],
+                   ["Postseason", ", ".join(f"{label(x)}: {result(x)}" for x in post) if post else "None"]]),
+             "## Depth chart", ""] + clean_depth_lines(root, year) + [
+             "## Games", "", table(["Game", "Opponent", "Result", "Page"],
+                   [[label(x), ("vs. " if x["home"] else "at ") + x["opponent"], result(x), f"[{label(x)}](games/{slug(x)})"] for x in games]),
+             "## Regular-season totals", "",
+             (f"Through {label(regular[-1])}, {record(regular)}." if regular else "No regular-season game has closed.") + " Rate stats are recalculated from the totals.", ""]
+    if regular:
+        lines += fumble_note(regular, clean=True)
+        lines += [s.replace("### ", "#### ") for s in sections(totals(regular), with_games=True)]
+        lines += [s.replace("### ", "#### ") for s in advanced(totals(regular), [team_line(x, True) for x in regular], clean=True)]
+    lines += ["## Postseason totals", ""]
+    if post:
+        lines += [s.replace("### ", "#### ") for s in sections(totals(post), with_games=True)]
+    else:
+        lines += ["No postseason game.", ""]
+    lines += ["## Awards", "", table(["Type", "When", "Award", "Player", "Pos"], award_rows(root, year, team)),
+              not_recorded(games, clean=True, season_games=games)]
+    return "\n".join(lines) + "\n"
+
+
 def readme(root, year, team, games):
     regular = [x for x in games if x["kind"] == "regular"]
     post = [x for x in games if x["kind"] != "regular"]
@@ -345,10 +464,12 @@ def readme(root, year, team, games):
 
 def render(root, year, team):
     games = load_games(root, year, team)
-    out = {"README.md": readme(root, year, team, games)}
+    clean = year >= CLEAN_FROM
+    out = {"README.md": (clean_readme if clean else readme)(root, year, team, games)}
     regular = []
     for game in games:
-        out["games/" + slug(game)] = game_page(team, year, game, list(regular))
+        out["games/" + slug(game)] = (clean_game_page(team, year, game, list(regular), games) if clean
+                                      else game_page(team, year, game, list(regular)))
         if game["kind"] == "regular":
             regular.append(game)
     return {name: rebase_markdown(text, logical_path(year, f'stats/team_tracker/{name}'),

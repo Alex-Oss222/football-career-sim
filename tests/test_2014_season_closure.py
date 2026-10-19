@@ -170,10 +170,10 @@ class SeasonClosure2014Tests(unittest.TestCase):
 
         # Every generated view, as the weekly workflow generates it.
         regular = render_season_stats.load_receipts(paths.receipts)
-        views = render_season_stats.render_views(SEASON, JAX, regular)
+        views = render_season_stats.render_views(SEASON, JAX, regular, root)
         for name, text in views.items():
-            paths.file_in(paths.stats, name).parent.mkdir(parents=True, exist_ok=True)
-            paths.file_in(paths.stats, name).write_text(text, encoding="utf-8")
+            render_season_stats.view_path(paths, name).parent.mkdir(parents=True, exist_ok=True)
+            render_season_stats.view_path(paths, name).write_text(text, encoding="utf-8")
         self.assertTrue((root / "data/2014/Regular_Season/Statistics/records/season_totals.json").is_file())
         standings = paths.record("standings.md")
         standings.write_text(render_standings.render(SEASON, regular), encoding="utf-8")
@@ -239,19 +239,15 @@ class SeasonClosure2014Tests(unittest.TestCase):
         from scripts import render_week_pages
         self.assertEqual(render_week_pages.write(root, SEASON)[1], [])
         # The in-season rails records of the closed weeks read the receipts
-        # before them, so the synthetic Week 1 changes their generated block
-        # as the weekly workflow would regenerate it; the batch's event after
-        # the block is kept (render_inseason_rails.check compares the block).
+        # before them, so the synthetic Week 1 changes their league states;
+        # each week's page and its record are rewritten as the weekly workflow
+        # writes them, and the batch's event line is kept.
         from scripts import render_inseason_rails
         closed = render_season_stats.load_receipts(paths.receipts)
         folder = render_inseason_rails.page_path(SEASON, 5, root).parent
         for page in (sorted(folder.glob("week_*.md")) if folder.is_dir() else []):
             week = int(page.stem.split("_")[1])
-            current = page.read_text(encoding="utf-8")
-            generated = render_inseason_rails.render(SEASON, week, root, [r for r in closed if int(r["week"]) < week])
-            end = render_inseason_rails.END
-            tail = current.split(end, 1)[1] if end in current else "\n"
-            page.write_text(generated.split(end)[0] + end + tail, encoding="utf-8")
+            render_inseason_rails.write(SEASON, week, root, [r for r in closed if int(r["week"]) < week])
 
         # The synthetic slate is a Week 1, so the pages it rewrote that were
         # written before Week 6 stay history in the copy (rebuild rule 1); a

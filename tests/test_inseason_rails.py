@@ -1022,8 +1022,12 @@ class CommittedDataTests(unittest.TestCase):
         self.assertEqual(render_inseason_rails.page_path(2014, 5).exists(), closed)
         text = render_inseason_rails.render(2014, 5)
         self.assertIn("## Held additions", text)
-        meta = json.loads(re.search(r"<!-- rails-week: (\{.*?\}) -->", text).group(1))
+        # The week's record of its files and league states is kept beside the page in the data
+        # area (rebuild step 4); the page itself carries no markup.
+        self.assertNotIn("<!--", text)
+        meta = render_inseason_rails.week_meta(2014, 5)
         self.assertEqual(set(meta["state_digests"]), {"2014-10-01", "2014-10-04"})
+        self.assertTrue(render_inseason_rails.meta_path(2014, 5).relative_to(ROOT).as_posix().startswith("data/"))
 
 
 class BuilderTests(unittest.TestCase):

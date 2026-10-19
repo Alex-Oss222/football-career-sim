@@ -453,10 +453,16 @@ class RecordsTests(unittest.TestCase):
         new = receipt(Sample.get()[1])
         book = agg([old, new])
         text = team_stats_markdown(2014, book, [old, new])
-        self.assertIn("## Penalties — kernel 2014.6 games with penalty records", text)
-        self.assertIn("No combined penalty figure or rank is published.", text)
+        # From 2014 the page is written clean (rebuild step 4): the same split in football words.
+        self.assertIn("## Penalties\n", text)
+        self.assertIn("The two counts are never added and no penalty ranking is kept.", text)
+        self.assertIn("count only the games through Week 4", text)
+        earlier = team_stats_markdown(2013, book, [old, new])
+        self.assertIn("## Penalties — kernel 2014.6 games with penalty records", earlier)
+        self.assertIn("No combined penalty figure or rank is published.", earlier)
         only_old = team_stats_markdown(2014, agg([old]), [old])
-        self.assertNotIn("penalty records", only_old)
+        self.assertNotIn("## Penalties", only_old)
+        self.assertNotIn("penalty records", team_stats_markdown(2013, agg([old]), [old]))
 
     def test_team_tracker_never_adds_the_two_definitions(self):
         # Review fix (October 16, 2026): the tracker's season Penalties cell

@@ -1,16 +1,15 @@
 # 2014 NFL team statistics
 
-**Version:** `2014-W05-TEAM-STATS`
 **Through:** Week 5.
 **Coverage:** complete for every closed game.
 
-Per-game team statistics from closed-game receipts. Plays are rushing attempts plus dropbacks. Records and tiebreakers live in `../standings.md`.
+Per-game team statistics from the closed games. Plays are rushing attempts plus dropbacks. Records and tiebreakers are on the [standings](../../standings.md).
 
 ## Offense
 
-PEN/G and PEN YDS/G count only games closed before the penalty records (one draw per scrimmage play, charged to the offense), per such game; games with the penalty records are in the penalty table below. No combined penalty figure or rank is published.
+PEN/G and PEN YDS/G count only the games through Week 4, when each game's penalties were charged to the offense, per such game; the games from Week 5 on, with each accepted foul charged to the club that committed it, are in the penalty table below. The two counts are never added and no penalty ranking is kept.
 
-| Team | G | PTS/G | YDS/G | PLAYS/G | Y/P | PASS/G | RUSH/G | 1D/G | 3RD | 3RD% | GIVE | SCK | PEN/G | PEN YDS/G | TOP/G |
+| Team | G | PTS/G | YDS/G | PLAYS/G | Y/P | PASS/G | RUSH/G | FD/G | 3RD | 3RD% | GIVE | SCK | PEN/G | PEN YDS/G | TOP/G |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Indianapolis Colts | 5 | 24.4 | 470.0 | 72.0 | 6.5 | 327.8 | 142.2 | 24.6 | 38/78 | 48.7 | 9 | 12 | 6.0 | 48.5 | 32:35 |
 | Atlanta Falcons | 5 | 27.4 | 440.0 | 64.8 | 6.8 | 306.4 | 133.6 | 22.8 | 26/64 | 40.6 | 4 | 9 | 4.8 | 36.2 | 32:07 |
@@ -49,7 +48,7 @@ PEN/G and PEN YDS/G count only games closed before the penalty records (one draw
 
 Opponent production per game. SCK counts sacks by the defense; TAKE counts takeaways.
 
-| Team | G | PTS/G | YDS/G | PLAYS/G | Y/P | PASS/G | RUSH/G | 1D/G | 3RD | 3RD% | TAKE | SCK | TO +/- |
+| Team | G | PTS/G | YDS/G | PLAYS/G | Y/P | PASS/G | RUSH/G | FD/G | 3RD | 3RD% | TAKE | SCK | TO +/- |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Miami Dolphins | 4 | 21.0 | 307.2 | 59.5 | 5.2 | 204.0 | 103.2 | 17.0 | 16/46 | 34.8 | 7 | 12 | +1 |
 | Oakland Raiders | 4 | 22.2 | 322.2 | 61.8 | 5.2 | 196.0 | 126.2 | 17.2 | 21/55 | 38.2 | 3 | 8 | -6 |
@@ -121,9 +120,9 @@ Opponent production per game. SCK counts sacks by the defense; TAKE counts takea
 | Tennessee Titans | 5 | 12 | 13 | 92.3 | 10 | 10 | 22 | 49.0 | 2 | 16 | 25.9 | 8 | 6.4 |
 | Washington Redskins | 5 | 7 | 8 | 87.5 | 12 | 13 | 27 | 44.4 | 5 | 17 | 22.4 | 9 | 9.7 |
 
-## Drives and kicking — Week 4 onward (kernels 2013.6-2013.7)
+## Drives and kicking
 
-Counted only from games closed under kernel 2013.6 or later; Weeks 1-3 receipts (kernels 2013.4/2013.5) do not carry these counters and are not included. G counts those games only. From kernel 2013.7 (after Week 8) a punt return is a punt whose 2012 play-by-play record was returned (not a fair catch, downed, out-of-bounds or touchback punt).
+Counted from the games that record drives; G counts those games. SAF counts safeties, DOWNS turnovers on downs, CLOCK drives ended by the clock and KO kickoffs.
 
 | Team | G | DRIVES | FGA | XPA | XPM | SAF | DOWNS | CLOCK | KO |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -160,9 +159,9 @@ Counted only from games closed under kernel 2013.6 or later; Weeks 1-3 receipts 
 | Tennessee Titans | 5 | 57 | 13 | 10 | 10 | 0 | 0 | 3 | 26 |
 | Washington Redskins | 5 | 64 | 8 | 13 | 12 | 0 | 1 | 4 | 24 |
 
-## Two-point tries, onside kicks and return touchdowns — kernel 2014.6 games
+## Two-point tries, onside kicks and return touchdowns
 
-Counted only from games closed under kernel 2014.6 or later; G counts those games only. DEF TD: interception and fumble return touchdowns; ST TD: punt return, blocked-kick and kickoff return touchdowns; ONS REC: the kicking club's recoveries of its own onside kicks.
+Counted from Week 5 on; G counts those games. DEF TD: interception and fumble return touchdowns; ST TD: punt return, blocked-kick and kickoff return touchdowns; ONS REC: the kicking club's recoveries of its own onside kicks.
 
 | Team | G | 2PA | 2PM | DEF TD | ST TD | ONSIDE | ONS REC |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -197,9 +196,9 @@ Counted only from games closed under kernel 2014.6 or later; G counts those game
 | Tennessee Titans | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Washington Redskins | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-## Ball security — kernel 2014.6 games
+## Ball security
 
-Counted only from games closed under kernel 2014.6 or later; G counts those games only. FUM: the club's fumbles, its muffs the feed counts as fumbles included (a kickoff muff the club never possessed is a muff only); LOST: those the club lost; MUFFS: its muffed kicks; KICK REC: its recoveries of its own kicks. Earlier receipts counted every generated fumble as lost and named one defender as its forcer and recoverer, so the player tables' FUM, LOST, FF and FR columns combine two definitions this season and no fumble rank is published. Who fumbled, forced, recovered or muffed is a group draw or a replayed record, never evidence of a player's ball security.
+Counted from Week 5 on; G counts those games. FUM: the club's fumbles, its muffs counted as fumbles included (a kickoff muff the club never possessed is a muff only); LOST: those the club lost; MUFFS: its muffed kicks; KICK REC: its recoveries of its own kicks. Earlier games counted every fumble as lost, with one defender credited with forcing and recovering it, so the player tables' FUM, LOST, FF and FR columns combine two counting methods this season and no fumble ranking is kept.
 
 | Team | G | FUM | LOST | MUFFS | KICK REC |
 |---|---:|---:|---:|---:|---:|
@@ -234,11 +233,11 @@ Counted only from games closed under kernel 2014.6 or later; G counts those game
 | Tennessee Titans | 1 | 0 | 0 | 0 | 0 |
 | Washington Redskins | 1 | 1 | 1 | 0 | 0 |
 
-## Penalties — kernel 2014.6 games with penalty records
+## Penalties
 
-Counted only from games closed with the penalty records; G counts those games only. Each accepted foul is charged to the fouling club (PEN, PEN YDS); DECL and OFFS count its declined and offsetting fouls; 1D PEN counts the club's own first downs by penalty. The fouls are the replayed real drives' own records; who fouled is a group draw, never evidence, and an accept or decline is the real record's, never a coaching choice. Earlier games charged a drawn count to the offense, so the two definitions are never added and no penalty rank is published.
+Counted from Week 5 on; G counts those games. Each accepted foul is charged to the club that committed it (PEN, PEN YDS); DECL and OFFS count its declined and offsetting fouls; FD PEN counts the club's own first downs by penalty. Earlier games charged each game's penalties to the offense, so the two counts are never added and no penalty ranking is kept.
 
-| Team | G | PEN | PEN YDS | PEN/G | PEN YDS/G | DECL | OFFS | 1D PEN |
+| Team | G | PEN | PEN YDS | PEN/G | PEN YDS/G | DECL | OFFS | FD PEN |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | Arizona Cardinals | 1 | 7 | 50 | 7.0 | 50.0 | 0 | 0 | 4 |
 | Atlanta Falcons | 1 | 5 | 30 | 5.0 | 30.0 | 1 | 0 | 2 |
@@ -271,9 +270,9 @@ Counted only from games closed with the penalty records; G counts those games on
 | Tennessee Titans | 1 | 10 | 63 | 10.0 | 63.0 | 0 | 0 | 2 |
 | Washington Redskins | 1 | 6 | 30 | 6.0 | 30.0 | 2 | 1 | 5 |
 
-## Field position — kernel 2013.7 games (after Week 8)
+## Field position
 
-Kernel 2013.7 games only: average drive start for the club and for its opponents, realized punt net (line of scrimmage to the receiving start, returns and enforcement included) and fourth-down attempts and conversions inside drives (from the real 2012 drive chains; a failed attempt ending a drive is a turnover on downs). G counts those games only.
+Average drive start for the club and for its opponents, net punting (line of scrimmage to the receiving club's start, returns and penalties included) and fourth-down attempts and conversions inside drives (a failed attempt ending a drive is a turnover on downs). G counts the games that record drive starts.
 
 | Team | G | DRIVES | AVG START | OPP AVG START | PUNTS | NET PUNT | 4TH ATT | 4TH CONV |
 |---|---:|---:|---|---|---:|---:|---:|---:|

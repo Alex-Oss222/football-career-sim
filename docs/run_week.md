@@ -23,6 +23,10 @@ The [decision queue](../state/decision_queue.json) holds a week until Stone's de
 
 From 2014 Week 6 the week's result page is the Game Report (`SeasonPaths(YEAR).game_report(N)`, `Game_Report.md` in the week's folder; Weeks 1 to 5 keep `output.md`), written from the [Game Report template](../foundation/templates/regular_season_output_template.md). After the close: fill its box score with `render_box_score.py --season YEAR --write <Game_Report.md>`, bring the roster record up to the game, run `render_week_pages.py --season YEAR` (the Games and league-results indexes, the league-results week page, the injury report, the medical history's game entry and the new incident records), write the highlights under the league-results page's game headings, then `render_annual_record.py YEAR`. The [update workflow](update_workflow.md#games-and-their-statistical-evidence) gives the details.
 
+## League pages after the close
+
+After `close_week.py`, the league pages are rebuilt from the receipts in this order, each a clean page with no system words: the standings (`render_standings.py YEAR`), the statistics with the statbook and records indexes (`render_season_stats.py YEAR --team TEAM_ID`), the team tracker (`render_team_tracker.py YEAR`), the week's awards (`league_awards.py week N --season YEAR --close`, which renders the announcement pages) and the week's in-season roster moves page with its record (`render_inseason_rails.py --season YEAR --week N --write --event JSON`). The statistical band audit the runner reads is in the data area: `data/YEAR/Regular_Season/Statistics/records/calibration_audit.md`.
+
 ## Generated-data rule
 
 Every club dresses at most 46 players. Jacksonville's inactives are Stone's list in `game_day_inactives` of `SeasonPaths(YEAR).depth_chart`; a background club's are chosen mechanically from the bottom of its depth order (`runtime.week_inputs.game_day_actives`), never from a real historical inactive list, and the weekly gate rejects a TeamInput with more than 46 actives.

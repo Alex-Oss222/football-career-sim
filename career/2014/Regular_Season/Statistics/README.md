@@ -1,7 +1,20 @@
 # 2014 regular-season statistics
 
-[Regular season](../README.md) · [Team tracker](records/team_tracker/README.md) · [Player cards](../../Team_Operations/Team/Player_Cards/README.md)
+[Regular season](../README.md) · [Player pages](../../Team_Operations/Team/Player_Cards/README.md)
 
-**Through Week 5 (October 5, 2014): 76 of 76 receipts.** Generated views: [team player statistics](records/team_player_stats.md), [team statistics](records/team_stats.md), [league player statistics](records/league_player_stats.md), [league leaders](records/league_leaders.md), [play-call statistics](records/play_call_stats.md), [all player statistics](records/all_player_stats.md), the [calibration audit](records/calibration_audit.md) and the [standings](../standings.md), all regenerated from [the receipts](../../../../data/2014/Regular_Season/Statistics/records/game_receipts/README.md) after each closed week. [Storage and rebuild rules](records/README.md) govern all views. The [2013 statbook](../../../2013/statbook.md) remains the closed prior-season record. No standings, leaderboard, award or player total is copied forward as 2014 performance.
+**Through Week 5.** Every closed game is counted (76 games).
 
-After each closed week, regenerate the standings and every stat view from the 2014 receipts. [League results](../League_Results/README.md), [awards](../Awards/README.md) and [postseason](../../Postseason/README.md) retain their own event scope.
+| Page | What it holds |
+|---|---|
+| [Jaguars player statistics](records/team_player_stats.md) | the club's players by position |
+| [Team statistics](records/team_stats.md) | every club's offense, defense and special teams, per game |
+| [League player statistics](records/league_player_stats.md) | every player by position, league-wide |
+| [League leaders](records/league_leaders.md) | the leaders at each position and overall |
+| [Jaguars play calls](records/play_call_stats.md) | the club's calls by snaps and results, and its defensive calls by situation |
+| [Rosters and player statistics](records/all_player_stats.md) | club by club, every player who has dressed |
+| [Jaguars team tracker](records/team_tracker/README.md) | the club's season and game-by-game totals |
+| [Standings](../standings.md) | division, conference and league standings |
+
+Every page is rebuilt from the game records after each closed week. Preseason games never count here, and postseason games are kept apart.
+
+The 2013 season: [statistics](../../../2013/statbook.md).
