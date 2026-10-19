@@ -1,28 +1,46 @@
 # Dwayne Gratz
 
-![Dwayne Gratz career card](assets/dwayne_gratz.svg)
+**Philadelphia Eagles · Cornerback · Age 24 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 201 lb · Born March 8, 1990 · Connecticut
+
+As of October 5, 2014, after Week 5.
+
+![Dwayne Gratz](https://commons.wikimedia.org/wiki/Special:FilePath/Dwayne_Gratz_%286168052643%29_%28cropped%29.jpg?width=500)
+
+*Photo: GoIowaState.com, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Dwayne_Gratz_(6168052643)_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 23 | N/A | 16 | 44 | 1 | 6 | 1 | 1 | 2 | 1 | 1 | 2.8 | 0 |
-| 2014 | Philadelphia Eagles | 24 | N/A | 3 | 8 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 2.7 | 0 |
-| **Career** |  |  |  | 19 | 52 | 1 | 8 | 1 | 1 | 2 | 1 | 1 | 2.7 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 24 | N/A | 3 | 8 | 3 | 5 | 0 | 0 | 0 |
+| 2013 | Philadelphia | 23 | N/A | 16 | 44 | 23 | 21 | 1 | 2 | 2 |
+| Career |  |  |  | 19 | 52 | 26 | 26 | 1 | 2 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 24 | N/A | 0 | 0 | 2 | 0 | 0 | 2 |
+| 2013 | Philadelphia | 23 | N/A | 1 | 1 | 6 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 23 | N/A | 3 | 7 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2.3 | 0 |
-| **Career** |  |  |  | 3 | 7 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2.3 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 23 | N/A | 3 | 7 | 4 | 3 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 23 | N/A | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Philadelphia Eagles players](README.md).
+<!-- player-page -->

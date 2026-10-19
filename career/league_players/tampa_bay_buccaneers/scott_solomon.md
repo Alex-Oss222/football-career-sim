@@ -1,15 +1,26 @@
 # Scott Solomon
 
-![Scott Solomon career card](assets/scott_solomon.svg)
+**Tampa Bay Buccaneers · Outside linebacker · No. 56 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 262 lb · Born November 5, 1988 · Rice · Drafted in 2012, seventh round, by Tennessee
+
+As of October 5, 2014, after Week 5.
+
+![Scott Solomon](https://commons.wikimedia.org/wiki/Special:FilePath/Scott_Solomon_2015.jpg?width=500)
+
+*Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Scott_Solomon_2015.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Tampa Bay Buccaneers | 25 | 56 | 5 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 1 |
-| **Career** |  |  |  | 5 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 1 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 25 | 56 | 5 | 1 | 1 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 25 | 56 | 0 | 0 | 0 | 0 | 0 | 3 |
 
 ### Playoffs
 
@@ -17,8 +28,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Tennessee in the seventh round |
+
+<!-- player-page -->

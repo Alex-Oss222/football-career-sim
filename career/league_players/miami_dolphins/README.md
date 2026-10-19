@@ -1,11 +1,13 @@
 # Miami Dolphins players
 
-AFC East · Players whose latest game on record was with the Miami Dolphins. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+AFC East. The players whose latest game on record was with the Miami Dolphins. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 8 | [Matt Moore](matt_moore.md) | QB | 4 | 16 |
 | N/A | [Pat Devlin](pat_devlin.md) | QB | 0 | 14 |
 | 17 | [Ryan Tannehill](ryan_tannehill.md) | QB | 4 | 16 |
@@ -13,7 +15,7 @@ AFC East · Players whose latest game on record was with the Miami Dolphins. G c
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 34 | [Damien Williams](damien_williams.md) | RB | 4 | 0 |
 | 30 | [Daniel Thomas](daniel_thomas.md) | RB | 0 | 16 |
 | 28 | [Knowshon Moreno](knowshon_moreno.md) | RB | 4 | 16 |
@@ -25,7 +27,7 @@ AFC East · Players whose latest game on record was with the Miami Dolphins. G c
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 10 | [Brandon Gibson](brandon_gibson.md) | WR | 4 | 16 |
 | 82 | [Brian Hartline](brian_hartline.md) | WR | 4 | 16 |
 | 14 | [Jarvis Landry](jarvis_landry.md) | WR | 4 | 0 |
@@ -35,7 +37,7 @@ AFC East · Players whose latest game on record was with the Miami Dolphins. G c
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 42 | [Charles Clay](charles_clay.md) | TE | 4 | 16 |
 | 80 | [Dion Sims](dion_sims.md) | TE | 4 | 16 |
 | N/A | [Michael Egnew](michael_egnew.md) | TE | 0 | 16 |
@@ -43,7 +45,7 @@ AFC East · Players whose latest game on record was with the Miami Dolphins. G c
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 77 | [Billy Turner](billy_turner.md) | T | 2 | 0 |
 | 71 | [Branden Albert](branden_albert.md) | T | 4 | 16 |
 | 63 | [Dallas Thomas](dallas_thomas.md) | G | 3 | 16 |
@@ -59,7 +61,7 @@ AFC East · Players whose latest game on record was with the Miami Dolphins. G c
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 76 | [Anthony Johnson](anthony_johnson.md) | DT | 4 | 0 |
 | 91 | [Cameron Wake](cameron_wake.md) | DE | 4 | 16 |
 | 79 | [Derrick Shelby](derrick_shelby.md) | DE | 4 | 16 |
@@ -75,7 +77,7 @@ AFC East · Players whose latest game on record was with the Miami Dolphins. G c
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 58 | [Chris McCain](chris_mccain.md) | LB | 4 | 0 |
 | 59 | [Dannell Ellerbe](dannell_ellerbe.md) | LB | 4 | 16 |
 | 93 | [Jason Trusnik](jason_trusnik.md) | LB | 4 | 16 |
@@ -89,7 +91,7 @@ AFC East · Players whose latest game on record was with the Miami Dolphins. G c
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 21 | [Brent Grimes](brent_grimes.md) | CB | 4 | 16 |
 | N/A | [Chris Clemons](chris_clemons.md) | S | 0 | 16 |
 | 24 | [Cortland Finnegan](cortland_finnegan.md) | CB | 4 | 16 |
@@ -108,17 +110,19 @@ AFC East · Players whose latest game on record was with the Miami Dolphins. G c
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 9 | [Caleb Sturgis](caleb_sturgis.md) | K | 4 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 2 | [Brandon Fields](brandon_fields.md) | P | 4 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 92 | [John Denney](john_denney.md) | LS | 4 | 16 |
+
+<!-- player-index -->

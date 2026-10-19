@@ -1,16 +1,24 @@
 # Matt Slauson
 
-![Matt Slauson career card](assets/matt_slauson.svg)
+**Chicago Bears · Guard · No. 68 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 315 lb · Born February 18, 1986 · Nebraska · Drafted in 2009, sixth round, by the New York Jets
+
+As of October 5, 2014, after Week 5.
+
+![Matt Slauson](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Slauson.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Matt_Slauson.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Chicago Bears | 27 | 68 | 16 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Chicago Bears | 28 | 68 | 5 | 5 | 343 | 3 | 23 | 0 | 0 | 0 | 0 | 68.6 |
-| **Career** |  |  |  | 21 | N/A | N/A | 6 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Chicago | 28 | 68 | 5 | 5 | 343 | 3 | 23 |
+| 2013 | Chicago | 27 | 68 | 16 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by the New York Jets in the sixth round |
+
+<!-- player-page -->

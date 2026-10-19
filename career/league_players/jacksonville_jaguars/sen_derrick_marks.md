@@ -1,30 +1,87 @@
 # Sen'Derrick Marks
 
-![Sen'Derrick Marks career card](assets/sen_derrick_marks.svg)
+**Jacksonville Jaguars · Defensive tackle · No. 99 · Age 27 · Active roster**
 
-## Career stats
+6' 2", 294 lb · Born February 23, 1987 · Auburn · Drafted in 2009, second round, by Tennessee
+
+As of October 5, 2014, after Week 5.
+
+![Sen'Derrick Marks](https://commons.wikimedia.org/wiki/Special:FilePath/Sen%27Derrick_Marks_2014_Jaguars_training_camp_Cropped.jpg?width=500)
+
+*Photo: Flickr user Melissa Hillier, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Sen%27Derrick_Marks_2014_Jaguars_training_camp_Cropped.jpg)).*
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 6.5/10 |
+| Athleticism | 6.5/10 |
+| Speed | 6.0/10 |
+| Strength and power | 6.5/10 |
+| Agility and change of direction | 6.5/10 |
+| Technique | 6.5/10 |
+| Football IQ | 6.0/10 |
+| Get-off | 7.0/10 |
+| Anchor | 6.0/10 |
+| Power | 6.5/10 |
+| Hand use | 6.5/10 |
+| Block shedding | 6.0/10 |
+| Penetration | 7.0/10 |
+| Pass-rush counters | 6.0/10 |
+| Double-team play | 5.5/10 |
+| Gap discipline and lateral pursuit | 6.5/10 |
+
+A penetrating interior starter whose quick entry and lateral pursuit can disrupt the pocket and backfield. I see better single-gap pressure tools than double-team anchoring.
+
+*Staff view, March 31, 2014.*
+
+## Contract
+
+Four-year contract through 2017.
+
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $4,000,000 | $4,750,000 |
+| 2015 | $5,500,000 | $6,250,000 |
+| 2016 | $6,000,000 | $7,500,000 |
+| 2017 | $5,500,000 | $7,500,000 |
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 26 | 99 | 16 | 90 | 8 | 8 | 0 | 6 | 1 | 1 | 15 | 5.6 | 56 |
-| 2014 | Jacksonville Jaguars | 27 | 99 | 5 | 18 | 0 | 1 | 0 | 0 | 0 | 0 | 2 | 3.6 | 12 |
-| **Career** |  |  |  | 21 | 108 | 8 | 9 | 0 | 6 | 1 | 1 | 17 | 5.1 | 68 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 27 | 99 | 5 | 18 | 12 | 6 | 1 | 0 | 2 |
+| 2013 | Jacksonville | 26 | 99 | 16 | 90 | 56 | 34 | 8 | 8 | 15 |
+| With Jacksonville |  |  |  | 21 | 108 | 68 | 40 | 9 | 8 | 17 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 27 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Jacksonville | 26 | 99 | 0 | 0 | 6 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 26 | 99 | 2 | 13 | 1 | 2 | 0 | 0 | 0 | 0 | 3 | 6.5 | 9 |
-| **Career** |  |  |  | 2 | 13 | 1 | 2 | 0 | 0 | 0 | 0 | 3 | 6.5 | 9 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 26 | 99 | 2 | 13 | 9 | 4 | 2 | 1 | 3 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 26 | 99 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/sen_derrick_marks.md)
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Tennessee in the second round |
+| 2009 | Signed a four-year rookie contract with Tennessee |
+| March 12, 2013 | Signed a one-year contract with Jacksonville as a free agent |
+| March 11, 2014 | Re-signed with Jacksonville for four years (2014 to 2017) |
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: his 2014 Jaguars roster listing. [All Jacksonville Jaguars players](README.md).
+<!-- player-page -->

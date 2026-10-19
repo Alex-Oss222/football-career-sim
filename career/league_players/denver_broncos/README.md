@@ -1,11 +1,13 @@
 # Denver Broncos players
 
-AFC West · Players whose latest game on record was with the Denver Broncos. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+AFC West. The players whose latest game on record was with the Denver Broncos. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 17 | [Brock Osweiler](brock_osweiler.md) | QB | 4 | 16 |
 | 18 | [Peyton Manning](peyton_manning.md) | QB | 4 | 16 |
 | N/A | [Zac Dysert](zac_dysert.md) | QB | 0 | 16 |
@@ -13,7 +15,7 @@ AFC West · Players whose latest game on record was with the Denver Broncos. G c
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 40 | [Juwan Thompson](juwan_thompson.md) | RB | 4 | 0 |
 | 28 | [Montee Ball](montee_ball.md) | RB | 4 | 16 |
 | 23 | [Ronnie Hillman](ronnie_hillman.md) | RB | 4 | 16 |
@@ -21,7 +23,7 @@ AFC West · Players whose latest game on record was with the Denver Broncos. G c
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 12 | [Andre Caldwell](andre_caldwell.md) | WR | 4 | 16 |
 | 14 | [Cody Latimer](cody_latimer.md) | WR | 4 | 0 |
 | 88 | [Demaryius Thomas](demaryius_thomas.md) | WR | 4 | 16 |
@@ -34,7 +36,7 @@ AFC West · Players whose latest game on record was with the Denver Broncos. G c
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 84 | [Jacob Tamme](jacob_tamme.md) | TE | 4 | 16 |
 | N/A | [Joel Dreessen](joel_dreessen.md) | TE | 0 | 14 |
 | 80 | [Julius Thomas](julius_thomas.md) | TE | 4 | 15 |
@@ -43,7 +45,7 @@ AFC West · Players whose latest game on record was with the Denver Broncos. G c
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 63 | [Ben Garland](ben_garland.md) | C | 2 | 0 |
 | 75 | [Chris Clark](chris_clark.md) | T | 4 | 16 |
 | N/A | [Chris Kuper](chris_kuper.md) | G | 0 | 15 |
@@ -60,7 +62,7 @@ AFC West · Players whose latest game on record was with the Denver Broncos. G c
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 94 | [DeMarcus Ware](demarcus_ware.md) | DE | 4 | 16 |
 | 95 | [Derek Wolfe](derek_wolfe.md) | DE | 4 | 16 |
 | N/A | [Kevin Vickerson](kevin_vickerson.md) | DT | 0 | 16 |
@@ -75,7 +77,7 @@ AFC West · Players whose latest game on record was with the Denver Broncos. G c
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Adrian Robinson](adrian_robinson.md) | OLB | 0 | 14 |
 | 54 | [Brandon Marshall](brandon_marshall.md) | ILB | 4 | 0 |
 | 52 | [Corey Nelson](corey_nelson.md) | ILB | 4 | 0 |
@@ -90,7 +92,7 @@ AFC West · Players whose latest game on record was with the Denver Broncos. G c
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 29 | [Bradley Roby](bradley_roby.md) | CB | 4 | 0 |
 | N/A | [Champ Bailey](champ_bailey.md) | CB | 0 | 14 |
 | 25 | [Chris Harris](chris_harris.md) | CB | 4 | 16 |
@@ -106,18 +108,20 @@ AFC West · Players whose latest game on record was with the Denver Broncos. G c
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 8 | [Brandon McManus](brandon_mcmanus.md) | K | 4 | 0 |
 | N/A | [Matt Prater](matt_prater.md) | K | 0 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 4 | [Britton Colquitt](britton_colquitt.md) | P | 4 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 46 | [Aaron Brewer](aaron_brewer.md) | LS | 4 | 16 |
+
+<!-- player-index -->

@@ -1,16 +1,29 @@
 # Carlos Rogers
 
-![Carlos Rogers career card](assets/carlos_rogers.svg)
+**Oakland Raiders · Cornerback · No. 27 · Age 33 · Last game September 28, 2014**
 
-## Career stats
+6' 0", 195 lb · Born July 2, 1981 · Auburn · Drafted in 2005, first round, by Washington
+
+As of September 28, 2014, after Week 4.
+
+![Carlos Rogers](https://commons.wikimedia.org/wiki/Special:FilePath/Carlos_Rogers_in_Super_Bowl_XLVII.jpg?width=500)
+
+*Photo: Ray_Rice_run_during_SB_XLVII.jpg : Au Kirk derivative work: Lpdrew, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Carlos_Rogers_in_Super_Bowl_XLVII.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 32 | 22 | 16 | 98 | 1 | 12 | 2 | 2 | 0 | 2 | 2 | 6.1 | 0 |
-| 2014 | Oakland Raiders | 33 | 27 | 4 | 14 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 3.5 | 0 |
-| **Career** |  |  |  | 20 | 112 | 1 | 12 | 2 | 3 | 0 | 2 | 2 | 5.6 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 33 | 27 | 4 | 14 | 10 | 4 | 1 | 0 | 1 |
+| 2013 | San Francisco | 32 | 22 | 16 | 98 | 58 | 40 | 2 | 0 | 0 |
+| Career |  |  |  | 20 | 112 | 68 | 44 | 3 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 33 | 27 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | San Francisco | 32 | 22 | 1 | 2 | 12 | 2 | 2 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Oakland Raiders players](README.md).
+| Date | Transaction |
+|---|---|
+| 2005 | Drafted by Washington in the first round |
+
+<!-- player-page -->

@@ -1,27 +1,41 @@
 # Felix Jones
 
-![Felix Jones career card](assets/felix_jones.svg)
+**Pittsburgh Steelers · Running back · Age 26 · Last game January 5, 2014**
 
-## Career stats
+5' 10", 215 lb · Born May 8, 1987 · Arkansas · Drafted in 2008, first round, by Dallas
+
+As of January 5, 2014, after the Wild Card round.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 26 | 23 | 16 | 7 | 16 | 2.3 | 0 | 1.0 | 2 | 13 | 0 | 9 | 0 |
-| **Career** |  |  |  | 16 | 7 | 16 | 2.3 | 0 | 1.0 | 2 | 13 | 0 | 9 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 26 | 23 | 16 | 7 | 16 | 2.3 | 0 | 8 | 1.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 26 | 23 | 4 | 2 | 13 | 6.5 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 26 | 23 | 1 | 1 | 2 | 2.0 | 0 | 2.0 | 0 | 0 | 0 | 1 | 0 |
-| **Career** |  |  |  | 1 | 1 | 2 | 2.0 | 0 | 2.0 | 0 | 0 | 0 | 1 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 26 | 23 | 1 | 1 | 2 | 2.0 | 0 | 2 | 2.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 26 | 23 | 2 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 5, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Pittsburgh Steelers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Dallas in the first round |
+
+<!-- player-page -->

@@ -1,27 +1,33 @@
 # Donald Stephenson
 
-![Donald Stephenson career card](assets/donald_stephenson.svg)
+**Kansas City Chiefs · Offensive tackle · Age 25 · Last game January 4, 2014**
 
-## Career stats
+6' 6", 312 lb · Born September 30, 1988 · Oklahoma · Drafted in 2012, third round, by Kansas City
+
+As of January 4, 2014, after the Wild Card round.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 24 | 79 | 16 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 16 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 24 | 79 | 16 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 24 | 79 | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 24 | 79 | 1 | N/A | N/A | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 4, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Kansas City Chiefs players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Kansas City in the third round |
+
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # Jordan Hill
 
-![Jordan Hill career card](assets/jordan_hill.svg)
+**Seattle Seahawks · Defensive tackle · No. 97 · Age 23 · Last game October 6, 2014**
 
-## Career stats
+6' 1", 303 lb · Born February 8, 1991 · Penn State
+
+As of October 6, 2014, after Week 5.
+
+![Jordan Hill](https://commons.wikimedia.org/wiki/Special:FilePath/Jordan_Hill_2014.jpg?width=500)
+
+*Photo: Mike Morris, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jordan_Hill_2014.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Seattle Seahawks | 22 | 97 | 12 | 17 | 0 | 1 | 0 | 0 | 0 | 0 | 2 | 1.4 | 10 |
-| 2014 | Seattle Seahawks | 23 | 97 | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 1 |
-| **Career** |  |  |  | 16 | 18 | 0 | 1 | 0 | 0 | 0 | 0 | 2 | 1.1 | 11 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 23 | 97 | 4 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2013 | Seattle | 22 | 97 | 12 | 17 | 10 | 7 | 1 | 0 | 2 |
+| Career |  |  |  | 16 | 18 | 11 | 7 | 1 | 0 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 23 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Seattle | 22 | 97 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # Adam Vinatieri
 
-![Adam Vinatieri career card](assets/adam_vinatieri.svg)
+**Indianapolis Colts · Kicker · No. 4 · Age 41 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 209 lb · Born December 28, 1972 · South Dakota State
+
+As of October 5, 2014, after Week 5.
+
+![Adam Vinatieri](https://commons.wikimedia.org/wiki/Special:FilePath/Vinatieri%2C_Adam_%28USAF%29.jpg?width=500)
+
+*Photo: U.S. Air Force photo/Sgt. Brian Ferguson, Public domain ([source](https://commons.wikimedia.org/wiki/File:Vinatieri,_Adam_(USAF).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 40 | 4 | 16 | 29-33 | 87.9 | N/A | 33-33 | 100.0 | 120 | N/A | N/A | N/A | 7.5 |
-| 2014 | Indianapolis Colts | 41 | 4 | 5 | 8-10 | 80.0 | 61 | 14-14 | 100.0 | 38 | 2-2 | 2-4 | 4-4 | 7.6 |
-| **Career** |  |  |  | 21 | 37-43 | 86.0 | N/A | 47-47 | 100.0 | 158 | N/A | N/A | N/A | 7.5 |
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 41 | 4 | 5 | 8 | 10 | 80.0 | 61 | 14 | 14 | 100.0 | 38 |
+| 2013 | Indianapolis | 40 | 4 | 16 | 29 | 33 | 87.9 | N/A | 33 | 33 | 100.0 | 120 |
+| Career |  |  |  | 21 | 37 | 43 | 86.0 | N/A | 47 | 47 | 100.0 | 158 |
+
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 41 | 4 | 4-4 | 2-2 | 2-4 |
+| 2013 | Indianapolis | 40 | 4 | N/A | N/A | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+<!-- player-page -->

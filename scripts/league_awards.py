@@ -32,7 +32,7 @@ from runtime.packets import canonical
 from runtime.seasons import SeasonPaths, require_game_release, require_receipt_season
 from scripts.render_season_stats import load_receipts
 
-AWARDS = ROOT / "career/2013/awards"
+AWARDS = SeasonPaths(2013, ROOT).awards
 METHOD = AWARDS / "methodology.json"
 RESULTS = AWARDS / "results.json"
 
@@ -46,7 +46,8 @@ def method(season=2013):
     if not path.is_file():
         raise FileNotFoundError(
             "No %d awards methodology: freeze %s from the %d schedule before any award is drawn "
-            "(see career/2013/awards/methodology.json for the form)" % (season, path.relative_to(ROOT), season))
+            "(see %s for the form)" % (season, path.relative_to(ROOT), season,
+                                        method_path(2013).relative_to(ROOT)))
     return json.loads(path.read_text(encoding="utf-8"))
 
 

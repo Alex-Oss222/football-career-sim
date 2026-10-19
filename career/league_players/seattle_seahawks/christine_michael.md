@@ -1,16 +1,29 @@
 # Christine Michael
 
-![Christine Michael career card](assets/christine_michael.svg)
+**Seattle Seahawks · Running back · No. 33 · Age 23 · Last game October 6, 2014**
 
-## Career stats
+5' 10", 221 lb · Born November 9, 1990 · Texas A&M
+
+As of October 6, 2014, after Week 5.
+
+![Christine Michael](https://commons.wikimedia.org/wiki/Special:FilePath/Christine_Michael.jpg?width=500)
+
+*Photo: Dave Sizer, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Christine_Michael.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Seattle Seahawks | 22 | 33 | 16 | 16 | 104 | 6.5 | 1 | 6.5 | 2 | 9 | 0 | 18 | 0 |
-| 2014 | Seattle Seahawks | 23 | 33 | 2 | 4 | 13 | 3.2 | 0 | 6.5 | 0 | 0 | 0 | 4 | 0 |
-| **Career** |  |  |  | 18 | 20 | 117 | 5.8 | 1 | 6.5 | 2 | 9 | 0 | 22 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 23 | 33 | 2 | 4 | 13 | 3.2 | 0 | 5 | 6.5 |
+| 2013 | Seattle | 22 | 33 | 16 | 16 | 104 | 6.5 | 1 | 19 | 6.5 |
+| Career |  |  |  | 18 | 20 | 117 | 5.8 | 1 | 19 | 6.5 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 23 | 33 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2013 | Seattle | 22 | 33 | 3 | 2 | 9 | 4.5 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+<!-- player-page -->

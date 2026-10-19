@@ -1,15 +1,22 @@
 # Devon Still
 
-![Devon Still career card](assets/devon_still.svg)
+**Cincinnati Bengals · Defensive tackle · No. 75 · Age 24 · Last game December 29, 2013**
 
-## Career stats
+6' 5", 310 lb · Born July 11, 1989 · Penn State · Drafted in 2012, second round, by Cincinnati
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cincinnati Bengals | 24 | 75 | 16 | 10 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0.6 | 6 |
-| **Career** |  |  |  | 16 | 10 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0.6 | 6 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Cincinnati | 24 | 75 | 16 | 10 | 6 | 4 | 1 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Cincinnati | 24 | 75 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All Cincinnati Bengals players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Cincinnati in the second round |
+
+<!-- player-page -->

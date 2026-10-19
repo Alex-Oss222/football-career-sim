@@ -1,15 +1,26 @@
 # Brandin Cooks
 
-![Brandin Cooks career card](assets/brandin_cooks.svg)
+**New Orleans Saints · Wide receiver · No. 10 · Age 21 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 189 lb · Born September 25, 1993 · Oregon State
+
+As of October 5, 2014, after Week 5.
+
+![Brandin Cooks](https://commons.wikimedia.org/wiki/Special:FilePath/Brandin_Cooks.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Brandin_Cooks.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | New Orleans Saints | 20 | 10 | 5 | 21 | 12 | 183 | 15.2 | 0 | 36.6 | 57.1 | 42 | 11 | 0 |
-| **Career** |  |  |  | 5 | 21 | 12 | 183 | 15.2 | 0 | 36.6 | 57.1 | 42 | 11 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New Orleans | 20 | 10 | 5 | 21 | 12 | 183 | 15.2 | 0 | 42 | 36.6 | 57.1 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New Orleans | 20 | 10 | 1 | 11 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New Orleans Saints players](README.md).
+<!-- player-page -->

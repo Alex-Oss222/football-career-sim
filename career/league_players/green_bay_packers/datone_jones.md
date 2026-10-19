@@ -1,16 +1,29 @@
 # Datone Jones
 
-![Datone Jones career card](assets/datone_jones.svg)
+**Green Bay Packers · Defensive tackle · No. 95 · Age 24 · Last game October 2, 2014**
 
-## Career stats
+6' 4", 285 lb · Born July 24, 1990 · UCLA
+
+As of October 2, 2014, after Week 5.
+
+![Datone Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Datone_Jones%2C_Green_Bay_Packers.jpg?width=500)
+
+*Photo: Gaby C, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Datone_Jones,_Green_Bay_Packers.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Green Bay Packers | 23 | 95 | 16 | 11 | 0 | 2 | 0 | 0 | 1 | 1 | 1 | 0.7 | 7 |
-| 2014 | Green Bay Packers | 24 | 95 | 5 | 12 | 3 | 1 | 0 | 0 | 0 | 0 | 6 | 2.4 | 8 |
-| **Career** |  |  |  | 21 | 23 | 3 | 3 | 0 | 0 | 1 | 1 | 7 | 1.1 | 15 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 24 | 95 | 5 | 12 | 8 | 4 | 1 | 3 | 6 |
+| 2013 | Green Bay | 23 | 95 | 16 | 11 | 7 | 4 | 2 | 0 | 1 |
+| Career |  |  |  | 21 | 23 | 15 | 8 | 3 | 3 | 7 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 24 | 95 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Green Bay | 23 | 95 | 0 | 0 | 0 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+<!-- player-page -->

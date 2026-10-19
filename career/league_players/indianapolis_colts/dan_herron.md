@@ -1,15 +1,30 @@
 # Dan Herron
 
-![Dan Herron career card](assets/dan_herron.svg)
+**Indianapolis Colts · Running back · No. 36 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 212 lb · Born March 21, 1989 · Ohio State · Drafted in 2012, sixth round, by Cincinnati
+
+As of October 5, 2014, after Week 5.
+
+![Dan Herron](https://commons.wikimedia.org/wiki/Special:FilePath/Dan_Herron.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Dan_Herron.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Indianapolis Colts | 25 | 36 | 5 | 6 | 31 | 5.2 | 1 | 6.2 | 2 | 12 | 0 | 8 | 0 |
-| **Career** |  |  |  | 5 | 6 | 31 | 5.2 | 1 | 6.2 | 2 | 12 | 0 | 8 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 25 | 36 | 5 | 6 | 31 | 5.2 | 1 | 7 | 6.2 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 25 | 36 | 2 | 2 | 12 | 6.0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 25 | 36 | 13 | 306 | 23.5 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +32,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Cincinnati in the sixth round |
+
+<!-- player-page -->

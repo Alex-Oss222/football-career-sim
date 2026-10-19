@@ -1,16 +1,29 @@
 # Tarell Brown
 
-![Tarell Brown career card](assets/tarell_brown.svg)
+**Oakland Raiders · Cornerback · No. 23 · Age 29 · Last game September 28, 2014**
 
-## Career stats
+5' 11", 190 lb · Born January 6, 1985 · Texas · Drafted in 2007, fifth round, by San Francisco
+
+As of September 28, 2014, after Week 4.
+
+![Tarell Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Tarell_Brown_at_49ers_training_camp_2010-08-11_1.JPG?width=500)
+
+*Photo: BrokenSphere, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Tarell_Brown_at_49ers_training_camp_2010-08-11_1.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 28 | 25 | 16 | 68 | 6 | 16 | 55 | 4 | 0 | 0 | 0 | 4.2 | 0 |
-| 2014 | Oakland Raiders | 29 | 23 | 4 | 29 | 1 | 5 | 6 | 3 | 0 | 0 | 0 | 7.2 | 0 |
-| **Career** |  |  |  | 20 | 97 | 7 | 21 | 61 | 7 | 0 | 0 | 0 | 4.8 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 29 | 23 | 4 | 29 | 16 | 13 | 3 | 0 | 0 |
+| 2013 | San Francisco | 28 | 25 | 16 | 68 | 42 | 26 | 4 | 0 | 1 |
+| Career |  |  |  | 20 | 97 | 58 | 39 | 7 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 29 | 23 | 1 | 6 | 5 | 0 | 0 | 0 |
+| 2013 | San Francisco | 28 | 25 | 6 | 55 | 16 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Oakland Raiders players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by San Francisco in the fifth round |
+
+<!-- player-page -->

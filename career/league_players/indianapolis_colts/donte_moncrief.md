@@ -1,15 +1,22 @@
 # Donte Moncrief
 
-![Donte Moncrief career card](assets/donte_moncrief.svg)
+**Indianapolis Colts · Wide receiver · No. 10 · Age 21 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 221 lb · Born August 6, 1993 · Mississippi
+
+As of October 5, 2014, after Week 5.
+
+![Donte Moncrief](https://commons.wikimedia.org/wiki/Special:FilePath/Donte_Moncrief.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Donte_Moncrief.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Indianapolis Colts | 21 | 10 | 5 | 14 | 8 | 72 | 9.0 | 0 | 14.4 | 57.1 | 27 | 0 | 0 |
-| **Career** |  |  |  | 5 | 14 | 8 | 72 | 9.0 | 0 | 14.4 | 57.1 | 27 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 21 | 10 | 5 | 14 | 8 | 72 | 9.0 | 0 | 27 | 14.4 | 57.1 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+<!-- player-page -->

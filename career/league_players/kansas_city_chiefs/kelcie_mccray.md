@@ -1,16 +1,29 @@
 # Kelcie McCray
 
-![Kelcie McCray career card](assets/kelcie_mccray.svg)
+**Kansas City Chiefs · Free safety · No. 24 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 205 lb · Born September 21, 1988 · Arkansas State
+
+As of October 5, 2014, after Week 5.
+
+![Kelcie McCray](https://commons.wikimedia.org/wiki/Special:FilePath/Kelcie_McCray.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Kelcie_McCray.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Miami Dolphins | 24 | N/A | 16 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 0 |
-| 2014 | Kansas City Chiefs | 25 | 24 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 0 |
-| **Career** |  |  |  | 19 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.4 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 25 | 24 | 3 | 3 | 2 | 1 | 0 | 0 | 0 |
+| 2013 | Miami | 24 | N/A | 16 | 4 | 3 | 1 | 0 | 0 | 0 |
+| Career |  |  |  | 19 | 7 | 5 | 2 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 25 | 24 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2013 | Miami | 24 | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+<!-- player-page -->

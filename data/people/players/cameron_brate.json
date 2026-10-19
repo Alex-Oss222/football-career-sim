@@ -1,0 +1,199 @@
+{
+ "schema_version": 1,
+ "name": "Cameron Brate",
+ "gsis_id": "00-0031273",
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-05-11",
+   "date_as_written": "May 11, 2014 starting evaluation, on acquisition (signed as an undrafted rookie on May 10, 2014)",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Rookie; no NFL standing. Staff view: third tight end competition",
+   "position": "TE",
+   "identity": "A receiving tight end from Harvard with reliable hands and route feel; blocking strength and level of competition are the limits.",
+   "previous_profile": "None; 2014 rookie. The starting view rests on pre-draft public evidence only",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "3.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Hands",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Attached blocking",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Route feel",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments of the player as he arrives, made from pre-draft public evidence (combine and dated college record described qualitatively, plus pre-draft reports). They grade the current player, not his draft slot, contract or projection, and they use no NFL outcome. Evidence limits are stated below.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Hands",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Attached blocking",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Route feel",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards for the position, not measured 2014 league ranks. No NFL snap exists for this player.",
+   "read": "A receiving tight end from Harvard with reliable hands and route feel; blocking strength and level of competition are the limits.",
+   "read_sources": "Source: Harvard senior, 2013; memo watch-list reason (TE3 open after Reisner). No combine entry in the library.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "None (rookie)",
+     "current": "Starting 2014 view",
+     "change": "New",
+     "reason": "Pre-draft public evidence only; no Jacksonville practice or game evidence yet"
+    }
+   ],
+   "support": "Harvard senior, 2013; memo watch-list reason (TE3 open after Reisner). No combine entry in the library.",
+   "historical_comparison": "No comparator is assigned at arrival. The evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.",
+   "play_style": "A receiving tight end from Harvard with reliable hands and route feel; blocking strength and level of competition are the limits.",
+   "best_traits": [
+    "Football IQ: 5.5 /10.",
+    "Hands: 5.5 /10.",
+    "Athleticism: 5.0 /10."
+   ],
+   "main_weaknesses": [
+    "Attached blocking: 3.5 /10.",
+    "Strength / Power: 4.0 /10.",
+    "Technique: 4.5 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** Harvard senior, 2013; memo watch-list reason (TE3 open after Reisner). No combine entry in the library.",
+    "**Evaluation basis:** Theoretical staff judgment from pre-draft public evidence; thin evidence identified above.",
+    "**What remains uncertain:** Ivy League competition; no measured testing on record.",
+    "**What would change the assessment:** Attached blocking reps under Zernhelt in camp.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates."
+   ],
+   "one_line": "A receiving tight end from Harvard with reliable hands and route feel; blocking strength and level of competition are the limits.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Brate sustained his assigned block against the reserve ends on both padded days. The staff has usable evidence for that work, with TE3 still undecided.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-08-08",
+     "date_as_written": "August 8, 2014",
+     "setting": "Preseason game 1, Tampa Bay at Jacksonville",
+     "text": "Eleven offensive snaps with Henne's group; his one target, the third-and-8 Stick throw with the H in RETURN, was intercepted by Fletcher, with the route, read or exchange not established by the receipt. A long-term lower-extremity injury was logged at the end of that possession and he was removed: out, projected return in 160 days (January 15, 2015), reassessment August 15 ([medical record](career/2014/Team_Operations/Medical/incidents/cameron_brate_2014-08-08.md)). Roster disposition is Caldwell's decision with the user and is pending. The TE3 comparison loses him for the length of his absence; his camp blocking evidence stands.",
+     "source": "Source: [preseason game 1 output](career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_01/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/cameron_brate.md at commit 332d70b"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2014-05-10",
+   "kind": "signed",
+   "text": "Signed a three-year contract with Jacksonville as an undrafted rookie",
+   "source": "career/2014/Draft/udfa_signings.md"
+  },
+  {
+   "date": "2014-08-30",
+   "kind": "waived",
+   "text": "Waived by Jacksonville with the injured designation at the reduction to 53",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "date": "2014-08-31",
+   "kind": "reserve",
+   "text": "Cleared waivers; reverted to Jacksonville's reserve/injured list",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  }
+ ]
+}

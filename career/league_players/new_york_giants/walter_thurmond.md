@@ -1,16 +1,29 @@
 # Walter Thurmond
 
-![Walter Thurmond career card](assets/walter_thurmond.svg)
+**New York Giants · Cornerback · No. 24 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 190 lb · Born August 12, 1987 · Oregon · Drafted in 2010, fourth round, by Seattle
+
+As of October 5, 2014, after Week 5.
+
+![Walter Thurmond](https://commons.wikimedia.org/wiki/Special:FilePath/Walter_Thurmond.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Walter_Thurmond.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Seattle Seahawks | 26 | 28 | 16 | 8 | 0 | 0 | 0 | 0 | 0 | 2 | 2 | 0.5 | 0 |
-| 2014 | New York Giants | 27 | 24 | 5 | 7 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 1.4 | 0 |
-| **Career** |  |  |  | 21 | 15 | 0 | 1 | 0 | 0 | 0 | 2 | 2 | 0.7 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 27 | 24 | 5 | 7 | 7 | 0 | 0 | 0 | 1 |
+| 2013 | Seattle | 26 | 28 | 16 | 8 | 5 | 3 | 0 | 0 | 0 |
+| Career |  |  |  | 21 | 15 | 12 | 3 | 0 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 27 | 24 | 0 | 0 | 1 | 0 | 0 | 2 |
+| 2013 | Seattle | 26 | 28 | 0 | 0 | 0 | 2 | 2 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Seattle in the fourth round |
+
+<!-- player-page -->

@@ -1,16 +1,24 @@
 # Bobby Massie
 
-![Bobby Massie career card](assets/bobby_massie.svg)
+**Arizona Cardinals · Offensive tackle · No. 70 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 316 lb · Born August 1, 1989 · Mississippi · Drafted in 2012, fourth round, by Arizona
+
+As of October 5, 2014, after Week 5.
+
+![Bobby Massie](https://commons.wikimedia.org/wiki/Special:FilePath/Bobby_Massie.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Bobby_Massie.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Arizona Cardinals | 24 | 70 | 2 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Arizona Cardinals | 25 | 70 | 4 | 4 | 251 | 1 | 18 | 0 | 0 | 0 | 0 | 62.8 |
-| **Career** |  |  |  | 6 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Arizona | 25 | 70 | 4 | 4 | 251 | 1 | 18 |
+| 2013 | Arizona | 24 | 70 | 2 | N/A | N/A | 0 | N/A |
+| Career |  |  |  | 6 | N/A | N/A | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Arizona Cardinals players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Arizona in the fourth round |
+
+<!-- player-page -->

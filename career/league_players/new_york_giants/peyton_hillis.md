@@ -1,28 +1,57 @@
 # Peyton Hillis
 
-![Peyton Hillis career card](assets/peyton_hillis.svg)
+**New York Giants · Running back · No. 33 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 250 lb · Born January 21, 1986 · Arkansas · Drafted in 2008, seventh round, by Denver
+
+As of October 5, 2014, after Week 5.
+
+![Peyton Hillis](https://commons.wikimedia.org/wiki/Special:FilePath/Peyton_Hillis_2012.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Peyton_Hillis_2012.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 27 | N/A | 16 | 0 | 0 | N/A | 0 | 0.0 | 3 | 46 | 0 | 3 | 0 |
-| 2014 | New York Giants | 28 | 33 | 5 | 7 | 57 | 8.1 | 1 | 11.4 | 0 | 0 | 0 | 7 | 0 |
-| **Career** |  |  |  | 21 | 7 | 57 | 8.1 | 1 | 2.7 | 3 | 46 | 0 | 10 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 28 | 33 | 5 | 7 | 57 | 8.1 | 1 | 35 | 11.4 |
+| 2013 | Tampa Bay | 27 | N/A | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+| Career |  |  |  | 21 | 7 | 57 | 8.1 | 1 | 35 | 2.7 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 28 | 33 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2013 | Tampa Bay | 27 | N/A | 3 | 3 | 46 | 15.3 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 28 | 33 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Tampa Bay | 27 | N/A | 3 | 72 | 24.0 | 2 | 7 | 3.5 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 27 | N/A | 1 | 0 | 0 | N/A | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 |
-| **Career** |  |  |  | 1 | 0 | 0 | N/A | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 27 | N/A | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 27 | N/A | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 27 | N/A | 1 | 37 | 37.0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Denver in the seventh round |
+
+<!-- player-page -->

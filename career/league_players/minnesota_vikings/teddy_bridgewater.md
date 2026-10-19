@@ -1,15 +1,26 @@
 # Teddy Bridgewater
 
-![Teddy Bridgewater career card](assets/teddy_bridgewater.svg)
+**Minnesota Vikings · Quarterback · No. 5 · Age 21 · Last game October 2, 2014**
 
-## Career stats
+6' 2", 210 lb · Born November 10, 1992 · Louisville
+
+As of October 2, 2014, after Week 5.
+
+![Teddy Bridgewater](https://commons.wikimedia.org/wiki/Special:FilePath/Teddy_Bridgewater_WFT_vs_Broncos_OCT2021_%28cropped%29.jpg?width=500)
+
+*Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Teddy_Bridgewater_WFT_vs_Broncos_OCT2021_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Minnesota Vikings | 21 | 5 | 5 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| **Career** |  |  |  | 5 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 21 | 5 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 21 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+<!-- player-page -->

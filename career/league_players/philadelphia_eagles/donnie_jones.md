@@ -1,28 +1,39 @@
 # Donnie Jones
 
-![Donnie Jones career card](assets/donnie_jones.svg)
+**Philadelphia Eagles · Punter · No. 8 · Age 34 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 221 lb · Born July 5, 1980 · LSU · Drafted in 2004, seventh round, by Seattle
+
+As of October 5, 2014, after Week 5.
+
+![Donnie Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Donnie_Jones.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Donnie_Jones.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 33 | 8 | 16 | 70 | 3,081 | 44.0 | 39.9 | 32 | 57 | 1 | 45.7 | 4.4 | 271 |
-| 2014 | Philadelphia Eagles | 34 | 8 | 5 | 33 | 1,440 | 43.6 | 40.7 | 10 | 67 | 0 | 30.3 | 6.6 | 97 |
-| **Career** |  |  |  | 21 | 103 | 4,521 | 43.9 | 40.1 | 42 | 67 | 1 | 40.8 | 4.9 | 368 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 34 | 8 | 5 | 33 | 1,440 | 43.6 | 40.7 | 10 | 0 | 67 |
+| 2013 | Philadelphia | 33 | 8 | 16 | 70 | 3,081 | 44.0 | 39.9 | 32 | 1 | 57 |
+| Career |  |  |  | 21 | 103 | 4,521 | 43.9 | 40.1 | 42 | 1 | 67 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 33 | 8 | 3 | 10 | 473 | 47.3 | 39.5 | 3 | 60 | 1 | 30.0 | 3.3 | 58 |
-| **Career** |  |  |  | 3 | 10 | 473 | 47.3 | 39.5 | 3 | 60 | 1 | 30.0 | 3.3 | 58 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 33 | 8 | 3 | 10 | 473 | 47.3 | 39.5 | 3 | 1 | 60 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Philadelphia Eagles players](README.md).
+| Date | Transaction |
+|---|---|
+| 2004 | Drafted by Seattle in the seventh round |
+
+<!-- player-page -->

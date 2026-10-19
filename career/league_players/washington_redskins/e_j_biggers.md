@@ -1,16 +1,34 @@
 # E.J. Biggers
 
-![E.J. Biggers career card](assets/e_j_biggers.svg)
+**Washington Redskins · Cornerback · No. 30 · Age 27 · Last game October 6, 2014**
 
-## Career stats
+6' 0", 185 lb · Born June 13, 1987 · Western Michigan · Drafted in 2009, seventh round, by Tampa Bay
+
+As of October 6, 2014, after Week 5.
+
+![E.J. Biggers](https://commons.wikimedia.org/wiki/Special:FilePath/E.J._Biggers.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:E.J._Biggers.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Washington Redskins | 26 | 30 | 16 | 41 | 1 | 6 | 0 | 0 | 1 | 1 | 1 | 2.6 | 56 |
-| 2014 | Washington Redskins | 27 | 30 | 5 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.4 | 0 |
-| **Career** |  |  |  | 21 | 43 | 1 | 6 | 0 | 0 | 1 | 1 | 1 | 2.0 | 56 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Washington | 27 | 30 | 5 | 2 | 1 | 1 | 0 | 0 | 0 |
+| 2013 | Washington | 26 | 30 | 16 | 41 | 28 | 13 | 0 | 1 | 1 |
+| Career |  |  |  | 21 | 43 | 29 | 14 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Washington | 27 | 30 | 0 | 0 | 0 | 0 | 0 | 4 |
+| 2013 | Washington | 26 | 30 | 1 | 0 | 6 | 1 | 1 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Washington | 27 | 30 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Washington | 26 | 30 | 1 | 16 | 16.0 | 3 | 40 | 13.3 |
 
 ### Playoffs
 
@@ -18,8 +36,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Washington Redskins players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Tampa Bay in the seventh round |
+
+<!-- player-page -->

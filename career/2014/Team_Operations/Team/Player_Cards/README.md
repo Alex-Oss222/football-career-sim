@@ -1,100 +1,102 @@
-# 2014 player profiles
+# Jacksonville Jaguars players, 2014
 
-Working player cards for the current roster: the active 53, the four players on reserve/injured and the seven practice-squad players (64 under contract after the September 8, 2014 transactions; Alan Ball's card is a dated entry assessment on signing), with the 23 players who left control on August 30 kept as former players below. Each player has exactly two full annual assessments: this opening baseline, maintained with dated updates through spring, camp and the season, and a separate final assessment after season close. The original grades and narrative remain identifiable; material changes are explained in dated coaching notes rather than another assessment at each phase. The bottom regular-season and playoff tables refresh after every closed game. A current player's card opens, directly under its title, with his career card and a link to his career statistics in the [league player cards](../../../../league_players/README.md) once he has played a game on record; his league page links back to the card. `python scripts/render_player_cards.py` keeps that block current and directly under the title after every closed game and writes nothing else on the card (`--check` verifies both). A former player's card is history through his departure and carries no career card; once the season closes, every card here is history in the same way and carries none. The open-licensed photograph and its credit follow when the [photo registry](../../../../../library/data/player_photos.json) has one; the photograph is identity imagery only.
+Every player Jacksonville controls, by position, and the players who left after their 2014 staff assessment. Each page has the staff assessment, the contract, the statistics, the awards and the transactions.
 
-[2014 player template](TEMPLATE.md) · [2013 final profiles](../../../../2013/player_profiles/README.md) · [Current roster](../Roster/roster.md)
+As of October 5, 2014, after Week 5.
 
-| Player | Position |
-| --- | --- |
-| [Kirk Cousins](kirk_cousins.md) | QB |
-| [Chad Henne](chad_henne.md) | QB |
-| [Tyler Bray](tyler_bray.md) | QB |
-| [C.J. Anderson](c_j_anderson.md) | RB |
-| [Jonathan Grimes](jonathan_grimes.md) | RB |
-| [Maurice Jones-Drew](maurice_jones_drew.md) | RB |
-| [Richard Murphy](richard_murphy.md) | RB |
-| [Montell Owens](montell_owens.md) | FB |
-| [Adam Thielen](adam_thielen.md) | WR |
-| [Jerrell Jackson](jerrell_jackson.md) | WR |
-| [Hakeem Nicks](hakeem_nicks.md) | WR |
-| [Andrew Hawkins](andrew_hawkins.md) | WR |
-| [Davante Adams](davante_adams.md) | WR |
-| [Allen Hurns](allen_hurns.md) | WR |
-| [Taylor Gabriel](taylor_gabriel.md) | WR |
-| [Marcedes Lewis](marcedes_lewis.md) | TE |
-| [Travis Kelce](travis_kelce.md) | TE |
-| [Cameron Brate](cameron_brate.md) | TE |
-| [Marcel Jensen](marcel_jensen.md) | TE |
-| [Gator Hoskins](gator_hoskins.md) | TE |
-| [Lane Johnson](lane_johnson.md) | OT |
-| [Eugene Monroe](eugene_monroe.md) | OT |
-| [Joel Bitonio](joel_bitonio.md) | OT |
-| [Charles Leno Jr.](charles_leno_jr.md) | OT |
-| [Cornelius Lucas](cornelius_lucas.md) | OT |
-| [Trai Turner](trai_turner.md) | G |
-| [Andrew Norwell](andrew_norwell.md) | G |
-| [Matt Feiler](matt_feiler.md) | G |
-| [Mike Brewster](mike_brewster.md) | C |
-| [Corey Linsley](corey_linsley.md) | C |
-| [Tyler Shatley](tyler_shatley.md) | C |
-| [Andre Branch](andre_branch.md) | DE |
-| [Jeremy Mincey](jeremy_mincey.md) | DE |
-| [Daniel Te'o-Nesheim](daniel_te_o_nesheim.md) | DE |
-| [Kasim Edebali](kasim_edebali.md) | DE |
-| [Jackson Jeffcoat](jackson_jeffcoat.md) | DE |
-| [Sen'Derrick Marks](sen_derrick_marks.md) | DT |
-| [Roy Miller](roy_miller.md) | DT |
-| [C.J. Mosley](c_j_mosley.md) | DT |
-| [Jerome Long](jerome_long.md) | DT |
-| [Aaron Donald](aaron_donald.md) | DT |
-| [Sio Moore](sio_moore.md) | LB |
-| [Paul Posluszny](paul_posluszny.md) | LB |
-| [Daryl Smith](daryl_smith.md) | LB |
-| [Julian Stanford](julian_stanford.md) | LB |
-| [Telvin Smith](telvin_smith.md) | LB |
-| [Christian Jones](christian_jones.md) | LB |
-| [Todd Davis](todd_davis.md) | LB |
-| [Alan Ball](alan_ball.md) | CB |
-| [A.J. Bouye](a_j_bouye.md) | CB |
-| [Mike Harris](mike_harris.md) | CB |
-| [Alterraun Verner](alterraun_verner.md) | CB |
-| [Aqib Talib](aqib_talib.md) | CB |
-| [Jordan Poyer](jordan_poyer.md) | CB |
-| [Malcolm Butler](malcolm_butler.md) | CB |
-| [Jemea Thomas](jemea_thomas.md) | DB |
-| [Dwight Lowery](dwight_lowery.md) | S |
-| [Chris Prosinski](chris_prosinski.md) | S |
-| [Bacarri Rambo](bacarri_rambo.md) | S |
-| [Brynden Trawick](brynden_trawick.md) | S |
-| [Adrian Phillips](adrian_phillips.md) | S |
-| [Josh Scobee](josh_scobee.md) | K |
-| [Bryan Anger](bryan_anger.md) | P |
-| [Casey Kreiter](casey_kreiter.md) | LS |
+## Current players
 
-The seven practice-squad players (Bray, Murphy, Feiler, Shatley, Jeffcoat, Long, Thomas) and the four on reserve/injured (Brate, Jerrell Jackson, Harris, Lowery) keep their cards in the table above with a dated roster-status line; Phillips was promoted and Alan Ball signed September 8 ([record](../Roster/transactions_2014-09-08.md)). Refresh the stats with `python scripts/update_player_cards.py 2014`; use `--check` to verify. The regular season and playoffs are separate. Each season row leads with Season, Team, Age and #. Team is the Jacksonville Jaguars, whose games these tables count, and Age is his age on the league's opening game of that season. Jacksonville has recorded no jersey numbers of its own: # is the number his league card shows while he is a current Jaguar, his real 2014 Jaguars roster listing, else the number he wore in 2014 with his real club when no other current Jaguar claims it (his league page names which). It is N/A for a player with no game on record, one whose latest game was with another club, and one who had already left when the row was first written. Only a current player's row is worked out again while the season is open; once he leaves or the season closes, the row keeps the cells already written. Unplayed periods say Not played; missing recorded fields say Unrecorded. New arrivals need a starting assessment and card; preserve departing players’ cards as history. Add a row per year from 2014 onward.
+| Player | Position | Status |
+|---|---|---|
+| [Kirk Cousins](kirk_cousins.md) | Quarterback | Active roster |
+| [Chad Henne](chad_henne.md) | Quarterback | Active roster |
+| [Tyler Bray](tyler_bray.md) | Quarterback | Practice squad |
+| [Maurice Jones-Drew](maurice_jones_drew.md) | Running back | Active roster |
+| [C.J. Anderson](c_j_anderson.md) | Running back | Active roster |
+| [Jonathan Grimes](jonathan_grimes.md) | Running back | Active roster |
+| [Richard Murphy](richard_murphy.md) | Running back | Practice squad |
+| [Montell Owens](montell_owens.md) | Fullback | Active roster |
+| [Davante Adams](davante_adams.md) | Wide receiver | Active roster |
+| [Adam Thielen](adam_thielen.md) | Wide receiver | Active roster |
+| [Andrew Hawkins](andrew_hawkins.md) | Wide receiver | Active roster |
+| [Allen Hurns](allen_hurns.md) | Wide receiver | Active roster |
+| [Taylor Gabriel](taylor_gabriel.md) | Wide receiver | Active roster |
+| [Hakeem Nicks](hakeem_nicks.md) | Wide receiver | Active roster |
+| [Jerrell Jackson](jerrell_jackson.md) | Wide receiver | Reserve/injured |
+| [Marcedes Lewis](marcedes_lewis.md) | Tight end | Active roster |
+| [Travis Kelce](travis_kelce.md) | Tight end | Active roster |
+| [Marcel Jensen](marcel_jensen.md) | Tight end | Active roster |
+| [Gator Hoskins](gator_hoskins.md) | Tight end | Active roster |
+| [Cameron Brate](cameron_brate.md) | Tight end | Reserve/injured |
+| [Eugene Monroe](eugene_monroe.md) | Offensive tackle | Active roster |
+| [Joel Bitonio](joel_bitonio.md) | Offensive tackle | Active roster |
+| [Lane Johnson](lane_johnson.md) | Offensive tackle | Active roster |
+| [Cornelius Lucas](cornelius_lucas.md) | Offensive tackle | Active roster |
+| [Charles Leno Jr.](charles_leno_jr.md) | Offensive tackle | Active roster |
+| [Trai Turner](trai_turner.md) | Guard | Active roster |
+| [Andrew Norwell](andrew_norwell.md) | Guard | Active roster |
+| [Matt Feiler](matt_feiler.md) | Guard | Practice squad |
+| [Mike Brewster](mike_brewster.md) | Center | Active roster |
+| [Corey Linsley](corey_linsley.md) | Center | Active roster |
+| [Tyler Shatley](tyler_shatley.md) | Center | Practice squad |
+| [Jeremy Mincey](jeremy_mincey.md) | Defensive end | Active roster |
+| [Andre Branch](andre_branch.md) | Defensive end | Active roster |
+| [Daniel Te'o-Nesheim](daniel_te_o_nesheim.md) | Defensive end | Active roster |
+| [Kasim Edebali](kasim_edebali.md) | Defensive end | Active roster |
+| [Jackson Jeffcoat](jackson_jeffcoat.md) | Defensive end | Practice squad |
+| [Sen'Derrick Marks](sen_derrick_marks.md) | Defensive tackle | Active roster |
+| [Roy Miller](roy_miller.md) | Defensive tackle | Active roster |
+| [C.J. Mosley](c_j_mosley.md) | Defensive tackle | Active roster |
+| [Aaron Donald](aaron_donald.md) | Defensive tackle | Active roster |
+| [Jerome Long](jerome_long.md) | Defensive tackle | Practice squad |
+| [Daryl Smith](daryl_smith.md) | Linebacker | Active roster |
+| [Paul Posluszny](paul_posluszny.md) | Linebacker | Active roster |
+| [Julian Stanford](julian_stanford.md) | Linebacker | Active roster |
+| [Sio Moore](sio_moore.md) | Linebacker | Active roster |
+| [Telvin Smith](telvin_smith.md) | Linebacker | Active roster |
+| [Christian Jones](christian_jones.md) | Linebacker | Active roster |
+| [Todd Davis](todd_davis.md) | Linebacker | Active roster |
+| [Aqib Talib](aqib_talib.md) | Cornerback | Active roster |
+| [Jordan Poyer](jordan_poyer.md) | Cornerback | Active roster |
+| [Alterraun Verner](alterraun_verner.md) | Cornerback | Active roster |
+| [A.J. Bouye](a_j_bouye.md) | Cornerback | Active roster |
+| [Malcolm Butler](malcolm_butler.md) | Cornerback | Active roster |
+| [Alan Ball](alan_ball.md) | Cornerback | Active roster |
+| [Mike Harris](mike_harris.md) | Cornerback | Reserve/injured |
+| [Jemea Thomas](jemea_thomas.md) | Defensive back | Practice squad |
+| [Bacarri Rambo](bacarri_rambo.md) | Safety | Active roster |
+| [Brynden Trawick](brynden_trawick.md) | Safety | Active roster |
+| [Chris Prosinski](chris_prosinski.md) | Safety | Active roster |
+| [Adrian Phillips](adrian_phillips.md) | Safety | Active roster |
+| [Dwight Lowery](dwight_lowery.md) | Safety | Reserve/injured, designated for return |
+| [Josh Scobee](josh_scobee.md) | Kicker | Active roster |
+| [Bryan Anger](bryan_anger.md) | Punter | Active roster |
+| [Casey Kreiter](casey_kreiter.md) | Long snapper | Active roster |
 
 ## Former players
 
-Kept as history through the player's actual Jacksonville departure. Do not add later practice work or infer the remainder of his season.
-
 | Player | Position | Left |
-| --- | --- | --- |
-| [Cecil Shorts](cecil_shorts.md) | WR | Traded to Indianapolis, March 31, 2014 |
-| [Justin Blackmon](justin_blackmon.md) | WR | Traded to Indianapolis, March 31, 2014 |
-| [Russell Allen](russell_allen.md) | LB | Traded to Arizona, April 7, 2014 |
-| [Will Rackley](will_rackley.md) | G | Traded to Seattle, May 12, 2014 |
-| [John Parker Wilson](john_parker_wilson.md) | QB | Waived August 30, 2014 at the reduction to 53 |
-| [Connor Shaw](connor_shaw.md) | QB | Waived August 30, 2014 at the reduction to 53 |
-| [Mark Asper](mark_asper.md) | G | Waived August 30, 2014 at the reduction to 53 |
-| [Tyler Larsen](tyler_larsen.md) | C | Waived August 30, 2014 at the reduction to 53 |
-| [Ryan Davis](ryan_davis.md) | DE | Waived August 30, 2014 at the reduction to 53 |
-| [C.J. Wilson](c_j_wilson.md) | DE | Released August 30, 2014 at the reduction to 53 (vested veteran) |
-| [Lavar Edwards](lavar_edwards.md) | DE | Waived August 30, 2014 at the reduction to 53 |
-| [Jeris Pendleton](jeris_pendleton.md) | DT | Waived August 30, 2014 at the reduction to 53 |
-| [D'Anthony Smith](d_anthony_smith.md) | DT | Waived August 30, 2014 at the reduction to 53 |
-| [Antwon Blake](antwon_blake.md) | S | Waived August 30, 2014 at the reduction to 53 |
-| [Jeremy Cain](jeremy_cain.md) | LS | Released August 30, 2014 at the reduction to 53 (vested veteran); follows the rails to Chicago on September 1, 2014 |
-| [Cameron Bradfield](cameron_bradfield.md) | OT | Qualifying offer withdrawn August 30, 2014; rights renounced |
-| [Toney Clemons](toney_clemons.md) | WR | Qualifying offer withdrawn August 30, 2014; rights renounced |
-| [Mike Brown](mike_brown.md) | WR | Qualifying offer withdrawn August 30, 2014; rights renounced |
-| [Austin Pasztor](austin_pasztor.md) | G | Qualifying offer withdrawn August 30, 2014; rights renounced |
+|---|---|---|
+| [Cecil Shorts](cecil_shorts.md) | Wide receiver | Traded by Jacksonville to Indianapolis, with Justin Blackmon, for 2014 picks No. 82 and No. 194, March 31, 2014 |
+| [Justin Blackmon](justin_blackmon.md) | Wide receiver | Traded by Jacksonville to Indianapolis, with Cecil Shorts, for 2014 picks No. 82 and No. 194, March 31, 2014 |
+| [Russell Allen](russell_allen.md) | Linebacker | Traded by Jacksonville to Arizona for Arizona's 2015 fourth-round pick, April 7, 2014 |
+| [Will Rackley](will_rackley.md) | Guard | Traded by Jacksonville to Seattle for Seattle's 2015 seventh-round pick, May 12, 2014 |
+| [Antwon Blake](antwon_blake.md) | Safety | Waived by Jacksonville at the reduction to 53, August 30, 2014 |
+| [Austin Pasztor](austin_pasztor.md) | Guard | Exclusive-rights tender withdrawn by Jacksonville and rights renounced; free agent, August 30, 2014 |
+| [C.J. Wilson](c_j_wilson.md) | Defensive end | Released by Jacksonville at the reduction to 53 as a vested veteran, August 30, 2014 |
+| [Cameron Bradfield](cameron_bradfield.md) | Offensive tackle | Qualifying offer withdrawn by Jacksonville and rights renounced; free agent, August 30, 2014 |
+| [Connor Shaw](connor_shaw.md) | Quarterback | Waived by Jacksonville at the reduction to 53, August 30, 2014 |
+| [D'Anthony Smith](d_anthony_smith.md) | Defensive tackle | Waived by Jacksonville at the reduction to 53, August 30, 2014 |
+| [Jeremy Cain](jeremy_cain.md) | Long snapper | Released by Jacksonville at the reduction to 53 as a vested veteran, August 30, 2014 |
+| [Jeris Pendleton](jeris_pendleton.md) | Defensive tackle | Waived by Jacksonville at the reduction to 53, August 30, 2014 |
+| [John Parker Wilson](john_parker_wilson.md) | Quarterback | Waived by Jacksonville at the reduction to 53, August 30, 2014 |
+| [Lavar Edwards](lavar_edwards.md) | Defensive end | Waived by Jacksonville at the reduction to 53, August 30, 2014 |
+| [Mark Asper](mark_asper.md) | Guard | Waived by Jacksonville at the reduction to 53, August 30, 2014 |
+| [Mike Brown](mike_brown.md) | Wide receiver | Exclusive-rights tender withdrawn by Jacksonville and rights renounced; free agent, August 30, 2014 |
+| [Ryan Davis](ryan_davis.md) | Defensive end | Waived by Jacksonville at the reduction to 53, August 30, 2014 |
+| [Toney Clemons](toney_clemons.md) | Wide receiver | Exclusive-rights tender withdrawn by Jacksonville and rights renounced; free agent, August 30, 2014 |
+| [Tyler Larsen](tyler_larsen.md) | Center | Waived by Jacksonville at the reduction to 53, August 30, 2014 |
+
+[League players](../../../../league_players/README.md)
+
+<!-- player-index -->

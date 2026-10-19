@@ -1,16 +1,29 @@
 # Thomas DeCoud
 
-![Thomas DeCoud career card](assets/thomas_decoud.svg)
+**Carolina Panthers · Free safety · No. 21 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 195 lb · Born March 19, 1985 · California · Drafted in 2008, third round, by Atlanta
+
+As of October 5, 2014, after Week 5.
+
+![Thomas DeCoud](https://commons.wikimedia.org/wiki/Special:FilePath/Thomas_DeCoud_2013.jpg?width=500)
+
+*Photo: Staff Sgt. John Johnson, Public domain ([source](https://commons.wikimedia.org/wiki/File:Thomas_DeCoud_2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 28 | 28 | 16 | 101 | 1 | 13 | 9 | 3 | 1 | 0 | 0 | 6.3 | 0 |
-| 2014 | Carolina Panthers | 29 | 21 | 5 | 21 | 1 | 3 | 5 | 1 | 0 | 0 | 0 | 4.2 | 0 |
-| **Career** |  |  |  | 21 | 122 | 2 | 16 | 14 | 4 | 1 | 0 | 0 | 5.8 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 29 | 21 | 5 | 21 | 13 | 8 | 1 | 0 | 0 |
+| 2013 | Atlanta | 28 | 28 | 16 | 101 | 70 | 31 | 3 | 1 | 2 |
+| Career |  |  |  | 21 | 122 | 83 | 39 | 4 | 1 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 29 | 21 | 1 | 5 | 3 | 0 | 0 | 0 |
+| 2013 | Atlanta | 28 | 28 | 1 | 9 | 13 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Atlanta in the third round |
+
+<!-- player-page -->

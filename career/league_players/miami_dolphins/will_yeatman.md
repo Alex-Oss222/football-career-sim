@@ -1,15 +1,18 @@
 # Will Yeatman
 
-![Will Yeatman career card](assets/will_yeatman.svg)
+**Miami Dolphins · Offensive tackle · Age 25 · Last game December 29, 2013**
 
-## Career stats
+6' 6", 315 lb · Born April 10, 1988 · Maryland; Notre Dame
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Miami Dolphins | 25 | 72 | 16 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 16 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Miami | 25 | 72 | 16 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 
@@ -17,8 +20,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Miami Dolphins players](README.md).
+<!-- player-page -->

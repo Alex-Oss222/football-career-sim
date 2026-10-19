@@ -1,15 +1,22 @@
 # Matt Prater
 
-![Matt Prater career card](assets/matt_prater.svg)
+**Denver Broncos · Kicker · Age 29 · Last game December 29, 2013**
 
-## Career stats
+5' 10", 195 lb · Born August 10, 1984 · UCF
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Denver Broncos | 29 | 5 | 16 | 29-36 | 80.6 | N/A | 38-38 | 100.0 | 125 | N/A | N/A | N/A | 7.8 |
-| **Career** |  |  |  | 16 | 29-36 | 80.6 | N/A | 38-38 | 100.0 | 125 | N/A | N/A | N/A | 7.8 |
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Denver | 29 | 5 | 16 | 29 | 36 | 80.6 | N/A | 38 | 38 | 100.0 | 125 |
+
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2013 | Denver | 29 | 5 | N/A | N/A | N/A |
 
 ### Playoffs
 
@@ -21,6 +28,8 @@ No playoff games on record.
 - AFC Special Teams Player of the Week (2013, Week 8)
 - AFC Special Teams Player of the Week (2013, Week 15)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Denver Broncos players](README.md).
+None on record.
+
+<!-- player-page -->

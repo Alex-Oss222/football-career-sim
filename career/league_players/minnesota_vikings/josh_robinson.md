@@ -1,28 +1,53 @@
 # Josh Robinson
 
-![Josh Robinson career card](assets/josh_robinson.svg)
+**Minnesota Vikings · Cornerback · No. 21 · Age 23 · Last game October 2, 2014**
 
-## Career stats
+5' 10", 199 lb · Born January 8, 1991 · UCF · Drafted in 2012, third round, by Minnesota
+
+As of October 2, 2014, after Week 5.
+
+![Josh Robinson](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_robinson_vikings.jpg?width=500)
+
+*Photo: original: Joe Bielawa derivative: Diddykong1130, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Josh_robinson_vikings.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 22 | 21 | 15 | 54 | 0 | 9 | 0 | 1 | 0 | 0 | 0 | 3.6 | 4 |
-| 2014 | Minnesota Vikings | 23 | 21 | 5 | 22 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 4.4 | 0 |
-| **Career** |  |  |  | 20 | 76 | 0 | 12 | 0 | 1 | 0 | 0 | 0 | 3.8 | 4 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 23 | 21 | 5 | 22 | 14 | 8 | 0 | 0 | 0 |
+| 2013 | Minnesota | 22 | 21 | 15 | 54 | 36 | 18 | 1 | 0 | 0 |
+| Career |  |  |  | 20 | 76 | 50 | 26 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 23 | 21 | 0 | 0 | 3 | 0 | 0 | 2 |
+| 2013 | Minnesota | 22 | 21 | 0 | 0 | 9 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 23 | 21 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Minnesota | 22 | 21 | 0 | 0 | N/A | 2 | 4 | 2.0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 22 | 21 | 3 | 17 | 1 | 4 | 14 | 1 | 1 | 1 | 1 | 5.7 | 0 |
-| **Career** |  |  |  | 3 | 17 | 1 | 4 | 14 | 1 | 1 | 1 | 1 | 5.7 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 22 | 21 | 3 | 17 | 10 | 7 | 1 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 22 | 21 | 1 | 14 | 4 | 1 | 1 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Minnesota in the third round |
+
+<!-- player-page -->

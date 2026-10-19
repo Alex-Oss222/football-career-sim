@@ -1,16 +1,24 @@
 # Orlando Franklin
 
-![Orlando Franklin career card](assets/orlando_franklin.svg)
+**Denver Broncos · Guard · No. 74 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 7", 320 lb · Born December 16, 1987 · Miami · Drafted in 2011, second round, by Denver
+
+As of October 5, 2014, after Week 5.
+
+![Orlando Franklin](https://commons.wikimedia.org/wiki/Special:FilePath/Orlando_Franklin.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Orlando_Franklin.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Denver Broncos | 25 | 74 | 15 | N/A | N/A | 2 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Denver Broncos | 26 | 74 | 4 | 4 | 231 | 0 | 20 | 0 | 0 | 0 | 0 | 57.8 |
-| **Career** |  |  |  | 19 | N/A | N/A | 2 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 26 | 74 | 4 | 4 | 231 | 0 | 20 |
+| 2013 | Denver | 25 | 74 | 15 | N/A | N/A | 2 | N/A |
+| Career |  |  |  | 19 | N/A | N/A | 2 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Denver in the second round |
+
+<!-- player-page -->

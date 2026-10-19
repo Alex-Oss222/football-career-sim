@@ -1,0 +1,38 @@
+{
+ "schema_version": 1,
+ "name": "Allen Reisner",
+ "gsis_id": "00-0028267",
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/allen_reisner.md"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2011",
+   "kind": "signed",
+   "text": "Signed with Minnesota as an undrafted rookie",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md"
+  },
+  {
+   "date": "2012-12-24",
+   "kind": "claimed",
+   "text": "Claimed off waivers by Jacksonville",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md"
+  },
+  {
+   "date": "2014-03-11",
+   "kind": "not_tendered",
+   "text": "Not tendered by Jacksonville; became an unrestricted free agent",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  },
+  {
+   "date": "2014-06-02",
+   "kind": "not_tendered",
+   "text": "No June 1 tender from Jacksonville; Jacksonville retained no rights",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  }
+ ]
+}

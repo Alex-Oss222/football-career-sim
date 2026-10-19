@@ -1,28 +1,46 @@
 # E.J. Manuel
 
-![E.J. Manuel career card](assets/e_j_manuel.svg)
+**Buffalo Bills · Quarterback · No. 3 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 237 lb · Born March 19, 1990 · Florida State
+
+As of October 5, 2014, after Week 5.
+
+![E.J. Manuel](https://commons.wikimedia.org/wiki/Special:FilePath/2024-0106-EJ_Manuel.jpg?width=500)
+
+*Photo: Bobak Ha'Eri, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:2024-0106-EJ_Manuel.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 23 | 3 | 16 | 356-547 | 65.1 | 3,923 | 25 | 10 | 7.2 | 93.8 | 245.2 | 180 | 2 |
-| 2014 | Buffalo Bills | 24 | 3 | 3 | 53-81 | 65.4 | 632 | 4 | 3 | 7.8 | 90.1 | 210.7 | 7 | 0 |
-| **Career** |  |  |  | 19 | 409-628 | 65.1 | 4,555 | 29 | 13 | 7.3 | 93.3 | 239.7 | 187 | 2 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 24 | 3 | 3 | 53 | 81 | 65.4 | 632 | 7.8 | 210.7 | 4 | 3 | 90.1 |
+| 2013 | Buffalo | 23 | 3 | 16 | 356 | 547 | 65.1 | 3,923 | 7.2 | 245.2 | 25 | 10 | 93.8 |
+| Career |  |  |  | 19 | 409 | 628 | 65.1 | 4,555 | 7.3 | 239.7 | 29 | 13 | 93.3 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 24 | 3 | 6 | 30 | 7 | 7 | 0 | 1 | 1 |
+| 2013 | Buffalo | 23 | 3 | 37 | 252 | 39 | 180 | 2 | 3 | 3 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 23 | 3 | 2 | 52-91 | 57.1 | 825 | 5 | 1 | 9.1 | 101.2 | 412.5 | 17 | 0 |
-| **Career** |  |  |  | 2 | 52-91 | 57.1 | 825 | 5 | 1 | 9.1 | 101.2 | 412.5 | 17 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 23 | 3 | 2 | 52 | 91 | 57.1 | 825 | 9.1 | 412.5 | 5 | 1 | 101.2 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 23 | 3 | 6 | 39 | 11 | 17 | 0 | 0 | 0 |
 
 ## Awards
 
 - Pro Bowl selection (2013, QB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+None on record.
+
+<!-- player-page -->

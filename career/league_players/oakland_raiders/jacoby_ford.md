@@ -1,15 +1,22 @@
 # Jacoby Ford
 
-![Jacoby Ford career card](assets/jacoby_ford.svg)
+**Oakland Raiders · Wide receiver · Age 26 · Last game December 29, 2013**
 
-## Career stats
+5' 9", 190 lb · Born July 27, 1987 · Clemson · Drafted in 2010, fourth round, by Oakland
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Oakland Raiders | 26 | 12 | 16 | 20 | 12 | 146 | 12.2 | 0 | 9.1 | 60.0 | 41 | 0 | 0 |
-| **Career** |  |  |  | 16 | 20 | 12 | 146 | 12.2 | 0 | 9.1 | 60.0 | 41 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Oakland | 26 | 12 | 16 | 20 | 12 | 146 | 12.2 | 0 | 41 | 9.1 | 60.0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Oakland | 26 | 12 | 38 | 940 | 24.7 | 2 | 63 | 31.5 |
 
 ### Playoffs
 
@@ -19,6 +26,10 @@ No playoff games on record.
 
 - AFC Special Teams Player of the Week (2013, Week 14)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Oakland Raiders players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Oakland in the fourth round |
+
+<!-- player-page -->

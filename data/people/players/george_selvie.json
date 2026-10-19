@@ -1,0 +1,14 @@
+{
+ "schema_version": 1,
+ "name": "George Selvie",
+ "gsis_id": "00-0027818",
+ "assessments": [],
+ "transactions": [
+  {
+   "date": "2013-03-12",
+   "kind": "contract_expired",
+   "text": "Contract with Jacksonville expired; left as a free agent",
+   "source": "career/2013/offseason/free_agency/signings.md"
+  }
+ ]
+}

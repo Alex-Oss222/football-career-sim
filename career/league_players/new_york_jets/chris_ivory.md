@@ -1,28 +1,46 @@
 # Chris Ivory
 
-![Chris Ivory career card](assets/chris_ivory.svg)
+**New York Jets · Running back · No. 33 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 222 lb · Born March 22, 1988 · Tiffin; Washington State
+
+As of October 5, 2014, after Week 5.
+
+![Chris Ivory](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_ivory_jets2015.jpg?width=500)
+
+*Photo: original: Staff Sgt. Nicholas Young - New Jersey National Guard Public Affairs Office derivative: Diddykong1130, Public domain ([source](https://commons.wikimedia.org/wiki/File:Chris_ivory_jets2015.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 25 | 33 | 16 | 127 | 703 | 5.5 | 6 | 43.9 | 31 | 264 | 0 | 158 | 1 |
-| 2014 | New York Jets | 26 | 33 | 5 | 83 | 315 | 3.8 | 2 | 63.0 | 12 | 148 | 0 | 95 | 1 |
-| **Career** |  |  |  | 21 | 210 | 1,018 | 4.8 | 8 | 48.5 | 43 | 412 | 0 | 253 | 2 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 26 | 33 | 5 | 83 | 315 | 3.8 | 2 | 15 | 63.0 |
+| 2013 | N.Y. Jets | 25 | 33 | 16 | 127 | 703 | 5.5 | 6 | 95 | 43.9 |
+| Career |  |  |  | 21 | 210 | 1,018 | 4.8 | 8 | 95 | 48.5 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 26 | 33 | 19 | 12 | 148 | 12.3 | 0 | 1 | 1 |
+| 2013 | N.Y. Jets | 25 | 33 | 46 | 31 | 264 | 8.5 | 0 | 1 | 1 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 25 | 33 | 1 | 7 | 41 | 5.9 | 0 | 41.0 | 0 | 0 | 0 | 7 | 0 |
-| **Career** |  |  |  | 1 | 7 | 41 | 5.9 | 0 | 41.0 | 0 | 0 | 0 | 7 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Jets | 25 | 33 | 1 | 7 | 41 | 5.9 | 0 | 11 | 41.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Jets | 25 | 33 | 1 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+<!-- player-page -->

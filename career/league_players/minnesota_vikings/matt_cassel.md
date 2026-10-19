@@ -1,28 +1,48 @@
 # Matt Cassel
 
-![Matt Cassel career card](assets/matt_cassel.svg)
+**Minnesota Vikings · Quarterback · No. 16 · Age 32 · Last game October 2, 2014**
 
-## Career stats
+6' 4", 228 lb · Born May 17, 1982 · USC · Drafted in 2005, seventh round, by New England
+
+As of October 2, 2014, after Week 5.
+
+![Matt Cassel](https://commons.wikimedia.org/wiki/Special:FilePath/Cassel_Vikings_crop.jpg?width=500)
+
+*Photo: MN National Guard, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Cassel_Vikings_crop.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 31 | 16 | 16 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| 2014 | Minnesota Vikings | 32 | 16 | 5 | 117-173 | 67.6 | 997 | 6 | 4 | 5.8 | 84.4 | 199.4 | 7 | 0 |
-| **Career** |  |  |  | 21 | 117-173 | 67.6 | 997 | 6 | 4 | 5.8 | 84.4 | 47.5 | 7 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 32 | 16 | 5 | 117 | 173 | 67.6 | 997 | 5.8 | 199.4 | 6 | 4 | 84.4 |
+| 2013 | Minnesota | 31 | 16 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 21 | 117 | 173 | 67.6 | 997 | 5.8 | 47.5 | 6 | 4 | 84.4 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 32 | 16 | 14 | 89 | 10 | 7 | 0 | 3 | 1 |
+| 2013 | Minnesota | 31 | 16 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 31 | 16 | 3 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| **Career** |  |  |  | 3 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 31 | 16 | 3 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 31 | 16 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+| Date | Transaction |
+|---|---|
+| 2005 | Drafted by New England in the seventh round |
+
+<!-- player-page -->

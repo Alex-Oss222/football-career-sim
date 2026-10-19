@@ -1,16 +1,29 @@
 # Paul Soliai
 
-![Paul Soliai career card](assets/paul_soliai.svg)
+**Atlanta Falcons · Defensive tackle · No. 96 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 345 lb · Born December 30, 1983 · Utah; Coffeyville CC · Drafted in 2007, fourth round, by Miami
+
+As of October 5, 2014, after Week 5.
+
+![Paul Soliai](https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Soliai_2014_%28cropped%29.jpg?width=500)
+
+*Photo: Ola Thorsen/Department of State, Public domain ([source](https://commons.wikimedia.org/wiki/File:Paul_Soliai_2014_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Miami Dolphins | 29 | 96 | 16 | 51 | 1 | 4 | 0 | 2 | 1 | 1 | 4 | 3.2 | 38 |
-| 2014 | Atlanta Falcons | 30 | 96 | 5 | 8 | 0 | 1 | 0 | 0 | 0 | 0 | 2 | 1.6 | 6 |
-| **Career** |  |  |  | 21 | 59 | 1 | 5 | 0 | 2 | 1 | 1 | 6 | 2.8 | 44 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 30 | 96 | 5 | 8 | 6 | 2 | 1 | 0 | 2 |
+| 2013 | Miami | 29 | 96 | 16 | 51 | 38 | 13 | 4 | 1 | 4 |
+| Career |  |  |  | 21 | 59 | 44 | 15 | 5 | 1 | 6 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 30 | 96 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Miami | 29 | 96 | 0 | 0 | 2 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Miami in the fourth round |
+
+<!-- player-page -->

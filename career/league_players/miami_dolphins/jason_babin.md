@@ -1,28 +1,70 @@
 # Jason Babin
 
-![Jason Babin career card](assets/jason_babin.svg)
+**Miami Dolphins · Defensive end · Age 34 · Last game September 28, 2014**
 
-## Career stats
+6' 3", 267 lb · Born May 24, 1980 · Western Michigan · Drafted in 2004, first round, by Houston
+
+As of September 28, 2014, after Week 4.
+
+![Jason Babin](https://commons.wikimedia.org/wiki/Special:FilePath/Jason_Babin.jpg?width=500)
+
+*Photo: Wigstruck, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jason_Babin.jpg)).*
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall at position | 6.0/10 |
+| Get-off | 6.5/10 |
+| Edge speed and bend | 6.5/10 |
+| Power | 5.5/10 |
+| Hand use and counters | 6.0/10 |
+| Edge setting and run defense | 4.5/10 |
+| Block shedding | 4.5/10 |
+| Pursuit | 5.5/10 |
+| Rush plan and recognition | 6.5/10 |
+| Contain discipline | 4.5/10 |
+
+Camp identified leading edge pressure. The season requires separating called containment from chances to finish; raw sack totals cannot provide that split.
+
+*Staff view at the 2013 season close, January 14, 2014.*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 33 | 58 | 16 | 52 | 3 | 6 | 0 | 1 | 0 | 0 | 7 | 3.2 | 35 |
-| 2014 | Miami Dolphins | 34 | N/A | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 19 | 52 | 3 | 6 | 0 | 1 | 0 | 0 | 7 | 2.7 | 35 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 34 | N/A | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Jacksonville | 33 | 58 | 16 | 52 | 35 | 17 | 6 | 3 | 7 |
+| Career |  |  |  | 19 | 52 | 35 | 17 | 6 | 3 | 7 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 34 | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Jacksonville | 33 | 58 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 33 | 58 | 2 | 12 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 6.0 | 9 |
-| **Career** |  |  |  | 2 | 12 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 6.0 | 9 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 33 | 58 | 2 | 12 | 9 | 3 | 2 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 33 | 58 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Miami Dolphins players](README.md).
+| Date | Transaction |
+|---|---|
+| 2004 | Drafted by Houston in the first round |
+| 2011 | Signed a five-year contract with Philadelphia |
+| December 2012 | Claimed off waivers by Jacksonville, carrying his Philadelphia contract |
+| March 24, 2014 | Traded by Jacksonville to Miami, with Jacksonville's 2017 seventh-round pick, for Miami's 2015 third-round pick |
+
+<!-- player-page -->

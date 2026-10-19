@@ -1,16 +1,24 @@
 # Andy Lee
 
-![Andy Lee career card](assets/andy_lee.svg)
+**San Francisco 49ers · Punter · No. 4 · Age 32 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 180 lb · Born August 11, 1982 · Pittsburgh · Drafted in 2004, sixth round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![Andy Lee](https://commons.wikimedia.org/wiki/Special:FilePath/Andy_Lee_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Andy_Lee_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 31 | 4 | 16 | 86 | 3,949 | 45.9 | 39.3 | 32 | 65 | 5 | 37.2 | 5.4 | 465 |
-| 2014 | San Francisco 49ers | 32 | 4 | 5 | 19 | 934 | 49.2 | 44.3 | 10 | 64 | 1 | 52.6 | 3.8 | 72 |
-| **Career** |  |  |  | 21 | 105 | 4,883 | 46.5 | 40.2 | 42 | 65 | 6 | 40.0 | 5.0 | 537 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 32 | 4 | 5 | 19 | 934 | 49.2 | 44.3 | 10 | 1 | 64 |
+| 2013 | San Francisco | 31 | 4 | 16 | 86 | 3,949 | 45.9 | 39.3 | 32 | 5 | 65 |
+| Career |  |  |  | 21 | 105 | 4,883 | 46.5 | 40.2 | 42 | 6 | 65 |
 
 ### Playoffs
 
@@ -20,6 +28,10 @@ No playoff games on record.
 
 - NFC Special Teams Player of the Week (2014, Week 1)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2004 | Drafted by San Francisco in the sixth round |
+
+<!-- player-page -->

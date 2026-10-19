@@ -1,28 +1,37 @@
 # Johnny Hekker
 
-![Johnny Hekker career card](assets/johnny_hekker.svg)
+**St. Louis Rams · Punter · No. 6 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 236 lb · Born February 8, 1990 · Oregon State
+
+As of October 5, 2014, after Week 5.
+
+![Johnny Hekker](https://commons.wikimedia.org/wiki/Special:FilePath/Johnny_Hekker.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Johnny_Hekker.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 23 | 6 | 16 | 77 | 3,498 | 45.4 | 40.2 | 25 | 66 | 1 | 32.5 | 4.8 | 381 |
-| 2014 | St. Louis Rams | 24 | 6 | 4 | 24 | 1,075 | 44.8 | 40.2 | 8 | 63 | 2 | 33.3 | 6.0 | 70 |
-| **Career** |  |  |  | 20 | 101 | 4,573 | 45.3 | 40.2 | 33 | 66 | 3 | 32.7 | 5.0 | 451 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 24 | 6 | 4 | 24 | 1,075 | 44.8 | 40.2 | 8 | 2 | 63 |
+| 2013 | St. Louis | 23 | 6 | 16 | 77 | 3,498 | 45.4 | 40.2 | 25 | 1 | 66 |
+| Career |  |  |  | 20 | 101 | 4,573 | 45.3 | 40.2 | 33 | 3 | 66 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 23 | 6 | 1 | 3 | 118 | 39.3 | 39.3 | 3 | 50 | 0 | 100.0 | 3.0 | 0 |
-| **Career** |  |  |  | 1 | 3 | 118 | 39.3 | 39.3 | 3 | 50 | 0 | 100.0 | 3.0 | 0 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 23 | 6 | 1 | 3 | 118 | 39.3 | 39.3 | 3 | 0 | 50 |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+<!-- player-page -->

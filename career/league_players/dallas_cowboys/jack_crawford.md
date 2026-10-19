@@ -1,16 +1,29 @@
 # Jack Crawford
 
-![Jack Crawford career card](assets/jack_crawford.svg)
+**Dallas Cowboys · Defensive end · No. 58 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 275 lb · Born September 7, 1988 · Penn State · Drafted in 2012, fifth round, by Oakland
+
+As of October 5, 2014, after Week 5.
+
+![Jack Crawford](https://commons.wikimedia.org/wiki/Special:FilePath/Jack_Crawford_%28American_football%29.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jack_Crawford_(American_football).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Oakland Raiders | 24 | 91 | 16 | 13 | 1 | 0 | 0 | 3 | 1 | 1 | 3 | 0.8 | 9 |
-| 2014 | Dallas Cowboys | 25 | 58 | 5 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 1 |
-| **Career** |  |  |  | 21 | 14 | 1 | 0 | 0 | 3 | 1 | 1 | 3 | 0.7 | 10 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Dallas | 25 | 58 | 5 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2013 | Oakland | 24 | 91 | 16 | 13 | 9 | 4 | 0 | 1 | 3 |
+| Career |  |  |  | 21 | 14 | 10 | 4 | 0 | 1 | 3 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Dallas | 25 | 58 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Oakland | 24 | 91 | 0 | 0 | 3 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Oakland in the fifth round |
+
+<!-- player-page -->

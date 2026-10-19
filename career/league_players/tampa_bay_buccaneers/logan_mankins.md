@@ -1,16 +1,24 @@
 # Logan Mankins
 
-![Logan Mankins career card](assets/logan_mankins.svg)
+**Tampa Bay Buccaneers · Guard · No. 70 · Age 32 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 308 lb · Born March 10, 1982 · Fresno State · Drafted in 2005, first round, by New England
+
+As of October 5, 2014, after Week 5.
+
+![Logan Mankins](https://commons.wikimedia.org/wiki/Special:FilePath/Logan_Mankins.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Logan_Mankins.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 31 | 70 | 15 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Tampa Bay Buccaneers | 32 | 70 | 5 | 5 | 328 | 1 | 23 | 0 | 0 | 0 | 0 | 65.6 |
-| **Career** |  |  |  | 20 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 32 | 70 | 5 | 5 | 328 | 1 | 23 |
+| 2013 | New England | 31 | 70 | 15 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2005 | Drafted by New England in the first round |
+
+<!-- player-page -->

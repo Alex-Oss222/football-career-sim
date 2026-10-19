@@ -1,28 +1,85 @@
 # Cecil Shorts
 
-![Cecil Shorts career card](assets/cecil_shorts.svg)
+**Indianapolis Colts · Wide receiver · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 202 lb · Born December 22, 1987 · Mount Union College · Drafted in 2011, fourth round, by Jacksonville
+
+As of October 5, 2014, after Week 5.
+
+![Cecil Shorts](https://commons.wikimedia.org/wiki/Special:FilePath/Cecil_Shorts_III.jpg?width=500)
+
+*Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cecil_Shorts_III.jpg)).*
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 6.5/10 |
+| Athleticism | 6.5/10 |
+| Speed | 6.0/10 |
+| Strength and power | 5.5/10 |
+| Agility and change of direction | 6.5/10 |
+| Technique | 7.0/10 |
+| Football IQ | 6.5/10 |
+| Release vs press | 6.0/10 |
+| Route running | 7.0/10 |
+| Separation and quickness | 6.5/10 |
+| Long speed | 6.0/10 |
+| Hands | 6.5/10 |
+| Catch radius and contested catches | 5.5/10 |
+| Ball tracking and deep receiving | 6.0/10 |
+| YAC and contact balance | 6.5/10 |
+| Coverage recognition and adjustments | 6.5/10 |
+| Blocking | 5.0/10 |
+
+A rhythm-route receiver who can uncover on intermediate concepts and add yards after the catch. I see a legitimate starter whose route work is stronger than his contested-catch and blocking profile.
+
+*Staff view, March 31, 2014.*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 25 | 84 | 16 | 157 | 104 | 1,158 | 11.1 | 6 | 72.4 | 66.2 | 55 | 15 | 0 |
-| 2014 | Indianapolis Colts | 26 | N/A | 5 | 1 | 0 | 0 | N/A | 0 | 0.0 | 0.0 | N/A | 0 | 0 |
-| **Career** |  |  |  | 21 | 158 | 104 | 1,158 | 11.1 | 6 | 55.1 | 65.8 | 55 | 15 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 26 | N/A | 5 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
+| 2013 | Jacksonville | 25 | 84 | 16 | 157 | 104 | 1,158 | 11.1 | 6 | 55 | 72.4 | 66.2 |
+| Career |  |  |  | 21 | 158 | 104 | 1,158 | 11.1 | 6 | 55 | 55.1 | 65.8 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 26 | N/A | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Jacksonville | 25 | 84 | 4 | 15 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 26 | N/A | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Jacksonville | 25 | 84 | 1 | 24 | 24.0 | 2 | 13 | 6.5 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 25 | 84 | 2 | 16 | 9 | 148 | 16.4 | 2 | 74.0 | 56.2 | 40 | 5 | 0 |
-| **Career** |  |  |  | 2 | 16 | 9 | 148 | 16.4 | 2 | 74.0 | 56.2 | 40 | 5 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 25 | 84 | 2 | 16 | 9 | 148 | 16.4 | 2 | 40 | 74.0 | 56.2 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 25 | 84 | 2 | 5 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 25 | 84 | 0 | 0 | N/A | 1 | 16 | 16.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Indianapolis Colts players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Jacksonville in the fourth round |
+| 2011 | Signed a four-year rookie contract with Jacksonville |
+| March 31, 2014 | Traded by Jacksonville to Indianapolis, with Justin Blackmon, for 2014 picks No. 82 and No. 194 |
+
+<!-- player-page -->

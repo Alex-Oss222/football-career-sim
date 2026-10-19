@@ -1,16 +1,29 @@
 # Mitch Unrein
 
-![Mitch Unrein career card](assets/mitch_unrein.svg)
+**Denver Broncos · Defensive tackle · No. 96 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 306 lb · Born March 25, 1987 · Wyoming
+
+As of October 5, 2014, after Week 5.
+
+![Mitch Unrein](https://commons.wikimedia.org/wiki/Special:FilePath/Mitch_Unrein.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Mitch_Unrein.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Denver Broncos | 26 | 96 | 16 | 13 | 2 | 4 | 1 | 2 | 0 | 0 | 2 | 0.8 | 8 |
-| 2014 | Denver Broncos | 27 | 96 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 19 | 13 | 2 | 4 | 1 | 2 | 0 | 0 | 2 | 0.7 | 8 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 27 | 96 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Denver | 26 | 96 | 16 | 13 | 8 | 5 | 4 | 2 | 2 |
+| Career |  |  |  | 19 | 13 | 8 | 5 | 4 | 2 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 27 | 96 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Denver | 26 | 96 | 1 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).
+<!-- player-page -->

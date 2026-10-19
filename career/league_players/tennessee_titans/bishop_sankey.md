@@ -1,15 +1,26 @@
 # Bishop Sankey
 
-![Bishop Sankey career card](assets/bishop_sankey.svg)
+**Tennessee Titans · Running back · No. 20 · Age 22 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 209 lb · Born September 15, 1992 · Washington
+
+As of October 5, 2014, after Week 5.
+
+![Bishop Sankey](https://commons.wikimedia.org/wiki/Special:FilePath/Bishop_sankey.jpg?width=500)
+
+*Photo: original: Keith Allison derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Bishop_sankey.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Tennessee Titans | 21 | 20 | 5 | 4 | 43 | 10.8 | 0 | 8.6 | 2 | 12 | 0 | 6 | 0 |
-| **Career** |  |  |  | 5 | 4 | 43 | 10.8 | 0 | 8.6 | 2 | 12 | 0 | 6 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 21 | 20 | 5 | 4 | 43 | 10.8 | 0 | 23 | 8.6 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 21 | 20 | 2 | 2 | 12 | 6.0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+<!-- player-page -->

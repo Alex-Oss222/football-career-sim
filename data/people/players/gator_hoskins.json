@@ -1,0 +1,208 @@
+{
+ "schema_version": 1,
+ "name": "Gator Hoskins",
+ "gsis_id": "00-0030865",
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-05-11",
+   "date_as_written": "May 11, 2014 starting evaluation, on acquisition (signed as an undrafted rookie on May 10, 2014)",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Rookie; no NFL standing. Staff view: H-back and camp tight end competition",
+   "position": "TE",
+   "identity": "An H-back tight end (Harold Hoskins) with receiving production at Marshall and a movable alignment profile; blocking is unproven.",
+   "previous_profile": "None; 2014 rookie. The starting view rests on pre-draft public evidence only",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "2.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Receiving",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Movable alignment",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Blocking",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments of the player as he arrives, made from pre-draft public evidence (combine and dated college record described qualitatively, plus pre-draft reports). They grade the current player, not his draft slot, contract or projection, and they use no NFL outcome. Evidence limits are stated below.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Receiving",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Movable alignment",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Blocking",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards for the position, not measured 2014 league ranks. No NFL snap exists for this player.",
+   "read": "An H-back tight end (Harold Hoskins) with receiving production at Marshall and a movable alignment profile; blocking is unproven.",
+   "read_sources": "Source: Marshall senior, 2013; memo addition. No combine entry in the library.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "None (rookie)",
+     "current": "Starting 2014 view",
+     "change": "New",
+     "reason": "Pre-draft public evidence only; no Jacksonville practice or game evidence yet"
+    }
+   ],
+   "support": "Marshall senior, 2013; memo addition. No combine entry in the library.",
+   "historical_comparison": "No comparator is assigned at arrival. The evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.",
+   "play_style": "An H-back tight end (Harold Hoskins) with receiving production at Marshall and a movable alignment profile; blocking is unproven.",
+   "best_traits": [
+    "Athleticism: 5.0 /10.",
+    "Speed: 5.0 /10.",
+    "Agility / Change of direction: 5.0 /10."
+   ],
+   "main_weaknesses": [
+    "Blocking: 3.5 /10.",
+    "Strength / Power: 4.0 /10.",
+    "Technique: 4.0 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** Marshall senior, 2013; memo addition. No combine entry in the library.",
+    "**Evaluation basis:** Theoretical staff judgment from pre-draft public evidence; thin evidence identified above.",
+    "**What remains uncertain:** No measured testing on record; no Jacksonville scouting report beyond the memo.",
+    "**What would change the assessment:** Whether he holds up in attached alignments in camp.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates."
+   ],
+   "one_line": "An H-back tight end (Harold Hoskins) with receiving production at Marshall and a movable alignment profile; blocking is unproven.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Hoskins was assignment-correct in the attached work, with mixed finish and no correction beyond the general teaching. The sample does not settle TE3.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-08-28",
+     "date_as_written": "August 28, 2014",
+     "setting": "Preseason game 4, Atlanta at Jacksonville",
+     "text": "Thirty-six offensive snaps across Cousins's, Henne's, Wilson's and Shaw's groups, 5 catches on 7 targets for 13: the shift-to-Empty Spacing throw for 6 with Henne, the 7-yard Snag with Wilson for a first down, the minus 2 on the Boot Flood Left, and 1-yard catches on third-and-12 and fourth-and-14. A short lower-extremity injury was logged at the end of Cousins's touchdown drive (11:48 of the second quarter); he was not removed and played the second half as the record holds it, and the instruction afterward is out, projected return in 19 days (September 16), reassessment September 3 ([medical record](career/2014/Team_Operations/Medical/incidents/gator_hoskins_2014-08-28.md)). Eight catches for 84 at Detroit and five for 13 here are two different nights at the same job; the attached half of his question is the film's, and TE3 remains unfilled.",
+     "source": "Source: [preseason game 4 output](career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-20",
+     "date_as_written": "September 15 to 20, 2014",
+     "setting": "Cleared; first practice week back",
+     "text": "Cleared Tuesday, September 16, his projected date, and full Wednesday through Friday in the fourth tight end's work behind Lewis, Kelce and Jensen and on the kicking-game fits, with the Saturday walkthrough in full; nothing charged to him on the recorded reps and nothing that separated him from Jensen in three days. Inactive for Indianapolis, carried from the Week 2 list under the rule that a week without a new list reuses the last one; whether his practice week should displace a carried place is a Stone decision the packet did not cover, recorded as open. No finding attaches to the week.",
+     "source": "Source: [Week 3 record](career/2014/Regular_Season/Games/Week_03/output.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-15-to-20-stanford-johnson-hoskins-and-nicks-cleared-harris-and-lowery-reassessed). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-27",
+     "date_as_written": "September 22 to 27, 2014",
+     "setting": "Into the preparation",
+     "text": "Activated into the Week 4 preparation as the packet recommended rather than carried on the inactive list: the tight-end work with Lewis and Jensen Monday and Wednesday while Kelce was out, then the fourth tight end's work Thursday and Friday after Kelce's clearance, the full week with no communicated restriction. Nothing charged to him on the recorded reps. Active for San Diego as the fourth tight end; the packet's conditions for returning him to the inactive list (a failed job and another position needing the place) were not met.",
+     "source": "Source: [Week 4 record](career/2014/Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-10-04",
+     "date_as_written": "September 29 to October 4, 2014",
+     "setting": "Healthy, inactive",
+     "text": "Full in every session of the Pittsburgh week with no communicated restriction. The fourth tight end and inactive for Week 5 on the packet's selected plan: Stone dresses Todd Davis in his place for linebacker and coverage-unit depth, and the packet assigns him no receiving package merely because he is available. Nothing charged to him on the recorded reps.",
+     "source": "Source: [Week 5 record](career/2014/Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/gator_hoskins.md at commit 332d70b"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2014-05-10",
+   "kind": "signed",
+   "text": "Signed a three-year contract with Jacksonville as an undrafted rookie",
+   "source": "career/2014/Draft/udfa_signings.md"
+  }
+ ]
+}

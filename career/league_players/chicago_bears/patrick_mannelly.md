@@ -1,15 +1,18 @@
 # Patrick Mannelly
 
-![Patrick Mannelly career card](assets/patrick_mannelly.svg)
+**Chicago Bears · Long snapper · Age 38 · Last game December 29, 2013**
 
-## Career stats
+6' 5", 265 lb · Born April 18, 1975 · Duke · Drafted in 1998, sixth round, by Chicago
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | LONG SNAPS | ST SNAPS | ST TKL | TKL | SOLO | AST | FF | FR | LONG SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Chicago Bears | 38 | 65 | 16 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 16 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Chicago | 38 | 65 | 16 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 
@@ -17,8 +20,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Chicago Bears players](README.md).
+| Date | Transaction |
+|---|---|
+| 1998 | Drafted by Chicago in the sixth round |
+
+<!-- player-page -->

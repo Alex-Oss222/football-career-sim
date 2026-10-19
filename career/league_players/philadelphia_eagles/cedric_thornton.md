@@ -1,28 +1,46 @@
 # Cedric Thornton
 
-![Cedric Thornton career card](assets/cedric_thornton.svg)
+**Philadelphia Eagles · Defensive end · No. 72 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 309 lb · Born June 21, 1988 · Southern Arkansas
+
+As of October 5, 2014, after Week 5.
+
+![Cedric Thornton](https://commons.wikimedia.org/wiki/Special:FilePath/Cedric_Thornton.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Cedric_Thornton.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 25 | 72 | 16 | 55 | 4 | 5 | 0 | 4 | 0 | 0 | 9 | 3.4 | 40 |
-| 2014 | Philadelphia Eagles | 26 | 72 | 5 | 30 | 1 | 3 | 0 | 1 | 0 | 0 | 2 | 6.0 | 24 |
-| **Career** |  |  |  | 21 | 85 | 5 | 8 | 0 | 5 | 0 | 0 | 11 | 4.0 | 64 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 26 | 72 | 5 | 30 | 24 | 6 | 3 | 1 | 2 |
+| 2013 | Philadelphia | 25 | 72 | 16 | 55 | 40 | 15 | 5 | 4 | 9 |
+| Career |  |  |  | 21 | 85 | 64 | 21 | 8 | 5 | 11 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 26 | 72 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | Philadelphia | 25 | 72 | 0 | 0 | 4 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 25 | 72 | 3 | 11 | 0 | 2 | 0 | 0 | 0 | 0 | 3 | 3.7 | 10 |
-| **Career** |  |  |  | 3 | 11 | 0 | 2 | 0 | 0 | 0 | 0 | 3 | 3.7 | 10 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 25 | 72 | 3 | 11 | 10 | 1 | 2 | 0 | 3 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 25 | 72 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Philadelphia Eagles players](README.md).
+<!-- player-page -->

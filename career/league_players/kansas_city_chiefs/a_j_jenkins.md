@@ -1,28 +1,44 @@
 # A.J. Jenkins
 
-![A.J. Jenkins career card](assets/a_j_jenkins.svg)
+**Kansas City Chiefs · Wide receiver · No. 15 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 200 lb · Born September 8, 1989 · Illinois · Drafted in 2012, first round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![A.J. Jenkins](https://commons.wikimedia.org/wiki/Special:FilePath/A.J._Jenkins.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:A.J._Jenkins.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 23 | 15 | 16 | 19 | 13 | 105 | 8.1 | 1 | 6.6 | 68.4 | 21 | 0 | 0 |
-| 2014 | Kansas City Chiefs | 24 | 15 | 5 | 3 | 2 | 17 | 8.5 | 0 | 3.4 | 66.7 | 9 | 0 | 0 |
-| **Career** |  |  |  | 21 | 22 | 15 | 122 | 8.1 | 1 | 5.8 | 68.2 | 21 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 24 | 15 | 5 | 3 | 2 | 17 | 8.5 | 0 | 9 | 3.4 | 66.7 |
+| 2013 | Kansas City | 23 | 15 | 16 | 19 | 13 | 105 | 8.1 | 1 | 21 | 6.6 | 68.4 |
+| Career |  |  |  | 21 | 22 | 15 | 122 | 8.1 | 1 | 21 | 5.8 | 68.2 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 24 | 15 | 0 | 0 | N/A | 7 | 53 | 7.6 |
+| 2013 | Kansas City | 23 | 15 | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 23 | 15 | 1 | 3 | 3 | 31 | 10.3 | 0 | 31.0 | 100.0 | 24 | 0 | 0 |
-| **Career** |  |  |  | 1 | 3 | 3 | 31 | 10.3 | 0 | 31.0 | 100.0 | 24 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 23 | 15 | 1 | 3 | 3 | 31 | 10.3 | 0 | 24 | 31.0 | 100.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by San Francisco in the first round |
+
+<!-- player-page -->

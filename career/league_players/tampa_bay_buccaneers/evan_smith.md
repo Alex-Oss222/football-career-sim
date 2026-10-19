@@ -1,16 +1,20 @@
 # Evan Smith
 
-![Evan Smith career card](assets/evan_smith.svg)
+**Tampa Bay Buccaneers · Center · No. 62 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 308 lb · Born July 19, 1986 · Idaho State
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Green Bay Packers | 27 | 62 | 16 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Tampa Bay Buccaneers | 28 | 62 | 5 | 5 | 328 | 1 | 23 | 0 | 0 | 0 | 0 | 65.6 |
-| **Career** |  |  |  | 21 | N/A | N/A | 2 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 28 | 62 | 5 | 5 | 328 | 1 | 23 |
+| 2013 | Green Bay | 27 | 62 | 16 | N/A | N/A | 1 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 2 | N/A |
 
 ### Playoffs
 
@@ -18,8 +22,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).
+<!-- player-page -->

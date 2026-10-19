@@ -1,18 +1,20 @@
 # Chicago Bears players
 
-NFC North · Players whose latest game on record was with the Chicago Bears. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+NFC North. The players whose latest game on record was with the Chicago Bears. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 6 | [Jay Cutler](jay_cutler.md) | QB | 5 | 16 |
 | 8 | [Jimmy Clausen](jimmy_clausen.md) | QB | 5 | 0 |
 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 25 | [Ka'Deem Carey](ka_deem_carey.md) | RB | 5 | 0 |
 | 22 | [Matt Forte](matt_forte.md) | RB | 5 | 16 |
 | N/A | [Michael Bush](michael_bush.md) | RB | 0 | 16 |
@@ -24,7 +26,7 @@ NFC North · Players whose latest game on record was with the Chicago Bears. G c
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 17 | [Alshon Jeffery](alshon_jeffery.md) | WR | 5 | 16 |
 | 15 | [Brandon Marshall](brandon_marshall.md) | WR | 5 | 16 |
 | 82 | [Chris Williams](chris_williams.md) | WR | 1 | 0 |
@@ -38,7 +40,7 @@ NFC North · Players whose latest game on record was with the Chicago Bears. G c
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 88 | [Dante Rosario](dante_rosario.md) | TE | 5 | 16 |
 | N/A | [Kyle Adams](kyle_adams.md) | TE | 0 | 16 |
 | 83 | [Martellus Bennett](martellus_bennett.md) | TE | 5 | 16 |
@@ -48,7 +50,7 @@ NFC North · Players whose latest game on record was with the Chicago Bears. G c
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 64 | [Brian De La Puente](brian_de_la_puente.md) | C | 5 | 16 |
 | 62 | [Eben Britton](eben_britton.md) | T | 1 | 16 |
 | N/A | [James Brown](james_brown.md) | G | 0 | 2 |
@@ -63,7 +65,7 @@ NFC North · Players whose latest game on record was with the Chicago Bears. G c
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 94 | [Cornelius Washington](cornelius_washington.md) | DE | 5 | 16 |
 | 95 | [Ego Ferguson](ego_ferguson.md) | NT | 5 | 0 |
 | 69 | [Jared Allen](jared_allen.md) | DE | 5 | 16 |
@@ -77,7 +79,7 @@ NFC North · Players whose latest game on record was with the Chicago Bears. G c
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Blake Costanzo](blake_costanzo.md) | OLB | 0 | 16 |
 | 58 | [D.J. Williams](d_j_williams.md) | MLB | 5 | 16 |
 | 91 | [David Bass](david_bass.md) | OLB | 2 | 16 |
@@ -92,7 +94,7 @@ NFC North · Players whose latest game on record was with the Chicago Bears. G c
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Anthony Walters](anthony_walters.md) | SS | 0 | 16 |
 | 45 | [Brock Vereen](brock_vereen.md) | FS | 5 | 0 |
 | N/A | [C.J. Wilson](c_j_wilson.md) | CB | 0 | 2 |
@@ -109,19 +111,21 @@ NFC North · Players whose latest game on record was with the Chicago Bears. G c
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 9 | [Robbie Gould](robbie_gould.md) | K | 5 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Adam Podlesh](adam_podlesh.md) | P | 0 | 16 |
 | 16 | [Pat O'Donnell](pat_o_donnell.md) | P | 5 | 0 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 44 | [Jeremy Cain](jeremy_cain.md) | LS | 5 | 16 |
 | N/A | [Patrick Mannelly](patrick_mannelly.md) | LS | 0 | 16 |
+
+<!-- player-index -->

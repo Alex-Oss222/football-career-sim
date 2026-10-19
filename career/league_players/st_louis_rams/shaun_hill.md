@@ -1,16 +1,29 @@
 # Shaun Hill
 
-![Shaun Hill career card](assets/shaun_hill.svg)
+**St. Louis Rams · Quarterback · No. 14 · Age 34 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 220 lb · Born January 9, 1980 · Maryland; Hutchinson CC
+
+As of October 5, 2014, after Week 5.
+
+![Shaun Hill](https://commons.wikimedia.org/wiki/Special:FilePath/Shaun_Hill_2014_Cropped.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Shaun_Hill_2014_Cropped.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Detroit Lions | 33 | 14 | 16 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| 2014 | St. Louis Rams | 34 | 14 | 4 | 94-150 | 62.7 | 1,067 | 4 | 4 | 7.1 | 81.7 | 266.8 | 41 | 1 |
-| **Career** |  |  |  | 20 | 94-150 | 62.7 | 1,067 | 4 | 4 | 7.1 | 81.7 | 53.4 | 41 | 1 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 34 | 14 | 4 | 94 | 150 | 62.7 | 1,067 | 7.1 | 266.8 | 4 | 4 | 81.7 |
+| 2013 | Detroit | 33 | 14 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 20 | 94 | 150 | 62.7 | 1,067 | 7.1 | 53.4 | 4 | 4 | 81.7 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 34 | 14 | 12 | 78 | 13 | 41 | 1 | 0 | 0 |
+| 2013 | Detroit | 33 | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -20,6 +33,8 @@ No playoff games on record.
 
 - NFC Offensive Player of the Week (2014, Week 5)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+None on record.
+
+<!-- player-page -->

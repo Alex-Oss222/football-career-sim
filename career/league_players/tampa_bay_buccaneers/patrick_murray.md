@@ -1,15 +1,26 @@
 # Patrick Murray
 
-![Patrick Murray career card](assets/patrick_murray.svg)
+**Tampa Bay Buccaneers · Kicker · No. 7 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+5' 7", 160 lb · Born June 22, 1991 · Fordham
+
+As of October 5, 2014, after Week 5.
+
+![Patrick Murray](https://commons.wikimedia.org/wiki/Special:FilePath/Patrick_Murray_field_goal_vs._Redskins_Cropped.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Patrick_Murray_field_goal_vs._Redskins_Cropped.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Tampa Bay Buccaneers | 23 | 7 | 5 | 11-12 | 91.7 | 56 | 11-11 | 100.0 | 44 | 1-1 | 1-1 | 9-10 | 8.8 |
-| **Career** |  |  |  | 5 | 11-12 | 91.7 | 56 | 11-11 | 100.0 | 44 | 1-1 | 1-1 | 9-10 | 8.8 |
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 23 | 7 | 5 | 11 | 12 | 91.7 | 56 | 11 | 11 | 100.0 | 44 |
+
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 23 | 7 | 9-10 | 1-1 | 1-1 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).
+<!-- player-page -->

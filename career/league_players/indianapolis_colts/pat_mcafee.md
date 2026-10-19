@@ -1,16 +1,24 @@
 # Pat McAfee
 
-![Pat McAfee career card](assets/pat_mcafee.svg)
+**Indianapolis Colts · Punter · No. 1 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 240 lb · Born May 2, 1987 · West Virginia · Drafted in 2009, seventh round, by Indianapolis
+
+As of October 5, 2014, after Week 5.
+
+![Pat McAfee](https://commons.wikimedia.org/wiki/Special:FilePath/Pat_McAfee_on_The_Pat_McAfee_Show_8.31.2022_%28cropped%29.png?width=500)
+
+*Photo: FanDuel, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Pat_McAfee_on_The_Pat_McAfee_Show_8.31.2022_(cropped).png)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 26 | 1 | 16 | 74 | 3,375 | 45.6 | 40.1 | 25 | 63 | 2 | 33.8 | 4.6 | 369 |
-| 2014 | Indianapolis Colts | 27 | 1 | 5 | 17 | 737 | 43.4 | 37.4 | 5 | 67 | 2 | 29.4 | 3.4 | 62 |
-| **Career** |  |  |  | 21 | 91 | 4,112 | 45.2 | 39.6 | 30 | 67 | 4 | 33.0 | 4.3 | 431 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 27 | 1 | 5 | 17 | 737 | 43.4 | 37.4 | 5 | 2 | 67 |
+| 2013 | Indianapolis | 26 | 1 | 16 | 74 | 3,375 | 45.6 | 40.1 | 25 | 2 | 63 |
+| Career |  |  |  | 21 | 91 | 4,112 | 45.2 | 39.6 | 30 | 4 | 67 |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Indianapolis in the seventh round |
+
+<!-- player-page -->

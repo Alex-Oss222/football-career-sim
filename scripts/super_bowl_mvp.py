@@ -19,12 +19,13 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from runtime.packets import canonical
+from runtime.seasons import SeasonPaths
 from scripts.league_awards import method as weekly_method, pick, score
 
-AWARDS = ROOT / "career/2013/awards"
+AWARDS = SeasonPaths(2013, ROOT).awards_data
 METHOD = AWARDS / "super_bowl_mvp_method.json"
 RESULT = AWARDS / "super_bowl_mvp.json"
-RECEIPT = ROOT / "career/2013/stats/postseason_receipts/week_21_minnesota_vikings_at_buffalo_bills.json"
+RECEIPT = SeasonPaths(2013, ROOT).postseason_receipts / "week_21_minnesota_vikings_at_buffalo_bills.json"
 
 
 def shortlist(m):

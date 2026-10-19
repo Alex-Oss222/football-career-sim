@@ -1,15 +1,26 @@
 # Jimmy Garoppolo
 
-![Jimmy Garoppolo career card](assets/jimmy_garoppolo.svg)
+**New England Patriots · Quarterback · No. 10 · Age 22 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 225 lb · Born November 2, 1991 · Eastern Illinois
+
+As of October 5, 2014, after Week 5.
+
+![Jimmy Garoppolo](https://commons.wikimedia.org/wiki/Special:FilePath/2018_Jimmy_Garoppolo_%28cropped%29.jpg?width=500)
+
+*Photo: U.S. Air Force Employee Lan Kim of Travis AFB, Public domain ([source](https://commons.wikimedia.org/wiki/File:2018_Jimmy_Garoppolo_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | New England Patriots | 22 | 10 | 5 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| **Career** |  |  |  | 5 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 22 | 10 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 22 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New England Patriots players](README.md).
+<!-- player-page -->

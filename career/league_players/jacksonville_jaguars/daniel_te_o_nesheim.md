@@ -1,30 +1,80 @@
 # Daniel Te'o-Nesheim
 
-![Daniel Te'o-Nesheim career card](assets/daniel_te_o_nesheim.svg)
+**Jacksonville Jaguars · Defensive end · Age 27 · Active roster**
 
-## Career stats
+6' 3", 263 lb · Born June 12, 1987 · Washington · Drafted in 2010, third round, by Philadelphia
+
+As of October 5, 2014, after Week 5.
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 4.5/10 |
+| Athleticism | 4.0/10 |
+| Speed | 4.0/10 |
+| Strength and power | 5.0/10 |
+| Agility and change of direction | 4.0/10 |
+| Technique | 4.5/10 |
+| Football IQ | 4.5/10 |
+| Get-off | 4.0/10 |
+| Edge speed and bend | 4.0/10 |
+| Power | 5.0/10 |
+| Hand use and counters | 4.0/10 |
+| Edge setting and run defense | 5.0/10 |
+| Block shedding | 4.5/10 |
+| Pursuit | 4.0/10 |
+| Rush plan and recognition | 4.0/10 |
+| Contain discipline | 5.0/10 |
+
+A power-oriented edge reserve suited to a defined run-setting assignment. My starting view gives him more edge/contain utility than speed-rush or counter value.
+
+*Staff view, March 31, 2014.*
+
+## Contract
+
+Three-year contract through 2016.
+
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $1,500,000 | $3,000,000 |
+| 2015 | $1,500,000 | $3,000,000 |
+| 2016 | $5,000,000 | $7,500,000 |
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 26 | 50 | 16 | 85 | 9 | 14 | 0 | 4 | 1 | 1 | 15 | 5.3 | 59 |
-| 2014 | Jacksonville Jaguars | 27 | N/A | 5 | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0.8 | 2 |
-| **Career** |  |  |  | 21 | 89 | 10 | 14 | 0 | 4 | 1 | 1 | 16 | 4.2 | 61 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 27 | N/A | 5 | 4 | 2 | 2 | 0 | 1 | 1 |
+| 2013 | Tampa Bay | 26 | 50 | 16 | 85 | 59 | 26 | 14 | 9 | 15 |
+| Career |  |  |  | 21 | 89 | 61 | 28 | 14 | 10 | 16 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 27 | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Tampa Bay | 26 | 50 | 0 | 0 | 4 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 26 | 50 | 1 | 13 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 13.0 | 11 |
-| **Career** |  |  |  | 1 | 13 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 13.0 | 11 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 26 | 50 | 1 | 13 | 11 | 2 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 26 | 50 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
 - Pro Bowl selection, replacement (2013, DE)
 
-[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/daniel_te_o_nesheim.md)
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Philadelphia in the third round |
+| March 18, 2014 | Signed a three-year contract with Jacksonville (2014 to 2016) |
 
-Records through October 5, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Jacksonville Jaguars players](README.md).
+<!-- player-page -->

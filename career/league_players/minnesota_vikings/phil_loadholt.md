@@ -1,28 +1,39 @@
 # Phil Loadholt
 
-![Phil Loadholt career card](assets/phil_loadholt.svg)
+**Minnesota Vikings · Offensive tackle · No. 71 · Age 28 · Last game October 2, 2014**
 
-## Career stats
+6' 8", 343 lb · Born January 21, 1986 · Oklahoma; Garden City CC · Drafted in 2009, second round, by Minnesota
+
+As of October 2, 2014, after Week 5.
+
+![Phil Loadholt](https://commons.wikimedia.org/wiki/Special:FilePath/Phil_Loadholt.jpg?width=500)
+
+*Photo: Joe Bielawa, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Phil_Loadholt.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 27 | 71 | 16 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Minnesota Vikings | 28 | 71 | 4 | 4 | 204 | 2 | 8 | 0 | 0 | 0 | 0 | 51.0 |
-| **Career** |  |  |  | 20 | N/A | N/A | 6 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 28 | 71 | 4 | 4 | 204 | 2 | 8 |
+| 2013 | Minnesota | 27 | 71 | 16 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 27 | 71 | 3 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 3 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 27 | 71 | 3 | N/A | N/A | 4 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Minnesota in the second round |
+
+<!-- player-page -->

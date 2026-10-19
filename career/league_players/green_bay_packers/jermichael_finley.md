@@ -1,15 +1,22 @@
 # Jermichael Finley
 
-![Jermichael Finley career card](assets/jermichael_finley.svg)
+**Green Bay Packers · Tight end · Age 26 · Last game December 29, 2013**
 
-## Career stats
+6' 5", 247 lb · Born March 26, 1987 · Texas · Drafted in 2008, third round, by Green Bay
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Green Bay Packers | 26 | 88 | 16 | 105 | 72 | 615 | 8.5 | 3 | 38.4 | 68.6 | 33 | 3 | 0 |
-| **Career** |  |  |  | 16 | 105 | 72 | 615 | 8.5 | 3 | 38.4 | 68.6 | 33 | 3 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Green Bay | 26 | 88 | 16 | 105 | 72 | 615 | 8.5 | 3 | 33 | 38.4 | 68.6 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Green Bay | 26 | 88 | 1 | 3 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Green Bay Packers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Green Bay in the third round |
+
+<!-- player-page -->

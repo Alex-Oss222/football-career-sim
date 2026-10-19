@@ -1,15 +1,22 @@
 # David Akers
 
-![David Akers career card](assets/david_akers.svg)
+**Detroit Lions · Kicker · Age 39 · Last game December 29, 2013**
 
-## Career stats
+5' 10", 200 lb · Born December 9, 1974 · Louisville
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Detroit Lions | 38 | 2 | 16 | 20-27 | 74.1 | N/A | 49-49 | 100.0 | 109 | N/A | N/A | N/A | 6.8 |
-| **Career** |  |  |  | 16 | 20-27 | 74.1 | N/A | 49-49 | 100.0 | 109 | N/A | N/A | N/A | 6.8 |
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Detroit | 38 | 2 | 16 | 20 | 27 | 74.1 | N/A | 49 | 49 | 100.0 | 109 |
+
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2013 | Detroit | 38 | 2 | N/A | N/A | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Detroit Lions players](README.md).
+<!-- player-page -->

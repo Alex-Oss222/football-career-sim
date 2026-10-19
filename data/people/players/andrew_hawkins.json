@@ -1,0 +1,253 @@
+{
+ "schema_version": 1,
+ "name": "Andrew Hawkins",
+ "gsis_id": "00-0027918",
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-03-31",
+   "date_as_written": "March 31, 2014 starting evaluation",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Starting staff view; exact theoretical personnel grades",
+   "position": "WR",
+   "identity": "A quick underneath receiver suited to finding space and changing direction. My starting view favors slot-route and run-after-catch utility over outside press or contested catches.",
+   "previous_profile": "New Jacksonville player; no prior Jacksonville annual profile",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Release vs press",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Route running",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Separation / quickness",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Long speed",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Hands",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Catch radius / contested catches",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Ball tracking / deep receiving",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "YAC / contact balance",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Coverage recognition / adjustments",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Blocking",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Release vs press",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Route running",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Separation / quickness",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Long speed",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Hands",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Catch radius / contested catches",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Ball tracking / deep receiving",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "YAC / contact balance",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Coverage recognition / adjustments",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Blocking",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards, not measured 2014 league ranks.",
+   "read": "A quick underneath receiver suited to finding space and changing direction. My starting view favors slot-route and run-after-catch utility over outside press or contested catches.",
+   "read_sources": "Source: [Current roster and signing history](career/2014/Team_Operations/Team/Roster/roster.md). Initial personnel judgments; no Jacksonville practice or game evaluation is recorded yet.",
+   "change": "New Jacksonville starting assessment. No prior Jacksonville evaluation is invented.",
+   "support": "A quick underneath receiver suited to finding space and changing direction. My starting view favors slot-route and run-after-catch utility over outside press or contested catches.\n\n[Current roster and signing history](career/2014/Team_Operations/Team/Roster/roster.md). Initial personnel judgments; no Jacksonville practice or game evaluation is recorded yet.",
+   "historical_comparison": "The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.",
+   "play_style": "A quick underneath receiver suited to finding space and changing direction. My starting view favors slot-route and run-after-catch utility over outside press or contested catches.",
+   "best_traits": [
+    "Separation / quickness: 6.5 /10.",
+    "Route running: 6.0 /10.",
+    "Long speed: 6.0 /10."
+   ],
+   "main_weaknesses": [
+    "Catch radius / contested catches: 3.5 /10.",
+    "Blocking: 3.5 /10.",
+    "Release vs press: 4.0 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [Current roster and signing history](career/2014/Team_Operations/Team/Roster/roster.md). Initial personnel judgments; no Jacksonville practice or game evaluation is recorded yet.",
+    "**Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics."
+   ],
+   "one_line": "A quick underneath receiver suited to finding space and changing direction. My starting view favors slot-route and run-after-catch utility over outside press or contested catches.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Hawkins's short dig had two recorded causes: spacing in July 26 non-contact work and Poyer's jam on July 30. Drake kept those corrections separate; the depth held on the later checks. The contact retest is still a short sample.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/andrew_hawkins.md at commit 332d70b"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2014-03-13",
+   "kind": "offer_sheet",
+   "text": "Signed Jacksonville's offer sheet as a restricted free agent",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  },
+  {
+   "date": "2014-03-18",
+   "kind": "signed",
+   "text": "Cincinnati declined to match; his four-year Jacksonville contract (2014 to 2017) became binding",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  }
+ ]
+}

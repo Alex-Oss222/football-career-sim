@@ -1,29 +1,41 @@
 # Tommie Campbell
 
-![Tommie Campbell career card](assets/tommie_campbell.svg)
+**Tennessee Titans · Cornerback · Age 26 · Last game January 19, 2014**
 
-## Career stats
+6' 3", 198 lb · Born September 19, 1987 · California (PA); Pittsburgh; University of Edinboro · Drafted in 2011, seventh round, by Tennessee
+
+As of January 19, 2014, after the Conference Championships.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 25 | 37 | 16 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 0 |
-| **Career** |  |  |  | 16 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 25 | 37 | 16 | 4 | 1 | 3 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 25 | 37 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 25 | 37 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.5 | 0 |
-| **Career** |  |  |  | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.5 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 25 | 37 | 2 | 1 | 0 | 1 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 25 | 37 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Schools listed: California (PA); Pittsburgh; University of Edinboro.
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Tennessee in the seventh round |
 
-Records through January 19, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Tennessee Titans players](README.md).
+<!-- player-page -->

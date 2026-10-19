@@ -1,15 +1,52 @@
 # Trai Turner
 
-![Trai Turner career card](assets/trai_turner.svg)
+**Jacksonville Jaguars · Guard · No. 70 · Age 21 · Active roster**
 
-## Career stats
+6' 3", 320 lb · Born June 14, 1993 · Louisiana State · Drafted in 2014, third round, by Jacksonville
+
+As of October 5, 2014, after Week 5.
+
+![Trai Turner](https://commons.wikimedia.org/wiki/Special:FilePath/Trai_Turner.jpg?width=500)
+
+*Photo: Arnie Papp, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Trai_Turner.jpg)).*
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 4.5/10 |
+| Athleticism | 6.0/10 |
+| Speed | 5.0/10 |
+| Strength and power | 7.0/10 |
+| Agility and change of direction | 5.5/10 |
+| Technique | 4.5/10 |
+| Football IQ | 5.0/10 |
+| Anchor and power | 7.0/10 |
+| Interior exchanges | 4.5/10 |
+| Pass-set discipline | 4.5/10 |
+
+A redshirt-sophomore right guard with a powerful base and short-area quickness, a full 2013 season as an every-game starter in the SEC. Technique is raw: hand placement and pass-set discipline need coaching, and he did not complete the agility drills at the combine.
+
+*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+
+## Contract
+
+Four-year contract through 2017.
+
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $420,000 | $555,880 |
+| 2015 | $510,000 | $645,880 |
+| 2016 | $600,000 | $735,880 |
+| 2017 | $735,000 | $870,880 |
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Jacksonville Jaguars | 21 | 70 | 5 | 5 | 332 | 2 | 23 | 0 | 0 | 0 | 0 | 66.4 |
-| **Career** |  |  |  | 5 | 5 | 332 | 2 | 23 | 0 | 0 | 0 | 0 | 66.4 |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 21 | 70 | 5 | 5 | 332 | 2 | 23 |
 
 ### Playoffs
 
@@ -17,10 +54,13 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/trai_turner.md)
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| May 9, 2014 | Drafted by Jacksonville (No. 90, third round) |
+| May 11, 2014 | Signed a four-year rookie contract with Jacksonville |
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: the number he wore in 2014 with the Carolina Panthers (Jacksonville has not recorded one). [All Jacksonville Jaguars players](README.md).
+<!-- player-page -->

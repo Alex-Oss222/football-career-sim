@@ -1,22 +1,32 @@
 # Daryl Richardson
 
-![Daryl Richardson career card](assets/daryl_richardson.svg)
+**St. Louis Rams · Running back · Age 23 · Last game January 12, 2014**
 
-## Career stats
+5' 10", 206 lb · Born April 12, 1990 · Abilene Christian; Cisco Junior College · Drafted in 2012, seventh round, by St. Louis
+
+As of January 12, 2014, after the Divisional round.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 23 | 26 | 16 | 291 | 1,335 | 4.6 | 13 | 83.4 | 40 | 532 | 6 | 331 | 3 |
-| **Career** |  |  |  | 16 | 291 | 1,335 | 4.6 | 13 | 83.4 | 40 | 532 | 6 | 331 | 3 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 23 | 26 | 16 | 291 | 1,335 | 4.6 | 13 | 81 | 83.4 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 23 | 26 | 58 | 40 | 532 | 13.3 | 6 | 3 | 3 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 23 | 26 | 1 | 14 | 63 | 4.5 | 0 | 63.0 | 3 | 44 | 0 | 17 | 0 |
-| **Career** |  |  |  | 1 | 14 | 63 | 4.5 | 0 | 63.0 | 3 | 44 | 0 | 17 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 23 | 26 | 1 | 14 | 63 | 4.5 | 0 | 13 | 63.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 23 | 26 | 7 | 3 | 44 | 14.7 | 0 | 0 | 0 |
 
 ## Awards
 
@@ -25,6 +35,10 @@
 - AP First-Team All-Pro (2013, RB)
 - Pro Bowl selection (2013, RB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 12, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All St. Louis Rams players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by St. Louis in the seventh round |
+
+<!-- player-page -->

@@ -1,16 +1,24 @@
 # Daniel Kilgore
 
-![Daniel Kilgore career card](assets/daniel_kilgore.svg)
+**San Francisco 49ers · Center · No. 67 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 308 lb · Born December 18, 1987 · Appalachian State · Drafted in 2011, fifth round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![Daniel Kilgore](https://commons.wikimedia.org/wiki/Special:FilePath/Daniel_Kilgore_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Daniel_Kilgore_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 25 | 67 | 16 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | San Francisco 49ers | 26 | 67 | 5 | 5 | 324 | 2 | 23 | 0 | 0 | 0 | 0 | 64.8 |
-| **Career** |  |  |  | 21 | N/A | N/A | 7 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 26 | 67 | 5 | 5 | 324 | 2 | 23 |
+| 2013 | San Francisco | 25 | 67 | 16 | N/A | N/A | 5 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 7 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by San Francisco in the fifth round |
+
+<!-- player-page -->

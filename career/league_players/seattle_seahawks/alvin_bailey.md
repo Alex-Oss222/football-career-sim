@@ -1,16 +1,24 @@
 # Alvin Bailey
 
-![Alvin Bailey career card](assets/alvin_bailey.svg)
+**Seattle Seahawks · Guard · No. 78 · Age 23 · Last game October 6, 2014**
 
-## Career stats
+6' 3", 320 lb · Born August 26, 1991 · Arkansas
+
+As of October 6, 2014, after Week 5.
+
+![Alvin Bailey](https://commons.wikimedia.org/wiki/Special:FilePath/Alvin_Bailey_in_2013.jpg?width=500)
+
+*Photo: Mike Morris, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Alvin_Bailey_in_2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Seattle Seahawks | 22 | 78 | 16 | N/A | N/A | 11 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Seattle Seahawks | 23 | 78 | 4 | 0 | 0 | 0 | 20 | 0 | 0 | 0 | 0 | 0.0 |
-| **Career** |  |  |  | 20 | N/A | N/A | 11 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 23 | 78 | 4 | 0 | 0 | 0 | 20 |
+| 2013 | Seattle | 22 | 78 | 16 | N/A | N/A | 11 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 11 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # Will Allen
 
-![Will Allen career card](assets/will_allen.svg)
+**Pittsburgh Steelers · Free safety · No. 20 · Age 32 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 200 lb · Born June 17, 1982 · Ohio State · Drafted in 2004, fourth round, by Tampa Bay
+
+As of October 5, 2014, after Week 5.
+
+![Will Allen](https://commons.wikimedia.org/wiki/Special:FilePath/Will_Allen_%28safety%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Will_Allen_(safety).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 31 | N/A | 7 | 23 | 1 | 4 | 27 | 0 | 2 | 0 | 0 | 3.3 | 0 |
-| 2014 | Pittsburgh Steelers | 32 | 20 | 5 | 12 | 1 | 1 | 38 | 0 | 0 | 0 | 0 | 2.4 | 0 |
-| **Career** |  |  |  | 12 | 35 | 2 | 5 | 65 | 0 | 2 | 0 | 0 | 2.9 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 32 | 20 | 5 | 12 | 8 | 4 | 0 | 0 | 0 |
+| 2013 | Dallas | 31 | N/A | 7 | 23 | 13 | 10 | 0 | 2 | 2 |
+| Career |  |  |  | 12 | 35 | 21 | 14 | 0 | 2 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 32 | 20 | 1 | 38 | 1 | 0 | 0 | 4 |
+| 2013 | Dallas | 31 | N/A | 1 | 27 | 4 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2004 | Drafted by Tampa Bay in the fourth round |
+
+<!-- player-page -->

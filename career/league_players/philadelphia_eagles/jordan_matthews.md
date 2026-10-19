@@ -1,15 +1,22 @@
 # Jordan Matthews
 
-![Jordan Matthews career card](assets/jordan_matthews.svg)
+**Philadelphia Eagles · Wide receiver · No. 81 · Age 22 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 212 lb · Born July 16, 1992 · Vanderbilt
+
+As of October 5, 2014, after Week 5.
+
+![Jordan Matthews](https://commons.wikimedia.org/wiki/Special:FilePath/Jordan_Matthews_Vanderbilt_US_Army_photo_%28cropped%29.jpg?width=500)
+
+*Photo: United States Army, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jordan_Matthews_Vanderbilt_US_Army_photo_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Philadelphia Eagles | 22 | 81 | 5 | 19 | 12 | 118 | 9.8 | 1 | 23.6 | 63.2 | 19 | 0 | 0 |
-| **Career** |  |  |  | 5 | 19 | 12 | 118 | 9.8 | 1 | 23.6 | 63.2 | 19 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 22 | 81 | 5 | 19 | 12 | 118 | 9.8 | 1 | 19 | 23.6 | 63.2 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Philadelphia Eagles players](README.md).
+<!-- player-page -->

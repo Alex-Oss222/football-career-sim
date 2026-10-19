@@ -1,30 +1,76 @@
 # Montell Owens
 
-![Montell Owens career card](assets/montell_owens.svg)
+**Jacksonville Jaguars · Fullback · Age 30 · Active roster**
 
-## Career stats
+5' 10", 225 lb · Born May 4, 1984 · Maine
+
+As of October 5, 2014, after Week 5.
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 5.5/10 |
+| Athleticism | 5.0/10 |
+| Speed | 4.5/10 |
+| Strength and power | 6.0/10 |
+| Agility and change of direction | 4.5/10 |
+| Technique | 5.5/10 |
+| Football IQ | 5.5/10 |
+| Lead blocking | 6.0/10 |
+| Pass protection | 5.5/10 |
+| Short-yardage power | 5.5/10 |
+| Receiving and hands | 5.0/10 |
+| Route and flat utility | 4.5/10 |
+| Ball security | 6.0/10 |
+| Special-teams utility | 6.5/10 |
+
+A blocking and special-teams fullback who can handle a small carry or flat-receiving package. I see utility and dependable physical work before I see a featured offensive weapon.
+
+*Staff view, March 31, 2014.*
+
+## Contract
+
+Under contract through 2015.
+
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | about $2,591,667 | Not settled |
+| 2015 | about $2,591,667 | Not settled |
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 29 | N/A | 16 | 15 | 63 | 4.2 | 0 | 3.9 | 8 | 132 | 0 | 23 | 0 |
-| 2014 | Jacksonville Jaguars | 30 | N/A | 5 | 4 | 11 | 2.8 | 0 | 2.2 | 2 | 38 | 0 | 6 | 0 |
-| **Career** |  |  |  | 21 | 19 | 74 | 3.9 | 0 | 3.5 | 10 | 170 | 0 | 29 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 30 | N/A | 5 | 4 | 11 | 2.8 | 0 | 8 | 2.2 |
+| 2013 | Jacksonville | 29 | N/A | 16 | 15 | 63 | 4.2 | 0 | 13 | 3.9 |
+| With Jacksonville |  |  |  | 21 | 19 | 74 | 3.9 | 0 | 13 | 3.5 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 30 | N/A | 5 | 2 | 38 | 19.0 | 0 | 0 | 0 |
+| 2013 | Jacksonville | 29 | N/A | 15 | 8 | 132 | 16.5 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 29 | N/A | 2 | 0 | 0 | N/A | 0 | 0.0 | 3 | 41 | 0 | 3 | 0 |
-| **Career** |  |  |  | 2 | 0 | 0 | N/A | 0 | 0.0 | 3 | 41 | 0 | 3 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 29 | N/A | 2 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 29 | N/A | 4 | 3 | 41 | 13.7 | 0 | 0 | 0 |
 
 ## Awards
 
-None on record.
+None.
 
-[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/montell_owens.md)
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| October 4, 2011 | Signed a contract extension with Jacksonville covering 2013 to 2015 |
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Jacksonville Jaguars players](README.md).
+<!-- player-page -->

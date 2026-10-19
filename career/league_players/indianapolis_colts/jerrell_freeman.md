@@ -1,16 +1,29 @@
 # Jerrell Freeman
 
-![Jerrell Freeman career card](assets/jerrell_freeman.svg)
+**Indianapolis Colts · Inside linebacker · No. 50 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 240 lb · Born May 1, 1986 · Mary Hardin-Baylor
+
+As of October 5, 2014, after Week 5.
+
+![Jerrell Freeman](https://commons.wikimedia.org/wiki/Special:FilePath/JerrellFreemanRiders.JPG?width=500)
+
+*Photo: Canada Hky, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:JerrellFreemanRiders.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 27 | 50 | 16 | 145 | 9 | 11 | 2 | 7 | 1 | 1 | 15 | 9.1 | 95 |
-| 2014 | Indianapolis Colts | 28 | 50 | 5 | 37 | 0 | 1 | 0 | 0 | 0 | 0 | 2 | 7.4 | 23 |
-| **Career** |  |  |  | 21 | 182 | 9 | 12 | 2 | 7 | 1 | 1 | 17 | 8.7 | 118 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 28 | 50 | 5 | 37 | 23 | 14 | 1 | 0 | 2 |
+| 2013 | Indianapolis | 27 | 50 | 16 | 145 | 95 | 50 | 11 | 9 | 15 |
+| Career |  |  |  | 21 | 182 | 118 | 64 | 12 | 9 | 17 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 28 | 50 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Indianapolis | 27 | 50 | 2 | 6 | 7 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -22,6 +35,8 @@ No playoff games on record.
 - AFC Defensive Player of the Month (2013, November)
 - AP Second-Team All-Pro (2013, ILB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+None on record.
+
+<!-- player-page -->

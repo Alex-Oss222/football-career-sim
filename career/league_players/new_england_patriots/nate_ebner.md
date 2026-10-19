@@ -1,15 +1,26 @@
 # Nate Ebner
 
-![Nate Ebner career card](assets/nate_ebner.svg)
+**New England Patriots · Safety · No. 43 · Age 25 · Last game December 29, 2013**
 
-## Career stats
+6' 0", 210 lb · Born December 14, 1988 · Ohio State · Drafted in 2012, sixth round, by New England
+
+As of December 29, 2013, after Week 17.
+
+![Nate Ebner](https://commons.wikimedia.org/wiki/Special:FilePath/Nate_Ebner.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Nate_Ebner.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 24 | 43 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New England | 24 | 43 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New England | 24 | 43 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +28,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New England Patriots players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by New England in the sixth round |
+
+<!-- player-page -->

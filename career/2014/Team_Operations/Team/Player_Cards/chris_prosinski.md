@@ -1,171 +1,88 @@
-# Chris Prosinski — 2014 Player Profile
+# Chris Prosinski
 
-<!-- player-card:begin -->
-![Chris Prosinski career card](../../../../league_players/jacksonville_jaguars/assets/chris_prosinski.svg)
+**Jacksonville Jaguars · Safety · No. 42 · Age 27 · Active roster**
 
-[Career statistics](../../../../league_players/jacksonville_jaguars/chris_prosinski.md)
-<!-- player-card:end -->
+6' 1", 208 lb · Born April 28, 1987 · Wyoming · Drafted in 2011, fourth round, by Jacksonville
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** March 31, 2014 starting evaluation  
-**Age:** 26  
-**Position:** S  
-**NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** A coverage-unit safety with useful straight-line range and a reserve defensive role. I see movement and lane work ahead of route-combination recognition and man coverage.  
-**Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/chris_prosinski.md)  
+As of October 5, 2014, after Week 5.
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
+## Staff assessment
 
-## Player grades
-
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 4.5 /10 | Staff judgment |
-| Athleticism | 5.0 /10 | Staff judgment |
-| Speed | 5.0 /10 | Staff judgment |
-| Strength / Power | 4.5 /10 | Staff judgment |
-| Agility / Change of direction | 4.5 /10 | Staff judgment |
-| Technique | 4.0 /10 | Staff judgment |
-| Football IQ | 4.0 /10 | Staff judgment |
-| Range | 5.0 /10 | Staff judgment |
-| Speed / change of direction | 5.0 /10 | Staff judgment |
-| Route-combination recognition | 4.0 /10 | Staff judgment |
-| Deep positioning | 4.0 /10 | Staff judgment |
-| Man / slot coverage | 3.5 /10 | Staff judgment |
-| Ball skills | 3.5 /10 | Staff judgment |
-| Tackling | 4.5 /10 | Staff judgment |
-| Run support / angles | 4.5 /10 | Staff judgment |
-| Communication | 4.5 /10 | Staff judgment |
-| Play-action discipline | 4.0 /10 | Staff judgment |
-
-Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Range | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Speed / change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Route-combination recognition | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Deep positioning | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Man / slot coverage | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Ball skills | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Tackling | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Run support / angles | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Communication | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Play-action discipline | Below NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards, not measured 2014 league ranks.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 4.5/10 |
+| Athleticism | 5.0/10 |
+| Speed | 5.0/10 |
+| Strength and power | 4.5/10 |
+| Agility and change of direction | 4.5/10 |
+| Technique | 4.0/10 |
+| Football IQ | 4.0/10 |
+| Range | 5.0/10 |
+| Speed and change of direction | 5.0/10 |
+| Route-combination recognition | 4.0/10 |
+| Deep positioning | 4.0/10 |
+| Man and slot coverage | 3.5/10 |
+| Ball skills | 3.5/10 |
+| Tackling | 4.5/10 |
+| Run support and angles | 4.5/10 |
+| Communication | 4.5/10 |
+| Play-action discipline | 4.0/10 |
 
 A coverage-unit safety with useful straight-line range and a reserve defensive role. I see movement and lane work ahead of route-combination recognition and man coverage.
 
-Source: [2013 profile](../../../../2013/player_profiles/chris_prosinski.md) and its recorded practice/game sources.
+*Staff view, March 31, 2014.*
 
-## Year-over-year change
+## Contract
 
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Player identity and position traits | 2013 baseline | Starting 2014 view | Retained | No new individual football evidence establishing change |
+Four-year contract through 2014.
 
-## What supports this assessment
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | about $735,018 | Not settled |
 
-A coverage-unit safety with useful straight-line range and a reserve defensive role. I see movement and lane work ahead of route-combination recognition and man coverage.
+## Statistics
 
-[2013 profile](../../../../2013/player_profiles/chris_prosinski.md) and its recorded practice/game sources.
+### Regular season
 
-## Historical comparison
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 27 | 42 | 5 | 1 | 0 | 1 | 1 | 0 | 0 |
+| 2013 | Jacksonville | 26 | 42 | 16 | 1 | 0 | 1 | 0 | 0 | 0 |
+| With Jacksonville |  |  |  | 21 | 2 | 0 | 2 | 1 | 0 | 0 |
 
-The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 27 | 42 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Jacksonville | 26 | 42 | 0 | 0 | 0 | 0 | 0 | N/A |
 
-## Play style
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 27 | 42 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Jacksonville | 26 | 42 | 3 | 71 | 23.7 | 3 | 41 | 13.7 |
 
-A coverage-unit safety with useful straight-line range and a reserve defensive role. I see movement and lane work ahead of route-combination recognition and man coverage.
+### Playoffs
 
-## Best traits
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 26 | 42 | 2 | 1 | 1 | 0 | 0 | 0 | 0 |
 
-- Range: 5.0 /10.
-- Speed / change of direction: 5.0 /10.
-- Tackling: 4.5 /10.
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 26 | 42 | 0 | 0 | 0 | 0 | 0 | N/A |
 
-## Main weaknesses
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 26 | 42 | 0 | 0 | N/A | 1 | 8 | 8.0 |
 
-- Man / slot coverage: 3.5 /10.
-- Ball skills: 3.5 /10.
-- Route-combination recognition: 4.0 /10.
+## Awards
 
-## Evidence and uncertainty
+None.
 
-- **Primary evidence:** [2013 profile](../../../../2013/player_profiles/chris_prosinski.md) and its recorded practice/game sources.
-- **Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
+## Transactions
 
-**One-line description:** A coverage-unit safety with useful straight-line range and a reserve defensive role. I see movement and lane work ahead of route-combination recognition and man coverage.
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Jacksonville in the fourth round |
+| 2011 | Signed a four-year rookie contract with Jacksonville |
 
-## 2013 season production
-
-| Statistic | 2013 regular season | 2013 playoffs |
-| --- | ---: | ---: |
-| G | 16 | 2 |
-| TOT | 1 | 1 |
-| SOLO | 0 | 1 |
-| AST | 1 | 0 |
-| TFL | 0 | 0 |
-| INT | 0 | 0 |
-| INT YDS | 0 | 0 |
-| PD | 0 | 0 |
-| SCK | 0 | 0 |
-| PRESS | 0 | 0 |
-| FF | 0 | 0 |
-| FR | 0 | 0 |
-| Returns: KR | 3 | 0 |
-| Returns: KR YDS | 71 | 0 |
-| Returns: KR AVG | 23.7 | — |
-| Returns: PR | 3 | 1 |
-| Returns: PR YDS | 41 | 8 |
-| Returns: PR AVG | 13.7 | 8.0 |
-
-Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
-
-### September 22 to 27, 2014 | The sixth defensive back
-
-The sixth defensive back in Dime, the first team work of the dime lane he cross-trained in the spring: the Dime Quarters, 6 and Replace snaps Thursday as the added defender from depth, the Friday closeout and third-down periods, and the communication walked Saturday. Nothing charged to him on the recorded reps. Sixth in the defensive-back order for Week 4 (Stone's decision, September 27); coverage units.
-
-Source: [Week 4 record](../../../Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above.
-
-### September 29 to October 4, 2014 | The sixth defensive back again
-
-The sixth defensive back in Stone's Dime group for Pittsburgh. Thursday's pressure periods gave him the replacement rusher's job in Replace Boundary, taking Andre Branch's boundary-edge rush and the boundary contain while Andre Branch dropped to the hot lane, with the vacated slot and flat distribution beside Daryl Smith in Replace Field; the Friday closeout with the same group. Nothing charged to him on the recorded reps. Sixth in the defensive-back order for Week 5 (Stone's decision, October 4); coverage units; active for Week 5.
-
-Source: [Week 5 record](../../../Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR | DEF SNAPS | QB HITS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 27 | 42 | Through Week 5 | 5 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 0 |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR | DEF SNAPS | QB HITS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 27 | 42 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

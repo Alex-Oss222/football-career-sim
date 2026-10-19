@@ -1,15 +1,22 @@
 # Cooper Helfet
 
-![Cooper Helfet career card](assets/cooper_helfet.svg)
+**Seattle Seahawks · Tight end · No. 84 · Age 25 · Last game October 6, 2014**
 
-## Career stats
+6' 3", 239 lb · Born June 2, 1989 · Duke
+
+As of October 6, 2014, after Week 5.
+
+![Cooper Helfet](https://commons.wikimedia.org/wiki/Special:FilePath/Cooper_Helfet.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cooper_Helfet.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Seattle Seahawks | 25 | 84 | 2 | 1 | 0 | 0 | N/A | 0 | 0.0 | 0.0 | N/A | 0 | 0 |
-| **Career** |  |  |  | 2 | 1 | 0 | 0 | N/A | 0 | 0.0 | 0.0 | N/A | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 25 | 84 | 2 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+<!-- player-page -->

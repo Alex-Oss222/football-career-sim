@@ -1,15 +1,26 @@
 # Scott Tolzien
 
-![Scott Tolzien career card](assets/scott_tolzien.svg)
+**Green Bay Packers · Quarterback · No. 16 · Age 27 · Last game October 2, 2014**
 
-## Career stats
+6' 2", 213 lb · Born September 4, 1987 · Wisconsin
+
+As of October 2, 2014, after Week 5.
+
+![Scott Tolzien](https://commons.wikimedia.org/wiki/Special:FilePath/Scott_Tolzien_in_2014.jpg?width=500)
+
+*Photo: Kyle Engmann (original), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Scott_Tolzien_in_2014.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Green Bay Packers | 27 | 16 | 5 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| **Career** |  |  |  | 5 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 27 | 16 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 27 | 16 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+<!-- player-page -->

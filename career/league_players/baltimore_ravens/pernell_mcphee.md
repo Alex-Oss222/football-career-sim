@@ -1,16 +1,29 @@
 # Pernell McPhee
 
-![Pernell McPhee career card](assets/pernell_mcphee.svg)
+**Baltimore Ravens · Outside linebacker · No. 90 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 280 lb · Born December 17, 1988 · Mississippi State; Itawamba JC · Drafted in 2011, fifth round, by Baltimore
+
+As of October 5, 2014, after Week 5.
+
+![Pernell McPhee](https://commons.wikimedia.org/wiki/Special:FilePath/Pernell_McPhee_MT_Stadium_2012_Practice.jpg?width=500)
+
+*Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Pernell_McPhee_MT_Stadium_2012_Practice.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Baltimore Ravens | 24 | 90 | 16 | 29 | 0 | 2 | 0 | 2 | 0 | 0 | 0 | 1.8 | 17 |
-| 2014 | Baltimore Ravens | 25 | 90 | 5 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 0 |
-| **Career** |  |  |  | 21 | 30 | 0 | 2 | 0 | 2 | 0 | 0 | 0 | 1.4 | 17 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 25 | 90 | 5 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | Baltimore | 24 | 90 | 16 | 29 | 17 | 12 | 2 | 0 | 0 |
+| Career |  |  |  | 21 | 30 | 17 | 13 | 2 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 25 | 90 | 0 | 0 | 0 | 0 | 0 | 4 |
+| 2013 | Baltimore | 24 | 90 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Baltimore Ravens players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Baltimore in the fifth round |
+
+<!-- player-page -->

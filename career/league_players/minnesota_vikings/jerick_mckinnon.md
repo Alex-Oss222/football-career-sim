@@ -1,15 +1,26 @@
 # Jerick McKinnon
 
-![Jerick McKinnon career card](assets/jerick_mckinnon.svg)
+**Minnesota Vikings · Running back · No. 31 · Age 22 · Last game October 2, 2014**
 
-## Career stats
+5' 9", 208 lb · Born May 3, 1992 · Georgia Southern
+
+As of October 2, 2014, after Week 5.
+
+![Jerick McKinnon](https://commons.wikimedia.org/wiki/Special:FilePath/Chiefs_541_%2851615470661%29_%28cropped%29.jpg?width=500)
+
+*Photo: All-Pro Reels from District of Columbia, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Chiefs_541_(51615470661)_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Minnesota Vikings | 22 | 31 | 5 | 20 | 77 | 3.9 | 0 | 15.4 | 3 | 76 | 1 | 23 | 0 |
-| **Career** |  |  |  | 5 | 20 | 77 | 3.9 | 0 | 15.4 | 3 | 76 | 1 | 23 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 22 | 31 | 5 | 20 | 77 | 3.9 | 0 | 12 | 15.4 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 22 | 31 | 6 | 3 | 76 | 25.3 | 1 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+<!-- player-page -->

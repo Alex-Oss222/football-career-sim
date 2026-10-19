@@ -83,7 +83,7 @@ Inspect and update, as the atomic progression rule requires:
 - `docs/repository_map.json`: `active_season`, the `current_records` keys, `record_years` and `required_files` for new owners; `phases` as each phase plan is written; `active_playbooks` only when an iteration's effective range ends.
 - `state/05_Current_Season_State.md` and `state/04_Roster_and_Staff_Register.md`, with their versions and checkpoints advanced together.
 - `career/Y+1/README.md`, `career/README.md` and the root `README.md` start links.
-- The generated views: `python scripts/render_annual_record.py Y+1`, `python scripts/render_player_ages.py`, `python scripts/update_player_cards.py Y+1`, then `python scripts/validate_repository.py`.
+- The generated views: `python scripts/render_annual_record.py Y+1`, `python scripts/render_player_ages.py`, `python scripts/render_player_pages.py`, then `python scripts/validate_repository.py`.
 - Year-named instructions in `AGENTS.md` (the 2014 carry-forward, 2014 individual training and film, and 2014 E1/E2 sections) need the user's own Y+1 wording: flag them, do not rewrite them ([cleanup report](repository_cleanup_2026-10-17.md), Y22).
 
 **F. New-year work by information date**

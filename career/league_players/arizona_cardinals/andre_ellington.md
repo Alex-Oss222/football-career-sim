@@ -1,16 +1,29 @@
 # Andre Ellington
 
-![Andre Ellington career card](assets/andre_ellington.svg)
+**Arizona Cardinals · Running back · No. 38 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 199 lb · Born February 3, 1989 · Clemson
+
+As of October 5, 2014, after Week 5.
+
+![Andre Ellington](https://commons.wikimedia.org/wiki/Special:FilePath/Andre_Ellington_2011.jpg?width=500)
+
+*Photo: Daniel Lin, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Andre_Ellington_2011.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Arizona Cardinals | 24 | 38 | 16 | 1 | 3 | 3.0 | 0 | 0.2 | 0 | 0 | 0 | 1 | 0 |
-| 2014 | Arizona Cardinals | 25 | 38 | 4 | 70 | 438 | 6.3 | 1 | 109.5 | 9 | 96 | 1 | 79 | 0 |
-| **Career** |  |  |  | 20 | 71 | 441 | 6.2 | 1 | 22.1 | 9 | 96 | 1 | 80 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Arizona | 25 | 38 | 4 | 70 | 438 | 6.3 | 1 | 41 | 109.5 |
+| 2013 | Arizona | 24 | 38 | 16 | 1 | 3 | 3.0 | 0 | 3 | 0.2 |
+| Career |  |  |  | 20 | 71 | 441 | 6.2 | 1 | 41 | 22.1 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Arizona | 25 | 38 | 15 | 9 | 96 | 10.7 | 1 | 0 | 0 |
+| 2013 | Arizona | 24 | 38 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Arizona Cardinals players](README.md).
+<!-- player-page -->

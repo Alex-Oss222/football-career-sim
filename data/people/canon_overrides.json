@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "scope": "Canon changes the user made to a researched fact. They apply on top of the library research files, which are never edited for a canon change. runtime/player_bios.py applies the birth dates; each row names the registry date it replaces and fails closed if the registry changes.",
+  "birth_dates": {
+    "Kirk Cousins": {
+      "gsis_id": "00-0029604",
+      "birth_date": "1991-08-19",
+      "library_birth_date": "1988-08-19",
+      "decided": "2026-10-19",
+      "by": "The user, on the Kirk Cousins sample page",
+      "words": "layout prefect please this is me aske move his b-day to 1991 hes, 23 now please srry",
+      "record": "docs/rebuild_plan.md, change log, October 19, 2026",
+      "applies": "Every page, age view and game preparation from rebuild step 3a; he is 23 on October 5, 2014. Pages written before 2014 Week 6 that give his old age stay as written, and no closed game record changes. His college years are shifted in the final rebuild task, after step 8."
+    }
+  }
+}

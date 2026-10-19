@@ -1,16 +1,34 @@
 # Darren McFadden
 
-![Darren McFadden career card](assets/darren_mcfadden.svg)
+**Oakland Raiders · Running back · No. 20 · Age 27 · Last game September 28, 2014**
 
-## Career stats
+6' 1", 218 lb · Born August 27, 1987 · Arkansas · Drafted in 2008, first round, by Oakland
+
+As of September 28, 2014, after Week 4.
+
+![Darren McFadden](https://commons.wikimedia.org/wiki/Special:FilePath/Darren_McFadden_Raiders.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Darren_McFadden_Raiders.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Oakland Raiders | 26 | 20 | 15 | 256 | 1,060 | 4.1 | 11 | 70.7 | 41 | 413 | 0 | 297 | 2 |
-| 2014 | Oakland Raiders | 27 | 20 | 4 | 62 | 233 | 3.8 | 1 | 58.2 | 23 | 273 | 1 | 85 | 0 |
-| **Career** |  |  |  | 19 | 318 | 1,293 | 4.1 | 12 | 68.1 | 64 | 686 | 1 | 382 | 2 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 27 | 20 | 4 | 62 | 233 | 3.8 | 1 | 42 | 58.2 |
+| 2013 | Oakland | 26 | 20 | 15 | 256 | 1,060 | 4.1 | 11 | 30 | 70.7 |
+| Career |  |  |  | 19 | 318 | 1,293 | 4.1 | 12 | 42 | 68.1 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 27 | 20 | 27 | 23 | 273 | 11.9 | 1 | 0 | 0 |
+| 2013 | Oakland | 26 | 20 | 61 | 41 | 413 | 10.1 | 0 | 2 | 2 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 27 | 20 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Oakland | 26 | 20 | 0 | 0 | N/A | 2 | 12 | 6.0 |
 
 ### Playoffs
 
@@ -20,6 +38,10 @@ No playoff games on record.
 
 - AFC Offensive Player of the Week (2014, Week 1)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Oakland Raiders players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Oakland in the first round |
+
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # Demaryius Thomas
 
-![Demaryius Thomas career card](assets/demaryius_thomas.svg)
+**Denver Broncos · Wide receiver · No. 88 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 229 lb · Born December 25, 1987 · Georgia Tech · Drafted in 2010, first round, by Denver
+
+As of October 5, 2014, after Week 5.
+
+![Demaryius Thomas](https://commons.wikimedia.org/wiki/Special:FilePath/Demaryius_Thomas_2018_%28cropped%29.jpg?width=500)
+
+*Photo: All-Pro Reels from District of Columbia, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Demaryius_Thomas_2018_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Denver Broncos | 25 | 88 | 16 | 102 | 65 | 581 | 8.9 | 4 | 36.3 | 63.7 | 29 | 10 | 1 |
-| 2014 | Denver Broncos | 26 | 88 | 4 | 24 | 14 | 95 | 6.8 | 1 | 23.8 | 58.3 | 20 | 0 | 1 |
-| **Career** |  |  |  | 20 | 126 | 79 | 676 | 8.6 | 5 | 33.8 | 62.7 | 29 | 10 | 2 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 26 | 88 | 4 | 24 | 14 | 95 | 6.8 | 1 | 20 | 23.8 | 58.3 |
+| 2013 | Denver | 25 | 88 | 16 | 102 | 65 | 581 | 8.9 | 4 | 29 | 36.3 | 63.7 |
+| Career |  |  |  | 20 | 126 | 79 | 676 | 8.6 | 5 | 29 | 33.8 | 62.7 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 26 | 88 | 0 | 0 | 0 | 1 | 1 |
+| 2013 | Denver | 25 | 88 | 7 | 10 | 0 | 1 | 1 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Denver in the first round |
+
+<!-- player-page -->

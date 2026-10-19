@@ -1,15 +1,22 @@
 # Josh Thomas
 
-![Josh Thomas career card](assets/josh_thomas.svg)
+**Carolina Panthers · Cornerback · Age 24 · Last game December 29, 2013**
 
-## Career stats
+5' 11", 185 lb · Born May 3, 1989 · Buffalo · Drafted in 2011, fifth round, by Dallas
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 24 | 22 | 16 | 34 | 0 | 5 | 0 | 1 | 0 | 0 | 0 | 2.1 | 0 |
-| **Career** |  |  |  | 16 | 34 | 0 | 5 | 0 | 1 | 0 | 0 | 0 | 2.1 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Carolina | 24 | 22 | 16 | 34 | 21 | 13 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Carolina | 24 | 22 | 0 | 0 | 5 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Carolina Panthers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Dallas in the fifth round |
+
+<!-- player-page -->

@@ -1,28 +1,44 @@
 # Brian Quick
 
-![Brian Quick career card](assets/brian_quick.svg)
+**St. Louis Rams · Wide receiver · No. 83 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 218 lb · Born June 5, 1989 · Appalachian State · Drafted in 2012, second round, by St. Louis
+
+As of October 5, 2014, after Week 5.
+
+![Brian Quick](https://commons.wikimedia.org/wiki/Special:FilePath/Brian_Quick_ASU_2011.jpg?width=500)
+
+*Photo: Geologik, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Brian_Quick_ASU_2011.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 24 | 83 | 16 | 111 | 70 | 683 | 9.8 | 4 | 42.7 | 63.1 | 53 | 6 | 0 |
-| 2014 | St. Louis Rams | 25 | 83 | 4 | 5 | 3 | 36 | 12.0 | 0 | 9.0 | 60.0 | 17 | 0 | 0 |
-| **Career** |  |  |  | 20 | 116 | 73 | 719 | 9.8 | 4 | 36.0 | 62.9 | 53 | 6 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 25 | 83 | 4 | 5 | 3 | 36 | 12.0 | 0 | 17 | 9.0 | 60.0 |
+| 2013 | St. Louis | 24 | 83 | 16 | 111 | 70 | 683 | 9.8 | 4 | 53 | 42.7 | 63.1 |
+| Career |  |  |  | 20 | 116 | 73 | 719 | 9.8 | 4 | 53 | 36.0 | 62.9 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 25 | 83 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | St. Louis | 24 | 83 | 1 | 6 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 24 | 83 | 1 | 4 | 3 | 42 | 14.0 | 0 | 42.0 | 75.0 | 30 | 0 | 0 |
-| **Career** |  |  |  | 1 | 4 | 3 | 42 | 14.0 | 0 | 42.0 | 75.0 | 30 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 24 | 83 | 1 | 4 | 3 | 42 | 14.0 | 0 | 30 | 42.0 | 75.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by St. Louis in the second round |
+
+<!-- player-page -->

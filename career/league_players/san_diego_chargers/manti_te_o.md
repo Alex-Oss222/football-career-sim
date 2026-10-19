@@ -1,15 +1,26 @@
 # Manti Te'o
 
-![Manti Te'o career card](assets/manti_te_o.svg)
+**San Diego Chargers · Inside linebacker · No. 50 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 241 lb · Born January 26, 1991 · Notre Dame
+
+As of October 5, 2014, after Week 5.
+
+![Manti Te'o](https://commons.wikimedia.org/wiki/Special:FilePath/Mantiteo2010.jpg?width=500)
+
+*Photo: Shotgun Spratling/Neon Tommy, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Mantiteo2010.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | San Diego Chargers | 23 | 50 | 5 | 55 | 1 | 3 | 0 | 3 | 2 | 1 | 5 | 11.0 | 34 |
-| **Career** |  |  |  | 5 | 55 | 1 | 3 | 0 | 3 | 2 | 1 | 5 | 11.0 | 34 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 23 | 50 | 5 | 55 | 34 | 21 | 3 | 1 | 5 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 23 | 50 | 0 | 0 | 3 | 2 | 1 | 0 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+<!-- player-page -->

@@ -1,16 +1,34 @@
 # Brandon LaFell
 
-![Brandon LaFell career card](assets/brandon_lafell.svg)
+**New England Patriots · Wide receiver · No. 19 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 210 lb · Born November 4, 1986 · LSU · Drafted in 2010, third round, by Carolina
+
+As of October 5, 2014, after Week 5.
+
+![Brandon LaFell](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_LaFell_Panthers.jpg?width=500)
+
+*Photo: Whiskeytango88, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Brandon_LaFell_Panthers.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 26 | 11 | 16 | 103 | 64 | 876 | 13.7 | 5 | 54.8 | 62.1 | 68 | 5 | 1 |
-| 2014 | New England Patriots | 27 | 19 | 5 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| **Career** |  |  |  | 21 | 103 | 64 | 876 | 13.7 | 5 | 41.7 | 62.1 | 68 | 5 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 27 | 19 | 5 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2013 | Carolina | 26 | 11 | 16 | 103 | 64 | 876 | 13.7 | 5 | 68 | 54.8 | 62.1 |
+| Career |  |  |  | 21 | 103 | 64 | 876 | 13.7 | 5 | 68 | 41.7 | 62.1 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 27 | 19 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Carolina | 26 | 11 | 2 | 5 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 27 | 19 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Carolina | 26 | 11 | 1 | 21 | 21.0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +36,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New England Patriots players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Carolina in the third round |
+
+<!-- player-page -->

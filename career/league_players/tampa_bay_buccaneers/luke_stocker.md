@@ -1,28 +1,44 @@
 # Luke Stocker
 
-![Luke Stocker career card](assets/luke_stocker.svg)
+**Tampa Bay Buccaneers · Tight end · No. 88 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 253 lb · Born July 17, 1988 · Tennessee · Drafted in 2011, fourth round, by Tampa Bay
+
+As of October 5, 2014, after Week 5.
+
+![Luke Stocker](https://commons.wikimedia.org/wiki/Special:FilePath/Luke_Stocker.jpg?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Luke_Stocker.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 25 | 88 | 16 | 91 | 53 | 612 | 11.5 | 2 | 38.2 | 58.2 | 44 | 5 | 0 |
-| 2014 | Tampa Bay Buccaneers | 26 | 88 | 5 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| **Career** |  |  |  | 21 | 91 | 53 | 612 | 11.5 | 2 | 29.1 | 58.2 | 44 | 5 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 26 | 88 | 5 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2013 | Tampa Bay | 25 | 88 | 16 | 91 | 53 | 612 | 11.5 | 2 | 44 | 38.2 | 58.2 |
+| Career |  |  |  | 21 | 91 | 53 | 612 | 11.5 | 2 | 44 | 29.1 | 58.2 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 26 | 88 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Tampa Bay | 25 | 88 | 1 | 5 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 25 | 88 | 1 | 8 | 5 | 70 | 14.0 | 1 | 70.0 | 62.5 | 29 | 0 | 0 |
-| **Career** |  |  |  | 1 | 8 | 5 | 70 | 14.0 | 1 | 70.0 | 62.5 | 29 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 25 | 88 | 1 | 8 | 5 | 70 | 14.0 | 1 | 29 | 70.0 | 62.5 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Tampa Bay in the fourth round |
+
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # Jamize Olawale
 
-![Jamize Olawale career card](assets/jamize_olawale.svg)
+**Oakland Raiders · Fullback · No. 49 · Age 25 · Last game September 28, 2014**
 
-## Career stats
+6' 1", 235 lb · Born April 17, 1989 · North Texas
+
+As of September 28, 2014, after Week 4.
+
+![Jamize Olawale](https://commons.wikimedia.org/wiki/Special:FilePath/Jamize_Olawale.jpg?width=500)
+
+*Photo: Pete Sheffield, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jamize_Olawale.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Oakland Raiders | 24 | 49 | 16 | 2 | -1 | -0.5 | 0 | -0.1 | 2 | 25 | 1 | 4 | 0 |
-| 2014 | Oakland Raiders | 25 | 49 | 4 | 1 | 25 | 25.0 | 0 | 6.2 | 0 | 0 | 0 | 1 | 0 |
-| **Career** |  |  |  | 20 | 3 | 24 | 8.0 | 0 | 1.2 | 2 | 25 | 1 | 5 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 25 | 49 | 4 | 1 | 25 | 25.0 | 0 | 25 | 6.2 |
+| 2013 | Oakland | 24 | 49 | 16 | 2 | -1 | -0.5 | 0 | 1 | -0.1 |
+| Career |  |  |  | 20 | 3 | 24 | 8.0 | 0 | 25 | 1.2 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 25 | 49 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2013 | Oakland | 24 | 49 | 3 | 2 | 25 | 12.5 | 1 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Oakland Raiders players](README.md).
+<!-- player-page -->

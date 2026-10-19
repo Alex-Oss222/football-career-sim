@@ -1,15 +1,47 @@
 # Marcel Jensen
 
-![Marcel Jensen career card](assets/marcel_jensen.svg)
+**Jacksonville Jaguars · Tight end · No. 87 · Age 24 · Active roster**
 
-## Career stats
+6' 6", 270 lb · Born February 12, 1990 · Fresno State · Undrafted
+
+As of October 5, 2014, after Week 5.
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 2.5/10 |
+| Athleticism | 4.5/10 |
+| Speed | 4.0/10 |
+| Strength and power | 5.5/10 |
+| Agility and change of direction | 4.0/10 |
+| Technique | 4.0/10 |
+| Football IQ | 4.5/10 |
+| Size | 6.0/10 |
+| Attached blocking | 4.5/10 |
+| Receiving | 3.5/10 |
+
+A big tight end from Fresno State with size for attached blocking and modest receiving production in a pass-heavy offense.
+
+*Staff view, May 11, 2014; dated updates through August 28, 2014.*
+
+## Contract
+
+Three-year contract through 2016.
+
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $420,000 | $420,000 |
+| 2015 | $510,000 | $510,000 |
+| 2016 | $600,000 | $600,000 |
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Jacksonville Jaguars | 24 | 87 | 5 | 1 | 1 | 10 | 10.0 | 0 | 2.0 | 100.0 | 10 | 0 | 0 |
-| **Career** |  |  |  | 5 | 1 | 1 | 10 | 10.0 | 0 | 2.0 | 100.0 | 10 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 24 | 87 | 5 | 1 | 1 | 10 | 10.0 | 0 | 10 | 2.0 | 100.0 |
 
 ### Playoffs
 
@@ -17,10 +49,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/marcel_jensen.md)
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| May 10, 2014 | Signed a three-year contract with Jacksonville as an undrafted rookie |
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: his 2014 Jaguars roster listing. [All Jacksonville Jaguars players](README.md).
+<!-- player-page -->

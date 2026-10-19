@@ -1,15 +1,26 @@
 # Andre Williams
 
-![Andre Williams career card](assets/andre_williams.svg)
+**New York Giants · Running back · No. 44 · Age 22 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 230 lb · Born August 28, 1992 · Boston College
+
+As of October 5, 2014, after Week 5.
+
+![Andre Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Andre_Williams_%28American_football%29_2012.jpg?width=500)
+
+*Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Andre_Williams_(American_football)_2012.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | New York Giants | 22 | 44 | 5 | 19 | 80 | 4.2 | 0 | 16.0 | 3 | 51 | 0 | 22 | 0 |
-| **Career** |  |  |  | 5 | 19 | 80 | 4.2 | 0 | 16.0 | 3 | 51 | 0 | 22 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 22 | 44 | 5 | 19 | 80 | 4.2 | 0 | 14 | 16.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 22 | 44 | 7 | 3 | 51 | 17.0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).
+<!-- player-page -->

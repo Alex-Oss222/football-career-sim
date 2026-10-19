@@ -1,16 +1,29 @@
 # Alfonzo Dennard
 
-![Alfonzo Dennard career card](assets/alfonzo_dennard.svg)
+**New England Patriots · Cornerback · No. 37 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 200 lb · Born September 9, 1989 · Nebraska · Drafted in 2012, seventh round, by New England
+
+As of October 5, 2014, after Week 5.
+
+![Alfonzo Dennard](https://commons.wikimedia.org/wiki/Special:FilePath/Alfonzo_Dennard.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Alfonzo_Dennard.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 23 | 37 | 16 | 75 | 2 | 13 | 31 | 3 | 0 | 0 | 0 | 4.7 | 0 |
-| 2014 | New England Patriots | 24 | 37 | 5 | 9 | 1 | 5 | 39 | 0 | 0 | 0 | 0 | 1.8 | 0 |
-| **Career** |  |  |  | 21 | 84 | 3 | 18 | 70 | 3 | 0 | 0 | 0 | 4.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 24 | 37 | 5 | 9 | 6 | 3 | 0 | 0 | 0 |
+| 2013 | New England | 23 | 37 | 16 | 75 | 49 | 26 | 3 | 0 | 0 |
+| Career |  |  |  | 21 | 84 | 55 | 29 | 3 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 24 | 37 | 1 | 39 | 5 | 0 | 0 | 0 |
+| 2013 | New England | 23 | 37 | 2 | 31 | 13 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New England Patriots players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by New England in the seventh round |
+
+<!-- player-page -->

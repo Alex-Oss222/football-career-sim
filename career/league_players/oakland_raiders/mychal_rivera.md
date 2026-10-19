@@ -1,16 +1,24 @@
 # Mychal Rivera
 
-![Mychal Rivera career card](assets/mychal_rivera.svg)
+**Oakland Raiders · Tight end · No. 81 · Age 24 · Last game September 28, 2014**
 
-## Career stats
+6' 3", 245 lb · Born September 8, 1990 · Tennessee; College of the Canyons
+
+As of September 28, 2014, after Week 4.
+
+![Mychal Rivera](https://commons.wikimedia.org/wiki/Special:FilePath/Mychal_Rivera.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Mychal_Rivera.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Oakland Raiders | 22 | 81 | 16 | 23 | 14 | 187 | 13.4 | 1 | 11.7 | 60.9 | 71 | 0 | 0 |
-| 2014 | Oakland Raiders | 23 | 81 | 4 | 3 | 3 | 26 | 8.7 | 0 | 6.5 | 100.0 | 18 | 0 | 0 |
-| **Career** |  |  |  | 20 | 26 | 17 | 213 | 12.5 | 1 | 10.7 | 65.4 | 71 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 23 | 81 | 4 | 3 | 3 | 26 | 8.7 | 0 | 18 | 6.5 | 100.0 |
+| 2013 | Oakland | 22 | 81 | 16 | 23 | 14 | 187 | 13.4 | 1 | 71 | 11.7 | 60.9 |
+| Career |  |  |  | 20 | 26 | 17 | 213 | 12.5 | 1 | 71 | 10.7 | 65.4 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Oakland Raiders players](README.md).
+<!-- player-page -->

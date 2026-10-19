@@ -1,27 +1,39 @@
 # Jay Ross
 
-![Jay Ross career card](assets/jay_ross.svg)
+**Buffalo Bills · Defensive tackle · Age 26 · Last game February 2, 2014**
 
-## Career stats
+6' 3", 319 lb · Born October 3, 1987 · East Carolina
+
+As of February 2, 2014, after the Super Bowl.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 25 | 69 | 16 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0.1 | 2 |
-| **Career** |  |  |  | 16 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0.1 | 2 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 25 | 69 | 16 | 2 | 2 | 0 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 25 | 69 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 25 | 69 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 25 | 69 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 25 | 69 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through February 2, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Buffalo Bills players](README.md).
+<!-- player-page -->

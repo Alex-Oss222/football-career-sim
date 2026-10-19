@@ -1,16 +1,29 @@
 # Clay Matthews
 
-![Clay Matthews career card](assets/clay_matthews.svg)
+**Green Bay Packers · Outside linebacker · No. 52 · Age 28 · Last game October 2, 2014**
 
-## Career stats
+6' 3", 255 lb · Born May 14, 1986 · USC · Drafted in 2009, first round, by Green Bay
+
+As of October 2, 2014, after Week 5.
+
+![Clay Matthews](https://commons.wikimedia.org/wiki/Special:FilePath/Clay_Matthews_III.jpg?width=500)
+
+*Photo: Gabriel Cervantes, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Clay_Matthews_III.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Green Bay Packers | 27 | 52 | 16 | 66 | 4 | 2 | 1 | 5 | 0 | 0 | 7 | 4.1 | 47 |
-| 2014 | Green Bay Packers | 28 | 52 | 5 | 40 | 2 | 6 | 0 | 0 | 0 | 0 | 2 | 8.0 | 24 |
-| **Career** |  |  |  | 21 | 106 | 6 | 8 | 1 | 5 | 0 | 0 | 9 | 5.0 | 71 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 28 | 52 | 5 | 40 | 24 | 16 | 6 | 2 | 2 |
+| 2013 | Green Bay | 27 | 52 | 16 | 66 | 47 | 19 | 2 | 4 | 7 |
+| Career |  |  |  | 21 | 106 | 71 | 35 | 8 | 6 | 9 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 28 | 52 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Green Bay | 27 | 52 | 1 | 2 | 5 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Green Bay in the first round |
+
+<!-- player-page -->

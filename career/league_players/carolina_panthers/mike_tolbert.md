@@ -1,16 +1,29 @@
 # Mike Tolbert
 
-![Mike Tolbert career card](assets/mike_tolbert.svg)
+**Carolina Panthers · Fullback · No. 35 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 245 lb · Born November 23, 1985 · Coastal Carolina
+
+As of October 5, 2014, after Week 5.
+
+![Mike Tolbert](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Tolbert.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Mike_Tolbert.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 27 | 35 | 16 | 9 | 20 | 2.2 | 0 | 1.2 | 14 | 203 | 1 | 23 | 0 |
-| 2014 | Carolina Panthers | 28 | 35 | 5 | 7 | 29 | 4.1 | 0 | 5.8 | 2 | 12 | 0 | 9 | 1 |
-| **Career** |  |  |  | 21 | 16 | 49 | 3.1 | 0 | 2.3 | 16 | 215 | 1 | 32 | 1 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 28 | 35 | 5 | 7 | 29 | 4.1 | 0 | 9 | 5.8 |
+| 2013 | Carolina | 27 | 35 | 16 | 9 | 20 | 2.2 | 0 | 8 | 1.2 |
+| Career |  |  |  | 21 | 16 | 49 | 3.1 | 0 | 9 | 2.3 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 28 | 35 | 4 | 2 | 12 | 6.0 | 0 | 1 | 1 |
+| 2013 | Carolina | 27 | 35 | 18 | 14 | 203 | 14.5 | 1 | 0 | 0 |
 
 ### Playoffs
 
@@ -21,6 +34,8 @@ No playoff games on record.
 - AP Second-Team All-Pro (2013, FB)
 - Pro Bowl selection (2013, FB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+None on record.
+
+<!-- player-page -->

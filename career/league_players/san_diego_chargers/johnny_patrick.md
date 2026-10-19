@@ -1,15 +1,22 @@
 # Johnny Patrick
 
-![Johnny Patrick career card](assets/johnny_patrick.svg)
+**San Diego Chargers · Cornerback · Age 25 · Last game December 29, 2013**
 
-## Career stats
+5' 11", 190 lb · Born August 17, 1988 · Louisville · Drafted in 2011, third round, by New Orleans
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Diego Chargers | 25 | 26 | 16 | 26 | 1 | 7 | 29 | 2 | 0 | 0 | 0 | 1.6 | 0 |
-| **Career** |  |  |  | 16 | 26 | 1 | 7 | 29 | 2 | 0 | 0 | 0 | 1.6 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | San Diego | 25 | 26 | 16 | 26 | 16 | 10 | 2 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | San Diego | 25 | 26 | 1 | 29 | 7 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All San Diego Chargers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by New Orleans in the third round |
+
+<!-- player-page -->

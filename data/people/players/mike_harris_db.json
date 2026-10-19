@@ -1,0 +1,280 @@
+{
+ "schema_version": 1,
+ "name": "Mike Harris",
+ "gsis_id": "00-0029610",
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/mike_harris.md"
+  },
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-03-31",
+   "date_as_written": "March 31, 2014 starting evaluation",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Starting staff view; exact theoretical personnel grades",
+   "position": "CB",
+   "identity": "A replacement starter or reserve corner who can execute a bounded outside role. I see usable movement without a defining press, ball or catch-point advantage.",
+   "previous_profile": "[2013 baseline](career/2013/player_profiles/mike_harris.md)",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Long / recovery speed",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Short-area quickness / hips",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Press coverage",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Off-man coverage",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Zone / pattern match",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Route recognition / eyes",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Ball skills",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Catch-point play",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Tackling / run support",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Block defeat / penalty discipline",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Long / recovery speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Short-area quickness / hips",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Press coverage",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Off-man coverage",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Zone / pattern match",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Route recognition / eyes",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Ball skills",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Catch-point play",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Tackling / run support",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Block defeat / penalty discipline",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards, not measured 2014 league ranks.",
+   "read": "A replacement starter or reserve corner who can execute a bounded outside role. I see usable movement without a defining press, ball or catch-point advantage.",
+   "read_sources": "Source: [2013 profile](career/2013/player_profiles/mike_harris.md) and its recorded practice/game sources.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "2013 baseline",
+     "current": "Starting 2014 view",
+     "change": "Retained",
+     "reason": "No new individual football evidence establishing change"
+    }
+   ],
+   "support": "A replacement starter or reserve corner who can execute a bounded outside role. I see usable movement without a defining press, ball or catch-point advantage.\n\n[2013 profile](career/2013/player_profiles/mike_harris.md) and its recorded practice/game sources.",
+   "historical_comparison": "The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.",
+   "play_style": "A replacement starter or reserve corner who can execute a bounded outside role. I see usable movement without a defining press, ball or catch-point advantage.",
+   "best_traits": [
+    "Short-area quickness / hips: 5.5 /10.",
+    "Long / recovery speed: 5.0 /10.",
+    "Off-man coverage: 5.0 /10."
+   ],
+   "main_weaknesses": [
+    "Press coverage: 4.5 /10.",
+    "Route recognition / eyes: 4.5 /10.",
+    "Ball skills: 4.5 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [2013 profile](career/2013/player_profiles/mike_harris.md) and its recorded practice/game sources.",
+    "**Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics."
+   ],
+   "one_line": "A replacement starter or reserve corner who can execute a bounded outside role. I see usable movement without a defining press, ball or catch-point advantage.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Harris retained the corrected rub path with contact. His timing and help responsibilities still belong to the particular coverage call, not a general claim of matchup superiority.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-07",
+     "date_as_written": "September 7, 2014",
+     "setting": "Week 1, Jacksonville at Philadelphia",
+     "text": "Seventy defensive snaps at the starting cornerback opposite Talib with six tackles, the last the third-and-8 stop of Foles's scramble that ended Philadelphia's first overtime possession; the play-by-play records no throw completed over him and no coverage on the four long completions, so the film holds that question. A long-term lower-extremity injury was logged at the end of that possession and he was removed: out, projected return in 92 days (December 8), reassessment September 14 ([medical record](career/2014/Team_Operations/Medical/incidents/mike_harris_2014-09-07.md)). His roster disposition is Caldwell's with the user and the Week 2 place is Stone's after the September 8 review; nothing is decided by the injury.",
+     "source": "Source: [Week 1 game record](career/2014/Regular_Season/Games/Week_01/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-08",
+     "date_as_written": "September 8, 2014",
+     "setting": "Reserve/injured",
+     "text": "Examined Monday with the September 7 instruction unchanged (out, long term; projected return December 8); placed on ordinary reserve/injured by Caldwell on Stone's recommendation, the club's one return designation going to Lowery. His 2014 season with the club is over and his contract continues. No football finding attaches to the injury; the Week 1 question on the four long completions stays with the film.",
+     "source": "Source: [September 8 transactions](career/2014/Team_Operations/Team/Roster/transactions_2014-09-08.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-8-to-12-jones-drew-reassessed-and-cleared-harris-and-lowery-to-reserveinjured). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/mike_harris.md at commit 332d70b"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2012",
+   "kind": "signed",
+   "text": "Signed a four-year rookie contract with Jacksonville",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md"
+  },
+  {
+   "date": "2014-09-08",
+   "kind": "reserve",
+   "text": "Placed on reserve/injured by Jacksonville",
+   "source": "career/2014/Team_Operations/Team/Roster/transactions_2014-09-08.md"
+  }
+ ]
+}

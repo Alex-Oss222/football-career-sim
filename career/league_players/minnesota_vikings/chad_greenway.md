@@ -1,28 +1,48 @@
 # Chad Greenway
 
-![Chad Greenway career card](assets/chad_greenway.svg)
+**Minnesota Vikings · Outside linebacker · No. 52 · Age 31 · Last game October 2, 2014**
 
-## Career stats
+6' 3", 237 lb · Born January 12, 1983 · Iowa · Drafted in 2006, first round, by Minnesota
+
+As of October 2, 2014, after Week 5.
+
+![Chad Greenway](https://commons.wikimedia.org/wiki/Special:FilePath/Chad_Greenway_%282%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Chad_Greenway_(2).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 30 | 52 | 16 | 139 | 8 | 6 | 1 | 8 | 0 | 0 | 12 | 8.7 | 100 |
-| 2014 | Minnesota Vikings | 31 | 52 | 5 | 47 | 2 | 3 | 0 | 0 | 0 | 0 | 4 | 9.4 | 34 |
-| **Career** |  |  |  | 21 | 186 | 10 | 9 | 1 | 8 | 0 | 0 | 16 | 8.9 | 134 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 31 | 52 | 5 | 47 | 34 | 13 | 3 | 2 | 4 |
+| 2013 | Minnesota | 30 | 52 | 16 | 139 | 100 | 39 | 6 | 8 | 12 |
+| Career |  |  |  | 21 | 186 | 134 | 52 | 9 | 10 | 16 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 31 | 52 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Minnesota | 30 | 52 | 1 | 6 | 8 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 30 | 52 | 3 | 29 | 3 | 3 | 1 | 1 | 1 | 1 | 3 | 9.7 | 24 |
-| **Career** |  |  |  | 3 | 29 | 3 | 3 | 1 | 1 | 1 | 1 | 3 | 9.7 | 24 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 30 | 52 | 3 | 29 | 24 | 5 | 3 | 3 | 3 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 30 | 52 | 1 | 3 | 1 | 1 | 1 | N/A |
 
 ## Awards
 
 - Pro Bowl selection (2013, OLB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Minnesota in the first round |
+
+<!-- player-page -->

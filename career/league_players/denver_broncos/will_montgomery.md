@@ -1,16 +1,24 @@
 # Will Montgomery
 
-![Will Montgomery career card](assets/will_montgomery.svg)
+**Denver Broncos · Center · No. 64 · Age 31 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 304 lb · Born February 13, 1983 · Virginia Tech · Drafted in 2006, seventh round, by Carolina
+
+As of October 5, 2014, after Week 5.
+
+![Will Montgomery](https://commons.wikimedia.org/wiki/Special:FilePath/Will_montgomery.jpg?width=500)
+
+*Photo: original: Keith Allison derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Will_montgomery.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Washington Redskins | 30 | 63 | 16 | N/A | N/A | 2 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Denver Broncos | 31 | 64 | 4 | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 | 0.0 |
-| **Career** |  |  |  | 20 | N/A | N/A | 2 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 31 | 64 | 4 | 0 | 0 | 0 | 4 |
+| 2013 | Washington | 30 | 63 | 16 | N/A | N/A | 2 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 2 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Carolina in the seventh round |
+
+<!-- player-page -->

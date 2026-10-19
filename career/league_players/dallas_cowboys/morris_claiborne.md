@@ -1,23 +1,39 @@
 # Morris Claiborne
 
-![Morris Claiborne career card](assets/morris_claiborne.svg)
+**Dallas Cowboys · Cornerback · No. 24 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 192 lb · Born February 7, 1990 · LSU · Drafted in 2012, first round, by Dallas
+
+As of October 5, 2014, after Week 5.
+
+![Morris Claiborne](https://commons.wikimedia.org/wiki/Special:FilePath/Morris_Claiborne.jpg?width=500)
+
+*Photo: original: Keith Allison derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Morris_Claiborne.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 23 | 24 | 16 | 119 | 4 | 25 | 103 | 5 | 2 | 1 | 1 | 7.4 | 0 |
-| 2014 | Dallas Cowboys | 24 | 24 | 5 | 40 | 1 | 6 | 0 | 1 | 0 | 0 | 0 | 8.0 | 0 |
-| **Career** |  |  |  | 21 | 159 | 5 | 31 | 103 | 6 | 2 | 1 | 1 | 7.6 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Dallas | 24 | 24 | 5 | 40 | 24 | 16 | 1 | 0 | 0 |
+| 2013 | Dallas | 23 | 24 | 16 | 119 | 76 | 43 | 5 | 2 | 3 |
+| Career |  |  |  | 21 | 159 | 100 | 59 | 6 | 2 | 3 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Dallas | 24 | 24 | 1 | 0 | 6 | 0 | 0 | 0 |
+| 2013 | Dallas | 23 | 24 | 4 | 103 | 25 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 23 | 24 | 2 | 15 | 1 | 1 | 20 | 0 | 0 | 0 | 0 | 7.5 | 0 |
-| **Career** |  |  |  | 2 | 15 | 1 | 1 | 20 | 0 | 0 | 0 | 0 | 7.5 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 23 | 24 | 2 | 15 | 9 | 6 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 23 | 24 | 1 | 20 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
@@ -25,6 +41,10 @@
 - AP First-Team All-Pro (2013, CB)
 - Pro Bowl selection (2013, CB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Dallas in the first round |
+
+<!-- player-page -->

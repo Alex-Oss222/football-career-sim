@@ -1,15 +1,18 @@
 # Alex Boone
 
-![Alex Boone career card](assets/alex_boone.svg)
+**San Francisco 49ers · Guard · No. 75 · Age 26 · Last game December 29, 2013**
 
-## Career stats
+6' 8", 300 lb · Born May 4, 1987 · Ohio State
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 26 | 75 | 16 | N/A | N/A | 2 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 16 | N/A | N/A | 2 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | San Francisco | 26 | 75 | 16 | N/A | N/A | 2 | N/A |
 
 ### Playoffs
 
@@ -17,8 +20,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All San Francisco 49ers players](README.md).
+<!-- player-page -->

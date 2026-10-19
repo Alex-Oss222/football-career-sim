@@ -1,16 +1,29 @@
 # Ed Dickson
 
-![Ed Dickson career card](assets/ed_dickson.svg)
+**Carolina Panthers · Tight end · No. 84 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 255 lb · Born July 25, 1987 · Oregon · Drafted in 2010, third round, by Baltimore
+
+As of October 5, 2014, after Week 5.
+
+![Ed Dickson](https://commons.wikimedia.org/wiki/Special:FilePath/Ed_Dickson_MT_Stadium_2012_Practice.jpg?width=500)
+
+*Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ed_Dickson_MT_Stadium_2012_Practice.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Baltimore Ravens | 26 | 84 | 16 | 83 | 55 | 639 | 11.6 | 5 | 39.9 | 66.3 | 45 | -2 | 0 |
-| 2014 | Carolina Panthers | 27 | 84 | 5 | 7 | 3 | 39 | 13.0 | 0 | 7.8 | 42.9 | 16 | 0 | 0 |
-| **Career** |  |  |  | 21 | 90 | 58 | 678 | 11.7 | 5 | 32.3 | 64.4 | 45 | -2 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 27 | 84 | 5 | 7 | 3 | 39 | 13.0 | 0 | 16 | 7.8 | 42.9 |
+| 2013 | Baltimore | 26 | 84 | 16 | 83 | 55 | 639 | 11.6 | 5 | 45 | 39.9 | 66.3 |
+| Career |  |  |  | 21 | 90 | 58 | 678 | 11.7 | 5 | 45 | 32.3 | 64.4 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 27 | 84 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Baltimore | 26 | 84 | 1 | -2 | 1 | 0 | 0 |
 
 ### Playoffs
 
@@ -20,6 +33,10 @@ No playoff games on record.
 
 - Pro Bowl selection, replacement (2013, TE)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Baltimore in the third round |
+
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # Ahtyba Rubin
 
-![Ahtyba Rubin career card](assets/ahtyba_rubin.svg)
+**Cleveland Browns · Nose tackle · No. 71 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 325 lb · Born July 25, 1986 · Iowa State; Trinity Valley CC · Drafted in 2008, sixth round, by Cleveland
+
+As of October 5, 2014, after Week 5.
+
+![Ahtyba Rubin](https://commons.wikimedia.org/wiki/Special:FilePath/Ahtyba_Rubin.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ahtyba_Rubin.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 27 | 71 | 16 | 114 | 7 | 11 | 0 | 3 | 3 | 3 | 19 | 7.1 | 79 |
-| 2014 | Cleveland Browns | 28 | 71 | 4 | 23 | 2 | 1 | 0 | 2 | 1 | 1 | 5 | 5.8 | 18 |
-| **Career** |  |  |  | 20 | 137 | 9 | 12 | 0 | 5 | 4 | 4 | 24 | 6.8 | 97 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 28 | 71 | 4 | 23 | 18 | 5 | 1 | 2 | 5 |
+| 2013 | Cleveland | 27 | 71 | 16 | 114 | 79 | 35 | 11 | 7 | 19 |
+| Career |  |  |  | 20 | 137 | 97 | 40 | 12 | 9 | 24 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 28 | 71 | 0 | 0 | 2 | 1 | 1 | 0 |
+| 2013 | Cleveland | 27 | 71 | 0 | 0 | 3 | 3 | 3 | N/A |
 
 ### Playoffs
 
@@ -21,6 +34,10 @@ No playoff games on record.
 - AP First-Team All-Pro (2013, DT)
 - Pro Bowl selection (2013, DT)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Cleveland in the sixth round |
+
+<!-- player-page -->

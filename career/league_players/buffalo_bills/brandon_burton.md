@@ -1,27 +1,41 @@
 # Brandon Burton
 
-![Brandon Burton career card](assets/brandon_burton.svg)
+**Buffalo Bills · Cornerback · Age 24 · Last game February 2, 2014**
 
-## Career stats
+6' 0", 185 lb · Born July 31, 1989 · Utah · Drafted in 2011, fifth round, by Minnesota
+
+As of February 2, 2014, after the Super Bowl.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 24 | 29 | 16 | 3 | 1 | 2 | 30 | 1 | 0 | 0 | 0 | 0.2 | 0 |
-| **Career** |  |  |  | 16 | 3 | 1 | 2 | 30 | 1 | 0 | 0 | 0 | 0.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 24 | 29 | 16 | 3 | 1 | 2 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 24 | 29 | 1 | 30 | 2 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 24 | 29 | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 0 |
-| **Career** |  |  |  | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 24 | 29 | 4 | 1 | 1 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 24 | 29 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through February 2, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Buffalo Bills players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Minnesota in the fifth round |
+
+<!-- player-page -->

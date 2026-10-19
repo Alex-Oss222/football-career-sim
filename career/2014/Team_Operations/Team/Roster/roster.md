@@ -25,7 +25,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
-| Kirk Cousins | QB | 1988-08-19 | 26 | Active 53 | No communicated restriction | QB1; offensive captain (quarterback), named August 31, 2014 |
+| Kirk Cousins | QB | 1991-08-19 | 23 | Active 53 | No communicated restriction | QB1; offensive captain (quarterback), named August 31, 2014 |
 | Chad Henne | QB | 1985-07-02 | 29 | Active 53 (re-signed April 4, 2014) | No communicated restriction | QB2 (re-signed April 4, 2014; no starting promise) |
 
 ### Running backs (3)

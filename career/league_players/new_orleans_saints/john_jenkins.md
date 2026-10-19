@@ -1,28 +1,42 @@
 # John Jenkins
 
-![John Jenkins career card](assets/john_jenkins.svg)
+**New Orleans Saints · Nose tackle · No. 92 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 359 lb · Born July 11, 1989 · Georgia; Gulf Coast CC; Mississippi
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 24 | 92 | 16 | 10 | 0 | 4 | 0 | 0 | 0 | 0 | 0 | 0.6 | 6 |
-| 2014 | New Orleans Saints | 25 | 92 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 17 | 10 | 0 | 4 | 0 | 0 | 0 | 0 | 0 | 0.6 | 6 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New Orleans | 25 | 92 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | New Orleans | 24 | 92 | 16 | 10 | 6 | 4 | 4 | 0 | 0 |
+| Career |  |  |  | 17 | 10 | 6 | 4 | 4 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New Orleans | 25 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | New Orleans | 24 | 92 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 24 | 92 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 24 | 92 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 24 | 92 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All New Orleans Saints players](README.md).
+<!-- player-page -->

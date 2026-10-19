@@ -1,28 +1,46 @@
 # Danny McCray
 
-![Danny McCray career card](assets/danny_mccray.svg)
+**Chicago Bears · Free safety · No. 29 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 221 lb · Born March 10, 1988 · LSU
+
+As of October 5, 2014, after Week 5.
+
+![Danny McCray](https://commons.wikimedia.org/wiki/Special:FilePath/Danny_McCray_Bears_2014.jpg?width=500)
+
+*Photo: original: U.S. Army Photo by Sgt. 1st Class Michel Sauret on behalf of 416th Theater Engineer Command Army Reserve derivative: Diddykong1130, Public domain ([source](https://commons.wikimedia.org/wiki/File:Danny_McCray_Bears_2014.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 25 | 40 | 15 | 43 | 1 | 5 | 20 | 0 | 3 | 0 | 0 | 2.9 | 0 |
-| 2014 | Chicago Bears | 26 | 29 | 5 | 17 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 3.4 | 0 |
-| **Career** |  |  |  | 20 | 60 | 1 | 7 | 20 | 0 | 3 | 0 | 0 | 3.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Chicago | 26 | 29 | 5 | 17 | 9 | 8 | 0 | 0 | 0 |
+| 2013 | Dallas | 25 | 40 | 15 | 43 | 21 | 22 | 0 | 3 | 4 |
+| Career |  |  |  | 20 | 60 | 30 | 30 | 0 | 3 | 4 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Chicago | 26 | 29 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2013 | Dallas | 25 | 40 | 1 | 20 | 5 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 25 | 40 | 2 | 10 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 5.0 | 0 |
-| **Career** |  |  |  | 2 | 10 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 5.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 25 | 40 | 2 | 10 | 5 | 5 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 25 | 40 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).
+<!-- player-page -->

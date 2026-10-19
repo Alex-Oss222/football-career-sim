@@ -1,0 +1,280 @@
+{
+ "schema_version": 1,
+ "name": "Kirk Cousins",
+ "gsis_id": "00-0029604",
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/kirk_cousins.md"
+  },
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-03-31",
+   "date_as_written": "March 31, 2014 starting evaluation",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Starting staff view; exact theoretical personnel grades",
+   "position": "QB",
+   "identity": "Structured pocket passer who wins with processing, pocket movement, cadence, anticipation and short-to-intermediate ball placement. He is at his best working through progressions on rhythm, creating clean throwing lanes with subtle movement and delivering from a repeatable base; his mobility is functional rather than a featured part of his game.",
+   "previous_profile": "[2013 baseline](career/2013/player_profiles/kirk_cousins.md)",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "8.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Arm strength / velocity",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Short-intermediate ball placement",
+     "grade": "8.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Deep-outside placement",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Timing / anticipation",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Cadence",
+     "grade": "8.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Coverage / protection processing",
+     "grade": "8.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Pocket movement",
+     "grade": "9.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Scramble speed / mobility",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Mechanics / release",
+     "grade": "8.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Pressure decision-making",
+     "grade": "8.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Ball security / command",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "At NFL elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Arm strength / velocity",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Short-intermediate ball placement",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "At NFL elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Deep-outside placement",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Timing / anticipation",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Cadence",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "At NFL elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Coverage / protection processing",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "At NFL elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Pocket movement",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "At NFL elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Scramble speed / mobility",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Mechanics / release",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "At NFL elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Pressure decision-making",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "At NFL elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Ball security / command",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards, not measured 2014 league ranks.",
+   "read": "Structured pocket passer with advanced command of the pre-snap and in-pocket phases of the position. Cousins uses cadence to control the operation, processes coverage and protection cleanly, and works through progressions on schedule. Pocket movement is a defining strength: he can climb, slide and reset without abandoning the structure of the play, keeping his eyes downfield and creating a usable throwing lane as pressure closes. His mechanics stay compact and repeatable, and his best accuracy comes in the short-to-intermediate game, where placement and timing allow him to throw receivers into space. He has enough arm strength and deep-outside placement to attack the full field, though neither is the foundation of his game. Under pressure he generally remains a passer first, relying on movement, processing and disciplined decisions rather than scrambling. His mobility is functional, but speed and open-field creation are secondary traits.",
+   "read_sources": "Source: [2013 profile](career/2013/player_profiles/kirk_cousins.md) and its recorded practice/game sources.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "2013 baseline",
+     "current": "Starting 2014 view",
+     "change": "Retained",
+     "reason": "No new individual football evidence establishing change"
+    }
+   ],
+   "support": "The retained 2013 evaluation supports the same core picture: Cousins' strongest quarterback traits are processing, cadence, short-to-intermediate placement, mechanics and timing, while his athletic value comes more from movement inside the pocket than from scramble speed. The opening 2014 grades treat pocket movement as a top trait and pressure decision-making as another clear strength.\n\n[2013 profile](career/2013/player_profiles/kirk_cousins.md) and its recorded practice/game sources.",
+   "historical_comparison": "The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.",
+   "play_style": "Operates as a rhythm dropback passer. He wants the concept and his feet synchronized, gets the ball out off the proper hitch when the read is there, and can climb or slide to preserve a throwing lane when it is not. He is most comfortable attacking short and intermediate windows, has sufficient arm strength to work outside the numbers, and prefers to solve pressure from the pocket rather than by scrambling.",
+   "best_traits": [
+    "Pocket movement: 9.0 /10.",
+    "Football IQ: 8.5 /10.",
+    "Cadence: 8.5 /10.",
+    "Short-intermediate ball placement: 8.5 /10.",
+    "Coverage / protection processing: 8.5 /10."
+   ],
+   "main_weaknesses": [
+    "Speed: 6.0 /10.",
+    "Scramble speed / mobility: 6.5 /10.",
+    "Athleticism: 6.5 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [2013 profile](career/2013/player_profiles/kirk_cousins.md) and its recorded practice/game sources.",
+    "**Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics."
+   ],
+   "one_line": "Structured pocket passer with high-level pocket movement, processing and cadence, strong short-to-intermediate placement and mechanics, and functional rather than playmaking mobility.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Cousins handled the two-minute and four-minute decisions and reached the second progression on time with the first answer removed, including the controlled rush on August 1. The early spring protection findings have carried into this work; an unrestricted game rush remains untested.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/kirk_cousins.md at commit 332d70b"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2012",
+   "kind": "signed",
+   "text": "Signed a four-year rookie contract with Washington",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md"
+  },
+  {
+   "date": "2013",
+   "label": "March 12 to April 24, 2013",
+   "kind": "traded",
+   "text": "Traded by Washington to Jacksonville, with Washington's 2014 first-round pick, for Jacksonville's 2014 and 2015 second-round picks",
+   "source": "career/2013/trades/trades.md"
+  }
+ ]
+}

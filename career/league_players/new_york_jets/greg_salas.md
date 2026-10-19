@@ -1,15 +1,22 @@
 # Greg Salas
 
-![Greg Salas career card](assets/greg_salas.svg)
+**New York Jets · Wide receiver · No. 17 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 210 lb · Born August 25, 1988 · Hawaii · Drafted in 2011, fourth round, by St. Louis
+
+As of October 5, 2014, after Week 5.
+
+![Greg Salas](https://commons.wikimedia.org/wiki/Special:FilePath/Greg_Salas.jpg?width=500)
+
+*Photo: Kyle Nishioka, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Greg_Salas.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | New York Jets | 26 | 17 | 5 | 17 | 9 | 110 | 12.2 | 4 | 22.0 | 52.9 | 22 | 0 | 0 |
-| **Career** |  |  |  | 5 | 17 | 9 | 110 | 12.2 | 4 | 22.0 | 52.9 | 22 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 26 | 17 | 5 | 17 | 9 | 110 | 12.2 | 4 | 22 | 22.0 | 52.9 |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by St. Louis in the fourth round |
+
+<!-- player-page -->

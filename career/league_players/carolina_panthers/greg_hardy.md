@@ -1,16 +1,29 @@
 # Greg Hardy
 
-![Greg Hardy career card](assets/greg_hardy.svg)
+**Carolina Panthers · Defensive end · No. 76 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 275 lb · Born July 28, 1988 · Mississippi · Drafted in 2010, sixth round, by Carolina
+
+As of October 5, 2014, after Week 5.
+
+![Greg Hardy](https://commons.wikimedia.org/wiki/Special:FilePath/Greg_hardy_2015.jpg?width=500)
+
+*Photo: original: Keith Allison derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Greg_hardy_2015.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 25 | 76 | 16 | 75 | 8 | 7 | 1 | 2 | 0 | 0 | 19 | 4.7 | 57 |
-| 2014 | Carolina Panthers | 26 | 76 | 5 | 32 | 4 | 3 | 0 | 2 | 0 | 0 | 4 | 6.4 | 21 |
-| **Career** |  |  |  | 21 | 107 | 12 | 10 | 1 | 4 | 0 | 0 | 23 | 5.1 | 78 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 26 | 76 | 5 | 32 | 21 | 11 | 3 | 4 | 4 |
+| 2013 | Carolina | 25 | 76 | 16 | 75 | 57 | 18 | 7 | 8 | 19 |
+| Career |  |  |  | 21 | 107 | 78 | 29 | 10 | 12 | 23 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 26 | 76 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2013 | Carolina | 25 | 76 | 1 | 26 | 2 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -20,6 +33,10 @@ No playoff games on record.
 
 - NFC Defensive Player of the Week (2013, Week 16)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Carolina in the sixth round |
+
+<!-- player-page -->

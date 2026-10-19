@@ -1,16 +1,24 @@
 # Ryan Allen
 
-![Ryan Allen career card](assets/ryan_allen.svg)
+**New England Patriots · Punter · No. 6 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 215 lb · Born February 28, 1990 · Louisiana Tech; Oregon State
+
+As of October 5, 2014, after Week 5.
+
+![Ryan Allen](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Allen_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Ryan_Allen_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 23 | 6 | 16 | 76 | 3,462 | 45.6 | 40.2 | 28 | 59 | 2 | 36.8 | 4.8 | 368 |
-| 2014 | New England Patriots | 24 | 6 | 5 | 23 | 1,105 | 48.0 | 42.7 | 11 | 63 | 0 | 47.8 | 4.6 | 123 |
-| **Career** |  |  |  | 21 | 99 | 4,567 | 46.1 | 40.8 | 39 | 63 | 2 | 39.4 | 4.7 | 491 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 24 | 6 | 5 | 23 | 1,105 | 48.0 | 42.7 | 11 | 0 | 63 |
+| 2013 | New England | 23 | 6 | 16 | 76 | 3,462 | 45.6 | 40.2 | 28 | 2 | 59 |
+| Career |  |  |  | 21 | 99 | 4,567 | 46.1 | 40.8 | 39 | 2 | 63 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New England Patriots players](README.md).
+<!-- player-page -->

@@ -1,16 +1,24 @@
 # Jonathan Weeks
 
-![Jonathan Weeks career card](assets/jonathan_weeks.svg)
+**Houston Texans · Long snapper · No. 46 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 246 lb · Born February 17, 1986 · Baylor
+
+As of October 5, 2014, after Week 5.
+
+![Jonathan Weeks](https://commons.wikimedia.org/wiki/Special:FilePath/Jon_Weeks.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jon_Weeks.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | LONG SNAPS | ST SNAPS | ST TKL | TKL | SOLO | AST | FF | FR | LONG SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Houston Texans | 27 | 46 | 16 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Houston Texans | 28 | 46 | 5 | 47 | 47 | 0 | 0 | 0 | 0 | 0 | 0 | 9.4 |
-| **Career** |  |  |  | 21 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Houston | 28 | 46 | 5 | 47 | 47 | 0 | 0 |
+| 2013 | Houston | 27 | 46 | 16 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 21 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Houston Texans players](README.md).
+<!-- player-page -->

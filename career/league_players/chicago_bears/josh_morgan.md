@@ -1,16 +1,34 @@
 # Josh Morgan
 
-![Josh Morgan career card](assets/josh_morgan.svg)
+**Chicago Bears · Wide receiver · No. 19 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 220 lb · Born June 20, 1985 · Virginia Tech · Drafted in 2008, sixth round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![Josh Morgan](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Morgan_at_49ers_training_camp_2010-08-09_1.JPG?width=500)
+
+*Photo: BrokenSphere, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Josh_Morgan_at_49ers_training_camp_2010-08-09_1.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Washington Redskins | 28 | 15 | 16 | 151 | 93 | 927 | 10.0 | 4 | 57.9 | 61.6 | 50 | 33 | 0 |
-| 2014 | Chicago Bears | 29 | 19 | 5 | 2 | 1 | 26 | 26.0 | 0 | 5.2 | 50.0 | 26 | 0 | 0 |
-| **Career** |  |  |  | 21 | 153 | 94 | 953 | 10.1 | 4 | 45.4 | 61.4 | 50 | 33 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Chicago | 29 | 19 | 5 | 2 | 1 | 26 | 26.0 | 0 | 26 | 5.2 | 50.0 |
+| 2013 | Washington | 28 | 15 | 16 | 151 | 93 | 927 | 10.0 | 4 | 50 | 57.9 | 61.6 |
+| Career |  |  |  | 21 | 153 | 94 | 953 | 10.1 | 4 | 50 | 45.4 | 61.4 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Chicago | 29 | 19 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Washington | 28 | 15 | 6 | 33 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Chicago | 29 | 19 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Washington | 28 | 15 | 0 | 0 | N/A | 1 | 7 | 7.0 |
 
 ### Playoffs
 
@@ -18,8 +36,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by San Francisco in the sixth round |
+
+<!-- player-page -->

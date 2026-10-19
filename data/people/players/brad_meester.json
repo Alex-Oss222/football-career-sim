@@ -1,0 +1,26 @@
+{
+ "schema_version": 1,
+ "name": "Brad Meester",
+ "gsis_id": "00-0018956",
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/brad_meester.md"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2013-03-12",
+   "kind": "resigned",
+   "text": "Re-signed with Jacksonville for one year",
+   "source": "career/2013/offseason/free_agency/signings.md"
+  },
+  {
+   "date": "2014-02-02",
+   "kind": "retired",
+   "text": "Retirement applied after the 2013 season (announced December 18, 2013); contract ran to March 11, 2014",
+   "source": "career/2014/League/personnel/retirements.md"
+  }
+ ]
+}

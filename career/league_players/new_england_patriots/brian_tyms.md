@@ -1,15 +1,18 @@
 # Brian Tyms
 
-![Brian Tyms career card](assets/brian_tyms.svg)
+**New England Patriots · Wide receiver · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 204 lb · Born February 21, 1989 · Florida A&M; Tallahassee CC
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | New England Patriots | 25 | N/A | 1 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| **Career** |  |  |  | 1 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 25 | N/A | 1 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +20,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All New England Patriots players](README.md).
+<!-- player-page -->

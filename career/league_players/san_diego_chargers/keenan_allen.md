@@ -1,16 +1,29 @@
 # Keenan Allen
 
-![Keenan Allen career card](assets/keenan_allen.svg)
+**San Diego Chargers · Wide receiver · No. 13 · Age 22 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 211 lb · Born April 27, 1992 · California
+
+As of October 5, 2014, after Week 5.
+
+![Keenan Allen](https://commons.wikimedia.org/wiki/Special:FilePath/Keenan_Allen_-_2025_Commanders_at_Chargers_%28cropped%29.jpg?width=500)
+
+*Photo: All-Pro Reels, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Keenan_Allen_-_2025_Commanders_at_Chargers_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Diego Chargers | 21 | 13 | 16 | 73 | 50 | 539 | 10.8 | 2 | 33.7 | 68.5 | 47 | 1 | 0 |
-| 2014 | San Diego Chargers | 22 | 13 | 5 | 37 | 25 | 398 | 15.9 | 6 | 79.6 | 67.6 | 45 | 13 | 0 |
-| **Career** |  |  |  | 21 | 110 | 75 | 937 | 12.5 | 8 | 44.6 | 68.2 | 47 | 14 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 22 | 13 | 5 | 37 | 25 | 398 | 15.9 | 6 | 45 | 79.6 | 67.6 |
+| 2013 | San Diego | 21 | 13 | 16 | 73 | 50 | 539 | 10.8 | 2 | 47 | 33.7 | 68.5 |
+| Career |  |  |  | 21 | 110 | 75 | 937 | 12.5 | 8 | 47 | 44.6 | 68.2 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 22 | 13 | 2 | 13 | 0 | 0 | 0 |
+| 2013 | San Diego | 21 | 13 | 1 | 1 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+<!-- player-page -->

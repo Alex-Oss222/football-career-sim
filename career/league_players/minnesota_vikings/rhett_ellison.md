@@ -1,28 +1,39 @@
 # Rhett Ellison
 
-![Rhett Ellison career card](assets/rhett_ellison.svg)
+**Minnesota Vikings · Tight end · No. 85 · Age 25 · Last game October 2, 2014**
 
-## Career stats
+6' 5", 250 lb · Born October 3, 1988 · USC · Drafted in 2012, fourth round, by Minnesota
+
+As of October 2, 2014, after Week 5.
+
+![Rhett Ellison](https://commons.wikimedia.org/wiki/Special:FilePath/Rhett_Ellison_2012-12-30.jpg?width=500)
+
+*Photo: Adrian_Peterson_tackled_2012-12-30.jpg : Joe Bielawa derivative work: Arbor to SJ, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Rhett_Ellison_2012-12-30.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 24 | 40 | 16 | 1 | 0 | 0 | N/A | 0 | 0.0 | 0.0 | N/A | 0 | 0 |
-| 2014 | Minnesota Vikings | 25 | 85 | 5 | 10 | 7 | 73 | 10.4 | 1 | 14.6 | 70.0 | 18 | 0 | 0 |
-| **Career** |  |  |  | 21 | 11 | 7 | 73 | 10.4 | 1 | 3.5 | 63.6 | 18 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 25 | 85 | 5 | 10 | 7 | 73 | 10.4 | 1 | 18 | 14.6 | 70.0 |
+| 2013 | Minnesota | 24 | 40 | 16 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
+| Career |  |  |  | 21 | 11 | 7 | 73 | 10.4 | 1 | 18 | 3.5 | 63.6 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 24 | 40 | 3 | 1 | 0 | 0 | N/A | 0 | 0.0 | 0.0 | N/A | 0 | 0 |
-| **Career** |  |  |  | 3 | 1 | 0 | 0 | N/A | 0 | 0.0 | 0.0 | N/A | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 24 | 40 | 3 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Minnesota in the fourth round |
+
+<!-- player-page -->

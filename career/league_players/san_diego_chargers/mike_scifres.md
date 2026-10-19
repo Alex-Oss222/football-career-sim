@@ -1,16 +1,24 @@
 # Mike Scifres
 
-![Mike Scifres career card](assets/mike_scifres.svg)
+**San Diego Chargers · Punter · No. 5 · Age 33 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 215 lb · Born October 8, 1980 · Western Illinois · Drafted in 2003, fifth round, by San Diego
+
+As of October 5, 2014, after Week 5.
+
+![Mike Scifres](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Scifres-Aug-2-08-Practice.jpg?width=500)
+
+*Photo: Dirk Hansen from San Diego, CA. Cropped by User:Blueag9 ., [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Mike_Scifres-Aug-2-08-Practice.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Diego Chargers | 32 | 5 | 16 | 89 | 4,088 | 45.9 | 39.7 | 29 | 71 | 3 | 32.6 | 5.6 | 497 |
-| 2014 | San Diego Chargers | 33 | 5 | 5 | 22 | 941 | 42.8 | 34.7 | 9 | 60 | 4 | 40.9 | 4.4 | 97 |
-| **Career** |  |  |  | 21 | 111 | 5,029 | 45.3 | 38.7 | 38 | 71 | 7 | 34.2 | 5.3 | 594 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 33 | 5 | 5 | 22 | 941 | 42.8 | 34.7 | 9 | 4 | 60 |
+| 2013 | San Diego | 32 | 5 | 16 | 89 | 4,088 | 45.9 | 39.7 | 29 | 3 | 71 |
+| Career |  |  |  | 21 | 111 | 5,029 | 45.3 | 38.7 | 38 | 7 | 71 |
 
 ### Playoffs
 
@@ -20,6 +28,10 @@ No playoff games on record.
 
 - AFC Special Teams Player of the Week (2013, Week 13)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2003 | Drafted by San Diego in the fifth round |
+
+<!-- player-page -->

@@ -1,15 +1,22 @@
 # Weston Richburg
 
-![Weston Richburg career card](assets/weston_richburg.svg)
+**New York Giants · Center · No. 70 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 298 lb · Born July 9, 1991 · Colorado State
+
+As of October 5, 2014, after Week 5.
+
+![Weston Richburg](https://commons.wikimedia.org/wiki/Special:FilePath/Weston_Richburg.jpg?width=500)
+
+*Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Weston_Richburg.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | New York Giants | 23 | 70 | 2 | 2 | 115 | 0 | 10 | 0 | 0 | 0 | 0 | 57.5 |
-| **Career** |  |  |  | 2 | 2 | 115 | 0 | 10 | 0 | 0 | 0 | 0 | 57.5 |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 23 | 70 | 2 | 2 | 115 | 0 | 10 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).
+<!-- player-page -->

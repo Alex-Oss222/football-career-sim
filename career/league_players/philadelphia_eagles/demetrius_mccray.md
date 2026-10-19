@@ -1,15 +1,26 @@
 # Demetrius McCray
 
-![Demetrius McCray career card](assets/demetrius_mccray.svg)
+**Philadelphia Eagles · Cornerback · Age 22 · Last game December 29, 2013**
 
-## Career stats
+6' 0", 185 lb · Born May 11, 1991 · Appalachian State
+
+As of December 29, 2013, after Week 17.
+
+![Demetrius McCray](https://commons.wikimedia.org/wiki/Special:FilePath/Demetrius_McCray_%2820941753029%29_%28cropped%29.jpg?width=500)
+
+*Photo: Cotton Puryear, Virginia National Guard Public Affairs, Public domain ([source](https://commons.wikimedia.org/wiki/File:Demetrius_McCray_(20941753029)_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 22 | N/A | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 22 | N/A | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 22 | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Philadelphia Eagles players](README.md).
+<!-- player-page -->

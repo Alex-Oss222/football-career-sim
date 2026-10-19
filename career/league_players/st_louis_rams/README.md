@@ -1,11 +1,13 @@
 # St. Louis Rams players
 
-NFC West · Players whose latest game on record was with the St. Louis Rams. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+NFC West. The players whose latest game on record was with the St. Louis Rams. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 9 | [Austin Davis](austin_davis.md) | QB | 4 | 0 |
 | N/A | [Blake Bortles](blake_bortles.md) | QB | 4 | 0 |
 | 17 | [Case Keenum](case_keenum.md) | QB | 4 | 16 |
@@ -15,7 +17,7 @@ NFC West · Players whose latest game on record was with the St. Louis Rams. G c
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 36 | [Benny Cunningham](benny_cunningham.md) | RB | 4 | 16 |
 | 34 | [Chase Reynolds](chase_reynolds.md) | RB | 4 | 16 |
 | N/A | [Daryl Richardson](daryl_richardson.md) | RB | 0 | 16 |
@@ -26,7 +28,7 @@ NFC West · Players whose latest game on record was with the St. Louis Rams. G c
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 18 | [Austin Pettis](austin_pettis.md) | WR | 4 | 16 |
 | 83 | [Brian Quick](brian_quick.md) | WR | 4 | 16 |
 | 13 | [Chris Givens](chris_givens.md) | WR | 4 | 16 |
@@ -37,7 +39,7 @@ NFC West · Players whose latest game on record was with the St. Louis Rams. G c
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 82 | [Alex Bayer](alex_bayer.md) | TE | 4 | 0 |
 | 46 | [Cory Harkey](cory_harkey.md) | TE | 4 | 15 |
 | 89 | [Jared Cook](jared_cook.md) | TE | 4 | 16 |
@@ -47,7 +49,7 @@ NFC West · Players whose latest game on record was with the St. Louis Rams. G c
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 67 | [Barrett Jones](barrett_jones.md) | C | 0 | 2 |
 | N/A | [Brandon Washington](brandon_washington.md) | G | 0 | 2 |
 | 69 | [Davin Joseph](davin_joseph.md) | G | 4 | 16 |
@@ -63,7 +65,7 @@ NFC West · Players whose latest game on record was with the St. Louis Rams. G c
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 92 | [Alex Carrington](alex_carrington.md) | DE | 4 | 16 |
 | 91 | [Chris Long](chris_long.md) | DE | 4 | 16 |
 | 93 | [Ethan Westbrooks](ethan_westbrooks.md) | DT | 4 | 0 |
@@ -77,7 +79,7 @@ NFC West · Players whose latest game on record was with the St. Louis Rams. G c
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 52 | [Alec Ogletree](alec_ogletree.md) | ILB | 4 | 15 |
 | 53 | [Daren Bates](daren_bates.md) | MLB | 4 | 16 |
 | N/A | [Gerald Rivers](gerald_rivers.md) | OLB | 0 | 9 |
@@ -91,7 +93,7 @@ NFC West · Players whose latest game on record was with the St. Louis Rams. G c
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 32 | [Brandon McGee](brandon_mcgee.md) | CB | 4 | 2 |
 | 33 | [E.J. Gaines](e_j_gaines.md) | CB | 1 | 0 |
 | 21 | [Janoris Jenkins](janoris_jenkins.md) | CB | 4 | 16 |
@@ -105,17 +107,19 @@ NFC West · Players whose latest game on record was with the St. Louis Rams. G c
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 4 | [Greg Zuerlein](greg_zuerlein.md) | K | 4 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 6 | [Johnny Hekker](johnny_hekker.md) | P | 4 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 44 | [Jake McQuaide](jake_mcquaide.md) | LS | 4 | 16 |
+
+<!-- player-index -->

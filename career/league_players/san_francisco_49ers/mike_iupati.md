@@ -1,16 +1,24 @@
 # Mike Iupati
 
-![Mike Iupati career card](assets/mike_iupati.svg)
+**San Francisco 49ers · Guard · No. 77 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 331 lb · Born May 12, 1987 · Idaho · Drafted in 2010, first round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![Mike Iupati](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Iupati_at_49ers_training_camp_2010-08-09_3.JPG?width=500)
+
+*Photo: BrokenSphere, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Mike_Iupati_at_49ers_training_camp_2010-08-09_3.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 26 | 77 | 16 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | San Francisco 49ers | 27 | 77 | 5 | 5 | 324 | 0 | 23 | 0 | 0 | 0 | 0 | 64.8 |
-| **Career** |  |  |  | 21 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 27 | 77 | 5 | 5 | 324 | 0 | 23 |
+| 2013 | San Francisco | 26 | 77 | 16 | N/A | N/A | 5 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by San Francisco in the first round |
+
+<!-- player-page -->

@@ -1,15 +1,22 @@
 # Derek Cox
 
-![Derek Cox career card](assets/derek_cox.svg)
+**San Diego Chargers · Cornerback · Age 27 · Last game December 29, 2013**
 
-## Career stats
+6' 1", 195 lb · Born September 22, 1986 · William & Mary · Drafted in 2009, third round, by Jacksonville
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Diego Chargers | 26 | 22 | 16 | 72 | 3 | 9 | 24 | 1 | 0 | 2 | 2 | 4.5 | 0 |
-| **Career** |  |  |  | 16 | 72 | 3 | 9 | 24 | 1 | 0 | 2 | 2 | 4.5 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | San Diego | 26 | 22 | 16 | 72 | 49 | 23 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | San Diego | 26 | 22 | 3 | 24 | 9 | 2 | 2 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,13 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All San Diego Chargers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Jacksonville in the third round |
+| March 12, 2013 | Contract with Jacksonville expired; left as a free agent |
+
+<!-- player-page -->

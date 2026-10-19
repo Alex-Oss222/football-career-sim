@@ -1,16 +1,29 @@
 # Antone Smith
 
-![Antone Smith career card](assets/antone_smith.svg)
+**Atlanta Falcons · Running back · No. 35 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 192 lb · Born September 17, 1985 · Florida State
+
+As of October 5, 2014, after Week 5.
+
+![Antone Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Antone_Smith_2014.jpg?width=500)
+
+*Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Antone_Smith_2014.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 27 | 35 | 16 | 25 | 92 | 3.7 | 0 | 5.8 | 1 | 12 | 0 | 26 | 1 |
-| 2014 | Atlanta Falcons | 28 | 35 | 5 | 1 | 10 | 10.0 | 0 | 2.0 | 0 | 0 | 0 | 1 | 0 |
-| **Career** |  |  |  | 21 | 26 | 102 | 3.9 | 0 | 4.9 | 1 | 12 | 0 | 27 | 1 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 28 | 35 | 5 | 1 | 10 | 10.0 | 0 | 10 | 2.0 |
+| 2013 | Atlanta | 27 | 35 | 16 | 25 | 92 | 3.7 | 0 | 11 | 5.8 |
+| Career |  |  |  | 21 | 26 | 102 | 3.9 | 0 | 11 | 4.9 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 28 | 35 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2013 | Atlanta | 27 | 35 | 2 | 1 | 12 | 12.0 | 0 | 1 | 1 |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+<!-- player-page -->

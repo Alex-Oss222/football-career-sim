@@ -1,15 +1,22 @@
 # Armanti Edwards
 
-![Armanti Edwards career card](assets/armanti_edwards.svg)
+**Carolina Panthers · Wide receiver · Age 25 · Last game December 29, 2013**
 
-## Career stats
+5' 11", 190 lb · Born March 8, 1988 · Appalachian State · Drafted in 2010, third round, by Carolina
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 25 | N/A | 16 | 21 | 13 | 209 | 16.1 | 1 | 13.1 | 61.9 | 89 | 0 | 0 |
-| **Career** |  |  |  | 16 | 21 | 13 | 209 | 16.1 | 1 | 13.1 | 61.9 | 89 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Carolina | 25 | N/A | 16 | 21 | 13 | 209 | 16.1 | 1 | 89 | 13.1 | 61.9 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Carolina | 25 | N/A | 1 | 20 | 20.0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Carolina Panthers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Carolina in the third round |
+
+<!-- player-page -->

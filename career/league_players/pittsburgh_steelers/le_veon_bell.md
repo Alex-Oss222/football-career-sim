@@ -1,23 +1,39 @@
 # Le'Veon Bell
 
-![Le'Veon Bell career card](assets/le_veon_bell.svg)
+**Pittsburgh Steelers · Running back · No. 26 · Age 22 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 244 lb · Born February 18, 1992 · Michigan State
+
+As of October 5, 2014, after Week 5.
+
+![Le'Veon Bell](https://commons.wikimedia.org/wiki/Special:FilePath/LeVeon_Bell_26_practicing_2013.jpg?width=500)
+
+*Photo: I, the copyright holder of this work, hereby publish it under the following license:, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:LeVeon_Bell_26_practicing_2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 21 | 26 | 14 | 0 | 0 | N/A | 0 | 0.0 | 1 | 8 | 0 | 1 | 0 |
-| 2014 | Pittsburgh Steelers | 22 | 26 | 5 | 101 | 696 | 6.9 | 9 | 139.2 | 18 | 247 | 2 | 119 | 1 |
-| **Career** |  |  |  | 19 | 101 | 696 | 6.9 | 9 | 36.6 | 19 | 255 | 2 | 120 | 1 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 22 | 26 | 5 | 101 | 696 | 6.9 | 9 | 93 | 139.2 |
+| 2013 | Pittsburgh | 21 | 26 | 14 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+| Career |  |  |  | 19 | 101 | 696 | 6.9 | 9 | 93 | 36.6 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 22 | 26 | 22 | 18 | 247 | 13.7 | 2 | 1 | 1 |
+| 2013 | Pittsburgh | 21 | 26 | 1 | 1 | 8 | 8.0 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 21 | 26 | 1 | 0 | 0 | N/A | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 |
-| **Career** |  |  |  | 1 | 0 | 0 | N/A | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 21 | 26 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 21 | 26 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ## Awards
 
@@ -25,6 +41,8 @@
 - AFC Offensive Player of the Week (2014, Week 3)
 - AFC Offensive Player of the Month (2014, September)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).
+None on record.
+
+<!-- player-page -->

@@ -1,15 +1,22 @@
 # Jeff Janis
 
-![Jeff Janis career card](assets/jeff_janis.svg)
+**Green Bay Packers · Wide receiver · No. 83 · Age 23 · Last game October 2, 2014**
 
-## Career stats
+6' 3", 219 lb · Born June 24, 1991 · Saginaw Valley State
+
+As of October 2, 2014, after Week 5.
+
+![Jeff Janis](https://commons.wikimedia.org/wiki/Special:FilePath/Jeff_Janis_in_2014.jpg?width=500)
+
+*Photo: Kyle Engmann, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jeff_Janis_in_2014.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Green Bay Packers | 23 | 83 | 5 | 3 | 1 | 7 | 7.0 | 0 | 1.4 | 33.3 | 7 | 0 | 0 |
-| **Career** |  |  |  | 5 | 3 | 1 | 7 | 7.0 | 0 | 1.4 | 33.3 | 7 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 23 | 83 | 5 | 3 | 1 | 7 | 7.0 | 0 | 7 | 1.4 | 33.3 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+<!-- player-page -->

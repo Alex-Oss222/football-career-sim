@@ -1,16 +1,24 @@
 # Bear Pascoe
 
-![Bear Pascoe career card](assets/bear_pascoe.svg)
+**Atlanta Falcons · Tight end · No. 86 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 265 lb · Born February 23, 1986 · Fresno State · Drafted in 2009, sixth round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![Bear Pascoe](https://commons.wikimedia.org/wiki/Special:FilePath/Bear_Pascoe_2014.jpg?width=500)
+
+*Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Bear_Pascoe_2014.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Giants | 27 | 86 | 16 | 19 | 12 | 158 | 13.2 | 0 | 9.9 | 63.2 | 28 | 0 | 0 |
-| 2014 | Atlanta Falcons | 28 | 86 | 5 | 7 | 3 | 32 | 10.7 | 0 | 6.4 | 42.9 | 18 | 0 | 0 |
-| **Career** |  |  |  | 21 | 26 | 15 | 190 | 12.7 | 0 | 9.0 | 57.7 | 28 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 28 | 86 | 5 | 7 | 3 | 32 | 10.7 | 0 | 18 | 6.4 | 42.9 |
+| 2013 | N.Y. Giants | 27 | 86 | 16 | 19 | 12 | 158 | 13.2 | 0 | 28 | 9.9 | 63.2 |
+| Career |  |  |  | 21 | 26 | 15 | 190 | 12.7 | 0 | 28 | 9.0 | 57.7 |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by San Francisco in the sixth round |
+
+<!-- player-page -->

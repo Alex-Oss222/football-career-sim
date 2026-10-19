@@ -1,16 +1,29 @@
 # William Moore
 
-![William Moore career card](assets/william_moore.svg)
+**Atlanta Falcons · Safety · No. 25 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 221 lb · Born May 18, 1985 · Missouri · Drafted in 2009, second round, by Atlanta
+
+As of October 5, 2014, after Week 5.
+
+![William Moore](https://commons.wikimedia.org/wiki/Special:FilePath/Willie_Moore.jpg?width=500)
+
+*Photo: CMJMEM, Public domain ([source](https://commons.wikimedia.org/wiki/File:Willie_Moore.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 28 | 25 | 16 | 94 | 1 | 8 | 20 | 2 | 1 | 0 | 0 | 5.9 | 0 |
-| 2014 | Atlanta Falcons | 29 | 25 | 5 | 23 | 0 | 2 | 0 | 1 | 1 | 1 | 1 | 4.6 | 0 |
-| **Career** |  |  |  | 21 | 117 | 1 | 10 | 20 | 3 | 2 | 1 | 1 | 5.6 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 29 | 25 | 5 | 23 | 16 | 7 | 1 | 1 | 2 |
+| 2013 | Atlanta | 28 | 25 | 16 | 94 | 69 | 25 | 2 | 1 | 1 |
+| Career |  |  |  | 21 | 117 | 85 | 32 | 3 | 2 | 3 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 29 | 25 | 0 | 0 | 2 | 1 | 1 | 0 |
+| 2013 | Atlanta | 28 | 25 | 1 | 20 | 8 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Atlanta in the second round |
+
+<!-- player-page -->

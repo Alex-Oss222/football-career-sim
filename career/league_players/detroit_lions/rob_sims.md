@@ -1,16 +1,24 @@
 # Rob Sims
 
-![Rob Sims career card](assets/rob_sims.svg)
+**Detroit Lions · Guard · No. 67 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 312 lb · Born December 6, 1983 · Ohio State · Drafted in 2006, fourth round, by Seattle
+
+As of October 5, 2014, after Week 5.
+
+![Rob Sims](https://commons.wikimedia.org/wiki/Special:FilePath/Rob_Sims.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Rob_Sims.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Detroit Lions | 29 | 67 | 16 | N/A | N/A | 7 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Detroit Lions | 30 | 67 | 5 | 5 | 334 | 1 | 24 | 0 | 0 | 0 | 0 | 66.8 |
-| **Career** |  |  |  | 21 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 30 | 67 | 5 | 5 | 334 | 1 | 24 |
+| 2013 | Detroit | 29 | 67 | 16 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Seattle in the fourth round |
+
+<!-- player-page -->

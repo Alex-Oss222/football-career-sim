@@ -1,28 +1,48 @@
 # Michael Griffin
 
-![Michael Griffin career card](assets/michael_griffin.svg)
+**Tennessee Titans · Free safety · No. 33 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 215 lb · Born January 4, 1985 · Texas · Drafted in 2007, first round, by Tennessee
+
+As of October 5, 2014, after Week 5.
+
+![Michael Griffin](https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Griffin_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Michael_Griffin_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 28 | 33 | 16 | 48 | 0 | 5 | 0 | 2 | 2 | 1 | 1 | 3.0 | 0 |
-| 2014 | Tennessee Titans | 29 | 33 | 5 | 17 | 0 | 5 | 0 | 0 | 0 | 1 | 1 | 3.4 | 0 |
-| **Career** |  |  |  | 21 | 65 | 0 | 10 | 0 | 2 | 2 | 2 | 2 | 3.1 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 29 | 33 | 5 | 17 | 13 | 4 | 0 | 0 | 0 |
+| 2013 | Tennessee | 28 | 33 | 16 | 48 | 29 | 19 | 2 | 2 | 2 |
+| Career |  |  |  | 21 | 65 | 42 | 23 | 2 | 2 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 29 | 33 | 0 | 0 | 5 | 1 | 1 | 0 |
+| 2013 | Tennessee | 28 | 33 | 0 | 0 | 5 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 28 | 33 | 2 | 8 | 0 | 2 | 0 | 1 | 0 | 0 | 0 | 4.0 | 0 |
-| **Career** |  |  |  | 2 | 8 | 0 | 2 | 0 | 1 | 0 | 0 | 0 | 4.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 28 | 33 | 2 | 8 | 5 | 3 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 28 | 33 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Tennessee in the first round |
+
+<!-- player-page -->

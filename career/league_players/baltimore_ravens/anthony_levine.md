@@ -1,15 +1,26 @@
 # Anthony Levine
 
-![Anthony Levine career card](assets/anthony_levine.svg)
+**Baltimore Ravens · Strong safety · No. 41 · Age 26 · Last game December 29, 2013**
 
-## Career stats
+5' 11", 203 lb · Born March 27, 1987 · Tennessee State
+
+As of December 29, 2013, after Week 17.
+
+![Anthony Levine](https://commons.wikimedia.org/wiki/Special:FilePath/Anthony_Levine_Ravens_Stadium_Practice_2013.jpg?width=500)
+
+*Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Anthony_Levine_Ravens_Stadium_Practice_2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Baltimore Ravens | 26 | 41 | 15 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.1 | 0 |
-| **Career** |  |  |  | 15 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.1 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Baltimore | 26 | 41 | 15 | 2 | 2 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Baltimore | 26 | 41 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Baltimore Ravens players](README.md).
+<!-- player-page -->

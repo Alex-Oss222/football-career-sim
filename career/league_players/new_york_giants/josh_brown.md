@@ -1,16 +1,29 @@
 # Josh Brown
 
-![Josh Brown career card](assets/josh_brown.svg)
+**New York Giants · Kicker · No. 3 · Age 35 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 202 lb · Born April 29, 1979 · Nebraska · Drafted in 2003, seventh round, by Seattle
+
+As of October 5, 2014, after Week 5.
+
+![Josh Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Brown_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Josh_Brown_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Giants | 34 | 3 | 16 | 34-37 | 91.9 | N/A | 37-37 | 100.0 | 139 | N/A | N/A | N/A | 8.7 |
-| 2014 | New York Giants | 35 | 3 | 5 | 10-11 | 90.9 | 53 | 11-11 | 100.0 | 41 | 0-0 | 2-3 | 8-8 | 8.2 |
-| **Career** |  |  |  | 21 | 44-48 | 91.7 | N/A | 48-48 | 100.0 | 180 | N/A | N/A | N/A | 8.6 |
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 35 | 3 | 5 | 10 | 11 | 90.9 | 53 | 11 | 11 | 100.0 | 41 |
+| 2013 | N.Y. Giants | 34 | 3 | 16 | 34 | 37 | 91.9 | N/A | 37 | 37 | 100.0 | 139 |
+| Career |  |  |  | 21 | 44 | 48 | 91.7 | N/A | 48 | 48 | 100.0 | 180 |
+
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 35 | 3 | 8-8 | 0-0 | 2-3 |
+| 2013 | N.Y. Giants | 34 | 3 | N/A | N/A | N/A |
 
 ### Playoffs
 
@@ -20,6 +33,10 @@ No playoff games on record.
 
 - NFC Special Teams Player of the Week (2014, Week 4)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).
+| Date | Transaction |
+|---|---|
+| 2003 | Drafted by Seattle in the seventh round |
+
+<!-- player-page -->

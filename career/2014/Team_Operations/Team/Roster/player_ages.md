@@ -808,7 +808,7 @@ Jacksonville includes every controlled player, including the practice squad. Oth
 
 | Player | Pos | DOB | Age | Roster scope |
 |---|---|---|---:|---|
-| Kirk Cousins | QB | 1988-08-19 | 26 | Active 53 |
+| Kirk Cousins | QB | 1991-08-19 | 23 | Active 53 |
 | Chad Henne | QB | 1985-07-02 | 29 | Active 53 (re-signed April 4, 2014) |
 | Maurice Jones-Drew | RB | 1985-03-23 | 29 | Active 53 (re-signed March 28, 2014) |
 | C.J. Anderson | RB | 1991-02-10 | 23 | Active 53 |

@@ -1,15 +1,26 @@
 # Bryan Braman
 
-![Bryan Braman career card](assets/bryan_braman.svg)
+**Houston Texans · Linebacker · Age 26 · Last game December 29, 2013**
 
-## Career stats
+6' 5", 241 lb · Born May 4, 1987 · West Texas State; Idaho; Long Beach City College
+
+As of December 29, 2013, after Week 17.
+
+![Bryan Braman](https://commons.wikimedia.org/wiki/Special:FilePath/Bryan_Braman.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Bryan_Braman.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Houston Texans | 26 | 50 | 16 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 2 |
-| **Career** |  |  |  | 16 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 2 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Houston | 26 | 50 | 16 | 4 | 2 | 2 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Houston | 26 | 50 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,10 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Schools listed: West Texas State; Idaho; Long Beach City College.
-
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Houston Texans players](README.md).
+<!-- player-page -->

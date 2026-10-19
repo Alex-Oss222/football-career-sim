@@ -1,11 +1,13 @@
 # Minnesota Vikings players
 
-NFC North · Players whose latest game on record was with the Minnesota Vikings. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+NFC North. The players whose latest game on record was with the Minnesota Vikings. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 7 | [Christian Ponder](christian_ponder.md) | QB | 5 | 16 |
 | 16 | [Matt Cassel](matt_cassel.md) | QB | 5 | 16 |
 | N/A | [McLeod Bethel-Thompson](mcleod_bethel_thompson.md) | QB | 0 | 16 |
@@ -14,7 +16,7 @@ NFC North · Players whose latest game on record was with the Minnesota Vikings.
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 28 | [Adrian Peterson](adrian_peterson.md) | RB | 4 | 16 |
 | 31 | [Jerick McKinnon](jerick_mckinnon.md) | RB | 5 | 0 |
 | 42 | [Jerome Felton](jerome_felton.md) | FB | 5 | 0 |
@@ -26,7 +28,7 @@ NFC North · Players whose latest game on record was with the Minnesota Vikings.
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 12 | [Charles Johnson](charles_johnson.md) | WR | 1 | 0 |
 | 84 | [Cordarrelle Patterson](cordarrelle_patterson.md) | WR | 3 | 16 |
 | 15 | [Greg Jennings](greg_jennings.md) | WR | 5 | 16 |
@@ -37,7 +39,7 @@ NFC North · Players whose latest game on record was with the Minnesota Vikings.
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 82 | [Kyle Rudolph](kyle_rudolph.md) | TE | 5 | 16 |
 | 87 | [MarQueis Gray](marqueis_gray.md) | TE | 5 | 16 |
 | 85 | [Rhett Ellison](rhett_ellison.md) | TE | 5 | 16 |
@@ -45,7 +47,7 @@ NFC North · Players whose latest game on record was with the Minnesota Vikings.
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 63 | [Brandon Fusco](brandon_fusco.md) | G | 5 | 16 |
 | 74 | [Charlie Johnson](charlie_johnson.md) | G | 5 | 16 |
 | 66 | [David Yankey](david_yankey.md) | G | 5 | 0 |
@@ -60,7 +62,7 @@ NFC North · Players whose latest game on record was with the Minnesota Vikings.
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 96 | [Brian Robison](brian_robison.md) | DE | 5 | 16 |
 | N/A | [Chase Baker](chase_baker.md) | NT | 0 | 2 |
 | 99 | [Corey Wootton](corey_wootton.md) | DE | 4 | 16 |
@@ -75,7 +77,7 @@ NFC North · Players whose latest game on record was with the Minnesota Vikings.
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 55 | [Anthony Barr](anthony_barr.md) | OLB | 5 | 0 |
 | 57 | [Audie Cole](audie_cole.md) | MLB | 5 | 13 |
 | 58 | [Brandon Watts](brandon_watts.md) | OLB | 3 | 0 |
@@ -91,7 +93,7 @@ NFC North · Players whose latest game on record was with the Minnesota Vikings.
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [A.J. Orange](a_j_orange.md) | CB | 0 | 16 |
 | 34 | [Andrew Sendejo](andrew_sendejo.md) | FS | 5 | 16 |
 | 32 | [Antone Exum](antone_exum.md) | SS | 5 | 0 |
@@ -108,17 +110,19 @@ NFC North · Players whose latest game on record was with the Minnesota Vikings.
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 3 | [Blair Walsh](blair_walsh.md) | K | 5 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 18 | [Jeff Locke](jeff_locke.md) | P | 5 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 46 | [Cullen Loeffler](cullen_loeffler.md) | LS | 5 | 16 |
+
+<!-- player-index -->

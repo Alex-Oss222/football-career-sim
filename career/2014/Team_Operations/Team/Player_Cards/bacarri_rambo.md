@@ -1,165 +1,90 @@
-# Bacarri Rambo — 2014 Player Profile
+# Bacarri Rambo
 
-<!-- player-card:begin -->
-![Bacarri Rambo career card](../../../../league_players/jacksonville_jaguars/assets/bacarri_rambo.svg)
+**Jacksonville Jaguars · Safety · No. 24 · Age 24 · Active roster**
 
-[Career statistics](../../../../league_players/jacksonville_jaguars/bacarri_rambo.md)
-<!-- player-card:end -->
+6' 0", 211 lb · Born June 27, 1990 · Georgia · Drafted in 2013, No. 169 overall, by Jacksonville
 
-<!-- photo -->
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bacarri_Rambo.JPG?width=500" alt="Bacarri Rambo" width="160">
+As of October 5, 2014, after Week 5.
+
+![Bacarri Rambo](https://commons.wikimedia.org/wiki/Special:FilePath/Bacarri_Rambo.JPG?width=500)
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Bacarri_Rambo.JPG)).*
-<!-- /photo -->
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** March 31, 2014 starting evaluation  
-**Age:** 23  
-**Position:** S  
-**NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** A developing safety with useful ball instincts and improving exchange communication. I see the reads and communication becoming usable, while live tackling and play-action discipline need a firmer foundation.  
-**Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/bacarri_rambo.md)  
+## Staff assessment
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
-
-## Player grades
-
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 5.5 /10 | Staff judgment |
-| Athleticism | 5.5 /10 | Staff judgment |
-| Speed | 5.5 /10 | Staff judgment |
-| Strength / Power | 5.0 /10 | Staff judgment |
-| Agility / Change of direction | 5.5 /10 | Staff judgment |
-| Technique | 4.5 /10 | Staff judgment |
-| Football IQ | 5.0 /10 | Staff judgment |
-| Range | 5.5 /10 | Staff judgment |
-| Speed / change of direction | 5.5 /10 | Staff judgment |
-| Route-combination recognition | 5.0 /10 | Staff judgment |
-| Deep positioning | 5.0 /10 | Staff judgment |
-| Man / slot coverage | 4.5 /10 | Staff judgment |
-| Ball skills | 6.0 /10 | Staff judgment |
-| Tackling | 4.5 /10 | Staff judgment |
-| Run support / angles | 5.0 /10 | Staff judgment |
-| Communication | 6.0 /10 | Staff judgment |
-| Play-action discipline | 4.5 /10 | Staff judgment |
-
-Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Range | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Speed / change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Route-combination recognition | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Deep positioning | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Man / slot coverage | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Ball skills | At NFL starter standard | Below elite standard | Above low-end standard |
-| Tackling | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Run support / angles | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Communication | At NFL starter standard | Below elite standard | Above low-end standard |
-| Play-action discipline | Below NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards, not measured 2014 league ranks.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 5.5/10 |
+| Athleticism | 5.5/10 |
+| Speed | 5.5/10 |
+| Strength and power | 5.0/10 |
+| Agility and change of direction | 5.5/10 |
+| Technique | 4.5/10 |
+| Football IQ | 5.0/10 |
+| Range | 5.5/10 |
+| Speed and change of direction | 5.5/10 |
+| Route-combination recognition | 5.0/10 |
+| Deep positioning | 5.0/10 |
+| Man and slot coverage | 4.5/10 |
+| Ball skills | 6.0/10 |
+| Tackling | 4.5/10 |
+| Run support and angles | 5.0/10 |
+| Communication | 6.0/10 |
+| Play-action discipline | 4.5/10 |
 
 A developing safety with useful ball instincts and improving exchange communication. I see the reads and communication becoming usable, while live tackling and play-action discipline need a firmer foundation.
 
-Source: [2013 profile](../../../../2013/player_profiles/bacarri_rambo.md) and its recorded practice/game sources.
+*Staff view, March 31, 2014.*
 
-## Year-over-year change
+## Contract
 
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Player identity and position traits | 2013 baseline | Starting 2014 view | Retained | No new individual football evidence establishing change |
+Four-year contract through 2016.
 
-## What supports this assessment
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $495,000 | $527,205 |
+| 2015 | $585,000 | $617,205 |
+| 2016 | $675,000 | $707,205 |
 
-A developing safety with useful ball instincts and improving exchange communication. I see the reads and communication becoming usable, while live tackling and play-action discipline need a firmer foundation.
+## Statistics
 
-[2013 profile](../../../../2013/player_profiles/bacarri_rambo.md) and its recorded practice/game sources.
+### Regular season
 
-## Historical comparison
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 24 | 24 | 5 | 20 | 13 | 7 | 1 | 0 | 0 |
+| 2013 | Jacksonville | 23 | N/A | 16 | 51 | 30 | 21 | 3 | 0 | 0 |
+| With Jacksonville |  |  |  | 21 | 71 | 43 | 28 | 4 | 0 | 0 |
 
-The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 24 | 24 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2013 | Jacksonville | 23 | N/A | 0 | 0 | 3 | 0 | 0 | N/A |
 
-## Play style
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 24 | 24 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Jacksonville | 23 | N/A | 3 | 71 | 23.7 | 2 | 12 | 6.0 |
 
-A developing safety with useful ball instincts and improving exchange communication. I see the reads and communication becoming usable, while live tackling and play-action discipline need a firmer foundation.
+### Playoffs
 
-## Best traits
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 23 | N/A | 2 | 4 | 3 | 1 | 0 | 0 | 0 |
 
-- Ball skills: 6.0 /10.
-- Communication: 6.0 /10.
-- Range: 5.5 /10.
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 23 | N/A | 1 | 18 | 2 | 0 | 0 | N/A |
 
-## Main weaknesses
+## Awards
 
-- Man / slot coverage: 4.5 /10.
-- Tackling: 4.5 /10.
-- Play-action discipline: 4.5 /10.
+None.
 
-## Evidence and uncertainty
+## Transactions
 
-- **Primary evidence:** [2013 profile](../../../../2013/player_profiles/bacarri_rambo.md) and its recorded practice/game sources.
-- **Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
+| Date | Transaction |
+|---|---|
+| April 27, 2013 | Drafted by Jacksonville with the No. 169 pick |
+| May 2, 2013 | Signed a four-year rookie contract with Jacksonville |
 
-**One-line description:** A developing safety with useful ball instincts and improving exchange communication. I see the reads and communication becoming usable, while live tackling and play-action discipline need a firmer foundation.
-
-## 2013 season production
-
-| Statistic | 2013 regular season | 2013 playoffs |
-| --- | ---: | ---: |
-| G | 16 | 2 |
-| TOT | 51 | 4 |
-| SOLO | 30 | 3 |
-| AST | 21 | 1 |
-| TFL | 3 | 0 |
-| INT | 0 | 1 |
-| INT YDS | 0 | 18 |
-| PD | 3 | 2 |
-| SCK | 0 | 0 |
-| PRESS | 0 | 0 |
-| FF | 0 | 0 |
-| FR | 0 | 0 |
-| Returns: KR | 3 | Unrecorded |
-| Returns: KR YDS | 71 | Unrecorded |
-| Returns: KR AVG | 23.7 | Unrecorded |
-| Returns: PR | 2 | Unrecorded |
-| Returns: PR YDS | 12 | Unrecorded |
-| Returns: PR AVG | 6.0 | Unrecorded |
-
-Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR | DEF SNAPS | QB HITS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 24 | 24 | Through Week 5 | 5 | 20 | 13 | 7 | 1 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 345 | Unrecorded | 0 | 0 | — | 0 | 0 | — | 0 |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR | DEF SNAPS | QB HITS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 24 | 24 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

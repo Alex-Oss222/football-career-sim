@@ -1,11 +1,13 @@
 # Jacksonville Jaguars players
 
-AFC South · Players whose latest game on record was with the Jacksonville Jaguars. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+AFC South. The players whose latest game on record was with the Jacksonville Jaguars. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 7 | [Chad Henne](chad_henne.md) | QB | 5 | 16 |
 | N/A | [John Parker Wilson](john_parker_wilson.md) | QB | 0 | 4 |
 | 8 | [Kirk Cousins](kirk_cousins.md) | QB | 5 | 16 |
@@ -13,7 +15,7 @@ AFC South · Players whose latest game on record was with the Jacksonville Jagua
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 22 | [C.J. Anderson](c_j_anderson.md) | RB | 5 | 16 |
 | 41 | [Jonathan Grimes](jonathan_grimes.md) | RB | 3 | 16 |
 | N/A | [Maurice Jones-Drew](maurice_jones_drew.md) | RB | 5 | 16 |
@@ -22,7 +24,7 @@ AFC South · Players whose latest game on record was with the Jacksonville Jagua
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Adam Thielen](adam_thielen.md) | WR | 5 | 16 |
 | 88 | [Allen Hurns](allen_hurns.md) | WR | 5 | 0 |
 | 16 | [Andrew Hawkins](andrew_hawkins.md) | WR | 5 | 0 |
@@ -34,7 +36,7 @@ AFC South · Players whose latest game on record was with the Jacksonville Jagua
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Allen Reisner](allen_reisner.md) | TE | 0 | 16 |
 | N/A | [Gator Hoskins](gator_hoskins.md) | TE | 1 | 0 |
 | 89 | [Marcedes Lewis](marcedes_lewis.md) | TE | 5 | 16 |
@@ -44,7 +46,7 @@ AFC South · Players whose latest game on record was with the Jacksonville Jagua
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 68 | [Andrew Norwell](andrew_norwell.md) | G | 5 | 0 |
 | N/A | [Austin Pasztor](austin_pasztor.md) | OG | 0 | 8 |
 | N/A | [Brad Meester](brad_meester.md) | C | 0 | 15 |
@@ -63,7 +65,7 @@ AFC South · Players whose latest game on record was with the Jacksonville Jagua
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Aaron Donald](aaron_donald.md) | DT | 5 | 0 |
 | 90 | [Andre Branch](andre_branch.md) | DE | 5 | 16 |
 | N/A | [C.J. Mosley](c_j_mosley.md) | DT | 5 | 7 |
@@ -79,7 +81,7 @@ AFC South · Players whose latest game on record was with the Jacksonville Jagua
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 59 | [Christian Jones](christian_jones.md) | LB | 5 | 0 |
 | N/A | [Daryl Smith](daryl_smith.md) | LB | 5 | 16 |
 | 49 | [Julian Stanford](julian_stanford.md) | LB | 5 | 16 |
@@ -92,7 +94,7 @@ AFC South · Players whose latest game on record was with the Jacksonville Jagua
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [A.J. Bouye](a_j_bouye.md) | CB | 5 | 15 |
 | N/A | [Adrian Phillips](adrian_phillips.md) | S | 4 | 0 |
 | 23 | [Alan Ball](alan_ball.md) | CB | 2 | 9 |
@@ -110,17 +112,19 @@ AFC South · Players whose latest game on record was with the Jacksonville Jagua
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 10 | [Josh Scobee](josh_scobee.md) | K | 5 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 19 | [Bryan Anger](bryan_anger.md) | P | 5 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Casey Kreiter](casey_kreiter.md) | LS | 5 | 0 |
+
+<!-- player-index -->

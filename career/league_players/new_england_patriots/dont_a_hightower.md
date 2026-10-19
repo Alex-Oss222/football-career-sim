@@ -1,16 +1,29 @@
 # Dont'a Hightower
 
-![Dont'a Hightower career card](assets/dont_a_hightower.svg)
+**New England Patriots · Linebacker · No. 54 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 270 lb · Born March 12, 1990 · Alabama · Drafted in 2012, first round, by New England
+
+As of October 5, 2014, after Week 5.
+
+![Dont'a Hightower](https://commons.wikimedia.org/wiki/Special:FilePath/Dont%27a_Hightower_Patriots.jpg?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Dont%27a_Hightower_Patriots.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 23 | 54 | 16 | 60 | 0 | 0 | 0 | 3 | 0 | 0 | 1 | 3.8 | 36 |
-| 2014 | New England Patriots | 24 | 54 | 4 | 18 | 0 | 3 | 2 | 5 | 0 | 0 | 1 | 4.5 | 15 |
-| **Career** |  |  |  | 20 | 78 | 0 | 3 | 2 | 8 | 0 | 0 | 2 | 3.9 | 51 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 24 | 54 | 4 | 18 | 15 | 3 | 3 | 0 | 1 |
+| 2013 | New England | 23 | 54 | 16 | 60 | 36 | 24 | 0 | 0 | 1 |
+| Career |  |  |  | 20 | 78 | 51 | 27 | 3 | 0 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 24 | 54 | 2 | 3 | 5 | 0 | 0 | 0 |
+| 2013 | New England | 23 | 54 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New England Patriots players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by New England in the first round |
+
+<!-- player-page -->

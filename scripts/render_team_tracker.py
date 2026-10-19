@@ -23,7 +23,7 @@ if str(ROOT) not in sys.path:
 
 from runtime.stat_tables import avg, g, passer_rating, pct, thrown, time_text  # noqa: E402
 from runtime.seasons import SeasonPaths
-from runtime.season_layout import rebase_markdown
+from runtime.season_layout import logical_path, rebase_markdown
 
 ROUNDS = {18: "Wild Card", 19: "Divisional", 20: "Conference Championship", 21: "Super Bowl"}
 COACH = {"Jacksonville Jaguars": "Alex Stone"}
@@ -351,7 +351,7 @@ def render(root, year, team):
         out["games/" + slug(game)] = game_page(team, year, game, list(regular))
         if game["kind"] == "regular":
             regular.append(game)
-    return {name: rebase_markdown(text, f'career/{year}/stats/team_tracker/{name}',
+    return {name: rebase_markdown(text, logical_path(year, f'stats/team_tracker/{name}'),
                                   (tracker_dir(root, year) / name).relative_to(root))
             for name, text in out.items()}
 

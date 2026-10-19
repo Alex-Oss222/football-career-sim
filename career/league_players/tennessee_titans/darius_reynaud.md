@@ -1,27 +1,47 @@
 # Darius Reynaud
 
-![Darius Reynaud career card](assets/darius_reynaud.svg)
+**Tennessee Titans · Running back · Age 29 · Last game January 19, 2014**
 
-## Career stats
+5' 9", 208 lb · Born December 29, 1984 · West Virginia
+
+As of January 19, 2014, after the Conference Championships.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 28 | N/A | 16 | 16 | 42 | 2.6 | 2 | 2.6 | 3 | 49 | 0 | 19 | 0 |
-| **Career** |  |  |  | 16 | 16 | 42 | 2.6 | 2 | 2.6 | 3 | 49 | 0 | 19 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 28 | N/A | 16 | 16 | 42 | 2.6 | 2 | 15 | 2.6 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 28 | N/A | 3 | 3 | 49 | 16.3 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 28 | N/A | 46 | 982 | 21.3 | 35 | 385 | 11.0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 28 | N/A | 2 | 1 | 4 | 4.0 | 0 | 2.0 | 1 | 55 | 0 | 2 | 0 |
-| **Career** |  |  |  | 2 | 1 | 4 | 4.0 | 0 | 2.0 | 1 | 55 | 0 | 2 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 28 | N/A | 2 | 1 | 4 | 4.0 | 0 | 4 | 2.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 28 | N/A | 1 | 1 | 55 | 55.0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 28 | N/A | 3 | 75 | 25.0 | 6 | 24 | 4.0 |
 
 ## Awards
 
 - AFC Special Teams Player of the Week (2013, Week 16)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 19, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Tennessee Titans players](README.md).
+None on record.
+
+<!-- player-page -->

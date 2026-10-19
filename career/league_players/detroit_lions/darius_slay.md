@@ -1,16 +1,29 @@
 # Darius Slay
 
-![Darius Slay career card](assets/darius_slay.svg)
+**Detroit Lions · Cornerback · No. 23 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 192 lb · Born January 1, 1991 · Mississippi State; Itawamba JC
+
+As of October 5, 2014, after Week 5.
+
+![Darius Slay](https://commons.wikimedia.org/wiki/Special:FilePath/Darius_Slay_On_January_1_2017_%28cropped%29.jpg?width=500)
+
+*Photo: Kevind810, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Darius_Slay_On_January_1_2017_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Detroit Lions | 22 | 30 | 16 | 41 | 1 | 8 | 14 | 2 | 0 | 0 | 0 | 2.6 | 0 |
-| 2014 | Detroit Lions | 23 | 23 | 5 | 33 | 1 | 3 | 1 | 1 | 0 | 0 | 0 | 6.6 | 0 |
-| **Career** |  |  |  | 21 | 74 | 2 | 11 | 15 | 3 | 0 | 0 | 0 | 3.5 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 23 | 23 | 5 | 33 | 21 | 12 | 1 | 0 | 0 |
+| 2013 | Detroit | 22 | 30 | 16 | 41 | 27 | 14 | 2 | 0 | 1 |
+| Career |  |  |  | 21 | 74 | 48 | 26 | 3 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 23 | 23 | 1 | 1 | 3 | 0 | 0 | 0 |
+| 2013 | Detroit | 22 | 30 | 1 | 14 | 8 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).
+<!-- player-page -->

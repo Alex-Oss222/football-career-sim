@@ -1,16 +1,24 @@
 # Shane Lechler
 
-![Shane Lechler career card](assets/shane_lechler.svg)
+**Houston Texans · Punter · No. 9 · Age 38 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 237 lb · Born August 7, 1976 · Texas A&M · Drafted in 2000, fifth round, by Oakland
+
+As of October 5, 2014, after Week 5.
+
+![Shane Lechler](https://commons.wikimedia.org/wiki/Special:FilePath/Shane_Lechler_2016.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Shane_Lechler_2016.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Houston Texans | 37 | 9 | 16 | 82 | 3,796 | 46.3 | 41.1 | 23 | 63 | 2 | 28.0 | 5.1 | 384 |
-| 2014 | Houston Texans | 38 | 9 | 5 | 24 | 944 | 39.3 | 37.0 | 8 | 63 | 2 | 33.3 | 4.8 | 17 |
-| **Career** |  |  |  | 21 | 106 | 4,740 | 44.7 | 40.2 | 31 | 63 | 4 | 29.2 | 5.0 | 401 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Houston | 38 | 9 | 5 | 24 | 944 | 39.3 | 37.0 | 8 | 2 | 63 |
+| 2013 | Houston | 37 | 9 | 16 | 82 | 3,796 | 46.3 | 41.1 | 23 | 2 | 63 |
+| Career |  |  |  | 21 | 106 | 4,740 | 44.7 | 40.2 | 31 | 4 | 63 |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Houston Texans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2000 | Drafted by Oakland in the fifth round |
+
+<!-- player-page -->

@@ -1,23 +1,39 @@
 # Jamaal Charles
 
-![Jamaal Charles career card](assets/jamaal_charles.svg)
+**Kansas City Chiefs · Running back · No. 25 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 199 lb · Born December 27, 1986 · Texas · Drafted in 2008, third round, by Kansas City
+
+As of October 5, 2014, after Week 5.
+
+![Jamaal Charles](https://commons.wikimedia.org/wiki/Special:FilePath/Jamaal_Charles.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jamaal_Charles.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 26 | 25 | 16 | 282 | 1,556 | 5.5 | 13 | 97.2 | 46 | 658 | 4 | 328 | 4 |
-| 2014 | Kansas City Chiefs | 27 | 25 | 5 | 79 | 336 | 4.3 | 4 | 67.2 | 13 | 108 | 1 | 92 | 0 |
-| **Career** |  |  |  | 21 | 361 | 1,892 | 5.2 | 17 | 90.1 | 59 | 766 | 5 | 420 | 4 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 27 | 25 | 5 | 79 | 336 | 4.3 | 4 | 25 | 67.2 |
+| 2013 | Kansas City | 26 | 25 | 16 | 282 | 1,556 | 5.5 | 13 | 80 | 97.2 |
+| Career |  |  |  | 21 | 361 | 1,892 | 5.2 | 17 | 80 | 90.1 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 27 | 25 | 20 | 13 | 108 | 8.3 | 1 | 0 | 0 |
+| 2013 | Kansas City | 26 | 25 | 68 | 46 | 658 | 14.3 | 4 | 4 | 4 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 26 | 25 | 1 | 13 | 48 | 3.7 | 1 | 48.0 | 2 | 14 | 0 | 15 | 0 |
-| **Career** |  |  |  | 1 | 13 | 48 | 3.7 | 1 | 48.0 | 2 | 14 | 0 | 15 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 26 | 25 | 1 | 13 | 48 | 3.7 | 1 | 25 | 48.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 26 | 25 | 3 | 2 | 14 | 7.0 | 0 | 0 | 0 |
 
 ## Awards
 
@@ -27,6 +43,10 @@
 - AP First-Team All-Pro (2013, RB)
 - Pro Bowl selection (2013, RB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Kansas City in the third round |
+
+<!-- player-page -->

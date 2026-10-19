@@ -1,0 +1,258 @@
+{
+ "schema_version": 1,
+ "name": "Cecil Shorts",
+ "gsis_id": "00-0028052",
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/cecil_shorts.md"
+  },
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-03-31",
+   "date_as_written": "March 31, 2014 starting evaluation",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Starting staff view; exact theoretical personnel grades",
+   "position": "WR",
+   "identity": "A rhythm-route receiver who can uncover on intermediate concepts and add yards after the catch. I see a legitimate starter whose route work is stronger than his contested-catch and blocking profile.",
+   "previous_profile": "[2013 baseline](career/2013/player_profiles/cecil_shorts.md)",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Release vs press",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Route running",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Separation / quickness",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Long speed",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Hands",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Catch radius / contested catches",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Ball tracking / deep receiving",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "YAC / contact balance",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Coverage recognition / adjustments",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Blocking",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Release vs press",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Route running",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Separation / quickness",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Long speed",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Hands",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Catch radius / contested catches",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Ball tracking / deep receiving",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "YAC / contact balance",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Coverage recognition / adjustments",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Blocking",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards, not measured 2014 league ranks.",
+   "read": "A rhythm-route receiver who can uncover on intermediate concepts and add yards after the catch. I see a legitimate starter whose route work is stronger than his contested-catch and blocking profile.",
+   "read_sources": "Source: [2013 profile](career/2013/player_profiles/cecil_shorts.md) and its recorded practice/game sources.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "2013 baseline",
+     "current": "Starting 2014 view",
+     "change": "Retained",
+     "reason": "No new individual football evidence establishing change"
+    }
+   ],
+   "support": "A rhythm-route receiver who can uncover on intermediate concepts and add yards after the catch. I see a legitimate starter whose route work is stronger than his contested-catch and blocking profile.\n\n[2013 profile](career/2013/player_profiles/cecil_shorts.md) and its recorded practice/game sources.",
+   "historical_comparison": "The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.",
+   "play_style": "A rhythm-route receiver who can uncover on intermediate concepts and add yards after the catch. I see a legitimate starter whose route work is stronger than his contested-catch and blocking profile.",
+   "best_traits": [
+    "Route running: 7.0 /10.",
+    "Separation / quickness: 6.5 /10.",
+    "Hands: 6.5 /10."
+   ],
+   "main_weaknesses": [
+    "Blocking: 5.0 /10.",
+    "Catch radius / contested catches: 5.5 /10.",
+    "Release vs press: 6.0 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [2013 profile](career/2013/player_profiles/cecil_shorts.md) and its recorded practice/game sources.",
+    "**Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics."
+   ],
+   "one_line": "A rhythm-route receiver who can uncover on intermediate concepts and add yards after the catch. I see a legitimate starter whose route work is stronger than his contested-catch and blocking profile.",
+   "updates": [],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/cecil_shorts.md at commit 332d70b"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2011",
+   "kind": "signed",
+   "text": "Signed a four-year rookie contract with Jacksonville",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md"
+  },
+  {
+   "date": "2014-03-31",
+   "kind": "traded",
+   "text": "Traded by Jacksonville to Indianapolis, with Justin Blackmon, for 2014 picks No. 82 and No. 194",
+   "source": "career/2014/Team_Operations/Trades/completed_trades/shorts_blackmon_to_indianapolis_2014-03-31.md"
+  }
+ ]
+}

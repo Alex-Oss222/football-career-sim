@@ -1,0 +1,186 @@
+{
+ "schema_version": 1,
+ "name": "Telvin Smith",
+ "gsis_id": "00-0031309",
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-05-11",
+   "date_as_written": "May 11, 2014 starting evaluation, on acquisition (selected No. 129 on May 10, 2014; rookie contract signed May 11)",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Rookie; no NFL standing. Staff view: coverage linebacker and special-teams player first",
+   "position": "LB",
+   "identity": "A lean, fast linebacker who played weak side in 2013 after two platoon seasons inside; range, pursuit and ball skills are his case, and his 218-pound frame is the question in the run game.",
+   "previous_profile": "None; 2014 rookie. The starting view rests on pre-draft public evidence only",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Range / pursuit",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Coverage instincts",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Taking on blocks",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments of the player as he arrives, made from pre-draft public evidence (combine and dated college record described qualitatively, plus pre-draft reports). They grade the current player, not his draft slot, contract or projection, and they use no NFL outcome. Evidence limits are stated below.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Range / pursuit",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Coverage instincts",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Taking on blocks",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards for the position, not measured 2014 league ranks. No NFL snap exists for this player.",
+   "read": "A lean, fast linebacker who played weak side in 2013 after two platoon seasons inside; range, pursuit and ball skills are his case, and his 218-pound frame is the question in the run game.",
+   "read_sources": "Source: [Prospect evidence file](library/2014_prospect_evidence/telvin_smith.md); [combine](library/2014_combine_results.md#telvin-smith-lb-florida-state) (6-3, 218; 4.52 forty, second among linebackers; no bench).",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "None (rookie)",
+     "current": "Starting 2014 view",
+     "change": "New",
+     "reason": "Pre-draft public evidence only; no Jacksonville practice or game evidence yet"
+    }
+   ],
+   "support": "[Prospect evidence file](library/2014_prospect_evidence/telvin_smith.md); [combine](library/2014_combine_results.md#telvin-smith-lb-florida-state) (6-3, 218; 4.52 forty, second among linebackers; no bench).",
+   "historical_comparison": "No comparator is assigned at arrival. The evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.",
+   "play_style": "A lean, fast linebacker who played weak side in 2013 after two platoon seasons inside; range, pursuit and ball skills are his case, and his 218-pound frame is the question in the run game.",
+   "best_traits": [
+    "Speed: 7.5 /10.",
+    "Range / pursuit: 7.5 /10.",
+    "Athleticism: 7.0 /10."
+   ],
+   "main_weaknesses": [
+    "Taking on blocks: 3.5 /10.",
+    "Strength / Power: 4.0 /10.",
+    "Technique: 5.0 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [Prospect evidence file](library/2014_prospect_evidence/telvin_smith.md); [combine](library/2014_combine_results.md#telvin-smith-lb-florida-state) (6-3, 218; 4.52 forty, second among linebackers; no bench).",
+    "**Evaluation basis:** Theoretical staff judgment from pre-draft public evidence; thin evidence identified above.",
+    "**What remains uncertain:** Whether he can hold up against NFL blockers at his weight; the 2013 tackle total is unresolved between sources.",
+    "**What would change the assessment:** Block-shedding evidence in camp; fit discipline in Crennel's base packages.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates."
+   ],
+   "one_line": "A lean, fast linebacker who played weak side in 2013 after two platoon seasons inside; range, pursuit and ball skills are his case, and his 218-pound frame is the question in the run game.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Smith followed the flow on Counter July 30 and left the wrap gap. Bush corrected his read of the puller; he fitted the same misdirection correctly August 1. That is one retained correction, not a closed run-defense assessment.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/telvin_smith.md at commit 332d70b"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2014-05-10",
+   "kind": "drafted",
+   "text": "Drafted by Jacksonville (No. 129, fourth round)",
+   "source": "career/2014/Draft/draftees.md"
+  },
+  {
+   "date": "2014-05-11",
+   "kind": "signed",
+   "text": "Signed a four-year rookie contract with Jacksonville",
+   "source": "career/2014/Draft/draftees.md"
+  }
+ ]
+}

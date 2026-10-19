@@ -1,16 +1,29 @@
 # Ricky Jean Francois
 
-![Ricky Jean Francois career card](assets/ricky_jean_francois.svg)
+**Indianapolis Colts · Defensive end · No. 99 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 297 lb · Born November 23, 1986 · LSU · Drafted in 2009, seventh round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![Ricky Jean Francois](https://commons.wikimedia.org/wiki/Special:FilePath/Ricky_Jean-Francois.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ricky_Jean-Francois.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 26 | 99 | 16 | 47 | 4 | 3 | 0 | 0 | 0 | 0 | 11 | 2.9 | 35 |
-| 2014 | Indianapolis Colts | 27 | 99 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 21 | 47 | 4 | 3 | 0 | 0 | 0 | 0 | 11 | 2.2 | 35 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 27 | 99 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Indianapolis | 26 | 99 | 16 | 47 | 35 | 12 | 3 | 4 | 11 |
+| Career |  |  |  | 21 | 47 | 35 | 12 | 3 | 4 | 11 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 27 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Indianapolis | 26 | 99 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by San Francisco in the seventh round |
+
+<!-- player-page -->

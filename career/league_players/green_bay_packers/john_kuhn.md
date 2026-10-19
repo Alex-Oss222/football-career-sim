@@ -1,16 +1,29 @@
 # John Kuhn
 
-![John Kuhn career card](assets/john_kuhn.svg)
+**Green Bay Packers · Fullback · No. 30 · Age 32 · Last game October 2, 2014**
 
-## Career stats
+6' 0", 250 lb · Born September 9, 1982 · University of Shippensburg
+
+As of October 2, 2014, after Week 5.
+
+![John Kuhn](https://commons.wikimedia.org/wiki/Special:FilePath/John_Kuhn.jpg?width=500)
+
+*Photo: Paul Kehrer, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:John_Kuhn.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Green Bay Packers | 30 | 30 | 10 | 8 | 27 | 3.4 | 0 | 2.7 | 6 | 68 | 0 | 14 | 1 |
-| 2014 | Green Bay Packers | 31 | 30 | 5 | 3 | 27 | 9.0 | 0 | 5.4 | 3 | 62 | 0 | 6 | 0 |
-| **Career** |  |  |  | 15 | 11 | 54 | 4.9 | 0 | 3.6 | 9 | 130 | 0 | 20 | 1 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 31 | 30 | 5 | 3 | 27 | 9.0 | 0 | 12 | 5.4 |
+| 2013 | Green Bay | 30 | 30 | 10 | 8 | 27 | 3.4 | 0 | 11 | 2.7 |
+| Career |  |  |  | 15 | 11 | 54 | 4.9 | 0 | 12 | 3.6 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 31 | 30 | 7 | 3 | 62 | 20.7 | 0 | 0 | 0 |
+| 2013 | Green Bay | 30 | 30 | 8 | 6 | 68 | 11.3 | 0 | 1 | 1 |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+<!-- player-page -->

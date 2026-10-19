@@ -1,27 +1,45 @@
 # Anthony Spencer
 
-![Anthony Spencer career card](assets/anthony_spencer.svg)
+**Dallas Cowboys · Defensive end · No. 93 · Age 29 · Last game January 11, 2014**
 
-## Career stats
+6' 3", 265 lb · Born January 23, 1984 · Purdue · Drafted in 2007, first round, by Dallas
+
+As of January 11, 2014, after the Divisional round.
+
+![Anthony Spencer](https://commons.wikimedia.org/wiki/Special:FilePath/Antspencer.jpg?width=500)
+
+*Photo: Big Cowboy Kev ( talk ), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Antspencer.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 29 | 93 | 15 | 83 | 8 | 4 | 0 | 4 | 1 | 1 | 15 | 5.5 | 59 |
-| **Career** |  |  |  | 15 | 83 | 8 | 4 | 0 | 4 | 1 | 1 | 15 | 5.5 | 59 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 29 | 93 | 15 | 83 | 59 | 24 | 4 | 8 | 15 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 29 | 93 | 0 | 0 | 4 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 29 | 93 | 2 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 4.5 | 6 |
-| **Career** |  |  |  | 2 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 4.5 | 6 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 29 | 93 | 2 | 9 | 6 | 3 | 0 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 29 | 93 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 11, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Dallas in the first round |
+
+<!-- player-page -->

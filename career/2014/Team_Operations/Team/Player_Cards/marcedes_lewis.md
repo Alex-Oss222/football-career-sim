@@ -1,171 +1,74 @@
-# Marcedes Lewis — 2014 Player Profile
+# Marcedes Lewis
 
-<!-- player-card:begin -->
-![Marcedes Lewis career card](../../../../league_players/jacksonville_jaguars/assets/marcedes_lewis.svg)
+**Jacksonville Jaguars · Tight end · No. 89 · Age 30 · Active roster**
 
-[Career statistics](../../../../league_players/jacksonville_jaguars/marcedes_lewis.md)
-<!-- player-card:end -->
+6' 6", 272 lb · Born May 19, 1984 · UCLA · Drafted in 2006, first round, by Jacksonville
 
-<!-- photo -->
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marcedes_Lewis_2014.jpg?width=500" alt="Marcedes Lewis" width="160">
+As of October 5, 2014, after Week 5.
+
+![Marcedes Lewis](https://commons.wikimedia.org/wiki/Special:FilePath/Marcedes_Lewis_2014.jpg?width=500)
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Marcedes_Lewis_2014.jpg)).*
-<!-- /photo -->
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** March 31, 2014 starting evaluation  
-**Age:** 29  
-**Position:** TE  
-**NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** A large, complete attached tight end whose blocking, catch radius and dependable operation anchor the position. I see a strong starter who offers more structure and physical usefulness than sudden separation.  
-**Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/marcedes_lewis.md)  
+## Staff assessment
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
-
-## Player grades
-
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 7.0 /10 | Staff judgment |
-| Athleticism | 5.5 /10 | Staff judgment |
-| Speed | 5.0 /10 | Staff judgment |
-| Strength / Power | 7.5 /10 | Staff judgment |
-| Agility / Change of direction | 5.0 /10 | Staff judgment |
-| Technique | 7.0 /10 | Staff judgment |
-| Football IQ | 6.5 /10 | Staff judgment |
-| Route running / separation | 6.0 /10 | Staff judgment |
-| Hands / catch radius | 7.0 /10 | Staff judgment |
-| Contested catch / ball tracking | 7.0 /10 | Staff judgment |
-| YAC | 5.5 /10 | Staff judgment |
-| Run blocking | 7.5 /10 | Staff judgment |
-| Pass protection / chip | 7.0 /10 | Staff judgment |
-| Alignment versatility | 7.0 /10 | Staff judgment |
-| Speed / athleticism | 5.0 /10 | Staff judgment |
-| Coverage recognition | 6.5 /10 | Staff judgment |
-
-Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Route running / separation | At NFL starter standard | Below elite standard | Above low-end standard |
-| Hands / catch radius | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Contested catch / ball tracking | Above NFL starter standard | Below elite standard | Above low-end standard |
-| YAC | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Run blocking | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Pass protection / chip | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Alignment versatility | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Speed / athleticism | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Coverage recognition | Above NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards, not measured 2014 league ranks.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 7.0/10 |
+| Athleticism | 5.5/10 |
+| Speed | 5.0/10 |
+| Strength and power | 7.5/10 |
+| Agility and change of direction | 5.0/10 |
+| Technique | 7.0/10 |
+| Football IQ | 6.5/10 |
+| Route running and separation | 6.0/10 |
+| Hands and catch radius | 7.0/10 |
+| Contested catch and ball tracking | 7.0/10 |
+| YAC | 5.5/10 |
+| Run blocking | 7.5/10 |
+| Pass protection and chip | 7.0/10 |
+| Alignment versatility | 7.0/10 |
+| Speed and athleticism | 5.0/10 |
+| Coverage recognition | 6.5/10 |
 
 A large, complete attached tight end whose blocking, catch radius and dependable operation anchor the position. I see a strong starter who offers more structure and physical usefulness than sudden separation.
 
-Source: [2013 profile](../../../../2013/player_profiles/marcedes_lewis.md) and its recorded practice/game sources.
+*Staff view, March 31, 2014; dated updates through September 27, 2014.*
 
-## Year-over-year change
+## Contract
 
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Player identity and position traits | 2013 baseline | Starting 2014 view | Retained | No new individual football evidence establishing change |
+Five-year contract through 2015.
 
-## What supports this assessment
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $6,700,000 | $8,250,000 |
+| 2015 | $6,650,000 | $8,200,000 |
 
-A large, complete attached tight end whose blocking, catch radius and dependable operation anchor the position. I see a strong starter who offers more structure and physical usefulness than sudden separation.
+## Statistics
 
-[2013 profile](../../../../2013/player_profiles/marcedes_lewis.md) and its recorded practice/game sources.
+### Regular season
 
-## Historical comparison
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 30 | 89 | 5 | 24 | 16 | 172 | 10.8 | 3 | 60 | 34.4 | 66.7 |
+| 2013 | Jacksonville | 29 | 89 | 16 | 95 | 61 | 720 | 11.8 | 4 | 72 | 45.0 | 64.2 |
+| With Jacksonville |  |  |  | 21 | 119 | 77 | 892 | 11.6 | 7 | 72 | 42.5 | 64.7 |
 
-The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.
+### Playoffs
 
-## Play style
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 29 | 89 | 2 | 13 | 9 | 108 | 12.0 | 2 | 33 | 54.0 | 69.2 |
 
-A large, complete attached tight end whose blocking, catch radius and dependable operation anchor the position. I see a strong starter who offers more structure and physical usefulness than sudden separation.
+## Awards
 
-## Best traits
+- Pro Bowl selection, replacement (2013, TE)
 
-- Run blocking: 7.5 /10.
-- Hands / catch radius: 7.0 /10.
-- Contested catch / ball tracking: 7.0 /10.
+## Transactions
 
-## Main weaknesses
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Jacksonville in the first round |
+| 2011 | Signed a five-year contract with Jacksonville |
 
-- Speed / athleticism: 5.0 /10.
-- YAC: 5.5 /10.
-- Route running / separation: 6.0 /10.
-
-## Evidence and uncertainty
-
-- **Primary evidence:** [2013 profile](../../../../2013/player_profiles/marcedes_lewis.md) and its recorded practice/game sources.
-- **Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
-
-**One-line description:** A large, complete attached tight end whose blocking, catch radius and dependable operation anchor the position. I see a strong starter who offers more structure and physical usefulness than sudden separation.
-
-## 2013 season production
-
-| Statistic | 2013 regular season | 2013 playoffs |
-| --- | ---: | ---: |
-| G | 16 | 2 |
-| TGT | 95 | 13 |
-| REC | 61 | 9 |
-| YDS | 720 | 108 |
-| AVG | 11.8 | 12.0 |
-| TD | 4 | 2 |
-| LNG | 72 | 33 |
-| RUSH | 0 | 0 |
-| RUSH YDS | 0 | 0 |
-| RUSH TD | 0 | 0 |
-| FUM | 0 | 0 |
-| LOST | 0 | 0 |
-
-Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
-
-## Dated coaching updates
-
-### August 1, 2014 | Training camp
-
-Lewis sustained the recorded attached blocks against Davis. The observation supports that assigned job at controlled contact; it does not supply an unlimited matchup verdict.
-
-Source: [dated camp observations](../../../Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
-
-### September 22 to 27, 2014 | TE Delay
-
-The delay tight end on the three Wednesday candidate reps and the three Thursday reps from the Wing and Trey pictures, the job he ran in 2013: the block sell, the delayed release and the line's escort clean on the recorded reps with no free contact on Cousins, and the call retained for San Diego. The cause of the two 2013 TE Delay sacks he asked about in his exit interview is still open; nothing this week answered it. He also led the tight-end work Monday through Wednesday with Kelce out. Nothing charged to him on the recorded reps.
-
-Source: [Week 4 record](../../../Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 30 | 89 | Through Week 5 | 5 | 24 | 16 | 172 | 10.8 | 3 | 60 | 0 | 0 | 0 | 0 | 0 | 66.7 | 0 | 0 | — | 0 | 0 | — | 0 |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 30 | 89 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

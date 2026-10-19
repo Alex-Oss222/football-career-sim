@@ -1,0 +1,291 @@
+{
+ "schema_version": 1,
+ "name": "Richard Murphy",
+ "gsis_id": "00-0028416",
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/richard_murphy.md"
+  },
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-03-31",
+   "date_as_written": "March 31, 2014 starting evaluation",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Starting staff view; exact theoretical personnel grades",
+   "position": "RB",
+   "identity": "A reserve runner with usable movement and receiving assignments. I see a player who needs a specific complementary job, with protection and inside power limiting a broader role.",
+   "previous_profile": "[2013 baseline](career/2013/player_profiles/richard_murphy.md)",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Vision / decision",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Burst / acceleration",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Long speed",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Cut efficiency / change of direction",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Contact balance / power",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Ball security",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Receiving",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Route detail",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Pass protection",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Short-yardage finishing",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Vision / decision",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Burst / acceleration",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Long speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Cut efficiency / change of direction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Contact balance / power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Ball security",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Receiving",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Route detail",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Pass protection",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Short-yardage finishing",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards, not measured 2014 league ranks.",
+   "read": "A reserve runner with usable movement and receiving assignments. I see a player who needs a specific complementary job, with protection and inside power limiting a broader role.",
+   "read_sources": "Source: [2013 profile](career/2013/player_profiles/richard_murphy.md) and its recorded practice/game sources.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "2013 baseline",
+     "current": "Starting 2014 view",
+     "change": "Retained",
+     "reason": "No new individual football evidence establishing change"
+    }
+   ],
+   "support": "A reserve runner with usable movement and receiving assignments. I see a player who needs a specific complementary job, with protection and inside power limiting a broader role.\n\n[2013 profile](career/2013/player_profiles/richard_murphy.md) and its recorded practice/game sources.",
+   "historical_comparison": "The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.",
+   "play_style": "A reserve runner with usable movement and receiving assignments. I see a player who needs a specific complementary job, with protection and inside power limiting a broader role.",
+   "best_traits": [
+    "Burst / acceleration: 5.0 /10.",
+    "Long speed: 5.0 /10.",
+    "Vision / decision: 4.5 /10."
+   ],
+   "main_weaknesses": [
+    "Pass protection: 3.5 /10.",
+    "Contact balance / power: 4.0 /10.",
+    "Short-yardage finishing: 4.0 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [2013 profile](career/2013/player_profiles/richard_murphy.md) and its recorded practice/game sources.",
+    "**Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics."
+   ],
+   "one_line": "A reserve runner with usable movement and receiving assignments. I see a player who needs a specific complementary job, with protection and inside power limiting a broader role.",
+   "updates": [
+    {
+     "date": "2014-08-14",
+     "date_as_written": "August 14, 2014",
+     "setting": "Preseason game 2, Jacksonville at Chicago",
+     "text": "Twenty-five offensive snaps with Wilson, Bray and Shaw: three carries for 18, the 14-yard Outside Zone cut on second-and-10 and the 5-yard Inside Zone run on Shaw's 65-yard drive, and a 1-yard loss on the Inside Zone and Bubble call with Bray. The plan's complete-assignment question was tested only as the record shows it, runs on three concepts and no recorded protection or screen outcome. A minor head/neck injury was logged at the end of Shaw's first possession and he was removed: independent medical hold, projected return in four days (August 18), reassessment August 15 ([medical record](career/2014/Team_Operations/Medical/incidents/richard_murphy_2014-08-14.md)). The hold is the medical staff's and no football finding attaches to it.",
+     "source": "Source: [preseason game 2 output](career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_02/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-08-18",
+     "date_as_written": "August 18, 2014",
+     "setting": "Released from the independent medical hold",
+     "text": "Reassessed August 15 with no change, released by the independent medical process August 18, his projected date, under the record's method, and back in the work from that day: the complete assignment in the developmental backfields with Wilson's, Bray's and Shaw's groups in the August 18 and 19 padded practices, the August 20 session and the August 21 walkthrough, assignment-correct on the recorded reps with no communicated limitation. By the condition in Stone's Detroit plan (cleared early enough to practice normally) he reenters the developmental rotation for August 22; no role attaches and no football finding attaches to the hold. Source: [medical record](career/2014/Team_Operations/Medical/incidents/richard_murphy_2014-08-14.md); [camp record](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md#august-15-to-21-the-chicago-review-and-the-detroit-preparation). This coaching update preserves the opening grades above.",
+     "source": ""
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/richard_murphy.md at commit 332d70b"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2013-08-31",
+   "kind": "waived",
+   "text": "Released or waived by Jacksonville at the reduction to 53",
+   "source": "career/2013/preseason/final_roster_cuts.md"
+  },
+  {
+   "date": "2013-09-01",
+   "kind": "practice_squad",
+   "text": "Cleared waivers; signed to the Jacksonville practice squad",
+   "source": "career/2013/preseason/final_roster_cuts.md"
+  },
+  {
+   "date": "2014-02-03",
+   "kind": "signed",
+   "text": "Signed a reserve/future contract with Jacksonville, effective March 11, 2014",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  },
+  {
+   "date": "2014-08-30",
+   "kind": "waived",
+   "text": "Waived by Jacksonville at the reduction to 53",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "date": "2014-08-31",
+   "kind": "practice_squad",
+   "text": "Cleared waivers; signed to the Jacksonville practice squad",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  }
+ ]
+}

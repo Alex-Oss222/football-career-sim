@@ -1,16 +1,29 @@
 # Kroy Biermann
 
-![Kroy Biermann career card](assets/kroy_biermann.svg)
+**Atlanta Falcons · Defensive end · No. 71 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 255 lb · Born September 12, 1985 · Montana · Drafted in 2008, fifth round, by Atlanta
+
+As of October 5, 2014, after Week 5.
+
+![Kroy Biermann](https://commons.wikimedia.org/wiki/Special:FilePath/Kroy_Biermann_2013_02.jpg?width=500)
+
+*Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Kroy_Biermann_2013_02.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 27 | 71 | 16 | 35 | 0 | 2 | 0 | 0 | 0 | 0 | 2 | 2.2 | 26 |
-| 2014 | Atlanta Falcons | 28 | 71 | 5 | 19 | 1 | 3 | 0 | 0 | 1 | 1 | 6 | 3.8 | 14 |
-| **Career** |  |  |  | 21 | 54 | 1 | 5 | 0 | 0 | 1 | 1 | 8 | 2.6 | 40 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 28 | 71 | 5 | 19 | 14 | 5 | 3 | 1 | 6 |
+| 2013 | Atlanta | 27 | 71 | 16 | 35 | 26 | 9 | 2 | 0 | 2 |
+| Career |  |  |  | 21 | 54 | 40 | 14 | 5 | 1 | 8 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 28 | 71 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 2013 | Atlanta | 27 | 71 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Atlanta in the fifth round |
+
+<!-- player-page -->

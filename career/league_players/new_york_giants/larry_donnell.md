@@ -1,16 +1,20 @@
 # Larry Donnell
 
-![Larry Donnell career card](assets/larry_donnell.svg)
+**New York Giants · Tight end · No. 84 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 265 lb · Born November 1, 1988 · Grambling State
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Giants | 24 | 84 | 16 | 2 | 1 | -6 | -6.0 | 0 | -0.4 | 50.0 | 0 | 0 | 0 |
-| 2014 | New York Giants | 25 | 84 | 5 | 31 | 18 | 219 | 12.2 | 0 | 43.8 | 58.1 | 37 | 0 | 0 |
-| **Career** |  |  |  | 21 | 33 | 19 | 213 | 11.2 | 0 | 10.1 | 57.6 | 37 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 25 | 84 | 5 | 31 | 18 | 219 | 12.2 | 0 | 37 | 43.8 | 58.1 |
+| 2013 | N.Y. Giants | 24 | 84 | 16 | 2 | 1 | -6 | -6.0 | 0 | 0 | -0.4 | 50.0 |
+| Career |  |  |  | 21 | 33 | 19 | 213 | 11.2 | 0 | 37 | 10.1 | 57.6 |
 
 ### Playoffs
 
@@ -18,8 +22,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).
+<!-- player-page -->

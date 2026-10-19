@@ -1,16 +1,25 @@
 # Melvin White
 
-![Melvin White career card](assets/melvin_white.svg)
+**Carolina Panthers · Cornerback · No. 23 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 205 lb · Born June 26, 1990 · Louisiana-Lafayette
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 23 | 23 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| 2014 | Carolina Panthers | 24 | 23 | 5 | 24 | 1 | 5 | 0 | 0 | 0 | 0 | 0 | 4.8 | 0 |
-| **Career** |  |  |  | 7 | 24 | 1 | 5 | 0 | 0 | 0 | 0 | 0 | 3.4 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 24 | 23 | 5 | 24 | 18 | 6 | 0 | 0 | 0 |
+| 2013 | Carolina | 23 | 23 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 7 | 24 | 18 | 6 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 24 | 23 | 1 | 0 | 5 | 0 | 0 | 0 |
+| 2013 | Carolina | 23 | 23 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +27,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+<!-- player-page -->

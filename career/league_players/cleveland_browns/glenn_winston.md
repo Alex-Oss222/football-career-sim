@@ -1,15 +1,26 @@
 # Glenn Winston
 
-![Glenn Winston career card](assets/glenn_winston.svg)
+**Cleveland Browns · Running back · No. 41 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 220 lb · Born April 29, 1989 · Northwood; Michigan State
+
+As of October 5, 2014, after Week 5.
+
+![Glenn Winston](https://commons.wikimedia.org/wiki/Special:FilePath/Glenn_Winston.jpg?width=500)
+
+*Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Glenn_Winston.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Cleveland Browns | 25 | 41 | 4 | 0 | 0 | N/A | 0 | 0.0 | 2 | 12 | 0 | 2 | 0 |
-| **Career** |  |  |  | 4 | 0 | 0 | N/A | 0 | 0.0 | 2 | 12 | 0 | 2 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 25 | 41 | 4 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 25 | 41 | 2 | 2 | 12 | 6.0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+<!-- player-page -->

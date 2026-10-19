@@ -1,16 +1,24 @@
 # Jermon Bushrod
 
-![Jermon Bushrod career card](assets/jermon_bushrod.svg)
+**Chicago Bears · Guard · No. 74 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 320 lb · Born August 19, 1984 · Towson State · Drafted in 2007, fourth round, by New Orleans
+
+As of October 5, 2014, after Week 5.
+
+![Jermon Bushrod](https://commons.wikimedia.org/wiki/Special:FilePath/Jermon_Bushrod.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jermon_Bushrod.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Chicago Bears | 29 | 74 | 13 | N/A | N/A | 6 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Chicago Bears | 30 | 74 | 5 | 5 | 343 | 3 | 23 | 0 | 0 | 0 | 0 | 68.6 |
-| **Career** |  |  |  | 18 | N/A | N/A | 9 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Chicago | 30 | 74 | 5 | 5 | 343 | 3 | 23 |
+| 2013 | Chicago | 29 | 74 | 13 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 18 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by New Orleans in the fourth round |
+
+<!-- player-page -->

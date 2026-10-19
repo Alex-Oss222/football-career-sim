@@ -1,0 +1,186 @@
+{
+ "schema_version": 1,
+ "name": "Joel Bitonio",
+ "gsis_id": "00-0031426",
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-05-11",
+   "date_as_written": "May 11, 2014 starting evaluation, on acquisition (selected No. 26 on May 8, 2014; rookie contract signed May 11)",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Rookie; no NFL standing. Staff view: early-starter candidate on the interior or at tackle",
+   "position": "OT",
+   "identity": "A four-year college starter at both tackle spots with a heavy lower body, good short-area quickness and a finished set. Whether he is a tackle or a guard in Jacksonville is Stone's decision; his arm length is unresolved in the record.",
+   "previous_profile": "None; 2014 rookie. The starting view rests on pre-draft public evidence only",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Pass set / balance",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Run-block drive",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Length at tackle",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments of the player as he arrives, made from pre-draft public evidence (combine and dated college record described qualitatively, plus pre-draft reports). They grade the current player, not his draft slot, contract or projection, and they use no NFL outcome. Evidence limits are stated below.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Pass set / balance",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Run-block drive",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Length at tackle",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards for the position, not measured 2014 league ranks. No NFL snap exists for this player.",
+   "read": "A four-year college starter at both tackle spots with a heavy lower body, good short-area quickness and a finished set. Whether he is a tackle or a guard in Jacksonville is Stone's decision; his arm length is unresolved in the record.",
+   "read_sources": "Source: [Prospect evidence file](library/2014_prospect_evidence/joel_bitonio.md) (38 consecutive starts; first-team All-Mountain West, December 10, 2013; NFL.com, December 12, 2013); [combine](library/2014_combine_results.md#joel-bitonio-t-nevada) (6-4 1/4, 302; 4.97 forty; 7.37 three-cone).",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "None (rookie)",
+     "current": "Starting 2014 view",
+     "change": "New",
+     "reason": "Pre-draft public evidence only; no Jacksonville practice or game evidence yet"
+    }
+   ],
+   "support": "[Prospect evidence file](library/2014_prospect_evidence/joel_bitonio.md) (38 consecutive starts; first-team All-Mountain West, December 10, 2013; NFL.com, December 12, 2013); [combine](library/2014_combine_results.md#joel-bitonio-t-nevada) (6-4 1/4, 302; 4.97 forty; 7.37 three-cone).",
+   "historical_comparison": "No comparator is assigned at arrival. The evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.",
+   "play_style": "A four-year college starter at both tackle spots with a heavy lower body, good short-area quickness and a finished set. Whether he is a tackle or a guard in Jacksonville is Stone's decision; his arm length is unresolved in the record.",
+   "best_traits": [
+    "Strength / Power: 7.0 /10.",
+    "Run-block drive: 7.0 /10.",
+    "Athleticism: 6.5 /10."
+   ],
+   "main_weaknesses": [
+    "Length at tackle: 5.0 /10.",
+    "Speed: 5.5 /10.",
+    "Football IQ: 6.0 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [Prospect evidence file](library/2014_prospect_evidence/joel_bitonio.md) (38 consecutive starts; first-team All-Mountain West, December 10, 2013; NFL.com, December 12, 2013); [combine](library/2014_combine_results.md#joel-bitonio-t-nevada) (6-4 1/4, 302; 4.97 forty; 7.37 three-cone).",
+    "**Evaluation basis:** Theoretical staff judgment from pre-draft public evidence; thin evidence identified above.",
+    "**What remains uncertain:** Arm length conflicts in the sources; no NFL-level edge rusher faced on film available to the staff; guard technique untested.",
+    "**What would change the assessment:** Which spot Stone assigns and the first opposed protection reps in OTAs.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates."
+   ],
+   "one_line": "A four-year college starter at both tackle spots with a heavy lower body, good short-area quickness and a finished set.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Bitonio anchored against Marks, then over-set and opened the inside lane on one rep. Yarno corrected his set angle and inside hand; the August 1 work held, including the right-guard opportunity. One retained correction does not decide either guard job.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/joel_bitonio.md at commit 332d70b"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2014-05-08",
+   "kind": "drafted",
+   "text": "Drafted by Jacksonville (No. 26, first round)",
+   "source": "career/2014/Draft/draftees.md"
+  },
+  {
+   "date": "2014-05-11",
+   "kind": "signed",
+   "text": "Signed a four-year rookie contract with Jacksonville",
+   "source": "career/2014/Draft/draftees.md"
+  }
+ ]
+}

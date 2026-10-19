@@ -1,15 +1,22 @@
 # Paul Cornick
 
-![Paul Cornick career card](assets/paul_cornick.svg)
+**Denver Broncos · Offensive tackle · No. 71 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 310 lb · Born March 15, 1989 · North Dakota State
+
+As of October 5, 2014, after Week 5.
+
+![Paul Cornick](https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Cornick.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Paul_Cornick.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Denver Broncos | 25 | 71 | 4 | 0 | 32 | 3 | 20 | 0 | 0 | 0 | 0 | 8.0 |
-| **Career** |  |  |  | 4 | 0 | 32 | 3 | 20 | 0 | 0 | 0 | 0 | 8.0 |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 25 | 71 | 4 | 0 | 32 | 3 | 20 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).
+<!-- player-page -->

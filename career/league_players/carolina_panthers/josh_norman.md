@@ -1,15 +1,30 @@
 # Josh Norman
 
-![Josh Norman career card](assets/josh_norman.svg)
+**Carolina Panthers · Cornerback · No. 24 · Age 26 · Last game December 29, 2013**
 
-## Career stats
+6' 0", 195 lb · Born December 15, 1987 · Coastal Carolina · Drafted in 2012, fifth round, by Carolina
+
+As of December 29, 2013, after Week 17.
+
+![Josh Norman](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Norman.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Josh_Norman.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 25 | 24 | 16 | 40 | 2 | 10 | 8 | 1 | 1 | 0 | 0 | 2.5 | 22 |
-| **Career** |  |  |  | 16 | 40 | 2 | 10 | 8 | 1 | 1 | 0 | 0 | 2.5 | 22 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Carolina | 25 | 24 | 16 | 40 | 26 | 14 | 1 | 1 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Carolina | 25 | 24 | 2 | 8 | 10 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Carolina | 25 | 24 | 0 | 0 | N/A | 1 | 22 | 22.0 |
 
 ### Playoffs
 
@@ -17,8 +32,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Carolina in the fifth round |
+
+<!-- player-page -->

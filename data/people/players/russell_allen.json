@@ -1,0 +1,264 @@
+{
+ "schema_version": 1,
+ "name": "Russell Allen",
+ "gsis_id": "00-0026605",
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/russell_allen.md"
+  },
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-03-31",
+   "date_as_written": "March 31, 2014 starting evaluation",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Starting staff view; exact theoretical personnel grades",
+   "position": "LB",
+   "identity": "A dependable complementary linebacker and coverage-unit contributor who can prepare for expanded assignments. I see a role player with communication value and less ability to dictate pressure or man-matchups.",
+   "previous_profile": "[2013 baseline](career/2013/player_profiles/russell_allen.md)",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Run diagnosis",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Fit discipline",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Block destruction",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Range",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Tackling",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Zone coverage",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Man coverage",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Blitz / pressure",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Communication",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Pursuit angles",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Run diagnosis",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Fit discipline",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Block destruction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Range",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Tackling",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Zone coverage",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Man coverage",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Blitz / pressure",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Communication",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Pursuit angles",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards, not measured 2014 league ranks.",
+   "read": "A dependable complementary linebacker and coverage-unit contributor who can prepare for expanded assignments. I see a role player with communication value and less ability to dictate pressure or man-matchups.",
+   "read_sources": "Source: [2013 profile](career/2013/player_profiles/russell_allen.md) and its recorded practice/game sources.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "2013 baseline",
+     "current": "Starting 2014 view",
+     "change": "Retained",
+     "reason": "No new individual football evidence establishing change"
+    }
+   ],
+   "support": "A dependable complementary linebacker and coverage-unit contributor who can prepare for expanded assignments. I see a role player with communication value and less ability to dictate pressure or man-matchups.\n\n[2013 profile](career/2013/player_profiles/russell_allen.md) and its recorded practice/game sources.",
+   "historical_comparison": "The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.",
+   "play_style": "A dependable complementary linebacker and coverage-unit contributor who can prepare for expanded assignments. I see a role player with communication value and less ability to dictate pressure or man-matchups.",
+   "best_traits": [
+    "Communication: 6.0 /10.",
+    "Run diagnosis: 5.5 /10.",
+    "Fit discipline: 5.5 /10."
+   ],
+   "main_weaknesses": [
+    "Blitz / pressure: 4.0 /10.",
+    "Man coverage: 4.5 /10.",
+    "Block destruction: 5.0 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [2013 profile](career/2013/player_profiles/russell_allen.md) and its recorded practice/game sources.",
+    "**Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics."
+   ],
+   "one_line": "A dependable complementary linebacker and coverage-unit contributor who can prepare for expanded assignments. I see a role player with communication value and less ability to dictate pressure or man-matchups.",
+   "updates": [],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/russell_allen.md at commit 332d70b"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2012",
+   "kind": "signed",
+   "text": "Signed a three-year contract with Jacksonville",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md"
+  },
+  {
+   "date": "2014-04-07",
+   "kind": "traded",
+   "text": "Traded by Jacksonville to Arizona for Arizona's 2015 fourth-round pick",
+   "source": "career/2014/Team_Operations/Trades/completed_trades/allen_to_arizona_2014-04-07.md"
+  },
+  {
+   "date": "2014-04-22",
+   "kind": "retired",
+   "text": "Retired at Arizona",
+   "source": "career/2014/League/personnel/retirements.md"
+  }
+ ]
+}

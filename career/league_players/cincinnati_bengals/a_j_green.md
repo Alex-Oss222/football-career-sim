@@ -1,16 +1,29 @@
 # A.J. Green
 
-![A.J. Green career card](assets/a_j_green.svg)
+**Cincinnati Bengals · Wide receiver · No. 18 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 207 lb · Born July 31, 1988 · Georgia · Drafted in 2011, first round, by Cincinnati
+
+As of October 5, 2014, after Week 5.
+
+![A.J. Green](https://commons.wikimedia.org/wiki/Special:FilePath/A._J._Green_2020.jpg?width=500)
+
+*Photo: AlexanderJonesi, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:A._J._Green_2020.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cincinnati Bengals | 25 | 18 | 16 | 185 | 118 | 1,363 | 11.6 | 6 | 85.2 | 63.8 | 53 | 14 | 0 |
-| 2014 | Cincinnati Bengals | 26 | 18 | 4 | 37 | 23 | 207 | 9.0 | 0 | 51.8 | 62.2 | 26 | 0 | 0 |
-| **Career** |  |  |  | 20 | 222 | 141 | 1,570 | 11.1 | 6 | 78.5 | 63.5 | 53 | 14 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cincinnati | 26 | 18 | 4 | 37 | 23 | 207 | 9.0 | 0 | 26 | 51.8 | 62.2 |
+| 2013 | Cincinnati | 25 | 18 | 16 | 185 | 118 | 1,363 | 11.6 | 6 | 53 | 85.2 | 63.8 |
+| Career |  |  |  | 20 | 222 | 141 | 1,570 | 11.1 | 6 | 53 | 78.5 | 63.5 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cincinnati | 26 | 18 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Cincinnati | 25 | 18 | 5 | 14 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cincinnati Bengals players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Cincinnati in the first round |
+
+<!-- player-page -->

@@ -1,16 +1,24 @@
 # Jordan Cameron
 
-![Jordan Cameron career card](assets/jordan_cameron.svg)
+**Cleveland Browns · Tight end · No. 84 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 249 lb · Born August 7, 1988 · USC; Ventura; BYU · Drafted in 2011, fourth round, by Cleveland
+
+As of October 5, 2014, after Week 5.
+
+![Jordan Cameron](https://commons.wikimedia.org/wiki/Special:FilePath/2008-1206-JordonCameron.jpg?width=500)
+
+*Photo: Bobak Ha'Eri, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:2008-1206-JordonCameron.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 25 | 84 | 16 | 95 | 54 | 672 | 12.4 | 5 | 42.0 | 56.8 | 69 | 0 | 0 |
-| 2014 | Cleveland Browns | 26 | 84 | 4 | 19 | 14 | 170 | 12.1 | 0 | 42.5 | 73.7 | 23 | 0 | 0 |
-| **Career** |  |  |  | 20 | 114 | 68 | 842 | 12.4 | 5 | 42.1 | 59.6 | 69 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 26 | 84 | 4 | 19 | 14 | 170 | 12.1 | 0 | 23 | 42.5 | 73.7 |
+| 2013 | Cleveland | 25 | 84 | 16 | 95 | 54 | 672 | 12.4 | 5 | 69 | 42.0 | 56.8 |
+| Career |  |  |  | 20 | 114 | 68 | 842 | 12.4 | 5 | 69 | 42.1 | 59.6 |
 
 ### Playoffs
 
@@ -20,6 +28,10 @@ No playoff games on record.
 
 - Pro Bowl selection (2013, TE)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Cleveland in the fourth round |
+
+<!-- player-page -->

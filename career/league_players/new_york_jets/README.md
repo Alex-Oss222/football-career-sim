@@ -1,18 +1,20 @@
 # New York Jets players
 
-AFC East · Players whose latest game on record was with the New York Jets. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+AFC East. The players whose latest game on record was with the New York Jets. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 7 | [Geno Smith](geno_smith.md) | QB | 5 | 16 |
 | 1 | [Michael Vick](michael_vick.md) | QB | 5 | 16 |
 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Alex Green](alex_green.md) | RB | 0 | 16 |
 | 29 | [Bilal Powell](bilal_powell.md) | RB | 5 | 12 |
 | 33 | [Chris Ivory](chris_ivory.md) | RB | 5 | 16 |
@@ -23,7 +25,7 @@ AFC East · Players whose latest game on record was with the New York Jets. G co
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 86 | [David Nelson](david_nelson.md) | WR | 5 | 0 |
 | N/A | [Edmond Gates](edmond_gates.md) | WR | 0 | 16 |
 | 87 | [Eric Decker](eric_decker.md) | WR | 5 | 16 |
@@ -39,7 +41,7 @@ AFC East · Players whose latest game on record was with the New York Jets. G co
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 88 | [Jace Amaro](jace_amaro.md) | TE | 5 | 0 |
 | 85 | [Jeff Cumberland](jeff_cumberland.md) | TE | 5 | 16 |
 | N/A | [Kellen Winslow](kellen_winslow.md) | TE | 0 | 16 |
@@ -49,7 +51,7 @@ AFC East · Players whose latest game on record was with the New York Jets. G co
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 68 | [Breno Giacomini](breno_giacomini.md) | T | 5 | 13 |
 | 67 | [Brian Winters](brian_winters.md) | G | 5 | 16 |
 | N/A | [Caleb Schlauderaff](caleb_schlauderaff.md) | C | 0 | 16 |
@@ -64,7 +66,7 @@ AFC East · Players whose latest game on record was with the New York Jets. G co
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 94 | [Damon Harrison](damon_harrison.md) | NT | 5 | 16 |
 | 93 | [Kenrick Ellis](kenrick_ellis.md) | NT | 5 | 0 |
 | 78 | [Leger Douzable](leger_douzable.md) | DE | 5 | 16 |
@@ -73,7 +75,7 @@ AFC East · Players whose latest game on record was with the New York Jets. G co
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 55 | [A.J. Edds](a_j_edds.md) | ILB | 5 | 0 |
 | N/A | [Antwan Barnes](antwan_barnes.md) | OLB | 0 | 16 |
 | 97 | [Calvin Pace](calvin_pace.md) | OLB | 5 | 16 |
@@ -89,7 +91,7 @@ AFC East · Players whose latest game on record was with the New York Jets. G co
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 39 | [Antonio Allen](antonio_allen.md) | CB | 5 | 16 |
 | 25 | [Calvin Pryor](calvin_pryor.md) | S | 5 | 0 |
 | 30 | [Darrin Walls](darrin_walls.md) | CB | 5 | 16 |
@@ -105,18 +107,20 @@ AFC East · Players whose latest game on record was with the New York Jets. G co
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 2 | [Nick Folk](nick_folk.md) | K | 5 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Robert Malone](robert_malone.md) | P | 0 | 16 |
 | 4 | [Ryan Quigley](ryan_quigley.md) | P | 5 | 0 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 46 | [Tanner Purdum](tanner_purdum.md) | LS | 5 | 16 |
+
+<!-- player-index -->

@@ -1,16 +1,24 @@
 # Tyler Eifert
 
-![Tyler Eifert career card](assets/tyler_eifert.svg)
+**Cincinnati Bengals · Tight end · No. 85 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 250 lb · Born September 8, 1990 · Notre Dame
+
+As of October 5, 2014, after Week 5.
+
+![Tyler Eifert](https://commons.wikimedia.org/wiki/Special:FilePath/TylerEifert.jpg?width=500)
+
+*Photo: emeybee, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:TylerEifert.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cincinnati Bengals | 22 | 85 | 16 | 3 | 1 | 8 | 8.0 | 0 | 0.5 | 33.3 | 8 | 0 | 0 |
-| 2014 | Cincinnati Bengals | 23 | 85 | 4 | 2 | 0 | 0 | N/A | 0 | 0.0 | 0.0 | N/A | 0 | 0 |
-| **Career** |  |  |  | 20 | 5 | 1 | 8 | 8.0 | 0 | 0.4 | 20.0 | 8 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cincinnati | 23 | 85 | 4 | 2 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
+| 2013 | Cincinnati | 22 | 85 | 16 | 3 | 1 | 8 | 8.0 | 0 | 8 | 0.5 | 33.3 |
+| Career |  |  |  | 20 | 5 | 1 | 8 | 8.0 | 0 | 8 | 0.4 | 20.0 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cincinnati Bengals players](README.md).
+<!-- player-page -->

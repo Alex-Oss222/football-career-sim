@@ -1,16 +1,29 @@
 # Ted Ginn
 
-![Ted Ginn career card](assets/ted_ginn.svg)
+**Arizona Cardinals · Wide receiver · No. 19 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 185 lb · Born April 12, 1985 · Ohio State · Drafted in 2007, first round, by Miami
+
+As of October 5, 2014, after Week 5.
+
+![Ted Ginn](https://commons.wikimedia.org/wiki/Special:FilePath/Ted_Ginn%2C_Jr._2014.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ted_Ginn,_Jr._2014.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 28 | 19 | 15 | 3 | 2 | 8 | 4.0 | 1 | 0.5 | 66.7 | 8 | 0 | 0 |
-| 2014 | Arizona Cardinals | 29 | 19 | 4 | 6 | 5 | 55 | 11.0 | 1 | 13.8 | 83.3 | 22 | 0 | 0 |
-| **Career** |  |  |  | 19 | 9 | 7 | 63 | 9.0 | 2 | 3.3 | 77.8 | 22 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Arizona | 29 | 19 | 4 | 6 | 5 | 55 | 11.0 | 1 | 22 | 13.8 | 83.3 |
+| 2013 | Carolina | 28 | 19 | 15 | 3 | 2 | 8 | 4.0 | 1 | 8 | 0.5 | 66.7 |
+| Career |  |  |  | 19 | 9 | 7 | 63 | 9.0 | 2 | 22 | 3.3 | 77.8 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Arizona | 29 | 19 | 9 | 213 | 23.7 | 7 | 60 | 8.6 |
+| 2013 | Carolina | 28 | 19 | 36 | 855 | 23.8 | 30 | 251 | 8.4 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Arizona Cardinals players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Miami in the first round |
+
+<!-- player-page -->

@@ -1,16 +1,24 @@
 # Joe Looney
 
-![Joe Looney career card](assets/joe_looney.svg)
+**San Francisco 49ers · Center · No. 78 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 315 lb · Born August 31, 1990 · Wake Forest · Drafted in 2012, fourth round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![Joe Looney](https://commons.wikimedia.org/wiki/Special:FilePath/Joe_Looney_%28offensive_lineman%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Joe_Looney_(offensive_lineman).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 23 | 78 | 16 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | San Francisco 49ers | 24 | 78 | 5 | 5 | 324 | 1 | 23 | 0 | 0 | 0 | 0 | 64.8 |
-| **Career** |  |  |  | 21 | N/A | N/A | 6 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 24 | 78 | 5 | 5 | 324 | 1 | 23 |
+| 2013 | San Francisco | 23 | 78 | 16 | N/A | N/A | 5 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by San Francisco in the fourth round |
+
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # A.J. Hawk
 
-![A.J. Hawk career card](assets/a_j_hawk.svg)
+**Green Bay Packers · Outside linebacker · No. 50 · Age 30 · Last game October 2, 2014**
 
-## Career stats
+6' 1", 235 lb · Born January 6, 1984 · Ohio State · Drafted in 2006, first round, by Green Bay
+
+As of October 2, 2014, after Week 5.
+
+![A.J. Hawk](https://commons.wikimedia.org/wiki/Special:FilePath/A._J._Hawk.jpg?width=500)
+
+*Photo: Mike Morbeck, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:A._J._Hawk.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Green Bay Packers | 29 | 50 | 15 | 134 | 1 | 8 | 1 | 4 | 1 | 1 | 8 | 8.9 | 86 |
-| 2014 | Green Bay Packers | 30 | 50 | 5 | 47 | 2 | 8 | 0 | 2 | 2 | 2 | 3 | 9.4 | 29 |
-| **Career** |  |  |  | 20 | 181 | 3 | 16 | 1 | 6 | 3 | 3 | 11 | 9.1 | 115 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 30 | 50 | 5 | 47 | 29 | 18 | 8 | 2 | 3 |
+| 2013 | Green Bay | 29 | 50 | 15 | 134 | 86 | 48 | 8 | 1 | 8 |
+| Career |  |  |  | 20 | 181 | 115 | 66 | 16 | 3 | 11 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 30 | 50 | 0 | 0 | 2 | 2 | 2 | 0 |
+| 2013 | Green Bay | 29 | 50 | 1 | 21 | 4 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Green Bay in the first round |
+
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # Nick Perry
 
-![Nick Perry career card](assets/nick_perry.svg)
+**Green Bay Packers · Outside linebacker · No. 53 · Age 24 · Last game October 2, 2014**
 
-## Career stats
+6' 3", 265 lb · Born April 12, 1990 · USC · Drafted in 2012, first round, by Green Bay
+
+As of October 2, 2014, after Week 5.
+
+![Nick Perry](https://commons.wikimedia.org/wiki/Special:FilePath/Nick_Perry_-_San_Francisco_vs_Green_Bay_2012.jpg?width=500)
+
+*Photo: Mike Morbeck, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Nick_Perry_-_San_Francisco_vs_Green_Bay_2012.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Green Bay Packers | 23 | 53 | 16 | 27 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 1.7 | 17 |
-| 2014 | Green Bay Packers | 24 | 53 | 5 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.6 | 2 |
-| **Career** |  |  |  | 21 | 35 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 1.7 | 19 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 24 | 53 | 5 | 8 | 2 | 6 | 0 | 0 | 0 |
+| 2013 | Green Bay | 23 | 53 | 16 | 27 | 17 | 10 | 1 | 0 | 0 |
+| Career |  |  |  | 21 | 35 | 19 | 16 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 24 | 53 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Green Bay | 23 | 53 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Green Bay in the first round |
+
+<!-- player-page -->

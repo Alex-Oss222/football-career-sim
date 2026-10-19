@@ -1,16 +1,29 @@
 # Robbie Gould
 
-![Robbie Gould career card](assets/robbie_gould.svg)
+**Chicago Bears · Kicker · No. 9 · Age 31 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 185 lb · Born December 6, 1982 · Penn State
+
+As of October 5, 2014, after Week 5.
+
+![Robbie Gould](https://commons.wikimedia.org/wiki/Special:FilePath/Gould_Quinnan.jpg?width=500)
+
+*Photo: Quinnanmatt, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Gould_Quinnan.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Chicago Bears | 30 | 9 | 16 | 32-37 | 86.5 | N/A | 40-40 | 100.0 | 136 | N/A | N/A | N/A | 8.5 |
-| 2014 | Chicago Bears | 31 | 9 | 5 | 8-12 | 66.7 | 50 | 11-11 | 100.0 | 35 | 2-3 | 1-3 | 5-6 | 7.0 |
-| **Career** |  |  |  | 21 | 40-49 | 81.6 | N/A | 51-51 | 100.0 | 171 | N/A | N/A | N/A | 8.1 |
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Chicago | 31 | 9 | 5 | 8 | 12 | 66.7 | 50 | 11 | 11 | 100.0 | 35 |
+| 2013 | Chicago | 30 | 9 | 16 | 32 | 37 | 86.5 | N/A | 40 | 40 | 100.0 | 136 |
+| Career |  |  |  | 21 | 40 | 49 | 81.6 | N/A | 51 | 51 | 100.0 | 171 |
+
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Chicago | 31 | 9 | 5-6 | 2-3 | 1-3 |
+| 2013 | Chicago | 30 | 9 | N/A | N/A | N/A |
 
 ### Playoffs
 
@@ -21,6 +34,8 @@ No playoff games on record.
 - NFC Special Teams Player of the Week (2013, Week 4)
 - NFC Special Teams Player of the Week (2013, Week 6)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).
+None on record.
+
+<!-- player-page -->

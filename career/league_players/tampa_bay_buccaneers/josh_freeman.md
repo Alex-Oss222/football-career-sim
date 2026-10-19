@@ -1,27 +1,41 @@
 # Josh Freeman
 
-![Josh Freeman career card](assets/josh_freeman.svg)
+**Tampa Bay Buccaneers · Quarterback · Age 25 · Last game January 5, 2014**
 
-## Career stats
+6' 6", 240 lb · Born January 13, 1988 · Kansas State · Drafted in 2009, first round, by Tampa Bay
+
+As of January 5, 2014, after the Wild Card round.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 25 | N/A | 16 | 362-541 | 66.9 | 3,994 | 24 | 14 | 7.4 | 92.6 | 249.6 | 179 | 0 |
-| **Career** |  |  |  | 16 | 362-541 | 66.9 | 3,994 | 24 | 14 | 7.4 | 92.6 | 249.6 | 179 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 25 | N/A | 16 | 362 | 541 | 66.9 | 3,994 | 7.4 | 249.6 | 24 | 14 | 92.6 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 25 | N/A | 30 | 201 | 41 | 179 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 25 | N/A | 1 | 28-40 | 70.0 | 258 | 1 | 2 | 6.5 | 74.8 | 258.0 | -1 | 0 |
-| **Career** |  |  |  | 1 | 28-40 | 70.0 | 258 | 1 | 2 | 6.5 | 74.8 | 258.0 | -1 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 25 | N/A | 1 | 28 | 40 | 70.0 | 258 | 6.5 | 258.0 | 1 | 2 | 74.8 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 25 | N/A | 2 | 13 | 1 | -1 | 0 | 0 | 0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 5, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Tampa Bay Buccaneers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Tampa Bay in the first round |
+
+<!-- player-page -->

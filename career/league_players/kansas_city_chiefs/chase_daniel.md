@@ -1,28 +1,46 @@
 # Chase Daniel
 
-![Chase Daniel career card](assets/chase_daniel.svg)
+**Kansas City Chiefs · Quarterback · No. 10 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 225 lb · Born October 7, 1986 · Missouri
+
+As of October 5, 2014, after Week 5.
+
+![Chase Daniel](https://commons.wikimedia.org/wiki/Special:FilePath/Chase_Daniel_Saints_parade.jpg?width=500)
+
+*Photo: Saints_Victory_Parade_Canal_St._Brees.jpg : Derek Bridges derivative work: Lpdrew, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Chase_Daniel_Saints_parade.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 26 | 10 | 16 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| 2014 | Kansas City Chiefs | 27 | 10 | 5 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| **Career** |  |  |  | 21 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 27 | 10 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2013 | Kansas City | 26 | 10 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 21 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 27 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Kansas City | 26 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 26 | 10 | 1 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| **Career** |  |  |  | 1 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 26 | 10 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 26 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+<!-- player-page -->

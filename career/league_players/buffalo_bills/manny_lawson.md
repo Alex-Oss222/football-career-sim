@@ -1,28 +1,48 @@
 # Manny Lawson
 
-![Manny Lawson career card](assets/manny_lawson.svg)
+**Buffalo Bills · Outside linebacker · No. 91 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 240 lb · Born July 3, 1984 · N.C. State · Drafted in 2006, first round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![Manny Lawson](https://commons.wikimedia.org/wiki/Special:FilePath/Manny_Lawson_at_49ers_training_camp_2010-08-11_1.JPG?width=500)
+
+*Photo: BrokenSphere, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Manny_Lawson_at_49ers_training_camp_2010-08-11_1.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 29 | 91 | 16 | 102 | 3 | 7 | 1 | 4 | 1 | 1 | 8 | 6.4 | 64 |
-| 2014 | Buffalo Bills | 30 | 91 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 19 | 102 | 3 | 7 | 1 | 4 | 1 | 1 | 8 | 5.4 | 64 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 30 | 91 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Buffalo | 29 | 91 | 16 | 102 | 64 | 38 | 7 | 3 | 8 |
+| Career |  |  |  | 19 | 102 | 64 | 38 | 7 | 3 | 8 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 30 | 91 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2013 | Buffalo | 29 | 91 | 1 | 0 | 4 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 29 | 91 | 4 | 26 | 1 | 2 | 1 | 1 | 0 | 0 | 2 | 6.5 | 18 |
-| **Career** |  |  |  | 4 | 26 | 1 | 2 | 1 | 1 | 0 | 0 | 2 | 6.5 | 18 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 29 | 91 | 4 | 26 | 18 | 8 | 2 | 1 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 29 | 91 | 1 | 24 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by San Francisco in the first round |
+
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # Ahmad Bradshaw
 
-![Ahmad Bradshaw career card](assets/ahmad_bradshaw.svg)
+**Indianapolis Colts · Running back · No. 44 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 217 lb · Born March 19, 1986 · Marshall · Drafted in 2007, seventh round, by the New York Giants
+
+As of October 5, 2014, after Week 5.
+
+![Ahmad Bradshaw](https://commons.wikimedia.org/wiki/Special:FilePath/BradshawNYG.jpg?width=500)
+
+*Photo: Coingeek, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:BradshawNYG.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 27 | 44 | 16 | 16 | 75 | 4.7 | 0 | 4.7 | 3 | 31 | 1 | 19 | 0 |
-| 2014 | Indianapolis Colts | 28 | 44 | 5 | 37 | 147 | 4.0 | 0 | 29.4 | 6 | 56 | 0 | 43 | 1 |
-| **Career** |  |  |  | 21 | 53 | 222 | 4.2 | 0 | 10.6 | 9 | 87 | 1 | 62 | 1 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 28 | 44 | 5 | 37 | 147 | 4.0 | 0 | 15 | 29.4 |
+| 2013 | Indianapolis | 27 | 44 | 16 | 16 | 75 | 4.7 | 0 | 14 | 4.7 |
+| Career |  |  |  | 21 | 53 | 222 | 4.2 | 0 | 15 | 10.6 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 28 | 44 | 9 | 6 | 56 | 9.3 | 0 | 1 | 1 |
+| 2013 | Indianapolis | 27 | 44 | 4 | 3 | 31 | 10.3 | 1 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by the New York Giants in the seventh round |
+
+<!-- player-page -->

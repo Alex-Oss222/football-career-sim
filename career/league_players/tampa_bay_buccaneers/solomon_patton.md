@@ -1,15 +1,18 @@
 # Solomon Patton
 
-![Solomon Patton career card](assets/solomon_patton.svg)
+**Tampa Bay Buccaneers · Wide receiver · No. 86 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 177 lb · Born October 17, 1990 · Florida
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Tampa Bay Buccaneers | 23 | 86 | 1 | 1 | 1 | 4 | 4.0 | 0 | 4.0 | 100.0 | 4 | 0 | 0 |
-| **Career** |  |  |  | 1 | 1 | 1 | 4 | 4.0 | 0 | 4.0 | 100.0 | 4 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 23 | 86 | 1 | 1 | 1 | 4 | 4.0 | 0 | 4 | 4.0 | 100.0 |
 
 ### Playoffs
 
@@ -17,8 +20,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All Tampa Bay Buccaneers players](README.md).
+<!-- player-page -->

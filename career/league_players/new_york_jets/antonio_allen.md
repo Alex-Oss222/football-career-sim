@@ -1,28 +1,44 @@
 # Antonio Allen
 
-![Antonio Allen career card](assets/antonio_allen.svg)
+**New York Jets · Cornerback · No. 39 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 210 lb · Born September 23, 1988 · South Carolina · Drafted in 2012, seventh round, by the New York Jets
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 24 | 39 | 16 | 69 | 8 | 21 | 118 | 6 | 0 | 0 | 0 | 4.3 | 0 |
-| 2014 | New York Jets | 25 | 39 | 5 | 18 | 0 | 5 | 0 | 0 | 0 | 0 | 0 | 3.6 | 0 |
-| **Career** |  |  |  | 21 | 87 | 8 | 26 | 118 | 6 | 0 | 0 | 0 | 4.1 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 25 | 39 | 5 | 18 | 15 | 3 | 0 | 0 | 0 |
+| 2013 | N.Y. Jets | 24 | 39 | 16 | 69 | 50 | 19 | 6 | 0 | 0 |
+| Career |  |  |  | 21 | 87 | 65 | 22 | 6 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 25 | 39 | 0 | 0 | 5 | 0 | 0 | 0 |
+| 2013 | N.Y. Jets | 24 | 39 | 8 | 118 | 21 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 24 | 39 | 1 | 5 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 5.0 | 0 |
-| **Career** |  |  |  | 1 | 5 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 5.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Jets | 24 | 39 | 1 | 5 | 3 | 2 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Jets | 24 | 39 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by the New York Jets in the seventh round |
+
+<!-- player-page -->

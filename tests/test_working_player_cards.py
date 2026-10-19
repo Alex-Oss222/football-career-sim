@@ -5,7 +5,8 @@ import shutil
 import tempfile
 import unittest
 from pathlib import Path
-from runtime import player_cards
+from runtime import player_cards, player_pages
+from runtime.season_layout import LEAGUE_PLAYER_PAGES, PLAYER_RECORDS
 from scripts.update_player_cards import (
     ROOT, START, END, LEAD, columns, clean_labels, refresh_text, stats_block,
     stat_values, profile_errors, period_data, season_rows, lead_cells,
@@ -17,10 +18,10 @@ _ROWS = None
 
 
 def rows_2014():
-    """season_rows for every committed 2014 card, computed once."""
+    """season_rows for every committed 2014 player page, computed once."""
     global _ROWS
     if _ROWS is None:
-        names = [re.search(r'^# (.+?) — ', p.read_text(encoding='utf-8'), re.M)[1]
+        names = [re.search(r'^# (.+?)(?: — .*)?$', p.read_text(encoding='utf-8'), re.M)[1]
                  for p in sorted(CARDS.glob('*.md')) if p.name not in ('README.md', 'TEMPLATE.md')]
         _ROWS = season_rows(2014, names)
     return _ROWS
@@ -88,7 +89,11 @@ class WorkingPlayerCardTests(unittest.TestCase):
     def test_current_roster_cards_and_stats_are_consistent(self):
         self.assertEqual(profile_errors(2014), [])
         cards = list(SeasonPaths(2014, ROOT).record('player_profiles').glob('*.md'))
-        self.assertEqual(len(cards), 85)  # 78 current players and Alan Ball's September 8 entry card, 4 former players, index and template
+        # Built player pages (rebuild step 3a): every player Jacksonville controls and every player
+        # assessed this season who has left, worked out from the records and the roster, and the
+        # index; the opening assessments are on the player records.
+        self.assertEqual(len(cards), len(player_pages.jaguars_players(player_pages.Context(ROOT))) + 1)
+        self.assertTrue(all(player_pages.built_page(p.read_text(encoding='utf-8')) for p in cards))
 
     def test_player_facing_year_labels_preserve_proper_name(self):
         self.assertEqual(clean_labels('Andre Branch; Branch evidence; Branch regular season'),
@@ -129,14 +134,9 @@ class WorkingPlayerCardTests(unittest.TestCase):
             self.assertTrue(updated.rstrip().endswith(END))
 
     def test_season_rows_lead_with_season_team_age_and_number(self):
-        text = (CARDS/'kirk_cousins.md').read_text(encoding='utf-8')
-        for heading in ('## Regular-season statistics by year', '## Playoff statistics by year'):
-            header = next(l for l in text.split(heading, 1)[1].splitlines() if l.startswith('| Season |'))
-            self.assertTrue(header.startswith('| Season | Team | Age | # | Coverage | G |'), header)
-            row = table_rows(text, heading)['2014']
-            team, age, number = rows_2014()['Kirk Cousins']
-            self.assertEqual((row['Team'], row['Age'], row['#']), (team, str(age), str(number)))
-            self.assertEqual(team, 'Jacksonville Jaguars')
+        # The earlier card layout, kept for cards written in it (the season-close tools).
+        team, age, number = rows_2014()['Kirk Cousins']
+        self.assertEqual((team, age, number), ('Jacksonville Jaguars', 23, 8))
         self.assertEqual(lead_cells(2014), ['2014', 'Jacksonville Jaguars', 'N/A', 'N/A'])
         self.assertEqual(lead_cells(2014, ('Jacksonville Jaguars', 26, 8)), ['2014', 'Jacksonville Jaguars', '26', '8'])
         with tempfile.TemporaryDirectory() as folder:
@@ -146,32 +146,6 @@ class WorkingPlayerCardTests(unittest.TestCase):
         self.assertIn('| 2014 | Jacksonville Jaguars | 26 | N/A | Through Week 1 |', block)
         separator = next(l for l in block.splitlines() if l.startswith('| --- '))
         self.assertEqual(separator.count('---'), len(LEAD)+len(columns('QB')))
-
-    def test_card_and_league_page_agree_on_team_age_and_number(self):
-        """Every card that links to his league page shows that page's 2014 age, and its Team and #
-        when that page's 2014 row ends with Jacksonville. A player signed in season whose 2014 games
-        so far were all with another club has that club and its number there, Jacksonville and N/A
-        here."""
-        compared = numbered = 0
-        for path in sorted(CARDS.glob('*.md')):
-            text = path.read_text(encoding='utf-8')
-            link = re.search(r'\[Career statistics\]\(([^)]+)\)', text)
-            if not link:
-                continue
-            league = (path.parent/link[1]).resolve().read_text(encoding='utf-8')
-            mine = table_rows(text, '## Regular-season statistics by year')['2014']
-            theirs = table_rows(league, '### Regular season').get('2014')
-            if theirs is None:
-                continue
-            compared += 1
-            self.assertEqual(mine['Age'], theirs['Age'], path.name)
-            self.assertEqual(mine['Team'], player_cards.JAX, path.name)
-            if theirs['Team'].split(', ')[-1] != player_cards.JAX:
-                continue
-            numbered += 1
-            self.assertEqual(mine['#'], theirs['#'], path.name)
-        self.assertGreaterEqual(compared, 50)
-        self.assertGreaterEqual(numbered, 50)
 
     def test_rows_use_the_league_cards_birth_dates_and_season_number(self):
         data = player_cards.card_data(ROOT)
@@ -189,30 +163,33 @@ class WorkingPlayerCardTests(unittest.TestCase):
         # No game on record: no league player; the same birth-date sources give his age, no number.
         self.assertFalse(any('Cameron Brate' in p['record_names'] for p in data['players']))
         ident = player_cards.Identity(ROOT)
-        dob = ident.birth_date({'Cameron Brate'}, None, ident.week1_row(None, 'Cameron Brate'), 'Cameron Brate')
+        dob = ident.birth_date({'Cameron Brate'}, None, ident.week1_row(None, 'Cameron Brate'))
         self.assertIsNotNone(dob)
         self.assertEqual(rows['Cameron Brate'], (player_cards.JAX, player_cards.age_on(dob, '2014-09-04'), None))
-        card = table_rows((CARDS/'cameron_brate.md').read_text(encoding='utf-8'), '## Regular-season statistics by year')
-        self.assertEqual(card['2014']['#'], 'N/A')
+        # The canon birth date (data/people/canon_overrides.json) is the one every row reads.
+        self.assertEqual(cousins['birth_date'], '1991-08-19')
 
     def test_a_root_without_league_records_reads_na(self):
         with tempfile.TemporaryDirectory() as folder:
             self.assertEqual(season_rows(2014, ['Kirk Cousins'], Path(folder)), {})
 
     def test_a_written_row_reads_back_exactly(self):
-        for path in sorted(CARDS.glob('*.md')):
-            if path.name in ('README.md', 'TEMPLATE.md'):
-                continue
-            text = path.read_text(encoding='utf-8')
-            row = next(l for l in text.split('## Regular-season statistics by year', 1)[1].splitlines()
-                       if l.startswith('| 2014 |'))
-            self.assertTrue(row.startswith('| '+' | '.join(lead_cells(2014, written_row(text, 2014)))+' | '),
-                            path.name)
+        with tempfile.TemporaryDirectory() as folder:
+            for cells in (('Jacksonville Jaguars', 23, 8), ('Jacksonville Jaguars', 26, None)):
+                text = '# Kirk Cousins — 2014 Player Profile\n\n' + stats_block(
+                    2014, 'Kirk Cousins', 'QB', {False: period(250), True: period()}, root=Path(folder), row=cells)
+                row = next(l for l in text.split('## Regular-season statistics by year', 1)[1].splitlines()
+                           if l.startswith('| 2014 |'))
+                self.assertEqual(written_row(text, 2014), cells)
+                self.assertTrue(row.startswith('| '+' | '.join(lead_cells(2014, written_row(text, 2014)))+' | '))
+                self.assertIsNone(written_row(text, 2015))
         self.assertIsNone(written_row('# Pat Nobody\n', 2014))
-        self.assertIsNone(written_row((CARDS/'kirk_cousins.md').read_text(encoding='utf-8'), 2015))
 
     def test_only_a_current_player_in_an_open_season_is_worked_out_again(self):
-        text = (CARDS/'kirk_cousins.md').read_text(encoding='utf-8')
+        with tempfile.TemporaryDirectory() as folder:
+            text = '# Kirk Cousins — 2014 Player Profile\n\n' + stats_block(
+                2014, 'Kirk Cousins', 'QB', {False: period(250), True: period()}, root=Path(folder),
+                row=rows_2014()['Kirk Cousins'])
         written = written_row(text, 2014)
         self.assertEqual(written, rows_2014()['Kirk Cousins'])
         with tempfile.TemporaryDirectory() as folder:
@@ -223,10 +200,12 @@ class WorkingPlayerCardTests(unittest.TestCase):
             self.assertEqual(season_lead(2014, {'Kirk Cousins': text}, {'Kirk Cousins'}, Path(folder)), {})
 
     def test_both_years_show_the_completed_2013_production(self):
-        for year in (2013, 2014):
-            text = SeasonPaths(year, ROOT).record('player_profiles/kirk_cousins.md').read_text(encoding='utf-8')
-            self.assertIn('| Statistic | 2013 regular season | 2013 playoffs |', text)
-            self.assertIn('| YDS | 3981 | 480 |', text)
+        text = SeasonPaths(2013, ROOT).record('player_profiles/kirk_cousins.md').read_text(encoding='utf-8')
+        self.assertIn('| Statistic | 2013 regular season | 2013 playoffs |', text)
+        self.assertIn('| YDS | 3981 | 480 |', text)
+        text = (CARDS/'kirk_cousins.md').read_text(encoding='utf-8')
+        self.assertIn('| 2013 | Jacksonville | 22 | N/A | 16 | 357 | 564 | 63.3 | 3,981 |', text)
+        self.assertIn('| 2013 | Jacksonville | 22 | N/A | 2 | 38 | 59 | 64.4 | 480 |', text)
 
 
 CARD_FOLDER = CARDS.relative_to(ROOT).as_posix()
@@ -265,8 +244,9 @@ def overlay(target, files=(), copies=()):
 
 
 class ClosedSeasonCardTests(unittest.TestCase):
-    """A closed season's cards are frozen history: neither a later release nor the switch to the
-    next season changes a byte of them (the season review receipt and the handoff hash them)."""
+    """A closed season's player folder is frozen history: while the season is open its pages
+    follow the record (a release shows at once), but once the season review closes it neither a
+    later release nor the switch to the next season changes a byte of them."""
 
     def snapshot(self, folder):
         return {p.name: p.read_bytes() for p in sorted(folder.iterdir())}
@@ -274,7 +254,8 @@ class ClosedSeasonCardTests(unittest.TestCase):
     def test_a_release_or_the_next_season_leaves_a_closed_seasons_cards_byte_identical(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp).resolve()
-            overlay(root, files=(ROSTER, REVIEW, MAP, NEXT_ROSTER), copies=(CARD_FOLDER,))
+            overlay(root, files=(ROSTER, REVIEW, MAP, NEXT_ROSTER),
+                    copies=(CARD_FOLDER, LEAGUE_PLAYER_PAGES, PLAYER_RECORDS))
             cards = root/CARD_FOLDER
             # Every write below lands in the copies, never in the repository.
             self.assertFalse(cards.is_symlink())
@@ -284,31 +265,26 @@ class ClosedSeasonCardTests(unittest.TestCase):
             released = ''.join(l for l in roster.splitlines(True) if not l.startswith('| Kirk Cousins |'))
             self.assertNotEqual(released, roster)
             cousins = cards/'kirk_cousins.md'
-            row = written_row(cousins.read_text(encoding='utf-8'), 2014)
-            self.assertIsNotNone(row[2])
+            self.assertIn('Active roster', cousins.read_text(encoding='utf-8'))
 
-            # Open season: once he is released, the current state gives no Jacksonville number, but
-            # the row he already has keeps its cells.
+            # Open season: the page follows the release.
             (root/ROSTER).write_text(released, encoding='utf-8')
             self.assertEqual(season_rows(2014, ['Kirk Cousins'], root)['Kirk Cousins'][2], None)
-            self.assertEqual([e for e in refresh_cards(2014, root, check=True) if 'kirk_cousins' in e], [])
+            player_pages.write(root)
+            self.assertNotIn('Active roster', cousins.read_text(encoding='utf-8'))
             (root/ROSTER).write_text(roster, encoding='utf-8')
+            player_pages.write(root)
+            self.assertIn('Active roster', cousins.read_text(encoding='utf-8'))
 
-            # The season review closes the season: the pages are rendered once as history.
+            # The season review closes the season: the folder is history.
+            (root/REVIEW).parent.mkdir(parents=True, exist_ok=True)
             (root/REVIEW).write_text('# 2014 season review\n', encoding='utf-8')
-            for rel, text in player_cards._build(root)[1].items():
-                self.assertTrue(rel.startswith(CARD_FOLDER+'/'), rel)
-                (root/rel).write_text(text, encoding='utf-8')
-            self.assertEqual(refresh_cards(2014, root), [])
             frozen = self.snapshot(cards)
-            self.assertFalse(any(player_cards.CARD_BEGIN.encode() in b for b in frozen.values()))
-            self.assertEqual(written_row(cousins.read_text(encoding='utf-8'), 2014), row)
-            self.assertEqual(refresh_cards(2014, root, check=True), [])
+            self.assertEqual(refresh_cards(2014, root), [])
 
             # A release after the close.
             (root/ROSTER).write_text(released, encoding='utf-8')
-            pages = player_cards._build(root)[1]
-            self.assertEqual({rel: (root/rel).read_text(encoding='utf-8') for rel in pages}, pages)
+            player_pages.write(root)
             self.assertEqual(refresh_cards(2014, root, check=True), [])
             self.assertEqual(self.snapshot(cards), frozen)
 
@@ -316,9 +292,10 @@ class ClosedSeasonCardTests(unittest.TestCase):
             data = json.loads((root/MAP).read_text(encoding='utf-8'))
             data['active_season'] = 2015
             (root/MAP).write_text(json.dumps(data), encoding='utf-8')
+            (root/NEXT_ROSTER).parent.mkdir(parents=True, exist_ok=True)
             (root/NEXT_ROSTER).write_text(released, encoding='utf-8')
-            pages = player_cards._build(root)[1]
-            self.assertFalse(any(rel.startswith(CARD_FOLDER+'/') for rel in pages))
+            files, _ = player_pages.build(root)
+            self.assertFalse(any(rel.startswith(CARD_FOLDER+'/') for rel in files))
             self.assertEqual(refresh_cards(2014, root, check=True), [])
             self.assertEqual(self.snapshot(cards), frozen)
 

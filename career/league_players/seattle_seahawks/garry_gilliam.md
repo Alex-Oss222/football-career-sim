@@ -1,15 +1,22 @@
 # Garry Gilliam
 
-![Garry Gilliam career card](assets/garry_gilliam.svg)
+**Seattle Seahawks · Offensive tackle · No. 79 · Age 23 · Last game October 6, 2014**
 
-## Career stats
+6' 5", 306 lb · Born November 26, 1990 · Penn State
+
+As of October 6, 2014, after Week 5.
+
+![Garry Gilliam](https://commons.wikimedia.org/wiki/Special:FilePath/Garry_Gilliam_%2852087267209%29_%28cropped%29.jpg?width=500)
+
+*Photo: Governor Tom Wolf from Harrisburg, PA, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Garry_Gilliam_(52087267209)_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Seattle Seahawks | 23 | 79 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 |
-| **Career** |  |  |  | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 23 | 79 | 4 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+<!-- player-page -->

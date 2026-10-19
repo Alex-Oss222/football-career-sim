@@ -1,16 +1,34 @@
 # Donald Brown
 
-![Donald Brown career card](assets/donald_brown.svg)
+**San Diego Chargers · Running back · No. 34 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 207 lb · Born April 11, 1987 · Connecticut · Drafted in 2009, first round, by Indianapolis
+
+As of October 5, 2014, after Week 5.
+
+![Donald Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Donald_Brown.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Donald_Brown.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 26 | 31 | 16 | 83 | 373 | 4.5 | 2 | 23.3 | 15 | 97 | 0 | 98 | 0 |
-| 2014 | San Diego Chargers | 27 | 34 | 5 | 19 | 77 | 4.1 | 0 | 15.4 | 1 | 5 | 0 | 20 | 0 |
-| **Career** |  |  |  | 21 | 102 | 450 | 4.4 | 2 | 21.4 | 16 | 102 | 0 | 118 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 27 | 34 | 5 | 19 | 77 | 4.1 | 0 | 14 | 15.4 |
+| 2013 | Indianapolis | 26 | 31 | 16 | 83 | 373 | 4.5 | 2 | 23 | 23.3 |
+| Career |  |  |  | 21 | 102 | 450 | 4.4 | 2 | 23 | 21.4 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 27 | 34 | 2 | 1 | 5 | 5.0 | 0 | 0 | 0 |
+| 2013 | Indianapolis | 26 | 31 | 26 | 15 | 97 | 6.5 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 27 | 34 | 13 | 306 | 23.5 | 0 | 0 | N/A |
+| 2013 | Indianapolis | 26 | 31 | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +36,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Indianapolis in the first round |
+
+<!-- player-page -->

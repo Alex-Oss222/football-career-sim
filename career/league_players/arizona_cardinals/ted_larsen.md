@@ -1,28 +1,39 @@
 # Ted Larsen
 
-![Ted Larsen career card](assets/ted_larsen.svg)
+**Arizona Cardinals · Guard · No. 62 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 305 lb · Born June 13, 1987 · N.C. State · Drafted in 2010, sixth round, by New England
+
+As of October 5, 2014, after Week 5.
+
+![Ted Larsen](https://commons.wikimedia.org/wiki/Special:FilePath/Ted_Larsen.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ted_Larsen.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 26 | 62 | 16 | N/A | N/A | 6 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Arizona Cardinals | 27 | 62 | 4 | 4 | 251 | 3 | 18 | 0 | 0 | 0 | 0 | 62.8 |
-| **Career** |  |  |  | 20 | N/A | N/A | 9 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Arizona | 27 | 62 | 4 | 4 | 251 | 3 | 18 |
+| 2013 | Tampa Bay | 26 | 62 | 16 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 26 | 62 | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 26 | 62 | 1 | N/A | N/A | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Arizona Cardinals players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by New England in the sixth round |
+
+<!-- player-page -->

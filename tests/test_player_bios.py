@@ -173,5 +173,69 @@ class PlayerBiographyTests(unittest.TestCase):
                     self.assertRaisesRegex(ValueError, "Verify birth date before preparing player: Nobody Listed"):
                 preseason.build_package(paths, 1, [])
 
+
+class CanonOverrideTests(unittest.TestCase):
+    """The user's canon birth-date change (rebuild step 3a) is applied on top of the research
+    registry, which stays as researched, and fails closed if the registry moves under it."""
+
+    def registry(self):
+        return json.loads((ROOT / player_bios.REGISTRY).read_text(encoding="utf-8"))["players"]
+
+    def test_cousins_reads_the_canon_date_everywhere_and_the_research_stays(self):
+        self.assertEqual(self.registry()["Kirk Cousins"]["birth_date"], "1988-08-19")
+        self.assertEqual(player_bios.load(ROOT, overrides=False)["Kirk Cousins"]["birth_date"], "1988-08-19")
+        cousins = player_bios.load(ROOT)["Kirk Cousins"]
+        self.assertEqual((cousins["birth_date"], cousins["library_birth_date"], cousins["canon_override"]),
+                         ("1991-08-19", "1988-08-19", "2026-10-19"))
+        self.assertEqual(cousins["gsis_id"], "00-0029604")
+        self.assertEqual(player_bios.age_on(cousins["birth_date"], "2014-10-05"), 23)
+        ages = player_bios.biographies(["Kirk Cousins"], "2014-10-05")
+        self.assertEqual(ages["Kirk Cousins"]["age"], 23)
+        row = player_bios.birth_date_overrides(ROOT)["Kirk Cousins"]
+        self.assertIn("move his b-day to 1991", row["words"])
+        self.assertEqual(row["decided"], "2026-10-19")
+        # Every other registry row is untouched.
+        loaded = player_bios.load(ROOT)
+        changed = [n for n, r in self.registry().items() if loaded[n]["birth_date"] != r.get("birth_date")]
+        self.assertEqual(changed, ["Kirk Cousins"])
+
+    def test_age_views_read_the_override(self):
+        self.assertIn("| Kirk Cousins | QB | 1991-08-19 | 23 |",
+                      re.sub(r"\| +", "| ", current_record("player_ages").read_text(encoding="utf-8")))
+
+    def test_an_override_fails_closed_when_the_registry_moves(self):
+        rows = player_bios.birth_date_overrides(ROOT)
+        base = player_bios.load(ROOT, overrides=False)
+        moved = dict(base, **{"Kirk Cousins": dict(base["Kirk Cousins"], birth_date="1988-08-20")})
+        with self.assertRaisesRegex(ValueError, "no longer matches"):
+            player_bios.apply_overrides(moved, rows)
+        other = dict(base, **{"Kirk Cousins": dict(base["Kirk Cousins"], gsis_id="00-0000000")})
+        with self.assertRaisesRegex(ValueError, "no registry identity"):
+            player_bios.apply_overrides(other, rows)
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / player_bios.OVERRIDES
+            path.parent.mkdir(parents=True)
+            broken = json.loads((ROOT / player_bios.OVERRIDES).read_text(encoding="utf-8"))
+            del broken["birth_dates"]["Kirk Cousins"]["words"]
+            path.write_text(json.dumps(broken), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "incomplete"):
+                player_bios.birth_date_overrides(tmp)
+            self.assertEqual(player_bios.birth_date_overrides(Path(tmp) / "elsewhere"), {})
+
+    def test_no_closed_game_record_carries_an_age(self):
+        # Game preparation reads birth dates only as public metadata beside the inputs
+        # (week_inputs, preseason); a closed game record holds no age or birth date, so the
+        # override changes none of them.
+        from runtime.seasons import SeasonPaths
+        checked = 0
+        for year in (2013, 2014):
+            for folder in (SeasonPaths(year, ROOT).receipts, SeasonPaths(year, ROOT).postseason_receipts):
+                for path in sorted(folder.glob("*.json")) if folder.is_dir() else ():
+                    text = path.read_text(encoding="utf-8")
+                    self.assertIsNone(re.search(r'"(player_ages|age|birth_date)": ', text), path)
+                    checked += 1
+        self.assertGreater(checked, 300)
+
+
 if __name__ == "__main__":
     unittest.main()

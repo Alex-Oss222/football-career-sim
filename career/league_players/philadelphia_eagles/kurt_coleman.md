@@ -1,15 +1,26 @@
 # Kurt Coleman
 
-![Kurt Coleman career card](assets/kurt_coleman.svg)
+**Philadelphia Eagles · Free safety · Age 25 · Last game December 29, 2013**
 
-## Career stats
+5' 11", 200 lb · Born July 1, 1988 · Ohio State · Drafted in 2010, seventh round, by Philadelphia
+
+As of December 29, 2013, after Week 17.
+
+![Kurt Coleman](https://commons.wikimedia.org/wiki/Special:FilePath/Kurt_Coleman.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Kurt_Coleman.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 25 | 42 | 14 | 29 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 2.1 | 0 |
-| **Career** |  |  |  | 14 | 29 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 2.1 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 25 | 42 | 14 | 29 | 21 | 8 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 25 | 42 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +28,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Philadelphia Eagles players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Philadelphia in the seventh round |
+
+<!-- player-page -->

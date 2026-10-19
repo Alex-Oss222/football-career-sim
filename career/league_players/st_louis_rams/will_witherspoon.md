@@ -1,27 +1,41 @@
 # Will Witherspoon
 
-![Will Witherspoon career card](assets/will_witherspoon.svg)
+**St. Louis Rams · Outside linebacker · Age 33 · Last game January 12, 2014**
 
-## Career stats
+6' 1", 242 lb · Born August 19, 1980 · Georgia · Drafted in 2002, third round, by Carolina
+
+As of January 12, 2014, after the Divisional round.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 33 | 51 | 16 | 102 | 5 | 7 | 1 | 3 | 1 | 1 | 10 | 6.4 | 70 |
-| **Career** |  |  |  | 16 | 102 | 5 | 7 | 1 | 3 | 1 | 1 | 10 | 6.4 | 70 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 33 | 51 | 16 | 102 | 70 | 32 | 7 | 5 | 10 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 33 | 51 | 1 | 0 | 3 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 33 | 51 | 1 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7.0 | 5 |
-| **Career** |  |  |  | 1 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7.0 | 5 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 33 | 51 | 1 | 7 | 5 | 2 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 33 | 51 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 12, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All St. Louis Rams players](README.md).
+| Date | Transaction |
+|---|---|
+| 2002 | Drafted by Carolina in the third round |
+
+<!-- player-page -->

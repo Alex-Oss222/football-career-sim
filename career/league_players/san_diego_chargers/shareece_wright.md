@@ -1,16 +1,29 @@
 # Shareece Wright
 
-![Shareece Wright career card](assets/shareece_wright.svg)
+**San Diego Chargers · Cornerback · No. 29 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 182 lb · Born April 8, 1987 · USC · Drafted in 2011, third round, by San Diego
+
+As of October 5, 2014, after Week 5.
+
+![Shareece Wright](https://commons.wikimedia.org/wiki/Special:FilePath/Shareece_Wright.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Shareece_Wright.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Diego Chargers | 26 | 29 | 16 | 49 | 2 | 11 | 9 | 0 | 1 | 0 | 0 | 3.1 | 0 |
-| 2014 | San Diego Chargers | 27 | 29 | 5 | 22 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 4.4 | 0 |
-| **Career** |  |  |  | 21 | 71 | 2 | 15 | 9 | 1 | 1 | 0 | 0 | 3.4 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 27 | 29 | 5 | 22 | 16 | 6 | 1 | 0 | 0 |
+| 2013 | San Diego | 26 | 29 | 16 | 49 | 27 | 22 | 0 | 1 | 3 |
+| Career |  |  |  | 21 | 71 | 43 | 28 | 1 | 1 | 3 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 27 | 29 | 0 | 0 | 4 | 0 | 0 | 0 |
+| 2013 | San Diego | 26 | 29 | 2 | 9 | 11 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by San Diego in the third round |
+
+<!-- player-page -->

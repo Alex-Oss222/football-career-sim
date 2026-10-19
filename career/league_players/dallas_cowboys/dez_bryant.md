@@ -1,28 +1,52 @@
 # Dez Bryant
 
-![Dez Bryant career card](assets/dez_bryant.svg)
+**Dallas Cowboys · Wide receiver · No. 88 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 220 lb · Born November 4, 1988 · Oklahoma State · Drafted in 2010, first round, by Dallas
+
+As of October 5, 2014, after Week 5.
+
+![Dez Bryant](https://commons.wikimedia.org/wiki/Special:FilePath/Dez_Bryant_at_training_camp.jpg?width=500)
+
+*Photo: Jovie & Mayra Griffith from San Pedro, CA, USA, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Dez_Bryant_at_training_camp.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 24 | 88 | 16 | 155 | 89 | 791 | 8.9 | 3 | 49.4 | 57.4 | 35 | 19 | 3 |
-| 2014 | Dallas Cowboys | 25 | 88 | 5 | 35 | 22 | 226 | 10.3 | 1 | 45.2 | 62.9 | 33 | 0 | 1 |
-| **Career** |  |  |  | 21 | 190 | 111 | 1,017 | 9.2 | 4 | 48.4 | 58.4 | 35 | 19 | 4 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Dallas | 25 | 88 | 5 | 35 | 22 | 226 | 10.3 | 1 | 33 | 45.2 | 62.9 |
+| 2013 | Dallas | 24 | 88 | 16 | 155 | 89 | 791 | 8.9 | 3 | 35 | 49.4 | 57.4 |
+| Career |  |  |  | 21 | 190 | 111 | 1,017 | 9.2 | 4 | 35 | 48.4 | 58.4 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Dallas | 25 | 88 | 0 | 0 | 0 | 1 | 1 |
+| 2013 | Dallas | 24 | 88 | 8 | 19 | 0 | 3 | 3 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 24 | 88 | 2 | 15 | 10 | 64 | 6.4 | 0 | 32.0 | 66.7 | 14 | 2 | 1 |
-| **Career** |  |  |  | 2 | 15 | 10 | 64 | 6.4 | 0 | 32.0 | 66.7 | 14 | 2 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 24 | 88 | 2 | 15 | 10 | 64 | 6.4 | 0 | 14 | 32.0 | 66.7 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 24 | 88 | 1 | 2 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 24 | 88 | 0 | 0 | N/A | 1 | 21 | 21.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Dallas in the first round |
+
+<!-- player-page -->

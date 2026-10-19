@@ -1,15 +1,26 @@
 # Christian Kirksey
 
-![Christian Kirksey career card](assets/christian_kirksey.svg)
+**Cleveland Browns · Outside linebacker · No. 58 · Age 22 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 235 lb · Born August 31, 1992 · Iowa
+
+As of October 5, 2014, after Week 5.
+
+![Christian Kirksey](https://commons.wikimedia.org/wiki/Special:FilePath/Christian_Kirksey_Cleveland_Browns_New_Uniform_Unveiling_%2817153806041%29.jpg?width=500)
+
+*Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Christian_Kirksey_Cleveland_Browns_New_Uniform_Unveiling_(17153806041).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Cleveland Browns | 22 | 58 | 4 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.5 | 1 |
-| **Career** |  |  |  | 4 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.5 | 1 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 22 | 58 | 4 | 2 | 1 | 1 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 22 | 58 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+<!-- player-page -->

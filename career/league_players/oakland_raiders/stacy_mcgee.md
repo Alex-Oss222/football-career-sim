@@ -1,16 +1,29 @@
 # Stacy McGee
 
-![Stacy McGee career card](assets/stacy_mcgee.svg)
+**Oakland Raiders · Defensive tackle · No. 92 · Age 24 · Last game September 28, 2014**
 
-## Career stats
+6' 3", 310 lb · Born January 17, 1990 · Oklahoma
+
+As of September 28, 2014, after Week 4.
+
+![Stacy McGee](https://commons.wikimedia.org/wiki/Special:FilePath/Stacy_McGee.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Stacy_McGee.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Oakland Raiders | 23 | 92 | 16 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.1 | 1 |
-| 2014 | Oakland Raiders | 24 | 92 | 4 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 0.5 | 1 |
-| **Career** |  |  |  | 20 | 3 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 0.1 | 2 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 24 | 92 | 4 | 2 | 1 | 1 | 1 | 0 | 1 |
+| 2013 | Oakland | 23 | 92 | 16 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 20 | 3 | 2 | 1 | 1 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 24 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Oakland | 23 | 92 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Oakland Raiders players](README.md).
+<!-- player-page -->

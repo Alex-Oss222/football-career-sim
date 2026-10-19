@@ -26,8 +26,8 @@ A script that talks to the private Engine State service needs `ENGINE_RUNTIME_UR
 | `python scripts/league_awards.py week N --season YEAR [--close] [--note TEXT]` | Weekly awards: dry run, or the audited draw with `--close` |
 | `python scripts/league_awards.py month NAME --season YEAR [--close]` | Monthly awards on the league's announcement date |
 | `python scripts/league_awards.py render --season YEAR` | Rewrites the award pages |
-| `python scripts/render_player_cards.py [--check] [--root PATH]` | League player cards under `career/league_players/` |
-| `python scripts/update_player_cards.py YEAR [--check]` | Refreshes statistics on the working player cards without rewriting assessments |
+| `python scripts/render_player_pages.py [--check] [--root PATH]` | Every player page, built from the permanent player records (`data/people/players/`): the league pages under `career/league_players/` and the active season's Jacksonville player folder; `--check` also fails on a record that breaks the schema or an award whose winner is not in the game records |
+| `python scripts/update_player_cards.py YEAR [--check]` | Refreshes statistics on a player card still in the earlier card layout (built pages are skipped); `--check` validates the season's opening assessments, on the records for built pages |
 | `python scripts/render_observables.py --season YEAR --week N [--check]` | Backfills or checks a closed week's participation observables |
 | `python scripts/render_inseason_rails.py --season YEAR [--week N] [--write] [--check] [--event ID]` | One week's in-season rails page from the committed rails data |
 | `python scripts/render_coach_record.py YEAR [--opponent NAME] [--date YYYY-MM-DD]` | Stone's head-coaching record table for the weekly Coach info block |

@@ -1,27 +1,37 @@
 # Rodger Saffold
 
-![Rodger Saffold career card](assets/rodger_saffold.svg)
+**St. Louis Rams · Guard · No. 76 · Age 25 · Last game January 12, 2014**
 
-## Career stats
+6' 5", 332 lb · Born June 6, 1988 · Indiana · Drafted in 2010, second round, by St. Louis
+
+As of January 12, 2014, after the Divisional round.
+
+![Rodger Saffold](https://commons.wikimedia.org/wiki/Special:FilePath/Rodger_Saffold_2019_10-13.jpg?width=500)
+
+*Photo: Chipermc, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Rodger_Saffold_2019_10-13.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 25 | 76 | 14 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 14 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 25 | 76 | 14 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 25 | 76 | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 25 | 76 | 1 | N/A | N/A | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 12, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by St. Louis in the second round |
+
+<!-- player-page -->

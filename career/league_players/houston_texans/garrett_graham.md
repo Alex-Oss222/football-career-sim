@@ -1,16 +1,24 @@
 # Garrett Graham
 
-![Garrett Graham career card](assets/garrett_graham.svg)
+**Houston Texans · Tight end · No. 88 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 243 lb · Born August 4, 1986 · Wisconsin · Drafted in 2010, fourth round, by Houston
+
+As of October 5, 2014, after Week 5.
+
+![Garrett Graham](https://commons.wikimedia.org/wiki/Special:FilePath/Garrett_Graham_Touchdown.jpg?width=500)
+
+*Photo: AndyLindgren, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Garrett_Graham_Touchdown.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Houston Texans | 27 | 88 | 16 | 16 | 10 | 123 | 12.3 | 1 | 7.7 | 62.5 | 38 | 0 | 0 |
-| 2014 | Houston Texans | 28 | 88 | 5 | 28 | 17 | 221 | 13.0 | 0 | 44.2 | 60.7 | 36 | 0 | 0 |
-| **Career** |  |  |  | 21 | 44 | 27 | 344 | 12.7 | 1 | 16.4 | 61.4 | 38 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Houston | 28 | 88 | 5 | 28 | 17 | 221 | 13.0 | 0 | 36 | 44.2 | 60.7 |
+| 2013 | Houston | 27 | 88 | 16 | 16 | 10 | 123 | 12.3 | 1 | 38 | 7.7 | 62.5 |
+| Career |  |  |  | 21 | 44 | 27 | 344 | 12.7 | 1 | 38 | 16.4 | 61.4 |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Houston Texans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Houston in the fourth round |
+
+<!-- player-page -->

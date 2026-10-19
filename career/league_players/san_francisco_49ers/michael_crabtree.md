@@ -1,15 +1,22 @@
 # Michael Crabtree
 
-![Michael Crabtree career card](assets/michael_crabtree.svg)
+**San Francisco 49ers · Wide receiver · No. 15 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 214 lb · Born September 14, 1987 · Texas Tech · Drafted in 2009, first round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![Michael Crabtree](https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Crabtree_at_49ers_training_camp_2010-08-09_1.JPG?width=500)
+
+*Photo: BrokenSphere, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Michael_Crabtree_at_49ers_training_camp_2010-08-09_1.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | San Francisco 49ers | 26 | 15 | 5 | 53 | 40 | 407 | 10.2 | 3 | 81.4 | 75.5 | 37 | 0 | 0 |
-| **Career** |  |  |  | 5 | 53 | 40 | 407 | 10.2 | 3 | 81.4 | 75.5 | 37 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 26 | 15 | 5 | 53 | 40 | 407 | 10.2 | 3 | 37 | 81.4 | 75.5 |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by San Francisco in the first round |
+
+<!-- player-page -->

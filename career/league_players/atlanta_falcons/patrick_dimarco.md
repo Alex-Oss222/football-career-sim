@@ -1,15 +1,26 @@
 # Patrick DiMarco
 
-![Patrick DiMarco career card](assets/patrick_dimarco.svg)
+**Atlanta Falcons · Fullback · No. 42 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 234 lb · Born April 30, 1989 · South Carolina
+
+As of October 5, 2014, after Week 5.
+
+![Patrick DiMarco](https://commons.wikimedia.org/wiki/Special:FilePath/Patrick_DiMarco_2013.jpg?width=500)
+
+*Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Patrick_DiMarco_2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Atlanta Falcons | 25 | 42 | 5 | 2 | 13 | 6.5 | 0 | 2.6 | 0 | 0 | 0 | 2 | 0 |
-| **Career** |  |  |  | 5 | 2 | 13 | 6.5 | 0 | 2.6 | 0 | 0 | 0 | 2 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 25 | 42 | 5 | 2 | 13 | 6.5 | 0 | 13 | 2.6 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 25 | 42 | 1 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+<!-- player-page -->

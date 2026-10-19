@@ -1,27 +1,41 @@
 # Landon Cohen
 
-![Landon Cohen career card](assets/landon_cohen.svg)
+**Dallas Cowboys · Defensive tackle · Age 27 · Last game January 11, 2014**
 
-## Career stats
+6' 1", 300 lb · Born August 3, 1986 · Ohio · Drafted in 2008, seventh round, by Detroit
+
+As of January 11, 2014, after the Divisional round.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 27 | N/A | 16 | 4 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0.2 | 3 |
-| **Career** |  |  |  | 16 | 4 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0.2 | 3 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 27 | N/A | 16 | 4 | 3 | 1 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 27 | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 27 | N/A | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 27 | N/A | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 27 | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 11, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Dallas Cowboys players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Detroit in the seventh round |
+
+<!-- player-page -->

@@ -1,29 +1,38 @@
 # Jeff Locke
 
-![Jeff Locke career card](assets/jeff_locke.svg)
+**Minnesota Vikings · Punter · No. 18 · Age 25 · Last game October 2, 2014**
 
-## Career stats
+6' 0", 203 lb · Born September 27, 1989 · UCLA
+
+As of October 2, 2014, after Week 5.
+
+![Jeff Locke](https://commons.wikimedia.org/wiki/Special:FilePath/Jeff_Locke.JPG?width=500)
+
+*Photo: MN National Guard, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jeff_Locke.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 23 | 18 | 16 | 80 | 3,726 | 46.6 | 41.0 | 34 | 71 | 3 | 42.5 | 5.0 | 388 |
-| 2014 | Minnesota Vikings | 24 | 18 | 5 | 33 | 1,428 | 43.3 | 38.8 | 13 | 66 | 0 | 39.4 | 6.6 | 149 |
-| **Career** |  |  |  | 21 | 113 | 5,154 | 45.6 | 40.3 | 47 | 71 | 3 | 41.6 | 5.4 | 537 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 24 | 18 | 5 | 33 | 1,428 | 43.3 | 38.8 | 13 | 0 | 66 |
+| 2013 | Minnesota | 23 | 18 | 16 | 80 | 3,726 | 46.6 | 41.0 | 34 | 3 | 71 |
+| Career |  |  |  | 21 | 113 | 5,154 | 45.6 | 40.3 | 47 | 3 | 71 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 23 | 18 | 3 | 13 | 623 | 47.9 | 38.4 | 1 | 61 | 1 | 7.7 | 4.3 | 104 |
-| **Career** |  |  |  | 3 | 13 | 623 | 47.9 | 38.4 | 1 | 61 | 1 | 7.7 | 4.3 | 104 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 23 | 18 | 3 | 13 | 623 | 47.9 | 38.4 | 1 | 1 | 61 |
 
 ## Awards
 
 - AP Second-Team All-Pro (2013, P)
 - Pro Bowl selection (2013, P)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+None on record.
+
+<!-- player-page -->

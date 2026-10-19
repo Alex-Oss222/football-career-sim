@@ -1,164 +1,83 @@
-# Jeremy Mincey — 2014 Player Profile
+# Jeremy Mincey
 
-<!-- player-card:begin -->
-![Jeremy Mincey career card](../../../../league_players/jacksonville_jaguars/assets/jeremy_mincey.svg)
+**Jacksonville Jaguars · Defensive end · No. 92 · Age 30 · Active roster**
 
-[Career statistics](../../../../league_players/jacksonville_jaguars/jeremy_mincey.md)
-<!-- player-card:end -->
+6' 4", 280 lb · Born December 14, 1983 · Florida; Butler County JC · Drafted in 2006, sixth round, by New England
 
-<!-- photo -->
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy_Mincey.JPG?width=500" alt="Jeremy Mincey" width="160">
+As of October 5, 2014, after Week 5.
+
+![Jeremy Mincey](https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy_Mincey.JPG?width=500)
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jeremy_Mincey.JPG)).*
-<!-- /photo -->
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** March 31, 2014 starting evaluation  
-**Age:** 30  
-**Position:** DE  
-**NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** A sturdy edge defender who offers power, run setting and rotational rush work. I see a balanced role player whose speed/bend are less threatening than his physical edge play.  
-**Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/jeremy_mincey.md)  
+## Staff assessment
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
-
-## Player grades
-
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 5.5 /10 | Staff judgment |
-| Athleticism | 5.0 /10 | Staff judgment |
-| Speed | 4.5 /10 | Staff judgment |
-| Strength / Power | 6.0 /10 | Staff judgment |
-| Agility / Change of direction | 4.5 /10 | Staff judgment |
-| Technique | 5.5 /10 | Staff judgment |
-| Football IQ | 5.5 /10 | Staff judgment |
-| Get-off | 5.0 /10 | Staff judgment |
-| Edge speed / bend | 4.5 /10 | Staff judgment |
-| Power | 6.0 /10 | Staff judgment |
-| Hand use / counters | 5.5 /10 | Staff judgment |
-| Edge setting / run defense | 6.0 /10 | Staff judgment |
-| Block shedding | 5.5 /10 | Staff judgment |
-| Pursuit | 5.0 /10 | Staff judgment |
-| Rush plan / recognition | 5.0 /10 | Staff judgment |
-| Contain discipline | 5.5 /10 | Staff judgment |
-
-Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | At NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Get-off | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Edge speed / bend | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Power | At NFL starter standard | Below elite standard | Above low-end standard |
-| Hand use / counters | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Edge setting / run defense | At NFL starter standard | Below elite standard | Above low-end standard |
-| Block shedding | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Pursuit | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Rush plan / recognition | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Contain discipline | Below NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards, not measured 2014 league ranks.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 5.5/10 |
+| Athleticism | 5.0/10 |
+| Speed | 4.5/10 |
+| Strength and power | 6.0/10 |
+| Agility and change of direction | 4.5/10 |
+| Technique | 5.5/10 |
+| Football IQ | 5.5/10 |
+| Get-off | 5.0/10 |
+| Edge speed and bend | 4.5/10 |
+| Power | 6.0/10 |
+| Hand use and counters | 5.5/10 |
+| Edge setting and run defense | 6.0/10 |
+| Block shedding | 5.5/10 |
+| Pursuit | 5.0/10 |
+| Rush plan and recognition | 5.0/10 |
+| Contain discipline | 5.5/10 |
 
 A sturdy edge defender who offers power, run setting and rotational rush work. I see a balanced role player whose speed/bend are less threatening than his physical edge play.
 
-Source: [2013 profile](../../../../2013/player_profiles/jeremy_mincey.md) and its recorded practice/game sources.
+*Staff view, March 31, 2014; dated updates through August 1, 2014.*
 
-## Year-over-year change
+## Contract
 
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Player identity and position traits | 2013 baseline | Starting 2014 view | Retained | No new individual football evidence establishing change |
+Four-year contract through 2015.
 
-## What supports this assessment
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | about $4,475,000 | Not settled |
+| 2015 | about $4,900,000 | Not settled |
 
-A sturdy edge defender who offers power, run setting and rotational rush work. I see a balanced role player whose speed/bend are less threatening than his physical edge play.
+## Statistics
 
-[2013 profile](../../../../2013/player_profiles/jeremy_mincey.md) and its recorded practice/game sources.
+### Regular season
 
-## Historical comparison
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 30 | 92 | 5 | 33 | 23 | 10 | 2 | 2 | 4 |
+| 2013 | Jacksonville | 29 | N/A | 16 | 15 | 12 | 3 | 3 | 1 | 3 |
+| With Jacksonville |  |  |  | 21 | 48 | 35 | 13 | 5 | 3 | 7 |
 
-The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 30 | 92 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 2013 | Jacksonville | 29 | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
 
-## Play style
+### Playoffs
 
-A sturdy edge defender who offers power, run setting and rotational rush work. I see a balanced role player whose speed/bend are less threatening than his physical edge play.
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 29 | N/A | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-## Best traits
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 29 | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
 
-- Power: 6.0 /10.
-- Edge setting / run defense: 6.0 /10.
-- Hand use / counters: 5.5 /10.
+## Awards
 
-## Main weaknesses
+None.
 
-- Edge speed / bend: 4.5 /10.
-- Get-off: 5.0 /10.
-- Pursuit: 5.0 /10.
+## Transactions
 
-## Evidence and uncertainty
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by New England in the sixth round |
+| 2012 | Signed a four-year contract with Jacksonville |
 
-- **Primary evidence:** [2013 profile](../../../../2013/player_profiles/jeremy_mincey.md) and its recorded practice/game sources.
-- **Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
-
-**One-line description:** A sturdy edge defender who offers power, run setting and rotational rush work. I see a balanced role player whose speed/bend are less threatening than his physical edge play.
-
-## 2013 season production
-
-| Statistic | 2013 regular season | 2013 playoffs |
-| --- | ---: | ---: |
-| G | 16 | 2 |
-| TOT | 15 | 0 |
-| SOLO | 12 | 0 |
-| AST | 3 | 0 |
-| TFL | 3 | 0 |
-| SCK | 1 | 0 |
-| PRESS | 3 | 0 |
-| PD | 0 | 0 |
-| INT | 0 | 0 |
-| FF | 0 | 0 |
-| FR | 0 | 0 |
-
-Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
-
-## Dated coaching updates
-
-### August 1, 2014 | Training camp
-
-Mincey kept contain on every recorded rep, won the edge once against Johnson with the long arm and executed PEEL. He supplied the steadier lane evidence in the open Edge 1 comparison.
-
-Source: [dated camp observations](../../../Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 30 | 92 | Through Week 5 | 5 | 33 | 23 | 10 | 2 | 2 | 4 | 0 | 0 | 1 | 1 | 345 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 30 | 92 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # Shawn Williams
 
-![Shawn Williams career card](assets/shawn_williams.svg)
+**Cincinnati Bengals · Strong safety · No. 36 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 216 lb · Born May 13, 1991 · Georgia
+
+As of October 5, 2014, after Week 5.
+
+![Shawn Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Shawn_Williams_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Shawn_Williams_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cincinnati Bengals | 22 | 40 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| 2014 | Cincinnati Bengals | 23 | 36 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cincinnati | 23 | 36 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Cincinnati | 22 | 40 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cincinnati | 23 | 36 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Cincinnati | 22 | 40 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cincinnati Bengals players](README.md).
+<!-- player-page -->

@@ -1,28 +1,39 @@
 # Anthony Fasano
 
-![Anthony Fasano career card](assets/anthony_fasano.svg)
+**Kansas City Chiefs · Tight end · No. 80 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 255 lb · Born April 20, 1984 · Notre Dame · Drafted in 2006, second round, by Dallas
+
+As of October 5, 2014, after Week 5.
+
+![Anthony Fasano](https://commons.wikimedia.org/wiki/Special:FilePath/Anthony_Fasano_vs_Jets_cropped.jpg?width=500)
+
+*Photo: Anthony_Fasano_Jets-Dolphin_game,_Nov_2009_-_040.jpg : Ed Yourdon derivative work: Ytoyoda ( talk ), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Anthony_Fasano_vs_Jets_cropped.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 29 | 80 | 16 | 93 | 59 | 619 | 10.5 | 5 | 38.7 | 63.4 | 43 | 0 | 0 |
-| 2014 | Kansas City Chiefs | 30 | 80 | 5 | 28 | 13 | 163 | 12.5 | 0 | 32.6 | 46.4 | 45 | 0 | 0 |
-| **Career** |  |  |  | 21 | 121 | 72 | 782 | 10.9 | 5 | 37.2 | 59.5 | 45 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 30 | 80 | 5 | 28 | 13 | 163 | 12.5 | 0 | 45 | 32.6 | 46.4 |
+| 2013 | Kansas City | 29 | 80 | 16 | 93 | 59 | 619 | 10.5 | 5 | 43 | 38.7 | 63.4 |
+| Career |  |  |  | 21 | 121 | 72 | 782 | 10.9 | 5 | 45 | 37.2 | 59.5 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 29 | 80 | 1 | 6 | 3 | 7 | 2.3 | 0 | 7.0 | 50.0 | 4 | 0 | 0 |
-| **Career** |  |  |  | 1 | 6 | 3 | 7 | 2.3 | 0 | 7.0 | 50.0 | 4 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 29 | 80 | 1 | 6 | 3 | 7 | 2.3 | 0 | 4 | 7.0 | 50.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Dallas in the second round |
+
+<!-- player-page -->

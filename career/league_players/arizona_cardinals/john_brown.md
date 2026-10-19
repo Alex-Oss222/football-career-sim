@@ -1,15 +1,26 @@
 # John Brown
 
-![John Brown career card](assets/john_brown.svg)
+**Arizona Cardinals · Wide receiver · No. 12 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 179 lb · Born April 3, 1990 · Pittsburg State
+
+As of October 5, 2014, after Week 5.
+
+![John Brown](https://commons.wikimedia.org/wiki/Special:FilePath/John_Brown_%28wide_receiver%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:John_Brown_(wide_receiver).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Arizona Cardinals | 24 | 12 | 4 | 15 | 12 | 174 | 14.5 | 1 | 43.5 | 80.0 | 80 | 7 | 0 |
-| **Career** |  |  |  | 4 | 15 | 12 | 174 | 14.5 | 1 | 43.5 | 80.0 | 80 | 7 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Arizona | 24 | 12 | 4 | 15 | 12 | 174 | 14.5 | 1 | 80 | 43.5 | 80.0 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Arizona | 24 | 12 | 1 | 7 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Arizona Cardinals players](README.md).
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # Andre Caldwell
 
-![Andre Caldwell career card](assets/andre_caldwell.svg)
+**Denver Broncos · Wide receiver · No. 12 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 200 lb · Born April 15, 1985 · Florida · Drafted in 2008, third round, by Cincinnati
+
+As of October 5, 2014, after Week 5.
+
+![Andre Caldwell](https://commons.wikimedia.org/wiki/Special:FilePath/Andre_Caldwell_2012.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Andre_Caldwell_2012.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Denver Broncos | 28 | 12 | 16 | 16 | 13 | 157 | 12.1 | 0 | 9.8 | 81.2 | 49 | 0 | 0 |
-| 2014 | Denver Broncos | 29 | 12 | 4 | 14 | 11 | 107 | 9.7 | 1 | 26.8 | 78.6 | 20 | 0 | 0 |
-| **Career** |  |  |  | 20 | 30 | 24 | 264 | 11.0 | 1 | 13.2 | 80.0 | 49 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 29 | 12 | 4 | 14 | 11 | 107 | 9.7 | 1 | 20 | 26.8 | 78.6 |
+| 2013 | Denver | 28 | 12 | 16 | 16 | 13 | 157 | 12.1 | 0 | 49 | 9.8 | 81.2 |
+| Career |  |  |  | 20 | 30 | 24 | 264 | 11.0 | 1 | 49 | 13.2 | 80.0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 29 | 12 | 13 | 393 | 30.2 | 0 | 0 | N/A |
+| 2013 | Denver | 28 | 12 | 1 | 14 | 14.0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Cincinnati in the third round |
+
+<!-- player-page -->

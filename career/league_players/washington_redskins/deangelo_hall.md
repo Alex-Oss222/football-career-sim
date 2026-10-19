@@ -1,16 +1,29 @@
 # DeAngelo Hall
 
-![DeAngelo Hall career card](assets/deangelo_hall.svg)
+**Washington Redskins · Cornerback · No. 23 · Age 30 · Last game October 6, 2014**
 
-## Career stats
+5' 10", 198 lb · Born November 19, 1983 · Virginia Tech · Drafted in 2004, first round, by Atlanta
+
+As of October 6, 2014, after Week 5.
+
+![DeAngelo Hall](https://commons.wikimedia.org/wiki/Special:FilePath/Deangelo_Hall_redskins_training_camp_2009.jpg?width=500)
+
+*Photo: Ghastlyghost, Public domain ([source](https://commons.wikimedia.org/wiki/File:Deangelo_Hall_redskins_training_camp_2009.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Washington Redskins | 29 | 23 | 16 | 115 | 1 | 17 | 5 | 7 | 0 | 1 | 1 | 7.2 | 0 |
-| 2014 | Washington Redskins | 30 | 23 | 5 | 33 | 0 | 3 | 0 | 1 | 0 | 1 | 1 | 6.6 | 0 |
-| **Career** |  |  |  | 21 | 148 | 1 | 20 | 5 | 8 | 0 | 2 | 2 | 7.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Washington | 30 | 23 | 5 | 33 | 25 | 8 | 1 | 0 | 1 |
+| 2013 | Washington | 29 | 23 | 16 | 115 | 75 | 40 | 7 | 0 | 1 |
+| Career |  |  |  | 21 | 148 | 100 | 48 | 8 | 0 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Washington | 30 | 23 | 0 | 0 | 3 | 1 | 1 | 0 |
+| 2013 | Washington | 29 | 23 | 1 | 5 | 17 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Washington Redskins players](README.md).
+| Date | Transaction |
+|---|---|
+| 2004 | Drafted by Atlanta in the first round |
+
+<!-- player-page -->

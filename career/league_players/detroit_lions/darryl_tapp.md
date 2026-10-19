@@ -1,16 +1,29 @@
 # Darryl Tapp
 
-![Darryl Tapp career card](assets/darryl_tapp.svg)
+**Detroit Lions · Defensive end · No. 52 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 270 lb · Born September 13, 1984 · Virginia Tech · Drafted in 2006, second round, by Seattle
+
+As of October 5, 2014, after Week 5.
+
+![Darryl Tapp](https://commons.wikimedia.org/wiki/Special:FilePath/Darryl_Tapp-Mar-24-08-Naval-BaseLittleCreek.jpg?width=500)
+
+*Photo: MC2 MATTHEW D. LEISTIKOW. Cropped by User:Blueag9 ., Public domain ([source](https://commons.wikimedia.org/wiki/File:Darryl_Tapp-Mar-24-08-Naval-BaseLittleCreek.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Washington Redskins | 28 | 54 | 16 | 18 | 3 | 1 | 0 | 2 | 0 | 0 | 4 | 1.1 | 11 |
-| 2014 | Detroit Lions | 29 | 52 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 21 | 18 | 3 | 1 | 0 | 2 | 0 | 0 | 4 | 0.9 | 11 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 29 | 52 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Washington | 28 | 54 | 16 | 18 | 11 | 7 | 1 | 3 | 4 |
+| Career |  |  |  | 21 | 18 | 11 | 7 | 1 | 3 | 4 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 29 | 52 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Washington | 28 | 54 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Seattle in the second round |
+
+<!-- player-page -->

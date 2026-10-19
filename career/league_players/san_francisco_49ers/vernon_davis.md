@@ -1,16 +1,29 @@
 # Vernon Davis
 
-![Vernon Davis career card](assets/vernon_davis.svg)
+**San Francisco 49ers · Tight end · No. 85 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 250 lb · Born January 31, 1984 · Maryland · Drafted in 2006, first round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![Vernon Davis](https://commons.wikimedia.org/wiki/Special:FilePath/Vernon_Davis_2018_%28cropped%29.jpg?width=500)
+
+*Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Vernon_Davis_2018_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 29 | 85 | 16 | 112 | 71 | 597 | 8.4 | 3 | 37.3 | 63.4 | 46 | 0 | 1 |
-| 2014 | San Francisco 49ers | 30 | 85 | 5 | 31 | 19 | 168 | 8.8 | 0 | 33.6 | 61.3 | 31 | 0 | 0 |
-| **Career** |  |  |  | 21 | 143 | 90 | 765 | 8.5 | 3 | 36.4 | 62.9 | 46 | 0 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 30 | 85 | 5 | 31 | 19 | 168 | 8.8 | 0 | 31 | 33.6 | 61.3 |
+| 2013 | San Francisco | 29 | 85 | 16 | 112 | 71 | 597 | 8.4 | 3 | 46 | 37.3 | 63.4 |
+| Career |  |  |  | 21 | 143 | 90 | 765 | 8.5 | 3 | 46 | 36.4 | 62.9 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 30 | 85 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | San Francisco | 29 | 85 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by San Francisco in the first round |
+
+<!-- player-page -->

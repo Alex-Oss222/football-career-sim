@@ -1,16 +1,20 @@
 # Brett Goode
 
-![Brett Goode career card](assets/brett_goode.svg)
+**Green Bay Packers · Long snapper · No. 61 · Age 29 · Last game October 2, 2014**
 
-## Career stats
+6' 1", 255 lb · Born November 2, 1984 · Arkansas
+
+As of October 2, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | LONG SNAPS | ST SNAPS | ST TKL | TKL | SOLO | AST | FF | FR | LONG SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Green Bay Packers | 28 | 61 | 16 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Green Bay Packers | 29 | 61 | 1 | 12 | 12 | 0 | 0 | 0 | 0 | 0 | 0 | 12.0 |
-| **Career** |  |  |  | 17 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 29 | 61 | 1 | 12 | 12 | 0 | 0 |
+| 2013 | Green Bay | 28 | 61 | 16 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 17 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 
@@ -18,8 +22,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All Green Bay Packers players](README.md).
+<!-- player-page -->

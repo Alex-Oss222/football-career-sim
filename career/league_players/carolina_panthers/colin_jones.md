@@ -1,15 +1,26 @@
 # Colin Jones
 
-![Colin Jones career card](assets/colin_jones.svg)
+**Carolina Panthers · Free safety · No. 42 · Age 26 · Last game December 29, 2013**
 
-## Career stats
+6' 0", 205 lb · Born October 27, 1987 · TCU · Drafted in 2011, sixth round, by San Francisco
+
+As of December 29, 2013, after Week 17.
+
+![Colin Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Colin_Jones_49ers.jpg?width=500)
+
+*Photo: Steve Bowles, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Colin_Jones_49ers.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 25 | 42 | 6 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 0 |
-| **Career** |  |  |  | 6 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Carolina | 25 | 42 | 6 | 1 | 0 | 1 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Carolina | 25 | 42 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +28,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by San Francisco in the sixth round |
+
+<!-- player-page -->

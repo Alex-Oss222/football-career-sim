@@ -1,15 +1,26 @@
 # Aaron Lynch
 
-![Aaron Lynch career card](assets/aaron_lynch.svg)
+**San Francisco 49ers · Outside linebacker · No. 59 · Age 21 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 270 lb · Born February 8, 1993 · South Florida
+
+As of October 5, 2014, after Week 5.
+
+![Aaron Lynch](https://commons.wikimedia.org/wiki/Special:FilePath/Bears_at_Redskins_2019%2C_Aaron_Lynch_%2848790913816%29_%28cropped%29.jpg?width=500)
+
+*Photo: All-Pro Reels from District of Columbia, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Bears_at_Redskins_2019,_Aaron_Lynch_(48790913816)_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | San Francisco 49ers | 21 | 59 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 21 | 59 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 21 | 59 | 0 | 0 | 0 | 0 | 0 | 4 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+<!-- player-page -->

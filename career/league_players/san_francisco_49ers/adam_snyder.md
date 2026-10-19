@@ -1,15 +1,22 @@
 # Adam Snyder
 
-![Adam Snyder career card](assets/adam_snyder.svg)
+**San Francisco 49ers · Guard · Age 31 · Last game December 29, 2013**
 
-## Career stats
+6' 6", 325 lb · Born January 30, 1982 · Oregon · Drafted in 2005, third round, by San Francisco
+
+As of December 29, 2013, after Week 17.
+
+![Adam Snyder](https://commons.wikimedia.org/wiki/Special:FilePath/Adam_Snyder_at_49ers_training_camp_2010-08-11.JPG?width=500)
+
+*Photo: BrokenSphere, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Adam_Snyder_at_49ers_training_camp_2010-08-11.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 31 | 68 | 2 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 2 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | San Francisco | 31 | 68 | 2 | N/A | N/A | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All San Francisco 49ers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2005 | Drafted by San Francisco in the third round |
+
+<!-- player-page -->

@@ -1,27 +1,41 @@
 # Sam Bradford
 
-![Sam Bradford career card](assets/sam_bradford.svg)
+**St. Louis Rams · Quarterback · Age 26 · Last game January 12, 2014**
 
-## Career stats
+6' 4", 224 lb · Born November 8, 1987 · Oklahoma · Drafted in 2010, first round, by St. Louis
+
+As of January 12, 2014, after the Divisional round.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 25 | 8 | 16 | 389-592 | 65.7 | 3,924 | 29 | 20 | 6.6 | 86.7 | 245.2 | 231 | 3 |
-| **Career** |  |  |  | 16 | 389-592 | 65.7 | 3,924 | 29 | 20 | 6.6 | 86.7 | 245.2 | 231 | 3 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 25 | 8 | 16 | 389 | 592 | 65.7 | 3,924 | 6.6 | 245.2 | 29 | 20 | 86.7 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 25 | 8 | 32 | 203 | 51 | 231 | 3 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 25 | 8 | 1 | 29-49 | 59.2 | 335 | 2 | 2 | 6.8 | 76.5 | 335.0 | 15 | 0 |
-| **Career** |  |  |  | 1 | 29-49 | 59.2 | 335 | 2 | 2 | 6.8 | 76.5 | 335.0 | 15 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 25 | 8 | 1 | 29 | 49 | 59.2 | 335 | 6.8 | 335.0 | 2 | 2 | 76.5 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 25 | 8 | 1 | 7 | 3 | 15 | 0 | 0 | 0 |
 
 ## Awards
 
 - Pro Bowl selection (2013, QB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 12, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All St. Louis Rams players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by St. Louis in the first round |
+
+<!-- player-page -->

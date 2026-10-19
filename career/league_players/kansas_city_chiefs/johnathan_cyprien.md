@@ -1,28 +1,46 @@
 # Johnathan Cyprien
 
-![Johnathan Cyprien career card](assets/johnathan_cyprien.svg)
+**Kansas City Chiefs · Strong safety · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 217 lb · Born July 29, 1990 · Florida International
+
+As of October 5, 2014, after Week 5.
+
+![Johnathan Cyprien](https://commons.wikimedia.org/wiki/Special:FilePath/Johnathan_Cyprien_2013_%28cropped%29.jpg?width=500)
+
+*Photo: U.S. Air Force 2nd Lt. Keenan Kunst, Public domain ([source](https://commons.wikimedia.org/wiki/File:Johnathan_Cyprien_2013_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 23 | N/A | 16 | 32 | 1 | 4 | 0 | 0 | 0 | 0 | 0 | 2.0 | 0 |
-| 2014 | Kansas City Chiefs | 24 | N/A | 5 | 15 | 1 | 1 | 17 | 1 | 0 | 0 | 0 | 3.0 | 0 |
-| **Career** |  |  |  | 21 | 47 | 2 | 5 | 17 | 1 | 0 | 0 | 0 | 2.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 24 | N/A | 5 | 15 | 6 | 9 | 1 | 0 | 0 |
+| 2013 | Kansas City | 23 | N/A | 16 | 32 | 22 | 10 | 0 | 0 | 1 |
+| Career |  |  |  | 21 | 47 | 28 | 19 | 1 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 24 | N/A | 1 | 17 | 1 | 0 | 0 | 0 |
+| 2013 | Kansas City | 23 | N/A | 1 | 0 | 4 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 23 | N/A | 1 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2.0 | 0 |
-| **Career** |  |  |  | 1 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 23 | N/A | 1 | 2 | 1 | 1 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 23 | N/A | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Kansas City Chiefs players](README.md).
+<!-- player-page -->

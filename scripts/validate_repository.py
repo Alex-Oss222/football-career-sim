@@ -397,17 +397,32 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
         errors.append(f'Invalid team tracker: {exc}')
 
-    # The league player cards (career/league_players) are a generated reader
-    # view of the game records: a game closed without re-rendering fails.
+    # Every player page (career/league_players and the Jacksonville player
+    # folder) is built from its permanent record (data/people/players) and the
+    # owners the record names: a game closed or a record changed without
+    # rebuilding fails, and so does a record that breaks the schema.
     try:
-        from scripts.render_player_cards import check as check_player_cards
-        card_errors = check_player_cards(root)
-        errors.extend(card_errors[:20])
-        if len(card_errors) > 20:
-            errors.append('League player cards: %d more stale or missing files; run '
-                          'scripts/render_player_cards.py' % (len(card_errors) - 20))
+        from runtime.player_pages import check as check_player_pages
+        page_errors = check_player_pages(root)
+        errors.extend(page_errors[:20])
+        if len(page_errors) > 20:
+            errors.append('Player pages: %d more stale or missing files; run '
+                          'scripts/render_player_pages.py' % (len(page_errors) - 20))
     except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
-        errors.append(f'Invalid league player cards: {exc}')
+        errors.append(f'Invalid player pages: {exc}')
+
+    # Clean pages (docs/rebuild_plan.md, rule 4): a built page, and any page
+    # written from 2014 Week 6 on, is football only. Folder map (stored-facts
+    # rule 2): no script or runtime module writes a season folder or a year
+    # into a path itself.
+    try:
+        from runtime.clean_pages import clean_errors, folder_map_errors
+        for label, found in (('Clean pages', clean_errors(root)), ('Folder map', folder_map_errors(root))):
+            errors.extend(found[:20])
+            if len(found) > 20:
+                errors.append('%s: %d more problems' % (label, len(found) - 20))
+    except (OSError, ValueError, KeyError, SyntaxError, TypeError) as exc:
+        errors.append(f'Clean-page or folder-map check failed: {exc}')
 
     # Season statistics are generated artifacts. Rebuild them from the durable
     # closed-game receipts so stale caches or hand-edited views fail closed.
@@ -416,9 +431,10 @@ def validate(root=ROOT):
         if str(ROOT) not in sys.path:
             sys.path.insert(0, str(ROOT))
         from scripts.render_season_stats import render_views
+        from runtime.seasons import SeasonPaths
 
-        stats_dir = root/'career/2013/stats'
-        receipt_paths = sorted((stats_dir/'game_receipts').glob('*.json'))
+        stats_dir = SeasonPaths(2013, root).stats
+        receipt_paths = sorted(SeasonPaths(2013, root).receipts.glob('*.json'))
         # Zero receipts is legitimate before the first regular-season game.
         receipts = []
         for receipt_path in receipt_paths:
@@ -446,8 +462,8 @@ def validate(root=ROOT):
                         )
 
         errors.extend(receipt_coverage_errors(receipts))
-        errors.extend(award_coverage_errors(receipts, root / 'career/2013/awards'))
-        errors.extend(season_honours_errors(root / 'career/2013/awards'))
+        errors.extend(award_coverage_errors(receipts, SeasonPaths(2013, root).awards_data))
+        errors.extend(season_honours_errors(SeasonPaths(2013, root).awards_data))
 
         expected_views = render_views(2013, 'Jacksonville Jaguars', receipts)
         for name, expected in expected_views.items():
@@ -491,7 +507,7 @@ def validate(root=ROOT):
     # Standings and weekly box scores are generated from the same receipts.
     try:
         from scripts.render_standings import render as render_standings
-        standings = (root/'career/2013/standings.md').read_text()
+        standings = SeasonPaths(2013, root).record('standings.md').read_text()
         require(standings == render_standings(2013, receipts),
                 'standings.md is stale; run render_standings.py')
     except (OSError, ValueError, KeyError, TypeError, NameError) as exc:
@@ -516,9 +532,9 @@ def validate(root=ROOT):
             errors.append(f'2014 opponent matrix cannot be rebuilt: {exc}')
     try:
         from scripts.render_box_score import stale_blocks
-        receipt_dir = root/'career/2013/stats/game_receipts'
-        outputs = sorted((root/'career/2013/regular_season').glob('*/output.md'))
-        outputs += sorted((root/'career/2013/postseason').glob('*/output.md'))
+        receipt_dir = SeasonPaths(2013, root).receipts
+        outputs = sorted(SeasonPaths(2013, root).regular_season.glob('*/output.md'))
+        outputs += sorted(SeasonPaths(2013, root).postseason.glob('*/output.md'))
         for output in outputs:
             for event_id in stale_blocks(output, receipt_dir):
                 require(False, f'{output.relative_to(root)}: box score for {event_id} '
@@ -540,8 +556,8 @@ def validate(root=ROOT):
     # each call names who it can describe, explicitly or through the family map.
     try:
         from runtime.call_families import sheet_errors
-        sheets = sorted((root/'career/2013/regular_season').glob('*/call_sheet.json'))
-        sheets += sorted((root/'career/2013/postseason').glob('*/call_sheet.json'))
+        sheets = sorted(SeasonPaths(2013, root).regular_season.glob('*/call_sheet.json'))
+        sheets += sorted(SeasonPaths(2013, root).postseason.glob('*/call_sheet.json'))
         for sheet_path in sheets:
             sheet = json.loads(sheet_path.read_text()).get('offensive_call_sheet', [])
             for problem in sheet_errors(sheet):

@@ -1,16 +1,29 @@
 # Matt Barkley
 
-![Matt Barkley career card](assets/matt_barkley.svg)
+**Oakland Raiders · Quarterback · Age 24 · Last game September 28, 2014**
 
-## Career stats
+6' 2", 227 lb · Born September 8, 1990 · USC
+
+As of September 28, 2014, after Week 4.
+
+![Matt Barkley](https://commons.wikimedia.org/wiki/Special:FilePath/2008-0808-MattBarkley.jpg?width=500)
+
+*Photo: Bobak Ha'Eri, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:2008-0808-MattBarkley.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Oakland Raiders | 22 | N/A | 16 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| 2014 | Oakland Raiders | 23 | N/A | 4 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| **Career** |  |  |  | 20 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 23 | N/A | 4 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2013 | Oakland | 22 | N/A | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 20 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 23 | N/A | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Oakland | 22 | N/A | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Oakland Raiders players](README.md).
+<!-- player-page -->

@@ -1,28 +1,37 @@
 # Cullen Loeffler
 
-![Cullen Loeffler career card](assets/cullen_loeffler.svg)
+**Minnesota Vikings · Long snapper · No. 46 · Age 33 · Last game October 2, 2014**
 
-## Career stats
+6' 5", 241 lb · Born January 27, 1981 · Texas
+
+As of October 2, 2014, after Week 5.
+
+![Cullen Loeffler](https://commons.wikimedia.org/wiki/Special:FilePath/Cullen_loeffler.jpg?width=500)
+
+*Photo: original: Joe Bielawa derivative: Diddykong1130, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cullen_loeffler.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | LONG SNAPS | ST SNAPS | ST TKL | TKL | SOLO | AST | FF | FR | LONG SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 32 | 46 | 16 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Minnesota Vikings | 33 | 46 | 5 | 47 | 47 | 0 | 0 | 0 | 0 | 0 | 0 | 9.4 |
-| **Career** |  |  |  | 21 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 33 | 46 | 5 | 47 | 47 | 0 | 0 |
+| 2013 | Minnesota | 32 | 46 | 16 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 21 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | LONG SNAPS | ST SNAPS | ST TKL | TKL | SOLO | AST | FF | FR | LONG SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 32 | 46 | 3 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 3 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 32 | 46 | 3 | N/A | N/A | N/A | 0 |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+<!-- player-page -->

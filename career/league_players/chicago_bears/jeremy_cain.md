@@ -1,28 +1,65 @@
 # Jeremy Cain
 
-![Jeremy Cain career card](assets/jeremy_cain.svg)
+**Chicago Bears · Long snapper · No. 44 · Age 34 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 245 lb · Born March 24, 1980 · UMass Amherst
+
+As of October 5, 2014, after Week 5.
+
+![Jeremy Cain](https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy_Cain.jpg?width=500)
+
+*Photo: Sgt. Randall A. Clinton, US Marine Corps, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jeremy_Cain.jpg)).*
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 6.0/10 |
+| Athleticism | 4.5/10 |
+| Speed | 4.0/10 |
+| Strength and power | 6.0/10 |
+| Agility and change of direction | 4.0/10 |
+| Technique | 6.0/10 |
+| Football IQ | 6.0/10 |
+| Snap accuracy | 6.5/10 |
+| Snap velocity | 6.0/10 |
+| Target consistency | 6.0/10 |
+| Field-goal snap trajectory | 6.0/10 |
+| Punt snap trajectory | 6.0/10 |
+| Protection transition | 5.5/10 |
+| Coverage and tackling | 4.5/10 |
+
+A specialist long snapper whose primary value is repeatable delivery and routine operation. I see snap utility as stronger than protection transition or coverage athleticism.
+
+*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | LONG SNAPS | ST SNAPS | ST TKL | TKL | SOLO | AST | FF | FR | LONG SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 33 | N/A | 16 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Chicago Bears | 34 | 44 | 5 | 46 | 46 | 0 | 0 | 0 | 0 | 0 | 0 | 9.2 |
-| **Career** |  |  |  | 21 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Chicago | 34 | 44 | 5 | 46 | 46 | 0 | 0 |
+| 2013 | Jacksonville | 33 | N/A | 16 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 21 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | LONG SNAPS | ST SNAPS | ST TKL | TKL | SOLO | AST | FF | FR | LONG SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 33 | N/A | 2 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 2 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 33 | N/A | 2 | N/A | N/A | N/A | 0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All Chicago Bears players](README.md).
+| Date | Transaction |
+|---|---|
+| February 2011 | Signed a three-year contract with Jacksonville |
+| March 19, 2014 | Re-signed with Jacksonville for one year |
+| August 30, 2014 | Released by Jacksonville at the reduction to 53 as a vested veteran |
+| September 1, 2014 | Signed with Chicago |
+
+<!-- player-page -->

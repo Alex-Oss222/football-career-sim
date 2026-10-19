@@ -1,28 +1,39 @@
 # Zach Strief
 
-![Zach Strief career card](assets/zach_strief.svg)
+**New Orleans Saints · Offensive tackle · No. 64 · Age 31 · Last game October 5, 2014**
 
-## Career stats
+6' 7", 320 lb · Born September 22, 1983 · Northwestern · Drafted in 2006, seventh round, by New Orleans
+
+As of October 5, 2014, after Week 5.
+
+![Zach Strief](https://commons.wikimedia.org/wiki/Special:FilePath/Zach_Strief.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Zach_Strief.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 29 | 64 | 16 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | New Orleans Saints | 30 | 64 | 5 | 5 | 329 | 3 | 23 | 0 | 0 | 0 | 0 | 65.8 |
-| **Career** |  |  |  | 21 | N/A | N/A | 11 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New Orleans | 30 | 64 | 5 | 5 | 329 | 3 | 23 |
+| 2013 | New Orleans | 29 | 64 | 16 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 11 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 29 | 64 | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 29 | 64 | 1 | N/A | N/A | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New Orleans Saints players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by New Orleans in the seventh round |
+
+<!-- player-page -->

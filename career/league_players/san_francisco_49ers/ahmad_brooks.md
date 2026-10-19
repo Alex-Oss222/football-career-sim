@@ -1,16 +1,29 @@
 # Ahmad Brooks
 
-![Ahmad Brooks career card](assets/ahmad_brooks.svg)
+**San Francisco 49ers · Outside linebacker · No. 55 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 259 lb · Born March 14, 1984 · Virginia · Drafted in 2006, third round, by Cincinnati
+
+As of October 5, 2014, after Week 5.
+
+![Ahmad Brooks](https://commons.wikimedia.org/wiki/Special:FilePath/Ahmad_Brooks.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ahmad_Brooks.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 29 | 55 | 16 | 23 | 0 | 2 | 0 | 0 | 0 | 0 | 2 | 1.4 | 11 |
-| 2014 | San Francisco 49ers | 30 | 55 | 5 | 31 | 2 | 0 | 0 | 0 | 0 | 0 | 3 | 6.2 | 21 |
-| **Career** |  |  |  | 21 | 54 | 2 | 2 | 0 | 0 | 0 | 0 | 5 | 2.6 | 32 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 30 | 55 | 5 | 31 | 21 | 10 | 0 | 2 | 3 |
+| 2013 | San Francisco | 29 | 55 | 16 | 23 | 11 | 12 | 2 | 0 | 2 |
+| Career |  |  |  | 21 | 54 | 32 | 22 | 2 | 2 | 5 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 30 | 55 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | San Francisco | 29 | 55 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Cincinnati in the third round |
+
+<!-- player-page -->

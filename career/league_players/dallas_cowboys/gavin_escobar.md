@@ -1,28 +1,33 @@
 # Gavin Escobar
 
-![Gavin Escobar career card](assets/gavin_escobar.svg)
+**Dallas Cowboys · Tight end · No. 89 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 260 lb · Born February 3, 1991 · San Diego State
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 22 | 89 | 16 | 1 | 1 | 4 | 4.0 | 0 | 0.2 | 100.0 | 4 | 0 | 0 |
-| 2014 | Dallas Cowboys | 23 | 89 | 5 | 3 | 1 | 13 | 13.0 | 0 | 2.6 | 33.3 | 13 | 0 | 0 |
-| **Career** |  |  |  | 21 | 4 | 2 | 17 | 8.5 | 0 | 0.8 | 50.0 | 13 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Dallas | 23 | 89 | 5 | 3 | 1 | 13 | 13.0 | 0 | 13 | 2.6 | 33.3 |
+| 2013 | Dallas | 22 | 89 | 16 | 1 | 1 | 4 | 4.0 | 0 | 4 | 0.2 | 100.0 |
+| Career |  |  |  | 21 | 4 | 2 | 17 | 8.5 | 0 | 13 | 0.8 | 50.0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 22 | 89 | 2 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| **Career** |  |  |  | 2 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 22 | 89 | 2 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).
+<!-- player-page -->

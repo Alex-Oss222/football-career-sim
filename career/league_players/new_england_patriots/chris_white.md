@@ -1,16 +1,25 @@
 # Chris White
 
-![Chris White career card](assets/chris_white.svg)
+**New England Patriots · Outside linebacker · No. 59 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 238 lb · Born January 15, 1989 · Mississippi State; Mississippi Gulf Coast CC · Drafted in 2011, sixth round, by Buffalo
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 24 | 59 | 16 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| 2014 | New England Patriots | 25 | 59 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 0 |
-| **Career** |  |  |  | 17 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.1 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 25 | 59 | 1 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | New England | 24 | 59 | 16 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 17 | 1 | 0 | 1 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 25 | 59 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | New England | 24 | 59 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,10 +27,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Schools listed: Mississippi State; Mississippi Gulf Coast CC.
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Buffalo in the sixth round |
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All New England Patriots players](README.md).
+<!-- player-page -->

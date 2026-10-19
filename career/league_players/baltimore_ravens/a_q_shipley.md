@@ -1,15 +1,22 @@
 # A.Q. Shipley
 
-![A.Q. Shipley career card](assets/a_q_shipley.svg)
+**Baltimore Ravens · Center · Age 27 · Last game December 29, 2013**
 
-## Career stats
+6' 1", 307 lb · Born May 22, 1986 · Penn State · Drafted in 2009, seventh round, by Pittsburgh
+
+As of December 29, 2013, after Week 17.
+
+![A.Q. Shipley](https://commons.wikimedia.org/wiki/Special:FilePath/A._Q._Shipley.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:A._Q._Shipley.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Baltimore Ravens | 27 | 68 | 11 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 11 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Baltimore | 27 | 68 | 11 | N/A | N/A | 1 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Baltimore Ravens players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Pittsburgh in the seventh round |
+
+<!-- player-page -->

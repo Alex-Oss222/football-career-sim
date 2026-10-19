@@ -1,15 +1,22 @@
 # Terrelle Pryor
 
-![Terrelle Pryor career card](assets/terrelle_pryor.svg)
+**Oakland Raiders · Quarterback · Age 24 · Last game December 29, 2013**
 
-## Career stats
+6' 4", 233 lb · Born June 20, 1989 · Ohio State
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Oakland Raiders | 24 | 2 | 16 | 342-555 | 61.6 | 3,587 | 16 | 15 | 6.5 | 78.7 | 224.2 | 154 | 1 |
-| **Career** |  |  |  | 16 | 342-555 | 61.6 | 3,587 | 16 | 15 | 6.5 | 78.7 | 224.2 | 154 | 1 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Oakland | 24 | 2 | 16 | 342 | 555 | 61.6 | 3,587 | 6.5 | 224.2 | 16 | 15 | 78.7 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Oakland | 24 | 2 | 33 | 214 | 43 | 154 | 1 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Oakland Raiders players](README.md).
+<!-- player-page -->

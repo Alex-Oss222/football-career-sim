@@ -1,15 +1,26 @@
 # Da'Rick Rogers
 
-![Da'Rick Rogers career card](assets/da_rick_rogers.svg)
+**Indianapolis Colts · Wide receiver · No. 16 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 215 lb · Born June 18, 1991 · Tennessee Technological Univ; Tennessee
+
+As of October 5, 2014, after Week 5.
+
+![Da'Rick Rogers](https://commons.wikimedia.org/wiki/Special:FilePath/Da%27Rick_Rogers.jpg?width=500)
+
+*Photo: Erik Daniel Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Da%27Rick_Rogers.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Indianapolis Colts | 23 | 16 | 4 | 2 | 1 | 6 | 6.0 | 0 | 1.5 | 50.0 | 6 | 6 | 0 |
-| **Career** |  |  |  | 4 | 2 | 1 | 6 | 6.0 | 0 | 1.5 | 50.0 | 6 | 6 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 23 | 16 | 4 | 2 | 1 | 6 | 6.0 | 0 | 6 | 1.5 | 50.0 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 23 | 16 | 1 | 6 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+<!-- player-page -->

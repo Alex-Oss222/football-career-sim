@@ -1,15 +1,48 @@
 # Charles Leno Jr.
 
-![Charles Leno Jr. career card](assets/charles_leno_jr.svg)
+**Jacksonville Jaguars · Offensive tackle · No. 72 · Age 22 · Active roster**
 
-## Career stats
+6' 3", 302 lb · Born October 9, 1991 · Boise State · Drafted in 2014, fifth round, by Jacksonville
+
+As of October 5, 2014, after Week 5.
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 3.5/10 |
+| Athleticism | 5.5/10 |
+| Speed | 4.5/10 |
+| Strength and power | 4.5/10 |
+| Agility and change of direction | 6.0/10 |
+| Technique | 5.0/10 |
+| Football IQ | 5.0/10 |
+| Foot quickness and set | 6.0/10 |
+| Anchor | 4.0/10 |
+| Run-block finish | 4.5/10 |
+
+A four-year college starter, 39 consecutive games, the last 26 at left tackle, with good short-area movement and a long frame; he did not run at the combine and his strength marks are light for the position.
+
+*Staff view, May 11, 2014.*
+
+## Contract
+
+Four-year contract through 2017.
+
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $420,000 | $462,870 |
+| 2015 | $510,000 | $552,870 |
+| 2016 | $600,000 | $642,870 |
+| 2017 | $690,000 | $732,870 |
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Jacksonville Jaguars | 22 | 72 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 |
-| **Career** |  |  |  | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 22 | 72 | 5 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,10 +50,13 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/charles_leno_jr.md)
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| May 10, 2014 | Drafted by Jacksonville (No. 168, fifth round) |
+| May 11, 2014 | Signed a four-year rookie contract with Jacksonville |
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: the number he wore in 2014 with the Chicago Bears (Jacksonville has not recorded one). [All Jacksonville Jaguars players](README.md).
+<!-- player-page -->

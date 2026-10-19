@@ -1,16 +1,24 @@
 # Bradley Sowell
 
-![Bradley Sowell career card](assets/bradley_sowell.svg)
+**Arizona Cardinals · Tight end · No. 79 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 7", 315 lb · Born June 6, 1989 · Mississippi
+
+As of October 5, 2014, after Week 5.
+
+![Bradley Sowell](https://commons.wikimedia.org/wiki/Special:FilePath/Bradley_Sowell.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Bradley_Sowell.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Arizona Cardinals | 24 | 79 | 16 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| 2014 | Arizona Cardinals | 25 | 79 | 4 | 1 | 1 | 4 | 4.0 | 0 | 1.0 | 100.0 | 4 | 0 | 0 |
-| **Career** |  |  |  | 20 | 1 | 1 | 4 | 4.0 | 0 | 0.2 | 100.0 | 4 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Arizona | 25 | 79 | 4 | 1 | 1 | 4 | 4.0 | 0 | 4 | 1.0 | 100.0 |
+| 2013 | Arizona | 24 | 79 | 16 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| Career |  |  |  | 20 | 1 | 1 | 4 | 4.0 | 0 | 4 | 0.2 | 100.0 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Arizona Cardinals players](README.md).
+<!-- player-page -->

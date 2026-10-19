@@ -1,146 +1,80 @@
-# Josh Scobee — 2014 Player Profile
+# Josh Scobee
 
-<!-- player-card:begin -->
-![Josh Scobee career card](../../../../league_players/jacksonville_jaguars/assets/josh_scobee.svg)
+**Jacksonville Jaguars · Kicker · No. 10 · Age 32 · Active roster**
 
-[Career statistics](../../../../league_players/jacksonville_jaguars/josh_scobee.md)
-<!-- player-card:end -->
+6' 1", 210 lb · Born June 23, 1982 · Louisiana Tech · Drafted in 2004, fifth round, by Jacksonville
 
-<!-- photo -->
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Scobee.jpg?width=500" alt="Josh Scobee" width="160">
+As of October 5, 2014, after Week 5.
+
+![Josh Scobee](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Scobee.jpg?width=500)
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Josh_Scobee.jpg)).*
-<!-- /photo -->
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** March 31, 2014 starting evaluation  
-**Age:** 31  
-**Position:** K  
-**NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** A starting NFL kicker with a useful long-distance leg and dependable established operation. I see range and ordinary accuracy ahead of precision kickoff control and my confidence in repeated pressure consistency.  
-**Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/josh_scobee.md)  
+## Staff assessment
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
-
-## Player grades
-
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 7.0 /10 | Staff judgment |
-| Athleticism | 5.5 /10 | Staff judgment |
-| Speed | 4.5 /10 | Staff judgment |
-| Strength / Power | 7.5 /10 | Staff judgment |
-| Agility / Change of direction | 4.5 /10 | Staff judgment |
-| Technique | 7.0 /10 | Staff judgment |
-| Football IQ | 6.5 /10 | Staff judgment |
-| Field-goal accuracy by distance | 7.0 /10 | Staff judgment |
-| Leg strength / range | 7.5 /10 | Staff judgment |
-| Kickoff distance / hang | 6.5 /10 | Staff judgment |
-| Directional kickoff control | 6.0 /10 | Staff judgment |
-| Snap-hold operation | 7.0 /10 | Staff judgment |
-| Pressure consistency | 6.5 /10 | Staff judgment |
-
-Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Field-goal accuracy by distance | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Leg strength / range | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Kickoff distance / hang | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Directional kickoff control | At NFL starter standard | Below elite standard | Above low-end standard |
-| Snap-hold operation | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Pressure consistency | Above NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards, not measured 2014 league ranks.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 7.0/10 |
+| Athleticism | 5.5/10 |
+| Speed | 4.5/10 |
+| Strength and power | 7.5/10 |
+| Agility and change of direction | 4.5/10 |
+| Technique | 7.0/10 |
+| Football IQ | 6.5/10 |
+| Field-goal accuracy by distance | 7.0/10 |
+| Leg strength and range | 7.5/10 |
+| Kickoff distance and hang | 6.5/10 |
+| Directional kickoff control | 6.0/10 |
+| Snap-hold operation | 7.0/10 |
+| Pressure consistency | 6.5/10 |
 
 A starting NFL kicker with a useful long-distance leg and dependable established operation. I see range and ordinary accuracy ahead of precision kickoff control and my confidence in repeated pressure consistency.
 
-Source: [2013 profile](../../../../2013/player_profiles/josh_scobee.md) and its recorded practice/game sources.
+*Staff view, March 31, 2014.*
 
-## Year-over-year change
+## Contract
 
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Player identity and position traits | 2013 baseline | Starting 2014 view | Retained | No new individual football evidence establishing change |
+Four-year contract through 2015.
 
-## What supports this assessment
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $3,225,000 | $4,187,500 |
+| 2015 | $3,425,000 | $4,387,500 |
 
-A starting NFL kicker with a useful long-distance leg and dependable established operation. I see range and ordinary accuracy ahead of precision kickoff control and my confidence in repeated pressure consistency.
+## Statistics
 
-[2013 profile](../../../../2013/player_profiles/josh_scobee.md) and its recorded practice/game sources.
+### Regular season
 
-## Historical comparison
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 32 | 10 | 5 | 8 | 10 | 80.0 | 61 | 13 | 13 | 100.0 | 37 |
+| 2013 | Jacksonville | 31 | 10 | 16 | 36 | 41 | 87.8 | N/A | 34 | 35 | 97.1 | 142 |
+| With Jacksonville |  |  |  | 21 | 44 | 51 | 86.3 | N/A | 47 | 48 | 97.9 | 179 |
 
-The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 32 | 10 | 5-5 | 1-3 | 2-2 |
+| 2013 | Jacksonville | 31 | 10 | N/A | N/A | N/A |
 
-## Play style
+### Playoffs
 
-A starting NFL kicker with a useful long-distance leg and dependable established operation. I see range and ordinary accuracy ahead of precision kickoff control and my confidence in repeated pressure consistency.
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 31 | 10 | 2 | 3 | 3 | 100.0 | 51 | 6 | 6 | 100.0 | 15 |
 
-## Best traits
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 31 | 10 | 2-2 | 0-0 | 1-1 |
 
-- Leg strength / range: 7.5 /10.
-- Field-goal accuracy by distance: 7.0 /10.
-- Snap-hold operation: 7.0 /10.
+## Awards
 
-## Main weaknesses
+None.
 
-- Directional kickoff control: 6.0 /10.
-- Kickoff distance / hang: 6.5 /10.
-- Pressure consistency: 6.5 /10.
+## Transactions
 
-## Evidence and uncertainty
+| Date | Transaction |
+|---|---|
+| 2004 | Drafted by Jacksonville in the fifth round |
+| July 16, 2012 | Signed a four-year contract with Jacksonville after the franchise tag |
 
-- **Primary evidence:** [2013 profile](../../../../2013/player_profiles/josh_scobee.md) and its recorded practice/game sources.
-- **Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
-
-**One-line description:** A starting NFL kicker with a useful long-distance leg and dependable established operation. I see range and ordinary accuracy ahead of precision kickoff control and my confidence in repeated pressure consistency.
-
-## 2013 season production
-
-| Statistic | 2013 regular season | 2013 playoffs |
-| --- | ---: | ---: |
-| G | 16 | 2 |
-| FGM | 36 | 3 |
-| FGA | 41 | 3 |
-| FG% | 87.8 | 100.0 |
-| XPM | 34 | 6 |
-| XPA | 35 | 6 |
-| PTS | 142 | 15 |
-
-Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | FGM | FGA | FG% | XPM | XPA | PTS | LONG | FGM 0-19 | FGA 0-19 | FGM 20-29 | FGA 20-29 | FGM 30-39 | FGA 30-39 | FGM 40-49 | FGA 40-49 | FGM 50+ | FGA 50+ | KO | KO YDS | KO TB | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 32 | 10 | Through Week 5 | 5 | 8 | 10 | 80.0 | 13 | 13 | 37 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | 0 |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | FGM | FGA | FG% | XPM | XPA | PTS | LONG | FGM 0-19 | FGA 0-19 | FGM 20-29 | FGA 20-29 | FGM 30-39 | FGA 30-39 | FGM 40-49 | FGA 40-49 | FGM 50+ | FGA 50+ | KO | KO YDS | KO TB | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 32 | 10 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

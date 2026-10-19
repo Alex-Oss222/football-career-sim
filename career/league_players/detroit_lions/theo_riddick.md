@@ -1,16 +1,25 @@
 # Theo Riddick
 
-![Theo Riddick career card](assets/theo_riddick.svg)
+**Detroit Lions · Running back · No. 25 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 200 lb · Born May 4, 1991 · Notre Dame
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Detroit Lions | 22 | 41 | 15 | 3 | 31 | 10.3 | 0 | 2.1 | 0 | 0 | 0 | 3 | 0 |
-| 2014 | Detroit Lions | 23 | 25 | 1 | 4 | 8 | 2.0 | 0 | 8.0 | 1 | 16 | 0 | 5 | 0 |
-| **Career** |  |  |  | 16 | 7 | 39 | 5.6 | 0 | 2.4 | 1 | 16 | 0 | 8 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 23 | 25 | 1 | 4 | 8 | 2.0 | 0 | 6 | 8.0 |
+| 2013 | Detroit | 22 | 41 | 15 | 3 | 31 | 10.3 | 0 | 19 | 2.1 |
+| Career |  |  |  | 16 | 7 | 39 | 5.6 | 0 | 19 | 2.4 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 23 | 25 | 1 | 1 | 16 | 16.0 | 0 | 0 | 0 |
+| 2013 | Detroit | 22 | 41 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +27,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All Detroit Lions players](README.md).
+<!-- player-page -->

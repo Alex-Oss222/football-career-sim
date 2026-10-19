@@ -1,15 +1,18 @@
 # Garth Gerhart
 
-![Garth Gerhart career card](assets/garth_gerhart.svg)
+**Green Bay Packers · Center · No. 72 · Age 25 · Last game October 2, 2014**
 
-## Career stats
+6' 1", 310 lb · Born October 21, 1988 · Arizona State
+
+As of October 2, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Green Bay Packers | 25 | 72 | 5 | 0 | 0 | 0 | 21 | 0 | 0 | 0 | 0 | 0.0 |
-| **Career** |  |  |  | 5 | 0 | 0 | 0 | 21 | 0 | 0 | 0 | 0 | 0.0 |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 25 | 72 | 5 | 0 | 0 | 0 | 21 |
 
 ### Playoffs
 
@@ -17,8 +20,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+<!-- player-page -->

@@ -1,11 +1,13 @@
 # Houston Texans players
 
-AFC South · Players whose latest game on record was with the Houston Texans. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+AFC South. The players whose latest game on record was with the Houston Texans. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 14 | [Ryan Fitzpatrick](ryan_fitzpatrick.md) | QB | 5 | 16 |
 | 15 | [Ryan Mallett](ryan_mallett.md) | QB | 5 | 16 |
 | 3 | [Tom Savage](tom_savage.md) | QB | 5 | 0 |
@@ -13,7 +15,7 @@ AFC South · Players whose latest game on record was with the Houston Texans. G 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 28 | [Alfred Blue](alfred_blue.md) | RB | 5 | 0 |
 | 23 | [Arian Foster](arian_foster.md) | RB | 5 | 16 |
 | N/A | [Cierre Wood](cierre_wood.md) | RB | 0 | 16 |
@@ -24,7 +26,7 @@ AFC South · Players whose latest game on record was with the Houston Texans. G 
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 80 | [Andre Johnson](andre_johnson.md) | WR | 1 | 16 |
 | 13 | [Damaris Johnson](damaris_johnson.md) | WR | 5 | 16 |
 | 10 | [DeAndre Hopkins](deandre_hopkins.md) | WR | 5 | 16 |
@@ -35,7 +37,7 @@ AFC South · Players whose latest game on record was with the Houston Texans. G 
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 87 | [C.J. Fiedorowicz](c_j_fiedorowicz.md) | TE | 5 | 0 |
 | 88 | [Garrett Graham](garrett_graham.md) | TE | 5 | 16 |
 | 84 | [Ryan Griffin](ryan_griffin.md) | TE | 5 | 16 |
@@ -43,7 +45,7 @@ AFC South · Players whose latest game on record was with the Houston Texans. G 
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 60 | [Ben Jones](ben_jones.md) | C | 5 | 16 |
 | 79 | [Brandon Brooks](brandon_brooks.md) | G | 5 | 15 |
 | 55 | [Chris Myers](chris_myers.md) | C | 5 | 16 |
@@ -59,7 +61,7 @@ AFC South · Players whose latest game on record was with the Houston Texans. G 
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 99 | [J.J. Watt](j_j_watt.md) | DE | 5 | 16 |
 | 93 | [Jared Crick](jared_crick.md) | DE | 5 | 16 |
 | 97 | [Jeoffrey Pagan](jeoffrey_pagan.md) | DE | 5 | 0 |
@@ -73,7 +75,7 @@ AFC South · Players whose latest game on record was with the Houston Texans. G 
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 50 | [Akeem Dent](akeem_dent.md) | ILB | 1 | 16 |
 | 56 | [Brian Cushing](brian_cushing.md) | ILB | 5 | 16 |
 | 58 | [Brooks Reed](brooks_reed.md) | OLB | 5 | 16 |
@@ -91,7 +93,7 @@ AFC South · Players whose latest game on record was with the Houston Texans. G 
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 36 | [D.J. Swearinger](d_j_swearinger.md) | SS | 5 | 8 |
 | 38 | [Danieal Manning](danieal_manning.md) | FS | 5 | 10 |
 | 35 | [Eddie Pleasant](eddie_pleasant.md) | SS | 0 | 16 |
@@ -104,17 +106,19 @@ AFC South · Players whose latest game on record was with the Houston Texans. G 
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 4 | [Randy Bullock](randy_bullock.md) | K | 5 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 9 | [Shane Lechler](shane_lechler.md) | P | 5 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 46 | [Jonathan Weeks](jonathan_weeks.md) | LS | 5 | 16 |
+
+<!-- player-index -->

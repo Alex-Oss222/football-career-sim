@@ -1,27 +1,41 @@
 # Chris Carter
 
-![Chris Carter career card](assets/chris_carter.svg)
+**Pittsburgh Steelers · Outside linebacker · Age 24 · Last game January 5, 2014**
 
-## Career stats
+6' 1", 248 lb · Born April 6, 1989 · Fresno State · Drafted in 2011, fifth round, by Pittsburgh
+
+As of January 5, 2014, after the Wild Card round.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 24 | 54 | 16 | 10 | 0 | 0 | 2 | 2 | 0 | 0 | 0 | 0.6 | 6 |
-| **Career** |  |  |  | 16 | 10 | 0 | 0 | 2 | 2 | 0 | 0 | 0 | 0.6 | 6 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 24 | 54 | 16 | 10 | 6 | 4 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 24 | 54 | 2 | 32 | 2 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 24 | 54 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 0 |
-| **Career** |  |  |  | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 24 | 54 | 1 | 1 | 0 | 1 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 24 | 54 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 5, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Pittsburgh Steelers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Pittsburgh in the fifth round |
+
+<!-- player-page -->

@@ -126,7 +126,19 @@ Each step is built lean: one builder and one reviewer, no new research except a 
 | 1 | Done (merged) |
 | 2 | Layout approved; the player record is built with step 3 |
 | 2b | Done (merged) |
-| 3 to 8 | Not started |
+| 3a | Built, awaiting merge: the permanent player records (`data/people/players/`, holding only the assessments and transactions; every other fact, awards included, is read from its owner in the order `runtime/people.py` lists), the canon-override layer with Kirk Cousins's birth date, one builder for every player page (`scripts/render_player_pages.py`), and the clean-page and folder-map checks in validation |
+| 3 (rest) | Not started: the coach and contract records, and the coach, team, staff, contract and desk pages |
+| 4 to 8 | Not started |
+
+Carried from 3a to steps 3 (rest) and 4: the pages written before Week 6 that are rewritten later. The clean-page check exempts a page written before Week 6 only while its bytes still match the digest recorded for it in `data/pages/history.json`; once it is rewritten, by hand or by its generator, it is checked like a new page. Each living view below is cleaned by the step that next rewrites it, before that rewrite:
+
+- **Step 3 (rest)**, with the coach, team, staff, contract and desk pages: the desk (`career/2014/README.md`, written by `scripts/render_career_views.py`) and `career/README.md`; the coach pages in `career/coaching_profiles/`; the roster and player ages (`Team_Operations/Team/Roster/`, `scripts/render_player_ages.py`), the depth chart and the staff page; the cap and contract pages (`career/finances/`, `scripts/render_jaguars_cap_tracker.py`, and `Team_Operations/Finances/`).
+- **Step 4**, under which Week 6 is played: every view a game week's close rewrites: `Record.md` (`scripts/render_annual_record.py`), `Calendar.md` when a date changes, `Regular_Season/standings.md` (`scripts/render_standings.py`), the Statistics pages and the team tracker (`scripts/render_season_stats.py`, `scripts/render_team_tracker.py`), the award pages (`scripts/league_awards.py render`), the Games and League_Results indexes and week pages, the in-season rails page (`scripts/render_inseason_rails.py`) and the medical pages (`Team_Operations/Medical/`).
+
+Carried from 3a to step 6 (season end):
+
+- The season-close tools (the final player assessments in `scripts/build_annual_player_sheets.py` and the opening cards staged by `scripts/season_handoff.py`) still read the earlier card layout; at the year change they move to the records, where the opening assessments now live. Until then a season's player folder holds built pages, its opening assessments are checked on the records, and the folder stops being written once the season review closes the season.
+- The 2014 player-state table (`library/data/2014_player_state_public.json`) was built and frozen before the birth-date change and applied Cousins's 2014 aging once, at 26. It does not read the birth-date registry, so the override does not reach it and no 2014 game changes; the 2015 aging, built at the year change, must read the birth dates through `runtime/player_bios.py`.
 
 ## Change log
 
@@ -136,3 +148,4 @@ Each step is built lean: one builder and one reviewer, no new research except a 
 - October 19, 2026: the user approved the player page layout on the Kirk Cousins sample, without a weekly section and with transactions instead of a season narrative. Their words, verbatim: "layout prefect please this is me aske move his b-day to 1991 hes, 23 now please srry" and "keep the histoy though but lest that early a summart like you have in 2013 of the season  and keep hisroy should be like traded, signings ect cuts ect". Canon change by the user: Kirk Cousins's birth date is August 19, 1991 (23 on October 5, 2014), applied with step 3 wherever his birth date is stored; pages written before Week 6 that give his old age stay as written.
 - October 19, 2026: the user asked that Cousins's college years shift to match the 1991 birth date, and that his history be cleaned up last, after the rest of the rebuild. Their words, verbatim: "want his college years shifted to match, we can cleean up the hisrty for kirk last lets do the rest fist". This is the final rebuild task, after step 8.
 - October 19, 2026: the user asked for the data underneath to be kept so that the year change and the structure cause no problems, with as little stored as possible. The stored-facts rules above were added and placed in steps 3 and 6.
+- October 19, 2026 (a build record of step 3a, not a change to the plan's decisions): the cap tracker (`career/finances/salary_cap/cap_tracker.md`) now reads every birth date through `runtime/player_bios.py` and works out each age as of the tracker's own date, September 8, 2014. Besides Kirk Cousins's age under the user's canon birth date (25 to 23), this corrected 30 stale ages that the removed `age_at_checkpoint` inputs had left one year low, for example Marcedes Lewis 29 to 30, Eugene Monroe 26 to 27 and Lane Johnson 23 to 24.

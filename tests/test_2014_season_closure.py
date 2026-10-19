@@ -6,7 +6,8 @@ functions (Jacksonville first under user control, the rest as a batch) against
 a copy of the repository in a temporary root and a local private service with
 a pinned store seed. Every dependent view is then generated the way the weekly
 workflow generates it (receipts, statbook, standings, gamebook box score,
-award pages, team tracker, player cards, league player cards) and the
+award pages, team tracker, the player pages built from the permanent player
+records) and the
 repository validator runs on that temporary root. The real career tree, cache
 and live service are never touched; the real repository's own release gates
 are not consulted for the draw, the temporary root's are. No 2014 career game
@@ -29,7 +30,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from runtime import KERNEL_VERSION, player_cards, seasons
+from runtime import KERNEL_VERSION, player_pages, seasons
 from runtime.kernel import TeamInput, validate_result
 from runtime.seasons import SeasonPaths, game_release_errors
 from runtime.week_inputs import event_id, receipt_name
@@ -37,6 +38,7 @@ from scripts import (close_week, league_awards, render_box_score, render_season_
                      render_standings, render_team_tracker, update_player_cards)
 from scripts.validate_repository import validate
 from local_private_service import local_service
+from support_page_history import keep_as_history
 from support_rosters import game_day_roster
 
 JAX = close_week.PROTAGONIST
@@ -224,7 +226,7 @@ class SeasonClosure2014Tests(unittest.TestCase):
             (tracker / rel).parent.mkdir(parents=True, exist_ok=True)
             (tracker / rel).write_text(text, encoding="utf-8")
         self.assertEqual(update_player_cards.refresh_cards(SEASON, root), [])
-        player_cards.write(root)  # the league player cards, after the week's awards
+        player_pages.write(root)  # every player page, after the week's awards
         # The in-season rails records of the closed weeks read the receipts
         # before them, so the synthetic Week 1 changes their generated block
         # as the weekly workflow would regenerate it; the batch's event after
@@ -239,6 +241,11 @@ class SeasonClosure2014Tests(unittest.TestCase):
             end = render_inseason_rails.END
             tail = current.split(end, 1)[1] if end in current else "\n"
             page.write_text(generated.split(end)[0] + end + tail, encoding="utf-8")
+
+        # The synthetic slate is a Week 1, so the pages it rewrote that were
+        # written before Week 6 stay history in the copy (rebuild rule 1); a
+        # real closure from Week 6 on rewrites them as checked pages.
+        keep_as_history(root)
 
         # The repository validator accepts the closed, regenerated temporary
         # root. A checkout mid-edit may already carry continuity errors of its

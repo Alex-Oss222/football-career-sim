@@ -1,16 +1,29 @@
 # Cory Redding
 
-![Cory Redding career card](assets/cory_redding.svg)
+**Indianapolis Colts · Defensive end · No. 90 · Age 33 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 318 lb · Born November 15, 1980 · Texas · Drafted in 2003, third round, by Detroit
+
+As of October 5, 2014, after Week 5.
+
+![Cory Redding](https://commons.wikimedia.org/wiki/Special:FilePath/Cory_Redding_at_M%26T_Bank_stadium_Dec_11%2C_2011.jpg?width=500)
+
+*Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Cory_Redding_at_M%26T_Bank_stadium_Dec_11,_2011.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 32 | 90 | 16 | 91 | 9 | 10 | 0 | 0 | 0 | 0 | 19 | 5.7 | 62 |
-| 2014 | Indianapolis Colts | 33 | 90 | 5 | 29 | 3 | 2 | 0 | 1 | 0 | 0 | 7 | 5.8 | 24 |
-| **Career** |  |  |  | 21 | 120 | 12 | 12 | 0 | 1 | 0 | 0 | 26 | 5.7 | 86 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 33 | 90 | 5 | 29 | 24 | 5 | 2 | 3 | 7 |
+| 2013 | Indianapolis | 32 | 90 | 16 | 91 | 62 | 29 | 10 | 9 | 19 |
+| Career |  |  |  | 21 | 120 | 86 | 34 | 12 | 12 | 26 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 33 | 90 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | Indianapolis | 32 | 90 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+| Date | Transaction |
+|---|---|
+| 2003 | Drafted by Detroit in the third round |
+
+<!-- player-page -->

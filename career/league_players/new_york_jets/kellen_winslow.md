@@ -1,27 +1,33 @@
 # Kellen Winslow
 
-![Kellen Winslow career card](assets/kellen_winslow.svg)
+**New York Jets · Tight end · Age 30 · Last game January 12, 2014**
 
-## Career stats
+6' 4", 240 lb · Born July 21, 1983 · Miami · Drafted in 2004, first round, by Cleveland
+
+As of January 12, 2014, after the Divisional round.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 30 | 81 | 16 | 25 | 20 | 238 | 11.9 | 1 | 14.9 | 80.0 | 34 | 0 | 0 |
-| **Career** |  |  |  | 16 | 25 | 20 | 238 | 11.9 | 1 | 14.9 | 80.0 | 34 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Jets | 30 | 81 | 16 | 25 | 20 | 238 | 11.9 | 1 | 34 | 14.9 | 80.0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 30 | 81 | 1 | 2 | 1 | 1 | 1.0 | 0 | 1.0 | 50.0 | 1 | 0 | 0 |
-| **Career** |  |  |  | 1 | 2 | 1 | 1 | 1.0 | 0 | 1.0 | 50.0 | 1 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Jets | 30 | 81 | 1 | 2 | 1 | 1 | 1.0 | 0 | 1 | 1.0 | 50.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 12, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All New York Jets players](README.md).
+| Date | Transaction |
+|---|---|
+| 2004 | Drafted by Cleveland in the first round |
+
+<!-- player-page -->

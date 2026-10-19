@@ -1,16 +1,29 @@
 # Charles Woodson
 
-![Charles Woodson career card](assets/charles_woodson.svg)
+**Oakland Raiders · Free safety · No. 24 · Age 37 · Last game September 28, 2014**
 
-## Career stats
+6' 1", 210 lb · Born October 7, 1976 · Michigan · Drafted in 1998, first round, by Oakland
+
+As of September 28, 2014, after Week 4.
+
+![Charles Woodson](https://commons.wikimedia.org/wiki/Special:FilePath/Charles_Woodson_2014_2.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Charles_Woodson_2014_2.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Oakland Raiders | 36 | 24 | 16 | 98 | 2 | 18 | 0 | 4 | 1 | 1 | 1 | 6.1 | 0 |
-| 2014 | Oakland Raiders | 37 | 24 | 4 | 27 | 0 | 4 | 0 | 0 | 0 | 0 | 0 | 6.8 | 0 |
-| **Career** |  |  |  | 20 | 125 | 2 | 22 | 0 | 4 | 1 | 1 | 1 | 6.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 37 | 24 | 4 | 27 | 16 | 11 | 0 | 0 | 0 |
+| 2013 | Oakland | 36 | 24 | 16 | 98 | 62 | 36 | 4 | 1 | 3 |
+| Career |  |  |  | 20 | 125 | 78 | 47 | 4 | 1 | 3 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 37 | 24 | 0 | 0 | 4 | 0 | 0 | 0 |
+| 2013 | Oakland | 36 | 24 | 2 | 0 | 18 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Oakland Raiders players](README.md).
+| Date | Transaction |
+|---|---|
+| 1998 | Drafted by Oakland in the first round |
+
+<!-- player-page -->

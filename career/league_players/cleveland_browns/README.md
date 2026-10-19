@@ -1,18 +1,20 @@
 # Cleveland Browns players
 
-AFC North · Players whose latest game on record was with the Cleveland Browns. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+AFC North. The players whose latest game on record was with the Cleveland Browns. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 6 | [Brian Hoyer](brian_hoyer.md) | QB | 4 | 16 |
 | 2 | [Johnny Manziel](johnny_manziel.md) | QB | 4 | 0 |
 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 44 | [Ben Tate](ben_tate.md) | RB | 4 | 16 |
 | N/A | [Chris Ogbonnaya](chris_ogbonnaya.md) | FB | 0 | 16 |
 | 41 | [Glenn Winston](glenn_winston.md) | RB | 4 | 0 |
@@ -23,7 +25,7 @@ AFC North · Players whose latest game on record was with the Cleveland Browns. 
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Davone Bess](davone_bess.md) | WR | 0 | 16 |
 | N/A | [Greg Little](greg_little.md) | WR | 0 | 16 |
 | N/A | [Josh Cooper](josh_cooper.md) | WR | 0 | 16 |
@@ -37,7 +39,7 @@ AFC North · Players whose latest game on record was with the Cleveland Browns. 
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 82 | [Gary Barnidge](gary_barnidge.md) | TE | 4 | 16 |
 | 89 | [Gerell Robinson](gerell_robinson.md) | TE | 1 | 0 |
 | 81 | [Jim Dray](jim_dray.md) | TE | 4 | 16 |
@@ -46,7 +48,7 @@ AFC North · Players whose latest game on record was with the Cleveland Browns. 
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 55 | [Alex Mack](alex_mack.md) | C | 4 | 16 |
 | 73 | [Joe Thomas](joe_thomas.md) | T | 4 | 16 |
 | 77 | [John Greco](john_greco.md) | G | 4 | 16 |
@@ -61,7 +63,7 @@ AFC North · Players whose latest game on record was with the Cleveland Browns. 
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 71 | [Ahtyba Rubin](ahtyba_rubin.md) | NT | 4 | 16 |
 | 95 | [Armonty Bryant](armonty_bryant.md) | DE | 4 | 16 |
 | 90 | [Billy Winn](billy_winn.md) | DE | 4 | 16 |
@@ -73,7 +75,7 @@ AFC North · Players whose latest game on record was with the Cleveland Browns. 
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 51 | [Barkevious Mingo](barkevious_mingo.md) | OLB | 4 | 15 |
 | N/A | [Brandon Magee](brandon_magee.md) | ILB | 0 | 8 |
 | 58 | [Christian Kirksey](christian_kirksey.md) | OLB | 4 | 0 |
@@ -89,7 +91,7 @@ AFC North · Players whose latest game on record was with the Cleveland Browns. 
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 38 | [Aaron Berry](aaron_berry.md) | CB | 1 | 0 |
 | 22 | [Buster Skrine](buster_skrine.md) | CB | 4 | 15 |
 | 31 | [Donte Whitner](donte_whitner.md) | SS | 4 | 16 |
@@ -107,17 +109,19 @@ AFC North · Players whose latest game on record was with the Cleveland Browns. 
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 8 | [Billy Cundiff](billy_cundiff.md) | K | 4 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 5 | [Spencer Lanning](spencer_lanning.md) | P | 4 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 57 | [Christian Yount](christian_yount.md) | LS | 4 | 16 |
+
+<!-- player-index -->

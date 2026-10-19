@@ -1,16 +1,29 @@
 # Marcus Gilchrist
 
-![Marcus Gilchrist career card](assets/marcus_gilchrist.svg)
+**San Diego Chargers · Strong safety · No. 38 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 198 lb · Born December 8, 1988 · Clemson · Drafted in 2011, second round, by San Diego
+
+As of October 5, 2014, after Week 5.
+
+![Marcus Gilchrist](https://commons.wikimedia.org/wiki/Special:FilePath/MarcusGilchrist.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:MarcusGilchrist.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Diego Chargers | 24 | 38 | 16 | 76 | 2 | 14 | 42 | 2 | 0 | 2 | 2 | 4.8 | 0 |
-| 2014 | San Diego Chargers | 25 | 38 | 5 | 13 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 2.6 | 0 |
-| **Career** |  |  |  | 21 | 89 | 2 | 15 | 42 | 3 | 0 | 2 | 2 | 4.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 25 | 38 | 5 | 13 | 8 | 5 | 1 | 0 | 0 |
+| 2013 | San Diego | 24 | 38 | 16 | 76 | 49 | 27 | 2 | 0 | 0 |
+| Career |  |  |  | 21 | 89 | 57 | 32 | 3 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 25 | 38 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | San Diego | 24 | 38 | 2 | 42 | 14 | 2 | 2 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by San Diego in the second round |
+
+<!-- player-page -->

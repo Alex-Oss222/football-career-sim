@@ -1,16 +1,25 @@
 # Brandon Harris
 
-![Brandon Harris career card](assets/brandon_harris.svg)
+**Tennessee Titans · Cornerback · No. 32 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 189 lb · Born January 24, 1990 · Miami · Drafted in 2011, second round, by Houston
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Houston Texans | 23 | 26 | 16 | 25 | 0 | 3 | 0 | 1 | 1 | 0 | 0 | 1.6 | 0 |
-| 2014 | Tennessee Titans | 24 | 32 | 5 | 4 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0.8 | 0 |
-| **Career** |  |  |  | 21 | 29 | 0 | 5 | 0 | 1 | 1 | 0 | 0 | 1.4 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 24 | 32 | 5 | 4 | 3 | 1 | 0 | 0 | 0 |
+| 2013 | Houston | 23 | 26 | 16 | 25 | 17 | 8 | 1 | 1 | 1 |
+| Career |  |  |  | 21 | 29 | 20 | 9 | 1 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 24 | 32 | 0 | 0 | 2 | 0 | 0 | 2 |
+| 2013 | Houston | 23 | 26 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +27,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Houston in the second round |
+
+<!-- player-page -->

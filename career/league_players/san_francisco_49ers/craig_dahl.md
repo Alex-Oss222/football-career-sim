@@ -1,16 +1,29 @@
 # Craig Dahl
 
-![Craig Dahl career card](assets/craig_dahl.svg)
+**San Francisco 49ers · Strong safety · No. 43 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 212 lb · Born June 17, 1985 · North Dakota State
+
+As of October 5, 2014, after Week 5.
+
+![Craig Dahl](https://commons.wikimedia.org/wiki/Special:FilePath/Craig_Dahl_%28San_Francisco_49ers_player%29_during_October_19%2C_2014_game_against_Denver_Broncos_at_Empower_Field_in_Denver%2C_Colorado.jpg?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Craig_Dahl_(San_Francisco_49ers_player)_during_October_19,_2014_game_against_Denver_Broncos_at_Empower_Field_in_Denver,_Colorado.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 28 | 43 | 16 | 36 | 0 | 6 | 0 | 1 | 0 | 1 | 1 | 2.2 | 0 |
-| 2014 | San Francisco 49ers | 29 | 43 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 0 |
-| **Career** |  |  |  | 17 | 37 | 0 | 6 | 0 | 1 | 0 | 1 | 1 | 2.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 29 | 43 | 1 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | San Francisco | 28 | 43 | 16 | 36 | 26 | 10 | 1 | 0 | 0 |
+| Career |  |  |  | 17 | 37 | 26 | 11 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 29 | 43 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | San Francisco | 28 | 43 | 0 | 0 | 6 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+<!-- player-page -->

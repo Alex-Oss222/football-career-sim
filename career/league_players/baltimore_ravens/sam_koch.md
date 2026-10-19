@@ -1,16 +1,24 @@
 # Sam Koch
 
-![Sam Koch career card](assets/sam_koch.svg)
+**Baltimore Ravens · Punter · No. 4 · Age 32 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 222 lb · Born August 13, 1982 · Nebraska · Drafted in 2006, sixth round, by Baltimore
+
+As of October 5, 2014, after Week 5.
+
+![Sam Koch](https://commons.wikimedia.org/wiki/Special:FilePath/Sam_Koch.jpg?width=500)
+
+*Photo: Sam_Koch_and_John_Harbaugh.jpg : Keith Allison from Baltimore, USA derivative work: Rockfang ( talk ), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Sam_Koch.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Baltimore Ravens | 31 | 4 | 16 | 88 | 3,835 | 43.6 | 38.5 | 32 | 59 | 2 | 36.4 | 5.5 | 403 |
-| 2014 | Baltimore Ravens | 32 | 4 | 5 | 20 | 1,007 | 50.4 | 43.2 | 8 | 60 | 1 | 40.0 | 4.0 | 123 |
-| **Career** |  |  |  | 21 | 108 | 4,842 | 44.8 | 39.4 | 40 | 60 | 3 | 37.0 | 5.1 | 526 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 32 | 4 | 5 | 20 | 1,007 | 50.4 | 43.2 | 8 | 1 | 60 |
+| 2013 | Baltimore | 31 | 4 | 16 | 88 | 3,835 | 43.6 | 38.5 | 32 | 2 | 59 |
+| Career |  |  |  | 21 | 108 | 4,842 | 44.8 | 39.4 | 40 | 3 | 60 |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Baltimore Ravens players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Baltimore in the sixth round |
+
+<!-- player-page -->

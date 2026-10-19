@@ -1,16 +1,29 @@
 # Cam Thomas
 
-![Cam Thomas career card](assets/cam_thomas.svg)
+**Pittsburgh Steelers · Nose tackle · No. 96 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 330 lb · Born December 12, 1986 · North Carolina · Drafted in 2010, fifth round, by San Diego
+
+As of October 5, 2014, after Week 5.
+
+![Cam Thomas](https://commons.wikimedia.org/wiki/Special:FilePath/Cam_Thomas.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Cam_Thomas.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Diego Chargers | 26 | 92 | 16 | 49 | 4 | 3 | 0 | 2 | 1 | 1 | 9 | 3.1 | 34 |
-| 2014 | Pittsburgh Steelers | 27 | 96 | 5 | 12 | 2 | 0 | 0 | 1 | 0 | 0 | 5 | 2.4 | 10 |
-| **Career** |  |  |  | 21 | 61 | 6 | 3 | 0 | 3 | 1 | 1 | 14 | 2.9 | 44 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 27 | 96 | 5 | 12 | 10 | 2 | 0 | 2 | 5 |
+| 2013 | San Diego | 26 | 92 | 16 | 49 | 34 | 15 | 3 | 4 | 9 |
+| Career |  |  |  | 21 | 61 | 44 | 17 | 3 | 6 | 14 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 27 | 96 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | San Diego | 26 | 92 | 0 | 0 | 2 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by San Diego in the fifth round |
+
+<!-- player-page -->

@@ -1,15 +1,26 @@
 # Toby Gerhart
 
-![Toby Gerhart career card](assets/toby_gerhart.svg)
+**Minnesota Vikings · Running back · Age 26 · Last game December 29, 2013**
 
-## Career stats
+6' 0", 231 lb · Born March 28, 1987 · Stanford · Drafted in 2010, second round, by Minnesota
+
+As of December 29, 2013, after Week 17.
+
+![Toby Gerhart](https://commons.wikimedia.org/wiki/Special:FilePath/Toby_Gerhart_2014_Jaguars_training_camp_Cropped.jpg?width=500)
+
+*Photo: Melissa Hillier, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Toby_Gerhart_2014_Jaguars_training_camp_Cropped.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 26 | 32 | 14 | 78 | 352 | 4.5 | 0 | 25.1 | 9 | 138 | 1 | 87 | 0 |
-| **Career** |  |  |  | 14 | 78 | 352 | 4.5 | 0 | 25.1 | 9 | 138 | 1 | 87 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 26 | 32 | 14 | 78 | 352 | 4.5 | 0 | 35 | 25.1 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 26 | 32 | 14 | 9 | 138 | 15.3 | 1 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +28,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Minnesota Vikings players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Minnesota in the second round |
+
+<!-- player-page -->

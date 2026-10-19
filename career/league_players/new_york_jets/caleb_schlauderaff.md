@@ -1,27 +1,33 @@
 # Caleb Schlauderaff
 
-![Caleb Schlauderaff career card](assets/caleb_schlauderaff.svg)
+**New York Jets · Center · Age 26 · Last game January 12, 2014**
 
-## Career stats
+6' 4", 302 lb · Born November 7, 1987 · Utah · Drafted in 2011, sixth round, by Green Bay
+
+As of January 12, 2014, after the Divisional round.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 25 | 72 | 16 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 16 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Jets | 25 | 72 | 16 | N/A | N/A | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 25 | 72 | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Jets | 25 | 72 | 1 | N/A | N/A | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 12, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All New York Jets players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Green Bay in the sixth round |
+
+<!-- player-page -->

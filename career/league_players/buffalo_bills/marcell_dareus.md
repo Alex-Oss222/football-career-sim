@@ -1,28 +1,48 @@
 # Marcell Dareus
 
-![Marcell Dareus career card](assets/marcell_dareus.svg)
+**Buffalo Bills · Defensive tackle · No. 99 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 331 lb · Born March 13, 1990 · Alabama · Drafted in 2011, first round, by Buffalo
+
+As of October 5, 2014, after Week 5.
+
+![Marcell Dareus](https://commons.wikimedia.org/wiki/Special:FilePath/Marcell_Dareus.jpg?width=500)
+
+*Photo: Doug Kerr, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Marcell_Dareus.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 23 | 99 | 16 | 37 | 3 | 8 | 0 | 2 | 0 | 0 | 10 | 2.3 | 24 |
-| 2014 | Buffalo Bills | 24 | 99 | 5 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.8 | 5 |
-| **Career** |  |  |  | 21 | 46 | 3 | 8 | 0 | 2 | 0 | 0 | 10 | 2.2 | 29 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 24 | 99 | 5 | 9 | 5 | 4 | 0 | 0 | 0 |
+| 2013 | Buffalo | 23 | 99 | 16 | 37 | 24 | 13 | 8 | 3 | 10 |
+| Career |  |  |  | 21 | 46 | 29 | 17 | 8 | 3 | 10 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 24 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Buffalo | 23 | 99 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 23 | 99 | 4 | 11 | 0 | 0 | 0 | 0 | 1 | 1 | 2 | 2.8 | 9 |
-| **Career** |  |  |  | 4 | 11 | 0 | 0 | 0 | 0 | 1 | 1 | 2 | 2.8 | 9 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 23 | 99 | 4 | 11 | 9 | 2 | 0 | 0 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 23 | 99 | 0 | 0 | 0 | 1 | 1 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Buffalo in the first round |
+
+<!-- player-page -->

@@ -1,27 +1,47 @@
 # A.J. Orange
 
-![A.J. Orange career card](assets/a_j_orange.svg)
+**Minnesota Vikings · Cornerback · Age 25 · Last game February 2, 2014**
 
-## Career stats
+6' 1", 190 lb · Born April 4, 1988 · Fresno State
+
+As of February 2, 2014, after the Super Bowl.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 25 | 24 | 16 | 34 | 1 | 7 | 8 | 1 | 0 | 0 | 0 | 2.1 | 36 |
-| **Career** |  |  |  | 16 | 34 | 1 | 7 | 8 | 1 | 0 | 0 | 0 | 2.1 | 36 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 25 | 24 | 16 | 34 | 22 | 12 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 25 | 24 | 1 | 8 | 7 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 25 | 24 | 0 | 0 | N/A | 2 | 36 | 18.0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 25 | 24 | 3 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3.3 | 11 |
-| **Career** |  |  |  | 3 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3.3 | 11 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 25 | 24 | 3 | 10 | 6 | 4 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 25 | 24 | 0 | 0 | 0 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 25 | 24 | 0 | 0 | N/A | 1 | 11 | 11.0 |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through February 2, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Minnesota Vikings players](README.md).
+<!-- player-page -->

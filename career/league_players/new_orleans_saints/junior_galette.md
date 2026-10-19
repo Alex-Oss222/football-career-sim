@@ -1,28 +1,46 @@
 # Junior Galette
 
-![Junior Galette career card](assets/junior_galette.svg)
+**New Orleans Saints · Outside linebacker · No. 93 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 258 lb · Born March 27, 1988 · Stillman College; Temple
+
+As of October 5, 2014, after Week 5.
+
+![Junior Galette](https://commons.wikimedia.org/wiki/Special:FilePath/Junior_Galette_For_the_Love_of_Football.png?width=500)
+
+*Photo: Sareineb, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Junior_Galette_For_the_Love_of_Football.png)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 25 | 93 | 16 | 48 | 4 | 2 | 1 | 3 | 0 | 0 | 5 | 3.0 | 32 |
-| 2014 | New Orleans Saints | 26 | 93 | 5 | 19 | 1 | 0 | 0 | 1 | 0 | 0 | 4 | 3.8 | 14 |
-| **Career** |  |  |  | 21 | 67 | 5 | 2 | 1 | 4 | 0 | 0 | 9 | 3.2 | 46 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New Orleans | 26 | 93 | 5 | 19 | 14 | 5 | 0 | 1 | 4 |
+| 2013 | New Orleans | 25 | 93 | 16 | 48 | 32 | 16 | 2 | 4 | 5 |
+| Career |  |  |  | 21 | 67 | 46 | 21 | 2 | 5 | 9 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New Orleans | 26 | 93 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | New Orleans | 25 | 93 | 1 | 35 | 3 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 25 | 93 | 1 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4.0 | 3 |
-| **Career** |  |  |  | 1 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4.0 | 3 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 25 | 93 | 1 | 4 | 3 | 1 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 25 | 93 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New Orleans Saints players](README.md).
+<!-- player-page -->

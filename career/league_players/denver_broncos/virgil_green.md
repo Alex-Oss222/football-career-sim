@@ -1,16 +1,24 @@
 # Virgil Green
 
-![Virgil Green career card](assets/virgil_green.svg)
+**Denver Broncos · Tight end · No. 85 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 255 lb · Born August 3, 1988 · Nevada · Drafted in 2011, seventh round, by Denver
+
+As of October 5, 2014, after Week 5.
+
+![Virgil Green](https://commons.wikimedia.org/wiki/Special:FilePath/Virgil_Green.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Virgil_Green.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Denver Broncos | 25 | 85 | 16 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| 2014 | Denver Broncos | 26 | 85 | 4 | 6 | 2 | 22 | 11.0 | 0 | 5.5 | 33.3 | 14 | 0 | 0 |
-| **Career** |  |  |  | 20 | 6 | 2 | 22 | 11.0 | 0 | 1.1 | 33.3 | 14 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 26 | 85 | 4 | 6 | 2 | 22 | 11.0 | 0 | 14 | 5.5 | 33.3 |
+| 2013 | Denver | 25 | 85 | 16 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| Career |  |  |  | 20 | 6 | 2 | 22 | 11.0 | 0 | 14 | 1.1 | 33.3 |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Denver in the seventh round |
+
+<!-- player-page -->

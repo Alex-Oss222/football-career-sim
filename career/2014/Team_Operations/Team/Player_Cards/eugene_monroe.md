@@ -1,147 +1,79 @@
-# Eugene Monroe — 2014 Player Profile
+# Eugene Monroe
 
-<!-- player-card:begin -->
-![Eugene Monroe career card](../../../../league_players/jacksonville_jaguars/assets/eugene_monroe.svg)
+**Jacksonville Jaguars · Offensive tackle · No. 60 · Age 27 · Active roster**
 
-[Career statistics](../../../../league_players/jacksonville_jaguars/eugene_monroe.md)
-<!-- player-card:end -->
+6' 5", 300 lb · Born April 18, 1987 · Virginia · Drafted in 2009, first round, by Jacksonville
 
-<!-- photo -->
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/EugeneJ11.jpg?width=500" alt="Eugene Monroe" width="160">
+As of October 5, 2014, after Week 5.
+
+![Eugene Monroe](https://commons.wikimedia.org/wiki/Special:FilePath/EugeneJ11.jpg?width=500)
 
 *Photo: Excel23, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:EugeneJ11.jpg)).*
-<!-- /photo -->
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** March 31, 2014 starting evaluation  
-**Age:** 26  
-**Position:** OT  
-**NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** A balanced starting left tackle with useful pass-set movement, recovery and sufficient anchor. I see pass protection as his best contribution, with solid rather than dominant drive blocking.  
-**Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/eugene_monroe.md)  
+## Staff assessment
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
-
-## Player grades
-
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 7.0 /10 | Staff judgment |
-| Athleticism | 7.0 /10 | Staff judgment |
-| Speed | 6.0 /10 | Staff judgment |
-| Strength / Power | 7.0 /10 | Staff judgment |
-| Agility / Change of direction | 7.0 /10 | Staff judgment |
-| Technique | 7.0 /10 | Staff judgment |
-| Football IQ | 7.0 /10 | Staff judgment |
-| Pass-set / mirror | 7.5 /10 | Staff judgment |
-| Anchor vs power | 7.0 /10 | Staff judgment |
-| Hand usage / punch | 7.0 /10 | Staff judgment |
-| Recovery / balance | 7.0 /10 | Staff judgment |
-| Drive blocking | 6.5 /10 | Staff judgment |
-| Reach / movement blocking | 7.0 /10 | Staff judgment |
-| Second-level work | 6.5 /10 | Staff judgment |
-| Twist / blitz recognition | 7.0 /10 | Staff judgment |
-| Assignment / penalty consistency | 7.0 /10 | Staff judgment |
-
-Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | At NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Pass-set / mirror | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Anchor vs power | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Hand usage / punch | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Recovery / balance | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Drive blocking | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Reach / movement blocking | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Second-level work | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Twist / blitz recognition | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Assignment / penalty consistency | Above NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards, not measured 2014 league ranks.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 7.0/10 |
+| Athleticism | 7.0/10 |
+| Speed | 6.0/10 |
+| Strength and power | 7.0/10 |
+| Agility and change of direction | 7.0/10 |
+| Technique | 7.0/10 |
+| Football IQ | 7.0/10 |
+| Pass-set and mirror | 7.5/10 |
+| Anchor vs power | 7.0/10 |
+| Hand usage and punch | 7.0/10 |
+| Recovery and balance | 7.0/10 |
+| Drive blocking | 6.5/10 |
+| Reach and movement blocking | 7.0/10 |
+| Second-level work | 6.5/10 |
+| Twist and blitz recognition | 7.0/10 |
+| Assignment and penalty consistency | 7.0/10 |
 
 A balanced starting left tackle with useful pass-set movement, recovery and sufficient anchor. I see pass protection as his best contribution, with solid rather than dominant drive blocking.
 
-Source: [2013 profile](../../../../2013/player_profiles/eugene_monroe.md) and its recorded practice/game sources.
+*Staff view, March 31, 2014.*
 
-## Year-over-year change
+## Contract
 
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Player identity and position traits | 2013 baseline | Starting 2014 view | Retained | No new individual football evidence establishing change |
+Five-year contract through 2018.
 
-## What supports this assessment
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $4,000,000 | $5,600,000 |
+| 2015 | $8,000,000 | $9,600,000 |
+| 2016 | $6,500,000 | $9,100,000 |
+| 2017 | $6,500,000 | $9,100,000 |
+| 2018 | $6,500,000 | $9,100,000 |
 
-A balanced starting left tackle with useful pass-set movement, recovery and sufficient anchor. I see pass protection as his best contribution, with solid rather than dominant drive blocking.
+## Statistics
 
-[2013 profile](../../../../2013/player_profiles/eugene_monroe.md) and its recorded practice/game sources.
+### Regular season
 
-## Historical comparison
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 27 | 60 | 5 | 5 | 332 | 3 | 23 |
+| 2013 | Jacksonville | 26 | N/A | 16 | N/A | N/A | 2 | N/A |
+| With Jacksonville |  |  |  | 21 | N/A | N/A | 5 | N/A |
 
-The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.
+### Playoffs
 
-## Play style
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 26 | N/A | 2 | N/A | N/A | 2 | N/A |
 
-A balanced starting left tackle with useful pass-set movement, recovery and sufficient anchor. I see pass protection as his best contribution, with solid rather than dominant drive blocking.
+## Awards
 
-## Best traits
+None.
 
-- Pass-set / mirror: 7.5 /10.
-- Anchor vs power: 7.0 /10.
-- Hand usage / punch: 7.0 /10.
+## Transactions
 
-## Main weaknesses
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Jacksonville in the first round |
+| 2009 | Signed a five-year rookie contract with Jacksonville |
+| February 18, 2014 | Designated Jacksonville's non-exclusive franchise player |
+| March 11, 2014 | Re-signed with Jacksonville for five years (2014 to 2018), replacing the franchise tender |
 
-- Drive blocking: 6.5 /10.
-- Second-level work: 6.5 /10.
-- Anchor vs power: 7.0 /10.
-
-## Evidence and uncertainty
-
-- **Primary evidence:** [2013 profile](../../../../2013/player_profiles/eugene_monroe.md) and its recorded practice/game sources.
-- **Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
-
-**One-line description:** A balanced starting left tackle with useful pass-set movement, recovery and sufficient anchor. I see pass protection as his best contribution, with solid rather than dominant drive blocking.
-
-## 2013 season production
-
-| Statistic | 2013 regular season | 2013 playoffs |
-| --- | ---: | ---: |
-| G | 16 | 2 |
-| SCK ALLOWED | 2 | 2 |
-
-Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | SCK ALLOWED | STARTS | OFF SNAPS | PEN | PEN YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 27 | 60 | Through Week 5 | 5 | 3 | 5 | 332 | Unrecorded | Unrecorded | 0 | 0 | — | 0 | 0 | — | 0 |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | SCK ALLOWED | STARTS | OFF SNAPS | PEN | PEN YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 27 | 60 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

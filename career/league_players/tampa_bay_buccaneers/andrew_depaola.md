@@ -1,15 +1,22 @@
 # Andrew DePaola
 
-![Andrew DePaola career card](assets/andrew_depaola.svg)
+**Tampa Bay Buccaneers · Long snapper · No. 48 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 230 lb · Born July 28, 1987 · Rutgers
+
+As of October 5, 2014, after Week 5.
+
+![Andrew DePaola](https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_DePaola_2016_%28cropped%29.jpg?width=500)
+
+*Photo: U.S. Air Force Capt. Christopher Mesnard, Public domain ([source](https://commons.wikimedia.org/wiki/File:Andrew_DePaola_2016_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | LONG SNAPS | ST SNAPS | ST TKL | TKL | SOLO | AST | FF | FR | LONG SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Tampa Bay Buccaneers | 27 | 48 | 5 | 44 | 44 | 0 | 0 | 0 | 0 | 0 | 0 | 8.8 |
-| **Career** |  |  |  | 5 | 44 | 44 | 0 | 0 | 0 | 0 | 0 | 0 | 8.8 |
+| Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 27 | 48 | 5 | 44 | 44 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).
+<!-- player-page -->

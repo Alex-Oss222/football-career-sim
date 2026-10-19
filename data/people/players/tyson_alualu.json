@@ -1,0 +1,26 @@
+{
+ "schema_version": 1,
+ "name": "Tyson Alualu",
+ "gsis_id": "00-0027862",
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/tyson_alualu.md"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2010",
+   "kind": "signed",
+   "text": "Signed a five-year rookie contract with Jacksonville",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md"
+  },
+  {
+   "date": "2014-03-24",
+   "kind": "traded",
+   "text": "Traded by Jacksonville to Houston for Houston's 2015 fourth-round pick",
+   "source": "career/2014/Team_Operations/Trades/completed_trades/alualu_to_houston_2014-03-24.md"
+  }
+ ]
+}

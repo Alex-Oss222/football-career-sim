@@ -1,156 +1,82 @@
-# C.J. Mosley — 2014 Player Profile
+# C.J. Mosley
 
-<!-- player-card:begin -->
-![C.J. Mosley career card](../../../../league_players/jacksonville_jaguars/assets/c_j_mosley.svg)
+**Jacksonville Jaguars · Defensive tackle · Age 31 · Active roster**
 
-[Career statistics](../../../../league_players/jacksonville_jaguars/c_j_mosley.md)
-<!-- player-card:end -->
+6' 2", 312 lb · Born August 6, 1983 · Missouri · Drafted in 2005, sixth round, by Minnesota
 
-<!-- photo -->
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/CJ_Mosley_%28defensive_lineman%29_2012.jpg?width=500" alt="C.J. Mosley" width="160">
+As of October 5, 2014, after Week 5.
+
+![C.J. Mosley](https://commons.wikimedia.org/wiki/Special:FilePath/CJ_Mosley_%28defensive_lineman%29_2012.jpg?width=500)
 
 *Photo: Seaman Apprentice Marcus Stanley, Public domain ([source](https://commons.wikimedia.org/wiki/File:CJ_Mosley_(defensive_lineman)_2012.jpg)).*
-<!-- /photo -->
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** March 31, 2014 starting evaluation  
-**Age:** 30  
-**Position:** DT  
-**NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** A veteran interior reserve who can supply strength and hold a limited run assignment. I see more value in occupying a block than in creating repeated penetration or rush-counter wins.  
-**Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/c_j_mosley.md)  
+## Staff assessment
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
-
-## Player grades
-
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 5.0 /10 | Staff judgment |
-| Athleticism | 4.0 /10 | Staff judgment |
-| Speed | 3.5 /10 | Staff judgment |
-| Strength / Power | 6.0 /10 | Staff judgment |
-| Agility / Change of direction | 3.5 /10 | Staff judgment |
-| Technique | 5.0 /10 | Staff judgment |
-| Football IQ | 5.0 /10 | Staff judgment |
-| Get-off | 4.5 /10 | Staff judgment |
-| Anchor | 5.5 /10 | Staff judgment |
-| Power | 6.0 /10 | Staff judgment |
-| Hand use | 5.0 /10 | Staff judgment |
-| Block shedding | 5.0 /10 | Staff judgment |
-| Penetration | 4.0 /10 | Staff judgment |
-| Pass-rush counters | 3.5 /10 | Staff judgment |
-| Double-team play | 5.5 /10 | Staff judgment |
-| Gap discipline / lateral pursuit | 4.5 /10 | Staff judgment |
-
-Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | At NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Get-off | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Anchor | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Power | At NFL starter standard | Below elite standard | Above low-end standard |
-| Hand use | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Block shedding | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Penetration | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Pass-rush counters | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Double-team play | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Gap discipline / lateral pursuit | Below NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards, not measured 2014 league ranks.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 5.0/10 |
+| Athleticism | 4.0/10 |
+| Speed | 3.5/10 |
+| Strength and power | 6.0/10 |
+| Agility and change of direction | 3.5/10 |
+| Technique | 5.0/10 |
+| Football IQ | 5.0/10 |
+| Get-off | 4.5/10 |
+| Anchor | 5.5/10 |
+| Power | 6.0/10 |
+| Hand use | 5.0/10 |
+| Block shedding | 5.0/10 |
+| Penetration | 4.0/10 |
+| Pass-rush counters | 3.5/10 |
+| Double-team play | 5.5/10 |
+| Gap discipline and lateral pursuit | 4.5/10 |
 
 A veteran interior reserve who can supply strength and hold a limited run assignment. I see more value in occupying a block than in creating repeated penetration or rush-counter wins.
 
-Source: [2013 profile](../../../../2013/player_profiles/c_j_mosley.md) and its recorded practice/game sources.
+*Staff view, March 31, 2014.*
 
-## Year-over-year change
+## Contract
 
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Player identity and position traits | 2013 baseline | Starting 2014 view | Retained | No new individual football evidence establishing change |
+Three-year contract through 2014.
 
-## What supports this assessment
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | about $2,725,000 | Not settled |
 
-A veteran interior reserve who can supply strength and hold a limited run assignment. I see more value in occupying a block than in creating repeated penetration or rush-counter wins.
+## Statistics
 
-[2013 profile](../../../../2013/player_profiles/c_j_mosley.md) and its recorded practice/game sources.
+### Regular season
 
-## Historical comparison
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 31 | N/A | 5 | 5 | 4 | 1 | 2 | 0 | 1 |
+| 2013 | Jacksonville | 30 | N/A | 7 | 9 | 5 | 4 | 1 | 1 | 1 |
+| With Jacksonville |  |  |  | 12 | 14 | 9 | 5 | 3 | 1 | 2 |
 
-The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 31 | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Jacksonville | 30 | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
 
-## Play style
+### Playoffs
 
-A veteran interior reserve who can supply strength and hold a limited run assignment. I see more value in occupying a block than in creating repeated penetration or rush-counter wins.
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 30 | N/A | 2 | 1 | 1 | 0 | 0 | 0 | 0 |
 
-## Best traits
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 30 | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
 
-- Power: 6.0 /10.
-- Anchor: 5.5 /10.
-- Double-team play: 5.5 /10.
+## Awards
 
-## Main weaknesses
+None.
 
-- Pass-rush counters: 3.5 /10.
-- Penetration: 4.0 /10.
-- Get-off: 4.5 /10.
+## Transactions
 
-## Evidence and uncertainty
+| Date | Transaction |
+|---|---|
+| 2005 | Drafted by Minnesota in the sixth round |
+| 2012 | Signed a three-year contract with Jacksonville |
 
-- **Primary evidence:** [2013 profile](../../../../2013/player_profiles/c_j_mosley.md) and its recorded practice/game sources.
-- **Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
-
-**One-line description:** A veteran interior reserve who can supply strength and hold a limited run assignment. I see more value in occupying a block than in creating repeated penetration or rush-counter wins.
-
-## 2013 season production
-
-| Statistic | 2013 regular season | 2013 playoffs |
-| --- | ---: | ---: |
-| G | 7 | 2 |
-| TOT | 9 | 1 |
-| SOLO | 5 | 1 |
-| AST | 4 | 0 |
-| TFL | 1 | 0 |
-| SCK | 1 | 0 |
-| PRESS | 1 | 0 |
-| PD | 0 | 0 |
-| INT | 0 | 0 |
-| FF | 0 | 0 |
-| FR | 0 | 0 |
-
-Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 31 | N/A | Through Week 5 | 5 | 5 | 4 | 1 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 5 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 31 | N/A | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

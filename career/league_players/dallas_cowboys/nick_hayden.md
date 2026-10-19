@@ -1,28 +1,48 @@
 # Nick Hayden
 
-![Nick Hayden career card](assets/nick_hayden.svg)
+**Dallas Cowboys · Defensive tackle · No. 96 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 303 lb · Born February 4, 1986 · Wisconsin · Drafted in 2008, sixth round, by Carolina
+
+As of October 5, 2014, after Week 5.
+
+![Nick Hayden](https://commons.wikimedia.org/wiki/Special:FilePath/Nick_Hayden_2016_preseason.jpg?width=500)
+
+*Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Nick_Hayden_2016_preseason.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 27 | 96 | 16 | 22 | 0 | 3 | 0 | 2 | 0 | 0 | 2 | 1.4 | 18 |
-| 2014 | Dallas Cowboys | 28 | 96 | 5 | 14 | 1 | 0 | 0 | 0 | 0 | 0 | 4 | 2.8 | 9 |
-| **Career** |  |  |  | 21 | 36 | 1 | 3 | 0 | 2 | 0 | 0 | 6 | 1.7 | 27 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Dallas | 28 | 96 | 5 | 14 | 9 | 5 | 0 | 1 | 4 |
+| 2013 | Dallas | 27 | 96 | 16 | 22 | 18 | 4 | 3 | 0 | 2 |
+| Career |  |  |  | 21 | 36 | 27 | 9 | 3 | 1 | 6 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Dallas | 28 | 96 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Dallas | 27 | 96 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 27 | 96 | 2 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 3.5 | 3 |
-| **Career** |  |  |  | 2 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 3.5 | 3 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 27 | 96 | 2 | 7 | 3 | 4 | 0 | 0 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 27 | 96 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Carolina in the sixth round |
+
+<!-- player-page -->

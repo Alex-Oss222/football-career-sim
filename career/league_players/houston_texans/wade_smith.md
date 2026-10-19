@@ -1,15 +1,18 @@
 # Wade Smith
 
-![Wade Smith career card](assets/wade_smith.svg)
+**Houston Texans · Guard · Age 32 · Last game December 29, 2013**
 
-## Career stats
+6' 4", 295 lb · Born April 26, 1981 · Memphis · Drafted in 2003, third round, by Miami
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Houston Texans | 32 | 74 | 16 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 16 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Houston | 32 | 74 | 16 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 
@@ -17,8 +20,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Houston Texans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2003 | Drafted by Miami in the third round |
+
+<!-- player-page -->

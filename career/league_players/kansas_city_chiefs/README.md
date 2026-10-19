@@ -1,11 +1,13 @@
 # Kansas City Chiefs players
 
-AFC West · Players whose latest game on record was with the Kansas City Chiefs. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+AFC West. The players whose latest game on record was with the Kansas City Chiefs. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 7 | [Aaron Murray](aaron_murray.md) | QB | 5 | 0 |
 | 11 | [Alex Smith](alex_smith.md) | QB | 5 | 16 |
 | 10 | [Chase Daniel](chase_daniel.md) | QB | 5 | 16 |
@@ -13,7 +15,7 @@ AFC West · Players whose latest game on record was with the Kansas City Chiefs.
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 42 | [Anthony Sherman](anthony_sherman.md) | FB | 5 | 16 |
 | 32 | [Cyrus Gray](cyrus_gray.md) | RB | 5 | 15 |
 | 25 | [Jamaal Charles](jamaal_charles.md) | RB | 5 | 16 |
@@ -23,7 +25,7 @@ AFC West · Players whose latest game on record was with the Kansas City Chiefs.
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 15 | [A.J. Jenkins](a_j_jenkins.md) | WR | 5 | 16 |
 | 12 | [Albert Wilson](albert_wilson.md) | WR | 5 | 0 |
 | N/A | [Chad Hall](chad_hall.md) | WR | 0 | 16 |
@@ -36,7 +38,7 @@ AFC West · Players whose latest game on record was with the Kansas City Chiefs.
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 80 | [Anthony Fasano](anthony_fasano.md) | TE | 5 | 16 |
 | 84 | [Demetrius Harris](demetrius_harris.md) | TE | 5 | 0 |
 | N/A | [Sean McGrath](sean_mcgrath.md) | TE | 0 | 16 |
@@ -44,7 +46,7 @@ AFC West · Players whose latest game on record was with the Kansas City Chiefs.
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Donald Stephenson](donald_stephenson.md) | T | 0 | 16 |
 | 72 | [Eric Fisher](eric_fisher.md) | T | 5 | 16 |
 | 64 | [Eric Kush](eric_kush.md) | C | 0 | 14 |
@@ -59,7 +61,7 @@ AFC West · Players whose latest game on record was with the Kansas City Chiefs.
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 97 | [Allen Bailey](allen_bailey.md) | DE | 5 | 16 |
 | N/A | [Anthony Toribio](anthony_toribio.md) | DE | 0 | 16 |
 | 98 | [Damion Square](damion_square.md) | NT | 5 | 16 |
@@ -72,7 +74,7 @@ AFC West · Players whose latest game on record was with the Kansas City Chiefs.
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 56 | [Derrick Johnson](derrick_johnson.md) | ILB | 5 | 16 |
 | N/A | [Dezman Moses](dezman_moses.md) | OLB | 0 | 16 |
 | 51 | [Frank Zombo](frank_zombo.md) | OLB | 5 | 15 |
@@ -87,7 +89,7 @@ AFC West · Players whose latest game on record was with the Kansas City Chiefs.
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 20 | [Christopher Owens](christopher_owens.md) | CB | 5 | 16 |
 | N/A | [Dunta Robinson](dunta_robinson.md) | CB | 0 | 16 |
 | 29 | [Eric Berry](eric_berry.md) | SS | 5 | 16 |
@@ -101,17 +103,19 @@ AFC West · Players whose latest game on record was with the Kansas City Chiefs.
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 5 | [Cairo Santos](cairo_santos.md) | K | 5 | 0 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 2 | [Dustin Colquitt](dustin_colquitt.md) | P | 5 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 43 | [Thomas Gafford](thomas_gafford.md) | LS | 5 | 16 |
+
+<!-- player-index -->

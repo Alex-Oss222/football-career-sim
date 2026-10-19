@@ -1,28 +1,46 @@
 # Dan Carpenter
 
-![Dan Carpenter career card](assets/dan_carpenter.svg)
+**Buffalo Bills · Kicker · No. 2 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 228 lb · Born November 25, 1985 · Montana
+
+As of October 5, 2014, after Week 5.
+
+![Dan Carpenter](https://commons.wikimedia.org/wiki/Special:FilePath/Dan_Carpenter1.jpg?width=500)
+
+*Photo: Chrisjnelson at en.wikipedia, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Dan_Carpenter1.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 27 | 2 | 16 | 30-34 | 88.2 | N/A | 41-41 | 100.0 | 131 | N/A | N/A | N/A | 8.2 |
-| 2014 | Buffalo Bills | 28 | 2 | 5 | 10-12 | 83.3 | 52 | 15-15 | 100.0 | 45 | 3-3 | 2-4 | 5-5 | 9.0 |
-| **Career** |  |  |  | 21 | 40-46 | 87.0 | N/A | 56-56 | 100.0 | 176 | N/A | N/A | N/A | 8.4 |
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 28 | 2 | 5 | 10 | 12 | 83.3 | 52 | 15 | 15 | 100.0 | 45 |
+| 2013 | Buffalo | 27 | 2 | 16 | 30 | 34 | 88.2 | N/A | 41 | 41 | 100.0 | 131 |
+| Career |  |  |  | 21 | 40 | 46 | 87.0 | N/A | 56 | 56 | 100.0 | 176 |
+
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 28 | 2 | 5-5 | 3-3 | 2-4 |
+| 2013 | Buffalo | 27 | 2 | N/A | N/A | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 27 | 2 | 4 | 11-11 | 100.0 | 51 | 13-13 | 100.0 | 46 | 2-2 | 1-1 | 8-8 | 11.5 |
-| **Career** |  |  |  | 4 | 11-11 | 100.0 | 51 | 13-13 | 100.0 | 46 | 2-2 | 1-1 | 8-8 | 11.5 |
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 27 | 2 | 4 | 11 | 11 | 100.0 | 51 | 13 | 13 | 100.0 | 46 |
+
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 27 | 2 | 8-8 | 2-2 | 1-1 |
 
 ## Awards
 
 - AFC Special Teams Player of the Month (2013, December)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+None on record.
+
+<!-- player-page -->

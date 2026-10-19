@@ -1,16 +1,34 @@
 # T.Y. Hilton
 
-![T.Y. Hilton career card](assets/t_y_hilton.svg)
+**Indianapolis Colts · Wide receiver · No. 13 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 178 lb · Born November 14, 1989 · Florida International · Drafted in 2012, third round, by Indianapolis
+
+As of October 5, 2014, after Week 5.
+
+![T.Y. Hilton](https://commons.wikimedia.org/wiki/Special:FilePath/T.Y._Hilton_-_2008_Shula_Bowl.png?width=500)
+
+*Photo: Nothingxs, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:T.Y._Hilton_-_2008_Shula_Bowl.png)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 23 | 13 | 16 | 58 | 35 | 381 | 10.9 | 4 | 23.8 | 60.3 | 29 | 0 | 1 |
-| 2014 | Indianapolis Colts | 24 | 13 | 5 | 65 | 41 | 469 | 11.4 | 3 | 93.8 | 63.1 | 30 | 5 | 0 |
-| **Career** |  |  |  | 21 | 123 | 76 | 850 | 11.2 | 7 | 40.5 | 61.8 | 30 | 5 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 24 | 13 | 5 | 65 | 41 | 469 | 11.4 | 3 | 30 | 93.8 | 63.1 |
+| 2013 | Indianapolis | 23 | 13 | 16 | 58 | 35 | 381 | 10.9 | 4 | 29 | 23.8 | 60.3 |
+| Career |  |  |  | 21 | 123 | 76 | 850 | 11.2 | 7 | 30 | 40.5 | 61.8 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 24 | 13 | 2 | 5 | 0 | 0 | 0 |
+| 2013 | Indianapolis | 23 | 13 | 0 | 0 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 24 | 13 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Indianapolis | 23 | 13 | 0 | 0 | N/A | 43 | 329 | 7.7 |
 
 ### Playoffs
 
@@ -18,8 +36,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Indianapolis in the third round |
+
+<!-- player-page -->

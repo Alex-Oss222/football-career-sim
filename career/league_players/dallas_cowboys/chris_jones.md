@@ -1,28 +1,37 @@
 # Chris Jones
 
-![Chris Jones career card](assets/chris_jones.svg)
+**Dallas Cowboys · Punter · No. 6 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 205 lb · Born July 21, 1989 · Carson Newman
+
+As of October 5, 2014, after Week 5.
+
+![Chris Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Jones_%28punter%29_2017.jpg?width=500)
+
+*Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Chris_Jones_(punter)_2017.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 24 | 6 | 16 | 78 | 3,538 | 45.4 | 40.5 | 35 | 66 | 3 | 44.9 | 4.9 | 320 |
-| 2014 | Dallas Cowboys | 25 | 6 | 5 | 24 | 1,146 | 47.8 | 41.5 | 10 | 69 | 3 | 41.7 | 4.8 | 90 |
-| **Career** |  |  |  | 21 | 102 | 4,684 | 45.9 | 40.7 | 45 | 69 | 6 | 44.1 | 4.9 | 410 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Dallas | 25 | 6 | 5 | 24 | 1,146 | 47.8 | 41.5 | 10 | 3 | 69 |
+| 2013 | Dallas | 24 | 6 | 16 | 78 | 3,538 | 45.4 | 40.5 | 35 | 3 | 66 |
+| Career |  |  |  | 21 | 102 | 4,684 | 45.9 | 40.7 | 45 | 6 | 69 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 24 | 6 | 2 | 9 | 405 | 45.0 | 42.6 | 2 | 57 | 0 | 22.2 | 4.5 | 22 |
-| **Career** |  |  |  | 2 | 9 | 405 | 45.0 | 42.6 | 2 | 57 | 0 | 22.2 | 4.5 | 22 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 24 | 6 | 2 | 9 | 405 | 45.0 | 42.6 | 2 | 0 | 57 |
 
 ## Awards
 
 - NFC Special Teams Player of the Week (2013, Week 10)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).
+None on record.
+
+<!-- player-page -->

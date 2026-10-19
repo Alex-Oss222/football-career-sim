@@ -1,28 +1,37 @@
 # Garrison Sanborn
 
-![Garrison Sanborn career card](assets/garrison_sanborn.svg)
+**Buffalo Bills · Long snapper · No. 65 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 240 lb · Born July 31, 1985 · Florida State
+
+As of October 5, 2014, after Week 5.
+
+![Garrison Sanborn](https://commons.wikimedia.org/wiki/Special:FilePath/Garrison_Sanborn.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Garrison_Sanborn.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | LONG SNAPS | ST SNAPS | ST TKL | TKL | SOLO | AST | FF | FR | LONG SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 28 | 65 | 16 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Buffalo Bills | 29 | 65 | 5 | 49 | 49 | 0 | 0 | 0 | 0 | 0 | 0 | 9.8 |
-| **Career** |  |  |  | 21 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 29 | 65 | 5 | 49 | 49 | 0 | 0 |
+| 2013 | Buffalo | 28 | 65 | 16 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 21 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | LONG SNAPS | ST SNAPS | ST TKL | TKL | SOLO | AST | FF | FR | LONG SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 28 | 65 | 4 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 4 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 28 | 65 | 4 | N/A | N/A | N/A | 0 |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+<!-- player-page -->

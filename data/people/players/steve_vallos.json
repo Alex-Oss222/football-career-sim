@@ -1,0 +1,14 @@
+{
+ "schema_version": 1,
+ "name": "Steve Vallos",
+ "gsis_id": "00-0025619",
+ "assessments": [],
+ "transactions": [
+  {
+   "date": "2013-03-12",
+   "kind": "contract_expired",
+   "text": "Contract with Jacksonville expired; left as a free agent",
+   "source": "career/2013/offseason/free_agency/signings.md"
+  }
+ ]
+}

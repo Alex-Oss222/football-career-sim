@@ -1,15 +1,22 @@
 # Dennis Pitta
 
-![Dennis Pitta career card](assets/dennis_pitta.svg)
+**Baltimore Ravens · Tight end · No. 88 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 245 lb · Born June 29, 1985 · BYU · Drafted in 2010, fourth round, by Baltimore
+
+As of October 5, 2014, after Week 5.
+
+![Dennis Pitta](https://commons.wikimedia.org/wiki/Special:FilePath/Dennis_Pitta_2011_stadium_practice.jpg?width=500)
+
+*Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Dennis_Pitta_2011_stadium_practice.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Baltimore Ravens | 29 | 88 | 4 | 25 | 16 | 180 | 11.2 | 2 | 45.0 | 64.0 | 26 | 0 | 0 |
-| **Career** |  |  |  | 4 | 25 | 16 | 180 | 11.2 | 2 | 45.0 | 64.0 | 26 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 29 | 88 | 4 | 25 | 16 | 180 | 11.2 | 2 | 26 | 45.0 | 64.0 |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Baltimore Ravens players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Baltimore in the fourth round |
+
+<!-- player-page -->

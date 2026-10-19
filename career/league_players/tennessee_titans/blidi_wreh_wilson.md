@@ -1,16 +1,29 @@
 # Blidi Wreh-Wilson
 
-![Blidi Wreh-Wilson career card](assets/blidi_wreh_wilson.svg)
+**Tennessee Titans · Cornerback · No. 25 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 198 lb · Born December 5, 1989 · Connecticut
+
+As of October 5, 2014, after Week 5.
+
+![Blidi Wreh-Wilson](https://commons.wikimedia.org/wiki/Special:FilePath/Blidi_Wreh-Wilson.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Blidi_Wreh-Wilson.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 23 | 29 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| 2014 | Tennessee Titans | 24 | 25 | 5 | 32 | 0 | 5 | 0 | 0 | 0 | 0 | 0 | 6.4 | 0 |
-| **Career** |  |  |  | 7 | 32 | 0 | 5 | 0 | 0 | 0 | 0 | 0 | 4.6 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 24 | 25 | 5 | 32 | 21 | 11 | 0 | 0 | 1 |
+| 2013 | Tennessee | 23 | 29 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 7 | 32 | 21 | 11 | 0 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 24 | 25 | 0 | 0 | 5 | 0 | 0 | 0 |
+| 2013 | Tennessee | 23 | 29 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+<!-- player-page -->

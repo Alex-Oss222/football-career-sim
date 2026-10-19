@@ -1,16 +1,34 @@
 # Travis Benjamin
 
-![Travis Benjamin career card](assets/travis_benjamin.svg)
+**Cleveland Browns · Wide receiver · No. 11 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 175 lb · Born December 29, 1989 · Miami · Drafted in 2012, fourth round, by Cleveland
+
+As of October 5, 2014, after Week 5.
+
+![Travis Benjamin](https://commons.wikimedia.org/wiki/Special:FilePath/Travis_Benjamin.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Travis_Benjamin.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 23 | 80 | 16 | 63 | 36 | 319 | 8.9 | 2 | 19.9 | 57.1 | 43 | 0 | 0 |
-| 2014 | Cleveland Browns | 24 | 11 | 4 | 22 | 19 | 230 | 12.1 | 2 | 57.5 | 86.4 | 47 | 4 | 0 |
-| **Career** |  |  |  | 20 | 85 | 55 | 549 | 10.0 | 4 | 27.4 | 64.7 | 47 | 4 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 24 | 11 | 4 | 22 | 19 | 230 | 12.1 | 2 | 47 | 57.5 | 86.4 |
+| 2013 | Cleveland | 23 | 80 | 16 | 63 | 36 | 319 | 8.9 | 2 | 43 | 19.9 | 57.1 |
+| Career |  |  |  | 20 | 85 | 55 | 549 | 10.0 | 4 | 47 | 27.4 | 64.7 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 24 | 11 | 1 | 4 | 0 | 0 | 0 |
+| 2013 | Cleveland | 23 | 80 | 0 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 24 | 11 | 10 | 252 | 25.2 | 19 | 153 | 8.1 |
+| 2013 | Cleveland | 23 | 80 | 0 | 0 | N/A | 32 | 356 | 11.1 |
 
 ### Playoffs
 
@@ -20,6 +38,10 @@ No playoff games on record.
 
 - AFC Special Teams Player of the Week (2014, Week 5)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Cleveland in the fourth round |
+
+<!-- player-page -->

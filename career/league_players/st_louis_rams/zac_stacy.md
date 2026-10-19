@@ -1,28 +1,46 @@
 # Zac Stacy
 
-![Zac Stacy career card](assets/zac_stacy.svg)
+**St. Louis Rams · Running back · No. 30 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 224 lb · Born April 9, 1991 · Vanderbilt
+
+As of October 5, 2014, after Week 5.
+
+![Zac Stacy](https://commons.wikimedia.org/wiki/Special:FilePath/Zacstacy2013.jpg?width=500)
+
+*Photo: Johnmaxmena2, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Zacstacy2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 22 | 30 | 16 | 88 | 438 | 5.0 | 1 | 27.4 | 8 | 39 | 0 | 96 | 1 |
-| 2014 | St. Louis Rams | 23 | 30 | 4 | 54 | 226 | 4.2 | 2 | 56.5 | 15 | 228 | 3 | 69 | 2 |
-| **Career** |  |  |  | 20 | 142 | 664 | 4.7 | 3 | 33.2 | 23 | 267 | 3 | 165 | 3 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 23 | 30 | 4 | 54 | 226 | 4.2 | 2 | 47 | 56.5 |
+| 2013 | St. Louis | 22 | 30 | 16 | 88 | 438 | 5.0 | 1 | 31 | 27.4 |
+| Career |  |  |  | 20 | 142 | 664 | 4.7 | 3 | 47 | 33.2 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 23 | 30 | 21 | 15 | 228 | 15.2 | 3 | 2 | 2 |
+| 2013 | St. Louis | 22 | 30 | 20 | 8 | 39 | 4.9 | 0 | 1 | 1 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 22 | 30 | 1 | 9 | 44 | 4.9 | 0 | 44.0 | 1 | 11 | 0 | 10 | 1 |
-| **Career** |  |  |  | 1 | 9 | 44 | 4.9 | 0 | 44.0 | 1 | 11 | 0 | 10 | 1 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 22 | 30 | 1 | 9 | 44 | 4.9 | 0 | 17 | 44.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 22 | 30 | 3 | 1 | 11 | 11.0 | 0 | 1 | 1 |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+<!-- player-page -->

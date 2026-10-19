@@ -1,28 +1,39 @@
 # Mackenzy Bernadeau
 
-![Mackenzy Bernadeau career card](assets/mackenzy_bernadeau.svg)
+**Dallas Cowboys · Guard · No. 73 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 325 lb · Born January 3, 1986 · Bentley College · Drafted in 2008, seventh round, by Carolina
+
+As of October 5, 2014, after Week 5.
+
+![Mackenzy Bernadeau](https://commons.wikimedia.org/wiki/Special:FilePath/Mackenzy_Bernadeau.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Mackenzy_Bernadeau.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 27 | 73 | 16 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Dallas Cowboys | 28 | 73 | 5 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0.0 |
-| **Career** |  |  |  | 21 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Dallas | 28 | 73 | 5 | 0 | 0 | 0 | 2 |
+| 2013 | Dallas | 27 | 73 | 16 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 27 | 73 | 2 | N/A | N/A | 2 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 2 | N/A | N/A | 2 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 27 | 73 | 2 | N/A | N/A | 2 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Carolina in the seventh round |
+
+<!-- player-page -->

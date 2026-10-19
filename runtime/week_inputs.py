@@ -30,8 +30,8 @@ from .seasons import SeasonPaths, require_receipt_season
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEDULE = ROOT / "library" / "data" / "2013_schedule.json"
-ROSTER = ROOT / "career" / "2013" / "roster.md"
-DEPTH_CHART = ROOT / "career" / "2013" / "depth_chart.json"
+ROSTER = SeasonPaths(2013, ROOT).roster
+DEPTH_CHART = SeasonPaths(2013, ROOT).depth_chart
 PROTAGONIST = "Jacksonville Jaguars"
 AVAILABLE_TEXT = "No communicated restriction"
 GAME_DAY_ACTIVES = 46
@@ -54,7 +54,7 @@ def schedule(week, season=2013):
     return games
 
 
-GENERATIONS = ROOT / "career/2013/migrations/event_generations.json"
+GENERATIONS = SeasonPaths(2013, ROOT).generations
 
 
 def event_generation(week, season=2013):

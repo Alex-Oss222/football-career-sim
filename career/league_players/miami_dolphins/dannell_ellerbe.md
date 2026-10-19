@@ -1,16 +1,29 @@
 # Dannell Ellerbe
 
-![Dannell Ellerbe career card](assets/dannell_ellerbe.svg)
+**Miami Dolphins · Linebacker · No. 59 · Age 28 · Last game September 28, 2014**
 
-## Career stats
+6' 1", 245 lb · Born November 29, 1985 · Georgia
+
+As of September 28, 2014, after Week 4.
+
+![Dannell Ellerbe](https://commons.wikimedia.org/wiki/Special:FilePath/Dannell_Ellerbe_MT_Stadium_2012_Practice.jpg?width=500)
+
+*Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Dannell_Ellerbe_MT_Stadium_2012_Practice.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Miami Dolphins | 27 | 59 | 16 | 93 | 1 | 7 | 0 | 4 | 1 | 1 | 8 | 5.8 | 57 |
-| 2014 | Miami Dolphins | 28 | 59 | 4 | 23 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 5.8 | 15 |
-| **Career** |  |  |  | 20 | 116 | 2 | 8 | 0 | 4 | 1 | 1 | 9 | 5.8 | 72 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 28 | 59 | 4 | 23 | 15 | 8 | 1 | 1 | 1 |
+| 2013 | Miami | 27 | 59 | 16 | 93 | 57 | 36 | 7 | 1 | 8 |
+| Career |  |  |  | 20 | 116 | 72 | 44 | 8 | 2 | 9 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 28 | 59 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Miami | 27 | 59 | 0 | 0 | 4 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Miami Dolphins players](README.md).
+<!-- player-page -->

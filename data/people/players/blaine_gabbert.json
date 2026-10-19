@@ -1,0 +1,15 @@
+{
+ "schema_version": 1,
+ "name": "Blaine Gabbert",
+ "gsis_id": "00-0027948",
+ "assessments": [],
+ "transactions": [
+  {
+   "date": "2013",
+   "label": "March 12 to April 24, 2013",
+   "kind": "traded",
+   "text": "Traded by Jacksonville to Green Bay for C.J. Wilson",
+   "source": "career/2013/trades/trades.md"
+  }
+ ]
+}

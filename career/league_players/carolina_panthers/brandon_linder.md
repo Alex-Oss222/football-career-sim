@@ -1,15 +1,22 @@
 # Brandon Linder
 
-![Brandon Linder career card](assets/brandon_linder.svg)
+**Carolina Panthers · Guard · Age 22 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 311 lb · Born January 25, 1992 · Miami
+
+As of October 5, 2014, after Week 5.
+
+![Brandon Linder](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Linder.png?width=500)
+
+*Photo: Tennessee Titans, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Brandon_Linder.png)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Carolina Panthers | 22 | N/A | 5 | 5 | 307 | 2 | 21 | 0 | 0 | 0 | 0 | 61.4 |
-| **Career** |  |  |  | 5 | 5 | 307 | 2 | 21 | 0 | 0 | 0 | 0 | 61.4 |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 22 | N/A | 5 | 5 | 307 | 2 | 21 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Carolina Panthers players](README.md).
+<!-- player-page -->

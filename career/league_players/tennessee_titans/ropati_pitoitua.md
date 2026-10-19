@@ -1,28 +1,46 @@
 # Ropati Pitoitua
 
-![Ropati Pitoitua career card](assets/ropati_pitoitua.svg)
+**Tennessee Titans · Defensive end · No. 92 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 8", 298 lb · Born April 6, 1985 · Washington State
+
+As of October 5, 2014, after Week 5.
+
+![Ropati Pitoitua](https://commons.wikimedia.org/wiki/Special:FilePath/Ropati_Pipotuia_perseason_Jets-v-Eagles%2C_Sep_2009_-_65.jpg?width=500)
+
+*Photo: Ed Yourdon, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Ropati_Pipotuia_perseason_Jets-v-Eagles,_Sep_2009_-_65.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 28 | 92 | 16 | 48 | 3 | 7 | 0 | 1 | 1 | 1 | 4 | 3.0 | 33 |
-| 2014 | Tennessee Titans | 29 | 92 | 5 | 26 | 1 | 2 | 0 | 5 | 0 | 0 | 2 | 5.2 | 19 |
-| **Career** |  |  |  | 21 | 74 | 4 | 9 | 0 | 6 | 1 | 1 | 6 | 3.5 | 52 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 29 | 92 | 5 | 26 | 19 | 7 | 2 | 1 | 2 |
+| 2013 | Tennessee | 28 | 92 | 16 | 48 | 33 | 15 | 7 | 3 | 4 |
+| Career |  |  |  | 21 | 74 | 52 | 22 | 9 | 4 | 6 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 29 | 92 | 0 | 0 | 5 | 0 | 0 | 0 |
+| 2013 | Tennessee | 28 | 92 | 0 | 0 | 1 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 28 | 92 | 2 | 5 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 2.5 | 2 |
-| **Career** |  |  |  | 2 | 5 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 2.5 | 2 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 28 | 92 | 2 | 5 | 2 | 3 | 2 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 28 | 92 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+<!-- player-page -->

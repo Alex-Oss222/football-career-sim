@@ -1,15 +1,22 @@
 # Jeff Adams
 
-![Jeff Adams career card](assets/jeff_adams.svg)
+**Houston Texans · Offensive tackle · No. 70 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 7", 305 lb · Born September 6, 1989 · Columbia
+
+As of October 5, 2014, after Week 5.
+
+![Jeff Adams](https://commons.wikimedia.org/wiki/Special:FilePath/Jeff_Adams_%285108934810%29_%28cropped%29.jpg?width=500)
+
+*Photo: Flickr user slgckgc, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jeff_Adams_(5108934810)_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Houston Texans | 24 | 70 | 5 | 0 | 0 | 0 | 23 | 0 | 0 | 0 | 0 | 0.0 |
-| **Career** |  |  |  | 5 | 0 | 0 | 0 | 23 | 0 | 0 | 0 | 0 | 0.0 |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Houston | 24 | 70 | 5 | 0 | 0 | 0 | 23 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Houston Texans players](README.md).
+<!-- player-page -->

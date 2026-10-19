@@ -31,8 +31,9 @@ if str(ROOT) not in sys.path:
 from runtime.game_runner import _entropy_from_ref
 from runtime.injuries import SEVERITY
 from runtime.packets import canonical
+from runtime.seasons import SeasonPaths
 
-MANIFEST = ROOT / "career/2013/migrations/injury_projection_recovery.json"
+MANIFEST = SeasonPaths(2013, ROOT).record("migrations/injury_projection_recovery.json")
 PROCEDURE = "injury-projection-recovery-v1"
 
 

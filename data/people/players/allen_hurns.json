@@ -1,0 +1,180 @@
+{
+ "schema_version": 1,
+ "name": "Allen Hurns",
+ "gsis_id": "00-0030821",
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-05-11",
+   "date_as_written": "May 11, 2014 starting evaluation, on acquisition (signed as an undrafted rookie on May 10, 2014)",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Rookie; no NFL standing. Staff view: outside receiver camp competition",
+   "position": "WR",
+   "identity": "A tall outside receiver from Miami with a productive senior season, body control on the boundary and average speed.",
+   "previous_profile": "None; 2014 rookie. The starting view rests on pre-draft public evidence only",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Boundary body control",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Separation",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Special-teams value",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments of the player as he arrives, made from pre-draft public evidence (combine and dated college record described qualitatively, plus pre-draft reports). They grade the current player, not his draft slot, contract or projection, and they use no NFL outcome. Evidence limits are stated below.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Boundary body control",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Separation",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Special-teams value",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards for the position, not measured 2014 league ranks. No NFL snap exists for this player.",
+   "read": "A tall outside receiver from Miami with a productive senior season, body control on the boundary and average speed.",
+   "read_sources": "Source: Miami senior, 2013; watch-list reason in [Stone's memo](career/2014/Early_Offseason/stone_to_caldwell_2014_offseason_decisions.md#undrafted-watch-list). No combine entry in the library.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "None (rookie)",
+     "current": "Starting 2014 view",
+     "change": "New",
+     "reason": "Pre-draft public evidence only; no Jacksonville practice or game evidence yet"
+    }
+   ],
+   "support": "Miami senior, 2013; watch-list reason in [Stone's memo](career/2014/Early_Offseason/stone_to_caldwell_2014_offseason_decisions.md#undrafted-watch-list). No combine entry in the library.",
+   "historical_comparison": "No comparator is assigned at arrival. The evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.",
+   "play_style": "A tall outside receiver from Miami with a productive senior season, body control on the boundary and average speed.",
+   "best_traits": [
+    "Boundary body control: 5.5 /10.",
+    "Athleticism: 5.0 /10.",
+    "Speed: 5.0 /10."
+   ],
+   "main_weaknesses": [
+    "Separation: 4.0 /10.",
+    "Special-teams value: 4.5 /10.",
+    "Athleticism: 5.0 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** Miami senior, 2013; watch-list reason in [Stone's memo](career/2014/Early_Offseason/stone_to_caldwell_2014_offseason_decisions.md#undrafted-watch-list). No combine entry in the library.",
+    "**Evaluation basis:** Theoretical staff judgment from pre-draft public evidence; thin evidence identified above.",
+    "**What remains uncertain:** No measured testing on record; no Jacksonville scouting report beyond the memo.",
+    "**What would change the assessment:** OTA route work against the signed corners.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates."
+   ],
+   "one_line": "A tall outside receiver from Miami with a productive senior season, body control on the boundary and average speed.",
+   "updates": [
+    {
+     "date": "2014-10-04",
+     "date_as_written": "September 29 to October 4, 2014",
+     "setting": "First relief receiver",
+     "text": "Stone's Pittsburgh order makes him the first general relief receiver and keeps him the second punt returner behind Hawkins, the prepared alternative in Westhoff's Friday return period. The fourth receiver on the chart, ahead of Nicks, whose relief is limited to the prepared X series. Nothing charged to him on the recorded reps. Active for Week 5.",
+     "source": "Source: [Week 5 record](career/2014/Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/allen_hurns.md at commit 332d70b"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2014-05-10",
+   "kind": "signed",
+   "text": "Signed a three-year contract with Jacksonville as an undrafted rookie",
+   "source": "career/2014/Draft/udfa_signings.md"
+  }
+ ]
+}

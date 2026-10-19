@@ -1,15 +1,26 @@
 # C.J. Mosley
 
-![C.J. Mosley career card](assets/c_j_mosley.svg)
+**Baltimore Ravens · Inside linebacker · No. 57 · Age 22 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 235 lb · Born June 19, 1992 · Alabama
+
+As of October 5, 2014, after Week 5.
+
+![C.J. Mosley](https://commons.wikimedia.org/wiki/Special:FilePath/C.J.Mosley.png?width=500)
+
+*Photo: Executive Office of the President, Public domain ([source](https://commons.wikimedia.org/wiki/File:C.J.Mosley.png)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Baltimore Ravens | 22 | 57 | 5 | 31 | 0 | 2 | 0 | 0 | 0 | 1 | 1 | 6.2 | 22 |
-| **Career** |  |  |  | 5 | 31 | 0 | 2 | 0 | 0 | 0 | 1 | 1 | 6.2 | 22 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 22 | 57 | 5 | 31 | 22 | 9 | 2 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 22 | 57 | 0 | 0 | 0 | 0 | 1 | 0 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Baltimore Ravens players](README.md).
+<!-- player-page -->

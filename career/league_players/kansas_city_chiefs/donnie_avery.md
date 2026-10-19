@@ -1,28 +1,44 @@
 # Donnie Avery
 
-![Donnie Avery career card](assets/donnie_avery.svg)
+**Kansas City Chiefs · Wide receiver · No. 17 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 200 lb · Born June 12, 1984 · Houston · Drafted in 2008, second round, by St. Louis
+
+As of October 5, 2014, after Week 5.
+
+![Donnie Avery](https://commons.wikimedia.org/wiki/Special:FilePath/Donnie_Avery.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Donnie_Avery.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 29 | 17 | 16 | 159 | 99 | 1,155 | 11.7 | 7 | 72.2 | 62.3 | 58 | 11 | 1 |
-| 2014 | Kansas City Chiefs | 30 | 17 | 5 | 42 | 29 | 366 | 12.6 | 1 | 73.2 | 69.0 | 61 | 0 | 1 |
-| **Career** |  |  |  | 21 | 201 | 128 | 1,521 | 11.9 | 8 | 72.4 | 63.7 | 61 | 11 | 2 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 30 | 17 | 5 | 42 | 29 | 366 | 12.6 | 1 | 61 | 73.2 | 69.0 |
+| 2013 | Kansas City | 29 | 17 | 16 | 159 | 99 | 1,155 | 11.7 | 7 | 58 | 72.2 | 62.3 |
+| Career |  |  |  | 21 | 201 | 128 | 1,521 | 11.9 | 8 | 61 | 72.4 | 63.7 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 30 | 17 | 0 | 0 | 0 | 1 | 1 |
+| 2013 | Kansas City | 29 | 17 | 4 | 11 | 0 | 1 | 1 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 29 | 17 | 1 | 13 | 12 | 111 | 9.2 | 0 | 111.0 | 92.3 | 22 | 0 | 0 |
-| **Career** |  |  |  | 1 | 13 | 12 | 111 | 9.2 | 0 | 111.0 | 92.3 | 22 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 29 | 17 | 1 | 13 | 12 | 111 | 9.2 | 0 | 22 | 111.0 | 92.3 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by St. Louis in the second round |
+
+<!-- player-page -->

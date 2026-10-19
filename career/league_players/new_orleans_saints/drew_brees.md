@@ -1,28 +1,48 @@
 # Drew Brees
 
-![Drew Brees career card](assets/drew_brees.svg)
+**New Orleans Saints · Quarterback · No. 9 · Age 35 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 209 lb · Born January 15, 1979 · Purdue · Drafted in 2001, second round, by San Diego
+
+As of October 5, 2014, after Week 5.
+
+![Drew Brees](https://commons.wikimedia.org/wiki/Special:FilePath/Drew_Brees_%2849396271982%29_%281%29.jpg?width=500)
+
+*Photo: Senate Democrats, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Drew_Brees_(49396271982)_(1).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 34 | 9 | 9 | 207-317 | 65.3 | 2,158 | 11 | 12 | 6.8 | 80.7 | 239.8 | 60 | 0 |
-| 2014 | New Orleans Saints | 35 | 9 | 5 | 105-175 | 60.0 | 1,414 | 6 | 2 | 8.1 | 92.4 | 282.8 | 71 | 1 |
-| **Career** |  |  |  | 14 | 312-492 | 63.4 | 3,572 | 17 | 14 | 7.3 | 84.8 | 255.1 | 131 | 1 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New Orleans | 35 | 9 | 5 | 105 | 175 | 60.0 | 1,414 | 8.1 | 282.8 | 6 | 2 | 92.4 |
+| 2013 | New Orleans | 34 | 9 | 9 | 207 | 317 | 65.3 | 2,158 | 6.8 | 239.8 | 11 | 12 | 80.7 |
+| Career |  |  |  | 14 | 312 | 492 | 63.4 | 3,572 | 7.3 | 255.1 | 17 | 14 | 84.8 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New Orleans | 35 | 9 | 9 | 53 | 19 | 71 | 1 | 3 | 3 |
+| 2013 | New Orleans | 34 | 9 | 17 | 106 | 27 | 60 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 34 | 9 | 1 | 18-26 | 69.2 | 170 | 1 | 2 | 6.5 | 67.8 | 170.0 | 2 | 0 |
-| **Career** |  |  |  | 1 | 18-26 | 69.2 | 170 | 1 | 2 | 6.5 | 67.8 | 170.0 | 2 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 34 | 9 | 1 | 18 | 26 | 69.2 | 170 | 6.5 | 170.0 | 1 | 2 | 67.8 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 34 | 9 | 3 | 12 | 3 | 2 | 0 | 0 | 0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New Orleans Saints players](README.md).
+| Date | Transaction |
+|---|---|
+| 2001 | Drafted by San Diego in the second round |
+
+<!-- player-page -->

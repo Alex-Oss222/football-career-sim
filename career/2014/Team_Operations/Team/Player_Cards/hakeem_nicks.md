@@ -1,182 +1,77 @@
-# Hakeem Nicks — 2014 Player Profile
+# Hakeem Nicks
 
-<!-- player-card:begin -->
-![Hakeem Nicks career card](../../../../league_players/jacksonville_jaguars/assets/hakeem_nicks.svg)
+**Jacksonville Jaguars · Wide receiver · No. 14 · Age 26 · Active roster**
 
-[Career statistics](../../../../league_players/jacksonville_jaguars/hakeem_nicks.md)
-<!-- player-card:end -->
+6' 1", 208 lb · Born January 14, 1988 · North Carolina · Drafted in 2009, first round, by the New York Giants
 
-<!-- photo -->
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hakeem_Nicks.JPG?width=500" alt="Hakeem Nicks" width="160">
+As of October 5, 2014, after Week 5.
+
+![Hakeem Nicks](https://commons.wikimedia.org/wiki/Special:FilePath/Hakeem_Nicks.JPG?width=500)
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Hakeem_Nicks.JPG)).*
-<!-- /photo -->
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** March 31, 2014 starting evaluation  
-**Age:** 26  
-**Position:** WR  
-**NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** A physical outside receiver who wins through hands, catch-point strength and route timing. My starting view is that he offers more contested-catch value than sudden separation.  
-**Previous annual profile:** New Jacksonville player; no prior Jacksonville annual profile  
+## Staff assessment
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
-
-## Player grades
-
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 6.5 /10 | Staff judgment |
-| Athleticism | 6.0 /10 | Staff judgment |
-| Speed | 5.5 /10 | Staff judgment |
-| Strength / Power | 7.0 /10 | Staff judgment |
-| Agility / Change of direction | 5.5 /10 | Staff judgment |
-| Technique | 6.5 /10 | Staff judgment |
-| Football IQ | 6.5 /10 | Staff judgment |
-| Release vs press | 6.5 /10 | Staff judgment |
-| Route running | 6.5 /10 | Staff judgment |
-| Separation / quickness | 5.5 /10 | Staff judgment |
-| Long speed | 5.5 /10 | Staff judgment |
-| Hands | 7.0 /10 | Staff judgment |
-| Catch radius / contested catches | 7.5 /10 | Staff judgment |
-| Ball tracking / deep receiving | 7.0 /10 | Staff judgment |
-| YAC / contact balance | 6.0 /10 | Staff judgment |
-| Coverage recognition / adjustments | 6.5 /10 | Staff judgment |
-| Blocking | 5.5 /10 | Staff judgment |
-
-Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | At NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Release vs press | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Route running | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Separation / quickness | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Long speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Hands | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Catch radius / contested catches | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Ball tracking / deep receiving | Above NFL starter standard | Below elite standard | Above low-end standard |
-| YAC / contact balance | At NFL starter standard | Below elite standard | Above low-end standard |
-| Coverage recognition / adjustments | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Blocking | Below NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards, not measured 2014 league ranks.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 6.5/10 |
+| Athleticism | 6.0/10 |
+| Speed | 5.5/10 |
+| Strength and power | 7.0/10 |
+| Agility and change of direction | 5.5/10 |
+| Technique | 6.5/10 |
+| Football IQ | 6.5/10 |
+| Release vs press | 6.5/10 |
+| Route running | 6.5/10 |
+| Separation and quickness | 5.5/10 |
+| Long speed | 5.5/10 |
+| Hands | 7.0/10 |
+| Catch radius and contested catches | 7.5/10 |
+| Ball tracking and deep receiving | 7.0/10 |
+| YAC and contact balance | 6.0/10 |
+| Coverage recognition and adjustments | 6.5/10 |
+| Blocking | 5.5/10 |
 
 A physical outside receiver who wins through hands, catch-point strength and route timing. My starting view is that he offers more contested-catch value than sudden separation.
 
-Source: [Current roster and signing history](../Roster/roster.md). Initial personnel judgments; no Jacksonville practice or game evaluation is recorded yet.
+*Staff view, March 31, 2014; dated updates through October 4, 2014.*
 
-## Year-over-year change
+## Contract
 
-New Jacksonville starting assessment. No prior Jacksonville evaluation is invented.
+One-year contract through 2014.
 
-## What supports this assessment
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $2,500,000 | $5,000,000 |
 
-A physical outside receiver who wins through hands, catch-point strength and route timing. My starting view is that he offers more contested-catch value than sudden separation.
+## Statistics
 
-[Current roster and signing history](../Roster/roster.md). Initial personnel judgments; no Jacksonville practice or game evaluation is recorded yet.
+### Regular season
 
-## Historical comparison
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 26 | 14 | 2 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2013 | N.Y. Giants | 25 | 88 | 16 | 77 | 48 | 586 | 12.2 | 7 | 56 | 36.6 | 62.3 |
+| Career |  |  |  | 18 | 77 | 48 | 586 | 12.2 | 7 | 56 | 32.6 | 62.3 |
 
-The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 26 | 14 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | N.Y. Giants | 25 | 88 | 1 | 1 | 0 | 1 | 1 |
 
-## Play style
+### Playoffs
 
-A physical outside receiver who wins through hands, catch-point strength and route timing. My starting view is that he offers more contested-catch value than sudden separation.
+No playoff games on record.
 
-## Best traits
+## Awards
 
-- Catch radius / contested catches: 7.5 /10.
-- Hands: 7.0 /10.
-- Ball tracking / deep receiving: 7.0 /10.
+None.
 
-## Main weaknesses
+## Transactions
 
-- Separation / quickness: 5.5 /10.
-- Long speed: 5.5 /10.
-- Blocking: 5.5 /10.
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by the New York Giants in the first round |
+| March 14, 2014 | Signed a one-year contract with Jacksonville |
 
-## Evidence and uncertainty
-
-- **Primary evidence:** [Current roster and signing history](../Roster/roster.md). Initial personnel judgments; no Jacksonville practice or game evaluation is recorded yet.
-- **Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
-
-**One-line description:** A physical outside receiver who wins through hands, catch-point strength and route timing. My starting view is that he offers more contested-catch value than sudden separation.
-
-## 2013 season production
-
-| Statistic | 2013 regular season | 2013 playoffs |
-| --- | ---: | ---: |
-| G | 15 | Unrecorded |
-| TGT | 101 | Unrecorded |
-| REC | 56 | Unrecorded |
-| REC YDS | 896 | Unrecorded |
-| REC TD | 0 | Unrecorded |
-
-Prior-club historical NFL statistics, not Jacksonville totals. Source: [2013 historical dataset](../../../../../library/data/2013_player_sheet_benchmarks.json). This dataset covers the regular season only; postseason totals were not recovered.
-
-## Dated coaching updates
-
-### August 1, 2014 | Training camp
-
-Nicks held his landmarks and won leverage against Talib with his hands while keeping the quick-concept timing; Talib re-routed him on other reps. The mixed contact evidence leaves the WR1 comparison open.
-
-Source: [dated camp observations](../../../Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
-
-### August 28, 2014 | Preseason game 4, Atlanta at Jacksonville
-
-Twelve snaps at X with the starters in the first quarter, one target, the 14-yard catch on the MAX-protected Power Pass on third-and-18 that fell 4 short, before a multi-week lower-extremity injury was logged at the end of that possession (3:56 of the first quarter) and he was removed: out, projected return in 23 days (September 20), reassessment September 4 ([medical record](../../Medical/incidents/hakeem_nicks_2014-08-28.md)). Four games of WR1 evidence stand as recorded (one catch for 14 here, 2 of 3 for 34 at Detroit, 2 of 5 for 19 with two interceptions at Chicago, no first-group target at Tampa Bay); the comparison with Adams is not decided by the injury, the Week 1 arrangement is Stone's open decision and any roster disposition is Caldwell's with the user at the August 30 reduction.
-
-Source: [preseason game 4 output](../../../Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md) and its public receipt. This coaching update preserves the opening grades above.
-
-### September 15 to 20, 2014 | Cleared
-
-Cleared Saturday, September 20, his projected date, after not practicing Wednesday through Friday; out on the Friday report; full in the Saturday walkthrough. The X role requires a full practice week under Stone's condition, which this week could not supply, so Adams remains the X and Nicks is listed last among the receivers and inactive for Indianapolis by the standing rule as the deepest healthy receiver. No football finding attaches to the week; his next practice week is the first evidence.
-
-Source: [Week 3 record](../../../Regular_Season/Games/Week_03/output.md) and the [medical history](../../Medical/medical_history.md#september-15-to-20-stanford-johnson-hoskins-and-nicks-cleared-harris-and-lowery-reassessed). This coaching update preserves the opening grades above.
-
-### September 22 to 27, 2014 | The full practice week
-
-Full in every session of the San Diego week, the Monday walkthrough, the Wednesday, Thursday and Friday practices and the Saturday walkthrough, with no communicated restriction, Hurns carrying the first-group receiver work while Adams was out. The full practice week Stone's condition requires for his return to X is complete as a fact of the record; the condition is necessary and not sufficient, and his return to X with Adams to Z is Stone's decision, open at the freeze. Active for San Diego as the fifth dressed receiver under the packet's inactive alternative, Grimes inactive in his place; his chart place is unchanged. Nothing charged to him on the recorded reps.
-
-Source: [Week 4 record](../../../Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above.
-
-### September 29 to October 4, 2014 | The X relief
-
-Full in every session of the Pittsburgh week. Stone kept Adams at X for Pittsburgh and made Nicks the fifth receiver and the X relief, not a starting promotion. The relief combination was rehearsed as the packet scripted it: the designated base-pass rep at X in relief of Adams in Wednesday's move-the-ball period with Thielen and Hawkins in their own jobs, the 11 Doubles Stick relief check on Thursday's third-down card and the Saturday recheck. It was released for the prepared 11 Doubles Drive HALF and Stick SCAT relief series only; Hurns keeps the established relief job everywhere else. Nothing charged to him on the recorded reps. Active for Week 5.
-
-Source: [Week 5 record](../../../Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 26 | 14 | Through Week 5 | 2 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — | 0 | 0 | — | 0 | 0 | — | 0 |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 26 | 14 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

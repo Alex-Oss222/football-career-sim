@@ -1,28 +1,44 @@
 # Kendall Wright
 
-![Kendall Wright career card](assets/kendall_wright.svg)
+**Tennessee Titans · Wide receiver · No. 13 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 191 lb · Born November 12, 1989 · Baylor · Drafted in 2012, first round, by Tennessee
+
+As of October 5, 2014, after Week 5.
+
+![Kendall Wright](https://commons.wikimedia.org/wiki/Special:FilePath/Kendall_Wright.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Kendall_Wright.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 23 | 13 | 16 | 64 | 44 | 430 | 9.8 | 4 | 26.9 | 68.8 | 53 | 3 | 0 |
-| 2014 | Tennessee Titans | 24 | 13 | 5 | 48 | 33 | 288 | 8.7 | 3 | 57.6 | 68.8 | 26 | 33 | 1 |
-| **Career** |  |  |  | 21 | 112 | 77 | 718 | 9.3 | 7 | 34.2 | 68.8 | 53 | 36 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 24 | 13 | 5 | 48 | 33 | 288 | 8.7 | 3 | 26 | 57.6 | 68.8 |
+| 2013 | Tennessee | 23 | 13 | 16 | 64 | 44 | 430 | 9.8 | 4 | 53 | 26.9 | 68.8 |
+| Career |  |  |  | 21 | 112 | 77 | 718 | 9.3 | 7 | 53 | 34.2 | 68.8 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 24 | 13 | 3 | 33 | 0 | 1 | 1 |
+| 2013 | Tennessee | 23 | 13 | 2 | 3 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 23 | 13 | 2 | 9 | 4 | 38 | 9.5 | 0 | 19.0 | 44.4 | 28 | 0 | 0 |
-| **Career** |  |  |  | 2 | 9 | 4 | 38 | 9.5 | 0 | 19.0 | 44.4 | 28 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 23 | 13 | 2 | 9 | 4 | 38 | 9.5 | 0 | 28 | 19.0 | 44.4 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Tennessee in the first round |
+
+<!-- player-page -->

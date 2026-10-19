@@ -1,15 +1,22 @@
 # Delanie Walker
 
-![Delanie Walker career card](assets/delanie_walker.svg)
+**Tennessee Titans · Tight end · No. 82 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 248 lb · Born August 12, 1984 · Central Missouri; Mt. San Antonio · Drafted in 2006, sixth round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![Delanie Walker](https://commons.wikimedia.org/wiki/Special:FilePath/Delanie_Walker_2009.jpg?width=500)
+
+*Photo: John Martinez Pavliga, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Delanie_Walker_2009.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Tennessee Titans | 30 | 82 | 5 | 40 | 20 | 239 | 11.9 | 4 | 47.8 | 50.0 | 33 | 0 | 0 |
-| **Career** |  |  |  | 5 | 40 | 20 | 239 | 11.9 | 4 | 47.8 | 50.0 | 33 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 30 | 82 | 5 | 40 | 20 | 239 | 11.9 | 4 | 33 | 47.8 | 50.0 |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by San Francisco in the sixth round |
+
+<!-- player-page -->

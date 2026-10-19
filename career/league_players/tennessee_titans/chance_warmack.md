@@ -1,28 +1,37 @@
 # Chance Warmack
 
-![Chance Warmack career card](assets/chance_warmack.svg)
+**Tennessee Titans · Guard · No. 70 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 323 lb · Born September 14, 1991 · Alabama
+
+As of October 5, 2014, after Week 5.
+
+![Chance Warmack](https://commons.wikimedia.org/wiki/Special:FilePath/Chance_Warmack_at_Alabama.jpg?width=500)
+
+*Photo: Patriarca12, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Chance_Warmack_at_Alabama.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 21 | 70 | 16 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Tennessee Titans | 22 | 70 | 5 | 5 | 323 | 1 | 23 | 0 | 0 | 0 | 0 | 64.6 |
-| **Career** |  |  |  | 21 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 22 | 70 | 5 | 5 | 323 | 1 | 23 |
+| 2013 | Tennessee | 21 | 70 | 16 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 21 | 70 | 2 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 2 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 21 | 70 | 2 | N/A | N/A | 0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+<!-- player-page -->

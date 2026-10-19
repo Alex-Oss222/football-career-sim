@@ -1,16 +1,29 @@
 # Malcolm Smith
 
-![Malcolm Smith career card](assets/malcolm_smith.svg)
+**Seattle Seahawks · Outside linebacker · No. 53 · Age 25 · Last game October 6, 2014**
 
-## Career stats
+6' 0", 226 lb · Born July 5, 1989 · USC · Drafted in 2011, seventh round, by Seattle
+
+As of October 6, 2014, after Week 5.
+
+![Malcolm Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Malcolm_Smith_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Malcolm_Smith_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Seattle Seahawks | 24 | 53 | 16 | 36 | 0 | 1 | 0 | 0 | 0 | 0 | 2 | 2.2 | 20 |
-| 2014 | Seattle Seahawks | 25 | 53 | 4 | 23 | 1 | 2 | 1 | 2 | 1 | 0 | 1 | 5.8 | 15 |
-| **Career** |  |  |  | 20 | 59 | 1 | 3 | 1 | 2 | 1 | 0 | 3 | 3.0 | 35 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 25 | 53 | 4 | 23 | 15 | 8 | 2 | 1 | 1 |
+| 2013 | Seattle | 24 | 53 | 16 | 36 | 20 | 16 | 1 | 0 | 2 |
+| Career |  |  |  | 20 | 59 | 35 | 24 | 3 | 1 | 3 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 25 | 53 | 1 | 0 | 2 | 1 | 0 | 0 |
+| 2013 | Seattle | 24 | 53 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -20,6 +33,10 @@ No playoff games on record.
 
 - NFC Defensive Player of the Week (2014, Week 5)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Seattle in the seventh round |
+
+<!-- player-page -->

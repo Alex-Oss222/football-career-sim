@@ -1,132 +1,64 @@
-# Todd Davis — 2014 Player Profile
+# Todd Davis
 
-<!-- player-card:begin -->
-![Todd Davis career card](../../../../league_players/jacksonville_jaguars/assets/todd_davis.svg)
+**Jacksonville Jaguars · Linebacker · Age 22 · Active roster**
 
-[Career statistics](../../../../league_players/jacksonville_jaguars/todd_davis.md)
-<!-- player-card:end -->
+Born May 17, 1992 · Sacramento State · Undrafted
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** May 11, 2014 starting evaluation, on acquisition (signed as an undrafted rookie on May 10, 2014)  
-**Age:** 21  
-**Position:** LB  
-**NFL standing:** Rookie; no NFL standing. Staff view: coverage units and linebacker depth  
-**Player identity:** A productive small-school inside linebacker with a downhill style and coverage-unit value; coverage range is the question.  
-**Previous annual profile:** None; 2014 rookie. The starting view rests on pre-draft public evidence only  
+As of October 5, 2014, after Week 5.
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
+## Staff assessment
 
-## Player grades
-
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 3.0 /10 | Staff judgment |
-| Athleticism | 5.0 /10 | Staff judgment |
-| Speed | 5.0 /10 | Staff judgment |
-| Strength / Power | 5.5 /10 | Staff judgment |
-| Agility / Change of direction | 4.5 /10 | Staff judgment |
-| Technique | 4.5 /10 | Staff judgment |
-| Football IQ | 5.0 /10 | Staff judgment |
-| Downhill fit | 5.5 /10 | Staff judgment |
-| Coverage range | 4.0 /10 | Staff judgment |
-| Coverage-unit fit | 5.5 /10 | Staff judgment |
-
-Exact theoretical personnel judgments of the player as he arrives, made from pre-draft public evidence (combine and dated college record described qualitatively, plus pre-draft reports). They grade the current player, not his draft slot, contract or projection, and they use no NFL outcome. Evidence limits are stated below.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | At NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Downhill fit | At NFL starter standard | Below elite standard | Above low-end standard |
-| Coverage range | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Coverage-unit fit | At NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards for the position, not measured 2014 league ranks. No NFL snap exists for this player.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 3.0/10 |
+| Athleticism | 5.0/10 |
+| Speed | 5.0/10 |
+| Strength and power | 5.5/10 |
+| Agility and change of direction | 4.5/10 |
+| Technique | 4.5/10 |
+| Football IQ | 5.0/10 |
+| Downhill fit | 5.5/10 |
+| Coverage range | 4.0/10 |
+| Coverage-unit fit | 5.5/10 |
 
 A productive small-school inside linebacker with a downhill style and coverage-unit value; coverage range is the question.
 
-Source: Sacramento State senior, 2013; memo watch-list reason. No combine entry in the library.
+*Staff view, May 11, 2014; dated updates through October 4, 2014.*
 
-## Year-over-year change
+## Contract
 
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Player identity and position traits | None (rookie) | Starting 2014 view | New | Pre-draft public evidence only; no Jacksonville practice or game evidence yet |
+Three-year contract through 2016.
 
-## What supports this assessment
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $420,000 | $420,000 |
+| 2015 | $510,000 | $510,000 |
+| 2016 | $600,000 | $600,000 |
 
-Sacramento State senior, 2013; memo watch-list reason. No combine entry in the library.
+## Statistics
 
-## Historical comparison
+### Regular season
 
-No comparator is assigned at arrival. The evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 22 | N/A | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-## Play style
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 22 | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
 
-A productive small-school inside linebacker with a downhill style and coverage-unit value; coverage range is the question.
+### Playoffs
 
-## Best traits
+No playoff games on record.
 
-- Strength / Power: 5.5 /10.
-- Downhill fit: 5.5 /10.
-- Coverage-unit fit: 5.5 /10.
+## Awards
 
-## Main weaknesses
+None.
 
-- Coverage range: 4.0 /10.
-- Agility / Change of direction: 4.5 /10.
-- Technique: 4.5 /10.
+## Transactions
 
-## Evidence and uncertainty
+| Date | Transaction |
+|---|---|
+| May 10, 2014 | Signed a three-year contract with Jacksonville as an undrafted rookie |
 
-- **Primary evidence:** Sacramento State senior, 2013; memo watch-list reason. No combine entry in the library.
-- **Evaluation basis:** Theoretical staff judgment from pre-draft public evidence; thin evidence identified above.
-- **What remains uncertain:** FCS competition; no measured testing on record.
-- **What would change the assessment:** Base-fit assignment work in Phase Two and OTAs.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates.
-
-**One-line description:** A productive small-school inside linebacker with a downhill style and coverage-unit value; coverage range is the question.
-
-## 2013 season production
-
-No NFL season. The college record is described qualitatively above; no college statistic is entered as an NFL figure.
-
-## Dated coaching updates
-
-### September 29 to October 4, 2014 | Active for Pittsburgh
-
-Active for the first time this season. Stone's packet dresses him in place of Hoskins for additional linebacker and coverage-unit depth, citing Pittsburgh's run game, Stanford's injury and Posluszny's late projected clearance; Westhoff checked him in the active coverage rotation in Friday's kicking period. Nothing charged to him on the recorded reps.
-
-Source: [Week 5 record](../../../Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 22 | N/A | Through Week 5 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 22 | N/A | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

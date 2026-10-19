@@ -1,18 +1,20 @@
 # Baltimore Ravens players
 
-AFC North · Players whose latest game on record was with the Baltimore Ravens. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+AFC North. The players whose latest game on record was with the Baltimore Ravens. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 5 | [Joe Flacco](joe_flacco.md) | QB | 5 | 16 |
 | 2 | [Tyrod Taylor](tyrod_taylor.md) | QB | 5 | 16 |
 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 30 | [Bernard Pierce](bernard_pierce.md) | RB | 5 | 16 |
 | 43 | [Fitzgerald Toussaint](fitzgerald_toussaint.md) | RB | 4 | 0 |
 | 29 | [Justin Forsett](justin_forsett.md) | RB | 5 | 0 |
@@ -24,7 +26,7 @@ AFC North · Players whose latest game on record was with the Baltimore Ravens. 
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Aaron Mellette](aaron_mellette.md) | WR | 0 | 16 |
 | N/A | [Brandon Stokley](brandon_stokley.md) | WR | 0 | 16 |
 | 83 | [Deonte Thompson](deonte_thompson.md) | WR | 4 | 13 |
@@ -38,7 +40,7 @@ AFC North · Players whose latest game on record was with the Baltimore Ravens. 
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Billy Bajema](billy_bajema.md) | TE | 0 | 15 |
 | 80 | [Crockett Gillmore](crockett_gillmore.md) | TE | 5 | 0 |
 | N/A | [Dallas Clark](dallas_clark.md) | TE | 0 | 16 |
@@ -49,7 +51,7 @@ AFC North · Players whose latest game on record was with the Baltimore Ravens. 
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [A.Q. Shipley](a_q_shipley.md) | C | 0 | 11 |
 | N/A | [Bryant McKinnie](bryant_mckinnie.md) | T | 0 | 16 |
 | 66 | [Gino Gradkowski](gino_gradkowski.md) | C | 5 | 16 |
@@ -65,7 +67,7 @@ AFC North · Players whose latest game on record was with the Baltimore Ravens. 
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 98 | [Brandon Williams](brandon_williams.md) | NT | 5 | 5 |
 | 99 | [Chris Canty](chris_canty.md) | DE | 5 | 16 |
 | 68 | [Christo Bilukidi](christo_bilukidi.md) | DT | 1 | 16 |
@@ -80,7 +82,7 @@ AFC North · Players whose latest game on record was with the Baltimore Ravens. 
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 50 | [Albert McClellan](albert_mcclellan.md) | ILB | 5 | 16 |
 | 59 | [Arthur Brown](arthur_brown.md) | ILB | 5 | 12 |
 | 57 | [C.J. Mosley](c_j_mosley.md) | ILB | 5 | 0 |
@@ -94,7 +96,7 @@ AFC North · Players whose latest game on record was with the Baltimore Ravens. 
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 41 | [Anthony Levine](anthony_levine.md) | SS | 0 | 15 |
 | 25 | [Asa Jackson](asa_jackson.md) | CB | 5 | 0 |
 | 23 | [Chykie Brown](chykie_brown.md) | CB | 5 | 16 |
@@ -108,17 +110,19 @@ AFC North · Players whose latest game on record was with the Baltimore Ravens. 
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 9 | [Justin Tucker](justin_tucker.md) | K | 5 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 4 | [Sam Koch](sam_koch.md) | P | 5 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 46 | [Morgan Cox](morgan_cox.md) | LS | 5 | 16 |
+
+<!-- player-index -->

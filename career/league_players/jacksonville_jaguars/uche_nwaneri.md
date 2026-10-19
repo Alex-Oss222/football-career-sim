@@ -1,27 +1,54 @@
 # Uche Nwaneri
 
-![Uche Nwaneri career card](assets/uche_nwaneri.svg)
+**Jacksonville Jaguars · Guard · Age 29 · Former player**
 
-## Career stats
+6' 3", 310 lb · Born March 20, 1984 · Purdue · Drafted in 2007, fifth round, by Jacksonville
+
+As of January 11, 2014, after the Divisional round.
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall at position | 6.0/10 |
+| Interior pass protection | 6.0/10 |
+| Anchor and power | 6.5/10 |
+| Hand usage | 6.0/10 |
+| Recovery and balance | 5.5/10 |
+| Drive blocking | 6.5/10 |
+| Pull and movement blocking | 5.0/10 |
+| Combination and second-level work | 6.0/10 |
+| Stunt and blitz recognition | 6.0/10 |
+| Leverage and consistency | 5.5/10 |
+
+Correct identification and recovery appear in preseason; shared interior exchange work improved in spring. Individual leverage and the Week 2 sack cause remain underclassified. A VERIFY retirement row does not retire him.
+
+*Staff view at the 2013 season close, January 14, 2014.*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 29 | 77 | 16 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 16 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 29 | 77 | 16 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 29 | 77 | 2 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 2 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 29 | 77 | 2 | N/A | N/A | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 11, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Jacksonville Jaguars players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Jacksonville in the fifth round |
+| 2010 | Signed a five-year contract extension with Jacksonville |
+| March 20, 2014 | Traded by Jacksonville to Arizona, with Jacksonville's 2015 first-, 2015 fourth- and 2016 fifth-round picks, for Arizona's 2014 second-round pick (No. 38) |
+
+<!-- player-page -->

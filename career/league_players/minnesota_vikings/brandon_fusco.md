@@ -1,28 +1,39 @@
 # Brandon Fusco
 
-![Brandon Fusco career card](assets/brandon_fusco.svg)
+**Minnesota Vikings · Guard · No. 63 · Age 26 · Last game October 2, 2014**
 
-## Career stats
+6' 4", 306 lb · Born July 26, 1988 · Slippery Rock · Drafted in 2011, sixth round, by Minnesota
+
+As of October 2, 2014, after Week 5.
+
+![Brandon Fusco](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Fusco.jpg?width=500)
+
+*Photo: Joe Bielawa, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Brandon_Fusco.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 25 | 63 | 16 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Minnesota Vikings | 26 | 63 | 5 | 5 | 288 | 0 | 14 | 0 | 0 | 0 | 0 | 57.6 |
-| **Career** |  |  |  | 21 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 26 | 63 | 5 | 5 | 288 | 0 | 14 |
+| 2013 | Minnesota | 25 | 63 | 16 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 25 | 63 | 3 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 3 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 25 | 63 | 3 | N/A | N/A | 3 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Minnesota in the sixth round |
+
+<!-- player-page -->

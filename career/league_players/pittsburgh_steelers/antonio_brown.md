@@ -1,16 +1,29 @@
 # Antonio Brown
 
-![Antonio Brown career card](assets/antonio_brown.svg)
+**Pittsburgh Steelers · Wide receiver · No. 84 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 186 lb · Born July 10, 1988 · Central Michigan · Drafted in 2010, sixth round, by Pittsburgh
+
+As of October 5, 2014, after Week 5.
+
+![Antonio Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Antonio_Brown_2015.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Antonio_Brown_2015.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 25 | 84 | 5 | 48 | 32 | 289 | 9.0 | 2 | 57.8 | 66.7 | 29 | 0 | 0 |
-| 2014 | Pittsburgh Steelers | 26 | 84 | 5 | 29 | 19 | 161 | 8.5 | 1 | 32.2 | 65.5 | 21 | 0 | 0 |
-| **Career** |  |  |  | 10 | 77 | 51 | 450 | 8.8 | 3 | 45.0 | 66.2 | 29 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 26 | 84 | 5 | 29 | 19 | 161 | 8.5 | 1 | 21 | 32.2 | 65.5 |
+| 2013 | Pittsburgh | 25 | 84 | 5 | 48 | 32 | 289 | 9.0 | 2 | 29 | 57.8 | 66.7 |
+| Career |  |  |  | 10 | 77 | 51 | 450 | 8.8 | 3 | 29 | 45.0 | 66.2 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 26 | 84 | 0 | 0 | N/A | 2 | 8 | 4.0 |
+| 2013 | Pittsburgh | 25 | 84 | 0 | 0 | N/A | 11 | 127 | 11.5 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Pittsburgh in the sixth round |
+
+<!-- player-page -->

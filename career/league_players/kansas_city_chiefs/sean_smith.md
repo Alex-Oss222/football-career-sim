@@ -1,28 +1,48 @@
 # Sean Smith
 
-![Sean Smith career card](assets/sean_smith.svg)
+**Kansas City Chiefs · Cornerback · No. 21 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 218 lb · Born July 14, 1987 · Utah · Drafted in 2009, second round, by Miami
+
+As of October 5, 2014, after Week 5.
+
+![Sean Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Sean_Smith.jpg?width=500)
+
+*Photo: Chrisjnelson at en.wikipedia, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Sean_Smith.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 26 | 27 | 16 | 89 | 3 | 17 | 68 | 3 | 0 | 2 | 2 | 5.6 | 0 |
-| 2014 | Kansas City Chiefs | 27 | 21 | 5 | 38 | 1 | 7 | 20 | 1 | 0 | 1 | 1 | 7.6 | 0 |
-| **Career** |  |  |  | 21 | 127 | 4 | 24 | 88 | 4 | 0 | 3 | 3 | 6.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 27 | 21 | 5 | 38 | 22 | 16 | 1 | 0 | 0 |
+| 2013 | Kansas City | 26 | 27 | 16 | 89 | 61 | 28 | 3 | 0 | 0 |
+| Career |  |  |  | 21 | 127 | 83 | 44 | 4 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 27 | 21 | 1 | 20 | 7 | 1 | 1 | 0 |
+| 2013 | Kansas City | 26 | 27 | 3 | 68 | 17 | 2 | 2 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 26 | 27 | 1 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4.0 | 0 |
-| **Career** |  |  |  | 1 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 26 | 27 | 1 | 4 | 1 | 3 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 26 | 27 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
 - Pro Bowl selection (2013, CB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Miami in the second round |
+
+<!-- player-page -->

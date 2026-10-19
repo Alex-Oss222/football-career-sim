@@ -1,16 +1,29 @@
 # Johnathan Joseph
 
-![Johnathan Joseph career card](assets/johnathan_joseph.svg)
+**Houston Texans · Cornerback · No. 24 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 188 lb · Born April 16, 1984 · South Carolina; Coffeyville CC · Drafted in 2006, first round, by Cincinnati
+
+As of October 5, 2014, after Week 5.
+
+![Johnathan Joseph](https://commons.wikimedia.org/wiki/Special:FilePath/Johnathan_Joseph_Bengals.jpg?width=500)
+
+*Photo: Johnathan_Joseph_and_Todd_Heap.jpg : Keith Allison derivative work: Lpdrew ( talk ), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Johnathan_Joseph_Bengals.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Houston Texans | 29 | 24 | 16 | 101 | 5 | 14 | 83 | 1 | 1 | 1 | 1 | 6.3 | 0 |
-| 2014 | Houston Texans | 30 | 24 | 5 | 30 | 1 | 4 | 21 | 0 | 0 | 0 | 0 | 6.0 | 0 |
-| **Career** |  |  |  | 21 | 131 | 6 | 18 | 104 | 1 | 1 | 1 | 1 | 6.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Houston | 30 | 24 | 5 | 30 | 25 | 5 | 0 | 0 | 0 |
+| 2013 | Houston | 29 | 24 | 16 | 101 | 61 | 40 | 1 | 1 | 1 |
+| Career |  |  |  | 21 | 131 | 86 | 45 | 1 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Houston | 30 | 24 | 1 | 21 | 4 | 0 | 0 | 0 |
+| 2013 | Houston | 29 | 24 | 5 | 83 | 14 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -20,6 +33,10 @@ No playoff games on record.
 
 - Pro Bowl selection (2013, CB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Houston Texans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Cincinnati in the first round |
+
+<!-- player-page -->

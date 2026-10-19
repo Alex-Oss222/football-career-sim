@@ -1,16 +1,29 @@
 # Pat Sims
 
-![Pat Sims career card](assets/pat_sims.svg)
+**Oakland Raiders · Nose tackle · No. 90 · Age 28 · Last game September 28, 2014**
 
-## Career stats
+6' 2", 310 lb · Born November 29, 1985 · Auburn · Drafted in 2008, third round, by Cincinnati
+
+As of September 28, 2014, after Week 4.
+
+![Pat Sims](https://commons.wikimedia.org/wiki/Special:FilePath/Pat_Sims.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Pat_Sims.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Oakland Raiders | 27 | 90 | 16 | 48 | 6 | 5 | 0 | 1 | 0 | 0 | 9 | 3.0 | 38 |
-| 2014 | Oakland Raiders | 28 | 90 | 4 | 10 | 0 | 0 | 0 | 1 | 0 | 0 | 3 | 2.5 | 6 |
-| **Career** |  |  |  | 20 | 58 | 6 | 5 | 0 | 2 | 0 | 0 | 12 | 2.9 | 44 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 28 | 90 | 4 | 10 | 6 | 4 | 0 | 0 | 3 |
+| 2013 | Oakland | 27 | 90 | 16 | 48 | 38 | 10 | 5 | 6 | 9 |
+| Career |  |  |  | 20 | 58 | 44 | 14 | 5 | 6 | 12 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 28 | 90 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | Oakland | 27 | 90 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Oakland Raiders players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Cincinnati in the third round |
+
+<!-- player-page -->

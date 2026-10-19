@@ -1,16 +1,24 @@
 # Gosder Cherilus
 
-![Gosder Cherilus career card](assets/gosder_cherilus.svg)
+**Indianapolis Colts · Offensive tackle · No. 78 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 7", 316 lb · Born June 28, 1984 · Boston College · Drafted in 2008, first round, by Detroit
+
+As of October 5, 2014, after Week 5.
+
+![Gosder Cherilus](https://commons.wikimedia.org/wiki/Special:FilePath/Gosder_Cherilus.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Gosder_Cherilus.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 29 | 78 | 16 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Indianapolis Colts | 30 | 78 | 5 | 5 | 360 | 2 | 24 | 0 | 0 | 0 | 0 | 72.0 |
-| **Career** |  |  |  | 21 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 30 | 78 | 5 | 5 | 360 | 2 | 24 |
+| 2013 | Indianapolis | 29 | 78 | 16 | N/A | N/A | 1 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Detroit in the first round |
+
+<!-- player-page -->

@@ -1,28 +1,48 @@
 # Derrick Morgan
 
-![Derrick Morgan career card](assets/derrick_morgan.svg)
+**Tennessee Titans · Outside linebacker · No. 91 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 261 lb · Born January 6, 1989 · Georgia Tech · Drafted in 2010, first round, by Tennessee
+
+As of October 5, 2014, after Week 5.
+
+![Derrick Morgan](https://commons.wikimedia.org/wiki/Special:FilePath/Derrick_Morgan_2018_08-09.jpg?width=500)
+
+*Photo: Chipermc, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Derrick_Morgan_2018_08-09.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 24 | 91 | 16 | 86 | 9 | 5 | 0 | 2 | 2 | 2 | 23 | 5.4 | 66 |
-| 2014 | Tennessee Titans | 25 | 91 | 5 | 23 | 1 | 3 | 0 | 0 | 0 | 0 | 2 | 4.6 | 17 |
-| **Career** |  |  |  | 21 | 109 | 10 | 8 | 0 | 2 | 2 | 2 | 25 | 5.2 | 83 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 25 | 91 | 5 | 23 | 17 | 6 | 3 | 1 | 2 |
+| 2013 | Tennessee | 24 | 91 | 16 | 86 | 66 | 20 | 5 | 9 | 23 |
+| Career |  |  |  | 21 | 109 | 83 | 26 | 8 | 10 | 25 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 25 | 91 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Tennessee | 24 | 91 | 0 | 0 | 2 | 2 | 2 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 24 | 91 | 2 | 7 | 0 | 2 | 0 | 1 | 0 | 0 | 1 | 3.5 | 3 |
-| **Career** |  |  |  | 2 | 7 | 0 | 2 | 0 | 1 | 0 | 0 | 1 | 3.5 | 3 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 24 | 91 | 2 | 7 | 3 | 4 | 2 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 24 | 91 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Tennessee in the first round |
+
+<!-- player-page -->

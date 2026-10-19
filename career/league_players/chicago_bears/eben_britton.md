@@ -1,16 +1,20 @@
 # Eben Britton
 
-![Eben Britton career card](assets/eben_britton.svg)
+**Chicago Bears · Offensive tackle · No. 62 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 308 lb · Born October 14, 1987 · Arizona · Drafted in 2009, second round, by Jacksonville
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Chicago Bears | 25 | 62 | 16 | N/A | N/A | 7 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Chicago Bears | 26 | 62 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 |
-| **Career** |  |  |  | 17 | N/A | N/A | 7 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Chicago | 26 | 62 | 1 | 0 | 0 | 0 | 0 |
+| 2013 | Chicago | 25 | 62 | 16 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 17 | N/A | N/A | 7 | N/A |
 
 ### Playoffs
 
@@ -18,8 +22,13 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All Chicago Bears players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Jacksonville in the second round |
+| March 12, 2013 | Contract with Jacksonville expired; left as a free agent |
+
+<!-- player-page -->

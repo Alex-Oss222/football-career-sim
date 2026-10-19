@@ -1,15 +1,22 @@
 # Kelvin Sheppard
 
-![Kelvin Sheppard career card](assets/kelvin_sheppard.svg)
+**Indianapolis Colts · Middle linebacker · Age 25 · Last game December 29, 2013**
 
-## Career stats
+6' 2", 252 lb · Born January 2, 1988 · LSU · Drafted in 2011, third round, by Buffalo
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 25 | 52 | 16 | 91 | 5 | 8 | 1 | 5 | 0 | 0 | 7 | 5.7 | 58 |
-| **Career** |  |  |  | 16 | 91 | 5 | 8 | 1 | 5 | 0 | 0 | 7 | 5.7 | 58 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Indianapolis | 25 | 52 | 16 | 91 | 58 | 33 | 8 | 5 | 7 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Indianapolis | 25 | 52 | 1 | 29 | 5 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Indianapolis Colts players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Buffalo in the third round |
+
+<!-- player-page -->

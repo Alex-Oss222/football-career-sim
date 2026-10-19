@@ -1,15 +1,22 @@
 # Dillon Farrell
 
-![Dillon Farrell career card](assets/dillon_farrell.svg)
+**San Francisco 49ers · Guard · No. 56 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 303 lb · Born September 7, 1990 · New Mexico
+
+As of October 5, 2014, after Week 5.
+
+![Dillon Farrell](https://commons.wikimedia.org/wiki/Special:FilePath/Dillon_Farrell.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Dillon_Farrell.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | San Francisco 49ers | 23 | 56 | 5 | 0 | 0 | 0 | 23 | 0 | 0 | 0 | 0 | 0.0 |
-| **Career** |  |  |  | 5 | 0 | 0 | 0 | 23 | 0 | 0 | 0 | 0 | 0.0 |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 23 | 56 | 5 | 0 | 0 | 0 | 23 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+<!-- player-page -->

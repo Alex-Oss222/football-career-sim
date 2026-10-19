@@ -1,0 +1,180 @@
+{
+ "schema_version": 1,
+ "name": "Cornelius Lucas",
+ "gsis_id": "00-0030725",
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-05-11",
+   "date_as_written": "May 11, 2014 starting evaluation, on acquisition (signed as an undrafted rookie on May 10, 2014)",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Rookie; no NFL standing. Staff view: developmental swing tackle",
+   "position": "OT",
+   "identity": "A very large developmental tackle with length and a raw set; measurements conflict in the sources, and he was measured at the combine on crutches after a foot stress fracture in pre-combine training.",
+   "previous_profile": "None; 2014 rookie. The starting view rests on pre-draft public evidence only",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "3.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Length",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Bend / knee flexibility",
+     "grade": "3.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Set consistency",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments of the player as he arrives, made from pre-draft public evidence (combine and dated college record described qualitatively, plus pre-draft reports). They grade the current player, not his draft slot, contract or projection, and they use no NFL outcome. Evidence limits are stated below.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Length",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Bend / knee flexibility",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "At low-end standard"
+    },
+    {
+     "trait": "Set consistency",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards for the position, not measured 2014 league ranks. No NFL snap exists for this player.",
+   "read": "A very large developmental tackle with length and a raw set; measurements conflict in the sources, and he was measured at the combine on crutches after a foot stress fracture in pre-combine training.",
+   "read_sources": "Source: Kansas State senior, 2013; [combine file](library/2014_combine_results.md#3-late-round-board-prospects-fallbacks-and-the-undrafted-line-list) (measured on crutches, foot stress fracture, no drills; measurements Unverified for conflicts); memo watch-list reason.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "None (rookie)",
+     "current": "Starting 2014 view",
+     "change": "New",
+     "reason": "Pre-draft public evidence only; no Jacksonville practice or game evidence yet"
+    }
+   ],
+   "support": "Kansas State senior, 2013; [combine file](library/2014_combine_results.md#3-late-round-board-prospects-fallbacks-and-the-undrafted-line-list) (measured on crutches, foot stress fracture, no drills; measurements Unverified for conflicts); memo watch-list reason.",
+   "historical_comparison": "No comparator is assigned at arrival. The evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.",
+   "play_style": "A very large developmental tackle with length and a raw set; measurements conflict in the sources, and he was measured at the combine on crutches after a foot stress fracture in pre-combine training.",
+   "best_traits": [
+    "Length: 7.0 /10.",
+    "Strength / Power: 6.0 /10.",
+    "Football IQ: 4.5 /10."
+   ],
+   "main_weaknesses": [
+    "Bend / knee flexibility: 3.0 /10.",
+    "Speed: 3.5 /10.",
+    "Agility / Change of direction: 3.5 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** Kansas State senior, 2013; [combine file](library/2014_combine_results.md#3-late-round-board-prospects-fallbacks-and-the-undrafted-line-list) (measured on crutches, foot stress fracture, no drills; measurements Unverified for conflicts); memo watch-list reason.",
+    "**Evaluation basis:** Theoretical staff judgment from pre-draft public evidence; thin evidence identified above.",
+    "**What remains uncertain:** Conflicting measurements; no drill results; the pre-combine foot stress fracture needs a current club physical before field work; no Jacksonville scouting report beyond the memo.",
+    "**What would change the assessment:** Whether he can sustain a set against speed in OTAs.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates."
+   ],
+   "one_line": "A very large developmental tackle with length and a raw set; measurements conflict in the sources, and he was measured at the combine on crutches after a foot stress fracture in pre-combine training.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Lucas worked both padded days with no communicated restriction. His set landmark held against rookie rushers and Andre Branch beat him around the edge once. The foot remains a performance-staff review item, not a newly diagnosed limit.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/cornelius_lucas.md at commit 332d70b"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2014-05-10",
+   "kind": "signed",
+   "text": "Signed a three-year contract with Jacksonville as an undrafted rookie",
+   "source": "career/2014/Draft/udfa_signings.md"
+  }
+ ]
+}

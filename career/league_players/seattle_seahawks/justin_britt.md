@@ -1,15 +1,22 @@
 # Justin Britt
 
-![Justin Britt career card](assets/justin_britt.svg)
+**Seattle Seahawks · Center · No. 68 · Age 23 · Last game October 6, 2014**
 
-## Career stats
+6' 6", 325 lb · Born May 29, 1991 · Missouri
+
+As of October 6, 2014, after Week 5.
+
+![Justin Britt](https://commons.wikimedia.org/wiki/Special:FilePath/Justin_Britt.jpg?width=500)
+
+*Photo: Mike Morris, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Justin_Britt.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Seattle Seahawks | 23 | 68 | 4 | 4 | 273 | 5 | 20 | 0 | 0 | 0 | 0 | 68.2 |
-| **Career** |  |  |  | 4 | 4 | 273 | 5 | 20 | 0 | 0 | 0 | 0 | 68.2 |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 23 | 68 | 4 | 4 | 273 | 5 | 20 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+<!-- player-page -->

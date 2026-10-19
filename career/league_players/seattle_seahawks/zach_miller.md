@@ -1,16 +1,29 @@
 # Zach Miller
 
-![Zach Miller career card](assets/zach_miller.svg)
+**Seattle Seahawks · Tight end · No. 86 · Age 28 · Last game October 6, 2014**
 
-## Career stats
+6' 5", 255 lb · Born December 11, 1985 · Arizona State · Drafted in 2007, second round, by Oakland
+
+As of October 6, 2014, after Week 5.
+
+![Zach Miller](https://commons.wikimedia.org/wiki/Special:FilePath/Zach_Miller_at_2012_Seahawks_training_camp.jpg?width=500)
+
+*Photo: Cooper_Helfet_and_Zach_Miller_at_Seahawks_training_camp_2012.jpg : erocsid derivative work: Arbor to SJ, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Zach_Miller_at_2012_Seahawks_training_camp.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Seattle Seahawks | 27 | 86 | 16 | 98 | 61 | 702 | 11.5 | 3 | 43.9 | 62.2 | 54 | 0 | 1 |
-| 2014 | Seattle Seahawks | 28 | 86 | 4 | 27 | 15 | 178 | 11.9 | 0 | 44.5 | 55.6 | 28 | 0 | 0 |
-| **Career** |  |  |  | 20 | 125 | 76 | 880 | 11.6 | 3 | 44.0 | 60.8 | 54 | 0 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 28 | 86 | 4 | 27 | 15 | 178 | 11.9 | 0 | 28 | 44.5 | 55.6 |
+| 2013 | Seattle | 27 | 86 | 16 | 98 | 61 | 702 | 11.5 | 3 | 54 | 43.9 | 62.2 |
+| Career |  |  |  | 20 | 125 | 76 | 880 | 11.6 | 3 | 54 | 44.0 | 60.8 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 28 | 86 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Seattle | 27 | 86 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Oakland in the second round |
+
+<!-- player-page -->

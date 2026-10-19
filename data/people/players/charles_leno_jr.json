@@ -1,0 +1,178 @@
+{
+ "schema_version": 1,
+ "name": "Charles Leno Jr.",
+ "gsis_id": "00-0031095",
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-05-11",
+   "date_as_written": "May 11, 2014 starting evaluation, on acquisition (selected No. 168 on May 10, 2014; rookie contract signed May 11)",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Rookie; no NFL standing. Staff view: developmental reserve tackle",
+   "position": "OT",
+   "identity": "A four-year college starter, 39 consecutive games, the last 26 at left tackle, with good short-area movement and a long frame; he did not run at the combine and his strength marks are light for the position.",
+   "previous_profile": "None; 2014 rookie. The starting view rests on pre-draft public evidence only",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Foot quickness / set",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Anchor",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Run-block finish",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments of the player as he arrives, made from pre-draft public evidence (combine and dated college record described qualitatively, plus pre-draft reports). They grade the current player, not his draft slot, contract or projection, and they use no NFL outcome. Evidence limits are stated below.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Foot quickness / set",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Anchor",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Run-block finish",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards for the position, not measured 2014 league ranks. No NFL snap exists for this player.",
+   "read": "A four-year college starter, 39 consecutive games, the last 26 at left tackle, with good short-area movement and a long frame; he did not run at the combine and his strength marks are light for the position.",
+   "read_sources": "Source: [Prospect evidence file](library/2014_prospect_evidence/charles_leno_jr.md); [combine](library/2014_combine_results.md#3-late-round-board-prospects-fallbacks-and-the-undrafted-line-list) (4.40 shuttle, second among linemen; 21 bench; forty not run).",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "None (rookie)",
+     "current": "Starting 2014 view",
+     "change": "New",
+     "reason": "Pre-draft public evidence only; no Jacksonville practice or game evidence yet"
+    }
+   ],
+   "support": "[Prospect evidence file](library/2014_prospect_evidence/charles_leno_jr.md); [combine](library/2014_combine_results.md#3-late-round-board-prospects-fallbacks-and-the-undrafted-line-list) (4.40 shuttle, second among linemen; 21 bench; forty not run).",
+   "historical_comparison": "No comparator is assigned at arrival. The evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.",
+   "play_style": "A four-year college starter, 39 consecutive games, the last 26 at left tackle, with good short-area movement and a long frame; he did not run at the combine and his strength marks are light for the position.",
+   "best_traits": [
+    "Agility / Change of direction: 6.0 /10.",
+    "Foot quickness / set: 6.0 /10.",
+    "Athleticism: 5.5 /10."
+   ],
+   "main_weaknesses": [
+    "Anchor: 4.0 /10.",
+    "Speed: 4.5 /10.",
+    "Strength / Power: 4.5 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [Prospect evidence file](library/2014_prospect_evidence/charles_leno_jr.md); [combine](library/2014_combine_results.md#3-late-round-board-prospects-fallbacks-and-the-undrafted-line-list) (4.40 shuttle, second among linemen; 21 bench; forty not run).",
+    "**Evaluation basis:** Theoretical staff judgment from pre-draft public evidence; thin evidence identified above.",
+    "**What remains uncertain:** Measurements conflict in the sources; anchor against NFL power rushers is untested.",
+    "**What would change the assessment:** Opposed pass-rush reps in camp against Mincey and Andre Branch.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates."
+   ],
+   "one_line": "A four-year college starter, 39 consecutive games, the last 26 at left tackle, with good short-area movement and a long frame; he did not run at the combine and his strength marks are light for the position.",
+   "updates": [],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/charles_leno_jr.md at commit 332d70b"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2014-05-10",
+   "kind": "drafted",
+   "text": "Drafted by Jacksonville (No. 168, fifth round)",
+   "source": "career/2014/Draft/draftees.md"
+  },
+  {
+   "date": "2014-05-11",
+   "kind": "signed",
+   "text": "Signed a four-year rookie contract with Jacksonville",
+   "source": "career/2014/Draft/draftees.md"
+  }
+ ]
+}

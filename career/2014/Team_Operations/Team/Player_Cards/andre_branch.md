@@ -1,164 +1,83 @@
-# Andre Branch — 2014 Player Profile
+# Andre Branch
 
-<!-- player-card:begin -->
-![Andre Branch career card](../../../../league_players/jacksonville_jaguars/assets/andre_branch.svg)
+**Jacksonville Jaguars · Defensive end · No. 90 · Age 25 · Active roster**
 
-[Career statistics](../../../../league_players/jacksonville_jaguars/andre_branch.md)
-<!-- player-card:end -->
+6' 5", 265 lb · Born July 14, 1989 · Clemson · Drafted in 2012, second round, by Jacksonville
 
-<!-- photo -->
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Andre_Branch_%28cropped%29.jpg?width=500" alt="Andre Branch" width="160">
+As of October 5, 2014, after Week 5.
+
+![Andre Branch](https://commons.wikimedia.org/wiki/Special:FilePath/Andre_Branch_%28cropped%29.jpg?width=500)
 
 *Photo: Hector Alejandro, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Andre_Branch_(cropped).jpg)).*
-<!-- /photo -->
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** March 31, 2014 starting evaluation  
-**Age:** 24  
-**Position:** DE  
-**NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** A rotational edge defender with useful first-step and pursuit tools. I see a rusher who needs a more developed hand/counter plan and firmer edge work to become a dependable full-time starter.  
-**Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/andre_branch.md)  
+## Staff assessment
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
-
-## Player grades
-
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 5.0 /10 | Staff judgment |
-| Athleticism | 5.5 /10 | Staff judgment |
-| Speed | 5.5 /10 | Staff judgment |
-| Strength / Power | 4.5 /10 | Staff judgment |
-| Agility / Change of direction | 5.0 /10 | Staff judgment |
-| Technique | 4.5 /10 | Staff judgment |
-| Football IQ | 4.0 /10 | Staff judgment |
-| Get-off | 5.5 /10 | Staff judgment |
-| Edge speed / bend | 5.5 /10 | Staff judgment |
-| Power | 4.5 /10 | Staff judgment |
-| Hand use / counters | 4.5 /10 | Staff judgment |
-| Edge setting / run defense | 4.5 /10 | Staff judgment |
-| Block shedding | 4.5 /10 | Staff judgment |
-| Pursuit | 5.5 /10 | Staff judgment |
-| Rush plan / recognition | 4.0 /10 | Staff judgment |
-| Contain discipline | 4.5 /10 | Staff judgment |
-
-Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Get-off | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Edge speed / bend | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Power | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Hand use / counters | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Edge setting / run defense | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Block shedding | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Pursuit | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Rush plan / recognition | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Contain discipline | Below NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards, not measured 2014 league ranks.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 5.0/10 |
+| Athleticism | 5.5/10 |
+| Speed | 5.5/10 |
+| Strength and power | 4.5/10 |
+| Agility and change of direction | 5.0/10 |
+| Technique | 4.5/10 |
+| Football IQ | 4.0/10 |
+| Get-off | 5.5/10 |
+| Edge speed and bend | 5.5/10 |
+| Power | 4.5/10 |
+| Hand use and counters | 4.5/10 |
+| Edge setting and run defense | 4.5/10 |
+| Block shedding | 4.5/10 |
+| Pursuit | 5.5/10 |
+| Rush plan and recognition | 4.0/10 |
+| Contain discipline | 4.5/10 |
 
 A rotational edge defender with useful first-step and pursuit tools. I see a rusher who needs a more developed hand/counter plan and firmer edge work to become a dependable full-time starter.
 
-Source: [2013 profile](../../../../2013/player_profiles/andre_branch.md) and its recorded practice/game sources.
+*Staff view, March 31, 2014; dated updates through August 1, 2014.*
 
-## Year-over-year change
+## Contract
 
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Player identity and position traits | 2013 baseline | Starting 2014 view | Retained | No new individual football evidence establishing change |
+Four-year contract through 2015.
 
-## What supports this assessment
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $827,722 | $1,388,164 |
+| 2015 | $1,059,083 | $1,619,525 |
 
-A rotational edge defender with useful first-step and pursuit tools. I see a rusher who needs a more developed hand/counter plan and firmer edge work to become a dependable full-time starter.
+## Statistics
 
-[2013 profile](../../../../2013/player_profiles/andre_branch.md) and its recorded practice/game sources.
+### Regular season
 
-## Historical comparison
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 25 | 90 | 5 | 9 | 6 | 3 | 1 | 1 | 1 |
+| 2013 | Jacksonville | 24 | 90 | 16 | 4 | 2 | 2 | 0 | 0 | 1 |
+| With Jacksonville |  |  |  | 21 | 13 | 8 | 5 | 1 | 1 | 2 |
 
-The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 25 | 90 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | Jacksonville | 24 | 90 | 0 | 0 | 0 | 0 | 0 | N/A |
 
-## Play style
+### Playoffs
 
-A rotational edge defender with useful first-step and pursuit tools. I see a rusher who needs a more developed hand/counter plan and firmer edge work to become a dependable full-time starter.
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 24 | 90 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-## Best traits
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 24 | 90 | 0 | 0 | 0 | 0 | 0 | N/A |
 
-- Get-off: 5.5 /10.
-- Edge speed / bend: 5.5 /10.
-- Pursuit: 5.5 /10.
+## Awards
 
-## Main weaknesses
+None.
 
-- Rush plan / recognition: 4.0 /10.
-- Power: 4.5 /10.
-- Hand use / counters: 4.5 /10.
+## Transactions
 
-## Evidence and uncertainty
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Jacksonville in the second round |
+| 2012 | Signed a four-year rookie contract with Jacksonville |
 
-- **Primary evidence:** [2013 profile](../../../../2013/player_profiles/andre_branch.md) and its recorded practice/game sources.
-- **Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
-
-**One-line description:** A rotational edge defender with useful first-step and pursuit tools. I see a rusher who needs a more developed hand/counter plan and firmer edge work to become a dependable full-time starter.
-
-## 2013 season production
-
-| Statistic | 2013 regular season | 2013 playoffs |
-| --- | ---: | ---: |
-| G | 16 | 2 |
-| TOT | 4 | 0 |
-| SOLO | 2 | 0 |
-| AST | 2 | 0 |
-| TFL | 0 | 0 |
-| SCK | 0 | 0 |
-| PRESS | 1 | 0 |
-| PD | 0 | 0 |
-| INT | 0 | 0 |
-| FF | 0 | 0 |
-| FR | 0 | 0 |
-
-Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
-
-## Dated coaching updates
-
-### August 1, 2014 | Training camp
-
-Andre Branch beat Johnson around the corner, but left the lane on a July 30 team rep. After Crennel's correction he kept contain and still produced pressure August 1. The isolated win and assignment error both matter; Edge 1 remains open.
-
-Source: [dated camp observations](../../../Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 25 | 90 | Through Week 5 | 5 | 9 | 6 | 3 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 239 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 25 | 90 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

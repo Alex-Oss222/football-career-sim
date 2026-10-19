@@ -1,16 +1,29 @@
 # Barry Cofield
 
-![Barry Cofield career card](assets/barry_cofield.svg)
+**Washington Redskins · Nose tackle · No. 96 · Age 30 · Last game October 6, 2014**
 
-## Career stats
+6' 4", 303 lb · Born March 19, 1984 · Northwestern · Drafted in 2006, fourth round, by the New York Giants
+
+As of October 6, 2014, after Week 5.
+
+![Barry Cofield](https://commons.wikimedia.org/wiki/Special:FilePath/Barry_Cofield1.jpg?width=500)
+
+*Photo: Keith Allison from Owings Mills, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Barry_Cofield1.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Washington Redskins | 29 | 96 | 15 | 56 | 4 | 11 | 0 | 0 | 0 | 0 | 11 | 3.7 | 34 |
-| 2014 | Washington Redskins | 30 | 96 | 5 | 8 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 1.6 | 5 |
-| **Career** |  |  |  | 20 | 64 | 5 | 11 | 0 | 0 | 0 | 0 | 12 | 3.2 | 39 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Washington | 30 | 96 | 5 | 8 | 5 | 3 | 0 | 1 | 1 |
+| 2013 | Washington | 29 | 96 | 15 | 56 | 34 | 22 | 11 | 4 | 11 |
+| Career |  |  |  | 20 | 64 | 39 | 25 | 11 | 5 | 12 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Washington | 30 | 96 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Washington | 29 | 96 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Washington Redskins players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by the New York Giants in the fourth round |
+
+<!-- player-page -->

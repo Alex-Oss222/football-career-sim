@@ -1,28 +1,39 @@
 # Taylor Thompson
 
-![Taylor Thompson career card](assets/taylor_thompson.svg)
+**Tennessee Titans · Tight end · No. 84 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 268 lb · Born October 19, 1989 · SMU · Drafted in 2012, fifth round, by Tennessee
+
+As of October 5, 2014, after Week 5.
+
+![Taylor Thompson](https://commons.wikimedia.org/wiki/Special:FilePath/Taylor_Thompson_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Taylor_Thompson_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 23 | 84 | 16 | 27 | 17 | 166 | 9.8 | 0 | 10.4 | 63.0 | 45 | 0 | 0 |
-| 2014 | Tennessee Titans | 24 | 84 | 5 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| **Career** |  |  |  | 21 | 27 | 17 | 166 | 9.8 | 0 | 7.9 | 63.0 | 45 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 24 | 84 | 5 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2013 | Tennessee | 23 | 84 | 16 | 27 | 17 | 166 | 9.8 | 0 | 45 | 10.4 | 63.0 |
+| Career |  |  |  | 21 | 27 | 17 | 166 | 9.8 | 0 | 45 | 7.9 | 63.0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 23 | 84 | 2 | 2 | 1 | 1 | 1.0 | 0 | 0.5 | 50.0 | 1 | 0 | 0 |
-| **Career** |  |  |  | 2 | 2 | 1 | 1 | 1.0 | 0 | 0.5 | 50.0 | 1 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 23 | 84 | 2 | 2 | 1 | 1 | 1.0 | 0 | 1 | 0.5 | 50.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Tennessee in the fifth round |
+
+<!-- player-page -->

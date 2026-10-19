@@ -1,15 +1,22 @@
 # Chase Coffman
 
-![Chase Coffman career card](assets/chase_coffman.svg)
+**Atlanta Falcons · Tight end · Age 27 · Last game December 29, 2013**
 
-## Career stats
+6' 6", 250 lb · Born November 10, 1986 · Missouri · Drafted in 2009, third round, by Cincinnati
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 26 | 86 | 16 | 23 | 14 | 167 | 11.9 | 2 | 10.4 | 60.9 | 46 | 1 | 0 |
-| **Career** |  |  |  | 16 | 23 | 14 | 167 | 11.9 | 2 | 10.4 | 60.9 | 46 | 1 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Atlanta | 26 | 86 | 16 | 23 | 14 | 167 | 11.9 | 2 | 46 | 10.4 | 60.9 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Atlanta | 26 | 86 | 1 | 1 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Atlanta Falcons players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Cincinnati in the third round |
+
+<!-- player-page -->

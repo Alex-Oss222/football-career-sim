@@ -1,30 +1,80 @@
 # Josh Scobee
 
-![Josh Scobee career card](assets/josh_scobee.svg)
+**Jacksonville Jaguars · Kicker · No. 10 · Age 32 · Active roster**
 
-## Career stats
+6' 1", 210 lb · Born June 23, 1982 · Louisiana Tech · Drafted in 2004, fifth round, by Jacksonville
+
+As of October 5, 2014, after Week 5.
+
+![Josh Scobee](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Scobee.jpg?width=500)
+
+*Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Josh_Scobee.jpg)).*
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 7.0/10 |
+| Athleticism | 5.5/10 |
+| Speed | 4.5/10 |
+| Strength and power | 7.5/10 |
+| Agility and change of direction | 4.5/10 |
+| Technique | 7.0/10 |
+| Football IQ | 6.5/10 |
+| Field-goal accuracy by distance | 7.0/10 |
+| Leg strength and range | 7.5/10 |
+| Kickoff distance and hang | 6.5/10 |
+| Directional kickoff control | 6.0/10 |
+| Snap-hold operation | 7.0/10 |
+| Pressure consistency | 6.5/10 |
+
+A starting NFL kicker with a useful long-distance leg and dependable established operation. I see range and ordinary accuracy ahead of precision kickoff control and my confidence in repeated pressure consistency.
+
+*Staff view, March 31, 2014.*
+
+## Contract
+
+Four-year contract through 2015.
+
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $3,225,000 | $4,187,500 |
+| 2015 | $3,425,000 | $4,387,500 |
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 31 | 10 | 16 | 36-41 | 87.8 | N/A | 34-35 | 97.1 | 142 | N/A | N/A | N/A | 8.9 |
-| 2014 | Jacksonville Jaguars | 32 | 10 | 5 | 8-10 | 80.0 | 61 | 13-13 | 100.0 | 37 | 1-3 | 2-2 | 5-5 | 7.4 |
-| **Career** |  |  |  | 21 | 44-51 | 86.3 | N/A | 47-48 | 97.9 | 179 | N/A | N/A | N/A | 8.5 |
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 32 | 10 | 5 | 8 | 10 | 80.0 | 61 | 13 | 13 | 100.0 | 37 |
+| 2013 | Jacksonville | 31 | 10 | 16 | 36 | 41 | 87.8 | N/A | 34 | 35 | 97.1 | 142 |
+| With Jacksonville |  |  |  | 21 | 44 | 51 | 86.3 | N/A | 47 | 48 | 97.9 | 179 |
+
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 32 | 10 | 5-5 | 1-3 | 2-2 |
+| 2013 | Jacksonville | 31 | 10 | N/A | N/A | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 31 | 10 | 2 | 3-3 | 100.0 | 51 | 6-6 | 100.0 | 15 | 0-0 | 1-1 | 2-2 | 7.5 |
-| **Career** |  |  |  | 2 | 3-3 | 100.0 | 51 | 6-6 | 100.0 | 15 | 0-0 | 1-1 | 2-2 | 7.5 |
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 31 | 10 | 2 | 3 | 3 | 100.0 | 51 | 6 | 6 | 100.0 | 15 |
+
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 31 | 10 | 2-2 | 0-0 | 1-1 |
 
 ## Awards
 
-None on record.
+None.
 
-[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/josh_scobee.md)
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| 2004 | Drafted by Jacksonville in the fifth round |
+| July 16, 2012 | Signed a four-year contract with Jacksonville after the franchise tag |
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: his 2014 Jaguars roster listing. [All Jacksonville Jaguars players](README.md).
+<!-- player-page -->

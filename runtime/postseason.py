@@ -24,8 +24,8 @@ from .seasons import SeasonPaths, require_receipt_season
 
 ROOT = Path(__file__).resolve().parents[1]
 SLOTS = ROOT / "library" / "data" / "2013_postseason_slots.json"
-REGULAR_RECEIPTS = ROOT / "career" / "2013" / "stats" / "game_receipts"
-POSTSEASON_RECEIPTS = ROOT / "career" / "2013" / "stats" / "postseason_receipts"
+REGULAR_RECEIPTS = SeasonPaths(2013, ROOT).receipts
+POSTSEASON_RECEIPTS = SeasonPaths(2013, ROOT).postseason_receipts
 ROUNDS = {18: "wild_card", 19: "divisional", 20: "conference", 21: "super_bowl"}
 ROUND_TITLES = {"wild_card": "Wild Card", "divisional": "Divisional",
                 "conference": "Conference Championship", "super_bowl": "Super Bowl XLVIII"}

@@ -1,16 +1,29 @@
 # Cameron Wake
 
-![Cameron Wake career card](assets/cameron_wake.svg)
+**Miami Dolphins · Defensive end · No. 91 · Age 32 · Last game September 28, 2014**
 
-## Career stats
+6' 3", 262 lb · Born January 30, 1982 · Penn State
+
+As of September 28, 2014, after Week 4.
+
+![Cameron Wake](https://commons.wikimedia.org/wiki/Special:FilePath/Cameron_Wake2.jpg?width=500)
+
+*Photo: Chrisjnelson at en.wikipedia, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Cameron_Wake2.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Miami Dolphins | 31 | 91 | 16 | 85 | 3 | 6 | 1 | 8 | 2 | 2 | 11 | 5.3 | 55 |
-| 2014 | Miami Dolphins | 32 | 91 | 4 | 14 | 2 | 0 | 0 | 1 | 0 | 0 | 2 | 3.5 | 11 |
-| **Career** |  |  |  | 20 | 99 | 5 | 6 | 1 | 9 | 2 | 2 | 13 | 5.0 | 66 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 32 | 91 | 4 | 14 | 11 | 3 | 0 | 2 | 2 |
+| 2013 | Miami | 31 | 91 | 16 | 85 | 55 | 30 | 6 | 3 | 11 |
+| Career |  |  |  | 20 | 99 | 66 | 33 | 6 | 5 | 13 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 32 | 91 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | Miami | 31 | 91 | 1 | 28 | 8 | 2 | 2 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Miami Dolphins players](README.md).
+<!-- player-page -->

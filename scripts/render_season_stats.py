@@ -20,6 +20,7 @@ from runtime.stat_tables import (
     POSITION_GROUPS, avg, combine, g, pct, position_sections, rating_value,
     time_text,
 )
+from runtime.seasons import page_link
 from runtime.statbook import aggregate_receipts, leaders
 
 # NFL passing qualifier: 14 attempts per team game (Wikipedia, "Passer
@@ -502,7 +503,7 @@ def play_calls_markdown(year, team_id, book):
         "2013.4-2013.6 drew each snap's label at random from the sheet's calls of that "
         "run or pass type, independent of the ball carrier (see the "
         "[October 6, 2013 St. Louis game report]"
-        "(../../2013/regular_season/week_05_jacksonville_at_st_louis/output.md)), so Weeks "
+        "(" + page_link(2013, "regular_season/week_05_jacksonville_at_st_louis/output.md", 2) + ")), so Weeks "
         "1-8 rows show label assignment only. Y/P is yards per snap; 20+ counts gains "
         "of 20 yards or more; NEG counts snaps that lost yardage.",
     ) + no_games(book)
@@ -553,7 +554,7 @@ POINTS_NOTE = (
     "the ±5.0 tolerance is deliberately not tightened. Yards per team game are net "
     "of sack yards, as the 2012 centre is (see the correction in the "
     "[December 1, 2013 Cleveland game report]"
-    "(../../2013/regular_season/week_13_jacksonville_at_cleveland/output.md); earlier audits "
+    "(" + page_link(2013, "regular_season/week_13_jacksonville_at_cleveland/output.md", 2) + "); earlier audits "
     "compared gross passing yards and read about 14 yards high)."
 )
 # Kernel 2014.6 batch B9: the "not modelled" sentence above holds for the
@@ -831,7 +832,8 @@ def render_views(year, team, receipts):
     }
     from runtime.seasons import SeasonPaths
     from runtime.season_layout import rebase_markdown
-    return {name: rebase_markdown(text, f'career/{year}/stats/{name}',
+    from runtime.season_layout import logical_path
+    return {name: rebase_markdown(text, logical_path(year, 'stats/' + name),
                                   (SeasonPaths(year, ROOT).stats / name).relative_to(ROOT))
             if name.endswith('.md') else text for name, text in views.items()}
 
@@ -852,10 +854,10 @@ def main():
         target.write_text(text, encoding="utf-8")
     print("rendered %d stat views from %d receipts" % (len(views), len(receipts)))
     if args.year >= 2014:
-        from scripts.update_player_cards import refresh_cards
-        errors = refresh_cards(args.year)
-        if errors:
-            raise ValueError('; '.join(errors))
+        # The player pages read the same game records (rebuild step 3a); run
+        # scripts/render_player_pages.py again once the week's awards are drawn.
+        from runtime import player_pages
+        player_pages.write(ROOT)
 
 
 if __name__ == "__main__":

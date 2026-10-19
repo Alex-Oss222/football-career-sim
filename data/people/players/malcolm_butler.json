@@ -1,0 +1,207 @@
+{
+ "schema_version": 1,
+ "name": "Malcolm Butler",
+ "gsis_id": "00-0031218",
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-05-11",
+   "date_as_written": "May 11, 2014 starting evaluation, on acquisition (selected No. 241 on May 10, 2014; rookie contract signed May 11)",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Rookie; no NFL standing. Staff view: outside corner with a special-teams path",
+   "position": "CB",
+   "identity": "A Division II cornerback with a ball-production record (seven interceptions and 25 pass breakups across 2012 and 2013), kick-return experience and a competitive style; not invited to the combine, so no verified testing exists.",
+   "previous_profile": "None; 2014 rookie. The starting view rests on pre-draft public evidence only",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "3.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Ball skills",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Competitiveness / press",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Level of competition",
+     "grade": "3.0 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments of the player as he arrives, made from pre-draft public evidence (combine and dated college record described qualitatively, plus pre-draft reports). They grade the current player, not his draft slot, contract or projection, and they use no NFL outcome. Evidence limits are stated below.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Ball skills",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Competitiveness / press",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Level of competition",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "At low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards for the position, not measured 2014 league ranks. No NFL snap exists for this player.",
+   "read": "A Division II cornerback with a ball-production record (seven interceptions and 25 pass breakups across 2012 and 2013), kick-return experience and a competitive style; not invited to the combine, so no verified testing exists.",
+   "read_sources": "Source: [Prospect evidence file](library/2014_prospect_evidence/malcolm_butler.md) (All-GSC, November 20, 2013; Daktronics Super Region Two, December 5, 2013); [combine file](library/2014_combine_results.md#3-late-round-board-prospects-fallbacks-and-the-undrafted-line-list) records no invitation.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "None (rookie)",
+     "current": "Starting 2014 view",
+     "change": "New",
+     "reason": "Pre-draft public evidence only; no Jacksonville practice or game evidence yet"
+    }
+   ],
+   "support": "[Prospect evidence file](library/2014_prospect_evidence/malcolm_butler.md) (All-GSC, November 20, 2013; Daktronics Super Region Two, December 5, 2013); [combine file](library/2014_combine_results.md#3-late-round-board-prospects-fallbacks-and-the-undrafted-line-list) records no invitation.",
+   "historical_comparison": "No comparator is assigned at arrival. The evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.",
+   "play_style": "A Division II cornerback with a ball-production record (seven interceptions and 25 pass breakups across 2012 and 2013), kick-return experience and a competitive style; not invited to the combine, so no verified testing exists.",
+   "best_traits": [
+    "Ball skills: 6.0 /10.",
+    "Agility / Change of direction: 5.5 /10.",
+    "Competitiveness / press: 5.5 /10."
+   ],
+   "main_weaknesses": [
+    "Level of competition: 3.0 /10.",
+    "Strength / Power: 4.5 /10.",
+    "Technique: 4.5 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [Prospect evidence file](library/2014_prospect_evidence/malcolm_butler.md) (All-GSC, November 20, 2013; Daktronics Super Region Two, December 5, 2013); [combine file](library/2014_combine_results.md#3-late-round-board-prospects-fallbacks-and-the-undrafted-line-list) records no invitation.",
+    "**Evaluation basis:** Theoretical staff judgment from pre-draft public evidence; thin evidence identified above.",
+    "**What remains uncertain:** No verified measurables; the gap from Division II to NFL receivers is unmeasured; college path includes a 2009 removal at Hinds (reason unverified).",
+    "**What would change the assessment:** Opposed reps against Nicks, Hawkins and Adams in OTAs and camp.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates."
+   ],
+   "one_line": "A Division II cornerback with a ball-production record (seven interceptions and 25 pass breakups across 2012 and 2013), kick-return experience and a competitive style; not invited to the combine, so no verified testing exists.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Butler's press transition was late once against Hurns. Oden corrected it, and the August 1 rep was on time. A single retained correction leaves a later test open.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-21",
+     "date_as_written": "September 21, 2014",
+     "setting": "Week 3, Indianapolis at Jacksonville",
+     "text": "Thirteen defensive snaps after Poyer's and Talib's removals and 20 on the kicking game with no tackle or target recorded against him; the play-by-play records no defender on the completions in Indianapolis's last two drives, so his coverage is the film's. A head/neck injury, short, was logged at the end of Indianapolis's last touchdown drive at 1:01 of the fourth quarter; he was removed, Chris Prosinski taking his place by the chart's order for the two kneel-downs with no pause recorded, and he is on an independent medical hold: projected return October 2, reassessment September 24 ([medical record](career/2014/Team_Operations/Medical/incidents/malcolm_butler_2014-09-21.md)). On the projection he misses the San Diego game. No football finding attaches to the hold.",
+     "source": "Source: [Week 3 game record](career/2014/Regular_Season/Games/Week_03/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-27",
+     "date_as_written": "September 22 to 27, 2014",
+     "setting": "Hold continues",
+     "text": "His independent medical hold was reassessed Wednesday, September 24, with no change, projected return October 2; no football work in the San Diego week; out on the Friday report and inactive by medical instruction for Week 4, listed last among the defensive backs while out. The staff's no-transaction recommendation went to Caldwell; no transaction was made. No football finding attaches to the hold.",
+     "source": "Source: [Week 4 record](career/2014/Regular_Season/Games/Week_04/output.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-10-04",
+     "date_as_written": "September 29 to October 4, 2014",
+     "setting": "Released; inactive by decision",
+     "text": "His independent medical hold was released Thursday, October 2, its projected date, by the independent process; he took no part in the Monday walkthrough or the Wednesday practice and then took approved preparation work in full on Thursday and Friday and in the Saturday walkthrough. Stone's packet had already made him inactive for Pittsburgh whether or not the release came, rather than install a new dime or kicking-game job late in the week, and that decision stands; no designation on the Friday report. No football finding attaches to the hold or the decision.",
+     "source": "Source: [Week 5 record](career/2014/Regular_Season/Games/Week_05/output.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/malcolm_butler.md at commit 332d70b"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2014-05-10",
+   "kind": "drafted",
+   "text": "Drafted by Jacksonville (No. 241, seventh round)",
+   "source": "career/2014/Draft/draftees.md"
+  },
+  {
+   "date": "2014-05-11",
+   "kind": "signed",
+   "text": "Signed a four-year rookie contract with Jacksonville",
+   "source": "career/2014/Draft/draftees.md"
+  }
+ ]
+}

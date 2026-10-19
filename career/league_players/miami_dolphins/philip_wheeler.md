@@ -1,16 +1,29 @@
 # Philip Wheeler
 
-![Philip Wheeler career card](assets/philip_wheeler.svg)
+**Miami Dolphins · Linebacker · No. 52 · Age 29 · Last game September 28, 2014**
 
-## Career stats
+6' 2", 245 lb · Born December 12, 1984 · Georgia Tech · Drafted in 2008, third round, by Indianapolis
+
+As of September 28, 2014, after Week 4.
+
+![Philip Wheeler](https://commons.wikimedia.org/wiki/Special:FilePath/Philip_Wheeler_2014.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Philip_Wheeler_2014.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Miami Dolphins | 28 | 52 | 16 | 155 | 0 | 13 | 2 | 10 | 1 | 1 | 2 | 9.7 | 118 |
-| 2014 | Miami Dolphins | 29 | 52 | 3 | 20 | 0 | 1 | 0 | 2 | 1 | 1 | 1 | 6.7 | 17 |
-| **Career** |  |  |  | 19 | 175 | 0 | 14 | 2 | 12 | 2 | 2 | 3 | 9.2 | 135 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 29 | 52 | 3 | 20 | 17 | 3 | 1 | 0 | 1 |
+| 2013 | Miami | 28 | 52 | 16 | 155 | 118 | 37 | 13 | 0 | 2 |
+| Career |  |  |  | 19 | 175 | 135 | 40 | 14 | 0 | 3 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 29 | 52 | 0 | 0 | 2 | 1 | 1 | 0 |
+| 2013 | Miami | 28 | 52 | 2 | 51 | 10 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Miami Dolphins players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Indianapolis in the third round |
+
+<!-- player-page -->

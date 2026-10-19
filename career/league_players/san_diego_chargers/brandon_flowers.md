@@ -1,28 +1,48 @@
 # Brandon Flowers
 
-![Brandon Flowers career card](assets/brandon_flowers.svg)
+**San Diego Chargers · Cornerback · No. 26 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 187 lb · Born February 18, 1986 · Virginia Tech · Drafted in 2008, second round, by Kansas City
+
+As of October 5, 2014, after Week 5.
+
+![Brandon Flowers](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Flowers_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Brandon_Flowers_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 27 | 24 | 16 | 70 | 2 | 9 | 33 | 3 | 1 | 0 | 0 | 4.4 | 0 |
-| 2014 | San Diego Chargers | 28 | 26 | 5 | 40 | 3 | 8 | 2 | 3 | 1 | 0 | 0 | 8.0 | 0 |
-| **Career** |  |  |  | 21 | 110 | 5 | 17 | 35 | 6 | 2 | 0 | 0 | 5.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 28 | 26 | 5 | 40 | 24 | 16 | 3 | 1 | 1 |
+| 2013 | Kansas City | 27 | 24 | 16 | 70 | 50 | 20 | 3 | 1 | 2 |
+| Career |  |  |  | 21 | 110 | 74 | 36 | 6 | 2 | 3 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 28 | 26 | 3 | 2 | 8 | 0 | 0 | 0 |
+| 2013 | Kansas City | 27 | 24 | 2 | 33 | 9 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 27 | 24 | 1 | 7 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 7.0 | 0 |
-| **Career** |  |  |  | 1 | 7 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 7.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 27 | 24 | 1 | 7 | 4 | 3 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 27 | 24 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Kansas City in the second round |
+
+<!-- player-page -->

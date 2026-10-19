@@ -1,27 +1,69 @@
 # Russell Allen
 
-![Russell Allen career card](assets/russell_allen.svg)
+**Jacksonville Jaguars · Linebacker · Age 27 · Retired**
 
-## Career stats
+6' 3", 238 lb · Born May 5, 1986 · San Diego State
+
+As of January 11, 2014, after the Divisional round.
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 5.5/10 |
+| Athleticism | 5.5/10 |
+| Speed | 5.5/10 |
+| Strength and power | 5.0/10 |
+| Agility and change of direction | 5.0/10 |
+| Technique | 5.5/10 |
+| Football IQ | 6.0/10 |
+| Run diagnosis | 5.5/10 |
+| Fit discipline | 5.5/10 |
+| Block destruction | 5.0/10 |
+| Range | 5.5/10 |
+| Tackling | 5.5/10 |
+| Zone coverage | 5.0/10 |
+| Man coverage | 4.5/10 |
+| Blitz and pressure | 4.0/10 |
+| Communication | 6.0/10 |
+| Pursuit angles | 5.5/10 |
+
+A dependable complementary linebacker and coverage-unit contributor who can prepare for expanded assignments. I see a role player with communication value and less ability to dictate pressure or man-matchups.
+
+*Staff view, March 31, 2014.*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 27 | 50 | 16 | 74 | 1 | 11 | 1 | 2 | 0 | 0 | 5 | 4.6 | 50 |
-| **Career** |  |  |  | 16 | 74 | 1 | 11 | 1 | 2 | 0 | 0 | 5 | 4.6 | 50 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 27 | 50 | 16 | 74 | 50 | 24 | 11 | 1 | 5 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 27 | 50 | 1 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 27 | 50 | 2 | 18 | 0 | 1 | 1 | 1 | 0 | 0 | 1 | 9.0 | 12 |
-| **Career** |  |  |  | 2 | 18 | 0 | 1 | 1 | 1 | 0 | 0 | 1 | 9.0 | 12 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 27 | 50 | 2 | 18 | 12 | 6 | 1 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 27 | 50 | 1 | 37 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 11, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Jacksonville Jaguars players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Signed a three-year contract with Jacksonville |
+| April 7, 2014 | Traded by Jacksonville to Arizona for Arizona's 2015 fourth-round pick |
+| April 22, 2014 | Retired at Arizona |
+
+<!-- player-page -->

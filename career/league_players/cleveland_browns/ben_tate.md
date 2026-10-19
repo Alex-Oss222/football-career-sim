@@ -1,16 +1,29 @@
 # Ben Tate
 
-![Ben Tate career card](assets/ben_tate.svg)
+**Cleveland Browns · Running back · No. 44 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 220 lb · Born August 21, 1988 · Auburn · Drafted in 2010, second round, by Houston
+
+As of October 5, 2014, after Week 5.
+
+![Ben Tate](https://commons.wikimedia.org/wiki/Special:FilePath/Ben_Tate.jpg?width=500)
+
+*Photo: Chrisjnelson at en.wikipedia, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ben_Tate.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Houston Texans | 25 | 44 | 16 | 63 | 302 | 4.8 | 2 | 18.9 | 17 | 124 | 2 | 80 | 1 |
-| 2014 | Cleveland Browns | 26 | 44 | 4 | 73 | 316 | 4.3 | 1 | 79.0 | 14 | 132 | 0 | 87 | 2 |
-| **Career** |  |  |  | 20 | 136 | 618 | 4.5 | 3 | 30.9 | 31 | 256 | 2 | 167 | 3 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 26 | 44 | 4 | 73 | 316 | 4.3 | 1 | 23 | 79.0 |
+| 2013 | Houston | 25 | 44 | 16 | 63 | 302 | 4.8 | 2 | 31 | 18.9 |
+| Career |  |  |  | 20 | 136 | 618 | 4.5 | 3 | 31 | 30.9 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 26 | 44 | 22 | 14 | 132 | 9.4 | 0 | 2 | 2 |
+| 2013 | Houston | 25 | 44 | 21 | 17 | 124 | 7.3 | 2 | 1 | 1 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Houston in the second round |
+
+<!-- player-page -->

@@ -1,15 +1,26 @@
 # Ha Ha Clinton-Dix
 
-![Ha Ha Clinton-Dix career card](assets/ha_ha_clinton_dix.svg)
+**Green Bay Packers · Free safety · No. 21 · Age 21 · Last game October 2, 2014**
 
-## Career stats
+6' 1", 208 lb · Born December 21, 1992 · Alabama
+
+As of October 2, 2014, after Week 5.
+
+![Ha Ha Clinton-Dix](https://commons.wikimedia.org/wiki/Special:FilePath/Ha_Ha_Clinton-Dix_%28Green_Bay_Packers_player%29_during_pre-season_game_against_Washington_Redskins_on_August_19%2C_2017_in_Maryland.jpg?width=500)
+
+*Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Ha_Ha_Clinton-Dix_(Green_Bay_Packers_player)_during_pre-season_game_against_Washington_Redskins_on_August_19,_2017_in_Maryland.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Green Bay Packers | 21 | 21 | 5 | 12 | 0 | 0 | 0 | 1 | 1 | 0 | 0 | 2.4 | 0 |
-| **Career** |  |  |  | 5 | 12 | 0 | 0 | 0 | 1 | 1 | 0 | 0 | 2.4 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 21 | 21 | 5 | 12 | 8 | 4 | 1 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 21 | 21 | 0 | 0 | 0 | 0 | 0 | 2 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+<!-- player-page -->

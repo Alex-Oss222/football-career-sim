@@ -1,28 +1,48 @@
 # Jerry Hughes
 
-![Jerry Hughes career card](assets/jerry_hughes.svg)
+**Buffalo Bills · Defensive end · No. 55 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 254 lb · Born August 13, 1988 · TCU · Drafted in 2010, first round, by Indianapolis
+
+As of October 5, 2014, after Week 5.
+
+![Jerry Hughes](https://commons.wikimedia.org/wiki/Special:FilePath/Jerry-Hughes-TCU-vs-USAFA-Nov-22-08.jpg?width=500)
+
+*Photo: U.S. Air Force photo/Tech. Sgt. Julie Briden-Garcia. Cropped by User:Blueag9 ., Public domain ([source](https://commons.wikimedia.org/wiki/File:Jerry-Hughes-TCU-vs-USAFA-Nov-22-08.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 25 | 55 | 16 | 16 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 1.0 | 14 |
-| 2014 | Buffalo Bills | 26 | 55 | 2 | 9 | 2 | 0 | 0 | 0 | 1 | 0 | 2 | 4.5 | 6 |
-| **Career** |  |  |  | 18 | 25 | 3 | 1 | 0 | 0 | 1 | 0 | 3 | 1.4 | 20 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 26 | 55 | 2 | 9 | 6 | 3 | 0 | 2 | 2 |
+| 2013 | Buffalo | 25 | 55 | 16 | 16 | 14 | 2 | 1 | 1 | 1 |
+| Career |  |  |  | 18 | 25 | 20 | 5 | 1 | 3 | 3 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 26 | 55 | 0 | 0 | 0 | 1 | 0 | 0 |
+| 2013 | Buffalo | 25 | 55 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 25 | 55 | 4 | 3 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0.8 | 2 |
-| **Career** |  |  |  | 4 | 3 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0.8 | 2 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 25 | 55 | 4 | 3 | 2 | 1 | 0 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 25 | 55 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Indianapolis in the first round |
+
+<!-- player-page -->

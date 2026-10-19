@@ -1,16 +1,24 @@
 # Nick Sundberg
 
-![Nick Sundberg career card](assets/nick_sundberg.svg)
+**Washington Redskins · Long snapper · No. 57 · Age 27 · Last game October 6, 2014**
 
-## Career stats
+6' 0", 264 lb · Born July 29, 1987 · California
+
+As of October 6, 2014, after Week 5.
+
+![Nick Sundberg](https://commons.wikimedia.org/wiki/Special:FilePath/Nick_sundberg.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Nick_sundberg.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | LONG SNAPS | ST SNAPS | ST TKL | TKL | SOLO | AST | FF | FR | LONG SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Washington Redskins | 26 | 57 | 16 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Washington Redskins | 27 | 57 | 5 | 48 | 48 | 0 | 0 | 0 | 0 | 0 | 0 | 9.6 |
-| **Career** |  |  |  | 21 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Washington | 27 | 57 | 5 | 48 | 48 | 0 | 0 |
+| 2013 | Washington | 26 | 57 | 16 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 21 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Washington Redskins players](README.md).
+<!-- player-page -->

@@ -1,28 +1,55 @@
 # Leonard Johnson
 
-![Leonard Johnson career card](assets/leonard_johnson.svg)
+**Tampa Bay Buccaneers · Cornerback · No. 29 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 202 lb · Born March 30, 1990 · Iowa State
+
+As of October 5, 2014, after Week 5.
+
+![Leonard Johnson](https://commons.wikimedia.org/wiki/Special:FilePath/Leonard_Johnson_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Leonard_Johnson_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 23 | 29 | 16 | 61 | 2 | 7 | 28 | 3 | 0 | 1 | 1 | 3.8 | 107 |
-| 2014 | Tampa Bay Buccaneers | 24 | 29 | 5 | 15 | 1 | 4 | 20 | 0 | 0 | 0 | 0 | 3.0 | 0 |
-| **Career** |  |  |  | 21 | 76 | 3 | 11 | 48 | 3 | 0 | 1 | 1 | 3.6 | 107 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 24 | 29 | 5 | 15 | 12 | 3 | 0 | 0 | 0 |
+| 2013 | Tampa Bay | 23 | 29 | 16 | 61 | 48 | 13 | 3 | 0 | 0 |
+| Career |  |  |  | 21 | 76 | 60 | 16 | 3 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 24 | 29 | 1 | 20 | 4 | 0 | 0 | 0 |
+| 2013 | Tampa Bay | 23 | 29 | 2 | 28 | 7 | 1 | 1 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 24 | 29 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Tampa Bay | 23 | 29 | 2 | 38 | 19.0 | 7 | 69 | 9.9 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 23 | 29 | 1 | 6 | 1 | 1 | 26 | 0 | 0 | 1 | 1 | 6.0 | 11 |
-| **Career** |  |  |  | 1 | 6 | 1 | 1 | 26 | 0 | 0 | 1 | 1 | 6.0 | 11 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 23 | 29 | 1 | 6 | 3 | 3 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 23 | 29 | 1 | 26 | 1 | 1 | 1 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 23 | 29 | 0 | 0 | N/A | 1 | 11 | 11.0 |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).
+<!-- player-page -->

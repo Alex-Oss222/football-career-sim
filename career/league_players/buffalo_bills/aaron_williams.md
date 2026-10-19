@@ -1,28 +1,48 @@
 # Aaron Williams
 
-![Aaron Williams career card](assets/aaron_williams.svg)
+**Buffalo Bills · Strong safety · No. 23 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 199 lb · Born April 23, 1990 · Texas · Drafted in 2011, second round, by Buffalo
+
+As of October 5, 2014, after Week 5.
+
+![Aaron Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Williams_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Aaron_Williams_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 23 | 23 | 14 | 46 | 2 | 15 | 63 | 2 | 0 | 1 | 1 | 3.3 | 0 |
-| 2014 | Buffalo Bills | 24 | 23 | 5 | 36 | 2 | 3 | 21 | 0 | 0 | 0 | 0 | 7.2 | 0 |
-| **Career** |  |  |  | 19 | 82 | 4 | 18 | 84 | 2 | 0 | 1 | 1 | 4.3 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 24 | 23 | 5 | 36 | 25 | 11 | 0 | 0 | 1 |
+| 2013 | Buffalo | 23 | 23 | 14 | 46 | 34 | 12 | 2 | 0 | 0 |
+| Career |  |  |  | 19 | 82 | 59 | 23 | 2 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 24 | 23 | 2 | 21 | 3 | 0 | 0 | 0 |
+| 2013 | Buffalo | 23 | 23 | 2 | 63 | 15 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 23 | 23 | 4 | 14 | 1 | 1 | 36 | 0 | 0 | 0 | 0 | 3.5 | 0 |
-| **Career** |  |  |  | 4 | 14 | 1 | 1 | 36 | 0 | 0 | 0 | 0 | 3.5 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 23 | 23 | 4 | 14 | 8 | 6 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 23 | 23 | 1 | 36 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
 - AFC Defensive Player of the Week (2014, Week 3)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Buffalo in the second round |
+
+<!-- player-page -->

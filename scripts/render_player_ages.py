@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from runtime.player_bios import biographies, load, master_date
 from runtime.seasons import current_record
-from runtime.season_layout import rebase_markdown
+from runtime.season_layout import logical_path, rebase_markdown
 
 STAMP = re.compile(r"^<!-- player-ages-as-of: [^\n]+ -->$", re.M)
 
@@ -96,8 +96,8 @@ def render_views(root=ROOT):
             lines.append("| %s | %s | %s | %s | %s |" % (name, pos, bio["birth_date"], bio["age"], status))
         lines.append("")
     target = current_record('player_ages', root).relative_to(root.resolve()).as_posix()
-    year = target.split('/')[1]
-    result[target] = rebase_markdown('\n'.join(lines), f'career/{year}/player_ages.md', target)
+    year = int(target.split('/')[1])
+    result[target] = rebase_markdown('\n'.join(lines), logical_path(year, 'player_ages.md'), target)
     return result
 
 

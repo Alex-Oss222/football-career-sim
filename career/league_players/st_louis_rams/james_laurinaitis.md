@@ -1,28 +1,48 @@
 # James Laurinaitis
 
-![James Laurinaitis career card](assets/james_laurinaitis.svg)
+**St. Louis Rams · Middle linebacker · No. 55 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 248 lb · Born December 3, 1986 · Ohio State · Drafted in 2009, second round, by St. Louis
+
+As of October 5, 2014, after Week 5.
+
+![James Laurinaitis](https://commons.wikimedia.org/wiki/Special:FilePath/James_Laurinaitis.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:James_Laurinaitis.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 26 | 55 | 16 | 151 | 7 | 16 | 0 | 2 | 0 | 0 | 9 | 9.4 | 102 |
-| 2014 | St. Louis Rams | 27 | 55 | 4 | 17 | 0 | 2 | 0 | 1 | 0 | 0 | 2 | 4.2 | 11 |
-| **Career** |  |  |  | 20 | 168 | 7 | 18 | 0 | 3 | 0 | 0 | 11 | 8.4 | 113 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 27 | 55 | 4 | 17 | 11 | 6 | 2 | 0 | 2 |
+| 2013 | St. Louis | 26 | 55 | 16 | 151 | 102 | 49 | 16 | 7 | 9 |
+| Career |  |  |  | 20 | 168 | 113 | 55 | 18 | 7 | 11 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 27 | 55 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | St. Louis | 26 | 55 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 26 | 55 | 1 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4.0 | 3 |
-| **Career** |  |  |  | 1 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4.0 | 3 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 26 | 55 | 1 | 4 | 3 | 1 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 26 | 55 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by St. Louis in the second round |
+
+<!-- player-page -->

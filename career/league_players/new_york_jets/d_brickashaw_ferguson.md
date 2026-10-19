@@ -1,28 +1,39 @@
 # D'Brickashaw Ferguson
 
-![D'Brickashaw Ferguson career card](assets/d_brickashaw_ferguson.svg)
+**New York Jets · Offensive tackle · No. 60 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 310 lb · Born December 10, 1983 · Virginia · Drafted in 2006, first round, by the New York Jets
+
+As of October 5, 2014, after Week 5.
+
+![D'Brickashaw Ferguson](https://commons.wikimedia.org/wiki/Special:FilePath/D%27Brickashaw_Ferguson_-_Jets_-_Sept_2009_%28cropped%29.jpg?width=500)
+
+*Photo: Ed Yourdon from New York City, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:D%27Brickashaw_Ferguson_-_Jets_-_Sept_2009_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 29 | 60 | 16 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | New York Jets | 30 | 60 | 5 | 5 | 317 | 2 | 20 | 0 | 0 | 0 | 0 | 63.4 |
-| **Career** |  |  |  | 21 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 30 | 60 | 5 | 5 | 317 | 2 | 20 |
+| 2013 | N.Y. Jets | 29 | 60 | 16 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 29 | 60 | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Jets | 29 | 60 | 1 | N/A | N/A | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by the New York Jets in the first round |
+
+<!-- player-page -->

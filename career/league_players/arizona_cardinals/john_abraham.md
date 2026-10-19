@@ -1,16 +1,29 @@
 # John Abraham
 
-![John Abraham career card](assets/john_abraham.svg)
+**Arizona Cardinals · Outside linebacker · No. 55 · Age 36 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 263 lb · Born May 6, 1978 · South Carolina · Drafted in 2000, first round, by the New York Jets
+
+As of October 5, 2014, after Week 5.
+
+![John Abraham](https://commons.wikimedia.org/wiki/Special:FilePath/John_Abraham_at_Commander%2C_Fleet_Activities_Sasebo_%28cropped%29.jpg?width=500)
+
+*Photo: U.S. Navy photo by Petty Officer 2nd Class Raquell Williams, Public domain ([source](https://commons.wikimedia.org/wiki/File:John_Abraham_at_Commander,_Fleet_Activities_Sasebo_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Arizona Cardinals | 35 | 55 | 14 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.1 | 2 |
-| 2014 | Arizona Cardinals | 36 | 55 | 4 | 14 | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 3.5 | 9 |
-| **Career** |  |  |  | 18 | 16 | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 0.9 | 11 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Arizona | 36 | 55 | 4 | 14 | 9 | 5 | 0 | 1 | 1 |
+| 2013 | Arizona | 35 | 55 | 14 | 2 | 2 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 18 | 16 | 11 | 5 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Arizona | 36 | 55 | 0 | 0 | 0 | 1 | 0 | 0 |
+| 2013 | Arizona | 35 | 55 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Arizona Cardinals players](README.md).
+| Date | Transaction |
+|---|---|
+| 2000 | Drafted by the New York Jets in the first round |
+
+<!-- player-page -->

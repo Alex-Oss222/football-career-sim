@@ -1,15 +1,26 @@
 # Dri Archer
 
-![Dri Archer career card](assets/dri_archer.svg)
+**Pittsburgh Steelers · Running back · No. 13 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+5' 8", 173 lb · Born August 9, 1991 · Kent State
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Pittsburgh Steelers | 23 | 13 | 5 | 5 | 23 | 4.6 | 0 | 4.6 | 1 | 0 | 0 | 6 | 0 |
-| **Career** |  |  |  | 5 | 5 | 23 | 4.6 | 0 | 4.6 | 1 | 0 | 0 | 6 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 23 | 13 | 5 | 5 | 23 | 4.6 | 0 | 15 | 4.6 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 23 | 13 | 1 | 1 | 0 | 0.0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 23 | 13 | 17 | 378 | 22.2 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -19,6 +30,8 @@ No playoff games on record.
 
 - AFC Special Teams Player of the Week (2014, Week 1)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).
+None on record.
+
+<!-- player-page -->

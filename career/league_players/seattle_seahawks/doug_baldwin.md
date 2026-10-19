@@ -1,16 +1,29 @@
 # Doug Baldwin
 
-![Doug Baldwin career card](assets/doug_baldwin.svg)
+**Seattle Seahawks · Wide receiver · No. 89 · Age 26 · Last game October 6, 2014**
 
-## Career stats
+5' 10", 189 lb · Born September 21, 1988 · Stanford
+
+As of October 6, 2014, after Week 5.
+
+![Doug Baldwin](https://commons.wikimedia.org/wiki/Special:FilePath/Doug_Baldwin_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Doug_Baldwin_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Seattle Seahawks | 24 | 89 | 16 | 50 | 31 | 235 | 7.6 | 1 | 14.7 | 62.0 | 39 | 32 | 0 |
-| 2014 | Seattle Seahawks | 25 | 89 | 4 | 36 | 20 | 159 | 8.0 | 0 | 39.8 | 55.6 | 26 | 0 | 0 |
-| **Career** |  |  |  | 20 | 86 | 51 | 394 | 7.7 | 1 | 19.7 | 59.3 | 39 | 32 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 25 | 89 | 4 | 36 | 20 | 159 | 8.0 | 0 | 26 | 39.8 | 55.6 |
+| 2013 | Seattle | 24 | 89 | 16 | 50 | 31 | 235 | 7.6 | 1 | 39 | 14.7 | 62.0 |
+| Career |  |  |  | 20 | 86 | 51 | 394 | 7.7 | 1 | 39 | 19.7 | 59.3 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 25 | 89 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Seattle | 24 | 89 | 1 | 32 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+<!-- player-page -->

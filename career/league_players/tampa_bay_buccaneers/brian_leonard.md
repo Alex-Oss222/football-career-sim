@@ -1,27 +1,45 @@
 # Brian Leonard
 
-![Brian Leonard career card](assets/brian_leonard.svg)
+**Tampa Bay Buccaneers · Running back · Age 29 · Last game January 5, 2014**
 
-## Career stats
+6' 1", 225 lb · Born February 3, 1984 · Rutgers · Drafted in 2007, second round, by St. Louis
+
+As of January 5, 2014, after the Wild Card round.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 29 | 30 | 16 | 84 | 365 | 4.3 | 3 | 22.8 | 13 | 121 | 0 | 97 | 0 |
-| **Career** |  |  |  | 16 | 84 | 365 | 4.3 | 3 | 22.8 | 13 | 121 | 0 | 97 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 29 | 30 | 16 | 84 | 365 | 4.3 | 3 | 15 | 22.8 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 29 | 30 | 20 | 13 | 121 | 9.3 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 29 | 30 | 4 | 78 | 19.5 | 3 | 36 | 12.0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 29 | 30 | 1 | 9 | 46 | 5.1 | 0 | 46.0 | 1 | 5 | 0 | 10 | 0 |
-| **Career** |  |  |  | 1 | 9 | 46 | 5.1 | 0 | 46.0 | 1 | 5 | 0 | 10 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 29 | 30 | 1 | 9 | 46 | 5.1 | 0 | 13 | 46.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 29 | 30 | 2 | 1 | 5 | 5.0 | 0 | 0 | 0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 5, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Tampa Bay Buccaneers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by St. Louis in the second round |
+
+<!-- player-page -->

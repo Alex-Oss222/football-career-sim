@@ -1,16 +1,29 @@
 # Nickell Robey
 
-![Nickell Robey career card](assets/nickell_robey.svg)
+**Buffalo Bills · Cornerback · No. 37 · Age 22 · Last game October 5, 2014**
 
-## Career stats
+5' 8", 165 lb · Born January 17, 1992 · USC
+
+As of October 5, 2014, after Week 5.
+
+![Nickell Robey](https://commons.wikimedia.org/wiki/Special:FilePath/Nickell_Robey_USC_2010.jpg?width=500)
+
+*Photo: Shotgun Spratling, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Nickell_Robey_USC_2010.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 21 | 37 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| 2014 | Buffalo Bills | 22 | 37 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 22 | 37 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Buffalo | 21 | 37 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 22 | 37 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2013 | Buffalo | 21 | 37 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+<!-- player-page -->

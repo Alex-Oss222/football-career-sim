@@ -1,15 +1,22 @@
 # Kevin Vickerson
 
-![Kevin Vickerson career card](assets/kevin_vickerson.svg)
+**Denver Broncos · Defensive tackle · Age 30 · Last game December 29, 2013**
 
-## Career stats
+6' 5", 328 lb · Born January 8, 1983 · Michigan State · Drafted in 2005, seventh round, by Miami
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Denver Broncos | 30 | 99 | 16 | 62 | 7 | 6 | 0 | 1 | 0 | 0 | 10 | 3.9 | 45 |
-| **Career** |  |  |  | 16 | 62 | 7 | 6 | 0 | 1 | 0 | 0 | 10 | 3.9 | 45 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Denver | 30 | 99 | 16 | 62 | 45 | 17 | 6 | 7 | 10 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Denver | 30 | 99 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Denver Broncos players](README.md).
+| Date | Transaction |
+|---|---|
+| 2005 | Drafted by Miami in the seventh round |
+
+<!-- player-page -->

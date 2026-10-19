@@ -1,16 +1,29 @@
 # Christopher Owens
 
-![Christopher Owens career card](assets/christopher_owens.svg)
+**Kansas City Chiefs · Cornerback · No. 20 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 180 lb · Born December 1, 1986 · San Jose State · Drafted in 2009, third round, by Atlanta
+
+As of October 5, 2014, after Week 5.
+
+![Christopher Owens](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Owens_at_2013_Browns_training_camp.jpg?width=500)
+
+*Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Chris_Owens_at_2013_Browns_training_camp.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 26 | N/A | 16 | 40 | 1 | 5 | 2 | 2 | 0 | 0 | 0 | 2.5 | 0 |
-| 2014 | Kansas City Chiefs | 27 | 20 | 5 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 0 |
-| **Career** |  |  |  | 21 | 45 | 1 | 5 | 2 | 2 | 0 | 0 | 0 | 2.1 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 27 | 20 | 5 | 5 | 4 | 1 | 0 | 0 | 0 |
+| 2013 | Cleveland | 26 | N/A | 16 | 40 | 24 | 16 | 2 | 0 | 0 |
+| Career |  |  |  | 21 | 45 | 28 | 17 | 2 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 27 | 20 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2013 | Cleveland | 26 | N/A | 1 | 2 | 5 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Atlanta in the third round |
+
+<!-- player-page -->

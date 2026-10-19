@@ -1,16 +1,24 @@
 # Brandon Williams
 
-![Brandon Williams career card](assets/brandon_williams.svg)
+**Carolina Panthers · Tight end · No. 86 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 250 lb · Born October 12, 1987 · Oregon; Joliet Junior College
+
+As of October 5, 2014, after Week 5.
+
+![Brandon Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Carolina_Panthers_Tight_End_Brandon_Williams_warming_up-_2014-04-25_07-18.png?width=500)
+
+*Photo: User:PantherFan86, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Carolina_Panthers_Tight_End_Brandon_Williams_warming_up-_2014-04-25_07-18.png)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 25 | 86 | 16 | 1 | 1 | 0 | 0.0 | 0 | 0.0 | 100.0 | 0 | 0 | 0 |
-| 2014 | Carolina Panthers | 26 | 86 | 5 | 3 | 2 | 31 | 15.5 | 0 | 6.2 | 66.7 | 23 | 0 | 0 |
-| **Career** |  |  |  | 21 | 4 | 3 | 31 | 10.3 | 0 | 1.5 | 75.0 | 23 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 26 | 86 | 5 | 3 | 2 | 31 | 15.5 | 0 | 23 | 6.2 | 66.7 |
+| 2013 | Carolina | 25 | 86 | 16 | 1 | 1 | 0 | 0.0 | 0 | 0 | 0.0 | 100.0 |
+| Career |  |  |  | 21 | 4 | 3 | 31 | 10.3 | 0 | 23 | 1.5 | 75.0 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+<!-- player-page -->

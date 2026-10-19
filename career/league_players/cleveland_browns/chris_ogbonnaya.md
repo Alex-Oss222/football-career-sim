@@ -1,15 +1,22 @@
 # Chris Ogbonnaya
 
-![Chris Ogbonnaya career card](assets/chris_ogbonnaya.svg)
+**Cleveland Browns · Fullback · Age 27 · Last game December 29, 2013**
 
-## Career stats
+6' 0", 225 lb · Born May 20, 1986 · Texas · Drafted in 2009, seventh round, by St. Louis
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 27 | 25 | 16 | 9 | 46 | 5.1 | 1 | 2.9 | 9 | 74 | 0 | 18 | 0 |
-| **Career** |  |  |  | 16 | 9 | 46 | 5.1 | 1 | 2.9 | 9 | 74 | 0 | 18 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Cleveland | 27 | 25 | 16 | 9 | 46 | 5.1 | 1 | 19 | 2.9 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Cleveland | 27 | 25 | 16 | 9 | 74 | 8.2 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Cleveland Browns players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by St. Louis in the seventh round |
+
+<!-- player-page -->

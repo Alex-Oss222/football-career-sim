@@ -1,16 +1,24 @@
 # Jack Doyle
 
-![Jack Doyle career card](assets/jack_doyle.svg)
+**Indianapolis Colts · Tight end · No. 84 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 267 lb · Born May 5, 1990 · Western Kentucky
+
+As of October 5, 2014, after Week 5.
+
+![Jack Doyle](https://commons.wikimedia.org/wiki/Special:FilePath/Jack_Doyle_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jack_Doyle_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 23 | 84 | 16 | 1 | 1 | 11 | 11.0 | 0 | 0.7 | 100.0 | 11 | 0 | 0 |
-| 2014 | Indianapolis Colts | 24 | 84 | 5 | 6 | 5 | 56 | 11.2 | 0 | 11.2 | 83.3 | 15 | 0 | 0 |
-| **Career** |  |  |  | 21 | 7 | 6 | 67 | 11.2 | 0 | 3.2 | 85.7 | 15 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 24 | 84 | 5 | 6 | 5 | 56 | 11.2 | 0 | 15 | 11.2 | 83.3 |
+| 2013 | Indianapolis | 23 | 84 | 16 | 1 | 1 | 11 | 11.0 | 0 | 11 | 0.7 | 100.0 |
+| Career |  |  |  | 21 | 7 | 6 | 67 | 11.2 | 0 | 15 | 3.2 | 85.7 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+<!-- player-page -->

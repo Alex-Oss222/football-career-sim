@@ -1,15 +1,22 @@
 # Nate Burleson
 
-![Nate Burleson career card](assets/nate_burleson.svg)
+**Detroit Lions · Wide receiver · Age 32 · Last game December 29, 2013**
 
-## Career stats
+6' 0", 198 lb · Born August 19, 1981 · Nevada · Drafted in 2003, third round, by Minnesota
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Detroit Lions | 32 | 13 | 16 | 101 | 70 | 690 | 9.9 | 2 | 43.1 | 69.3 | 50 | 10 | 1 |
-| **Career** |  |  |  | 16 | 101 | 70 | 690 | 9.9 | 2 | 43.1 | 69.3 | 50 | 10 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Detroit | 32 | 13 | 16 | 101 | 70 | 690 | 9.9 | 2 | 50 | 43.1 | 69.3 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Detroit | 32 | 13 | 2 | 10 | 0 | 1 | 1 |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Detroit Lions players](README.md).
+| Date | Transaction |
+|---|---|
+| 2003 | Drafted by Minnesota in the third round |
+
+<!-- player-page -->

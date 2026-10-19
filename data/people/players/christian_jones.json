@@ -1,0 +1,180 @@
+{
+ "schema_version": 1,
+ "name": "Christian Jones",
+ "gsis_id": "00-0031130",
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-05-11",
+   "date_as_written": "May 11, 2014 starting evaluation, on acquisition (signed as an undrafted rookie on May 10, 2014)",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Rookie; no NFL standing. Staff view: SAM and coverage-unit competition",
+   "position": "LB",
+   "identity": "A big linebacker who played middle and outside at Florida State, with size for a SAM role and coverage-unit experience; instincts and change of direction are the questions.",
+   "previous_profile": "None; 2014 rookie. The starting view rests on pre-draft public evidence only",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Size / length",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Diagnosis / instincts",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Coverage-unit fit",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments of the player as he arrives, made from pre-draft public evidence (combine and dated college record described qualitatively, plus pre-draft reports). They grade the current player, not his draft slot, contract or projection, and they use no NFL outcome. Evidence limits are stated below.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Size / length",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Diagnosis / instincts",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Coverage-unit fit",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards for the position, not measured 2014 league ranks. No NFL snap exists for this player.",
+   "read": "A big linebacker who played middle and outside at Florida State, with size for a SAM role and coverage-unit experience; instincts and change of direction are the questions.",
+   "read_sources": "Source: Florida State 2013 starter at middle linebacker ([Telvin Smith evidence file](library/2014_prospect_evidence/telvin_smith.md), August 5, 2013 depth chart); Stone's fourth-round comparison in the memo; [combine](library/2014_combine_results.md#christian-jones-lb-florida-state).",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "None (rookie)",
+     "current": "Starting 2014 view",
+     "change": "New",
+     "reason": "Pre-draft public evidence only; no Jacksonville practice or game evidence yet"
+    }
+   ],
+   "support": "Florida State 2013 starter at middle linebacker ([Telvin Smith evidence file](library/2014_prospect_evidence/telvin_smith.md), August 5, 2013 depth chart); Stone's fourth-round comparison in the memo; [combine](library/2014_combine_results.md#christian-jones-lb-florida-state).",
+   "historical_comparison": "No comparator is assigned at arrival. The evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.",
+   "play_style": "A big linebacker who played middle and outside at Florida State, with size for a SAM role and coverage-unit experience; instincts and change of direction are the questions.",
+   "best_traits": [
+    "Size / length: 6.5 /10.",
+    "Strength / Power: 6.0 /10.",
+    "Athleticism: 5.5 /10."
+   ],
+   "main_weaknesses": [
+    "Diagnosis / instincts: 4.0 /10.",
+    "Agility / Change of direction: 4.5 /10.",
+    "Technique: 4.5 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** Florida State 2013 starter at middle linebacker ([Telvin Smith evidence file](library/2014_prospect_evidence/telvin_smith.md), August 5, 2013 depth chart); Stone's fourth-round comparison in the memo; [combine](library/2014_combine_results.md#christian-jones-lb-florida-state).",
+    "**Evaluation basis:** Theoretical staff judgment from pre-draft public evidence; thin evidence identified above.",
+    "**What remains uncertain:** No Jacksonville-authored scouting report; the wingspan figure was dropped from the record.",
+    "**What would change the assessment:** Base-fit and coverage assignment work in Phase Two and OTAs.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates."
+   ],
+   "one_line": "A big linebacker who played middle and outside at Florida State, with size for a SAM role and coverage-unit experience; instincts and change of direction are the questions.",
+   "updates": [
+    {
+     "date": "2014-10-05",
+     "date_as_written": "October 5, 2014",
+     "setting": "Week 5, Pittsburgh at Jacksonville",
+     "text": "Eighteen of the 26 kicking-game snaps and no defensive snap, with no tackle recorded. A minor upper-extremity injury was logged at 10:35 of the second quarter at the end of Pittsburgh's three-and-out that ended in Wing's 54-yard punt; he was not removed: out, projected return October 6, reassessment October 6 ([medical record](career/2014/Team_Operations/Medical/incidents/christian_jones_2014-10-05.md)). No role change follows.",
+     "source": "Source: [Week 5 game record](career/2014/Regular_Season/Games/Week_05/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/christian_jones.md at commit 332d70b"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2014-05-10",
+   "kind": "signed",
+   "text": "Signed a three-year contract with Jacksonville as an undrafted rookie",
+   "source": "career/2014/Draft/udfa_signings.md"
+  }
+ ]
+}

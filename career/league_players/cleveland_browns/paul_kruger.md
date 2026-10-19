@@ -1,16 +1,29 @@
 # Paul Kruger
 
-![Paul Kruger career card](assets/paul_kruger.svg)
+**Cleveland Browns · Outside linebacker · No. 99 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 270 lb · Born February 15, 1986 · Utah · Drafted in 2009, second round, by Baltimore
+
+As of October 5, 2014, after Week 5.
+
+![Paul Kruger](https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Kruger_MT_Stadium_2012_Practice.jpg?width=500)
+
+*Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Paul_Kruger_MT_Stadium_2012_Practice.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 27 | 99 | 16 | 32 | 2 | 2 | 1 | 4 | 1 | 1 | 6 | 2.0 | 21 |
-| 2014 | Cleveland Browns | 28 | 99 | 4 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.8 | 3 |
-| **Career** |  |  |  | 20 | 39 | 2 | 2 | 1 | 4 | 1 | 1 | 6 | 1.9 | 24 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 28 | 99 | 4 | 7 | 3 | 4 | 0 | 0 | 0 |
+| 2013 | Cleveland | 27 | 99 | 16 | 32 | 21 | 11 | 2 | 2 | 6 |
+| Career |  |  |  | 20 | 39 | 24 | 15 | 2 | 2 | 6 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 28 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Cleveland | 27 | 99 | 1 | 14 | 4 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Baltimore in the second round |
+
+<!-- player-page -->

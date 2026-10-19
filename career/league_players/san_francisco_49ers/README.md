@@ -1,11 +1,13 @@
 # San Francisco 49ers players
 
-NFC West · Players whose latest game on record was with the San Francisco 49ers. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+NFC West. The players whose latest game on record was with the San Francisco 49ers. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [B.J. Daniels](b_j_daniels.md) | QB | 0 | 16 |
 | 2 | [Blaine Gabbert](blaine_gabbert.md) | QB | 5 | 16 |
 | 7 | [Colin Kaepernick](colin_kaepernick.md) | QB | 5 | 16 |
@@ -14,7 +16,7 @@ NFC West · Players whose latest game on record was with the San Francisco 49ers
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 49 | [Bruce Miller](bruce_miller.md) | FB | 5 | 16 |
 | 28 | [Carlos Hyde](carlos_hyde.md) | RB | 5 | 0 |
 | 21 | [Frank Gore](frank_gore.md) | RB | 5 | 16 |
@@ -25,7 +27,7 @@ NFC West · Players whose latest game on record was with the San Francisco 49ers
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 81 | [Anquan Boldin](anquan_boldin.md) | WR | 5 | 16 |
 | 84 | [Brandon Lloyd](brandon_lloyd.md) | WR | 5 | 0 |
 | 10 | [Bruce Ellington](bruce_ellington.md) | WR | 5 | 0 |
@@ -39,7 +41,7 @@ NFC West · Players whose latest game on record was with the San Francisco 49ers
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 46 | [Derek Carrier](derek_carrier.md) | TE | 5 | 0 |
 | N/A | [Garrett Celek](garrett_celek.md) | TE | 0 | 16 |
 | 89 | [Vance McDonald](vance_mcdonald.md) | TE | 5 | 16 |
@@ -48,7 +50,7 @@ NFC West · Players whose latest game on record was with the San Francisco 49ers
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Adam Snyder](adam_snyder.md) | G | 0 | 2 |
 | 75 | [Alex Boone](alex_boone.md) | G | 0 | 16 |
 | 76 | [Anthony Davis](anthony_davis.md) | T | 4 | 16 |
@@ -62,7 +64,7 @@ NFC West · Players whose latest game on record was with the San Francisco 49ers
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 95 | [Cornellius Carradine](cornellius_carradine.md) | DE | 5 | 0 |
 | 83 | [Demarcus Dobbs](demarcus_dobbs.md) | DE | 5 | 0 |
 | N/A | [Glenn Dorsey](glenn_dorsey.md) | NT | 0 | 16 |
@@ -75,7 +77,7 @@ NFC West · Players whose latest game on record was with the San Francisco 49ers
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 59 | [Aaron Lynch](aaron_lynch.md) | OLB | 5 | 0 |
 | 55 | [Ahmad Brooks](ahmad_brooks.md) | OLB | 5 | 16 |
 | N/A | [Aldon Smith](aldon_smith.md) | OLB | 0 | 16 |
@@ -90,7 +92,7 @@ NFC West · Players whose latest game on record was with the San Francisco 49ers
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 41 | [Antoine Bethea](antoine_bethea.md) | SS | 5 | 16 |
 | 22 | [Chris Cook](chris_cook.md) | CB | 5 | 16 |
 | 29 | [Chris Culliver](chris_culliver.md) | CB | 5 | 0 |
@@ -105,18 +107,20 @@ NFC West · Players whose latest game on record was with the San Francisco 49ers
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 9 | [Phil Dawson](phil_dawson.md) | K | 5 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 4 | [Andy Lee](andy_lee.md) | P | 5 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Kevin McDermott](kevin_mcdermott.md) | LS | 0 | 16 |
 | 86 | [Kyle Nelson](kyle_nelson.md) | LS | 5 | 0 |
+
+<!-- player-index -->

@@ -1,0 +1,14 @@
+{
+ "schema_version": 1,
+ "name": "Aaron Ross",
+ "gsis_id": "00-0025407",
+ "assessments": [],
+ "transactions": [
+  {
+   "date": "2013-03-12",
+   "kind": "released",
+   "text": "Released by Jacksonville",
+   "source": "career/2013/offseason/free_agency/signings.md"
+  }
+ ]
+}

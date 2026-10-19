@@ -1,27 +1,41 @@
 # Matt Giordano
 
-![Matt Giordano career card](assets/matt_giordano.svg)
+**St. Louis Rams · Strong safety · Age 31 · Last game January 12, 2014**
 
-## Career stats
+5' 11", 208 lb · Born October 16, 1982 · California; Fresno City College · Drafted in 2005, fourth round, by Indianapolis
+
+As of January 12, 2014, after the Divisional round.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 30 | 27 | 16 | 28 | 2 | 8 | 28 | 2 | 0 | 0 | 0 | 1.8 | 0 |
-| **Career** |  |  |  | 16 | 28 | 2 | 8 | 28 | 2 | 0 | 0 | 0 | 1.8 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 30 | 27 | 16 | 28 | 18 | 10 | 2 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 30 | 27 | 2 | 28 | 8 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 30 | 27 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2.0 | 0 |
-| **Career** |  |  |  | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 30 | 27 | 1 | 2 | 1 | 1 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 30 | 27 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 12, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All St. Louis Rams players](README.md).
+| Date | Transaction |
+|---|---|
+| 2005 | Drafted by Indianapolis in the fourth round |
+
+<!-- player-page -->

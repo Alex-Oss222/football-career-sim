@@ -1,11 +1,13 @@
 # San Diego Chargers players
 
-AFC West · Players whose latest game on record was with the San Diego Chargers. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+AFC West. The players whose latest game on record was with the San Diego Chargers. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Brad Sorensen](brad_sorensen.md) | QB | 0 | 16 |
 | 10 | [Kellen Clemens](kellen_clemens.md) | QB | 5 | 16 |
 | 17 | [Philip Rivers](philip_rivers.md) | QB | 5 | 16 |
@@ -13,7 +15,7 @@ AFC West · Players whose latest game on record was with the San Diego Chargers.
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 43 | [Branden Oliver](branden_oliver.md) | RB | 5 | 0 |
 | 39 | [Danny Woodhead](danny_woodhead.md) | RB | 5 | 16 |
 | 34 | [Donald Brown](donald_brown.md) | RB | 5 | 16 |
@@ -23,7 +25,7 @@ AFC West · Players whose latest game on record was with the San Diego Chargers.
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 15 | [Dontrelle Inman](dontrelle_inman.md) | WR | 5 | 0 |
 | 11 | [Eddie Royal](eddie_royal.md) | WR | 5 | 16 |
 | 13 | [Keenan Allen](keenan_allen.md) | WR | 5 | 16 |
@@ -34,7 +36,7 @@ AFC West · Players whose latest game on record was with the San Diego Chargers.
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 85 | [Antonio Gates](antonio_gates.md) | TE | 5 | 16 |
 | 88 | [David Johnson](david_johnson.md) | TE | 5 | 16 |
 | 83 | [John Phillips](john_phillips.md) | TE | 5 | 16 |
@@ -43,7 +45,7 @@ AFC West · Players whose latest game on record was with the San Diego Chargers.
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 78 | [Chad Rinehart](chad_rinehart.md) | G | 5 | 16 |
 | 65 | [Chris Watt](chris_watt.md) | C | 2 | 0 |
 | 76 | [D.J. Fluker](d_j_fluker.md) | G | 5 | 16 |
@@ -58,7 +60,7 @@ AFC West · Players whose latest game on record was with the San Diego Chargers.
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 94 | [Corey Liuget](corey_liuget.md) | DT | 5 | 16 |
 | N/A | [Drake Nevis](drake_nevis.md) | DT | 0 | 16 |
 | 91 | [Kendall Reyes](kendall_reyes.md) | DE | 5 | 16 |
@@ -71,7 +73,7 @@ AFC West · Players whose latest game on record was with the San Diego Chargers.
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 59 | [Andrew Gachkar](andrew_gachkar.md) | ILB | 0 | 16 |
 | N/A | [Bront Bird](bront_bird.md) | ILB | 0 | 16 |
 | 56 | [Donald Butler](donald_butler.md) | ILB | 5 | 16 |
@@ -87,7 +89,7 @@ AFC West · Players whose latest game on record was with the San Diego Chargers.
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 26 | [Brandon Flowers](brandon_flowers.md) | CB | 5 | 16 |
 | N/A | [Brandon Taylor](brandon_taylor.md) | SS | 0 | 2 |
 | 25 | [Darrell Stuckey](darrell_stuckey.md) | FS | 5 | 4 |
@@ -103,17 +105,19 @@ AFC West · Players whose latest game on record was with the San Diego Chargers.
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 9 | [Nick Novak](nick_novak.md) | K | 5 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 5 | [Mike Scifres](mike_scifres.md) | P | 5 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 47 | [Mike Windt](mike_windt.md) | LS | 5 | 16 |
+
+<!-- player-index -->

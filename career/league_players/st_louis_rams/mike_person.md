@@ -1,16 +1,24 @@
 # Mike Person
 
-![Mike Person career card](assets/mike_person.svg)
+**St. Louis Rams · Guard · No. 73 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 299 lb · Born June 17, 1988 · Montana State · Drafted in 2011, seventh round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![Mike Person](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Person.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Mike_Person.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Seattle Seahawks | 25 | N/A | 4 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | St. Louis Rams | 26 | 73 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 |
-| **Career** |  |  |  | 7 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 26 | 73 | 3 | 0 | 0 | 0 | 0 |
+| 2013 | Seattle | 25 | N/A | 4 | N/A | N/A | 1 | N/A |
+| Career |  |  |  | 7 | N/A | N/A | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by San Francisco in the seventh round |
+
+<!-- player-page -->

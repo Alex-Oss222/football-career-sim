@@ -1,16 +1,29 @@
 # Justin Tucker
 
-![Justin Tucker career card](assets/justin_tucker.svg)
+**Baltimore Ravens · Kicker · No. 9 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 189 lb · Born November 21, 1989 · Texas
+
+As of October 5, 2014, after Week 5.
+
+![Justin Tucker](https://commons.wikimedia.org/wiki/Special:FilePath/Justin_Tucker_%28cropped%29.jpg?width=500)
+
+*Photo: Maryland GovPics, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Justin_Tucker_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Baltimore Ravens | 23 | 9 | 16 | 23-27 | 85.2 | N/A | 31-31 | 100.0 | 100 | N/A | N/A | N/A | 6.2 |
-| 2014 | Baltimore Ravens | 24 | 9 | 5 | 13-17 | 76.5 | 51 | 15-15 | 100.0 | 54 | 6-8 | 1-1 | 6-8 | 10.8 |
-| **Career** |  |  |  | 21 | 36-44 | 81.8 | N/A | 46-46 | 100.0 | 154 | N/A | N/A | N/A | 7.3 |
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 24 | 9 | 5 | 13 | 17 | 76.5 | 51 | 15 | 15 | 100.0 | 54 |
+| 2013 | Baltimore | 23 | 9 | 16 | 23 | 27 | 85.2 | N/A | 31 | 31 | 100.0 | 100 |
+| Career |  |  |  | 21 | 36 | 44 | 81.8 | N/A | 46 | 46 | 100.0 | 154 |
+
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 24 | 9 | 6-8 | 6-8 | 1-1 |
+| 2013 | Baltimore | 23 | 9 | N/A | N/A | N/A |
 
 ### Playoffs
 
@@ -20,6 +33,8 @@ No playoff games on record.
 
 - AFC Special Teams Player of the Week (2014, Week 4)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Baltimore Ravens players](README.md).
+None on record.
+
+<!-- player-page -->

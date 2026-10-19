@@ -249,16 +249,20 @@ def audit(receipts, cohort=None):
 # 3*sqrt(p(1-p)/n) for rates, 3*sqrt(lambda/n) for per-team-game counts and
 # 3*sd/sqrt(n) for means, with the 2012 sd from the artifact.
 
+from .seasons import page_link
 from .statbook import DRIVE_MODEL_FROM_KERNEL, FIELD_POSITION_FROM_KERNEL, kernel_at_least
 
+# The links are written from a season's statistics page, two folders below career/, to the 2013
+# game reports, placed by the folder map.
 LEGACY_LABEL = (
     "legacy kernel, known snap-record defects (see the "
     "[September 8, 2013 Kansas City game report]"
-    "(../../2013/regular_season/week_01_kansas_city_at_jacksonville/output.md) and "
+    "(%s) and "
     "[September 22, 2013 Seattle game report]"
-    "(../../2013/regular_season/week_03_jacksonville_at_seattle/output.md)), detection only; "
+    "(%s)), detection only; "
     "never grounds to rerun"
-)
+) % (page_link(2013, "regular_season/week_01_kansas_city_at_jacksonville/output.md", 2),
+     page_link(2013, "regular_season/week_03_jacksonville_at_seattle/output.md", 2))
 KERNEL_2013_6_LABEL = (
     "known field-position, label and late-game defects (see the "
     "[documented 2013.6 limitations and 2013.7 adoption](../../../runtime/README.md)); "

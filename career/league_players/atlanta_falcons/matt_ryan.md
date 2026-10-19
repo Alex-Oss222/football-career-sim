@@ -1,16 +1,29 @@
 # Matt Ryan
 
-![Matt Ryan career card](assets/matt_ryan.svg)
+**Atlanta Falcons · Quarterback · No. 2 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 217 lb · Born May 17, 1985 · Boston College · Drafted in 2008, first round, by Atlanta
+
+As of October 5, 2014, after Week 5.
+
+![Matt Ryan](https://commons.wikimedia.org/wiki/Special:FilePath/Washington_Football_Team_at_Atlanta_Falcons_%283_October_2021%29_DSC_4628_%2851555290664%29_%28cropped%29.jpg?width=500)
+
+*Photo: All-Pro Reels from District of Columbia, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Washington_Football_Team_at_Atlanta_Falcons_(3_October_2021)_DSC_4628_(51555290664)_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 28 | 2 | 16 | 357-567 | 63.0 | 3,943 | 24 | 14 | 7.0 | 87.3 | 246.4 | 241 | 2 |
-| 2014 | Atlanta Falcons | 29 | 2 | 5 | 103-169 | 60.9 | 1,532 | 13 | 2 | 9.1 | 111.4 | 306.4 | 39 | 1 |
-| **Career** |  |  |  | 21 | 460-736 | 62.5 | 5,475 | 37 | 16 | 7.4 | 92.9 | 260.7 | 280 | 3 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 29 | 2 | 5 | 103 | 169 | 60.9 | 1,532 | 9.1 | 306.4 | 13 | 2 | 111.4 |
+| 2013 | Atlanta | 28 | 2 | 16 | 357 | 567 | 63.0 | 3,943 | 7.0 | 246.4 | 24 | 14 | 87.3 |
+| Career |  |  |  | 21 | 460 | 736 | 62.5 | 5,475 | 7.4 | 260.7 | 37 | 16 | 92.9 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 29 | 2 | 9 | 61 | 17 | 39 | 1 | 0 | 0 |
+| 2013 | Atlanta | 28 | 2 | 34 | 249 | 51 | 241 | 2 | 3 | 3 |
 
 ### Playoffs
 
@@ -22,6 +35,10 @@ No playoff games on record.
 - Pro Bowl selection (2013, QB)
 - NFC Offensive Player of the Week (2014, Week 1)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Atlanta in the first round |
+
+<!-- player-page -->

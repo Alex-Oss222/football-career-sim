@@ -1,16 +1,29 @@
 # Craig Robertson
 
-![Craig Robertson career card](assets/craig_robertson.svg)
+**Cleveland Browns · Inside linebacker · No. 53 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 234 lb · Born February 11, 1988 · North Texas
+
+As of October 5, 2014, after Week 5.
+
+![Craig Robertson](https://commons.wikimedia.org/wiki/Special:FilePath/Craig_Robertson_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Craig_Robertson_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 25 | 53 | 16 | 102 | 5 | 4 | 1 | 6 | 0 | 0 | 8 | 6.4 | 66 |
-| 2014 | Cleveland Browns | 26 | 53 | 4 | 12 | 1 | 0 | 1 | 2 | 0 | 0 | 1 | 3.0 | 6 |
-| **Career** |  |  |  | 20 | 114 | 6 | 4 | 2 | 8 | 0 | 0 | 9 | 5.7 | 72 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 26 | 53 | 4 | 12 | 6 | 6 | 0 | 1 | 1 |
+| 2013 | Cleveland | 25 | 53 | 16 | 102 | 66 | 36 | 4 | 5 | 8 |
+| Career |  |  |  | 20 | 114 | 72 | 42 | 4 | 6 | 9 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 26 | 53 | 1 | 14 | 2 | 0 | 0 | 0 |
+| 2013 | Cleveland | 25 | 53 | 1 | 12 | 6 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+<!-- player-page -->

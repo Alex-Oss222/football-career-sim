@@ -1,28 +1,48 @@
 # Da'Norris Searcy
 
-![Da'Norris Searcy career card](assets/da_norris_searcy.svg)
+**Buffalo Bills · Free safety · No. 25 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 207 lb · Born November 16, 1988 · North Carolina · Drafted in 2011, fourth round, by Buffalo
+
+As of October 5, 2014, after Week 5.
+
+![Da'Norris Searcy](https://commons.wikimedia.org/wiki/Special:FilePath/Da%27Norris_Searcy.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Da%27Norris_Searcy.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 24 | 25 | 16 | 89 | 3 | 17 | 29 | 6 | 1 | 0 | 0 | 5.6 | 0 |
-| 2014 | Buffalo Bills | 25 | 25 | 5 | 12 | 0 | 3 | 0 | 0 | 0 | 1 | 1 | 2.4 | 0 |
-| **Career** |  |  |  | 21 | 101 | 3 | 20 | 29 | 6 | 1 | 1 | 1 | 4.8 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 25 | 25 | 5 | 12 | 7 | 5 | 0 | 0 | 0 |
+| 2013 | Buffalo | 24 | 25 | 16 | 89 | 61 | 28 | 6 | 1 | 1 |
+| Career |  |  |  | 21 | 101 | 68 | 33 | 6 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 25 | 25 | 0 | 0 | 3 | 1 | 1 | 0 |
+| 2013 | Buffalo | 24 | 25 | 3 | 29 | 17 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 24 | 25 | 4 | 21 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 5.2 | 0 |
-| **Career** |  |  |  | 4 | 21 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 5.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 24 | 25 | 4 | 21 | 16 | 5 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 24 | 25 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Buffalo in the fourth round |
+
+<!-- player-page -->

@@ -1,0 +1,283 @@
+{
+ "schema_version": 1,
+ "name": "Travis Kelce",
+ "gsis_id": "00-0030506",
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/travis_kelce.md"
+  },
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-03-31",
+   "date_as_written": "March 31, 2014 starting evaluation",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Starting staff view; exact theoretical personnel grades",
+   "position": "TE",
+   "identity": "Alignment-flexible receiving tight end with above-starter speed, change of direction, route ability, hands and coverage recognition. He can work attached, from a wing or flexed into space; his receiving game is ahead of his inline blocking and pass-protection work.",
+   "previous_profile": "[2013 baseline](career/2013/player_profiles/travis_kelce.md)",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Route running / separation",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Hands / catch radius",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Contested catch / ball tracking",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "YAC",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Run blocking",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Pass protection / chip",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Alignment versatility",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed / athleticism",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Coverage recognition",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Route running / separation",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Hands / catch radius",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Contested catch / ball tracking",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "YAC",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Run blocking",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Pass protection / chip",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Alignment versatility",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed / athleticism",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Coverage recognition",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "",
+   "read": "Alignment-flexible move tight end with a receiving-first profile. Kelce can function as the Y, align off the ball as a wing, or flex into the slot without changing what the offense can ask him to do in the passing game. He gets into his release cleanly, builds enough speed to threaten the seam and works intermediate routes with controlled stems and efficient breaks. Against zone, he recognizes space and presents a defined target; against linebackers, his change of direction and route tempo give him a separation advantage. His hands are dependable outside his frame, his catch radius expands the quarterback's margin for error, and he transitions quickly from catch to runner. He has enough size and play strength to finish through contact, although contested catches are not yet a defining part of his game. As a blocker, positioning and effort are ahead of his ability to consistently displace NFL edge defenders. His pad level, hand placement and ability to sustain leverage still need work, and he is better suited to chip-and-release assignments than extended one-on-one pass protection. His best role is as a movable receiving piece who can create matchup problems from multiple alignments without being treated as a sixth offensive lineman.",
+   "read_sources": "Source: [2013 profile](career/2013/player_profiles/travis_kelce.md) and its recorded practice/game sources.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "2013 baseline",
+     "current": "Starting 2014 view",
+     "change": "Retained",
+     "reason": "No new individual football evidence establishing change"
+    }
+   ],
+   "support": "The 2013 SIM gave Kelce only 20 total targets across the regular season and playoffs, so the evidence is not broad enough to call him a proven high-volume NFL tight end. It is still meaningful that he produced 165 receiving yards on 10 catches, with gains of 36 and 53 yards, because that is directionally consistent with the movement, route and catch grades in the current card. His 2012 Cincinnati season also showed a receiving profile capable of producing downfield efficiency before he entered the league.\n\nThe staff should therefore separate trait projection from established production: the receiving tools grade above starter standard, while his actual NFL role remains developmental and the blocking/protection grades remain below starter standard.\n\n[2013 profile](career/2013/player_profiles/travis_kelce.md) and its recorded practice/game sources.",
+   "historical_comparison": "The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.",
+   "play_style": "Movement receiving tight end who can shift between attached, wing and flex alignments. He is most valuable when released into routes rather than left to win repeated inline blocks. His speed and change of direction let him threaten seams, crossers and intermediate space, while his hands and coverage recognition give him a chance to finish throws away from a perfectly clean target picture. He can create yards after the catch and has enough size and strength to function in traffic, but his blocking technique and protection anchor remain behind the receiving side of his game.",
+   "best_traits": [
+    "Hands / catch radius: 7.5 /10.",
+    "Alignment versatility: 7.5 /10.",
+    "Coverage recognition: 7.5 /10."
+   ],
+   "main_weaknesses": [
+    "Run blocking: 5.0 /10.",
+    "Pass protection / chip: 5.5 /10.",
+    "Contested catch / ball tracking: 6.5 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [2013 profile](career/2013/player_profiles/travis_kelce.md) and its recorded practice/game sources.",
+    "**Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics."
+   ],
+   "one_line": "Alignment-flexible receiving tight end with above-starter movement, route, hands and coverage-processing traits, but a limited 2013 SIM workload and below-starter blocking/protection at this checkpoint.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Kelce's assignment and first step held on Power and TREY, but his pad level rose late and the closed end reached his chest. The August 1 correction held early and the late rise recurred. His TE2 movement value stands; attached blocking remains a repeated-effort question.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-08-28",
+     "date_as_written": "August 28, 2014",
+     "setting": "Preseason game 4, Atlanta at Jacksonville",
+     "text": "The plan ended the attached evaluation and put him in the progression as a receiver through the first half: 25 offensive snaps, 2 catches on 3 targets for 26 (the 20-yard Snag from Bunch on the first snap of the second quarter, the 6-yard catch on the MAX-protected Power Pass, the Stick incompletion on third-and-7 from the 7), 17 kicking-game snaps and a coverage tackle on Hester's 23-yard return. No throw went to him in the first quarter: the 12 Trey Y-Cross through his matchup was not called with the starters and his two tagged first-quarter calls were Boot Floods. The record names Bartu and Ricardo Allen as the tacklers on his catches and no defender on the incompletion, so the matchup Atlanta chose, his separation from linebackers and the leverage he beat are the film's; the cross and the mesh were thrown to other receivers. He caught what came to him in a three-target half; the attached question is closed as untested by the plan's own instruction, and TE2 stands.",
+     "source": "Source: [preseason game 4 output](career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-21",
+     "date_as_written": "September 21, 2014",
+     "setting": "Week 3, Indianapolis at Jacksonville",
+     "text": "Eighteen offensive snaps as the second tight end with one catch on three targets for 4, the Dagger throw on third-and-4 from the Jacksonville 17 in the fourth quarter that came up short, after the Stick with SCAT in the third quarter and the Y-Cross with HALF from the Indianapolis 27 thrown his way fell incomplete; 27 kicking-game snaps with two coverage tackles on Whalen's punt returns. The play-by-play names no defender on either incompletion, so the route, the leverage and the throw are the film's. A minor lower-extremity injury was logged at the end of the second-quarter touchdown drive at 12:37; he was not removed and every snap above came after it: out, projected return September 25, reassessment September 22 ([medical record](career/2014/Team_Operations/Medical/incidents/travis_kelce_2014-09-21.md)). No role change follows.",
+     "source": "Source: [Week 3 game record](career/2014/Regular_Season/Games/Week_03/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-27",
+     "date_as_written": "September 22 to 27, 2014",
+     "setting": "Cleared; the San Diego week",
+     "text": "Reassessed Monday with no change and out of the Monday walkthrough and the Wednesday practice, Lewis, Jensen and Hoskins taking the tight-end work; cleared Thursday, September 25, his projected date, and full Thursday, Friday and in the Saturday walkthrough in the second tight end's work, including the twelve-personnel pictures and the four-minute period. He took no TE Delay rep; Lewis was the delay tight end. Nothing charged to him on the recorded reps. Active for San Diego at TE2, no designation on the Friday report.",
+     "source": "Source: [Week 4 record](career/2014/Regular_Season/Games/Week_04/output.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-10-04",
+     "date_as_written": "September 29 to October 4, 2014",
+     "setting": "The receiving Y",
+     "text": "Stone's packet gave him a specific receiving emphasis without a new chart title: the receiving Y job on selected 12 Trey Y-Cross with SOLID and 11 Bunch Mesh with HALF reps and the flat and intermediate distribution on the Wing Boot, with Lewis taking the complementary assignment in twelve personnel. He took those reps on Wednesday, the unprompted recheck on Thursday and the Saturday walkthrough recheck, and the combinations were released for the Pittsburgh sheet; Lewis stays the established Y and the TE Delay receiver. Coverage still decides the throw and no target total was set. Nothing charged to him on the recorded reps. Active for Week 5 at TE2.",
+     "source": "Source: [Week 5 record](career/2014/Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/travis_kelce.md at commit 332d70b"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2013-04-26",
+   "kind": "drafted",
+   "text": "Drafted by Jacksonville with the No. 33 pick",
+   "source": "career/2013/offseason/draft/draftees.md"
+  },
+  {
+   "date": "2013-05-02",
+   "kind": "signed",
+   "text": "Signed a four-year rookie contract with Jacksonville",
+   "source": "career/2013/offseason/draft/draftees.md"
+  }
+ ]
+}

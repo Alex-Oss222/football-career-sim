@@ -1,15 +1,18 @@
 # Joe Morgan
 
-![Joe Morgan career card](assets/joe_morgan.svg)
+**New Orleans Saints · Wide receiver · No. 13 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 184 lb · Born March 23, 1988 · Walsh
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | New Orleans Saints | 26 | 13 | 2 | 12 | 8 | 105 | 13.1 | 0 | 52.5 | 66.7 | 26 | 0 | 0 |
-| **Career** |  |  |  | 2 | 12 | 8 | 105 | 13.1 | 0 | 52.5 | 66.7 | 26 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New Orleans | 26 | 13 | 2 | 12 | 8 | 105 | 13.1 | 0 | 26 | 52.5 | 66.7 |
 
 ### Playoffs
 
@@ -17,8 +20,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New Orleans Saints players](README.md).
+<!-- player-page -->

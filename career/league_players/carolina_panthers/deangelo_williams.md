@@ -1,16 +1,34 @@
 # DeAngelo Williams
 
-![DeAngelo Williams career card](assets/deangelo_williams.svg)
+**Carolina Panthers · Running back · No. 34 · Age 31 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 215 lb · Born April 25, 1983 · Memphis · Drafted in 2006, first round, by Carolina
+
+As of October 5, 2014, after Week 5.
+
+![DeAngelo Williams](https://commons.wikimedia.org/wiki/Special:FilePath/DeAngelo_Williams.jpg?width=500)
+
+*Photo: Jeff Kern, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:DeAngelo_Williams.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 30 | 34 | 16 | 321 | 1,648 | 5.1 | 11 | 103.0 | 45 | 482 | 4 | 366 | 7 |
-| 2014 | Carolina Panthers | 31 | 34 | 5 | 67 | 361 | 5.4 | 4 | 72.2 | 13 | 150 | 0 | 80 | 1 |
-| **Career** |  |  |  | 21 | 388 | 2,009 | 5.2 | 15 | 95.7 | 58 | 632 | 4 | 446 | 8 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 31 | 34 | 5 | 67 | 361 | 5.4 | 4 | 42 | 72.2 |
+| 2013 | Carolina | 30 | 34 | 16 | 321 | 1,648 | 5.1 | 11 | 59 | 103.0 |
+| Career |  |  |  | 21 | 388 | 2,009 | 5.2 | 15 | 59 | 95.7 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 31 | 34 | 23 | 13 | 150 | 11.5 | 0 | 1 | 1 |
+| 2013 | Carolina | 30 | 34 | 62 | 45 | 482 | 10.7 | 4 | 7 | 7 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 31 | 34 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Carolina | 30 | 34 | 1 | 26 | 26.0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -22,6 +40,10 @@ No playoff games on record.
 - NFC Offensive Player of the Week (2013, Week 17)
 - AP Second-Team All-Pro (2013, RB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Carolina in the first round |
+
+<!-- player-page -->

@@ -1,15 +1,22 @@
 # Xavier Su'a-Filo
 
-![Xavier Su'a-Filo career card](assets/xavier_su_a_filo.svg)
+**Houston Texans · Guard · No. 71 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 307 lb · Born January 1, 1991 · UCLA
+
+As of October 5, 2014, after Week 5.
+
+![Xavier Su'a-Filo](https://commons.wikimedia.org/wiki/Special:FilePath/Xavier_Su%27a-Filo_2014_combine.jpg?width=500)
+
+*Photo: Atlanta Falcons, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Xavier_Su%27a-Filo_2014_combine.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Houston Texans | 23 | 71 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 |
-| **Career** |  |  |  | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Houston | 23 | 71 | 5 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Houston Texans players](README.md).
+<!-- player-page -->

@@ -1,16 +1,24 @@
 # Johnnie Troutman
 
-![Johnnie Troutman career card](assets/johnnie_troutman.svg)
+**San Diego Chargers · Guard · No. 63 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 330 lb · Born November 11, 1987 · Penn State · Drafted in 2012, fifth round, by San Diego
+
+As of October 5, 2014, after Week 5.
+
+![Johnnie Troutman](https://commons.wikimedia.org/wiki/Special:FilePath/Johnnie_Troutman_%28cropped%29.jpg?width=500)
+
+*Photo: MC3 Omar Powell, Public domain ([source](https://commons.wikimedia.org/wiki/File:Johnnie_Troutman_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Diego Chargers | 25 | 63 | 16 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | San Diego Chargers | 26 | 63 | 5 | 5 | 316 | 2 | 19 | 0 | 0 | 0 | 0 | 63.2 |
-| **Career** |  |  |  | 21 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 26 | 63 | 5 | 5 | 316 | 2 | 19 |
+| 2013 | San Diego | 25 | 63 | 16 | N/A | N/A | 1 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by San Diego in the fifth round |
+
+<!-- player-page -->

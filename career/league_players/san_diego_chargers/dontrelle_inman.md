@@ -1,15 +1,22 @@
 # Dontrelle Inman
 
-![Dontrelle Inman career card](assets/dontrelle_inman.svg)
+**San Diego Chargers · Wide receiver · No. 15 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 205 lb · Born January 31, 1989 · Virginia
+
+As of October 5, 2014, after Week 5.
+
+![Dontrelle Inman](https://commons.wikimedia.org/wiki/Special:FilePath/Dontrelle_Inman_in_2014.jpg?width=500)
+
+*Photo: Kelbran, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Dontrelle_Inman_in_2014.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | San Diego Chargers | 25 | 15 | 5 | 2 | 1 | 8 | 8.0 | 1 | 1.6 | 50.0 | 8 | 0 | 0 |
-| **Career** |  |  |  | 5 | 2 | 1 | 8 | 8.0 | 1 | 1.6 | 50.0 | 8 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 25 | 15 | 5 | 2 | 1 | 8 | 8.0 | 1 | 8 | 1.6 | 50.0 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+<!-- player-page -->

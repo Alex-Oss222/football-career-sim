@@ -1,138 +1,64 @@
-# Allen Hurns — 2014 Player Profile
+# Allen Hurns
 
-<!-- player-card:begin -->
-![Allen Hurns career card](../../../../league_players/jacksonville_jaguars/assets/allen_hurns.svg)
+**Jacksonville Jaguars · Wide receiver · No. 88 · Age 22 · Active roster**
 
-[Career statistics](../../../../league_players/jacksonville_jaguars/allen_hurns.md)
-<!-- player-card:end -->
+6' 1", 195 lb · Born November 12, 1991 · Miami · Undrafted
 
-<!-- photo -->
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Allen_Hurns.jpg?width=500" alt="Allen Hurns" width="160">
+As of October 5, 2014, after Week 5.
+
+![Allen Hurns](https://commons.wikimedia.org/wiki/Special:FilePath/Allen_Hurns.jpg?width=500)
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Allen_Hurns.jpg)).*
-<!-- /photo -->
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** May 11, 2014 starting evaluation, on acquisition (signed as an undrafted rookie on May 10, 2014)  
-**Age:** 22  
-**Position:** WR  
-**NFL standing:** Rookie; no NFL standing. Staff view: outside receiver camp competition  
-**Player identity:** A tall outside receiver from Miami with a productive senior season, body control on the boundary and average speed.  
-**Previous annual profile:** None; 2014 rookie. The starting view rests on pre-draft public evidence only  
+## Staff assessment
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
-
-## Player grades
-
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 3.5 /10 | Staff judgment |
-| Athleticism | 5.0 /10 | Staff judgment |
-| Speed | 5.0 /10 | Staff judgment |
-| Strength / Power | 5.0 /10 | Staff judgment |
-| Agility / Change of direction | 5.0 /10 | Staff judgment |
-| Technique | 5.0 /10 | Staff judgment |
-| Football IQ | 5.0 /10 | Staff judgment |
-| Boundary body control | 5.5 /10 | Staff judgment |
-| Separation | 4.0 /10 | Staff judgment |
-| Special-teams value | 4.5 /10 | Staff judgment |
-
-Exact theoretical personnel judgments of the player as he arrives, made from pre-draft public evidence (combine and dated college record described qualitatively, plus pre-draft reports). They grade the current player, not his draft slot, contract or projection, and they use no NFL outcome. Evidence limits are stated below.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Boundary body control | At NFL starter standard | Below elite standard | Above low-end standard |
-| Separation | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Special-teams value | Below NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards for the position, not measured 2014 league ranks. No NFL snap exists for this player.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 3.5/10 |
+| Athleticism | 5.0/10 |
+| Speed | 5.0/10 |
+| Strength and power | 5.0/10 |
+| Agility and change of direction | 5.0/10 |
+| Technique | 5.0/10 |
+| Football IQ | 5.0/10 |
+| Boundary body control | 5.5/10 |
+| Separation | 4.0/10 |
+| Special-teams value | 4.5/10 |
 
 A tall outside receiver from Miami with a productive senior season, body control on the boundary and average speed.
 
-Source: Miami senior, 2013; watch-list reason in [Stone's memo](../../../Early_Offseason/stone_to_caldwell_2014_offseason_decisions.md#undrafted-watch-list). No combine entry in the library.
+*Staff view, May 11, 2014; dated updates through October 4, 2014.*
 
-## Year-over-year change
+## Contract
 
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Player identity and position traits | None (rookie) | Starting 2014 view | New | Pre-draft public evidence only; no Jacksonville practice or game evidence yet |
+Three-year contract through 2016.
 
-## What supports this assessment
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $420,000 | $420,000 |
+| 2015 | $510,000 | $510,000 |
+| 2016 | $600,000 | $600,000 |
 
-Miami senior, 2013; watch-list reason in [Stone's memo](../../../Early_Offseason/stone_to_caldwell_2014_offseason_decisions.md#undrafted-watch-list). No combine entry in the library.
+## Statistics
 
-## Historical comparison
+### Regular season
 
-No comparator is assigned at arrival. The evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 22 | 88 | 5 | 5 | 3 | 48 | 16.0 | 0 | 32 | 9.6 | 60.0 |
 
-## Play style
+### Playoffs
 
-A tall outside receiver from Miami with a productive senior season, body control on the boundary and average speed.
+No playoff games on record.
 
-## Best traits
+## Awards
 
-- Boundary body control: 5.5 /10.
-- Athleticism: 5.0 /10.
-- Speed: 5.0 /10.
+None.
 
-## Main weaknesses
+## Transactions
 
-- Separation: 4.0 /10.
-- Special-teams value: 4.5 /10.
-- Athleticism: 5.0 /10.
+| Date | Transaction |
+|---|---|
+| May 10, 2014 | Signed a three-year contract with Jacksonville as an undrafted rookie |
 
-## Evidence and uncertainty
-
-- **Primary evidence:** Miami senior, 2013; watch-list reason in [Stone's memo](../../../Early_Offseason/stone_to_caldwell_2014_offseason_decisions.md#undrafted-watch-list). No combine entry in the library.
-- **Evaluation basis:** Theoretical staff judgment from pre-draft public evidence; thin evidence identified above.
-- **What remains uncertain:** No measured testing on record; no Jacksonville scouting report beyond the memo.
-- **What would change the assessment:** OTA route work against the signed corners.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates.
-
-**One-line description:** A tall outside receiver from Miami with a productive senior season, body control on the boundary and average speed.
-
-## 2013 season production
-
-No NFL season. The college record is described qualitatively above; no college statistic is entered as an NFL figure.
-
-## Dated coaching updates
-
-### September 29 to October 4, 2014 | First relief receiver
-
-Stone's Pittsburgh order makes him the first general relief receiver and keeps him the second punt returner behind Hawkins, the prepared alternative in Westhoff's Friday return period. The fourth receiver on the chart, ahead of Nicks, whose relief is limited to the prepared X series. Nothing charged to him on the recorded reps. Active for Week 5.
-
-Source: [Week 5 record](../../../Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 22 | 88 | Through Week 5 | 5 | 5 | 3 | 48 | 16.0 | 0 | 32 | 0 | 0 | 0 | 0 | 0 | 60.0 | 0 | 0 | — | 0 | 0 | — | 4 |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 22 | 88 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

@@ -1,30 +1,72 @@
 # Lane Johnson
 
-![Lane Johnson career card](assets/lane_johnson.svg)
+**Jacksonville Jaguars · Offensive tackle · Age 24 · Active roster**
 
-## Career stats
+6' 6", 310 lb · Born May 8, 1990 · Oklahoma; Kilgore · Drafted in 2013, No. 2 overall, by Jacksonville
+
+As of October 5, 2014, after Week 5.
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 6.5/10 |
+| Athleticism | 7.0/10 |
+| Speed | 7.0/10 |
+| Strength and power | 6.5/10 |
+| Agility and change of direction | 7.0/10 |
+| Technique | 6.0/10 |
+| Football IQ | 6.5/10 |
+| Pass-set and mirror | 6.5/10 |
+| Anchor vs power | 6.0/10 |
+| Hand usage and punch | 6.0/10 |
+| Recovery and balance | 6.5/10 |
+| Drive blocking | 6.5/10 |
+| Reach and movement blocking | 7.0/10 |
+| Second-level work | 6.5/10 |
+| Twist and blitz recognition | 6.5/10 |
+| Assignment and penalty consistency | 6.0/10 |
+
+An athletic starting right tackle who can move on reach and second-level work and retain taught protection answers. I see leverage, hand precision and consistent anchoring as the remaining limits of his rookie profile.
+
+*Staff view, March 31, 2014; dated updates through September 20, 2014.*
+
+## Contract
+
+Four-year contract through 2016.
+
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $1,368,709 | $4,818,545 |
+| 2015 | $2,332,418 | $5,782,254 |
+| 2016 | $3,296,127 | $6,745,963 |
+| 2017 | Club option | Not exercised |
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 23 | N/A | 16 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Jacksonville Jaguars | 24 | N/A | 5 | 5 | 332 | 3 | 23 | 0 | 0 | 0 | 0 | 66.4 |
-| **Career** |  |  |  | 21 | N/A | N/A | 11 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 24 | N/A | 5 | 5 | 332 | 3 | 23 |
+| 2013 | Jacksonville | 23 | N/A | 16 | N/A | N/A | 8 | N/A |
+| With Jacksonville |  |  |  | 21 | N/A | N/A | 11 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 23 | N/A | 2 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 2 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 23 | N/A | 2 | N/A | N/A | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/lane_johnson.md)
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| April 25, 2013 | Drafted by Jacksonville with the No. 2 pick |
+| May 2, 2013 | Signed a four-year rookie contract with Jacksonville |
 
-Records through October 5, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Jacksonville Jaguars players](README.md).
+<!-- player-page -->

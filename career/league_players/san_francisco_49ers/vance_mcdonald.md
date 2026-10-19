@@ -1,16 +1,24 @@
 # Vance McDonald
 
-![Vance McDonald career card](assets/vance_mcdonald.svg)
+**San Francisco 49ers · Tight end · No. 89 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 267 lb · Born June 13, 1990 · Rice
+
+As of October 5, 2014, after Week 5.
+
+![Vance McDonald](https://commons.wikimedia.org/wiki/Special:FilePath/Vance_McDonald.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Vance_McDonald.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 23 | 89 | 16 | 23 | 16 | 150 | 9.4 | 0 | 9.4 | 69.6 | 28 | 0 | 0 |
-| 2014 | San Francisco 49ers | 24 | 89 | 5 | 10 | 6 | 77 | 12.8 | 0 | 15.4 | 60.0 | 22 | 0 | 0 |
-| **Career** |  |  |  | 21 | 33 | 22 | 227 | 10.3 | 0 | 10.8 | 66.7 | 28 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 24 | 89 | 5 | 10 | 6 | 77 | 12.8 | 0 | 22 | 15.4 | 60.0 |
+| 2013 | San Francisco | 23 | 89 | 16 | 23 | 16 | 150 | 9.4 | 0 | 28 | 9.4 | 69.6 |
+| Career |  |  |  | 21 | 33 | 22 | 227 | 10.3 | 0 | 28 | 10.8 | 66.7 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+<!-- player-page -->

@@ -1,16 +1,34 @@
 # Golden Tate
 
-![Golden Tate career card](assets/golden_tate.svg)
+**Detroit Lions · Wide receiver · No. 15 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 195 lb · Born August 2, 1988 · Notre Dame · Drafted in 2010, second round, by Seattle
+
+As of October 5, 2014, after Week 5.
+
+![Golden Tate](https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Tate_vs._Rams_2013.jpg?width=500)
+
+*Photo: Mike Morris, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Golden_Tate_vs._Rams_2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Seattle Seahawks | 25 | 81 | 16 | 117 | 75 | 647 | 8.6 | 4 | 40.4 | 64.1 | 74 | 10 | 0 |
-| 2014 | Detroit Lions | 26 | 15 | 4 | 40 | 29 | 411 | 14.2 | 2 | 102.8 | 72.5 | 80 | 3 | 1 |
-| **Career** |  |  |  | 20 | 157 | 104 | 1,058 | 10.2 | 6 | 52.9 | 66.2 | 80 | 13 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 26 | 15 | 4 | 40 | 29 | 411 | 14.2 | 2 | 80 | 102.8 | 72.5 |
+| 2013 | Seattle | 25 | 81 | 16 | 117 | 75 | 647 | 8.6 | 4 | 74 | 40.4 | 64.1 |
+| Career |  |  |  | 20 | 157 | 104 | 1,058 | 10.2 | 6 | 80 | 52.9 | 66.2 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 26 | 15 | 1 | 3 | 0 | 1 | 1 |
+| 2013 | Seattle | 25 | 81 | 4 | 10 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 26 | 15 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Seattle | 25 | 81 | 0 | 0 | N/A | 34 | 531 | 15.6 |
 
 ### Playoffs
 
@@ -18,8 +36,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Seattle in the second round |
+
+<!-- player-page -->

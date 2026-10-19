@@ -1,16 +1,24 @@
 # Jordan Mills
 
-![Jordan Mills career card](assets/jordan_mills.svg)
+**Chicago Bears · Offensive tackle · No. 67 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 316 lb · Born December 24, 1990 · Louisiana Tech
+
+As of October 5, 2014, after Week 5.
+
+![Jordan Mills](https://commons.wikimedia.org/wiki/Special:FilePath/Jordan_Mills_bears.jpg?width=500)
+
+*Photo: original: Jim Larrison derivative: Diddykong1130, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jordan_Mills_bears.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Chicago Bears | 22 | 67 | 16 | N/A | N/A | 9 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Chicago Bears | 23 | 67 | 5 | 5 | 343 | 3 | 23 | 0 | 0 | 0 | 0 | 68.6 |
-| **Career** |  |  |  | 21 | N/A | N/A | 12 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Chicago | 23 | 67 | 5 | 5 | 343 | 3 | 23 |
+| 2013 | Chicago | 22 | 67 | 16 | N/A | N/A | 9 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 12 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).
+<!-- player-page -->

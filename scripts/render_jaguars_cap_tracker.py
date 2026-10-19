@@ -11,8 +11,9 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from runtime.season_layout import repository_relative
-from runtime.seasons import SeasonPaths
+from runtime.player_bios import biographies
+from runtime.season_layout import logical_path, repository_relative
+from runtime.seasons import SeasonPaths, page_link
 INPUT = Path('career/finances/supporting_records/financial_inputs.json')
 OUTPUT = Path('career/finances/salary_cap/cap_tracker.md')
 DETAILS = Path('career/finances/player_contracts/contract_details.md')
@@ -36,7 +37,7 @@ def departure_source(player, data):
     if Path(source).name != 'ledger.md':
         return source
     if player['control'] == 'traded':
-        return f"career/{player['departure_date'][:4]}/trades/trades.md"
+        return logical_path(int(player['departure_date'][:4]), 'trades/trades.md')
     return next((path for path in player['sources'] if path.endswith('/contract_status.md')),
                 data['current_contract_table'])
 
@@ -54,7 +55,8 @@ def presentation_note(text, contract_table):
     text = re.sub(r'negotiation record (career/[^\s)]+\.md)',
                   lambda match: source_link(match[1], 'negotiation record'), text)
     text = text.replace('March 2014 replay log', source_link(
-        'career/2014/free_agency/march_2014_replay_log.md', 'March 2014 signing record'))
+        SeasonPaths(2014, ROOT).record('free_agency/march_2014_replay_log.md').relative_to(ROOT).as_posix(),
+        'March 2014 signing record'))
     return text
 
 def slug(name):
@@ -234,7 +236,7 @@ def render_main(d,years):
         ['2014 minimum salaries','$420,000 / $495,000 / $570,000 / $645,000 / $730,000 / $855,000 / $955,000 for 0 / 1 / 2 / 3 / 4-6 / 7-9 / 10+ credited seasons'],
         ['Future league caps','Add each year’s published cap when that year is reached'],
         ['Club accounting','Carryover, adjustments and actual cash receipts remain in the current cap worksheet']]),
-    f"The [2011 agreement]({CBA}) controls the era’s minimums, bonus allocation, Top-51 treatment, options and cash-floor windows. [The original-contract research](../../library/2014_jaguars_original_contract_reconstruction.md) supplies the historical salaries and bonus schedules. The [club worksheet](../2014/offseason/current_cap_worksheet.md) separates scheduled player commitments from adjusted club cap room.\n\n",
+    f"The [2011 agreement]({CBA}) controls the era’s minimums, bonus allocation, Top-51 treatment, options and cash-floor windows. [The original-contract research](../../library/2014_jaguars_original_contract_reconstruction.md) supplies the historical salaries and bonus schedules. The [club worksheet]({page_link(d['start_year'], 'offseason/current_cap_worksheet.md', 1)}) separates scheduled player commitments from adjusted club cap room.\n\n",
     '## Team cap summary, twelve years\n\n']
     active = [p for p in ps if not p.get('former_player')]
     accounting = team_accounting(d, current)
@@ -248,7 +250,7 @@ def render_main(d,years):
             ['Certified cap space', money(accounting['room']), 'Withheld until club accounting is reconciled'],
             ['Space after rookie reserve', money(accounting['after_rookies']), 'Requires verified net rookie cost and certified space'],
         ])
-    dashboard += 'The [current worksheet](../2014/offseason/current_cap_worksheet.md) records the Top-51 calculation and workout charge. A league-cap difference is not certified available room. [Organization finances](organization_finances.md) contains coaching commitments.\n\n'
+    dashboard += f'The [current worksheet]({page_link(d["start_year"], "offseason/current_cap_worksheet.md", 1)}) records the Top-51 calculation and workout charge. A league-cap difference is not certified available room. [Organization finances](organization_finances.md) contains coaching commitments.\n\n'
     if current == '2014':
         # Preserve required bonus charges below Top 51; displace only their P5 salary.
         ranked = sorted(active, key=lambda p: -(working_charge(p['years'][current]) or 0))
@@ -272,10 +274,13 @@ def render_main(d,years):
                 ['Unused prior-year room carried in', f"{dollars(est['low'])} to {dollars(est['high'])}"],
                 ['Difference including the rollover estimate', f"{dollars(difference+est['low'])} to {dollars(difference+est['high'])}"],
             ])
-            dashboard += f"The rollover is calculated step by step in the [cap worksheet](../2014/offseason/current_cap_worksheet.md#2013-rollover). It becomes certified room only when club accounting is reconciled.\n\n"
+            dashboard += f"The rollover is calculated step by step in the [cap worksheet]({page_link(d['start_year'], 'offseason/current_cap_worksheet.md', 1)}#2013-rollover). It becomes certified room only when club accounting is reconciled.\n\n"
+    # Ages come from the birth-date registry with the canon overrides
+    # (runtime/player_bios.py), as of the inputs' date; the inputs store none.
+    ages = biographies([p['name'] for p in active], d['as_of'])
     dashboard += '## Current player cap breakdown\n\n' + table(
         ['Player','Pos','Age','Status','Cap hit','% of league cap','Base','Bonus proration','Other cap','Unpaid guaranteed salary'],
-        [[f"[{p['name']}](jaguars_contract_details.md#{slug(p['name'])})", p['position'],p['age_at_checkpoint'],
+        [[f"[{p['name']}](jaguars_contract_details.md#{slug(p['name'])})", p['position'],ages[p['name']]['age'],
           'Unsigned tender' if p['control']=='tender' else 'Signed',
           dollars(working_charge(p['years'][current])),
           f"{100 * working_charge(p['years'][current]) / d['league_caps'][current]:.2f}%",
@@ -324,10 +329,10 @@ def render_main(d,years):
     picks=d['draft_picks']
     if all(x.get('selection') for x in picks):
         out.append(table(['Draft','Round','Original club','Overall','Selection','Selected','Contract'],[[x['year'],x['round'],x['original_club'],draft_slot(x['overall']),x['selection'],display_date(x['selected']),x['contract']] for x in picks]))
-        out.append('All nine selections were exercised May 8 to 10 and signed May 11, 2014; no 2014 selection right remains. Each rookie contract is in the position tables above and in its individual sheet, and the gross and net Top-51 effect of the class is in the [cap worksheet](../2014/offseason/current_cap_worksheet.md). [The draft record](../2014/offseason/draft/draftees.md) owns the selections and [the draft ownership record](../2014/draft/draft_order.md) the picks. Overall numbers include the 32 compensatory picks announced March 24, 2014; Jacksonville received none.\n\n## Decision calendar\n\n')
+        out.append('All nine selections were exercised May 8 to 10 and signed May 11, 2014; no 2014 selection right remains. Each rookie contract is in the position tables above and in its individual sheet, and the gross and net Top-51 effect of the class is in the [cap worksheet]('+page_link(d['start_year'], 'offseason/current_cap_worksheet.md', 1)+'). [The draft record]('+page_link(d['start_year'], 'offseason/draft/draftees.md', 1)+') owns the selections and [the draft ownership record]('+page_link(d['start_year'], 'draft/draft_order.md', 1)+') the picks. Overall numbers include the 32 compensatory picks announced March 24, 2014; Jacksonville received none.\n\n## Decision calendar\n\n')
     else:
         out.append(table(['Draft','Round','Original club','Slot in round','Overall'],[[x['year'],x['round'],x['original_club'],x['slot_in_round'],draft_slot(x['overall'])] for x in picks]))
-        out.append('These are selection rights. Add each rookie’s full contract schedule after the actual selection and signing. No future contract dollars are booked against an unselected player. [The draft ownership record](../2014/draft/draft_order.md) controls the picks.\n\n## Decision calendar\n\n')
+        out.append('These are selection rights. Add each rookie’s full contract schedule after the actual selection and signing. No future contract dollars are booked against an unselected player. [The draft ownership record]('+page_link(d['start_year'], 'draft/draft_order.md', 1)+') controls the picks.\n\n## Decision calendar\n\n')
     out.append(table(['Date / review','Player or group','Financial treatment'],[
         ['Closed August 30, 2014','Cameron Bradfield (RFA); Toney Clemons, Austin Pasztor and Mike Brown (ERFA)','The four qualifying offers were withdrawn at the reduction to 53 and the players\' rights renounced; the $3,066,000 tender charge leaves. No offer sheet had been received by the May 2 deadline'],
         ['Closed August 30 and 31, 2014','Reduction to 53, waivers and the practice squad','Seventeen players waived and two vested veterans (Cain, C.J. Wilson) released; their surviving bonus allocations are in the dead-money ledger (2014 and 2015). Brate and Jackson on reserve/injured, contracts continuing. Eight practice-squad contracts at the $6,300 weekly minimum, carried as a $107,100 working estimate each for 17 weeks and charged only for weeks on the squad; two places open'],
@@ -400,8 +405,8 @@ def render_organization(data, years, root):
             '## Payroll and open amounts\n\n' + table(['Measure']+years,[['Scheduled assistant salaries']+[dollars(v) if v else '' for v in totals_by_year.values()]]) +
             'The head-coach salary, total organization payroll, ownership budget, Caldwell compensation, other front-office compensation and actual cash paid remain unspecified. The assistant subtotal is not an available hiring budget. Coaching pay is an organization expense and never enters the player salary cap.\n\n'
             '## Contract terms and history\n\n'
-            '[Stone’s accepted agreement](../2013/offseason/head_coach_contract.md) retains the four-year full guarantee; this view does not supply missing salary, offsets or buyout clauses. '
-            '[The staff register](../2014/coaching_staff.md) owns assistant terms, offsets, termination treatment and authority. Lowry’s $625,000 scheduled 2014 salary ceased on his January 12 departure; it is not counted. Westhoff replaced him February 11 at $750,000 in each of 2014 and 2015; only 2014 is guaranteed. '
+            '[Stone’s accepted agreement]('+page_link(2013, 'offseason/head_coach_contract.md', 1)+') retains the four-year full guarantee; this view does not supply missing salary, offsets or buyout clauses. '
+            '[The staff register]('+page_link(data['start_year'], 'coaching_staff.md', 1)+') owns assistant terms, offsets, termination treatment and authority. Lowry’s $625,000 scheduled 2014 salary ceased on his January 12 departure; it is not counted. Westhoff replaced him February 11 at $750,000 in each of 2014 and 2015; only 2014 is guaranteed. '
             'The other executed assistant salaries retain their recorded guarantee and offset terms. Scheduled pay is distinct from cash already disbursed and remaining unpaid liability.\n\n'
             '## Renewal and handoff\n\n'
             'Review the nine position/assistant contracts ending after 2014, the coordinator contracts ending after 2015 and Stone’s term ending after 2016 at the relevant exit reviews. No renewal, raise, departure or replacement is assumed. Preserve earned pay, remaining guarantees and verified offsets when an actual change occurs; record it in the existing staff changes owner and regenerate this page.\n')

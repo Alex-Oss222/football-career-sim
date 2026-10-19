@@ -1,28 +1,39 @@
 # Michael Roos
 
-![Michael Roos career card](assets/michael_roos.svg)
+**Tennessee Titans · Offensive tackle · No. 71 · Age 32 · Last game October 5, 2014**
 
-## Career stats
+6' 7", 313 lb · Born October 5, 1982 · Eastern Washington · Drafted in 2005, second round, by Tennessee
+
+As of October 5, 2014, after Week 5.
+
+![Michael Roos](https://commons.wikimedia.org/wiki/Special:FilePath/Michael-Roos-TitansvsPackers-Nov-2-08.jpg?width=500)
+
+*Photo: Ray Montgomery . Cropped by User:Blueag9 ., [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Michael-Roos-TitansvsPackers-Nov-2-08.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 30 | 71 | 16 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Tennessee Titans | 31 | 71 | 5 | 5 | 323 | 5 | 23 | 0 | 0 | 0 | 0 | 64.6 |
-| **Career** |  |  |  | 21 | N/A | N/A | 9 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 31 | 71 | 5 | 5 | 323 | 5 | 23 |
+| 2013 | Tennessee | 30 | 71 | 16 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 30 | 71 | 2 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 2 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 30 | 71 | 2 | N/A | N/A | 1 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2005 | Drafted by Tennessee in the second round |
+
+<!-- player-page -->
