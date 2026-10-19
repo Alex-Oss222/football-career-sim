@@ -139,6 +139,7 @@ Pages written before Week 6. The clean-page check exempts such a page while its 
 Carried from 3a to step 6 (season end):
 
 - The season-close tools (the final player assessments in `scripts/build_annual_player_sheets.py` and the opening cards staged by `scripts/season_handoff.py`) still read the earlier card layout; at the year change they move to the records, where the opening assessments now live. Until then a season's player folder holds built pages, its opening assessments are checked on the records, and the folder stops being written once the season review closes the season.
+- The successor season's opening guide (`runtime/season_layout.opening_guides`) still links its roster to `roster.md` and its staff to `coaching_staff.md`. From 2015 the roster page is built from the season's roster record and the Staff page from the coach records, so the guide links the built pages once the season opens; a staged successor without its own README would otherwise carry two dead links.
 - The 2014 player-state table (`library/data/2014_player_state_public.json`) was built and frozen before the birth-date change and applied Cousins's 2014 aging once, at 26. It does not read the birth-date registry, so the override does not reach it and no 2014 game changes; the 2015 aging, built at the year change, must read the birth dates through `runtime/player_bios.py`.
 
 ## Change log
