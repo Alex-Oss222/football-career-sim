@@ -412,7 +412,7 @@ def coach_page(ctx):
         newest, career = career_rows[0], career_rows[-1]
         postseason = career[-1].split(" in the playoffs")[0]
         out += ["## Career at a glance", "",
-                table(["Current season", "Career regular season", "Career playoffs", "Division standing"],
+                *table(["Current season", "Career regular season", "Career playoffs", "Division standing"],
                       [[newest[3], career[3], postseason, newest[5]]]), "",
                 " · ".join([
                     link(ctx, page, PROFILE, "Coaching philosophy"),
