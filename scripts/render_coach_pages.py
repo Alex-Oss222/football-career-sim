@@ -406,6 +406,18 @@ def coach_page(ctx):
     out += [as_of(ctx), ""]
     if (ctx.root / PHOTO).is_file():
         out += ["![%s](%s)" % (record["name"], os.path.relpath(ctx.root / PHOTO, (ctx.root / page).parent)), ""]
+    # Career overview, built from the same season records as the detailed record.
+    career_rows = season_rows(ctx, record)
+    if career_rows:
+        newest, career = career_rows[0], career_rows[-1]
+        postseason = career[-1].split(" in the playoffs")[0]
+        out += ["## Career at a glance", "",
+                table(["Current season", "Career regular season", "Career playoffs", "Division standing"],
+                      [[newest[3], career[3], postseason, newest[5]]]), "",
+                " · ".join([
+                    link(ctx, page, PROFILE, "Coaching philosophy"),
+                    link(ctx, page, "career/Stone/Performance_Reviews.md", "Ownership review"),
+                    link(ctx, page, ctx.paths.career / "README.md", "Current season")]), ""]
     # Job.
     rows = [("Job", "%s, %s" % (title, ctx.club)), ("Since", long_date(current["start"]))]
     for entry in current.get("history") or ():
