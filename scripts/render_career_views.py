@@ -46,6 +46,7 @@ from runtime.season_layout import NUMBERED_FOLDERS  # noqa: E402
 from runtime.seasons import SeasonPaths  # noqa: E402
 from scripts.render_coach_pages import (COACH_PAGE, CONTRACT_PAGE, club_record, football_anchor,  # noqa: E402
                                         heading, last_game)
+from scripts import render_season_hub  # noqa: E402
 from scripts.validate_repository import anchors, git_blob, without_code  # noqa: E402
 
 STATE = Path("state/05_Current_Season_State.md")
@@ -54,7 +55,7 @@ DOC = Path("docs/career_layer.md")
 MANIFEST_ROWS = (("Current job record", current_job.JOB.as_posix(), "Job, authority and delegation"),
                  ("Decision queue", decision_queue.QUEUE.as_posix(), "Open and resolved decisions"))
 BANNED = re.compile(r"\b(branch|simulation|receipt|kernel|engine|ledger|snapshot|checkpoint)s?\b", re.I)
-VOICED = frozenset({"desk"})   # reader prose; the Document 5 blocks are a state file
+VOICED = frozenset({"desk", "calendar", "medical", "statbook"})   # reader prose; the Document 5 blocks are a state file
 LINK = re.compile(r"\]\(@([^)#]*)(?:#([^)]*))?\)")   # a view's repository-relative link before localizing
 PHASE_LABEL = {"offense": "Offense", "defense": "Defense", "special_teams": "Special teams"}
 DECISION_LABEL = {"fourth_down": "fourth downs", "two_point": "two-point tries", "kickoff": "onside kicks",
@@ -632,7 +633,7 @@ def render_desk(ctx):
               link(ctx, "Record", rel(ctx, ctx.paths.annual_record))]
     out += ["## Records", "", " · ".join(links), ""]
     out += ["## Season folders", ""] + _folders(ctx) + [""]
-    return "\n".join(out).rstrip() + "\n"
+    return render_season_hub.insert_dashboard(ctx, "\n".join(out).rstrip() + "\n")
 
 
 def rel(ctx, path):
@@ -892,14 +893,20 @@ def managed(root):
     """Marker name -> the file holding that block (repository-relative)."""
     root = Path(root).resolve()
     season = int(repository_map(root)["active_season"])
+    paths = SeasonPaths(season, root)
     return {"current-job": STATE, "decision-queue": STATE,
-            "desk": SeasonPaths(season, root).desk.relative_to(root),
+            "desk": paths.desk.relative_to(root),
+            "calendar": paths.calendar.relative_to(root),
+            "medical": paths.record("medical/current_injury_report.md").relative_to(root),
+            "statbook": (paths.career / "Regular_Season/Statistics/README.md").relative_to(root),
             "decision-classes": DOC}
 
 
 BUILDERS = {"current-job": current_job_block, "decision-queue": decision_queue_block,
-            "desk": render_desk, "decision-classes": classes_block}
-WHOLE = frozenset({"desk"})     # built as the whole file, with no markers
+            "desk": render_desk, "calendar": render_season_hub.calendar_page,
+            "medical": render_season_hub.medical_page, "statbook": render_season_hub.statistics_page,
+            "decision-classes": classes_block}
+WHOLE = frozenset({"desk", "calendar", "medical", "statbook"})     # built as the whole file, with no markers
 
 
 def _render(root):
