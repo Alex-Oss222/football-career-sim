@@ -2,7 +2,7 @@
 
 As of October 5, 2014, after the Week 5 game against Pittsburgh (Pittsburgh 27, Jacksonville 10).
 
-Head coach Alex Stone, employed by Shad Khan and David Caldwell.
+Head coach Alex Stone. Employed by the Jacksonville Jaguars; employment decided by Shad Khan, owner, and David Caldwell, general manager.
 
 ## Results, 2014
 
@@ -60,33 +60,33 @@ Next: Week 6 at Tennessee, October 12, 2014.
 
 | Decision | Decided by | Head coach |
 |---|---|---|
-| Hire, retain, suspend, or fire the head coach | Shad Khan and David Caldwell | Responds |
-| Hire, retain, assign, suspend, or fire assistant coaches | Alex Stone | Decides |
-| Final player-acquisition and target-selection decisions | David Caldwell | Recommends |
-| Franchise-level quarterback decisions specifically: using the first-round pick on a QB, trading premium draft capital for one, a major multiyear financial commitment to one as the intended starter, or a major disposition of the starting QB | David Caldwell | Consulted: written football projection and a meeting to resolve disagreement before Caldwell acts; no concurrence or veto |
-| Draft selections or recruiting offers | David Caldwell | Recommends |
-| Player contract negotiation and execution | David Caldwell | Not set |
-| Salary-cap management or team and program budget | David Caldwell | Decides part: how the promised assistant-coach budget is spent within its ceiling |
-| Final roster cuts and roster-limit compliance | David Caldwell | Recommends: the coaching evaluation Caldwell weighs |
-| Game-day active status, elevations, and inactives | Alex Stone | Decides |
+| Hiring and firing the head coach | Shad Khan and David Caldwell | Responds |
+| Hiring, assigning and firing assistant coaches | Alex Stone | Decides |
+| Which players to acquire | David Caldwell | Recommends |
+| Franchise quarterback moves: a first-round quarterback, premium picks traded for one, a major long-term contract for an intended starter, or moving on from the starter | David Caldwell | Consulted: written football projection and a meeting to resolve disagreement before Caldwell acts; no concurrence or veto |
+| Draft selections | David Caldwell | Recommends |
+| Player contracts | David Caldwell | Not recorded |
+| The salary cap and the football budget | David Caldwell | Decides part: how the promised assistant-coach budget is spent within its ceiling |
+| Final roster cuts and roster limits | David Caldwell | Recommends: the coaching evaluation Caldwell weighs |
+| Game-day actives and inactives | Alex Stone | Decides |
 | Depth chart and package roles | Alex Stone | Decides |
 | Starting lineups | Alex Stone | Decides |
-| Practice schedule, workload, and repetition allocation | Alex Stone | Decides |
-| Offensive game-day operation | Alex Stone | Decides |
-| Defensive game-day operation | Alex Stone | Decides |
-| Special-teams decisions and calls | Alex Stone | Decides |
+| Practice schedule, workload and reps | Alex Stone | Decides |
+| The offense on game day | Alex Stone | Decides |
+| The defense on game day | Alex Stone | Decides |
+| Special teams decisions and calls | Alex Stone | Decides |
 | Medical diagnosis | Team medical staff | No part |
-| Medical clearance and return-to-participation status | Team medical staff | No part |
-| Injury reporting and official availability designation | Team medical staff and Team communications staff | Informed |
+| Medical clearance and return to practice and play | Team medical staff | No part |
+| The injury report and game-status designations | Team medical staff and Team communications staff | Supplies information |
 | Player discipline | Alex Stone | Decides part: ordinary football discipline; serious or legal matters escalate |
-| Media policy, access, and official communications | Team communications staff and Alex Stone | Decides part: direct football-related media |
-| Professional trades, waivers, claims, releases, reserve mechanisms, and practice-squad transactions | David Caldwell | Recommends |
-| Facilities, staffing levels, equipment, technology, travel resources, and other material allocation | David Caldwell and Shad Khan | Decides part: how the promised assistant-coach budget is used |
+| Media policy, access and club statements | Team communications staff and Alex Stone | Decides part: direct football-related media |
+| Trades, waivers, claims, releases, the reserve lists and the practice squad | David Caldwell | Recommends |
+| Facilities, staffing, equipment, technology and travel | David Caldwell and Shad Khan | Decides part: how the promised assistant-coach budget is used |
 
 ## What the owner and general manager have asked
 
-- **David Caldwell**: First 2014 measures: the scoring margin; the quarterback's ball security and protection ([season review](../../../2013/season_review/owner_and_gm_review.md#follow-ups)).
-- **Shad Khan**: Prepare the London week for Dallas (November 9, 2014, Wembley) on the 2013 Wembley plan (open) ([season review](../../../2013/season_review/owner_and_gm_review.md#follow-ups)).
+- **David Caldwell, general manager**: First 2014 measures: the scoring margin; the quarterback's ball security and protection ([season review](../../../2013/season_review/owner_and_gm_review.md#follow-ups)).
+- **Shad Khan, owner**: Prepare the London week for Dallas (November 9, 2014, Wembley) on the 2013 Wembley plan ([season review](../../../2013/season_review/owner_and_gm_review.md#follow-ups)).
 
 ## More
 

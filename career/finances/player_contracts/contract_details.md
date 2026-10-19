@@ -27,7 +27,7 @@ Annual cells contain the working original or reconstructed contract schedule. Bl
 
 ### Contract notes
 
-Original rookie salaries continue after the Jacksonville trade. Washington retains the original $472,688 bonus; Jacksonville carries salary only. No later Washington contract is imported.
+Original rookie salaries continue after the Jacksonville trade. Washington retains the original $472,688 bonus; Jacksonville carries salary only.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
@@ -135,7 +135,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 | 2015 | $902,192 | $589,382 | $0 | $1,491,574 | $902,192 | $500,000 |
 | 2016 | $1,150,788 | $589,382 | $0 | $1,740,170 | $1,150,788 | $0 |
 
-Any future proven-performance escalator requires his actual qualifying participation for Jacksonville; no later real-world escalator or extension is imported.
+Any future proven-performance escalator requires his actual qualifying participation for Jacksonville.
 
 ### Contract notes
 
@@ -165,7 +165,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 | 2015 | $658,000 | $167,794 | $0 | $825,794 | $658,000 | $0 |
 | 2016 | $822,500 | $167,794 | $0 | $990,294 | $822,500 | $0 |
 
-Any future proven-performance escalator requires his actual qualifying participation for Jacksonville; no later real-world escalator or extension is imported.
+Any future proven-performance escalator requires his actual qualifying participation for Jacksonville.
 
 ### Contract notes
 
@@ -195,7 +195,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 | 2015 | $585,000 | $124,257 | $0 | $709,257 | $585,000 | $0 |
 | 2016 | $675,000 | $124,257 | $0 | $799,257 | $675,000 | $0 |
 
-Any future proven-performance escalator requires his actual qualifying participation for Jacksonville; no later real-world escalator or extension is imported.
+Any future proven-performance escalator requires his actual qualifying participation for Jacksonville.
 
 ### Contract notes
 
@@ -217,11 +217,11 @@ Former player; departure August 30, 2014. [Departure record](../../2014/Training
 
 No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money table.
 
-Any future proven-performance escalator requires his actual qualifying participation for Jacksonville; no later real-world escalator or extension is imported.
+Any future proven-performance escalator requires his actual qualifying participation for Jacksonville.
 
 ### Contract notes
 
-Jacksonville record (draftees); base derived Waived August 30, 2014 at the reduction to 53 ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); the Rookie scale, pick #135 ended. Dead money: the 2014 bonus allocation of $53,403 stays in 2014 and the later allocations of $106,806 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the library does not record the rule).
+Jacksonville record (draftees); base derived. Waived August 30, 2014 at the reduction to 53 ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); the rookie-scale contract (pick #135) ended. Dead money: the 2014 bonus allocation of $53,403 stays in 2014 and the later allocations of $106,806 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the league rule is not on file).
 
 Sources: [draftees](../../2013/offseason/draft/draftees.md), [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
@@ -247,7 +247,7 @@ Sources: [draftees](../../2013/offseason/draft/draftees.md), [final roster cuts]
 | 2015 | $585,000 | $32,205 | $0 | $617,205 | $585,000 | $0 |
 | 2016 | $675,000 | $32,205 | $0 | $707,205 | $675,000 | $0 |
 
-Any future proven-performance escalator requires his actual qualifying participation for Jacksonville; no later real-world escalator or extension is imported.
+Any future proven-performance escalator requires his actual qualifying participation for Jacksonville.
 
 ### Contract notes
 
@@ -381,7 +381,7 @@ The contract, its deferred bonus cash and the 2016 fifth-year option left with t
 
 ### Contract notes
 
-Original gross schedule: 2014 base $2,072,910 and $1.7 million deferred roster cash; 2015 base $2,914,365 and about $1.39 million deferred cash. These guaranteed-at-signing bonuses were already treated as signing bonus for cap purposes; do not add them to cap twice. Later actual suspension/tolling does not apply. The [adopted contract reconstruction](../../2014/Team_Operations/Finances/player_contracts/contracts.md) applies the original suspension clause to remove future guarantees and adopts the gross schedule without an additional bonus-recovery credit.
+Original gross schedule: 2014 base $2,072,910 and $1.7 million deferred roster cash; 2015 base $2,914,365 and about $1.39 million deferred cash. These guaranteed-at-signing bonuses were already treated as signing bonus for cap purposes and are counted once. The [adopted contract reconstruction](../../2014/Team_Operations/Finances/player_contracts/contracts.md) applies the original suspension clause to remove future guarantees and adopts the gross schedule without an additional bonus-recovery credit.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
@@ -428,7 +428,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 
 ### Contract notes
 
-Original 2011 contract carried through 2015. The 2015 salary reduction in real history is excluded; the original $6.65 million base remains. Workout bonus continues at $150,000.
+Original 2011 contract carried through 2015; the original $6.65 million base remains. Workout bonus continues at $150,000.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
@@ -581,7 +581,7 @@ No scheduled player-contract charge in this horizon. Any surviving liability app
 
 ### Contract notes
 
-December 2012 futures deal totals $900,000 across $405,000 in 2013 and $495,000 in 2014, with no bonus. Later real contracts do not extend it. Waived August 30, 2014 at the reduction to 53 ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); the Reserve/future, December 30, 2012 ended.
+December 2012 futures deal totals $900,000 across $405,000 in 2013 and $495,000 in 2014, with no bonus. Waived August 30, 2014 at the reduction to 53 ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); the reserve/future contract of December 30, 2012 ended.
 
 Sources: [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
@@ -628,7 +628,7 @@ No scheduled player-contract charge in this horizon. Any surviving liability app
 
 ### Contract notes
 
-Recovered 2014 salary and bonus allocations plus the $150,000 workout bonus. The original deal ends after 2014; no real 2015 replacement deal is imported.
+Recovered 2014 salary and bonus allocations plus the $150,000 workout bonus. The original deal ends after 2014.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
@@ -674,7 +674,7 @@ No scheduled player-contract charge in this horizon. Any surviving liability app
 
 ### Contract notes
 
-Four-year rookie deal reconstructed from $2,151,392 total: $51,392 bonus plus $390,000/$480,000/$570,000/$660,000 bases. A conditional 2015 escalator is not pre-earned. Waived August 30, 2014 at the reduction to 53 ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); the Rookie, 2012 seventh round ended. Dead money: the 2014 bonus allocation of $12,848 stays in 2014 and the later allocations of $12,848 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the library does not record the rule).
+Four-year rookie deal reconstructed from $2,151,392 total: $51,392 bonus plus $390,000/$480,000/$570,000/$660,000 bases. A conditional 2015 escalator is not pre-earned. Waived August 30, 2014 at the reduction to 53 ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); the 2012 seventh-round rookie contract ended. Dead money: the 2014 bonus allocation of $12,848 stays in 2014 and the later allocations of $12,848 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the league rule is not on file).
 
 Sources: [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md).
 
@@ -684,7 +684,7 @@ Former player; departure April 7, 2014. [Departure record](../../2014/Team_Opera
 
 | Field | Detail |
 |---|---|
-| Position / status | LB / Traded to Arizona, April 7, 2014; his real retirement dated April 22, 2014 now applies at Arizona |
+| Position / status | LB / Traded to Arizona, April 7, 2014; his retirement dated April 22, 2014 now applies at Arizona |
 | Original contract | Veteran, 2012 |
 | Signed | 2012 |
 | Term | 3 / 2014 |
@@ -694,7 +694,7 @@ No scheduled player-contract charge in this horizon. Any surviving liability app
 
 ### Contract notes
 
-Planning base $1.975 million matches the earlier memo and recovered contract notes. Add $25,000 workout and final $416,668 bonus allocation. Any incentive charge is separate: the prior $1 million other-bonus entry cannot be copied without the Jacksonville earning test. No later retirement or real release is executed here.
+Planning base $1.975 million matches the earlier memo and recovered contract notes. Add $25,000 workout and final $416,668 bonus allocation. Any incentive charge is separate: the prior $1 million other-bonus entry cannot be copied without the Jacksonville earning test.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
@@ -722,7 +722,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 
 ### Contract notes
 
-Original six-year contract retained. The $10 million signing bonus is allocated over five years, 2011 to 2015: no 2016 proration. Original salary remains $7.45 million with $50,000 workout bonus; the later real extension is excluded.
+Original six-year contract retained. The $10 million signing bonus is allocated over five years, 2011 to 2015: no 2016 proration. Original salary remains $7.45 million with $50,000 workout bonus.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
@@ -802,7 +802,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 
 ### Contract notes
 
-Original salaries recovered from October 2013 reporting; $3 million bonus and $25,000 annual workout amount carry from the 2013 baseline. Schedule reconciles to $13.6 million including 2012 and 2013. No real release is imported.
+Original salaries recovered from October 2013 reporting; $3 million bonus and $25,000 annual workout amount carry from the 2013 baseline. Schedule reconciles to $13.6 million including 2012 and 2013.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
@@ -957,7 +957,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 
 ### Contract notes
 
-Practice-squad contract signed August 31, 2014 after clearing waivers ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier reserve/future ended with the August 30 waiver; Bray's $51,675 2013 bonus acceleration stays in the dead-money table.
+Practice-squad contract signed August 31, 2014 after clearing waivers ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). The weekly minimum is the confirmed 2014 league figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier reserve/future ended with the August 30 waiver; Bray's $51,675 2013 bonus acceleration stays in the dead-money table.
 
 Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount.
 
@@ -985,7 +985,7 @@ Sources: [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decis
 
 ### Contract notes
 
-Practice-squad contract signed August 31, 2014 after clearing waivers ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier reserve/future ended with the August 30 waiver; no bonus allocation survived it.
+Practice-squad contract signed August 31, 2014 after clearing waivers ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). The weekly minimum is the confirmed 2014 league figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier reserve/future ended with the August 30 waiver; no bonus allocation survived it.
 
 Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount.
 
@@ -1042,7 +1042,7 @@ Sources: [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decis
 
 ### Contract notes
 
-Practice-squad contract signed August 31, 2014 after clearing waivers ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier reserve/future ended with the August 30 waiver; no bonus allocation survived it.
+Practice-squad contract signed August 31, 2014 after clearing waivers ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). The weekly minimum is the confirmed 2014 league figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier reserve/future ended with the August 30 waiver; no bonus allocation survived it.
 
 Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount.
 
@@ -1217,7 +1217,7 @@ No scheduled player-contract charge in this horizon. Any surviving liability app
 
 ### Contract notes
 
-Jacksonville record ([negotiation record](../../2014/Team_Operations/Free_Agency/jones_drew_and_wilson_negotiation_2014-03-28.md)). $730,000 minimum for four credited seasons plus a $65,000 signing bonus. Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified. Released August 30, 2014 at the reduction to 53 ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); the Veteran minimum (Jacksonville re-signing) ended. Dead money: the 2014 bonus allocation of $65,000 stays in 2014 and the later allocations of $0 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the library does not record the rule).
+Jacksonville record ([negotiation record](../../2014/Team_Operations/Free_Agency/jones_drew_and_wilson_negotiation_2014-03-28.md)). $730,000 minimum for four credited seasons plus a $65,000 signing bonus. Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified. Released August 30, 2014 at the reduction to 53 ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); the veteran-minimum contract (Jacksonville re-signing) ended. Dead money: the 2014 bonus allocation of $65,000 stays in 2014 and the later allocations of $0 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the league rule is not on file).
 
 Sources: [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md).
 
@@ -1243,7 +1243,7 @@ Sources: [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decis
 
 ### Contract notes
 
-Jacksonville record ([alan ball signing](../../2014/Team_Operations/Free_Agency/alan_ball_signing_2014-09-08.md)). The $855,000 rate is the 2014 minimum for seven to nine credited seasons (library section 2a, Confirmed); his credited count of seven is inferred from his 2007 entry and unverified. Earned and charged for the sixteen remaining regular-season pay weeks, 16/17 of $855,000 = $804,706, a labelled reconstruction (the standard player contract pays the base in equal weekly installments; the library records no proration rule). No signing bonus, no guarantee. Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified.
+Jacksonville record ([alan ball signing](../../2014/Team_Operations/Free_Agency/alan_ball_signing_2014-09-08.md)). The $855,000 rate is the 2014 minimum for seven to nine credited seasons (confirmed league figure); his credited count of seven is inferred from his 2007 entry and unverified. Earned and charged for the sixteen remaining regular-season pay weeks, 16/17 of $855,000 = $804,706, a labelled reconstruction (the standard player contract pays the base in equal weekly installments; no league proration rule is on file). No signing bonus, no guarantee. Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified.
 
 Sources: [alan ball signing 2014-09-08](../../2014/Team_Operations/Free_Agency/alan_ball_signing_2014-09-08.md), [transactions 2014-09-08](../../2014/Team_Operations/Team/Roster/transactions_2014-09-08.md), [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md).
 
@@ -1285,7 +1285,7 @@ No scheduled player-contract charge in this horizon. Any surviving liability app
 
 ### Contract notes
 
-Jacksonville record ([negotiation record](../../2014/Team_Operations/Free_Agency/cain_negotiation_2014-03-19.md)). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from his real September 2014 Chicago figure (single source). Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified Released August 30, 2014 at the reduction to 53 ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); the Veteran minimum (Jacksonville re-signing) ended.
+Jacksonville record ([negotiation record](../../2014/Team_Operations/Free_Agency/cain_negotiation_2014-03-19.md)). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from his September 2014 Chicago figure (single source). Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified. Released August 30, 2014 at the reduction to 53 ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); the veteran-minimum contract (Jacksonville re-signing) ended.
 
 Sources: [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [cain negotiation 2014-03-19](../../2014/Team_Operations/Free_Agency/cain_negotiation_2014-03-19.md), [signings](../../2014/Team_Operations/Free_Agency/signings.md).
 
@@ -1463,7 +1463,7 @@ Sources: [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decis
 
 ### Contract notes
 
-The 2012 Jets active-roster agreement, carried through Houston to Jacksonville, is modeled as a three-year minimum deal ending in 2014. Its final $570,000 salary uses two credited seasons in this Jacksonville. The original waived Houston UDFA bonus is not transferred. The later real Houston contract is a different deal and is excluded.
+The 2012 Jets active-roster agreement, carried through Houston to Jacksonville, is treated as a three-year minimum deal ending in 2014. Its final $570,000 salary uses two credited seasons at Jacksonville. The original waived Houston UDFA bonus is not transferred.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [2014 jaguars original contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../../library/2014_jaguars_contract_completion.md).
 
@@ -1632,11 +1632,11 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 | 2016 | $600,000 | $1,979,125 | $0 | $2,579,125 | $600,000 | $600,000 |
 | 2017 | $690,000 | $1,979,125 | $0 | $2,669,125 | $690,000 | $690,000 |
 
-Any future proven-performance escalator requires his actual qualifying participation for Jacksonville; no later real-world escalator or extension is imported.
+Any future proven-performance escalator requires his actual qualifying participation for Jacksonville.
 
 ### Contract notes
 
-Jacksonville record: selected May 8, 2014 at No. 13; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 13 (Aaron Donald, St. Louis) in the nflverse/OTC historical contracts file, $10,136,500 total and $10,136,500 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. The first-round fifth-year option for 2018 is unexercised and not booked. Not the player's real contract.
+Jacksonville record: selected May 8, 2014 at No. 13; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 13 (Aaron Donald, St. Louis) in the nflverse/OTC historical contracts file, $10,136,500 total and $10,136,500 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. The first-round fifth-year option for 2018 is unexercised and not booked.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/Draft/draftees.md).
 
@@ -1663,11 +1663,11 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 | 2016 | $600,000 | $1,394,775 | $0 | $1,994,775 | $600,000 | $0 |
 | 2017 | $690,000 | $1,394,777 | $0 | $2,084,777 | $690,000 | $0 |
 
-Any future proven-performance escalator requires his actual qualifying participation for Jacksonville; no later real-world escalator or extension is imported.
+Any future proven-performance escalator requires his actual qualifying participation for Jacksonville.
 
 ### Contract notes
 
-Jacksonville record: selected May 8, 2014 at No. 26; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 26 (Marcus Smith, Philadelphia) in the nflverse/OTC historical contracts file, $7,799,102 total and $6,315,587 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years, odd dollars in 2017. The first-round fifth-year option for 2018 is unexercised and not booked. Not the player's real contract.
+Jacksonville record: selected May 8, 2014 at No. 26; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 26 (Marcus Smith, Philadelphia) in the nflverse/OTC historical contracts file, $7,799,102 total and $6,315,587 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years, odd dollars in 2017. The first-round fifth-year option for 2018 is unexercised and not booked.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/Draft/draftees.md).
 
@@ -1694,11 +1694,11 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 | 2016 | $600,000 | $758,733 | $0 | $1,358,733 | $600,000 | $0 |
 | 2017 | $690,000 | $758,733 | $0 | $1,448,733 | $690,000 | $0 |
 
-Any future proven-performance escalator requires his actual qualifying participation for Jacksonville; no later real-world escalator or extension is imported.
+Any future proven-performance escalator requires his actual qualifying participation for Jacksonville.
 
 ### Contract notes
 
-Jacksonville record: selected May 9, 2014 at No. 38; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 38 (Austin Seferian-Jenkins, Tampa Bay) in the nflverse/OTC historical contracts file, $5,254,932 total and $3,220,629 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+Jacksonville record: selected May 9, 2014 at No. 38; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 38 (Austin Seferian-Jenkins, Tampa Bay) in the nflverse/OTC historical contracts file, $5,254,932 total and $3,220,629 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/Draft/draftees.md).
 
@@ -1725,11 +1725,11 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 | 2016 | $600,000 | $135,880 | $0 | $735,880 | $600,000 | $0 |
 | 2017 | $735,000 | $135,880 | $0 | $870,880 | $735,000 | $0 |
 
-Any future proven-performance escalator requires his actual qualifying participation for Jacksonville; no later real-world escalator or extension is imported.
+Any future proven-performance escalator requires his actual qualifying participation for Jacksonville.
 
 ### Contract notes
 
-Jacksonville record: selected May 9, 2014 at No. 90; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 90 (Donte Moncrief, Indianapolis) in the nflverse/OTC historical contracts file, $2,808,520 total and $543,520 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000, the 2017 base carrying the slot contract's $45,000 above the minimum); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+Jacksonville record: selected May 9, 2014 at No. 90; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 90 (Donte Moncrief, Indianapolis) in the nflverse/OTC historical contracts file, $2,808,520 total and $543,520 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000, the 2017 base carrying the slot contract's $45,000 above the minimum); the signing bonus is the remainder, prorated over four years.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/Draft/draftees.md).
 
@@ -1756,11 +1756,11 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 | 2016 | $600,000 | $100,136 | $0 | $700,136 | $600,000 | $0 |
 | 2017 | $690,000 | $100,136 | $0 | $790,136 | $690,000 | $0 |
 
-Any future proven-performance escalator requires his actual qualifying participation for Jacksonville; no later real-world escalator or extension is imported.
+Any future proven-performance escalator requires his actual qualifying participation for Jacksonville.
 
 ### Contract notes
 
-Jacksonville record: selected May 10, 2014 at No. 129; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 129 (Dontae Johnson, San Francisco) in the nflverse/OTC historical contracts file, $2,620,544 total and $400,544 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+Jacksonville record: selected May 10, 2014 at No. 129; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 129 (Dontae Johnson, San Francisco) in the nflverse/OTC historical contracts file, $2,620,544 total and $400,544 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/Draft/draftees.md).
 
@@ -1787,11 +1787,11 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 | 2016 | $600,000 | $48,000 | $0 | $648,000 | $600,000 | $0 |
 | 2017 | $690,000 | $48,000 | $0 | $738,000 | $690,000 | $0 |
 
-Any future proven-performance escalator requires his actual qualifying participation for Jacksonville; no later real-world escalator or extension is imported.
+Any future proven-performance escalator requires his actual qualifying participation for Jacksonville.
 
 ### Contract notes
 
-Jacksonville record: selected May 10, 2014 at No. 153; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 153 (Cyril Richardson, Buffalo) in the nflverse/OTC historical contracts file, $2,412,000 total and $192,000 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+Jacksonville record: selected May 10, 2014 at No. 153; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 153 (Cyril Richardson, Buffalo) in the nflverse/OTC historical contracts file, $2,412,000 total and $192,000 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/Draft/draftees.md).
 
@@ -1818,11 +1818,11 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 | 2016 | $600,000 | $42,870 | $0 | $642,870 | $600,000 | $0 |
 | 2017 | $690,000 | $42,870 | $0 | $732,870 | $690,000 | $0 |
 
-Any future proven-performance escalator requires his actual qualifying participation for Jacksonville; no later real-world escalator or extension is imported.
+Any future proven-performance escalator requires his actual qualifying participation for Jacksonville.
 
 ### Contract notes
 
-Jacksonville record: selected May 10, 2014 at No. 168; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 168 (Marquis Spruill, Atlanta) in the nflverse/OTC historical contracts file, $2,391,480 total and $171,480 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+Jacksonville record: selected May 10, 2014 at No. 168; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 168 (Marquis Spruill, Atlanta) in the nflverse/OTC historical contracts file, $2,391,480 total and $171,480 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/Draft/draftees.md).
 
@@ -1846,11 +1846,11 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 |---|---|---|---|---|---|---|
 | 2014 | $107,100 | $0 | $0 | $107,100 | $107,100 | $0 |
 
-Any future proven-performance escalator requires his actual qualifying participation for Jacksonville; no later real-world escalator or extension is imported.
+Any future proven-performance escalator requires his actual qualifying participation for Jacksonville.
 
 ### Contract notes
 
-Practice-squad contract signed August 31, 2014 after clearing waivers ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier Rookie scale, pick #205 ended with the August 30 waiver; no bonus allocation survived it.
+Practice-squad contract signed August 31, 2014 after clearing waivers ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). The weekly minimum is the confirmed 2014 league figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier rookie-scale contract (pick #205) ended with the August 30 waiver; no bonus allocation survived it.
 
 Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount.
 
@@ -1879,11 +1879,11 @@ Sources: [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decis
 | 2016 | $600,000 | $12,250 | $0 | $612,250 | $600,000 | $0 |
 | 2017 | $690,000 | $12,250 | $0 | $702,250 | $690,000 | $0 |
 
-Any future proven-performance escalator requires his actual qualifying participation for Jacksonville; no later real-world escalator or extension is imported.
+Any future proven-performance escalator requires his actual qualifying participation for Jacksonville.
 
 ### Contract notes
 
-Jacksonville record: selected May 10, 2014 at No. 241; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 241 (Christian Bryant, St. Louis) in the nflverse/OTC historical contracts file, $2,269,000 total and $49,000 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+Jacksonville record: selected May 10, 2014 at No. 241; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 241 (Christian Bryant, St. Louis) in the nflverse/OTC historical contracts file, $2,269,000 total and $49,000 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/Draft/draftees.md).
 
@@ -1911,7 +1911,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 
 ### Contract notes
 
-Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
+Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/Draft/udfa_signings.md).
 
@@ -1939,7 +1939,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 
 ### Contract notes
 
-Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/Draft/udfa_signings.md).
 
@@ -1967,7 +1967,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 
 ### Contract notes
 
-Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/Draft/udfa_signings.md).
 
@@ -1995,7 +1995,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 
 ### Contract notes
 
-Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
+Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/Draft/udfa_signings.md).
 
@@ -2023,7 +2023,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 
 ### Contract notes
 
-Promoted from the practice squad September 8, 2014 ([transactions](../../2014/Team_Operations/Team/Roster/transactions_2014-09-08.md)); the practice-squad contract ended after one paid week ($6,300). New active-roster contract: the structure of his May 10 undrafted contract re-signed on promotion, an adopted reconstructed term: the $420,000 2014 minimum earned and charged for sixteen of seventeen pay weeks ($395,294, a labelled reconstruction; the library records no proration rule) plus the practice-squad week, $510,000 in 2015 and $600,000 in 2016; no signing bonus, no guarantee.
+Promoted from the practice squad September 8, 2014 ([transactions](../../2014/Team_Operations/Team/Roster/transactions_2014-09-08.md)); the practice-squad contract ended after one paid week ($6,300). New active-roster contract: the structure of his May 10 undrafted contract re-signed on promotion, an adopted reconstructed term: the $420,000 2014 minimum earned and charged for sixteen of seventeen pay weeks ($395,294, a labelled reconstruction; no league proration rule is on file) plus the practice-squad week, $510,000 in 2015 and $600,000 in 2016; no signing bonus, no guarantee.
 
 Sources: [transactions 2014-09-08](../../2014/Team_Operations/Team/Roster/transactions_2014-09-08.md), [udfa signings](../../2014/Draft/udfa_signings.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [2014 league calendar and financial rules](../../../library/2014_league_calendar_and_financial_rules.md).
 
@@ -2049,7 +2049,7 @@ Sources: [transactions 2014-09-08](../../2014/Team_Operations/Team/Roster/transa
 
 ### Contract notes
 
-Practice-squad contract signed August 31, 2014 after clearing waivers ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier udfa minimum ended with the August 30 waiver; no bonus allocation survived it.
+Practice-squad contract signed August 31, 2014 after clearing waivers ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). The weekly minimum is the confirmed 2014 league figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier undrafted minimum contract ended with the August 30 waiver; no bonus allocation survived it.
 
 Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount.
 
@@ -2079,7 +2079,7 @@ Sources: [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decis
 
 ### Contract notes
 
-Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent.
 
 Sources: [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [udfa signings](../../2014/Draft/udfa_signings.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md).
 
@@ -2107,7 +2107,7 @@ Sources: [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decis
 
 ### Contract notes
 
-Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/Draft/udfa_signings.md).
 
@@ -2133,7 +2133,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 
 ### Contract notes
 
-Practice-squad contract signed August 31, 2014 after clearing waivers ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier udfa minimum ended with the August 30 waiver; no bonus allocation survived it.
+Practice-squad contract signed August 31, 2014 after clearing waivers ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). The weekly minimum is the confirmed 2014 league figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier undrafted minimum contract ended with the August 30 waiver; no bonus allocation survived it.
 
 Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount.
 
@@ -2155,7 +2155,7 @@ No scheduled player-contract charge in this horizon. Any surviving liability app
 
 ### Contract notes
 
-Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract Waived August 30, 2014 at the reduction to 53 ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); the UDFA minimum ended. Dead money: the 2014 bonus allocation of $5,000 stays in 2014 and the later allocations of $10,000 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the library does not record the rule).
+Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Waived August 30, 2014 at the reduction to 53 ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); the undrafted minimum contract ended. Dead money: the 2014 bonus allocation of $5,000 stays in 2014 and the later allocations of $10,000 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the league rule is not on file).
 
 Sources: [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [udfa signings](../../2014/Draft/udfa_signings.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md).
 
@@ -2175,7 +2175,7 @@ No scheduled player-contract charge in this horizon. Any surviving liability app
 
 ### Contract notes
 
-Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract Waived August 30, 2014 at the reduction to 53 ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); the UDFA minimum ended.
+Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Waived August 30, 2014 at the reduction to 53 ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); the undrafted minimum contract ended.
 
 Sources: [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md), [udfa signings](../../2014/Draft/udfa_signings.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md).
 
@@ -2203,7 +2203,7 @@ Sources: [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decis
 
 ### Contract notes
 
-Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/Draft/udfa_signings.md).
 
@@ -2231,7 +2231,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 
 ### Contract notes
 
-Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/Draft/udfa_signings.md).
 
@@ -2259,7 +2259,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 
 ### Contract notes
 
-Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/Draft/udfa_signings.md).
 
@@ -2285,7 +2285,7 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 
 ### Contract notes
 
-Practice-squad contract signed August 31, 2014 after clearing waivers ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). The weekly minimum is the library's Confirmed 2014 figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier udfa minimum ended with the August 30 waiver; no bonus allocation survived it.
+Practice-squad contract signed August 31, 2014 after clearing waivers ([final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). The weekly minimum is the confirmed 2014 league figure; the season total is a working estimate for 17 weeks, charged only for weeks actually on the squad. The earlier undrafted minimum contract ended with the August 30 waiver; no bonus allocation survived it.
 
 Practice-squad pay at the 2014 minimum of $6,300 a week for the 17 regular-season weeks ($107,100) if retained all season; counted only for weeks on the squad, so the season charge is a working estimate, not a scheduled contract amount.
 
@@ -2315,7 +2315,7 @@ Sources: [final roster cuts](../../2014/Training_Camp_and_Preseason/Roster_Decis
 
 ### Contract notes
 
-Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/Draft/udfa_signings.md).
 
@@ -2343,6 +2343,6 @@ Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contra
 
 ### Contract notes
 
-Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+Jacksonville record: undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [udfa signings](../../2014/Draft/udfa_signings.md).

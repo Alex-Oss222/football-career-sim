@@ -38,7 +38,7 @@ from scripts import (close_week, league_awards, render_box_score, render_season_
                      render_standings, render_team_tracker, update_player_cards)
 from scripts.validate_repository import validate
 from local_private_service import local_service
-from support_page_history import keep_as_history
+from support_page_history import keep_as_history, pinned_copy
 from support_rosters import game_day_roster
 
 JAX = close_week.PROTAGONIST
@@ -259,7 +259,8 @@ class SeasonClosure2014Tests(unittest.TestCase):
         # own (an unreceipted phase summary, say); those are the baseline, and
         # the closure must add none and none may concern the season records.
         baseline = set(validate(ROOT))
-        errors = validate(root)
+        with pinned_copy(root):
+            errors = validate(root)
         self.assertEqual(sorted(set(errors) - baseline), [])
 
         # Isolation: nothing reached the real season tree, cache or receipts.

@@ -7,7 +7,9 @@ import re
 import sys
 import tempfile
 import unittest
+from datetime import date
 from pathlib import Path
+from unittest import mock
 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
@@ -172,6 +174,94 @@ class ClubPageTests(unittest.TestCase):
         self.assertFalse(any(re.search(r"\brow\b|\b\d+a\b", " ".join(r)) for r in authority))
 
 
+class ClubPageDatingTests(unittest.TestCase):
+    """The club pages follow the master date and the closed games; the roster record and the
+    update log are held to their form (rebuild step 3b review fixes)."""
+
+    def later_week(self):
+        """The fixture of Jacksonville's next game after the master date and a closed result for it
+        under a regenerated event id, with the master date moved to its day."""
+        from runtime.player_bios import master_date
+        from scripts.render_season_stats import load_receipts
+        today = master_date(ROOT)
+        fixture = min((g for g in PATHS.regular_games() if club_pages.JAX in (g["away"], g["home"])
+                       and g["date"] > today.isoformat()), key=lambda g: g["date"])
+        receipt = {"week": fixture["week"], "away": fixture["away"], "home": fixture["home"],
+                   "event_id": "a-regenerated-event-id", "final_score": {fixture["away"]: 20, fixture["home"]: 13},
+                   "team_stats": {fixture["away"]: {}, fixture["home"]: {}}}
+        receipts = load_receipts(PATHS.receipts) + [receipt]
+        patches = (mock.patch.object(club_pages, "master_date", return_value=date.fromisoformat(fixture["date"])),
+                   mock.patch("scripts.render_season_stats.load_receipts", return_value=receipts))
+        for patch in patches:
+            patch.start()
+            self.addCleanup(patch.stop)
+        return fixture, receipt
+
+    def test_the_pages_are_dated_by_the_master_date(self):
+        from runtime.player_bios import master_date
+        ctx = club_pages.Context(ROOT)
+        self.assertEqual(ctx.as_of, master_date(ROOT))
+        self.assertTrue(all(date.fromisoformat(ctx.fixture(r)["date"]) <= ctx.as_of for r in ctx.receipts))
+
+    def test_the_team_page_moves_when_a_later_week_closes(self):
+        before = club_pages.team_page(club_pages.Context(ROOT))[1]
+        fixture, receipt = self.later_week()
+        ctx = club_pages.Context(ROOT)
+        _, text = club_pages.team_page(ctx)
+        self.assertNotEqual(text, before)
+        rows = tables(text, "## Results, %d" % YEAR)
+        self.assertEqual(int(rows[-1][0]), fixture["week"])
+        self.assertIn("after the Week %d game" % fixture["week"], text.splitlines()[2])
+        upcoming = ctx.next_game()
+        if upcoming:
+            self.assertIn("Next: %s." % club_pages.fixture_line(upcoming), text)
+        # The roster record has not been brought up to that game, so the check fails until it is.
+        self.assertTrue(any("before Jacksonville's last closed game" in e for e in club_pages.record_errors(ctx)))
+        ctx.roster = dict(ctx.roster, as_of={"date": fixture["date"], "event": "after the game"})
+        self.assertEqual(club_pages.record_errors(ctx), [])
+
+    def test_the_committed_roster_record_is_not_behind_the_closed_games(self):
+        self.assertEqual(club_pages.record_errors(club_pages.Context(ROOT)), [])
+
+    def test_the_update_log_is_held_to_its_form(self):
+        log = json.loads(PATHS.record("team/depth_chart/update_log.json").read_text())
+        self.assertEqual(club_pages.log_errors(log, ROOT), [])
+        for breaks, expected in (
+                (lambda e: e.update(recorded="2014-13-01"), "ISO date"),
+                (lambda e: e.update(extra="x"), "keys must be"),
+                (lambda e: e.pop("sources"), "keys must be"),
+                (lambda e: e.update(sources=[{"label": "x", "page": "data/a.json"}]), "under career/"),
+                (lambda e: e.update(sources=[{"label": "x", "page": "career/no_such_page.md"}]), "under career/")):
+            broken = copy.deepcopy(log)
+            breaks(broken["entries"][-1])
+            self.assertTrue(any(expected in e for e in club_pages.log_errors(broken, ROOT)), expected)
+        broken = copy.deepcopy(log)
+        broken["entries"][0], broken["entries"][-1] = broken["entries"][-1], broken["entries"][0]
+        self.assertTrue(any("earlier than the entry before" in e for e in club_pages.log_errors(broken, ROOT)))
+        broken = copy.deepcopy(log)
+        broken["notes"] = "x"
+        self.assertTrue(club_pages.log_errors(broken, ROOT))
+
+    def test_reworded_entries_keep_their_original_words(self):
+        for e in json.loads(PATHS.record("team/depth_chart/update_log.json").read_text())["entries"]:
+            if "as_written" in e:
+                self.assertNotEqual((e["date"], e["event"], e["change"]),
+                                    tuple(e["as_written"][k] for k in ("date", "event", "change")))
+        rows = [p for p in roster_record.load(PATHS.roster)["players"] + roster_record.load(PATHS.roster)["departures"]
+                if "as_written" in p]
+        for row in rows:
+            self.assertTrue(all(row[k] != v for k, v in row["as_written"].items()))
+
+    def test_the_team_page_speaks_plain_football(self):
+        _, text = club_pages.team_page(club_pages.Context(ROOT))
+        for phrase in ("Not set", "recruiting", "Professional trades", "team and program budget", "(open)", "N/A"):
+            self.assertNotIn(phrase, text)
+        self.assertIn("Supplies information", " ".join(" ".join(r) for r in tables(text, "## Who decides what")))
+        self.assertIn("Employed by the Jacksonville Jaguars; employment decided by", text)
+        _, roster = club_pages.roster_page(club_pages.Context(ROOT))
+        self.assertNotIn("N/A", roster)
+
+
 class AppendOnlyHistoryTests(unittest.TestCase):
     def copy_with(self, original, now):
         tmp = tempfile.TemporaryDirectory()
@@ -213,6 +303,55 @@ class AppendOnlyHistoryTests(unittest.TestCase):
 
     def test_the_real_history_records_every_length(self):
         self.assertEqual(set(clean_pages.history_lengths(ROOT)), set(clean_pages.history(ROOT)))
+
+    def test_an_appended_entry_keeps_its_event_record_line(self):
+        from runtime.events import EVENT_META
+        marker = ('<!-- event-record: {"date": "2014-10-06", "id": "2014-10-06-christian-jones-cleared", '
+                  '"status": "closed", "summary": "Christian Jones was reassessed October 6 and cleared on his '
+                  'projected date; the engine generated no new restriction."} -->')
+        self.assertTrue(EVENT_META.fullmatch(marker))
+        entry = "\n%s\n\n## October 6: Christian Jones cleared\n\nJones cleared on his projected date.\n" % marker
+        root, _ = self.copy_with(self.OLD, self.OLD + entry)
+        self.assertEqual(clean_pages.clean_errors(root), [])
+        # Only a whole line is the invisible marker; one inside a line of text is markup.
+        root, _ = self.copy_with(self.OLD, self.OLD + "\nJones cleared. " + marker + "\n")
+        self.assertTrue(any("markup" in e for e in clean_pages.clean_errors(root)))
+
+    def test_titled_links_and_reference_definitions_to_system_files_fail(self):
+        rel = "career/2014/Team_Operations/Medical/medical_history.md"
+        for line in ('[the inputs](../../../../data/2014/x.json "Inputs")', "[inputs]: ../../../../data/2014/x.json",
+                     "[runner]: ../../../../scripts/close_week.py 'Runner'", "[a](../x.csv (title))"):
+            self.assertTrue(any("link to a system file" in e for e in clean_pages.page_errors(rel, line, root=ROOT)), line)
+        self.assertEqual(clean_pages.page_errors(rel, '[the record](medical_history.md "The record")', root=ROOT), [])
+        # The repository's link check sees the same forms.
+        from scripts.validate_repository import link_destinations
+        self.assertEqual(sorted(link_destinations('[a](one.md "t")\n[b]: two.md "T"\n[c](three.md)\n[^1]: Note.\n')),
+                         ["one.md", "three.md", "two.md"])
+
+    def test_the_page_history_map_is_pinned(self):
+        from runtime.season_layout import PAGE_HISTORY_SHA256
+        self.assertEqual(clean_pages.history_pin_errors(ROOT), [])
+        self.assertEqual(clean_pages.digest((ROOT / PAGE_HISTORY).read_bytes()), PAGE_HISTORY_SHA256)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            data = json.loads((ROOT / PAGE_HISTORY).read_text())
+            data["pages"]["career/2014/a_new_page.md"] = clean_pages.digest(b"x")
+            (root / PAGE_HISTORY).parent.mkdir(parents=True)
+            (root / PAGE_HISTORY).write_text(json.dumps(data))
+            self.assertTrue(any("changed without its pin" in e for e in clean_pages.history_pin_errors(root)))
+            (root / PAGE_HISTORY).write_bytes((ROOT / PAGE_HISTORY).read_bytes())
+            self.assertEqual(clean_pages.history_pin_errors(root), [])
+
+
+class BuiltRosterPageRefusalTests(unittest.TestCase):
+    def test_every_markdown_roster_reader_refuses_the_built_page(self):
+        from scripts.check_week_input_exclusivity import controlled_players_from_roster
+        from runtime import rails
+        page = PATHS.roster_page
+        for read in (lambda: week_inputs.controlled_active(YEAR, roster_path=page),
+                     lambda: controlled_players_from_roster(page), lambda: rails._roster_tables(page)):
+            with self.assertRaisesRegex(ValueError, "no plain player rows"):
+                read()
 
 
 class CapViewTests(unittest.TestCase):

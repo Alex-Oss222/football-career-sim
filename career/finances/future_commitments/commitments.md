@@ -2,7 +2,7 @@
 
 [Finances](../README.md) · [Full cap table](../salary_cap/cap_tracker.md)
 
-As of September 8, 2014. Generated from the same financial inputs as the full cap table.
+As of September 8, 2014.
 
 ## Team cap summary, twelve years
 

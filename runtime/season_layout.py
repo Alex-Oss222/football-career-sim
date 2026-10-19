@@ -176,6 +176,10 @@ LEAGUE_PLAYER_PAGES = 'career/league_players'
 # The pages written before 2014 Week 6, by path: history under rebuild rule 1, exempt from the
 # clean-page check (runtime/clean_pages.py) until a later step rebuilds them.
 PAGE_HISTORY = DATA_ROOT + '/pages/history.json'
+# The sha256 of the page history map's bytes. The map exempts the pages it lists, so it is pinned:
+# validation fails when the map changes unless this pin changes in the same commit
+# (runtime/clean_pages.history_pin_errors).
+PAGE_HISTORY_SHA256 = 'e9329fb9fe5853229cd9bdfb5af0c0d479e6e6f656598229676fb7960ca3201e'
 # The research registries the player pages read through (one owner each).
 BIRTH_DATE_REGISTRY = 'library/data/player_birth_dates.json'
 BIRTH_DATE_CORRECTIONS = 'library/data/player_birth_date_corrections.json'

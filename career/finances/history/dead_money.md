@@ -2,16 +2,16 @@
 
 [Finances](../README.md) · [Full cap table](../salary_cap/cap_tracker.md)
 
-As of September 8, 2014. Generated from the same financial inputs as the full cap table.
+As of September 8, 2014.
 
 ## Dead money and void years
 
 | Player | Year | Charge | Basis |
 |---|---|---|---|
 | Tyler Bray | 2014 | $51,675 | Original $68,900 rookie bonus less $17,225 charged in 2013; August 31 waiver shifts $51,675 to 2014. Separate from the new futures salary. |
-| Brandon Marshall | 2014 | $0 | The original 2012 rookie contract ended on a 2012 waiver, before divergence. Future bonus accelerated into 2013, not 2014. Replacement active-roster deal modeled without a new bonus. |
+| Brandon Marshall | 2014 | $0 | The original 2012 rookie contract ended on a 2012 waiver. Future bonus accelerated into 2013, not 2014. Replacement active-roster deal recorded without a new bonus. |
 | Austen Lane | 2014 | $0 | Original four-year 2010 contract ends in 2013. The Jacksonville August 2013 waiver leaves no 2014 bonus year. |
-| Isaiah Stanback | 2014 | $0 | December 2012 practice-squad promotion modeled as a short minimum contract with no new bonus. August 2013 waiver leaves no future bonus charge. |
+| Isaiah Stanback | 2014 | $0 | December 2012 practice-squad promotion treated as a short minimum contract with no new bonus. August 2013 waiver leaves no future bonus charge. |
 | Uche Nwaneri | 2014 | $2,189,000 | Pre-June 1 trade to Arizona, March 20, 2014: the 2014 and 2015 bonus allocations of $1,094,500 each accelerate into 2014. His $1,000,000 March 25 roster bonus passes to Arizona. |
 | Tyson Alualu | 2014 | $1,542,500 | Pre-June 1 trade to Houston, March 24, 2014: the final $1,542,500 original bonus allocation stays with Jacksonville in 2014. Houston takes his $2,571,500 base and $150,000 other components. |
 | Jason Babin | 2014 | $0 | Trade to Miami, March 24, 2014: no Jacksonville bonus proration on the claimed Philadelphia contract, so no dead money. Miami takes the 2014 and 2015 schedules. |

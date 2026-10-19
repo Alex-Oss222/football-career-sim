@@ -2,8 +2,13 @@
 """Refresh the register's DOB/age columns and build the player ages page from Document 5's master date.
 
 The ages page lists every player Jacksonville controls (from the roster record,
-runtime/roster.py) and the other clubs' background players, each with his
-birth date and age (runtime/player_bios.py), in clean football words; the
+runtime/roster.py) and the other clubs' players, each with his birth date and
+age (runtime/player_bios.py), in clean football words. The other clubs' rows
+come from the season's Week 1 depth charts, the historical record of that
+season's rosters (SeasonPaths(year).background_depth), once the master date
+reaches the season's first game; before then, or where the season has none,
+from the mapped background charts. A listed player with no verified birth date
+shows none and no age; none is guessed. The
 roster page shows its own ages (scripts/render_club_pages.py). Run after closing a
 date or changing roster control. --check is read-only. It never advances the
 clock, retires a player or changes a game packet.
@@ -19,7 +24,7 @@ sys.path.insert(0, str(ROOT))
 from runtime import roster as roster_record
 from scripts.render_club_pages import long_date, status_text
 from runtime.player_bios import biographies, load, master_date
-from runtime.seasons import current_record
+from runtime.seasons import SeasonPaths, active_season, current_record
 from runtime.season_layout import logical_path, rebase_markdown
 
 STAMP = re.compile(r"^<!-- player-ages-as-of: [^\n]+ -->$", re.M)
@@ -70,6 +75,20 @@ def controlled_rows(text):
             yield cells[header.index("Player")], cells[header.index("Pos")], cells[header.index("Status")]
 
 
+def background_charts(root, day):
+    """The other clubs' depth charts the ages page lists: the active season's Week 1 charts once
+    the master date reaches its first regular-season game, else the mapped background charts."""
+    paths = SeasonPaths(active_season(root), root)
+    if paths.background_depth.is_file():
+        try:
+            first = min(g["date"] for g in paths.regular_games())
+        except (OSError, ValueError, KeyError):
+            first = None
+        if first and day.isoformat() >= first:
+            return paths.background_depth
+    return current_record('background_depth', root)
+
+
 def render_views(root=ROOT):
     root = Path(root)
     day, players = master_date(root), load(root)
@@ -79,12 +98,12 @@ def render_views(root=ROOT):
         if len(STAMP.findall(text)) != 1:
             raise ValueError("Expected one age as-of marker in " + path)
         result[path] = table_ages(text, day, players)
-    background = json.loads(current_record('background_depth', root).read_text())
+    background = json.loads(background_charts(root, day).read_text())
     clubs = background["clubs"]
     controlled = [(p["name"], p["position"], status_text(p["status"]))
                   for p in roster_record.load(current_record('roster', root))["players"]]
     names = {n for n, _, _ in controlled}
-    scope = "%d Week %d chart" % (background["season"], background["week"])
+    scope = "%d Week %d roster" % (background["season"], background["week"])
     sections = {team: [(p["player_id"], p["position"], scope)
                        for p in c["players"] if p["player_id"] not in names]
                 for team, c in clubs.items()}
@@ -92,14 +111,17 @@ def render_views(root=ROOT):
     lines = ["# Player ages", "", "As of %s. Ages count completed birthdays." % long_date(day), "",
              "Birth dates and their evidence: [verification notes](../../library/2013_player_birth_dates.md).", "",
              "Jacksonville lists every player the club controls, the practice squad included. The other clubs "
-             "list the players on their %d Week %d depth charts." % (background["season"], background["week"]), ""]
+             "list the players on their %d Week %d rosters." % (background["season"], background["week"]), ""]
     for team, rows in sorted(sections.items()):
-        lines += ["## " + team, "", "| Player | Pos | DOB | Age | Roster scope |",
+        lines += ["## " + team, "", "| Player | Pos | DOB | Age | Listed on |",
                   "|---|---|---|---:|---|"]
-        bios = biographies([n for n, _, _ in rows], day, players)
+        # Jacksonville's players need a verified birth date; another club's listed player may lack one.
+        unverified = () if team == "Jacksonville Jaguars" else [n for n, _, _ in rows]
+        bios = biographies([n for n, _, _ in rows], day, players, allow_unverified=unverified)
         for name, pos, status in rows:
             bio = bios[name]
-            lines.append("| %s | %s | %s | %s | %s |" % (name, pos, bio["birth_date"], bio["age"], status))
+            lines.append("| %s | %s | %s | %s | %s |" % (name, pos, bio["birth_date"] or "Not on file",
+                                                       "" if bio["age"] is None else bio["age"], status))
         lines.append("")
     target = current_record('player_ages', root).relative_to(root.resolve()).as_posix()
     year = int(target.split('/')[1])

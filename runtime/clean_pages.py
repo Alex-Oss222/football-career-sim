@@ -6,12 +6,20 @@ page that shows an internal code or identifier (1C, 5A, E1, U5, gsis ids,
 register keys, snake_case names, code spans, entry numbers), links to a system
 file (.json, .py, .csv and the like) or into the data area or the code,
 names a script or module, carries HTML markup other than the page builder's
-own invisible markers (runtime/player_pages.MARKERS), a policy note, a
-disclaimer or a version label, or uses the words engine, branch, receipt,
+own invisible markers (runtime/player_pages.MARKERS) and the event-record
+marker an event owner carries on a line of its own (runtime/events.EVENT_META,
+the whole line), a policy note, a disclaimer or a version label, or uses the
+words engine, branch, receipt,
 kernel, ledger, snapshot, checkpoint or simulation. A player's full name
 that contains one of the words (Andre Branch, Tyvon Branch) is allowed by
 name, from the birth-date registry and the permanent player records; any
-other use of the word is caught.
+other use of the word is caught. Every link form is checked: inline links,
+links with a title ([x](path "t")) and reference definitions ([x]: path).
+
+The page history map is pinned: ``history_pin_errors`` fails when the map's
+bytes no longer match the digest the folder map records beside it
+(runtime/season_layout.PAGE_HISTORY_SHA256), so an entry cannot be added or
+changed (which would exempt a page) unless the pin changes in the same commit.
 
 Which pages: every page the player page builder writes, and every Markdown
 page under career/ written from 2014 Week 6 on. The pages written before
@@ -54,7 +62,8 @@ import re
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from .season_layout import LEGACY_MOVES, NUMBERED_FOLDERS, PAGE_HISTORY
+from .events import EVENT_META
+from .season_layout import LEGACY_MOVES, NUMBERED_FOLDERS, PAGE_HISTORY, PAGE_HISTORY_SHA256
 
 ROOT = Path(__file__).resolve().parents[1]
 WORDS = re.compile(r"\b(engines?|branch(?:es)?|receipts?|kernels?|ledgers?|snapshots?|checkpoints?|"
@@ -81,6 +90,10 @@ VERSION = re.compile(r"(\bv\d+(?:\.\d+)*\b|\bversion \d|\bschema\b|\b20\d\d\.\d\
 HTML = re.compile(r"<[A-Za-z!/][^>]*>")
 # A link destination may hold one level of parentheses (photo source pages do).
 LINK = re.compile(r"(!?)\[([^\]\n]*)\]\(((?:[^()\s]|\([^()\s]*\))+)\)")
+# A link with a title ([x](path "t")) and a reference definition ([x]: path "t"), checked like a link.
+TITLE = r"(?:\"[^\"\n]*\"|'[^'\n]*'|\([^()\n]*\))"
+TITLED_LINK = re.compile(r"(!?)\[([^\]\n]*)\]\(\s*<?([^\s<>()]+)>?\s+" + TITLE + r"\s*\)")
+REFERENCE = re.compile(r"^ {0,3}\[([^\]\n^][^\]\n]*)\]:\s*<?([^\s<>]+)>?(?:\s+" + TITLE + r")?\s*$")
 SYSTEM_SUFFIXES = (".json", ".jsonl", ".py", ".csv", ".gz", ".sqlite", ".db", ".yml", ".yaml", ".toml", ".sh",
                    ".txt", ".pkl", ".log")
 SYSTEM_DIRS = ("data", "runtime", "scripts", "tests", ".sim_cache")
@@ -115,11 +128,13 @@ def page_errors(rel, text, markers=(), root=ROOT, first_line=1):
     names = proper_names(root)
     lines = text.splitlines()
     for number, line in enumerate(lines, first_line):
-        if line.strip() in markers:
+        if line.strip() in markers or EVENT_META.fullmatch(line.strip()):
             continue
         found = []
-        for m in LINK.finditer(line):
-            dest = m.group(3)
+        reference = REFERENCE.match(line)
+        dests = [m.group(3) for m in LINK.finditer(line)] + [m.group(3) for m in TITLED_LINK.finditer(line)]
+        dests += [reference.group(2)] if reference else []
+        for dest in dests:
             parts = urlsplit(dest)
             if parts.scheme or parts.netloc:
                 continue
@@ -128,7 +143,8 @@ def page_errors(rel, text, markers=(), root=ROOT, first_line=1):
             segments = [s for s in re.split(r"/+", _normalise(target)) if s]
             if path.endswith(SYSTEM_SUFFIXES) or (segments and segments[0] in SYSTEM_DIRS):
                 found.append("link to a system file: %s" % dest)
-        prose = LINK.sub(lambda m: m.group(2), line)
+        prose = reference.group(1) if reference else TITLED_LINK.sub(lambda m: m.group(2), line)
+        prose = LINK.sub(lambda m: m.group(2), prose)
         prose = re.sub(r"https?://\S+", "", prose)
         for pattern in ALLOWED + ((names,) if names else ()):
             prose = pattern.sub(" ", prose)
@@ -194,6 +210,18 @@ def unchecked_prefix(data, recorded, length):
     if isinstance(length, int) and 0 < length < len(data) and digest(data[:length]) == recorded:
         return length
     return 0
+
+
+def history_pin_errors(root=ROOT):
+    """The page history map against its pin (runtime/season_layout.PAGE_HISTORY_SHA256)."""
+    path = Path(root) / PAGE_HISTORY
+    if not path.is_file():
+        return ["Page history map missing: %s" % PAGE_HISTORY]
+    found = digest(path.read_bytes())
+    if found != PAGE_HISTORY_SHA256:
+        return ["Page history map changed without its pin: %s is %s, the folder map pins %s; a page written "
+                "before Week 6 is never added or changed after the fact" % (PAGE_HISTORY, found, PAGE_HISTORY_SHA256)]
+    return []
 
 
 def checked_parts(root=ROOT):

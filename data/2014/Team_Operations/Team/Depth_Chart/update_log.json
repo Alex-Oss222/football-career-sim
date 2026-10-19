@@ -1,7 +1,7 @@
 {
  "team": "Jacksonville Jaguars",
  "season": 2014,
- "about": "The dated log of every change to Jacksonville's depth chart: each signing, tag, tender, trade, release, retirement, draft pick, medical change and Stone depth decision that changes the chart. Each entry holds the date as the staff wrote it, the date it was recorded (ISO), the event, the change and its source pages (repository paths), with the closed events it belongs to where the working chart named them. The 35 entries through October 5, 2014 were moved here with rebuild step 3b (October 19, 2026) from the depth chart page's update log as it stood at the close of Week 5, their facts, dates and sources unchanged; the wording of five was cleaned of file and system references (the two chart files changed together, the game-input file name, the internal seat names, a checkpoint label and a bare surname), and links inside a change stay relative to the depth chart page. From Week 6 a depth change appends one entry here, and the depth chart page is built from this log, the game depth chart and the working chart.",
+ "about": "The dated log of every change to Jacksonville's depth chart: each signing, tag, tender, trade, release, retirement, draft pick, medical change and Stone depth decision that changes the chart. Each entry holds the date as the staff wrote it, the date it was recorded (ISO), the event, the change and its source pages (repository paths under career/), with the closed events it belongs to where the working chart named them. The 35 entries through October 5, 2014 were moved here with rebuild step 3b (October 19, 2026) from the depth chart page's update log as it stood at the close of Week 5, their facts, dates and sources unchanged. 22 of them were reworded for the page in football terms (file and system references, internal labels, checkpoint and replay wording, a bare surname); each of those keeps its row exactly as the page wrote it (date, event, source cell and change) in as_written, which is never rendered. Links inside a change stay relative to the depth chart page. From Week 6 a depth change appends one entry here, and the depth chart page is built from this log, the game depth chart and the working chart.",
  "entries": [
   {
    "date": "February 17, 2014",
@@ -38,14 +38,20 @@
   {
    "date": "February 28, 2014 review",
    "recorded": "2014-02-28",
-   "event": "Administrative reconciliation against the merged roster and contracts",
-   "change": "Refreshed source pointers; verified 52 active players, Meester retired and six March 11 futures; order, roles and availability unchanged",
+   "event": "Roster and contract review",
+   "change": "Verified 52 active players, Meester retired and six March 11 futures; order, roles and availability unchanged",
    "sources": [
     {
      "label": "February 28 cap publication",
      "page": "career/2014/Team_Operations/Finances/salary_cap/cap_worksheet.md"
     }
-   ]
+   ],
+   "as_written": {
+    "date": "February 28, 2014 checkpoint review",
+    "event": "Administrative reconciliation against the merged roster and contracts",
+    "source": "None (review through [February 28 cap publication](../../Finances/salary_cap/cap_worksheet.md))",
+    "change": "Refreshed source pointers; verified 52 active players, Meester retired and six March 11 futures; order, roles and availability unchanged"
+   }
   },
   {
    "date": "February 28, 2014",
@@ -74,50 +80,74 @@
   {
    "date": "March 11, 2014 correction",
    "recorded": "2014-03-11",
-   "event": "March 2014 free-agency replay",
-   "change": "Marks re-signed and restored to his carried place (DL 1, players below move down one); Verner added, not placed; Te'o-Nesheim's and Cain's first-pass signings withdrawn (LS open); Monroe signed through 2018",
+   "event": "March 2014 free agency, corrected",
+   "change": "Marks re-signed and restored to his carried place (DL 1, players below move down one); Verner added, not placed; Te'o-Nesheim's and Cain's earlier signings withdrawn (LS open); Monroe signed through 2018",
    "sources": [
     {
      "label": "Monroe, Marks and Verner agreements",
      "page": "career/2014/Team_Operations/Free_Agency/march_2014_replay_log.md"
     }
-   ]
+   ],
+   "as_written": {
+    "date": "March 11, 2014 correction",
+    "event": "March 2014 free-agency replay",
+    "source": "[Monroe, Marks and Verner agreements](../../Free_Agency/march_2014_replay_log.md)",
+    "change": "Marks re-signed and restored to his carried place (DL 1, players below move down one); Verner added, not placed; Te'o-Nesheim's and Cain's first-pass signings withdrawn (LS open); Monroe signed through 2018"
+   }
   },
   {
    "date": "March 12, 2014",
    "recorded": "2014-03-12",
-   "event": "Replay: Talib signed",
+   "event": "Talib signed",
    "change": "Talib added, not placed; no order change",
    "sources": [
     {
      "label": "Talib and Tate decisions",
      "page": "career/2014/Team_Operations/Free_Agency/march_2014_replay_log.md"
     }
-   ]
+   ],
+   "as_written": {
+    "date": "March 12, 2014",
+    "event": "Replay: Talib signed",
+    "source": "[Talib and Tate decisions](../../Free_Agency/march_2014_replay_log.md)",
+    "change": "Talib added, not placed; no order change"
+   }
   },
   {
    "date": "March 18, 2014",
    "recorded": "2014-03-18",
-   "event": "Replay: Nicks and Hawkins signed",
+   "event": "Nicks and Hawkins signed",
    "change": "Both added, not placed; no order change",
    "sources": [
     {
      "label": "Nicks, Hawkins and Edelman decisions",
      "page": "career/2014/Team_Operations/Free_Agency/march_2014_replay_log.md"
     }
-   ]
+   ],
+   "as_written": {
+    "date": "March 18, 2014",
+    "event": "Replay: Nicks and Hawkins signed",
+    "source": "[Nicks, Hawkins and Edelman decisions](../../Free_Agency/march_2014_replay_log.md)",
+    "change": "Both added, not placed; no order change"
+   }
   },
   {
    "date": "March 18, 2014",
    "recorded": "2014-03-18",
-   "event": "Replay: Te'o-Nesheim signed",
+   "event": "Te'o-Nesheim signed",
    "change": "Added, not placed; no order change",
    "sources": [
     {
      "label": "Te’o-Nesheim agreement",
      "page": "career/2014/Team_Operations/Free_Agency/teo_nesheim_negotiation_2014-03-18.md"
     }
-   ]
+   ],
+   "as_written": {
+    "date": "March 18, 2014",
+    "event": "Replay: Te'o-Nesheim signed",
+    "source": "[Te’o-Nesheim agreement](../../Free_Agency/teo_nesheim_negotiation_2014-03-18.md)",
+    "change": "Added, not placed; no order change"
+   }
   },
   {
    "date": "March 20, 2014",
@@ -186,14 +216,20 @@
   {
    "date": "May 2, 2014",
    "recorded": "2014-05-02",
-   "event": "Unsigned tenders: user instruction on program participation",
+   "event": "Unsigned tenders and the offseason program",
    "change": "No chart change. Bradfield, Clemons, Brown and Pasztor keep their carried places and tender flags; they take no part in the program until they sign",
    "sources": [
     {
      "label": "May 2–11 record",
      "page": "career/2014/Record.md"
     }
-   ]
+   ],
+   "as_written": {
+    "date": "May 2, 2014",
+    "event": "Unsigned tenders: user instruction on program participation",
+    "source": "[May 2–11 record](../../../Record.md)",
+    "change": "No chart change. Bradfield, Clemons, Brown and Pasztor keep their carried places and tender flags; they take no part in the program until they sign"
+   }
   },
   {
    "date": "May 8 to 11, 2014",
@@ -229,7 +265,13 @@
      "label": "May 12–23 spring record",
      "page": "career/2014/Record.md"
     }
-   ]
+   ],
+   "as_written": {
+    "date": "May 12, 2014 (recorded May 23)",
+    "event": "Stone's starting roles entering OTAs; rookie minicamp and Phase Two closed",
+    "source": "[May 12–23 spring record](../../../Record.md)",
+    "change": "Rep starting points, not awards: Nicks placed WR 1 (Adams the competition) and Adams WR 3 (Hawkins the competition), so Thielen is WR 2 and Clemons and Brown move to WR 4 and 5 without a reorder; Bitonio placed OL 2 at left guard (Norwell the competition) and Turner OL 4 at right guard (Bitonio or Norwell if Turner struggles), the line reading Monroe, Bitonio, Brewster, Turner, Johnson, then Bradfield, Pasztor, Asper; Mincey holds Edge 1 (Branch the competition) with no DL reorder. Hawkins, Norwell and every other added player stay unplaced. The May 16 and 17 rookie minicamp and Phase Two through May 23 changed no order and no availability"
+   }
   },
   {
    "date": "August 8 to 14, 2014 (recorded August 14)",
@@ -273,13 +315,19 @@
    "events": [
     "2014-08-21-detroit-preparation-closed",
     "2014-08-18-murphy-released"
-   ]
+   ],
+   "as_written": {
+    "date": "August 15 to 21, 2014 (recorded August 21)",
+    "event": "Detroit preparation: availability notes",
+    "source": "[Camp record](../../../Training_Camp_and_Preseason/Training_Camp/training_report.md#august-15-to-21-the-chicago-review-and-the-detroit-preparation); [medical history](../../Medical/medical_history.md#august-15-to-21-reassessments-and-murphys-release)",
+    "change": "No order change and no Stone depth decision. Availability notes only: Murphy released August 18 on his projected date and available; Jackson's August 21 and Brate's August 15 reassessments unchanged; Johnson's return to the first-group right tackle for August 22 is a game-plan freeze in the [Game_03 inputs](../../../Training_Camp_and_Preseason/Preseason_Games/Game_03/README.md), not a chart change"
+   }
   },
   {
    "date": "August 22, 2014",
    "recorded": "2014-08-22",
    "event": "Preseason game 3: availability notes",
-   "change": "No order change and no Stone depth decision. Availability notes only: Jensen on an independent medical hold (August 22; projected return August 28, reassessment August 24); Poyer out (August 22; not removed; projected return August 26, reassessment August 23). Johnson's one-game right-tackle workload plan for Detroit ran as frozen and has ended; the August 28 arrangement is Stone's open decision, not a chart change",
+   "change": "No order change and no Stone depth decision. Availability notes only: Jensen on an independent medical hold (August 22; projected return August 28, reassessment August 24); Poyer out (August 22; not removed; projected return August 26, reassessment August 23). Johnson's one-game right-tackle workload plan for Detroit ran as planned and has ended; the August 28 arrangement is Stone's open decision, not a chart change",
    "sources": [
     {
      "label": "Preseason game 3",
@@ -293,13 +341,19 @@
    "events": [
     "2014-08-22-preseason-game-3-jacksonville-at-detroit",
     "2014-08-22-preseason-game-3-injuries"
-   ]
+   ],
+   "as_written": {
+    "date": "August 22, 2014",
+    "event": "Preseason game 3: availability notes",
+    "source": "[Preseason game 3](../../../Training_Camp_and_Preseason/Preseason_Games/Game_03/output.md) output; [medical history](../../Medical/medical_history.md#august-22-preseason-game-3-injuries)",
+    "change": "No order change and no Stone depth decision. Availability notes only: Jensen on an independent medical hold (August 22; projected return August 28, reassessment August 24); Poyer out (August 22; not removed; projected return August 26, reassessment August 23). Johnson's one-game right-tackle workload plan for Detroit ran as frozen and has ended; the August 28 arrangement is Stone's open decision, not a chart change"
+   }
   },
   {
    "date": "August 23 to 27, 2014 (recorded August 27)",
    "recorded": "2014-08-27",
    "event": "Atlanta preparation: availability notes",
-   "change": "No order change and no Stone depth decision. Availability notes only: Poyer cleared August 26 on his projected date and available; Jensen's August 24 reassessment unchanged, the hold running to its August 28 projected date (game day) and keeping him out of the frozen Atlanta plan; Jackson and Brate unchanged. The August 26 reduction to 75 required no transaction (74 under contract). Johnson's first-quarter right tackle for August 28 is the current chart's starting point in the game lineup set in the [preseason game 4 plan](../../../Training_Camp_and_Preseason/Preseason_Games/Game_04/README.md), not a chart change",
+   "change": "No order change and no Stone depth decision. Availability notes only: Poyer cleared August 26 on his projected date and available; Jensen's August 24 reassessment unchanged, the hold running to its August 28 projected date (game day) and keeping him out of the Atlanta game plan; Jackson and Brate unchanged. The August 26 reduction to 75 required no transaction (74 under contract). Johnson's first-quarter right tackle for August 28 is the current chart's starting point in the game lineup set in the [preseason game 4 plan](../../../Training_Camp_and_Preseason/Preseason_Games/Game_04/README.md), not a chart change",
    "sources": [
     {
      "label": "Camp record",
@@ -313,13 +367,19 @@
    "events": [
     "2014-08-27-atlanta-preparation-closed",
     "2014-08-26-poyer-cleared"
-   ]
+   ],
+   "as_written": {
+    "date": "August 23 to 27, 2014 (recorded August 27)",
+    "event": "Atlanta preparation: availability notes",
+    "source": "[Camp record](../../../Training_Camp_and_Preseason/Training_Camp/training_report.md#august-23-to-27-the-detroit-review-and-the-atlanta-preparation); [medical history](../../Medical/medical_history.md#august-23-to-27-reassessments-and-poyers-clearance)",
+    "change": "No order change and no Stone depth decision. Availability notes only: Poyer cleared August 26 on his projected date and available; Jensen's August 24 reassessment unchanged, the hold running to its August 28 projected date (game day) and keeping him out of the frozen Atlanta plan; Jackson and Brate unchanged. The August 26 reduction to 75 required no transaction (74 under contract). Johnson's first-quarter right tackle for August 28 is the current chart's starting point in a game lineup frozen in the [Game_04 inputs](../../../Training_Camp_and_Preseason/Preseason_Games/Game_04/README.md), not a chart change"
+   }
   },
   {
    "date": "August 28, 2014",
    "recorded": "2014-08-28",
    "event": "Preseason game 4: availability notes",
-   "change": "No order change and no Stone depth decision. Availability notes only: Nicks out multi-week (August 28; removed; projected return September 20, reassessment September 4); Hoskins out, short (August 28; not removed; projected return September 16, reassessment September 3); Pendleton out (August 28; not removed; projected return September 1, reassessment August 29); Bouye out (August 28; not removed; projected return August 31, reassessment August 29); Jensen's hold cleared August 28 on its projected date with him inactive under the frozen plan; Jackson and Brate unchanged. The preseason is complete at 1-3; the season game depth chart is owed at the August 30 reduction to 53 (Stone), and the Week 1 receiver arrangement without Nicks is Stone's open decision, not a chart change",
+   "change": "No order change and no Stone depth decision. Availability notes only: Nicks out multi-week (August 28; removed; projected return September 20, reassessment September 4); Hoskins out, short (August 28; not removed; projected return September 16, reassessment September 3); Pendleton out (August 28; not removed; projected return September 1, reassessment August 29); Bouye out (August 28; not removed; projected return August 31, reassessment August 29); Jensen's hold cleared August 28 on its projected date with him inactive under the game plan; Jackson and Brate unchanged. The preseason is complete at 1-3; the season game depth chart is owed at the August 30 reduction to 53 (Stone), and the Week 1 receiver arrangement without Nicks is Stone's open decision, not a chart change",
    "sources": [
     {
      "label": "Preseason game 4",
@@ -333,13 +393,19 @@
    "events": [
     "2014-08-28-preseason-game-4-atlanta-at-jacksonville",
     "2014-08-28-preseason-game-4-injuries"
-   ]
+   ],
+   "as_written": {
+    "date": "August 28, 2014",
+    "event": "Preseason game 4: availability notes",
+    "source": "[Preseason game 4](../../../Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md) output; [medical history](../../Medical/medical_history.md#august-28-preseason-game-4-injuries)",
+    "change": "No order change and no Stone depth decision. Availability notes only: Nicks out multi-week (August 28; removed; projected return September 20, reassessment September 4); Hoskins out, short (August 28; not removed; projected return September 16, reassessment September 3); Pendleton out (August 28; not removed; projected return September 1, reassessment August 29); Bouye out (August 28; not removed; projected return August 31, reassessment August 29); Jensen's hold cleared August 28 on its projected date with him inactive under the frozen plan; Jackson and Brate unchanged. The preseason is complete at 1-3; the season game depth chart is owed at the August 30 reduction to 53 (Stone), and the Week 1 receiver arrangement without Nicks is Stone's open decision, not a chart change"
+   }
   },
   {
    "date": "August 29, 2014",
    "recorded": "2014-08-29",
    "event": "Atlanta review and cutdown meeting; Bouye and Pendleton reassessed",
-   "change": "No order change. Availability notes only: Bouye and Pendleton reassessed August 29 with no change. The meeting carried the packet's 53 recommendation and depth baseline to Caldwell unchanged",
+   "change": "No order change. Availability notes only: Bouye and Pendleton reassessed August 29 with no change. The meeting carried the staff's 53-man recommendation and depth baseline to Caldwell unchanged",
    "sources": [
     {
      "label": "Camp record",
@@ -353,13 +419,19 @@
    "events": [
     "2014-08-29-atlanta-review-and-cutdown-meeting",
     "2014-08-31-bouye-cleared"
-   ]
+   ],
+   "as_written": {
+    "date": "August 29, 2014",
+    "event": "Atlanta review and cutdown meeting; Bouye and Pendleton reassessed",
+    "source": "[Camp record](../../../Training_Camp_and_Preseason/Training_Camp/training_report.md#august-29-the-atlanta-review-and-the-cutdown-meeting); [medical history](../../Medical/medical_history.md#august-29-to-31-reassessments-bouyes-clearance-and-the-reserve-placements)",
+    "change": "No order change. Availability notes only: Bouye and Pendleton reassessed August 29 with no change. The meeting carried the packet's 53 recommendation and depth baseline to Caldwell unchanged"
+   }
   },
   {
    "date": "August 30, 2014",
    "recorded": "2014-08-30",
    "event": "Reduction to 53 and Stone's season game depth chart",
-   "change": "Removed by Caldwell's reduction: Wilson, Bray and Shaw (QB); Murphy (RB); Asper, Feiler, Shatley and Larsen (OL); Ryan Davis, C.J. Wilson, Edwards, Jeffcoat, Pendleton, Long and D'Anthony Smith (DL); Blake, Thomas and Phillips (DB); Cain (LS); Bradfield, Clemons, Brown and Pasztor (tenders withdrawn); Brate and Jackson waived with the injured designation and off the chart. Stone's season chart over the 53: Adams X, Thielen H, Hawkins Z, then Hurns, Gabriel and Nicks last while out; Lewis, Kelce, Jensen, Hoskins last while out; Monroe, Bitonio, Brewster, Turner, Johnson, then Lucas, Leno, Norwell, Linsley; Kreiter snapping; Hawkins returning kicks and punts with Hurns the second punt returner; every other group in the frozen Atlanta order minus the departures. The WR1, WR3, left-guard, right-guard, Edge 1 and long-snapper competitions closed; nothing is added but not placed. Issued as the season game depth chart",
+   "change": "Removed by Caldwell's reduction: Wilson, Bray and Shaw (QB); Murphy (RB); Asper, Feiler, Shatley and Larsen (OL); Ryan Davis, C.J. Wilson, Edwards, Jeffcoat, Pendleton, Long and D'Anthony Smith (DL); Blake, Thomas and Phillips (DB); Cain (LS); Bradfield, Clemons, Brown and Pasztor (tenders withdrawn); Brate and Jackson waived with the injured designation and off the chart. Stone's season chart over the 53: Adams X, Thielen H, Hawkins Z, then Hurns, Gabriel and Nicks last while out; Lewis, Kelce, Jensen, Hoskins last while out; Monroe, Bitonio, Brewster, Turner, Johnson, then Lucas, Leno, Norwell, Linsley; Kreiter snapping; Hawkins returning kicks and punts with Hurns the second punt returner; every other group in the Atlanta game order minus the departures. The WR1, WR3, left-guard, right-guard, Edge 1 and long-snapper competitions closed; nothing is added but not placed. Issued as the season game depth chart",
    "sources": [
     {
      "label": "Final roster cuts",
@@ -373,7 +445,13 @@
    "events": [
     "2014-08-30-reduction-to-53",
     "2014-08-30-season-depth-chart-and-battle-closures"
-   ]
+   ],
+   "as_written": {
+    "date": "August 30, 2014",
+    "event": "Reduction to 53 and Stone's season game depth chart",
+    "source": "[Final roster cuts](../../../Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); [roster decisions](../../../Training_Camp_and_Preseason/Roster_Decisions/roster_decisions.md)",
+    "change": "Removed by Caldwell's reduction: Wilson, Bray and Shaw (QB); Murphy (RB); Asper, Feiler, Shatley and Larsen (OL); Ryan Davis, C.J. Wilson, Edwards, Jeffcoat, Pendleton, Long and D'Anthony Smith (DL); Blake, Thomas and Phillips (DB); Cain (LS); Bradfield, Clemons, Brown and Pasztor (tenders withdrawn); Brate and Jackson waived with the injured designation and off the chart. Stone's season chart over the 53: Adams X, Thielen H, Hawkins Z, then Hurns, Gabriel and Nicks last while out; Lewis, Kelce, Jensen, Hoskins last while out; Monroe, Bitonio, Brewster, Turner, Johnson, then Lucas, Leno, Norwell, Linsley; Kreiter snapping; Hawkins returning kicks and punts with Hurns the second punt returner; every other group in the frozen Atlanta order minus the departures. The WR1, WR3, left-guard, right-guard, Edge 1 and long-snapper competitions closed; nothing is added but not placed. Promoted to `game_depth_chart.json`, the released game input"
+   }
   },
   {
    "date": "August 31, 2014",
@@ -416,7 +494,13 @@
    ],
    "events": [
     "2014-09-07-week-1-at-philadelphia"
-   ]
+   ],
+   "as_written": {
+    "date": "September 7, 2014",
+    "event": "Week 1 at Philadelphia: availability notes",
+    "source": "[Week 1 game record](../../../Regular_Season/Games/Week_01/output.md); [medical history](../../Medical/medical_history.md#september-7-week-1-injuries-at-philadelphia)",
+    "change": "No order change and no Stone depth decision. Availability notes only: Jones-Drew out, minor (September 7; not removed; projected return September 12, reassessment September 8); Mike Harris out, long term (September 7; removed in overtime; projected return December 8, reassessment September 14); Dwight Lowery out, long term (September 7; removed in overtime; projected return December 11, reassessment September 14). The Week 2 starting cornerback and safety, the listing of Harris and Lowery last in their group while out and the Week 2 inactives are Stone's decisions after the September 8 review; the roster dispositions on Harris and Lowery are Caldwell's with the user. Both JSON copies: availability notes and this row in the working copy; the released game input unchanged until Stone's Week 2 decision"
+   }
   },
   {
    "date": "September 8 to 13, 2014",
@@ -444,7 +528,13 @@
    "events": [
     "2014-09-08-harris-lowery-reserve-injured-phillips-promoted",
     "2014-09-13-washington-preparation-closed"
-   ]
+   ],
+   "as_written": {
+    "date": "September 8 to 13, 2014",
+    "event": "Harris and Lowery to reserve/injured, Ball signed, Phillips promoted (September 8); Stone's Week 2 secondary and inactives (September 13)",
+    "source": "[September 8 transactions](../Roster/transactions_2014-09-08.md); [Alan Ball signing](../../Free_Agency/alan_ball_signing_2014-09-08.md); [medical history](../../Medical/medical_history.md#september-8-to-12-jones-drew-reassessed-and-cleared-harris-and-lowery-to-reserveinjured); [Week 2 record](../../../Regular_Season/Games/Week_02/output.md)",
+    "change": "Harris (DB 2) and Lowery (DB 3) removed to reserve/injured and off the chart; Ball and Phillips added. Stone's Week 2 defensive-back order: Talib, Verner, Rambo, Trawick, Poyer, Bouye, Butler, Prosinski, Phillips, Ball (Verner and Trawick into the first group; Poyer stays at nickel; Bouye the first outside reserve; Ball last in his first week). No other group changed. Week 2 inactives: Nicks and Hoskins by instruction; Ball, Linsley, Edebali, Todd Davis and Gabriel by the standing rule (Butler active). Availability: Jones-Drew cleared September 12, active; Nicks and Hoskins unchanged. Both JSON copies changed with this row"
+   }
   },
   {
    "date": "September 14, 2014",
@@ -463,13 +553,19 @@
    ],
    "events": [
     "2014-09-14-week-2-at-washington"
-   ]
+   ],
+   "as_written": {
+    "date": "September 14, 2014",
+    "event": "Week 2 at Washington: availability notes",
+    "source": "[Week 2 game record](../../../Regular_Season/Games/Week_02/output.md); [medical history](../../Medical/medical_history.md#september-14-week-2-injuries-at-washington)",
+    "change": "No order change and no Stone depth decision. Availability notes only: Julian Stanford out, minor (September 14; not removed, 33 defensive snaps; projected return September 19, reassessment September 15); Lane Johnson out, minor (September 14; not removed, 70 offensive snaps; projected return September 17, reassessment September 15). Neither instruction requires a roster decision; the Week 3 inactives are Stone's after the September 15 exams. Both JSON copies: availability notes and this row in the working copy; the released game input unchanged until Stone's Week 3 decision"
+   }
   },
   {
    "date": "September 15 to 20, 2014",
    "recorded": "2014-09-20",
    "event": "Indianapolis preparation: Stanford, Johnson, Hoskins and Nicks cleared; Stone's Week 3 inactives (September 20)",
-   "change": "No order change. Availability: Stanford and Johnson reassessed September 15 with no change and cleared September 19 and 17; Hoskins cleared September 16; Nicks cleared September 20 and stays listed last until a full practice week. Lucas took the first-group right-tackle work September 15 and 17 under the packet's contingency and Johnson was restored September 18 after one live protection retest (a game-plan arrangement, not a chart change). Week 3 inactives: Nicks, Ball, Linsley, Edebali and Todd Davis by the standing rule; Hoskins and Gabriel carried from the Week 2 list.",
+   "change": "No order change. Availability: Stanford and Johnson reassessed September 15 with no change and cleared September 19 and 17; Hoskins cleared September 16; Nicks cleared September 20 and stays listed last until a full practice week. Lucas took the first-group right-tackle work September 15 and 17 under the game plan's contingency and Johnson was restored September 18 after one live protection retest (a game-plan arrangement, not a chart change). Week 3 inactives: Nicks, Ball, Linsley, Edebali and Todd Davis by the standing rule; Hoskins and Gabriel carried from the Week 2 list.",
    "sources": [
     {
      "label": "Medical history",
@@ -482,13 +578,19 @@
    ],
    "events": [
     "2014-09-20-indianapolis-preparation-closed"
-   ]
+   ],
+   "as_written": {
+    "date": "September 15 to 20, 2014",
+    "event": "Indianapolis preparation: Stanford, Johnson, Hoskins and Nicks cleared; Stone's Week 3 inactives (September 20)",
+    "source": "[Medical history](../../Medical/medical_history.md#september-15-to-20-stanford-johnson-hoskins-and-nicks-cleared-harris-and-lowery-reassessed); [Week 3 record](../../../Regular_Season/Games/Week_03/output.md)",
+    "change": "No order change. Availability: Stanford and Johnson reassessed September 15 with no change and cleared September 19 and 17; Hoskins cleared September 16; Nicks cleared September 20 and stays listed last until a full practice week. Lucas took the first-group right-tackle work September 15 and 17 under the packet's contingency and Johnson was restored September 18 after one live protection retest (a game-plan arrangement, not a chart change). Week 3 inactives: Nicks, Ball, Linsley, Edebali and Todd Davis by the standing rule; Hoskins and Gabriel carried from the Week 2 list. Both JSON copies changed with this row"
+   }
   },
   {
    "date": "September 21, 2014",
    "recorded": "2014-09-21",
    "event": "Week 3 against Indianapolis: availability notes",
-   "change": "No order change and no Stone depth decision. Availability notes only: Travis Kelce out, minor (September 21; not removed, 18 offensive snaps; projected return September 25, reassessment September 22); Davante Adams out, minor (September 21; not removed, 59 offensive snaps; projected return September 26, reassessment September 22); Jordan Poyer on an independent medical hold, short (September 21; removed after 36 defensive snaps, Bouye in his place by the chart's order; projected return October 9, reassessment September 27); Aqib Talib on an independent medical hold, minor (September 21; removed after 58 defensive snaps, Verner recorded in his slot by the chart's order; projected return September 25, reassessment September 22); Malcolm Butler on an independent medical hold, short (September 21; removed after 13 defensive snaps, Prosinski in his place by the chart's order; projected return October 2, reassessment September 24). No pause fired. No instruction requires a roster decision by itself; the Week 4 secondary, nickel and inactives are Stone's after the September 22 exams.",
+   "change": "No order change and no Stone depth decision. Availability notes only: Travis Kelce out, minor (September 21; not removed, 18 offensive snaps; projected return September 25, reassessment September 22); Davante Adams out, minor (September 21; not removed, 59 offensive snaps; projected return September 26, reassessment September 22); Jordan Poyer on an independent medical hold, short (September 21; removed after 36 defensive snaps, Bouye in his place by the chart's order; projected return October 9, reassessment September 27); Aqib Talib on an independent medical hold, minor (September 21; removed after 58 defensive snaps, Verner recorded in his slot by the chart's order; projected return September 25, reassessment September 22); Malcolm Butler on an independent medical hold, short (September 21; removed after 13 defensive snaps, Prosinski in his place by the chart's order; projected return October 2, reassessment September 24). No instruction requires a roster decision by itself; the Week 4 secondary, nickel and inactives are Stone's after the September 22 exams.",
    "sources": [
     {
      "label": "Week 3 game record",
@@ -501,13 +603,19 @@
    ],
    "events": [
     "2014-09-21-week-3-vs-indianapolis"
-   ]
+   ],
+   "as_written": {
+    "date": "September 21, 2014",
+    "event": "Week 3 against Indianapolis: availability notes",
+    "source": "[Week 3 game record](../../../Regular_Season/Games/Week_03/output.md); [medical history](../../Medical/medical_history.md#september-21-week-3-injuries-against-indianapolis)",
+    "change": "No order change and no Stone depth decision. Availability notes only: Travis Kelce out, minor (September 21; not removed, 18 offensive snaps; projected return September 25, reassessment September 22); Davante Adams out, minor (September 21; not removed, 59 offensive snaps; projected return September 26, reassessment September 22); Jordan Poyer on an independent medical hold, short (September 21; removed after 36 defensive snaps, Bouye in his place by the chart's order; projected return October 9, reassessment September 27); Aqib Talib on an independent medical hold, minor (September 21; removed after 58 defensive snaps, Verner recorded in his slot by the chart's order; projected return September 25, reassessment September 22); Malcolm Butler on an independent medical hold, short (September 21; removed after 13 defensive snaps, Prosinski in his place by the chart's order; projected return October 2, reassessment September 24). No pause fired. No instruction requires a roster decision by itself; the Week 4 secondary, nickel and inactives are Stone's after the September 22 exams. Both JSON copies: availability notes and this row in the working copy; the released game input unchanged until Stone's Week 4 decision"
+   }
   },
   {
    "date": "September 22 to 27, 2014",
    "recorded": "2014-09-27",
    "event": "San Diego preparation: Kelce and Talib cleared September 25, Adams September 26; Butler and Poyer reassessed with no change; Stone's Week 4 defensive-back order and inactives (September 27)",
-   "change": "Defensive-back order re-set by Stone for Week 4 under his packet's Talib-in secondary: Talib, Verner, Rambo, Trawick, Bouye (nickel), Prosinski (sixth defensive back), Phillips, Ball, then Poyer and Butler last while on their holds. No other order change: the RB order (Jones-Drew, Anderson, Grimes) is already Stone's explicit September 21 hierarchy; Kelce keeps TE2 and Adams X on their clearances; Nicks completed the full practice week of Stone's condition and keeps his sixth place pending Stone's X decision. Week 4 inactives: Poyer and Butler by medical instruction; Grimes, Linsley, Edebali, Todd Davis and Gabriel under the packet's provisional list and its Nicks alternative.",
+   "change": "Defensive-back order re-set by Stone for Week 4 under his game plan's Talib-in secondary: Talib, Verner, Rambo, Trawick, Bouye (nickel), Prosinski (sixth defensive back), Phillips, Ball, then Poyer and Butler last while on their holds. No other order change: the RB order (Jones-Drew, Anderson, Grimes) is already Stone's explicit September 21 hierarchy; Kelce keeps TE2 and Adams X on their clearances; Nicks completed the full practice week of Stone's condition and keeps his sixth place pending Stone's X decision. Week 4 inactives: Poyer and Butler by medical instruction; Grimes, Linsley, Edebali, Todd Davis and Gabriel under the game plan's provisional list and its Nicks alternative.",
    "sources": [
     {
      "label": "Medical history",
@@ -520,13 +628,19 @@
    ],
    "events": [
     "2014-09-27-san-diego-preparation-closed"
-   ]
+   ],
+   "as_written": {
+    "date": "September 22 to 27, 2014",
+    "event": "San Diego preparation: Kelce and Talib cleared September 25, Adams September 26; Butler and Poyer reassessed with no change; Stone's Week 4 defensive-back order and inactives (September 27)",
+    "source": "[Medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed); [Week 4 record](../../../Regular_Season/Games/Week_04/output.md)",
+    "change": "Defensive-back order re-set by Stone for Week 4 under his packet's Talib-in secondary: Talib, Verner, Rambo, Trawick, Bouye (nickel), Prosinski (sixth defensive back), Phillips, Ball, then Poyer and Butler last while on their holds. No other order change: the RB order (Jones-Drew, Anderson, Grimes) is already Stone's explicit September 21 hierarchy; Kelce keeps TE2 and Adams X on their clearances; Nicks completed the full practice week of Stone's condition and keeps his sixth place pending Stone's X decision. Week 4 inactives: Poyer and Butler by medical instruction; Grimes, Linsley, Edebali, Todd Davis and Gabriel under the packet's provisional list and its Nicks alternative. Both JSON copies changed with this row"
+   }
   },
   {
    "date": "September 28, 2014",
    "recorded": "2014-09-28",
    "event": "Week 4 at San Diego: availability notes",
-   "change": "No order change and no Stone depth decision. Availability notes only: Paul Posluszny out, minor (September 28; not removed, 64 defensive snaps; projected return October 3, reassessment September 29); Adrian Phillips out, minor (September 28; not removed, 16 kicking-game snaps; projected return September 29, reassessment September 29); Julian Stanford limited, minor (September 28; not removed, 32 defensive snaps; no time lost projected, reassessment September 29). No pause fired and no one was removed. The seven Week 4 inactives were applied as set; Nicks, Hoskins and Ball dressed for the first time this season, Nicks and Hoskins with no snap recorded. The Week 5 inactives and any order change are Stone's after the September 29 exams.",
+   "change": "No order change and no Stone depth decision. Availability notes only: Paul Posluszny out, minor (September 28; not removed, 64 defensive snaps; projected return October 3, reassessment September 29); Adrian Phillips out, minor (September 28; not removed, 16 kicking-game snaps; projected return September 29, reassessment September 29); Julian Stanford limited, minor (September 28; not removed, 32 defensive snaps; no time lost projected, reassessment September 29). No one was removed. The seven Week 4 inactives were applied as set; Nicks, Hoskins and Ball dressed for the first time this season, Nicks and Hoskins with no snap recorded. The Week 5 inactives and any order change are Stone's after the September 29 exams.",
    "sources": [
     {
      "label": "Week 4 game record",
@@ -539,13 +653,19 @@
    ],
    "events": [
     "2014-09-28-week-4-at-san-diego"
-   ]
+   ],
+   "as_written": {
+    "date": "September 28, 2014",
+    "event": "Week 4 at San Diego: availability notes",
+    "source": "[Week 4 game record](../../../Regular_Season/Games/Week_04/output.md); [medical history](../../Medical/medical_history.md#september-28-week-4-injuries-at-san-diego)",
+    "change": "No order change and no Stone depth decision. Availability notes only: Paul Posluszny out, minor (September 28; not removed, 64 defensive snaps; projected return October 3, reassessment September 29); Adrian Phillips out, minor (September 28; not removed, 16 kicking-game snaps; projected return September 29, reassessment September 29); Julian Stanford limited, minor (September 28; not removed, 32 defensive snaps; no time lost projected, reassessment September 29). No pause fired and no one was removed. The seven Week 4 inactives were applied as set; Nicks, Hoskins and Ball dressed for the first time this season, Nicks and Hoskins with no snap recorded. The Week 5 inactives and any order change are Stone's after the September 29 exams. Both JSON copies: availability notes and this row in the working copy; the released game input unchanged until Stone's Week 5 decision"
+   }
   },
   {
    "date": "September 29 to October 4, 2014",
    "recorded": "2014-10-04",
-   "event": "Pittsburgh preparation: Stanford and Phillips cleared September 29, Butler released October 2, Posluszny cleared October 3; Poyer held; Stone's Week 5 receiver order, defensive-back order and seats and inactives (October 4)",
-   "change": "Receiver order re-set by Stone for Week 5: Adams (X), Thielen (H), Hawkins (Z), Hurns, Nicks (fifth, the X relief only), Gabriel. Defensive-back order: Talib, Verner, Rambo, Trawick, Bouye (nickel), Prosinski (sixth defensive back), Phillips, Ball (outside reserve), Butler, then Poyer last while on his hold; the nickel (Bouye) and outside reserve (Ball) seats named on the game chart. No other order change: Posluszny keeps his base place on his October 3 clearance and Stanford his third place. Week 5 inactives: Poyer by medical instruction; Butler, Grimes, Linsley, Edebali, Gabriel and Hoskins under the packet's selected plan, Todd Davis dressing.",
+   "event": "Pittsburgh preparation: Stanford and Phillips cleared September 29, Butler released October 2, Posluszny cleared October 3; Poyer held; Stone's Week 5 receiver order, defensive-back order and roles and inactives (October 4)",
+   "change": "Receiver order re-set by Stone for Week 5: Adams (X), Thielen (H), Hawkins (Z), Hurns, Nicks (fifth, the X relief only), Gabriel. Defensive-back order: Talib, Verner, Rambo, Trawick, Bouye (nickel), Prosinski (sixth defensive back), Phillips, Ball (outside reserve), Butler, then Poyer last while on his hold; the nickel (Bouye) and outside reserve (Ball) roles named on the game chart. No other order change: Posluszny keeps his base place on his October 3 clearance and Stanford his third place. Week 5 inactives: Poyer by medical instruction; Butler, Grimes, Linsley, Edebali, Gabriel and Hoskins under the selected game plan, Todd Davis dressing.",
    "sources": [
     {
      "label": "Medical history",
@@ -558,7 +678,13 @@
    ],
    "events": [
     "2014-10-04-pittsburgh-preparation-closed"
-   ]
+   ],
+   "as_written": {
+    "date": "September 29 to October 4, 2014",
+    "event": "Pittsburgh preparation: Stanford and Phillips cleared September 29, Butler released October 2, Posluszny cleared October 3; Poyer held; Stone's Week 5 receiver order, defensive-back order and seats and inactives (October 4)",
+    "source": "[Medical history](../../Medical/medical_history.md#september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held); [Week 5 record](../../../Regular_Season/Games/Week_05/output.md)",
+    "change": "Receiver order re-set by Stone for Week 5: Adams (X), Thielen (H), Hawkins (Z), Hurns, Nicks (fifth, the X relief only), Gabriel. Defensive-back order: Talib, Verner, Rambo, Trawick, Bouye (nickel), Prosinski (sixth defensive back), Phillips, Ball (outside reserve), Butler, then Poyer last while on his hold; the kernel roles nickel (Bouye) and outside_reserve (Ball) added to the game input. No other order change: Posluszny keeps his base place on his October 3 clearance and Stanford his third place. Week 5 inactives: Poyer by medical instruction; Butler, Grimes, Linsley, Edebali, Gabriel and Hoskins under the packet's selected plan, Todd Davis dressing. Both JSON copies changed with this row"
+   }
   },
   {
    "date": "October 5, 2014",
@@ -577,7 +703,13 @@
    ],
    "events": [
     "2014-10-05-week-5-vs-pittsburgh"
-   ]
+   ],
+   "as_written": {
+    "date": "October 5, 2014",
+    "event": "Week 5 against Pittsburgh: availability notes",
+    "source": "[Week 5 game record](../../../Regular_Season/Games/Week_05/output.md); [medical history](../../Medical/medical_history.md#october-5-week-5-injuries-against-pittsburgh)",
+    "change": "No order change and no Stone depth decision. Availability notes only: Brynden Trawick out, minor (October 5; not removed, 60 defensive snaps; projected return October 11, reassessment October 7); Christian Jones out, minor (October 5; not removed, 18 kicking-game snaps; projected return October 6, reassessment October 6). Neither was removed, so no Jacksonville substitution was recorded. The seven Week 5 inactives were applied as set; Nicks dressed with no snap recorded and Todd Davis played 18 kicking-game snaps. The Week 6 inactives and any order change are Stone's after the October 6 and 7 exams. Both JSON copies: availability notes and this row in the working copy; the released game input unchanged until Stone's Week 6 decision"
+   }
   }
  ]
 }
