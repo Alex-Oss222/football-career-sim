@@ -2,59 +2,6 @@
  "schema_version": 1,
  "name": "Muhammad Wilkerson",
  "gsis_id": "00-0027968",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [],
- "awards": [
-  {
-   "season": 2013,
-   "award": "AFC Defensive Player of the Week (2013, Week 7)",
-   "decided": {
-    "season": 2013,
-    "file": "results.json",
-    "key": "week-7",
-    "slot": "AFC-defense"
-   }
-  },
-  {
-   "season": 2013,
-   "award": "AFC Defensive Player of the Week (2013, Week 15)",
-   "decided": {
-    "season": 2013,
-    "file": "results.json",
-    "key": "week-15",
-    "slot": "AFC-defense"
-   }
-  },
-  {
-   "season": 2013,
-   "award": "AP First-Team All-Pro (2013, DE)",
-   "decided": {
-    "season": 2013,
-    "file": "season_honours_results.json",
-    "key": "all_pro.first",
-    "slot": "DE"
-   }
-  },
-  {
-   "season": 2013,
-   "award": "Pro Bowl selection (2013, DE)",
-   "decided": {
-    "season": 2013,
-    "file": "season_honours_results.json",
-    "key": "pro_bowl.selections",
-    "slot": "DE"
-   }
-  }
- ],
  "transactions": []
 }

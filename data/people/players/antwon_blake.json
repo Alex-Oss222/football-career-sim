@@ -2,17 +2,6 @@
  "schema_version": 1,
  "name": "Antwon Blake",
  "gsis_id": "00-0029050",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [
   {
    "season": 2013,
@@ -27,7 +16,6 @@
    "by": "Jacksonville staff",
    "standing_as_written": "Starting staff view; exact theoretical personnel grades",
    "position": "S",
-   "age_as_written": "23",
    "identity": "A small, mobile developmental defensive back being reviewed at safety in 2013. I see quickness and pursuit utility ahead of the route reads and positioning required for a full safety role.",
    "previous_profile": "[2013 baseline](career/2013/player_profiles/antwon_blake.md)",
    "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
@@ -253,7 +241,6 @@
    "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/antwon_blake.md at commit 332d70b"
   }
  ],
- "awards": [],
  "transactions": [
   {
    "date": "2013-08-31",

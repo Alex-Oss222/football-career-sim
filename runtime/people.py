@@ -9,20 +9,21 @@ season. A record holds only the facts that have no other single owner:
   was written on (grades, league comparison, the staff read, who and when,
   the dated updates); an assessment that still has its own owner (a frozen
   2013 final player sheet) is a pointer, ``{"season", "stage", "owner"}``.
-- ``awards``: each award decided on record, with ``decided`` naming the
-  season, the results file in that season's awards data and the entry, so a
-  check can confirm the records and the draws agree (award_errors).
+  An assessment stores no age: his age on the assessment date is worked out
+  from his birth date (the as-written card, pinned by ``transcribed_from``,
+  keeps the text it carried).
 - ``transactions``: the dated moves the season records hold (drafted,
   signed, traded, released, re-signed, reserve lists), each with its source.
   A date is as precise as its source: YYYY-MM-DD, YYYY-MM or YYYY, with
   ``label`` carrying a window the source gives without an exact day.
 
-Every other fact a page shows is read through ``read_through``, which names
-the one owner of each: the birth-date registry with the canon overrides
-(runtime/player_bios.py), the listed identity, the league database (drafts
-before 2013), the photo registry, the number rule and the game records
-(runtime/player_cards.py), the roster and the contract inputs. Nothing here
-reads a hidden value, and no game, evaluation or decision reads a record.
+Every other fact a page shows is read, at build time, from the owners in
+``READ_THROUGH``, in the order listed there (a later owner is read only when
+the earlier ones hold nothing for him). The map lives here only; a record
+does not copy it. Awards are among those facts: the award results own every
+decided award, and the page reads them there (runtime/player_cards.award_entries),
+so a record never holds one. Nothing here reads a hidden value, and no game,
+evaluation or decision reads a record.
 """
 from __future__ import annotations
 
@@ -36,29 +37,41 @@ from .season_layout import PLAYER_RECORDS
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_VERSION = 1
-# The owner of each fact a player page reads, by the name a record points to.
+# The owners a player page reads, by the name READ_THROUGH uses.
 OWNERS = {
-    "birth_dates": "the birth-date registry with the canon overrides (runtime/player_bios.py)",
+    "canon_overrides": "the user's canon changes to a researched fact (data/people/canon_overrides.json)",
+    "birth_date_corrections": "the reviewed birth-date corrections (library/data/player_birth_date_corrections.json)",
+    "birth_date_registry": "the birth-date registry (library/data/player_birth_dates.json)",
+    "week1_rosters": "the 2014 Week 1 rosters (library/data/2014_week1_rosters_branch_adjusted.json)",
+    "league_database": "the league player database (each season's league personnel records in the data area)",
     "listed_identity": "the listed player identity: height, weight, college and listed numbers",
-    "league_database": "the league player database: college and drafts before 2013",
+    "record": "the player's permanent record (its transactions)",
     "photos": "the open-licensed photo registry",
     "number_rule": "the number rule of the league player cards (runtime/player_cards.py)",
     "game_records": "the closed game records, read through the statbook rules (runtime/player_cards.py)",
     "roster": "the current Jacksonville roster (position and status)",
     "player_contracts": "the Jacksonville contract inputs (salary by year)",
+    "award_results": "the award results of each season's awards data (runtime/player_cards.award_entries)",
 }
+# Each fact a page shows and its owners, in the order they are read: a later owner only when the
+# earlier ones hold nothing for him (runtime/player_cards.Identity.birth_date and card_data,
+# runtime/player_pages.physical_line, draft_view and render).
 READ_THROUGH = {
-    "birth_date": "birth_dates",
-    "height_weight": "listed_identity",
-    "college": "league_database",
-    "draft_before_2013": "league_database",
-    "photo": "photos",
-    "number": "number_rule",
-    "statistics": "game_records",
-    "position_and_status": "roster",
-    "contract": "player_contracts",
+    "birth_date": ("canon_overrides", "birth_date_corrections", "birth_date_registry", "week1_rosters",
+                   "league_database"),
+    "height_weight": ("listed_identity",),
+    "college": ("league_database", "listed_identity"),
+    "draft": ("record", "league_database"),
+    "photo": ("photos",),
+    "number": ("number_rule",),
+    "statistics": ("game_records",),
+    "position_and_status": ("roster", "game_records"),
+    "contract": ("player_contracts",),
+    "awards": ("award_results",),
 }
-RECORD_KEYS = ("schema_version", "name", "gsis_id", "read_through", "assessments", "awards", "transactions")
+RECORD_KEYS = ("schema_version", "name", "gsis_id", "assessments", "transactions")
+# Facts other owners hold, which an assessment never stores (his age is worked out from his birth date).
+OWNED_IN_ASSESSMENT = frozenset({"age", "age_as_written", "birth_date"})
 OPTIONAL_KEYS = ("game_key",)
 TRANSACTION_KINDS = frozenset({
     "drafted", "signed", "resigned", "traded", "released", "waived", "claimed", "cleared", "practice_squad",
@@ -98,7 +111,7 @@ def new_record(name, gsis_id, game_key=None):
     record = {"schema_version": SCHEMA_VERSION, "name": name, "gsis_id": gsis_id}
     if game_key and not gsis_id:
         record["game_key"] = game_key
-    record.update({"read_through": dict(READ_THROUGH), "assessments": [], "awards": [], "transactions": []})
+    record.update({"assessments": [], "transactions": []})
     return record
 
 
@@ -142,9 +155,10 @@ def record_errors(rid, record, root=ROOT):
         errors.append("%s: unsupported schema version" % label)
     if not record["name"] or (not record["gsis_id"] and not record.get("game_key")):
         errors.append("%s: a record needs a name and a gsis id or game key" % label)
-    if record["read_through"] != READ_THROUGH:
-        errors.append("%s: read_through must name the owners in runtime/people.py" % label)
     for a in record["assessments"]:
+        if OWNED_IN_ASSESSMENT & set(a):
+            errors.append("%s: an assessment stores no %s; it is worked out from its owner"
+                          % (label, ", ".join(sorted(OWNED_IN_ASSESSMENT & set(a)))))
         if not isinstance(a.get("season"), int) or a.get("stage") not in ("opening", "entry", "final"):
             errors.append("%s: an assessment needs a season and a stage" % label)
         elif "owner" in a:
@@ -160,7 +174,4 @@ def record_errors(rid, record, root=ROOT):
             errors.append("%s: transaction source missing: %s" % (label, t["source"]))
     if record["transactions"] != sorted(record["transactions"], key=sort_key):
         errors.append("%s: transactions must be in date order" % label)
-    for w in record["awards"]:
-        if not (isinstance(w.get("season"), int) and w.get("award") and isinstance(w.get("decided"), dict)):
-            errors.append("%s: an award needs its season, its text and where it was decided" % label)
     return errors

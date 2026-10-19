@@ -2,17 +2,6 @@
  "schema_version": 1,
  "name": "Charles Leno Jr.",
  "gsis_id": "00-0031095",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [
   {
    "season": 2014,
@@ -22,7 +11,6 @@
    "by": "Jacksonville staff",
    "standing_as_written": "Rookie; no NFL standing. Staff view: developmental reserve tackle",
    "position": "OT",
-   "age_as_written": "22",
    "identity": "A four-year college starter, 39 consecutive games, the last 26 at left tackle, with good short-area movement and a long frame; he did not run at the combine and his strength marks are light for the position.",
    "previous_profile": "None; 2014 rookie. The starting view rests on pre-draft public evidence only",
    "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
@@ -173,7 +161,6 @@
    "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/charles_leno_jr.md at commit 332d70b"
   }
  ],
- "awards": [],
  "transactions": [
   {
    "date": "2014-05-10",

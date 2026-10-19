@@ -2,17 +2,6 @@
  "schema_version": 1,
  "name": "Daniel Te'o-Nesheim",
  "gsis_id": "00-0027689",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [
   {
    "season": 2014,
@@ -22,7 +11,6 @@
    "by": "Jacksonville staff",
    "standing_as_written": "Starting staff view; exact theoretical personnel grades",
    "position": "DE",
-   "age_as_written": "26",
    "identity": "A power-oriented edge reserve suited to a defined run-setting assignment. My starting view gives him more edge/contain utility than speed-rush or counter value.",
    "previous_profile": "New Jacksonville player; no prior Jacksonville annual profile",
    "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
@@ -227,19 +215,6 @@
    "one_line": "A power-oriented edge reserve suited to a defined run-setting assignment. My starting view gives him more edge/contain utility than speed-rush or counter value.",
    "updates": [],
    "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/daniel_te_o_nesheim.md at commit 332d70b"
-  }
- ],
- "awards": [
-  {
-   "season": 2013,
-   "award": "Pro Bowl selection, replacement (2013, DE)",
-   "decided": {
-    "season": 2013,
-    "file": "season_honours_results.json",
-    "key": "pro_bowl.selections",
-    "slot": "DE",
-    "role": "replacement"
-   }
   }
  ],
  "transactions": [

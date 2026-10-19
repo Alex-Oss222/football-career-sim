@@ -38,6 +38,7 @@ from scripts import (close_week, league_awards, render_box_score, render_season_
                      render_standings, render_team_tracker, update_player_cards)
 from scripts.validate_repository import validate
 from local_private_service import local_service
+from support_page_history import keep_as_history
 from support_rosters import game_day_roster
 
 JAX = close_week.PROTAGONIST
@@ -240,6 +241,11 @@ class SeasonClosure2014Tests(unittest.TestCase):
             end = render_inseason_rails.END
             tail = current.split(end, 1)[1] if end in current else "\n"
             page.write_text(generated.split(end)[0] + end + tail, encoding="utf-8")
+
+        # The synthetic slate is a Week 1, so the pages it rewrote that were
+        # written before Week 6 stay history in the copy (rebuild rule 1); a
+        # real closure from Week 6 on rewrites them as checked pages.
+        keep_as_history(root)
 
         # The repository validator accepts the closed, regenerated temporary
         # root. A checkout mid-edit may already carry continuity errors of its

@@ -2,17 +2,6 @@
  "schema_version": 1,
  "name": "Montell Owens",
  "gsis_id": "00-0024103",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [
   {
    "season": 2013,
@@ -27,7 +16,6 @@
    "by": "Jacksonville staff",
    "standing_as_written": "Starting staff view; exact theoretical personnel grades",
    "position": "FB",
-   "age_as_written": "29",
    "identity": "A blocking and special-teams fullback who can handle a small carry or flat-receiving package. I see utility and dependable physical work before I see a featured offensive weapon.",
    "previous_profile": "[2013 baseline](career/2013/player_profiles/montell_owens.md)",
    "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
@@ -220,7 +208,6 @@
    "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/montell_owens.md at commit 332d70b"
   }
  ],
- "awards": [],
  "transactions": [
   {
    "date": "2011-10-04",

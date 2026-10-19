@@ -2,49 +2,6 @@
  "schema_version": 1,
  "name": "Lance Briggs",
  "gsis_id": "00-0022128",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [],
- "awards": [
-  {
-   "season": 2013,
-   "award": "NFC Defensive Player of the Month (2013, November)",
-   "decided": {
-    "season": 2013,
-    "file": "results.json",
-    "key": "month-November",
-    "slot": "NFC-defense"
-   }
-  },
-  {
-   "season": 2013,
-   "award": "AP Second-Team All-Pro (2013, OLB)",
-   "decided": {
-    "season": 2013,
-    "file": "season_honours_results.json",
-    "key": "all_pro.second",
-    "slot": "OLB"
-   }
-  },
-  {
-   "season": 2013,
-   "award": "Pro Bowl selection (2013, OLB)",
-   "decided": {
-    "season": 2013,
-    "file": "season_honours_results.json",
-    "key": "pro_bowl.selections",
-    "slot": "OLB"
-   }
-  }
- ],
  "transactions": []
 }

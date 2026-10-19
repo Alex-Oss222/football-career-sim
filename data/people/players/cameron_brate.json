@@ -2,17 +2,6 @@
  "schema_version": 1,
  "name": "Cameron Brate",
  "gsis_id": "00-0031273",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [
   {
    "season": 2014,
@@ -22,7 +11,6 @@
    "by": "Jacksonville staff",
    "standing_as_written": "Rookie; no NFL standing. Staff view: third tight end competition",
    "position": "TE",
-   "age_as_written": "22",
    "identity": "A receiving tight end from Harvard with reliable hands and route feel; blocking strength and level of competition are the limits.",
    "previous_profile": "None; 2014 rookie. The starting view rests on pre-draft public evidence only",
    "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
@@ -188,7 +176,6 @@
    "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/cameron_brate.md at commit 332d70b"
   }
  ],
- "awards": [],
  "transactions": [
   {
    "date": "2014-05-10",

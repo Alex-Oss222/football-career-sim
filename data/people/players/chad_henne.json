@@ -2,17 +2,6 @@
  "schema_version": 1,
  "name": "Chad Henne",
  "gsis_id": "00-0026197",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [
   {
    "season": 2013,
@@ -27,7 +16,6 @@
    "by": "Jacksonville staff",
    "standing_as_written": "Starting staff view; exact theoretical personnel grades",
    "position": "QB",
-   "age_as_written": "28",
    "identity": "A backup pocket quarterback who holds changed-picture protection resets and on-schedule Stick/Drive timing. Tempo and substitution communication is his unfinished work; a full backup season gave role experience without enough game evidence for a broader ceiling.",
    "previous_profile": "[2013 baseline](career/2013/player_profiles/chad_henne.md)",
    "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
@@ -261,7 +249,6 @@
    "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/chad_henne.md at commit 332d70b"
   }
  ],
- "awards": [],
  "transactions": [
   {
    "date": "2012-03",

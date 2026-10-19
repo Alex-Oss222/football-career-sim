@@ -1,7 +1,8 @@
 """The player pages (rebuild step 3a): one builder for every player page.
 
 Every page is built from the player's permanent record (runtime/people.py)
-and the owners its ``read_through`` names, in the layout the user approved on
+and the owners runtime/people.READ_THROUGH names, in the order it gives
+(awards from the award results), in the layout the user approved on
 October 19, 2026 on the Kirk Cousins page (docs/rebuild_plan.md, "The pages
 to read", Player):
 
@@ -24,7 +25,8 @@ player folder is history: it is no longer written or checked, and the next
 season's folder takes over when that season becomes active. A page is built, never hand-edited: ``check`` rebuilds
 every page in memory and reports each that differs, and ``write`` creates an
 identity-only record for a player who first reaches the game records (no
-other fact is ever created). The pages carry no system wording; the clean-page
+other fact is ever created, and no record holds an award: the award results
+own them). The pages carry no system wording; the clean-page
 check in scripts/validate_repository.py reads ``MARKERS``.
 """
 from __future__ import annotations
@@ -409,12 +411,13 @@ def physical_line(ctx, record, p):
 
 
 def birth_date(ctx, record, p):
-    if p and p.get("birth_date"):
+    """His birth date from the owners in people.READ_THROUGH, in their order: his league card's,
+    worked out by Identity.birth_date, or for a player with no game on record the same owners
+    read by his record's name and gsis id."""
+    if p is not None:
         return p["birth_date"]
-    row = ctx.births.get(record["name"])
-    if row and row.get("birth_date") and (not record["gsis_id"] or row.get("gsis_id") == record["gsis_id"]):
-        return row["birth_date"]
-    return None
+    gsis = record["gsis_id"]
+    return ctx.ident.birth_date({record["name"]}, gsis, ctx.ident.week1_row(gsis, record["name"]))
 
 
 def page_date(ctx, record, p, controlled):
@@ -570,7 +573,8 @@ def render(ctx, record, target):
         lines += ["### " + heading, ""]
         lines += (sum(([t, ""] for t in stats[gtype]), []) if stats[gtype] else [empty, ""])
     lines += ["## Awards", ""]
-    lines += ["- %s" % w["award"] for w in record["awards"]] if record["awards"] else ["None."]
+    awards = p["awards"] if p else []  # the award results' own, matched to him in card_data
+    lines += ["- %s" % w for w in awards] if awards else ["None."]
     lines += ["", "## Transactions", ""]
     rows = transaction_rows(ctx, record)
     lines += [table(["Date", "Transaction"], rows, numeric_from=2)] if rows else ["None on record."]
@@ -652,8 +656,8 @@ def jaguars_index(ctx, rids):
     names = list(ctx.roster)
     current.sort(key=lambda r: (order.get(ctx.roster[r["name"]][0], 99), names.index(r["name"])))
     lines = ["# Jacksonville Jaguars players, %d" % ctx.active, "",
-             "Every player Jacksonville controls, by position, and the players who left during the %d league "
-             "year. Each page has the staff assessment, the contract, the statistics, the awards and the "
+             "Every player Jacksonville controls, by position, and the players who left after their %d staff "
+             "assessment. Each page has the staff assessment, the contract, the statistics, the awards and the "
              "transactions." % ctx.active, ""]
     if ctx.jax_latest:
         lines += ["As of %s%s." % (long_date(ctx.jax_latest), week_text(ctx, JAX, ctx.jax_latest)), ""]
@@ -734,13 +738,14 @@ def owned_folders(ctx):
 
 
 def check(root=ROOT):
-    """Errors: a record that breaks the schema, an award that disagrees with the draws, a player
-    in the game records with no record, and every page that differs from its rebuild."""
+    """Errors: a record that breaks the schema, an award decided on record whose winner is not in
+    the game records, a player in the game records with no record, and every page that differs
+    from its rebuild."""
     ctx = Context(root)
     errors = []
     for rid, record in sorted(ctx.records.items()):
         errors += people.record_errors(rid, record, ctx.root)
-    errors += award_errors(ctx)
+    errors += ["Award with no winner in the game records: %s" % a for a in ctx.data["unmatched_awards"]]
     expected, missing = build(ctx=ctx)
     errors += ["Player record missing for %s (%s); run the player page builder" % (p["name"], p["team"])
                for p in missing]
@@ -755,77 +760,10 @@ def check(root=ROOT):
     return errors
 
 
-def award_errors(ctx):
-    """Every award decided on record is on its winner's record, once, and no record holds another."""
-    decided = {}
-    name_team_key, name_keys = {}, {}
-    for r in player_cards.collect(ctx.root)["games"]:
-        key = ctx.ident.gsis(r["pid"], r["year"]) or "%s-%s" % (
-            player_cards.slugify(player_cards.display(r["pid"])), player_cards.GROUP_OF.get(r["pos"], "x"))
-        name_team_key.setdefault((r["pid"], r["team"], r["year"]), key)
-        name_keys.setdefault(r["pid"], set()).add(key)
-    for e in player_cards.award_entries(ctx.root, ctx.data["years"]):
-        key = name_team_key.get((e["player"], e["team"], e["season"]))
-        if key is None and len(name_keys.get(e["player"], ())) == 1:
-            key = next(iter(name_keys[e["player"]]))
-        decided.setdefault(key, []).append((e["season"], e["award"], json.dumps(e["decided"], sort_keys=True)))
-    errors = []
-    held = {}
-    for rid, record in ctx.records.items():
-        p = ctx.league_player(record)
-        key = p["key"] if p else None
-        held[key] = held.get(key, []) + [(w["season"], w["award"], json.dumps(w["decided"], sort_keys=True))
-                                         for w in record["awards"]]
-        if record["awards"] and key is None:
-            errors.append("%s holds awards but has no game on record" % rid)
-    for key in sorted(set(decided) | set(k for k in held if k)):
-        if sorted(decided.get(key, [])) != sorted(held.get(key, [])):
-            errors.append("Awards on the player record differ from the award results for %s" % key)
-    return errors
-
-
-def sync_awards(ctx):
-    """Make each record's awards the award results' own: add every award decided since to its
-    winner's record, and take off an award the results no longer give him (a draw voided and
-    replayed under an authorized migration). Returns the number of awards added or removed."""
-    by_key = {}
-    for rid, record in ctx.records.items():
-        p = ctx.league_player(record)
-        if p:
-            by_key[p["key"]] = rid
-    name_team_key, name_keys = {}, {}
-    for r in player_cards.collect(ctx.root)["games"]:
-        key = ctx.ident.gsis(r["pid"], r["year"]) or "%s-%s" % (
-            player_cards.slugify(player_cards.display(r["pid"])), player_cards.GROUP_OF.get(r["pos"], "x"))
-        name_team_key.setdefault((r["pid"], r["team"], r["year"]), key)
-        name_keys.setdefault(r["pid"], set()).add(key)
-    # One pointer can name several winners (two first-team All-Pro tackles share a slot).
-    decided = {}
-    for e in player_cards.award_entries(ctx.root, ctx.data["years"]):
-        key = name_team_key.get((e["player"], e["team"], e["season"]))
-        if key is None and len(name_keys.get(e["player"], ())) == 1:
-            key = next(iter(name_keys[e["player"]]))
-        rid = by_key.get(key)
-        if rid is not None:
-            decided.setdefault((rid, json.dumps(e["decided"], sort_keys=True)), e)
-    changed = 0
-    for rid, record in ctx.records.items():
-        kept = [w for w in record["awards"] if (rid, json.dumps(w["decided"], sort_keys=True)) in decided]
-        changed += len(record["awards"]) - len(kept)
-        record["awards"] = kept
-    have = {(rid, json.dumps(w["decided"], sort_keys=True)) for rid, r in ctx.records.items() for w in r["awards"]}
-    for (rid, pointer), e in decided.items():
-        if (rid, pointer) in have:
-            continue
-        ctx.records[rid]["awards"].append({"season": e["season"], "award": e["award"], "decided": e["decided"]})
-        changed += 1
-    return changed
-
-
 def write(root=ROOT):
-    """Create the records of players new to the game records (identity only), add newly decided
-    awards to their winners' records, then write every page and remove the folders' other files.
-    Returns (records created, awards added or removed, pages written, files removed)."""
+    """Create the records of players new to the game records (identity only), then write every
+    page and remove the folders' other files. Returns (records created, pages written, files
+    removed)."""
     root = Path(root).resolve()
     ctx = Context(root)
     _, missing = build(ctx=ctx)
@@ -837,14 +775,13 @@ def write(root=ROOT):
         taken.add(rid)
         ctx.records[rid] = record
         created += 1
-    added = sync_awards(ctx)
     for rid, record in ctx.records.items():
         path = people.folder(root) / ("%s.json" % rid)
         text = people.dump(record)
         if not path.is_file() or path.read_text(encoding="utf-8") != text:
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(text, encoding="utf-8")
-    if created or added:
+    if created:
         ctx = Context(root)
     expected, _ = build(ctx=ctx)
     written = removed = 0
@@ -862,7 +799,7 @@ def write(root=ROOT):
         for path in sorted(folder.rglob("*"), reverse=True):
             if path.is_dir() and not any(path.iterdir()):
                 path.rmdir()
-    return created, added, written, removed
+    return created, written, removed
 
 
 def built_page(text):

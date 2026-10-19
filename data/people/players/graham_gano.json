@@ -2,29 +2,6 @@
  "schema_version": 1,
  "name": "Graham Gano",
  "gsis_id": "00-0026858",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [],
- "awards": [
-  {
-   "season": 2013,
-   "award": "NFC Special Teams Player of the Week (2013, Week 2)",
-   "decided": {
-    "season": 2013,
-    "file": "results.json",
-    "key": "week-2",
-    "slot": "NFC-special_teams"
-   }
-  }
- ],
  "transactions": []
 }

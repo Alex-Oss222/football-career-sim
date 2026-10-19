@@ -2,49 +2,6 @@
  "schema_version": 1,
  "name": "Jeremy Ross",
  "gsis_id": "00-0028249",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [],
- "awards": [
-  {
-   "season": 2013,
-   "award": "NFC Special Teams Player of the Week (2013, Week 5)",
-   "decided": {
-    "season": 2013,
-    "file": "results.json",
-    "key": "week-5",
-    "slot": "NFC-special_teams"
-   }
-  },
-  {
-   "season": 2013,
-   "award": "NFC Special Teams Player of the Week (2013, Week 11)",
-   "decided": {
-    "season": 2013,
-    "file": "results.json",
-    "key": "week-11",
-    "slot": "NFC-special_teams"
-   }
-  },
-  {
-   "season": 2014,
-   "award": "NFC Special Teams Player of the Month (2014, September)",
-   "decided": {
-    "season": 2014,
-    "file": "results.json",
-    "key": "month-September",
-    "slot": "NFC-special_teams"
-   }
-  }
- ],
  "transactions": []
 }

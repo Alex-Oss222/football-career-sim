@@ -2,17 +2,6 @@
  "schema_version": 1,
  "name": "Aqib Talib",
  "gsis_id": "00-0026160",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [
   {
    "season": 2014,
@@ -22,7 +11,6 @@
    "by": "Jacksonville staff",
    "standing_as_written": "Starting staff view; exact theoretical personnel grades",
    "position": "CB",
-   "age_as_written": "28",
    "identity": "A physical outside corner with strong press and catch-point tools. My starting view is that he can challenge bigger receivers, with technique consistency still important to that matchup value.",
    "previous_profile": "New Jacksonville player; no prior Jacksonville annual profile",
    "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
@@ -262,7 +250,6 @@
    "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/aqib_talib.md at commit 332d70b"
   }
  ],
- "awards": [],
  "transactions": [
   {
    "date": "2014-03-11",

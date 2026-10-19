@@ -2,17 +2,6 @@
  "schema_version": 1,
  "name": "Travis Kelce",
  "gsis_id": "00-0030506",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [
   {
    "season": 2013,
@@ -27,7 +16,6 @@
    "by": "Jacksonville staff",
    "standing_as_written": "Starting staff view; exact theoretical personnel grades",
    "position": "TE",
-   "age_as_written": "24",
    "identity": "Alignment-flexible receiving tight end with above-starter speed, change of direction, route ability, hands and coverage recognition. He can work attached, from a wing or flexed into space; his receiving game is ahead of his inline blocking and pass-protection work.",
    "previous_profile": "[2013 baseline](career/2013/player_profiles/travis_kelce.md)",
    "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
@@ -278,7 +266,6 @@
    "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/travis_kelce.md at commit 332d70b"
   }
  ],
- "awards": [],
  "transactions": [
   {
    "date": "2013-04-26",

@@ -2,17 +2,6 @@
  "schema_version": 1,
  "name": "Sio Moore",
  "gsis_id": "00-0030529",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [
   {
    "season": 2013,
@@ -27,7 +16,6 @@
    "by": "Jacksonville staff",
    "standing_as_written": "Starting staff view; exact theoretical personnel grades",
    "position": "LB",
-   "age_as_written": "23",
    "identity": "An athletic package linebacker with range and useful pressure tools. I see his movement ahead of his run diagnosis and fit consistency, which need to become dependable before expanding the job.",
    "previous_profile": "[2013 baseline](career/2013/player_profiles/sio_moore.md)",
    "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
@@ -261,7 +249,6 @@
    "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/sio_moore.md at commit 332d70b"
   }
  ],
- "awards": [],
  "transactions": [
   {
    "date": "2013-04-27",

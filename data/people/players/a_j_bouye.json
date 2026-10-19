@@ -2,17 +2,6 @@
  "schema_version": 1,
  "name": "A.J. Bouye",
  "gsis_id": "00-0030228",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [
   {
    "season": 2013,
@@ -27,7 +16,6 @@
    "by": "Jacksonville staff",
    "standing_as_written": "Starting staff view; exact theoretical personnel grades",
    "position": "CB",
-   "age_as_written": "22",
    "identity": "A developmental outside corner with enough movement and catch-point size to pursue a reserve role. I see press technique and route recognition behind the physical outline of the player.",
    "previous_profile": "[2013 baseline](career/2013/player_profiles/a_j_bouye.md)",
    "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
@@ -275,7 +263,6 @@
    "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/a_j_bouye.md at commit 332d70b"
   }
  ],
- "awards": [],
  "transactions": [
   {
    "date": "2013",

@@ -8,22 +8,34 @@ file (.json, .py, .csv and the like) or into the data area or the code,
 names a script or module, carries HTML markup other than the page builder's
 own invisible markers (runtime/player_pages.MARKERS), a policy note, a
 disclaimer or a version label, or uses the words engine, branch, receipt,
-kernel, ledger, snapshot, checkpoint or simulation. A proper name that
-contains one of the words (Andre Branch) is allowed by name.
+kernel, ledger, snapshot, checkpoint or simulation. A player's full name
+that contains one of the words (Andre Branch, Tyvon Branch) is allowed by
+name, from the birth-date registry and the permanent player records; any
+other use of the word is caught.
 
 Which pages: every page the player page builder writes, and every Markdown
 page under career/ written from 2014 Week 6 on. The pages written before
-Week 6 are history (rule 1) and are listed, by path, in the folder map's
-PAGE_HISTORY file; they are exempt until a later build step rebuilds them, and
-a rebuilt page is checked by its marker.
+Week 6 are history (rule 1): the folder map's PAGE_HISTORY file holds each
+one's path and the sha256 digest of its bytes as they stood before Week 6,
+and a page is exempt only while its bytes still match that digest. A page
+rewritten from Week 6 on, by hand or by its generator (the standings, the
+annual record, the desk), is checked like a new one, so a generator must be
+cleaned before it rewrites a page after Week 5 (docs/rebuild_plan.md names
+the build step that cleans each such view). A page the player page builder
+writes is checked by its marker.
 
 Folder map. ``folder_map_errors`` fails when a script or runtime module,
 other than the folder map itself (runtime/season_layout.py, runtime/seasons.py)
 and the frozen research builders (scripts/research/), writes a season folder
 name or a year into a path: a path-like string constant with a year segment
 (career/2014/..., data/2013) or a season folder segment (Regular_Season,
-05_Regular_Season, ...), or such a name used as a path operand. A year passed
-to the map (SeasonPaths(2014)) is the map's to place. Named research and
+05_Regular_Season, ...); a season folder, a logical season folder name (the
+top-level names of LEGACY_MOVES: stats, regular_season, trades, ...) or a
+year used as a path part, an operand of "/" or a string argument of Path(),
+PurePosixPath(), os.path.join() or joinpath(); or a formatted path that
+starts with career/ or data/ followed by a slot (an f-string, a %-format, a
+.format() call or a + concatenation). A year passed to the map
+(SeasonPaths(2014), logical_path(year, "stats/...")) is the map's to place. Named research and
 playbook files whose names carry their year (library/data/2012_..., the
 playbook iterations) are fixed artifacts, not season folders, and are not
 season paths.
@@ -31,20 +43,20 @@ season paths.
 from __future__ import annotations
 
 import ast
+import hashlib
 import json
 import re
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from .season_layout import NUMBERED_FOLDERS, PAGE_HISTORY
+from .season_layout import LEGACY_MOVES, NUMBERED_FOLDERS, PAGE_HISTORY
 
 ROOT = Path(__file__).resolve().parents[1]
 WORDS = re.compile(r"\b(engines?|branch(?:es)?|receipts?|kernels?|ledgers?|snapshots?|checkpoints?|"
                    r"simulat(?:e|es|ed|ing|ion|ions|or|ors))\b", re.I)
-# Proper names and licence names that contain a checked word or code: a surname (Andre Branch,
-# Tyvon Branch) and the Creative Commons licence names of the photo credits.
-ALLOWED = (re.compile(r"\b[A-Z][A-Za-z'.]+ Branch\b"), re.compile(r"\bCC BY(?:-[A-Z]{2})*(?: \d\.\d)?"),
-           re.compile(r"\bCC0\b"))
+# Licence names that contain a checked code: the Creative Commons licences of the photo credits.
+# A player's name that contains a checked word (Andre Branch) is allowed by name (proper_names).
+ALLOWED = (re.compile(r"\bCC BY(?:-[A-Z]{2})*(?: \d\.\d)?"), re.compile(r"\bCC0\b"))
 CODES = (
     (re.compile(r"(?<![\w'-])\d{1,2}[A-Z](?![\w'-])"), "internal code"),
     (re.compile(r"(?<![\w'-])[A-Z]\d{1,3}[a-z]?(?![\w'-])"), "internal code"),
@@ -69,9 +81,32 @@ SYSTEM_SUFFIXES = (".json", ".jsonl", ".py", ".csv", ".gz", ".sqlite", ".db", ".
 SYSTEM_DIRS = ("data", "runtime", "scripts", "tests", ".sim_cache")
 
 
-def page_errors(rel, text, markers=()):
-    """The clean-page problems of one page (``rel`` is its repository path)."""
+def proper_names(root=ROOT):
+    """The pattern of the players' full names that contain a checked word (Alan Branch, Andre
+    Branch, Tyvon Branch): the names in the birth-date registry and the permanent player records.
+    Only these names let the word through; any other use of it is caught."""
+    root = Path(root).resolve()
+    if root not in _NAMES:
+        from . import people, player_bios
+        names = set()
+        try:
+            names |= set(player_bios.load(root, overrides=False))
+        except (OSError, ValueError):
+            pass
+        names |= {r["name"] for r in people.load_all(root).values()}
+        found = sorted((n for n in names if WORDS.search(n)), key=lambda n: (-len(n), n))
+        _NAMES[root] = re.compile(r"\b(?:%s)\b" % "|".join(map(re.escape, found))) if found else None
+    return _NAMES[root]
+
+
+_NAMES = {}
+
+
+def page_errors(rel, text, markers=(), root=ROOT):
+    """The clean-page problems of one page (``rel`` is its repository path); a player's name
+    from ``root``'s registry and records that contains a checked word is allowed."""
     problems = []
+    names = proper_names(root)
     lines = text.splitlines()
     for number, line in enumerate(lines, 1):
         if line.strip() in markers:
@@ -89,7 +124,7 @@ def page_errors(rel, text, markers=()):
                 found.append("link to a system file: %s" % dest)
         prose = LINK.sub(lambda m: m.group(2), line)
         prose = re.sub(r"https?://\S+", "", prose)
-        for pattern in ALLOWED:
+        for pattern in ALLOWED + ((names,) if names else ()):
             prose = pattern.sub(" ", prose)
         for m in WORDS.finditer(prose):
             found.append("system word: %s" % m.group(1))
@@ -122,24 +157,31 @@ def _normalise(path):
     return "/".join(out)
 
 
+def digest(data):
+    """The digest the page history records for a page's bytes."""
+    return hashlib.sha256(data).hexdigest()
+
+
 def history(root=ROOT):
-    """The pages written before 2014 Week 6, by repository path."""
+    """{repository path: digest} of the pages written before 2014 Week 6."""
     path = Path(root) / PAGE_HISTORY
     if not path.is_file():
-        return set()
-    return set(json.loads(path.read_text(encoding="utf-8"))["pages"])
+        return {}
+    return dict(json.loads(path.read_text(encoding="utf-8"))["pages"])
 
 
 def checked_pages(root=ROOT):
-    """(path, text) for every page the rule covers: built pages and pages newer than the history."""
+    """(path, text) for every page the rule covers: built pages, pages newer than the history and
+    history pages whose bytes no longer match their recorded digest."""
     from .player_pages import built_page
     root = Path(root)
     old = history(root)
     out = []
     for path in sorted((root / "career").rglob("*.md")):
         rel = path.relative_to(root).as_posix()
-        text = path.read_text(encoding="utf-8")
-        if built_page(text) or rel not in old:
+        data = path.read_bytes()
+        text = data.decode("utf-8")
+        if built_page(text) or old.get(rel) != digest(data):
             out.append((rel, text))
     return out
 
@@ -148,16 +190,32 @@ def clean_errors(root=ROOT):
     from .player_pages import MARKERS
     errors = []
     for rel, text in checked_pages(root):
-        errors += page_errors(rel, text, MARKERS)
+        errors += page_errors(rel, text, MARKERS, root)
     return errors
 
 
 # ------------------------------------------------------------------ folder map
 SEASON_FOLDERS = frozenset(set(NUMBERED_FOLDERS) | set(NUMBERED_FOLDERS.values()) | {"League", "Supporting_Records"})
+# The logical season folder names code passes to the map (SeasonPaths(year).record("stats/...")):
+# the top-level folder names of LEGACY_MOVES. Written as a path part of their own (ROOT / "career" /
+# str(year) / "stats"), they place a season record without the map. A file name (depth_chart.json)
+# inside a folder the map gave is not a season path.
+LOGICAL_NAMES = frozenset(key.split("/")[0] for key in LEGACY_MOVES if "." not in key.split("/")[0])
+PART_NAMES = SEASON_FOLDERS | LOGICAL_NAMES
 MAP_MODULES = ("runtime/season_layout.py", "runtime/seasons.py")
 YEAR = re.compile(r"^(19|20)\d{2}$")
 PATH_TOKEN = re.compile(r"[^\s()\[\]<>\"'`,;|]+")
 PATH_START = ("career/", "data/", "library/", "state/", "docs/", "../", "./")
+# Calls whose string arguments are path parts, like the operands of "/".
+PATH_CALLS = frozenset({"Path", "PurePath", "PurePosixPath", "PureWindowsPath"})
+PATH_METHODS = frozenset({"join", "joinpath"})
+# A formatted path into a season: career/ or data/ at the start of a path (the start of the text,
+# after a space, quote or bracket, after ../, or after a slot and /), followed by a slot ({year},
+# %d, {}). A research file named by its year inside library/data/ is not a season path.
+_START = r"(?:^/?|[\s(\[\"'`=]|\.\./)"
+FORMATTED_ROOT = re.compile(_START + r"(?:career|data)/$")
+PERCENT_ROOT = re.compile(r"(?:" + _START + r"|%[sd]/)(?:career|data)/%")
+FORMAT_ROOT = re.compile(r"(?:" + _START + r"|\}/)(?:career|data)/\{")
 
 
 def _docstrings(tree):
@@ -188,6 +246,52 @@ def string_errors(value):
     return None
 
 
+def part_errors(value):
+    """Why a string used as a path part (an operand of "/", an argument of Path() or
+    os.path.join()) places a season record itself, or None."""
+    for segment in value.split("/"):
+        if segment in PART_NAMES or YEAR.match(segment):
+            return "a season folder, logical season name or year as a path part (%r)" % value
+    return None
+
+
+def _is_str(node):
+    return isinstance(node, ast.Constant) and isinstance(node.value, str)
+
+
+def _path_call(node):
+    """Whether a call joins path parts: Path(...), PurePosixPath(...), os.path.join(...),
+    posixpath.join(...) or path.joinpath(...); a string's own join ("/".join) is not one."""
+    if not isinstance(node, ast.Call):
+        return False
+    func = node.func
+    if isinstance(func, ast.Name):
+        return func.id in PATH_CALLS
+    if isinstance(func, ast.Attribute):
+        if func.attr in PATH_CALLS:
+            return True
+        return func.attr in PATH_METHODS and not _is_str(func.value)
+    return False
+
+
+def formatted_errors(node):
+    """Why a formatted string (f-string, %-format, .format(), +) builds a season path, or None."""
+    if isinstance(node, ast.JoinedStr):
+        for piece, after in zip(node.values, node.values[1:]):
+            if _is_str(piece) and isinstance(after, ast.FormattedValue) and FORMATTED_ROOT.search(piece.value):
+                return "a formatted season path (%s{...})" % piece.value
+    elif isinstance(node, ast.BinOp) and _is_str(node.left):
+        if isinstance(node.op, ast.Mod) and PERCENT_ROOT.search(node.left.value):
+            return "a formatted season path (%r %% ...)" % node.left.value
+        if (isinstance(node.op, ast.Add) and not _is_str(node.right)
+                and FORMATTED_ROOT.search(node.left.value)):
+            return "a season path built by + (%r + ...)" % node.left.value
+    elif (isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute) and node.func.attr == "format"
+          and _is_str(node.func.value) and FORMAT_ROOT.search(node.func.value.value)):
+        return "a formatted season path (%r.format(...))" % node.func.value.value
+    return None
+
+
 def module_errors(rel, source):
     tree = ast.parse(source)
     docs = _docstrings(tree)
@@ -197,17 +301,18 @@ def module_errors(rel, source):
             parents[id(child)] = node
     errors = []
     for node in ast.walk(tree):
-        if not (isinstance(node, ast.Constant) and isinstance(node.value, str)) or id(node) in docs:
-            continue
-        why = string_errors(node.value)
-        parent = parents.get(id(node))
-        if why is None and isinstance(parent, ast.BinOp) and isinstance(parent.op, ast.Div):
-            if node.value in SEASON_FOLDERS or YEAR.match(node.value):
-                why = "a season folder or year as a path part (%r)" % node.value
+        why = formatted_errors(node)
+        if why is None and _is_str(node) and id(node) not in docs:
+            why = string_errors(node.value)
+            parent = parents.get(id(node))
+            if why is None and isinstance(parent, ast.BinOp) and isinstance(parent.op, ast.Div):
+                why = part_errors(node.value)
+            if why is None and _path_call(parent) and node in parent.args:
+                why = part_errors(node.value)
         if why:
-            errors.append("%s:%d: writes %s itself; find it through the folder map (runtime/season_layout.py)"
-                          % (rel, node.lineno, why))
-    return errors
+            errors.append((node.lineno, "%s:%d: writes %s itself; find it through the folder map "
+                           "(runtime/season_layout.py)" % (rel, node.lineno, why)))
+    return [e for _, e in sorted(errors)]
 
 
 def folder_map_errors(root=ROOT):

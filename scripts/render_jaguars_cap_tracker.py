@@ -12,7 +12,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from runtime.player_bios import biographies
-from runtime.season_layout import repository_relative
+from runtime.season_layout import logical_path, repository_relative
 from runtime.seasons import SeasonPaths, page_link
 INPUT = Path('career/finances/supporting_records/financial_inputs.json')
 OUTPUT = Path('career/finances/salary_cap/cap_tracker.md')
@@ -37,7 +37,7 @@ def departure_source(player, data):
     if Path(source).name != 'ledger.md':
         return source
     if player['control'] == 'traded':
-        return f"career/{player['departure_date'][:4]}/trades/trades.md"
+        return logical_path(int(player['departure_date'][:4]), 'trades/trades.md')
     return next((path for path in player['sources'] if path.endswith('/contract_status.md')),
                 data['current_contract_table'])
 

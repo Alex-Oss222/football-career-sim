@@ -2,17 +2,6 @@
  "schema_version": 1,
  "name": "Mike Brewster",
  "gsis_id": "00-0029052",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [
   {
    "season": 2013,
@@ -27,7 +16,6 @@
    "by": "Jacksonville staff",
    "standing_as_written": "Starting staff view; exact theoretical personnel grades",
    "position": "C",
-   "age_as_written": "24",
    "identity": "A young center who can hold the operation and communicate the core protection work. I see a viable starting option whose anchor, leverage and second-level work remain less developed than his operation.",
    "previous_profile": "[2013 baseline](career/2013/player_profiles/mike_brewster.md)",
    "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
@@ -250,7 +238,6 @@
    "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/mike_brewster.md at commit 332d70b"
   }
  ],
- "awards": [],
  "transactions": [
   {
    "date": "2012",

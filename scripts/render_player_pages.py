@@ -8,17 +8,16 @@ under career/league_players/ (with the league index and the club pages) and
 each Jacksonville player page in the active season's player folder (with its
 index), in the approved layout: header, physical line and photo; staff
 assessment; contract; statistics; awards; transactions. The pages are built
-from data/people/players/ and the owners each record names (runtime/people.py,
-runtime/player_pages.py), never edited by hand.
+from data/people/players/ and the owners runtime/people.READ_THROUGH names
+(the awards from the award results), never edited by hand.
 
 Writing first adds an identity-only record for any player new to the game
-records and makes each record's awards the award results' own (a newly
-decided award is copied onto its winner's record, one the results no longer
-give him is taken off); no other fact is created. Files under the two folders that no longer belong to a
-page are removed. --check writes nothing and fails on a record that breaks
-the schema, a record's awards that differ from the award results, a player
-without a record and any page that differs from its rebuild. Run after every
-closed game and after any change to a record (docs/update_workflow.md).
+records; no other fact is created. Files under the two folders that no
+longer belong to a page are removed. --check writes nothing and fails on a
+record that breaks the schema, an award whose winner is not in the game
+records, a player without a record and any page that differs from its
+rebuild. Run after every closed game and its awards, and after any change to
+a record (docs/update_workflow.md).
 """
 from __future__ import annotations
 
@@ -48,9 +47,8 @@ def main(argv=None):
         if len(errors) > 50:
             print("... and %d more" % (len(errors) - 50))
         return 1 if errors else 0
-    created, added, written, removed = player_pages.write(args.root)
-    print("player pages: %d records created, %d awards synced, %d pages written, %d files removed"
-          % (created, added, written, removed))
+    created, written, removed = player_pages.write(args.root)
+    print("player pages: %d records created, %d pages written, %d files removed" % (created, written, removed))
     return 0
 
 

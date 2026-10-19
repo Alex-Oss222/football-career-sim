@@ -2,17 +2,6 @@
  "schema_version": 1,
  "name": "Austin Pasztor",
  "gsis_id": "00-0029076",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [
   {
    "season": 2013,
@@ -27,7 +16,6 @@
    "by": "Jacksonville staff",
    "standing_as_written": "Starting staff view; exact theoretical personnel grades",
    "position": "G",
-   "age_as_written": "23",
    "identity": "A physical interior reserve with useful recovery but uneven combinations and leverage. I see a backup who can cover a job, with less consistent coordination than the starting pair.",
    "previous_profile": "[2013 baseline](career/2013/player_profiles/austin_pasztor.md)",
    "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
@@ -242,7 +230,6 @@
    "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/austin_pasztor.md at commit 332d70b"
   }
  ],
- "awards": [],
  "transactions": [
   {
    "date": "2012-09-17",

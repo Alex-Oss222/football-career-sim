@@ -2,17 +2,6 @@
  "schema_version": 1,
  "name": "John Parker Wilson",
  "gsis_id": "00-0026505",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [
   {
    "season": 2013,
@@ -27,7 +16,6 @@
    "by": "Jacksonville staff",
    "standing_as_written": "Starting staff view; exact theoretical personnel grades",
    "position": "QB",
-   "age_as_written": "28",
    "identity": "A reserve pocket quarterback whose value is clean execution of a defined menu. I would trust his preparation before I would ask him to create offense under disruption.",
    "previous_profile": "[2013 baseline](career/2013/player_profiles/john_parker_wilson.md)",
    "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
@@ -261,7 +249,6 @@
    "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/john_parker_wilson.md at commit 332d70b"
   }
  ],
- "awards": [],
  "transactions": [
   {
    "date": "2012-12-30",

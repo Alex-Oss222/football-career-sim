@@ -8,11 +8,13 @@ images are no longer drawn. This module keeps what the pages read through:
   club of his latest game, his clubs, age on each season's opening game and number by season
   (``season_number``), and a block per season and game type (regular season, playoffs) holding
   his games, the totals of every recorded field and which later-record fields every game carries;
-- ``Identity``: the committed identity sources (the identity map, the birth-date registry with
-  the user's canon overrides through runtime/player_bios.py, the 2014 Week 1 rosters, the league
-  player database and the listed 2014 identity); a name-keyed entry is used only when its gsis id
-  is the player's;
-- ``award_entries``: every award decided on record and where it was decided;
+- ``Identity``: the committed identity sources (the identity map, the birth-date owners in the
+  order of runtime/people.READ_THROUGH: the user's canon overrides through runtime/player_bios.py,
+  the reviewed corrections, the registry, the 2014 Week 1 rosters and the league player
+  database; and the listed 2014 identity); a name-keyed entry is used only when its gsis id is
+  the player's;
+- ``award_entries``: every award decided on record and where it was decided, the owner of a
+  page's Awards section (card_data matches each to its winner as ``awards``);
 - ``jacksonville_rows``: the Season | Team | Age | # lead of the working cards before step 3a
   (scripts/update_player_cards.py keeps that format for the season-close tools).
 
@@ -345,11 +347,6 @@ class Identity:
         league = _load(SeasonPaths(2014, root).record("league/personnel/league_players.json"))["players"]
         self.college = {p["player_id"]: p["college"] for p in league if p.get("player_id") and p.get("college")}
         self.league_dob = {p["player_id"]: p["birth_date"] for p in league if p.get("player_id") and p.get("birth_date")}
-        self.jax_dob = {}
-        for row in SeasonPaths(2014, root).roster.read_text(encoding="utf-8").splitlines():
-            m = re.match(r"\|\s*([^|]+?)\s*\|\s*([A-Z]+)\s*\|\s*(\d{4}-\d{2}-\d{2})\s*\|", row)
-            if m:
-                self.jax_dob.setdefault(m.group(1), m.group(3))
 
     def gsis(self, name, year):
         a = self.branch.get(name)
@@ -365,10 +362,12 @@ class Identity:
                 row = None
         return row
 
-    def birth_date(self, names, gsis, week1, latest):
-        """Corrections first, then the registry, the 2014 Week 1 roster, the league player database
-        and Jacksonville's roster. A name-keyed entry counts only when it names the same gsis id
-        (two players can share a record name across seasons)."""
+    def birth_date(self, names, gsis, week1):
+        """The owners in runtime/people.READ_THROUGH["birth_date"], in that order: the canon
+        overrides, the reviewed corrections, the registry, the 2014 Week 1 roster and the league
+        player database. A name-keyed entry counts only when it names the same gsis id (two
+        players can share a record name across seasons). The DOB column of Jacksonville's roster
+        is a view built from these owners and is never read back."""
         for source in (self.canon, self.fixes, self.births):
             for name in sorted(names):
                 entry = source.get(name) or {}
@@ -378,8 +377,6 @@ class Identity:
             return week1["birth_date"]
         if gsis and self.league_dob.get(gsis):
             return self.league_dob[gsis]
-        if latest in self.jax_dob and same_person(self.branch.get(latest), gsis):
-            return self.jax_dob[latest]
         return None
 
 
@@ -552,7 +549,7 @@ def card_data(root=ROOT):
             number, number_note = listed["jaguars_number"], "jaguars"
         elif listed.get("number") is not None:
             number, number_note = listed["number"], "other:" + listed["number_basis"]["club"]
-        dob = ident.birth_date({r["pid"] for r in rows}, gsis, w1, last["pid"])
+        dob = ident.birth_date({r["pid"] for r in rows}, gsis, w1)
         college = ident.college.get(gsis) if gsis else None
         college = college or listed.get("college")
         seasons, career_rows, career_dates = {}, {"regular": [], "playoffs": []}, {"regular": [], "playoffs": []}
@@ -751,6 +748,6 @@ def jacksonville_rows(year, names, root=ROOT, data=None):
             number = season_number(year, JAX, p, p["_listed"], p["_w1"], ident.codes)
         else:
             gsis = ident.gsis(name, year)
-            dob, number = ident.birth_date({name}, gsis, ident.week1_row(gsis, name), name), None
+            dob, number = ident.birth_date({name}, gsis, ident.week1_row(gsis, name)), None
         out[name] = (JAX, age_on(dob, opening) if opening else None, number)
     return out

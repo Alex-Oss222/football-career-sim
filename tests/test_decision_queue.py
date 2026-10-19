@@ -22,8 +22,10 @@ from runtime import current_job, decision_queue
 from runtime.decision_queue import event
 from runtime.events import load_events, repository_map
 from runtime.player_bios import master_date
+from runtime.season_layout import PAGE_HISTORY
 from runtime.seasons import SeasonPaths
 from scripts import render_career_views as views
+from support_page_history import keep_as_history
 from scripts.validate_repository import validate
 
 SEASON = int(repository_map(ROOT)["active_season"])
@@ -318,10 +320,15 @@ class DecisionQueueTests(unittest.TestCase):
     def test_further_open_item_for_the_next_week_is_valid(self):
         self.assertEqual(self.errors_with(self.plan_item()), [])
         self.assertEqual(current_job.validation_errors(self.root, self.mapping, self.events, self.master), [])
-        # Re-rendered, the whole repository validates with the extra item.
+        # Re-rendered, the whole repository validates with the extra item. The
+        # test item is pre-Week-6 work in the copy, so the desk it rewrites
+        # stays history there (rebuild rule 1; support_page_history).
+        history = self.root / PAGE_HISTORY
+        self.addCleanup(history.write_bytes, history.read_bytes())
         for path in views.render(self.root):
             self.addCleanup(path.write_bytes, path.read_bytes())
         views.write(self.root)
+        keep_as_history(self.root)
         self.assertEqual(views.check(self.root), [])
         self.assertEqual(validate(self.root), [])
 

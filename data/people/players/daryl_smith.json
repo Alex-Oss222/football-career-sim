@@ -2,17 +2,6 @@
  "schema_version": 1,
  "name": "Daryl Smith",
  "gsis_id": "00-0022839",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [
   {
    "season": 2013,
@@ -27,7 +16,6 @@
    "by": "Jacksonville staff",
    "standing_as_written": "Starting staff view; exact theoretical personnel grades",
    "position": "LB",
-   "age_as_written": "32",
    "identity": "A complete second-level veteran whose communication, diagnosis and zone awareness organize the defense. I see a strong starter whose value is reading and coordinating rather than being a featured pressure player.",
    "previous_profile": "[2013 baseline](career/2013/player_profiles/daryl_smith.md)",
    "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
@@ -261,7 +249,6 @@
    "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/daryl_smith.md at commit 332d70b"
   }
  ],
- "awards": [],
  "transactions": [
   {
    "date": "2013-03-12",

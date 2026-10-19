@@ -4,11 +4,13 @@ runtime/people.py holds one record per player who has a page, with only the
 facts that have no other owner; runtime/player_pages.py builds every player
 page from the records and the owners they name, and scripts/render_player_pages.py
 checks or writes them. The committed pages equal a fresh build; every record
-keeps the schema and the award results; the numbers on a page equal the
-statbook's; ages read the birth-date registry with the canon overrides; a
-page follows the approved layout; and a closed season's player folder is
-history. runtime/clean_pages.py's clean-page and folder-map checks are tested
-here too.
+keeps the schema and stores no fact another owner holds (awards, ages, the
+owner map); a page's awards are the award results'; the numbers on a page
+equal the statbook's; ages read the birth-date owners with the canon
+overrides; a page follows the approved layout; and a closed season's player
+folder is history. runtime/clean_pages.py's clean-page and folder-map checks
+are tested here too. Counts, the current week and dated lines are worked out
+from the stored facts (rebuild safeguard 7), never named.
 """
 import io
 import json
@@ -23,8 +25,8 @@ ROOT = Path(__file__).resolve().parents[1]
 import sys  # noqa: E402
 sys.path.insert(0, str(ROOT))
 
-from runtime import clean_pages, people, player_cards, player_pages  # noqa: E402
-from runtime.season_layout import LEAGUE_PLAYER_PAGES, PLAYER_RECORDS  # noqa: E402
+from runtime import clean_pages, people, player_bios, player_cards, player_pages  # noqa: E402
+from runtime.season_layout import LEAGUE_PLAYER_PAGES, PAGE_HISTORY, PLAYER_RECORDS  # noqa: E402
 from runtime.seasons import SeasonPaths  # noqa: E402
 from runtime.statbook import aggregate_receipts  # noqa: E402
 from runtime.stat_tables import rating_value, thrown  # noqa: E402
@@ -58,6 +60,26 @@ def book(year, kind="regular"):
 
 def page(rel):
     return (ROOT / rel).read_text(encoding="utf-8")
+
+
+def label(year, kind="regular"):
+    """The season row's label: the year, and while the season is open the latest week its game
+    records cover (worked out from the receipts, never named)."""
+    c = ctx()
+    if c.complete.get(year, True) or year != c.active:
+        return str(year)
+    week = c.latest_week[(year, kind)]
+    return "%d (through %s)" % (year, player_pages.ROUND_NAMES.get(week, "Week %d" % week))
+
+
+def jaguars_page_ids():
+    """The record ids the season's player folder must hold, from the stored facts: every player
+    the roster shows Jacksonville controls, and every player its staff assessed this season."""
+    c = ctx()
+    controlled = {rid for rid, r in c.records.items() if player_pages.controlled_name(c, r)}
+    assessed = {rid for rid, r in c.records.items()
+                if any(a["season"] == c.active and "owner" not in a for a in r["assessments"])}
+    return controlled, assessed
 
 
 def tables(text, heading="### Regular season"):
@@ -128,8 +150,17 @@ class CommittedPageTests(unittest.TestCase):
         self.assertEqual(len([r for r in files if r.endswith("/README.md") and r.count("/") == 3]), 32)
         self.assertFalse([r for r in files if not r.endswith(".md")])  # no career-card images
         jaguars = [r for r in files if r.startswith(FOLDER.relative_to(ROOT).as_posix() + "/")]
-        self.assertEqual(len(jaguars), 84)  # 83 players and the index
-        self.assertEqual(len(people.load_all(ROOT)), 2064)
+        controlled, assessed = jaguars_page_ids()
+        self.assertEqual(len(controlled), len(ctx().roster))  # one record per rostered player
+        self.assertEqual(len(jaguars), len(controlled | assessed) + 1)  # and the index
+        # Every record is a game-record player's (one each) or a card-only Jaguar's.
+        records = people.load_all(ROOT)
+        matched = [ctx().league_player(r)["key"] for r in records.values() if ctx().league_player(r)]
+        card_only = [rid for rid, r in records.items() if ctx().league_player(r) is None]
+        self.assertEqual(len(set(matched)), len(matched))
+        self.assertEqual(len(matched), len(data["players"]))
+        self.assertEqual(len(records), len(data["players"]) + len(card_only))
+        self.assertLessEqual(set(card_only), controlled | assessed)
 
     def test_a_jaguars_page_is_his_league_page_with_its_links_rebased(self):
         files, _ = built()
@@ -152,7 +183,7 @@ class CommittedPageTests(unittest.TestCase):
             root = Path(tmp)
             overlay(root, (LEAGUE_PLAYER_PAGES, FOLDER.relative_to(ROOT).as_posix(), PLAYER_RECORDS))
             cousins = root / FOLDER.relative_to(ROOT) / "kirk_cousins.md"
-            cousins.write_text(cousins.read_text(encoding="utf-8").replace("Age 23", "Age 26"), encoding="utf-8")
+            cousins.write_text(cousins.read_text(encoding="utf-8") + "A hand edit.\n", encoding="utf-8")
             (root / LEAGUE_PLAYER_PAGES / "cincinnati_bengals" / "a_j_green.md").unlink()
             (root / LEAGUE_PLAYER_PAGES / "cincinnati_bengals" / "someone_else.md").write_text("x", encoding="utf-8")
             record = root / PLAYER_RECORDS / "kirk_cousins.json"
@@ -169,8 +200,8 @@ class CommittedPageTests(unittest.TestCase):
             # A fact stored twice is refused; with the record restored, write repairs the pages.
             del data["birth_date"]
             record.write_text(people.dump(data), encoding="utf-8")
-            created, added, written, removed = player_pages.write(root)
-            self.assertEqual((created, added, written, removed), (0, 0, 2, 1))
+            created, written, removed = player_pages.write(root)
+            self.assertEqual((created, written, removed), (0, 2, 1))
             self.assertEqual(player_pages.check(root), [])
 
     def test_a_player_new_to_the_game_records_gets_an_identity_only_record(self):
@@ -181,33 +212,55 @@ class CommittedPageTests(unittest.TestCase):
             errors = player_pages.check(root)
             self.assertIn("Player record missing for A.J. Green (Cincinnati Bengals); run the player page builder",
                           errors)
-            created, added, _, _ = player_pages.write(root)
+            created, _, _ = player_pages.write(root)
             self.assertEqual(created, 1)
             record = json.loads((root / PLAYER_RECORDS / "a_j_green.json").read_text(encoding="utf-8"))
             self.assertEqual((record["assessments"], record["transactions"]), ([], []))
-            self.assertEqual(added, len(record["awards"]))  # his decided awards are copied back on
+            self.assertNotIn("awards", record)  # his awards stay with the award results
             self.assertEqual(player_pages.check(root), [])
 
 
-class AwardSyncTests(unittest.TestCase):
-    def test_write_makes_the_records_awards_the_results_own(self):
+def awards_section(text):
+    return text.split("## Awards\n\n", 1)[1].split("\n\n## ", 1)[0].splitlines()
+
+
+class AwardTests(unittest.TestCase):
+    """The award results own every decided award; a page reads them, a record never holds one."""
+
+    def test_a_page_lists_the_award_results_for_its_player(self):
+        entries = player_cards.award_entries(ROOT, ctx().data["years"])
+        rodgers = ["- " + e["award"] for e in entries if e["player"] == "Aaron Rodgers"]
+        self.assertIn("- NFC Offensive Player of the Week (2013, Week 14)", rodgers)
+        self.assertEqual(awards_section(page(league_page("Aaron Rodgers", "Green Bay Packers"))), rodgers)
+        self.assertEqual(awards_section(page(league_page("A.J. Green", "Cincinnati Bengals"))),
+                         ["- " + e["award"] for e in entries if e["player"] == "A.J. Green"] or ["None."])
+        results = json.loads((SeasonPaths(2013, ROOT).awards_data / "results.json").read_text(encoding="utf-8"))
+        drawn = results["week-14"]["awards"]["NFC-offense"]
+        self.assertEqual(drawn["shortlist"][drawn["winner_index"]]["player"], "Aaron Rodgers")
+
+    def test_every_page_award_is_decided_on_record(self):
+        texts = sorted(e["award"] for e in player_cards.award_entries(ROOT, ctx().data["years"]))
+        shown = sorted(line[2:] for rel, text in built()[0].items() if rel.startswith(LEAGUE_PLAYER_PAGES + "/")
+                       and not rel.endswith("README.md") for line in awards_section(text) if line != "None.")
+        self.assertEqual(shown, texts)
+        self.assertEqual(ctx().data["unmatched_awards"], [])
+
+    def test_a_replayed_draw_changes_only_the_page(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            overlay(root, (LEAGUE_PLAYER_PAGES, FOLDER.relative_to(ROOT).as_posix(), PLAYER_RECORDS))
-            path = root / PLAYER_RECORDS / "aaron_rodgers.json"
-            record = json.loads(path.read_text(encoding="utf-8"))
-            real = list(record["awards"])
-            # An award the results do not give him (a replayed draw), and one of his taken off.
-            record["awards"] = real[1:] + [{"season": 2013, "award": "Voided draw",
-                                            "decided": {"season": 2013, "file": "results.json", "key": "week-99",
-                                                        "slot": "NFC-offense"}}]
-            path.write_text(people.dump(record), encoding="utf-8")
-            self.assertTrue([e for e in player_pages.check(root) if "Awards on the player record differ" in e])
-            _, changed, _, _ = player_pages.write(root)
-            self.assertEqual(changed, 2)
-            synced = json.loads(path.read_text(encoding="utf-8"))["awards"]
-            self.assertEqual(sorted(json.dumps(w, sort_keys=True) for w in synced),
-                             sorted(json.dumps(w, sort_keys=True) for w in real))
+            awards = SeasonPaths(2013, ROOT).awards_data.relative_to(ROOT).as_posix()
+            overlay(root, (LEAGUE_PLAYER_PAGES, FOLDER.relative_to(ROOT).as_posix(), PLAYER_RECORDS, awards))
+            record = (root / PLAYER_RECORDS / "aaron_rodgers.json").read_bytes()
+            results_path = root / awards / "results.json"
+            results = json.loads(results_path.read_text(encoding="utf-8"))
+            results["week-14"]["awards"]["NFC-offense"]["winner_index"] = None  # a voided draw
+            results_path.write_text(json.dumps(results, indent=2) + "\n", encoding="utf-8")
+            rel = league_page("Aaron Rodgers", "Green Bay Packers")
+            self.assertIn("Player page stale or hand-edited: " + rel, player_pages.check(root))
+            player_pages.write(root)
+            self.assertNotIn("- NFC Offensive Player of the Week (2013, Week 14)",
+                             (root / rel).read_text(encoding="utf-8"))
+            self.assertEqual((root / PLAYER_RECORDS / "aaron_rodgers.json").read_bytes(), record)
             self.assertEqual(player_pages.check(root), [])
 
 
@@ -217,19 +270,28 @@ class RecordTests(unittest.TestCase):
         errors = [e for rid, r in records.items() for e in people.record_errors(rid, r, ROOT)]
         self.assertEqual(errors, [])
         for rid, r in records.items():
-            # Facts with an owner are pointed to, never stored here.
+            # Facts with an owner are read through it, never stored here: no awards, no copy of
+            # the owner map, no age in an assessment.
             self.assertLessEqual(set(r), set(people.RECORD_KEYS) | set(people.OPTIONAL_KEYS), rid)
-            self.assertEqual(r["read_through"], people.READ_THROUGH, rid)
+            self.assertFalse({"awards", "read_through"} & set(r), rid)
+            for a in r["assessments"]:
+                self.assertFalse(people.OWNED_IN_ASSESSMENT & set(a), rid)
 
-    def test_the_records_hold_the_award_results(self):
-        self.assertEqual(player_pages.award_errors(ctx()), [])
-        rodgers = people.load_all(ROOT)["aaron_rodgers"]
-        self.assertEqual(rodgers["awards"][0], {
-            "season": 2013, "award": "NFC Offensive Player of the Week (2013, Week 14)",
-            "decided": {"season": 2013, "file": "results.json", "key": "week-14", "slot": "NFC-offense"}})
-        results = json.loads((SeasonPaths(2013, ROOT).awards_data / "results.json").read_text(encoding="utf-8"))
-        drawn = results["week-14"]["awards"]["NFC-offense"]
-        self.assertEqual(drawn["shortlist"][drawn["winner_index"]]["player"], "Aaron Rodgers")
+    def test_a_record_that_stores_an_owned_fact_is_refused(self):
+        r = json.loads(json.dumps(people.load_all(ROOT)["kirk_cousins"]))
+        opening = next(a for a in r["assessments"] if "owner" not in a)
+        opening["age_as_written"] = "25"
+        self.assertTrue([e for e in people.record_errors("kirk_cousins", r, ROOT) if "stores no age_as_written" in e])
+        del opening["age_as_written"]
+        r["awards"] = []
+        self.assertTrue([e for e in people.record_errors("kirk_cousins", r, ROOT) if "record keys" in e])
+
+    def test_the_owner_map_names_known_owners_in_order(self):
+        for fact, owners in people.READ_THROUGH.items():
+            self.assertTrue(owners and set(owners) <= set(people.OWNERS), fact)
+        # The birth date: the canon change outranks every research source.
+        self.assertEqual(people.READ_THROUGH["birth_date"][0], "canon_overrides")
+        self.assertEqual(people.READ_THROUGH["college"], ("league_database", "listed_identity"))
 
     def test_cousins_record_holds_only_his_unowned_facts(self):
         r = people.load_all(ROOT)["kirk_cousins"]
@@ -240,21 +302,24 @@ class RecordTests(unittest.TestCase):
         self.assertEqual((opening["season"], opening["stage"], opening["date"], opening["by"]),
                          (2014, "opening", "2014-03-31", "Jacksonville staff"))
         self.assertEqual(opening["grades"][0], {"category": "Overall", "grade": "6.0 /10", "standing": "Staff judgment"})
-        self.assertEqual([u["date"] for u in opening["updates"]], ["2014-08-01"])
+        self.assertEqual([u["date"] for u in opening["updates"]][:1], ["2014-08-01"])
         # Year-only moves keep only the year; a window keeps the source's words.
         self.assertEqual([(t["date"], t["kind"]) for t in r["transactions"]], [("2012", "signed"), ("2013", "traded")])
         self.assertEqual(r["transactions"][1]["label"], "March 12 to April 24, 2013")
-        # His birth date is read through its owner, never stored on the record.
-        self.assertEqual(r["read_through"]["birth_date"], "birth_dates")
+        # His birth date is read through its owners, never stored on the record, and no age is
+        # stored either: on the opening assessment's date he was 22 by the canon birth date.
         self.assertNotIn("1991-08-19", json.dumps(r))
         self.assertNotIn("1988-08-19", json.dumps(r))
+        self.assertNotIn("age_as_written", opening)
+        self.assertEqual(player_bios.age_on(player_bios.load(ROOT)["Kirk Cousins"]["birth_date"], opening["date"]), 22)
 
     def test_every_2014_jaguar_has_his_opening_or_entry_assessment(self):
         self.assertEqual(player_pages.season_assessment_errors(2014, ROOT), [])
         self.assertEqual(player_pages.season_assessment_errors(2013, ROOT), [])
-        assessed = [r for r in people.load_all(ROOT).values()
-                    if any(a["season"] == 2014 and "owner" not in a for a in r["assessments"])]
-        self.assertEqual(len(assessed), 83)
+        # Every player Jacksonville controls is assessed, so the folder holds exactly the assessed.
+        controlled, assessed = jaguars_page_ids()
+        self.assertLessEqual(controlled, assessed)
+        self.assertEqual(set(player_pages.jaguars_players(ctx())), assessed)
 
     def test_transactions_sort_a_draft_before_its_contract(self):
         moves = [{"date": "2014-05-10", "kind": "signed"}, {"date": "2014", "kind": "signed"},
@@ -274,8 +339,11 @@ class LayoutTests(unittest.TestCase):
     def test_cousins_page_follows_the_approved_layout(self):
         text = page(self.COUSINS)
         lines = text.splitlines()
+        record = ctx().records["kirk_cousins"]
+        age = player_bios.age_on("1991-08-19", ctx().jax_latest)  # the user's canon birth date
         self.assertEqual(lines[0], "# Kirk Cousins")
-        self.assertEqual(lines[2], "**Jacksonville Jaguars · Quarterback · No. 8 · Age 23 · Active roster**")
+        self.assertEqual(lines[2], "**Jacksonville Jaguars · Quarterback · No. 8 · Age %d · %s**"
+                         % (age, ctx().roster["Kirk Cousins"][1]))
         self.assertTrue(lines[4].startswith("6' 3\", 202 lb · Born August 19, 1991 · Michigan State · "
                                             "Drafted in 2012, fourth round, by Washington"), lines[4])
         self.assertTrue(any(l.startswith("![Kirk Cousins](https://") for l in lines))
@@ -283,8 +351,11 @@ class LayoutTests(unittest.TestCase):
         headings = [l for l in lines if l.startswith("## ") or l.startswith("### ")]
         self.assertEqual(headings, ["## Staff assessment", "## Contract", "## Statistics", "### Regular season",
                                     "### Playoffs", "## Awards", "## Transactions"])
-        self.assertIn("*Staff view, March 31, 2014; dated updates through August 1, 2014.*", text)
-        self.assertIn("| 2015 | $660,000 | $660,000 |", text)
+        opening = next(a for a in record["assessments"] if a["season"] == 2014 and "owner" not in a)
+        self.assertIn("*Staff view, March 31, 2014; dated updates through %s.*"
+                      % player_pages.long_date(max(u["date"] for u in opening["updates"])), text)
+        y2015 = ctx().finances["Kirk Cousins"]["years"]["2015"]
+        self.assertIn("| 2015 | %s | %s |" % (player_pages.money(y2015["base"]), player_pages.money(y2015["cap"])), text)
         self.assertNotIn(".svg", text)
         self.assertNotIn("Week 5 update", text)
         self.assertTrue(text.rstrip().endswith(player_pages.PAGE_MARK))
@@ -316,9 +387,9 @@ class LayoutTests(unittest.TestCase):
 class ValueTests(unittest.TestCase):
     def test_cousins_equals_the_statbook(self):
         regular, _ = tables(page(league_page("Kirk Cousins", "Jacksonville Jaguars")))
-        for year, label in ((2013, "2013"), (2014, "2014 (through Week 5)")):
+        for year in (2013, 2014):
             line = book(year)["players"]["Kirk Cousins"]
-            row = regular[label]
+            row = regular[label(year)]
             self.assertEqual(row["G"], str(line["games"]))
             self.assertEqual(row["CMP"], "{:,}".format(line["completions"]))
             self.assertEqual(row["ATT"], "{:,}".format(line["pass_attempts"]))
@@ -332,13 +403,14 @@ class ValueTests(unittest.TestCase):
     def test_a_receiver_and_a_defender_equal_the_statbook(self):
         green = tables(page(league_page("A.J. Green", "Cincinnati Bengals")))[0]
         watt = tables(page(league_page("J.J. Watt", "Houston Texans")))[0]
-        for year, label in ((2013, "2013"), (2014, "2014 (through Week 5)")):
+        for year in (2013, 2014):
             g = book(year)["players"]["A.J. Green"]
-            self.assertEqual((green[label]["Rec"], green[label]["Yards"], green[label]["Targets"]),
+            row = green[label(year)]
+            self.assertEqual((row["Rec"], row["Yards"], row["Targets"]),
                              (str(g["receptions"]), "{:,}".format(g["receiving_yards"]), str(g["targets"])))
             w = book(year)["players"]["J.J. Watt"]
-            self.assertEqual(watt[label]["Tackles"], str(w["tackles"]))
-            self.assertEqual(float(watt[label]["Sacks"]), float(w["sacks"]))
+            self.assertEqual(watt[label(year)]["Tackles"], str(w["tackles"]))
+            self.assertEqual(float(watt[label(year)]["Sacks"]), float(w["sacks"]))
 
     def test_every_player_season_total_equals_the_statbook(self):
         from runtime.statbook import BOOK_FIELDS
@@ -363,7 +435,7 @@ class ValueTests(unittest.TestCase):
         rows = tables(page(league_page("Luke Joeckel", "Philadelphia Eagles")))[0]
         self.assertEqual((rows["2013"]["Starts"], rows["2013"]["Offensive snaps"]), ("N/A", "N/A"))
         self.assertEqual(rows["Career"]["Starts"], "N/A")
-        self.assertEqual(rows["2014 (through Week 5)"]["Starts"],
+        self.assertEqual(rows[label(2014)]["Starts"],
                          str(book(2014)["players"]["Luke Joeckel"]["line_starts"]))
 
     def test_namesakes_keep_their_own_birth_dates(self):
@@ -373,13 +445,13 @@ class ValueTests(unittest.TestCase):
     def test_ages_read_the_canon_override(self):
         text = page(league_page("Kirk Cousins", "Jacksonville Jaguars"))
         regular, _ = tables(text)
-        self.assertEqual((regular["2013"]["Age"], regular["2014 (through Week 5)"]["Age"]), ("22", "23"))
+        self.assertEqual((regular["2013"]["Age"], regular[label(2014)]["Age"]), ("22", "23"))
         self.assertEqual(tables(text, "### Playoffs")[0]["2013"]["Age"], "22")
         self.assertEqual((regular["Career" if "Career" in regular else "With Jacksonville"]["Age"]), "")
 
     def test_the_number_follows_the_season_and_team(self):
         regular, _ = tables(page(league_page("Kirk Cousins", "Jacksonville Jaguars")))
-        self.assertEqual((regular["2013"]["#"], regular["2014 (through Week 5)"]["#"]), ("N/A", "8"))
+        self.assertEqual((regular["2013"]["#"], regular[label(2014)]["#"]), ("N/A", "8"))
         no_club_twice = {}
         for p in ctx().data["players"]:
             if p["number"] is not None:
@@ -434,6 +506,14 @@ class CleanPageTests(unittest.TestCase):
         ):
             self.assertTrue([e for e in self.errors(line) if found in e], (line, self.errors(line)))
 
+    def test_the_word_branch_passes_only_in_a_players_name(self):
+        for line in ("The Branch resolved the game.", "This Branch week closed.", "Deion Branch caught it."):
+            self.assertTrue([e for e in self.errors(line) if "system word: Branch" in e], line)
+        names = clean_pages.proper_names(ROOT).pattern
+        for name in ("Alan Branch", "Andre Branch", "Tyvon Branch"):
+            self.assertIn(name.replace(" ", "\\ "), names)
+            self.assertEqual(self.errors("%s made the tackle." % name), [], name)
+
     def test_football_prose_passes(self):
         for line in ("Andre Branch beat the left tackle twice.", "Tyvon Branch had 9 tackles.",
                      "*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) "
@@ -442,11 +522,40 @@ class CleanPageTests(unittest.TestCase):
                      "[Week 5 report](../Week_05/output.md)", player_pages.PAGE_MARK):
             self.assertEqual(self.errors(line), [], line)
 
-    def test_pages_written_before_week_6_are_history(self):
+    def test_pages_written_before_week_6_are_history_while_unchanged(self):
         old = clean_pages.history(ROOT)
-        self.assertIn("career/2014/Regular_Season/Games/Week_05/output.md", old)
         checked = {rel for rel, _ in clean_pages.checked_pages(ROOT)}
-        self.assertNotIn("career/2014/Regular_Season/Games/Week_05/output.md", checked)
+        for rel, recorded in old.items():
+            same = (ROOT / rel).is_file() and clean_pages.digest((ROOT / rel).read_bytes()) == recorded
+            self.assertEqual(rel in checked, not same, rel)
+        self.assertIn("career/2014/Regular_Season/Games/Week_05/output.md", old)
+
+    def test_a_history_page_rewritten_later_is_checked(self):
+        planted = "Kernel receipt checkpoint 1C."
+        living = ("career/2014/Regular_Season/standings.md", "career/2014/Record.md", "career/2014/README.md")
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            pages = {}
+            for rel in living + ("career/2014/Regular_Season/Games/Week_05/output.md",):
+                (root / rel).parent.mkdir(parents=True, exist_ok=True)
+                data = (ROOT / rel).read_bytes()
+                (root / rel).write_bytes(data)
+                pages[rel] = clean_pages.digest(data)
+            (root / PAGE_HISTORY).parent.mkdir(parents=True)
+            (root / PAGE_HISTORY).write_text(json.dumps({"pages": pages}), encoding="utf-8")
+            new = "career/2014/Regular_Season/Games/Week_06/output.md"
+            (root / new).parent.mkdir(parents=True)
+            (root / new).write_text("# Week 6\n\n" + planted + "\n", encoding="utf-8")
+            unchanged = {e.split(":")[0] for e in clean_pages.clean_errors(root)}
+            self.assertEqual(unchanged, {new})  # the history pages as written are exempt
+            for rel in living:  # their generators rewrite them from Week 6 on
+                with open(root / rel, "a", encoding="utf-8") as f:
+                    f.write("\n" + planted + "\n")
+            found = clean_pages.clean_errors(root)
+            for rel in living + (new,):
+                self.assertTrue([e for e in found if e.startswith(rel + ":") and "system word: Kernel" in e], rel)
+                self.assertTrue([e for e in found if e.startswith(rel + ":") and "internal code: 1C" in e], rel)
+            self.assertFalse([e for e in found if e.startswith("career/2014/Regular_Season/Games/Week_05/")])
 
 
 class FolderMapTests(unittest.TestCase):
@@ -468,6 +577,37 @@ class FolderMapTests(unittest.TestCase):
         ))
         errors = clean_pages.module_errors("scripts/example.py", source)
         self.assertEqual(sorted(int(e.split(":")[1]) for e in errors), [4, 5, 6, 7])
+
+    def test_joined_formatted_and_logical_paths_are_caught(self):
+        source = "\n".join((
+            'import os',
+            'from pathlib import Path, PurePosixPath',
+            'ROOT = Path(".")',
+            'year = 2014',
+            'A = f"career/{year}/stats/team_tracker/x.md"',
+            'B = Path("career") / str(year) / "stats"',
+            'C = os.path.join("career", "2014", "Regular_Season")',
+            'D = "career/%d/regular_season/standings.md" % year',
+            'E = "career/{}/x.md".format(year)',
+            'F = ROOT / "career" / str(year) / "regular_season"',
+            'G = PurePosixPath("data", str(year), "trades")',
+            'H = "data/" + str(year)',
+            'I = f"{ROOT}/career/{year}/x.md"',
+            'J = Path(ROOT).joinpath("stats")',
+            # Not season paths: a year-named research file, a logical name passed to the map, a
+            # file inside a folder the map gave, string joins.
+            'K = "no %d table (library/data/%d_db_families.json)" % (year, year)',
+            'L = logical_path(year, f"stats/team_tracker/{year}")',
+            'M = SeasonPaths(year, ROOT).preseason_data(1) / "depth_chart.json"',
+            'N = ", ".join(["stats", "x"])',
+            'O = "/".join(("a", "b"))',
+        ))
+        lines = sorted({int(e.split(":")[1]) for e in clean_pages.module_errors("scripts/zz_planted.py", source)})
+        self.assertEqual(lines, list(range(5, 15)))
+        self.assertIn("stats", clean_pages.LOGICAL_NAMES)
+        self.assertIn("regular_season", clean_pages.LOGICAL_NAMES)
+        self.assertIn("trades", clean_pages.LOGICAL_NAMES)
+        self.assertNotIn("depth_chart.json", clean_pages.LOGICAL_NAMES)
 
     def test_the_map_itself_and_research_builders_are_exempt(self):
         self.assertEqual(clean_pages.MAP_MODULES, ("runtime/season_layout.py", "runtime/seasons.py"))

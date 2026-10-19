@@ -89,9 +89,10 @@ class WorkingPlayerCardTests(unittest.TestCase):
     def test_current_roster_cards_and_stats_are_consistent(self):
         self.assertEqual(profile_errors(2014), [])
         cards = list(SeasonPaths(2014, ROOT).record('player_profiles').glob('*.md'))
-        # Built player pages (rebuild step 3a): 64 players Jacksonville controls and 19 assessed this
-        # season who have left, and the index; the opening assessments are on the player records.
-        self.assertEqual(len(cards), 84)
+        # Built player pages (rebuild step 3a): every player Jacksonville controls and every player
+        # assessed this season who has left, worked out from the records and the roster, and the
+        # index; the opening assessments are on the player records.
+        self.assertEqual(len(cards), len(player_pages.jaguars_players(player_pages.Context(ROOT))) + 1)
         self.assertTrue(all(player_pages.built_page(p.read_text(encoding='utf-8')) for p in cards))
 
     def test_player_facing_year_labels_preserve_proper_name(self):
@@ -162,7 +163,7 @@ class WorkingPlayerCardTests(unittest.TestCase):
         # No game on record: no league player; the same birth-date sources give his age, no number.
         self.assertFalse(any('Cameron Brate' in p['record_names'] for p in data['players']))
         ident = player_cards.Identity(ROOT)
-        dob = ident.birth_date({'Cameron Brate'}, None, ident.week1_row(None, 'Cameron Brate'), 'Cameron Brate')
+        dob = ident.birth_date({'Cameron Brate'}, None, ident.week1_row(None, 'Cameron Brate'))
         self.assertIsNotNone(dob)
         self.assertEqual(rows['Cameron Brate'], (player_cards.JAX, player_cards.age_on(dob, '2014-09-04'), None))
         # The canon birth date (data/people/canon_overrides.json) is the one every row reads.

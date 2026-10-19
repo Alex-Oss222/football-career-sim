@@ -2,17 +2,6 @@
  "schema_version": 1,
  "name": "Hakeem Nicks",
  "gsis_id": "00-0027005",
- "read_through": {
-  "birth_date": "birth_dates",
-  "height_weight": "listed_identity",
-  "college": "league_database",
-  "draft_before_2013": "league_database",
-  "photo": "photos",
-  "number": "number_rule",
-  "statistics": "game_records",
-  "position_and_status": "roster",
-  "contract": "player_contracts"
- },
  "assessments": [
   {
    "season": 2014,
@@ -22,7 +11,6 @@
    "by": "Jacksonville staff",
    "standing_as_written": "Starting staff view; exact theoretical personnel grades",
    "position": "WR",
-   "age_as_written": "26",
    "identity": "A physical outside receiver who wins through hands, catch-point strength and route timing. My starting view is that he offers more contested-catch value than sudden separation.",
    "previous_profile": "New Jacksonville player; no prior Jacksonville annual profile",
    "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
@@ -276,7 +264,6 @@
    "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/hakeem_nicks.md at commit 332d70b"
   }
  ],
- "awards": [],
  "transactions": [
   {
    "date": "2014-03-14",
