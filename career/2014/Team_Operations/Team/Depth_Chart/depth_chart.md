@@ -166,7 +166,7 @@ The order in each group remains Stone's current order. Reserve assignments that 
 | Kick returner | [Andrew Hawkins](../Player_Cards/andrew_hawkins.md) |
 | Punt returner | [Andrew Hawkins](../Player_Cards/andrew_hawkins.md) |
 
-## Game-day inactives
+## Inactives
 
 Week 6 at Tennessee, October 12, 2014: not yet set. Stone selects the eligible inactives before the game.
 
@@ -182,12 +182,12 @@ The prior game's inactives, for reference:
 | [Taylor Gabriel](../Player_Cards/taylor_gabriel.md) | WR |
 | [Gator Hoskins](../Player_Cards/gator_hoskins.md) | TE |
 
-## Captains
+## Captains, August 31, 2014
 
 | Offense | Defense |
 |---|---|
 | Kirk Cousins, Eugene Monroe, Maurice Jones-Drew | Sen'Derrick Marks, Daryl Smith, Dwight Lowery (reserve/injured) |
 
-## Changes to the depth chart
+## Update log
 
-[Read the dated changes](Changes.md)
+[Read all dated changes](Changes.md)

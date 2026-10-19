@@ -395,7 +395,7 @@ def depth_chart_page(ctx):
     lines += ["## Special teams", "", table(["Job", "Player"], special), ""]
     inactive = ctx.chart.get("game_day_inactives") or {}
     upcoming = ctx.next_game()
-    lines += ["## Game-day inactives", ""]
+    lines += ["## Inactives", ""]
     listed = inactive.get("week")
     if upcoming and listed != upcoming["week"]:
         lines += ["%s: not yet set. Stone selects the eligible inactives before the game." %
@@ -412,11 +412,11 @@ def depth_chart_page(ctx):
         reserve = {p["name"] for p in roster_record.players(ctx.roster, ("reserve",))}
         def names(group):
             return ", ".join(p + (" (reserve/injured)" if p in reserve else "") for p in captains.get(group, ()))
-        lines += ["## Captains", "",
+        lines += ["## Captains, %s" % captains["date"], "",
                   table(["Offense", "Defense"], [[names("offense"), names("defense")]]), ""]
     history = ctx.paths.record("team/depth_chart/Changes.md")
-    lines += ["## Changes to the depth chart", "",
-              link(rel, history.relative_to(ctx.root).as_posix(), "Read the dated changes"), ""]
+    lines += ["## Update log", "",
+              link(rel, history.relative_to(ctx.root).as_posix(), "Read all dated changes"), ""]
     return rel, "\n".join(lines)
 
 

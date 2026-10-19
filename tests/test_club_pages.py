@@ -144,11 +144,11 @@ class ClubPageTests(unittest.TestCase):
             rows = tables(self.chart_text, "#### " + club_pages.GROUP_NAMES[group])
             self.assertEqual([name_of(r[1]) for r in rows], players, group)
             self.assertEqual([int(r[0]) for r in rows], list(range(1, len(players) + 1)))
-        self.assertIn("## Captains", self.chart_text.splitlines())
+        self.assertIn("## Captains, %s" % chart["captains"]["date"], self.chart_text.splitlines())
         self.assertIn("## First-unit offense", self.chart_text.splitlines())
         self.assertIn("## Situational defensive roles", self.chart_text.splitlines())
         from scripts.validate_repository import anchors
-        self.assertIn("captains", anchors(self.chart_text))
+        self.assertIn("captains-august-31-2014", anchors(self.chart_text))
         history_rel = self.ctx.paths.career / "Team_Operations/Team/Depth_Chart/Changes.md"
         history = history_rel.read_text(encoding="utf-8")
         log = tables(history, "## Update log")
