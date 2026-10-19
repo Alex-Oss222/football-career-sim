@@ -18,9 +18,10 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
+from runtime import roster as roster_record
 from runtime.seasons import SeasonPaths
 
-DEFAULT_ROSTER = SeasonPaths(2014, ROOT).record('roster.md')
+DEFAULT_ROSTER = SeasonPaths(2014, ROOT).roster
 DEFAULT_EXIT_INDEX = SeasonPaths(2014, ROOT).record('offseason/player_development/2013_exit_player_index.json')
 DEFAULT_OUTPUT = SeasonPaths(2014, ROOT).record('offseason/player_development/progression_roster.json')
 
@@ -41,8 +42,14 @@ def _cells(line: str) -> list[str]:
 
 
 def parse_current_roster(path: Path) -> tuple[str, int, list[RosterPlayer]]:
-    """Read only the canonical `Current controlled players` section."""
+    """Read only the canonical `Current controlled players` section: from 2014 the active roster
+    and the reserve lists of the roster record (runtime/roster.py), with its as-of label."""
 
+    if roster_record.is_record(path):
+        data = roster_record.load(path)
+        rows = roster_record.controlled(data)
+        return (roster_record.as_of_label(data), len(rows),
+                [RosterPlayer(row["name"], row["position"], row["status"]) for row in rows])
     text = path.read_text(encoding="utf-8")
     match = COUNT_RE.search(text)
     if not match:

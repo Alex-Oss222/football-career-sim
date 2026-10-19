@@ -12,6 +12,8 @@ import unittest
 from collections import Counter
 from pathlib import Path
 
+from runtime import roster as roster_record
+from runtime.seasons import SeasonPaths
 from runtime.usage import MINIMUM_GAME_DAY, group
 from runtime.week_inputs import game_day_actives
 from scripts.check_week_input_exclusivity import (
@@ -21,7 +23,8 @@ from scripts.check_week_input_exclusivity import (
 ROOT = Path(__file__).resolve().parents[1]
 LIBRARY = ROOT / "library/data/2014_preseason_opponent_rosters.json"
 RECORD = ROOT / "library/2014_preseason_opponent_rosters.md"
-ROSTER = ROOT / "career/2014/Team_Operations/Team/Roster/roster.md"
+# The roster record owns club control from rebuild step 3b (runtime/roster.py).
+ROSTER = SeasonPaths(2014, ROOT).roster
 REGISTRY = ROOT / "library/data/player_birth_dates.json"
 TAMPA = "Tampa Bay Buccaneers"
 CHICAGO = "Chicago Bears"
@@ -49,14 +52,13 @@ def team_input(team, players):
 
 
 def jacksonville_players():
-    """A scratch Jacksonville input from the branch roster table (gate check only)."""
+    """A scratch Jacksonville input from the roster record's controlled players (gate check only)."""
     players, counts = [], Counter()
-    for line in ROSTER.read_text(encoding="utf-8").split("## Current controlled players", 1)[1].splitlines():
-        m = re.match(r"^\| ([^|]+?) \| ([A-Z]+) \| \d{4}-\d{2}-\d{2} \| \d+ \|", line)
-        if m and group(m.group(2)):
-            grp = group(m.group(2))
+    for row in roster_record.controlled(roster_record.load(ROSTER)):
+        if group(row["position"]):
+            grp = group(row["position"])
             counts[grp] += 1
-            players.append({"player_id": m.group(1).strip(), "position": m.group(2), "depth": counts[grp]})
+            players.append({"player_id": row["name"], "position": row["position"], "depth": counts[grp]})
     return players
 
 

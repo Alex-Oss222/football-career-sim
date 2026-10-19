@@ -31,6 +31,7 @@ from runtime.seasons import SeasonPaths
 from scripts import close_preseason_game, close_week, render_preseason_stats
 from scripts.check_week_input_exclusivity import check_inputs
 from local_private_service import local_service
+import support_roster_record
 from support_rosters import game_day_roster
 
 JAX = close_week.PROTAGONIST
@@ -161,10 +162,8 @@ class PreseasonClosureTests(unittest.TestCase):
         folder.mkdir(parents=True)
         self.paths.preseason_fixtures.parent.mkdir(parents=True); shutil.copy(FIXTURES, self.paths.preseason_fixtures)
         (folder / "output.md").write_text("# Preseason game 1\n\nReport.\n", encoding="utf-8")
-        self.paths.roster.parent.mkdir(parents=True)
-        self.paths.roster.write_text("| Player | Pos | Status |\n| --- | --- | --- |\n"
-                                     + "".join("| %s | %s | Offseason roster |\n" % (p.player_id, p.position)
-                                               for p in game_day_roster("A")), encoding="utf-8")
+        support_roster_record.write(self.paths.roster, [(p.player_id, p.position, "Offseason roster")
+                                                        for p in game_day_roster("A")])
         self.client = local_service(self, root / "private", self._testMethodName)[1]
         self.home = club(JAX, "A", third_quarterback=True)
         self.away = club(TB, "B")
@@ -322,14 +321,13 @@ class PreseasonBuilderTests(unittest.TestCase):
         folder.mkdir(parents=True)
         shutil.copy(FIXTURES, self.paths.preseason_fixtures)
         jax = game_day_roster("A")
-        self.paths.roster.parent.mkdir(parents=True)
-        rows = ["| Player | Pos | DOB | Age | Status | Availability | Role |", "| --- | --- | --- | ---: | --- | --- | --- |"]
+        rows = []
         for p in jax:
             status = "Offseason roster (signed 2014)" if p.depth > 1 else "Offseason roster"
             avail = "Out, projected return August 20, 2014" if p.player_id == "A-WR2" else "No communicated restriction"
-            rows.append("| %s | %s | 1990-01-01 | 24 | %s | %s | Role not set |" % (p.player_id, p.position, status, avail))
-        rows.append("| A-PS1 | WR | 1990-01-01 | 24 | Practice squad | No communicated restriction | — |")
-        self.paths.roster.write_text("# Roster\n\n" + "\n".join(rows) + "\n", encoding="utf-8")
+            rows.append((p.player_id, p.position, status, avail))
+        rows.append(("A-PS1", "WR", "Practice squad"))
+        support_roster_record.write(self.paths.roster, rows)
         depth = {}
         for p in jax:
             depth.setdefault(p.position, []).append(p.player_id)

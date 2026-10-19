@@ -25,6 +25,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from . import call_families, depth_library, player_bios, rails, scoring_decisions, strength
+from . import roster as roster_record
 from .usage import group, lineup_errors
 from .seasons import SeasonPaths, require_receipt_season
 
@@ -295,10 +296,14 @@ class _Row:
 
 
 def controlled_active(season=2013, roster_path=None):
-    """(player, availability text) for every Jacksonville active-53 player."""
+    """(player, availability text) for every Jacksonville active-53 player, in roster order: from
+    2014 the roster record (runtime/roster.py), for 2013 its roster page."""
     rows = []
     status_col = avail_col = None
     path = roster_path or SeasonPaths(season, ROOT).roster
+    if roster_record.is_record(path):
+        return [(row["name"], row["availability"]) for row in roster_record.load(path)["players"]
+                if re.match(r"Active 53(?:\s*\(|$)", row["status"])]
     for line in path.read_text(encoding="utf-8").splitlines():
         if not line.startswith("|"):
             status_col = None

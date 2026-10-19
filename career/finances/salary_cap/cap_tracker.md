@@ -20,7 +20,7 @@ The [current worksheet](../../2014/Team_Operations/Finances/salary_cap/cap_works
 | Working offseason reconciliation | 2014 |
 |---|---|
 | Recorded player obligations | $114,607,730 |
-| P5 salary displaced below Top 51 | -$3,244,994 |
+| Base salary displaced below Top 51 | -$3,244,994 |
 | Separate dead money | $10,586,956 |
 | Top-51 obligations before workout charge | $121,949,692 |
 | Opening workout charge (recorded worksheet) | $504,000 |
@@ -109,7 +109,7 @@ The inventory covers 64 current players: 64 under signed contracts (reserve/futu
 
 ## Reading the table
 
-**Each amount is the working cap charge for that contract year. A blank means the recorded deal does not cover that year.** Existing sourced schedules and adopted simulation amounts are both included. The individual notes identify their basis; the [completion research](../../../library/2014_jaguars_contract_completion.md) explains the assumptions. These terms persist until a recorded amendment or correction changes them.
+**Each amount is the working cap charge for that contract year. A blank means the recorded deal does not cover that year.** Existing sourced schedules and adopted reconstructed amounts are both included. The individual notes identify their basis; the [completion research](../../../library/2014_jaguars_contract_completion.md) explains the assumptions. These terms persist until a recorded amendment or correction changes them.
 
 The twelve-year horizon stays visible for future tracking. Pending free agents and unexercised options create no new salary commitment. Each unsigned tender is included once. Scheduled cash means money payable if the player remains under the stated terms, not evidence that it has already been paid.
 
@@ -122,7 +122,7 @@ The twelve-year horizon stays visible for future tracking. Pending free agents a
 | Counting rule | Top 51 from the league-year opening, including retained bonus and other required charges |
 | 2014 minimum salaries | $420,000 / $495,000 / $570,000 / $645,000 / $730,000 / $855,000 / $955,000 for 0 / 1 / 2 / 3 / 4-6 / 7-9 / 10+ credited seasons |
 | Future league caps | Add each year’s published cap when that year is reached |
-| Club accounting | Carryover, adjustments and actual cash receipts remain in the current cap worksheet |
+| Club accounting | Carryover, adjustments and actual cash received remain in the current cap worksheet |
 
 The [2011 agreement](https://nflps.org/wp-content/uploads/2012/05/collective-bargaining-agreement-2011-2020.pdf) controls the era’s minimums, bonus allocation, Top-51 treatment, options and cash-floor windows. [The original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md) supplies the historical salaries and bonus schedules. The [club worksheet](../../2014/Team_Operations/Finances/salary_cap/cap_worksheet.md) separates scheduled player commitments from adjusted club cap room.
 
@@ -618,7 +618,7 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 
 ### Futures contracts
 
-1 of the six reserve/future contracts signed in February 2014 remain in force under the adopted two-year terms through 2015 (the others ended with the August 30, 2014 waivers; see the dead-money ledger and the former-player sheets). They have no signing bonus or salary guarantee. Their dollars already appear in the position tables above.
+1 of the six reserve/future contracts signed in February 2014 remain in force under the adopted two-year terms through 2015 (the others ended with the August 30, 2014 waivers; see the dead-money table and the former-player sheets). They have no signing bonus or salary guarantee. Their dollars already appear in the position tables above.
 
 | Player | 2014 salary / cap | 2015 salary / cap | Total |
 |---|---|---|---|
@@ -634,7 +634,7 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 |---|---|---|---|
 | Tyler Bray | 2014 | $51,675 | Original $68,900 rookie bonus less $17,225 charged in 2013; August 31 waiver shifts $51,675 to 2014. Separate from the new futures salary. |
 | Brandon Marshall | 2014 | $0 | The original 2012 rookie contract ended on a 2012 waiver, before divergence. Future bonus accelerated into 2013, not 2014. Replacement active-roster deal modeled without a new bonus. |
-| Austen Lane | 2014 | $0 | Original four-year 2010 contract ends in 2013. The branch August 2013 waiver leaves no 2014 bonus year. |
+| Austen Lane | 2014 | $0 | Original four-year 2010 contract ends in 2013. The Jacksonville August 2013 waiver leaves no 2014 bonus year. |
 | Isaiah Stanback | 2014 | $0 | December 2012 practice-squad promotion modeled as a short minimum contract with no new bonus. August 2013 waiver leaves no future bonus charge. |
 | Uche Nwaneri | 2014 | $2,189,000 | Pre-June 1 trade to Arizona, March 20, 2014: the 2014 and 2015 bonus allocations of $1,094,500 each accelerate into 2014. His $1,000,000 March 25 roster bonus passes to Arizona. |
 | Tyson Alualu | 2014 | $1,542,500 | Pre-June 1 trade to Houston, March 24, 2014: the final $1,542,500 original bonus allocation stays with Jacksonville in 2014. Houston takes his $2,571,500 base and $150,000 other components. |
@@ -643,19 +643,19 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | Justin Blackmon | 2014 | $5,951,636 | Pre-June 1 trade to Indianapolis, March 31, 2014: the remaining bonus allocations of $2,975,818 for 2014 and $2,975,818 for 2015 accelerate into 2014. Indianapolis takes his 2014 and 2015 base salaries and deferred roster cash; his 2015 charge leaves Jacksonville. |
 | Russell Allen | 2014 | $416,668 | Pre-June 1 trade to Arizona, April 7, 2014: his final $416,668 original bonus allocation stays with Jacksonville in 2014. Arizona takes his $1,975,000 base and $25,000 workout bonus. |
 | Will Rackley | 2014 | $154,868 | Pre-June 1 trade to Seattle, May 12, 2014: his final $154,868 original bonus allocation stays with Jacksonville in 2014. Seattle takes his $1,431,000 base. No 2015 year. |
-| Matt Feiler | 2014 | $5,000 | Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction |
-| Tyler Shatley | 2014 | $5,000 | Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction |
-| Tyler Larsen | 2014 | $5,000 | Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction |
-| C.J. Wilson | 2014 | $65,000 | Released August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction |
-| Lavar Edwards | 2014 | $53,403 | Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction |
-| Jeris Pendleton | 2014 | $12,848 | Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction |
-| Jemea Thomas | 2014 | $23,513 | Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction |
-| Matt Feiler | 2015 | $10,000 | Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction |
-| Tyler Shatley | 2015 | $10,000 | Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction |
-| Tyler Larsen | 2015 | $10,000 | Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction |
-| Lavar Edwards | 2015 | $106,806 | Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction |
-| Jeris Pendleton | 2015 | $12,848 | Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction |
-| Jemea Thomas | 2015 | $70,539 | Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction |
+| Matt Feiler | 2014 | $5,000 | Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled reconstruction |
+| Tyler Shatley | 2014 | $5,000 | Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled reconstruction |
+| Tyler Larsen | 2014 | $5,000 | Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled reconstruction |
+| C.J. Wilson | 2014 | $65,000 | Released August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled reconstruction |
+| Lavar Edwards | 2014 | $53,403 | Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled reconstruction |
+| Jeris Pendleton | 2014 | $12,848 | Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled reconstruction |
+| Jemea Thomas | 2014 | $23,513 | Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled reconstruction |
+| Matt Feiler | 2015 | $10,000 | Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled reconstruction |
+| Tyler Shatley | 2015 | $10,000 | Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled reconstruction |
+| Tyler Larsen | 2015 | $10,000 | Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled reconstruction |
+| Lavar Edwards | 2015 | $106,806 | Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled reconstruction |
+| Jeris Pendleton | 2015 | $12,848 | Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled reconstruction |
+| Jemea Thomas | 2015 | $70,539 | Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled reconstruction |
 
 The $51,675 old Bray bonus is counted separately from his new $420,000 salary. No recorded deal has void years. The completion research explains the inherited bonus reconciliation.
 
@@ -680,7 +680,7 @@ All nine selections were exercised May 8 to 10 and signed May 11, 2014; no 2014 
 | Date / review | Player or group | Financial treatment |
 |---|---|---|
 | Closed August 30, 2014 | Cameron Bradfield (RFA); Toney Clemons, Austin Pasztor and Mike Brown (ERFA) | The four qualifying offers were withdrawn at the reduction to 53 and the players' rights renounced; the $3,066,000 tender charge leaves. No offer sheet had been received by the May 2 deadline |
-| Closed August 30 and 31, 2014 | Reduction to 53, waivers and the practice squad | Seventeen players waived and two vested veterans (Cain, C.J. Wilson) released; their surviving bonus allocations are in the dead-money ledger (2014 and 2015). Brate and Jackson on reserve/injured, contracts continuing. Eight practice-squad contracts at the $6,300 weekly minimum, carried as a $107,100 working estimate each for 17 weeks and charged only for weeks on the squad; two places open |
+| Closed August 30 and 31, 2014 | Reduction to 53, waivers and the practice squad | Seventeen players waived and two vested veterans (Cain, C.J. Wilson) released; their surviving bonus allocations are in the dead-money table (2014 and 2015). Brate and Jackson on reserve/injured, contracts continuing. Eight practice-squad contracts at the $6,300 weekly minimum, carried as a $107,100 working estimate each for 17 weeks and charged only for weeks on the squad; two places open |
 | Closed May 12, 2014 | Will Rackley | Traded to Seattle for its unconditional 2015 seventh; his $154,868 final bonus allocation stays as 2014 dead money and his $1,431,000 base leaves. Brewster is kept |
 | After the offseason program | Offseason workout charge | The $504,000 opening charge is reconciled to actual workout payments, not charged again |
 | 2014 season | Hakeem Nicks and Daniel Te’o-Nesheim | Active-game bonuses of $31,250 a game, up to $500,000 each, are counted in the 2014 charges |
@@ -718,7 +718,7 @@ All nine selections were exercised May 8 to 10 and signed May 11, 2014; no 2014 
 | Unsigned tender, conditional on signing |  |  |  |
 | Total scheduled player cash |  |  |  |
 
-Cash counts salary and bonuses scheduled in that contract year. Bonus proration is not another cash payment. Actual paid cash remains unverified; the 2013–2016 and 2017–2020 cash-floor windows require complete cash ledgers.
+Cash counts salary and bonuses scheduled in that contract year. Bonus proration is not another cash payment. Actual paid cash remains unverified; the 2013–2016 and 2017–2020 cash-floor windows require complete cash records.
 
 ## Cap scenarios
 

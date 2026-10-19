@@ -133,7 +133,9 @@ FINANCE_MOVES = {
     'career/finances/jaguars_cap.md': 'career/finances/salary_cap/cap_tracker.md',
     'career/finances/jaguars_contract_details.md': 'career/finances/player_contracts/contract_details.md',
     'career/finances/organization_finances.md': 'career/finances/coaching_and_organization/coaching_payroll.md',
-    'career/finances/jaguars_cap_inputs.json': 'career/finances/supporting_records/financial_inputs.json',
+    'career/finances/jaguars_cap_inputs.json': 'data/finances/financial_inputs.json',
+    # Rebuild step 3b (October 19, 2026): the player contract inputs moved into the data area.
+    'career/finances/supporting_records/financial_inputs.json': 'data/finances/financial_inputs.json',
 }
 REPOSITORY_ALIASES = {
     'foundation/06_Chronology_Game_Ledger_and_Handoff.md': 'foundation/06_Event_Records_and_Handoff.md',
@@ -178,8 +180,10 @@ PAGE_HISTORY = DATA_ROOT + '/pages/history.json'
 BIRTH_DATE_REGISTRY = 'library/data/player_birth_dates.json'
 BIRTH_DATE_CORRECTIONS = 'library/data/player_birth_date_corrections.json'
 PHOTO_REGISTRY = 'library/data/player_photos.json'
-# Jacksonville's contract inputs (salary by year), the owner the contract section reads.
-PLAYER_FINANCES = 'career/finances/supporting_records/financial_inputs.json'
+# Jacksonville's contract inputs (salary by year), the owner the contract section and the player
+# cap views read: stored once in the data area, outside every season (rebuild step 3b).
+FINANCE_DATA = DATA_ROOT + '/finances'
+PLAYER_FINANCES = FINANCE_DATA + '/financial_inputs.json'
 
 
 def is_system_file(relative):

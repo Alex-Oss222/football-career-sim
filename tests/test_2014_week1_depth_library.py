@@ -12,12 +12,13 @@ from pathlib import Path
 
 from runtime import depth_library
 from runtime.league import TEAMS
+from runtime.seasons import SeasonPaths
 from runtime.usage import MINIMUM_GAME_DAY, group
 from scripts.check_week_input_exclusivity import controlled_players_from_roster, game_day_errors
 
 ROOT = Path(__file__).resolve().parents[1]
 LIBRARY = ROOT / "library/data/2014_week1_depth_charts.json"
-ROSTER = ROOT / 'career/2014/Team_Operations/Team/Roster/roster.md'
+ROSTER = SeasonPaths(2014, ROOT).roster  # the roster record (rebuild step 3b)
 GROUPS = {"QB", "RB", "FB", "WR", "TE", "OL", "DL", "LB", "DB", "K", "P", "LS"}
 DEPTH_REQUIRED = ("QB", "RB", "WR", "TE")
 

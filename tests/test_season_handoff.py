@@ -6,6 +6,7 @@ import tempfile
 import unittest
 
 from runtime.seasons import SeasonPaths
+import support_roster_record
 from scripts.season_handoff import (
     TEAM_GATES, HISTORY_GATES, check, digest, stage, refresh_reference_inventory,
     opening_errors, opening_gate_sources, review_opening, repository_opening_errors,
@@ -55,11 +56,14 @@ class HandoffTests(unittest.TestCase):
         from scripts.build_annual_player_sheets import review_final_assessments
         data = self.bare_baseline(root, year)
         paths = SeasonPaths(year, root)
-        paths.roster.parent.mkdir(parents=True, exist_ok=True)
-        evidence_link = os.path.relpath(root/'career'/str(year)/'closed.md', paths.roster.parent)
-        paths.roster.write_text('**As of:** Season close\n\n**Canonical controlled-player count:** **1**\n\n## Current controlled players\n\n| Player | Pos | Status |\n|---|---|---|\n| Sample | LS | Signed |\n\n[Evidence]('+evidence_link+')\nUnresolved medical hold; contract persists.\n')
-        data['carry_forward']['roster'] = paths.roster.relative_to(root).as_posix()
-        data['source_sha256']['roster'] = digest(paths.roster)
+        paths.roster_page.parent.mkdir(parents=True, exist_ok=True)
+        evidence_link = os.path.relpath(root/'career'/str(year)/'closed.md', paths.roster_page.parent)
+        paths.roster_page.write_text('**As of:** Season close\n\n**Canonical controlled-player count:** **1**\n\n## Current controlled players\n\n| Player | Pos | Status |\n|---|---|---|\n| Sample | LS | Signed |\n\n[Evidence]('+evidence_link+')\nUnresolved medical hold; contract persists.\n')
+        # The roster record owns club control (the card tools read it); the season-close tools
+        # still carry the page layout until rebuild step 6.
+        support_roster_record.write(paths.roster, [('Sample', 'LS', 'Active 53')], as_of='%d-12-28' % year)
+        data['carry_forward']['roster'] = paths.roster_page.relative_to(root).as_posix()
+        data['source_sha256']['roster'] = digest(paths.roster_page)
         for gate, filename in [('team_season_closed', 'season_closeout.md'),
                                ('exit_interviews', 'exit_interviews.md')]:
             path = paths.record('closeouts/'+filename)
@@ -124,8 +128,8 @@ class HandoffTests(unittest.TestCase):
                 for p,blob in before.items():self.assertEqual(p.read_bytes(),blob)
                 nxt=root/'career'/str(year+1)
                 self.assertEqual(list(SeasonPaths(year+1, root).receipts.glob('*.json')),[])
-                self.assertIn(f'/{year}/closed.md',SeasonPaths(year+1, root).roster.read_text())
-                self.assertIn('Unresolved medical hold',SeasonPaths(year+1, root).roster.read_text())
+                self.assertIn(f'/{year}/closed.md',SeasonPaths(year+1, root).roster_page.read_text())
+                self.assertIn('Unresolved medical hold',SeasonPaths(year+1, root).roster_page.read_text())
                 self.assertFalse(SeasonPaths(year+1, root).depth_chart.exists())
                 self.assertEqual(json.loads(SeasonPaths(year+1, root).record('opening_handoff.json').read_text())['status'],'STAGED')
 
@@ -137,12 +141,12 @@ class HandoffTests(unittest.TestCase):
             data['gates']['exit_interviews']['status']='COMPLETE'
             (root/data['carry_forward']['player_contracts']).write_text('Changed contract')
             with self.assertRaisesRegex(ValueError,'not frozen/reviewed'):stage(root,data)
-            self.assertFalse(SeasonPaths(2015, root).roster.exists())
+            self.assertFalse(SeasonPaths(2015, root).roster_page.exists())
 
     def test_existing_successor_file_is_never_overwritten(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);data=self.baseline(root,2014)
-            target=SeasonPaths(2015, root).roster;target.parent.mkdir(parents=True);target.write_text('User work')
+            target=SeasonPaths(2015, root).roster_page;target.parent.mkdir(parents=True);target.write_text('User work')
             with self.assertRaisesRegex(ValueError,'Existing successor file differs'):stage(root,data)
             self.assertEqual(target.read_text(),'User work')
             self.assertFalse((target.parent/'coaching_staff.md').exists())
@@ -185,7 +189,7 @@ class HandoffTests(unittest.TestCase):
             data['source_sha256']['roster']=digest(roster)
             stage(root,data)
             self.assertIn(event,roster.read_text())
-            self.assertNotIn('event-record:',SeasonPaths(2015,root).roster.read_text())
+            self.assertNotIn('event-record:',SeasonPaths(2015,root).roster_page.read_text())
 
     def test_opening_cards_without_finals_block_all_staging_writes(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -194,7 +198,7 @@ class HandoffTests(unittest.TestCase):
             data['carry_forward'].pop('final_assessments')
             with self.assertRaisesRegex(ValueError,'Season-end player assessments'):
                 stage(root,data)
-            self.assertFalse(SeasonPaths(2015,root).roster.exists())
+            self.assertFalse(SeasonPaths(2015,root).roster_page.exists())
 
     def test_inventory_tracks_real_owners_and_reopens_changed_membership(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -276,7 +280,7 @@ class HandoffTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'already contains game receipts'):
                 stage(root,data)
             self.assertEqual(receipt.read_text(),'{}')
-            self.assertFalse(SeasonPaths(2015,root).roster.exists())
+            self.assertFalse(SeasonPaths(2015,root).roster_page.exists())
 
     def test_required_owners_cannot_be_omitted_to_skip_final_readiness(self):
         for omitted in (('roster',), ('player_cards',), ('player_cards','final_assessments')):
@@ -290,7 +294,7 @@ class HandoffTests(unittest.TestCase):
                     self.assertIn('Missing required carry-forward owner: '+name,errors)
                 self.assertTrue(any('missing final annual assessment' in e for e in errors))
                 with self.assertRaises(ValueError):stage(root,data)
-                self.assertFalse(SeasonPaths(2015,root).roster.exists())
+                self.assertFalse(SeasonPaths(2015,root).roster_page.exists())
 
     def test_current_prior_team_review_and_source_snapshot_must_still_match(self):
         for changed in ('team_gate','source_snapshot','team_evidence'):
@@ -383,10 +387,10 @@ class HandoffTests(unittest.TestCase):
             self.write_queue(root,'season_stage')
             with self.assertRaisesRegex(ValueError,'Decision open: test-season-stage'):stage(root,data)
             self.assertFalse((root/'data/2015/opening_handoff.json').exists())
-            self.assertFalse(SeasonPaths(2015,root).roster.exists())
+            self.assertFalse(SeasonPaths(2015,root).roster_page.exists())
             self.write_queue(root,'season_stage',status='RESOLVED')
             first=stage(root,data)
-            self.assertTrue(SeasonPaths(2015,root).roster.exists())
+            self.assertTrue(SeasonPaths(2015,root).roster_page.exists())
             # An item that holds only opening does not hold staging.
             self.write_queue(root,'season_opening')
             self.assertEqual(stage(root,data),first)
@@ -396,7 +400,7 @@ class HandoffTests(unittest.TestCase):
             root=Path(tmp);data=self.baseline(root,2014)
             (root/'state/decision_queue.json').unlink()
             with self.assertRaisesRegex(ValueError,'Decision queue unreadable'):stage(root,data)
-            self.assertFalse(SeasonPaths(2015,root).roster.exists())
+            self.assertFalse(SeasonPaths(2015,root).roster_page.exists())
 
 
 if __name__=='__main__':unittest.main()

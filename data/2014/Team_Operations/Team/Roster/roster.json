@@ -1,0 +1,998 @@
+{
+ "team": "Jacksonville Jaguars",
+ "season": 2014,
+ "as_of": {
+  "date": "2014-10-05",
+  "event": "after the Week 5 game against Pittsburgh"
+ },
+ "practice_squad_places": 10,
+ "active_limit": 53,
+ "about": "Jacksonville's roster: every player the club controls (the active roster, the reserve lists and the practice squad), his position, his status and the club's current medical communication on his availability, and the players who left the club's control this season with how control ended. Transcribed with rebuild step 3b (October 19, 2026) from the roster page as it stood at the close of 2014 Week 5 (October 5, 2014), every value as written there; the page is now built from this record. An availability value keeps its link to the medical record that communicated it, relative to the roster page.",
+ "field_sources": {
+  "status": "the final roster cuts of August 30 and 31, 2014 and the September 8, 2014 transactions (each player's sources.status)",
+  "availability": "the medical history and incident records (each player's sources.availability); the practice squad carries none",
+  "departures": "the final roster cuts (the reduction to 53) and the March 11, 2014 league-year opening",
+  "practice_squad_places": "the August 19, 2014 practice-squad agreement (ten places), as the roster page recorded it"
+ },
+ "players": [
+  {
+   "name": "Kirk Cousins",
+   "position": "QB",
+   "list": "active",
+   "group": "Quarterbacks",
+   "status": "Active 53",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Chad Henne",
+   "position": "QB",
+   "list": "active",
+   "group": "Quarterbacks",
+   "status": "Active 53 (re-signed April 4, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Maurice Jones-Drew",
+   "position": "RB",
+   "list": "active",
+   "group": "Running backs",
+   "status": "Active 53 (re-signed March 28, 2014)",
+   "availability": "No communicated restriction (cleared September 12, 2014, his projected date, from the September 7 lower-extremity injury; reassessed September 8 with no change; did not practice September 10 to 12; full in the September 13 walkthrough; [medical record](../../Medical/incidents/maurice_jones_drew_2014-09-07.md))",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/incidents/maurice_jones_drew_2014-09-07.md"
+   }
+  },
+  {
+   "name": "C.J. Anderson",
+   "position": "RB",
+   "list": "active",
+   "group": "Running backs",
+   "status": "Active 53",
+   "availability": "No communicated restriction (cleared August 11, 2014, his projected date, from the August 8 lower-extremity injury; reassessed August 9 with no change; [medical history](../../Medical/medical_history.md#august-9-to-11-reassessments-and-andersons-clearance))",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Jonathan Grimes",
+   "position": "RB",
+   "list": "active",
+   "group": "Running backs",
+   "status": "Active 53",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Montell Owens",
+   "position": "FB",
+   "list": "active",
+   "group": "Fullbacks",
+   "status": "Active 53",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Davante Adams",
+   "position": "WR",
+   "list": "active",
+   "group": "Wide receivers",
+   "status": "Active 53 (Rookie, drafted No. 38, May 9, 2014; rookie contract signed May 11, 2014)",
+   "availability": "No communicated restriction: cleared September 26, 2014, his projected date, from the September 21 lower-extremity injury (reassessed September 22 with no change); did not practice September 24 and 25; not inserted into the Friday practice; questionable on the September 26 report; full in the September 27 walkthrough ([medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed))",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Adam Thielen",
+   "position": "WR",
+   "list": "active",
+   "group": "Wide receivers",
+   "status": "Active 53",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Andrew Hawkins",
+   "position": "WR",
+   "list": "active",
+   "group": "Wide receivers",
+   "status": "Active 53 (signed March 18, 2014, offer sheet not matched)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Allen Hurns",
+   "position": "WR",
+   "list": "active",
+   "group": "Wide receivers",
+   "status": "Active 53 (Rookie, undrafted; signed May 10, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Taylor Gabriel",
+   "position": "WR",
+   "list": "active",
+   "group": "Wide receivers",
+   "status": "Active 53 (Rookie, undrafted; signed May 10, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Hakeem Nicks",
+   "position": "WR",
+   "list": "active",
+   "group": "Wide receivers",
+   "status": "Active 53 (signed March 14, 2014)",
+   "availability": "No communicated restriction: cleared September 20, 2014, his projected date, from the August 28 lower-extremity injury (reassessed September 4 with no change); full in every session September 22 to 27 and September 29 to October 4 ([medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed))",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Marcedes Lewis",
+   "position": "TE",
+   "list": "active",
+   "group": "Tight ends",
+   "status": "Active 53",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Travis Kelce",
+   "position": "TE",
+   "list": "active",
+   "group": "Tight ends",
+   "status": "Active 53",
+   "availability": "No communicated restriction: cleared September 25, 2014, his projected date, from the September 21 lower-extremity injury (reassessed September 22 with no change); did not practice September 24; full September 25 to 27 ([medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed))",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Marcel Jensen",
+   "position": "TE",
+   "list": "active",
+   "group": "Tight ends",
+   "status": "Active 53 (Rookie, undrafted; signed May 10, 2014)",
+   "availability": "No communicated restriction (released August 28, 2014, his projected date, from the August 22 head/neck hold; reassessed August 24 with no change; inactive August 28 under the frozen plan; [medical history](../../Medical/medical_history.md#august-28-preseason-game-4-injuries))",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Gator Hoskins",
+   "position": "TE",
+   "list": "active",
+   "group": "Tight ends",
+   "status": "Active 53 (Rookie, undrafted; signed May 10, 2014)",
+   "availability": "No communicated restriction: cleared September 16, 2014, his projected date, from the August 28 lower-extremity injury (reassessed September 3 with no change); full September 17 to October 4",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Eugene Monroe",
+   "position": "OT",
+   "list": "active",
+   "group": "Offensive line",
+   "status": "Active 53 (re-signed March 11, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Joel Bitonio",
+   "position": "OT",
+   "list": "active",
+   "group": "Offensive line",
+   "status": "Active 53 (Rookie, drafted No. 26, May 8, 2014; rookie contract signed May 11, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Mike Brewster",
+   "position": "C",
+   "list": "active",
+   "group": "Offensive line",
+   "status": "Active 53",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Trai Turner",
+   "position": "G",
+   "list": "active",
+   "group": "Offensive line",
+   "status": "Active 53 (Rookie, drafted No. 90, May 9, 2014; rookie contract signed May 11, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Lane Johnson",
+   "position": "OT",
+   "list": "active",
+   "group": "Offensive line",
+   "status": "Active 53",
+   "availability": "No communicated restriction: cleared September 17, 2014, his projected date, from the September 14 lower-extremity injury (reassessed September 15 with no change) ([medical record](../../Medical/incidents/lane_johnson_2014-09-14.md))",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/incidents/lane_johnson_2014-09-14.md"
+   }
+  },
+  {
+   "name": "Cornelius Lucas",
+   "position": "OT",
+   "list": "active",
+   "group": "Offensive line",
+   "status": "Active 53 (Rookie, undrafted; signed May 10, 2014)",
+   "availability": "No communicated restriction (club physical May 13, 2014, the specific check after his pre-combine foot stress fracture; the foot is a performance-staff review item)",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Charles Leno Jr.",
+   "position": "OT",
+   "list": "active",
+   "group": "Offensive line",
+   "status": "Active 53 (Rookie, drafted No. 168, May 10, 2014; rookie contract signed May 11, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Andrew Norwell",
+   "position": "G",
+   "list": "active",
+   "group": "Offensive line",
+   "status": "Active 53 (Rookie, undrafted; signed May 10, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Corey Linsley",
+   "position": "C",
+   "list": "active",
+   "group": "Offensive line",
+   "status": "Active 53 (Rookie, drafted No. 153, May 10, 2014; rookie contract signed May 11, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Jeremy Mincey",
+   "position": "DE",
+   "list": "active",
+   "group": "Defensive line",
+   "status": "Active 53",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Sen'Derrick Marks",
+   "position": "DT",
+   "list": "active",
+   "group": "Defensive line",
+   "status": "Active 53 (re-signed March 11, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Roy Miller",
+   "position": "DT",
+   "list": "active",
+   "group": "Defensive line",
+   "status": "Active 53",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Andre Branch",
+   "position": "DE",
+   "list": "active",
+   "group": "Defensive line",
+   "status": "Active 53",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "C.J. Mosley",
+   "position": "DT",
+   "list": "active",
+   "group": "Defensive line",
+   "status": "Active 53",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Daniel Te'o-Nesheim",
+   "position": "DE",
+   "list": "active",
+   "group": "Defensive line",
+   "status": "Active 53 (signed March 18, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Aaron Donald",
+   "position": "DT",
+   "list": "active",
+   "group": "Defensive line",
+   "status": "Active 53 (Rookie, drafted No. 13, May 8, 2014; rookie contract signed May 11, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Kasim Edebali",
+   "position": "DE",
+   "list": "active",
+   "group": "Defensive line",
+   "status": "Active 53 (Rookie, undrafted; signed May 10, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Daryl Smith",
+   "position": "LB",
+   "list": "active",
+   "group": "Linebackers",
+   "status": "Active 53",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Paul Posluszny",
+   "position": "LB",
+   "list": "active",
+   "group": "Linebackers",
+   "status": "Active 53",
+   "availability": "No communicated restriction: cleared October 3, 2014, his projected date, from the September 28 trunk injury (reassessed September 29 with no change); did not practice October 1 and 2; full in the October 3 practice and the October 4 walkthrough ([medical record](../../Medical/incidents/paul_posluszny_2014-09-28.md)); earlier the head/neck hold from Week 13 cleared April 5, 2014",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/incidents/paul_posluszny_2014-09-28.md"
+   }
+  },
+  {
+   "name": "Julian Stanford",
+   "position": "LB",
+   "list": "active",
+   "group": "Linebackers",
+   "status": "Active 53",
+   "availability": "No communicated restriction: the September 28 lower-extremity limit ended at the September 29 reassessment its instruction named (no time lost projected, nothing else communicated); full September 29 to October 4 ([medical record](../../Medical/incidents/julian_stanford_2014-09-28.md)); earlier cleared September 19 from the September 14 upper-extremity injury ([medical record](../../Medical/incidents/julian_stanford_2014-09-14.md))",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/incidents/julian_stanford_2014-09-28.md"
+   }
+  },
+  {
+   "name": "Sio Moore",
+   "position": "LB",
+   "list": "active",
+   "group": "Linebackers",
+   "status": "Active 53",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Telvin Smith",
+   "position": "LB",
+   "list": "active",
+   "group": "Linebackers",
+   "status": "Active 53 (Rookie, drafted No. 129, May 10, 2014; rookie contract signed May 11, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Christian Jones",
+   "position": "LB",
+   "list": "active",
+   "group": "Linebackers",
+   "status": "Active 53 (Rookie, undrafted; signed May 10, 2014)",
+   "availability": "Out, minor: upper extremity, logged at 10:35 of the second quarter of the October 5 Week 5 game, not removed (18 kicking-game snaps); projected return October 6, 2014; reassessment October 6 ([medical record](../../Medical/incidents/christian_jones_2014-10-05.md))",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/incidents/christian_jones_2014-10-05.md"
+   }
+  },
+  {
+   "name": "Todd Davis",
+   "position": "LB",
+   "list": "active",
+   "group": "Linebackers",
+   "status": "Active 53 (Rookie, undrafted; signed May 10, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Aqib Talib",
+   "position": "CB",
+   "list": "active",
+   "group": "Defensive backs",
+   "status": "Active 53 (signed March 11, 2014)",
+   "availability": "No communicated restriction: independent medical hold from the September 21 head/neck injury released September 25, 2014, its projected date (reassessed September 22 with no change); did not practice September 24; full September 25 to 27 ([medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed))",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Bacarri Rambo",
+   "position": "S",
+   "list": "active",
+   "group": "Defensive backs",
+   "status": "Active 53",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Brynden Trawick",
+   "position": "S",
+   "list": "active",
+   "group": "Defensive backs",
+   "status": "Active 53",
+   "availability": "Out, minor: lower extremity, logged at 2:28 of the fourth quarter of the October 5 Week 5 game, not removed (all 60 defensive snaps); projected return October 11, 2014; reassessment October 7 ([medical record](../../Medical/incidents/brynden_trawick_2014-10-05.md))",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/incidents/brynden_trawick_2014-10-05.md"
+   }
+  },
+  {
+   "name": "Jordan Poyer",
+   "position": "CB",
+   "list": "active",
+   "group": "Defensive backs",
+   "status": "Active 53",
+   "availability": "Independent medical hold, short: head/neck, logged at 5:19 of the third quarter of the September 21 Week 3 game, removed after 36 defensive snaps; reassessed September 27 with no change; no reassessment communicated September 29 to October 4; projected return October 9, 2014; out on the September 26 and October 3 reports ([medical record](../../Medical/incidents/jordan_poyer_2014-09-21.md)); earlier cleared August 26 from the August 22 upper-extremity injury",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/incidents/jordan_poyer_2014-09-21.md"
+   }
+  },
+  {
+   "name": "Alterraun Verner",
+   "position": "CB",
+   "list": "active",
+   "group": "Defensive backs",
+   "status": "Active 53 (signed March 11, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "A.J. Bouye",
+   "position": "CB",
+   "list": "active",
+   "group": "Defensive backs",
+   "status": "Active 53",
+   "availability": "No communicated restriction (cleared August 31, 2014, his projected date, from the August 28 lower-extremity injury; reassessed August 29 with no change; [medical history](../../Medical/medical_history.md#august-29-to-31-reassessments-bouyes-clearance-and-the-reserve-placements))",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Malcolm Butler",
+   "position": "CB",
+   "list": "active",
+   "group": "Defensive backs",
+   "status": "Active 53 (Rookie, drafted No. 241, May 10, 2014; rookie contract signed May 11, 2014)",
+   "availability": "No communicated restriction: independent medical hold from the September 21 head/neck injury released October 2, 2014, its projected date (reassessed September 24 with no change); did not practice October 1; full October 2 to 4 in approved preparation work only ([medical record](../../Medical/incidents/malcolm_butler_2014-09-21.md))",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/incidents/malcolm_butler_2014-09-21.md"
+   }
+  },
+  {
+   "name": "Chris Prosinski",
+   "position": "S",
+   "list": "active",
+   "group": "Defensive backs",
+   "status": "Active 53",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Adrian Phillips",
+   "position": "S",
+   "list": "active",
+   "group": "Defensive backs",
+   "status": "Active 53 (Rookie, undrafted; signed May 10, 2014; promoted from the practice squad September 8, 2014 on a new three-year contract)",
+   "availability": "No communicated restriction: cleared September 29, 2014, his projected date, from the September 28 lower-extremity injury, at the reassessment its instruction named; full September 29 to October 4 ([medical record](../../Medical/incidents/adrian_phillips_2014-09-28.md))",
+   "sources": {
+    "status": "career/2014/Team_Operations/Team/Roster/transactions_2014-09-08.md",
+    "availability": "career/2014/Team_Operations/Medical/incidents/adrian_phillips_2014-09-28.md"
+   }
+  },
+  {
+   "name": "Alan Ball",
+   "position": "CB",
+   "list": "active",
+   "group": "Defensive backs",
+   "status": "Active 53 (signed September 8, 2014, one year)",
+   "availability": "No communicated restriction (club physical September 8, 2014, no finding; [signing record](../../Free_Agency/alan_ball_signing_2014-09-08.md))",
+   "sources": {
+    "status": "career/2014/Team_Operations/Team/Roster/transactions_2014-09-08.md",
+    "availability": "career/2014/Team_Operations/Free_Agency/alan_ball_signing_2014-09-08.md"
+   }
+  },
+  {
+   "name": "Josh Scobee",
+   "position": "K",
+   "list": "active",
+   "group": "Specialists",
+   "status": "Active 53",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Bryan Anger",
+   "position": "P",
+   "list": "active",
+   "group": "Specialists",
+   "status": "Active 53",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Casey Kreiter",
+   "position": "LS",
+   "list": "active",
+   "group": "Specialists",
+   "status": "Active 53 (Rookie, undrafted; signed May 10, 2014)",
+   "availability": "No communicated restriction",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Cameron Brate",
+   "position": "TE",
+   "list": "reserve",
+   "group": null,
+   "status": "Reserve/Injured (placed August 31, 2014)",
+   "availability": "Out, long term: lower extremity, removed from the August 8 preseason game; projected return January 15, 2015; reassessed August 15 with no change; on reserve/injured for the season ([medical history](../../Medical/medical_history.md#august-29-to-31-reassessments-bouyes-clearance-and-the-reserve-placements))",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Jerrell Jackson",
+   "position": "WR",
+   "list": "reserve",
+   "group": null,
+   "status": "Reserve/Injured (placed August 31, 2014)",
+   "availability": "Out, multi-week: lower extremity, removed from the August 14 preseason game; projected return October 9, 2014; reassessed August 21 with no change; on reserve/injured for the season, not designated for return ([medical history](../../Medical/medical_history.md#august-29-to-31-reassessments-bouyes-clearance-and-the-reserve-placements))",
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   }
+  },
+  {
+   "name": "Mike Harris",
+   "position": "CB",
+   "list": "reserve",
+   "group": null,
+   "status": "Reserve/Injured (placed September 8, 2014; ordinary)",
+   "availability": "Out, long term: lower extremity, removed from the Week 1 game September 7 in overtime; projected return December 8, 2014; reassessment September 14 ([medical record](../../Medical/incidents/mike_harris_2014-09-07.md))",
+   "sources": {
+    "status": "career/2014/Team_Operations/Team/Roster/transactions_2014-09-08.md",
+    "availability": "career/2014/Team_Operations/Medical/incidents/mike_harris_2014-09-07.md"
+   }
+  },
+  {
+   "name": "Dwight Lowery",
+   "position": "S",
+   "list": "reserve",
+   "group": null,
+   "status": "Reserve/Injured, designated for return (placed September 8, 2014)",
+   "availability": "Out, long term: lower extremity, removed from the Week 1 game September 7 in overtime; projected return December 11, 2014; reassessment September 14; no practice before October 20, no return before November 3 ([medical record](../../Medical/incidents/dwight_lowery_2014-09-07.md))",
+   "sources": {
+    "status": "career/2014/Team_Operations/Team/Roster/transactions_2014-09-08.md",
+    "availability": "career/2014/Team_Operations/Medical/incidents/dwight_lowery_2014-09-07.md"
+   }
+  },
+  {
+   "name": "Tyler Bray",
+   "position": "QB",
+   "list": "practice_squad",
+   "group": null,
+   "status": "Practice squad (signed August 31, 2014)",
+   "availability": null,
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+   }
+  },
+  {
+   "name": "Richard Murphy",
+   "position": "RB",
+   "list": "practice_squad",
+   "group": null,
+   "status": "Practice squad (signed August 31, 2014)",
+   "availability": null,
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+   }
+  },
+  {
+   "name": "Matt Feiler",
+   "position": "G",
+   "list": "practice_squad",
+   "group": null,
+   "status": "Practice squad (signed August 31, 2014)",
+   "availability": null,
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+   }
+  },
+  {
+   "name": "Tyler Shatley",
+   "position": "C",
+   "list": "practice_squad",
+   "group": null,
+   "status": "Practice squad (signed August 31, 2014)",
+   "availability": null,
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+   }
+  },
+  {
+   "name": "Jackson Jeffcoat",
+   "position": "DE",
+   "list": "practice_squad",
+   "group": null,
+   "status": "Practice squad (signed August 31, 2014)",
+   "availability": null,
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+   }
+  },
+  {
+   "name": "Jerome Long",
+   "position": "DT",
+   "list": "practice_squad",
+   "group": null,
+   "status": "Practice squad (signed August 31, 2014)",
+   "availability": null,
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+   }
+  },
+  {
+   "name": "Jemea Thomas",
+   "position": "DB",
+   "list": "practice_squad",
+   "group": null,
+   "status": "Practice squad (signed August 31, 2014)",
+   "availability": null,
+   "sources": {
+    "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+   }
+  }
+ ],
+ "departures": [
+  {
+   "name": "John Parker Wilson",
+   "position": "QB",
+   "heading": "August 30 and 31, 2014: the reduction to 53",
+   "year": 2014,
+   "how_control_ended": "Waived August 30; cleared August 31 (accrued seasons at least three in the register; if four, he was a vested veteran released rather than waived, with the same disposition)",
+   "disposition": "Unplaced free agent (on no real 2014 Week 1 chart)",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "name": "Connor Shaw",
+   "position": "QB",
+   "heading": "August 30 and 31, 2014: the reduction to 53",
+   "year": 2014,
+   "how_control_ended": "Waived August 30; cleared August 31; practice-squad alternate, not signed",
+   "disposition": "Unplaced free agent",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "name": "Mark Asper",
+   "position": "G",
+   "heading": "August 30 and 31, 2014: the reduction to 53",
+   "year": 2014,
+   "how_control_ended": "Waived August 30; cleared August 31",
+   "disposition": "Unplaced free agent",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "name": "Tyler Larsen",
+   "position": "C",
+   "heading": "August 30 and 31, 2014: the reduction to 53",
+   "year": 2014,
+   "how_control_ended": "Waived August 30; cleared August 31; practice-squad alternate, not signed",
+   "disposition": "Unplaced free agent",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "name": "Ryan Davis",
+   "position": "DE",
+   "heading": "August 30 and 31, 2014: the reduction to 53",
+   "year": 2014,
+   "how_control_ended": "Waived August 30; cleared August 31",
+   "disposition": "Unplaced free agent",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "name": "C.J. Wilson",
+   "position": "DE",
+   "heading": "August 30 and 31, 2014: the reduction to 53",
+   "year": 2014,
+   "how_control_ended": "Released August 30 (vested veteran: four accrued seasons through 2013)",
+   "disposition": "Unplaced free agent: his real next move was a March 28, 2014 Oakland free-agent signing ([club record](../../../League/personnel/clubs/OAK.md)), a different window, so it does not apply",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "name": "Lavar Edwards",
+   "position": "DE",
+   "heading": "August 30 and 31, 2014: the reduction to 53",
+   "year": 2014,
+   "how_control_ended": "Waived August 30; cleared August 31; practice-squad alternate, not signed",
+   "disposition": "Unplaced free agent: the Week 1 rails library lists him on Dallas's real chart from a club he joined in a real move the library does not date; no same-kind, same-window move is recorded, so he is unplaced",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "name": "Jeris Pendleton",
+   "position": "DT",
+   "heading": "August 30 and 31, 2014: the reduction to 53",
+   "year": 2014,
+   "how_control_ended": "Waived August 30 while under the August 28 instruction (out, projected return September 1; reassessed August 29 with no change); cleared August 31. The packet directed an ordinary waiver; the library records no rule on waiving a player under a short instruction, and the waived/injured designation was not applied (open item)",
+   "disposition": "Unplaced free agent",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "name": "D'Anthony Smith",
+   "position": "DT",
+   "heading": "August 30 and 31, 2014: the reduction to 53",
+   "year": 2014,
+   "how_control_ended": "Waived August 30; cleared August 31",
+   "disposition": "Unplaced free agent",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "name": "Antwon Blake",
+   "position": "S",
+   "heading": "August 30 and 31, 2014: the reduction to 53",
+   "year": 2014,
+   "how_control_ended": "Waived August 30; cleared August 31; practice-squad alternate (G1 place), not signed",
+   "disposition": "Unplaced free agent: the Week 1 rails library lists him on Pittsburgh's real chart; the real move behind it is not dated in the branch's records and is not a cutdown-window claim or signing on the record, so he is unplaced",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "name": "Jeremy Cain",
+   "position": "LS",
+   "heading": "August 30 and 31, 2014: the reduction to 53",
+   "year": 2014,
+   "how_control_ended": "Released August 30 (vested veteran: at least five accrued seasons)",
+   "disposition": "Signed by Chicago on September 1, 2014 under the rails ([club record](../../../League/personnel/clubs/CHI.md)): his real next move, a free-agent signing after the cutdown, the same kind of move in the same window, applied on its real date when the clock reached it ([Week 1 record](../../../Regular_Season/Games/Week_01/output.md)); the Week 1 build places him on Chicago's chart",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "name": "Cameron Bradfield",
+   "position": "OT",
+   "heading": "August 30 and 31, 2014: the reduction to 53",
+   "year": 2014,
+   "how_control_ended": "Qualifying offer ($1,431,000) withdrawn August 30; rights renounced; free agent",
+   "disposition": "Unplaced free agent (his real next move, a real Jaguars roster continuation, is a real Jaguars move the branch never made)",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "name": "Toney Clemons",
+   "position": "WR",
+   "heading": "August 30 and 31, 2014: the reduction to 53",
+   "year": 2014,
+   "how_control_ended": "Exclusive-rights tender ($570,000) withdrawn August 30; rights renounced; free agent",
+   "disposition": "Unplaced free agent",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "name": "Mike Brown",
+   "position": "WR",
+   "heading": "August 30 and 31, 2014: the reduction to 53",
+   "year": 2014,
+   "how_control_ended": "Exclusive-rights tender ($495,000) withdrawn August 30; rights renounced; free agent",
+   "disposition": "Unplaced free agent (his real next move, a real Jaguars roster continuation, is a real Jaguars move the branch never made)",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "name": "Austin Pasztor",
+   "position": "G",
+   "heading": "August 30 and 31, 2014: the reduction to 53",
+   "year": 2014,
+   "how_control_ended": "Exclusive-rights tender ($570,000) withdrawn August 30; rights renounced; free agent",
+   "disposition": "Unplaced free agent (his real next move, a real Jaguars roster continuation, is a real Jaguars move the branch never made)",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "name": "Chad Henne",
+   "position": "QB",
+   "heading": "March 11, 2014, 4 p.m. ET",
+   "year": 2014,
+   "how_control_ended": "Contract expired; unrestricted free agent",
+   "outstanding": "Re-signed April 4, 2014: two years, $4.0M, $2.0M guaranteed",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  },
+  {
+   "name": "Jeremy Cain",
+   "position": "LS",
+   "heading": "March 11, 2014, 4 p.m. ET",
+   "year": 2014,
+   "how_control_ended": "Contract expired; unrestricted free agent",
+   "outstanding": "Re-signed March 19, 2014: one year, $855,000; released August 30, 2014",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  },
+  {
+   "name": "Maurice Jones-Drew",
+   "position": "RB",
+   "heading": "March 11, 2014, 4 p.m. ET",
+   "year": 2014,
+   "how_control_ended": "Contract expired; unrestricted free agent",
+   "outstanding": "Re-signed March 28, 2014: two years, $7.0M, $3.25M guaranteed",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  },
+  {
+   "name": "C.J. Wilson",
+   "position": "DE",
+   "heading": "March 11, 2014, 4 p.m. ET",
+   "year": 2014,
+   "how_control_ended": "Contract expired; unrestricted free agent",
+   "outstanding": "Re-signed March 28, 2014: one year, $795,000; released August 30, 2014",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  },
+  {
+   "name": "Alan Ball",
+   "position": "CB",
+   "heading": "March 11, 2014, 4 p.m. ET",
+   "year": 2014,
+   "how_control_ended": "Contract expired; unrestricted free agent",
+   "outstanding": "Not re-signed May 12, 2014 after Stone's conversation; first veteran corner to call if the room is hit. No June 1 tender filed; no rights retained. Re-signed September 8, 2014 after Harris's injury (one year; [signing record](../../Free_Agency/alan_ball_signing_2014-09-08.md)); back on the 53 above",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  },
+  {
+   "name": "Brent Grimes",
+   "position": "CB",
+   "heading": "March 11, 2014, 4 p.m. ET",
+   "year": 2014,
+   "how_control_ended": "Contract expired; unrestricted free agent",
+   "outstanding": "Not pursued under Stone's March 31 plan. No June 1 tender filed; no rights retained",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  },
+  {
+   "name": "Allen Reisner",
+   "position": "TE",
+   "heading": "March 11, 2014, 4 p.m. ET",
+   "year": 2014,
+   "how_control_ended": "Not tendered; unrestricted free agent",
+   "outstanding": "None; no June 1 tender filed",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  },
+  {
+   "name": "Kevin Rutland",
+   "position": "CB",
+   "heading": "March 11, 2014, 4 p.m. ET",
+   "year": 2014,
+   "how_control_ended": "Not tendered; unrestricted free agent",
+   "outstanding": "None; no June 1 tender filed",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  },
+  {
+   "name": "Brad Meester",
+   "position": "C",
+   "heading": "March 11, 2014, 4 p.m. ET",
+   "year": 2014,
+   "how_control_ended": "Retired; contract expired",
+   "outstanding": "None",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  }
+ ]
+}

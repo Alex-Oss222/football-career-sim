@@ -262,7 +262,9 @@ class ClosedSeasonCardTests(unittest.TestCase):
             self.assertFalse(any(p.is_symlink() for p in cards.rglob('*')))
             self.assertFalse((root/ROSTER).is_symlink())
             roster = (root/ROSTER).read_text(encoding='utf-8')
-            released = ''.join(l for l in roster.splitlines(True) if not l.startswith('| Kirk Cousins |'))
+            record = json.loads(roster)
+            record['players'] = [p for p in record['players'] if p['name'] != 'Kirk Cousins']
+            released = json.dumps(record, indent=1)
             self.assertNotEqual(released, roster)
             cousins = cards/'kirk_cousins.md'
             self.assertIn('Active roster', cousins.read_text(encoding='utf-8'))

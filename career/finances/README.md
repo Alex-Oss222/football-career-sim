@@ -13,6 +13,6 @@ One set of long-term obligations follows the career from season to season.
 | [Future commitments](future_commitments/README.md) | Remaining obligations by year and scheduled cash beyond 2014. |
 | [Financial history](history/README.md) | Departed contracts, surviving dead money and the events that created them. |
 
-Player cap and cash are separate from coaching expenses. The [financial inputs](supporting_records/financial_inputs.json) hold the player schedules; the current staff register holds executed assistant terms. Generated totals use those same sources. A new year preserves existing obligations and history, then reconciles the new league cap and actual carryover before room is certified.
+Player cap and cash are separate from coaching expenses. One stored set of contract terms holds every player's schedule, and every cap and contract page here is built from it, so the totals always agree. A new year preserves existing obligations and history, then reconciles the new league cap and actual carryover before room is certified.
 
 For maintenance, see [supporting records](supporting_records/README.md).

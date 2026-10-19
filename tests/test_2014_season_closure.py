@@ -227,6 +227,8 @@ class SeasonClosure2014Tests(unittest.TestCase):
             (tracker / rel).write_text(text, encoding="utf-8")
         self.assertEqual(update_player_cards.refresh_cards(SEASON, root), [])
         player_pages.write(root)  # every player page, after the week's awards
+        from scripts import render_club_pages
+        render_club_pages.write(root)  # the team page, roster and depth chart carry the results
         # The coach and staff pages and the desk read the closed games (the record by season, the
         # last result and record), so the weekly workflow rebuilds them after the close.
         from scripts import render_career_views, render_coach_pages

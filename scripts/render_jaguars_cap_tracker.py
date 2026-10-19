@@ -14,7 +14,8 @@ sys.path.insert(0, str(ROOT))
 from runtime.player_bios import biographies
 from runtime.season_layout import logical_path, repository_relative
 from runtime.seasons import SeasonPaths, page_link
-INPUT = Path('career/finances/supporting_records/financial_inputs.json')
+from runtime.season_layout import PLAYER_FINANCES
+INPUT = Path(PLAYER_FINANCES)
 OUTPUT = Path('career/finances/salary_cap/cap_tracker.md')
 DETAILS = Path('career/finances/player_contracts/contract_details.md')
 ORGANIZATION = Path('career/finances/coaching_and_organization/coaching_payroll.md')
@@ -41,6 +42,38 @@ def departure_source(player, data):
     return next((path for path in player['sources'] if path.endswith('/contract_status.md')),
                 data['current_contract_table'])
 
+# Reader wording for the stored accounting notes (rebuild step 3b): the facts and figures stay as
+# the inputs hold them; only system words, raw file paths, research codes and the "M" unit change.
+# A player's name that contains a checked word (Andre Branch) is never touched.
+READER_WORDS = (
+    (re.compile(r'\ba labelled simulation reconstruction\b'), 'a labelled reconstruction'),
+    (re.compile(r'\bsimulation reconstruction\b'), 'reconstruction'),
+    (re.compile(r'\b[Ss]imulation\b'), lambda m: 'Reconstructed' if m[0][0] == 'S' else 'reconstructed'),
+    (re.compile(r"\bthe branch(?:'s|’s)"), 'Jacksonville’s'),
+    (re.compile(r'(?<!Andre )(?<!Alan )(?<!Tyvon )\b[Bb]ranch\b'), 'Jacksonville'),
+    (re.compile(r'\bdead-money ledger\b'), 'dead-money table'),
+    (re.compile(r'\bcash ledgers\b'), 'cash records'),
+    (re.compile(r'\bledger\b'), 'record'),
+    (re.compile(r'\bcash receipts\b'), 'cash received'),
+    (re.compile(r' \(library [A-Z]\d+(?:, (?:Confirmed|Unverified))?\)'), ''),
+    (re.compile(r',? library [A-Z]\d+\b(?:, (?:Confirmed|Unverified))?'), ''),
+    (re.compile(r'\$(\d[\d,]*(?:\.\d+)?)M\b'), r'$\1 million'),
+)
+RAW_PATH = re.compile(r'(?<![\[/\w])(career/[^\s)\]]+\.md)(#[\w-]+)?')
+
+
+def reader_words(text):
+    """``text`` in reader wording, outside link destinations and web addresses."""
+    parts = re.split(r'(\]\([^)]*\)|https?://\S+)', text)
+    for i in range(0, len(parts), 2):
+        piece = parts[i]
+        for pattern, new in READER_WORDS:
+            piece = pattern.sub(new, piece)
+        parts[i] = RAW_PATH.sub(lambda m: source_link(m[1], Path(m[1]).stem.replace('_', ' ')
+                                                      .rstrip(' 0123456789-').strip() or 'record'), piece)
+    return ''.join(parts)
+
+
 def presentation_note(text, contract_table):
     """Keep the frozen accounting basis, but present named records to readers."""
     contract = source_link(contract_table, 'adopted contract reconstruction')
@@ -57,7 +90,7 @@ def presentation_note(text, contract_table):
     text = text.replace('March 2014 replay log', source_link(
         SeasonPaths(2014, ROOT).record('free_agency/march_2014_replay_log.md').relative_to(ROOT).as_posix(),
         'March 2014 signing record'))
-    return text
+    return reader_words(text)
 
 def slug(name):
     return re.sub(r'[^\w -]', '', name.lower()).replace(' ', '-')
@@ -153,8 +186,10 @@ def validate(data, root=ROOT):
                     raise ValueError('Missing annual contract component: '+p['name'])
             if p['remaining_guarantees'] != sum(r.get('guaranteed_base',0) for r in p['years'].values()):
                 raise ValueError('Remaining guarantees disagree: '+p['name'])
-    roster=md_rows(source_path(data['current_roster'],root).read_text())
-    expected={x[0] for x in roster if len(x) in (6,7) and re.fullmatch(r'\d{4}-\d{2}-\d{2}',x[2])}
+    # Every player the roster record lists (the active roster, the reserve lists and the practice
+    # squad) carries a contract here, and only they are current players.
+    from runtime import roster as roster_record
+    expected={row['name'] for row in roster_record.load(source_path(data['current_roster'],root))['players']}
     current_names={p['name'] for p in players if not p.get('former_player')}
     if current_names!=expected: raise ValueError('Tracker coverage differs from current active, retired and future roster')
     source=source_path(data['current_contract_table'],root).read_text()
@@ -252,7 +287,7 @@ def render_main(d,years):
         ])
     dashboard += f'The [current worksheet]({page_link(d["start_year"], "offseason/current_cap_worksheet.md", 1)}) records the Top-51 calculation and workout charge. A league-cap difference is not certified available room. [Organization finances](organization_finances.md) contains coaching commitments.\n\n'
     if current == '2014':
-        # Preserve required bonus charges below Top 51; displace only their P5 salary.
+        # Preserve required bonus charges below Top 51; displace only their base (P5) salary.
         ranked = sorted(active, key=lambda p: -(working_charge(p['years'][current]) or 0))
         excluded_base = sum(p['years'][current]['base'] for p in ranked[51:])
         dead = sum(x['amount'] for x in d['dead_money'] if str(x['year']) == current)
@@ -260,7 +295,7 @@ def render_main(d,years):
         workout = d['team_years'][current]['opening_workout_charge']
         dashboard += table(['Working offseason reconciliation', current], [
             ['Recorded player obligations', dollars(working_total(ps,current))],
-            ['P5 salary displaced below Top 51', dollars(-excluded_base)],
+            ['Base salary displaced below Top 51', dollars(-excluded_base)],
             ['Separate dead money', dollars(dead)],
             ['Top-51 obligations before workout charge', dollars(top51)],
             ['Opening workout charge (recorded worksheet)', dollars(workout)],
@@ -373,7 +408,7 @@ def render_details(d,years):
         elif p['control'] in {'pending','retired'}:out.append('No new playing contract is recorded for 2014 or later.\n\n')
         if p['name']=='Lane Johnson':out.append('The 2017 fifth-year option is unexercised and is excluded from committed years. Review the exercise decision in the 2016 option window.\n\n')
         elif p['name']=='Justin Blackmon':out.append('The contract, its deferred bonus cash and the 2016 fifth-year option left with the March 31, 2014 trade to Indianapolis. Only the accelerated bonus allocation stays with Jacksonville, once, in the dead-money ledger.\n\n')
-        elif p.get('draft_pick'):out.append('Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.\n\n')
+        elif p.get('draft_pick'):out.append('Any future proven-performance escalator requires his actual qualifying participation for Jacksonville; no later real-world escalator or extension is imported.\n\n')
         out.append('### Contract notes\n\n'+presentation_note(p['source_note'],d['current_contract_table']).rstrip('.')+'.\n\n')
 
         assumptions=list(dict.fromkeys(r['estimate_note'] for r in p['years'].values() if r.get('estimate_note')))
@@ -478,8 +513,9 @@ def render(data,root=ROOT):
     from runtime.season_layout import rebase_markdown
     years=validate(data,root)
     outputs = {
-        OUTPUT: rebase_markdown(render_main(data,years), 'career/finances/jaguars_cap.md', OUTPUT),
-        DETAILS: rebase_markdown(render_details(data,years), 'career/finances/jaguars_contract_details.md', DETAILS),
+        OUTPUT: rebase_markdown(reader_words(render_main(data,years)), 'career/finances/jaguars_cap.md', OUTPUT),
+        DETAILS: rebase_markdown(reader_words(render_details(data,years)), 'career/finances/jaguars_contract_details.md',
+                                 DETAILS),
         ORGANIZATION: rebase_markdown(render_organization(data,years,root), 'career/finances/organization_finances.md', ORGANIZATION),
     }
     # Focused reading pages come from the same calculated view, never from a

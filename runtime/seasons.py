@@ -82,7 +82,14 @@ class SeasonPaths:
     @property
     def postseason_receipts(self): return self.data_for(self.stats) / 'postseason_receipts'
     @property
-    def roster(self): return self.record('roster.md')
+    def roster(self):
+        """The season's roster owner: from 2014 the roster record in the data area
+        (runtime/roster.py); 2013 keeps its roster page as its own owner."""
+        return self.record('team/roster/roster.json') if self.year >= 2014 else self.record('roster.md')
+    @property
+    def roster_page(self):
+        """The roster page to read (built from the record from 2014)."""
+        return self.record('roster.md')
     @property
     def depth_chart(self): return self.record('depth_chart.json')
     @property

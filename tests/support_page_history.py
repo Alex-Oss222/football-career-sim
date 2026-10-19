@@ -28,6 +28,7 @@ def keep_as_history(root, rels=None):
         raise ValueError("the copy's page history must be a real file of its own, not a link")
     data = json.loads(path.read_text(encoding="utf-8"))
     pages = data["pages"]
+    lengths = data.get("lengths", {})
     names = sorted(pages) if rels is None else sorted(rels)
     changed = []
     for rel in names:
@@ -38,6 +39,8 @@ def keep_as_history(root, rels=None):
             now = clean_pages.digest(page.read_bytes())
             if now != pages[rel]:
                 pages[rel] = now
+                if rel in lengths:
+                    lengths[rel] = page.stat().st_size
                 changed.append(rel)
     path.write_text(json.dumps(data, indent=1) + "\n", encoding="utf-8")
     return changed

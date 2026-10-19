@@ -16,13 +16,18 @@ other use of the word is caught.
 Which pages: every page the player page builder writes, and every Markdown
 page under career/ written from 2014 Week 6 on. The pages written before
 Week 6 are history (rule 1): the folder map's PAGE_HISTORY file holds each
-one's path and the sha256 digest of its bytes as they stood before Week 6,
-and a page is exempt only while its bytes still match that digest. A page
-rewritten from Week 6 on, by hand or by its generator (the standings, the
-annual record, the desk), is checked like a new one, so a generator must be
-cleaned before it rewrites a page after Week 5 (docs/rebuild_plan.md names
-the build step that cleans each such view). A page the player page builder
-writes is checked by its marker.
+one's path and the sha256 digest of its bytes as they stood before Week 6
+("pages"), with the length of those bytes beside it ("lengths"). A page is
+exempt while its bytes still match that digest. An append-only history page
+(the medical history, the annual record, the roster decisions), whose
+current bytes begin with its exact pre-Week-6 bytes (the first "length"
+bytes match the digest), is checked only on what follows them: an appended
+entry is a page written from Week 6 on. Any other change (an edited old
+line, a page rewritten by hand or by its generator: the standings, the desk)
+makes the whole page a new one, so a generator must be cleaned before it
+rewrites a page after Week 5 (docs/rebuild_plan.md names the build step that
+cleans each such view). A page the player page builder writes is checked by
+its marker.
 
 Folder map. ``folder_map_errors`` fails when a script or runtime module,
 other than the folder map itself (runtime/season_layout.py, runtime/seasons.py)
@@ -102,13 +107,14 @@ def proper_names(root=ROOT):
 _NAMES = {}
 
 
-def page_errors(rel, text, markers=(), root=ROOT):
-    """The clean-page problems of one page (``rel`` is its repository path); a player's name
+def page_errors(rel, text, markers=(), root=ROOT, first_line=1):
+    """The clean-page problems of one page (``rel`` is its repository path; ``first_line`` numbers
+    the first line of ``text`` when it is the appended part of a history page); a player's name
     from ``root``'s registry and records that contains a checked word is allowed."""
     problems = []
     names = proper_names(root)
     lines = text.splitlines()
-    for number, line in enumerate(lines, 1):
+    for number, line in enumerate(lines, first_line):
         if line.strip() in markers:
             continue
         found = []
@@ -162,35 +168,67 @@ def digest(data):
     return hashlib.sha256(data).hexdigest()
 
 
+def _history_data(root):
+    path = Path(root) / PAGE_HISTORY
+    return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else {}
+
+
 def history(root=ROOT):
     """{repository path: digest} of the pages written before 2014 Week 6."""
-    path = Path(root) / PAGE_HISTORY
-    if not path.is_file():
-        return {}
-    return dict(json.loads(path.read_text(encoding="utf-8"))["pages"])
+    return dict(_history_data(root).get("pages", {}))
 
 
-def checked_pages(root=ROOT):
-    """(path, text) for every page the rule covers: built pages, pages newer than the history and
-    history pages whose bytes no longer match their recorded digest."""
+def history_lengths(root=ROOT):
+    """{repository path: length in bytes} of the same pages as they stood before Week 6."""
+    return dict(_history_data(root).get("lengths", {}))
+
+
+def unchecked_prefix(data, recorded, length):
+    """How many leading bytes of a history page are exempt: all of them while the page matches its
+    digest; the original ``length`` bytes when the page begins with them exactly (an append-only
+    page with entries added after Week 5); none once an old byte has changed."""
+    if recorded is None:
+        return 0
+    if digest(data) == recorded:
+        return len(data)
+    if isinstance(length, int) and 0 < length < len(data) and digest(data[:length]) == recorded:
+        return length
+    return 0
+
+
+def checked_parts(root=ROOT):
+    """(path, text, first line) for every page or part of a page the rule covers: built pages,
+    pages newer than the history, the entries appended to a history page after its pre-Week-6
+    bytes, and history pages whose old bytes changed (the whole page)."""
     from .player_pages import built_page
     root = Path(root)
-    old = history(root)
+    old, lengths = history(root), history_lengths(root)
     out = []
     for path in sorted((root / "career").rglob("*.md")):
         rel = path.relative_to(root).as_posix()
         data = path.read_bytes()
         text = data.decode("utf-8")
-        if built_page(text) or old.get(rel) != digest(data):
-            out.append((rel, text))
+        if built_page(text):
+            out.append((rel, text, 1))
+            continue
+        cut = unchecked_prefix(data, old.get(rel), lengths.get(rel))
+        if cut == len(data):
+            continue
+        head = data[:cut].decode("utf-8")
+        out.append((rel, data[cut:].decode("utf-8"), head.count("\n") + 1))
     return out
+
+
+def checked_pages(root=ROOT):
+    """(path, text) for every page or appended part the rule covers (``checked_parts``)."""
+    return [(rel, text) for rel, text, _ in checked_parts(root)]
 
 
 def clean_errors(root=ROOT):
     from .player_pages import MARKERS
     errors = []
-    for rel, text in checked_pages(root):
-        errors += page_errors(rel, text, MARKERS, root)
+    for rel, text, first in checked_parts(root):
+        errors += page_errors(rel, text, MARKERS, root, first_line=first)
     return errors
 
 

@@ -133,8 +133,9 @@ class ContinuityTests(unittest.TestCase):
         self.assertTrue(any('stale source-version hash' in error for error in validate(self.root)))
 
     def test_membership_mismatch_is_rejected_even_when_count_matches(self):
+        # The roster record owns club control (rebuild step 3b).
         self.change(current_record('roster', self.root).relative_to(self.root),
-                    '| Kirk Cousins |', '| Synthetic replacement |')
+                    '"name": "Kirk Cousins"', '"name": "Synthetic replacement"')
         self.assertTrue(any('membership differs' in error for error in validate(self.root)))
 
     def test_broken_markdown_anchor_is_rejected(self):

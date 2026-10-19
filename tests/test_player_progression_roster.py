@@ -3,6 +3,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from runtime.seasons import SeasonPaths
+
 from scripts.build_player_progression_roster import (
     build_manifest,
     load_exit_index,
@@ -10,7 +12,7 @@ from scripts.build_player_progression_roster import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-ROSTER = ROOT / 'career/2014/Team_Operations/Team/Roster/roster.md'
+ROSTER = SeasonPaths(2014, ROOT).roster  # the roster record (rebuild step 3b)
 EXIT_INDEX = (
     ROOT
     / 'data/2014/Team_Operations/Player_Development/2013_exit_player_index.json'
