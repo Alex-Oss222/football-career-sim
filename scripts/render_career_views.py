@@ -898,7 +898,7 @@ def managed(root):
             "desk": paths.desk.relative_to(root),
             "calendar": paths.calendar.relative_to(root),
             "medical": paths.record("medical/current_injury_report.md").relative_to(root),
-            "statbook": (paths.career / "Regular_Season/Statistics/README.md").relative_to(root),
+            "statbook": paths.record("statbook.md").relative_to(root),
             "decision-classes": DOC}
 
 
