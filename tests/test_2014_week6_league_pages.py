@@ -8,17 +8,15 @@ awards are recorded from their formula shortlists (the first finalist named, a f
 The rest of the week's close that other owners carry is stood in for: the week's open
 decisions in the queue are settled as the user's (the Game Plan's apply step settles them in a
 real week) and the roster record is dated to the game. The master date is left where it stands:
-moving it is the event record's work, not these pages'. Every page the standings, statistics, team tracker,
-award and roster-moves builders own is then rebuilt the way the weekly workflow rebuilds it,
-together with the other pages that read the same game records. Each such page must pass the
-clean-page check, validation of the copy must add no error to the real checkout's, and the
+moving it is the event record's work, not these pages'. Every built page is then rebuilt by the
+one command the weekly workflow runs (scripts/rebuild_pages.py). Each page the standings,
+statistics, team tracker, award and roster-moves builders own must pass the clean-page check,
+validation of the copy must add no error to the real checkout's, and the
 figures the pages show come from the same arithmetic (the copy's standings and the statbook
 agree on every club's record). Which week is the first new-system week is read from the stored
 facts: the next week after the latest closed one.
 """
-import contextlib
 import copy
-import io
 import json
 import shutil
 import sys
@@ -30,12 +28,11 @@ from unittest import mock
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from runtime import clean_pages, player_pages
+from runtime import clean_pages
 from runtime.player_pages import MARKERS
 from runtime.seasons import SeasonPaths
 from runtime.week_inputs import event_id, receipt_name
-from scripts import (league_awards, render_inseason_rails, render_season_stats, render_standings,
-                     render_team_tracker)
+from scripts import league_awards, rebuild_pages, render_inseason_rails, render_season_stats, render_team_tracker
 from scripts.validate_repository import validate
 
 SEASON, JAX = 2014, "Jacksonville Jaguars"
@@ -138,36 +135,25 @@ class Week6LeaguePagesTests(unittest.TestCase):
         self.real_receipts = sorted(p.name for p in SeasonPaths(SEASON, ROOT).receipts.glob("*.json"))
 
     def rebuild(self, week):
-        """Every page the five builders own, then the pages that read the same game records."""
+        """Every built page, by the one command; returns the pages the five builders own."""
         root, paths = self.root, self.paths
+        written, problems = rebuild_pages.rebuild(root, SEASON)
+        self.assertEqual(problems, [])
+        self.assertEqual(rebuild_pages.rebuild(root, SEASON, check=True), ([], []))
         receipts = render_season_stats.load_receipts(paths.receipts)
-        written = []
-        standings = paths.record("standings.md")
-        standings.write_text(render_standings.render(SEASON, receipts), encoding="utf-8")
-        written.append(standings)
-        for name, text in render_season_stats.render_views(SEASON, JAX, receipts, root).items():
-            target = render_season_stats.view_path(paths, name)
-            target.parent.mkdir(parents=True, exist_ok=True)
-            target.write_text(text, encoding="utf-8")
-            written.append(target)
+        pages = [paths.record("standings.md")]
+        pages += [render_season_stats.view_path(paths, name)
+                  for name in render_season_stats.render_views(SEASON, JAX, receipts, root)]
         tracker = render_team_tracker.tracker_dir(root, SEASON)
-        for rel, text in render_team_tracker.render(root, SEASON, JAX).items():
-            (tracker / rel).parent.mkdir(parents=True, exist_ok=True)
-            (tracker / rel).write_text(text, encoding="utf-8")
-            written.append(tracker / rel)
+        pages += [tracker / rel for rel in render_team_tracker.render(root, SEASON, JAX)]
         with mock.patch.object(league_awards, "ROOT", root):
-            league_awards.render(SEASON)
             from scripts.render_award_pages import render_pages
             drawn = render_pages(SEASON, league_awards.load_results(SEASON), league_awards.method(SEASON), root=root)
-        written += [paths.awards / rel for rel in sorted(drawn)]
-        written.append(render_inseason_rails.write(SEASON, week, root, [r for r in receipts if int(r["week"]) < week]))
-        # The other pages that read the closed games, as the weekly workflow rebuilds them.
-        player_pages.write(root)
-        from scripts import render_career_views, render_club_pages, render_coach_pages
-        render_club_pages.write(root)
-        render_coach_pages.write(root)
-        render_career_views.write(root)
-        return [p for p in written if p.suffix == ".md" and p.is_relative_to(root / "career")]
+        pages += [paths.awards / rel for rel in sorted(drawn)]
+        pages.append(render_inseason_rails.page_path(SEASON, week, root))
+        for path in pages:
+            self.assertTrue(path.is_file(), path)
+        return [p for p in pages if p.suffix == ".md" and p.is_relative_to(root / "career")]
 
     def test_the_first_new_system_week_closes_with_clean_league_pages(self):
         root, paths = self.root, self.paths

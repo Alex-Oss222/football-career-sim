@@ -405,7 +405,12 @@
     "tests/test_game_week_pages.py",
     "runtime/week_pages.py",
     "scripts/render_week_pages.py",
-    "career/2014/Team_Operations/Medical/current_injury_report.md"
+    "career/2014/Team_Operations/Medical/current_injury_report.md",
+    "runtime/season_summary.py",
+    "scripts/render_season_hub.py",
+    "scripts/rebuild_pages.py",
+    "tests/test_week_close_pages.py",
+    "tests/test_2014_week6_league_pages.py"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",

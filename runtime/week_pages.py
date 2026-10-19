@@ -19,7 +19,9 @@ checks them, and repository validation runs its check.
   The pages of earlier weeks are history and are never rewritten.
 - The medical pages (``medical/``): the current injury report, rewritten from
   the roster record (the owner of each player's current medical
-  communication) each time it is built; and, for each Jacksonville game from
+  communication) each time it is built, in short (runtime/season_summary.py:
+  the status and the next medical date, each player linked to his page and
+  each status to its medical record); and, for each Jacksonville game from
   the first Game Report week, the medical history's dated entry for the
   game's injuries, with its event-record line, appended once from the game's
   record (a history page only gains entries), and one incident record per new
@@ -39,7 +41,7 @@ import re
 from datetime import date, timedelta
 from pathlib import Path
 
-from . import people, roster as roster_record
+from . import people, roster as roster_record, season_summary as summary
 from .player_bios import master_date
 from .player_pages import club_short
 from .play_detail import DRIVE_SUMMARY_FIELDS
@@ -58,6 +60,9 @@ PERIODS = {1: "first", 2: "second", 3: "third", 4: "fourth"}
 CLASSES = {"head_neck": "head/neck", "upper_extremity": "upper extremity", "lower_extremity": "lower extremity",
            "trunk": "trunk"}
 RESTRICTIONS = {"out": "out", "limited": "limited"}
+# Each injury severity the game records in football words, as the medical pages write them
+# ("Out, multi-week: lower extremity"). An unlisted one reads with its underscores as spaces.
+SEVERITIES = {"minor": "minor", "short": "short", "multi_week": "multi-week", "long_term": "long term"}
 # A roster status as the roster page names it (scripts/render_club_pages.py STATUS_NAMES).
 STATUS_NAMES = {"Active 53": "Active roster", "Offseason roster": "Offseason roster",
                 "Reserve/Injured": "Reserve/injured",
@@ -421,35 +426,56 @@ def as_of_line(season):
     return line + "."
 
 
+def player_link(season, page, name):
+    """The player's name, linked to his page when it exists."""
+    target = season.paths.record("player_profiles") / (people.slugify(name) + ".md")
+    return link(page, season.rel(target), name) if target.is_file() else name
+
+
+def status_link(season, page, row):
+    """The player's medical status in short (runtime/season_summary.medical_status), linked to the
+    medical record the roster record names as its source."""
+    text = summary.medical_status(row)
+    source = (row.get("sources") or {}).get("availability")
+    return link(page, source, text) if source and (season.root / source).is_file() else text
+
+
 def injury_report(season):
+    """The current injury report, from the roster record: each player under a medical instruction
+    with his status and next medical date, the reserve lists with theirs, then the count of the
+    rest. Each status links the medical record behind it."""
     path = medical_path(season, "current_injury_report.md")
     page = season.rel(path)
-    source = season.rel(season.paths.roster_page)
     players = season.roster["players"]
+    held = summary.held(season.roster)
+    reserve = summary.reserve(season.roster)
 
-    def rows(members):
-        return [[p["name"], p["position"], status_text(p["status"]),
-                 rebase(p["availability"], source, page)] for p in members]
+    def row(p, with_list=False):
+        cells = [player_link(season, page, p["name"]), p["position"]]
+        if with_list:
+            cells.append(status_text(p["status"]))
+        return cells + [status_link(season, page, p), summary.next_dates(p, season.as_of)]
 
-    held = [p for p in roster_record.players(season.roster, ("active",))
-            if not (p.get("availability") or NO_RESTRICTION).startswith(NO_RESTRICTION)]
-    reserve = roster_record.players(season.roster, ("reserve",))
-    lines = ["# Jacksonville injury report", "", as_of_line(season), "",
+    lines = ["# Jacksonville injury report", "",
+             as_of_line(season) + " The medical staff control participation and return clearance.", "",
              " · ".join([link(page, season.rel(medical_path(season, "medical_history.md")), "Medical history"),
                          link(page, season.rel(season.paths.roster_page), "Roster"),
-                         link(page, season.rel(medical_path(season, "README.md")), "Medical records")]), ""]
+                         link(page, season.rel(season.paths.record("depth_chart.md")), "Depth chart"),
+                         link(page, season.rel(medical_path(season, "README.md")), "Medical records"),
+                         link(page, season.rel(season.paths.desk), "Head coach's desk")]), ""]
     lines += ["## Active roster", ""]
     if held:
-        lines += table(["Player", "Pos", "Status", "Medical instruction"], rows(held)) + [""]
+        lines += table(["Player", "Pos", "Status", "Next medical date"], [row(p) for p in held]) + [""]
     else:
         lines += ["No player on the active roster is under a medical instruction.", ""]
     if reserve:
-        lines += ["## Reserve lists", ""] + table(["Player", "Pos", "Status", "Medical instruction"], rows(reserve)) + [""]
+        lines += ["## Reserve lists", ""] + table(["Player", "Pos", "List", "Status", "Next medical date"],
+                                                  [row(p, True) for p in reserve]) + [""]
     clear = sum(1 for p in players if p["list"] == "active" and p not in held)
     squad = sum(1 for p in players if p["list"] == "practice_squad")
     lines += ["The other %d players on the active roster and the %d on the practice squad carry no "
               "communicated restriction. A projected return is the medical staff's projection, not a "
-              "clearance." % (clear, squad), ""]
+              "clearance; each player's medical record holds his full instruction and its history." % (clear, squad), ""]
     return page, "\n".join(lines)
 
 
@@ -487,8 +513,18 @@ def clock_text(injury):
     return "at %s %s" % (injury.get("clock"), where)
 
 
+def words(value, table):
+    """``value`` (a code the game records) in football words: from ``table``, else with its
+    underscores as spaces."""
+    return table.get(value) or str(value).replace("_", " ")
+
+
+def severity_words(injury):
+    return words(injury.get("severity"), SEVERITIES)
+
+
 def instruction_text(injury, played, days_shown=True):
-    restriction = RESTRICTIONS.get(injury.get("restriction"), injury.get("restriction") or "no restriction")
+    restriction = words(injury.get("restriction"), RESTRICTIONS) if injury.get("restriction") else "no restriction"
     parts = [restriction]
     days = injury.get("return_days") or 0
     if days:
@@ -502,8 +538,7 @@ def instruction_text(injury, played, days_shown=True):
 
 
 def injury_words(injury):
-    return "%s, %s" % (CLASSES.get(injury.get("injury_class"), str(injury.get("injury_class")).replace("_", " ")),
-                       injury.get("severity"))
+    return "%s, %s" % (words(injury.get("injury_class"), CLASSES), severity_words(injury))
 
 
 def game_phrase(season, receipt):

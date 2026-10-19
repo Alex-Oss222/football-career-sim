@@ -13,6 +13,31 @@ Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013. [Coac
 
 **Next game:** Week 6, Jacksonville at Tennessee, Sunday, October 12, 1 p.m. ET, LP Field. [Week 6](Regular_Season/Games/Week_06/README.md)
 
+## Season at a glance
+
+**3-2 · 1st AFC South · AFC position 4.** 115 scored · 109 allowed · +6 differential. 23.0 points per game · 41.4% on third down · 46.3% allowed.
+
+[Season statistics](Regular_Season/Statistics/README.md) · [Division standings](Regular_Season/standings.md)
+
+## Player production
+
+| Category | Player | Through the last game |
+|---|---|---|
+| Passing | [Kirk Cousins](Team_Operations/Team/Player_Cards/kirk_cousins.md) | 1,213 pass yds · 9 TD, 7 INT |
+| Rushing | [Maurice Jones-Drew](Team_Operations/Team/Player_Cards/maurice_jones_drew.md) | 461 rush yds · 2 TD |
+| Receiving | [Davante Adams](Team_Operations/Team/Player_Cards/davante_adams.md) | 369 rec yds · 30 catches, 2 TD |
+| Tackling | [Daryl Smith](Team_Operations/Team/Player_Cards/daryl_smith.md) | 48 tackles · 1 sack |
+
+## Medical and availability
+
+| Player | Status | Next medical date |
+|---|---|---|
+| [Christian Jones](Team_Operations/Team/Player_Cards/christian_jones.md) | [Out · upper extremity (minor)](Team_Operations/Medical/incidents/christian_jones_2014-10-05.md) | Review October 6, 2014; projected return October 6, 2014 |
+| [Brynden Trawick](Team_Operations/Team/Player_Cards/brynden_trawick.md) | [Out · lower extremity (minor)](Team_Operations/Medical/incidents/brynden_trawick_2014-10-05.md) | Review October 7, 2014; projected return October 11, 2014 |
+| [Jordan Poyer](Team_Operations/Team/Player_Cards/jordan_poyer.md) | [Independent hold · head/neck (short)](Team_Operations/Medical/incidents/jordan_poyer_2014-09-21.md) | Projected return October 9, 2014 |
+
+Projected dates require medical clearance. [Full injury report](Team_Operations/Medical/current_injury_report.md)
+
 ## Coming up
 
 - October 6: Pittsburgh review and Tennessee introduction; Christian Jones's reassessment and projected return

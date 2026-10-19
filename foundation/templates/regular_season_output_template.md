@@ -1,6 +1,6 @@
 # Game Report template (regular season and postseason)
 
-**Status:** The user's weekly game turn template, confirmed September 30, 2026. Applies to every regular-season and postseason game turn from the 2014 season onward; 2013 turns keep the earlier format, retained in git history. From 2014 Week 6 (October 19, 2026, rebuild step 4) the filled page is the week's **Game Report**, `Game_Report.md` in the week's folder, the result page of the game week's three pages: the Game Week Briefing (what Stone needed to know), his Game Plan (what he decided) and the Game Report (what happened and what changed). 2014 Weeks 1 to 5 keep their `output.md` as written.
+**Status:** The user's weekly game turn template, confirmed September 30, 2026. Applies to every regular-season and postseason game turn from the 2014 season onward; 2013 turns keep the earlier format, retained in git history. From 2014 Week 6 (October 19, 2026, rebuild step 4) the filled page is the week's **Game Report**, `Game_Report.md` in the week's folder, the result page of the game week's three pages: the Game Week Briefing (what Stone needed to know), his Game Plan (what he decided) and the Game Report (what happened and what changed). 2014 Weeks 1 to 5 keep their `output.md` as written. From Week 6 section 6 is headed "Weekly personnel and availability", without the earlier last word, which the clean-page check does not allow on a page; the earlier reports keep their heading as written.
 **When used:** Regular-season game weeks, byes and postseason turns. An unplayed slot contains preparation only; do not fill a result, player performance or box score before the game is resolved. Use the [preseason output template](preseason_output_template.md) for preseason turns and the [offseason output template](offseason_output_template.md) for offseason turns. Document 7 governs simulation; this template governs presentation.
 
 Every Game Report follows this layout. Bracketed text is an authoring prompt, not a requirement to manufacture content. Italic instructions are carried out and left out of the output. Apply the [game-output workflow](../../docs/game_output_workflow.md) before writing or restyling a turn.
@@ -347,7 +347,7 @@ Week \[X\] · \[Day, Month Date, Year\] · \[Kickoff time\] · \[Stadium, City\]
 
 **Next-week carry-forward:** \[Turn those conclusions into the actual or proposed next work: the cutups, the corrections, what stays on the menu and what waits. Name the responsible actual coach and the next useful opportunity for each material correction. Distinguish work proposed, instruction delivered and improvement actually observed.\]
 
-## 6. Weekly personnel and availability snapshot
+## 6. Weekly personnel and availability
 
 *The roster as it stands leaving this game. Preserve the unit headings and tables, with concise current-role and availability entries. Full participation is accounted for in the generated statistics; this section explains material role, medical and evaluation findings. Do not recopy every player's statistical line or invent a new judgment for an unchanged group. An unchanged group retains its supported current view; the evidence column can point to the finding above rather than restate it. Link the controlling roster and medical records.*
 

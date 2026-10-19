@@ -227,6 +227,11 @@ def player_link(ctx, rel, name):
     return link(rel, page, name) if page else name
 
 
+def join_names(names):
+    names = list(names)
+    return names[0] if len(names) == 1 else ", ".join(names[:-1]) + " and " + names[-1]
+
+
 def availability(ctx, name):
     row = next((p for p in ctx.roster["players"] if p["name"] == name), None)
     return (row or {}).get("availability") or ""
@@ -309,66 +314,134 @@ def role_labels(ctx):
 
 
 def depth_chart_page(ctx):
+    """Current assignments first; a shorter full depth order follows. Every name and note comes
+    from the game depth chart and the roster record."""
+    from runtime import season_summary as summary
+
     rel = ctx.paths.record("depth_chart.md").relative_to(ctx.root).as_posix()
     labels = role_labels(ctx)
     depth, positions = ctx.chart.get("depth") or {}, ctx.chart.get("positions") or {}
+    roster = {p["name"]: p for p in ctx.roster.get("players", ())}
     lines = ["# Jacksonville Jaguars depth chart", "", as_of_line(ctx), "",
-             "Stone's order within each position group, first listed first. A place on the chart is his "
-             "decision, not a promise of snaps; every change is dated in the log below. Players on the "
-             "reserve lists and the practice squad are not on the chart.", "",
-             " · ".join([link(rel, ctx.paths.roster_page.relative_to(ctx.root).as_posix(), "Roster"),
-                         link(rel, ctx.paths.record("medical/medical_history.md").relative_to(ctx.root).as_posix(),
-                              "Medical history"),
-                         link(rel, ctx.paths.record("team/README.md").relative_to(ctx.root).as_posix(), "The team")]),
-             ""]
+             "This is Stone's current depth order, not a confirmed game-day lineup. Injuries do not "
+             "change a starter or reserve assignment until Stone changes the chart.", "",
+             " · ".join([
+                 link(rel, ctx.paths.roster_page.relative_to(ctx.root).as_posix(), "Roster"),
+                 link(rel, ctx.paths.record("medical/current_injury_report.md").relative_to(ctx.root).as_posix(),
+                      "Medical and availability"),
+                 link(rel, ctx.paths.desk.relative_to(ctx.root).as_posix(), "Head coach's desk")]), "",
+             "## First-unit offense", "",
+             "Player use varies with the personnel package. The starting line and the X, H and Z "
+             "receiver assignments are shown separately.", ""]
+    offense = []
+    def seat(pos, name, note=""):
+        if name:
+            offense.append([pos, player_link(ctx, rel, name), note])
+    quarterbacks, backs = depth.get("QB") or [None], depth.get("RB") or [None]
+    seat("QB", quarterbacks[0], "%s is QB2" % quarterbacks[1] if len(quarterbacks) > 1 else "")
+    seat("RB", backs[0], "%s %s" % (join_names(backs[1:]), "follows" if len(backs) == 2 else "follow")
+         if len(backs) > 1 else "")
+    seat("FB", (depth.get("FB") or [None])[0], "For fullback packages")
+    receivers = depth.get("WR") or []
+    for i, label in enumerate(("X", "H", "Z")):
+        if i < len(receivers):
+            seat(label, receivers[i], labels.get(receivers[i], ""))
+    seat("TE", (depth.get("TE") or [None])[0], "Additional tight ends follow in the group order")
+    line = depth.get("OL") or []
+    for i, label in enumerate(("LT", "LG", "C", "RG", "RT")):
+        if i < len(line):
+            seat(label, line[i], "")
+    lines += [table(["Position", "Player", "Assignment"], offense), "",
+              "## Base defense", "",
+              "The first defensive-line and linebacker groups, and the first four defensive backs, "
+              "are shown here. Individual front and package calls still control the snap.", ""]
+    defense = []
+    for unit, group, count in (("Defensive line", "DL", 4), ("Linebackers", "LB", 3),
+                               ("Defensive backs", "DB", 4)):
+        names = (depth.get(group) or [])[:count]
+        defense.append([unit, ", ".join(player_link(ctx, rel, name) for name in names)])
+    lines += [table(["Unit", "First group"], defense), "",
+              "## Situational defensive roles", ""]
+    jobs = (("nickel", "Nickel corner"), ("outside_reserve", "Outside corner reserve"))
+    special_defense = []
+    for code, label in jobs:
+        names = [name for name, roles in ctx.chart.get("roles", {}).items() if code in roles]
+        if names:
+            special_defense.append([label, ", ".join(player_link(ctx, rel, name) for name in names)])
+    dbs = depth.get("DB") or []
+    if len(dbs) >= 6:
+        special_defense.append(["Dime, sixth defensive back", player_link(ctx, rel, dbs[5])])
+    lines += [table(["Role", "Player"], special_defense) if special_defense else "No separate package seats recorded.", "",
+              "## Current medical limitations", ""]
+    active = summary.held(ctx.roster)
+    if active:
+        lines += [table(["Player", "Status", "Next medical date"],
+                        [[player_link(ctx, rel, p["name"]), summary.medical_status(p),
+                          summary.next_dates(p, ctx.as_of)] for p in active]), ""]
+    else:
+        lines += ["No medical instructions on the 53-man roster.", ""]
+    lines += ["Medical clearance remains with the medical staff. " +
+              link(rel, ctx.paths.record("medical/current_injury_report.md").relative_to(ctx.root).as_posix(),
+                   "Full medical report"), "",
+              "## Full depth order", "",
+              "The order in each group remains Stone's current order. Reserve assignments that have "
+              "not been named are not inferred from the table.", ""]
     for unit, groups in UNITS:
-        lines += ["## " + unit, ""]
+        lines += ["### " + unit, ""]
         for group in groups:
             players = depth.get(group) or []
-            lines += ["### " + GROUP_NAMES[group], "",
-                      table(["Order", "Player", "Pos", "Role", "Availability"],
-                            [[i, player_link(ctx, rel, p), positions.get(p, ""), labels.get(p, ""),
-                              availability(ctx, p)] for i, p in enumerate(players, 1)], right=(0,)), ""]
-    special = [["Kicker", ", ".join(depth.get("K") or [])], ["Punter", ", ".join(depth.get("P") or [])],
-               ["Long snapper", ", ".join(depth.get("LS") or [])]]
-    for role, job in (("kick_return", "Kick returner"), ("punt_return", "Punt returner")):
-        special.append([job, ", ".join(p for p, roles in ctx.chart.get("roles", {}).items() if role in roles)])
+            lines += ["#### " + GROUP_NAMES[group], "",
+                      table(["Order", "Player", "Pos", "Role"],
+                            [[i, player_link(ctx, rel, p), positions.get(p, ""), labels.get(p, "")]
+                             for i, p in enumerate(players, 1)], right=(0,)), ""]
+    special = [["Kicker", ", ".join(player_link(ctx, rel, p) for p in depth.get("K") or [])],
+               ["Punter", ", ".join(player_link(ctx, rel, p) for p in depth.get("P") or [])],
+               ["Long snapper", ", ".join(player_link(ctx, rel, p) for p in depth.get("LS") or [])]]
+    for code, label in (("kick_return", "Kick returner"), ("punt_return", "Punt returner")):
+        names = [p for p, roles in ctx.chart.get("roles", {}).items() if code in roles]
+        special.append([label, ", ".join(player_link(ctx, rel, p) for p in names)])
     lines += ["## Special teams", "", table(["Job", "Player"], special), ""]
-
-    lines += ["## Inactives", ""]
-    inactive = ctx.chart.get("game_day_inactives")
-    inactive = inactive if isinstance(inactive, dict) else {}
+    inactive = ctx.chart.get("game_day_inactives") or {}
     upcoming = ctx.next_game()
-    listed_week = inactive.get("week")
-    if upcoming and listed_week != upcoming["week"]:
-        lines += ["%s: not yet set. Stone names the inactives before the game." % fixture_line(upcoming), ""]
+    lines += ["## Inactives", ""]
+    listed = inactive.get("week")
+    if upcoming and listed != upcoming["week"]:
+        lines += ["%s: not yet set. Stone selects the eligible inactives before the game." %
+                  fixture_line(upcoming), ""]
     if inactive.get("players"):
-        game = next((g for g in ctx.fixtures.values() if g["week"] == listed_week and JAX in (g["away"], g["home"])),
-                    None)
-        title = fixture_line(game) if game else "Week %d" % listed_week
-        lines += ["%s:" % title, "",
-                  table(["Player", "Pos", "Availability"],
-                        [[player_link(ctx, rel, p), positions.get(p, ""), availability(ctx, p)]
+        game = next((g for g in ctx.fixtures.values()
+                     if g["week"] == listed and JAX in (g["away"], g["home"])), None)
+        lines += ["The prior game's inactives, for reference:", "",
+                  table(["Player", "Position"],
+                        [[player_link(ctx, rel, p), positions.get(p, "")]
                          for p in inactive["players"]]), ""]
-
-    # The captains as the game chart holds them (the working chart mirrors them, and stands in
-    # for a game chart that carries none).
     captains = ctx.chart.get("captains") or ctx.working.get("captains") or {}
     if captains:
         reserve = {p["name"] for p in roster_record.players(ctx.roster, ("reserve",))}
-        heading = "Captains, %s" % captains["date"]
         def names(group):
-            return ", ".join(p + (" (on the reserve lists)" if p in reserve else "") for p in captains.get(group, ()))
-        lines += ["## " + heading, "", captains.get("structure", "").rstrip(".") + ".", "",
-                  table(["Unit", "Captains"], [["Offense", names("offense")], ["Defense", names("defense")]]), ""]
+            return ", ".join(p + (" (reserve/injured)" if p in reserve else "") for p in captains.get(group, ()))
+        lines += ["## Captains, %s" % captains["date"], "",
+                  table(["Offense", "Defense"], [[names("offense"), names("defense")]]), ""]
+    history = ctx.paths.record("team/depth_chart/Changes.md")
+    lines += ["## Update log", "",
+              link(rel, history.relative_to(ctx.root).as_posix(), "Read all dated changes"), ""]
+    return rel, "\n".join(lines)
 
+
+def depth_history_page(ctx):
+    """The complete dated change history stays readable off the main chart."""
+    rel = (ctx.paths.record("team/depth_chart/Changes.md")).relative_to(ctx.root).as_posix()
+    chart = ctx.paths.record("depth_chart.md").relative_to(ctx.root).as_posix()
     rows = []
     for e in ctx.log.get("entries", ()):
         sources = "; ".join(link(rel, s["page"].split("#")[0], s["label"],
-                                 s["page"].split("#", 1)[1] if "#" in s["page"] else "") for s in e["sources"])
+                                 s["page"].split("#", 1)[1] if "#" in s["page"] else "")
+                            for s in e["sources"])
         rows.append([e["date"], e["event"], e["change"], sources])
-    lines += ["## Update log", "", "Every change to the chart, oldest first.", "",
-              table(["Date", "Event", "Change", "Source"], rows), ""]
+    lines = ["# Depth chart changes", "", as_of_line(ctx), "",
+             link(rel, chart, "Current depth chart"), "",
+             "## Update log", "", "Every dated assignment change, oldest first.", "",
+             table(["Date", "Event", "Change", "Source"], rows), ""]
     return rel, "\n".join(lines)
 
 
@@ -521,7 +594,7 @@ def team_page(ctx):
 # ------------------------------------------------------------------ build, check, write
 def build(root=ROOT, ctx=None):
     ctx = Context(root) if ctx is None else ctx
-    return dict(builder(ctx) for builder in (roster_page, depth_chart_page, team_page))
+    return dict(builder(ctx) for builder in (roster_page, depth_chart_page, depth_history_page, team_page))
 
 
 LOG_KEYS = ("team", "season", "about", "entries")

@@ -16,9 +16,15 @@ private snapshot. The views read only those two files, Stone's coach record
 season's fixtures, the closed events, docs/repository_map.json, whether the
 next game's week README and call sheet and the last game's output exist,
 whether a week's Game Week Briefing and Game Plan exist (the desk links both
-under "Waiting on you" once they are issued), and
-the employer club's own closed-game receipts for the desk's last result and
-record; never another club's receipt, the standings, awards or the wall clock.
+under "Waiting on you" once they are issued), and the employer club's own
+closed-game receipts for the desk's last result and record; never awards or
+the wall clock. The desk's season summary (scripts/render_season_hub.py: the
+season at a glance, with the club's place in the standings from every closed
+game, its leaders and its players under a medical instruction from the roster
+record) and the season calendar (the current month and the next games above
+the full-year dates, which the calendar page keeps as written) are built here
+too. The injury report and the statistics index have their own builders
+(scripts/render_week_pages.py, scripts/render_season_stats.py).
 The staff register's phase-control table is no longer written: the Staff page
 (scripts/render_coach_pages.py) shows who calls what. Writing is refused while
 a Jacksonville game is paused; --check is read-only and exits 1 on a stale,
@@ -48,6 +54,7 @@ from runtime.season_layout import NUMBERED_FOLDERS  # noqa: E402
 from runtime.seasons import SeasonPaths  # noqa: E402
 from scripts.render_coach_pages import (COACH_PAGE, CONTRACT_PAGE, club_record, football_anchor,  # noqa: E402
                                         heading, last_game)
+from scripts import render_season_hub  # noqa: E402
 from scripts.validate_repository import anchors, git_blob, without_code  # noqa: E402
 
 STATE = Path("state/05_Current_Season_State.md")
@@ -56,7 +63,7 @@ DOC = Path("docs/career_layer.md")
 MANIFEST_ROWS = (("Current job record", current_job.JOB.as_posix(), "Job, authority and delegation"),
                  ("Decision queue", decision_queue.QUEUE.as_posix(), "Open and resolved decisions"))
 BANNED = re.compile(r"\b(branch|simulation|receipt|kernel|engine|ledger|snapshot|checkpoint)s?\b", re.I)
-VOICED = frozenset({"desk"})   # reader prose; the Document 5 blocks are a state file
+VOICED = frozenset({"desk", "calendar"})   # reader prose; the Document 5 blocks are a state file
 LINK = re.compile(r"\]\(@([^)#]*)(?:#([^)]*))?\)")   # a view's repository-relative link before localizing
 PHASE_LABEL = {"offense": "Offense", "defense": "Defense", "special_teams": "Special teams"}
 DECISION_LABEL = {"fourth_down": "fourth downs", "two_point": "two-point tries", "kickoff": "onside kicks",
@@ -645,7 +652,7 @@ def render_desk(ctx):
               link(ctx, "Record", rel(ctx, ctx.paths.annual_record))]
     out += ["## Records", "", " · ".join(links), ""]
     out += ["## Season folders", ""] + _folders(ctx) + [""]
-    return "\n".join(out).rstrip() + "\n"
+    return render_season_hub.insert_dashboard(ctx, "\n".join(out).rstrip() + "\n")
 
 
 def rel(ctx, path):
@@ -908,14 +915,19 @@ def managed(root):
     """Marker name -> the file holding that block (repository-relative)."""
     root = Path(root).resolve()
     season = int(repository_map(root)["active_season"])
+    paths = SeasonPaths(season, root)
     return {"current-job": STATE, "decision-queue": STATE,
-            "desk": SeasonPaths(season, root).desk.relative_to(root),
+            "desk": paths.desk.relative_to(root),
+            "calendar": paths.calendar.relative_to(root),
             "decision-classes": DOC}
 
 
 BUILDERS = {"current-job": current_job_block, "decision-queue": decision_queue_block,
-            "desk": render_desk, "decision-classes": classes_block}
-WHOLE = frozenset({"desk"})     # built as the whole file, with no markers
+            "desk": render_desk, "calendar": render_season_hub.calendar_page,
+            "decision-classes": classes_block}
+# Built as the whole file, with no markers. The injury report is built by scripts/render_week_pages.py
+# and the statistics index by scripts/render_season_stats.py, each its page's only builder.
+WHOLE = frozenset({"desk", "calendar"})
 
 
 def _render(root):

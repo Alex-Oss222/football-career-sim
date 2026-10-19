@@ -10,7 +10,9 @@ written to the data area (``view_path``); the season folder's copy as it stood
 after 2014 Week 5 stays there as history (rebuild rule 1: the Week 1 to 5 game
 reports link to it) and is never rewritten. The statbook index and the records
 index are built here too from 2014, so the closed-week count they show is
-never kept by hand.
+never kept by hand; the statbook index (the Statistics folder's README, which
+only this script writes) leads with the club's season at a glance, its games
+and its leaders, in the words the desk uses (runtime/season_summary.py).
 """
 from __future__ import annotations
 
@@ -1060,9 +1062,41 @@ def _team_name(team):
     return team.split()[-1] if team else team
 
 
-def index_pages(year, team, book, root=ROOT):
+def glance_sections(paths, team, book, receipts, page):
+    """The statbook's club summary (2014 onward): the season at a glance, the games played and the
+    club's leaders, in the words the desk uses (runtime/season_summary.py)."""
+    from runtime import people, season_summary as summary
+    from runtime.standings import compute
+    games = summary.club_games(receipts, team)
+    club = book.get("teams", {}).get(team, {})
+    first, points, efficiency = summary.glance(club, games, compute(receipts), team)
+    lines = ["## Team at a glance", "", "| Season | Scoring | Efficiency |", "|---|---|---|",
+             "| %s | %s | %s |" % (first, points, efficiency), "",
+             "## Games played", "", "| Week | Opponent | Result |", "|---:|---|---:|"]
+    for receipt in games:
+        week, other = int(receipt["week"]), summary.opponent(receipt, team)
+        ours, theirs = receipt["final_score"][team], receipt["final_score"][other]
+        label = ("vs " if receipt["home"] == team else "at ") + other
+        report = paths.game_report(week)
+        if report.is_file():
+            label = "[%s](%s)" % (label, _rel(report, page))
+        lines.append("| %d | %s | %s %d-%d |" % (week, label, "W" if ours > theirs else "L" if ours < theirs else "T",
+                                                ours, theirs))
+    if not games:
+        lines.append("| | No game played | |")
+    lines += ["", "## Player leaders", "", "| Category | Player | Season total |", "|---|---|---:|"]
+    cards = paths.record("player_profiles")
+    for label, name, value in summary.leaders(club):
+        target = cards / (people.slugify(name) + ".md")
+        shown = "[%s](%s)" % (name, _rel(target, page)) if target.is_file() else name
+        lines.append("| %s | %s | %s |" % (label, shown, value))
+    return lines + [""]
+
+
+def index_pages(year, team, book, root=ROOT, receipts=()):
     """The statbook index (the Statistics folder's README) and the records index, built from the
-    same receipts as the views (2014 onward), with links placed by the folder map."""
+    same receipts as the views (2014 onward), with links placed by the folder map. The statbook
+    leads with the club's season at a glance, its games and its leaders (``glance_sections``)."""
     from runtime.seasons import SeasonPaths
     paths = SeasonPaths(year, root)
     statbook, records = view_path(paths, STATBOOK), view_path(paths, RECORDS_INDEX)
@@ -1085,8 +1119,12 @@ def index_pages(year, team, book, root=ROOT):
     cards = paths.record("player_profiles/README.md")
     if cards.is_file():
         top.append("[Player pages](%s)" % _rel(cards, statbook))
-    lines = ["# %d regular-season statistics" % year, "", " · ".join(top), "", status, "",
-             "| Page | What it holds |", "|---|---|"] + ["| %s | %s |" % tuple(row) for row in rows] + [""]
+    top.append("[Head coach's desk](%s)" % _rel(paths.desk, statbook))
+    lines = ["# %d regular-season statistics" % year, "", " · ".join(top), "", status, ""]
+    if book.get("receipt_count"):
+        lines += glance_sections(paths, team, book, receipts, statbook)
+    lines += ["## Full statistics", "", "| Page | What it holds |", "|---|---|"]
+    lines += ["| %s | %s |" % tuple(row) for row in rows] + [""]
     lines += ["Every page is rebuilt from the game records after each closed week. Preseason games never "
               "count here, and postseason games are kept apart.", ""]
     prior = SeasonPaths(year - 1, root).record(STATBOOK) if year - 1 >= 2013 else None
@@ -1124,7 +1162,7 @@ def render_views(year, team, receipts, root=ROOT):
     out = {name: rebase_markdown(text, logical_path(year, 'stats/' + name), view_path(paths, name).relative_to(ROOT))
            if name.endswith('.md') else text for name, text in views.items()}
     if clean(year):
-        out.update(index_pages(year, team, book, root))
+        out.update(index_pages(year, team, book, root, receipts))
     return out
 
 

@@ -6,7 +6,10 @@ with only its sacks header changed, and it passes the clean-page check; the
 box-score markers are the only markup the check lets through beside the
 event-record line; the annual record refuses an unclean new line; and the
 Game Report's path comes from the folder map. The synthetic Week 6 close is
-tests/test_week_close_pages.py.
+tests/test_week_close_pages.py. Also here: the Game Report template's own
+headings render clean, every injury severity reads in football words, the
+shared summary words (runtime/season_summary.py), and every built page is
+current by the one rebuild command (scripts/rebuild_pages.py --check).
 """
 import json
 import re
@@ -110,15 +113,114 @@ class WeekPagesTests(unittest.TestCase):
         _, text = week_pages.injury_report(season)
         for player in season.roster["players"]:
             note = player.get("availability") or week_pages.NO_RESTRICTION
-            listed = "| %s |" % player["name"] in text
+            listed = "| %s |" % player["name"] in text or "| [%s](" % player["name"] in text
             held = player["list"] == "reserve" or not note.startswith(week_pages.NO_RESTRICTION)
             self.assertEqual(listed, held and player["list"] != "practice_squad", player["name"])
+
+    def test_every_injury_severity_reads_in_football_words(self):
+        """A multi-week or long-term injury (the game records them as multi_week and long_term)
+        writes the medical history entry and the incident record clean, never stopping the week."""
+        season = week_pages.Season(ROOT, SEASON)
+        game = next(g for g in season.fixtures if g["week"] == FIRST and JAX in (g["away"], g["home"]))
+        other = game["home"] if game["away"] == JAX else game["away"]
+        players = [p["name"] for p in season.roster["players"] if p["list"] == "active"][:4]
+        injuries = [{"team": JAX, "player": name, "injury_class": cls, "severity": severity, "restriction": "out",
+                     "return_days": days, "reassessment_days": 2, "removed": True, "period": 2, "clock": "4:10"}
+                    for name, cls, severity, days in zip(players, ("lower_extremity", "upper_extremity", "trunk",
+                                                                   "head_neck"),
+                                                         ("multi_week", "long_term", "short", "minor"), (24, 70, 9, 2))]
+        receipt = {"week": FIRST, "away": game["away"], "home": game["home"], "injuries": injuries,
+                   "final_score": {JAX: 20, other: 17}, "drives": []}
+        entry = week_pages.history_entry(season, receipt)
+        history = season.rel(week_pages.medical_path(season, "medical_history.md"))
+        self.assertEqual(clean_pages.text_errors(history, "# History\n\n" + entry), [])
+        self.assertIn("lower extremity, multi-week", entry)
+        self.assertIn("upper extremity, long term", entry)
+        for injury in injuries:
+            rel, text = week_pages.incident_page(season, receipt, injury)
+            self.assertEqual(clean_pages.page_errors(rel, text), [], rel)
+            self.assertNotIn("_", text.split("## Current medical information")[1].split("## Dated updates")[0])
+        self.assertEqual(week_pages.severity_words({"severity": "multi_week"}), "multi-week")
+        self.assertEqual(week_pages.severity_words({"severity": "long_term"}), "long term")
+        self.assertEqual(week_pages.severity_words({"severity": "season_ending"}), "season ending")
 
     def test_rebased_links_reach_the_same_file(self):
         out = week_pages.rebase("([record](../../Medical/incidents/x.md#a))",
                                 "career/2014/Team_Operations/Team/Roster/roster.md",
                                 "career/2014/Team_Operations/Medical/current_injury_report.md")
         self.assertEqual(out, "([record](incidents/x.md#a))")
+
+
+TEMPLATE = ROOT / "foundation/templates/regular_season_output_template.md"
+# Template guidance headings, never written on a Game Report.
+GUIDANCE = ("Rules for every turn", "Prose standard", "Runner mechanics", "Header", "Preparation evidence",
+            "Game evidence", "Section layout")
+
+
+def template_skeleton(week=FIRST):
+    """A Game Report holding the Game Report template's own headings and fixed labels, in its order,
+    placeholders filled with their own words (tests/test_week_close_pages.py writes its report so)."""
+    text = TEMPLATE.read_text(encoding="utf-8")
+    lines = []
+    for line in text.split("\n## Coach info\n", 1)[1].splitlines():
+        heading = re.match(r"^(#{2,4}) (.+)$", line)
+        label = re.match(r"^\*\*([^*\\]+)\*\*", line)
+        if heading and heading.group(2) not in GUIDANCE:
+            lines += [heading.group(1) + " " + heading.group(2), ""]
+        elif label and not heading:
+            lines += ["**%s**" % label.group(1), ""]
+    page = "\n".join(["# Week %d Game Report" % week, "", "## Coach info", ""] + lines)
+    return re.sub(r"(?:&#91;|\\\[)([^\]\\]*)\\?\]", r"\1", page)
+
+
+class GameReportTemplateTests(unittest.TestCase):
+    def test_the_template_headings_render_clean(self):
+        rel = SeasonPaths(SEASON, ROOT).game_report(FIRST).relative_to(ROOT).as_posix()
+        page = template_skeleton()
+        for heading in ("## Coach info", "## 3. Game", "### Game review", "## 6. Weekly personnel and availability",
+                        "## 7. Week closure"):
+            self.assertIn(heading + "\n", page)
+        self.assertEqual(clean_pages.page_errors(rel, page), [])
+        # The check is live on this page: the heading the earlier reports carry would fail it.
+        self.assertTrue(clean_pages.page_errors(rel, page.replace(
+            "## 6. Weekly personnel and availability\n", "## 6. Weekly personnel and availability snapshot\n")))
+
+
+class SharedSummaryTests(unittest.TestCase):
+    """runtime/season_summary.py: the words the desk, the statistics index, the injury report and the
+    depth chart share."""
+
+    def test_next_medical_dates_leave_out_a_passed_date(self):
+        from datetime import date
+        from runtime import season_summary as summary
+        row = {"availability": "Out, long term: lower extremity, removed; projected return December 8, 2014; "
+                               "reassessment September 14 ([medical record](x.md))"}
+        self.assertEqual(summary.medical_status(row), "Out · lower extremity (long term)")
+        self.assertEqual(summary.next_dates(row, date(2014, 10, 5)), "Projected return December 8, 2014")
+        self.assertEqual(summary.next_dates(row, date(2014, 9, 10)),
+                         "Review September 14, 2014; projected return December 8, 2014")
+        self.assertEqual(summary.next_dates(row, date(2014, 12, 9)), "None communicated")
+        self.assertEqual(summary.next_dates({"availability": "Out, minor: trunk; reassessment January 2"},
+                                            date(2014, 12, 29)), "Review January 2, 2015")
+        held = {"availability": "Independent medical hold, short: head/neck, logged at 5:19"}
+        self.assertEqual(summary.medical_status(held), "Independent hold · head/neck (short)")
+        self.assertEqual(summary.medical_status({"availability": "Limited, minor: upper extremity, logged"}),
+                         "Limited · upper extremity (minor)")
+
+    def test_leaders_count_sacks_in_words(self):
+        from runtime import season_summary as summary
+        team = {"players": {"A": {"tackles": 40, "sacks": 1}, "B": {"tackles": 41, "sacks": 1.5}}}
+        self.assertEqual(summary.leaders(team), [("Tackling", "B", "41 tackles · 1.5 sacks")])
+        team["players"]["B"]["sacks"] = 1
+        self.assertEqual(summary.leaders(team)[0][2], "41 tackles · 1 sack")
+
+
+class RebuildPagesTests(unittest.TestCase):
+    def test_every_built_page_is_current(self):
+        from scripts import rebuild_pages
+        self.assertEqual(rebuild_pages.rebuild(ROOT, SEASON, check=True), ([], []))
+        with self.assertRaises(ValueError):
+            rebuild_pages.rebuild(ROOT, SEASON - 1, check=True)
 
 
 class AnnualRecordTests(unittest.TestCase):
