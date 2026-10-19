@@ -40,6 +40,18 @@ Two folders sit outside the seasons, because they follow Stone and the league ac
 
 The files the system works from (stored facts, game files, call sheets) live in a separate data area that the user never needs to open. From Week 6 they are written there, and the existing ones move there too, so the season folders hold only pages to read.
 
+## How the stored facts are kept
+
+These rules keep the year-to-year move small and the structure safe to change:
+
+1. **People and contracts are stored once, not per season.** Each player, coach and contract has one permanent record under the data area that grows by dated entries (signed, traded, injured, assessed). Nothing is copied into a new season; only what belongs to one season (games, decisions, the calendar) lives in that season.
+2. **One folder map.** All code finds files through one map of the layout. A test fails if a script writes a folder name or a year into a path itself.
+3. **The same shape every season.** Every season has the same folders, created from one template, never copied from the year before.
+4. **Built pages are never the source.** Pages, statistics and standings are built from the stored facts and game files, and a check confirms they match. Nothing built is carried forward or kept in sync by hand.
+5. **Closed seasons are packed and locked.** When a season closes, its game files are packed into one compressed file with a checksum, read by the same tools, and the season becomes read-only.
+6. **Document 5 is a short summary built from the stored facts:** the date, the job, open decisions, availability and the next events, so it changes only when a fact changes.
+7. **Safeguards.** Before each real year change, a copy of the repository runs the whole move into the next season first. Tests work out the current week from the stored facts instead of naming a date.
+
 ## How a decision works
 
 Every decision point produces three pages in the folder where it happens:
@@ -98,10 +110,10 @@ Each kind of page has one fixed layout, built from the stored facts:
 | 1 | This plan, and the instruction in CLAUDE.md to follow it | Now | Merged |
 | 2 | The stored player facts and the Kirk Cousins page | Before 2014 Week 6 | The user approves the page |
 | 2b | The 2014 season moved into the new folders: numbers dropped from the folder names, system files moved to the data area, every link kept working, no file's content rewritten | Before 2014 Week 6 | Merged with every link resolving |
-| 3 | Every Jaguars player page, the league player pages in the same style, and the coach, team, staff, contract and desk pages; the clean-page check in validation | Before 2014 Week 6 | Merged with the check passing on every new page |
+| 3 | The permanent player, coach and contract records (stored-facts rules 1 to 4), every Jaguars player page, the league player pages in the same style, and the coach, team, staff, contract and desk pages; the clean-page check and the folder-map test in validation | Before 2014 Week 6 | Merged with the check passing on every new page |
 | 4 | The three-page decision system, starting with Game Week Briefing, Game Plan and Game Report for Week 6 | Before 2014 Week 6 | Week 6 is played through it |
 | 5 | In-season decisions: injury replacements, the bye week, trade calls, and the weekly check for coaching changes at every club | Before 2014 Week 8 | Merged |
-| 6 | Season end and January: season review, extension, firing, agent's report, permission requests, offers, staff status, staff hires, coaching and GM changes across the league, Jacksonville running without Stone if he leaves, the 2015 calendar checked, the 2015 season opened in this structure, Documents 4 and 5 as short summaries built from the stored facts | Before 2014 Week 17 closes (December 28, 2014) | Merged |
+| 6 | Season end and January: season review, extension, firing, agent's report, permission requests, offers, staff status, staff hires, coaching and GM changes across the league, Jacksonville running without Stone if he leaves, the 2015 calendar checked, a rehearsal of the year change on a copy, the 2014 season packed and locked, the 2015 season opened in this structure, Documents 4 and 5 as short summaries built from the stored facts | Before 2014 Week 17 closes (December 28, 2014) | Merged |
 | 7 | February to June 2015: re-signing, free agency, trades, offseason program, draft, OTAs and minicamp | Before February 2015 | Merged |
 | 8 | July and August 2015: camp, position battles, preseason games, final cuts | Before July 2015 | Merged |
 
@@ -113,7 +125,7 @@ Each step is built lean: one builder and one reviewer, no new research except a 
 |---|---|
 | 1 | Done (merged) |
 | 2 | Layout approved; the player record is built with step 3 |
-| 2b | Built, awaiting merge |
+| 2b | Done (merged) |
 | 3 to 8 | Not started |
 
 ## Change log
@@ -123,3 +135,4 @@ Each step is built lean: one builder and one reviewer, no new research except a 
 - October 19, 2026: the user asked for the new system from Week 6 on, not from 2015. Their words, verbatim: "For the rest of 2014 they stay where they are now no i want to use the new sytem going into the new week everthing before can move around as need as long but we dont have to change anthing to cnform to the new process". The 2014 folders are renamed and their system files moved before Week 6; nothing written before Week 6 is rewritten.
 - October 19, 2026: the user approved the player page layout on the Kirk Cousins sample, without a weekly section and with transactions instead of a season narrative. Their words, verbatim: "layout prefect please this is me aske move his b-day to 1991 hes, 23 now please srry" and "keep the histoy though but lest that early a summart like you have in 2013 of the season  and keep hisroy should be like traded, signings ect cuts ect". Canon change by the user: Kirk Cousins's birth date is August 19, 1991 (23 on October 5, 2014), applied with step 3 wherever his birth date is stored; pages written before Week 6 that give his old age stay as written.
 - October 19, 2026: the user asked that Cousins's college years shift to match the 1991 birth date, and that his history be cleaned up last, after the rest of the rebuild. Their words, verbatim: "want his college years shifted to match, we can cleean up the hisrty for kirk last lets do the rest fist". This is the final rebuild task, after step 8.
+- October 19, 2026: the user asked for the data underneath to be kept so that the year change and the structure cause no problems, with as little stored as possible. The stored-facts rules above were added and placed in steps 3 and 6.
