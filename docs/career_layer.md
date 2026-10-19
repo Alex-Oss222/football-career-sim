@@ -124,18 +124,23 @@ An `IN_FORCE` standing instruction may answer a live pause or close a queue item
 
 ## 6. Rendering and checking
 
-`python scripts/render_career_views.py` writes five generated blocks, each between `NAME:begin` and `NAME:end` comment markers that appear once in their file:
+`python scripts/render_career_views.py` maintains three named blocks and four complete reader pages. The named blocks appear once between their matching `NAME:begin` and `NAME:end` markers:
 
-| Block | File |
+| View | File |
 |---|---|
 | `current-job` | Document 5, section 2 |
 | `decision-queue` | Document 5, section 8 (the open items, the holder's first, each group by deadline) |
-| `desk` | The whole of the active season's README, with no markers |
 | `decision-classes` | This file, section 3 |
+| `desk` | The whole of the active season's README |
+| `calendar` | The active season's Calendar.md, with the current month first |
+| `medical` | The active season's medical-availability report |
+| `statbook` | The active season's Statistics README, with team and player summaries |
 
 It also keeps two rows after Document 4's in Document 5's manifest, naming the git blob of each file. That binds both files into Document 5's digest and so into the private snapshot: every change to either file moves the digest.
 
-The views read the two files, Stone's coach record (the contract), Document 5's master-date cell and the section 9 rows still marked Scheduled, the active season's fixtures, the closed events (to link a standing instruction to the page of the event that set it), `docs/repository_map.json`, whether the next game's week README and call sheet and the last game's `output.md` exist, and, for the desk's last result and record only, the employer club's own closed-game receipts; never another club's receipt, the standings, awards or the wall clock. Every link is written relative to its file and must resolve, headings included. The desk is reader prose and a clean page (docs/rebuild_plan.md, rule 4): a word from the voice rule in AGENTS.md stops the render and names the source field to reword, an open decision, dated event or standing instruction shows only its clauses free of process words, and `--check` reports any clean-page problem. The desk is built for the head coach only; any other role reports that its desk is defined but not built.
+The job and decision blocks read the two state files, the coach record, the master date, the dated events and the published fixture list. The coach's desk continues to show the coach-owned decisions from the current decision record. Its season performance, standings, player production and medical sections are now derived from the completed games and roster's current medical communication. The calendar is assembled from the recorded dates and the same fixtures, keeping the complete historical year below the current month. The statbook's team and player figures are derived from completed regular-season games. None of these pages stores an independent game result, injury clearance or depth decision.
+
+Links are relative to each reader page and must resolve. The head coach's desk and the three companion pages are checked for reader-friendly football prose. The voice check rejects internal process wording before writing. The coach's desk remains available only for the head-coach role; the other roles are defined separately.
 
 `--check` is read-only. It reports a stale block or desk, a missing or duplicated marker, a desk block in any README and anything that stops the render, and exits 1. Repository validation runs the same check. Writing is refused while any regular-season, postseason or preseason Jacksonville game is paused.
 

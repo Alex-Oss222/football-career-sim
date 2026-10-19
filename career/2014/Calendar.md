@@ -1,8 +1,28 @@
 # Jacksonville 2014 calendar
 
-[2014 NFL calendar and sources](../../library/2014_nfl_calendar.md) · [2015 calendar](../2015/Calendar.md)
+Dates and appointments for the football year. Times are Eastern. Scheduled work is not a completed result.
 
-Dates, appointments and fixtures for Jacksonville. All times are Eastern. A scheduled event is not a completed event; its report owns what happened. Club appointments are identified below. Historical publication dates and amendments appear in the source calendar.
+## October 2014
+
+| Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+| --- | --- | --- | --- | --- | --- | --- |
+|   |   | 1 | 2 | 3 | 4 | **5 [vs Pittsburgh Steelers](Regular_Season/Games/Week_05/README.md)** |
+| 6 | 7 | 8 | 9 | 10 | 11 | 12 [at Tennessee Titans](Regular_Season/Games/Week_06/README.md) |
+| 13 | 14 | 15 | 16 | 17 | 18 | 19 [vs Cleveland Browns](Regular_Season/Games/Week_07/README.md) |
+| 20 | 21 | 22 | 23 | 24 | 25 | 26 [vs Miami Dolphins](Regular_Season/Games/Week_08/README.md) |
+| 27 | 28 | 29 | 30 | 31 |   |   |
+
+## Upcoming dates
+
+| Date | Event |
+|---|---|
+| Oct 12 | [Week 6 at Tennessee Titans](Regular_Season/Games/Week_06/README.md) |
+| Oct 19 | [Week 7 vs Cleveland Browns](Regular_Season/Games/Week_07/README.md) |
+| Oct 26 | [Week 8 vs Miami Dolphins](Regular_Season/Games/Week_08/README.md) |
+| Nov 2 | [Week 9 at Cincinnati Bengals](Regular_Season/Games/Week_09/README.md) |
+| Nov 9 | [Week 10 vs Dallas Cowboys](Regular_Season/Games/Week_10/README.md) |
+
+## Full-year dates
 
 ## Early offseason
 
@@ -134,7 +154,7 @@ The public practice announcement does not provide every closed session. Addition
 
 ## Regular season
 
-These games match the [historical fixtures](../../data/2014/Regular_Season/Schedule/fixtures.json). That file and its dated amendments own the league schedule; [game folders](Regular_Season/Games/README.md) own preparation and reports.
+These games match the [released fixtures](Regular_Season/Schedule/fixtures.md). That file and its dated amendments own the league schedule; [game folders](Regular_Season/Games/README.md) own preparation and reports.
 
 ### September
 
@@ -208,4 +228,4 @@ Jacksonville's participation and opponents depend on its season. [Season review]
 
 The [NFL calendar](../../library/2014_nfl_calendar.md#sources-and-publication-dates) contains the dated sources and remaining uncertainties. Spring phase spans follow the published April 21 start and the CBA's two-, three- and four-week structure. Jacksonville's program-day allocations and staff appointments come from the linked club plans.
 
-The historical July 29 rest day and July 31 practice conflict with the closed [branch camp report](Training_Camp_and_Preseason/Training_Camp/training_report.md), which records a July 29 practice and July 31 off. This calendar shows the verified historical schedule. The recorded observations have not been moved, deleted or counted as an additional completed practice; reconciliation belongs in the camp record. July 30 first full pads and August 2 scrimmage were both published on July 24. Atlanta's 6 p.m. kickoff was undetermined in April and is conservatively available from August 25. Cap-carryover notice timing remains unresolved in the financial sourcebook; December 26 above is the separate waiver deadline.
+The historical July 29 rest day and July 31 practice conflict with the closed [camp report](Training_Camp_and_Preseason/Training_Camp/training_report.md), which records a July 29 practice and July 31 off. This calendar shows the verified historical schedule. The recorded observations have not been moved, deleted or counted as an additional completed practice; reconciliation belongs in the camp record. July 30 first full pads and August 2 scrimmage were both published on July 24. Atlanta's 6 p.m. kickoff was undetermined in April and is conservatively available from August 25. Cap-carryover notice timing remains unresolved in the financial sourcebook; December 26 above is the separate waiver deadline.

@@ -145,6 +145,9 @@ Carried from 3a to step 6 (season end):
 
 ## Change log
 
+- October 19, 2026: by the user's explicit instruction, the reader-facing profile, coaching philosophy, ownership review, head coach's desk, medical availability, depth chart, season statbook and calendar are being redesigned as connected football pages. The current record remains a decision summary; the full depth-chart update history remains retained on a linked page. Generated reader pages must be rebuilt from the stored game, roster, role and medical records rather than edited independently. This work does not advance the career date or decide the Week 6 game plan.
+
+
 - October 19, 2026: plan adopted. The user approved the numbered season folders as they stand, asked for realistic names instead of system names, for a brief that tells him what he needs, and for this plan to hold its decisions across context resets.
 - October 19, 2026: the user asked to drop the numbers from the season folder names. From 2015 the folders carry no numbers; 2014 keeps its numbered folders as history.
 - October 19, 2026: the user asked for the new system from Week 6 on, not from 2015. Their words, verbatim: "For the rest of 2014 they stay where they are now no i want to use the new sytem going into the new week everthing before can move around as need as long but we dont have to change anthing to cnform to the new process". The 2014 folders are renamed and their system files moved before Week 6; nothing written before Week 6 is rewritten.

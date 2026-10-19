@@ -8,6 +8,14 @@ As of October 5, 2014, after Week 5.
 
 ![Alex Stone](photos/alex_stone.webp)
 
+## Career at a glance
+
+| Current season | Career regular season | Career playoffs | Division standing |
+|---|---|---|---|
+| 3-2 | 25-12 | 2-2 | First in the AFC South after Week 5 |
+
+[Coaching philosophy](Coaching_Profile.md) · [Ownership review](Performance_Reviews.md) · [Current season](../2014/README.md)
+
 ## Job and contract
 
 | Job | Head coach, Jacksonville Jaguars |

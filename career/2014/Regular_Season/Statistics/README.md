@@ -1,7 +1,34 @@
 # 2014 regular-season statistics
 
-[Regular season](../README.md) · [Team tracker](records/team_tracker/README.md) · [Player cards](../../Team_Operations/Team/Player_Cards/README.md)
+Jacksonville Jaguars · Through Week 5.
 
-**Through Week 5 (October 5, 2014): 76 of 76 receipts.** Generated views: [team player statistics](records/team_player_stats.md), [team statistics](records/team_stats.md), [league player statistics](records/league_player_stats.md), [league leaders](records/league_leaders.md), [play-call statistics](records/play_call_stats.md), [all player statistics](records/all_player_stats.md), the [calibration audit](records/calibration_audit.md) and the [standings](../standings.md), all regenerated from [the receipts](../../../../data/2014/Regular_Season/Statistics/records/game_receipts/README.md) after each closed week. [Storage and rebuild rules](records/README.md) govern all views. The [2013 statbook](../../../2013/statbook.md) remains the closed prior-season record. No standings, leaderboard, award or player total is copied forward as 2014 performance.
+## Team at a glance
 
-After each closed week, regenerate the standings and every stat view from the 2014 receipts. [League results](../League_Results/README.md), [awards](../Awards/README.md) and [postseason](../../Postseason/README.md) retain their own event scope.
+| Season | Scoring | Efficiency |
+|---|---|---|
+| 3-2 · 1st AFC South · AFC position 4 | 115 scored · 109 allowed · +6 differential | 23.0 points per game · 41.4% on third down · 46.3% allowed |
+
+## Games played
+
+| Week | Opponent | Result |
+|---:|---|---:|
+| 1 | [at Philadelphia Eagles](../Games/Week_01/output.md) | W 23-20 |
+| 2 | [at Washington Redskins](../Games/Week_02/output.md) | W 24-7 |
+| 3 | [vs Indianapolis Colts](../Games/Week_03/output.md) | W 38-34 |
+| 4 | [at San Diego Chargers](../Games/Week_04/output.md) | L 20-21 |
+| 5 | [vs Pittsburgh Steelers](../Games/Week_05/output.md) | L 10-27 |
+
+## Player leaders
+
+| Category | Player | Season total |
+|---|---|---:|
+| Passing | [Kirk Cousins](../../Team_Operations/Team/Player_Cards/kirk_cousins.md) | 1,213 pass yds · 9 TD, 7 INT |
+| Rushing | [Maurice Jones-Drew](../../Team_Operations/Team/Player_Cards/maurice_jones_drew.md) | 461 rush yds · 2 TD |
+| Receiving | [Davante Adams](../../Team_Operations/Team/Player_Cards/davante_adams.md) | 369 rec yds · 30 catches, 2 TD |
+| Tackling | [Daryl Smith](../../Team_Operations/Team/Player_Cards/daryl_smith.md) | 48 tackles · 1 sacks |
+
+## Full statistics
+
+[Jacksonville player statistics](records/team_player_stats.md) · [Team comparisons](records/team_stats.md) · [League leaders](records/league_leaders.md) · [League player statistics](records/league_player_stats.md) · [Play-call statistics](records/play_call_stats.md)
+
+[Standings](../standings.md) · [Head coach's desk](../../README.md)
