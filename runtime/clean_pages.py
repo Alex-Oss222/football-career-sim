@@ -9,8 +9,10 @@ names a script or module, carries HTML markup other than the page builder's
 own invisible markers (runtime/player_pages.MARKERS) and the event-record
 marker an event owner carries on a line of its own (runtime/events.EVENT_META:
 the whole line is exactly one marker holding one JSON object; two markers on
-a line, or text beside one, is markup), a policy note, a disclaimer or a
-version label, or uses the
+a line, or text beside one, is markup) and the box-score block markers a
+Game Report carries on lines of their own (BOX_SCORE_MARKER: the generated
+gamebook between them is checked like any text), a policy note, a disclaimer
+or a version label, or uses the
 words engine, branch, receipt,
 kernel, ledger, snapshot, checkpoint or simulation. A player's full name
 that contains one of the words (Andre Branch, Tyvon Branch) is allowed by
@@ -109,6 +111,10 @@ REFERENCE = re.compile(r"^ {0,3}\[([^\]\n^][^\]\n]*)\]:\s*(<[^<>\n]*>|[^\s<>]+)(
 SYSTEM_SUFFIXES = (".json", ".jsonl", ".py", ".csv", ".gz", ".sqlite", ".db", ".yml", ".yaml", ".toml", ".sh",
                    ".txt", ".pkl", ".log")
 SYSTEM_DIRS = ("data", "runtime", "scripts", "tests", ".sim_cache")
+# The markers around a result page's generated box score (scripts/render_box_score.py BLOCK), each
+# a line of its own: the opening marker names the game and the club listed first, the closing one
+# nothing. Text inside the block is checked like the rest of the page.
+BOX_SCORE_MARKER = re.compile(r"<!-- box-score event=[a-z0-9-]+ team=[A-Z][A-Za-z0-9 .]*[A-Za-z0-9.] -->|<!-- /box-score -->")
 
 
 def proper_names(root=ROOT):
@@ -160,7 +166,7 @@ def page_errors(rel, text, markers=(), root=ROOT, first_line=1):
     names = proper_names(root)
     lines = text.splitlines()
     for number, line in enumerate(lines, first_line):
-        if line.strip() in markers or event_marker(line.strip()):
+        if line.strip() in markers or event_marker(line.strip()) or BOX_SCORE_MARKER.fullmatch(line.strip()):
             continue
         found = []
         reference = REFERENCE.match(line)
@@ -276,6 +282,21 @@ def checked_parts(root=ROOT):
         head = data[:cut].decode("utf-8")
         out.append((rel, data[cut:].decode("utf-8"), head.count("\n") + 1))
     return out
+
+
+def text_errors(rel, text, root=ROOT):
+    """The clean-page problems ``clean_errors`` would report if the page at ``rel`` held ``text``:
+    the whole page, or what follows its pre-Week-6 bytes for a history page that keeps them as an
+    exact prefix, or nothing for a history page left unchanged. A builder calls this before it
+    writes, so a page it would write unclean is refused, not written."""
+    from .player_pages import MARKERS, built_page
+    root = Path(root)
+    data = text.encode("utf-8")
+    cut = 0 if built_page(text) else unchecked_prefix(data, history(root).get(rel), history_lengths(root).get(rel))
+    if cut == len(data):
+        return []
+    head = data[:cut].decode("utf-8")
+    return page_errors(rel, data[cut:].decode("utf-8"), MARKERS, root, first_line=head.count("\n") + 1)
 
 
 def checked_pages(root=ROOT):

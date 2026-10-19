@@ -436,6 +436,16 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
         errors.append(f'Invalid club pages or cap views: {exc}')
 
+    # The result-side week pages (scripts/render_week_pages.py: the Games and league-results
+    # indexes, the league-results week pages from Week 6, the injury report, the medical
+    # history's game entries and the incident records they open) are built from the closed
+    # games and the roster record: a closed game or a changed record without a rebuild fails.
+    try:
+        from scripts.render_week_pages import check as check_week_pages
+        errors.extend(check_week_pages(root))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid week pages: {exc}')
+
     # Clean pages (docs/rebuild_plan.md, rule 4): a built page, and any page
     # written from 2014 Week 6 on, is football only. Folder map (stored-facts
     # rule 2): no script or runtime module writes a season folder or a year
@@ -566,11 +576,13 @@ def validate(root=ROOT):
                 require(False, f'{output.relative_to(root)}: box score for {event_id} '
                                'differs from its receipt; run render_box_score.py --write')
         # From 2014 the filled block is the gamebook layout of the weekly game
-        # turn template (runtime/gamebook.py), checked against the same receipts.
-        from runtime.seasons import SeasonPaths
+        # turn template (runtime/gamebook.py), checked against the same receipts;
+        # from 2014 Week 6 the result page is the Game Report (GAME_REPORT).
+        from runtime.seasons import GAME_OUTPUT, GAME_REPORT, SeasonPaths
         for year in sorted({2014, mapping.get('active_season', 2014)}):
             paths = SeasonPaths(year, root)
-            outputs = sorted(paths.regular_season.glob('*/output.md')) + sorted(paths.postseason.glob('*/output.md'))
+            outputs = sorted(p for name in (GAME_OUTPUT, GAME_REPORT) for folder in (paths.regular_season, paths.postseason)
+                             for p in folder.glob('*/' + name))
             for output in outputs:
                 for event_id in stale_blocks(output, paths.receipts, season=year):
                     require(False, f'{output.relative_to(root)}: box score for {event_id} '
