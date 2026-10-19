@@ -128,10 +128,10 @@
     "coach_development": {
       "status": "OPEN",
       "sources": [
-        "career/coaching_profiles/alex_stone_coaching_profile.md",
-        "career/coaching_profiles/alex_stone_nfl_coach_sheet.md",
-        "career/coaching_profiles/alex_stone_performance_review.md",
-        "career/coaching_profiles/staff_profiles.md"
+        "career/Assistant_Coaches/staff_profiles.md",
+        "career/Stone/Coach_Sheet_through_October_2014.md",
+        "career/Stone/Coaching_Profile.md",
+        "career/Stone/Performance_Reviews.md"
       ],
       "evidence": []
     },

@@ -70,7 +70,7 @@ The user's design note of October 18, 2026 supplied four real careers. They were
 
 ### Applying this to Stone
 
-His canonical appointments are those in [Document 3 §1.4](../foundation/03_Head_Coach_Organization_and_Authority_Canon.md) and the appointments table of [the coach sheet](../career/coaching_profiles/alex_stone_nfl_coach_sheet.md); the season table earlier in this section repeats them. The coach sheet records what each title actually covered: in New England, passing preparation and selected preseason calls as passing game coordinator while McDaniels called regular-season games; in New Orleans, weekly offensive planning while Payton called games in 2009 and 2010, primary calling from Payton's Week 6 injury in 2011 through the playoffs, and full team responsibility with the offensive calls as interim head coach from April 16, 2012; in Jacksonville since January 15, 2013, staff, preparation, depth chart, game management and the offensive calls, with the defensive calls from Week 4 of 2014. The same sheet keeps the 2013 defense, which Crennel coordinated and called, off Stone's own defensive-calling record.
+His canonical appointments are those in [Document 3 §1.4](../foundation/03_Head_Coach_Organization_and_Authority_Canon.md) and the appointments table of [the coach sheet](../career/Stone/Coach_Sheet_through_October_2014.md); the season table earlier in this section repeats them. The coach sheet records what each title actually covered: in New England, passing preparation and selected preseason calls as passing game coordinator while McDaniels called regular-season games; in New Orleans, weekly offensive planning while Payton called games in 2009 and 2010, primary calling from Payton's Week 6 injury in 2011 through the playoffs, and full team responsibility with the offensive calls as interim head coach from April 16, 2012; in Jacksonville since January 15, 2013, staff, preparation, depth chart, game management and the offensive calls, with the defensive calls from Week 4 of 2014. The same sheet keeps the 2013 defense, which Crennel coordinated and called, off Stone's own defensive-calling record.
 
 **Each rung needs its own evidence.** A title, an earlier rung or one of the selected careers is not evidence for the next rung. The four careers are not a timetable for Stone, and this file makes no prediction about his next job, contract or tenure. His own career stops are in [the milestones guide](../docs/season_cycle_milestones.md), section 2; section 8 below is written for a position-coach protagonist.
 
@@ -364,7 +364,7 @@ Each source is marked opened, search text or refused. Pages that report real Jan
 
 **Repository**
 
-- [The coach sheet](../career/coaching_profiles/alex_stone_nfl_coach_sheet.md), appointments table, with Document 3 §1.4 (below), for Applying this to Stone
+- [The coach sheet](../career/Stone/Coach_Sheet_through_October_2014.md), appointments table, with Document 3 §1.4 (below), for Applying this to Stone
 - [January 2014 requests and outcomes](../career/2014/Early_Offseason/staff_changes/requests_and_outcomes.md), for the branch status of the Real history rows
 - [2014 hiring and anti-tampering rules](2014_coaching_hiring_and_anti_tampering_rules.md), rule IDs as cited
 - [Head-coach change base rates](data/2012_hc_change_base_rates.json) (nfldata games.csv, 2002 to 2012)

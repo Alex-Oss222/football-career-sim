@@ -171,6 +171,18 @@ PLAYER_RECORDS = PEOPLE_ROOT + '/players'
 # own pages, which follow him across seasons and jobs.
 COACH_RECORDS = PEOPLE_ROOT + '/coaches'
 STONE_PAGES = 'career/Stone'
+# Stone's own records beside his built pages (October 19, 2026, the user's question "Don't the
+# stuff under coaching profile belong under stone?"): the coaching profile the user wrote (the
+# Coach page quotes its opening), the reviews he has received, the coach sheet kept as history
+# through October 2014 (the built Coach page carries the current facts) and his photo.
+STONE_PROFILE = STONE_PAGES + '/Coaching_Profile.md'
+STONE_REVIEWS = STONE_PAGES + '/Performance_Reviews.md'
+STONE_COACH_SHEET = STONE_PAGES + '/Coach_Sheet_through_October_2014.md'
+STONE_PHOTO = STONE_PAGES + '/photos/alex_stone.webp'
+# The assistants' profiles (staff_profiles.md), outside the season folders like Stone's, with
+# their index. How any coach's profile is written: foundation/templates/coach_profile_template.md.
+ASSISTANT_COACH_PAGES = 'career/Assistant_Coaches'
+ASSISTANT_INDEX = ASSISTANT_COACH_PAGES + '/README.md'
 CANON_OVERRIDES = PEOPLE_ROOT + '/canon_overrides.json'
 LEAGUE_PLAYER_PAGES = 'career/league_players'
 # The pages written before 2014 Week 6, by path: history under rebuild rule 1, exempt from the
@@ -179,7 +191,7 @@ PAGE_HISTORY = DATA_ROOT + '/pages/history.json'
 # The sha256 of the page history map's bytes. The map exempts the pages it lists, so it is pinned:
 # validation fails when the map changes unless this pin changes in the same commit
 # (runtime/clean_pages.history_pin_errors).
-PAGE_HISTORY_SHA256 = 'e9329fb9fe5853229cd9bdfb5af0c0d479e6e6f656598229676fb7960ca3201e'
+PAGE_HISTORY_SHA256 = 'a9564e63e52e93ce2dbae3d96133bcc511d2fde876af34d85f6711083f34d3e5'
 # The research registries the player pages read through (one owner each).
 BIRTH_DATE_REGISTRY = 'library/data/player_birth_dates.json'
 BIRTH_DATE_CORRECTIONS = 'library/data/player_birth_date_corrections.json'

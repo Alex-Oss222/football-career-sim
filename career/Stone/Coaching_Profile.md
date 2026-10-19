@@ -8,7 +8,7 @@
 
 **User-approved coaching identity, revised October 1, 2026. Jacksonville staff context through August 8, 2014.**
 
-[Performance and job security](alex_stone_performance_review.md) | [NFL Coach Sheet](alex_stone_nfl_coach_sheet.md)
+[Performance and job security](Performance_Reviews.md) | [NFL Coach Sheet](Coach_Sheet_through_October_2014.md)
 
 Alex Stone is a head coach who enjoys an argument about football. He asks his quarterback which calls he trusts, listens when a receiver questions a route and gives an idea a hearing regardless of whose name is attached to it. He wants players to understand the offense well enough to contribute to it.
 

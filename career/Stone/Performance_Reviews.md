@@ -2,7 +2,7 @@
 
 *Editorial reconstruction from ownership's perspective, using the career through September 28, 2014. This assessment is not a new statement by Shad Khan, a meeting or an employment decision. The January 15, 2014 retention remains the club's last recorded employment action.*
 
-[Coaching profile](alex_stone_coaching_profile.md) | [GM dossier and career record](alex_stone_nfl_coach_sheet.md)
+[Coaching profile](Coaching_Profile.md) | [GM dossier and career record](Coach_Sheet_through_October_2014.md)
 
 We kept Alex under his existing contract after the 2013 season. The first four games of 2014 support continuing with him. The club is winning, the quarterback has made progress and the turnover numbers are better. Opponents are also converting half their third downs, and Alex has added defensive calling to his responsibilities. Our confidence in him has a football basis. The remaining questions concern how much of this improvement will hold and whether his staff is getting all of its work done.
 

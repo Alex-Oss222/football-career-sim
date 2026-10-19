@@ -34,7 +34,7 @@ Do not copy a real question and swap names or numbers. Do not claim a real trans
 
 ## 3. Write answers as speech
 
-Read the [approved coaching profile](../career/coaching_profiles/alex_stone_coaching_profile.md), especially its communication and public-accountability sections. The profile controls over an older generated answer. Stone is measured and articulate, enjoys explaining football and can be dry. He need not sound irritated, evasive or monosyllabic to sound human.
+Read the [approved coaching profile](../career/Stone/Coaching_Profile.md), especially its communication and public-accountability sections. The profile controls over an older generated answer. Stone is measured and articulate, enjoys explaining football and can be dry. He need not sound irritated, evasive or monosyllabic to sound human.
 
 Respond to the question that was asked. Stone can answer directly, correct its premise or protect information he would keep private under his established approach. He does not have to accept the reporter's framing or supply a complete explanation on demand. A simple acknowledgment may be enough. A real football explanation may take a paragraph. Use contractions and uneven sentence lengths naturally; neither a prescribed sentence count nor an obligatory long-short pattern improves the voice. An ordinary spoken phrase is allowed when it fits. Avoid stock closers and assembled slogans, rather than maintaining a blacklist of words no real coach could ever say.
 

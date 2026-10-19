@@ -11,7 +11,7 @@ Second season in Jacksonville; third season with NFL head-coaching responsibilit
 
 *General manager's assessment based on the established career. It records no new candidacy, reference check or hiring decision.*
 
-[Coaching profile](alex_stone_coaching_profile.md) | [Ownership review and job security](alex_stone_performance_review.md)
+[Coaching profile](Coaching_Profile.md) | [Ownership review and job security](Performance_Reviews.md)
 
 ### The case for an interview
 

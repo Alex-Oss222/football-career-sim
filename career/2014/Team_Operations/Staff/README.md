@@ -56,4 +56,4 @@ None.
 
 ## Records
 
-[Staff register, through October 5, 2014](coaching_staff.md) · [Staff changes in 2014](../../Early_Offseason/staff_changes/README.md) · [Coaching profiles](../../../coaching_profiles/README.md)
+[Staff register, through October 5, 2014](coaching_staff.md) · [Staff changes in 2014](../../Early_Offseason/staff_changes/README.md) · [Assistant coaches' profiles](../../../Assistant_Coaches/README.md)
