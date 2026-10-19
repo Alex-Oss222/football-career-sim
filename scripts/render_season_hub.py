@@ -32,6 +32,8 @@ def _player_link(ctx, page, name):
 
 
 def _facts(ctx):
+    if hasattr(ctx, "_season_hub_facts"):
+        return ctx._season_hub_facts
     source = load_receipts(ctx.paths.receipts) if ctx.paths.receipts.is_dir() else []
     # Only complete NFL game results belong in the current summary.
     receipts = [r for r in source if r.get("home") in DIVISION_OF and r.get("away") in DIVISION_OF
@@ -41,7 +43,8 @@ def _facts(ctx):
     games = sorted((r for r in receipts if CLUB in (r["home"], r["away"])), key=lambda r: int(r["week"]))
     records = compute(receipts)
     roster = roster_record.load(ctx.paths.roster)
-    return book, team, games, records, roster
+    ctx._season_hub_facts = book, team, games, records, roster
+    return ctx._season_hub_facts
 
 
 def _record(games):
@@ -252,9 +255,9 @@ def calendar_page(ctx):
         raise ValueError("The season calendar has no full-year date inventory")
     remainder = section + current.split(section, 1)[1]
     remainder = remainder.replace("branch camp report", "camp report")
-    remainder = remainder.replace(
-        "[historical fixtures](../../data/2014/Regular_Season/Schedule/fixtures.json)",
-        "[released fixtures](Regular_Season/Schedule/fixtures.md)")
+    fixture_page = ctx.paths.record("schedule/fixtures.md")
+    fixture_link = _link(page, fixture_page, "released fixtures")
+    remainder = re.sub(r"\\[historical fixtures\\]\\([^)]+\\.json\\)", lambda _: fixture_link, remainder)
     month = ctx.master.month
     weeks = month_calendar.monthcalendar(ctx.master.year, month)
     games = {date.fromisoformat(g["date"]): g for g in ctx.games}
