@@ -1,8 +1,11 @@
 """The current-job record: who employs the coach, in what role, with what
 authority, and who calls each phase (state/current_job.json).
 
-The record owns these facts; Document 5, the staff register and the desk
-render from it (docs/career_layer.md). Document 3 section 5 keeps the row
+The record owns these facts; Document 5, the staff page and the desk
+render from it (docs/career_layer.md). The appointment's contract and term
+are not stored here: ``contract_record`` names the coach's permanent record
+and the contract in it (runtime/coaches.py), and ``contract_terms`` and
+``term`` read them there. Document 3 section 5 keeps the row
 taxonomy and points here for the values; ``f3_parity_errors`` keeps the rows
 on that taxonomy, accepts only the exact pointer forms and compares any
 Document 3 cell written back in value form.
@@ -71,6 +74,30 @@ def appointment(job):
     if job.get("status") == "BETWEEN_JOBS":
         return None
     return next((a for a in job.get("appointments") or () if a.get("id") == job.get("current_appointment")), None)
+
+
+def contract_terms(job, root, on=None):
+    """The current appointment's contract as it stands on day ``on`` (runtime/coaches.contract:
+    only the amendments in force on it; None: all of them), read from the coach record its
+    ``contract_record`` names; None between jobs or without a pointer."""
+    from . import coaches
+    pointer = (appointment(job) or {}).get("contract_record")
+    if not pointer:
+        return None
+    return coaches.contract(coaches.load(pointer["coach"], root), pointer["contract"], on)
+
+
+def term(job, root, on=None):
+    """The current appointment's term from its contract on day ``on``: ``end_date`` (the
+    earliest day it can end), ``end_text`` (the whole end rule), ``seasons`` and the
+    ``contract`` itself."""
+    from . import coaches
+    terms = contract_terms(job, root, on)
+    if terms is None:
+        return {"end_date": None, "end_text": None, "seasons": [], "contract": None}
+    end = terms.get("end") or {}
+    return {"end_date": coaches.end_date(terms), "end_text": end.get("text"),
+            "seasons": list(terms.get("seasons") or ()), "contract": terms}
 
 
 def party_name(job, pid):
@@ -505,6 +532,92 @@ def _validation_errors(job, root, mapping, events, master, prefix):
             errors.append(prefix + "employer request %s has no record" % request.get("id"))
     # 9. Document 3 parity.
     errors.extend(f3_parity_errors(job, root))
+    # 10. The contract and term, read from the coach record (stored there once).
+    errors.extend(_contract_errors(job, current, root, prefix))
+    errors.extend(_staff_errors(job, current, root, master, prefix))
+    return errors
+
+
+def _contract_errors(job, current, root, prefix):
+    """The appointment's contract pointer resolves to a contract with the same club, job and
+    start, its coach's hire names this appointment, and every dated calling change on a staff
+    coach's record matches a change in the delegation."""
+    from . import coaches
+    if not current:
+        return []
+    errors = []
+    if "term" in current or "contract" in current:
+        errors.append(prefix + "the appointment stores its term or contract; they are read from the coach "
+                      "record that contract_record names")
+    pointer = current.get("contract_record")
+    if not isinstance(pointer, dict) or set(pointer) != {"coach", "contract"}:
+        return errors + [prefix + "contract_record must name the coach record and the contract in it"]
+    try:
+        record = coaches.load(pointer["coach"], root)
+        terms = coaches.contract(record, pointer["contract"])
+    except ValueError as exc:
+        return errors + [prefix + "contract_record: %s" % exc]
+    signed = terms["signed"]
+    employer = (current.get("employer") or {}).get("club")
+    if terms.get("club") != employer or terms.get("job") != current.get("title") or signed["date"] != current.get("start"):
+        errors.append(prefix + "the contract's club, job and signing date must be the appointment's")
+    if not coaches.end_date(terms):
+        errors.append(prefix + "the contract records no end date")
+    hire = coaches.hired(record, employer)
+    if hire is None or hire.get("appointment") != current.get("id") or hire["date"] != current.get("start"):
+        errors.append(prefix + "the coach record's hire must name this appointment on its start date")
+    parties = job.get("parties") or {}
+    for slug, other in coaches.load_all(root).items():
+        pid = other.get("party")
+        if pid is not None and pid not in parties:
+            errors.append(prefix + "coach record %s names party %r, which is not a party" % (slug, pid))
+        for entry in coaches.entries(other, "calling_changed"):
+            changes = [r for r in _intervals(job, entry["phase"])
+                       if entry["date"] in (r.get("from"), r.get("to"))
+                       and pid in (r.get("caller"), r.get("prepares"), r.get("transmits"))]
+            if not changes:
+                errors.append(prefix + "coach record %s dates a %s calling change on %s that the delegation "
+                              "does not hold" % (slug, entry["phase"], entry["date"]))
+    return errors
+
+
+def _staff_errors(job, current, root, master, prefix):
+    """The delegation and the coach records agree both ways: every coach the delegation names
+    (a caller, a preparer or the coach who sends in the call; a relay carrier; a practice lead or
+    game-day caller if the head coach is out) is a party with a coach record of the same name, on
+    the employer's staff on the master date when the arrangement is current; and every coach
+    record names a party of the same name."""
+    from . import coaches
+    if not current:
+        return []
+    club = (current.get("employer") or {}).get("club")
+    parties = job.get("parties") or {}
+    records = {r.get("party"): (slug, r) for slug, r in coaches.load_all(root).items() if r.get("party")}
+    errors = []
+    for pid, (slug, record) in records.items():
+        party = parties.get(pid)
+        if isinstance(party, dict) and party.get("name") != record.get("name"):
+            errors.append(prefix + "coach record %s is %s but party %r is %s"
+                          % (slug, record.get("name"), pid, party.get("name")))
+    delegation = current.get("delegation") or {}
+    named = []   # (party, what, whether the arrangement is in force on the master date)
+    for row in delegation.get("play_calling") or ():
+        now = _day(row.get("from"), True) <= master < _day(row.get("to"), False)
+        for key in ("caller", "prepares", "transmits"):
+            if row.get(key):
+                named.append((row[key], "the %s %s" % (row.get("phase"), key), now))
+    for carrier in (delegation.get("relay") or {}).get("carriers") or ():
+        named.append((carrier.get("party"), "a relay carrier", True))
+    emergency = delegation.get("emergency") or {}
+    for pid in list(emergency.get("practice_lead") or ()) + [emergency.get("game_day_caller")]:
+        if pid:
+            named.append((pid, "an emergency lead", True))
+    for pid, what, now in named:
+        if pid not in records:
+            errors.append(prefix + "%s, %s, has no coach record (data/people/coaches)" % (pid, what))
+        elif now and not coaches.on_staff(records[pid][1], club, master):
+            errors.append(prefix + "%s, %s, is not on the %s staff on %s by his coach record"
+                          % (pid, what, club, master.isoformat()))
     return errors
 
 

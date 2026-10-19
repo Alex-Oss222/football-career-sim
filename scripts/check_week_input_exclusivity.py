@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from runtime import roster as roster_record
 from runtime.seasons import SeasonPaths
 from runtime.usage import group, lineup_errors
 from runtime.week_inputs import GAME_DAY_ACTIVE_LIMIT
@@ -25,8 +26,12 @@ DEPTH_REQUIRED = ("QB", "RB", "WR", "TE")
 
 
 def controlled_players_from_roster(path: Path) -> set[str]:
-    """Every player in a roster table whose Status column shows club control."""
+    """Every player in a roster table whose Status column shows club control: from 2014 every row
+    of the roster record (runtime/roster.py) whose status shows it."""
+    if roster_record.is_record(path):
+        return {row["name"] for row in roster_record.load(path)["players"] if CONTROLLED_STATUS.match(row["status"])}
     controlled: set[str] = set()
+    names: list[str] = []
     player_col = status_col = None
     for line in path.read_text(encoding="utf-8").splitlines():
         if not line.startswith("|"):
@@ -39,8 +44,10 @@ def controlled_players_from_roster(path: Path) -> set[str]:
             continue
         if player_col is None or status_col is None or set(cells[0]) <= {"-", ":"}:
             continue
+        names.append(cells[player_col])
         if status_col < len(cells) and CONTROLLED_STATUS.match(cells[status_col]):
             controlled.add(cells[player_col])
+    roster_record.refuse_built_page(path, names)
     return controlled
 
 

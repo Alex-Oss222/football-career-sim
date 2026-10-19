@@ -38,7 +38,7 @@ from scripts import (close_week, league_awards, render_box_score, render_season_
                      render_standings, render_team_tracker, update_player_cards)
 from scripts.validate_repository import validate
 from local_private_service import local_service
-from support_page_history import keep_as_history
+from support_page_history import keep_as_history, pinned_copy
 from support_rosters import game_day_roster
 
 JAX = close_week.PROTAGONIST
@@ -227,6 +227,13 @@ class SeasonClosure2014Tests(unittest.TestCase):
             (tracker / rel).write_text(text, encoding="utf-8")
         self.assertEqual(update_player_cards.refresh_cards(SEASON, root), [])
         player_pages.write(root)  # every player page, after the week's awards
+        from scripts import render_club_pages
+        render_club_pages.write(root)  # the team page, roster and depth chart carry the results
+        # The coach and staff pages and the desk read the closed games (the record by season, the
+        # last result and record), so the weekly workflow rebuilds them after the close.
+        from scripts import render_career_views, render_coach_pages
+        render_coach_pages.write(root)
+        render_career_views.write(root)
         # The in-season rails records of the closed weeks read the receipts
         # before them, so the synthetic Week 1 changes their generated block
         # as the weekly workflow would regenerate it; the batch's event after
@@ -252,7 +259,8 @@ class SeasonClosure2014Tests(unittest.TestCase):
         # own (an unreceipted phase summary, say); those are the baseline, and
         # the closure must add none and none may concern the season records.
         baseline = set(validate(ROOT))
-        errors = validate(root)
+        with pinned_copy(root):
+            errors = validate(root)
         self.assertEqual(sorted(set(errors) - baseline), [])
 
         # Isolation: nothing reached the real season tree, cache or receipts.

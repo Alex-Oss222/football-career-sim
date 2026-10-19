@@ -82,7 +82,14 @@ class SeasonPaths:
     @property
     def postseason_receipts(self): return self.data_for(self.stats) / 'postseason_receipts'
     @property
-    def roster(self): return self.record('roster.md')
+    def roster(self):
+        """The season's roster owner: from 2014 the roster record in the data area
+        (runtime/roster.py); 2013 keeps its roster page as its own owner."""
+        return self.record('team/roster/roster.json') if self.year >= 2014 else self.record('roster.md')
+    @property
+    def roster_page(self):
+        """The roster page to read (built from the record from 2014)."""
+        return self.record('roster.md')
     @property
     def depth_chart(self): return self.record('depth_chart.json')
     @property
@@ -126,6 +133,14 @@ class SeasonPaths:
         return self.root / ('library/data/%d_db_families.json' % self.year)
     @property
     def generations(self): return self.record('migrations/event_generations.json')
+    # The coach side's pages (rebuild step 3): the season's desk, its staff
+    # page and the staff register frozen as history before Week 6.
+    @property
+    def desk(self): return self.career / 'README.md'
+    @property
+    def staff_page(self): return self.record('team/coaching_staff/README.md')
+    @property
+    def staff_register(self): return self.record('coaching_staff.md')
 
     def cache(self, week, kind):
         if type(week) is not int or not 1 <= week <= (21 if self.year < 2021 else 22) or kind not in ('inputs', 'results'):

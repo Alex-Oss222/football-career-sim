@@ -88,19 +88,10 @@
    "unit": "team",
    "start": "2013-01-15",
    "end": null,
-   "term": {
-    "end_date": null,
-    "end_basis": "No end date is recorded; only the four-year length (Document 3 §3.1; docs/season_cycle_milestones.md §4 item 1)"
+   "contract_record": {
+    "coach": "alex_stone",
+    "contract": "jax-head-coach-2013"
    },
-   "contract": [
-    {
-     "path": "foundation/03_Head_Coach_Organization_and_Authority_Canon.md",
-     "anchor": "31-head-coach-contract"
-    },
-    {
-     "path": "career/2013/offseason/head_coach_contract.md"
-    }
-   ],
    "history": [
     {
      "date": "2013-01-15",
@@ -813,7 +804,7 @@
       "play_calling_delegation",
       "emergency_succession"
      ],
-     "summary": "Stone can call, delegate or take back any phase at any time; continue the arrangement until he changes it, without making it a recurring planning question",
+     "summary": "Stone calls, delegates or takes back any phase at any time; the arrangement stands until he changes it",
      "record": {
       "path": "career/2014/Team_Operations/Staff/coaching_staff.md",
       "anchor": "phase-control"

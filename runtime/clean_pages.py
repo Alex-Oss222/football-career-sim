@@ -6,23 +6,40 @@ page that shows an internal code or identifier (1C, 5A, E1, U5, gsis ids,
 register keys, snake_case names, code spans, entry numbers), links to a system
 file (.json, .py, .csv and the like) or into the data area or the code,
 names a script or module, carries HTML markup other than the page builder's
-own invisible markers (runtime/player_pages.MARKERS), a policy note, a
-disclaimer or a version label, or uses the words engine, branch, receipt,
+own invisible markers (runtime/player_pages.MARKERS) and the event-record
+marker an event owner carries on a line of its own (runtime/events.EVENT_META:
+the whole line is exactly one marker holding one JSON object; two markers on
+a line, or text beside one, is markup), a policy note, a disclaimer or a
+version label, or uses the
+words engine, branch, receipt,
 kernel, ledger, snapshot, checkpoint or simulation. A player's full name
 that contains one of the words (Andre Branch, Tyvon Branch) is allowed by
 name, from the birth-date registry and the permanent player records; any
-other use of the word is caught.
+other use of the word is caught. Every link form is checked: inline links,
+links with a title ([x](path "t")), destinations in angle brackets
+([x](<path>)) or with spaces around them ([x]( path )), and reference
+definitions ([x]: path, [x]: <path>).
+
+The page history map is pinned: ``history_pin_errors`` fails when the map's
+bytes no longer match the digest the folder map records beside it
+(runtime/season_layout.PAGE_HISTORY_SHA256), so an entry cannot be added or
+changed (which would exempt a page) unless the pin changes in the same commit.
 
 Which pages: every page the player page builder writes, and every Markdown
 page under career/ written from 2014 Week 6 on. The pages written before
 Week 6 are history (rule 1): the folder map's PAGE_HISTORY file holds each
-one's path and the sha256 digest of its bytes as they stood before Week 6,
-and a page is exempt only while its bytes still match that digest. A page
-rewritten from Week 6 on, by hand or by its generator (the standings, the
-annual record, the desk), is checked like a new one, so a generator must be
-cleaned before it rewrites a page after Week 5 (docs/rebuild_plan.md names
-the build step that cleans each such view). A page the player page builder
-writes is checked by its marker.
+one's path and the sha256 digest of its bytes as they stood before Week 6
+("pages"), with the length of those bytes beside it ("lengths"). A page is
+exempt while its bytes still match that digest. An append-only history page
+(the medical history, the annual record, the roster decisions), whose
+current bytes begin with its exact pre-Week-6 bytes (the first "length"
+bytes match the digest), is checked only on what follows them: an appended
+entry is a page written from Week 6 on. Any other change (an edited old
+line, a page rewritten by hand or by its generator: the standings, the desk)
+makes the whole page a new one, so a generator must be cleaned before it
+rewrites a page after Week 5 (docs/rebuild_plan.md names the build step that
+cleans each such view). A page the player page builder writes is checked by
+its marker.
 
 Folder map. ``folder_map_errors`` fails when a script or runtime module,
 other than the folder map itself (runtime/season_layout.py, runtime/seasons.py)
@@ -49,7 +66,8 @@ import re
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from .season_layout import LEGACY_MOVES, NUMBERED_FOLDERS, PAGE_HISTORY
+from .events import EVENT_META
+from .season_layout import LEGACY_MOVES, NUMBERED_FOLDERS, PAGE_HISTORY, PAGE_HISTORY_SHA256
 
 ROOT = Path(__file__).resolve().parents[1]
 WORDS = re.compile(r"\b(engines?|branch(?:es)?|receipts?|kernels?|ledgers?|snapshots?|checkpoints?|"
@@ -74,8 +92,15 @@ POLICY = re.compile(r"(\bdisclaimer|\bpolicy note|\b(?:evaluation|assessment|rec
                     r"\bplaceholder\b|\bTODO\b|\bTBD\b)", re.I)
 VERSION = re.compile(r"(\bv\d+(?:\.\d+)*\b|\bversion \d|\bschema\b|\b20\d\d\.\d\b|\bsha-?256\b)", re.I)
 HTML = re.compile(r"<[A-Za-z!/][^>]*>")
-# A link destination may hold one level of parentheses (photo source pages do).
-LINK = re.compile(r"(!?)\[([^\]\n]*)\]\(((?:[^()\s]|\([^()\s]*\))+)\)")
+# A link's title ([x](path "t"), [x]: path 't', [x](path (t))).
+TITLE = r"(?:\"[^\"\n]*\"|'[^'\n]*'|\([^()\n]*\))"
+# A link destination: in angle brackets (<path>, which may hold spaces), or bare, holding one level
+# of parentheses (photo source pages do).
+DEST = r"(<[^<>\n]*>|(?:[^()\s<>]|\([^()\s]*\))+)"
+# An inline link, with any spaces around its destination and an optional title, and a reference
+# definition ([x]: path "t"); both are checked like any link.
+LINK = re.compile(r"(!?)\[([^\]\n]*)\]\(\s*" + DEST + r"(?:\s+" + TITLE + r")?\s*\)")
+REFERENCE = re.compile(r"^ {0,3}\[([^\]\n^][^\]\n]*)\]:\s*(<[^<>\n]*>|[^\s<>]+)(?:\s+" + TITLE + r")?\s*$")
 SYSTEM_SUFFIXES = (".json", ".jsonl", ".py", ".csv", ".gz", ".sqlite", ".db", ".yml", ".yaml", ".toml", ".sh",
                    ".txt", ".pkl", ".log")
 SYSTEM_DIRS = ("data", "runtime", "scripts", "tests", ".sim_cache")
@@ -102,18 +127,41 @@ def proper_names(root=ROOT):
 _NAMES = {}
 
 
-def page_errors(rel, text, markers=(), root=ROOT):
-    """The clean-page problems of one page (``rel`` is its repository path); a player's name
+def destination(raw):
+    """A link destination as written, without its angle brackets and the spaces around it."""
+    dest = raw.strip()
+    if dest.startswith("<") and dest.endswith(">"):
+        dest = dest[1:-1].strip()
+    return dest
+
+
+def event_marker(line):
+    """Whether ``line`` (stripped) is exactly one event-record marker (runtime/events.EVENT_META)
+    and nothing else: one opening, one closing and one JSON object between them."""
+    match = EVENT_META.fullmatch(line)
+    if not match or line.count("<!--") != 1 or line.count("-->") != 1:
+        return False
+    try:
+        return isinstance(json.loads(match.group(1)), dict)
+    except ValueError:
+        return False
+
+
+def page_errors(rel, text, markers=(), root=ROOT, first_line=1):
+    """The clean-page problems of one page (``rel`` is its repository path; ``first_line`` numbers
+    the first line of ``text`` when it is the appended part of a history page); a player's name
     from ``root``'s registry and records that contains a checked word is allowed."""
     problems = []
     names = proper_names(root)
     lines = text.splitlines()
-    for number, line in enumerate(lines, 1):
-        if line.strip() in markers:
+    for number, line in enumerate(lines, first_line):
+        if line.strip() in markers or event_marker(line.strip()):
             continue
         found = []
-        for m in LINK.finditer(line):
-            dest = m.group(3)
+        reference = REFERENCE.match(line)
+        dests = [destination(m.group(3)) for m in LINK.finditer(line)]
+        dests += [destination(reference.group(2))] if reference else []
+        for dest in dests:
             parts = urlsplit(dest)
             if parts.scheme or parts.netloc:
                 continue
@@ -122,7 +170,7 @@ def page_errors(rel, text, markers=(), root=ROOT):
             segments = [s for s in re.split(r"/+", _normalise(target)) if s]
             if path.endswith(SYSTEM_SUFFIXES) or (segments and segments[0] in SYSTEM_DIRS):
                 found.append("link to a system file: %s" % dest)
-        prose = LINK.sub(lambda m: m.group(2), line)
+        prose = reference.group(1) if reference else LINK.sub(lambda m: m.group(2), line)
         prose = re.sub(r"https?://\S+", "", prose)
         for pattern in ALLOWED + ((names,) if names else ()):
             prose = pattern.sub(" ", prose)
@@ -162,35 +210,79 @@ def digest(data):
     return hashlib.sha256(data).hexdigest()
 
 
+def _history_data(root):
+    path = Path(root) / PAGE_HISTORY
+    return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else {}
+
+
 def history(root=ROOT):
     """{repository path: digest} of the pages written before 2014 Week 6."""
+    return dict(_history_data(root).get("pages", {}))
+
+
+def history_lengths(root=ROOT):
+    """{repository path: length in bytes} of the same pages as they stood before Week 6."""
+    return dict(_history_data(root).get("lengths", {}))
+
+
+def unchecked_prefix(data, recorded, length):
+    """How many leading bytes of a history page are exempt: all of them while the page matches its
+    digest; the original ``length`` bytes when the page begins with them exactly (an append-only
+    page with entries added after Week 5); none once an old byte has changed."""
+    if recorded is None:
+        return 0
+    if digest(data) == recorded:
+        return len(data)
+    if isinstance(length, int) and 0 < length < len(data) and digest(data[:length]) == recorded:
+        return length
+    return 0
+
+
+def history_pin_errors(root=ROOT):
+    """The page history map against its pin (runtime/season_layout.PAGE_HISTORY_SHA256)."""
     path = Path(root) / PAGE_HISTORY
     if not path.is_file():
-        return {}
-    return dict(json.loads(path.read_text(encoding="utf-8"))["pages"])
+        return ["Page history map missing: %s" % PAGE_HISTORY]
+    found = digest(path.read_bytes())
+    if found != PAGE_HISTORY_SHA256:
+        return ["Page history map changed without its pin: %s is %s, the folder map pins %s; a page written "
+                "before Week 6 is never added or changed after the fact" % (PAGE_HISTORY, found, PAGE_HISTORY_SHA256)]
+    return []
 
 
-def checked_pages(root=ROOT):
-    """(path, text) for every page the rule covers: built pages, pages newer than the history and
-    history pages whose bytes no longer match their recorded digest."""
+def checked_parts(root=ROOT):
+    """(path, text, first line) for every page or part of a page the rule covers: built pages,
+    pages newer than the history, the entries appended to a history page after its pre-Week-6
+    bytes, and history pages whose old bytes changed (the whole page)."""
     from .player_pages import built_page
     root = Path(root)
-    old = history(root)
+    old, lengths = history(root), history_lengths(root)
     out = []
     for path in sorted((root / "career").rglob("*.md")):
         rel = path.relative_to(root).as_posix()
         data = path.read_bytes()
         text = data.decode("utf-8")
-        if built_page(text) or old.get(rel) != digest(data):
-            out.append((rel, text))
+        if built_page(text):
+            out.append((rel, text, 1))
+            continue
+        cut = unchecked_prefix(data, old.get(rel), lengths.get(rel))
+        if cut == len(data):
+            continue
+        head = data[:cut].decode("utf-8")
+        out.append((rel, data[cut:].decode("utf-8"), head.count("\n") + 1))
     return out
+
+
+def checked_pages(root=ROOT):
+    """(path, text) for every page or appended part the rule covers (``checked_parts``)."""
+    return [(rel, text) for rel, text, _ in checked_parts(root)]
 
 
 def clean_errors(root=ROOT):
     from .player_pages import MARKERS
     errors = []
-    for rel, text in checked_pages(root):
-        errors += page_errors(rel, text, MARKERS, root)
+    for rel, text, first in checked_parts(root):
+        errors += page_errors(rel, text, MARKERS, root, first_line=first)
     return errors
 
 

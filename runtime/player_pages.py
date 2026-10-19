@@ -40,6 +40,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 from . import people, player_bios, player_cards
+from . import roster as roster_record
 from .league import DIVISION_OF, DIVISIONS
 from .season_layout import LEAGUE_PLAYER_PAGES, PHOTO_REGISTRY, PLAYER_FINANCES
 from .seasons import SeasonPaths, active_season
@@ -312,6 +313,10 @@ def roster_rows(path):
     out, section, header = {}, None, None
     if not Path(path).is_file():
         return out
+    if roster_record.is_record(path):
+        return {row["name"]: (row["position"], STATUS_NAMES.get(roster_record.status_name(row["status"]),
+                                                                  roster_record.status_name(row["status"])))
+                for row in roster_record.load(path)["players"]}
     for line in Path(path).read_text(encoding="utf-8").splitlines():
         if line.startswith("## "):
             section = line[3:].strip()

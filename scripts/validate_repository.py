@@ -239,7 +239,7 @@ def validate(root=ROOT):
         register = (root/'state/04_Roster_and_Staff_Register.md').read_text()
         from runtime.events import closures, event_refs, load_events, record_errors, resolve_path
         events = load_events(root, mapping)
-        roster = current_record('roster', root).read_text()
+        roster_path = current_record('roster', root)
     except (OSError, ValueError, KeyError, TypeError) as exc:
         return [f'Cannot read required continuity input: {exc}']
     for path in mapping['required_files']:
@@ -338,16 +338,16 @@ def validate(root=ROOT):
                     f'Document {n}: stale source-version hash in Document 5')
         index = register.split('### Current player index', 1)[1].split('### Players no longer', 1)[0]
         register_names = re.findall(r'^\| ([^|]+?) \| JAX-', index, re.M)
-        body = re.split(r'^## (?:3\. )?Current controlled players\s*$', roster, maxsplit=1, flags=re.M)[1]
-        body = re.split(r'^## ', body, maxsplit=1, flags=re.M)[0]
-        roster_names = [m.strip() for m in re.findall(r'^\| ([^|]+?) \|', body, re.M)
-                        if m.strip() != 'Player' and not m.strip().startswith('-')]
+        # The roster record (runtime/roster.py) owns club control: its active roster and
+        # reserve lists are the controlled players the register and Document 5 count.
+        from runtime import roster as roster_record
+        roster_names = [row['name'] for row in roster_record.controlled(roster_record.load(roster_path))]
         require(len(register_names) == len(set(register_names)), 'Duplicate player in register')
         require(len(roster_names) == len(set(roster_names)), 'Duplicate player in readable roster')
         require(set(register_names) == set(roster_names), 'Controlled-player membership differs between roster and register')
         count = int(re.search(r'\| Current controlled players \| \*\*(\d+)\*\*', register)[1])
         require(len(register_names) == count, 'Register controlled count does not match player rows')
-        require(f'**Canonical controlled-player count:** **{count}**' in roster, 'Roster header count is stale')
+        require(len(roster_names) == count, 'Roster record controlled count differs from the register')
         state_counts = re.findall(r'\| \*\*Current [^|]*controlled roster\*\* \| \*\*(\d+)\*\*', state)
         require(len(state_counts) == 1 and int(state_counts[0]) == count, 'Document 5 controlled count is stale')
     except (OSError, IndexError, TypeError, ValueError) as exc:
@@ -411,13 +411,39 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
         errors.append(f'Invalid player pages: {exc}')
 
+    # The coach side's pages (the Coach page, Contract and jobs, the Staff
+    # page) are built from the coach records (data/people/coaches) and the
+    # current-job record: a changed record or a closed game without a rebuild
+    # fails, and so does a coach record that breaks its schema.
+    try:
+        from scripts.render_coach_pages import check as check_coach_pages
+        errors.extend(check_coach_pages(root))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid coach pages: {exc}')
+
+    # The club pages (scripts/render_club_pages.py: the team page, the roster and the depth chart) and
+    # the player cap views (scripts/render_jaguars_cap_tracker.py) are built from their stored
+    # owners: a changed owner without a rebuild, or a hand edit, fails.
+    try:
+        from scripts.render_club_pages import check as check_club_pages
+        errors.extend(check_club_pages(root))
+        import json as _json
+        from scripts import render_jaguars_cap_tracker as cap_tracker
+        cap_data = _json.loads((root / cap_tracker.INPUT).read_text())
+        for cap_path, cap_text in cap_tracker.render(cap_data, root).items():
+            if not (root / cap_path).is_file() or (root / cap_path).read_text() != cap_text:
+                errors.append('Cap view stale or hand-edited: %s; run scripts/render_jaguars_cap_tracker.py' % cap_path)
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid club pages or cap views: {exc}')
+
     # Clean pages (docs/rebuild_plan.md, rule 4): a built page, and any page
     # written from 2014 Week 6 on, is football only. Folder map (stored-facts
     # rule 2): no script or runtime module writes a season folder or a year
     # into a path itself.
     try:
-        from runtime.clean_pages import clean_errors, folder_map_errors
-        for label, found in (('Clean pages', clean_errors(root)), ('Folder map', folder_map_errors(root))):
+        from runtime.clean_pages import clean_errors, folder_map_errors, history_pin_errors
+        for label, found in (('Clean pages', clean_errors(root)), ('Page history', history_pin_errors(root)),
+                             ('Folder map', folder_map_errors(root))):
             errors.extend(found[:20])
             if len(found) > 20:
                 errors.append('%s: %d more problems' % (label, len(found) - 20))
@@ -725,7 +751,7 @@ def validate(root=ROOT):
         if '.git' in path.parts or not readable(path):
             continue
         content = without_code(path.read_text())
-        for dest in re.findall(r'\[[^\]\n]+\]\(([^\s)]+)\)', content):
+        for dest in link_destinations(content):
             parts = urlsplit(dest)
             if parts.scheme or parts.netloc:
                 continue
@@ -738,6 +764,22 @@ def validate(root=ROOT):
                 require(unquote(parts.fragment) in anchors(without_code(target.read_text())),
                         f'{path.relative_to(root)}: missing heading: {dest}')
     return errors
+
+
+LINK_TITLE = r'(?:"[^"\n]*"|\'[^\'\n]*\'|\([^()\n]*\))'
+# A destination in angle brackets (<path>, which may hold spaces) or bare; the same forms as the
+# clean-page check (runtime/clean_pages.LINK and REFERENCE).
+LINK_DEST = r'(<[^<>\n]*>|[^\s)<>]+)'
+
+
+def link_destinations(content):
+    """Every link destination of a Markdown text: inline links, with or without a title
+    ([x](path "t")), in angle brackets ([x](<path>)) or with spaces around them ([x]( path )),
+    and reference definitions ([x]: path, [x]: <path>). Angle brackets and the spaces around a
+    destination are not part of it."""
+    dests = re.findall(r'\[[^\]\n]+\]\(\s*' + LINK_DEST + r'(?:\s+' + LINK_TITLE + r')?\s*\)', content)
+    dests += re.findall(r'(?m)^ {0,3}\[[^\]\n^][^\]\n]*\]:\s*(<[^<>\n]*>|[^\s<>]+)', content)
+    return [d[1:-1].strip() if d.startswith('<') and d.endswith('>') else d for d in dests]
 
 
 def main():

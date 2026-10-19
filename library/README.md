@@ -104,6 +104,7 @@ These artifacts are pinned by the 2012 base in `runtime/calibration_base.py`, wh
 | Record | Subject | Status | Artifacts and builder |
 |---|---|---|---|
 | [nfl_coaching_career_path.md](nfl_coaching_career_path.md) | The NFL coaching ladder from position coach to head coach: rungs, timelines, the hiring cycle, contracts, failure points and the stops that need the user | Research only; two passes and a user-sourced verification pass, with Confirmed, Pattern, Unverified, Later and Real history labels | None |
+| [nfl_head_coach_contracts_2005_2014.md](nfl_head_coach_contracts_2005_2014.md) | NFL head-coach contracts and extensions, real practice 2005 to January 2014: extension timing, lengths, reported salaries, guarantees, offsets, dismissal costs and assistants' contracts when the head coach goes | Research only; two passes (pass 2 a separate skeptical verification), with Confirmed, Corrected, Unverified and Derived labels; the basis cited by the reconstructed terms of Stone's contract | None |
 
 ## Methods
 

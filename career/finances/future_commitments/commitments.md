@@ -2,7 +2,7 @@
 
 [Finances](../README.md) · [Full cap table](../salary_cap/cap_tracker.md)
 
-As of September 8, 2014. Generated from the same financial inputs as the full cap table.
+As of September 8, 2014.
 
 ## Team cap summary, twelve years
 
@@ -106,4 +106,4 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | Unsigned tender, conditional on signing |  |  |  |
 | Total scheduled player cash |  |  |  |
 
-Cash counts salary and bonuses scheduled in that contract year. Bonus proration is not another cash payment. Actual paid cash remains unverified; the 2013–2016 and 2017–2020 cash-floor windows require complete cash ledgers.
+Cash counts salary and bonuses scheduled in that contract year. Bonus proration is not another cash payment. Actual paid cash remains unverified; the 2013–2016 and 2017–2020 cash-floor windows require complete cash records.

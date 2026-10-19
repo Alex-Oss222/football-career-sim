@@ -133,7 +133,9 @@ FINANCE_MOVES = {
     'career/finances/jaguars_cap.md': 'career/finances/salary_cap/cap_tracker.md',
     'career/finances/jaguars_contract_details.md': 'career/finances/player_contracts/contract_details.md',
     'career/finances/organization_finances.md': 'career/finances/coaching_and_organization/coaching_payroll.md',
-    'career/finances/jaguars_cap_inputs.json': 'career/finances/supporting_records/financial_inputs.json',
+    'career/finances/jaguars_cap_inputs.json': 'data/finances/financial_inputs.json',
+    # Rebuild step 3b (October 19, 2026): the player contract inputs moved into the data area.
+    'career/finances/supporting_records/financial_inputs.json': 'data/finances/financial_inputs.json',
 }
 REPOSITORY_ALIASES = {
     'foundation/06_Chronology_Game_Ledger_and_Handoff.md': 'foundation/06_Event_Records_and_Handoff.md',
@@ -164,17 +166,28 @@ SYSTEM_SUFFIXES = ('.json', '.csv', '.gz')
 # places here (stored-facts rule 2), never by writing the path itself.
 PEOPLE_ROOT = DATA_ROOT + '/people'
 PLAYER_RECORDS = PEOPLE_ROOT + '/players'
+# Rebuild step 3 (coach side): one permanent record per coach, growing by
+# dated entries (hired, contracts, calling changes, departures), and Stone's
+# own pages, which follow him across seasons and jobs.
+COACH_RECORDS = PEOPLE_ROOT + '/coaches'
+STONE_PAGES = 'career/Stone'
 CANON_OVERRIDES = PEOPLE_ROOT + '/canon_overrides.json'
 LEAGUE_PLAYER_PAGES = 'career/league_players'
 # The pages written before 2014 Week 6, by path: history under rebuild rule 1, exempt from the
 # clean-page check (runtime/clean_pages.py) until a later step rebuilds them.
 PAGE_HISTORY = DATA_ROOT + '/pages/history.json'
+# The sha256 of the page history map's bytes. The map exempts the pages it lists, so it is pinned:
+# validation fails when the map changes unless this pin changes in the same commit
+# (runtime/clean_pages.history_pin_errors).
+PAGE_HISTORY_SHA256 = 'e9329fb9fe5853229cd9bdfb5af0c0d479e6e6f656598229676fb7960ca3201e'
 # The research registries the player pages read through (one owner each).
 BIRTH_DATE_REGISTRY = 'library/data/player_birth_dates.json'
 BIRTH_DATE_CORRECTIONS = 'library/data/player_birth_date_corrections.json'
 PHOTO_REGISTRY = 'library/data/player_photos.json'
-# Jacksonville's contract inputs (salary by year), the owner the contract section reads.
-PLAYER_FINANCES = 'career/finances/supporting_records/financial_inputs.json'
+# Jacksonville's contract inputs (salary by year), the owner the contract section and the player
+# cap views read: stored once in the data area, outside every season (rebuild step 3b).
+FINANCE_DATA = DATA_ROOT + '/finances'
+PLAYER_FINANCES = FINANCE_DATA + '/financial_inputs.json'
 
 
 def is_system_file(relative):

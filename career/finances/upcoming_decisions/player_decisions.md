@@ -2,14 +2,14 @@
 
 [Finances](../README.md) · [Full cap table](../salary_cap/cap_tracker.md)
 
-As of September 8, 2014. Generated from the same financial inputs as the full cap table.
+As of September 8, 2014.
 
 ## Decision calendar
 
 | Date / review | Player or group | Financial treatment |
 |---|---|---|
 | Closed August 30, 2014 | Cameron Bradfield (RFA); Toney Clemons, Austin Pasztor and Mike Brown (ERFA) | The four qualifying offers were withdrawn at the reduction to 53 and the players' rights renounced; the $3,066,000 tender charge leaves. No offer sheet had been received by the May 2 deadline |
-| Closed August 30 and 31, 2014 | Reduction to 53, waivers and the practice squad | Seventeen players waived and two vested veterans (Cain, C.J. Wilson) released; their surviving bonus allocations are in the dead-money ledger (2014 and 2015). Brate and Jackson on reserve/injured, contracts continuing. Eight practice-squad contracts at the $6,300 weekly minimum, carried as a $107,100 working estimate each for 17 weeks and charged only for weeks on the squad; two places open |
+| Closed August 30 and 31, 2014 | Reduction to 53, waivers and the practice squad | Seventeen players waived and two vested veterans (Cain, C.J. Wilson) released; their surviving bonus allocations are in the dead-money table (2014 and 2015). Brate and Jackson on reserve/injured, contracts continuing. Eight practice-squad contracts at the $6,300 weekly minimum, carried as a $107,100 working estimate each for 17 weeks and charged only for weeks on the squad; two places open |
 | Closed May 12, 2014 | Will Rackley | Traded to Seattle for its unconditional 2015 seventh; his $154,868 final bonus allocation stays as 2014 dead money and his $1,431,000 base leaves. Brewster is kept |
 | After the offseason program | Offseason workout charge | The $504,000 opening charge is reconciled to actual workout payments, not charged again |
 | 2014 season | Hakeem Nicks and Daniel Te’o-Nesheim | Active-game bonuses of $31,250 a game, up to $500,000 each, are counted in the 2014 charges |
@@ -27,4 +27,4 @@ As of September 8, 2014. Generated from the same financial inputs as the full ca
 | 2017 | Sen'Derrick Marks, Alterraun Verner, Andrew Hawkins, Aaron Donald, Joel Bitonio, Davante Adams, Trai Turner, Telvin Smith, Corey Linsley, Charles Leno Jr., Malcolm Butler |
 | 2018 | Eugene Monroe, Aqib Talib |
 
-“Through” describes the final league year of the recorded contract or tender. The 2013 contracts not retained expired at the March 11, 2014 league-year opening; those players are retained only as former-player history. Traded players leave these classes. A player’s class at a later expiry follows his actual accrued service; it does not extend the deal.
+The last contract year is the final league year of the recorded contract or tender. The 2013 contracts not retained expired when the league year opened on March 11, 2014; those players are no longer with the club. Traded players leave these classes. A player’s class at a later expiry follows his actual accrued service; it does not extend the deal.

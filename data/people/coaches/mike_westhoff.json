@@ -1,0 +1,49 @@
+{
+ "schema_version": 1,
+ "name": "Mike Westhoff",
+ "party": "westhoff",
+ "entries": [
+  {
+   "date": "2014-02-11",
+   "kind": "hired",
+   "club": "Jacksonville Jaguars",
+   "job": "Special teams coordinator",
+   "unit": "special_teams",
+   "source": "career/2014/Early_Offseason/staff_changes/hires.md"
+  },
+  {
+   "date": "2014-02-11",
+   "kind": "contract_signed",
+   "contract": "jax-2014",
+   "club": "Jacksonville Jaguars",
+   "job": "Special teams coordinator",
+   "seasons": [
+    2014,
+    2015
+   ],
+   "salary": {
+    "2014": 750000,
+    "2015": 750000
+   },
+   "guaranteed": [
+    2014
+   ],
+   "offset": "Salary still owed after a dismissal without cause is reduced dollar for dollar by pay earned in another NFL or major-college coaching job during the guaranteed period",
+   "dismissal": {
+    "without_cause": "The guaranteed 2014 salary is owed, less the offset; the 2015 salary is not guaranteed",
+    "for_cause": "Cause is limited to a material employment breach; poor results, a losing season or a football disagreement are not cause"
+   },
+   "signing_bonus": 0,
+   "terms": [
+    "No added title, roster power or additional hires"
+   ],
+   "source": "career/2014/Early_Offseason/staff_changes/hires.md"
+  },
+  {
+   "date": "2014-02-11",
+   "kind": "calling_changed",
+   "phase": "special_teams",
+   "source": "career/2014/Early_Offseason/staff_changes/hires.md"
+  }
+ ]
+}

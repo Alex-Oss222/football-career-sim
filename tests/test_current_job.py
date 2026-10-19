@@ -19,7 +19,7 @@ from unittest.mock import patch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tests"))
 from release_staging import copied_root
-from runtime import current_job, decision_queue
+from runtime import coaches, current_job, decision_queue
 from runtime.events import load_events, repository_map
 from runtime.player_bios import master_date
 from runtime.seasons import SeasonPaths
@@ -271,6 +271,42 @@ class CurrentJobTests(unittest.TestCase):
         with patch("runtime.postseason.schedule", return_value=[]):
             errors = current_job.validation_errors(self.root, self.mapping, self.events, self.master)
         self.assertTrue(any(target in e and "cannot be dated" in e for e in errors), errors)
+
+    def test_term_is_read_from_the_coach_record(self):
+        current = self.current(self.job)
+        self.assertNotIn("term", current)
+        self.assertNotIn("contract", current)
+        pointer = current["contract_record"]
+        terms = coaches.contract(coaches.load(pointer["coach"], ROOT), pointer["contract"])
+        term = current_job.term(self.job, ROOT)
+        self.assertIsNotNone(term["end_date"])
+        self.assertEqual(term["end_date"], coaches.end_date(terms))
+        self.assertEqual(term["seasons"], terms["seasons"])
+        self.assertGreater(date.fromisoformat(term["end_date"]), date.fromisoformat(current["start"]))
+        self.assertEqual(terms["signed"]["date"], current["start"])
+
+    def test_a_stored_term_or_a_broken_pointer_is_reported(self):
+        job = json.loads(json.dumps(self.job))
+        self.current(job)["term"] = {"end_date": None}
+        self.assertTrue(any("stores its term or contract" in e for e in self.errors_with(job)))
+        job = json.loads(json.dumps(self.job))
+        self.current(job)["contract_record"]["contract"] = "no-such-contract"
+        self.assertTrue(any("contract_record:" in e and "no-such-contract" in e for e in self.errors_with(job)))
+
+    def test_a_calling_change_must_match_the_delegation(self):
+        records = coaches.load_all(self.root)
+        slug, record = next((s, r) for s, r in records.items() if coaches.entries(r, "calling_changed"))
+        entry = coaches.entries(record, "calling_changed")[0]
+        quiet = next(phase for phase in current_job.PHASES
+                     if not any(entry["date"] in (r.get("from"), r.get("to"))
+                                for r in current_job._intervals(self.job, phase)))
+        changed = json.loads(json.dumps(record))
+        next(e for e in changed["entries"] if e == entry)["phase"] = quiet
+        self.write((coaches.folder(self.root) / ("%s.json" % slug)).relative_to(self.root).as_posix(),
+                   coaches.dump(changed))
+        errors = current_job.validation_errors(self.root, self.mapping, self.events, self.master)
+        self.assertTrue(any("coach record %s dates a %s calling change on %s" % (slug, quiet, entry["date"]) in e
+                            for e in errors), errors)
 
 
 if __name__ == "__main__":

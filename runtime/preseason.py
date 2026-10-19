@@ -39,6 +39,7 @@ import json
 from datetime import date, timedelta
 
 from . import call_families, depth_library, player_bios, rotation, strength
+from . import roster as roster_record
 from .player_evidence import normalize_players
 from .rules import PRESEASON
 from .seasons import SeasonPaths, require_receipt_season
@@ -68,7 +69,13 @@ def controlled_roster(roster_path):
     game-day candidates."""
     rows = controlled_active(roster_path=roster_path)
     status_col = avail_col = None
-    for line in roster_path.read_text(encoding="utf-8").splitlines():
+    if roster_record.is_record(roster_path):
+        for row in roster_record.load(roster_path)["players"]:
+            status = row["status"]
+            if status != "Active 53" and status.startswith(CONTROLLED_STATUSES):
+                rows.append((row["name"], row["availability"] if row["availability"] is not None else AVAILABLE_TEXT))
+    lines = () if roster_record.is_record(roster_path) else roster_path.read_text(encoding="utf-8").splitlines()
+    for line in lines:
         if not line.startswith("|"):
             status_col = None
             continue

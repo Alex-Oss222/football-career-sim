@@ -46,11 +46,11 @@ Any task that **completes an event, advances the career clock, changes roster/co
 2. **Update every dependent current-state view in the same commit.** At minimum inspect and update, when affected:
    - `career/[year]/Record.md`;
    - the applicable transaction/result file under `career/[year]/`;
-   - `career/[year]/roster.md`;
+   - the roster record (`SeasonPaths(YEAR).roster`; for 2014 `data/2014/Team_Operations/Team/Roster/roster.json`), from which `roster.md` is built; never hand-edit the built page;
    - `career/[year]/standings.md` whenever a final score changes any club's record, regenerated from receipts with `python scripts/render_standings.py YEAR`;
    - `career/[year]/stats/` whenever a regular-season or postseason game closes: preserve the public stat receipt and refresh the current team/league stat views from receipts rather than hand-adding prior Markdown;
    - the applicable cap/contract/draft-capital accounting file;
-   - `career/[year]/depth_chart.md` and its working JSON (`career/[year]/offseason/depth_chart_working.json` until the season input `career/[year]/depth_chart.json` is released), with a row in its update log;
+   - the depth chart's game and working JSON and its update log (from 2014, `update_log.json` beside them in the data area, one dated entry per change), from which `depth_chart.md` is built;
    - `career/[year]/offseason/contract_table.md`, with a row in its update log;
    - the long-term financial inputs and generated views under `career/finances/`, including all affected future-year obligations; run `python scripts/render_jaguars_cap_tracker.py` and its `--check` mode when these change;
    - `state/04_Roster_and_Staff_Register.md`;
@@ -198,7 +198,7 @@ For the named week, Codex must autonomously:
 8. Generate the box score, standings and season statistics from receipts (`render_box_score.py --write`, `render_standings.py`, `render_season_stats.py`); never hand-add totals from Markdown. Then read `career/[year]/stats/calibration_audit.md`: an OUTSIDE row is investigated as an input or engine defect, never grounds to rerun or select a closed result.
 8a. Draw the week's league awards with `python scripts/league_awards.py week N --season YEAR --close`, and each month's awards when its league announcement date is reached (`month NAME --close`; October after Week 9's first game, and so on), then render `career/[year]/awards/`. `validate_repository.py` fails while a closed week or a finished month lacks awards.
 9. Reconcile injuries, availability, roles, transactions and other actually changed state.
-10. Close the event owners and current state atomically, regenerate Record.md, and validate the branch. Update the calendar only if a scheduled date or appointment changes. Open the normal PR. **Do not advance the private snapshot from an unmerged branch.** If Codex can merge the PR, merge it first, update/check out the merged `main`, then advance the private snapshot to the merged Document 5 digest and rerun readiness. If Codex cannot merge, leave the private snapshot unchanged and report snapshot advancement as pending merge.
+10. Close the event owners and current state atomically, regenerate Record.md, rebuild the built pages (`render_player_pages.py`, `render_club_pages.py`, `render_coach_pages.py`, `render_career_views.py`, `render_jaguars_cap_tracker.py`; [the dependency workflow](docs/update_workflow.md) lists them), and validate the branch. Update the calendar only if a scheduled date or appointment changes. Open the normal PR. **Do not advance the private snapshot from an unmerged branch.** If Codex can merge the PR, merge it first, update/check out the merged `main`, then advance the private snapshot to the merged Document 5 digest and rerun readiness. If Codex cannot merge, leave the private snapshot unchanged and report snapshot advancement as pending merge.
 11. Stop before Week N+1.
 
 ### Weekly TeamInput exclusivity
@@ -207,7 +207,7 @@ Before the first game event of any regular-season/postseason weekly slate closes
 
 - Build the full weekly TeamInput package in the transient workspace.
 - Run `python scripts/check_week_input_exclusivity.py <weekly-input-package.json> --expected-games <scheduled-game-count>`. Use the actual week's scheduled game count so a partial package cannot pass.
-- Derive Jacksonville control from the current branch `career/[year]/roster.md`, including both active roster and practice squad.
+- Derive Jacksonville control from the current roster record (`SeasonPaths(YEAR).roster`, the gate's default; from 2014 the built `roster.md` is not a source), including both active roster and practice squad.
 - A Jacksonville-controlled player may not appear in any non-Jacksonville TeamInput, even when a real historical Week-N roster source lists that player for another club.
 - No player identifier may appear on two clubs in the same simulated weekly slate.
 - Treat a failure as an internal data-preparation defect: fix the inputs and rerun the gate. Do not ask the user to reconcile historical rosters.

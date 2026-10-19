@@ -5,7 +5,9 @@ from pathlib import Path
 import tempfile
 import unittest
 
+from runtime.season_layout import COACH_RECORDS
 from runtime.seasons import SeasonPaths
+import support_roster_record
 from scripts.season_handoff import (
     TEAM_GATES, HISTORY_GATES, check, digest, stage, refresh_reference_inventory,
     opening_errors, opening_gate_sources, review_opening, repository_opening_errors,
@@ -27,7 +29,7 @@ class HandoffTests(unittest.TestCase):
         (root/'state/decision_queue.json').write_text(json.dumps(EMPTY_QUEUE))
         evidence = folder/'closed.md'
         evidence.write_text('Synthetic closed interviews and administrative evidence')
-        files = {'roster':'roster.md','staff':'coaching_staff.md','depth_chart':'depth.json',
+        files = {'depth_chart':'depth.json',
                  'player_contracts':'contracts.md','contract_status':'status.md','cap':'cap.md',
                  'development':'development.md','decisions':'decisions.md',
                  'calendar':'calendar_source.md','record':'record_source.md','player_ages':'ages.md',
@@ -38,6 +40,15 @@ class HandoffTests(unittest.TestCase):
             path=folder/name
             path.write_text('{}' if name.endswith('.json') else '[Evidence](closed.md)\nUnresolved medical hold; contract persists.\n')
             sources[key]=path.relative_to(root).as_posix()
+        # The roster carries as its record (runtime/roster.py) and the staff as the coach records.
+        roster = support_roster_record.write(SeasonPaths(year, root).roster,
+                                             [('Sample', 'LS', 'Active 53', 'Unresolved medical hold; contract persists.')],
+                                             as_of='%d-12-28' % year)
+        sources['roster'] = roster.relative_to(root).as_posix()
+        coach = root/COACH_RECORDS/'sample_coach.json'
+        coach.parent.mkdir(parents=True, exist_ok=True)
+        coach.write_text('{"name": "Sample Coach"}')
+        sources['staff'] = COACH_RECORDS
         target=root/'career'/str(year+1)
         target.mkdir(parents=True,exist_ok=True)
         SeasonPaths(year+1, root).calendar.write_text('Synthetic historical-calendar test fixture')
@@ -55,11 +66,6 @@ class HandoffTests(unittest.TestCase):
         from scripts.build_annual_player_sheets import review_final_assessments
         data = self.bare_baseline(root, year)
         paths = SeasonPaths(year, root)
-        paths.roster.parent.mkdir(parents=True, exist_ok=True)
-        evidence_link = os.path.relpath(root/'career'/str(year)/'closed.md', paths.roster.parent)
-        paths.roster.write_text('**As of:** Season close\n\n**Canonical controlled-player count:** **1**\n\n## Current controlled players\n\n| Player | Pos | Status |\n|---|---|---|\n| Sample | LS | Signed |\n\n[Evidence]('+evidence_link+')\nUnresolved medical hold; contract persists.\n')
-        data['carry_forward']['roster'] = paths.roster.relative_to(root).as_posix()
-        data['source_sha256']['roster'] = digest(paths.roster)
         for gate, filename in [('team_season_closed', 'season_closeout.md'),
                                ('exit_interviews', 'exit_interviews.md')]:
             path = paths.record('closeouts/'+filename)
@@ -124,8 +130,12 @@ class HandoffTests(unittest.TestCase):
                 for p,blob in before.items():self.assertEqual(p.read_bytes(),blob)
                 nxt=root/'career'/str(year+1)
                 self.assertEqual(list(SeasonPaths(year+1, root).receipts.glob('*.json')),[])
-                self.assertIn(f'/{year}/closed.md',SeasonPaths(year+1, root).roster.read_text())
+                # The roster opens from its record unchanged; the built page and the frozen staff
+                # register are never copied, and the coach records carry without a copy.
+                self.assertEqual(SeasonPaths(year+1, root).roster.read_text(), SeasonPaths(year, root).roster.read_text())
                 self.assertIn('Unresolved medical hold',SeasonPaths(year+1, root).roster.read_text())
+                self.assertFalse(SeasonPaths(year+1, root).roster_page.exists())
+                self.assertFalse(SeasonPaths(year+1, root).record('coaching_staff.md').exists())
                 self.assertFalse(SeasonPaths(year+1, root).depth_chart.exists())
                 self.assertEqual(json.loads(SeasonPaths(year+1, root).record('opening_handoff.json').read_text())['status'],'STAGED')
 
@@ -145,7 +155,7 @@ class HandoffTests(unittest.TestCase):
             target=SeasonPaths(2015, root).roster;target.parent.mkdir(parents=True);target.write_text('User work')
             with self.assertRaisesRegex(ValueError,'Existing successor file differs'):stage(root,data)
             self.assertEqual(target.read_text(),'User work')
-            self.assertFalse((target.parent/'coaching_staff.md').exists())
+            self.assertFalse(SeasonPaths(2015, root).record('opening_handoff.json').exists())
 
     def test_missing_calendar_unreviewed_evidence_and_path_escape_fail(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -179,13 +189,13 @@ class HandoffTests(unittest.TestCase):
     def test_old_event_markers_stay_with_their_original_owner(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);data=self.baseline(root,2014)
-            roster=root/data['carry_forward']['roster']
+            contracts=root/data['carry_forward']['player_contracts']
             event='<!-- event-record: {"id":"2014-example","date":"2014-12-28","status":"closed","summary":"A recorded event"} -->'
-            roster.write_text(roster.read_text()+event+'\n')
-            data['source_sha256']['roster']=digest(roster)
+            contracts.write_text(contracts.read_text()+event+'\n')
+            data['source_sha256']['player_contracts']=digest(contracts)
             stage(root,data)
-            self.assertIn(event,roster.read_text())
-            self.assertNotIn('event-record:',SeasonPaths(2015,root).roster.read_text())
+            self.assertIn(event,contracts.read_text())
+            self.assertNotIn('event-record:',SeasonPaths(2015,root).record('offseason/contract_table.md').read_text())
 
     def test_opening_cards_without_finals_block_all_staging_writes(self):
         with tempfile.TemporaryDirectory() as tmp:

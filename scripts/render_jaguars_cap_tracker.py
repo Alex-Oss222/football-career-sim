@@ -14,7 +14,8 @@ sys.path.insert(0, str(ROOT))
 from runtime.player_bios import biographies
 from runtime.season_layout import logical_path, repository_relative
 from runtime.seasons import SeasonPaths, page_link
-INPUT = Path('career/finances/supporting_records/financial_inputs.json')
+from runtime.season_layout import PLAYER_FINANCES
+INPUT = Path(PLAYER_FINANCES)
 OUTPUT = Path('career/finances/salary_cap/cap_tracker.md')
 DETAILS = Path('career/finances/player_contracts/contract_details.md')
 ORGANIZATION = Path('career/finances/coaching_and_organization/coaching_payroll.md')
@@ -41,6 +42,86 @@ def departure_source(player, data):
     return next((path for path in player['sources'] if path.endswith('/contract_status.md')),
                 data['current_contract_table'])
 
+# Reader wording for the stored accounting notes (rebuild step 3b): the facts and figures stay as
+# the inputs hold them; only system words, raw file paths, research codes and the "M" unit change.
+# A player's name that contains a checked word (Andre Branch) is never touched.
+READER_WORDS = (
+    (re.compile(r'\ba labelled simulation reconstruction\b'), 'a labelled reconstruction'),
+    (re.compile(r'\bsimulation reconstruction\b'), 'reconstruction'),
+    (re.compile(r'\b[Ss]imulation\b'), lambda m: 'Reconstructed' if m[0][0] == 'S' else 'reconstructed'),
+    (re.compile(r"\bthe branch(?:'s|’s)"), 'Jacksonville’s'),
+    (re.compile(r'(?<!Andre )(?<!Alan )(?<!Tyvon )\b[Bb]ranch\b'), 'Jacksonville'),
+    (re.compile(r'\bdead-money ledger\b'), 'dead-money table'),
+    (re.compile(r'\bcash ledgers\b'), 'cash records'),
+    (re.compile(r'\bledger\b'), 'record'),
+    (re.compile(r'\bcash receipts\b'), 'cash received'),
+    (re.compile(r' \(library [A-Z]\d+(?:, (?:Confirmed|Unverified))?\)'), ''),
+    (re.compile(r',? library [A-Z]\d+\b(?:, (?:Confirmed|Unverified))?'), ''),
+    (re.compile(r'\$(\d[\d,]*(?:\.\d+)?)M\b'), r'$\1 million'),
+)
+# Notes written for the record-keepers rather than the reader: clauses that only say a later
+# real-world move is not applied, research-file references, and wording joined without its full
+# stop when a later transaction was appended. Each rewrite keeps every figure the note holds.
+CONTRACT_NAMES = (
+    (re.compile(r'^Rookie scale, pick #(\d+)$'), r'rookie-scale contract (pick #\1)'),
+    (re.compile(r'^Rookie, (\d{4}) (\w+) round$'), r'\1 \2-round rookie contract'),
+    (re.compile(r'^Veteran minimum (.+)$'), r'veteran-minimum contract \1'),
+    (re.compile(r'^(?:UDFA|udfa) minimum$'), 'undrafted minimum contract'),
+    (re.compile(r'^Reserve/future, (.+)$'), r'reserve/future contract of \1'),
+)
+
+
+def contract_name(match):
+    name = match[2]
+    for pattern, new in CONTRACT_NAMES:
+        if pattern.match(name):
+            return match[1] + ' ' + pattern.sub(new, name) + ' ended'
+    return match[0]
+
+
+RECORD_NOTES = (
+    (re.compile(r' No later Washington contract is imported\.'), ''),
+    (re.compile(r'; no later real-world escalator or extension is imported'), ''),
+    (re.compile(r' Later actual suspension/tolling does not apply\.'), ''),
+    (re.compile(r'; do not add them to cap twice'), ' and are counted once'),
+    (re.compile(r'\. The \d{4} salary reduction in real history is excluded;'), ';'),
+    (re.compile(r'; no real \d{4} replacement deal is imported'), ''),
+    (re.compile(r' No later retirement or real release is executed here\.'), ''),
+    (re.compile(r' No real release is imported\.'), ''),
+    (re.compile(r' Later real contracts do not extend it\.'), ''),
+    (re.compile(r'; the later real extension is excluded'), ''),
+    (re.compile(r' The later real Houston contract is a different deal and is excluded\.'), ''),
+    (re.compile(r"\.? Not the player's real contract(?=[.\s]|$)"), '.'),
+    (re.compile(r'\binferred from his real ([A-Z][a-z]+ \d{4})'), r'inferred from his \1'),
+    (re.compile(r'\bhis real retirement\b'), 'his retirement'),
+    (re.compile(r'\bin this branch\b'), 'at Jacksonville'),
+    (re.compile(r', before divergence\.'), '.'),
+    (re.compile(r'\b(is |was )?modeled as\b'), lambda m: (m[1] or '') + 'treated as'),
+    (re.compile(r'\bmodeled without\b'), 'recorded without'),
+    (re.compile(r'\bthe library does not record the rule\b'), 'the league rule is not on file'),
+    (re.compile(r'\bthe library records no proration rule\b'), 'no league proration rule is on file'),
+    (re.compile(r"\bthe library's Confirmed (\d{4}) figure\b"), r'the confirmed \1 league figure'),
+    (re.compile(r'\(library section \w+, Confirmed\)'), '(confirmed league figure)'),
+    (re.compile(r'\bthe nflverse/OTC historical contracts file\b'), 'the historical contract records'),
+    (re.compile(r'(?<=[a-z]) (Waived|Released) (?=(?:January|February|March|April|May|June|July|August|'
+                r'September|October|November|December) \d)'), r'. \1 '),
+    (re.compile(r'\b([Tt]he(?: earlier)?) ((?:Rookie|Veteran|UDFA|udfa|Reserve/future)[^;.]*?) ended\b'), contract_name),
+)
+RAW_PATH = re.compile(r'(?<![\[/\w])(career/[^\s)\]]+\.md)(#[\w-]+)?')
+
+
+def reader_words(text):
+    """``text`` in reader wording, outside link destinations and web addresses."""
+    parts = re.split(r'(\]\([^)]*\)|https?://\S+)', text)
+    for i in range(0, len(parts), 2):
+        piece = parts[i]
+        for pattern, new in RECORD_NOTES + READER_WORDS:
+            piece = pattern.sub(new, piece)
+        parts[i] = RAW_PATH.sub(lambda m: source_link(m[1], Path(m[1]).stem.replace('_', ' ')
+                                                      .rstrip(' 0123456789-').strip() or 'record'), piece)
+    return ''.join(parts)
+
+
 def presentation_note(text, contract_table):
     """Keep the frozen accounting basis, but present named records to readers."""
     contract = source_link(contract_table, 'adopted contract reconstruction')
@@ -57,7 +138,7 @@ def presentation_note(text, contract_table):
     text = text.replace('March 2014 replay log', source_link(
         SeasonPaths(2014, ROOT).record('free_agency/march_2014_replay_log.md').relative_to(ROOT).as_posix(),
         'March 2014 signing record'))
-    return text
+    return reader_words(text)
 
 def slug(name):
     return re.sub(r'[^\w -]', '', name.lower()).replace(' ', '-')
@@ -153,8 +234,10 @@ def validate(data, root=ROOT):
                     raise ValueError('Missing annual contract component: '+p['name'])
             if p['remaining_guarantees'] != sum(r.get('guaranteed_base',0) for r in p['years'].values()):
                 raise ValueError('Remaining guarantees disagree: '+p['name'])
-    roster=md_rows(source_path(data['current_roster'],root).read_text())
-    expected={x[0] for x in roster if len(x) in (6,7) and re.fullmatch(r'\d{4}-\d{2}-\d{2}',x[2])}
+    # Every player the roster record lists (the active roster, the reserve lists and the practice
+    # squad) carries a contract here, and only they are current players.
+    from runtime import roster as roster_record
+    expected={row['name'] for row in roster_record.load(source_path(data['current_roster'],root))['players']}
     current_names={p['name'] for p in players if not p.get('former_player')}
     if current_names!=expected: raise ValueError('Tracker coverage differs from current active, retired and future roster')
     source=source_path(data['current_contract_table'],root).read_text()
@@ -223,19 +306,19 @@ def render_main(d,years):
     ps=d['players'];current=years[0]
     roster=Counter(p['control'] for p in ps if not p.get('former_player'))
     out=[f"# Jacksonville Jaguars cap tracker, {years[0]} to {years[-1]}\n\nAs of {display_date(d['as_of'])}. Whole US dollars.\n\n",
-    '[Player cap table](#cap-by-player) | [Individual contract details](jaguars_contract_details.md) | [Expirations](#expiring-contracts-and-free-agent-classes) | [Updating this tracker](README.md)\n\n',
-    f"The inventory covers {sum(roster.values())} current players: {roster['signed']} under signed contracts (reserve/future contracts from March 11 and practice-squad contracts from August 31, 2014 included while in force) and {roster['tender']} on unsigned tenders (RFA or ERFA). {len(ps)-sum(roster.values())} former players are retained for financial history only.\n\n",
+    '[Player cap table](#cap-by-player) | [Individual contract details](jaguars_contract_details.md) | [Expirations](#expiring-contracts-and-free-agent-classes)\n\n',
+    f"The inventory covers {sum(roster.values())} current players: {roster['signed']} under signed contracts (reserve/future contracts from March 11 and practice-squad contracts from August 31, 2014 included while in force) and {roster['tender']} on unsigned tenders (RFA or ERFA). {len(ps)-sum(roster.values())} former players stay listed for their contract history and remaining charges.\n\n",
     '## Reading the table\n\n',
     '**Each amount is the working cap charge for that contract year. A blank means the recorded deal does not cover that year.** Existing sourced schedules and adopted simulation amounts are both included. The individual notes identify their basis; the [completion research](../../library/2014_jaguars_contract_completion.md) explains the assumptions. These terms persist until a recorded amendment or correction changes them.\n\n',
-    'The twelve-year horizon stays visible for future tracking. Pending free agents and unexercised options create no new salary commitment. Each unsigned tender is included once. Scheduled cash means money payable if the player remains under the stated terms, not evidence that it has already been paid.\n\n',
-    '## League inputs and accounting basis\n\n',
-    table(['Input','2014 treatment'],[
+    'The table runs twelve years so later commitments stay in view. Pending free agents and unexercised options create no new salary commitment. Each unsigned tender is included once. Scheduled cash means money payable if the player remains under the stated terms, not evidence that it has already been paid.\n\n',
+    '## League cap rules\n\n',
+    table(['Rule',current],[
         ['League salary cap',dollars(d['league_caps'][current])],
         ['Reserve/future effective date','March 11, 2014'],
         ['Counting rule','Top 51 from the league-year opening, including retained bonus and other required charges'],
         ['2014 minimum salaries','$420,000 / $495,000 / $570,000 / $645,000 / $730,000 / $855,000 / $955,000 for 0 / 1 / 2 / 3 / 4-6 / 7-9 / 10+ credited seasons'],
-        ['Future league caps','Add each year’s published cap when that year is reached'],
-        ['Club accounting','Carryover, adjustments and actual cash receipts remain in the current cap worksheet']]),
+        ['Future league caps','Published as each league year opens'],
+        ['Club accounting','Carryover, adjustments and actual cash received are kept in the club’s cap worksheet']]),
     f"The [2011 agreement]({CBA}) controls the era’s minimums, bonus allocation, Top-51 treatment, options and cash-floor windows. [The original-contract research](../../library/2014_jaguars_original_contract_reconstruction.md) supplies the historical salaries and bonus schedules. The [club worksheet]({page_link(d['start_year'], 'offseason/current_cap_worksheet.md', 1)}) separates scheduled player commitments from adjusted club cap room.\n\n",
     '## Team cap summary, twelve years\n\n']
     active = [p for p in ps if not p.get('former_player')]
@@ -252,7 +335,7 @@ def render_main(d,years):
         ])
     dashboard += f'The [current worksheet]({page_link(d["start_year"], "offseason/current_cap_worksheet.md", 1)}) records the Top-51 calculation and workout charge. A league-cap difference is not certified available room. [Organization finances](organization_finances.md) contains coaching commitments.\n\n'
     if current == '2014':
-        # Preserve required bonus charges below Top 51; displace only their P5 salary.
+        # Preserve required bonus charges below Top 51; displace only their base (P5) salary.
         ranked = sorted(active, key=lambda p: -(working_charge(p['years'][current]) or 0))
         excluded_base = sum(p['years'][current]['base'] for p in ranked[51:])
         dead = sum(x['amount'] for x in d['dead_money'] if str(x['year']) == current)
@@ -260,7 +343,7 @@ def render_main(d,years):
         workout = d['team_years'][current]['opening_workout_charge']
         dashboard += table(['Working offseason reconciliation', current], [
             ['Recorded player obligations', dollars(working_total(ps,current))],
-            ['P5 salary displaced below Top 51', dollars(-excluded_base)],
+            ['Base salary displaced below Top 51', dollars(-excluded_base)],
             ['Separate dead money', dollars(dead)],
             ['Top-51 obligations before workout charge', dollars(top51)],
             ['Opening workout charge (recorded worksheet)', dollars(workout)],
@@ -288,7 +371,7 @@ def render_main(d,years):
           dollars(working_charge(p['years'][current])-p['years'][current]['base']-p['years'][current]['proration']),
           dollars(p['remaining_guarantees']) if p['remaining_guarantees'] is not None else 'Conditional on signing']
          for p in sorted(active,key=lambda p:-(working_charge(p['years'][current]) or 0))])
-    dashboard += 'Percentages use the published league cap because adjusted club cap is unresolved. Other cap preserves the recorded aggregate; unverified roster, option, workout and incentive components are not invented. Unpaid guarantees exclude bonuses already paid.\n\n'
+    dashboard += 'Percentages use the published league cap because adjusted club cap is unresolved. Other cap is the recorded total of the remaining charges; roster, option, workout and incentive amounts not yet verified are not broken out. Unpaid guarantees exclude bonuses already paid.\n\n'
     out.insert(2, dashboard)
     signed=[working_total(ps,y,statuses=('known','approximate')) for y in years]
     tender=[working_total(ps,y,statuses=('tender',)) for y in years]
@@ -343,10 +426,9 @@ def render_main(d,years):
         ['2017 option window','Aaron Donald and Joel Bitonio','2018 fifth-year options remain unexercised and unbooked; exercise decisions follow the 2016 season']]))
     out.append('## Expiring contracts and free-agent classes\n\n')
     out.append(table(['Last contract year','Players'],[[year,', '.join(p['name'] for p in ps if p['contract_ends']==year and p.get('control')!='traded')] for year in sorted({p['contract_ends'] for p in ps if p['contract_ends'] is not None and p.get('control')!='traded'})]))
-    out.append('“Through” describes the final league year of the recorded contract or tender. The 2013 contracts not retained expired at the March 11, 2014 league-year opening; those players are retained only as former-player history. Traded players leave these classes. A player’s class at a later expiry follows his actual accrued service; it does not extend the deal.\n\n## Scheduled cash\n\n')
+    out.append('The last contract year is the final league year of the recorded contract or tender. The 2013 contracts not retained expired when the league year opened on March 11, 2014; those players are no longer with the club. Traded players leave these classes. A player’s class at a later expiry follows his actual accrued service; it does not extend the deal.\n\n## Scheduled cash\n\n')
     out.append(table(['Item']+years,[['Signed contracts and futures']+[dollars(working_total(ps,y,'cash',('known','approximate'))) for y in years],['Unsigned tender, conditional on signing']+[dollars(working_total(ps,y,'cash',('tender',))) for y in years],['Total scheduled player cash']+[dollars(working_total(ps,y,'cash')) for y in years]]))
-    out.append('Cash counts salary and bonuses scheduled in that contract year. Bonus proration is not another cash payment. Actual paid cash remains unverified; the 2013–2016 and 2017–2020 cash-floor windows require complete cash ledgers.\n\n## Cap scenarios\n\nNo scenario is active. If requested, show only a clearly labeled cap calculation here, separate from recorded totals. Trade packages, player recommendations and hypothetical replacement contracts belong in their existing decision records and never feed these totals.\n\n')
-    out.append('## Maintenance\n\nUpdate the dated transaction record, current contract owner and all remaining annual inputs together, then regenerate the annual Record.md index. A new contract replaces affected existing years; a release retains surviving bonus and guarantee charges. Preserve completed-year history. Run the generator and its check mode after every financial change. [Maintenance instructions](README.md) give the editable input path and commands.\n')
+    out.append('Cash counts salary and bonuses scheduled in that contract year. Bonus proration is not another cash payment. Actual paid cash remains unverified; the 2013–2016 and 2017–2020 cash-floor windows require complete cash ledgers.\n\n## Cap scenarios\n\nNo cap scenario is active. Trade packages, player recommendations and possible replacement contracts are not counted in these totals.\n')
     return ''.join(out)
 
 def render_details(d,years):
@@ -373,7 +455,7 @@ def render_details(d,years):
         elif p['control'] in {'pending','retired'}:out.append('No new playing contract is recorded for 2014 or later.\n\n')
         if p['name']=='Lane Johnson':out.append('The 2017 fifth-year option is unexercised and is excluded from committed years. Review the exercise decision in the 2016 option window.\n\n')
         elif p['name']=='Justin Blackmon':out.append('The contract, its deferred bonus cash and the 2016 fifth-year option left with the March 31, 2014 trade to Indianapolis. Only the accelerated bonus allocation stays with Jacksonville, once, in the dead-money ledger.\n\n')
-        elif p.get('draft_pick'):out.append('Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.\n\n')
+        elif p.get('draft_pick'):out.append('Any future proven-performance escalator requires his actual qualifying participation for Jacksonville.\n\n')
         out.append('### Contract notes\n\n'+presentation_note(p['source_note'],d['current_contract_table']).rstrip('.')+'.\n\n')
 
         assumptions=list(dict.fromkeys(r['estimate_note'] for r in p['years'].values() if r.get('estimate_note')))
@@ -383,40 +465,152 @@ def render_details(d,years):
     return ''.join(out).rstrip()+'\n'
 
 
+def organization_staff(root, years, on=None):
+    """[(record, contract as it stands on day ``on``, {year: salary})] of every coach whose
+    contract schedules salary in the horizon: the head coach first, then by first-year salary and
+    name. ``on`` keeps an amendment dated after it off the page (None: every amendment). A coach
+    still on a staff by his record whose latest contract there schedules no salary fails, so a
+    broken record cannot drop him from the payroll."""
+    from runtime import coaches
+    rows, missing = [], []
+    for record in coaches.load_all(root).values():
+        for signed in coaches.entries(record, 'contract_signed'):
+            terms = coaches.contract(record, signed['contract'], on)
+            salary = {str(y): v for y, v in coaches.scheduled(terms).items() if str(y) in years}
+            if salary:
+                rows.append((record, terms, salary))
+        for hire in coaches.entries(record, 'hired'):
+            club = hire.get('club')
+            if hire is coaches.hired(record, club) and coaches.employed(record, club):
+                terms = coaches.current_contract(record, club, on)
+                if terms is None or not coaches.scheduled(terms):
+                    missing.append('%s (%s)' % (record.get('name'), club))
+    if missing:
+        raise ValueError('Coaches on staff without a contract that schedules salary: %s; reconcile the coach '
+                         'records' % ', '.join(missing))
+    def order(row):
+        record, terms, salary = row
+        return (terms.get('job') != 'Head coach', -max(salary.values()), record['name'])
+    return sorted(rows, key=order)
+
+
+def organization_guarantee(terms):
+    from runtime import coaches
+    text = coaches.guarantee_text(terms)
+    if not terms.get('offset') or text == 'Not guaranteed':
+        return text
+    first, _, rest = text.partition(';')
+    return first + ', with offset' + (';' + rest if rest else '')
+
+
 def render_organization(data, years, root):
-    staff = SeasonPaths(2014, root).record('coaching_staff.md')
-    rows = []
-    totals_by_year = {y: 0 for y in years}
-    for cells in md_rows(staff.read_text()):
-        if len(cells) != 8 or not cells[0].startswith('**') or cells[0] == '**Alan Lowry**':
-            continue
-        name = re.sub(r'\*\*', '', cells[0]).split(' (added')[0]
-        values = {str(y): exact_amount(cells[y-2010].replace('**','')) for y in (2014,2015)}
-        for y in years:
-            totals_by_year[y] += values.get(y) or 0
-        rows.append([name, cells[1]] + [dollars(values.get(y)) for y in years] + [cells[7]])
-    if len(rows) != 12 or totals_by_year['2014'] != 7700000 or totals_by_year['2015'] != 3650000:
-        raise ValueError('Staff contract layout or commitments changed; reconcile organization renderer')
-    head = ['Alex Stone','Head coach'] + ['Unspecified' if int(y) <= 2016 else '' for y in years] + ['2013–2016 fully guaranteed; compensation not supplied']
-    return ('# Jacksonville organization finances\n\n'
-            '[Player cap](jaguars_cap.md) | [Finance index](README.md)\n\n'
-            f"As of {display_date(data['as_of'])}. Whole US dollars. Generated from the executed staff register; no second editable salary ledger.\n\n"
-            '## Coaching contracts\n\n' + table(['Coach','Role']+years+['Guarantee'],[head]+rows) +
-            '## Payroll and open amounts\n\n' + table(['Measure']+years,[['Scheduled assistant salaries']+[dollars(v) if v else '' for v in totals_by_year.values()]]) +
-            'The head-coach salary, total organization payroll, ownership budget, Caldwell compensation, other front-office compensation and actual cash paid remain unspecified. The assistant subtotal is not an available hiring budget. Coaching pay is an organization expense and never enters the player salary cap.\n\n'
-            '## Contract terms and history\n\n'
-            '[Stone’s accepted agreement]('+page_link(2013, 'offseason/head_coach_contract.md', 1)+') retains the four-year full guarantee; this view does not supply missing salary, offsets or buyout clauses. '
-            '[The staff register]('+page_link(data['start_year'], 'coaching_staff.md', 1)+') owns assistant terms, offsets, termination treatment and authority. Lowry’s $625,000 scheduled 2014 salary ceased on his January 12 departure; it is not counted. Westhoff replaced him February 11 at $750,000 in each of 2014 and 2015; only 2014 is guaranteed. '
-            'The other executed assistant salaries retain their recorded guarantee and offset terms. Scheduled pay is distinct from cash already disbursed and remaining unpaid liability.\n\n'
-            '## Renewal and handoff\n\n'
-            'Review the nine position/assistant contracts ending after 2014, the coordinator contracts ending after 2015 and Stone’s term ending after 2016 at the relevant exit reviews. No renewal, raise, departure or replacement is assumed. Preserve earned pay, remaining guarantees and verified offsets when an actual change occurs; record it in the existing staff changes owner and regenerate this page.\n')
+    """The coaching payroll, read from the coach records (data/people/coaches): every contract
+    scheduling salary in the horizon, the payroll by season, the guarantee, the basis of each
+    completed term and the contracts ending. The page is dated by its latest contract change,
+    never the master date; it shows each contract as it stands on the master date, so an
+    amendment dated later never applies (repository validation refuses one, so the page does not
+    move with the date alone). Links are written against the page's first home,
+    career/finances/, and rebased by render()."""
+    import os
+    from runtime import coaches
+    from runtime.season_layout import STONE_PAGES
+    from runtime.events import repository_map
+    root = Path(root)
+    finances = root / 'career' / 'finances'
+    def here(path):
+        return os.path.relpath(path, finances).replace(os.sep, '/')
+    from runtime.player_bios import master_date
+    on = master_date(root)
+    staff = organization_staff(root, years, on)
+    if not staff:
+        raise ValueError('No coach contract schedules salary in the horizon; reconcile the coach records')
+    season = int(repository_map(root)['active_season'])
+    staff_page = SeasonPaths(season, root).staff_page
+    rows, head, assistants, ending = [], {y: 0 for y in years}, {y: 0 for y in years}, {}
+    for record, terms, salary in staff:
+        rows.append([record['name'], terms.get('job')] + [dollars(salary.get(y)) for y in years]
+                    + [organization_guarantee(terms)])
+        bucket = head if terms.get('job') == 'Head coach' else assistants
+        for y, v in salary.items():
+            bucket[y] += v
+        ending.setdefault(coaches.through_season(terms), []).append(record['name'])
+    def money(values):
+        return [dollars(v) if v else '' for v in values]
+    payroll = [['Head coach'] + money(head.values()), ['Assistant coaches'] + money(assistants.values()),
+               ['Total'] + money(head[y] + assistants[y] for y in years)]
+    departed = []
+    for record in coaches.load_all(root).values():
+        for leave in coaches.entries(record, 'departed'):
+            terms = coaches.current_contract(record, leave.get('club'), on)
+            unpaid = {s: v for s, v in (terms.get('salary') or {}).items() if int(s) > leave['last_season']}
+            if any(s in years for s in unpaid):
+                departed.append('%s left on %s; his %s salary of %s ended with the move and is not counted.' % (
+                    record['name'], coaches.date_text(leave), ' and '.join(sorted(unpaid)),
+                    ' and '.join(dollars(v) for _, v in sorted(unpaid.items()))))
+    names = {'seasons': 'length', 'end': 'end date', 'salary': 'salary', 'guaranteed': 'guarantee',
+             'offset': 'offset', 'dismissal': 'dismissal terms', 'signing_bonus': 'signing bonus', 'options': 'options'}
+    def listed(items):
+        items = list(items)
+        return ', '.join(items[:-1]) + ' and ' + items[-1] if len(items) > 1 else items[0]
+    completed = []
+    for record, terms, _ in staff:
+        groups = coaches.completed(terms)
+        if groups:
+            (source, keys), rest = groups[0], groups[1:]
+            line = "%s's %s %s completed from %s" % (record['name'], listed(names[k] for k in keys),
+                                                     'were' if len(keys) > 1 else 'was', source)
+            for source, keys in rest:
+                line += ', and his %s from %s' % (listed(names[k] for k in keys), source)
+            completed.append(line + '; the rest is as signed')
+    # The page is dated by the latest contract fact it shows (a signing, an amendment by its
+    # in-world date, in force on the master date, or a departure), so it changes only when a
+    # coach contract does.
+    shown = [e for record, _, _ in staff for e in coaches.entries(record)
+             if e['kind'] == 'contract_signed' or (e['kind'] == 'contract_amended'
+                                                   and coaches.day(e['in_world']) <= on)]
+    shown += [e for record in coaches.load_all(root).values() for e in coaches.entries(record, 'departed')
+              if any(str(s) in years for s in (coaches.current_contract(record, e.get('club'), on) or {}).get('salary') or {}
+                     if int(s) > e['last_season'])]
+    latest = max(shown, key=lambda e: coaches.day(coaches.when(e)))
+    out = ('# Coaching payroll\n\n'
+           '[Player cap](salary_cap/cap_tracker.md) · [Finances](README.md) · [Coaching staff](' + here(staff_page) + ')\n\n'
+           'Current through the latest contract change, ' + coaches.date_text(latest) + '. Whole US dollars.\n\n'
+           '## Coaching contracts\n\n' + table(['Coach', 'Job'] + years + ['Guarantee'], rows) +
+           '## Payroll by season\n\n' + table(['Measure'] + years, payroll) +
+           'Coaching pay is a club expense and never counts against the player salary cap. The assistant total is '
+           'scheduled salary, not a hiring budget.\n\n'
+           '## Contract terms\n\n')
+    assistants_terms = [(record, terms) for record, terms, _ in staff if terms.get('job') != 'Head coach']
+    if assistants_terms:
+        open_years = [(record['name'], coaches.open_seasons(terms)) for record, terms in assistants_terms
+                      if coaches.open_seasons(terms)]
+        line = ('Assistant contracts: if the club dismisses a coach without cause, the guaranteed salary for the rest '
+                'of his term is still owed. ')
+        if not open_years:
+            line += 'Every assistant\'s whole term is guaranteed.'
+        else:
+            line += 'Every assistant\'s salary is guaranteed for his whole term except %s, which %s not.' % (
+                listed('%s\'s %s salary' % (name, coaches.years_text(seasons)) for name, seasons in open_years),
+                'is' if len(open_years) == 1 and len(open_years[0][1]) == 1 else 'are')
+        out += line + '\n\n'
+    offsets = sorted({terms['offset'] for _, terms in assistants_terms if terms.get('offset')})
+    for text in offsets:
+        out += 'Offset: ' + text[:1].lower() + text[1:].rstrip('.') + '.\n\n'
+    for line in departed:
+        out += line + '\n\n'
+    for line in completed:
+        out += '%s ([Contract and jobs](%s)).\n\n' % (line, here(root / STONE_PAGES / 'Contract_and_Jobs.md'))
+    out += '## Contracts ending\n\n' + table(['After the season', 'Coaches'],
+                                              [[s, ', '.join(names)] for s, names in sorted(ending.items())])
+    return out.rstrip() + '\n'
 
 def render(data,root=ROOT):
     from runtime.season_layout import rebase_markdown
     years=validate(data,root)
     outputs = {
-        OUTPUT: rebase_markdown(render_main(data,years), 'career/finances/jaguars_cap.md', OUTPUT),
-        DETAILS: rebase_markdown(render_details(data,years), 'career/finances/jaguars_contract_details.md', DETAILS),
+        OUTPUT: rebase_markdown(reader_words(render_main(data,years)), 'career/finances/jaguars_cap.md', OUTPUT),
+        DETAILS: rebase_markdown(reader_words(render_details(data,years)), 'career/finances/jaguars_contract_details.md',
+                                 DETAILS),
         ORGANIZATION: rebase_markdown(render_organization(data,years,root), 'career/finances/organization_finances.md', ORGANIZATION),
     }
     # Focused reading pages come from the same calculated view, never from a
@@ -432,7 +626,7 @@ def render(data,root=ROOT):
     for relative, (title, headings) in pages.items():
         target = Path('career/finances') / relative
         content = f'# {title}\n\n[Finances](../README.md) · [Full cap table](../salary_cap/cap_tracker.md)\n\n'
-        content += f"As of {display_date(data['as_of'])}. Generated from the same financial inputs as the full cap table.\n\n"
+        content += f"As of {display_date(data['as_of'])}.\n\n"
         for heading in headings:
             content += rebase_markdown('## '+heading+'\n'+sections[heading], OUTPUT, target)
         outputs[target] = content.rstrip()+'\n'
