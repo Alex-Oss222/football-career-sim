@@ -257,7 +257,7 @@ def calendar_page(ctx):
     remainder = remainder.replace("branch camp report", "camp report")
     fixture_page = ctx.paths.record("schedule/fixtures.md")
     fixture_link = _link(page, fixture_page, "released fixtures")
-    remainder = re.sub(r"\\[historical fixtures\\]\\([^)]+\\.json\\)", lambda _: fixture_link, remainder)
+    remainder = re.sub(r"\[historical fixtures\]\([^)]+\.json\)", lambda _: fixture_link, remainder)
     month = ctx.master.month
     weeks = month_calendar.monthcalendar(ctx.master.year, month)
     games = {date.fromisoformat(g["date"]): g for g in ctx.games}
