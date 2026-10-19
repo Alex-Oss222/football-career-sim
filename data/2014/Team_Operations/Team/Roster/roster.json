@@ -7,7 +7,7 @@
  },
  "practice_squad_places": 10,
  "active_limit": 53,
- "about": "Jacksonville's roster: every player the club controls (the active roster, the reserve lists and the practice squad), his position, his status and the club's current medical communication on his availability, and the players who left the club's control this season with how control ended. Transcribed with rebuild step 3b (October 19, 2026) from the roster page as it stood at the close of 2014 Week 5 (October 5, 2014), every value as written there; the page is now built from this record. An availability value keeps its link to the medical record that communicated it, relative to the roster page.",
+ "about": "Jacksonville's roster: every player the club controls (the active roster, the reserve lists and the practice squad), his position, his status and the club's current medical communication on his availability, and the players who left the club's control this season with how control ended. Transcribed with rebuild step 3b (October 19, 2026) from the roster page as it stood at the close of 2014 Week 5 (October 5, 2014), every value as written there; the page is now built from this record. An availability value keeps its link to the medical record that communicated it, relative to the roster page. Two values were later reworded in football terms (Marcel Jensen's availability and Jeris Pendleton's departure); each keeps its original words in as_written, which is never rendered.",
  "field_sources": {
   "status": "the final roster cuts of August 30 and 31, 2014 and the September 8, 2014 transactions (each player's sources.status)",
   "availability": "the medical history and incident records (each player's sources.availability); the practice squad carries none",
@@ -189,10 +189,13 @@
    "list": "active",
    "group": "Tight ends",
    "status": "Active 53 (Rookie, undrafted; signed May 10, 2014)",
-   "availability": "No communicated restriction (released August 28, 2014, his projected date, from the August 22 head/neck hold; reassessed August 24 with no change; inactive August 28 under the frozen plan; [medical history](../../Medical/medical_history.md#august-28-preseason-game-4-injuries))",
+   "availability": "No communicated restriction (released August 28, 2014, his projected date, from the August 22 head/neck hold; reassessed August 24 with no change; inactive August 28 under the game plan; [medical history](../../Medical/medical_history.md#august-28-preseason-game-4-injuries))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+   },
+   "as_written": {
+    "availability": "No communicated restriction (released August 28, 2014, his projected date, from the August 22 head/neck hold; reassessed August 24 with no change; inactive August 28 under the frozen plan; [medical history](../../Medical/medical_history.md#august-28-preseason-game-4-injuries))"
    }
   },
   {
@@ -846,9 +849,12 @@
    "position": "DT",
    "heading": "August 30 and 31, 2014: the reduction to 53",
    "year": 2014,
-   "how_control_ended": "Waived August 30 while under the August 28 instruction (out, projected return September 1; reassessed August 29 with no change); cleared August 31. The packet directed an ordinary waiver; the library records no rule on waiving a player under a short instruction, and the waived/injured designation was not applied (open item)",
+   "how_control_ended": "Waived August 30 while under the August 28 instruction (out, projected return September 1; reassessed August 29 with no change); cleared August 31. The cutdown plan directed an ordinary waiver; no league rule on waiving a player under a short medical instruction is on file, and the waived/injured designation was not applied (open item)",
    "disposition": "Unplaced free agent",
-   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+   "as_written": {
+    "how_control_ended": "Waived August 30 while under the August 28 instruction (out, projected return September 1; reassessed August 29 with no change); cleared August 31. The packet directed an ordinary waiver; the library records no rule on waiving a player under a short instruction, and the waived/injured designation was not applied (open item)"
+   }
   },
   {
    "name": "D'Anthony Smith",

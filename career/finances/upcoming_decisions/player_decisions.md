@@ -2,7 +2,7 @@
 
 [Finances](../README.md) · [Full cap table](../salary_cap/cap_tracker.md)
 
-As of September 8, 2014. Generated from the same financial inputs as the full cap table.
+As of September 8, 2014.
 
 ## Decision calendar
 
@@ -27,4 +27,4 @@ As of September 8, 2014. Generated from the same financial inputs as the full ca
 | 2017 | Sen'Derrick Marks, Alterraun Verner, Andrew Hawkins, Aaron Donald, Joel Bitonio, Davante Adams, Trai Turner, Telvin Smith, Corey Linsley, Charles Leno Jr., Malcolm Butler |
 | 2018 | Eugene Monroe, Aqib Talib |
 
-“Through” describes the final league year of the recorded contract or tender. The 2013 contracts not retained expired at the March 11, 2014 league-year opening; those players are retained only as former-player history. Traded players leave these classes. A player’s class at a later expiry follows his actual accrued service; it does not extend the deal.
+The last contract year is the final league year of the recorded contract or tender. The 2013 contracts not retained expired when the league year opened on March 11, 2014; those players are no longer with the club. Traded players leave these classes. A player’s class at a later expiry follows his actual accrued service; it does not extend the deal.

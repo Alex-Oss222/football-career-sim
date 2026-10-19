@@ -44,8 +44,8 @@
   },
   "carry_forward": {
     "record": "career/2014/Record.md",
-    "roster": "career/2014/Team_Operations/Team/Roster/roster.md",
-    "staff": "career/2014/Team_Operations/Staff/coaching_staff.md",
+    "roster": "data/2014/Team_Operations/Team/Roster/roster.json",
+    "staff": "data/people/coaches",
     "depth_chart": "data/2014/Team_Operations/Team/Depth_Chart/working_depth_chart.json",
     "cap": "career/2014/Team_Operations/Finances/salary_cap/cap_worksheet.md",
     "calendar": "career/2014/Calendar.md",

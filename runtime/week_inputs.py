@@ -304,6 +304,7 @@ def controlled_active(season=2013, roster_path=None):
     if roster_record.is_record(path):
         return [(row["name"], row["availability"]) for row in roster_record.load(path)["players"]
                 if re.match(r"Active 53(?:\s*\(|$)", row["status"])]
+    names = []
     for line in path.read_text(encoding="utf-8").splitlines():
         if not line.startswith("|"):
             status_col = None
@@ -315,9 +316,11 @@ def controlled_active(season=2013, roster_path=None):
             continue
         if status_col is None or set(cells[0]) <= {"-", ":"}:
             continue
+        names.append(cells[0])
         # "Active 53" alone or with a dated parenthetical ("Active 53 (signed August 31, 2014)").
         if re.match(r"Active 53(?:\s*\(|$)", cells[status_col]):
             rows.append((cells[0], cells[avail_col] if avail_col is not None else AVAILABLE_TEXT))
+    roster_record.refuse_built_page(path, names)
     return rows
 
 

@@ -2,7 +2,7 @@
 
 As of September 8, 2014. Whole US dollars.
 
-[Player cap table](#cap-by-player) | [Individual contract details](../player_contracts/contract_details.md) | [Expirations](#expiring-contracts-and-free-agent-classes) | [Updating this tracker](../README.md)
+[Player cap table](#cap-by-player) | [Individual contract details](../player_contracts/contract_details.md) | [Expirations](#expiring-contracts-and-free-agent-classes)
 
 ## Current cap at a glance
 
@@ -103,26 +103,26 @@ The rollover is calculated step by step in the [cap worksheet](../../2014/Team_O
 | [Tyler Shatley](../player_contracts/contract_details.md#tyler-shatley) | C | 23 | Signed | $107,100 | 0.08% | $107,100 | $0 | $0 | $0 |
 | [Jackson Jeffcoat](../player_contracts/contract_details.md#jackson-jeffcoat) | EDGE | 23 | Signed | $107,100 | 0.08% | $107,100 | $0 | $0 | $0 |
 
-Percentages use the published league cap because adjusted club cap is unresolved. Other cap preserves the recorded aggregate; unverified roster, option, workout and incentive components are not invented. Unpaid guarantees exclude bonuses already paid.
+Percentages use the published league cap because adjusted club cap is unresolved. Other cap is the recorded total of the remaining charges; roster, option, workout and incentive amounts not yet verified are not broken out. Unpaid guarantees exclude bonuses already paid.
 
-The inventory covers 64 current players: 64 under signed contracts (reserve/future contracts from March 11 and practice-squad contracts from August 31, 2014 included while in force) and 0 on unsigned tenders (RFA or ERFA). 26 former players are retained for financial history only.
+The inventory covers 64 current players: 64 under signed contracts (reserve/future contracts from March 11 and practice-squad contracts from August 31, 2014 included while in force) and 0 on unsigned tenders (RFA or ERFA). 26 former players stay listed for their contract history and remaining charges.
 
 ## Reading the table
 
 **Each amount is the working cap charge for that contract year. A blank means the recorded deal does not cover that year.** Existing sourced schedules and adopted reconstructed amounts are both included. The individual notes identify their basis; the [completion research](../../../library/2014_jaguars_contract_completion.md) explains the assumptions. These terms persist until a recorded amendment or correction changes them.
 
-The twelve-year horizon stays visible for future tracking. Pending free agents and unexercised options create no new salary commitment. Each unsigned tender is included once. Scheduled cash means money payable if the player remains under the stated terms, not evidence that it has already been paid.
+The table runs twelve years so later commitments stay in view. Pending free agents and unexercised options create no new salary commitment. Each unsigned tender is included once. Scheduled cash means money payable if the player remains under the stated terms, not evidence that it has already been paid.
 
-## League inputs and accounting basis
+## League cap rules
 
-| Input | 2014 treatment |
+| Rule | 2014 |
 |---|---|
 | League salary cap | $133,000,000 |
 | Reserve/future effective date | March 11, 2014 |
 | Counting rule | Top 51 from the league-year opening, including retained bonus and other required charges |
 | 2014 minimum salaries | $420,000 / $495,000 / $570,000 / $645,000 / $730,000 / $855,000 / $955,000 for 0 / 1 / 2 / 3 / 4-6 / 7-9 / 10+ credited seasons |
-| Future league caps | Add each year’s published cap when that year is reached |
-| Club accounting | Carryover, adjustments and actual cash received remain in the current cap worksheet |
+| Future league caps | Published as each league year opens |
+| Club accounting | Carryover, adjustments and actual cash received are kept in the club’s cap worksheet |
 
 The [2011 agreement](https://nflps.org/wp-content/uploads/2012/05/collective-bargaining-agreement-2011-2020.pdf) controls the era’s minimums, bonus allocation, Top-51 treatment, options and cash-floor windows. [The original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md) supplies the historical salaries and bonus schedules. The [club worksheet](../../2014/Team_Operations/Finances/salary_cap/cap_worksheet.md) separates scheduled player commitments from adjusted club cap room.
 
@@ -633,9 +633,9 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | Player | Year | Charge | Basis |
 |---|---|---|---|
 | Tyler Bray | 2014 | $51,675 | Original $68,900 rookie bonus less $17,225 charged in 2013; August 31 waiver shifts $51,675 to 2014. Separate from the new futures salary. |
-| Brandon Marshall | 2014 | $0 | The original 2012 rookie contract ended on a 2012 waiver, before divergence. Future bonus accelerated into 2013, not 2014. Replacement active-roster deal modeled without a new bonus. |
+| Brandon Marshall | 2014 | $0 | The original 2012 rookie contract ended on a 2012 waiver. Future bonus accelerated into 2013, not 2014. Replacement active-roster deal recorded without a new bonus. |
 | Austen Lane | 2014 | $0 | Original four-year 2010 contract ends in 2013. The Jacksonville August 2013 waiver leaves no 2014 bonus year. |
-| Isaiah Stanback | 2014 | $0 | December 2012 practice-squad promotion modeled as a short minimum contract with no new bonus. August 2013 waiver leaves no future bonus charge. |
+| Isaiah Stanback | 2014 | $0 | December 2012 practice-squad promotion treated as a short minimum contract with no new bonus. August 2013 waiver leaves no future bonus charge. |
 | Uche Nwaneri | 2014 | $2,189,000 | Pre-June 1 trade to Arizona, March 20, 2014: the 2014 and 2015 bonus allocations of $1,094,500 each accelerate into 2014. His $1,000,000 March 25 roster bonus passes to Arizona. |
 | Tyson Alualu | 2014 | $1,542,500 | Pre-June 1 trade to Houston, March 24, 2014: the final $1,542,500 original bonus allocation stays with Jacksonville in 2014. Houston takes his $2,571,500 base and $150,000 other components. |
 | Jason Babin | 2014 | $0 | Trade to Miami, March 24, 2014: no Jacksonville bonus proration on the claimed Philadelphia contract, so no dead money. Miami takes the 2014 and 2015 schedules. |
@@ -698,7 +698,7 @@ All nine selections were exercised May 8 to 10 and signed May 11, 2014; no 2014 
 | 2017 | Sen'Derrick Marks, Alterraun Verner, Andrew Hawkins, Aaron Donald, Joel Bitonio, Davante Adams, Trai Turner, Telvin Smith, Corey Linsley, Charles Leno Jr., Malcolm Butler |
 | 2018 | Eugene Monroe, Aqib Talib |
 
-“Through” describes the final league year of the recorded contract or tender. The 2013 contracts not retained expired at the March 11, 2014 league-year opening; those players are retained only as former-player history. Traded players leave these classes. A player’s class at a later expiry follows his actual accrued service; it does not extend the deal.
+The last contract year is the final league year of the recorded contract or tender. The 2013 contracts not retained expired when the league year opened on March 11, 2014; those players are no longer with the club. Traded players leave these classes. A player’s class at a later expiry follows his actual accrued service; it does not extend the deal.
 
 ## Scheduled cash
 
@@ -722,8 +722,4 @@ Cash counts salary and bonuses scheduled in that contract year. Bonus proration 
 
 ## Cap scenarios
 
-No scenario is active. If requested, show only a clearly labeled cap calculation here, separate from recorded totals. Trade packages, player recommendations and hypothetical replacement contracts belong in their existing decision records and never feed these totals.
-
-## Maintenance
-
-Update the dated transaction record, current contract owner and all remaining annual inputs together, then regenerate the annual Record.md index. A new contract replaces affected existing years; a release retains surviving bonus and guarantee charges. Preserve completed-year history. Run the generator and its check mode after every financial change. [Maintenance instructions](../README.md) give the editable input path and commands.
+No cap scenario is active. Trade packages, player recommendations and possible replacement contracts are not counted in these totals.

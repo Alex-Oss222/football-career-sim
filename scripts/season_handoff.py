@@ -11,14 +11,16 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from runtime import decision_queue
 from runtime.seasons import SeasonPaths
-from runtime.season_layout import PLAYER_FINANCES, opening_guides
+from runtime.season_layout import COACH_RECORDS, PLAYER_FINANCES, opening_guides
 from runtime.events import EVENT_META, resolve_path
 
 TEAM_GATES = ('team_season_closed', 'exit_interviews', 'roster_and_medical',
               'player_contracts_and_cap', 'staff_contracts', 'draft_assets',
               'development_and_open_decisions')
 HISTORY_GATES = ('league_statistics', 'awards_and_history')
-DIRECTORY_SOURCES = {'player_cards', 'final_assessments'}
+# The staff carry is the coach records folder (data/people/coaches): permanent records that grow by
+# dated entries across seasons, so they carry into the successor without a copy.
+DIRECTORY_SOURCES = {'player_cards', 'final_assessments', 'staff'}
 REQUIRED_CARRY_SOURCES = {'roster', 'staff', 'depth_chart', 'cap', 'calendar',
                           'record', 'player_ages', 'player_contracts', 'contract_status',
                           'player_finances', 'organization_finances', 'draft_assets',
@@ -108,7 +110,7 @@ def evidence_errors(root, item, label, required=()):
     for source in evidence:
         path = safe(root, source['path'])
         reviewed.add(path)
-        if not path.is_file() or digest(path) != source.get('sha256'):
+        if not path.exists() or digest(path) != source.get('sha256'):
             errors.append('Missing or changed review evidence: '+label+' / '+source['path'])
     for source in required:
         if safe(root, source) not in reviewed:
@@ -159,7 +161,9 @@ def prepare(root, year):
     sources.pop('background_depth', None)  # Legacy roster research never becomes legal successor input.
     paths = SeasonPaths(year, root)
     relative = lambda name: paths.record(name).relative_to(root).as_posix()
-    sources.update(roster=relative('roster.md'),  # the page layout the season-close tools read (step 6)
+    # The roster record (runtime/roster.py; the 2013 roster page for 2013) and the coach records own
+    # the roster and the staff; the roster page and the staff register are built or frozen views.
+    sources.update(roster=paths.roster.relative_to(root).as_posix(), staff=COACH_RECORDS,
                    player_contracts=relative('offseason/contract_table.md'),
                    contract_status=relative('offseason/contract_status_register.md'),
                    player_finances=PLAYER_FINANCES,
@@ -244,20 +248,23 @@ def rebase_links(text, source, target):
 
 
 def opening_gate_sources(root, year):
+    """The owners each opening reconciliation must review: the successor's roster record, the coach
+    records and the current-job record for the staff and authority, and the season's other owners."""
     paths = SeasonPaths(year, root)
+    root = Path(root)
     relatives = {
-        'roster_and_roles': ('roster.md', 'offseason/depth_chart_working.json'),
+        'roster_and_roles': (paths.roster, 'offseason/depth_chart_working.json'),
         'player_contracts_and_cap': ('offseason/contract_table.md',
                                      'offseason/contract_status_register.md',
                                      'offseason/current_cap_worksheet.md'),
         'medical': ('medical/current_injury_report.md',),
-        'staff_and_authority': ('coaching_staff.md',),
+        'staff_and_authority': (root/COACH_RECORDS, root/'state/current_job.json'),
         'draft_assets': ('draft/pick_ownership.json',),
         'development_and_film': ('offseason/player_development/roster_profiles.md',
                                  'offseason/phase_plan_decisions.md'),
         'calendar_and_era': ('calendar.md',),
     }
-    return {name: [paths.record(p).relative_to(root).as_posix() for p in files]
+    return {name: [(p if isinstance(p, Path) else paths.record(p)).relative_to(root).as_posix() for p in files]
             for name, files in relatives.items()}
 
 
@@ -312,13 +319,12 @@ def opening_errors(root, data):
             errors.extend(evidence_errors(root, gate, 'opening '+name, required[name]))
     paths = SeasonPaths(year, root)
     errors.extend(unplayed_opening_errors(paths))
-    # The season-close tools still read the roster page layout (docs/rebuild_plan.md, carried to
-    # step 6); from 2014 the roster record (runtime/roster.py) owns club control.
-    if not paths.roster_page.is_file():
+    # The successor's roster record (runtime/roster.py) owns club control; the roster page is built.
+    if not paths.roster.is_file():
         return errors+['Opening roster is missing']
     from scripts.build_player_progression_roster import parse_current_roster
     from scripts.build_annual_player_sheets import slugify
-    _, _, players = parse_current_roster(paths.roster_page)
+    _, _, players = parse_current_roster(paths.roster)
     expected = {paths.record('player_profiles')/(slugify(p.player)+'.md'): p
                 for p in players}
     assessments = data.get('opening_assessments', [])
@@ -454,8 +460,9 @@ def stage(root, data):
     unplayed = unplayed_opening_errors(paths)
     if unplayed:
         raise ValueError('; '.join(unplayed))
-    copies = {'roster':'roster.md', 'staff':'coaching_staff.md',
-              'depth_chart':'offseason/depth_chart_working.json',
+    # The roster opens from its record and the staff from the coach records (which need no copy);
+    # the built roster page and the frozen staff register are never copied.
+    copies = {'depth_chart':'offseason/depth_chart_working.json',
               'player_contracts':'offseason/contract_table.md',
               'contract_status':'offseason/contract_status_register.md',
               'cap':'offseason/current_cap_worksheet.md',
@@ -470,11 +477,11 @@ def stage(root, data):
             text = EVENT_META.sub('', text)
             text = (f'> Opening carry-forward from {year}; dates and financial figures retain their source checkpoint until reconciled for {nxt}. No renewal, clearance or role award is implied.\n\n' + rebase_links(text, source, target))
         writes[target] = text
-    # From 2014 the roster record owns club control (runtime/roster.py); it opens the successor
-    # unchanged beside the page the season-close tools still read (rebuild step 6 moves them).
-    source_record = SeasonPaths(year, root).roster
-    if source_record.suffix == '.json' and source_record.is_file() and paths.roster.suffix == '.json':
-        writes[paths.roster] = source_record.read_text()
+    # The roster record (runtime/roster.py) opens the successor unchanged; its page is built from it.
+    source_roster = safe(root, data['carry_forward']['roster'])
+    if source_roster.suffix != '.json' or paths.roster.suffix != '.json':
+        raise ValueError('The roster carries forward as its record, not a page: '+data['carry_forward']['roster'])
+    writes[paths.roster] = source_roster.read_text()
     if 'player_cards' in data['carry_forward']:
         cards = safe(root, data['carry_forward']['player_cards'])
         current_cards = None

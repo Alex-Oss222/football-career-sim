@@ -32,14 +32,30 @@ LISTS = ("active", "reserve", "practice_squad")
 KEYS = ("team", "season", "as_of", "practice_squad_places", "active_limit", "about", "field_sources", "players",
         "departures")
 PLAYER_KEYS = ("name", "position", "list", "group", "status", "availability", "sources")
+# A value reworded for the page keeps the exact words it was first written in, under "as_written"
+# ({field: original text}); it is never rendered.
+PLAYER_OPTIONAL = ("as_written",)
 DEPARTURE_KEYS = ("name", "position", "heading", "year", "how_control_ended", "source")
-DEPARTURE_OPTIONAL = ("disposition", "outstanding", "control_began")
+DEPARTURE_OPTIONAL = ("disposition", "outstanding", "control_began", "as_written")
 # The status a list's rows carry (the status before any dated parenthetical).
 # The active list is the 53 in season and the offseason roster before the cut; the reserve lists
 # are every reserve status the league uses (injured, PUP, NFI, suspended, exempt).
 LIST_STATUS = {"active": re.compile(r"^(?:Active 53|Offseason roster)(?:\s*\(|$)"),
                "reserve": re.compile(r"^(?:Reserve/|Injured reserve|IR\b|PUP|NFI|Suspended|Commissioner)"),
                "practice_squad": re.compile(r"^Practice squad(?:\s*\(|$)")}
+
+
+LINKED_NAME = re.compile(r"^\[[^\]]*\]\(")
+
+
+def refuse_built_page(path, names):
+    """Fail on a Markdown roster without plain player rows. From 2014 the roster page is built from
+    the record (its player cells are links to the player pages), so a reader of the 2013 page layout
+    handed it would misread the club; read the record (``SeasonPaths(year).roster``) instead."""
+    names = list(names)
+    if not names or any(LINKED_NAME.match(name) for name in names):
+        raise ValueError("%s holds no plain player rows: from 2014 read the roster record "
+                         "(SeasonPaths(year).roster), not the built roster page" % path)
 
 
 def list_for(status):
@@ -74,9 +90,13 @@ def errors(data):
         out.append("as_of needs the event it follows")
     seen = set()
     for row in data["players"]:
-        if not isinstance(row, dict) or set(row) != set(PLAYER_KEYS):
-            out.append("player row keys must be %s: %r" % (", ".join(PLAYER_KEYS), row))
+        if (not isinstance(row, dict) or not set(PLAYER_KEYS) <= set(row)
+                or not set(row) <= set(PLAYER_KEYS) | set(PLAYER_OPTIONAL)):
+            out.append("player row keys must be %s (optionally %s): %r"
+                       % (", ".join(PLAYER_KEYS), ", ".join(PLAYER_OPTIONAL), row))
             continue
+        if "as_written" in row and not _as_written_ok(row):
+            out.append("%s: as_written must hold the original text of fields the row has" % row["name"])
         name = row["name"]
         if name in seen:
             out.append("%s is listed twice" % name)
@@ -99,7 +119,15 @@ def errors(data):
                        % (", ".join(DEPARTURE_KEYS), ", ".join(DEPARTURE_OPTIONAL), row))
         elif type(row["year"]) is not int:
             out.append("%s's departure needs the year of its heading" % row["name"])
+        elif "as_written" in row and not _as_written_ok(row):
+            out.append("%s's departure: as_written must hold the original text of fields the row has" % row["name"])
     return out
+
+
+def _as_written_ok(row):
+    kept = row["as_written"]
+    return (isinstance(kept, dict) and bool(kept) and all(k in row and k != "as_written" for k in kept)
+            and all(isinstance(v, str) and v != row[k] for k, v in kept.items()))
 
 
 def players(data, lists=LISTS):

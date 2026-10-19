@@ -31,6 +31,7 @@ def controlled_players_from_roster(path: Path) -> set[str]:
     if roster_record.is_record(path):
         return {row["name"] for row in roster_record.load(path)["players"] if CONTROLLED_STATUS.match(row["status"])}
     controlled: set[str] = set()
+    names: list[str] = []
     player_col = status_col = None
     for line in path.read_text(encoding="utf-8").splitlines():
         if not line.startswith("|"):
@@ -43,8 +44,10 @@ def controlled_players_from_roster(path: Path) -> set[str]:
             continue
         if player_col is None or status_col is None or set(cells[0]) <= {"-", ":"}:
             continue
+        names.append(cells[player_col])
         if status_col < len(cells) and CONTROLLED_STATUS.match(cells[status_col]):
             controlled.add(cells[player_col])
+    roster_record.refuse_built_page(path, names)
     return controlled
 
 

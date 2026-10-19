@@ -23,6 +23,15 @@ Each page is built from its stored owners and never edited by hand:
   phase, who decides what at the club, and what the owner and general manager
   have asked of the head coach).
 
+Every page is dated by the master date (runtime/player_bios.master_date), as
+the desk and the coach pages are: the results, the standings, the next game,
+the staff on game day and the ages all come from the closed games up to that
+date. A closed game is matched to its fixture by week and clubs, never by its
+event id. The roster record carries the date of the event it was last brought
+up to; ``check`` fails when that date is earlier than Jacksonville's last
+closed game, so a game's close must refresh the record (docs/update_workflow.md).
+The check also holds the depth chart's update log to its form (``log_errors``).
+
 Every page passes the clean-page rule (runtime/clean_pages.py). ``check``
 (--check) rebuilds each page in memory, writes nothing and reports one that is
 missing, differs or breaks the rule; ``write`` writes them. Run after any
@@ -47,19 +56,53 @@ if str(ROOT) not in sys.path:
 
 from runtime import current_job, people, player_bios, roster as roster_record  # noqa: E402
 from runtime.league import DIVISION_OF  # noqa: E402
+from runtime.player_bios import master_date  # noqa: E402
 from runtime.seasons import SeasonPaths, active_season  # noqa: E402
 JAX = "Jacksonville Jaguars"
-N_A = "N/A"
 UNITS = (("Offense", ("QB", "RB", "FB", "WR", "TE", "OL")), ("Defense", ("DL", "LB", "DB")))
 GROUP_NAMES = {"QB": "Quarterbacks", "RB": "Running backs", "FB": "Fullback", "WR": "Wide receivers",
                "TE": "Tight ends", "OL": "Offensive line", "DL": "Defensive line", "LB": "Linebackers",
                "DB": "Defensive backs"}
 # The game chart's role names in football words.
-ROLE_NAMES = {"passer": "Passer", "placekicker": "Kicker", "punt": "Punter", "kick_return": "Kick returner",
+ROLE_NAMES = {"passer": "Starter", "placekicker": "Kicker", "punt": "Punter", "kick_return": "Kick returner",
               "punt_return": "Punt returner", "nickel": "Nickel", "outside_reserve": "Outside reserve corner"}
 ACTIONS = {"decides": "Decides", "decides_part": "Decides part", "recommends": "Recommends",
-           "consulted": "Consulted", "responds": "Responds", "informs": "Informed", "none": "No part",
-           "unset": "Not set"}
+           "consulted": "Consulted", "responds": "Responds", "informs": "Supplies information", "none": "No part",
+           "unset": "Not recorded"}
+# The club's decisions as an NFL front office names them (the current-job record holds the
+# rulebook's general wording, written for any club or level). Every domain the club's appointment
+# holds needs a label here; a new one fails the build until it is named.
+DECISIONS = {
+    "Hire, retain, suspend, or fire the head coach": "Hiring and firing the head coach",
+    "Hire, retain, assign, suspend, or fire assistant coaches": "Hiring, assigning and firing assistant coaches",
+    "Final player-acquisition and target-selection decisions": "Which players to acquire",
+    "Franchise-level quarterback decisions specifically: using the first-round pick on a QB, trading premium "
+    "draft capital for one, a major multiyear financial commitment to one as the intended starter, or a major "
+    "disposition of the starting QB": "Franchise quarterback moves: a first-round quarterback, premium picks traded "
+    "for one, a major long-term contract for an intended starter, or moving on from the starter",
+    "Draft selections or recruiting offers": "Draft selections",
+    "Player contract negotiation and execution": "Player contracts",
+    "Salary-cap management or team and program budget": "The salary cap and the football budget",
+    "Final roster cuts and roster-limit compliance": "Final roster cuts and roster limits",
+    "Game-day active status, elevations, and inactives": "Game-day actives and inactives",
+    "Depth chart and package roles": "Depth chart and package roles",
+    "Starting lineups": "Starting lineups",
+    "Practice schedule, workload, and repetition allocation": "Practice schedule, workload and reps",
+    "Offensive game-day operation": "The offense on game day",
+    "Defensive game-day operation": "The defense on game day",
+    "Special-teams decisions and calls": "Special teams decisions and calls",
+    "Medical diagnosis": "Medical diagnosis",
+    "Medical clearance and return-to-participation status": "Medical clearance and return to practice and play",
+    "Injury reporting and official availability designation": "The injury report and game-status designations",
+    "Player discipline": "Player discipline",
+    "Media policy, access, and official communications": "Media policy, access and club statements",
+    "Professional trades, waivers, claims, releases, reserve mechanisms, and practice-squad transactions":
+        "Trades, waivers, claims, releases, the reserve lists and the practice squad",
+    "Facilities, staffing levels, equipment, technology, travel resources, and other material allocation":
+        "Facilities, staffing, equipment, technology and travel",
+}
+# The club titles of the people the team page names beside the head coach.
+TITLES = {"Shad Khan": "owner", "David Caldwell": "general manager"}
 PHASE_NAMES = {"offense": "Offense", "defense": "Defense", "special_teams": "Special teams"}
 
 
@@ -107,17 +150,19 @@ class Context:
         self.year = active_season(root) if year is None else year
         self.paths = SeasonPaths(self.year, root)
         self.roster = roster_record.load(self.paths.roster)
-        self.as_of = date.fromisoformat(self.roster["as_of"]["date"])
+        self.as_of = master_date(root)
         self.chart = json.loads(self.paths.depth_chart.read_text(encoding="utf-8"))
         working = self.paths.record("offseason/depth_chart_working.json")
         self.working = json.loads(working.read_text(encoding="utf-8")) if working.is_file() else {}
         log = self.paths.record("team/depth_chart/update_log.json")
         self.log = json.loads(log.read_text(encoding="utf-8")) if log.is_file() else {"entries": []}
         self.job = current_job.load(root)
-        self.fixtures = {g["game_id"]: g for g in self.paths.regular_games()}
+        self.fixtures = {game_key(g): g for g in self.paths.regular_games()}
         receipts = load_receipts(self.paths.receipts) if self.paths.receipts.is_dir() else []
-        self.receipts = [r for r in receipts
-                         if date.fromisoformat(self.fixtures[r["event_id"]]["date"]) <= self.as_of]
+        # Every closed game, matched to its fixture by week and clubs (an event id may be regenerated).
+        self.unmatched = [r for r in receipts if game_key(r) not in self.fixtures]
+        self.closed = [r for r in receipts if game_key(r) in self.fixtures]
+        self.receipts = [r for r in self.closed if date.fromisoformat(self.fixture(r)["date"]) <= self.as_of]
         self.games = sorted((r for r in self.receipts if JAX in (r["home"], r["away"])), key=lambda r: int(r["week"]))
         self.bios = player_bios.load(root)
         self.pages = self._player_pages()
@@ -137,12 +182,17 @@ class Context:
         return out
 
     def fixture(self, receipt):
-        return self.fixtures[receipt["event_id"]]
+        return self.fixtures[game_key(receipt)]
 
     def next_game(self):
         ours = sorted((g for g in self.fixtures.values() if JAX in (g["away"], g["home"])
                        and date.fromisoformat(g["date"]) > self.as_of), key=lambda g: g["date"])
         return ours[0] if ours else None
+
+
+def game_key(game):
+    """(week, away club, home club): how a closed game finds its fixture."""
+    return int(game["week"]), game["away"], game["home"]
 
 
 def game_line(receipt):
@@ -219,7 +269,7 @@ def roster_page(ctx):
         out = []
         for p in players:
             number = ctx.pages.get(p["name"], (None, None))[1]
-            row = [player_link(ctx, rel, p["name"]), N_A if number is None else number, p["position"], ages[p["name"]]["age"],
+            row = [player_link(ctx, rel, p["name"]), "" if number is None else number, p["position"], ages[p["name"]]["age"],
                    status_text(p["status"])]
             if with_availability:
                 row.append(p["availability"])
@@ -372,11 +422,13 @@ def authority_rows(ctx):
         if d.get("stone_action") == "not_applicable" or not d.get("final"):
             continue
         who = " and ".join(current_job.party_name(ctx.job, p) for p in d["final"])
-        part = ACTIONS.get(d["stone_action"], d["stone_action"])
+        part = ACTIONS[d["stone_action"]]
         scope = d.get("scope")
         if scope and not re.search(r"\brow\b", scope, re.I):
             part += ": " + scope
-        rows.append([d["domain"], who, part])
+        if d["domain"] not in DECISIONS:
+            raise ValueError("No football label for the club decision %r (render_club_pages.DECISIONS)" % d["domain"])
+        rows.append([DECISIONS[d["domain"]], who, part])
     return rows
 
 
@@ -390,14 +442,19 @@ def requests_lines(ctx, rel):
         out.append((e, text))
     for e in current.get("employer_requests") or ():
         if e.get("season") == ctx.year:
-            out.append((e, e["text"] + ("" if e.get("status") != "OPEN" else " (open)")))
+            out.append((e, e["text"]))
     lines = []
     for e, text in out:
         record = e.get("record") or {}
         source = link(rel, record["path"], "season review", record.get("anchor", "")) if record.get("path") else ""
-        lines.append("- **%s**: %s%s." % (current_job.party_name(ctx.job, e["by"]), text[0].upper() + text[1:],
+        lines.append("- **%s**: %s%s." % (titled(current_job.party_name(ctx.job, e["by"])), text[0].upper() + text[1:],
                                           " (%s)" % source if source else ""))
     return lines
+
+
+def titled(name):
+    """"Shad Khan, owner": a name with his club title, where the team page names one."""
+    return "%s, %s" % (name, TITLES[name]) if name in TITLES else name
 
 
 def team_page(ctx):
@@ -406,10 +463,12 @@ def team_page(ctx):
     find = lambda pid: current_job.party_name(ctx.job, pid)
     to = lambda logical, label, anchor="": link(rel, ctx.paths.record(logical).relative_to(ctx.root).as_posix(),
                                                 label, anchor)
-    owners = (current.get("reporting") or {}).get("employment_decided_by") or ()
+    owners = [titled(find(p)) for p in (current.get("reporting") or {}).get("employment_decided_by") or ()]
+    deciders = ", and ".join([", ".join(owners[:-1]), owners[-1]]) if len(owners) > 1 else "".join(owners)
     lines = ["# Jacksonville Jaguars", "", as_of_line(ctx), "",
-             "Head coach %s, employed by %s." % (find(ctx.job.get("holder")),
-                                                 " and ".join(find(p) for p in owners) or N_A), ""]
+             "Head coach %s. Employed by the %s%s." % (
+                 find(ctx.job.get("holder")), (current.get("employer") or {}).get("club") or JAX,
+                 "; employment decided by %s" % deciders if deciders else ""), ""]
     lines += ["## Results, %d" % ctx.year, ""]
     rows = results_rows(ctx)
     lines += [table(["Week", "Date", "Opponent", "Result", "Record"], rows, right=(0,)) if rows
@@ -447,17 +506,82 @@ def team_page(ctx):
 
 
 # ------------------------------------------------------------------ build, check, write
-def build(root=ROOT):
-    ctx = Context(root)
+def build(root=ROOT, ctx=None):
+    ctx = Context(root) if ctx is None else ctx
     return dict(builder(ctx) for builder in (roster_page, depth_chart_page, team_page))
 
 
+LOG_KEYS = ("team", "season", "about", "entries")
+ENTRY_KEYS = ("date", "recorded", "event", "change", "sources")
+# "events": the closed events an entry belongs to; "as_written": the entry's original row, kept
+# exactly when it was reworded for the page and never rendered.
+ENTRY_OPTIONAL = ("events", "as_written")
+AS_WRITTEN_KEYS = ("date", "event", "source", "change")
+
+
+def log_errors(log, root=ROOT):
+    """The depth chart's update log against its form: the record's keys, each entry's required and
+    allowed keys, an ISO recorded date, entries oldest first, and sources that are pages under
+    career/ that exist."""
+    root = Path(root)
+    if not isinstance(log, dict) or set(log) != set(LOG_KEYS) or not isinstance(log["entries"], list):
+        return ["Depth chart update log must hold exactly %s" % ", ".join(LOG_KEYS)]
+    errors, previous = [], None
+    for i, e in enumerate(log["entries"], 1):
+        where = "Depth chart update log entry %d" % i
+        if not isinstance(e, dict) or not set(ENTRY_KEYS) <= set(e) or not set(e) <= set(ENTRY_KEYS + ENTRY_OPTIONAL):
+            errors.append("%s: keys must be %s (optionally %s)" % (where, ", ".join(ENTRY_KEYS), ", ".join(ENTRY_OPTIONAL)))
+            continue
+        if not all(isinstance(e[k], str) and e[k].strip() for k in ("date", "event", "change")):
+            errors.append("%s: the date, event and change need text" % where)
+        try:
+            recorded = date.fromisoformat(e["recorded"])
+        except (TypeError, ValueError):
+            errors.append("%s: recorded needs an ISO date" % where)
+            recorded = None
+        if recorded and previous and recorded < previous:
+            errors.append("%s: recorded %s is earlier than the entry before it" % (where, e["recorded"]))
+        previous = recorded or previous
+        if not isinstance(e["sources"], list) or not e["sources"]:
+            errors.append("%s: needs at least one source" % where)
+        for s in e["sources"] if isinstance(e["sources"], list) else ():
+            page = s.get("page", "") if isinstance(s, dict) else ""
+            if (not isinstance(s, dict) or set(s) != {"label", "page"} or not s.get("label")
+                    or not page.startswith("career/") or not page.split("#")[0].endswith(".md")
+                    or not (root / page.split("#")[0]).is_file()):
+                errors.append("%s: a source must be a labelled page under career/ that exists: %r" % (where, s))
+        if "events" in e and (not isinstance(e["events"], list) or not all(isinstance(x, str) and x for x in e["events"])):
+            errors.append("%s: events must be a list of event ids" % where)
+        if "as_written" in e and (not isinstance(e["as_written"], dict) or set(e["as_written"]) != set(AS_WRITTEN_KEYS)
+                                  or not all(isinstance(v, str) for v in e["as_written"].values())):
+            errors.append("%s: as_written must hold the original %s" % (where, ", ".join(AS_WRITTEN_KEYS)))
+    return errors
+
+
+def record_errors(ctx):
+    """The roster record and the closed games against each other: every closed game matches a
+    fixture, and the record is not dated before Jacksonville's last closed game."""
+    errors = ["Closed game with no fixture (week %s, %s at %s)" % (r["week"], r["away"], r["home"])
+              for r in ctx.unmatched]
+    ours = [r for r in ctx.closed if JAX in (r["home"], r["away"])]
+    if ours:
+        last = max(ours, key=lambda r: ctx.fixture(r)["date"])
+        played = date.fromisoformat(ctx.fixture(last)["date"])
+        recorded = date.fromisoformat(ctx.roster["as_of"]["date"])
+        if recorded < played:
+            errors.append("Roster record dated %s, before Jacksonville's last closed game (Week %d, %s): bring the "
+                          "record's as_of up to the game's close" % (recorded, int(last["week"]), played))
+    return errors
+
+
 def check(root=ROOT):
-    """Every club page that is missing, differs from its rebuild or breaks the clean-page rule."""
+    """Every club page that is missing, differs from its rebuild or breaks the clean-page rule, a
+    roster record behind the last closed game, and an update log out of form."""
     from runtime.clean_pages import page_errors
     root = Path(root).resolve()
-    errors = []
-    for rel, text in build(root).items():
+    ctx = Context(root)
+    errors = record_errors(ctx) + log_errors(ctx.log, root)
+    for rel, text in build(root, ctx).items():
         path = root / rel
         if not path.is_file():
             errors.append("Club page missing: %s" % rel)

@@ -441,8 +441,9 @@ def validate(root=ROOT):
     # rule 2): no script or runtime module writes a season folder or a year
     # into a path itself.
     try:
-        from runtime.clean_pages import clean_errors, folder_map_errors
-        for label, found in (('Clean pages', clean_errors(root)), ('Folder map', folder_map_errors(root))):
+        from runtime.clean_pages import clean_errors, folder_map_errors, history_pin_errors
+        for label, found in (('Clean pages', clean_errors(root)), ('Page history', history_pin_errors(root)),
+                             ('Folder map', folder_map_errors(root))):
             errors.extend(found[:20])
             if len(found) > 20:
                 errors.append('%s: %d more problems' % (label, len(found) - 20))
@@ -750,7 +751,7 @@ def validate(root=ROOT):
         if '.git' in path.parts or not readable(path):
             continue
         content = without_code(path.read_text())
-        for dest in re.findall(r'\[[^\]\n]+\]\(([^\s)]+)\)', content):
+        for dest in link_destinations(content):
             parts = urlsplit(dest)
             if parts.scheme or parts.netloc:
                 continue
@@ -763,6 +764,15 @@ def validate(root=ROOT):
                 require(unquote(parts.fragment) in anchors(without_code(target.read_text())),
                         f'{path.relative_to(root)}: missing heading: {dest}')
     return errors
+
+
+def link_destinations(content):
+    """Every link destination of a Markdown text: inline links, links with a title
+    ([x](path "t")) and reference definitions ([x]: path)."""
+    dests = re.findall(r'\[[^\]\n]+\]\(([^\s)]+)\)', content)
+    dests += re.findall(r'\[[^\]\n]+\]\(\s*<?([^\s<>()]+)>?\s+(?:"[^"\n]*"|\'[^\'\n]*\'|\([^()\n]*\))\s*\)', content)
+    dests += re.findall(r'(?m)^ {0,3}\[[^\]\n^][^\]\n]*\]:\s*<?([^\s<>]+)>?', content)
+    return dests
 
 
 def main():

@@ -25,7 +25,7 @@ from runtime.player_bios import master_date
 from runtime.season_layout import PAGE_HISTORY
 from runtime.seasons import SeasonPaths
 from scripts import render_career_views as views
-from support_page_history import keep_as_history
+from support_page_history import keep_as_history, pinned_copy
 from scripts.validate_repository import validate
 
 SEASON = int(repository_map(ROOT)["active_season"])
@@ -330,7 +330,8 @@ class DecisionQueueTests(unittest.TestCase):
         views.write(self.root)
         keep_as_history(self.root)
         self.assertEqual(views.check(self.root), [])
-        self.assertEqual(validate(self.root), [])
+        with pinned_copy(self.root):
+            self.assertEqual(validate(self.root), [])
 
 
 if __name__ == "__main__":

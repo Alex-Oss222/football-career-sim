@@ -385,7 +385,9 @@ def _roster_tables(path):
     text = Path(path).read_text(encoding="utf-8")
     current, departed = text.split("\n## Departures", 1) if "\n## Departures" in text else (text, "")
     departed = re.split(r"^## ", departed, maxsplit=1, flags=re.M)[0]
-    return list(_tables(current)), list(_tables(departed))
+    current = list(_tables(current))
+    roster_record.refuse_built_page(path, [row["Player"] for row, _ in current if "Player" in row])
+    return current, list(_tables(departed))
 
 
 def jacksonville_control(season, root=ROOT, registry=None):
