@@ -5,6 +5,7 @@ job record, the closed games and the master date), never typed, so the tests
 hold at any later clock. Mutations run on one throwaway copy of the checkout;
 each test restores the files it changed.
 """
+from datetime import timedelta
 import json
 from pathlib import Path
 import re
@@ -361,6 +362,99 @@ class CoachPageTests(unittest.TestCase):
         built = pages.build(self.root)
         self.assertIn("| A test club | Head coach | Permission request |", built[pages.CONTRACT_PAGE])
         self.assertIn("A test club, Head coach (Permission request)", built[pages.COACH_PAGE])
+
+
+class ContractDateTests(unittest.TestCase):
+    """An amendment applies only from its in-world date: a page built for an earlier day never
+    shows it, validation refuses one dated after the master date, and a contract's salary covers
+    every season of its term (rebuild step 3b, last fixes)."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.root = copied_root(SimpleNamespace(addCleanup=cls.addClassCleanup)).resolve()
+
+    def setUp(self):
+        self.job = current_job.load(self.root)
+        self.slug, record = next((s, r) for s, r in coaches.load_all(self.root).items()
+                                 if r.get("party") == self.job["holder"])
+        self.stone = json.loads(json.dumps(record))
+        self.signed = coaches.entries(self.stone, "contract_signed")[0]
+        self.last = max(self.signed["seasons"])
+        self.today = master_date(self.root)
+
+    def extension(self, on):
+        """A one-season extension at a new salary, in force from day ``on``."""
+        recorded = next(e for e in coaches.entries(self.stone, "contract_amended"))["recorded"]
+        return {"in_world": on.isoformat(), "recorded": recorded, "kind": "contract_amended",
+                "contract": self.signed["contract"], "source": self.signed["source"],
+                "terms": {"seasons": self.signed["seasons"] + [self.last + 1],
+                          "salary": {str(self.last + 1): 5000000},
+                          "end": {"date": "%d-01-31" % (self.last + 2), "text": "After the %d season" % (self.last + 1)}}}
+
+    def write(self, record):
+        path = coaches.folder(self.root) / ("%s.json" % self.slug)
+        before = path.read_bytes()
+        self.addCleanup(path.write_bytes, before)
+        path.write_text(coaches.dump(record), encoding="utf-8")
+
+    def payroll(self):
+        from scripts.render_jaguars_cap_tracker import render_organization
+        data = json.loads((self.root / PLAYER_FINANCES).read_text())
+        years = [str(y) for y in range(data["start_year"], data["end_year"] + 1)]
+        self.assertIn(str(self.last + 1), years)
+        return render_organization(data, years, self.root)
+
+    def test_a_later_amendment_does_not_apply_before_its_day(self):
+        later = self.today + timedelta(days=1)
+        self.stone["entries"].append(self.extension(later))
+        cid = self.signed["contract"]
+        self.assertEqual(coaches.through_season(coaches.contract(self.stone, cid, self.today)), self.last)
+        self.assertEqual(coaches.through_season(coaches.contract(self.stone, cid, later)), self.last + 1)
+        self.assertEqual(coaches.through_season(coaches.contract(self.stone, cid)), self.last + 1)
+        self.write(self.stone)
+        built = pages.build(self.root)
+        contract = built[pages.CONTRACT_PAGE].split("## Salary by season", 1)[1].split("\n## ", 1)[0]
+        self.assertNotIn("| %d |" % (self.last + 1), contract)
+        staff = built[SeasonPaths(int(repository_map(self.root)["active_season"]), self.root)
+                      .staff_page.relative_to(self.root).as_posix()]
+        self.assertNotIn("Through %d" % (self.last + 1), staff)
+        self.assertNotIn("$5,000,000", self.payroll())
+        self.assertIsNone(current_job.term(self.job, self.root, self.today)["contract"]["salary"].get(str(self.last + 1)))
+        # Validation refuses an amendment the career has not reached.
+        self.assertTrue(any("after the master date" in e for e in coaches.all_errors(self.root)))
+
+    def test_an_amendment_on_the_page_day_applies(self):
+        self.stone["entries"].append(self.extension(self.today))
+        self.write(self.stone)
+        self.assertFalse(any("after the master date" in e for e in coaches.all_errors(self.root)))
+        built = pages.build(self.root)
+        contract = built[pages.CONTRACT_PAGE].split("## Salary by season", 1)[1].split("\n## ", 1)[0]
+        self.assertIn("| %d | $5,000,000 |" % (self.last + 1), contract)
+        self.assertIn("$5,000,000", self.payroll())
+
+    def test_a_signed_salary_covers_every_season(self):
+        slug, record = next((s, r) for s, r in coaches.load_all(self.root).items()
+                            if r.get("party") != self.job["holder"]
+                            and (coaches.entries(r, "contract_signed")[-1].get("salary") or {}))
+        broken = json.loads(json.dumps(record))
+        signed = coaches.entries(broken, "contract_signed")[-1]
+        dropped = str(max(signed["seasons"]))
+        signed["salary"].pop(dropped)
+        errors = coaches.record_errors(slug, broken, self.root)
+        self.assertTrue(any("salary for every season" in e and "missing %s" % dropped in e for e in errors), errors)
+        signed["salary"][dropped] = None
+        self.assertTrue(any("whole number of dollars" in e for e in coaches.record_errors(slug, broken, self.root)))
+        # Null stays allowed for a salary the signed contract did not state at all.
+        signed["salary"] = None
+        self.assertEqual(coaches.record_errors(slug, broken, self.root), [])
+
+    def test_an_amended_salary_covers_every_season(self):
+        extension = self.extension(self.today)
+        extension["terms"]["salary"] = {}
+        self.stone["entries"].append(extension)
+        errors = coaches.record_errors(self.slug, self.stone, self.root)
+        self.assertTrue(any("as amended needs a salary for every season" in e and "missing %d" % (self.last + 1) in e
+                            for e in errors), errors)
 
 
 if __name__ == "__main__":

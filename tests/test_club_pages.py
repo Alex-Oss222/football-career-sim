@@ -242,6 +242,35 @@ class ClubPageDatingTests(unittest.TestCase):
         broken["notes"] = "x"
         self.assertTrue(club_pages.log_errors(broken, ROOT))
 
+    def test_the_update_log_dates_and_sources_hold(self):
+        from datetime import timedelta
+        from runtime.player_bios import master_date
+        log = json.loads(PATHS.record("team/depth_chart/update_log.json").read_text())
+        last = log["entries"][-1]
+        recorded = date.fromisoformat(last["recorded"])
+        later = master_date(ROOT) + timedelta(days=1)
+        shown = club_pages.long_date(recorded)
+        # Every shown date is built from its recorded day.
+        for e in log["entries"]:
+            self.assertEqual(club_pages.shown_recorded(e["date"]), date.fromisoformat(e["recorded"]), e["date"])
+        for breaks, expected in (
+                (lambda e: e.update(date=club_pages.long_date(recorded + timedelta(days=1))), "long form of recorded"),
+                (lambda e: e.update(date="Week %s" % recorded.day), "long form of recorded"),
+                (lambda e: e.update(recorded=later.isoformat(), date=club_pages.long_date(later)), "after the master date"),
+                (lambda e: e.update(sources=[{"label": "x", "page": "career/../AGENTS.md"}]), "under career/"),
+                (lambda e: e.update(sources=[{"label": "x", "page": "career/../../outside.md"}]), "under career/")):
+            broken = copy.deepcopy(log)
+            breaks(broken["entries"][-1])
+            self.assertTrue(any(expected in e for e in club_pages.log_errors(broken, ROOT)), expected)
+        # The long form of the recorded day, a window ending on it and a source that normalizes into
+        # career/ all hold.
+        window = "%s 1 to %d, %d" % (recorded.strftime("%B"), recorded.day, recorded.year)
+        for change in ({"date": shown}, {"date": window if recorded.day > 1 else shown},
+                       {"sources": [{"label": "x", "page": "career/%d/../%d/Record.md" % (YEAR, YEAR)}]}):
+            fine = copy.deepcopy(log)
+            fine["entries"][-1].update(change)
+            self.assertEqual(club_pages.log_errors(fine, ROOT), [], change)
+
     def test_reworded_entries_keep_their_original_words(self):
         for e in json.loads(PATHS.record("team/depth_chart/update_log.json").read_text())["entries"]:
             if "as_written" in e:
@@ -260,6 +289,25 @@ class ClubPageDatingTests(unittest.TestCase):
         self.assertIn("Employed by the Jacksonville Jaguars; employment decided by", text)
         _, roster = club_pages.roster_page(club_pages.Context(ROOT))
         self.assertNotIn("N/A", roster)
+
+    def test_group_names_take_a_small_letter_inside_a_phrase(self):
+        ctx = club_pages.Context(ROOT)
+        parties = ctx.job.get("parties") or {}
+        _, text = club_pages.team_page(ctx)
+        rows = {r[0]: r[1] for r in tables(text, "## Who decides what")}
+        checked = 0
+        current = club_pages.current_job.appointment(ctx.job) or {}
+        for d in (current.get("authority") or {}).get("domains", ()):
+            label = club_pages.DECISIONS.get(d["domain"])
+            if label not in rows:
+                continue
+            for pid in d["final"][1:]:
+                if (parties.get(pid) or {}).get("kind") == "group":
+                    name = parties[pid]["name"]
+                    self.assertIn(name[:1].lower() + name[1:], rows[label])
+                    self.assertNotIn(" and " + name, rows[label])
+                    checked += 1
+        self.assertTrue(checked)
 
 
 class AppendOnlyHistoryTests(unittest.TestCase):
@@ -328,6 +376,30 @@ class AppendOnlyHistoryTests(unittest.TestCase):
         self.assertEqual(sorted(link_destinations('[a](one.md "t")\n[b]: two.md "T"\n[c](three.md)\n[^1]: Note.\n')),
                          ["one.md", "three.md", "two.md"])
 
+    def test_a_marker_line_holds_exactly_one_marker(self):
+        marker = '<!-- event-record: {"date": "2014-10-06", "id": "2014-10-06-a-test-event", "status": "closed"} -->'
+        rel = "career/2014/Team_Operations/Medical/medical_history.md"
+        self.assertEqual(clean_pages.page_errors(rel, marker, root=ROOT), [])
+        for line in (marker + " The engine closed it. " + marker, marker + " " + marker, marker + " Jones cleared."):
+            errors = clean_pages.page_errors(rel, line, root=ROOT)
+            self.assertTrue(any("markup" in e for e in errors), line)
+        root, _ = self.copy_with(self.OLD, self.OLD + "\n%s Jones cleared. %s\n" % (marker, marker))
+        self.assertTrue(any("markup" in e for e in clean_pages.clean_errors(root)))
+
+    def test_angle_and_spaced_link_destinations_to_system_files_fail(self):
+        rel = "career/2014/Team_Operations/Medical/medical_history.md"
+        for line in ("[the inputs](<../../../../data/2014/x.json>)", "[the inputs]( ../../../../data/2014/x.json )",
+                     '[the inputs](<../../../../data/2014/a file.json> "Inputs")', "[runner]: <../../../../scripts/a.py>",
+                     "[inputs]: <../../../../data/2014/a file.json> 'Inputs'", "[x](  ../x.csv  )"):
+            self.assertTrue(any("link to a system file" in e for e in clean_pages.page_errors(rel, line, root=ROOT)), line)
+        for line in ("[the record](<medical_history.md>)", "[the record]( medical_history.md )"):
+            self.assertEqual(clean_pages.page_errors(rel, line, root=ROOT), [], line)
+        # The repository's link check reads the same destinations, without the brackets and spaces.
+        from scripts.validate_repository import link_destinations
+        self.assertEqual(sorted(link_destinations("[a](<one two.md>)\n[b]( three.md )\n[c]: <four.md> 'T'\n"
+                                                  "[d](<five.md> \"t\")\n")),
+                         ["five.md", "four.md", "one two.md", "three.md"])
+
     def test_the_page_history_map_is_pinned(self):
         from runtime.season_layout import PAGE_HISTORY_SHA256
         self.assertEqual(clean_pages.history_pin_errors(ROOT), [])
@@ -380,6 +452,17 @@ class CapViewTests(unittest.TestCase):
             self.assertEqual((ROOT / path).read_text(), text, path)
             if path != cap.ORGANIZATION:
                 self.assertEqual(clean_pages.page_errors(str(path), text, root=ROOT), [], path)
+
+    def test_the_contract_pages_name_their_research_in_plain_words(self):
+        from scripts import render_jaguars_cap_tracker as cap
+        note = "pick 13 in the nflverse/OTC historical contracts file, $10,136,500 total"
+        out = cap.reader_words(note)
+        self.assertEqual(out, "pick 13 in the historical contract records, $10,136,500 total")
+        data = json.loads((ROOT / cap.INPUT).read_text())
+        for path, text in cap.render(data, ROOT).items():
+            self.assertNotIn("nflverse", text, path)
+        readme = (ROOT / "career/finances/README.md").read_text(encoding="utf-8")
+        self.assertNotRegex(readme, r"(?i)\bmaintenance\b")
 
 
 if __name__ == "__main__":

@@ -419,7 +419,7 @@ def coach_page(ctx):
     if calls:
         rows.append(("Calls", calls[:1].upper() + calls[1:]))
     # The contract and its remaining term, in the same short table.
-    terms = current_job.contract_terms(ctx.job, ctx.root)
+    terms = current_job.contract_terms(ctx.job, ctx.root, ctx.today)
     if terms:
         rows += [("Contract" if label == "Seasons" else label, value) for label, value in contract_rows(ctx, terms, page)]
     else:
@@ -518,7 +518,7 @@ def salary_text(salary):
 def contract_page(ctx):
     record = ctx.records[ctx.holder]
     page = CONTRACT_PAGE
-    terms = current_job.contract_terms(ctx.job, ctx.root)
+    terms = current_job.contract_terms(ctx.job, ctx.root, ctx.today)
     out = ["# Contract and jobs", "", "**%s · %s, %s**" % (record["name"], ctx.current.get("title"), ctx.club), "",
            as_of(ctx), "", link(ctx, page, COACH_PAGE, "Coach page"), ""]
     if terms is None:
@@ -610,7 +610,7 @@ def staff_page(ctx):
     for slug, record in staff_members(ctx):
         title, unit = coaches.job(record, ctx.club)
         hire = coaches.hired(record, ctx.club)
-        terms = coaches.current_contract(record, ctx.club)
+        terms = coaches.current_contract(record, ctx.club, ctx.today)
         name = link(ctx, page, COACH_PAGE, record["name"]) if slug == ctx.holder else record["name"]
         rows.append((name, title, UNIT_NAMES.get(unit, unit), coaches.date_text(hire), contract_status(terms)))
     out += ["## Who coaches what", ""] + table(["Coach", "Job", "Unit", "Since", "Contract"], rows)

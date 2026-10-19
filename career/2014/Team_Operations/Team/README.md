@@ -77,7 +77,7 @@ Next: Week 6 at Tennessee, October 12, 2014.
 | Special teams decisions and calls | Alex Stone | Decides |
 | Medical diagnosis | Team medical staff | No part |
 | Medical clearance and return to practice and play | Team medical staff | No part |
-| The injury report and game-status designations | Team medical staff and Team communications staff | Supplies information |
+| The injury report and game-status designations | Team medical staff and team communications staff | Supplies information |
 | Player discipline | Alex Stone | Decides part: ordinary football discipline; serious or legal matters escalate |
 | Media policy, access and club statements | Team communications staff and Alex Stone | Decides part: direct football-related media |
 | Trades, waivers, claims, releases, the reserve lists and the practice squad | David Caldwell | Recommends |

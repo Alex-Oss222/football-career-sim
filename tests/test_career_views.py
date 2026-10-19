@@ -190,6 +190,30 @@ class CareerViewTests(unittest.TestCase):
             self.assertIn("](%s#%s)" % (staff, views.CALLING_SECTION), line)
             self.assertIn(views.CALLING_SECTION, anchors(without_code(self.paths.staff_page.read_text(encoding="utf-8"))))
 
+    def test_document_5_speaks_of_the_head_coach_and_the_desk_to_him(self):
+        item = next((i for i in current_job.instructions(self.job) if i.get("subject") == "play_calling"), None)
+        if item is None:
+            self.skipTest("no calling arrangement in force")
+        holder = views.short(SimpleNamespace(job=self.job), self.holder)
+        # The record words the instruction about him, and Document 5 shows it as recorded.
+        self.assertTrue(item["summary"].startswith(holder + " "), item["summary"])
+        row = next(l for l in self.rendered(STATE).splitlines() if l.startswith("| Standing instructions |"))
+        self.assertIn(item["summary"], row)
+        self.assertNotRegex(row, r"\b[Yy]ou(?:r)?\b")
+        # Only the desk speaks to him.
+        line = next(l for l in self.section("Standing instructions").splitlines() if "Calling arrangement" in l)
+        self.assertIn(":** You ", line)
+        self.assertNotIn(item["summary"], line)
+
+        def change(current):
+            rule = next(i for i in current["standing_instructions"] if i["id"] == item["id"])
+            rule["summary"] = "%s watches, decides or takes over any phase; he has his say until he changes it" % holder
+        self.with_job(change)
+        line = next(l for l in self.section("Standing instructions").splitlines() if "Calling arrangement" in l)
+        self.assertIn(":** You watch, decide or take over any phase; you have your say until you change it.", line)
+        row = next(l for l in self.rendered(STATE).splitlines() if l.startswith("| Standing instructions |"))
+        self.assertIn("%s watches, decides or takes over any phase; he has his say" % holder, row)
+
     def test_waiting_items_name_the_game_they_are_due_for(self):
         self.with_items(self.item(question="The test plan: the opening script for the week."))
         game = next(g for g in club_games(self.root) if g["week"] == self.week)

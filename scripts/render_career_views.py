@@ -459,7 +459,7 @@ def job_fields(ctx):
     job = "%s, %s (%s), since %s" % (ctx.show("title", current["title"]), employer.get("club"),
                                      employer.get("league"), day(current["start"]))
     links = [link(ctx, "job record", current_job.JOB.as_posix())]
-    term = current_job.term(ctx.job, ctx.root)
+    term = current_job.term(ctx.job, ctx.root, ctx.master)
     if term["contract"] is not None:
         job += "; contract through the %d season, ending %s" % (max(term["seasons"]), first_clause(
             ctx.show("contract.end", term["end_text"] or "on a date not recorded")))
@@ -644,6 +644,44 @@ def place_name(ctx):
     return ctx.places.get(club, club)
 
 
+# A verb the record writes about the head coach, as the desk writes it to him.
+IRREGULAR = {"has": "have", "is": "are", "does": "do", "goes": "go"}
+
+
+def addressed(verb):
+    """The verb of a third-person clause as the second person says it: calls, call; takes, take."""
+    if verb in IRREGULAR:
+        return IRREGULAR[verb]
+    if re.search(r"(?:ch|sh|ss|x|z)es$", verb):
+        return verb[:-2]
+    if re.search(r"[^aeiou]ies$", verb):
+        return verb[:-3] + "y"
+    return verb[:-1] if verb.endswith("s") else verb
+
+
+def second_person(ctx, text):
+    """A standing instruction as the desk says it to the head coach. The record words it about
+    him in the third person, as Document 5 shows it ("Stone calls, delegates or takes back any
+    phase ...; the arrangement stands until he changes it"); the desk reads "You call, delegate or
+    take back any phase ...; the arrangement stands until you change it". A line that does not
+    open with his name is shown as recorded."""
+    holder = short(ctx, ctx.job.get("holder"))
+    if not text.startswith(holder + " "):
+        return text
+    rest = text[len(holder) + 1:]
+    # The opening series of verbs, "calls, delegates or takes back": each word in it ending in s is
+    # a verb (the particles and the conjunctions do not end in s).
+    series = re.match(r"[a-z]+s(?: (?:back|up|out|in|off|over))?(?:(?:,| or| and|, or|, and) [a-z]+s"
+                      r"(?: (?:back|up|out|in|off|over))?)*\b", rest)
+    if series:
+        rest = re.sub(r"\b[a-z]+s\b", lambda m: addressed(m.group(0)), series.group(0)) + rest[series.end():]
+    rest = re.sub(r"\bhe ([a-z]+)\b", lambda m: "you " + addressed(m.group(1)), rest)
+    rest = re.sub(r"\bhimself\b", "yourself", rest)
+    rest = re.sub(r"\bhis\b", "your", rest)
+    rest = re.sub(r"\bhim\b", "you", rest)
+    return "You " + rest
+
+
 def football(text):
     """The clauses of a recorded line that are football, without process words."""
     kept = [c.strip() for c in str(text).split(";") if c.strip() and not DESK_WORDS.search(c)]
@@ -736,7 +774,8 @@ def _instructions(ctx):
         label = SUBJECT_LABEL.get(subject, subject.replace("_", " ").capitalize() or item.get("id"))
         if item.get("effective"):
             label += ", from " + day(item["effective"])
-        text = football(ctx.show("standing_instructions.%s.summary" % item.get("id"), item.get("summary") or ""))
+        text = second_person(ctx, football(ctx.show("standing_instructions.%s.summary" % item.get("id"),
+                                                     item.get("summary") or "")))
         record = item.get("record") or {}
         if subject == "play_calling":
             record = {"path": rel(ctx, ctx.paths.staff_page), "anchor": CALLING_SECTION}

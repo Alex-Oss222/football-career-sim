@@ -1636,7 +1636,7 @@ Any future proven-performance escalator requires his actual qualifying participa
 
 ### Contract notes
 
-Jacksonville record: selected May 8, 2014 at No. 13; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 13 (Aaron Donald, St. Louis) in the nflverse/OTC historical contracts file, $10,136,500 total and $10,136,500 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. The first-round fifth-year option for 2018 is unexercised and not booked.
+Jacksonville record: selected May 8, 2014 at No. 13; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 13 (Aaron Donald, St. Louis) in the historical contract records, $10,136,500 total and $10,136,500 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. The first-round fifth-year option for 2018 is unexercised and not booked.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/Draft/draftees.md).
 
@@ -1667,7 +1667,7 @@ Any future proven-performance escalator requires his actual qualifying participa
 
 ### Contract notes
 
-Jacksonville record: selected May 8, 2014 at No. 26; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 26 (Marcus Smith, Philadelphia) in the nflverse/OTC historical contracts file, $7,799,102 total and $6,315,587 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years, odd dollars in 2017. The first-round fifth-year option for 2018 is unexercised and not booked.
+Jacksonville record: selected May 8, 2014 at No. 26; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 26 (Marcus Smith, Philadelphia) in the historical contract records, $7,799,102 total and $6,315,587 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years, odd dollars in 2017. The first-round fifth-year option for 2018 is unexercised and not booked.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/Draft/draftees.md).
 
@@ -1698,7 +1698,7 @@ Any future proven-performance escalator requires his actual qualifying participa
 
 ### Contract notes
 
-Jacksonville record: selected May 9, 2014 at No. 38; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 38 (Austin Seferian-Jenkins, Tampa Bay) in the nflverse/OTC historical contracts file, $5,254,932 total and $3,220,629 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years.
+Jacksonville record: selected May 9, 2014 at No. 38; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 38 (Austin Seferian-Jenkins, Tampa Bay) in the historical contract records, $5,254,932 total and $3,220,629 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/Draft/draftees.md).
 
@@ -1729,7 +1729,7 @@ Any future proven-performance escalator requires his actual qualifying participa
 
 ### Contract notes
 
-Jacksonville record: selected May 9, 2014 at No. 90; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 90 (Donte Moncrief, Indianapolis) in the nflverse/OTC historical contracts file, $2,808,520 total and $543,520 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000, the 2017 base carrying the slot contract's $45,000 above the minimum); the signing bonus is the remainder, prorated over four years.
+Jacksonville record: selected May 9, 2014 at No. 90; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 90 (Donte Moncrief, Indianapolis) in the historical contract records, $2,808,520 total and $543,520 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000, the 2017 base carrying the slot contract's $45,000 above the minimum); the signing bonus is the remainder, prorated over four years.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/Draft/draftees.md).
 
@@ -1760,7 +1760,7 @@ Any future proven-performance escalator requires his actual qualifying participa
 
 ### Contract notes
 
-Jacksonville record: selected May 10, 2014 at No. 129; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 129 (Dontae Johnson, San Francisco) in the nflverse/OTC historical contracts file, $2,620,544 total and $400,544 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years.
+Jacksonville record: selected May 10, 2014 at No. 129; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 129 (Dontae Johnson, San Francisco) in the historical contract records, $2,620,544 total and $400,544 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/Draft/draftees.md).
 
@@ -1791,7 +1791,7 @@ Any future proven-performance escalator requires his actual qualifying participa
 
 ### Contract notes
 
-Jacksonville record: selected May 10, 2014 at No. 153; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 153 (Cyril Richardson, Buffalo) in the nflverse/OTC historical contracts file, $2,412,000 total and $192,000 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years.
+Jacksonville record: selected May 10, 2014 at No. 153; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 153 (Cyril Richardson, Buffalo) in the historical contract records, $2,412,000 total and $192,000 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/Draft/draftees.md).
 
@@ -1822,7 +1822,7 @@ Any future proven-performance escalator requires his actual qualifying participa
 
 ### Contract notes
 
-Jacksonville record: selected May 10, 2014 at No. 168; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 168 (Marquis Spruill, Atlanta) in the nflverse/OTC historical contracts file, $2,391,480 total and $171,480 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years.
+Jacksonville record: selected May 10, 2014 at No. 168; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 168 (Marquis Spruill, Atlanta) in the historical contract records, $2,391,480 total and $171,480 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/Draft/draftees.md).
 
@@ -1883,7 +1883,7 @@ Any future proven-performance escalator requires his actual qualifying participa
 
 ### Contract notes
 
-Jacksonville record: selected May 10, 2014 at No. 241; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 241 (Christian Bryant, St. Louis) in the nflverse/OTC historical contracts file, $2,269,000 total and $49,000 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years.
+Jacksonville record: selected May 10, 2014 at No. 241; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 241 (Christian Bryant, St. Louis) in the historical contract records, $2,269,000 total and $49,000 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years.
 
 Sources: [contracts](../../2014/Team_Operations/Finances/player_contracts/contracts.md), [contract status](../../2014/Team_Operations/Finances/player_contracts/contract_status.md), [draftees](../../2014/Draft/draftees.md).
 

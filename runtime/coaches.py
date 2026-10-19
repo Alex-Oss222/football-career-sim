@@ -13,16 +13,22 @@ with only the keys its kind allows (ENTRY_KEYS):
   record; this entry only dates the change in his history, and repository
   validation checks it against that delegation;
 - ``contract_signed``: the contract as signed (``contract`` names it): the
-  seasons, the salary by season (``salary`` is always present; null when the
-  signed contract stated none), the seasons guaranteed, the offset, any
+  seasons, the salary by season (``salary`` is always present: null when the
+  signed contract stated none, otherwise a salary for every season of the
+  term, so a dropped season fails), the seasons guaranteed, the offset, any
   signing bonus and the other signed terms;
 - ``contract_amended``: terms completed or changed later. Its date is
   ``in_world``, the day within the career it applies from; amendments are
-  ordered and applied by it. ``recorded`` keeps the real-world day the
-  amendment was written. A term completed from comparable contracts of the
-  time, not signed, is a ``reconstruction``; each such term names its
-  ``basis``: the ``text``, the ``source`` and ``from``, the plain words the
-  pages use for where it came from;
+  ordered and applied by it, and the contract on a given day holds only the
+  amendments in force on it (``in_world`` on or before that day), so a page
+  built for a day never shows a later one. Repository validation refuses an
+  amendment dated after the master date. ``recorded`` keeps the real-world
+  day the amendment was written. The contract as amended still needs a
+  salary for every season of its term once any salary is stated. A term
+  completed from comparable contracts of the time, not signed, is a
+  ``reconstruction``; each such term names its ``basis``: the ``text``, the
+  ``source`` and ``from``, the plain words the pages use for where it came
+  from;
 - ``departed``: the day he left, where he went and the last season his
   contract paid.
 
@@ -177,18 +183,21 @@ def employed(record, club):
     return hire is not None and (gone is None or day(gone["date"]) < day(hire["date"]))
 
 
-def contract(record, contract_id):
-    """The contract as it stands: the signed terms with every amendment applied in in-world
-    order, plus ``reconstructed`` ({term: basis} of the terms still completed from comparable
-    contracts), ``amended`` (the amendment entries, in in-world order) and ``last_season`` after
-    a departure. An amendment's salary sets the seasons it names and keeps the others."""
+def contract(record, contract_id, on=None):
+    """The contract as it stands on day ``on`` (a date; None: with every amendment): the signed
+    terms with each amendment in force on that day (``in_world`` on or before it) applied in
+    in-world order, plus ``reconstructed`` ({term: basis} of the terms still completed from
+    comparable contracts), ``amended`` (the amendment entries applied, in in-world order) and
+    ``last_season`` after a departure. An amendment's salary sets the seasons it names and keeps
+    the others."""
     signed = next((e for e in entries(record, "contract_signed") if e.get("contract") == contract_id), None)
     if signed is None:
         raise ValueError("%s has no contract %s" % (record.get("name"), contract_id))
     terms = {key: signed.get(key) for key in TERMS + ("club", "job", "terms")}
     terms.update(id=contract_id, signed=signed, reconstructed={}, amended=[], last_season=None)
     completed_seasons = set()
-    amendments = [e for e in entries(record, "contract_amended") if e.get("contract") == contract_id]
+    amendments = [e for e in entries(record, "contract_amended") if e.get("contract") == contract_id
+                  and (on is None or day(e["in_world"]) <= on)]
     for amendment in sorted(amendments, key=lambda e: day(e["in_world"])):
         terms["amended"].append(amendment)
         for key, given in (amendment.get("terms") or {}).items():
@@ -238,10 +247,11 @@ def scheduled(terms):
     return {int(s): v for s, v in sorted(salary.items()) if v is not None and (last is None or int(s) <= last)}
 
 
-def current_contract(record, club=None):
-    """The latest contract he signed (with ``club``), as it stands, or None."""
+def current_contract(record, club=None, on=None):
+    """The latest contract he signed (with ``club``), as it stands on day ``on`` (``contract``),
+    or None."""
     signed = [e for e in entries(record, "contract_signed") if club is None or e.get("club") == club]
-    return contract(record, signed[-1]["contract"]) if signed else None
+    return contract(record, signed[-1]["contract"], on) if signed else None
 
 
 def end_date(terms):
@@ -281,6 +291,23 @@ def years_text(seasons):
     return seasons[0] if len(seasons) == 1 else ", ".join(seasons[:-1]) + " and " + seasons[-1]
 
 
+def salary_error(salary, seasons):
+    """Why a salary does not give every season of a contract its salary, or None: a stated salary
+    maps each season of the term, and only those, to a whole number of dollars."""
+    if not isinstance(salary, dict) or not all(isinstance(k, str) and k.isdigit() for k in salary):
+        return "a season-by-season mapping"
+    given = sorted(int(k) for k in salary)
+    if given != sorted(seasons):
+        missing = sorted(set(seasons) - set(given))
+        outside = sorted(set(given) - set(seasons))
+        return "a salary for every season of the term (%s)" % "; ".join(
+            x for x in ("missing %s" % ", ".join(map(str, missing)) if missing else "",
+                        "outside the term %s" % ", ".join(map(str, outside)) if outside else "") if x)
+    if not all(type(v) is int and v >= 0 for v in salary.values()):
+        return "a whole number of dollars for each season"
+    return None
+
+
 def _sourced(root, value):
     return isinstance(value, str) and bool(value) and (Path(root) / value).is_file()
 
@@ -296,8 +323,9 @@ def _keys_error(where, item, required, optional):
     return None
 
 
-def record_errors(slug, record, root=ROOT):
-    """Schema errors for one coach record; empty when it is well formed."""
+def record_errors(slug, record, root=ROOT, master=None):
+    """Schema errors for one coach record; empty when it is well formed. With ``master`` (the
+    master date), an amendment dated after it fails: the career has not reached it."""
     root = Path(root)
     label = "%s/%s.json" % (COACH_RECORDS, slug)
     keys = set(record)
@@ -332,8 +360,9 @@ def record_errors(slug, record, root=ROOT):
             if not (entry.get("contract") and entry.get("club") and seasons and seasons == sorted(seasons)):
                 errors.append("%s: a signed contract needs an id, a club and its seasons in order" % where)
             salary = entry.get("salary")
-            if salary is not None and (not isinstance(salary, dict) or set(map(int, salary)) - set(seasons)):
-                errors.append("%s: salary must be null or a season-by-season mapping inside the contract" % where)
+            problem = None if salary is None else salary_error(salary, seasons)
+            if problem:
+                errors.append("%s: salary must be null (none stated) or %s" % (where, problem))
             if set(entry.get("guaranteed") or ()) - set(seasons):
                 errors.append("%s: a guaranteed season outside the contract" % where)
         if kind == "contract_amended":
@@ -341,6 +370,9 @@ def record_errors(slug, record, root=ROOT):
                 errors.append("%s: amends no earlier signed contract" % where)
             if not DATE_FORM.match(str(entry.get("recorded", ""))):
                 errors.append("%s: an amendment needs the real-world day it was recorded" % where)
+            if master is not None and day(entry["in_world"]) > master:
+                errors.append("%s: an amendment dated after the master date (%s); the career has not reached "
+                              "it" % (where, master.isoformat()))
             bad = set(entry.get("terms") or {}) - set(TERMS)
             if bad or not entry.get("terms"):
                 errors.append("%s: an amendment's terms must be among %s" % (where, ", ".join(TERMS)))
@@ -353,6 +385,15 @@ def record_errors(slug, record, root=ROOT):
                                   "source)" % (where, key))
         if kind == "departed" and not isinstance(entry.get("last_season"), int):
             errors.append("%s: a departure names the last season his contract paid" % where)
+    for contract_id in signed_ids:
+        try:
+            amended = contract(record, contract_id)
+        except (ValueError, TypeError, KeyError, AttributeError):
+            continue
+        if amended["amended"] and amended.get("salary") is not None:
+            problem = salary_error(amended["salary"], amended.get("seasons") or [])
+            if problem:
+                errors.append("%s: contract %s as amended needs %s" % (label, contract_id, problem))
     dated = [day(when(e)) for e in record["entries"] if DATE_FORM.match(str(when(e) or ""))]
     if dated != sorted(dated):
         errors.append("%s: entries must be in date order (an amendment by its in-world date)" % label)
@@ -390,7 +431,10 @@ def repository_errors(root=ROOT):
 
 
 def all_errors(root=ROOT):
+    """Every coach record's schema errors, an amendment dated after the master date among them."""
+    from .player_bios import master_date
+    master = master_date(root)
     errors = repository_errors(root)
     for slug, record in load_all(root).items():
-        errors += record_errors(slug, record, root)
+        errors += record_errors(slug, record, root, master)
     return errors

@@ -102,6 +102,7 @@ RECORD_NOTES = (
     (re.compile(r'\bthe library records no proration rule\b'), 'no league proration rule is on file'),
     (re.compile(r"\bthe library's Confirmed (\d{4}) figure\b"), r'the confirmed \1 league figure'),
     (re.compile(r'\(library section \w+, Confirmed\)'), '(confirmed league figure)'),
+    (re.compile(r'\bthe nflverse/OTC historical contracts file\b'), 'the historical contract records'),
     (re.compile(r'(?<=[a-z]) (Waived|Released) (?=(?:January|February|March|April|May|June|July|August|'
                 r'September|October|November|December) \d)'), r'. \1 '),
     (re.compile(r'\b([Tt]he(?: earlier)?) ((?:Rookie|Veteran|UDFA|udfa|Reserve/future)[^;.]*?) ended\b'), contract_name),
@@ -464,23 +465,24 @@ def render_details(d,years):
     return ''.join(out).rstrip()+'\n'
 
 
-def organization_staff(root, years):
-    """[(record, contract as it stands, {year: salary})] of every coach whose contract schedules
-    salary in the horizon: the head coach first, then by first-year salary and name. A coach still
-    on a staff by his record whose latest contract there schedules no salary fails, so a broken
-    record cannot drop him from the payroll."""
+def organization_staff(root, years, on=None):
+    """[(record, contract as it stands on day ``on``, {year: salary})] of every coach whose
+    contract schedules salary in the horizon: the head coach first, then by first-year salary and
+    name. ``on`` keeps an amendment dated after it off the page (None: every amendment). A coach
+    still on a staff by his record whose latest contract there schedules no salary fails, so a
+    broken record cannot drop him from the payroll."""
     from runtime import coaches
     rows, missing = [], []
     for record in coaches.load_all(root).values():
         for signed in coaches.entries(record, 'contract_signed'):
-            terms = coaches.contract(record, signed['contract'])
+            terms = coaches.contract(record, signed['contract'], on)
             salary = {str(y): v for y, v in coaches.scheduled(terms).items() if str(y) in years}
             if salary:
                 rows.append((record, terms, salary))
         for hire in coaches.entries(record, 'hired'):
             club = hire.get('club')
             if hire is coaches.hired(record, club) and coaches.employed(record, club):
-                terms = coaches.current_contract(record, club)
+                terms = coaches.current_contract(record, club, on)
                 if terms is None or not coaches.scheduled(terms):
                     missing.append('%s (%s)' % (record.get('name'), club))
     if missing:
@@ -505,8 +507,10 @@ def render_organization(data, years, root):
     """The coaching payroll, read from the coach records (data/people/coaches): every contract
     scheduling salary in the horizon, the payroll by season, the guarantee, the basis of each
     completed term and the contracts ending. The page is dated by its latest contract change,
-    never the master date. Links are written against the page's first home, career/finances/,
-    and rebased by render()."""
+    never the master date; it shows each contract as it stands on the master date, so an
+    amendment dated later never applies (repository validation refuses one, so the page does not
+    move with the date alone). Links are written against the page's first home,
+    career/finances/, and rebased by render()."""
     import os
     from runtime import coaches
     from runtime.season_layout import STONE_PAGES
@@ -515,7 +519,9 @@ def render_organization(data, years, root):
     finances = root / 'career' / 'finances'
     def here(path):
         return os.path.relpath(path, finances).replace(os.sep, '/')
-    staff = organization_staff(root, years)
+    from runtime.player_bios import master_date
+    on = master_date(root)
+    staff = organization_staff(root, years, on)
     if not staff:
         raise ValueError('No coach contract schedules salary in the horizon; reconcile the coach records')
     season = int(repository_map(root)['active_season'])
@@ -535,7 +541,7 @@ def render_organization(data, years, root):
     departed = []
     for record in coaches.load_all(root).values():
         for leave in coaches.entries(record, 'departed'):
-            terms = coaches.current_contract(record, leave.get('club'))
+            terms = coaches.current_contract(record, leave.get('club'), on)
             unpaid = {s: v for s, v in (terms.get('salary') or {}).items() if int(s) > leave['last_season']}
             if any(s in years for s in unpaid):
                 departed.append('%s left on %s; his %s salary of %s ended with the move and is not counted.' % (
@@ -557,11 +563,13 @@ def render_organization(data, years, root):
                 line += ', and his %s from %s' % (listed(names[k] for k in keys), source)
             completed.append(line + '; the rest is as signed')
     # The page is dated by the latest contract fact it shows (a signing, an amendment by its
-    # in-world date, or a departure), so it changes only when a coach contract does.
+    # in-world date, in force on the master date, or a departure), so it changes only when a
+    # coach contract does.
     shown = [e for record, _, _ in staff for e in coaches.entries(record)
-             if e['kind'] in ('contract_signed', 'contract_amended')]
+             if e['kind'] == 'contract_signed' or (e['kind'] == 'contract_amended'
+                                                   and coaches.day(e['in_world']) <= on)]
     shown += [e for record in coaches.load_all(root).values() for e in coaches.entries(record, 'departed')
-              if any(str(s) in years for s in (coaches.current_contract(record, e.get('club')) or {}).get('salary') or {}
+              if any(str(s) in years for s in (coaches.current_contract(record, e.get('club'), on) or {}).get('salary') or {}
                      if int(s) > e['last_season'])]
     latest = max(shown, key=lambda e: coaches.day(coaches.when(e)))
     out = ('# Coaching payroll\n\n'

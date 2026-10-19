@@ -415,13 +415,26 @@ def staff_lines(ctx):
     return out
 
 
+def party_names(ctx, pids):
+    """The parties joined in one phrase: a group's name takes a small letter after the first
+    ("Team medical staff and team communications staff"); a person's name is as recorded."""
+    parties = ctx.job.get("parties") or {}
+    names = []
+    for i, pid in enumerate(pids):
+        name = current_job.party_name(ctx.job, pid)
+        if i and (parties.get(pid) or {}).get("kind") == "group":
+            name = name[:1].lower() + name[1:]
+        names.append(name)
+    return " and ".join(names)
+
+
 def authority_rows(ctx):
     current = current_job.appointment(ctx.job) or {}
     rows = []
     for d in (current.get("authority") or {}).get("domains", ()):
         if d.get("stone_action") == "not_applicable" or not d.get("final"):
             continue
-        who = " and ".join(current_job.party_name(ctx.job, p) for p in d["final"])
+        who = party_names(ctx, d["final"])
         part = ACTIONS[d["stone_action"]]
         scope = d.get("scope")
         if scope and not re.search(r"\brow\b", scope, re.I):
@@ -517,15 +530,61 @@ ENTRY_KEYS = ("date", "recorded", "event", "change", "sources")
 # exactly when it was reworded for the page and never rendered.
 ENTRY_OPTIONAL = ("events", "as_written")
 AS_WRITTEN_KEYS = ("date", "event", "source", "change")
+MONTHS = "January|February|March|April|May|June|July|August|September|October|November|December"
+# How an entry's date is shown: the long form of the day it was recorded ("October 5, 2014"), or
+# built from it: a window ending on it ("April 4 to 7, 2014", "September 29 to October 4, 2014"),
+# a note on the same day ("February 28, 2014 review"), or the day it happened with the day it was
+# recorded ("May 12, 2014 (recorded May 23)").
+SHOWN_DATE = re.compile(r"^(?P<month>%(m)s) (?P<day>\d{1,2})(?: to (?:(?P<end_month>%(m)s) )?(?P<end_day>\d{1,2}))?, "
+                        r"(?P<year>\d{4})(?: (?:review|correction))?"
+                        r"(?: \(recorded (?P<rec_month>%(m)s) (?P<rec_day>\d{1,2})\))?$" % {"m": MONTHS})
+
+
+def shown_recorded(text):
+    """The day an entry's shown date says it was recorded, or None when it is not built from one:
+    the "(recorded ...)" day if it names one, else the window's last day, else the day itself. The
+    first day it names may not come after that day (a window that crosses the new year starts in
+    the year before)."""
+    m = SHOWN_DATE.match(text) if isinstance(text, str) else None
+    if not m:
+        return None
+    month = lambda name: MONTHS.split("|").index(name) + 1
+    year = int(m["year"])
+    try:
+        first = date(year, month(m["month"]), int(m["day"]))
+        if m["rec_month"]:
+            last = date(year, month(m["rec_month"]), int(m["rec_day"]))
+        elif m["end_day"]:
+            last = date(year, month(m["end_month"] or m["month"]), int(m["end_day"]))
+            if m["end_month"] and first > last:
+                first = first.replace(year=year - 1)
+        else:
+            last = first
+    except ValueError:
+        return None
+    return last if first <= last else None
+
+
+def career_page(root, page):
+    """Whether ``page`` (a repository path, with any anchor) names, after normalizing, an existing
+    Markdown page under career/: career/../AGENTS.md does not."""
+    path = page.split("#")[0] if isinstance(page, str) else ""
+    normal = os.path.normpath(path).replace(os.sep, "/") if path else ""
+    if not normal.startswith("career/") or not normal.endswith(".md"):
+        return False
+    target = (Path(root) / normal).resolve()
+    return target.is_file() and target.is_relative_to((Path(root) / "career").resolve())
 
 
 def log_errors(log, root=ROOT):
     """The depth chart's update log against its form: the record's keys, each entry's required and
-    allowed keys, an ISO recorded date, entries oldest first, and sources that are pages under
-    career/ that exist."""
+    allowed keys, a recorded ISO date no later than the master date, a shown date that is the long
+    form of the recorded date or built from it (``shown_recorded``), entries oldest first, and
+    sources that are existing pages under career/ (``career_page``)."""
     root = Path(root)
     if not isinstance(log, dict) or set(log) != set(LOG_KEYS) or not isinstance(log["entries"], list):
         return ["Depth chart update log must hold exactly %s" % ", ".join(LOG_KEYS)]
+    master = master_date(root)
     errors, previous = [], None
     for i, e in enumerate(log["entries"], 1):
         where = "Depth chart update log entry %d" % i
@@ -541,14 +600,18 @@ def log_errors(log, root=ROOT):
             recorded = None
         if recorded and previous and recorded < previous:
             errors.append("%s: recorded %s is earlier than the entry before it" % (where, e["recorded"]))
+        if recorded and recorded > master:
+            errors.append("%s: recorded %s is after the master date %s" % (where, e["recorded"], master.isoformat()))
+        if recorded and shown_recorded(e["date"]) != recorded:
+            errors.append("%s: the date %r must be the long form of recorded %s (%s) or built from it"
+                          % (where, e["date"], e["recorded"], long_date(recorded)))
         previous = recorded or previous
         if not isinstance(e["sources"], list) or not e["sources"]:
             errors.append("%s: needs at least one source" % where)
         for s in e["sources"] if isinstance(e["sources"], list) else ():
             page = s.get("page", "") if isinstance(s, dict) else ""
             if (not isinstance(s, dict) or set(s) != {"label", "page"} or not s.get("label")
-                    or not page.startswith("career/") or not page.split("#")[0].endswith(".md")
-                    or not (root / page.split("#")[0]).is_file()):
+                    or not career_page(root, page)):
                 errors.append("%s: a source must be a labelled page under career/ that exists: %r" % (where, s))
         if "events" in e and (not isinstance(e["events"], list) or not all(isinstance(x, str) and x for x in e["events"])):
             errors.append("%s: events must be a list of event ids" % where)

@@ -76,21 +76,23 @@ def appointment(job):
     return next((a for a in job.get("appointments") or () if a.get("id") == job.get("current_appointment")), None)
 
 
-def contract_terms(job, root):
-    """The current appointment's contract as it stands (runtime/coaches.contract), read from
-    the coach record its ``contract_record`` names; None between jobs or without a pointer."""
+def contract_terms(job, root, on=None):
+    """The current appointment's contract as it stands on day ``on`` (runtime/coaches.contract:
+    only the amendments in force on it; None: all of them), read from the coach record its
+    ``contract_record`` names; None between jobs or without a pointer."""
     from . import coaches
     pointer = (appointment(job) or {}).get("contract_record")
     if not pointer:
         return None
-    return coaches.contract(coaches.load(pointer["coach"], root), pointer["contract"])
+    return coaches.contract(coaches.load(pointer["coach"], root), pointer["contract"], on)
 
 
-def term(job, root):
-    """The current appointment's term from its contract: ``end_date`` (the earliest day it can
-    end), ``end_text`` (the whole end rule), ``seasons`` and the ``contract`` itself."""
+def term(job, root, on=None):
+    """The current appointment's term from its contract on day ``on``: ``end_date`` (the
+    earliest day it can end), ``end_text`` (the whole end rule), ``seasons`` and the
+    ``contract`` itself."""
     from . import coaches
-    terms = contract_terms(job, root)
+    terms = contract_terms(job, root, on)
     if terms is None:
         return {"end_date": None, "end_text": None, "seasons": [], "contract": None}
     end = terms.get("end") or {}

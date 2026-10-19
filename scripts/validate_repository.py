@@ -766,13 +766,20 @@ def validate(root=ROOT):
     return errors
 
 
+LINK_TITLE = r'(?:"[^"\n]*"|\'[^\'\n]*\'|\([^()\n]*\))'
+# A destination in angle brackets (<path>, which may hold spaces) or bare; the same forms as the
+# clean-page check (runtime/clean_pages.LINK and REFERENCE).
+LINK_DEST = r'(<[^<>\n]*>|[^\s)<>]+)'
+
+
 def link_destinations(content):
-    """Every link destination of a Markdown text: inline links, links with a title
-    ([x](path "t")) and reference definitions ([x]: path)."""
-    dests = re.findall(r'\[[^\]\n]+\]\(([^\s)]+)\)', content)
-    dests += re.findall(r'\[[^\]\n]+\]\(\s*<?([^\s<>()]+)>?\s+(?:"[^"\n]*"|\'[^\'\n]*\'|\([^()\n]*\))\s*\)', content)
-    dests += re.findall(r'(?m)^ {0,3}\[[^\]\n^][^\]\n]*\]:\s*<?([^\s<>]+)>?', content)
-    return dests
+    """Every link destination of a Markdown text: inline links, with or without a title
+    ([x](path "t")), in angle brackets ([x](<path>)) or with spaces around them ([x]( path )),
+    and reference definitions ([x]: path, [x]: <path>). Angle brackets and the spaces around a
+    destination are not part of it."""
+    dests = re.findall(r'\[[^\]\n]+\]\(\s*' + LINK_DEST + r'(?:\s+' + LINK_TITLE + r')?\s*\)', content)
+    dests += re.findall(r'(?m)^ {0,3}\[[^\]\n^][^\]\n]*\]:\s*(<[^<>\n]*>|[^\s<>]+)', content)
+    return [d[1:-1].strip() if d.startswith('<') and d.endswith('>') else d for d in dests]
 
 
 def main():

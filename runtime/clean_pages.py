@@ -7,14 +7,18 @@ register keys, snake_case names, code spans, entry numbers), links to a system
 file (.json, .py, .csv and the like) or into the data area or the code,
 names a script or module, carries HTML markup other than the page builder's
 own invisible markers (runtime/player_pages.MARKERS) and the event-record
-marker an event owner carries on a line of its own (runtime/events.EVENT_META,
-the whole line), a policy note, a disclaimer or a version label, or uses the
+marker an event owner carries on a line of its own (runtime/events.EVENT_META:
+the whole line is exactly one marker holding one JSON object; two markers on
+a line, or text beside one, is markup), a policy note, a disclaimer or a
+version label, or uses the
 words engine, branch, receipt,
 kernel, ledger, snapshot, checkpoint or simulation. A player's full name
 that contains one of the words (Andre Branch, Tyvon Branch) is allowed by
 name, from the birth-date registry and the permanent player records; any
 other use of the word is caught. Every link form is checked: inline links,
-links with a title ([x](path "t")) and reference definitions ([x]: path).
+links with a title ([x](path "t")), destinations in angle brackets
+([x](<path>)) or with spaces around them ([x]( path )), and reference
+definitions ([x]: path, [x]: <path>).
 
 The page history map is pinned: ``history_pin_errors`` fails when the map's
 bytes no longer match the digest the folder map records beside it
@@ -88,12 +92,15 @@ POLICY = re.compile(r"(\bdisclaimer|\bpolicy note|\b(?:evaluation|assessment|rec
                     r"\bplaceholder\b|\bTODO\b|\bTBD\b)", re.I)
 VERSION = re.compile(r"(\bv\d+(?:\.\d+)*\b|\bversion \d|\bschema\b|\b20\d\d\.\d\b|\bsha-?256\b)", re.I)
 HTML = re.compile(r"<[A-Za-z!/][^>]*>")
-# A link destination may hold one level of parentheses (photo source pages do).
-LINK = re.compile(r"(!?)\[([^\]\n]*)\]\(((?:[^()\s]|\([^()\s]*\))+)\)")
-# A link with a title ([x](path "t")) and a reference definition ([x]: path "t"), checked like a link.
+# A link's title ([x](path "t"), [x]: path 't', [x](path (t))).
 TITLE = r"(?:\"[^\"\n]*\"|'[^'\n]*'|\([^()\n]*\))"
-TITLED_LINK = re.compile(r"(!?)\[([^\]\n]*)\]\(\s*<?([^\s<>()]+)>?\s+" + TITLE + r"\s*\)")
-REFERENCE = re.compile(r"^ {0,3}\[([^\]\n^][^\]\n]*)\]:\s*<?([^\s<>]+)>?(?:\s+" + TITLE + r")?\s*$")
+# A link destination: in angle brackets (<path>, which may hold spaces), or bare, holding one level
+# of parentheses (photo source pages do).
+DEST = r"(<[^<>\n]*>|(?:[^()\s<>]|\([^()\s]*\))+)"
+# An inline link, with any spaces around its destination and an optional title, and a reference
+# definition ([x]: path "t"); both are checked like any link.
+LINK = re.compile(r"(!?)\[([^\]\n]*)\]\(\s*" + DEST + r"(?:\s+" + TITLE + r")?\s*\)")
+REFERENCE = re.compile(r"^ {0,3}\[([^\]\n^][^\]\n]*)\]:\s*(<[^<>\n]*>|[^\s<>]+)(?:\s+" + TITLE + r")?\s*$")
 SYSTEM_SUFFIXES = (".json", ".jsonl", ".py", ".csv", ".gz", ".sqlite", ".db", ".yml", ".yaml", ".toml", ".sh",
                    ".txt", ".pkl", ".log")
 SYSTEM_DIRS = ("data", "runtime", "scripts", "tests", ".sim_cache")
@@ -120,6 +127,26 @@ def proper_names(root=ROOT):
 _NAMES = {}
 
 
+def destination(raw):
+    """A link destination as written, without its angle brackets and the spaces around it."""
+    dest = raw.strip()
+    if dest.startswith("<") and dest.endswith(">"):
+        dest = dest[1:-1].strip()
+    return dest
+
+
+def event_marker(line):
+    """Whether ``line`` (stripped) is exactly one event-record marker (runtime/events.EVENT_META)
+    and nothing else: one opening, one closing and one JSON object between them."""
+    match = EVENT_META.fullmatch(line)
+    if not match or line.count("<!--") != 1 or line.count("-->") != 1:
+        return False
+    try:
+        return isinstance(json.loads(match.group(1)), dict)
+    except ValueError:
+        return False
+
+
 def page_errors(rel, text, markers=(), root=ROOT, first_line=1):
     """The clean-page problems of one page (``rel`` is its repository path; ``first_line`` numbers
     the first line of ``text`` when it is the appended part of a history page); a player's name
@@ -128,12 +155,12 @@ def page_errors(rel, text, markers=(), root=ROOT, first_line=1):
     names = proper_names(root)
     lines = text.splitlines()
     for number, line in enumerate(lines, first_line):
-        if line.strip() in markers or EVENT_META.fullmatch(line.strip()):
+        if line.strip() in markers or event_marker(line.strip()):
             continue
         found = []
         reference = REFERENCE.match(line)
-        dests = [m.group(3) for m in LINK.finditer(line)] + [m.group(3) for m in TITLED_LINK.finditer(line)]
-        dests += [reference.group(2)] if reference else []
+        dests = [destination(m.group(3)) for m in LINK.finditer(line)]
+        dests += [destination(reference.group(2))] if reference else []
         for dest in dests:
             parts = urlsplit(dest)
             if parts.scheme or parts.netloc:
@@ -143,8 +170,7 @@ def page_errors(rel, text, markers=(), root=ROOT, first_line=1):
             segments = [s for s in re.split(r"/+", _normalise(target)) if s]
             if path.endswith(SYSTEM_SUFFIXES) or (segments and segments[0] in SYSTEM_DIRS):
                 found.append("link to a system file: %s" % dest)
-        prose = reference.group(1) if reference else TITLED_LINK.sub(lambda m: m.group(2), line)
-        prose = LINK.sub(lambda m: m.group(2), prose)
+        prose = reference.group(1) if reference else LINK.sub(lambda m: m.group(2), line)
         prose = re.sub(r"https?://\S+", "", prose)
         for pattern in ALLOWED + ((names,) if names else ()):
             prose = pattern.sub(" ", prose)
