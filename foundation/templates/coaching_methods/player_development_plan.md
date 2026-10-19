@@ -1,6 +1,6 @@
 # Living player plan template
 
-Use for an actual teaching question. Save the filled plan at `career/<year>/00_Team_Operations/Player_Development/<player>.md`; keep the full personnel assessment in the annual card.
+Use for an actual teaching question. Save the filled plan at `career/<year>/Team_Operations/Player_Development/<player>.md`; keep the full personnel assessment in the annual card.
 
 **Player / position / owner:** enter when prepared. **Evidence cutoff and current eligibility:** verify actual control and physical/cognitive instructions. **Status:** synthesis and proposed work; no session or player response implied.
 
@@ -34,7 +34,7 @@ New questions can be explored while an unrelated correction remains open. Materi
 
 ## Completed work and next opportunity
 
-After an actual event, link the phase or game report that owns the assignment, support/opposition, observed response and coaching interpretation. Update only this teaching task's status and proposed next work here; preserve earlier instructions and link any changed plan to the evidence that justified it. Material personnel judgments belong in a dated update to the existing opening card; the separate full final assessment follows season close. Link actual film distribution in that season's `00_Team_Operations/Film/delivery_log.md` separately; delivery is not mastery.
+After an actual event, link the phase or game report that owns the assignment, support/opposition, observed response and coaching interpretation. Update only this teaching task's status and proposed next work here; preserve earlier instructions and link any changed plan to the evidence that justified it. Material personnel judgments belong in a dated update to the existing opening card; the separate full final assessment follows season close. Link actual film distribution in that season's `Team_Operations/Film/delivery_log.md` separately; delivery is not mastery.
 
 ## Carry forward
 

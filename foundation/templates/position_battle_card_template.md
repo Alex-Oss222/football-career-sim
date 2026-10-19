@@ -2,7 +2,7 @@
 
 Create a card only for an identifiable contest during offseason training, camp or preseason: a named spot, at least two actual candidates and a documented opportunity to compete. An open roster place alone does not establish a battle. Use the [shared assessment method](training_camp_and_preseason/player_assessment.md); do not force a challenger, equal repetitions or a winner.
 
-Store one card per spot under `career/<year>/04_Training_Camp_and_Preseason/Position_Battles/<Offense|Defense|Special_Teams>/<Position>/<Spot>.md`. A spring contest uses the same card and links its spring evidence. Show only actual cards in navigation. The roster/depth owner records an appointment; preserve the decided card as dated history and remove it from the open list. Do not generate another card after preseason under this workflow.
+Store one card per spot under `career/<year>/Training_Camp_and_Preseason/Position_Battles/<Offense|Defense|Special_Teams>/<Position>/<Spot>.md`. A spring contest uses the same card and links its spring evidence. Show only actual cards in navigation. The roster/depth owner records an appointment; preserve the decided card as dated history and remove it from the open list. Do not generate another card after preseason under this workflow.
 
 Use the exact role. WR1/WR2 are depth roles; X, Z, slot and the playbook's Y are assignments. Separate two jobs only when each is actually contested. A player competing for both still has one opening annual assessment, not two copied dossiers.
 
