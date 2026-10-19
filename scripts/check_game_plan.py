@@ -112,10 +112,15 @@ class Plan:
         return out
 
     def standing(self):
-        """{kind: block} of each standing decision rule whose record is a frozen sheet's block."""
+        """{kind: block} of each standing decision rule in force: the block stored on the instruction
+        (the fourth-down rule), or the frozen sheet's block its record points at (the two-point and
+        kickoff rules)."""
         out = {}
         for item in current_job.instructions(self.job):
             subject, record = item.get("subject"), item.get("record") or {}
+            if subject in STATUS_WORDS and isinstance(item.get("block"), dict):
+                out[subject] = json.loads(json.dumps(item["block"]))
+                continue
             if subject not in STATUS_WORDS or not str(record.get("path", "")).endswith(".json"):
                 continue
             try:
@@ -146,8 +151,21 @@ class Plan:
                                     "before any draw" % (today, self.week), provenance, JAX,
                                     active_defensive_book(self.root), self.week)
 
+    def filled(self):
+        """The decision kinds whose standing rule takes Tice's first call on each matching menu."""
+        return {item.get("subject") for item in current_job.instructions(self.job)
+                if item.get("prepared_calls") == game_plan.FIRST_ON_MENU}
+
     def sheet(self):
-        return game_plan.build_sheet(self.choices, self.frame(), self.carried(), self.standing())
+        sheet = game_plan.build_sheet(self.choices, self.frame(), self.carried(), self.standing())
+        for kind in self.filled():
+            entry = self.choices.get(kind)
+            block = (sheet.get("decisions") or {}).get(kind)
+            if isinstance(entry, dict) and entry.get("standing") and block is not None:
+                prepared = game_plan.first_calls(sheet.get("offensive_call_sheet"))
+                if prepared:
+                    block["prepared_calls"] = prepared
+        return sheet
 
     def inactives(self):
         """The players the page lists inactive (or Week N's list, carried)."""
@@ -217,10 +235,7 @@ def required(plan):
     for kind, words in STATUS_WORDS.items():
         entry = plan.choices.get(kind)
         if isinstance(entry, dict) and entry.get("standing") and kind not in plan.standing():
-            out.append("%s: no standing rule is on file as rules the staff can set; write the rules here"
-                       % words if kind != "fourth_down" else
-                       "Fourth downs: your standing rule is on file in your words only; write it here as rules "
-                       "(distance, yards to the goal line, decision and call)")
+            out.append("%s: no standing rule is on file as rules the staff can set; write the rules here" % words)
     return out
 
 

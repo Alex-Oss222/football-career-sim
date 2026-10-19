@@ -201,7 +201,7 @@ class CheckTests(unittest.TestCase):
         from scripts.validate_repository import validate
         players = needed_inactives(self.root, self.week)
         self.write({"inactives": {"players": players}, "depth": "none", "practice": ["None beyond the plan."],
-                    "offense": {"same_as": self.previous}, "fourth_down": {"same_as": self.previous},
+                    "offense": {"same_as": self.previous}, "fourth_down": {"standing": True},
                     "two_point": {"standing": True}, "kickoff": {"standing": True},
                     "defense": {"same_as": self.previous}, "special_teams": "none", "notes": "none"})
         problems, _, _ = self.check()
@@ -215,6 +215,10 @@ class CheckTests(unittest.TestCase):
         self.assertEqual(sheet["offensive_call_sheet"], before["offensive_call_sheet"])
         self.assertEqual(sheet["defensive_call_sheet"], before["defensive_call_sheet"])
         self.assertEqual(sheet["decisions"]["two_point"], before["decisions"]["two_point"])
+        # Standing rule: the stored fourth-down block, with Tice's first call on each matching menu.
+        block = sheet["decisions"]["fourth_down"]
+        self.assertEqual({k: v for k, v in block.items() if k != "prepared_calls"}, standing_block(self.root))
+        self.assertEqual(block["prepared_calls"], game_plan.first_calls(sheet["offensive_call_sheet"]))
         chart = json.loads(paths.depth_chart.read_text(encoding="utf-8"))
         self.assertEqual(chart["game_day_inactives"]["week"], self.week)
         self.assertEqual(chart["game_day_inactives"]["players"], players)
@@ -224,6 +228,63 @@ class CheckTests(unittest.TestCase):
         self.assertTrue(settled)
         self.assertTrue(all(i["status"] == "RESOLVED" and i["resolution"]["by"] == "user" for i in settled))
         self.assertEqual(validate(self.root), [])
+
+
+def standing_block(root=ROOT):
+    from runtime import current_job
+    job = current_job.load(root)
+    rule = next(i for i in current_job.instructions(job) if i["id"] == "stone-fourth-down-rule")
+    return rule["block"]
+
+
+class FourthDownRuleTests(unittest.TestCase):
+    """Stone's standing fourth-down rule as a decisions.fourth_down block, against its words:
+    "fourth-and-2 or less, go, with Tice's first call on the matching menu; fourth-and-3 or 4, go on
+    the opponent's side of midfield, otherwise the field goal or the punt by the field-goal line;
+    fourth-and-5 or more, a field goal when the kick is 52 yards or less, otherwise a punt". A kick is
+    the line of scrimmage (yards to the goal line) plus the bound artifact's field-goal snap offset."""
+
+    # (yards to go, yards to the goal line, goal to go, decision, why)
+    CASES = (
+        (1, 70, False, "go", "4th-and-1 at the own 30"),
+        (2, 99, False, "go", "4th-and-2 at the own 1"),
+        (1, 2, True, "go", "4th-and-1 at the 2, as Week 5 read it"),
+        (3, 45, False, "go", "4th-and-3 at the opponent's 45"),
+        (4, 26, False, "go", "4th-and-4 at the 26, as Week 5 read it"),
+        (4, 49, False, "go", "4th-and-4 at the opponent's 49, past midfield"),
+        (3, 50, False, "punt", "4th-and-3 at midfield is not past it: a 68-yard kick"),
+        (3, 55, False, "punt", "4th-and-3 at the own 45: the field-goal line, a 73-yard kick"),
+        (6, 30, False, "field_goal", "4th-and-6 at the opponent's 30: a 48-yard kick"),
+        (6, 34, False, "field_goal", "4th-and-6 at the opponent's 34: a 52-yard kick"),
+        (6, 35, False, "punt", "4th-and-6 at the opponent's 35: a 53-yard kick"),
+        (6, 40, False, "punt", "4th-and-6 at the opponent's 40: a 58-yard kick"),
+        (10, 28, False, "field_goal", "4th-and-10 at the 28: Week 5's 46-yard kick"),
+        (5, 37, False, "punt", "4th-and-5 at the 37: Week 5's 55-yard kick"),
+        (5, 5, True, "field_goal", "4th-and-goal from the 5: a 23-yard kick"),
+    )
+
+    def test_the_block_reads_as_the_words(self):
+        from runtime import fourth_down
+        block = standing_block()
+        for ydstogo, los, goal, expected, why in self.CASES:
+            state = {"period": 2, "diff": 0, "seconds": 1800, "ydstogo": ydstogo, "los": los, "goal_to_go": goal}
+            decision, basis, call = fourth_down.decide(block, state, 0.5, (1, 1, 1))
+            self.assertEqual(decision, expected, why)
+            self.assertTrue(basis.startswith("policy:"), why)
+
+    def test_the_field_goal_line_is_the_library_offset(self):
+        data = json.loads((ROOT / "library/data/2010_2014w4_fourth_down_decisions.json").read_text(encoding="utf-8"))
+        offset = int(data["field_goal_offset"]["modal"])
+        kick = next(r for r in standing_block()["rules"] if r["decision"] == "field_goal")
+        self.assertEqual(kick["when"]["los"]["max"] + offset, 52)
+
+    def test_the_block_is_valid_with_the_weeks_first_calls(self):
+        from runtime import fourth_down
+        _, sheet = week5()
+        block = dict(standing_block(), prepared_calls=game_plan.first_calls(sheet["offensive_call_sheet"]))
+        self.assertEqual(block["prepared_calls"]["third-and-short"], "12 Ace, Power Right")
+        self.assertEqual(fourth_down.policy_errors(block, fourth_down.sheet_call_names(sheet["offensive_call_sheet"])),
+                         [])
 
 
 class ParseTests(unittest.TestCase):

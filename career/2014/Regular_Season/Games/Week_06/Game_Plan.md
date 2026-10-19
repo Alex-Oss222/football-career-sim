@@ -56,15 +56,15 @@ Sunday, October 12, 2014, 1 p.m. ET, LP Field. Your decisions for the game: writ
 
 ## Fourth downs
 
-> Rules by distance, yards to the goal line, quarter, score and clock, each Go, Field goal or Punt, and what happens otherwise (Go, Field goal, Punt or Ask me); or Standing rule; or None for your call on each one; or Same as Week 5.
+> Rules by distance, yards to the goal line, quarter, score and clock, each Go, Field goal or Punt, and what happens otherwise (Go, Field goal, Punt or Ask me); or Standing rule, which means your rule in force: fourth-and-2 or less, go, with Tice's first call on the matching menu; fourth-and-3 or 4, go on the opponent's side of midfield, otherwise the field goal or the punt by the field-goal line; fourth-and-5 or more, a field goal when the kick is 52 yards or less, otherwise a punt; or None for your call on each one; or Same as Week 5.
 
 ## Two-point tries
 
-> Rules by quarter, score after the touchdown and clock, each Go for two or Kick, and what happens otherwise (Kick, Go for two or Ask me); or Standing rule; or Same as Week 5.
+> Rules by quarter, score after the touchdown and clock, each Go for two or Kick, and what happens otherwise (Kick, Go for two or Ask me); or Standing rule, which means your rule in force: kick, except go for two in the fourth quarter when the touchdown leaves Jacksonville down 2, up 1 or down 5; or Same as Week 5.
 
 ## Kickoffs
 
-> Rules by quarter, score after our score and clock, each Onside or Deep, and what happens otherwise (Deep, Onside or Ask me); or Standing rule; or Same as Week 5.
+> Rules by quarter, score after our score and clock, each Onside or Deep, and what happens otherwise (Deep, Onside or Ask me); or Standing rule, which means your rule in force: onside when trailing by 1 to 16 with 2:00 or less left; onside when trailing by 9 to 16 with 5:00 or less left; deep otherwise; or Same as Week 5.
 
 ## Defense
 

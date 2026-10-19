@@ -523,7 +523,9 @@ def plan_page(wk):
     inactive = len(roster_record.players(roster, ("active",))) - RULES.active_limit
     interval = current_job.interval_on(wk.job, "special_teams", wk.master) or {}
     caller = current_job.party_name(wk.job, interval["caller"]) if interval.get("caller") else None
-    legal = game_plan.legal_lines(inactive, caller, previous[-1] if previous else None)
+    standing = {i.get("subject"): i.get("summary") for i in current_job.instructions(wk.job)
+                if i.get("subject") in ("fourth_down", "two_point", "kickoff")}
+    legal = game_plan.legal_lines(inactive, caller, previous[-1] if previous else None, standing)
     page_rel = wk.rel(wk.pages.plan)
     intro = ("%s. Your decisions for the game: write under each heading, or upload a .md or .txt file with the "
              "same headings. The first line under each heading names the choices open to you. The staff checks "

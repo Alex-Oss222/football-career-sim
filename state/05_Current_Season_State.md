@@ -17,7 +17,7 @@ This document states what is true now and what comes next. The [2014 record](../
 | Document 2 | `c4bb8d569467f085882da407c8660cbc4001452d` | Active foundation source |
 | Document 3 | `a5f5f93704944360710945663419b98a4627355a` | Active foundation source |
 | Document 4 | `JAX-2014-OCT05-REGISTER-88` | Roster, staff, medical and role register |
-| Current job record | `48f3ccd0ada2e732317ccad4c25d19ed557032cc` | [Job, authority and delegation](current_job.json) |
+| Current job record | `603ddcb84ff70e475e9479bd10f1e519ea01a4c6` | [Job, authority and delegation](current_job.json) |
 | Decision queue | `f0c5434e5dd608424cf6ac55c3677cda71e2a491` | [Open and resolved decisions](decision_queue.json) |
 | Document 6 | [Event records and handoff protocol](../foundation/06_Event_Records_and_Handoff.md) | Latest closed football event, and latest closed event of any kind: [Week 5 against Pittsburgh](../career/2014/Regular_Season/Games/Week_05/output.md), October 5, 2014 (Pittsburgh 27, Jacksonville 10), after the game-day clock advance of October 5 and the Pittsburgh preparation closed October 4 |
 

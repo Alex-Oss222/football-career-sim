@@ -349,9 +349,17 @@ def choices_from_sheet(sheet, inactives=None):
 
 
 # ---------------------------------------------------------------- the page
-def legal_lines(inactive_count=7, special_teams_caller=None, previous_week=None):
-    """The one line under each heading naming the legal choices."""
+def legal_lines(inactive_count=7, special_teams_caller=None, previous_week=None, standing=None):
+    """The one line under each heading naming the legal choices; ``standing`` maps a decision kind
+    to the wording of the standing rule in force, which "Standing rule" means."""
     same = "; or Same as Week %d" % previous_week if previous_week else ""
+    standing = standing or {}
+
+    def rule(kind):
+        text = standing.get(kind)
+        if not text:
+            return "; or Standing rule"
+        return "; or Standing rule, which means your rule in force: %s" % (text[:1].lower() + text[1:]).rstrip(".")
     return {
         "Inactives": "%d players from the active roster, one per row, among them every player out on a medical "
                      "instruction on game day%s." % (inactive_count, same),
@@ -361,12 +369,12 @@ def legal_lines(inactive_count=7, special_teams_caller=None, previous_week=None)
         "Offense": "Each situation in your words, and the calls from the active offensive playbook with the "
                    "situations each belongs to%s." % same,
         "Fourth downs": "Rules by distance, yards to the goal line, quarter, score and clock, each Go, Field goal "
-                        "or Punt, and what happens otherwise (Go, Field goal, Punt or Ask me); or Standing rule; "
-                        "or None for your call on each one%s." % same,
+                        "or Punt, and what happens otherwise (Go, Field goal, Punt or Ask me)%s; or None for "
+                        "your call on each one%s." % (rule("fourth_down"), same),
         "Two-point tries": "Rules by quarter, score after the touchdown and clock, each Go for two or Kick, and "
-                           "what happens otherwise (Kick, Go for two or Ask me); or Standing rule%s." % same,
+                           "what happens otherwise (Kick, Go for two or Ask me)%s%s." % (rule("two_point"), same),
         "Kickoffs": "Rules by quarter, score after our score and clock, each Onside or Deep, and what happens "
-                    "otherwise (Deep, Onside or Ask me); or Standing rule%s." % same,
+                    "otherwise (Deep, Onside or Ask me)%s%s." % (rule("kickoff"), same),
         "Defense": "Who calls it, the rush rule, the menu practiced this week and the calls by situation, in the "
                    "active defensive playbook's words%s." % same,
         "Special teams": "%s; your instructions for the kicking game, or None." % (
@@ -1044,6 +1052,27 @@ def _defensive_sheet(value, frame):
         rows.append(row)
     out["rows"] = rows
     return {k: out[k] for k in DEFENSE_KEYS if k in out}
+
+
+# A standing fourth-down rule that names "Tice's first call on the matching menu" says so on its
+# instruction (``prepared_calls``); the calls are the week's, so they are filled from its sheet.
+FIRST_ON_MENU = "first-call-on-each-matching-menu"
+
+
+def first_calls(calls):
+    """{menu: call name}: for each menu a fourth down can match (runtime/fourth_down.py's prepared
+    menus), the first call of the sheet, in sheet order, that names it; the live fourth-down
+    information lists a matching menu's calls in the same order (runtime/kernel.py matching_calls)."""
+    from . import call_situations as cs
+    menus = (cs.THIRD_SHORT, cs.THIRD_MEDIUM, cs.THIRD_LONG, cs.GOAL_LINE, cs.LOW_RED, cs.HIGH_RED,
+             cs.BACKED_UP, cs.TWO_MINUTE, cs.PRESS, cs.FOUR_MINUTE, cs.NORMAL)
+    out = {}
+    for menu in menus:
+        first = next((c["name"] for c in calls or () if str(c.get("type", "any")).lower() in ("run", "pass", "mixed", "any")
+                      and menu in cs.menu_keys(c.get("menus"))), None)
+        if first is not None:
+            out[menu] = first
+    return out
 
 
 def sheet_bytes(sheet):

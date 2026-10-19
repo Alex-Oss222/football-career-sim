@@ -873,6 +873,48 @@
      },
      "summary": "Fourth-and-2 or less, go, with Tice's first call on the matching menu; fourth-and-3 or 4, go on the opponent's side of midfield, otherwise the field goal or the punt by the field-goal line; fourth-and-5 or more, a field goal when the kick is 52 yards or less, otherwise a punt",
      "applies": "frozen into each week's call sheet as its decisions.fourth_down block",
+     "block": {
+      "id": "stone-fourth-down-rule",
+      "source": "Stone's standing fourth-down rule (user, October 18, 2026, with his answers \"FG to 52 yards\", \"Go past midfield\" and \"Tice's first call\"): fourth-and-2 or less, go, with Tice's first call on the matching menu; fourth-and-3 or 4, go on the opponent's side of midfield, otherwise the field goal or the punt by the field-goal line; fourth-and-5 or more, a field goal when the kick is 52 yards or less, otherwise a punt. A kick is the line of scrimmage plus the bound fourth-down artifact's field-goal snap offset (library/data/2010_2014w4_fourth_down_decisions.json field_goal_offset, modal 18), so a 52-yard kick is the opponent's 34 and the field-goal line is the 34; past midfield is the opponent's 49 and in.",
+      "rules": [
+       {
+        "id": "go-fourth-and-2-or-less",
+        "when": {
+         "ydstogo": {
+          "max": 2
+         }
+        },
+        "decision": "go"
+       },
+       {
+        "id": "go-fourth-and-3-or-4-past-midfield",
+        "when": {
+         "ydstogo": {
+          "min": 3,
+          "max": 4
+         },
+         "los": {
+          "max": 49
+         }
+        },
+        "decision": "go"
+       },
+       {
+        "id": "field-goal-kick-52-or-less",
+        "when": {
+         "ydstogo": {
+          "min": 3
+         },
+         "los": {
+          "max": 34
+         }
+        },
+        "decision": "field_goal"
+       }
+      ],
+      "otherwise": "punt"
+     },
+     "prepared_calls": "first-call-on-each-matching-menu",
      "record": {
       "path": "career/2014/Regular_Season/Games/Week_05/output.md",
       "anchor": "addendum-october-18-2026-the-fourth-down-rule-stands-for-every-game"
