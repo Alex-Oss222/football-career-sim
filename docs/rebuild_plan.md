@@ -20,18 +20,18 @@ The user's goal, in their words: a complete process from start to finish, realis
 
 ## The season folders
 
-Each season keeps the numbered folders, in calendar order:
+From 2015, each season has these folders, with no numbers in their names:
 
-- 00_Team_Operations
-- 01_Early_Offseason
-- 02_Offseason_Training
-- 03_Draft
-- 04_Training_Camp_and_Preseason
-- 05_Regular_Season
-- 06_Postseason
-- 07_Season_Review
+- Team_Operations
+- Early_Offseason
+- Offseason_Training
+- Draft
+- Training_Camp_and_Preseason
+- Regular_Season
+- Postseason
+- Season_Review
 
-The season folder's README is the head coach's desk: today's date, his job, what is waiting on him, the next event and where each record is. Calendar.md and Record.md stay beside it.
+The 2014 season keeps its numbered folders (00_Team_Operations through 07_Season_Review), because its history stays where it is; the rest of 2014 is filed in them. The season folder's README is the head coach's desk: today's date, his job, what is waiting on him, the next event and where each record is. Calendar.md and Record.md stay beside it.
 
 Two folders sit outside the seasons, because they follow Stone and the league across years:
 
@@ -54,29 +54,29 @@ Contacts from other clubs are always named for what they are: a rumor, a call, a
 
 ## The decisions in a year
 
-The page names below are fixed.
+The page names below are fixed. Folders are given by their 2015 names; for the rest of 2014 the same pages go in the matching numbered 2014 folder.
 
 | When | Brief | His page | Result | Folder |
 |---|---|---|---|---|
-| Every game week | Game Week Briefing | Game Plan | Game Report | 05_Regular_Season, a folder per week; 06_Postseason for playoffs |
-| Bye week | Bye Week Review | My Adjustments | Bye Week Report | 05_Regular_Season, the bye week's folder |
+| Every game week | Game Week Briefing | Game Plan | Game Report | Regular_Season, a folder per week; Postseason for playoffs |
+| Bye week | Bye Week Review | My Adjustments | Bye Week Report | Regular_Season, the bye week's folder |
 | Injury replacement in season | Roster Move Request | My Recommendation | Transaction | The week's folder |
-| Trade talks | Trade Call | My Recommendation | Trade Result | 00_Team_Operations/Trades |
-| Season ends | Season Review (owner and GM) | My Response | Club Decision | 07_Season_Review |
+| Trade talks | Trade Call | My Recommendation | Trade Result | Team_Operations/Trades |
+| Season ends | Season Review (owner and GM) | My Response | Club Decision | Season_Review |
 | Contract extension | Extension Offer | My Answer | New Contract or Unchanged | career/Stone |
 | Fired, or contract ending | Agent's Report | Instructions to My Agent | Interviews and Offers | career/Stone |
 | Another club calls | Permission Request | My Answer | Interview or Declined | career/Stone |
 | After an interview | Offer Sheet | My Answer | Signed or Talks Ended | career/Stone |
-| January staff | Staff Status Report | My Staff Decisions | Staff Moves | 01_Early_Offseason |
-| Staff vacancy | Candidate Report | My Hire | Staff Hire | 01_Early_Offseason |
-| February | Re-signing Report | My Re-signing Priorities | Front Office Moves | 00_Team_Operations/Free_Agency |
-| March | Pro Personnel Report | My Free-Agent Priorities | Free Agency Results | 00_Team_Operations/Free_Agency |
-| April | Offseason Program Brief | My Program Plan | Program Report | 02_Offseason_Training |
-| May | Scouting Department Report | My Draft Recommendations | Draft Room Results | 03_Draft |
-| May and June | OTA Brief | My Install Plan | OTA Report | 02_Offseason_Training |
-| Camp | Position Battle Report | My Depth Calls | Depth Chart | 04_Training_Camp_and_Preseason |
-| Preseason games | Preseason Game Briefing | Preseason Game Plan | Preseason Game Report | 04_Training_Camp_and_Preseason |
-| Final cuts | Roster Cutdown Report | My Cut Recommendations | Final 53 | 04_Training_Camp_and_Preseason |
+| January staff | Staff Status Report | My Staff Decisions | Staff Moves | Early_Offseason |
+| Staff vacancy | Candidate Report | My Hire | Staff Hire | Early_Offseason |
+| February | Re-signing Report | My Re-signing Priorities | Front Office Moves | Team_Operations/Free_Agency |
+| March | Pro Personnel Report | My Free-Agent Priorities | Free Agency Results | Team_Operations/Free_Agency |
+| April | Offseason Program Brief | My Program Plan | Program Report | Offseason_Training |
+| May | Scouting Department Report | My Draft Recommendations | Draft Room Results | Draft |
+| May and June | OTA Brief | My Install Plan | OTA Report | Offseason_Training |
+| Camp | Position Battle Report | My Depth Calls | Depth Chart | Training_Camp_and_Preseason |
+| Preseason games | Preseason Game Briefing | Preseason Game Plan | Preseason Game Report | Training_Camp_and_Preseason |
+| Final cuts | Roster Cutdown Report | My Cut Recommendations | Final 53 | Training_Camp_and_Preseason |
 
 As head coach under David Caldwell, Stone decides the game plan, depth, inactives, practice, his staff within the budget and his own career. For acquisitions, the draft, contracts and cuts he recommends and Caldwell decides. In another job the same pages appear with that job's scope: a defensive coordinator's Game Plan covers the defense only, and he receives requests for his evaluations instead of recommendation pages he does not own.
 
@@ -116,3 +116,4 @@ Each step is built lean: one builder and one reviewer, no new research except a 
 ## Change log
 
 - October 19, 2026: plan adopted. The user approved the numbered season folders as they stand, asked for realistic names instead of system names, for a brief that tells him what he needs, and for this plan to hold its decisions across context resets.
+- October 19, 2026: the user asked to drop the numbers from the season folder names. From 2015 the folders carry no numbers; 2014 keeps its numbered folders as history.
