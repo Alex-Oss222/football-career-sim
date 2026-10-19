@@ -1,15 +1,22 @@
 # Crockett Gillmore
 
-![Crockett Gillmore career card](assets/crockett_gillmore.svg)
+**Baltimore Ravens · Tight end · No. 80 · Age 22 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 251 lb · Born November 16, 1991 · Colorado State
+
+As of October 5, 2014, after Week 5.
+
+![Crockett Gillmore](https://commons.wikimedia.org/wiki/Special:FilePath/Crockett_Gillmore.jpg?width=500)
+
+*Photo: original: Keith Allison derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Crockett_Gillmore.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Baltimore Ravens | 22 | 80 | 5 | 1 | 1 | 19 | 19.0 | 0 | 3.8 | 100.0 | 19 | 0 | 0 |
-| **Career** |  |  |  | 5 | 1 | 1 | 19 | 19.0 | 0 | 3.8 | 100.0 | 19 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 22 | 80 | 5 | 1 | 1 | 19 | 19.0 | 0 | 19 | 3.8 | 100.0 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Baltimore Ravens players](README.md).
+<!-- player-page -->

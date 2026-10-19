@@ -1,0 +1,30 @@
+{
+ "schema_version": 1,
+ "name": "Michael Cox",
+ "gsis_id": "00-0030128",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [],
+ "awards": [
+  {
+   "season": 2013,
+   "award": "AP First-Team All-Pro (2013, KR)",
+   "decided": {
+    "season": 2013,
+    "file": "season_honours_results.json",
+    "key": "all_pro.first",
+    "slot": "KR"
+   }
+  }
+ ],
+ "transactions": []
+}

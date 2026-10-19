@@ -1,16 +1,29 @@
 # Peyton Manning
 
-![Peyton Manning career card](assets/peyton_manning.svg)
+**Denver Broncos · Quarterback · No. 18 · Age 38 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 230 lb · Born March 24, 1976 · Tennessee · Drafted in 1998, first round, by Indianapolis
+
+As of October 5, 2014, after Week 5.
+
+![Peyton Manning](https://commons.wikimedia.org/wiki/Special:FilePath/Peyton_Manning_%2851665689271%29.jpg?width=500)
+
+*Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Peyton_Manning_(51665689271).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Denver Broncos | 37 | 18 | 16 | 359-562 | 63.9 | 3,846 | 27 | 12 | 6.8 | 90.9 | 240.4 | 121 | 1 |
-| 2014 | Denver Broncos | 38 | 18 | 4 | 86-127 | 67.7 | 943 | 6 | 1 | 7.4 | 101.9 | 235.8 | 25 | 0 |
-| **Career** |  |  |  | 20 | 445-689 | 64.6 | 4,789 | 33 | 13 | 7.0 | 93.0 | 239.4 | 146 | 1 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 38 | 18 | 4 | 86 | 127 | 67.7 | 943 | 7.4 | 235.8 | 6 | 1 | 101.9 |
+| 2013 | Denver | 37 | 18 | 16 | 359 | 562 | 63.9 | 3,846 | 6.8 | 240.4 | 27 | 12 | 90.9 |
+| Career |  |  |  | 20 | 445 | 689 | 64.6 | 4,789 | 7.0 | 239.4 | 33 | 13 | 93.0 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 38 | 18 | 4 | 32 | 11 | 25 | 0 | 0 | 0 |
+| 2013 | Denver | 37 | 18 | 29 | 193 | 35 | 121 | 1 | 2 | 2 |
 
 ### Playoffs
 
@@ -20,6 +33,10 @@ No playoff games on record.
 
 - AFC Offensive Player of the Month (2013, December)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).
+| Date | Transaction |
+|---|---|
+| 1998 | Drafted by Indianapolis in the first round |
+
+<!-- player-page -->

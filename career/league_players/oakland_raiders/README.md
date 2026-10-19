@@ -1,11 +1,13 @@
 # Oakland Raiders players
 
-AFC West · Players whose latest game on record was with the Oakland Raiders. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+AFC West. The players whose latest game on record was with the Oakland Raiders. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 4 | [Derek Carr](derek_carr.md) | QB | 4 | 0 |
 | N/A | [Matt Barkley](matt_barkley.md) | QB | 4 | 16 |
 | 8 | [Matt Schaub](matt_schaub.md) | QB | 4 | 16 |
@@ -15,7 +17,7 @@ AFC West · Players whose latest game on record was with the Oakland Raiders. G 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 20 | [Darren McFadden](darren_mcfadden.md) | RB | 4 | 15 |
 | 49 | [Jamize Olawale](jamize_olawale.md) | FB | 4 | 16 |
 | N/A | [Jeremy Stewart](jeremy_stewart.md) | RB | 0 | 16 |
@@ -26,7 +28,7 @@ AFC West · Players whose latest game on record was with the Oakland Raiders. G 
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 18 | [Andre Holmes](andre_holmes.md) | WR | 4 | 0 |
 | 12 | [Brice Butler](brice_butler.md) | WR | 0 | 16 |
 | 17 | [Denarius Moore](denarius_moore.md) | WR | 4 | 16 |
@@ -38,7 +40,7 @@ AFC West · Players whose latest game on record was with the Oakland Raiders. G 
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 87 | [Brian Leonhardt](brian_leonhardt.md) | TE | 4 | 0 |
 | 86 | [David Ausberry](david_ausberry.md) | TE | 4 | 0 |
 | N/A | [Jeron Mastrud](jeron_mastrud.md) | TE | 0 | 16 |
@@ -48,7 +50,7 @@ AFC West · Players whose latest game on record was with the Oakland Raiders. G 
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Andre Gurode](andre_gurode.md) | C | 0 | 4 |
 | N/A | [Antoine McClain](antoine_mcclain.md) | G | 0 | 16 |
 | 77 | [Austin Howard](austin_howard.md) | T | 4 | 16 |
@@ -66,7 +68,7 @@ AFC West · Players whose latest game on record was with the Oakland Raiders. G 
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 94 | [Antonio Smith](antonio_smith.md) | DT | 4 | 0 |
 | N/A | [Brian Sanford](brian_sanford.md) | DE | 0 | 2 |
 | N/A | [Jason Hunter](jason_hunter.md) | DE | 0 | 16 |
@@ -80,7 +82,7 @@ AFC West · Players whose latest game on record was with the Oakland Raiders. G 
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 95 | [Benson Mayowa](benson_mayowa.md) | OLB | 4 | 16 |
 | N/A | [Kaelin Burnett](kaelin_burnett.md) | OLB | 0 | 16 |
 | 50 | [Kaluka Maiava](kaluka_maiava.md) | MLB | 4 | 16 |
@@ -92,7 +94,7 @@ AFC West · Players whose latest game on record was with the Oakland Raiders. G 
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 29 | [Brandian Ross](brandian_ross.md) | SS | 0 | 16 |
 | 27 | [Carlos Rogers](carlos_rogers.md) | CB | 4 | 16 |
 | 24 | [Charles Woodson](charles_woodson.md) | FS | 4 | 16 |
@@ -110,17 +112,19 @@ AFC West · Players whose latest game on record was with the Oakland Raiders. G 
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 11 | [Sebastian Janikowski](sebastian_janikowski.md) | K | 4 | 12 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 7 | [Marquette King](marquette_king.md) | P | 4 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 59 | [Jon Condo](jon_condo.md) | LS | 4 | 16 |
+
+<!-- player-index -->

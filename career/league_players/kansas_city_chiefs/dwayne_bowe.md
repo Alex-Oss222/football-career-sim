@@ -1,28 +1,40 @@
 # Dwayne Bowe
 
-![Dwayne Bowe career card](assets/dwayne_bowe.svg)
+**Kansas City Chiefs · Wide receiver · No. 82 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 221 lb · Born September 21, 1984 · LSU · Drafted in 2007, first round, by Kansas City
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 28 | 82 | 16 | 114 | 70 | 718 | 10.3 | 4 | 44.9 | 61.4 | 59 | 0 | 0 |
-| 2014 | Kansas City Chiefs | 29 | 82 | 1 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| **Career** |  |  |  | 17 | 114 | 70 | 718 | 10.3 | 4 | 42.2 | 61.4 | 59 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 29 | 82 | 1 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2013 | Kansas City | 28 | 82 | 16 | 114 | 70 | 718 | 10.3 | 4 | 59 | 44.9 | 61.4 |
+| Career |  |  |  | 17 | 114 | 70 | 718 | 10.3 | 4 | 59 | 42.2 | 61.4 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 29 | 82 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Kansas City | 28 | 82 | 1 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 28 | 82 | 1 | 5 | 3 | 18 | 6.0 | 1 | 18.0 | 60.0 | 8 | 0 | 0 |
-| **Career** |  |  |  | 1 | 5 | 3 | 18 | 6.0 | 1 | 18.0 | 60.0 | 8 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 28 | 82 | 1 | 5 | 3 | 18 | 6.0 | 1 | 8 | 18.0 | 60.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All Kansas City Chiefs players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Kansas City in the first round |
+
+<!-- player-page -->

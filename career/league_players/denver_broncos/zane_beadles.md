@@ -1,15 +1,22 @@
 # Zane Beadles
 
-![Zane Beadles career card](assets/zane_beadles.svg)
+**Denver Broncos · Guard · Age 27 · Last game December 29, 2013**
 
-## Career stats
+6' 4", 305 lb · Born November 19, 1986 · Utah · Drafted in 2010, second round, by Denver
+
+As of December 29, 2013, after Week 17.
+
+![Zane Beadles](https://commons.wikimedia.org/wiki/Special:FilePath/Zane_Beadles_2012.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Zane_Beadles_2012.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Denver Broncos | 26 | 68 | 16 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 16 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Denver | 26 | 68 | 16 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Denver Broncos players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Denver in the second round |
+
+<!-- player-page -->

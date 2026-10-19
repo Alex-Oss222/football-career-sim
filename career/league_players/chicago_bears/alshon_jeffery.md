@@ -1,16 +1,29 @@
 # Alshon Jeffery
 
-![Alshon Jeffery career card](assets/alshon_jeffery.svg)
+**Chicago Bears · Wide receiver · No. 17 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 216 lb · Born February 14, 1990 · South Carolina · Drafted in 2012, second round, by Chicago
+
+As of October 5, 2014, after Week 5.
+
+![Alshon Jeffery](https://commons.wikimedia.org/wiki/Special:FilePath/Alshon_Jeffery.jpg?width=500)
+
+*Photo: original: Jim Larrison derivative: Diddykong1130, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Alshon_Jeffery.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Chicago Bears | 23 | 17 | 16 | 109 | 63 | 824 | 13.1 | 8 | 51.5 | 57.8 | 47 | 22 | 1 |
-| 2014 | Chicago Bears | 24 | 17 | 5 | 38 | 26 | 270 | 10.4 | 3 | 54.0 | 68.4 | 35 | 0 | 1 |
-| **Career** |  |  |  | 21 | 147 | 89 | 1,094 | 12.3 | 11 | 52.1 | 60.5 | 47 | 22 | 2 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Chicago | 24 | 17 | 5 | 38 | 26 | 270 | 10.4 | 3 | 35 | 54.0 | 68.4 |
+| 2013 | Chicago | 23 | 17 | 16 | 109 | 63 | 824 | 13.1 | 8 | 47 | 51.5 | 57.8 |
+| Career |  |  |  | 21 | 147 | 89 | 1,094 | 12.3 | 11 | 47 | 52.1 | 60.5 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Chicago | 24 | 17 | 0 | 0 | 0 | 1 | 1 |
+| 2013 | Chicago | 23 | 17 | 3 | 22 | 0 | 1 | 1 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Chicago in the second round |
+
+<!-- player-page -->

@@ -1,28 +1,39 @@
 # Jake Long
 
-![Jake Long career card](assets/jake_long.svg)
+**St. Louis Rams · Offensive tackle · No. 77 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 7", 322 lb · Born May 9, 1985 · Michigan · Drafted in 2008, first round, by Miami
+
+As of October 5, 2014, after Week 5.
+
+![Jake Long](https://commons.wikimedia.org/wiki/Special:FilePath/Jakelong22222.jpg?width=500)
+
+*Photo: Johnmaxmena2, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jakelong22222.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 28 | 77 | 16 | N/A | N/A | 7 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | St. Louis Rams | 29 | 77 | 4 | 4 | 266 | 5 | 16 | 0 | 0 | 0 | 0 | 66.5 |
-| **Career** |  |  |  | 20 | N/A | N/A | 12 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 29 | 77 | 4 | 4 | 266 | 5 | 16 |
+| 2013 | St. Louis | 28 | 77 | 16 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 12 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 28 | 77 | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 28 | 77 | 1 | N/A | N/A | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Miami in the first round |
+
+<!-- player-page -->

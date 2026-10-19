@@ -1,16 +1,29 @@
 # Robert Griffin
 
-![Robert Griffin career card](assets/robert_griffin.svg)
+**Washington Redskins · Quarterback · No. 10 · Age 24 · Last game October 6, 2014**
 
-## Career stats
+6' 2", 222 lb · Born February 12, 1990 · Baylor · Drafted in 2012, first round, by Washington
+
+As of October 6, 2014, after Week 5.
+
+![Robert Griffin](https://commons.wikimedia.org/wiki/Special:FilePath/Robert_Griffin_III_2022.jpg?width=500)
+
+*Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Robert_Griffin_III_2022.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Washington Redskins | 23 | 10 | 16 | 384-586 | 65.5 | 3,920 | 20 | 14 | 6.7 | 86.0 | 245.0 | 162 | 3 |
-| 2014 | Washington Redskins | 24 | 10 | 4 | 107-153 | 69.9 | 1,119 | 6 | 5 | 7.3 | 90.3 | 279.8 | 18 | 0 |
-| **Career** |  |  |  | 20 | 491-739 | 66.4 | 5,039 | 26 | 19 | 6.8 | 86.9 | 251.9 | 180 | 3 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Washington | 24 | 10 | 4 | 107 | 153 | 69.9 | 1,119 | 7.3 | 279.8 | 6 | 5 | 90.3 |
+| 2013 | Washington | 23 | 10 | 16 | 384 | 586 | 65.5 | 3,920 | 6.7 | 245.0 | 20 | 14 | 86.0 |
+| Career |  |  |  | 20 | 491 | 739 | 66.4 | 5,039 | 6.8 | 251.9 | 26 | 19 | 86.9 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Washington | 24 | 10 | 11 | 81 | 6 | 18 | 0 | 3 | 3 |
+| 2013 | Washington | 23 | 10 | 34 | 224 | 43 | 162 | 3 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Washington Redskins players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Washington in the first round |
+
+<!-- player-page -->

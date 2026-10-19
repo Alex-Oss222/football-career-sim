@@ -1,16 +1,29 @@
 # Star Lotulelei
 
-![Star Lotulelei career card](assets/star_lotulelei.svg)
+**Carolina Panthers · Defensive tackle · No. 98 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 320 lb · Born December 20, 1989 · Utah; Snow
+
+As of October 5, 2014, after Week 5.
+
+![Star Lotulelei](https://commons.wikimedia.org/wiki/Special:FilePath/Saints_vs_Panthers_12.6.15_039.jpg?width=500)
+
+*Photo: Tammy Anthony Baker, Photographer, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Saints_vs_Panthers_12.6.15_039.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 23 | 98 | 16 | 25 | 2 | 3 | 0 | 0 | 0 | 0 | 5 | 1.6 | 19 |
-| 2014 | Carolina Panthers | 24 | 98 | 5 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 4 |
-| **Career** |  |  |  | 21 | 30 | 2 | 3 | 0 | 0 | 0 | 0 | 5 | 1.4 | 23 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 24 | 98 | 5 | 5 | 4 | 1 | 0 | 0 | 0 |
+| 2013 | Carolina | 23 | 98 | 16 | 25 | 19 | 6 | 3 | 2 | 5 |
+| Career |  |  |  | 21 | 30 | 23 | 7 | 3 | 2 | 5 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 24 | 98 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Carolina | 23 | 98 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+<!-- player-page -->

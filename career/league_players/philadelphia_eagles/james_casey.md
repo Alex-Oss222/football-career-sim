@@ -1,28 +1,39 @@
 # James Casey
 
-![James Casey career card](assets/james_casey.svg)
+**Philadelphia Eagles · Tight end · No. 85 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 240 lb · Born September 22, 1984 · Rice · Drafted in 2009, fifth round, by Houston
+
+As of October 5, 2014, after Week 5.
+
+![James Casey](https://commons.wikimedia.org/wiki/Special:FilePath/James_Casey_-_Houston_Texans.jpg?width=500)
+
+*Photo: Lbking, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:James_Casey_-_Houston_Texans.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 28 | 85 | 16 | 22 | 15 | 204 | 13.6 | 1 | 12.8 | 68.2 | 46 | 0 | 0 |
-| 2014 | Philadelphia Eagles | 29 | 85 | 5 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| **Career** |  |  |  | 21 | 22 | 15 | 204 | 13.6 | 1 | 9.7 | 68.2 | 46 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 29 | 85 | 5 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2013 | Philadelphia | 28 | 85 | 16 | 22 | 15 | 204 | 13.6 | 1 | 46 | 12.8 | 68.2 |
+| Career |  |  |  | 21 | 22 | 15 | 204 | 13.6 | 1 | 46 | 9.7 | 68.2 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 28 | 85 | 3 | 7 | 5 | 41 | 8.2 | 1 | 13.7 | 71.4 | 22 | 0 | 0 |
-| **Career** |  |  |  | 3 | 7 | 5 | 41 | 8.2 | 1 | 13.7 | 71.4 | 22 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 28 | 85 | 3 | 7 | 5 | 41 | 8.2 | 1 | 22 | 13.7 | 71.4 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Philadelphia Eagles players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Houston in the fifth round |
+
+<!-- player-page -->

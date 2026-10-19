@@ -1,160 +1,67 @@
-# Mike Brown — 2014 Player Profile
+# Mike Brown
 
-<!-- photo -->
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Brown_20140914.jpg?width=500" alt="Mike Brown" width="160">
+**Jacksonville Jaguars · Wide receiver · Age 24 · Former player**
+
+5' 10", 200 lb · Born February 9, 1989 · Liberty · Undrafted
+
+As of December 29, 2013, after Week 17.
+
+![Mike Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Brown_20140914.jpg?width=500)
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Mike_Brown_20140914.jpg)).*
-<!-- /photo -->
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** March 31, 2014 starting evaluation  
-**Age:** 25  
-**Position:** WR  
-**Roster status (August 31, 2014):** Former player: qualifying offer withdrawn August 30, 2014 at the reduction to 53 and rights renounced ([final roster cuts](../../../Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); he never signed, never reported and left Jacksonville's control as a free agent. This card is kept as history; no later work is added.  
-**NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** A short-area reserve receiver who can work underneath routes and offer modest run-after-catch utility. I see depth rather than a receiver I would feature against press or at the catch point.  
-**Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/mike_brown.md)  
+## Staff assessment
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
-
-## Player grades
-
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 4.5 /10 | Staff judgment |
-| Athleticism | 5.0 /10 | Staff judgment |
-| Speed | 4.5 /10 | Staff judgment |
-| Strength / Power | 3.5 /10 | Staff judgment |
-| Agility / Change of direction | 5.0 /10 | Staff judgment |
-| Technique | 5.0 /10 | Staff judgment |
-| Football IQ | 4.5 /10 | Staff judgment |
-| Release vs press | 4.0 /10 | Staff judgment |
-| Route running | 5.0 /10 | Staff judgment |
-| Separation / quickness | 5.0 /10 | Staff judgment |
-| Long speed | 4.5 /10 | Staff judgment |
-| Hands | 5.0 /10 | Staff judgment |
-| Catch radius / contested catches | 4.0 /10 | Staff judgment |
-| Ball tracking / deep receiving | 4.0 /10 | Staff judgment |
-| YAC / contact balance | 5.0 /10 | Staff judgment |
-| Coverage recognition / adjustments | 4.5 /10 | Staff judgment |
-| Blocking | 3.5 /10 | Staff judgment |
-
-Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Release vs press | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Route running | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Separation / quickness | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Long speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Hands | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Catch radius / contested catches | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Ball tracking / deep receiving | Below NFL starter standard | Below elite standard | Above low-end standard |
-| YAC / contact balance | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Coverage recognition / adjustments | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Blocking | Below NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards, not measured 2014 league ranks.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 4.5/10 |
+| Athleticism | 5.0/10 |
+| Speed | 4.5/10 |
+| Strength and power | 3.5/10 |
+| Agility and change of direction | 5.0/10 |
+| Technique | 5.0/10 |
+| Football IQ | 4.5/10 |
+| Release vs press | 4.0/10 |
+| Route running | 5.0/10 |
+| Separation and quickness | 5.0/10 |
+| Long speed | 4.5/10 |
+| Hands | 5.0/10 |
+| Catch radius and contested catches | 4.0/10 |
+| Ball tracking and deep receiving | 4.0/10 |
+| YAC and contact balance | 5.0/10 |
+| Coverage recognition and adjustments | 4.5/10 |
+| Blocking | 3.5/10 |
 
 A short-area reserve receiver who can work underneath routes and offer modest run-after-catch utility. I see depth rather than a receiver I would feature against press or at the catch point.
 
-Source: [2013 profile](../../../../2013/player_profiles/mike_brown.md) and its recorded practice/game sources.
+*Staff view, March 31, 2014.*
 
-## Year-over-year change
+## Statistics
 
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Player identity and position traits | 2013 baseline | Starting 2014 view | Retained | No new individual football evidence establishing change |
+### Regular season
 
-## What supports this assessment
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 24 | 12 | 9 | 16 | 12 | 112 | 9.3 | 0 | 22 | 12.4 | 75.0 |
 
-A short-area reserve receiver who can work underneath routes and offer modest run-after-catch utility. I see depth rather than a receiver I would feature against press or at the catch point.
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 24 | 12 | 4 | 115 | 28.8 | 3 | 32 | 10.7 |
 
-[2013 profile](../../../../2013/player_profiles/mike_brown.md) and its recorded practice/game sources.
+### Playoffs
 
-## Historical comparison
+No playoff games on record.
 
-The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.
+## Awards
 
-## Play style
+None.
 
-A short-area reserve receiver who can work underneath routes and offer modest run-after-catch utility. I see depth rather than a receiver I would feature against press or at the catch point.
+## Transactions
 
-## Best traits
+| Date | Transaction |
+|---|---|
+| 2012 | Signed with Jacksonville as an undrafted rookie |
+| March 11, 2014 | Received an exclusive-rights tender from Jacksonville |
+| August 30, 2014 | Exclusive-rights tender withdrawn by Jacksonville and rights renounced; free agent |
 
-- Route running: 5.0 /10.
-- Separation / quickness: 5.0 /10.
-- Hands: 5.0 /10.
-
-## Main weaknesses
-
-- Blocking: 3.5 /10.
-- Release vs press: 4.0 /10.
-- Catch radius / contested catches: 4.0 /10.
-
-## Evidence and uncertainty
-
-- **Primary evidence:** [2013 profile](../../../../2013/player_profiles/mike_brown.md) and its recorded practice/game sources.
-- **Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
-
-**One-line description:** A short-area reserve receiver who can work underneath routes and offer modest run-after-catch utility. I see depth rather than a receiver I would feature against press or at the catch point.
-
-## 2013 season production
-
-| Statistic | 2013 regular season | 2013 playoffs |
-| --- | ---: | ---: |
-| G | 9 | Unrecorded |
-| TGT | 16 | Unrecorded |
-| REC | 12 | Unrecorded |
-| YDS | 112 | Unrecorded |
-| AVG | 9.3 | Unrecorded |
-| TD | 0 | Unrecorded |
-| LNG | 22 | Unrecorded |
-| RUSH | 0 | Unrecorded |
-| RUSH YDS | 0 | Unrecorded |
-| RUSH TD | 0 | Unrecorded |
-| FUM | 0 | Unrecorded |
-| LOST | 0 | Unrecorded |
-| Returns: KR | 4 | Unrecorded |
-| Returns: KR YDS | 115 | Unrecorded |
-| Returns: KR AVG | 28.8 | Unrecorded |
-| Returns: PR | 3 | Unrecorded |
-| Returns: PR YDS | 32 | Unrecorded |
-| Returns: PR AVG | 10.7 | Unrecorded |
-
-Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 25 | N/A | Through Week 5 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 25 | N/A | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

@@ -1,15 +1,26 @@
 # Leonard Hankerson
 
-![Leonard Hankerson career card](assets/leonard_hankerson.svg)
+**Washington Redskins · Wide receiver · Age 24 · Last game December 29, 2013**
 
-## Career stats
+6' 2", 211 lb · Born January 30, 1989 · Miami · Drafted in 2011, third round, by Washington
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Washington Redskins | 24 | 85 | 16 | 55 | 37 | 343 | 9.3 | 1 | 21.4 | 67.3 | 37 | 1 | 0 |
-| **Career** |  |  |  | 16 | 55 | 37 | 343 | 9.3 | 1 | 21.4 | 67.3 | 37 | 1 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Washington | 24 | 85 | 16 | 55 | 37 | 343 | 9.3 | 1 | 37 | 21.4 | 67.3 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Washington | 24 | 85 | 1 | 1 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Washington | 24 | 85 | 1 | 41 | 41.0 | 1 | 11 | 11.0 |
 
 ### Playoffs
 
@@ -17,8 +28,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Washington Redskins players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Washington in the third round |
+
+<!-- player-page -->

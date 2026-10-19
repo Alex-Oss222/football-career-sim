@@ -1,15 +1,22 @@
 # Willie Jefferson
 
-![Willie Jefferson career card](assets/willie_jefferson.svg)
+**Houston Texans · Outside linebacker · Age 22 · Last game December 29, 2013**
 
-## Career stats
+6' 5", 241 lb · Born January 31, 1991 · Stephen F. Austin State; Baylor
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Houston Texans | 22 | 54 | 16 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0.1 | 2 |
-| **Career** |  |  |  | 16 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0.1 | 2 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Houston | 22 | 54 | 16 | 2 | 2 | 0 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Houston | 22 | 54 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Houston Texans players](README.md).
+<!-- player-page -->

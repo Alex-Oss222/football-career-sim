@@ -1,16 +1,24 @@
 # Sebastian Vollmer
 
-![Sebastian Vollmer career card](assets/sebastian_vollmer.svg)
+**New England Patriots · Offensive tackle · No. 76 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 8", 320 lb · Born July 10, 1984 · Houston · Drafted in 2009, second round, by New England
+
+As of October 5, 2014, after Week 5.
+
+![Sebastian Vollmer](https://commons.wikimedia.org/wiki/Special:FilePath/Vollmerphotocamp.jpg?width=500)
+
+*Photo: Lucasfritas, Public domain ([source](https://commons.wikimedia.org/wiki/File:Vollmerphotocamp.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 29 | 76 | 16 | N/A | N/A | 7 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | New England Patriots | 30 | 76 | 5 | 5 | 310 | 3 | 24 | 0 | 0 | 0 | 0 | 62.0 |
-| **Career** |  |  |  | 21 | N/A | N/A | 10 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 30 | 76 | 5 | 5 | 310 | 3 | 24 |
+| 2013 | New England | 29 | 76 | 16 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New England Patriots players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by New England in the second round |
+
+<!-- player-page -->

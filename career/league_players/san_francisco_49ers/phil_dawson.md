@@ -1,16 +1,29 @@
 # Phil Dawson
 
-![Phil Dawson career card](assets/phil_dawson.svg)
+**San Francisco 49ers · Kicker · No. 9 · Age 39 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 200 lb · Born January 23, 1975 · Texas
+
+As of October 5, 2014, after Week 5.
+
+![Phil Dawson](https://commons.wikimedia.org/wiki/Special:FilePath/Phil_Dawson_2014.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Phil_Dawson_2014.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 38 | 9 | 16 | 22-28 | 78.6 | N/A | 32-32 | 100.0 | 98 | N/A | N/A | N/A | 6.1 |
-| 2014 | San Francisco 49ers | 39 | 9 | 5 | 5-12 | 41.7 | 48 | 11-11 | 100.0 | 26 | 2-5 | 0-3 | 3-4 | 5.2 |
-| **Career** |  |  |  | 21 | 27-40 | 67.5 | N/A | 43-43 | 100.0 | 124 | N/A | N/A | N/A | 5.9 |
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 39 | 9 | 5 | 5 | 12 | 41.7 | 48 | 11 | 11 | 100.0 | 26 |
+| 2013 | San Francisco | 38 | 9 | 16 | 22 | 28 | 78.6 | N/A | 32 | 32 | 100.0 | 98 |
+| Career |  |  |  | 21 | 27 | 40 | 67.5 | N/A | 43 | 43 | 100.0 | 124 |
+
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 39 | 9 | 3-4 | 2-5 | 0-3 |
+| 2013 | San Francisco | 38 | 9 | N/A | N/A | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+<!-- player-page -->

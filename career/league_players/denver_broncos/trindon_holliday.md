@@ -1,15 +1,22 @@
 # Trindon Holliday
 
-![Trindon Holliday career card](assets/trindon_holliday.svg)
+**Denver Broncos · Wide receiver · Age 27 · Last game December 29, 2013**
 
-## Career stats
+5' 5", 170 lb · Born April 27, 1986 · LSU · Drafted in 2010, sixth round, by Houston
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Denver Broncos | 27 | 11 | 15 | 4 | 2 | 17 | 8.5 | 0 | 1.1 | 50.0 | 14 | 0 | 0 |
-| **Career** |  |  |  | 15 | 4 | 2 | 17 | 8.5 | 0 | 1.1 | 50.0 | 14 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Denver | 27 | 11 | 15 | 4 | 2 | 17 | 8.5 | 0 | 14 | 1.1 | 50.0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Denver | 27 | 11 | 34 | 753 | 22.1 | 24 | 224 | 9.3 |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Denver Broncos players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Houston in the sixth round |
+
+<!-- player-page -->

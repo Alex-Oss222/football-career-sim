@@ -1,15 +1,26 @@
 # Evan Royster
 
-![Evan Royster career card](assets/evan_royster.svg)
+**Washington Redskins · Running back · Age 26 · Last game December 29, 2013**
 
-## Career stats
+6' 1", 216 lb · Born November 26, 1987 · Penn State · Drafted in 2011, sixth round, by Washington
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Washington Redskins | 25 | 22 | 16 | 16 | 124 | 7.8 | 1 | 7.8 | 3 | 40 | 0 | 19 | 1 |
-| **Career** |  |  |  | 16 | 16 | 124 | 7.8 | 1 | 7.8 | 3 | 40 | 0 | 19 | 1 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Washington | 25 | 22 | 16 | 16 | 124 | 7.8 | 1 | 62 | 7.8 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Washington | 25 | 22 | 5 | 3 | 40 | 13.3 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Washington | 25 | 22 | 2 | 50 | 25.0 | 2 | 17 | 8.5 |
 
 ### Playoffs
 
@@ -17,8 +28,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Washington Redskins players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Washington in the sixth round |
+
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # Gregory Toler
 
-![Gregory Toler career card](assets/gregory_toler.svg)
+**Indianapolis Colts · Cornerback · No. 28 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 190 lb · Born January 2, 1985 · St. Paul's College · Drafted in 2009, fourth round, by Arizona
+
+As of October 5, 2014, after Week 5.
+
+![Gregory Toler](https://commons.wikimedia.org/wiki/Special:FilePath/Greg_Toler_training_camp%2C_2016.jpg?width=500)
+
+*Photo: C Watts, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Greg_Toler_training_camp,_2016.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 28 | 28 | 16 | 52 | 0 | 3 | 0 | 4 | 2 | 1 | 1 | 3.2 | 0 |
-| 2014 | Indianapolis Colts | 29 | 28 | 5 | 21 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 4.2 | 0 |
-| **Career** |  |  |  | 21 | 73 | 0 | 3 | 0 | 6 | 2 | 1 | 1 | 3.5 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 29 | 28 | 5 | 21 | 13 | 8 | 2 | 0 | 0 |
+| 2013 | Indianapolis | 28 | 28 | 16 | 52 | 34 | 18 | 4 | 2 | 2 |
+| Career |  |  |  | 21 | 73 | 47 | 26 | 6 | 2 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 29 | 28 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Indianapolis | 28 | 28 | 0 | 0 | 3 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Arizona in the fourth round |
+
+<!-- player-page -->

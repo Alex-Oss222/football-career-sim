@@ -1,28 +1,46 @@
 # Zach Line
 
-![Zach Line career card](assets/zach_line.svg)
+**Minnesota Vikings · Fullback · No. 48 · Age 24 · Last game October 2, 2014**
 
-## Career stats
+6' 1", 233 lb · Born April 26, 1990 · SMU
+
+As of October 2, 2014, after Week 5.
+
+![Zach Line](https://commons.wikimedia.org/wiki/Special:FilePath/Zach_Line.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Zach_Line.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 23 | 48 | 15 | 6 | 12 | 2.0 | 1 | 0.8 | 12 | 166 | 1 | 18 | 1 |
-| 2014 | Minnesota Vikings | 24 | 48 | 3 | 1 | 3 | 3.0 | 0 | 1.0 | 0 | 0 | 0 | 1 | 0 |
-| **Career** |  |  |  | 18 | 7 | 15 | 2.1 | 1 | 0.8 | 12 | 166 | 1 | 19 | 1 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 24 | 48 | 3 | 1 | 3 | 3.0 | 0 | 3 | 1.0 |
+| 2013 | Minnesota | 23 | 48 | 15 | 6 | 12 | 2.0 | 1 | 6 | 0.8 |
+| Career |  |  |  | 18 | 7 | 15 | 2.1 | 1 | 6 | 0.8 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 24 | 48 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2013 | Minnesota | 23 | 48 | 17 | 12 | 166 | 13.8 | 1 | 1 | 1 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 23 | 48 | 3 | 2 | 3 | 1.5 | 0 | 1.0 | 4 | 22 | 0 | 6 | 0 |
-| **Career** |  |  |  | 3 | 2 | 3 | 1.5 | 0 | 1.0 | 4 | 22 | 0 | 6 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 23 | 48 | 3 | 2 | 3 | 1.5 | 0 | 2 | 1.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 23 | 48 | 4 | 4 | 22 | 5.5 | 0 | 0 | 0 |
 
 ## Awards
 
 - Pro Bowl selection (2013, FB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+None on record.
+
+<!-- player-page -->

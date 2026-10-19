@@ -1,28 +1,50 @@
 # Lance Dunbar
 
-![Lance Dunbar career card](assets/lance_dunbar.svg)
+**Dallas Cowboys · Running back · No. 25 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+5' 8", 195 lb · Born January 25, 1990 · North Texas
+
+As of October 5, 2014, after Week 5.
+
+![Lance Dunbar](https://commons.wikimedia.org/wiki/Special:FilePath/Lance_Dunbar.jpg?width=500)
+
+*Photo: scott mecum, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Lance_Dunbar.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 23 | 25 | 15 | 85 | 313 | 3.7 | 1 | 20.9 | 7 | 110 | 0 | 92 | 3 |
-| 2014 | Dallas Cowboys | 24 | 25 | 5 | 26 | 178 | 6.8 | 2 | 35.6 | 7 | 83 | 0 | 33 | 0 |
-| **Career** |  |  |  | 20 | 111 | 491 | 4.4 | 3 | 24.6 | 14 | 193 | 0 | 125 | 3 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Dallas | 24 | 25 | 5 | 26 | 178 | 6.8 | 2 | 77 | 35.6 |
+| 2013 | Dallas | 23 | 25 | 15 | 85 | 313 | 3.7 | 1 | 30 | 20.9 |
+| Career |  |  |  | 20 | 111 | 491 | 4.4 | 3 | 77 | 24.6 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Dallas | 24 | 25 | 9 | 7 | 83 | 11.9 | 0 | 0 | 0 |
+| 2013 | Dallas | 23 | 25 | 10 | 7 | 110 | 15.7 | 0 | 3 | 3 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 23 | 25 | 2 | 12 | 46 | 3.8 | 1 | 23.0 | 2 | 4 | 0 | 14 | 0 |
-| **Career** |  |  |  | 2 | 12 | 46 | 3.8 | 1 | 23.0 | 2 | 4 | 0 | 14 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 23 | 25 | 2 | 12 | 46 | 3.8 | 1 | 16 | 23.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 23 | 25 | 3 | 2 | 4 | 2.0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 23 | 25 | 1 | 19 | 19.0 | 0 | 0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).
+<!-- player-page -->

@@ -1,0 +1,30 @@
+{
+ "schema_version": 1,
+ "name": "LaMichael James",
+ "gsis_id": "00-0029260",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [],
+ "awards": [
+  {
+   "season": 2013,
+   "award": "NFC Special Teams Player of the Month (2013, September)",
+   "decided": {
+    "season": 2013,
+    "file": "results.json",
+    "key": "month-September",
+    "slot": "NFC-special_teams"
+   }
+  }
+ ],
+ "transactions": []
+}

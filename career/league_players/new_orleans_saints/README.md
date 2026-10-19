@@ -1,18 +1,20 @@
 # New Orleans Saints players
 
-NFC South · Players whose latest game on record was with the New Orleans Saints. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+NFC South. The players whose latest game on record was with the New Orleans Saints. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 9 | [Drew Brees](drew_brees.md) | QB | 5 | 9 |
 | 7 | [Luke McCown](luke_mccown.md) | QB | 5 | 16 |
 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 35 | [Austin Johnson](austin_johnson.md) | FB | 5 | 0 |
 | 29 | [Khiry Robinson](khiry_robinson.md) | RB | 5 | 16 |
 | 22 | [Mark Ingram](mark_ingram.md) | RB | 5 | 16 |
@@ -22,7 +24,7 @@ NFC South · Players whose latest game on record was with the New Orleans Saints
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Andy Tanner](andy_tanner.md) | WR | 0 | 16 |
 | 10 | [Brandin Cooks](brandin_cooks.md) | WR | 5 | 0 |
 | 13 | [Joe Morgan](joe_morgan.md) | WR | 2 | 0 |
@@ -34,7 +36,7 @@ NFC South · Players whose latest game on record was with the New Orleans Saints
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 82 | [Benjamin Watson](benjamin_watson.md) | TE | 5 | 16 |
 | 80 | [Jimmy Graham](jimmy_graham.md) | TE | 5 | 16 |
 | 89 | [Josh Hill](josh_hill.md) | TE | 5 | 16 |
@@ -42,7 +44,7 @@ NFC South · Players whose latest game on record was with the New Orleans Saints
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 66 | [Ben Grubbs](ben_grubbs.md) | G | 5 | 16 |
 | 79 | [Bryce Harris](bryce_harris.md) | T | 5 | 8 |
 | 73 | [Jahri Evans](jahri_evans.md) | G | 5 | 16 |
@@ -54,7 +56,7 @@ NFC South · Players whose latest game on record was with the New Orleans Saints
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 76 | [Akiem Hicks](akiem_hicks.md) | DT | 5 | 16 |
 | 95 | [Brandon Deaderick](brandon_deaderick.md) | NT | 5 | 0 |
 | 77 | [Brodrick Bunkley](brodrick_bunkley.md) | NT | 5 | 15 |
@@ -66,7 +68,7 @@ NFC South · Players whose latest game on record was with the New Orleans Saints
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 50 | [Curtis Lofton](curtis_lofton.md) | ILB | 5 | 16 |
 | 57 | [David Hawthorne](david_hawthorne.md) | ILB | 4 | 16 |
 | 93 | [Junior Galette](junior_galette.md) | OLB | 5 | 16 |
@@ -81,7 +83,7 @@ NFC South · Players whose latest game on record was with the New Orleans Saints
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 20 | [Brian Dixon](brian_dixon.md) | CB | 5 | 0 |
 | 24 | [Corey White](corey_white.md) | CB | 5 | 16 |
 | N/A | [Jabari Greer](jabari_greer.md) | CB | 0 | 16 |
@@ -96,18 +98,20 @@ NFC South · Players whose latest game on record was with the New Orleans Saints
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Garrett Hartley](garrett_hartley.md) | K | 0 | 16 |
 | 3 | [Shayne Graham](shayne_graham.md) | K | 5 | 0 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 6 | [Thomas Morstead](thomas_morstead.md) | P | 5 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 47 | [Justin Drescher](justin_drescher.md) | LS | 5 | 16 |
+
+<!-- player-index -->

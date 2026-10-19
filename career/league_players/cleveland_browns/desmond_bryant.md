@@ -1,16 +1,29 @@
 # Desmond Bryant
 
-![Desmond Bryant career card](assets/desmond_bryant.svg)
+**Cleveland Browns · Defensive end · No. 92 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 310 lb · Born December 15, 1985 · Harvard
+
+As of October 5, 2014, after Week 5.
+
+![Desmond Bryant](https://commons.wikimedia.org/wiki/Special:FilePath/Desmond_Bryant_%28defensive_lineman%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Desmond_Bryant_(defensive_lineman).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 27 | 92 | 16 | 58 | 3 | 5 | 0 | 0 | 0 | 0 | 5 | 3.6 | 37 |
-| 2014 | Cleveland Browns | 28 | 92 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 19 | 58 | 3 | 5 | 0 | 0 | 0 | 0 | 5 | 3.1 | 37 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 28 | 92 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Cleveland | 27 | 92 | 16 | 58 | 37 | 21 | 5 | 3 | 5 |
+| Career |  |  |  | 19 | 58 | 37 | 21 | 5 | 3 | 5 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 28 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Cleveland | 27 | 92 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+<!-- player-page -->

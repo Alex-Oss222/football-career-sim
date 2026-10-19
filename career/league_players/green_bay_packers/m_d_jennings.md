@@ -1,15 +1,22 @@
 # M.D. Jennings
 
-![M.D. Jennings career card](assets/m_d_jennings.svg)
+**Green Bay Packers · Strong safety · Age 25 · Last game December 29, 2013**
 
-## Career stats
+6' 0", 187 lb · Born July 25, 1988 · Arkansas State
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Green Bay Packers | 25 | 43 | 16 | 68 | 1 | 7 | 9 | 2 | 1 | 0 | 0 | 4.2 | 0 |
-| **Career** |  |  |  | 16 | 68 | 1 | 7 | 9 | 2 | 1 | 0 | 0 | 4.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Green Bay | 25 | 43 | 16 | 68 | 46 | 22 | 2 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Green Bay | 25 | 43 | 1 | 9 | 7 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Green Bay Packers players](README.md).
+<!-- player-page -->

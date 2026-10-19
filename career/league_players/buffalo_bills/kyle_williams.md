@@ -1,28 +1,48 @@
 # Kyle Williams
 
-![Kyle Williams career card](assets/kyle_williams.svg)
+**Buffalo Bills · Defensive tackle · No. 95 · Age 31 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 303 lb · Born June 10, 1983 · LSU · Drafted in 2006, fifth round, by Buffalo
+
+As of October 5, 2014, after Week 5.
+
+![Kyle Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Kyle_Williams_%28defensive_tackle%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Kyle_Williams_(defensive_tackle).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 30 | 95 | 16 | 81 | 5 | 10 | 1 | 3 | 1 | 1 | 8 | 5.1 | 57 |
-| 2014 | Buffalo Bills | 31 | 95 | 5 | 11 | 2 | 2 | 0 | 1 | 0 | 0 | 3 | 2.2 | 7 |
-| **Career** |  |  |  | 21 | 92 | 7 | 12 | 1 | 4 | 1 | 1 | 11 | 4.4 | 64 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 31 | 95 | 5 | 11 | 7 | 4 | 2 | 2 | 3 |
+| 2013 | Buffalo | 30 | 95 | 16 | 81 | 57 | 24 | 10 | 5 | 8 |
+| Career |  |  |  | 21 | 92 | 64 | 28 | 12 | 7 | 11 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 31 | 95 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | Buffalo | 30 | 95 | 1 | 24 | 3 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 30 | 95 | 4 | 27 | 4 | 3 | 0 | 1 | 1 | 1 | 6 | 6.8 | 19 |
-| **Career** |  |  |  | 4 | 27 | 4 | 3 | 0 | 1 | 1 | 1 | 6 | 6.8 | 19 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 30 | 95 | 4 | 27 | 19 | 8 | 3 | 4 | 6 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 30 | 95 | 0 | 0 | 1 | 1 | 1 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Buffalo in the fifth round |
+
+<!-- player-page -->

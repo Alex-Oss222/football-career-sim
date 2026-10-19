@@ -126,7 +126,14 @@ Each step is built lean: one builder and one reviewer, no new research except a 
 | 1 | Done (merged) |
 | 2 | Layout approved; the player record is built with step 3 |
 | 2b | Done (merged) |
-| 3 to 8 | Not started |
+| 3a | Built, awaiting merge: the permanent player records (`data/people/players/`), the canon-override layer with Kirk Cousins's birth date, one builder for every player page (`scripts/render_player_pages.py`), and the clean-page and folder-map checks in validation |
+| 3 (rest) | Not started: the coach and contract records, and the coach, team, staff, contract and desk pages |
+| 4 to 8 | Not started |
+
+Carried from 3a to step 6 (season end):
+
+- The season-close tools (the final player assessments in `scripts/build_annual_player_sheets.py` and the opening cards staged by `scripts/season_handoff.py`) still read the earlier card layout; at the year change they move to the records, where the opening assessments now live. Until then a season's player folder holds built pages, its opening assessments are checked on the records, and the folder stops being written once the season review closes the season.
+- The 2014 player-state table (`library/data/2014_player_state_public.json`) was built and frozen before the birth-date change and applied Cousins's 2014 aging once, at 26. It does not read the birth-date registry, so the override does not reach it and no 2014 game changes; the 2015 aging, built at the year change, must read the birth dates through `runtime/player_bios.py`.
 
 ## Change log
 

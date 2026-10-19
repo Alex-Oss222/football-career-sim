@@ -1,16 +1,29 @@
 # Julio Jones
 
-![Julio Jones career card](assets/julio_jones.svg)
+**Atlanta Falcons · Wide receiver · No. 11 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 220 lb · Born February 8, 1989 · Alabama · Drafted in 2011, first round, by Atlanta
+
+As of October 5, 2014, after Week 5.
+
+![Julio Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Julio_Jones_2018.jpg?width=500)
+
+*Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Julio_Jones_2018.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 24 | 11 | 16 | 109 | 76 | 730 | 9.6 | 3 | 45.6 | 69.7 | 36 | 13 | 0 |
-| 2014 | Atlanta Falcons | 25 | 11 | 5 | 46 | 30 | 410 | 13.7 | 5 | 82.0 | 65.2 | 56 | 4 | 0 |
-| **Career** |  |  |  | 21 | 155 | 106 | 1,140 | 10.8 | 8 | 54.3 | 68.4 | 56 | 17 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 25 | 11 | 5 | 46 | 30 | 410 | 13.7 | 5 | 56 | 82.0 | 65.2 |
+| 2013 | Atlanta | 24 | 11 | 16 | 109 | 76 | 730 | 9.6 | 3 | 36 | 45.6 | 69.7 |
+| Career |  |  |  | 21 | 155 | 106 | 1,140 | 10.8 | 8 | 56 | 54.3 | 68.4 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 25 | 11 | 1 | 4 | 0 | 0 | 0 |
+| 2013 | Atlanta | 24 | 11 | 3 | 13 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Atlanta in the first round |
+
+<!-- player-page -->

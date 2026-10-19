@@ -1,0 +1,287 @@
+{
+ "schema_version": 1,
+ "name": "Paul Posluszny",
+ "gsis_id": "00-0025421",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/paul_posluszny.md"
+  },
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-03-31",
+   "date_as_written": "March 31, 2014 starting evaluation",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Starting staff view; exact theoretical personnel grades",
+   "position": "LB",
+   "age_as_written": "29",
+   "identity": "An instinctive middle linebacker who can set fits, communicate the front and finish inside tackles. I see downhill work as stronger than isolated man coverage or recovery range.",
+   "previous_profile": "[2013 baseline](career/2013/player_profiles/paul_posluszny.md)",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Run diagnosis",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Fit discipline",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Block destruction",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Range",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Tackling",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Zone coverage",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Man coverage",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Blitz / pressure",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Communication",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Pursuit angles",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Run diagnosis",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Fit discipline",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Block destruction",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Range",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Tackling",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Zone coverage",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Man coverage",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Blitz / pressure",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Communication",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Pursuit angles",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards, not measured 2014 league ranks.",
+   "read": "An instinctive middle linebacker who can set fits, communicate the front and finish inside tackles. I see downhill work as stronger than isolated man coverage or recovery range.",
+   "read_sources": "Source: [2013 profile](career/2013/player_profiles/paul_posluszny.md) and its recorded practice/game sources.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "2013 baseline",
+     "current": "Starting 2014 view",
+     "change": "Retained",
+     "reason": "No new individual football evidence establishing change"
+    }
+   ],
+   "support": "An instinctive middle linebacker who can set fits, communicate the front and finish inside tackles. I see downhill work as stronger than isolated man coverage or recovery range.\n\n[2013 profile](career/2013/player_profiles/paul_posluszny.md) and its recorded practice/game sources.",
+   "historical_comparison": "The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.",
+   "play_style": "An instinctive middle linebacker who can set fits, communicate the front and finish inside tackles. I see downhill work as stronger than isolated man coverage or recovery range.",
+   "best_traits": [
+    "Run diagnosis: 7.5 /10.",
+    "Communication: 7.5 /10.",
+    "Fit discipline: 7.0 /10."
+   ],
+   "main_weaknesses": [
+    "Man coverage: 4.5 /10.",
+    "Blitz / pressure: 5.0 /10.",
+    "Range: 5.5 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [2013 profile](career/2013/player_profiles/paul_posluszny.md) and its recorded practice/game sources.",
+    "**Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics."
+   ],
+   "one_line": "An instinctive middle linebacker who can set fits, communicate the front and finish inside tackles. I see downhill work as stronger than isolated man coverage or recovery range.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Posluszny delivered the call with Smith removed and fitted his assigned Under responsibility. The relay held August 1. The record supplies controlled-contact work, not a completed tackle-to-ground sample.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-28",
+     "date_as_written": "September 28, 2014",
+     "setting": "Week 4, Jacksonville at San Diego",
+     "text": "All 64 defensive snaps with seven tackles, five solo, and a pressure: the sack of Rivers for 4 on third-and-1 in the third quarter over Rinehart's slot, which forced a punt, the tackle on Brown's 14-yard run to the Jacksonville 13 and on Woodhead's 11 on San Diego's last possession, and the shared tackle on Allen's 38-yard catch. The play-by-play records the tackle and the slot and not the fit or the rush path; the runs on the touchdown drives are Bush's and Crennel's film items with Stone. A minor trunk injury was logged at the end of the first half, at the end of San Diego's two-minute possession; he was not removed and the sack came after it: out, projected return October 3, reassessment September 29 ([medical record](career/2014/Team_Operations/Medical/incidents/paul_posluszny_2014-09-28.md)). No role change follows.",
+     "source": "Source: [Week 4 game record](career/2014/Regular_Season/Games/Week_04/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-10-04",
+     "date_as_written": "September 29 to October 4, 2014",
+     "setting": "Cleared Friday",
+     "text": "Reassessed Monday, September 29, with no change and out of the Monday walkthrough and the Wednesday and Thursday practices, Bush rehearsing the linebacker contingency with Sio Moore, Telvin Smith and the next medically eligible linebackers in the recorded order. Cleared Friday, October 3, his projected date; Stone's packet allows Friday work after an actual clearance within the communicated limits, none was communicated, and he took the Friday practice and the Saturday walkthrough in full. Restored to his base role for Pittsburgh by Stone's decision; no designation on the Friday report. No football finding attaches to the instruction.",
+     "source": "Source: [Week 5 record](career/2014/Regular_Season/Games/Week_05/output.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/paul_posluszny.md at commit 332d70b"
+  }
+ ],
+ "awards": [],
+ "transactions": [
+  {
+   "date": "2011",
+   "kind": "signed",
+   "text": "Signed a six-year contract with Jacksonville",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md"
+  }
+ ]
+}

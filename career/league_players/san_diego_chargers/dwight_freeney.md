@@ -1,15 +1,26 @@
 # Dwight Freeney
 
-![Dwight Freeney career card](assets/dwight_freeney.svg)
+**San Diego Chargers · Outside linebacker · No. 93 · Age 33 · Last game December 29, 2013**
 
-## Career stats
+6' 1", 268 lb · Born February 19, 1980 · Syracuse · Drafted in 2002, first round, by Indianapolis
+
+As of December 29, 2013, after Week 17.
+
+![Dwight Freeney](https://commons.wikimedia.org/wiki/Special:FilePath/Dwight_Freeney.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Dwight_Freeney.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Diego Chargers | 33 | 93 | 16 | 32 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2.0 | 22 |
-| **Career** |  |  |  | 16 | 32 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2.0 | 22 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | San Diego | 33 | 93 | 16 | 32 | 22 | 10 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | San Diego | 33 | 93 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +28,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2002 | Drafted by Indianapolis in the first round |
+
+<!-- player-page -->

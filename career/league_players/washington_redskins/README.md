@@ -1,11 +1,13 @@
 # Washington Redskins players
 
-NFC East · Players whose latest game on record was with the Washington Redskins. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+NFC East. The players whose latest game on record was with the Washington Redskins. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 16 | [Colt McCoy](colt_mccoy.md) | QB | 5 | 16 |
 | N/A | [Pat White](pat_white.md) | QB | 0 | 16 |
 | N/A | [Rex Grossman](rex_grossman.md) | QB | 0 | 16 |
@@ -14,7 +16,7 @@ NFC East · Players whose latest game on record was with the Washington Redskins
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 46 | [Alfred Morris](alfred_morris.md) | RB | 5 | 16 |
 | N/A | [Chris Thompson](chris_thompson.md) | RB | 0 | 8 |
 | 36 | [Darrel Young](darrel_young.md) | FB | 5 | 16 |
@@ -25,7 +27,7 @@ NFC East · Players whose latest game on record was with the Washington Redskins
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 15 | [Aldrick Robinson](aldrick_robinson.md) | WR | 5 | 16 |
 | 12 | [Andre Roberts](andre_roberts.md) | WR | 5 | 16 |
 | 11 | [DeSean Jackson](desean_jackson.md) | WR | 5 | 16 |
@@ -37,7 +39,7 @@ NFC East · Players whose latest game on record was with the Washington Redskins
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Fred Davis](fred_davis.md) | TE | 0 | 16 |
 | 86 | [Jordan Reed](jordan_reed.md) | TE | 4 | 16 |
 | 82 | [Logan Paulsen](logan_paulsen.md) | TE | 5 | 11 |
@@ -46,7 +48,7 @@ NFC East · Players whose latest game on record was with the Washington Redskins
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Adam Gettis](adam_gettis.md) | G | 0 | 7 |
 | 66 | [Chris Chester](chris_chester.md) | G | 5 | 16 |
 | 67 | [Josh LeRibeus](josh_leribeus.md) | G | 5 | 16 |
@@ -61,7 +63,7 @@ NFC East · Players whose latest game on record was with the Washington Redskins
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 96 | [Barry Cofield](barry_cofield.md) | NT | 5 | 15 |
 | 92 | [Chris Baker](chris_baker.md) | DT | 5 | 16 |
 | N/A | [Chris Neild](chris_neild.md) | NT | 0 | 7 |
@@ -77,7 +79,7 @@ NFC East · Players whose latest game on record was with the Washington Redskins
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 55 | [Adam Hayward](adam_hayward.md) | ILB | 5 | 16 |
 | 54 | [Akeem Jordan](akeem_jordan.md) | MLB | 1 | 16 |
 | N/A | [Brandon Jenkins](brandon_jenkins.md) | OLB | 0 | 16 |
@@ -93,7 +95,7 @@ NFC East · Players whose latest game on record was with the Washington Redskins
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 26 | [Bashaud Breeland](bashaud_breeland.md) | CB | 5 | 0 |
 | 31 | [Brandon Meriweather](brandon_meriweather.md) | SS | 0 | 16 |
 | 39 | [David Amerson](david_amerson.md) | CB | 5 | 11 |
@@ -111,18 +113,20 @@ NFC East · Players whose latest game on record was with the Washington Redskins
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 2 | [Kai Forbath](kai_forbath.md) | K | 5 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Saverio Rocca](saverio_rocca.md) | P | 0 | 16 |
 | 5 | [Tress Way](tress_way.md) | P | 5 | 0 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 57 | [Nick Sundberg](nick_sundberg.md) | LS | 5 | 16 |
+
+<!-- player-index -->

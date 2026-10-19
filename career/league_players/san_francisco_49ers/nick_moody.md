@@ -1,16 +1,29 @@
 # Nick Moody
 
-![Nick Moody career card](assets/nick_moody.svg)
+**San Francisco 49ers · Inside linebacker · No. 54 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 245 lb · Born January 29, 1990 · Florida State
+
+As of October 5, 2014, after Week 5.
+
+![Nick Moody](https://commons.wikimedia.org/wiki/Special:FilePath/Nick_Moody.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Nick_Moody.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 23 | 54 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| 2014 | San Francisco 49ers | 24 | 54 | 5 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0.4 | 1 |
-| **Career** |  |  |  | 7 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0.3 | 1 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 24 | 54 | 5 | 2 | 1 | 1 | 0 | 0 | 1 |
+| 2013 | San Francisco | 23 | 54 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 7 | 2 | 1 | 1 | 0 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 24 | 54 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | San Francisco | 23 | 54 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+<!-- player-page -->

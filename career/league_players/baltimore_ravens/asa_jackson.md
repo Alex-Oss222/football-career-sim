@@ -1,15 +1,26 @@
 # Asa Jackson
 
-![Asa Jackson career card](assets/asa_jackson.svg)
+**Baltimore Ravens · Cornerback · No. 25 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 182 lb · Born December 2, 1989 · Cal Poly (San Luis Obispo) · Drafted in 2012, fifth round, by Baltimore
+
+As of October 5, 2014, after Week 5.
+
+![Asa Jackson](https://commons.wikimedia.org/wiki/Special:FilePath/Asa_Jackson_MT_Stadium_2012_Practice.jpg?width=500)
+
+*Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Asa_Jackson_MT_Stadium_2012_Practice.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Baltimore Ravens | 24 | 25 | 5 | 20 | 0 | 5 | 0 | 1 | 0 | 0 | 0 | 4.0 | 0 |
-| **Career** |  |  |  | 5 | 20 | 0 | 5 | 0 | 1 | 0 | 0 | 0 | 4.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 24 | 25 | 5 | 20 | 15 | 5 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 24 | 25 | 0 | 0 | 5 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +28,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Baltimore Ravens players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Baltimore in the fifth round |
+
+<!-- player-page -->

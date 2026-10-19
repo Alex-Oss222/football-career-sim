@@ -1,16 +1,20 @@
 # Danny Aiken
 
-![Danny Aiken career card](assets/danny_aiken.svg)
+**New England Patriots · Long snapper · No. 48 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 255 lb · Born August 28, 1988 · Virginia
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | LONG SNAPS | ST SNAPS | ST TKL | TKL | SOLO | AST | FF | FR | LONG SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 25 | 48 | 16 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
-| 2014 | New England Patriots | 26 | 48 | 1 | 10 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 10.0 |
-| **Career** |  |  |  | 17 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 26 | 48 | 1 | 10 | 10 | 0 | 0 |
+| 2013 | New England | 25 | 48 | 16 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 17 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 
@@ -18,8 +22,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All New England Patriots players](README.md).
+<!-- player-page -->

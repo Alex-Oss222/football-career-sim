@@ -1,28 +1,46 @@
 # Chris Polk
 
-![Chris Polk career card](assets/chris_polk.svg)
+**Philadelphia Eagles · Running back · No. 32 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 222 lb · Born December 16, 1989 · Washington
+
+As of October 5, 2014, after Week 5.
+
+![Chris Polk](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Polk_UW.jpg?width=500)
+
+*Photo: Mabuus, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Chris_Polk_UW.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 23 | 32 | 16 | 19 | 96 | 5.1 | 1 | 6.0 | 3 | 36 | 0 | 22 | 0 |
-| 2014 | Philadelphia Eagles | 24 | 32 | 5 | 7 | 49 | 7.0 | 0 | 9.8 | 1 | 6 | 0 | 8 | 0 |
-| **Career** |  |  |  | 21 | 26 | 145 | 5.6 | 1 | 6.9 | 4 | 42 | 0 | 30 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 24 | 32 | 5 | 7 | 49 | 7.0 | 0 | 18 | 9.8 |
+| 2013 | Philadelphia | 23 | 32 | 16 | 19 | 96 | 5.1 | 1 | 17 | 6.0 |
+| Career |  |  |  | 21 | 26 | 145 | 5.6 | 1 | 18 | 6.9 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 24 | 32 | 2 | 1 | 6 | 6.0 | 0 | 0 | 0 |
+| 2013 | Philadelphia | 23 | 32 | 4 | 3 | 36 | 12.0 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 23 | 32 | 3 | 3 | 7 | 2.3 | 0 | 2.3 | 1 | 8 | 0 | 4 | 0 |
-| **Career** |  |  |  | 3 | 3 | 7 | 2.3 | 0 | 2.3 | 1 | 8 | 0 | 4 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 23 | 32 | 3 | 3 | 7 | 2.3 | 0 | 6 | 2.3 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 23 | 32 | 2 | 1 | 8 | 8.0 | 0 | 0 | 0 |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Philadelphia Eagles players](README.md).
+<!-- player-page -->

@@ -1,16 +1,24 @@
 # Clint Gresham
 
-![Clint Gresham career card](assets/clint_gresham.svg)
+**Seattle Seahawks · Long snapper · No. 49 · Age 28 · Last game October 6, 2014**
 
-## Career stats
+6' 3", 240 lb · Born August 24, 1986 · TCU; Oklahoma
+
+As of October 6, 2014, after Week 5.
+
+![Clint Gresham](https://commons.wikimedia.org/wiki/Special:FilePath/Clint_Gresham_2014.jpg?width=500)
+
+*Photo: Mike Morris, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Clint_Gresham_2014.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | LONG SNAPS | ST SNAPS | ST TKL | TKL | SOLO | AST | FF | FR | LONG SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Seattle Seahawks | 27 | 49 | 16 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Seattle Seahawks | 28 | 49 | 4 | 41 | 41 | 0 | 0 | 0 | 0 | 0 | 0 | 10.2 |
-| **Career** |  |  |  | 20 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 28 | 49 | 4 | 41 | 41 | 0 | 0 |
+| 2013 | Seattle | 27 | 49 | 16 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 20 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+<!-- player-page -->

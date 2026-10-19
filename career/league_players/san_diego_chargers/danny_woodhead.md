@@ -1,16 +1,29 @@
 # Danny Woodhead
 
-![Danny Woodhead career card](assets/danny_woodhead.svg)
+**San Diego Chargers · Running back · No. 39 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+5' 8", 200 lb · Born January 25, 1985 · Chadron State
+
+As of October 5, 2014, after Week 5.
+
+![Danny Woodhead](https://commons.wikimedia.org/wiki/Special:FilePath/Danny_Woodhead_2011.jpg?width=500)
+
+*Photo: Jack Newton from Austin, TX, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Danny_Woodhead_2011.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Diego Chargers | 28 | 39 | 16 | 1 | 9 | 9.0 | 0 | 0.6 | 0 | 0 | 0 | 1 | 0 |
-| 2014 | San Diego Chargers | 29 | 39 | 5 | 59 | 297 | 5.0 | 2 | 59.4 | 8 | 122 | 1 | 67 | 1 |
-| **Career** |  |  |  | 21 | 60 | 306 | 5.1 | 2 | 14.6 | 8 | 122 | 1 | 68 | 1 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 29 | 39 | 5 | 59 | 297 | 5.0 | 2 | 41 | 59.4 |
+| 2013 | San Diego | 28 | 39 | 16 | 1 | 9 | 9.0 | 0 | 9 | 0.6 |
+| Career |  |  |  | 21 | 60 | 306 | 5.1 | 2 | 41 | 14.6 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 29 | 39 | 9 | 8 | 122 | 15.2 | 1 | 1 | 1 |
+| 2013 | San Diego | 28 | 39 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -20,6 +33,8 @@ No playoff games on record.
 
 - AFC Offensive Player of the Week (2014, Week 5)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+None on record.
+
+<!-- player-page -->

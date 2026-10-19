@@ -1,16 +1,24 @@
 # Ryan Schraeder
 
-![Ryan Schraeder career card](assets/ryan_schraeder.svg)
+**Atlanta Falcons · Offensive tackle · No. 73 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 7", 300 lb · Born May 4, 1988 · Valdosta State; Butler County JC
+
+As of October 5, 2014, after Week 5.
+
+![Ryan Schraeder](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Schraeder_2013.jpg?width=500)
+
+*Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Ryan_Schraeder_2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 25 | 73 | 16 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Atlanta Falcons | 26 | 73 | 5 | 1 | 69 | 0 | 26 | 0 | 0 | 0 | 0 | 13.8 |
-| **Career** |  |  |  | 21 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 26 | 73 | 5 | 1 | 69 | 0 | 26 |
+| 2013 | Atlanta | 25 | 73 | 16 | N/A | N/A | 5 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+<!-- player-page -->

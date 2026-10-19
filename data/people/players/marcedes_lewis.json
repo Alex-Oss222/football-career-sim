@@ -1,0 +1,281 @@
+{
+ "schema_version": 1,
+ "name": "Marcedes Lewis",
+ "gsis_id": "00-0024243",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/marcedes_lewis.md"
+  },
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-03-31",
+   "date_as_written": "March 31, 2014 starting evaluation",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Starting staff view; exact theoretical personnel grades",
+   "position": "TE",
+   "age_as_written": "29",
+   "identity": "A large, complete attached tight end whose blocking, catch radius and dependable operation anchor the position. I see a strong starter who offers more structure and physical usefulness than sudden separation.",
+   "previous_profile": "[2013 baseline](career/2013/player_profiles/marcedes_lewis.md)",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Route running / separation",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Hands / catch radius",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Contested catch / ball tracking",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "YAC",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Run blocking",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Pass protection / chip",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Alignment versatility",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed / athleticism",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Coverage recognition",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Route running / separation",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Hands / catch radius",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Contested catch / ball tracking",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "YAC",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Run blocking",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Pass protection / chip",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Alignment versatility",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed / athleticism",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Coverage recognition",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards, not measured 2014 league ranks.",
+   "read": "A large, complete attached tight end whose blocking, catch radius and dependable operation anchor the position. I see a strong starter who offers more structure and physical usefulness than sudden separation.",
+   "read_sources": "Source: [2013 profile](career/2013/player_profiles/marcedes_lewis.md) and its recorded practice/game sources.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "2013 baseline",
+     "current": "Starting 2014 view",
+     "change": "Retained",
+     "reason": "No new individual football evidence establishing change"
+    }
+   ],
+   "support": "A large, complete attached tight end whose blocking, catch radius and dependable operation anchor the position. I see a strong starter who offers more structure and physical usefulness than sudden separation.\n\n[2013 profile](career/2013/player_profiles/marcedes_lewis.md) and its recorded practice/game sources.",
+   "historical_comparison": "The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.",
+   "play_style": "A large, complete attached tight end whose blocking, catch radius and dependable operation anchor the position. I see a strong starter who offers more structure and physical usefulness than sudden separation.",
+   "best_traits": [
+    "Run blocking: 7.5 /10.",
+    "Hands / catch radius: 7.0 /10.",
+    "Contested catch / ball tracking: 7.0 /10."
+   ],
+   "main_weaknesses": [
+    "Speed / athleticism: 5.0 /10.",
+    "YAC: 5.5 /10.",
+    "Route running / separation: 6.0 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [2013 profile](career/2013/player_profiles/marcedes_lewis.md) and its recorded practice/game sources.",
+    "**Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics."
+   ],
+   "one_line": "A large, complete attached tight end whose blocking, catch radius and dependable operation anchor the position. I see a strong starter who offers more structure and physical usefulness than sudden separation.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Lewis sustained the recorded attached blocks against Davis. The observation supports that assigned job at controlled contact; it does not supply an unlimited matchup verdict.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-27",
+     "date_as_written": "September 22 to 27, 2014",
+     "setting": "TE Delay",
+     "text": "The delay tight end on the three Wednesday candidate reps and the three Thursday reps from the Wing and Trey pictures, the job he ran in 2013: the block sell, the delayed release and the line's escort clean on the recorded reps with no free contact on Cousins, and the call retained for San Diego. The cause of the two 2013 TE Delay sacks he asked about in his exit interview is still open; nothing this week answered it. He also led the tight-end work Monday through Wednesday with Kelce out. Nothing charged to him on the recorded reps.",
+     "source": "Source: [Week 4 record](career/2014/Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/marcedes_lewis.md at commit 332d70b"
+  }
+ ],
+ "awards": [
+  {
+   "season": 2013,
+   "award": "Pro Bowl selection, replacement (2013, TE)",
+   "decided": {
+    "season": 2013,
+    "file": "season_honours_results.json",
+    "key": "pro_bowl.selections",
+    "slot": "TE",
+    "role": "replacement"
+   }
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2011",
+   "kind": "signed",
+   "text": "Signed a five-year contract with Jacksonville",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md"
+  }
+ ]
+}

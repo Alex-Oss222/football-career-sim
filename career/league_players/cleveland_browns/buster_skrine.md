@@ -1,16 +1,29 @@
 # Buster Skrine
 
-![Buster Skrine career card](assets/buster_skrine.svg)
+**Cleveland Browns · Cornerback · No. 22 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 185 lb · Born April 26, 1989 · Tennessee-Chattanooga · Drafted in 2011, fifth round, by Cleveland
+
+As of October 5, 2014, after Week 5.
+
+![Buster Skrine](https://commons.wikimedia.org/wiki/Special:FilePath/Buster_Skrine_cropped.jpg?width=500)
+
+*Photo: Erik Drost from United States, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Buster_Skrine_cropped.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 24 | 22 | 15 | 111 | 7 | 24 | 119 | 3 | 0 | 2 | 2 | 7.4 | 0 |
-| 2014 | Cleveland Browns | 25 | 22 | 4 | 26 | 3 | 5 | 58 | 0 | 0 | 0 | 0 | 6.5 | 0 |
-| **Career** |  |  |  | 19 | 137 | 10 | 29 | 177 | 3 | 0 | 2 | 2 | 7.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 25 | 22 | 4 | 26 | 20 | 6 | 0 | 0 | 0 |
+| 2013 | Cleveland | 24 | 22 | 15 | 111 | 71 | 40 | 3 | 0 | 0 |
+| Career |  |  |  | 19 | 137 | 91 | 46 | 3 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 25 | 22 | 3 | 58 | 5 | 0 | 0 | 0 |
+| 2013 | Cleveland | 24 | 22 | 7 | 119 | 24 | 2 | 2 | N/A |
 
 ### Playoffs
 
@@ -24,6 +37,10 @@ No playoff games on record.
 - AP First-Team All-Pro (2013, CB)
 - Pro Bowl selection (2013, CB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Cleveland in the fifth round |
+
+<!-- player-page -->

@@ -1,15 +1,22 @@
 # C.J. Fiedorowicz
 
-![C.J. Fiedorowicz career card](assets/c_j_fiedorowicz.svg)
+**Houston Texans · Tight end · No. 87 · Age 22 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 265 lb · Born October 22, 1991 · Iowa
+
+As of October 5, 2014, after Week 5.
+
+![C.J. Fiedorowicz](https://commons.wikimedia.org/wiki/Special:FilePath/C.J._Fiedorowicz.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:C.J._Fiedorowicz.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Houston Texans | 22 | 87 | 5 | 7 | 4 | 26 | 6.5 | 1 | 5.2 | 57.1 | 10 | 0 | 0 |
-| **Career** |  |  |  | 5 | 7 | 4 | 26 | 6.5 | 1 | 5.2 | 57.1 | 10 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Houston | 22 | 87 | 5 | 7 | 4 | 26 | 6.5 | 1 | 10 | 5.2 | 57.1 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Houston Texans players](README.md).
+<!-- player-page -->

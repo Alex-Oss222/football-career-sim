@@ -1,15 +1,51 @@
 # Adrian Phillips
 
-![Adrian Phillips career card](assets/adrian_phillips.svg)
+**Jacksonville Jaguars · Safety · Age 22 · Active roster**
 
-## Career stats
+Born March 28, 1992 · Texas · Undrafted
+
+As of October 5, 2014, after Week 5.
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 3.0/10 |
+| Athleticism | 5.0/10 |
+| Speed | 5.0/10 |
+| Strength and power | 5.0/10 |
+| Agility and change of direction | 5.0/10 |
+| Technique | 4.5/10 |
+| Football IQ | 5.0/10 |
+| Tackling | 5.5/10 |
+| Deep range | 4.0/10 |
+| Coverage-unit fit | 5.5/10 |
+
+A safety with a physical tackling profile and coverage-unit experience; range on the back end is the question.
+
+*Staff view, May 11, 2014; dated updates through October 4, 2014.*
+
+## Contract
+
+Three-year contract through 2016.
+
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $395,294 | $401,594 |
+| 2015 | $510,000 | $510,000 |
+| 2016 | $600,000 | $600,000 |
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Jacksonville Jaguars | 22 | N/A | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 0 |
-| **Career** |  |  |  | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 22 | N/A | 4 | 1 | 1 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 22 | N/A | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 
@@ -17,10 +53,15 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/adrian_phillips.md)
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| May 10, 2014 | Signed a three-year contract with Jacksonville as an undrafted rookie |
+| August 30, 2014 | Waived by Jacksonville at the reduction to 53 |
+| August 31, 2014 | Cleared waivers; signed to the Jacksonville practice squad |
+| September 8, 2014 | Promoted from the practice squad to the active roster on a new three-year contract (2014 to 2016) |
 
-Records through October 5, 2014. Identity: the public player file's college (no 2014 Weeks 1-4 or 2013 roster row). [All Jacksonville Jaguars players](README.md).
+<!-- player-page -->

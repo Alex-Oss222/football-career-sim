@@ -24,15 +24,16 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from runtime.packets import canonical
+from runtime.seasons import SeasonPaths
 from runtime.usage import group
 
-DIR = ROOT / "career/2013/pro_bowl"
+DIR = SeasonPaths(2013, ROOT).record("pro_bowl")
 METHOD = DIR / "method.json"
 DRAFT = DIR / "draft.json"
 GAME = DIR / "game.json"
 RECEIPT = DIR / "receipt.json"
 PAGE = DIR / "README.md"
-HONOURS = ROOT / "career/2013/awards/season_honours_results.json"
+HONOURS = SeasonPaths(2013, ROOT).awards_data / "season_honours_results.json"
 TEAMS = ("Team One", "Team Two")
 EVENT_ID = "2013-pro-bowl"
 UNIT = {"QB": "offense", "RB": "offense", "FB": "offense", "WR": "offense", "TE": "offense", "OL": "offense",
@@ -111,8 +112,8 @@ def run_draft(m, honours, first):
 def need_player(club):
     """The long snapper in the club's latest closed receipt."""
     from scripts.render_season_stats import load_receipts
-    receipts = list(load_receipts(ROOT / "career/2013/stats/game_receipts")) + list(
-        load_receipts(ROOT / "career/2013/stats/postseason_receipts"))
+    receipts = list(load_receipts(SeasonPaths(2013, ROOT).receipts)) + list(
+        load_receipts(SeasonPaths(2013, ROOT).postseason_receipts))
     latest = max((r for r in receipts if club in r["team_stats"]), key=lambda r: int(r["week"]))
     snappers = [n for n, p in latest["team_stats"][club]["players"].items() if p.get("position") == "LS"]
     if len(snappers) != 1:

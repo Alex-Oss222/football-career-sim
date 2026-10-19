@@ -1,16 +1,24 @@
 # Gino Gradkowski
 
-![Gino Gradkowski career card](assets/gino_gradkowski.svg)
+**Baltimore Ravens · Center · No. 66 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 300 lb · Born November 5, 1988 · Delaware · Drafted in 2012, fourth round, by Baltimore
+
+As of October 5, 2014, after Week 5.
+
+![Gino Gradkowski](https://commons.wikimedia.org/wiki/Special:FilePath/Gino_Gradkowski_2013.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Gino_Gradkowski_2013.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Baltimore Ravens | 24 | 66 | 16 | N/A | N/A | 10 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Baltimore Ravens | 25 | 66 | 5 | 0 | 0 | 0 | 32 | 0 | 0 | 0 | 0 | 0.0 |
-| **Career** |  |  |  | 21 | N/A | N/A | 10 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 25 | 66 | 5 | 0 | 0 | 0 | 32 |
+| 2013 | Baltimore | 24 | 66 | 16 | N/A | N/A | 10 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Baltimore Ravens players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Baltimore in the fourth round |
+
+<!-- player-page -->

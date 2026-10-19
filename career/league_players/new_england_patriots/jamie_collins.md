@@ -1,16 +1,29 @@
 # Jamie Collins
 
-![Jamie Collins career card](assets/jamie_collins.svg)
+**New England Patriots · Linebacker · No. 91 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 250 lb · Born October 20, 1989 · Southern Mississippi
+
+As of October 5, 2014, after Week 5.
+
+![Jamie Collins](https://commons.wikimedia.org/wiki/Special:FilePath/Jamie_Collins_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jamie_Collins_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 23 | 91 | 16 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0.5 | 7 |
-| 2014 | New England Patriots | 24 | 91 | 5 | 36 | 3 | 3 | 1 | 3 | 1 | 1 | 3 | 7.2 | 29 |
-| **Career** |  |  |  | 21 | 44 | 3 | 3 | 1 | 3 | 1 | 1 | 5 | 2.1 | 36 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 24 | 91 | 5 | 36 | 29 | 7 | 3 | 3 | 3 |
+| 2013 | New England | 23 | 91 | 16 | 8 | 7 | 1 | 0 | 0 | 2 |
+| Career |  |  |  | 21 | 44 | 36 | 8 | 3 | 3 | 5 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 24 | 91 | 1 | 32 | 3 | 1 | 1 | 0 |
+| 2013 | New England | 23 | 91 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -20,6 +33,8 @@ No playoff games on record.
 
 - AFC Defensive Player of the Week (2014, Week 5)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New England Patriots players](README.md).
+None on record.
+
+<!-- player-page -->

@@ -1,15 +1,26 @@
 # Derek Carr
 
-![Derek Carr career card](assets/derek_carr.svg)
+**Oakland Raiders · Quarterback · No. 4 · Age 23 · Last game September 28, 2014**
 
-## Career stats
+6' 3", 214 lb · Born March 28, 1991 · Fresno State
+
+As of September 28, 2014, after Week 4.
+
+![Derek Carr](https://commons.wikimedia.org/wiki/Special:FilePath/Derek_Carr_WFT_at_Raiders_-_51735347857_%28cropped%29.jpg?width=500)
+
+*Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Derek_Carr_WFT_at_Raiders_-_51735347857_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Oakland Raiders | 23 | 4 | 4 | 110-160 | 68.8 | 1,133 | 9 | 6 | 7.1 | 92.0 | 283.2 | 74 | 0 |
-| **Career** |  |  |  | 4 | 110-160 | 68.8 | 1,133 | 9 | 6 | 7.1 | 92.0 | 283.2 | 74 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 23 | 4 | 4 | 110 | 160 | 68.8 | 1,133 | 7.1 | 283.2 | 9 | 6 | 92.0 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 23 | 4 | 14 | 101 | 15 | 74 | 0 | 1 | 1 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Oakland Raiders players](README.md).
+<!-- player-page -->

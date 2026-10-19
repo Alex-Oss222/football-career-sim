@@ -1,156 +1,87 @@
-# Sen'Derrick Marks — 2014 Player Profile
+# Sen'Derrick Marks
 
-<!-- player-card:begin -->
-![Sen'Derrick Marks career card](../../../../league_players/jacksonville_jaguars/assets/sen_derrick_marks.svg)
+**Jacksonville Jaguars · Defensive tackle · No. 99 · Age 27 · Active roster**
 
-[Career statistics](../../../../league_players/jacksonville_jaguars/sen_derrick_marks.md)
-<!-- player-card:end -->
+6' 2", 294 lb · Born February 23, 1987 · Auburn · Drafted in 2009, second round, by Tennessee
 
-<!-- photo -->
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sen%27Derrick_Marks_2014_Jaguars_training_camp_Cropped.jpg?width=500" alt="Sen&#x27;Derrick Marks" width="160">
+As of October 5, 2014, after Week 5.
+
+![Sen'Derrick Marks](https://commons.wikimedia.org/wiki/Special:FilePath/Sen%27Derrick_Marks_2014_Jaguars_training_camp_Cropped.jpg?width=500)
 
 *Photo: Flickr user Melissa Hillier, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Sen%27Derrick_Marks_2014_Jaguars_training_camp_Cropped.jpg)).*
-<!-- /photo -->
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** March 31, 2014 starting evaluation  
-**Age:** 27  
-**Position:** DT  
-**NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** A penetrating interior starter whose quick entry and lateral pursuit can disrupt the pocket and backfield. I see better single-gap pressure tools than double-team anchoring.  
-**Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/sen_derrick_marks.md)  
+## Staff assessment
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
-
-## Player grades
-
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 6.5 /10 | Staff judgment |
-| Athleticism | 6.5 /10 | Staff judgment |
-| Speed | 6.0 /10 | Staff judgment |
-| Strength / Power | 6.5 /10 | Staff judgment |
-| Agility / Change of direction | 6.5 /10 | Staff judgment |
-| Technique | 6.5 /10 | Staff judgment |
-| Football IQ | 6.0 /10 | Staff judgment |
-| Get-off | 7.0 /10 | Staff judgment |
-| Anchor | 6.0 /10 | Staff judgment |
-| Power | 6.5 /10 | Staff judgment |
-| Hand use | 6.5 /10 | Staff judgment |
-| Block shedding | 6.0 /10 | Staff judgment |
-| Penetration | 7.0 /10 | Staff judgment |
-| Pass-rush counters | 6.0 /10 | Staff judgment |
-| Double-team play | 5.5 /10 | Staff judgment |
-| Gap discipline / lateral pursuit | 6.5 /10 | Staff judgment |
-
-Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | At NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | At NFL starter standard | Below elite standard | Above low-end standard |
-| Get-off | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Anchor | At NFL starter standard | Below elite standard | Above low-end standard |
-| Power | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Hand use | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Block shedding | At NFL starter standard | Below elite standard | Above low-end standard |
-| Penetration | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Pass-rush counters | At NFL starter standard | Below elite standard | Above low-end standard |
-| Double-team play | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Gap discipline / lateral pursuit | Above NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards, not measured 2014 league ranks.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 6.5/10 |
+| Athleticism | 6.5/10 |
+| Speed | 6.0/10 |
+| Strength and power | 6.5/10 |
+| Agility and change of direction | 6.5/10 |
+| Technique | 6.5/10 |
+| Football IQ | 6.0/10 |
+| Get-off | 7.0/10 |
+| Anchor | 6.0/10 |
+| Power | 6.5/10 |
+| Hand use | 6.5/10 |
+| Block shedding | 6.0/10 |
+| Penetration | 7.0/10 |
+| Pass-rush counters | 6.0/10 |
+| Double-team play | 5.5/10 |
+| Gap discipline and lateral pursuit | 6.5/10 |
 
 A penetrating interior starter whose quick entry and lateral pursuit can disrupt the pocket and backfield. I see better single-gap pressure tools than double-team anchoring.
 
-Source: [2013 profile](../../../../2013/player_profiles/sen_derrick_marks.md) and its recorded practice/game sources.
+*Staff view, March 31, 2014.*
 
-## Year-over-year change
+## Contract
 
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Player identity and position traits | 2013 baseline | Starting 2014 view | Retained | No new individual football evidence establishing change |
+Four-year contract through 2017.
 
-## What supports this assessment
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $4,000,000 | $4,750,000 |
+| 2015 | $5,500,000 | $6,250,000 |
+| 2016 | $6,000,000 | $7,500,000 |
+| 2017 | $5,500,000 | $7,500,000 |
 
-A penetrating interior starter whose quick entry and lateral pursuit can disrupt the pocket and backfield. I see better single-gap pressure tools than double-team anchoring.
+## Statistics
 
-[2013 profile](../../../../2013/player_profiles/sen_derrick_marks.md) and its recorded practice/game sources.
+### Regular season
 
-## Historical comparison
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 27 | 99 | 5 | 18 | 12 | 6 | 1 | 0 | 2 |
+| 2013 | Jacksonville | 26 | 99 | 16 | 90 | 56 | 34 | 8 | 8 | 15 |
+| With Jacksonville |  |  |  | 21 | 108 | 68 | 40 | 9 | 8 | 17 |
 
-The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 27 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Jacksonville | 26 | 99 | 0 | 0 | 6 | 1 | 1 | N/A |
 
-## Play style
+### Playoffs
 
-A penetrating interior starter whose quick entry and lateral pursuit can disrupt the pocket and backfield. I see better single-gap pressure tools than double-team anchoring.
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 26 | 99 | 2 | 13 | 9 | 4 | 2 | 1 | 3 |
 
-## Best traits
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 26 | 99 | 0 | 0 | 0 | 0 | 0 | N/A |
 
-- Get-off: 7.0 /10.
-- Penetration: 7.0 /10.
-- Power: 6.5 /10.
+## Awards
 
-## Main weaknesses
+None.
 
-- Double-team play: 5.5 /10.
-- Anchor: 6.0 /10.
-- Block shedding: 6.0 /10.
+## Transactions
 
-## Evidence and uncertainty
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Tennessee in the second round |
+| 2009 | Signed a four-year rookie contract with Tennessee |
+| March 12, 2013 | Signed a one-year contract with Jacksonville as a free agent |
+| March 11, 2014 | Re-signed with Jacksonville for four years (2014 to 2017) |
 
-- **Primary evidence:** [2013 profile](../../../../2013/player_profiles/sen_derrick_marks.md) and its recorded practice/game sources.
-- **Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
-
-**One-line description:** A penetrating interior starter whose quick entry and lateral pursuit can disrupt the pocket and backfield. I see better single-gap pressure tools than double-team anchoring.
-
-## 2013 season production
-
-| Statistic | 2013 regular season | 2013 playoffs |
-| --- | ---: | ---: |
-| G | 16 | 2 |
-| TOT | 90 | 13 |
-| SOLO | 56 | 9 |
-| AST | 34 | 4 |
-| TFL | 8 | 2 |
-| SCK | 8 | 1 |
-| PRESS | 15 | 3 |
-| PD | 6 | 0 |
-| INT | 0 | 0 |
-| FF | 1 | 0 |
-| FR | 1 | 0 |
-
-Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 27 | 99 | Through Week 5 | 5 | 18 | 12 | 6 | 1 | 0 | 2 | 0 | 0 | 0 | 0 | 345 | Unrecorded | 0 | 0 | 0 | — | 0 | 0 | — | 0 |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR | DEF SNAPS | QB HITS | INT YDS | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 27 | 99 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

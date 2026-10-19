@@ -1,16 +1,24 @@
 # Matt Bosher
 
-![Matt Bosher career card](assets/matt_bosher.svg)
+**Atlanta Falcons · Punter · No. 5 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 208 lb · Born October 18, 1987 · Miami · Drafted in 2011, sixth round, by Atlanta
+
+As of October 5, 2014, after Week 5.
+
+![Matt Bosher](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Bosher_2016_2.jpg?width=500)
+
+*Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Matt_Bosher_2016_2.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 25 | 5 | 16 | 78 | 3,566 | 45.7 | 40.0 | 20 | 64 | 4 | 25.6 | 4.9 | 366 |
-| 2014 | Atlanta Falcons | 26 | 5 | 5 | 24 | 1,096 | 45.7 | 40.5 | 9 | 61 | 3 | 37.5 | 4.8 | 65 |
-| **Career** |  |  |  | 21 | 102 | 4,662 | 45.7 | 40.1 | 29 | 64 | 7 | 28.4 | 4.9 | 431 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 26 | 5 | 5 | 24 | 1,096 | 45.7 | 40.5 | 9 | 3 | 61 |
+| 2013 | Atlanta | 25 | 5 | 16 | 78 | 3,566 | 45.7 | 40.0 | 20 | 4 | 64 |
+| Career |  |  |  | 21 | 102 | 4,662 | 45.7 | 40.1 | 29 | 7 | 64 |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Atlanta in the sixth round |
+
+<!-- player-page -->

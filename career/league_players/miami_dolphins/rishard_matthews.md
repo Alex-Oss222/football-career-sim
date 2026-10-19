@@ -1,16 +1,29 @@
 # Rishard Matthews
 
-![Rishard Matthews career card](assets/rishard_matthews.svg)
+**Miami Dolphins · Wide receiver · No. 18 · Age 24 · Last game September 28, 2014**
 
-## Career stats
+6' 0", 215 lb · Born October 12, 1989 · Nevada; Bakersfield College · Drafted in 2012, seventh round, by Miami
+
+As of September 28, 2014, after Week 4.
+
+![Rishard Matthews](https://commons.wikimedia.org/wiki/Special:FilePath/Rishard_Matthews.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Rishard_Matthews.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Miami Dolphins | 23 | 18 | 16 | 18 | 10 | 152 | 15.2 | 2 | 9.5 | 55.6 | 56 | 0 | 0 |
-| 2014 | Miami Dolphins | 24 | 18 | 4 | 2 | 1 | 21 | 21.0 | 0 | 5.2 | 50.0 | 21 | 0 | 0 |
-| **Career** |  |  |  | 20 | 20 | 11 | 173 | 15.7 | 2 | 8.7 | 55.0 | 56 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 24 | 18 | 4 | 2 | 1 | 21 | 21.0 | 0 | 21 | 5.2 | 50.0 |
+| 2013 | Miami | 23 | 18 | 16 | 18 | 10 | 152 | 15.2 | 2 | 56 | 9.5 | 55.6 |
+| Career |  |  |  | 20 | 20 | 11 | 173 | 15.7 | 2 | 56 | 8.7 | 55.0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 24 | 18 | 0 | 0 | N/A | 4 | 58 | 14.5 |
+| 2013 | Miami | 23 | 18 | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Miami Dolphins players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Miami in the seventh round |
+
+<!-- player-page -->

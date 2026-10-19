@@ -1,18 +1,20 @@
 # Indianapolis Colts players
 
-AFC South · Players whose latest game on record was with the Indianapolis Colts. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+AFC South. The players whose latest game on record was with the Indianapolis Colts. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 12 | [Andrew Luck](andrew_luck.md) | QB | 5 | 16 |
 | 8 | [Matt Hasselbeck](matt_hasselbeck.md) | QB | 5 | 16 |
 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 44 | [Ahmad Bradshaw](ahmad_bradshaw.md) | RB | 5 | 16 |
 | 36 | [Dan Herron](dan_herron.md) | RB | 5 | 0 |
 | 48 | [Mario Harvey](mario_harvey.md) | FB | 5 | 16 |
@@ -24,7 +26,7 @@ AFC South · Players whose latest game on record was with the Indianapolis Colts
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Cecil Shorts](cecil_shorts.md) | WR | 5 | 16 |
 | 16 | [Da'Rick Rogers](da_rick_rogers.md) | WR | 4 | 0 |
 | N/A | [David Reed](david_reed.md) | WR | 0 | 16 |
@@ -37,7 +39,7 @@ AFC South · Players whose latest game on record was with the Indianapolis Colts
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 80 | [Coby Fleener](coby_fleener.md) | TE | 4 | 10 |
 | N/A | [Dominique Jones](dominique_jones.md) | TE | 0 | 16 |
 | 83 | [Dwayne Allen](dwayne_allen.md) | TE | 5 | 15 |
@@ -46,7 +48,7 @@ AFC South · Players whose latest game on record was with the Indianapolis Colts
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 74 | [Anthony Castonzo](anthony_castonzo.md) | T | 5 | 16 |
 | N/A | [Donald Thomas](donald_thomas.md) | G | 0 | 16 |
 | 78 | [Gosder Cherilus](gosder_cherilus.md) | T | 5 | 16 |
@@ -61,7 +63,7 @@ AFC South · Players whose latest game on record was with the Indianapolis Colts
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 97 | [Arthur Jones](arthur_jones.md) | DT | 4 | 15 |
 | N/A | [Aubrayo Franklin](aubrayo_franklin.md) | NT | 0 | 16 |
 | 59 | [Cam Johnson](cam_johnson.md) | DE | 5 | 16 |
@@ -75,7 +77,7 @@ AFC South · Players whose latest game on record was with the Indianapolis Colts
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 58 | [Andy Studebaker](andy_studebaker.md) | OLB | 1 | 0 |
 | 92 | [Bjoern Werner](bjoern_werner.md) | OLB | 5 | 15 |
 | 52 | [D'Qwell Jackson](d_qwell_jackson.md) | MLB | 5 | 16 |
@@ -91,7 +93,7 @@ AFC South · Players whose latest game on record was with the Indianapolis Colts
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 32 | [Colt Anderson](colt_anderson.md) | SS | 1 | 2 |
 | 20 | [Darius Butler](darius_butler.md) | CB | 5 | 16 |
 | N/A | [Delano Howell](delano_howell.md) | FS | 0 | 2 |
@@ -106,17 +108,19 @@ AFC South · Players whose latest game on record was with the Indianapolis Colts
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 4 | [Adam Vinatieri](adam_vinatieri.md) | K | 5 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 1 | [Pat McAfee](pat_mcafee.md) | P | 5 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 45 | [Matt Overton](matt_overton.md) | LS | 5 | 16 |
+
+<!-- player-index -->

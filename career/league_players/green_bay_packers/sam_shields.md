@@ -1,16 +1,29 @@
 # Sam Shields
 
-![Sam Shields career card](assets/sam_shields.svg)
+**Green Bay Packers · Cornerback · No. 37 · Age 26 · Last game October 2, 2014**
 
-## Career stats
+5' 11", 184 lb · Born December 8, 1987 · Miami
+
+As of October 2, 2014, after Week 5.
+
+![Sam Shields](https://commons.wikimedia.org/wiki/Special:FilePath/Sam_Shields.jpg?width=500)
+
+*Photo: Gabriel Cervantes, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Sam_Shields.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Green Bay Packers | 25 | 37 | 16 | 64 | 1 | 4 | 38 | 5 | 0 | 1 | 1 | 4.0 | 0 |
-| 2014 | Green Bay Packers | 26 | 37 | 5 | 24 | 3 | 10 | 12 | 0 | 0 | 2 | 2 | 4.8 | 0 |
-| **Career** |  |  |  | 21 | 88 | 4 | 14 | 50 | 5 | 0 | 3 | 3 | 4.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 26 | 37 | 5 | 24 | 16 | 8 | 0 | 0 | 0 |
+| 2013 | Green Bay | 25 | 37 | 16 | 64 | 40 | 24 | 5 | 0 | 1 |
+| Career |  |  |  | 21 | 88 | 56 | 32 | 5 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 26 | 37 | 3 | 12 | 10 | 2 | 2 | 0 |
+| 2013 | Green Bay | 25 | 37 | 1 | 38 | 4 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+<!-- player-page -->

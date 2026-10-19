@@ -1,28 +1,44 @@
 # Junior Hemingway
 
-![Junior Hemingway career card](assets/junior_hemingway.svg)
+**Kansas City Chiefs · Wide receiver · No. 88 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 225 lb · Born December 27, 1988 · Michigan · Drafted in 2012, seventh round, by Kansas City
+
+As of October 5, 2014, after Week 5.
+
+![Junior Hemingway](https://commons.wikimedia.org/wiki/Special:FilePath/Junior_Hemingway.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Junior_Hemingway.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 24 | 88 | 16 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| 2014 | Kansas City Chiefs | 25 | 88 | 5 | 1 | 1 | 7 | 7.0 | 0 | 1.4 | 100.0 | 7 | 0 | 1 |
-| **Career** |  |  |  | 21 | 1 | 1 | 7 | 7.0 | 0 | 0.3 | 100.0 | 7 | 0 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 25 | 88 | 5 | 1 | 1 | 7 | 7.0 | 0 | 7 | 1.4 | 100.0 |
+| 2013 | Kansas City | 24 | 88 | 16 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| Career |  |  |  | 21 | 1 | 1 | 7 | 7.0 | 0 | 7 | 0.3 | 100.0 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 25 | 88 | 0 | 0 | 0 | 1 | 1 |
+| 2013 | Kansas City | 24 | 88 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 24 | 88 | 1 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| **Career** |  |  |  | 1 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 24 | 88 | 1 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Kansas City in the seventh round |
+
+<!-- player-page -->

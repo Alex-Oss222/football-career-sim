@@ -1,16 +1,34 @@
 # Johnson Bademosi
 
-![Johnson Bademosi career card](assets/johnson_bademosi.svg)
+**Cleveland Browns · Strong safety · No. 24 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 200 lb · Born July 23, 1990 · Stanford
+
+As of October 5, 2014, after Week 5.
+
+![Johnson Bademosi](https://commons.wikimedia.org/wiki/Special:FilePath/Johnson_Bademosi.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Johnson_Bademosi.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 23 | 24 | 16 | 13 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0.8 | 1,039 |
-| 2014 | Cleveland Browns | 24 | 24 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 19 | 13 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0.7 | 1,039 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 24 | 24 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Cleveland | 23 | 24 | 16 | 13 | 10 | 3 | 0 | 0 | 0 |
+| Career |  |  |  | 19 | 13 | 10 | 3 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 24 | 24 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Cleveland | 23 | 24 | 0 | 0 | 3 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 24 | 24 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Cleveland | 23 | 24 | 46 | 1,039 | 22.6 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +36,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+<!-- player-page -->

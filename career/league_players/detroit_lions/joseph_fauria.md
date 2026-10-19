@@ -1,16 +1,24 @@
 # Joseph Fauria
 
-![Joseph Fauria career card](assets/joseph_fauria.svg)
+**Detroit Lions · Tight end · No. 80 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 7", 267 lb · Born January 16, 1990 · UCLA; Notre Dame
+
+As of October 5, 2014, after Week 5.
+
+![Joseph Fauria](https://commons.wikimedia.org/wiki/Special:FilePath/Joseph_Fauria.jpg?width=500)
+
+*Photo: Neon Tommy, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Joseph_Fauria.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Detroit Lions | 23 | 80 | 16 | 1 | 0 | 0 | N/A | 0 | 0.0 | 0.0 | N/A | 0 | 0 |
-| 2014 | Detroit Lions | 24 | 80 | 5 | 6 | 3 | 29 | 9.7 | 0 | 5.8 | 50.0 | 13 | 0 | 0 |
-| **Career** |  |  |  | 21 | 7 | 3 | 29 | 9.7 | 0 | 1.4 | 42.9 | 13 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 24 | 80 | 5 | 6 | 3 | 29 | 9.7 | 0 | 13 | 5.8 | 50.0 |
+| 2013 | Detroit | 23 | 80 | 16 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
+| Career |  |  |  | 21 | 7 | 3 | 29 | 9.7 | 0 | 13 | 1.4 | 42.9 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).
+<!-- player-page -->

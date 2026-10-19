@@ -1,16 +1,24 @@
 # Dan Connolly
 
-![Dan Connolly career card](assets/dan_connolly.svg)
+**New England Patriots · Guard · No. 63 · Age 32 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 305 lb · Born September 2, 1982 · Southeast Missouri State
+
+As of October 5, 2014, after Week 5.
+
+![Dan Connolly](https://commons.wikimedia.org/wiki/Special:FilePath/Dan_Connolly_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Dan_Connolly_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 31 | 63 | 16 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | New England Patriots | 32 | 63 | 5 | 5 | 310 | 3 | 42 | 0 | 0 | 0 | 0 | 62.0 |
-| **Career** |  |  |  | 21 | N/A | N/A | 11 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 32 | 63 | 5 | 5 | 310 | 3 | 42 |
+| 2013 | New England | 31 | 63 | 16 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 11 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New England Patriots players](README.md).
+<!-- player-page -->

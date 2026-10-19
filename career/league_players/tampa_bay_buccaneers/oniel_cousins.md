@@ -1,16 +1,24 @@
 # Oniel Cousins
 
-![Oniel Cousins career card](assets/oniel_cousins.svg)
+**Tampa Bay Buccaneers · Offensive tackle · No. 75 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 315 lb · Born June 29, 1984 · Texas-El Paso · Drafted in 2008, third round, by Baltimore
+
+As of October 5, 2014, after Week 5.
+
+![Oniel Cousins](https://commons.wikimedia.org/wiki/Special:FilePath/Oniel_Cousins_2011_stadium_practice.jpg?width=500)
+
+*Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Oniel_Cousins_2011_stadium_practice.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 29 | 75 | 16 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Tampa Bay Buccaneers | 30 | 75 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 |
-| **Career** |  |  |  | 18 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 30 | 75 | 2 | 0 | 0 | 0 | 0 |
+| 2013 | Cleveland | 29 | 75 | 16 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 18 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Baltimore in the third round |
+
+<!-- player-page -->

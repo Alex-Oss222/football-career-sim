@@ -1,16 +1,34 @@
 # Jacquizz Rodgers
 
-![Jacquizz Rodgers career card](assets/jacquizz_rodgers.svg)
+**Atlanta Falcons · Running back · No. 32 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+5' 6", 196 lb · Born February 6, 1990 · Oregon State · Drafted in 2011, fifth round, by Atlanta
+
+As of October 5, 2014, after Week 5.
+
+![Jacquizz Rodgers](https://commons.wikimedia.org/wiki/Special:FilePath/Jacquizz_Rodgers_2014_Atlanta_Falcons.jpg?width=500)
+
+*Photo: U.S. Air Force employee Brad Fallin, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jacquizz_Rodgers_2014_Atlanta_Falcons.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 23 | 32 | 16 | 82 | 512 | 6.2 | 4 | 32.0 | 9 | 147 | 1 | 91 | 0 |
-| 2014 | Atlanta Falcons | 24 | 32 | 5 | 2 | 9 | 4.5 | 0 | 1.8 | 0 | 0 | 0 | 2 | 0 |
-| **Career** |  |  |  | 21 | 84 | 521 | 6.2 | 4 | 24.8 | 9 | 147 | 1 | 93 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 24 | 32 | 5 | 2 | 9 | 4.5 | 0 | 7 | 1.8 |
+| 2013 | Atlanta | 23 | 32 | 16 | 82 | 512 | 6.2 | 4 | 70 | 32.0 |
+| Career |  |  |  | 21 | 84 | 521 | 6.2 | 4 | 70 | 24.8 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 24 | 32 | 1 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2013 | Atlanta | 23 | 32 | 14 | 9 | 147 | 16.3 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 24 | 32 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Atlanta | 23 | 32 | 41 | 904 | 22.0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +36,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Atlanta in the fifth round |
+
+<!-- player-page -->

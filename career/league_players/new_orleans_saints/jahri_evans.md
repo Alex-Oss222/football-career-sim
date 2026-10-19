@@ -1,28 +1,39 @@
 # Jahri Evans
 
-![Jahri Evans career card](assets/jahri_evans.svg)
+**New Orleans Saints · Guard · No. 73 · Age 31 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 318 lb · Born August 22, 1983 · Bloomsburg · Drafted in 2006, fourth round, by New Orleans
+
+As of October 5, 2014, after Week 5.
+
+![Jahri Evans](https://commons.wikimedia.org/wiki/Special:FilePath/Jahri_Evans_2007.jpg?width=500)
+
+*Photo: Ed Schipul, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jahri_Evans_2007.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 30 | 73 | 16 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | New Orleans Saints | 31 | 73 | 5 | 5 | 329 | 2 | 23 | 0 | 0 | 0 | 0 | 65.8 |
-| **Career** |  |  |  | 21 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New Orleans | 31 | 73 | 5 | 5 | 329 | 2 | 23 |
+| 2013 | New Orleans | 30 | 73 | 16 | N/A | N/A | 1 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 30 | 73 | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 30 | 73 | 1 | N/A | N/A | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New Orleans Saints players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by New Orleans in the fourth round |
+
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # Karlos Dansby
 
-![Karlos Dansby career card](assets/karlos_dansby.svg)
+**Cleveland Browns · Inside linebacker · No. 56 · Age 32 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 251 lb · Born November 3, 1981 · Auburn · Drafted in 2004, second round, by Arizona
+
+As of October 5, 2014, after Week 5.
+
+![Karlos Dansby](https://commons.wikimedia.org/wiki/Special:FilePath/Karlos_Dansby_2014_Browns_Training_Camp.jpg?width=500)
+
+*Photo: Erik Daniel Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Karlos_Dansby_2014_Browns_Training_Camp.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Arizona Cardinals | 31 | 56 | 16 | 147 | 7 | 8 | 0 | 8 | 0 | 0 | 11 | 9.2 | 106 |
-| 2014 | Cleveland Browns | 32 | 56 | 4 | 19 | 0 | 1 | 0 | 0 | 1 | 1 | 0 | 4.8 | 12 |
-| **Career** |  |  |  | 20 | 166 | 7 | 9 | 0 | 8 | 1 | 1 | 11 | 8.3 | 118 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 32 | 56 | 4 | 19 | 12 | 7 | 1 | 0 | 0 |
+| 2013 | Arizona | 31 | 56 | 16 | 147 | 106 | 41 | 8 | 7 | 11 |
+| Career |  |  |  | 20 | 166 | 118 | 48 | 9 | 7 | 11 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 32 | 56 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 2013 | Arizona | 31 | 56 | 0 | 0 | 8 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+| Date | Transaction |
+|---|---|
+| 2004 | Drafted by Arizona in the second round |
+
+<!-- player-page -->

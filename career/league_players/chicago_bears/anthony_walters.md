@@ -1,15 +1,22 @@
 # Anthony Walters
 
-![Anthony Walters career card](assets/anthony_walters.svg)
+**Chicago Bears · Strong safety · Age 25 · Last game December 29, 2013**
 
-## Career stats
+6' 1", 207 lb · Born September 19, 1988 · Delaware
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Chicago Bears | 24 | 37 | 16 | 35 | 1 | 6 | 14 | 3 | 0 | 0 | 0 | 2.2 | 0 |
-| **Career** |  |  |  | 16 | 35 | 1 | 6 | 14 | 3 | 0 | 0 | 0 | 2.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Chicago | 24 | 37 | 16 | 35 | 28 | 7 | 3 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Chicago | 24 | 37 | 1 | 14 | 6 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Chicago Bears players](README.md).
+<!-- player-page -->

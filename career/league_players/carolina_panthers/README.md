@@ -1,11 +1,13 @@
 # Carolina Panthers players
 
-NFC South · Players whose latest game on record was with the Carolina Panthers. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+NFC South. The players whose latest game on record was with the Carolina Panthers. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 1 | [Cam Newton](cam_newton.md) | QB | 5 | 14 |
 | 3 | [Derek Anderson](derek_anderson.md) | QB | 5 | 16 |
 | 14 | [Joe Webb](joe_webb.md) | QB | 5 | 16 |
@@ -13,7 +15,7 @@ NFC South · Players whose latest game on record was with the Carolina Panthers.
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Armond Smith](armond_smith.md) | RB | 0 | 16 |
 | 34 | [DeAngelo Williams](deangelo_williams.md) | RB | 5 | 16 |
 | 43 | [Fozzy Whittaker](fozzy_whittaker.md) | RB | 5 | 16 |
@@ -24,7 +26,7 @@ NFC South · Players whose latest game on record was with the Carolina Panthers.
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Armanti Edwards](armanti_edwards.md) | WR | 0 | 16 |
 | 11 | [Brenton Bersin](brenton_bersin.md) | WR | 4 | 0 |
 | 16 | [Corey Brown](corey_brown.md) | WR | 5 | 0 |
@@ -36,7 +38,7 @@ NFC South · Players whose latest game on record was with the Carolina Panthers.
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Ben Hartsock](ben_hartsock.md) | TE | 0 | 16 |
 | 86 | [Brandon Williams](brandon_williams.md) | TE | 5 | 16 |
 | 84 | [Ed Dickson](ed_dickson.md) | TE | 5 | 16 |
@@ -46,7 +48,7 @@ NFC South · Players whose latest game on record was with the Carolina Panthers.
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 66 | [Amini Silatolu](amini_silatolu.md) | G | 5 | 16 |
 | N/A | [Brandon Linder](brandon_linder.md) | G | 5 | 0 |
 | 64 | [Brian Folkerts](brian_folkerts.md) | C | 0 | 3 |
@@ -63,7 +65,7 @@ NFC South · Players whose latest game on record was with the Carolina Panthers.
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 95 | [Charles Johnson](charles_johnson.md) | DE | 4 | 16 |
 | 91 | [Colin Cole](colin_cole.md) | DT | 5 | 16 |
 | 92 | [Dwan Edwards](dwan_edwards.md) | DT | 5 | 16 |
@@ -77,7 +79,7 @@ NFC South · Players whose latest game on record was with the Carolina Panthers.
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 56 | [A.J. Klein](a_j_klein.md) | OLB | 5 | 14 |
 | 53 | [Ben Jacobs](ben_jacobs.md) | MLB | 5 | 0 |
 | 93 | [Chase Blackburn](chase_blackburn.md) | OLB | 5 | 16 |
@@ -89,7 +91,7 @@ NFC South · Players whose latest game on record was with the Carolina Panthers.
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 20 | [Antoine Cason](antoine_cason.md) | CB | 5 | 16 |
 | 25 | [Bene' Benwikere](bene_benwikere.md) | CB | 5 | 0 |
 | 30 | [Charles Godfrey](charles_godfrey.md) | CB | 5 | 16 |
@@ -106,17 +108,19 @@ NFC South · Players whose latest game on record was with the Carolina Panthers.
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 9 | [Graham Gano](graham_gano.md) | K | 5 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 8 | [Brad Nortman](brad_nortman.md) | P | 5 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 44 | [J.J. Jansen](j_j_jansen.md) | LS | 5 | 16 |
+
+<!-- player-index -->

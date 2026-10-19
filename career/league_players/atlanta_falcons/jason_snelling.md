@@ -1,15 +1,22 @@
 # Jason Snelling
 
-![Jason Snelling career card](assets/jason_snelling.svg)
+**Atlanta Falcons · Running back · Age 30 · Last game December 29, 2013**
 
-## Career stats
+5' 11", 234 lb · Born December 29, 1983 · Virginia · Drafted in 2007, seventh round, by Atlanta
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 29 | 44 | 10 | 2 | -6 | -3.0 | 0 | -0.6 | 1 | 24 | 0 | 3 | 0 |
-| **Career** |  |  |  | 10 | 2 | -6 | -3.0 | 0 | -0.6 | 1 | 24 | 0 | 3 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Atlanta | 29 | 44 | 10 | 2 | -6 | -3.0 | 0 | 0 | -0.6 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Atlanta | 29 | 44 | 2 | 1 | 24 | 24.0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Atlanta Falcons players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Atlanta in the seventh round |
+
+<!-- player-page -->

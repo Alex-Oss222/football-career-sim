@@ -1,16 +1,24 @@
 # Mike Leach
 
-![Mike Leach career card](assets/mike_leach.svg)
+**Arizona Cardinals · Long snapper · No. 82 · Age 37 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 235 lb · Born October 18, 1976 · William & Mary; Boston University
+
+As of October 5, 2014, after Week 5.
+
+![Mike Leach](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Leach_%28long_snapper%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Mike_Leach_(long_snapper).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | LONG SNAPS | ST SNAPS | ST TKL | TKL | SOLO | AST | FF | FR | LONG SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Arizona Cardinals | 36 | 82 | 16 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Arizona Cardinals | 37 | 82 | 4 | 32 | 32 | 0 | 0 | 0 | 0 | 0 | 0 | 8.0 |
-| **Career** |  |  |  | 20 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Arizona | 37 | 82 | 4 | 32 | 32 | 0 | 0 |
+| 2013 | Arizona | 36 | 82 | 16 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 20 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Arizona Cardinals players](README.md).
+<!-- player-page -->

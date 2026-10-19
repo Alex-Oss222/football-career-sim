@@ -1,27 +1,41 @@
 # Ernie Sims
 
-![Ernie Sims career card](assets/ernie_sims.svg)
+**Dallas Cowboys · Outside linebacker · Age 29 · Last game January 11, 2014**
 
-## Career stats
+6' 0", 233 lb · Born December 23, 1984 · Florida State · Drafted in 2006, first round, by Detroit
+
+As of January 11, 2014, after the Divisional round.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 28 | 59 | 16 | 27 | 2 | 1 | 1 | 3 | 0 | 0 | 3 | 1.7 | 15 |
-| **Career** |  |  |  | 16 | 27 | 2 | 1 | 1 | 3 | 0 | 0 | 3 | 1.7 | 15 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 28 | 59 | 16 | 27 | 15 | 12 | 1 | 2 | 3 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 28 | 59 | 1 | 10 | 3 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 28 | 59 | 2 | 8 | 0 | 1 | 0 | 0 | 1 | 1 | 0 | 4.0 | 6 |
-| **Career** |  |  |  | 2 | 8 | 0 | 1 | 0 | 0 | 1 | 1 | 0 | 4.0 | 6 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 28 | 59 | 2 | 8 | 6 | 2 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 28 | 59 | 0 | 0 | 0 | 1 | 1 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 11, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Dallas Cowboys players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Detroit in the first round |
+
+<!-- player-page -->

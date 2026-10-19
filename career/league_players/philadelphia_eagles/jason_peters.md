@@ -1,29 +1,38 @@
 # Jason Peters
 
-![Jason Peters career card](assets/jason_peters.svg)
+**Philadelphia Eagles · Offensive tackle · No. 71 · Age 32 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 328 lb · Born January 22, 1982 · Arkansas
+
+As of October 5, 2014, after Week 5.
+
+![Jason Peters](https://commons.wikimedia.org/wiki/Special:FilePath/Jason_peters_2016.jpg?width=500)
+
+*Photo: original: Keith Allison derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jason_peters_2016.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 31 | 71 | 16 | N/A | N/A | 6 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Philadelphia Eagles | 32 | 71 | 5 | 5 | 346 | 2 | 26 | 0 | 0 | 0 | 0 | 69.2 |
-| **Career** |  |  |  | 21 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 32 | 71 | 5 | 5 | 346 | 2 | 26 |
+| 2013 | Philadelphia | 31 | 71 | 16 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 31 | 71 | 3 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 3 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 31 | 71 | 3 | N/A | N/A | 0 | N/A |
 
 ## Awards
 
 - AP Second-Team All-Pro (2013, T)
 - Pro Bowl selection (2013, T)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Philadelphia Eagles players](README.md).
+None on record.
+
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # Duke Ihenacho
 
-![Duke Ihenacho career card](assets/duke_ihenacho.svg)
+**Washington Redskins · Strong safety · No. 35 · Age 25 · Last game October 6, 2014**
 
-## Career stats
+6' 1", 207 lb · Born June 16, 1989 · San Jose State
+
+As of October 6, 2014, after Week 5.
+
+![Duke Ihenacho](https://commons.wikimedia.org/wiki/Special:FilePath/Duke_Ihenacho_Broncos.jpg?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Duke_Ihenacho_Broncos.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Denver Broncos | 24 | 33 | 16 | 47 | 1 | 8 | 16 | 5 | 1 | 1 | 1 | 2.9 | 0 |
-| 2014 | Washington Redskins | 25 | 35 | 5 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 21 | 47 | 2 | 9 | 16 | 5 | 1 | 1 | 1 | 2.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Washington | 25 | 35 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Denver | 24 | 33 | 16 | 47 | 30 | 17 | 5 | 1 | 1 |
+| Career |  |  |  | 21 | 47 | 30 | 17 | 5 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Washington | 25 | 35 | 1 | 0 | 1 | 0 | 0 | 4 |
+| 2013 | Denver | 24 | 33 | 1 | 16 | 8 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Washington Redskins players](README.md).
+<!-- player-page -->

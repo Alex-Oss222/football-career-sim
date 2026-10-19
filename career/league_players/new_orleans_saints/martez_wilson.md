@@ -1,27 +1,41 @@
 # Martez Wilson
 
-![Martez Wilson career card](assets/martez_wilson.svg)
+**New Orleans Saints · Outside linebacker · Age 25 · Last game January 4, 2014**
 
-## Career stats
+6' 4", 252 lb · Born September 21, 1988 · Illinois · Drafted in 2011, third round, by New Orleans
+
+As of January 4, 2014, after the Wild Card round.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 24 | N/A | 16 | 24 | 1 | 5 | 0 | 0 | 0 | 0 | 2 | 1.5 | 17 |
-| **Career** |  |  |  | 16 | 24 | 1 | 5 | 0 | 0 | 0 | 0 | 2 | 1.5 | 17 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 24 | N/A | 16 | 24 | 17 | 7 | 5 | 1 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 24 | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 24 | N/A | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 0 |
-| **Career** |  |  |  | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 24 | N/A | 1 | 1 | 0 | 1 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 24 | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 4, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All New Orleans Saints players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by New Orleans in the third round |
+
+<!-- player-page -->

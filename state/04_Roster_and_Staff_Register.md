@@ -64,7 +64,7 @@ The availability column records the club's latest medical communication. Every p
 
 | Player | Stable ID | Pos. | DOB | Age | Primary status | Current control basis | Current availability boundary | Current source |
 | --- | --- | --- | --- | ---: | --- | --- | --- | --- |
-| Kirk Cousins | JAX-KIRKCOUSINS | QB | 1988-08-19 | 26 | Active 53 | Acquired from Washington with its 2014 first for Jacksonville's 2014 and 2015 seconds | No communicated restriction | [2013 St. Louis game report](../career/2013/regular_season/week_05_jacksonville_at_st_louis/output.md) |
+| Kirk Cousins | JAX-KIRKCOUSINS | QB | 1991-08-19 | 23 | Active 53 | Acquired from Washington with its 2014 first for Jacksonville's 2014 and 2015 seconds | No communicated restriction | [2013 St. Louis game report](../career/2013/regular_season/week_05_jacksonville_at_st_louis/output.md) |
 | Chad Henne | JAX-CHADHENNE | QB | 1985-07-02 | 29 | Active 53 | Re-signed April 4, 2014: two years, $4.0M, $2.0M guaranteed | No communicated restriction | [April 1–17 personnel and staff decisions](../career/2014/Record.md) |
 | C.J. Anderson | JAX-CJANDERSON | RB | 1991-02-10 | 23 | Active 53 | Three-year UDFA minimum contract | No communicated restriction; cleared August 11, 2014, his projected date, from the August 8 lower-extremity injury (reassessed August 9, no change) | [Medical history](../career/2014/Team_Operations/Medical/medical_history.md#august-9-to-11-reassessments-and-andersons-clearance) |
 | Jonathan Grimes | JAX-JONATHANGRIMES | RB | 1989-12-21 | 24 | Active 53 | Inherited active-roster agreement; adopted schedule through 2014, $570,000 salary | No communicated restriction | [2013 St. Louis game report](../career/2013/regular_season/week_05_jacksonville_at_st_louis/output.md) |

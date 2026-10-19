@@ -10,12 +10,14 @@ from pathlib import Path
 
 from .league import DIVISIONS, DIVISION_OF, TEAMS
 from .season_layout import is_system_file
+from .seasons import SeasonPaths, data_link
 from .standings import Season, games_from_receipts
 
 ROOT = Path(__file__).resolve().parents[1]
-# The schedule pages, and the data area that holds its system files.
-FOLDER = Path('career/2014/Regular_Season/Schedule')
-DATA_FOLDER = Path('data/2014/Regular_Season/Schedule')
+# The schedule pages, and the data area that holds its system files, placed by the folder map.
+_PATHS = SeasonPaths(2014, ROOT)
+FOLDER = _PATHS.record('schedule').relative_to(ROOT)
+DATA_FOLDER = _PATHS.data_for(_PATHS.record('schedule')).relative_to(ROOT)
 COMPONENT_COUNTS = {'division': 6, 'conference_rotation': 4,
                     'interconference_rotation': 4, 'same_place': 2}
 
@@ -138,7 +140,7 @@ def render(data, config):
              'The published historical pairings control every club. '
              'This is not a dated schedule; fixtures and byes wait for April 23.', '',
              '[Source checks](sources.md) · [Schedule release](release_plan.md) · '
-             '[Jacksonville view](opponents.md) · [Machine-readable matrix](../../../../data/2014/Regular_Season/Schedule/league_opponents.json)', '']
+             '[Jacksonville view](opponents.md) · [Machine-readable matrix](%s)' % data_link(2014, 'schedule/league_opponents.json', 4), '']
     for division, teams in data['division_order_2013'].items():
         lines += [f'## {division}', '',
                   '| Historical schedule slot | Club | Home opponents | Away opponents | Same-place: home / away |',

@@ -1,16 +1,34 @@
 # Phillip Adams
 
-![Phillip Adams career card](assets/phillip_adams.svg)
+**New York Jets · Cornerback · No. 24 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 195 lb · Born July 20, 1988 · South Carolina State · Drafted in 2010, seventh round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![Phillip Adams](https://commons.wikimedia.org/wiki/Special:FilePath/Phillip_Adams_Falcons.jpg?width=500)
+
+*Photo: Thomson20192, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Phillip_Adams_Falcons.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Oakland Raiders | 25 | 28 | 7 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0.3 | 136 |
-| 2014 | New York Jets | 26 | 24 | 5 | 5 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 1.0 | 0 |
-| **Career** |  |  |  | 12 | 7 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0.6 | 136 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 26 | 24 | 5 | 5 | 1 | 4 | 0 | 0 | 0 |
+| 2013 | Oakland | 25 | 28 | 7 | 2 | 2 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 12 | 7 | 3 | 4 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 26 | 24 | 0 | 0 | 2 | 0 | 0 | 5 |
+| 2013 | Oakland | 25 | 28 | 0 | 0 | 1 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 26 | 24 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Oakland | 25 | 28 | 0 | 0 | N/A | 12 | 136 | 11.3 |
 
 ### Playoffs
 
@@ -18,8 +36,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by San Francisco in the seventh round |
+
+<!-- player-page -->

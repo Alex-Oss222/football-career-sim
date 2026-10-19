@@ -1,16 +1,24 @@
 # Zak DeOssie
 
-![Zak DeOssie career card](assets/zak_deossie.svg)
+**New York Giants · Long snapper · No. 51 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 249 lb · Born May 24, 1984 · Brown · Drafted in 2007, fourth round, by the New York Giants
+
+As of October 5, 2014, after Week 5.
+
+![Zak DeOssie](https://commons.wikimedia.org/wiki/Special:FilePath/Zak_DeOssie_at_Super_Bowl_XLII_victory_parade.jpg?width=500)
+
+*Photo: Ted Kerwin, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Zak_DeOssie_at_Super_Bowl_XLII_victory_parade.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | LONG SNAPS | ST SNAPS | ST TKL | TKL | SOLO | AST | FF | FR | LONG SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Giants | 29 | 51 | 16 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
-| 2014 | New York Giants | 30 | 51 | 5 | 45 | 45 | 0 | 0 | 0 | 0 | 0 | 0 | 9.0 |
-| **Career** |  |  |  | 21 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 30 | 51 | 5 | 45 | 45 | 0 | 0 |
+| 2013 | N.Y. Giants | 29 | 51 | 16 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 21 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by the New York Giants in the fourth round |
+
+<!-- player-page -->

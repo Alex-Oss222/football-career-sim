@@ -1,16 +1,24 @@
 # Hugh Thornton
 
-![Hugh Thornton career card](assets/hugh_thornton.svg)
+**Indianapolis Colts · Guard · No. 69 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 336 lb · Born June 28, 1991 · Illinois
+
+As of October 5, 2014, after Week 5.
+
+![Hugh Thornton](https://commons.wikimedia.org/wiki/Special:FilePath/Hugh_Thornton_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Hugh_Thornton_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 22 | 69 | 3 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Indianapolis Colts | 23 | 69 | 5 | 5 | 360 | 3 | 24 | 0 | 0 | 0 | 0 | 72.0 |
-| **Career** |  |  |  | 8 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 23 | 69 | 5 | 5 | 360 | 3 | 24 |
+| 2013 | Indianapolis | 22 | 69 | 3 | N/A | N/A | 0 | N/A |
+| Career |  |  |  | 8 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+<!-- player-page -->

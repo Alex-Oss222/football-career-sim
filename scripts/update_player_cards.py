@@ -224,8 +224,12 @@ def refresh_cards(year,root=ROOT,check=False):
     periods = {p:period_data(year,p,root) for p in (False,True)}
     photos = Photos(root)
     errors = []
+    # A page the player page builder writes (rebuild step 3a) is current through
+    # scripts/render_player_pages.py; only a card in the earlier layout is refreshed here.
+    from runtime.player_pages import built_page
     cards = [path for path in sorted(SeasonPaths(year, root).record('player_profiles').glob('*.md'))
-             if path.name not in ('README.md','TEMPLATE.md')]
+             if path.name not in ('README.md','TEMPLATE.md')
+             and not built_page(path.read_text(encoding='utf-8'))]
     texts = {}
     for path in cards:
         text = path.read_text(encoding='utf-8')
@@ -274,6 +278,17 @@ def profile_errors(year,root=ROOT,*,require_complete=True):
     except (OSError, ValueError) as error:
         return [f'{year}: cannot validate opening-card cohort: {error}']
     errors = []
+    # From rebuild step 3a the season's player folder holds built pages and the opening
+    # assessments live on the permanent player records; the records are checked instead.
+    from runtime.player_pages import built_page, season_assessment_errors
+    built = [path for path in cards if built_page(path.read_text(encoding='utf-8'))]
+    if built:
+        errors.extend(season_assessment_errors(year, root))
+        cards = [path for path in cards if path not in built]
+        if not cards:
+            return errors
+        roster = [player for player in roster
+                  if not (directory/(slugify(player.player)+'.md')) in built]
     if not cards:
         errors.append(f'{year}: no opening annual assessments; roster coverage is incomplete')
     if not roster:

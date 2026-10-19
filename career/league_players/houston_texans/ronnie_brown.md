@@ -1,16 +1,29 @@
 # Ronnie Brown
 
-![Ronnie Brown career card](assets/ronnie_brown.svg)
+**Houston Texans · Running back · No. 22 · Age 32 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 223 lb · Born December 12, 1981 · Auburn · Drafted in 2005, first round, by Miami
+
+As of October 5, 2014, after Week 5.
+
+![Ronnie Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Ronnie_Brown_2012.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ronnie_Brown_2012.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Diego Chargers | 31 | 23 | 16 | 100 | 425 | 4.2 | 6 | 26.6 | 7 | 46 | 0 | 107 | 3 |
-| 2014 | Houston Texans | 32 | 22 | 4 | 19 | 71 | 3.7 | 0 | 17.8 | 0 | 0 | 0 | 19 | 0 |
-| **Career** |  |  |  | 20 | 119 | 496 | 4.2 | 6 | 24.8 | 7 | 46 | 0 | 126 | 3 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Houston | 32 | 22 | 4 | 19 | 71 | 3.7 | 0 | 11 | 17.8 |
+| 2013 | San Diego | 31 | 23 | 16 | 100 | 425 | 4.2 | 6 | 21 | 26.6 |
+| Career |  |  |  | 20 | 119 | 496 | 4.2 | 6 | 21 | 24.8 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Houston | 32 | 22 | 1 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2013 | San Diego | 31 | 23 | 17 | 7 | 46 | 6.6 | 0 | 3 | 3 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Houston Texans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2005 | Drafted by Miami in the first round |
+
+<!-- player-page -->

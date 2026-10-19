@@ -1,0 +1,253 @@
+{
+ "schema_version": 1,
+ "name": "Daniel Te'o-Nesheim",
+ "gsis_id": "00-0027689",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-03-31",
+   "date_as_written": "March 31, 2014 starting evaluation",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Starting staff view; exact theoretical personnel grades",
+   "position": "DE",
+   "age_as_written": "26",
+   "identity": "A power-oriented edge reserve suited to a defined run-setting assignment. My starting view gives him more edge/contain utility than speed-rush or counter value.",
+   "previous_profile": "New Jacksonville player; no prior Jacksonville annual profile",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Get-off",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Edge speed / bend",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Power",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Hand use / counters",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Edge setting / run defense",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Block shedding",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Pursuit",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Rush plan / recognition",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Contain discipline",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Get-off",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Edge speed / bend",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Hand use / counters",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Edge setting / run defense",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Block shedding",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Pursuit",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Rush plan / recognition",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Contain discipline",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards, not measured 2014 league ranks.",
+   "read": "A power-oriented edge reserve suited to a defined run-setting assignment. My starting view gives him more edge/contain utility than speed-rush or counter value.",
+   "read_sources": "Source: [Current roster and signing history](career/2014/Team_Operations/Team/Roster/roster.md). Initial personnel judgments; no Jacksonville practice or game evaluation is recorded yet.",
+   "change": "New Jacksonville starting assessment. No prior Jacksonville evaluation is invented.",
+   "support": "A power-oriented edge reserve suited to a defined run-setting assignment. My starting view gives him more edge/contain utility than speed-rush or counter value.\n\n[Current roster and signing history](career/2014/Team_Operations/Team/Roster/roster.md). Initial personnel judgments; no Jacksonville practice or game evaluation is recorded yet.",
+   "historical_comparison": "The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.",
+   "play_style": "A power-oriented edge reserve suited to a defined run-setting assignment. My starting view gives him more edge/contain utility than speed-rush or counter value.",
+   "best_traits": [
+    "Power: 5.0 /10.",
+    "Edge setting / run defense: 5.0 /10.",
+    "Contain discipline: 5.0 /10."
+   ],
+   "main_weaknesses": [
+    "Get-off: 4.0 /10.",
+    "Edge speed / bend: 4.0 /10.",
+    "Hand use / counters: 4.0 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [Current roster and signing history](career/2014/Team_Operations/Team/Roster/roster.md). Initial personnel judgments; no Jacksonville practice or game evaluation is recorded yet.",
+    "**Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics."
+   ],
+   "one_line": "A power-oriented edge reserve suited to a defined run-setting assignment. My starting view gives him more edge/contain utility than speed-rush or counter value.",
+   "updates": [],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/daniel_te_o_nesheim.md at commit 332d70b"
+  }
+ ],
+ "awards": [
+  {
+   "season": 2013,
+   "award": "Pro Bowl selection, replacement (2013, DE)",
+   "decided": {
+    "season": 2013,
+    "file": "season_honours_results.json",
+    "key": "pro_bowl.selections",
+    "slot": "DE",
+    "role": "replacement"
+   }
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2014-03-18",
+   "kind": "signed",
+   "text": "Signed a three-year contract with Jacksonville (2014 to 2016)",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  }
+ ]
+}

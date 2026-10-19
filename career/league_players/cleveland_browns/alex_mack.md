@@ -1,16 +1,24 @@
 # Alex Mack
 
-![Alex Mack career card](assets/alex_mack.svg)
+**Cleveland Browns · Center · No. 55 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 311 lb · Born November 19, 1985 · California · Drafted in 2009, first round, by Cleveland
+
+As of October 5, 2014, after Week 5.
+
+![Alex Mack](https://commons.wikimedia.org/wiki/Special:FilePath/Alex_Mack_2015.jpg?width=500)
+
+*Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Alex_Mack_2015.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 27 | 55 | 16 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Cleveland Browns | 28 | 55 | 4 | 4 | 288 | 4 | 25 | 0 | 0 | 0 | 0 | 72.0 |
-| **Career** |  |  |  | 20 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 28 | 55 | 4 | 4 | 288 | 4 | 25 |
+| 2013 | Cleveland | 27 | 55 | 16 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Cleveland in the first round |
+
+<!-- player-page -->

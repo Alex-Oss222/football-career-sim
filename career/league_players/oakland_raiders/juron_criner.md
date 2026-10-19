@@ -1,15 +1,22 @@
 # Juron Criner
 
-![Juron Criner career card](assets/juron_criner.svg)
+**Oakland Raiders · Wide receiver · Age 24 · Last game December 29, 2013**
 
-## Career stats
+6' 3", 221 lb · Born December 12, 1989 · Arizona · Drafted in 2012, fifth round, by Oakland
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Oakland Raiders | 23 | 84 | 16 | 3 | 2 | 7 | 3.5 | 0 | 0.4 | 66.7 | 8 | 0 | 0 |
-| **Career** |  |  |  | 16 | 3 | 2 | 7 | 3.5 | 0 | 0.4 | 66.7 | 8 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Oakland | 23 | 84 | 16 | 3 | 2 | 7 | 3.5 | 0 | 8 | 0.4 | 66.7 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Oakland | 23 | 84 | 0 | 0 | N/A | 1 | 4 | 4.0 |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Oakland Raiders players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Oakland in the fifth round |
+
+<!-- player-page -->

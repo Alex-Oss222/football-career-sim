@@ -1,0 +1,214 @@
+{
+ "schema_version": 1,
+ "name": "Marcel Jensen",
+ "gsis_id": "00-0030822",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-05-11",
+   "date_as_written": "May 11, 2014 starting evaluation, on acquisition (signed as an undrafted rookie on May 10, 2014)",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Rookie; no NFL standing. Staff view: camp tight end competition",
+   "position": "TE",
+   "age_as_written": "24",
+   "identity": "A big tight end from Fresno State with size for attached blocking and modest receiving production in a pass-heavy offense.",
+   "previous_profile": "None; 2014 rookie. The starting view rests on pre-draft public evidence only",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "2.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Size",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Attached blocking",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Receiving",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments of the player as he arrives, made from pre-draft public evidence (combine and dated college record described qualitatively, plus pre-draft reports). They grade the current player, not his draft slot, contract or projection, and they use no NFL outcome. Evidence limits are stated below.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Size",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Attached blocking",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Receiving",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards for the position, not measured 2014 league ranks. No NFL snap exists for this player.",
+   "read": "A big tight end from Fresno State with size for attached blocking and modest receiving production in a pass-heavy offense.",
+   "read_sources": "Source: Fresno State senior, 2013; memo addition. No combine entry in the library.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "None (rookie)",
+     "current": "Starting 2014 view",
+     "change": "New",
+     "reason": "Pre-draft public evidence only; no Jacksonville practice or game evidence yet"
+    }
+   ],
+   "support": "Fresno State senior, 2013; memo addition. No combine entry in the library.",
+   "historical_comparison": "No comparator is assigned at arrival. The evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.",
+   "play_style": "A big tight end from Fresno State with size for attached blocking and modest receiving production in a pass-heavy offense.",
+   "best_traits": [
+    "Size: 6.0 /10.",
+    "Strength / Power: 5.5 /10.",
+    "Athleticism: 4.5 /10."
+   ],
+   "main_weaknesses": [
+    "Receiving: 3.5 /10.",
+    "Speed: 4.0 /10.",
+    "Agility / Change of direction: 4.0 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** Fresno State senior, 2013; memo addition. No combine entry in the library.",
+    "**Evaluation basis:** Theoretical staff judgment from pre-draft public evidence; thin evidence identified above.",
+    "**What remains uncertain:** No measured testing on record; no Jacksonville scouting report beyond the memo.",
+    "**What would change the assessment:** Attached blocking reps in camp.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates."
+   ],
+   "one_line": "A big tight end from Fresno State with size for attached blocking and modest receiving production in a pass-heavy offense.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Jensen was assignment-correct in the attached work, with mixed finish and no correction beyond the general teaching. The sample does not settle TE3.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-08-22",
+     "date_as_written": "August 22, 2014",
+     "setting": "Preseason game 3, Jacksonville at Detroit",
+     "text": "Three offensive snaps and one kicking-game snap in Henne's mixed group, no target, before a minor head/neck injury was logged at the end of that possession (6:10 of the second quarter) and he was removed: independent medical hold, projected return in six days (August 28), reassessment August 24 ([medical record](career/2014/Team_Operations/Medical/incidents/marcel_jensen_2014-08-22.md)). Marcedes Lewis took his groups for the rest of the game. The hold is the medical staff's and no football finding attaches to it; the TE3 comparison with Hoskins, who caught eight balls, received nothing from his side in this game and is not decided by it.",
+     "source": "Source: [preseason game 3 output](career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_03/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-08-27",
+     "date_as_written": "August 27, 2014",
+     "setting": "The hold runs to game day",
+     "text": "Reassessed August 24 with no change (independent medical hold, projected return August 28, game day); no session August 23 to 27. Stone's Atlanta plan freezes its names after the medical review and does not build around a player who was unavailable for the week's work, so he is inactive on the frozen game depth chart and outside the rotation; a release on August 28, if the independent process communicates it, is recorded on the day and restores no role. TE3 remains open and the comparison with Hoskins received nothing from his side this week. Source: [medical record](career/2014/Team_Operations/Medical/incidents/marcel_jensen_2014-08-22.md); [camp record](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md#august-23-to-27-the-detroit-review-and-the-atlanta-preparation). This coaching update preserves the opening grades above.",
+     "source": ""
+    },
+    {
+     "date": "2014-08-28",
+     "date_as_written": "August 28, 2014",
+     "setting": "Released on his projected date; inactive for Atlanta",
+     "text": "The independent medical hold cleared on August 28, its projected date, under the record's method, nothing else having been communicated after the August 24 reassessment ([medical history](career/2014/Team_Operations/Medical/medical_history.md#august-28-preseason-game-4-injuries)). He was inactive for the Atlanta game under Stone's frozen plan, having missed the week's work, and the release restores no role: he is available for the August 29 review and the Week 1 preparation with no communicated restriction, TE3 remains unfilled, and his roster disposition at the August 30 reduction is Caldwell's with the user.",
+     "source": "Source: [preseason game 4 output](career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#august-28-preseason-game-4-injuries). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/marcel_jensen.md at commit 332d70b"
+  }
+ ],
+ "awards": [],
+ "transactions": [
+  {
+   "date": "2014-05-10",
+   "kind": "signed",
+   "text": "Signed a three-year contract with Jacksonville as an undrafted rookie",
+   "source": "career/2014/Draft/udfa_signings.md"
+  }
+ ]
+}

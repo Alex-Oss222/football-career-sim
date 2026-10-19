@@ -1,16 +1,34 @@
 # Bobby Rainey
 
-![Bobby Rainey career card](assets/bobby_rainey.svg)
+**Tampa Bay Buccaneers · Running back · No. 43 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+5' 8", 212 lb · Born October 16, 1987 · Western Kentucky
+
+As of October 5, 2014, after Week 5.
+
+![Bobby Rainey](https://commons.wikimedia.org/wiki/Special:FilePath/Bobby_Rainey_MT_Stadium_2012_Practice.jpg?width=500)
+
+*Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Bobby_Rainey_MT_Stadium_2012_Practice.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 25 | N/A | 16 | 81 | 398 | 4.9 | 3 | 24.9 | 11 | 61 | 0 | 92 | 1 |
-| 2014 | Tampa Bay Buccaneers | 26 | 43 | 5 | 27 | 144 | 5.3 | 1 | 28.8 | 2 | 33 | 0 | 29 | 1 |
-| **Career** |  |  |  | 21 | 108 | 542 | 5.0 | 4 | 25.8 | 13 | 94 | 0 | 121 | 2 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 26 | 43 | 5 | 27 | 144 | 5.3 | 1 | 21 | 28.8 |
+| 2013 | Cleveland | 25 | N/A | 16 | 81 | 398 | 4.9 | 3 | 33 | 24.9 |
+| Career |  |  |  | 21 | 108 | 542 | 5.0 | 4 | 33 | 25.8 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 26 | 43 | 5 | 2 | 33 | 16.5 | 0 | 1 | 1 |
+| 2013 | Cleveland | 25 | N/A | 21 | 11 | 61 | 5.5 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 26 | 43 | 0 | 0 | N/A | 4 | 35 | 8.8 |
+| 2013 | Cleveland | 25 | N/A | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +36,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).
+<!-- player-page -->

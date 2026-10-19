@@ -1,15 +1,51 @@
 # Allen Hurns
 
-![Allen Hurns career card](assets/allen_hurns.svg)
+**Jacksonville Jaguars · Wide receiver · No. 88 · Age 22 · Active roster**
 
-## Career stats
+6' 1", 195 lb · Born November 12, 1991 · Miami · Undrafted
+
+As of October 5, 2014, after Week 5.
+
+![Allen Hurns](https://commons.wikimedia.org/wiki/Special:FilePath/Allen_Hurns.jpg?width=500)
+
+*Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Allen_Hurns.jpg)).*
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 3.5/10 |
+| Athleticism | 5.0/10 |
+| Speed | 5.0/10 |
+| Strength and power | 5.0/10 |
+| Agility and change of direction | 5.0/10 |
+| Technique | 5.0/10 |
+| Football IQ | 5.0/10 |
+| Boundary body control | 5.5/10 |
+| Separation | 4.0/10 |
+| Special-teams value | 4.5/10 |
+
+A tall outside receiver from Miami with a productive senior season, body control on the boundary and average speed.
+
+*Staff view, May 11, 2014; dated updates through October 4, 2014.*
+
+## Contract
+
+Three-year contract through 2016.
+
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $420,000 | $420,000 |
+| 2015 | $510,000 | $510,000 |
+| 2016 | $600,000 | $600,000 |
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Jacksonville Jaguars | 22 | 88 | 5 | 5 | 3 | 48 | 16.0 | 0 | 9.6 | 60.0 | 32 | 0 | 0 |
-| **Career** |  |  |  | 5 | 5 | 3 | 48 | 16.0 | 0 | 9.6 | 60.0 | 32 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 22 | 88 | 5 | 5 | 3 | 48 | 16.0 | 0 | 32 | 9.6 | 60.0 |
 
 ### Playoffs
 
@@ -17,10 +53,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/allen_hurns.md)
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| May 10, 2014 | Signed a three-year contract with Jacksonville as an undrafted rookie |
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: his 2014 Jaguars roster listing. [All Jacksonville Jaguars players](README.md).
+<!-- player-page -->

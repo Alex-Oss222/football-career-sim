@@ -1,16 +1,24 @@
 # Lamar Holmes
 
-![Lamar Holmes career card](assets/lamar_holmes.svg)
+**Atlanta Falcons · Offensive tackle · No. 76 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 333 lb · Born July 8, 1989 · Southern Mississippi; Itawamba JC · Drafted in 2012, third round, by Atlanta
+
+As of October 5, 2014, after Week 5.
+
+![Lamar Holmes](https://commons.wikimedia.org/wiki/Special:FilePath/Lamar_Holmes_2013.jpg?width=500)
+
+*Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Lamar_Holmes_2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 24 | 76 | 16 | N/A | N/A | 2 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Atlanta Falcons | 25 | 76 | 5 | 5 | 272 | 2 | 22 | 0 | 0 | 0 | 0 | 54.4 |
-| **Career** |  |  |  | 21 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 25 | 76 | 5 | 5 | 272 | 2 | 22 |
+| 2013 | Atlanta | 24 | 76 | 16 | N/A | N/A | 2 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 
@@ -20,6 +28,10 @@ No playoff games on record.
 
 - Pro Bowl selection (2013, T)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Atlanta in the third round |
+
+<!-- player-page -->

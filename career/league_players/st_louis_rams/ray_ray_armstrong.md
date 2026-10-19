@@ -1,28 +1,46 @@
 # Ray-Ray Armstrong
 
-![Ray-Ray Armstrong career card](assets/ray_ray_armstrong.svg)
+**St. Louis Rams · Outside linebacker · No. 50 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 234 lb · Born March 5, 1991 · Miami; Faulkner
+
+As of October 5, 2014, after Week 5.
+
+![Ray-Ray Armstrong](https://commons.wikimedia.org/wiki/Special:FilePath/Ray-Ray_Armstrong.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ray-Ray_Armstrong.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 22 | 50 | 16 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| 2014 | St. Louis Rams | 23 | 50 | 4 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.2 | 3 |
-| **Career** |  |  |  | 20 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 3 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 23 | 50 | 4 | 5 | 3 | 2 | 0 | 0 | 0 |
+| 2013 | St. Louis | 22 | 50 | 16 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 20 | 5 | 3 | 2 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 23 | 50 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | St. Louis | 22 | 50 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 22 | 50 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 22 | 50 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 22 | 50 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+<!-- player-page -->

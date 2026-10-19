@@ -1,28 +1,37 @@
 # Eric Fisher
 
-![Eric Fisher career card](assets/eric_fisher.svg)
+**Kansas City Chiefs · Offensive tackle · No. 72 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+6' 7", 315 lb · Born January 5, 1991 · Central Michigan
+
+As of October 5, 2014, after Week 5.
+
+![Eric Fisher](https://commons.wikimedia.org/wiki/Special:FilePath/Eric_Fisher_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Eric_Fisher_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 22 | 72 | 16 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Kansas City Chiefs | 23 | 72 | 5 | 5 | 308 | 6 | 17 | 0 | 0 | 0 | 0 | 61.6 |
-| **Career** |  |  |  | 21 | N/A | N/A | 10 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 23 | 72 | 5 | 5 | 308 | 6 | 17 |
+| 2013 | Kansas City | 22 | 72 | 16 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 22 | 72 | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 22 | 72 | 1 | N/A | N/A | 0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+<!-- player-page -->

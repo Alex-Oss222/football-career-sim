@@ -1,15 +1,22 @@
 # Dimitri Patterson
 
-![Dimitri Patterson career card](assets/dimitri_patterson.svg)
+**Miami Dolphins · Cornerback · Age 30 · Last game December 29, 2013**
 
-## Career stats
+5' 10", 200 lb · Born June 18, 1983 · Tuskegee University; Southeast Missouri State
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Miami Dolphins | 30 | 24 | 16 | 61 | 2 | 9 | 15 | 0 | 0 | 0 | 0 | 3.8 | 0 |
-| **Career** |  |  |  | 16 | 61 | 2 | 9 | 15 | 0 | 0 | 0 | 0 | 3.8 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Miami | 30 | 24 | 16 | 61 | 42 | 19 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Miami | 30 | 24 | 2 | 15 | 9 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,10 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Schools listed: Tuskegee University; Southeast Missouri State.
-
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Miami Dolphins players](README.md).
+<!-- player-page -->

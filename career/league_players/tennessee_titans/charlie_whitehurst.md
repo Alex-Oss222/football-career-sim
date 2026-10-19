@@ -1,16 +1,29 @@
 # Charlie Whitehurst
 
-![Charlie Whitehurst career card](assets/charlie_whitehurst.svg)
+**Tennessee Titans · Quarterback · No. 12 · Age 32 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 226 lb · Born August 6, 1982 · Clemson · Drafted in 2006, third round, by San Diego
+
+As of October 5, 2014, after Week 5.
+
+![Charlie Whitehurst](https://commons.wikimedia.org/wiki/Special:FilePath/Charlie_Whitehurst_2014_02.jpg?width=500)
+
+*Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Charlie_Whitehurst_2014_02.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Diego Chargers | 31 | 6 | 16 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| 2014 | Tennessee Titans | 32 | 12 | 5 | 25-31 | 80.6 | 220 | 1 | 1 | 7.1 | 93.5 | 44.0 | 21 | 0 |
-| **Career** |  |  |  | 21 | 25-31 | 80.6 | 220 | 1 | 1 | 7.1 | 93.5 | 10.5 | 21 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 32 | 12 | 5 | 25 | 31 | 80.6 | 220 | 7.1 | 44.0 | 1 | 1 | 93.5 |
+| 2013 | San Diego | 31 | 6 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 21 | 25 | 31 | 80.6 | 220 | 7.1 | 10.5 | 1 | 1 | 93.5 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 32 | 12 | 1 | 8 | 3 | 21 | 0 | 0 | 0 |
+| 2013 | San Diego | 31 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by San Diego in the third round |
+
+<!-- player-page -->

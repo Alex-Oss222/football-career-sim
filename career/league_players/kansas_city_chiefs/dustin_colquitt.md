@@ -1,28 +1,39 @@
 # Dustin Colquitt
 
-![Dustin Colquitt career card](assets/dustin_colquitt.svg)
+**Kansas City Chiefs · Punter · No. 2 · Age 32 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 210 lb · Born May 6, 1982 · Tennessee · Drafted in 2005, third round, by Kansas City
+
+As of October 5, 2014, after Week 5.
+
+![Dustin Colquitt](https://commons.wikimedia.org/wiki/Special:FilePath/Chiefs_Punter_Dustin_Colquitt_Super_Bowl_54_Interview_%28cropped%29.png?width=500)
+
+*Photo: Time2Football, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Chiefs_Punter_Dustin_Colquitt_Super_Bowl_54_Interview_(cropped).png)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 31 | 2 | 16 | 84 | 3,717 | 44.2 | 39.5 | 35 | 62 | 4 | 41.7 | 5.2 | 322 |
-| 2014 | Kansas City Chiefs | 32 | 2 | 5 | 27 | 1,275 | 47.2 | 42.1 | 9 | 61 | 1 | 33.3 | 5.4 | 119 |
-| **Career** |  |  |  | 21 | 111 | 4,992 | 45.0 | 40.1 | 44 | 62 | 5 | 39.6 | 5.3 | 441 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 32 | 2 | 5 | 27 | 1,275 | 47.2 | 42.1 | 9 | 1 | 61 |
+| 2013 | Kansas City | 31 | 2 | 16 | 84 | 3,717 | 44.2 | 39.5 | 35 | 4 | 62 |
+| Career |  |  |  | 21 | 111 | 4,992 | 45.0 | 40.1 | 44 | 5 | 62 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 31 | 2 | 1 | 6 | 280 | 46.7 | 43.5 | 3 | 56 | 0 | 50.0 | 6.0 | 19 |
-| **Career** |  |  |  | 1 | 6 | 280 | 46.7 | 43.5 | 3 | 56 | 0 | 50.0 | 6.0 | 19 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 31 | 2 | 1 | 6 | 280 | 46.7 | 43.5 | 3 | 0 | 56 |
 
 ## Awards
 
 - AFC Special Teams Player of the Week (2014, Week 3)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+| Date | Transaction |
+|---|---|
+| 2005 | Drafted by Kansas City in the third round |
+
+<!-- player-page -->

@@ -1,28 +1,46 @@
 # Lance Moore
 
-![Lance Moore career card](assets/lance_moore.svg)
+**Pittsburgh Steelers · Wide receiver · No. 16 · Age 31 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 190 lb · Born August 31, 1983 · Toledo
+
+As of October 5, 2014, after Week 5.
+
+![Lance Moore](https://commons.wikimedia.org/wiki/Special:FilePath/Lmoore.jpg?width=500)
+
+*Photo: Nolamedic77, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Lmoore.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 30 | 16 | 16 | 94 | 67 | 579 | 8.6 | 5 | 36.2 | 71.3 | 36 | 0 | 1 |
-| 2014 | Pittsburgh Steelers | 31 | 16 | 3 | 4 | 2 | 6 | 3.0 | 0 | 2.0 | 50.0 | 5 | 0 | 0 |
-| **Career** |  |  |  | 19 | 98 | 69 | 585 | 8.5 | 5 | 30.8 | 70.4 | 36 | 0 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 31 | 16 | 3 | 4 | 2 | 6 | 3.0 | 0 | 5 | 2.0 | 50.0 |
+| 2013 | New Orleans | 30 | 16 | 16 | 94 | 67 | 579 | 8.6 | 5 | 36 | 36.2 | 71.3 |
+| Career |  |  |  | 19 | 98 | 69 | 585 | 8.5 | 5 | 36 | 30.8 | 70.4 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 31 | 16 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | New Orleans | 30 | 16 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 30 | 16 | 1 | 4 | 4 | 18 | 4.5 | 0 | 18.0 | 100.0 | 6 | 0 | 1 |
-| **Career** |  |  |  | 1 | 4 | 4 | 18 | 4.5 | 0 | 18.0 | 100.0 | 6 | 0 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 30 | 16 | 1 | 4 | 4 | 18 | 4.5 | 0 | 6 | 18.0 | 100.0 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 30 | 16 | 0 | 0 | 0 | 1 | 1 |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).
+<!-- player-page -->

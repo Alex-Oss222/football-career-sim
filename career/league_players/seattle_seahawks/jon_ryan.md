@@ -1,16 +1,24 @@
 # Jon Ryan
 
-![Jon Ryan career card](assets/jon_ryan.svg)
+**Seattle Seahawks · Punter · No. 9 · Age 32 · Last game October 6, 2014**
 
-## Career stats
+6' 0", 217 lb · Born November 26, 1981 · Regina
+
+As of October 6, 2014, after Week 5.
+
+![Jon Ryan](https://commons.wikimedia.org/wiki/Special:FilePath/Jon_Ryan_2014.jpg?width=500)
+
+*Photo: Mike Morris, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jon_Ryan_2014.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Seattle Seahawks | 31 | 9 | 16 | 78 | 3,622 | 46.4 | 40.2 | 31 | 65 | 2 | 39.7 | 4.9 | 444 |
-| 2014 | Seattle Seahawks | 32 | 9 | 4 | 21 | 922 | 43.9 | 38.4 | 11 | 66 | 3 | 52.4 | 5.2 | 55 |
-| **Career** |  |  |  | 20 | 99 | 4,544 | 45.9 | 39.8 | 42 | 66 | 5 | 42.4 | 5.0 | 499 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 32 | 9 | 4 | 21 | 922 | 43.9 | 38.4 | 11 | 3 | 66 |
+| 2013 | Seattle | 31 | 9 | 16 | 78 | 3,622 | 46.4 | 40.2 | 31 | 2 | 65 |
+| Career |  |  |  | 20 | 99 | 4,544 | 45.9 | 39.8 | 42 | 5 | 66 |
 
 ### Playoffs
 
@@ -20,6 +28,8 @@ No playoff games on record.
 
 - NFC Special Teams Player of the Week (2013, Week 13)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+None on record.
+
+<!-- player-page -->

@@ -516,8 +516,10 @@ def repository_profile_errors(root: Path = ROOT) -> list[str]:
     seasons=sorted({int(d.name) for base in ("career", "data") for d in (root/base).glob("[0-9][0-9][0-9][0-9]")})
     for season in seasons:
         directory=SeasonPaths(season, root).record('player_profiles')
+        from runtime.player_pages import built_page
         if not season_is_complete(season,root) and any(
-            p.name not in {"README.md","TEMPLATE.md"} and not all(marker in p.read_text(encoding="utf-8") for marker in ("**Profile status:** Working player card", "<!-- yearly-statistics:start -->", "<!-- yearly-statistics:end -->"))
+            p.name not in {"README.md","TEMPLATE.md"} and not built_page(p.read_text(encoding="utf-8"))
+            and not all(marker in p.read_text(encoding="utf-8") for marker in ("**Profile status:** Working player card", "<!-- yearly-statistics:start -->", "<!-- yearly-statistics:end -->"))
             for p in directory.glob("*.md")
         ):
             errors.append(f"{season} annual Player Sheets exist before season close")

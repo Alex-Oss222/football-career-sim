@@ -1,16 +1,29 @@
 # Colt McCoy
 
-![Colt McCoy career card](assets/colt_mccoy.svg)
+**Washington Redskins · Quarterback · No. 16 · Age 28 · Last game October 6, 2014**
 
-## Career stats
+6' 1", 215 lb · Born September 5, 1986 · Texas · Drafted in 2010, third round, by Cleveland
+
+As of October 6, 2014, after Week 5.
+
+![Colt McCoy](https://commons.wikimedia.org/wiki/Special:FilePath/Colt_McCoy_Redskins.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Colt_McCoy_Redskins.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 27 | 2 | 16 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| 2014 | Washington Redskins | 27 | 16 | 5 | 20-35 | 57.1 | 185 | 1 | 1 | 5.3 | 69.3 | 37.0 | 0 | 0 |
-| **Career** |  |  |  | 21 | 20-35 | 57.1 | 185 | 1 | 1 | 5.3 | 69.3 | 8.8 | 0 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Washington | 27 | 16 | 5 | 20 | 35 | 57.1 | 185 | 5.3 | 37.0 | 1 | 1 | 69.3 |
+| 2013 | San Francisco | 27 | 2 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 21 | 20 | 35 | 57.1 | 185 | 5.3 | 8.8 | 1 | 1 | 69.3 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Washington | 27 | 16 | 3 | 22 | 3 | 0 | 0 | 0 | 0 |
+| 2013 | San Francisco | 27 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Washington Redskins players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Cleveland in the third round |
+
+<!-- player-page -->

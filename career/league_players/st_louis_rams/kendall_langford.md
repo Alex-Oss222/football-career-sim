@@ -1,28 +1,48 @@
 # Kendall Langford
 
-![Kendall Langford career card](assets/kendall_langford.svg)
+**St. Louis Rams · Defensive end · No. 98 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 313 lb · Born January 27, 1986 · Hampton · Drafted in 2008, third round, by Miami
+
+As of October 5, 2014, after Week 5.
+
+![Kendall Langford](https://commons.wikimedia.org/wiki/Special:FilePath/Kendall_Langford.jpg?width=500)
+
+*Photo: Chrisjnelson at en.wikipedia, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Kendall_Langford.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 27 | 98 | 16 | 55 | 4 | 5 | 0 | 0 | 0 | 0 | 6 | 3.4 | 34 |
-| 2014 | St. Louis Rams | 28 | 98 | 4 | 15 | 1 | 2 | 0 | 1 | 0 | 0 | 2 | 3.8 | 13 |
-| **Career** |  |  |  | 20 | 70 | 5 | 7 | 0 | 1 | 0 | 0 | 8 | 3.5 | 47 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 28 | 98 | 4 | 15 | 13 | 2 | 2 | 1 | 2 |
+| 2013 | St. Louis | 27 | 98 | 16 | 55 | 34 | 21 | 5 | 4 | 6 |
+| Career |  |  |  | 20 | 70 | 47 | 23 | 7 | 5 | 8 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 28 | 98 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | St. Louis | 27 | 98 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 27 | 98 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 0 |
-| **Career** |  |  |  | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 27 | 98 | 1 | 1 | 0 | 1 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 27 | 98 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Miami in the third round |
+
+<!-- player-page -->

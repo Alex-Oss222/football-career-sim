@@ -1,16 +1,29 @@
 # Jamar Taylor
 
-![Jamar Taylor career card](assets/jamar_taylor.svg)
+**Miami Dolphins · Cornerback · No. 22 · Age 23 · Last game September 28, 2014**
 
-## Career stats
+5' 10", 200 lb · Born September 29, 1990 · Boise State
+
+As of September 28, 2014, after Week 4.
+
+![Jamar Taylor](https://commons.wikimedia.org/wiki/Special:FilePath/Jamar_Taylor_2017_preseason_%28cropped%29.jpg?width=500)
+
+*Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jamar_Taylor_2017_preseason_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Miami Dolphins | 22 | 22 | 14 | 33 | 3 | 8 | 40 | 3 | 0 | 0 | 0 | 2.4 | 0 |
-| 2014 | Miami Dolphins | 23 | 22 | 4 | 9 | 1 | 1 | 27 | 1 | 0 | 0 | 0 | 2.2 | 0 |
-| **Career** |  |  |  | 18 | 42 | 4 | 9 | 67 | 4 | 0 | 0 | 0 | 2.3 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 23 | 22 | 4 | 9 | 7 | 2 | 1 | 0 | 0 |
+| 2013 | Miami | 22 | 22 | 14 | 33 | 17 | 16 | 3 | 0 | 0 |
+| Career |  |  |  | 18 | 42 | 24 | 18 | 4 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 23 | 22 | 1 | 27 | 1 | 0 | 0 | 3 |
+| 2013 | Miami | 22 | 22 | 3 | 40 | 8 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Miami Dolphins players](README.md).
+<!-- player-page -->

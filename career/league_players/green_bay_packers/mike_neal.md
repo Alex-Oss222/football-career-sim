@@ -1,16 +1,29 @@
 # Mike Neal
 
-![Mike Neal career card](assets/mike_neal.svg)
+**Green Bay Packers · Outside linebacker · No. 96 · Age 27 · Last game October 2, 2014**
 
-## Career stats
+6' 3", 285 lb · Born June 26, 1987 · Purdue · Drafted in 2010, second round, by Green Bay
+
+As of October 2, 2014, after Week 5.
+
+![Mike Neal](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Neal_96_Dec_2013.jpg?width=500)
+
+*Photo: I, the copyright holder of this work, hereby publish it under the following license:, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Mike_Neal_96_Dec_2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Green Bay Packers | 26 | 96 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| 2014 | Green Bay Packers | 27 | 96 | 5 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0.2 | 1 |
-| **Career** |  |  |  | 7 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0.1 | 1 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 27 | 96 | 5 | 1 | 1 | 0 | 0 | 1 | 1 |
+| 2013 | Green Bay | 26 | 96 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 7 | 1 | 1 | 0 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 27 | 96 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2013 | Green Bay | 26 | 96 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Green Bay in the second round |
+
+<!-- player-page -->

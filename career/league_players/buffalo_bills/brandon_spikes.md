@@ -1,16 +1,29 @@
 # Brandon Spikes
 
-![Brandon Spikes career card](assets/brandon_spikes.svg)
+**Buffalo Bills · Middle linebacker · No. 51 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 255 lb · Born September 3, 1987 · Florida · Drafted in 2010, second round, by New England
+
+As of October 5, 2014, after Week 5.
+
+![Brandon Spikes](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Spikes.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Brandon_Spikes.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 26 | 55 | 16 | 108 | 5 | 6 | 0 | 5 | 0 | 0 | 10 | 6.8 | 81 |
-| 2014 | Buffalo Bills | 27 | 51 | 5 | 57 | 1 | 3 | 1 | 3 | 1 | 1 | 3 | 11.4 | 41 |
-| **Career** |  |  |  | 21 | 165 | 6 | 9 | 1 | 8 | 1 | 1 | 13 | 7.9 | 122 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 27 | 51 | 5 | 57 | 41 | 16 | 3 | 1 | 3 |
+| 2013 | New England | 26 | 55 | 16 | 108 | 81 | 27 | 6 | 5 | 10 |
+| Career |  |  |  | 21 | 165 | 122 | 43 | 9 | 6 | 13 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 27 | 51 | 1 | 0 | 3 | 1 | 1 | 0 |
+| 2013 | New England | 26 | 55 | 0 | 0 | 5 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by New England in the second round |
+
+<!-- player-page -->

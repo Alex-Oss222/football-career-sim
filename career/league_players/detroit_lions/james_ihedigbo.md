@@ -1,16 +1,29 @@
 # James Ihedigbo
 
-![James Ihedigbo career card](assets/james_ihedigbo.svg)
+**Detroit Lions · Strong safety · No. 32 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 217 lb · Born December 3, 1983 · UMass Amherst
+
+As of October 5, 2014, after Week 5.
+
+![James Ihedigbo](https://commons.wikimedia.org/wiki/Special:FilePath/James-Ihedigbo_Jets-vs-Jaguars_Nov-15-09.jpg?width=500)
+
+*Photo: Sgt. Randall A. Clinton This is a retouched picture , which means that it has been digitally altered from its original version. Modifications: Cropped to focus on #44. . Modifications made by Bluea..., Public domain ([source](https://commons.wikimedia.org/wiki/File:James-Ihedigbo_Jets-vs-Jaguars_Nov-15-09.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Baltimore Ravens | 29 | 32 | 16 | 56 | 2 | 11 | 35 | 3 | 1 | 0 | 0 | 3.5 | 0 |
-| 2014 | Detroit Lions | 30 | 32 | 2 | 4 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2.0 | 0 |
-| **Career** |  |  |  | 18 | 60 | 2 | 12 | 35 | 3 | 1 | 0 | 0 | 3.3 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 30 | 32 | 2 | 4 | 2 | 2 | 0 | 0 | 0 |
+| 2013 | Baltimore | 29 | 32 | 16 | 56 | 32 | 24 | 3 | 1 | 2 |
+| Career |  |  |  | 18 | 60 | 34 | 26 | 3 | 1 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 30 | 32 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | Baltimore | 29 | 32 | 2 | 35 | 11 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).
+<!-- player-page -->

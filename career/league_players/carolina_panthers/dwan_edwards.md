@@ -1,16 +1,29 @@
 # Dwan Edwards
 
-![Dwan Edwards career card](assets/dwan_edwards.svg)
+**Carolina Panthers · Defensive tackle · No. 92 · Age 33 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 305 lb · Born May 16, 1981 · Oregon State · Drafted in 2004, second round, by Baltimore
+
+As of October 5, 2014, after Week 5.
+
+![Dwan Edwards](https://commons.wikimedia.org/wiki/Special:FilePath/Dwan_Edwards.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Dwan_Edwards.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 32 | 92 | 16 | 70 | 9 | 9 | 0 | 3 | 3 | 3 | 17 | 4.4 | 48 |
-| 2014 | Carolina Panthers | 33 | 92 | 5 | 11 | 1 | 4 | 0 | 0 | 0 | 0 | 1 | 2.2 | 9 |
-| **Career** |  |  |  | 21 | 81 | 10 | 13 | 0 | 3 | 3 | 3 | 18 | 3.9 | 57 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 33 | 92 | 5 | 11 | 9 | 2 | 4 | 1 | 1 |
+| 2013 | Carolina | 32 | 92 | 16 | 70 | 48 | 22 | 9 | 9 | 17 |
+| Career |  |  |  | 21 | 81 | 57 | 24 | 13 | 10 | 18 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 33 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Carolina | 32 | 92 | 0 | 0 | 3 | 3 | 3 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2004 | Drafted by Baltimore in the second round |
+
+<!-- player-page -->

@@ -1,28 +1,40 @@
 # Chris Givens
 
-![Chris Givens career card](assets/chris_givens.svg)
+**St. Louis Rams · Wide receiver · No. 13 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 203 lb · Born December 6, 1989 · Wake Forest · Drafted in 2012, fourth round, by St. Louis
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 23 | 13 | 16 | 185 | 125 | 1,226 | 9.8 | 9 | 76.6 | 67.6 | 56 | 27 | 0 |
-| 2014 | St. Louis Rams | 24 | 13 | 4 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| **Career** |  |  |  | 20 | 185 | 125 | 1,226 | 9.8 | 9 | 61.3 | 67.6 | 56 | 27 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 24 | 13 | 4 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2013 | St. Louis | 23 | 13 | 16 | 185 | 125 | 1,226 | 9.8 | 9 | 56 | 76.6 | 67.6 |
+| Career |  |  |  | 20 | 185 | 125 | 1,226 | 9.8 | 9 | 56 | 61.3 | 67.6 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 24 | 13 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | St. Louis | 23 | 13 | 5 | 27 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 23 | 13 | 1 | 10 | 6 | 71 | 11.8 | 1 | 71.0 | 60.0 | 22 | 0 | 0 |
-| **Career** |  |  |  | 1 | 10 | 6 | 71 | 11.8 | 1 | 71.0 | 60.0 | 22 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 23 | 13 | 1 | 10 | 6 | 71 | 11.8 | 1 | 22 | 71.0 | 60.0 |
 
 ## Awards
 
 - Pro Bowl selection (2013, WR)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by St. Louis in the fourth round |
+
+<!-- player-page -->

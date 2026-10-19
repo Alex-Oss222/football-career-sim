@@ -1,28 +1,46 @@
 # Miles Austin
 
-![Miles Austin career card](assets/miles_austin.svg)
+**Cleveland Browns · Wide receiver · No. 19 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 215 lb · Born June 30, 1984 · Monmouth
+
+As of October 5, 2014, after Week 5.
+
+![Miles Austin](https://commons.wikimedia.org/wiki/Special:FilePath/Miles_Austin.jpg?width=500)
+
+*Photo: scott mecum, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Miles_Austin.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 29 | 19 | 16 | 109 | 71 | 962 | 13.5 | 6 | 60.1 | 65.1 | 68 | 15 | 1 |
-| 2014 | Cleveland Browns | 30 | 19 | 1 | 2 | 1 | 1 | 1.0 | 0 | 1.0 | 50.0 | 1 | 0 | 0 |
-| **Career** |  |  |  | 17 | 111 | 72 | 963 | 13.4 | 6 | 56.6 | 64.9 | 68 | 15 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 30 | 19 | 1 | 2 | 1 | 1 | 1.0 | 0 | 1 | 1.0 | 50.0 |
+| 2013 | Dallas | 29 | 19 | 16 | 109 | 71 | 962 | 13.5 | 6 | 68 | 60.1 | 65.1 |
+| Career |  |  |  | 17 | 111 | 72 | 963 | 13.4 | 6 | 68 | 56.6 | 64.9 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 30 | 19 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Dallas | 29 | 19 | 2 | 15 | 0 | 1 | 1 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 29 | 19 | 2 | 5 | 4 | 22 | 5.5 | 1 | 11.0 | 80.0 | 9 | 0 | 0 |
-| **Career** |  |  |  | 2 | 5 | 4 | 22 | 5.5 | 1 | 11.0 | 80.0 | 9 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 29 | 19 | 2 | 5 | 4 | 22 | 5.5 | 1 | 9 | 11.0 | 80.0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 29 | 19 | 3 | 78 | 26.0 | 0 | 0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+<!-- player-page -->

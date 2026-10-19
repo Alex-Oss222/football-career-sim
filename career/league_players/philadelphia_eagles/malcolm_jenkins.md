@@ -1,28 +1,48 @@
 # Malcolm Jenkins
 
-![Malcolm Jenkins career card](assets/malcolm_jenkins.svg)
+**Philadelphia Eagles · Safety · No. 27 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 204 lb · Born December 20, 1987 · Ohio State · Drafted in 2009, first round, by New Orleans
+
+As of October 5, 2014, after Week 5.
+
+![Malcolm Jenkins](https://commons.wikimedia.org/wiki/Special:FilePath/Malcolm_Jenkins_2014.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Malcolm_Jenkins_2014.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 25 | 27 | 16 | 89 | 5 | 14 | 21 | 7 | 0 | 1 | 1 | 5.6 | 0 |
-| 2014 | Philadelphia Eagles | 26 | 27 | 5 | 11 | 1 | 5 | 8 | 1 | 0 | 1 | 0 | 2.2 | 0 |
-| **Career** |  |  |  | 21 | 100 | 6 | 19 | 29 | 8 | 0 | 2 | 1 | 4.8 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 26 | 27 | 5 | 11 | 6 | 5 | 1 | 0 | 0 |
+| 2013 | New Orleans | 25 | 27 | 16 | 89 | 58 | 31 | 7 | 0 | 1 |
+| Career |  |  |  | 21 | 100 | 64 | 36 | 8 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 26 | 27 | 1 | 8 | 5 | 1 | 0 | 0 |
+| 2013 | New Orleans | 25 | 27 | 5 | 21 | 14 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 25 | 27 | 1 | 5 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 5.0 | 0 |
-| **Career** |  |  |  | 1 | 5 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 5.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 25 | 27 | 1 | 5 | 4 | 1 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 25 | 27 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Philadelphia Eagles players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by New Orleans in the first round |
+
+<!-- player-page -->

@@ -1,15 +1,30 @@
 # Rodney Smith
 
-![Rodney Smith career card](assets/rodney_smith.svg)
+**Minnesota Vikings · Wide receiver · No. 83 · Age 24 · Last game October 2, 2014**
 
-## Career stats
+6' 5", 220 lb · Born March 11, 1990 · Florida State
+
+As of October 2, 2014, after Week 5.
+
+![Rodney Smith](https://commons.wikimedia.org/wiki/Special:FilePath/81%2C_Rodney_Smith%2C_Aug_2%2C_2018.jpg?width=500)
+
+*Photo: Cmm3, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:81,_Rodney_Smith,_Aug_2,_2018.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Minnesota Vikings | 24 | 83 | 5 | 17 | 10 | 66 | 6.6 | 1 | 13.2 | 58.8 | 18 | 0 | 1 |
-| **Career** |  |  |  | 5 | 17 | 10 | 66 | 6.6 | 1 | 13.2 | 58.8 | 18 | 0 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 24 | 83 | 5 | 17 | 10 | 66 | 6.6 | 1 | 18 | 13.2 | 58.8 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 24 | 83 | 0 | 0 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 24 | 83 | 0 | 0 | N/A | 5 | 8 | 1.6 |
 
 ### Playoffs
 
@@ -17,8 +32,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+<!-- player-page -->

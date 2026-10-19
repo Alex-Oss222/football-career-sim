@@ -1,28 +1,48 @@
 # Dashon Goldson
 
-![Dashon Goldson career card](assets/dashon_goldson.svg)
+**Tampa Bay Buccaneers · Free safety · No. 38 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 200 lb · Born September 18, 1984 · Washington; Coffeyville CC · Drafted in 2007, fourth round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![Dashon Goldson](https://commons.wikimedia.org/wiki/Special:FilePath/Dashon_Goldson_at_49ers_training_camp_2010-08-11_1.JPG?width=500)
+
+*Photo: BrokenSphere, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Dashon_Goldson_at_49ers_training_camp_2010-08-11_1.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 28 | 38 | 16 | 79 | 2 | 16 | 25 | 1 | 1 | 2 | 2 | 4.9 | 0 |
-| 2014 | Tampa Bay Buccaneers | 29 | 38 | 2 | 7 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 3.5 | 0 |
-| **Career** |  |  |  | 18 | 86 | 2 | 18 | 25 | 1 | 1 | 2 | 2 | 4.8 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 29 | 38 | 2 | 7 | 2 | 5 | 0 | 0 | 0 |
+| 2013 | Tampa Bay | 28 | 38 | 16 | 79 | 58 | 21 | 1 | 1 | 2 |
+| Career |  |  |  | 18 | 86 | 60 | 26 | 1 | 1 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 29 | 38 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2013 | Tampa Bay | 28 | 38 | 2 | 25 | 16 | 2 | 2 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 28 | 38 | 1 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4.0 | 0 |
-| **Career** |  |  |  | 1 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 28 | 38 | 1 | 4 | 2 | 2 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 28 | 38 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by San Francisco in the fourth round |
+
+<!-- player-page -->

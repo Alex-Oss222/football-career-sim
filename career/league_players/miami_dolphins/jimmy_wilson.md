@@ -1,16 +1,29 @@
 # Jimmy Wilson
 
-![Jimmy Wilson career card](assets/jimmy_wilson.svg)
+**Miami Dolphins · Safety · No. 27 · Age 28 · Last game September 28, 2014**
 
-## Career stats
+5' 11", 205 lb · Born July 30, 1986 · Montana · Drafted in 2011, seventh round, by Miami
+
+As of September 28, 2014, after Week 4.
+
+![Jimmy Wilson](https://commons.wikimedia.org/wiki/Special:FilePath/Jimmy_Wilson.jpg?width=500)
+
+*Photo: Chrisjnelson at English Wikipedia, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jimmy_Wilson.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Miami Dolphins | 27 | 27 | 16 | 13 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0.8 | 0 |
-| 2014 | Miami Dolphins | 28 | 27 | 4 | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3.2 | 0 |
-| **Career** |  |  |  | 20 | 26 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 1.3 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 28 | 27 | 4 | 13 | 5 | 8 | 0 | 0 | 1 |
+| 2013 | Miami | 27 | 27 | 16 | 13 | 7 | 6 | 1 | 0 | 1 |
+| Career |  |  |  | 20 | 26 | 12 | 14 | 1 | 0 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 28 | 27 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Miami | 27 | 27 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Miami Dolphins players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Miami in the seventh round |
+
+<!-- player-page -->

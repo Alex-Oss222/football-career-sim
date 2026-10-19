@@ -1,16 +1,29 @@
 # Tank Carder
 
-![Tank Carder career card](assets/tank_carder.svg)
+**Cleveland Browns · Inside linebacker · No. 59 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 235 lb · Born January 18, 1989 · TCU · Drafted in 2012, fifth round, by Buffalo
+
+As of October 5, 2014, after Week 5.
+
+![Tank Carder](https://commons.wikimedia.org/wiki/Special:FilePath/Tank_Carder.jpg?width=500)
+
+*Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Tank_Carder.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 24 | 59 | 16 | 6 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0.4 | 3 |
-| 2014 | Cleveland Browns | 25 | 59 | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.2 | 1 |
-| **Career** |  |  |  | 20 | 7 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0.3 | 4 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 25 | 59 | 4 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2013 | Cleveland | 24 | 59 | 16 | 6 | 3 | 3 | 1 | 0 | 0 |
+| Career |  |  |  | 20 | 7 | 4 | 3 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 25 | 59 | 0 | 0 | 0 | 0 | 0 | 5 |
+| 2013 | Cleveland | 24 | 59 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Buffalo in the fifth round |
+
+<!-- player-page -->

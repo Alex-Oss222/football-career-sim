@@ -18,13 +18,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from runtime.seasons import SeasonPaths
+from runtime.seasons import SeasonPaths, data_link
 DIR = SeasonPaths(2014, ROOT).record('draft/compensatory')
 DATA = SeasonPaths(2014, ROOT).data_for(DIR)
 METHOD, INPUTS, OUT = DATA / "method.json", DATA / "inputs.json", DATA / "awards.json"
 PAGE = DIR / "announcement.md"
-RECEIPTS = [ROOT / "career/2013/stats/game_receipts", ROOT / "career/2013/stats/postseason_receipts"]
-HONOURS = ROOT / "career/2013/awards/season_honours_results.json"
+RECEIPTS = [SeasonPaths(2013, ROOT).receipts, SeasonPaths(2013, ROOT).postseason_receipts]
+HONOURS = SeasonPaths(2013, ROOT).awards_data / "season_honours_results.json"
 
 
 def sha(path):
@@ -150,8 +150,8 @@ def announcement(result):
                       f'{fa[n]["value_points"]:.1f} points, Round {fa[n]["value_round"]})')
     thresholds = ", ".join(f'Round {t["round"]} at {t["min_points"]}' for t in val["round_thresholds"])
     lines = ["# 2014 compensatory picks: branch announcement", "",
-             "**Announced:** Monday, March 24, 2014. **Generated** by `python scripts/resolve_compensatory_picks.py` from [awards.json](../../../../data/2014/Draft/compensatory/awards.json); do not edit by hand.", "",
-             "The league awarded 32 compensatory picks for the 2014 draft, placed after rounds 3 to 7. They rest on each club's qualifying unrestricted free agents lost and signed in the **2013** league year of this branch. The NFL formula's weights are unpublished, so the branch used its own [method](../../../../data/2014/Draft/compensatory/method.json), version 2, on [recorded inputs](../../../../data/2014/Draft/compensatory/inputs.json). No real 2014 award list was read. The picks cannot be traded in 2014.", "",
+             "**Announced:** Monday, March 24, 2014. **Generated** by `python scripts/resolve_compensatory_picks.py` from [awards.json](" + data_link(2014, "draft/compensatory/awards.json", 4) + "); do not edit by hand.", "",
+             "The league awarded 32 compensatory picks for the 2014 draft, placed after rounds 3 to 7. They rest on each club's qualifying unrestricted free agents lost and signed in the **2013** league year of this branch. The NFL formula's weights are unpublished, so the branch used its own [method](" + data_link(2014, "draft/compensatory/method.json", 4) + "), version 2, on [recorded inputs](" + data_link(2014, "draft/compensatory/inputs.json", 4) + "). No real 2014 award list was read. The picks cannot be traded in 2014.", "",
              "## How a free agent is valued", "",
              f'- **Salary (primary):** his new contract\'s average per year as a percentile of the 2013 league market ({inputs["salary_market"]["contracts"]} contracts in force; median {money(inputs["salary_market"]["median_apy"])}). A $12.0M deal scores about 98; a $1.0M deal about 55.',
              "- **Playing time:** branch 2013 games for his new club as a share of that club's games: 75 percent or more costs nothing, 50 to 75 percent costs 4 points, 25 to 50 percent 8, under 25 percent 12.",

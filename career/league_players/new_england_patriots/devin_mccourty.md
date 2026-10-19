@@ -1,16 +1,34 @@
 # Devin McCourty
 
-![Devin McCourty career card](assets/devin_mccourty.svg)
+**New England Patriots · Safety · No. 32 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 195 lb · Born August 13, 1987 · Rutgers · Drafted in 2010, first round, by New England
+
+As of October 5, 2014, after Week 5.
+
+![Devin McCourty](https://commons.wikimedia.org/wiki/Special:FilePath/Devin_McCourty.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Devin_McCourty.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 26 | 32 | 15 | 95 | 8 | 20 | 87 | 5 | 0 | 1 | 1 | 6.3 | 605 |
-| 2014 | New England Patriots | 27 | 32 | 5 | 21 | 1 | 3 | 18 | 0 | 0 | 0 | 0 | 4.2 | 0 |
-| **Career** |  |  |  | 20 | 116 | 9 | 23 | 105 | 5 | 0 | 1 | 1 | 5.8 | 605 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 27 | 32 | 5 | 21 | 13 | 8 | 0 | 0 | 0 |
+| 2013 | New England | 26 | 32 | 15 | 95 | 62 | 33 | 5 | 0 | 1 |
+| Career |  |  |  | 20 | 116 | 75 | 41 | 5 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 27 | 32 | 1 | 18 | 3 | 0 | 0 | 0 |
+| 2013 | New England | 26 | 32 | 8 | 87 | 20 | 1 | 1 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 27 | 32 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | New England | 26 | 32 | 25 | 605 | 24.2 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +36,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New England Patriots players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by New England in the first round |
+
+<!-- player-page -->

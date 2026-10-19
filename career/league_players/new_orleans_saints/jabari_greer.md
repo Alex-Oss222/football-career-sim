@@ -1,27 +1,43 @@
 # Jabari Greer
 
-![Jabari Greer career card](assets/jabari_greer.svg)
+**New Orleans Saints · Cornerback · Age 31 · Last game January 4, 2014**
 
-## Career stats
+5' 11", 180 lb · Born February 11, 1982 · Tennessee
+
+As of January 4, 2014, after the Wild Card round.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 31 | 33 | 16 | 38 | 1 | 11 | 0 | 1 | 1 | 0 | 0 | 2.4 | 20 |
-| **Career** |  |  |  | 16 | 38 | 1 | 11 | 0 | 1 | 1 | 0 | 0 | 2.4 | 20 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 31 | 33 | 16 | 38 | 27 | 11 | 1 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 31 | 33 | 1 | 0 | 11 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 31 | 33 | 2 | 20 | 10.0 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 31 | 33 | 1 | 7 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 7.0 | 0 |
-| **Career** |  |  |  | 1 | 7 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 7.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 31 | 33 | 1 | 7 | 5 | 2 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 31 | 33 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through January 4, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All New Orleans Saints players](README.md).
+<!-- player-page -->

@@ -1,16 +1,24 @@
 # Logan Paulsen
 
-![Logan Paulsen career card](assets/logan_paulsen.svg)
+**Washington Redskins · Tight end · No. 82 · Age 27 · Last game October 6, 2014**
 
-## Career stats
+6' 5", 261 lb · Born February 26, 1987 · UCLA
+
+As of October 6, 2014, after Week 5.
+
+![Logan Paulsen](https://commons.wikimedia.org/wiki/Special:FilePath/Logan_Paulsen.jpg?width=500)
+
+*Photo: Keith Allison from Owings Mills, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Logan_Paulsen.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Washington Redskins | 26 | 82 | 11 | 23 | 16 | 146 | 9.1 | 1 | 13.3 | 69.6 | 44 | 0 | 0 |
-| 2014 | Washington Redskins | 27 | 82 | 5 | 12 | 8 | 55 | 6.9 | 2 | 11.0 | 66.7 | 20 | 0 | 0 |
-| **Career** |  |  |  | 16 | 35 | 24 | 201 | 8.4 | 3 | 12.6 | 68.6 | 44 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Washington | 27 | 82 | 5 | 12 | 8 | 55 | 6.9 | 2 | 20 | 11.0 | 66.7 |
+| 2013 | Washington | 26 | 82 | 11 | 23 | 16 | 146 | 9.1 | 1 | 44 | 13.3 | 69.6 |
+| Career |  |  |  | 16 | 35 | 24 | 201 | 8.4 | 3 | 44 | 12.6 | 68.6 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Washington Redskins players](README.md).
+<!-- player-page -->

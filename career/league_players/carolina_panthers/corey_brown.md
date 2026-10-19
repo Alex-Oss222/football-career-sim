@@ -1,15 +1,26 @@
 # Corey Brown
 
-![Corey Brown career card](assets/corey_brown.svg)
+**Carolina Panthers · Wide receiver · No. 16 · Age 22 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 180 lb · Born December 16, 1991 · Ohio State
+
+As of October 5, 2014, after Week 5.
+
+![Corey Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Philly_Corey_Brown_2016-08-11_crop.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Philly_Corey_Brown_2016-08-11_crop.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Carolina Panthers | 22 | 16 | 5 | 7 | 5 | 75 | 15.0 | 0 | 15.0 | 71.4 | 29 | 0 | 0 |
-| **Career** |  |  |  | 5 | 7 | 5 | 75 | 15.0 | 0 | 15.0 | 71.4 | 29 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 22 | 16 | 5 | 7 | 5 | 75 | 15.0 | 0 | 29 | 15.0 | 71.4 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 22 | 16 | 12 | 274 | 22.8 | 10 | 110 | 11.0 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+<!-- player-page -->

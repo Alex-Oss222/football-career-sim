@@ -1,28 +1,52 @@
 # Cortez Allen
 
-![Cortez Allen career card](assets/cortez_allen.svg)
+**Pittsburgh Steelers · Cornerback · No. 28 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 196 lb · Born October 29, 1988 · The Citadel · Drafted in 2011, fourth round, by Pittsburgh
+
+As of October 5, 2014, after Week 5.
+
+![Cortez Allen](https://commons.wikimedia.org/wiki/Special:FilePath/Cortez_Allen.jpg?width=500)
+
+*Photo: Joe_Flacco_under_center_vs_Pittsburgh_Steelers_12-2-12.jpg : Au Kirk derivative work: Lpdrew, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cortez_Allen.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 24 | 28 | 16 | 78 | 4 | 10 | 55 | 1 | 0 | 0 | 0 | 4.9 | 0 |
-| 2014 | Pittsburgh Steelers | 25 | 28 | 5 | 18 | 1 | 8 | 0 | 0 | 0 | 0 | 0 | 3.6 | 0 |
-| **Career** |  |  |  | 21 | 96 | 5 | 18 | 55 | 1 | 0 | 0 | 0 | 4.6 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 25 | 28 | 5 | 18 | 12 | 6 | 0 | 0 | 0 |
+| 2013 | Pittsburgh | 24 | 28 | 16 | 78 | 55 | 23 | 1 | 0 | 0 |
+| Career |  |  |  | 21 | 96 | 67 | 29 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 25 | 28 | 1 | 0 | 8 | 0 | 0 | 0 |
+| 2013 | Pittsburgh | 24 | 28 | 4 | 55 | 10 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 24 | 28 | 1 | 6 | 1 | 1 | 34 | 1 | 0 | 0 | 0 | 6.0 | 19 |
-| **Career** |  |  |  | 1 | 6 | 1 | 1 | 34 | 1 | 0 | 0 | 0 | 6.0 | 19 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 24 | 28 | 1 | 6 | 5 | 1 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 24 | 28 | 1 | 34 | 1 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 24 | 28 | 0 | 0 | N/A | 1 | 19 | 19.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Pittsburgh in the fourth round |
+
+<!-- player-page -->

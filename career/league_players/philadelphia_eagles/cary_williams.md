@@ -1,28 +1,48 @@
 # Cary Williams
 
-![Cary Williams career card](assets/cary_williams.svg)
+**Philadelphia Eagles · Cornerback · No. 26 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 190 lb · Born December 23, 1984 · Washburn; Fordham · Drafted in 2008, seventh round, by Tennessee
+
+As of October 5, 2014, after Week 5.
+
+![Cary Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Cary_Williams_Navy_Stadium_2012_Practice.jpg?width=500)
+
+*Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Cary_Williams_Navy_Stadium_2012_Practice.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 28 | 26 | 16 | 92 | 1 | 10 | 17 | 3 | 1 | 0 | 0 | 5.8 | 0 |
-| 2014 | Philadelphia Eagles | 29 | 26 | 5 | 30 | 2 | 4 | 33 | 1 | 0 | 1 | 1 | 6.0 | 0 |
-| **Career** |  |  |  | 21 | 122 | 3 | 14 | 50 | 4 | 1 | 1 | 1 | 5.8 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 29 | 26 | 5 | 30 | 20 | 10 | 1 | 0 | 0 |
+| 2013 | Philadelphia | 28 | 26 | 16 | 92 | 56 | 36 | 3 | 1 | 1 |
+| Career |  |  |  | 21 | 122 | 76 | 46 | 4 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 29 | 26 | 2 | 33 | 4 | 1 | 1 | 0 |
+| 2013 | Philadelphia | 28 | 26 | 1 | 17 | 10 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 28 | 26 | 3 | 19 | 1 | 1 | 86 | 2 | 0 | 0 | 0 | 6.3 | 0 |
-| **Career** |  |  |  | 3 | 19 | 1 | 1 | 86 | 2 | 0 | 0 | 0 | 6.3 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 28 | 26 | 3 | 19 | 10 | 9 | 2 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 28 | 26 | 1 | 86 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Philadelphia Eagles players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Tennessee in the seventh round |
+
+<!-- player-page -->

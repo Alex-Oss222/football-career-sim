@@ -1,16 +1,24 @@
 # Josh Harris
 
-![Josh Harris career card](assets/josh_harris.svg)
+**Atlanta Falcons · Long snapper · No. 47 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 224 lb · Born April 27, 1989 · Auburn
+
+As of October 5, 2014, after Week 5.
+
+![Josh Harris](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Harris_%28long_snapper%29_2014.jpg?width=500)
+
+*Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Josh_Harris_(long_snapper)_2014.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | LONG SNAPS | ST SNAPS | ST TKL | TKL | SOLO | AST | FF | FR | LONG SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 24 | 47 | 16 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Atlanta Falcons | 25 | 47 | 5 | 50 | 50 | 0 | 0 | 0 | 0 | 0 | 0 | 10.0 |
-| **Career** |  |  |  | 21 | N/A | N/A | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 25 | 47 | 5 | 50 | 50 | 0 | 0 |
+| 2013 | Atlanta | 24 | 47 | 16 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 21 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+<!-- player-page -->

@@ -1,15 +1,18 @@
 # James Brewer
 
-![James Brewer career card](assets/james_brewer.svg)
+**New York Giants · Offensive tackle · No. 73 · Age 26 · Last game December 29, 2013**
 
-## Career stats
+6' 6", 330 lb · Born December 23, 1987 · Indiana · Drafted in 2011, fourth round, by the New York Giants
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Giants | 25 | 73 | 16 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 16 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Giants | 25 | 73 | 16 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 
@@ -17,8 +20,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by the New York Giants in the fourth round |
+
+<!-- player-page -->

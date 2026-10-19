@@ -1,15 +1,18 @@
 # Taylor Boggs
 
-![Taylor Boggs career card](assets/taylor_boggs.svg)
+**Chicago Bears · Center · No. 60 · Age 26 · Last game December 29, 2013**
 
-## Career stats
+6' 3", 285 lb · Born February 20, 1987 · Humboldt State
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Chicago Bears | 26 | 60 | 15 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 15 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Chicago | 26 | 60 | 15 | N/A | N/A | 1 | N/A |
 
 ### Playoffs
 
@@ -17,8 +20,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All Chicago Bears players](README.md).
+<!-- player-page -->

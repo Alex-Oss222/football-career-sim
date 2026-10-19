@@ -1,16 +1,24 @@
 # Brad Nortman
 
-![Brad Nortman career card](assets/brad_nortman.svg)
+**Carolina Panthers · Punter · No. 8 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 210 lb · Born September 12, 1989 · Wisconsin · Drafted in 2012, sixth round, by Carolina
+
+As of October 5, 2014, after Week 5.
+
+![Brad Nortman](https://commons.wikimedia.org/wiki/Special:FilePath/Brad_nortman_panthers.jpg?width=500)
+
+*Photo: original: Keith Allison derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Brad_nortman_panthers.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 23 | 8 | 16 | 66 | 2,928 | 44.4 | 38.9 | 31 | 62 | 0 | 47.0 | 4.1 | 358 |
-| 2014 | Carolina Panthers | 24 | 8 | 5 | 20 | 887 | 44.4 | 38.6 | 9 | 64 | 3 | 45.0 | 4.0 | 55 |
-| **Career** |  |  |  | 21 | 86 | 3,815 | 44.4 | 38.9 | 40 | 64 | 3 | 46.5 | 4.1 | 413 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 24 | 8 | 5 | 20 | 887 | 44.4 | 38.6 | 9 | 3 | 64 |
+| 2013 | Carolina | 23 | 8 | 16 | 66 | 2,928 | 44.4 | 38.9 | 31 | 0 | 62 |
+| Career |  |  |  | 21 | 86 | 3,815 | 44.4 | 38.9 | 40 | 3 | 64 |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Carolina in the sixth round |
+
+<!-- player-page -->

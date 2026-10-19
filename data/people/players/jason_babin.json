@@ -1,0 +1,44 @@
+{
+ "schema_version": 1,
+ "name": "Jason Babin",
+ "gsis_id": "00-0022695",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/jason_babin.md"
+  }
+ ],
+ "awards": [],
+ "transactions": [
+  {
+   "date": "2011",
+   "kind": "signed",
+   "text": "Signed a five-year contract with Philadelphia",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md"
+  },
+  {
+   "date": "2012-12",
+   "kind": "claimed",
+   "text": "Claimed off waivers by Jacksonville, carrying his Philadelphia contract",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md"
+  },
+  {
+   "date": "2014-03-24",
+   "kind": "traded",
+   "text": "Traded by Jacksonville to Miami, with Jacksonville's 2017 seventh-round pick, for Miami's 2015 third-round pick",
+   "source": "career/2014/Team_Operations/Trades/completed_trades/babin_to_miami_2014-03-24.md"
+  }
+ ]
+}

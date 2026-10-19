@@ -1,16 +1,29 @@
 # Micah Hyde
 
-![Micah Hyde career card](assets/micah_hyde.svg)
+**Green Bay Packers · Free safety · No. 33 · Age 23 · Last game October 2, 2014**
 
-## Career stats
+6' 0", 197 lb · Born December 31, 1990 · Iowa
+
+As of October 2, 2014, after Week 5.
+
+![Micah Hyde](https://commons.wikimedia.org/wiki/Special:FilePath/Micah_Hyde_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Micah_Hyde_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Green Bay Packers | 22 | 33 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| 2014 | Green Bay Packers | 23 | 33 | 5 | 38 | 1 | 6 | 5 | 2 | 0 | 0 | 0 | 7.6 | 0 |
-| **Career** |  |  |  | 7 | 38 | 1 | 6 | 5 | 2 | 0 | 0 | 0 | 5.4 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 23 | 33 | 5 | 38 | 25 | 13 | 2 | 0 | 0 |
+| 2013 | Green Bay | 22 | 33 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 7 | 38 | 25 | 13 | 2 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 23 | 33 | 1 | 5 | 6 | 0 | 0 | 0 |
+| 2013 | Green Bay | 22 | 33 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+<!-- player-page -->

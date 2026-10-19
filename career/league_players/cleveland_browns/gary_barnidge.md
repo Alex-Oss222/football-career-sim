@@ -1,16 +1,24 @@
 # Gary Barnidge
 
-![Gary Barnidge career card](assets/gary_barnidge.svg)
+**Cleveland Browns · Tight end · No. 82 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 250 lb · Born September 22, 1985 · Louisville · Drafted in 2008, fifth round, by Carolina
+
+As of October 5, 2014, after Week 5.
+
+![Gary Barnidge](https://commons.wikimedia.org/wiki/Special:FilePath/Gary_Barnidge_Carolina_Panthers_2010.JPG?width=500)
+
+*Photo: NCNG Photo by Tech. Sgt. Brian E. Christiansen., Public domain ([source](https://commons.wikimedia.org/wiki/File:Gary_Barnidge_Carolina_Panthers_2010.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 27 | 82 | 16 | 27 | 12 | 177 | 14.8 | 2 | 11.1 | 44.4 | 47 | 0 | 0 |
-| 2014 | Cleveland Browns | 28 | 82 | 4 | 7 | 3 | 34 | 11.3 | 0 | 8.5 | 42.9 | 28 | 0 | 0 |
-| **Career** |  |  |  | 20 | 34 | 15 | 211 | 14.1 | 2 | 10.6 | 44.1 | 47 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 28 | 82 | 4 | 7 | 3 | 34 | 11.3 | 0 | 28 | 8.5 | 42.9 |
+| 2013 | Cleveland | 27 | 82 | 16 | 27 | 12 | 177 | 14.8 | 2 | 47 | 11.1 | 44.4 |
+| Career |  |  |  | 20 | 34 | 15 | 211 | 14.1 | 2 | 47 | 10.6 | 44.1 |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Carolina in the fifth round |
+
+<!-- player-page -->

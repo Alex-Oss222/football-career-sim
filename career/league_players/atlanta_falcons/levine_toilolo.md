@@ -1,16 +1,24 @@
 # Levine Toilolo
 
-![Levine Toilolo career card](assets/levine_toilolo.svg)
+**Atlanta Falcons · Tight end · No. 80 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+6' 8", 265 lb · Born July 30, 1991 · Stanford
+
+As of October 5, 2014, after Week 5.
+
+![Levine Toilolo](https://commons.wikimedia.org/wiki/Special:FilePath/Levine_Toilolo_2013.jpg?width=500)
+
+*Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Levine_Toilolo_2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 22 | 80 | 16 | 5 | 5 | 38 | 7.6 | 0 | 2.4 | 100.0 | 15 | 0 | 0 |
-| 2014 | Atlanta Falcons | 23 | 80 | 5 | 32 | 17 | 242 | 14.2 | 3 | 48.4 | 53.1 | 43 | 0 | 0 |
-| **Career** |  |  |  | 21 | 37 | 22 | 280 | 12.7 | 3 | 13.3 | 59.5 | 43 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 23 | 80 | 5 | 32 | 17 | 242 | 14.2 | 3 | 43 | 48.4 | 53.1 |
+| 2013 | Atlanta | 22 | 80 | 16 | 5 | 5 | 38 | 7.6 | 0 | 15 | 2.4 | 100.0 |
+| Career |  |  |  | 21 | 37 | 22 | 280 | 12.7 | 3 | 43 | 13.3 | 59.5 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+<!-- player-page -->

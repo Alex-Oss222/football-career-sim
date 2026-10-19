@@ -1,28 +1,39 @@
 # Lee Smith
 
-![Lee Smith career card](assets/lee_smith.svg)
+**Buffalo Bills · Tight end · No. 85 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 265 lb · Born November 21, 1987 · Marshall; Tennessee · Drafted in 2011, fifth round, by New England
+
+As of October 5, 2014, after Week 5.
+
+![Lee Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Lee_Smith_%28American_football%29_2017.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Lee_Smith_(American_football)_2017.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 25 | 85 | 16 | 13 | 11 | 130 | 11.8 | 0 | 8.1 | 84.6 | 36 | 0 | 0 |
-| 2014 | Buffalo Bills | 26 | 85 | 3 | 2 | 2 | 1 | 0.5 | 0 | 0.3 | 100.0 | 1 | 0 | 0 |
-| **Career** |  |  |  | 19 | 15 | 13 | 131 | 10.1 | 0 | 6.9 | 86.7 | 36 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 26 | 85 | 3 | 2 | 2 | 1 | 0.5 | 0 | 1 | 0.3 | 100.0 |
+| 2013 | Buffalo | 25 | 85 | 16 | 13 | 11 | 130 | 11.8 | 0 | 36 | 8.1 | 84.6 |
+| Career |  |  |  | 19 | 15 | 13 | 131 | 10.1 | 0 | 36 | 6.9 | 86.7 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 25 | 85 | 4 | 4 | 4 | 61 | 15.2 | 0 | 15.2 | 100.0 | 43 | 0 | 0 |
-| **Career** |  |  |  | 4 | 4 | 4 | 61 | 15.2 | 0 | 15.2 | 100.0 | 43 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 25 | 85 | 4 | 4 | 4 | 61 | 15.2 | 0 | 43 | 15.2 | 100.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by New England in the fifth round |
+
+<!-- player-page -->

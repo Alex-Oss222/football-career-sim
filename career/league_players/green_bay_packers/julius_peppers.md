@@ -1,16 +1,29 @@
 # Julius Peppers
 
-![Julius Peppers career card](assets/julius_peppers.svg)
+**Green Bay Packers · Defensive end · No. 56 · Age 34 · Last game October 2, 2014**
 
-## Career stats
+6' 7", 287 lb · Born January 18, 1980 · North Carolina · Drafted in 2002, first round, by Carolina
+
+As of October 2, 2014, after Week 5.
+
+![Julius Peppers](https://commons.wikimedia.org/wiki/Special:FilePath/Julius_Peppers_%28cropped%29.JPG?width=500)
+
+*Photo: United States Marine Corps/Sgt. D.R. Cotton, Public domain ([source](https://commons.wikimedia.org/wiki/File:Julius_Peppers_(cropped).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Chicago Bears | 33 | 90 | 16 | 65 | 2 | 2 | 0 | 2 | 0 | 0 | 5 | 4.1 | 38 |
-| 2014 | Green Bay Packers | 34 | 56 | 5 | 23 | 5 | 2 | 0 | 2 | 2 | 1 | 9 | 4.6 | 16 |
-| **Career** |  |  |  | 21 | 88 | 7 | 4 | 0 | 4 | 2 | 1 | 14 | 4.2 | 54 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 34 | 56 | 5 | 23 | 16 | 7 | 2 | 5 | 9 |
+| 2013 | Chicago | 33 | 90 | 16 | 65 | 38 | 27 | 2 | 2 | 5 |
+| Career |  |  |  | 21 | 88 | 54 | 34 | 4 | 7 | 14 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 34 | 56 | 0 | 0 | 2 | 2 | 1 | 0 |
+| 2013 | Chicago | 33 | 90 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2002 | Drafted by Carolina in the first round |
+
+<!-- player-page -->

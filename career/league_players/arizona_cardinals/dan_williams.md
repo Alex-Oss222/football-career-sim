@@ -1,16 +1,29 @@
 # Dan Williams
 
-![Dan Williams career card](assets/dan_williams.svg)
+**Arizona Cardinals · Nose tackle · No. 92 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 327 lb · Born June 1, 1987 · Tennessee · Drafted in 2010, first round, by Arizona
+
+As of October 5, 2014, after Week 5.
+
+![Dan Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Dan_Williams_%28defensive_tackle%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Dan_Williams_(defensive_tackle).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Arizona Cardinals | 26 | 92 | 16 | 56 | 4 | 3 | 0 | 2 | 0 | 0 | 8 | 3.5 | 35 |
-| 2014 | Arizona Cardinals | 27 | 92 | 4 | 16 | 2 | 2 | 0 | 1 | 0 | 0 | 3 | 4.0 | 12 |
-| **Career** |  |  |  | 20 | 72 | 6 | 5 | 0 | 3 | 0 | 0 | 11 | 3.6 | 47 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Arizona | 27 | 92 | 4 | 16 | 12 | 4 | 2 | 2 | 3 |
+| 2013 | Arizona | 26 | 92 | 16 | 56 | 35 | 21 | 3 | 4 | 8 |
+| Career |  |  |  | 20 | 72 | 47 | 25 | 5 | 6 | 11 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Arizona | 27 | 92 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | Arizona | 26 | 92 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Arizona Cardinals players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Arizona in the first round |
+
+<!-- player-page -->

@@ -1,28 +1,51 @@
 # Kevin Ogletree
 
-![Kevin Ogletree career card](assets/kevin_ogletree.svg)
+**Detroit Lions · Wide receiver · No. 11 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 195 lb · Born August 5, 1987 · Virginia
+
+As of October 5, 2014, after Week 5.
+
+![Kevin Ogletree](https://commons.wikimedia.org/wiki/Special:FilePath/Kevin_Ogletree.JPG?width=500)
+
+*Photo: Bigcats lair ( talk ), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Kevin_Ogletree.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 26 | N/A | 16 | 65 | 48 | 457 | 9.5 | 4 | 28.6 | 73.8 | 31 | 2 | 0 |
-| 2014 | Detroit Lions | 27 | 11 | 4 | 17 | 12 | 156 | 13.0 | 1 | 39.0 | 70.6 | 32 | 4 | 0 |
-| **Career** |  |  |  | 20 | 82 | 60 | 613 | 10.2 | 5 | 30.6 | 73.2 | 32 | 6 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 27 | 11 | 4 | 17 | 12 | 156 | 13.0 | 1 | 32 | 39.0 | 70.6 |
+| 2013 | Tampa Bay | 26 | N/A | 16 | 65 | 48 | 457 | 9.5 | 4 | 31 | 28.6 | 73.8 |
+| Career |  |  |  | 20 | 82 | 60 | 613 | 10.2 | 5 | 32 | 30.6 | 73.2 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 27 | 11 | 1 | 4 | 0 | 0 | 0 |
+| 2013 | Tampa Bay | 26 | N/A | 2 | 2 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 27 | 11 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Tampa Bay | 26 | N/A | 3 | 67 | 22.3 | 1 | 5 | 5.0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 26 | N/A | 1 | 3 | 3 | 30 | 10.0 | 0 | 30.0 | 100.0 | 20 | 0 | 0 |
-| **Career** |  |  |  | 1 | 3 | 3 | 30 | 10.0 | 0 | 30.0 | 100.0 | 20 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 26 | N/A | 1 | 3 | 3 | 30 | 10.0 | 0 | 20 | 30.0 | 100.0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 26 | N/A | 0 | 0 | N/A | 1 | 0 | 0.0 |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).
+<!-- player-page -->

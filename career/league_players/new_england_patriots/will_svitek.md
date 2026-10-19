@@ -1,15 +1,18 @@
 # Will Svitek
 
-![Will Svitek career card](assets/will_svitek.svg)
+**New England Patriots · Offensive tackle · Age 31 · Last game December 29, 2013**
 
-## Career stats
+6' 6", 310 lb · Born January 8, 1982 · Stanford · Drafted in 2005, sixth round, by Kansas City
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 31 | 74 | 5 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 5 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New England | 31 | 74 | 5 | N/A | N/A | 1 | N/A |
 
 ### Playoffs
 
@@ -17,8 +20,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All New England Patriots players](README.md).
+| Date | Transaction |
+|---|---|
+| 2005 | Drafted by Kansas City in the sixth round |
+
+<!-- player-page -->

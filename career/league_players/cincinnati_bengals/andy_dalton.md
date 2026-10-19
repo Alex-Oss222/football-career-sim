@@ -1,16 +1,29 @@
 # Andy Dalton
 
-![Andy Dalton career card](assets/andy_dalton.svg)
+**Cincinnati Bengals · Quarterback · No. 14 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 220 lb · Born October 29, 1987 · TCU · Drafted in 2011, second round, by Cincinnati
+
+As of October 5, 2014, after Week 5.
+
+![Andy Dalton](https://commons.wikimedia.org/wiki/Special:FilePath/Andy_Dalton_pass%28CROP%29.jpg?width=500)
+
+*Photo: Navin75, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Andy_Dalton_pass(CROP).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cincinnati Bengals | 25 | 14 | 16 | 388-619 | 62.7 | 4,370 | 28 | 15 | 7.1 | 88.7 | 273.1 | 208 | 1 |
-| 2014 | Cincinnati Bengals | 26 | 14 | 4 | 87-149 | 58.4 | 1,046 | 2 | 6 | 7.0 | 67.7 | 261.5 | 39 | 3 |
-| **Career** |  |  |  | 20 | 475-768 | 61.8 | 5,416 | 30 | 21 | 7.1 | 84.6 | 270.8 | 247 | 4 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cincinnati | 26 | 14 | 4 | 87 | 149 | 58.4 | 1,046 | 7.0 | 261.5 | 2 | 6 | 67.7 |
+| 2013 | Cincinnati | 25 | 14 | 16 | 388 | 619 | 62.7 | 4,370 | 7.1 | 273.1 | 28 | 15 | 88.7 |
+| Career |  |  |  | 20 | 475 | 768 | 61.8 | 5,416 | 7.1 | 270.8 | 30 | 21 | 84.6 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cincinnati | 26 | 14 | 11 | 70 | 8 | 39 | 3 | 1 | 1 |
+| 2013 | Cincinnati | 25 | 14 | 34 | 216 | 49 | 208 | 1 | 1 | 1 |
 
 ### Playoffs
 
@@ -23,6 +36,10 @@ No playoff games on record.
 - AP Second-Team All-Pro (2013, QB)
 - Pro Bowl selection (2013, QB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cincinnati Bengals players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Cincinnati in the second round |
+
+<!-- player-page -->

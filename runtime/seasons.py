@@ -226,6 +226,22 @@ class SeasonPaths:
         return games
 
 
+def page_link(year, relative, levels, root=ROOT):
+    """A link to a season record written from a page ``levels`` folders below career/ (for
+    example 2 from career/YEAR/stats/): up to career/, then the record's path there, placed by
+    the folder map. Page text that names another season's record links through this rather
+    than writing the season's folder or year itself (stored-facts rule 2)."""
+    target = SeasonPaths(year, root).record(relative)
+    return "/".join([".."] * levels + [target.relative_to(Path(root).resolve() / "career").as_posix()])
+
+
+def data_link(year, relative, levels, root=ROOT):
+    """A link to a season's data-area file written from a page ``levels`` folders below the
+    repository root: up to the root, then the file's path in the data area."""
+    target = SeasonPaths(year, root).record(relative)
+    return "/".join([".."] * levels + [target.relative_to(Path(root).resolve()).as_posix()])
+
+
 def _slug(team):
     return re.sub(r'[^a-z0-9]+', '-', team.lower()).strip('-')
 

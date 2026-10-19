@@ -1,29 +1,49 @@
 # Curtis Lofton
 
-![Curtis Lofton career card](assets/curtis_lofton.svg)
+**New Orleans Saints · Inside linebacker · No. 50 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 241 lb · Born June 9, 1986 · Oklahoma · Drafted in 2008, second round, by Atlanta
+
+As of October 5, 2014, after Week 5.
+
+![Curtis Lofton](https://commons.wikimedia.org/wiki/Special:FilePath/Curtis_Lofton_2015.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Curtis_Lofton_2015.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 27 | 50 | 16 | 157 | 3 | 9 | 0 | 10 | 3 | 3 | 11 | 9.8 | 111 |
-| 2014 | New Orleans Saints | 28 | 50 | 5 | 42 | 2 | 3 | 1 | 2 | 1 | 1 | 6 | 8.4 | 24 |
-| **Career** |  |  |  | 21 | 199 | 5 | 12 | 1 | 12 | 4 | 4 | 17 | 9.5 | 135 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New Orleans | 28 | 50 | 5 | 42 | 24 | 18 | 3 | 2 | 6 |
+| 2013 | New Orleans | 27 | 50 | 16 | 157 | 111 | 46 | 9 | 3 | 11 |
+| Career |  |  |  | 21 | 199 | 135 | 64 | 12 | 5 | 17 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New Orleans | 28 | 50 | 1 | 10 | 2 | 1 | 1 | 0 |
+| 2013 | New Orleans | 27 | 50 | 0 | 0 | 10 | 3 | 3 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 27 | 50 | 1 | 14 | 0 | 0 | 0 | 0 | 2 | 2 | 2 | 14.0 | 10 |
-| **Career** |  |  |  | 1 | 14 | 0 | 0 | 0 | 0 | 2 | 2 | 2 | 14.0 | 10 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 27 | 50 | 1 | 14 | 10 | 4 | 0 | 0 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 27 | 50 | 0 | 0 | 0 | 2 | 2 | N/A |
 
 ## Awards
 
 - NFC Defensive Player of the Week (2013, Week 14)
 - Pro Bowl selection (2013, ILB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New Orleans Saints players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Atlanta in the second round |
+
+<!-- player-page -->

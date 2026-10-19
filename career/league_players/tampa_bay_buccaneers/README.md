@@ -1,11 +1,13 @@
 # Tampa Bay Buccaneers players
 
-NFC South · Players whose latest game on record was with the Tampa Bay Buccaneers. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+NFC South. The players whose latest game on record was with the Tampa Bay Buccaneers. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Josh Freeman](josh_freeman.md) | QB | 0 | 16 |
 | 12 | [Josh McCown](josh_mccown.md) | QB | 5 | 16 |
 | 8 | [Mike Glennon](mike_glennon.md) | QB | 5 | 16 |
@@ -14,7 +16,7 @@ NFC South · Players whose latest game on record was with the Tampa Bay Buccanee
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 43 | [Bobby Rainey](bobby_rainey.md) | RB | 5 | 16 |
 | N/A | [Brian Leonard](brian_leonard.md) | RB | 0 | 16 |
 | 22 | [Doug Martin](doug_martin.md) | RB | 5 | 16 |
@@ -24,7 +26,7 @@ NFC South · Players whose latest game on record was with the Tampa Bay Buccanee
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 80 | [Chris Owusu](chris_owusu.md) | WR | 4 | 0 |
 | N/A | [Eric Page](eric_page.md) | WR | 0 | 16 |
 | 13 | [Mike Evans](mike_evans.md) | WR | 5 | 0 |
@@ -36,7 +38,7 @@ NFC South · Players whose latest game on record was with the Tampa Bay Buccanee
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 87 | [Austin Seferian-Jenkins](austin_seferian_jenkins.md) | TE | 5 | 0 |
 | 82 | [Brandon Myers](brandon_myers.md) | TE | 5 | 16 |
 | 88 | [Luke Stocker](luke_stocker.md) | TE | 5 | 16 |
@@ -46,7 +48,7 @@ NFC South · Players whose latest game on record was with the Tampa Bay Buccanee
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 73 | [Anthony Collins](anthony_collins.md) | T | 5 | 16 |
 | 69 | [Demar Dotson](demar_dotson.md) | T | 5 | 16 |
 | 62 | [Evan Smith](evan_smith.md) | C | 5 | 16 |
@@ -62,7 +64,7 @@ NFC South · Players whose latest game on record was with the Tampa Bay Buccanee
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 94 | [Adrian Clayborn](adrian_clayborn.md) | DE | 5 | 16 |
 | 97 | [Akeem Spence](akeem_spence.md) | DT | 5 | 16 |
 | 98 | [Clinton McDonald](clinton_mcdonald.md) | DT | 5 | 0 |
@@ -77,7 +79,7 @@ NFC South · Players whose latest game on record was with the Tampa Bay Buccanee
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 50 | [Dane Fletcher](dane_fletcher.md) | MLB | 5 | 16 |
 | 51 | [Danny Lansanah](danny_lansanah.md) | OLB | 5 | 0 |
 | N/A | [Dekoda Watson](dekoda_watson.md) | OLB | 0 | 16 |
@@ -90,7 +92,7 @@ NFC South · Players whose latest game on record was with the Tampa Bay Buccanee
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Ahmad Black](ahmad_black.md) | FS | 0 | 16 |
 | 30 | [Bradley McDougald](bradley_mcdougald.md) | SS | 4 | 2 |
 | 38 | [Dashon Goldson](dashon_goldson.md) | FS | 2 | 16 |
@@ -105,19 +107,21 @@ NFC South · Players whose latest game on record was with the Tampa Bay Buccanee
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 7 | [Patrick Murray](patrick_murray.md) | K | 5 | 0 |
 | N/A | [Rian Lindell](rian_lindell.md) | K | 0 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 9 | [Michael Koenen](michael_koenen.md) | P | 5 | 15 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 48 | [Andrew DePaola](andrew_depaola.md) | LS | 5 | 0 |
 | N/A | [Andrew Economos](andrew_economos.md) | LS | 0 | 16 |
+
+<!-- player-index -->

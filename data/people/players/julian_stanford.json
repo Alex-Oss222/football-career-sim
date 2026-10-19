@@ -1,0 +1,301 @@
+{
+ "schema_version": 1,
+ "name": "Julian Stanford",
+ "gsis_id": "00-0029061",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/julian_stanford.md"
+  },
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-03-31",
+   "date_as_written": "March 31, 2014 starting evaluation",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Starting staff view; exact theoretical personnel grades",
+   "position": "LB",
+   "age_as_written": "23",
+   "identity": "A mobile reserve linebacker who can cover space and take a defined replacement assignment. I see limited block destruction and coverage detail as the barriers to a larger base role.",
+   "previous_profile": "[2013 baseline](career/2013/player_profiles/julian_stanford.md)",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Run diagnosis",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Fit discipline",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Block destruction",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Range",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Tackling",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Zone coverage",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Man coverage",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Blitz / pressure",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Communication",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Pursuit angles",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Run diagnosis",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Fit discipline",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Block destruction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Range",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Tackling",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Zone coverage",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Man coverage",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Blitz / pressure",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Communication",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Pursuit angles",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards, not measured 2014 league ranks.",
+   "read": "A mobile reserve linebacker who can cover space and take a defined replacement assignment. I see limited block destruction and coverage detail as the barriers to a larger base role.",
+   "read_sources": "Source: [2013 profile](career/2013/player_profiles/julian_stanford.md) and its recorded practice/game sources.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "2013 baseline",
+     "current": "Starting 2014 view",
+     "change": "Retained",
+     "reason": "No new individual football evidence establishing change"
+    }
+   ],
+   "support": "A mobile reserve linebacker who can cover space and take a defined replacement assignment. I see limited block destruction and coverage detail as the barriers to a larger base role.\n\n[2013 profile](career/2013/player_profiles/julian_stanford.md) and its recorded practice/game sources.",
+   "historical_comparison": "The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.",
+   "play_style": "A mobile reserve linebacker who can cover space and take a defined replacement assignment. I see limited block destruction and coverage detail as the barriers to a larger base role.",
+   "best_traits": [
+    "Range: 5.5 /10.",
+    "Pursuit angles: 5.0 /10.",
+    "Tackling: 4.5 /10."
+   ],
+   "main_weaknesses": [
+    "Man coverage: 3.5 /10.",
+    "Run diagnosis: 4.0 /10.",
+    "Fit discipline: 4.0 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [2013 profile](career/2013/player_profiles/julian_stanford.md) and its recorded practice/game sources.",
+    "**Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics."
+   ],
+   "one_line": "A mobile reserve linebacker who can cover space and take a defined replacement assignment. I see limited block destruction and coverage detail as the barriers to a larger base role.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Stanford carried the relay with the senior communicators removed. He held a back's wheel leverage once, lost the top once, then retained Bush's correction against Anderson August 1. The matchup remains a question despite the clean relay.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-14",
+     "date_as_written": "September 14, 2014",
+     "setting": "Week 2, Jacksonville at Washington",
+     "text": "Thirty-three defensive snaps as the third linebacker with two sacks of Griffin, for 4 on third-and-6 in the second quarter and for 10 on second-and-3 in the third, both over Trent Williams's slot and both ending a possession in a punt from inside the Washington 20; seven tackles, including the shared third-and-1 stop of Helu in the fourth quarter, a pass defended on the first throw of Washington's two-minute drive and two pressures. The play-by-play records the slot and not the rush path, so the lane and the fit behind each sack are Crennel's film items. A minor upper-extremity injury was logged at the end of Washington's opening drive at 5:47 of the first quarter; he was not removed and every statistic above came after it: out, projected return September 19, reassessment September 15 ([medical record](career/2014/Team_Operations/Medical/incidents/julian_stanford_2014-09-14.md)). No role change follows.",
+     "source": "Source: [Week 2 game record](career/2014/Regular_Season/Games/Week_02/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-20",
+     "date_as_written": "September 15 to 20, 2014",
+     "setting": "Reassessed and cleared",
+     "text": "Reassessed Monday with no change and cleared Friday, September 19, his projected date, without being inserted into the Friday practice; he did not practice Wednesday or Thursday and took the Saturday walkthrough in full. Moore carried his package work in the week's practices and Telvin Smith the next linebacker work, nothing charged to either on the recorded reps. He dresses for Indianapolis with his chart place unchanged; whether he takes his package back on Sunday or Moore keeps the rehearsed work is Stone's game-day decision, recorded as open. No finding attaches to the week.",
+     "source": "Source: [Week 3 record](career/2014/Regular_Season/Games/Week_03/output.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-15-to-20-stanford-johnson-hoskins-and-nicks-cleared-harris-and-lowery-reassessed). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-28",
+     "date_as_written": "September 28, 2014",
+     "setting": "Week 4, Jacksonville at San Diego",
+     "text": "Thirty-two defensive snaps as the third linebacker with four tackles: the 6-yard stop of Woodhead at the Jacksonville 13 on San Diego's first touchdown drive, one snap before Woodhead's 19-yard touchdown run, then Woodhead's 8-yard run and Floyd's 8-yard catch on third-and-4 before the half, and a shared tackle on Rivers's 3-yard scramble; a pressure. The play-by-play records the tackle and not the fit, so the run fits on the touchdown drives are Bush's film items. A minor lower-extremity injury was logged at the end of that first touchdown drive at 13:04 of the second quarter; he was not removed and three of the four tackles came after it: limited, with no time lost projected, reassessment September 29 ([medical record](career/2014/Team_Operations/Medical/incidents/julian_stanford_2014-09-28.md)). No role change follows.",
+     "source": "Source: [Week 4 game record](career/2014/Regular_Season/Games/Week_04/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-10-04",
+     "date_as_written": "September 29 to October 4, 2014",
+     "setting": "The limit ended",
+     "text": "Reassessed Monday, September 29, the day his instruction named: no time lost was projected and nothing else was communicated, so the participation limit ended there and he took every session of the Pittsburgh week in full. His package and kicking-game jobs for Pittsburgh stand, which keeps him on the planned 46 under the packet's condition. Nothing charged to him on the recorded reps.",
+     "source": "Source: [Week 5 record](career/2014/Regular_Season/Games/Week_05/output.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/julian_stanford.md at commit 332d70b"
+  }
+ ],
+ "awards": [],
+ "transactions": [
+  {
+   "date": "2012",
+   "kind": "signed",
+   "text": "Signed a three-year contract with Jacksonville as an undrafted rookie",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md"
+  }
+ ]
+}

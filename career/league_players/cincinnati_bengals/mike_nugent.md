@@ -1,16 +1,29 @@
 # Mike Nugent
 
-![Mike Nugent career card](assets/mike_nugent.svg)
+**Cincinnati Bengals · Kicker · No. 2 · Age 32 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 190 lb · Born March 2, 1982 · Ohio State · Drafted in 2005, second round, by the New York Jets
+
+As of October 5, 2014, after Week 5.
+
+![Mike Nugent](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Nugent.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Mike_Nugent.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cincinnati Bengals | 31 | 2 | 16 | 33-41 | 80.5 | N/A | 34-34 | 100.0 | 133 | N/A | N/A | N/A | 8.3 |
-| 2014 | Cincinnati Bengals | 32 | 2 | 4 | 9-11 | 81.8 | 44 | 7-7 | 100.0 | 34 | 6-6 | 0-2 | 3-3 | 8.5 |
-| **Career** |  |  |  | 20 | 42-52 | 80.8 | N/A | 41-41 | 100.0 | 167 | N/A | N/A | N/A | 8.3 |
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cincinnati | 32 | 2 | 4 | 9 | 11 | 81.8 | 44 | 7 | 7 | 100.0 | 34 |
+| 2013 | Cincinnati | 31 | 2 | 16 | 33 | 41 | 80.5 | N/A | 34 | 34 | 100.0 | 133 |
+| Career |  |  |  | 20 | 42 | 52 | 80.8 | N/A | 41 | 41 | 100.0 | 167 |
+
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cincinnati | 32 | 2 | 3-3 | 6-6 | 0-2 |
+| 2013 | Cincinnati | 31 | 2 | N/A | N/A | N/A |
 
 ### Playoffs
 
@@ -20,6 +33,10 @@ No playoff games on record.
 
 - AFC Special Teams Player of the Week (2013, Week 2)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cincinnati Bengals players](README.md).
+| Date | Transaction |
+|---|---|
+| 2005 | Drafted by the New York Jets in the second round |
+
+<!-- player-page -->

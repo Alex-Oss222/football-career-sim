@@ -1,16 +1,24 @@
 # Jaron Brown
 
-![Jaron Brown career card](assets/jaron_brown.svg)
+**Arizona Cardinals · Wide receiver · No. 13 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 205 lb · Born January 8, 1990 · Clemson
+
+As of October 5, 2014, after Week 5.
+
+![Jaron Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Jaron_Brown_2017_%28cropped%29.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jaron_Brown_2017_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Arizona Cardinals | 23 | 13 | 16 | 14 | 12 | 115 | 9.6 | 0 | 7.2 | 85.7 | 26 | 0 | 0 |
-| 2014 | Arizona Cardinals | 24 | 13 | 4 | 1 | 1 | 23 | 23.0 | 1 | 5.8 | 100.0 | 23 | 0 | 0 |
-| **Career** |  |  |  | 20 | 15 | 13 | 138 | 10.6 | 1 | 6.9 | 86.7 | 26 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Arizona | 24 | 13 | 4 | 1 | 1 | 23 | 23.0 | 1 | 23 | 5.8 | 100.0 |
+| 2013 | Arizona | 23 | 13 | 16 | 14 | 12 | 115 | 9.6 | 0 | 26 | 7.2 | 85.7 |
+| Career |  |  |  | 20 | 15 | 13 | 138 | 10.6 | 1 | 26 | 6.9 | 86.7 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Arizona Cardinals players](README.md).
+<!-- player-page -->

@@ -1,28 +1,46 @@
 # Will Johnson
 
-![Will Johnson career card](assets/will_johnson.svg)
+**Pittsburgh Steelers · Fullback · No. 46 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 238 lb · Born November 14, 1988 · West Virginia
+
+As of October 5, 2014, after Week 5.
+
+![Will Johnson](https://commons.wikimedia.org/wiki/Special:FilePath/Will_Johnson_American_Football_46_entering_field_2013.jpg?width=500)
+
+*Photo: I, the copyright holder of this work, hereby publish it under the following license:, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Will_Johnson_American_Football_46_entering_field_2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 24 | 46 | 16 | 12 | 36 | 3.0 | 0 | 2.2 | 12 | 160 | 0 | 24 | 0 |
-| 2014 | Pittsburgh Steelers | 25 | 46 | 5 | 6 | 34 | 5.7 | 0 | 6.8 | 2 | 1 | 0 | 8 | 0 |
-| **Career** |  |  |  | 21 | 18 | 70 | 3.9 | 0 | 3.3 | 14 | 161 | 0 | 32 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 25 | 46 | 5 | 6 | 34 | 5.7 | 0 | 11 | 6.8 |
+| 2013 | Pittsburgh | 24 | 46 | 16 | 12 | 36 | 3.0 | 0 | 6 | 2.2 |
+| Career |  |  |  | 21 | 18 | 70 | 3.9 | 0 | 11 | 3.3 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 25 | 46 | 4 | 2 | 1 | 0.5 | 0 | 0 | 0 |
+| 2013 | Pittsburgh | 24 | 46 | 14 | 12 | 160 | 13.3 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 24 | 46 | 1 | 1 | 10 | 10.0 | 0 | 10.0 | 0 | 0 | 0 | 1 | 0 |
-| **Career** |  |  |  | 1 | 1 | 10 | 10.0 | 0 | 10.0 | 0 | 0 | 0 | 1 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 24 | 46 | 1 | 1 | 10 | 10.0 | 0 | 10 | 10.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 24 | 46 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).
+<!-- player-page -->

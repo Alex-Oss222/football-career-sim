@@ -1,16 +1,24 @@
 # Kelechi Osemele
 
-![Kelechi Osemele career card](assets/kelechi_osemele.svg)
+**Baltimore Ravens · Guard · No. 72 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 330 lb · Born June 24, 1989 · Iowa State · Drafted in 2012, second round, by Baltimore
+
+As of October 5, 2014, after Week 5.
+
+![Kelechi Osemele](https://commons.wikimedia.org/wiki/Special:FilePath/Kelechi_Osemele_Ravens_Stadium_Practice_2013.jpg?width=500)
+
+*Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Kelechi_Osemele_Ravens_Stadium_Practice_2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Baltimore Ravens | 24 | 72 | 16 | N/A | N/A | 7 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Baltimore Ravens | 25 | 72 | 5 | 5 | 331 | 3 | 32 | 0 | 0 | 0 | 0 | 66.2 |
-| **Career** |  |  |  | 21 | N/A | N/A | 10 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 25 | 72 | 5 | 5 | 331 | 3 | 32 |
+| 2013 | Baltimore | 24 | 72 | 16 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Baltimore Ravens players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Baltimore in the second round |
+
+<!-- player-page -->

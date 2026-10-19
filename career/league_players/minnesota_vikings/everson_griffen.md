@@ -1,28 +1,48 @@
 # Everson Griffen
 
-![Everson Griffen career card](assets/everson_griffen.svg)
+**Minnesota Vikings · Defensive end · No. 97 · Age 26 · Last game October 2, 2014**
 
-## Career stats
+6' 3", 273 lb · Born December 22, 1987 · USC · Drafted in 2010, fourth round, by Minnesota
+
+As of October 2, 2014, after Week 5.
+
+![Everson Griffen](https://commons.wikimedia.org/wiki/Special:FilePath/Everson_Griffen.jpg?width=500)
+
+*Photo: Joe Bielawa, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Everson_Griffen.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 25 | 97 | 16 | 18 | 1 | 1 | 0 | 0 | 0 | 0 | 2 | 1.1 | 11 |
-| 2014 | Minnesota Vikings | 26 | 97 | 5 | 9 | 2 | 1 | 0 | 0 | 0 | 1 | 4 | 1.8 | 6 |
-| **Career** |  |  |  | 21 | 27 | 3 | 2 | 0 | 0 | 0 | 1 | 6 | 1.3 | 17 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 26 | 97 | 5 | 9 | 6 | 3 | 1 | 2 | 4 |
+| 2013 | Minnesota | 25 | 97 | 16 | 18 | 11 | 7 | 1 | 1 | 2 |
+| Career |  |  |  | 21 | 27 | 17 | 10 | 2 | 3 | 6 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 26 | 97 | 0 | 0 | 0 | 0 | 1 | 0 |
+| 2013 | Minnesota | 25 | 97 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 25 | 97 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 25 | 97 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 25 | 97 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Minnesota in the fourth round |
+
+<!-- player-page -->

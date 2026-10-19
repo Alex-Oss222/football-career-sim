@@ -1,11 +1,13 @@
 # Atlanta Falcons players
 
-NFC South · Players whose latest game on record was with the Atlanta Falcons. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+NFC South. The players whose latest game on record was with the Atlanta Falcons. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Dominique Davis](dominique_davis.md) | QB | 0 | 16 |
 | 2 | [Matt Ryan](matt_ryan.md) | QB | 5 | 16 |
 | 12 | [Sean Renfree](sean_renfree.md) | QB | 5 | 0 |
@@ -14,7 +16,7 @@ NFC South · Players whose latest game on record was with the Atlanta Falcons. G
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 35 | [Antone Smith](antone_smith.md) | RB | 5 | 16 |
 | N/A | [Bradie Ewing](bradie_ewing.md) | FB | 0 | 16 |
 | 24 | [Devonta Freeman](devonta_freeman.md) | RB | 5 | 0 |
@@ -27,7 +29,7 @@ NFC South · Players whose latest game on record was with the Atlanta Falcons. G
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 15 | [Courtney Roby](courtney_roby.md) | WR | 5 | 0 |
 | N/A | [D.J. Davis](d_j_davis.md) | WR | 0 | 16 |
 | 17 | [Devin Hester](devin_hester.md) | WR | 5 | 16 |
@@ -40,7 +42,7 @@ NFC South · Players whose latest game on record was with the Atlanta Falcons. G
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 86 | [Bear Pascoe](bear_pascoe.md) | TE | 5 | 16 |
 | N/A | [Chase Coffman](chase_coffman.md) | TE | 0 | 16 |
 | 80 | [Levine Toilolo](levine_toilolo.md) | TE | 5 | 16 |
@@ -49,7 +51,7 @@ NFC South · Players whose latest game on record was with the Atlanta Falcons. G
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 68 | [Gabe Carimi](gabe_carimi.md) | T | 1 | 16 |
 | N/A | [Harland Gunn](harland_gunn.md) | G | 0 | 2 |
 | 70 | [Jake Matthews](jake_matthews.md) | T | 5 | 0 |
@@ -66,7 +68,7 @@ NFC South · Players whose latest game on record was with the Atlanta Falcons. G
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 98 | [Cliff Matthews](cliff_matthews.md) | DE | 0 | 16 |
 | 91 | [Corey Peters](corey_peters.md) | DT | 5 | 16 |
 | 95 | [Jonathan Babineaux](jonathan_babineaux.md) | DE | 5 | 16 |
@@ -84,7 +86,7 @@ NFC South · Players whose latest game on record was with the Atlanta Falcons. G
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 59 | [Joplo Bartu](joplo_bartu.md) | LB | 5 | 16 |
 | 52 | [Nathan Stupar](nathan_stupar.md) | LB | 5 | 2 |
 | 55 | [Paul Worrilow](paul_worrilow.md) | LB | 5 | 16 |
@@ -96,7 +98,7 @@ NFC South · Players whose latest game on record was with the Atlanta Falcons. G
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Asante Samuel](asante_samuel.md) | CB | 0 | 16 |
 | 21 | [Desmond Trufant](desmond_trufant.md) | CB | 5 | 16 |
 | 41 | [Dezmen Southward](dezmen_southward.md) | S | 5 | 0 |
@@ -113,17 +115,19 @@ NFC South · Players whose latest game on record was with the Atlanta Falcons. G
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 3 | [Matt Bryant](matt_bryant.md) | K | 5 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 5 | [Matt Bosher](matt_bosher.md) | P | 5 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 47 | [Josh Harris](josh_harris.md) | LS | 5 | 16 |
+
+<!-- player-index -->

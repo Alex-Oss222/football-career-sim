@@ -1,16 +1,24 @@
 # Ryan Harris
 
-![Ryan Harris career card](assets/ryan_harris.svg)
+**Kansas City Chiefs · Offensive tackle · No. 68 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 302 lb · Born March 11, 1985 · Notre Dame · Drafted in 2007, third round, by Denver
+
+As of October 5, 2014, after Week 5.
+
+![Ryan Harris](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Harris_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ryan_Harris_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Houston Texans | 28 | 68 | 16 | N/A | N/A | 6 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Kansas City Chiefs | 29 | 68 | 5 | 0 | 0 | 0 | 17 | 0 | 0 | 0 | 0 | 0.0 |
-| **Career** |  |  |  | 21 | N/A | N/A | 6 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 29 | 68 | 5 | 0 | 0 | 0 | 17 |
+| 2013 | Houston | 28 | 68 | 16 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Denver in the third round |
+
+<!-- player-page -->

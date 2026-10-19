@@ -1,16 +1,29 @@
 # Kavell Conner
 
-![Kavell Conner career card](assets/kavell_conner.svg)
+**San Diego Chargers · Inside linebacker · No. 53 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 245 lb · Born February 23, 1987 · Clemson · Drafted in 2010, seventh round, by Indianapolis
+
+As of October 5, 2014, after Week 5.
+
+![Kavell Conner](https://commons.wikimedia.org/wiki/Special:FilePath/Kavell_Conner.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Kavell_Conner.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 26 | 53 | 15 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.5 | 5 |
-| 2014 | San Diego Chargers | 27 | 53 | 5 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0.4 | 2 |
-| **Career** |  |  |  | 20 | 9 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0.5 | 7 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 27 | 53 | 5 | 2 | 2 | 0 | 0 | 1 | 1 |
+| 2013 | Indianapolis | 26 | 53 | 15 | 7 | 5 | 2 | 0 | 0 | 0 |
+| Career |  |  |  | 20 | 9 | 7 | 2 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 27 | 53 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2013 | Indianapolis | 26 | 53 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Indianapolis in the seventh round |
+
+<!-- player-page -->

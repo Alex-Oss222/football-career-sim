@@ -1,0 +1,197 @@
+{
+ "schema_version": 1,
+ "name": "Matt Feiler",
+ "gsis_id": "00-0031142",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-05-11",
+   "date_as_written": "May 11, 2014 starting evaluation, on acquisition (signed as an undrafted rookie on May 10, 2014)",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Rookie; no NFL standing. Staff view: camp lineman, practice-squad candidate",
+   "position": "G",
+   "age_as_written": "21",
+   "identity": "A small-school lineman with size and weight-room strength (36 bench reps at the combine, tied for second among linemen) and no experience against major-conference rushers.",
+   "previous_profile": "None; 2014 rookie. The starting view rests on pre-draft public evidence only",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "2.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "3.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "4.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Size",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "3.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Level of competition",
+     "grade": "2.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments of the player as he arrives, made from pre-draft public evidence (combine and dated college record described qualitatively, plus pre-draft reports). They grade the current player, not his draft slot, contract or projection, and they use no NFL outcome. Evidence limits are stated below.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "At low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Size",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "At low-end standard"
+    },
+    {
+     "trait": "Level of competition",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "At low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards for the position, not measured 2014 league ranks. No NFL snap exists for this player.",
+   "read": "A small-school lineman with size and weight-room strength (36 bench reps at the combine, tied for second among linemen) and no experience against major-conference rushers.",
+   "read_sources": "Source: Bloomsburg senior, 2013; [combine file](library/2014_combine_results.md#3-late-round-board-prospects-fallbacks-and-the-undrafted-line-list) (bench 36; forty, vertical and shuttle Confirmed); memo watch-list reason.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "None (rookie)",
+     "current": "Starting 2014 view",
+     "change": "New",
+     "reason": "Pre-draft public evidence only; no Jacksonville practice or game evidence yet"
+    }
+   ],
+   "support": "Bloomsburg senior, 2013; [combine file](library/2014_combine_results.md#3-late-round-board-prospects-fallbacks-and-the-undrafted-line-list) (bench 36; forty, vertical and shuttle Confirmed); memo watch-list reason.",
+   "historical_comparison": "No comparator is assigned at arrival. The evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.",
+   "play_style": "A small-school lineman with size and weight-room strength (36 bench reps at the combine, tied for second among linemen) and no experience against major-conference rushers.",
+   "best_traits": [
+    "Size: 6.0 /10.",
+    "Strength / Power: 5.5 /10.",
+    "Athleticism: 4.5 /10."
+   ],
+   "main_weaknesses": [
+    "Level of competition: 2.5 /10.",
+    "Technique: 3.0 /10.",
+    "Technique: 3.0 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** Bloomsburg senior, 2013; [combine file](library/2014_combine_results.md#3-late-round-board-prospects-fallbacks-and-the-undrafted-line-list) (bench 36; forty, vertical and shuttle Confirmed); memo watch-list reason.",
+    "**Evaluation basis:** Theoretical staff judgment from pre-draft public evidence; thin evidence identified above.",
+    "**What remains uncertain:** Division II competition; no Jacksonville scouting report beyond the memo.",
+    "**What would change the assessment:** First reps against NFL speed in OTAs.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates."
+   ],
+   "one_line": "A small-school lineman with size and weight-room strength (36 bench reps at the combine, tied for second among linemen) and no experience against major-conference rushers.",
+   "updates": [],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/matt_feiler.md at commit 332d70b"
+  }
+ ],
+ "awards": [],
+ "transactions": [
+  {
+   "date": "2014-05-10",
+   "kind": "signed",
+   "text": "Signed a three-year contract with Jacksonville as an undrafted rookie",
+   "source": "career/2014/Draft/udfa_signings.md"
+  },
+  {
+   "date": "2014-08-30",
+   "kind": "waived",
+   "text": "Waived by Jacksonville at the reduction to 53",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "date": "2014-08-31",
+   "kind": "practice_squad",
+   "text": "Cleared waivers; signed to the Jacksonville practice squad",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  }
+ ]
+}

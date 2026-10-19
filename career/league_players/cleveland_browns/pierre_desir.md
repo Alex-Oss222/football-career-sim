@@ -1,15 +1,26 @@
 # Pierre Desir
 
-![Pierre Desir career card](assets/pierre_desir.svg)
+**Cleveland Browns · Cornerback · No. 26 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 206 lb · Born September 8, 1990 · Lindenwood
+
+As of October 5, 2014, after Week 5.
+
+![Pierre Desir](https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_Desir_2014_Browns_Training_Camp.jpg?width=500)
+
+*Photo: Erik Daniel Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Pierre_Desir_2014_Browns_Training_Camp.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Cleveland Browns | 23 | 26 | 4 | 5 | 1 | 1 | 7 | 0 | 0 | 0 | 0 | 1.2 | 0 |
-| **Career** |  |  |  | 4 | 5 | 1 | 1 | 7 | 0 | 0 | 0 | 0 | 1.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 23 | 26 | 4 | 5 | 3 | 2 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 23 | 26 | 1 | 7 | 1 | 0 | 0 | 2 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+<!-- player-page -->

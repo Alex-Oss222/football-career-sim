@@ -1,28 +1,48 @@
 # Patrick Chung
 
-![Patrick Chung career card](assets/patrick_chung.svg)
+**New England Patriots · Safety · No. 23 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 210 lb · Born August 19, 1987 · Oregon · Drafted in 2009, second round, by New England
+
+As of October 5, 2014, after Week 5.
+
+![Patrick Chung](https://commons.wikimedia.org/wiki/Special:FilePath/Patrick_chung.jpg?width=500)
+
+*Photo: Original:thebudman623 Derivative:Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Patrick_chung.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 26 | 23 | 5 | 18 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 3.6 | 0 |
-| 2014 | New England Patriots | 27 | 23 | 5 | 7 | 0 | 4 | 0 | 0 | 0 | 0 | 0 | 1.4 | 0 |
-| **Career** |  |  |  | 10 | 25 | 0 | 5 | 0 | 1 | 0 | 0 | 0 | 2.5 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 27 | 23 | 5 | 7 | 4 | 3 | 0 | 0 | 0 |
+| 2013 | Philadelphia | 26 | 23 | 5 | 18 | 11 | 7 | 1 | 0 | 0 |
+| Career |  |  |  | 10 | 25 | 15 | 10 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 27 | 23 | 0 | 0 | 4 | 0 | 0 | 1 |
+| 2013 | Philadelphia | 26 | 23 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 26 | 23 | 3 | 20 | 1 | 2 | 50 | 0 | 0 | 0 | 0 | 6.7 | 0 |
-| **Career** |  |  |  | 3 | 20 | 1 | 2 | 50 | 0 | 0 | 0 | 0 | 6.7 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 26 | 23 | 3 | 20 | 11 | 9 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 26 | 23 | 1 | 50 | 2 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New England Patriots players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by New England in the second round |
+
+<!-- player-page -->

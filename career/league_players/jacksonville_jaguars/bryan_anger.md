@@ -1,30 +1,72 @@
 # Bryan Anger
 
-![Bryan Anger career card](assets/bryan_anger.svg)
+**Jacksonville Jaguars · Punter · No. 19 · Age 25 · Active roster**
 
-## Career stats
+6' 3", 202 lb · Born October 6, 1988 · California · Drafted in 2012, third round, by Jacksonville
+
+As of October 5, 2014, after Week 5.
+
+![Bryan Anger](https://commons.wikimedia.org/wiki/Special:FilePath/Bryan_Anger_punts_at_2008_Emerald_Bowl.JPG?width=500)
+
+*Photo: BrokenSphere, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Bryan_Anger_punts_at_2008_Emerald_Bowl.JPG)).*
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 6.5/10 |
+| Athleticism | 5.5/10 |
+| Speed | 4.5/10 |
+| Strength and power | 7.5/10 |
+| Agility and change of direction | 4.5/10 |
+| Technique | 6.0/10 |
+| Football IQ | 6.0/10 |
+| Gross distance | 7.5/10 |
+| Hang time | 6.5/10 |
+| Net and location control | 6.0/10 |
+| Directional punting | 5.5/10 |
+| Plus-territory control | 5.5/10 |
+| Catch-to-kick operation | 6.0/10 |
+| Pressure consistency | 6.0/10 |
+
+A strong-legged punter whose best weapon is gross distance. I see hang and operation as useful, with directional and plus-territory control less developed than the leg.
+
+*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+
+## Contract
+
+Four-year contract through 2015.
+
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $584,898 | $770,523 |
+| 2015 | $689,855 | $875,480 |
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 24 | 19 | 16 | 69 | 3,116 | 45.2 | 39.5 | 27 | 68 | 5 | 39.1 | 4.3 | 291 |
-| 2014 | Jacksonville Jaguars | 25 | 19 | 5 | 25 | 1,139 | 45.6 | 37.9 | 10 | 62 | 3 | 40.0 | 5.0 | 131 |
-| **Career** |  |  |  | 21 | 94 | 4,255 | 45.3 | 39.1 | 37 | 68 | 8 | 39.4 | 4.5 | 422 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 25 | 19 | 5 | 25 | 1,139 | 45.6 | 37.9 | 10 | 3 | 62 |
+| 2013 | Jacksonville | 24 | 19 | 16 | 69 | 3,116 | 45.2 | 39.5 | 27 | 5 | 68 |
+| With Jacksonville |  |  |  | 21 | 94 | 4,255 | 45.3 | 39.1 | 37 | 8 | 68 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 24 | 19 | 2 | 9 | 404 | 44.9 | 42.3 | 3 | 57 | 0 | 33.3 | 4.5 | 23 |
-| **Career** |  |  |  | 2 | 9 | 404 | 44.9 | 42.3 | 3 | 57 | 0 | 33.3 | 4.5 | 23 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 24 | 19 | 2 | 9 | 404 | 44.9 | 42.3 | 3 | 0 | 57 |
 
 ## Awards
 
-None on record.
+None.
 
-[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/bryan_anger.md)
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Jacksonville in the third round |
+| 2012 | Signed a four-year rookie contract with Jacksonville |
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: his 2014 Jaguars roster listing. [All Jacksonville Jaguars players](README.md).
+<!-- player-page -->

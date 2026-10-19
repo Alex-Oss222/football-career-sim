@@ -12,7 +12,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from runtime.seasons import SeasonPaths
+from runtime.seasons import SeasonPaths, page_link
+from runtime.season_layout import logical_path
 OUT = SeasonPaths(2014, ROOT).record('draft/draft_order.md')
 GROUP_LABEL = {"non-playoff": "Non-playoff", "wild_card": "Lost Wild Card", "divisional": "Lost Divisional",
                "conference": "Lost conference championship", "super_bowl_loser": "Lost Super Bowl",
@@ -58,7 +59,7 @@ def render_source():
          "**Coverage:** all **224 ordinary selections**, with original club and recorded owner shown separately. Compensatory selections are still pending; this is not a final 256-pick execution list."),
         "**Rules and sources:** [verification](../../../library/2014_draft_order_verification.md), [league rules §4](../../../library/2014_league_calendar_and_financial_rules.md#4-2014-draft-order-rules-applied-to-the-branchs-2013-season). Clubs tied on winning percentage rotate within their elimination group: first goes to last, the others move up. No real 2014 order or selection is imported.", "",
         "## Jacksonville's current draft capital", "",
-        "**Corrected Cousins deal:** Jacksonville received Kirk Cousins **and Washington's original 2014 first**; Washington received Jacksonville's original **2014 and 2015 seconds**. Jacksonville retains its own first. [Corrected trade record](../../2013/trades/trades.md).",
+        "**Corrected Cousins deal:** Jacksonville received Kirk Cousins **and Washington's original 2014 first**; Washington received Jacksonville's original **2014 and 2015 seconds**. Jacksonville retains its own first. [Corrected trade record](%s)." % page_link(2013, "trades/trades.md", 2),
         "**Historical exception:** real Washington had previously conveyed its 2014 first to St. Louis. The user expressly corrected this branch asset to Jacksonville after that conflict was disclosed. St. Louis does not also own No. 13; no compensating Rams deal is invented.", "",
         "**Inherited asset restored:** Detroit's original fifth belongs to Jacksonville from the 2012 Mike Thomas trade. [League ownership audit](ownership_audit.md).", "",
         "| Round | Original club | Slot in round | Overall pick | Current owner |",
@@ -143,11 +144,11 @@ def render_source():
 
 def render():
     from runtime.season_layout import rebase_markdown
-    text = rebase_markdown(render_source(), 'career/2014/draft/draft_order.md', OUT.relative_to(ROOT))
-    trade = 'career/2014/Team_Operations/Trades/completed_trades/'
+    text = rebase_markdown(render_source(), logical_path(2014, 'draft/draft_order.md'), OUT.relative_to(ROOT))
+    trade = SeasonPaths(2014, ROOT).record('trades').relative_to(ROOT).as_posix() + '/'
     sources = {
-        80: ('Corrected Cousins trade', 'career/2013/trades/trades.md'),
-        81: ('Ownership audit', 'career/2014/Draft/ownership_audit.md'),
+        80: ('Corrected Cousins trade', SeasonPaths(2013, ROOT).record('trades/trades.md').relative_to(ROOT)),
+        81: ('Ownership audit', SeasonPaths(2014, ROOT).record('draft/ownership_audit.md').relative_to(ROOT)),
         99: ('March 20 Arizona trade', trade+'nwaneri_to_arizona_2014-03-20.md'),
         105: ('March 31 Washington pick trade', trade+'colts_picks_to_washington_2014-03-31.md'),
         106: ('April 7 Allen trade', trade+'allen_to_arizona_2014-04-07.md'),

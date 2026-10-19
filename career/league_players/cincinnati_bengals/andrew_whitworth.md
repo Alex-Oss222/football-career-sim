@@ -1,16 +1,24 @@
 # Andrew Whitworth
 
-![Andrew Whitworth career card](assets/andrew_whitworth.svg)
+**Cincinnati Bengals · Offensive tackle · No. 77 · Age 32 · Last game October 5, 2014**
 
-## Career stats
+6' 7", 330 lb · Born December 12, 1981 · LSU · Drafted in 2006, second round, by Cincinnati
+
+As of October 5, 2014, after Week 5.
+
+![Andrew Whitworth](https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_Whitworth.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Andrew_Whitworth.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cincinnati Bengals | 31 | 77 | 15 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Cincinnati Bengals | 32 | 77 | 4 | 4 | 285 | 5 | 18 | 0 | 0 | 0 | 0 | 71.2 |
-| **Career** |  |  |  | 19 | N/A | N/A | 9 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cincinnati | 32 | 77 | 4 | 4 | 285 | 5 | 18 |
+| 2013 | Cincinnati | 31 | 77 | 15 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 19 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cincinnati Bengals players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Cincinnati in the second round |
+
+<!-- player-page -->

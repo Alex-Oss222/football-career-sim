@@ -1,16 +1,24 @@
 # Roberto Garza
 
-![Roberto Garza career card](assets/roberto_garza.svg)
+**Chicago Bears · Center · No. 63 · Age 35 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 310 lb · Born March 26, 1979 · Texas A&M University-Kingsville · Drafted in 2001, fourth round, by Atlanta
+
+As of October 5, 2014, after Week 5.
+
+![Roberto Garza](https://commons.wikimedia.org/wiki/Special:FilePath/Roberto_Garza.jpg?width=500)
+
+*Photo: Jauerback, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Roberto_Garza.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Chicago Bears | 34 | 63 | 16 | N/A | N/A | 4 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Chicago Bears | 35 | 63 | 5 | 5 | 343 | 1 | 23 | 0 | 0 | 0 | 0 | 68.6 |
-| **Career** |  |  |  | 21 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Chicago | 35 | 63 | 5 | 5 | 343 | 1 | 23 |
+| 2013 | Chicago | 34 | 63 | 16 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).
+| Date | Transaction |
+|---|---|
+| 2001 | Drafted by Atlanta in the fourth round |
+
+<!-- player-page -->

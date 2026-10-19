@@ -1,18 +1,20 @@
 # New England Patriots players
 
-AFC East · Players whose latest game on record was with the New England Patriots. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+AFC East. The players whose latest game on record was with the New England Patriots. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 10 | [Jimmy Garoppolo](jimmy_garoppolo.md) | QB | 5 | 0 |
 | 12 | [Tom Brady](tom_brady.md) | QB | 5 | 16 |
 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 38 | [Brandon Bolden](brandon_bolden.md) | RB | 5 | 16 |
 | 46 | [James Develin](james_develin.md) | RB | 5 | 16 |
 | 28 | [James White](james_white.md) | RB | 5 | 0 |
@@ -23,7 +25,7 @@ AFC East · Players whose latest game on record was with the New England Patriot
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 17 | [Aaron Dobson](aaron_dobson.md) | WR | 5 | 16 |
 | 19 | [Brandon LaFell](brandon_lafell.md) | WR | 5 | 16 |
 | N/A | [Brian Tyms](brian_tyms.md) | WR | 1 | 0 |
@@ -36,7 +38,7 @@ AFC East · Players whose latest game on record was with the New England Patriot
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 47 | [Michael Hoomanawanui](michael_hoomanawanui.md) | TE | 5 | 16 |
 | 87 | [Rob Gronkowski](rob_gronkowski.md) | TE | 4 | 14 |
 | 81 | [Timothy Wright](timothy_wright.md) | TE | 5 | 16 |
@@ -44,7 +46,7 @@ AFC East · Players whose latest game on record was with the New England Patriot
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 66 | [Bryan Stork](bryan_stork.md) | C | 5 | 0 |
 | N/A | [Chris Barker](chris_barker.md) | G | 0 | 2 |
 | 63 | [Dan Connolly](dan_connolly.md) | G | 5 | 16 |
@@ -60,7 +62,7 @@ AFC East · Players whose latest game on record was with the New England Patriot
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 95 | [Chandler Jones](chandler_jones.md) | DE | 5 | 16 |
 | 94 | [Chris Jones](chris_jones.md) | DT | 4 | 0 |
 | N/A | [Jake Bequette](jake_bequette.md) | DE | 0 | 16 |
@@ -75,7 +77,7 @@ AFC East · Players whose latest game on record was with the New England Patriot
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 59 | [Chris White](chris_white.md) | OLB | 1 | 16 |
 | 58 | [Darius Fleming](darius_fleming.md) | LB | 4 | 0 |
 | 74 | [Dominique Easley](dominique_easley.md) | OLB | 5 | 0 |
@@ -87,7 +89,7 @@ AFC East · Players whose latest game on record was with the New England Patriot
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 37 | [Alfonzo Dennard](alfonzo_dennard.md) | CB | 5 | 16 |
 | 24 | [Darrelle Revis](darrelle_revis.md) | CB | 5 | 16 |
 | 32 | [Devin McCourty](devin_mccourty.md) | S | 5 | 15 |
@@ -103,17 +105,19 @@ AFC East · Players whose latest game on record was with the New England Patriot
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 3 | [Stephen Gostkowski](stephen_gostkowski.md) | K | 5 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 6 | [Ryan Allen](ryan_allen.md) | P | 5 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 48 | [Danny Aiken](danny_aiken.md) | LS | 1 | 16 |
+
+<!-- player-index -->

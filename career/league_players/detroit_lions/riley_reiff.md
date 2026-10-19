@@ -1,16 +1,24 @@
 # Riley Reiff
 
-![Riley Reiff career card](assets/riley_reiff.svg)
+**Detroit Lions · Offensive tackle · No. 71 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 313 lb · Born December 1, 1988 · Iowa · Drafted in 2012, first round, by Detroit
+
+As of October 5, 2014, after Week 5.
+
+![Riley Reiff](https://commons.wikimedia.org/wiki/Special:FilePath/Detroit_Lions_offensive_tackle_Riley_Reiff.jpg?width=500)
+
+*Photo: Kevind810, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Detroit_Lions_offensive_tackle_Riley_Reiff.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Detroit Lions | 24 | 71 | 16 | N/A | N/A | 7 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Detroit Lions | 25 | 71 | 2 | 2 | 93 | 5 | 5 | 0 | 0 | 0 | 0 | 46.5 |
-| **Career** |  |  |  | 18 | N/A | N/A | 12 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 25 | 71 | 2 | 2 | 93 | 5 | 5 |
+| 2013 | Detroit | 24 | 71 | 16 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 18 | N/A | N/A | 12 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Detroit in the first round |
+
+<!-- player-page -->

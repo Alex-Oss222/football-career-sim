@@ -1,23 +1,39 @@
 # Cortland Finnegan
 
-![Cortland Finnegan career card](assets/cortland_finnegan.svg)
+**Miami Dolphins · Cornerback · No. 24 · Age 30 · Last game September 28, 2014**
 
-## Career stats
+5' 10", 190 lb · Born February 2, 1984 · Samford · Drafted in 2006, seventh round, by Tennessee
+
+As of September 28, 2014, after Week 4.
+
+![Cortland Finnegan](https://commons.wikimedia.org/wiki/Special:FilePath/Cortland_Finnegan_Pro_Bowl_cropped.jpg?width=500)
+
+*Photo: Michele Moore, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cortland_Finnegan_Pro_Bowl_cropped.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 29 | 31 | 16 | 110 | 3 | 22 | 32 | 4 | 2 | 1 | 1 | 6.9 | 0 |
-| 2014 | Miami Dolphins | 30 | 24 | 4 | 19 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 4.8 | 0 |
-| **Career** |  |  |  | 20 | 129 | 4 | 23 | 32 | 4 | 2 | 1 | 1 | 6.5 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 30 | 24 | 4 | 19 | 9 | 10 | 0 | 0 | 0 |
+| 2013 | St. Louis | 29 | 31 | 16 | 110 | 76 | 34 | 4 | 2 | 2 |
+| Career |  |  |  | 20 | 129 | 85 | 44 | 4 | 2 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 30 | 24 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | St. Louis | 29 | 31 | 3 | 32 | 22 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 29 | 31 | 1 | 3 | 1 | 1 | 8 | 0 | 0 | 0 | 0 | 3.0 | 0 |
-| **Career** |  |  |  | 1 | 3 | 1 | 1 | 8 | 0 | 0 | 0 | 0 | 3.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 29 | 31 | 1 | 3 | 3 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 29 | 31 | 1 | 8 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
@@ -26,6 +42,10 @@
 - AP Second-Team All-Pro (2013, CB)
 - Pro Bowl selection (2013, CB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Miami Dolphins players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Tennessee in the seventh round |
+
+<!-- player-page -->

@@ -1,15 +1,22 @@
 # Zack Martin
 
-![Zack Martin career card](assets/zack_martin.svg)
+**Dallas Cowboys · Guard · No. 70 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 310 lb · Born November 20, 1990 · Notre Dame
+
+As of October 5, 2014, after Week 5.
+
+![Zack Martin](https://commons.wikimedia.org/wiki/Special:FilePath/Zack_Martin.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Zack_Martin.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Dallas Cowboys | 23 | 70 | 5 | 5 | 310 | 2 | 19 | 0 | 0 | 0 | 0 | 62.0 |
-| **Career** |  |  |  | 5 | 5 | 310 | 2 | 19 | 0 | 0 | 0 | 0 | 62.0 |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Dallas | 23 | 70 | 5 | 5 | 310 | 2 | 19 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Dallas Cowboys players](README.md).
+<!-- player-page -->

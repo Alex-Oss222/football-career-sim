@@ -1,28 +1,39 @@
 # Eric Wood
 
-![Eric Wood career card](assets/eric_wood.svg)
+**Buffalo Bills · Center · No. 70 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 310 lb · Born March 18, 1986 · Louisville · Drafted in 2009, first round, by Buffalo
+
+As of October 5, 2014, after Week 5.
+
+![Eric Wood](https://commons.wikimedia.org/wiki/Special:FilePath/Eric_Wood_Bills70.jpg?width=500)
+
+*Photo: J. Van Meter, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Eric_Wood_Bills70.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 27 | 70 | 16 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Buffalo Bills | 28 | 70 | 5 | 5 | 306 | 0 | 27 | 0 | 0 | 0 | 0 | 61.2 |
-| **Career** |  |  |  | 21 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 28 | 70 | 5 | 5 | 306 | 0 | 27 |
+| 2013 | Buffalo | 27 | 70 | 16 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 27 | 70 | 4 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 4 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 27 | 70 | 4 | N/A | N/A | 3 | N/A |
 
 ## Awards
 
 - Pro Bowl selection (2013, C)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Buffalo in the first round |
+
+<!-- player-page -->

@@ -1,28 +1,51 @@
 # Marquise Goodwin
 
-![Marquise Goodwin career card](assets/marquise_goodwin.svg)
+**Buffalo Bills · Wide receiver · No. 88 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 179 lb · Born November 19, 1990 · Texas
+
+As of October 5, 2014, after Week 5.
+
+![Marquise Goodwin](https://commons.wikimedia.org/wiki/Special:FilePath/Marquise_Goodwin_2012_Olympics.jpg?width=500)
+
+*Photo: Tab59 from Düsseldorf, Allemagne, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Marquise_Goodwin_2012_Olympics.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 22 | 88 | 16 | 42 | 28 | 404 | 14.4 | 3 | 25.2 | 66.7 | 84 | 0 | 0 |
-| 2014 | Buffalo Bills | 23 | 88 | 5 | 2 | 1 | 29 | 29.0 | 0 | 5.8 | 50.0 | 29 | 4 | 0 |
-| **Career** |  |  |  | 21 | 44 | 29 | 433 | 14.9 | 3 | 20.6 | 65.9 | 84 | 4 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 23 | 88 | 5 | 2 | 1 | 29 | 29.0 | 0 | 29 | 5.8 | 50.0 |
+| 2013 | Buffalo | 22 | 88 | 16 | 42 | 28 | 404 | 14.4 | 3 | 84 | 25.2 | 66.7 |
+| Career |  |  |  | 21 | 44 | 29 | 433 | 14.9 | 3 | 84 | 20.6 | 65.9 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 23 | 88 | 1 | 4 | 1 | 0 | 0 |
+| 2013 | Buffalo | 22 | 88 | 0 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 23 | 88 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Buffalo | 22 | 88 | 44 | 1,009 | 22.9 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 22 | 88 | 4 | 13 | 10 | 77 | 7.7 | 0 | 19.2 | 76.9 | 16 | 0 | 0 |
-| **Career** |  |  |  | 4 | 13 | 10 | 77 | 7.7 | 0 | 19.2 | 76.9 | 16 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 22 | 88 | 4 | 13 | 10 | 77 | 7.7 | 0 | 16 | 19.2 | 76.9 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 22 | 88 | 7 | 162 | 23.1 | 0 | 0 | N/A |
 
 ## Awards
 
 - AFC Special Teams Player of the Week (2013, Week 17)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+None on record.
+
+<!-- player-page -->

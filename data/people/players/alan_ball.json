@@ -1,0 +1,307 @@
+{
+ "schema_version": 1,
+ "name": "Alan Ball",
+ "gsis_id": "00-0025624",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/alan_ball.md"
+  },
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-09-08",
+   "date_as_written": "September 8, 2014 entry assessment, on acquisition (signed as an unrestricted free agent after a current physical; [signing record](career/2014/Team_Operations/Free_Agency/alan_ball_signing_2014-09-08.md))",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Staff view: a reserve outside corner who held a starting job here in 2013; exact theoretical personnel grades",
+   "position": "CB",
+   "age_as_written": "29",
+   "identity": "A long outside corner who can handle a defined starting coverage job and communicate exchanges. I see a balanced profile, with less playmaking and route anticipation than the better corners.",
+   "previous_profile": "[2013 baseline](career/2013/player_profiles/alan_ball.md)",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Long / recovery speed",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Short-area quickness / hips",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Press coverage",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Off-man coverage",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Zone / pattern match",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Route recognition / eyes",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Ball skills",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Catch-point play",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Tackling / run support",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Block defeat / penalty discipline",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments. The position grades carry the 2013 evaluation unchanged; the six broad categories summarize that view. The overall grade is set half a point below the 2013 season-close view because the staff has no 2014 football on him: he last played November 10, 2013, was out of football from the January exit review until September 8, and arrives with a physical and no camp. That is an evidence limit, not a finding of decline; no 2014 improvement or decline is asserted.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Long / recovery speed",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Short-area quickness / hips",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Press coverage",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Off-man coverage",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Zone / pattern match",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Route recognition / eyes",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Ball skills",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Catch-point play",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Tackling / run support",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Block defeat / penalty discipline",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards, not measured 2014 league ranks.",
+   "read": "He won and held the outside job on camp evidence in 2013; pair-level coverage reads and teams portability add context. No specific individual technique fault is recorded, and injury is not effort evidence.",
+   "read_sources": "Source: [2013 profile](career/2013/player_profiles/alan_ball.md), the [2013 exit review](career/2013/exit_interviews/core/alan_ball.md) and their recorded practice and game sources; [Stone's May 12 conversation](career/2014/Team_Operations/Free_Agency/alan_ball_2014-05-12.md).",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "2013 baseline (season close, January 14, 2014)",
+     "current": "Entry view, September 8, 2014",
+     "change": "Retained; overall held half a point lower",
+     "reason": "No 2014 football on him: out of football from the exit review to September 8, no camp, a physical with no finding; the position grades carry and the gap is an evidence limit"
+    }
+   ],
+   "support": "He started the first nine games of 2013 outside with Grimes and held the job until his Week 10 injury: 41 tackles, nine passes defended, the Week 1 interception, four straight weeks of positive reads for the outside pair, and teams portability in the preseason. No record assigns him a coverage loss, a missed tackle or a technique fault.\n\n[2013 profile](career/2013/player_profiles/alan_ball.md) and its recorded practice/game sources.",
+   "historical_comparison": "The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.",
+   "play_style": "A long outside corner who can handle a defined starting coverage job and communicate exchanges. I see a balanced profile, with less playmaking and route anticipation than the better corners.",
+   "best_traits": [
+    "Long / recovery speed: 6.0 /10.",
+    "Short-area quickness / hips: 6.0 /10.",
+    "Press coverage: 6.0 /10."
+   ],
+   "main_weaknesses": [
+    "Ball skills: 5.0 /10.",
+    "Block defeat / penalty discipline: 5.0 /10.",
+    "Route recognition / eyes: 5.5 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [2013 profile](career/2013/player_profiles/alan_ball.md), the [2013 exit review](career/2013/exit_interviews/core/alan_ball.md) and their recorded practice/game sources.",
+    "**Evaluation basis:** Theoretical staff judgment carried from the 2013 season close, with the layoff since November 2013 identified as the evidence limit.",
+    "**What remains uncertain:** Whether the 2013 player is the player who arrives after ten months without football; the September 8 physical communicated no restriction and measured nothing the record holds.",
+    "**What would change the assessment:** Individually classified reps in the Washington week and after; comparable work against the outside reserves on the chart.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics."
+   ],
+   "one_line": "A long outside corner who can handle a defined starting coverage job and communicate exchanges. I see a balanced profile, with less playmaking and route anticipation than the better corners.",
+   "updates": [
+    {
+     "date": "2014-09-13",
+     "date_as_written": "September 8 to 13, 2014",
+     "setting": "Signing and the Washington week",
+     "text": "Signed September 8 after a physical with no finding; the complete active books issued at signing, with Stone's and Oden's calls that evening on the compressed timeline. He practiced in full Wednesday through Friday in the reserve outside work behind Talib, Verner, Bouye and Butler and on the coverage-unit fits, with nothing charged to him on the recorded reps and nothing that separated him from the reserves ahead of him in four days. Stone listed him last in the group for his first week and he is the Week 2 healthy inactive under the standing rule; expansion is earned through the work, not promised.",
+     "source": "Source: [Week 2 record](career/2014/Regular_Season/Games/Week_02/output.md). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-27",
+     "date_as_written": "September 22 to 27, 2014",
+     "setting": "Active for San Diego",
+     "text": "The outside work in the packet's Talib-out picture Monday and Wednesday before Talib's release, then the reserve outside cornerback behind Talib and Verner. Active for San Diego for the first time since his signing, with Poyer and Butler on their holds and the eighth healthy defensive back; eighth in the Week 4 order. Nothing charged to him on the recorded reps.",
+     "source": "Source: [Week 4 record](career/2014/Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-10-04",
+     "date_as_written": "October 4, 2014",
+     "setting": "The outside reserve",
+     "text": "Stone's Dime decision names him the outside reserve behind Talib and Verner on the game chart, the first corner to replace an outside starter while Bouye stays inside. Full in every session of the Pittsburgh week. Nothing charged to him on the recorded reps. Active for Week 5.",
+     "source": "Source: [Week 5 record](career/2014/Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/alan_ball.md at commit 332d70b"
+  }
+ ],
+ "awards": [],
+ "transactions": [
+  {
+   "date": "2013-03-12",
+   "kind": "signed",
+   "text": "Signed a one-year contract with Jacksonville as a free agent",
+   "source": "career/2013/offseason/free_agency/signings.md"
+  },
+  {
+   "date": "2014-03-11",
+   "kind": "contract_expired",
+   "text": "Contract with Jacksonville expired; became an unrestricted free agent",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md"
+  },
+  {
+   "date": "2014-06-02",
+   "kind": "not_tendered",
+   "text": "No June 1 tender from Jacksonville; Jacksonville retained no rights",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  },
+  {
+   "date": "2014-09-08",
+   "kind": "signed",
+   "text": "Signed a one-year contract with Jacksonville after a current physical",
+   "source": "career/2014/Team_Operations/Free_Agency/alan_ball_signing_2014-09-08.md"
+  }
+ ]
+}

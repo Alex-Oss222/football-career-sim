@@ -1,16 +1,65 @@
 # Paul Posluszny
 
-![Paul Posluszny career card](assets/paul_posluszny.svg)
+**Jacksonville Jaguars · Linebacker · No. 51 · Age 29 · Active roster**
 
-## Career stats
+6' 2", 242 lb · Born October 10, 1984 · Penn State · Drafted in 2007, second round, by Buffalo
+
+As of October 5, 2014, after Week 5.
+
+![Paul Posluszny](https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Posluszny_2014_Pro_Bowl.jpg?width=500)
+
+*Photo: Lance Cpl. Matthew Bragg, Public domain ([source](https://commons.wikimedia.org/wiki/File:Paul_Posluszny_2014_Pro_Bowl.jpg)).*
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 6.5/10 |
+| Athleticism | 5.5/10 |
+| Speed | 5.5/10 |
+| Strength and power | 6.5/10 |
+| Agility and change of direction | 5.0/10 |
+| Technique | 7.0/10 |
+| Football IQ | 7.5/10 |
+| Run diagnosis | 7.5/10 |
+| Fit discipline | 7.0/10 |
+| Block destruction | 6.5/10 |
+| Range | 5.5/10 |
+| Tackling | 7.0/10 |
+| Zone coverage | 5.5/10 |
+| Man coverage | 4.5/10 |
+| Blitz and pressure | 5.0/10 |
+| Communication | 7.5/10 |
+| Pursuit angles | 6.0/10 |
+
+An instinctive middle linebacker who can set fits, communicate the front and finish inside tackles. I see downhill work as stronger than isolated man coverage or recovery range.
+
+*Staff view, March 31, 2014; dated updates through October 4, 2014.*
+
+## Contract
+
+Six-year contract through 2016.
+
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $7,450,000 | $9,500,000 |
+| 2015 | $7,450,000 | $9,500,000 |
+| 2016 | $7,450,000 | $7,500,000 |
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 28 | 51 | 11 | 101 | 3 | 9 | 1 | 8 | 0 | 0 | 6 | 9.2 | 72 |
-| 2014 | Jacksonville Jaguars | 29 | 51 | 5 | 31 | 2 | 2 | 1 | 1 | 0 | 0 | 2 | 6.2 | 20 |
-| **Career** |  |  |  | 16 | 132 | 5 | 11 | 2 | 9 | 0 | 0 | 8 | 8.2 | 92 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 29 | 51 | 5 | 31 | 20 | 11 | 2 | 2 | 2 |
+| 2013 | Jacksonville | 28 | 51 | 11 | 101 | 72 | 29 | 9 | 3 | 6 |
+| With Jacksonville |  |  |  | 16 | 132 | 92 | 40 | 11 | 5 | 8 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 29 | 51 | 1 | 21 | 1 | 0 | 0 | 0 |
+| 2013 | Jacksonville | 28 | 51 | 1 | 13 | 8 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,10 +67,13 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/paul_posluszny.md)
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Buffalo in the second round |
+| 2011 | Signed a six-year contract with Jacksonville |
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: his 2014 Jaguars roster listing. [All Jacksonville Jaguars players](README.md).
+<!-- player-page -->

@@ -1,28 +1,39 @@
 # Craig Stevens
 
-![Craig Stevens career card](assets/craig_stevens.svg)
+**Tennessee Titans · Tight end · No. 88 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 263 lb · Born September 1, 1984 · California · Drafted in 2008, third round, by Tennessee
+
+As of October 5, 2014, after Week 5.
+
+![Craig Stevens](https://commons.wikimedia.org/wiki/Special:FilePath/Craig_Stevens_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Craig_Stevens_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 29 | 88 | 16 | 93 | 61 | 473 | 7.8 | 3 | 29.6 | 65.6 | 30 | 0 | 0 |
-| 2014 | Tennessee Titans | 30 | 88 | 5 | 9 | 7 | 100 | 14.3 | 1 | 20.0 | 77.8 | 25 | 0 | 0 |
-| **Career** |  |  |  | 21 | 102 | 68 | 573 | 8.4 | 4 | 27.3 | 66.7 | 30 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 30 | 88 | 5 | 9 | 7 | 100 | 14.3 | 1 | 25 | 20.0 | 77.8 |
+| 2013 | Tennessee | 29 | 88 | 16 | 93 | 61 | 473 | 7.8 | 3 | 30 | 29.6 | 65.6 |
+| Career |  |  |  | 21 | 102 | 68 | 573 | 8.4 | 4 | 30 | 27.3 | 66.7 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 29 | 88 | 2 | 16 | 12 | 97 | 8.1 | 0 | 48.5 | 75.0 | 23 | 0 | 0 |
-| **Career** |  |  |  | 2 | 16 | 12 | 97 | 8.1 | 0 | 48.5 | 75.0 | 23 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 29 | 88 | 2 | 16 | 12 | 97 | 8.1 | 0 | 23 | 48.5 | 75.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Tennessee in the third round |
+
+<!-- player-page -->

@@ -1,28 +1,39 @@
 # Scott Wells
 
-![Scott Wells career card](assets/scott_wells.svg)
+**St. Louis Rams · Center · No. 63 · Age 33 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 302 lb · Born January 7, 1981 · Tennessee · Drafted in 2004, seventh round, by Green Bay
+
+As of October 5, 2014, after Week 5.
+
+![Scott Wells](https://commons.wikimedia.org/wiki/Special:FilePath/Scottwells2013.jpg?width=500)
+
+*Photo: Johnmaxmena2, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Scottwells2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 32 | 63 | 16 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | St. Louis Rams | 33 | 63 | 4 | 4 | 266 | 2 | 16 | 0 | 0 | 0 | 0 | 66.5 |
-| **Career** |  |  |  | 20 | N/A | N/A | 7 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 33 | 63 | 4 | 4 | 266 | 2 | 16 |
+| 2013 | St. Louis | 32 | 63 | 16 | N/A | N/A | 5 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 7 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 32 | 63 | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 32 | 63 | 1 | N/A | N/A | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+| Date | Transaction |
+|---|---|
+| 2004 | Drafted by Green Bay in the seventh round |
+
+<!-- player-page -->

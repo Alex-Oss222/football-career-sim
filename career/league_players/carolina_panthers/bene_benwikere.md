@@ -1,15 +1,26 @@
 # Bene' Benwikere
 
-![Bene' Benwikere career card](assets/bene_benwikere.svg)
+**Carolina Panthers · Cornerback · No. 25 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 195 lb · Born September 3, 1991 · San Jose State
+
+As of October 5, 2014, after Week 5.
+
+![Bene' Benwikere](https://commons.wikimedia.org/wiki/Special:FilePath/Bene_Benwikere_2012_Military_Bowl.jpg?width=500)
+
+*Photo: David King, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Bene_Benwikere_2012_Military_Bowl.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Carolina Panthers | 23 | 25 | 5 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.8 | 0 |
-| **Career** |  |  |  | 5 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.8 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 23 | 25 | 5 | 9 | 6 | 3 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 23 | 25 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+<!-- player-page -->

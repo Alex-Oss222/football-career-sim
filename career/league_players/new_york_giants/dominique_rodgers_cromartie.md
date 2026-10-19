@@ -1,16 +1,34 @@
 # Dominique Rodgers-Cromartie
 
-![Dominique Rodgers-Cromartie career card](assets/dominique_rodgers_cromartie.svg)
+**New York Giants · Cornerback · No. 21 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 193 lb · Born April 7, 1986 · Tennessee State · Drafted in 2008, first round, by Arizona
+
+As of October 5, 2014, after Week 5.
+
+![Dominique Rodgers-Cromartie](https://commons.wikimedia.org/wiki/Special:FilePath/Dominique_Rodgers-Cromartie.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Dominique_Rodgers-Cromartie.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Denver Broncos | 27 | 45 | 16 | 58 | 1 | 8 | 0 | 1 | 1 | 0 | 0 | 3.6 | 34 |
-| 2014 | New York Giants | 28 | 21 | 5 | 29 | 1 | 5 | 21 | 1 | 0 | 0 | 0 | 5.8 | 0 |
-| **Career** |  |  |  | 21 | 87 | 2 | 13 | 21 | 2 | 1 | 0 | 0 | 4.1 | 34 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 28 | 21 | 5 | 29 | 20 | 9 | 1 | 0 | 1 |
+| 2013 | Denver | 27 | 45 | 16 | 58 | 42 | 16 | 1 | 1 | 1 |
+| Career |  |  |  | 21 | 87 | 62 | 25 | 2 | 1 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 28 | 21 | 1 | 21 | 5 | 0 | 0 | 0 |
+| 2013 | Denver | 27 | 45 | 1 | 0 | 8 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 28 | 21 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Denver | 27 | 45 | 1 | 34 | 34.0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +36,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Arizona in the first round |
+
+<!-- player-page -->

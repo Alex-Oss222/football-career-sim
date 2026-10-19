@@ -1,30 +1,88 @@
 # Jonathan Grimes
 
-![Jonathan Grimes career card](assets/jonathan_grimes.svg)
+**Jacksonville Jaguars · Running back · No. 41 · Age 24 · Active roster**
 
-## Career stats
+5' 10", 209 lb · Born December 21, 1989 · William & Mary · Undrafted
+
+As of October 5, 2014, after Week 5.
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 5.5/10 |
+| Athleticism | 6.0/10 |
+| Speed | 5.5/10 |
+| Strength and power | 5.5/10 |
+| Agility and change of direction | 6.0/10 |
+| Technique | 5.5/10 |
+| Football IQ | 5.5/10 |
+| Vision and decision | 6.0/10 |
+| Burst and acceleration | 6.0/10 |
+| Long speed | 5.5/10 |
+| Cut efficiency and change of direction | 6.0/10 |
+| Contact balance and power | 5.5/10 |
+| Ball security | 5.5/10 |
+| Receiving | 5.5/10 |
+| Route detail | 5.5/10 |
+| Pass protection | 5.0/10 |
+| Short-yardage finishing | 5.5/10 |
+
+A change-of-pace back with useful cuts, receiving utility and enough burst for the core runs. I see a flexible reserve, with less certainty in physical pickups and power finishing.
+
+*Staff view, March 31, 2014; dated updates through September 27, 2014.*
+
+## Contract
+
+Three-year contract through 2014.
+
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | about $570,000 | Not settled |
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 23 | N/A | 16 | 88 | 453 | 5.1 | 4 | 28.3 | 8 | 130 | 1 | 96 | 1 |
-| 2014 | Jacksonville Jaguars | 24 | 41 | 3 | 5 | 13 | 2.6 | 0 | 4.3 | 1 | 20 | 0 | 6 | 0 |
-| **Career** |  |  |  | 19 | 93 | 466 | 5.0 | 4 | 24.5 | 9 | 150 | 1 | 102 | 1 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 24 | 41 | 3 | 5 | 13 | 2.6 | 0 | 5 | 4.3 |
+| 2013 | Jacksonville | 23 | N/A | 16 | 88 | 453 | 5.1 | 4 | 18 | 28.3 |
+| With Jacksonville |  |  |  | 19 | 93 | 466 | 5.0 | 4 | 18 | 24.5 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 24 | 41 | 1 | 1 | 20 | 20.0 | 0 | 0 | 0 |
+| 2013 | Jacksonville | 23 | N/A | 15 | 8 | 130 | 16.2 | 1 | 1 | 1 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 24 | 41 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Jacksonville | 23 | N/A | 2 | 49 | 24.5 | 1 | 19 | 19.0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 23 | N/A | 2 | 3 | 20 | 6.7 | 0 | 10.0 | 1 | 5 | 0 | 4 | 0 |
-| **Career** |  |  |  | 2 | 3 | 20 | 6.7 | 0 | 10.0 | 1 | 5 | 0 | 4 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 23 | N/A | 2 | 3 | 20 | 6.7 | 0 | 10 | 10.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 23 | N/A | 2 | 1 | 5 | 5.0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 23 | N/A | 0 | 0 | N/A | 1 | -2 | -2.0 |
 
 ## Awards
 
-None on record.
+None.
 
-[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/jonathan_grimes.md)
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| 2012 | Signed his rookie contract as an undrafted rookie |
+| December 21, 2012 | Claimed off waivers from Houston by Jacksonville |
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: the number he wore in 2014 with the Houston Texans (Jacksonville has not recorded one). [All Jacksonville Jaguars players](README.md).
+<!-- player-page -->

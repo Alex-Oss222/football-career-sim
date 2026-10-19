@@ -1,0 +1,274 @@
+{
+ "schema_version": 1,
+ "name": "Aqib Talib",
+ "gsis_id": "00-0026160",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-03-31",
+   "date_as_written": "March 31, 2014 starting evaluation",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Starting staff view; exact theoretical personnel grades",
+   "position": "CB",
+   "age_as_written": "28",
+   "identity": "A physical outside corner with strong press and catch-point tools. My starting view is that he can challenge bigger receivers, with technique consistency still important to that matchup value.",
+   "previous_profile": "New Jacksonville player; no prior Jacksonville annual profile",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Long / recovery speed",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Short-area quickness / hips",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Press coverage",
+     "grade": "8.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Off-man coverage",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Zone / pattern match",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Route recognition / eyes",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Ball skills",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Catch-point play",
+     "grade": "8.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Tackling / run support",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Block defeat / penalty discipline",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Long / recovery speed",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Short-area quickness / hips",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Press coverage",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Off-man coverage",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Zone / pattern match",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Route recognition / eyes",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Ball skills",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Catch-point play",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Tackling / run support",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Block defeat / penalty discipline",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards, not measured 2014 league ranks.",
+   "read": "A physical outside corner with strong press and catch-point tools. My starting view is that he can challenge bigger receivers, with technique consistency still important to that matchup value.",
+   "read_sources": "Source: [Current roster and signing history](career/2014/Team_Operations/Team/Roster/roster.md). Initial personnel judgments; no Jacksonville practice or game evaluation is recorded yet.",
+   "change": "New Jacksonville starting assessment. No prior Jacksonville evaluation is invented.",
+   "support": "A physical outside corner with strong press and catch-point tools. My starting view is that he can challenge bigger receivers, with technique consistency still important to that matchup value.\n\n[Current roster and signing history](career/2014/Team_Operations/Team/Roster/roster.md). Initial personnel judgments; no Jacksonville practice or game evaluation is recorded yet.",
+   "historical_comparison": "The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.",
+   "play_style": "A physical outside corner with strong press and catch-point tools. My starting view is that he can challenge bigger receivers, with technique consistency still important to that matchup value.",
+   "best_traits": [
+    "Press coverage: 8.0 /10.",
+    "Catch-point play: 8.0 /10.",
+    "Ball skills: 7.5 /10."
+   ],
+   "main_weaknesses": [
+    "Tackling / run support: 6.0 /10.",
+    "Block defeat / penalty discipline: 6.0 /10.",
+    "Short-area quickness / hips: 6.5 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [Current roster and signing history](career/2014/Team_Operations/Team/Roster/roster.md). Initial personnel judgments; no Jacksonville practice or game evaluation is recorded yet.",
+    "**Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics."
+   ],
+   "one_line": "A physical outside corner with strong press and catch-point tools. My starting view is that he can challenge bigger receivers, with technique consistency still important to that matchup value.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Talib re-routed Nicks on recorded press reps and lost others to Nicks's hands. Both results belong in the evaluation; a mixed practice sample does not determine every coverage matchup.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-21",
+     "date_as_written": "September 21, 2014",
+     "setting": "Week 3, Indianapolis at Jacksonville",
+     "text": "Fifty-eight defensive snaps outside with the interception of Luck's third-and-long throw for Allen at the Jacksonville 23 at 9:14 of the third quarter, returned 1, two snaps after the breakup of the first-down throw for Allen on the same drive; four tackles and three passes defended, the third the breakup of the throw for Moncrief at the end of the third quarter. The play-by-play names him as the tackler on Hilton's 12-yard catch on the opening drive and on three Richardson runs and does not record the coverage on any Indianapolis completion, so the leverage and help rules on Hilton and Wayne have one game's result and no cause attached. A head/neck injury, minor, was logged at the end of Indianapolis's touchdown drive at 8:02 of the fourth quarter; he was removed, the receipt recording Verner as the replacement in his slot by the chart's order with no pause recorded, and he is on an independent medical hold: projected return September 25, reassessment September 22 ([medical record](career/2014/Team_Operations/Medical/incidents/aqib_talib_2014-09-21.md)). Indianapolis scored twice more after he left, 66 yards in eight plays and 85 in nine; the play-by-play does not say who covered Hilton on the 10-yard touchdown or Wayne on the fourth-and-10 40-yarder. No football finding attaches to the hold.",
+     "source": "Source: [Week 3 game record](career/2014/Regular_Season/Games/Week_03/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-27",
+     "date_as_written": "September 22 to 27, 2014",
+     "setting": "Released; back outside",
+     "text": "His independent medical hold was reassessed Monday with no change and released Thursday, September 25, his projected date; Ball took the outside work in the packet's Talib-out picture Monday and Wednesday. Full Thursday and Friday and in the Saturday walkthrough, outside opposite Verner in the Dime and Nickel periods with Bouye at nickel, the packet's Talib-in secondary. Nothing charged to him on the recorded reps. Starts at San Diego by Stone's decision on the clearance; no designation on the Friday report.",
+     "source": "Source: [Week 4 record](career/2014/Regular_Season/Games/Week_04/output.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/aqib_talib.md at commit 332d70b"
+  }
+ ],
+ "awards": [],
+ "transactions": [
+  {
+   "date": "2014-03-11",
+   "kind": "signed",
+   "text": "Signed a five-year contract with Jacksonville (2014 to 2018)",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  }
+ ]
+}

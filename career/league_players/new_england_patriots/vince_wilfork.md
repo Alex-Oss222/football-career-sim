@@ -1,16 +1,29 @@
 # Vince Wilfork
 
-![Vince Wilfork career card](assets/vince_wilfork.svg)
+**New England Patriots · Defensive tackle · No. 75 · Age 32 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 325 lb · Born November 4, 1981 · Miami · Drafted in 2004, first round, by New England
+
+As of October 5, 2014, after Week 5.
+
+![Vince Wilfork](https://commons.wikimedia.org/wiki/Special:FilePath/Vince-Wilfork_8-28-09_Patriots-vs-Redskins.jpg?width=500)
+
+*Photo: Keith Allison from Baltimore, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Vince-Wilfork_8-28-09_Patriots-vs-Redskins.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 31 | 75 | 16 | 58 | 4 | 6 | 0 | 4 | 1 | 1 | 10 | 3.6 | 44 |
-| 2014 | New England Patriots | 32 | 75 | 5 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 1.2 | 3 |
-| **Career** |  |  |  | 21 | 64 | 4 | 6 | 0 | 4 | 1 | 1 | 14 | 3.0 | 47 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 32 | 75 | 5 | 6 | 3 | 3 | 0 | 0 | 4 |
+| 2013 | New England | 31 | 75 | 16 | 58 | 44 | 14 | 6 | 4 | 10 |
+| Career |  |  |  | 21 | 64 | 47 | 17 | 6 | 4 | 14 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 32 | 75 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | New England | 31 | 75 | 0 | 0 | 4 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New England Patriots players](README.md).
+| Date | Transaction |
+|---|---|
+| 2004 | Drafted by New England in the first round |
+
+<!-- player-page -->

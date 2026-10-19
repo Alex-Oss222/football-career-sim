@@ -1,16 +1,24 @@
 # Mike McGlynn
 
-![Mike McGlynn career card](assets/mike_mcglynn.svg)
+**Kansas City Chiefs · Guard · No. 75 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 325 lb · Born March 8, 1985 · Pittsburgh · Drafted in 2008, fourth round, by Philadelphia
+
+As of October 5, 2014, after Week 5.
+
+![Mike McGlynn](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_McGlynn.jpg?width=500)
+
+*Photo: Keith Lovett, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Mike_McGlynn.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 28 | 75 | 16 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Kansas City Chiefs | 29 | 75 | 5 | 5 | 308 | 3 | 17 | 0 | 0 | 0 | 0 | 61.6 |
-| **Career** |  |  |  | 21 | N/A | N/A | 6 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 29 | 75 | 5 | 5 | 308 | 3 | 17 |
+| 2013 | Indianapolis | 28 | 75 | 16 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Philadelphia in the fourth round |
+
+<!-- player-page -->

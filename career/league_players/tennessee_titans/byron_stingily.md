@@ -1,15 +1,22 @@
 # Byron Stingily
 
-![Byron Stingily career card](assets/byron_stingily.svg)
+**Tennessee Titans · Offensive tackle · No. 68 · Age 25 · Last game December 29, 2013**
 
-## Career stats
+6' 5", 318 lb · Born September 9, 1988 · Louisville; Joliet Junior College · Drafted in 2011, sixth round, by Tennessee
+
+As of December 29, 2013, after Week 17.
+
+![Byron Stingily](https://commons.wikimedia.org/wiki/Special:FilePath/Byron_Stingily_%28American_football%29.jpg?width=500)
+
+*Photo: Tom Hanny from Kinnelon, USA, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Byron_Stingily_(American_football).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 24 | 68 | 4 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 4 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 24 | 68 | 4 | N/A | N/A | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Tennessee in the sixth round |
+
+<!-- player-page -->

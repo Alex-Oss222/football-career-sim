@@ -1,28 +1,48 @@
 # Brandon Graham
 
-![Brandon Graham career card](assets/brandon_graham.svg)
+**Philadelphia Eagles · Outside linebacker · No. 55 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 265 lb · Born April 3, 1988 · Michigan · Drafted in 2010, first round, by Philadelphia
+
+As of October 5, 2014, after Week 5.
+
+![Brandon Graham](https://commons.wikimedia.org/wiki/Special:FilePath/20090823_Brandon_Graham.jpg?width=500)
+
+*Photo: flickr user The Wright 6 (cropped from source by User:TonyTheTiger ), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:20090823_Brandon_Graham.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 25 | 55 | 16 | 38 | 4 | 6 | 0 | 1 | 1 | 1 | 7 | 2.4 | 29 |
-| 2014 | Philadelphia Eagles | 26 | 55 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 21 | 38 | 4 | 6 | 0 | 1 | 1 | 1 | 7 | 1.8 | 29 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 26 | 55 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Philadelphia | 25 | 55 | 16 | 38 | 29 | 9 | 6 | 4 | 7 |
+| Career |  |  |  | 21 | 38 | 29 | 9 | 6 | 4 | 7 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 26 | 55 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Philadelphia | 25 | 55 | 0 | 0 | 1 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 25 | 55 | 3 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2.3 | 4 |
-| **Career** |  |  |  | 3 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2.3 | 4 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 25 | 55 | 3 | 7 | 4 | 3 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 25 | 55 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Philadelphia Eagles players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Philadelphia in the first round |
+
+<!-- player-page -->

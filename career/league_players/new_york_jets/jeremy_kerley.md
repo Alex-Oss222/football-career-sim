@@ -1,28 +1,53 @@
 # Jeremy Kerley
 
-![Jeremy Kerley career card](assets/jeremy_kerley.svg)
+**New York Jets · Wide receiver · No. 11 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 188 lb · Born November 8, 1988 · TCU · Drafted in 2011, fifth round, by the New York Jets
+
+As of October 5, 2014, after Week 5.
+
+![Jeremy Kerley](https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy_Kerley.jpg?width=500)
+
+*Photo: Dirk, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jeremy_Kerley.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 24 | 11 | 16 | 61 | 35 | 243 | 6.9 | 1 | 15.2 | 57.4 | 33 | 24 | 0 |
-| 2014 | New York Jets | 25 | 11 | 5 | 43 | 25 | 211 | 8.4 | 2 | 42.2 | 58.1 | 24 | 1 | 2 |
-| **Career** |  |  |  | 21 | 104 | 60 | 454 | 7.6 | 3 | 21.6 | 57.7 | 33 | 25 | 2 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 25 | 11 | 5 | 43 | 25 | 211 | 8.4 | 2 | 24 | 42.2 | 58.1 |
+| 2013 | N.Y. Jets | 24 | 11 | 16 | 61 | 35 | 243 | 6.9 | 1 | 33 | 15.2 | 57.4 |
+| Career |  |  |  | 21 | 104 | 60 | 454 | 7.6 | 3 | 33 | 21.6 | 57.7 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 25 | 11 | 1 | 1 | 0 | 2 | 2 |
+| 2013 | N.Y. Jets | 24 | 11 | 4 | 24 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 25 | 11 | 0 | 0 | N/A | 2 | 55 | 27.5 |
+| 2013 | N.Y. Jets | 24 | 11 | 0 | 0 | N/A | 25 | 253 | 10.1 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 24 | 11 | 1 | 2 | 1 | 6 | 6.0 | 0 | 6.0 | 50.0 | 6 | 0 | 0 |
-| **Career** |  |  |  | 1 | 2 | 1 | 6 | 6.0 | 0 | 6.0 | 50.0 | 6 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Jets | 24 | 11 | 1 | 2 | 1 | 6 | 6.0 | 0 | 6 | 6.0 | 50.0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Jets | 24 | 11 | 0 | 0 | N/A | 1 | 2 | 2.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by the New York Jets in the fifth round |
+
+<!-- player-page -->

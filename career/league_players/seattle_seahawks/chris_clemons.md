@@ -1,15 +1,26 @@
 # Chris Clemons
 
-![Chris Clemons career card](assets/chris_clemons.svg)
+**Seattle Seahawks · Defensive end · Age 32 · Last game December 29, 2013**
 
-## Career stats
+6' 3", 254 lb · Born October 30, 1981 · Georgia
+
+As of December 29, 2013, after Week 17.
+
+![Chris Clemons](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Clemons_with_Eagles_2009.jpg?width=500)
+
+*Photo: Ed yourdon, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Chris_Clemons_with_Eagles_2009.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Seattle Seahawks | 31 | 91 | 15 | 14 | 0 | 2 | 0 | 1 | 0 | 0 | 6 | 0.9 | 6 |
-| **Career** |  |  |  | 15 | 14 | 0 | 2 | 0 | 1 | 0 | 0 | 6 | 0.9 | 6 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Seattle | 31 | 91 | 15 | 14 | 6 | 8 | 2 | 0 | 6 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Seattle | 31 | 91 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Seattle Seahawks players](README.md).
+<!-- player-page -->

@@ -1,16 +1,34 @@
 # Matt Slater
 
-![Matt Slater career card](assets/matt_slater.svg)
+**New England Patriots · Wide receiver · No. 18 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 210 lb · Born September 9, 1985 · UCLA · Drafted in 2008, fifth round, by New England
+
+As of October 5, 2014, after Week 5.
+
+![Matt Slater](https://commons.wikimedia.org/wiki/Special:FilePath/Matthew_Slater.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Matthew_Slater.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 27 | 18 | 16 | 20 | 13 | 150 | 11.5 | 0 | 9.4 | 65.0 | 36 | 8 | 0 |
-| 2014 | New England Patriots | 28 | 18 | 5 | 1 | 1 | 49 | 49.0 | 0 | 9.8 | 100.0 | 49 | 0 | 0 |
-| **Career** |  |  |  | 21 | 21 | 14 | 199 | 14.2 | 0 | 9.5 | 66.7 | 49 | 8 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 28 | 18 | 5 | 1 | 1 | 49 | 49.0 | 0 | 49 | 9.8 | 100.0 |
+| 2013 | New England | 27 | 18 | 16 | 20 | 13 | 150 | 11.5 | 0 | 36 | 9.4 | 65.0 |
+| Career |  |  |  | 21 | 21 | 14 | 199 | 14.2 | 0 | 49 | 9.5 | 66.7 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 28 | 18 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | New England | 27 | 18 | 1 | 8 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 28 | 18 | 13 | 264 | 20.3 | 0 | 0 | N/A |
+| 2013 | New England | 27 | 18 | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +36,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New England Patriots players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by New England in the fifth round |
+
+<!-- player-page -->

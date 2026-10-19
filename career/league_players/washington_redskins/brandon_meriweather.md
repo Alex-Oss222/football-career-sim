@@ -1,15 +1,22 @@
 # Brandon Meriweather
 
-![Brandon Meriweather career card](assets/brandon_meriweather.svg)
+**Washington Redskins · Strong safety · No. 31 · Age 29 · Last game December 29, 2013**
 
-## Career stats
+5' 11", 197 lb · Born January 14, 1984 · Miami · Drafted in 2007, first round, by New England
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Washington Redskins | 29 | 31 | 16 | 79 | 4 | 12 | 36 | 0 | 1 | 0 | 0 | 4.9 | 0 |
-| **Career** |  |  |  | 16 | 79 | 4 | 12 | 36 | 0 | 1 | 0 | 0 | 4.9 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Washington | 29 | 31 | 16 | 79 | 48 | 31 | 0 | 1 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Washington | 29 | 31 | 4 | 36 | 12 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All Washington Redskins players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by New England in the first round |
+
+<!-- player-page -->

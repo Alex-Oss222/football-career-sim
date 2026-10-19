@@ -1,16 +1,24 @@
 # Chad Rinehart
 
-![Chad Rinehart career card](assets/chad_rinehart.svg)
+**San Diego Chargers · Guard · No. 78 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 321 lb · Born May 4, 1985 · Northern Iowa · Drafted in 2008, third round, by Washington
+
+As of October 5, 2014, after Week 5.
+
+![Chad Rinehart](https://commons.wikimedia.org/wiki/Special:FilePath/Chad_Rinehart.jpg?width=500)
+
+*Photo: Tim_Crowder.jpg : James Fitterer derivative work: Lpdrew, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Chad_Rinehart.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Diego Chargers | 28 | 78 | 16 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | San Diego Chargers | 29 | 78 | 5 | 5 | 316 | 3 | 19 | 0 | 0 | 0 | 0 | 63.2 |
-| **Career** |  |  |  | 21 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 29 | 78 | 5 | 5 | 316 | 3 | 19 |
+| 2013 | San Diego | 28 | 78 | 16 | N/A | N/A | 5 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 
@@ -20,6 +28,10 @@ No playoff games on record.
 
 - Pro Bowl selection, replacement (2013, G)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Washington in the third round |
+
+<!-- player-page -->

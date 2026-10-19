@@ -1,15 +1,26 @@
 # Chris Conte
 
-![Chris Conte career card](assets/chris_conte.svg)
+**Chicago Bears · Free safety · No. 47 · Age 24 · Last game December 29, 2013**
 
-## Career stats
+6' 2", 203 lb · Born February 23, 1989 · California · Drafted in 2011, third round, by Chicago
+
+As of December 29, 2013, after Week 17.
+
+![Chris Conte](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Conte_%2815807903445%29_%281%29.jpg?width=500)
+
+*Photo: 416th Theater Engineer Command Army Reserve, Public domain ([source](https://commons.wikimedia.org/wiki/File:Chris_Conte_(15807903445)_(1).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Chicago Bears | 24 | 47 | 16 | 54 | 2 | 13 | 43 | 0 | 0 | 0 | 0 | 3.4 | 0 |
-| **Career** |  |  |  | 16 | 54 | 2 | 13 | 43 | 0 | 0 | 0 | 0 | 3.4 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Chicago | 24 | 47 | 16 | 54 | 39 | 15 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Chicago | 24 | 47 | 2 | 43 | 13 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +28,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Chicago in the third round |
+
+<!-- player-page -->

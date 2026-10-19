@@ -1,16 +1,29 @@
 # Xavier Rhodes
 
-![Xavier Rhodes career card](assets/xavier_rhodes.svg)
+**Minnesota Vikings · Cornerback · No. 29 · Age 24 · Last game October 2, 2014**
 
-## Career stats
+6' 1", 210 lb · Born June 19, 1990 · Florida State
+
+As of October 2, 2014, after Week 5.
+
+![Xavier Rhodes](https://commons.wikimedia.org/wiki/Special:FilePath/XavierRhodes.PNG?width=500)
+
+*Photo: DMC511, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:XavierRhodes.PNG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 23 | 29 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| 2014 | Minnesota Vikings | 24 | 29 | 4 | 13 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 3.2 | 0 |
-| **Career** |  |  |  | 6 | 13 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 2.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 24 | 29 | 4 | 13 | 11 | 2 | 0 | 1 | 1 |
+| 2013 | Minnesota | 23 | 29 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 6 | 13 | 11 | 2 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 24 | 29 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | Minnesota | 23 | 29 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+<!-- player-page -->

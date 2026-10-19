@@ -1,28 +1,44 @@
 # Steve Johnson
 
-![Steve Johnson career card](assets/steve_johnson.svg)
+**San Francisco 49ers · Wide receiver · No. 13 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 207 lb · Born July 22, 1986 · Kentucky; Chabot College · Drafted in 2008, seventh round, by Buffalo
+
+As of October 5, 2014, after Week 5.
+
+![Steve Johnson](https://commons.wikimedia.org/wiki/Special:FilePath/Stevie_Johnson.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Stevie_Johnson.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 27 | 13 | 16 | 164 | 99 | 1,102 | 11.1 | 8 | 68.9 | 60.4 | 40 | 36 | 1 |
-| 2014 | San Francisco 49ers | 28 | 13 | 5 | 22 | 15 | 183 | 12.2 | 2 | 36.6 | 68.2 | 21 | 0 | 0 |
-| **Career** |  |  |  | 21 | 186 | 114 | 1,285 | 11.3 | 10 | 61.2 | 61.3 | 40 | 36 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 28 | 13 | 5 | 22 | 15 | 183 | 12.2 | 2 | 21 | 36.6 | 68.2 |
+| 2013 | Buffalo | 27 | 13 | 16 | 164 | 99 | 1,102 | 11.1 | 8 | 40 | 68.9 | 60.4 |
+| Career |  |  |  | 21 | 186 | 114 | 1,285 | 11.3 | 10 | 40 | 61.2 | 61.3 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 28 | 13 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Buffalo | 27 | 13 | 2 | 36 | 1 | 1 | 1 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 27 | 13 | 4 | 54 | 34 | 398 | 11.7 | 3 | 99.5 | 63.0 | 58 | 0 | 0 |
-| **Career** |  |  |  | 4 | 54 | 34 | 398 | 11.7 | 3 | 99.5 | 63.0 | 58 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 27 | 13 | 4 | 54 | 34 | 398 | 11.7 | 3 | 58 | 99.5 | 63.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Buffalo in the seventh round |
+
+<!-- player-page -->

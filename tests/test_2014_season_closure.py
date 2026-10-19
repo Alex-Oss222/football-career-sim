@@ -6,7 +6,8 @@ functions (Jacksonville first under user control, the rest as a batch) against
 a copy of the repository in a temporary root and a local private service with
 a pinned store seed. Every dependent view is then generated the way the weekly
 workflow generates it (receipts, statbook, standings, gamebook box score,
-award pages, team tracker, player cards, league player cards) and the
+award pages, team tracker, the player pages built from the permanent player
+records) and the
 repository validator runs on that temporary root. The real career tree, cache
 and live service are never touched; the real repository's own release gates
 are not consulted for the draw, the temporary root's are. No 2014 career game
@@ -29,7 +30,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from runtime import KERNEL_VERSION, player_cards, seasons
+from runtime import KERNEL_VERSION, player_pages, seasons
 from runtime.kernel import TeamInput, validate_result
 from runtime.seasons import SeasonPaths, game_release_errors
 from runtime.week_inputs import event_id, receipt_name
@@ -224,7 +225,7 @@ class SeasonClosure2014Tests(unittest.TestCase):
             (tracker / rel).parent.mkdir(parents=True, exist_ok=True)
             (tracker / rel).write_text(text, encoding="utf-8")
         self.assertEqual(update_player_cards.refresh_cards(SEASON, root), [])
-        player_cards.write(root)  # the league player cards, after the week's awards
+        player_pages.write(root)  # every player page, after the week's awards
         # The in-season rails records of the closed weeks read the receipts
         # before them, so the synthetic Week 1 changes their generated block
         # as the weekly workflow would regenerate it; the batch's event after

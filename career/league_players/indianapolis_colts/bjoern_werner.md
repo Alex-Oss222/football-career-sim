@@ -1,16 +1,29 @@
 # Bjoern Werner
 
-![Bjoern Werner career card](assets/bjoern_werner.svg)
+**Indianapolis Colts · Outside linebacker · No. 92 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 257 lb · Born August 30, 1990 · Florida State
+
+As of October 5, 2014, after Week 5.
+
+![Bjoern Werner](https://commons.wikimedia.org/wiki/Special:FilePath/Bj%C3%B6rn_Werner.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Bj%C3%B6rn_Werner.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 23 | 92 | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| 2014 | Indianapolis Colts | 24 | 92 | 5 | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2.6 | 10 |
-| **Career** |  |  |  | 20 | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.7 | 10 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 24 | 92 | 5 | 13 | 10 | 3 | 0 | 0 | 0 |
+| 2013 | Indianapolis | 23 | 92 | 15 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 20 | 13 | 10 | 3 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 24 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Indianapolis | 23 | 92 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # LaRon Landry
 
-![LaRon Landry career card](assets/laron_landry.svg)
+**Indianapolis Colts · Free safety · No. 30 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 226 lb · Born October 14, 1984 · LSU · Drafted in 2007, first round, by Washington
+
+As of October 5, 2014, after Week 5.
+
+![LaRon Landry](https://commons.wikimedia.org/wiki/Special:FilePath/Laron_landry_2011.jpg?width=500)
+
+*Photo: original:dbking derivative:diddykong1130, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Laron_landry_2011.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 28 | 30 | 16 | 79 | 3 | 12 | 89 | 1 | 1 | 0 | 0 | 4.9 | 0 |
-| 2014 | Indianapolis Colts | 29 | 30 | 5 | 13 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 2.6 | 0 |
-| **Career** |  |  |  | 21 | 92 | 3 | 15 | 89 | 1 | 1 | 0 | 0 | 4.4 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 29 | 30 | 5 | 13 | 10 | 3 | 0 | 0 | 0 |
+| 2013 | Indianapolis | 28 | 30 | 16 | 79 | 53 | 26 | 1 | 1 | 2 |
+| Career |  |  |  | 21 | 92 | 63 | 29 | 1 | 1 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 29 | 30 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2013 | Indianapolis | 28 | 30 | 3 | 89 | 12 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Washington in the first round |
+
+<!-- player-page -->

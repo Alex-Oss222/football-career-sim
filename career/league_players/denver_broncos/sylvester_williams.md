@@ -1,16 +1,29 @@
 # Sylvester Williams
 
-![Sylvester Williams career card](assets/sylvester_williams.svg)
+**Denver Broncos · Defensive tackle · No. 92 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 313 lb · Born November 21, 1988 · North Carolina; Coffeyville CC
+
+As of October 5, 2014, after Week 5.
+
+![Sylvester Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Sylvester_Williams_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Sylvester_Williams_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Denver Broncos | 24 | 92 | 16 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0.1 | 2 |
-| 2014 | Denver Broncos | 25 | 92 | 4 | 29 | 4 | 1 | 0 | 0 | 0 | 0 | 8 | 7.2 | 25 |
-| **Career** |  |  |  | 20 | 31 | 4 | 1 | 0 | 0 | 0 | 0 | 9 | 1.6 | 27 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 25 | 92 | 4 | 29 | 25 | 4 | 1 | 4 | 8 |
+| 2013 | Denver | 24 | 92 | 16 | 2 | 2 | 0 | 0 | 0 | 1 |
+| Career |  |  |  | 20 | 31 | 27 | 4 | 1 | 4 | 9 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 25 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Denver | 24 | 92 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).
+<!-- player-page -->

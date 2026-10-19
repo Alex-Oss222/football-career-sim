@@ -1,27 +1,45 @@
 # Orlando Scandrick
 
-![Orlando Scandrick career card](assets/orlando_scandrick.svg)
+**Dallas Cowboys · Cornerback · No. 32 · Age 26 · Last game January 11, 2014**
 
-## Career stats
+5' 10", 195 lb · Born February 10, 1987 · Boise State · Drafted in 2008, fifth round, by Dallas
+
+As of January 11, 2014, after the Divisional round.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 26 | 32 | 16 | 26 | 1 | 5 | 51 | 2 | 0 | 1 | 1 | 1.6 | 0 |
-| **Career** |  |  |  | 16 | 26 | 1 | 5 | 51 | 2 | 0 | 1 | 1 | 1.6 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 26 | 32 | 16 | 26 | 19 | 7 | 2 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 26 | 32 | 1 | 51 | 5 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Dallas Cowboys | 26 | 32 | 2 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2.5 | 6 |
-| **Career** |  |  |  | 2 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2.5 | 6 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 26 | 32 | 2 | 5 | 0 | 5 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 26 | 32 | 0 | 0 | 0 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Dallas | 26 | 32 | 0 | 0 | N/A | 1 | 6 | 6.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 11, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 4 roster listing. [All Dallas Cowboys players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Dallas in the fifth round |
+
+<!-- player-page -->

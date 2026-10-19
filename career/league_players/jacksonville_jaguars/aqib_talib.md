@@ -1,16 +1,67 @@
 # Aqib Talib
 
-![Aqib Talib career card](assets/aqib_talib.svg)
+**Jacksonville Jaguars · Cornerback · Age 28 · Active roster**
 
-## Career stats
+6' 1", 205 lb · Born February 13, 1986 · Kansas · Drafted in 2008, first round, by Tampa Bay
+
+As of October 5, 2014, after Week 5.
+
+![Aqib Talib](https://commons.wikimedia.org/wiki/Special:FilePath/Aqib_Talib_2014.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Aqib_Talib_2014.JPG)).*
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 7.5/10 |
+| Athleticism | 7.0/10 |
+| Speed | 7.0/10 |
+| Strength and power | 7.0/10 |
+| Agility and change of direction | 6.5/10 |
+| Technique | 7.5/10 |
+| Football IQ | 7.0/10 |
+| Long and recovery speed | 7.0/10 |
+| Short-area quickness and hips | 6.5/10 |
+| Press coverage | 8.0/10 |
+| Off-man coverage | 7.0/10 |
+| Zone and pattern match | 7.0/10 |
+| Route recognition and eyes | 7.0/10 |
+| Ball skills | 7.5/10 |
+| Catch-point play | 8.0/10 |
+| Tackling and run support | 6.0/10 |
+| Block defeat and penalty discipline | 6.0/10 |
+
+A physical outside corner with strong press and catch-point tools. My starting view is that he can challenge bigger receivers, with technique consistency still important to that matchup value.
+
+*Staff view, March 31, 2014; dated updates through September 27, 2014.*
+
+## Contract
+
+Five-year contract through 2018.
+
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $6,500,000 | $7,800,000 |
+| 2015 | $8,500,000 | $9,800,000 |
+| 2016 | $6,000,000 | $9,300,000 |
+| 2017 | $6,500,000 | $9,800,000 |
+| 2018 | $6,500,000 | $9,800,000 |
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 27 | 31 | 16 | 81 | 3 | 13 | 48 | 2 | 0 | 1 | 1 | 5.1 | 0 |
-| 2014 | Jacksonville Jaguars | 28 | N/A | 5 | 36 | 1 | 5 | 1 | 1 | 0 | 0 | 0 | 7.2 | 0 |
-| **Career** |  |  |  | 21 | 117 | 4 | 18 | 49 | 3 | 0 | 1 | 1 | 5.6 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 28 | N/A | 5 | 36 | 27 | 9 | 1 | 0 | 0 |
+| 2013 | New England | 27 | 31 | 16 | 81 | 55 | 26 | 2 | 0 | 0 |
+| Career |  |  |  | 21 | 117 | 82 | 35 | 3 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 28 | N/A | 1 | 1 | 5 | 0 | 0 | 0 |
+| 2013 | New England | 27 | 31 | 3 | 48 | 13 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,10 +69,13 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/aqib_talib.md)
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Tampa Bay in the first round |
+| March 11, 2014 | Signed a five-year contract with Jacksonville (2014 to 2018) |
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Jacksonville Jaguars players](README.md).
+<!-- player-page -->

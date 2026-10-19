@@ -1,16 +1,34 @@
 # Steve Smith
 
-![Steve Smith career card](assets/steve_smith.svg)
+**Baltimore Ravens · Wide receiver · No. 89 · Age 35 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 195 lb · Born May 12, 1979 · Utah; Santa Monica · Drafted in 2001, third round, by Carolina
+
+As of October 5, 2014, after Week 5.
+
+![Steve Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Steve_Smith_Sr._2015_%28cropped%29.jpg?width=500)
+
+*Photo: Melanie Rodgers Cox, Public domain ([source](https://commons.wikimedia.org/wiki/File:Steve_Smith_Sr._2015_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 34 | 89 | 16 | 131 | 96 | 1,099 | 11.4 | 5 | 68.7 | 73.3 | 83 | 13 | 0 |
-| 2014 | Baltimore Ravens | 35 | 89 | 5 | 33 | 18 | 240 | 13.3 | 3 | 48.0 | 54.5 | 56 | 7 | 1 |
-| **Career** |  |  |  | 21 | 164 | 114 | 1,339 | 11.7 | 8 | 63.8 | 69.5 | 83 | 20 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 35 | 89 | 5 | 33 | 18 | 240 | 13.3 | 3 | 56 | 48.0 | 54.5 |
+| 2013 | Carolina | 34 | 89 | 16 | 131 | 96 | 1,099 | 11.4 | 5 | 83 | 68.7 | 73.3 |
+| Career |  |  |  | 21 | 164 | 114 | 1,339 | 11.7 | 8 | 83 | 63.8 | 69.5 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 35 | 89 | 1 | 7 | 0 | 1 | 1 |
+| 2013 | Carolina | 34 | 89 | 2 | 13 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 35 | 89 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Carolina | 34 | 89 | 1 | 23 | 23.0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +36,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Baltimore Ravens players](README.md).
+| Date | Transaction |
+|---|---|
+| 2001 | Drafted by Carolina in the third round |
+
+<!-- player-page -->

@@ -1,15 +1,43 @@
 # Mark Asper
 
-![Mark Asper career card](assets/mark_asper.svg)
+**Jacksonville Jaguars · Guard · Age 28 · Former player**
 
-## Career stats
+6' 7", 325 lb · Born November 8, 1985 · Oregon · Drafted in 2012, sixth round, by Buffalo
+
+As of December 29, 2013, after Week 17.
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 4.0/10 |
+| Athleticism | 3.5/10 |
+| Speed | 3.0/10 |
+| Strength and power | 4.5/10 |
+| Agility and change of direction | 3.5/10 |
+| Technique | 3.5/10 |
+| Football IQ | 3.5/10 |
+| Interior pass protection | 4.0/10 |
+| Anchor and power | 4.5/10 |
+| Hand usage | 3.5/10 |
+| Recovery and balance | 3.5/10 |
+| Drive blocking | 4.5/10 |
+| Pull and movement blocking | 3.5/10 |
+| Combination and second-level work | 4.0/10 |
+| Stunt and blitz recognition | 3.5/10 |
+| Leverage and consistency | 3.5/10 |
+
+An interior depth lineman whose clearest route to a role is size and basic power work. My view is that protection coordination, movement and recovery need a defined backup assignment.
+
+*Staff view, March 31, 2014.*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 27 | N/A | 6 | N/A | N/A | 2 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 6 | N/A | N/A | 2 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 27 | N/A | 6 | N/A | N/A | 2 | N/A |
 
 ### Playoffs
 
@@ -17,8 +45,15 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Jacksonville Jaguars players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Buffalo in the sixth round |
+| 2012 | Signed a four-year rookie contract with Buffalo, later carried to Jacksonville by waiver claims |
+| August 30, 2014 | Waived by Jacksonville at the reduction to 53 |
+| August 31, 2014 | Cleared waivers; free agent |
+
+<!-- player-page -->

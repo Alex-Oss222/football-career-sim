@@ -1,16 +1,24 @@
 # Rick Wagner
 
-![Rick Wagner career card](assets/rick_wagner.svg)
+**Baltimore Ravens · Guard · No. 71 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 310 lb · Born October 21, 1989 · Wisconsin
+
+As of October 5, 2014, after Week 5.
+
+![Rick Wagner](https://commons.wikimedia.org/wiki/Special:FilePath/Ricky_Wagners%27s_Senior_Introductions.jpg?width=500)
+
+*Photo: Bflbarlow, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ricky_Wagners%27s_Senior_Introductions.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Baltimore Ravens | 23 | 71 | 16 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Baltimore Ravens | 24 | 71 | 5 | 5 | 331 | 3 | 32 | 0 | 0 | 0 | 0 | 66.2 |
-| **Career** |  |  |  | 21 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 24 | 71 | 5 | 5 | 331 | 3 | 32 |
+| 2013 | Baltimore | 23 | 71 | 16 | N/A | N/A | 0 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Baltimore Ravens players](README.md).
+<!-- player-page -->

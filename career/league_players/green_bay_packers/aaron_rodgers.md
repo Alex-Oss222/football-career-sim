@@ -1,16 +1,29 @@
 # Aaron Rodgers
 
-![Aaron Rodgers career card](assets/aaron_rodgers.svg)
+**Green Bay Packers · Quarterback · No. 12 · Age 30 · Last game October 2, 2014**
 
-## Career stats
+6' 2", 225 lb · Born December 2, 1983 · California; Butte College · Drafted in 2005, first round, by Green Bay
+
+As of October 2, 2014, after Week 5.
+
+![Aaron Rodgers](https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Rodgers_Packers_OCT2021_%28cropped%29.jpg?width=500)
+
+*Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Aaron_Rodgers_Packers_OCT2021_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Green Bay Packers | 29 | 12 | 16 | 383-585 | 65.5 | 3,952 | 21 | 18 | 6.8 | 83.9 | 247.0 | 244 | 3 |
-| 2014 | Green Bay Packers | 30 | 12 | 5 | 109-176 | 61.9 | 1,234 | 12 | 3 | 7.0 | 98.5 | 246.8 | 103 | 0 |
-| **Career** |  |  |  | 21 | 492-761 | 64.7 | 5,186 | 33 | 21 | 6.8 | 87.3 | 247.0 | 347 | 3 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 30 | 12 | 5 | 109 | 176 | 61.9 | 1,234 | 7.0 | 246.8 | 12 | 3 | 98.5 |
+| 2013 | Green Bay | 29 | 12 | 16 | 383 | 585 | 65.5 | 3,952 | 6.8 | 247.0 | 21 | 18 | 83.9 |
+| Career |  |  |  | 21 | 492 | 761 | 64.7 | 5,186 | 6.8 | 247.0 | 33 | 21 | 87.3 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 30 | 12 | 17 | 102 | 15 | 103 | 0 | 2 | 1 |
+| 2013 | Green Bay | 29 | 12 | 35 | 232 | 44 | 244 | 3 | 0 | 0 |
 
 ### Playoffs
 
@@ -22,6 +35,10 @@ No playoff games on record.
 - NFC Offensive Player of the Month (2013, December)
 - NFC Offensive Player of the Week (2014, Week 2)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2005 | Drafted by Green Bay in the first round |
+
+<!-- player-page -->

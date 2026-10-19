@@ -1,28 +1,39 @@
 # Willie Colon
 
-![Willie Colon career card](assets/willie_colon.svg)
+**New York Jets · Guard · No. 66 · Age 31 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 315 lb · Born April 9, 1983 · Hofstra · Drafted in 2006, fourth round, by Pittsburgh
+
+As of October 5, 2014, after Week 5.
+
+![Willie Colon](https://commons.wikimedia.org/wiki/Special:FilePath/Willie_Colon_%28cropped%29.jpg?width=500)
+
+*Photo: Photo by Sgt. 1st Class William Calohan, Public domain ([source](https://commons.wikimedia.org/wiki/File:Willie_Colon_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 30 | 66 | 16 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | New York Jets | 31 | 66 | 5 | 5 | 317 | 4 | 20 | 0 | 0 | 0 | 0 | 63.4 |
-| **Career** |  |  |  | 21 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 31 | 66 | 5 | 5 | 317 | 4 | 20 |
+| 2013 | N.Y. Jets | 30 | 66 | 16 | N/A | N/A | 1 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 30 | 66 | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 1 | N/A | N/A | 0 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Jets | 30 | 66 | 1 | N/A | N/A | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Pittsburgh in the fourth round |
+
+<!-- player-page -->

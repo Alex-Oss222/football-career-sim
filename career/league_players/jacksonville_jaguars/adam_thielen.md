@@ -1,30 +1,92 @@
 # Adam Thielen
 
-![Adam Thielen career card](assets/adam_thielen.svg)
+**Jacksonville Jaguars · Wide receiver · Age 24 · Active roster**
 
-## Career stats
+6' 2", 195 lb · Born August 22, 1990 · Minnesota State · Undrafted
+
+As of October 5, 2014, after Week 5.
+
+![Adam Thielen](https://commons.wikimedia.org/wiki/Special:FilePath/Adam_Thielen_2017.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Adam_Thielen_2017.jpg)).*
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 6.5/10 |
+| Athleticism | 6.5/10 |
+| Speed | 6.0/10 |
+| Strength and power | 6.5/10 |
+| Agility and change of direction | 5.5/10 |
+| Technique | 7.0/10 |
+| Football IQ | 8.0/10 |
+| Release vs press | 6.0/10 |
+| Route running | 9.0/10 |
+| Separation and quickness | 6.5/10 |
+| Long speed | 6.0/10 |
+| Hands | 7.5/10 |
+| Catch radius and contested catches | 7.5/10 |
+| Ball tracking and deep receiving | 6.0/10 |
+| YAC and contact balance | 6.5/10 |
+| Coverage recognition and adjustments | 6.0/10 |
+| Blocking | 6.5/10 |
+
+Route technician with a possession-receiver frame and a developed understanding of leverage. Thielen varies the pace of his stem, keeps defensive backs from sitting on the break point and can change the picture late by leaning on leverage before snapping the route away from it. He is comfortable working option routes, crossers, digs, outs and intermediate in-breakers, and he finds space against zone without drifting off the quarterback's timing. His separation comes more from setup, tempo and body positioning than sudden change of direction. He has dependable hands, can extend outside his frame and competes through contact at the catch point. He has enough speed to threaten a corner who squats on underneath routes, but he is not built around winning repeated vertical footraces, and his deep tracking is less advanced than his work in the short and intermediate game. Against press, he has functional answers but does not consistently create an immediate clean release with burst alone. After the catch he is direct and balanced rather than especially elusive. He is assignment-sound as a blocker and can stay attached when his angle is right. His best value comes as a receiver who can move across the formation, read coverage with the quarterback and stay on schedule while creating separation through route detail.
+
+*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+
+## Contract
+
+Three-year contract through 2015.
+
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $495,000 | $495,000 |
+| 2015 | $585,000 | $585,000 |
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 23 | N/A | 16 | 84 | 52 | 616 | 11.8 | 3 | 38.5 | 61.9 | 50 | 3 | 0 |
-| 2014 | Jacksonville Jaguars | 24 | N/A | 5 | 28 | 19 | 168 | 8.8 | 0 | 33.6 | 67.9 | 33 | 1 | 1 |
-| **Career** |  |  |  | 21 | 112 | 71 | 784 | 11.0 | 3 | 37.3 | 63.4 | 50 | 4 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 24 | N/A | 5 | 28 | 19 | 168 | 8.8 | 0 | 33 | 33.6 | 67.9 |
+| 2013 | Jacksonville | 23 | N/A | 16 | 84 | 52 | 616 | 11.8 | 3 | 50 | 38.5 | 61.9 |
+| With Jacksonville |  |  |  | 21 | 112 | 71 | 784 | 11.0 | 3 | 50 | 37.3 | 63.4 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 24 | N/A | 1 | 1 | 0 | 1 | 1 |
+| 2013 | Jacksonville | 23 | N/A | 1 | 3 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 24 | N/A | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Jacksonville | 23 | N/A | 1 | 22 | 22.0 | 1 | 3 | 3.0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Jacksonville Jaguars | 23 | N/A | 2 | 11 | 6 | 40 | 6.7 | 0 | 20.0 | 54.5 | 15 | 0 | 1 |
-| **Career** |  |  |  | 2 | 11 | 6 | 40 | 6.7 | 0 | 20.0 | 54.5 | 15 | 0 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 23 | N/A | 2 | 11 | 6 | 40 | 6.7 | 0 | 15 | 20.0 | 54.5 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 23 | N/A | 0 | 0 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 23 | N/A | 1 | 24 | 24.0 | 1 | 9 | 9.0 |
 
 ## Awards
 
-None on record.
+None.
 
-[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/adam_thielen.md)
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| April 27 to May 3, 2013 | Signed a three-year contract with Jacksonville as an undrafted rookie |
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Jacksonville Jaguars players](README.md).
+<!-- player-page -->

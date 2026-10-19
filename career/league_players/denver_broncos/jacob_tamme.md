@@ -1,16 +1,24 @@
 # Jacob Tamme
 
-![Jacob Tamme career card](assets/jacob_tamme.svg)
+**Denver Broncos · Tight end · No. 84 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 230 lb · Born March 15, 1985 · Kentucky · Drafted in 2008, fourth round, by Indianapolis
+
+As of October 5, 2014, after Week 5.
+
+![Jacob Tamme](https://commons.wikimedia.org/wiki/Special:FilePath/Jacob_Tamme_2012.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jacob_Tamme_2012.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Denver Broncos | 28 | 84 | 16 | 13 | 3 | 54 | 18.0 | 0 | 3.4 | 23.1 | 33 | 0 | 0 |
-| 2014 | Denver Broncos | 29 | 84 | 4 | 1 | 1 | 10 | 10.0 | 0 | 2.5 | 100.0 | 10 | 0 | 0 |
-| **Career** |  |  |  | 20 | 14 | 4 | 64 | 16.0 | 0 | 3.2 | 28.6 | 33 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 29 | 84 | 4 | 1 | 1 | 10 | 10.0 | 0 | 10 | 2.5 | 100.0 |
+| 2013 | Denver | 28 | 84 | 16 | 13 | 3 | 54 | 18.0 | 0 | 33 | 3.4 | 23.1 |
+| Career |  |  |  | 20 | 14 | 4 | 64 | 16.0 | 0 | 33 | 3.2 | 28.6 |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Indianapolis in the fourth round |
+
+<!-- player-page -->

@@ -1,28 +1,48 @@
 # Adrian Peterson
 
-![Adrian Peterson career card](assets/adrian_peterson.svg)
+**Minnesota Vikings · Running back · No. 28 · Age 29 · Last game October 2, 2014**
 
-## Career stats
+6' 1", 217 lb · Born March 21, 1985 · Oklahoma · Drafted in 2007, first round, by Minnesota
+
+As of October 2, 2014, after Week 5.
+
+![Adrian Peterson](https://commons.wikimedia.org/wiki/Special:FilePath/Adrian_Peterson_%28cropped%29.jpg?width=500)
+
+*Photo: Mike Morbeck, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Adrian_Peterson_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 28 | 28 | 16 | 271 | 1,315 | 4.9 | 9 | 82.2 | 46 | 503 | 3 | 317 | 2 |
-| 2014 | Minnesota Vikings | 29 | 28 | 4 | 53 | 344 | 6.5 | 2 | 86.0 | 7 | 71 | 0 | 60 | 0 |
-| **Career** |  |  |  | 20 | 324 | 1,659 | 5.1 | 11 | 83.0 | 53 | 574 | 3 | 377 | 2 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 29 | 28 | 4 | 53 | 344 | 6.5 | 2 | 34 | 86.0 |
+| 2013 | Minnesota | 28 | 28 | 16 | 271 | 1,315 | 4.9 | 9 | 77 | 82.2 |
+| Career |  |  |  | 20 | 324 | 1,659 | 5.1 | 11 | 77 | 83.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 29 | 28 | 12 | 7 | 71 | 10.1 | 0 | 0 | 0 |
+| 2013 | Minnesota | 28 | 28 | 70 | 46 | 503 | 10.9 | 3 | 2 | 2 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 28 | 28 | 3 | 68 | 315 | 4.6 | 1 | 105.0 | 12 | 193 | 1 | 80 | 0 |
-| **Career** |  |  |  | 3 | 68 | 315 | 4.6 | 1 | 105.0 | 12 | 193 | 1 | 80 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 28 | 28 | 3 | 68 | 315 | 4.6 | 1 | 20 | 105.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 28 | 28 | 14 | 12 | 193 | 16.1 | 1 | 0 | 0 |
 
 ## Awards
 
 - NFC Offensive Player of the Week (2013, Week 9)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Minnesota in the first round |
+
+<!-- player-page -->

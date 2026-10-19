@@ -1,28 +1,39 @@
 # John Carlson
 
-![John Carlson career card](assets/john_carlson.svg)
+**Arizona Cardinals · Tight end · No. 89 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 248 lb · Born May 12, 1984 · Notre Dame · Drafted in 2008, second round, by Seattle
+
+As of October 5, 2014, after Week 5.
+
+![John Carlson](https://commons.wikimedia.org/wiki/Special:FilePath/John_Carlson_2013.JPG?width=500)
+
+*Photo: MN National Guard, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:John_Carlson_2013.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 29 | 89 | 16 | 20 | 16 | 154 | 9.6 | 2 | 9.6 | 80.0 | 25 | 0 | 0 |
-| 2014 | Arizona Cardinals | 30 | 89 | 4 | 4 | 2 | 67 | 33.5 | 0 | 16.8 | 50.0 | 45 | 0 | 0 |
-| **Career** |  |  |  | 20 | 24 | 18 | 221 | 12.3 | 2 | 11.1 | 75.0 | 45 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Arizona | 30 | 89 | 4 | 4 | 2 | 67 | 33.5 | 0 | 45 | 16.8 | 50.0 |
+| 2013 | Minnesota | 29 | 89 | 16 | 20 | 16 | 154 | 9.6 | 2 | 25 | 9.6 | 80.0 |
+| Career |  |  |  | 20 | 24 | 18 | 221 | 12.3 | 2 | 45 | 11.1 | 75.0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 29 | 89 | 3 | 4 | 3 | 63 | 21.0 | 0 | 21.0 | 75.0 | 40 | 0 | 0 |
-| **Career** |  |  |  | 3 | 4 | 3 | 63 | 21.0 | 0 | 21.0 | 75.0 | 40 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 29 | 89 | 3 | 4 | 3 | 63 | 21.0 | 0 | 40 | 21.0 | 75.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Arizona Cardinals players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Seattle in the second round |
+
+<!-- player-page -->

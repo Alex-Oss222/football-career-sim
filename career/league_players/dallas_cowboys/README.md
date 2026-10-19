@@ -1,11 +1,13 @@
 # Dallas Cowboys players
 
-NFC East · Players whose latest game on record was with the Dallas Cowboys. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+NFC East. The players whose latest game on record was with the Dallas Cowboys. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 3 | [Brandon Weeden](brandon_weeden.md) | QB | 5 | 16 |
 | 10 | [Dustin Vaughan](dustin_vaughan.md) | QB | 5 | 0 |
 | 9 | [Tony Romo](tony_romo.md) | QB | 5 | 16 |
@@ -13,7 +15,7 @@ NFC East · Players whose latest game on record was with the Dallas Cowboys. G c
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 29 | [DeMarco Murray](demarco_murray.md) | RB | 5 | 16 |
 | 21 | [Joseph Randle](joseph_randle.md) | RB | 5 | 16 |
 | 25 | [Lance Dunbar](lance_dunbar.md) | RB | 5 | 15 |
@@ -23,7 +25,7 @@ NFC East · Players whose latest game on record was with the Dallas Cowboys. G c
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 11 | [Cole Beasley](cole_beasley.md) | WR | 5 | 16 |
 | 15 | [Devin Street](devin_street.md) | WR | 5 | 0 |
 | 88 | [Dez Bryant](dez_bryant.md) | WR | 5 | 16 |
@@ -33,7 +35,7 @@ NFC East · Players whose latest game on record was with the Dallas Cowboys. G c
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Andre Smith](andre_smith.md) | TE | 0 | 16 |
 | 89 | [Gavin Escobar](gavin_escobar.md) | TE | 5 | 16 |
 | 84 | [James Hanna](james_hanna.md) | TE | 5 | 16 |
@@ -42,7 +44,7 @@ NFC East · Players whose latest game on record was with the Dallas Cowboys. G c
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 75 | [Darrion Weems](darrion_weems.md) | T | 0 | 16 |
 | N/A | [David Arkin](david_arkin.md) | G | 0 | 2 |
 | 68 | [Doug Free](doug_free.md) | T | 5 | 16 |
@@ -57,7 +59,7 @@ NFC East · Players whose latest game on record was with the Dallas Cowboys. G c
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 93 | [Anthony Spencer](anthony_spencer.md) | DE | 0 | 15 |
 | N/A | [Caesar Rayford](caesar_rayford.md) | DT | 0 | 3 |
 | 60 | [Davon Coleman](davon_coleman.md) | DT | 5 | 0 |
@@ -73,7 +75,7 @@ NFC East · Players whose latest game on record was with the Dallas Cowboys. G c
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 59 | [Anthony Hitchens](anthony_hitchens.md) | MLB | 5 | 0 |
 | 54 | [Bruce Carter](bruce_carter.md) | ILB | 5 | 16 |
 | 53 | [Cameron Lawrence](cameron_lawrence.md) | OLB | 5 | 0 |
@@ -89,7 +91,7 @@ NFC East · Players whose latest game on record was with the Dallas Cowboys. G c
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 42 | [Barry Church](barry_church.md) | SS | 5 | 16 |
 | 39 | [Brandon Carr](brandon_carr.md) | CB | 3 | 16 |
 | 37 | [C.J. Spillman](c_j_spillman.md) | SS | 5 | 2 |
@@ -103,17 +105,19 @@ NFC East · Players whose latest game on record was with the Dallas Cowboys. G c
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 5 | [Dan Bailey](dan_bailey.md) | K | 5 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 6 | [Chris Jones](chris_jones.md) | P | 5 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 91 | [L.P. Ladouceur](l_p_ladouceur.md) | LS | 5 | 16 |
+
+<!-- player-index -->

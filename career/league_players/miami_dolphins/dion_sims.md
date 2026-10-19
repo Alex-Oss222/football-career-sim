@@ -1,16 +1,29 @@
 # Dion Sims
 
-![Dion Sims career card](assets/dion_sims.svg)
+**Miami Dolphins · Tight end · No. 80 · Age 23 · Last game September 28, 2014**
 
-## Career stats
+6' 4", 265 lb · Born February 18, 1991 · Michigan State
+
+As of September 28, 2014, after Week 4.
+
+![Dion Sims](https://commons.wikimedia.org/wiki/Special:FilePath/Dion_Sims.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Dion_Sims.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Miami Dolphins | 22 | 80 | 16 | 22 | 17 | 161 | 9.5 | 3 | 10.1 | 77.3 | 23 | 0 | 1 |
-| 2014 | Miami Dolphins | 23 | 80 | 4 | 13 | 9 | 78 | 8.7 | 0 | 19.5 | 69.2 | 15 | 0 | 1 |
-| **Career** |  |  |  | 20 | 35 | 26 | 239 | 9.2 | 3 | 11.9 | 74.3 | 23 | 0 | 2 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 23 | 80 | 4 | 13 | 9 | 78 | 8.7 | 0 | 15 | 19.5 | 69.2 |
+| 2013 | Miami | 22 | 80 | 16 | 22 | 17 | 161 | 9.5 | 3 | 23 | 10.1 | 77.3 |
+| Career |  |  |  | 20 | 35 | 26 | 239 | 9.2 | 3 | 23 | 11.9 | 74.3 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Miami | 23 | 80 | 0 | 0 | 0 | 1 | 1 |
+| 2013 | Miami | 22 | 80 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Miami Dolphins players](README.md).
+<!-- player-page -->

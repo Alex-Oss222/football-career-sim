@@ -1,16 +1,29 @@
 # Benson Mayowa
 
-![Benson Mayowa career card](assets/benson_mayowa.svg)
+**Oakland Raiders · Outside linebacker · No. 95 · Age 23 · Last game September 28, 2014**
 
-## Career stats
+6' 3", 252 lb · Born August 3, 1991 · Idaho
+
+As of September 28, 2014, after Week 4.
+
+![Benson Mayowa](https://commons.wikimedia.org/wiki/Special:FilePath/Benson_Mayowa.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Benson_Mayowa.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Seattle Seahawks | 22 | 95 | 16 | 5 | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0.3 | 3 |
-| 2014 | Oakland Raiders | 23 | 95 | 4 | 4 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1.0 | 1 |
-| **Career** |  |  |  | 20 | 9 | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0.5 | 4 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 23 | 95 | 4 | 4 | 1 | 3 | 0 | 0 | 0 |
+| 2013 | Seattle | 22 | 95 | 16 | 5 | 3 | 2 | 0 | 0 | 0 |
+| Career |  |  |  | 20 | 9 | 4 | 5 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 23 | 95 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | Seattle | 22 | 95 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Oakland Raiders players](README.md).
+<!-- player-page -->

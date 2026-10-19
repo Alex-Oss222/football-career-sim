@@ -1,15 +1,22 @@
 # Nathan Palmer
 
-![Nathan Palmer career card](assets/nathan_palmer.svg)
+**Denver Broncos · Wide receiver · No. 13 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 198 lb · Born April 14, 1989 · Northern Illinois
+
+As of October 5, 2014, after Week 5.
+
+![Nathan Palmer](https://commons.wikimedia.org/wiki/Special:FilePath/Nathan_Palmer_49ers.jpg?width=500)
+
+*Photo: Steve Bowles, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Nathan_Palmer_49ers.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Denver Broncos | 25 | 13 | 3 | 1 | 1 | 44 | 44.0 | 0 | 14.7 | 100.0 | 44 | 0 | 0 |
-| **Career** |  |  |  | 3 | 1 | 1 | 44 | 44.0 | 0 | 14.7 | 100.0 | 44 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 25 | 13 | 3 | 1 | 1 | 44 | 44.0 | 0 | 44 | 14.7 | 100.0 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).
+<!-- player-page -->

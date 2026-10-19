@@ -1,16 +1,29 @@
 # Steven Jackson
 
-![Steven Jackson career card](assets/steven_jackson.svg)
+**Atlanta Falcons · Running back · No. 39 · Age 31 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 240 lb · Born July 22, 1983 · Oregon State · Drafted in 2004, first round, by St. Louis
+
+As of October 5, 2014, after Week 5.
+
+![Steven Jackson](https://commons.wikimedia.org/wiki/Special:FilePath/Steven_Jackson_2013.jpg?width=500)
+
+*Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Steven_Jackson_2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 30 | 39 | 16 | 271 | 1,212 | 4.5 | 4 | 75.8 | 42 | 381 | 1 | 313 | 2 |
-| 2014 | Atlanta Falcons | 31 | 39 | 5 | 24 | 131 | 5.5 | 0 | 26.2 | 4 | 51 | 0 | 28 | 0 |
-| **Career** |  |  |  | 21 | 295 | 1,343 | 4.6 | 4 | 64.0 | 46 | 432 | 1 | 341 | 2 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 31 | 39 | 5 | 24 | 131 | 5.5 | 0 | 23 | 26.2 |
+| 2013 | Atlanta | 30 | 39 | 16 | 271 | 1,212 | 4.5 | 4 | 26 | 75.8 |
+| Career |  |  |  | 21 | 295 | 1,343 | 4.6 | 4 | 26 | 64.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 31 | 39 | 4 | 4 | 51 | 12.8 | 0 | 0 | 0 |
+| 2013 | Atlanta | 30 | 39 | 73 | 42 | 381 | 9.1 | 1 | 2 | 2 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+| Date | Transaction |
+|---|---|
+| 2004 | Drafted by St. Louis in the first round |
+
+<!-- player-page -->

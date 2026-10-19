@@ -1,135 +1,69 @@
-# Tyler Bray — 2014 Player Profile
+# Tyler Bray
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** March 31, 2014 starting evaluation  
-**Age:** 22  
-**Position:** QB  
-**Roster status (August 31, 2014):** Practice squad from August 31, 2014: waived at the August 30 reduction to 53, cleared waivers and signed a practice-squad contract at the $6,300 weekly minimum ([final roster cuts](../../../Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)). Not on the 53; this card stays current and its statistics refresh after closed games only if he is elevated.  
-**NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** A developmental vertical passer with a stronger throwing tool than his command of the offense. I see a quarterback who needs timing and protection answers to catch up to the arm.  
-**Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/tyler_bray.md)  
+**Jacksonville Jaguars · Quarterback · Age 22 · Practice squad**
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
+6' 6", 215 lb · Born December 27, 1991 · Tennessee · Drafted in 2013, No. 208 overall, by Jacksonville
 
-## Player grades
+As of October 5, 2014, after Week 5.
 
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 4.0 /10 | Staff judgment |
-| Athleticism | 4.0 /10 | Staff judgment |
-| Speed | 3.0 /10 | Staff judgment |
-| Strength / Power | 5.5 /10 | Staff judgment |
-| Agility / Change of direction | 3.5 /10 | Staff judgment |
-| Technique | 4.5 /10 | Staff judgment |
-| Football IQ | 3.5 /10 | Staff judgment |
-| Arm strength / velocity | 7.0 /10 | Staff judgment |
-| Short-intermediate ball placement | 4.5 /10 | Staff judgment |
-| Deep-outside placement | 5.5 /10 | Staff judgment |
-| Timing / anticipation | 3.5 /10 | Staff judgment |
-| Coverage / protection processing | 3.5 /10 | Staff judgment |
-| Pocket movement | 3.5 /10 | Staff judgment |
-| Scramble speed / mobility | 3.0 /10 | Staff judgment |
-| Mechanics / release | 4.5 /10 | Staff judgment |
-| Pressure decision-making | 3.5 /10 | Staff judgment |
-| Ball security / command | 3.5 /10 | Staff judgment |
+## Staff assessment
 
-Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | Below NFL starter standard | Below elite standard | At low-end standard |
-| Strength / Power | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Arm strength / velocity | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Short-intermediate ball placement | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Deep-outside placement | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Timing / anticipation | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Coverage / protection processing | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Pocket movement | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Scramble speed / mobility | Below NFL starter standard | Below elite standard | At low-end standard |
-| Mechanics / release | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Pressure decision-making | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Ball security / command | Below NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards, not measured 2014 league ranks.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 4.0/10 |
+| Athleticism | 4.0/10 |
+| Speed | 3.0/10 |
+| Strength and power | 5.5/10 |
+| Agility and change of direction | 3.5/10 |
+| Technique | 4.5/10 |
+| Football IQ | 3.5/10 |
+| Arm strength and velocity | 7.0/10 |
+| Short-intermediate ball placement | 4.5/10 |
+| Deep-outside placement | 5.5/10 |
+| Timing and anticipation | 3.5/10 |
+| Coverage and protection processing | 3.5/10 |
+| Pocket movement | 3.5/10 |
+| Scramble speed and mobility | 3.0/10 |
+| Mechanics and release | 4.5/10 |
+| Pressure decision-making | 3.5/10 |
+| Ball security and command | 3.5/10 |
 
 A developmental vertical passer with a stronger throwing tool than his command of the offense. I see a quarterback who needs timing and protection answers to catch up to the arm.
 
-Source: [2013 profile](../../../../2013/player_profiles/tyler_bray.md) and its recorded practice/game sources.
+*Staff view, March 31, 2014.*
 
-## Year-over-year change
+## Contract
 
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Player identity and position traits | 2013 baseline | Starting 2014 view | Retained | No new individual football evidence establishing change |
+Weekly practice-squad contract through the 2014 season.
 
-## What supports this assessment
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | about $107,100 | Not settled |
 
-A developmental vertical passer with a stronger throwing tool than his command of the offense. I see a quarterback who needs timing and protection answers to catch up to the arm.
+## Statistics
 
-[2013 profile](../../../../2013/player_profiles/tyler_bray.md) and its recorded practice/game sources.
+### Regular season
 
-## Historical comparison
+No regular-season games on record.
 
-The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.
+### Playoffs
 
-## Play style
+No playoff games on record.
 
-A developmental vertical passer with a stronger throwing tool than his command of the offense. I see a quarterback who needs timing and protection answers to catch up to the arm.
+## Awards
 
-## Best traits
+None.
 
-- Arm strength / velocity: 7.0 /10.
-- Deep-outside placement: 5.5 /10.
-- Short-intermediate ball placement: 4.5 /10.
+## Transactions
 
-## Main weaknesses
+| Date | Transaction |
+|---|---|
+| April 27, 2013 | Drafted by Jacksonville with the No. 208 pick |
+| May 2, 2013 | Signed a four-year rookie contract with Jacksonville |
+| August 31, 2013 | Released or waived by Jacksonville at the reduction to 53 |
+| September 1, 2013 | Cleared waivers; signed to the Jacksonville practice squad |
+| February 3, 2014 | Signed a reserve/future contract with Jacksonville, effective March 11, 2014 |
+| August 30, 2014 | Waived by Jacksonville at the reduction to 53 |
+| August 31, 2014 | Cleared waivers; signed to the Jacksonville practice squad |
 
-- Scramble speed / mobility: 3.0 /10.
-- Timing / anticipation: 3.5 /10.
-- Coverage / protection processing: 3.5 /10.
-
-## Evidence and uncertainty
-
-- **Primary evidence:** [2013 profile](../../../../2013/player_profiles/tyler_bray.md) and its recorded practice/game sources.
-- **Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
-
-**One-line description:** A developmental vertical passer with a stronger throwing tool than his command of the offense. I see a quarterback who needs timing and protection answers to catch up to the arm.
-
-## 2013 season production
-
-No statistical row was recorded for this player in 2013.
-
-Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 22 | N/A | Through Week 5 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 22 | N/A | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

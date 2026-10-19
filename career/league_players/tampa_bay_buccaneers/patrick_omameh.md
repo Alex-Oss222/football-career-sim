@@ -1,15 +1,22 @@
 # Patrick Omameh
 
-![Patrick Omameh career card](assets/patrick_omameh.svg)
+**Tampa Bay Buccaneers · Guard · No. 66 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 305 lb · Born December 29, 1989 · Michigan
+
+As of October 5, 2014, after Week 5.
+
+![Patrick Omameh](https://commons.wikimedia.org/wiki/Special:FilePath/Patrick_Omameh.jpg?width=500)
+
+*Photo: Missy Caulk from Saline, MI, United States, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Patrick_Omameh.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Tampa Bay Buccaneers | 24 | 66 | 5 | 5 | 328 | 3 | 23 | 0 | 0 | 0 | 0 | 65.6 |
-| **Career** |  |  |  | 5 | 5 | 328 | 3 | 23 | 0 | 0 | 0 | 0 | 65.6 |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 24 | 66 | 5 | 5 | 328 | 3 | 23 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).
+<!-- player-page -->

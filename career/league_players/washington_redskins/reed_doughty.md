@@ -1,15 +1,22 @@
 # Reed Doughty
 
-![Reed Doughty career card](assets/reed_doughty.svg)
+**Washington Redskins · Strong safety · Age 31 · Last game December 29, 2013**
 
-## Career stats
+6' 1", 206 lb · Born November 4, 1982 · Northern Colorado · Drafted in 2006, sixth round, by Washington
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Washington Redskins | 30 | 37 | 16 | 60 | 3 | 9 | 18 | 3 | 2 | 0 | 0 | 3.8 | 0 |
-| **Career** |  |  |  | 16 | 60 | 3 | 9 | 18 | 3 | 2 | 0 | 0 | 3.8 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Washington | 30 | 37 | 16 | 60 | 33 | 27 | 3 | 2 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Washington | 30 | 37 | 3 | 18 | 9 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Washington Redskins players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Washington in the sixth round |
+
+<!-- player-page -->

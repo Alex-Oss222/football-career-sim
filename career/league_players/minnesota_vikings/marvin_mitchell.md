@@ -1,27 +1,41 @@
 # Marvin Mitchell
 
-![Marvin Mitchell career card](assets/marvin_mitchell.svg)
+**Minnesota Vikings · Outside linebacker · Age 29 · Last game February 2, 2014**
 
-## Career stats
+6' 3", 249 lb · Born October 21, 1984 · Tennessee · Drafted in 2007, seventh round, by New Orleans
+
+As of February 2, 2014, after the Super Bowl.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 28 | 55 | 16 | 57 | 0 | 5 | 0 | 3 | 1 | 1 | 3 | 3.6 | 30 |
-| **Career** |  |  |  | 16 | 57 | 0 | 5 | 0 | 3 | 1 | 1 | 3 | 3.6 | 30 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 28 | 55 | 16 | 57 | 30 | 27 | 5 | 0 | 3 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 28 | 55 | 0 | 0 | 3 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 28 | 55 | 3 | 13 | 0 | 3 | 0 | 1 | 1 | 1 | 1 | 4.3 | 10 |
-| **Career** |  |  |  | 3 | 13 | 0 | 3 | 0 | 1 | 1 | 1 | 1 | 4.3 | 10 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 28 | 55 | 3 | 13 | 10 | 3 | 3 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 28 | 55 | 0 | 0 | 1 | 1 | 1 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through February 2, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Minnesota Vikings players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by New Orleans in the seventh round |
+
+<!-- player-page -->

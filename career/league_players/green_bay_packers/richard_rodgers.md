@@ -1,15 +1,22 @@
 # Richard Rodgers
 
-![Richard Rodgers career card](assets/richard_rodgers.svg)
+**Green Bay Packers · Tight end · No. 89 · Age 22 · Last game October 2, 2014**
 
-## Career stats
+6' 4", 257 lb · Born January 22, 1992 · California
+
+As of October 2, 2014, after Week 5.
+
+![Richard Rodgers](https://commons.wikimedia.org/wiki/Special:FilePath/Richard_Rodgers_Cropped.jpg?width=500)
+
+*Photo: Kyle Engman, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Richard_Rodgers_Cropped.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Green Bay Packers | 22 | 89 | 5 | 23 | 12 | 139 | 11.6 | 2 | 27.8 | 52.2 | 71 | 0 | 0 |
-| **Career** |  |  |  | 5 | 23 | 12 | 139 | 11.6 | 2 | 27.8 | 52.2 | 71 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 22 | 89 | 5 | 23 | 12 | 139 | 11.6 | 2 | 71 | 27.8 | 52.2 |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+<!-- player-page -->

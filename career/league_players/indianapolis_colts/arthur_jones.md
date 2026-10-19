@@ -1,16 +1,29 @@
 # Arthur Jones
 
-![Arthur Jones career card](assets/arthur_jones.svg)
+**Indianapolis Colts · Defensive tackle · No. 97 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 337 lb · Born June 3, 1986 · Syracuse · Drafted in 2010, fifth round, by Baltimore
+
+As of October 5, 2014, after Week 5.
+
+![Arthur Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Arthur_Jones_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Arthur_Jones_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Baltimore Ravens | 27 | 97 | 15 | 27 | 3 | 3 | 0 | 2 | 0 | 0 | 10 | 1.8 | 15 |
-| 2014 | Indianapolis Colts | 28 | 97 | 4 | 12 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3.0 | 5 |
-| **Career** |  |  |  | 19 | 39 | 3 | 3 | 0 | 2 | 0 | 0 | 10 | 2.1 | 20 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 28 | 97 | 4 | 12 | 5 | 7 | 0 | 0 | 0 |
+| 2013 | Baltimore | 27 | 97 | 15 | 27 | 15 | 12 | 3 | 3 | 10 |
+| Career |  |  |  | 19 | 39 | 20 | 19 | 3 | 3 | 10 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 28 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Baltimore | 27 | 97 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Baltimore in the fifth round |
+
+<!-- player-page -->

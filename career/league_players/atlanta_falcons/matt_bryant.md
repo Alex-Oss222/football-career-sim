@@ -1,16 +1,29 @@
 # Matt Bryant
 
-![Matt Bryant career card](assets/matt_bryant.svg)
+**Atlanta Falcons · Kicker · No. 3 · Age 39 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 203 lb · Born May 29, 1975 · Baylor; Oregon State; Trinity Valley CC
+
+As of October 5, 2014, after Week 5.
+
+![Matt Bryant](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Bryant_2013.jpg?width=500)
+
+*Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Matt_Bryant_2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 38 | 3 | 16 | 30-32 | 93.8 | N/A | 34-34 | 100.0 | 124 | N/A | N/A | N/A | 7.8 |
-| 2014 | Atlanta Falcons | 39 | 3 | 5 | 6-9 | 66.7 | 53 | 17-17 | 100.0 | 35 | 1-2 | 1-3 | 4-4 | 7.0 |
-| **Career** |  |  |  | 21 | 36-41 | 87.8 | N/A | 51-51 | 100.0 | 159 | N/A | N/A | N/A | 7.6 |
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 39 | 3 | 5 | 6 | 9 | 66.7 | 53 | 17 | 17 | 100.0 | 35 |
+| 2013 | Atlanta | 38 | 3 | 16 | 30 | 32 | 93.8 | N/A | 34 | 34 | 100.0 | 124 |
+| Career |  |  |  | 21 | 36 | 41 | 87.8 | N/A | 51 | 51 | 100.0 | 159 |
+
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 39 | 3 | 4-4 | 1-2 | 1-3 |
+| 2013 | Atlanta | 38 | 3 | N/A | N/A | N/A |
 
 ### Playoffs
 
@@ -21,6 +34,8 @@ No playoff games on record.
 - NFC Special Teams Player of the Week (2013, Week 1)
 - NFC Special Teams Player of the Week (2013, Week 15)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+None on record.
+
+<!-- player-page -->

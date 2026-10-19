@@ -1,16 +1,29 @@
 # Eli Manning
 
-![Eli Manning career card](assets/eli_manning.svg)
+**New York Giants · Quarterback · No. 10 · Age 33 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 218 lb · Born January 3, 1981 · Mississippi · Drafted in 2004, first round, by San Diego
+
+As of October 5, 2014, after Week 5.
+
+![Eli Manning](https://commons.wikimedia.org/wiki/Special:FilePath/Eli_Manning_US_govt.jpg?width=500)
+
+*Photo: President's Council on Fitness and Sports, Public domain ([source](https://commons.wikimedia.org/wiki/File:Eli_Manning_US_govt.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Giants | 32 | 10 | 16 | 352-573 | 61.4 | 3,765 | 19 | 17 | 6.6 | 79.3 | 235.3 | 231 | 2 |
-| 2014 | New York Giants | 33 | 10 | 5 | 89-154 | 57.8 | 1,161 | 5 | 4 | 7.5 | 81.7 | 232.2 | 29 | 0 |
-| **Career** |  |  |  | 21 | 441-727 | 60.7 | 4,926 | 24 | 21 | 6.8 | 79.8 | 234.6 | 260 | 2 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 33 | 10 | 5 | 89 | 154 | 57.8 | 1,161 | 7.5 | 232.2 | 5 | 4 | 81.7 |
+| 2013 | N.Y. Giants | 32 | 10 | 16 | 352 | 573 | 61.4 | 3,765 | 6.6 | 235.3 | 19 | 17 | 79.3 |
+| Career |  |  |  | 21 | 441 | 727 | 60.7 | 4,926 | 6.8 | 234.6 | 24 | 21 | 79.8 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 33 | 10 | 11 | 81 | 13 | 29 | 0 | 1 | 1 |
+| 2013 | N.Y. Giants | 32 | 10 | 38 | 250 | 42 | 231 | 2 | 1 | 1 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).
+| Date | Transaction |
+|---|---|
+| 2004 | Drafted by San Diego in the first round |
+
+<!-- player-page -->

@@ -1,16 +1,24 @@
 # Martellus Bennett
 
-![Martellus Bennett career card](assets/martellus_bennett.svg)
+**Chicago Bears · Tight end · No. 83 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 265 lb · Born March 10, 1987 · Texas A&M · Drafted in 2008, second round, by Dallas
+
+As of October 5, 2014, after Week 5.
+
+![Martellus Bennett](https://commons.wikimedia.org/wiki/Special:FilePath/Martellus_Bennett_2012_Shankbone.JPG?width=500)
+
+*Photo: David Shankbone, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Martellus_Bennett_2012_Shankbone.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Chicago Bears | 26 | 83 | 16 | 96 | 58 | 476 | 8.2 | 2 | 29.8 | 60.4 | 36 | 0 | 0 |
-| 2014 | Chicago Bears | 27 | 83 | 5 | 31 | 20 | 161 | 8.1 | 2 | 32.2 | 64.5 | 27 | 0 | 0 |
-| **Career** |  |  |  | 21 | 127 | 78 | 637 | 8.2 | 4 | 30.3 | 61.4 | 36 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Chicago | 27 | 83 | 5 | 31 | 20 | 161 | 8.1 | 2 | 27 | 32.2 | 64.5 |
+| 2013 | Chicago | 26 | 83 | 16 | 96 | 58 | 476 | 8.2 | 2 | 36 | 29.8 | 60.4 |
+| Career |  |  |  | 21 | 127 | 78 | 637 | 8.2 | 4 | 36 | 30.3 | 61.4 |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Chicago Bears players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Dallas in the second round |
+
+<!-- player-page -->

@@ -1,28 +1,48 @@
 # Roman Harper
 
-![Roman Harper career card](assets/roman_harper.svg)
+**Carolina Panthers · Strong safety · No. 41 · Age 31 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 205 lb · Born December 11, 1982 · Alabama · Drafted in 2006, second round, by New Orleans
+
+As of October 5, 2014, after Week 5.
+
+![Roman Harper](https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Harper_2012.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Roman_Harper_2012.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 30 | 41 | 16 | 106 | 4 | 20 | 92 | 2 | 1 | 0 | 0 | 6.6 | 0 |
-| 2014 | Carolina Panthers | 31 | 41 | 5 | 27 | 0 | 1 | 0 | 1 | 1 | 1 | 0 | 5.4 | 0 |
-| **Career** |  |  |  | 21 | 133 | 4 | 21 | 92 | 3 | 2 | 1 | 0 | 6.3 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 31 | 41 | 5 | 27 | 20 | 7 | 1 | 1 | 1 |
+| 2013 | New Orleans | 30 | 41 | 16 | 106 | 80 | 26 | 2 | 1 | 3 |
+| Career |  |  |  | 21 | 133 | 100 | 33 | 3 | 2 | 4 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 31 | 41 | 0 | 0 | 1 | 1 | 0 | 0 |
+| 2013 | New Orleans | 30 | 41 | 4 | 92 | 20 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 30 | 41 | 1 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 8.0 | 0 |
-| **Career** |  |  |  | 1 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 8.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 30 | 41 | 1 | 8 | 5 | 3 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 30 | 41 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
 - NFC Defensive Player of the Week (2013, Week 15)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by New Orleans in the second round |
+
+<!-- player-page -->

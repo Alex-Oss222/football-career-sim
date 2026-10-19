@@ -1,16 +1,29 @@
 # Robert McClain
 
-![Robert McClain career card](assets/robert_mcclain.svg)
+**Atlanta Falcons · Cornerback · No. 27 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 195 lb · Born July 22, 1988 · Connecticut · Drafted in 2010, seventh round, by Carolina
+
+As of October 5, 2014, after Week 5.
+
+![Robert McClain](https://commons.wikimedia.org/wiki/Special:FilePath/Robert_McClain_2013_02.jpg?width=500)
+
+*Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Robert_McClain_2013_02.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 25 | 27 | 16 | 17 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 1.1 | 0 |
-| 2014 | Atlanta Falcons | 26 | 27 | 5 | 16 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 3.2 | 0 |
-| **Career** |  |  |  | 21 | 33 | 0 | 5 | 0 | 2 | 0 | 0 | 0 | 1.6 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 26 | 27 | 5 | 16 | 14 | 2 | 1 | 0 | 1 |
+| 2013 | Atlanta | 25 | 27 | 16 | 17 | 12 | 5 | 1 | 0 | 0 |
+| Career |  |  |  | 21 | 33 | 26 | 7 | 2 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 26 | 27 | 0 | 0 | 1 | 0 | 0 | 1 |
+| 2013 | Atlanta | 25 | 27 | 0 | 0 | 4 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Carolina in the seventh round |
+
+<!-- player-page -->

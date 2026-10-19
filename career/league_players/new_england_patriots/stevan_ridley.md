@@ -1,16 +1,34 @@
 # Stevan Ridley
 
-![Stevan Ridley career card](assets/stevan_ridley.svg)
+**New England Patriots · Running back · No. 22 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 220 lb · Born January 27, 1989 · LSU · Drafted in 2011, third round, by New England
+
+As of October 5, 2014, after Week 5.
+
+![Stevan Ridley](https://commons.wikimedia.org/wiki/Special:FilePath/Stevan_Ridley.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Stevan_Ridley.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 24 | 22 | 16 | 264 | 1,296 | 4.9 | 13 | 81.0 | 51 | 556 | 4 | 315 | 3 |
-| 2014 | New England Patriots | 25 | 22 | 5 | 112 | 502 | 4.5 | 5 | 100.4 | 7 | 52 | 1 | 119 | 1 |
-| **Career** |  |  |  | 21 | 376 | 1,798 | 4.8 | 18 | 85.6 | 58 | 608 | 5 | 434 | 4 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 25 | 22 | 5 | 112 | 502 | 4.5 | 5 | 34 | 100.4 |
+| 2013 | New England | 24 | 22 | 16 | 264 | 1,296 | 4.9 | 13 | 46 | 81.0 |
+| Career |  |  |  | 21 | 376 | 1,798 | 4.8 | 18 | 46 | 85.6 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 25 | 22 | 12 | 7 | 52 | 7.4 | 1 | 1 | 1 |
+| 2013 | New England | 24 | 22 | 70 | 51 | 556 | 10.9 | 4 | 3 | 3 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 25 | 22 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | New England | 24 | 22 | 1 | 35 | 35.0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -23,6 +41,10 @@ No playoff games on record.
 - AFC Offensive Player of the Month (2013, November)
 - Pro Bowl selection (2013, RB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New England Patriots players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by New England in the third round |
+
+<!-- player-page -->

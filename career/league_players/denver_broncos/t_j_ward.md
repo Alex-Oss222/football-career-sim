@@ -1,16 +1,29 @@
 # T.J. Ward
 
-![T.J. Ward career card](assets/t_j_ward.svg)
+**Denver Broncos · Strong safety · No. 43 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 200 lb · Born December 12, 1986 · Oregon · Drafted in 2010, second round, by Cleveland
+
+As of October 5, 2014, after Week 5.
+
+![T.J. Ward](https://commons.wikimedia.org/wiki/Special:FilePath/T.J.WardBroncos.jpg?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:T.J.WardBroncos.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 26 | 43 | 16 | 114 | 3 | 15 | 44 | 3 | 0 | 1 | 1 | 7.1 | 0 |
-| 2014 | Denver Broncos | 27 | 43 | 4 | 17 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 4.2 | 0 |
-| **Career** |  |  |  | 20 | 131 | 4 | 16 | 45 | 3 | 0 | 1 | 1 | 6.5 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 27 | 43 | 4 | 17 | 9 | 8 | 0 | 0 | 0 |
+| 2013 | Cleveland | 26 | 43 | 16 | 114 | 79 | 35 | 3 | 0 | 0 |
+| Career |  |  |  | 20 | 131 | 88 | 43 | 3 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 27 | 43 | 1 | 1 | 1 | 0 | 0 | 0 |
+| 2013 | Cleveland | 26 | 43 | 3 | 44 | 15 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -20,6 +33,10 @@ No playoff games on record.
 
 - AFC Defensive Player of the Week (2013, Week 11)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Cleveland in the second round |
+
+<!-- player-page -->

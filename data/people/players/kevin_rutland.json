@@ -1,0 +1,44 @@
+{
+ "schema_version": 1,
+ "name": "Kevin Rutland",
+ "gsis_id": "00-0028420",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/kevin_rutland.md"
+  }
+ ],
+ "awards": [],
+ "transactions": [
+  {
+   "date": "2011",
+   "kind": "signed",
+   "text": "Signed a three-year contract with Jacksonville as an undrafted rookie",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md"
+  },
+  {
+   "date": "2014-03-11",
+   "kind": "not_tendered",
+   "text": "Not tendered by Jacksonville; became an unrestricted free agent",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  },
+  {
+   "date": "2014-06-02",
+   "kind": "not_tendered",
+   "text": "No June 1 tender from Jacksonville; Jacksonville retained no rights",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  }
+ ]
+}

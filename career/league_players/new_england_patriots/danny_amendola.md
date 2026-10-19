@@ -1,16 +1,29 @@
 # Danny Amendola
 
-![Danny Amendola career card](assets/danny_amendola.svg)
+**New England Patriots · Wide receiver · No. 80 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 195 lb · Born November 2, 1985 · Texas Tech
+
+As of October 5, 2014, after Week 5.
+
+![Danny Amendola](https://commons.wikimedia.org/wiki/Special:FilePath/Danny_Amendola_Rams.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Danny_Amendola_Rams.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 27 | 80 | 16 | 142 | 87 | 860 | 9.9 | 4 | 53.8 | 61.3 | 38 | 5 | 0 |
-| 2014 | New England Patriots | 28 | 80 | 5 | 30 | 21 | 270 | 12.9 | 1 | 54.0 | 70.0 | 42 | 0 | 0 |
-| **Career** |  |  |  | 21 | 172 | 108 | 1,130 | 10.5 | 5 | 53.8 | 62.8 | 42 | 5 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 28 | 80 | 5 | 30 | 21 | 270 | 12.9 | 1 | 42 | 54.0 | 70.0 |
+| 2013 | New England | 27 | 80 | 16 | 142 | 87 | 860 | 9.9 | 4 | 38 | 53.8 | 61.3 |
+| Career |  |  |  | 21 | 172 | 108 | 1,130 | 10.5 | 5 | 42 | 53.8 | 62.8 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 28 | 80 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | New England | 27 | 80 | 2 | 5 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New England Patriots players](README.md).
+<!-- player-page -->

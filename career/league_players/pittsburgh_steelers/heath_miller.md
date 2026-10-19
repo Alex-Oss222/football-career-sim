@@ -1,28 +1,44 @@
 # Heath Miller
 
-![Heath Miller career card](assets/heath_miller.svg)
+**Pittsburgh Steelers · Tight end · No. 83 · Age 31 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 256 lb · Born October 22, 1982 · Virginia · Drafted in 2005, first round, by Pittsburgh
+
+As of October 5, 2014, after Week 5.
+
+![Heath Miller](https://commons.wikimedia.org/wiki/Special:FilePath/Heath_Miller_in_2012.jpg?width=500)
+
+*Photo: Fido, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Heath_Miller_in_2012.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 30 | 83 | 14 | 89 | 52 | 567 | 10.9 | 4 | 40.5 | 58.4 | 74 | 3 | 1 |
-| 2014 | Pittsburgh Steelers | 31 | 83 | 5 | 36 | 17 | 190 | 11.2 | 0 | 38.0 | 47.2 | 43 | 0 | 1 |
-| **Career** |  |  |  | 19 | 125 | 69 | 757 | 11.0 | 4 | 39.8 | 55.2 | 74 | 3 | 2 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 31 | 83 | 5 | 36 | 17 | 190 | 11.2 | 0 | 43 | 38.0 | 47.2 |
+| 2013 | Pittsburgh | 30 | 83 | 14 | 89 | 52 | 567 | 10.9 | 4 | 74 | 40.5 | 58.4 |
+| Career |  |  |  | 19 | 125 | 69 | 757 | 11.0 | 4 | 74 | 39.8 | 55.2 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 31 | 83 | 0 | 0 | 0 | 1 | 1 |
+| 2013 | Pittsburgh | 30 | 83 | 1 | 3 | 0 | 1 | 1 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 30 | 83 | 1 | 14 | 11 | 89 | 8.1 | 2 | 89.0 | 78.6 | 21 | 0 | 0 |
-| **Career** |  |  |  | 1 | 14 | 11 | 89 | 8.1 | 2 | 89.0 | 78.6 | 21 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 30 | 83 | 1 | 14 | 11 | 89 | 8.1 | 2 | 21 | 89.0 | 78.6 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2005 | Drafted by Pittsburgh in the first round |
+
+<!-- player-page -->

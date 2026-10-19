@@ -1,27 +1,45 @@
 # Ziggy Hood
 
-![Ziggy Hood career card](assets/ziggy_hood.svg)
+**Pittsburgh Steelers · Defensive end · Age 26 · Last game January 5, 2014**
 
-## Career stats
+6' 3", 300 lb · Born February 16, 1987 · Missouri · Drafted in 2009, first round, by Pittsburgh
+
+As of January 5, 2014, after the Wild Card round.
+
+![Ziggy Hood](https://commons.wikimedia.org/wiki/Special:FilePath/Ziggy_Hood_96_coming_off_field_2013.jpg?width=500)
+
+*Photo: I, the copyright holder of this work, hereby publish it under the following license:, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ziggy_Hood_96_coming_off_field_2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 26 | 96 | 16 | 60 | 7 | 2 | 0 | 1 | 0 | 0 | 13 | 3.8 | 38 |
-| **Career** |  |  |  | 16 | 60 | 7 | 2 | 0 | 1 | 0 | 0 | 13 | 3.8 | 38 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 26 | 96 | 16 | 60 | 38 | 22 | 2 | 7 | 13 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 26 | 96 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 26 | 96 | 1 | 2 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 2.0 | 0 |
-| **Career** |  |  |  | 1 | 2 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 2.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 26 | 96 | 1 | 2 | 0 | 2 | 0 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 26 | 96 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 5, 2014. Identity: listed 2014 roster data, Weeks 1-4. [All Pittsburgh Steelers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Pittsburgh in the first round |
+
+<!-- player-page -->

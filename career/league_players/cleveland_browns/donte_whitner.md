@@ -1,16 +1,29 @@
 # Donte Whitner
 
-![Donte Whitner career card](assets/donte_whitner.svg)
+**Cleveland Browns · Strong safety · No. 31 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 208 lb · Born July 24, 1985 · Ohio State · Drafted in 2006, first round, by Buffalo
+
+As of October 5, 2014, after Week 5.
+
+![Donte Whitner](https://commons.wikimedia.org/wiki/Special:FilePath/Donte_Whitner_%2814576183340%29.jpg?width=500)
+
+*Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Donte_Whitner_(14576183340).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 28 | 31 | 16 | 117 | 1 | 21 | 30 | 3 | 0 | 1 | 1 | 7.3 | 0 |
-| 2014 | Cleveland Browns | 29 | 31 | 4 | 16 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 4.0 | 0 |
-| **Career** |  |  |  | 20 | 133 | 1 | 23 | 30 | 3 | 0 | 1 | 1 | 6.7 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 29 | 31 | 4 | 16 | 10 | 6 | 0 | 0 | 0 |
+| 2013 | San Francisco | 28 | 31 | 16 | 117 | 80 | 37 | 3 | 0 | 1 |
+| Career |  |  |  | 20 | 133 | 90 | 43 | 3 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 29 | 31 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2013 | San Francisco | 28 | 31 | 1 | 30 | 21 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Buffalo in the first round |
+
+<!-- player-page -->

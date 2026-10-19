@@ -1,16 +1,29 @@
 # Ryan Broyles
 
-![Ryan Broyles career card](assets/ryan_broyles.svg)
+**Detroit Lions · Wide receiver · No. 84 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 195 lb · Born April 9, 1988 · Oklahoma · Drafted in 2012, second round, by Detroit
+
+As of October 5, 2014, after Week 5.
+
+![Ryan Broyles](https://commons.wikimedia.org/wiki/Special:FilePath/Detroit_Lions_Receiver_Ryan_Broyles_at_the_2012_Lions_training_camp.jpg?width=500)
+
+*Photo: Kevind810, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Detroit_Lions_Receiver_Ryan_Broyles_at_the_2012_Lions_training_camp.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Detroit Lions | 25 | 84 | 16 | 61 | 41 | 401 | 9.8 | 1 | 25.1 | 67.2 | 38 | -3 | 0 |
-| 2014 | Detroit Lions | 26 | 84 | 5 | 3 | 1 | 8 | 8.0 | 0 | 1.6 | 33.3 | 8 | 0 | 0 |
-| **Career** |  |  |  | 21 | 64 | 42 | 409 | 9.7 | 1 | 19.5 | 65.6 | 38 | -3 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 26 | 84 | 5 | 3 | 1 | 8 | 8.0 | 0 | 8 | 1.6 | 33.3 |
+| 2013 | Detroit | 25 | 84 | 16 | 61 | 41 | 401 | 9.8 | 1 | 38 | 25.1 | 67.2 |
+| Career |  |  |  | 21 | 64 | 42 | 409 | 9.7 | 1 | 38 | 19.5 | 65.6 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 26 | 84 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Detroit | 25 | 84 | 1 | -3 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Detroit in the second round |
+
+<!-- player-page -->

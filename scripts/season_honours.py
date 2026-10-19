@@ -24,11 +24,12 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from runtime.packets import canonical
+from runtime.seasons import SeasonPaths
 from runtime.week_inputs import schedule
 from scripts.league_awards import method as weekly_method, pick, score as formula_score
 from scripts.render_season_stats import load_receipts
 
-AWARDS = ROOT / "career/2013/awards"
+AWARDS = SeasonPaths(2013, ROOT).awards_data
 METHOD = AWARDS / "season_honours_method.json"
 EVIDENCE = AWARDS / "season_honours_evidence.json"
 RESULTS = AWARDS / "season_honours_results.json"
@@ -43,11 +44,11 @@ def load(path):
 
 
 def regular_receipts():
-    return [r for r in load_receipts(ROOT / "career/2013/stats/game_receipts") if int(r["week"]) <= 17]
+    return [r for r in load_receipts(SeasonPaths(2013, ROOT).receipts) if int(r["week"]) <= 17]
 
 
 def postseason_receipts():
-    return list(load_receipts(ROOT / "career/2013/stats/postseason_receipts"))
+    return list(load_receipts(SeasonPaths(2013, ROOT).postseason_receipts))
 
 
 def group_of(position, m):
@@ -216,7 +217,7 @@ def pro_bowl(rows, m, all_receipts):
 
 
 def pro_bowl_coaches(evidence):
-    readme = (ROOT / "career/2013/postseason/README.md").read_text(encoding="utf-8")
+    readme = SeasonPaths(2013, ROOT).record("postseason/README.md").read_text(encoding="utf-8")
     seeds = {}
     for line in readme.splitlines():
         cells = [c.strip() for c in line.strip("|").split("|")]
@@ -294,7 +295,7 @@ def name_of(entry):
 def render_text(root=ROOT):
     """The season_honours.md text built from ``root``'s method and results,
     without writing anything (repository validation compares it)."""
-    awards = Path(root) / "career/2013/awards"
+    awards = SeasonPaths(2013, root).awards_data
     return page_text(load(awards / METHOD.name), load(awards / RESULTS.name))
 
 

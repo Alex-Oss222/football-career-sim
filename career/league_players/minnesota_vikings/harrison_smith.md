@@ -1,28 +1,48 @@
 # Harrison Smith
 
-![Harrison Smith career card](assets/harrison_smith.svg)
+**Minnesota Vikings · Free safety · No. 22 · Age 25 · Last game October 2, 2014**
 
-## Career stats
+6' 2", 214 lb · Born February 2, 1989 · Notre Dame · Drafted in 2012, first round, by Minnesota
+
+As of October 2, 2014, after Week 5.
+
+![Harrison Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Harrison_Smith_%28American_football%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Harrison_Smith_(American_football).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 24 | 22 | 16 | 139 | 2 | 12 | 69 | 4 | 0 | 0 | 0 | 8.7 | 0 |
-| 2014 | Minnesota Vikings | 25 | 22 | 5 | 33 | 0 | 5 | 0 | 2 | 0 | 1 | 1 | 6.6 | 0 |
-| **Career** |  |  |  | 21 | 172 | 2 | 17 | 69 | 6 | 0 | 1 | 1 | 8.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 25 | 22 | 5 | 33 | 22 | 11 | 2 | 0 | 0 |
+| 2013 | Minnesota | 24 | 22 | 16 | 139 | 96 | 43 | 4 | 0 | 1 |
+| Career |  |  |  | 21 | 172 | 118 | 54 | 6 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 25 | 22 | 0 | 0 | 5 | 1 | 1 | 0 |
+| 2013 | Minnesota | 24 | 22 | 2 | 69 | 12 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 24 | 22 | 3 | 17 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 5.7 | 0 |
-| **Career** |  |  |  | 3 | 17 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 5.7 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 24 | 22 | 3 | 17 | 13 | 4 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 24 | 22 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Minnesota in the first round |
+
+<!-- player-page -->

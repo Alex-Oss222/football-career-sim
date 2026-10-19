@@ -1,28 +1,44 @@
 # Jimmy Graham
 
-![Jimmy Graham career card](assets/jimmy_graham.svg)
+**New Orleans Saints · Tight end · No. 80 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 7", 265 lb · Born November 24, 1986 · Miami · Drafted in 2010, third round, by New Orleans
+
+As of October 5, 2014, after Week 5.
+
+![Jimmy Graham](https://commons.wikimedia.org/wiki/Special:FilePath/Jimmy_Graham.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jimmy_Graham.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 26 | 80 | 16 | 88 | 55 | 648 | 11.8 | 3 | 40.5 | 62.5 | 63 | 0 | 1 |
-| 2014 | New Orleans Saints | 27 | 80 | 5 | 33 | 16 | 200 | 12.5 | 1 | 40.0 | 48.5 | 31 | 0 | 0 |
-| **Career** |  |  |  | 21 | 121 | 71 | 848 | 11.9 | 4 | 40.4 | 58.7 | 63 | 0 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New Orleans | 27 | 80 | 5 | 33 | 16 | 200 | 12.5 | 1 | 31 | 40.0 | 48.5 |
+| 2013 | New Orleans | 26 | 80 | 16 | 88 | 55 | 648 | 11.8 | 3 | 63 | 40.5 | 62.5 |
+| Career |  |  |  | 21 | 121 | 71 | 848 | 11.9 | 4 | 63 | 40.4 | 58.7 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New Orleans | 27 | 80 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | New Orleans | 26 | 80 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 26 | 80 | 1 | 2 | 2 | 9 | 4.5 | 0 | 9.0 | 100.0 | 5 | 0 | 0 |
-| **Career** |  |  |  | 1 | 2 | 2 | 9 | 4.5 | 0 | 9.0 | 100.0 | 5 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 26 | 80 | 1 | 2 | 2 | 9 | 4.5 | 0 | 5 | 9.0 | 100.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New Orleans Saints players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by New Orleans in the third round |
+
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # Terrell Suggs
 
-![Terrell Suggs career card](assets/terrell_suggs.svg)
+**Baltimore Ravens · Outside linebacker · No. 55 · Age 31 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 260 lb · Born October 11, 1982 · Arizona State · Drafted in 2003, first round, by Baltimore
+
+As of October 5, 2014, after Week 5.
+
+![Terrell Suggs](https://commons.wikimedia.org/wiki/Special:FilePath/Terrell_Suggs_2011_stadium_practice.jpg?width=500)
+
+*Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Terrell_Suggs_2011_stadium_practice.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Baltimore Ravens | 30 | 55 | 16 | 120 | 5 | 3 | 0 | 4 | 0 | 0 | 13 | 7.5 | 67 |
-| 2014 | Baltimore Ravens | 31 | 55 | 5 | 46 | 6 | 4 | 0 | 3 | 0 | 0 | 6 | 9.2 | 37 |
-| **Career** |  |  |  | 21 | 166 | 11 | 7 | 0 | 7 | 0 | 0 | 19 | 7.9 | 104 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 31 | 55 | 5 | 46 | 37 | 9 | 4 | 6 | 6 |
+| 2013 | Baltimore | 30 | 55 | 16 | 120 | 67 | 53 | 3 | 5 | 13 |
+| Career |  |  |  | 21 | 166 | 104 | 62 | 7 | 11 | 19 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Baltimore | 31 | 55 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2013 | Baltimore | 30 | 55 | 0 | 0 | 4 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Baltimore Ravens players](README.md).
+| Date | Transaction |
+|---|---|
+| 2003 | Drafted by Baltimore in the first round |
+
+<!-- player-page -->

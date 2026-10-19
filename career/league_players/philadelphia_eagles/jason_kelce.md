@@ -1,28 +1,39 @@
 # Jason Kelce
 
-![Jason Kelce career card](assets/jason_kelce.svg)
+**Philadelphia Eagles · Center · No. 62 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 295 lb · Born November 5, 1987 · Cincinnati · Drafted in 2011, sixth round, by Philadelphia
+
+As of October 5, 2014, after Week 5.
+
+![Jason Kelce](https://commons.wikimedia.org/wiki/Special:FilePath/JasonKelce.jpg?width=500)
+
+*Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:JasonKelce.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 25 | 62 | 16 | N/A | N/A | 6 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Philadelphia Eagles | 26 | 62 | 4 | 4 | 285 | 2 | 19 | 0 | 0 | 0 | 0 | 71.2 |
-| **Career** |  |  |  | 20 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 26 | 62 | 4 | 4 | 285 | 2 | 19 |
+| 2013 | Philadelphia | 25 | 62 | 16 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 25 | 62 | 3 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 3 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 25 | 62 | 3 | N/A | N/A | 1 | N/A |
 
 ## Awards
 
 - Pro Bowl selection (2013, C)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Philadelphia Eagles players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Philadelphia in the sixth round |
+
+<!-- player-page -->

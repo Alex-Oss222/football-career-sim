@@ -1,16 +1,29 @@
 # Chris Harris
 
-![Chris Harris career card](assets/chris_harris.svg)
+**Denver Broncos · Cornerback · No. 25 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 199 lb · Born June 18, 1989 · Kansas
+
+As of October 5, 2014, after Week 5.
+
+![Chris Harris](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Harris_%28cornerback%29_2012.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Chris_Harris_(cornerback)_2012.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Denver Broncos | 24 | 25 | 16 | 19 | 2 | 5 | 80 | 0 | 1 | 0 | 0 | 1.2 | 0 |
-| 2014 | Denver Broncos | 25 | 25 | 4 | 23 | 2 | 4 | 45 | 0 | 0 | 0 | 0 | 5.8 | 0 |
-| **Career** |  |  |  | 20 | 42 | 4 | 9 | 125 | 0 | 1 | 0 | 0 | 2.1 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 25 | 25 | 4 | 23 | 11 | 12 | 0 | 0 | 1 |
+| 2013 | Denver | 24 | 25 | 16 | 19 | 12 | 7 | 0 | 1 | 1 |
+| Career |  |  |  | 20 | 42 | 23 | 19 | 0 | 1 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Denver | 25 | 25 | 2 | 45 | 4 | 0 | 0 | 0 |
+| 2013 | Denver | 24 | 25 | 2 | 80 | 5 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Denver Broncos players](README.md).
+<!-- player-page -->

@@ -1,0 +1,314 @@
+{
+ "schema_version": 1,
+ "name": "Jordan Poyer",
+ "gsis_id": "00-0030114",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/jordan_poyer.md"
+  },
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-03-31",
+   "date_as_written": "March 31, 2014 starting evaluation",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Starting staff view; exact theoretical personnel grades",
+   "position": "CB",
+   "age_as_written": "22",
+   "identity": "A developing nickel corner who can sort routes and maintain leverage through communication. I see short-area recognition ahead of outside recovery speed, press power and catch-point size.",
+   "previous_profile": "[2013 baseline](career/2013/player_profiles/jordan_poyer.md)",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Long / recovery speed",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Short-area quickness / hips",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Press coverage",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Off-man coverage",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Zone / pattern match",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Route recognition / eyes",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Ball skills",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Catch-point play",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Tackling / run support",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Block defeat / penalty discipline",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Long / recovery speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Short-area quickness / hips",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Press coverage",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Off-man coverage",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Zone / pattern match",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Route recognition / eyes",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Ball skills",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Catch-point play",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Tackling / run support",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Block defeat / penalty discipline",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards, not measured 2014 league ranks.",
+   "read": "A developing nickel corner who can sort routes and maintain leverage through communication. I see short-area recognition ahead of outside recovery speed, press power and catch-point size.",
+   "read_sources": "Source: [2013 profile](career/2013/player_profiles/jordan_poyer.md) and its recorded practice/game sources.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "2013 baseline",
+     "current": "Starting 2014 view",
+     "change": "Retained",
+     "reason": "No new individual football evidence establishing change"
+    }
+   ],
+   "support": "A developing nickel corner who can sort routes and maintain leverage through communication. I see short-area recognition ahead of outside recovery speed, press power and catch-point size.\n\n[2013 profile](career/2013/player_profiles/jordan_poyer.md) and its recorded practice/game sources.",
+   "historical_comparison": "The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.",
+   "play_style": "A developing nickel corner who can sort routes and maintain leverage through communication. I see short-area recognition ahead of outside recovery speed, press power and catch-point size.",
+   "best_traits": [
+    "Short-area quickness / hips: 6.0 /10.",
+    "Zone / pattern match: 6.0 /10.",
+    "Route recognition / eyes: 6.0 /10."
+   ],
+   "main_weaknesses": [
+    "Press coverage: 4.5 /10.",
+    "Catch-point play: 4.5 /10.",
+    "Block defeat / penalty discipline: 4.5 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [2013 profile](career/2013/player_profiles/jordan_poyer.md) and its recorded practice/game sources.",
+    "**Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics."
+   ],
+   "one_line": "A developing nickel corner who can sort routes and maintain leverage through communication. I see short-area recognition ahead of outside recovery speed, press power and catch-point size.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Poyer's rat vision held under the five-man rush; his slot jam also disrupted Hawkins's dig depth once. The coverage judgment follows the called help and replacement rules, not the completion alone.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-08-22",
+     "date_as_written": "August 22, 2014",
+     "setting": "Preseason game 3, Jacksonville at Detroit",
+     "text": "Forty-seven defensive snaps at the nickel across all four defensive blocks and 19 on the kicking game: the third-quarter interception of Orlovsky's throw to Ebron, returned 27 yards to the Detroit 35 and converted into a touchdown, a pass defended, the third-and-6 tackle on Fuller and two kickoff-coverage tackles. The play-by-play records no substitution fault across Detroit's personnel changes, the same negative answer to the communication question as Chicago; the substitution stress the plan wanted was not produced in a recorded form. A minor upper-extremity injury was logged at the end of Detroit's possession at 4:39 of the second quarter; he was not removed and finished the game, and the instruction afterward is out, projected return in four days (August 26), reassessment August 23 ([medical record](career/2014/Team_Operations/Medical/incidents/jordan_poyer_2014-08-22.md)). No role change follows.",
+     "source": "Source: [preseason game 3 output](career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_03/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-08-26",
+     "date_as_written": "August 26, 2014",
+     "setting": "Cleared on his projected date",
+     "text": "Reassessed August 23 with no change, cleared August 26, his projected date, under the record's method, and back in the work from that day: the nickel in the starting defense in the August 26 series practice and the August 27 walkthrough, the substitution on time on the recorded personnel changes, and the kickoff-coverage unit rebuilt by name after the Detroit review, no communicated limitation. He is at the nickel in the starting defense in Stone's frozen Atlanta plan, the plan's structure and not a new role; no football finding attaches to the instruction. Source: [medical record](career/2014/Team_Operations/Medical/incidents/jordan_poyer_2014-08-22.md); [camp record](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md#august-23-to-27-the-detroit-review-and-the-atlanta-preparation). This coaching update preserves the opening grades above.",
+     "source": ""
+    },
+    {
+     "date": "2014-09-21",
+     "date_as_written": "September 21, 2014",
+     "setting": "Week 3, Indianapolis at Jacksonville",
+     "text": "Thirty-six defensive snaps at the nickel and 13 on the kicking game with no tackle, pass defended or target recorded against him; the play-by-play names no defender on the Hilton and Moncrief completions, so whether any throw beat his coverage is the film's. A head/neck injury, short, was logged at the end of Indianapolis's three-and-out at 5:19 of the third quarter; he was removed, A.J. Bouye taking his place by the chart's order with no pause recorded, and he is on an independent medical hold: projected return October 9, reassessment September 27 ([medical record](career/2014/Team_Operations/Medical/incidents/jordan_poyer_2014-09-21.md)). On the projection he misses the San Diego and Pittsburgh games; the Week 4 nickel is Stone's decision after the Monday exams. No football finding attaches to the hold.",
+     "source": "Source: [Week 3 game record](career/2014/Regular_Season/Games/Week_03/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-27",
+     "date_as_written": "September 22 to 27, 2014",
+     "setting": "Hold continues",
+     "text": "His independent medical hold was reassessed Saturday, September 27, with no change, projected return October 9; no football work in the San Diego week; out on the Friday report and inactive by medical instruction for Week 4, listed last among the defensive backs while out, with Bouye at nickel. On the projection he also misses the Pittsburgh game. The staff's no-transaction recommendation went to Caldwell; no transaction was made. No football finding attaches to the hold.",
+     "source": "Source: [Week 4 record](career/2014/Regular_Season/Games/Week_04/output.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-10-04",
+     "date_as_written": "September 29 to October 4, 2014",
+     "setting": "Hold continues",
+     "text": "No reassessment was communicated in the Pittsburgh week and his independent medical hold stands, projected return October 9; no football work, out on the Friday report and inactive by medical instruction for Week 5, listed last among the defensive backs while out, Bouye at nickel. No football finding attaches to the hold.",
+     "source": "Source: [Week 5 record](career/2014/Regular_Season/Games/Week_05/output.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/jordan_poyer.md at commit 332d70b"
+  }
+ ],
+ "awards": [],
+ "transactions": [
+  {
+   "date": "2013-04-26",
+   "kind": "drafted",
+   "text": "Drafted by Jacksonville with the No. 64 pick",
+   "source": "career/2013/offseason/draft/draftees.md"
+  },
+  {
+   "date": "2013-05-02",
+   "kind": "signed",
+   "text": "Signed a four-year rookie contract with Jacksonville",
+   "source": "career/2013/offseason/draft/draftees.md"
+  }
+ ]
+}

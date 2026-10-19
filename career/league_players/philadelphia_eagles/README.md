@@ -1,18 +1,20 @@
 # Philadelphia Eagles players
 
-NFC East · Players whose latest game on record was with the Philadelphia Eagles. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+NFC East. The players whose latest game on record was with the Philadelphia Eagles. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 3 | [Mark Sanchez](mark_sanchez.md) | QB | 5 | 0 |
 | 9 | [Nick Foles](nick_foles.md) | QB | 5 | 16 |
 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 32 | [Chris Polk](chris_polk.md) | RB | 5 | 16 |
 | 43 | [Darren Sproles](darren_sproles.md) | RB | 5 | 14 |
 | 25 | [LeSean McCoy](lesean_mccoy.md) | RB | 5 | 16 |
@@ -20,7 +22,7 @@ NFC East · Players whose latest game on record was with the Philadelphia Eagles
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Ace Sanders](ace_sanders.md) | WR | 5 | 16 |
 | 16 | [Brad Smith](brad_smith.md) | WR | 5 | 0 |
 | 88 | [Jeff Maehl](jeff_maehl.md) | WR | 5 | 16 |
@@ -32,7 +34,7 @@ NFC East · Players whose latest game on record was with the Philadelphia Eagles
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 87 | [Brent Celek](brent_celek.md) | TE | 5 | 16 |
 | N/A | [Emil Igwenagu](emil_igwenagu.md) | TE | 0 | 16 |
 | 85 | [James Casey](james_casey.md) | TE | 5 | 16 |
@@ -42,7 +44,7 @@ NFC East · Players whose latest game on record was with the Philadelphia Eagles
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 76 | [Allen Barbre](allen_barbre.md) | G | 5 | 16 |
 | 66 | [Andrew Gardner](andrew_gardner.md) | G | 5 | 2 |
 | 69 | [Evan Mathis](evan_mathis.md) | G | 4 | 16 |
@@ -56,7 +58,7 @@ NFC East · Players whose latest game on record was with the Philadelphia Eagles
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 94 | [Beau Allen](beau_allen.md) | NT | 5 | 0 |
 | 96 | [Bennie Logan](bennie_logan.md) | NT | 5 | 16 |
 | 93 | [Brandon Bair](brandon_bair.md) | DE | 5 | 0 |
@@ -70,7 +72,7 @@ NFC East · Players whose latest game on record was with the Philadelphia Eagles
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 55 | [Brandon Graham](brandon_graham.md) | OLB | 5 | 16 |
 | 50 | [Casey Matthews](casey_matthews.md) | ILB | 5 | 16 |
 | 98 | [Connor Barwin](connor_barwin.md) | OLB | 5 | 16 |
@@ -84,7 +86,7 @@ NFC East · Players whose latest game on record was with the Philadelphia Eagles
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 24 | [Bradley Fletcher](bradley_fletcher.md) | CB | 5 | 16 |
 | 22 | [Brandon Boykin](brandon_boykin.md) | CB | 5 | 16 |
 | 26 | [Cary Williams](cary_williams.md) | CB | 5 | 16 |
@@ -100,17 +102,19 @@ NFC East · Players whose latest game on record was with the Philadelphia Eagles
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 1 | [Cody Parkey](cody_parkey.md) | K | 5 | 0 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 8 | [Donnie Jones](donnie_jones.md) | P | 5 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 46 | [Jon Dorenbos](jon_dorenbos.md) | LS | 5 | 16 |
+
+<!-- player-index -->

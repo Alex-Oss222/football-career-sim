@@ -1,16 +1,29 @@
 # Vontae Davis
 
-![Vontae Davis career card](assets/vontae_davis.svg)
+**Indianapolis Colts · Cornerback · No. 21 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 207 lb · Born May 27, 1988 · Illinois · Drafted in 2009, first round, by Miami
+
+As of October 5, 2014, after Week 5.
+
+![Vontae Davis](https://commons.wikimedia.org/wiki/Special:FilePath/Vontae_Davis_2018_01.png?width=500)
+
+*Photo: FanDuel, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Vontae_Davis_2018_01.png)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 25 | 23 | 16 | 59 | 2 | 11 | 41 | 4 | 0 | 1 | 1 | 3.7 | 0 |
-| 2014 | Indianapolis Colts | 26 | 21 | 5 | 28 | 2 | 6 | 7 | 1 | 0 | 0 | 0 | 5.6 | 0 |
-| **Career** |  |  |  | 21 | 87 | 4 | 17 | 48 | 5 | 0 | 1 | 1 | 4.1 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 26 | 21 | 5 | 28 | 20 | 8 | 1 | 0 | 0 |
+| 2013 | Indianapolis | 25 | 23 | 16 | 59 | 37 | 22 | 4 | 0 | 1 |
+| Career |  |  |  | 21 | 87 | 57 | 30 | 5 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Indianapolis | 26 | 21 | 2 | 7 | 6 | 0 | 0 | 0 |
+| 2013 | Indianapolis | 25 | 23 | 2 | 41 | 11 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -20,6 +33,10 @@ No playoff games on record.
 
 - AFC Defensive Player of the Week (2014, Week 2)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Indianapolis Colts players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Miami in the first round |
+
+<!-- player-page -->

@@ -1,16 +1,24 @@
 # LaAdrian Waddle
 
-![LaAdrian Waddle career card](assets/laadrian_waddle.svg)
+**Detroit Lions · Offensive tackle · No. 66 · Age 23 · Last game October 5, 2014**
 
-## Career stats
+6' 6", 330 lb · Born July 21, 1991 · Texas Tech
+
+As of October 5, 2014, after Week 5.
+
+![LaAdrian Waddle](https://commons.wikimedia.org/wiki/Special:FilePath/LaAdrian_Waddle.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:LaAdrian_Waddle.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Detroit Lions | 22 | 66 | 16 | N/A | N/A | 3 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Detroit Lions | 23 | 66 | 5 | 5 | 334 | 7 | 24 | 0 | 0 | 0 | 0 | 66.8 |
-| **Career** |  |  |  | 21 | N/A | N/A | 10 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 23 | 66 | 5 | 5 | 334 | 7 | 24 |
+| 2013 | Detroit | 22 | 66 | 16 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).
+<!-- player-page -->

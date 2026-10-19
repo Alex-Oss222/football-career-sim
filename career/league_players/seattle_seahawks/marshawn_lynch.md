@@ -1,16 +1,29 @@
 # Marshawn Lynch
 
-![Marshawn Lynch career card](assets/marshawn_lynch.svg)
+**Seattle Seahawks · Running back · No. 24 · Age 28 · Last game October 6, 2014**
 
-## Career stats
+5' 11", 215 lb · Born April 22, 1986 · California · Drafted in 2007, first round, by Buffalo
+
+As of October 6, 2014, after Week 5.
+
+![Marshawn Lynch](https://commons.wikimedia.org/wiki/Special:FilePath/Marshawn_Lynch_2011.jpg?width=500)
+
+*Photo: Marshawn_Lynch_and_Mike_Williams.jpg : Kelly Bailey derivative work: Lpdrew, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Marshawn_Lynch_2011.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Seattle Seahawks | 27 | 24 | 16 | 246 | 1,047 | 4.3 | 7 | 65.4 | 45 | 580 | 4 | 291 | 3 |
-| 2014 | Seattle Seahawks | 28 | 24 | 4 | 65 | 376 | 5.8 | 2 | 94.0 | 13 | 114 | 0 | 78 | 2 |
-| **Career** |  |  |  | 20 | 311 | 1,423 | 4.6 | 9 | 71.2 | 58 | 694 | 4 | 369 | 5 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 28 | 24 | 4 | 65 | 376 | 5.8 | 2 | 37 | 94.0 |
+| 2013 | Seattle | 27 | 24 | 16 | 246 | 1,047 | 4.3 | 7 | 19 | 65.4 |
+| Career |  |  |  | 20 | 311 | 1,423 | 4.6 | 9 | 37 | 71.2 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 28 | 24 | 15 | 13 | 114 | 8.8 | 0 | 2 | 2 |
+| 2013 | Seattle | 27 | 24 | 70 | 45 | 580 | 12.9 | 4 | 3 | 3 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Buffalo in the first round |
+
+<!-- player-page -->

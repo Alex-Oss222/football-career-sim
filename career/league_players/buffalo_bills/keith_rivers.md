@@ -1,16 +1,29 @@
 # Keith Rivers
 
-![Keith Rivers career card](assets/keith_rivers.svg)
+**Buffalo Bills · Outside linebacker · No. 56 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 235 lb · Born May 5, 1986 · USC · Drafted in 2008, first round, by Cincinnati
+
+As of October 5, 2014, after Week 5.
+
+![Keith Rivers](https://commons.wikimedia.org/wiki/Special:FilePath/091507-USCNeb-KeithRivers.jpg?width=500)
+
+*Photo: Bobak Ha'Eri, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:091507-USCNeb-KeithRivers.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Giants | 27 | 55 | 16 | 85 | 0 | 2 | 0 | 1 | 0 | 0 | 4 | 5.3 | 62 |
-| 2014 | Buffalo Bills | 28 | 56 | 5 | 17 | 0 | 2 | 0 | 2 | 0 | 0 | 0 | 3.4 | 13 |
-| **Career** |  |  |  | 21 | 102 | 0 | 4 | 0 | 3 | 0 | 0 | 4 | 4.9 | 75 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 28 | 56 | 5 | 17 | 13 | 4 | 2 | 0 | 0 |
+| 2013 | N.Y. Giants | 27 | 55 | 16 | 85 | 62 | 23 | 2 | 0 | 4 |
+| Career |  |  |  | 21 | 102 | 75 | 27 | 4 | 0 | 4 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Buffalo | 28 | 56 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2013 | N.Y. Giants | 27 | 55 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Buffalo Bills players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Cincinnati in the first round |
+
+<!-- player-page -->

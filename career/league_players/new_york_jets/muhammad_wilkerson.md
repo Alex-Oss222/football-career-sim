@@ -1,23 +1,39 @@
 # Muhammad Wilkerson
 
-![Muhammad Wilkerson career card](assets/muhammad_wilkerson.svg)
+**New York Jets · Defensive end · No. 96 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 315 lb · Born October 22, 1989 · Temple · Drafted in 2011, first round, by the New York Jets
+
+As of October 5, 2014, after Week 5.
+
+![Muhammad Wilkerson](https://commons.wikimedia.org/wiki/Special:FilePath/Muhammad_Wilkerson_crop.jpg?width=500)
+
+*Photo: BellaMeghan, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Muhammad_Wilkerson_crop.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 23 | 96 | 16 | 132 | 14 | 13 | 0 | 4 | 2 | 2 | 31 | 8.2 | 90 |
-| 2014 | New York Jets | 24 | 96 | 5 | 12 | 2 | 1 | 0 | 1 | 0 | 0 | 3 | 2.4 | 9 |
-| **Career** |  |  |  | 21 | 144 | 16 | 14 | 0 | 5 | 2 | 2 | 34 | 6.9 | 99 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 24 | 96 | 5 | 12 | 9 | 3 | 1 | 2 | 3 |
+| 2013 | N.Y. Jets | 23 | 96 | 16 | 132 | 90 | 42 | 13 | 14 | 31 |
+| Career |  |  |  | 21 | 144 | 99 | 45 | 14 | 16 | 34 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 24 | 96 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | N.Y. Jets | 23 | 96 | 0 | 0 | 4 | 2 | 2 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 23 | 96 | 1 | 6 | 2 | 1 | 0 | 1 | 0 | 0 | 2 | 6.0 | 6 |
-| **Career** |  |  |  | 1 | 6 | 2 | 1 | 0 | 1 | 0 | 0 | 2 | 6.0 | 6 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Jets | 23 | 96 | 1 | 6 | 6 | 0 | 1 | 2 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Jets | 23 | 96 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
@@ -26,6 +42,10 @@
 - AP First-Team All-Pro (2013, DE)
 - Pro Bowl selection (2013, DE)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by the New York Jets in the first round |
+
+<!-- player-page -->

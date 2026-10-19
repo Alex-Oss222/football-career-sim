@@ -1,28 +1,55 @@
 # Benny Cunningham
 
-![Benny Cunningham career card](assets/benny_cunningham.svg)
+**St. Louis Rams · Running back · No. 36 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 217 lb · Born July 7, 1990 · Middle Tennessee State
+
+As of October 5, 2014, after Week 5.
+
+![Benny Cunningham](https://commons.wikimedia.org/wiki/Special:FilePath/Benny_Cunningham.jpg?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Benny_Cunningham.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 23 | 36 | 16 | 0 | 0 | N/A | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 |
-| 2014 | St. Louis Rams | 24 | 36 | 4 | 8 | 36 | 4.5 | 0 | 9.0 | 0 | 0 | 0 | 8 | 0 |
-| **Career** |  |  |  | 20 | 8 | 36 | 4.5 | 0 | 1.8 | 0 | 0 | 0 | 8 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 24 | 36 | 4 | 8 | 36 | 4.5 | 0 | 13 | 9.0 |
+| 2013 | St. Louis | 23 | 36 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+| Career |  |  |  | 20 | 8 | 36 | 4.5 | 0 | 13 | 1.8 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 24 | 36 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2013 | St. Louis | 23 | 36 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 24 | 36 | 10 | 193 | 19.3 | 0 | 0 | N/A |
+| 2013 | St. Louis | 23 | 36 | 46 | 1,018 | 22.1 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 23 | 36 | 1 | 0 | 0 | N/A | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 |
-| **Career** |  |  |  | 1 | 0 | 0 | N/A | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 23 | 36 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 23 | 36 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 23 | 36 | 1 | 17 | 17.0 | 0 | 0 | N/A |
 
 ## Awards
 
 - NFC Special Teams Player of the Week (2014, Week 5)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+None on record.
+
+<!-- player-page -->

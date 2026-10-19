@@ -1,28 +1,48 @@
 # Cameron Heyward
 
-![Cameron Heyward career card](assets/cameron_heyward.svg)
+**Pittsburgh Steelers · Defensive tackle · No. 97 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 288 lb · Born May 6, 1989 · Ohio State · Drafted in 2011, first round, by Pittsburgh
+
+As of October 5, 2014, after Week 5.
+
+![Cameron Heyward](https://commons.wikimedia.org/wiki/Special:FilePath/Cameron_Heyward.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Cameron_Heyward.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 24 | 97 | 16 | 34 | 2 | 4 | 0 | 0 | 1 | 1 | 4 | 2.1 | 23 |
-| 2014 | Pittsburgh Steelers | 25 | 97 | 5 | 15 | 2 | 1 | 0 | 0 | 0 | 0 | 4 | 3.0 | 12 |
-| **Career** |  |  |  | 21 | 49 | 4 | 5 | 0 | 0 | 1 | 1 | 8 | 2.3 | 35 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 25 | 97 | 5 | 15 | 12 | 3 | 1 | 2 | 4 |
+| 2013 | Pittsburgh | 24 | 97 | 16 | 34 | 23 | 11 | 4 | 2 | 4 |
+| Career |  |  |  | 21 | 49 | 35 | 14 | 5 | 4 | 8 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 25 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Pittsburgh | 24 | 97 | 0 | 0 | 0 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 24 | 97 | 1 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2.0 | 1 |
-| **Career** |  |  |  | 1 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2.0 | 1 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 24 | 97 | 1 | 2 | 1 | 1 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 24 | 97 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Pittsburgh in the first round |
+
+<!-- player-page -->

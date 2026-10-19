@@ -1,28 +1,39 @@
 # Benjamin Watson
 
-![Benjamin Watson career card](assets/benjamin_watson.svg)
+**New Orleans Saints · Tight end · No. 82 · Age 33 · Last game October 5, 2014**
 
-## Career stats
+6' 3", 255 lb · Born December 18, 1980 · Georgia; Duke · Drafted in 2004, first round, by New England
+
+As of October 5, 2014, after Week 5.
+
+![Benjamin Watson](https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin_Watson.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Benjamin_Watson.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 32 | 82 | 16 | 24 | 16 | 145 | 9.1 | 1 | 9.1 | 66.7 | 24 | 0 | 0 |
-| 2014 | New Orleans Saints | 33 | 82 | 5 | 3 | 2 | 13 | 6.5 | 0 | 2.6 | 66.7 | 10 | 0 | 0 |
-| **Career** |  |  |  | 21 | 27 | 18 | 158 | 8.8 | 1 | 7.5 | 66.7 | 24 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New Orleans | 33 | 82 | 5 | 3 | 2 | 13 | 6.5 | 0 | 10 | 2.6 | 66.7 |
+| 2013 | New Orleans | 32 | 82 | 16 | 24 | 16 | 145 | 9.1 | 1 | 24 | 9.1 | 66.7 |
+| Career |  |  |  | 21 | 27 | 18 | 158 | 8.8 | 1 | 24 | 7.5 | 66.7 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 32 | 82 | 1 | 2 | 2 | 25 | 12.5 | 1 | 25.0 | 100.0 | 17 | 0 | 0 |
-| **Career** |  |  |  | 1 | 2 | 2 | 25 | 12.5 | 1 | 25.0 | 100.0 | 17 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 32 | 82 | 1 | 2 | 2 | 25 | 12.5 | 1 | 17 | 25.0 | 100.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New Orleans Saints players](README.md).
+| Date | Transaction |
+|---|---|
+| 2004 | Drafted by New England in the first round |
+
+<!-- player-page -->

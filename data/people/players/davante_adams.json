@@ -1,0 +1,213 @@
+{
+ "schema_version": 1,
+ "name": "Davante Adams",
+ "gsis_id": "00-0031381",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-05-11",
+   "date_as_written": "May 11, 2014 starting evaluation, on acquisition (selected No. 38 on May 9, 2014; rookie contract signed May 11)",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Rookie; no NFL standing. Staff view: the planned third receiver, competing for WR1 and WR3 work",
+   "position": "WR",
+   "age_as_written": "21",
+   "identity": "A redshirt-sophomore receiver with a large catch radius, strong hands and route polish at the top of the stem; a record-volume college season in a pass-heavy offense. Long speed is average and his release against NFL press is unproven.",
+   "previous_profile": "None; 2014 rookie. The starting view rests on pre-draft public evidence only",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Hands / catch radius",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Route running",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Release vs. press",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments of the player as he arrives, made from pre-draft public evidence (combine and dated college record described qualitatively, plus pre-draft reports). They grade the current player, not his draft slot, contract or projection, and they use no NFL outcome. Evidence limits are stated below.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Hands / catch radius",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Route running",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Release vs. press",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards for the position, not measured 2014 league ranks. No NFL snap exists for this player.",
+   "read": "A redshirt-sophomore receiver with a large catch radius, strong hands and route polish at the top of the stem; a record-volume college season in a pass-heavy offense. Long speed is average and his release against NFL press is unproven.",
+   "read_sources": "Source: Declared December 26, 2013 ([Mountain West Connection](https://www.mwcconnection.com/2014-nfl-draft/2013/12/26/5245782/2014-nfl-draft-fresno-state-davante-adams-declare)); on the January 2014 special-eligibility list; [combine](library/2014_combine_results.md#davante-adams-wr-fresno-state) (4.56 forty; 39.5 vertical; 6.82 three-cone).",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "None (rookie)",
+     "current": "Starting 2014 view",
+     "change": "New",
+     "reason": "Pre-draft public evidence only; no Jacksonville practice or game evidence yet"
+    }
+   ],
+   "support": "Declared December 26, 2013 ([Mountain West Connection](https://www.mwcconnection.com/2014-nfl-draft/2013/12/26/5245782/2014-nfl-draft-fresno-state-davante-adams-declare)); on the January 2014 special-eligibility list; [combine](library/2014_combine_results.md#davante-adams-wr-fresno-state) (4.56 forty; 39.5 vertical; 6.82 three-cone).",
+   "historical_comparison": "No comparator is assigned at arrival. The evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.",
+   "play_style": "A redshirt-sophomore receiver with a large catch radius, strong hands and route polish at the top of the stem; a record-volume college season in a pass-heavy offense. Long speed is average and his release against NFL press is unproven.",
+   "best_traits": [
+    "Hands / catch radius: 7.5 /10.",
+    "Athleticism: 6.5 /10.",
+    "Agility / Change of direction: 6.5 /10."
+   ],
+   "main_weaknesses": [
+    "Release vs. press: 5.0 /10.",
+    "Speed: 5.5 /10.",
+    "Strength / Power: 5.5 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** Declared December 26, 2013 ([Mountain West Connection](https://www.mwcconnection.com/2014-nfl-draft/2013/12/26/5245782/2014-nfl-draft-fresno-state-davante-adams-declare)); on the January 2014 special-eligibility list; [combine](library/2014_combine_results.md#davante-adams-wr-fresno-state) (4.56 forty; 39.5 vertical; 6.82 three-cone).",
+    "**Evaluation basis:** Theoretical staff judgment from pre-draft public evidence; thin evidence identified above.",
+    "**What remains uncertain:** Production came in a wide-open college scheme; separation against NFL press and outside speed are unmeasured.",
+    "**What would change the assessment:** Opposed route work against Verner and Talib in OTAs; how he wins when not schemed open.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates."
+   ],
+   "one_line": "A redshirt-sophomore receiver with a large catch radius, strong hands and route polish at the top of the stem; a record-volume college season in a pass-heavy offense.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Adams won a contact release while losing quick-concept timing through an extra step. Drake corrected it; he kept the timing August 1 against Harris and lost a release to Talib. WR1 and WR3 remain open comparisons.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-21",
+     "date_as_written": "September 21, 2014",
+     "setting": "Week 3, Indianapolis at Jacksonville",
+     "text": "All 59 offensive snaps at X with four catches on nine targets for 54 and two touchdowns: the 42-yard Bunch Mesh with HALF on second-and-long from the Indianapolis 42 at 12:37 of the second quarter, with no tackler recorded, and the 3-yard Boot Flood Right from the 3 on second-and-goal at 2:40 of the third; the 2 on the Trey Stick and the 7 on the Y-Cross with SOLID on the first field-goal drive. Five throws his way fell incomplete, the Y-Cross with SOLID twice (the opener's seventh call and the first-and-10 from the Indianapolis 17), the Drive with HALF in the two-minute drive, the Trey Stick and the first Boot Flood Right from the 7; the play-by-play names no defender on any of them, so the separation and the throw are the film's. A minor lower-extremity injury was logged at the end of the third-quarter drive that ended with Cousins's touchdown run at 6:20; he was not removed and the second touchdown came after it: out, projected return September 26, reassessment September 22 ([medical record](career/2014/Team_Operations/Medical/incidents/davante_adams_2014-09-21.md)). No role change follows; Nicks's return to X still waits on a full practice week.",
+     "source": "Source: [Week 3 game record](career/2014/Regular_Season/Games/Week_03/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-27",
+     "date_as_written": "September 22 to 27, 2014",
+     "setting": "Cleared Friday; the San Diego week",
+     "text": "Reassessed Monday with no change; did not practice Wednesday or Thursday, Hurns carrying the receiver work by the chart's order; cleared Friday, September 26, his projected date, and not inserted into the Friday practice, the arrangement carried from Jones-Drew's and Stanford's Friday clearances; questionable on the Friday report; full in the Saturday walkthrough. Active for San Diego at X with his chart place unchanged. No football finding attaches to the week.",
+     "source": "Source: [Week 4 record](career/2014/Regular_Season/Games/Week_04/output.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/davante_adams.md at commit 332d70b"
+  }
+ ],
+ "awards": [],
+ "transactions": [
+  {
+   "date": "2014-05-09",
+   "kind": "drafted",
+   "text": "Drafted by Jacksonville (No. 38, second round)",
+   "source": "career/2014/Draft/draftees.md"
+  },
+  {
+   "date": "2014-05-11",
+   "kind": "signed",
+   "text": "Signed a four-year rookie contract with Jacksonville",
+   "source": "career/2014/Draft/draftees.md"
+  }
+ ]
+}

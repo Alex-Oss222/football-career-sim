@@ -1,15 +1,22 @@
 # Aaron Ross
 
-![Aaron Ross career card](assets/aaron_ross.svg)
+**New York Giants · Cornerback · Age 31 · Last game December 29, 2013**
 
-## Career stats
+6' 0", 190 lb · Born September 15, 1982 · Texas · Drafted in 2007, first round, by the New York Giants
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Giants | 30 | 31 | 16 | 25 | 0 | 2 | 0 | 0 | 0 | 1 | 1 | 1.6 | 0 |
-| **Career** |  |  |  | 16 | 25 | 0 | 2 | 0 | 0 | 0 | 1 | 1 | 1.6 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Giants | 30 | 31 | 16 | 25 | 17 | 8 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Giants | 30 | 31 | 0 | 0 | 2 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,13 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All New York Giants players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by the New York Giants in the first round |
+| March 12, 2013 | Released by Jacksonville |
+
+<!-- player-page -->

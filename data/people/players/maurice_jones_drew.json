@@ -1,0 +1,304 @@
+{
+ "schema_version": 1,
+ "name": "Maurice Jones-Drew",
+ "gsis_id": "00-0024275",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [
+  {
+   "season": 2013,
+   "stage": "final",
+   "owner": "career/2013/player_profiles/maurice_jones_drew.md"
+  },
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-03-31",
+   "date_as_written": "March 31, 2014 starting evaluation",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Starting staff view; exact theoretical personnel grades",
+   "position": "RB",
+   "age_as_written": "29",
+   "identity": "A compact, powerful lead back who wins with track decisions, balance and useful protection work. I see a complete veteran runner whose inside efficiency matters more than open-field speed.",
+   "previous_profile": "[2013 baseline](career/2013/player_profiles/maurice_jones_drew.md)",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "8.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "8.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Vision / decision",
+     "grade": "8.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Burst / acceleration",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Long speed",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Cut efficiency / change of direction",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Contact balance / power",
+     "grade": "8.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Ball security",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Receiving",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Route detail",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Pass protection",
+     "grade": "7.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Short-yardage finishing",
+     "grade": "8.0 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Vision / decision",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Burst / acceleration",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Long speed",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Cut efficiency / change of direction",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Contact balance / power",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Ball security",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Receiving",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Route detail",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Pass protection",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Short-yardage finishing",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards, not measured 2014 league ranks.",
+   "read": "A compact, powerful lead back who wins with track decisions, balance and useful protection work. I see a complete veteran runner whose inside efficiency matters more than open-field speed.",
+   "read_sources": "Source: [2013 profile](career/2013/player_profiles/maurice_jones_drew.md) and its recorded practice/game sources.",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "2013 baseline",
+     "current": "Starting 2014 view",
+     "change": "Retained",
+     "reason": "No new individual football evidence establishing change"
+    }
+   ],
+   "support": "A compact, powerful lead back who wins with track decisions, balance and useful protection work. I see a complete veteran runner whose inside efficiency matters more than open-field speed.\n\n[2013 profile](career/2013/player_profiles/maurice_jones_drew.md) and its recorded practice/game sources.",
+   "historical_comparison": "The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.",
+   "play_style": "A compact, powerful lead back who wins with track decisions, balance and useful protection work. I see a complete veteran runner whose inside efficiency matters more than open-field speed.",
+   "best_traits": [
+    "Vision / decision: 8.0 /10.",
+    "Contact balance / power: 8.0 /10.",
+    "Short-yardage finishing: 8.0 /10."
+   ],
+   "main_weaknesses": [
+    "Long speed: 6.5 /10.",
+    "Route detail: 6.5 /10.",
+    "Burst / acceleration: 7.0 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [2013 profile](career/2013/player_profiles/maurice_jones_drew.md) and its recorded practice/game sources.",
+    "**Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics."
+   ],
+   "one_line": "A compact, powerful lead back who wins with track decisions, balance and useful protection work. I see a complete veteran runner whose inside efficiency matters more than open-field speed.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Jones-Drew pressed the Power landmark, read the puller and kept the ball through controlled strip attempts. Those are controlled-contact findings. The team protection periods did not supply a separate individual pass-protection finding.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-07",
+     "date_as_written": "September 7, 2014",
+     "setting": "Week 1, Jacksonville at Philadelphia",
+     "text": "Twenty-two carries for 93 yards at 4.2 in 76 snaps: the 10-yard Outside Zone run on third-and-10 before the half, 7 and 7 on Power from Ace on the 51-yard field-goal drive, and the 10 on the access run and 7 on Power Left that set the winning kick in overtime; the 5-yard loss on Inside Zone at the Philadelphia 30 and the 3-yard loss on the first access run are the two negative carries. Three catches for 1 on six targets, including the minus 4 on the Y-Cross throw in overtime. A minor lower-extremity injury was logged at the end of the fourth-quarter field-goal drive at 4:15; he was not removed and played the overtime: out, projected return in five days (September 12), reassessment September 8 ([medical record](career/2014/Team_Operations/Medical/incidents/maurice_jones_drew_2014-09-07.md)). Anderson and Grimes remain the carried order behind him.",
+     "source": "Source: [Week 1 game record](career/2014/Regular_Season/Games/Week_01/output.md) and its public receipt. This coaching update preserves the opening grades above."
+    },
+    {
+     "date": "2014-09-13",
+     "date_as_written": "September 8 to 13, 2014",
+     "setting": "Reassessed and cleared",
+     "text": "Reassessed Monday with no change and cleared Friday, September 12, his projected date, without being inserted into the Friday practice; he did not practice Wednesday through Friday and took the Saturday walkthrough in full. Anderson and Grimes took the week's backfield work in the chart's order. Stone dressed him for Washington with no touch quota and the carried order behind him rehearsed; no finding attaches to the week.",
+     "source": "Source: [Week 2 record](career/2014/Regular_Season/Games/Week_02/output.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-8-to-12-jones-drew-reassessed-and-cleared-harris-and-lowery-to-reserveinjured). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/maurice_jones_drew.md at commit 332d70b"
+  }
+ ],
+ "awards": [
+  {
+   "season": 2013,
+   "award": "AP Comeback Player of the Year (2013)",
+   "decided": {
+    "season": 2013,
+    "file": "season_honours_results.json",
+    "key": "ap_awards",
+    "slot": "CPOY"
+   }
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2009",
+   "kind": "signed",
+   "text": "Signed a contract extension with Jacksonville",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md"
+  },
+  {
+   "date": "2014-03-28",
+   "kind": "resigned",
+   "text": "Re-signed with Jacksonville for two years (2014 to 2015)",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+  }
+ ]
+}

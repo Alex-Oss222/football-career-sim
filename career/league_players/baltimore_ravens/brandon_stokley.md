@@ -1,15 +1,22 @@
 # Brandon Stokley
 
-![Brandon Stokley career card](assets/brandon_stokley.svg)
+**Baltimore Ravens · Wide receiver · Age 37 · Last game December 29, 2013**
 
-## Career stats
+6' 0", 194 lb · Born June 23, 1976 · Louisiana-Lafayette · Drafted in 1999, fourth round, by Baltimore
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Baltimore Ravens | 37 | 80 | 16 | 56 | 36 | 357 | 9.9 | 0 | 22.3 | 64.3 | 38 | 4 | 1 |
-| **Career** |  |  |  | 16 | 56 | 36 | 357 | 9.9 | 0 | 22.3 | 64.3 | 38 | 4 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Baltimore | 37 | 80 | 16 | 56 | 36 | 357 | 9.9 | 0 | 38 | 22.3 | 64.3 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Baltimore | 37 | 80 | 1 | 4 | 0 | 1 | 1 |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Baltimore Ravens players](README.md).
+| Date | Transaction |
+|---|---|
+| 1999 | Drafted by Baltimore in the fourth round |
+
+<!-- player-page -->

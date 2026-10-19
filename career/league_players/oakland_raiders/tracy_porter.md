@@ -1,15 +1,30 @@
 # Tracy Porter
 
-![Tracy Porter career card](assets/tracy_porter.svg)
+**Oakland Raiders · Cornerback · Age 27 · Last game December 29, 2013**
 
-## Career stats
+5' 11", 188 lb · Born August 11, 1986 · Indiana · Drafted in 2008, second round, by New Orleans
+
+As of December 29, 2013, after Week 17.
+
+![Tracy Porter](https://commons.wikimedia.org/wiki/Special:FilePath/Tracy_Porter.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Tracy_Porter.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Oakland Raiders | 27 | 23 | 16 | 80 | 1 | 7 | 21 | 1 | 1 | 0 | 0 | 5.0 | 70 |
-| **Career** |  |  |  | 16 | 80 | 1 | 7 | 21 | 1 | 1 | 0 | 0 | 5.0 | 70 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Oakland | 27 | 23 | 16 | 80 | 51 | 29 | 1 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Oakland | 27 | 23 | 1 | 21 | 7 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Oakland | 27 | 23 | 0 | 0 | N/A | 3 | 70 | 23.3 |
 
 ### Playoffs
 
@@ -17,8 +32,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Oakland Raiders players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by New Orleans in the second round |
+
+<!-- player-page -->

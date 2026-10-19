@@ -1,28 +1,51 @@
 # Johnthan Banks
 
-![Johnthan Banks career card](assets/johnthan_banks.svg)
+**Tampa Bay Buccaneers · Cornerback · No. 27 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 185 lb · Born October 3, 1989 · Mississippi State
+
+As of October 5, 2014, after Week 5.
+
+![Johnthan Banks](https://commons.wikimedia.org/wiki/Special:FilePath/Johnthan_Banks.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Johnthan_Banks.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 23 | 27 | 16 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0.1 | 118 |
-| 2014 | Tampa Bay Buccaneers | 24 | 27 | 5 | 12 | 0 | 2 | 0 | 1 | 1 | 0 | 0 | 2.4 | 0 |
-| **Career** |  |  |  | 21 | 13 | 0 | 3 | 0 | 1 | 1 | 0 | 0 | 0.6 | 118 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 24 | 27 | 5 | 12 | 7 | 5 | 1 | 1 | 1 |
+| 2013 | Tampa Bay | 23 | 27 | 16 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 21 | 13 | 8 | 5 | 1 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 24 | 27 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2013 | Tampa Bay | 23 | 27 | 0 | 0 | 1 | 0 | 0 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 24 | 27 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Tampa Bay | 23 | 27 | 3 | 97 | 32.3 | 2 | 21 | 10.5 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tampa Bay Buccaneers | 23 | 27 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 23 | 27 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tampa Bay | 23 | 27 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).
+<!-- player-page -->

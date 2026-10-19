@@ -1,27 +1,33 @@
 # Damian Williams
 
-![Damian Williams career card](assets/damian_williams.svg)
+**Tennessee Titans · Wide receiver · Age 25 · Last game January 19, 2014**
 
-## Career stats
+6' 1", 193 lb · Born May 26, 1988 · USC; Arkansas · Drafted in 2010, third round, by Tennessee
+
+As of January 19, 2014, after the Conference Championships.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 25 | 17 | 16 | 14 | 9 | 88 | 9.8 | 1 | 5.5 | 64.3 | 18 | 0 | 0 |
-| **Career** |  |  |  | 16 | 14 | 9 | 88 | 9.8 | 1 | 5.5 | 64.3 | 18 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 25 | 17 | 16 | 14 | 9 | 88 | 9.8 | 1 | 18 | 5.5 | 64.3 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 25 | 17 | 2 | 2 | 2 | 9 | 4.5 | 0 | 4.5 | 100.0 | 8 | 0 | 0 |
-| **Career** |  |  |  | 2 | 2 | 2 | 9 | 4.5 | 0 | 4.5 | 100.0 | 8 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 25 | 17 | 2 | 2 | 2 | 9 | 4.5 | 0 | 8 | 4.5 | 100.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through January 19, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Tennessee Titans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Tennessee in the third round |
+
+<!-- player-page -->

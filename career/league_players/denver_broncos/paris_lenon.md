@@ -1,15 +1,22 @@
 # Paris Lenon
 
-![Paris Lenon career card](assets/paris_lenon.svg)
+**Denver Broncos · Middle linebacker · Age 36 · Last game December 29, 2013**
 
-## Career stats
+6' 2", 240 lb · Born November 26, 1977 · Richmond
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Denver Broncos | 35 | 51 | 13 | 23 | 1 | 2 | 0 | 1 | 1 | 1 | 5 | 1.8 | 12 |
-| **Career** |  |  |  | 13 | 23 | 1 | 2 | 0 | 1 | 1 | 1 | 5 | 1.8 | 12 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Denver | 35 | 51 | 13 | 23 | 12 | 11 | 2 | 1 | 5 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Denver | 35 | 51 | 0 | 0 | 1 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Denver Broncos players](README.md).
+<!-- player-page -->

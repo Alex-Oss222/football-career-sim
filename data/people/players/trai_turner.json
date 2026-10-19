@@ -1,0 +1,199 @@
+{
+ "schema_version": 1,
+ "name": "Trai Turner",
+ "gsis_id": "00-0031362",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-05-11",
+   "date_as_written": "May 11, 2014 starting evaluation, on acquisition (selected No. 90 on May 9, 2014; rookie contract signed May 11)",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Rookie; no NFL standing. Staff view: developmental interior starter candidate",
+   "position": "G",
+   "age_as_written": "20",
+   "identity": "A redshirt-sophomore right guard with a powerful base and short-area quickness, a full 2013 season as an every-game starter in the SEC. Technique is raw: hand placement and pass-set discipline need coaching, and he did not complete the agility drills at the combine.",
+   "previous_profile": "None; 2014 rookie. The starting view rests on pre-draft public evidence only",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Anchor / power",
+     "grade": "7.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Interior exchanges",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Pass-set discipline",
+     "grade": "4.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments of the player as he arrives, made from pre-draft public evidence (combine and dated college record described qualitatively, plus pre-draft reports). They grade the current player, not his draft slot, contract or projection, and they use no NFL outcome. Evidence limits are stated below.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Anchor / power",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Interior exchanges",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Pass-set discipline",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards for the position, not measured 2014 league ranks. No NFL snap exists for this player.",
+   "read": "A redshirt-sophomore right guard with a powerful base and short-area quickness, a full 2013 season as an every-game starter in the SEC. Technique is raw: hand placement and pass-set discipline need coaching, and he did not complete the agility drills at the combine.",
+   "read_sources": "Source: [Prospect evidence file](library/2014_prospect_evidence/trai_turner.md) (declaration January 13, 2014; special-eligibility list January 19; second-team All-SEC, December 9, 2013); [combine](library/2014_combine_results.md#trai-turner-g-lsu) (6-3, 310; 4.93 forty; 25 bench).",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "None (rookie)",
+     "current": "Starting 2014 view",
+     "change": "New",
+     "reason": "Pre-draft public evidence only; no Jacksonville practice or game evidence yet"
+    }
+   ],
+   "support": "[Prospect evidence file](library/2014_prospect_evidence/trai_turner.md) (declaration January 13, 2014; special-eligibility list January 19; second-team All-SEC, December 9, 2013); [combine](library/2014_combine_results.md#trai-turner-g-lsu) (6-3, 310; 4.93 forty; 25 bench).",
+   "historical_comparison": "No comparator is assigned at arrival. The evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.",
+   "play_style": "A redshirt-sophomore right guard with a powerful base and short-area quickness, a full 2013 season as an every-game starter in the SEC. Technique is raw: hand placement and pass-set discipline need coaching, and he did not complete the agility drills at the combine.",
+   "best_traits": [
+    "Strength / Power: 7.0 /10.",
+    "Anchor / power: 7.0 /10.",
+    "Athleticism: 6.0 /10."
+   ],
+   "main_weaknesses": [
+    "Technique: 4.5 /10.",
+    "Interior exchanges: 4.5 /10.",
+    "Pass-set discipline: 4.5 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** [Prospect evidence file](library/2014_prospect_evidence/trai_turner.md) (declaration January 13, 2014; special-eligibility list January 19; second-team All-SEC, December 9, 2013); [combine](library/2014_combine_results.md#trai-turner-g-lsu) (6-3, 310; 4.93 forty; 25 bench).",
+    "**Evaluation basis:** Theoretical staff judgment from pre-draft public evidence; thin evidence identified above.",
+    "**What remains uncertain:** Only two seasons of college play; no agility testing on record; how quickly he learns the shared protection identification.",
+    "**What would change the assessment:** Assignment accuracy in Phase Two and OTA exchange work beside Brewster.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates."
+   ],
+   "one_line": "A redshirt-sophomore right guard with a powerful base and short-area quickness, a full 2013 season as an every-game starter in the SEC.",
+   "updates": [
+    {
+     "date": "2014-08-01",
+     "date_as_written": "August 1, 2014",
+     "setting": "Training camp",
+     "text": "Turner held his anchor against Mosley and C.J. Wilson, lost one rep to Donald with late hands, then held the repeat. His combination with Brewster moved Donald and was split once. Stone did not invoke the conditional guard change.",
+     "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
+    }
+   ],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/trai_turner.md at commit 332d70b"
+  }
+ ],
+ "awards": [],
+ "transactions": [
+  {
+   "date": "2014-05-09",
+   "kind": "drafted",
+   "text": "Drafted by Jacksonville (No. 90, third round)",
+   "source": "career/2014/Draft/draftees.md"
+  },
+  {
+   "date": "2014-05-11",
+   "kind": "signed",
+   "text": "Signed a four-year rookie contract with Jacksonville",
+   "source": "career/2014/Draft/draftees.md"
+  }
+ ]
+}

@@ -1,28 +1,46 @@
 # Jed Collins
 
-![Jed Collins career card](assets/jed_collins.svg)
+**Detroit Lions · Fullback · No. 45 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 252 lb · Born March 3, 1986 · Washington State
+
+As of October 5, 2014, after Week 5.
+
+![Jed Collins](https://commons.wikimedia.org/wiki/Special:FilePath/Jed_Collins.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jed_Collins.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 27 | 45 | 16 | 7 | 25 | 3.6 | 0 | 1.6 | 9 | 107 | 1 | 16 | 0 |
-| 2014 | Detroit Lions | 28 | 45 | 5 | 6 | 16 | 2.7 | 0 | 3.2 | 10 | 112 | 0 | 16 | 0 |
-| **Career** |  |  |  | 21 | 13 | 41 | 3.2 | 0 | 2.0 | 19 | 219 | 1 | 32 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 28 | 45 | 5 | 6 | 16 | 2.7 | 0 | 5 | 3.2 |
+| 2013 | New Orleans | 27 | 45 | 16 | 7 | 25 | 3.6 | 0 | 6 | 1.6 |
+| Career |  |  |  | 21 | 13 | 41 | 3.2 | 0 | 6 | 2.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Detroit | 28 | 45 | 12 | 10 | 112 | 11.2 | 0 | 1 | 0 |
+| 2013 | New Orleans | 27 | 45 | 13 | 9 | 107 | 11.9 | 1 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 27 | 45 | 1 | 0 | 0 | N/A | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 |
-| **Career** |  |  |  | 1 | 0 | 0 | N/A | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 27 | 45 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | New Orleans | 27 | 45 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Detroit Lions players](README.md).
+<!-- player-page -->

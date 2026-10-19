@@ -1,16 +1,29 @@
 # Rex Burkhead
 
-![Rex Burkhead career card](assets/rex_burkhead.svg)
+**Cincinnati Bengals · Running back · No. 33 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+5' 10", 215 lb · Born July 2, 1990 · Nebraska
+
+As of October 5, 2014, after Week 5.
+
+![Rex Burkhead](https://commons.wikimedia.org/wiki/Special:FilePath/Rex_Burkhead_2013.jpg?width=500)
+
+*Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Rex_Burkhead_2013.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cincinnati Bengals | 23 | 33 | 16 | 1 | 4 | 4.0 | 0 | 0.2 | 1 | 21 | 0 | 2 | 0 |
-| 2014 | Cincinnati Bengals | 24 | 33 | 1 | 0 | 0 | N/A | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 |
-| **Career** |  |  |  | 17 | 1 | 4 | 4.0 | 0 | 0.2 | 1 | 21 | 0 | 2 | 0 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cincinnati | 24 | 33 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+| 2013 | Cincinnati | 23 | 33 | 16 | 1 | 4 | 4.0 | 0 | 4 | 0.2 |
+| Career |  |  |  | 17 | 1 | 4 | 4.0 | 0 | 4 | 0.2 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cincinnati | 24 | 33 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2013 | Cincinnati | 23 | 33 | 1 | 1 | 21 | 21.0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cincinnati Bengals players](README.md).
+<!-- player-page -->

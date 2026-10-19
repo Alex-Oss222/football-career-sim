@@ -1,11 +1,13 @@
 # New York Giants players
 
-NFC East · Players whose latest game on record was with the New York Giants. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+NFC East. The players whose latest game on record was with the New York Giants. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Curtis Painter](curtis_painter.md) | QB | 0 | 16 |
 | 10 | [Eli Manning](eli_manning.md) | QB | 5 | 16 |
 | 9 | [Ryan Nassib](ryan_nassib.md) | QB | 5 | 16 |
@@ -13,7 +15,7 @@ NFC East · Players whose latest game on record was with the New York Giants. G 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 44 | [Andre Williams](andre_williams.md) | RB | 5 | 0 |
 | N/A | [Da'Rel Scott](da_rel_scott.md) | RB | 0 | 15 |
 | N/A | [David Wilson](david_wilson.md) | RB | 0 | 16 |
@@ -25,7 +27,7 @@ NFC East · Players whose latest game on record was with the New York Giants. G 
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 88 | [Corey Washington](corey_washington.md) | WR | 5 | 0 |
 | 12 | [Jerrel Jernigan](jerrel_jernigan.md) | WR | 5 | 16 |
 | N/A | [Louis Murphy](louis_murphy.md) | WR | 0 | 16 |
@@ -37,7 +39,7 @@ NFC East · Players whose latest game on record was with the New York Giants. G 
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 81 | [Adrien Robinson](adrien_robinson.md) | TE | 5 | 10 |
 | 85 | [Daniel Fells](daniel_fells.md) | TE | 5 | 0 |
 | 84 | [Larry Donnell](larry_donnell.md) | TE | 5 | 16 |
@@ -45,7 +47,7 @@ NFC East · Players whose latest game on record was with the New York Giants. G 
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 75 | [Brandon Mosley](brandon_mosley.md) | G | 5 | 16 |
 | 71 | [Charles Brown](charles_brown.md) | T | 5 | 14 |
 | N/A | [Chris Snee](chris_snee.md) | G | 0 | 16 |
@@ -62,7 +64,7 @@ NFC East · Players whose latest game on record was with the New York Giants. G 
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 99 | [Cullen Jenkins](cullen_jenkins.md) | DT | 0 | 10 |
 | 98 | [Damontre Moore](damontre_moore.md) | DE | 5 | 14 |
 | 90 | [Jason Pierre-Paul](jason_pierre_paul.md) | DE | 5 | 16 |
@@ -78,7 +80,7 @@ NFC East · Players whose latest game on record was with the New York Giants. G 
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Dan Connor](dan_connor.md) | MLB | 0 | 16 |
 | 59 | [Devon Kennard](devon_kennard.md) | OLB | 5 | 0 |
 | 57 | [Jacquian Williams](jacquian_williams.md) | OLB | 5 | 16 |
@@ -90,7 +92,7 @@ NFC East · Players whose latest game on record was with the New York Giants. G 
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Aaron Ross](aaron_ross.md) | CB | 0 | 16 |
 | 26 | [Antrel Rolle](antrel_rolle.md) | SS | 5 | 16 |
 | N/A | [Cooper Taylor](cooper_taylor.md) | SS | 0 | 16 |
@@ -109,17 +111,19 @@ NFC East · Players whose latest game on record was with the New York Giants. G 
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 3 | [Josh Brown](josh_brown.md) | K | 5 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 5 | [Steve Weatherford](steve_weatherford.md) | P | 5 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 51 | [Zak DeOssie](zak_deossie.md) | LS | 5 | 16 |
+
+<!-- player-index -->

@@ -1,16 +1,34 @@
 # Earl Thomas
 
-![Earl Thomas career card](assets/earl_thomas.svg)
+**Seattle Seahawks · Free safety · No. 29 · Age 25 · Last game October 6, 2014**
 
-## Career stats
+5' 10", 202 lb · Born May 7, 1989 · Texas · Drafted in 2010, first round, by Seattle
+
+As of October 6, 2014, after Week 5.
+
+![Earl Thomas](https://commons.wikimedia.org/wiki/Special:FilePath/Earl_Thomas_%28defensive_back%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Earl_Thomas_(defensive_back).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Seattle Seahawks | 24 | 29 | 11 | 56 | 2 | 14 | 46 | 4 | 2 | 3 | 3 | 5.1 | 0 |
-| 2014 | Seattle Seahawks | 25 | 29 | 4 | 14 | 0 | 6 | 0 | 0 | 0 | 0 | 0 | 3.5 | 59 |
-| **Career** |  |  |  | 15 | 70 | 2 | 20 | 46 | 4 | 2 | 3 | 3 | 4.7 | 59 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 25 | 29 | 4 | 14 | 8 | 6 | 0 | 0 | 0 |
+| 2013 | Seattle | 24 | 29 | 11 | 56 | 39 | 17 | 4 | 2 | 3 |
+| Career |  |  |  | 15 | 70 | 47 | 23 | 4 | 2 | 3 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 25 | 29 | 0 | 0 | 6 | 0 | 0 | 0 |
+| 2013 | Seattle | 24 | 29 | 2 | 46 | 14 | 3 | 3 | N/A |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 25 | 29 | 0 | 0 | N/A | 7 | 59 | 8.4 |
+| 2013 | Seattle | 24 | 29 | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -20,6 +38,10 @@ No playoff games on record.
 
 - NFC Defensive Player of the Week (2013, Week 7)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Seattle in the first round |
+
+<!-- player-page -->

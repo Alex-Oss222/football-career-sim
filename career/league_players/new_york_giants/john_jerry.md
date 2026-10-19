@@ -1,16 +1,24 @@
 # John Jerry
 
-![John Jerry career card](assets/john_jerry.svg)
+**New York Giants · Guard · No. 77 · Age 28 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 340 lb · Born June 14, 1986 · Mississippi · Drafted in 2010, third round, by Miami
+
+As of October 5, 2014, after Week 5.
+
+![John Jerry](https://commons.wikimedia.org/wiki/Special:FilePath/John_Jerry_2016.jpg?width=500)
+
+*Photo: Tom Hanny from Kinnelon, USA, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:John_Jerry_2016.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Miami Dolphins | 27 | 74 | 16 | N/A | N/A | 7 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | New York Giants | 28 | 77 | 5 | 3 | 173 | 1 | 12 | 0 | 0 | 0 | 0 | 34.6 |
-| **Career** |  |  |  | 21 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 28 | 77 | 5 | 3 | 173 | 1 | 12 |
+| 2013 | Miami | 27 | 74 | 16 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Miami in the third round |
+
+<!-- player-page -->

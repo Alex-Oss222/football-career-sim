@@ -26,6 +26,7 @@ if str(ROOT) not in sys.path:
 
 from runtime.packets import canonical
 from scripts import coaching_carousel as cc
+from runtime.seasons import data_link
 
 DIR = cc.DIR
 METHOD = cc.DATA / "carousel_deferred_method.json"
@@ -177,9 +178,10 @@ def render():
     marker = "\n## February 2014: the deferred procedure"
     text = text.split(marker)[0].rstrip() + "\n"
     lines = [marker.strip(), "",
-             "Generated from `carousel_deferred_results.json` (%s). Method: [carousel_deferred_method.json](../../../../data/2014/Early_Offseason/staff_changes/carousel_deferred_method.json); "
+             "Generated from `carousel_deferred_results.json` (%s). Method: [carousel_deferred_method.json](%s); "
              "2013 base rate: [2013_retained_club_coordinator_turnover.md](2013_retained_club_coordinator_turnover.md). "
-             "Window: January 12 to February 17, 2014." % res["ledger_entry"], "",
+             "Window: January 12 to February 17, 2014." % (
+                 res["ledger_entry"], data_link(2014, "early_offseason/staff_changes/carousel_deferred_method.json", 4)), "",
              "### Super Bowl clubs", "", "| Club | Coach | Cell | Chance | Result | Hire |", "|---|---|---|--:|---|---|"]
     for c in res["head_coach_changes"]:
         lines.append("| %s | %s | %s | %.1f%% | %s | %s |" % (c["club"], c["coach"], c["cell"].replace("|", ", "),

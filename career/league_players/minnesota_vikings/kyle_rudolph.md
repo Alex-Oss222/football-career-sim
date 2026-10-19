@@ -1,28 +1,43 @@
 # Kyle Rudolph
 
-![Kyle Rudolph career card](assets/kyle_rudolph.svg)
+**Minnesota Vikings · Tight end · No. 82 · Age 24 · Last game October 2, 2014**
 
-## Career stats
+6' 6", 259 lb · Born November 9, 1989 · Notre Dame · Drafted in 2011, second round, by Minnesota
+
+As of October 2, 2014, after Week 5.
+
+![Kyle Rudolph](https://commons.wikimedia.org/wiki/Special:FilePath/Kyle_Rudolph_Pro_Bowl_%28cropped%29.JPG?width=500)
+
+*Photo: United States Marine Corps/Sgt. D.R. Cotton, Public domain ([source](https://commons.wikimedia.org/wiki/File:Kyle_Rudolph_Pro_Bowl_(cropped).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 23 | 82 | 16 | 88 | 60 | 603 | 10.1 | 5 | 37.7 | 68.2 | 56 | 0 | 0 |
-| 2014 | Minnesota Vikings | 24 | 82 | 5 | 23 | 16 | 125 | 7.8 | 0 | 25.0 | 69.6 | 22 | 0 | 0 |
-| **Career** |  |  |  | 21 | 111 | 76 | 728 | 9.6 | 5 | 34.7 | 68.5 | 56 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 24 | 82 | 5 | 23 | 16 | 125 | 7.8 | 0 | 22 | 25.0 | 69.6 |
+| 2013 | Minnesota | 23 | 82 | 16 | 88 | 60 | 603 | 10.1 | 5 | 56 | 37.7 | 68.2 |
+| Career |  |  |  | 21 | 111 | 76 | 728 | 9.6 | 5 | 56 | 34.7 | 68.5 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 23 | 82 | 3 | 15 | 7 | 56 | 8.0 | 1 | 18.7 | 46.7 | 33 | 0 | 1 |
-| **Career** |  |  |  | 3 | 15 | 7 | 56 | 8.0 | 1 | 18.7 | 46.7 | 33 | 0 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 23 | 82 | 3 | 15 | 7 | 56 | 8.0 | 1 | 33 | 18.7 | 46.7 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 23 | 82 | 0 | 0 | 0 | 1 | 1 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Minnesota in the second round |
+
+<!-- player-page -->

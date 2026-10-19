@@ -1,16 +1,29 @@
 # Mason Crosby
 
-![Mason Crosby career card](assets/mason_crosby.svg)
+**Green Bay Packers · Kicker · No. 2 · Age 30 · Last game October 2, 2014**
 
-## Career stats
+6' 1", 207 lb · Born September 3, 1984 · Colorado · Drafted in 2007, sixth round, by Green Bay
+
+As of October 2, 2014, after Week 5.
+
+![Mason Crosby](https://commons.wikimedia.org/wiki/Special:FilePath/Mason_Crosby_kicks_a_field_goal_for_Green_Bay_Packers_off_ball_held_by_Jon_Ryan_during_October_7%2C_2007_game_against_Chicago_Bears_at_Lambeau_Field_in_Green_Bay.jpg?width=500)
+
+*Photo: Paul Cutler, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Mason_Crosby_kicks_a_field_goal_for_Green_Bay_Packers_off_ball_held_by_Jon_Ryan_during_October_7,_2007_game_against_Chicago_Bears_at_Lambeau_Field_in_Green_Bay.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | FGM-FGA | FG% | LONG | XPM-XPA | XP% | PTS | FG 40-49 | FG 50+ | FG 1-39 | PTS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Green Bay Packers | 29 | 2 | 16 | 31-36 | 86.1 | N/A | 39-39 | 100.0 | 132 | N/A | N/A | N/A | 8.2 |
-| 2014 | Green Bay Packers | 30 | 2 | 5 | 7-9 | 77.8 | 47 | 15-15 | 100.0 | 36 | 4-6 | 0-0 | 3-3 | 7.2 |
-| **Career** |  |  |  | 21 | 38-45 | 84.4 | N/A | 54-54 | 100.0 | 168 | N/A | N/A | N/A | 8.0 |
+| Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 30 | 2 | 5 | 7 | 9 | 77.8 | 47 | 15 | 15 | 100.0 | 36 |
+| 2013 | Green Bay | 29 | 2 | 16 | 31 | 36 | 86.1 | N/A | 39 | 39 | 100.0 | 132 |
+| Career |  |  |  | 21 | 38 | 45 | 84.4 | N/A | 54 | 54 | 100.0 | 168 |
+
+| Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
+|---|---|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Green Bay | 30 | 2 | 3-3 | 4-6 | 0-0 |
+| 2013 | Green Bay | 29 | 2 | N/A | N/A | N/A |
 
 ### Playoffs
 
@@ -21,6 +34,10 @@ No playoff games on record.
 - NFC Special Teams Player of the Week (2013, Week 9)
 - NFC Special Teams Player of the Week (2014, Week 2)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Green Bay Packers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Green Bay in the sixth round |
+
+<!-- player-page -->

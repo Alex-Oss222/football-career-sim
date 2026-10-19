@@ -1,16 +1,29 @@
 # Eric Weddle
 
-![Eric Weddle career card](assets/eric_weddle.svg)
+**San Diego Chargers · Free safety · No. 32 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 200 lb · Born January 4, 1985 · Utah · Drafted in 2007, second round, by San Diego
+
+As of October 5, 2014, after Week 5.
+
+![Eric Weddle](https://commons.wikimedia.org/wiki/Special:FilePath/Eric_Weddle.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Eric_Weddle.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Diego Chargers | 28 | 32 | 16 | 111 | 2 | 22 | 0 | 2 | 1 | 1 | 1 | 6.9 | 0 |
-| 2014 | San Diego Chargers | 29 | 32 | 5 | 11 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 2.2 | 0 |
-| **Career** |  |  |  | 21 | 122 | 2 | 25 | 0 | 2 | 1 | 1 | 1 | 5.8 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 29 | 32 | 5 | 11 | 7 | 4 | 0 | 0 | 0 |
+| 2013 | San Diego | 28 | 32 | 16 | 111 | 73 | 38 | 2 | 1 | 1 |
+| Career |  |  |  | 21 | 122 | 80 | 42 | 2 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 29 | 32 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2013 | San Diego | 28 | 32 | 2 | 0 | 22 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -20,6 +33,10 @@ No playoff games on record.
 
 - AFC Defensive Player of the Week (2013, Week 16)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by San Diego in the second round |
+
+<!-- player-page -->

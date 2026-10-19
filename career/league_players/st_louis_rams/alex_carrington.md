@@ -1,28 +1,48 @@
 # Alex Carrington
 
-![Alex Carrington career card](assets/alex_carrington.svg)
+**St. Louis Rams · Defensive end · No. 92 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 301 lb · Born June 19, 1987 · Arkansas State · Drafted in 2010, third round, by Buffalo
+
+As of October 5, 2014, after Week 5.
+
+![Alex Carrington](https://commons.wikimedia.org/wiki/Special:FilePath/Alex_Carrington_Bills92.jpg?width=500)
+
+*Photo: J. Van Meter, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Alex_Carrington_Bills92.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 26 | 92 | 16 | 28 | 6 | 1 | 0 | 0 | 0 | 0 | 9 | 1.8 | 23 |
-| 2014 | St. Louis Rams | 27 | 92 | 4 | 8 | 3 | 0 | 0 | 0 | 1 | 0 | 3 | 2.0 | 8 |
-| **Career** |  |  |  | 20 | 36 | 9 | 1 | 0 | 0 | 1 | 0 | 12 | 1.8 | 31 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 27 | 92 | 4 | 8 | 8 | 0 | 0 | 3 | 3 |
+| 2013 | Buffalo | 26 | 92 | 16 | 28 | 23 | 5 | 1 | 6 | 9 |
+| Career |  |  |  | 20 | 36 | 31 | 5 | 1 | 9 | 12 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 27 | 92 | 0 | 0 | 0 | 1 | 0 | 0 |
+| 2013 | Buffalo | 26 | 92 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Buffalo Bills | 26 | 92 | 4 | 13 | 1 | 2 | 0 | 0 | 1 | 1 | 1 | 3.2 | 8 |
-| **Career** |  |  |  | 4 | 13 | 1 | 2 | 0 | 0 | 1 | 1 | 1 | 3.2 | 8 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 26 | 92 | 4 | 13 | 8 | 5 | 2 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Buffalo | 26 | 92 | 0 | 0 | 0 | 1 | 1 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Buffalo in the third round |
+
+<!-- player-page -->

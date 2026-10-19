@@ -1,16 +1,24 @@
 # Ryan Kalil
 
-![Ryan Kalil career card](assets/ryan_kalil.svg)
+**Carolina Panthers · Center · No. 67 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 300 lb · Born March 29, 1985 · USC · Drafted in 2007, second round, by Carolina
+
+As of October 5, 2014, after Week 5.
+
+![Ryan Kalil](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Kalil.jpg?width=500)
+
+*Photo: mjmonty, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Ryan_Kalil.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 28 | 67 | 16 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Carolina Panthers | 29 | 67 | 5 | 5 | 280 | 2 | 18 | 0 | 0 | 0 | 0 | 56.0 |
-| **Career** |  |  |  | 21 | N/A | N/A | 10 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 29 | 67 | 5 | 5 | 280 | 2 | 18 |
+| 2013 | Carolina | 28 | 67 | 16 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Carolina in the second round |
+
+<!-- player-page -->

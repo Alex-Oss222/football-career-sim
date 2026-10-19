@@ -35,7 +35,9 @@ from runtime.stat_tables import (
     combine, derived, col, g, passer_rating, pct, table, thrown, time_text,
 )
 
-RECEIPTS = ROOT / "career" / "2013" / "stats" / "game_receipts"
+from runtime.seasons import SeasonPaths  # noqa: E402
+
+RECEIPTS = SeasonPaths(2013, ROOT).receipts
 BLOCK = re.compile(
     r"(<!-- box-score event=(?P<event>[^ ]+) team=(?P<team>.+?) -->\n)(?P<body>.*?)(<!-- /box-score -->)",
     re.S,

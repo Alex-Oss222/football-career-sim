@@ -1,0 +1,40 @@
+{
+ "schema_version": 1,
+ "name": "Matt Bryant",
+ "gsis_id": "00-0020578",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [],
+ "awards": [
+  {
+   "season": 2013,
+   "award": "NFC Special Teams Player of the Week (2013, Week 1)",
+   "decided": {
+    "season": 2013,
+    "file": "results.json",
+    "key": "week-1",
+    "slot": "NFC-special_teams"
+   }
+  },
+  {
+   "season": 2013,
+   "award": "NFC Special Teams Player of the Week (2013, Week 15)",
+   "decided": {
+    "season": 2013,
+    "file": "results.json",
+    "key": "week-15",
+    "slot": "NFC-special_teams"
+   }
+  }
+ ],
+ "transactions": []
+}

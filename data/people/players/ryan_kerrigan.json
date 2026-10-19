@@ -1,0 +1,30 @@
+{
+ "schema_version": 1,
+ "name": "Ryan Kerrigan",
+ "gsis_id": "00-0027954",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [],
+ "awards": [
+  {
+   "season": 2014,
+   "award": "NFC Defensive Player of the Week (2014, Week 4)",
+   "decided": {
+    "season": 2014,
+    "file": "results.json",
+    "key": "week-4",
+    "slot": "NFC-defense"
+   }
+  }
+ ],
+ "transactions": []
+}

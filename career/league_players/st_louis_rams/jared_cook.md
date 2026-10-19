@@ -1,28 +1,48 @@
 # Jared Cook
 
-![Jared Cook career card](assets/jared_cook.svg)
+**St. Louis Rams · Tight end · No. 89 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 254 lb · Born April 7, 1987 · South Carolina · Drafted in 2009, third round, by Tennessee
+
+As of October 5, 2014, after Week 5.
+
+![Jared Cook](https://commons.wikimedia.org/wiki/Special:FilePath/Jared_Cook.jpg?width=500)
+
+*Photo: U.S. Air Force/Louis Briscese, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jared_Cook.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 26 | 89 | 16 | 106 | 69 | 661 | 9.6 | 3 | 41.3 | 65.1 | 38 | 0 | 0 |
-| 2014 | St. Louis Rams | 27 | 89 | 4 | 4 | 4 | 20 | 5.0 | 0 | 5.0 | 100.0 | 7 | 0 | 1 |
-| **Career** |  |  |  | 20 | 110 | 73 | 681 | 9.3 | 3 | 34.0 | 66.4 | 38 | 0 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 27 | 89 | 4 | 4 | 4 | 20 | 5.0 | 0 | 7 | 5.0 | 100.0 |
+| 2013 | St. Louis | 26 | 89 | 16 | 106 | 69 | 661 | 9.6 | 3 | 38 | 41.3 | 65.1 |
+| Career |  |  |  | 20 | 110 | 73 | 681 | 9.3 | 3 | 38 | 34.0 | 66.4 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | St. Louis | 27 | 89 | 0 | 0 | 0 | 1 | 1 |
+| 2013 | St. Louis | 26 | 89 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | St. Louis Rams | 26 | 89 | 1 | 8 | 6 | 85 | 14.2 | 0 | 85.0 | 75.0 | 22 | 2 | 0 |
-| **Career** |  |  |  | 1 | 8 | 6 | 85 | 14.2 | 0 | 85.0 | 75.0 | 22 | 2 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 26 | 89 | 1 | 8 | 6 | 85 | 14.2 | 0 | 22 | 85.0 | 75.0 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | St. Louis | 26 | 89 | 1 | 2 | 0 | 0 | 0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All St. Louis Rams players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Tennessee in the third round |
+
+<!-- player-page -->

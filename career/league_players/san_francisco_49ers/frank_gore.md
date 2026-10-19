@@ -1,16 +1,29 @@
 # Frank Gore
 
-![Frank Gore career card](assets/frank_gore.svg)
+**San Francisco 49ers · Running back · No. 21 · Age 31 · Last game October 5, 2014**
 
-## Career stats
+5' 9", 217 lb · Born May 14, 1983 · Miami · Drafted in 2005, third round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![Frank Gore](https://commons.wikimedia.org/wiki/Special:FilePath/Frank_Gore_2016.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Frank_Gore_2016.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CAR | RUSH YDS | Y/C | RUSH TD | YDS/G | REC | REC YDS | REC TD | TOUCHES | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 30 | 21 | 16 | 290 | 1,222 | 4.2 | 7 | 76.4 | 39 | 394 | 4 | 329 | 1 |
-| 2014 | San Francisco 49ers | 31 | 21 | 5 | 74 | 308 | 4.2 | 0 | 61.6 | 7 | 111 | 1 | 81 | 2 |
-| **Career** |  |  |  | 21 | 364 | 1,530 | 4.2 | 7 | 72.9 | 46 | 505 | 5 | 410 | 3 |
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 31 | 21 | 5 | 74 | 308 | 4.2 | 0 | 38 | 61.6 |
+| 2013 | San Francisco | 30 | 21 | 16 | 290 | 1,222 | 4.2 | 7 | 32 | 76.4 |
+| Career |  |  |  | 21 | 364 | 1,530 | 4.2 | 7 | 38 | 72.9 |
+
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 31 | 21 | 17 | 7 | 111 | 15.9 | 1 | 2 | 2 |
+| 2013 | San Francisco | 30 | 21 | 64 | 39 | 394 | 10.1 | 4 | 1 | 1 |
 
 ### Playoffs
 
@@ -20,6 +33,10 @@ No playoff games on record.
 
 - NFC Offensive Player of the Week (2013, Week 2)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2005 | Drafted by San Francisco in the third round |
+
+<!-- player-page -->

@@ -1,15 +1,22 @@
 # Sean Weatherspoon
 
-![Sean Weatherspoon career card](assets/sean_weatherspoon.svg)
+**Atlanta Falcons · Outside linebacker · Age 26 · Last game December 29, 2013**
 
-## Career stats
+6' 2", 244 lb · Born December 29, 1987 · Missouri · Drafted in 2010, first round, by Atlanta
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Atlanta Falcons | 25 | 56 | 16 | 77 | 1 | 1 | 1 | 5 | 1 | 1 | 5 | 4.8 | 57 |
-| **Career** |  |  |  | 16 | 77 | 1 | 1 | 1 | 5 | 1 | 1 | 5 | 4.8 | 57 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Atlanta | 25 | 56 | 16 | 77 | 57 | 20 | 1 | 1 | 5 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Atlanta | 25 | 56 | 1 | 38 | 5 | 1 | 1 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Atlanta Falcons players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Atlanta in the first round |
+
+<!-- player-page -->

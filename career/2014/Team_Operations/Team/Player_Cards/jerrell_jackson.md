@@ -1,143 +1,68 @@
-# Jerrell Jackson — 2014 Player Profile
+# Jerrell Jackson
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** March 31, 2014 starting evaluation  
-**Age:** 24  
-**Position:** WR  
-**Roster status (August 31, 2014):** Reserve/injured from August 31, 2014: waived with the injured designation at the August 30 reduction, unclaimed, and reverted to the reserve/injured list, not designated for return ([final roster cuts](../../../Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md)); out, multi-week, projected return October 9. Under contract; not on the 53.  
-**NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** A developmental receiver with useful movement but an unfinished NFL route and adjustment profile. I see a practice-squad receiver competing for a narrow depth role.  
-**Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/jerrell_jackson.md)  
+**Jacksonville Jaguars · Wide receiver · Age 24 · Reserve/injured**
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
+6' 0", 192 lb · Born February 6, 1990 · Missouri
 
-## Player grades
+As of October 5, 2014, after Week 5.
 
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 3.5 /10 | Staff judgment |
-| Athleticism | 4.5 /10 | Staff judgment |
-| Speed | 4.5 /10 | Staff judgment |
-| Strength / Power | 4.0 /10 | Staff judgment |
-| Agility / Change of direction | 4.5 /10 | Staff judgment |
-| Technique | 3.5 /10 | Staff judgment |
-| Football IQ | 3.0 /10 | Staff judgment |
-| Release vs press | 3.5 /10 | Staff judgment |
-| Route running | 3.5 /10 | Staff judgment |
-| Separation / quickness | 4.5 /10 | Staff judgment |
-| Long speed | 4.5 /10 | Staff judgment |
-| Hands | 4.0 /10 | Staff judgment |
-| Catch radius / contested catches | 3.5 /10 | Staff judgment |
-| Ball tracking / deep receiving | 3.5 /10 | Staff judgment |
-| YAC / contact balance | 4.0 /10 | Staff judgment |
-| Coverage recognition / adjustments | 3.0 /10 | Staff judgment |
-| Blocking | 3.5 /10 | Staff judgment |
+## Staff assessment
 
-Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Below NFL starter standard | Below elite standard | At low-end standard |
-| Release vs press | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Route running | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Separation / quickness | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Long speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Hands | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Catch radius / contested catches | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Ball tracking / deep receiving | Below NFL starter standard | Below elite standard | Above low-end standard |
-| YAC / contact balance | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Coverage recognition / adjustments | Below NFL starter standard | Below elite standard | At low-end standard |
-| Blocking | Below NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards, not measured 2014 league ranks.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 3.5/10 |
+| Athleticism | 4.5/10 |
+| Speed | 4.5/10 |
+| Strength and power | 4.0/10 |
+| Agility and change of direction | 4.5/10 |
+| Technique | 3.5/10 |
+| Football IQ | 3.0/10 |
+| Release vs press | 3.5/10 |
+| Route running | 3.5/10 |
+| Separation and quickness | 4.5/10 |
+| Long speed | 4.5/10 |
+| Hands | 4.0/10 |
+| Catch radius and contested catches | 3.5/10 |
+| Ball tracking and deep receiving | 3.5/10 |
+| YAC and contact balance | 4.0/10 |
+| Coverage recognition and adjustments | 3.0/10 |
+| Blocking | 3.5/10 |
 
 A developmental receiver with useful movement but an unfinished NFL route and adjustment profile. I see a practice-squad receiver competing for a narrow depth role.
 
-Source: [2013 profile](../../../../2013/player_profiles/jerrell_jackson.md) and its recorded practice/game sources.
+*Staff view, March 31, 2014; dated updates through August 14, 2014.*
 
-## Year-over-year change
+## Contract
 
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Player identity and position traits | 2013 baseline | Starting 2014 view | Retained | No new individual football evidence establishing change |
+Two-year contract through 2015.
 
-## What supports this assessment
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $420,000 | $420,000 |
+| 2015 | about $510,000 | Not settled |
 
-A developmental receiver with useful movement but an unfinished NFL route and adjustment profile. I see a practice-squad receiver competing for a narrow depth role.
+## Statistics
 
-[2013 profile](../../../../2013/player_profiles/jerrell_jackson.md) and its recorded practice/game sources.
+### Regular season
 
-## Historical comparison
+No regular-season games on record.
 
-The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.
+### Playoffs
 
-## Play style
+No playoff games on record.
 
-A developmental receiver with useful movement but an unfinished NFL route and adjustment profile. I see a practice-squad receiver competing for a narrow depth role.
+## Awards
 
-## Best traits
+None.
 
-- Separation / quickness: 4.5 /10.
-- Long speed: 4.5 /10.
-- Hands: 4.0 /10.
+## Transactions
 
-## Main weaknesses
+| Date | Transaction |
+|---|---|
+| August 31, 2013 | Released or waived by Jacksonville at the reduction to 53 |
+| September 1, 2013 | Cleared waivers; signed to the Jacksonville practice squad |
+| February 3, 2014 | Signed a reserve/future contract with Jacksonville, effective March 11, 2014 |
+| August 30, 2014 | Waived by Jacksonville with the injured designation at the reduction to 53 |
+| August 31, 2014 | Cleared waivers; reverted to Jacksonville's reserve/injured list |
 
-- Coverage recognition / adjustments: 3.0 /10.
-- Release vs press: 3.5 /10.
-- Route running: 3.5 /10.
-
-## Evidence and uncertainty
-
-- **Primary evidence:** [2013 profile](../../../../2013/player_profiles/jerrell_jackson.md) and its recorded practice/game sources.
-- **Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
-
-**One-line description:** A developmental receiver with useful movement but an unfinished NFL route and adjustment profile. I see a practice-squad receiver competing for a narrow depth role.
-
-## 2013 season production
-
-No statistical row was recorded for this player in 2013.
-
-Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
-
-## Dated coaching updates
-
-### August 14, 2014 | Preseason game 2, Jacksonville at Chicago
-
-Fifteen offensive snaps with Wilson's and Bray's groups; both targets caught, the 2-yard Drive throw on Bray's two-minute drive and the 7-yard Snag catch on third-and-17, 9 yards in all. A multi-week lower-extremity injury was logged at the end of Bray's second possession and he was removed: out, projected return in 56 days (October 9), reassessment August 21 ([medical record](../../Medical/incidents/jerrell_jackson_2014-08-14.md)). Roster disposition is Caldwell's decision with the user and is pending. He leaves the reserve receiver comparison for the length of his absence; his game-1 conversion and this game's two catches stand as recorded.
-
-Source: [preseason game 2 output](../../../Training_Camp_and_Preseason/Preseason_Games/Game_02/output.md) and its public receipt. This coaching update preserves the opening grades above.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 24 | N/A | Through Week 5 | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded | Unrecorded |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 24 | N/A | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

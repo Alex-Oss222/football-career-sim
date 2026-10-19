@@ -1,16 +1,24 @@
 # Charles Brown
 
-![Charles Brown career card](assets/charles_brown.svg)
+**New York Giants · Offensive tackle · No. 71 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 300 lb · Born April 10, 1987 · USC · Drafted in 2010, second round, by New Orleans
+
+As of October 5, 2014, after Week 5.
+
+![Charles Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Charles_Brown_%28offensive_lineman%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Charles_Brown_(offensive_lineman).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New Orleans Saints | 26 | 71 | 14 | N/A | N/A | 2 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | New York Giants | 27 | 71 | 5 | 0 | 0 | 0 | 22 | 0 | 0 | 0 | 0 | 0.0 |
-| **Career** |  |  |  | 19 | N/A | N/A | 2 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 27 | 71 | 5 | 0 | 0 | 0 | 22 |
+| 2013 | New Orleans | 26 | 71 | 14 | N/A | N/A | 2 | N/A |
+| Career |  |  |  | 19 | N/A | N/A | 2 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by New Orleans in the second round |
+
+<!-- player-page -->

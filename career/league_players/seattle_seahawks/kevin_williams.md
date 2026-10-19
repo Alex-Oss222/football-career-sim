@@ -1,28 +1,48 @@
 # Kevin Williams
 
-![Kevin Williams career card](assets/kevin_williams.svg)
+**Seattle Seahawks · Defensive tackle · No. 94 · Age 34 · Last game October 6, 2014**
 
-## Career stats
+6' 5", 311 lb · Born August 16, 1980 · Oklahoma State · Drafted in 2003, first round, by Minnesota
+
+As of October 6, 2014, after Week 5.
+
+![Kevin Williams](https://commons.wikimedia.org/wiki/Special:FilePath/20090104_Kevin_Williams_%2893%29.JPG?width=500)
+
+*Photo: TonyTheTiger ( t / c / bio / WP:CHICAGO / WP:LOTM ), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:20090104_Kevin_Williams_(93).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 33 | 93 | 15 | 16 | 1 | 1 | 0 | 0 | 0 | 0 | 4 | 1.1 | 14 |
-| 2014 | Seattle Seahawks | 34 | 94 | 4 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.2 | 5 |
-| **Career** |  |  |  | 19 | 21 | 1 | 1 | 0 | 0 | 0 | 0 | 4 | 1.1 | 19 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 34 | 94 | 4 | 5 | 5 | 0 | 0 | 0 | 0 |
+| 2013 | Minnesota | 33 | 93 | 15 | 16 | 14 | 2 | 1 | 1 | 4 |
+| Career |  |  |  | 19 | 21 | 19 | 2 | 1 | 1 | 4 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Seattle | 34 | 94 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Minnesota | 33 | 93 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 33 | 93 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 2 |
-| **Career** |  |  |  | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.0 | 2 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 33 | 93 | 3 | 3 | 2 | 1 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 33 | 93 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 6, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Seattle Seahawks players](README.md).
+| Date | Transaction |
+|---|---|
+| 2003 | Drafted by Minnesota in the first round |
+
+<!-- player-page -->

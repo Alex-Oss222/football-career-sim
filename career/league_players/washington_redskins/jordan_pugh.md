@@ -1,15 +1,22 @@
 # Jordan Pugh
 
-![Jordan Pugh career card](assets/jordan_pugh.svg)
+**Washington Redskins · Free safety · Age 25 · Last game December 29, 2013**
 
-## Career stats
+5' 11", 210 lb · Born January 29, 1988 · Texas A&M · Drafted in 2010, sixth round, by Carolina
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Washington Redskins | 25 | N/A | 16 | 31 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 1.9 | 0 |
-| **Career** |  |  |  | 16 | 31 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 1.9 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Washington | 25 | N/A | 16 | 31 | 18 | 13 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Washington | 25 | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Washington Redskins players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Carolina in the sixth round |
+
+<!-- player-page -->

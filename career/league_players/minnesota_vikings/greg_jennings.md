@@ -1,28 +1,57 @@
 # Greg Jennings
 
-![Greg Jennings career card](assets/greg_jennings.svg)
+**Minnesota Vikings · Wide receiver · No. 15 · Age 31 · Last game October 2, 2014**
 
-## Career stats
+6' 0", 195 lb · Born September 21, 1983 · Western Michigan · Drafted in 2006, second round, by Green Bay
+
+As of October 2, 2014, after Week 5.
+
+![Greg Jennings](https://commons.wikimedia.org/wiki/Special:FilePath/Greg_Jennings-1.jpg?width=500)
+
+*Photo: Gabriel Cervantes, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Greg_Jennings-1.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 29 | 15 | 16 | 156 | 98 | 931 | 9.5 | 4 | 58.2 | 62.8 | 53 | 16 | 0 |
-| 2014 | Minnesota Vikings | 30 | 15 | 5 | 62 | 44 | 336 | 7.6 | 1 | 67.2 | 71.0 | 38 | 9 | 0 |
-| **Career** |  |  |  | 21 | 218 | 142 | 1,267 | 8.9 | 5 | 60.3 | 65.1 | 53 | 25 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 30 | 15 | 5 | 62 | 44 | 336 | 7.6 | 1 | 38 | 67.2 | 71.0 |
+| 2013 | Minnesota | 29 | 15 | 16 | 156 | 98 | 931 | 9.5 | 4 | 53 | 58.2 | 62.8 |
+| Career |  |  |  | 21 | 218 | 142 | 1,267 | 8.9 | 5 | 53 | 60.3 | 65.1 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 30 | 15 | 3 | 9 | 0 | 0 | 0 |
+| 2013 | Minnesota | 29 | 15 | 7 | 16 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 30 | 15 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2013 | Minnesota | 29 | 15 | 0 | 0 | N/A | 3 | 25 | 8.3 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 29 | 15 | 3 | 25 | 20 | 210 | 10.5 | 1 | 70.0 | 80.0 | 35 | 7 | 0 |
-| **Career** |  |  |  | 3 | 25 | 20 | 210 | 10.5 | 1 | 70.0 | 80.0 | 35 | 7 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 29 | 15 | 3 | 25 | 20 | 210 | 10.5 | 1 | 35 | 70.0 | 80.0 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 29 | 15 | 1 | 7 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 29 | 15 | 0 | 0 | N/A | 1 | 8 | 8.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Green Bay in the second round |
+
+<!-- player-page -->

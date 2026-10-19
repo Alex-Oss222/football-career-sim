@@ -1,23 +1,39 @@
 # Bernard Pollard
 
-![Bernard Pollard career card](assets/bernard_pollard.svg)
+**Tennessee Titans · Strong safety · No. 31 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 226 lb · Born December 23, 1984 · Purdue · Drafted in 2006, second round, by Kansas City
+
+As of October 5, 2014, after Week 5.
+
+![Bernard Pollard](https://commons.wikimedia.org/wiki/Special:FilePath/Bernard_Pollard_makes_a_face.jpg?width=500)
+
+*Photo: AJ Guel, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Bernard_Pollard_makes_a_face.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 28 | 31 | 16 | 108 | 5 | 25 | 93 | 4 | 2 | 1 | 1 | 6.8 | 0 |
-| 2014 | Tennessee Titans | 29 | 31 | 5 | 24 | 2 | 2 | 34 | 2 | 2 | 0 | 0 | 4.8 | 0 |
-| **Career** |  |  |  | 21 | 132 | 7 | 27 | 127 | 6 | 4 | 1 | 1 | 6.3 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 29 | 31 | 5 | 24 | 19 | 5 | 2 | 2 | 2 |
+| 2013 | Tennessee | 28 | 31 | 16 | 108 | 72 | 36 | 4 | 2 | 2 |
+| Career |  |  |  | 21 | 132 | 91 | 41 | 6 | 4 | 4 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 29 | 31 | 2 | 34 | 2 | 0 | 0 | 0 |
+| 2013 | Tennessee | 28 | 31 | 5 | 93 | 25 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 28 | 31 | 2 | 12 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 6.0 | 0 |
-| **Career** |  |  |  | 2 | 12 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 6.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 28 | 31 | 2 | 12 | 9 | 3 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 28 | 31 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ## Awards
 
@@ -25,6 +41,10 @@
 - AFC Defensive Player of the Month (2013, September)
 - Pro Bowl selection (2013, S)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Kansas City in the second round |
+
+<!-- player-page -->

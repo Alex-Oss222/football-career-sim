@@ -1,15 +1,18 @@
 # Ben Hartsock
 
-![Ben Hartsock career card](assets/ben_hartsock.svg)
+**Carolina Panthers · Tight end · Age 33 · Last game December 29, 2013**
 
-## Career stats
+6' 4", 265 lb · Born July 5, 1980 · Ohio State · Drafted in 2004, third round, by Indianapolis
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 33 | 84 | 16 | 24 | 13 | 137 | 10.5 | 0 | 8.6 | 54.2 | 24 | 0 | 0 |
-| **Career** |  |  |  | 16 | 24 | 13 | 137 | 10.5 | 0 | 8.6 | 54.2 | 24 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Carolina | 33 | 84 | 16 | 24 | 13 | 137 | 10.5 | 0 | 24 | 8.6 | 54.2 |
 
 ### Playoffs
 
@@ -17,8 +20,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Carolina Panthers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2004 | Drafted by Indianapolis in the third round |
+
+<!-- player-page -->

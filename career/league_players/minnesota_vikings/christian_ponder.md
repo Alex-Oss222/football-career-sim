@@ -1,28 +1,48 @@
 # Christian Ponder
 
-![Christian Ponder career card](assets/christian_ponder.svg)
+**Minnesota Vikings · Quarterback · No. 7 · Age 26 · Last game October 2, 2014**
 
-## Career stats
+6' 2", 229 lb · Born February 25, 1988 · Florida State · Drafted in 2011, first round, by Minnesota
+
+As of October 2, 2014, after Week 5.
+
+![Christian Ponder](https://commons.wikimedia.org/wiki/Special:FilePath/Christian_Ponder_close-up.jpg?width=500)
+
+*Photo: Joe Bielawa, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Christian_Ponder_close-up.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 25 | 7 | 16 | 354-547 | 64.7 | 3,608 | 24 | 9 | 6.6 | 91.3 | 225.5 | 156 | 0 |
-| 2014 | Minnesota Vikings | 26 | 7 | 5 | 0-0 | N/A | 0 | 0 | 0 | N/A | N/A | 0.0 | 0 | 0 |
-| **Career** |  |  |  | 21 | 354-547 | 64.7 | 3,608 | 24 | 9 | 6.6 | 91.3 | 171.8 | 156 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 26 | 7 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2013 | Minnesota | 25 | 7 | 16 | 354 | 547 | 64.7 | 3,608 | 6.6 | 225.5 | 24 | 9 | 91.3 |
+| Career |  |  |  | 21 | 354 | 547 | 64.7 | 3,608 | 6.6 | 171.8 | 24 | 9 | 91.3 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Minnesota | 26 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Minnesota | 25 | 7 | 31 | 222 | 42 | 156 | 0 | 1 | 1 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Minnesota Vikings | 25 | 7 | 3 | 66-98 | 67.3 | 784 | 7 | 3 | 8.0 | 102.6 | 261.3 | 115 | 1 |
-| **Career** |  |  |  | 3 | 66-98 | 67.3 | 784 | 7 | 3 | 8.0 | 102.6 | 261.3 | 115 | 1 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 25 | 7 | 3 | 66 | 98 | 67.3 | 784 | 8.0 | 261.3 | 7 | 3 | 102.6 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Minnesota | 25 | 7 | 12 | 76 | 16 | 115 | 1 | 2 | 2 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 2, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Minnesota Vikings players](README.md).
+| Date | Transaction |
+|---|---|
+| 2011 | Drafted by Minnesota in the first round |
+
+<!-- player-page -->

@@ -1,15 +1,18 @@
 # Eric Winston
 
-![Eric Winston career card](assets/eric_winston.svg)
+**Arizona Cardinals · Guard · Age 30 · Last game December 29, 2013**
 
-## Career stats
+6' 7", 302 lb · Born November 17, 1983 · Miami · Drafted in 2006, third round, by Houston
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Arizona Cardinals | 29 | 73 | 16 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
-| **Career** |  |  |  | 16 | N/A | N/A | 8 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Arizona | 29 | 73 | 16 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 
@@ -17,8 +20,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Arizona Cardinals players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Houston in the third round |
+
+<!-- player-page -->

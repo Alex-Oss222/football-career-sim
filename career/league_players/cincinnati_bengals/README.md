@@ -1,18 +1,20 @@
 # Cincinnati Bengals players
 
-AFC North · Players whose latest game on record was with the Cincinnati Bengals. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+AFC North. The players whose latest game on record was with the Cincinnati Bengals. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 14 | [Andy Dalton](andy_dalton.md) | QB | 4 | 16 |
 | 17 | [Jason Campbell](jason_campbell.md) | QB | 4 | 16 |
 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [BenJarvus Green-Ellis](benjarvus_green_ellis.md) | HB | 0 | 16 |
 | 30 | [Cedric Peerman](cedric_peerman.md) | RB | 4 | 16 |
 | 25 | [Giovani Bernard](giovani_bernard.md) | RB | 4 | 16 |
@@ -22,7 +24,7 @@ AFC North · Players whose latest game on record was with the Cincinnati Bengals
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 18 | [A.J. Green](a_j_green.md) | WR | 4 | 16 |
 | 19 | [Brandon Tate](brandon_tate.md) | WR | 4 | 16 |
 | 11 | [Dane Sanzenbacher](dane_sanzenbacher.md) | WR | 4 | 16 |
@@ -34,7 +36,7 @@ AFC North · Players whose latest game on record was with the Cincinnati Bengals
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 81 | [Alex Smith](alex_smith.md) | TE | 4 | 16 |
 | 84 | [Jermaine Gresham](jermaine_gresham.md) | TE | 4 | 16 |
 | N/A | [Orson Charles](orson_charles.md) | TE | 0 | 16 |
@@ -44,7 +46,7 @@ AFC North · Players whose latest game on record was with the Cincinnati Bengals
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 71 | [Andre Smith](andre_smith.md) | T | 4 | 16 |
 | 77 | [Andrew Whitworth](andrew_whitworth.md) | T | 4 | 15 |
 | 65 | [Clint Boling](clint_boling.md) | G | 4 | 16 |
@@ -61,7 +63,7 @@ AFC North · Players whose latest game on record was with the Cincinnati Bengals
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 98 | [Brandon Thompson](brandon_thompson.md) | NT | 4 | 16 |
 | 75 | [Devon Still](devon_still.md) | DT | 0 | 16 |
 | 94 | [Domata Peko](domata_peko.md) | NT | 4 | 16 |
@@ -74,7 +76,7 @@ AFC North · Players whose latest game on record was with the Cincinnati Bengals
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 96 | [Carlos Dunlap](carlos_dunlap.md) | OLB | 4 | 16 |
 | 59 | [Emmanuel Lamur](emmanuel_lamur.md) | OLB | 4 | 0 |
 | N/A | [James Harrison](james_harrison.md) | OLB | 0 | 16 |
@@ -88,7 +90,7 @@ AFC North · Players whose latest game on record was with the Cincinnati Bengals
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 24 | [Adam Jones](adam_jones.md) | CB | 4 | 16 |
 | 27 | [Dre Kirkpatrick](dre_kirkpatrick.md) | CB | 4 | 2 |
 | 43 | [George Iloka](george_iloka.md) | SS | 4 | 16 |
@@ -101,17 +103,19 @@ AFC North · Players whose latest game on record was with the Cincinnati Bengals
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 2 | [Mike Nugent](mike_nugent.md) | K | 4 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 10 | [Kevin Huber](kevin_huber.md) | P | 4 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 46 | [Clark Harris](clark_harris.md) | LS | 4 | 16 |
+
+<!-- player-index -->

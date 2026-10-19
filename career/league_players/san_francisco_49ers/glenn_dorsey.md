@@ -1,15 +1,22 @@
 # Glenn Dorsey
 
-![Glenn Dorsey career card](assets/glenn_dorsey.svg)
+**San Francisco 49ers · Nose tackle · Age 28 · Last game December 29, 2013**
 
-## Career stats
+6' 1", 297 lb · Born August 1, 1985 · LSU · Drafted in 2008, first round, by Kansas City
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Francisco 49ers | 28 | 90 | 16 | 40 | 4 | 1 | 0 | 1 | 0 | 0 | 7 | 2.5 | 31 |
-| **Career** |  |  |  | 16 | 40 | 4 | 1 | 0 | 1 | 0 | 0 | 7 | 2.5 | 31 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | San Francisco | 28 | 90 | 16 | 40 | 31 | 9 | 1 | 4 | 7 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | San Francisco | 28 | 90 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All San Francisco 49ers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2008 | Drafted by Kansas City in the first round |
+
+<!-- player-page -->

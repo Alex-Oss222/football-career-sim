@@ -156,11 +156,36 @@ NUMBERED_FOLDERS = {
 # under career/YEAR/ hold the pages to read, with their images.
 DATA_ROOT = 'data'
 SYSTEM_SUFFIXES = ('.json', '.csv', '.gz')
+# Rebuild step 3a (October 19, 2026): people are stored once, not per season
+# (stored-facts rule 1). Their permanent records live in the data area outside
+# every season folder, and the user's canon changes to a researched fact sit
+# in one dated layer beside them. The league player pages follow the league
+# across years, so they sit outside the season folders too. Code finds these
+# places here (stored-facts rule 2), never by writing the path itself.
+PEOPLE_ROOT = DATA_ROOT + '/people'
+PLAYER_RECORDS = PEOPLE_ROOT + '/players'
+CANON_OVERRIDES = PEOPLE_ROOT + '/canon_overrides.json'
+LEAGUE_PLAYER_PAGES = 'career/league_players'
+# The pages written before 2014 Week 6, by path: history under rebuild rule 1, exempt from the
+# clean-page check (runtime/clean_pages.py) until a later step rebuilds them.
+PAGE_HISTORY = DATA_ROOT + '/pages/history.json'
+# The research registries the player pages read through (one owner each).
+BIRTH_DATE_REGISTRY = 'library/data/player_birth_dates.json'
+BIRTH_DATE_CORRECTIONS = 'library/data/player_birth_date_corrections.json'
+PHOTO_REGISTRY = 'library/data/player_photos.json'
+# Jacksonville's contract inputs (salary by year), the owner the contract section reads.
+PLAYER_FINANCES = 'career/finances/supporting_records/financial_inputs.json'
 
 
 def is_system_file(relative):
     """A stored-fact or game file (.json, .csv, .gz) rather than a page or image."""
     return PurePosixPath(str(relative)).suffix in SYSTEM_SUFFIXES
+
+
+def logical_path(year, relative):
+    """The logical location ``career/YEAR/relative`` a generated page's links are written
+    against before they are rebased to the page's real place (rebase_markdown)."""
+    return 'career/%d/%s' % (year, _within_season(relative))
 
 
 def _unnumbered(value):

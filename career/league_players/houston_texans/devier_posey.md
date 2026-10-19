@@ -1,16 +1,25 @@
 # DeVier Posey
 
-![DeVier Posey career card](assets/devier_posey.svg)
+**Houston Texans · Wide receiver · No. 11 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 210 lb · Born March 15, 1990 · Ohio State · Drafted in 2012, third round, by Houston
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Houston Texans | 23 | 11 | 16 | 3 | 2 | 8 | 4.0 | 0 | 0.5 | 66.7 | 5 | 0 | 0 |
-| 2014 | Houston Texans | 24 | 11 | 5 | 8 | 5 | 124 | 24.8 | 1 | 24.8 | 62.5 | 39 | 2 | 0 |
-| **Career** |  |  |  | 21 | 11 | 7 | 132 | 18.9 | 1 | 6.3 | 63.6 | 39 | 2 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Houston | 24 | 11 | 5 | 8 | 5 | 124 | 24.8 | 1 | 39 | 24.8 | 62.5 |
+| 2013 | Houston | 23 | 11 | 16 | 3 | 2 | 8 | 4.0 | 0 | 5 | 0.5 | 66.7 |
+| Career |  |  |  | 21 | 11 | 7 | 132 | 18.9 | 1 | 39 | 6.3 | 63.6 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Houston | 24 | 11 | 1 | 2 | 0 | 0 | 0 |
+| 2013 | Houston | 23 | 11 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +27,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Houston Texans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Houston in the third round |
+
+<!-- player-page -->

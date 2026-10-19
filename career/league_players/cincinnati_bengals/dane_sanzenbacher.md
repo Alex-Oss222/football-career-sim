@@ -1,16 +1,29 @@
 # Dane Sanzenbacher
 
-![Dane Sanzenbacher career card](assets/dane_sanzenbacher.svg)
+**Cincinnati Bengals · Wide receiver · No. 11 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 184 lb · Born October 13, 1988 · Ohio State
+
+As of October 5, 2014, after Week 5.
+
+![Dane Sanzenbacher](https://commons.wikimedia.org/wiki/Special:FilePath/Dane_Sanzenbacher.jpg?width=500)
+
+*Photo: Mjglasgow, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Dane_Sanzenbacher.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cincinnati Bengals | 24 | 11 | 16 | 3 | 3 | 18 | 6.0 | 1 | 1.1 | 100.0 | 8 | 0 | 0 |
-| 2014 | Cincinnati Bengals | 25 | 11 | 4 | 11 | 7 | 61 | 8.7 | 0 | 15.2 | 63.6 | 24 | 4 | 0 |
-| **Career** |  |  |  | 20 | 14 | 10 | 79 | 7.9 | 1 | 4.0 | 71.4 | 24 | 4 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cincinnati | 25 | 11 | 4 | 11 | 7 | 61 | 8.7 | 0 | 24 | 15.2 | 63.6 |
+| 2013 | Cincinnati | 24 | 11 | 16 | 3 | 3 | 18 | 6.0 | 1 | 8 | 1.1 | 100.0 |
+| Career |  |  |  | 20 | 14 | 10 | 79 | 7.9 | 1 | 24 | 4.0 | 71.4 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cincinnati | 25 | 11 | 1 | 4 | 0 | 0 | 0 |
+| 2013 | Cincinnati | 24 | 11 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cincinnati Bengals players](README.md).
+<!-- player-page -->

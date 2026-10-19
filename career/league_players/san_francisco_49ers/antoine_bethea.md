@@ -1,16 +1,29 @@
 # Antoine Bethea
 
-![Antoine Bethea career card](assets/antoine_bethea.svg)
+**San Francisco 49ers · Strong safety · No. 41 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 206 lb · Born July 27, 1984 · Howard · Drafted in 2006, sixth round, by Indianapolis
+
+As of October 5, 2014, after Week 5.
+
+![Antoine Bethea](https://commons.wikimedia.org/wiki/Special:FilePath/Antoine_Bethea_2010-12-18.JPG?width=500)
+
+*Photo: Manningmbd, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Antoine_Bethea_2010-12-18.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Indianapolis Colts | 29 | 41 | 16 | 131 | 5 | 20 | 46 | 4 | 0 | 0 | 0 | 8.2 | 0 |
-| 2014 | San Francisco 49ers | 30 | 41 | 5 | 20 | 1 | 1 | 0 | 0 | 0 | 1 | 1 | 4.0 | 0 |
-| **Career** |  |  |  | 21 | 151 | 6 | 21 | 46 | 4 | 0 | 1 | 1 | 7.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 30 | 41 | 5 | 20 | 15 | 5 | 0 | 0 | 0 |
+| 2013 | Indianapolis | 29 | 41 | 16 | 131 | 102 | 29 | 4 | 0 | 2 |
+| Career |  |  |  | 21 | 151 | 117 | 34 | 4 | 0 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Francisco | 30 | 41 | 1 | 0 | 1 | 1 | 1 | 0 |
+| 2013 | Indianapolis | 29 | 41 | 5 | 46 | 20 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -20,6 +33,10 @@ No playoff games on record.
 
 - Pro Bowl selection (2013, S)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Francisco 49ers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Indianapolis in the sixth round |
+
+<!-- player-page -->

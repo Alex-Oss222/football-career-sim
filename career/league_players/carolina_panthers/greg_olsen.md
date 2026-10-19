@@ -1,16 +1,29 @@
 # Greg Olsen
 
-![Greg Olsen career card](assets/greg_olsen.svg)
+**Carolina Panthers · Tight end · No. 88 · Age 29 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 253 lb · Born March 11, 1985 · Miami; Notre Dame · Drafted in 2007, first round, by Chicago
+
+As of October 5, 2014, after Week 5.
+
+![Greg Olsen](https://commons.wikimedia.org/wiki/Special:FilePath/Greg_olsen_2019.jpg?width=500)
+
+*Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Greg_olsen_2019.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Carolina Panthers | 28 | 88 | 16 | 109 | 57 | 597 | 10.5 | 3 | 37.3 | 52.3 | 49 | 0 | 1 |
-| 2014 | Carolina Panthers | 29 | 88 | 5 | 32 | 18 | 194 | 10.8 | 1 | 38.8 | 56.2 | 31 | 0 | 0 |
-| **Career** |  |  |  | 21 | 141 | 75 | 791 | 10.5 | 4 | 37.7 | 53.2 | 49 | 0 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 29 | 88 | 5 | 32 | 18 | 194 | 10.8 | 1 | 31 | 38.8 | 56.2 |
+| 2013 | Carolina | 28 | 88 | 16 | 109 | 57 | 597 | 10.5 | 3 | 49 | 37.3 | 52.3 |
+| Career |  |  |  | 21 | 141 | 75 | 791 | 10.5 | 4 | 49 | 37.7 | 53.2 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Carolina | 29 | 88 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Carolina | 28 | 88 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Carolina Panthers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Chicago in the first round |
+
+<!-- player-page -->

@@ -1,28 +1,48 @@
 # James-Michael Johnson
 
-![James-Michael Johnson career card](assets/james_michael_johnson.svg)
+**Kansas City Chiefs · Outside linebacker · No. 52 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 240 lb · Born August 20, 1989 · Nevada · Drafted in 2012, fourth round, by Cleveland
+
+As of October 5, 2014, after Week 5.
+
+![James-Michael Johnson](https://commons.wikimedia.org/wiki/Special:FilePath/James-Michael_Johnson.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:James-Michael_Johnson.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 24 | 52 | 16 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0.5 | 3 |
-| 2014 | Kansas City Chiefs | 25 | 52 | 5 | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0.8 | 3 |
-| **Career** |  |  |  | 21 | 12 | 1 | 0 | 0 | 0 | 0 | 0 | 2 | 0.6 | 6 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 25 | 52 | 5 | 4 | 3 | 1 | 0 | 1 | 1 |
+| 2013 | Kansas City | 24 | 52 | 16 | 8 | 3 | 5 | 0 | 0 | 1 |
+| Career |  |  |  | 21 | 12 | 6 | 6 | 0 | 1 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 25 | 52 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Kansas City | 24 | 52 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 24 | 52 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 24 | 52 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 24 | 52 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Cleveland in the fourth round |
+
+<!-- player-page -->

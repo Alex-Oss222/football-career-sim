@@ -1,11 +1,13 @@
 # Detroit Lions players
 
-NFC North · Players whose latest game on record was with the Detroit Lions. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+NFC North. The players whose latest game on record was with the Detroit Lions. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 8 | [Dan Orlovsky](dan_orlovsky.md) | QB | 5 | 0 |
 | 17 | [Kellen Moore](kellen_moore.md) | QB | 5 | 16 |
 | 9 | [Matthew Stafford](matthew_stafford.md) | QB | 5 | 16 |
@@ -13,7 +15,7 @@ NFC North · Players whose latest game on record was with the Detroit Lions. G c
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [George Winn](george_winn.md) | RB | 1 | 0 |
 | 45 | [Jed Collins](jed_collins.md) | FB | 5 | 16 |
 | 35 | [Joique Bell](joique_bell.md) | RB | 5 | 16 |
@@ -24,7 +26,7 @@ NFC North · Players whose latest game on record was with the Detroit Lions. G c
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 81 | [Calvin Johnson](calvin_johnson.md) | WR | 5 | 16 |
 | 10 | [Corey Fuller](corey_fuller.md) | WR | 5 | 0 |
 | 15 | [Golden Tate](golden_tate.md) | WR | 4 | 16 |
@@ -37,7 +39,7 @@ NFC North · Players whose latest game on record was with the Detroit Lions. G c
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 87 | [Brandon Pettigrew](brandon_pettigrew.md) | TE | 5 | 16 |
 | 85 | [Eric Ebron](eric_ebron.md) | TE | 5 | 0 |
 | 80 | [Joseph Fauria](joseph_fauria.md) | TE | 5 | 16 |
@@ -46,7 +48,7 @@ NFC North · Players whose latest game on record was with the Detroit Lions. G c
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 78 | [Corey Hilliard](corey_hilliard.md) | T | 5 | 2 |
 | 51 | [Dominic Raiola](dominic_raiola.md) | C | 5 | 16 |
 | N/A | [Dylan Gandy](dylan_gandy.md) | G | 0 | 5 |
@@ -62,7 +64,7 @@ NFC North · Players whose latest game on record was with the Detroit Lions. G c
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 97 | [Caraun Reid](caraun_reid.md) | DT | 5 | 0 |
 | 52 | [Darryl Tapp](darryl_tapp.md) | DE | 5 | 16 |
 | 92 | [Devin Taylor](devin_taylor.md) | DE | 5 | 5 |
@@ -78,7 +80,7 @@ NFC North · Players whose latest game on record was with the Detroit Lions. G c
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 58 | [Ashlee Palmer](ashlee_palmer.md) | OLB | 5 | 16 |
 | 54 | [DeAndre Levy](deandre_levy.md) | OLB | 5 | 16 |
 | 57 | [Josh Bynes](josh_bynes.md) | ILB | 1 | 16 |
@@ -90,7 +92,7 @@ NFC North · Players whose latest game on record was with the Detroit Lions. G c
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 29 | [Cassius Vaughn](cassius_vaughn.md) | CB | 5 | 16 |
 | N/A | [Chris Houston](chris_houston.md) | CB | 0 | 16 |
 | 23 | [Darius Slay](darius_slay.md) | CB | 5 | 16 |
@@ -109,7 +111,7 @@ NFC North · Players whose latest game on record was with the Detroit Lions. G c
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 5 | [Alex Henery](alex_henery.md) | K | 1 | 16 |
 | N/A | [David Akers](david_akers.md) | K | 0 | 16 |
 | 3 | [Nate Freese](nate_freese.md) | K | 4 | 0 |
@@ -117,11 +119,13 @@ NFC North · Players whose latest game on record was with the Detroit Lions. G c
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 6 | [Sam Martin](sam_martin.md) | P | 5 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 48 | [Don Muhlbach](don_muhlbach.md) | LS | 5 | 16 |
+
+<!-- player-index -->

@@ -1,18 +1,20 @@
 # Seattle Seahawks players
 
-NFC West · Players whose latest game on record was with the Seattle Seahawks. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+NFC West. The players whose latest game on record was with the Seattle Seahawks. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 3 | [Russell Wilson](russell_wilson.md) | QB | 4 | 16 |
 | 7 | [Tarvaris Jackson](tarvaris_jackson.md) | QB | 4 | 16 |
 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 33 | [Christine Michael](christine_michael.md) | RB | 2 | 16 |
 | 40 | [Derrick Coleman](derrick_coleman.md) | FB | 4 | 16 |
 | 24 | [Marshawn Lynch](marshawn_lynch.md) | RB | 4 | 16 |
@@ -22,7 +24,7 @@ NFC West · Players whose latest game on record was with the Seattle Seahawks. G
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 19 | [Bryan Walters](bryan_walters.md) | WR | 4 | 0 |
 | 89 | [Doug Baldwin](doug_baldwin.md) | WR | 4 | 16 |
 | 15 | [Jermaine Kearse](jermaine_kearse.md) | WR | 4 | 16 |
@@ -37,7 +39,7 @@ NFC West · Players whose latest game on record was with the Seattle Seahawks. G
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 84 | [Cooper Helfet](cooper_helfet.md) | TE | 2 | 0 |
 | 98 | [Greg Scruggs](greg_scruggs.md) | TE | 4 | 0 |
 | 82 | [Luke Willson](luke_willson.md) | TE | 4 | 16 |
@@ -46,7 +48,7 @@ NFC West · Players whose latest game on record was with the Seattle Seahawks. G
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 78 | [Alvin Bailey](alvin_bailey.md) | G | 4 | 16 |
 | 79 | [Garry Gilliam](garry_gilliam.md) | T | 4 | 0 |
 | 64 | [J.R. Sweezy](j_r_sweezy.md) | G | 4 | 16 |
@@ -60,7 +62,7 @@ NFC West · Players whose latest game on record was with the Seattle Seahawks. G
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 92 | [Brandon Mebane](brandon_mebane.md) | NT | 4 | 16 |
 | N/A | [Chris Clemons](chris_clemons.md) | DE | 0 | 15 |
 | 56 | [Cliff Avril](cliff_avril.md) | DE | 4 | 15 |
@@ -73,7 +75,7 @@ NFC West · Players whose latest game on record was with the Seattle Seahawks. G
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Allen Bradford](allen_bradford.md) | MLB | 0 | 12 |
 | 54 | [Bobby Wagner](bobby_wagner.md) | MLB | 4 | 16 |
 | 52 | [Brock Coyle](brock_coyle.md) | MLB | 4 | 0 |
@@ -87,7 +89,7 @@ NFC West · Players whose latest game on record was with the Seattle Seahawks. G
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Brandon Browner](brandon_browner.md) | CB | 0 | 16 |
 | 41 | [Byron Maxwell](byron_maxwell.md) | CB | 4 | 11 |
 | N/A | [Chris Maragos](chris_maragos.md) | FS | 0 | 16 |
@@ -101,17 +103,19 @@ NFC West · Players whose latest game on record was with the Seattle Seahawks. G
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 4 | [Stephen Hauschka](stephen_hauschka.md) | K | 4 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 9 | [Jon Ryan](jon_ryan.md) | P | 4 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 49 | [Clint Gresham](clint_gresham.md) | LS | 4 | 16 |
+
+<!-- player-index -->

@@ -1,16 +1,29 @@
 # Joe Vellano
 
-![Joe Vellano career card](assets/joe_vellano.svg)
+**New England Patriots · Defensive tackle · No. 72 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 300 lb · Born October 30, 1988 · Maryland
+
+As of October 5, 2014, after Week 5.
+
+![Joe Vellano](https://commons.wikimedia.org/wiki/Special:FilePath/Joe_Vellano_%281691317%29_%28cropped%29.jpg?width=500)
+
+*Photo: U.S. Navy photo by Mass Communication Specialist 3rd Class Pyoung K. Yi/Released, Public domain ([source](https://commons.wikimedia.org/wiki/File:Joe_Vellano_(1691317)_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New England Patriots | 24 | 72 | 16 | 6 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0.4 | 3 |
-| 2014 | New England Patriots | 25 | 72 | 5 | 17 | 5 | 1 | 1 | 1 | 1 | 1 | 5 | 3.4 | 12 |
-| **Career** |  |  |  | 21 | 23 | 5 | 1 | 1 | 2 | 1 | 1 | 5 | 1.1 | 15 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 25 | 72 | 5 | 17 | 12 | 5 | 1 | 5 | 5 |
+| 2013 | New England | 24 | 72 | 16 | 6 | 3 | 3 | 0 | 0 | 0 |
+| Career |  |  |  | 21 | 23 | 15 | 8 | 1 | 5 | 5 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | New England | 25 | 72 | 1 | 0 | 1 | 1 | 1 | 0 |
+| 2013 | New England | 24 | 72 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +31,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New England Patriots players](README.md).
+<!-- player-page -->

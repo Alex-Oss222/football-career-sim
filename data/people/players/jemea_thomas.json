@@ -1,0 +1,203 @@
+{
+ "schema_version": 1,
+ "name": "Jemea Thomas",
+ "gsis_id": "00-0031192",
+ "read_through": {
+  "birth_date": "birth_dates",
+  "height_weight": "listed_identity",
+  "college": "league_database",
+  "draft_before_2013": "league_database",
+  "photo": "photos",
+  "number": "number_rule",
+  "statistics": "game_records",
+  "position_and_status": "roster",
+  "contract": "player_contracts"
+ },
+ "assessments": [
+  {
+   "season": 2014,
+   "stage": "opening",
+   "date": "2014-05-11",
+   "date_as_written": "May 11, 2014 starting evaluation, on acquisition (selected No. 205 on May 10, 2014; rookie contract signed May 11)",
+   "by": "Jacksonville staff",
+   "standing_as_written": "Rookie; no NFL standing. Staff view: coverage-unit and slot-safety competition",
+   "position": "DB",
+   "age_as_written": "24",
+   "identity": "A compact, versatile senior defensive back who played both safety spots and slot corner and led Georgia Tech in tackles in 2013, with return and coverage-unit experience. Height and length limit him outside.",
+   "previous_profile": "None; 2014 rookie. The starting view rests on pre-draft public evidence only",
+   "policy_as_written": "Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.",
+   "grades": [
+    {
+     "category": "Overall",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Athleticism",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Speed",
+     "grade": "5.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Strength / Power",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Agility / Change of direction",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Technique",
+     "grade": "5.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Football IQ",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Versatility",
+     "grade": "6.5 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Tackling",
+     "grade": "6.0 /10",
+     "standing": "Staff judgment"
+    },
+    {
+     "category": "Length / outside coverage",
+     "grade": "3.5 /10",
+     "standing": "Staff judgment"
+    }
+   ],
+   "grades_note": "Exact theoretical personnel judgments of the player as he arrives, made from pre-draft public evidence (combine and dated college record described qualitatively, plus pre-draft reports). They grade the current player, not his draft slot, contract or projection, and they use no NFL outcome. Evidence limits are stated below.",
+   "comparisons": [
+    {
+     "trait": "Athleticism",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Speed",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Strength / Power",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Agility / Change of direction",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Technique",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Football IQ",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Versatility",
+     "vs_average": "Above NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Tackling",
+     "vs_average": "At NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    },
+    {
+     "trait": "Length / outside coverage",
+     "vs_average": "Below NFL starter standard",
+     "vs_best": "Below elite standard",
+     "vs_worst": "Above low-end standard"
+    }
+   ],
+   "comparisons_note": "These are staff comparisons against personnel standards for the position, not measured 2014 league ranks. No NFL snap exists for this player.",
+   "read": "A compact, versatile senior defensive back who played both safety spots and slot corner and led Georgia Tech in tackles in 2013, with return and coverage-unit experience. Height and length limit him outside.",
+   "read_sources": "Source: Georgia Tech senior, 2013 ([roster](https://ramblinwreck.com/roster/jemea-thomas/), page date unverified); East-West Shrine Game invitee, January 18, 2014 (search summary); pre-draft scouting report, [Bleacher Report](https://bleacherreport.com/articles/1972544-jemea-thomas-nfl-draft-2014-highlights-scouting-report-more) (publication date not verified; content pre-draft). Combine height 5-9, 192 (single source).",
+   "change": [
+    {
+     "area": "Player identity and position traits",
+     "prior": "None (rookie)",
+     "current": "Starting 2014 view",
+     "change": "New",
+     "reason": "Pre-draft public evidence only; no Jacksonville practice or game evidence yet"
+    }
+   ],
+   "support": "Georgia Tech senior, 2013 ([roster](https://ramblinwreck.com/roster/jemea-thomas/), page date unverified); East-West Shrine Game invitee, January 18, 2014 (search summary); pre-draft scouting report, [Bleacher Report](https://bleacherreport.com/articles/1972544-jemea-thomas-nfl-draft-2014-highlights-scouting-report-more) (publication date not verified; content pre-draft). Combine height 5-9, 192 (single source).",
+   "historical_comparison": "No comparator is assigned at arrival. The evaluation uses only information available at this checkpoint; the real player's later career is not an answer key.",
+   "play_style": "A compact, versatile senior defensive back who played both safety spots and slot corner and led Georgia Tech in tackles in 2013, with return and coverage-unit experience. Height and length limit him outside.",
+   "best_traits": [
+    "Versatility: 6.5 /10.",
+    "Agility / Change of direction: 6.0 /10.",
+    "Football IQ: 6.0 /10."
+   ],
+   "main_weaknesses": [
+    "Length / outside coverage: 3.5 /10.",
+    "Strength / Power: 5.0 /10.",
+    "Technique: 5.0 /10."
+   ],
+   "evidence": [
+    "**Primary evidence:** Georgia Tech senior, 2013 ([roster](https://ramblinwreck.com/roster/jemea-thomas/), page date unverified); East-West Shrine Game invitee, January 18, 2014 (search summary); pre-draft scouting report, [Bleacher Report](https://bleacherreport.com/articles/1972544-jemea-thomas-nfl-draft-2014-highlights-scouting-report-more) (publication date not verified; content pre-draft). Combine height 5-9, 192 (single source).",
+    "**Evaluation basis:** Theoretical staff judgment from pre-draft public evidence; thin evidence identified above.",
+    "**What remains uncertain:** No combine drill results in the library; every measurable is single source; no dated Jacksonville scouting report beyond Stone's instruction.",
+    "**What would change the assessment:** Rookie minicamp and OTA coverage work; whether he earns a coverage-unit job under Westhoff.",
+    "**During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.",
+    "**At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates."
+   ],
+   "one_line": "A compact, versatile senior defensive back who played both safety spots and slot corner and led Georgia Tech in tackles in 2013, with return and coverage-unit experience.",
+   "updates": [],
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/jemea_thomas.md at commit 332d70b"
+  }
+ ],
+ "awards": [],
+ "transactions": [
+  {
+   "date": "2014-05-10",
+   "kind": "drafted",
+   "text": "Drafted by Jacksonville (No. 205, sixth round)",
+   "source": "career/2014/Draft/draftees.md"
+  },
+  {
+   "date": "2014-05-11",
+   "kind": "signed",
+   "text": "Signed a four-year rookie contract with Jacksonville",
+   "source": "career/2014/Draft/draftees.md"
+  },
+  {
+   "date": "2014-08-30",
+   "kind": "waived",
+   "text": "Waived by Jacksonville at the reduction to 53",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  },
+  {
+   "date": "2014-08-31",
+   "kind": "practice_squad",
+   "text": "Cleared waivers; signed to the Jacksonville practice squad",
+   "source": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"
+  }
+ ]
+}

@@ -1,16 +1,24 @@
 # Mitchell Schwartz
 
-![Mitchell Schwartz career card](assets/mitchell_schwartz.svg)
+**Cleveland Browns · Offensive tackle · No. 72 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 320 lb · Born June 8, 1989 · California · Drafted in 2012, second round, by Cleveland
+
+As of October 5, 2014, after Week 5.
+
+![Mitchell Schwartz](https://commons.wikimedia.org/wiki/Special:FilePath/Mitchell_Schwartz_2017.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Mitchell_Schwartz_2017.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | STARTS | OFF SNAPS | SACKS ALLOWED | ST SNAPS | FR | TKL | FUM LOST | REC | OFF SNAPS/G |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Cleveland Browns | 24 | 72 | 16 | N/A | N/A | 1 | N/A | 0 | 0 | 0 | 0 | N/A |
-| 2014 | Cleveland Browns | 25 | 72 | 4 | 4 | 288 | 4 | 25 | 0 | 0 | 0 | 0 | 72.0 |
-| **Career** |  |  |  | 20 | N/A | N/A | 5 | N/A | 0 | 0 | 0 | 0 | N/A |
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 25 | 72 | 4 | 4 | 288 | 4 | 25 |
+| 2013 | Cleveland | 24 | 72 | 16 | N/A | N/A | 1 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by Cleveland in the second round |
+
+<!-- player-page -->

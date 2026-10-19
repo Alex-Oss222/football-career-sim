@@ -1,16 +1,29 @@
 # Devin Hester
 
-![Devin Hester career card](assets/devin_hester.svg)
+**Atlanta Falcons · Wide receiver · No. 17 · Age 31 · Last game October 5, 2014**
 
-## Career stats
+5' 11", 190 lb · Born November 4, 1982 · Miami · Drafted in 2006, second round, by Chicago
+
+As of October 5, 2014, after Week 5.
+
+![Devin Hester](https://commons.wikimedia.org/wiki/Special:FilePath/Devin_Hester_%28cropped%29.jpg?width=500)
+
+*Photo: Jauerback, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Devin_Hester_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Chicago Bears | 30 | 23 | 16 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| 2014 | Atlanta Falcons | 31 | 17 | 5 | 14 | 8 | 88 | 11.0 | 1 | 17.6 | 57.1 | 31 | 0 | 0 |
-| **Career** |  |  |  | 21 | 14 | 8 | 88 | 11.0 | 1 | 4.2 | 57.1 | 31 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 31 | 17 | 5 | 14 | 8 | 88 | 11.0 | 1 | 31 | 17.6 | 57.1 |
+| 2013 | Chicago | 30 | 23 | 16 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| Career |  |  |  | 21 | 14 | 8 | 88 | 11.0 | 1 | 31 | 4.2 | 57.1 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Atlanta | 31 | 17 | 12 | 228 | 19.0 | 13 | 98 | 7.5 |
+| 2013 | Chicago | 30 | 23 | 34 | 790 | 23.2 | 40 | 405 | 10.1 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Atlanta Falcons players](README.md).
+| Date | Transaction |
+|---|---|
+| 2006 | Drafted by Chicago in the second round |
+
+<!-- player-page -->

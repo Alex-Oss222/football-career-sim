@@ -1,11 +1,13 @@
 # Arizona Cardinals players
 
-NFC West · Players whose latest game on record was with the Arizona Cardinals. G counts regular-season games with any club. Records through October 6, 2014. [All clubs](../README.md).
+NFC West. The players whose latest game on record was with the Arizona Cardinals. G counts regular-season games with any club. Records through October 6, 2014.
+
+[All clubs](../README.md)
 
 ## Quarterbacks
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 3 | [Carson Palmer](carson_palmer.md) | QB | 4 | 16 |
 | 5 | [Drew Stanton](drew_stanton.md) | QB | 4 | 16 |
 | 6 | [Logan Thomas](logan_thomas.md) | QB | 4 | 0 |
@@ -14,7 +16,7 @@ NFC West · Players whose latest game on record was with the Arizona Cardinals. 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | N/A | [Alfonso Smith](alfonso_smith.md) | RB | 0 | 16 |
 | 38 | [Andre Ellington](andre_ellington.md) | RB | 4 | 16 |
 | 20 | [Jonathan Dwyer](jonathan_dwyer.md) | RB | 4 | 0 |
@@ -26,7 +28,7 @@ NFC West · Players whose latest game on record was with the Arizona Cardinals. 
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 13 | [Jaron Brown](jaron_brown.md) | WR | 4 | 16 |
 | 12 | [John Brown](john_brown.md) | WR | 4 | 0 |
 | 11 | [Larry Fitzgerald](larry_fitzgerald.md) | WR | 4 | 16 |
@@ -36,7 +38,7 @@ NFC West · Players whose latest game on record was with the Arizona Cardinals. 
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 79 | [Bradley Sowell](bradley_sowell.md) | TE | 4 | 16 |
 | N/A | [D.C. Jefferson](d_c_jefferson.md) | TE | 0 | 16 |
 | 85 | [Darren Fells](darren_fells.md) | TE | 4 | 0 |
@@ -48,7 +50,7 @@ NFC West · Players whose latest game on record was with the Arizona Cardinals. 
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 70 | [Bobby Massie](bobby_massie.md) | T | 4 | 2 |
 | 78 | [Earl Watford](earl_watford.md) | G | 4 | 2 |
 | N/A | [Eric Winston](eric_winston.md) | G | 0 | 16 |
@@ -64,7 +66,7 @@ NFC West · Players whose latest game on record was with the Arizona Cardinals. 
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 66 | [Alameda Ta'amu](alameda_ta_amu.md) | NT | 4 | 15 |
 | 57 | [Alex Okafor](alex_okafor.md) | DE | 1 | 2 |
 | 93 | [Calais Campbell](calais_campbell.md) | DE | 4 | 16 |
@@ -78,7 +80,7 @@ NFC West · Players whose latest game on record was with the Arizona Cardinals. 
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 55 | [John Abraham](john_abraham.md) | OLB | 4 | 14 |
 | 54 | [Kenny Demens](kenny_demens.md) | ILB | 4 | 0 |
 | 51 | [Kevin Minter](kevin_minter.md) | ILB | 4 | 16 |
@@ -90,7 +92,7 @@ NFC West · Players whose latest game on record was with the Arizona Cardinals. 
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 31 | [Antonio Cromartie](antonio_cromartie.md) | CB | 4 | 16 |
 | N/A | [Jamell Fleming](jamell_fleming.md) | CB | 0 | 2 |
 | 25 | [Jerraud Powers](jerraud_powers.md) | CB | 3 | 16 |
@@ -104,18 +106,20 @@ NFC West · Players whose latest game on record was with the Arizona Cardinals. 
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 7 | [Chandler Catanzaro](chandler_catanzaro.md) | K | 4 | 0 |
 | N/A | [Jay Feely](jay_feely.md) | K | 0 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 9 | [Dave Zastudil](dave_zastudil.md) | P | 4 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
-|---:|---|---|---:|---:|
+|---|---|---|---:|---:|
 | 82 | [Mike Leach](mike_leach.md) | LS | 4 | 16 |
+
+<!-- player-index -->

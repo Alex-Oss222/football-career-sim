@@ -1,28 +1,37 @@
 # Michael Palmer
 
-![Michael Palmer career card](assets/michael_palmer.svg)
+**Pittsburgh Steelers · Tight end · No. 82 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 252 lb · Born January 18, 1988 · Clemson
+
+As of October 5, 2014, after Week 5.
+
+![Michael Palmer](https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Palmer_Kuwait.jpg?width=500)
+
+*Photo: Kevin Stabinsky, Public domain ([source](https://commons.wikimedia.org/wiki/File:Michael_Palmer_Kuwait.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 25 | 82 | 16 | 2 | 2 | 11 | 5.5 | 0 | 0.7 | 100.0 | 7 | 0 | 0 |
-| 2014 | Pittsburgh Steelers | 26 | 82 | 5 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| **Career** |  |  |  | 21 | 2 | 2 | 11 | 5.5 | 0 | 0.5 | 100.0 | 7 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Pittsburgh | 26 | 82 | 5 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2013 | Pittsburgh | 25 | 82 | 16 | 2 | 2 | 11 | 5.5 | 0 | 7 | 0.7 | 100.0 |
+| Career |  |  |  | 21 | 2 | 2 | 11 | 5.5 | 0 | 7 | 0.5 | 100.0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 25 | 82 | 1 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| **Career** |  |  |  | 1 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 25 | 82 | 1 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Pittsburgh Steelers players](README.md).
+<!-- player-page -->

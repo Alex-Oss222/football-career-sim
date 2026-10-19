@@ -1,15 +1,22 @@
 # Ryan Pickett
 
-![Ryan Pickett career card](assets/ryan_pickett.svg)
+**Green Bay Packers · Nose tackle · Age 34 · Last game December 29, 2013**
 
-## Career stats
+6' 2", 340 lb · Born October 8, 1979 · Ohio State · Drafted in 2001, first round, by St. Louis
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Green Bay Packers | 33 | 79 | 16 | 92 | 9 | 8 | 0 | 3 | 0 | 0 | 18 | 5.8 | 60 |
-| **Career** |  |  |  | 16 | 92 | 9 | 8 | 0 | 3 | 0 | 0 | 18 | 5.8 | 60 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Green Bay | 33 | 79 | 16 | 92 | 60 | 32 | 8 | 9 | 18 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Green Bay | 33 | 79 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -20,6 +27,10 @@ No playoff games on record.
 - NFC Defensive Player of the Week (2013, Week 6)
 - Pro Bowl selection (2013, DT)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All Green Bay Packers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2001 | Drafted by St. Louis in the first round |
+
+<!-- player-page -->

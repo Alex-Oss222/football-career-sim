@@ -1,28 +1,48 @@
 # Jason McCourty
 
-![Jason McCourty career card](assets/jason_mccourty.svg)
+**Tennessee Titans · Cornerback · No. 30 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 193 lb · Born August 13, 1987 · Rutgers · Drafted in 2009, sixth round, by Tennessee
+
+As of October 5, 2014, after Week 5.
+
+![Jason McCourty](https://commons.wikimedia.org/wiki/Special:FilePath/Jason_McCourty_%28cropped%29.jpg?width=500)
+
+*Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jason_McCourty_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 26 | 30 | 16 | 91 | 6 | 9 | 106 | 3 | 0 | 1 | 1 | 5.7 | 0 |
-| 2014 | Tennessee Titans | 27 | 30 | 5 | 28 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 5.6 | 0 |
-| **Career** |  |  |  | 21 | 119 | 6 | 11 | 106 | 3 | 0 | 1 | 1 | 5.7 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 27 | 30 | 5 | 28 | 22 | 6 | 0 | 0 | 0 |
+| 2013 | Tennessee | 26 | 30 | 16 | 91 | 60 | 31 | 3 | 0 | 1 |
+| Career |  |  |  | 21 | 119 | 82 | 37 | 3 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tennessee | 27 | 30 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2013 | Tennessee | 26 | 30 | 6 | 106 | 9 | 1 | 1 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Tennessee Titans | 26 | 30 | 2 | 11 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 5.5 | 0 |
-| **Career** |  |  |  | 2 | 11 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 5.5 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 26 | 30 | 2 | 11 | 10 | 1 | 1 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Tennessee | 26 | 30 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
 - Pro Bowl selection (2013, CB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tennessee Titans players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Tennessee in the sixth round |
+
+<!-- player-page -->

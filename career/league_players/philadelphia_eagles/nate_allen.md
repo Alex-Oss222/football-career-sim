@@ -1,28 +1,48 @@
 # Nate Allen
 
-![Nate Allen career card](assets/nate_allen.svg)
+**Philadelphia Eagles · Safety · No. 29 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 1", 210 lb · Born November 30, 1987 · University of South Florida · Drafted in 2010, second round, by Philadelphia
+
+As of October 5, 2014, after Week 5.
+
+![Nate Allen](https://commons.wikimedia.org/wiki/Special:FilePath/Nate_Allen_%28safety%29.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Nate_Allen_(safety).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 25 | 29 | 12 | 90 | 1 | 6 | 27 | 1 | 1 | 3 | 3 | 7.5 | 0 |
-| 2014 | Philadelphia Eagles | 26 | 29 | 5 | 17 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 3.4 | 0 |
-| **Career** |  |  |  | 17 | 107 | 1 | 7 | 27 | 2 | 2 | 3 | 3 | 6.3 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 26 | 29 | 5 | 17 | 10 | 7 | 1 | 1 | 1 |
+| 2013 | Philadelphia | 25 | 29 | 12 | 90 | 59 | 31 | 1 | 1 | 2 |
+| Career |  |  |  | 17 | 107 | 69 | 38 | 2 | 2 | 3 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 26 | 29 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2013 | Philadelphia | 25 | 29 | 1 | 27 | 6 | 3 | 3 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 25 | 29 | 3 | 25 | 1 | 3 | 15 | 0 | 1 | 0 | 0 | 8.3 | 0 |
-| **Career** |  |  |  | 3 | 25 | 1 | 3 | 15 | 0 | 1 | 0 | 0 | 8.3 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 25 | 29 | 3 | 25 | 12 | 13 | 0 | 1 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 25 | 29 | 1 | 15 | 3 | 0 | 0 | N/A |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Philadelphia Eagles players](README.md).
+| Date | Transaction |
+|---|---|
+| 2010 | Drafted by Philadelphia in the second round |
+
+<!-- player-page -->

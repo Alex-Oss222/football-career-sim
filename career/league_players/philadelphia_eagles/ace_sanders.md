@@ -1,28 +1,38 @@
 # Ace Sanders
 
-![Ace Sanders career card](assets/ace_sanders.svg)
+**Philadelphia Eagles · Wide receiver · Age 22 · Last game October 5, 2014**
 
-## Career stats
+5' 7", 178 lb · Born November 11, 1991 · South Carolina
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 21 | N/A | 16 | 65 | 38 | 482 | 12.7 | 2 | 30.1 | 58.5 | 38 | 15 | 0 |
-| 2014 | Philadelphia Eagles | 22 | N/A | 5 | 7 | 6 | 40 | 6.7 | 0 | 8.0 | 85.7 | 17 | 0 | 0 |
-| **Career** |  |  |  | 21 | 72 | 44 | 522 | 11.9 | 2 | 24.9 | 61.1 | 38 | 15 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 22 | N/A | 5 | 7 | 6 | 40 | 6.7 | 0 | 17 | 8.0 | 85.7 |
+| 2013 | Philadelphia | 21 | N/A | 16 | 65 | 38 | 482 | 12.7 | 2 | 38 | 30.1 | 58.5 |
+| Career |  |  |  | 21 | 72 | 44 | 522 | 11.9 | 2 | 38 | 24.9 | 61.1 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Philadelphia | 22 | N/A | 0 | 0 | 0 | 0 | 0 |
+| 2013 | Philadelphia | 21 | N/A | 2 | 15 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Philadelphia Eagles | 21 | N/A | 3 | 21 | 11 | 155 | 14.1 | 0 | 51.7 | 52.4 | 29 | 0 | 0 |
-| **Career** |  |  |  | 3 | 21 | 11 | 155 | 14.1 | 0 | 51.7 | 52.4 | 29 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Philadelphia | 21 | N/A | 3 | 21 | 11 | 155 | 14.1 | 0 | 29 | 51.7 | 52.4 |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: his listed 2013 season roster data (no 2014 Weeks 1-4 roster row). [All Philadelphia Eagles players](README.md).
+<!-- player-page -->

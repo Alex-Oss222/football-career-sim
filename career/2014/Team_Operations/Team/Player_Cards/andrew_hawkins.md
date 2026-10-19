@@ -1,158 +1,77 @@
-# Andrew Hawkins — 2014 Player Profile
+# Andrew Hawkins
 
-<!-- player-card:begin -->
-![Andrew Hawkins career card](../../../../league_players/jacksonville_jaguars/assets/andrew_hawkins.svg)
+**Jacksonville Jaguars · Wide receiver · No. 16 · Age 28 · Active roster**
 
-[Career statistics](../../../../league_players/jacksonville_jaguars/andrew_hawkins.md)
-<!-- player-card:end -->
+5' 7", 180 lb · Born March 10, 1986 · Toledo
 
-<!-- photo -->
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_hawkins_bengals.jpg?width=500" alt="Andrew Hawkins" width="160">
+As of October 5, 2014, after Week 5.
+
+![Andrew Hawkins](https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_hawkins_bengals.jpg?width=500)
 
 *Photo: original: Navin75 derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Andrew_hawkins_bengals.jpg)).*
-<!-- /photo -->
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** March 31, 2014 starting evaluation  
-**Age:** 28  
-**Position:** WR  
-**NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** A quick underneath receiver suited to finding space and changing direction. My starting view favors slot-route and run-after-catch utility over outside press or contested catches.  
-**Previous annual profile:** New Jacksonville player; no prior Jacksonville annual profile  
+## Staff assessment
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
-
-## Player grades
-
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 5.5 /10 | Staff judgment |
-| Athleticism | 6.5 /10 | Staff judgment |
-| Speed | 6.0 /10 | Staff judgment |
-| Strength / Power | 3.5 /10 | Staff judgment |
-| Agility / Change of direction | 7.0 /10 | Staff judgment |
-| Technique | 5.5 /10 | Staff judgment |
-| Football IQ | 5.5 /10 | Staff judgment |
-| Release vs press | 4.0 /10 | Staff judgment |
-| Route running | 6.0 /10 | Staff judgment |
-| Separation / quickness | 6.5 /10 | Staff judgment |
-| Long speed | 6.0 /10 | Staff judgment |
-| Hands | 5.5 /10 | Staff judgment |
-| Catch radius / contested catches | 3.5 /10 | Staff judgment |
-| Ball tracking / deep receiving | 4.5 /10 | Staff judgment |
-| YAC / contact balance | 6.0 /10 | Staff judgment |
-| Coverage recognition / adjustments | 5.0 /10 | Staff judgment |
-| Blocking | 3.5 /10 | Staff judgment |
-
-Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | At NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Release vs press | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Route running | At NFL starter standard | Below elite standard | Above low-end standard |
-| Separation / quickness | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Long speed | At NFL starter standard | Below elite standard | Above low-end standard |
-| Hands | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Catch radius / contested catches | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Ball tracking / deep receiving | Below NFL starter standard | Below elite standard | Above low-end standard |
-| YAC / contact balance | At NFL starter standard | Below elite standard | Above low-end standard |
-| Coverage recognition / adjustments | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Blocking | Below NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards, not measured 2014 league ranks.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 5.5/10 |
+| Athleticism | 6.5/10 |
+| Speed | 6.0/10 |
+| Strength and power | 3.5/10 |
+| Agility and change of direction | 7.0/10 |
+| Technique | 5.5/10 |
+| Football IQ | 5.5/10 |
+| Release vs press | 4.0/10 |
+| Route running | 6.0/10 |
+| Separation and quickness | 6.5/10 |
+| Long speed | 6.0/10 |
+| Hands | 5.5/10 |
+| Catch radius and contested catches | 3.5/10 |
+| Ball tracking and deep receiving | 4.5/10 |
+| YAC and contact balance | 6.0/10 |
+| Coverage recognition and adjustments | 5.0/10 |
+| Blocking | 3.5/10 |
 
 A quick underneath receiver suited to finding space and changing direction. My starting view favors slot-route and run-after-catch utility over outside press or contested catches.
 
-Source: [Current roster and signing history](../Roster/roster.md). Initial personnel judgments; no Jacksonville practice or game evaluation is recorded yet.
+*Staff view, March 31, 2014; dated updates through August 1, 2014.*
 
-## Year-over-year change
+## Contract
 
-New Jacksonville starting assessment. No prior Jacksonville evaluation is invented.
+Four-year contract through 2017.
 
-## What supports this assessment
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $1,800,000 | $2,800,000 |
+| 2015 | $5,000,000 | $6,000,000 |
+| 2016 | $2,400,000 | $3,400,000 |
+| 2017 | $2,400,000 | $3,400,000 |
 
-A quick underneath receiver suited to finding space and changing direction. My starting view favors slot-route and run-after-catch utility over outside press or contested catches.
+## Statistics
 
-[Current roster and signing history](../Roster/roster.md). Initial personnel judgments; no Jacksonville practice or game evaluation is recorded yet.
+### Regular season
 
-## Historical comparison
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 28 | 16 | 5 | 16 | 9 | 123 | 13.7 | 1 | 36 | 24.6 | 56.2 |
 
-The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 28 | 16 | 13 | 310 | 23.8 | 13 | 123 | 9.5 |
 
-## Play style
+### Playoffs
 
-A quick underneath receiver suited to finding space and changing direction. My starting view favors slot-route and run-after-catch utility over outside press or contested catches.
+No playoff games on record.
 
-## Best traits
+## Awards
 
-- Separation / quickness: 6.5 /10.
-- Route running: 6.0 /10.
-- Long speed: 6.0 /10.
+None.
 
-## Main weaknesses
+## Transactions
 
-- Catch radius / contested catches: 3.5 /10.
-- Blocking: 3.5 /10.
-- Release vs press: 4.0 /10.
+| Date | Transaction |
+|---|---|
+| March 13, 2014 | Signed Jacksonville's offer sheet as a restricted free agent |
+| March 18, 2014 | Cincinnati declined to match; his four-year Jacksonville contract (2014 to 2017) became binding |
 
-## Evidence and uncertainty
-
-- **Primary evidence:** [Current roster and signing history](../Roster/roster.md). Initial personnel judgments; no Jacksonville practice or game evaluation is recorded yet.
-- **Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
-
-**One-line description:** A quick underneath receiver suited to finding space and changing direction. My starting view favors slot-route and run-after-catch utility over outside press or contested catches.
-
-## 2013 season production
-
-| Statistic | 2013 regular season | 2013 playoffs |
-| --- | ---: | ---: |
-| G | 8 | Unrecorded |
-| TGT | 18 | Unrecorded |
-| REC | 12 | Unrecorded |
-| REC YDS | 199 | Unrecorded |
-| REC TD | 0 | Unrecorded |
-
-Prior-club historical NFL statistics, not Jacksonville totals. Source: [2013 historical dataset](../../../../../library/data/2013_player_sheet_benchmarks.json). This dataset covers the regular season only; postseason totals were not recovered.
-
-## Dated coaching updates
-
-### August 1, 2014 | Training camp
-
-Hawkins's short dig had two recorded causes: spacing in July 26 non-contact work and Poyer's jam on July 30. Drake kept those corrections separate; the depth held on the later checks. The contact retest is still a short sample.
-
-Source: [dated camp observations](../../../Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 28 | 16 | Through Week 5 | 5 | 16 | 9 | 123 | 13.7 | 1 | 36 | 0 | 0 | 0 | 0 | 0 | 56.2 | 13 | 310 | 23.8 | 13 | 123 | 9.5 | 0 |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 28 | 16 | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

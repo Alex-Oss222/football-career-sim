@@ -1,15 +1,26 @@
 # Justin Gilbert
 
-![Justin Gilbert career card](assets/justin_gilbert.svg)
+**Cleveland Browns · Cornerback · No. 21 · Age 22 · Last game October 5, 2014**
 
-## Career stats
+6' 0", 202 lb · Born November 7, 1991 · Oklahoma State
+
+As of October 5, 2014, after Week 5.
+
+![Justin Gilbert](https://commons.wikimedia.org/wiki/Special:FilePath/Justin_Gilbert_2014_Browns_training_camp_%283%29.jpg?width=500)
+
+*Photo: Erik Daniel Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Justin_Gilbert_2014_Browns_training_camp_(3).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | INT | PD | INT YDS | TFL | SACK | FF | FR | TKL/G | RET YDS |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Cleveland Browns | 22 | 21 | 4 | 9 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 2.2 | 0 |
-| **Career** |  |  |  | 4 | 9 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 2.2 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 22 | 21 | 4 | 9 | 4 | 5 | 0 | 0 | 1 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Cleveland | 22 | 21 | 0 | 0 | 2 | 0 | 0 | 3 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Cleveland Browns players](README.md).
+<!-- player-page -->

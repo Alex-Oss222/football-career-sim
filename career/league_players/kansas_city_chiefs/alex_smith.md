@@ -1,28 +1,48 @@
 # Alex Smith
 
-![Alex Smith career card](assets/alex_smith.svg)
+**Kansas City Chiefs · Quarterback · No. 11 · Age 30 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 217 lb · Born May 7, 1984 · Utah · Drafted in 2005, first round, by San Francisco
+
+As of October 5, 2014, after Week 5.
+
+![Alex Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Washington_Football_Team_QB_Alex_Smith_pregame_%28cropped%29.jpg?width=500)
+
+*Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Washington_Football_Team_QB_Alex_Smith_pregame_(cropped).jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 29 | 11 | 16 | 369-587 | 62.9 | 4,161 | 25 | 10 | 7.1 | 91.1 | 260.1 | 146 | 0 |
-| 2014 | Kansas City Chiefs | 30 | 11 | 5 | 102-165 | 61.8 | 1,103 | 4 | 5 | 6.7 | 76.9 | 220.6 | 32 | 0 |
-| **Career** |  |  |  | 21 | 471-752 | 62.6 | 5,264 | 29 | 15 | 7.0 | 88.0 | 250.7 | 178 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 30 | 11 | 5 | 102 | 165 | 61.8 | 1,103 | 6.7 | 220.6 | 4 | 5 | 76.9 |
+| 2013 | Kansas City | 29 | 11 | 16 | 369 | 587 | 62.9 | 4,161 | 7.1 | 260.1 | 25 | 10 | 91.1 |
+| Career |  |  |  | 21 | 471 | 752 | 62.6 | 5,264 | 7.0 | 250.7 | 29 | 15 | 88.0 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Kansas City | 30 | 11 | 19 | 131 | 12 | 32 | 0 | 0 | 0 |
+| 2013 | Kansas City | 29 | 11 | 30 | 209 | 39 | 146 | 0 | 0 | 0 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP-ATT | CMP% | YDS | TD | INT | Y/A | RATE | YDS/G | RUSH YDS | RUSH TD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Kansas City Chiefs | 29 | 11 | 1 | 31-44 | 70.5 | 279 | 1 | 2 | 6.3 | 75.9 | 279.0 | -2 | 0 |
-| **Career** |  |  |  | 1 | 31-44 | 70.5 | 279 | 1 | 2 | 6.3 | 75.9 | 279.0 | -2 | 0 |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 29 | 11 | 1 | 31 | 44 | 70.5 | 279 | 6.3 | 279.0 | 1 | 2 | 75.9 |
+
+| Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Kansas City | 29 | 11 | 2 | 15 | 1 | -2 | 0 | 0 | 0 |
 
 ## Awards
 
 - Pro Bowl selection, replacement (2013, QB)
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Kansas City Chiefs players](README.md).
+| Date | Transaction |
+|---|---|
+| 2005 | Drafted by San Francisco in the first round |
+
+<!-- player-page -->

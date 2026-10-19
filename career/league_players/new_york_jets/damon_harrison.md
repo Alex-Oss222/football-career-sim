@@ -1,28 +1,46 @@
 # Damon Harrison
 
-![Damon Harrison career card](assets/damon_harrison.svg)
+**New York Jets · Nose tackle · No. 94 · Age 25 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 350 lb · Born November 29, 1988 · William Penn
+
+As of October 5, 2014, after Week 5.
+
+![Damon Harrison](https://commons.wikimedia.org/wiki/Special:FilePath/Damon_Harrison_2016.jpg?width=500)
+
+*Photo: Tom Hanny from Kinnelon, USA, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Damon_Harrison_2016.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 24 | 94 | 16 | 81 | 4 | 11 | 0 | 1 | 0 | 0 | 9 | 5.1 | 59 |
-| 2014 | New York Jets | 25 | 94 | 5 | 29 | 2 | 2 | 1 | 2 | 4 | 3 | 6 | 5.8 | 18 |
-| **Career** |  |  |  | 21 | 110 | 6 | 13 | 1 | 3 | 4 | 3 | 15 | 5.2 | 77 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 25 | 94 | 5 | 29 | 18 | 11 | 2 | 2 | 6 |
+| 2013 | N.Y. Jets | 24 | 94 | 16 | 81 | 59 | 22 | 11 | 4 | 9 |
+| Career |  |  |  | 21 | 110 | 77 | 33 | 13 | 6 | 15 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Jets | 25 | 94 | 1 | 32 | 2 | 4 | 3 | 0 |
+| 2013 | N.Y. Jets | 24 | 94 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Jets | 24 | 94 | 1 | 3 | 0 | 1 | 0 | 0 | 0 | 0 | 2 | 3.0 | 2 |
-| **Career** |  |  |  | 1 | 3 | 0 | 1 | 0 | 0 | 0 | 0 | 2 | 3.0 | 2 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Jets | 24 | 94 | 1 | 3 | 2 | 1 | 1 | 0 | 2 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Jets | 24 | 94 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Jets players](README.md).
+<!-- player-page -->

@@ -1,16 +1,29 @@
 # James Jones
 
-![James Jones career card](assets/james_jones.svg)
+**Oakland Raiders · Wide receiver · No. 89 · Age 30 · Last game September 28, 2014**
 
-## Career stats
+6' 1", 200 lb · Born March 31, 1984 · San Jose State · Drafted in 2007, third round, by Green Bay
+
+As of September 28, 2014, after Week 4.
+
+![James Jones](https://commons.wikimedia.org/wiki/Special:FilePath/James_Jones_%28wide_receiver%29.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:James_Jones_(wide_receiver).JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Green Bay Packers | 29 | 89 | 16 | 63 | 36 | 381 | 10.6 | 2 | 23.8 | 57.1 | 52 | 1 | 0 |
-| 2014 | Oakland Raiders | 30 | 89 | 4 | 29 | 23 | 192 | 8.3 | 2 | 48.0 | 79.3 | 29 | 39 | 1 |
-| **Career** |  |  |  | 20 | 92 | 59 | 573 | 9.7 | 4 | 28.6 | 64.1 | 52 | 40 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 30 | 89 | 4 | 29 | 23 | 192 | 8.3 | 2 | 29 | 48.0 | 79.3 |
+| 2013 | Green Bay | 29 | 89 | 16 | 63 | 36 | 381 | 10.6 | 2 | 52 | 23.8 | 57.1 |
+| Career |  |  |  | 20 | 92 | 59 | 573 | 9.7 | 4 | 52 | 28.6 | 64.1 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 30 | 89 | 2 | 39 | 1 | 1 | 1 |
+| 2013 | Green Bay | 29 | 89 | 1 | 1 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -18,8 +31,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Oakland Raiders players](README.md).
+| Date | Transaction |
+|---|---|
+| 2007 | Drafted by Green Bay in the third round |
+
+<!-- player-page -->

@@ -1,28 +1,39 @@
 # David Johnson
 
-![David Johnson career card](assets/david_johnson.svg)
+**San Diego Chargers · Tight end · No. 88 · Age 27 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 260 lb · Born August 26, 1987 · Arkansas State · Drafted in 2009, seventh round, by Pittsburgh
+
+As of October 5, 2014, after Week 5.
+
+![David Johnson](https://commons.wikimedia.org/wiki/Special:FilePath/David_johnson_steelers.jpg?width=500)
+
+*Photo: original: Paula Lively derivative: Diddykong1130, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:David_johnson_steelers.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 26 | 85 | 16 | 37 | 27 | 279 | 10.3 | 0 | 17.4 | 73.0 | 40 | 0 | 0 |
-| 2014 | San Diego Chargers | 27 | 88 | 5 | 2 | 1 | 5 | 5.0 | 0 | 1.0 | 50.0 | 5 | 0 | 0 |
-| **Career** |  |  |  | 21 | 39 | 28 | 284 | 10.1 | 0 | 13.5 | 71.8 | 40 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | San Diego | 27 | 88 | 5 | 2 | 1 | 5 | 5.0 | 0 | 5 | 1.0 | 50.0 |
+| 2013 | Pittsburgh | 26 | 85 | 16 | 37 | 27 | 279 | 10.3 | 0 | 40 | 17.4 | 73.0 |
+| Career |  |  |  | 21 | 39 | 28 | 284 | 10.1 | 0 | 40 | 13.5 | 71.8 |
 
 ### Playoffs
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Pittsburgh Steelers | 26 | 85 | 1 | 1 | 0 | 0 | N/A | 0 | 0.0 | 0.0 | N/A | 0 | 0 |
-| **Career** |  |  |  | 1 | 1 | 0 | 0 | N/A | 0 | 0.0 | 0.0 | N/A | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Pittsburgh | 26 | 85 | 1 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All San Diego Chargers players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Pittsburgh in the seventh round |
+
+<!-- player-page -->

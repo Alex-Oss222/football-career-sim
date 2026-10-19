@@ -1,148 +1,76 @@
-# Montell Owens — 2014 Player Profile
+# Montell Owens
 
-<!-- player-card:begin -->
-![Montell Owens career card](../../../../league_players/jacksonville_jaguars/assets/montell_owens.svg)
+**Jacksonville Jaguars · Fullback · Age 30 · Active roster**
 
-[Career statistics](../../../../league_players/jacksonville_jaguars/montell_owens.md)
-<!-- player-card:end -->
+5' 10", 225 lb · Born May 4, 1984 · Maine
 
-**Team:** Jacksonville Jaguars  
-**Season:** 2014  
-**Profile status:** Working player card  
-**Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Preserve this opening assessment and add dated coaching updates through the year. Write the separate final assessment after season close. Statistics update after each closed game.  
-**Checkpoint:** March 31, 2014 starting evaluation  
-**Age:** 29  
-**Position:** FB  
-**NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** A blocking and special-teams fullback who can handle a small carry or flat-receiving package. I see utility and dependable physical work before I see a featured offensive weapon.  
-**Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/montell_owens.md)  
+As of October 5, 2014, after Week 5.
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
+## Staff assessment
 
-## Player grades
-
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | 5.5 /10 | Staff judgment |
-| Athleticism | 5.0 /10 | Staff judgment |
-| Speed | 4.5 /10 | Staff judgment |
-| Strength / Power | 6.0 /10 | Staff judgment |
-| Agility / Change of direction | 4.5 /10 | Staff judgment |
-| Technique | 5.5 /10 | Staff judgment |
-| Football IQ | 5.5 /10 | Staff judgment |
-| Lead blocking | 6.0 /10 | Staff judgment |
-| Pass protection | 5.5 /10 | Staff judgment |
-| Short-yardage power | 5.5 /10 | Staff judgment |
-| Receiving / hands | 5.0 /10 | Staff judgment |
-| Route / flat utility | 4.5 /10 | Staff judgment |
-| Ball security | 6.0 /10 | Staff judgment |
-| Special-teams utility | 6.5 /10 | Staff judgment |
-
-Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
-
-## League comparison
-
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Athleticism | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | At NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Technique | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Lead blocking | At NFL starter standard | Below elite standard | Above low-end standard |
-| Pass protection | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Short-yardage power | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Receiving / hands | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Route / flat utility | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Ball security | At NFL starter standard | Below elite standard | Above low-end standard |
-| Special-teams utility | Above NFL starter standard | Below elite standard | Above low-end standard |
-
-These are staff comparisons against personnel standards, not measured 2014 league ranks.
-
-## Established player state
+| Category | Grade |
+|---|---:|
+| Overall | 5.5/10 |
+| Athleticism | 5.0/10 |
+| Speed | 4.5/10 |
+| Strength and power | 6.0/10 |
+| Agility and change of direction | 4.5/10 |
+| Technique | 5.5/10 |
+| Football IQ | 5.5/10 |
+| Lead blocking | 6.0/10 |
+| Pass protection | 5.5/10 |
+| Short-yardage power | 5.5/10 |
+| Receiving and hands | 5.0/10 |
+| Route and flat utility | 4.5/10 |
+| Ball security | 6.0/10 |
+| Special-teams utility | 6.5/10 |
 
 A blocking and special-teams fullback who can handle a small carry or flat-receiving package. I see utility and dependable physical work before I see a featured offensive weapon.
 
-Source: [2013 profile](../../../../2013/player_profiles/montell_owens.md) and its recorded practice/game sources.
+*Staff view, March 31, 2014.*
 
-## Year-over-year change
+## Contract
 
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Player identity and position traits | 2013 baseline | Starting 2014 view | Retained | No new individual football evidence establishing change |
+Under contract through 2015.
 
-## What supports this assessment
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | about $2,591,667 | Not settled |
+| 2015 | about $2,591,667 | Not settled |
 
-A blocking and special-teams fullback who can handle a small carry or flat-receiving package. I see utility and dependable physical work before I see a featured offensive weapon.
+## Statistics
 
-[2013 profile](../../../../2013/player_profiles/montell_owens.md) and its recorded practice/game sources.
+### Regular season
 
-## Historical comparison
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 30 | N/A | 5 | 4 | 11 | 2.8 | 0 | 8 | 2.2 |
+| 2013 | Jacksonville | 29 | N/A | 16 | 15 | 63 | 4.2 | 0 | 13 | 3.9 |
+| With Jacksonville |  |  |  | 21 | 19 | 74 | 3.9 | 0 | 13 | 3.5 |
 
-The 2013 record below supplies prior-season context. The 2014 evaluation uses only information available at this checkpoint; the real player’s later career is not an answer key.
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 30 | N/A | 5 | 2 | 38 | 19.0 | 0 | 0 | 0 |
+| 2013 | Jacksonville | 29 | N/A | 15 | 8 | 132 | 16.5 | 0 | 0 | 0 |
 
-## Play style
+### Playoffs
 
-A blocking and special-teams fullback who can handle a small carry or flat-receiving package. I see utility and dependable physical work before I see a featured offensive weapon.
+| Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 29 | N/A | 2 | 0 | 0 | N/A | 0 | N/A | 0.0 |
 
-## Best traits
+| Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | Jacksonville | 29 | N/A | 4 | 3 | 41 | 13.7 | 0 | 0 | 0 |
 
-- Special-teams utility: 6.5 /10.
-- Lead blocking: 6.0 /10.
-- Ball security: 6.0 /10.
+## Awards
 
-## Main weaknesses
+None.
 
-- Route / flat utility: 4.5 /10.
-- Receiving / hands: 5.0 /10.
-- Pass protection: 5.5 /10.
+## Transactions
 
-## Evidence and uncertainty
+| Date | Transaction |
+|---|---|
+| October 4, 2011 | Signed a contract extension with Jacksonville covering 2013 to 2015 |
 
-- **Primary evidence:** [2013 profile](../../../../2013/player_profiles/montell_owens.md) and its recorded practice/game sources.
-- **Evaluation basis:** Theoretical staff judgment, with thin evidence identified in the source profile.
-- **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
-- **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
-
-**One-line description:** A blocking and special-teams fullback who can handle a small carry or flat-receiving package. I see utility and dependable physical work before I see a featured offensive weapon.
-
-## 2013 season production
-
-| Statistic | 2013 regular season | 2013 playoffs |
-| --- | ---: | ---: |
-| G | 16 | 2 |
-| CAR | 15 | 0 |
-| YDS | 63 | 0 |
-| AVG | 4.2 | — |
-| TD | 0 | 0 |
-| LNG | 13 | 0 |
-| TGT | 15 | 4 |
-| REC | 8 | 3 |
-| REC YDS | 132 | 41 |
-| REC TD | 0 | 0 |
-| FUM | 0 | 0 |
-| LOST | 0 | 0 |
-| Other recorded counts | REC LNG 34 | REC LNG 29 |
-
-Source: [2013 season statistics](../../../../2013/stats/team_player_stats.md) and the two postseason game receipts.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-| Season | Team | Age | # | Coverage | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST | REC AVG | REC LNG | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 30 | N/A | Through Week 5 | 5 | 4 | 11 | 2.8 | 0 | 8 | 5 | 2 | 38 | 0 | 0 | 0 | 19.0 | 28 | 40.0 | 0 | 0 | — | 0 | 0 | — | 2 |
-
-## Playoff statistics by year
-
-| Season | Team | Age | # | Coverage | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST | REC AVG | REC LNG | CATCH% | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG | ST TKL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2014 | Jacksonville Jaguars | 30 | N/A | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played | Not played |
-
-<!-- yearly-statistics:end -->
+<!-- player-page -->

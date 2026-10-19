@@ -1,15 +1,55 @@
 # Christian Jones
 
-![Christian Jones career card](assets/christian_jones.svg)
+**Jacksonville Jaguars · Linebacker · No. 59 · Age 23 · Active roster**
 
-## Career stats
+6' 3", 240 lb · Born February 18, 1991 · Florida State · Undrafted
+
+As of October 5, 2014, after Week 5.
+
+![Christian Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Christian_Jones_bears.jpg?width=500)
+
+*Photo: original: U.S. Army Photo by Sgt. 1st Class Michel Sauret on behalf of 416th Theater Engineer Command Army Reserve derivative: Diddykong1130, Public domain ([source](https://commons.wikimedia.org/wiki/File:Christian_Jones_bears.jpg)).*
+
+## Staff assessment
+
+| Category | Grade |
+|---|---:|
+| Overall | 3.5/10 |
+| Athleticism | 5.5/10 |
+| Speed | 5.5/10 |
+| Strength and power | 6.0/10 |
+| Agility and change of direction | 4.5/10 |
+| Technique | 4.5/10 |
+| Football IQ | 5.0/10 |
+| Size and length | 6.5/10 |
+| Diagnosis and instincts | 4.0/10 |
+| Coverage-unit fit | 5.5/10 |
+
+A big linebacker who played middle and outside at Florida State, with size for a SAM role and coverage-unit experience; instincts and change of direction are the questions.
+
+*Staff view, May 11, 2014; dated updates through October 5, 2014.*
+
+## Contract
+
+Three-year contract through 2016.
+
+| Year | Base salary | Cap charge |
+|---|---:|---:|
+| 2014 | $420,000 | $420,000 |
+| 2015 | $510,000 | $510,000 |
+| 2016 | $600,000 | $600,000 |
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TKL | SACK | TFL | INT | PD | FF | FR | PRESS | TKL/G | SOLO |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Jacksonville Jaguars | 23 | 59 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
-| **Career** |  |  |  | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.0 | 0 |
+| Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 23 | 59 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Jacksonville | 23 | 59 | 0 | 0 | 0 | 0 | 0 | 3 |
 
 ### Playoffs
 
@@ -17,10 +57,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/christian_jones.md)
+## Transactions
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+| Date | Transaction |
+|---|---|
+| May 10, 2014 | Signed a three-year contract with Jacksonville as an undrafted rookie |
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: the number he wore in 2014 with the Chicago Bears (Jacksonville has not recorded one). [All Jacksonville Jaguars players](README.md).
+<!-- player-page -->

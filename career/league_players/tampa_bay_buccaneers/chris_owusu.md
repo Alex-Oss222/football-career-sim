@@ -1,15 +1,26 @@
 # Chris Owusu
 
-![Chris Owusu career card](assets/chris_owusu.svg)
+**Tampa Bay Buccaneers · Wide receiver · No. 80 · Age 24 · Last game October 5, 2014**
 
-## Career stats
+6' 2", 200 lb · Born January 6, 1990 · Stanford
+
+As of October 5, 2014, after Week 5.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Tampa Bay Buccaneers | 24 | 80 | 4 | 20 | 10 | 79 | 7.9 | 0 | 19.8 | 50.0 | 15 | 0 | 0 |
-| **Career** |  |  |  | 4 | 20 | 10 | 79 | 7.9 | 0 | 19.8 | 50.0 | 15 | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 24 | 80 | 4 | 20 | 10 | 79 | 7.9 | 0 | 15 | 19.8 | 50.0 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 24 | 80 | 1 | 0 | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 24 | 80 | 12 | 313 | 26.1 | 0 | 0 | N/A |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).
+<!-- player-page -->

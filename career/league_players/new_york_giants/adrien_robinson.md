@@ -1,16 +1,24 @@
 # Adrien Robinson
 
-![Adrien Robinson career card](assets/adrien_robinson.svg)
+**New York Giants · Tight end · No. 81 · Age 26 · Last game October 5, 2014**
 
-## Career stats
+6' 4", 264 lb · Born September 23, 1988 · Cincinnati · Drafted in 2012, fourth round, by the New York Giants
+
+As of October 5, 2014, after Week 5.
+
+![Adrien Robinson](https://commons.wikimedia.org/wiki/Special:FilePath/Adrien_Robinson_2012.jpg?width=500)
+
+*Photo: Marianne O'Leary, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Adrien_Robinson_2012.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Giants | 24 | 81 | 10 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| 2014 | New York Giants | 25 | 81 | 5 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
-| **Career** |  |  |  | 15 | 0 | 0 | 0 | N/A | 0 | 0.0 | N/A | N/A | 0 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | N.Y. Giants | 25 | 81 | 5 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2013 | N.Y. Giants | 24 | 81 | 10 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| Career |  |  |  | 15 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ### Playoffs
 
@@ -18,8 +26,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All New York Giants players](README.md).
+| Date | Transaction |
+|---|---|
+| 2012 | Drafted by the New York Giants in the fourth round |
+
+<!-- player-page -->

@@ -1,16 +1,24 @@
 # Marquette King
 
-![Marquette King career card](assets/marquette_king.svg)
+**Oakland Raiders · Punter · No. 7 · Age 25 · Last game September 28, 2014**
 
-## Career stats
+6' 0", 190 lb · Born October 26, 1988 · Fort Valley State College
+
+As of September 28, 2014, after Week 4.
+
+![Marquette King](https://commons.wikimedia.org/wiki/Special:FilePath/Marquette_King.JPG?width=500)
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Marquette_King.JPG)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | PUNTS | YDS | AVG | NET | IN20 | LONG | TB | IN20% | PUNTS/G | RET YDS ALLOWED |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Oakland Raiders | 24 | 7 | 16 | 86 | 3,828 | 44.5 | 38.1 | 30 | 61 | 1 | 34.9 | 5.4 | 535 |
-| 2014 | Oakland Raiders | 25 | 7 | 4 | 16 | 771 | 48.2 | 39.6 | 5 | 62 | 2 | 31.2 | 4.0 | 98 |
-| **Career** |  |  |  | 20 | 102 | 4,599 | 45.1 | 38.3 | 35 | 62 | 3 | 34.3 | 5.1 | 633 |
+| Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Oakland | 25 | 7 | 4 | 16 | 771 | 48.2 | 39.6 | 5 | 2 | 62 |
+| 2013 | Oakland | 24 | 7 | 16 | 86 | 3,828 | 44.5 | 38.1 | 30 | 1 | 61 |
+| Career |  |  |  | 20 | 102 | 4,599 | 45.1 | 38.3 | 35 | 3 | 62 |
 
 ### Playoffs
 
@@ -18,8 +26,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through September 28, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Oakland Raiders players](README.md).
+<!-- player-page -->

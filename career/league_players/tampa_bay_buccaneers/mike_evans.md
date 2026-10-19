@@ -1,15 +1,26 @@
 # Mike Evans
 
-![Mike Evans career card](assets/mike_evans.svg)
+**Tampa Bay Buccaneers · Wide receiver · No. 13 · Age 21 · Last game October 5, 2014**
 
-## Career stats
+6' 5", 231 lb · Born August 21, 1993 · Texas A&M
+
+As of October 5, 2014, after Week 5.
+
+![Mike Evans](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Evans_face_shot_vs_Washington_Redskins_November_16_2014.jpg?width=500)
+
+*Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Mike_Evans_face_shot_vs_Washington_Redskins_November_16_2014.jpg)).*
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 | Tampa Bay Buccaneers | 21 | 13 | 5 | 49 | 37 | 462 | 12.5 | 2 | 92.4 | 75.5 | 62 | 0 | 1 |
-| **Career** |  |  |  | 5 | 49 | 37 | 462 | 12.5 | 2 | 92.4 | 75.5 | 62 | 0 | 1 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 21 | 13 | 5 | 49 | 37 | 462 | 12.5 | 2 | 62 | 92.4 | 75.5 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 5) | Tampa Bay | 21 | 13 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs
 
@@ -17,8 +28,10 @@ No playoff games on record.
 
 ## Awards
 
+None.
+
+## Transactions
+
 None on record.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
-
-Records through October 5, 2014. Identity: listed 2014 roster data, Weeks 1-4; number: 2014 Week 1 roster. [All Tampa Bay Buccaneers players](README.md).
+<!-- player-page -->

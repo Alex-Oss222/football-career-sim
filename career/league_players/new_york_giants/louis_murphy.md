@@ -1,15 +1,22 @@
 # Louis Murphy
 
-![Louis Murphy career card](assets/louis_murphy.svg)
+**New York Giants · Wide receiver · Age 26 · Last game December 29, 2013**
 
-## Career stats
+6' 2", 200 lb · Born May 11, 1987 · Florida · Drafted in 2009, fourth round, by Oakland
+
+As of December 29, 2013, after Week 17.
+
+## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | TGT | REC | YDS | Y/R | TD | YDS/G | CATCH% | LONG | RUSH YDS | FUM LOST |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | New York Giants | 26 | 18 | 16 | 48 | 28 | 258 | 9.2 | 0 | 16.1 | 58.3 | 25 | 9 | 0 |
-| **Career** |  |  |  | 16 | 48 | 28 | 258 | 9.2 | 0 | 16.1 | 58.3 | 25 | 9 | 0 |
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Giants | 26 | 18 | 16 | 48 | 28 | 258 | 9.2 | 0 | 25 | 16.1 | 58.3 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2013 | N.Y. Giants | 26 | 18 | 1 | 9 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -17,8 +24,12 @@ No playoff games on record.
 
 ## Awards
 
-None on record.
+None.
 
-Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
+## Transactions
 
-Records through December 29, 2013. Identity: listed 2014 roster data, Weeks 1-4. [All New York Giants players](README.md).
+| Date | Transaction |
+|---|---|
+| 2009 | Drafted by Oakland in the fourth round |
+
+<!-- player-page -->
