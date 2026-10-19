@@ -22,6 +22,8 @@ As of October 5, 2014, after Week 5.
 | Salary | $2,800,000 a season |
 | Guarantee | Every season guaranteed |
 
+Signed on January 15, 2013: the length, the guarantee and the authority terms. Completed from the wording of Jacksonville's own 2010 assistant contracts: the end date. Completed from comparable head-coach contracts of the time: the salary, the offset, the dismissal terms, the signing bonus and the options. The research behind them: [head-coach contracts, 2005 to 2014](../../library/nfl_head_coach_contracts_2005_2014.md).
+
 Every term, what is owed and any contact from another club: [Contract and jobs](Contract_and_Jobs.md).
 
 ## Record by season
@@ -84,7 +86,7 @@ The full approach, in his own terms: [coaching profile](../coaching_profiles/ale
 
 ## Reviews
 
-- **January 15, 2014.** Shad Khan and David Caldwell reviewed the 2013 season with him and retained him on his existing contract. David Caldwell's first 2014 measures: the scoring margin; the quarterback's ball security and protection. [Season review](../2013/season_review/owner_and_gm_review.md#entry-3-the-clubs-decision)
+- **January 15, 2014.** Shad Khan and David Caldwell reviewed the 2013 season with him and retained him on his existing contract. David Caldwell's first 2014 measures: the scoring margin; the quarterback's ball security and protection. [Season review](../2013/season_review/owner_and_gm_review.md)
 
 ## Opportunities
 

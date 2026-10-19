@@ -74,6 +74,59 @@ class CoachRecordTests(unittest.TestCase):
         next(iter(amendment["terms"].values()))["basis"] = {}
         self.assertTrue(any("needs its basis" in e for e in coaches.record_errors("test", stone, ROOT)))
 
+    def test_every_history_item_and_fact_names_an_existing_source(self):
+        for slug, record in self.records.items():
+            for key in coaches.HISTORY_KEYS:
+                for item in record.get(key) or ():
+                    with self.subTest(coach=slug, item=item):
+                        self.assertTrue((ROOT / item["source"]).is_file())
+        stone = next(r for r in self.records.values() if r.get("party") == self.job["holder"])
+        broken = json.loads(json.dumps(stone))
+        broken["education"][0].pop("source")
+        self.assertTrue(any("education item" in e for e in coaches.record_errors("test", broken, ROOT)))
+
+    def test_entry_keys_are_closed_and_salary_is_required(self):
+        slug, record = next((s, r) for s, r in self.records.items() if r.get("party") != self.job["holder"]
+                            and coaches.on_staff(r, self.club, self.today))
+        broken = json.loads(json.dumps(record))
+        signed = coaches.entries(broken, "contract_signed")[-1]
+        signed["salaries"] = signed.pop("salary")
+        errors = coaches.record_errors(slug, broken, ROOT)
+        self.assertTrue(any("missing salary" in e and "unknown salaries" in e for e in errors), errors)
+        # A signed contract may state no salary, but the key must be there.
+        signed["salary"] = None
+        signed.pop("salaries")
+        self.assertEqual(coaches.record_errors(slug, broken, ROOT), [])
+
+    def test_amendments_apply_in_in_world_order(self):
+        stone = json.loads(json.dumps(next(r for r in self.records.values() if r.get("party") == self.job["holder"])))
+        signed = coaches.entries(stone, "contract_signed")[0]
+        reconstruction = next(e for e in coaches.entries(stone, "contract_amended") if e.get("reconstruction"))
+        self.assertLess(coaches.day(reconstruction["in_world"]), coaches.day(reconstruction["recorded"]))
+        last = max(signed["seasons"])
+        raise_from = last - 1
+        extension = {"in_world": "%d-06-01" % raise_from, "recorded": reconstruction["recorded"],
+                     "kind": "contract_amended", "contract": signed["contract"], "source": signed["source"],
+                     "terms": {"seasons": signed["seasons"] + [last + 1, last + 2],
+                               "salary": {str(s): 5000000 for s in (raise_from, last, last + 1, last + 2)},
+                               "end": {"date": "%d-01-31" % (last + 3), "text": "After the %d season" % (last + 2)}}}
+        # Written before the reconstruction in the list, the extension still applies after it.
+        stone["entries"].insert(stone["entries"].index(reconstruction), extension)
+        terms = coaches.contract(stone, signed["contract"])
+        self.assertEqual([a["in_world"] for a in terms["amended"]],
+                         sorted(a["in_world"] for a in terms["amended"]))
+        self.assertEqual(coaches.through_season(terms), last + 2)
+        self.assertEqual(coaches.end_date(terms), "%d-01-31" % (last + 3))
+        first = min(signed["seasons"])
+        self.assertEqual(coaches.scheduled(terms)[first], reconstruction["terms"]["salary"]["value"][str(first)])
+        self.assertEqual(coaches.scheduled(terms)[last + 2], 5000000)
+        self.assertNotIn("end", terms["reconstructed"])          # the signed extension replaced it
+        self.assertIn("salary", terms["reconstructed"])          # the earlier seasons are still completed
+        self.assertIn("entries must be in date order", " ".join(coaches.record_errors("test", stone, ROOT)))
+        stone["entries"].remove(extension)
+        stone["entries"].append(extension)
+        self.assertEqual(coaches.record_errors("test", stone, ROOT), [])
+
     def test_payroll_totals_are_the_records_sums(self):
         data = json.loads((ROOT / PLAYER_FINANCES).read_text())
         years = [str(y) for y in range(data["start_year"], data["end_year"] + 1)]
@@ -86,6 +139,109 @@ class CoachRecordTests(unittest.TestCase):
         self.assertIn("| Total | $%s |" % format(total, ","), payroll)
         self.assertEqual(page_errors("career/finances/coaching_and_organization/coaching_payroll.md", payroll,
                                      (), ROOT), [])
+
+
+class PayrollTests(unittest.TestCase):
+    def setUp(self):
+        self.data = json.loads((ROOT / PLAYER_FINANCES).read_text())
+        self.years = [str(y) for y in range(self.data["start_year"], self.data["end_year"] + 1)]
+
+    def payroll(self, root=ROOT):
+        from scripts.render_jaguars_cap_tracker import render_organization
+        return render_organization(self.data, self.years, root)
+
+    def test_dated_by_the_latest_contract_change(self):
+        staff = organization_staff(ROOT, self.years)
+        entries = [e for r, _, _ in staff for e in coaches.entries(r) if e["kind"].startswith("contract_")]
+        latest = max(entries, key=lambda e: coaches.day(coaches.when(e)))
+        self.assertIn("latest contract change, %s." % coaches.date_text(latest), self.payroll())
+
+    def test_guarantee_sentence_names_every_open_season(self):
+        text = self.payroll()
+        for record, terms, _ in organization_staff(ROOT, self.years):
+            if terms.get("job") != "Head coach" and coaches.open_seasons(terms):
+                self.assertIn("%s's %s salary" % (record["name"], coaches.years_text(coaches.open_seasons(terms))), text)
+
+    def test_completed_terms_name_each_basis(self):
+        text = self.payroll()
+        for record, terms, _ in organization_staff(ROOT, self.years):
+            for source, _ in coaches.completed(terms):
+                self.assertIn("from %s" % source, text)
+
+
+class GuardTests(unittest.TestCase):
+    """Each guard fails on a broken record in a throwaway copy."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.root = copied_root(SimpleNamespace(addCleanup=cls.addClassCleanup)).resolve()
+
+    def change(self, slug, record=None):
+        path = coaches.folder(self.root) / ("%s.json" % slug)
+        before = path.read_bytes()
+        self.addCleanup(path.write_bytes, before)
+        if record is None:
+            path.unlink()
+        else:
+            path.write_text(coaches.dump(record), encoding="utf-8")
+
+    def staff_coach(self, delegated):
+        job = current_job.load(self.root)
+        named = {r.get(k) for r in current_job.appointment(job)["delegation"]["play_calling"]
+                 for k in ("caller", "prepares", "transmits")} - {None}
+        return next((s, r) for s, r in coaches.load_all(self.root).items()
+                    if (r.get("party") in named) == delegated and r.get("party") != job["holder"]
+                    and coaches.employed(r, current_job.appointment(job)["employer"]["club"]))
+
+    def job_errors(self):
+        from runtime.events import load_events
+        mapping = repository_map(self.root)
+        return current_job.validation_errors(self.root, mapping, load_events(self.root, mapping),
+                                             master_date(self.root))
+
+    def test_a_renamed_salary_fails_the_payroll(self):
+        slug, record = self.staff_coach(False)
+        broken = json.loads(json.dumps(record))
+        signed = coaches.entries(broken, "contract_signed")[-1]
+        signed["salaries"] = signed.pop("salary")
+        self.change(slug, broken)
+        data = json.loads((self.root / PLAYER_FINANCES).read_text())
+        years = [str(y) for y in range(data["start_year"], data["end_year"] + 1)]
+        with self.assertRaisesRegex(ValueError, record["name"]):
+            organization_staff(self.root, years)
+        self.assertTrue(any("unknown salaries" in e for e in coaches.all_errors(self.root)))
+
+    def test_a_deleted_caller_record_fails(self):
+        slug, record = self.staff_coach(True)
+        self.change(slug)
+        self.assertTrue(any("required coach record is missing" in e for e in coaches.all_errors(self.root)))
+        self.assertTrue(any("%s," % record["party"] in e and "no coach record" in e for e in self.job_errors()))
+
+    def test_a_departed_current_caller_fails(self):
+        slug, record = self.staff_coach(True)
+        club = current_job.appointment(current_job.load(self.root))["employer"]["club"]
+        broken = json.loads(json.dumps(record))
+        hire = coaches.hired(broken, club)
+        broken["entries"].append({"date": hire["date"], "kind": "departed", "club": club, "to": "Released",
+                                  "last_season": coaches.day(hire["date"]).year, "source": hire["source"]})
+        self.change(slug, broken)
+        self.assertTrue(any("is not on the" in e for e in self.job_errors()), self.job_errors())
+
+    def test_an_unlisted_record_fails(self):
+        slug, record = self.staff_coach(False)
+        extra = json.loads(json.dumps(record))
+        extra.pop("party", None)
+        path = coaches.folder(self.root) / "an_unlisted_coach.json"
+        self.addCleanup(path.unlink, missing_ok=True)
+        path.write_text(coaches.dump(extra), encoding="utf-8")
+        self.assertTrue(any("an_unlisted_coach.json: a coach record not listed" in e
+                            for e in coaches.all_errors(self.root)))
+
+    def test_a_record_whose_name_is_not_its_party_fails(self):
+        slug, record = self.staff_coach(True)
+        broken = dict(record, name="Someone Else")
+        self.change(slug, broken)
+        self.assertTrue(any("coach record %s is Someone Else" % slug in e for e in self.job_errors()))
 
 
 class CoachPageTests(unittest.TestCase):
@@ -172,6 +328,28 @@ class CoachPageTests(unittest.TestCase):
         text = pages.build(self.root)[self.paths.staff_page.relative_to(self.root).as_posix()]
         self.assertIn("- %s" % title, text.split("## Open jobs", 1)[1].split("\n## ", 1)[0])
         self.assertNotIn("| %s |" % record["name"], text.split("## Who coaches what", 1)[1].split("\n## ", 1)[0])
+
+    def test_both_pages_carry_the_same_terms_line(self):
+        ctx = pages.context(self.root)
+        terms = current_job.contract_terms(ctx.job, self.root)
+        built = pages.build(self.root)
+        for page in (pages.COACH_PAGE, pages.CONTRACT_PAGE):
+            line = pages.terms_line(ctx, terms, page)
+            self.assertIn(line, built[page])
+            for source, keys in coaches.completed(terms):
+                self.assertIn("Completed from %s: %s." % (source, pages.join(pages.TERM_NAMES[k] for k in keys)), line)
+        coach = built[pages.COACH_PAGE]
+        self.assertLess(coach.index("## Job and contract"), coach.index(pages.terms_line(ctx, terms, pages.COACH_PAGE)))
+        self.assertLess(coach.index(pages.terms_line(ctx, terms, pages.COACH_PAGE)), coach.index("## Record by season"))
+
+    def test_coded_and_real_world_anchors_are_not_linked(self):
+        today = master_date(self.root)
+        self.assertIsNone(pages.football_anchor("entry-3-the-clubs-decision", today))
+        self.assertIsNone(pages.football_anchor("august-31-2014-the-week-1-inactives-stone-document-3-row-8", today))
+        self.assertIsNone(pages.football_anchor("addendum-%d-the-rule" % (today.year + 12), today))
+        self.assertEqual(pages.football_anchor("who-calls-what", today), "who-calls-what")
+        text = pages.build(self.root)[pages.COACH_PAGE]
+        self.assertNotRegex(text, r"\]\([^)]*#[^)]*(entry|row|document)-\d")
 
     def test_a_contact_appears_with_its_stage(self):
         ctx = pages.context(self.root)

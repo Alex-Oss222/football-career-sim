@@ -12,8 +12,8 @@ Three pages, each built whole and never edited by hand (rebuild step 3):
   the reviews he has received and any open opportunities;
 - Contract and jobs, career/Stone/Contract_and_Jobs.md: the terms, salary by
   season, what is owed from today, which terms are signed and which were
-  completed from comparable contracts, and every contact from another club
-  with its stage;
+  completed and from what (the same line sits under the Coach page's
+  contract table), and every contact from another club with its stage;
 - the active season's Staff page: who coaches what, who calls what, the
   contract status a head coach knows, departures and open jobs.
 
@@ -65,8 +65,13 @@ ROUND_NAMES = {"wild_card": "Wild Card game", "divisional": "Divisional game",
 ORDINAL = ("First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth")
 UNIT_NAMES = {"team": "Team", "offense": "Offense", "defense": "Defense", "special_teams": "Special teams"}
 PHASE_NAMES = {"offense": "the offense", "defense": "the defense", "special_teams": "special teams"}
-TERM_NAMES = {"end": "the end date", "salary": "the salary", "guaranteed": "the guarantee", "offset": "the offset",
-              "dismissal": "the dismissal terms", "signing_bonus": "the signing bonus", "options": "the options"}
+TERM_NAMES = {"seasons": "the length", "end": "the end date", "salary": "the salary", "guaranteed": "the guarantee",
+              "offset": "the offset", "dismissal": "the dismissal terms", "signing_bonus": "the signing bonus",
+              "options": "the options", "terms": "the authority terms"}
+SOURCE_LABELS = {CONTRACTS_RESEARCH: "head-coach contracts, 2005 to 2014"}
+# An anchor carrying a code (an entry, row, document or section number) is not linked from a
+# football page; the link goes to the page itself.
+CODED_ANCHOR = re.compile(r"(?:^|-)(?:entry|row|document|section|item)-\d")
 
 
 def long_date(value):
@@ -91,6 +96,16 @@ def table(headers, rows, align=None):
 
 def place(club):
     return club.rsplit(" ", 1)[0]
+
+
+def football_anchor(anchor, today):
+    """``anchor`` when a football page may link it, else None: an anchor carrying a code or a
+    real-world date (a year after the season the clock is in) sends the reader to the page."""
+    if not anchor or CODED_ANCHOR.search(anchor):
+        return None
+    if any(int(y) > today.year + 1 for y in re.findall(r"(?<!\d)(\d{4})(?!\d)", anchor)):
+        return None
+    return anchor
 
 
 # ---- the closed games -------------------------------------------------------
@@ -252,6 +267,31 @@ def calls_text(ctx):
 
 # ---- the coach page ---------------------------------------------------------
 
+def terms_line(ctx, terms, page):
+    """Which terms are signed and which were completed, and from what: the signed terms, each
+    later signed amendment, then the completed terms grouped by their basis, with the research."""
+    signed = terms["signed"]
+    kept = [k for k in coaches.TERMS + ("terms",) if signed.get(k) is not None and signed.get(k) != []]
+    parts = ["Signed on %s: %s." % (long_date(signed["date"]), join(TERM_NAMES[k] for k in kept))]
+    for amendment in terms["amended"]:
+        if not amendment.get("reconstruction"):
+            parts.append("Amended on %s: %s." % (coaches.date_text(amendment),
+                                                 join(TERM_NAMES[k] for k in coaches.TERMS
+                                                      if k in (amendment.get("terms") or {}))))
+    for source, keys in coaches.completed(terms):
+        parts.append("Completed from %s: %s." % (source, join(TERM_NAMES[k] for k in keys)))
+    research = [link(ctx, page, s, SOURCE_LABELS.get(s) or heading(ctx.root / s)) for s in coaches.completed_sources(terms)]
+    if research:
+        parts.append("The research behind them: %s." % join(research))
+    return " ".join(parts)
+
+
+def heading(path):
+    """A page's first heading, as a link label."""
+    first = next((l for l in path.read_text(encoding="utf-8").split("\n") if l.startswith("# ")), "# " + path.stem)
+    return first[2:].strip()
+
+
 def contract_rows(ctx, terms, page):
     seasons = terms.get("seasons") or []
     salary = coaches.scheduled(terms)
@@ -385,6 +425,8 @@ def coach_page(ctx):
     else:
         rows.append(("Contract", "Not recorded"))
     out += ["## Job and contract", ""] + table([rows[0][0], rows[0][1]], rows[1:])
+    if terms:
+        out += ["", terms_line(ctx, terms, page)]
     out += ["", "Every term, what is owed and any contact from another club: %s."
             % link(ctx, page, CONTRACT_PAGE, "Contract and jobs"), ""]
     # Record by season.
@@ -455,7 +497,8 @@ def review_lines(ctx, page):
                                            "; ".join(item["measures"]))
         record = entry.get("record") or {}
         if record.get("path"):
-            text += " " + link(ctx, page, record["path"], "Season review", record.get("anchor"))
+            text += " " + link(ctx, page, record["path"], "Season review",
+                               football_anchor(record.get("anchor"), ctx.today))
         lines.append("- " + text)
     return lines or ["None recorded."]
 
@@ -500,14 +543,7 @@ def contract_page(ctx):
         out += ["## Terms", ""] + table(["Term", "Detail"], rows) + [""]
         if terms.get("terms"):
             out += ["Signed authority and standards:", ""] + ["- %s." % t.rstrip(".") for t in terms["terms"]] + [""]
-        reconstructed = [k for k in coaches.TERMS if k in terms["reconstructed"]]
-        signed_terms = ["the length", "the guarantee"] + (["the authority terms"] if terms.get("terms") else [])
-        line = "Signed on %s: %s." % (long_date(signed["date"]), join(signed_terms))
-        if reconstructed:
-            line += (" Completed from comparable NFL head-coach contracts of the time: %s (%s)."
-                     % (join(TERM_NAMES[k] for k in reconstructed),
-                        link(ctx, page, CONTRACTS_RESEARCH, "head-coach contracts, 2005 to 2014")))
-        out += [line, ""]
+        out += [terms_line(ctx, terms, page), ""]
         out += ["## Salary by season", ""]
         rows = []
         for season in seasons:

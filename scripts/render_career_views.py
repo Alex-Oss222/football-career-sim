@@ -44,7 +44,8 @@ from runtime.player_bios import master_date  # noqa: E402
 from runtime.clean_pages import page_errors  # noqa: E402
 from runtime.season_layout import NUMBERED_FOLDERS  # noqa: E402
 from runtime.seasons import SeasonPaths  # noqa: E402
-from scripts.render_coach_pages import COACH_PAGE, CONTRACT_PAGE, club_record, last_game  # noqa: E402
+from scripts.render_coach_pages import (COACH_PAGE, CONTRACT_PAGE, club_record, football_anchor,  # noqa: E402
+                                        heading, last_game)
 from scripts.validate_repository import anchors, git_blob, without_code  # noqa: E402
 
 STATE = Path("state/05_Current_Season_State.md")
@@ -77,6 +78,12 @@ DESK_WORDS = re.compile(r"\b(frozen|freez\w*|inputs?|holds?|held|gates?|call she
 # Logical season records (SeasonPaths.record), so the next season's desk works.
 DESK_LINKS = (("Team", "team/README.md"), ("Roster", "roster.md"), ("Depth chart", "depth_chart.md"),
               ("Injury report", "medical/current_injury_report.md"))
+# The label of a desk link to one of these season records (any other page is labelled by its
+# week or its own heading, never "Record").
+PAGE_LABELS = DESK_LINKS + (("Film queue", "offseason/film/player_queue.md"),
+                            ("Roster decisions", "offseason/training_camp/roster_decisions.md"))
+# The calling arrangement links to the Staff page's section on it.
+CALLING_SECTION = "who-calls-what"
 FOLDER_NOTES = {
     "Team_Operations": "Year-round roster, staff, medical, development, film, trades, free agency and finances",
     "Early_Offseason": "Staffing, scouting, preparation and offseason decisions",
@@ -680,7 +687,7 @@ def _waiting(ctx, items):
         if week is not None and (ctx.paths.week_folder(week) / "README.md").is_file():
             line += " " + _week_readme(ctx, week, "Week %d" % week)
         elif _readable(ctx, item.get("record")):
-            line += " " + link(ctx, "Record", item["record"])
+            line += " " + page_link(ctx, item["record"])
         lines.append(line)
     return lines or ["Nothing is waiting on you."]
 
@@ -688,6 +695,21 @@ def _waiting(ctx, items):
 def _readable(ctx, record):
     """Whether a record is a football page the desk may link."""
     return bool(record) and str(record.get("path", "")).startswith("career/") and record["path"].endswith(".md")
+
+
+def page_link(ctx, record):
+    """A desk link to a football page, labelled by what the page is, its anchor dropped when the
+    anchor carries a code or a real-world date."""
+    record = {"path": record} if isinstance(record, str) else dict(record)
+    target = resolve_path(ctx.root, record["path"], ctx.mapping)
+    record["anchor"] = football_anchor(record.get("anchor"), ctx.master)
+    label = next((label for label, logical in PAGE_LABELS if ctx.paths.record(logical) == target), None)
+    if label is None and target == ctx.paths.staff_page:
+        label = "Coaching staff"
+    for week in sorted({g["week"] for g in ctx.games}):
+        if label is None and target.parent == ctx.paths.week_folder(week):
+            label = "Week %d" % week if target.name == "README.md" else "Week %d report" % week
+    return link(ctx, label or heading(target), record)
 
 
 def _with_others(ctx, items):
@@ -700,7 +722,7 @@ def _with_others(ctx, items):
             line += "; waiting on " + join(w for w in waits if w)
         line += "."
         if _readable(ctx, item.get("record")):
-            line += " " + link(ctx, "Record", item["record"])
+            line += " " + page_link(ctx, item["record"])
         lines.append(line)
     return lines or ["Nothing open."]
 
@@ -716,13 +738,15 @@ def _instructions(ctx):
             label += ", from " + day(item["effective"])
         text = football(ctx.show("standing_instructions.%s.summary" % item.get("id"), item.get("summary") or ""))
         record = item.get("record") or {}
+        if subject == "play_calling":
+            record = {"path": rel(ctx, ctx.paths.staff_page), "anchor": CALLING_SECTION}
         if not _readable(ctx, record):
             event = (item.get("given") or {}).get("event")
             owner = ctx.events.get(event).owner if event in ctx.events else None
             record = {"path": owner} if owner else {}
         line = "- **%s:** %s." % (label, text.rstrip(".") or "recorded")
         if record:
-            line += " " + link(ctx, "Record", record)
+            line += " " + (link(ctx, "Who calls what", record) if subject == "play_calling" else page_link(ctx, record))
         lines.append(line)
     return lines or ["None."]
 

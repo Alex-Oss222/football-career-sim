@@ -176,6 +176,20 @@ class CareerViewTests(unittest.TestCase):
             self.assertNotIn(word, self.section("Waiting on you") + self.section("Coming up"))
         self.assertNotIn(".json", desk)
 
+    def test_desk_links_are_labelled_and_never_coded(self):
+        desk = self.desk()
+        labels = re.findall(r"\[([^\]]+)\]\(([^)]*)\)", desk)
+        self.assertTrue(labels)
+        self.assertNotIn("Record", [label for label, _ in labels if not _.endswith("Record.md")])
+        for label, dest in labels:
+            anchor = urlsplit(dest).fragment
+            self.assertEqual(render_coach_pages.football_anchor(anchor, self.master), anchor or None, dest)
+        if any(i.get("subject") == "play_calling" for i in current_job.instructions(self.job)):
+            line = next(l for l in self.section("Standing instructions").splitlines() if "Calling arrangement" in l)
+            staff = self.paths.staff_page.relative_to(self.paths.career).as_posix()
+            self.assertIn("](%s#%s)" % (staff, views.CALLING_SECTION), line)
+            self.assertIn(views.CALLING_SECTION, anchors(without_code(self.paths.staff_page.read_text(encoding="utf-8"))))
+
     def test_waiting_items_name_the_game_they_are_due_for(self):
         self.with_items(self.item(question="The test plan: the opening script for the week."))
         game = next(g for g in club_games(self.root) if g["week"] == self.week)

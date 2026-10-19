@@ -26,16 +26,16 @@ Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013. [Coac
 
 ## With others
 
-- **Individual film packets: preparation and coach approval** (Jacksonville coaching staff); waiting on cause review and comparison clips for the Cousins packet and a supplied video asset. [Record](Team_Operations/Film/player_queue.md)
-- **Three open practice-squad places** (David Caldwell). [Record](Team_Operations/Team/Roster/roster.md)
+- **Individual film packets: preparation and coach approval** (Jacksonville coaching staff); waiting on cause review and comparison clips for the Cousins packet and the cut-up video, not yet supplied. [Film queue](Team_Operations/Film/player_queue.md)
+- **Three open practice-squad places** (David Caldwell). [Roster](Team_Operations/Team/Roster/roster.md)
 
 ## Standing instructions
 
-- **Calling arrangement:** Stone can call, delegate or take back any phase at any time; continue the arrangement until he changes it, without making it a recurring planning question. [Record](Team_Operations/Staff/coaching_staff.md#phase-control)
-- **Inactives, from August 31, 2014:** The deepest healthy reserve on the chart in each of the five largest healthy position groups, never below a legal game-day unit, re-set each week. [Record](Training_Camp_and_Preseason/Roster_Decisions/roster_decisions.md#august-31-2014-the-week-1-inactives-stone-document-3-row-8)
-- **Two-point tries:** Kick, except go for two in the fourth quarter when the touchdown leaves Jacksonville down 2, up 1 or down 5. [Record](Regular_Season/Games/Week_05/output.md)
-- **Kickoffs:** Onside when trailing by 1 to 16 with 2:00 or less left; onside when trailing by 9 to 16 with 5:00 or less left; deep otherwise. [Record](Regular_Season/Games/Week_05/output.md)
-- **Fourth downs:** Fourth-and-2 or less, go, with Tice's first call on the matching menu; fourth-and-3 or 4, go on the opponent's side of midfield, otherwise the field goal or the punt by the field-goal line; fourth-and-5 or more, a field goal when the kick is 52 yards or less, otherwise a punt. [Record](Regular_Season/Games/Week_05/output.md#addendum-october-18-2026-the-fourth-down-rule-stands-for-every-game)
+- **Calling arrangement:** You call, delegate or take back any phase at any time; the arrangement stands until you change it. [Who calls what](Team_Operations/Staff/README.md#who-calls-what)
+- **Inactives, from August 31, 2014:** The deepest healthy reserve on the chart in each of the five largest healthy position groups, never below a legal game-day unit, re-set each week. [Roster decisions](Training_Camp_and_Preseason/Roster_Decisions/roster_decisions.md)
+- **Two-point tries:** Kick, except go for two in the fourth quarter when the touchdown leaves Jacksonville down 2, up 1 or down 5. [Week 5 report](Regular_Season/Games/Week_05/output.md)
+- **Kickoffs:** Onside when trailing by 1 to 16 with 2:00 or less left; onside when trailing by 9 to 16 with 5:00 or less left; deep otherwise. [Week 5 report](Regular_Season/Games/Week_05/output.md)
+- **Fourth downs:** Fourth-and-2 or less, go, with Tice's first call on the matching menu; fourth-and-3 or 4, go on the opponent's side of midfield, otherwise the field goal or the punt by the field-goal line; fourth-and-5 or more, a field goal when the kick is 52 yards or less, otherwise a punt. [Week 5 report](Regular_Season/Games/Week_05/output.md)
 
 ## Who calls what
 

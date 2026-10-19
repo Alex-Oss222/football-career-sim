@@ -27,6 +27,7 @@ A script that talks to the private Engine State service needs `ENGINE_RUNTIME_UR
 | `python scripts/league_awards.py month NAME --season YEAR [--close]` | Monthly awards on the league's announcement date |
 | `python scripts/league_awards.py render --season YEAR` | Rewrites the award pages |
 | `python scripts/render_player_pages.py [--check] [--root PATH]` | Every player page, built from the permanent player records (`data/people/players/`): the league pages under `career/league_players/` and the active season's Jacksonville player folder; `--check` also fails on a record that breaks the schema or an award whose winner is not in the game records |
+| `python scripts/render_coach_pages.py [--check] [--root PATH]` | The Coach page (`career/Stone/README.md`), Contract and jobs and the active season's Staff page, built from the coach records (`data/people/coaches/`), the current-job record, the closed games and the master date; `--check` also fails a coach record that breaks the schema or a page that breaks the clean-page rule |
 | `python scripts/render_club_pages.py [--check] [--root PATH]` | The team page, the roster and the depth chart, built from the roster record, the game and working depth charts, the depth chart's dated update log, the closed games and the current-job record (`scripts/render_club_pages.py`); `--check` also fails a page that breaks the clean-page rule |
 | `python scripts/update_player_cards.py YEAR [--check]` | Refreshes statistics on a player card still in the earlier card layout (built pages are skipped); `--check` validates the season's opening assessments, on the records for built pages |
 | `python scripts/render_observables.py --season YEAR --week N [--check]` | Backfills or checks a closed week's participation observables |
@@ -47,7 +48,7 @@ A script that talks to the private Engine State service needs `ENGINE_RUNTIME_UR
 | Command | What it does |
 |---|---|
 | `python scripts/render_annual_record.py YEAR [--root PATH] [--check]` | The one-line annual `Record.md` from each event owner's metadata |
-| `python scripts/render_career_views.py [--check]` | The career views (Document 5, the staff register's phase control, the head coach's desk) from the current-job record and the decision queue; writing is refused while a Jacksonville game is paused |
+| `python scripts/render_career_views.py [--check]` | The career views (Document 5 and the head coach's desk, the active season's README) from the current-job record and the decision queue; writing is refused while a Jacksonville game is paused |
 | `python scripts/render_trade_pages.py YEAR [--check]` | Trade navigation from the completed-trade index |
 | `python scripts/render_jaguars_cap_tracker.py [--check]` | The twelve-year financial horizon and the player cap views from the contract inputs (`data/finances/financial_inputs.json`) |
 | `python scripts/render_draft_order.py [--check]` | The 2014 draft order from the closed receipts |

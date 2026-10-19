@@ -2,7 +2,7 @@
 
 [Player cap](../salary_cap/cap_tracker.md) · [Finances](../README.md) · [Coaching staff](../../2014/Team_Operations/Staff/README.md)
 
-As of October 5, 2014. Whole US dollars.
+Current through the latest contract change, February 11, 2014. Whole US dollars.
 
 ## Coaching contracts
 
@@ -64,11 +64,13 @@ Coaching pay is a club expense and never counts against the player salary cap. T
 
 ## Contract terms
 
-Assistant contracts: the salary is guaranteed for the term if the club dismisses the coach without cause. Salary still owed after a dismissal without cause is reduced dollar for dollar by pay earned in another NFL or major-college coaching job during the guaranteed period.
+Assistant contracts: if the club dismisses a coach without cause, the guaranteed salary for the rest of his term is still owed. Every assistant's salary is guaranteed for his whole term except Mike Westhoff's 2015 salary, which is not.
+
+Offset: salary still owed after a dismissal without cause is reduced dollar for dollar by pay earned in another NFL or major-college coaching job during the guaranteed period.
 
 Alan Lowry left on January 12, 2014; his 2014 salary of $625,000 ended with the move and is not counted.
 
-Alex Stone's end date, salary, offset, dismissal terms, signing bonus and options were completed from comparable head-coach contracts of the time; the rest is as signed ([Contract and jobs](../../Stone/Contract_and_Jobs.md)).
+Alex Stone's end date was completed from the wording of Jacksonville's own 2010 assistant contracts, and his salary, offset, dismissal terms, signing bonus and options from comparable head-coach contracts of the time; the rest is as signed ([Contract and jobs](../../Stone/Contract_and_Jobs.md)).
 
 ## Contracts ending
 

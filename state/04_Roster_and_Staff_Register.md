@@ -232,8 +232,8 @@ The [staff register](../career/2014/Team_Operations/Staff/coaching_staff.md) is 
 - Head coach: Alex Stone.
 - Offensive coordinator: Mike Tice.
 - Defensive coordinator: Romeo Crennel. Who calls the defense: the current job record (Document 5 section 2).
-- Special-teams coordinator: Mike Westhoff from February 11, 2014, reporting to Stone; two seasons (2014-2015) at $750,000 each, 2014 guaranteed with offset, 2015 non-guaranteed, no added title or authority. He runs the kicking game; Stone keeps team priorities and consequential game management. He replaced Alan Lowry, who left on January 12, 2014 to become Atlanta's head coach.
-- Twelve assistants are under contract. Scheduled 2014 assistant salary: $7,700,000 ($6,950,000 for the eleven who remained after Lowry plus Westhoff's $750,000). This is a salary commitment, not a budget ceiling or available hiring money; no numeric staff-budget ceiling is established in Document 3 section 3.1.
+- Special-teams coordinator: Mike Westhoff from February 11, 2014, reporting to Stone. He runs the kicking game; Stone keeps team priorities and consequential game management. He replaced Alan Lowry, who left on January 12, 2014 to become Atlanta's head coach.
+- Assistant contracts (seasons, salary by season, guarantee and offset) are stored once in the coach records (`data/people/coaches/`) and shown, with the payroll totals, on the [coaching payroll](../career/finances/coaching_and_organization/coaching_payroll.md).
 - Emergency leads: the current job record (Document 5 section 2).
 - Caldwell retains personnel/contract/cap authority under Document 3.
 

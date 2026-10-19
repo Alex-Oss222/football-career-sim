@@ -532,6 +532,7 @@ def _validation_errors(job, root, mapping, events, master, prefix):
     errors.extend(f3_parity_errors(job, root))
     # 10. The contract and term, read from the coach record (stored there once).
     errors.extend(_contract_errors(job, current, root, prefix))
+    errors.extend(_staff_errors(job, current, root, master, prefix))
     return errors
 
 
@@ -575,6 +576,46 @@ def _contract_errors(job, current, root, prefix):
             if not changes:
                 errors.append(prefix + "coach record %s dates a %s calling change on %s that the delegation "
                               "does not hold" % (slug, entry["phase"], entry["date"]))
+    return errors
+
+
+def _staff_errors(job, current, root, master, prefix):
+    """The delegation and the coach records agree both ways: every coach the delegation names
+    (a caller, a preparer or the coach who sends in the call; a relay carrier; a practice lead or
+    game-day caller if the head coach is out) is a party with a coach record of the same name, on
+    the employer's staff on the master date when the arrangement is current; and every coach
+    record names a party of the same name."""
+    from . import coaches
+    if not current:
+        return []
+    club = (current.get("employer") or {}).get("club")
+    parties = job.get("parties") or {}
+    records = {r.get("party"): (slug, r) for slug, r in coaches.load_all(root).items() if r.get("party")}
+    errors = []
+    for pid, (slug, record) in records.items():
+        party = parties.get(pid)
+        if isinstance(party, dict) and party.get("name") != record.get("name"):
+            errors.append(prefix + "coach record %s is %s but party %r is %s"
+                          % (slug, record.get("name"), pid, party.get("name")))
+    delegation = current.get("delegation") or {}
+    named = []   # (party, what, whether the arrangement is in force on the master date)
+    for row in delegation.get("play_calling") or ():
+        now = _day(row.get("from"), True) <= master < _day(row.get("to"), False)
+        for key in ("caller", "prepares", "transmits"):
+            if row.get(key):
+                named.append((row[key], "the %s %s" % (row.get("phase"), key), now))
+    for carrier in (delegation.get("relay") or {}).get("carriers") or ():
+        named.append((carrier.get("party"), "a relay carrier", True))
+    emergency = delegation.get("emergency") or {}
+    for pid in list(emergency.get("practice_lead") or ()) + [emergency.get("game_day_caller")]:
+        if pid:
+            named.append((pid, "an emergency lead", True))
+    for pid, what, now in named:
+        if pid not in records:
+            errors.append(prefix + "%s, %s, has no coach record (data/people/coaches)" % (pid, what))
+        elif now and not coaches.on_staff(records[pid][1], club, master):
+            errors.append(prefix + "%s, %s, is not on the %s staff on %s by his coach record"
+                          % (pid, what, club, master.isoformat()))
     return errors
 
 

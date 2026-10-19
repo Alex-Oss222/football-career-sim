@@ -30,7 +30,7 @@ Signed authority and standards:
 - No guarantee to Blaine Gabbert and no advance mandate to draft a quarterback second overall.
 - First-season standard: a functioning program, credible player development, dependable preparation and communication, and an evidence-based direction at quarterback; no immediate playoff requirement.
 
-Signed on January 15, 2013: the length, the guarantee and the authority terms. Completed from comparable NFL head-coach contracts of the time: the end date, the salary, the offset, the dismissal terms, the signing bonus and the options ([head-coach contracts, 2005 to 2014](../../library/nfl_head_coach_contracts_2005_2014.md)).
+Signed on January 15, 2013: the length, the guarantee and the authority terms. Completed from the wording of Jacksonville's own 2010 assistant contracts: the end date. Completed from comparable head-coach contracts of the time: the salary, the offset, the dismissal terms, the signing bonus and the options. The research behind them: [head-coach contracts, 2005 to 2014](../../library/nfl_head_coach_contracts_2005_2014.md).
 
 ## Salary by season
 

@@ -17,7 +17,7 @@ Two state files record the coach's job and the decisions still open. Code reads 
 
 The files do not own:
 
-- the contract terms and the term's end: Stone's coach record, `data/people/coaches/alex_stone.json`, holds the signed terms (`career/2013/offseason/head_coach_contract.md`) and the October 19, 2026 amendment that completed the rest, and `current_job.term` and `current_job.contract_terms` read them there;
+- the contract terms and the term's end: Stone's coach record, `data/people/coaches/alex_stone.json`, holds the signed terms (`career/2013/offseason/head_coach_contract.md`) and the amendment that completed the rest (in-world January 15, 2013; recorded October 19, 2026), and `current_job.term` and `current_job.contract_terms` read them there;
 - the boundary rules on what reaches the coach (Document 3 section 6.2);
 - the calendar of stops for the user and the user's open questions on the career's own rules ([season cycle and career milestones](season_cycle_milestones.md));
 - the clock, the dated events, research gaps and labelled records (Document 5);

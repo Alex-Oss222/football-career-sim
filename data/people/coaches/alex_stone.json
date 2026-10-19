@@ -12,17 +12,20 @@
   {
    "year": 1986,
    "degree": "BS",
-   "school": "University of Miami"
+   "school": "University of Miami",
+   "source": "library/alex_stone_character_dossier_pre_hire.md"
   },
   {
    "year": 1996,
    "degree": "MBA",
-   "school": "University of San Diego"
+   "school": "University of San Diego",
+   "source": "library/alex_stone_character_dossier_pre_hire.md"
   },
   {
    "year": 2002,
    "degree": "PhD, exercise physiology",
-   "school": "University of Miami"
+   "school": "University of Miami",
+   "source": "library/alex_stone_character_dossier_pre_hire.md"
   }
  ],
  "playing": [
@@ -31,7 +34,8 @@
    "team": "University of Miami",
    "position": "Tight end",
    "note": "On the 1983 national championship team",
-   "source": "library/alex_stone_character_dossier_pre_hire.md"
+   "source": "library/alex_stone_character_dossier_pre_hire.md",
+   "position_source": "career/coaching_profiles/alex_stone_nfl_coach_sheet.md"
   },
   {
    "years": "1986-1995",
@@ -57,7 +61,7 @@
    "club": "University of Miami",
    "job": "Graduate assistant, offense",
    "work": "Offensive preparation and teaching during doctoral study",
-   "source": "library/alex_stone_character_dossier_pre_hire.md"
+   "source": "career/coaching_profiles/alex_stone_nfl_coach_sheet.md"
   },
   {
    "years": "1999",
@@ -183,6 +187,98 @@
    "source": "career/2013/offseason/head_coach_contract.md"
   },
   {
+   "in_world": "2013-01-15",
+   "recorded": "2026-10-19",
+   "kind": "contract_amended",
+   "contract": "jax-head-coach-2013",
+   "reconstruction": true,
+   "delegation": {
+    "user_date": "2026-10-18",
+    "words": "you can decide the rest",
+    "context": "given while answering the employment questions in which these terms were listed"
+   },
+   "terms": {
+    "end": {
+     "value": {
+      "date": "2017-01-31",
+      "or_later": "the day after Jacksonville's last game of the 2016 season",
+      "text": "The later of January 31, 2017 or the day after Jacksonville's last game of the 2016 season"
+     },
+     "basis": {
+      "text": "The wording of Jacksonville's 2010 assistant extensions",
+      "from": "the wording of Jacksonville's own 2010 assistant contracts",
+      "rows": [
+       "C73"
+      ],
+      "source": "library/nfl_head_coach_contracts_2005_2014.md"
+     }
+    },
+    "salary": {
+     "value": {
+      "2013": 2800000,
+      "2014": 2800000,
+      "2015": 2800000,
+      "2016": 2800000
+     },
+     "basis": {
+      "text": "Ron Rivera's four-year, $11.2 million first contract at Carolina, January 2011 (reported by ESPN, unverified), the most recent reported first contract of a coordinator promoted to a first head-coaching job and the top of the reported range for such hires; no raise, because no raise rate is sourced",
+      "from": "comparable head-coach contracts of the time",
+      "rows": [
+       "C35",
+       "C52"
+      ],
+      "source": "library/nfl_head_coach_contracts_2005_2014.md"
+     }
+    },
+    "offset": {
+     "value": "After a dismissal without cause, the unpaid guaranteed salary is reduced dollar for dollar by pay from another coaching job during the remaining term",
+     "basis": {
+      "text": "Denver and Shanahan; Jacksonville and Del Rio, 2012",
+      "from": "comparable head-coach contracts of the time",
+      "rows": [
+       "C54",
+       "C55"
+      ],
+      "source": "library/nfl_head_coach_contracts_2005_2014.md"
+     }
+    },
+    "dismissal": {
+     "value": {
+      "without_cause": "The unpaid remainder is owed, less the offset; no separate buyout",
+      "for_cause": "Nothing further is owed"
+     },
+     "basis": {
+      "text": "Clubs that dismissed a head coach without cause paid the rest of his contract less any offset; a dismissal for cause, if upheld, owed nothing further",
+      "from": "comparable head-coach contracts of the time",
+      "rows": [
+       "C53",
+       "C56"
+      ],
+      "source": "library/nfl_head_coach_contracts_2005_2014.md"
+     }
+    },
+    "signing_bonus": {
+     "value": 0,
+     "basis": {
+      "text": "None reported for a comparable hire",
+      "from": "comparable head-coach contracts of the time",
+      "rows": [],
+      "source": "library/nfl_head_coach_contracts_2005_2014.md"
+     }
+    },
+    "options": {
+     "value": "None",
+     "basis": {
+      "text": "None reported for a comparable hire",
+      "from": "comparable head-coach contracts of the time",
+      "rows": [],
+      "source": "library/nfl_head_coach_contracts_2005_2014.md"
+     }
+    }
+   },
+   "source": "library/nfl_head_coach_contracts_2005_2014.md"
+  },
+  {
    "date": "2014-01-12",
    "kind": "calling_changed",
    "phase": "special_teams",
@@ -199,92 +295,6 @@
    "kind": "calling_changed",
    "phase": "defense",
    "source": "career/2014/Regular_Season/Games/Week_04/Week 4 Packet_ at San Diego.md"
-  },
-  {
-   "date": "2026-10-19",
-   "kind": "contract_amended",
-   "contract": "jax-head-coach-2013",
-   "in_world": "2013-01-15",
-   "reconstruction": true,
-   "delegation": {
-    "user_date": "2026-10-18",
-    "words": "you can decide the rest",
-    "context": "given while answering the employment questions in which these terms were listed"
-   },
-   "terms": {
-    "end": {
-     "value": {
-      "date": "2017-01-31",
-      "or_later": "the day after Jacksonville's last game of the 2016 season",
-      "text": "The later of January 31, 2017 or the day after Jacksonville's last game of the 2016 season"
-     },
-     "basis": {
-      "text": "The wording of Jacksonville's 2010 assistant extensions",
-      "rows": [
-       "C73"
-      ],
-      "source": "library/nfl_head_coach_contracts_2005_2014.md"
-     }
-    },
-    "salary": {
-     "value": {
-      "2013": 2800000,
-      "2014": 2800000,
-      "2015": 2800000,
-      "2016": 2800000
-     },
-     "basis": {
-      "text": "Ron Rivera's four-year, $11.2 million first contract at Carolina, January 2011 (reported by ESPN, unverified), the most recent reported first contract of a coordinator promoted to a first head-coaching job and the top of the reported range for such hires; no raise, because no raise rate is sourced",
-      "rows": [
-       "C35",
-       "C52"
-      ],
-      "source": "library/nfl_head_coach_contracts_2005_2014.md"
-     }
-    },
-    "offset": {
-     "value": "After a dismissal without cause, the unpaid guaranteed salary is reduced dollar for dollar by pay from another coaching job during the remaining term",
-     "basis": {
-      "text": "Denver and Shanahan; Jacksonville and Del Rio, 2012",
-      "rows": [
-       "C54",
-       "C55"
-      ],
-      "source": "library/nfl_head_coach_contracts_2005_2014.md"
-     }
-    },
-    "dismissal": {
-     "value": {
-      "without_cause": "The unpaid remainder is owed, less the offset; no separate buyout",
-      "for_cause": "Nothing further is owed"
-     },
-     "basis": {
-      "text": "Clubs that dismissed a head coach without cause paid the rest of his contract less any offset; a dismissal for cause, if upheld, owed nothing further",
-      "rows": [
-       "C53",
-       "C56"
-      ],
-      "source": "library/nfl_head_coach_contracts_2005_2014.md"
-     }
-    },
-    "signing_bonus": {
-     "value": 0,
-     "basis": {
-      "text": "None reported for a comparable hire",
-      "rows": [],
-      "source": "library/nfl_head_coach_contracts_2005_2014.md"
-     }
-    },
-    "options": {
-     "value": "None",
-     "basis": {
-      "text": "None reported for a comparable hire",
-      "rows": [],
-      "source": "library/nfl_head_coach_contracts_2005_2014.md"
-     }
-    }
-   },
-   "source": "library/nfl_head_coach_contracts_2005_2014.md"
   }
  ]
 }
