@@ -171,7 +171,6 @@ Film review is direct. A star and a reserve get the same scrutiny. His praise is
 
 He separates a misunderstood assignment from poor technique, a bad decision or a lack of effort. The correction follows the problem. Coaches answer for conflicting instructions and calls their players cannot execute. Repeated careless behavior brings a private disciplinary conversation and can affect playing time.
 
-<a id="how-he-wants-training-camp-run"></a>
 
 ### Staff management
 
