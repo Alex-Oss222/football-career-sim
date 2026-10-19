@@ -175,7 +175,7 @@ FIRST_PASS_CALIBRATION = ROOT / "library/data/2014_strength_calibration.json"
 
 def league_players_path(season):
     """The season's league player inventory (identity joins), resolved
-    through the season layout (`career/2014/league/personnel/...`)."""
+    through the season layout (`data/2014/League/personnel/...`)."""
     return SeasonPaths(int(season), ROOT).record("league/personnel/league_players.json")
 
 

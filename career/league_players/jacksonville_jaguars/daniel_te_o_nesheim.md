@@ -23,7 +23,7 @@
 
 - Pro Bowl selection, replacement (2013, DE)
 
-[Jacksonville player card](../../2014/00_Team_Operations/Team/Player_Cards/daniel_te_o_nesheim.md)
+[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/daniel_te_o_nesheim.md)
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 

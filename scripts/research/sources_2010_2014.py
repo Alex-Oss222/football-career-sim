@@ -22,7 +22,8 @@ The gate (library/2014_6_pre_build_specification.md, section 1):
   memory, checked against its pin, cut, and only the cut file is written.
 - Refused: any ``stats_player_reg_*`` file, any season after 2014, any 2014 row
   beyond the cut, the seasonal 2014 roster (an end-of-season snapshot with no
-  date to cut on; the weekly roster is used instead) and any path under career/.
+  date to cut on; the weekly roster is used instead) and any path under career/
+  or data/.
 - Column allowlists: the player database keeps gsis_id, birth_date, the draft
   fields, pff_id and pfr_id; draft picks keep season, round, pick, team, gsis_id
   and position. Weekly player statistics drop the current database's position
@@ -71,6 +72,8 @@ import pre_build_specification  # noqa: E402
 MANIFEST = ROOT / "library/data/2010_2014_sources_manifest.json"
 SCHEMA_VERSION = 1
 CAREER = ROOT / "career"
+# From 2014 the branch's system files sit in the data area (rebuild step 2b).
+BRANCH_DATA = ROOT / "data"
 SEASONS = (2010, 2011, 2012, 2013, 2014)
 LAST_SEASON = 2014
 CUT_SEASON = 2014
@@ -192,11 +195,12 @@ def refuse_name(name):
 
 
 def guard_path(path):
-    """Refuse any path under career/ (branch records are never a source)."""
+    """Refuse any path under career/ or data/ (branch records are never a source)."""
     resolved = Path(path).resolve()
-    career = CAREER.resolve()
-    if resolved == career or career in resolved.parents:
-        raise SourceRefused("%s is under career/: branch records are never league source data" % path)
+    for base, name in ((CAREER, "career/"), (BRANCH_DATA, "data/")):
+        branch = base.resolve()
+        if resolved == branch or branch in resolved.parents:
+            raise SourceRefused("%s is under %s: branch records are never league source data" % (path, name))
     return resolved
 
 
@@ -523,7 +527,7 @@ def build_manifest(records, summary):
         "attribution": ATTRIBUTION,
         "gate": {"seasons": list(SEASONS), "cut_2014": {"season_type": "REG", "max_week": MAX_WEEK,
                                                          "max_date": MAX_DATE},
-                 "refused": [why for _, why in REFUSED] + ["any path under career/"],
+                 "refused": [why for _, why in REFUSED] + ["any path under career/ or data/"],
                  "players_columns": list(PLAYERS_COLUMNS), "draft_picks_columns": list(DRAFT_PICKS_COLUMNS),
                  "stats_player_week_columns_dropped": list(STATS_WEEK_DROPPED),
                  "players_rows": "draft_year <= 2014, or an undrafted gsis_id on a written 2010-2014 roster file",

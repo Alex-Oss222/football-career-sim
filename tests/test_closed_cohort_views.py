@@ -17,6 +17,7 @@ import unittest
 
 from runtime.calibration_base import BASE_2012, base_for_result
 from runtime.play_detail import check_ledger, measurable_classes
+from runtime.season_layout import NUMBERED_FOLDERS
 from runtime.seasons import SeasonPaths
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,6 +25,17 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 TEAM = "Jacksonville Jaguars"
 LEDGER = Path(__file__).parent / "data/closed_cohort_ledger.json"
+
+
+def recorded_key(path):
+    """The receipt's path when the cohort was recorded. Rebuild step 2b moved
+    the 2014 receipts, byte for byte, from career/2014/<numbered folder>/ to
+    data/2014/<folder>/; the recorded audit keeps its original keys."""
+    parts = path.relative_to(ROOT).as_posix().split("/")
+    if parts[:2] == ["data", "2014"]:
+        numbered = {name: old for old, name in NUMBERED_FOLDERS.items()}
+        parts[0], parts[2] = "career", numbered.get(parts[2], parts[2])
+    return "/".join(parts)
 
 
 def receipts_in(folder):
@@ -37,7 +49,7 @@ class ClosedSeasonViewTests(unittest.TestCase):
         self.assertIn("calibration_audit.md", views)
         for name, text in views.items():
             with self.subTest(year=year, view=name):
-                self.assertEqual((folder / name).read_text(encoding="utf-8"), text)
+                self.assertEqual(SeasonPaths(year, ROOT).file_in(folder, name).read_text(encoding="utf-8"), text)
 
     def test_2013_season_views_and_standings(self):
         from scripts.render_standings import render
@@ -106,8 +118,8 @@ class ClosedAwardViewTests(unittest.TestCase):
         from runtime.events import preserve_event_comments
         from scripts.render_award_pages import render_pages
         folder = SeasonPaths(2014, ROOT).awards
-        results = json.loads((folder / "results.json").read_text())
-        method = json.loads((folder / "methodology.json").read_text())
+        results = json.loads((SeasonPaths(2014, ROOT).awards_data / "results.json").read_text())
+        method = json.loads((SeasonPaths(2014, ROOT).awards_data / "methodology.json").read_text())
         pages = render_pages(2014, results, method)
         self.assertTrue(pages)
         for relative, text in pages.items():
@@ -129,7 +141,7 @@ class ClosedLedgerTests(unittest.TestCase):
             for folder in (paths.receipts, paths.postseason_receipts, paths.preseason_receipts):
                 for path in sorted(Path(folder).glob("*.json")):
                     receipt = json.loads(path.read_text())
-                    key = path.relative_to(ROOT).as_posix()
+                    key = recorded_key(path)
                     if key not in fixture["rows"]:
                         with self.subTest(later_receipt=key):
                             self.assertEqual(receipt["kernel_version"], "2014.6")

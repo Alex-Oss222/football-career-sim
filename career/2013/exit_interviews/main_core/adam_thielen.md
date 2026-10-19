@@ -1,6 +1,6 @@
 # Adam Thielen, WR: exit interview
 
-**Date:** Monday January 13, 2014. **Present:** Alex Stone; Darryl Drake (wide receivers). Alan Lowry, the special teams coordinator who directed the kicking game in 2013, left on January 12 to become Atlanta's head coach and was not present ([January coaching decisions](../../../2014/01_Early_Offseason/staff_changes/timeline.md)); the coordinator job is vacant, and Stone directs the kicking game until it is filled.
+**Date:** Monday January 13, 2014. **Present:** Alex Stone; Darryl Drake (wide receivers). Alan Lowry, the special teams coordinator who directed the kicking game in 2013, left on January 12 to become Atlanta's head coach and was not present ([January coaching decisions](../../../2014/Early_Offseason/staff_changes/timeline.md)); the coordinator job is vacant, and Stone directs the kicking game until it is filled.
 **Status going in:** WR2 and the H (movable receiver), with coverage-unit jobs; second on the receiver depth chart at season end (Shorts, Thielen, Blackmon, Clemons, Brown). Available, no communicated restriction: cleared from his Wild Card minor injury when his projected return of January 6 was reached; his exit physical is with the medical staff today. Contract: under contract; branch undrafted-free-agent minimum contract, three years, final year 2015; no accrued seasons through 2012, with 2013 accruing in the branch (on the 53 for 16 games). Age 23 (born August 22, 1990). Signed after the 2013 draft from Minnesota State.
 
 ## The season in the record
@@ -215,7 +215,7 @@ Evidence caveats: the Week 7 record and [2013 San Diego game report](../../regul
 - [2013 San Diego game report](../../regular_season/week_07_san_diego_at_jacksonville/output.md), [kernel 2013.7 adoption](../../../../runtime/README.md), and [kernel 2013.10 attribution correction](../../../../runtime/README.md)
 - `runtime/defect_register.md` lines 12, 14, 37
 - `career/2013/coaching_staff.md` lines 239-258 (Drake, including ball security after the catch) and 420-443 (Lowry, including returner evaluation)
-- [January coaching decisions](../../../2014/01_Early_Offseason/staff_changes/timeline.md); `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
+- [January coaching decisions](../../../2014/Early_Offseason/staff_changes/timeline.md); `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
 - `career/2014/calendar.md` line 31
 - `career/2013/offseason/the_prowl_program_identity.md` "Good. Better. Best.", "Know Your Job", "Earn Responsibility", "The Standard Goes Upward", "Discipline Approach"
 - `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 7 and 10

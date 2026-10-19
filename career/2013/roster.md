@@ -1,9 +1,9 @@
 # Jacksonville Jaguars roster
 
-**As of:** March 20, 2014 ([March 19–20 Cain and Nwaneri transactions](../2014/Record.md): Jeremy Cain re-signed; Uche Nwaneri traded to Arizona in package I for No. 38; [Te’o-Nesheim agreement](../2014/00_Team_Operations/Free_Agency/teo_nesheim_negotiation_2014-03-18.md): Daniel Te'o-Nesheim signed). Monroe, Marks, Verner, Talib, Nicks, Hawkins and Te'o-Nesheim signed in the replay ([March free-agency transactions](../2014/Record.md)); 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
+**As of:** March 20, 2014 ([March 19–20 Cain and Nwaneri transactions](../2014/Record.md): Jeremy Cain re-signed; Uche Nwaneri traded to Arizona in package I for No. 38; [Te’o-Nesheim agreement](../2014/Team_Operations/Free_Agency/teo_nesheim_negotiation_2014-03-18.md): Daniel Te'o-Nesheim signed). Monroe, Marks, Verner, Talib, Nicks, Hawkins and Te'o-Nesheim signed in the replay ([March free-agency transactions](../2014/Record.md)); 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
 **Canonical controlled-player count:** **55** (offseason roster; the 90-player limit applies from the league year).
 **Changes from the league-year opening through March 20 ([dated transactions](../2014/Record.md)):** Monroe and Sen'Derrick Marks re-signed and Alterraun Verner, Aqib Talib, Hakeem Nicks, Andrew Hawkins and Daniel Te'o-Nesheim signed in the replay; Cameron Bradfield (RFA) and Toney Clemons, Mike Brown and Austin Pasztor (ERFA) tendered; the six reserve/future contracts took effect. Left control at 4 p.m.: Chad Henne, Jeremy Cain (re-signed March 19), Maurice Jones-Drew, C.J. Wilson, Alan Ball and Brent Grimes (unrestricted; Henne's and Cain's negotiations reopened in the replay), Allen Reisner and Kevin Rutland (not tendered) and Brad Meester (retired). See section 5.
-**Practice squad:** **0** (no 2014 practice squad exists before the regular season). **Reserve/future contracts:** the six signed February 3 and 5, 2014 ([2014 reserve/future signings](../2014/00_Team_Operations/Free_Agency/signings.md)) are now effective and listed in section 3.
+**Practice squad:** **0** (no 2014 practice squad exists before the regular season). **Reserve/future contracts:** the six signed February 3 and 5, 2014 ([2014 reserve/future signings](../2014/Team_Operations/Free_Agency/signings.md)) are now effective and listed in section 3.
 **Record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
 <!-- player-ages-as-of: 2014-03-24 -->
@@ -147,7 +147,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 ## 4. Reserve/future contracts (2014) and the 2013 practice squad
 
-Jacksonville's 2013 practice squad (formed September 1, 2013, [2013 waivers and practice squad](preseason/final_roster_cuts.md)) had eight players: Tyler Bray, Richard Murphy, Will Ta'ufo'ou, Jerrell Jackson, Jerome Long, D'Anthony Smith, Brandon King and Antwon Blake. Their practice-squad contracts ended with the season. Under Stone's February 2 memo, Caldwell offered six of them reserve/future contracts on February 3, 2014; all six signed ([2014 reserve/future signings](../2014/00_Team_Operations/Free_Agency/signings.md); `career/2014/early_offseason/futures_results.json`). Terms for each: the 2014 minimum for his credited seasons, no guarantee, no signing bonus. The contracts took effect at the 2014 league year (March 11, 2014, 4:00 p.m. ET) and count toward the 90-player limit; the six players are listed with their position groups in section 3.
+Jacksonville's 2013 practice squad (formed September 1, 2013, [2013 waivers and practice squad](preseason/final_roster_cuts.md)) had eight players: Tyler Bray, Richard Murphy, Will Ta'ufo'ou, Jerrell Jackson, Jerome Long, D'Anthony Smith, Brandon King and Antwon Blake. Their practice-squad contracts ended with the season. Under Stone's February 2 memo, Caldwell offered six of them reserve/future contracts on February 3, 2014; all six signed ([2014 reserve/future signings](../2014/Team_Operations/Free_Agency/signings.md); `career/2014/early_offseason/futures_results.json`). Terms for each: the 2014 minimum for his credited seasons, no guarantee, no signing bonus. The contracts took effect at the 2014 league year (March 11, 2014, 4:00 p.m. ET) and count toward the 90-player limit; the six players are listed with their position groups in section 3.
 
 | Player | Pos | DOB | Age | Status | Signed |
 | --- | --- | --- | ---: | --- | --- |
@@ -162,11 +162,11 @@ Jacksonville's 2013 practice squad (formed September 1, 2013, [2013 waivers and 
 
 ## 5. Departures
 
-### March 11, 2014, 4 p.m. ET ([March 11 league-year transactions](../2014/00_Team_Operations/Free_Agency/signings.md) and [Monroe, Marks and Verner agreements](../2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md))
+### March 11, 2014, 4 p.m. ET ([March 11 league-year transactions](../2014/Team_Operations/Free_Agency/signings.md) and [Monroe, Marks and Verner agreements](../2014/Team_Operations/Free_Agency/march_2014_replay_log.md))
 
 | Player | Pos | How control ended | Outstanding Jacksonville position |
 | --- | --- | --- | --- |
-| Chad Henne | QB | Contract expired; unrestricted free agent | Negotiation reopened in the replay ([Monroe, Marks and Verner agreements](../2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md)); the first-pass March 7 draw is superseded |
+| Chad Henne | QB | Contract expired; unrestricted free agent | Negotiation reopened in the replay ([Monroe, Marks and Verner agreements](../2014/Team_Operations/Free_Agency/march_2014_replay_log.md)); the first-pass March 7 draw is superseded |
 | Jeremy Cain | LS | Contract expired; unrestricted free agent | Re-signed March 19, 2014 ([March 19–20 Cain and Nwaneri transactions](../2014/Record.md)): one year, $855,000 |
 | Maurice Jones-Drew | RB | Contract expired; unrestricted free agent | Memo offer outstanding; replay entry pending |
 | C.J. Wilson | DE | Contract expired; unrestricted free agent | Minimum offer outstanding; replay entry pending |
@@ -186,4 +186,4 @@ Claimed by other clubs on waivers: Austen Lane, Brandon Marshall, Isaiah Stanbac
 
 ## 6. Finances
 
-The last closed 2013 accounting remains in `offseason/current_cap_worksheet.md`. For 2014, use the [2014 contract table](../2014/00_Team_Operations/Finances/player_contracts/contracts.md) and [ten-year tracker](../finances/salary_cap/cap_tracker.md), through [Monroe, Marks and Verner agreements](../2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md). Wilson and Jonathan Grimes are signed through 2014 and the six futures through 2015 under the adopted contract completion.
+The last closed 2013 accounting remains in `offseason/current_cap_worksheet.md`. For 2014, use the [2014 contract table](../2014/Team_Operations/Finances/player_contracts/contracts.md) and [ten-year tracker](../finances/salary_cap/cap_tracker.md), through [Monroe, Marks and Verner agreements](../2014/Team_Operations/Free_Agency/march_2014_replay_log.md). Wilson and Jonathan Grimes are signed through 2014 and the six futures through 2015 under the adopted contract completion.

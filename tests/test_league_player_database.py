@@ -13,7 +13,7 @@ from scripts.research import build_league_player_database as db
 class LeaguePlayerDatabaseTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.snapshot=json.loads(gzip.decompress((db.ROOT/db.REL/'source_snapshot.json.gz').read_bytes()))
+        cls.snapshot=json.loads(gzip.decompress((db.ROOT/db.DATA_REL/'source_snapshot.json.gz').read_bytes()))
         cls.built=db.build(cls.snapshot,db.ROOT)
         cls.players={p['player_id']:p for p in cls.built['players']}
 
@@ -90,11 +90,11 @@ class LeaguePlayerDatabaseTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             root=Path(d);(root/db.REL).mkdir(parents=True)
             shutil.copy(db.ROOT/db.REL/'free_agent_pool.md',root/db.REL/'free_agent_pool.md')
-            data=json.loads((db.ROOT/db.REL/'league_corrections.json').read_text())
+            data=json.loads((db.ROOT/db.DATA_REL/'league_corrections.json').read_text())
             patch=copy.deepcopy(next(iter(data['players'].values())))
             patch['sources'][0]['published']='2014-03-11'
             data['players']={'00-0000001':patch}
-            target=root/db.REL/'league_corrections.json';target.write_text(json.dumps(data))
+            target=root/db.DATA_REL/'league_corrections.json';(root/db.DATA_REL).mkdir(parents=True,exist_ok=True);target.write_text(json.dumps(data))
             with self.assertRaises(ValueError):db.corrections(root)
             patch['sources'][0]['published']='2013-01-01'
             pid=next(iter(self.snapshot['branch']['control']))

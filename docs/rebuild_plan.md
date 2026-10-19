@@ -113,7 +113,7 @@ Each step is built lean: one builder and one reviewer, no new research except a 
 |---|---|
 | 1 | Done (merged) |
 | 2 | Layout approved; the player record is built with step 3 |
-| 2b | In progress |
+| 2b | Built, awaiting merge |
 | 3 to 8 | Not started |
 
 ## Change log

@@ -58,7 +58,9 @@ def _has_key(obj, name):
 def candidate_files(root=ROOT):
     root = Path(root)
     files = []
-    for folder in ("career", "state", ".sim_cache"):
+    # data/ holds the season's system files from 2014 (receipts, paused
+    # records, call sheets): rebuild step 2b.
+    for folder in ("career", "data", "state", ".sim_cache"):
         base = root / folder
         if base.is_dir():
             files += sorted(p for p in base.rglob("*.json") if p.is_file())

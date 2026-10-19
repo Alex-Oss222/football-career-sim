@@ -512,8 +512,9 @@ def repository_profile_errors(root: Path = ROOT) -> list[str]:
     errors=check_profiles(2013,players,root)
     mapping = root/'docs/repository_map.json'
     active = json.loads(mapping.read_text(encoding='utf-8')).get('active_season') if mapping.is_file() else None
-    for season_dir in (root/"career").glob("[0-9][0-9][0-9][0-9]"):
-        season=int(season_dir.name)
+    # A season exists by its pages or, from 2014, by its data area.
+    seasons=sorted({int(d.name) for base in ("career", "data") for d in (root/base).glob("[0-9][0-9][0-9][0-9]")})
+    for season in seasons:
         directory=SeasonPaths(season, root).record('player_profiles')
         if not season_is_complete(season,root) and any(
             p.name not in {"README.md","TEMPLATE.md"} and not all(marker in p.read_text(encoding="utf-8") for marker in ("**Profile status:** Working player card", "<!-- yearly-statistics:start -->", "<!-- yearly-statistics:end -->"))

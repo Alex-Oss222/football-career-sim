@@ -45,11 +45,11 @@
    "fallback": null,
    "can_continue": null,
    "record": {
-    "path": "career/2014/05_Regular_Season/Games/Week_06/README.md"
+    "path": "career/2014/Regular_Season/Games/Week_06/README.md"
    },
    "sources": [
     {
-     "path": "career/2014/05_Regular_Season/Games/Week_05/output.md",
+     "path": "career/2014/Regular_Season/Games/Week_05/output.md",
      "anchor": "5-coaching-takeaways-and-next-week-carry-forward"
     }
    ],
@@ -113,11 +113,11 @@
    "fallback": null,
    "can_continue": null,
    "record": {
-    "path": "career/2014/00_Team_Operations/Team/Depth_Chart/depth_chart.md"
+    "path": "career/2014/Team_Operations/Team/Depth_Chart/depth_chart.md"
    },
    "sources": [
     {
-     "path": "career/2014/00_Team_Operations/Medical/medical_history.md",
+     "path": "career/2014/Team_Operations/Medical/medical_history.md",
      "anchor": "october-5-week-5-injuries-against-pittsburgh"
     }
    ],
@@ -146,11 +146,11 @@
    "fallback": null,
    "can_continue": null,
    "record": {
-    "path": "career/2014/00_Team_Operations/Team/Roster/roster.md"
+    "path": "career/2014/Team_Operations/Team/Roster/roster.md"
    },
    "sources": [
     {
-     "path": "career/2014/00_Team_Operations/Team/Roster/transactions_2014-09-08.md"
+     "path": "career/2014/Team_Operations/Team/Roster/transactions_2014-09-08.md"
     }
    ],
    "migrated_from": "state/05 JAX-2014-OCT05-STATE-111, section 8 row 'Practice squad'",
@@ -186,7 +186,7 @@
    "fallback": null,
    "can_continue": null,
    "record": {
-    "path": "career/2014/00_Team_Operations/Film/player_queue.md"
+    "path": "career/2014/Team_Operations/Film/player_queue.md"
    },
    "sources": [],
    "migrated_from": "state/05 JAX-2014-OCT05-STATE-111, section 8 row 'Film'",

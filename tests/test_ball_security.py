@@ -732,7 +732,7 @@ class RecordsTests(unittest.TestCase):
             self.assertNotIn(views.FUMBLE_SPLIT_NOTE, render(only_old))
             self.assertNotIn(views.FUMBLE_SPLIT_NOTE, render(only_new))
         with tempfile.TemporaryDirectory() as tmp:
-            folder = SeasonPaths(2014, Path(tmp)).stats / "game_receipts"
+            folder = SeasonPaths(2014, Path(tmp)).receipts
             folder.mkdir(parents=True)
             for rc in (old, new):
                 (folder / ("%s.json" % rc["event_id"])).write_text(json.dumps(rc))

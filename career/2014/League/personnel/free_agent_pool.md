@@ -1,6 +1,6 @@
 # 2014 free-agent pool
 
-**Branch date:** February 2, 2014; status changes through March 11, 2014 (4 p.m. ET) are recorded in the sections below the verified targets ([February 28 cap publication](../../00_Team_Operations/Finances/salary_cap/cap_worksheet.md), [March 3 designation deadline](../../00_Team_Operations/Free_Agency/signings.md), [March 1–3 league-personnel verification](README.md), and [March 11 league-year transactions](../../00_Team_Operations/Free_Agency/signings.md)). **Research checked:** September 28, 2026. The nine players on the February 2 target board have verified pending free-agent classifications below. The rest of this file remains an unverified contract-candidate inventory, not a complete or executable free-agent pool. Jacksonville's own pending free agents belong in `career/2014/finances/player_contracts/contract_status.md`.
+**Branch date:** February 2, 2014; status changes through March 11, 2014 (4 p.m. ET) are recorded in the sections below the verified targets ([February 28 cap publication](../../Team_Operations/Finances/salary_cap/cap_worksheet.md), [March 3 designation deadline](../../Team_Operations/Free_Agency/signings.md), [March 1–3 league-personnel verification](README.md), and [March 11 league-year transactions](../../Team_Operations/Free_Agency/signings.md)). **Research checked:** September 28, 2026. The nine players on the February 2 target board have verified pending free-agent classifications below. The rest of this file remains an unverified contract-candidate inventory, not a complete or executable free-agent pool. Jacksonville's own pending free agents belong in `career/2014/finances/player_contracts/contract_status.md`.
 
 ## Verified February 2 targets
 
@@ -44,7 +44,7 @@ F1 is an NFL.com report republished by the Patriots; those two outlets are not c
 
 **Identity check:** the target is **Golden Tate, Seattle WR**, not Ben Tate, Houston RB, or Brandon Tate, Cincinnati WR. Golden Tate and Andrew Hawkins were missing from the generated candidate list and are now included above. The seven other target rows have been moved out of that unverified list; their old contract amounts are not treated as verified research.
 
-### Status changes on the rails, February 26 to 28, 2014 ([February 28 cap publication](../../00_Team_Operations/Finances/salary_cap/cap_worksheet.md))
+### Status changes on the rails, February 26 to 28, 2014 ([February 28 cap publication](../../Team_Operations/Finances/salary_cap/cap_worksheet.md))
 
 These real moves are applied at the February 28 checkpoint from the dated rows in the club pages (`clubs/`), where each source is cited. They change open-market availability only. The verified classifications above and the generated candidates below are February 2 records and are not rewritten. Only moves the bounded search found are listed; see the coverage note in each club page.
 
@@ -79,7 +79,7 @@ These real moves are applied at the February 28 checkpoint from the dated rows i
 
 **Pending verification, not applied:** Khalif Barnes (Oakland, reported re-signing February 28) and Zach Potter (Houston, reported signing February 26). Both are listed in their club pages with sources.
 
-### Status changes on the rails, March 1 to 3, 2014 ([March 3 designation deadline](../../00_Team_Operations/Free_Agency/signings.md))
+### Status changes on the rails, March 1 to 3, 2014 ([March 3 designation deadline](../../Team_Operations/Free_Agency/signings.md))
 
 Applied at the March 3 checkpoint from the dated rows in the club pages, where each source is cited. The sweep covered tags, releases and retirements only; re-signings and extensions dated March 1 to 3 were not swept.
 
@@ -89,9 +89,9 @@ Applied at the March 3 checkpoint from the dated rows in the club pages, where e
 | Alex Mack | Cleveland Browns | C | Transition tag, March 3 | Listed below as a generated candidate; Cleveland may match any offer sheet | Confirmed |
 | Jason Worilds | Pittsburgh Steelers | OLB | Transition tag, March 3 | Listed below as a generated candidate; Pittsburgh may match any offer sheet | Confirmed |
 
-**[March 1–3 league-personnel verification](README.md) closure:** the March 1 to 3 re-signing gap was swept, and these moves were verified and applied at the March 3 checkpoint: Bernard Pollard (Tennessee Titans, S) re-signed March 3, off the market; Leroy Harris (Detroit Lions, G/C) released March 3, now a free agent; Zach Potter (TE) signed by the Houston Texans February 26, off the market; Khalif Barnes (Oakland Raiders, T) re-signed February 28, off the market; and Donald Butler (San Diego Chargers, ILB) re-signed February 28 (day single source), off the market. They replace the [February 28 cap publication](../../00_Team_Operations/Finances/salary_cap/cap_worksheet.md) pending-verification note on Barnes and Potter. Pollard and Butler are listed below as generated candidates.
+**[March 1–3 league-personnel verification](README.md) closure:** the March 1 to 3 re-signing gap was swept, and these moves were verified and applied at the March 3 checkpoint: Bernard Pollard (Tennessee Titans, S) re-signed March 3, off the market; Leroy Harris (Detroit Lions, G/C) released March 3, now a free agent; Zach Potter (TE) signed by the Houston Texans February 26, off the market; Khalif Barnes (Oakland Raiders, T) re-signed February 28, off the market; and Donald Butler (San Diego Chargers, ILB) re-signed February 28 (day single source), off the market. They replace the [February 28 cap publication](../../Team_Operations/Finances/salary_cap/cap_worksheet.md) pending-verification note on Barnes and Potter. Pollard and Butler are listed below as generated candidates.
 
-### Status changes on the rails, March 4 to 11, 2014 ([March 11 league-year transactions](../../00_Team_Operations/Free_Agency/signings.md))
+### Status changes on the rails, March 4 to 11, 2014 ([March 11 league-year transactions](../../Team_Operations/Free_Agency/signings.md))
 
 Applied at the March 11 checkpoint (4 p.m. ET, the league-year opening) from the dated rows in the club pages, where each source is cited. Only moves that change open-market availability are listed: re-signings and extensions take a player off the market, releases put him on it, and tenders make him a tendered RFA or ERFA. March 11 moves whose time of day is not established are treated as before the checkpoint. The sweep was bounded; see the coverage note in each club page.
 
@@ -148,10 +148,10 @@ Applied at the March 11 checkpoint (4 p.m. ET, the league-year opening) from the
 | DeMarcus Ware | Dallas Cowboys | OLB | Released, March 11, before the checkpoint | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
 | Joique Bell | Detroit Lions | RB | Signed RFA tender plus extension, March 11, before 4 p.m. | Listed below as a generated candidate; extended, off the market | Confirmed |
 | Patrick Chung | Philadelphia Eagles | S | Released, March 11, before the checkpoint | Listed below as a generated candidate; released, a free agent from his release date, subject to waiver rules | Confirmed |
-| Daniel Te'o-Nesheim | Tampa Bay Buccaneers | DE | Signed by Jacksonville, March 18, in the replay ([Te’o-Nesheim agreement](../../00_Team_Operations/Free_Agency/teo_nesheim_negotiation_2014-03-18.md); three years) | Off the market | Branch record |
-| Alterraun Verner | Tennessee Titans | CB | Signed by Jacksonville, March 11, in the March 2014 replay ([Monroe, Marks and Verner agreements](../../00_Team_Operations/Free_Agency/march_2014_replay_log.md); four years); the Tampa Bay signing does not occur | Off the market | Branch record |
-| Aqib Talib | New England Patriots | CB | Signed by Jacksonville, March 11, in the March 2014 replay ([Talib and Tate decisions](../../00_Team_Operations/Free_Agency/march_2014_replay_log.md); five years); the Denver signing does not occur | Off the market | Branch record |
-| Chad Henne, Jeremy Cain, Maurice Jones-Drew, C.J. Wilson, Alan Ball, Brent Grimes; Allen Reisner, Kevin Rutland | Jacksonville Jaguars (branch) | QB, DT, RB, DE, CB, CB; TE, CB | Contracts expired at the 4 p.m. league-year opening, March 11; Reisner and Rutland were not tendered | Not generated candidates (Jacksonville's register owns them); all eight are unrestricted free agents from 4 p.m. Grimes is unplaced (method section 3) | Branch record, [March 11 league-year transactions](../../00_Team_Operations/Free_Agency/signings.md). Marks and Monroe re-signed with Jacksonville in the March 2014 replay ([Monroe, Marks and Verner agreements](../../00_Team_Operations/Free_Agency/march_2014_replay_log.md)); Henne's and Cain's negotiations are reopened. |
+| Daniel Te'o-Nesheim | Tampa Bay Buccaneers | DE | Signed by Jacksonville, March 18, in the replay ([Te’o-Nesheim agreement](../../Team_Operations/Free_Agency/teo_nesheim_negotiation_2014-03-18.md); three years) | Off the market | Branch record |
+| Alterraun Verner | Tennessee Titans | CB | Signed by Jacksonville, March 11, in the March 2014 replay ([Monroe, Marks and Verner agreements](../../Team_Operations/Free_Agency/march_2014_replay_log.md); four years); the Tampa Bay signing does not occur | Off the market | Branch record |
+| Aqib Talib | New England Patriots | CB | Signed by Jacksonville, March 11, in the March 2014 replay ([Talib and Tate decisions](../../Team_Operations/Free_Agency/march_2014_replay_log.md); five years); the Denver signing does not occur | Off the market | Branch record |
+| Chad Henne, Jeremy Cain, Maurice Jones-Drew, C.J. Wilson, Alan Ball, Brent Grimes; Allen Reisner, Kevin Rutland | Jacksonville Jaguars (branch) | QB, DT, RB, DE, CB, CB; TE, CB | Contracts expired at the 4 p.m. league-year opening, March 11; Reisner and Rutland were not tendered | Not generated candidates (Jacksonville's register owns them); all eight are unrestricted free agents from 4 p.m. Grimes is unplaced (method section 3) | Branch record, [March 11 league-year transactions](../../Team_Operations/Free_Agency/signings.md). Marks and Monroe re-signed with Jacksonville in the March 2014 replay ([Monroe, Marks and Verner agreements](../../Team_Operations/Free_Agency/march_2014_replay_log.md)); Henne's and Cain's negotiations are reopened. |
 
 **Dated at or after 4 p.m., not yet applied:** the post-June 1 releases of Daryn Colledge (Arizona), Miles Austin (Dallas), LaMarr Woodley (Pittsburgh) and David Baas (New York Giants, single source), and Nick Folk's multiyear New York Jets deal, which may fall after 4 p.m. (he stays off the open market under his franchise tag). Each applies when a later turn passes it.
 
@@ -409,6 +409,6 @@ Rebuilt from the league database. Verified targets above remain authoritative. E
 The superseded 406-row raw list is replaced by these ID-linked candidates and the complete research inventory. Released-status observations are not exact dated releases; they remain research leads, not confirmed unsigned players.
 <!-- END GENERATED LEAGUE DATABASE -->
 
-**[Talib and Tate decisions](../../00_Team_Operations/Free_Agency/march_2014_replay_log.md) (March 12, 2014):** Golden Tate (Seattle, WR) signed with Detroit, five years, $31,000,000, after declining Jacksonville's final replay offer. Off the market.
+**[Talib and Tate decisions](../../Team_Operations/Free_Agency/march_2014_replay_log.md) (March 12, 2014):** Golden Tate (Seattle, WR) signed with Detroit, five years, $31,000,000, after declining Jacksonville's final replay offer. Off the market.
 
-**[Nicks, Hawkins and Edelman decisions](../../00_Team_Operations/Free_Agency/march_2014_replay_log.md) (March 18, 2014):** Hakeem Nicks (Giants, WR) signed with Jacksonville March 14; Andrew Hawkins (Cincinnati, WR, RFA) signed Jacksonville's offer sheet March 13 and Cincinnati declined to match March 18; Julian Edelman (New England, WR) re-signed with New England, agreed March 15. All three are off the market.
+**[Nicks, Hawkins and Edelman decisions](../../Team_Operations/Free_Agency/march_2014_replay_log.md) (March 18, 2014):** Hakeem Nicks (Giants, WR) signed with Jacksonville March 14; Andrew Hawkins (Cincinnati, WR, RFA) signed Jacksonville's offer sheet March 13 and Cincinnati declined to match March 18; Julian Edelman (New England, WR) re-signed with New England, agreed March 15. All three are off the market.

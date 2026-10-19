@@ -64,7 +64,7 @@ def tracker_dir(root, year):
 def load_games(root, year, team):
     games = []
     for folder, kind in (("game_receipts", "regular"), ("postseason_receipts", "postseason")):
-        for path in sorted((SeasonPaths(year, root).stats / folder).glob("*.json")):
+        for path in sorted((SeasonPaths(year, root).data_for(SeasonPaths(year, root).stats) / folder).glob("*.json")):
             receipt = json.loads(path.read_text(encoding="utf-8"))
             if team not in receipt.get("team_stats", {}):
                 continue
@@ -280,12 +280,15 @@ def depth_lines(root, year):
     data = json.loads(path.read_text(encoding="utf-8"))
     rows = [[pos, " / ".join(names) if names else "Open"] for pos, names in data["depth"].items()]
     note = data.get("effective") or data.get("as_of") or ""
-    return [f"From [{path.relative_to(root / 'career' / str(year)).as_posix()}](../../{path.relative_to(root / 'career' / str(year)).as_posix()}){', ' + note if note else ''}. Order is first listed first; Stone owns it.", "",
+    # The chart is a system file: its season-relative path is the same in the
+    # data area (2014 onward) as it was in the season folder.
+    rel = path.relative_to(paths.data if path.is_relative_to(paths.data) else paths.career).as_posix()
+    return [f"From [{rel}](../../{rel}){', ' + note if note else ''}. Order is first listed first; Stone owns it.", "",
             table(["Group", "Order"], rows)]
 
 
 def award_rows(root, year, team):
-    base = SeasonPaths(year, root).awards
+    base = SeasonPaths(year, root).awards_data
     rows = []
     results = base / "results.json"
     if results.exists():

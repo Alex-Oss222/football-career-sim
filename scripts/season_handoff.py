@@ -60,6 +60,9 @@ def reference_sources(root, year):
         'coach_development': [root/'career/coaching_profiles',
                               paths.record('closeouts/Exit_Interviews/Coaches')],
     }
+    # From 2014 a folder's system files (.json) sit in its data-area twin.
+    folders = {name: owners + [paths.data_for(f) for f in owners if paths.data_for(f) != f]
+               for name, owners in folders.items()}
     result = {}
     for name, owners in folders.items():
         result[name] = sorted(p.relative_to(root).as_posix() for folder in owners for p in folder.rglob('*')
@@ -73,7 +76,7 @@ def reference_sources(root, year):
                                 for p in (paths.record('draft/pick_ownership.json'),
                                           paths.record('draft/ownership_audit.md'))
                                 if p.is_file()]
-    opening = paths.career/'opening_handoff.json'
+    opening = paths.record('opening_handoff.json')
     if opening.is_file():
         inherited = json.loads(opening.read_text()).get('reference_inventory', {})
         # A still-owned incident or promised packet does not disappear at the
@@ -392,7 +395,8 @@ def review_opening(root, data):
     prior = json.loads(prior_path.read_text())
     data['opening_acceptance'] = {'season': data['next_season'],
                                  'review_sha256': opening_review_digest(data)}
-    target = SeasonPaths(data['next_season'], root).career/'opening_handoff.json'
+    target = SeasonPaths(data['next_season'], root).record('opening_handoff.json')
+    target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(data, indent=2)+'\n')
     prior['opening_accepted'] = data['opening_acceptance']
     prior_path.write_text(json.dumps(prior, indent=2)+'\n')
@@ -400,7 +404,7 @@ def review_opening(root, data):
 
 def repository_opening_errors(root, active_year):
     """An active successor needs a completed review; later football may evolve."""
-    path = SeasonPaths(active_year, root).career/'opening_handoff.json'
+    path = SeasonPaths(active_year, root).record('opening_handoff.json')
     if not path.is_file():
         # The initial 2013/2014 setup predates this process. Every later year
         # must pass it, including when an unfinished manifest was deleted.
@@ -426,7 +430,7 @@ def repository_opening_errors(root, active_year):
 
 def unplayed_opening_errors(paths):
     folders = (paths.receipts, paths.postseason_receipts,
-               paths.record('preseason/statistics'))
+               paths.data_for(paths.record('preseason/statistics')))
     return ['Successor already contains game receipts; reconcile before opening: '+str(folder)
             for folder in folders if any(folder.rglob('*.json'))]
 
@@ -531,7 +535,7 @@ def stage(root, data):
     if opening_assessments:
         handoff['opening_assessments'] = opening_assessments
         handoff['activation'] += '; complete the opening assessments from the linked finals before activation'
-    writes[folder/'opening_handoff.json'] = json.dumps(handoff,indent=2)+'\n'
+    writes[paths.record('opening_handoff.json')] = json.dumps(handoff,indent=2)+'\n'
     for path, content in writes.items():
         if path.exists() and path.read_text() != content:
             raise ValueError('Existing successor file differs; reconcile instead of overwriting: '+str(path.relative_to(root)))
@@ -550,7 +554,7 @@ def main():
     args = parser.parse_args()
     try:
         if args.action in ('check-opening', 'review-opening'):
-            path = SeasonPaths(args.season, ROOT).career/'opening_handoff.json'
+            path = SeasonPaths(args.season, ROOT).record('opening_handoff.json')
             data = json.loads(path.read_text())
             if data.get('next_season') != args.season:
                 raise ValueError('Opening manifest belongs to a different successor season')

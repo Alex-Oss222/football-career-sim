@@ -2,7 +2,7 @@
 
 [Alex Stone's profile](alex_stone_coaching_profile.md) | [Ownership review and job security](alex_stone_performance_review.md) | [GM dossier and career record](alex_stone_nfl_coach_sheet.md) | [Assistant assessments](staff_profiles.md) | [Writing template](profile_template.md)
 
-This folder separates Stone's user-defined coaching identity, the assessment of his performance, and his career record. The profile was revised October 1, 2026 to adopt the user's edited draft, tone guidance and separate offensive and defensive approaches, each with passing and running sections. Each performance assessment and career record retains its own dated coverage. The [current season state](../../state/05_Current_Season_State.md) supplies the career date, and the [staff record](../2014/00_Team_Operations/Staff/coaching_staff.md) owns current assignments. Revising the profile does not complete a practice, install a concept or change an appointment.
+This folder separates Stone's user-defined coaching identity, the assessment of his performance, and his career record. The profile was revised October 1, 2026 to adopt the user's edited draft, tone guidance and separate offensive and defensive approaches, each with passing and running sections. Each performance assessment and career record retains its own dated coverage. The [current season state](../../state/05_Current_Season_State.md) supplies the career date, and the [staff record](../2014/Team_Operations/Staff/coaching_staff.md) owns current assignments. Revising the profile does not complete a practice, install a concept or change an appointment.
 
 ## Each document's job
 

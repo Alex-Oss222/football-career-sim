@@ -123,8 +123,8 @@ Research tools only; the runtime never downloads anything. Each builder's artifa
 | `build_player_birth_dates.py SOURCE_DIR --checked-on DATE`; `import_2014_week1_birth_dates.py [--write]` | Birth-date registry | [birth dates](../library/2013_player_birth_dates.md) |
 | `build_2013_player_sheet_benchmarks.py SOURCE_DIR`; `complete_2013_player_sheets.py [--check]` | 2013 player-sheet references and sheets | [player-sheet research](../library/2013_player_sheet_research.md) |
 | `build_2013_honours_evidence.py SOURCE_DIR PACKAGE...` | `career/2013/awards/season_honours_evidence.json`; needs the frozen 2013 weekly packages from `.sim_cache`, so a fresh session cannot rerun it | [2013 awards](../career/2013/awards/README.md) |
-| `build_2014_compensatory_inputs.py` | `career/2014/03_Draft/compensatory/inputs.json` | [compensatory picks](../career/2014/03_Draft/compensatory/README.md) |
-| `build_hc_change_base_rates.py GAMES_CSV` | `library/data/2012_hc_change_base_rates.json` | [staff changes](../career/2014/01_Early_Offseason/staff_changes/README.md) |
+| `build_2014_compensatory_inputs.py` | `career/2014/03_Draft/compensatory/inputs.json` | [compensatory picks](../career/2014/Draft/compensatory/README.md) |
+| `build_hc_change_base_rates.py GAMES_CSV` | `library/data/2012_hc_change_base_rates.json` | [staff changes](../career/2014/Early_Offseason/staff_changes/README.md) |
 | `build_defense_2006_2013.py RAW_DIR OUT_DIR`; `write_defense_2006_2013_dictionary.py OUT_DIR` | 2006-2013 defensive datasets | [defensive data](../library/2006_2013_defense_data.md) |
 
 Specification and acceptance tools: `pre_build_specification.py [--check]` and `fourth_down_specification.py [--check]` print or verify the pinned digests of the frozen 2014.6 specifications; `acceptance_2014_6.py --block BLOCK ...` and `seed_sweep.py [--block BLOCK] ...` run the committed acceptance and seed sweeps; `release_preconditions_2014_6.py [--season YEAR] [--week N] [--journal LISTING.json] [--release] [--json]` checks the 2014.6 release preconditions read-only. `league_base_2010_2014.py` and `player_state_study.py` are modules used by the builders, not commands.

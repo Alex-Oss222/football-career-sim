@@ -323,7 +323,7 @@ def render(model, public, _previous=None):
     w("## 9. The 2014 public table")
     w("")
     cov = public["coverage"]
-    w("Rows for every player in the [branch identity table](../career/2014/League/personnel/branch_identity.json), "
+    w("Rows for every player in the [branch identity table](../data/2014/League/personnel/branch_identity.json), "
       "keyed by gsis id, with no club field: record family, basis, m_b, m_u, P = [Pbb, Pbu, Puu], the honours lift, "
       "the age on September 1, 2014, the applied aging curve, class and real selection slot, and the 2010-2012 source "
       "rows. Bases: %s." % ", ".join("%s %d" % kv for kv in sorted(cov.items())))

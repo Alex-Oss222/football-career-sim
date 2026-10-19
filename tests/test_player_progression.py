@@ -47,7 +47,7 @@ class PlayerProgressionTests(unittest.TestCase):
         data = json.loads(
             (
                 root
-                / 'career/2014/00_Team_Operations/Player_Development'
+                / 'data/2014/Team_Operations/Player_Development'
                 / "kirk_cousins_progression_context.json"
             ).read_text(encoding="utf-8")
         )

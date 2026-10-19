@@ -68,6 +68,8 @@ GAME_EVENT = re.compile(r"^\d{4}-(week\d{2}|preseason-\d{2})-")
 
 def _paused_records(paths):
     folders = [paths.regular_season, paths.postseason, paths.preseason_games_dir]
+    # From 2014 the paused records sit in the data area (rebuild step 2b).
+    folders += [paths.data_for(f) for f in folders if paths.data_for(f) != f]
     seen = set()
     for folder in folders:
         if not folder.is_dir():
@@ -122,15 +124,15 @@ def _record_ids(node):
 
 def recorded_events(paths):
     """(event ids, findings): the committed result records of the season's
-    non-game events. The owners (career/YEAR/**/*results*.json: the league
-    awards' results.json, league_year_results.json, futures_results.json and
-    the staff_changes search and carousel results) are discovered, not
-    listed, outside the game receipts and any .sim_cache."""
+    non-game events. The owners (data/YEAR/**/*results*.json from 2014,
+    career/YEAR/** before: the league awards' results.json,
+    league_year_results.json, futures_results.json and the staff_changes
+    search and carousel results) are discovered, not listed, outside the game
+    receipts and any .sim_cache."""
     receipts = [paths.receipts, paths.postseason_receipts, paths.preseason_receipts]
     events, findings = set(), []
-    if not paths.career.is_dir():
-        return events, findings
-    for path in sorted(paths.career.rglob("*results*.json")):
+    bases = [b for b in dict.fromkeys((paths.career, paths.data)) if b.is_dir()]
+    for path in sorted(p for base in bases for p in base.rglob("*results*.json")):
         if {".sim_cache", "game_receipts"} & set(path.parts) or any(f in path.parents for f in receipts):
             continue
         try:
@@ -236,7 +238,7 @@ def frozen_week_inputs(paths, week):
     package = paths.cache(week, "inputs")
     if package.exists():
         found.append(package.relative_to(paths.root).as_posix())
-    folder = paths.week_folder(week)
+    folder = paths.week_data(week)
     for name in ("call_sheet.json", "conditions.json"):
         if (folder / name).exists():
             found.append((folder / name).relative_to(paths.root).as_posix())

@@ -62,7 +62,7 @@ class CallSheetMessageTests(unittest.TestCase):
             code = build_week_inputs.main()
         self.assertEqual(code, 1)
         self.assertIn("No Jacksonville call sheet for Week 1: Stone's weekly plan must be frozen as "
-                      "career/2014/05_Regular_Season/Games/Week_01/call_sheet.json", out.getvalue())
+                      "data/2014/Regular_Season/Games/Week_01/call_sheet.json", out.getvalue())
 
 
 class DecisionQueueGateTests(unittest.TestCase):

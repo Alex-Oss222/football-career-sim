@@ -3,7 +3,7 @@
 
   python scripts/research/build_2014_branch_identity.py [--sources DIR] [--week N] [--check]
 
-Writes career/2014/League/personnel/branch_identity.json. Data only: nothing in runtime/
+Writes data/2014/League/personnel/branch_identity.json. Data only: nothing in runtime/
 reads it until batch B7. An identity join is not an evaluation; the table holds no
 statistic, grade or state value.
 
@@ -63,7 +63,7 @@ for p in (str(HERE), str(ROOT)):
 import pre_build_specification  # noqa: E402
 import sources_2010_2014 as sources  # noqa: E402
 
-OUT = ROOT / "career/2014/League/personnel/branch_identity.json"
+OUT = ROOT / "data/2014/League/personnel/branch_identity.json"
 SCHEMA = "branch-identity-v1"
 SEASON = 2014
 ROSTER_FILES = (["roster_%d.csv" % s for s in (2010, 2011, 2012, 2013)]
@@ -72,6 +72,7 @@ GSIS = re.compile(r"^\d{2}-\d{7}$")
 CLUB_TAG = re.compile(r"\s*\([A-Z]{2,3}\)\s*$")
 
 # Sourced manual rows. Each names the branch record and the public identity source.
+# The labels keep the record's path when the table was built (before rebuild step 2b).
 MANUAL = {
     "00-0030957": {"display_name": "Casey Kreiter", "class": 2014, "draft": None,
                    "reason": "2014 undrafted signing; on no dated roster at Week 4 or earlier",

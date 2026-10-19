@@ -155,8 +155,7 @@ def sheet_path(season, week, root):
     """The committed call sheet's path, as build_week_inputs.call_sheet_path
     finds it (the regular-season folder, then the postseason folder)."""
     paths = SeasonPaths(season, root)
-    found = [p for p in (paths.week_folder(week) / "call_sheet.json",
-                         paths.week_folder(week, postseason=True) / "call_sheet.json") if p.exists()]
+    found = [p for p in (paths.call_sheet(week), paths.call_sheet(week, postseason=True)) if p.exists()]
     return found[0] if found else None
 
 
@@ -471,7 +470,7 @@ def _validation_errors(queue, root, mapping, events, master, job, prefix):
                 if held.get("kind") == "season_opening" and int(mapping["active_season"]) >= held["season"]:
                     say("holds opening the %d season, which is already active" % held["season"])
                 if (held.get("kind") == "season_stage"
-                        and (SeasonPaths(held["season"], root).career / "opening_handoff.json").exists()):
+                        and SeasonPaths(held["season"], root).record("opening_handoff.json").exists()):
                     say("holds staging the %d season, which is already staged" % held["season"])
         if item.get("class") == "weekly_game_plan" and status == "RESOLVED":
             for block in blocks:

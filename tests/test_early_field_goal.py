@@ -25,7 +25,7 @@ from runtime.profiles import PROFILE_2014_6
 from synthetic_games import SEED, sample_teams
 
 ROOT = Path(__file__).resolve().parents[1]
-WEEK_3 = ROOT / ("career/2014/05_Regular_Season/Statistics/records/game_receipts/"
+WEEK_3 = ROOT / ("data/2014/Regular_Season/Statistics/records/game_receipts/"
                  "week_03_indianapolis_colts_at_jacksonville_jaguars.json")
 MODEL = BASE_2010_2014W4.field_position()
 T = MODEL.T

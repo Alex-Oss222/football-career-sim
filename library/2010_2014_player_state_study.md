@@ -241,7 +241,7 @@ In real data a role change partly reflects coaches' information about talent, no
 
 ## 9. The 2014 public table
 
-Rows for every player in the [branch identity table](../career/2014/League/personnel/branch_identity.json), keyed by gsis id, with no club field: record family, basis, m_b, m_u, P = [Pbb, Pbu, Puu], the honours lift, the age on September 1, 2014, the applied aging curve, class and real selection slot, and the 2010-2012 source rows. Bases: draft 337, no_state 360, population 19, record 909, undrafted 213.
+Rows for every player in the [branch identity table](../data/2014/League/personnel/branch_identity.json), keyed by gsis id, with no club field: record family, basis, m_b, m_u, P = [Pbb, Pbu, Puu], the honours lift, the age on September 1, 2014, the applied aging curve, class and real selection slot, and the 2010-2012 source rows. Bases: draft 337, no_state 360, population 19, record 909, undrafted 213.
 
 - record: carried from his own 2010-2012 lines, with the applied aging curve over the forecast horizon; draft or undrafted: the starting estimate for his class (his own class left out) by the family's rookie rule; population: a veteran entering before 2010 with no line, or a rookie of a family with fewer than 30 rookie lines, N(0, diag(sb2, su2)); no_state: offensive linemen, long snappers and players with no family.
 - The table is append-only for later entrants; once batch B7 binds the season, an edit to an existing row is refused.

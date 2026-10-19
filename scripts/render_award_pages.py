@@ -32,8 +32,15 @@ def award_cards(award, shortlist, winner_index):
 
 
 def _relative_link(repository_path):
-    """A link from career/YEAR/05_Regular_Season/Awards/README.md to a repository path."""
+    """A link from career/YEAR/Regular_Season/Awards/README.md to a repository path."""
     return '../../../../' + repository_path
+
+
+def _methodology_link(season):
+    """The awards method beside the README (2013), or in the data area (2014 onward)."""
+    if season < 2014:
+        return 'methodology.json'
+    return _relative_link(f'data/{season}/Regular_Season/Awards/methodology.json')
 
 
 def render_pages(season, results, method=None):
@@ -67,11 +74,11 @@ def render_pages(season, results, method=None):
     if method and method.get('frozen'):
         frozen = method['frozen']
         index += ['', '## Methodology', '',
-                  f"Frozen {frozen['clock']} ({frozen['date']}): [methodology.json](methodology.json). "
+                  f"Frozen {frozen['clock']} ({frozen['date']}): [methodology.json]({_methodology_link(season)}). "
                   f"{frozen['basis']} It mirrors [{frozen['mirrors']}]({_relative_link(frozen['mirrors'])}). "
                   + (method.get('month_rule') or '')]
     index += ['', '## Season honours', '',
-              'Season awards and the Pro Bowl use their own dates and selection processes. Follow [postseason and Pro Bowl]('+('../../06_Postseason/README.md' if season >= 2014 else '../../postseason/README.md')+').', '',
+              'Season awards and the Pro Bowl use their own dates and selection processes. Follow [postseason and Pro Bowl]('+('../../Postseason/README.md' if season >= 2014 else '../../postseason/README.md')+').', '',
               ('This season’s methodology and monthly coverage were frozen from the actual schedule before the first draw (see Methodology above). Prior-year winners and monthly windows do not carry forward.'
                if method and method.get('frozen') else
                'Before the first draw, freeze this season’s methodology and monthly coverage from the actual schedule. Prior-year winners and monthly windows do not carry forward.'), '']

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render career/2014/draft/draft_order.md from closed receipts (runtime.draft_order).
+"""Render the 2014 draft order page (career/2014/Draft/draft_order.md) from closed receipts (runtime.draft_order).
 
   python scripts/render_draft_order.py [--check]
 """
@@ -40,7 +40,7 @@ def render_source():
     comp = register["compensatory"]
     counts, awards = None, None
     if comp["status"] == "announced":
-        awards = json.loads((OUT.parent / comp["awards"]).read_text(encoding="utf-8"))
+        awards = json.loads((SeasonPaths(2014, ROOT).data_for(OUT.parent) / comp["awards"]).read_text(encoding="utf-8"))
         counts = comp["round_counts"]
         if awards["round_counts"] != counts or len(awards["picks"]) != 32:
             raise ValueError("compensatory register and awards disagree")
@@ -144,10 +144,10 @@ def render_source():
 def render():
     from runtime.season_layout import rebase_markdown
     text = rebase_markdown(render_source(), 'career/2014/draft/draft_order.md', OUT.relative_to(ROOT))
-    trade = 'career/2014/00_Team_Operations/Trades/completed_trades/'
+    trade = 'career/2014/Team_Operations/Trades/completed_trades/'
     sources = {
         80: ('Corrected Cousins trade', 'career/2013/trades/trades.md'),
-        81: ('Ownership audit', 'career/2014/03_Draft/ownership_audit.md'),
+        81: ('Ownership audit', 'career/2014/Draft/ownership_audit.md'),
         99: ('March 20 Arizona trade', trade+'nwaneri_to_arizona_2014-03-20.md'),
         105: ('March 31 Washington pick trade', trade+'colts_picks_to_washington_2014-03-31.md'),
         106: ('April 7 Allen trade', trade+'allen_to_arizona_2014-04-07.md'),

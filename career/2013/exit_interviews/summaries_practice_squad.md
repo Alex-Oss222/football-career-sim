@@ -98,7 +98,7 @@ Plan: written evaluations from Oden and from special teams set the focus. Any cl
 
 Follow-ups: Oden, written evaluation; special teams (Stone until the coordinator job is filled), special-teams evaluation; Caldwell's office, the reserve/future decision.
 
-Evidence: career/2013/roster.md:156; career/2014/finances/player_contracts/contract_status.md:116, 118, 128; career/2013/offseason/initial_roster.md:26, 106; career/2013/coaching_staff.md:443; [January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md) ([January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md), Lowry left for Atlanta on January 12, 2014; coordinator job vacant); career/2013/preseason/final_roster_cuts.md:11, 17.
+Evidence: career/2013/roster.md:156; career/2014/finances/player_contracts/contract_status.md:116, 118, 128; career/2013/offseason/initial_roster.md:26, 106; career/2013/coaching_staff.md:443; [January coaching decisions](../../2014/Early_Offseason/staff_changes/timeline.md) ([January coaching decisions](../../2014/Early_Offseason/staff_changes/timeline.md), Lowry left for Atlanta on January 12, 2014; coordinator job vacant); career/2013/preseason/final_roster_cuts.md:11, 17.
 
 ### Antwon Blake, S
 

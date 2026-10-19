@@ -32,7 +32,7 @@ For the next work, retain the [dated source, responsible coach and next test](..
 | Performance staff | What does documented physical work establish about the assigned workload? Is there evidence of fatigue, or only a technique or familiarity problem? |
 | Medical staff | What participation is permitted? An independent restriction limits the opportunity; it is not an effort judgment. |
 
-Use the actual names and duties for that season. Attribute recorded judgments and label staff-analysis reconstruction when interpreting evidence without an attributed statement. Never fill three perspectives by inventing a meeting, consensus, disagreement or Stone's preference. The [2014 scheme questions](../../../career/2014/04_Training_Camp_and_Preseason/Training_Camp/staff_plan.md#what-the-active-playbooks-ask-of-the-players) illustrate this method with that year's active books and staff.
+Use the actual names and duties for that season. Attribute recorded judgments and label staff-analysis reconstruction when interpreting evidence without an attributed statement. Never fill three perspectives by inventing a meeting, consensus, disagreement or Stone's preference. The [2014 scheme questions](../../../career/2014/Training_Camp_and_Preseason/Training_Camp/staff_plan.md#what-the-active-playbooks-ask-of-the-players) illustrate this method with that year's active books and staff.
 
 ## In a preseason game review
 

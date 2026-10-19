@@ -1,6 +1,6 @@
 # Bryan Anger, P: exit interview
 
-**Date:** Tuesday January 14, 2014. **Present:** Alex Stone. Alan Lowry, the special teams coordinator who directed the kicking game in 2013, left on January 12 to become Atlanta's head coach and was not present ([January coaching decisions](../../../2014/01_Early_Offseason/staff_changes/timeline.md)); the coordinator job is vacant, and Stone directs the kicking game until it is filled.
+**Date:** Tuesday January 14, 2014. **Present:** Alex Stone. Alan Lowry, the special teams coordinator who directed the kicking game in 2013, left on January 12 to become Atlanta's head coach and was not present ([January coaching decisions](../../../2014/Early_Offseason/staff_changes/timeline.md)); the coordinator job is vacant, and Stone directs the kicking game until it is filled.
 **Status going in:** Punter all season; the specialists are Scobee, Anger and Cain. Dressed for all 16 regular-season games and both playoff games. Active 53; available, no communicated restriction; his exit physical is with the medical staff today, and no finding from it is recorded here. Contract: 2012 third-round four-year rookie contract, final year 2015; under contract; 1 accrued season, with 2013 accruing in the branch (contract status register: Confirmed). Age 25 (born October 6, 1988).
 
 ## The season in the record
@@ -104,4 +104,4 @@ All voluntary. Jacksonville's 2014 offseason program may begin no earlier than A
 - `career/2013/exit_interviews/core/josh_scobee.md` lines 54, 78, 84
 - `career/2013/offseason/the_prowl_program_identity.md` ("Good. Better. Best.", "Tell the Truth Quickly", "Confidential Support Is Not Personnel Scouting"); `career/2013/offseason/player_onboarding_and_development_framework.md` section 2; `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 7 and 10
 - `career/2014/calendar.md` line 31
-- [January coaching decisions](../../../2014/01_Early_Offseason/staff_changes/timeline.md); `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
+- [January coaching decisions](../../../2014/Early_Offseason/staff_changes/timeline.md); `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)

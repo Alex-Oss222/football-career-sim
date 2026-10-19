@@ -12,6 +12,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from runtime.season_layout import repository_relative
+from runtime.seasons import SeasonPaths
 INPUT = Path('career/finances/supporting_records/financial_inputs.json')
 OUTPUT = Path('career/finances/salary_cap/cap_tracker.md')
 DETAILS = Path('career/finances/player_contracts/contract_details.md')
@@ -378,7 +379,7 @@ def render_details(d,years):
 
 
 def render_organization(data, years, root):
-    staff = root / 'career/2014/00_Team_Operations/Staff/coaching_staff.md'
+    staff = SeasonPaths(2014, root).record('coaching_staff.md')
     rows = []
     totals_by_year = {y: 0 for y in years}
     for cells in md_rows(staff.read_text()):

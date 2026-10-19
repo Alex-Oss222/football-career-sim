@@ -124,6 +124,43 @@ def _git(root, *args):
     return p.returncode, p.stdout.strip()
 
 
+def _pure_move_source(root, commit, rel):
+    """The earlier path of ``rel`` when ``commit`` only moved it (an exact,
+    100% rename), else None. Rebuild step 2b moved every 2014 call sheet and
+    receipt into the data area without changing a byte; a pure move neither
+    freezes a sheet nor closes a receipt."""
+    out = _git(root, 'show', '-M', '--name-status', '--format=', commit)
+    for line in (out[1] if out and out[0] == 0 else '').splitlines():
+        parts = line.split('\t')
+        if len(parts) == 3 and parts[0] == 'R100' and parts[2] == rel:
+            return parts[1]
+    return None
+
+
+def _freeze_commit(root, rel):
+    """The last commit that changed the file, looking through pure moves."""
+    rev = 'HEAD'
+    while True:
+        out = _git(root, 'log', '-1', '--format=%H', rev, '--', rel)
+        commit = out[1] if out and out[0] == 0 else ''
+        source = _pure_move_source(root, commit, rel) if commit else None
+        if source is None:
+            return commit
+        rel, rev = source, commit + '^'
+
+
+def _added_commits(root, rel):
+    """The commits that added the file (newest first), looking through pure moves."""
+    rev = 'HEAD'
+    while True:
+        out = _git(root, 'log', '--diff-filter=A', '--format=%H', rev, '--', rel)
+        added = (out[1] if out and out[0] == 0 else '').split()
+        source = _pure_move_source(root, added[-1], rel) if added else None
+        if source is None:
+            return added
+        rel, rev = source, added[-1] + '^'
+
+
 def freeze_order_errors(root, sheet_rel, receipt_rel):
     """Kernel 2014.6 W1a: the call sheet's freeze commit (the last commit
     that changed it, with no uncommitted change since) precedes the commit
@@ -134,12 +171,12 @@ def freeze_order_errors(root, sheet_rel, receipt_rel):
     shallow = _git(root, 'rev-parse', '--is-shallow-repository')
     if shallow is None or shallow[0] != 0 or shallow[1] == 'true':
         return []
-    freeze = _git(root, 'log', '-1', '--format=%H', '--', sheet_rel)[1]
+    freeze = _freeze_commit(root, sheet_rel)
     if not freeze:
         return [f'{sheet_rel}: the call sheet is not committed, so its freeze cannot precede the closure']
     if _git(root, 'diff', '--quiet', 'HEAD', '--', sheet_rel)[0] != 0:
         return [f'{sheet_rel}: the call sheet changed after its freeze commit {freeze[:12]}']
-    added = _git(root, 'log', '--diff-filter=A', '--format=%H', '--', receipt_rel)[1].split()
+    added = _added_commits(root, receipt_rel)
     if not added:
         return []
     closure = added[-1]
@@ -161,7 +198,7 @@ def defensive_record_errors(root, paths, regular, playoff):
             if not receipt.get('defensive_calls'):
                 continue
             week = int(receipt['week'])
-            sheet_path = paths.week_folder(week, postseason=postseason) / 'call_sheet.json'
+            sheet_path = paths.call_sheet(week, postseason=postseason)
             data = json.loads(sheet_path.read_text()) if sheet_path.is_file() else None
             event = receipt.get('event_id')
             errors += [f'{event}: {problem}' for problem in receipt_record_errors(receipt, data)]
@@ -519,7 +556,9 @@ def validate(root=ROOT):
     # week build (WEEK_INPUTS: BLOCKED).
     try:
         from runtime.scoring_decisions import sheet_errors as decision_errors
-        for sheet_path in sorted((root/'career').glob('20*/**/call_sheet.json')):
+        # From 2014 the call sheets are system files in the data area.
+        for sheet_path in sorted([*(root/'career').glob('20*/**/call_sheet.json'),
+                                  *(root/'data').glob('20*/**/call_sheet.json')]):
             data = json.loads(sheet_path.read_text())
             # Batch B9F: a fourth-down block's named calls must be calls of the sheet.
             from runtime.fourth_down import sheet_call_names
@@ -574,13 +613,14 @@ def validate(root=ROOT):
                 return rows
             errors.extend(receipt_coverage_errors(regular, scheduled_2014))
             for name, expected in render_views(2014, 'Jacksonville Jaguars', regular).items():
-                require((paths.stats / name).is_file() and (paths.stats / name).read_text() == expected,
+                view = paths.file_in(paths.stats, name)
+                require(view.is_file() and view.read_text() == expected,
                         '2014 generated statistics missing or stale: ' + name)
             from scripts.render_standings import render as standings_view
             standings_path = paths.record('standings.md')
             require(standings_path.is_file() and standings_path.read_text() == standings_view(2014, regular),
                     '2014 standings missing or stale')
-            errors.extend(award_coverage_errors(regular, paths.awards))
+            errors.extend(award_coverage_errors(regular, paths.awards_data))
         # Preseason receipts live apart (SeasonPaths.preseason_receipts): never
         # in standings or the regular-season statbook, but their own views and
         # box scores must be current, and none may exist before release.
@@ -648,10 +688,11 @@ def validate(root=ROOT):
             if trade_source.exists():
                 errors.extend(check_trade_pages(root, year))
             folder = SeasonPaths(year, root).awards
+            data = SeasonPaths(year, root).awards_data
             if (folder/'week_01/README.md').exists():
-                results = json.loads((folder/'results.json').read_text()) if (folder/'results.json').exists() else {}
-                method = (json.loads((folder/'methodology.json').read_text())
-                          if results or (folder/'methodology.json').is_file() else None)
+                results = json.loads((data/'results.json').read_text()) if (data/'results.json').exists() else {}
+                method = (json.loads((data/'methodology.json').read_text())
+                          if results or (data/'methodology.json').is_file() else None)
                 for relative, text in award_pages(year, results, method).items():
                     path = folder/relative
                     previous = path.read_text() if path.is_file() else ''

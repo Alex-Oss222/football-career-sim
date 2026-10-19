@@ -6,7 +6,7 @@ Historical club dates control the calendar. Earlier proposed alternatives are no
 
 **Prepared:** September 29, 2026; source wording reconciled October 1, 2026. Research only. This document owns activity rules, not a current career checkpoint or a record of completed work.
 
-This supports the consolidated [NFL calendar](2014_nfl_calendar.md). The [club calendar](../career/2014/Calendar.md) owns Jacksonville's dates. The [decision package](../career/2014/02_Offseason_Training/staff_decisions.md) owns the recommendations built from those dates.
+This supports the consolidated [NFL calendar](2014_nfl_calendar.md). The [club calendar](../career/2014/Calendar.md) owns Jacksonville's dates. The [decision package](../career/2014/Offseason_Training/staff_decisions.md) owns the recommendations built from those dates.
 
 ## Findings that change the planning instructions
 

@@ -5,7 +5,7 @@
   python scripts/coaching_carousel_deferred.py --close    # one private draw; write results and page
   python scripts/coaching_carousel_deferred.py render     # rewrite the page section
 
-Method: career/2014/early_offseason/staff_changes/carousel_deferred_method.json, committed
+Method: data/2014/Early_Offseason/staff_changes/carousel_deferred_method.json, committed
 before the draw. It reuses Entry 75's inputs and request models
 (scripts/coaching_carousel.py). Every probability reads only the job, the coach's
 role and record, the clubs' records and the calendar.
@@ -28,8 +28,8 @@ from runtime.packets import canonical
 from scripts import coaching_carousel as cc
 
 DIR = cc.DIR
-METHOD = DIR / "carousel_deferred_method.json"
-RESULTS = DIR / "carousel_deferred_results.json"
+METHOD = cc.DATA / "carousel_deferred_method.json"
+RESULTS = cc.DATA / "carousel_deferred_results.json"
 PAGE = cc.PAGE
 END = date(2014, 2, 17)                     # the advance date
 OPENS_D1 = date(2014, 2, 3)                 # the day after Super Bowl XLVIII
@@ -177,7 +177,7 @@ def render():
     marker = "\n## February 2014: the deferred procedure"
     text = text.split(marker)[0].rstrip() + "\n"
     lines = [marker.strip(), "",
-             "Generated from `carousel_deferred_results.json` (%s). Method: [carousel_deferred_method.json](carousel_deferred_method.json); "
+             "Generated from `carousel_deferred_results.json` (%s). Method: [carousel_deferred_method.json](../../../../data/2014/Early_Offseason/staff_changes/carousel_deferred_method.json); "
              "2013 base rate: [2013_retained_club_coordinator_turnover.md](2013_retained_club_coordinator_turnover.md). "
              "Window: January 12 to February 17, 2014." % res["ledger_entry"], "",
              "### Super Bowl clubs", "", "| Club | Coach | Cell | Chance | Result | Hire |", "|---|---|---|--:|---|---|"]

@@ -453,7 +453,7 @@ def award_rows(root, years):
     """(record name, club, season, award text) for every award decided on record."""
     out = []
     for year in years:
-        folder = SeasonPaths(year, root).awards
+        folder = SeasonPaths(year, root).awards_data
         results = folder / "results.json"
         if results.exists():
             for entry in _load(results).values():

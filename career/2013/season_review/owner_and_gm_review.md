@@ -105,12 +105,12 @@ Stone's own standard asked for a functioning program and a candid quarterback ev
 - **Caldwell's deadline:** Stone's written recommendations before the February 17 tag window. They were delivered as `career/2014/early_offseason/stone_to_caldwell_2014_offseason_decisions.md`, dated February 2, 2014.
 - **Caldwell's first 2014 measures:** the scoring margin, and the quarterback's ball security and protection.
 - **Khan's request:** prepare the London week for Dallas (November 9, 2014, Wembley) on the 2013 Wembley plan.
-- **Closed gap:** the league's post-2013 head-coaching changes were resolved retroactively by [January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md) (see Entry 4 below).
+- **Closed gap:** the league's post-2013 head-coaching changes were resolved retroactively by [January coaching decisions](../../2014/Early_Offseason/staff_changes/timeline.md) (see Entry 4 below).
 
 ## Entry 4: Retroactive correction from the coaching carousel
 
-**Recorded:** September 28, 2026 ([January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md)).
+**Recorded:** September 28, 2026 ([January coaching decisions](../../2014/Early_Offseason/staff_changes/timeline.md)).
 
-[January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md) resolved the January 2014 coaching carousel after this meeting was first written. Two of its events fall before January 15: Alan Lowry left on January 12 to become Atlanta's head coach, and Frank Bush interviewed with Indianapolis on January 14 (the Colts' coordinator search could not close before January 16 under the carousel method, so his candidacy was open at the meeting; he was not hired). Stone's staff answer to Khan in Entry 2 is corrected to those facts. Nothing else in the meeting changes.
+[January coaching decisions](../../2014/Early_Offseason/staff_changes/timeline.md) resolved the January 2014 coaching carousel after this meeting was first written. Two of its events fall before January 15: Alan Lowry left on January 12 to become Atlanta's head coach, and Frank Bush interviewed with Indianapolis on January 14 (the Colts' coordinator search could not close before January 16 under the carousel method, so his candidacy was open at the meeting; he was not hired). Stone's staff answer to Khan in Entry 2 is corrected to those facts. Nothing else in the meeting changes.
 
 **The decision is re-checked, not re-made.** The Entry 1 freeze records that the staff completed the 2013 season, which remains true: Lowry left the day after Jacksonville's elimination. Losing a coordinator to another club's head-coach job is not a ground against retaining the head coach under any of the five frozen criteria, for this club or any other (label-swap check). Entry 3 stands: Stone is retained on his existing contract, with no change to his authority. The vacancy is Stone's to fill within Caldwell's staff budget (Document 3, rows 2 and 6).

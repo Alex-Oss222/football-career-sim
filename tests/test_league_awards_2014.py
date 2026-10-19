@@ -48,7 +48,7 @@ class Methodology2014Tests(unittest.TestCase):
 
     def test_missing_methodology_is_a_clear_error(self):
         with self.assertRaisesRegex(FileNotFoundError, "No 2015 awards methodology: freeze "
-                                    "career/2015/05_Regular_Season/Awards/methodology.json"):
+                                    "data/2015/Regular_Season/Awards/methodology.json"):
             league_awards.method(2015)
 
     def test_dry_run_reports_missing_receipts_instead_of_crashing(self):

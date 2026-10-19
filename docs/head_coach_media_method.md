@@ -85,7 +85,7 @@ Our application is to write original questions for the actual week, allow varied
 
 ### Earlier reference catalogue
 
-The October 1 research catalogue is retained below as supporting provenance. It is optional form research, not a mandatory question bank. Later-dated material never supplies facts or knowledge to the 2014 career. The earlier worked Chicago exchange was an editorial example, not a separate canonical conversation; the actual [Game 02 output](../career/2014/04_Training_Camp_and_Preseason/Preseason_Games/Game_02/output.md) remains its event owner. The present method supersedes the old copy-and-substitute workflow and example as authoring instructions.
+The October 1 research catalogue is retained below as supporting provenance. It is optional form research, not a mandatory question bank. Later-dated material never supplies facts or knowledge to the 2014 career. The earlier worked Chicago exchange was an editorial example, not a separate canonical conversation; the actual [Game 02 output](../career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_02/output.md) remains its event owner. The present method supersedes the old copy-and-substitute workflow and example as authoring instructions.
 
 | Coach | Club | Session | Date | Source |
 |---|---|---|---|---|

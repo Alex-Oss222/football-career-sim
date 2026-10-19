@@ -535,7 +535,7 @@ def _caller_parity_errors(job, root, mapping, prefix):
     for week in range(1, 22):
         for postseason in (False, True):
             try:
-                sheet = paths.week_folder(week, postseason) / "call_sheet.json"
+                sheet = paths.call_sheet(week, postseason)
             except ValueError as exc:
                 errors.append(prefix + "week %d: %s" % (week, exc))
                 continue

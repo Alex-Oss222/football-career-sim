@@ -68,50 +68,50 @@ LEGACY_TRAINING_FOLDERS = tuple(
     for phase in ('phases_one_and_two', 'rookie_minicamp', 'otas', 'mandatory_minicamp')
 ) + ('training_camp_and_preseason/training_camp/',)
 SEASON_MOVES = {
-    'team/roster/medical_history.md': '00_Team_Operations/Medical/medical_history.md',
-    'team/roster': '00_Team_Operations/Team/Roster',
-    'team/depth_chart': '00_Team_Operations/Team/Depth_Chart',
-    'team/player_cards': '00_Team_Operations/Team/Player_Cards',
-    'team/coaching_staff': '00_Team_Operations/Staff',
-    'team/player_development': '00_Team_Operations/Player_Development',
-    'team/film': '00_Team_Operations/Film',
-    'team/medical': '00_Team_Operations/Medical',
-    'medical': '00_Team_Operations/Medical',
-    'team': '00_Team_Operations/Team',
-    'trades': '00_Team_Operations/Trades',
-    'free_agency': '00_Team_Operations/Free_Agency',
-    'finances': '00_Team_Operations/Finances',
-    'early_offseason': '01_Early_Offseason',
-    'offseason_training/phase_one': '02_Offseason_Training/Phase_One',
-    'offseason_training/phase_two': '02_Offseason_Training/Phase_Two',
-    'offseason_training/phases_one_and_two': '02_Offseason_Training/Phase_Two',
-    'offseason_training/rookie_minicamp': '02_Offseason_Training/Rookie_Minicamp',
-    'offseason_training/otas': '02_Offseason_Training/OTAs',
-    'offseason_training/mandatory_minicamp': '02_Offseason_Training/Mandatory_Minicamp',
-    'offseason_training/coaching_methods': '02_Offseason_Training/Coaching_Methods',
-    'offseason_training': '02_Offseason_Training',
-    'draft': '03_Draft',
-    'training_camp_and_preseason/training_camp': '04_Training_Camp_and_Preseason/Training_Camp',
-    'training_camp_and_preseason/preseason_games': '04_Training_Camp_and_Preseason/Preseason_Games',
-    'training_camp_and_preseason/position_battles': '04_Training_Camp_and_Preseason/Position_Battles',
-    'training_camp_and_preseason/training_camp/player_assessments.md': '04_Training_Camp_and_Preseason/Training_Camp/training_report.md',
-    'training_camp_and_preseason/assessments/position_battles.md': '04_Training_Camp_and_Preseason/Training_Camp/training_report.md',
-    'training_camp_and_preseason/assessments': '04_Training_Camp_and_Preseason/Position_Battles',
-    'training_camp_and_preseason/roster_cuts': '04_Training_Camp_and_Preseason/Roster_Decisions',
-    'training_camp_and_preseason': '04_Training_Camp_and_Preseason',
-    'regular_season/games': '05_Regular_Season/Games',
-    'regular_season/schedule': '05_Regular_Season/Schedule',
-    'regular_season/statistics': '05_Regular_Season/Statistics',
-    'regular_season/awards': '05_Regular_Season/Awards',
-    'regular_season/league_results': '05_Regular_Season/League_Results',
-    'regular_season': '05_Regular_Season',
-    'postseason/games': '06_Postseason/Games',
-    'postseason/statistics': '06_Postseason/Statistics',
-    'postseason/awards': '06_Postseason/Awards',
-    'postseason/pro_bowl': '06_Postseason/Pro_Bowl',
-    'postseason': '06_Postseason',
-    'season_review/player_assessments': '07_Season_Review/Player_Assessments',
-    'season_review': '07_Season_Review',
+    'team/roster/medical_history.md': 'Team_Operations/Medical/medical_history.md',
+    'team/roster': 'Team_Operations/Team/Roster',
+    'team/depth_chart': 'Team_Operations/Team/Depth_Chart',
+    'team/player_cards': 'Team_Operations/Team/Player_Cards',
+    'team/coaching_staff': 'Team_Operations/Staff',
+    'team/player_development': 'Team_Operations/Player_Development',
+    'team/film': 'Team_Operations/Film',
+    'team/medical': 'Team_Operations/Medical',
+    'medical': 'Team_Operations/Medical',
+    'team': 'Team_Operations/Team',
+    'trades': 'Team_Operations/Trades',
+    'free_agency': 'Team_Operations/Free_Agency',
+    'finances': 'Team_Operations/Finances',
+    'early_offseason': 'Early_Offseason',
+    'offseason_training/phase_one': 'Offseason_Training/Phase_One',
+    'offseason_training/phase_two': 'Offseason_Training/Phase_Two',
+    'offseason_training/phases_one_and_two': 'Offseason_Training/Phase_Two',
+    'offseason_training/rookie_minicamp': 'Offseason_Training/Rookie_Minicamp',
+    'offseason_training/otas': 'Offseason_Training/OTAs',
+    'offseason_training/mandatory_minicamp': 'Offseason_Training/Mandatory_Minicamp',
+    'offseason_training/coaching_methods': 'Offseason_Training/Coaching_Methods',
+    'offseason_training': 'Offseason_Training',
+    'draft': 'Draft',
+    'training_camp_and_preseason/training_camp': 'Training_Camp_and_Preseason/Training_Camp',
+    'training_camp_and_preseason/preseason_games': 'Training_Camp_and_Preseason/Preseason_Games',
+    'training_camp_and_preseason/position_battles': 'Training_Camp_and_Preseason/Position_Battles',
+    'training_camp_and_preseason/training_camp/player_assessments.md': 'Training_Camp_and_Preseason/Training_Camp/training_report.md',
+    'training_camp_and_preseason/assessments/position_battles.md': 'Training_Camp_and_Preseason/Training_Camp/training_report.md',
+    'training_camp_and_preseason/assessments': 'Training_Camp_and_Preseason/Position_Battles',
+    'training_camp_and_preseason/roster_cuts': 'Training_Camp_and_Preseason/Roster_Decisions',
+    'training_camp_and_preseason': 'Training_Camp_and_Preseason',
+    'regular_season/games': 'Regular_Season/Games',
+    'regular_season/schedule': 'Regular_Season/Schedule',
+    'regular_season/statistics': 'Regular_Season/Statistics',
+    'regular_season/awards': 'Regular_Season/Awards',
+    'regular_season/league_results': 'Regular_Season/League_Results',
+    'regular_season': 'Regular_Season',
+    'postseason/games': 'Postseason/Games',
+    'postseason/statistics': 'Postseason/Statistics',
+    'postseason/awards': 'Postseason/Awards',
+    'postseason/pro_bowl': 'Postseason/Pro_Bowl',
+    'postseason': 'Postseason',
+    'season_review/player_assessments': 'Season_Review/Player_Assessments',
+    'season_review': 'Season_Review',
     'league': 'League',
     'supporting_records': 'Supporting_Records',
     'calendar.md': 'Calendar.md',
@@ -124,11 +124,11 @@ for _old_phase, _new_phase in (
     ('otas', 'OTAs'), ('mandatory_minicamp', 'Mandatory_Minicamp'),
 ):
     SEASON_MOVES[f'offseason_training/{_old_phase}/player_assessments.md'] = (
-        f'02_Offseason_Training/{_new_phase}/training_report.md')
+        f'Offseason_Training/{_new_phase}/training_report.md')
 TRAINING_PHASE_FOLDERS = tuple(
-    '02_Offseason_Training/%s/' % phase
+    'Offseason_Training/%s/' % phase
     for phase in ('Phase_One', 'Phase_Two', 'Rookie_Minicamp', 'OTAs', 'Mandatory_Minicamp')
-) + ('04_Training_Camp_and_Preseason/Training_Camp/',)
+) + ('Training_Camp_and_Preseason/Training_Camp/',)
 FINANCE_MOVES = {
     'career/finances/jaguars_cap.md': 'career/finances/salary_cap/cap_tracker.md',
     'career/finances/jaguars_contract_details.md': 'career/finances/player_contracts/contract_details.md',
@@ -138,6 +138,34 @@ FINANCE_MOVES = {
 REPOSITORY_ALIASES = {
     'foundation/06_Chronology_Game_Ledger_and_Handoff.md': 'foundation/06_Event_Records_and_Handoff.md',
 }
+# Rebuild step 2b (October 19, 2026): the season folders carry no numbers.
+# The numbered names stay accepted as aliases for frozen references.
+NUMBERED_FOLDERS = {
+    '00_Team_Operations': 'Team_Operations',
+    '01_Early_Offseason': 'Early_Offseason',
+    '02_Offseason_Training': 'Offseason_Training',
+    '03_Draft': 'Draft',
+    '04_Training_Camp_and_Preseason': 'Training_Camp_and_Preseason',
+    '05_Regular_Season': 'Regular_Season',
+    '06_Postseason': 'Postseason',
+    '07_Season_Review': 'Season_Review',
+}
+# From 2014 the files the system works from (stored facts, game files, call
+# sheets, receipts) live in the data area, data/YEAR/, at the same
+# season-relative path as the page folder they belong to. The season folders
+# under career/YEAR/ hold the pages to read, with their images.
+DATA_ROOT = 'data'
+SYSTEM_SUFFIXES = ('.json', '.csv', '.gz')
+
+
+def is_system_file(relative):
+    """A stored-fact or game file (.json, .csv, .gz) rather than a page or image."""
+    return PurePosixPath(str(relative)).suffix in SYSTEM_SUFFIXES
+
+
+def _unnumbered(value):
+    head, sep, rest = value.partition('/')
+    return NUMBERED_FOLDERS.get(head, head) + sep + rest
 
 
 def _within_season(relative):
@@ -169,10 +197,10 @@ def readable_relative(year, relative):
     value = _within_season(relative)
     if year < 2014:
         return value
-    value = _translate(value, SEASON_MOVES)
-    value = re.sub(r'^(04_Training_Camp_and_Preseason/Preseason_Games/)game_(\d{2})(?=/|$)',
+    value = _translate(_unnumbered(value), SEASON_MOVES)
+    value = re.sub(r'^(Training_Camp_and_Preseason/Preseason_Games/)game_(\d{2})(?=/|$)',
                    r'\1Game_\2', value)
-    value = re.sub(r'^(05_Regular_Season/Games/)week_(\d{2})', r'\1Week_\2', value)
+    value = re.sub(r'^(Regular_Season/Games/)week_(\d{2})', r'\1Week_\2', value)
     return value
 
 
@@ -181,6 +209,7 @@ def season_relative(year, relative):
     value = _within_season(relative)
     if year < 2014:
         return value
+    value = _unnumbered(value)
     if value.split('/')[0] in {p.split('/')[0] for p in SEASON_MOVES.values()}:
         return value
     if not _prior_readable_path(value) and not any(value == new or value.startswith(new + '/') for new in LEGACY_MOVES.values()):
@@ -218,6 +247,8 @@ def repository_relative(relative):
     if local in ('regular_season', 'regular_season/README.md', 'postseason', 'postseason/README.md', 'trades'):
         readable = True
     destination = readable_relative(year, local) if readable else season_relative(year, local)
+    if year >= 2014 and is_system_file(destination):
+        return f'{DATA_ROOT}/{year}/{destination}'
     return f'career/{year}/{destination}'
 
 
@@ -232,9 +263,9 @@ def rebase_markdown(text, source, target, aliases=None):
         resolved = posixpath.normpath(posixpath.join(posixpath.dirname(source), unquote(parts.path)))
         original = resolved
         fragment = parts.fragment
-        if re.match(r'^career/20\d\d/(?:training_camp_and_preseason/assessments/position_battles\.md|04_Training_Camp_and_Preseason/Training_Camp/position_review\.md)$', resolved):
+        if re.match(r'^career/20\d\d/(?:training_camp_and_preseason/assessments/position_battles\.md|(?:04_)?Training_Camp_and_Preseason/Training_Camp/position_review\.md)$', resolved):
             year = resolved.split('/')[1]
-            resolved = f'career/{year}/04_Training_Camp_and_Preseason/Training_Camp/training_report.md'
+            resolved = f'career/{year}/Training_Camp_and_Preseason/Training_Camp/training_report.md'
             fragment = 'personnel-questions-after-august-1'
         combined = re.match(r'^career/(20\d\d)/(?:offseason_training/phases_one_and_two|offseason/offseason_program)/(training_report|staff_plan|output|plan|player_assessments|standouts)\.md$', resolved)
         if combined and int(combined[1]) >= 2014:
@@ -243,11 +274,11 @@ def rebase_markdown(text, source, target, aliases=None):
                    'phase-one-learning-the-calls-in-the-room'}
             if fragment in one:
                 name = 'staff_plan.md' if combined[2] in ('staff_plan', 'plan') else 'training_report.md'
-                resolved = f'career/{combined[1]}/02_Offseason_Training/Phase_One/{name}'
+                resolved = f'career/{combined[1]}/Offseason_Training/Phase_One/{name}'
                 if fragment == 'phase-one-learning-the-calls-in-the-room':
                     fragment = 'learning-the-calls-in-the-room'
             elif fragment == 'phase-two-technique-and-job-connection':
-                resolved = f'career/{combined[1]}/02_Offseason_Training/Phase_Two/staff_plan.md'
+                resolved = f'career/{combined[1]}/Offseason_Training/Phase_Two/staff_plan.md'
                 fragment = 'three-weeks-of-field-teaching'
         seen = set()
         while resolved in (aliases or {}):
@@ -265,6 +296,15 @@ def rebase_markdown(text, source, target, aliases=None):
     return re.sub(r'\]\(([^\s)]+)\)', link, text)
 
 
+def season_link(year, relative):
+    """A link from the season folder's README to a season record: a page in
+    the season folder, or (from 2014) a system file in the data area."""
+    value = season_relative(year, relative)
+    if year >= 2014 and is_system_file(value):
+        return f'../../{DATA_ROOT}/{year}/{value}'
+    return value
+
+
 def opening_guides(year):
     """One successor guide, with links only to files the handoff actually carries."""
     links = [('Roster', 'roster.md'), ('Working depth', 'offseason/depth_chart_working.json'),
@@ -275,7 +315,7 @@ def opening_guides(year):
     lines = [f'# Jacksonville {year}', '', '[Calendar](Calendar.md) · [Career finances](../finances/README.md)', '',
              f'Opening records carried from {year-1} await reconciliation. No new-season participation, agreement or game is recorded.', '',
              '| Current record | Open |', '|---|---|']
-    lines += [f'| {title} | [{title}]({season_relative(year, path)}) |' for title, path in links]
+    lines += [f'| {title} | [{title}]({season_link(year, path)}) |' for title, path in links]
     lines += ['', 'The season proceeds through early offseason, offseason training, the draft, camp and preseason, the regular season, any postseason, and season review. Create each phase record when work belongs there; do not create empty reports or battle cards.', '',
-              '[Opening handoff](opening_handoff.json)', '']
+              f'[Opening handoff]({season_link(year, "opening_handoff.json")})', '']
     return {'README.md': '\n'.join(lines)}

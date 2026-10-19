@@ -3,9 +3,9 @@
 
   python scripts/render_preseason_stats.py --season YEAR
 
-Reads career/YEAR/04_Training_Camp_and_Preseason/Preseason_Games/statistics/records/game_receipts/ and
-writes `preseason_totals.json` and `preseason_stats.md` beside it under
-04_Training_Camp_and_Preseason/Preseason_Games/statistics/. Preseason statistics are aggregated with the
+Reads data/YEAR/Training_Camp_and_Preseason/Preseason_Games/statistics/records/game_receipts/ and
+writes `preseason_stats.md` under career/YEAR/Training_Camp_and_Preseason/Preseason_Games/statistics/
+and `preseason_totals.json` in its data-area twin. Preseason statistics are aggregated with the
 same runtime.statbook code as the regular season but never join the
 regular-season statbook, standings, awards or draft order, and no league
 ranking is drawn from them. Nothing is typed by hand: every number comes
@@ -113,9 +113,10 @@ def write_views(paths):
     receipts = load_receipts(paths.preseason_receipts)
     views = render_views(paths.year, receipts)
     folder = paths.preseason_games_dir / "statistics"
-    folder.mkdir(parents=True, exist_ok=True)
     for name, text in views.items():
-        (folder / name).write_text(text, encoding="utf-8")
+        target = paths.file_in(folder, name)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(text, encoding="utf-8")
     return views
 
 
@@ -126,7 +127,8 @@ def stale_views(paths):
         return []
     folder = paths.preseason_games_dir / "statistics"
     return [name for name, text in render_views(paths.year, receipts).items()
-            if not (folder / name).is_file() or (folder / name).read_text(encoding="utf-8") != text]
+            if not paths.file_in(folder, name).is_file()
+            or paths.file_in(folder, name).read_text(encoding="utf-8") != text]
 
 
 def main():

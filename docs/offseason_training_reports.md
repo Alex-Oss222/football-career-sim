@@ -80,10 +80,10 @@ The verification pass separately retrieved the original agreement and the Packer
 
 ## Examples now in the repository
 
-- [Phase One](../career/2014/02_Offseason_Training/Phase_One/training_report.md): inconsistent Boot Flood and protection cues are resolved in the room.
-- [Phase Two](../career/2014/02_Offseason_Training/Phase_Two/training_report.md): those answers are checked in movement; the bunch assignment is taught before facing receivers.
-- [Rookie minicamp](../career/2014/02_Offseason_Training/Rookie_Minicamp/training_report.md): split teaching, Shaw's launch point, Linsley's snap-to-set timing, shared fit instruction and the next work for the newcomers.
-- [OTAs](../career/2014/02_Offseason_Training/OTAs/training_report.md): the Poyer-Moore exchange, the late overload, Y-Cross spacing and later checks against the other unit.
-- [Mandatory minicamp](../career/2014/02_Offseason_Training/Mandatory_Minicamp/training_report.md): independent protection calls, the relief pairing, the linebacker/back matchup and the actual summer instructions.
+- [Phase One](../career/2014/Offseason_Training/Phase_One/training_report.md): inconsistent Boot Flood and protection cues are resolved in the room.
+- [Phase Two](../career/2014/Offseason_Training/Phase_Two/training_report.md): those answers are checked in movement; the bunch assignment is taught before facing receivers.
+- [Rookie minicamp](../career/2014/Offseason_Training/Rookie_Minicamp/training_report.md): split teaching, Shaw's launch point, Linsley's snap-to-set timing, shared fit instruction and the next work for the newcomers.
+- [OTAs](../career/2014/Offseason_Training/OTAs/training_report.md): the Poyer-Moore exchange, the late overload, Y-Cross spacing and later checks against the other unit.
+- [Mandatory minicamp](../career/2014/Offseason_Training/Mandatory_Minicamp/training_report.md): independent protection calls, the relief pairing, the linebacker/back matchup and the actual summer instructions.
 
 Separate phase assessment summaries were removed after checking their unique findings against the reports. Repository validation checks links and continuity; football review must still check that the narrative does not claim more than the recorded work. The [camp research](camp_and_preseason_reports.md#what-the-research-contributes) retains Belichick's August 8, 2014 explanation of why practice and preseason games answer different questions; neither body of evidence automatically outranks the other.

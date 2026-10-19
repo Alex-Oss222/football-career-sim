@@ -843,12 +843,13 @@ def main():
     args = parser.parse_args()
 
     from runtime.seasons import SeasonPaths
-    stats_dir = SeasonPaths(args.year, ROOT).stats
-    receipts = load_receipts(stats_dir / "game_receipts")
+    paths = SeasonPaths(args.year, ROOT)
+    receipts = load_receipts(paths.receipts)
     views = render_views(args.year, args.team, receipts)
-    stats_dir.mkdir(parents=True, exist_ok=True)
     for name, text in views.items():
-        (stats_dir / name).write_text(text, encoding="utf-8")
+        target = paths.file_in(paths.stats, name)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(text, encoding="utf-8")
     print("rendered %d stat views from %d receipts" % (len(views), len(receipts)))
     if args.year >= 2014:
         from scripts.update_player_cards import refresh_cards

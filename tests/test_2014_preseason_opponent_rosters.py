@@ -21,7 +21,7 @@ from scripts.check_week_input_exclusivity import (
 ROOT = Path(__file__).resolve().parents[1]
 LIBRARY = ROOT / "library/data/2014_preseason_opponent_rosters.json"
 RECORD = ROOT / "library/2014_preseason_opponent_rosters.md"
-ROSTER = ROOT / "career/2014/00_Team_Operations/Team/Roster/roster.md"
+ROSTER = ROOT / "career/2014/Team_Operations/Team/Roster/roster.md"
 REGISTRY = ROOT / "library/data/player_birth_dates.json"
 TAMPA = "Tampa Bay Buccaneers"
 CHICAGO = "Chicago Bears"

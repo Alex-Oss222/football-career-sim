@@ -124,7 +124,7 @@ def rotation_blocks(plan, data, source):
 
 
 def depth_chart_path(paths, game):
-    frozen = paths.preseason_folder(game) / "depth_chart.json"
+    frozen = paths.preseason_data(game) / "depth_chart.json"
     if frozen.exists():
         return frozen
     if paths.depth_chart.exists():
@@ -164,7 +164,7 @@ def jacksonville_input(paths, game, call_sheet, receipts, anchors=AVERAGE_ANCHOR
     active = [p["player_id"] for p in roster if p["available"] and p["player_id"] not in inactives]
     data = {"team_id": PROTAGONIST, "active_players": active, **anchors,
             "roster": roster, "offensive_call_sheet": list(call_sheet)}
-    plan_path = paths.preseason_folder(game["game"]) / "rotation.json"
+    plan_path = paths.preseason_data(game["game"]) / "rotation.json"
     if plan_path.exists():
         plan = json.loads(plan_path.read_text(encoding="utf-8"))
         if not isinstance(plan, dict) or "rotation_plan" not in plan:
@@ -175,7 +175,7 @@ def jacksonville_input(paths, game, call_sheet, receipts, anchors=AVERAGE_ANCHOR
 
 def opponent_input(paths, game, receipts, anchors=AVERAGE_ANCHORS):
     team = game["away"] if game["home"] == PROTAGONIST else game["home"]
-    path = paths.preseason_folder(game["game"]) / "opponent_roster.json"
+    path = paths.preseason_data(game["game"]) / "opponent_roster.json"
     if not path.exists():
         raise ValueError("No opponent roster for preseason game %d: %s" % (game["game"], path.relative_to(paths.root)))
     club = json.loads(path.read_text(encoding="utf-8"))
@@ -197,7 +197,7 @@ def build_package(paths, number, receipts, anchors=AVERAGE_ANCHORS, *, with_ages
     game = paths.preseason_game(number)
     if PROTAGONIST not in (game["away"], game["home"]):
         raise ValueError("preseason fixtures are Jacksonville's games")
-    sheet_path = paths.preseason_folder(number) / "call_sheet.json"
+    sheet_path = paths.preseason_data(number) / "call_sheet.json"
     if not sheet_path.exists():
         raise ValueError("No Jacksonville call sheet for preseason game %d: freeze Stone's plan as %s"
                          % (number, sheet_path.relative_to(paths.root)))

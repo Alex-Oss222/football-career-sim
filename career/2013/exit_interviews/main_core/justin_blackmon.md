@@ -246,7 +246,7 @@ All of it is voluntary. Blackmon is under contract through 2015; Jacksonville's 
 - `career/2013/postseason/week_18_jacksonville_at_kansas_city/output.md` lines 69, 131
 - `career/2013/postseason/week_19_jacksonville_at_tennessee/output.md` lines 136, 187, 343
 - `career/2013/coaching_staff.md` lines 239-255 (Drake's responsibilities; reports to Tice)
-- [January coaching decisions](../../../2014/01_Early_Offseason/staff_changes/timeline.md); `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
+- [January coaching decisions](../../../2014/Early_Offseason/staff_changes/timeline.md); `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
 - `career/2013/offseason/the_prowl_program_identity.md` ("Good. Better. Best.", "What The Prowl Expects" including "Earn Responsibility" lines 198-214, "Discipline Approach" including "Stars and Veterans" and "Public Discipline", "Confidential Support Is Not Personnel Scouting")
 - `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 7 and 10
 - `career/2013/offseason/player_onboarding_and_development_framework.md` sections 1-2 (Day 2 call; Good/Better/Best scale; evidence-driven usage)

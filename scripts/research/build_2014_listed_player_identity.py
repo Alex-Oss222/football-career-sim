@@ -71,10 +71,10 @@ THROUGH_WEEK = 4
 # nflverse weekly-roster club codes that differ from the repository's codes.
 CODE_FIX = {"ARZ": "ARI", "BLT": "BAL", "CLV": "CLE", "HST": "HOU", "SL": "STL"}
 KNOWN_ID_SOURCES = (
-    "career/2014/League/personnel/branch_identity.json",
+    "data/2014/League/personnel/branch_identity.json",
     "library/data/player_birth_dates.json",
     "library/data/2014_week1_rosters_branch_adjusted.json",
-    "career/2014/League/personnel/league_players.json",
+    "data/2014/League/personnel/league_players.json",
 )
 
 
