@@ -27,7 +27,7 @@ def _link(page, target, text):
 
 
 def _player_link(ctx, page, name):
-    target = ctx.paths.career / "Team_Operations/Team/Player_Cards" / (people.slugify(name) + ".md")
+    target = ctx.paths.record("player_profiles") / (people.slugify(name) + ".md")
     return _link(page, target, name) if target.is_file() else name
 
 
@@ -163,7 +163,7 @@ def _medical_table(ctx, page, roster, rows):
 
 
 def medical_page(ctx):
-    page = ctx.paths.career / "Team_Operations/Medical/current_injury_report.md"
+    page = ctx.paths.record("medical/current_injury_report.md")
     _, _, _, _, roster = _facts(ctx)
     active, reserve = _active_medical(roster), _reserve_medical(roster)
     lines = ["# Medical and availability", "", "As of %s. Medical staff control participation and return clearance." %
@@ -180,7 +180,7 @@ def medical_page(ctx):
 
 
 def statistics_page(ctx):
-    page = ctx.paths.career / "Regular_Season/Statistics/README.md"
+    page = ctx.paths.record("statbook.md")
     book, team, games, standings, _ = _facts(ctx)
     first, points, performance = _summary(team, games, standings)
     lines = ["# %d regular-season statistics" % ctx.season, "",
@@ -210,7 +210,7 @@ def statistics_page(ctx):
              ("League player statistics", "records/league_player_stats.md"),
              ("Play-call statistics", "records/play_call_stats.md"))
     lines += [" · ".join(_link(page, page.parent / p, label) for label, p in dests), "",
-              _link(page, ctx.paths.career / "Regular_Season/standings.md", "Standings") +
+              _link(page, ctx.paths.record("standings.md"), "Standings") +
               " · " + _link(page, ctx.paths.desk, "Head coach's desk"), ""]
     return "\n".join(lines)
 
@@ -219,9 +219,9 @@ def dashboard_sections(ctx):
     page = ctx.paths.desk
     _, team, games, standings, roster = _facts(ctx)
     first, points, efficiency = _summary(team, games, standings)
-    stats = ctx.paths.career / "Regular_Season/Statistics/README.md"
-    medical = ctx.paths.career / "Team_Operations/Medical/current_injury_report.md"
-    standing = ctx.paths.career / "Regular_Season/standings.md"
+    stats = ctx.paths.record("statbook.md")
+    medical = ctx.paths.record("medical/current_injury_report.md")
+    standing = ctx.paths.record("standings.md")
     lines = ["## Season at a glance", "", "**%s.** %s. %s." % (first, points, efficiency),
              "", _link(page, stats, "Season statistics") + " · " + _link(page, standing, "Division standings"),
              "", "## Player production", "",
