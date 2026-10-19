@@ -1,0 +1,290 @@
+{
+ "schema_version": 1,
+ "name": "Alex Stone",
+ "party": "stone",
+ "full_name": "Alex-Lamar Stone",
+ "born": {
+  "date": "1963-09-21",
+  "place": "Miami, Florida",
+  "source": "library/alex_stone_character_dossier_pre_hire.md"
+ },
+ "education": [
+  {
+   "year": 1986,
+   "degree": "BS",
+   "school": "University of Miami"
+  },
+  {
+   "year": 1996,
+   "degree": "MBA",
+   "school": "University of San Diego"
+  },
+  {
+   "year": 2002,
+   "degree": "PhD, exercise physiology",
+   "school": "University of Miami"
+  }
+ ],
+ "playing": [
+  {
+   "years": "1982-1985",
+   "team": "University of Miami",
+   "position": "Tight end",
+   "note": "On the 1983 national championship team",
+   "source": "library/alex_stone_character_dossier_pre_hire.md"
+  },
+  {
+   "years": "1986-1995",
+   "team": "San Diego Chargers",
+   "position": "Tight end",
+   "note": "Played in Super Bowl XXIX, a 49-26 loss to San Francisco",
+   "source": "library/alex_stone_character_dossier_pre_hire.md"
+  }
+ ],
+ "playing_record": {
+  "seasons": 10,
+  "games": 150,
+  "receptions": 488,
+  "yards": 5912,
+  "touchdowns": 44,
+  "pro_bowls": 5,
+  "all_pro_first_team": 2,
+  "source": "library/alex_stone_character_dossier_pre_hire.md"
+ },
+ "coaching_history": [
+  {
+   "years": "1996-1997",
+   "club": "University of Miami",
+   "job": "Graduate assistant, offense",
+   "work": "Offensive preparation and teaching during doctoral study",
+   "source": "library/alex_stone_character_dossier_pre_hire.md"
+  },
+  {
+   "years": "1999",
+   "club": "Miami Dolphins",
+   "job": "Offensive quality control / assistant quarterbacks",
+   "work": "Opponent tendencies, quarterback room and weekly passing-game preparation under Jimmy Johnson",
+   "source": "library/alex_stone_character_dossier_pre_hire.md"
+  },
+  {
+   "years": "2000",
+   "club": "University of San Diego",
+   "job": "Offensive coordinator / quarterbacks",
+   "work": "Called the offense under Kevin McGarry",
+   "source": "library/alex_stone_character_dossier_pre_hire.md"
+  },
+  {
+   "years": "2001",
+   "club": "University of San Diego",
+   "job": "Assistant head coach / offensive coordinator / quarterbacks",
+   "work": "Called the offense; practice organization and game management",
+   "source": "library/alex_stone_character_dossier_pre_hire.md"
+  },
+  {
+   "years": "2002-2004",
+   "club": "New England Patriots",
+   "job": "Defensive coaching assistant",
+   "work": "The secondary, under defensive backs coach Eric Mangini",
+   "source": "library/alex_stone_character_dossier_pre_hire.md"
+  },
+  {
+   "years": "2005-2006",
+   "club": "New England Patriots",
+   "job": "Tight ends coach",
+   "work": "Position coaching",
+   "source": "library/alex_stone_character_dossier_pre_hire.md"
+  },
+  {
+   "years": "2007-2008",
+   "club": "New England Patriots",
+   "job": "Passing game coordinator / tight ends",
+   "work": "Passing preparation and selected preseason calls; Josh McDaniels called the regular-season games",
+   "source": "library/alex_stone_character_dossier_pre_hire.md"
+  },
+  {
+   "years": "2009-2010",
+   "club": "New Orleans Saints",
+   "job": "Offensive coordinator",
+   "work": "Weekly offensive planning; Sean Payton called the games",
+   "source": "career/coaching_profiles/alex_stone_nfl_coach_sheet.md"
+  },
+  {
+   "years": "2011",
+   "club": "New Orleans Saints",
+   "job": "Offensive coordinator",
+   "work": "Primary caller from Payton's Week 6 injury through the playoffs",
+   "source": "career/coaching_profiles/alex_stone_nfl_coach_sheet.md"
+  },
+  {
+   "years": "2012",
+   "club": "New Orleans Saints",
+   "job": "Interim head coach and offensive coordinator",
+   "work": "The whole team and the offensive calls from April 16, 2012, during Payton's suspension",
+   "source": "career/coaching_profiles/alex_stone_nfl_coach_sheet.md"
+  }
+ ],
+ "head_coaching_before": [
+  {
+   "season": 2012,
+   "club": "New Orleans Saints",
+   "job": "Interim head coach",
+   "regular": {
+    "wins": 12,
+    "losses": 4,
+    "ties": 0
+   },
+   "postseason": {
+    "wins": 1,
+    "losses": 1
+   },
+   "finish": "Second in the NFC South",
+   "playoffs": "Won the Wild Card game; lost in the Divisional round",
+   "source": "library/alex_stone_character_dossier_pre_hire.md"
+  }
+ ],
+ "contacts": [],
+ "entries": [
+  {
+   "date": "2013-01-15",
+   "kind": "hired",
+   "club": "Jacksonville Jaguars",
+   "job": "Head coach",
+   "unit": "team",
+   "appointment": "2013-01-15-jax-head-coach",
+   "source": "career/2013/offseason/hiring_search.md"
+  },
+  {
+   "date": "2013-01-15",
+   "kind": "contract_signed",
+   "contract": "jax-head-coach-2013",
+   "club": "Jacksonville Jaguars",
+   "job": "Head coach",
+   "seasons": [
+    2013,
+    2014,
+    2015,
+    2016
+   ],
+   "salary": null,
+   "guaranteed": [
+    2013,
+    2014,
+    2015,
+    2016
+   ],
+   "terms": [
+    "Stone selects the coaching staff, with a funded assistant budget consistent with the staff he proposed; no dollar figure was stated",
+    "Stone controls the depth chart and game-day decisions",
+    "General manager David Caldwell has final authority over contracts, the salary cap, scouting administration, acquisitions and draft selections",
+    "Before a leading quarterback acquisition, disposition or draft commitment, Caldwell must obtain and consider Stone's written football projection and meet him to resolve any disagreement; Caldwell keeps the final call",
+    "No guarantee to Blaine Gabbert and no advance mandate to draft a quarterback second overall",
+    "First-season standard: a functioning program, credible player development, dependable preparation and communication, and an evidence-based direction at quarterback; no immediate playoff requirement"
+   ],
+   "source": "career/2013/offseason/head_coach_contract.md"
+  },
+  {
+   "date": "2014-01-12",
+   "kind": "calling_changed",
+   "phase": "special_teams",
+   "source": "career/2014/Early_Offseason/staff_changes/timeline.md"
+  },
+  {
+   "date": "2014-02-11",
+   "kind": "calling_changed",
+   "phase": "special_teams",
+   "source": "career/2014/Early_Offseason/staff_changes/hires.md"
+  },
+  {
+   "date": "2014-09-28",
+   "kind": "calling_changed",
+   "phase": "defense",
+   "source": "career/2014/Regular_Season/Games/Week_04/Week 4 Packet_ at San Diego.md"
+  },
+  {
+   "date": "2026-10-19",
+   "kind": "contract_amended",
+   "contract": "jax-head-coach-2013",
+   "in_world": "2013-01-15",
+   "reconstruction": true,
+   "delegation": {
+    "user_date": "2026-10-18",
+    "words": "you can decide the rest",
+    "context": "given while answering the employment questions in which these terms were listed"
+   },
+   "terms": {
+    "end": {
+     "value": {
+      "date": "2017-01-31",
+      "or_later": "the day after Jacksonville's last game of the 2016 season",
+      "text": "The later of January 31, 2017 or the day after Jacksonville's last game of the 2016 season"
+     },
+     "basis": {
+      "text": "The wording of Jacksonville's 2010 assistant extensions",
+      "rows": [
+       "C73"
+      ],
+      "source": "library/nfl_head_coach_contracts_2005_2014.md"
+     }
+    },
+    "salary": {
+     "value": {
+      "2013": 2800000,
+      "2014": 2800000,
+      "2015": 2800000,
+      "2016": 2800000
+     },
+     "basis": {
+      "text": "Ron Rivera's four-year, $11.2 million first contract at Carolina, January 2011 (reported by ESPN, unverified), the most recent reported first contract of a coordinator promoted to a first head-coaching job and the top of the reported range for such hires; no raise, because no raise rate is sourced",
+      "rows": [
+       "C35",
+       "C52"
+      ],
+      "source": "library/nfl_head_coach_contracts_2005_2014.md"
+     }
+    },
+    "offset": {
+     "value": "After a dismissal without cause, the unpaid guaranteed salary is reduced dollar for dollar by pay from another coaching job during the remaining term",
+     "basis": {
+      "text": "Denver and Shanahan; Jacksonville and Del Rio, 2012",
+      "rows": [
+       "C54",
+       "C55"
+      ],
+      "source": "library/nfl_head_coach_contracts_2005_2014.md"
+     }
+    },
+    "dismissal": {
+     "value": {
+      "without_cause": "The unpaid remainder is owed, less the offset; no separate buyout",
+      "for_cause": "Nothing further is owed"
+     },
+     "basis": {
+      "text": "Clubs that dismissed a head coach without cause paid the rest of his contract less any offset; a dismissal for cause, if upheld, owed nothing further",
+      "rows": [
+       "C53",
+       "C56"
+      ],
+      "source": "library/nfl_head_coach_contracts_2005_2014.md"
+     }
+    },
+    "signing_bonus": {
+     "value": 0,
+     "basis": {
+      "text": "None reported for a comparable hire",
+      "rows": [],
+      "source": "library/nfl_head_coach_contracts_2005_2014.md"
+     }
+    },
+    "options": {
+     "value": "None",
+     "basis": {
+      "text": "None reported for a comparable hire",
+      "rows": [],
+      "source": "library/nfl_head_coach_contracts_2005_2014.md"
+     }
+    }
+   },
+   "source": "library/nfl_head_coach_contracts_2005_2014.md"
+  }
+ ]
+}

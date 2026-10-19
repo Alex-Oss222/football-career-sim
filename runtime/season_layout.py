@@ -164,6 +164,11 @@ SYSTEM_SUFFIXES = ('.json', '.csv', '.gz')
 # places here (stored-facts rule 2), never by writing the path itself.
 PEOPLE_ROOT = DATA_ROOT + '/people'
 PLAYER_RECORDS = PEOPLE_ROOT + '/players'
+# Rebuild step 3 (coach side): one permanent record per coach, growing by
+# dated entries (hired, contracts, calling changes, departures), and Stone's
+# own pages, which follow him across seasons and jobs.
+COACH_RECORDS = PEOPLE_ROOT + '/coaches'
+STONE_PAGES = 'career/Stone'
 CANON_OVERRIDES = PEOPLE_ROOT + '/canon_overrides.json'
 LEAGUE_PLAYER_PAGES = 'career/league_players'
 # The pages written before 2014 Week 6, by path: history under rebuild rule 1, exempt from the

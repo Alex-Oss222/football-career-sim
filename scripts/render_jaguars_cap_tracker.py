@@ -383,33 +383,96 @@ def render_details(d,years):
     return ''.join(out).rstrip()+'\n'
 
 
-def render_organization(data, years, root):
-    staff = SeasonPaths(2014, root).record('coaching_staff.md')
+def organization_staff(root, years):
+    """[(record, contract as it stands, {year: salary})] of every coach whose contract schedules
+    salary in the horizon: the head coach first, then by first-year salary and name."""
+    from runtime import coaches
     rows = []
-    totals_by_year = {y: 0 for y in years}
-    for cells in md_rows(staff.read_text()):
-        if len(cells) != 8 or not cells[0].startswith('**') or cells[0] == '**Alan Lowry**':
-            continue
-        name = re.sub(r'\*\*', '', cells[0]).split(' (added')[0]
-        values = {str(y): exact_amount(cells[y-2010].replace('**','')) for y in (2014,2015)}
-        for y in years:
-            totals_by_year[y] += values.get(y) or 0
-        rows.append([name, cells[1]] + [dollars(values.get(y)) for y in years] + [cells[7]])
-    if len(rows) != 12 or totals_by_year['2014'] != 7700000 or totals_by_year['2015'] != 3650000:
-        raise ValueError('Staff contract layout or commitments changed; reconcile organization renderer')
-    head = ['Alex Stone','Head coach'] + ['Unspecified' if int(y) <= 2016 else '' for y in years] + ['2013–2016 fully guaranteed; compensation not supplied']
-    return ('# Jacksonville organization finances\n\n'
-            '[Player cap](jaguars_cap.md) | [Finance index](README.md)\n\n'
-            f"As of {display_date(data['as_of'])}. Whole US dollars. Generated from the executed staff register; no second editable salary ledger.\n\n"
-            '## Coaching contracts\n\n' + table(['Coach','Role']+years+['Guarantee'],[head]+rows) +
-            '## Payroll and open amounts\n\n' + table(['Measure']+years,[['Scheduled assistant salaries']+[dollars(v) if v else '' for v in totals_by_year.values()]]) +
-            'The head-coach salary, total organization payroll, ownership budget, Caldwell compensation, other front-office compensation and actual cash paid remain unspecified. The assistant subtotal is not an available hiring budget. Coaching pay is an organization expense and never enters the player salary cap.\n\n'
-            '## Contract terms and history\n\n'
-            '[Stone’s accepted agreement]('+page_link(2013, 'offseason/head_coach_contract.md', 1)+') retains the four-year full guarantee; this view does not supply missing salary, offsets or buyout clauses. '
-            '[The staff register]('+page_link(data['start_year'], 'coaching_staff.md', 1)+') owns assistant terms, offsets, termination treatment and authority. Lowry’s $625,000 scheduled 2014 salary ceased on his January 12 departure; it is not counted. Westhoff replaced him February 11 at $750,000 in each of 2014 and 2015; only 2014 is guaranteed. '
-            'The other executed assistant salaries retain their recorded guarantee and offset terms. Scheduled pay is distinct from cash already disbursed and remaining unpaid liability.\n\n'
-            '## Renewal and handoff\n\n'
-            'Review the nine position/assistant contracts ending after 2014, the coordinator contracts ending after 2015 and Stone’s term ending after 2016 at the relevant exit reviews. No renewal, raise, departure or replacement is assumed. Preserve earned pay, remaining guarantees and verified offsets when an actual change occurs; record it in the existing staff changes owner and regenerate this page.\n')
+    for record in coaches.load_all(root).values():
+        for signed in coaches.entries(record, 'contract_signed'):
+            terms = coaches.contract(record, signed['contract'])
+            salary = {str(y): v for y, v in coaches.scheduled(terms).items() if str(y) in years}
+            if salary:
+                rows.append((record, terms, salary))
+    def order(row):
+        record, terms, salary = row
+        return (terms.get('job') != 'Head coach', -max(salary.values()), record['name'])
+    return sorted(rows, key=order)
+
+
+def organization_guarantee(terms):
+    from runtime import coaches
+    text = coaches.guarantee_text(terms)
+    if not terms.get('offset') or text == 'Not guaranteed':
+        return text
+    first, _, rest = text.partition(';')
+    return first + ', with offset' + (';' + rest if rest else '')
+
+
+def render_organization(data, years, root):
+    """The coaching payroll, read from the coach records (data/people/coaches): every contract
+    scheduling salary in the horizon, the payroll by season and the contracts ending. Links are
+    written against the page's first home, career/finances/, and rebased by render()."""
+    import os
+    from runtime import coaches
+    from runtime.player_bios import master_date
+    from runtime.season_layout import STONE_PAGES
+    from runtime.events import repository_map
+    root = Path(root)
+    finances = root / 'career' / 'finances'
+    def here(path):
+        return os.path.relpath(path, finances).replace(os.sep, '/')
+    staff = organization_staff(root, years)
+    if not staff:
+        raise ValueError('No coach contract schedules salary in the horizon; reconcile the coach records')
+    season = int(repository_map(root)['active_season'])
+    staff_page = SeasonPaths(season, root).staff_page
+    rows, head, assistants, ending = [], {y: 0 for y in years}, {y: 0 for y in years}, {}
+    for record, terms, salary in staff:
+        rows.append([record['name'], terms.get('job')] + [dollars(salary.get(y)) for y in years]
+                    + [organization_guarantee(terms)])
+        bucket = head if terms.get('job') == 'Head coach' else assistants
+        for y, v in salary.items():
+            bucket[y] += v
+        ending.setdefault(coaches.through_season(terms), []).append(record['name'])
+    def money(values):
+        return [dollars(v) if v else '' for v in values]
+    payroll = [['Head coach'] + money(head.values()), ['Assistant coaches'] + money(assistants.values()),
+               ['Total'] + money(head[y] + assistants[y] for y in years)]
+    departed = []
+    for record in coaches.load_all(root).values():
+        for leave in coaches.entries(record, 'departed'):
+            terms = coaches.current_contract(record, leave.get('club'))
+            unpaid = {s: v for s, v in (terms.get('salary') or {}).items() if int(s) > leave['last_season']}
+            if any(s in years for s in unpaid):
+                departed.append('%s left on %s; his %s salary of %s ended with the move and is not counted.' % (
+                    record['name'], coaches.date_text(leave), ' and '.join(sorted(unpaid)),
+                    ' and '.join(dollars(v) for _, v in sorted(unpaid.items()))))
+    names = {'end': 'end date', 'salary': 'salary', 'guaranteed': 'guarantee', 'offset': 'offset',
+             'dismissal': 'dismissal terms', 'signing_bonus': 'signing bonus', 'options': 'options'}
+    reconstructed = [(record['name'], [names[k] for k in coaches.TERMS if k in terms['reconstructed']])
+                     for record, terms, _ in staff if terms.get('reconstructed')]
+    today = master_date(root)
+    out = ('# Coaching payroll\n\n'
+           '[Player cap](salary_cap/cap_tracker.md) · [Finances](README.md) · [Coaching staff](' + here(staff_page) + ')\n\n'
+           'As of ' + display_date(today.isoformat()) + '. Whole US dollars.\n\n'
+           '## Coaching contracts\n\n' + table(['Coach', 'Job'] + years + ['Guarantee'], rows) +
+           '## Payroll by season\n\n' + table(['Measure'] + years, payroll) +
+           'Coaching pay is a club expense and never counts against the player salary cap. The assistant total is '
+           'scheduled salary, not a hiring budget.\n\n'
+           '## Contract terms\n\n')
+    offsets = sorted({terms['offset'] for _, terms, _ in staff if terms.get('offset') and terms.get('job') != 'Head coach'})
+    for text in offsets:
+        out += 'Assistant contracts: the salary is guaranteed for the term if the club dismisses the coach without cause. ' + text.rstrip('.') + '.\n\n'
+    for line in departed:
+        out += line + '\n\n'
+    for name, completed in reconstructed:
+        listed = ', '.join(completed[:-1]) + ' and ' + completed[-1] if len(completed) > 1 else completed[0]
+        out += ('%s\'s %s were completed from comparable head-coach contracts of the time; the rest is as signed '
+                '([Contract and jobs](%s)).\n\n' % (name, listed, here(root / STONE_PAGES / 'Contract_and_Jobs.md')))
+    out += '## Contracts ending\n\n' + table(['After the season', 'Coaches'],
+                                              [[s, ', '.join(names)] for s, names in sorted(ending.items())])
+    return out.rstrip() + '\n'
 
 def render(data,root=ROOT):
     from runtime.season_layout import rebase_markdown

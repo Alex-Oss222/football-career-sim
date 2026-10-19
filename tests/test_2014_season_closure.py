@@ -227,6 +227,11 @@ class SeasonClosure2014Tests(unittest.TestCase):
             (tracker / rel).write_text(text, encoding="utf-8")
         self.assertEqual(update_player_cards.refresh_cards(SEASON, root), [])
         player_pages.write(root)  # every player page, after the week's awards
+        # The coach and staff pages and the desk read the closed games (the record by season, the
+        # last result and record), so the weekly workflow rebuilds them after the close.
+        from scripts import render_career_views, render_coach_pages
+        render_coach_pages.write(root)
+        render_career_views.write(root)
         # The in-season rails records of the closed weeks read the receipts
         # before them, so the synthetic Week 1 changes their generated block
         # as the weekly workflow would regenerate it; the batch's event after

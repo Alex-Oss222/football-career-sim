@@ -4,17 +4,23 @@
   python scripts/render_career_views.py [--check]
 
 state/current_job.json and state/decision_queue.json own the facts; these
-views only show them (docs/career_layer.md). Each view is a block between
-NAME:begin and NAME:end comment markers: current-job and decision-queue in
-Document 5, phase-control in the staff register, desk in the active season's
-README and decision-classes in docs/career_layer.md. Document 5's manifest
-also names both files' git blobs, which binds them into its digest and so
-into the private snapshot. The views read only those two files, Document 5's
-master-date cell and section 9, the active season's fixtures,
-docs/repository_map.json and whether the next game's week README and call
-sheet and the last game's output exist; never a receipt, standings, awards
-or the wall clock. Writing is refused while a Jacksonville game is paused;
---check is read-only and exits 1 on a stale, malformed or unrenderable view.
+views only show them (docs/career_layer.md). Document 5 holds two blocks
+between NAME:begin and NAME:end comment markers, current-job and
+decision-queue, and docs/career_layer.md the decision-classes block. The desk
+is the whole of the active season's README, a clean page built with no
+markers: today and the last result, the job, what is waiting on the head
+coach, the next event, then everything else. Document 5's manifest also names
+both files' git blobs, which binds them into its digest and so into the
+private snapshot. The views read only those two files, Stone's coach record
+(the contract), Document 5's master-date cell and section 9, the active
+season's fixtures, the closed events, docs/repository_map.json, whether the
+next game's week README and call sheet and the last game's output exist, and
+the employer club's own closed-game receipts for the desk's last result and
+record; never another club's receipt, the standings, awards or the wall clock.
+The staff register's phase-control table is no longer written: the Staff page
+(scripts/render_coach_pages.py) shows who calls what. Writing is refused while
+a Jacksonville game is paused; --check is read-only and exits 1 on a stale,
+malformed, unclean or unrenderable view.
 """
 from __future__ import annotations
 
@@ -33,9 +39,12 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from runtime import current_job, decision_queue  # noqa: E402
-from runtime.events import repository_map, resolve_path  # noqa: E402
+from runtime.events import load_events, repository_map, resolve_path  # noqa: E402
 from runtime.player_bios import master_date  # noqa: E402
-from runtime.seasons import SeasonPaths, current_record  # noqa: E402
+from runtime.clean_pages import page_errors  # noqa: E402
+from runtime.season_layout import NUMBERED_FOLDERS  # noqa: E402
+from runtime.seasons import SeasonPaths  # noqa: E402
+from scripts.render_coach_pages import COACH_PAGE, CONTRACT_PAGE, club_record, last_game  # noqa: E402
 from scripts.validate_repository import anchors, git_blob, without_code  # noqa: E402
 
 STATE = Path("state/05_Current_Season_State.md")
@@ -44,7 +53,7 @@ DOC = Path("docs/career_layer.md")
 MANIFEST_ROWS = (("Current job record", current_job.JOB.as_posix(), "Job, authority and delegation"),
                  ("Decision queue", decision_queue.QUEUE.as_posix(), "Open and resolved decisions"))
 BANNED = re.compile(r"\b(branch|simulation|receipt|kernel|engine|ledger|snapshot|checkpoint)s?\b", re.I)
-VOICED = frozenset({"desk", "phase-control"})   # reader prose; the Document 5 blocks are a state file
+VOICED = frozenset({"desk"})   # reader prose; the Document 5 blocks are a state file
 LINK = re.compile(r"\]\(@([^)#]*)(?:#([^)]*))?\)")   # a view's repository-relative link before localizing
 PHASE_LABEL = {"offense": "Offense", "defense": "Defense", "special_teams": "Special teams"}
 DECISION_LABEL = {"fourth_down": "fourth downs", "two_point": "two-point tries", "kickoff": "onside kicks",
@@ -61,28 +70,23 @@ AUTHORITY_NOTE = {"recommends": " on {who}'s recommendation", "consulted": " aft
                   "unset": " ({who}'s role not recorded)", "responds": " ({who} responds)",
                   "informs": " ({who} supplies information)", "decides_part": " ({who} decides {scope})",
                   "none": ""}
-# The same part, addressed to the holder on the desk.
-YOU_PHRASE = {"decides": "you decide", "decides_part": "you decide {scope}", "recommends": "you recommend",
-              "consulted": "after consulting you", "responds": "you respond", "informs": "you supply information",
-              "none": "no role", "unset": "your role is not recorded"}
-DOMAIN_SHORT = {"3": "Acquisitions", "3a": "Franchise quarterback decisions", "4": "Draft",
-                "5": "Player contracts", "7": "Final cuts", "20": "Transactions"}
+# The desk is football only: an open decision, a dated event or a standing instruction shows
+# only its clauses free of these process words (rebuild plan, "The desk").
+DESK_WORDS = re.compile(r"\b(frozen|freez\w*|inputs?|holds?|held|gates?|call sheets?|draws?|queue|blocks?|"
+                        r"releases? the hold)\b", re.I)
 # Logical season records (SeasonPaths.record), so the next season's desk works.
-TEAM_LINKS = (("Roster", "roster.md"), ("Depth chart", "depth_chart.md"),
-              ("Injury report", "medical/current_injury_report.md"), ("Medical history", "medical/medical_history.md"),
-              ("Player cards", "team/README.md"), ("Standings", "standings.md"),
-              ("Team tracker", "stats/team_tracker/README.md"))
-PERSONNEL_LINKS = (("Trades", "trades/README.md"), ("Free agency", "free_agency/README.md"),
-                   ("Draft board", "draft/player_draft_board.md"), ("Pick ownership", "draft/pick_ownership.json"))
-STAFF_LINKS = (("Coaching profiles", "career/coaching_profiles/README.md"),
-               ("Staff profiles", "career/coaching_profiles/staff_profiles.md"),
-               ("Coaching payroll", "career/finances/coaching_and_organization/coaching_payroll.md"))
-# Not the ownership review: an editorial reconstruction never communicated
-# to the coach (Document 3 section 6.2 item 8); the desk shows only the
-# employer's communicated measures.
-CAREER_LINKS = (("Coach sheet", "career/coaching_profiles/alex_stone_nfl_coach_sheet.md"),
-                ("Coaching profile", "career/coaching_profiles/alex_stone_coaching_profile.md"))
-OPEN_QUESTIONS = {"path": "docs/season_cycle_milestones.md", "anchor": "4-open-questions-for-the-user"}
+DESK_LINKS = (("Team", "team/README.md"), ("Roster", "roster.md"), ("Depth chart", "depth_chart.md"),
+              ("Injury report", "medical/current_injury_report.md"))
+FOLDER_NOTES = {
+    "Team_Operations": "Year-round roster, staff, medical, development, film, trades, free agency and finances",
+    "Early_Offseason": "Staffing, scouting, preparation and offseason decisions",
+    "Offseason_Training": "Phase One, Phase Two, rookie minicamp, OTA and mandatory-minicamp plans and reports",
+    "Draft": "Board, pick ownership, selections, undrafted signings and rookie agreements",
+    "Training_Camp_and_Preseason": "Camp reports, position battles, preseason games and roster decisions",
+    "Regular_Season": "Weekly games and preparation, statistics, standings and awards",
+    "Postseason": "Playoff games, postseason statistics, honours and the Pro Bowl",
+    "Season_Review": "Player exit interviews, coach reviews, final assessments and the next-season handoff",
+}
 
 
 class Paused(ValueError):
@@ -102,6 +106,7 @@ class Context:
     scheduled: list                  # (date cell, event cell) of the section 9 rows still scheduled
     games: list                      # the employer club's fixtures, amendments applied, by date
     places: dict                     # club -> the place name the views use
+    events: dict = field(default_factory=dict)   # closed events by id (the owner page of each)
     fields: list = field(default_factory=list)   # (source field, value) shown in the block being built
     headings: dict = field(default_factory=dict)
 
@@ -245,7 +250,7 @@ def context(root):
     place = {c: c.rsplit(" ", 1)[0] for c in clubs}
     places = {c: p if list(place.values()).count(p) == 1 else c for c, p in place.items()}
     return Context(root, mapping, season, paths, job, queue, master, cell[1].strip(), scheduled_events(state),
-                   sorted(games, key=lambda g: (g["date"], g["week"])), places)
+                   sorted(games, key=lambda g: (g["date"], g["week"])), places, load_events(root, mapping))
 
 
 def scheduled_events(state):
@@ -276,10 +281,6 @@ def last_and_next(ctx):
 
 
 # ---- the job record ---------------------------------------------------------
-
-def _record_label(record, default):
-    return "Document 3" if record.get("path") == current_job.F3.as_posix() else default
-
 
 def _interval_notes(ctx, interval):
     notes = []
@@ -451,7 +452,12 @@ def job_fields(ctx):
     job = "%s, %s (%s), since %s" % (ctx.show("title", current["title"]), employer.get("club"),
                                      employer.get("league"), day(current["start"]))
     links = [link(ctx, "job record", current_job.JOB.as_posix())]
-    links += [link(ctx, _record_label(r, "contract"), r) for r in current.get("contract") or ()]
+    term = current_job.term(ctx.job, ctx.root)
+    if term["contract"] is not None:
+        job += "; contract through the %d season, ending %s" % (max(term["seasons"]), first_clause(
+            ctx.show("contract.end", term["end_text"] or "on a date not recorded")))
+        links.append(link(ctx, "contract", CONTRACT_PAGE))
+        links.append(link(ctx, "signed terms", term["contract"]["signed"]["source"]))
     for entry in current.get("history") or ():
         if entry.get("kind") != "accepted":
             job += "; %s %s" % (entry["kind"], day(entry["date"]))
@@ -556,31 +562,6 @@ def decision_queue_block(ctx):
             "elsewhere does not." % link(ctx, "decision queue", decision_queue.QUEUE.as_posix()))
 
 
-# ---- the staff register -----------------------------------------------------
-
-def phase_control_block(ctx):
-    rows = []
-    for phase in current_job.PHASES:
-        interval = _current_interval(ctx, phase)
-        if interval is None:
-            continue
-        caller = name(ctx, interval["caller"]) + (", interim" if interval.get("interim") else "")
-        if interval.get("from"):
-            caller += " from " + day(interval["from"])
-        notes = _interval_notes(ctx, interval) + [_interval_link(ctx, interval)]
-        cell = "; ".join([caller + " (%s)" % "; ".join(notes)] + _staff_parts(ctx, interval, with_prepares=False))
-        before = _previous(ctx, phase, interval)
-        if before:
-            cell += ". Before: " + "; ".join(before)
-        lead = name(ctx, interval["prepares"]) if interval.get("prepares") else "not recorded"
-        retains = ctx.show("stone_retains", interval.get("stone_retains") or "not recorded")
-        rows.append((PHASE_LABEL[phase], lead, cell, retains))
-    body = table(("Phase", "Day-to-day lead", "Game-day caller / operational controller",
-                  "%s's retained role" % short(ctx, ctx.job["holder"])), rows)
-    return body + ("\n\nGenerated from the %s; a change in who calls a phase is recorded there."
-                   % link(ctx, "current job record", current_job.JOB.as_posix()))
-
-
 # ---- the desk ---------------------------------------------------------------
 
 def _game_text(ctx, game):
@@ -596,183 +577,198 @@ def _week_readme(ctx, week, label):
 
 
 def render_desk(ctx):
+    """The active season's README, whole: today and the last result, the job, what is waiting
+    on him, the next event, then everything else."""
     profile = current_job.desk_profile(ctx.job)
     if profile not in current_job.BUILT_DESKS:
         raise NotImplementedError("desk for role %s is defined (ROLE_SECTIONS) but not built" % profile)
     current = current_job.appointment(ctx.job)
-    last, upcoming = last_and_next(ctx)
-    clock = ctx.show("Document 5 master date/time", ctx.clock.split(";")[0].rstrip("."))
-    out = ["## %s's desk" % profile.replace("_", " ").capitalize(), "", "**%s.**" % clock, _lead(ctx, current), ""]
-    if upcoming is None:
-        out.append("**Next game:** No regular-season game remains; see the %s."
-                   % link(ctx, "calendar", ctx.paths.calendar.relative_to(ctx.root).as_posix()))
-    else:
-        out.append("**Next game:** %s (%s)." % (_game_text(ctx, upcoming),
-                                                _week_readme(ctx, upcoming["week"], "Week %d" % upcoming["week"])))
     holder = ctx.job["holder"]
+    last, upcoming = last_and_next(ctx)
+    out = ["# %s %d" % (place_name(ctx), ctx.season), ""]
+    today = "**%s.**" % day(ctx.master)
+    result = last_game(ctx.root, ctx.season, current["employer"]["club"], ctx.master)
+    if result is not None:
+        game, mine, theirs = result
+        other = game["home"] if game["away"] == current["employer"]["club"] else game["away"]
+        verb_ = "beat" if mine > theirs else "lost to" if mine < theirs else "tied"
+        where = "at home" if game["home"] == current["employer"]["club"] else "away"
+        today += " Last game: Week %d, %s %s %d-%d %s. Record: %s." % (
+            game["week"], verb_, ctx.places[other], max(mine, theirs), min(mine, theirs), where,
+            club_record(ctx.root, ctx.season, current["employer"]["club"], game["week"]))
+    out += [today, ""]
+    out += ["%s, %s of the %s since %s. %s" % (name(ctx, holder), ctx.show("title", current["title"]).lower(),
+                                              current["employer"]["club"], day(current["start"]),
+                                              link(ctx, "Coach page", COACH_PAGE)), ""]
     items = ordered_items(ctx)
-    out += ["", "### Waiting on you"] + _waiting(ctx, [i for i in items if i.get("owner") == holder])
-    out += ["", "Open questions on the career's own rules, which are yours rather than %s's football decisions: %s."
-            % (short(ctx, holder), link(ctx, "season cycle, section 4", OPEN_QUESTIONS))]
-    out += ["", "### With others"] + _with_others(ctx, [i for i in items if i.get("owner") != holder])
-    out += ["", "### Next dated events"]
-    out += ["- %s: %s" % (ctx.show("Document 5 section 9 date", when), ctx.show("Document 5 section 9 event", what))
-            for when, what in ctx.scheduled] or ["- None scheduled in Document 5."]
-    fields = dict(job_fields(ctx))
-    out += ["", "### Who does what on game day"]
-    for label in ([PHASE_LABEL[p] for p in current_job.PHASES]
-                  + ["Retained by %s" % short(ctx, holder), "Game-day information", "Emergency leads"]):
-        out.append("- **%s.** %s." % (label, fields[label].rstrip(".")))
-    out += ["", "### Standing instructions"]
-    out += ["- **%s:** %s. %s" % (label, text, record.replace("[record]", "[Record]", 1))
-            for label, text, record in instruction_lines(ctx)] or ["- None."]
-    sections = {"Team": _team, "Staff": _staff, "Weekly plan": _weekly, "Personnel partnership": _partnership,
-                "Ownership": _ownership, "Career": _career}
-    for section in current_job.ROLE_SECTIONS[profile]:
-        out += ["", "### " + section] + sections[section](ctx, current, last, upcoming)
-    return "\n".join(out)
+    out += ["## Waiting on you", ""] + _waiting(ctx, [i for i in items if i.get("owner") == holder]) + [""]
+    out += ["## Next event", ""]
+    if upcoming is None:
+        out += ["No regular-season game remains; see the %s."
+                % link(ctx, "calendar", ctx.paths.calendar.relative_to(ctx.root).as_posix()), ""]
+    else:
+        out += ["**Next game:** %s. %s" % (_game_text(ctx, upcoming), _week_readme(ctx, upcoming["week"],
+                                                                                   "Week %d" % upcoming["week"])), ""]
+    out += ["## Coming up", ""]
+    events = []
+    for when, what in ctx.scheduled:
+        what = football(ctx.show("Document 5 section 9 event", what))
+        if what:
+            events.append("- %s: %s" % (ctx.show("Document 5 section 9 date", when), what))
+    out += (events or ["Nothing else is scheduled."]) + [""]
+    out += ["## With others", ""] + _with_others(ctx, [i for i in items if i.get("owner") != holder]) + [""]
+    out += ["## Standing instructions", ""] + _instructions(ctx) + [""]
+    out += ["## Who calls what", ""] + _callers(ctx) + ["", link(ctx, "Coaching staff", rel(ctx, ctx.paths.staff_page)), ""]
+    links = [season_link(ctx, label, logical) for label, logical in DESK_LINKS]
+    links += [link(ctx, "Coaching staff", rel(ctx, ctx.paths.staff_page)), link(ctx, "Coach page", COACH_PAGE),
+              link(ctx, "Contract and jobs", CONTRACT_PAGE), link(ctx, "Calendar", rel(ctx, ctx.paths.calendar)),
+              link(ctx, "Record", rel(ctx, ctx.paths.annual_record))]
+    out += ["## Records", "", " · ".join(links), ""]
+    out += ["## Season folders", ""] + _folders(ctx) + [""]
+    return "\n".join(out).rstrip() + "\n"
 
 
-def _lead(ctx, current):
-    """Who holds the job, since when, and who decides his employment."""
-    holder, employer = ctx.job["holder"], current.get("employer") or {}
-    lead = "%s, %s of the %s since %s" % (name(ctx, holder), ctx.show("title", current["title"]).lower(),
-                                          employer.get("club"), day(current["start"]))
-    for entry in current.get("history") or ():
-        if entry.get("kind") != "accepted":
-            lead += "; %s %s" % (entry["kind"], day(entry["date"]))
-            if entry.get("note"):
-                lead += " " + first_clause(ctx.show("history.note", entry["note"]))
-    decided = (current.get("reporting") or {}).get("employment_decided_by") or []
-    if decided:
-        lead += ". %s %s his employment" % (join(name(ctx, p) for p in decided), verb(ctx, decided))
-    return lead + ". " + link(ctx, "Job record", current_job.JOB.as_posix())
+def rel(ctx, path):
+    return Path(path).relative_to(ctx.root).as_posix()
+
+
+def place_name(ctx):
+    club = (current_job.appointment(ctx.job) or {}).get("employer", {}).get("club") or ""
+    return ctx.places.get(club, club)
+
+
+def football(text):
+    """The clauses of a recorded line that are football, without process words."""
+    kept = [c.strip() for c in str(text).split(";") if c.strip() and not DESK_WORDS.search(c)]
+    return "; ".join(kept)
+
+
+def _week_of(item):
+    """The season week an item is due for, from its deadline or what it waits for, or None."""
+    for event in [(item.get("deadline") or {}).get("before") or {}] + list(item.get("blocks") or ()):
+        if event.get("week") is not None:
+            return event["week"]
+    return None
 
 
 def _waiting(ctx, items):
     lines = []
+    games = {g["week"]: g for g in ctx.games}
     for n, item in enumerate(items, 1):
         field = "decision_queue.%s." % item["id"]
-        title = ctx.show(field + "title", item["title"])
-        if item.get("advisers"):
-            line = "%d. **%s** (with %s). " % (n, title, join(name(ctx, p) for p in item["advisers"]))
-        else:
-            line = "%d. **%s.** " % (n, title.rstrip("."))
-        line += ctx.show(field + "question", item["question"])
-        if (item.get("deadline") or {}).get("label"):
-            line += " Needed %s." % ctx.show(field + "deadline.label", item["deadline"]["label"])
-        waits = waits_text(ctx, item)
+        line = "%d. **%s.**" % (n, ctx.show(field + "title", item["title"]).rstrip("."))
+        question = ctx.show(field + "question", item.get("question") or "")
+        if ":" in question:
+            settle = football(question.split(":", 1)[1])
+            if settle and settle == question.split(":", 1)[1].strip():
+                line += " To settle: %s" % settle
+        week = _week_of(item)
+        game = games.get(week)
+        deadline = (item.get("deadline") or {}).get("date")
+        if game is not None:
+            line += " Due before kickoff, %s, %s, %s." % (game.get("weekday"), day(game["date"], False),
+                                                        kickoff(game["kickoff_et"]))
+        elif deadline:
+            line += " Due by %s." % day(deadline, False)
+        waits = []
+        for wait in item.get("waits_on") or ():
+            what = football(ctx.show("waits_on.what", wait["what"]).split(";")[0])
+            if what:
+                waits.append("%s (%s)" % (what, day(wait["date"], False)) if wait.get("date") else what)
         if waits:
-            line += " Waiting on: %s." % "; ".join(waits)
-        if item.get("blocks"):
-            line += " Holds %s." % holds_text(item, False)
-        if item.get("fallback"):
-            line += " If unsettled: " + ctx.show(field + "fallback", item["fallback"])
-        lines.append(line + " " + link(ctx, "Record", item["record"]))
+            line += " Still to come: %s." % "; ".join(waits)
+        if week is not None and (ctx.paths.week_folder(week) / "README.md").is_file():
+            line += " " + _week_readme(ctx, week, "Week %d" % week)
+        elif _readable(ctx, item.get("record")):
+            line += " " + link(ctx, "Record", item["record"])
+        lines.append(line)
     return lines or ["Nothing is waiting on you."]
+
+
+def _readable(ctx, record):
+    """Whether a record is a football page the desk may link."""
+    return bool(record) and str(record.get("path", "")).startswith("career/") and record["path"].endswith(".md")
 
 
 def _with_others(ctx, items):
     lines = []
     for item in items:
-        line = "- %s (%s)" % (ctx.show("decision_queue.%s.title" % item["id"], item["title"]), owner_text(ctx, item))
-        waits = waits_text(ctx, item, dated=False)
-        if waits:
-            line += "; waiting on " + join(waits)
-        lines.append(line + ". " + link(ctx, "Record", item["record"]))
-    return lines or ["- Nothing open."]
+        line = "- **%s** (%s)" % (ctx.show("decision_queue.%s.title" % item["id"], item["title"]).rstrip("."),
+                                  owner_text(ctx, item))
+        waits = [football(w) for w in waits_text(ctx, item, dated=False)]
+        if any(waits):
+            line += "; waiting on " + join(w for w in waits if w)
+        line += "."
+        if _readable(ctx, item.get("record")):
+            line += " " + link(ctx, "Record", item["record"])
+        lines.append(line)
+    return lines or ["Nothing open."]
 
 
-def _team(ctx, current, last, upcoming):
-    return [" · ".join(season_link(ctx, label, logical) for label, logical in TEAM_LINKS)]
-
-
-def _staff(ctx, current, last, upcoming):
-    register = current_record("staff", ctx.root).relative_to(ctx.root).as_posix()
-    links = [link(ctx, "Staff register", {"path": register, "anchor": "phase-control"})]
-    return [" · ".join(links + [link(ctx, label, path) for label, path in STAFF_LINKS])]
-
-
-def _weekly(ctx, current, last, upcoming):
-    parts = []
-    if upcoming is not None:
-        week = upcoming["week"]
-        parts.append(_week_readme(ctx, week, "Week %d" % week))
-        sheet = decision_queue.sheet_path(ctx.season, week, ctx.root)
-        parts.append(link(ctx, "Week %d call sheet" % week, sheet.relative_to(ctx.root).as_posix())
-                     if sheet is not None else "Week %d call sheet: not yet frozen" % week)
-    if last is not None:
-        output = ctx.paths.week_folder(last["week"]) / "output.md"
-        text = "Last week: " + _week_readme(ctx, last["week"], "Week %d" % last["week"])
-        if output.is_file():
-            text += " (%s)" % link(ctx, "record", output.relative_to(ctx.root).as_posix())
-        parts.append(text)
-    return [" · ".join(parts) or "No week is scheduled."]
-
-
-def _partnership(ctx, current, last, upcoming):
-    rows = (current.get("authority") or {}).get("domains") or []
-    holder = ctx.job["holder"]
+def _instructions(ctx):
+    """Each standing instruction in force, in plain words, linked to the football page it was
+    given in (a rule frozen into a game file links to the page of the event that set it)."""
     lines = []
-    for row in rows:
-        action, scope = row["stone_action"], row.get("scope")
-        if row["row"] not in DOMAIN_SHORT or action == "not_applicable":
+    for item in current_job.instructions(ctx.job):
+        subject = item.get("subject") or ""
+        label = SUBJECT_LABEL.get(subject, subject.replace("_", " ").capitalize() or item.get("id"))
+        if item.get("effective"):
+            label += ", from " + day(item["effective"])
+        text = football(ctx.show("standing_instructions.%s.summary" % item.get("id"), item.get("summary") or ""))
+        record = item.get("record") or {}
+        if not _readable(ctx, record):
+            event = (item.get("given") or {}).get("event")
+            owner = ctx.events.get(event).owner if event in ctx.events else None
+            record = {"path": owner} if owner else {}
+        line = "- **%s:** %s." % (label, text.rstrip(".") or "recorded")
+        if record:
+            line += " " + link(ctx, "Record", record)
+        lines.append(line)
+    return lines or ["None."]
+
+
+def _callers(ctx):
+    lines = []
+    for phase in current_job.PHASES:
+        interval = _current_interval(ctx, phase)
+        if interval is None:
             continue
-        notes = [ctx.show("authority.%s.scope" % row["row"], scope)] if scope and action != "decides_part" else []
-        notes += ["an inference in the record"] if row.get("inference") else []
-        phrase = YOU_PHRASE.get(action, "your role is not recorded").format(scope=scope or "").strip()
-        tail = phrase + (" (%s)" % "; ".join(notes) if notes else "")
-        if row["final"] == [holder]:
-            text = tail[:1].upper() + tail[1:]
-        else:
-            final = join(name(ctx, p) for p in row["final"])
-            text = "%s %s%s" % (final, verb(ctx, row["final"]), (" " if action == "consulted" else "; ") + tail)
-        lines.append("- %s (row %s): %s." % (DOMAIN_SHORT[row["row"]], row["row"], text))
-    links = [season_link(ctx, label, logical) for label, logical in PERSONNEL_LINKS]
-    return lines + [" · ".join(links)]
+        text = "- **%s.** %s%s calls" % (PHASE_LABEL[phase], name(ctx, interval["caller"]),
+                                         ", interim," if interval.get("interim") else "")
+        if interval.get("from"):
+            text += ", since %s" % day(interval["from"])
+        parts = [text]
+        prepares, transmits = interval.get("prepares"), interval.get("transmits")
+        if prepares and prepares != interval["caller"]:
+            parts.append("%s prepares%s" % (name(ctx, prepares), " and sends in the call" if transmits == prepares else ""))
+        if transmits and transmits != prepares:
+            parts.append("%s sends in the call" % name(ctx, transmits))
+        if interval.get("front_declaration"):
+            parts.append("%s declares the front" % name(ctx, interval["front_declaration"]))
+        lines.append("; ".join(parts) + ".")
+    return lines
 
 
-def _ownership(ctx, current, last, upcoming):
-    reporting = current.get("reporting") or {}
-    decided = reporting.get("employment_decided_by") or []
-    sentences = []
-    if decided:
-        sentences.append("%s %s your employment (row %s)" % (join(name(ctx, p) for p in decided), verb(ctx, decided),
-                                                             reporting.get("employment_row") or "not recorded"))
-    entries = current.get("evaluation") or []
-    latest = max((e.get("season") or 0 for e in entries), default=None)
-    for entry in entries:
-        if (entry.get("season") or 0) == latest:
-            who = "The contract's" if entry.get("by") == "contract" else name(ctx, entry["by"]) + "'s"
-            what = "; ".join(entry.get("measures") or ()) or entry.get("text") or "not recorded"
-            label = (ctx.show("evaluation.label", entry["label"]) if entry.get("label")
-                     else "%s measures" % entry.get("season"))
-            sentences.append("%s %s: %s" % (who, label, ctx.show("evaluation.measures", what)))
-    for request in current.get("employer_requests") or ():
-        if request.get("status") == "OPEN":
-            sentences.append("%s's request: %s" % (name(ctx, request["by"]),
-                                                    ctx.show("employer_requests.text", request["text"])))
-    unset = [label for key, label in REPORTING_LABEL if reporting.get(key) is None]
-    if unset:
-        sentences.append("%s: not recorded" % join(unset).capitalize())
-    term = current.get("term") or {}
-    if term.get("end_date"):
-        sentences.append("Contract end date: " + day(term["end_date"]))
-    else:
-        basis = ctx.show("term.end_basis", term.get("end_basis") or "No end date is recorded")
-        basis = re.sub(r"\s*\([^()]*\)", "", basis)
-        sentences.append("Contract term: " + basis[:1].lower() + basis[1:])
-    links = [link(ctx, HISTORY_LABEL.get(e.get("kind"), e.get("kind")).capitalize(), e["record"])
-             for e in current.get("history") or () if e.get("kind") != "accepted"]
-    links += [link(ctx, _record_label(r, "Contract"), r) for r in current.get("contract") or ()]
-    return [". ".join(sentences) + ". " + " · ".join(links)]
-
-
-def _career(ctx, current, last, upcoming):
-    links = [link(ctx, label, path) for label, path in CAREER_LINKS]
-    links += [link(ctx, "Hiring search", e["record"])
-              for e in current.get("history") or () if e.get("kind") == "accepted"]
-    return [" · ".join(links)]
+def _folders(ctx):
+    rows = []
+    for folder in NUMBERED_FOLDERS.values():
+        readme = ctx.paths.career / folder / "README.md"
+        label = folder.replace("_", " ").capitalize().replace("Ota", "OTA")
+        cell = link(ctx, label, rel(ctx, readme)) if readme.is_file() else label
+        rows.append((cell, FOLDER_NOTES.get(folder, "")))
+    lines = table(("Folder", "What belongs here"), rows).split("\n")
+    lines += ["", "The draft overlaps spring training; the calendar gives the dates within each phase. The season "
+              "review follows the last game of the season, playoffs included."]
+    seasons = []
+    before = SeasonPaths(ctx.season - 1, ctx.root).desk
+    if before.is_file():
+        seasons.append(link(ctx, "%d season" % (ctx.season - 1), rel(ctx, before)))
+    after = SeasonPaths(ctx.season + 1, ctx.root).calendar
+    if after.is_file():
+        seasons.append(link(ctx, "%d calendar" % (ctx.season + 1), rel(ctx, after)))
+    if seasons:
+        lines += ["", " · ".join(seasons)]
+    return lines
 
 
 # ---- docs/career_layer.md ---------------------------------------------------
@@ -834,13 +830,13 @@ def managed(root):
     root = Path(root).resolve()
     season = int(repository_map(root)["active_season"])
     return {"current-job": STATE, "decision-queue": STATE,
-            "phase-control": current_record("staff", root).relative_to(root),
-            "desk": (SeasonPaths(season, root).career / "README.md").relative_to(root),
+            "desk": SeasonPaths(season, root).desk.relative_to(root),
             "decision-classes": DOC}
 
 
 BUILDERS = {"current-job": current_job_block, "decision-queue": decision_queue_block,
-            "phase-control": phase_control_block, "desk": render_desk, "decision-classes": classes_block}
+            "desk": render_desk, "decision-classes": classes_block}
+WHOLE = frozenset({"desk"})     # built as the whole file, with no markers
 
 
 def _render(root):
@@ -854,24 +850,19 @@ def _render(root):
     for rel, name, build in plan:
         path = root / rel
         if path not in texts:
-            texts[path] = path.read_text(encoding="utf-8")
+            texts[path] = path.read_text(encoding="utf-8") if path.is_file() else ""
         names.setdefault(path, []).append(name)
         ctx.fields = []
         body = localize(build(ctx), Path(rel).as_posix())
         if name in VOICED:
             _voice(ctx, name, body)
-        begin = ("<!-- desk:begin role=%s season=%d -->" % (current_job.desk_profile(ctx.job), ctx.season)
-                 if name == "desk" else "<!-- %s:begin -->" % name)
-        block = "%s\n%s\n<!-- %s:end -->" % (begin, body.rstrip("\n"), name)
+        if name in WHOLE:
+            texts[path] = body
+            continue
+        block = "<!-- %s:begin -->\n%s\n<!-- %s:end -->" % (name, body.rstrip("\n"), name)
         counts = _counts(texts[path], name)
         if counts == (1, 1) and _pattern(name).search(texts[path]):
             texts[path] = _pattern(name).sub(lambda _: block, texts[path], count=1)
-        elif name == "desk" and counts == (0, 0):
-            lines = texts[path].split("\n")
-            at = next((i for i, line in enumerate(lines) if line.startswith("[Calendar](")),
-                      next((i for i, line in enumerate(lines) if line.startswith("# ")), -1))
-            lines[at + 1:at + 1] = ["", block]
-            texts[path] = "\n".join(lines)
         else:
             problems.append("Career view markers missing or duplicated: %s %s" % (Path(rel).as_posix(), name))
     texts[root / STATE] = _manifest(ctx, texts[root / STATE])
@@ -881,7 +872,7 @@ def _render(root):
             text = texts.get(readme, readme.read_text(encoding="utf-8"))
             stripped = re.sub(r"\n\n<!-- desk:begin[^>]*-->.*?<!-- desk:end -->", "", text, flags=re.S)
             texts[readme] = _pattern("desk").sub("", stripped)
-            names.setdefault(readme, []).append("desk")
+            names.setdefault(readme, []).append("desk-block")
     return texts, names, problems
 
 
@@ -894,19 +885,20 @@ def _section(text, name):
     if name == "manifest":
         start = text.find("## Effective source-version manifest")
         return text[start:text.find("\n## ", start + 1)] if start >= 0 else None
-    found = _pattern(name).search(text)
+    found = _pattern("desk" if name == "desk-block" else name).search(text)
     return found[0] if found else None
 
 
 def desk_count_errors(root):
+    """The desk is the whole of the active season's README; no README carries a desk block."""
     root = Path(root).resolve()
-    home = SeasonPaths(int(repository_map(root)["active_season"]), root).career / "README.md"
+    home = SeasonPaths(int(repository_map(root)["active_season"]), root).desk
     errors = []
     for readme in _readmes(root):
         count = readme.read_text(encoding="utf-8").count("<!-- desk:begin")
-        if count != (1 if readme == home else 0):
-            errors.append("Career view desk must appear once, in %s: %s has %d"
-                          % (home.relative_to(root).as_posix(), readme.relative_to(root).as_posix(), count))
+        if count:
+            errors.append("Career view desk block found: %s has %d; the desk is the whole of %s"
+                          % (readme.relative_to(root).as_posix(), count, home.relative_to(root).as_posix()))
     return errors
 
 
@@ -919,9 +911,13 @@ def check(root):
         return errors + ["Career views cannot render: %s" % exc]
     errors += problems
     for path, text in expected.items():
-        actual = path.read_text(encoding="utf-8")
+        actual = path.read_text(encoding="utf-8") if path.is_file() else ""
+        whole = [n for n in names.get(path, ()) if n in WHOLE]
+        if whole:
+            rel_path = path.relative_to(root).as_posix()
+            errors += page_errors(rel_path, text, (), root)
         if actual != text:
-            stale = [n for n in names.get(path, ()) if _section(actual, n) != _section(text, n)] or ["text"]
+            stale = whole or [n for n in names.get(path, ()) if _section(actual, n) != _section(text, n)] or ["text"]
             errors.append("Stale career view: %s (%s); run python scripts/render_career_views.py"
                           % (path.relative_to(root).as_posix(), ", ".join(stale)))
     return errors
@@ -949,7 +945,7 @@ def write(root):
         raise ValueError("; ".join(problems))
     written = []
     for path, text in expected.items():
-        if path.read_text(encoding="utf-8") != text:
+        if not path.is_file() or path.read_text(encoding="utf-8") != text:
             path.write_text(text, encoding="utf-8")
             written.append(path)
     return written

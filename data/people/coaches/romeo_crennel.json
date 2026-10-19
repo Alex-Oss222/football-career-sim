@@ -1,0 +1,51 @@
+{
+ "schema_version": 1,
+ "name": "Romeo Crennel",
+ "party": "crennel",
+ "entries": [
+  {
+   "date": "2013-01",
+   "label": "Late January 2013",
+   "kind": "hired",
+   "club": "Jacksonville Jaguars",
+   "job": "Defensive coordinator",
+   "unit": "defense",
+   "source": "career/2013/offseason/staff_building/hires.md"
+  },
+  {
+   "date": "2013-01",
+   "label": "Late January 2013",
+   "kind": "contract_signed",
+   "contract": "jax-2013",
+   "club": "Jacksonville Jaguars",
+   "job": "Defensive coordinator",
+   "seasons": [
+    2013,
+    2014,
+    2015
+   ],
+   "salary": {
+    "2013": 1600000,
+    "2014": 1650000,
+    "2015": 1700000
+   },
+   "guaranteed": [
+    2013,
+    2014,
+    2015
+   ],
+   "offset": "Salary still owed after a dismissal without cause is reduced dollar for dollar by pay earned in another NFL or major-college coaching job during the guaranteed period",
+   "dismissal": {
+    "without_cause": "The scheduled salary for the term is owed, less the offset",
+    "for_cause": "Cause is limited to a material employment breach; poor results, a losing season or a football disagreement are not cause"
+   },
+   "source": "career/2014/Team_Operations/Staff/coaching_staff.md"
+  },
+  {
+   "date": "2014-09-28",
+   "kind": "calling_changed",
+   "phase": "defense",
+   "source": "career/2014/Regular_Season/Games/Week_04/Week 4 Packet_ at San Diego.md"
+  }
+ ]
+}

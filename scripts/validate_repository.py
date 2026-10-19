@@ -411,6 +411,16 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
         errors.append(f'Invalid player pages: {exc}')
 
+    # The coach side's pages (the Coach page, Contract and jobs, the Staff
+    # page) are built from the coach records (data/people/coaches) and the
+    # current-job record: a changed record or a closed game without a rebuild
+    # fails, and so does a coach record that breaks its schema.
+    try:
+        from scripts.render_coach_pages import check as check_coach_pages
+        errors.extend(check_coach_pages(root))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid coach pages: {exc}')
+
     # Clean pages (docs/rebuild_plan.md, rule 4): a built page, and any page
     # written from 2014 Week 6 on, is football only. Folder map (stored-facts
     # rule 2): no script or runtime module writes a season folder or a year
