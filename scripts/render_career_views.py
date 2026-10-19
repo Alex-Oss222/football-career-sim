@@ -14,7 +14,9 @@ both files' git blobs, which binds them into its digest and so into the
 private snapshot. The views read only those two files, Stone's coach record
 (the contract), Document 5's master-date cell and section 9, the active
 season's fixtures, the closed events, docs/repository_map.json, whether the
-next game's week README and call sheet and the last game's output exist, and
+next game's week README and call sheet and the last game's output exist,
+whether a week's Game Week Briefing and Game Plan exist (the desk links both
+under "Waiting on you" once they are issued), and
 the employer club's own closed-game receipts for the desk's last result and
 record; never another club's receipt, the standings, awards or the wall clock.
 The staff register's phase-control table is no longer written: the Staff page
@@ -583,6 +585,17 @@ def _week_readme(ctx, week, label):
     return link(ctx, label, readme.relative_to(ctx.root).as_posix()) if readme.is_file() else label
 
 
+def _decision_pages(ctx, week):
+    """Links to the week's Game Week Briefing and Game Plan, when both have been issued
+    (runtime/decisions.py names them; scripts/render_game_week.py writes them)."""
+    from runtime.decisions import week_pages
+    pages = week_pages(ctx.season, week, ctx.root)
+    if not (pages.briefing.is_file() and pages.plan.is_file()):
+        return []
+    return [link(ctx, label, path.relative_to(ctx.root).as_posix())
+            for label, path in (("Game Week Briefing", pages.briefing), ("Game Plan", pages.plan))]
+
+
 def render_desk(ctx):
     """The active season's README, whole: today and the last result, the job, what is waiting
     on him, the next event, then everything else."""
@@ -722,7 +735,10 @@ def _waiting(ctx, items):
                 waits.append("%s (%s)" % (what, day(wait["date"], False)) if wait.get("date") else what)
         if waits:
             line += " Still to come: %s." % "; ".join(waits)
-        if week is not None and (ctx.paths.week_folder(week) / "README.md").is_file():
+        decision_pages = _decision_pages(ctx, week) if week is not None else []
+        if decision_pages:
+            line += " " + " · ".join(decision_pages)
+        elif week is not None and (ctx.paths.week_folder(week) / "README.md").is_file():
             line += " " + _week_readme(ctx, week, "Week %d" % week)
         elif _readable(ctx, item.get("record")):
             line += " " + page_link(ctx, item["record"])

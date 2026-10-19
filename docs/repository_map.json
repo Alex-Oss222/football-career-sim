@@ -392,7 +392,14 @@
     "data/people/coaches/romeo_crennel.json",
     "data/people/coaches/tim_spencer.json",
     "data/people/coaches/tony_oden.json",
-    "library/nfl_head_coach_contracts_2005_2014.md"
+    "library/nfl_head_coach_contracts_2005_2014.md",
+    "runtime/decisions.py",
+    "runtime/game_plan.py",
+    "scripts/render_game_week.py",
+    "scripts/check_game_plan.py",
+    "scripts/apply_game_plan.py",
+    "tests/test_game_plan.py",
+    "tests/test_game_week_pages.py"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",

@@ -436,6 +436,16 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
         errors.append(f'Invalid club pages or cap views: {exc}')
 
+    # The open game week's pages (scripts/render_game_week.py, rebuild step 4): once its Game Week
+    # Briefing is issued, the week index is current, the Game Plan sits beside the briefing and the
+    # staff read is well formed. A dated briefing the situation has overtaken is re-issued by the
+    # weekly workflow (render_game_week.py --check), not failed here.
+    try:
+        from scripts.render_game_week import validation_errors as game_week_errors
+        errors.extend(game_week_errors(root))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid game week pages: {exc}')
+
     # Clean pages (docs/rebuild_plan.md, rule 4): a built page, and any page
     # written from 2014 Week 6 on, is football only. Folder map (stored-facts
     # rule 2): no script or runtime module writes a season folder or a year
