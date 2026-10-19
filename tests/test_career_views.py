@@ -24,6 +24,7 @@ from runtime.decision_queue import event
 from runtime.events import repository_map
 from runtime.player_bios import master_date
 from runtime.clean_pages import page_errors
+from runtime.season_layout import STONE_REVIEWS
 from runtime.seasons import SeasonPaths
 from scripts import render_career_views as views
 from scripts import render_coach_pages
@@ -333,7 +334,7 @@ class CareerViewTests(unittest.TestCase):
                 self.assertIn("decides %s)" % domain["scope"], clause)
 
     def test_desk_links_no_uncommunicated_review(self):
-        self.assertNotIn("alex_stone_performance_review", self.desk())
+        self.assertNotIn(Path(STONE_REVIEWS).name, self.desk())
 
     def test_classes_block_lists_every_class(self):
         text = self.rendered("docs/career_layer.md")

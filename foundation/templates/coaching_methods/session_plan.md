@@ -6,7 +6,7 @@ Copy into the applicable phase's planning material only when a session is being 
 |---|---|
 | Session / phase / proposed date | Pending calendar verification |
 | Coach and coordinating room | Named owner; resolve shared assignments |
-| Current coach assessment and question | Link [Stone/staff profile](../../../career/coaching_profiles/README.md); identify what instruction or choice this session can actually illuminate |
+| Current coach assessment and question | Link [Stone/staff profile](../../../career/Assistant_Coaches/README.md); identify what instruction or choice this session can actually illuminate |
 | Participants | Actual control/eligibility checked; current medical instructions apply |
 | Legal work allowance | Link calendar/readiness rule; permissible speed, contact and coach involvement |
 | Assigned active-book material | Concept/job and source; distinguish assigned from available-to-read |

@@ -20,7 +20,7 @@ A player's opening assessment and dated updates remain together through the whol
 
 [League player cards](league_players/README.md) give every player on record, club by club, a card in his club's colors and his season and career statistics, regenerated after every closed game.
 
-[Coaching profiles](coaching_profiles/README.md) retain Stone's and the assistants' development from their actual work. [Shared finances](finances/README.md) retain contract obligations and accounting across seasons. Neither set is rewritten into a second chronological account.
+[Coaching profiles](Assistant_Coaches/README.md) retain Stone's and the assistants' development from their actual work. [Shared finances](finances/README.md) retain contract obligations and accounting across seasons. Neither set is rewritten into a second chronological account.
 
 ## Starting and handing off a career
 

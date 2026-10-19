@@ -1,6 +1,6 @@
 # Writing Stone's coaching records
 
-Use the [folder method](README.md). These prompts describe three separate functions; they are not a form that needs an answer in every field.
+Use the [folder method](coach_records_method.md). These prompts describe three separate functions; they are not a form that needs an answer in every field.
 
 ## Current coaching profile
 
@@ -21,6 +21,8 @@ Use a season or material review date as the heading. Keep the review short:
 Look for sustained contention, repeated early exits, decline or a recovery over time. Do not impose an invented win threshold or treat every missed postseason as grounds for dismissal. Preserve earlier season judgments. A performance opinion alone cannot retain, extend or dismiss him, and it does not rewrite his adopted identity. Routine practice updates stay in the season reports.
 
 ## NFL Coach Sheet
+
+Stone's coach sheet is kept as history through October 2014 and gains no later season or fact: his record by season, awards and current job are built on the [Coach page](../../career/Stone/README.md) from his coach and job records and the closed games, and his teams' season statistics on each season's Statistics pages. The prompts below describe how that sheet was written.
 
 Use compact tables for confirmed background, education, appointments, head-coaching records and season statistics. Distinguish a title from actual calling responsibility. Keep regular-season and playoff records separate and add completed seasons without erasing earlier ones. Link to the records that own employment and current authority.
 

@@ -6,7 +6,7 @@ Born September 21, 1963, Miami, Florida · Tight end, University of Miami, 1982 
 
 As of October 5, 2014, after Week 5.
 
-![Alex Stone](../coaching_profiles/photos/alex_stone.webp)
+![Alex Stone](photos/alex_stone.webp)
 
 ## Job and contract
 
@@ -82,7 +82,7 @@ His meetings are relaxed and often funny. Practice moves quickly. He can tell a 
 
 Stone calls his own offense. He favors Dagger, Mesh, play-action, screens, several useful backs and formations with multiple tight ends. He works closely with his coordinators, takes responsibility publicly and expects a much more specific conversation behind closed doors.
 
-The full approach, in his own terms: [coaching profile](../coaching_profiles/alex_stone_coaching_profile.md).
+The full approach, in his own terms: [coaching profile](Coaching_Profile.md).
 
 ## Reviews
 

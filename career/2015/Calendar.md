@@ -1,6 +1,6 @@
 # 2015 historical NFL and Jacksonville calendar
 
-[2014 calendar](../2014/Calendar.md) | [Sources and verification](../../library/2015_historical_calendar.md) | [Living coaching profiles](../coaching_profiles/README.md)
+[2014 calendar](../2014/Calendar.md) | [Sources and verification](../../library/2015_historical_calendar.md) | [Living coaching profiles](../Assistant_Coaches/README.md)
 
 **Historical scheduling reference, prepared September 29, 2026.** This is the real 2015 calendar, including Jacksonville's announced practices and fixtures. Prepared at the February 2, 2014 clock; the current clock is in [Document 5](../../state/05_Current_Season_State.md). Every future event is unplayed; this file records no participation, transaction, clearance, coaching change or result. Times are **Eastern**, including London and away games. Source letters refer to the verification register.
 
@@ -70,7 +70,7 @@ Starting April 20 yields Phase One's two weeks through May 1 and Phase Two's thr
 
 The ten OTA dates are the **announced schedule**. Q later records nine actually held in real Jacksonville. Actual cancellations, attendance and teaching remain branch events. Do not import a real coach's decision or claim ten practices occurred here.
 
-Before each phase, carry forward the latest player and [coach assessments](../coaching_profiles/README.md), relevant cutup questions and unresolved shared assignments. After actual work, record observations in the phase output and revise the profile with evidence. Minicamp close supplies summer instructions; camp tests retention and lawful physical transfer; preseason tests operation against another team. These are review opportunities, not promised improvement or predetermined player/coach types. Create year-local working plans from the then-current branch roster, staff and active playbook when preparing that season.
+Before each phase, carry forward the latest player and [coach assessments](../Assistant_Coaches/README.md), relevant cutup questions and unresolved shared assignments. After actual work, record observations in the phase output and revise the profile with evidence. Minicamp close supplies summer instructions; camp tests retention and lawful physical transfer; preseason tests operation against another team. These are review opportunities, not promised improvement or predetermined player/coach types. Create year-local working plans from the then-current branch roster, staff and active playbook when preparing that season.
 
 ### Announced opening camp schedule
 

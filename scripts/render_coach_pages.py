@@ -47,15 +47,15 @@ from runtime.events import repository_map  # noqa: E402
 from runtime.league import DIVISION_OF  # noqa: E402
 from runtime.player_bios import master_date  # noqa: E402
 from runtime.postseason import ROUNDS  # noqa: E402
-from runtime.season_layout import PAGE_HISTORY, STONE_PAGES  # noqa: E402
+from runtime.season_layout import ASSISTANT_INDEX, PAGE_HISTORY, STONE_PAGES, STONE_PHOTO, STONE_PROFILE  # noqa: E402
 from runtime.seasons import SeasonPaths  # noqa: E402
 from runtime.standings import compute, pct_text  # noqa: E402
 
 COACH_PAGE = STONE_PAGES + "/README.md"
 CONTRACT_PAGE = STONE_PAGES + "/Contract_and_Jobs.md"
-PROFILE = "career/coaching_profiles/alex_stone_coaching_profile.md"
-PHOTO = "career/coaching_profiles/photos/alex_stone.webp"
-PROFILES = "career/coaching_profiles/README.md"
+PROFILE = STONE_PROFILE
+PHOTO = STONE_PHOTO
+PROFILES = ASSISTANT_INDEX
 PAYROLL = "career/finances/coaching_and_organization/coaching_payroll.md"
 HIRING_RULES = "library/2014_coaching_hiring_and_anti_tampering_rules.md"
 HIRING_RULES_ANCHOR = "13-head-coaches-under-contract-to-another-club"
@@ -685,7 +685,7 @@ def staff_page(ctx):
     changes = ctx.paths.record("offseason/staff_changes/README.md")
     if changes.is_file():
         links.append(link(ctx, page, changes, "Staff changes in %d" % ctx.season))
-    links.append(link(ctx, page, PROFILES, "Coaching profiles"))
+    links.append(link(ctx, page, PROFILES, "Assistant coaches' profiles"))
     out += ["## Records", "", " · ".join(links), ""]
     return "\n".join(out).rstrip() + "\n"
 

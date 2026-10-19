@@ -11,7 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from runtime import decision_queue
 from runtime.seasons import SeasonPaths
-from runtime.season_layout import COACH_RECORDS, PLAYER_FINANCES, opening_guides
+from runtime.season_layout import (ASSISTANT_COACH_PAGES, COACH_RECORDS, PLAYER_FINANCES, STONE_COACH_SHEET,
+                                    STONE_PROFILE, STONE_REVIEWS, opening_guides)
 from runtime.events import EVENT_META, resolve_path
 
 TEAM_GATES = ('team_season_closed', 'exit_interviews', 'roster_and_medical',
@@ -59,15 +60,17 @@ def reference_sources(root, year):
         'individual_development': [paths.record('offseason/player_development')],
         'film_delivery': [paths.record('offseason/film')],
         'medical': [paths.record('medical')],
-        'coach_development': [root/'career/coaching_profiles',
-                              paths.record('closeouts/Exit_Interviews/Coaches')],
+        'coach_development': [root/STONE_PROFILE, root/STONE_COACH_SHEET, root/STONE_REVIEWS,
+                              root/ASSISTANT_COACH_PAGES, paths.record('closeouts/Exit_Interviews/Coaches')],
     }
     # From 2014 a folder's system files (.json) sit in its data-area twin.
     folders = {name: owners + [paths.data_for(f) for f in owners if paths.data_for(f) != f]
                for name, owners in folders.items()}
     result = {}
     for name, owners in folders.items():
-        result[name] = sorted(p.relative_to(root).as_posix() for folder in owners for p in folder.rglob('*')
+        # An owner is a folder (every record under it) or a single record.
+        result[name] = sorted(p.relative_to(root).as_posix() for folder in owners
+                              for p in (folder.rglob('*') if folder.is_dir() else (folder,))
                               if p.is_file() and p.suffix in ('.md', '.json')
                               and p.name.lower() not in ('readme.md', 'template.md')
                               and 'template' not in p.stem.lower())

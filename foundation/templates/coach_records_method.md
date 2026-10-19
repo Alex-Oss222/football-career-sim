@@ -1,18 +1,21 @@
-# Coaching profiles
+# Coaching records: folder method
 
-[Alex Stone's profile](alex_stone_coaching_profile.md) | [Ownership review and job security](alex_stone_performance_review.md) | [GM dossier and career record](alex_stone_nfl_coach_sheet.md) | [Assistant assessments](staff_profiles.md) | [Writing template](profile_template.md)
+[Alex Stone's profile](../../career/Stone/Coaching_Profile.md) | [Ownership review and job security](../../career/Stone/Performance_Reviews.md) | [GM dossier and career record](../../career/Stone/Coach_Sheet_through_October_2014.md) | [Assistant assessments](../../career/Assistant_Coaches/staff_profiles.md) | [Writing template](coach_profile_template.md)
 
-This folder separates Stone's user-defined coaching identity, the assessment of his performance, and his career record. The profile was revised October 1, 2026 to adopt the user's edited draft, tone guidance and separate offensive and defensive approaches, each with passing and running sections. Each performance assessment and career record retains its own dated coverage. The [current season state](../../state/05_Current_Season_State.md) supplies the career date, and the [staff record](../2014/Team_Operations/Staff/coaching_staff.md) owns current assignments. Revising the profile does not complete a practice, install a concept or change an appointment.
+Stone's records sit in `career/Stone/` beside his built [Coach page](../../career/Stone/README.md), and the assistants' in [`career/Assistant_Coaches/`](../../career/Assistant_Coaches/README.md). Both moved from `career/coaching_profiles/` on October 19, 2026 ([rebuild plan](../../docs/rebuild_plan.md)); this method was that folder's README.
+
+This method separates Stone's user-defined coaching identity, the assessment of his performance, and his career record. The profile was revised October 1, 2026 to adopt the user's edited draft, tone guidance and separate offensive and defensive approaches, each with passing and running sections. Each performance assessment and career record retains its own dated coverage. The [current season state](../../state/05_Current_Season_State.md) supplies the career date, and the [staff record](../../career/2014/Team_Operations/Staff/coaching_staff.md) owns current assignments. Revising the profile does not complete a practice, install a concept or change an appointment.
 
 ## Each document's job
 
 | Document | Reader's question | What belongs here |
 |---|---|---|
-| `alex_stone_coaching_profile.md` | Who is Stone as a head coach, and how does he approach decisions? | The user's adopted identity, preferences, teaching, relationships, preparation, tactics, delegation and public conduct. Describe the choices these produce without promising success. |
-| `alex_stone_performance_review.md` | Is he progressing, sustaining success or falling short, and what has the club decided? | An ownership assessment of the inherited team, results, staff and player development, unresolved problems and continued employment. Distinguish the editorial ownership perspective from recorded club decisions; link detailed teaching observations to their season reports. |
-| `alex_stone_nfl_coach_sheet.md` | What would a GM need to know about hiring him, and what has he actually done? | The hiring case, actual responsibilities, inherited teams, coaching evidence and unresolved questions, followed by background, appointments, results, statistics, contract and authority. Preserve completed seasons as the career grows. |
-| `staff_profiles.md` | What has each assistant demonstrated? | The existing assistant assessments and their dated changes. Current appointments belong in the season staff record. |
-| `profile_template.md` | How should an assessment be written and updated? | Short prompts for the three functions, with no requirement to fill unsupported fields. |
+| `career/Stone/Coaching_Profile.md` | Who is Stone as a head coach, and how does he approach decisions? | The user's adopted identity, preferences, teaching, relationships, preparation, tactics, delegation and public conduct. Describe the choices these produce without promising success. |
+| `career/Stone/Performance_Reviews.md` | Is he progressing, sustaining success or falling short, and what has the club decided? | An ownership assessment of the inherited team, results, staff and player development, unresolved problems and continued employment. Distinguish the editorial ownership perspective from recorded club decisions; link detailed teaching observations to their season reports. |
+| `career/Stone/Coach_Sheet_through_October_2014.md` | What would a GM need to know about hiring him, and what has he actually done? | The hiring case, actual responsibilities, inherited teams, coaching evidence and unresolved questions, followed by background, appointments, results, statistics, contract and authority. Kept as history through October 2014; it gains no later season, because the Coach page carries the current facts. |
+| `career/Stone/README.md` (the Coach page, built) | What is his job now, and what is his record? | His job, contract, record by season, awards, career history, philosophy, reviews and open opportunities, built from his coach and job records, the closed games and the award results. Never edited by hand. |
+| `career/Assistant_Coaches/staff_profiles.md` | What has each assistant demonstrated? | The existing assistant assessments and their dated changes. Current appointments belong in the season staff record. |
+| `foundation/templates/coach_profile_template.md` | How should an assessment be written and updated? | Short prompts for the three functions, with no requirement to fill unsupported fields. |
 
 Rosters, injuries, contracts, game logs, playbooks, position manuals and weekly plans stay with their existing owners. Link to them when needed. Do not recreate their tables here or add empty opponent, equipment or game-week fields.
 
@@ -31,11 +34,11 @@ Only the user establishes Stone's intended beliefs, motives and philosophy. Pres
 1. Record practice, teaching and game observations in the report for that work. Check the date, conditions and responsible coach. Routine phase completion does not require another entry in Stone's performance review.
 2. Update the performance review after a season, an employment decision or evidence that materially changes a standing concern. Compare results across seasons; name recurring problems and the response. Keep earlier season conclusions, but link to detailed observations rather than repeat the practice diary. An analyst's view of job security is not a club decision.
 3. Change Stone's approach in the profile when the user adopts or revises it. Refresh established job or delegation facts when their source changes. Earlier phase plans calling for a review entry at every handoff or a profile rewrite after an assessment are superseded by this procedure; preserve their dated plans and reports.
-4. Add completed seasons to the NFL Coach Sheet and update sourced career or employment facts. Separate regular season from playoffs, label net yardage and define rate denominators. Name the statistic behind each top-ten finish. Keep approximate or incomplete figures clearly identified. The source owner changes first; a review cannot appoint a coach, award a role or advance the clock.
+4. Add nothing to the coach sheet: it is history through October 2014. A completed season reaches the Coach page's record by season and awards from the closed games and award results, and his teams' season statistics are built on that season's Statistics pages. A sourced career or employment fact changes in his coach record or job record, and the Coach page is rebuilt. Keep approximate or incomplete figures clearly identified. The source owner changes first; a review cannot appoint a coach, award a role or advance the clock.
 
 Keep current-season exit interviews and team reviews in that season's `Season_Review/`. Carry unresolved teaching and staff follow-through, with the source, responsible coach and next observation, in the existing season handoff. A season boundary does not reset the assessment.
 
-The user-defined [camp approach](alex_stone_coaching_profile.md#how-he-wants-training-camp-run) is maintained in the profile and operational season plan. A change to that approach is not evidence that a practice or fitness test occurred.
+The user-defined [camp approach](../../career/Stone/Coaching_Profile.md#how-he-wants-training-camp-run) is maintained in the profile and operational season plan. A change to that approach is not evidence that a practice or fitness test occurred.
 
 ## Writing standard
 
