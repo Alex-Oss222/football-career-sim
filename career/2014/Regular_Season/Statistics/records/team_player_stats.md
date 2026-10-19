@@ -1,10 +1,9 @@
 # 2014 Jacksonville Jaguars player statistics
 
-**Version:** `2014-W05-TEAM-PLAYER-STATS`
 **Through:** Week 5.
 **Coverage:** complete for this club's closed games.
 
-By position, then player. G counts games on the game-day active list. FUM, LOST, FF and FR combine two definitions this season: games closed before kernel 2014.6 counted every generated fumble as lost and named one defender as its forcer and recoverer; from kernel 2014.6 a fumble may be kept, the forcer and recoverer are separate group draws or replayed records, and muffs are counted. No fumble rank is published, and who fumbled, forced, recovered or muffed is never evidence of a player's ball security.
+By position, then player. G counts games on the game-day active list. FUM, LOST, FF and FR combine two counting methods this season: through Week 4 every fumble counted as lost, with one defender credited with forcing and recovering it; from Week 5 a fumble may be kept, the players who force and recover it are credited separately and muffs are counted. No fumble ranking is kept.
 
 ## Quarterbacks
 
@@ -143,49 +142,49 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Mike Brewster | C | offensive_snaps 332, special_teams_snaps 23 |
-| A.J. Bouye | CB | defensive_snaps 125, penalties 1, penalty_yards 15, special_teams_snaps 100 |
-| Alan Ball | CB | special_teams_snaps 27 |
-| Alterraun Verner | CB | defensive_snaps 274, special_teams_snaps 42 |
-| Aqib Talib | CB | defensive_snaps 329, special_teams_snaps 17 |
-| Jordan Poyer | CB | defensive_snaps 155, special_teams_snaps 57 |
-| Malcolm Butler | CB | defensive_snaps 13, special_teams_snaps 41 |
-| Mike Harris | CB | defensive_snaps 70, special_teams_snaps 4 |
-| Andre Branch | DE | defensive_snaps 239, special_teams_snaps 19 |
-| Daniel Te'o-Nesheim | DE | defensive_snaps 4 |
-| Jeremy Mincey | DE | defensive_snaps 345, special_teams_snaps 19 |
-| C.J. Mosley | DT | defensive_snaps 5 |
-| Roy Miller | DT | defensive_snaps 345, penalties 1, penalty_yards 15, special_teams_snaps 19 |
-| Sen'Derrick Marks | DT | defensive_snaps 345, special_teams_snaps 19 |
-| Montell Owens | FB | REC LNG 28, offensive_snaps 83, special_teams_snaps 103 |
-| Trai Turner | G | offensive_snaps 332, special_teams_snaps 23 |
-| Josh Scobee | K | special_teams_snaps 49 |
-| Christian Jones | LB | special_teams_snaps 103 |
-| Daryl Smith | LB | defensive_snaps 345, special_teams_snaps 19 |
-| Julian Stanford | LB | defensive_snaps 172, special_teams_snaps 19 |
-| Paul Posluszny | LB | INT YDS 21, defensive_snaps 345, special_teams_snaps 19 |
-| Sio Moore | LB | defensive_snaps 13 |
-| Telvin Smith | LB | defensive_snaps 2, special_teams_snaps 103 |
-| Todd Davis | LB | special_teams_snaps 18 |
-| Casey Kreiter | LS | special_teams_snaps 48 |
-| Cornelius Lucas | OT | special_teams_snaps 23 |
-| Eugene Monroe | OT | offensive_snaps 332, special_teams_snaps 23 |
-| Joel Bitonio | OT | offensive_snaps 332, special_teams_snaps 23 |
-| Lane Johnson | OT | offensive_snaps 332, special_teams_snaps 23 |
-| Bryan Anger | P | special_teams_snaps 48 |
-| Kirk Cousins | QB | RUSH LNG 15, offensive_snaps 332, penalties 2, penalty_yards 19 |
-| C.J. Anderson | RB | REC LNG 26, offensive_snaps 32, special_teams_snaps 85 |
-| Jonathan Grimes | RB | REC LNG 20, offensive_snaps 6, special_teams_snaps 1 |
-| Maurice Jones-Drew | RB | REC LNG 32, offensive_snaps 332 |
-| Adrian Phillips | S | defensive_snaps 1, special_teams_snaps 31 |
-| Bacarri Rambo | S | defensive_snaps 345, special_teams_snaps 19 |
-| Brynden Trawick | S | defensive_snaps 265, special_teams_snaps 30 |
-| Chris Prosinski | S | defensive_snaps 1, special_teams_snaps 59 |
-| Dwight Lowery | S | defensive_snaps 80, special_teams_snaps 4 |
-| Marcedes Lewis | TE | offensive_snaps 332, special_teams_snaps 23 |
-| Marcel Jensen | TE | offensive_snaps 1, special_teams_snaps 3 |
-| Travis Kelce | TE | offensive_snaps 99, penalties 1, penalty_yards 10, special_teams_snaps 126 |
-| Adam Thielen | WR | RUSH LNG 1, offensive_snaps 332 |
-| Allen Hurns | WR | offensive_snaps 5, special_teams_snaps 103 |
-| Andrew Hawkins | WR | fumbles_recovered_own 1, offensive_snaps 147, special_teams_snaps 52 |
-| Davante Adams | WR | RUSH LNG 2, offensive_snaps 332 |
+| Mike Brewster | C | OFF SNAPS 332, ST SNAPS 23 |
+| A.J. Bouye | CB | DEF SNAPS 125, PEN 1, PEN YDS 15, ST SNAPS 100 |
+| Alan Ball | CB | ST SNAPS 27 |
+| Alterraun Verner | CB | DEF SNAPS 274, ST SNAPS 42 |
+| Aqib Talib | CB | DEF SNAPS 329, ST SNAPS 17 |
+| Jordan Poyer | CB | DEF SNAPS 155, ST SNAPS 57 |
+| Malcolm Butler | CB | DEF SNAPS 13, ST SNAPS 41 |
+| Mike Harris | CB | DEF SNAPS 70, ST SNAPS 4 |
+| Andre Branch | DE | DEF SNAPS 239, ST SNAPS 19 |
+| Daniel Te'o-Nesheim | DE | DEF SNAPS 4 |
+| Jeremy Mincey | DE | DEF SNAPS 345, ST SNAPS 19 |
+| C.J. Mosley | DT | DEF SNAPS 5 |
+| Roy Miller | DT | DEF SNAPS 345, PEN 1, PEN YDS 15, ST SNAPS 19 |
+| Sen'Derrick Marks | DT | DEF SNAPS 345, ST SNAPS 19 |
+| Montell Owens | FB | REC LNG 28, OFF SNAPS 83, ST SNAPS 103 |
+| Trai Turner | G | OFF SNAPS 332, ST SNAPS 23 |
+| Josh Scobee | K | ST SNAPS 49 |
+| Christian Jones | LB | ST SNAPS 103 |
+| Daryl Smith | LB | DEF SNAPS 345, ST SNAPS 19 |
+| Julian Stanford | LB | DEF SNAPS 172, ST SNAPS 19 |
+| Paul Posluszny | LB | INT YDS 21, DEF SNAPS 345, ST SNAPS 19 |
+| Sio Moore | LB | DEF SNAPS 13 |
+| Telvin Smith | LB | DEF SNAPS 2, ST SNAPS 103 |
+| Todd Davis | LB | ST SNAPS 18 |
+| Casey Kreiter | LS | ST SNAPS 48 |
+| Cornelius Lucas | OT | ST SNAPS 23 |
+| Eugene Monroe | OT | OFF SNAPS 332, ST SNAPS 23 |
+| Joel Bitonio | OT | OFF SNAPS 332, ST SNAPS 23 |
+| Lane Johnson | OT | OFF SNAPS 332, ST SNAPS 23 |
+| Bryan Anger | P | ST SNAPS 48 |
+| Kirk Cousins | QB | RUSH LNG 15, OFF SNAPS 332, PEN 2, PEN YDS 19 |
+| C.J. Anderson | RB | REC LNG 26, OFF SNAPS 32, ST SNAPS 85 |
+| Jonathan Grimes | RB | REC LNG 20, OFF SNAPS 6, ST SNAPS 1 |
+| Maurice Jones-Drew | RB | REC LNG 32, OFF SNAPS 332 |
+| Adrian Phillips | S | DEF SNAPS 1, ST SNAPS 31 |
+| Bacarri Rambo | S | DEF SNAPS 345, ST SNAPS 19 |
+| Brynden Trawick | S | DEF SNAPS 265, ST SNAPS 30 |
+| Chris Prosinski | S | DEF SNAPS 1, ST SNAPS 59 |
+| Dwight Lowery | S | DEF SNAPS 80, ST SNAPS 4 |
+| Marcedes Lewis | TE | OFF SNAPS 332, ST SNAPS 23 |
+| Marcel Jensen | TE | OFF SNAPS 1, ST SNAPS 3 |
+| Travis Kelce | TE | OFF SNAPS 99, PEN 1, PEN YDS 10, ST SNAPS 126 |
+| Adam Thielen | WR | RUSH LNG 1, OFF SNAPS 332 |
+| Allen Hurns | WR | OFF SNAPS 5, ST SNAPS 103 |
+| Andrew Hawkins | WR | OWN FUM REC 1, OFF SNAPS 147, ST SNAPS 52 |
+| Davante Adams | WR | RUSH LNG 2, OFF SNAPS 332 |

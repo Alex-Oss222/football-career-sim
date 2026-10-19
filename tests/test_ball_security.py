@@ -726,11 +726,18 @@ class RecordsTests(unittest.TestCase):
         new = receipt(Sample.get()[2])
         new.update(week=5, event_id="b10-pages-new")
         mixed, only_old, only_new = (aggregate_receipts(r) for r in ([old, new], [old], [new]))
-        for render in (lambda b: views.team_markdown(2014, "A", b), lambda b: views.league_markdown(2014, b),
-                       lambda b: views.all_players_markdown(2014, b)):
-            self.assertIn(views.FUMBLE_SPLIT_NOTE, render(mixed))
-            self.assertNotIn(views.FUMBLE_SPLIT_NOTE, render(only_old))
-            self.assertNotIn(views.FUMBLE_SPLIT_NOTE, render(only_new))
+        # From 2014 the pages are written clean (rebuild step 4): the same note in football words,
+        # with the week the counting changed; an earlier season's page keeps the original note.
+        clean_note = views.clean_fumble_note(views.change_weeks([old, new]))
+        self.assertIn("through Week 4", clean_note)
+        self.assertIn("from Week 5", clean_note)
+        weeks = views.change_weeks([old, new])
+        for render in (lambda b: views.team_markdown(2014, "A", b, weeks), lambda b: views.league_markdown(2014, b, weeks),
+                       lambda b: views.all_players_markdown(2014, b, weeks)):
+            self.assertIn(clean_note, render(mixed))
+            self.assertNotIn("two counting methods", render(only_old))
+            self.assertNotIn("two counting methods", render(only_new))
+        self.assertIn(views.FUMBLE_SPLIT_NOTE, views.team_markdown(2013, "A", mixed))
         with tempfile.TemporaryDirectory() as tmp:
             folder = SeasonPaths(2014, Path(tmp)).receipts
             folder.mkdir(parents=True)

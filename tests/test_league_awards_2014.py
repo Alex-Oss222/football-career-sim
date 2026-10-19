@@ -40,11 +40,12 @@ class Methodology2014Tests(unittest.TestCase):
 
     def test_readme_carries_the_freeze(self):
         pages = render_pages(2014, {}, self.m2014)
-        self.assertIn("## Methodology", pages["README.md"])
-        self.assertIn("Frozen August 28, 2014", pages["README.md"])
-        self.assertNotIn("Before the first draw, freeze", pages["README.md"])
+        self.assertIn("## How the winners are chosen", pages["README.md"])
+        self.assertIn("The method was fixed on August 28, 2014, before the first award", pages["README.md"])
+        self.assertIn("as in 2013", pages["README.md"])  # the mirrored method is unchanged
+        self.assertNotIn("Before the first award, the season", pages["README.md"])
         # Without a freeze the index keeps its reminder.
-        self.assertIn("Before the first draw, freeze", render_pages(2014, {})["README.md"])
+        self.assertIn("Before the first award, the season", render_pages(2014, {})["README.md"])
 
     def test_missing_methodology_is_a_clear_error(self):
         with self.assertRaisesRegex(FileNotFoundError, "No 2015 awards methodology: freeze "

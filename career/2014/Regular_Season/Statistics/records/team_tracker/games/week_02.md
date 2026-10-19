@@ -1,8 +1,6 @@
 # Jacksonville Jaguars 2014: Week 2 at Washington Redskins
 
-**Result:** W 24-7. **Generated** by `python scripts/render_team_tracker.py 2014` from receipt `2014-week02-jacksonville-jaguars-at-washington-redskins`; do not edit by hand.
-
-Reader view for the user only. It is not an input to the simulation or to any evaluation.
+**Result:** W 24-7. [Season tracker](../README.md)
 
 ## This game
 
@@ -164,4 +162,4 @@ Record through Week 2: 2-0. Rate stats are recalculated from the totals, never a
 |---|---|---|---|---|---|---|---|
 | Andrew Hawkins | 2 | 3 | 65 | 21.7 | 8 | 82 | 10.2 |
 
-The receipts do not record the longest completion, the longest field goal, or return and defensive touchdowns, so those template columns are left out rather than guessed.
+The game records do not include the longest completion, the longest field goal, or return and defensive touchdowns, so those columns are left out rather than guessed.

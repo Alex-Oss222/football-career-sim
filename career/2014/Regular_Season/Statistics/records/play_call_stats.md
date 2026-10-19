@@ -1,10 +1,9 @@
-# 2014 Jacksonville Jaguars descriptive call labels
+# 2014 Jacksonville Jaguars play calls
 
-**Version:** `2014-W05-PLAY-CALL-STATS`
 **Through:** Week 5.
 **Coverage:** complete for this club's closed games.
 
-Descriptive labels on the generated snaps, from the snap ledger. From kernel 2013.7 (after Week 8) each label fits that snap's ball carrier or target: it is drawn after the carrier or target is fixed, from the weekly sheet's calls whose declared (or 2013 family-map) groups include him. A label is not Stone's call selection or frequency, and per-label yardage is not evidence of a concept's effectiveness. Generic, kneel, spike and scramble labels are separate rows; a quarterback scramble is counted under the pass label it carries. Kernels 2013.4-2013.6 drew each snap's label at random from the sheet's calls of that run or pass type, independent of the ball carrier (see the [October 6, 2013 St. Louis game report](../../../../2013/regular_season/week_05_jacksonville_at_st_louis/output.md)), so Weeks 1-8 rows show label assignment only. Y/P is yards per snap; 20+ counts gains of 20 yards or more; NEG counts snaps that lost yardage.
+Every snap in the play-by-play carries a call from that week's call sheet that fits its ball carrier or target; this table counts the snaps under each call and what they gained. The sheet sets the calls available in each situation, so a call's totals reflect the situations it was used in. Generic, kneel, spike and scramble rows are separate; a quarterback scramble counts under the pass call it carries. Y/P is yards per snap; 20+ counts gains of 20 yards or more; NEG counts snaps that lost yardage.
 
 | Call | Family | SNAPS | RUNS | DB | CMP | ATT | CMP% | YDS | Y/P | 20+ | NEG | TD | TO | SCK |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -36,16 +35,16 @@ Descriptive labels on the generated snaps, from the snap ledger. From kernel 201
 | 12 Wing, TE Delay | TE Delay | 2 | 0 | 2 | 0 | 2 | 0.0 | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 |
 | Clock (spike) | Clock (spike) | 1 | 0 | 1 | 0 | 1 | 0.0 | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 |
 
-## Defensive call record
+## Defensive calls by situation
 
-Each defensive snap carries the row of Stone's frozen structured defensive sheet that its down and distance, field zone or clock names (the sheet's applicable row, chosen by rule with no random number, after the play was resolved). A row is the sheet's words, not the call on every such snap, and the counts are a mix of situations, not Stone's call frequency or evidence that a call worked; no row changes a result. Snaps no row names, kneels and spikes count as unlabelled.
+Each defensive snap is listed under the row of Stone's defensive call sheet for its down and distance, field zone or clock, with that row's call as the sheet writes it. A situation's snaps are a count of the snaps in that situation. Snaps no row names, kneels and spikes are listed as other snaps.
 
-| Week | Row | Situation | Sheet text | SNAPS |
-|---:|---|---|---|---:|
-| 5 | 2nd-long | second-and-long | 09. SECOND-AND-LONG: NICKEL WHEN THE RUN REMAINS CREDIBLE. | 11 |
-| 5 | 3rd-3-5 | third-and-medium | 10. THIRD-AND-3 TO 5: NICKEL QUARTERS OR COVER 1 ROBBER. Choose from release leverage, Bell's location and the sticks. Use the base four or a qualified four-man Replace. | 3 |
-| 5 | 3rd-6-plus | third-and-long | 11. THIRD-AND-6-PLUS: DIME QUARTERS OR COVER 6. Show the common threat picture, use the base four first | 8 |
-| 5 | late-lead | lead-late | 15. TWO-MINUTE / LATE LEAD: QUARTERS OR COVER 6, FOUR RUSH. | 0 |
-| 5 | red-zone | red-zone | 14. RED ZONE: QUARTERS OR COVER 1 ROBBER, MINIMUM DISGUISE. | 5 |
-| 5 | two-minute | two-minute | 15. TWO-MINUTE / LATE LEAD: QUARTERS OR COVER 6, FOUR RUSH. | 6 |
-| 5 | (unlabelled) | | | 27 |
+| Week | Situation | Call | SNAPS |
+|---:|---|---|---:|
+| 5 | second and long | NICKEL WHEN THE RUN REMAINS CREDIBLE. | 11 |
+| 5 | third and medium | NICKEL QUARTERS OR COVER 1 ROBBER. Choose from release leverage, Bell's location and the sticks. Use the base four or a qualified four-man Replace. | 3 |
+| 5 | third and long | DIME QUARTERS OR COVER 6. Show the common threat picture, use the base four first | 8 |
+| 5 | leading late | QUARTERS OR COVER 6, FOUR RUSH. | 0 |
+| 5 | red zone | QUARTERS OR COVER 1 ROBBER, MINIMUM DISGUISE. | 5 |
+| 5 | two-minute | QUARTERS OR COVER 6, FOUR RUSH. | 6 |
+| 5 | other snaps | | 27 |

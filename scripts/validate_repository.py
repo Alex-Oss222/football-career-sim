@@ -620,7 +620,7 @@ def validate(root=ROOT):
     # Prepared 2014 storage is legitimate, but future/foreign receipts are not.
     try:
         from runtime.seasons import SeasonPaths, game_release_errors, require_receipt_season
-        from scripts.render_season_stats import load_receipts, render_views
+        from scripts.render_season_stats import load_receipts, render_views, view_path
         paths = SeasonPaths(2014, root)
         regular = load_receipts(paths.receipts)
         playoff = load_receipts(paths.postseason_receipts)
@@ -654,8 +654,8 @@ def validate(root=ROOT):
                     raise ValueError('no regular-season fixture week')
                 return rows
             errors.extend(receipt_coverage_errors(regular, scheduled_2014))
-            for name, expected in render_views(2014, 'Jacksonville Jaguars', regular).items():
-                view = paths.file_in(paths.stats, name)
+            for name, expected in render_views(2014, 'Jacksonville Jaguars', regular, root).items():
+                view = view_path(paths, name)
                 require(view.is_file() and view.read_text() == expected,
                         '2014 generated statistics missing or stale: ' + name)
             from scripts.render_standings import render as standings_view
@@ -735,7 +735,7 @@ def validate(root=ROOT):
                 results = json.loads((data/'results.json').read_text()) if (data/'results.json').exists() else {}
                 method = (json.loads((data/'methodology.json').read_text())
                           if results or (data/'methodology.json').is_file() else None)
-                for relative, text in award_pages(year, results, method).items():
+                for relative, text in award_pages(year, results, method, root=root).items():
                     path = folder/relative
                     previous = path.read_text() if path.is_file() else ''
                     require(path.is_file() and previous == preserve_event_comments(text, previous),

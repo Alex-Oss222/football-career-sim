@@ -100,7 +100,7 @@ class SeasonLayoutTests(unittest.TestCase):
         self.assertEqual(set(pages), {'README.md'})
         self.assertNotIn('results.json',pages)
         self.assertFalse(any(p.endswith('.svg') for p in pages))
-        self.assertIn('Awaiting closed games and awards',pages['README.md'])
+        self.assertIn('Awarded after the week’s games',pages['README.md'])
         self.assertNotIn('](week_01/README.md)',pages['README.md'])
         with self.assertRaises(ValueError):render_pages(2014,{'recorded':{}})
 

@@ -1,10 +1,8 @@
 # 2014 NFL standings
 
-**Through:** Week 5.
-**Scope:** all 32 clubs; regular-season games only.
-**Source:** generated from the closed-game receipts in `stats/game_receipts/` by `python scripts/render_standings.py 2014`. Past weeks: add `--through-week N`.
+**Through:** Week 5. All 32 clubs, regular-season games only.
 
-Pct counts a tie as half a win. SOV is strength of victory, the combined winning percentage of the clubs a team has beaten; SOS is strength of schedule, the combined winning percentage of all its opponents. Tiebreakers follow the 2013 NFL procedure in Document 2 section 5.3; a tie that survives to the coin toss is reported, never tossed.
+Pct counts a tie as half a win. SOV is strength of victory, the combined winning percentage of the clubs a team has beaten; SOS is strength of schedule, the combined winning percentage of all its opponents. Ties in the standings are broken by the NFL tiebreaking procedure; a tie that survives to the coin toss is reported, never tossed.
 
 ## Division standings
 
@@ -14,73 +12,73 @@ Clubs are ordered by winning percentage, ties broken by the division procedure.
 
 | Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
-| New England Patriots | 4 | 1 | 0 | .800 | 131 | 75 | +56 | 2-0-0 | 2-1-0 | 1-0-0 | 4-0-0 | W3 |
-| Miami Dolphins | 3 | 1 | 0 | .750 | 91 | 84 | +7 | 1-1-0 | 2-0-0 | 1-1-0 | 3-1-0 | W3 |
-| New York Jets | 2 | 3 | 0 | .400 | 116 | 141 | -25 | 2-1-0 | 0-2-0 | 0-0-0 | 0-2-0 | L1 |
-| Buffalo Bills | 0 | 5 | 0 | .000 | 135 | 152 | -17 | 0-2-0 | 0-3-0 | 0-1-0 | 0-3-0 | L5 |
+| New England Patriots | 4 | 1 | 0 | .800 | 131 | 75 | +56 | 2-0-0 | 2-1-0 | 1-0-0 | 4-0-0 | Won 3 |
+| Miami Dolphins | 3 | 1 | 0 | .750 | 91 | 84 | +7 | 1-1-0 | 2-0-0 | 1-1-0 | 3-1-0 | Won 3 |
+| New York Jets | 2 | 3 | 0 | .400 | 116 | 141 | -25 | 2-1-0 | 0-2-0 | 0-0-0 | 0-2-0 | Lost 1 |
+| Buffalo Bills | 0 | 5 | 0 | .000 | 135 | 152 | -17 | 0-2-0 | 0-3-0 | 0-1-0 | 0-3-0 | Lost 5 |
 
 ### AFC North
 
 | Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
-| Pittsburgh Steelers | 4 | 1 | 0 | .800 | 152 | 115 | +37 | 1-1-0 | 3-0-0 | 1-1-0 | 2-1-0 | W4 |
-| Baltimore Ravens | 4 | 1 | 0 | .800 | 152 | 117 | +35 | 2-1-0 | 2-0-0 | 2-1-0 | 3-1-0 | W3 |
-| Cleveland Browns | 3 | 1 | 0 | .750 | 108 | 88 | +20 | 1-1-0 | 2-0-0 | 1-1-0 | 2-1-0 | W1 |
-| Cincinnati Bengals | 2 | 2 | 0 | .500 | 82 | 102 | -20 | 2-0-0 | 0-2-0 | 0-1-0 | 1-2-0 | L1 |
+| Pittsburgh Steelers | 4 | 1 | 0 | .800 | 152 | 115 | +37 | 1-1-0 | 3-0-0 | 1-1-0 | 2-1-0 | Won 4 |
+| Baltimore Ravens | 4 | 1 | 0 | .800 | 152 | 117 | +35 | 2-1-0 | 2-0-0 | 2-1-0 | 3-1-0 | Won 3 |
+| Cleveland Browns | 3 | 1 | 0 | .750 | 108 | 88 | +20 | 1-1-0 | 2-0-0 | 1-1-0 | 2-1-0 | Won 1 |
+| Cincinnati Bengals | 2 | 2 | 0 | .500 | 82 | 102 | -20 | 2-0-0 | 0-2-0 | 0-1-0 | 1-2-0 | Lost 1 |
 
 ### AFC South
 
 | Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
-| **Jacksonville Jaguars** | 3 | 2 | 0 | .600 | 115 | 109 | +6 | 1-1-0 | 2-1-0 | 1-0-0 | 1-2-0 | L2 |
-| Houston Texans | 3 | 2 | 0 | .600 | 122 | 126 | -4 | 2-0-0 | 1-2-0 | 0-0-0 | 1-1-0 | L1 |
-| Indianapolis Colts | 2 | 3 | 0 | .400 | 122 | 134 | -12 | 2-1-0 | 0-2-0 | 1-1-0 | 1-3-0 | L1 |
-| Tennessee Titans | 1 | 4 | 0 | .200 | 106 | 113 | -7 | 1-1-0 | 0-3-0 | 0-1-0 | 0-4-0 | L3 |
+| **Jacksonville Jaguars** | 3 | 2 | 0 | .600 | 115 | 109 | +6 | 1-1-0 | 2-1-0 | 1-0-0 | 1-2-0 | Lost 2 |
+| Houston Texans | 3 | 2 | 0 | .600 | 122 | 126 | -4 | 2-0-0 | 1-2-0 | 0-0-0 | 1-1-0 | Lost 1 |
+| Indianapolis Colts | 2 | 3 | 0 | .400 | 122 | 134 | -12 | 2-1-0 | 0-2-0 | 1-1-0 | 1-3-0 | Lost 1 |
+| Tennessee Titans | 1 | 4 | 0 | .200 | 106 | 113 | -7 | 1-1-0 | 0-3-0 | 0-1-0 | 0-4-0 | Lost 3 |
 
 ### AFC West
 
 | Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
-| San Diego Chargers | 4 | 1 | 0 | .800 | 119 | 101 | +18 | 3-0-0 | 1-1-0 | 0-0-0 | 3-0-0 | W4 |
-| Denver Broncos | 2 | 2 | 0 | .500 | 112 | 76 | +36 | 2-1-0 | 0-1-0 | 1-0-0 | 2-0-0 | L2 |
-| Oakland Raiders | 2 | 2 | 0 | .500 | 107 | 89 | +18 | 1-1-0 | 1-1-0 | 0-0-0 | 2-2-0 | L2 |
-| Kansas City Chiefs | 2 | 3 | 0 | .400 | 77 | 102 | -25 | 1-1-0 | 1-2-0 | 0-1-0 | 1-3-0 | W1 |
+| San Diego Chargers | 4 | 1 | 0 | .800 | 119 | 101 | +18 | 3-0-0 | 1-1-0 | 0-0-0 | 3-0-0 | Won 4 |
+| Denver Broncos | 2 | 2 | 0 | .500 | 112 | 76 | +36 | 2-1-0 | 0-1-0 | 1-0-0 | 2-0-0 | Lost 2 |
+| Oakland Raiders | 2 | 2 | 0 | .500 | 107 | 89 | +18 | 1-1-0 | 1-1-0 | 0-0-0 | 2-2-0 | Lost 2 |
+| Kansas City Chiefs | 2 | 3 | 0 | .400 | 77 | 102 | -25 | 1-1-0 | 1-2-0 | 0-1-0 | 1-3-0 | Won 1 |
 
 ### NFC East
 
 | Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
-| Philadelphia Eagles | 2 | 3 | 0 | .400 | 119 | 142 | -23 | 2-1-0 | 0-2-0 | 1-0-0 | 2-1-0 | W1 |
-| New York Giants | 2 | 3 | 0 | .400 | 107 | 108 | -1 | 1-2-0 | 1-1-0 | 0-1-0 | 2-2-0 | L3 |
-| Washington Redskins | 1 | 4 | 0 | .200 | 111 | 133 | -22 | 1-2-0 | 0-2-0 | 1-1-0 | 1-2-0 | L1 |
-| Dallas Cowboys | 1 | 4 | 0 | .200 | 101 | 119 | -18 | 1-2-0 | 0-2-0 | 0-0-0 | 0-3-0 | W1 |
+| Philadelphia Eagles | 2 | 3 | 0 | .400 | 119 | 142 | -23 | 2-1-0 | 0-2-0 | 1-0-0 | 2-1-0 | Won 1 |
+| New York Giants | 2 | 3 | 0 | .400 | 107 | 108 | -1 | 1-2-0 | 1-1-0 | 0-1-0 | 2-2-0 | Lost 3 |
+| Washington Redskins | 1 | 4 | 0 | .200 | 111 | 133 | -22 | 1-2-0 | 0-2-0 | 1-1-0 | 1-2-0 | Lost 1 |
+| Dallas Cowboys | 1 | 4 | 0 | .200 | 101 | 119 | -18 | 1-2-0 | 0-2-0 | 0-0-0 | 0-3-0 | Won 1 |
 
 ### NFC North
 
 | Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
-| Detroit Lions | 3 | 2 | 0 | .600 | 110 | 151 | -41 | 2-1-0 | 1-1-0 | 1-0-0 | 2-1-0 | W1 |
-| Minnesota Vikings | 2 | 3 | 0 | .400 | 77 | 120 | -43 | 1-1-0 | 1-2-0 | 1-0-0 | 1-3-0 | W1 |
-| Green Bay Packers | 2 | 3 | 0 | .400 | 126 | 84 | +42 | 1-1-0 | 1-2-0 | 1-2-0 | 1-3-0 | L1 |
-| Chicago Bears | 2 | 3 | 0 | .400 | 101 | 111 | -10 | 1-1-0 | 1-2-0 | 0-1-0 | 1-2-0 | L3 |
+| Detroit Lions | 3 | 2 | 0 | .600 | 110 | 151 | -41 | 2-1-0 | 1-1-0 | 1-0-0 | 2-1-0 | Won 1 |
+| Minnesota Vikings | 2 | 3 | 0 | .400 | 77 | 120 | -43 | 1-1-0 | 1-2-0 | 1-0-0 | 1-3-0 | Won 1 |
+| Green Bay Packers | 2 | 3 | 0 | .400 | 126 | 84 | +42 | 1-1-0 | 1-2-0 | 1-2-0 | 1-3-0 | Lost 1 |
+| Chicago Bears | 2 | 3 | 0 | .400 | 101 | 111 | -10 | 1-1-0 | 1-2-0 | 0-1-0 | 1-2-0 | Lost 3 |
 
 ### NFC South
 
 | Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
-| Atlanta Falcons | 4 | 1 | 0 | .800 | 137 | 73 | +64 | 2-0-0 | 2-1-0 | 2-0-0 | 4-0-0 | W3 |
-| Tampa Bay Buccaneers | 3 | 2 | 0 | .600 | 110 | 95 | +15 | 2-0-0 | 1-2-0 | 2-1-0 | 3-1-0 | W1 |
-| New Orleans Saints | 2 | 3 | 0 | .400 | 125 | 119 | +6 | 1-1-0 | 1-2-0 | 0-2-0 | 2-2-0 | L1 |
-| Carolina Panthers | 1 | 4 | 0 | .200 | 115 | 154 | -39 | 1-2-0 | 0-2-0 | 0-1-0 | 1-2-0 | W1 |
+| Atlanta Falcons | 4 | 1 | 0 | .800 | 137 | 73 | +64 | 2-0-0 | 2-1-0 | 2-0-0 | 4-0-0 | Won 3 |
+| Tampa Bay Buccaneers | 3 | 2 | 0 | .600 | 110 | 95 | +15 | 2-0-0 | 1-2-0 | 2-1-0 | 3-1-0 | Won 1 |
+| New Orleans Saints | 2 | 3 | 0 | .400 | 125 | 119 | +6 | 1-1-0 | 1-2-0 | 0-2-0 | 2-2-0 | Lost 1 |
+| Carolina Panthers | 1 | 4 | 0 | .200 | 115 | 154 | -39 | 1-2-0 | 0-2-0 | 0-1-0 | 1-2-0 | Won 1 |
 
 ### NFC West
 
 | Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
-| Arizona Cardinals | 3 | 1 | 0 | .750 | 88 | 71 | +17 | 2-0-0 | 1-1-0 | 1-0-0 | 1-1-0 | W2 |
-| Seattle Seahawks | 3 | 1 | 0 | .750 | 88 | 96 | -8 | 2-0-0 | 1-1-0 | 0-0-0 | 2-0-0 | W2 |
-| St. Louis Rams | 2 | 2 | 0 | .500 | 80 | 98 | -18 | 2-0-0 | 0-2-0 | 0-0-0 | 2-2-0 | L1 |
-| San Francisco 49ers | 2 | 3 | 0 | .400 | 92 | 136 | -44 | 1-2-0 | 1-1-0 | 0-1-0 | 2-2-0 | L1 |
+| Arizona Cardinals | 3 | 1 | 0 | .750 | 88 | 71 | +17 | 2-0-0 | 1-1-0 | 1-0-0 | 1-1-0 | Won 2 |
+| Seattle Seahawks | 3 | 1 | 0 | .750 | 88 | 96 | -8 | 2-0-0 | 1-1-0 | 0-0-0 | 2-0-0 | Won 2 |
+| St. Louis Rams | 2 | 2 | 0 | .500 | 80 | 98 | -18 | 2-0-0 | 0-2-0 | 0-0-0 | 2-2-0 | Lost 1 |
+| San Francisco 49ers | 2 | 3 | 0 | .400 | 92 | 136 | -44 | 1-2-0 | 1-1-0 | 0-1-0 | 2-2-0 | Lost 1 |
 
 ## Conference standings and playoff seeding
 

@@ -1,8 +1,6 @@
 # Jacksonville Jaguars 2014: Week 4 at San Diego Chargers
 
-**Result:** L 20-21. **Generated** by `python scripts/render_team_tracker.py 2014` from receipt `2014-week04-jacksonville-jaguars-at-san-diego-chargers`; do not edit by hand.
-
-Reader view for the user only. It is not an input to the simulation or to any evaluation.
+**Result:** L 20-21. [Season tracker](../README.md)
 
 ## This game
 
@@ -168,4 +166,4 @@ Record through Week 4: 3-1. Rate stats are recalculated from the totals, never a
 |---|---|---|---|---|---|---|---|
 | Andrew Hawkins | 4 | 10 | 249 | 24.9 | 9 | 100 | 11.1 |
 
-The receipts do not record the longest completion, the longest field goal, or return and defensive touchdowns, so those template columns are left out rather than guessed.
+The game records do not include the longest completion, the longest field goal, or return and defensive touchdowns, so those columns are left out rather than guessed.
