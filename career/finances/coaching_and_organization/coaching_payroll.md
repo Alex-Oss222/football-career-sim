@@ -1,67 +1,79 @@
-# Jacksonville organization finances
+# Coaching payroll
 
-[Player cap](../salary_cap/cap_tracker.md) | [Finance index](../README.md)
+[Player cap](../salary_cap/cap_tracker.md) · [Finances](../README.md) · [Coaching staff](../../2014/Team_Operations/Staff/README.md)
 
-As of September 8, 2014. Whole US dollars. Generated from the executed staff register; no second editable salary ledger.
+As of October 5, 2014. Whole US dollars.
 
 ## Coaching contracts
 
 **Nine-year view**
 
-| Coach | Role | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | Guarantee |
+| Coach | Job | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | Guarantee |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Alex Stone | Head coach | Unspecified | Unspecified | Unspecified |  |  |  |  |  |  | 2013–2016 fully guaranteed; compensation not supplied |
-| Romeo Crennel | Defensive coordinator | $1,650,000 | $1,700,000 |  |  |  |  |  |  |  | Guaranteed, subject to offset |
-| Mike Tice | Offensive coordinator | $1,150,000 | $1,200,000 |  |  |  |  |  |  |  | Guaranteed, subject to offset |
-| Frank Bush | Linebackers coach | $575,000 |  |  |  |  |  |  |  |  | Guaranteed, subject to offset |
-| George Yarno | Offensive line / run-game coach | $575,000 |  |  |  |  |  |  |  |  | Guaranteed, subject to offset |
-| Jeremy Bates | Quarterbacks coach | $525,000 |  |  |  |  |  |  |  |  | Guaranteed, subject to offset |
-| Darryl Drake | Wide receivers coach | $475,000 |  |  |  |  |  |  |  |  | Guaranteed, subject to offset |
-| Tim Spencer | Running backs coach | $450,000 |  |  |  |  |  |  |  |  | Guaranteed, subject to offset |
-| Tony Oden | Defensive backs coach | $450,000 |  |  |  |  |  |  |  |  | Guaranteed, subject to offset |
-| Anthony Pleasant | Defensive line coach | $425,000 |  |  |  |  |  |  |  |  | Guaranteed, subject to offset |
-| John Zernhelt | Tight ends coach | $400,000 |  |  |  |  |  |  |  |  | Guaranteed, subject to offset |
-| Charlie Skalaski | Offensive assistant / assistant quarterbacks | $275,000 |  |  |  |  |  |  |  |  | Guaranteed, subject to offset |
-| Mike Westhoff | Special teams coordinator | $750,000 | $750,000 |  |  |  |  |  |  |  | 2014 guaranteed, subject to offset; 2015 non-guaranteed; no signing bonus |
+| Alex Stone | Head coach | $2,800,000 | $2,800,000 | $2,800,000 |  |  |  |  |  |  | Guaranteed, with offset |
+| Romeo Crennel | Defensive coordinator | $1,650,000 | $1,700,000 |  |  |  |  |  |  |  | Guaranteed, with offset |
+| Mike Tice | Offensive coordinator | $1,150,000 | $1,200,000 |  |  |  |  |  |  |  | Guaranteed, with offset |
+| Mike Westhoff | Special teams coordinator | $750,000 | $750,000 |  |  |  |  |  |  |  | 2014 guaranteed, with offset; 2015 not |
+| Frank Bush | Linebackers coach | $575,000 |  |  |  |  |  |  |  |  | Guaranteed, with offset |
+| George Yarno | Offensive line / run-game coach | $575,000 |  |  |  |  |  |  |  |  | Guaranteed, with offset |
+| Jeremy Bates | Quarterbacks coach | $525,000 |  |  |  |  |  |  |  |  | Guaranteed, with offset |
+| Darryl Drake | Wide receivers coach | $475,000 |  |  |  |  |  |  |  |  | Guaranteed, with offset |
+| Tim Spencer | Running backs coach | $450,000 |  |  |  |  |  |  |  |  | Guaranteed, with offset |
+| Tony Oden | Defensive backs coach | $450,000 |  |  |  |  |  |  |  |  | Guaranteed, with offset |
+| Anthony Pleasant | Defensive line coach | $425,000 |  |  |  |  |  |  |  |  | Guaranteed, with offset |
+| John Zernhelt | Tight ends coach | $400,000 |  |  |  |  |  |  |  |  | Guaranteed, with offset |
+| Charlie Skalaski | Offensive assistant / assistant quarterbacks | $275,000 |  |  |  |  |  |  |  |  | Guaranteed, with offset |
 
 **Additional three years**
 
-| Coach | Role | 2023 | 2024 | 2025 | Guarantee |
+| Coach | Job | 2023 | 2024 | 2025 | Guarantee |
 |---|---|---|---|---|---|
-| Alex Stone | Head coach |  |  |  | 2013–2016 fully guaranteed; compensation not supplied |
-| Romeo Crennel | Defensive coordinator |  |  |  | Guaranteed, subject to offset |
-| Mike Tice | Offensive coordinator |  |  |  | Guaranteed, subject to offset |
-| Frank Bush | Linebackers coach |  |  |  | Guaranteed, subject to offset |
-| George Yarno | Offensive line / run-game coach |  |  |  | Guaranteed, subject to offset |
-| Jeremy Bates | Quarterbacks coach |  |  |  | Guaranteed, subject to offset |
-| Darryl Drake | Wide receivers coach |  |  |  | Guaranteed, subject to offset |
-| Tim Spencer | Running backs coach |  |  |  | Guaranteed, subject to offset |
-| Tony Oden | Defensive backs coach |  |  |  | Guaranteed, subject to offset |
-| Anthony Pleasant | Defensive line coach |  |  |  | Guaranteed, subject to offset |
-| John Zernhelt | Tight ends coach |  |  |  | Guaranteed, subject to offset |
-| Charlie Skalaski | Offensive assistant / assistant quarterbacks |  |  |  | Guaranteed, subject to offset |
-| Mike Westhoff | Special teams coordinator |  |  |  | 2014 guaranteed, subject to offset; 2015 non-guaranteed; no signing bonus |
+| Alex Stone | Head coach |  |  |  | Guaranteed, with offset |
+| Romeo Crennel | Defensive coordinator |  |  |  | Guaranteed, with offset |
+| Mike Tice | Offensive coordinator |  |  |  | Guaranteed, with offset |
+| Mike Westhoff | Special teams coordinator |  |  |  | 2014 guaranteed, with offset; 2015 not |
+| Frank Bush | Linebackers coach |  |  |  | Guaranteed, with offset |
+| George Yarno | Offensive line / run-game coach |  |  |  | Guaranteed, with offset |
+| Jeremy Bates | Quarterbacks coach |  |  |  | Guaranteed, with offset |
+| Darryl Drake | Wide receivers coach |  |  |  | Guaranteed, with offset |
+| Tim Spencer | Running backs coach |  |  |  | Guaranteed, with offset |
+| Tony Oden | Defensive backs coach |  |  |  | Guaranteed, with offset |
+| Anthony Pleasant | Defensive line coach |  |  |  | Guaranteed, with offset |
+| John Zernhelt | Tight ends coach |  |  |  | Guaranteed, with offset |
+| Charlie Skalaski | Offensive assistant / assistant quarterbacks |  |  |  | Guaranteed, with offset |
 
-## Payroll and open amounts
+## Payroll by season
 
 **Nine-year view**
 
 | Measure | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 |
 |---|---|---|---|---|---|---|---|---|---|
-| Scheduled assistant salaries | $7,700,000 | $3,650,000 |  |  |  |  |  |  |  |
+| Head coach | $2,800,000 | $2,800,000 | $2,800,000 |  |  |  |  |  |  |
+| Assistant coaches | $7,700,000 | $3,650,000 |  |  |  |  |  |  |  |
+| Total | $10,500,000 | $6,450,000 | $2,800,000 |  |  |  |  |  |  |
 
 **Additional three years**
 
 | Measure | 2023 | 2024 | 2025 |
 |---|---|---|---|
-| Scheduled assistant salaries |  |  |  |
+| Head coach |  |  |  |
+| Assistant coaches |  |  |  |
+| Total |  |  |  |
 
-The head-coach salary, total organization payroll, ownership budget, Caldwell compensation, other front-office compensation and actual cash paid remain unspecified. The assistant subtotal is not an available hiring budget. Coaching pay is an organization expense and never enters the player salary cap.
+Coaching pay is a club expense and never counts against the player salary cap. The assistant total is scheduled salary, not a hiring budget.
 
-## Contract terms and history
+## Contract terms
 
-[Stone’s accepted agreement](../../2013/offseason/head_coach_contract.md) retains the four-year full guarantee; this view does not supply missing salary, offsets or buyout clauses. [The staff register](../../2014/Team_Operations/Staff/coaching_staff.md) owns assistant terms, offsets, termination treatment and authority. Lowry’s $625,000 scheduled 2014 salary ceased on his January 12 departure; it is not counted. Westhoff replaced him February 11 at $750,000 in each of 2014 and 2015; only 2014 is guaranteed. The other executed assistant salaries retain their recorded guarantee and offset terms. Scheduled pay is distinct from cash already disbursed and remaining unpaid liability.
+Assistant contracts: the salary is guaranteed for the term if the club dismisses the coach without cause. Salary still owed after a dismissal without cause is reduced dollar for dollar by pay earned in another NFL or major-college coaching job during the guaranteed period.
 
-## Renewal and handoff
+Alan Lowry left on January 12, 2014; his 2014 salary of $625,000 ended with the move and is not counted.
 
-Review the nine position/assistant contracts ending after 2014, the coordinator contracts ending after 2015 and Stone’s term ending after 2016 at the relevant exit reviews. No renewal, raise, departure or replacement is assumed. Preserve earned pay, remaining guarantees and verified offsets when an actual change occurs; record it in the existing staff changes owner and regenerate this page.
+Alex Stone's end date, salary, offset, dismissal terms, signing bonus and options were completed from comparable head-coach contracts of the time; the rest is as signed ([Contract and jobs](../../Stone/Contract_and_Jobs.md)).
+
+## Contracts ending
+
+| After the season | Coaches |
+|---|---|
+| 2014 | Frank Bush, George Yarno, Jeremy Bates, Darryl Drake, Tim Spencer, Tony Oden, Anthony Pleasant, John Zernhelt, Charlie Skalaski |
+| 2015 | Romeo Crennel, Mike Tice, Mike Westhoff |
+| 2016 | Alex Stone |

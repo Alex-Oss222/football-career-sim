@@ -365,7 +365,13 @@
     "foundation/roles/head_coach.md",
     "foundation/roles/coordinator.md",
     "foundation/roles/position_coach.md",
-    "foundation/roles/between_jobs.md"
+    "foundation/roles/between_jobs.md",
+    "career/Stone/README.md",
+    "career/Stone/Contract_and_Jobs.md",
+    "runtime/coaches.py",
+    "scripts/render_coach_pages.py",
+    "data/people/coaches/alex_stone.json",
+    "library/nfl_head_coach_contracts_2005_2014.md"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",
@@ -426,6 +432,7 @@
   "current_records": {
     "roster": "career/2014/Team_Operations/Team/Roster/roster.md",
     "staff": "career/2014/Team_Operations/Staff/coaching_staff.md",
+    "staff_page": "career/2014/Team_Operations/Staff/README.md",
     "depth_chart": "data/2014/Team_Operations/Team/Depth_Chart/working_depth_chart.json",
     "cap": "career/2014/Team_Operations/Finances/salary_cap/cap_worksheet.md",
     "calendar": "career/2014/Calendar.md",

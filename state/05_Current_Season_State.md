@@ -17,7 +17,7 @@ This document states what is true now and what comes next. The [2014 record](../
 | Document 2 | `c4bb8d569467f085882da407c8660cbc4001452d` | Active foundation source |
 | Document 3 | `4a212556941707758df6b497fab18abbba83185d` | Active foundation source |
 | Document 4 | `JAX-2014-OCT05-REGISTER-88` | Roster, staff, medical and role register |
-| Current job record | `d84f4164f717d9ed817a1e5d48a2484f9dcce12d` | [Job, authority and delegation](current_job.json) |
+| Current job record | `5afc870760416b1789d15a67f742587e397ab39d` | [Job, authority and delegation](current_job.json) |
 | Decision queue | `9e1d6f56b5b1b6d013a4e2967df839eaa727cec3` | [Open and resolved decisions](decision_queue.json) |
 | Document 6 | [Event records and handoff protocol](../foundation/06_Event_Records_and_Handoff.md) | Latest closed football event, and latest closed event of any kind: [Week 5 against Pittsburgh](../career/2014/Regular_Season/Games/Week_05/output.md), October 5, 2014 (Pittsburgh 27, Jacksonville 10), after the game-day clock advance of October 5 and the Pittsburgh preparation closed October 4 |
 
@@ -39,7 +39,7 @@ This document states what is true now and what comes next. The [2014 record](../
 <!-- current-job:begin -->
 | Field | Current value |
 |---|---|
-| Job | Head coach, Jacksonville Jaguars (NFL), since January 15, 2013; retained January 15, 2014 on his existing contract ([job record](current_job.json); [Document 3](../foundation/03_Head_Coach_Organization_and_Authority_Canon.md#31-head-coach-contract); [contract](../career/2013/offseason/head_coach_contract.md); [hire](../career/2013/offseason/hiring_search.md#entry-7--jacksonville-counter-resolved-offer-accepted); [retention](../career/2013/season_review/owner_and_gm_review.md#entry-3-the-clubs-decision)) |
+| Job | Head coach, Jacksonville Jaguars (NFL), since January 15, 2013; contract through the 2016 season, ending the later of January 31, 2017 or the day after Jacksonville's last game of the 2016 season; retained January 15, 2014 on his existing contract ([job record](current_job.json); [contract](../career/Stone/Contract_and_Jobs.md); [signed terms](../career/2013/offseason/head_coach_contract.md); [hire](../career/2013/offseason/hiring_search.md#entry-7--jacksonville-counter-resolved-offer-accepted); [retention](../career/2013/season_review/owner_and_gm_review.md#entry-3-the-clubs-decision)) |
 | Employment decided by | Shad Khan and David Caldwell (Document 3 row 1); direct supervisor, evaluator, review cadence and escalation not recorded ([Document 3](../foundation/03_Head_Coach_Organization_and_Authority_Canon.md#32-reporting-and-evaluation)) |
 | Employer's measures | David Caldwell, first 2014 measures: the scoring margin; the quarterback's ball security and protection ([record](../career/2013/season_review/owner_and_gm_review.md#follow-ups)) |
 | Employer's requests | Shad Khan: prepare the London week for Dallas (November 9, 2014, Wembley) on the 2013 Wembley plan ([record](../career/2013/season_review/owner_and_gm_review.md#follow-ups)) |

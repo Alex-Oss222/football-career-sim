@@ -113,7 +113,11 @@ class CapTrackerTests(unittest.TestCase):
         self.assertNotIn('Release comparisons',main)
         self.assertIn('$7,700,000',organization)
         self.assertIn('$3,650,000',organization)
-        self.assertIn('Alex Stone | Head coach | Unspecified',organization)
+        # Every coach's salary comes from his permanent record; the head coach's is the reconstructed term.
+        from runtime import coaches
+        stone=coaches.current_contract(coaches.load('alex_stone',ROOT))
+        self.assertIn('Alex Stone | Head coach | $%s' % format(stone['salary']['2014'],','),organization)
+        self.assertNotIn('Unspecified',organization)
         self.assertNotIn('Alex Stone',main)
 
     def test_render_uses_current_sources_without_changing_frozen_financial_inputs(self):

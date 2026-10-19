@@ -1,12 +1,12 @@
 # Career layer: the current job and the decision queue
 
-Two state files record the coach's job and the decisions still open. Code reads them to refuse an event that an open decision holds, and the views render from them: section 2 and section 8 of Document 5, the phase-control table of the staff register, and the head coach's desk in the active season's README. The code is [runtime/current_job.py](../runtime/current_job.py), [runtime/decision_queue.py](../runtime/decision_queue.py) and [scripts/render_career_views.py](../scripts/render_career_views.py).
+Two state files record the coach's job and the decisions still open. Code reads them to refuse an event that an open decision holds, and the views render from them: section 2 and section 8 of Document 5 and the head coach's desk, the whole of the active season's README. The Staff page (who calls what) is built from the job record by [scripts/render_coach_pages.py](../scripts/render_coach_pages.py); the staff register's phase-control table is history through October 5, 2014 and is no longer written. The code is [runtime/current_job.py](../runtime/current_job.py), [runtime/decision_queue.py](../runtime/decision_queue.py) and [scripts/render_career_views.py](../scripts/render_career_views.py).
 
 ## 1. What the two files own
 
 [state/current_job.json](../state/current_job.json) owns:
 
-- the holder, his employment status and his appointments: employer, title, role, unit, start and end, the term's recorded basis and the hire and retention history;
+- the holder, his employment status and his appointments: employer, title, role, unit, start and end, the pointer to the contract in the coach's permanent record (`contract_record`) and the hire and retention history;
 - the reporting line, with every field null where Document 3 records `[UNSET]`;
 - an index of the employer's measures and requests, each linked to its source;
 - the current values of final authority by domain, one row for each row of Document 3's authority map, with the holder's part in each row normalized;
@@ -17,11 +17,11 @@ Two state files record the coach's job and the decisions still open. Code reads 
 
 The files do not own:
 
-- the contract terms (Document 3 section 3.1 and `career/2013/offseason/head_coach_contract.md`);
+- the contract terms and the term's end: Stone's coach record, `data/people/coaches/alex_stone.json`, holds the signed terms (`career/2013/offseason/head_coach_contract.md`) and the October 19, 2026 amendment that completed the rest, and `current_job.term` and `current_job.contract_terms` read them there;
 - the boundary rules on what reaches the coach (Document 3 section 6.2);
 - the calendar of stops for the user and the user's open questions on the career's own rules ([season cycle and career milestones](season_cycle_milestones.md));
 - the clock, the dated events, research gaps and labelled records (Document 5);
-- the staff list, the assistants' contracts and the payroll (the staff register and the coaching payroll).
+- the staff list, the assistants' contracts and the payroll (the coach records in `data/people/coaches/`, shown on the Staff page and the coaching payroll).
 
 Neither file is a current record in `docs/repository_map.json`, because the season handoff copies every current record into the next year. The map names them under `career_layer`.
 
@@ -38,7 +38,7 @@ Every `record` is `{"path", "anchor"?, "pointer"?}`: a repository-relative path 
 | `holder`, `status`, `current_appointment` | The holder's party id; `EMPLOYED` or `BETWEEN_JOBS`; the one open-ended appointment, or null between jobs |
 | `parties` | Every person or group the record names, with `name`, `kind` and optional `aliases` |
 | `appointments[].employer`, `title`, `role`, `unit`, `start`, `end` | The job; `role` selects the desk (`head_coach` and `interim_head_coach` share one) |
-| `term`, `contract`, `history` | The recorded end date or its basis, links to the contract, and dated `accepted` and `retained` entries with their events |
+| `contract_record`, `history` | The coach record and the contract in it that hold the term (read through `current_job.term`), and dated `accepted` and `retained` entries with their events |
 | `reporting` | Who decides employment (Document 3 row 1); supervisor, evaluator, cadence and escalation, null when unrecorded |
 | `evaluation`, `employer_requests` | The employer's measures by season, with an optional `label` taken from the source (for example "first 2014 measures"), and requests with status `OPEN`, `MET` or `WITHDRAWN` |
 | `default_sees` | A link to Document 3 section 6.2; no text is copied |
@@ -130,15 +130,14 @@ An `IN_FORCE` standing instruction may answer a live pause or close a queue item
 |---|---|
 | `current-job` | Document 5, section 2 |
 | `decision-queue` | Document 5, section 8 (the open items, the holder's first, each group by deadline) |
-| `phase-control` | The staff register, under Phase control |
-| `desk` | The active season's README, after its calendar line; the begin marker names the role and season |
+| `desk` | The whole of the active season's README, with no markers |
 | `decision-classes` | This file, section 3 |
 
 It also keeps two rows after Document 4's in Document 5's manifest, naming the git blob of each file. That binds both files into Document 5's digest and so into the private snapshot: every change to either file moves the digest.
 
-The views read only the two files, Document 5's master-date cell and the section 9 rows still marked Scheduled, the active season's fixtures, `docs/repository_map.json`, and whether the next game's week README and call sheet and the last game's `output.md` exist. They never read a receipt, standings, awards or the wall clock. Every link is written relative to its file and must resolve, headings included. The desk and phase-control blocks are reader prose: a word from the voice rule in AGENTS.md stops the render and names the source field to reword. The desk is built for the head coach only; any other role reports that its desk is defined but not built.
+The views read the two files, Stone's coach record (the contract), Document 5's master-date cell and the section 9 rows still marked Scheduled, the active season's fixtures, the closed events (to link a standing instruction to the page of the event that set it), `docs/repository_map.json`, whether the next game's week README and call sheet and the last game's `output.md` exist, and, for the desk's last result and record only, the employer club's own closed-game receipts; never another club's receipt, the standings, awards or the wall clock. Every link is written relative to its file and must resolve, headings included. The desk is reader prose and a clean page (docs/rebuild_plan.md, rule 4): a word from the voice rule in AGENTS.md stops the render and names the source field to reword, an open decision, dated event or standing instruction shows only its clauses free of process words, and `--check` reports any clean-page problem. The desk is built for the head coach only; any other role reports that its desk is defined but not built.
 
-`--check` is read-only. It reports a stale block, a missing or duplicated marker, a desk anywhere but the active season's README and anything that stops the render, and exits 1. Repository validation runs the same check. Writing is refused while any regular-season, postseason or preseason Jacksonville game is paused.
+`--check` is read-only. It reports a stale block or desk, a missing or duplicated marker, a desk block in any README and anything that stops the render, and exits 1. Repository validation runs the same check. Writing is refused while any regular-season, postseason or preseason Jacksonville game is paused.
 
 ## 7. Cadence
 

@@ -4,7 +4,8 @@ Mutations run on one throwaway copy of the checkout, with any paused-game
 record removed so a live pause cannot decide a test; each test restores the
 files it changed. Weeks come from the fixtures and receipts (the first
 unplayed Jacksonville week, then the first unplayed postseason round) and
-dates from the master date, so the tests hold at any later clock.
+dates from the master date, so the tests hold at any later clock. The desk
+is the whole of the active season's README, a clean page.
 """
 from datetime import date
 import json
@@ -22,12 +23,13 @@ from runtime import current_job, decision_queue
 from runtime.decision_queue import event
 from runtime.events import repository_map
 from runtime.player_bios import master_date
-from runtime.seasons import SeasonPaths, current_record
+from runtime.clean_pages import page_errors
+from runtime.seasons import SeasonPaths
 from scripts import render_career_views as views
+from scripts import render_coach_pages
 from scripts.validate_repository import anchors, without_code
 
 STATE = "state/05_Current_Season_State.md"
-DESK = re.compile(r"<!-- desk:begin[^>]*-->.*?<!-- desk:end -->", re.S)
 LINK = re.compile(r"\[[^\]\n]+\]\(([^\s)]+)\)")
 
 
@@ -104,7 +106,10 @@ class CareerViewTests(unittest.TestCase):
         return views.render(self.root)[self.root / path]
 
     def desk(self):
-        return DESK.search(self.rendered(self.readme.relative_to(self.root)))[0]
+        return self.rendered(self.readme.relative_to(self.root))
+
+    def section(self, heading):
+        return self.desk().split("## %s\n" % heading, 1)[1].split("\n## ", 1)[0]
 
     def assertHas(self, text, errors):
         self.assertTrue(any(text in e for e in errors), "%r not in %r" % (text, errors))
@@ -123,41 +128,60 @@ class CareerViewTests(unittest.TestCase):
         self.assertHas("Stale career view: %s (desk)" % self.readme.relative_to(self.root).as_posix(), errors)
         self.assertIn("Test plan for the views", self.desk())
 
-    def test_delegation_change_makes_staff_register_stale(self):
+    def test_delegation_change_makes_the_staff_page_stale_not_the_register(self):
         def change(current):
             offense = next(r for r in current["delegation"]["play_calling"]
                            if r["phase"] == "offense" and r["to"] is None)
             offense["stone_retains"] = "A changed retained role"
+        register = self.paths.staff_register.relative_to(self.root).as_posix()
+        before = (self.root / register).read_bytes()
         self.with_job(change)
-        staff = current_record("staff", self.root).relative_to(self.root).as_posix()
-        errors = views.check(self.root)
-        self.assertHas("Stale career view: %s (phase-control)" % staff, errors)
-        self.assertIn("A changed retained role", self.rendered(staff))
+        page = self.paths.staff_page.relative_to(self.root).as_posix()
+        self.assertHas("Coach page stale or hand-edited: %s" % page, render_coach_pages.check(self.root))
+        self.assertIn("Offense: a changed retained role.", render_coach_pages.build(self.root)[page])
+        self.assertNotIn(self.root / register, views.render(self.root))
+        views.write(self.root)
+        self.assertEqual((self.root / register).read_bytes(), before)
 
-    def test_desk_belongs_only_to_the_active_season(self):
+    def test_no_readme_carries_a_desk_block(self):
         other = next(p for p in sorted(self.root.glob("career/*/README.md")) if p != self.readme)
         rel = other.relative_to(self.root).as_posix()
         self.write(rel, other.read_text(encoding="utf-8")
                    + "\n<!-- desk:begin role=head_coach season=1 -->\n## A stray desk\n<!-- desk:end -->\n")
         errors = views.check(self.root)
-        self.assertHas("Career view desk must appear once, in %s: %s has 1"
-                       % (self.readme.relative_to(self.root).as_posix(), rel), errors)
-        self.assertHas("Stale career view: %s (desk)" % rel, errors)
+        self.assertHas("Career view desk block found: %s has 1; the desk is the whole of %s"
+                       % (rel, self.readme.relative_to(self.root).as_posix()), errors)
+        self.assertHas("Stale career view: %s (desk-block)" % rel, errors)
         views.write(self.root)
         self.assertNotIn("desk:begin", (self.root / rel).read_text(encoding="utf-8"))
         self.assertEqual(views.check(self.root), [])
 
-    def test_write_inserts_a_missing_desk_after_the_calendar_line(self):
+    def test_write_rebuilds_the_whole_desk(self):
         rel = self.readme.relative_to(self.root).as_posix()
         text = self.readme.read_text(encoding="utf-8")
-        self.write(rel, re.sub(r"\n\n<!-- desk:begin[^>]*-->.*?<!-- desk:end -->", "", text, flags=re.S))
-        self.assertHas("Career view desk must appear once", views.check(self.root))
+        self.write(rel, text + "\nA line added by hand.\n")
+        self.assertHas("Stale career view: %s (desk)" % rel, views.check(self.root))
         views.write(self.root)
-        written = self.readme.read_text(encoding="utf-8")
-        self.assertEqual(written, text)
-        lines = written.split("\n")
-        calendar = next(i for i, line in enumerate(lines) if line.startswith("[Calendar]("))
-        self.assertTrue(lines[calendar + 2].startswith("<!-- desk:begin role=head_coach season=%d -->" % self.season))
+        self.assertEqual(self.readme.read_text(encoding="utf-8"), text)
+        self.assertNotIn("<!--", text)
+
+    def test_desk_is_a_clean_page_in_its_fixed_order(self):
+        desk = self.desk()
+        self.assertEqual(page_errors(self.readme.relative_to(self.root).as_posix(), desk, (), self.root), [])
+        order = ["## Waiting on you", "## Next event", "## Coming up", "## With others", "## Standing instructions",
+                 "## Who calls what", "## Records", "## Season folders"]
+        self.assertEqual(sorted(order, key=desk.index), order)
+        self.assertLess(desk.index("[Coach page]("), desk.index("## Waiting on you"))
+        for word in ("frozen", "inputs", "Holds", "gate", "row ", "Document "):
+            self.assertNotIn(word, self.section("Waiting on you") + self.section("Coming up"))
+        self.assertNotIn(".json", desk)
+
+    def test_waiting_items_name_the_game_they_are_due_for(self):
+        self.with_items(self.item(question="The test plan: the opening script for the week."))
+        game = next(g for g in club_games(self.root) if g["week"] == self.week)
+        line = next(l for l in self.section("Waiting on you").splitlines() if "Test plan for the views" in l)
+        self.assertIn("To settle: the opening script for the week.", line)
+        self.assertIn("Due before kickoff, %s, %s" % (game["weekday"], views.day(game["date"], False)), line)
 
     def test_missing_marker_is_reported(self):
         state = (self.root / STATE).read_text(encoding="utf-8")
@@ -196,7 +220,7 @@ class CareerViewTests(unittest.TestCase):
                 self.write(record.relative_to(self.root), json.dumps({"status": "closed"}))
                 self.assertEqual(views.write(self.root), [])
 
-    def test_receipts_never_change_the_views(self):
+    def test_other_clubs_receipts_never_change_the_views(self):
         before = views.render(self.root)
         fake = self.paths.receipts / ("week_%02d_fake-at-test.json" % self.week)
         self.write(fake.relative_to(self.root), json.dumps({"week": self.week, "home": "A", "away": "B"}))
@@ -207,8 +231,9 @@ class CareerViewTests(unittest.TestCase):
         blocks = re.compile(r"<!-- ([a-z-]+):begin[^>]*-->.*?<!-- \1:end -->", re.S)
         checked = 0
         for path, text in texts.items():
-            for block in blocks.finditer(text):
-                for dest in LINK.findall(block[0]):
+            parts = [text] if path == self.readme else [b[0] for b in blocks.finditer(text)]
+            for block in parts:
+                for dest in LINK.findall(block):
                     parts = urlsplit(dest)
                     target = (path.parent / unquote(parts.path)).resolve()
                     self.assertTrue(target.is_file(), "%s: %s" % (path.relative_to(self.root), dest))
@@ -228,7 +253,7 @@ class CareerViewTests(unittest.TestCase):
     def test_desk_says_which_game_decisions_are_not_live_calls(self):
         decisions = current_job.appointment(self.job)["delegation"]["game_management"]["decisions"]
         alias = (self.job["parties"][self.holder].get("aliases") or [self.job["parties"][self.holder]["name"]])[0]
-        line = next(l for l in self.desk().splitlines() if "Not %s's live calls: " % alias in l)
+        line = next(l for l in self.rendered(STATE).splitlines() if "Not %s's live calls: " % alias in l)
         segment = line.split("Not %s's live calls: " % alias, 1)[1]
         for decision in decisions:
             label = views.DECISION_LABEL[decision["id"]]
@@ -245,7 +270,7 @@ class CareerViewTests(unittest.TestCase):
         block = re.search(r"<!-- decision-queue:begin -->.*?<!-- decision-queue:end -->", self.rendered(STATE), re.S)[0]
         for name in rounds:
             self.assertIn("| the %s game |" % name, block)
-        self.assertIn("Holds the Super Bowl game: nothing for it is frozen until this is settled.", self.desk())
+        self.assertEqual(self.section("Waiting on you").count("Test plan for the views"), 4)
         self.assertIsNone(re.search(r"Super Bowl [IVXLC]+\b", block + self.desk()))
 
     def test_manifest_binds_both_files(self):

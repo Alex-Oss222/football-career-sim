@@ -126,6 +126,14 @@ class SeasonPaths:
         return self.root / ('library/data/%d_db_families.json' % self.year)
     @property
     def generations(self): return self.record('migrations/event_generations.json')
+    # The coach side's pages (rebuild step 3): the season's desk, its staff
+    # page and the staff register frozen as history before Week 6.
+    @property
+    def desk(self): return self.career / 'README.md'
+    @property
+    def staff_page(self): return self.record('team/coaching_staff/README.md')
+    @property
+    def staff_register(self): return self.record('coaching_staff.md')
 
     def cache(self, week, kind):
         if type(week) is not int or not 1 <= week <= (21 if self.year < 2021 else 22) or kind not in ('inputs', 'results'):
