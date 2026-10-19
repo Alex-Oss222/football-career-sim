@@ -80,7 +80,10 @@ class BriefingTests(unittest.TestCase):
         self.assertEqual(render_game_week.check(self.root), [])
 
     def test_a_missing_staff_read_is_to_come(self):
-        self.assertFalse(self.wk.pages.staff_read.exists())
+        # Whatever the week's stored state, a briefing without a read says it is to come.
+        self.wk.pages.staff_read.unlink(missing_ok=True)
+        with contextlib.redirect_stdout(io.StringIO()):
+            render_game_week.write(self.root)
         self.assertIn("## Staff read\n\nStaff read to come.\n", self.wk.pages.briefing.read_text(encoding="utf-8"))
 
     def test_a_stored_read_is_shown_and_may_cite_only_the_page(self):
@@ -105,9 +108,12 @@ class BriefingTests(unittest.TestCase):
         old = self.wk.pages.briefing.read_text(encoding="utf-8")
         path = self.wk.paths.roster
         data = json.loads(path.read_text(encoding="utf-8"))
-        changed = next(p for p in data["players"] if p["list"] == "active"
-                       and not p["availability"].startswith("No communicated"))
-        changed["availability"] = "No communicated restriction"
+        # Clear a player under a medical instruction, or put one under it when none is.
+        under = [p for p in data["players"] if p["list"] == "active"
+                 and not p["availability"].startswith("No communicated")]
+        changed = under[0] if under else next(p for p in data["players"] if p["list"] == "active")
+        changed["availability"] = ("No communicated restriction" if under else
+                                   "Out, short: lower extremity; projected return December 31, %d" % self.wk.season)
         path.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         self.assertTrue(any("a new briefing is due" in e for e in render_game_week.check(self.root)))
         state = (self.root / "state/05_Current_Season_State.md").read_bytes()
@@ -118,7 +124,8 @@ class BriefingTests(unittest.TestCase):
         self.assertEqual(len(earlier), 1)
         self.assertEqual(earlier[0].read_text(encoding="utf-8"), old)
         self.assertIn(earlier[0], written)
-        self.assertNotIn(changed["name"] + " |", self.wk.pages.briefing.read_text(encoding="utf-8"))
+        shown = changed["name"] + " |" in self.wk.pages.briefing.read_text(encoding="utf-8")
+        self.assertEqual(shown, not under)
         self.assertIn(earlier[0].name, self.wk.pages.readme.read_text(encoding="utf-8"))
         # Issuing a page moves no time and settles nothing.
         self.assertEqual((self.root / "state/05_Current_Season_State.md").read_bytes(), state)

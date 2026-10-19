@@ -4,7 +4,7 @@ Sunday, October 12, 2014, 1 p.m. ET, LP Field. Your decisions for the game: writ
 
 ## Inactives
 
-> 7 players from the active roster, one per row, among them every player out on a medical instruction on game day; or Same as Week 5.
+> 7 players from the active roster, one per row, among them every player out on a medical instruction on game day (when more are out, those players only); or Standing rule, which means every player out on a medical instruction on game day and your rule in force for the rest: the deepest healthy reserve on the chart in each of the five largest healthy position groups, never below a legal game-day unit, re-set each week; or Same as Week 5.
 
 | Player | Pos | Reason |
 |---|---|---|
@@ -19,7 +19,7 @@ Sunday, October 12, 2014, 1 p.m. ET, LP Field. Your decisions for the game: writ
 
 ## Offense
 
-> Each situation in your words, and the calls from the active offensive playbook with the situations each belongs to; or Same as Week 5.
+> Each situation in your words, and the calls from the active offensive playbook (its concepts, personnel groupings, formations, motions and protections) with the situations each belongs to, from normal down, second and long, third and short, third and medium, third and long, backed up, high red zone, low red zone, goal line, red zone, two-minute, PRESS sequence, four-minute, sudden change, opening sequence, two-point, final play of half, empty; or Same as Week 5.
 
 ### Opening sequence
 
@@ -68,7 +68,11 @@ Sunday, October 12, 2014, 1 p.m. ET, LP Field. Your decisions for the game: writ
 
 ## Defense
 
-> Who calls it, the rush rule, the menu practiced this week and the calls by situation, in the active defensive playbook's words; or Same as Week 5.
+> Who calls it; the rush rule, which in the active defensive playbook is four unless I call the five-man counter; the menu practiced this week; and the calls by situation, each with its use (Situation, Presentation, Counter, Conditional), in the active defensive playbook's words; or Same as Week 5.
+
+**Who calls it:**
+
+**Rush rule:**
 
 ### Practiced this week
 
@@ -77,8 +81,8 @@ Sunday, October 12, 2014, 1 p.m. ET, LP Field. Your decisions for the game: writ
 
 ### Calls by situation
 
-| Row | Use | Situation | Package | Front | Strength | Coverage | Pressure | Tags | As written |
-|---|---|---|---|---|---|---|---|---|---|
+| Use | Situation | Package | Front | Strength | Coverage | Pressure | Tags | As written |
+|---|---|---|---|---|---|---|---|---|
 
 ## Special teams
 

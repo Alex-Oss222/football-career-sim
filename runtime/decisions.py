@@ -130,6 +130,16 @@ class WeekPages:
     def call_sheet(self): return self.data / "call_sheet.json"
     @property
     def staff_read(self): return self.data / "staff_read.json"
+    @property
+    def inactives(self):
+        """The week's game-day inactives as Stone set them (``players``, ``set`` and ``note``): the
+        permanent owner of the list, which the game depth chart carries only while it is the latest."""
+        return self.data / "inactives.json"
+    @property
+    def applied(self):
+        """The record of the Game Plan as applied (scripts/apply_game_plan.py): when and from which
+        page bytes the call sheet was frozen, its depth-chart changes and the event of the apply."""
+        return self.data / "applied_plan.json"
 
     def earlier_briefing(self, label):
         """An earlier briefing kept as what he saw: Game_Week_Briefing_October_5.md."""

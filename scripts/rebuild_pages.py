@@ -24,8 +24,9 @@ built before a page or file it links to or reads:
 10. box scores           scripts/render_box_score.py      (each game page's marked
                                                            block, only where stale)
 11. game-week pages      scripts/render_game_week.py      (each played week's index;
-                                                           the open week's briefing,
-                                                           Game Plan and index)
+                                                           the open week's decision
+                                                           items, briefing, Game Plan
+                                                           and index)
 12. week pages           scripts/render_week_pages.py     (Games and league-results
                                                            indexes, week pages, the
                                                            injury report, the medical

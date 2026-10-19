@@ -32,8 +32,12 @@ names another. Every page is built from its stored owners only:
 A briefing is dated the day it is issued. If the situation changes after it
 goes out (anything the page shows other than its date), writing issues a new
 one and keeps the old one beside it, as what he saw, named for its date
-(Game_Week_Briefing_October_5.md). Opening or building a page never moves time
-or creates an event.
+(Game_Week_Briefing_October_5.md). Stone settling the week's own items on his
+Game Plan is not such a change (``overtaken``); a briefing issued later shows
+them "Set on your Game Plan". Writing opens the week's two decision items
+first (scripts/open_game_week.py), so the briefing lists them. Opening or
+building a page never moves time or creates an event; the week index carries
+the event line of the applied Game Plan from its record.
 
 ``--check`` writes nothing. It reports a missing or out-of-date index, a
 missing Game Plan beside a briefing, a malformed staff read, and a briefing
@@ -380,11 +384,26 @@ def roster_lines(wk, club):
     return out
 
 
-def asks_section(wk, page_rel):
+def plan_settled(wk):
+    """The week's items Stone settled on his own Game Plan (resolved by the user with the page as
+    their record): the briefing keeps them in its asks, marked set."""
+    holder, week, page = wk.job.get("holder"), wk.game["week"], wk.rel(wk.pages.plan)
+    return [i for i in wk.cv.queue["items"] if i.get("status") == "RESOLVED" and i.get("owner") == holder
+            and wk.views._week_of(i) == week and (i.get("resolution") or {}).get("by") == "user"
+            and ((i.get("resolution") or {}).get("record") or {}).get("path") == page]
+
+
+def asks_section(wk, page_rel, plan_open=False):
+    """What is asked of Stone for the week. The items he settled on his Game Plan stay in the table,
+    marked set on it (``plan_open`` shows them as they were before he set it, which is how a briefing
+    is compared: settling his own items does not overtake it)."""
     holder = wk.job.get("holder")
     week = wk.game["week"]
     items = [i for i in wk.views.ordered_items(wk.cv) if i.get("owner") == holder
              and wk.views._week_of(i) == week]
+    settled = {i["id"]: i for i in plan_settled(wk)}
+    items = sorted(items + list(settled.values()), key=lambda i: (
+        (i.get("deadline") or {}).get("date") is None, (i.get("deadline") or {}).get("date") or "", i.get("id") or ""))
     out = ["## What we need from you", ""]
     if not items:
         out += ["Nothing is waiting on you for this game.", ""]
@@ -399,6 +418,8 @@ def asks_section(wk, page_rel):
             before = deadline.get("before") or {}
             due = kickoff if before.get("week") == week else ("By %s" % day(deadline["date"], False)
                                                              if deadline.get("date") else "Not set")
+            if item["id"] in settled and not plan_open:
+                due = "Set on your Game Plan, %s" % day(item["resolution"]["date"], False)
             waits = [wk.views.football(w["what"].split(";")[0]) + (" (%s)" % day(w["date"], False) if w.get("date") else "")
                      for w in item.get("waits_on") or ()]
             settle = settle or SETTLE.get(item.get("class"), "")
@@ -457,7 +478,7 @@ def read_section(wk):
     return ["## Staff read", "", "**%s, %s.** %s" % (author, day(when), text), ""]
 
 
-def briefing(wk, issued=None):
+def briefing(wk, issued=None, plan_open=False):
     page_rel = wk.rel(wk.pages.briefing)
     issued = issued or wk.master
     names = coordinators(wk)
@@ -470,7 +491,7 @@ def briefing(wk, issued=None):
     out += medical_section(wk, page_rel)
     out += last_game_section(wk)
     out += opponent_section(wk)
-    out += asks_section(wk, page_rel)
+    out += asks_section(wk, page_rel, plan_open)
     out += standing_section(wk, page_rel)
     out += others_section(wk, page_rel)
     out += read_section(wk)
@@ -494,6 +515,14 @@ def issued_on(text):
 
 def undated(text):
     return ISSUED.sub(r"\1\3", text)
+
+
+def overtaken(wk, old):
+    """Whether the situation has changed since the briefing ``old`` went out: anything it shows other
+    than its date. Stone settling the week's own items on his Game Plan is his answer to the
+    briefing, not a change of situation, so it is compared as it was before he set them."""
+    then = undated(old)
+    return then != undated(briefing(wk)) and then != undated(briefing(wk, plan_open=True))
 
 
 def read_errors(wk, text):
@@ -524,7 +553,7 @@ def plan_page(wk):
     interval = current_job.interval_on(wk.job, "special_teams", wk.master) or {}
     caller = current_job.party_name(wk.job, interval["caller"]) if interval.get("caller") else None
     standing = {i.get("subject"): i.get("summary") for i in current_job.instructions(wk.job)
-                if i.get("subject") in ("fourth_down", "two_point", "kickoff")}
+                if i.get("subject") in ("fourth_down", "two_point", "kickoff", "inactives")}
     legal = game_plan.legal_lines(inactive, caller, previous[-1] if previous else None, standing)
     page_rel = wk.rel(wk.pages.plan)
     intro = ("%s. Your decisions for the game: write under each heading, or upload a .md or .txt file with the "
@@ -565,6 +594,9 @@ def index_page(wk):
     if earlier:
         out += ["Earlier briefings, as they went out: " + ", ".join(
             link(page_rel, wk.rel(p), day(issued_on(p.read_text(encoding="utf-8")))) for p in earlier) + ".", ""]
+    applied = game_plan.applied_record(wk.pages.applied)
+    if applied is not None and applied.get("event"):
+        out += [game_plan.event_line(applied), ""]
     out += [" · ".join([link(page_rel, wk.rel(wk.pages.folder.parent / "README.md"), "All weeks"),
                         link(page_rel, wk.rel(wk.paths.record("statbook.md")), "Regular-season statistics"),
                         link(page_rel, wk.rel(wk.paths.awards / ("week_%02d" % week) / "README.md"),
@@ -582,10 +614,15 @@ def write(root=ROOT, week=None):
     if wk.closed:
         raise ValueError("Week %d has closed; its briefing stays as it went out" % wk.game["week"])
     written = []
+    # The week's decision items, opened before its first briefing (scripts/open_game_week.py).
+    from scripts import open_game_week
+    if open_game_week.open_items(root, wk.game["week"]):
+        written.append(Path(root).resolve() / open_game_week.QUEUE)
+        wk = Week(root, week)
     wk.pages.folder.mkdir(parents=True, exist_ok=True)
     new = briefing(wk)
     old = wk.pages.briefing.read_text(encoding="utf-8") if wk.pages.briefing.is_file() else None
-    if old is None or undated(old) != undated(new):
+    if old is None or overtaken(wk, old):
         if old is not None:
             when = issued_on(old)
             label = day(when, False) if when else "earlier"
@@ -650,7 +687,7 @@ def check(root=ROOT, week=None):
         return errors + ["%s: no Game Week Briefing has been issued; run python scripts/render_game_week.py" % label]
     new = briefing(wk)
     old = wk.pages.briefing.read_text(encoding="utf-8")
-    if undated(old) != undated(new):
+    if overtaken(wk, old):
         errors.append("%s: the situation has changed since the briefing of %s; a new briefing is due (run python "
                       "scripts/render_game_week.py, which keeps the old one as he saw it)"
                       % (label, day(issued_on(old)) if issued_on(old) else "its issue"))

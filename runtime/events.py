@@ -198,9 +198,18 @@ def render_record(year, events, root=ROOT):
     lines = [f'# {year} record', '', 'Dated events and their full records.', '']
     selected = [event for event in events.values()
                 if event.season == year and event.data.get('kind', 'football') == 'football']
-    for event in sorted(selected, key=lambda item: (
-            item.data['date'], item.through,
-            item.data.get('closure', {}).get('sequence', 0), item.id)):
+
+    def order(item):
+        # A closed sequence orders the day's closures; an event without one comes first, unless it
+        # names the event it ``follows`` (a decision recorded after that day's closure, such as an
+        # applied Game Plan): it then comes right after that event.
+        if 'closure' in item.data or 'follows' not in item.data:
+            return (item.data.get('closure', {}).get('sequence', 0), 0)
+        followed = events.get(item.data['follows'])
+        if followed is None:
+            raise ValueError(item.owner + ': follows an unknown event ' + str(item.data['follows']))
+        return (followed.data.get('closure', {}).get('sequence', 0), 1)
+    for event in sorted(selected, key=lambda item: (item.data['date'], item.through, order(item), item.id)):
         day = event.data.get('date_label')
         if day is None:
             day = display_date(event.data['date'])

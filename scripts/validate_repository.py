@@ -446,6 +446,15 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
         errors.append(f'Invalid game week pages: {exc}')
 
+    # Stone's applied Game Plans (scripts/apply_game_plan.py): each applied week's page and call
+    # sheet as its record froze them (the page stays the record of his decision), and the open
+    # week's game-plan item opened once its briefing is issued.
+    try:
+        from scripts.apply_game_plan import validation_errors as game_plan_errors
+        errors.extend(game_plan_errors(root))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid applied Game Plans: {exc}')
+
     # The result-side week pages (scripts/render_week_pages.py: the Games and league-results
     # indexes, the league-results week pages from Week 6, the injury report, the medical
     # history's game entries and the incident records they open) are built from the closed

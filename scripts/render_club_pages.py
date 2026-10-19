@@ -306,7 +306,10 @@ def role_labels(ctx):
     labels = {}
     for decision in ctx.working.get("stone_role_decisions", ()):
         for row in decision.get("decisions", ()):
-            labels[row["player"]] = row["role"]
+            if row.get("role") is None:
+                labels.pop(row["player"], None)     # a later decision cleared the label
+            else:
+                labels[row["player"]] = row["role"]
     for player, roles in ctx.chart.get("roles", {}).items():
         if player not in labels and roles:
             labels[player] = ", ".join(ROLE_NAMES.get(r, r) for r in roles)

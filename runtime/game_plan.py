@@ -50,6 +50,12 @@ OFFENSE_MENUS = (("opening_sequence", "Opening sequence"), ("normal_down", "Norm
                  ("sudden_change", "Sudden change"), ("final_play_of_half", "Final play of the half"),
                  ("empty_rule", "Empty"), ("receiver_arrangement", "Receiver arrangement"))
 SECTION_MENU = {"fourth_down": "How we call it", "two_point": "Calls"}
+# The situations a call may name in its Situations cell, as the page spells them (each is one of the
+# call sheet's menus under runtime/call_situations.menu_key).
+CALL_SITUATIONS = ("normal down", "second and long", "third and short", "third and medium", "third and long",
+                   "backed up", "high red zone", "low red zone", "goal line", "red zone", "two-minute",
+                   "PRESS sequence", "four-minute", "sudden change", "opening sequence", "two-point",
+                   "final play of half", "empty")
 CALLS = "Calls"
 LOOKING = "What I am looking at"
 # The call table: (column, call field). A call's fields are written in CALL_KEYS order.
@@ -101,6 +107,35 @@ DEF_MENU_WORDS = {"normal-down": "Normal downs", "second-and-long": "Second and 
                   "backed-up": "Backed up", "two-minute": "Two-minute", "four-minute": "Four-minute",
                   "lead-late": "Late lead"}
 DEFENSE_KEYS = ("schema_version", "team", "caller", "book", "packet", "notes", "rush_rule", "practiced", "rows")
+# The active defensive book has one rush rule (runtime/defensive_calls.RUSH_RULE): the page offers it
+# in his own voice and accepts it in either voice; the line he writes is kept as written.
+RUSH_CHOICE = "Four unless I call the five-man counter"
+RUSH_WORDS = frozenset({"four unless stone calls the five man counter", "four unless i call the five man counter"})
+
+
+def rush_words(text):
+    return " ".join(re.sub(r"[^a-z0-9]+", " ", str(text).lower()).split())
+
+
+def row_id(kind, menu, seen):
+    """A defensive row's id when the page gives none: its situation for a situation row (one row
+    per situation), else its use and a count ("counter-2")."""
+    if kind == "situation" and menu:
+        return menu
+    n = 1
+    while "%s-%d" % (kind, n) in seen:
+        n += 1
+    return "%s-%d" % (kind, n)
+
+
+def derived_ids(rows):
+    """The ids ``row_id`` gives a list of defensive rows, in order."""
+    seen, out = set(), []
+    for r in rows:
+        rid = row_id(r["kind"], r.get("menu"), seen)
+        seen.add(rid)
+        out.append(rid)
+    return out
 
 GROUPS = {"Quarterbacks": "QB", "Running backs": "RB", "Fullback": "FB", "Wide receivers": "WR",
           "Tight ends": "TE", "Offensive line": "OL", "Defensive line": "DL", "Linebackers": "LB",
@@ -110,9 +145,21 @@ ROLES = {"Starter": "passer", "Kicker": "placekicker", "Punter": "punt", "Kick r
 
 SAME = re.compile(r"^same as week (\d{1,2})\.?$", re.I)
 NONE = re.compile(r"^none\.?$", re.I)
-LABELLED = re.compile(r"^\*\*([^*]+?):\*\*\s*(.*)$")
+# A labelled line, bold as the page writes it ("**Rush rule:** ...") or plain ("Rush rule: ...").
+LABELLED = re.compile(r"^(?:\*\*([^*]+?):\*\*|([A-Z][A-Za-z' -]*?):(?!\S))\s*(.*)$")
+# The sections that hold subsections of their own; under any other heading a "###" subheading is
+# a problem of form (the readers read the section's own lines only).
+WITH_SUBSECTIONS = ("Offense", "Defense")
 LOOK = re.compile(r"^[-*]\s+\*\*(.+?):\*\*\s*(.*)$")
 BULLET = re.compile(r"^[-*]\s+(.*)$")
+
+
+def labelled(text):
+    """(label, value) of a labelled line, bold or plain, or None."""
+    m = LABELLED.match(text)
+    if not m:
+        return None
+    return (m[1] if m[1] is not None else m[2]).strip(), m[3]
 
 
 class Section:
@@ -153,9 +200,15 @@ def data_lines(lines):
             if rows:
                 out += group
             group = []
-        if text:
+        if text and not _empty_label(text):
             out.append(text)
     return out
+
+
+def _empty_label(text):
+    """A label line the blank page carries with nothing after it ("**Rush rule:**")."""
+    found = labelled(text)
+    return found is not None and text.startswith("**") and not found[1].strip()
 
 
 def split(text):
@@ -176,6 +229,9 @@ def split(text):
             found[name] = current
         elif raw.startswith("### ") and current is not None:
             sub = raw[4:].strip()
+            if current.name not in WITH_SUBSECTIONS:
+                problems.append("%s: write under the heading itself, not under a subheading (%r)"
+                                % (current.name, sub))
             current.subs.setdefault(sub, [])
             current.sub_lines[sub] = number
         elif current is None or not line or line.startswith(">") or raw.startswith("# "):
@@ -360,14 +416,20 @@ def legal_lines(inactive_count=7, special_teams_caller=None, previous_week=None,
         if not text:
             return "; or Standing rule"
         return "; or Standing rule, which means your rule in force: %s" % (text[:1].lower() + text[1:]).rstrip(".")
+    inactive_rule = ("; or Standing rule, which means every player out on a medical instruction on game day and "
+                     "your rule in force for the rest: %s" % (standing["inactives"][:1].lower()
+                                                              + standing["inactives"][1:]).rstrip(".")
+                     if standing.get("inactives") else "")
     return {
         "Inactives": "%d players from the active roster, one per row, among them every player out on a medical "
-                     "instruction on game day%s." % (inactive_count, same),
+                     "instruction on game day (when more are out, those players only)%s%s."
+                     % (inactive_count, inactive_rule, same),
         "Depth chart changes": "A position group's full new order from the players now in it, first listed first, "
                                "or a game role and its player; or None.",
         "Practice": "Who takes which work this week, for example a limited player's reps; or None.",
-        "Offense": "Each situation in your words, and the calls from the active offensive playbook with the "
-                   "situations each belongs to%s." % same,
+        "Offense": "Each situation in your words, and the calls from the active offensive playbook (its concepts, "
+                   "personnel groupings, formations, motions and protections) with the situations each belongs "
+                   "to, from %s%s." % (", ".join(CALL_SITUATIONS), same),
         "Fourth downs": "Rules by distance, yards to the goal line, quarter, score and clock, each Go, Field goal "
                         "or Punt, and what happens otherwise (Go, Field goal, Punt or Ask me)%s; or None for "
                         "your call on each one%s." % (rule("fourth_down"), same),
@@ -375,8 +437,10 @@ def legal_lines(inactive_count=7, special_teams_caller=None, previous_week=None,
                            "what happens otherwise (Kick, Go for two or Ask me)%s%s." % (rule("two_point"), same),
         "Kickoffs": "Rules by quarter, score after our score and clock, each Onside or Deep, and what happens "
                     "otherwise (Deep, Onside or Ask me)%s%s." % (rule("kickoff"), same),
-        "Defense": "Who calls it, the rush rule, the menu practiced this week and the calls by situation, in the "
-                   "active defensive playbook's words%s." % same,
+        "Defense": "Who calls it; the rush rule, which in the active defensive playbook is %s; the menu "
+                   "practiced this week; and the calls by situation, each with its use (%s), in the active "
+                   "defensive playbook's words%s." % (RUSH_CHOICE[:1].lower() + RUSH_CHOICE[1:], ", ".join(KIND_WORDS.values()),
+                                                       same),
         "Special teams": "%s; your instructions for the kicking game, or None." % (
             "%s calls the kicking game" % special_teams_caller if special_teams_caller else "The kicking game"),
         "Notes to the staff": "Anything else the staff should know, one note per line, or None.",
@@ -465,7 +529,9 @@ def render(title, intro, choices, legal):
         if value == "none":
             out += ["None", ""]
             continue
-        if name == "Inactives":
+        if name == "Inactives" and isinstance(value, dict) and value.get("standing"):
+            out += [STANDING, ""]
+        elif name == "Inactives":
             if value is not None:
                 reasons = value.get("reasons") or {}
                 out += table(["Player", "Pos", "Reason"],
@@ -502,11 +568,8 @@ def render(title, intro, choices, legal):
 
 
 def _defense_lines(value):
-    out = []
-    if value.get("caller"):
-        out += ["**Who calls it:** %s" % value["caller"], ""]
-    if value.get("rush"):
-        out += ["**Rush rule:** %s" % value["rush"], ""]
+    out = ["**Who calls it:** %s" % (value.get("caller") or ""), "", "**Rush rule:** %s" % (value.get("rush") or ""), ""]
+    out = [line.rstrip() for line in out]
     if value.get("rush_text") is not None and value.get("rush_text") != value.get("rush"):
         out += ["**As written:** %s" % value["rush_text"], ""]
     from .defensive_calls import PRESSURE_FAMILIES
@@ -520,10 +583,13 @@ def _defense_lines(value):
     if value.get("practice_lines"):
         out += ["**Practice lines:**", ""] + ["- " + t for t in value["practice_lines"]] + [""]
     rows = []
-    for r in value.get("rows") or ():
+    given = value.get("rows") or ()
+    # The Row column only when a row's name is not the one the page would give it.
+    columns = ROW_COLUMNS if [r["id"] for r in given] != derived_ids(given) else ROW_COLUMNS[1:]
+    for r in given:
         call = r.get("call") or {}
         row = []
-        for _, key in ROW_COLUMNS:
+        for _, key in columns:
             if key == "id":
                 row.append(r["id"])
             elif key == "kind":
@@ -539,7 +605,7 @@ def _defense_lines(value):
             else:
                 row.append(call.get(key, ""))
         rows.append(row)
-    out += ["### Calls by situation", ""] + table([c for c, _ in ROW_COLUMNS], rows) + [""]
+    out += ["### Calls by situation", ""] + table([c for c, _ in columns], rows) + [""]
     if value.get("notes"):
         out += ["### Notes", ""] + ["- " + n for n in value["notes"]] + [""]
     return out
@@ -581,6 +647,8 @@ def parse(text):
 
 
 def _inactives(section, problems):
+    if [t.lower().rstrip(".") for t in data_lines(section.lines)] == [STANDING.lower()]:
+        return {"standing": True}
     rows = read_table(section.lines, ("Player", "Pos", "Reason"), "Inactives", problems)
     players, reasons, positions, lines = [], {}, {}, {}
     for n, row in rows:
@@ -595,16 +663,26 @@ def _inactives(section, problems):
             positions[name] = row["Pos"]
     stray = [t for _, t in section.lines if not t.startswith("|")]
     if stray:
-        problems.append("Inactives: write one player per table row (%r is outside the table)" % stray[0])
+        problems.append("Inactives: write one player per table row, or Standing rule alone (%r is outside "
+                        "the table)" % stray[0])
     return {"players": players, "reasons": reasons, "positions": positions, "lines": lines}
 
 
 def _depth(section, problems):
     orders, roles = {}, {}
     tables, current = [], []
-    for n, t in section.lines:
-        if t.startswith("|"):
+    rule = lambda t: all(re.fullmatch(r":?-{3,}:?", c) for c in cells(t) if c)
+    lines = list(section.lines)
+    for i, (n, t) in enumerate(lines):
+        # A table starts at a header row (the row a rule row follows); blank lines are not kept, so two
+        # tables one after the other are told apart by their headers.
+        header = t.startswith("|") and i + 1 < len(lines) and lines[i + 1][1].startswith("|") \
+            and rule(lines[i + 1][1]) and not rule(t)
+        if t.startswith("|") and not (header and current):
             current.append((n, t))
+        elif t.startswith("|"):
+            tables.append(current)
+            current = [(n, t)]
         elif current:
             tables.append(current)
             current = []
@@ -719,19 +797,19 @@ def _decision(kind):
         rule_lines = [(n, t) for n, t in section.lines if t.startswith("|")]
         prepared_at = None
         for i, (n, t) in enumerate(section.lines):
-            m = LABELLED.match(t)
+            m = labelled(t)
             if t.lower().rstrip(".") == STANDING.lower():
                 entry["standing"] = True
-            elif m and m[1] == label:
-                entry["menu"] = m[2]
-            elif m and m[1] == "Otherwise":
+            elif m and m[0] == label:
+                entry["menu"] = m[1]
+            elif m and m[0] == "Otherwise":
                 words = {v.lower(): k for k, v in list(DECISION_WORDS[kind].items()) + list(OTHERWISE_WORDS.items())}
-                if m[2].strip().lower() not in words:
+                if m[1].strip().lower() not in words:
                     problems.append("%s: otherwise %r is not one of %s" % (
-                        where, m[2], ", ".join(list(DECISION_WORDS[kind].values()) + list(OTHERWISE_WORDS.values()))))
+                        where, m[1], ", ".join(list(DECISION_WORDS[kind].values()) + list(OTHERWISE_WORDS.values()))))
                 else:
-                    entry["otherwise"] = words[m[2].strip().lower()]
-            elif m and m[1] == "Prepared calls":
+                    entry["otherwise"] = words[m[1].strip().lower()]
+            elif m and m[0] == "Prepared calls":
                 prepared_at = n
             elif not t.startswith("|"):
                 problems.append("%s: %r is neither a rule table, Otherwise, Standing rule nor %s" % (where, t, label))
@@ -805,15 +883,27 @@ def _defense(section, problems):
     value, lines = {}, {}
     practice_at = None
     for n, t in section.lines:
-        m = LABELLED.match(t)
-        if m and m[1] == "Who calls it":
-            value["caller"] = m[2]
-        elif m and m[1] == "Rush rule":
-            value["rush"], lines["rush"] = m[2], n
-        elif m and m[1] == "As written":
-            value["rush_text"], lines["rush_text"] = m[2], n
+        m = labelled(t)
+        if m and m[0] == "Who calls it":
+            if m[1].strip():
+                value["caller"] = m[1].strip()
+        elif m and m[0] == "Rush rule":
+            if m[1].strip():
+                value["rush"], lines["rush"] = m[1].strip(), n
+        elif m and m[0] == "As written":
+            value["rush_text"], lines["rush_text"] = m[1], n
         else:
-            problems.append("Defense: %r is not Who calls it, Rush rule or As written" % t)
+            problems.append("Defense: %r is not Who calls it, Rush rule or As written (write them as "
+                            "'Who calls it: name' and 'Rush rule: your rule')" % t)
+    if "rush" in value:
+        from .defensive_calls import RUSH_RULE
+        if rush_words(value["rush"]) in RUSH_WORDS:
+            if value["rush"] != RUSH_RULE and "rush_text" not in value:
+                value["rush_text"], lines["rush_text"] = value["rush"], lines["rush"]
+            value["rush"] = RUSH_RULE
+        else:
+            problems.append("Defense, Rush rule: %r is not the active defensive playbook's rush rule; write "
+                            "'%s'" % (value["rush"], RUSH_CHOICE))
     practiced, plines = {}, {}
     sub = section.subs.get("Practiced this week", [])
     for n, row in read_table(sub, ("Menu", "Words"), "Defense, Practiced this week", problems):
@@ -829,7 +919,7 @@ def _defense(section, problems):
         plines[key] = (n, row["Words"])
     value["practiced"], lines["practiced"] = practiced, plines
     for i, (n, t) in enumerate(sub):
-        if LABELLED.match(t) and LABELLED.match(t)[1] == "Practice lines":
+        if labelled(t) and labelled(t)[0] == "Practice lines":
             practice_at = i
     if practice_at is not None:
         value["practice_lines"], lines["practice_lines"] = [], []
@@ -841,25 +931,26 @@ def _defense(section, problems):
     rows = []
     kinds = {v.lower(): k for k, v in KIND_WORDS.items()}
     menus = {v.lower(): k for k, v in DEF_MENU_WORDS.items()} | {k: k for k in DEF_MENU_WORDS}
+    seen = set()
     for n, row in read_table(section.subs.get("Calls by situation", []), tuple(c for c, _ in ROW_COLUMNS),
                              "Defense, Calls by situation", problems):
-        rid = re.sub(r"\s+", "-", row.get("Row", "").strip().lower())
-        if not rid:
-            problems.append("Defense, Calls by situation: a row (line %d) has no name" % n)
-            continue
+        where = "Defense, Calls by situation, line %d" % n
         kind = kinds.get(row.get("Use", "").lower())
         if kind is None:
-            problems.append("Defense, %s: the use %r is not one of %s" % (rid, row.get("Use", ""),
-                                                                         ", ".join(KIND_WORDS.values())))
+            problems.append("%s: the use %r is not one of %s" % (where, row.get("Use", ""),
+                                                                 ", ".join(KIND_WORDS.values())))
             continue
-        entry = {"id": rid, "kind": kind}
+        entry = {"kind": kind}
         if row.get("Situation"):
             menu = menus.get(row["Situation"].lower())
             if menu is None:
-                problems.append("Defense, %s: %r is not a defensive situation (%s)" % (
-                    rid, row["Situation"], ", ".join(DEF_MENU_WORDS.values())))
+                problems.append("%s: %r is not a defensive situation (%s)" % (
+                    where, row["Situation"], ", ".join(DEF_MENU_WORDS.values())))
             else:
                 entry["menu"] = menu
+        rid = re.sub(r"\s+", "-", row.get("Row", "").strip().lower()) or row_id(kind, entry.get("menu"), seen)
+        seen.add(rid)
+        entry = {"id": rid, **entry}
         call = {}
         for column, key in ROW_COLUMNS[3:9]:
             cell_value = row.get(column, "")
@@ -873,7 +964,10 @@ def _defense(section, problems):
                 call[key] = cell_value
         if call:
             entry["call"] = {k: call[k] for k in CALL_FIELDS if k in call}
-        entry["text"] = row.get("As written") or row.get("Row", "").strip()
+        # The row's words as the page writes them, verbatim on its own line: its As written cell, or
+        # else its name, its situation or its use.
+        entry["text"] = (row.get("As written") or row.get("Row", "").strip() or row.get("Situation")
+                         or row.get("Use"))
         entry["_line"] = n
         rows.append(entry)
     value["rows"] = rows
@@ -1078,3 +1172,17 @@ def first_calls(calls):
 def sheet_bytes(sheet):
     """The frozen call sheet's bytes, as every frozen sheet is written (indent 1, a final newline)."""
     return (json.dumps(sheet, indent=1) + "\n").encode("utf-8")
+
+
+# ---------------------------------------------------------------- the applied record
+def applied_record(path):
+    """The applied Game Plan record at ``path`` (runtime/decisions.WeekPages.applied), or None."""
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+
+
+def event_line(record):
+    """The applied plan's event-record line, which the week index carries (the record is its owner)."""
+    return "<!-- event-record: %s -->" % json.dumps(record["event"], sort_keys=True)
