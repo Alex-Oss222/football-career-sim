@@ -84,7 +84,7 @@ As head coach under David Caldwell, Stone decides the game plan, depth, inactive
 
 Each kind of page has one fixed layout, built from the stored facts:
 
-- **Player:** name, team, position, number, age and status at the top; then this season (role, health, contract); the staff assessment (grades and one dated line naming whose view it is); development; season-by-season statistics, regular season and playoffs separate; history. Kirk Cousins is the first page built, as the sample the user approves before the rest.
+- **Player:** a header line (name; team, position, number, age, status), a line of height, weight, birth date, college and draft, and the photo; then Staff assessment (the grades, the staff read and one dated line naming whose view it is); Contract (salary by year); Statistics, regular season and playoffs separate, every table led by Season, Team, Age and #; Awards (Pro Bowl, All-Pro and the like); and Transactions (drafted, signed, traded, released, re-signed, reserve lists), one dated line each. There is no weekly section: only the statistics change week to week, and the assessment changes only at the two annual assessments. Approved by the user on October 19, 2026, on the Kirk Cousins page.
 - **Coach (Stone):** his job and employer, his contract and remaining term, his record by season, career history, philosophy (written by the user), reviews he has actually received, and any open opportunities.
 - **Team:** results and standings, roster, staff, who decides what at the club, and what the owner and GM have asked of him.
 - **Staff:** who coaches what, who calls what, contract status where a head coach would know it, open jobs.
@@ -111,11 +111,14 @@ Each step is built lean: one builder and one reviewer, no new research except a 
 
 | Step | Status |
 |---|---|
-| 1 | In progress |
-| 2 to 8 | Not started |
+| 1 | Done (merged) |
+| 2 | Layout approved; the player record is built with step 3 |
+| 2b | In progress |
+| 3 to 8 | Not started |
 
 ## Change log
 
 - October 19, 2026: plan adopted. The user approved the numbered season folders as they stand, asked for realistic names instead of system names, for a brief that tells him what he needs, and for this plan to hold its decisions across context resets.
 - October 19, 2026: the user asked to drop the numbers from the season folder names. From 2015 the folders carry no numbers; 2014 keeps its numbered folders as history.
 - October 19, 2026: the user asked for the new system from Week 6 on, not from 2015. Their words, verbatim: "For the rest of 2014 they stay where they are now no i want to use the new sytem going into the new week everthing before can move around as need as long but we dont have to change anthing to cnform to the new process". The 2014 folders are renamed and their system files moved before Week 6; nothing written before Week 6 is rewritten.
+- October 19, 2026: the user approved the player page layout on the Kirk Cousins sample, without a weekly section and with transactions instead of a season narrative. Their words, verbatim: "layout prefect please this is me aske move his b-day to 1991 hes, 23 now please srry" and "keep the histoy though but lest that early a summart like you have in 2013 of the season  and keep hisroy should be like traded, signings ect cuts ect". Canon change by the user: Kirk Cousins's birth date is August 19, 1991 (23 on October 5, 2014), applied with step 3 wherever his birth date is stored; pages written before Week 6 that give his old age stay as written.
