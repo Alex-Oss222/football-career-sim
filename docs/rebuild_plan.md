@@ -10,7 +10,7 @@ The user's goal, in their words: a complete process from start to finish, realis
 
 ## Rules that never change
 
-1. **History stays where it is.** Everything written up to the close of 2014 Week 5 stays in place, unedited. The new structure applies to work from 2014 Week 6 on, and fully from the 2015 season.
+1. **The new system starts with 2014 Week 6.** Everything written up to the close of 2014 Week 5 may be moved to its place in the new folders, but its content is not rewritten to fit the new process. From Week 6 on, everything follows this plan.
 2. **The engine is untouched.** Games, draws, the private service and outcomes are outside the rebuild.
 3. **Historical dates.** Every season runs on the real NFL dates. Before a new season opens, its calendar is researched and checked in two independent passes.
 4. **Clean pages.** A page the user reads is football only. It never shows internal codes or identifiers (for example 1C, 5A, 7D), file paths, script or module names, system notes, disclaimers, version labels or words such as engine, branch, receipt, kernel, ledger, snapshot or checkpoint. An assessment carries one dated line saying whose view it is, nothing more. A check in repository validation fails any page that breaks this rule.
@@ -20,7 +20,7 @@ The user's goal, in their words: a complete process from start to finish, realis
 
 ## The season folders
 
-From 2015, each season has these folders, with no numbers in their names:
+Each season has these folders, with no numbers in their names:
 
 - Team_Operations
 - Early_Offseason
@@ -31,14 +31,14 @@ From 2015, each season has these folders, with no numbers in their names:
 - Postseason
 - Season_Review
 
-The 2014 season keeps its numbered folders (00_Team_Operations through 07_Season_Review), because its history stays where it is; the rest of 2014 is filed in them. The season folder's README is the head coach's desk: today's date, his job, what is waiting on him, the next event and where each record is. Calendar.md and Record.md stay beside it.
+The 2014 folders are renamed the same way before Week 6, with their existing files moved inside them as they are. The season folder's README is the head coach's desk: today's date, his job, what is waiting on him, the next event and where each record is. Calendar.md and Record.md stay beside it.
 
 Two folders sit outside the seasons, because they follow Stone and the league across years:
 
 - **career/Stone/:** his coach profile, his contract, his career history and his job opportunities (permission requests, interviews, offers and his agent's reports).
 - **The league pages:** every player, standings and other clubs, as they are today.
 
-The files the system works from (stored facts, game files, call sheets) live in a separate data area that the user never needs to open. For the rest of 2014 they stay where they are now; from 2015 they move out of the season folders, so the season folders hold only pages to read.
+The files the system works from (stored facts, game files, call sheets) live in a separate data area that the user never needs to open. From Week 6 they are written there, and the existing ones move there too, so the season folders hold only pages to read.
 
 ## How a decision works
 
@@ -54,7 +54,7 @@ Contacts from other clubs are always named for what they are: a rumor, a call, a
 
 ## The decisions in a year
 
-The page names below are fixed. Folders are given by their 2015 names; for the rest of 2014 the same pages go in the matching numbered 2014 folder.
+The page names below are fixed.
 
 | When | Brief | His page | Result | Folder |
 |---|---|---|---|---|
@@ -97,6 +97,7 @@ Each kind of page has one fixed layout, built from the stored facts:
 |---|---|---|---|
 | 1 | This plan, and the instruction in CLAUDE.md to follow it | Now | Merged |
 | 2 | The stored player facts and the Kirk Cousins page | Before 2014 Week 6 | The user approves the page |
+| 2b | The 2014 season moved into the new folders: numbers dropped from the folder names, system files moved to the data area, every link kept working, no file's content rewritten | Before 2014 Week 6 | Merged with every link resolving |
 | 3 | Every Jaguars player page, the league player pages in the same style, and the coach, team, staff, contract and desk pages; the clean-page check in validation | Before 2014 Week 6 | Merged with the check passing on every new page |
 | 4 | The three-page decision system, starting with Game Week Briefing, Game Plan and Game Report for Week 6 | Before 2014 Week 6 | Week 6 is played through it |
 | 5 | In-season decisions: injury replacements, the bye week, trade calls, and the weekly check for coaching changes at every club | Before 2014 Week 8 | Merged |
@@ -117,3 +118,4 @@ Each step is built lean: one builder and one reviewer, no new research except a 
 
 - October 19, 2026: plan adopted. The user approved the numbered season folders as they stand, asked for realistic names instead of system names, for a brief that tells him what he needs, and for this plan to hold its decisions across context resets.
 - October 19, 2026: the user asked to drop the numbers from the season folder names. From 2015 the folders carry no numbers; 2014 keeps its numbered folders as history.
+- October 19, 2026: the user asked for the new system from Week 6 on, not from 2015. Their words, verbatim: "For the rest of 2014 they stay where they are now no i want to use the new sytem going into the new week everthing before can move around as need as long but we dont have to change anthing to cnform to the new process". The 2014 folders are renamed and their system files moved before Week 6; nothing written before Week 6 is rewritten.
