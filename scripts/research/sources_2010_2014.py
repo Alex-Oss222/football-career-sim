@@ -527,7 +527,9 @@ def build_manifest(records, summary):
         "attribution": ATTRIBUTION,
         "gate": {"seasons": list(SEASONS), "cut_2014": {"season_type": "REG", "max_week": MAX_WEEK,
                                                          "max_date": MAX_DATE},
-                 "refused": [why for _, why in REFUSED] + ["any path under career/ or data/"],
+                 # The recorded wording predates the data area (rebuild step 2b), which
+                 # guard_path also refuses; it is kept so a rebuild reproduces the pinned manifest.
+                 "refused": [why for _, why in REFUSED] + ["any path under career/"],
                  "players_columns": list(PLAYERS_COLUMNS), "draft_picks_columns": list(DRAFT_PICKS_COLUMNS),
                  "stats_player_week_columns_dropped": list(STATS_WEEK_DROPPED),
                  "players_rows": "draft_year <= 2014, or an undrafted gsis_id on a written 2010-2014 roster file",

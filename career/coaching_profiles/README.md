@@ -33,7 +33,7 @@ Only the user establishes Stone's intended beliefs, motives and philosophy. Pres
 3. Change Stone's approach in the profile when the user adopts or revises it. Refresh established job or delegation facts when their source changes. Earlier phase plans calling for a review entry at every handoff or a profile rewrite after an assessment are superseded by this procedure; preserve their dated plans and reports.
 4. Add completed seasons to the NFL Coach Sheet and update sourced career or employment facts. Separate regular season from playoffs, label net yardage and define rate denominators. Name the statistic behind each top-ten finish. Keep approximate or incomplete figures clearly identified. The source owner changes first; a review cannot appoint a coach, award a role or advance the clock.
 
-Keep current-season exit interviews and team reviews in that season's `07_Season_Review/`. Carry unresolved teaching and staff follow-through, with the source, responsible coach and next observation, in the existing season handoff. A season boundary does not reset the assessment.
+Keep current-season exit interviews and team reviews in that season's `Season_Review/`. Carry unresolved teaching and staff follow-through, with the source, responsible coach and next observation, in the existing season handoff. A season boundary does not reset the assessment.
 
 The user-defined [camp approach](alex_stone_coaching_profile.md#how-he-wants-training-camp-run) is maintained in the profile and operational season plan. A change to that approach is not evidence that a practice or fitness test occurred.
 

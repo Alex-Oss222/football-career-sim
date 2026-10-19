@@ -1,6 +1,6 @@
 # 2014 statistics storage
 
-**IN_PROGRESS.** Receipt coverage and the latest closed week are stated in the [statbook](../README.md). [Game receipts](game_receipts/README.md) own regular-season statistical evidence; [postseason receipts](postseason_receipts/README.md) remain separate. Preseason results never enter regular-season standings or awards.
+**IN_PROGRESS.** Receipt coverage and the latest closed week are stated in the [statbook](../README.md). [Game receipts](../../../../../data/2014/Regular_Season/Statistics/records/game_receipts/README.md) own regular-season statistical evidence; [postseason receipts](../../../../../data/2014/Regular_Season/Statistics/records/postseason_receipts/README.md) remain separate. Preseason results never enter regular-season standings or awards.
 
 After the game release is accepted, preserve full Jacksonville receipts and compact-stat background receipts. Every new event ID starts with `2014-`; the receipt carries `season: 2014`. Reject a foreign-season receipt before rendering. Use `python scripts/render_season_stats.py 2014 --team "Jacksonville Jaguars"` and `python scripts/render_standings.py 2014`. A generated empty view is not evidence of played football. The [statbook](../README.md) is the human-facing entry point.
 

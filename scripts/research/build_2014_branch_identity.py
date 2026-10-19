@@ -188,7 +188,22 @@ def dry_slate(week):
                 ids = {p["player_id"]: p.get("gsis_id") for p in club["players"]}
             for r in roster:
                 rows.append((team, r["player_id"], r.get("position"), ids.get(r["player_id"])))
-    return rows, {"week": week, "call_sheet": str(sheet.relative_to(ROOT)), "games": len(package["games"])}
+    return rows, {"week": week, "call_sheet": recorded_sheet_path(sheet), "games": len(package["games"])}
+
+
+# Rebuild step 2b moved the call sheets into the data area. A sheet frozen before
+# that move (Weeks 1 to 5) is recorded at the path it had when the table was built,
+# so a rebuild reproduces the committed artifact; a later sheet keeps its own path.
+PRE_2B_LAST_WEEK = 5
+DATA_SHEET = re.compile(r"^data/2014/Regular_Season/Games/Week_(\d+)/call_sheet\.json$")
+
+
+def recorded_sheet_path(sheet):
+    relative = sheet.relative_to(ROOT).as_posix()
+    match = DATA_SHEET.match(relative)
+    if match and int(match.group(1)) <= PRE_2B_LAST_WEEK:
+        return "career/2014/05_Regular_Season/Games/Week_%s/call_sheet.json" % match.group(1)
+    return relative
 
 
 def global_rows():
