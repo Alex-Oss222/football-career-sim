@@ -1,6 +1,6 @@
 # Sio Moore, LB: exit interview
 
-**Date:** Tuesday January 14, 2014. **Present:** Alex Stone. Frank Bush (linebackers) was at his Indianapolis interview that day ([January coaching decisions](../../../2014/01_Early_Offseason/staff_changes/timeline.md)).
+**Date:** Tuesday January 14, 2014. **Present:** Alex Stone. Frank Bush (linebackers) was at his Indianapolis interview that day ([January coaching decisions](../../../2014/Early_Offseason/staff_changes/timeline.md)).
 **Status going in:** Rookie; package linebacker in Crennel's packages (roster role "Package LB (Crennel's packages)"), fourth on the season-end linebacker list (Daryl Smith, Russell Allen, Julian Stanford, Sio Moore, Paul Posluszny). Active 53; available, no communicated restriction; exit physical with the medical staff today, and no finding from it is recorded here. Contract: branch #98 rookie contract, four years, final year 2016; under contract; 0 accrued seasons before 2013, with 2013 accruing in the branch (contract status register: Confirmed). Age 23 (born May 2, 1990).
 
 ## The season in the record
@@ -79,6 +79,6 @@ All voluntary. Jacksonville's 2014 offseason program may begin no earlier than A
 - `career/2013/regular_season/week_14_houston_at_jacksonville/output.md` line 29; `week_15_buffalo_at_jacksonville/output.md` line 35; `week_01_kansas_city_at_jacksonville/output.md` line 331
 - `career/2013/exit_interviews/core/tyson_alualu.md` line 64 (rotation-order teaching note); `career/2013/exit_interviews/main_core/daryl_smith.md` line 208
 - `runtime/defect_register.md` line 49 (item 19)
-- [January coaching decisions](../../../2014/01_Early_Offseason/staff_changes/timeline.md); `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta; Bush's January 14 Indianapolis interview)
+- [January coaching decisions](../../../2014/Early_Offseason/staff_changes/timeline.md); `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta; Bush's January 14 Indianapolis interview)
 - `career/2013/offseason/the_prowl_program_identity.md` ("Good. Better. Best.", "Earn Responsibility", "Discipline Approach"); `career/2013/offseason/player_onboarding_and_development_framework.md` section 2
 - `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 7 and 10; `career/2014/calendar.md` line 31

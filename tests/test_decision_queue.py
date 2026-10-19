@@ -29,7 +29,7 @@ from scripts.validate_repository import validate
 SEASON = int(repository_map(ROOT)["active_season"])
 CLUB = "Jacksonville Jaguars"
 # A sample sheet's content only; it is written into the active season's folders.
-W5_SHEET = "career/2014/05_Regular_Season/Games/Week_05/call_sheet.json"
+W5_SHEET = "data/2014/Regular_Season/Games/Week_05/call_sheet.json"
 
 
 def club_weeks():
@@ -294,7 +294,7 @@ class DecisionQueueTests(unittest.TestCase):
 
     def test_call_sheet_without_a_resolved_plan(self):
         sheet = json.loads((ROOT / W5_SHEET).read_text(encoding="utf-8"))
-        folder = SeasonPaths(SEASON, self.root).week_folder(self.week, self.post)
+        folder = SeasonPaths(SEASON, self.root).week_data(self.week, self.post)
         self.write((folder / "call_sheet.json").relative_to(self.root).as_posix(), json.dumps(sheet))
         others = [i for i in self.queue["items"] if not (
             i["class"] == "weekly_game_plan" and i["status"] == "RESOLVED"

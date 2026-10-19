@@ -56,7 +56,7 @@ PROFILE_B9_LEVEL = Profile("2014.6", base=PROFILE_2014_6.base, cell_rules=PROFIL
                            strength=PROFILE_2014_6.strength,
                            flags=PROFILE_2014_6.flags - B9F_FLAGS - B10_FLAGS - B11_FLAGS - B13_FLAGS,
                            record_base=True)
-WEEK4_SHEET = ROOT / "career/2014/05_Regular_Season/Games/Week_04/call_sheet.json"
+WEEK4_SHEET = ROOT / "data/2014/Regular_Season/Games/Week_04/call_sheet.json"
 SCORING_SOURCES = set(sd.SOURCES)
 
 

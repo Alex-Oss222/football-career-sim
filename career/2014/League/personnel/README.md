@@ -7,19 +7,19 @@
 | Record | Purpose |
 |---|---|
 | [league_database_report.md](league_database_report.md) | Coverage, source hashes, uncertainty, branch protections and rebuild instructions |
-| [league_players.json](league_players.json) | Full player records with identity, DOB evidence, college/draft history, source observations, branch control, contract estimates and FA evidence |
-| [league_players.csv](league_players.csv) | Flat player table for filtering and review |
-| [league_corrections.json](league_corrections.json) | Dated, reviewed club/position/DOB/contract-year corrections keyed by GSIS ID |
-| [league_exceptions.csv](league_exceptions.csv) | Unresolved placement, status, identity and contract issues by player ID |
-| [source_snapshot.json.gz](source_snapshot.json.gz) | Compressed, field-limited source and branch evidence for offline regeneration; no future outcomes or 2014 draft results |
+| [league_players.json](../../../../data/2014/League/personnel/league_players.json) | Full player records with identity, DOB evidence, college/draft history, source observations, branch control, contract estimates and FA evidence |
+| [league_players.csv](../../../../data/2014/League/personnel/league_players.csv) | Flat player table for filtering and review |
+| [league_corrections.json](../../../../data/2014/League/personnel/league_corrections.json) | Dated, reviewed club/position/DOB/contract-year corrections keyed by GSIS ID |
+| [league_exceptions.csv](../../../../data/2014/League/personnel/league_exceptions.csv) | Unresolved placement, status, identity and contract issues by player ID |
+| [source_snapshot.json.gz](../../../../data/2014/League/personnel/source_snapshot.json.gz) | Compressed, field-limited source and branch evidence for offline regeneration; no future outcomes or 2014 draft results |
 | [clubs/](clubs) | 31 generated research inventories, with manually maintained dated move tables preserved below each generated block |
 | [free_agent_pool.md](free_agent_pool.md) | Nine independently verified targets plus generated, explicitly estimated UFA/RFA/ERFA candidates |
 | [retirements.md](retirements.md) | Meester applied; Allen applied at Arizona April 22; Harrison's September 5 retirement as a free agent applied in the Week 5 build; four VERIFY rows with no exact public retirement date found |
 | [draft_pairing.md](draft_pairing.md) | Jacksonville's selections and swap partners, filled at the May 8-10 draft |
 | [fa_draws.md](fa_draws.md) | Market draws at each pursued player's real signing date |
 | [FILLING_GUIDE.md](FILLING_GUIDE.md) | The small amount of human input needed and where to put it |
-| [branch_identity.json](branch_identity.json) | Kernel 2014.6 identity table (batch B4a): every TeamInput player of a dry Week 5 build joined to an nflverse gsis id by a stated rule, with sourced manual rows; built by `scripts/research/build_2014_branch_identity.py` (`--check`). An identity join, not an evaluation |
-| [observables/](observables) | Kernel 2014.6 participation observables (batch B7): per closed week and club, each roster row's player id, gsis id, group, depth rank, availability, hold and whether he dressed, written from the frozen package at closure (`scripts/close_week.py`); Weeks 1-4 backfilled by `scripts/render_observables.py` from a rebuild that reproduces the closed receipts (Jacksonville's rows from its full receipt, labelled). Records only: no value, state or grade |
+| [branch_identity.json](../../../../data/2014/League/personnel/branch_identity.json) | Kernel 2014.6 identity table (batch B4a): every TeamInput player of a dry Week 5 build joined to an nflverse gsis id by a stated rule, with sourced manual rows; built by `scripts/research/build_2014_branch_identity.py` (`--check`). An identity join, not an evaluation |
+| [observables/](../../../../data/2014/League/personnel/observables) | Kernel 2014.6 participation observables (batch B7): per closed week and club, each roster row's player id, gsis id, group, depth rank, availability, hold and whether he dressed, written from the frozen package at closure (`scripts/close_week.py`); Weeks 1-4 backfilled by `scripts/render_observables.py` from a rebuild that reproduces the closed receipts (Jacksonville's rows from its full receipt, labelled). Records only: no value, state or grade |
 | [In-season rails](../../../../library/2014_inseason_rails.md) | The other clubs' real in-season moves from Week 5 (method section 9): sources, two passes, the hold rule and decisions; each week's batch writes its record to `in_season/week_NN.md` |
 
 **Rebuild:** `python scripts/research/build_league_player_database.py`. This runs offline and preserves the sourced target section and club text outside generated markers. Add `--check` to compare the generated outputs without writing.
@@ -36,15 +36,15 @@
 | File | What it contains |
 |---|---|
 | [FILLING_GUIDE.md](FILLING_GUIDE.md) | League rails: what needs human input. |
-| [branch_identity.json](branch_identity.json) | Generated identity join from every 2014 TeamInput player to a gsis id (kernel 2014.6 data; no statistic or grade). |
+| [branch_identity.json](../../../../data/2014/League/personnel/branch_identity.json) | Generated identity join from every 2014 TeamInput player to a gsis id (kernel 2014.6 data; no statistic or grade). |
 | [draft_pairing.md](draft_pairing.md) | 2014 draft pairing. |
 | [fa_draws.md](fa_draws.md) | Free-agent market draws. |
 | [free_agent_pool.md](free_agent_pool.md) | 2014 free-agent pool. |
-| [league_corrections.json](league_corrections.json) | Structured league corrections used by the simulation. |
+| [league_corrections.json](../../../../data/2014/League/personnel/league_corrections.json) | Structured league corrections used by the simulation. |
 | [league_database_report.md](league_database_report.md) | League database: coverage, provenance and operation. |
-| [league_exceptions.csv](league_exceptions.csv) | Supporting evidence for the records in this folder. |
-| [league_players.csv](league_players.csv) | Supporting evidence for the records in this folder. |
-| [league_players.json](league_players.json) | Structured league players used by the simulation. |
+| [league_exceptions.csv](../../../../data/2014/League/personnel/league_exceptions.csv) | Supporting evidence for the records in this folder. |
+| [league_players.csv](../../../../data/2014/League/personnel/league_players.csv) | Supporting evidence for the records in this folder. |
+| [league_players.json](../../../../data/2014/League/personnel/league_players.json) | Structured league players used by the simulation. |
 | [method.md](method.md) | Historical league rails: method. |
 | [retirements.md](retirements.md) | Retirements on the rails. |
-| [source_snapshot.json.gz](source_snapshot.json.gz) | Supporting evidence for the records in this folder. |
+| [source_snapshot.json.gz](../../../../data/2014/League/personnel/source_snapshot.json.gz) | Supporting evidence for the records in this folder. |

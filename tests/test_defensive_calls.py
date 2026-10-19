@@ -454,7 +454,7 @@ class InputsTests(unittest.TestCase):
         from scripts.render_season_stats import load_receipts
         cls.week_inputs = week_inputs
         cls.receipts = [r for r in load_receipts(SeasonPaths(2014).receipts) if int(r["week"]) <= 4]
-        sheet = json.loads((ROOT / "career/2014/05_Regular_Season/Games/Week_04/call_sheet.json").read_text())
+        sheet = json.loads((ROOT / "data/2014/Regular_Season/Games/Week_04/call_sheet.json").read_text())
         cls.call_sheet = sheet["offensive_call_sheet"]
         cls.anchors = {"offense_anchor": 2.0, "defense_anchor": 2.0, "special_teams_anchor": 2.0}
 
@@ -650,6 +650,25 @@ class FreezeOrderTests(unittest.TestCase):
         self.assertTrue(any("changed after its freeze" in e
                             for e in self.vr.freeze_order_errors(self.root, self.sheet, self.receipt)))
 
+    def test_a_pure_move_neither_freezes_nor_closes(self):
+        # Rebuild step 2b moved every 2014 sheet and receipt into the data
+        # area byte for byte: the freeze and the closure keep their commits.
+        self.write(self.sheet, '{"calls": []}')
+        self.commit(self.sheet)
+        self.write(self.receipt, '{"event_id": "e"}')
+        self.commit(self.receipt)
+        sheet, receipt = "data/2014/Week_05/call_sheet.json", "data/2014/receipts/week_05.json"
+        (self.root / "data/2014/Week_05").mkdir(parents=True)
+        (self.root / "data/2014/receipts").mkdir(parents=True)
+        self.git("mv", self.sheet, sheet)
+        self.git("mv", self.receipt, receipt)
+        self.git("commit", "-q", "-m", "move")
+        self.assertEqual(self.vr.freeze_order_errors(self.root, sheet, receipt), [])
+        # A sheet edited after its game closed is caught, moved or not.
+        self.write(sheet, '{"calls": ["changed after the game"], "more": 1}')
+        self.commit(sheet)
+        self.assertTrue(any("does not follow" in e for e in self.vr.freeze_order_errors(self.root, sheet, receipt)))
+
     def test_same_commit_is_refused(self):
         self.write(self.sheet, "{}")
         self.write(self.receipt, "{}")
@@ -688,6 +707,9 @@ class PausedBindingCheckTests(unittest.TestCase):
 
             def week_folder(self, week, postseason=False):
                 return root / ("Week_%02d" % week)
+
+            def call_sheet(self, week, postseason=False):
+                return self.week_folder(week, postseason) / "call_sheet.json"
 
             def paused_game(self, week, postseason=False):
                 return self.week_folder(week, postseason) / "paused_game.json"

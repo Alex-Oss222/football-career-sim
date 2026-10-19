@@ -50,7 +50,7 @@ Stone uses sustained drives, sometimes ten or twelve snaps, to examine whether t
 
 Stars and reserves work to the same standard. When a correction keeps failing, he and the position coach change the teaching setting or the assignment. Repeating the same instruction louder holds little interest for him.
 
-The [camp standard](../2014/04_Training_Camp_and_Preseason/Training_Camp/staff_plan.md#stones-camp-standard) retains his reporting and fitness requirements. Players and coaches, including Stone, meet written physical standards appropriate to their duties and health. A failed test leads to an individual plan and retest. He varies the personnel groups to give starters and reserves meaningful work with different teammates and opponents.
+The [camp standard](../2014/Training_Camp_and_Preseason/Training_Camp/staff_plan.md#stones-camp-standard) retains his reporting and fitness requirements. Players and coaches, including Stone, meet written physical standards appropriate to their duties and health. A failed test leads to an individual plan and retest. He varies the personnel groups to give starters and reserves meaningful work with different teammates and opponents.
 
 ## 4. Staff Management
 
@@ -196,7 +196,7 @@ A player he knows well can still lose snaps or a roster place. Stone explains th
 
 ## Supporting records and football references
 
-The user's approved profile supplies Stone's preferences and character. [The Prowl](../2013/offseason/the_prowl_program_identity.md) and its [player-readiness standard](../2013/offseason/the_prowl_player_readiness_standard.md) retain the detailed program standards. The active [offensive](../playbook/alex_stone_2013_offensive_playbook_iteration_i.md) and [defensive](../playbook/alex_stone_2013_defensive_playbook_iteration_i.md) books own assignments and terminology; weekly plans establish what is prepared for use. The [staff record](../2014/00_Team_Operations/Staff/coaching_staff.md) owns appointments and responsibilities.
+The user's approved profile supplies Stone's preferences and character. [The Prowl](../2013/offseason/the_prowl_program_identity.md) and its [player-readiness standard](../2013/offseason/the_prowl_player_readiness_standard.md) retain the detailed program standards. The active [offensive](../playbook/alex_stone_2013_offensive_playbook_iteration_i.md) and [defensive](../playbook/alex_stone_2013_defensive_playbook_iteration_i.md) books own assignments and terminology; weekly plans establish what is prepared for use. The [staff record](../2014/Team_Operations/Staff/coaching_staff.md) owns appointments and responsibilities.
 
 These real coaching sources support the football language and methods. Later publications are editing references, not events or knowledge imported into Stone's 2014 career. Accessed October 1, 2026.
 

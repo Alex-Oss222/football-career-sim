@@ -4,7 +4,7 @@
   python scripts/league_year_2014.py            # dry run: index and chance per draw
   python scripts/league_year_2014.py --close    # one private packet; write results
 
-Method: career/2014/early_offseason/league_year_method.json, committed before the draw.
+Method: data/2014/Early_Offseason/league_year_method.json, committed before the draw.
 """
 from __future__ import annotations
 
@@ -20,9 +20,10 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from runtime.packets import canonical
+from runtime.seasons import SeasonPaths
 
-METHOD = ROOT / 'career/2014/01_Early_Offseason/league_year_method.json'
-RESULTS = ROOT / 'career/2014/01_Early_Offseason/league_year_results.json'
+METHOD = SeasonPaths(2014, ROOT).record('early_offseason/league_year_method.json')
+RESULTS = SeasonPaths(2014, ROOT).record('early_offseason/league_year_results.json')
 
 
 def chance(m):

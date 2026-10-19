@@ -955,7 +955,7 @@ class CommittedDataTests(unittest.TestCase):
         # The receipts before Week 5 (clock-relative: Week 5's own closed
         # receipts carry its game injuries forward to Week 6).
         receipts = [r for r in load_receipts(SeasonPaths(2014).receipts) if int(r["week"]) < 5]
-        sheet = json.loads((SeasonPaths(2014).week_folder(4) / "call_sheet.json").read_text())["offensive_call_sheet"]
+        sheet = json.loads(SeasonPaths(2014).call_sheet(4).read_text())["offensive_call_sheet"]
         stand_in = {"schema": player_state.BINDING_SCHEMA, "league_year": 2014,
                     "manifest_sha256": player_state.manifest_sha256(), "commitment": "0" * 64}
         decisions = {"two_point": {"otherwise": "league"}, "kickoff": {"otherwise": "league"}}

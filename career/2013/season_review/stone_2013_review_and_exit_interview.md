@@ -4,7 +4,7 @@
 
 *A researched counterfactual reconstruction for the supplied Jacksonville branch. The January 15 scenes use information available at that date. Dialogue is newly written, not a historical transcript. The February 2 assessment considers Stone's subsequently filed offseason proposal. Research notes and source limitations follow the manuscript. This draft does not execute personnel moves or change the branch's closed results.*
 
-*Corrected September 28, 2026, after [January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md). The January 2014 coaching carousel was resolved after this manuscript was written. It places Alan Lowry's departure to become Atlanta's head coach on January 12 and Frank Bush's interview with Indianapolis on January 14, both before these scenes. The staff passages in the ownership meeting and the press conference now reflect those facts, as does the controlling record (`owner_and_gm_review.md`, Entries 2 and 4). Nothing else in the manuscript changed.*
+*Corrected September 28, 2026, after [January coaching decisions](../../2014/Early_Offseason/staff_changes/timeline.md). The January 2014 coaching carousel was resolved after this manuscript was written. It places Alan Lowry's departure to become Atlanta's head coach on January 12 and Frank Bush's interview with Indianapolis on January 14, both before these scenes. The staff passages in the ownership meeting and the press conference now reflect those facts, as does the controlling record (`owner_and_gm_review.md`, Entries 2 and 4). Nothing else in the manuscript changed.*
 
 ## Ownership and GM review
 
@@ -464,7 +464,7 @@ Caldwell should retain Stone's football priorities while requiring a narrower fi
 
 The manuscript's overall judgment is favorable because the branch evidence warrants it. A first-year head coach who turns a 2-14 club into a 10-6 team with a decisive road playoff victory has earned substantial organizational confidence. Retention is not plausibly a narrow escape made possible by a guaranteed contract. The uncertainty concerns how strong the underlying team is, whether specific corrections last, and whether Stone can make a better acquisition case than the broad assertion that the program worked.
 
-The dialogue and meeting details are dramatic reconstruction. They communicate an evidence-based interpretation of the owner and GM's incentives; they do not claim access to their real private views. No current player, assistant or reporter is assigned an unrecorded grievance, interview request or private misconduct; the staff departures and interview requests in the corrected passages are the ones [January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md) records. The draft makes no new binding promises on Stone's behalf.
+The dialogue and meeting details are dramatic reconstruction. They communicate an evidence-based interpretation of the owner and GM's incentives; they do not claim access to their real private views. No current player, assistant or reporter is assigned an unrecorded grievance, interview request or private misconduct; the staff departures and interview requests in the corrected passages are the ones [January coaching decisions](../../2014/Early_Offseason/staff_changes/timeline.md) records. The draft makes no new binding promises on Stone's behalf.
 
 ### Branch material used
 

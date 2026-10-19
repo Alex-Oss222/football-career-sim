@@ -9,12 +9,20 @@ import json
 from pathlib import Path
 
 from .league import DIVISIONS, DIVISION_OF, TEAMS
+from .season_layout import is_system_file
 from .standings import Season, games_from_receipts
 
 ROOT = Path(__file__).resolve().parents[1]
-FOLDER = Path('career/2014/05_Regular_Season/Schedule')
+# The schedule pages, and the data area that holds its system files.
+FOLDER = Path('career/2014/Regular_Season/Schedule')
+DATA_FOLDER = Path('data/2014/Regular_Season/Schedule')
 COMPONENT_COUNTS = {'division': 6, 'conference_rotation': 4,
                     'interconference_rotation': 4, 'same_place': 2}
+
+
+def location(name):
+    """The repository-relative folder of a schedule product or input."""
+    return DATA_FOLDER if is_system_file(name) else FOLDER
 
 
 def branch_ranks(receipts):
@@ -101,7 +109,7 @@ def validate_games(games, ranks):
 
 def build(root=ROOT):
     root = Path(root)
-    config_bytes = (root / FOLDER / 'rotation_2014.json').read_bytes()
+    config_bytes = (root / DATA_FOLDER / 'rotation_2014.json').read_bytes()
     config = json.loads(config_bytes)
     if config.get('calendar_policy') != 'historical':
         raise ValueError('Calendar policy must remain historical')
@@ -130,7 +138,7 @@ def render(data, config):
              'The published historical pairings control every club. '
              'This is not a dated schedule; fixtures and byes wait for April 23.', '',
              '[Source checks](sources.md) · [Schedule release](release_plan.md) · '
-             '[Jacksonville view](opponents.md) · [Machine-readable matrix](league_opponents.json)', '']
+             '[Jacksonville view](opponents.md) · [Machine-readable matrix](../../../../data/2014/Regular_Season/Schedule/league_opponents.json)', '']
     for division, teams in data['division_order_2013'].items():
         lines += [f'## {division}', '',
                   '| Historical schedule slot | Club | Home opponents | Away opponents | Same-place: home / away |',
@@ -156,7 +164,7 @@ def render(data, config):
 
 def products(root=ROOT):
     data = build(root)
-    config = json.loads((Path(root) / FOLDER / 'rotation_2014.json').read_text())
+    config = json.loads((Path(root) / DATA_FOLDER / 'rotation_2014.json').read_text())
     return {'league_opponents.json': json.dumps(data, indent=2) + '\n',
             'league_opponents.md': render(data, config)}
 
@@ -164,7 +172,7 @@ def products(root=ROOT):
 def check(root=ROOT):
     errors = []
     for name, expected in products(root).items():
-        path = Path(root) / FOLDER / name
+        path = Path(root) / location(name) / name
         if not path.exists() or path.read_text() != expected:
-            errors.append(f'{FOLDER / name} is stale; run scripts/render_2014_opponents.py')
+            errors.append(f'{location(name) / name} is stale; run scripts/render_2014_opponents.py')
     return errors

@@ -1,6 +1,6 @@
 # Team season-review template
 
-Write the completed team's review at `career/[year]/07_Season_Review/season_review.md` after its actual final game. Use the [exit-interview template](exit_interview.md) for the meetings that inform it. The team can review its season while league awards or other clubs' playoff games remain pending; distinguish those unfinished league records without guessing their outcomes. Follow the existing season-handoff manifest rather than creating another transition checklist.
+Write the completed team's review at `career/[year]/Season_Review/season_review.md` after its actual final game. Use the [exit-interview template](exit_interview.md) for the meetings that inform it. The team can review its season while league awards or other clubs' playoff games remain pending; distinguish those unfinished league records without guessing their outcomes. Follow the existing season-handoff manifest rather than creating another transition checklist.
 
 This report explains what the season established about the team's football and coaching. Link detailed games, interviews, final assessments and statistics instead of reproducing them. Select representative evidence across the season, including contrary observations and changes in opposition or available personnel. Do not force improvement, decline, a turning point or a lesson into every unit's account.
 

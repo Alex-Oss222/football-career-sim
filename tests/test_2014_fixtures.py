@@ -9,7 +9,7 @@ from zoneinfo import ZoneInfo
 from runtime import week_inputs
 from runtime.league import DIVISION_OF, TEAMS
 from runtime.seasons import SeasonPaths
-from runtime.schedule_2014 import FOLDER, ROOT
+from runtime.schedule_2014 import DATA_FOLDER, FOLDER, ROOT
 
 JAX = 'Jacksonville Jaguars'
 FIELDS = {'game_id', 'week', 'date', 'weekday', 'kickoff_et', 'away', 'home', 'site', 'stadium'}
@@ -19,9 +19,9 @@ OPTIONAL = {'city', 'note'}
 class Fixtures2014Tests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.data = json.loads((ROOT / FOLDER / 'fixtures.json').read_text())
+        cls.data = json.loads((ROOT / DATA_FOLDER / 'fixtures.json').read_text())
         cls.games = cls.data['games']
-        cls.opponents = json.loads((ROOT / FOLDER / 'league_opponents.json').read_text())
+        cls.opponents = json.loads((ROOT / DATA_FOLDER / 'league_opponents.json').read_text())
 
     def test_release_identity_and_runtime_loading(self):
         self.assertEqual((self.data['season'], self.data['status']), (2014, 'RELEASED'))
@@ -115,7 +115,7 @@ class Fixtures2014Tests(unittest.TestCase):
 
     def test_readable_view_matches_byes(self):
         text = (ROOT / FOLDER / 'fixtures.md').read_text()
-        codes = {v: k for k, v in json.loads((ROOT / FOLDER / 'rotation_2014.json').read_text())['club_codes'].items()}
+        codes = {v: k for k, v in json.loads((ROOT / DATA_FOLDER / 'rotation_2014.json').read_text())['club_codes'].items()}
         for week in range(1, 18):
             row = re.search(r'^\| %d \| [^|]+ \| (\d+) \| ([^|]+) \|' % week, text, re.M)
             playing = {t for g in self.games if g['week'] == week for t in (g['home'], g['away'])}

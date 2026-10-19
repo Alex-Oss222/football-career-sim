@@ -6,7 +6,7 @@
   python scripts/close_preseason_game.py N --season YEAR --close --continue ANSWER.json
 
 Mirrors scripts/close_week.py for one dated preseason fixture
-(career/YEAR/04_Training_Camp_and_Preseason/Preseason_Games/fixtures.json). Jacksonville's TeamInput is
+(data/YEAR/Training_Camp_and_Preseason/Preseason_Games/fixtures.json). Jacksonville's TeamInput is
 built from the current roster, the game's frozen depth chart,
 Game_0N/call_sheet.json and, when Stone froze one, Game_0N/rotation.json
 (the unit rotation, runtime/rotation.py); the opponent's from

@@ -122,6 +122,7 @@ class AnnualPlayerSheetTests(unittest.TestCase):
     def test_frozen_syntheses_do_not_read_living_offseason_profiles(self):
         root,players=self.fixture()
         living=SeasonPaths(2014,root).record('offseason/player_development/roster_profiles.md')
+        living.parent.mkdir(parents=True,exist_ok=True)
         living.write_text('| **Kirk Cousins (QB)** | Later-season observation |',encoding='utf-8')
         checkpoint,reloaded=load_season_players(2013,root)
         self.assertEqual(players,reloaded)

@@ -26,7 +26,7 @@ from runtime.seasons import SeasonPaths
 
 F3 = "foundation/03_Head_Coach_Organization_and_Authority_Canon.md"
 # A sample sheet's content only; it is written into the active season's folders.
-W5_SHEET = "career/2014/05_Regular_Season/Games/Week_05/call_sheet.json"
+W5_SHEET = "data/2014/Regular_Season/Games/Week_05/call_sheet.json"
 
 
 class CurrentJobTests(unittest.TestCase):
@@ -227,7 +227,7 @@ class CurrentJobTests(unittest.TestCase):
         expected = current_job.party_name(self.job, current_job.caller_on(self.job, "defense", on))
         other = "Romeo Crennel" if expected != "Romeo Crennel" else "Alex Stone"
         sheet = json.loads((ROOT / W5_SHEET).read_text(encoding="utf-8"))
-        target = SeasonPaths(self.season, self.root).week_folder(week) / "call_sheet.json"
+        target = SeasonPaths(self.season, self.root).call_sheet(week)
         rel = target.relative_to(self.root).as_posix()
         sheet["defensive_call_sheet"]["caller"] = expected
         self.write(rel, json.dumps(sheet))
@@ -263,7 +263,7 @@ class CurrentJobTests(unittest.TestCase):
     def test_undatable_postseason_sheet_is_a_named_error(self):
         sheet = json.loads((ROOT / W5_SHEET).read_text(encoding="utf-8"))
         first = 18 + (1 if self.season >= 2021 else 0)
-        folder = SeasonPaths(self.season, self.root).week_folder(first, postseason=True)
+        folder = SeasonPaths(self.season, self.root).week_data(first, postseason=True)
         target = (folder / "call_sheet.json").relative_to(self.root).as_posix()
         self.write(target, json.dumps(sheet))
         self.addCleanup(lambda: folder.rmdir() if folder.exists() and not any(folder.iterdir()) else None)

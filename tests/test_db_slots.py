@@ -519,7 +519,7 @@ class Week5BuildTests(unittest.TestCase):
         from scripts.render_season_stats import load_receipts
         paths = SeasonPaths(2014)
         cls.receipts = [r for r in load_receipts(paths.receipts) if int(r["week"]) < 5]
-        sheet = json.loads((paths.week_folder(4) / "call_sheet.json").read_text(encoding="utf-8"))
+        sheet = json.loads(paths.call_sheet(4).read_text(encoding="utf-8"))
         cls.args = (sheet["offensive_call_sheet"], {"offense_anchor": 2.0, "defense_anchor": 2.0,
                                                     "special_teams_anchor": 2.0}, 2014)
         cls.decisions = dict(sheet.get("decisions") or {}, two_point={"otherwise": "league"},

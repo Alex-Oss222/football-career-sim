@@ -15,7 +15,7 @@ As of September 8, 2014. Whole US dollars.
 | Certified cap space | Unresolved | Withheld until club accounting is reconciled |
 | Space after rookie reserve | Unresolved | Requires verified net rookie cost and certified space |
 
-The [current worksheet](../../2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md) records the Top-51 calculation and workout charge. A league-cap difference is not certified available room. [Organization finances](../coaching_and_organization/coaching_payroll.md) contains coaching commitments.
+The [current worksheet](../../2014/Team_Operations/Finances/salary_cap/cap_worksheet.md) records the Top-51 calculation and workout charge. A league-cap difference is not certified available room. [Organization finances](../coaching_and_organization/coaching_payroll.md) contains coaching commitments.
 
 | Working offseason reconciliation | 2014 |
 |---|---|
@@ -32,7 +32,7 @@ The [current worksheet](../../2014/00_Team_Operations/Finances/salary_cap/cap_wo
 | Unused prior-year room carried in | $5,330,000 to $6,000,000 |
 | Difference including the rollover estimate | $15,876,308 to $16,546,308 |
 
-The rollover is calculated step by step in the [cap worksheet](../../2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md#2013-rollover). It becomes certified room only when club accounting is reconciled.
+The rollover is calculated step by step in the [cap worksheet](../../2014/Team_Operations/Finances/salary_cap/cap_worksheet.md#2013-rollover). It becomes certified room only when club accounting is reconciled.
 
 ## Current player cap breakdown
 
@@ -124,7 +124,7 @@ The twelve-year horizon stays visible for future tracking. Pending free agents a
 | Future league caps | Add each year’s published cap when that year is reached |
 | Club accounting | Carryover, adjustments and actual cash receipts remain in the current cap worksheet |
 
-The [2011 agreement](https://nflps.org/wp-content/uploads/2012/05/collective-bargaining-agreement-2011-2020.pdf) controls the era’s minimums, bonus allocation, Top-51 treatment, options and cash-floor windows. [The original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md) supplies the historical salaries and bonus schedules. The [club worksheet](../../2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md) separates scheduled player commitments from adjusted club cap room.
+The [2011 agreement](https://nflps.org/wp-content/uploads/2012/05/collective-bargaining-agreement-2011-2020.pdf) controls the era’s minimums, bonus allocation, Top-51 treatment, options and cash-floor windows. [The original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md) supplies the historical salaries and bonus schedules. The [club worksheet](../../2014/Team_Operations/Finances/salary_cap/cap_worksheet.md) separates scheduled player commitments from adjusted club cap room.
 
 ## Team cap summary, twelve years
 
@@ -673,7 +673,7 @@ The $51,675 old Bray bonus is counted separately from his new $420,000 salary. N
 | 2014 | 6 | Jacksonville Jaguars | 205 | Jemea Thomas, DB, Georgia Tech | May 10, 2014 | Signed May 11, 2014 |
 | 2014 | 7 | Jacksonville Jaguars | 241 | Malcolm Butler, CB, West Alabama | May 10, 2014 | Signed May 11, 2014 |
 
-All nine selections were exercised May 8 to 10 and signed May 11, 2014; no 2014 selection right remains. Each rookie contract is in the position tables above and in its individual sheet, and the gross and net Top-51 effect of the class is in the [cap worksheet](../../2014/00_Team_Operations/Finances/salary_cap/cap_worksheet.md). [The draft record](../../2014/03_Draft/draftees.md) owns the selections and [the draft ownership record](../../2014/03_Draft/draft_order.md) the picks. Overall numbers include the 32 compensatory picks announced March 24, 2014; Jacksonville received none.
+All nine selections were exercised May 8 to 10 and signed May 11, 2014; no 2014 selection right remains. Each rookie contract is in the position tables above and in its individual sheet, and the gross and net Top-51 effect of the class is in the [cap worksheet](../../2014/Team_Operations/Finances/salary_cap/cap_worksheet.md). [The draft record](../../2014/Draft/draftees.md) owns the selections and [the draft ownership record](../../2014/Draft/draft_order.md) the picks. Overall numbers include the 32 compensatory picks announced March 24, 2014; Jacksonville received none.
 
 ## Decision calendar
 

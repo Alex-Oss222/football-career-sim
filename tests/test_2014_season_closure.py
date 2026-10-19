@@ -107,7 +107,7 @@ class SeasonClosure2014Tests(unittest.TestCase):
         # the real Week 1 receipts and redraws the Week 1 awards from scratch,
         # while every later real week (receipts, outputs and awards) stays in
         # the copy exactly as the real season closed it.
-        results = self.paths.awards / "results.json"
+        results = self.paths.awards_data / "results.json"
         if results.exists():
             drawn = json.loads(results.read_text(encoding="utf-8"))
             drawn.pop("week-%d" % WEEK, None)
@@ -117,7 +117,7 @@ class SeasonClosure2014Tests(unittest.TestCase):
                 results.unlink()
         shutil.rmtree(self.paths.awards / ("week_%02d" % WEEK), ignore_errors=True)
         self.real = SeasonPaths(SEASON, ROOT)
-        self.real_files = sorted(p for p in (ROOT / "career" / str(SEASON)).rglob("*.json"))
+        self.real_files = sorted(p for p in self.real.data.rglob("*.json"))
         real_cache = self.real.cache(WEEK, "results")
         self.real_cache_before = real_cache.read_bytes() if real_cache.exists() else None
 
@@ -156,7 +156,7 @@ class SeasonClosure2014Tests(unittest.TestCase):
         # Receipts: full for Jacksonville, compact for the other fifteen games.
         receipts_dir = close_week.write_receipts(package, paths, results, SEASON)
         self.assertEqual(receipts_dir, paths.receipts)
-        self.assertEqual(receipts_dir, root / "career/2014/05_Regular_Season/Statistics/records/game_receipts")
+        self.assertEqual(receipts_dir, root / "data/2014/Regular_Season/Statistics/records/game_receipts")
         written = sorted(p.name for p in receipts_dir.glob("week_%02d_*.json" % WEEK))
         self.assertEqual(written, sorted(g["receipt"] for g in package["games"]))
         own = json.loads((receipts_dir / "week_01_jacksonville_jaguars_at_philadelphia_eagles.json").read_text())
@@ -169,17 +169,17 @@ class SeasonClosure2014Tests(unittest.TestCase):
         # Every generated view, as the weekly workflow generates it.
         regular = render_season_stats.load_receipts(paths.receipts)
         views = render_season_stats.render_views(SEASON, JAX, regular)
-        paths.stats.mkdir(parents=True, exist_ok=True)
         for name, text in views.items():
-            (paths.stats / name).write_text(text, encoding="utf-8")
-        self.assertTrue((root / "career/2014/05_Regular_Season/Statistics/records/season_totals.json").is_file())
+            paths.file_in(paths.stats, name).parent.mkdir(parents=True, exist_ok=True)
+            paths.file_in(paths.stats, name).write_text(text, encoding="utf-8")
+        self.assertTrue((root / "data/2014/Regular_Season/Statistics/records/season_totals.json").is_file())
         standings = paths.record("standings.md")
         standings.write_text(render_standings.render(SEASON, regular), encoding="utf-8")
-        self.assertEqual(standings, root / "career/2014/05_Regular_Season/standings.md")
+        self.assertEqual(standings, root / "career/2014/Regular_Season/standings.md")
         self.assertRegex(standings.read_text(encoding="utf-8"), r"\*\*Through:\*\* Week \d+\.")
 
         week_dir = paths.week_folder(WEEK)
-        self.assertEqual(week_dir, root / "career/2014/05_Regular_Season/Games/Week_01")
+        self.assertEqual(week_dir, root / "career/2014/Regular_Season/Games/Week_01")
         output = week_dir / "output.md"
         markers = "<!-- box-score event=%s team=%s -->\n<!-- /box-score -->\n" % (own["event_id"], JAX)
         if output.is_file():
@@ -208,13 +208,14 @@ class SeasonClosure2014Tests(unittest.TestCase):
                 patch.object(sys, "argv", ["league_awards", "week", str(WEEK), "--season", str(SEASON), "--close"]), \
                 contextlib.redirect_stdout(io.StringIO()):
             self.assertEqual(league_awards.main(), 0)
-        drawn = json.loads((paths.awards / "results.json").read_text(encoding="utf-8"))
+        drawn = json.loads((paths.awards_data / "results.json").read_text(encoding="utf-8"))
         self.assertIn("week-1", drawn)  # later real weeks' draws stay in the copy
         self.assertEqual(len(drawn["week-1"]["awards"]), 6)
         self.assertTrue(all(a["event_id"].startswith("2014-award-week01-") for a in drawn["week-1"]["awards"].values()))
-        self.assertEqual(paths.awards, root / "career/2014/05_Regular_Season/Awards")
+        self.assertEqual(paths.awards, root / "career/2014/Regular_Season/Awards")
+        self.assertEqual(paths.awards_data, root / "data/2014/Regular_Season/Awards")
         self.assertTrue((paths.awards / "week_01/README.md").is_file())
-        real_results = self.real.awards / "results.json"
+        real_results = self.real.awards_data / "results.json"
         if real_results.exists():  # the real season's draws are untouched
             self.assertNotEqual(json.loads(real_results.read_text(encoding="utf-8")), drawn)
 
@@ -248,7 +249,8 @@ class SeasonClosure2014Tests(unittest.TestCase):
         self.assertEqual(sorted(set(errors) - baseline), [])
 
         # Isolation: nothing reached the real season tree, cache or receipts.
-        self.assertEqual(sorted(p for p in (ROOT / "career" / str(SEASON)).rglob("*.json")), self.real_files)
+        self.assertEqual(sorted(p for p in self.real.data.rglob("*.json")), self.real_files)
+        self.assertEqual(sorted((ROOT / "career" / str(SEASON)).rglob("*.json")), [])
         self.assertEqual(sorted(self.real.receipts.glob("*.json")), [p for p in self.real_files if p.parent == self.real.receipts])
         real_cache = self.real.cache(WEEK, "results")  # the real workspace is untouched
         self.assertEqual(real_cache.read_bytes() if real_cache.exists() else None, self.real_cache_before)

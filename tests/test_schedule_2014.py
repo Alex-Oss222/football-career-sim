@@ -11,7 +11,7 @@ from runtime.league import DIVISIONS, TEAMS
 class OpponentMatrixTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.config = json.loads((schedule.ROOT / schedule.FOLDER / 'rotation_2014.json').read_text())
+        cls.config = json.loads((schedule.ROOT / schedule.DATA_FOLDER / 'rotation_2014.json').read_text())
         cls.data = schedule.build()
         cls.games = cls.data['games']
 

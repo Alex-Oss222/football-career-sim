@@ -1,21 +1,23 @@
 # Season folders and record ownership
 
-The [2014 season](../career/2014/README.md) supplies the layout for 2014 onward. Numbered folders put the football year in its usual order. The actual [Jacksonville calendar](../career/2014/Calendar.md) controls overlapping work: the draft falls during the spring program, and trades and signings can occur in several phases. The 2013 domain folders retain their historical paths.
+The [2014 season](../career/2014/README.md) supplies the layout for 2014 onward. The folders carry no numbers and follow the football year in its usual order. The actual [Jacksonville calendar](../career/2014/Calendar.md) controls overlapping work: the draft falls during the spring program, and trades and signings can occur in several phases. The 2013 domain folders retain their historical paths.
 
 ## The season route
 
 | Folder | Work kept here |
 |---|---|
-| `00_Team_Operations` | Current roster and depth chart, working player assessments, staff, individual development, film, medical history, trades, free agency and finances |
-| `01_Early_Offseason` | Staff changes, scouting and preparation before the new league year |
-| `02_Offseason_Training` | Phase One, Phase Two, rookie minicamp, OTAs and mandatory minicamp |
-| `03_Draft` | Scouting board, pick ownership, selections and undrafted signings |
-| `04_Training_Camp_and_Preseason` | Camp, preseason games, actual position battles and roster decisions |
-| `05_Regular_Season` | Weekly games, schedule, standings, statistics, league results and awards |
-| `06_Postseason` | Playoff games, separate postseason statistics, honours and Pro Bowl |
-| `07_Season_Review` | Player and coach exit reviews, final player assessments and the handoff to the next season |
+| `Team_Operations` | Current roster and depth chart, working player assessments, staff, individual development, film, medical history, trades, free agency and finances |
+| `Early_Offseason` | Staff changes, scouting and preparation before the new league year |
+| `Offseason_Training` | Phase One, Phase Two, rookie minicamp, OTAs and mandatory minicamp |
+| `Draft` | Scouting board, pick ownership, selections and undrafted signings |
+| `Training_Camp_and_Preseason` | Camp, preseason games, actual position battles and roster decisions |
+| `Regular_Season` | Weekly games, schedule, standings, statistics, league results and awards |
+| `Postseason` | Playoff games, separate postseason statistics, honours and Pro Bowl |
+| `Season_Review` | Player and coach exit reviews, final player assessments and the handoff to the next season |
 
 `League` holds the other clubs' permitted personnel records. `Supporting_Records` holds operational support. These are reference areas, not extra phases in the football year. Shared career finances remain in [career/finances](../career/finances/README.md); a season's finance pages link to those owners rather than copying balances.
+
+The season folders hold the pages to read and the images they show. The files the system works from (call sheets, depth chart files, game receipts, statistics and award data, methods and results of each draw, the league database and the handoff manifest) live in the data area, `data/YEAR/`, at the same path under the same folder names: the Week 5 call sheet is `data/2014/Regular_Season/Games/Week_05/call_sheet.json`, beside the week's pages in `career/2014/Regular_Season/Games/Week_05/`. The 2013 season keeps its historical layout, data included.
 
 ## Calendar, annual record and event owners
 
@@ -29,9 +31,9 @@ A trade is written in Trades, a signing in Free_Agency, a medical decision in th
 
 Each training phase has two substantive files: `staff_plan.md` for intended work and `training_report.md` for what happened. The report begins with the phase, location, dates, days completed and the football the staff addressed. Its assessment follows in the same report. Do not create another phase assessment document or one file per drill, meeting or practice correction.
 
-Across the year, each player has two assessment records. The opening assessment in `00_Team_Operations/Team/Player_Cards` retains its starting baseline and adds dated updates from rookie camp through the postseason. The separate final assessment belongs in `07_Season_Review/Player_Assessments` after the season closes. Preserve former players' history and earlier yearly statistics. Individual development plans own proposed work; they are not a third set of player evaluations.
+Across the year, each player has two assessment records. The opening assessment in `Team_Operations/Team/Player_Cards` retains its starting baseline and adds dated updates from rookie camp through the postseason. The separate final assessment belongs in `Season_Review/Player_Assessments` after the season closes. Preserve former players' history and earlier yearly statistics. Individual development plans own proposed work; they are not a third set of player evaluations.
 
-Open competitions live under `04_Training_Camp_and_Preseason/Position_Battles`, grouped by unit, then position, then the actual contested spot. The existing 2014 cards are WR1, WR3, left guard, the conditional right-guard alternative, Edge 1 and long snapper (all six resolved August 30, 2014 and kept as dated history; no 2014 competition is open). A vacancy or a cross-training exercise does not create a battle. Compare the actual candidates and their relevant work, link the source reports, and retain the dated decision when a competition closes. The depth chart remains the owner of current assignments.
+Open competitions live under `Training_Camp_and_Preseason/Position_Battles`, grouped by unit, then position, then the actual contested spot. The existing 2014 cards are WR1, WR3, left guard, the conditional right-guard alternative, Edge 1 and long snapper (all six resolved August 30, 2014 and kept as dated history; no 2014 competition is open). A vacancy or a cross-training exercise does not create a battle. Compare the actual candidates and their relevant work, link the source reports, and retain the dated decision when a competition closes. The depth chart remains the owner of current assignments.
 
 ## Season continuity
 
@@ -53,7 +55,9 @@ New-season game receipts, statistics, standings, awards, position competitions a
 
 ## Path and rendering rules
 
-Use `runtime.seasons.SeasonPaths` and its `record()` method for season paths. `runtime.season_layout` translates old physical and logical names to the current layout; frozen receipt and source bytes retain their original evidence. Do not recreate old folders because an older reference names one.
+Use `runtime.seasons.SeasonPaths` and its `record()` method for season paths; from 2014 it resolves a system file (`.json`, `.csv`, `.gz`) into the data area and a page into the season folder, and `data_for()`, `file_in()`, `call_sheet()`, `week_data()`, `preseason_data()` and `awards_data` name the data-area side of a page folder. `runtime.season_layout` translates old physical and logical names, including the former numbered folder names (`00_Team_Operations` to `07_Season_Review`), to the current layout; frozen receipt and source bytes retain their original evidence. Do not recreate old folders because an older reference names one.
+
+The templates under `foundation/templates/` name the folders without numbers (rebuild step 2b, October 19, 2026); a system file they mention lives at its data-area path.
 
 The annual record, trade index, cap views, standings, statistics and award pages are generated views. Change the actual owner or input first, then run the relevant renderer. `python scripts/render_annual_record.py 2014 --check` verifies that the dated index agrees with its owners. The [update workflow](update_workflow.md) gives the complete closure and validation procedure.
 

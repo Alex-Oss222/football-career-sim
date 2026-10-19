@@ -24,12 +24,13 @@ from pathlib import Path
 from .league import TEAMS
 from .standings import Season, games_from_receipts
 from . import postseason
+from .seasons import SeasonPaths
 
 ROOT = Path(__file__).resolve().parents[1]
 GROUPS = (("non-playoff", 1), ("wild_card", 21), ("divisional", 25),
           ("conference", 29), ("super_bowl_loser", 31), ("champion", 32))
-OWNERSHIP = ROOT / 'career/2014/03_Draft/pick_ownership.json'
-COIN_FLIP = ROOT / 'career/2014/03_Draft/coin_flip.json'
+OWNERSHIP = SeasonPaths(2014, ROOT).record('draft/pick_ownership.json')
+COIN_FLIP = SeasonPaths(2014, ROOT).record('draft/coin_flip.json')
 _RECORDED_DRAW = object()
 
 

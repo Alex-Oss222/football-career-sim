@@ -101,6 +101,7 @@ class AnnualAssessmentCompletionTests(unittest.TestCase):
             gates[gate] = {'status': 'COMPLETE', 'evidence': [
                 {'path': source.relative_to(root).as_posix(), 'sha256': sha(source)}]}
         manifest = paths.record('closeouts/season_handoff.json')
+        manifest.parent.mkdir(parents=True, exist_ok=True)
         manifest.write_text(json.dumps({'season': year, 'gates': gates, 'pending_decisions': ['preserve me']}))
         names = ['Sam Snap'] + (['Dale Former'] if departed else [])
         for name in names:

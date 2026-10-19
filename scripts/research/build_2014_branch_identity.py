@@ -3,7 +3,7 @@
 
   python scripts/research/build_2014_branch_identity.py [--sources DIR] [--week N] [--check]
 
-Writes career/2014/League/personnel/branch_identity.json. Data only: nothing in runtime/
+Writes data/2014/League/personnel/branch_identity.json. Data only: nothing in runtime/
 reads it until batch B7. An identity join is not an evaluation; the table holds no
 statistic, grade or state value.
 
@@ -63,7 +63,7 @@ for p in (str(HERE), str(ROOT)):
 import pre_build_specification  # noqa: E402
 import sources_2010_2014 as sources  # noqa: E402
 
-OUT = ROOT / "career/2014/League/personnel/branch_identity.json"
+OUT = ROOT / "data/2014/League/personnel/branch_identity.json"
 SCHEMA = "branch-identity-v1"
 SEASON = 2014
 ROSTER_FILES = (["roster_%d.csv" % s for s in (2010, 2011, 2012, 2013)]
@@ -72,6 +72,7 @@ GSIS = re.compile(r"^\d{2}-\d{7}$")
 CLUB_TAG = re.compile(r"\s*\([A-Z]{2,3}\)\s*$")
 
 # Sourced manual rows. Each names the branch record and the public identity source.
+# The labels keep the record's path when the table was built (before rebuild step 2b).
 MANUAL = {
     "00-0030957": {"display_name": "Casey Kreiter", "class": 2014, "draft": None,
                    "reason": "2014 undrafted signing; on no dated roster at Week 4 or earlier",
@@ -187,7 +188,22 @@ def dry_slate(week):
                 ids = {p["player_id"]: p.get("gsis_id") for p in club["players"]}
             for r in roster:
                 rows.append((team, r["player_id"], r.get("position"), ids.get(r["player_id"])))
-    return rows, {"week": week, "call_sheet": str(sheet.relative_to(ROOT)), "games": len(package["games"])}
+    return rows, {"week": week, "call_sheet": recorded_sheet_path(sheet), "games": len(package["games"])}
+
+
+# Rebuild step 2b moved the call sheets into the data area. A sheet frozen before
+# that move (Weeks 1 to 5) is recorded at the path it had when the table was built,
+# so a rebuild reproduces the committed artifact; a later sheet keeps its own path.
+PRE_2B_LAST_WEEK = 5
+DATA_SHEET = re.compile(r"^data/2014/Regular_Season/Games/Week_(\d+)/call_sheet\.json$")
+
+
+def recorded_sheet_path(sheet):
+    relative = sheet.relative_to(ROOT).as_posix()
+    match = DATA_SHEET.match(relative)
+    if match and int(match.group(1)) <= PRE_2B_LAST_WEEK:
+        return "career/2014/05_Regular_Season/Games/Week_%s/call_sheet.json" % match.group(1)
+    return relative
 
 
 def global_rows():

@@ -123,7 +123,7 @@ The [NFL's all-club report-date list](https://www.nfl.com/news/2014-nfl-training
 
 ## Regular season
 
-The [256-game fixture file](../career/2014/05_Regular_Season/Schedule/fixtures.json) and [readable schedule](../career/2014/05_Regular_Season/Schedule/fixtures.md) contain every club's opponent, date, venue, kickoff and bye. Their [source record](../career/2014/05_Regular_Season/Schedule/sources.md) identifies dated amendments and unresolved release-era kickoff details. The month tables below contain league appointments, not another editable copy of those games.
+The [256-game fixture file](../data/2014/Regular_Season/Schedule/fixtures.json) and [readable schedule](../career/2014/Regular_Season/Schedule/fixtures.md) contain every club's opponent, date, venue, kickoff and bye. Their [source record](../career/2014/Regular_Season/Schedule/sources.md) identifies dated amendments and unresolved release-era kickoff details. The month tables below contain league appointments, not another editable copy of those games.
 
 ### September
 

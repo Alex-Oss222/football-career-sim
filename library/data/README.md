@@ -98,7 +98,7 @@ The 2014.6 base also pins `2014_strength_calibration_v2.json` (usage_tilt) and t
 
 | File | Record | Builder and check | Pin or reader | Status |
 |---|---|---|---|---|
-| `2012_hc_change_base_rates.json` | No library record; method [carousel_method.json](../../career/2014/01_Early_Offseason/staff_changes/carousel_method.json); cited by [the coaching career path](../nfl_coaching_career_path.md) | `build_hc_change_base_rates.py GAMES_CSV` (nfldata `games.csv`; the source digest is inside the JSON; no `--check`) | `scripts/coaching_carousel.py`; its digest is the closed carousel's `rates_sha256` | Frozen input of the closed January 2014 carousel |
+| `2012_hc_change_base_rates.json` | No library record; method [carousel_method.json](../../data/2014/Early_Offseason/staff_changes/carousel_method.json); cited by [the coaching career path](../nfl_coaching_career_path.md) | `build_hc_change_base_rates.py GAMES_CSV` (nfldata `games.csv`; the source digest is inside the JSON; no `--check`) | `scripts/coaching_carousel.py`; its digest is the closed carousel's `rates_sha256` | Frozen input of the closed January 2014 carousel |
 
 ## Defensive data, 2006 to 2013
 

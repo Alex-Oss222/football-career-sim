@@ -1,6 +1,6 @@
 # 2014 strength, development and in-game availability
 
-[Defect register](defect_register.md) · [Player development](../career/2014/00_Team_Operations/Player_Development/README.md)
+[Defect register](defect_register.md) · [Player development](../career/2014/Team_Operations/Player_Development/README.md)
 
 **Decision record:** Stone approved E1 and E2 in the September 28–29, 2026 follow-up to PR #132, with the branch still at February 2, 2014. This adopts their policy, including team construction and coaching, without releasing a kernel. Kernel 2014.3 remains installed; Tier 1 remains open. No 2013 receipt, rating input or outcome is rewritten.
 
@@ -187,7 +187,7 @@ Stone adopted three recommendations on October 2, 2026, with the branch at Septe
 - **Staff assessments, grades and E2 advice never read player-state values or tiers.** The AGENTS.md line for this awaits approval; until then the rule lives here and in `runtime/README.md`.
 - The evidence table's draft-slot row ("Draft slot, reputation and contract cost are not ability measurements", E1 above) still governs scouting, staff assessments and every reader-facing judgment. Stone's adoption of draft-slot starting estimates supersedes it only for the hidden-state prior of a player with no pre-2013 record.
 - "Development stays open" ("no calendar-triggered upgrade, compulsory one-tier step, fixed age curve", above) still governs staff assessment and the development program. The fitted aging and experience curves are population priors on the hidden engine value, the same for every player of a family. They never trigger a staff upgrade or downgrade, and a family that fails its test has no curve.
-- A dated pointer note is added to the [progression model](../career/2014/00_Team_Operations/Player_Development/progression_model.md).
+- A dated pointer note is added to the [progression model](../career/2014/Team_Operations/Player_Development/progression_model.md).
 
 ### U2 to U8
 

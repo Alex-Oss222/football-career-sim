@@ -4,7 +4,7 @@
   python scripts/st_coordinator_search.py           # dry run: path probabilities
   python scripts/st_coordinator_search.py --close   # one private draw; write results
 
-Method: career/2014/early_offseason/staff_changes/st_search_method.json, committed before the draw.
+Method: data/2014/Early_Offseason/staff_changes/st_search_method.json, committed before the draw.
 """
 from __future__ import annotations
 
@@ -20,8 +20,10 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from runtime.packets import canonical
+from runtime.seasons import SeasonPaths
 
-DIR = ROOT / 'career/2014/01_Early_Offseason/staff_changes'
+# The method and results are system files in the data area (rebuild step 2b).
+DIR = SeasonPaths(2014, ROOT).data_for(SeasonPaths(2014, ROOT).record('early_offseason/staff_changes'))
 METHOD = DIR / "st_search_method.json"
 RESULTS = DIR / "st_search_results.json"
 P_APRIL_RESIGNED = 13 / 16

@@ -89,7 +89,8 @@ class GateTests(unittest.TestCase):
 
     def test_career_reads_are_refused(self):
         for path in (ROOT / "career/2014/stats/game_receipts/x.json", ROOT / "career",
-                     ROOT / "career/2014/../2014/roster.md"):
+                     ROOT / "career/2014/../2014/roster.md", ROOT / "data",
+                     ROOT / "data/2014/Regular_Season/Statistics/records/game_receipts/x.json"):
             with self.assertRaises(sources.SourceRefused):
                 sources.guard_path(path)
         with self.assertRaises(sources.SourceRefused):

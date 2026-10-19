@@ -1,6 +1,6 @@
 # Individual teaching packet template
 
-Save a prepared packet under `career/<year>/00_Team_Operations/Film/`, with a descriptive player/topic filename. Keep later revisions with that packet; the delivery log owns when it actually reached the player.
+Save a prepared packet under `career/<year>/Team_Operations/Film/`, with a descriptive player/topic filename. Keep later revisions with that packet; the delivery log owns when it actually reached the player.
 
 **Player / owner / packet ID / revision:** fill when prepared. **Evidence cutoff:** actual reviewed checkpoint. **Preparation / media / contact gate / distribution:** separate statuses under the current season's film workflow.
 
@@ -26,7 +26,7 @@ Include representative ordinary good work and adaptations as well as difficult r
 
 ## Review and release
 
-Position-coach review, shared-room reconciliation and staff contribution: pending until actually completed. Record reviewer, date and changes when they occur. Before release, check control/eligibility, the permitted activity/date and medical instructions. Log actual distribution in that season's `00_Team_Operations/Film/delivery_log.md`; a drafted packet is not a sent tape.
+Position-coach review, shared-room reconciliation and staff contribution: pending until actually completed. Record reviewer, date and changes when they occur. Before release, check control/eligibility, the permitted activity/date and medical instructions. Log actual distribution in that season's `Team_Operations/Film/delivery_log.md`; a drafted packet is not a sent tape.
 
 ## Retest reference
 

@@ -4,7 +4,7 @@
   python scripts/research/build_2010_2014_player_state_model.py [--sources DIR] [--check]
 
 Writes, from the gated sources (scripts/research/sources_2010_2014.py) and the branch
-identity table (career/2014/League/personnel/branch_identity.json):
+identity table (data/2014/League/personnel/branch_identity.json):
 - library/data/2010_2014_player_state_model.json     the fitted model (aggregates only)
 - library/data/2014_player_state_public.json         per gsis: record family, basis, the
                                                      public expectations m_b, m_u and P
@@ -97,7 +97,7 @@ MODEL_OUT = DATA / "2010_2014_player_state_model.json"
 PUBLIC_OUT = DATA / "2014_player_state_public.json"
 MANIFEST_OUT = DATA / "2014_player_state_manifest.json"
 STUDY = ROOT / "library/2010_2014_player_state_study.md"
-IDENTITY = ROOT / "career/2014/League/personnel/branch_identity.json"
+IDENTITY = ROOT / "data/2014/League/personnel/branch_identity.json"
 HONOURS = DATA / "2010_2012_honours_evidence.json"
 PRODUCTION = DATA / "2010_2012_production_evidence.json"
 RULES = pre_build_specification.frozen_rules()

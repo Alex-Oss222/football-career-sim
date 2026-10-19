@@ -10,14 +10,14 @@ from scripts.build_player_progression_roster import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-ROSTER = ROOT / 'career/2014/00_Team_Operations/Team/Roster/roster.md'
+ROSTER = ROOT / 'career/2014/Team_Operations/Team/Roster/roster.md'
 EXIT_INDEX = (
     ROOT
-    / 'career/2014/00_Team_Operations/Player_Development/2013_exit_player_index.json'
+    / 'data/2014/Team_Operations/Player_Development/2013_exit_player_index.json'
 )
 OUTPUT = (
     ROOT
-    / 'career/2014/00_Team_Operations/Player_Development/progression_roster.json'
+    / 'data/2014/Team_Operations/Player_Development/progression_roster.json'
 )
 
 

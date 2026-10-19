@@ -58,7 +58,7 @@ class ContinuityTests(unittest.TestCase):
                     ['seasons']['2014']['gates'] if g['id'] == 'player_state')
         self.assertEqual((KERNEL_VERSION, gate['status'], gate['applies_from_kernel']), ('2014.6', 'BLOCKED', '2014.6'))
         receipts = []
-        for path in sorted((self.root/'career/2014/05_Regular_Season/Statistics/records/game_receipts').glob('week_*.json')):
+        for path in sorted((self.root/'data/2014/Regular_Season/Statistics/records/game_receipts').glob('week_*.json')):
             if kernel_tuple(json.loads(path.read_text())['kernel_version']) < kernel_tuple(gate['applies_from_kernel']):
                 receipts.append(path)
             else:

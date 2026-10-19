@@ -72,11 +72,11 @@ Each script below drew once. Its results file pins the drawing script's bytes as
 
 | Script | Results | Commit whose bytes match `code_sha256` | Later edits |
 |---|---|---|---|
-| `futures_2014.py [--close] [--entry TEXT]` | `career/2014/01_Early_Offseason/futures_results.json` | 8f85462 | Paths only |
-| `league_year_2014.py [--close] [--entry TEXT]` | `career/2014/01_Early_Offseason/league_year_results.json` | 34c5986 | Paths only |
-| `coaching_carousel.py [render] [--close] [--entry TEXT]` | `career/2014/01_Early_Offseason/staff_changes/carousel_results.json` | 35f1276 | Paths and the page renderer; the draw code is unchanged |
-| `coaching_carousel_deferred.py [render] [--close] [--entry TEXT]` | `career/2014/01_Early_Offseason/staff_changes/carousel_deferred_results.json` | b8812d2 (its `entry75_code_sha256` matches `coaching_carousel.py` at 42f785d) | Paths only |
-| `st_coordinator_search.py [--close] [--entry TEXT]` | `career/2014/01_Early_Offseason/staff_changes/st_search_results.json` | 10ba5f7 | Paths only |
+| `futures_2014.py [--close] [--entry TEXT]` | `data/2014/Early_Offseason/futures_results.json` | 8f85462 | Paths only |
+| `league_year_2014.py [--close] [--entry TEXT]` | `data/2014/Early_Offseason/league_year_results.json` | 34c5986 | Paths only |
+| `coaching_carousel.py [render] [--close] [--entry TEXT]` | `data/2014/Early_Offseason/staff_changes/carousel_results.json` | 35f1276 | Paths and the page renderer; the draw code is unchanged |
+| `coaching_carousel_deferred.py [render] [--close] [--entry TEXT]` | `data/2014/Early_Offseason/staff_changes/carousel_deferred_results.json` | b8812d2 (its `entry75_code_sha256` matches `coaching_carousel.py` at 42f785d) | Paths only |
+| `st_coordinator_search.py [--close] [--entry TEXT]` | `data/2014/Early_Offseason/staff_changes/st_search_results.json` | 10ba5f7 | Paths only |
 | `recover_injury_projection.py [--close]` | `career/2013/migrations/injury_projection_recovery.json` | Not pinned | |
 | `void_week_generation.py WEEK` | Marks voided generations listed in `career/2013/migrations/event_generations.json` | Not pinned | |
 
@@ -103,7 +103,7 @@ Research tools only; the runtime never downloads anything. Each builder's artifa
 | `build_2010_2014_yardage.py [--sources DIR] [--check]` | Yardage | [yardage](../library/2010_2014_yardage_calibration.md) |
 | `build_2014_conditions_calibration.py [--sources DIR] [--check] [--jobs N]` | Conditions, venues and climatology | [context and conditions](../library/2014_context_and_conditions_calibration.md) |
 | `build_2010_2014_player_state_model.py [--sources DIR] [--check]`; pass 2 `verify_2010_2014_player_state_model.py [--sources DIR] [--check]` | Player-state model, public table and manifest | [player-state study](../library/2010_2014_player_state_study.md) |
-| `build_2014_branch_identity.py [--sources DIR] [--week N] [--check]` | `career/2014/League/personnel/branch_identity.json` | [personnel](../career/2014/League/personnel/README.md) |
+| `build_2014_branch_identity.py [--sources DIR] [--week N] [--check]` | `data/2014/League/personnel/branch_identity.json` | [personnel](../career/2014/League/personnel/README.md) |
 | `build_2014_strength_calibration.py SOURCE_DIR PBP_2012 [PBP_2011]`, `build_2014_strength_calibration_v2.py SOURCE_DIR PBP_2012`, `build_2014_strength_calibration_v3.py SOURCE_DIR`, `build_2014_strength_calibration_v4.py [--sources DIR] [--check]` | Strength calibrations v1 to v4 | [strength calibration](../library/2014_strength_calibration.md) |
 | `build_2010_2012_honours_evidence.py HONOURS_JSON SOURCE_DIR` | 2010-2012 honours evidence | [honours evidence](../library/2010_2012_honours_evidence.md) |
 | `build_2010_2012_production_evidence.py SOURCE_DIR` | 2010-2012 production evidence | [production evidence](../library/2010_2012_production_evidence.md) |
@@ -123,8 +123,8 @@ Research tools only; the runtime never downloads anything. Each builder's artifa
 | `build_player_birth_dates.py SOURCE_DIR --checked-on DATE`; `import_2014_week1_birth_dates.py [--write]` | Birth-date registry | [birth dates](../library/2013_player_birth_dates.md) |
 | `build_2013_player_sheet_benchmarks.py SOURCE_DIR`; `complete_2013_player_sheets.py [--check]` | 2013 player-sheet references and sheets | [player-sheet research](../library/2013_player_sheet_research.md) |
 | `build_2013_honours_evidence.py SOURCE_DIR PACKAGE...` | `career/2013/awards/season_honours_evidence.json`; needs the frozen 2013 weekly packages from `.sim_cache`, so a fresh session cannot rerun it | [2013 awards](../career/2013/awards/README.md) |
-| `build_2014_compensatory_inputs.py` | `career/2014/03_Draft/compensatory/inputs.json` | [compensatory picks](../career/2014/03_Draft/compensatory/README.md) |
-| `build_hc_change_base_rates.py GAMES_CSV` | `library/data/2012_hc_change_base_rates.json` | [staff changes](../career/2014/01_Early_Offseason/staff_changes/README.md) |
+| `build_2014_compensatory_inputs.py` | `data/2014/Draft/compensatory/inputs.json` | [compensatory picks](../career/2014/Draft/compensatory/README.md) |
+| `build_hc_change_base_rates.py GAMES_CSV` | `library/data/2012_hc_change_base_rates.json` | [staff changes](../career/2014/Early_Offseason/staff_changes/README.md) |
 | `build_defense_2006_2013.py RAW_DIR OUT_DIR`; `write_defense_2006_2013_dictionary.py OUT_DIR` | 2006-2013 defensive datasets | [defensive data](../library/2006_2013_defense_data.md) |
 
 Specification and acceptance tools: `pre_build_specification.py [--check]` and `fourth_down_specification.py [--check]` print or verify the pinned digests of the frozen 2014.6 specifications; `acceptance_2014_6.py --block BLOCK ...` and `seed_sweep.py [--block BLOCK] ...` run the committed acceptance and seed sweeps; `release_preconditions_2014_6.py [--season YEAR] [--week N] [--journal LISTING.json] [--release] [--json]` checks the 2014.6 release preconditions read-only. `league_base_2010_2014.py` and `player_state_study.py` are modules used by the builders, not commands.

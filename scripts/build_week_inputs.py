@@ -3,10 +3,9 @@
 
   python scripts/build_week_inputs.py WEEK --season YEAR
 
-Reads the week's Jacksonville call sheet from the week folder,
-SeasonPaths(YEAR).week_folder(N)/call_sheet.json (2014:
-career/2014/05_Regular_Season/Games/Week_NN/; 2013:
-career/2013/regular_season/week_NN_*/): its offensive call sheet; from
+Reads the week's Jacksonville call sheet, SeasonPaths(YEAR).call_sheet(N)
+(2014: data/2014/Regular_Season/Games/Week_NN/call_sheet.json; 2013:
+career/2013/regular_season/week_NN_*/call_sheet.json): its offensive call sheet; from
 kernel 2014.6 batch B9, its decisions block (under a kernel that decides
 two-point tries and onside kicks, Jacksonville's input is BLOCKED without
 one); and from kernel 2014.6 W1a, its optional structured defensive sheet,
@@ -47,8 +46,7 @@ AVERAGE_ANCHORS = {"offense_anchor": 2.0, "defense_anchor": 2.0, "special_teams_
 
 def call_sheet_path(week, season=2013):
     paths = SeasonPaths(season, ROOT)
-    matches = [p for p in (paths.week_folder(week) / "call_sheet.json",
-                           paths.week_folder(week, postseason=True) / "call_sheet.json") if p.exists()]
+    matches = [p for p in (paths.call_sheet(week), paths.call_sheet(week, postseason=True)) if p.exists()]
     return matches[0] if matches else None
 
 
@@ -119,7 +117,7 @@ def main():
         call_sheet = []  # bye week: no Jacksonville game, so no call sheet
     elif sheet_path is None:
         print("WEEK_INPUTS: BLOCKED")
-        expected = paths.week_folder(args.week).relative_to(ROOT) / "call_sheet.json"
+        expected = paths.call_sheet(args.week).relative_to(ROOT)
         print("- No Jacksonville call sheet for Week %d: Stone's weekly plan must be frozen as "
               "%s before the draw." % (args.week, expected))
         return 1

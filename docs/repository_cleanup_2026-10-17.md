@@ -29,9 +29,9 @@ The audit labels (S, STALE, DATA, F, Y, LINK) are the finding identifiers of the
 | Training camp, preseason and schedule READMEs | Camp report complete through August 29; the cut to 53 executed August 30; all gates VERIFIED and four weeks closed | STALE-10, STALE-11, STALE-12 |
 | [Runtime README](../runtime/README.md) names the installed kernel at the top; [defect register](../runtime/defect_register.md) heading reads "verified live September 30, 2026" | Release record of October 17, 2026; `tier1_engine` evidence. No anchor pointed at the old heading | STALE-15, STALE-16 |
 | [Update workflow](update_workflow.md) weekly-inputs heading; [season structure](season_structure.md) notes the six 2014 battles resolved August 30 | Week 1 closed September 7; the battles index says no competition is open | STALE-17, STALE-18 |
-| [Season handoff](../career/2014/07_Season_Review/README.md): seven game-release gates | `RELEASE_GATES` in `runtime/seasons.py`. The suggested link to a separate rollover page was not added, because the checklist went into the season-cycle guide instead | Y14 |
+| [Season handoff](../career/2014/Season_Review/README.md): seven game-release gates | `RELEASE_GATES` in `runtime/seasons.py`. The suggested link to a separate rollover page was not added, because the checklist went into the season-cycle guide instead | Y14 |
 | [2015 calendar](../career/2015/Calendar.md) clock and E1/E2 lines | Document 5's clock; the 2014 kernels implement E1/E2. The sourced research file was not touched | Y16 |
-| [Statistics storage README](../career/2014/05_Regular_Season/Statistics/records/README.md): status and an index of the generated views | 61 receipts and eight generated views existed beside a "no game has closed" line | S07 |
+| [Statistics storage README](../career/2014/Regular_Season/Statistics/records/README.md): status and an index of the generated views | 61 receipts and eight generated views existed beside a "no game has closed" line | S07 |
 | Root README runtime row names the current kernel | `KERNEL_VERSION` in `runtime/__init__.py` | S05, F09 |
 | Doubled period after the kickoff time in eleven future week pages (Weeks 6 to 10 and 12 to 17) | Hand-written pages; no generator | S13, Y19 |
 
@@ -44,7 +44,7 @@ The audit labels (S, STALE, DATA, F, Y, LINK) are the finding identifiers of the
 | The validator's draft-order message names the resolved file | Message text only | F20 |
 | `close_preseason_game.py` imports `controlled_team_id` and `default_detail` from `close_week.py` | The local copies were byte-identical | F14 |
 | Removed `test_repository_holds_before_the_flip` | It skips unless the kernel is 2014.5 and can never run again | F05 |
-| The links on seven lines of the [March 2014 replay log](../career/2014/00_Team_Operations/Free_Agency/march_2014_replay_log.md) pinned to commit ddae28ca (six distinct paths) now name the paths that existed at that commit | `git cat-file -e` fails for the old paths and passes for the new ones at that commit; link text and record unchanged | LINK-01 |
+| The links on seven lines of the [March 2014 replay log](../career/2014/Team_Operations/Free_Agency/march_2014_replay_log.md) pinned to commit ddae28ca (six distinct paths) now name the paths that existed at that commit | `git cat-file -e` fails for the old paths and passes for the new ones at that commit; link text and record unchanged | LINK-01 |
 
 ### Indexes added
 
@@ -54,7 +54,7 @@ The audit labels (S, STALE, DATA, F, Y, LINK) are the finding identifiers of the
 | [library/data/README.md](../library/data/README.md): every data file's record, builder, check or pin, and status; how to reproduce the frozen strength v1 and v2; the rails `--check` source-folder pitfall | DATA-06, DATA-08, DATA-12 |
 | [docs/README.md](README.md) and [scripts/README.md](../scripts/README.md), linked from the root README with a tests row | S09, S20, F09 |
 | [2013 migrations index](../career/2013/migrations/README.md), noting the Week 1 helpers retired in e04dd82 and how to recover them | F16 |
-| Draw script and pinned commit for each closed draw in the [early offseason](../career/2014/01_Early_Offseason/README.md) and [staff changes](../career/2014/01_Early_Offseason/staff_changes/README.md) READMEs (each commit's bytes match the results' `code_sha256`) | F06 |
+| Draw script and pinned commit for each closed draw in the [early offseason](../career/2014/Early_Offseason/README.md) and [staff changes](../career/2014/Early_Offseason/staff_changes/README.md) READMEs (each commit's bytes match the results' `code_sha256`) | F06 |
 | "Built by" lines for the 2013 honours evidence and the head-coach change base rates | F08 |
 | The three unindexed 2013 files in the [2013 index](../career/2013/README.md); a file list, without summaries, in the hiring brief README | S20 |
 | `.gitignore`: `.pytest_cache/`, `*.egg-info/`, `.DS_Store`, `readiness-report.txt` | S12 |
@@ -66,7 +66,7 @@ The audit labels (S, STALE, DATA, F, Y, LINK) are the finding identifiers of the
 
 ## Deliberately left
 
-- `career/2014/05_Regular_Season/Games/Week_05/README.md` (its doubled period, since corrected by the Week 5 closure, and its index of `Week_05_Pittsburgh.md`): the Run Week 5 branch owns the page.
+- `career/2014/Regular_Season/Games/Week_05/README.md` (its doubled period, since corrected by the Week 5 closure, and its index of `Week_05_Pittsburgh.md`): the Run Week 5 branch owns the page.
 - `state/05_Current_Season_State.md`: any byte change moves the snapshot digest (see STALE-05 below).
 - `foundation/`: the rulebook is reported, never edited, in a cleanup (STALE-22).
 - Closed records keep their wording: the 2013 migration records still name the retired helpers (indexed instead), and the sha256-pinned JSON files keep their out-of-date internal status strings (`2012_nfl_injury_calibration.json`, `2010_2014w4_nfl_injury_calibration.json`).

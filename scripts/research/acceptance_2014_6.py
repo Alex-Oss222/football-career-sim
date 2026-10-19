@@ -288,7 +288,7 @@ def slate_clubs(version="2014.6"):
             rows = week_inputs.strength_identities(rows, 2014, club=club, identities=identities, strict=True)
         data["strength"], _ = strength.team_strength(team, rows, 2014, date(2014, 9, 7), model=model)
         inputs[team] = data
-    sheet = json.loads((ROOT / "career/2014/05_Regular_Season/Games/Week_04/call_sheet.json").read_text())
+    sheet = json.loads(SeasonPaths(2014).call_sheet(4).read_text())
     from scripts.render_season_stats import load_receipts
     receipts = [r for r in load_receipts(SeasonPaths(2014).receipts) if int(r["week"]) <= 4]
     jax = week_inputs.jacksonville_input(receipts, date(2014, 10, 5), anchors, sheet["offensive_call_sheet"], 2014)

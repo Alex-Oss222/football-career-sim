@@ -521,7 +521,7 @@ def _depth_fallback(slate, games, season):
 
 def identity_map(season=2014, root=ROOT):
     """{player_id: gsis_id} of the season's branch identity table (kernel
-    2014.6 batch B4a, career/YEAR/league/personnel/branch_identity.json): the
+    2014.6 batch B4a, data/YEAR/League/personnel/branch_identity.json): the
     identity map that stays outside every packet. Empty when the season has
     none."""
     path = SeasonPaths(int(season), root).record("league/personnel/branch_identity.json")

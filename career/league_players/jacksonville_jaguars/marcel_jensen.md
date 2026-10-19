@@ -19,7 +19,7 @@ No playoff games on record.
 
 None on record.
 
-[Jacksonville player card](../../2014/00_Team_Operations/Team/Player_Cards/marcel_jensen.md)
+[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/marcel_jensen.md)
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 

@@ -49,6 +49,7 @@ from __future__ import annotations
 import copy
 import hashlib
 import json
+import posixpath
 import re
 from pathlib import Path
 
@@ -330,6 +331,13 @@ def packet_path(rel, root=ROOT):
         return None
     base = Path(root).resolve()
     try:
+        if posixpath.normpath(rel) == rel and not (base / rel).exists():
+            # A frozen sheet keeps its packet's path as written. A page that a
+            # later layout change moved (rebuild step 2b: the season folders
+            # lost their numbers) resolves through the season layout's
+            # translation, and the translated spelling passes the same checks.
+            from .season_layout import repository_relative
+            rel = repository_relative(rel)
         path = (base / rel).resolve()
         if not path.is_relative_to(base):
             return None

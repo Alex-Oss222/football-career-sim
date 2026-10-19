@@ -23,6 +23,8 @@ sys.path.insert(0, str(ROOT))
 from scripts.research.build_2013_week1_depth_charts import CLUBS, ROSTER_CODE, UNPLACED_CLAIMS, draft_moves
 
 REL = Path('career/2014/League/personnel')
+# Its system files (the database, corrections, snapshot) live in the data area.
+DATA_REL = Path('data/2014/League/personnel')
 AS_OF = '2014-02-02'
 BEGIN = '<!-- BEGIN GENERATED LEAGUE DATABASE -->'
 END = '<!-- END GENERATED LEAGUE DATABASE -->'
@@ -262,7 +264,7 @@ def estimated_category(experience):
 
 def corrections(root):
     """Small reviewed factual patches, never canonical branch transactions."""
-    data=json.loads((root/REL/'league_corrections.json').read_text())
+    data=json.loads((root/DATA_REL/'league_corrections.json').read_text())
     if data.get('schema_version')!=1 or data.get('as_of')!=AS_OF:
         raise ValueError('Correction schema or date mismatch')
     for pid,patch in data['players'].items():
@@ -444,11 +446,11 @@ def category_label(p):
 
 
 def render(db,snapshot,root):
-    players=db['players'];outputs={REL/'league_players.json':database_text(db)}
+    players=db['players'];outputs={DATA_REL/'league_players.json':database_text(db)}
     rows=[flat(p) for p in players]
-    outputs[REL/'league_players.csv']=csv_text(rows,list(rows[0]))
+    outputs[DATA_REL/'league_players.csv']=csv_text(rows,list(rows[0]))
     exceptions=[dict(player_id=p['player_id'],name=p['name'],issues=';'.join(p['issues'])) for p in players if p['issues']]
-    outputs[REL/'league_exceptions.csv']=csv_text(exceptions,['player_id','name','issues'])
+    outputs[DATA_REL/'league_exceptions.csv']=csv_text(exceptions,['player_id','name','issues'])
     for club in sorted(CLUBS):
         path=REL/'clubs'/f'{club}.md';previous=(root/path).read_text()
         prefix=''
@@ -522,7 +524,7 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--source-dir',type=Path);p.add_argument('--capture',action='store_true');p.add_argument('--checked-on')
     p.add_argument('--check',action='store_true');p.add_argument('--root',type=Path,default=ROOT)
-    args=p.parse_args();root=args.root.resolve();snapshot_path=root/REL/'source_snapshot.json.gz'
+    args=p.parse_args();root=args.root.resolve();snapshot_path=root/DATA_REL/'source_snapshot.json.gz'
     if args.capture:
         if args.check or not args.source_dir or not args.checked_on:p.error('capture needs --source-dir and --checked-on; cannot combine with --check')
         snapshot=capture(args.source_dir,root,args.checked_on)
@@ -530,7 +532,7 @@ def main():
         if args.source_dir or args.checked_on:p.error('source-dir and checked-on require --capture')
         snapshot=json.loads(gzip.decompress(snapshot_path.read_bytes()))
     db=build(snapshot,root);outputs=render(db,snapshot,root)
-    if args.capture:outputs[REL/'source_snapshot.json.gz']=gzip.compress(json.dumps(snapshot,sort_keys=True,separators=(',',':')).encode(),mtime=0)
+    if args.capture:outputs[DATA_REL/'source_snapshot.json.gz']=gzip.compress(json.dumps(snapshot,sort_keys=True,separators=(',',':')).encode(),mtime=0)
     differences=[]
     for path,content in outputs.items():
         target=root/path

@@ -1,13 +1,13 @@
 # Season review templates
 
-Use these after the team's actual final game, including any postseason. A calendar date alone does not establish that a season or interview has finished. For 2014 onward, season review is the final phase under `career/[year]/07_Season_Review/`; January or February playoff work still belongs to the NFL season just completed.
+Use these after the team's actual final game, including any postseason. A calendar date alone does not establish that a season or interview has finished. For 2014 onward, season review is the final phase under `career/[year]/Season_Review/`; January or February playoff work still belongs to the NFL season just completed.
 
 | Output | Template | Exact destination |
 |---|---|---|
-| A player's completed exit interview | [Exit interview, player variant](exit_interview.md#player-variant) | `07_Season_Review/Exit_Interviews/Players/[player_slug].md` |
-| A coach's completed exit interview | [Exit interview, staff variant](exit_interview.md#staff-variant) | `07_Season_Review/Exit_Interviews/Coaches/[coach_slug].md` |
-| The team's completed-season review | [Season review](season_review.md) | `07_Season_Review/season_review.md` |
-| A player's separate final annual assessment | [2014-onward player sheet, final mode](../player_sheet_2014_onward_template.md#opening-and-final-modes) | `07_Season_Review/Player_Assessments/[player_slug].md` |
+| A player's completed exit interview | [Exit interview, player variant](exit_interview.md#player-variant) | `Season_Review/Exit_Interviews/Players/[player_slug].md` |
+| A coach's completed exit interview | [Exit interview, staff variant](exit_interview.md#staff-variant) | `Season_Review/Exit_Interviews/Coaches/[coach_slug].md` |
+| The team's completed-season review | [Season review](season_review.md) | `Season_Review/season_review.md` |
+| A player's separate final annual assessment | [2014-onward player sheet, final mode](../player_sheet_2014_onward_template.md#opening-and-final-modes) | `Season_Review/Player_Assessments/[player_slug].md` |
 
 All destinations in the table are relative to `career/[year]/`. Create a named output only when its work occurs, and show only existing records in season navigation. Keep a scheduled interview or missing evidence in the existing season-handoff checklist. Do not create empty player/staff review files or another checklist. Historical 2013 reviews retain their established owners.
 

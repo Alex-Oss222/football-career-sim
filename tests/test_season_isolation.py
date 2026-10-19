@@ -78,7 +78,7 @@ class SeasonIsolationTests(unittest.TestCase):
             mapping = {'active_season': 2014, 'current_records': {'roster': 'career/2013/roster.md'}}
             (root / 'docs/repository_map.json').write_text(json.dumps(mapping))
             self.assertEqual(current_record('roster', root).read_text(), '2013')
-            mapping['current_records']['roster'] = 'career/2014/00_Team_Operations/Team/Roster/roster.md'
+            mapping['current_records']['roster'] = 'career/2014/Team_Operations/Team/Roster/roster.md'
             (root / 'docs/repository_map.json').write_text(json.dumps(mapping))
             self.assertEqual(current_record('roster', root).read_text(), '2014')
 
@@ -275,7 +275,7 @@ class DecisionQueueCloseGateTests(unittest.TestCase):
     def test_open_part_refuses_only_a_committed_sheet_that_freezes_it(self):
         self.write_queue({'kind': 'call_sheet_part', 'season': 2014, 'week': 1, 'part': 'decisions.fourth_down'},
                          cls='game_management_rule')
-        sheet = self.paths.week_folder(1) / 'call_sheet.json'
+        sheet = self.paths.call_sheet(1)
         sheet.parent.mkdir(parents=True)
         sheet.write_text(json.dumps({'offensive_call_sheet': [], 'decisions': {'fourth_down': {}}}))
         code, out = self.close('--close')
@@ -320,7 +320,7 @@ class DecisionQueueCloseGateTests(unittest.TestCase):
         self.paths.cache(1, 'inputs').write_text(json.dumps({'season': 2014, 'week': 1, 'games': [game]}))
         self.write_queue({'kind': 'call_sheet_part', 'season': 2014, 'week': 1, 'part': 'decisions.fourth_down'},
                          cls='game_management_rule')
-        sheet = self.paths.week_folder(1) / 'call_sheet.json'
+        sheet = self.paths.call_sheet(1)
         sheet.parent.mkdir(parents=True)
         sheet.write_text(json.dumps({'offensive_call_sheet': [], 'decisions': {'two_point': {}}}))
         for present in (True, False):

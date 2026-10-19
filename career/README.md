@@ -4,7 +4,7 @@ Start with [Jacksonville's 2014 season](2014/README.md) and the [current season 
 
 ## Following the year
 
-From 2014 onward, the route is `01_Early_Offseason`, `02_Offseason_Training`, `03_Draft`, `04_Training_Camp_and_Preseason`, `05_Regular_Season`, `06_Postseason` and finally `07_Season_Review`. Draft and training work overlap on their actual dates. `00_Team_Operations` contains the roster, depth chart, staff, working player assessments, film, development, transactions and finances used throughout those phases.
+From 2014 onward, the route is `Early_Offseason`, `Offseason_Training`, `Draft`, `Training_Camp_and_Preseason`, `Regular_Season`, `Postseason` and finally `Season_Review`. Draft and training work overlap on their actual dates. `Team_Operations` contains the roster, depth chart, staff, working player assessments, film, development, transactions and finances used throughout those phases. The files the system works from sit in the data area, `data/YEAR/`, under the same folder names.
 
 Open `Calendar.md` for the month-by-month schedule and `Record.md` for the one-line dated account of completed events. Follow each record link to its owner. Trades stay in Trades, signings in Free_Agency, practice in the appropriate training report and games in their game outputs. There is no narrative ledger to maintain alongside those records.
 

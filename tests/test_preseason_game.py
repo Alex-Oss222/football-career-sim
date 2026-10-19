@@ -36,7 +36,7 @@ from support_rosters import game_day_roster
 JAX = close_week.PROTAGONIST
 TB = "Tampa Bay Buccaneers"
 EVENT = "2014-preseason-01-tampa-bay-buccaneers-at-jacksonville-jaguars"
-FIXTURES = ROOT / "career/2014/04_Training_Camp_and_Preseason/Preseason_Games/fixtures.json"
+FIXTURES = ROOT / "data/2014/Training_Camp_and_Preseason/Preseason_Games/fixtures.json"
 CALLS = ({"name": "12 Ace Right, Power R", "family": "Power", "type": "run", "personnel": "12", "formation": "12 Ace Right"},
          {"name": "11 Doubles, Zip, Smoke", "family": "Smoke/Now", "type": "pass", "personnel": "11", "formation": "11 Doubles"})
 
@@ -78,11 +78,14 @@ class SeasonPathTests(unittest.TestCase):
         self.assertEqual(games[0]["date"], "2014-08-08")
         self.assertEqual(games[3]["kickoff_et"], "18:00")  # game 4 kickoff from the club's August 25, 2014 notice, reached on the clock
         self.assertEqual(paths.preseason_game(2)["home"], "Chicago Bears")
-        base = paths.career / "04_Training_Camp_and_Preseason/Preseason_Games"
+        base = paths.career / "Training_Camp_and_Preseason/Preseason_Games"
+        data = paths.data / "Training_Camp_and_Preseason/Preseason_Games"
         self.assertEqual(paths.preseason_folder(1), base / "Game_01")
-        self.assertEqual(paths.preseason_receipts, base / "statistics/records/game_receipts")
-        self.assertEqual(paths.paused_game(1, preseason=True), base / "Game_01/paused_game.json")
-        self.assertEqual(paths.paused_game(1), paths.regular_season / "Week_01" / "paused_game.json")
+        self.assertEqual(paths.preseason_data(1), data / "Game_01")
+        self.assertEqual(paths.preseason_fixtures, data / "fixtures.json")
+        self.assertEqual(paths.preseason_receipts, data / "statistics/records/game_receipts")
+        self.assertEqual(paths.paused_game(1, preseason=True), data / "Game_01/paused_game.json")
+        self.assertEqual(paths.paused_game(1), paths.data_for(paths.regular_season) / "Week_01" / "paused_game.json")
         self.assertEqual(paths.preseason_cache(1, "inputs"), ROOT / ".sim_cache/2014/preseason_01_inputs.json")
         with self.assertRaises(ValueError):
             paths.preseason_folder(0)
@@ -156,7 +159,7 @@ class PreseasonClosureTests(unittest.TestCase):
         self.paths = SeasonPaths(2014, root)
         folder = self.paths.preseason_folder(1)
         folder.mkdir(parents=True)
-        shutil.copy(FIXTURES, self.paths.preseason_fixtures)
+        self.paths.preseason_fixtures.parent.mkdir(parents=True); shutil.copy(FIXTURES, self.paths.preseason_fixtures)
         (folder / "output.md").write_text("# Preseason game 1\n\nReport.\n", encoding="utf-8")
         self.paths.roster.parent.mkdir(parents=True)
         self.paths.roster.write_text("| Player | Pos | Status |\n| --- | --- | --- |\n"
@@ -200,7 +203,7 @@ class PreseasonClosureTests(unittest.TestCase):
         result, paused = self.close()
         self.assertIsNone(result)
         record_path = self.paths.paused_game(1, preseason=True)
-        self.assertEqual(record_path, self.paths.preseason_folder(1) / "paused_game.json")
+        self.assertEqual(record_path, self.paths.preseason_data(1) / "paused_game.json")
         record = json.loads(record_path.read_text())
         self.assertEqual((record["status"], record["event_id"], record["pause"]["drive"]), ("paused", EVENT, drive))
         self.assertNotIn("final_score", json.dumps(record))
@@ -244,7 +247,7 @@ class PreseasonClosureTests(unittest.TestCase):
         stats_dir = self.paths.preseason_games_dir / "statistics"
         self.assertIn("PRESEASON ONLY", (stats_dir / "preseason_stats.md").read_text())
         self.assertIn("33-yard kick", (stats_dir / "preseason_stats.md").read_text())
-        self.assertEqual(json.loads((stats_dir / "preseason_totals.json").read_text())["scope"], "preseason_only")
+        self.assertEqual(json.loads(self.paths.file_in(stats_dir, "preseason_totals.json").read_text())["scope"], "preseason_only")
         self.assertEqual(render_preseason_stats.stale_views(self.paths), [])
         # Nothing regular-season exists: no receipts, no standings, no weekly folder.
         self.assertFalse(self.paths.receipts.exists())
@@ -315,7 +318,7 @@ class PreseasonBuilderTests(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory(); self.addCleanup(self.tmp.cleanup)
         root = Path(self.tmp.name)
         self.paths = SeasonPaths(2014, root)
-        folder = self.paths.preseason_folder(1)
+        folder = self.paths.preseason_data(1)
         folder.mkdir(parents=True)
         shutil.copy(FIXTURES, self.paths.preseason_fixtures)
         jax = game_day_roster("A")
@@ -360,10 +363,10 @@ class PreseasonBuilderTests(unittest.TestCase):
         receipt = {"event_id": EVENT, "season": 2014, "week": 1, "game_type": PRESEASON,
                    "injuries": [{"player": "A-RB1", "restriction": "out", "injury_class": "lower_extremity", "return_days": 30},
                                 {"player": "B-WR1", "restriction": "out", "injury_class": "upper_extremity", "return_days": 3}]}
-        second = self.paths.preseason_folder(2)
+        second = self.paths.preseason_data(2)
         second.mkdir()
         for name in ("depth_chart.json", "call_sheet.json", "opponent_roster.json"):
-            shutil.copy(self.paths.preseason_folder(1) / name, second / name)
+            shutil.copy(self.paths.preseason_data(1) / name, second / name)
         with patch.object(preseason.strength, "team_strength", return_value=(None, {"players": {}})):
             later = preseason.build_package(self.paths, 2, [receipt], with_ages=False)
         jacksonville, chicago = later["games"][0]["away_input"], later["games"][0]["home_input"]
@@ -373,7 +376,7 @@ class PreseasonBuilderTests(unittest.TestCase):
         self.assertEqual(later["games"][0]["event_id"], "2014-preseason-02-jacksonville-jaguars-at-chicago-bears")
 
     def test_rotation_files_enter_the_package_and_fail_closed(self):
-        folder = self.paths.preseason_folder(1)
+        folder = self.paths.preseason_data(1)
         # A-WR2 is held by his roster note and there is no A-QB3 on this roster: a dressed plan.
         plan = {"rotation_plan": [
             {"side": "offense", "unit": "first offense", "until": {"possessions": 2, "snaps": 12},
@@ -426,7 +429,7 @@ class PreseasonBuilderTests(unittest.TestCase):
         self.assertNotIn("rotation_plan", package["games"][0]["home_input"])
 
     def test_missing_inputs_fail_closed(self):
-        folder = self.paths.preseason_folder(2)
+        folder = self.paths.preseason_data(2)
         folder.mkdir()
         with self.assertRaisesRegex(ValueError, "No Jacksonville call sheet for preseason game 2"):
             preseason.build_package(self.paths, 2, [], with_ages=False)

@@ -38,7 +38,7 @@ RESULTS = AWARDS / "results.json"
 
 
 def method_path(season=2013):
-    return SeasonPaths(season, ROOT).awards / 'methodology.json'
+    return SeasonPaths(season, ROOT).awards_data / 'methodology.json'
 
 
 def method(season=2013):
@@ -116,7 +116,7 @@ def packet(kind, key, award, shortlist, m, snapshot, season=2013):
     return {"procedure": m["procedure"], "event_id": event_id(kind, key, award, m, season),
             "snapshot": snapshot, "period": {"kind": kind, "key": str(key)}, "award": award,
             "shortlist": shortlist, "panel_weights": m["panel_weights"][:len(shortlist)],
-            "method_sha256": hashlib.sha256((SeasonPaths(season, ROOT).awards / 'methodology.json').read_bytes()).hexdigest()}
+            "method_sha256": hashlib.sha256(method_path(season).read_bytes()).hexdigest()}
 
 
 def pick(result_ref, pkt):
@@ -132,7 +132,7 @@ def pick(result_ref, pkt):
 
 
 def load_results(season=2013):
-    path = SeasonPaths(season, ROOT).awards / 'results.json'
+    path = SeasonPaths(season, ROOT).awards_data / 'results.json'
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
 
 
@@ -224,7 +224,7 @@ def main():
         entry["awards"][award] = {"event_id": pkt["event_id"], "packet_sha256": hashlib.sha256(canonical(pkt)).hexdigest(),
                                   "result_ref": ref, "shortlist": rows, "winner_index": pick(ref, pkt)}
     results[period] = entry
-    (paths.awards / 'results.json').write_text(json.dumps(results, indent=1) + "\n", encoding="utf-8")
+    (paths.awards_data / 'results.json').write_text(json.dumps(results, indent=1) + "\n", encoding="utf-8")
     render(args.season)
     return 0
 

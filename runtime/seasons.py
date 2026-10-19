@@ -8,7 +8,7 @@ from dataclasses import dataclass
 import json
 from pathlib import Path
 import re
-from .season_layout import season_relative
+from .season_layout import DATA_ROOT, is_system_file, season_relative
 
 ROOT = Path(__file__).resolve().parents[1]
 RELEASE_GATES = {'tier1_engine', 'season_rules', 'season_closure', 'dated_fixtures',
@@ -44,9 +44,32 @@ class SeasonPaths:
 
     @property
     def career(self): return self.root / 'career' / str(self.year)
+    @property
+    def data(self):
+        """The season's data area (2014 onward): the files the system works
+        from, apart from the pages under ``career``. 2013 keeps them in its
+        own historical folders."""
+        return self.root / DATA_ROOT / str(self.year) if self.year >= 2014 else self.career
 
     def record(self, relative):
-        return self.career / season_relative(self.year, relative)
+        """A season record by logical or readable name. From 2014 a system
+        file (.json, .csv, .gz) resolves into the data area at the same
+        season-relative path as the page folder it belongs to."""
+        value = season_relative(self.year, relative)
+        return (self.data if is_system_file(value) else self.career) / value
+
+    def file_in(self, folder, name):
+        """A file of a season page folder: a page or image stays in the
+        folder, a system file goes to the folder's data-area twin."""
+        return (self.data_for(folder) if is_system_file(name) else Path(folder)) / name
+
+    def data_for(self, path):
+        """The data-area folder twin of a season page folder (2014 onward):
+        ``career/YEAR/X`` becomes ``data/YEAR/X``. Unchanged for 2013."""
+        path = Path(path)
+        if self.year < 2014 or not path.is_relative_to(self.career):
+            return path
+        return self.data / path.relative_to(self.career)
 
     @property
     def calendar(self): return self.record('calendar.md')
@@ -55,15 +78,19 @@ class SeasonPaths:
     @property
     def stats(self): return self.record('stats')
     @property
-    def receipts(self): return self.stats / 'game_receipts'
+    def receipts(self): return self.data_for(self.stats) / 'game_receipts'
     @property
-    def postseason_receipts(self): return self.stats / 'postseason_receipts'
+    def postseason_receipts(self): return self.data_for(self.stats) / 'postseason_receipts'
     @property
     def roster(self): return self.record('roster.md')
     @property
     def depth_chart(self): return self.record('depth_chart.json')
     @property
     def awards(self): return self.record('awards')
+    @property
+    def awards_data(self):
+        """The awards' method, results and evidence files (the data-area twin of ``awards``)."""
+        return self.data_for(self.awards)
     @property
     def regular_season(self): return self.record('regular_season')
     @property
@@ -98,7 +125,7 @@ class SeasonPaths:
         by family (runtime.depth_library.relabel_defensive_backs)."""
         return self.root / ('library/data/%d_db_families.json' % self.year)
     @property
-    def generations(self): return self.career / 'migrations/event_generations.json'
+    def generations(self): return self.record('migrations/event_generations.json')
 
     def cache(self, week, kind):
         if type(week) is not int or not 1 <= week <= (21 if self.year < 2021 else 22) or kind not in ('inputs', 'results'):
@@ -117,6 +144,14 @@ class SeasonPaths:
         prefix = prefixes[0] if self.year < 2014 or postseason else prefixes[1]
         return matches[0] if matches else parent / prefix
 
+    def week_data(self, week, postseason=False):
+        """The week's data folder: the data-area twin of ``week_folder``."""
+        return self.data_for(self.week_folder(week, postseason))
+
+    def call_sheet(self, week, postseason=False):
+        """The week's frozen call sheet (``call_sheet.json``)."""
+        return self.week_data(week, postseason) / 'call_sheet.json'
+
     def paused_game(self, week, postseason=False, preseason=False):
         """Kernel 2014.4 E2: the protagonist game's paused partial record.
 
@@ -127,25 +162,30 @@ class SeasonPaths:
         if preseason:
             if postseason:
                 raise ValueError('A game is preseason or postseason, not both')
-            return self.preseason_folder(week) / 'paused_game.json'
-        return self.week_folder(week, postseason) / 'paused_game.json'
+            return self.preseason_data(week) / 'paused_game.json'
+        return self.week_data(week, postseason) / 'paused_game.json'
 
     # ---- preseason (dated fixtures, separate receipts, no standings) ---------
     @property
     def preseason_games_dir(self): return self.record('preseason')
     @property
-    def preseason_fixtures(self): return self.preseason_games_dir / 'fixtures.json'
+    def preseason_fixtures(self): return self.data_for(self.preseason_games_dir) / 'fixtures.json'
     @property
     def preseason_receipts(self):
         """Preseason receipts live apart from `receipts` and
         `postseason_receipts`, so standings, the regular-season statbook,
         awards and the draft order never read them."""
-        return self.preseason_games_dir / 'statistics' / 'records' / 'game_receipts'
+        return self.data_for(self.preseason_games_dir) / 'statistics' / 'records' / 'game_receipts'
 
     def preseason_folder(self, game):
         if type(game) is not int or not 1 <= game <= 5:
             raise ValueError('Invalid preseason game number')
         return self.record('preseason/game_%02d' % game)
+
+    def preseason_data(self, game):
+        """The preseason game's data folder: its frozen depth chart, rotation,
+        opponent roster and call sheet."""
+        return self.data_for(self.preseason_folder(game))
 
     def preseason_cache(self, game, kind):
         if type(game) is not int or not 1 <= game <= 5 or kind not in ('inputs', 'results'):
@@ -255,7 +295,7 @@ def game_release_errors(season, root=ROOT, preseason=None, receipt_kernel=None):
             errors.append(gate['id'] + ': verified gate lacks acceptance evidence')
     inputs = {name: getattr(paths, name) for name in ('roster', 'depth_chart', 'schedule', 'background_depth')}
     if preseason is not None:
-        inputs['depth_chart'] = paths.preseason_folder(preseason) / 'depth_chart.json'
+        inputs['depth_chart'] = paths.preseason_data(preseason) / 'depth_chart.json'
     for name, path in inputs.items():
         if not path.is_file():
             errors.append('Missing %d %sinput: %s' % (season, 'preseason game %d ' % preseason if preseason else '',

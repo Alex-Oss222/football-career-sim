@@ -77,6 +77,7 @@ class HandoffTests(unittest.TestCase):
             data['carry_forward'][key] = source.relative_to(root).as_posix()
             data['source_sha256'][key] = digest(source)
         manifest = paths.record('closeouts/season_handoff.json')
+        manifest.parent.mkdir(parents=True, exist_ok=True)
         manifest.write_text(json.dumps(data))
         review_final_assessments(year, root)
         return json.loads(manifest.read_text())
@@ -85,7 +86,7 @@ class HandoffTests(unittest.TestCase):
         from scripts.update_player_cards import START, stats_block
         data = self.assessment_baseline(root)
         stage(root, data)
-        path = root/'career/2015/opening_handoff.json'
+        path = root/'data/2015/opening_handoff.json'
         opening = json.loads(path.read_text())
         for name, sources in opening_gate_sources(root, 2015).items():
             evidence = []
@@ -126,7 +127,7 @@ class HandoffTests(unittest.TestCase):
                 self.assertIn(f'/{year}/closed.md',SeasonPaths(year+1, root).roster.read_text())
                 self.assertIn('Unresolved medical hold',SeasonPaths(year+1, root).roster.read_text())
                 self.assertFalse(SeasonPaths(year+1, root).depth_chart.exists())
-                self.assertEqual(json.loads((nxt/'opening_handoff.json').read_text())['status'],'STAGED')
+                self.assertEqual(json.loads(SeasonPaths(year+1, root).record('opening_handoff.json').read_text())['status'],'STAGED')
 
     def test_open_interviews_or_changed_contracts_block_all_writes(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -162,7 +163,7 @@ class HandoffTests(unittest.TestCase):
             cards = SeasonPaths(2014, root).record('player_profiles')
             before = {p: p.read_bytes() for p in cards.glob('*.md')}
             stage(root, data)
-            staged = json.loads((root/'career/2015/opening_handoff.json').read_text())
+            staged = json.loads((root/'data/2015/opening_handoff.json').read_text())
             self.assertEqual(len(staged['opening_assessments']), 1)
             planned = staged['opening_assessments'][0]
             self.assertTrue(planned['final_assessment'].endswith('Player_Assessments/sample.md'))
@@ -220,12 +221,12 @@ class HandoffTests(unittest.TestCase):
     def test_opening_requires_complete_cards_and_all_reconciliations(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);data=self.assessment_baseline(root);stage(root,data)
-            opening=json.loads((root/'career/2015/opening_handoff.json').read_text())
+            opening=json.loads((root/'data/2015/opening_handoff.json').read_text())
             errors=opening_errors(root,opening)
             self.assertTrue(any('Missing opening assessment' in e for e in errors))
             self.assertTrue(any('reconciliation remains open: medical' in e for e in errors))
             self.assertTrue(repository_opening_errors(root,2015))
-            (root/'career/2015/opening_handoff.json').unlink()
+            (root/'data/2015/opening_handoff.json').unlink()
             self.assertTrue(repository_opening_errors(root,2015))
 
     def test_completed_opening_is_reviewed_without_activating_or_freezing_future_work(self):
@@ -241,7 +242,7 @@ class HandoffTests(unittest.TestCase):
             card.write_text(card.read_text()+'\nLater permitted coaching update.\n')
             self.assertEqual(repository_opening_errors(root,2015),[])
             self.assertTrue(any('changed opening assessment review' in e for e in opening_errors(root,opening)))
-            manifest=root/'career/2015/opening_handoff.json'
+            manifest=root/'data/2015/opening_handoff.json'
             changed=json.loads(manifest.read_text());changed['opening_review']['status']='OPEN'
             manifest.write_text(json.dumps(changed))
             self.assertTrue(repository_opening_errors(root,2015))
@@ -381,7 +382,7 @@ class HandoffTests(unittest.TestCase):
             root=Path(tmp);data=self.baseline(root,2014)
             self.write_queue(root,'season_stage')
             with self.assertRaisesRegex(ValueError,'Decision open: test-season-stage'):stage(root,data)
-            self.assertFalse((root/'career/2015/opening_handoff.json').exists())
+            self.assertFalse((root/'data/2015/opening_handoff.json').exists())
             self.assertFalse(SeasonPaths(2015,root).roster.exists())
             self.write_queue(root,'season_stage',status='RESOLVED')
             first=stage(root,data)

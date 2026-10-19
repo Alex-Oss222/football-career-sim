@@ -22,8 +22,8 @@ from runtime.play_detail import check_ledger, coherence_counts
 from synthetic_games import SEED, team
 
 ROOT = Path(__file__).resolve().parents[1]
-WEEK2 = ROOT / "career/2014/05_Regular_Season/Games/Week_02/call_sheet.json"
-WEEK1 = ROOT / "career/2014/05_Regular_Season/Games/Week_01/call_sheet.json"
+WEEK2 = ROOT / "data/2014/Regular_Season/Games/Week_02/call_sheet.json"
+WEEK1 = ROOT / "data/2014/Regular_Season/Games/Week_01/call_sheet.json"
 LABEL_FIELDS = {"concept", "family", "personnel", "formation", "motion", "protection", "tags",
                 "scramble", "label_groups", "label_source", "label_type", "situation", "script_position"}
 GAMES = 30

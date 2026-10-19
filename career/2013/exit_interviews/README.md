@@ -15,7 +15,7 @@
 - **No promises.** Stone promised no job, role, contract or roster spot. Contract, tag, tender and roster decisions are Caldwell's (Document 3), and Stone said so where a player asked. The Good, Better, Best labels are teaching states, not ratings.
 - **Offseason rules.** Anything set for the spring is voluntary until the program allows it. The earliest start is April 21, 2014 for a returning head coach, with Phase One and Two limits (`career/2013/offseason/the_prowl_player_readiness_standard.md`). Private matters raised by players are not personnel evidence.
 - **Verification.** Every file was checked by a separate skeptical pass against the record. The passes removed manufactured flaws, unsupported motives and hints about the draft or contracts, and corrected misdated quotations.
-- **The coaching carousel.** Alan Lowry, the special teams coordinator, left on January 12 to become Atlanta's head coach, and Frank Bush interviewed with Indianapolis on January 14 ([January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md)). The records reflect both:
+- **The coaching carousel.** Alan Lowry, the special teams coordinator, left on January 12 to become Atlanta's head coach, and Frank Bush interviewed with Indianapolis on January 14 ([January coaching decisions](../../2014/Early_Offseason/staff_changes/timeline.md)). The records reflect both:
   - Lowry attends no meeting, and his follow-ups belong to the special teams coordinator, with Stone covering until the job is filled;
   - Bush attends the Monday linebacker meetings, but not Tuesday's.
 
@@ -25,7 +25,7 @@
 
 | Player | Coaches with Stone | Record |
 |---|---|---|
-| Adam Thielen, WR | Darryl Drake (wide receivers) (Lowry had left, [January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md)) | [adam_thielen.md](main_core/adam_thielen.md) |
+| Adam Thielen, WR | Darryl Drake (wide receivers) (Lowry had left, [January coaching decisions](../../2014/Early_Offseason/staff_changes/timeline.md)) | [adam_thielen.md](main_core/adam_thielen.md) |
 | Brent Grimes, CB | Tony Oden (defensive backs); Romeo Crennel (defensive coordinator) | [brent_grimes.md](main_core/brent_grimes.md) |
 | Cecil Shorts, WR | Darryl Drake (wide receivers); Mike Tice (offensive coordinator) | [cecil_shorts.md](main_core/cecil_shorts.md) |
 | Chad Henne, QB | Jeremy Bates (quarterbacks); Mike Tice (offensive coordinator) | [chad_henne.md](main_core/chad_henne.md) |
@@ -49,7 +49,7 @@
 | Austin Pasztor, G | George Yarno (offensive line) | [austin_pasztor.md](core/austin_pasztor.md) |
 | Bacarri Rambo, S | Tony Oden (defensive backs) | [bacarri_rambo.md](core/bacarri_rambo.md) |
 | Brad Meester, C | George Yarno (offensive line) | [brad_meester.md](core/brad_meester.md) |
-| Bryan Anger, P | Stone only (Lowry had left, [January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md)) | [bryan_anger.md](core/bryan_anger.md) |
+| Bryan Anger, P | Stone only (Lowry had left, [January coaching decisions](../../2014/Early_Offseason/staff_changes/timeline.md)) | [bryan_anger.md](core/bryan_anger.md) |
 | C.J. Anderson, RB | Tim Spencer (running backs) | [c_j_anderson.md](core/c_j_anderson.md) |
 | C.J. Wilson, DE | Anthony Pleasant (defensive line) | [c_j_wilson.md](core/c_j_wilson.md) |
 | Cameron Bradfield, OT | George Yarno (offensive line) | [cameron_bradfield.md](core/cameron_bradfield.md) |
@@ -58,7 +58,7 @@
 | Jeremy Mincey, DE | Anthony Pleasant (defensive line) | [jeremy_mincey.md](core/jeremy_mincey.md) |
 | Jonathan Grimes, RB | Tim Spencer (running backs) | [jonathan_grimes.md](core/jonathan_grimes.md) |
 | Jordan Poyer, CB | Tony Oden (defensive backs) | [jordan_poyer.md](core/jordan_poyer.md) |
-| Josh Scobee, K | Stone only (Lowry had left, [January coaching decisions](../../2014/01_Early_Offseason/staff_changes/timeline.md)) | [josh_scobee.md](core/josh_scobee.md) |
+| Josh Scobee, K | Stone only (Lowry had left, [January coaching decisions](../../2014/Early_Offseason/staff_changes/timeline.md)) | [josh_scobee.md](core/josh_scobee.md) |
 | Mike Brewster, C | George Yarno (offensive line) | [mike_brewster.md](core/mike_brewster.md) |
 | Mike Harris, CB | Tony Oden (defensive backs) | [mike_harris.md](core/mike_harris.md) |
 | Montell Owens, FB | Tim Spencer (running backs) | [montell_owens.md](core/montell_owens.md) |

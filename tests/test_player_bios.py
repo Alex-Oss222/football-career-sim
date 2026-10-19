@@ -158,7 +158,7 @@ class PlayerBiographyTests(unittest.TestCase):
             (Path(tmp) / "call_sheet.json").write_text(json.dumps({"offensive_call_sheet": []}))
             paths = mock.Mock(year=2014)
             paths.preseason_game.return_value = game
-            paths.preseason_folder.return_value = Path(tmp)
+            paths.preseason_data.return_value = Path(tmp)
             patches = (mock.patch.object(preseason, "opponent_input", return_value=tb),
                        mock.patch.object(preseason.strength, "team_strength", return_value=(None, {})))
             with patches[0], patches[1], mock.patch.object(preseason, "jacksonville_input", return_value=jax):

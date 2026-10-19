@@ -1,6 +1,6 @@
 # League rails: what needs human input
 
-The league research inventory is generated from public files. Do not hand-build 31 rosters. Start with [the coverage report](league_database_report.md), [the player table](league_players.csv) or [the exception queue](league_exceptions.csv).
+The league research inventory is generated from public files. Do not hand-build 31 rosters. Start with [the coverage report](league_database_report.md), [the player table](../../../../data/2014/League/personnel/league_players.csv) or [the exception queue](../../../../data/2014/League/personnel/league_exceptions.csv).
 
 ## Three kinds of input
 

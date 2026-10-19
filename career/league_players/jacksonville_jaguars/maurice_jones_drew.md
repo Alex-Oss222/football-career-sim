@@ -23,7 +23,7 @@
 
 - AP Comeback Player of the Year (2013)
 
-[Jacksonville player card](../../2014/00_Team_Operations/Team/Player_Cards/maurice_jones_drew.md)
+[Jacksonville player card](../../2014/Team_Operations/Team/Player_Cards/maurice_jones_drew.md)
 
 Age is his age on the league's opening game of each season; # is the number listed for him that season with that team (2014: the card's rule; 2013: the 2013 season roster), N/A where no listing applies.
 

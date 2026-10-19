@@ -146,6 +146,7 @@ def season_root(tmp):
     paths = preconditions.SeasonPaths(2014, root)
     paths.receipts.mkdir(parents=True)
     paths.week_folder(5).mkdir(parents=True)
+    paths.week_data(5).mkdir(parents=True)
     return root, paths
 
 
@@ -189,9 +190,8 @@ class ReleasePreconditionTests(unittest.TestCase):
     def test_pending_pause_blocks_and_closed_record_does_not(self):
         with tempfile.TemporaryDirectory() as tmp:
             root, paths = season_root(tmp)
-            week4 = paths.week_folder(4)
-            week4.mkdir(parents=True)
-            record = week4 / "paused_game.json"
+            record = paths.paused_game(4)
+            record.parent.mkdir(parents=True)
             record.write_text(json.dumps({"status": "paused", "event_id": "e"}))
             result = preconditions.report(root)
             self.assertFalse(result["ok"])
@@ -259,7 +259,7 @@ class ReleasePreconditionTests(unittest.TestCase):
             with tempfile.TemporaryDirectory() as tmp:
                 root, paths = season_root(tmp)
                 if name:
-                    (paths.week_folder(5) / name).write_text("{}")
+                    (paths.week_data(5) / name).write_text("{}")
                 else:
                     paths.cache(5, "inputs").parent.mkdir(parents=True)
                     paths.cache(5, "inputs").write_text("{}")
@@ -286,7 +286,7 @@ class NonGameRecordTests(unittest.TestCase):
         self.listing = Path(tmp.name) / "journal.json"
 
     def record(self, relative, data):
-        path = self.paths.career / relative
+        path = self.paths.data / relative
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(data))
 
@@ -295,9 +295,9 @@ class NonGameRecordTests(unittest.TestCase):
         return preconditions.report(self.root, journal=self.listing, release=True)["checks"][1]
 
     def test_a_non_game_event_with_a_committed_result_record_passes(self):
-        self.record("01_Early_Offseason/futures_results.json",
+        self.record("Early_Offseason/futures_results.json",
                     {"procedure": "futures", "event_id": self.FUTURES, "result_ref": "c9e3", "ledger_entry": 1})
-        self.record("05_Regular_Season/Awards/results.json",
+        self.record("Regular_Season/Awards/results.json",
                     {"week-1": {"awards": {"AFC-offense": {"event_id": self.AWARD, "result_ref": "360e"}}}})
         journal = self.check([self.GAME, self.AWARD, self.FUTURES])
         self.assertEqual((journal["status"], journal["findings"]), ("pass", []), journal)
@@ -305,18 +305,18 @@ class NonGameRecordTests(unittest.TestCase):
 
     def test_a_journal_event_with_no_receipt_and_no_record_fails(self):
         # An event id without a result reference is not a result record.
-        self.record("01_Early_Offseason/staff_changes/carousel_results.json",
+        self.record("Early_Offseason/staff_changes/carousel_results.json",
                     {"event_id": "2014-coaching-carousel-v1", "result_ref": ""})
         journal = self.check([self.GAME, "2014-coaching-carousel-v1"])
         self.assertEqual(journal["status"], "fail")
         self.assertEqual(journal["findings"], ["journal event 2014-coaching-carousel-v1 has no public receipt"])
-        (self.paths.career / "01_Early_Offseason/league_year_results.json").write_text("{not json")
+        (self.paths.data / "Early_Offseason/league_year_results.json").write_text("{not json")
         journal = self.check([self.GAME])
         self.assertEqual(journal["status"], "fail")
         self.assertIn("unreadable result record", journal["findings"][0])
 
     def test_a_committed_result_record_missing_from_the_listing_fails(self):
-        self.record("01_Early_Offseason/futures_results.json", {"event_id": self.FUTURES, "result_ref": "c9e3"})
+        self.record("Early_Offseason/futures_results.json", {"event_id": self.FUTURES, "result_ref": "c9e3"})
         journal = self.check([self.GAME])
         self.assertEqual(journal["status"], "fail")
         self.assertEqual(journal["findings"],
@@ -327,7 +327,7 @@ class NonGameRecordTests(unittest.TestCase):
         # A results file anywhere in the career folder naming a game, regular
         # season, postseason or preseason, never stands in for its receipt.
         games = ["2014-week05-c-at-d", "2014-week18-e-at-f-g2", "2014-preseason-01-x-at-y"]
-        self.record("05_Regular_Season/Games/Week_05/rehearsal_results.json",
+        self.record("Regular_Season/Games/Week_05/rehearsal_results.json",
                     {"games": [{"event_id": g, "result_ref": "deadbeef"} for g in games]})
         journal = self.check([self.GAME] + games)
         self.assertEqual(journal["status"], "fail")

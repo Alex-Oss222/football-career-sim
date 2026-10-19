@@ -6,7 +6,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from runtime.schedule_2014 import FOLDER, check, products
+from runtime.schedule_2014 import check, location, products
 
 
 def main():
@@ -18,7 +18,7 @@ def main():
         print('\n'.join(errors) if errors else '2014 OPPONENT MATRIX CURRENT: 256 games, 32 clubs')
         return bool(errors)
     for name, text in products(ROOT).items():
-        (ROOT / FOLDER / name).write_text(text, encoding='utf-8')
+        (ROOT / location(name) / name).write_text(text, encoding='utf-8')
     print('2014 opponent matrix rendered; no dated fixtures or game authorization added.')
     return 0
 

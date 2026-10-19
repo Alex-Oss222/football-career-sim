@@ -427,7 +427,7 @@
       "permitted": "Calls or delegates as head coach, including in-game changes.",
       "consultation": "Mike Tice and offensive staff",
       "limits": "Applicable game rules",
-      "provenance": "Head-coach responsibilities; user clarification, [original-contract reconciliation](../career/2014/00_Team_Operations/Finances/player_contracts/contracts.md)",
+      "provenance": "Head-coach responsibilities; user clarification, [original-contract reconciliation](../career/2014/Team_Operations/Finances/player_contracts/contracts.md)",
       "scope": null,
       "inference": false,
       "delegated": "delegation.play_calling.offense",
@@ -671,14 +671,14 @@
       "stone_retains": "Final team principles, coordinator supervision, major situational/game-management decisions; the defensive calls",
       "event": "2014-09-27-san-diego-preparation-closed",
       "record": {
-       "path": "career/2014/05_Regular_Season/Games/Week_04/Week 4 Packet_ at San Diego.md",
+       "path": "career/2014/Regular_Season/Games/Week_04/Week 4 Packet_ at San Diego.md",
        "anchor": "hc-direction"
       },
       "continued": [
        {
         "date": "2014-09-28",
         "record": {
-         "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md"
+         "path": "career/2014/Regular_Season/Games/Week_05/Week_05_Pittsburgh.md"
         }
        }
       ]
@@ -704,7 +704,7 @@
       "to": "2014-02-11",
       "event": "2014-01-12-lowry-atlanta-hire",
       "record": {
-       "path": "career/2014/01_Early_Offseason/staff_changes/timeline.md"
+       "path": "career/2014/Early_Offseason/staff_changes/timeline.md"
       }
      },
      {
@@ -716,7 +716,7 @@
       "stone_retains": "Final team-level priorities, roster/use decisions within Stone's authority, consequential game management",
       "event": "2014-02-11-westhoff-hired",
       "record": {
-       "path": "career/2014/01_Early_Offseason/staff_changes/hires.md"
+       "path": "career/2014/Early_Offseason/staff_changes/hires.md"
       }
      }
     ],
@@ -775,14 +775,14 @@
      ],
      "event": "2014-09-20-indianapolis-preparation-closed",
      "record": {
-      "path": "career/2014/05_Regular_Season/Games/Week_03/Week 3 Packet_ Indianapolis.md",
+      "path": "career/2014/Regular_Season/Games/Week_03/Week 3 Packet_ Indianapolis.md",
       "anchor": "decisions-needed-from-stone"
      },
      "continued": [
       {
        "date": "2014-09-28",
        "record": {
-        "path": "career/2014/05_Regular_Season/Games/Week_05/Week_05_Pittsburgh.md"
+        "path": "career/2014/Regular_Season/Games/Week_05/Week_05_Pittsburgh.md"
        }
       }
      ]
@@ -797,7 +797,7 @@
      "from": "2014-04-18",
      "event": "2014-04-18-offseason-operating-decisions",
      "record": {
-      "path": "career/2014/02_Offseason_Training/stone_april_18_2014_decisions.md",
+      "path": "career/2014/Offseason_Training/stone_april_18_2014_decisions.md",
       "anchor": "practice-if-stone-is-out"
      },
      "game_day_caller": null,
@@ -815,7 +815,7 @@
      ],
      "summary": "Stone can call, delegate or take back any phase at any time; continue the arrangement until he changes it, without making it a recurring planning question",
      "record": {
-      "path": "career/2014/00_Team_Operations/Staff/coaching_staff.md",
+      "path": "career/2014/Team_Operations/Staff/coaching_staff.md",
       "anchor": "phase-control"
      }
     },
@@ -829,7 +829,7 @@
      "summary": "The deepest healthy reserve on the chart in each of the five largest healthy position groups, never below a legal game-day unit, re-set each week",
      "effective": "2014-08-31",
      "record": {
-      "path": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/roster_decisions.md",
+      "path": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/roster_decisions.md",
       "anchor": "august-31-2014-the-week-1-inactives-stone-document-3-row-8"
      }
     },
@@ -846,7 +846,7 @@
       "event": "2014-10-04-pittsburgh-preparation-closed"
      },
      "record": {
-      "path": "career/2014/05_Regular_Season/Games/Week_05/call_sheet.json",
+      "path": "data/2014/Regular_Season/Games/Week_05/call_sheet.json",
       "pointer": "/decisions/two_point"
      }
     },
@@ -863,7 +863,7 @@
       "event": "2014-10-04-pittsburgh-preparation-closed"
      },
      "record": {
-      "path": "career/2014/05_Regular_Season/Games/Week_05/call_sheet.json",
+      "path": "data/2014/Regular_Season/Games/Week_05/call_sheet.json",
       "pointer": "/decisions/kickoff"
      }
     },
@@ -883,7 +883,7 @@
      "summary": "Fourth-and-2 or less, go, with Tice's first call on the matching menu; fourth-and-3 or 4, go on the opponent's side of midfield, otherwise the field goal or the punt by the field-goal line; fourth-and-5 or more, a field goal when the kick is 52 yards or less, otherwise a punt",
      "applies": "frozen into each week's call sheet as its decisions.fourth_down block",
      "record": {
-      "path": "career/2014/05_Regular_Season/Games/Week_05/output.md",
+      "path": "career/2014/Regular_Season/Games/Week_05/output.md",
       "anchor": "addendum-october-18-2026-the-fourth-down-rule-stands-for-every-game"
      }
     }

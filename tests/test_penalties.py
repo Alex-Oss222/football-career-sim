@@ -471,7 +471,7 @@ class RecordsTests(unittest.TestCase):
         self.assertNotIsInstance(old.get("penalties"), dict)
         self.assertIsInstance(new.get("penalties"), dict)
         with tempfile.TemporaryDirectory() as tmp:
-            folder = SeasonPaths(2014, Path(tmp)).stats / "game_receipts"
+            folder = SeasonPaths(2014, Path(tmp)).receipts
             folder.mkdir(parents=True)
 
             def readme(receipts):

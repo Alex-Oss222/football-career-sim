@@ -13,15 +13,16 @@ import json
 import re
 from dataclasses import dataclass
 from pathlib import Path
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_ROSTER = ROOT / 'career/2014/00_Team_Operations/Team/Roster/roster.md'
-DEFAULT_EXIT_INDEX = (
-    ROOT / 'career/2014/00_Team_Operations/Player_Development/2013_exit_player_index.json'
-)
-DEFAULT_OUTPUT = (
-    ROOT / 'career/2014/00_Team_Operations/Player_Development/progression_roster.json'
-)
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from runtime.seasons import SeasonPaths
+
+DEFAULT_ROSTER = SeasonPaths(2014, ROOT).record('roster.md')
+DEFAULT_EXIT_INDEX = SeasonPaths(2014, ROOT).record('offseason/player_development/2013_exit_player_index.json')
+DEFAULT_OUTPUT = SeasonPaths(2014, ROOT).record('offseason/player_development/progression_roster.json')
 
 
 @dataclass(frozen=True)
