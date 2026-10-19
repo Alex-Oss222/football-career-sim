@@ -414,7 +414,7 @@ def depth_chart_page(ctx):
             return ", ".join(p + (" (reserve/injured)" if p in reserve else "") for p in captains.get(group, ()))
         lines += ["## Captains", "",
                   table(["Offense", "Defense"], [[names("offense"), names("defense")]]), ""]
-    history = ctx.paths.career / "Team_Operations/Team/Depth_Chart/Changes.md"
+    history = ctx.paths.record("team/depth_chart/Changes.md")
     lines += ["## Changes to the depth chart", "",
               link(rel, history.relative_to(ctx.root).as_posix(), "Read the dated changes"), ""]
     return rel, "\n".join(lines)
@@ -422,7 +422,7 @@ def depth_chart_page(ctx):
 
 def depth_history_page(ctx):
     """The complete dated change history stays readable off the main chart."""
-    rel = (ctx.paths.career / "Team_Operations/Team/Depth_Chart/Changes.md").relative_to(ctx.root).as_posix()
+    rel = (ctx.paths.record("team/depth_chart/Changes.md")).relative_to(ctx.root).as_posix()
     chart = ctx.paths.record("depth_chart.md").relative_to(ctx.root).as_posix()
     rows = []
     for e in ctx.log.get("entries", ()):
