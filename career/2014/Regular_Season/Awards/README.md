@@ -2,7 +2,7 @@
 
 [Regular season](../README.md) · [Season](../../README.md)
 
-The league's players of the week and players of the month. Open a week or a month for each winner's game or month and the three finalists.
+The league's players of the week and players of the month. Open a week or a month for each winner's game or month and the other nominees.
 
 ## Players of the Week
 
@@ -35,9 +35,9 @@ The league's players of the week and players of the month. Open a week or a mont
 | November | Awarded after the month’s games |  |  |  |  |  |
 | December | Awarded after the month’s games |  |  |  |  |  |
 
-## How the winners are chosen
+## The awards
 
-One formula for each award scores every player from the game statistics of the week or the month. The three best scores in each conference are the finalists, and a panel picks the winner, weighing the finalists 6, 3 and 1 by rank. The method was fixed on August 28, 2014, before the first award, with the same formulas, finalists and panel weights as in 2013. Each month covers whole NFL weeks: September (Weeks 1-4, September 4 to September 29); October (Weeks 5-8, October 2 to October 27); November (Weeks 9-12, October 30 to November 24); December (Weeks 13-17, November 27 to December 28).
+After each week's games the league names an offensive, a defensive and a special teams player of the week in each conference, and after each month its players of the month. Each month covers whole weeks: September (Weeks 1-4, September 4 to September 29); October (Weeks 5-8, October 2 to October 27); November (Weeks 9-12, October 30 to November 24); December (Weeks 13-17, November 27 to December 28).
 
 ## Season honours
 

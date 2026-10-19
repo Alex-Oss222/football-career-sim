@@ -14,9 +14,13 @@ checks them, and repository validation runs its check.
   first Game Report week (GAME_REPORT_FROM) once every game of the week has
   closed: the dates, byes, links, the score table from the closed games, and
   one section per game in the table's order. The highlights under each game
-  heading and the reactive-events section are written by hand and kept by
-  every rebuild; a new section reads "Highlights to come." until they are.
-  The pages of earlier weeks are history and are never rewritten.
+  heading and the reactive-events section are stored text, written by whoever
+  writes the week's roundup, in the page's twin in the data area
+  (``highlights_path``: ``{"games": {event id: highlights}, "reactive_events":
+  text}``); the page is never read back. A game without stored highlights
+  reads "Highlights to come."; a stored entry that names no other game of the
+  week, or is not text, stops the build instead of being dropped. The pages of
+  earlier weeks are history and are never rewritten.
 - The medical pages (``medical/``): the current injury report, rewritten from
   the roster record (the owner of each player's current medical
   communication) each time it is built, in short (runtime/season_summary.py:
@@ -174,6 +178,10 @@ class Season:
                 self.receipts[game_key(receipt)] = receipt
         self.roster = roster_record.load(self.paths.roster)
         self.teams = sorted({g[side] for g in self.fixtures for side in ("away", "home")})
+        self.pending = set()    # repository paths a write is about to create (they count as present)
+
+    def exists(self, rel):
+        return rel in self.pending or (self.root / rel).is_file()
 
     def rel(self, path):
         return Path(path).relative_to(self.root).as_posix()
@@ -359,25 +367,47 @@ def ordered_games(season, week):
     return sorted(games, key=lambda g: (JAX not in (g["away"], g["home"]), g["away"]))
 
 
-def sections(text):
-    """{heading: body} of the ``## `` sections of an existing page (body without its blank edges)."""
-    out, heading, body = {}, None, []
-    for line in text.splitlines():
-        if line.startswith("## "):
-            if heading is not None:
-                out[heading] = "\n".join(body).strip("\n")
-            heading, body = line[3:].strip(), []
-        elif heading is not None:
-            body.append(line)
-    if heading is not None:
-        out[heading] = "\n".join(body).strip("\n")
-    return out
+def highlights_path(season, week):
+    """The week's stored highlights and reactive events: the league-results page's twin in the
+    data area."""
+    return season.paths.file_in(results_folder(season), "week_%02d.json" % week)
 
 
-def week_page(season, week, existing=""):
+HIGHLIGHT_KEYS = {"about", "games", "reactive_events"}
+
+
+def highlights(season, week):
+    """({event id: highlights}, reactive events or None): the week's stored text for its
+    league-results page. ValueError for a record that is not an object of those keys, an entry
+    that names no game of the week other than Jacksonville's (whose game has its own report), or
+    a value that is not text."""
+    path = highlights_path(season, week)
+    if not path.is_file():
+        return {}, None
+    rel = season.rel(path)
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict) or set(data) - HIGHLIGHT_KEYS:
+        raise ValueError("%s holds only %s" % (rel, ", ".join(sorted(HIGHLIGHT_KEYS))))
+    games = data.get("games") or {}
+    reactive = data.get("reactive_events")
+    if not isinstance(games, dict) or not all(isinstance(v, str) and v.strip() for v in games.values()):
+        raise ValueError("%s: each game's highlights are text, keyed by the game's event id" % rel)
+    if reactive is not None and not (isinstance(reactive, str) and reactive.strip()):
+        raise ValueError("%s: the reactive events are text" % rel)
+    known = {season.receipt(g)["event_id"]: g for g in season.week_games(week) if season.receipt(g)}
+    for key in sorted(games):
+        game = known.get(key)
+        if game is None:
+            raise ValueError("%s: %s is not a closed Week %d game" % (rel, key, week))
+        if JAX in (game["away"], game["home"]):
+            raise ValueError("%s: Jacksonville's game has its own report, not a highlights entry" % rel)
+    return {k: v.strip() for k, v in games.items()}, (reactive.strip() if reactive else None)
+
+
+def week_page(season, week):
     path = week_page_path(season, week)
     page = season.rel(path)
-    kept = sections(existing)
+    stored, reactive = highlights(season, week)
     first, last = week_dates(season, week)
     games = ordered_games(season, week)
     byes = season.byes(week)
@@ -404,9 +434,10 @@ def week_page(season, week, existing=""):
     for game in games:
         if game is ours:
             continue
-        heading = score_line(season.receipt(game)) + (" (OT)" if overtime(season.receipt(game)) else "")
-        lines += ["## " + heading, "", kept.get(heading) or TO_COME, ""]
-    lines += ["## " + REACTIVE, "", kept.get(REACTIVE) or NONE_RECORDED, ""]
+        receipt = season.receipt(game)
+        heading = score_line(receipt) + (" (OT)" if overtime(receipt) else "")
+        lines += ["## " + heading, "", stored.get(receipt["event_id"]) or TO_COME, ""]
+    lines += ["## " + REACTIVE, "", reactive or NONE_RECORDED, ""]
     return page, "\n".join(lines)
 
 
@@ -437,7 +468,7 @@ def status_link(season, page, row):
     medical record the roster record names as its source."""
     text = summary.medical_status(row)
     source = (row.get("sources") or {}).get("availability")
-    return link(page, source, text) if source and (season.root / source).is_file() else text
+    return link(page, source, text) if source and season.exists(source) else text
 
 
 def injury_report(season):
@@ -537,6 +568,29 @@ def instruction_text(injury, played, days_shown=True):
     return ", ".join(parts)
 
 
+def availability_entry(season, receipt, injury):
+    """(text, source): the roster record's medical communication for a player injured in a
+    Jacksonville game, written from the game's record in the one medical format
+    (runtime/season_summary.py), and the incident record it cites. The close records it on the
+    player's roster row (``availability`` and ``sources.availability``); the injury report, the
+    desk and the Game Week Briefing read it from there."""
+    played = injury_date(season, receipt)
+    days = injury.get("return_days") or 0
+    restriction = injury.get("restriction")
+    instruction = "Limited" if restriction == "limited" else "Out"
+    severity = severity_words(injury) if days or restriction != "limited" else "no projected absence"
+    parts = ["%s, %s: %s, logged %s in the %s Week %d game, %s" % (
+        instruction, severity, words(injury.get("injury_class"), CLASSES), clock_text(injury), month_day(played),
+        int(receipt["week"]), "removed" if injury.get("removed") else "not removed")]
+    parts.append("projected return %s" % long_date(played + timedelta(days=days)) if days
+                 else "no time lost projected")
+    if injury.get("reassessment_days"):
+        parts.append("reassessment %s" % month_day(played + timedelta(days=injury["reassessment_days"])))
+    incident = season.rel(incident_path(season, injury, played))
+    page = season.rel(season.paths.roster_page)
+    return "%s (%s)" % ("; ".join(parts), link(page, incident, "medical record")), incident
+
+
 def injury_words(injury):
     return "%s, %s" % (words(injury.get("injury_class"), CLASSES), severity_words(injury))
 
@@ -630,9 +684,7 @@ def built(season):
     pages from the first Game Report week, the injury report)."""
     out = dict([games_index(season), results_index(season), injury_report(season)])
     for week in built_weeks(season):
-        path = week_page_path(season, week)
-        existing = path.read_text(encoding="utf-8") if path.is_file() else ""
-        rel, text = week_page(season, week, existing)
+        rel, text = week_page(season, week)
         out[rel] = text
     return out
 

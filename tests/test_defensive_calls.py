@@ -408,13 +408,13 @@ class KernelRecordTests(unittest.TestCase):
                          self.on_a[0]["defensive_call_stats"]["A"]["rows"]["D1"]["snaps"])
         text = play_calls_markdown(2014, "A", book)
         # From 2014 the page is written clean (rebuild step 4): the situation in words, no row id.
-        self.assertIn("## Defensive calls by situation", text)
+        self.assertIn("## Defensive snaps by situation", text)
         self.assertIn("| 5 | normal downs |", text)
         self.assertNotIn("| D1 |", text)
         self.assertIn("## Defensive call record", play_calls_markdown(2013, "A", book))
         self.assertIn("| 5 | D1 | normal-down |", play_calls_markdown(2013, "A", book))
         self.assertNotIn("defensive_calls", aggregate_receipts([plain]))
-        self.assertNotIn("Defensive calls by situation", play_calls_markdown(2014, "A", aggregate_receipts([plain])))
+        self.assertNotIn("Defensive snaps by situation", play_calls_markdown(2014, "A", aggregate_receipts([plain])))
 
     def test_the_sheet_stays_out_of_both_packets(self):
         self.assertEqual(game_runner._team_packet(self.sa), game_runner._team_packet(self.a))

@@ -21,13 +21,11 @@ The league’s players of the week for Week 5, for the games of October 2 to Oct
 
 ![AFC Offensive Player: Danny Woodhead wins; winner centered with a gold border](afc_offense.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![Jamaal Charles](https://commons.wikimedia.org/wiki/Special:FilePath/Jamaal_Charles.JPG?width=60) | Jamaal Charles | Kansas City Chiefs | 36.7 | Finalist |
-| ![Danny Woodhead](https://commons.wikimedia.org/wiki/Special:FilePath/Danny_Woodhead_2011.jpg?width=60) | Danny Woodhead | San Diego Chargers | 28.9 | Winner |
-| ![Sammy Watkins](https://commons.wikimedia.org/wiki/Special:FilePath/Sammy_Watkins.JPG?width=60) | Sammy Watkins | Buffalo Bills | 25.3 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![Jamaal Charles](https://commons.wikimedia.org/wiki/Special:FilePath/Jamaal_Charles.JPG?width=60) | Jamaal Charles | Kansas City Chiefs | Nominee |
+| ![Danny Woodhead](https://commons.wikimedia.org/wiki/Special:FilePath/Danny_Woodhead_2011.jpg?width=60) | Danny Woodhead | San Diego Chargers | Winner |
+| ![Sammy Watkins](https://commons.wikimedia.org/wiki/Special:FilePath/Sammy_Watkins.JPG?width=60) | Sammy Watkins | Buffalo Bills | Nominee |
 
 *Photo: Jamaal Charles, Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:Jamaal_Charles.JPG).*
 
@@ -43,13 +41,11 @@ The shortlist score is the award formula’s score for the week; the panel picke
 
 ![AFC Defensive Player: Jamie Collins wins; winner centered with a gold border](afc_defense.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![Jamie Collins](https://commons.wikimedia.org/wiki/Special:FilePath/Jamie_Collins_%28American_football%29.JPG?width=60) | Jamie Collins | New England Patriots | 22.5 | Winner |
-| ![Damon Harrison](https://commons.wikimedia.org/wiki/Special:FilePath/Damon_Harrison_2016.jpg?width=60) | Damon Harrison | New York Jets | 21.0 | Finalist |
-| ![Jimmy Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Jimmy_smith_2011_stadium_practice.jpg?width=60) | Jimmy Smith | Baltimore Ravens | 20.9 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![Jamie Collins](https://commons.wikimedia.org/wiki/Special:FilePath/Jamie_Collins_%28American_football%29.JPG?width=60) | Jamie Collins | New England Patriots | Winner |
+| ![Damon Harrison](https://commons.wikimedia.org/wiki/Special:FilePath/Damon_Harrison_2016.jpg?width=60) | Damon Harrison | New York Jets | Nominee |
+| ![Jimmy Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Jimmy_smith_2011_stadium_practice.jpg?width=60) | Jimmy Smith | Baltimore Ravens | Nominee |
 
 *Photo: Jamie Collins, Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0), [source](https://commons.wikimedia.org/wiki/File:Jamie_Collins_(American_football).JPG).*
 
@@ -65,13 +61,11 @@ The shortlist score is the award formula’s score for the week; the panel picke
 
 ![AFC Special Teams Player: Travis Benjamin wins; winner centered with a gold border](afc_special_teams.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![Andre Caldwell](https://commons.wikimedia.org/wiki/Special:FilePath/Andre_Caldwell_2012.JPG?width=60) | Andre Caldwell | Denver Broncos | 19.1 | Finalist |
-| ![Travis Benjamin](https://commons.wikimedia.org/wiki/Special:FilePath/Travis_Benjamin.JPG?width=60) | Travis Benjamin | Cleveland Browns | 13.5 | Winner |
-| ![Brandon Tate](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Tate.JPG?width=60) | Brandon Tate | Cincinnati Bengals | 12.8 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![Andre Caldwell](https://commons.wikimedia.org/wiki/Special:FilePath/Andre_Caldwell_2012.JPG?width=60) | Andre Caldwell | Denver Broncos | Nominee |
+| ![Travis Benjamin](https://commons.wikimedia.org/wiki/Special:FilePath/Travis_Benjamin.JPG?width=60) | Travis Benjamin | Cleveland Browns | Winner |
+| ![Brandon Tate](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Tate.JPG?width=60) | Brandon Tate | Cincinnati Bengals | Nominee |
 
 *Photo: Andre Caldwell, Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:Andre_Caldwell_2012.JPG).*
 
@@ -87,13 +81,11 @@ The shortlist score is the award formula’s score for the week; the panel picke
 
 ![NFC Offensive Player: Shaun Hill wins; winner centered with a gold border](nfc_offense.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![Shaun Hill](https://commons.wikimedia.org/wiki/Special:FilePath/Shaun_Hill_2014_Cropped.jpg?width=60) | Shaun Hill | St. Louis Rams | 30.9 | Winner |
-| ![Zac Stacy](https://commons.wikimedia.org/wiki/Special:FilePath/Zacstacy2013.jpg?width=60) | Zac Stacy | St. Louis Rams | 27.6 | Finalist |
-| ![Devonta Freeman](https://commons.wikimedia.org/wiki/Special:FilePath/Devonta_Freeman_training_camp_2016.jpg?width=60) | Devonta Freeman | Atlanta Falcons | 25.9 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![Shaun Hill](https://commons.wikimedia.org/wiki/Special:FilePath/Shaun_Hill_2014_Cropped.jpg?width=60) | Shaun Hill | St. Louis Rams | Winner |
+| ![Zac Stacy](https://commons.wikimedia.org/wiki/Special:FilePath/Zacstacy2013.jpg?width=60) | Zac Stacy | St. Louis Rams | Nominee |
+| ![Devonta Freeman](https://commons.wikimedia.org/wiki/Special:FilePath/Devonta_Freeman_training_camp_2016.jpg?width=60) | Devonta Freeman | Atlanta Falcons | Nominee |
 
 *Photo: Shaun Hill, Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0), [source](https://commons.wikimedia.org/wiki/File:Shaun_Hill_2014_Cropped.jpg).*
 
@@ -109,13 +101,11 @@ The shortlist score is the award formula’s score for the week; the panel picke
 
 ![NFC Defensive Player: Malcolm Smith wins; winner centered with a gold border](nfc_defense.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![DeAndre Levy](https://commons.wikimedia.org/wiki/Special:FilePath/DeAndre_Levy.JPG?width=60) | DeAndre Levy | Detroit Lions | 23.0 | Finalist |
-| ![Malcolm Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Malcolm_Smith_%28American_football%29.JPG?width=60) | Malcolm Smith | Seattle Seahawks | 22.5 | Winner |
-| ![Robert Alford](https://commons.wikimedia.org/wiki/Special:FilePath/Robert_Alford_%28American_football%29_2014_02.jpg?width=60) | Robert Alford | Atlanta Falcons | 20.5 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![DeAndre Levy](https://commons.wikimedia.org/wiki/Special:FilePath/DeAndre_Levy.JPG?width=60) | DeAndre Levy | Detroit Lions | Nominee |
+| ![Malcolm Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Malcolm_Smith_%28American_football%29.JPG?width=60) | Malcolm Smith | Seattle Seahawks | Winner |
+| ![Robert Alford](https://commons.wikimedia.org/wiki/Special:FilePath/Robert_Alford_%28American_football%29_2014_02.jpg?width=60) | Robert Alford | Atlanta Falcons | Nominee |
 
 *Photo: DeAndre Levy, Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [source](https://commons.wikimedia.org/wiki/File:DeAndre_Levy.JPG).*
 
@@ -131,13 +121,11 @@ The shortlist score is the award formula’s score for the week; the panel picke
 
 ![NFC Special Teams Player: Benny Cunningham wins; winner centered with a gold border](nfc_special_teams.svg)
 
-| Photo | Player | Team | Shortlist score | Result |
-|---|---|---|---:|---|
-| ![Benny Cunningham](https://commons.wikimedia.org/wiki/Special:FilePath/Benny_Cunningham.jpg?width=60) | Benny Cunningham | St. Louis Rams | 13.9 | Winner |
-|  | Alex Henery | Detroit Lions | 12.0 | Finalist |
-| ![Cody Parkey](https://commons.wikimedia.org/wiki/Special:FilePath/Cody_Parkey.jpg?width=60) | Cody Parkey | Philadelphia Eagles | 12.0 | Finalist |
-
-The shortlist score is the award formula’s score for the week; the panel picked the winner from the three finalists.
+| Photo | Player | Team | Result |
+|---|---|---|---|
+| ![Benny Cunningham](https://commons.wikimedia.org/wiki/Special:FilePath/Benny_Cunningham.jpg?width=60) | Benny Cunningham | St. Louis Rams | Winner |
+|  | Alex Henery | Detroit Lions | Nominee |
+| ![Cody Parkey](https://commons.wikimedia.org/wiki/Special:FilePath/Cody_Parkey.jpg?width=60) | Cody Parkey | Philadelphia Eagles | Nominee |
 
 *Photo: Benny Cunningham, Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0), [source](https://commons.wikimedia.org/wiki/File:Benny_Cunningham.jpg).*
 

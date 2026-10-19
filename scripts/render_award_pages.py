@@ -2,9 +2,12 @@
 
 From 2014 the pages read like the league's announcements (docs/rebuild_plan.md,
 rule 4): the winner, his position and club, and his game or month from the
-closed game records, then the three finalists with their recorded shortlist
-scores and photos. The winners, finalists, scores and their order are exactly
-the recorded results; the award cards (the .svg images) are unchanged.
+closed game records, then the other nominees with their photos. The winners,
+nominees and their order are exactly the recorded results. How the nominees
+are found and the winner drawn (the formulas, their scores and the weights)
+is the season's method record (``methodology.json``, in the data area) and
+the recorded results; it is never on a page, and from 2014 the award cards
+(the .svg images) carry no score. Earlier seasons' pages keep their layout.
 """
 from html import escape
 import json
@@ -14,10 +17,14 @@ import re
 import textwrap
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
+from runtime.seasons import CLEAN_SEASON
 from scripts.player_photos import Photos, credit_short
 
 
-def award_cards(award, shortlist, winner_index):
+CLEAN_FROM = CLEAN_SEASON      # the first season whose award pages read as the league's announcements
+
+
+def award_cards(award, shortlist, winner_index, scores=True):
     if not 0 <= winner_index < len(shortlist) <= 3:
         raise ValueError('Award requires its recorded winner and at most three finalists')
     others = [row for i, row in enumerate(shortlist) if i != winner_index]
@@ -32,12 +39,13 @@ def award_cards(award, shortlist, winner_index):
         parts.append(f'<rect x="{x}" y="16" width="298" height="220" rx="12" fill="white" stroke="{ "#b38b31" if winner else "#d4dddb" }" stroke-width="{4 if winner else 1}"/>')
         def line(y, value, size=17, color='#173f3c', weight='normal'):
             parts.append(f'<text x="{x+149}" y="{y}" text-anchor="middle" font-family="Arial, sans-serif" font-size="{size}" fill="{color}" font-weight="{weight}">{escape(str(value))}</text>')
-        line(48, 'WINNER' if winner else 'FINALIST', 13, '#80601b' if winner else '#526c68', 'bold')
+        line(48, 'WINNER' if winner else ('FINALIST' if scores else 'NOMINEE'), 13, '#80601b' if winner else '#526c68', 'bold')
         for n, value in enumerate(textwrap.wrap(row['player'], 22)):
             line(94+n*25, value, 22, weight='bold')
         for n, value in enumerate(textwrap.wrap(row['team'], 29)):
             line(157+n*21, value, 16)
-        line(213, f"Shortlist score: {row['score']:.1f}", 15, '#526c68')
+        if scores:
+            line(213, f"Shortlist score: {row['score']:.1f}", 15, '#526c68')
     return '\n'.join(parts+['</svg>'])+'\n'
 
 
@@ -242,6 +250,19 @@ def _winner_cell(entry, key):
     return '%s (%s)' % (row['player'], nickname(row['team']))
 
 
+def month_spans(method):
+    """"September (Weeks 1-4, September 4 to September 29)": each award month's weeks and dates."""
+    spans = []
+    for month, data in (method.get('months') or {}).items():
+        weeks = data.get('weeks') or []
+        dates = re.findall(r'\d{4}-\d{2}-\d{2}', data.get('fixture_dates', ''))
+        span = 'Weeks %d-%d' % (weeks[0], weeks[-1]) if len(weeks) > 1 else 'Week %d' % weeks[0]
+        if len(dates) == 2:
+            span += ', %s to %s' % (month_day(dates[0]), month_day(dates[1]))
+        spans.append('%s (%s)' % (month, span))
+    return spans
+
+
 def render_pages(season, results, method=None, root=ROOT):
     if results and method is None:
         raise ValueError('Recorded awards require their season methodology')
@@ -253,7 +274,8 @@ def render_pages(season, results, method=None, root=ROOT):
     index = [f'# {season} regular-season awards', '',
              '[Regular season](../README.md) · [Season](../../README.md)', '',
              "The league's players of the week and players of the month. Open a week or a month for each "
-             "winner's game or month and the three finalists.", '']
+             "winner's game or month and %s." % ("the other nominees" if season >= CLEAN_FROM
+                                                 else "the three finalists"), '']
     if not results:
         index += [f'No {season} award has been named yet; awards follow the closed games of each week and month.', '']
     games = Games(season, root) if results else None
@@ -270,7 +292,8 @@ def render_pages(season, results, method=None, root=ROOT):
         else:
             weekly.append(f'| {label} | {"Recorded" if entry else "Awarded after the week’s games"} |')
         if entry:
-            out.update(period_page(f'Week {week}', rel, entry, method, photos=photos, games=games))
+            out.update(period_page(f'Week {week}', rel, entry, method, photos=photos, games=games,
+                                   clean=season >= CLEAN_FROM))
     index += [head[0] % 'Week'] + head[1:] if keys else ['| Week | Awards |', '|---|---|']
     index += weekly + ['', '## Players of the Month', '']
     months = (list(method['months']) if method and method.get('months') else
@@ -286,9 +309,18 @@ def render_pages(season, results, method=None, root=ROOT):
         else:
             index.append(f'| {label} | {"Recorded" if entry else "Awarded after the month’s games"} |')
         if entry:
-            out.update(period_page(month, rel, entry, method, back='../../README.md', photos=photos, games=games))
-    index += ['', '## How the winners are chosen', '']
-    if method and method.get('frozen'):
+            out.update(period_page(month, rel, entry, method, back='../../README.md', photos=photos, games=games,
+                                   clean=season >= CLEAN_FROM))
+    if season >= CLEAN_FROM:
+        index += ['', '## The awards', '']
+        text = ("After each week's games the league names an offensive, a defensive and a special teams player "
+                "of the week in each conference, and after each month its players of the month.")
+        spans = month_spans(method) if method and method.get('frozen') else []
+        if spans:
+            text += " Each month covers whole weeks: " + '; '.join(spans) + "."
+        index += [text, '']
+    elif method and method.get('frozen'):
+        index += ['', '## How the winners are chosen', '']
         weights = method.get('panel_weights') or []
         size = method.get('shortlist_size') or len(weights)
         text = ("One formula for each award scores every player from the game statistics of the week or the month. "
@@ -299,19 +331,13 @@ def render_pages(season, results, method=None, root=ROOT):
         text += " The method was fixed on %s, before the first award%s." % (
             long_date(method['frozen']['date']),
             (", with the same formulas, finalists and panel weights as in %s" % earlier) if earlier else '')
-        spans = []
-        for month, data in (method.get('months') or {}).items():
-            weeks = data.get('weeks') or []
-            dates = re.findall(r'\d{4}-\d{2}-\d{2}', data.get('fixture_dates', ''))
-            span = 'Weeks %d-%d' % (weeks[0], weeks[-1]) if len(weeks) > 1 else 'Week %d' % weeks[0]
-            if len(dates) == 2:
-                span += ', %s to %s' % (month_day(dates[0]), month_day(dates[1]))
-            spans.append('%s (%s)' % (month, span))
+        spans = month_spans(method)
         if spans:
             text += " Each month covers whole NFL weeks: " + '; '.join(spans) + "."
         index += [text, '']
     else:
-        index += ['Before the first award, the season’s method and its months are fixed from the actual schedule. '
+        index += ['', '## How the winners are chosen', '',
+                  'Before the first award, the season’s method and its months are fixed from the actual schedule. '
                   'Earlier winners and monthly windows do not carry forward.', '']
     index += ['## Season honours', '',
               'Season awards and the Pro Bowl use their own dates and selection processes. Follow [postseason and Pro Bowl]('
@@ -320,7 +346,7 @@ def render_pages(season, results, method=None, root=ROOT):
     return out
 
 
-def period_page(label, relative, entry, method, back='../README.md', photos=None, games=None):
+def period_page(label, relative, entry, method, back='../README.md', photos=None, games=None, clean=False):
     kind = entry.get('kind', 'week') if entry else 'week'
     heading = ('%s Players of the Week' % label) if kind == 'week' else ('%s Players of the Month' % label)
     lines = [f'# {heading}', '', f'[All regular-season awards]({back})', '']
@@ -347,7 +373,8 @@ def period_page(label, relative, entry, method, back='../README.md', photos=None
         category = key.split('-', 1)[1] if '-' in key else key
         asset = re.sub(r'[^a-z0-9]+', '_', key.lower()) + '.svg'
         # The card keeps the award's recorded name, so the image is unchanged.
-        out[(Path(relative).parent / asset).as_posix()] = award_cards(name, award['shortlist'], award['winner_index'])
+        out[(Path(relative).parent / asset).as_posix()] = award_cards(name, award['shortlist'], award['winner_index'],
+                                                                      scores=not clean)
         row = award['shortlist'][award['winner_index']]
         winner = row['player']
         found = {r['player']: photos.lookup(r['player'], team=r['team']) for r in award['shortlist']}
@@ -355,14 +382,23 @@ def period_page(label, relative, entry, method, back='../README.md', photos=None
         if found[winner]:
             lines += [f'![{winner}]({sized(found[winner]["url"], 160)})', '']
         lines += [winner_text(kind, category, row, games, set(weeks)) if games else f'**{winner}, {row["team"]}.**', '',
-                  f'![{name}: {winner} wins; winner centered with a gold border]({asset})', '',
-                  '| Photo | Player | Team | Shortlist score | Result |', '|---|---|---|---:|---|']
-        for i, r in enumerate(award['shortlist']):
-            thumb = found[r['player']]
-            cell = f'![{r["player"]}]({sized(thumb["url"], 60)})' if thumb else ''
-            lines.append(f"| {cell} | {r['player']} | {r['team']} | {r['score']:.1f} | {'Winner' if i == award['winner_index'] else 'Finalist'} |")
-        lines += ['', 'The shortlist score is the award formula’s score for the %s; the panel picked the winner '
-                  'from the three finalists.' % ('week' if kind == 'week' else 'month'), '']
+                  f'![{name}: {winner} wins; winner centered with a gold border]({asset})', '']
+        if clean:
+            # The nominees as the league names them: no formula score, no selection weights.
+            lines += ['| Photo | Player | Team | Result |', '|---|---|---|---|']
+            for i, r in enumerate(award['shortlist']):
+                thumb = found[r['player']]
+                cell = f'![{r["player"]}]({sized(thumb["url"], 60)})' if thumb else ''
+                lines.append(f"| {cell} | {r['player']} | {r['team']} | {'Winner' if i == award['winner_index'] else 'Nominee'} |")
+            lines.append('')
+        else:
+            lines += ['| Photo | Player | Team | Shortlist score | Result |', '|---|---|---|---:|---|']
+            for i, r in enumerate(award['shortlist']):
+                thumb = found[r['player']]
+                cell = f'![{r["player"]}]({sized(thumb["url"], 60)})' if thumb else ''
+                lines.append(f"| {cell} | {r['player']} | {r['team']} | {r['score']:.1f} | {'Winner' if i == award['winner_index'] else 'Finalist'} |")
+            lines += ['', 'The shortlist score is the award formula’s score for the %s; the panel picked the winner '
+                      'from the three finalists.' % ('week' if kind == 'week' else 'month'), '']
         for n, r in found.items():
             if r:
                 lines += [f'*Photo: {n}, {credit_short(r)}.*', '']

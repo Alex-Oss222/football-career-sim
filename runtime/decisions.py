@@ -114,9 +114,12 @@ def folder(decision, year, root=None, week=None, postseason=False):
 
 @dataclass(frozen=True)
 class WeekPages:
-    """The game week's pages and its stored decision record, through the folder map."""
+    """The game week's pages and its stored decision record, through the folder map. ``report`` is
+    the game's result page as the folder map names it (SeasonPaths.game_report): the Game Report
+    from the first Game Report week, the week's ``output.md`` before it."""
     folder: Path
     data: Path
+    report: Path
 
     @property
     def readme(self): return self.folder / "README.md"
@@ -124,8 +127,6 @@ class WeekPages:
     def briefing(self): return self.folder / file_name(BY_KIND["game_week"].brief)
     @property
     def plan(self): return self.folder / file_name(BY_KIND["game_week"].page)
-    @property
-    def report(self): return self.folder / file_name(BY_KIND["game_week"].result)
     @property
     def call_sheet(self): return self.data / "call_sheet.json"
     @property
@@ -138,4 +139,5 @@ class WeekPages:
 
 def week_pages(year, week, root=None, postseason=False):
     paths = SeasonPaths(year) if root is None else SeasonPaths(year, root)
-    return WeekPages(paths.week_folder(week, postseason), paths.week_data(week, postseason))
+    return WeekPages(paths.week_folder(week, postseason), paths.week_data(week, postseason),
+                     paths.game_report(week, postseason))

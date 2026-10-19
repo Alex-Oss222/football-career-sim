@@ -25,14 +25,19 @@ Sections (library/2014_inseason_rails.md, "The weekly record"):
 6. corrections and decisions (base corrections the week applies first);
 7. the event-record comment, which the batch supplies with --event.
 
-Rebuild step 4 (docs/rebuild_plan.md, rule 4): the page is written clean,
-football words only. The week's record of the files it was built from and the
-league state digests at each cutoff (engineering review B5) is stored beside
-it in the data area (``meta_path``), not in the page. A page written before
-Week 6 keeps its own bytes and its embedded record (rule 1): ``check`` holds
-its record to the recomputed digests and leaves its text, which the page
-history pins, as written. Every count, row and order is the same computation
-as before.
+Rebuild step 4 (docs/rebuild_plan.md, rule 4): from Week 6 the page is the
+week's league transactions, football words only: each move's date, club,
+move, player and roster status. The window's cutoffs, the counts by club, the
+real dates and sources, the held additions, the moves not applied and the
+corrections are the rails data's and the library method's; ``--detail``
+prints them for the staff who keep the data (the sections listed above, the
+computation unchanged) and nothing writes them to a page. The week's record of
+the files it was built from and the league state digests at each cutoff
+(engineering review B5) is stored beside it in the data area (``meta_path``),
+the only record ``check`` reads. A page written before Week 6 keeps its own
+bytes and its embedded record (rule 1): ``check`` holds the stored record to
+the recomputed digests, requires the page's embedded record to be the same,
+and leaves its text, which the page history pins, as written.
 """
 from __future__ import annotations
 
@@ -142,10 +147,77 @@ def _in_window(item, lasts, start, end, first_week):
     return when <= end and (first_week or when >= start)
 
 
+# The league transactions page's words for each move (the briefing's opponent moves use them too).
+MOVE_WORDS = {"ps_signing": "Signed to the practice squad", "waived": "Waived", "fa_signing": "Signed as a free agent",
+              "ps_promotion": "Promoted from the practice squad", "ps_release": "Released from the practice squad",
+              "released": "Released", "released_unspecified": "Released", "re_signing": "Re-signed",
+              "ps_poach": "Signed from another club's practice squad", "waiver_claim": "Claimed off waivers",
+              "retirement": "Retired", "trade_in": "Acquired in a trade", "trade_out": "Traded away",
+              "reserve_injured": "Placed on reserve/injured", "suspension": "Suspended",
+              "activation_return": "Activated from the reserve list"}
+# Each move's roster status once it took effect, by the replay's action.
+STATUS_TEXT = {"added_active": "On the 53", "filled_active": "On the 53", "emergency_promotion": "On the 53",
+               "added_practice_squad": "Practice squad", "filled_practice_squad": "Practice squad",
+               "removed_active": "Off the 53", "removed_practice_squad": "Off the practice squad",
+               "implied_ps_release": "Off the practice squad", "removed_reserve": "Off the reserve list",
+               "retired": "Retired", "retired_jacksonville": "Retired", "branch_reserve": "Reserve/injured"}
+BRANCH_MOVES = {"branch_reserve": "Placed on reserve/injured", "emergency_promotion": "Promoted from the practice squad"}
+
+
+def move_words(kind):
+    return MOVE_WORDS.get(kind) or str(kind or "").replace("_", " ").capitalize()
+
+
 def render(season, week, root=ROOT, receipts=None, event=None):
-    """The week's page from the data effective for that week only: the base
-    and the shards of weeks up to `week`, and rows and branch events that
-    replay inside the week's window. Later shards never change it."""
+    """The week's league transactions page: every roster move by the other clubs that took effect
+    in the week's window, with its date, club, move, player and roster status, from the data
+    effective for that week only (later shards never change it). How a move is held for a roster
+    place, which moves never reach a roster and how the opening rosters were set are the rails
+    data's and the library method's, printed by ``detail`` (``--detail``), never on the page."""
+    slate, start, end = week_record(season, week, root, receipts)
+    data = slate["data"]
+    last = slate["states"][max(slate["states"])]
+    first_week = week == data.effective_from_week
+    rows = {r["id"]: r for r in data.rows}
+    shards = [s for s in data.manifest["shards"] if int(s["week"]) <= week]
+    as_of = max(date.fromisoformat(s["through"]) for s in shards)
+    clubs = {code: name for name, code in data.codes.items()}
+    moves = []
+    for e in last.log:
+        if not (first_week or (start and date.fromisoformat(e["date"]) >= start)) or e["action"] not in STATUS_TEXT:
+            continue
+        if e["ref"] in rows:
+            kind = rows[e["ref"]]["kind"]
+            move = "Signed away from the practice squad" if e["action"] == "implied_ps_release" else move_words(kind)
+        elif e["action"] in BRANCH_MOVES:
+            move = BRANCH_MOVES[e["action"]]
+        else:
+            continue
+        player = e.get("player_id") or (rows.get(e["ref"]) or {}).get("player_id") or ""
+        # A same-named player's id carries his club's code ("Charles Johnson (CLE)"); the club column names it.
+        player = re.sub(r" \((%s)\)$" % "|".join(map(re.escape, clubs)), "", player)
+        moves.append([_fmt(e["date"]), clubs.get(e["club"], e["club"]), move, player, STATUS_TEXT[e["action"]]])
+    window = ("every move since the opening week's rosters, through %s" % _fmt(end)) if first_week else \
+        "moves from %s to %s" % (_fmt(start), _fmt(end))
+    lines = ["# League transactions: Week %d, %d" % (week, season), "",
+             "Roster moves by the other 31 clubs that took effect before the Week %d games: %s. Transactions on "
+             "file through %s. [Sources](../../../../../library/%d_inseason_rails.md)" % (week, window, _fmt(as_of), season), ""]
+    if moves:
+        lines += ["| Date | Club | Move | Player | Status |", "|---|---|---|---|---|"]
+        lines += ["| %s |" % " | ".join(str(c).replace("|", "/") for c in row) for row in moves]
+    else:
+        lines.append("No roster move took effect.")
+    text = "\n".join(lines).rstrip("\n") + "\n"
+    if event:
+        text += "\n<!-- event-record: %s -->\n" % json.dumps(event, sort_keys=True)
+    return text
+
+
+def detail(season, week, root=ROOT, receipts=None):
+    """The week's full record for the staff who keep the rails data (printed by ``--detail``,
+    never a page): the cutoffs, the counts by club, every move with its real date and sources,
+    the held additions, the moves not applied and the corrections. Every count, row and order is
+    the computation the weekly record has always used."""
     from runtime.week_inputs import event_id, schedule
     slate, start, end = week_record(season, week, root, receipts)
     data = slate["data"]
@@ -158,7 +230,7 @@ def render(season, week, root=ROOT, receipts=None, event=None):
     in_week = [e for e in last.log if (first_week or (start and date.fromisoformat(e["date"]) >= start))
                and e["ref"] in rows]
     games = schedule(week, season)
-    lines = ["# League roster moves: Week %d, %d" % (week, season), ""]
+    lines = ["# League roster moves in detail: Week %d, %d" % (week, season), ""]
     window = ("every move dated on or before %s (the moves since the Week 1 rosters take effect together, each "
               "in its real order)" % _fmt(end)) if first_week else \
         "moves dated %s to %s" % (_fmt(start), _fmt(end))
@@ -259,10 +331,7 @@ def render(season, week, root=ROOT, receipts=None, event=None):
     if c6 or emergencies:
         lines += ["From this season's games: %d reserve-list placement(s) after injuries and %d emergency "
                   "promotion(s) from a practice squad." % (c6, emergencies), ""]
-    text = "\n".join(lines).rstrip("\n") + "\n"
-    if event:
-        text += "\n<!-- event-record: %s -->\n" % json.dumps(event, sort_keys=True)
-    return text
+    return "\n".join(lines).rstrip("\n") + "\n"
 
 
 def kind_text(kind):
@@ -334,11 +403,16 @@ def check(season=2014, root=ROOT):
         rel = path.relative_to(root).as_posix()
         expected = week_meta(season, week, root, before)
         stored = meta_path(season, week, root)
-        if stored.is_file():
-            recorded = json.loads(stored.read_text(encoding="utf-8"))
-        else:
-            embedded = EMBEDDED_META.search(current)
-            recorded = json.loads(embedded.group(1)) if embedded else None
+        if not stored.is_file():
+            errors.append("in-season rails record missing: %s (the week's record of its files and league states); "
+                          "run python scripts/render_inseason_rails.py --season %d --week %d --write"
+                          % (stored.relative_to(root).as_posix(), season, week))
+            continue
+        recorded = json.loads(stored.read_text(encoding="utf-8"))
+        embedded = EMBEDDED_META.search(current)
+        if embedded and json.loads(embedded.group(1)) != recorded:
+            # A page written before Week 6 carries its record too; the stored record must be the same.
+            errors.append("in-season rails record differs from the record its page carries: %s" % rel)
         if recorded != expected:
             errors.append("in-season rails record stale: %s" % rel)
         elif not _history_page(rel, current.encode("utf-8"), root) and \
@@ -363,6 +437,8 @@ def main():
     parser.add_argument("--write", action="store_true")
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--event", help="event-record JSON for the batch that applies the week")
+    parser.add_argument("--detail", action="store_true",
+                        help="print the week's full record (counts, held additions, moves not applied); writes nothing")
     args = parser.parse_args()
     if args.check:
         errors = check(args.season)
@@ -371,6 +447,9 @@ def main():
     if args.week is None:
         parser.error("--week is required unless --check")
     event = json.loads(args.event) if args.event else None
+    if args.detail:
+        sys.stdout.write(detail(args.season, args.week))
+        return 0
     if args.write:
         path = write(args.season, args.week, event=event)
         print("Written: %s and its record %s" % (path.relative_to(ROOT), meta_path(args.season, args.week).relative_to(ROOT)))

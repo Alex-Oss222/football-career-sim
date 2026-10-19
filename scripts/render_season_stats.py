@@ -35,7 +35,7 @@ from runtime.stat_tables import (
     POSITION_GROUPS, avg, combine, g, pct, position_sections, rating_value,
     time_text,
 )
-from runtime.seasons import page_link
+from runtime.seasons import CLEAN_SEASON, page_link
 from runtime.statbook import aggregate_receipts, leaders
 
 # NFL passing qualifier: 14 attempts per team game (Wikipedia, "Passer
@@ -43,7 +43,7 @@ from runtime.statbook import aggregate_receipts, leaders
 # qualifiers are not applied until verified from a dated source.
 PASSING_ATTEMPTS_PER_TEAM_GAME = 14
 # The first season whose statistics pages are written clean (2013's are history).
-CLEAN_FROM = 2014
+CLEAN_FROM = CLEAN_SEASON
 # From 2014 these views are system files: written to the data area, never a page to read.
 SYSTEM_VIEWS = ("season_totals.json", "calibration_audit.md")
 # The statbook index (the logical statbook.md: the Statistics folder's README) and the records
@@ -659,16 +659,17 @@ SITUATION_WORDS = {
 
 
 def clean_play_calls_markdown(year, team_id, book):
-    """The play-call page in football words: each call's snaps and results, then the defensive
-    calls by situation. The same rows, orders and figures as ``play_calls_markdown``."""
+    """The snaps by call-sheet label in football words, then the defensive snaps by situation. The
+    same rows, orders and figures as ``play_calls_markdown``, with its evidence limit kept: a label
+    is matched to a snap after the play, so the counts are not the calls made, nor evidence that a
+    call worked."""
     lines = header(
-        "%s %s play calls" % (year, team_id), None, book, team_id,
-        "Every snap in the play-by-play carries a call from that week's call sheet that fits its ball "
-        "carrier or target; this table counts the snaps under each call and what they gained. The sheet "
-        "sets the calls available in each situation, so a call's totals reflect the situations it was used "
-        "in. Generic, kneel, spike and scramble rows are separate; a quarterback scramble counts under the "
-        "pass call it carries. Y/P is yards per snap; 20+ counts gains of 20 yards or more; NEG counts snaps "
-        "that lost yardage.", True,
+        "%s %s snaps by call-sheet label" % (year, team_id), None, book, team_id,
+        "Each snap in the play-by-play is matched after the play to a call on that week's sheet that fits "
+        "its ball carrier or target. The counts show where the snaps fell, not which call was made or how "
+        "well a call worked. Generic, kneel, spike and scramble rows are separate; a quarterback scramble "
+        "counts under the pass label it carries. Y/P is yards per snap; 20+ counts gains of 20 yards or more; "
+        "NEG counts snaps that lost yardage.", True,
     ) + no_games(book)
     calls = book.get("play_calls", {}).get(team_id, {})
     if not calls:
@@ -676,12 +677,12 @@ def clean_play_calls_markdown(year, team_id, book):
     lines += call_rows(calls)
     games = (book.get("defensive_calls") or {}).get(team_id)
     if games:
-        lines += ["## Defensive calls by situation", "",
+        lines += ["## Defensive snaps by situation", "",
                   "Each defensive snap is listed under the row of Stone's defensive call sheet for its down and "
-                  "distance, field zone or clock, with that row's call as the sheet writes it. A situation's snaps "
-                  "are a count of the snaps in that situation. Snaps no row names, kneels and spikes are listed as "
-                  "other snaps.", "",
-                  "| Week | Situation | Call | SNAPS |", "|---:|---|---|---:|"]
+                  "distance, field zone or clock, with that row's wording. A situation's snaps are a count of the "
+                  "snaps in that situation, not the call on every such snap or evidence that a call worked. Snaps "
+                  "no row names, kneels and spikes are listed as other snaps.", "",
+                  "| Week | Situation | Sheet wording | SNAPS |", "|---:|---|---|---:|"]
         for game in games:
             for row in game["rows"].values():
                 lines.append("| %d | %s | %s | %d |" % (
@@ -1048,7 +1049,8 @@ INDEXED_VIEWS = (
     ("team_stats.md", "Team statistics", "every club's offense, defense and special teams, per game"),
     ("league_player_stats.md", "League player statistics", "every player by position, league-wide"),
     ("league_leaders.md", "League leaders", "the leaders at each position and overall"),
-    ("play_call_stats.md", "%s play calls", "the club's calls by snaps and results, and its defensive calls by situation"),
+    ("play_call_stats.md", "%s snaps by call-sheet label",
+     "where the club's snaps fell by the sheet's labels, and its defensive snaps by situation; not the calls made"),
     ("all_player_stats.md", "Rosters and player statistics", "club by club, every player who has dressed"),
 )
 

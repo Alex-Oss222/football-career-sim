@@ -26,12 +26,12 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from runtime.stat_tables import avg, g, passer_rating, pct, thrown, time_text  # noqa: E402
-from runtime.seasons import SeasonPaths
+from runtime.seasons import CLEAN_SEASON, SeasonPaths
 from runtime.season_layout import logical_path, rebase_markdown
 
 ROUNDS = {18: "Wild Card", 19: "Divisional", 20: "Conference Championship", 21: "Super Bowl"}
 # The first season whose tracker pages are written clean (2013's are history).
-CLEAN_FROM = 2014
+CLEAN_FROM = CLEAN_SEASON
 COACH = {"Jacksonville Jaguars": "Alex Stone"}
 NOT_RECORDED = ("The receipts do not record the longest completion, the longest field goal, "
                 "or return and defensive touchdowns, so those template columns are left out rather than guessed.")

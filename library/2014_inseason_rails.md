@@ -154,7 +154,9 @@ The branch generates exactly two kinds of background roster move: the C6 placeme
 6. corrections and decisions;
 7. the event-record comment the batch supplies.
 
-The generated block carries the files' sha256 and a digest of the league state at each cutoff; `validate_repository` regenerates it for every closed week. Each `clubs/<CODE>.md` "Changes on the rails" table gets one line per batch linking to the page, so rows are not copied 31 times.
+From 2014 Week 6 (rebuild step 4, clean pages) the page is the week's league transactions only: each move's date in the league, club, move, player and roster status, with the reserve placements after injuries and the emergency promotions among them. Sections 1 to 6 above are the staff's detail report (`render_inseason_rails.py --season 2014 --week N --detail`), printed from the same computation and never written to a page. The Week 5 page keeps its layout as history.
+
+The week's record of the files' sha256 and a digest of the league state at each cutoff is stored beside the page in the data area (`data/2014/League/personnel/in_season/week_NN.json`), the only record `validate_repository` reads and regenerates for every closed week; the Week 5 page also carries it in its generated block, which must be the same. Each `clubs/<CODE>.md` "Changes on the rails" table gets one line per batch linking to the page, so rows are not copied 31 times.
 
 **Record.md.** The batch's event is dated at the Week 5 application, with the real window in its text (a September 2 date would sort ahead of the closed Weeks 2 to 4), for example: "The other 31 clubs' real roster moves of September 2 to October 4 entered the branch for Week 5: [n] additions and [m] departures applied, [h] additions held for want of a roster place; real injuries, suspensions and Jaguars moves not applied. Weeks 2 to 4 ran on the Week 1 rosters and stand as played."
 

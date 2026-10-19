@@ -410,6 +410,8 @@
     "scripts/render_season_hub.py",
     "scripts/rebuild_pages.py",
     "tests/test_week_close_pages.py",
+    "tests/test_league_page_owners.py",
+    "tests/test_week_pages.py",
     "tests/test_2014_week6_league_pages.py"
   ],
   "foundation_sources": {
