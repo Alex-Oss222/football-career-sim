@@ -1,62 +1,83 @@
 #!/usr/bin/env python3
-"""Check Stone's Game Plan before anything runs (rebuild step 4).
+"""Check Stone's Game Plan before anything runs (game week version 2).
 
   python scripts/check_game_plan.py WEEK --season YEAR [--file PATH] [--root PATH]
 
-Reads the week's Game Plan page (runtime/game_plan.py) and says exactly what
+A postseason week (18 to 21) is a playoff round: its game is found in the
+bracket (runtime/game_weeks.py), never before the bracket sets it, and its page
+is in the round's folder under the postseason folder.
+
+Reads the week's Game Plan page (runtime/game_plan.py, the layout of
+foundation/templates/game_week/game_plan_template.md) and says exactly what
 is missing or invalid, in football words, for example "Inactives: 6 named, 7
-needed", "Red zone: 'Flood Sail' is not in the active playbook" or
-"Inactives: Ace Sanders is not on the roster". It exits 1 until the page is
-complete, and 0 when it is. With --file, an uploaded .md or .txt file with
-the same headings becomes the week's Game Plan page first (the page stays as
-the record of his decision); nothing else is written, and an upload for a
-week that is played, paused or already built for the game is refused before
-anything is written.
+needed", "Offense, Primary calls: Y-Cross could be 12 Trey, Y-Cross, SOLID or
+12 Trey, Y-Cross, HALF; name the one you want" or "Inactives: Ace Sanders is
+not on the roster". It exits 1 until the page is complete, and 0 when it is.
+With --file, an uploaded .md or .txt file with the same headings becomes the
+week's Game Plan page first (the page stays as the record of his decision);
+nothing else is written, and an upload for a week that is played, paused or
+already built for the game is refused before anything is written.
 
 What it checks:
 
 - the week is open for a plan: not played, not paused, and its game not
   already built from an applied plan (the inputs or results of the week);
-- every heading is present and has something under it (a choice, None,
-  Same as Week N or, for the three decision rules and the inactives,
-  Standing rule), and no section other than the offense and the defense
-  carries a subheading;
+- every heading and every line is present and answered: a line left empty is
+  unanswered (No change and None are answers; silence never is), the Primary
+  calls table holds a call unless the baseline carries a week, and no section
+  carries a heading of its own the page does not have (the practice table is
+  information for the staff and never a condition on the plan);
+- the briefing he answers is the current one (its date on "Briefing used",
+  and from the second issue of a day its revision, as the issue record
+  numbers them), and the briefing has not been overtaken by the situation (a
+  briefing the situation has overtaken is re-issued first; the settlement of
+  the week's own items by this page is not a change of situation);
+- each caller line names who calls that phase on the staff page (a change of
+  caller is recorded with the staff first);
 - the inactives: the right number, every one on the active roster, every
   player out for the game among them (his medical instruction, or a closed
   game's injury inside its projected return, as the game reads them; an
   availability note the staff cannot read is a problem), and no healthy
   player when more are out than the count; "Standing rule" applies his
-  standing inactive rule to the week, and "Same as Week N" carries that
-  week's applied list;
-- the depth chart changes: a group's new order holds exactly the players now
-  in that group; a game role goes to a player of its group (the starter a
+  standing inactive rule to the week (with the others he names after it),
+  and "Carry Week N" carries that week's list as set; the standing rule reads
+  the chart as the page's own depth changes leave it;
+- the depth and role changes: a group's new order holds exactly the players
+  now in that group; a game role goes to a player of its group (the starter a
   quarterback, the kicker a kicker, the punter a punter, the nickel and the
   outside reserve corner defensive backs), the starter, kicker and punter go
-  to the head of their group, and the defensive-back seats stay valid;
-- the offense: every word of every call is the active offensive playbook's
-  (its concept, personnel, formation, motion, protection, name and tags;
-  runtime/offensive_words.py, read through the playbook lock), every
-  situation a call names is one of the call sheet's;
-- the decision rules: "Same as Week N" carries a rule that week froze (the
-  two-point and kickoff rules are required for the game), and with Stone's
-  standing fourth-down rule in force a week that froze none is not carried
-  silently;
-- the call sheet the page would freeze, under the existing validators
+  to the head of their group, the defensive-back seats stay valid, and every
+  role holder, new or carried on the chart, dresses (``role_problems``);
+- the offense: the page compiles (runtime/game_plan.compile_sheet): each call
+  is named by its full name (a shorter one is asked about, never resolved to
+  a longer call) or is a new call read from its own words; any call of the
+  active book may be named for any situation, whether or not the week's
+  practice covered it (the user's ruling of October 20, 2026); a call kept as
+  a special play is not also not available; every word of every call on the
+  sheet is the active offensive playbook's (its concept, personnel,
+  formation, motion, protection, name and tags; runtime/offensive_words.py,
+  read through the playbook lock, which refuses a book whose range starts
+  after the season); every call's personnel grouping can be fielded by the
+  players who dress, and a variation naming a player needs him dressed;
+- the decisions: "Carry Week N" or No change carries a rule that week froze
+  (the two-point and kickoff rules are required for the game), and with
+  Stone's standing fourth-down rule in force a week that froze none is not
+  carried silently;
+- the call sheet the page compiles to, under the existing validators
   (runtime/call_families.sheet_errors, runtime/scoring_decisions.sheet_errors
   and input_policies, runtime/defensive_calls.sheet_errors and
   source_errors), so a page that passes here applies and builds cleanly;
-- the page is clean (runtime/clean_pages.py);
-- the Game Week Briefing is current (a briefing the situation has overtaken
-  is re-issued first; the settlement of the week's own items by this page is
-  not a change of situation).
+- the page is clean (runtime/clean_pages.py).
 
 Open items with other people that hold the week, and medical exams still to
 come (each once), are listed as notes; they do not fail the check, and a
 complete page is applied once no exam its items wait on is still to come
 (scripts/apply_game_plan.waiting). A page that has changed since it was
 applied passes as complete but is reported "not yet set" (exit 1) until it
-is applied again. Nothing here moves time or creates
-an event. scripts/apply_game_plan.py applies a page that passes.
+is applied again. A complete page shows back its opening ideas in his order
+of preference and the calls on each situation's list. Nothing here moves time or creates an
+event.
+scripts/apply_game_plan.py applies a page that passes.
 """
 from __future__ import annotations
 
@@ -73,7 +94,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from runtime import call_families, call_situations as cs, current_job, game_plan, offensive_words  # noqa: E402
+from runtime import call_families, current_job, game_plan, offensive_words  # noqa: E402
 from runtime import roster as roster_record  # noqa: E402
 from runtime.clean_pages import page_errors  # noqa: E402
 from runtime.decisions import week_pages  # noqa: E402
@@ -81,19 +102,8 @@ from runtime.player_bios import master_date  # noqa: E402
 from runtime.seasons import SeasonPaths  # noqa: E402
 
 JAX = "Jacksonville Jaguars"
-STATUS_WORDS = {"two_point": "Two-point tries", "kickoff": "Kickoffs", "fourth_down": "Fourth downs"}
-# The situations a call may name (the page's list, as call_situations keys them).
-KNOWN_MENUS = frozenset(cs.menu_key(m) for m in game_plan.CALL_SITUATIONS)
-MENU_WORDS = {cs.HIGH_RED: "Red zone", cs.LOW_RED: "Red zone", cs.GOAL_LINE: "Red zone", "red-zone": "Red zone",
-              cs.NORMAL: "Normal downs", cs.SECOND_LONG: "Second and long", cs.THIRD_SHORT: "Third down",
-              cs.THIRD_MEDIUM: "Third down", cs.THIRD_LONG: "Third down", cs.BACKED_UP: "Backed up",
-              cs.TWO_MINUTE: "Two-minute", cs.PRESS: "PRESS sequence", cs.FOUR_MINUTE: "Four-minute",
-              cs.SUDDEN_CHANGE: "Sudden change", cs.OPENING: "Opening sequence", cs.TWO_POINT: "Two-point tries",
-              "final-play-of-half": "Final play of the half", "empty": "Empty"}
-# The page's own headings a Situations cell may borrow, and the situations each stands for.
-HEADING_HINTS = {"third-down": "third and short, third and medium or third and long",
-                 "final-play-of-the-half": "final play of half", "receiver-arrangement": "the situation the "
-                 "arrangement is for", "normal-downs": "normal down"}
+STATUS_WORDS = {"two_point": "Two-point tries", "kickoff": "Kickoffs and onside situations",
+                "fourth_down": "Fourth downs"}
 CHECK_WORDS = ((re.compile(r"system words?: (\w+)"), "'%s' is not a football word"),
                (re.compile(r"internal code: (\S+)"), "'%s' reads as an internal code"),
                (re.compile(r"internal identifier: (\S+)"), "'%s' reads as an internal identifier"),
@@ -114,6 +124,10 @@ ROLE_WORDS = {v: k for k, v in game_plan.ROLES.items()}
 # Stone's standing inactive rule names five healthy players (state/current_job.json, the
 # instruction on the inactives: "each of the five largest healthy position groups").
 RULE_GROUPS = 5
+CALLER_PHASES = {"offense_caller": "offense", "defense_caller": "defense", "kicking_caller": "special_teams"}
+# What a personnel grouping puts on the field (the active book's section 3): backs, tight ends,
+# receivers by the grouping's two digits; 6OL a sixth lineman.
+GROUP_NAMES = {"backs": "backs", "TE": "tight ends", "WR": "receivers", "OL": "offensive linemen"}
 
 
 def page_digest(text):
@@ -127,11 +141,17 @@ class Plan:
         self.root = Path(root).resolve()
         self.season, self.week = season, week
         self.paths = SeasonPaths(season, self.root)
-        self.pages = week_pages(season, week, self.root)
         self.master = master_date(self.root)
         self.job = current_job.load(self.root)
-        games = [g for g in self.paths.regular_games() if g["week"] == week and JAX in (g["away"], g["home"])]
-        self.game = games[0] if games else None
+        # A playoff game is found in the bracket (runtime/game_weeks.py), never before it is set.
+        from runtime import game_weeks
+        self.postseason = game_weeks.is_postseason(self.paths, week)
+        self.unset = None
+        try:
+            self.game = game_weeks.club_game(self.paths, week, JAX)
+        except game_weeks.NotSet as exc:
+            self.game, self.unset = None, str(exc)
+        self.pages = week_pages(season, week, self.root, postseason=self.postseason)
         self.roster = roster_record.load(self.paths.roster)
         self.chart = json.loads(self.paths.depth_chart.read_text(encoding="utf-8"))
         self.text = self.pages.plan.read_text(encoding="utf-8") if self.pages.plan.is_file() else None
@@ -140,9 +160,15 @@ class Plan:
         self.notes = []
         self.changed_since_applied = None
         self._outs = None
+        self._compiled = None
 
     def rel(self, path):
         return Path(path).relative_to(self.root).as_posix()
+
+    def label(self):
+        """The game's name: "Week 6", or its playoff round ("Wild Card")."""
+        from runtime import game_weeks
+        return game_weeks.round_name(self.week) if self.postseason else "Week %d" % self.week
 
     def active(self):
         return [p["name"] for p in roster_record.players(self.roster, ("active",))]
@@ -151,15 +177,16 @@ class Plan:
         from runtime.rules import RULES
         return len(self.active()) - RULES.active_limit
 
-    def carried(self):
-        """{week: frozen sheet} for every "Same as Week N" the page writes."""
+    def earlier(self):
+        """{week: frozen call sheet} of every earlier Jacksonville week whose plan is set."""
         out = {}
-        for key, value in self.choices.items():
-            if isinstance(value, dict) and "same_as" in value:
-                path = self.paths.call_sheet(value["same_as"])
-                if path.is_file():
-                    out[value["same_as"]] = json.loads(path.read_text(encoding="utf-8"))
+        for w in range(1, self.week):
+            path = week_pages(self.season, w, self.root).call_sheet
+            if path.is_file():
+                out[w] = json.loads(path.read_text(encoding="utf-8"))
         return out
+
+    carried = earlier
 
     def standing(self):
         """{kind: block} of each standing decision rule in force: the block stored on the instruction
@@ -182,23 +209,34 @@ class Plan:
             out[subject] = data
         return out
 
+    def arrangement(self):
+        """{phase: the name of who calls it} on the master date, from the current-job record."""
+        out = {}
+        for phase in current_job.PHASES:
+            interval = current_job.interval_on(self.job, phase, self.master)
+            if interval and interval.get("caller"):
+                out[phase] = current_job.party_name(self.job, interval["caller"])
+        return out
+
     def event(self):
         g = self.game
         place = lambda club: club.rsplit(" ", 1)[0]
         d = date.fromisoformat(g["date"])
-        return "%d regular season Week %d, %s at %s, %s %d, %d" % (
-            self.season, self.week, place(g["away"]), place(g["home"]), d.strftime("%B"), d.day, d.year)
+        part = "postseason %s" % self.label() if self.postseason else "regular season Week %d" % self.week
+        return "%d %s, %s at %s, %s %d, %d" % (
+            self.season, part, place(g["away"]), place(g["home"]), d.strftime("%B"), d.day, d.year)
 
     def frame(self):
         from runtime.defensive_calls import active_defensive_book
         page = self.rel(self.pages.plan)
         today = self.master.isoformat()
-        provenance = ("Stone's Week %d Game Plan (%s), checked by scripts/check_game_plan.py and applied by "
-                      "scripts/apply_game_plan.py on %s: the calls, the situation menus, the decision rules and the "
-                      "defensive sheet as the page writes them, each defensive row citing the page's own line."
-                      % (self.week, page, today))
-        return game_plan.page_frame(page, self.event(), "%s, from Stone's Week %d Game Plan after its check passed; "
-                                    "before any draw" % (today, self.week), provenance, JAX,
+        provenance = ("Stone's %s Game Plan (%s), checked by scripts/check_game_plan.py and applied by "
+                      "scripts/apply_game_plan.py on %s: the calls, their situations and the opening calls, the "
+                      "decision rules and the prepared defensive responses as the page writes them, each defensive "
+                      "row citing the page's own line; the page's reasons are kept as his intent in the applied "
+                      "plan record, not here." % (self.label(), page, today))
+        return game_plan.page_frame(page, self.event(), "%s, from Stone's %s Game Plan after its check passed; "
+                                    "before any draw" % (today, self.label()), provenance, JAX,
                                     active_defensive_book(self.root), self.week)
 
     def filled(self):
@@ -206,15 +244,29 @@ class Plan:
         return {item.get("subject") for item in current_job.instructions(self.job)
                 if item.get("prepared_calls") == game_plan.FIRST_ON_MENU}
 
+    def compiled(self, frame=None):
+        """(sheet or None, source map, problems) of the page (runtime/game_plan.compile_sheet), with
+        Tice's first call on each matching menu filled into a standing fourth-down rule that takes them."""
+        if self._compiled is None or frame is not None:
+            sheet, source, problems = game_plan.compile_sheet(
+                self.choices, frame or self.frame(), self.earlier(), self.standing(), self.arrangement())
+            if sheet is not None:
+                for kind in self.filled():
+                    entry = self.choices.get(kind)
+                    block = (sheet.get("decisions") or {}).get(kind)
+                    if isinstance(entry, dict) and entry.get("standing") and block is not None:
+                        prepared = game_plan.first_calls(sheet.get("offensive_call_sheet"))
+                        if prepared:
+                            block["prepared_calls"] = prepared
+            if frame is not None:
+                return sheet, source, problems
+            self._compiled = (sheet, source, problems)
+        return self._compiled
+
     def sheet(self):
-        sheet = game_plan.build_sheet(self.choices, self.frame(), self.carried(), self.standing())
-        for kind in self.filled():
-            entry = self.choices.get(kind)
-            block = (sheet.get("decisions") or {}).get(kind)
-            if isinstance(entry, dict) and entry.get("standing") and block is not None:
-                prepared = game_plan.first_calls(sheet.get("offensive_call_sheet"))
-                if prepared:
-                    block["prepared_calls"] = prepared
+        sheet, _, problems = self.compiled()
+        if sheet is None:
+            raise ValueError("; ".join(problems) or "the page does not compile")
         return sheet
 
     def receipts_before(self):
@@ -252,8 +304,8 @@ class Plan:
         return self._outs
 
     def inactives(self):
-        """The players the page lists inactive: named, carried from Week N's applied list, or
-        Stone's standing rule applied to the week; None when they cannot be set."""
+        """The players the page lists inactive: named, carried from Week N's list as set, or Stone's
+        standing rule applied to the week; None when they cannot be set."""
         value = self.choices.get("inactives")
         if isinstance(value, dict) and "same_as" in value:
             return carried_inactives(self, value["same_as"])
@@ -286,8 +338,9 @@ def inactive_rule(plan):
 def standing_inactives(plan):
     """(players, problems): Stone's standing inactive rule for the week: every player out for the game,
     and the deepest healthy reserve on the chart in each of the five largest healthy position groups,
-    never below a legal game-day unit. When the week sits more healthy players than five, the page
-    names the others below Standing rule, and they follow the rule's five. Where its words do not
+    never below a legal game-day unit, on the chart as the page's own depth changes leave it. When the
+    week sits more healthy players than five, the page names the others after Standing rule, and they
+    follow the rule's five. Where its words do not
     settle the week (fewer than five healthy places, a tie for the fifth-largest group, a group left
     short) or the page names the wrong number besides it, it says so."""
     if inactive_rule(plan) is None:
@@ -308,11 +361,14 @@ def standing_inactives(plan):
                           "healthy players); write Standing rule alone, without the %d named"
                           % (needed, len(outs), RULE_GROUPS, len(named))]
         return None, ["Inactives: your standing rule sits %d healthy players, but this week %d sit with %d out for "
-                      "the game, so %d healthy; name the other %d in the table below Standing rule (%d named)"
+                      "the game, so %d healthy; name the other %d after Standing rule on the Inactives line, with "
+                      "commas between them (%d named)"
                       % (RULE_GROUPS, needed, len(outs), healthy_needed, others, len(named))]
     active = set(plan.active())
     groups = []
-    for group, order in (plan.chart.get("depth") or {}).items():
+    # The chart as the page leaves it: a group he reorders on this page sits its new deepest reserve.
+    chart, _ = changed_chart(plan.chart, plan.choices.get("depth"))
+    for group, order in (chart.get("depth") or {}).items():
         healthy = [p for p in order if p in active and p not in outs]
         if healthy:
             groups.append((group, healthy))
@@ -326,7 +382,7 @@ def standing_inactives(plan):
     if already:
         return None, ["Inactives: %s already sits by your standing rule; name another" % p for p in already]
     from runtime.usage import lineup_errors
-    positions = plan.chart.get("positions") or {}
+    positions = chart.get("positions") or {}
     dressed = [p for p in plan.active() if p not in outs and p not in picks and p not in named]
     short = lineup_errors([type("Row", (), {"position": positions.get(p)})() for p in dressed])
     if short:
@@ -362,15 +418,15 @@ def inactive_ask(plan):
 
 # ---------------------------------------------------------------- the checks
 def section_of(text, line):
-    """The heading a page line sits under."""
-    current = "The page"
+    """The heading (and subheading) a page line sits under."""
+    current, top = "The page's header", None
     for number, raw in enumerate(text.splitlines(), 1):
         if number > line:
             break
         if raw.startswith("## "):
-            current = raw[3:].strip()
-        elif raw.startswith("### ") and current.split(",")[0] in game_plan.WITH_SUBSECTIONS:
-            current = current.split(",")[0] + ", " + raw[4:].strip()
+            top = current = raw[3:].strip().split(". ", 1)[-1]
+        elif raw.startswith("### ") and top:
+            current = top + ", " + raw[4:].strip()
     return current
 
 
@@ -388,46 +444,98 @@ def clean_problems(plan):
     return out
 
 
+# What an unanswered line asks for, by its kind.
+HINTS = {"fact": "the staff writes it; restore it", "briefing": "write the date of the briefing you answer",
+         "baseline": "write Carry Week N or New plan", "intent": "write your direction, or None",
+         "inactives": "write Standing rule, the players by name or Carry Week N",
+         "depth": "write No change, None or the changes", "caller": "write who calls it, or No change",
+         "opening": "write your opening ideas in your order of preference, Carry Week N opening, No change or None",
+         "situational": "write how you want it called, Carry Week N or No change",
+         "special": "write each call with Keep, Remove or Practice only, No change or None",
+         "removals": "write the calls, No change or None",
+         "rush": "write the rush rule (%s), No change or Carry Week N" % game_plan.RUSH_CHOICE,
+         "decision": "write Standing rule, Carry Week N, No change, None or My rules"}
+
+
 def required(plan):
+    """Every line answered, and the tables and carried weeks the answers need."""
     out = []
-    for name in game_plan.SECTIONS:
-        key = game_plan.SECTION_KEYS[name]
-        if plan.choices.get(key) is None:
-            if name == "Inactives":
-                out.append("Inactives: none named, %d needed" % plan.needed())
-                continue
-            hint = {"Offense": "write the calls and situations",
-                    "Defense": "write who calls it and the calls by situation, or None",
-                    "Fourth downs": "write your rules, Standing rule or None for your live call",
-                    "Two-point tries": "write your rules or Standing rule",
-                    "Kickoffs": "write your rules or Standing rule"}.get(name, "write it, or None")
-            out.append("%s: nothing written; %s" % (name, hint))
-    carried = plan.carried()
-    for key, value in plan.choices.items():
-        if isinstance(value, dict) and "same_as" in value:
-            week = value["same_as"]
-            name = next(n for n, k in game_plan.SECTION_KEYS.items() if k == key)
-            if week >= plan.week:
-                out.append("%s: Same as Week %d names a week that has not come before this one" % (name, week))
-            elif key in ("offense", "fourth_down", "two_point", "kickoff", "defense", "notes") \
-                    and week not in carried:
-                out.append("%s: Week %d has no frozen call sheet to carry" % (name, week))
-            elif key in ("two_point", "kickoff") and key not in (carried[week].get("decisions") or {}):
-                out.append("%s: Week %d set no %s rule, and the game needs one; write your rules with Otherwise, "
-                           "or Standing rule" % (name, week, "two-point" if key == "two_point" else "kickoff"))
-            elif key == "fourth_down" and key not in (carried[week].get("decisions") or {}) \
-                    and "fourth_down" in plan.standing():
-                out.append("Fourth downs: Week %d froze no fourth-down rule, so Same as Week %d would leave every "
-                           "fourth down to your live call although your standing rule is in force; write Standing "
-                           "rule, None for your live call, or your rules" % (week, week))
-    for kind in ("two_point", "kickoff"):
-        if plan.choices.get(kind) == "none":
-            out.append("%s: a rule is needed for the game (your rules with Otherwise, or Standing rule)"
-                       % STATUS_WORDS[kind])
+    for key in plan.choices.get("unanswered") or ():
+        section, label, kind = game_plan.FIELD[key]
+        if key not in (plan.choices.get("fields") or {}):
+            continue          # a missing line is a problem of form, already named
+        if key == "inactives":
+            out.append("Inactives: unanswered; %d needed (%s)" % (plan.needed(), HINTS[kind]))
+            continue
+        label = plan.choices["fields"][key].get("label")
+        out.append("%s: unanswered; %s" % (game_plan.where_of(key, label), HINTS[kind]))
+    baseline = plan.choices.get("baseline") or {}
+    earlier = plan.earlier()
+    if "carry" in baseline and baseline["carry"] >= plan.week:
+        out.append("Baseline: Carry Week %d names a week that has not come before this one" % baseline["carry"])
+    if not plan.choices.get("calls") and "carry" not in baseline and plan.choices.get("baseline") is not None:
+        out.append("Offense, Primary calls: a new plan needs its calls in the table")
+    for key in game_plan.SITUATIONAL_KEYS:
+        value = plan.choices.get(key)
+        if isinstance(value, dict) and value.get("carry") is not None and value["carry"] != baseline.get("carry"):
+            out.append("%s: Carry Week %d, but the plan's baseline %s; carry the same week or write how you want it "
+                       "called" % (game_plan.where_of(key), value["carry"],
+                                   "carries Week %d" % baseline["carry"] if "carry" in baseline else "is a new plan"))
     for kind, words in STATUS_WORDS.items():
         entry = plan.choices.get(kind)
+        if kind in ("two_point", "kickoff") and entry == "none":
+            out.append("%s: a rule is needed for the game (Standing rule, Carry Week N, No change or My rules)"
+                       % words)
         if isinstance(entry, dict) and entry.get("standing") and kind not in plan.standing():
-            out.append("%s: no standing rule is on file as rules the staff can set; write the rules here" % words)
+            out.append("%s: no standing rule is on file as rules the staff can set; write your rules" % words)
+        if isinstance(entry, dict) and ("same_as" in entry or entry.get("no_change")):
+            week = entry.get("same_as") if "same_as" in entry else max(earlier, default=None)
+            how = "Carry Week %d" % week if "same_as" in entry else "No change"
+            if week is None or week not in earlier:
+                out.append("%s: %s names no week with a call sheet as set" % (words, how))
+            elif week >= plan.week:
+                out.append("%s: %s names a week that has not come before this one" % (words, how))
+            elif kind in ("two_point", "kickoff") and kind not in (earlier[week].get("decisions") or {}):
+                out.append("%s: Week %d set no %s rule, and the game needs one; write Standing rule or your rules"
+                           % (words, week, "two-point" if kind == "two_point" else "kickoff"))
+            elif kind == "fourth_down" and kind not in (earlier[week].get("decisions") or {}) \
+                    and "fourth_down" in plan.standing():
+                out.append("Fourth downs: Week %d froze no fourth-down rule, so %s would leave every fourth down to "
+                           "your live call although your standing rule is in force; write Standing rule, None for "
+                           "your live call, or your rules" % (week, how))
+    return out
+
+
+def briefing_problems(plan):
+    """The briefing his page answers is the current one: its date and, from the second issue of a day,
+    its revision, as the issue record numbers them (a plan written against an earlier issue the same
+    day does not answer the current one)."""
+    when = plan.choices.get("briefing")
+    if when is None:
+        return []
+    from scripts import render_game_week
+    try:
+        current = render_game_week.current_issue(render_game_week.Week(plan.root, plan.week))
+    except (OSError, ValueError):
+        return []
+    if current is not None and (when["date"], when["revision"]) != current:
+        return ["Briefing used: your page answers the briefing of %s; the current briefing is %s; read it and "
+                "write it as its status line names it (your answers may stand)"
+                % (game_plan.issue_label(when["date"], when["revision"]), game_plan.issue_label(*current))]
+    return []
+
+
+def caller_problems(plan):
+    """Each caller line names who calls that phase on the staff page."""
+    out, arranged = [], plan.arrangement()
+    for key, phase in CALLER_PHASES.items():
+        value = plan.choices.get(key)
+        if not isinstance(value, dict) or value.get("no_change"):
+            continue
+        on_file = arranged.get(phase)
+        if on_file is None or game_plan.norm(value["name"]) != game_plan.norm(on_file):
+            out.append("%s: %s calls it on the staff page; a change of caller is recorded with the staff before the "
+                       "plan is set (or write No change)" % (game_plan.where_of(key), on_file or "no one"))
     return out
 
 
@@ -446,7 +554,7 @@ def inactive_problems(plan):
     else:
         players = plan.inactives()
     if players is None:
-        return out + ["Inactives: Week %d's list is no longer on file; name the %d" % (value["same_as"], needed)]
+        return out + ["Inactives: Week %d's list is not on file; name the %d" % (value["same_as"], needed)]
     want = max(needed, len(outs))
     if len(players) != want:
         if len(outs) > needed:
@@ -532,81 +640,131 @@ def depth_problems(plan):
     orders = value.get("orders") or {}
     for group, order in orders.items():
         if group not in depth:
-            out.append("Depth chart changes: %r is not a position group on the chart" % group)
+            out.append("Depth/role changes: %r is not a position group on the chart" % group)
             continue
         now = depth[group]
         for name in order:
             if name not in now:
-                out.append("Depth chart changes, %s: %s is not in this group" % (group, name))
+                out.append("Depth/role changes, %s: %s is not in this group" % (group, name))
         for name in now:
             if name not in order:
-                out.append("Depth chart changes, %s: %s is missing from the new order" % (group, name))
+                out.append("Depth/role changes, %s: %s is missing from the new order" % (group, name))
         for name in sorted({p for p in order if order.count(p) > 1}):
-            out.append("Depth chart changes, %s: %s is listed twice" % (group, name))
+            out.append("Depth/role changes, %s: %s is listed twice" % (group, name))
     placed = {p for players in depth.values() for p in players}
     for role, name in (value.get("roles") or {}).items():
         group = ROLE_GROUP.get(role)
         if role not in game_plan.ROLES.values():
-            out.append("Depth chart changes: %r is not a game role (%s)" % (role, ", ".join(game_plan.ROLES)))
+            out.append("Depth/role changes: %r is not a game role (%s)" % (role, ", ".join(game_plan.ROLES)))
         elif name not in placed:
-            out.append("Depth chart changes: %s is not on the chart for the %s role" % (name, ROLE_WORDS[role]))
+            out.append("Depth/role changes: %s is not on the chart for the %s role" % (name, ROLE_WORDS[role]))
         elif group is not None and name not in depth.get(group, ()):
-            out.append("Depth chart changes: the %s role goes to a player of the %s group; %s is not one"
+            out.append("Depth/role changes: the %s role goes to a player of the %s group; %s is not one"
                        % (ROLE_WORDS[role], group, name))
         elif role in HEAD_ROLES and group in orders and orders[group] and orders[group][0] != name:
-            out.append("Depth chart changes: the %s role gives %s, but your %s order puts %s first"
+            out.append("Depth/role changes: the %s role gives %s, but your %s order puts %s first"
                        % (ROLE_WORDS[role], name, group, orders[group][0]))
     if not out:
         from runtime.week_inputs import db_role_errors
         trial, _ = changed_chart(plan.chart, value)
         before = set(db_role_errors(plan.chart))
-        out += ["Depth chart changes: %s" % db_words(e) for e in db_role_errors(trial) if e not in before]
+        out += ["Depth/role changes: %s" % db_words(e) for e in db_role_errors(trial) if e not in before]
     return out
 
 
-def offense_problems(plan):
-    value = plan.choices.get("offense")
-    if not isinstance(value, dict) or "same_as" in value:
+def role_problems(plan):
+    """Every game role, the page's new ones and those the chart carries, held by a player who dresses:
+    a role holder on the inactives, or out for the game, would leave the game to a fallback player in
+    place of the one named."""
+    players = plan.inactives()
+    if players is None:
         return []
-    calls = value.get("calls") or []
-    if not calls:
-        return ["Offense, Calls: no call is written"]
+    value = plan.choices.get("depth")
+    chart, _ = changed_chart(plan.chart, value)
+    outs, _ = plan.outs()
+    named = (value.get("roles") or {}) if isinstance(value, dict) else {}
     out = []
-    names = [c["name"] for c in calls]
-    for name in sorted({n for n in names if names.count(n) > 1}):
-        out.append("Offense, Calls: %r is written twice" % name)
-    openers = [c["opener"] for c in calls if "opener" in c]
-    for n in sorted({o for o in openers if openers.count(o) > 1}):
-        out.append("Offense, Calls: opener %d is given to two calls" % n)
+    for label, role in game_plan.ROLES.items():
+        for player in [p for p, held in (chart.get("roles") or {}).items() if role in (held or ())]:
+            if player not in players and player not in outs:
+                continue
+            why = "he is on the inactives" if player in players else "he is out for the game"
+            if named.get(role) == player:
+                out.append("Depth/role changes: the %s role goes to %s, who does not dress (%s); the role needs a "
+                           "player who dresses" % (label, player, why))
+            else:
+                out.append("Depth/role changes: %s holds the %s role on the depth chart and does not dress (%s); "
+                           "give the role to a player who dresses (%s: his name)" % (player, label, why, label))
+    return out
+
+
+def dressing(plan):
+    """The players who dress on the page's inactives (active, not inactive), or None before the list
+    can be set."""
+    players = plan.inactives()
+    if players is None:
+        return None
+    return [p for p in plan.active() if p not in players]
+
+
+def grouping_needs(personnel):
+    """{group: players} a personnel grouping puts on the field, or {} for one the book does not count."""
+    text = str(personnel or "").upper()
+    if text == "6OL":
+        return {"OL": 6}
+    if re.fullmatch(r"\d\d", text):
+        backs, ends = int(text[0]), int(text[1])
+        return {"backs": backs, "TE": ends, "WR": 5 - backs - ends}
+    return {}
+
+
+def offense_problems(plan, sheet):
+    """The playbook lock on every word of every call on the sheet, each call's personnel grouping
+    against the players who dress, and every variation naming a player against his dressing."""
+    out = []
     players = [p["name"] for p in roster_record.players(plan.roster)]
-    for call in calls:
-        menus = [cs.menu_key(m) for m in call.get("menus") or ()]
-        place = next((MENU_WORDS[m] for m in menus if m in MENU_WORDS), "Offense, Calls")
+    for call in sheet.get("offensive_call_sheet") or ():
         family = call.get("family")
         if not family:
-            out.append("%s: %r names no concept" % (place, call["name"]))
+            out.append("Offense, %s: it names no concept" % call["name"])
         elif offensive_words.concept(family) is None:
-            out.append("%s: %r is not in the active playbook" % (place, family))
+            out.append("Offense, %s: %r is not in the active playbook" % (call["name"], family))
         for problem in offensive_words.call_errors(dict(call, family=None), players):
-            out.append("%s, %r: %s" % (place, call["name"], problem))
-        for raw, key in zip(call.get("menus") or (), menus):
-            if key not in KNOWN_MENUS:
-                hint = HEADING_HINTS.get(key)
-                out.append("Offense, Calls, %r: %r is not a situation of the call sheet%s" % (
-                    call["name"], raw, "; write %s" % hint if hint else " (%s)" % ", ".join(game_plan.CALL_SITUATIONS)))
-        if str(call.get("type", "")).lower() not in ("run", "pass", "mixed", "any"):
-            out.append("Offense, Calls, %r: the type must be run, pass, mixed or any" % call["name"])
+            out.append("Offense, %s: %s" % (call["name"], problem))
+    dressed = dressing(plan)
+    if dressed is None:
+        return out
+    depth = plan.chart.get("depth") or {}
+    group_of = {p: g for g, order in depth.items() for p in order}
+    counts = {}
+    for p in dressed:
+        g = group_of.get(p)
+        key = "backs" if g in ("RB", "FB") else g
+        counts[key] = counts.get(key, 0) + 1
+    seen = set()
+    for call in sheet.get("offensive_call_sheet") or ():
+        for group, need in grouping_needs(call.get("personnel")).items():
+            if counts.get(group, 0) < need and (call.get("personnel"), group) not in seen:
+                seen.add((call.get("personnel"), group))
+                out.append("Offense, %s: %s personnel needs %d %s and %d dress" % (
+                    call["name"], call["personnel"], need, GROUP_NAMES.get(group, group), counts.get(group, 0)))
+    surnames = {}
+    for name in players:
+        surnames.setdefault(name.split()[-1].lower(), []).append(name)
+    for call in sheet.get("offensive_call_sheet") or ():
+        for tag in call.get("tags") or ():
+            for word in re.findall(r"[A-Za-z'.-]+", tag):
+                named = surnames.get(word.lower()) or []
+                if len(named) == 1 and named[0] not in dressed:
+                    out.append("Offense, %s: the variation %s needs %s, who does not dress; take it off (without %s)"
+                               % (call["name"], tag, named[0], tag))
     return out
 
 
-def sheet_problems(plan):
-    """The call sheet the page would freeze, under the existing validators."""
-    try:
-        sheet = plan.sheet()
-    except ValueError as exc:
-        return ["The page cannot be set: %s" % exc], None
+def sheet_problems(plan, sheet):
+    """The call sheet the page compiles to, under the existing validators."""
     from runtime import defensive_calls, fourth_down, scoring_decisions
-    out = ["Offense, Calls: %s" % e for e in call_families.sheet_errors(sheet.get("offensive_call_sheet") or [])]
+    out = ["Offense: %s" % e for e in call_families.sheet_errors(sheet.get("offensive_call_sheet") or [])]
     names = fourth_down.sheet_call_names(sheet.get("offensive_call_sheet") or ())
     faults = scoring_decisions.sheet_errors(sheet.get("decisions"), names)
     for error in faults:
@@ -620,67 +778,72 @@ def sheet_problems(plan):
         except ValueError as exc:
             missing = [k for k in scoring_decisions.live_kinds() if k not in (sheet.get("decisions") or {})
                        and k in STATUS_WORDS]
-            out += ["%s: the game needs a rule (your rules with Otherwise, or Standing rule)" % STATUS_WORDS[k]
+            out += ["%s: the game needs a rule (Standing rule, Carry Week N or My rules)" % STATUS_WORDS[k]
                     for k in missing] or ["Decision rules: %s" % exc]
     ds = sheet.get("defensive_call_sheet")
     if ds is not None:
         faults = defensive_calls.sheet_errors(ds)
         if not faults:
             faults = defensive_calls.source_errors(ds, plan.root, plan.season)
-        out += ["Defense%s" % defensive_words(e, ds) for e in faults]
-    return out, sheet
+        source = (plan.compiled()[1] or {}).get("defense")
+        out += ["Defense%s" % defensive_words(e, ds, source) for e in faults]
+    return out
 
 
 DEF_KINDS = {"package": "package", "front": "front", "coverage": "coverage", "pressure": "pressure", "tag": "tag",
              "strength": "strength"}
 
 
-def defensive_words(error, sheet=None):
-    """runtime.defensive_calls' sheet and source problems in the page's words (", <where>: <what>")."""
+def defensive_words(error, sheet=None, source=None):
+    """runtime.defensive_calls' sheet and source problems in the page's words (", <where>: <what>");
+    ``source`` (the compile's defensive source map) names each row by its first cell on the page."""
     from runtime import defensive_calls
     rows = {r.get("id"): r for r in (sheet or {}).get("rows") or () if isinstance(r, dict)}
+    plan_rows = {rid: (v.get("text") or "").split(" | ")[0] for rid, v in (source or {}).items()
+                 if isinstance(v, dict) and v.get("text")}
 
     def where(rid):
         row = rows.get(rid) or {}
-        label = game_plan.DEF_MENU_WORDS.get(row.get("menu")) or (row.get("source") or {}).get("text") or rid
-        return ", Calls by situation, %s" % label
+        label = plan_rows.get(rid) or game_plan.DEF_MENU_WORDS.get(row.get("menu")) or \
+            (row.get("source") or {}).get("text") or rid
+        return ", %s" % label
     m = re.match(r"row (\S+): (\w+) '([^']+)' is not a word of the active defensive book", error)
     if m:
         return "%s: '%s' is not a %s in the active defensive playbook" % (where(m[1]), m[3], m[2])
     m = re.match(r"row (\S+): (\w+) '([^']+)' is not on the practiced menu", error)
     if m:
-        return "%s: '%s' was not practiced this week (add it to Practiced this week)" % (where(m[1]), m[3])
+        # Only a sheet carried as frozen keeps its own menu; a page's menu is its own rows' words.
+        return "%s: '%s' is not among the words of the prepared responses carried" % (where(m[1]), m[3])
     m = re.match(r"practiced\.(\w+): '([^']+)' is not a word of the active defensive book", error)
     if m:
-        return ", Practiced this week: '%s' is not one of the active defensive playbook's %s" % (m[2], m[1])
+        return ": '%s' is not one of the active defensive playbook's %s" % (m[2], m[1])
     m = re.match(r"practiced\.(\w+): '([^']+)' is on none of the practiced menu's cited lines", error)
     if m:
-        return ", Practiced this week: '%s' is not written on the menu's lines" % m[2]
+        return ": '%s' is not written on the lines of the week's prepared responses" % m[2]
     if error.startswith("rush_rule.rule must read"):
         return ", Rush rule: write '%s'" % game_plan.RUSH_CHOICE
     if error.startswith("rush_rule"):
         return ", Rush rule: write the rush rule ('%s')" % game_plan.RUSH_CHOICE
     if error.startswith("practiced"):
-        return ", Practiced this week: write the menu practiced this week, one row per list"
+        return ": write the prepared responses in the active defensive playbook's words"
     if error.startswith("caller") or error == "caller must be a nonempty string":
-        return ": write who calls it (Who calls it: name)"
+        return ", Caller: write who calls the defense"
     if error.startswith("rows must be a nonempty list"):
-        return ", Calls by situation: write at least one call"
+        return ": write at least one prepared response"
     m = re.match(r"row (\S+): a situation row needs a menu key", error)
     if m:
         return "%s: a Situation row needs its situation (%s)" % (where(m[1]),
                                                                 ", ".join(game_plan.DEF_MENU_WORDS.values()))
     m = re.match(r"row (\S+): menu (\S+) already labels row (\S+)", error)
     if m:
-        return ", Calls by situation: %s has two Situation rows; one call per situation" % (
+        return ": %s has two rows; one prepared response per situation" % (
             game_plan.DEF_MENU_WORDS.get(m[2], m[2]))
     m = re.match(r"row (\S+): a situation row needs its call", error)
     if m:
         return "%s: the row names no package, front, coverage or pressure" % where(m[1])
     m = re.match(r"row (\S+): a (\w+) row never labels and takes no menu", error)
     if m:
-        return "%s: a %s row has no situation; leave Situation empty" % (where(m[1]),
-                                                                        game_plan.KIND_WORDS.get(m[2], m[2]))
+        return "%s: a %s row has no situation" % (where(m[1]), game_plan.KIND_WORDS.get(m[2], m[2]).lower())
     m = re.match(r"row (\S+): call names no package, front, coverage or pressure", error)
     if m:
         return "%s: the row names no package, front, coverage or pressure" % where(m[1])
@@ -709,15 +872,18 @@ def closed_for_changes(root, season, week):
     paused (nothing that a game reads changes during a pause), or the week's game has been built
     from the applied plan (its inputs or results are on file)."""
     paths = SeasonPaths(season, root)
-    played = list(paths.receipts.glob("week_%02d_*.json" % week)) if paths.receipts.is_dir() else []
+    from runtime import game_weeks
+    name = game_weeks.round_name(week) if game_weeks.is_postseason(paths, week) else "Week %d" % week
+    played = [p for folder in (paths.receipts, paths.postseason_receipts) if folder.is_dir()
+              for p in folder.glob("week_%02d_*.json" % week)]
     if any(JAX in json.loads(p.read_text(encoding="utf-8"))["matchup"] for p in played):
-        return "Week %d has been played; its plan stays as it was set" % week
+        return "%s has been played; its plan stays as it was set" % name
     from scripts.render_career_views import paused_games
     if paused_games(root):
         return "A game is paused; the plan stays as it was set until the game is finished"
     if any(paths.cache(week, kind).exists() for kind in ("inputs", "results")):
-        return ("Week %d: the game has been built from the applied plan; the plan stays as it was set unless the "
-                "staff withdraws that build" % week)
+        return ("%s: the game has been built from the applied plan; the plan stays as it was set unless the "
+                "staff withdraws that build" % name)
     return None
 
 
@@ -725,20 +891,32 @@ def check(root, season, week):
     """(problems, notes, plan): what is missing or invalid, and what is still to come."""
     plan = Plan(root, season, week)
     if plan.game is None:
-        return ["Week %d: Jacksonville has no game this week" % week], [], plan
+        if plan.unset:
+            return ["%s: Jacksonville's game is not set yet: %s" % (plan.label(), plan.unset)], [], plan
+        return ["%s: Jacksonville has no game %s" % (plan.label(), "in this round" if plan.postseason
+                                                     else "this week")], [], plan
     refused = closed_for_changes(plan.root, season, week)
     if refused:
         return [refused], [], plan
     if plan.text is None:
-        return ["Week %d: no Game Plan page (%s)" % (week, plan.rel(plan.pages.plan))], [], plan
+        return ["%s: no Game Plan page (%s)" % (plan.label(), plan.rel(plan.pages.plan))], [], plan
     problems = list(plan.problems)
     problems += required(plan)
-    problems += inactive_problems(plan)
-    problems += depth_problems(plan)
-    problems += offense_problems(plan)
+    sheet = None
     if not problems:
-        found, _ = sheet_problems(plan)
+        # The compile once every line is answered (an unanswered line is named once, above).
+        sheet, _, found = plan.compiled()
         problems += found
+    problems += briefing_problems(plan)
+    problems += caller_problems(plan)
+    listed, moved = inactive_problems(plan), depth_problems(plan)
+    problems += listed + moved
+    if not listed and not moved:
+        problems += role_problems(plan)
+    if sheet is not None:
+        problems += offense_problems(plan, sheet)
+        if not problems:
+            problems += sheet_problems(plan, sheet)
     problems += clean_problems(plan)
     from scripts import render_game_week
     try:
@@ -775,6 +953,28 @@ def check(root, season, week):
     return problems, plan.notes, plan
 
 
+def situation_lists(sheet):
+    """[(situation, [call names])] of a compiled sheet, in the sheet's order: what each situation's
+    list holds, shown back to him when the page is complete."""
+    from runtime import call_situations as cs
+    order = list(game_plan.SITUATION_TEXT)
+    lists = {}
+    for call in sheet.get("offensive_call_sheet") or ():
+        for menu in cs.menu_keys(call.get("menus")):
+            lists.setdefault(menu, []).append(call["name"])
+    words = dict(zip([cs.menu_key(w) for w in game_plan.SITUATION_WORDS], game_plan.SITUATION_WORDS))
+    words.update({"two-point": "two-point tries", "final-play-of-half": "final play of the half",
+                  "opening-sequence": "opening sequence"})
+    return [(words.get(m, m), lists[m]) for m in order if m in lists]
+
+
+def opening_order(sheet):
+    """The compiled opening sequence in order, a return to a call named again: what the sheet sends."""
+    slots = sorted((int(s), c["name"]) for c in sheet.get("offensive_call_sheet") or ()
+                   for s in ([c["opener"]] if c.get("opener") is not None else []) + list(c.get("opener_returns") or ()))
+    return [name for _, name in slots]
+
+
 def place_upload(root, season, week, source):
     """An uploaded .md or .txt file with the Game Plan's headings becomes the week's page; refused,
     with nothing written, for a week whose plan can no longer change."""
@@ -785,9 +985,9 @@ def place_upload(root, season, week, source):
     if refused:
         raise ValueError(refused)
     text = source.read_text(encoding="utf-8")
-    _, problems = game_plan.split(text)
+    problems = game_plan.split(text)[-1]
     missing = [p for p in problems if p.endswith("the heading is missing")]
-    if len(missing) == len(game_plan.SECTIONS):
+    if len(missing) == len(game_plan.HEADINGS):
         raise ValueError("the uploaded file has none of the Game Plan's headings")
     page = week_pages(season, week, root).plan
     page.parent.mkdir(parents=True, exist_ok=True)
@@ -814,11 +1014,16 @@ def main(argv=None):
         for problem in problems:
             print("- " + problem)
     elif plan.changed_since_applied:
-        print("GAME PLAN: COMPLETE, NOT YET SET  Week %d, %d" % (args.week, args.season))
+        print("GAME PLAN: COMPLETE, NOT YET SET  %s, %d" % (plan.label(), args.season))
         print("- The page has changed since it was applied on %s; apply it again to set the game from it"
               % plan.changed_since_applied)
     else:
-        print("GAME PLAN: COMPLETE  Week %d, %d" % (args.week, args.season))
+        print("GAME PLAN: COMPLETE  %s, %d" % (plan.label(), args.season))
+        order = opening_order(plan.sheet())
+        if order:
+            print("  Opening ideas: %s" % "; ".join(order))
+        for situation, names in situation_lists(plan.sheet()):
+            print("  %s: %s" % (situation[:1].upper() + situation[1:], "; ".join(names)))
     for note in notes:
         print("  note: " + note)
     return 1 if problems or plan.changed_since_applied else 0

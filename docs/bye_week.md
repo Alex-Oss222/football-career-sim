@@ -1,6 +1,6 @@
 # Bye Week: three-page implementation and football-realism specification
 
-**Status:** Uploaded by the user on October 20, 2026 and adopted; built in step 5 of the [rebuild plan](rebuild_plan.md). The templates are in [foundation/templates/bye_week/](../foundation/templates/bye_week/) and the worked example is [docs/examples/week_11_bye_illustration.md](examples/week_11_bye_illustration.md). No game, practice, medical decision, transaction or career date is advanced by these templates.
+**Status:** Uploaded by the user on October 20, 2026 and adopted; built in step 5 of the [rebuild plan](rebuild_plan.md). The templates are in [foundation/templates/bye_week/](../foundation/templates/bye_week/) and the worked example is [docs/examples/week_11_bye_illustration.md](examples/week_11_bye_illustration.md). No game, practice, medical decision, transaction or career date is advanced by these templates. Corrected October 20, 2026 after the process check and the user's answers: the other clubs' Week 11 games close while Stone's bye answers are open, and one reissue rule governs every brief.
 
 ## 1. Actual repository findings
 
@@ -14,7 +14,7 @@
 
 ## 2. Scope and timing
 
-The 2014 Jaguars' published schedule: Week 10, Sunday November 9, designated-home Dallas game at Wembley Stadium; Week 11, bye (November 10-16); Week 12, November 23 at Indianapolis. Only the *dates and fixtures* can be populated before Week 10 finishes. The simulated win-loss record, injuries, roster, Week 10 game issues and NFL Week 11 results cannot be guessed from the actual historical Jaguars season. Use branch records at the actual issue date.
+The 2014 Jaguars' published schedule: Week 10, Sunday November 9, designated-home Dallas game at Wembley Stadium; Week 11, bye: no Jacksonville game; the career calendar dates the bye Sunday, November 16, and the league's other Week 11 games run November 13 to 17; Week 12, November 23 at Indianapolis. Only the *dates and fixtures* can be populated before Week 10 finishes. The simulated win-loss record, injuries, roster, Week 10 game issues and NFL Week 11 results cannot be guessed from the actual historical Jaguars season. Use branch records at the actual issue date.
 
 A bye week does **not** include a Jacksonville game, frozen game-day call sheet, inactive decision, snap ledger, game box score, weekly player performance, or pre/postgame media event by default. The other 2014 games continue separately. The team's record remains the same through the bye, even if its division or playoff position changes when other teams play.
 
@@ -24,13 +24,13 @@ A bye week does **not** include a Jacksonville game, frozen game-day call sheet,
 
 The coaching staff supplies a dated, sourced **self-scout** through the last *closed* Jacksonville game. It lists actual evidence, reasonable football interpretation, contradictory evidence, what is unknown, player/medical constraints and realistic decisions needing Stone's input. The staff can disagree. No fabricated coverage breakdown, route error, practice grade, opponent tendency or improvement. A real current-game hypothesis can be given as an open question.
 
-Issue after the Week 10 game closes and before work that needs Stone's approval. Archive issued copies immutable. If a medical evaluation or verified finding materially affects a pending choice, reissue a new dated brief, preserving what Stone had seen earlier. Re-issuing a brief alone changes no career events.
+Issue after the Week 10 game closes and before work that needs Stone's approval. Archive issued copies immutable. Reissue under the one rule for every brief in the [event inserts design](event_inserts.md) (section A, item 6): a new event needing his answer, a dated finding that materially changes a pending choice (a medical evaluation, for example), or an answer due before the next scheduled issue. Preserve what Stone had seen earlier. Re-issuing a brief alone changes no career events.
 
 ### Page B: My_Adjustments.md, head coach-authored
 
 Stone sets priorities and decisions for offense, defense, special teams, lawful work, eligible roles and any durable coaching changes. It must distinguish *keep*, *correct*, *test*, *remove* and *defer*. Saying **No change** is a full legal answer; do not force a correction merely because it's the bye. An unrecorded new promise, different play-caller, medical clearance or acquisition is not a valid assumption.
 
-The text is easy for a human to fill. A parser/compiler extracts **explicit** choices, checks players and active installed playbook, and attaches stable source/provenance. Preserve original text as the authoritative expression of intent. A conditional medical alternative remains conditional until the medical staff acts. Unresolved required decisions stop the bye's final closure; they do not silently default to approval.
+The text is easy for a human to fill. A parser/compiler extracts **explicit** choices, checks players and the active playbook, and attaches stable source/provenance. Preserve original text as the authoritative expression of intent. A conditional medical alternative remains conditional until the medical staff acts. Unresolved required decisions stop the bye's final closure; they do not silently default to approval.
 
 ### Page C: Bye_Week_Report.md, staff-authored after the work
 
@@ -40,7 +40,9 @@ Unlike game week, the result page has **no box-score renderer** for Jacksonville
 
 ## 4. The hard era constraints
 
-- **Player days off (2011 CBA, Article 24 Section 2):** At least four consecutive player days off including Saturday and Sunday, except where a club plays Thursday after the bye and the correct Wednesday-Saturday exception applies. Medically necessary treatment during the break may be required by the medical staff. No required player practice, meeting or disguised team activity during their mandated four-day rest. Staff can study film separately.
+Both CBA rules below are now in the library's [CBA practice, rest and rookie-renegotiation record](../library/2014_cba_practice_rest_and_rookie_renegotiation.md) (the 2011 text, Article 24 §§1 and 2, printed p. 143; both passes done October 20, 2026). In 2014 there is no weekly player day off: Article 35 §2 sets at least four days off a month, bye days not counted (unverified on a second source). Step 5 stores each practice's date and equipment and each player day off as data before any check counts them.
+
+- **Player days off (2011 CBA, Article 24 Section 2):** At least four consecutive player days off including Saturday and Sunday, except where a club plays Thursday after the bye and the correct Wednesday-Saturday exception applies. An injured player may be required to take the medical or rehabilitation treatment the medical staff deems reasonably necessary during the break. No required player practice, meeting or disguised team activity during their mandated four-day rest. Staff can study film separately.
 - **Padded practice (2011 CBA, Article 24 Section 1):** Total 14 regular-season padded practices, 11 allocated to the first eleven weeks and 3 to the final six. Two in one week is allowed only in one week of the first eleven. Helmets plus shoulder pads count. The actual permitted remaining number must be calculated from *closed* practice records; don't assume an available pad day merely because it is the bye.
 - **Medical:** Recovery time alone does not prove a player was cleared or improved. Only a dated authorized medical determination alters the medical record or permitted participation. The staff can adapt nonmedical eligible roles separately.
 - **Authority:** Stone controls coaching priorities, practices within lawful limits and his authorized on-field/depth decisions. Caldwell controls transactions and contracts. Coordinators prepare and recommend in assigned areas. Do not change who calls plays through a passing remark on a report.
@@ -56,11 +58,11 @@ Sources (for research and internal design, **not** a claim these real events hap
 
 ## 5. Execution pathway to implement, not available as-is
 
-1. Register a dedicated `bye_adjustments` decision type and a `bye_close` event category, separate from `week_inputs`/`week_close`/`call_sheet_part`. Scope it only to a scheduled controlled-team bye; event and decision queue records use season, week and one authoritative owner. Do not open game-plan or inactives decisions for the bye.
+1. Use the registry's existing `bye_week` decision (Bye Week Review, My Adjustments, Bye Week Report) and add a `bye_close` block kind, separate from `week_inputs`/`week_close`/`call_sheet_part`. Scope it only to a scheduled controlled-team bye; event and decision queue records use season, week and one authoritative owner. Do not open game-plan or inactives decisions for the bye.
 2. Add a `render_bye_week.py`-style builder with one source owner per page, as with regular game weeks. Load the prior Week 10 game, season stats, current roster, medical record, staff roster, historical league calendar and playable practice budget. Issue the dated brief and blank form; **do not run** a league week when generating them.
 3. Add `check_bye_adjustments.py` and a deterministic compiler/validator: exact headings, legal names and concepts, no unauthorized medical or Caldwell transaction, legal rest dates, valid practice budget, no future knowledge, no duplicate implemented decisions. Output specific football-language errors, not silent auto-fills. No need to force all phases to change.
 4. Add `apply_bye_adjustments.py` (or equivalent) to store an immutable approved decision record and queue resolution; apply *only* immediate authorized assignments or durable changes. Proposed tests and Week 12 ideas stay proposals. The next week's Game Plan must explicitly choose what goes onto its actual executable sheet.
-5. Make the bye's closure process independently verify that Stone's required bye adjustments are settled. This must not manufacture a Jacksonville TeamInput, game receipt, result or box score. The league's other games may have an independent simulation path; clarify whether the workflow is allowed to close them while Stone's bye decisions are still open. In either case, it may not record the bye **as complete** before Stone has answered and lawful scheduled work is resolved.
+5. Make the bye's closure process independently verify that Stone's required bye adjustments are settled. This must not manufacture a Jacksonville TeamInput, game receipt, result or box score. The league's other Week 11 games close while Stone's bye answers are open: his answers hold only the bye's own close and Jacksonville's next game (the user's answer of October 20, 2026). The workflow may not record the bye **as complete** before Stone has answered and lawful scheduled work is resolved.
 6. Write the result *after* actual dated practices, staff study and medical actions. Update roster, medical and depth records only for genuine changed facts. Close the bye event on its actual date. Regenerate dependent views from their canonical owners, no manual shadow standings/league-score copies.
 7. Make Week 12's game-plan opening independent of the bye report's future guesses. Preserve the bye's approved durable instructions, but do not auto-carry any opponent-specific unknown, future inactives, or a hypothesized play's effectiveness.
 8. Test for idempotence, old-brief preservation, unknown-source handling, activity chronology and no accidental changed NFL results.

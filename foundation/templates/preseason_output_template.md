@@ -2,7 +2,7 @@
 
 **Status:** Complete preseason version of the user's original game-output layout. It preserves all eight sections and places the full coaching report beneath each game narrative in section 4.
 **Authority:** Required coach-facing preseason format under Document 7 §§5.1 and 5.2. The existing bulk-turn process and material-decision pauses still govern execution. Apply the [game-output workflow](../../docs/game_output_workflow.md) to authoring and presentation revisions.
-**When used:** A requested individual preseason game report or the consolidated preseason turn. Use the [regular-season output template](regular_season_output_template.md) for regular-season and postseason turns. A camp practice uses the [camp report](training_camp_and_preseason/training_camp_report.md). An unplayed game receives preparation only, never filled results or invented performances.
+**When used:** A requested individual preseason game report or the consolidated preseason turn. Regular-season and postseason games use the three [game-week templates](game_week/) from 2014 Week 6, the [Game Report](game_week/game_report_template.md) for the result (2014 Weeks 1 to 5 kept the [regular-season output](regular_season_output_template.md) as written). A camp practice uses the [camp report](training_camp_and_preseason/training_camp_report.md). An unplayed game receives preparation only, never filled results or invented performances.
 
 ## Storage and bulk-report rule
 

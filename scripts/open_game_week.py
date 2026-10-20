@@ -20,7 +20,9 @@ schedule and his standing instructions:
   on; his Game Plan may answer it with "Standing rule".
 
 The week is the next Jacksonville game not yet closed, unless --week names
-another; a bye week gets none, and nothing is opened twice (an item of the
+another; after the regular season it is the next playoff game the bracket has
+set (runtime/game_weeks.py), named for its round ("Wild Card game plan for
+Pittsburgh"); a bye week gets none, and nothing is opened twice (an item of the
 class for the week, open or settled, stays as it is). Each item is raised by
 the workflow on the master date, citing the last game's event when its
 result page carries one. Nothing is opened while a game is paused. Writing
@@ -62,16 +64,18 @@ def _held(item, season, week):
 def last_game_event(root, wk):
     """(event id, result page) of Jacksonville's last closed game, from its result page's event line."""
     from runtime.events import load_events
-    games = wk.club_games(JAX)
+    from runtime import game_weeks
+    games = wk.club_games(JAX) + wk.post_receipts      # a playoff game is the last game after the season
     if not games:
         return None, None
-    last = games[-1]
-    page = wk.paths.game_report(int(last["week"]))
+    last = max(games, key=lambda r: int(r["week"]))
+    postseason = game_weeks.is_postseason(wk.paths, last["week"])
+    page = wk.paths.game_report(int(last["week"]), postseason)
     if not page.is_file():
         return None, None
     rel = page.relative_to(wk.root).as_posix()
-    played = next((g["date"] for g in wk.paths.regular_games()
-                   if g["week"] == int(last["week"]) and JAX in (g["away"], g["home"])), None)
+    played = next((g["date"] for g in game_weeks.club_games(wk.paths, JAX) if g["week"] == int(last["week"])),
+                  None)
     owned = [e for e in load_events(wk.root).values() if e.owner == rel and e.data.get("kind", "football") == "football"]
     found = [e for e in owned if e.data["date"] == played] or owned
     return (found[-1].id if found else None), rel
@@ -117,22 +121,23 @@ def items_for(root, wk):
     event, source = last_game_event(root, wk)
     raised = {"date": wk.master.isoformat(), "by": "workflow", **({"event": event} if event else {})}
     sources = [{"path": source}] if source else []
-    pages = week_pages(season, week, wk.root)
-    plan = {"id": "%d-w%02d-game-plan" % (season, week), "title": "Week %d game plan for %s" % (week, place),
+    pages = week_pages(season, week, wk.root, postseason=wk.postseason)
+    name = wk.label()       # "Week 6", or a playoff game's round ("Wild Card")
+    plan = {"id": "%d-w%02d-game-plan" % (season, week), "title": "%s game plan for %s" % (name, place),
             "class": PLAN, "owner": holder, "authority_rows": list(decision_queue.CLASSES[PLAN].rows),
-            "question": "Stone's Week %d plan for %s, from which the call sheet is frozen before the game."
-                        % (week, place),
+            "question": "Stone's %s plan for %s, from which the call sheet is frozen before the game."
+                        % (name, place),
             "raised": raised, "status": "OPEN", "waits_on": [],
-            "deadline": {"date": game["date"], "label": "before the Week %d call sheet is frozen and the Week %d "
-                         "inputs are built; kickoff %s, %s" % (week, week, _day(when), kick), "before": block},
+            "deadline": {"date": game["date"], "label": "before the %s call sheet is frozen and the %s "
+                         "inputs are built; kickoff %s, %s" % (name, name, _day(when), kick), "before": block},
             "blocks": [block], "fallback": None, "can_continue": None,
             "record": {"path": pages.readme.relative_to(wk.root).as_posix()}, "sources": sources,
             "resolution": None}
-    inactives = {"id": "%d-w%02d-inactives" % (season, week), "title": "Week %d inactives" % week,
+    inactives = {"id": "%d-w%02d-inactives" % (season, week), "title": "%s inactives" % name,
                  "class": INACTIVES, "owner": holder, "authority_rows": list(decision_queue.CLASSES[INACTIVES].rows),
-                 "question": "Stone's Week %d inactives for %s." % (week, place),
+                 "question": "Stone's %s inactives for %s." % (name, place),
                  "raised": dict(raised), "status": "OPEN", "waits_on": medical_waits(wk),
-                 "deadline": {"date": game["date"], "label": "before the Week %d inputs are built" % week,
+                 "deadline": {"date": game["date"], "label": "before the %s inputs are built" % name,
                               "before": dict(block)},
                  "blocks": [dict(block)]}
     covering = [i for i in current_job.instructions(wk.job) if INACTIVES in (i.get("closes") or ())]

@@ -18,8 +18,14 @@ columns each receipt field supports and the ones left out. From 2014 Week 6
 the result page is the Game Report (Game_Report.md, runtime.seasons
 .SeasonPaths.game_report): its block is the same gamebook with the sacks
 column headed SCK/YDS, so the page passes the clean-page check; a weekly
-output.md keeps SCK-YDS byte for byte. `--line-score` prints the template's
-Section 3 line score for a 2014-onward receipt.
+output.md keeps SCK-YDS byte for byte. A weekly output.md (2014 Weeks 1 to 5)
+carries its block in section 3 as written; a Game Report carries it last, under
+"Full game statistics" (runtime/game_report.py checks that it is there and last).
+The Game Report template's markers name no game yet ({{EVENT_ID}} and
+{{TEAM_NAME}}): `--write` on a Game Report names them from the week's closed
+Jacksonville game (runtime.game_report.place_markers) before it fills the block,
+and refuses while the game has not closed. `--line-score` prints the line score
+(the Game Report's "Final score by quarter" table) for a 2014-onward receipt.
 """
 from __future__ import annotations
 
@@ -41,11 +47,9 @@ from runtime.stat_tables import (
 
 from runtime.seasons import SeasonPaths  # noqa: E402
 
+from runtime.game_report import BLOCK, is_placeholder  # noqa: E402
+
 RECEIPTS = SeasonPaths(2013, ROOT).receipts
-BLOCK = re.compile(
-    r"(<!-- box-score event=(?P<event>[^ ]+) team=(?P<team>.+?) -->\n)(?P<body>.*?)(<!-- /box-score -->)",
-    re.S,
-)
 UNATTRIBUTED = "Team / unattributed"
 
 BOX_PASSING = (
@@ -241,18 +245,41 @@ def is_report(path):
 
 
 def fill(text, directory=RECEIPTS, season=2013, report=False):
-    """Return text with every marked box-score block regenerated (``report``: a Game Report)."""
+    """Return text with every marked box-score block regenerated (``report``: a Game Report). A block
+    whose markers name no game yet (the Game Report template's) is left for ``named``."""
     def replace(match):
+        if is_placeholder(match):
+            return match.group(0)
         body = render(load_receipt(match.group("event"), directory), match.group("team"), season, report)
         return match.group(1) + body + "\n" + match.group(5)
     return BLOCK.sub(replace, text)
 
 
+def named(path, season, root=ROOT):
+    """A Game Report's text with the template's unnamed markers naming the week's closed Jacksonville
+    game (runtime.game_report.place_markers); unchanged when they name it already or the page is no
+    Game Report. ValueError while the game has not closed."""
+    from runtime import game_report
+    path = Path(path).resolve()
+    text = path.read_text(encoding="utf-8")
+    if not is_report(path) or not any(is_placeholder(m) for m in BLOCK.finditer(text)):
+        return text
+    paths = SeasonPaths(season, root)
+    found = [(g, r) for g, page, r in game_report.report_games(paths) if page.resolve() == path]
+    if not found or found[0][1] is None:
+        raise ValueError("%s: its game has not been played; the box score is filled once it has closed"
+                         % path.relative_to(Path(root).resolve()).as_posix())
+    return game_report.place_markers(text, found[0][1]["event_id"], game_report.JAX)
+
+
 def stale_blocks(path, directory=RECEIPTS, season=2013):
-    """Event ids whose marked box score no longer matches its receipt."""
+    """Event ids whose marked box score no longer matches its receipt (a block naming no game yet is
+    runtime/game_report.py's to report)."""
     text = Path(path).read_text(encoding="utf-8")
     stale = []
     for match in BLOCK.finditer(text):
+        if is_placeholder(match):
+            continue
         expected = render(load_receipt(match.group("event"), directory), match.group("team"), season,
                           is_report(path)) + "\n"
         if match.group("body") != expected:
@@ -267,7 +294,8 @@ def main():
     parser.add_argument("--write", metavar="OUTPUT_MD", help="Fill the marked box-score blocks in this file")
     parser.add_argument("--season", type=int, required=True)
     parser.add_argument("--line-score", action="store_true",
-                        help="Print the line score (2014 onward) instead of the box score")
+                        help="Print the line score (2014 onward; a Game Report's Final score by quarter) "
+                             "instead of the box score")
     parser.add_argument("--preseason", action="store_true",
                         help="Read the season's preseason receipts (preseason_games/statistics) instead")
     args = parser.parse_args()
@@ -278,7 +306,10 @@ def main():
         path = Path(args.write).resolve()
         if not path.is_relative_to(paths.career):
             parser.error('--write must belong to the requested career season')
-        text = path.read_text(encoding="utf-8")
+        try:
+            text = named(path, args.season)
+        except ValueError as exc:
+            parser.error(str(exc))
         for match in BLOCK.finditer(text):
             require_receipt_season([load_receipt(match.group('event'), receipts)], args.season)
         path.write_text(fill(text, receipts, args.season, is_report(path)), encoding="utf-8")

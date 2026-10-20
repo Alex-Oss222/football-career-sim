@@ -50,7 +50,7 @@ These are demonstration formats, **not new events, offers, transactions or facts
 
 ### COMING UP: Assistant contract review
 
-**Subject:** [One of the nine assistants whose contracts end after the 2014 season, as recorded in Jacksonville's staff register].
+**Subject:** [One of the nine assistants whose contracts end after the 2014 season, as their [coach records](../../data/people/coaches/) show].
 
 **The issue:** [Verified expiration or unresolved precise expiry date], current football assignment, evaluation and remaining staff budget.
 
@@ -66,7 +66,7 @@ These are demonstration formats, **not new events, offers, transactions or facts
 
 **Employment status:** [Dismissed effective date / contract concluded]. This is a club action or a contractual fact, not a decision Stone can veto.
 
-**Terms that still apply:** [Exact guarantees, offset, consent and other signed contractual rights, if sourced].
+**Terms that still apply:** [Exact guarantees and other signed contractual rights, if sourced. For Stone, the end date, offset and dismissal terms are reconstructions completed October 19, 2026, and the page says so.]
 
 **Your choice:** What jobs and clubs should the agent pursue? Under what terms will Stone interview, counter, or decline?
 
@@ -78,9 +78,9 @@ These are demonstration formats, **not new events, offers, transactions or facts
 
 **Known:** [Actual date, requesting club, position, employment and playoff status].
 
-**Rule check:** In 2014, an actual head-coach interview and a lateral assistant/coordinator request do not have the same protection. Use the 2014 rule, not a modern one.
+**Rule check:** In 2014 only a head-coach interview was protected; a position coach's coordinator interview and a same-title move could be refused. Use the 2014 rule, not the 2020 one.
 
-**Standing answer:** If Stone's current instruction already settles the club response, record the request and the resulting club decision in FYI. Ask Stone only if this concrete request falls outside that standing rule or his judgment is newly required.
+**Standing answer:** Jacksonville's standing instruction grants head-coach and position-coach-to-coordinator interviews and refuses same-title moves, so the request and Jacksonville's answer appear under FOR YOUR INFORMATION. Ask Stone only if a concrete request falls outside that rule, for example a title change the rule does not name.
 
 ## Example 7: Multiple independent results inside one Week 8 briefing
 

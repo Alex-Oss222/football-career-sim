@@ -5,9 +5,9 @@
 | Field | Canonical entry |
 |---|---|
 | Document status | Active established coach/authority canon. Known assignments are reconciled; unresolved entries remain unknown and game readiness is separately gated. |
-| Document version | Rebuild draft 2.9 |
-| Supersedes | Rebuild draft 2.8; the Week 4 correction replaces Crennel as the ordinary defensive caller, and the current values of the employment, reporting, delegation, authority and standing-instruction fields move to the current job record and the decision queue, so that each fact has one owner. |
-| Last Document 3 content-changing update | 2026-10-18, [Week 4 correction](../career/2014/Regular_Season/Games/Week_04/output.md#correction-entered-october-18-2026-1232-utc): Stone calls the defense from September 28, 2014; the employer, title, start date, reporting line, delegation, final-authority values and standing instructions now point to the [current job record](../state/current_job.json), and unresolved decisions to the [decision queue](../state/decision_queue.json). This document keeps the row taxonomy and the precedence rules. |
+| Document version | Rebuild draft 2.10 |
+| Supersedes | Rebuild draft 2.9; the user's October 20, 2026 decision adds row 1a, so that another club's request to contact or interview the head coach has one final authority. Draft 2.9 superseded draft 2.8: the Week 4 correction replaces Crennel as the ordinary defensive caller, and the current values of the employment, reporting, delegation, authority and standing-instruction fields move to the current job record and the decision queue, so that each fact has one owner. |
+| Last Document 3 content-changing update | 2026-10-20, the user's decision ("no for 1: its Khan", recorded in the [rebuild plan's change log](../docs/rebuild_plan.md#change-log)): row 1a, Shad Khan alone decides another club's request to contact or interview the head coach. Before it, 2026-10-18, [Week 4 correction](../career/2014/Regular_Season/Games/Week_04/output.md#correction-entered-october-18-2026-1232-utc): Stone calls the defense from September 28, 2014; the employer, title, start date, reporting line, delegation, final-authority values and standing instructions now point to the [current job record](../state/current_job.json), and unresolved decisions to the [decision queue](../state/decision_queue.json). This document keeps the row taxonomy and the precedence rules. |
 | Canonical as-of date | October 5, 2014 checkpoint, administrative correction in the [Week 4 correction](../career/2014/Regular_Season/Games/Week_04/output.md#correction-entered-october-18-2026-1232-utc) and the pointer conversion; current personnel changes belong in Document 4 |
 | Competition, season, and team | NFL, 2013, Jacksonville Jaguars; Document 2 |
 | Simulation mode | Counterfactual Stone career; Document 2 active edition |
@@ -245,6 +245,7 @@ Complete every applicable row before initialization. "Final authority" means the
 | No. | Decision domain | Final authority, the head coach's part, consultation, limits and provenance |
 |---:|---|---|
 | 1 | Hire, retain, suspend, or fire the head coach | [job record](../state/current_job.json) row 1 |
+| 1a | Permission for another club to contact or interview the head coach while he is under contract, including any compensation asked for it | [job record](../state/current_job.json) row 1a |
 | 2 | Hire, retain, assign, suspend, or fire assistant coaches | [job record](../state/current_job.json) row 2 |
 | 3 | Final player-acquisition and target-selection decisions | [job record](../state/current_job.json) row 3 |
 | 3a | Franchise-level quarterback decisions specifically: using the first-round pick on a QB, trading premium draft capital for one, a major multiyear financial commitment to one as the intended starter, or a major disposition of the starting QB | [job record](../state/current_job.json) row 3a |
@@ -514,6 +515,7 @@ This is a generated lookup index, not a revision log and not an independent sour
 | Season-ledger Entry 77; effective February 2, 2014, reconciling the January 12 interim assignment | Document control, Section 4, row 14 and Section 6.1 | Special-teams post vacant; Stone is interim operator under existing final authority | Current staff, Document 4 and Document 5 source manifest reconciled |
 | Season-ledger Entry 84; effective February 11, 2014 (career clock February 2, 2014) | Document control, Section 4, row 14 and Section 6.1 | Mike Westhoff is special-teams coordinator; Stone's interim direction ended February 11 | Current staff, Document 4 and Document 5 source manifest reconciled |
 | [Week 4 correction entered October 18, 2026](../career/2014/Regular_Season/Games/Week_04/output.md#correction-entered-october-18-2026-1232-utc); effective September 28, 2014 (Stone's instruction of September 21) | Document control, Section 4, row 13 and Section 6.1 | Stone calls the defense; Crennel prepares and transmits | Job record, staff register and Documents 4 and 5 carry the replacement; Document 5 source manifest reconciled |
+| [The user's decision of October 20, 2026](../docs/rebuild_plan.md#change-log); effective October 5, 2014, the master date when it was given | Document control and Section 5, row 1a | Shad Khan alone decides another club's request to contact or interview the head coach; Stone's standing answer is that he is not open to job offers | Job record row 1a and its standing instructions; Document 5 source manifest reconciled |
 
 ### 11.4 Mandatory audit triggers
 

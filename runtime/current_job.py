@@ -24,7 +24,7 @@ STATUSES = ("EMPLOYED", "BETWEEN_JOBS")
 ROLES = ("head_coach", "interim_head_coach", "coordinator", "position_coach", "assistant")
 STONE_ACTIONS = ("decides", "decides_part", "recommends", "consulted", "responds", "informs",
                  "none", "unset", "not_applicable")
-AUTHORITY_ROWS = ("1", "2", "3", "3a") + tuple(str(n) for n in range(4, 23))
+AUTHORITY_ROWS = ("1", "1a", "2", "3", "3a") + tuple(str(n) for n in range(4, 23))
 PHASES = ("offense", "defense", "special_teams")
 INSTRUCTION_STATUSES = ("IN_FORCE", "RECORDED", "SUPERSEDED", "WITHDRAWN")
 DESK_FOR_ROLE = {"head_coach": "head_coach", "interim_head_coach": "head_coach",
@@ -39,9 +39,14 @@ ROLE_SECTIONS = {   # the desk's sections for each role; only BUILT_DESKS render
 MECHANISMS = ("live", "sheet_rule", "not_live", "not_modelled")
 # The subjects a standing instruction or a decision-queue item may name: the
 # calling arrangement, the inactives and each retained game decision by its
-# delegation.game_management id, so the vocabularies cannot drift apart.
+# delegation.game_management id, so the vocabularies cannot drift apart, and
+# the career answers (CAREER_SUBJECTS): Jacksonville's permission for its
+# assistants to interview elsewhere, and the holder's own answer to another
+# club's approach. A game-management decision takes only a game subject.
 SUBJECTS = ("play_calling", "inactives", "fourth_down", "two_point", "kickoff", "timeouts_and_clock",
             "replay_challenge")
+CAREER_SUBJECTS = ("assistant_interview_permission", "outside_job_approach")
+ITEM_SUBJECTS = SUBJECTS + CAREER_SUBJECTS
 REQUEST_STATUSES = ("OPEN", "MET", "WITHDRAWN")
 RECORD_KEYS = frozenset({"path", "anchor", "pointer"})
 # Keys holding ISO dates. A past-only key may never pass the master date; a
@@ -491,8 +496,8 @@ def _validation_errors(job, root, mapping, events, master, prefix):
         bad = [c for c in item.get("closes") or () if c not in CLASSES]
         if bad or not isinstance(item.get("closes"), list):
             errors.append(label + "closes must list decision classes (%s)" % ", ".join(map(str, bad)))
-        if item.get("subject") is not None and item["subject"] not in SUBJECTS:
-            errors.append(label + "subject must be one of %s" % ", ".join(SUBJECTS))
+        if item.get("subject") is not None and item["subject"] not in ITEM_SUBJECTS:
+            errors.append(label + "subject must be one of %s" % ", ".join(ITEM_SUBJECTS))
         if item.get("open_item") is not None:
             if queue_ids is None:
                 from . import decision_queue

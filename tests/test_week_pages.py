@@ -6,8 +6,8 @@ with only its sacks header changed, and it passes the clean-page check; the
 box-score markers are the only markup the check lets through beside the
 event-record line; the annual record refuses an unclean new line; and the
 Game Report's path comes from the folder map. The synthetic Week 6 close is
-tests/test_week_close_pages.py. Also here: the Game Report template's own
-headings render clean, every injury severity reads in football words, the
+tests/test_week_close_pages.py, and the Game Report template's layout and checks
+are tests/test_game_report.py. Also here: every injury severity reads in football words, the
 shared summary words (runtime/season_summary.py), and every built page is
 current by the one rebuild command (scripts/rebuild_pages.py --check).
 """
@@ -177,41 +177,6 @@ class WeekPagesTests(unittest.TestCase):
                                 "career/2014/Team_Operations/Team/Roster/roster.md",
                                 "career/2014/Team_Operations/Medical/current_injury_report.md")
         self.assertEqual(out, "([record](incidents/x.md#a))")
-
-
-TEMPLATE = ROOT / "foundation/templates/regular_season_output_template.md"
-# Template guidance headings, never written on a Game Report.
-GUIDANCE = ("Rules for every turn", "Prose standard", "Runner mechanics", "Header", "Preparation evidence",
-            "Game evidence", "Section layout")
-
-
-def template_skeleton(week=FIRST):
-    """A Game Report holding the Game Report template's own headings and fixed labels, in its order,
-    placeholders filled with their own words (tests/test_week_close_pages.py writes its report so)."""
-    text = TEMPLATE.read_text(encoding="utf-8")
-    lines = []
-    for line in text.split("\n## Coach info\n", 1)[1].splitlines():
-        heading = re.match(r"^(#{2,4}) (.+)$", line)
-        label = re.match(r"^\*\*([^*\\]+)\*\*", line)
-        if heading and heading.group(2) not in GUIDANCE:
-            lines += [heading.group(1) + " " + heading.group(2), ""]
-        elif label and not heading:
-            lines += ["**%s**" % label.group(1), ""]
-    page = "\n".join(["# Week %d Game Report" % week, "", "## Coach info", ""] + lines)
-    return re.sub(r"(?:&#91;|\\\[)([^\]\\]*)\\?\]", r"\1", page)
-
-
-class GameReportTemplateTests(unittest.TestCase):
-    def test_the_template_headings_render_clean(self):
-        rel = SeasonPaths(SEASON, ROOT).game_report(FIRST).relative_to(ROOT).as_posix()
-        page = template_skeleton()
-        for heading in ("## Coach info", "## 3. Game", "### Game review", "## 6. Weekly personnel and availability",
-                        "## 7. Week closure"):
-            self.assertIn(heading + "\n", page)
-        self.assertEqual(clean_pages.page_errors(rel, page), [])
-        # The check is live on this page: the heading the earlier reports carry would fail it.
-        self.assertTrue(clean_pages.page_errors(rel, page.replace(
-            "## 6. Weekly personnel and availability\n", "## 6. Weekly personnel and availability snapshot\n")))
 
 
 class SharedSummaryTests(unittest.TestCase):

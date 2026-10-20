@@ -4,7 +4,7 @@ Prepared September 30, 2026 and revised October 1, 2026 at the user's request. T
 
 The [October 1 preseason-game follow-up](preseason_game_reports.md) adds research on actual coaches' reviews, a deeper game/team/player format and a [worked extract from the archived 2013 Miami game](examples/preseason_game_review_2013_miami.md). It explains how the report covers starters, reserves, communication, strengths, failures and the next coaching work.
 
-The user's later layout correction places that report inside the complete game-output format, directly below the game narrative. The [regular-season template](../foundation/templates/regular_season_output_template.md) retains unnumbered Coach info and seven sections, with Game in section 3. The [preseason template](../foundation/templates/preseason_output_template.md) retains eight sections, with Game in section 4. The consolidated preseason review supplies section 6 of the preseason output, not an alternative layout.
+The user's later layout correction places that report inside the complete game-output format, directly below the game narrative. The [regular-season template](../foundation/templates/regular_season_output_template.md) of 2014 Weeks 1 to 5 retains unnumbered Coach info and seven sections, with Game in section 3; from 2014 Week 6 a played game's result is the [Game Report](../foundation/templates/game_week/game_report_template.md), with the full statistics last. The [preseason template](../foundation/templates/preseason_output_template.md) retains eight sections, with Game in section 4. The consolidated preseason review supplies section 6 of the preseason output, not an alternative layout.
 
 ## What changes in the report
 

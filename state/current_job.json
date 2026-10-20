@@ -199,6 +199,25 @@
       "evaluated_on": null
      },
      {
+      "row": "1a",
+      "domain": "Permission for another club to contact or interview the head coach while he is under contract, including any compensation asked for it",
+      "final": [
+       "khan"
+      ],
+      "stone_action": "responds",
+      "final_text": "Owner Shad Khan alone: he grants, refuses, or asks for compensation under the head-coach exception",
+      "permitted": "Stone answers for himself whether he would talk; his standing answer is that he is not open to job offers. He does not decide the club's permission.",
+      "consultation": "[UNSET]",
+      "limits": "League rules: no club may ask during Jacksonville's season, postseason included; in the offseason a move needs the club's consent, which it may refuse; a head coach is the one coach for whom draft choices or cash may be exchanged (library/2014_coaching_hiring_and_anti_tampering_rules.md H1 to H3)",
+      "provenance": "The user's decision, October 20, 2026 (\"no for 1: its Khan\"), recorded in the rebuild plan's change log (docs/rebuild_plan.md)",
+      "scope": null,
+      "inference": false,
+      "delegated": null,
+      "sees": null,
+      "overruled_by": null,
+      "evaluated_on": null
+     },
+     {
       "row": "2",
       "domain": "Hire, retain, assign, suspend, or fire assistant coaches",
       "final": [
@@ -918,6 +937,42 @@
      "record": {
       "path": "career/2014/Regular_Season/Games/Week_05/output.md",
       "anchor": "addendum-october-18-2026-the-fourth-down-rule-stands-for-every-game"
+     }
+    },
+    {
+     "id": "stone-not-open-to-job-offers",
+     "subject": "outside_job_approach",
+     "status": "IN_FORCE",
+     "closes": [
+      "outside_job_approach"
+     ],
+     "given": {
+      "user_date": "2026-10-20",
+      "in_world": "2014-10-05",
+      "note": "the user's answer \"2 is no\" to whether Stone is open to job offers"
+     },
+     "summary": "Stone is not open to job offers or interviews with other clubs; another club's request and Shad Khan's answer reach him as news",
+     "record": {
+      "path": "docs/rebuild_plan.md",
+      "anchor": "change-log"
+     }
+    },
+    {
+     "id": "jacksonville-assistant-interview-permission",
+     "subject": "assistant_interview_permission",
+     "status": "IN_FORCE",
+     "closes": [
+      "staff_permission"
+     ],
+     "given": {
+      "user_date": "2026-10-20",
+      "in_world": "2014-10-05",
+      "note": "the user's rule for assistants, matching the January 2014 default"
+     },
+     "summary": "Grant an assistant's head-coach interview and a position coach's coordinator interview; refuse a move to the same title elsewhere; alike whatever the asking club, within the league's rules for the season",
+     "record": {
+      "path": "docs/rebuild_plan.md",
+      "anchor": "change-log"
      }
     }
    ]

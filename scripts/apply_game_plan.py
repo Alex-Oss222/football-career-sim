@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Apply Stone's checked Game Plan (rebuild step 4).
+"""Apply Stone's checked Game Plan (game week version 2).
 
   python scripts/apply_game_plan.py WEEK --season YEAR [--file PATH] [--root PATH]
 
 Runs scripts/check_game_plan.py first and refuses (exit 1) until the page is
-complete. Then it converts the page into exactly the records the game path
-already reads, and the record of the apply:
+complete. Then it compiles the page (runtime/game_plan.compile_sheet) into
+exactly the records the game path already reads, and the record of the apply:
 
-- the frozen call sheet, ``SeasonPaths(YEAR).call_sheet(WEEK)``, written as
+- the frozen call sheet, ``SeasonPaths(YEAR).call_sheet(WEEK)`` (a playoff
+  round's in the postseason folder's data twin, ``postseason=True``), written as
   every frozen sheet is (indent 1, a final newline), valid under the existing
   validators; build_week_inputs.py reads it unchanged;
 - the game depth chart's ``game_day_inactives`` and any order or role change,
@@ -21,14 +22,20 @@ already reads, and the record of the apply:
   inactives, Stone's), marked RESOLVED by the user with the page as their
   record. Nothing is applied while either item still waits on an exam dated
   that day or later (its ``waits_on``): the page is complete, and it is set
-  once the exams are held, when the check reads their results (``waiting``);
+  once the exams are held, when the check reads their results (``waiting``).
+  Nothing waits on practice: any call of the active book may be named,
+  whether or not the week's practice covered it;
 - the week's inactives record beside the call sheet (``inactives.json``,
   runtime/decisions.WeekPages.inactives), the permanent owner of the list
-  ("Same as Week N" reads it; the chart holds only the latest list);
+  ("Carry Week N" reads it; the chart holds only the latest list);
 - the applied plan record (``applied_plan.json``, WeekPages.applied): the day
   it was applied, the digest of the page and of the call sheet as frozen, its
-  depth changes and the chart before them, and the event of the apply, whose
-  event line the week index carries (the annual record lists it).
+  depth changes and the chart before them, the source map from every emitted
+  call, defensive row and decision to the page line or the carried frozen
+  item it came from, his reasons and other author intent with their page
+  lines and the day they were known (intent never reaches the call sheet),
+  and the event of the apply, whose event line the week index carries (the
+  annual record lists it).
 
 Applying again (a revised page, before the game is built) first undoes the
 earlier apply's depth changes, replaces its update-log entry and its record,
@@ -40,7 +47,7 @@ Week Briefing is not reissued for the plan's own settlement. Nothing is
 drawn, and the clock does not move.
 
 Repository validation runs ``validation_errors``: every applied week's page
-and call sheet as the record froze them, the open week's game-plan item
+and call sheet as the record froze them, and the open week's game-plan item
 present once its briefing is issued.
 """
 from __future__ import annotations
@@ -62,6 +69,11 @@ from scripts.check_game_plan import (JAX, ROLE_WORDS, Plan, changed_chart, check
 
 PLAN_CLASSES = ("weekly_game_plan", "game_day_inactives")
 LOG_EVENT = "Week %d: Stone's Game Plan"
+
+
+def log_event(plan):
+    """The update-log event of the week's apply: "Week 6: Stone's Game Plan", or the playoff round's."""
+    return "%s: Stone's Game Plan" % plan.label() if plan.postseason else LOG_EVENT % plan.week
 
 
 def long_date(value):
@@ -95,9 +107,10 @@ def inactive_note(plan, players):
     how = (" by his standing rule" + (", with %d he named" % named if named else "")
            if isinstance(value, dict) and value.get("standing") else
            " as in Week %d" % value["same_as"] if isinstance(value, dict) and "same_as" in value else "")
-    return ("%d of the %d are inactive for Week %d %s (%d dress), set by Stone on %s on his Week %d Game Plan%s: %s."
-            % (len(players), len(plan.active()), plan.week, opponent_words(plan), len(plan.active()) - len(players),
-               long_date(plan.master), plan.week, how, listed))
+    game = "the %s game" % plan.label() if plan.postseason else plan.label()
+    return ("%d of the %d are inactive for %s %s (%d dress), set by Stone on %s on his %s Game Plan%s: %s."
+            % (len(players), len(plan.active()), game, opponent_words(plan), len(plan.active()) - len(players),
+               long_date(plan.master), plan.label(), how, listed))
 
 
 def _restore(chart, earlier):
@@ -172,14 +185,16 @@ def event_for(plan, sheet, players, changes):
             how = "his standing rule"
         elif isinstance(entry, dict) and "same_as" in entry:
             how = "as in Week %d" % entry["same_as"]
+        elif isinstance(entry, dict) and entry.get("no_change"):
+            how = "unchanged"
         else:
             how = "his own rules"
         if how:
             parts.append("%s %s" % (words, how))
     defense = sheet.get("defensive_call_sheet")
-    summary = ("Stone set his Week %d Game Plan %s: the call sheet frozen with %d offensive calls%s, %s; the %d "
+    summary = ("Stone set his %s Game Plan %s: the call sheet frozen with %d offensive calls%s, %s; the %d "
                "inactives %s; %s." % (
-                   plan.week, opponent_words(plan), len(sheet.get("offensive_call_sheet") or ()),
+                   plan.label(), opponent_words(plan), len(sheet.get("offensive_call_sheet") or ()),
                    " and %d defensive calls" % len(defense["rows"]) if defense else "", ", ".join(parts),
                    len(players), ", ".join(players), "; ".join(changes) if changes else "no depth chart change"))
     event = {"id": "%s-week-%d-game-plan-set" % (plan.master.isoformat(), plan.week), "date": plan.master.isoformat(),
@@ -196,7 +211,7 @@ def apply_records(plan, sheet, players, resolve_queue=True):
     """Write the call sheet, the chart's inactives and depth changes with their log entry, the applied
     plan record, and settle the queue items; returns the paths written."""
     written = []
-    path = plan.paths.call_sheet(plan.week)
+    path = plan.pages.call_sheet        # a playoff game's in the postseason folder's data twin
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes(game_plan.sheet_bytes(sheet))
     written.append(path)
@@ -221,24 +236,24 @@ def apply_records(plan, sheet, players, resolve_queue=True):
                          if d.get("game_plan_week") != plan.week]
             if cleared:
                 decisions.append({"date": long_date(plan.master), "game_plan_week": plan.week,
-                                  "rule": "Stone's Week %d Game Plan changed the order; these players' earlier labels "
-                                          "no longer describe their places." % plan.week,
-                                  "decisions": [{"player": p, "role": None, "note": "place changed on the Week %d "
-                                                 "Game Plan" % plan.week} for p in cleared]})
+                                  "rule": "Stone's %s Game Plan changed the order; these players' earlier labels "
+                                          "no longer describe their places." % plan.label(),
+                                  "decisions": [{"player": p, "role": None, "note": "place changed on the %s "
+                                                 "Game Plan" % plan.label()} for p in cleared]})
             if decisions or "stone_role_decisions" in chart:
                 chart["stone_role_decisions"] = decisions
         write_like(chart_path, chart)
         written.append(chart_path)
     log_path = plan.paths.record("team/depth_chart/update_log.json")
     log = json.loads(log_path.read_text(encoding="utf-8"))
-    change = "Week %d inactives: %s." % (plan.week, ", ".join(players)) if players is not None else ""
+    change = "%s inactives: %s." % (plan.label(), ", ".join(players)) if players is not None else ""
     shown = changes + ["the earlier label of %s cleared" % p for p in cleared]
     change += (" " + "; ".join(shown) + ".") if shown else " No order or role change."
-    log["entries"] = [e for e in log["entries"] if not (e.get("event") == LOG_EVENT % plan.week and any(
+    log["entries"] = [e for e in log["entries"] if not (e.get("event") == log_event(plan) and any(
         (s or {}).get("page") == page for s in e.get("sources") or ()))]
     log["entries"].append({"date": long_date(plan.master), "recorded": plan.master.isoformat(),
-                           "event": LOG_EVENT % plan.week, "change": change.strip(),
-                           "sources": [{"label": "Week %d Game Plan" % plan.week, "page": page}]})
+                           "event": log_event(plan), "change": change.strip(),
+                           "sources": [{"label": "%s Game Plan" % plan.label(), "page": page}]})
     write_like(log_path, log)
     written.append(log_path)
     if players is not None:
@@ -246,9 +261,13 @@ def apply_records(plan, sheet, players, resolve_queue=True):
             "season": plan.season, "week": plan.week, "set": plan.master.isoformat(), "players": list(players),
             "note": inactive_note(plan, players), "page": page}, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         written.append(plan.pages.inactives)
+    _, source, _ = plan.compiled()
     record = {"season": plan.season, "week": plan.week, "applied": plan.master.isoformat(), "page": page,
               "page_sha256": page_digest(plan.text), "call_sheet_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
               "before": before, "set": _set(after, before), "labels_cleared": cleared,
+              # Where every emitted call, defensive row and decision came from (a page line or a carried
+              # frozen item), and his reasons, kept as author intent: they never reach the call sheet.
+              "source_map": source, "intent": dict(game_plan.intent(plan.choices), known=plan.master.isoformat()),
               "event": event_for(plan, sheet, players or [], changes)}
     write_like(plan.pages.applied, record)
     written.append(plan.pages.applied)
@@ -275,8 +294,8 @@ def settle_queue(plan, page):
         what = "the game plan" if item["class"] == "weekly_game_plan" else "the inactives"
         item["status"] = "RESOLVED"
         item["resolution"] = {"date": plan.master.isoformat(), "by": "user", "record": {"path": page},
-                              "summary": "Stone set %s on his Week %d Game Plan, checked and applied %s"
-                                         % (what, plan.week, long_date(plan.master))}
+                              "summary": "Stone set %s on his %s Game Plan, checked and applied %s"
+                                         % (what, plan.label(), long_date(plan.master))}
         settled += 1
     if not settled:
         return []
@@ -343,18 +362,17 @@ def validation_errors(root=ROOT):
     paths = SeasonPaths(season, root)
     errors = []
     chart = json.loads(paths.depth_chart.read_text(encoding="utf-8")) if paths.depth_chart.is_file() else {}
-    for game in paths.regular_games():
-        if JAX not in (game["away"], game["home"]):
-            continue
+    from runtime import game_weeks
+    for game in game_weeks.club_games(paths, JAX):     # the season's games, its playoff games set so far
         week = game["week"]
-        pages = week_pages(season, week, root)
+        pages = week_pages(season, week, root, postseason=game.get("game_type") == "postseason")
         record = game_plan.applied_record(pages.applied)
-        label = "Week %d Game Plan" % week
+        label = "%s Game Plan" % game_weeks.label(game)
         inactives = game_plan.applied_record(pages.inactives)
         listed = chart.get("game_day_inactives") or {}
         if inactives is not None and listed.get("week") == week and \
                 list(listed.get("players") or []) != list(inactives.get("players") or []):
-            errors.append("Week %d: the depth chart's inactives are not the week's inactives as set" % week)
+            errors.append("%s: the depth chart's inactives are not the week's inactives as set" % game_weeks.label(game))
         if record is None:
             if pages.plan.is_file() and pages.call_sheet.is_file():
                 errors.append("%s: the call sheet was not frozen from the page; apply it (python "
@@ -378,8 +396,8 @@ def validation_errors(root=ROOT):
         if not any(i.get("class") == "weekly_game_plan" and any(
                 b.get("season") == season and b.get("week") == week for b in i.get("blocks") or ())
                 for i in queue["items"]):
-            errors.append("Week %d: the Game Week Briefing is issued, but the decision queue holds no game-plan item "
-                          "for the week (python scripts/open_game_week.py opens it)" % week)
+            errors.append("%s: the Game Week Briefing is issued, but the decision queue holds no game-plan item "
+                          "for the week (python scripts/open_game_week.py opens it)" % wk.label())
     return errors
 
 
@@ -404,7 +422,11 @@ def main(argv=None):
         for problem in problems:
             print("- " + problem)
         return 1
-    print("GAME PLAN: APPLIED  Week %d, %d" % (args.week, args.season))
+    from runtime import game_weeks
+    from runtime.seasons import SeasonPaths
+    name = (game_weeks.round_name(args.week) if game_weeks.is_postseason(SeasonPaths(args.season, root), args.week)
+            else "Week %d" % args.week)
+    print("GAME PLAN: APPLIED  %s, %d" % (name, args.season))
     for path in written:
         print("wrote %s" % Path(path).relative_to(root).as_posix())
     for problem in problems:

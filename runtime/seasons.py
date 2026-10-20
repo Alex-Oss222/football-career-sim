@@ -164,7 +164,8 @@ class SeasonPaths:
         matches = sorted(p for prefix in prefixes for p in parent.glob(prefix+'*') if p.is_dir())
         if len(matches) > 1:
             raise ValueError('Multiple output folders for week %d' % week)
-        prefix = prefixes[0] if self.year < 2014 or postseason else prefixes[1]
+        # From 2014 a playoff game's folder is named like a season week's (Postseason/Games/Week_18).
+        prefix = prefixes[0] if self.year < 2014 else prefixes[1]
         return matches[0] if matches else parent / prefix
 
     def week_data(self, week, postseason=False):

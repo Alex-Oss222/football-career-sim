@@ -238,7 +238,7 @@ class DecisionQueueTests(unittest.TestCase):
     def test_subject_comes_from_the_shared_vocabulary(self):
         item = self.plan_item(**{"class": "game_management_rule", "subject": "onside", "authority_rows": ["12"],
                                  "blocks": []})
-        self.assertError("test-plan has unknown subject 'onside' (one of %s)" % ", ".join(current_job.SUBJECTS),
+        self.assertError("test-plan has unknown subject 'onside' (one of %s)" % ", ".join(current_job.ITEM_SUBJECTS),
                          self.errors_with(item))
         # The same item under the vocabulary's word is covered by Stone's kickoff rule.
         self.assertError("test-plan is covered by the standing instruction stone-kickoff-rule-2014-week5",

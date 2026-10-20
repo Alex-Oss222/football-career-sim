@@ -11,7 +11,10 @@ A call on the Game Plan is checked word by word:
 
 - its concept: a family of the call-family map (runtime/call_families.py,
   read from the same book), or one of the plays the book names that the map
-  does not carry (``BOOK_PLAYS``, which need an explicit target or carrier);
+  does not carry (``BOOK_PLAYS``). Naming one needs no declaration: a call of
+  one is set with its book type (``BOOK_PLAY_TYPES``) and its players
+  unspecified, so no snap is labelled with it until the map names its
+  players;
 - its personnel: one of the book's groupings;
 - its formation: an optional grouping, then at least one formation family,
   with the book's modifiers, directions, shift words and position labels;
@@ -59,9 +62,19 @@ BACK_PROTECTION = ("Check-release", "Scan", "Insert", "Chip-release")
 ROUTE_TAGS = ("Alert Post", "Go", "Wheel", "Choice", "Bender", "Sit", "Return", "Out-and-Up", "Sluggo",
               "Double Post", "Fade Stop")
 # 12.4 Special Plays and Gadgets; 12.3 Fake Screens and Complements. The call-family map carries
-# none of them, so a call naming one declares its target or carrier.
+# none of them: a call naming one is set with its players unspecified (runtime/game_plan.new_call_form),
+# so no snap is labelled with it until the map names its players, and naming it needs no declaration.
 BOOK_PLAYS = ("Flea Flicker", "Halfback Pass", "Throwback Screen", "WR Reverse", "WR Pass", "Bubble Pump Go",
               "RB Screen Fake Cross", "Tunnel Fake Draw")
+# Each play's type, as the book describes it: 12.4 Flea Flicker (the ball returned to the QB for a
+# max-protect vertical shot; the staff's Week 4 card types it pass), Halfback Pass (the back throwing),
+# Throwback Screen (the screen returning opposite), WR Reverse (a reverse handoff), WR Pass (the
+# receiver throwing); 12.3 Bubble Pump Go (pump and attack vertical), RB Screen Fake Cross (the
+# intermediate cross or dig after the screen fake) and Tunnel Fake Draw (the QB's draw action behind
+# the receivers' tunnel posture: a draw).
+BOOK_PLAY_TYPES = {"Flea Flicker": "pass", "Halfback Pass": "pass", "Throwback Screen": "pass", "WR Reverse": "run",
+                   "WR Pass": "pass", "Bubble Pump Go": "pass", "RB Screen Fake Cross": "pass",
+                   "Tunnel Fake Draw": "run"}
 # 13 Access and Packaged Plays; 2.2 Vocabulary Rules (Cross, Vert).
 CALL_WORDS = ("Access", "Cross", "Vert")
 # The staff's plain words for what a call is for (its situation, its purpose, its package), which

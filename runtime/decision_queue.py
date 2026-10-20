@@ -68,6 +68,8 @@ CLASSES = {
  "personnel_recommendation":DecisionClass("holder", ("3","4","7","20"), frozenset(), False),
  "quarterback_consultation":DecisionClass("holder", ("3a",), frozenset(), False),
  "employment_response":     DecisionClass("holder", ("1",), frozenset(), False),   # schema only: no employment event is wired
+ "outside_job_approach":    DecisionClass("holder", ("1a",), frozenset(), True),   # the holder's own answer; no approach event is wired yet
+ "staff_permission":        DecisionClass("holder", ("2",), frozenset(), True),    # an assistant's interview elsewhere; no request event is wired yet
  "personnel_transaction":   DecisionClass("caldwell", ("3","5","7","20"), frozenset(), False),
  "medical_status":          DecisionClass("medical_staff", ("15","16","17"), frozenset(), False),
  "staff_work":              DecisionClass("coaching_staff", (), frozenset(), False),
@@ -323,8 +325,8 @@ def _validation_errors(queue, root, mapping, events, master, job, prefix):
         for role, pid in named:
             if pid not in parties:
                 say("names %s %r, which is not a party in the job record" % (role, pid))
-        if item.get("subject") is not None and item["subject"] not in current_job.SUBJECTS:
-            say("has unknown subject %r (one of %s)" % (item["subject"], ", ".join(current_job.SUBJECTS)))
+        if item.get("subject") is not None and item["subject"] not in current_job.ITEM_SUBJECTS:
+            say("has unknown subject %r (one of %s)" % (item["subject"], ", ".join(current_job.ITEM_SUBJECTS)))
         for row in item.get("authority_rows") or ():
             if row not in current_job.AUTHORITY_ROWS:
                 say("names unknown authority row %r" % (row,))
