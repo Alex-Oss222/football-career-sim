@@ -68,7 +68,7 @@ Use only for an actionable, dated window that is relevant to an actual person, e
 | Other club wants your assistant | Club and role, exact permission rule for the season, Jacksonville season/playoff status, whether an in-force standing instruction already covers it |
 | Coaching vacancy | Actual open job, confirmed or speculative interest distinguished, dates/permissions, whether your own candidacy is permitted; vacancy alone is not an interview request |
 | Club offers YOU an extension | Written terms offered, owner/GM authority, existing contract, financial/authority changes, your accept/counter/decline deadline |
-| Another club requests interview with YOU | Valid offseason request, Jaguars' consent status, who may grant consent, dates and your personal decision; no imaginary in-season solicitation |
+| Another club asks to talk to YOU | FOR YOUR INFORMATION while your standing answer is that you are not open to job offers: the requesting club, the date, and Shad Khan's answer (he alone decides: grant, refuse or ask for compensation). No imaginary in-season solicitation |
 | Dismissal / head-coach contract expiry | Ownership notice or verified contract end, effective date, remaining guarantees/offset only from the signed contract, representation and actual offers. After dismissal route to the agent/career desk, not a Jaguars internal football briefing |
 
 ### Authoring requirements
@@ -77,4 +77,4 @@ Use only for an actionable, dated window that is relevant to an actual person, e
 - Every claim must be available to this coach through a legitimate channel at the event's date.
 - An internal inquiry, an expression of interest, a formal offer, and a completed action are separate statuses.
 - Keep the existing game or bye content beneath the insert without replacing it. Do not change frozen game decisions.
-- Reissue an immutable updated briefing if a new notice arrives; preserve the earlier issue as received.
+- Reissue under the one rule in the [event inserts design](../../../docs/event_inserts.md) (section A, item 6): a new event needing your answer, a dated finding that materially changes a pending choice, or an answer due before the next scheduled issue. Preserve the earlier issue as received.

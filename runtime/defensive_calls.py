@@ -23,7 +23,10 @@ Encoding rules (kernel 2014.6 plan, B14 W1a):
 - nothing off the practiced menu is encoded: every package, front, coverage,
   pressure and tag a row names is on the sheet's ``practiced`` lists, and those
   lists hold only words of the active defensive book (read through the
-  playbook lock: ``docs/repository_map.json`` ``active_playbooks``); each
+  playbook lock: ``docs/repository_map.json`` ``active_playbooks``). The check
+  is structural: on a sheet compiled from a version 2 Game Plan the lists are
+  the words its own responses name, cited to the page's lines, not a record
+  that they were practiced (runtime/README.md, the ``practiced`` field); each
   front, strength, coverage and tag a row names occurs on its own cited
   packet line, and each practiced front, coverage and tag on one of the
   practiced menu's cited lines (``source_errors``);

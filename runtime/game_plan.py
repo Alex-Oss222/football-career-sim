@@ -1,249 +1,202 @@
-"""Stone's Game Plan page: its fixed headings, how it is read, and how it
-becomes the records the game path already reads (docs/rebuild_plan.md, "How
-a decision works").
+"""Stone's Game Plan page (game week version 2, docs/game_week_v2.md sections 4
+and 8): its fixed headings, how it is read, and how it compiles into the
+records the game path already reads.
 
-The page is the head coach's own page for a game week. It has fixed headings
-(``SECTIONS``) and each section begins with one line, a blockquote, naming the
-legal choices. Stone fills it in place or uploads a .md or .txt file with the
-same headings. Under any heading "Same as Week N" carries that week's frozen
-choices exactly, and "None" means no change (or nothing to add).
+The page is the head coach's decision for a game week, in football language,
+on the layout of foundation/templates/game_week/game_plan_template.md: a
+header (head coach, game, the briefing he answers and his baseline) and seven
+numbered sections. Every entry is one labelled line (``**Label:** value``) or
+a row of one of the page's tables; a page has no Opener, Returns, Family,
+Type or Tags column and no row id. He fills it in place or uploads a .md or
+.txt file with the same headings.
 
-Three functions carry the page:
+Three answers are different (section 4.3): **No change** keeps the last legal
+instruction set; **None** means intentionally nothing; a line left empty is
+**unanswered**, and an unanswered line never approves anything. "Carry Week
+NN" reads that week's call sheet as set (its applied plan for a week set on a
+Game Plan).
 
-- ``render`` writes a page from its choices (``blank`` with none, or
-  ``choices_from_sheet`` for a frozen week's call sheet and inactives);
-- ``parse`` reads a page back into its choices, with every problem of form
-  named in football words;
-- ``build_sheet`` turns the choices into the call sheet, exactly in the
-  shape the weekly build reads (runtime/week_inputs), with its frame: the
-  record's own fields that are not football choices (its event, when and from
-  what it was frozen, the ids of its decision blocks and the packet lines its
-  defensive rows cite). From a page, ``page_frame`` writes the frame, and
-  every defensive row cites the page's own line; for a sheet frozen before
-  the Game Plan existed, ``frame_from_sheet`` reads it back, which is how the
-  Week 5 round trip is proved (tests/test_game_plan.py).
+What compiles, and what does not. ``compile_sheet`` turns the page into the
+existing ``call_sheet.json`` exactly in the shape the weekly build reads
+(runtime/week_inputs), deterministically, with a source map from every
+emitted call, defensive row and decision block to the page line or the
+carried frozen item it came from:
 
-The game-day inactives and any depth-chart order or role change go to the
-game depth chart (scripts/apply_game_plan.py writes them with their update-log
-entry). Practice and special-teams instructions stay on the page, which is the
-record of his decision. Nothing here reads the current-job record or the
-decision queue (tests/test_career_layer_isolation.py); the scripts that check
-and apply a page do.
+- the calls: the baseline week's calls, the Primary calls table (a call as
+  the active book and the earlier frozen sheets name it, its situations in
+  "When I want it", and any explicit variation in parentheses, "(Kelce
+  receiving Y)" or "(without Kelce receiving Y)"), less the calls not
+  available and the special plays removed or kept for practice. Any call in
+  the active book may be named for any situation he writes, whether or not
+  the week's practice covered it (the user's ruling of October 20, 2026: "We
+  can call anything from the playbook. It's accessible."); the check holds
+  every word to the active book. A call's personnel, formation, motion,
+  protection and tags are resolved from the frozen form when its full name is
+  an earlier sheet's; a shorter or partial name is asked about (never a
+  guess); a call no earlier Jacksonville sheet carries is read from its name,
+  and one whose words an earlier call's name holds is written "New call:
+  <its name>" once the check has asked;
+- the opening sequence: "Opening ideas" (the calls he wants early, in his
+  order of preference; a call repeated is a return to it), or "Carry Week NN
+  opening". Any call of the active book may be named there: one not yet on
+  the week's sheet is added to it with the opening sequence as its only
+  situation (from an earlier sheet's form when one carries it, otherwise read
+  from its name, as a Primary calls row is), and a call the page takes off is
+  asked about, never added back. The order fills the sheet's opening slots,
+  which name the early calls in the play-by-play and are left out of the
+  outcome packet, so reordering the list does not move a draw; a call on it
+  that is not a normal-down call is on the opening sequence's list. The tags
+  the opening list and the two-point list imply ("opener", "two-point
+  folder") follow them, and those tags, like every call on the sheet, are
+  committed to the outcome packet: which calls are on the list (not their
+  order) changes the game's random draws, with no football effect;
+- the defensive responses table, in the active defensive book's words: a
+  first cell naming a situation the defense keys (normal downs, third and
+  long, the red zone, late lead and the rest) is that situation's row, one
+  beginning "If" or "When" a conditional row, "Counter" a counter, any other
+  a presentation; the response cell is read word by word (Nickel Even Cover
+  6, passing strength; Dime, Replace Field), and each row cites its own page
+  line;
+- the rush rule, the defensive caller, and the fourth-down, two-point and
+  kickoff decisions (Standing rule, Carry Week NN, No change, None, or "My
+  rules, otherwise ..." above a rule table).
+
+Everything else is author intent: what he wants the game to look like, each
+call's football reason and stop condition, the situational lines, the
+contingencies, the practice table (information for the staff: who takes
+a limited player's work and what the staff will practice, never a condition
+on a call) and the staff directions. Intent is stored and shown (the page is its record, and the
+applied plan record keeps it with its line and date), and it never changes
+the compiled sheet: the same choices with reworded reasons compile to the
+same bytes (tests/test_game_plan.py). Nothing here reads the current-job
+record or the decision queue (tests/test_career_layer_isolation.py); the
+scripts that check and apply a page do.
 """
 from __future__ import annotations
 
+import copy
 import json
 import re
 
-SECTIONS = ("Inactives", "Depth chart changes", "Practice", "Offense", "Fourth downs", "Two-point tries",
-            "Kickoffs", "Defense", "Special teams", "Notes to the staff")
-DECISION_SECTIONS = {"Fourth downs": "fourth_down", "Two-point tries": "two_point", "Kickoffs": "kickoff"}
-# The call sheet's situation menus (its top-level ``menus``), in the sheet's own order; the page
-# shows each in football words. The fourth-down and two-point menus sit in their own sections.
-MENU_ORDER = ("opening_sequence", "normal_down", "second_and_long", "third_down", "backed_up", "fourth_down",
-              "red_zone", "two_point", "two_minute", "PRESS_sequence", "four_minute", "sudden_change",
-              "final_play_of_half", "empty_rule", "receiver_arrangement")
-OFFENSE_MENUS = (("opening_sequence", "Opening sequence"), ("normal_down", "Normal downs"),
-                 ("second_and_long", "Second and long"), ("third_down", "Third down"),
-                 ("backed_up", "Backed up"), ("red_zone", "Red zone"), ("two_minute", "Two-minute"),
-                 ("PRESS_sequence", "PRESS sequence"), ("four_minute", "Four-minute"),
-                 ("sudden_change", "Sudden change"), ("final_play_of_half", "Final play of the half"),
-                 ("empty_rule", "Empty"), ("receiver_arrangement", "Receiver arrangement"))
-SECTION_MENU = {"fourth_down": "How we call it", "two_point": "Calls"}
-# The situations a call may name in its Situations cell, as the page spells them (each is one of the
-# call sheet's menus under runtime/call_situations.menu_key).
-CALL_SITUATIONS = ("normal down", "second and long", "third and short", "third and medium", "third and long",
-                   "backed up", "high red zone", "low red zone", "goal line", "red zone", "two-minute",
-                   "PRESS sequence", "four-minute", "sudden change", "opening sequence", "two-point",
-                   "final play of half", "empty")
-CALLS = "Calls"
-LOOKING = "What I am looking at"
-# The call table: (column, call field). A call's fields are written in CALL_KEYS order.
-CALL_COLUMNS = (("Call", "name"), ("Family", "family"), ("Type", "type"), ("Personnel", "personnel"),
-                ("Formation", "formation"), ("Motion", "motion"), ("Protection", "protection"),
-                ("Target", "target"), ("Carrier", "carrier"), ("Tags", "tags"), ("Opener", "opener"),
-                ("Returns", "opener_returns"), ("Situations", "menus"))
-CALL_KEYS = ("name", "family", "type", "personnel", "formation", "motion", "protection", "target", "carrier",
-             "tags", "opener", "opener_returns", "menus", "what_stone_is_looking_at")
-ALWAYS_LISTS = ("tags", "menus")
-GROUP_VALUES = ("any", "unspecified")
+# ---------------------------------------------------------------- the page's fixed parts
+HEADINGS = ("1. What I want this game to look like", "2. Game-day availability and personnel",
+            "3. Offense: what we are calling and why", "4. Defense: what we are showing and answering",
+            "5. Special teams and game decisions", "6. What we will practice",
+            "7. Directions to the staff and public position")
+SECTIONS = HEADINGS
+CALLS_SUB = "Primary calls"
+SITUATIONS_SUB = "Situational changes from the standing / previous menu"
+SUBHEADINGS = {3: (CALLS_SUB, SITUATIONS_SUB)}
+CONTINGENCY = re.compile(r"^If .+ cannot dress$")
+CONTINGENCY_LABEL = "If a pending player cannot dress"
+
+# (key, section (0 is the header), label, kind), in the page's order. Kinds: fact (written by the
+# builder), briefing, baseline, intent (stored, never compiled), inactives, depth, caller, opening,
+# situational (intent; "Carry Week NN" is held to the baseline), special, removals, rush, decision.
+FIELDS = (
+    ("head_coach", 0, "Head coach", "fact"),
+    ("game", 0, "Game", "fact"),
+    ("briefing", 0, "Briefing used", "briefing"),
+    ("baseline", 0, "Baseline", "baseline"),
+    ("attack", 1, "The matchup I am attacking", "intent"),
+    ("protect", 1, "What I must not give them", "intent"),
+    ("change_course", 1, "What would make me change course", "intent"),
+    ("inactives", 2, "Inactives", "inactives"),
+    ("depth", 2, "Depth/role changes", "depth"),
+    ("contingency", 2, CONTINGENCY_LABEL, "intent"),
+    ("coverage_units", 2, "Special coverage and substitution consequences", "intent"),
+    ("offense_caller", 3, "Caller", "caller"),
+    ("base_personnel", 3, "Base personnel and roles", "intent"),
+    ("learn", 3, "The first things I want to learn", "intent"),
+    ("opening_approach", 3, "Opening approach", "intent"),
+    ("opening", 3, "Opening ideas", "opening"),
+    ("third_down", 3, "Third down", "situational"),
+    ("backed_up", 3, "Backed up", "situational"),
+    ("red_zone", 3, "High red zone, low red zone, goal line", "situational"),
+    ("two_minute", 3, "Two-minute / hurry-up", "situational"),
+    ("four_minute", 3, "Four-minute / protect a lead", "situational"),
+    ("sudden_change", 3, "Sudden change / shot opportunities", "situational"),
+    ("special_plays", 3, "Special plays", "special"),
+    ("not_available", 3, "Calls not available this week", "removals"),
+    ("defense_caller", 4, "Caller", "caller"),
+    ("front", 4, "Base front and run fits", "intent"),
+    ("coverage", 4, "Coverage and rush approach", "intent"),
+    ("rush", 4, "Rush rule", "rush"),
+    ("discover", 4, "What we need to discover early", "intent"),
+    ("matchups", 4, "Individual matchups / roles changed", "intent"),
+    ("kicking_caller", 5, "Kicking-game caller", "caller"),
+    ("kicking", 5, "Return, coverage and operation instructions", "intent"),
+    ("fourth_down", 5, "Fourth downs", "decision"),
+    ("two_point", 5, "Two-point tries", "decision"),
+    ("kickoff", 5, "Kickoffs and onside situations", "decision"),
+    ("endgame", 5, "Timeouts, challenges and endgame", "intent"),
+    ("participation", 6, "If a medical assessment changes participation", "intent"),
+    ("tradeoff", 6, "What leaves the practice menu to make room", "intent"),
+    ("staff", 7, "Staff instructions", "intent"),
+    ("public", 7, "Public position, if I am adding one", "intent"),
+    ("open_decisions", 7, "Other open decisions", "intent"),
+    ("ready", 7, "Ready to lock after", "intent"),
+)
+FIELD = {key: (section, label, kind) for key, section, label, kind in FIELDS}
+# Labels an earlier page wrote, read as today's: a page written before October 20, 2026 names its
+# opening list "Opening calls, in order".
+OLD_LABELS = {(3, "Opening calls, in order"): "opening"}
+OPENING_GUIDE = "The calls you want early, in your order of preference. Any call in the book stays available."
+# The kinds whose answer may run on below its label (further lines or bullets): his own direction,
+# kept as written and never compiled. Every other answer is read from its label's line alone.
+CONTINUED_KINDS = ("intent", "situational")
+# The labelled lines of each subsection of section 3 (the rest of section 3 sits above them).
+SITUATIONAL_KEYS = ("third_down", "backed_up", "red_zone", "two_minute", "four_minute", "sudden_change",
+                    "special_plays", "not_available")
+DECISION_KEYS = ("fourth_down", "two_point", "kickoff")
+DECISION_SECTIONS = {"Fourth downs": "fourth_down", "Two-point tries": "two_point",
+                     "Kickoffs and onside situations": "kickoff"}
+
+# The page's tables: the section, the subsection (or None) and the columns.
+CALL_COLUMNS = ("Call / concept as named in the active book", "When I want it", "Football reason and key read",
+                "Protection, personnel or stop condition")
+RESPONSE_COLUMNS = ("Offensive situation / presentation", "Prepared front, coverage or pressure response",
+                    "Football reason", "Counter / when to get out of it")
+PRACTICE_COLUMNS = ("Priority", "Responsible coach and players", "Football situation to rehearse",
+                    "What shows it is ready")
+TABLES = {"calls": (3, CALLS_SUB, CALL_COLUMNS), "responses": (4, None, RESPONSE_COLUMNS),
+          "practice": (6, None, PRACTICE_COLUMNS)}
+
 TOP_KEYS = ("schema_version", "team", "event", "status", "frozen", "provenance")
 STATUS = "EX_ANTE_CALL_SHEET_FROZEN"
-
-# Decision rules: the columns of each kind's table, (column, when key or field).
-RULE_COLUMNS = {
-    "two_point": (("Quarter", "period"), ("Score after the touchdown", "diff_after_td"), ("Clock", "clock"),
-                  ("Decision", "decision")),
-    "kickoff": (("Quarter", "period"), ("Score after our score", "diff_after_score"), ("Clock", "clock"),
-                ("Opening kick", "opening_kick"), ("Decision", "decision")),
-    "fourth_down": (("Quarter", "period"), ("Score", "margin"), ("Clock", "clock"), ("Distance", "ydstogo"),
-                    ("Yards to the goal line", "los"), ("Goal to go", "goal_to_go"), ("Decision", "decision"),
-                    ("Call", "call")),
-}
-WHEN_ORDER = {"two_point": ("period", "diff_after_td", "game_seconds_min", "game_seconds_max"),
-              "kickoff": ("period", "diff_after_score", "game_seconds_min", "game_seconds_max", "opening_kick"),
-              "fourth_down": ("period", "margin", "ydstogo", "los", "goal_to_go", "game_seconds_min",
-                              "game_seconds_max")}
-DECISION_WORDS = {"two_point": {"go": "Go for two", "kick": "Kick"},
-                  "kickoff": {"onside": "Onside", "deep": "Deep"},
-                  "fourth_down": {"go": "Go", "field_goal": "Field goal", "punt": "Punt"}}
-OTHERWISE_WORDS = {"league": "League practice", "ask": "Ask me"}
-QUARTERS = {1: "1st", 2: "2nd", 3: "3rd", 4: "4th", "OT": "OT"}
-STANDING = "Standing rule"
-
-# The defense: the practiced menu's lists and the row table.
-PRACTICED = (("Packages", "packages"), ("Fronts", "fronts"), ("Coverages", "coverages"),
-             ("Pressures", "pressures"), ("Tags", "tags"))
-ROW_COLUMNS = (("Row", "id"), ("Use", "kind"), ("Situation", "menu"), ("Package", "package"),
-               ("Front", "front"), ("Strength", "strength"), ("Coverage", "coverage"), ("Pressure", "pressure"),
-               ("Tags", "tags"), ("As written", "text"))
-CALL_FIELDS = ("package", "front", "strength", "coverage", "pressure", "tags")
-KIND_WORDS = {"situation": "Situation", "presentation": "Presentation", "counter": "Counter",
-              "conditional": "Conditional"}
-DEF_MENU_WORDS = {"normal-down": "Normal downs", "second-and-long": "Second and long",
-                  "third-and-short": "Third and short", "third-and-medium": "Third and medium",
-                  "third-and-long": "Third and long", "two-point": "Two-point try", "goal-line": "Goal line",
-                  "low-red-zone": "Low red zone", "high-red-zone": "High red zone", "red-zone": "Red zone",
-                  "backed-up": "Backed up", "two-minute": "Two-minute", "four-minute": "Four-minute",
-                  "lead-late": "Late lead"}
+CALL_KEYS = ("name", "family", "type", "personnel", "formation", "motion", "protection", "target", "carrier",
+             "tags", "opener", "opener_returns", "menus", "what_stone_is_looking_at")
+FORM_KEYS = ("family", "type", "personnel", "formation", "motion", "protection", "target", "carrier")
+# Tags the page's own lists imply, re-derived on every compile.
+OPENER_TAG, TWO_POINT_TAG = "opener", "two-point folder"
+DERIVED_TAGS = (OPENER_TAG, TWO_POINT_TAG)
 DEFENSE_KEYS = ("schema_version", "team", "caller", "book", "packet", "notes", "rush_rule", "practiced", "rows")
-# The active defensive book has one rush rule (runtime/defensive_calls.RUSH_RULE): the page offers it
-# in his own voice and accepts it in either voice; the line he writes is kept as written.
+PRACTICED_KEYS = ("packages", "fronts", "coverages", "pressures", "tags")
+
+GROUPS = {"Quarterbacks": "QB", "Running backs": "RB", "Fullback": "FB", "Fullbacks": "FB", "Wide receivers": "WR",
+          "Tight ends": "TE", "Offensive line": "OL", "Defensive line": "DL", "Linebackers": "LB",
+          "Defensive backs": "DB", "Kicker": "K", "Punter": "P", "Long snapper": "LS"}
+ROLES = {"Starter": "passer", "Kicker": "placekicker", "Punter": "punt", "Kick returner": "kick_return",
+         "Punt returner": "punt_return", "Nickel": "nickel", "Outside reserve corner": "outside_reserve"}
+
+STANDING = "Standing rule"
+CARRY = re.compile(r"^carry week (\d{1,2})\b\s*(.*)$", re.I)
+NONE = re.compile(r"^none\.?$", re.I)
+NO_CHANGE = re.compile(r"^no change\.?$", re.I)
+NEW_PLAN = re.compile(r"^new plan\.?$", re.I)
+MY_RULES = re.compile(r"^my rules(?: below)?[,;.:]?\s*otherwise\s+(.+?)\.?$", re.I)
+LABELLED = re.compile(r"^\*\*([^*]+?):\*\*\s*(.*)$")
+DATE = re.compile(r"^(January|February|March|April|May|June|July|August|September|October|November|December) "
+                  r"(\d{1,2}), (\d{4})(?:,? revision (\d{1,2}))?\.?$", re.I)
+
+# The active defensive book has one rush rule (runtime/defensive_calls.RUSH_RULE), accepted in his
+# voice or the staff's; the line he writes is kept as written.
 RUSH_CHOICE = "Four unless I call the five-man counter"
 RUSH_WORDS = frozenset({"four unless stone calls the five man counter", "four unless i call the five man counter"})
 
 
 def rush_words(text):
     return " ".join(re.sub(r"[^a-z0-9]+", " ", str(text).lower()).split())
-
-
-def row_id(kind, menu, seen):
-    """A defensive row's id when the page gives none: its situation for a situation row (one row
-    per situation), else its use and a count ("counter-2")."""
-    if kind == "situation" and menu:
-        return menu
-    n = 1
-    while "%s-%d" % (kind, n) in seen:
-        n += 1
-    return "%s-%d" % (kind, n)
-
-
-def derived_ids(rows):
-    """The ids ``row_id`` gives a list of defensive rows, in order."""
-    seen, out = set(), []
-    for r in rows:
-        rid = row_id(r["kind"], r.get("menu"), seen)
-        seen.add(rid)
-        out.append(rid)
-    return out
-
-GROUPS = {"Quarterbacks": "QB", "Running backs": "RB", "Fullback": "FB", "Wide receivers": "WR",
-          "Tight ends": "TE", "Offensive line": "OL", "Defensive line": "DL", "Linebackers": "LB",
-          "Defensive backs": "DB", "Kicker": "K", "Punter": "P", "Long snapper": "LS"}
-ROLES = {"Starter": "passer", "Kicker": "placekicker", "Punter": "punt", "Kick returner": "kick_return",
-         "Punt returner": "punt_return", "Nickel": "nickel", "Outside reserve corner": "outside_reserve"}
-
-SAME = re.compile(r"^same as week (\d{1,2})\.?$", re.I)
-NONE = re.compile(r"^none\.?$", re.I)
-# A labelled line, bold as the page writes it ("**Rush rule:** ...") or plain ("Rush rule: ...").
-LABELLED = re.compile(r"^(?:\*\*([^*]+?):\*\*|([A-Z][A-Za-z' -]*?):(?!\S))\s*(.*)$")
-# The sections that hold subsections of their own; under any other heading a "###" subheading is
-# a problem of form (the readers read the section's own lines only).
-WITH_SUBSECTIONS = ("Offense", "Defense")
-LOOK = re.compile(r"^[-*]\s+\*\*(.+?):\*\*\s*(.*)$")
-BULLET = re.compile(r"^[-*]\s+(.*)$")
-
-
-def labelled(text):
-    """(label, value) of a labelled line, bold or plain, or None."""
-    m = LABELLED.match(text)
-    if not m:
-        return None
-    return (m[1] if m[1] is not None else m[2]).strip(), m[3]
-
-
-class Section:
-    """One section of the page: its content lines (line number, text) without blank lines and
-    the one-line explanation, and its subsections."""
-
-    def __init__(self, name, line):
-        self.name, self.line, self.lines, self.subs, self.sub_lines = name, line, [], {}, {}
-
-    def written(self):
-        """What is written in the section: its lines and its subsections' lines, without the
-        empty tables a blank page carries (a header and its rule, no row)."""
-        return data_lines(self.lines) + [t for sub in self.subs.values() for t in data_lines(sub)]
-
-    def same_as(self):
-        lines = self.written()
-        if len(lines) == 1 and SAME.match(lines[0]):
-            return int(SAME.match(lines[0])[1])
-        return None
-
-    def none(self):
-        lines = self.written()
-        return len(lines) == 1 and bool(NONE.match(lines[0]))
-
-    def empty(self):
-        return not self.written()
-
-
-def data_lines(lines):
-    """The texts of ``lines`` without a table that has no row (its header and rule only)."""
-    out, group = [], []
-    for _, text in list(lines) + [(None, "")]:
-        if text.startswith("|"):
-            group.append(text)
-            continue
-        if group:
-            rows = [g for g in group[1:] if not all(re.fullmatch(r":?-{3,}:?", c) for c in cells(g) if c)]
-            if rows:
-                out += group
-            group = []
-        if text and not _empty_label(text):
-            out.append(text)
-    return out
-
-
-def _empty_label(text):
-    """A label line the blank page carries with nothing after it ("**Rush rule:**")."""
-    found = labelled(text)
-    return found is not None and text.startswith("**") and not found[1].strip()
-
-
-def split(text):
-    """{heading: Section} of a page and the problems of its headings."""
-    found, problems, current, sub = {}, [], None, None
-    for number, raw in enumerate(text.splitlines(), 1):
-        line = raw.strip()
-        if raw.startswith("## "):
-            name = raw[3:].strip()
-            if name not in SECTIONS:
-                problems.append("The page has a heading %r that is not one of the Game Plan's headings (%s)"
-                                % (name, ", ".join(SECTIONS)))
-                current = None
-                continue
-            if name in found:
-                problems.append("%s: the heading appears twice" % name)
-            current, sub = Section(name, number), None
-            found[name] = current
-        elif raw.startswith("### ") and current is not None:
-            sub = raw[4:].strip()
-            if current.name not in WITH_SUBSECTIONS:
-                problems.append("%s: write under the heading itself, not under a subheading (%r)"
-                                % (current.name, sub))
-            current.subs.setdefault(sub, [])
-            current.sub_lines[sub] = number
-        elif current is None or not line or line.startswith(">") or raw.startswith("# "):
-            continue
-        elif sub is not None:
-            current.subs[sub].append((number, line))
-        else:
-            current.lines.append((number, line))
-    for name in SECTIONS:
-        if name not in found:
-            problems.append("%s: the heading is missing" % name)
-    return found, problems
 
 
 # ---------------------------------------------------------------- tables and values
@@ -266,31 +219,51 @@ def cells(line):
     return [c.strip().replace("\\|", "|") for c in re.split(r"(?<!\\)\|", body)]
 
 
-def read_table(lines, columns, where, problems):
-    """[(line number, {column: value})] of the first table in ``lines``; ``columns`` the allowed
-    headers. A header row, a rule row, then the rows."""
-    rows = [(n, t) for n, t in lines if t.startswith("|")]
-    if not rows:
+def is_rule_row(line):
+    return all(re.fullmatch(r":?-{3,}:?", c) for c in cells(line) if c)
+
+
+def read_table(lines, columns, where, problems, strict=True):
+    """[(line number, {column: value})] of one table (its header row first). ``strict`` requires
+    exactly the page's columns in order; otherwise every header must be one of ``columns``."""
+    if not lines:
         return []
-    head = cells(rows[0][1])
+    head = cells(lines[0][1])
+    if strict and tuple(head) != tuple(columns):
+        problems.append("%s: the table's columns are %s; keep the page's columns (%s)"
+                        % (where, ", ".join(head), ", ".join(columns)))
+        return []
     unknown = [h for h in head if h not in columns]
     if unknown:
         problems.append("%s: the table has the column%s %s, not one of %s" % (
             where, "s" if len(unknown) > 1 else "", ", ".join(repr(u) for u in unknown), ", ".join(columns)))
+        return []
     out = []
-    for n, t in rows[1:]:
-        values = cells(t)
-        if all(re.fullmatch(r":?-{3,}:?", v) for v in values if v):
+    for n, t in lines[1:]:
+        if is_rule_row(t):
             continue
+        values = cells(t)
         if len(values) != len(head):
             problems.append("%s: a row has %d cells, the header %d: %s" % (where, len(values), len(head), t))
+            continue
+        if not any(values):
             continue
         out.append((n, dict(zip(head, values))))
     return out
 
 
+def items(text, separator=";"):
+    """The items of a list written on one line, separated by ``separator``."""
+    return [v.strip() for v in str(text or "").split(separator) if v.strip()]
+
+
 def listed(text):
-    return [v.strip() for v in text.split(",") if v.strip()] if text else []
+    return [v.strip() for v in re.split(r"[,;]", text or "") if v.strip()]
+
+
+def norm(text):
+    """A call or a phrase as words: lowercase, every mark but + a space."""
+    return " ".join(re.sub(r"[^a-z0-9+]+", " ", str(text or "").lower()).split())
 
 
 def clock(seconds):
@@ -345,6 +318,9 @@ def number(text):
     return int(text)
 
 
+QUARTERS = {1: "1st", 2: "2nd", 3: "3rd", 4: "4th", "OT": "OT"}
+
+
 def quarter_value(text):
     names = {v.lower(): k for k, v in QUARTERS.items()}
     out = []
@@ -365,108 +341,28 @@ def yes_no(text):
     raise ValueError("%r is not Yes or No" % text)
 
 
-# ---------------------------------------------------------------- choices from a frozen sheet
-def choices_from_sheet(sheet, inactives=None):
-    """The page's choices for a frozen call sheet and its game-day inactives (the round trip)."""
-    menus = sheet.get("menus") or {}
-    choices = {"inactives": {"players": list((inactives or {}).get("players") or [])},
-               "depth": "none", "practice": "none", "special_teams": "none",
-               "offense": {"menus": {k: v for k, v in menus.items() if k not in ("fourth_down", "two_point")},
-                           "calls": [dict(c) for c in sheet.get("offensive_call_sheet") or ()]},
-               "notes": list(sheet["notes"]) if "notes" in sheet else "none"}
-    decisions = sheet.get("decisions") or {}
-    for kind in DECISION_SECTIONS.values():
-        block = decisions.get(kind)
-        entry = {"menu": menus.get(kind)} if menus.get(kind) is not None else {}
-        if block is not None:
-            entry.update({"rules": [{k: v for k, v in r.items() if k in ("when", "decision", "call")}
-                                    for r in block.get("rules") or ()],
-                          "otherwise": block.get("otherwise")})
-            if "prepared_calls" in block:
-                entry["prepared"] = dict(block["prepared_calls"])
-        choices[kind] = entry or "none"
-    ds = sheet.get("defensive_call_sheet")
-    if ds is None:
-        choices["defense"] = "none"
-    else:
-        practiced = ds.get("practiced") or {}
-        choices["defense"] = {
-            "caller": ds.get("caller"), "rush": ds["rush_rule"]["rule"],
-            "rush_text": ds["rush_rule"]["source"]["text"],
-            "practiced": {key: list(practiced[key]) for _, key in PRACTICED if key in practiced},
-            "practice_lines": [s["text"] for s in practiced.get("sources") or ()],
-            "rows": [{"id": r["id"], "kind": r["kind"], **({"menu": r["menu"]} if "menu" in r else {}),
-                      **({"call": dict(r["call"])} if "call" in r else {}), "text": r["source"]["text"]}
-                     for r in ds.get("rows") or ()],
-        }
-        if "notes" in ds:
-            choices["defense"]["notes"] = list(ds["notes"])
-    return choices
+def long_date(value):
+    return "%s %d, %d" % (value.strftime("%B"), value.day, value.year)
 
 
-# ---------------------------------------------------------------- the page
-def legal_lines(inactive_count=7, special_teams_caller=None, previous_week=None, standing=None):
-    """The one line under each heading naming the legal choices; ``standing`` maps a decision kind
-    to the wording of the standing rule in force, which "Standing rule" means."""
-    same = "; or Same as Week %d" % previous_week if previous_week else ""
-    standing = standing or {}
-
-    def rule(kind):
-        text = standing.get(kind)
-        if not text:
-            return "; or Standing rule"
-        return "; or Standing rule, which means your rule in force: %s" % (text[:1].lower() + text[1:]).rstrip(".")
-    inactive_rule = ("; or Standing rule, which means every player out on a medical instruction on game day and "
-                     "the healthy players your rule in force sits: %s; when the week needs more than that, write "
-                     "Standing rule above the table and name the others in it"
-                     % (standing["inactives"][:1].lower() + standing["inactives"][1:]).rstrip(".")
-                     if standing.get("inactives") else "")
-    return {
-        "Inactives": "%d players from the active roster, one per row, among them every player out on a medical "
-                     "instruction on game day (when more are out, those players only)%s%s."
-                     % (inactive_count, inactive_rule, same),
-        "Depth chart changes": "A position group's full new order from the players now in it, first listed first, "
-                               "or a game role and its player; or None.",
-        "Practice": "Who takes which work this week, for example a limited player's reps; or None.",
-        "Offense": "Each situation in your words, and the calls from the active offensive playbook (its concepts, "
-                   "personnel groupings, formations, motions and protections) with the situations each belongs "
-                   "to, from %s%s." % (", ".join(CALL_SITUATIONS), same),
-        "Fourth downs": "Rules by distance, yards to the goal line, quarter, score and clock, each Go, Field goal "
-                        "or Punt, and what happens otherwise (Go, Field goal, Punt or Ask me)%s; or None for "
-                        "your call on each one%s." % (rule("fourth_down"), same),
-        "Two-point tries": "Rules by quarter, score after the touchdown and clock, each Go for two or Kick, and "
-                           "what happens otherwise (Kick, Go for two or Ask me)%s%s." % (rule("two_point"), same),
-        "Kickoffs": "Rules by quarter, score after our score and clock, each Onside or Deep, and what happens "
-                    "otherwise (Deep, Onside or Ask me)%s%s." % (rule("kickoff"), same),
-        "Defense": "Who calls it; the rush rule, which in the active defensive playbook is %s; the menu "
-                   "practiced this week; and the calls by situation, each with its use (%s), in the active "
-                   "defensive playbook's words%s." % (RUSH_CHOICE[:1].lower() + RUSH_CHOICE[1:], ", ".join(KIND_WORDS.values()),
-                                                       same),
-        "Special teams": "%s; your instructions for the kicking game, or None." % (
-            "%s calls the kicking game" % special_teams_caller if special_teams_caller else "The kicking game"),
-        "Notes to the staff": "Anything else the staff should know, one note per line, or None.",
-    }
-
-
-def _decision_lines(kind, entry):
-    if entry == "none" or entry is None:
-        return []
-    if isinstance(entry, dict) and "same_as" in entry:
-        return ["Same as Week %d" % entry["same_as"]]
-    out = []
-    if entry.get("menu") is not None:
-        out += ["**%s:** %s" % (SECTION_MENU.get(kind, "Calls"), entry["menu"]), ""]
-    if entry.get("standing"):
-        out += [STANDING, ""]
-    if entry.get("rules") is not None:
-        columns = RULE_COLUMNS[kind]
-        rows = [[rule_cell(kind, key, rule) for _, key in columns] for rule in entry["rules"]]
-        out += table([c for c, _ in columns], rows) + [""]
-    if entry.get("otherwise") is not None:
-        out += ["**Otherwise:** %s" % decision_word(kind, entry["otherwise"]), ""]
-    if entry.get("prepared") is not None:
-        out += ["**Prepared calls:**", ""] + table(["Situation", "Call"], [[m, c] for m, c in entry["prepared"].items()]) + [""]
-    return out
+# ---------------------------------------------------------------- decision rules
+RULE_COLUMNS = {
+    "two_point": (("Quarter", "period"), ("Score after the touchdown", "diff_after_td"), ("Clock", "clock"),
+                  ("Decision", "decision")),
+    "kickoff": (("Quarter", "period"), ("Score after our score", "diff_after_score"), ("Clock", "clock"),
+                ("Opening kick", "opening_kick"), ("Decision", "decision")),
+    "fourth_down": (("Quarter", "period"), ("Score", "margin"), ("Clock", "clock"), ("Distance", "ydstogo"),
+                    ("Yards to the goal line", "los"), ("Goal to go", "goal_to_go"), ("Decision", "decision"),
+                    ("Call", "call")),
+}
+WHEN_ORDER = {"two_point": ("period", "diff_after_td", "game_seconds_min", "game_seconds_max"),
+              "kickoff": ("period", "diff_after_score", "game_seconds_min", "game_seconds_max", "opening_kick"),
+              "fourth_down": ("period", "margin", "ydstogo", "los", "goal_to_go", "game_seconds_min",
+                              "game_seconds_max")}
+DECISION_WORDS = {"two_point": {"go": "Go for two", "kick": "Kick"},
+                  "kickoff": {"onside": "Onside", "deep": "Deep"},
+                  "fourth_down": {"go": "Go", "field_goal": "Field goal", "punt": "Punt"}}
+OTHERWISE_WORDS = {"league": "League practice", "ask": "Ask me"}
 
 
 def decision_word(kind, value):
@@ -498,358 +394,6 @@ def rule_cell(kind, key, rule):
     if key in ("goal_to_go", "opening_kick"):
         return "Yes" if value else "No"
     return str(value)
-
-
-def _call_rows(calls):
-    used = [(c, k) for c, k in CALL_COLUMNS if k not in ("carrier",) or any(k in call for call in calls)]
-    rows = []
-    for call in calls:
-        row = []
-        for _, key in used:
-            value = call.get(key)
-            if value is None:
-                row.append("")
-            elif key in ("tags", "menus", "opener_returns") or (key in ("target", "carrier") and isinstance(value, list)):
-                row.append(", ".join(str(v) for v in value))
-            else:
-                row.append(str(value))
-        rows.append(row)
-    return [c for c, _ in used], rows
-
-
-def render(title, intro, choices, legal):
-    """The page, from its choices; ``legal`` is the one-line explanation of each section."""
-    out = ["# " + title, "", intro, ""]
-    for name in SECTIONS:
-        out += ["## " + name, "", "> " + legal[name], ""]
-        key = SECTION_KEYS[name]
-        value = choices.get(key)
-        if isinstance(value, dict) and "same_as" in value:
-            out += ["Same as Week %d" % value["same_as"], ""]
-            continue
-        if value == "none":
-            out += ["None", ""]
-            continue
-        if name == "Inactives" and isinstance(value, dict) and value.get("standing"):
-            out += [STANDING, ""]
-            if value.get("players"):
-                reasons = value.get("reasons") or {}
-                out += table(["Player", "Pos", "Reason"],
-                             [[p, (value.get("positions") or {}).get(p, ""), reasons.get(p, "")]
-                              for p in value["players"]]) + [""]
-        elif name == "Inactives":
-            if value is not None:
-                reasons = value.get("reasons") or {}
-                out += table(["Player", "Pos", "Reason"],
-                             [[p, (value.get("positions") or {}).get(p, ""), reasons.get(p, "")]
-                              for p in value["players"]]) + [""]
-            else:
-                out += table(["Player", "Pos", "Reason"], []) + [""]
-        elif name == "Depth chart changes":
-            if value is not None:
-                if value.get("orders"):
-                    out += table(["Group", "Order"], [[g, ", ".join(p)] for g, p in value["orders"].items()]) + [""]
-                if value.get("roles"):
-                    out += table(["Role", "Player"], [[r, p] for r, p in value["roles"].items()]) + [""]
-        elif name in ("Practice", "Special teams"):
-            out += [line for line in (value or [])] + ([""] if value else [])
-        elif name == "Notes to the staff":
-            out += ["- " + n for n in (value or [])] + ([""] if value else [])
-        elif name == "Offense":
-            value = value or {}
-            menus = value.get("menus") or {}
-            for key_, label in OFFENSE_MENUS:
-                out += ["### " + label, ""] + ([menus[key_], ""] if menus.get(key_) is not None else [])
-            head, rows = _call_rows(value.get("calls") or [])
-            out += ["### " + CALLS, ""] + table(head, rows) + [""]
-            looked = [c for c in value.get("calls") or () if c.get("what_stone_is_looking_at") is not None]
-            out += ["### " + LOOKING, ""]
-            out += ["- **%s:** %s" % (c["name"], c["what_stone_is_looking_at"]) for c in looked]
-            out += [""] if looked else []
-        elif name in DECISION_SECTIONS:
-            out += _decision_lines(DECISION_SECTIONS[name], value)
-        elif name == "Defense":
-            out += _defense_lines(value or {})
-    return "\n".join(out).rstrip("\n") + "\n"
-
-
-def _defense_lines(value):
-    out = ["**Who calls it:** %s" % (value.get("caller") or ""), "", "**Rush rule:** %s" % (value.get("rush") or ""), ""]
-    out = [line.rstrip() for line in out]
-    if value.get("rush_text") is not None and value.get("rush_text") != value.get("rush"):
-        out += ["**As written:** %s" % value["rush_text"], ""]
-    from .defensive_calls import PRESSURE_FAMILIES
-    practiced = value.get("practiced") or {}
-    rows = []
-    for label, key in PRACTICED:
-        if key in practiced:
-            words = [PRESSURE_FAMILIES.get(w, w) if key == "pressures" else w for w in practiced[key]]
-            rows.append([label, ", ".join(words)])
-    out += ["### Practiced this week", ""] + table(["Menu", "Words"], rows) + [""]
-    if value.get("practice_lines"):
-        out += ["**Practice lines:**", ""] + ["- " + t for t in value["practice_lines"]] + [""]
-    rows = []
-    given = value.get("rows") or ()
-    # The Row column only when a row's name is not the one the page would give it.
-    columns = ROW_COLUMNS if [r["id"] for r in given] != derived_ids(given) else ROW_COLUMNS[1:]
-    for r in given:
-        call = r.get("call") or {}
-        row = []
-        for _, key in columns:
-            if key == "id":
-                row.append(r["id"])
-            elif key == "kind":
-                row.append(KIND_WORDS.get(r["kind"], r["kind"]))
-            elif key == "menu":
-                row.append(DEF_MENU_WORDS.get(r.get("menu"), r.get("menu") or ""))
-            elif key == "text":
-                row.append(r.get("text") or "")
-            elif key in ("coverage", "tags"):
-                row.append(", ".join(call[key]) if key in call else "")
-            elif key == "pressure":
-                row.append(PRESSURE_FAMILIES.get(call[key], call[key]) if key in call else "")
-            else:
-                row.append(call.get(key, ""))
-        rows.append(row)
-    out += ["### Calls by situation", ""] + table([c for c, _ in columns], rows) + [""]
-    if value.get("notes"):
-        out += ["### Notes", ""] + ["- " + n for n in value["notes"]] + [""]
-    return out
-
-
-SECTION_KEYS = {"Inactives": "inactives", "Depth chart changes": "depth", "Practice": "practice",
-                "Offense": "offense", "Fourth downs": "fourth_down", "Two-point tries": "two_point",
-                "Kickoffs": "kickoff", "Defense": "defense", "Special teams": "special_teams",
-                "Notes to the staff": "notes"}
-
-
-def blank(title, intro, legal):
-    """A blank Game Plan: every heading with its explanation and the empty tables."""
-    return render(title, intro, {}, legal)
-
-
-# ---------------------------------------------------------------- reading a page
-def parse(text):
-    """(choices, problems): the page's choices by section key, None where a section is empty,
-    and every problem of form in football words."""
-    found, problems = split(text)
-    choices = {}
-    for name in SECTIONS:
-        section = found.get(name)
-        key = SECTION_KEYS[name]
-        if section is None or section.empty():
-            choices[key] = None
-            continue
-        week = section.same_as()
-        if week is not None:
-            choices[key] = {"same_as": week}
-            continue
-        if section.none():
-            choices[key] = "none"
-            continue
-        reader = READERS[name]
-        choices[key] = reader(section, problems)
-    return choices, problems
-
-
-def _is_standing(text):
-    return text.lower().rstrip(".") == STANDING.lower()
-
-
-def _inactives(section, problems):
-    """The inactives as written: a table of players; Standing rule alone; or Standing rule above a
-    table of the others he names when the week needs more than his rule sits ({"standing": True,
-    "players": ...})."""
-    texts = data_lines(section.lines)
-    standing = any(_is_standing(t) for t in texts)
-    if standing and not any(t.startswith("|") for t in texts):
-        if len([t for t in texts if _is_standing(t)]) == len(texts):
-            return {"standing": True}
-    rows = read_table(section.lines, ("Player", "Pos", "Reason"), "Inactives", problems)
-    players, reasons, positions, lines = [], {}, {}, {}
-    for n, row in rows:
-        name = row.get("Player", "")
-        if not name:
-            continue
-        players.append(name)
-        lines[name] = n
-        if row.get("Reason"):
-            reasons[name] = row["Reason"]
-        if row.get("Pos"):
-            positions[name] = row["Pos"]
-    stray = [t for _, t in section.lines if not t.startswith("|") and not (standing and _is_standing(t))]
-    if stray:
-        problems.append("Inactives: write one player per table row, Standing rule alone, or Standing rule above "
-                        "a table of the others you name (%r is outside the table)" % stray[0])
-    value = {"players": players, "reasons": reasons, "positions": positions, "lines": lines}
-    return dict({"standing": True}, **value) if standing else value
-
-
-def _depth(section, problems):
-    orders, roles = {}, {}
-    tables, current = [], []
-    rule = lambda t: all(re.fullmatch(r":?-{3,}:?", c) for c in cells(t) if c)
-    lines = list(section.lines)
-    for i, (n, t) in enumerate(lines):
-        # A table starts at a header row (the row a rule row follows); blank lines are not kept, so two
-        # tables one after the other are told apart by their headers.
-        header = t.startswith("|") and i + 1 < len(lines) and lines[i + 1][1].startswith("|") \
-            and rule(lines[i + 1][1]) and not rule(t)
-        if t.startswith("|") and not (header and current):
-            current.append((n, t))
-        elif t.startswith("|"):
-            tables.append(current)
-            current = [(n, t)]
-        elif current:
-            tables.append(current)
-            current = []
-    if current:
-        tables.append(current)
-    for rows in tables:
-        head = cells(rows[0][1])
-        if head and head[0] == "Group":
-            for _, row in read_table(rows, ("Group", "Order"), "Depth chart changes", problems):
-                group = GROUPS.get(row["Group"], row["Group"])
-                orders[group] = listed(row["Order"])
-        elif head and head[0] == "Role":
-            for _, row in read_table(rows, ("Role", "Player"), "Depth chart changes", problems):
-                roles[ROLES.get(row["Role"], row["Role"])] = row["Player"]
-        else:
-            problems.append("Depth chart changes: a table needs Group and Order, or Role and Player, columns")
-    if not tables:
-        problems.append("Depth chart changes: write a Group and Order table, a Role and Player table, or None")
-    return {"orders": orders, "roles": roles}
-
-
-def _text(section, problems):
-    return [t for _, t in section.lines]
-
-
-def _notes(section, problems):
-    out = []
-    for _, t in section.lines:
-        m = BULLET.match(t)
-        out.append(m[1] if m else t)
-    return out
-
-
-def _offense(section, problems):
-    menus, calls, looked = {}, [], {}
-    labels = dict((label, key) for key, label in OFFENSE_MENUS)
-    for sub, lines in section.subs.items():
-        if sub in labels:
-            if lines:
-                menus[labels[sub]] = " ".join(t for _, t in lines)
-        elif sub == CALLS:
-            continue
-        elif sub == LOOKING:
-            for n, t in lines:
-                m = LOOK.match(t)
-                if not m:
-                    problems.append("Offense, %s: write each as '- **Call name:** what you are looking at' (%r)"
-                                    % (LOOKING, t))
-                    continue
-                looked[m[1]] = (n, m[2])
-        else:
-            problems.append("Offense: %r is not a situation of the call sheet (%s)"
-                            % (sub, ", ".join(label for _, label in OFFENSE_MENUS)))
-    if section.lines:
-        problems.append("Offense: write under a situation heading (%r sits under none)" % section.lines[0][1])
-    columns = tuple(c for c, _ in CALL_COLUMNS)
-    fields = dict(CALL_COLUMNS)
-    for n, row in read_table(section.subs.get(CALLS, []), columns, "Offense, Calls", problems):
-        call = {}
-        for column, value in row.items():
-            key = fields.get(column)
-            if key is None:
-                continue
-            try:
-                parsed = call_value(key, value)
-            except ValueError as exc:
-                problems.append("Offense, Calls, %r: %s" % (row.get("Call", ""), exc))
-                continue
-            if parsed is not None:
-                call[key] = parsed
-        if not call.get("name"):
-            problems.append("Offense, Calls: a row (line %d) names no call" % n)
-            continue
-        call["_line"] = n
-        calls.append(call)
-    names = {c["name"] for c in calls}
-    for name, (n, text) in looked.items():
-        if name not in names:
-            problems.append("Offense, %s: %r is not a call in the Calls table" % (LOOKING, name))
-    for call in calls:
-        if call["name"] in looked:
-            call["what_stone_is_looking_at"] = looked[call["name"]][1]
-    ordered = []
-    for call in calls:
-        ordered.append({k: call[k] for k in CALL_KEYS if k in call} | {"_line": call["_line"]})
-    return {"menus": menus, "calls": ordered}
-
-
-def call_value(key, value):
-    if key in ALWAYS_LISTS:
-        return listed(value)
-    if value == "":
-        return None
-    if key == "opener":
-        if not value.isdigit():
-            raise ValueError("the opener %r is not a number" % value)
-        return int(value)
-    if key == "opener_returns":
-        items = listed(value)
-        if not all(i.isdigit() for i in items):
-            raise ValueError("the returns %r are not opener numbers" % value)
-        return [int(i) for i in items]
-    if key in ("target", "carrier"):
-        return value if value in GROUP_VALUES else listed(value)
-    return value
-
-
-def _decision(kind):
-    def read(section, problems):
-        where = next(name for name, k in DECISION_SECTIONS.items() if k == kind)
-        entry, label = {}, SECTION_MENU.get(kind, "Calls")
-        rule_lines = [(n, t) for n, t in section.lines if t.startswith("|")]
-        prepared_at = None
-        for i, (n, t) in enumerate(section.lines):
-            m = labelled(t)
-            if t.lower().rstrip(".") == STANDING.lower():
-                entry["standing"] = True
-            elif m and m[0] == label:
-                entry["menu"] = m[1]
-            elif m and m[0] == "Otherwise":
-                words = {v.lower(): k for k, v in list(DECISION_WORDS[kind].items()) + list(OTHERWISE_WORDS.items())}
-                if m[1].strip().lower() not in words:
-                    problems.append("%s: otherwise %r is not one of %s" % (
-                        where, m[1], ", ".join(list(DECISION_WORDS[kind].values()) + list(OTHERWISE_WORDS.values()))))
-                else:
-                    entry["otherwise"] = words[m[1].strip().lower()]
-            elif m and m[0] == "Prepared calls":
-                prepared_at = n
-            elif not t.startswith("|"):
-                problems.append("%s: %r is neither a rule table, Otherwise, Standing rule nor %s" % (where, t, label))
-        rules_part = [(n, t) for n, t in rule_lines if prepared_at is None or n < prepared_at]
-        prepared_part = [(n, t) for n, t in rule_lines if prepared_at is not None and n > prepared_at]
-        columns = dict(RULE_COLUMNS[kind])
-        rows = read_table(rules_part, tuple(columns), where, problems)
-        if rows or rules_part:
-            entry["rules"] = []
-        for n, row in rows:
-            rule = rule_from_row(kind, row, where, problems)
-            if rule is not None:
-                entry["rules"].append(rule)
-        if prepared_part:
-            entry["prepared"] = {r["Situation"]: r["Call"]
-                                 for _, r in read_table(prepared_part, ("Situation", "Call"), where, problems)}
-        if entry.get("rules") is not None and "otherwise" not in entry:
-            problems.append("%s: say what happens otherwise (**Otherwise:** %s)" % (
-                where, " or ".join(list(DECISION_WORDS[kind].values()) + list(OTHERWISE_WORDS.values()))))
-        if entry.get("standing") and entry.get("rules") is not None:
-            problems.append("%s: write Standing rule or your own rules, not both" % where)
-        return entry
-    return read
 
 
 def rule_from_row(kind, row, where, problems):
@@ -894,142 +438,643 @@ def rule_from_row(kind, row, where, problems):
     return {"when": ordered, "decision": rule["decision"], **({"call": rule["call"]} if "call" in rule else {})}
 
 
-def _defense(section, problems):
-    from .defensive_calls import PRESSURE_FAMILIES
-    pressures = {v.lower(): k for k, v in PRESSURE_FAMILIES.items()} | {k: k for k in PRESSURE_FAMILIES}
-    value, lines = {}, {}
-    practice_at = None
-    for n, t in section.lines:
-        m = labelled(t)
-        if m and m[0] == "Who calls it":
-            if m[1].strip():
-                value["caller"] = m[1].strip()
-        elif m and m[0] == "Rush rule":
-            if m[1].strip():
-                value["rush"], lines["rush"] = m[1].strip(), n
-        elif m and m[0] == "As written":
-            value["rush_text"], lines["rush_text"] = m[1], n
-        else:
-            problems.append("Defense: %r is not Who calls it, Rush rule or As written (write them as "
-                            "'Who calls it: name' and 'Rush rule: your rule')" % t)
-    if "rush" in value:
-        from .defensive_calls import RUSH_RULE
-        if rush_words(value["rush"]) in RUSH_WORDS:
-            if value["rush"] != RUSH_RULE and "rush_text" not in value:
-                value["rush_text"], lines["rush_text"] = value["rush"], lines["rush"]
-            value["rush"] = RUSH_RULE
-        else:
-            problems.append("Defense, Rush rule: %r is not the active defensive playbook's rush rule; write "
-                            "'%s'" % (value["rush"], RUSH_CHOICE))
-    practiced, plines = {}, {}
-    sub = section.subs.get("Practiced this week", [])
-    for n, row in read_table(sub, ("Menu", "Words"), "Defense, Practiced this week", problems):
-        key = dict(PRACTICED).get(row["Menu"])
-        if key is None:
-            problems.append("Defense, Practiced this week: %r is not one of %s" % (
-                row["Menu"], ", ".join(label for label, _ in PRACTICED)))
+# ---------------------------------------------------------------- the situations a call belongs to
+from . import call_situations as cs  # noqa: E402
+
+FINAL_PLAY = "final-play-of-half"
+# Each offensive situation a call may name, as the frozen sheets spell it.
+SITUATION_TEXT = {cs.NORMAL: "normal down", cs.SECOND_LONG: "2nd-and-long", cs.THIRD_SHORT: "third-and-short",
+                  cs.THIRD_MEDIUM: "third-and-medium", cs.THIRD_LONG: "third-and-long", cs.BACKED_UP: "backed up",
+                  cs.HIGH_RED: "high red zone", cs.LOW_RED: "low red zone", cs.GOAL_LINE: "goal line",
+                  cs.TWO_MINUTE: "two-minute", cs.PRESS: "PRESS sequence", cs.FOUR_MINUTE: "four minute",
+                  cs.SUDDEN_CHANGE: "sudden change", cs.TWO_POINT: "two-point", FINAL_PLAY: "final play of half",
+                  cs.OPENING: "opening sequence"}
+SITUATION_WORDS = ("normal downs", "second and long", "third and short", "third and medium", "third and long",
+                   "backed up", "high red zone", "low red zone", "goal line", "two-minute", "PRESS sequence",
+                   "four-minute", "sudden change", "two-point tries", "final play of the half")
+_SITUATION_ALIASES = {"two-point-tries": cs.TWO_POINT, "two-point-try": cs.TWO_POINT,
+                      "two-point-conversions": cs.TWO_POINT, "final-play-of-the-half": FINAL_PLAY,
+                      "final-play-of-a-half": FINAL_PLAY, "press-sequences": cs.PRESS, "two-minute-offense": cs.TWO_MINUTE,
+                      "four-minute-offense": cs.FOUR_MINUTE, "2nd-and-long": cs.SECOND_LONG}
+ASK_WHICH = {"third-down": "third and short, third and medium or third and long",
+             "third-downs": "third and short, third and medium or third and long",
+             "red-zone": "high red zone, low red zone or goal line"}
+
+
+def situation_key(phrase):
+    """(menu key, problem) for one situation a call names."""
+    key = cs.menu_key(phrase)
+    key = _SITUATION_ALIASES.get(key, key)
+    if key in ASK_WHICH:
+        return None, "%r: say which: %s" % (phrase, ASK_WHICH[key])
+    if key == cs.OPENING:
+        return None, "%r: the opening ideas line puts a call in the opening sequence" % phrase
+    if key not in SITUATION_TEXT:
+        return None, "%r is not a situation of the call sheet (%s)" % (phrase, ", ".join(SITUATION_WORDS))
+    return key, None
+
+
+# ---------------------------------------------------------------- the defensive response words
+def _defense_terms():
+    from .defensive_calls import COVERAGES, COVERAGE_FAMILIES, FRONTS, PRESSURE_FAMILIES, STRENGTHS
+    strengths = "|".join(s.lower() for s in STRENGTHS)
+    coverages = sorted((c for c in COVERAGES if not c.isdigit()), key=len, reverse=True)
+    numbered = sorted(COVERAGES, key=len, reverse=True)
+    front_pattern = "|".join(re.escape(f.lower()) for f in sorted(FRONTS, key=len, reverse=True))
+    terms = [
+        (r"big nickel", lambda m: {"package": "Big Nickel"}),
+        (r"(%s)(?: (%s))?(?! strength)\b" % (front_pattern, strengths),
+         lambda m: {"front": next(f for f in FRONTS if f.lower() == m[1]),
+                    **({"strength": next(s for s in STRENGTHS if s.lower() == m[2])} if m[2] else {})}),
+        (r"(%s) strength" % strengths, lambda m: {"strength": next(s for s in STRENGTHS if s.lower() == m[1])}),
+        (r"nickel", lambda m: {"package": "Nickel"}),
+        (r"dime", lambda m: {"package": "Dime"}),
+        (r"base (?:4|four)(?:[- ]man)?(?: rush)?|four[- ]man rush|four rush",
+         lambda m: {"pressure": "base-4"}),
+        (r"base", lambda m: {"package": "Base"}),
+        (r"cover (%s)" % "|".join(re.escape(c.lower()) for c in numbered),
+         lambda m: {"coverage": [next(c for c in COVERAGES if c.lower() == m[1])]}),
+        (r"(%s)" % "|".join(re.escape(c.lower()) for c in coverages),
+         lambda m: {"coverage": [next(c for c in COVERAGES if c.lower() == m[1])]}),
+        (r"replace (field|boundary)", lambda m: {"pressure": "replace", "tags": [m[1]]}),
+        (r"replace(?: change-up)?|replacement pressure", lambda m: {"pressure": "replace"}),
+        (r"(?:interior )?mug", lambda m: {"pressure": "replace", "tags": ["mug"]}),
+    ]
+    for key, words in PRESSURE_FAMILIES.items():
+        if key in ("base-4", "replace"):
             continue
-        words = listed(row["Words"])
-        if key == "pressures":
-            words = [pressures.get(w.lower(), w) for w in words]
-        practiced[key] = words
-        plines[key] = (n, row["Words"])
-    value["practiced"], lines["practiced"] = practiced, plines
-    for i, (n, t) in enumerate(sub):
-        if labelled(t) and labelled(t)[0] == "Practice lines":
-            practice_at = i
-    if practice_at is not None:
-        value["practice_lines"], lines["practice_lines"] = [], []
-        for n, t in sub[practice_at + 1:]:
-            m = BULLET.match(t)
+        spelled = re.escape(words.lower()).replace("/", "[/ ]").replace(r"\-", "[- ]")
+        terms.append((spelled, lambda m, key=key: {"pressure": key}))
+    for family in COVERAGE_FAMILIES:
+        terms.append((r"%s(?: coverage)?" % re.escape(family.lower()), lambda m, f=family: {"coverage": [f]}))
+    return [(re.compile(r"(?:%s)(?![0-9a-z])" % pattern), build) for pattern, build in terms]
+
+
+FILLERS = ("or", "and", "with", "then", "plus", "the", "a", "first")
+_TERMS = None
+
+
+def response_call(text):
+    """(call, problems) of one prepared response, read word by word in the active defensive book's
+    words; (None, []) for an empty response. A response names at most one package, front, strength
+    and pressure; its coverages are the alternatives, in the order written."""
+    global _TERMS
+    if _TERMS is None:
+        _TERMS = _defense_terms()
+    low = " ".join(str(text or "").lower().replace(",", " , ").replace(";", " ; ").split())
+    if not low:
+        return None, []
+    found, problems, pos = {}, [], 0
+    while pos < len(low):
+        if low[pos] in " ,;./":
+            pos += 1
+            continue
+        for pattern, build in _TERMS:
+            m = pattern.match(low, pos)
             if m:
-                value["practice_lines"].append(m[1])
-                lines["practice_lines"].append(n)
-    rows = []
-    kinds = {v.lower(): k for k, v in KIND_WORDS.items()}
-    menus = {v.lower(): k for k, v in DEF_MENU_WORDS.items()} | {k: k for k in DEF_MENU_WORDS}
-    seen = set()
-    for n, row in read_table(section.subs.get("Calls by situation", []), tuple(c for c, _ in ROW_COLUMNS),
-                             "Defense, Calls by situation", problems):
-        where = "Defense, Calls by situation, line %d" % n
-        kind = kinds.get(row.get("Use", "").lower())
-        if kind is None:
-            problems.append("%s: the use %r is not one of %s" % (where, row.get("Use", ""),
-                                                                 ", ".join(KIND_WORDS.values())))
-            continue
-        entry = {"kind": kind}
-        if row.get("Situation"):
-            menu = menus.get(row["Situation"].lower())
-            if menu is None:
-                problems.append("%s: %r is not a defensive situation (%s)" % (
-                    where, row["Situation"], ", ".join(DEF_MENU_WORDS.values())))
-            else:
-                entry["menu"] = menu
-        rid = re.sub(r"\s+", "-", row.get("Row", "").strip().lower()) or row_id(kind, entry.get("menu"), seen)
-        seen.add(rid)
-        entry = {"id": rid, **entry}
-        call = {}
-        for column, key in ROW_COLUMNS[3:9]:
-            cell_value = row.get(column, "")
-            if not cell_value:
+                for key, value in build(m).items():
+                    if key in ("coverage", "tags"):
+                        found.setdefault(key, [])
+                        found[key] += [v for v in value if v not in found[key]]
+                    elif key in found and found[key] != value:
+                        problems.append("%r names two %ss (%s and %s); write one per response, each on its own row"
+                                        % (text, key, found[key], value))
+                    else:
+                        found[key] = value
+                pos = m.end()
+                break
+        else:
+            filler = re.compile(r"(?:%s)(?![0-9a-z])" % "|".join(FILLERS)).match(low, pos)
+            if filler:
+                pos = filler.end()
                 continue
-            if key in ("coverage", "tags"):
-                call[key] = listed(cell_value)
-            elif key == "pressure":
-                call[key] = pressures.get(cell_value.lower(), cell_value)
-            else:
-                call[key] = cell_value
-        if call:
-            entry["call"] = {k: call[k] for k in CALL_FIELDS if k in call}
-        # The row's words as the page writes them, verbatim on its own line: its As written cell, or
-        # else its name, its situation or its use.
-        entry["text"] = (row.get("As written") or row.get("Row", "").strip() or row.get("Situation")
-                         or row.get("Use"))
-        entry["_line"] = n
-        rows.append(entry)
-    value["rows"] = rows
-    notes = section.subs.get("Notes", [])
-    if notes:
-        value["notes"] = [BULLET.match(t)[1] if BULLET.match(t) else t for _, t in notes]
-    for sub_name in section.subs:
-        if sub_name not in ("Practiced this week", "Calls by situation", "Notes"):
-            problems.append("Defense: %r is not one of Practiced this week, Calls by situation or Notes" % sub_name)
-    value["_lines"] = lines
-    return value
+            word = re.match(r"[^ ,;]+", low[pos:])[0]
+            problems.append("%r is not a word of the active defensive playbook (in %r); write the response in the "
+                            "book's words and the reason in its own column" % (word, text))
+            pos += len(word)
+    order = ("package", "front", "strength", "coverage", "pressure", "tags")
+    return {k: found[k] for k in order if k in found}, problems
 
 
-READERS = {"Inactives": _inactives, "Depth chart changes": _depth, "Practice": _text, "Offense": _offense,
-           "Fourth downs": _decision("fourth_down"), "Two-point tries": _decision("two_point"),
-           "Kickoffs": _decision("kickoff"), "Defense": _defense, "Special teams": _text,
-           "Notes to the staff": _notes}
+def response_words(call):
+    """[(practiced list, word)] of a defensive call: its package, front, coverages, pressure and tags."""
+    out = []
+    for key, practiced in (("package", "packages"), ("front", "fronts"), ("pressure", "pressures")):
+        if call.get(key):
+            out.append((practiced, call[key]))
+    out += [("coverages", c) for c in call.get("coverage") or ()]
+    out += [("tags", t) for t in call.get("tags") or ()]
+    return out
+
+
+# The defensive situation menus a first cell may name (runtime/defensive_calls.MENUS).
+DEF_MENU_WORDS = {"normal-down": "Normal downs", "second-and-long": "Second and long",
+                  "third-and-short": "Third and short", "third-and-medium": "Third and medium",
+                  "third-and-long": "Third and long", "two-point": "Two-point try", "goal-line": "Goal line",
+                  "low-red-zone": "Low red zone", "high-red-zone": "High red zone", "red-zone": "Red zone",
+                  "backed-up": "Backed up", "two-minute": "Two-minute", "four-minute": "Four-minute",
+                  "lead-late": "Late lead"}
+_DEF_ALIASES = {"normal-downs": "normal-down", "two-point-tries": "two-point", "two-point-try": "two-point",
+                "late-lead": "lead-late", "a-late-lead": "lead-late"}
+KIND_WORDS = {"situation": "Situation", "presentation": "Presentation", "counter": "Counter",
+              "conditional": "Conditional"}
+
+
+def response_kind(text):
+    """(kind, menu) of a defensive row from its first cell: a situation the defense keys is that
+    situation's row; a cell beginning If or When a conditional row, Counter a counter; any other a
+    presentation."""
+    key = cs.menu_key(text)
+    key = _DEF_ALIASES.get(key, key)
+    if key in DEF_MENU_WORDS:
+        return "situation", key
+    first = (str(text).strip().split() or [""])[0].lower().rstrip(":,")
+    if first in ("if", "when"):
+        return "conditional", None
+    if first == "counter":
+        return "counter", None
+    return "presentation", None
+
+
+def row_id(kind, menu, seen):
+    """A defensive row's id: its situation for a situation row, else its use and a count."""
+    if kind == "situation" and menu:
+        return menu
+    n = 1
+    while "%s-%d" % (kind, n) in seen:
+        n += 1
+    return "%s-%d" % (kind, n)
+
+
+# ---------------------------------------------------------------- reading a page
+class Field:
+    def __init__(self, key, line, text, label):
+        self.key, self.line, self.text, self.label = key, line, text, label
+
+
+def _label_key(section, label):
+    if section == 2 and CONTINGENCY.match(label):
+        return "contingency"
+    for key, s, l, _ in FIELDS:
+        if s == section and l == label:
+            return key
+    return OLD_LABELS.get((section, label))
+
+
+def split(text):
+    """({key: Field}, {table: [(line, text)]}, {decision key: [(line, text)]}, problems) of a page."""
+    fields, tables, rules, problems = {}, {"calls": [], "responses": [], "practice": []}, {}, []
+    section, sub, current, found = 0, None, None, set()
+    for number, raw in enumerate(text.splitlines(), 1):
+        line = raw.strip()
+        if raw.startswith("## "):
+            name = raw[3:].strip()
+            if name not in HEADINGS:
+                problems.append("The page has a heading %r that is not one of the Game Plan's headings" % name)
+                section, sub, current = -1, None, None
+                continue
+            section, sub, current = HEADINGS.index(name) + 1, None, None
+            if section in found:
+                problems.append("%s: the heading appears twice" % name)
+            found.add(section)
+            continue
+        if raw.startswith("### "):
+            name = raw[4:].strip()
+            if name not in SUBHEADINGS.get(section, ()):
+                problems.append("%s: %r is not one of its headings; write under the section's own lines"
+                                % (heading(section), name))
+            sub, current = name, None
+            continue
+        if section < 0 or not line or line.startswith(">") or raw.startswith("# "):
+            continue
+        m = LABELLED.match(line)
+        if m:
+            label, value = m[1].strip(), m[2].strip()
+            key = _label_key(section, label)
+            if key is None:
+                problems.append("%s: %r is not one of its lines" % (heading(section), label))
+                current = None
+                continue
+            if key in fields:
+                problems.append("%s: the line %r appears twice" % (heading(section), label))
+            fields[key] = Field(key, number, value, label)
+            current = key
+            continue
+        if line.startswith("|"):
+            if section == 5 and current in DECISION_KEYS:
+                rules.setdefault(current, []).append((number, line))
+                continue
+            current = None          # a line after a table answers no label above it
+            name = next((t for t, (s, subname, _) in TABLES.items() if s == section and subname in (None, sub)
+                         and (subname is not None or section != 3)), None)
+            if name is None:
+                problems.append("%s: a table sits where the page has none (%s)" % (heading(section), line[:60]))
+                continue
+            tables[name].append((number, line))
+            continue
+        where = heading(section) if section else "The page's header"
+        if current is not None and FIELD[current][2] in CONTINUED_KINDS:
+            # A further line or a bullet under a label of his own direction is part of that answer: it
+            # is author intent, kept as written, and never compiles.
+            f = fields[current]
+            f.text = (f.text + "\n" + line) if f.text else line
+            continue
+        if current is not None:
+            problems.append("%s: %r continues the line %r, which is read as one answer; write it on that line, "
+                            "the items separated by semicolons" % (where, line[:80], fields[current].label))
+            continue
+        problems.append("%s: %r is not on a line of its own label; write it after the label it answers"
+                        % (where, line[:80]))
+    for n, name in enumerate(HEADINGS, 1):
+        if n not in found:
+            problems.append("%s: the heading is missing" % name)
+    for key, section_, label, _ in FIELDS:
+        if key not in fields and (section_ == 0 or section_ in found):
+            problems.append("%s: the line %r is missing" % (heading(section_) if section_ else "The page's header",
+                                                             label))
+    return fields, tables, rules, problems
+
+
+def heading(section):
+    return HEADINGS[section - 1] if section else "The page's header"
+
+
+def where_of(key, label=None):
+    """Where a line sits, in the page's words: "Offense, Caller"; a header line by its label."""
+    section, fixed, _ = FIELD[key]
+    label = label or fixed
+    return label if section == 0 else "%s, %s" % (heading(section).split(". ", 1)[-1].split(":")[0], label)
+
+
+def parse(text):
+    """(choices, problems): the page's answers, read into their meanings, and every problem of form
+    in football words. ``choices["unanswered"]`` lists the lines left empty."""
+    fields, tables, rules, problems = split(text)
+    choices = {"fields": {k: {"line": f.line, "text": f.text, "label": f.label} for k, f in fields.items()},
+               "unanswered": []}
+    for key, _, _, kind in FIELDS:
+        f = fields.get(key)
+        if f is None or not f.text:
+            choices["unanswered"].append(key)
+            choices[key] = None
+            continue
+        reader = READERS.get(kind)
+        choices[key] = reader(key, f, problems) if reader else f.text
+    for key in DECISION_KEYS:
+        value = choices.get(key)
+        if isinstance(value, dict) and "otherwise" in value and "rules" in value:
+            value["rules"] = []
+            rows = read_table(rules.get(key, []), tuple(c for c, _ in RULE_COLUMNS[key]), where_of(key), problems,
+                              strict=False)
+            for n, row in rows:
+                rule = rule_from_row(key, row, where_of(key), problems)
+                if rule is not None:
+                    value["rules"].append(rule)
+            if not value["rules"]:
+                problems.append("%s: My rules needs the rule table below the line" % where_of(key))
+        elif rules.get(key):
+            problems.append("%s: a rule table goes with My rules, otherwise ..." % where_of(key))
+    choices["calls"] = [_call_row(n, row, problems) for n, row in
+                        read_table(tables["calls"], CALL_COLUMNS, "Offense, Primary calls", problems)]
+    choices["responses"] = [_response_row(n, row, problems) for n, row in
+                            read_table(tables["responses"], RESPONSE_COLUMNS, "Defense, prepared responses", problems)]
+    practice = read_table(tables["practice"], PRACTICE_COLUMNS, "What we will practice", problems)
+    choices["practice"] = [{"line": n, **{k: row[c] for k, c in zip(("priority", "who", "situation", "ready"),
+                                                                    PRACTICE_COLUMNS)}} for n, row in practice]
+    return choices, problems
+
+
+def _carry(text):
+    m = CARRY.match(text)
+    return int(m[1]) if m else None
+
+
+def issue_label(day, revision=1):
+    """A briefing's issue as the page names it: its date, and from the second issue of a day its
+    revision ("October 5, 2014, revision 2")."""
+    return long_date(day) + (", revision %d" % revision if revision and revision > 1 else "")
+
+
+def _date(key, f, problems):
+    """{date, revision} of the briefing he answers: its date, and its revision when the day had more
+    than one issue (an unnumbered date is the day's first)."""
+    m = DATE.match(f.text)
+    if not m:
+        problems.append("%s: write the briefing you answer as its status line names it, like October 5, 2014, or "
+                        "October 5, 2014, revision 2 for a later issue that day" % where_of(key))
+        return None
+    from datetime import datetime
+    when = datetime.strptime("%s %s %s" % (m[1].capitalize(), m[2], m[3]), "%B %d %Y").date()
+    return {"date": when, "revision": int(m[4]) if m[4] else 1}
+
+
+def _baseline(key, f, problems):
+    week = _carry(f.text)
+    if week is not None and not CARRY.match(f.text)[2].strip(" .,"):
+        return {"carry": week}
+    if NEW_PLAN.match(f.text):
+        return {"new": True}
+    problems.append("Baseline: write Carry Week N or New plan (%r)" % f.text)
+    return None
+
+
+def _names(text):
+    """[(name, reason)] of a list of players: commas or semicolons between them, a reason in
+    parentheses after a name."""
+    out = []
+    # Commas, semicolons and "and" separate the names; a reason in parentheses keeps its own.
+    masked = re.sub(r"\([^()]*\)", lambda m: m[0].replace(",", "\0").replace(";", "\1").replace(" and ", "\2"), text)
+    for item in re.split(r"[;,]|\s+and\s+", masked):
+        item = item.replace("\0", ",").replace("\1", ";").replace("\2", " and ")
+        item = item.strip()
+        if not item:
+            continue
+        m = re.match(r"^(.*?)\s*\((.*)\)\s*$", item)
+        out.append((m[1].strip(), m[2].strip()) if m else (item, ""))
+    return out
+
+
+def _inactives(key, f, problems):
+    text = f.text
+    week = _carry(text)
+    if week is not None:
+        return {"same_as": week}
+    if NONE.match(text) or NO_CHANGE.match(text):
+        problems.append("Inactives: write Standing rule, Standing rule with the others you name, the players by "
+                        "name, or Carry Week N")
+        return None
+    standing = text.lower().startswith(STANDING.lower())
+    rest = text[len(STANDING):] if standing else text
+    rest = re.sub(r"^[\s,;:.]*(?:with|and|plus|also|naming)?\b[\s,;:]*", "", rest, flags=re.I) if standing else rest
+    named = _names(rest)
+    value = {"players": [n for n, _ in named], "reasons": {n: r for n, r in named if r}}
+    return dict({"standing": True}, **value) if standing else value
+
+
+def _depth(key, f, problems):
+    if NONE.match(f.text) or NO_CHANGE.match(f.text):
+        return "none"
+    orders, roles = {}, {}
+    for item in items(f.text):
+        label, _, rest = item.partition(":")
+        label, rest = label.strip(), rest.strip().rstrip(".")
+        group = re.match(r"^(.*?)\s+order$", label, re.I)
+        if group and (group[1] in GROUPS or group[1] in GROUPS.values()):
+            orders[GROUPS.get(group[1], group[1])] = listed(rest)
+        elif label in ROLES and rest:
+            roles[ROLES[label]] = rest
+        else:
+            problems.append("Depth/role changes: %r is not a change the chart takes; write No change, None, a role "
+                            "and its player (%s: name) or a group's new order (Wide receivers order: names), "
+                            "separated by semicolons" % (item, ", ".join(ROLES)))
+    return {"orders": orders, "roles": roles}
+
+
+def _caller(key, f, problems):
+    if NO_CHANGE.match(f.text):
+        return {"no_change": True}
+    return {"name": f.text.rstrip(".")}
+
+
+def _opening(key, f, problems):
+    week = _carry(f.text)
+    if week is not None:
+        return {"carry": week}
+    if NO_CHANGE.match(f.text):
+        return {"no_change": True}
+    if NONE.match(f.text):
+        return "none"
+    return {"items": items(f.text)}
+
+
+def _situational(key, f, problems):
+    week = _carry(f.text)
+    return {"carry": week, "text": f.text} if week is not None else {"text": f.text}
+
+
+SPECIAL = re.compile(r"^(.*?):\s*(keep|remove|practice only)\b[\s,.;:-]*(.*)$", re.I)
+
+
+def _special(key, f, problems):
+    if NONE.match(f.text) or NO_CHANGE.match(f.text) or _carry(f.text) is not None:
+        return "no_change"
+    out = []
+    for item in items(f.text):
+        m = SPECIAL.match(item)
+        if not m:
+            problems.append("Special plays: write each as the call, then Keep, Remove or Practice only (%r)" % item)
+            continue
+        out.append({"call": m[1].strip(), "status": m[2].lower(), "reason": m[3].strip()})
+    return out
+
+
+def _removals(key, f, problems):
+    if NONE.match(f.text) or NO_CHANGE.match(f.text):
+        return []
+    out = []
+    for item in items(f.text):
+        m = re.match(r"^(.*?)\s*\((.*)\)\s*$", item)
+        out.append({"call": (m[1] if m else item).strip().rstrip("."), "reason": m[2].strip() if m else ""})
+    return out
+
+
+def _rush(key, f, problems):
+    week = _carry(f.text)
+    if week is not None:
+        return {"carry": week}
+    if NO_CHANGE.match(f.text):
+        return {"no_change": True}
+    if rush_words(f.text) not in RUSH_WORDS:
+        problems.append("Defense, Rush rule: %r is not the active defensive playbook's rush rule; write '%s'"
+                        % (f.text, RUSH_CHOICE))
+        return None
+    return {"text": f.text, "line": f.line}
+
+
+def _decision(key, f, problems):
+    text = f.text
+    if text.lower().rstrip(".") == STANDING.lower():
+        return {"standing": True}
+    week = _carry(text)
+    if week is not None:
+        return {"same_as": week}
+    if NO_CHANGE.match(text):
+        return {"no_change": True}
+    if NONE.match(text):
+        return "none"
+    m = MY_RULES.match(text)
+    if m:
+        words = {v.lower(): k for k, v in list(DECISION_WORDS[key].items()) + list(OTHERWISE_WORDS.items())}
+        if m[1].strip().lower() not in words:
+            problems.append("%s: otherwise %r is not one of %s" % (where_of(key), m[1], ", ".join(
+                list(DECISION_WORDS[key].values()) + list(OTHERWISE_WORDS.values()))))
+            return None
+        return {"rules": [], "otherwise": words[m[1].strip().lower()]}
+    problems.append("%s: write Standing rule, Carry Week N, No change, None%s or My rules, otherwise ... above a "
+                    "rule table (%r)" % (where_of(key), " (your live call on each)" if key == "fourth_down" else "",
+                                         text))
+    return None
+
+
+READERS = {"briefing": _date, "baseline": _baseline, "inactives": _inactives, "depth": _depth,
+           "caller": _caller, "opening": _opening, "situational": _situational, "special": _special,
+           "removals": _removals, "rush": _rush, "decision": _decision}
+
+
+NEW_CALL = re.compile(r"^new call\s*:\s*(.*)$", re.I)
+
+
+def _call_row(n, row, problems):
+    text = row[CALL_COLUMNS[0]]
+    marked = NEW_CALL.match(text.strip())
+    if marked:
+        text = marked[1]
+    m = re.match(r"^(.*?)\s*\(([^()]*)\)\s*$", text)
+    name, variations, without = (m[1].strip(), [], []) if m else (text.strip(), [], [])
+    if m:
+        for part in listed(m[2]):
+            w = re.match(r"^without\s+(.+)$", part, re.I)
+            (without if w else variations).append(w[1].strip() if w else part)
+    menus, words = [], listed(row[CALL_COLUMNS[1]])
+    for phrase in words:
+        key, problem = situation_key(phrase)
+        if problem:
+            problems.append("Offense, Primary calls, %s: %s" % (name or "a row", problem))
+        elif key not in menus:
+            menus.append(key)
+    if not name:
+        problems.append("Offense, Primary calls: a row (line %d) names no call" % n)
+    if not words:
+        problems.append("Offense, Primary calls, %s: say when you want it (%s)" % (name, ", ".join(SITUATION_WORDS)))
+    return {"line": n, "cell": row[CALL_COLUMNS[0]], "name": name, "variations": variations, "without": without,
+            "menus": menus, "new": bool(marked), "reason": row[CALL_COLUMNS[2]], "condition": row[CALL_COLUMNS[3]]}
+
+
+def _response_row(n, row, problems):
+    first, response = row[RESPONSE_COLUMNS[0]], row[RESPONSE_COLUMNS[1]]
+    kind, menu = response_kind(first)
+    call, found = response_call(response)
+    problems += ["Defense, %s: %s" % (first or "a row", p) for p in found]
+    if not first:
+        problems.append("Defense, prepared responses: a row (line %d) names no situation or presentation" % n)
+    if kind == "situation" and not call:
+        problems.append("Defense, %s: a situation's row needs its prepared front, coverage or pressure" % first)
+    return {"line": n, "first": first, "response": response, "kind": kind, "menu": menu, "call": call,
+            "reason": row[RESPONSE_COLUMNS[2]], "counter": row[RESPONSE_COLUMNS[3]]}
+
+
+# ---------------------------------------------------------------- writing a page
+GUIDE = {
+    "header": "Under each heading, answer every line. No change keeps the last legal instruction set; None means "
+              "intentionally nothing; a line left empty is unanswered, and nothing is set for the game until every "
+              "line is answered. Baseline: Carry Week N starts from that week's calls and defensive responses as "
+              "set; New plan starts from none.",
+}
+
+
+def render(title, facts, answers=None):
+    """A Game Plan page: ``facts`` the builder's lines (head_coach, game, briefing and the guide line of
+    each section, ``guides``); ``answers`` maps a line's key to its text and each table's name to its
+    rows (lists of cells), and a decision key with "My rules" to its rule rows under ``rules``.
+    ``render(title, facts)`` is the blank page."""
+    answers = answers or {}
+    guides = facts.get("guides") or {}
+    out = ["# " + title, ""]
+    if facts.get("intro"):
+        out += ["> " + facts["intro"], ""]
+
+    def value(key):
+        if key in answers:
+            return answers[key]
+        if key in ("head_coach", "game", "briefing"):
+            return facts.get(key, "")
+        return ""
+
+    def lines(keys):
+        rows = []
+        for key in keys:
+            label = facts.get("contingency_label", CONTINGENCY_LABEL) if key == "contingency" else FIELD[key][1]
+            rows.append(("**%s:** %s" % (label, value(key))).rstrip())
+        return [r + "  " for r in rows[:-1]] + rows[-1:]
+
+    def rule_table(key):
+        rows = (answers.get("rules") or {}).get(key)
+        if not rows:
+            return []
+        columns = [c for c, _ in RULE_COLUMNS[key]]
+        return [""] + table(columns, rows)
+
+    out += lines(("head_coach", "game", "briefing", "baseline")) + [""]
+    if guides.get("header", GUIDE["header"]):
+        out += ["> " + guides.get("header", GUIDE["header"]), ""]
+    for n, name in enumerate(HEADINGS, 1):
+        out += ["## " + name, ""]
+        if guides.get(n):
+            out += ["> " + guides[n], ""]
+        keys = [k for k, s, _, _ in FIELDS if s == n]
+        if n == 3:
+            top = [k for k in keys if k not in SITUATIONAL_KEYS]
+            out += lines(top) + ["", "### " + CALLS_SUB, ""]
+            if guides.get("calls"):
+                out += ["> " + guides["calls"], ""]
+            out += table(CALL_COLUMNS, answers.get("calls") or []) + ["", "### " + SITUATIONS_SUB, ""]
+            if guides.get("situations"):
+                out += ["> " + guides["situations"], ""]
+            out += lines(SITUATIONAL_KEYS) + [""]
+        elif n == 4:
+            before = [k for k in keys if k != "matchups"]
+            out += lines(before) + [""]
+            if guides.get("responses"):
+                out += ["> " + guides["responses"], ""]
+            out += table(RESPONSE_COLUMNS, answers.get("responses") or []) + [""] + lines(["matchups"]) + [""]
+        elif n == 5:
+            for key in keys:
+                out += lines([key]) + rule_table(key) + [""]
+        elif n == 6:
+            out += table(PRACTICE_COLUMNS, answers.get("practice") or []) + [""] + lines(keys) + [""]
+        else:
+            out += lines(keys) + [""]
+    return "\n".join(out).rstrip("\n") + "\n"
+
+
+def blank(title, facts):
+    """A blank Game Plan: every heading and line, the builder's facts and guide lines, empty tables."""
+    return render(title, facts)
 
 
 # ---------------------------------------------------------------- the frame
 def frame_from_sheet(sheet):
-    """The frame of a frozen sheet: its record fields that are not football choices (the event,
-    when and from what it was frozen, the ids and source wording of its decision blocks, and the
-    packet lines its defensive rows cite)."""
-    frame = {"top": {k: sheet[k] for k in TOP_KEYS if k in sheet}, "decisions": {}, "defense": None}
+    """The frame of a sheet frozen before version 2 (the Week 5 proof): its record fields that are not
+    football choices and that version 2 keeps out of the sheet or derives itself: the event, when and
+    from what it was frozen; the situation prose, the notes and each call's 'what I am looking at'
+    text (author text, which a version 2 page keeps as intent, never in the sheet); and the defensive
+    sheet's packet, notes, rush-rule citation, practiced menu and each row's id and packet citation (a
+    version 2 page derives the ids and the practiced menu and cites its own lines)."""
+    frame = {"top": {k: sheet[k] for k in TOP_KEYS if k in sheet},
+             "record_text": {k: copy.deepcopy(sheet[k]) for k in ("menus", "notes") if k in sheet},
+             "looking": {c["name"]: c["what_stone_is_looking_at"] for c in sheet.get("offensive_call_sheet") or ()
+                         if isinstance(c, dict) and "what_stone_is_looking_at" in c},
+             "decisions": {}, "defense": None}
     for kind, block in (sheet.get("decisions") or {}).items():
         frame["decisions"][kind] = {"id": block.get("id"), "source": block.get("source"),
                                     "rules": [{"id": r.get("id"), "source": r.get("source")}
                                               for r in block.get("rules") or ()]}
     ds = sheet.get("defensive_call_sheet")
     if ds is not None:
-        where = lambda s: {"path": s["path"], "line": s["line"]}
         frame["defense"] = {"head": {k: ds[k] for k in ("schema_version", "team", "book", "packet") if k in ds},
-                            "rush": where(ds["rush_rule"]["source"]),
-                            "practiced": [where(s) for s in (ds.get("practiced") or {}).get("sources") or ()],
-                            "rows": {r["id"]: where(r["source"]) for r in ds.get("rows") or ()}}
+                            "notes": copy.deepcopy(ds.get("notes")) if "notes" in ds else None,
+                            "rush": copy.deepcopy(ds["rush_rule"]["source"]),
+                            "practiced": copy.deepcopy(ds.get("practiced")),
+                            "rows": [{"id": r["id"], "source": copy.deepcopy(r["source"])} for r in ds.get("rows") or ()]}
     return frame
 
 
 def page_frame(page_rel, event, frozen, provenance, team, book, week):
-    """The frame a Game Plan writes when it is applied: its decision blocks named for the week, and
-    its defensive rows citing the page's own lines (no per-row entries: build_sheet uses the
-    parsed line numbers)."""
+    """The frame a version 2 Game Plan writes when it is applied: its own decision blocks named for the
+    week, and its defensive record citing the page's own lines."""
     return {"top": {"schema_version": 1, "team": team, "event": event, "status": STATUS, "frozen": frozen,
                     "provenance": provenance},
+            "record_text": {}, "looking": {},
             "decisions": {kind: {"id": "stone-%s-game-plan-week-%d" % (kind.replace("_", "-"), week),
                                  "source": "Stone's Week %d Game Plan, %s" % (week, section)}
                           for section, kind in DECISION_SECTIONS.items()},
@@ -1037,134 +1082,472 @@ def page_frame(page_rel, event, frozen, provenance, team, book, week):
                         "page": page_rel}}
 
 
-# ---------------------------------------------------------------- the call sheet
-def build_sheet(choices, frame, carried=None, standing=None):
-    """The call sheet from the page's choices and the frame. ``carried`` maps a week to its frozen
-    sheet for "Same as Week N"; ``standing`` maps a decision kind to the standing rule's block for
-    "Standing rule". Raises ValueError on a choice it cannot place."""
-    carried = carried or {}
-    standing = standing or {}
-    sheet = dict(frame["top"])
-    menus = {}
+# ---------------------------------------------------------------- the compiler
+def tokens(text):
+    return norm(text).split()
 
-    def week_sheet(week):
-        if week not in carried:
-            raise ValueError("Week %d's call sheet is not on file" % week)
-        return carried[week]
 
-    offense = choices.get("offense")
-    if isinstance(offense, dict) and "same_as" in offense:
-        source = week_sheet(offense["same_as"])
-        menus.update({k: v for k, v in (source.get("menus") or {}).items() if k not in ("fourth_down", "two_point")})
-        calls = json.loads(json.dumps(source.get("offensive_call_sheet") or []))
+def _subsequence(short, long_):
+    it = iter(long_)
+    return all(any(t == u for u in it) for t in short)
+
+
+def match_calls(text, names):
+    """The name a call written as ``text`` stands for: only its exact name (its words, marks and case
+    aside). A shorter or partial name never resolves to a longer call, which would add a route, a tag
+    or a protection he did not write (docs/game_week_v2.md, section 4.5); ``near_calls`` names the
+    calls it might mean, for the check to ask."""
+    want = tokens(text)
+    if not want:
+        return []
+    return [n for n in names if tokens(n) == want][:1]
+
+
+def near_calls(text, names):
+    """The calls whose words hold every word of ``text`` in order, the exact name aside: what a short
+    or partial name might mean, for the check to ask (never to resolve)."""
+    want = tokens(text)
+    if not want:
+        return []
+    return [n for n in names if tokens(n) != want and _subsequence(want, tokens(n))]
+
+
+def did_you_mean(text, near):
+    return " or ".join(near) if near else ""
+
+
+def base_tags(tags):
+    return [t for t in tags or () if t not in DERIVED_TAGS]
+
+
+def form_of(call):
+    return {k: copy.deepcopy(call[k]) for k in FORM_KEYS if call.get(k) is not None}
+
+
+def new_call_form(name):
+    """(form, problem) of a call no earlier sheet carries, read from its name: the grouping and
+    formation before the first comma, then the concept (with its direction) and the protection. A
+    special play or gadget of the book that the call-family map gives no carrier or receiver for
+    (runtime/call_families.py) is set with its book type (runtime/offensive_words.BOOK_PLAY_TYPES:
+    a Flea Flicker is a pass, a WR Reverse a run) and both players unspecified, the map's own word
+    for a call whose players are not named: no completion or carry is labelled with it until the map
+    names its players, though, as any pass call on its menu, it may still describe a sack or a
+    quarterback scramble in the play-by-play. Like every call on the sheet, it goes into the outcome
+    packet (its family, type, personnel, formation, protection and tags; play_detail.
+    canonical_call_sheet), so adding it changes the game's random draws, with no football effect."""
+    from . import call_families, offensive_words
+    parts = [p.strip() for p in name.split(",")]
+    if len(parts) < 2 or len(parts) > 3:
+        return None, ("%r is not on any earlier Jacksonville call sheet; write a new call as its formation, concept "
+                      "and protection, for example 11 Trips, Smash, HALF" % name)
+    formation = parts[0]
+    personnel = formation.split()[0] if formation.split() and formation.split()[0].upper() in \
+        offensive_words.PERSONNEL else None
+    concept = re.sub(r"\s+(Right|Left|R|L)$", "", parts[1])
+    family, entry = call_families.family_entry(concept)
+    if family is None:
+        book = offensive_words.concept(concept)
+        if not book:
+            return None, "%r: %r is not a concept of the active playbook" % (name, concept)
+        form = {"family": book, "type": offensive_words.BOOK_PLAY_TYPES[book], "carrier": call_families.UNSPECIFIED,
+                "target": call_families.UNSPECIFIED}
     else:
-        offense = offense if isinstance(offense, dict) else {}
-        menus.update(offense.get("menus") or {})
-        calls = [{k: v for k, v in c.items() if k != "_line"} for c in offense.get("calls") or ()]
+        kind = "mixed" if "carrier" in entry and "target" in entry else "run" if "carrier" in entry else "pass"
+        form = {"family": family, "type": kind}
+    if personnel:
+        form["personnel"] = personnel
+    form["formation"] = formation
+    if len(parts) == 3:
+        if parts[2].lower() not in {p.lower() for p in offensive_words.PROTECTIONS}:
+            return None, "%r: %r is not a protection of the active playbook (%s)" % (
+                name, parts[2], ", ".join(offensive_words.PROTECTIONS))
+        form["protection"] = next(p for p in offensive_words.PROTECTIONS if p.lower() == parts[2].lower())
+    return form, None
+
+
+def earlier_forms(earlier, baseline=None):
+    """{call name: (form with tags and menus, week, index)}: every call of the earlier frozen sheets,
+    the latest week's form of each, and the baseline week's ahead of any other."""
+    forms = {}
+    order = sorted(earlier) + ([baseline] if baseline in earlier else [])
+    for week in order:
+        for i, call in enumerate(earlier[week].get("offensive_call_sheet") or ()):
+            if isinstance(call, dict) and call.get("name"):
+                forms[call["name"]] = (call, week, i)
+    return forms
+
+
+# What a Special plays line says when it names a call the week's sheet does not have: a special play
+# is set for its situations in the Primary calls table, and Keep, Remove or Practice only is its
+# status there.
+SPECIAL_REMEDY = ("; to call it this week, add it as a row in the Primary calls table with the situations you "
+                  "want it for")
+# How a call the page takes off is named when an Opening ideas item names it.
+TAKEN_OFF = {"remove": "removed under Special plays", "practice only": "kept for practice only under Special plays",
+             "not available": "among the calls not available this week"}
+
+
+def latest(earlier, test=lambda sheet: True):
+    weeks = [w for w in sorted(earlier) if test(earlier[w])]
+    return weeks[-1] if weeks else None
+
+
+def compile_sheet(choices, frame, earlier, standing=None, arrangement=None):
+    """(sheet, source map, problems): the call sheet the page compiles to, from its choices, the frame
+    (``page_frame`` or, for the Week 5 proof, ``frame_from_sheet``), the earlier frozen Jacksonville
+    sheets ({week: sheet}), the standing decision blocks ({kind: block}) and the calling arrangement
+    on file ({"defense": caller's name}, which "No change" on a caller line means). Every problem is
+    in football words; with any problem the sheet is None."""
+    standing = standing or {}
+    problems, source = [], {"calls": {}, "defense": {}, "decisions": {}}
+    baseline = (choices.get("baseline") or {}).get("carry")
+    if baseline is not None and baseline not in earlier:
+        problems.append("Baseline: Week %d has no call sheet as set to carry" % baseline)
+        baseline = None
+    base = earlier.get(baseline) if baseline is not None else None
+    forms = earlier_forms(earlier, baseline)
+
+    # The calls on the sheet: the baseline's, then the table's.
+    calls, order = {}, []
+    for i, call in enumerate((base or {}).get("offensive_call_sheet") or ()):
+        entry = {"name": call["name"], "form": form_of(call), "tags": base_tags(call.get("tags")),
+                 "menus": [cs.menu_key(m) for m in call.get("menus") or () if cs.menu_key(m) != cs.OPENING],
+                 "from": [{"carried": {"week": baseline, "call": i}}]}
+        calls[call["name"]] = entry
+    carried_order = list(calls)
+    table_order = []
+    for row in choices.get("calls") or ():
+        if not row["name"]:
+            continue
+        found = match_calls(row["name"], list(forms))
+        if found:
+            name = found[0]
+            call, w, idx = forms[name]
+            entry = calls.get(name) or {"name": name, "form": form_of(call), "tags": base_tags(call.get("tags")),
+                                        "from": [{"carried": {"week": w, "call": idx}}]}
+        else:
+            near = near_calls(row["name"], list(forms))
+            if near and not row.get("new"):
+                # A short or partial name is asked about, never resolved to a longer call; the call its
+                # own words name is written "New call: <name>".
+                problems.append("Offense, Primary calls: %s is not a call of an earlier Jacksonville sheet as written; "
+                                "did you mean %s? Write the call's full name, or, for the call these words name, "
+                                "New call: %s" % (row["name"], did_you_mean(row["name"], near), row["name"]))
+                continue
+            # Any call of the active book may be named, practiced this week or not; the check holds
+            # every word of it to the book (scripts/check_game_plan.offense_problems).
+            form, problem = new_call_form(row["name"])
+            if problem:
+                problems.append("Offense, Primary calls: %s" % problem)
+                continue
+            name = row["name"]
+            entry = {"name": name, "form": form, "tags": [], "from": [], "new": True}
+        if name in table_order:
+            problems.append("Offense, Primary calls: %s is written twice" % name)
+            continue
+        entry = dict(entry, menus=list(row["menus"]))
+        for tag in row["without"]:
+            if tag not in entry["tags"]:
+                problems.append("Offense, Primary calls, %s: it carries no %s to take off" % (name, tag))
+            entry["tags"] = [t for t in entry["tags"] if t != tag]
+        for tag in row["variations"]:
+            if tag not in entry["tags"]:
+                entry["tags"].append(tag)
+        entry["from"] = list(entry["from"]) + [{"page": row["line"], "text": row["cell"]}]
+        calls[name] = entry
+        table_order.append(name)
+
+    def on_sheet(text, where, remedy=""):
+        found = match_calls(text, list(calls))
+        if found:
+            return found[0]
+        near = near_calls(text, list(calls))
+        problems.append("%s: %s %s" % (where, text, "is not a call on this week's sheet as written; did you mean %s? "
+                                       "Write the call's full name" % did_you_mean(text, near) if near
+                                       else "is not a call on this week's sheet" + remedy))
+        return None
+
+    def opening_call(text, where):
+        """The call an Opening ideas item names. Any call of the active book may be named: a call on
+        this week's sheet is that call; one the page takes off is asked about; one an earlier sheet
+        carries takes that sheet's form; any other is read from its name (``new_call_form``, which
+        refuses a word the active book does not have). An added call has the opening sequence as its
+        only situation. A short or partial name is asked about, never resolved to a longer call; the
+        call its own words name is written "New call: <name>"."""
+        marked = NEW_CALL.match(text.strip())
+        text = (marked[1] if marked else text).strip()
+        found = match_calls(text, list(calls))
+        if found:
+            return found[0]
+        gone = match_calls(text, list(removed))
+        if gone:
+            problems.append("%s: %s is %s; take it out of one" % (where, gone[0], TAKEN_OFF[removed[gone[0]]]))
+            return None
+        found = match_calls(text, list(forms))
+        if found:
+            call, w, idx = forms[found[0]]
+            calls[found[0]] = {"name": found[0], "form": form_of(call), "tags": base_tags(call.get("tags")),
+                               "menus": [], "from": [{"carried": {"week": w, "call": idx}}]}
+            return found[0]
+        near = list(dict.fromkeys(near_calls(text, list(calls)) + near_calls(text, list(forms))))
+        if near and not marked:
+            problems.append("%s: %s is not a call of this week's sheet or an earlier Jacksonville sheet as written; "
+                            "did you mean %s? Write the call's full name, or, for the call these words name, New "
+                            "call: %s" % (where, text, did_you_mean(text, near), text))
+            return None
+        form, problem = new_call_form(text)
+        if problem:
+            problems.append("%s: %s" % (where, problem))
+            return None
+        calls[text] = {"name": text, "form": form, "tags": [], "menus": [], "from": [], "new": True}
+        return text
+
+    removed, kept = {}, set()
+    special = choices.get("special_plays")
+    for item in special if isinstance(special, list) else ():
+        name = on_sheet(item["call"], "Offense, Special plays", SPECIAL_REMEDY)
+        if name and item["status"] in ("remove", "practice only"):
+            removed[name] = item["status"]
+        elif name:
+            kept.add(name)
+    for item in choices.get("not_available") or ():
+        name = on_sheet(item["call"], "Offense, Calls not available this week")
+        if name:
+            if name in table_order:
+                problems.append("Offense: %s is in the Primary calls table and among the calls not available; take "
+                                "it out of one" % name)
+            if name in kept:
+                problems.append("Offense: %s is kept under Special plays and listed among the calls not available "
+                                "this week; take it out of one" % name)
+            removed[name] = "not available"
+    for name in removed:
+        calls.pop(name, None)
+
+    # The opening sequence.
+    positions = {}
+    opening = choices.get("opening")
+    if isinstance(opening, dict) and ("carry" in opening or opening.get("no_change")):
+        week_ = opening.get("carry") if "carry" in opening else latest(
+            earlier, lambda s: any(isinstance(c, dict) and c.get("opener") for c in s.get("offensive_call_sheet") or ()))
+        if week_ not in earlier:
+            problems.append("Offense, Opening ideas: Week %s has no opening calls as set to carry" % week_)
+        else:
+            slots = sorted((int(s), call["name"]) for call in earlier[week_].get("offensive_call_sheet") or ()
+                           for s in ([call["opener"]] if call.get("opener") is not None else [])
+                           + list(call.get("opener_returns") or ()))
+            dropped = []
+            for _, name in slots:
+                if name not in calls and name not in removed and name not in dropped:
+                    problems.append("Offense, Opening ideas: Week %d's opening calls include %s, which is not on this "
+                                    "week's sheet; give your opening ideas in order" % (week_, name))
+                if name not in calls and name not in dropped:
+                    dropped.append(name)
+            # A call this page takes off leaves the carried opening: the calls after it move up in order.
+            remaining = [name for _, name in slots if name in calls]
+            renumber = bool(dropped)
+            for n, (slot, name) in enumerate([(s, c) for s, c in slots if c in calls], 1):
+                positions.setdefault(name, []).append(n if renumber else slot)
+            for name in dict.fromkeys(remaining):
+                calls[name]["from"].append({"opening": {"week": week_}})
+            if dropped:
+                source["opening_dropped"] = [n for n in dropped if n in removed]
+    elif isinstance(opening, dict):
+        line = choices["fields"]["opening"]["line"]
+        for n, text in enumerate(opening["items"], 1):
+            name = opening_call(text, "Offense, Opening ideas, number %d" % n)
+            if name:
+                positions.setdefault(name, []).append(n)
+        for name in positions:
+            calls[name]["from"].append({"opening": {"page": line}})
+
+    # The order: the opening ideas in his order of preference, then the table's, then the baseline's.
+    first = sorted(positions, key=lambda n: positions[n][0])
+    order = first + [n for n in table_order if n in calls and n not in first] + \
+        [n for n in carried_order if n in calls and n not in first and n not in table_order]
+    emitted = []
+    for name in order:
+        entry = calls[name]
+        menus = [m for m in entry["menus"] if m != cs.OPENING]
+        unknown = [m for m in menus if m not in SITUATION_TEXT]
+        if unknown:
+            problems.append("Offense: %s carries the situation %s, which the sheet no longer takes; give its "
+                            "situations in the Primary calls table" % (name, ", ".join(unknown)))
+            continue
+        slots = positions.get(name)
+        if slots and cs.NORMAL not in menus:
+            menus = [cs.OPENING] + menus
+        if not menus:
+            problems.append("Offense: %s has no situation once it is off the opening calls; give its situations in "
+                            "the Primary calls table or take it off" % name)
+            continue
+        tags = ([OPENER_TAG] if slots else []) + base_tags(entry["tags"]) + \
+            ([TWO_POINT_TAG] if cs.TWO_POINT in menus else [])
+        call = {"name": name}
+        call.update({k: copy.deepcopy(entry["form"][k]) for k in FORM_KEYS if k in entry["form"]})
+        call["tags"] = tags
+        if slots:
+            call["opener"] = slots[0]
+            if slots[1:]:
+                call["opener_returns"] = slots[1:]
+        call["menus"] = [SITUATION_TEXT[m] for m in menus]
+        if name in (frame.get("looking") or {}):
+            call["what_stone_is_looking_at"] = frame["looking"][name]
+        emitted.append({k: call[k] for k in CALL_KEYS if k in call})
+        source["calls"][name] = entry["from"]
+
+    # The decisions.
     decisions = {}
     for kind in ("two_point", "kickoff", "fourth_down"):
         entry = choices.get(kind)
-        if isinstance(entry, dict) and "same_as" in entry:
-            source = week_sheet(entry["same_as"])
-            if (source.get("menus") or {}).get(kind) is not None:
-                menus[kind] = source["menus"][kind]
-            if kind in (source.get("decisions") or {}):
-                decisions[kind] = json.loads(json.dumps(source["decisions"][kind]))
-            continue
-        if not isinstance(entry, dict):
-            continue
-        if entry.get("menu") is not None:
-            menus[kind] = entry["menu"]
-        if entry.get("standing"):
-            if kind not in standing:
-                raise ValueError("no standing rule is on file for %s" % kind)
-            decisions[kind] = json.loads(json.dumps(standing[kind]))
-        elif entry.get("rules") is not None or entry.get("otherwise") is not None:
+        if isinstance(entry, dict) and entry.get("standing"):
+            if kind in standing:
+                decisions[kind] = copy.deepcopy(standing[kind])
+                source["decisions"][kind] = {"standing": True}
+        elif isinstance(entry, dict) and ("same_as" in entry or entry.get("no_change")):
+            week_ = entry.get("same_as") if "same_as" in entry else latest(earlier)
+            if week_ in earlier and kind in (earlier[week_].get("decisions") or {}):
+                decisions[kind] = copy.deepcopy(earlier[week_]["decisions"][kind])
+                source["decisions"][kind] = {"carried": {"week": week_}}
+        elif isinstance(entry, dict) and entry.get("rules") is not None:
             names = (frame.get("decisions") or {}).get(kind) or {}
-            block = {}
-            if names.get("id") is not None:
-                block["id"] = names["id"]
-            if names.get("source") is not None:
-                block["source"] = names["source"]
+            block = {k: names[k] for k in ("id", "source") if names.get(k) is not None}
             rule_names = names.get("rules") or []
-            rules = []
-            for i, rule in enumerate(entry.get("rules") or ()):
+            block["rules"] = []
+            for i, rule in enumerate(entry["rules"]):
                 named = rule_names[i] if i < len(rule_names) else {}
-                out = {}
-                if named.get("id") is not None:
-                    out["id"] = named["id"]
-                if named.get("source") is not None:
-                    out["source"] = named["source"]
-                out.update(rule)
-                rules.append(out)
-            block["rules"] = rules
-            block["otherwise"] = entry.get("otherwise")
-            if entry.get("prepared") is not None:
-                block["prepared_calls"] = dict(entry["prepared"])
+                block["rules"].append({**{k: named[k] for k in ("id", "source") if named.get(k) is not None}, **rule})
+            block["otherwise"] = entry["otherwise"]
             decisions[kind] = block
-    sheet["menus"] = {k: menus[k] for k in MENU_ORDER if k in menus}
-    notes = choices.get("notes")
-    if isinstance(notes, dict) and "same_as" in notes:
-        source = week_sheet(notes["same_as"])
-        if "notes" in source:
-            sheet["notes"] = list(source["notes"])
-    elif isinstance(notes, list):
-        sheet["notes"] = list(notes)
-    sheet["offensive_call_sheet"] = calls
+            source["decisions"][kind] = {"page": choices["fields"][kind]["line"]}
+
+    defense = _compile_defense(choices, frame, earlier, base, baseline, problems, source,
+                               (arrangement or {}).get("defense"))
+    sheet = dict(frame["top"])
+    for key in ("menus", "notes"):
+        if key in (frame.get("record_text") or {}):
+            sheet[key] = copy.deepcopy(frame["record_text"][key])
+    sheet["offensive_call_sheet"] = emitted
     if decisions:
         sheet["decisions"] = {k: decisions[k] for k in ("two_point", "kickoff", "fourth_down") if k in decisions}
-    defense = choices.get("defense")
-    if isinstance(defense, dict) and "same_as" in defense:
-        source = week_sheet(defense["same_as"])
-        if "defensive_call_sheet" in source:
-            sheet["defensive_call_sheet"] = json.loads(json.dumps(source["defensive_call_sheet"]))
-    elif isinstance(defense, dict):
-        sheet["defensive_call_sheet"] = _defensive_sheet(defense, frame["defense"])
-    return sheet
+    if defense is not None:
+        sheet["defensive_call_sheet"] = defense
+    if not emitted and not problems:
+        problems.append("Offense: no call is on the sheet; carry a week or write the Primary calls")
+    return (None if problems else sheet), source, problems
 
 
-def _defensive_sheet(value, frame):
-    head = frame["head"]
-    page = frame.get("page")
-    lines = value.get("_lines") or {}
+def _caller_name(choices, key, arrangement=None):
+    value = choices.get(key)
+    if isinstance(value, dict) and value.get("no_change"):
+        return arrangement
+    return value.get("name") if isinstance(value, dict) else None
 
-    def source(fixed, line, text):
-        if fixed is not None:
-            return {"path": fixed["path"], "line": fixed["line"], "text": text}
-        return {"path": page, "line": line, "text": text}
 
-    out = {k: head[k] for k in ("schema_version", "team") if k in head}
-    out["caller"] = value.get("caller")
-    out.update({k: head[k] for k in ("book", "packet") if k in head})
-    if "notes" in value:
-        out["notes"] = list(value["notes"])
-    rush_text = value.get("rush_text") if value.get("rush_text") is not None else value.get("rush")
-    rush_line = lines.get("rush_text") if value.get("rush_text") is not None else lines.get("rush")
-    out["rush_rule"] = {"rule": value.get("rush"), "source": source(frame.get("rush"), rush_line, rush_text)}
-    practiced = {key: list(value["practiced"][key]) for _, key in PRACTICED if key in (value.get("practiced") or {})}
-    fixed = frame.get("practiced")
-    if value.get("practice_lines") is not None:
-        texts = list(value["practice_lines"])
-        numbers = lines.get("practice_lines") or [None] * len(texts)
-    else:
-        found = [(lines.get("practiced") or {})[key] for _, key in PRACTICED if key in (lines.get("practiced") or {})]
-        texts, numbers = [t for _, t in found], [n for n, _ in found]
-    practiced["sources"] = [source(fixed[i] if fixed is not None and i < len(fixed) else None, numbers[i], texts[i])
-                            for i in range(len(texts))]
-    out["practiced"] = practiced
-    rows = []
-    for r in value.get("rows") or ():
-        row = {"id": r["id"], "kind": r["kind"]}
-        if "menu" in r:
+def _compile_defense(choices, frame, earlier, base, baseline, problems, source, arranged=None):
+    fd = frame.get("defense") or {}
+    page = fd.get("page")
+    rows_in = choices.get("responses") or []
+    caller = _caller_name(choices, "defense_caller", arranged)
+    rush = choices.get("rush")
+    carried = None
+    if isinstance(rush, dict) and ("carry" in rush or rush.get("no_change")):
+        week_ = rush.get("carry") if "carry" in rush else latest(earlier, lambda s: "defensive_call_sheet" in s)
+        carried = (earlier.get(week_) or {}).get("defensive_call_sheet")
+        if carried is None:
+            problems.append("Defense, Rush rule: Week %s set no defensive sheet to carry" % week_)
+    from .defensive_calls import RUSH_RULE
+    if not rows_in:
+        if base is None or "defensive_call_sheet" not in base:
+            problems.append("Defense: write the prepared responses (or carry a week that set them)")
+            return None
+        out = copy.deepcopy(base["defensive_call_sheet"])
+        # The rows keep their inherited citations (the source map records the carry); the record is this
+        # page's, with no earlier week's freeze notes.
+        if (fd.get("head") or {}).get("packet"):
+            out["packet"] = fd["head"]["packet"]
+        out["notes"] = ["Carried from Week %d as set: its prepared responses, their citations and the practiced "
+                        "menu." % baseline]
+        if caller:
+            out["caller"] = caller
+        if isinstance(rush, dict) and rush.get("text"):
+            out["rush_rule"] = {"rule": RUSH_RULE, "source": {"path": page, "line": rush["line"], "text": rush["text"]}}
+        elif carried is not None:
+            out["rush_rule"] = copy.deepcopy(carried["rush_rule"])
+        source["defense"] = {"carried": {"week": baseline}}
+        return {k: out[k] for k in DEFENSE_KEYS if k in out}
+    fixed_rows = fd.get("rows")
+    if fixed_rows is not None and len(fixed_rows) != len(rows_in):
+        problems.append("Defense: the frozen sheet has %d rows and the page %d" % (len(fixed_rows), len(rows_in)))
+        return None
+    # The sheet's practiced menu (the schema's) is the page's own rows: every word they name, each row
+    # citing its line. Any word of the active defensive book may be named, whether or not an earlier
+    # week practiced it; the validators hold each one to the book.
+    rows, seen, practiced = [], set(), {k: [] for k in PRACTICED_KEYS}
+    practiced_sources = []
+    for i, r in enumerate(rows_in):
+        call = r["call"]
+        for key, word in response_words(call or {}):
+            if word not in practiced[key]:
+                practiced[key].append(word)
+        text = r["response"] or r["first"]
+        if fixed_rows is not None:
+            rid, cite = fixed_rows[i]["id"], copy.deepcopy(fixed_rows[i]["source"])
+        else:
+            rid, cite = row_id(r["kind"], r["menu"], seen), {"path": page, "line": r["line"], "text": text}
+        seen.add(rid)
+        row = {"id": rid, "kind": r["kind"]}
+        if r["menu"]:
             row["menu"] = r["menu"]
-        if "call" in r:
-            row["call"] = dict(r["call"])
-        row["source"] = source((frame.get("rows") or {}).get(r["id"]), r.get("_line"), r["text"])
+        if call:
+            row["call"] = call
+            practiced_sources.append({"path": page, "line": r["line"], "text": r["response"]})
+        row["source"] = cite
         rows.append(row)
+        source["defense"][rid] = {"page": r["line"], "text": r["first"] + " | " + r["response"]}
+    head = fd.get("head") or {}
+    out = {k: head[k] for k in ("schema_version", "team") if k in head}
+    out["caller"] = caller
+    out.update({k: head[k] for k in ("book", "packet") if k in head})
+    if fd.get("notes") is not None:
+        out["notes"] = copy.deepcopy(fd["notes"])
+    if fd.get("rush") is not None:
+        out["rush_rule"] = {"rule": RUSH_RULE, "source": copy.deepcopy(fd["rush"])}
+    elif isinstance(rush, dict) and rush.get("text"):
+        out["rush_rule"] = {"rule": RUSH_RULE, "source": {"path": page, "line": rush["line"], "text": rush["text"]}}
+    elif carried is not None:
+        out["rush_rule"] = copy.deepcopy(carried["rush_rule"])
+    if fd.get("practiced") is not None:
+        out["practiced"] = copy.deepcopy(fd["practiced"])
+    else:
+        out["practiced"] = {k: practiced[k] for k in PRACTICED_KEYS}
+        out["practiced"]["sources"] = practiced_sources
     out["rows"] = rows
     return {k: out[k] for k in DEFENSE_KEYS if k in out}
 
 
+# ---------------------------------------------------------------- intent and the source map
+INTENT_KINDS = ("fact", "intent", "situational")
+
+
+def intent(choices):
+    """The page's author intent, as the applied record keeps it: every line that never compiles, each
+    call's reason and stop condition, each defensive row's reason and counter and the practice table,
+    each with its page line."""
+    fields = choices.get("fields") or {}
+    out = {"lines": {key: fields[key] for key, _, _, kind in FIELDS if kind in INTENT_KINDS and key in fields},
+           "calls": [{"line": r["line"], "call": r["name"], "reason": r["reason"], "condition": r["condition"]}
+                     for r in choices.get("calls") or ()],
+           "responses": [{"line": r["line"], "reason": r["reason"], "counter": r["counter"]}
+                         for r in choices.get("responses") or ()],
+           "practice": list(choices.get("practice") or ())}
+    for key in ("special_plays", "not_available"):
+        value = choices.get(key)
+        if isinstance(value, list):
+            out[key] = [{"call": v["call"], "reason": v.get("reason", "")} for v in value]
+    return out
+
+
+# ---------------------------------------------------------------- the standing fourth-down rule's calls
 # A standing fourth-down rule that names "Tice's first call on the matching menu" says so on its
 # instruction (``prepared_calls``); the calls are the week's, so they are filled from its sheet.
 FIRST_ON_MENU = "first-call-on-each-matching-menu"
@@ -1174,7 +1557,6 @@ def first_calls(calls):
     """{menu: call name}: for each menu a fourth down can match (runtime/fourth_down.py's prepared
     menus), the first call of the sheet, in sheet order, that names it; the live fourth-down
     information lists a matching menu's calls in the same order (runtime/kernel.py matching_calls)."""
-    from . import call_situations as cs
     menus = (cs.THIRD_SHORT, cs.THIRD_MEDIUM, cs.THIRD_LONG, cs.GOAL_LINE, cs.LOW_RED, cs.HIGH_RED,
              cs.BACKED_UP, cs.TWO_MINUTE, cs.PRESS, cs.FOUR_MINUTE, cs.NORMAL)
     out = {}

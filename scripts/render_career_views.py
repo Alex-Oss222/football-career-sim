@@ -69,7 +69,9 @@ PHASE_LABEL = {"offense": "Offense", "defense": "Defense", "special_teams": "Spe
 DECISION_LABEL = {"fourth_down": "fourth downs", "two_point": "two-point tries", "kickoff": "onside kicks",
                   "timeouts_and_clock": "timeouts and clock management", "replay_challenge": "replay challenges"}
 SUBJECT_LABEL = {"play_calling": "Calling arrangement", "inactives": "Inactives", "two_point": "Two-point tries",
-                 "kickoff": "Kickoffs", "fourth_down": "Fourth downs"}
+                 "kickoff": "Kickoffs", "fourth_down": "Fourth downs",
+                 "outside_job_approach": "Other clubs' approaches",
+                 "assistant_interview_permission": "Assistants' interviews elsewhere"}
 STATUS_LABEL = {"IN_FORCE": "in force", "RECORDED": "recorded, not in force", "SUPERSEDED": "superseded",
                 "WITHDRAWN": "withdrawn"}
 REPORTING_LABEL = (("direct_supervisor", "direct supervisor"), ("evaluator", "evaluator"),
@@ -795,12 +797,17 @@ def _with_others(ctx, items):
     return lines or ["Nothing open."]
 
 
-def _instructions(ctx):
+def _instructions(ctx, subjects=None):
     """Each standing instruction in force, in plain words, linked to the football page it was
-    given in (a rule frozen into a game file links to the page of the event that set it)."""
+    given in (a rule frozen into a game file links to the page of the event that set it). With
+    ``subjects`` only those whose subject is among them: the Game Week Briefing passes the game's
+    (current_job.SUBJECTS), so a career answer (current_job.CAREER_SUBJECTS) is never a game
+    direction; the desk and the Team page show every one."""
     lines = []
     for item in current_job.instructions(ctx.job):
         subject = item.get("subject") or ""
+        if subjects is not None and subject not in subjects:
+            continue
         label = SUBJECT_LABEL.get(subject, subject.replace("_", " ").capitalize() or item.get("id"))
         if item.get("effective"):
             label += ", from " + day(item["effective"])

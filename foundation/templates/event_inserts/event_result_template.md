@@ -44,8 +44,8 @@ The following are **file-name illustrations**, not real 2014 events. Use the own
 | Trade discussion with Club A rejected | `Trade_Result_2014-10-21_Club_A.md` in the trade department |
 | Separate trade discussion with Club B accepted | A dated standalone completed trade result for Club B in the trade department |
 | Player X extension negotiations end without a deal | `Player_Extension_Result_2014-10-23_Player_X.md` in contracts/personnel |
-| Player Y is legally moved to a reserve list | `Roster_Move_Result_2014-10-24_Player_Y.md` in the relevant team transaction records |
-| Assistant Z interview request is denied | `Assistant_Permission_Result_2014-10-24_Coach_Z.md` in staff/career records |
+| Player Y is legally moved to a reserve list | A dated transaction record in `Team_Operations/Team/Roster/`, as the September 8 moves were |
+| Assistant Z interview request is denied | `Assistant_Permission_Result_2014-10-24_Coach_Z.md` in `Team_Operations/Staff/` |
 
 The Week 8 briefing can contain all five notices. `My_Responses.md` can contain responses to all five. **The five outputs above remain separate**, created on the dates the corresponding events actually resolve, and the Week 8 report links to them individually.
 

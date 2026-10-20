@@ -3,7 +3,8 @@
 The whole result side of a game week's close, the way the weekly workflow
 runs it: the week's games close, the Game Report is written in the Game
 Report template's layout with its generated box score, the week's awards are
-drawn, and then one command, scripts/rebuild_pages.py, rebuilds every built
+drawn, and then one command, scripts/rebuild_pages.py, names the report's box
+score and fills it last, and rebuilds every built
 page in order (the standings, the statistics, the team tracker, the award
 pages, the player, club and coach pages, the cap views, the game-week pages,
 the Games and league-results pages, the injury report, the medical history's
@@ -45,7 +46,7 @@ from runtime.week_inputs import event_id, receipt_name  # noqa: E402
 from scripts import league_awards, rebuild_pages, render_box_score, render_week_pages  # noqa: E402
 from scripts.validate_repository import validate  # noqa: E402
 from local_private_service import local_service  # noqa: E402
-from test_week_pages import template_skeleton  # noqa: E402
+from test_game_report import template_report  # noqa: E402
 
 JAX = "Jacksonville Jaguars"
 SEASON, WEEK = GAME_REPORT_FROM
@@ -141,8 +142,9 @@ class WeekClosePagesTests(unittest.TestCase):
         return played
 
     def write_report(self, receipt):
-        """The week's Game Report in the template's layout: its headings and labels, the event
-        line, and the generated box score under "Full stats for the game"."""
+        """The week's Game Report in the Game Report template's layout (tests/test_game_report.py
+        template_report): its sections, the event line, the header, line score and record of the game,
+        and the template's markers last, unnamed: the rebuild names them and fills the box score."""
         report = self.paths.game_report(WEEK)
         self.assertEqual(report.name, GAME_REPORT)
         checkpoint = "Canonical update - %s - Week %d closed" % (week_pages.long_date(self.played), WEEK)
@@ -155,15 +157,22 @@ class WeekClosePagesTests(unittest.TestCase):
                           state.read_text(encoding="utf-8"), count=1, flags=re.M)
         self.assertEqual(n, 1)
         state.write_text(text, encoding="utf-8")
-        page = template_skeleton(WEEK)
+        from runtime import game_report, game_weeks
+        game = game_weeks.club_game(self.paths, WEEK, JAX)
+        played = [r for r in game_weeks.regular_receipts(self.paths) if JAX in (r["away"], r["home"])]
+        record = sorted(game_report.record_forms(played, JAX), key=len)[0]
+        page = template_report(receipt, game, record, self.root)
         title, rest = page.split("\n", 1)
-        stats = "### Full stats for the game\n"
-        self.assertIn(stats, rest)
-        block = "<!-- box-score event=%s team=%s -->\n<!-- /box-score -->\n" % (receipt["event_id"], JAX)
         shell = "\n".join([title, "", "<!-- event-record: %s -->" % json.dumps(event, sort_keys=True), rest])
-        shell = shell.replace(stats, stats + "\n" + block, 1)
+        self.assertIn(game_report.EVENT_PLACEHOLDER, shell)
         report.parent.mkdir(parents=True, exist_ok=True)
-        report.write_text(render_box_score.fill(shell, self.paths.receipts, SEASON, report=True), encoding="utf-8")
+        report.write_text(shell, encoding="utf-8")
+        # Its preparation and pregame media as the game-day commit froze them before kickoff
+        # (scripts/freeze_pregame.py; the synthetic close writes the report after the game).
+        from runtime import decisions
+        frozen = decisions.week_pages(SEASON, WEEK, self.root).pregame
+        frozen.parent.mkdir(parents=True, exist_ok=True)
+        frozen.write_text(json.dumps(game_report.pregame_record(shell, self.played), indent=1) + "\n", encoding="utf-8")
         return report
 
     def settle_week(self, report):
@@ -245,9 +254,9 @@ class WeekClosePagesTests(unittest.TestCase):
         briefing = following.briefing.read_text(encoding="utf-8")
         for injury in (i for i in receipt["injuries"] if i.get("team") == JAX and i.get("reassessment_days")):
             exam = week_pages.month_day(self.played + timedelta(days=injury["reassessment_days"]))
-            line = next(l for l in briefing.splitlines() if l.startswith("| %s |" % injury["player"]))
-            self.assertIn("| %s |" % exam, line)
-            self.assertNotIn("projected return", line)
+            line = next(l for l in briefing.splitlines() if l.startswith("| ") and injury["player"] in l.split("|")[1])
+            self.assertIn("| Reassessment, %s |" % exam, line)
+            self.assertNotIn("; reassessment", line)      # the note is read whole, not copied as written
 
         # A played week's index is checked like the open week's (F4): left stale, it fails.
         played_pages = decisions.week_pages(SEASON, WEEK, root)

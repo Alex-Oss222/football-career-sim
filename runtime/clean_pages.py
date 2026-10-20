@@ -113,8 +113,10 @@ SYSTEM_SUFFIXES = (".json", ".jsonl", ".py", ".csv", ".gz", ".sqlite", ".db", ".
 SYSTEM_DIRS = ("data", "runtime", "scripts", "tests", ".sim_cache")
 # The markers around a result page's generated box score (scripts/render_box_score.py BLOCK), each
 # a line of its own: the opening marker names the game and the club listed first, the closing one
-# nothing. Text inside the block is checked like the rest of the page.
-BOX_SCORE_MARKER = re.compile(r"<!-- box-score event=[a-z0-9-]+ team=[A-Z][A-Za-z0-9 .]*[A-Za-z0-9.] -->|<!-- /box-score -->")
+# nothing; the Game Report template's opening marker names neither until the game has closed
+# (runtime/game_report.py names it). Text inside the block is checked like the rest of the page.
+BOX_SCORE_MARKER = re.compile(r"<!-- box-score event=[a-z0-9-]+ team=[A-Z][A-Za-z0-9 .]*[A-Za-z0-9.] -->|"
+                              r"<!-- box-score event=\{\{EVENT_ID\}\} team=\{\{TEAM_NAME\}\} -->|<!-- /box-score -->")
 
 
 def proper_names(root=ROOT):
