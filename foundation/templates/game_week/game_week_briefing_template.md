@@ -103,4 +103,4 @@ Each recommendation needs a football basis. It is a staff proposal, not a decisi
 **What the club, not Stone, decides:** [Only live issues such as medical clearance, transactions or league decisions, with the responsible person.]  
 **If facts change:** Issue a newly dated briefing. Preserve this version as what the head coach actually knew when he answered.
 
-[Game Plan](Game_Plan.md) | [Roster](LINK) | [Medical](LINK) | [Playbook](LINK) | [Prior game](LINK)
+[Links to the week's Game Plan, the roster, the medical history, the active playbooks and the prior game's report, each to its page in the season folders]

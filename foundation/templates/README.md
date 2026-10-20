@@ -23,7 +23,8 @@ Each phase keeps its intended work in the adjacent `staff_plan.md` and actual wo
 |---|---|---|
 | Preseason game | [Full preseason output](preseason_output_template.md) | `Training_Camp_and_Preseason/Preseason_Games/Game_NN/output.md` |
 | Consolidated preseason turn | Same full template; [review guide](training_camp_and_preseason/preseason_review.md) supplies section 6 | Dated review in section 6 of the latest completed game's `output.md` at the cutoff; link earlier game owners and render the same review in chat |
-| Regular-season game or bye | [Regular-season output](regular_season_output_template.md) | `Regular_Season/Games/Week_NN/output.md`; a bye has no invented game |
+| Game week, from 2014 Week 6 (version 2, adopted October 20, 2026; built in step 4b of the [rebuild plan](../../docs/rebuild_plan.md)) | [Game Week Briefing](game_week/game_week_briefing_template.md), [Game Plan](game_week/game_plan_template.md), [Game Report](game_week/game_report_template.md); design in [docs/game_week_v2.md](../../docs/game_week_v2.md) | `Regular_Season/Games/Week_NN/` (`Game_Week_Briefing.md`, `Game_Plan.md`, `Game_Report.md`); playoff games under `Postseason/Games/` |
+| Regular-season game or bye, through 2014 Week 6's switch to version 2 | [Regular-season output](regular_season_output_template.md) | `Regular_Season/Games/Week_NN/output.md`; a bye has no invented game |
 | Playoff game | Same regular-season template, adapted to the actual round | The applicable game folder under `Postseason/Games/` |
 | Opening player assessment | [Annual player card, opening mode](player_sheet_2014_onward_template.md) | `Team_Operations/Team/Player_Cards/<player>.md` |
 | Final player assessment | Same annual template, final mode | `Season_Review/Player_Assessments/<player>.md` |
