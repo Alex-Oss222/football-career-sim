@@ -69,7 +69,9 @@ PHASE_LABEL = {"offense": "Offense", "defense": "Defense", "special_teams": "Spe
 DECISION_LABEL = {"fourth_down": "fourth downs", "two_point": "two-point tries", "kickoff": "onside kicks",
                   "timeouts_and_clock": "timeouts and clock management", "replay_challenge": "replay challenges"}
 SUBJECT_LABEL = {"play_calling": "Calling arrangement", "inactives": "Inactives", "two_point": "Two-point tries",
-                 "kickoff": "Kickoffs", "fourth_down": "Fourth downs"}
+                 "kickoff": "Kickoffs", "fourth_down": "Fourth downs",
+                 "outside_job_approach": "Other clubs' approaches",
+                 "assistant_interview_permission": "Assistants' interviews elsewhere"}
 STATUS_LABEL = {"IN_FORCE": "in force", "RECORDED": "recorded, not in force", "SUPERSEDED": "superseded",
                 "WITHDRAWN": "withdrawn"}
 REPORTING_LABEL = (("direct_supervisor", "direct supervisor"), ("evaluator", "evaluator"),

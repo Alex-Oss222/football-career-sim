@@ -111,7 +111,7 @@ class CurrentJobTests(unittest.TestCase):
     def test_authority_rows_cover_document_3(self):
         rows = [r["row"] for r in self.current(self.job)["authority"]["domains"]]
         self.assertEqual(tuple(rows), current_job.AUTHORITY_ROWS)
-        self.assertEqual(len(current_job.AUTHORITY_ROWS), 23)
+        self.assertEqual(len(current_job.AUTHORITY_ROWS), 24)
         dropped = json.loads(json.dumps(self.job))
         domains = self.current(dropped)["authority"]["domains"]
         domains[:] = [r for r in domains if r["row"] != "3a"]

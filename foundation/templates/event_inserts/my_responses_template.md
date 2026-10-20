@@ -26,9 +26,9 @@ Do not fill in an answer on the coach's behalf. No answer means no resolution. �
 | Trade | “I support the proposal only if [football condition].” | Recommendation; Caldwell still accepts, counters or rejects |
 | Player extension | “Recommend opening talks for [player], with [football priority].” | Recommendation; cannot force negotiation, agent assent or signing |
 | Assistant renewal | “Offer [coach] renewal on [known budget/terms].” | Stone's staff choice, subject to contractual/budget approval |
-| Assistant interview request | “Apply my standing permission instruction.” or “Advise the club to [action].” | Only where NFL-era rules and contract/club authority allow discretion |
+| Assistant interview request | None needed: Jacksonville's standing assistant-permission instruction answers it. To change the rule, write the new rule. | Jacksonville's answer, within the era's league rules |
 | Stone's own extension | “Accept / Counter with [terms] / Decline.” | Personal career response, not the owner's final counteroffer |
-| Stone's own interview | “I want to pursue / Decline.” | Personal intent, not Jacksonville's consent |
+| Another club asks to talk to Stone | None needed while Stone's standing answer is that he is not open to job offers. To change it, write “I am now open to [kind of job].” | Stone's own answer; Shad Khan alone still decides the club's permission |
 | Fired or free agent | “Ask my agent to pursue [type of work/clubs], subject to [constraints].” | Job-search instructions; the employer's termination is already decided |
 
 ### Validation rules

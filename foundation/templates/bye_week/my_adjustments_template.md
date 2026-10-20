@@ -5,13 +5,13 @@
 **Briefing answered:** [Bye Week Review issue date, revision]  
 **Current approach:** [Carry current approved instructions, with the explicit changes below / Replace the specific instructions below]
 
-> FILL-IN GUIDE (removed on acceptance): Use the fixed headings below and ordinary football language. **No change** is always a valid football answer when an adjustment is not needed. State only material changes or tests, rather than restating the entire active playbook or all players on the 53. Name current eligible players and installed concepts. "Test" authorizes evaluation, not a new permanent role or an automatic game call. The medical staff, not Stone, controls health clearance. This form is NOT interchangeable with the next Game Plan. This proposal requires a new bye-page checker/apply path to be installed in the repository.
+> FILL-IN GUIDE (removed on acceptance): Use the fixed headings below and ordinary football language. **No change** is always a valid football answer when an adjustment is not needed. State only material changes or tests, rather than restating the entire active playbook or all players on the 53. Name current eligible players and calls from the active playbook. "Test" authorizes evaluation, not a new permanent role or an automatic game call. The medical staff, not Stone, controls health clearance. This form is NOT interchangeable with the next Game Plan. This proposal requires a new bye-page checker/apply path to be installed in the repository.
 
 ## 1. What I think we should keep and change
 
 **Keep:** [The football work that still deserves to be kept. Name the actual evidence or say "Current system unchanged".]  
 **Highest-priority correction:** [An actual deficiency and why it matters, or "No specific change".]  
-**What I will not add:** [An uninstalled call, an excessive meeting/practice demand, or "No additional restriction".]  
+**What I will not add:** [A call, an excessive meeting/practice demand, or "No additional restriction".]  
 **How I will know if a change is ready:** [An observable practice/film check; or "No new evaluation". A test is not proof of permanent improvement.]
 
 ## 2. Offense
