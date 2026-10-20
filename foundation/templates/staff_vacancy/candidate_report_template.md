@@ -12,7 +12,7 @@
 
 **Decision currently needed:** [Specific Stone action and verified deadline; if none, say no answer needed]
 
-*Preparation rule: this is the full search brief only for a vacancy requiring a substantive hiring choice. The initial vacancy also appears as an ACTION REQUIRED item in the current season/phase briefing, linking here. A new edition is issued only under the one reissue rule for every brief: a new event needs an answer from the head coach, a dated finding materially changes a choice still pending, or an answer falls due before the next scheduled issue. A change that affects no pending answer waits for the next scheduled issue. Keep earlier issued versions. Never treat an unapproved opening, rumor, or another club's vacancy as a vacancy on this staff.*
+*Preparation rule: this is the full search brief only for a vacancy requiring a substantive hiring choice. The initial vacancy also appears as an ACTION REQUIRED item in the current season/phase briefing, linking here. The first issue is this report's one scheduled issue. A new edition is issued only under the one reissue rule that governs every brief: a new event needs an answer from the head coach, a dated finding materially changes a choice still pending, or an answer falls due before the next scheduled issue. An informational event that affects no pending answer waits for the next scheduled issue, so it appears only in an edition issued for another reason; its result page is readable as soon as it is written. Keep earlier issued versions. Never treat an unapproved opening, rumor, or another club's vacancy as a vacancy on this staff.*
 
 ## What happened and what needs covering
 

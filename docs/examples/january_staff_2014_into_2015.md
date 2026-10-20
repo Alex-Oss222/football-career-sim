@@ -82,7 +82,7 @@ Suppose that during a future **hypothetical** January week, the club concludes f
 - A renewal with Coach A is actually executed on Monday.
 - Coach B declines a proposed extension on Tuesday, but remains employed until his valid existing term ends.
 - A valid outside interview-permission request involving Coach C is granted on Wednesday.
-- Coach D's existing contract actually expires on Friday without renewal.
+- Coach D's existing contract, which Stone chose to let lapse, actually expires on Friday without renewal.
 
 The week has **four separate dated result files** on the club's staff pages, with the canonical contract/staff/permission owner for each. `Staff_Moves.md` displays four separate links. Coach B's declined extension is *not* a premature dismissal. A second club's new interview request for Coach C is another separately identifiable event, not a rewrite of Wednesday's decision.
 

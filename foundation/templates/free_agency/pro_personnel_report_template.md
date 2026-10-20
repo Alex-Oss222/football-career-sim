@@ -1,13 +1,13 @@
 # Pro Personnel Report | [Club] | [2015 free agency]
 
-**Presented by:** [David Caldwell, pro personnel/scouting staff, football administration and cap staff]  
+**Presented by:** [David Caldwell, general manager, for the pro personnel department. A scout is named only when he is a party in the job record; no other author is created]  
 **Issued:** [Actual in-career date/time and edition; first issue March 3, after the designation deadline]  
 **Market information valid through:** [Date/time, usually earlier than issue]  
 **Club roster and football evidence through:** [Last actual completed event]  
 **Immediate deadline:** [Specific date/time or no live deadline]  
 **Stone's priorities due:** [Before noon ET March 7, when outside negotiations can begin]
 
-> AUTHORING NOTE (remove from the issued report): A new edition is issued only under the one reissue rule that governs every brief ([event inserts](../../../docs/event_inserts.md), section A, item 6): a new event needs Stone's answer, a dated finding changes a choice still pending, or an answer falls due before the next scheduled issue. Keep every earlier edition. No money figure appears without a source published by the issue date. A target's own real contract is read only at that player's market decision, never in this report; a comparable is another player's contract, signed and public before the cutoff.
+> AUTHORING NOTE (remove from the issued report): The March 3 issue is this report's one scheduled issue. A new edition is issued only under the one reissue rule that governs every brief ([event inserts](../../../docs/event_inserts.md), section A, item 6): a new event needs Stone's answer, a dated finding materially changes a choice still pending, or an answer falls due before the next scheduled issue. An informational event that affects no pending answer waits for the next scheduled issue; since none follows in this phase, it appears under FOR YOUR INFORMATION only in an edition issued for another reason, and its result page is readable as soon as it is written. Keep every earlier edition. No money figure appears without a source published by the issue date. A target's own real contract is read only at that player's market decision, never in this report; a comparable is another player's contract, signed and public before the cutoff.
 
 [Event inserts, when any event is pending: ACTION REQUIRED, FOR YOUR INFORMATION and COMING UP go here, under the title block and before the first section, in the form of the [event insert template](../event_inserts/brief_action_inserts_template.md). Omit each section that has nothing in it. The Re-signing Report's open items are carried here as inserts. ACTION REQUIRED is for an actual request or offer; FOR YOUR INFORMATION for completed acquisitions and legal status changes; COMING UP for windows. Stone answers this report once, on My Free-Agent Priorities; answers to inserted events go on this phase's My Responses page, and each event gets its own dated result page.]
 

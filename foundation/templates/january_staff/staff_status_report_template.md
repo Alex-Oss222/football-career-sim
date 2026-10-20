@@ -12,7 +12,21 @@
 
 **Employment condition:** [Retained by the Club Decision of (date), linked. A report issued before that decision is headed "Preliminary: not a final review" and asks for no staff decision]
 
-*Authoring instruction: This is a working staff brief. Every fact must be in an existing season, player, staff or contract record at the issue date. Never assume the postseason is over merely because the regular season ended. Tables first. Do not generate twelve empty performance essays. Nobody writes a read on his own work: no coordinator writes on himself, and the head coach's own view belongs on his page. Reissue only under the one reissue rule: a new event that needs his answer, a dated finding that materially changes a pending choice, or an answer due before the next issue. Keep every issued copy as received.*
+*Authoring instruction: This is a working staff brief. Every fact must be in an existing season, player, staff or contract record at the issue date. Never assume the postseason is over merely because the regular season ended. Tables first. Do not generate twelve empty performance essays. Nobody writes a read on his own work: no coordinator writes on himself, and the head coach's own view belongs on his page. This report has one scheduled issue, the first. Reissue only under the one reissue rule that governs every brief: a new event needs his answer, a dated finding materially changes a choice still pending, or an answer falls due before the next scheduled issue. An informational event that affects no pending answer waits for the next scheduled issue, so it appears under FOR YOUR INFORMATION only in an edition issued for another reason; its result page is readable as soon as it is written. Keep every issued copy as received.*
+
+[Event inserts, when any event is pending, go here, under the header block and before the first section, in the form of the shared event insert template. Omit each section that has nothing in it.]
+
+## ACTION REQUIRED
+
+[A short, prominent insert only for an event that needs the head coach's answer: an interview request outside the standing permission instruction's cases, a renewal offer or counter that needs his direction, an urgent expiration issue, an actual vacancy, or an extension offer to the head coach himself from the owner and general manager. Each has its due time and what it holds, and links to its eventual individual result. He answers these on this phase's My Responses page.]
+
+## FOR YOUR INFORMATION
+
+[An interview request the standing permission instruction answers: the asking club, the job, the date, Jacksonville's answer and the link to its result. A request for the head coach himself and the owner's answer. Completed staff results that change no pending answer. Never written as an open question.]
+
+## COMING UP
+
+[Known dated windows that need no action yet, such as another club's interview window or a contract end date once it is set.]
 
 ## Decisions requiring attention
 
@@ -21,10 +35,6 @@
 | [Renewal/termination/reassignment] | [Coach] | [Expiring term, football need, valid request] | [Verified date, or Unresolved] | [Stone for staff role; coach must accept negotiated offer; funding verified with Caldwell] |
 
 [If none: "There are no new staff decisions required. Existing assignments and valid contracts continue." Who calls each phase is never listed here unless the head coach raised it himself.]
-
-**ACTION REQUIRED inserts:** [A short, prominent insert, in the shared insert format, only for an event that needs the head coach's answer: an interview request outside the standing permission instruction's cases, a renewal offer or counter that needs his direction, an urgent expiration issue, an actual vacancy, or an extension offer to the head coach himself from the owner and general manager. Link each to its eventual individual result. If none, omit entirely.]
-
-**FOR YOUR INFORMATION:** [An interview request the standing permission instruction answers: the asking club, the job, the date, Jacksonville's answer and the link to its result. A request for the head coach himself and the owner's answer. Completed staff results that change no pending answer. Never written as an open question. If none, omit entirely.]
 
 ## The staff and its contracts
 

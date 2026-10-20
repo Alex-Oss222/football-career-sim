@@ -2,7 +2,7 @@
 
 *A form of the shared [event result](../event_inserts/event_result_template.md) for one concluded event of a staff search. The kinds are a closed list, each with its own file name in the search's `outcomes/` folder: `Employment_Check_Result_<date>_<candidate>.md` (an unknown employment fact settled), `Permission_Result_` (the employer club granted or refused), `Contact_Result_` (the candidate agreed or declined to talk or interview), `Interview_Result_` (held or cancelled), `Offer_Result_` (an offer that ended without a hire), `Staff_Hire_Result_` (accepted terms signed and effective) and `Search_Closed_Result_<date>.md` (closed without a hire on the head coach's authorized decision). A request still unanswered, a scheduled interview, a pending counter and the funding confirmation are process entries with no page of their own. The departure that opened the job is owned by its own record and linked.*
 
-[The event-record line, on a line of its own and without the backticks: `<!-- event-record: {"id": "<date>-<candidate>-<kind>", "date": "YYYY-MM-DD", "summary": "<one sentence in football words>", "status": "closed"} -->`. It lists the event in the year's Record.md.]
+[The event-record line, on a line of its own under the title block, invisible on the page and without the backticks: `<!-- event-record: {"id": "[date]-[candidate]-[kind]", "date": "[YYYY-MM-DD resolved]", "status": "closed", "summary": "[One sentence in football words: who decided what, and its effect]"} -->`. Its summary is the event's line in the year's Record.md.]
 
 **Event date:** [Actual in-career date and time if recorded; date only if no time]
 

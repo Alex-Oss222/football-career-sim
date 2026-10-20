@@ -8,7 +8,7 @@
 
 **Staff authority:** [Stone if the Club Decision retained him. If he was dismissed: David Caldwell answers for Jacksonville on open staff items until a successor head coach is appointed, and renewals stay open for the successor]
 
-*This is an index and brief factual summary of results. **It is not the permanent result document for an individual contract, departure, interview request or hire.** Each separately resolved event has its own staff result on the club's staff pages, linked here as soon as it is written. Never turn pending decisions into completed moves to fill this page.*
+*This is an index and brief factual summary of results. **It is not the permanent result document for an individual contract, departure, interview request or hire.** Each separately resolved event has its own staff result on the club's staff pages, or, for an event of a staff search, in that search's outcomes folder, linked here as soon as it is written. Never turn pending decisions into completed moves to fill this page.*
 
 ## Status of the staff
 
@@ -21,6 +21,14 @@
 | [Date in period] | [Coach] | [Renewal signed, offer declined, agreement ended, dismissal, reassignment, permission decision, vacancy filled, etc.] | [As signed/issued] | [Link to ONE separate dated staff result] |
 
 [If none: "No individual staff decisions have reached a final disposition in this period." An interview request the standing permission instruction answered is listed here like any other result, with Jacksonville's answer.]
+
+## Contracts that ended without a decision
+
+| Coach | Contract ended | Status now | Coach record |
+|---|---|---|---|
+| [Coach] | [Verified end date] | [No longer under contract; no offer was made and no direction given] | [Link] |
+
+[Only a contract that ended with no direction from the head coach and no offer. It has no result page, because nobody made a decision. Omit the heading if there is none.]
 
 ## Still open
 

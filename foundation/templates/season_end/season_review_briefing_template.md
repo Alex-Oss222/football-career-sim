@@ -12,11 +12,11 @@
 
 > **Publication rule:** Render only the briefing's public-to-Stone information. Do not reveal the owner's hidden evaluation, undisclosed decision, internal bargaining limit or confidential personnel comments simply because a data file contains them. No new offer, private quotation or invented meeting.
 >
-> **Editions:** the one reissue rule that governs every brief applies. Issue a new dated edition when a new matter needs an answer from Stone, a dated finding materially changes a choice still pending, or an answer falls due before the next scheduled issue. Keep every issued edition; this page shows the latest. A reissue changes no club decision.
+> **Editions:** the briefing has one scheduled issue, on the date the club's employment method fixes. The one reissue rule that governs every brief applies: issue a new dated edition when a new event needs an answer from Stone, a dated finding materially changes a choice still pending, or an answer falls due before the next scheduled issue. An informational event that affects no pending answer waits for the next scheduled issue, so it appears under FOR YOUR INFORMATION only in an edition issued for another reason; its own result page is readable as soon as it is written. Keep every issued edition; this page shows the latest. A reissue changes no club decision.
 
 ## ACTION REQUIRED
 
-[Include only **open**, consequential matters that need Stone's own answer, each as its **own concise notice** with its due time and what it holds, referencing its own event and eventual separate result. Examples: an actual written extension offer from Khan and Caldwell; another club's request to interview a Jacksonville assistant that the standing instruction does not answer (a different position at the same level), which is Stone's staff-permission decision. Stone answers these on this phase's My Responses page, not on My Season Response. Omit the heading if no action is required.]
+[Include only **open**, consequential matters that need Stone's own answer, each as its **own concise notice** with its due time and what it holds, referencing its own event and eventual separate result. Examples: an actual written extension offer from Khan and Caldwell; a real vacancy on Stone's staff, linking its Candidate Report; another club's request to interview a Jacksonville assistant that the standing instruction does not answer (a different position at the same level), which is Stone's staff-permission decision. Stone answers these on this phase's My Responses page, not on My Season Response. Omit the heading if no action is required.]
 
 ## FOR YOUR INFORMATION
 

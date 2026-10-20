@@ -1,6 +1,6 @@
 # Re-signing Report | [Club] | [2015 league-year preparation]
 
-**Presented by:** [David Caldwell, general manager, with pro personnel, football administration, cap staff and coaches where their observations matter]
+**Presented by:** [David Caldwell, general manager. Another author is named only when he is a party in the job record; a coach's observation is cited from his recorded work, and nobody assesses his own work]
 
 **Issued:** [Date/time as known inside the career]  
 **Edition:** [Initial issue / new edition of date, the earlier edition kept]  
@@ -8,7 +8,7 @@
 **Contract information through:** [Date of current signed contract and league transaction data]  
 **Next decision deadline:** [Specific deadline, or 'No decision due yet']
 
-> AUTHORING NOTE (remove from the issued report): Issue after the season review, by February 16. A new edition is issued only under the one reissue rule that governs every brief ([event inserts](../../../docs/event_inserts.md), section A, item 6): a new event needs Stone's answer, a dated finding changes a choice still pending, or an answer falls due before the next scheduled issue. Keep every earlier edition. No money figure appears without a source published by the issue date; a figure the club has not established says so. List league-year expiries only: a practice-squad contract that ended with the season is a reserve/future decision and is not on this board.
+> AUTHORING NOTE (remove from the issued report): Issue after the season review, by February 16; that is this report's one scheduled issue. A new edition is issued only under the one reissue rule that governs every brief ([event inserts](../../../docs/event_inserts.md), section A, item 6): a new event needs Stone's answer, a dated finding materially changes a choice still pending, or an answer falls due before the next scheduled issue. An informational event that affects no pending answer waits for the next scheduled issue, the Pro Personnel Report of March 3; its result page is readable as soon as it is written. Keep every earlier edition. No money figure appears without a source published by the issue date; a figure the club has not established says so. List league-year expiries only: a practice-squad contract that ended with the season is a reserve/future decision and is not on this board.
 
 [Event inserts, when any event is pending: ACTION REQUIRED, FOR YOUR INFORMATION and COMING UP go here, under the title block and before the first section, in the form of the [event insert template](../event_inserts/brief_action_inserts_template.md). Omit each section that has nothing in it. Stone answers this report once, on My Re-signing Priorities; answers to inserted events go on this phase's My Responses page, and each resolved event gets its own dated result page.]
 
