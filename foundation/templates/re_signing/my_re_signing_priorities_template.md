@@ -4,7 +4,9 @@
 **Date of answer:** [Recorded by the workflow at the actual in-career date]  
 **Brief reviewed:** [Link to latest issued Re-signing Report]
 
-This page records Stone's football priorities. Caldwell makes the final contract, tender, tagging, acquisition and salary-cap decisions. Filling in this page does not renew a contract, make an agent accept terms or change a depth chart. Send just the choices you want; do not force a price or a criticism for everyone.
+This page answers the Re-signing Report once and is not rewritten afterwards. Answers to event inserts added later go on this phase's My Responses page.
+
+This page records Stone's football priorities. Stone recommends; Caldwell makes the final contract, tender, tagging, acquisition and salary-cap decisions. Filling in this page does not renew a contract, make an agent accept terms or change a depth chart. Send just the choices you want; do not force a price or a criticism for everyone.
 
 ## My retention priorities
 
@@ -34,7 +36,7 @@ Do not treat “Let reach market” as a release when the current contract is st
 
 ## Negotiating instructions I want Caldwell to consider
 
-**Price or commitment boundaries I am recommending:** [Optional football recommendation tied to available cap facts, or 'I am not setting a financial figure'. Caldwell controls money.]
+**Price or commitment boundaries I am recommending:** [Optional football recommendation tied to available cap facts, or 'I am not setting a financial figure'. Caldwell controls money. With no figure from you, Caldwell's offer terms come from comparable contracts signed before the report's cutoff, shown as a labelled reconstruction with its calculation.]
 
 **Would I prioritize the player over the next position on the board?** [Answer only where priorities compete materially.]
 

@@ -2,7 +2,10 @@
 
 **From:** [Alex Stone, head coach]  
 **Submitted:** [Runner records actual in-career date]  
-**Based on:** [Latest issued Pro Personnel Report, roster, contracts and prior re-signing decisions]
+**Based on:** [Latest issued Pro Personnel Report, roster, contracts and prior re-signing decisions]  
+**Due:** [Before noon ET March 7, when outside negotiations can begin]
+
+This page answers the Pro Personnel Report once and is not rewritten afterwards. Answers to event inserts added later go on this phase's My Responses page.
 
 This is **Stone's football priority board**. Do not fill it with every available player. A precise positional job and a reason to believe the candidate can perform it are more important than a marquee name. Caldwell decides the actual approach, contract and final roster acquisition; the player or agent can reject it.
 
@@ -14,7 +17,7 @@ This is **Stone's football priority board**. Do not fill it with every available
 
 [Optional short explanation of how adding one player affects other roles, practice installation or depth. Do not imply a newcomer will automatically start.]
 
-## Names I authorize Caldwell to explore
+## Names I recommend Caldwell explore
 
 | Target | Instruction | Specific football purpose | Offer guidance / budget condition | If not available |
 |---|---|---|---|---|
@@ -32,7 +35,7 @@ A preferred target means 'try to sign him lawfully', not 'he signs'. Terms, agen
 
 ## Financial trade-offs I want Caldwell to weigh
 
-[If relevant, prioritize players across positions. You may authorize a ceiling as a recommendation only if the contract and budget figures are provided; do not turn a vague 'market deal' into invented dollars.]
+[If relevant, prioritize players across positions. You may recommend a ceiling only if the contract and budget figures are provided; do not turn a vague 'market deal' into invented dollars.]
 
 **If the asking price exceeds the verified range:** [Pass / request new briefing / reconsider another role / as instructed.]
 
@@ -42,7 +45,7 @@ A preferred target means 'try to sign him lawfully', not 'he signs'. Terms, agen
 
 ## Conditions and fallbacks
 
-[For each primary candidate name a true fallback where known. It is valid to proceed with no outside signing. Do not automatically approach every backup in rank order unless you explicitly authorize that standing search order.]
+[For each primary candidate name a true fallback where known. It is valid to proceed with no outside signing. Do not automatically approach every backup in rank order unless you recommend a standing search order.]
 
 ## Franchise-quarterback consultation
 

@@ -14,11 +14,15 @@ The dated `career/finances/upcoming_decisions/player_decisions.md` places these 
 | Hakeem Nicks, receiver | One-year 2014 Jacksonville agreement | He dressed against Pittsburgh but the snap record credited no offensive snap; Adams remained the X and the recorded Nicks relief job was not used | Actual whole-season contribution and role, whether there is a football reason to pay for future work, player/agent demands if conveyed |
 | Alan Ball, defensive back | One-year 2014 signing after September 8 need | Served as outside reserve and on kicking units against Pittsburgh; no claim of game readiness beyond supported work | Secondary depth and health by season end, his actual legal rights, other options |
 
+The same view's 2014 group also lists seven practice-squad players, Tyler Bray, Richard Murphy, Jerome Long, Jemea Thomas, Matt Feiler, Tyler Shatley and Jackson Jeffcoat, whose weekly contracts run through Jacksonville's 2014 season. Theirs is a reserve/future decision from December 29, 2014, not a February re-signing, so none of them belongs on the Re-signing Report's board; the view does not yet separate them, and its builder must.
+
 The table is *not* a 2015 final free-agent board. Any 2014 injury, roster transaction, later signing, release or season-end assessment could change the question. It also deliberately does not attach 2015 prices to the players. Those prices must come from a lawful negotiation or a dated, labelled comparable, not a story about what they will want.
 
 ### An especially important non-expiring example
 
-**Adam Thielen** has a recorded three-year undrafted contract running through 2015, not a 2014-expiring contract. The player decision calendar identifies him as renegotiation-eligible after the final 2014 regular-season game. Therefore a February 2015 review might *consider an eligible early extension*, but must never label him an expiring 2015 UFA or treat a new contract as already signed. The absence of an extension proposal is a legitimate outcome.
+**Adam Thielen** has a recorded three-year undrafted contract running through 2015, not a 2014-expiring contract. The [upcoming contract decisions](../../career/finances/upcoming_decisions/README.md) index identifies him as extension-eligible after the final 2014 regular-season game. Therefore a February 2015 review might *consider an eligible early extension*, but must never label him an expiring 2015 UFA or treat a new contract as already signed. The absence of an extension proposal is a legitimate outcome. An extension that comes up between December 29, 2014 and the report's issue arrives as an insert in the brief then active, with its own result page; the February board carries it only while it is still open.
+
+**Kirk Cousins** holds the four-year rookie contract Washington signed in 2012, running through 2015, so 2014 is his third contract year and he too may be renegotiated after the final 2014 regular-season game (2011 CBA Article 7). A major multiyear commitment to him as the intended starter is a row-3a matter: Caldwell must obtain Stone's written football projection and meet with him to resolve disagreement before acting. The index does not yet carry his row.
 
 ### An example of a worthwhile Caldwell brief, not a new fictional judgment
 
@@ -57,7 +61,8 @@ Stone's My Free-Agent Priorities could say, *after seeing that real brief*: 'Loo
 
 - `career/2014/Regular_Season/Games/Week_05/output.md`: recorded Pittsburgh game and review, no future results.
 - `career/2014/Team_Operations/Team/Roster/roster.md`: roster as of October 5.
-- `career/finances/upcoming_decisions/player_decisions.md`: current contract-end-year inventory; must be reconciled after the full season.
+- `career/finances/upcoming_decisions/player_decisions.md`: current contract-end-year inventory; must be reconciled after the full season, with practice-squad contracts separated from league-year expiries.
+- `career/finances/upcoming_decisions/README.md`: the dated decision index, including Thielen's extension eligibility.
 - `career/2014/Team_Operations/Finances/player_contracts/contracts.md`: executed 2014 contracts and rights.
 - `career/finances/player_contracts/contract_details.md`: individual contract details.
 - `career/finances/salary_cap/cap_tracker.md`: **unreconciled** current branch cap; not certified available 2015 room.
@@ -66,4 +71,4 @@ Stone's My Free-Agent Priorities could say, *after seeing that real brief*: 'Loo
 
 ## A sample technical acceptance case, not career canon
 
-Hypothetical test-only outcomes: two 2014-expiring players are offered retention, one accepts and one rejects. A third player has a valid tender filed. Separately, Jacksonville authorizes a March contact with a prospective UFA, whose agent discusses nonbinding parameters March 7, and the player signs with another club March 10. This creates four distinct **completed event outputs** (one re-sign, one declined renewal, one tender filing, one unsuccessful external acquisition), plus current Front Office Moves and Free Agency Results indexes. If there was a fifth genuine concluded event, it would create a fifth result. No single monthly summary may conceal the individual stories.
+Hypothetical test-only outcomes: two 2014-expiring players are offered retention, one accepts and one rejects. A third player has a valid tender filed. Separately, Jacksonville authorizes a March contact with a prospective UFA, whose agent discusses nonbinding parameters from noon ET March 7, and the player signs with another club after 4 p.m. ET March 10. This creates four distinct **completed event outputs** (one re-sign, one declined renewal, one tender filing, one unsuccessful external acquisition), each a form of the shared event result, plus current Front Office Moves and Free Agency Results indexes. If there was a fifth genuine concluded event, it would create a fifth result. A further expiring player who receives no offer, talks, tag or tender simply lapses at 4 p.m. ET March 10: no one decided anything, so he gets no result page, and Front Office Moves lists him with his contract record. No single monthly summary may conceal the individual stories.
