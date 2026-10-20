@@ -61,3 +61,7 @@ The playbook supplies concepts, assignments, formations, personnel possibilities
 Practice, minicamp, training camp, preseason, regular-season games, health, matchup, execution, correction retention, and coaching judgment determine what the team actually becomes.
 
 If an authored iteration contains a historical planning percentage or numeric usage center, treat it only as a non-controlling design note. It must never be used as a runtime input to assign snaps, touches, personnel usage, roles, or outcomes. When the football evidence points somewhere else, the football evidence controls.
+
+## Game plans and the active book (October 20, 2026)
+
+The user ruled on October 20, 2026: "We can call anything from the playbook. It's accessible." This governs the two installation statements above, the note that the book existing does not mean it is installed and the meaning of "installed" under player access and installation. Installation governs club teaching under the offseason calendar and how players are evaluated. It never governs which calls a game plan may name: any call in the active offensive or defensive book may be named on Stone's Game Plan for any situation he writes, whether or not it was practiced, installed or carded that week. The opening ideas on that page are his calls in order of preference, not a fixed script. The no-hindsight lock above still refuses a call from a book whose range starts after the current year.

@@ -44,7 +44,7 @@ Check on each simulated date/time advance; after every game, exam, roster transa
 
 ## C. Urgency and time
 
-**What stops the clock.** Only an answer due before kickoff (or, in a bye, before the bye's scheduled work) holds Jacksonville's game or the bye's close. Unrelated business never holds a game, and the other clubs' games in the slate close whatever is open for Jacksonville (the user's answers of October 20, 2026).
+**What stops the clock.** Only an answer due before kickoff (or, in a bye, before the bye's scheduled work) holds Jacksonville's game or the bye's close. Unrelated business never holds a game, and business that does not hold Jacksonville's game never holds the week's slate. In a bye week the other clubs' games close while Stone's bye answers are open (the user's answers of October 20, 2026). Whether the other clubs' games may close while Jacksonville's own pre-kickoff answer is open in a playing week has not been ruled on; until the user rules, the weekly build and close hold the whole slate.
 
 The briefing insertion order is: (1) pending decision that blocks a dated action, earliest due first; (2) other pending consequential answers; (3) FYI; (4) upcoming windows. Show exact ET deadlines where known, otherwise say “not set.” If an offer expires before the next weekly briefing, issue an immediate revision and stop before the expiring action is committed. Independent work may proceed. No reply is never yes or no; if Stone explicitly authorizes passing the deadline, the elapsed-time consequence can then close as “lapsed.” Do not duplicate the same notice on every open page; reference its current event and last communication.
 
@@ -89,7 +89,7 @@ A “trade deadline approaching” window is not a reason to manufacture a trade
 14. The first trade closes Tuesday and is readable Tuesday, without waiting for the Sunday game to finish. A second trade still under negotiation has dated process entries but no falsely finalized output.
 15. A week's Game Report lists or links the separately completed outputs without copying their content or silently consolidating them into a single transaction summary.
 16. Another club asks to contact Stone: Khan's answer is recorded as its own result, Stone's brief shows it as FOR YOUR INFORMATION only, and no ACTION REQUIRED item or queue question reaches Stone.
-17. An open question due after kickoff (for example a trade call due Tuesday) does not hold Sunday's game; one due before kickoff does. The other clubs' games in the week close either way.
+17. An open question due after kickoff (for example a trade call due Tuesday) does not hold Sunday's game; one due before kickoff does. In a bye week the other clubs' games close while Stone's bye answers are open.
 
 ## G. Sources and verification
 

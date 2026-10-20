@@ -382,16 +382,24 @@ class CompilerTests(unittest.TestCase):
         self.assertEqual({k: call[k] for k in ("family", "type", "personnel", "formation", "protection", "tags")},
                          {"family": "Smash", "type": "pass", "personnel": "11", "formation": "11 Trips",
                           "protection": "HALF", "tags": []})
-        # A special play of the book the call-family map names no players for is set with them
-        # unspecified (the play-by-play never names it on a snap), never refused for want of a card.
-        from runtime import call_families
+        # A special play of the book the call-family map names no players for is set with its book type
+        # and its players unspecified (no completion or carry is labelled with it), never refused for want
+        # of a card: a Halfback Pass is a pass, so a fourth-down go on it resolves as a pass.
+        from runtime import call_families, offensive_words
         gadget = "| 12 Ace, Halfback Pass, MAX | sudden change | A shot | After the safety bites |"
         _, problems, built, _ = compile_week5(text.replace(smash, gadget))
         self.assertEqual(problems, [])
         call = next(c for c in built["offensive_call_sheet"] if c["name"] == "12 Ace, Halfback Pass, MAX")
         self.assertEqual((call["family"], call["type"], call["carrier"], call["target"]),
-                         ("Halfback Pass", "any", "unspecified", "unspecified"))
+                         ("Halfback Pass", "pass", "unspecified", "unspecified"))
         self.assertEqual(call_families.sheet_errors(built["offensive_call_sheet"]), [])
+        # Every play of the book's sections 12.3 and 12.4 has its type: a run for the WR Reverse and the
+        # Tunnel Fake Draw (the QB's draw action), a pass for the rest; never "any".
+        self.assertEqual(set(offensive_words.BOOK_PLAY_TYPES), set(offensive_words.BOOK_PLAYS))
+        for play in offensive_words.BOOK_PLAYS:
+            form, problem = game_plan.new_call_form("12 Ace, %s, MAX" % play)
+            self.assertIsNone(problem, play)
+            self.assertEqual(form["type"], "run" if play in ("WR Reverse", "Tunnel Fake Draw") else "pass", play)
         # The playbook lock stays: a concept the active book does not have is refused.
         _, problems, built, _ = compile_week5(text.replace(smash, "| 11 Doubles, Flood Sail | high red zone | x | y |"))
         self.assertIsNone(built)
@@ -404,11 +412,63 @@ class CompilerTests(unittest.TestCase):
         drive = next(c for c in built["offensive_call_sheet"] if c["name"] == "11 Doubles, Drive, HALF")
         self.assertIn("Nicks X relief", drive["tags"])
 
-    def test_an_opening_call_must_be_on_the_sheet(self):
+    def test_any_call_of_the_book_may_be_an_opening_idea(self):
+        # The user's ruling of October 20, 2026: any call in the book may be named for any situation, and
+        # the opening ideas are ideas, not a fixed script. A book call no earlier sheet carries, named only
+        # under Opening ideas, is added to the sheet with the opening sequence as its only situation.
         line = next(l for l in FIXTURE.read_text(encoding="utf-8").splitlines() if l.startswith("**Opening ideas"))
+        forms = game_plan.earlier_forms(earlier(5), 4)
+        self.assertNotIn("11 Trips, Smash, HALF", forms)
+        _, problems, built, source = compile_week5(self.page(line, line.replace(
+            "**Opening ideas:** ", "**Opening ideas:** 11 Trips, Smash, HALF; ")))
+        self.assertEqual(problems, [])
+        smash = next(c for c in built["offensive_call_sheet"] if c["name"] == "11 Trips, Smash, HALF")
+        self.assertEqual({k: smash.get(k) for k in ("family", "type", "formation", "protection", "tags", "opener",
+                                                     "menus")},
+                         {"family": "Smash", "type": "pass", "formation": "11 Trips", "protection": "HALF",
+                          "tags": ["opener"], "opener": 1, "menus": ["opening sequence"]})
+        self.assertEqual(source["calls"]["11 Trips, Smash, HALF"], [{"opening": {"page": source["calls"][
+            "11 Trips, Smash, HALF"][0]["opening"]["page"]}}])
+        # A call an earlier sheet carries takes that sheet's form.
+        self.assertIn("11 Trey, Stick", forms)
+        _, problems, built, _ = compile_week5(self.page(line, line.replace(
+            "**Opening ideas:** ", "**Opening ideas:** 11 Trey, Stick; ")))
+        self.assertEqual(problems, [])
+        stick = next(c for c in built["offensive_call_sheet"] if c["name"] == "11 Trey, Stick")
+        self.assertEqual((stick["family"], stick["type"], stick["formation"], stick["menus"]),
+                         (forms["11 Trey, Stick"][0]["family"], forms["11 Trey, Stick"][0]["type"],
+                          forms["11 Trey, Stick"][0]["formation"], ["opening sequence"]))
+        # A call the page takes off is asked about, never added back.
         _, problems, built, _ = compile_week5(self.page(line, line.replace("11 Trey, Dagger, HALF", "12 Trey, Y-Cross, HALF")))
         self.assertIsNone(built)
-        self.assertTrue(any("12 Trey, Y-Cross, HALF is not a call on this week's sheet" in p for p in problems), problems)
+        self.assertIn("Offense, Opening ideas, number 27: 12 Trey, Y-Cross, HALF is among the calls not available "
+                      "this week; take it out of one", problems)
+        # A shorter name is asked about; written New call, the call its own words name is added.
+        _, problems, built, _ = compile_week5(self.page(line, line.replace("**Opening ideas:** ",
+                                                                           "**Opening ideas:** 12 Ace, Power; ")))
+        self.assertIsNone(built)
+        self.assertTrue(any("12 Ace, Power is not a call of this week's sheet or an earlier Jacksonville sheet as "
+                            "written; did you mean 12 Ace, Power Right" in p and "New call: 12 Ace, Power" in p
+                            for p in problems), problems)
+        _, problems, built, _ = compile_week5(self.page(line, line.replace("**Opening ideas:** ",
+                                                                           "**Opening ideas:** New call: 12 Ace, Power; ")))
+        self.assertEqual(problems, [])
+        self.assertIn("12 Ace, Power", [c["name"] for c in built["offensive_call_sheet"]])
+        # The playbook lock stays: a concept the active book does not have is refused.
+        _, problems, built, _ = compile_week5(self.page(line, line.replace("**Opening ideas:** ",
+                                                                           "**Opening ideas:** 11 Doubles, Flood Sail; ")))
+        self.assertIsNone(built)
+        self.assertTrue(any("'Flood Sail' is not a concept of the active playbook" in p for p in problems), problems)
+
+    def test_a_special_play_not_on_the_sheet_names_the_remedy(self):
+        # Special plays sets a call's status (Keep, Remove, Practice only) and has no situation, so a book
+        # call it names that the sheet does not have is not added; the check says how to call it.
+        line = next(l for l in FIXTURE.read_text(encoding="utf-8").splitlines() if l.startswith("**Special plays"))
+        _, problems, built, _ = compile_week5(self.page(line, line + "; 12 Ace, Halfback Pass, MAX: Keep"))
+        self.assertIsNone(built)
+        self.assertIn("Offense, Special plays: 12 Ace, Halfback Pass, MAX is not a call on this week's sheet; to call "
+                      "it this week, add it as a row in the Primary calls table with the situations you want it for",
+                      problems)
 
     def test_a_situation_is_named_in_the_sheets_words(self):
         text = self.page("| 11 Doubles, Inside Zone Right | backed up |", "| 11 Doubles, Inside Zone Right | red zone |")
@@ -417,7 +477,7 @@ class CompilerTests(unittest.TestCase):
         text = self.page("| 11 Doubles, Inside Zone Right | backed up |",
                          "| 11 Doubles, Inside Zone Right | opening sequence |")
         _, problems, _, _ = compile_week5(text)
-        self.assertTrue(any("the opening calls line puts a call in the opening sequence" in p for p in problems))
+        self.assertTrue(any("the opening ideas line puts a call in the opening sequence" in p for p in problems))
 
     def test_a_defensive_word_of_the_book_needs_no_earlier_practice(self):
         # Cover 2 is on no earlier Jacksonville sheet and no practice row names it: a version 2 page's

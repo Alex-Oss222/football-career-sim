@@ -38,11 +38,18 @@ carried frozen item it came from:
   <its name>" once the check has asked;
 - the opening sequence: "Opening ideas" (the calls he wants early, in his
   order of preference; a call repeated is a return to it), or "Carry Week NN
-  opening". Today the order fills the sheet's opening slots, which name the
-  early calls in the play-by-play and do not change results; a call on it
+  opening". Any call of the active book may be named there: one not yet on
+  the week's sheet is added to it with the opening sequence as its only
+  situation (from an earlier sheet's form when one carries it, otherwise read
+  from its name, as a Primary calls row is), and a call the page takes off is
+  asked about, never added back. The order fills the sheet's opening slots,
+  which name the early calls in the play-by-play and are left out of the
+  outcome packet, so reordering the list does not move a draw; a call on it
   that is not a normal-down call is on the opening sequence's list. The tags
   the opening list and the two-point list imply ("opener", "two-point
-  folder") follow them;
+  folder") follow them, and those tags, like every call on the sheet, are
+  committed to the outcome packet: which calls are on the list (not their
+  order) changes the game's random draws, with no football effect;
 - the defensive responses table, in the active defensive book's words: a
   first cell naming a situation the defense keys (normal downs, third and
   long, the red zone, late lead and the rest) is that situation's row, one
@@ -461,7 +468,7 @@ def situation_key(phrase):
     if key in ASK_WHICH:
         return None, "%r: say which: %s" % (phrase, ASK_WHICH[key])
     if key == cs.OPENING:
-        return None, "%r: the opening calls line puts a call in the opening sequence" % phrase
+        return None, "%r: the opening ideas line puts a call in the opening sequence" % phrase
     if key not in SITUATION_TEXT:
         return None, "%r is not a situation of the call sheet (%s)" % (phrase, ", ".join(SITUATION_WORDS))
     return key, None
@@ -1121,9 +1128,13 @@ def new_call_form(name):
     """(form, problem) of a call no earlier sheet carries, read from its name: the grouping and
     formation before the first comma, then the concept (with its direction) and the protection. A
     special play or gadget of the book that the call-family map gives no carrier or receiver for
-    (runtime/call_families.py) is set with both unspecified, the map's own word for a call whose
-    players are not named: the play-by-play then never names it on a snap, and nothing about the
-    game changes (its calls never reach the outcome packet)."""
+    (runtime/call_families.py) is set with its book type (runtime/offensive_words.BOOK_PLAY_TYPES:
+    a Flea Flicker is a pass, a WR Reverse a run) and both players unspecified, the map's own word
+    for a call whose players are not named: no completion or carry is labelled with it until the map
+    names its players, though, as any pass call on its menu, it may still describe a sack or a
+    quarterback scramble in the play-by-play. Like every call on the sheet, it goes into the outcome
+    packet (its family, type, personnel, formation, protection and tags; play_detail.
+    canonical_call_sheet), so adding it changes the game's random draws, with no football effect."""
     from . import call_families, offensive_words
     parts = [p.strip() for p in name.split(",")]
     if len(parts) < 2 or len(parts) > 3:
@@ -1138,7 +1149,7 @@ def new_call_form(name):
         book = offensive_words.concept(concept)
         if not book:
             return None, "%r: %r is not a concept of the active playbook" % (name, concept)
-        form = {"family": book, "type": "any", "carrier": call_families.UNSPECIFIED,
+        form = {"family": book, "type": offensive_words.BOOK_PLAY_TYPES[book], "carrier": call_families.UNSPECIFIED,
                 "target": call_families.UNSPECIFIED}
     else:
         kind = "mixed" if "carrier" in entry and "target" in entry else "run" if "carrier" in entry else "pass"
@@ -1164,6 +1175,16 @@ def earlier_forms(earlier, baseline=None):
             if isinstance(call, dict) and call.get("name"):
                 forms[call["name"]] = (call, week, i)
     return forms
+
+
+# What a Special plays line says when it names a call the week's sheet does not have: a special play
+# is set for its situations in the Primary calls table, and Keep, Remove or Practice only is its
+# status there.
+SPECIAL_REMEDY = ("; to call it this week, add it as a row in the Primary calls table with the situations you "
+                  "want it for")
+# How a call the page takes off is named when an Opening ideas item names it.
+TAKEN_OFF = {"remove": "removed under Special plays", "practice only": "kept for practice only under Special plays",
+             "not available": "among the calls not available this week"}
 
 
 def latest(earlier, test=lambda sheet: True):
@@ -1236,20 +1257,55 @@ def compile_sheet(choices, frame, earlier, standing=None, arrangement=None):
         calls[name] = entry
         table_order.append(name)
 
-    def on_sheet(text, where):
+    def on_sheet(text, where, remedy=""):
         found = match_calls(text, list(calls))
         if found:
             return found[0]
         near = near_calls(text, list(calls))
         problems.append("%s: %s %s" % (where, text, "is not a call on this week's sheet as written; did you mean %s? "
                                        "Write the call's full name" % did_you_mean(text, near) if near
-                                       else "is not a call on this week's sheet"))
+                                       else "is not a call on this week's sheet" + remedy))
         return None
+
+    def opening_call(text, where):
+        """The call an Opening ideas item names. Any call of the active book may be named: a call on
+        this week's sheet is that call; one the page takes off is asked about; one an earlier sheet
+        carries takes that sheet's form; any other is read from its name (``new_call_form``, which
+        refuses a word the active book does not have). An added call has the opening sequence as its
+        only situation. A short or partial name is asked about, never resolved to a longer call; the
+        call its own words name is written "New call: <name>"."""
+        marked = NEW_CALL.match(text.strip())
+        text = (marked[1] if marked else text).strip()
+        found = match_calls(text, list(calls))
+        if found:
+            return found[0]
+        gone = match_calls(text, list(removed))
+        if gone:
+            problems.append("%s: %s is %s; take it out of one" % (where, gone[0], TAKEN_OFF[removed[gone[0]]]))
+            return None
+        found = match_calls(text, list(forms))
+        if found:
+            call, w, idx = forms[found[0]]
+            calls[found[0]] = {"name": found[0], "form": form_of(call), "tags": base_tags(call.get("tags")),
+                               "menus": [], "from": [{"carried": {"week": w, "call": idx}}]}
+            return found[0]
+        near = list(dict.fromkeys(near_calls(text, list(calls)) + near_calls(text, list(forms))))
+        if near and not marked:
+            problems.append("%s: %s is not a call of this week's sheet or an earlier Jacksonville sheet as written; "
+                            "did you mean %s? Write the call's full name, or, for the call these words name, New "
+                            "call: %s" % (where, text, did_you_mean(text, near), text))
+            return None
+        form, problem = new_call_form(text)
+        if problem:
+            problems.append("%s: %s" % (where, problem))
+            return None
+        calls[text] = {"name": text, "form": form, "tags": [], "menus": [], "from": [], "new": True}
+        return text
 
     removed, kept = {}, set()
     special = choices.get("special_plays")
     for item in special if isinstance(special, list) else ():
-        name = on_sheet(item["call"], "Offense, Special plays")
+        name = on_sheet(item["call"], "Offense, Special plays", SPECIAL_REMEDY)
         if name and item["status"] in ("remove", "practice only"):
             removed[name] = item["status"]
         elif name:
@@ -1298,13 +1354,13 @@ def compile_sheet(choices, frame, earlier, standing=None, arrangement=None):
     elif isinstance(opening, dict):
         line = choices["fields"]["opening"]["line"]
         for n, text in enumerate(opening["items"], 1):
-            name = on_sheet(text, "Offense, Opening ideas, number %d" % n)
+            name = opening_call(text, "Offense, Opening ideas, number %d" % n)
             if name:
                 positions.setdefault(name, []).append(n)
         for name in positions:
             calls[name]["from"].append({"opening": {"page": line}})
 
-    # The order: the opening calls in order, then the table's, then the baseline's.
+    # The order: the opening ideas in his order of preference, then the table's, then the baseline's.
     first = sorted(positions, key=lambda n: positions[n][0])
     order = first + [n for n in table_order if n in calls and n not in first] + \
         [n for n in carried_order if n in calls and n not in first and n not in table_order]

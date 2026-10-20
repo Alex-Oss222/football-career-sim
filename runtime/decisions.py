@@ -6,7 +6,8 @@ A phase decision has a brief (named for whoever really brings it), his page (a
 fill-in page with fixed headings) and a result (named for where it is
 decided), all in one folder (``REGISTRY``). An event inside a week or phase (an
 injury replacement, a trade call, Stone's own contract extension, another club
-calling, an offer after an interview) is not a decision of three pages
+calling, an offer after an interview, another club asking to interview an
+assistant) is not a decision of three pages
 (``EVENTS``, docs/event_inserts.md): it appears as an insert at the top of the
 active brief (ACTION REQUIRED, FOR YOUR INFORMATION or COMING UP), is answered
 on that week's or phase's one My Responses page, and each resolved event gets
@@ -105,10 +106,11 @@ class Event:
 
 
 # The owner folders of event results: a logical season record of the folder map and how many folders
-# up from it the result sits; "stone" is Stone's own folder (career/Stone), whoever employs him.
+# up from it the result sits; "stone" is Stone's own folder (career/Stone), whoever employs him. Each
+# is the folder of an event below; an owner the plan names but no event uses yet (signings, in
+# Team_Operations/Free_Agency) is added with its first event.
 OWNERS = {
     "roster": ("team/roster", 0),                 # roster moves: Team_Operations/Team/Roster
-    "free_agency": ("free_agency", 0),            # signings: Team_Operations/Free_Agency
     "trades": ("trades/README.md", 1),            # trades: Team_Operations/Trades
     "staff": ("team/coaching_staff", 0),          # staff: Team_Operations/Staff
 }
@@ -119,10 +121,15 @@ EVENTS = (
     Event("trade_talks", "Trade talks", "Trade Result", "trades", "The general manager", 5),
     Event("extension", "Stone's contract extension", "New Contract or Unchanged", "stone", "The club", 6),
     # Shad Khan alone answers another club's request (Document 3 row 1a); Stone is not open to job offers,
-    # so the call reaches him as news.
-    Event("club_calls", "Another club calls", "Interview or Declined", "stone",
+    # so the call reaches him as news, and the result is Khan's decision (no permission is an interview).
+    Event("club_calls", "Another club calls", "Permission Granted or Refused", "stone",
           "The calling club, through Shad Khan", 6),
     Event("after_interview", "After an interview", "Signed or Talks Ended", "stone", "The interviewing club", 6),
+    # Answered under that season's league permission rules and Jacksonville's standing assistant-permission
+    # instruction (docs/event_inserts.md, section D), which reach Stone as news; he is asked only about a
+    # request the instruction does not cover.
+    Event("assistant_interview", "Another club seeks an assistant interview", "Assistant Permission Result", "staff",
+          "The asking club", 6),
 )
 EVENT_KIND = {e.kind: e for e in EVENTS}
 # The week's or phase's one answer page for the events inserted in its brief.

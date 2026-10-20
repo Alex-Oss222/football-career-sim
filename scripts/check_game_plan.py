@@ -74,8 +74,8 @@ come (each once), are listed as notes; they do not fail the check, and a
 complete page is applied once no exam its items wait on is still to come
 (scripts/apply_game_plan.waiting). A page that has changed since it was
 applied passes as complete but is reported "not yet set" (exit 1) until it
-is applied again. A complete page shows back its opening calls in order and
-the calls on each situation's list. Nothing here moves time or creates an
+is applied again. A complete page shows back its opening ideas in his order
+of preference and the calls on each situation's list. Nothing here moves time or creates an
 event.
 scripts/apply_game_plan.py applies a page that passes.
 """
@@ -449,7 +449,7 @@ HINTS = {"fact": "the staff writes it; restore it", "briefing": "write the date 
          "baseline": "write Carry Week N or New plan", "intent": "write your direction, or None",
          "inactives": "write Standing rule, the players by name or Carry Week N",
          "depth": "write No change, None or the changes", "caller": "write who calls it, or No change",
-         "opening": "write the opening calls in order, Carry Week N opening, No change or None",
+         "opening": "write your opening ideas in your order of preference, Carry Week N opening, No change or None",
          "situational": "write how you want it called, Carry Week N or No change",
          "special": "write each call with Keep, Remove or Practice only, No change or None",
          "removals": "write the calls, No change or None",
@@ -1021,7 +1021,7 @@ def main(argv=None):
         print("GAME PLAN: COMPLETE  %s, %d" % (plan.label(), args.season))
         order = opening_order(plan.sheet())
         if order:
-            print("  Opening calls, in order: %s" % "; ".join(order))
+            print("  Opening ideas: %s" % "; ".join(order))
         for situation, names in situation_lists(plan.sheet()):
             print("  %s: %s" % (situation[:1].upper() + situation[1:], "; ".join(names)))
     for note in notes:
