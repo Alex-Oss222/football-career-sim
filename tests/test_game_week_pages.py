@@ -250,8 +250,24 @@ class IssueRecordTests(unittest.TestCase):
         page = self.wk.pages.briefing
         when = render_game_week.issued_on(self.wk)
         self.assertEqual(when.isoformat(), render_game_week.issues(self.wk)[-1]["date"])
-        self.assertIn("**Issued:** %s" % render_game_week.day(when), page.read_text(encoding="utf-8"))
-        self.assertIn("Issued %s" % render_game_week.day(when), self.wk.pages.readme.read_text(encoding="utf-8"))
+        # Its revision is the record's too: the n-th issue of its day, named from the second on.
+        current = render_game_week.current_issue(self.wk)
+        entries = render_game_week.issues(self.wk)
+        self.assertEqual([e["revision"] for e in entries], render_game_week.revisions(entries))
+        label = render_game_week.label_of(current)
+        self.assertIn("**Issued:** %s" % label, page.read_text(encoding="utf-8"))
+        self.assertIn("Issued %s" % label, self.wk.pages.readme.read_text(encoding="utf-8"))
+        self.assertEqual(label.endswith(", revision %d" % current[1]), current[1] > 1)
+
+    def test_a_misnumbered_revision_fails(self):
+        path = render_game_week.issues_path(self.wk)
+        data = json.loads(path.read_text(encoding="utf-8"))
+        data["issued"][-1]["revision"] += 1
+        path.write_text(json.dumps(data), encoding="utf-8")
+        self.assertTrue(any("is recorded as revision" in e for e in render_game_week.validation_errors(self.root)))
+        del data["issued"][-1]["revision"]
+        path.write_text(json.dumps(data), encoding="utf-8")
+        self.assertTrue(any("is malformed" in e for e in render_game_week.validation_errors(self.root)))
 
 
 def receipt(event, week, away, home, scores, stats, records=False):
@@ -283,10 +299,12 @@ class BriefingFactsTests(unittest.TestCase):
                           "C": {"penalties": 7, "penalty_yards": 69, "players": {}}}, records=True)]
         rows, note = render_game_week.team_rows(games, "A")
         penalties = {r[0]: r[1:] for r in rows if r[0].startswith("Penalties")}
-        self.assertEqual(penalties, {"Penalties, through Week 4": ["8 for 58 yards", "2 for 18 yards"],
-                                     "Penalties, from Week 5": ["10 for 63 yards", "7 for 69 yards"]})
-        self.assertIn("never added", note)
+        # Only the comparable count, the way every game is counted now, with the weeks it covers; the
+        # earlier count is neither shown beside it nor added to it, and the page carries no accounting note.
+        self.assertEqual(penalties, {"Penalties since Week 5": ["10 for 63 yards", "7 for 69 yards"]})
+        self.assertIsNone(note)
         self.assertNotIn("18 for 121 yards", str(rows))
+        self.assertNotIn("8 for 58 yards", str(rows))
         # One method alone is one row, and the other figures are the statistics owner's totals.
         rows, note = render_game_week.team_rows(games[1:], "A")
         self.assertIsNone(note)
@@ -307,6 +325,34 @@ class BriefingFactsTests(unittest.TestCase):
         from runtime import season_summary as summary
         team = {"players": {"X": {"tackles": 40}, "Y": {"tackles": 40}, "Z": {"tackles": 12}}}
         self.assertEqual([(c, n) for c, n, _ in summary.leaders(team)], [("Tackling, tied", "X"), ("Tackling, tied", "Y")])
+
+    def test_a_player_leading_more_than_one_category_has_one_row(self):
+        from types import SimpleNamespace
+        games = [receipt("e1", 1, "B", "A", {"A": 10, "B": 7},
+                         {"A": {"players": {"Brown": player("ILB", sacks=2, tackles=34),
+                                            "Woodyard": player("ILB", sacks=0, tackles=34),
+                                            "Pollard": player("SS", sacks=2, tackles=20, defensive_interceptions=2)}},
+                          "B": {"players": {}}})]
+        rows = render_game_week.threat_rows(SimpleNamespace(opponent="A"), games, ("Tackles", "Sacks", "Interceptions"),
+                                            lambda name: "To come")
+        names = [r[0].split(",")[0] for r in rows]
+        self.assertEqual(sorted(names), ["Brown", "Pollard", "Woodyard"])
+        self.assertEqual(len(names), len(set(names)))
+        brown = next(r for r in rows if r[0].startswith("Brown"))
+        self.assertEqual(brown[1], "Tackles leader, tied: 34; Sacks leader, tied: 2")
+        pollard = next(r for r in rows if r[0].startswith("Pollard"))
+        self.assertEqual(pollard[1], "Sacks leader, tied: 2; Interceptions leader: 2")
+
+    def test_an_ask_whose_date_has_passed_is_left_out(self):
+        from datetime import date
+        ask = ("the menu, including whether the Flea Flicker and TE Delay stay, and who takes Trawick's practice work "
+               "after his October 7 exam.")
+        self.assertEqual(render_game_week.current_ask(ask, date(2014, 10, 5)), ask)
+        self.assertEqual(render_game_week.current_ask(ask, date(2014, 10, 7)), ask)
+        self.assertEqual(render_game_week.current_ask(ask, date(2014, 10, 12)),
+                         "the menu, including whether the Flea Flicker and TE Delay stay.")
+        self.assertEqual(render_game_week.current_ask("who does not dress: 7 of the 53; none out", date(2014, 10, 12)),
+                         "who does not dress: 7 of the 53; none out")
 
     def stand_in(self, root, master):
         """A week read for the medical table: the copy's roster record as of ``master``."""

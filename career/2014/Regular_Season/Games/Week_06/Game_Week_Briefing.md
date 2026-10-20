@@ -1,10 +1,10 @@
 # Week 6 Game Week Briefing: at Tennessee
 
-**Issued:** October 5, 2014  
+**Issued:** October 5, 2014, revision 3  
 **Game:** Jacksonville at Tennessee, Sunday, October 12, 2014, 1 p.m. ET, LP Field  
 **Prepared for:** Head Coach Alex Stone  
 **Football staff:** Mike Tice (offense), Romeo Crennel (defense), Mike Westhoff (special teams), the medical staff and pro personnel  
-**Status:** Revised: it replaces the briefing of October 5, 2014.
+**Status:** Revised: it replaces the briefing of October 5, 2014, revision 2.
 
 ## 1. The game and what is at stake
 
@@ -79,11 +79,9 @@
 | Defender / area | Verified evidence | What Tice wants to test |
 |---|---|---|
 | Wesley Woodyard, ILB | Tackles leader, tied: 34 | To come |
-| Zach Brown, ILB | Tackles leader, tied: 34 | To come |
-| Bernard Pollard, SS | Sacks leader, tied: 2 | To come |
+| Zach Brown, ILB | Tackles leader, tied: 34; Sacks leader, tied: 2 | To come |
+| Bernard Pollard, SS | Sacks leader, tied: 2; Interceptions leader: 2 | To come |
 | Sammie Lee Hill, NT | Sacks leader, tied: 2 | To come |
-| Zach Brown, ILB | Sacks leader, tied: 2 | To come |
-| Bernard Pollard, SS | Interceptions leader: 2 | To come |
 
 **Opening-week starters:** DE Ropati Pitoitua (92), NT Sammie Lee Hill (94), DT Jurrell Casey (99), ILB Zach Brown (55), ILB Wesley Woodyard (59), OLB Derrick Morgan (91), OLB Kamerion Wimbley (95), CB Blidi Wreh-Wilson (25), CB Jason McCourty (30), SS Bernard Pollard (31), FS Michael Griffin (33).
 
@@ -109,10 +107,7 @@
 
 | Penalties, Tennessee | Tennessee | Its opponents |
 |---|---|---|
-| Penalties, through Week 4 | 36 for 255 yards | 20 for 150 yards |
-| Penalties, from Week 5 | 10 for 63 yards | 7 for 69 yards |
-
-The two penalty counts are never added: through Week 4, each game's penalties were charged to the offense; from Week 5, each accepted foul is charged to the club that committed it.
+| Penalties since Week 5 | 10 for 63 yards | 7 for 69 yards |
 
 **Opening-week specialists:** K Ryan Succop (8), P Brett Kern (6), LS Beau Brinkley (48).
 
@@ -158,6 +153,6 @@ Write your decisions on the [Game Plan](Game_Plan.md); the staff checks it and t
 - **The injury report and game-status designations.** Team medical staff and team communications staff; you supply information.
 - **Trades, waivers, claims, releases, the reserve lists and the practice squad.** David Caldwell; you recommend.
 
-**If facts change:** The staff issues a newly dated briefing, and this one is kept as what you knew when you answered.
+**If facts change:** The staff issues a new briefing, dated and, when it is the day's second or later, numbered as that day's revision; this one is kept as what you knew when you answered.
 
 [Game Plan](Game_Plan.md) · [Week 6](README.md) · [Roster](../../../Team_Operations/Team/Roster/roster.md) · [Depth chart](../../../Team_Operations/Team/Depth_Chart/depth_chart.md) · [Medical history](../../../Team_Operations/Medical/medical_history.md) · [Offensive playbook](../../../../playbook/alex_stone_2013_offensive_playbook_iteration_i.md) · [Defensive playbook](../../../../playbook/alex_stone_2013_defensive_playbook_iteration_i.md) · [Week 5 report](../Week_05/output.md)

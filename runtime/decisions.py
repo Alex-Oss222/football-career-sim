@@ -145,6 +145,20 @@ class WeekPages:
         page bytes the call sheet was frozen, its depth-chart changes and the event of the apply."""
         return self.data / "applied_plan.json"
 
+    @property
+    def practice(self):
+        """The practice week's record of the installs his Game Plan names (``installs``: each install's
+        words as the page writes them, ``taught`` true or false, the ``date`` and the coach ``by``
+        whom), written by whoever closes the practice week, never by code. The plan is set for the game
+        only once every install it relies on is recorded taught (scripts/apply_game_plan.py)."""
+        return self.data / "practice.json"
+    @property
+    def pregame(self):
+        """The Game Report's pregame sections as they stood at the game-day commit (``sections``: each
+        heading and the sha256 of its text; ``frozen``, the day), written by scripts/freeze_pregame.py
+        before kickoff; validation holds the report's sections 1 and 2 to it (runtime/game_report.py)."""
+        return self.data / "pregame.json"
+
     def earlier_briefing(self, label):
         """An earlier briefing kept as what he saw: Game_Week_Briefing_October_5.md."""
         return self.folder / (self.briefing.stem + "_" + label.replace(" ", "_") + ".md")

@@ -1,15 +1,23 @@
 {
- "about": "Every Game Week Briefing issued for the week, oldest first: the day it went out, its file in the week folder (the latest is the current briefing, each earlier one kept as he saw it) and the sha256 of its bytes as issued. Written only by scripts/render_game_week.py; validation holds each briefing to its entry.",
+ "about": "Every Game Week Briefing issued for the week, oldest first: the day it went out, its revision (the n-th issue of that day, so two issues the same day are told apart), its file in the week folder (the latest is the current briefing, each earlier one kept as he saw it) and the sha256 of its bytes as issued. Written only by scripts/render_game_week.py; validation holds each briefing to its entry.",
  "issued": [
   {
    "date": "2014-10-05",
+   "revision": 1,
    "file": "Game_Week_Briefing_October_5.md",
    "sha256": "57a097b380b83b72ed35234e1e05243985511f4849c7d1f3b3b0c419e2c8a212"
   },
   {
    "date": "2014-10-05",
-   "file": "Game_Week_Briefing.md",
+   "revision": 2,
+   "file": "Game_Week_Briefing_October_5_2.md",
    "sha256": "9014992400e2bf16b2874fc9028f155449ee997e5dc61ecba8a279b3ffe838f5"
+  },
+  {
+   "date": "2014-10-05",
+   "revision": 3,
+   "file": "Game_Week_Briefing.md",
+   "sha256": "a15ad83dbd724a9d2aaa19adca63e481944921199f0dfec7e50af3ad5898bbbc"
   }
  ]
 }

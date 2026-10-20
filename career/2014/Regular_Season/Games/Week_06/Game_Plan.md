@@ -4,14 +4,14 @@
 
 **Head coach:** Alex Stone  
 **Game:** Jacksonville at Tennessee, Sunday, October 12, 2014, 1 p.m. ET, LP Field  
-**Briefing used:** October 5, 2014  
+**Briefing used:** October 5, 2014, revision 3  
 **Baseline:**
 
 > Answer every line under its heading. No change keeps the last legal instruction set; None means intentionally nothing; a line left empty is unanswered, and nothing is set for the game until every line is answered. Baseline: Carry Week 5 starts from that week's calls and defensive responses as set; New plan starts from none.
 
 ## 1. What I want this game to look like
 
-> Your direction to the staff, in your words. It is kept with the plan and never changes a call.
+> Your direction to the staff, in your words, on the line or in bullets below it. It is kept with the plan and never changes a call.
 
 **The matchup I am attacking:**  
 **What I must not give them:**  
@@ -38,14 +38,14 @@
 
 ### Primary calls
 
-> One row for each call you add or change; with Carry Week 5 every call of that week stays as set unless you change it here, list it as not available or remove it as a special play. Name a call as the active playbook and the earlier call sheets name it (Week 5: 12 Ace, Power Right; 12 SHIFT Empty, Stick; 12 Trey, Y-Cross, SOLID; 11 Bunch, Mesh, HALF; 12 Wing, Outside Zone Left; 12 Wing, Boot Flood Right; 12 Ace, Counter Right; 11 Doubles, Drive, HALF; 11 Doubles, Stick, SCAT; 11 Doubles, RB Slow Screen; 12 Ace, Power Left; 12 Ace, Flea Flicker, MAX; 12 Wing, TE Delay; 11 SHIFT Empty, Spacing, SCAT; 11 Doubles, Inside Zone Right; 11 Trips, Inside Zone + Bubble; 12 Ace, Power Pass / Post-Cross, MAX; 11 Trey, Dagger, HALF; 12 Trey, TE Delay; 11 Doubles, Spacing, SCAT; 11 Bunch, Snag), or a new call as its formation, concept and protection, named as this week's install in section 6. A variation goes in parentheses after the call, or (without the variation) to take one off. When I want it: the situations separated by commas (normal downs, second and long, third and short, third and medium, third and long, backed up, high red zone, low red zone, goal line, two-minute, PRESS sequence, four-minute, sudden change, two-point tries, final play of the half); the opening calls line puts a call in the opening sequence. Your reason and stop condition are kept with the plan and never change a call.
+> One row for each call you add or change; with Carry Week 5 every call of that week stays as set unless you change it here, list it as not available or remove it as a special play. Name a call by its full name, as the active playbook and the earlier call sheets name it (Week 5: 12 Ace, Power Right; 12 SHIFT Empty, Stick; 12 Trey, Y-Cross, SOLID; 11 Bunch, Mesh, HALF; 12 Wing, Outside Zone Left; 12 Wing, Boot Flood Right; 12 Ace, Counter Right; 11 Doubles, Drive, HALF; 11 Doubles, Stick, SCAT; 11 Doubles, RB Slow Screen; 12 Ace, Power Left; 12 Ace, Flea Flicker, MAX; 12 Wing, TE Delay; 11 SHIFT Empty, Spacing, SCAT; 11 Doubles, Inside Zone Right; 11 Trips, Inside Zone + Bubble; 12 Ace, Power Pass / Post-Cross, MAX; 11 Trey, Dagger, HALF; 12 Trey, TE Delay; 11 Doubles, Spacing, SCAT; 11 Bunch, Snag); a shorter name is asked about, never filled in. A new call is its formation, concept and protection, named as this week's install in section 6. A variation goes in parentheses after the call, or (without the variation) to take one off. When I want it: the situations separated by commas (normal downs, second and long, third and short, third and medium, third and long, backed up, high red zone, low red zone, goal line, two-minute, PRESS sequence, four-minute, sudden change, two-point tries, final play of the half); the opening calls line puts a call in the opening sequence. Your reason and stop condition are kept with the plan and never change a call.
 
 | Call / concept as named in the active book | When I want it | Football reason and key read | Protection, personnel or stop condition |
 |---|---|---|---|
 
 ### Situational changes from the standing / previous menu
 
-> How you want each situation called is your direction to the staff; which calls are on each situation's list is set by the table above. Special plays: each call with Keep, Remove or Practice only, separated by semicolons. Calls not available this week: the calls separated by semicolons, or None.
+> How you want each situation called is your direction to the staff; which calls are on each situation's list is set by the table above. Special plays: each call by its full name with Keep, Remove or Practice only, separated by semicolons; a special play is called only in the situations it has been installed for, unless section 6 installs a new one. Calls not available this week: the calls by their full names, separated by semicolons, or None. A call taken off leaves the opening calls, and the calls after it move up.
 
 **Third down:**  
 **Backed up:**  
@@ -91,7 +91,7 @@
 
 ## 6. What we will practice
 
-> One row for each priority. A first column beginning Install names this week's installs, separated by semicolons: a new call, a new variation or a defensive word. These are intentions; the practices themselves are recorded when they happen.
+> One row for each priority. A first column beginning Install names this week's installs, separated by semicolons: a new call, a new variation, a defensive word, or a special play's new situation (the call, then on and the situation). These are intentions; the practices themselves are recorded when they happen, and a plan that relies on an install is set for the game on game day, once the practice week records it taught.
 
 | Priority | Responsible coach and players | Football situation to rehearse | What shows it is ready |
 |---|---|---|---|
@@ -101,7 +101,7 @@
 
 ## 7. Directions to the staff and public position
 
-> Your directions; nothing here is set for the game, and silence never means approval.
+> Your directions, on the line or in bullets below it; nothing here is set for the game, and silence never means approval.
 
 **Staff instructions:**  
 **Public position, if I am adding one:**  

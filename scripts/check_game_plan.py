@@ -27,10 +27,11 @@ What it checks:
   calls table holds a call unless the baseline carries a week, the practice
   table names at least one priority, and no section carries a heading of its
   own the page does not have;
-- the briefing he answers is the current one (its date on "Briefing used"),
-  and the briefing has not been overtaken by the situation (a briefing the
-  situation has overtaken is re-issued first; the settlement of the week's
-  own items by this page is not a change of situation);
+- the briefing he answers is the current one (its date on "Briefing used",
+  and from the second issue of a day its revision, as the issue record
+  numbers them), and the briefing has not been overtaken by the situation (a
+  briefing the situation has overtaken is re-issued first; the settlement of
+  the week's own items by this page is not a change of situation);
 - each caller line names who calls that phase on the staff page (a change of
   caller is recorded with the staff first);
 - the inactives: the right number, every one on the active roster, every
@@ -39,15 +40,20 @@ What it checks:
   availability note the staff cannot read is a problem), and no healthy
   player when more are out than the count; "Standing rule" applies his
   standing inactive rule to the week (with the others he names after it),
-  and "Carry Week N" carries that week's list as set;
+  and "Carry Week N" carries that week's list as set; the standing rule reads
+  the chart as the page's own depth changes leave it;
 - the depth and role changes: a group's new order holds exactly the players
   now in that group; a game role goes to a player of its group (the starter a
   quarterback, the kicker a kicker, the punter a punter, the nickel and the
   outside reserve corner defensive backs), the starter, kicker and punter go
-  to the head of their group, and the defensive-back seats stay valid;
+  to the head of their group, the defensive-back seats stay valid, and every
+  role holder, new or carried on the chart, dresses (``role_problems``);
 - the offense: the page compiles (runtime/game_plan.compile_sheet): each call
-  resolves to exactly one prepared form or is a new call named as this
-  week's install; every word of every call on the sheet is the active
+  is named by its full name (a shorter one is asked about, never resolved to
+  a longer call) or is a new call named as this week's install; a special
+  play keeps the situations it has been set for, unless one is named as an
+  install; a call kept as a special play is not also not available; every
+  word of every call on the sheet is the active
   offensive playbook's (its concept, personnel, formation, motion,
   protection, name and tags; runtime/offensive_words.py, read through the
   playbook lock); every call's personnel grouping can be fielded by the
@@ -60,14 +66,19 @@ What it checks:
   (runtime/call_families.sheet_errors, runtime/scoring_decisions.sheet_errors
   and input_policies, runtime/defensive_calls.sheet_errors and
   source_errors), so a page that passes here applies and builds cleanly;
-- the page is clean (runtime/clean_pages.py).
+- the page is clean (runtime/clean_pages.py);
+- the installs the plan relies on (``install_status``): noted before game day;
+  on game day each must be recorded taught in the week's practice record
+  (runtime/decisions.WeekPages.practice), or the page is not complete.
 
 Open items with other people that hold the week, and medical exams still to
 come (each once), are listed as notes; they do not fail the check, and a
 complete page is applied once no exam its items wait on is still to come
 (scripts/apply_game_plan.waiting). A page that has changed since it was
 applied passes as complete but is reported "not yet set" (exit 1) until it
-is applied again. Nothing here moves time or creates an event.
+is applied again. A complete page shows back its opening calls in order and
+the calls on each situation's list. Nothing here moves time or creates an
+event.
 scripts/apply_game_plan.py applies a page that passes.
 """
 from __future__ import annotations
@@ -329,8 +340,9 @@ def inactive_rule(plan):
 def standing_inactives(plan):
     """(players, problems): Stone's standing inactive rule for the week: every player out for the game,
     and the deepest healthy reserve on the chart in each of the five largest healthy position groups,
-    never below a legal game-day unit. When the week sits more healthy players than five, the page
-    names the others below Standing rule, and they follow the rule's five. Where its words do not
+    never below a legal game-day unit, on the chart as the page's own depth changes leave it. When the
+    week sits more healthy players than five, the page names the others after Standing rule, and they
+    follow the rule's five. Where its words do not
     settle the week (fewer than five healthy places, a tie for the fifth-largest group, a group left
     short) or the page names the wrong number besides it, it says so."""
     if inactive_rule(plan) is None:
@@ -351,11 +363,14 @@ def standing_inactives(plan):
                           "healthy players); write Standing rule alone, without the %d named"
                           % (needed, len(outs), RULE_GROUPS, len(named))]
         return None, ["Inactives: your standing rule sits %d healthy players, but this week %d sit with %d out for "
-                      "the game, so %d healthy; name the other %d in the table below Standing rule (%d named)"
+                      "the game, so %d healthy; name the other %d after Standing rule on the Inactives line, with "
+                      "commas between them (%d named)"
                       % (RULE_GROUPS, needed, len(outs), healthy_needed, others, len(named))]
     active = set(plan.active())
     groups = []
-    for group, order in (plan.chart.get("depth") or {}).items():
+    # The chart as the page leaves it: a group he reorders on this page sits its new deepest reserve.
+    chart, _ = changed_chart(plan.chart, plan.choices.get("depth"))
+    for group, order in (chart.get("depth") or {}).items():
         healthy = [p for p in order if p in active and p not in outs]
         if healthy:
             groups.append((group, healthy))
@@ -369,7 +384,7 @@ def standing_inactives(plan):
     if already:
         return None, ["Inactives: %s already sits by your standing rule; name another" % p for p in already]
     from runtime.usage import lineup_errors
-    positions = plan.chart.get("positions") or {}
+    positions = chart.get("positions") or {}
     dressed = [p for p in plan.active() if p not in outs and p not in picks and p not in named]
     short = lineup_errors([type("Row", (), {"position": positions.get(p)})() for p in dressed])
     if short:
@@ -496,19 +511,21 @@ def required(plan):
 
 
 def briefing_problems(plan):
-    """The briefing his page answers is the current one."""
+    """The briefing his page answers is the current one: its date and, from the second issue of a day,
+    its revision, as the issue record numbers them (a plan written against an earlier issue the same
+    day does not answer the current one)."""
     when = plan.choices.get("briefing")
     if when is None:
         return []
     from scripts import render_game_week
     try:
-        current = render_game_week.issued_on(render_game_week.Week(plan.root, plan.week))
+        current = render_game_week.current_issue(render_game_week.Week(plan.root, plan.week))
     except (OSError, ValueError):
         return []
-    if current is not None and when != current:
-        return ["Briefing used: your page answers the briefing of %s; the current briefing went out %s; read it "
-                "and write its date (your answers may stand)" % (game_plan.long_date(when),
-                                                                 game_plan.long_date(current))]
+    if current is not None and (when["date"], when["revision"]) != current:
+        return ["Briefing used: your page answers the briefing of %s; the current briefing is %s; read it and "
+                "write it as its status line names it (your answers may stand)"
+                % (game_plan.issue_label(when["date"], when["revision"]), game_plan.issue_label(*current))]
     return []
 
 
@@ -657,6 +674,73 @@ def depth_problems(plan):
         before = set(db_role_errors(plan.chart))
         out += ["Depth/role changes: %s" % db_words(e) for e in db_role_errors(trial) if e not in before]
     return out
+
+
+def role_problems(plan):
+    """Every game role, the page's new ones and those the chart carries, held by a player who dresses:
+    a role holder on the inactives, or out for the game, would leave the game to a fallback player in
+    place of the one named."""
+    players = plan.inactives()
+    if players is None:
+        return []
+    value = plan.choices.get("depth")
+    chart, _ = changed_chart(plan.chart, value)
+    outs, _ = plan.outs()
+    named = (value.get("roles") or {}) if isinstance(value, dict) else {}
+    out = []
+    for label, role in game_plan.ROLES.items():
+        for player in [p for p, held in (chart.get("roles") or {}).items() if role in (held or ())]:
+            if player not in players and player not in outs:
+                continue
+            why = "he is on the inactives" if player in players else "he is out for the game"
+            if named.get(role) == player:
+                out.append("Depth/role changes: the %s role goes to %s, who does not dress (%s); the role needs a "
+                           "player who dresses" % (label, player, why))
+            else:
+                out.append("Depth/role changes: %s holds the %s role on the depth chart and does not dress (%s); "
+                           "give the role to a player who dresses (%s: his name)" % (player, label, why, label))
+    return out
+
+
+def practice_record(plan):
+    """The week's practice record (runtime/decisions.WeekPages.practice): {install text, as words: entry}
+    of each install the practice week records, taught or not; {} before any."""
+    from scripts.apply_game_plan import practice_entries
+    return practice_entries(plan.pages.practice, "What we will practice")
+
+
+def install_status(plan):
+    """(notes, problems) of the installs the compiled plan relies on (a new call, a new variation, a
+    defensive word off the practiced menu, a special play's new situation): before game day each is
+    still to be taught, and the plan is set once the practice week records it; on game day an install
+    the practice record does not hold as taught blocks the plan until it is taken off."""
+    sheet, source, _ = plan.compiled()
+    installs = (source or {}).get("installs") or [] if sheet is not None else []
+    if not installs:
+        return [], []
+    game_day = date.fromisoformat(plan.game["date"])
+    names = "; ".join(i["text"] for i in installs)
+    if plan.master < game_day:
+        return (["The plan relies on this week's installs (%s); it is set for the game on game day, once the "
+                 "practice week records each one taught" % names], [])
+    try:
+        record = practice_record(plan)
+    except ValueError as exc:
+        return [], [str(exc)]
+    problems = []
+    for item in installs:
+        entry = record.get(game_plan.norm(item["text"]))
+        if entry is None:
+            problems.append("What we will practice: the practice week does not record the install of %s as taught; "
+                            "take it off the plan (and the calls that rely on it), or record its practice"
+                            % item["text"])
+        elif entry.get("taught") is not True:
+            problems.append("What we will practice: %s was not taught in the practice week (%s, %s); take it off the "
+                            "plan and the calls that rely on it" % (item["text"], entry.get("by") or "the staff",
+                                                                    game_plan.long_date(date.fromisoformat(
+                                                                        entry["date"])) if entry.get("date")
+                                                                    else "undated"))
+    return [], problems
 
 
 def dressing(plan):
@@ -869,12 +953,18 @@ def check(root, season, week):
         problems += found
     problems += briefing_problems(plan)
     problems += caller_problems(plan)
-    problems += inactive_problems(plan)
-    problems += depth_problems(plan)
+    listed, moved = inactive_problems(plan), depth_problems(plan)
+    problems += listed + moved
+    if not listed and not moved:
+        problems += role_problems(plan)
     if sheet is not None:
         problems += offense_problems(plan, sheet)
         if not problems:
             problems += sheet_problems(plan, sheet)
+        if not problems:
+            install_notes, install_problems = install_status(plan)
+            problems += install_problems
+            plan.notes += install_notes
     problems += clean_problems(plan)
     from scripts import render_game_week
     try:
@@ -926,6 +1016,13 @@ def situation_lists(sheet):
     return [(words.get(m, m), lists[m]) for m in order if m in lists]
 
 
+def opening_order(sheet):
+    """The compiled opening sequence in order, a return to a call named again: what the sheet sends."""
+    slots = sorted((int(s), c["name"]) for c in sheet.get("offensive_call_sheet") or ()
+                   for s in ([c["opener"]] if c.get("opener") is not None else []) + list(c.get("opener_returns") or ()))
+    return [name for _, name in slots]
+
+
 def place_upload(root, season, week, source):
     """An uploaded .md or .txt file with the Game Plan's headings becomes the week's page; refused,
     with nothing written, for a week whose plan can no longer change."""
@@ -970,6 +1067,9 @@ def main(argv=None):
               % plan.changed_since_applied)
     else:
         print("GAME PLAN: COMPLETE  %s, %d" % (plan.label(), args.season))
+        order = opening_order(plan.sheet())
+        if order:
+            print("  Opening calls, in order: %s" % "; ".join(order))
         for situation, names in situation_lists(plan.sheet()):
             print("  %s: %s" % (situation[:1].upper() + situation[1:], "; ".join(names)))
     for note in notes:

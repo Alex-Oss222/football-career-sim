@@ -32,7 +32,7 @@ import shutil
 import sys
 import tempfile
 import unittest
-from datetime import timedelta
+from datetime import date, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -226,6 +226,9 @@ class PostseasonGameWeekTests(unittest.TestCase):
         problems, _, _ = check_game_plan.check(root, SEASON, WILD_CARD)
         self.assertEqual(problems, [])
         self.exams_held()
+        # He answers the briefing re-issued after the exams: the same choices, its issue on Briefing used.
+        facts = render_game_week.plan_facts(render_game_week.Week(root, WILD_CARD))
+        pages.plan.write_text(game_plan.render("Wild Card Game Plan: Pittsburgh", facts, answers), encoding="utf-8")
         problems, written = quiet(apply_game_plan.apply, root, SEASON, WILD_CARD, rebuild_pages=False)
         self.assertEqual(problems, [])
         sheet_path = paths.call_sheet(WILD_CARD, postseason=True)
@@ -251,11 +254,24 @@ class PostseasonGameWeekTests(unittest.TestCase):
         self.assertIn("Set for the game", pages.readme.read_text(encoding="utf-8"))
         self.assertEqual(render_game_week.check(root, WILD_CARD), [])
 
+        # Game day: the Game Report opened with its preparation and pregame media, frozen before kickoff.
+        from scripts import freeze_pregame
+        report = FIXTURE.read_text(encoding="utf-8")
+        head, *sections = report.split("\n## ")
+        head = re.sub(r"^\*\*Final: .*\n", "", head + "\n", flags=re.M).rstrip("\n")
+        pregame = "\n## ".join([head] + [part for part in sections if part.startswith(("1. ", "2. "))]) + "\n"
+        pages.report.write_text(pregame, encoding="utf-8")
+        self.assertEqual(freeze_pregame.freeze(root, SEASON, WILD_CARD), pages.pregame)
+        frozen = json.loads(pages.pregame.read_text(encoding="utf-8"))
+        self.assertEqual(sorted(frozen["sections"]), sorted(game_report.PREGAME))
+        self.assertEqual(game_report.validation_errors(root), [])
+
         # Close and report: the Game Report in the round's folder, its box score named and filled last.
         receipt = self.close_wild_card(game)
         self.assertEqual(check_game_plan.check(root, SEASON, WILD_CARD)[0], ["Wild Card has been played; its plan stays "
                                                                              "as it was set"])
-        report = FIXTURE.read_text(encoding="utf-8")
+        with self.assertRaises(ValueError):
+            freeze_pregame.freeze(root, SEASON, WILD_CARD)      # after the game, nothing is frozen
         coach_record = render_coach_record.render(SEASON, PIT, root)
         self.assertIn("## Coach record\n\n%s\n" % coach_record, report)     # the table the coach record prints
         self.assertEqual(pages.report, paths.game_report(WILD_CARD, postseason=True))
@@ -268,6 +284,14 @@ class PostseasonGameWeekTests(unittest.TestCase):
         self.assertNotIn(game_report.EVENT_PLACEHOLDER, text)
         self.assertEqual(game_report.report_errors(text, receipt, game, root=root), [])
         self.assertEqual(game_report.validation_errors(root), [])
+        # The pregame media rewritten once the result is known is refused.
+        changed = text.replace("No pregame media session was recorded.",
+                               "No pregame media session was recorded; the staff expected a long afternoon.", 1)
+        self.assertNotEqual(changed, text)
+        pages.report.write_text(changed, encoding="utf-8")
+        self.assertTrue(any("differs from the section frozen before kickoff" in e
+                            for e in game_report.validation_errors(root)), game_report.validation_errors(root))
+        pages.report.write_text(text, encoding="utf-8")
         self.assertEqual(render_box_score.stale_blocks(pages.report, paths.receipts, season=SEASON), [])
         self.assertEqual(clean_pages.page_errors(pages.report.relative_to(root).as_posix(), text, root=root), [])
         block = game_report.BLOCK.search(text)
@@ -291,6 +315,168 @@ class PostseasonGameWeekTests(unittest.TestCase):
         # Isolation: nothing reached the real season.
         self.assertFalse(SeasonPaths(SEASON, ROOT).postseason_slots.exists())
         self.assertEqual(sorted(p.name for p in SeasonPaths(SEASON, ROOT).receipts.glob("*.json")), self.real)
+
+
+    # ---------------------------------------------------------------- the later rounds
+    def receipt_of(self, week):
+        """A closed regular-season game record of the copy, before the season is cut short."""
+        folder = self.paths.receipts
+        return {p.name: json.loads(p.read_text(encoding="utf-8")) for p in folder.glob("week_%02d_*.json" % week)}
+
+    def close_round(self, week, templates):
+        """Every game of postseason ``week`` closed in the copy: Jacksonville's from a Jacksonville win on
+        the same side (``templates``: its home and away win records), every other game a home win, each
+        a closed record relabelled onto the bracket's clubs (tests/test_week_close_pages.relabel)."""
+        from test_week_close_pages import relabel
+        folder = self.paths.postseason_receipts
+        folder.mkdir(parents=True, exist_ok=True)
+        ours = None
+        for game in game_weeks.bracket(self.paths, week):
+            side = "home" if game["home"] == JAX else "away" if game["away"] == JAX else None
+            template = templates[side] if side else templates["other"]
+            other_side = "away" if side == "home" else "home"
+            if side:
+                names = {template[other_side]: game[other_side]}
+            else:
+                names = {template["away"]: game["away"], template["home"]: game["home"]}
+            receipt = relabel({k: v for k, v in template.items() if k not in WEEK_BOUND}, names)
+            receipt.update(week=week, game_type="postseason", event_id=game["game_id"],
+                           matchup="%s at %s" % (game["away"], game["home"]))
+            self.assertEqual((receipt["away"], receipt["home"]), (game["away"], game["home"]))
+            (folder / receipt_name(game)).write_text(json.dumps(receipt, indent=1), encoding="utf-8")
+            if side:
+                ours = (game, receipt)
+        from runtime import postseason
+        self.assertEqual(postseason.winner(ours[1]), JAX)
+        return ours
+
+    def set_master(self, text):
+        state = self.root / "state/05_Current_Season_State.md"
+        new, n = re.subn(r"(\| Master date/time \| )[A-Za-z]+ \d{1,2}, \d{4}[^|]*\|", r"\g<1>%s |" % text,
+                         state.read_text(encoding="utf-8"), count=1)
+        self.assertEqual(n, 1)
+        state.write_text(new, encoding="utf-8")
+
+    def plan_round(self, week, carry):
+        """The round's briefing issued, a version 2 Game Plan carrying ``carry`` checked and applied, and
+        its call sheet frozen in the postseason folder's data twin; returns (briefing, sheet)."""
+        from scripts import apply_game_plan, check_game_plan, render_game_week
+        root = self.root
+        quiet(render_game_week.write, root)
+        pages = week_pages(SEASON, week, root)
+        self.assertEqual(pages.folder, self.paths.week_folder(week, postseason=True))
+        plan = check_game_plan.Plan(root, SEASON, week)
+        answers = {
+            "baseline": "Carry Week %d" % carry, "attack": "Their linebackers in space against our tight ends.",
+            "protect": "A cutback behind an overrun.", "change_course": "A safety rotating late.",
+            "inactives": ", ".join(self.inactives(plan)), "depth": "No change", "contingency": "None",
+            "coverage_units": "No change", "offense_caller": "No change", "base_personnel": "Twelve personnel leads.",
+            "learn": "Who travels with the second tight end.", "opening_approach": "As before.",
+            "opening": "Carry Week %d opening" % carry, "third_down": "Carry Week %d" % carry, "backed_up": "No change",
+            "red_zone": "No change", "two_minute": "No change", "four_minute": "No change",
+            "sudden_change": "No change", "special_plays": "No change", "not_available": "None",
+            "defense_caller": "No change", "front": "Force and cutback first.", "coverage": "Quarters and 6.",
+            "rush": game_plan.RUSH_CHOICE, "discover": "Their protection.", "matchups": "No change",
+            "kicking_caller": "No change", "kicking": "No change", "fourth_down": "None",
+            "two_point": "Standing rule", "kickoff": "Standing rule", "endgame": "No change", "participation": "None",
+            "tradeoff": "None", "staff": "None", "public": "No new statement", "open_decisions": "None",
+            "ready": "All decisions settled",
+            "practice": [["Third down", "Tice with the offense", "Third and medium", "The Saturday walkthrough"]]}
+        facts = render_game_week.plan_facts(render_game_week.Week(root, week))
+        title = pages.plan.read_text(encoding="utf-8").splitlines()[0][2:]
+        pages.plan.write_text(game_plan.render(title, facts, answers), encoding="utf-8")
+        self.assertEqual(check_game_plan.check(root, SEASON, week)[0], [])
+        problems, written = quiet(apply_game_plan.apply, root, SEASON, week, rebuild_pages=False)
+        self.assertEqual(problems, [])
+        sheet_path = self.paths.call_sheet(week, postseason=True)
+        self.assertIn(sheet_path, written)
+        self.assertFalse(self.paths.call_sheet(week).exists())
+        self.assertEqual(apply_game_plan.validation_errors(root), [])
+        quiet(render_game_week.write_index, root, week)
+        briefing = pages.briefing.read_text(encoding="utf-8")
+        self.assertEqual(clean_pages.page_errors(pages.briefing.relative_to(root).as_posix(), briefing, root=root), [])
+        return briefing.split("## 1. The game and what is at stake", 1)[1].split("\n## 2.", 1)[0], \
+            json.loads(sheet_path.read_text(encoding="utf-8"))
+
+    def test_the_later_rounds_run_through_the_same_pages(self):
+        """Divisional, Conference Championship and Super Bowl games through the same briefing, Game Plan,
+        check and apply, each on the matchup the round before it set: a later round carries an earlier
+        round's plan, and the Super Bowl is at a neutral site."""
+        wins = {"home": self.receipt_of(3)["week_03_indianapolis_colts_at_jacksonville_jaguars.json"],
+                "away": self.receipt_of(2)["week_02_jacksonville_jaguars_at_washington_redskins.json"]}
+        other = next(r for r in self.receipt_of(1).values() if JAX not in (r["away"], r["home"])
+                     and r["final_score"][r["home"]] > r["final_score"][r["away"]])
+        wins["other"] = other
+        self.write_slots()
+        self.end_season_after(2)
+        root, paths = self.root, self.paths
+        week5 = json.loads(paths.call_sheet(5).read_text(encoding="utf-8"))
+        # The game path dates a closed playoff game from the bracket of its own repository
+        # (runtime/week_inputs._game_dates through runtime/postseason.schedule); here that is the copy.
+        from unittest.mock import patch
+        from runtime import postseason, week_inputs
+        for module in (postseason, week_inputs):
+            patcher = patch.object(module, "ROOT", root)
+            patcher.start()
+            self.addCleanup(patcher.stop)
+
+        # The Wild Card round, closed: Jacksonville beats Pittsburgh at home; every other host wins.
+        game, _ = self.close_round(WILD_CARD, wins)
+        self.assertEqual((game["away"], game["home"]), (PIT, JAX))
+        self.set_master("October 12, 2014, after the Wild Card game against Pittsburgh")
+
+        # Divisional: set only now, Jacksonville at the second seed, which had the first-round bye.
+        game = game_weeks.club_game(paths, DIVISIONAL, JAX)
+        self.assertEqual((game["round_name"], game["away"], game["away_seed"], game["home_seed"]),
+                         ("Divisional", JAX, 3, 2))
+        host = game["home"]
+        section, sheet = self.plan_round(DIVISIONAL, 5)
+        for text in ("| Game type | Divisional, AFC |", "| Seeds | Jacksonville No. 3, %s No. 2 |" % host.rsplit(" ", 1)[0],
+                     "Jacksonville: 6 days since its Wild Card game, on the road",
+                     "since its Week 2 game after its bye, at home",
+                     "| If we win | We play in the Conference Championship", "| If we lose | The season is over. |",
+                     "A playoff game cannot end tied", "| Game-day roster | 46 dress"):
+            self.assertIn(text, section)
+        strip = lambda calls: [{k: v for k, v in c.items() if k != "what_stone_is_looking_at"} for c in calls]
+        self.assertEqual(sheet["offensive_call_sheet"], strip(week5["offensive_call_sheet"]))
+        self.assertTrue(sheet["event"].startswith("2014 postseason Divisional, Jacksonville at "))
+        self.close_round(DIVISIONAL, wins)
+        self.set_master("October 19, 2014, after the Divisional game at %s" % host.rsplit(" ", 1)[0])
+
+        # Conference Championship: carrying the Divisional round's plan as set.
+        game = game_weeks.club_game(paths, 20, JAX)
+        self.assertEqual((game["round_name"], game["away"], game["home_seed"]), ("Conference Championship", JAX, 1))
+        section, conference = self.plan_round(20, DIVISIONAL)
+        self.assertIn("| Game type | Conference Championship, AFC |", section)
+        self.assertIn("| If we win | We play in the Super Bowl", section)
+        days = (date.fromisoformat(game["date"]) - date.fromisoformat(
+            game_weeks.club_game(paths, DIVISIONAL, JAX)["date"])).days
+        self.assertIn("Jacksonville: %d days since its Divisional game, on the road" % days, section)
+        self.assertEqual(conference["offensive_call_sheet"], sheet["offensive_call_sheet"])
+        self.assertEqual(conference["defensive_call_sheet"]["rows"], sheet["defensive_call_sheet"]["rows"])
+        self.close_round(20, wins)
+        self.set_master("October 26, 2014, after the Conference Championship game at %s"
+                        % game["home"].rsplit(" ", 1)[0])
+
+        # The Super Bowl: the two champions at a neutral site, Jacksonville the designated home club.
+        game = game_weeks.club_game(paths, 21, JAX)
+        self.assertEqual((game["round_name"], game["home"], game["site"], game["stadium"]),
+                         ("Super Bowl", JAX, "neutral", "MetLife Stadium"))
+        section, final = self.plan_round(21, 20)
+        for text in ("| Game type | Super Bowl |", "| Venue and kickoff | MetLife Stadium, ",
+                     "Jacksonville: 14 days since its Conference Championship game, at a neutral site",
+                     "since its Conference Championship game, at a neutral site",
+                     "| If we win | We are the league champions. |", "| Earlier meeting | None this season. |"):
+            self.assertIn(text, section)
+        self.assertNotIn("at home", section.split("| Rest and travel |", 1)[1].split("\n", 1)[0])
+        self.assertEqual(final["event"], "2014 postseason Super Bowl, %s at Jacksonville, November 9, 2014"
+                         % game["away"].rsplit(" ", 1)[0])
+        self.assertEqual(final["offensive_call_sheet"], sheet["offensive_call_sheet"])
+        from scripts import render_game_week
+        self.assertEqual(render_game_week.validation_errors(root), [])
+        self.assertEqual(sorted(p.name for p in paths.postseason.glob("Week_*")), ["Week_19", "Week_20", "Week_21"])
+        # Isolation: nothing reached the real season.
+        self.assertFalse(SeasonPaths(SEASON, ROOT).postseason_slots.exists())
 
 
 if __name__ == "__main__":

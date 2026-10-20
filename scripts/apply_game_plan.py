@@ -22,7 +22,10 @@ exactly the records the game path already reads, and the record of the apply:
   inactives, Stone's), marked RESOLVED by the user with the page as their
   record. Nothing is applied while either item still waits on an exam dated
   that day or later (its ``waits_on``): the page is complete, and it is set
-  once the exams are held, when the check reads their results (``waiting``);
+  once the exams are held, when the check reads their results (``waiting``).
+  Nor is a plan that relies on this week's installs set before game day: on
+  game day the week's practice record must hold each one taught
+  (scripts/check_game_plan.install_status);
 - the week's inactives record beside the call sheet (``inactives.json``,
   runtime/decisions.WeekPages.inactives), the permanent owner of the list
   ("Carry Week N" reads it; the chart holds only the latest list);
@@ -45,8 +48,9 @@ Week Briefing is not reissued for the plan's own settlement. Nothing is
 drawn, and the clock does not move.
 
 Repository validation runs ``validation_errors``: every applied week's page
-and call sheet as the record froze them, the open week's game-plan item
-present once its briefing is issued.
+and call sheet as the record froze them, every install its source map relies
+on recorded taught in the week's practice record (each record in its form),
+the open week's game-plan item present once its briefing is issued.
 """
 from __future__ import annotations
 
@@ -62,8 +66,8 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from runtime import game_plan  # noqa: E402
-from scripts.check_game_plan import (JAX, ROLE_WORDS, Plan, changed_chart, check, page_digest,  # noqa: E402
-                                     place_upload)
+from scripts.check_game_plan import (JAX, ROLE_WORDS, Plan, changed_chart, check, install_status,  # noqa: E402
+                                     page_digest, place_upload)
 
 PLAN_CLASSES = ("weekly_game_plan", "game_day_inactives")
 LOG_EVENT = "Week %d: Stone's Game Plan"
@@ -332,7 +336,8 @@ def apply(root, season, week, rebuild_pages=True, report=None):
     problems, notes, plan = check(root, season, week)
     if problems:
         return problems, []
-    held = waiting(plan)
+    # The installs the plan relies on are set on game day, once the practice week records them taught.
+    held = waiting(plan) + install_status(plan)[0]
     if held:
         if report is not None:
             report["waiting"] = True
@@ -342,6 +347,33 @@ def apply(root, season, week, rebuild_pages=True, report=None):
     if rebuild_pages:
         problems = rebuild(plan.root, week)
     return problems, written
+
+
+PRACTICE_KEYS = {"install", "taught", "date", "by"}
+
+
+def practice_entries(path, label):
+    """{install, as words: entry} of a week's practice record, held to its form: each entry its install's
+    words, taught true or false, its date and the coach by whom (ValueError, in words, otherwise)."""
+    if not path.is_file():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    entries = data.get("installs") if isinstance(data, dict) else None
+    if not isinstance(entries, list) or set(data) - {"about", "installs"}:
+        raise ValueError("%s: the practice record holds an optional about and its installs" % label)
+    out = {}
+    for n, entry in enumerate(entries, 1):
+        ok = isinstance(entry, dict) and set(entry) == PRACTICE_KEYS and isinstance(entry["taught"], bool) \
+            and all(isinstance(entry[k], str) and entry[k].strip() for k in ("install", "date", "by"))
+        try:
+            ok = ok and bool(date.fromisoformat(entry["date"]))
+        except ValueError:
+            ok = False
+        if not ok:
+            raise ValueError("%s: practice record entry %d holds exactly the install, taught (true or false), its date "
+                             "and the coach by whom" % (label, n))
+        out[game_plan.norm(entry["install"])] = entry
+    return out
 
 
 def validation_errors(root=ROOT):
@@ -366,6 +398,11 @@ def validation_errors(root=ROOT):
         pages = week_pages(season, week, root, postseason=game.get("game_type") == "postseason")
         record = game_plan.applied_record(pages.applied)
         label = "%s Game Plan" % game_weeks.label(game)
+        if record is None and pages.practice.is_file():
+            try:
+                practice_entries(pages.practice, label)
+            except ValueError as exc:
+                errors.append(str(exc))
         inactives = game_plan.applied_record(pages.inactives)
         listed = chart.get("game_day_inactives") or {}
         if inactives is not None and listed.get("week") == week and \
@@ -383,6 +420,17 @@ def validation_errors(root=ROOT):
         if not pages.call_sheet.is_file() or \
                 hashlib.sha256(pages.call_sheet.read_bytes()).hexdigest() != record.get("call_sheet_sha256"):
             errors.append("%s: the call sheet is not the one the page froze" % label)
+        # Every install the applied plan relies on is recorded taught in the week's practice record.
+        taught = {}
+        try:
+            taught = practice_entries(pages.practice, label)
+        except ValueError as exc:
+            errors.append(str(exc))
+        for item in (record.get("source_map") or {}).get("installs") or ():
+            entry = taught.get(game_plan.norm(item.get("text")))
+            if entry is None or entry.get("taught") is not True:
+                errors.append("%s: the plan relies on the install of %s, which the practice record does not hold as "
+                              "taught" % (label, item.get("text")))
     try:
         from scripts.render_game_week import Week
         wk = Week(root)

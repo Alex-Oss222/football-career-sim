@@ -161,7 +161,7 @@ def _added_commits(root, rel):
         rel, rev = source, added[-1] + '^'
 
 
-def freeze_order_errors(root, sheet_rel, receipt_rel):
+def freeze_order_errors(root, sheet_rel, receipt_rel, what='the call sheet'):
     """Kernel 2014.6 W1a: the call sheet's freeze commit (the last commit
     that changed it, with no uncommitted change since) precedes the commit
     that added the receipt (its closure commit), or the receipt is not
@@ -173,16 +173,16 @@ def freeze_order_errors(root, sheet_rel, receipt_rel):
         return []
     freeze = _freeze_commit(root, sheet_rel)
     if not freeze:
-        return [f'{sheet_rel}: the call sheet is not committed, so its freeze cannot precede the closure']
+        return [f'{sheet_rel}: {what} is not committed, so its freeze cannot precede the closure']
     if _git(root, 'diff', '--quiet', 'HEAD', '--', sheet_rel)[0] != 0:
-        return [f'{sheet_rel}: the call sheet changed after its freeze commit {freeze[:12]}']
+        return [f'{sheet_rel}: {what} changed after its freeze commit {freeze[:12]}']
     added = _added_commits(root, receipt_rel)
     if not added:
         return []
     closure = added[-1]
     if closure == freeze or _git(root, 'merge-base', '--is-ancestor', freeze, closure)[0] != 0:
-        return [f'{receipt_rel}: closed in {closure[:12]}, which does not follow the call sheet\'s freeze '
-                f'commit {freeze[:12]}']
+        return [f'{receipt_rel}: closed in {closure[:12]}, which does not follow the freeze commit '
+                f'{freeze[:12]} of {what}']
     return []
 
 
@@ -614,6 +614,26 @@ def validate(root=ROOT):
     try:
         from runtime.game_report import validation_errors as game_report_errors
         errors.extend(game_report_errors(root))
+        # The pregame sections' freeze record is committed before the commit that closes the game.
+        from runtime import game_report
+        from runtime.decisions import week_pages
+        from runtime.seasons import SeasonPaths
+        for year in sorted({2014, mapping.get('active_season', 2014)}):
+            paths = SeasonPaths(year, root)
+            if not paths.schedule.is_file():
+                continue
+            for game, report, receipt in game_report.report_games(paths):
+                post = game.get('game_type') == 'postseason'
+                frozen = week_pages(year, int(game['week']), root, postseason=post).pregame
+                if receipt is None or not frozen.is_file():
+                    continue
+                folder = paths.postseason_receipts if post else paths.receipts
+                matches = [p for p in sorted(folder.glob('*.json'))
+                           if json.loads(p.read_text()).get('event_id') == receipt.get('event_id')]
+                if matches:
+                    errors += freeze_order_errors(root, frozen.relative_to(root).as_posix(),
+                                                  matches[0].relative_to(root).as_posix(),
+                                                  'the pregame sections\' freeze record')
     except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
         errors.append(f'Game Reports cannot be checked: {exc}')
 
